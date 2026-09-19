@@ -2,596 +2,596 @@
  "rkspots_r01": {
   "sec": "S1",
   "lugar": "doorway",
-  "prompt": "suburban house real footage"
+  "prompt": "suburban house real footage: suburban house street front porch garage driveway roof windows neighbourhood"
  },
  "rkspots_r02": {
   "sec": "S1",
   "lugar": "doorway",
-  "prompt": "front door real footage"
+  "prompt": "front door real footage: front door doorway porch step handle lock frame entrance house"
  },
  "rkspots_r03": {
   "sec": "S1",
   "lugar": "hall",
-  "prompt": "staircase real footage"
+  "prompt": "staircase real footage: staircase stairs steps banister rail landing carpet upstairs hallway"
  },
  "rkspots_r04": {
   "sec": "S1",
   "lugar": "bedroom",
-  "prompt": "bedroom dresser real footage"
+  "prompt": "bedroom dresser real footage: bedroom dresser chest drawers wood mirror lamp jewellery top drawer"
  },
  "rkspots_r05": {
   "sec": "S1",
   "lugar": "kitchen",
-  "prompt": "wall clock real footage"
+  "prompt": "wall clock real footage: clock wall hands minutes afternoon kitchen time eleven ticking"
  },
  "rkspots_r06": {
   "sec": "S1",
   "lugar": "street",
-  "prompt": "empty driveway real footage"
+  "prompt": "empty driveway real footage: driveway street house garage concrete car kerb neighbourhood afternoon"
  },
  "rkspots_r07": {
   "sec": "S1",
   "lugar": "livingroom",
-  "prompt": "living room real footage"
+  "prompt": "living room real footage: living room sofa television laptop guitar lamp rug coffee table"
  },
  "rkspots_r08": {
   "sec": "S1",
   "lugar": "street",
-  "prompt": "autumn leaves real footage"
+  "prompt": "autumn leaves real footage: leaves autumn street wind tree pavement ground october outside"
  },
  "rkspots_r09": {
   "sec": "S2",
   "lugar": "street",
-  "prompt": "suburban street real footage"
+  "prompt": "suburban street real footage: street houses neighbourhood road kerb bins cars pavement identical"
  },
  "rkspots_r10": {
   "sec": "S2",
   "lugar": "street",
-  "prompt": "house window real footage"
+  "prompt": "house window real footage: window house glass curtain frame outside light sill neighbour"
  },
  "rkspots_r11": {
   "sec": "S2",
   "lugar": "hall",
-  "prompt": "hallway walking real footage"
+  "prompt": "hallway walking real footage: hallway hall corridor walking floor door rug stairs house route"
  },
  "rkspots_r12": {
   "sec": "S2",
   "lugar": "van",
-  "prompt": "old notebook real footage"
+  "prompt": "old notebook real footage: notebook pages handwriting biro spiral paper lines notes line address"
  },
  "rkspots_r13": {
   "sec": "S3",
   "lugar": "kitchen",
-  "prompt": "open freezer real footage"
+  "prompt": "open freezer real footage: freezer drawer frozen food ice peas bags kitchen cold packets"
  },
  "rkspots_r14": {
   "sec": "S3",
   "lugar": "kitchen",
-  "prompt": "frozen food real footage"
+  "prompt": "frozen food real footage: frozen food freezer bags peas packets ice cold kitchen foil beans"
  },
  "rkspots_r15": {
   "sec": "S3",
   "lugar": "kitchen",
-  "prompt": "kitchen pantry real footage"
+  "prompt": "kitchen pantry real footage: pantry cupboard shelves tins cans jars food kitchen dust shelf"
  },
  "rkspots_r16": {
   "sec": "S3",
   "lugar": "kitchen",
-  "prompt": "food tins real footage"
+  "prompt": "food tins real footage: tins cans shelf pantry row dust kitchen food pasta rice"
  },
  "rkspots_r17": {
   "sec": "S3",
   "lugar": "kitchen",
-  "prompt": "ice cubes real footage"
+  "prompt": "ice cubes real footage: ice cubes freezer cold water tray frozen kitchen"
  },
  "rkspots_r18": {
   "sec": "S4",
   "lugar": "bathroom",
-  "prompt": "bathroom sink real footage"
+  "prompt": "bathroom sink real footage: bathroom sink basin tap soap toothbrush mirror cabinet tiles"
  },
  "rkspots_r19": {
   "sec": "S4",
   "lugar": "bathroom",
-  "prompt": "medicine cabinet real footage"
+  "prompt": "medicine cabinet real footage: cabinet bathroom mirror shelves pills medicine boxes razor bottles"
  },
  "rkspots_r20": {
   "sec": "S4",
   "lugar": "bathroom",
-  "prompt": "bathroom mirror real footage"
+  "prompt": "bathroom mirror real footage: mirror bathroom cabinet basin reflection tiles light door"
  },
  "rkspots_r21": {
   "sec": "S4",
   "lugar": "bathroom",
-  "prompt": "white toilet real footage"
+  "prompt": "white toilet real footage: toilet cistern lid porcelain bathroom tank water flush bag"
  },
  "rkspots_r22": {
   "sec": "S5",
   "lugar": "study",
-  "prompt": "bookshelf books real footage"
+  "prompt": "bookshelf books real footage: bookshelf books shelves spines hardback paperback row library study"
  },
  "rkspots_r23": {
   "sec": "S5",
   "lugar": "study",
-  "prompt": "old books real footage"
+  "prompt": "old books real footage: books old hardback spines pages shelf hollow library dust"
  },
  "rkspots_r24": {
   "sec": "S5",
   "lugar": "study",
-  "prompt": "library shelf real footage"
+  "prompt": "library shelf real footage: shelf books library row spines shelves dust wood reading"
  },
  "rkspots_r25": {
   "sec": "S5",
   "lugar": "study",
-  "prompt": "dusty books real footage"
+  "prompt": "dusty books real footage: books dust shelf spines old row stripe handled library"
  },
  "rkspots_r26": {
   "sec": "S6",
   "lugar": "study",
-  "prompt": "home office real footage"
+  "prompt": "home office real footage: office desk study laptop lamp papers chair filing cabinet room"
  },
  "rkspots_r27": {
   "sec": "S6",
   "lugar": "study",
-  "prompt": "desk drawer real footage"
+  "prompt": "desk drawer real footage: drawer desk office papers chequebook folder passport pens wood"
  },
  "rkspots_r28": {
   "sec": "S6",
   "lugar": "study",
-  "prompt": "filing cabinet real footage"
+  "prompt": "filing cabinet real footage: filing cabinet drawer files folders office paper metal tabs"
  },
  "rkspots_r29": {
   "sec": "S6",
   "lugar": "study",
-  "prompt": "paper documents real footage"
+  "prompt": "paper documents real footage: papers documents folder passport certificates chequebook tax file office"
  },
  "rkspots_r30": {
   "sec": "S6",
   "lugar": "study",
-  "prompt": "office papers real footage"
+  "prompt": "office papers real footage: papers office desk envelopes statements post folder stack documents"
  },
  "rkspots_r31": {
   "sec": "S7",
   "lugar": "kidroom",
-  "prompt": "childs bedroom real footage"
+  "prompt": "childs bedroom real footage: child bedroom kid room toys bed duvet bookshelf wardrobe small"
  },
  "rkspots_r32": {
   "sec": "S7",
   "lugar": "kidroom",
-  "prompt": "toy box real footage"
+  "prompt": "toy box real footage: toy box crate toys plastic bricks child bedroom lid floor"
  },
  "rkspots_r33": {
   "sec": "S7",
   "lugar": "kidroom",
-  "prompt": "teddy bear real footage"
+  "prompt": "teddy bear real footage: teddy bear soft toy child bedroom bed pillow toys"
  },
  "rkspots_r34": {
   "sec": "S7",
   "lugar": "kidroom",
-  "prompt": "piggy bank real footage"
+  "prompt": "piggy bank real footage: piggy bank coins money tin child bedroom shelf savings envelope"
  },
  "rkspots_r35": {
   "sec": "S8",
   "lugar": "bedroom",
-  "prompt": "made bed real footage"
+  "prompt": "made bed real footage: bed made quilt duvet mattress bedroom pillow sheet bedside"
  },
  "rkspots_r36": {
   "sec": "S8",
   "lugar": "bedroom",
-  "prompt": "bedroom mattress real footage"
+  "prompt": "bedroom mattress real footage: mattress bed box spring bedroom sheet corner quilt divan"
  },
  "rkspots_r37": {
   "sec": "S8",
   "lugar": "bedroom",
-  "prompt": "pillow bed real footage"
+  "prompt": "pillow bed real footage: pillow bed sheet bedroom headboard quilt mattress sleep"
  },
  "rkspots_r38": {
   "sec": "S8",
   "lugar": "bedroom",
-  "prompt": "white bedsheets real footage"
+  "prompt": "white bedsheets real footage: sheets bed white linen mattress bedroom quilt cotton"
  },
  "rkspots_r39": {
   "sec": "S9",
   "lugar": "closet",
-  "prompt": "walk in closet real footage"
+  "prompt": "walk in closet real footage: closet wardrobe clothes rail hangers shelf shoes boxes room"
  },
  "rkspots_r40": {
   "sec": "S9",
   "lugar": "closet",
-  "prompt": "hanging clothes real footage"
+  "prompt": "hanging clothes real footage: clothes hangers rail wardrobe closet shirts coats hanging"
  },
  "rkspots_r41": {
   "sec": "S9",
   "lugar": "closet",
-  "prompt": "shoe boxes real footage"
+  "prompt": "shoe boxes real footage: shoeboxes boxes shoes closet wardrobe floor cardboard lids stack"
  },
  "rkspots_r42": {
   "sec": "S9",
   "lugar": "closet",
-  "prompt": "wardrobe clothes real footage"
+  "prompt": "wardrobe clothes real footage: wardrobe clothes rail hangers closet shirts coats doors shelf"
  },
  "rkspots_r43": {
   "sec": "S9",
   "lugar": "closet",
-  "prompt": "suitcase real footage"
+  "prompt": "suitcase real footage: suitcase case luggage bag closet wardrobe handle wheels carry"
  },
  "rkspots_r44": {
   "sec": "S10",
   "lugar": "bedroom",
-  "prompt": "bedside table real footage"
+  "prompt": "bedside table real footage: bedside table nightstand drawer lamp watch glass book bedroom"
  },
  "rkspots_r45": {
   "sec": "S10",
   "lugar": "bedroom",
-  "prompt": "night lamp real footage"
+  "prompt": "night lamp real footage: lamp bedside light bedroom table shade night glow"
  },
  "rkspots_r46": {
   "sec": "S10",
   "lugar": "bedroom",
-  "prompt": "wristwatch real footage"
+  "prompt": "wristwatch real footage: watch wristwatch strap leather dial hands time bedside"
  },
  "rkspots_r47": {
   "sec": "S10",
   "lugar": "bedroom",
-  "prompt": "alarm clock real footage"
+  "prompt": "alarm clock real footage: clock alarm bedside time hands bedroom night table"
  },
  "rkspots_r48": {
   "sec": "S11",
   "lugar": "garage",
-  "prompt": "metal safe real footage"
+  "prompt": "metal safe real footage: safe steel box metal keypad handle bolts shelf heavy"
  },
  "rkspots_r49": {
   "sec": "S11",
   "lugar": "garage",
-  "prompt": "steel box real footage"
+  "prompt": "steel box real footage: steel box metal lockbox safe lid handle cable heavy"
  },
  "rkspots_r50": {
   "sec": "S11",
   "lugar": "garage",
-  "prompt": "drill wood real footage"
+  "prompt": "drill wood real footage: drill wood hole bolt screw floorboard dust anchor tool"
  },
  "rkspots_r51": {
   "sec": "S11",
   "lugar": "garage",
-  "prompt": "screwdriver tools real footage"
+  "prompt": "screwdriver tools real footage: screwdriver tools bench vise wrench socket workshop garage"
  },
  "rkspots_r52": {
   "sec": "S11",
   "lugar": "garage",
-  "prompt": "toolbox real footage"
+  "prompt": "toolbox real footage: toolbox tools bench garage workshop wrench screws drill"
  },
  "rkspots_r53": {
   "sec": "S12",
   "lugar": "bedroom",
-  "prompt": "chest drawers real footage"
+  "prompt": "chest drawers real footage: chest drawers dresser bedroom wood socks drawer top mirror"
  },
  "rkspots_r54": {
   "sec": "S12",
   "lugar": "bedroom",
-  "prompt": "folded socks real footage"
+  "prompt": "folded socks real footage: socks folded rolled drawer dresser underwear towel bedroom top"
  },
  "rkspots_r55": {
   "sec": "S12",
   "lugar": "bedroom",
-  "prompt": "jewelry box real footage"
+  "prompt": "jewelry box real footage: jewellery box rings chains earrings brooch velvet lid dresser"
  },
  "rkspots_r56": {
   "sec": "S12",
   "lugar": "bedroom",
-  "prompt": "gold rings real footage"
+  "prompt": "gold rings real footage: rings gold wedding band jewellery hand mother finger"
  },
  "rkspots_r57": {
   "sec": "S12",
   "lugar": "bedroom",
-  "prompt": "wedding ring real footage"
+  "prompt": "wedding ring real footage: ring wedding gold band jewellery finger married"
  },
  "rkspots_r58": {
   "sec": "S13",
   "lugar": "utility",
-  "prompt": "cardboard box real footage"
+  "prompt": "cardboard box real footage: box cardboard plain tape sealed shelf utility storage boring"
  },
  "rkspots_r59": {
   "sec": "S13",
   "lugar": "bedroom",
-  "prompt": "phone photo real footage"
+  "prompt": "phone photo real footage: phone photograph camera screen picture jewellery inventory"
  },
  "rkspots_r60": {
   "sec": "S13",
   "lugar": "study",
-  "prompt": "writing notes real footage"
+  "prompt": "writing notes real footage: writing pen paper notes list serial numbers sheet desk"
  },
  "rkspots_r61": {
   "sec": "S13",
   "lugar": "kitchen",
-  "prompt": "kitchen table real footage"
+  "prompt": "kitchen table real footage: kitchen table mugs tea paper pen biscuit chairs morning"
  },
  "rkspots_r62": {
   "sec": "S13",
   "lugar": "utility",
-  "prompt": "laundry room real footage"
+  "prompt": "laundry room real footage: laundry utility washing machine shelves powder mop room basket"
  },
  "rkspots_r63": {
   "sec": "S14",
   "lugar": "porch",
-  "prompt": "door lock real footage"
+  "prompt": "door lock real footage: lock door deadbolt cylinder handle brass strike frame key"
  },
  "rkspots_r64": {
   "sec": "S14",
   "lugar": "porch",
-  "prompt": "door hinge real footage"
+  "prompt": "door hinge real footage: hinge door screws frame metal pin leaf jamb"
  },
  "rkspots_r65": {
   "sec": "S14",
   "lugar": "porch",
-  "prompt": "house keys real footage"
+  "prompt": "house keys real footage: keys key brass ring house spare metal cut"
  },
  "rkspots_r66": {
   "sec": "S14",
   "lugar": "porch",
-  "prompt": "garden stones real footage"
+  "prompt": "garden stones real footage: stones rock garden path step white bed plastic fake"
  },
  "rkspots_r67": {
   "sec": "S14",
   "lugar": "porch",
-  "prompt": "front porch real footage"
+  "prompt": "front porch real footage: porch step front door house path hedge pots doormat"
  },
  "rkspots_r68": {
   "sec": "S15",
   "lugar": "livingroom",
-  "prompt": "empty room real footage"
+  "prompt": "empty room real footage: room empty quiet living television sofa nobody still"
  },
  "rkspots_r69": {
   "sec": "S15",
   "lugar": "street",
-  "prompt": "quiet street real footage"
+  "prompt": "quiet street real footage: street quiet houses road neighbourhood empty pavement afternoon"
  },
  "rkspots_r70": {
   "sec": "S15",
   "lugar": "workbench",
-  "prompt": "brass keys real footage"
+  "prompt": "brass keys real footage: keys brass row bench workbench cut metal blanks ten"
  },
  "rkspots_r71": {
   "sec": "S15",
   "lugar": "workbench",
-  "prompt": "workbench tools real footage"
+  "prompt": "workbench tools real footage: workbench tools bench vise garage workshop keys pegboard"
  },
  "rkspots_r72": {
   "sec": "S1",
   "lugar": "hall",
-  "prompt": "empty hallway real footage"
+  "prompt": "empty hallway real footage: hallway hall empty corridor door floor rug stairs route"
  },
  "rkspots_r73": {
   "sec": "S1",
   "lugar": "street",
-  "prompt": "porch light real footage"
+  "prompt": "porch light real footage: porch light house front evening lamp door step"
  },
  "rkspots_r74": {
   "sec": "S15",
   "lugar": "street",
-  "prompt": "garden path real footage"
+  "prompt": "garden path real footage: path garden stones step front house walk hedge"
  },
  "rkspots_r75": {
   "sec": "S2",
   "lugar": "hall",
-  "prompt": "wooden staircase real footage"
+  "prompt": "wooden staircase real footage: staircase stairs wooden banister steps landing rail upstairs"
  },
  "rkspots_r76": {
   "sec": "S2",
   "lugar": "street",
-  "prompt": "front doormat real footage"
+  "prompt": "front doormat real footage: doormat mat door step front entrance porch"
  },
  "rkspots_r77": {
   "sec": "S2",
   "lugar": "livingroom",
-  "prompt": "curtain window real footage"
+  "prompt": "curtain window real footage: curtain window light living room net glass room"
  },
  "rkspots_r78": {
   "sec": "S3",
   "lugar": "kitchen",
-  "prompt": "kitchen counter real footage"
+  "prompt": "kitchen counter real footage: kitchen counter worktop kettle bowl tiles surface"
  },
  "rkspots_r79": {
   "sec": "S3",
   "lugar": "kitchen",
-  "prompt": "empty kitchen real footage"
+  "prompt": "empty kitchen real footage: kitchen empty counter cupboards table window nobody"
  },
  "rkspots_r80": {
   "sec": "S3",
   "lugar": "utility",
-  "prompt": "wooden shelf real footage"
+  "prompt": "wooden shelf real footage: shelf wooden shelves boxes tins utility storage wood"
  },
  "rkspots_r81": {
   "sec": "S4",
   "lugar": "bathroom",
-  "prompt": "bathroom tiles real footage"
+  "prompt": "bathroom tiles real footage: tiles bathroom wall grout white basin bath"
  },
  "rkspots_r82": {
   "sec": "S4",
   "lugar": "bathroom",
-  "prompt": "empty bathroom real footage"
+  "prompt": "empty bathroom real footage: bathroom empty basin bath toilet towel mirror tiles"
  },
  "rkspots_r83": {
   "sec": "S4",
   "lugar": "bathroom",
-  "prompt": "folded towels real footage"
+  "prompt": "folded towels real footage: towels folded bathroom rail linen cupboard stack"
  },
  "rkspots_r84": {
   "sec": "S5",
   "lugar": "livingroom",
-  "prompt": "old books stack real footage"
+  "prompt": "old books stack real footage: books stack old pile spines hardback paper shelf"
  },
  "rkspots_r85": {
   "sec": "S5",
   "lugar": "study",
-  "prompt": "bookshelf close real footage"
+  "prompt": "bookshelf close real footage: bookshelf books spines shelf row dust hardback gap"
  },
  "rkspots_r86": {
   "sec": "S5",
   "lugar": "livingroom",
-  "prompt": "photo album real footage"
+  "prompt": "photo album real footage: album photographs pictures book memories shelf paper old"
  },
  "rkspots_r87": {
   "sec": "S6",
   "lugar": "study",
-  "prompt": "desk lamp real footage"
+  "prompt": "desk lamp real footage: lamp desk office light study shade papers"
  },
  "rkspots_r88": {
   "sec": "S6",
   "lugar": "study",
-  "prompt": "paper stack real footage"
+  "prompt": "paper stack real footage: papers stack documents office desk sheets pile folder"
  },
  "rkspots_r89": {
   "sec": "S6",
   "lugar": "study",
-  "prompt": "wooden desk real footage"
+  "prompt": "wooden desk real footage: desk wooden office study drawer surface lamp papers"
  },
  "rkspots_r90": {
   "sec": "S7",
   "lugar": "kidroom",
-  "prompt": "sewing box real footage"
+  "prompt": "sewing box real footage: sewing box tin buttons thread small lid contents"
  },
  "rkspots_r91": {
   "sec": "S7",
   "lugar": "kidroom",
-  "prompt": "wooden toy real footage"
+  "prompt": "wooden toy real footage: toy wooden child bedroom small play blocks"
  },
  "rkspots_r92": {
   "sec": "S7",
   "lugar": "kidroom",
-  "prompt": "empty nursery real footage"
+  "prompt": "empty nursery real footage: nursery child bedroom empty cot room small toys"
  },
  "rkspots_r93": {
   "sec": "S8",
   "lugar": "bedroom",
-  "prompt": "tidy bedroom real footage"
+  "prompt": "tidy bedroom real footage: bedroom tidy bed made wardrobe dresser lamp window"
  },
  "rkspots_r94": {
   "sec": "S8",
   "lugar": "bedroom",
-  "prompt": "bedroom window real footage"
+  "prompt": "bedroom window real footage: window bedroom curtain light room sill glass"
  },
  "rkspots_r95": {
   "sec": "S8",
   "lugar": "bedroom",
-  "prompt": "wooden floor real footage"
+  "prompt": "wooden floor real footage: floor wooden boards floorboard room grain joist"
  },
  "rkspots_r96": {
   "sec": "S9",
   "lugar": "closet",
-  "prompt": "empty wardrobe real footage"
+  "prompt": "empty wardrobe real footage: wardrobe empty closet rail hangers shelf doors"
  },
  "rkspots_r97": {
   "sec": "S9",
   "lugar": "closet",
-  "prompt": "old suitcase real footage"
+  "prompt": "old suitcase real footage: suitcase old case luggage leather handle closet"
  },
  "rkspots_r98": {
   "sec": "S9",
   "lugar": "closet",
-  "prompt": "linen cupboard real footage"
+  "prompt": "linen cupboard real footage: cupboard linen towels sheets shelves landing storage"
  },
  "rkspots_r99": {
   "sec": "S10",
   "lugar": "bedroom",
-  "prompt": "bedside lamp real footage"
+  "prompt": "bedside lamp real footage: lamp bedside bedroom table light shade night"
  },
  "rkspots_r100": {
   "sec": "S10",
   "lugar": "bedroom",
-  "prompt": "old clock real footage"
+  "prompt": "old clock real footage: clock old hands dial time face wood"
  },
  "rkspots_r101": {
   "sec": "S10",
   "lugar": "bedroom",
-  "prompt": "dresser mirror real footage"
+  "prompt": "dresser mirror real footage: mirror dresser bedroom reflection wood chest drawers"
  },
  "rkspots_r102": {
   "sec": "S11",
   "lugar": "garage",
-  "prompt": "metal box real footage"
+  "prompt": "metal box real footage: box metal steel lid tin lockbox small"
  },
  "rkspots_r103": {
   "sec": "S11",
   "lugar": "garage",
-  "prompt": "tool bench real footage"
+  "prompt": "tool bench real footage: bench tools workshop garage vise workbench pegboard"
  },
  "rkspots_r104": {
   "sec": "S11",
   "lugar": "garage",
-  "prompt": "screws real footage"
+  "prompt": "screws real footage: screws screw long short thread box hardware steel"
  },
  "rkspots_r105": {
   "sec": "S11",
   "lugar": "garage",
-  "prompt": "padlock real footage"
+  "prompt": "padlock real footage: padlock lock shackle metal key hasp"
  },
  "rkspots_r106": {
   "sec": "S12",
   "lugar": "bedroom",
-  "prompt": "jewelry close real footage"
+  "prompt": "jewelry close real footage: jewellery rings chain earrings gold necklace velvet"
  },
  "rkspots_r107": {
   "sec": "S12",
   "lugar": "bedroom",
-  "prompt": "gold chain real footage"
+  "prompt": "gold chain real footage: chain gold necklace jewellery thin coiled"
  },
  "rkspots_r108": {
   "sec": "S12",
   "lugar": "bedroom",
-  "prompt": "watch close real footage"
+  "prompt": "watch close real footage: watch dial strap hands leather wrist time"
  },
  "rkspots_r109": {
   "sec": "S12",
   "lugar": "bedroom",
-  "prompt": "coins real footage"
+  "prompt": "coins real footage: coins money change loose saucer copper silver"
  },
  "rkspots_r110": {
   "sec": "S13",
   "lugar": "utility",
-  "prompt": "cardboard boxes real footage"
+  "prompt": "cardboard boxes real footage: boxes cardboard storage plain stack shelf taped"
  },
  "rkspots_r111": {
   "sec": "S13",
   "lugar": "utility",
-  "prompt": "basement shelf real footage"
+  "prompt": "basement shelf real footage: shelf basement storage boxes tins utility cellar"
  },
  "rkspots_r112": {
   "sec": "S13",
   "lugar": "utility",
-  "prompt": "attic boxes real footage"
+  "prompt": "attic boxes real footage: attic boxes storage loft dust roof cardboard"
  },
  "rkspots_r113": {
   "sec": "S13",
   "lugar": "bedroom",
-  "prompt": "banknotes real footage"
+  "prompt": "banknotes real footage: banknotes cash money notes envelope paper folded"
  },
  "rkspots_r114": {
   "sec": "S14",
   "lugar": "porch",
-  "prompt": "closed door real footage"
+  "prompt": "closed door real footage: door closed front handle lock frame wood entrance"
  },
  "rkspots_r115": {
   "sec": "S14",
   "lugar": "porch",
-  "prompt": "door hinge real footage"
+  "prompt": "door hinge real footage: hinge door screws frame metal pin leaf jamb"
  },
  "rkspots_r116": {
   "sec": "S14",
   "lugar": "porch",
-  "prompt": "keyhole real footage"
+  "prompt": "keyhole real footage: keyhole lock door cylinder brass key hole"
  },
  "rkspots_r117": {
   "sec": "S14",
   "lugar": "workbench",
-  "prompt": "brass key real footage"
+  "prompt": "brass key real footage: key brass cut metal blade ring house"
  },
  "rkspots_r118": {
   "sec": "S15",
   "lugar": "livingroom",
-  "prompt": "window light real footage"
+  "prompt": "window light real footage: window light room glass curtain daylight sill"
  },
  "rkspots_r119": {
   "sec": "S15",
   "lugar": "hall",
-  "prompt": "dusty attic real footage"
+  "prompt": "dusty attic real footage: attic dust loft boxes roof beams storage"
  }
 }
