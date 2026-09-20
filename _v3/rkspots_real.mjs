@@ -2,7 +2,7 @@
 // GENERADO por scripts/rksafe_stock_audit.mjs — no editar a mano.
 //
 // ⛔⛔ AUDITADO A OJO CON VISIÓN, 2 CUADROS POR CLIP a 400 px: de 147 conformados se
-//    DESCARTARON 66 por mostrar una PERSONA RECONOCIBLE. El detalle de los rechazos está
+//    DESCARTARON 63 por mostrar una PERSONA RECONOCIBLE. El detalle de los rechazos está
 //    en _v3/rkspots_stock_rechazados.json.
 // ⛔ El metraje real NO se ralentiza (rate 1): el 0,5x existe para esconder los artefactos de agnes.
 export const REAL = [
@@ -97,22 +97,34 @@ export const REAL = [
   "prompt": "cardboard boxes real footage: boxes cardboard storage plain stack shelf taped"
  },
  {
-  "id": "r111",
-  "sec": "S13",
-  "lugar": "utility",
-  "prompt": "basement shelf real footage: shelf basement storage boxes tins utility cellar"
- },
- {
   "id": "r113",
   "sec": "S13",
   "lugar": "bedroom",
   "prompt": "banknotes real footage: banknotes cash money notes envelope paper folded"
  },
  {
+  "id": "r114",
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "closed door real footage: door closed front handle lock frame wood entrance"
+ },
+ {
+  "id": "r115",
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "door hinge real footage: hinge door screws frame metal pin leaf jamb"
+ },
+ {
   "id": "r116",
   "sec": "S14",
   "lugar": "porch",
   "prompt": "keyhole real footage: keyhole lock door cylinder brass key hole"
+ },
+ {
+  "id": "r117",
+  "sec": "S14",
+  "lugar": "workbench",
+  "prompt": "brass key real footage: key brass cut metal blade ring house"
  },
  {
   "id": "r119",
@@ -133,6 +145,12 @@ export const REAL = [
   "prompt": "door frame real footage: door frame house home detail object"
  },
  {
+  "id": "r121",
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "brass handle real footage: brass handle house home detail object"
+ },
+ {
   "id": "r123",
   "sec": "S13",
   "lugar": "utility",
@@ -149,6 +167,12 @@ export const REAL = [
   "sec": "S15",
   "lugar": "workbench",
   "prompt": "old key real footage: old key house home detail object"
+ },
+ {
+  "id": "r127",
+  "sec": "S5",
+  "lugar": "livingroom",
+  "prompt": "wall shelf real footage: wall shelf house home detail object"
  },
  {
   "id": "r129",
@@ -265,12 +289,6 @@ export const REAL = [
   "prompt": "library shelf real footage: shelf books library row spines shelves dust wood reading"
  },
  {
-  "id": "r25",
-  "sec": "S5",
-  "lugar": "study",
-  "prompt": "dusty books real footage: books dust shelf spines old row stripe handled library"
- },
- {
   "id": "r27",
   "sec": "S6",
   "lugar": "study",
@@ -337,12 +355,6 @@ export const REAL = [
   "prompt": "alarm clock real footage: clock alarm bedside time hands bedroom night table"
  },
  {
-  "id": "r48",
-  "sec": "S11",
-  "lugar": "garage",
-  "prompt": "metal safe real footage: safe steel box metal keypad handle bolts shelf heavy"
- },
- {
   "id": "r49",
   "sec": "S11",
   "lugar": "garage",
@@ -365,12 +377,6 @@ export const REAL = [
   "sec": "S12",
   "lugar": "bedroom",
   "prompt": "folded socks real footage: socks folded rolled drawer dresser underwear towel bedroom top"
- },
- {
-  "id": "r55",
-  "sec": "S12",
-  "lugar": "bedroom",
-  "prompt": "jewelry box real footage: jewellery box rings chains earrings brooch velvet lid dresser"
  },
  {
   "id": "r56",
@@ -407,6 +413,12 @@ export const REAL = [
   "sec": "S14",
   "lugar": "porch",
   "prompt": "front porch real footage: porch step front door house path hedge pots doormat"
+ },
+ {
+  "id": "r69",
+  "sec": "S15",
+  "lugar": "street",
+  "prompt": "quiet street real footage: street quiet houses road neighbourhood empty pavement afternoon"
  },
  {
   "id": "r70",
@@ -479,6 +491,12 @@ export const REAL = [
   "sec": "S6",
   "lugar": "study",
   "prompt": "paper stack real footage: papers stack documents office desk sheets pile folder"
+ },
+ {
+  "id": "r89",
+  "sec": "S6",
+  "lugar": "study",
+  "prompt": "wooden desk real footage: desk wooden office study drawer surface lamp papers"
  },
  {
   "id": "r92",
