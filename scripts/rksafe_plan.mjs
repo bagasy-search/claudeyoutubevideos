@@ -285,6 +285,36 @@ const finales = beats.filter((b) => !b._quitar);
 const MODO = cfg.AVATAR_MODO || 'fondo';
 if (MODO === 'ventanas') {
   const OVv = new Set(cfg.OVERLAY);
+  // ⛔⛔ UNA VENTANA DE AVATAR LARGUÍSIMA PASA TODAS LAS COMPUERTAS EN VERDE: cobertura 100 %, cero
+  //    huecos, pacing sano — porque técnicamente ahí HAY avatar. Y es un pozo. Medido acá: una de
+  //    25,1 s y cuatro por encima de 12 s en un video de 23 min. Pasa porque al quitar beats vecinos
+  //    para abrir ventana los huecos se FUSIONAN, y nadie mide el resultado de la fusión.
+  //    Arreglo: se DEVUELVEN al montaje los planos quitados que caen dentro de una ventana que pasa
+  //    el techo, empezando por el más cercano a su medio, hasta que ninguna supere AVATAR_WIN_MAX.
+  const MAXW = cfg.AVATAR_WIN_MAX ?? 9.0;
+  const quitadosLista = beats.filter((b) => b._quitar);
+  let devueltos = 0;
+  for (let vuelta = 0; vuelta < 60; vuelta++) {
+    const base0 = beats.filter((b) => !b._quitar && !(b.kind === 'componente' && OVv.has(b.comp)))
+      .sort((a, b) => a.t - b.t);
+    const gaps = [];
+    let cur = 0;
+    for (const b of base0) { if (b.t - cur > 0.02) gaps.push([cur, b.t]); cur = Math.max(cur, b.t + b.dur); }
+    if (TOTAL - cur > 0.02) gaps.push([cur, TOTAL]);
+    const largo = gaps.filter(([x, y]) => y - x > MAXW).sort((x, y) => (y[1] - y[0]) - (x[1] - x[0]))[0];
+    if (!largo) break;
+    const medio = (largo[0] + largo[1]) / 2;
+    const cand = quitadosLista
+      .filter((b) => b._quitar && b.t >= largo[0] - 0.01 && b.t + b.dur <= largo[1] + 0.01)
+      .sort((a, b) => Math.abs(a.t + a.dur / 2 - medio) - Math.abs(b.t + b.dur / 2 - medio))[0];
+    if (!cand) break;                       // no queda nada que devolver en ese tramo
+    delete cand._quitar; devueltos++;
+  }
+  // ⛔ `finales` ya se calculó arriba: los planos devueltos hay que REINSERTARLOS o el arreglo no
+  //    llega al montaje (la marca cambia y el array no).
+  for (const b of quitadosLista) if (!b._quitar && !finales.includes(b)) finales.push(b);
+  finales.sort((a, b) => a.t - b.t);
+  if (devueltos) console.log('techo de ventana ' + MAXW + 's: ' + devueltos + ' planos DEVUELTOS al montaje');
   const base0 = finales.filter((b) => !(b.kind === 'componente' && OVv.has(b.comp))).sort((a, b) => a.t - b.t);
   const MIN_WIN = cfg.AVATAR_WIN_MIN ?? 1.4;
   const huecos = [];
