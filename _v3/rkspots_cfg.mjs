@@ -9,6 +9,12 @@
 export const AVATAR_MODO = 'ventanas';
 export const AVATAR_WIN_MIN = 1.6;
 export const AVATAR_OBJ = 0.20;
+// ⛔ PESO DEL METRAJE REAL EN EL DESEMPATE. Con los 215 clips de agnes en disco compitiendo por los
+//    mismos slots, el default (0,6) dejaba el metraje real en 21,7 % — por debajo del piso de 25 %.
+//    Barrido medido acá: 0,6 -> 21,7 % · 1,0 -> 23,1 % · 1,5 -> 27,7 % · 2,5 -> 29,3 %. Se toma 1,5:
+//    cumple el piso sin forzar el puntaje de sustantivos (el contexto se mide aparte).
+export const REAL_BONUS = 1.5;
+
 
 export const SECCIONES = [
   { sec: 'S1',  rol: 'hook',    p0: 1,  p1: 9 },   // los once minutos · el cajón · quién soy · la promesa

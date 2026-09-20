@@ -4,6 +4,98 @@
  "fps": 30,
  "beats": [
   {
+   "t": 3,
+   "dur": 3,
+   "sec": "S1",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s1_05.jpg"
+  },
+  {
+   "t": 6,
+   "dur": 4.033,
+   "sec": "S1",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s1_06.mp4",
+   "rate": 1
+  },
+  {
+   "t": 10.033,
+   "dur": 5.6,
+   "sec": "S1",
+   "lugar": "garage",
+   "kind": "imagen",
+   "asset": "img/rkspots_s1_09.jpg"
+  },
+  {
+   "t": 15.633,
+   "dur": 8.066,
+   "sec": "S1",
+   "lugar": "livingroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s1_03.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 23.699,
+   "dur": 3.6,
+   "sec": "S1",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r03.mp4",
+   "rate": 1
+  },
+  {
+   "t": 31.332,
+   "dur": 6.8,
+   "sec": "S1",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r54.mp4",
+   "rate": 1
+  },
+  {
+   "t": 41.032,
+   "dur": 4.033,
+   "sec": "S1",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r44.mp4",
+   "rate": 1
+  },
+  {
+   "t": 45.065,
+   "dur": 5.2,
+   "sec": "S1",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s12_01.jpg"
+  },
+  {
+   "t": 50.265,
+   "dur": 3.4,
+   "sec": "S1",
+   "lugar": "doorway",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r01.mp4",
+   "rate": 1
+  },
+  {
+   "t": 53.665,
+   "dur": 7,
+   "sec": "S1",
+   "lugar": "study",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r27.mp4",
+   "rate": 1
+  },
+  {
    "t": 64.32,
    "dur": 4.48,
    "kind": "componente",
@@ -18,98 +110,8 @@
    "bed": "img/rkspots_s1_01_blur.jpg"
   },
   {
-   "t": 3,
-   "dur": 3,
-   "sec": "S1",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_05.jpg"
-  },
-  {
-   "t": 6,
-   "dur": 4.033,
-   "sec": "S1",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_06.jpg"
-  },
-  {
-   "t": 10.033,
+   "t": 68.8,
    "dur": 5.6,
-   "sec": "S1",
-   "lugar": "garage",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_09.jpg"
-  },
-  {
-   "t": 15.633,
-   "dur": 8.067,
-   "sec": "S1",
-   "lugar": "livingroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_03.jpg"
-  },
-  {
-   "t": 23.7,
-   "dur": 3.6,
-   "sec": "S1",
-   "lugar": "hall",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r03.mp4",
-   "rate": 1
-  },
-  {
-   "t": 27.3,
-   "dur": 4.033,
-   "sec": "S1",
-   "lugar": "kidroom",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r33.mp4",
-   "rate": 1
-  },
-  {
-   "t": 31.333,
-   "dur": 6.8,
-   "sec": "S1",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_01.jpg"
-  },
-  {
-   "t": 41.033,
-   "dur": 4.033,
-   "sec": "S1",
-   "lugar": "bedroom",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r44.mp4",
-   "rate": 1
-  },
-  {
-   "t": 50.266,
-   "dur": 3.4,
-   "sec": "S1",
-   "lugar": "doorway",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r01.mp4",
-   "rate": 1
-  },
-  {
-   "t": 53.666,
-   "dur": 7,
-   "sec": "S1",
-   "lugar": "study",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r27.mp4",
-   "rate": 1
-  },
-  {
-   "t": 74.4,
-   "dur": 8.067,
    "sec": "S1",
    "lugar": "livingroom",
    "kind": "clip",
@@ -118,7 +120,16 @@
    "rate": 1
   },
   {
-   "t": 82.467,
+   "t": 74.4,
+   "dur": 8.066,
+   "sec": "S1",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s1_15.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 82.466,
    "dur": 3.6,
    "sec": "S1",
    "lugar": "hall",
@@ -128,7 +139,7 @@
    "rate": 1
   },
   {
-   "t": 86.067,
+   "t": 86.066,
    "dur": 4.033,
    "sec": "S1",
    "lugar": "hall",
@@ -138,7 +149,7 @@
    "rate": 1
   },
   {
-   "t": 90.1,
+   "t": 90.099,
    "dur": 6.8,
    "sec": "S1",
    "lugar": "van",
@@ -148,7 +159,7 @@
    "rate": 1
   },
   {
-   "t": 99.8,
+   "t": 99.799,
    "dur": 4.033,
    "sec": "S1",
    "lugar": "street",
@@ -158,70 +169,30 @@
    "rate": 1
   },
   {
-   "t": 112.433,
+   "t": 112.432,
    "dur": 7,
    "sec": "S1",
-   "lugar": "kitchen",
+   "lugar": "bedroom",
    "kind": "imagen",
-   "asset": "img/rkspots_s1_15.jpg"
+   "asset": "img/rkspots_s1_07.jpg"
   },
   {
-   "t": 140.4,
-   "dur": 5.04,
-   "kind": "componente",
-   "sec": "S2",
-   "comp": "MythTruth",
-   "props": {
-    "kicker": "THE WHOLE VIDEO",
-    "myth": "He searches your house",
-    "truth": "He checks a list"
-   },
-   "bed": "img/rkspots_s2_01_blur.jpg"
-  },
-  {
-   "t": 186.28,
-   "dur": 5.6,
-   "kind": "componente",
-   "sec": "S2",
-   "comp": "BigStat",
-   "props": {
-    "value": "5–10",
-    "unit": "minutes inside",
-    "tone": "danger",
-    "caption": "Not a lot of minutes to be creative in."
-   },
-   "bed": "img/rkspots_s2_01_blur.jpg"
-  },
-  {
-   "t": 209.14,
-   "dur": 5.88,
-   "kind": "componente",
-   "sec": "S2",
-   "comp": "RouteFlow",
-   "props": {
-    "kicker": "THE ROUTE",
-    "title": "Three stops, then out",
-    "steps": [
-     {
-      "label": "The main bedroom"
-     },
-     {
-      "label": "The office"
-     },
-     {
-      "label": "The way out"
-     }
-    ]
-   },
-   "bed": "img/rkspots_s2_01_blur.jpg"
+   "t": 122.432,
+   "dur": 4.033,
+   "sec": "S1",
+   "lugar": "street",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s1_16.mp4",
+   "rate": 1
   },
   {
    "t": 130.1,
    "dur": 4.033,
    "sec": "S2",
    "lugar": "kitchen",
-   "kind": "imagen",
-   "asset": "img/rkspots_s2_01.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s2_01.mp4",
+   "rate": 1
   },
   {
    "t": 134.133,
@@ -240,6 +211,19 @@
    "real": true,
    "asset": "broll/rkspots_real/rkspots_r10.mp4",
    "rate": 1
+  },
+  {
+   "t": 140.4,
+   "dur": 5.04,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "THE WHOLE VIDEO",
+    "myth": "He searches your house",
+    "truth": "He checks a list"
+   },
+   "bed": "img/rkspots_s2_01_blur.jpg"
   },
   {
    "t": 145.44,
@@ -272,8 +256,8 @@
    "rate": 1
   },
   {
-   "t": 176.24,
-   "dur": 4.033,
+   "t": 172.64,
+   "dur": 3.6,
    "sec": "S2",
    "lugar": "street",
    "kind": "clip",
@@ -282,59 +266,93 @@
    "rate": 1
   },
   {
+   "t": 180.273,
+   "dur": 6.007,
+   "sec": "S2",
+   "lugar": "workbench",
+   "kind": "imagen",
+   "asset": "img/rkspots_s2_03.jpg"
+  },
+  {
+   "t": 186.28,
+   "dur": 5.6,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "BigStat",
+   "props": {
+    "value": "5–10",
+    "unit": "minutes inside",
+    "tone": "danger",
+    "caption": "Not a lot of minutes to be creative in."
+   },
+   "bed": "img/rkspots_s2_01_blur.jpg"
+  },
+  {
    "t": 199.313,
    "dur": 7,
    "sec": "S2",
-   "lugar": "hall",
+   "lugar": "street",
    "kind": "imagen",
-   "asset": "img/rkspots_s2_04.jpg"
+   "asset": "img/rkspots_s2_17.jpg"
+  },
+  {
+   "t": 209.14,
+   "dur": 5.88,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "RouteFlow",
+   "props": {
+    "kicker": "THE ROUTE",
+    "title": "Three stops, then out",
+    "steps": [
+     {
+      "label": "The main bedroom"
+     },
+     {
+      "label": "The office"
+     },
+     {
+      "label": "The way out"
+     }
+    ]
+   },
+   "bed": "img/rkspots_s2_01_blur.jpg"
   },
   {
    "t": 223.72,
-   "dur": 8.067,
+   "dur": 8.066,
    "sec": "S2",
    "lugar": "hall",
-   "kind": "imagen",
-   "asset": "img/rkspots_s2_13.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s2_13.mp4",
+   "rate": 0.5
   },
   {
-   "t": 241.787,
-   "dur": 2.373,
+   "t": 231.786,
+   "dur": 6.4,
+   "sec": "S2",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r131.mp4",
+   "rate": 1
+  },
+  {
+   "t": 241.786,
+   "dur": 2.374,
    "sec": "S2",
    "lugar": "kitchen",
    "kind": "imagen",
    "asset": "img/rkspots_s2_01.jpg"
   },
   {
-   "t": 291.6,
-   "dur": 7.56,
-   "kind": "componente",
-   "sec": "S3",
-   "comp": "CheckCard",
-   "props": {
-    "kicker": "NUMBER TEN",
-    "title": "Why the freezer fails",
-    "items": [
-     {
-      "text": "Everybody has heard the joke"
-     },
-     {
-      "text": "It costs him four seconds"
-     },
-     {
-      "text": "Foil is not food"
-     }
-    ]
-   },
-   "bed": "img/rkspots_s3_01_blur.jpg"
-  },
-  {
    "t": 244.16,
    "dur": 4.033,
    "sec": "S3",
    "lugar": "kitchen",
-   "kind": "imagen",
-   "asset": "img/rkspots_s3_01.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s3_01.mp4",
+   "rate": 1
   },
   {
    "t": 248.193,
@@ -355,13 +373,13 @@
    "rate": 1
   },
   {
-   "t": 265.86,
-   "dur": 4.033,
+   "t": 269.893,
+   "dur": 5,
    "sec": "S3",
-   "lugar": "kidroom",
+   "lugar": "kitchen",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r34.mp4",
+   "asset": "broll/rkspots_real/rkspots_r132.mp4",
    "rate": 1
   },
   {
@@ -371,7 +389,7 @@
    "lugar": "kitchen",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r131.mp4",
+   "asset": "broll/rkspots_real/rkspots_r15.mp4",
    "rate": 1
   },
   {
@@ -397,8 +415,31 @@
    "lugar": "kitchen",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r132.mp4",
+   "asset": "broll/rkspots_real/rkspots_r16.mp4",
    "rate": 1
+  },
+  {
+   "t": 291.6,
+   "dur": 7.56,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "NUMBER TEN",
+    "title": "Why the freezer fails",
+    "items": [
+     {
+      "text": "Everybody has heard the joke"
+     },
+     {
+      "text": "It costs him four seconds"
+     },
+     {
+      "text": "Foil is not food"
+     }
+    ]
+   },
+   "bed": "img/rkspots_s3_01_blur.jpg"
   },
   {
    "t": 299.16,
@@ -407,17 +448,17 @@
    "lugar": "kitchen",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r15.mp4",
+   "asset": "broll/rkspots_real/rkspots_r78.mp4",
    "rate": 1
   },
   {
-   "t": 308.96,
-   "dur": 4.033,
+   "t": 305.16,
+   "dur": 3.8,
    "sec": "S3",
-   "lugar": "kitchen",
+   "lugar": "bathroom",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r16.mp4",
+   "asset": "broll/rkspots_real/rkspots_r20.mp4",
    "rate": 1
   },
   {
@@ -432,45 +473,32 @@
   },
   {
    "t": 322.593,
-   "dur": 8.067,
+   "dur": 8.066,
    "sec": "S3",
-   "lugar": "study",
+   "lugar": "bedroom",
    "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r23.mp4",
-   "rate": 1
+   "asset": "broll/rkspots/rkspots_s12_15.mp4",
+   "rate": 0.5
   },
   {
-   "t": 330.66,
+   "t": 330.659,
    "dur": 4.033,
    "sec": "S3",
    "lugar": "kitchen",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r78.mp4",
+   "asset": "broll/rkspots_real/rkspots_r79.mp4",
    "rate": 1
   },
   {
-   "t": 334.693,
-   "dur": 1.387,
+   "t": 334.692,
+   "dur": 1.388,
    "sec": "S3",
    "lugar": "bathroom",
    "kind": "clip",
    "real": true,
    "asset": "broll/rkspots_real/rkspots_r21.mp4",
    "rate": 1
-  },
-  {
-   "t": 398.46,
-   "dur": 7.28,
-   "kind": "componente",
-   "sec": "S4",
-   "comp": "PullQuote",
-   "props": {
-    "quote": "It is not how good the hiding place is. It is whether he is already standing there.",
-    "attrib": "— Ray"
-   },
-   "bed": "img/rkspots_s4_01_blur.jpg"
   },
   {
    "t": 336.08,
@@ -490,16 +518,15 @@
   },
   {
    "t": 349.713,
-   "dur": 8.067,
+   "dur": 8.066,
    "sec": "S4",
-   "lugar": "bedroom",
+   "lugar": "bathroom",
    "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r113.mp4",
-   "rate": 1
+   "asset": "broll/rkspots/rkspots_s4_03.mp4",
+   "rate": 0.5
   },
   {
-   "t": 357.78,
+   "t": 357.779,
    "dur": 4.033,
    "sec": "S4",
    "lugar": "bathroom",
@@ -509,8 +536,8 @@
    "rate": 1
   },
   {
-   "t": 366.813,
-   "dur": 3.5,
+   "t": 361.812,
+   "dur": 5,
    "sec": "S4",
    "lugar": "bathroom",
    "kind": "clip",
@@ -519,27 +546,27 @@
    "rate": 1
   },
   {
-   "t": 370.313,
-   "dur": 7.2,
+   "t": 366.812,
+   "dur": 3.5,
    "sec": "S4",
    "lugar": "bathroom",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r20.mp4",
+   "asset": "broll/rkspots_real/rkspots_r81.mp4",
    "rate": 1
   },
   {
-   "t": 380.313,
-   "dur": 4.033,
+   "t": 370.312,
+   "dur": 7.2,
    "sec": "S4",
    "lugar": "kidroom",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r92.mp4",
+   "asset": "broll/rkspots_real/rkspots_r34.mp4",
    "rate": 1
   },
   {
-   "t": 384.346,
+   "t": 384.345,
    "dur": 6,
    "sec": "S4",
    "lugar": "bathroom",
@@ -549,23 +576,92 @@
    "rate": 1
   },
   {
-   "t": 390.346,
-   "dur": 3.8,
+   "t": 398.46,
+   "dur": 7.28,
+   "kind": "componente",
    "sec": "S4",
-   "lugar": "bedroom",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "It is not how good the hiding place is. It is whether he is already standing there.",
+    "attrib": "— Ray"
+   },
+   "bed": "img/rkspots_s4_01_blur.jpg"
+  },
+  {
+   "t": 410.38,
+   "dur": 4.033,
+   "sec": "S5",
+   "lugar": "study",
    "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r56.mp4",
+   "asset": "broll/rkspots/rkspots_s5_01.mp4",
    "rate": 1
   },
   {
-   "t": 394.146,
-   "dur": 4.314,
-   "sec": "S4",
-   "lugar": "bedroom",
+   "t": 414.413,
+   "dur": 3.4,
+   "sec": "S5",
+   "lugar": "livingroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s5_03.jpg"
+  },
+  {
+   "t": 417.813,
+   "dur": 7,
+   "sec": "S5",
+   "lugar": "study",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r100.mp4",
+   "asset": "broll/rkspots_real/rkspots_r23.mp4",
+   "rate": 1
+  },
+  {
+   "t": 424.813,
+   "dur": 4.033,
+   "sec": "S5",
+   "lugar": "study",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r24.mp4",
+   "rate": 1
+  },
+  {
+   "t": 428.846,
+   "dur": 5.8,
+   "sec": "S5",
+   "lugar": "livingroom",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r84.mp4",
+   "rate": 1
+  },
+  {
+   "t": 437.546,
+   "dur": 8.067,
+   "sec": "S5",
+   "lugar": "street",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r69.mp4",
+   "rate": 1
+  },
+  {
+   "t": 445.613,
+   "dur": 6.4,
+   "sec": "S5",
+   "lugar": "livingroom",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r127.mp4",
+   "rate": 1
+  },
+  {
+   "t": 455.613,
+   "dur": 4.033,
+   "sec": "S5",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r50.mp4",
    "rate": 1
   },
   {
@@ -583,117 +679,21 @@
    "bed": "img/rkspots_s5_01_blur.jpg"
   },
   {
-   "t": 410.38,
-   "dur": 4.033,
-   "sec": "S5",
-   "lugar": "study",
-   "kind": "imagen",
-   "asset": "img/rkspots_s5_01.jpg"
-  },
-  {
-   "t": 414.413,
-   "dur": 3.4,
-   "sec": "S5",
-   "lugar": "livingroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s5_03.jpg"
-  },
-  {
-   "t": 417.813,
+   "t": 479.113,
    "dur": 7,
-   "sec": "S5",
-   "lugar": "livingroom",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r84.mp4",
-   "rate": 1
-  },
-  {
-   "t": 424.813,
-   "dur": 4.033,
-   "sec": "S5",
-   "lugar": "study",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r24.mp4",
-   "rate": 1
-  },
-  {
-   "t": 428.846,
-   "dur": 5.8,
-   "sec": "S5",
-   "lugar": "study",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r25.mp4",
-   "rate": 1
-  },
-  {
-   "t": 437.546,
-   "dur": 8.067,
    "sec": "S5",
    "lugar": "study",
    "kind": "imagen",
    "asset": "img/rkspots_s5_05.jpg"
   },
   {
-   "t": 452.013,
-   "dur": 3.6,
-   "sec": "S5",
-   "lugar": "garage",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r48.mp4",
-   "rate": 1
-  },
-  {
-   "t": 455.613,
-   "dur": 4.033,
-   "sec": "S5",
-   "lugar": "garage",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r50.mp4",
-   "rate": 1
-  },
-  {
-   "t": 479.113,
-   "dur": 7,
-   "sec": "S5",
-   "lugar": "study",
-   "kind": "imagen",
-   "asset": "img/rkspots_s5_08.jpg"
-  },
-  {
-   "t": 525.6,
-   "dur": 6.72,
-   "kind": "componente",
-   "sec": "S6",
-   "comp": "CheckCard",
-   "props": {
-    "kicker": "NUMBER SEVEN",
-    "title": "The desk is not about cash",
-    "items": [
-     {
-      "text": "The chequebook"
-     },
-     {
-      "text": "The passport folder"
-     },
-     {
-      "text": "The one marked IMPORTANT"
-     }
-    ]
-   },
-   "bed": "img/rkspots_s6_01_blur.jpg"
-  },
-  {
    "t": 490.94,
    "dur": 4.033,
    "sec": "S6",
    "lugar": "study",
-   "kind": "imagen",
-   "asset": "img/rkspots_s6_01.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s6_01.mp4",
+   "rate": 1
   },
   {
    "t": 494.973,
@@ -730,7 +730,7 @@
    "lugar": "porch",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r67.mp4",
+   "asset": "broll/rkspots_real/rkspots_r114.mp4",
    "rate": 1
   },
   {
@@ -752,6 +752,29 @@
    "rate": 1
   },
   {
+   "t": 525.6,
+   "dur": 6.72,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "NUMBER SEVEN",
+    "title": "The desk is not about cash",
+    "items": [
+     {
+      "text": "The chequebook"
+     },
+     {
+      "text": "The passport folder"
+     },
+     {
+      "text": "The one marked IMPORTANT"
+     }
+    ]
+   },
+   "bed": "img/rkspots_s6_01_blur.jpg"
+  },
+  {
    "t": 532.32,
    "dur": 6.4,
    "sec": "S6",
@@ -762,8 +785,28 @@
    "rate": 1
   },
   {
+   "t": 538.72,
+   "dur": 3.6,
+   "sec": "S6",
+   "lugar": "study",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r87.mp4",
+   "rate": 1
+  },
+  {
    "t": 542.32,
    "dur": 4.033,
+   "sec": "S6",
+   "lugar": "study",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r89.mp4",
+   "rate": 1
+  },
+  {
+   "t": 546.353,
+   "dur": 5.2,
    "sec": "S6",
    "lugar": "garage",
    "kind": "clip",
@@ -775,18 +818,10 @@
    "t": 551.553,
    "dur": 4.6,
    "sec": "S6",
-   "lugar": "livingroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_03.jpg"
-  },
-  {
-   "t": 556.153,
-   "dur": 4.033,
-   "sec": "S6",
    "lugar": "study",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r87.mp4",
+   "asset": "broll/rkspots_real/rkspots_r88.mp4",
    "rate": 1
   },
   {
@@ -798,27 +833,12 @@
    "asset": "img/rkspots_s6_09.jpg"
   },
   {
-   "t": 570.586,
-   "dur": 4.033,
+   "t": 574.619,
+   "dur": 7.361,
    "sec": "S6",
    "lugar": "study",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r88.mp4",
-   "rate": 1
-  },
-  {
-   "t": 596.1,
-   "dur": 5.6,
-   "kind": "componente",
-   "sec": "S7",
-   "comp": "MythTruth",
-   "props": {
-    "kicker": "NUMBER SIX",
-    "myth": "Nobody looks in the kids room",
-    "truth": "It is a thirty-second room"
-   },
-   "bed": "img/rkspots_s7_01_blur.jpg"
+   "kind": "imagen",
+   "asset": "img/rkspots_s6_05.jpg"
   },
   {
    "t": 581.98,
@@ -841,81 +861,94 @@
    "dur": 6.687,
    "sec": "S7",
    "lugar": "kidroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s7_02.jpg"
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r92.mp4",
+   "rate": 1
   },
   {
-   "t": 605.733,
-   "dur": 5.8,
+   "t": 596.1,
+   "dur": 5.6,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "NUMBER SIX",
+    "myth": "Nobody looks in the kids room",
+    "truth": "It is a thirty-second room"
+   },
+   "bed": "img/rkspots_s7_01_blur.jpg"
+  },
+  {
+   "t": 601.7,
+   "dur": 4.033,
    "sec": "S7",
    "lugar": "kidroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s7_07.jpg"
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r33.mp4",
+   "rate": 1
   },
   {
    "t": 614.433,
-   "dur": 8.067,
+   "dur": 8.066,
+   "sec": "S7",
+   "lugar": "kidroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s7_04.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 622.499,
+   "dur": 6.4,
    "sec": "S7",
    "lugar": "kidroom",
    "kind": "imagen",
    "asset": "img/rkspots_s7_06.jpg"
   },
   {
-   "t": 628.9,
-   "dur": 3.6,
+   "t": 632.499,
+   "dur": 4.033,
+   "sec": "S7",
+   "lugar": "study",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s5_12.mp4",
+   "rate": 1
+  },
+  {
+   "t": 641.732,
+   "dur": 4.6,
    "sec": "S7",
    "lugar": "kidroom",
    "kind": "imagen",
-   "asset": "img/rkspots_s7_10.jpg"
+   "asset": "img/rkspots_s7_08.jpg"
   },
   {
-   "t": 636.533,
-   "dur": 5.2,
-   "sec": "S7",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_06.jpg"
-  },
-  {
-   "t": 641.733,
-   "dur": 4.6,
+   "t": 650.365,
+   "dur": 3.4,
    "sec": "S7",
    "lugar": "bedroom",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r46.mp4",
+   "asset": "broll/rkspots_real/rkspots_r113.mp4",
    "rate": 1
   },
   {
-   "t": 653.766,
-   "dur": 1.254,
+   "t": 653.765,
+   "dur": 1.255,
    "sec": "S7",
    "lugar": "kidroom",
    "kind": "imagen",
    "asset": "img/rkspots_s7_01.jpg"
   },
   {
-   "t": 672.84,
-   "dur": 7,
-   "kind": "componente",
-   "sec": "S8",
-   "comp": "SplitVs",
-   "props": {
-    "leftLabel": "You slept on it",
-    "leftValue": "4 years",
-    "rightLabel": "He lifts the corner",
-    "rightValue": "2 seconds",
-    "verdict": "And the mattress keeps the shape."
-   },
-   "bed": "img/rkspots_s8_01_blur.jpg"
-  },
-  {
    "t": 655.02,
    "dur": 4.033,
    "sec": "S8",
    "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s8_01.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s8_01.mp4",
+   "rate": 1
   },
   {
    "t": 659.053,
@@ -934,6 +967,21 @@
    "real": true,
    "asset": "broll/rkspots_real/rkspots_r38.mp4",
    "rate": 1
+  },
+  {
+   "t": 672.84,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "You slept on it",
+    "leftValue": "4 years",
+    "rightLabel": "He lifts the corner",
+    "rightValue": "2 seconds",
+    "verdict": "And the mattress keeps the shape."
+   },
+   "bed": "img/rkspots_s8_01_blur.jpg"
   },
   {
    "t": 683.873,
@@ -956,8 +1004,9 @@
    "dur": 4.033,
    "sec": "S8",
    "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s8_07.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s8_05.mp4",
+   "rate": 1
   },
   {
    "t": 712.406,
@@ -972,31 +1021,9 @@
    "dur": 4.033,
    "sec": "S8",
    "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s8_03.jpg"
-  },
-  {
-   "t": 748,
-   "dur": 8.12,
-   "kind": "componente",
-   "sec": "S9",
-   "comp": "CrossSection",
-   "props": {
-    "title": "The closet is a room of containers",
-    "caption": "Somebody else already packed them",
-    "labels": [
-     {
-      "text": "Shoeboxes on the floor"
-     },
-     {
-      "text": "The out-of-reach shelf"
-     },
-     {
-      "text": "And the suitcases"
-     }
-    ]
-   },
-   "bed": "img/rkspots_s9_01_blur.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s8_03.mp4",
+   "rate": 1
   },
   {
    "t": 726.18,
@@ -1045,15 +1072,39 @@
    "rate": 1
   },
   {
-   "t": 759.02,
-   "dur": 8.067,
+   "t": 748,
+   "dur": 8.12,
+   "kind": "componente",
    "sec": "S9",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s9_02.jpg"
+   "comp": "CrossSection",
+   "props": {
+    "title": "The closet is a room of containers",
+    "caption": "Somebody else already packed them",
+    "labels": [
+     {
+      "text": "Shoeboxes on the floor"
+     },
+     {
+      "text": "The out-of-reach shelf"
+     },
+     {
+      "text": "And the suitcases"
+     }
+    ]
+   },
+   "bed": "img/rkspots_s9_01_blur.jpg"
   },
   {
-   "t": 773.487,
+   "t": 759.02,
+   "dur": 8.066,
+   "sec": "S9",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s9_02.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 773.486,
    "dur": 3.6,
    "sec": "S9",
    "lugar": "livingroom",
@@ -1061,28 +1112,38 @@
    "asset": "img/rkspots_s5_11.jpg"
   },
   {
-   "t": 781.12,
+   "t": 781.119,
    "dur": 5.2,
-   "sec": "S9",
-   "lugar": "study",
-   "kind": "imagen",
-   "asset": "img/rkspots_s6_12.jpg"
-  },
-  {
-   "t": 790.92,
-   "dur": 4.033,
    "sec": "S9",
    "lugar": "closet",
    "kind": "imagen",
-   "asset": "img/rkspots_s9_11.jpg"
+   "asset": "img/rkspots_s9_06.jpg"
   },
   {
-   "t": 798.353,
-   "dur": 7.707,
+   "t": 790.919,
+   "dur": 4.033,
+   "sec": "S9",
+   "lugar": "closet",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s9_11.mp4",
+   "rate": 1
+  },
+  {
+   "t": 798.352,
+   "dur": 7.708,
    "sec": "S9",
    "lugar": "closet",
    "kind": "imagen",
    "asset": "img/rkspots_s9_01.jpg"
+  },
+  {
+   "t": 806.06,
+   "dur": 4.22,
+   "sec": "S10",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s10_01.mp4",
+   "rate": 1
   },
   {
    "t": 810.28,
@@ -1108,14 +1169,6 @@
    "bed": "img/rkspots_s10_01_blur.jpg"
   },
   {
-   "t": 806.06,
-   "dur": 4.22,
-   "sec": "S10",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s10_01.jpg"
-  },
-  {
    "t": 816.72,
    "dur": 6.4,
    "sec": "S10",
@@ -1130,7 +1183,7 @@
    "lugar": "bedroom",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r99.mp4",
+   "asset": "broll/rkspots_real/rkspots_r46.mp4",
    "rate": 1
   },
   {
@@ -1144,20 +1197,32 @@
    "rate": 1
   },
   {
+   "t": 838.42,
+   "dur": 5,
+   "sec": "S10",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r100.mp4",
+   "rate": 1
+  },
+  {
+   "t": 843.42,
+   "dur": 3.5,
+   "sec": "S10",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r99.mp4",
+   "rate": 1
+  },
+  {
    "t": 846.92,
    "dur": 7.2,
    "sec": "S10",
    "lugar": "bedroom",
    "kind": "imagen",
    "asset": "img/rkspots_s10_07.jpg"
-  },
-  {
-   "t": 856.92,
-   "dur": 4.033,
-   "sec": "S10",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s10_04.jpg"
   },
   {
    "t": 860.953,
@@ -1168,20 +1233,12 @@
    "asset": "img/rkspots_s10_06.jpg"
   },
   {
-   "t": 866.953,
-   "dur": 3.8,
-   "sec": "S10",
-   "lugar": "livingroom",
+   "t": 875.78,
+   "dur": 3.82,
+   "sec": "S11",
+   "lugar": "closet",
    "kind": "imagen",
-   "asset": "img/rkspots_s1_03.jpg"
-  },
-  {
-   "t": 870.753,
-   "dur": 5.027,
-   "sec": "S10",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s10_08.jpg"
+   "asset": "img/rkspots_s11_01.jpg"
   },
   {
    "t": 879.6,
@@ -1195,29 +1252,6 @@
     "truth": "The safe packs it for him"
    },
    "bed": "img/rkspots_s11_01_blur.jpg"
-  },
-  {
-   "t": 969.16,
-   "dur": 6.16,
-   "kind": "componente",
-   "sec": "S11",
-   "comp": "SplitVs",
-   "props": {
-    "leftLabel": "Bolted to a joist",
-    "leftValue": "$150",
-    "rightLabel": "Sitting on a shelf",
-    "rightValue": "$600",
-    "verdict": "The bolts are the product."
-   },
-   "bed": "img/rkspots_s11_01_blur.jpg"
-  },
-  {
-   "t": 875.78,
-   "dur": 3.82,
-   "sec": "S11",
-   "lugar": "closet",
-   "kind": "imagen",
-   "asset": "img/rkspots_s11_01.jpg"
   },
   {
    "t": 884.92,
@@ -1241,27 +1275,29 @@
    "t": 895.32,
    "dur": 4.033,
    "sec": "S11",
-   "lugar": "garage",
+   "lugar": "porch",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r49.mp4",
+   "asset": "broll/rkspots_real/rkspots_r121.mp4",
    "rate": 1
   },
   {
    "t": 899.353,
    "dur": 5.8,
    "sec": "S11",
-   "lugar": "closet",
-   "kind": "imagen",
-   "asset": "img/rkspots_s11_02.jpg"
+   "lugar": "utility",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r123.mp4",
+   "rate": 1
   },
   {
    "t": 905.153,
    "dur": 2.9,
    "sec": "S11",
-   "lugar": "hall",
+   "lugar": "closet",
    "kind": "imagen",
-   "asset": "img/rkspots_s11_03.jpg"
+   "asset": "img/rkspots_s11_02.jpg"
   },
   {
    "t": 908.053,
@@ -1277,9 +1313,11 @@
    "t": 916.12,
    "dur": 6.4,
    "sec": "S11",
-   "lugar": "porch",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_11.jpg"
+   "lugar": "workbench",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r117.mp4",
+   "rate": 1
   },
   {
    "t": 922.52,
@@ -1304,16 +1342,20 @@
    "dur": 5.2,
    "sec": "S11",
    "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_05.jpg"
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r106.mp4",
+   "rate": 1
   },
   {
    "t": 935.353,
    "dur": 4.6,
    "sec": "S11",
-   "lugar": "garage",
-   "kind": "imagen",
-   "asset": "img/rkspots_s11_16.jpg"
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r63.mp4",
+   "rate": 1
   },
   {
    "t": 939.953,
@@ -1345,10 +1387,10 @@
    "t": 954.386,
    "dur": 4.033,
    "sec": "S11",
-   "lugar": "kitchen",
+   "lugar": "utility",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r79.mp4",
+   "asset": "broll/rkspots_real/rkspots_r80.mp4",
    "rate": 1
   },
   {
@@ -1372,8 +1414,24 @@
    "dur": 2.041,
    "sec": "S11",
    "lugar": "closet",
-   "kind": "imagen",
-   "asset": "img/rkspots_s11_06.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s11_06.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 969.16,
+   "dur": 6.16,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "Bolted to a joist",
+    "leftValue": "$150",
+    "rightLabel": "Sitting on a shelf",
+    "rightValue": "$600",
+    "verdict": "The bolts are the product."
+   },
+   "bed": "img/rkspots_s11_01_blur.jpg"
   },
   {
    "t": 975.32,
@@ -1382,6 +1440,31 @@
    "lugar": "garage",
    "kind": "imagen",
    "asset": "img/rkspots_s11_05.jpg"
+  },
+  {
+   "t": 982.74,
+   "dur": 4.033,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s12_01.mp4",
+   "rate": 1
+  },
+  {
+   "t": 986.773,
+   "dur": 6.4,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s12_02.jpg"
+  },
+  {
+   "t": 993.173,
+   "dur": 2.247,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s12_08.jpg"
   },
   {
    "t": 995.42,
@@ -1413,6 +1496,163 @@
    "bed": "img/rkspots_s12_01_blur.jpg"
   },
   {
+   "t": 1004.1,
+   "dur": 8.066,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s12_04.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 1012.166,
+   "dur": 4.033,
+   "sec": "S12",
+   "lugar": "livingroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s15_01.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1016.199,
+   "dur": 5,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r107.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1021.199,
+   "dur": 3.5,
+   "sec": "S12",
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r120.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1024.699,
+   "dur": 7.2,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s1_06.jpg"
+  },
+  {
+   "t": 1031.899,
+   "dur": 2.8,
+   "sec": "S12",
+   "lugar": "workbench",
+   "kind": "imagen",
+   "asset": "img/rkspots_s1_19.jpg"
+  },
+  {
+   "t": 1034.699,
+   "dur": 4.033,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r56.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1038.732,
+   "dur": 6,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r57.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1044.732,
+   "dur": 3.8,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s12_03.jpg"
+  },
+  {
+   "t": 1048.532,
+   "dur": 4.033,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s12_05.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1052.565,
+   "dur": 6.4,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s12_06.jpg"
+  },
+  {
+   "t": 1058.965,
+   "dur": 3.2,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s12_07.jpg"
+  },
+  {
+   "t": 1062.165,
+   "dur": 8.066,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s12_09.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 1070.231,
+   "dur": 4.033,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s12_11.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1074.264,
+   "dur": 5,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s12_10.jpg"
+  },
+  {
+   "t": 1079.264,
+   "dur": 3.5,
+   "sec": "S12",
+   "lugar": "van",
+   "kind": "imagen",
+   "asset": "img/rkspots_s12_12.jpg"
+  },
+  {
+   "t": 1082.764,
+   "dur": 7.2,
+   "sec": "S12",
+   "lugar": "van",
+   "kind": "imagen",
+   "asset": "img/rkspots_s12_13.jpg"
+  },
+  {
+   "t": 1089.964,
+   "dur": 3.596,
+   "sec": "S12",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s12_14.jpg"
+  },
+  {
    "t": 1093.56,
    "dur": 6.16,
    "kind": "componente",
@@ -1427,190 +1667,12 @@
    "bed": "img/rkspots_s12_01_blur.jpg"
   },
   {
-   "t": 982.74,
-   "dur": 4.033,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_01.jpg"
-  },
-  {
-   "t": 986.773,
-   "dur": 6.4,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_02.jpg"
-  },
-  {
-   "t": 993.173,
-   "dur": 2.247,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_08.jpg"
-  },
-  {
-   "t": 1004.1,
-   "dur": 8.067,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r54.mp4",
-   "rate": 1
-  },
-  {
-   "t": 1012.167,
-   "dur": 4.033,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r106.mp4",
-   "rate": 1
-  },
-  {
-   "t": 1016.2,
-   "dur": 5,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_05.jpg"
-  },
-  {
-   "t": 1021.2,
-   "dur": 3.5,
-   "sec": "S12",
-   "lugar": "kitchen",
-   "kind": "imagen",
-   "asset": "img/rkspots_s2_02.jpg"
-  },
-  {
-   "t": 1024.7,
-   "dur": 7.2,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_06.jpg"
-  },
-  {
-   "t": 1031.9,
-   "dur": 2.8,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_04.jpg"
-  },
-  {
-   "t": 1034.7,
-   "dur": 4.033,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r107.mp4",
-   "rate": 1
-  },
-  {
-   "t": 1038.733,
-   "dur": 6,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r55.mp4",
-   "rate": 1
-  },
-  {
-   "t": 1044.733,
-   "dur": 3.8,
-   "sec": "S12",
-   "lugar": "livingroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_03.jpg"
-  },
-  {
-   "t": 1048.533,
-   "dur": 4.033,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r57.mp4",
-   "rate": 1
-  },
-  {
-   "t": 1052.566,
-   "dur": 6.4,
-   "sec": "S12",
-   "lugar": "workbench",
-   "kind": "imagen",
-   "asset": "img/rkspots_s2_03.jpg"
-  },
-  {
-   "t": 1058.966,
-   "dur": 3.2,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_07.jpg"
-  },
-  {
-   "t": 1062.166,
-   "dur": 8.067,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_09.jpg"
-  },
-  {
-   "t": 1070.233,
-   "dur": 4.033,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_11.jpg"
-  },
-  {
-   "t": 1074.266,
-   "dur": 5,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_10.jpg"
-  },
-  {
-   "t": 1079.266,
-   "dur": 3.5,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_03.jpg"
-  },
-  {
-   "t": 1082.766,
-   "dur": 7.2,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_05.jpg"
-  },
-  {
-   "t": 1089.966,
-   "dur": 3.594,
-   "sec": "S12",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_14.jpg"
-  },
-  {
    "t": 1099.72,
    "dur": 6,
    "sec": "S12",
-   "lugar": "van",
+   "lugar": "bedroom",
    "kind": "imagen",
-   "asset": "img/rkspots_s12_12.jpg"
+   "asset": "img/rkspots_s12_15.jpg"
   },
   {
    "t": 1105.72,
@@ -1625,8 +1687,9 @@
    "dur": 4.033,
    "sec": "S12",
    "lugar": "workbench",
-   "kind": "imagen",
-   "asset": "img/rkspots_s12_18.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s12_18.mp4",
+   "rate": 1
   },
   {
    "t": 1113.553,
@@ -1634,7 +1697,43 @@
    "sec": "S12",
    "lugar": "bedroom",
    "kind": "imagen",
-   "asset": "img/rkspots_s12_16.jpg"
+   "asset": "img/rkspots_s12_01.jpg"
+  },
+  {
+   "t": 1119.28,
+   "dur": 3.2,
+   "sec": "S13",
+   "lugar": "closet",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_02.jpg"
+  },
+  {
+   "t": 1122.48,
+   "dur": 4.033,
+   "sec": "S13",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s13_13.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1126.513,
+   "dur": 5.4,
+   "sec": "S13",
+   "lugar": "utility",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r110.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1131.913,
+   "dur": 4.227,
+   "sec": "S13",
+   "lugar": "livingroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s13_04.mp4",
+   "rate": 0.5
   },
   {
    "t": 1136.14,
@@ -1660,6 +1759,147 @@
    "bed": "img/rkspots_s13_01_blur.jpg"
   },
   {
+   "t": 1143.7,
+   "dur": 3,
+   "sec": "S13",
+   "lugar": "closet",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_03.jpg"
+  },
+  {
+   "t": 1146.7,
+   "dur": 4.033,
+   "sec": "S13",
+   "lugar": "garage",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s13_01.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1150.733,
+   "dur": 6.6,
+   "sec": "S13",
+   "lugar": "garage",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_05.jpg"
+  },
+  {
+   "t": 1157.333,
+   "dur": 4.6,
+   "sec": "S13",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_12.jpg"
+  },
+  {
+   "t": 1161.933,
+   "dur": 7.4,
+   "sec": "S13",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_07.jpg"
+  },
+  {
+   "t": 1169.333,
+   "dur": 3.4,
+   "sec": "S13",
+   "lugar": "utility",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_10.jpg"
+  },
+  {
+   "t": 1172.733,
+   "dur": 4.033,
+   "sec": "S13",
+   "lugar": "livingroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s13_08.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1176.766,
+   "dur": 5,
+   "sec": "S13",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_24.jpg"
+  },
+  {
+   "t": 1181.766,
+   "dur": 3.2,
+   "sec": "S13",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_17.jpg"
+  },
+  {
+   "t": 1184.966,
+   "dur": 4.033,
+   "sec": "S13",
+   "lugar": "garage",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s13_21.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1188.999,
+   "dur": 5.4,
+   "sec": "S13",
+   "lugar": "livingroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_06.jpg"
+  },
+  {
+   "t": 1194.399,
+   "dur": 8.066,
+   "sec": "S13",
+   "lugar": "bedroom",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s13_14.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 1202.465,
+   "dur": 3,
+   "sec": "S13",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_18.jpg"
+  },
+  {
+   "t": 1205.465,
+   "dur": 4.033,
+   "sec": "S13",
+   "lugar": "hall",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s13_11.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1209.498,
+   "dur": 6.6,
+   "sec": "S13",
+   "lugar": "utility",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_22.jpg"
+  },
+  {
+   "t": 1216.098,
+   "dur": 4.6,
+   "sec": "S13",
+   "lugar": "utility",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_09.jpg"
+  },
+  {
+   "t": 1220.698,
+   "dur": 7.922,
+   "sec": "S13",
+   "lugar": "bedroom",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_25.jpg"
+  },
+  {
    "t": 1228.62,
    "dur": 8.4,
    "kind": "componente",
@@ -1683,186 +1923,13 @@
    "bed": "img/rkspots_s13_01_blur.jpg"
   },
   {
-   "t": 1119.28,
-   "dur": 3.2,
-   "sec": "S13",
-   "lugar": "closet",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_02.jpg"
-  },
-  {
-   "t": 1122.48,
-   "dur": 4.033,
-   "sec": "S13",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_13.jpg"
-  },
-  {
-   "t": 1126.513,
-   "dur": 5.4,
-   "sec": "S13",
-   "lugar": "garage",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_01.jpg"
-  },
-  {
-   "t": 1131.913,
-   "dur": 4.227,
-   "sec": "S13",
-   "lugar": "utility",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r110.mp4",
-   "rate": 1
-  },
-  {
-   "t": 1143.7,
-   "dur": 3,
-   "sec": "S13",
-   "lugar": "closet",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_03.jpg"
-  },
-  {
-   "t": 1146.7,
-   "dur": 4.033,
-   "sec": "S13",
-   "lugar": "utility",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r111.mp4",
-   "rate": 1
-  },
-  {
-   "t": 1150.733,
-   "dur": 6.6,
-   "sec": "S13",
-   "lugar": "utility",
-   "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r123.mp4",
-   "rate": 1
-  },
-  {
-   "t": 1157.333,
-   "dur": 4.6,
-   "sec": "S13",
-   "lugar": "garage",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_05.jpg"
-  },
-  {
-   "t": 1161.933,
-   "dur": 7.4,
-   "sec": "S13",
-   "lugar": "kitchen",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_07.jpg"
-  },
-  {
-   "t": 1169.333,
-   "dur": 3.4,
-   "sec": "S13",
-   "lugar": "utility",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_10.jpg"
-  },
-  {
-   "t": 1172.733,
-   "dur": 4.033,
-   "sec": "S13",
-   "lugar": "livingroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_06.jpg"
-  },
-  {
-   "t": 1176.766,
-   "dur": 5,
-   "sec": "S13",
-   "lugar": "kitchen",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_24.jpg"
-  },
-  {
-   "t": 1181.766,
-   "dur": 3.2,
-   "sec": "S13",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_12.jpg"
-  },
-  {
-   "t": 1184.966,
-   "dur": 4.033,
-   "sec": "S13",
-   "lugar": "livingroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_04.jpg"
-  },
-  {
-   "t": 1188.999,
-   "dur": 5.4,
-   "sec": "S13",
-   "lugar": "workbench",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_19.jpg"
-  },
-  {
-   "t": 1194.399,
-   "dur": 8.067,
-   "sec": "S13",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_14.jpg"
-  },
-  {
-   "t": 1202.466,
-   "dur": 3,
-   "sec": "S13",
-   "lugar": "kitchen",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_18.jpg"
-  },
-  {
-   "t": 1205.466,
-   "dur": 4.033,
-   "sec": "S13",
-   "lugar": "hall",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_11.jpg"
-  },
-  {
-   "t": 1209.499,
-   "dur": 6.6,
-   "sec": "S13",
-   "lugar": "utility",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_22.jpg"
-  },
-  {
-   "t": 1216.099,
-   "dur": 4.6,
-   "sec": "S13",
-   "lugar": "livingroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_08.jpg"
-  },
-  {
-   "t": 1220.699,
-   "dur": 7.921,
-   "sec": "S13",
-   "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_25.jpg"
-  },
-  {
    "t": 1237.02,
    "dur": 4.033,
    "sec": "S13",
    "lugar": "bedroom",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_20.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s1_05.mp4",
+   "rate": 1
   },
   {
    "t": 1241.053,
@@ -1870,15 +1937,15 @@
    "sec": "S13",
    "lugar": "study",
    "kind": "imagen",
-   "asset": "img/rkspots_s13_15.jpg"
+   "asset": "img/rkspots_s13_16.jpg"
   },
   {
    "t": 1246.053,
    "dur": 3.2,
    "sec": "S13",
-   "lugar": "study",
+   "lugar": "bedroom",
    "kind": "imagen",
-   "asset": "img/rkspots_s13_16.jpg"
+   "asset": "img/rkspots_s12_02.jpg"
   },
   {
    "t": 1249.253,
@@ -1887,51 +1954,52 @@
    "lugar": "porch",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r120.mp4",
+   "asset": "broll/rkspots_real/rkspots_r124.mp4",
    "rate": 1
   },
   {
    "t": 1253.286,
    "dur": 5.4,
    "sec": "S13",
-   "lugar": "workbench",
+   "lugar": "livingroom",
    "kind": "imagen",
-   "asset": "img/rkspots_s2_06.jpg"
+   "asset": "img/rkspots_s13_19.jpg"
   },
   {
    "t": 1258.686,
-   "dur": 8.067,
+   "dur": 8.066,
    "sec": "S13",
-   "lugar": "utility",
-   "kind": "imagen",
-   "asset": "img/rkspots_s13_09.jpg"
+   "lugar": "hall",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s13_23.mp4",
+   "rate": 0.5
   },
   {
-   "t": 1266.753,
+   "t": 1266.752,
    "dur": 3,
-   "sec": "S13",
-   "lugar": "street",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_01.jpg"
-  },
-  {
-   "t": 1269.753,
-   "dur": 4.033,
    "sec": "S13",
    "lugar": "closet",
    "kind": "imagen",
    "asset": "img/rkspots_s13_02.jpg"
   },
   {
-   "t": 1273.786,
-   "dur": 6.6,
+   "t": 1269.752,
+   "dur": 4.033,
    "sec": "S13",
    "lugar": "bedroom",
    "kind": "imagen",
    "asset": "img/rkspots_s13_13.jpg"
   },
   {
-   "t": 1280.386,
+   "t": 1273.785,
+   "dur": 6.6,
+   "sec": "S13",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkspots_s13_07.jpg"
+  },
+  {
+   "t": 1280.385,
    "dur": 4.6,
    "sec": "S13",
    "lugar": "kitchen",
@@ -1939,36 +2007,21 @@
    "asset": "img/rkspots_s3_10.jpg"
   },
   {
-   "t": 1284.986,
-   "dur": 4.034,
+   "t": 1284.985,
+   "dur": 4.035,
    "sec": "S13",
    "lugar": "kitchen",
    "kind": "imagen",
    "asset": "img/rkspots_s13_18.jpg"
   },
   {
-   "t": 1334.66,
-   "dur": 8.96,
-   "kind": "componente",
-   "sec": "S14",
-   "comp": "RayCta",
-   "props": {
-    "eyebrow": "BEFORE YOU FORGET",
-    "title": "The Thousand Dollar Afternoon",
-    "sub": "Three guides, 99 pages, $27. The door, the phone call, and 37 fixes that cost nothing.",
-    "domain": "raykessler.vercel.app",
-    "qr": "img/rkspots_qr.png",
-    "showQr": true
-   },
-   "bed": "img/rkspots_s14_01_blur.jpg"
-  },
-  {
    "t": 1289.02,
    "dur": 4.033,
    "sec": "S14",
    "lugar": "porch",
-   "kind": "imagen",
-   "asset": "img/rkspots_s14_01.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s14_01.mp4",
+   "rate": 1
   },
   {
    "t": 1293.053,
@@ -1990,9 +2043,11 @@
    "t": 1302.153,
    "dur": 7.6,
    "sec": "S14",
-   "lugar": "street",
-   "kind": "imagen",
-   "asset": "img/rkspots_s15_02.jpg"
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r115.mp4",
+   "rate": 1
   },
   {
    "t": 1309.753,
@@ -2008,17 +2063,17 @@
    "t": 1313.786,
    "dur": 6.2,
    "sec": "S14",
-   "lugar": "livingroom",
+   "lugar": "street",
    "kind": "imagen",
-   "asset": "img/rkspots_s1_03.jpg"
+   "asset": "img/rkspots_s1_01.jpg"
   },
   {
    "t": 1319.986,
    "dur": 3.8,
    "sec": "S14",
-   "lugar": "kitchen",
+   "lugar": "street",
    "kind": "imagen",
-   "asset": "img/rkspots_s1_02.jpg"
+   "asset": "img/rkspots_s15_02.jpg"
   },
   {
    "t": 1323.786,
@@ -2027,16 +2082,34 @@
    "lugar": "porch",
    "kind": "clip",
    "real": true,
-   "asset": "broll/rkspots_real/rkspots_r63.mp4",
+   "asset": "broll/rkspots_real/rkspots_r64.mp4",
    "rate": 1
   },
   {
    "t": 1331.853,
    "dur": 2.807,
    "sec": "S14",
-   "lugar": "kitchen",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_15.jpg"
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r67.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1334.66,
+   "dur": 8.96,
+   "kind": "componente",
+   "sec": "S14",
+   "comp": "RayCta",
+   "props": {
+    "eyebrow": "BEFORE YOU FORGET",
+    "title": "The Thousand Dollar Afternoon",
+    "sub": "Three guides, 99 pages, $27. The door, the phone call, and 37 fixes that cost nothing.",
+    "domain": "raykessler.vercel.app",
+    "qr": "img/rkspots_qr.png",
+    "showQr": true
+   },
+   "bed": "img/rkspots_s14_01_blur.jpg"
   },
   {
    "t": 1343.62,
@@ -2050,10 +2123,9 @@
    "t": 1346.72,
    "dur": 4.033,
    "sec": "S14",
-   "lugar": "porch",
+   "lugar": "hall",
    "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r64.mp4",
+   "asset": "broll/rkspots/rkspots_s14_06.mp4",
    "rate": 1
   },
   {
@@ -2068,10 +2140,9 @@
    "t": 1357.353,
    "dur": 4.033,
    "sec": "S14",
-   "lugar": "porch",
+   "lugar": "kitchen",
    "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r124.mp4",
+   "asset": "broll/rkspots/rkspots_s14_11.mp4",
    "rate": 1
   },
   {
@@ -2086,9 +2157,9 @@
    "t": 1367.186,
    "dur": 3.3,
    "sec": "S14",
-   "lugar": "hall",
+   "lugar": "workbench",
    "kind": "imagen",
-   "asset": "img/rkspots_s14_06.jpg"
+   "asset": "img/rkspots_s14_07.jpg"
   },
   {
    "t": 1370.486,
@@ -2102,69 +2173,62 @@
    "t": 1378.086,
    "dur": 4.033,
    "sec": "S14",
-   "lugar": "workbench",
-   "kind": "imagen",
-   "asset": "img/rkspots_s14_07.jpg"
+   "lugar": "garage",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s14_09.mp4",
+   "rate": 1
   },
   {
    "t": 1382.119,
    "dur": 6.2,
-   "sec": "S14",
-   "lugar": "kitchen",
-   "kind": "imagen",
-   "asset": "img/rkspots_s14_11.jpg"
-  },
-  {
-   "t": 1388.319,
-   "dur": 3.8,
    "sec": "S14",
    "lugar": "hall",
    "kind": "imagen",
    "asset": "img/rkspots_s14_12.jpg"
   },
   {
-   "t": 1392.119,
-   "dur": 8.067,
+   "t": 1388.319,
+   "dur": 3.8,
    "sec": "S14",
    "lugar": "bedroom",
    "kind": "imagen",
    "asset": "img/rkspots_s14_14.jpg"
   },
   {
-   "t": 1400.186,
-   "dur": 3.994,
+   "t": 1392.119,
+   "dur": 8.066,
+   "sec": "S14",
+   "lugar": "garage",
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s14_13.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 1400.185,
+   "dur": 3.995,
    "sec": "S14",
    "lugar": "garage",
    "kind": "imagen",
-   "asset": "img/rkspots_s14_13.jpg"
-  },
-  {
-   "t": 1433.22,
-   "dur": 5.88,
-   "kind": "componente",
-   "sec": "S15",
-   "comp": "PullQuote",
-   "props": {
-    "quote": "You only have to stop being right about one of them.",
-    "attrib": "— Ray Kessler"
-   },
-   "bed": "img/rkspots_s15_01_blur.jpg"
+   "asset": "img/rkspots_s14_15.jpg"
   },
   {
    "t": 1404.18,
    "dur": 4.033,
    "sec": "S15",
    "lugar": "garage",
-   "kind": "imagen",
-   "asset": "img/rkspots_s15_05.jpg"
+   "kind": "clip",
+   "asset": "broll/rkspots/rkspots_s15_05.mp4",
+   "rate": 1
   },
   {
    "t": 1408.213,
    "dur": 5.8,
    "sec": "S15",
-   "lugar": "kitchen",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_02.jpg"
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r119.mp4",
+   "rate": 1
   },
   {
    "t": 1414.013,
@@ -2186,10 +2250,9 @@
    "t": 1424.913,
    "dur": 4.033,
    "sec": "S15",
-   "lugar": "hall",
+   "lugar": "porch",
    "kind": "clip",
-   "real": true,
-   "asset": "broll/rkspots_real/rkspots_r119.mp4",
+   "asset": "broll/rkspots/rkspots_s14_02.mp4",
    "rate": 1
   },
   {
@@ -2201,21 +2264,35 @@
    "asset": "img/rkspots_s7_06.jpg"
   },
   {
-   "t": 1439.1,
-   "dur": 3.8,
+   "t": 1433.22,
+   "dur": 5.88,
+   "kind": "componente",
    "sec": "S15",
-   "lugar": "street",
-   "kind": "imagen",
-   "asset": "img/rkspots_s1_01.jpg"
+   "comp": "PullQuote",
+   "props": {
+    "quote": "You only have to stop being right about one of them.",
+    "attrib": "— Ray Kessler"
+   },
+   "bed": "img/rkspots_s15_01_blur.jpg"
   },
   {
-   "t": 1442.9,
-   "dur": 3.042,
+   "t": 1439.1,
+   "dur": 3.8,
    "sec": "S15",
    "lugar": "workbench",
    "kind": "clip",
    "real": true,
    "asset": "broll/rkspots_real/rkspots_r125.mp4",
+   "rate": 1
+  },
+  {
+   "t": 1442.9,
+   "dur": 3.042,
+   "sec": "S15",
+   "lugar": "livingroom",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkspots_real/rkspots_r129.mp4",
    "rate": 1
   },
   {
@@ -2227,56 +2304,56 @@
    "lugar": "avatar"
   },
   {
-   "t": 38.133,
-   "dur": 2.9,
+   "t": 27.299,
+   "dur": 4.033,
    "sec": "AV",
    "kind": "avatar",
    "win": 1,
    "lugar": "avatar"
   },
   {
-   "t": 45.066,
-   "dur": 5.2,
+   "t": 38.132,
+   "dur": 2.9,
    "sec": "AV",
    "kind": "avatar",
    "win": 2,
    "lugar": "avatar"
   },
   {
-   "t": 60.666,
-   "dur": 3.654,
+   "t": 60.665,
+   "dur": 3.655,
    "sec": "AV",
    "kind": "avatar",
    "win": 3,
    "lugar": "avatar"
   },
   {
-   "t": 68.8,
-   "dur": 5.6,
+   "t": 96.899,
+   "dur": 2.9,
    "sec": "AV",
    "kind": "avatar",
    "win": 4,
    "lugar": "avatar"
   },
   {
-   "t": 96.9,
-   "dur": 2.9,
+   "t": 103.832,
+   "dur": 8.6,
    "sec": "AV",
    "kind": "avatar",
    "win": 5,
    "lugar": "avatar"
   },
   {
-   "t": 103.833,
-   "dur": 8.6,
+   "t": 119.432,
+   "dur": 3,
    "sec": "AV",
    "kind": "avatar",
    "win": 6,
    "lugar": "avatar"
   },
   {
-   "t": 119.433,
-   "dur": 10.667,
+   "t": 126.465,
+   "dur": 3.635,
    "sec": "AV",
    "kind": "avatar",
    "win": 7,
@@ -2291,19 +2368,11 @@
    "lugar": "avatar"
   },
   {
-   "t": 172.64,
-   "dur": 3.6,
+   "t": 176.24,
+   "dur": 4.033,
    "sec": "AV",
    "kind": "avatar",
    "win": 9,
-   "lugar": "avatar"
-  },
-  {
-   "t": 180.273,
-   "dur": 6.007,
-   "sec": "AV",
-   "kind": "avatar",
-   "win": 10,
    "lugar": "avatar"
   },
   {
@@ -2311,7 +2380,7 @@
    "dur": 7.433,
    "sec": "AV",
    "kind": "avatar",
-   "win": 11,
+   "win": 10,
    "lugar": "avatar"
   },
   {
@@ -2319,7 +2388,7 @@
    "dur": 2.827,
    "sec": "AV",
    "kind": "avatar",
-   "win": 12,
+   "win": 11,
    "lugar": "avatar"
   },
   {
@@ -2327,15 +2396,15 @@
    "dur": 8.7,
    "sec": "AV",
    "kind": "avatar",
-   "win": 13,
+   "win": 12,
    "lugar": "avatar"
   },
   {
-   "t": 231.787,
-   "dur": 10,
+   "t": 238.186,
+   "dur": 3.6,
    "sec": "AV",
    "kind": "avatar",
-   "win": 14,
+   "win": 13,
    "lugar": "avatar"
   },
   {
@@ -2343,23 +2412,23 @@
    "dur": 3.2,
    "sec": "AV",
    "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 265.86,
+   "dur": 4.033,
+   "sec": "AV",
+   "kind": "avatar",
    "win": 15,
    "lugar": "avatar"
   },
   {
-   "t": 269.893,
-   "dur": 5,
+   "t": 308.96,
+   "dur": 4.033,
    "sec": "AV",
    "kind": "avatar",
    "win": 16,
-   "lugar": "avatar"
-  },
-  {
-   "t": 305.16,
-   "dur": 3.8,
-   "sec": "AV",
-   "kind": "avatar",
-   "win": 17,
    "lugar": "avatar"
   },
   {
@@ -2367,7 +2436,7 @@
    "dur": 3.2,
    "sec": "AV",
    "kind": "avatar",
-   "win": 18,
+   "win": 17,
    "lugar": "avatar"
   },
   {
@@ -2375,23 +2444,23 @@
    "dur": 3.2,
    "sec": "AV",
    "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 377.512,
+   "dur": 6.833,
+   "sec": "AV",
+   "kind": "avatar",
    "win": 19,
    "lugar": "avatar"
   },
   {
-   "t": 361.813,
-   "dur": 5,
+   "t": 390.345,
+   "dur": 8.115,
    "sec": "AV",
    "kind": "avatar",
    "win": 20,
-   "lugar": "avatar"
-  },
-  {
-   "t": 377.513,
-   "dur": 2.8,
-   "sec": "AV",
-   "kind": "avatar",
-   "win": 21,
    "lugar": "avatar"
   },
   {
@@ -2399,7 +2468,7 @@
    "dur": 4.64,
    "sec": "AV",
    "kind": "avatar",
-   "win": 22,
+   "win": 21,
    "lugar": "avatar"
   },
   {
@@ -2407,15 +2476,15 @@
    "dur": 2.9,
    "sec": "AV",
    "kind": "avatar",
-   "win": 23,
+   "win": 22,
    "lugar": "avatar"
   },
   {
-   "t": 445.613,
-   "dur": 6.4,
+   "t": 452.013,
+   "dur": 3.6,
    "sec": "AV",
    "kind": "avatar",
-   "win": 24,
+   "win": 23,
    "lugar": "avatar"
   },
   {
@@ -2423,7 +2492,7 @@
    "dur": 6.434,
    "sec": "AV",
    "kind": "avatar",
-   "win": 25,
+   "win": 24,
    "lugar": "avatar"
   },
   {
@@ -2431,7 +2500,7 @@
    "dur": 7.433,
    "sec": "AV",
    "kind": "avatar",
-   "win": 26,
+   "win": 25,
    "lugar": "avatar"
   },
   {
@@ -2439,43 +2508,51 @@
    "dur": 4.827,
    "sec": "AV",
    "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 556.153,
+   "dur": 7.433,
+   "sec": "AV",
+   "kind": "avatar",
    "win": 27,
    "lugar": "avatar"
   },
   {
-   "t": 538.72,
-   "dur": 3.6,
+   "t": 570.586,
+   "dur": 4.033,
    "sec": "AV",
    "kind": "avatar",
    "win": 28,
    "lugar": "avatar"
   },
   {
-   "t": 546.353,
-   "dur": 5.2,
+   "t": 605.733,
+   "dur": 8.7,
    "sec": "AV",
    "kind": "avatar",
    "win": 29,
    "lugar": "avatar"
   },
   {
-   "t": 560.186,
-   "dur": 3.4,
+   "t": 628.899,
+   "dur": 3.6,
    "sec": "AV",
    "kind": "avatar",
    "win": 30,
    "lugar": "avatar"
   },
   {
-   "t": 574.619,
-   "dur": 7.361,
+   "t": 636.532,
+   "dur": 5.2,
    "sec": "AV",
    "kind": "avatar",
    "win": 31,
    "lugar": "avatar"
   },
   {
-   "t": 601.7,
+   "t": 646.332,
    "dur": 4.033,
    "sec": "AV",
    "kind": "avatar",
@@ -2483,43 +2560,11 @@
    "lugar": "avatar"
   },
   {
-   "t": 611.533,
-   "dur": 2.9,
-   "sec": "AV",
-   "kind": "avatar",
-   "win": 33,
-   "lugar": "avatar"
-  },
-  {
-   "t": 622.5,
-   "dur": 6.4,
-   "sec": "AV",
-   "kind": "avatar",
-   "win": 34,
-   "lugar": "avatar"
-  },
-  {
-   "t": 632.5,
-   "dur": 4.033,
-   "sec": "AV",
-   "kind": "avatar",
-   "win": 35,
-   "lugar": "avatar"
-  },
-  {
-   "t": 646.333,
-   "dur": 7.433,
-   "sec": "AV",
-   "kind": "avatar",
-   "win": 36,
-   "lugar": "avatar"
-  },
-  {
    "t": 665.453,
    "dur": 3.2,
    "sec": "AV",
    "kind": "avatar",
-   "win": 37,
+   "win": 33,
    "lugar": "avatar"
   },
   {
@@ -2527,7 +2572,7 @@
    "dur": 4.033,
    "sec": "AV",
    "kind": "avatar",
-   "win": 38,
+   "win": 34,
    "lugar": "avatar"
   },
   {
@@ -2535,7 +2580,7 @@
    "dur": 3.5,
    "sec": "AV",
    "kind": "avatar",
-   "win": 39,
+   "win": 35,
    "lugar": "avatar"
   },
   {
@@ -2543,7 +2588,7 @@
    "dur": 2.8,
    "sec": "AV",
    "kind": "avatar",
-   "win": 40,
+   "win": 36,
    "lugar": "avatar"
   },
   {
@@ -2551,7 +2596,7 @@
    "dur": 6,
    "sec": "AV",
    "kind": "avatar",
-   "win": 41,
+   "win": 37,
    "lugar": "avatar"
   },
   {
@@ -2559,7 +2604,7 @@
    "dur": 5.941,
    "sec": "AV",
    "kind": "avatar",
-   "win": 42,
+   "win": 38,
    "lugar": "avatar"
   },
   {
@@ -2567,39 +2612,39 @@
    "dur": 2.9,
    "sec": "AV",
    "kind": "avatar",
-   "win": 43,
+   "win": 39,
    "lugar": "avatar"
   },
   {
-   "t": 767.087,
+   "t": 767.086,
    "dur": 6.4,
    "sec": "AV",
    "kind": "avatar",
-   "win": 44,
+   "win": 40,
    "lugar": "avatar"
   },
   {
-   "t": 777.087,
+   "t": 777.086,
    "dur": 4.033,
    "sec": "AV",
    "kind": "avatar",
-   "win": 45,
+   "win": 41,
    "lugar": "avatar"
   },
   {
-   "t": 786.32,
+   "t": 786.319,
    "dur": 4.6,
    "sec": "AV",
    "kind": "avatar",
-   "win": 46,
+   "win": 42,
    "lugar": "avatar"
   },
   {
-   "t": 794.953,
+   "t": 794.952,
    "dur": 3.4,
    "sec": "AV",
    "kind": "avatar",
-   "win": 47,
+   "win": 43,
    "lugar": "avatar"
   },
   {
@@ -2607,23 +2652,23 @@
    "dur": 3.2,
    "sec": "AV",
    "kind": "avatar",
-   "win": 48,
-   "lugar": "avatar"
-  },
-  {
-   "t": 838.42,
-   "dur": 8.5,
-   "sec": "AV",
-   "kind": "avatar",
-   "win": 49,
+   "win": 44,
    "lugar": "avatar"
   },
   {
    "t": 854.12,
-   "dur": 2.8,
+   "dur": 6.833,
    "sec": "AV",
    "kind": "avatar",
-   "win": 50,
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 866.953,
+   "dur": 8.827,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
    "lugar": "avatar"
   },
   {
@@ -2631,7 +2676,7 @@
    "dur": 8.96,
    "sec": "AV",
    "kind": "avatar",
-   "win": 51,
+   "win": 47,
    "lugar": "avatar"
   }
  ]

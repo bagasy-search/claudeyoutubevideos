@@ -1,0 +1,1913 @@
+{
+ "clips": {
+  "rkspots_s10_04": {
+   "size": 1789597,
+   "mtime": 1789928001352,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.963Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s10_07": {
+   "size": 491844,
+   "mtime": 1789927934049,
+   "auto": null,
+   "hint": "The book stands, then lies flat, then stands again.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.905Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s10_06": {
+   "size": 1161902,
+   "mtime": 1789927963918,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.963Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s10_01": {
+   "size": 1083682,
+   "mtime": 1789927863742,
+   "auto": null,
+   "hint": "Drawer contents appear/disappear: glasses and items not in o",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.904Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s10_10": {
+   "size": 1867305,
+   "mtime": 1789927998711,
+   "auto": null,
+   "hint": "Drawer goes from open with a hand to closed with no hand",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.909Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s10_03": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s11_02": {
+   "size": 883131,
+   "mtime": 1789928062600,
+   "auto": null,
+   "hint": "Small white rectangular object among hanging clothes in imag",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.911Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s11_01": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s11_03": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s10_08": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s11_06": {
+   "size": 668060,
+   "mtime": 1789928032523,
+   "auto": null,
+   "hint": "Glowing light appeared at the drill tip",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.912Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s10_02": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s11_05": {
+   "size": 2679504,
+   "mtime": 1789928035292,
+   "auto": null,
+   "hint": "Box gains feet; bolt packet disappears.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.912Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s11_04": {
+   "size": 1229508,
+   "mtime": 1789928003485,
+   "auto": null,
+   "hint": "Safe handle changed shape; man lost glasses.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.912Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s11_08": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s11_07": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s11_09": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s11_13": {
+   "size": 1481199,
+   "mtime": 1789928139101,
+   "auto": null,
+   "hint": "Object in hand changes from bag of bolts to blister pack",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.915Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s10_05": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s11_11": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s11_14": {
+   "size": 3217230,
+   "mtime": 1789928179935,
+   "auto": null,
+   "hint": "Room furniture replaced and cloud appears indoors.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.915Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s11_15": {
+   "size": 2115698,
+   "mtime": 1789928137924,
+   "auto": null,
+   "hint": "Workbench items changed and presenter vanishes in last frame",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.916Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s11_16": {
+   "size": 1656584,
+   "mtime": 1789928136020,
+   "auto": null,
+   "hint": "safe lock handle changes shape",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.916Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_02": {
+   "size": 2167303,
+   "mtime": 1789928177662,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.964Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_05": {
+   "size": 1895223,
+   "mtime": 1789928207193,
+   "auto": null,
+   "hint": "Box latch changed from keyhole to brass handle",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.917Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_01": {
+   "size": 1377400,
+   "mtime": 1789928229275,
+   "auto": null,
+   "hint": "drawer contents changing shape",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.916Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s11_10": {
+   "size": 1896753,
+   "mtime": 1789928064161,
+   "auto": null,
+   "hint": "Sudden sunlight appears in last frame.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.914Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_08": {
+   "size": 1793171,
+   "mtime": 1789928240866,
+   "auto": null,
+   "hint": "Drawer disappears/reappears inconsistently across frames",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.918Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_07": {
+   "size": 1368115,
+   "mtime": 1789928233635,
+   "auto": null,
+   "hint": "Drawer contents jump; socks disappear",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.918Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_06": {
+   "size": 2231396,
+   "mtime": 1789928235586,
+   "auto": null,
+   "hint": "Jewelry box contents changed completely.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.918Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_03": {
+   "size": 1372695,
+   "mtime": 1789928210142,
+   "auto": null,
+   "hint": "The image becomes very dark in the final frame.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.917Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_04": {
+   "size": 2214483,
+   "mtime": 1789928211631,
+   "auto": null,
+   "hint": "Top drawer contents changed, third drawer missing.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.917Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_09": {
+   "size": 1122679,
+   "mtime": 1789928269921,
+   "auto": null,
+   "hint": "Chair in background missing in last frame",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.919Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s11_12": {
+   "size": 2190065,
+   "mtime": 1789928147160,
+   "auto": null,
+   "hint": "Bag on shelf missing, grey sleeve changed color.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.914Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_13": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s12_14": {
+   "size": 2546156,
+   "mtime": 1789928451276,
+   "auto": null,
+   "hint": "Jump in framing: closet becomes window, wicker basket appear",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.920Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_17": {
+   "size": 1059331,
+   "mtime": 1789928362604,
+   "auto": null,
+   "hint": "Presenter's shirt changes color in the last frame",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.921Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_16": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s12_15": {
+   "size": 1331457,
+   "mtime": 1789928300425,
+   "auto": null,
+   "hint": "A person's arm appears holding the jewelry box.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.921Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_20": {
+   "size": 1182255,
+   "mtime": 1789928412413,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.965Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_11": {
+   "size": 2260832,
+   "mtime": 1789928271784,
+   "auto": null,
+   "hint": "Interior wood changes color and adds a slat",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.919Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_19": {
+   "size": 3574395,
+   "mtime": 1789928372637,
+   "auto": null,
+   "hint": "Wardrobe gains a door and mirror reflection changes.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.922Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_01": {
+   "size": 1737031,
+   "mtime": 1789928402129,
+   "auto": null,
+   "hint": "Background cabinet and clock replaced/added",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.922Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s10_09": {
+   "size": 1408548,
+   "mtime": 1789927933081,
+   "auto": null,
+   "hint": "Hand disappears, box and cable change shape.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.907Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_05": {
+   "size": 2026442,
+   "mtime": 1789928404041,
+   "auto": null,
+   "hint": "Person disappears in frames 3 and 4",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.923Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_10": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s13_08": {
+   "size": 994538,
+   "mtime": 1789928491114,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.965Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_02": {
+   "size": 1587961,
+   "mtime": 1789928414129,
+   "auto": null,
+   "hint": "Jump in framing; safe and background replaced.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.922Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_12": {
+   "size": 688784,
+   "mtime": 1789928338271,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.964Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_03": {
+   "size": 2936905,
+   "mtime": 1789928407795,
+   "auto": null,
+   "hint": "Jump in framing; ratchet moves and tools disappear.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.923Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_11": {
+   "size": 1224342,
+   "mtime": 1789928544054,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.966Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_12": {
+   "size": 1694964,
+   "mtime": 1789928645187,
+   "auto": null,
+   "hint": "Watch appears on presenter's wrist; brooch changes shape to ",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.925Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_09": {
+   "size": 1081590,
+   "mtime": 1789928488734,
+   "auto": null,
+   "hint": "Laundry basket and box positions changed on shelf.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.924Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_04": {
+   "size": 714615,
+   "mtime": 1789928448055,
+   "auto": null,
+   "hint": "the presenter becoming someone else",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.923Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s12_18": {
+   "size": 756115,
+   "mtime": 1789928405036,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.964Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_06": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s13_14": {
+   "size": 2637178,
+   "mtime": 1789928603660,
+   "auto": null,
+   "hint": "brooch changes shape in the middle frame",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.926Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_10": {
+   "size": 1562508,
+   "mtime": 1789928520114,
+   "auto": null,
+   "hint": "the presenter becoming someone else",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.925Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_16": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s13_19": {
+   "size": 1491222,
+   "mtime": 1789928642700,
+   "auto": null,
+   "hint": "Room background completely changes in frames 3 and 4",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.927Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_15": {
+   "size": 663863,
+   "mtime": 1789928546288,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.966Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_22": {
+   "size": 1155148,
+   "mtime": 1789928759213,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.966Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_23": {
+   "size": 1740943,
+   "mtime": 1789928685823,
+   "auto": null,
+   "hint": "Coat rack contents and configuration change between frames",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.928Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_13": {
+   "size": 785376,
+   "mtime": 1789928594186,
+   "auto": null,
+   "hint": "Extra jewelry chain appears in later frames.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.925Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_24": {
+   "size": 936653,
+   "mtime": 1789928688543,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.967Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_21": {
+   "size": 2495179,
+   "mtime": 1789928600481,
+   "auto": null,
+   "hint": "Jump in framing between frames 2 and 3; green drill press ap",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.928Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_18": {
+   "size": 884112,
+   "mtime": 1789928689748,
+   "auto": null,
+   "hint": "Paper changes shape in last frame",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.927Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_01": {
+   "size": 1820737,
+   "mtime": 1789928733374,
+   "auto": null,
+   "hint": "Object changes from shallow bowl to deep pot",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.929Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_07": {
+   "size": 1935183,
+   "mtime": 1789928449295,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.965Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_03": {
+   "size": 4550784,
+   "mtime": 1789928725834,
+   "auto": null,
+   "hint": "Presenter changes clothes and face; jump in framing",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.930Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_25": {
+   "size": 979102,
+   "mtime": 1789928761827,
+   "auto": null,
+   "hint": "Jump in framing and object changes",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.929Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_02": {
+   "size": 2867258,
+   "mtime": 1789928764608,
+   "auto": null,
+   "hint": "A large jagged rock replaces a smooth garden stone.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.929Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_05": {
+   "size": 2814514,
+   "mtime": 1789928766866,
+   "auto": null,
+   "hint": "Large screw changes size.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.931Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_17": {
+   "size": 1125035,
+   "mtime": 1789928649484,
+   "auto": null,
+   "hint": "Background replaced; presenter's face changed.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.926Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_07": {
+   "size": 1140151,
+   "mtime": 1789928763105,
+   "auto": null,
+   "hint": "Screwdriver and strike plate moved position between frames",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.932Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_11": {
+   "size": 1144926,
+   "mtime": 1789928908234,
+   "auto": null,
+   "hint": "Presenter suddenly holds two phones instead of one",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.934Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_09": {
+   "size": 3459713,
+   "mtime": 1789928844559,
+   "auto": null,
+   "hint": "Missing mug, tin, wire, tape; extra long ruler appeared.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.933Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_10": {
+   "size": 1331746,
+   "mtime": 1789928838363,
+   "auto": null,
+   "hint": "Phone screen changes from black to white in middle frame",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.933Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_13": {
+   "size": 1555588,
+   "mtime": 1789928878020,
+   "auto": null,
+   "hint": "Presenter pose inconsistent between images; possible face ch",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.935Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_06": {
+   "size": 708515,
+   "mtime": 1789928803942,
+   "auto": null,
+   "hint": "The drill bit changes shape from long to a short thick blob.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.931Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_08": {
+   "size": 1059108,
+   "mtime": 1789928801573,
+   "auto": null,
+   "hint": "One white book disappeared and pads opened.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.933Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s13_20": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s14_04": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s15_02": {
+   "size": 6868765,
+   "mtime": 1789928996835,
+   "auto": null,
+   "hint": "Bright orange leaves appear as digital artifacts.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.936Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s15_03": {
+   "size": 760743,
+   "mtime": 1789928936519,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.968Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s15_01": {
+   "size": 1742673,
+   "mtime": 1789928934062,
+   "auto": null,
+   "hint": "A leg or knee appears in the bottom left.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.935Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s15_05": {
+   "size": 1086764,
+   "mtime": 1789928962426,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.969Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_12": {
+   "size": 889548,
+   "mtime": 1789928875575,
+   "auto": null,
+   "hint": "The paper changes from a small slip to a large sheet.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.934Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_16": {
+   "size": 1257441,
+   "mtime": 1789928909388,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.968Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_02": {
+   "size": 2023218,
+   "mtime": 1789926397990,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.962Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s15_07": {
+   "size": 2064126,
+   "mtime": 1789928993168,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.969Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_17": {
+   "size": 1201752,
+   "mtime": 1789928870876,
+   "auto": null,
+   "hint": "Key rack missing keys on left side.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.935Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_01": {
+   "size": 3402464,
+   "mtime": 1789926455052,
+   "auto": null,
+   "hint": "Yellow object suddenly appears on bicycle in later frames",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.897Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_04": {
+   "size": 962312,
+   "mtime": 1789926470322,
+   "auto": null,
+   "hint": "the presenter becoming someone else",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.899Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_05": {
+   "size": 2186518,
+   "mtime": 1789926465379,
+   "auto": null,
+   "hint": "Drawer contents changed from dark items to white towels.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.899Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s15_04": {
+   "size": 3538417,
+   "mtime": 1789928969513,
+   "auto": null,
+   "hint": "Grey rag replaced by beige square on table.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.936Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_07": {
+   "size": 1459590,
+   "mtime": 1789926506083,
+   "auto": null,
+   "hint": "The watch in his hands changes to a large brass clock",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.900Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_06": {
+   "size": 1976898,
+   "mtime": 1789926472450,
+   "auto": null,
+   "hint": "White towel in drawer disappears",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.899Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_09": {
+   "size": 1223311,
+   "mtime": 1789926539717,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.962Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_14": {
+   "size": 1721244,
+   "mtime": 1789928964555,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.967Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_12": {
+   "size": 2024809,
+   "mtime": 1789926517409,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.963Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s14_15": {
+   "size": 1021391,
+   "mtime": 1789928906363,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.967Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_14": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s1_16": {
+   "size": 4085408,
+   "mtime": 1789926695512,
+   "auto": null,
+   "hint": "Yellow leaves appear on the road that were not in the origin",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.902Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_17": {
+   "size": 2848629,
+   "mtime": 1789926648567,
+   "auto": null,
+   "hint": "Person with hands holding key is in the starting image",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.902Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s15_06": {
+   "size": 1664258,
+   "mtime": 1789929022492,
+   "auto": null,
+   "hint": "Dresser gains drawers; open drawer with lining disappears",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.936Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_03": {
+   "size": 1943459,
+   "mtime": 1789926458505,
+   "auto": null,
+   "hint": "Laptop screen changed and sparkles appeared.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.898Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_08": {
+   "size": 2332144,
+   "mtime": 1789926515448,
+   "auto": null,
+   "hint": "jump in framing",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.900Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_10": {
+   "size": 2184770,
+   "mtime": 1789926510791,
+   "auto": null,
+   "hint": "Notebook changes shape and dashboard vents glow yellow.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.900Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_19": {
+   "size": 2797875,
+   "mtime": 1789926641944,
+   "auto": null,
+   "hint": "A key appears inside the glass jar.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.903Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_20": {
+   "size": 2670038,
+   "mtime": 1789926689659,
+   "auto": null,
+   "hint": "large green bag appears in later frames but not visible in i",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.903Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_15": {
+   "size": 1648187,
+   "mtime": 1789926613621,
+   "auto": null,
+   "hint": "Jump in framing to close-up of hands.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.902Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_03": {
+   "size": 695495,
+   "mtime": 1789926700194,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.969Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_13": {
+   "size": 1254220,
+   "mtime": 1789926546860,
+   "auto": null,
+   "hint": "Main object changes from cylinder to door knob.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.901Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_04": {
+   "size": 1124782,
+   "mtime": 1789926684528,
+   "auto": null,
+   "hint": "Mirror reflection appears inconsistent across frames",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.937Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_11": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s2_09": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s2_02": {
+   "size": 3912683,
+   "mtime": 1789926698249,
+   "auto": null,
+   "hint": "Drawer color changed, objects disappeared, cutlery rearrange",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.937Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s1_18": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s2_12": {
+   "size": 2270148,
+   "mtime": 1789926843645,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.971Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_13": {
+   "size": 1566974,
+   "mtime": 1789926840538,
+   "auto": null,
+   "hint": "Doorway at top of stairs replaced with bright white blur in ",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.939Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_11": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s2_07": {
+   "size": 855007,
+   "mtime": 1789926733899,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.970Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_10": {
+   "size": 1276227,
+   "mtime": 1789926817076,
+   "auto": null,
+   "hint": "Two bottles appeared on the right counter in the last frame.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.938Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_16": {
+   "size": 1030320,
+   "mtime": 1789926875090,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.972Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_01": {
+   "size": 2411776,
+   "mtime": 1789926691890,
+   "auto": null,
+   "hint": "Glasses position inconsistent between source and video frame",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.937Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_01": {
+   "size": 1306322,
+   "mtime": 1789926928536,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.973Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_05": {
+   "size": 3391878,
+   "mtime": 1789926738993,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.970Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_17": {
+   "size": 3689229,
+   "mtime": 1789926881003,
+   "auto": null,
+   "hint": "Toolbox missing, '97' box appeared, door color changed to ta",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.939Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_04": {
+   "size": 1115111,
+   "mtime": 1789926916716,
+   "auto": null,
+   "hint": "Long green beans appear from the bag of peas",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.941Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_03": {
+   "size": 1557853,
+   "mtime": 1789926967696,
+   "auto": null,
+   "hint": "foil object in hands changes size and shape",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.940Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_14": {
+   "size": 963849,
+   "mtime": 1789926877602,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.971Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_15": {
+   "size": 740109,
+   "mtime": 1789926882280,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.972Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_05": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s3_08": {
+   "size": 2541027,
+   "mtime": 1789926960658,
+   "auto": null,
+   "hint": "Unknown brown object at top-right edge in frame 4",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.942Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_09": {
+   "size": 1803859,
+   "mtime": 1789927022249,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.973Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_10": {
+   "size": 1021037,
+   "mtime": 1789927004396,
+   "auto": null,
+   "hint": "Can appears floating/hovering in later frames, not present i",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.942Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_12": {
+   "size": 1331783,
+   "mtime": 1789927070209,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.973Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_06": {
+   "size": 1641419,
+   "mtime": 1789926742109,
+   "auto": null,
+   "hint": "Watch changed from wristwatch to pocket watch",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.938Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_07": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s4_02": {
+   "size": 588257,
+   "mtime": 1789927066620,
+   "auto": null,
+   "hint": "metal chain appears on blue cylinder in middle frames",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.944Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s4_03": {
+   "size": 1692155,
+   "mtime": 1789927071964,
+   "auto": null,
+   "hint": "Dollar bill levitating mid-air in middle frame",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.944Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_11": {
+   "size": 2061817,
+   "mtime": 1789926999478,
+   "auto": null,
+   "hint": "Green vegetables appear in last frame; can gains a handle.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.943Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s4_06": {
+   "size": 1137033,
+   "mtime": 1789927064592,
+   "auto": null,
+   "hint": "Sink area replaced by door/panel, window shrunk",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.945Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s4_05": {
+   "size": 1241166,
+   "mtime": 1789927117239,
+   "auto": null,
+   "hint": "Cabinet door position changed; faucet appeared",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.945Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s4_07": {
+   "size": 1991798,
+   "mtime": 1789927157456,
+   "auto": null,
+   "hint": "Toilet tank internals changed between frames",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s4_08": {
+   "size": 1201012,
+   "mtime": 1789927192414,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.974Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_06": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s4_04": {
+   "size": 1555829,
+   "mtime": 1789927077723,
+   "auto": null,
+   "hint": "Cabinet contents and mirrored door change unexpectedly.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.945Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s4_11": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s5_01": {
+   "size": 1636753,
+   "mtime": 1789927194588,
+   "auto": null,
+   "hint": "Red oval on shirt; book changes from pages to box.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.947Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_02": {
+   "size": 3119841,
+   "mtime": 1789926922100,
+   "auto": null,
+   "hint": "Drawer contents replaced; white bag and ice disappeared.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.940Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s4_10": {
+   "size": 1005586,
+   "mtime": 1789927158855,
+   "auto": null,
+   "hint": "Toilet lid moves from wall to tank; cistern shape changes.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s5_02": {
+   "size": 2572485,
+   "mtime": 1789927189053,
+   "auto": null,
+   "hint": "Floating artifacts and candle lighting up.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.947Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s3_13": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s5_06": {
+   "size": 1855304,
+   "mtime": 1789927236076,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.975Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s5_08": {
+   "size": 2253788,
+   "mtime": 1789927321332,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.975Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s5_07": {
+   "size": 795146,
+   "mtime": 1789927240149,
+   "auto": null,
+   "hint": "Laptop on desk changed to paper",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.948Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s5_03": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s5_04": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s4_09": {
+   "size": 563444,
+   "mtime": 1789927145325,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.974Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s5_12": {
+   "size": 2904707,
+   "mtime": 1789927421692,
+   "auto": null,
+   "hint": "Framed picture on wall changes between frames",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.950Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_01": {
+   "size": 1306143,
+   "mtime": 1789927350293,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.975Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_02": {
+   "size": 1147772,
+   "mtime": 1789927312214,
+   "auto": null,
+   "hint": "Green object and glasses appeared in drawer; no presenter vi",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.950Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s5_05": {
+   "size": 1053127,
+   "mtime": 1789927241416,
+   "auto": null,
+   "hint": "tan book changes shape to a wedge in middle frame",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.948Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_03": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s6_04": {
+   "size": 1311222,
+   "mtime": 1789927415629,
+   "auto": null,
+   "hint": "Notebook page changes to blank and pen moves to left side",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.951Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_05": {
+   "size": 1955425,
+   "mtime": 1789927391586,
+   "auto": null,
+   "hint": "Pillowcase turns into a pillow; papers disappear",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.951Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s5_09": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s4_01": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s5_10": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s6_07": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s6_08": {
+   "size": 2034552,
+   "mtime": 1789927455194,
+   "auto": null,
+   "hint": "Main object changes shape; glass appears on right.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.952Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_12": {
+   "size": 1135060,
+   "mtime": 1789927490910,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.976Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_09": {
+   "size": 1279824,
+   "mtime": 1789927453741,
+   "auto": null,
+   "hint": "office chair changes from mesh to solid black",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.952Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_13": {
+   "size": 1280599,
+   "mtime": 1789927489714,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.976Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_14": {
+   "size": 1732336,
+   "mtime": 1789927485112,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.976Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s7_02": {
+   "size": 949285,
+   "mtime": 1789927555284,
+   "auto": null,
+   "hint": "Hanging aircraft mobiles appear in video but not in original",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.954Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_11": {
+   "size": 1839028,
+   "mtime": 1789927459598,
+   "auto": null,
+   "hint": "Grey filing cabinet appears on left in last frame; desk pape",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.953Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s7_04": {
+   "size": 2488016,
+   "mtime": 1789927551335,
+   "auto": null,
+   "hint": "Main object (wooden box) replaced",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.954Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s7_05": {
+   "size": 1839281,
+   "mtime": 1789927557010,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.977Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s7_07": {
+   "size": 1901267,
+   "mtime": 1789927585438,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.977Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_10": {
+   "size": 1014823,
+   "mtime": 1789927452344,
+   "auto": null,
+   "hint": "Floating papers appear in mid-air",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.953Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s7_06": {
+   "size": 2723422,
+   "mtime": 1789927580529,
+   "auto": null,
+   "hint": "Storage bin contents changed between frames",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.955Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s7_03": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s7_10": {
+   "size": 744047,
+   "mtime": 1789927613905,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.978Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s7_01": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s7_11": {
+   "size": 1672104,
+   "mtime": 1789927610145,
+   "auto": null,
+   "hint": "Door handle changes from silver knob to dark lever; light sw",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.955Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s7_09": {
+   "size": 1241382,
+   "mtime": 1789927612733,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.978Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s2_08": {
+   "size": 2618160,
+   "mtime": 1789926777078,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.971Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s8_02": {
+   "size": 1749410,
+   "mtime": 1789927664724,
+   "auto": null,
+   "hint": "Package jumps from under sheet to hand without showing remov",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.956Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s8_04": {
+   "size": 1661873,
+   "mtime": 1789927666155,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.979Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s5_11": {
+   "size": 752895,
+   "mtime": 1789927351471,
+   "auto": null,
+   "hint": "White drawers replaced by stack of papers",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.949Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s8_07": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s8_08": {
+   "size": 2010113,
+   "mtime": 1789927698478,
+   "auto": null,
+   "hint": "Folded quilt on the left of the bed disappears by the final ",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.957Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s8_09": {
+   "size": 802111,
+   "mtime": 1789927738942,
+   "auto": null,
+   "hint": "Legs unnaturally stretched and elongated",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.958Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s8_03": {
+   "size": 1444906,
+   "mtime": 1789927643838,
+   "auto": null,
+   "hint": "The mattress design has changed; the rectangular handle inde",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.956Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s8_05": {
+   "size": 1558909,
+   "mtime": 1789927703236,
+   "auto": null,
+   "hint": "Cardboard pocket falls off the headboard.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.956Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s8_10": {
+   "size": 1575757,
+   "mtime": 1789927801991,
+   "auto": null,
+   "hint": "Ring in box changes from simple band to larger ring",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.958Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s7_08": {
+   "size": 1309178,
+   "mtime": 1789927586853,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.978Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s6_06": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s9_03": {
+   "size": 2226723,
+   "mtime": 1789927737889,
+   "auto": null,
+   "hint": "Image 1 contains a person holding the box.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.959Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s9_02": {
+   "size": 1863796,
+   "mtime": 1789927797130,
+   "auto": null,
+   "hint": "Presenter appears; box floats; lid closes.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.959Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s8_06": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s9_05": {
+   "size": 937726,
+   "mtime": 1789927795577,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.979Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s9_06": {
+   "size": 2320521,
+   "mtime": 1789927792702,
+   "auto": null,
+   "hint": "Closet door frame suddenly appears in final frame; framing j",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.959Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s9_08": {
+   "size": 2716569,
+   "mtime": 1789927829110,
+   "auto": null,
+   "hint": "Person's arm appears in image 3, not in image 1",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.960Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s8_01": {
+   "size": 2316586,
+   "mtime": 1789927668306,
+   "auto": null,
+   "hint": "Missing picture frame and blue object on dresser.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.955Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s9_12": {
+   "size": 1239111,
+   "mtime": 1789927856511,
+   "auto": null,
+   "hint": "Curtains appeared on window in image 2",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.962Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s9_10": {
+   "size": 1147756,
+   "mtime": 1789927855241,
+   "auto": null,
+   "hint": "Suitcase handle changed from black to silver",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.961Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s9_11": {
+   "size": 1816849,
+   "mtime": 1789927858133,
+   "auto": null,
+   "hint": "A mirror above the dresser appears in later frames but not i",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.961Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s9_09": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s9_07": {
+   "size": 2594190,
+   "mtime": 1789927794438,
+   "auto": null,
+   "hint": "White shirt moves forward without a hand.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.960Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkspots_s9_01": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkspots_s9_04": {
+   "size": 1557462,
+   "mtime": 1789927767056,
+   "auto": null,
+   "hint": "Jump in framing and continuity errors in final frame.",
+   "dur": 4.033,
+   "revisado": "2026-09-20T18:43:46.959Z",
+   "rechazado": null,
+   "ok": true
+  }
+ },
+ "hojas": null,
+ "version": 2,
+ "slug": "rkspots",
+ "at": "2026-09-20T18:44:58.174Z",
+ "repeticion": null
+}
