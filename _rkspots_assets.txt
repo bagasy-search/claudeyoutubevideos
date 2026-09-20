@@ -346,3 +346,4 @@ img/rkspots_s9_05_blur.jpg
 img/rkspots_s9_06.jpg
 img/rkspots_s9_06_blur.jpg
 rkspots.m4a
+img/rkspots_qr_blur.jpg

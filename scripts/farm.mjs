@@ -32,6 +32,10 @@ import os from "node:os";
 // arriba de 60 el arranque pesaría más que el render, así que es el techo útil, no sólo el del plan.
 // Si hay VARIOS videos rendeando a la vez, repartí: chunks ≈ 60 / videos_en_curso.
 const [slug, comp, total, chunksArg, pref] = process.argv.slice(2);
+// ⛔⛔ EL SLUG SE COMPARA POR LÍMITE DE PALABRA, NUNCA POR SUBSTRING. Medido en rkspots: el pre-vuelo
+//    escaneaba `src/_fed6/VideoEdit/darkspots_beats.ts` porque "da·rkspots·_beats" CONTIENE "rkspots",
+//    y abortaba el despacho exigiendo 9 imágenes de OTRO video que nunca van a existir.
+const esDelSlug = (f) => new RegExp(`(^|[^A-Za-z0-9])${slug}([^A-Za-z0-9]|$)`).test(String(f).replace(/^.*[\/]/, ''));
 let chunks = chunksArg || "60"; // puede BAJAR por auto-reparto (ver bloque de abajo)
 if (!slug || !comp || !total) {
   console.error("Uso: node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks] [prefijo]");
@@ -269,7 +273,7 @@ if (pref && pref.startsWith("@")) {
   const datos = fs.existsSync("src/_fed6/VideoEdit") || fs.existsSync("src/VideoEdit")
     ? [...(fs.existsSync("src/_fed6/VideoEdit") ? fs.readdirSync("src/_fed6/VideoEdit").map((f) => `src/_fed6/VideoEdit/${f}`) : []),
        ...(fs.existsSync("src/VideoEdit") ? fs.readdirSync("src/VideoEdit").map((f) => `src/VideoEdit/${f}`) : [])]
-        .filter((f) => f.includes(slug) && /(beats|cues)[^/]*\.(ts|tsx)$/.test(f))
+        .filter((f) => esDelSlug(f) && /(beats|cues)[^/]*\.(ts|tsx)$/.test(f))
     : [];
   if (datos.length) {
     const refs = new Set();
@@ -427,7 +431,7 @@ for (const file of new Set([tar, ...uploadFiles])) fs.rmSync(file, {force:true})
 if (only) {
   const dirs = ["src/_fed6/VideoEdit", "src/VideoEdit"].filter((d) => fs.existsSync(d));
   const datos = dirs.flatMap((d) => fs.readdirSync(d).map((f) => `${d}/${f}`))
-    .filter((f) => f.includes(slug) && /(beats|cues)[^/]*\.(ts|tsx)$/.test(f));
+    .filter((f) => esDelSlug(f) && /(beats|cues)[^/]*\.(ts|tsx)$/.test(f));
   const refs = new Set();
   for (const f of datos) {
     for (const m of fs.readFileSync(f, "utf8").matchAll(/"(?:src|image|poster|clip|video|thumb|bg)":\s*"([^"]+)"/g)) {
@@ -464,7 +468,7 @@ if (only) {
   });
   if (usaBlur && fs.existsSync("public/img")) {
     const fotos = fs.readdirSync("public/img").filter((f) =>
-      /\.(png|jpe?g)$/i.test(f) && !/_blur\.jpg$/i.test(f) && !/^dg_/.test(f) && !/_avatar_ref/.test(f) && f.includes(slug));
+      /\.(png|jpe?g)$/i.test(f) && !/_blur\.jpg$/i.test(f) && !/^dg_/.test(f) && !/_avatar_ref/.test(f) && esDelSlug(f));
     const sin = fotos.filter((f) => !fs.existsSync(`public/img/${f.replace(/\.(png|jpe?g)$/i, "_blur.jpg")}`));
     if (sin.length) {
       console.error(`✗ PRE-VUELO BLUR: ${sin.length} de ${fotos.length} imágenes no tienen su hermano _blur.jpg.`);
