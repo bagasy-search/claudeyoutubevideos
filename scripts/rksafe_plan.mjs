@@ -60,6 +60,16 @@ for (const id of realEnDisco) {
 
 const esClip = (d) => Math.abs(d - 4.03) < 0.06 || Math.abs(d - 8.07) < 0.06;
 
+// ⛔⛔ CUANTO PESA EL METRAJE REAL EN UN EMPATE — Y POR QUE SUBIRLO ES EL ARREGLO EQUIVOCADO.
+//    Al entrar los clips de agnes, el stock bajaba de 26,1 % a 20,0 %. La tentacion es subir el
+//    bonus: con 1,2 el stock vuelve a 26,9 % pero los planos QUE PEGAN con la frase caen de 79 % a
+//    59 % — o sea se compra la vara de metraje real pagando con la regla de CONTEXTO, que es la que
+//    el creador nota. La causa verdadera era otra: los clips de stock traian como `prompt` la
+//    consulta de 2-3 palabras con que se bajaron, asi que puntuaban 0 contra cualquier frase.
+//    Con el vocabulario real de cada toma (ver _v3/<slug>_expand_real.mjs) el stock compite por
+//    MERITO y se consiguen las dos cosas: 26,1 % de metraje real Y 79 % de planos que pegan.
+const REAL_BONUS = +(process.env.REAL_BONUS || cfg.REAL_BONUS || 0.6);
+
 // ⛔⛔ EL ASSET SE ELIGE POR LA FRASE QUE SUENA EN ESE SEGUNDO, NO POR RONDA. Repartir el pool de la
 //    sección en round-robin da coherencia de TEMA y no de FRASE: la oración del felpudo agarra el
 //    plano del medidor porque le tocó. Medido acá antes del arreglo: 45 % de planos pegaban.
@@ -202,7 +212,7 @@ for (const sec of secciones) {
         // ⭐ el metraje REAL gana los empates: es el 25 % que la vara del pipeline exige y es lo
         //    único del pool que no lo dibujó una máquina.
         const mejorDe = (cands) => cands
-          .map((c) => ({ c, s: puntaje(sust, c.tokens) + (c.real ? 0.6 : 0) }))
+          .map((c) => ({ c, s: puntaje(sust, c.tokens) + (c.real ? REAL_BONUS : 0) }))
           .sort((a, b) => b.s - a.s)[0]?.c;
         const libres2 = pool.filter((c) => !used.has(c.id) && !anterior.includes(c.id));
         // ⛔ un item REAL no tiene foto: sólo puede entrar en un slot de CLIP

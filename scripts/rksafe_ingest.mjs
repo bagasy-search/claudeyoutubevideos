@@ -13,7 +13,7 @@
 // ⛔ Luma: `metadata=print` escribe en STDERR — con `-v error` el medidor mide CERO y da verde.
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 
 const SLUG = process.argv[2];
 if (!SLUG) { console.error('uso: node scripts/rksafe_ingest.mjs <slug> [srcDir]'); process.exit(1); }
@@ -27,17 +27,24 @@ console.log(`MEDIDO: ${pngs.length} PNG en ${SRC}`);
 if (!pngs.length) { console.error('⛔ nada que ingestar'); process.exit(1); }
 
 const lumaDe = (p) => {
-  // ⛔ `-v info` OBLIGATORIO y se lee STDERR: con `-v error` esto devuelve vacío y se lee como OK.
-  try {
-    const o = execFileSync('ffmpeg', ['-v', 'info', '-i', p, '-vf',
-      'scale=320:-2,signalstats,metadata=print:key=lavfi.signalstats.YAVG', '-f', 'null', '-'],
-      { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
-    const m = (o || '').match(/YAVG=([\d.]+)/);
-    return m ? +m[1] : null;
-  } catch (e) {
-    const m = String(e.stderr || '').match(/YAVG=([\d.]+)/);
-    return m ? +m[1] : null;
-  }
+  // ⛔⛔ `metadata=print` escribe en STDERR y ffmpeg SALE CON 0: `execFileSync` devuelve stdout
+  //    (vacío) y no hay excepción de la que sacar el stderr, así que el medidor daba "no pude medir"
+  //    en las 247. Va `spawnSync`, que devuelve las DOS corrientes pase lo que pase.
+  const r = spawnSync('ffmpeg', ['-v', 'info', '-i', p, '-vf',
+    'scale=320:-2,signalstats,metadata=print:key=lavfi.signalstats.YAVG', '-f', 'null', '-'],
+    { encoding: 'utf8', maxBuffer: 1 << 26 });
+  const m = (String(r.stdout || '') + String(r.stderr || '')).match(/YAVG=([\d.]+)/);
+  if (m) return +m[1];
+  // ⛔⛔ Y UN REINTENTO, PORQUE EL PRIMER PASE MIDE UN JPG RECIÉN ESCRITO. Medido en rkspots: la
+  //    primera corrida dio "sin poder medir la luma: 215" y la segunda —con los mismos archivos ya
+  //    en disco— midió 215/215. En Windows el archivo puede quedar un instante tomado por el
+  //    antivirus/indexador justo después de que ffmpeg lo cierra. Sin este reintento la compuerta
+  //    avisa que no midió (bien) pero obliga a correr todo de nuevo para saber si había algo oscuro.
+  const r2 = spawnSync('ffmpeg', ['-v', 'info', '-i', p, '-vf',
+    'scale=320:-2,signalstats,metadata=print:key=lavfi.signalstats.YAVG', '-f', 'null', '-'],
+    { encoding: 'utf8', maxBuffer: 1 << 26 });
+  const m2 = (String(r2.stdout || '') + String(r2.stderr || '')).match(/YAVG=([\d.]+)/);
+  return m2 ? +m2[1] : null;
 };
 const dimDe = (p) => {
   const o = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v', '-show_entries',
