@@ -156,7 +156,11 @@ for (const b of plan.beats) {
     if (b.bed && !OVERLAY.has(b.comp)) props.bed = b.bed;   // los overlay no llevan cama de foto
     el = `(d) => <${b.comp} durationInFrames={d} {...(${JSON.stringify(props)} as any)} />`;
   }
-  if (camId) ultimaFoto = 'img/' + camId + '_blur.jpg';
+  // ⛔ LA CAMA DE FOTO DEL AVATAR SÓLO PUEDE SALIR DE UNA IMAGEN GENERADA. Un plano de METRAJE REAL
+  //    es un mp4 de stock: no tiene hermano `_blur.jpg` en `public/img/`, así que si se lo toma como
+  //    cama el chunk muere con 404 en el farm. Medido en rkspots: la ventana de avatar heredó
+  //    `img/rkspots_r129_blur.jpg`, que no existe ni puede existir.
+  if (camId && !b.real) ultimaFoto = 'img/' + camId + '_blur.jpg';
   const row = `  { key: ${JSON.stringify(key)}, start: ${b.t}, dur: ${b.dur}, el: ${el} },`;
   (b.kind === 'componente' && OVERLAY.has(b.comp) ? overlays : cues).push(row);
 }
