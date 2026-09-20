@@ -27,7 +27,10 @@ const OVERLAY = new Set(cfg.OVERLAY);
 //    asi que cada ventana se monta como un plano mas de la capa base con `RayAvatarWin` (media
 //    panel 960x540 = upscale 1,154x; `RayAvatar` a pantalla completa es 2,31x y el creador lo rechazo).
 const MODO = cfg.AVATAR_MODO || 'fondo';
-const AVDIR = `avwin/${SLUG}`;
+// ⛔ LA CONVENCION LA FIJA `scripts/rksafe_avatar.mjs`, que es quien las escribe:
+//    `public/broll/<slug>/av_wNNN.mp4` (960x540, 30/1 CFR). Si el build las busca en otro lado,
+//    el pre-vuelo del farm da 'faltan 51 assets' sobre archivos que estan en disco.
+const AVDIR = `broll/${SLUG}`;
 const CAM = cfg.CAM;
 const idDeAsset = (a) => (a || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '');
 
@@ -138,7 +141,7 @@ for (const b of plan.beats) {
     el = `(d) => <Clip src=${JSON.stringify(b.asset)} rate={${b.rate ?? 1}} />`;
     nClip++;
   } else if (b.kind === 'avatar') {
-    const rel = `${AVDIR}/w${String(b.win).padStart(3, '0')}.mp4`;
+    const rel = `${AVDIR}/av_w${String(b.win).padStart(3, '0')}.mp4`;
     // la CAMA de foto del plano anterior llena el resto del cuadro (el panel es 960x540, no full)
     const bedRel = b.bed || ultimaFoto;
     const bedProp = bedRel ? ` bed=${JSON.stringify(bedRel)}` : '';
@@ -265,7 +268,7 @@ for (const a of [...assets]) if (a.endsWith('.jpg') && !a.endsWith('_blur.jpg'))
 }
 for (const bd of avBeds) { chequeados++; assets.add(bd); if (!fs.existsSync('public/' + bd)) { console.log('  ⛔ falta public/' + bd + ' (cama del avatar)'); faltan++; } }
 for (const b of plan.beats) if (b.kind === 'avatar') {
-  const r = `${AVDIR}/w${String(b.win).padStart(3, '0')}.mp4`;
+  const r = `${AVDIR}/av_w${String(b.win).padStart(3, '0')}.mp4`;
   chequeados++; assets.add(r);
   if (!fs.existsSync('public/' + r)) { console.log('  ⛔ falta public/' + r); faltan++; }
 }
