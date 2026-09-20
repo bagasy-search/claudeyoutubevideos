@@ -60,6 +60,16 @@ for (const id of realEnDisco) {
 
 const esClip = (d) => Math.abs(d - 4.03) < 0.06 || Math.abs(d - 8.07) < 0.06;
 
+// ⛔⛔ CUANTO PESA EL METRAJE REAL EN UN EMPATE — Y POR QUE SUBIRLO ES EL ARREGLO EQUIVOCADO.
+//    Al entrar los clips de agnes, el stock bajaba de 26,1 % a 20,0 %. La tentacion es subir el
+//    bonus: con 1,2 el stock vuelve a 26,9 % pero los planos QUE PEGAN con la frase caen de 79 % a
+//    59 % — o sea se compra la vara de metraje real pagando con la regla de CONTEXTO, que es la que
+//    el creador nota. La causa verdadera era otra: los clips de stock traian como `prompt` la
+//    consulta de 2-3 palabras con que se bajaron, asi que puntuaban 0 contra cualquier frase.
+//    Con el vocabulario real de cada toma (ver _v3/<slug>_expand_real.mjs) el stock compite por
+//    MERITO y se consiguen las dos cosas: 26,1 % de metraje real Y 79 % de planos que pegan.
+const REAL_BONUS = +(process.env.REAL_BONUS || cfg.REAL_BONUS || 0.6);
+
 // ⛔⛔ EL ASSET SE ELIGE POR LA FRASE QUE SUENA EN ESE SEGUNDO, NO POR RONDA. Repartir el pool de la
 //    sección en round-robin da coherencia de TEMA y no de FRASE: la oración del felpudo agarra el
 //    plano del medidor porque le tocó. Medido acá antes del arreglo: 45 % de planos pegaban.
@@ -202,7 +212,7 @@ for (const sec of secciones) {
         // ⭐ el metraje REAL gana los empates: es el 25 % que la vara del pipeline exige y es lo
         //    único del pool que no lo dibujó una máquina.
         const mejorDe = (cands) => cands
-          .map((c) => ({ c, s: puntaje(sust, c.tokens) + (c.real ? 0.6 : 0) }))
+          .map((c) => ({ c, s: puntaje(sust, c.tokens) + (c.real ? REAL_BONUS : 0) }))
           .sort((a, b) => b.s - a.s)[0]?.c;
         const libres2 = pool.filter((c) => !used.has(c.id) && !anterior.includes(c.id));
         // ⛔ un item REAL no tiene foto: sólo puede entrar en un slot de CLIP
@@ -275,46 +285,7 @@ if (AVATAR_END > 1) {
   const paso = Math.max(1, Math.floor(candidatos.length / Math.max(1, Math.ceil(sobra / 4.5))));
   for (let i = 0; i < candidatos.length && sobra > 0; i += paso) { candidatos[i]._quitar = true; sobra -= candidatos[i].dur; quitados++; }
 }
-let finales = beats.filter((b) => !b._quitar);
-
-// ⛔⛔ UNA VENTANA DE AVATAR NO PUEDE SER UN POZO. El abridor reparte el sobrante con un paso fijo,
-//    así que donde el pool de la sección se queda corto varias ventanas quedan PEGADAS y salen
-//    tramos larguísimos con la cara sola. Medido en rkspots antes de este arreglo: una ventana de
-//    31,3 s a los 12:47 (la sección del placard tiene 12 planos para ~20 slots), con el resto de
-//    las métricas en verde — cobertura 100 %, 0 huecos ≥6 s, pacing correcto. Ninguna compuerta lo
-//    ve porque técnicamente NO es un hueco: hay avatar ahí.
-// ✅ Se DEVUELVEN al montaje los planos que el abridor había quitado dentro de cada tramo largo,
-//    empezando por el más cercano al medio, hasta que ningún tramo pase el techo.
-{
-  const MAX_WIN = cfg.AVATAR_WIN_MAX ?? 12;
-  const OVq = new Set(cfg.OVERLAY);
-  let devueltos = 0, peorAntes = 0;
-  for (let vuelta = 0; vuelta < 8; vuelta++) {
-    const base = finales.filter((b) => !(b.kind === 'componente' && OVq.has(b.comp))).sort((a, b) => a.t - b.t);
-    const tramos = [];
-    let cur = 0;
-    for (const b of base) { if (b.t - cur > 0.02) tramos.push([cur, b.t]); cur = Math.max(cur, b.t + b.dur); }
-    if (TOTAL - cur > 0.02) tramos.push([cur, TOTAL]);
-    const largos = tramos.filter(([a, b]) => b - a > MAX_WIN);
-    if (vuelta === 0) peorAntes = tramos.reduce((m, [a, b]) => Math.max(m, b - a), 0);
-    if (!largos.length) break;
-    let cambio = false;
-    for (const [h0, h1] of largos) {
-      const medio = (h0 + h1) / 2;
-      const dentro = beats.filter((b) => b._quitar && b.t >= h0 - 0.01 && b.t + b.dur <= h1 + 0.01)
-        .sort((a, b) => Math.abs(a.t + a.dur / 2 - medio) - Math.abs(b.t + b.dur / 2 - medio));
-      if (dentro.length) { delete dentro[0]._quitar; devueltos++; cambio = true; }
-    }
-    if (!cambio) break;
-    finales = beats.filter((b) => !b._quitar);
-  }
-  const base = finales.filter((b) => !(b.kind === 'componente' && OVq.has(b.comp))).sort((a, b) => a.t - b.t);
-  let cur = 0, peor = 0;
-  for (const b of base) { peor = Math.max(peor, b.t - cur); cur = Math.max(cur, b.t + b.dur); }
-  peor = Math.max(peor, TOTAL - cur);
-  console.log('ventanas de avatar acotadas: ' + devueltos + ' planos devueltos al montaje · la más larga pasó de '
-    + peorAntes.toFixed(1) + ' s a ' + peor.toFixed(1) + ' s (techo ' + MAX_WIN + ')');
-}
+const finales = beats.filter((b) => !b._quitar);
 
 // ── MODO VENTANAS: el avatar NO es fondo, es un plano más de la capa base ──
 // ⛔⛔ En los videos donde el avatar lo genero YO (RunPod InfiniteTalk) no hay capa continua: fuera
@@ -324,6 +295,36 @@ let finales = beats.filter((b) => !b._quitar);
 const MODO = cfg.AVATAR_MODO || 'fondo';
 if (MODO === 'ventanas') {
   const OVv = new Set(cfg.OVERLAY);
+  // ⛔⛔ UNA VENTANA DE AVATAR LARGUÍSIMA PASA TODAS LAS COMPUERTAS EN VERDE: cobertura 100 %, cero
+  //    huecos, pacing sano — porque técnicamente ahí HAY avatar. Y es un pozo. Medido acá: una de
+  //    25,1 s y cuatro por encima de 12 s en un video de 23 min. Pasa porque al quitar beats vecinos
+  //    para abrir ventana los huecos se FUSIONAN, y nadie mide el resultado de la fusión.
+  //    Arreglo: se DEVUELVEN al montaje los planos quitados que caen dentro de una ventana que pasa
+  //    el techo, empezando por el más cercano a su medio, hasta que ninguna supere AVATAR_WIN_MAX.
+  const MAXW = cfg.AVATAR_WIN_MAX ?? 9.0;
+  const quitadosLista = beats.filter((b) => b._quitar);
+  let devueltos = 0;
+  for (let vuelta = 0; vuelta < 60; vuelta++) {
+    const base0 = beats.filter((b) => !b._quitar && !(b.kind === 'componente' && OVv.has(b.comp)))
+      .sort((a, b) => a.t - b.t);
+    const gaps = [];
+    let cur = 0;
+    for (const b of base0) { if (b.t - cur > 0.02) gaps.push([cur, b.t]); cur = Math.max(cur, b.t + b.dur); }
+    if (TOTAL - cur > 0.02) gaps.push([cur, TOTAL]);
+    const largo = gaps.filter(([x, y]) => y - x > MAXW).sort((x, y) => (y[1] - y[0]) - (x[1] - x[0]))[0];
+    if (!largo) break;
+    const medio = (largo[0] + largo[1]) / 2;
+    const cand = quitadosLista
+      .filter((b) => b._quitar && b.t >= largo[0] - 0.01 && b.t + b.dur <= largo[1] + 0.01)
+      .sort((a, b) => Math.abs(a.t + a.dur / 2 - medio) - Math.abs(b.t + b.dur / 2 - medio))[0];
+    if (!cand) break;                       // no queda nada que devolver en ese tramo
+    delete cand._quitar; devueltos++;
+  }
+  // ⛔ `finales` ya se calculó arriba: los planos devueltos hay que REINSERTARLOS o el arreglo no
+  //    llega al montaje (la marca cambia y el array no).
+  for (const b of quitadosLista) if (!b._quitar && !finales.includes(b)) finales.push(b);
+  finales.sort((a, b) => a.t - b.t);
+  if (devueltos) console.log('techo de ventana ' + MAXW + 's: ' + devueltos + ' planos DEVUELTOS al montaje');
   const base0 = finales.filter((b) => !(b.kind === 'componente' && OVv.has(b.comp))).sort((a, b) => a.t - b.t);
   const MIN_WIN = cfg.AVATAR_WIN_MIN ?? 1.4;
   const huecos = [];

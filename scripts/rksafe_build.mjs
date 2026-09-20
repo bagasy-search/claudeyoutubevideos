@@ -27,13 +27,18 @@ const OVERLAY = new Set(cfg.OVERLAY);
 //    asi que cada ventana se monta como un plano mas de la capa base con `RayAvatarWin` (media
 //    panel 960x540 = upscale 1,154x; `RayAvatar` a pantalla completa es 2,31x y el creador lo rechazo).
 const MODO = cfg.AVATAR_MODO || 'fondo';
-const AVDIR = `avwin/${SLUG}`;
+// ⛔ LA CONVENCION LA FIJA `scripts/rksafe_avatar.mjs`, que es quien las escribe:
+//    `public/broll/<slug>/av_wNNN.mp4` (960x540, 30/1 CFR). Si el build las busca en otro lado,
+//    el pre-vuelo del farm da 'faltan 51 assets' sobre archivos que estan en disco.
+const AVDIR = `broll/${SLUG}`;
 const CAM = cfg.CAM;
 const idDeAsset = (a) => (a || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '');
 
 // ⛔ UN CLIP NUNCA SE ESTIRA MÁS ALLÁ DE SU ARCHIVO. `Clip` no loopea (y `loop` no es una prop de
 //    OffthreadVideo: el clip se CONGELA en su último cuadro el resto del slot, el "plano muerto").
 //    Se mide cada archivo con ffprobe y se exige dur_slot * rate <= dur_archivo.
+let clipsCortos = 0;
+
 const durDe = (rel) => {
   try {
     const o = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration',
@@ -41,8 +46,6 @@ const durDe = (rel) => {
     const m = o.match(/[\d.]+/); return m ? +m[0] : 0;
   } catch { return 0; }
 };
-let clipsCortos = 0;
-
 // ⛔⛔ EL MAIN REDONDEA `from` Y `durationInFrames` POR SEPARADO. `F(53.94) + F(0.98)` no cae en
 //    `F(54.92)`: según el resto, el cue siguiente arranca un cuadro ANTES (solape: un plano tapa al
 //    otro) o un cuadro DESPUÉS (destello de 33 ms del fondo, que `blackdetect` no ve porque pide
@@ -51,7 +54,7 @@ let clipsCortos = 0;
 {
   const OVs = new Set(cfg.OVERLAY);
   const baseB = plan.beats.filter((b) => !(b.kind === 'componente' && OVs.has(b.comp))).sort((a, b) => a.t - b.t);
-  let pegados = 0;
+  let pegados = 0, recortados = 0;
   for (let i = 0; i < baseB.length; i++) {
     const f0 = Math.round(baseB[i].t * FPS);
     let f1 = f0 + Math.max(1, Math.round(baseB[i].dur * FPS));
@@ -61,13 +64,53 @@ let clipsCortos = 0;
       if (Math.abs(sf0 - f1) <= 3 && sf0 > f0) { f1 = sf0; pegados++; }
       else if (f1 > sf0) { f1 = Math.max(f0 + 1, sf0); pegados++; }
     }
+    // ⛔⛔ UN CLIP NO SE ESTIRA PARA CERRAR LA FRONTERA. `Clip` no loopea: pasado el ultimo cuadro
+    //    `OffthreadVideo` CONGELA, y `agnes_qc_gate` lo cuenta como repeticion. Medido aca: la
+    //    alineacion estiraba 3 clips 0,14-0,32 s sobre su archivo. Cuando el tope no da, el que se
+    //    mueve es el ARRANQUE DEL SIGUIENTE, no el final de este.
+    if (baseB[i].kind === 'clip') {
+      const df = durDe(baseB[i].asset);
+      const tope = f0 + Math.max(1, Math.floor((df - 0.02) / (baseB[i].rate ?? 1) * FPS));
+      if (f1 > tope) { f1 = tope; if (sig) sig.t = f1 / FPS; recortados++; }
+    }
     baseB[i].t = f0 / FPS;
     baseB[i].dur = Math.max(1, f1 - f0) / FPS;
   }
-  console.log('fronteras alineadas al cuadro: ' + pegados + ' de ' + baseB.length);
+  console.log('fronteras alineadas al cuadro: ' + pegados + ' de ' + baseB.length + ' · clips recortados a su archivo: ' + recortados);
+  // ⛔⛔ PASADA DE CIERRE: recortar un clip a su archivo deja un HUECO, y en modo VENTANAS un hueco
+  //    es NEGRO en pantalla. Medido aca: 4 huecos, 2,16 s, cobertura 99,8 %.
+  //    Quien cierra tiene que ser ESTIRABLE: una foto o un componente se estiran sin romper nada;
+  //    un CLIP se congelaria y una VENTANA DE AVATAR no se puede mover ni alargar (su audio se corto
+  //    en milisegundos exactos: correrla desincroniza el lipsync).
+  {
+    const ESTIRABLE = new Set(['imagen', 'componente']);
+    let cerrados = 0, sinCerrar = 0;
+    for (let i = 1; i < baseB.length; i++) {
+      const prev = baseB[i - 1];
+      const hueco = baseB[i].t - (prev.t + prev.dur);
+      if (hueco <= 0.011) continue;
+      if (ESTIRABLE.has(prev.kind)) { prev.dur = +(baseB[i].t - prev.t).toFixed(5); cerrados++; }
+      else if (ESTIRABLE.has(baseB[i].kind)) {
+        baseB[i].dur = +(baseB[i].dur + hueco).toFixed(5);
+        baseB[i].t = +(prev.t + prev.dur).toFixed(5);
+        cerrados++;
+      } else sinCerrar++;
+    }
+    console.log('huecos de recorte cerrados: ' + cerrados + (sinCerrar ? ' · ⛔ SIN CERRAR ' + sinCerrar : ' ✓'));
+  }
   // ⛔ y se PERSISTE el plan alineado: si el gate de timeline mide el plan CRUDO y el render usa
   //    el alineado, la compuerta está midiendo otra cosa que la que se ve. Orden: plan -> build -> gates.
   fs.writeFileSync(`_v3/${SLUG}_plan.json`, JSON.stringify(plan, null, 1));
+  // ⛔⛔ Y LAS VENTANAS DE AVATAR SE VUELVEN A EMITIR **DESPUES** DE ALINEAR. El plan las escribe
+  //    con los tiempos crudos y el build mueve cada frontera hasta 3 cuadros: si el reel de audio se
+  //    corta de la version cruda, cada ventana queda hasta 100 ms corrida contra su propio lipsync.
+  //    El reel SIEMPRE se corta de este archivo, no del que emitio el plan.
+  if (MODO === 'ventanas') {
+    const wins = plan.beats.filter((b) => b.kind === 'avatar').sort((a, b) => a.win - b.win)
+      .map((b) => ({ i: b.win, t: +b.t.toFixed(3), dur: +b.dur.toFixed(3) }));
+    fs.writeFileSync(`_v3/${SLUG}_avwins.json`, JSON.stringify(wins, null, 1));
+    console.log('ventanas de avatar reemitidas ya alineadas al cuadro: ' + wins.length);
+  }
 }
 
 const usados = new Set();
@@ -98,7 +141,7 @@ for (const b of plan.beats) {
     el = `(d) => <Clip src=${JSON.stringify(b.asset)} rate={${b.rate ?? 1}} />`;
     nClip++;
   } else if (b.kind === 'avatar') {
-    const rel = `${AVDIR}/w${String(b.win).padStart(3, '0')}.mp4`;
+    const rel = `${AVDIR}/av_w${String(b.win).padStart(3, '0')}.mp4`;
     // la CAMA de foto del plano anterior llena el resto del cuadro (el panel es 960x540, no full)
     const bedRel = b.bed || ultimaFoto;
     const bedProp = bedRel ? ` bed=${JSON.stringify(bedRel)}` : '';
@@ -113,7 +156,11 @@ for (const b of plan.beats) {
     if (b.bed && !OVERLAY.has(b.comp)) props.bed = b.bed;   // los overlay no llevan cama de foto
     el = `(d) => <${b.comp} durationInFrames={d} {...(${JSON.stringify(props)} as any)} />`;
   }
-  if (camId) ultimaFoto = 'img/' + camId + '_blur.jpg';
+  // ⛔ LA CAMA DE FOTO DEL AVATAR SÓLO PUEDE SALIR DE UNA IMAGEN GENERADA. Un plano de METRAJE REAL
+  //    es un mp4 de stock: no tiene hermano `_blur.jpg` en `public/img/`, así que si se lo toma como
+  //    cama el chunk muere con 404 en el farm. Medido en rkspots: la ventana de avatar heredó
+  //    `img/rkspots_r129_blur.jpg`, que no existe ni puede existir.
+  if (camId && !b.real) ultimaFoto = 'img/' + camId + '_blur.jpg';
   const row = `  { key: ${JSON.stringify(key)}, start: ${b.t}, dur: ${b.dur}, el: ${el} },`;
   (b.kind === 'componente' && OVERLAY.has(b.comp) ? overlays : cues).push(row);
 }
@@ -198,7 +245,7 @@ fs.writeFileSync(`src/index_${SLUG}.tsx`, entrySrc);
 console.log('═'.repeat(66));
 console.log('CUES     : ' + cues.length + '  ·  OVERLAYS: ' + overlays.length + '  ·  clips medidos con ffprobe: ' + nClip +
   '  ·  que se congelarían: ' + clipsCortos + (clipsCortos ? ' ⛔' : ' ✓'));
-if (MODO === 'ventanas') console.log('VENTANAS DE AVATAR: ' + nAv + ' planos RayAvatarWin (upscale 1,25x, media pantalla)');
+if (MODO === 'ventanas') console.log('VENTANAS DE AVATAR: ' + nAv + ' planos RayAvatarWin (panel 960x540 = upscale 1,154x)');
 console.log('CÁMARA DE VIGILANCIA: ' + nCam + ' planos ' + (nCam >= 8 ? '✓' : '⛔ el hook se va a ver como una foto quieta'));
 console.log('COMPONENTES importados: ' + compsNecesarios.length + ' → ' + compsNecesarios.join(' · '));
 console.log('TOTAL_FRAMES: ' + TOTAL_F + ' (' + plan.total.toFixed(2) + ' s)  ·  AVATAR_FRAMES: ' + AVATAR_F);
@@ -225,7 +272,7 @@ for (const a of [...assets]) if (a.endsWith('.jpg') && !a.endsWith('_blur.jpg'))
 }
 for (const bd of avBeds) { chequeados++; assets.add(bd); if (!fs.existsSync('public/' + bd)) { console.log('  ⛔ falta public/' + bd + ' (cama del avatar)'); faltan++; } }
 for (const b of plan.beats) if (b.kind === 'avatar') {
-  const r = `${AVDIR}/w${String(b.win).padStart(3, '0')}.mp4`;
+  const r = `${AVDIR}/av_w${String(b.win).padStart(3, '0')}.mp4`;
   chequeados++; assets.add(r);
   if (!fs.existsSync('public/' + r)) { console.log('  ⛔ falta public/' + r); faltan++; }
 }
