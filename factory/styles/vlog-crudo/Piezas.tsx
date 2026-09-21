@@ -163,3 +163,89 @@ export const GlitchCut: React.FC<{ durationInFrames?: number }> = ({ durationInF
     </AbsoluteFill>
   );
 };
+
+// ── GOLPES: los gráficos del HOOK ────────────────────────────────────────────────────────────────
+// Pedido del creador (20-sep-2026): "después de la apertura, edición ultra atrapante, gráficos épicos".
+// ⛔ Van en el HOOK y en los golpes, NO sobre el proceso: los 8 ganadores de este molde son cámara
+//    fija, manos y CERO gráficos, y el formato crudo es lo que hace que el video calce con su
+//    miniatura. Es la misma regla ya validada en Claudio Mendoza: primer minuto ultra agresivo, el
+//    resto vlog crudo. Y [[feedback_edicion_limpia_no_sobrecargada]]: LIMPIO gana a denso.
+// Todos entran rápido, se plantan y salen; ninguno tapa el cuadro con una placa.
+const ROJO = "#E23A2E";
+const SANS = '"Archivo Black", "Anton", Impact, system-ui, sans-serif';
+
+/** entra de golpe (0-5), se planta, sale (últimos 6 cuadros) */
+const useGolpe = (dur: number) => {
+  const f = useCurrentFrame();
+  const entra = interpolate(f, [0, 5], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const sale = interpolate(f, [dur - 6, dur], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return { f, op: Math.min(entra, sale), k: entra };
+};
+const SOMBRA = "0 6px 28px rgba(0,0,0,0.85), 0 2px 6px rgba(0,0,0,0.9)";
+
+/** NÚMERO gigante que cae de golpe (temperaturas, litros, pesos, "3 vueltas"). */
+export const NumeroGolpe: React.FC<{ n: string; sub?: string; dur: number }> = ({ n, sub, dur }) => {
+  const { op, k } = useGolpe(dur);
+  return (
+    <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", opacity: op }}>
+      <div style={{ transform: `scale(${(0.82 + 0.18 * k).toFixed(3)})`, textAlign: "center" }}>
+        <div style={{ fontFamily: SANS, fontSize: 250, lineHeight: 0.9, color: "#fff", textShadow: SOMBRA, letterSpacing: -6 }}>{n}</div>
+        {sub ? <div style={{ fontFamily: SANS, fontSize: 64, color: ROJO, textShadow: SOMBRA, letterSpacing: 2, marginTop: 6 }}>{sub}</div> : null}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** SELLO estampado en diagonal ("NO LO TIRES", "OJO ACÁ"). Máximo 4 palabras. */
+export const SelloGolpe: React.FC<{ texto: string; dur: number }> = ({ texto, dur }) => {
+  const { op, k } = useGolpe(dur);
+  return (
+    <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", opacity: op }}>
+      <div style={{
+        transform: `rotate(-7deg) scale(${(1.25 - 0.25 * k).toFixed(3)})`, background: ROJO, color: "#fff",
+        fontFamily: SANS, fontSize: 96, padding: "14px 44px", letterSpacing: 1, boxShadow: SOMBRA,
+      }}>{texto.toUpperCase()}</div>
+    </AbsoluteFill>
+  );
+};
+
+/** ETIQUETA de esquina con barra roja: nombra el material o el paso sin tapar la acción. */
+export const EtiquetaGolpe: React.FC<{ texto: string; dur: number }> = ({ texto, dur }) => {
+  const { op, k } = useGolpe(dur);
+  return (
+    <AbsoluteFill style={{ opacity: op }}>
+      <div style={{ position: "absolute", left: 96, bottom: 110, display: "flex", alignItems: "stretch", transform: `translateX(${((1 - k) * -40).toFixed(1)}px)` }}>
+        <div style={{ width: 12, background: ROJO }} />
+        <div style={{ background: "rgba(10,11,8,0.82)", color: "#fff", fontFamily: SANS, fontSize: 54, padding: "10px 26px", letterSpacing: 1 }}>{texto.toUpperCase()}</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** FRASE golpe palabra por palabra en el tercio inferior. Máximo 8 palabras. */
+export const FraseGolpe: React.FC<{ texto: string; dur: number }> = ({ texto, dur }) => {
+  const { f, op } = useGolpe(dur);
+  const pal = texto.toUpperCase().split(/\s+/).filter(Boolean);
+  const porPal = Math.max(2, Math.floor((dur * 0.55) / Math.max(1, pal.length)));
+  return (
+    <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-end", paddingBottom: 120, opacity: op }}>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "0 18px", justifyContent: "center", maxWidth: 1500 }}>
+        {pal.map((p, i) => (
+          <span key={i} style={{
+            fontFamily: SANS, fontSize: 72, color: i === pal.length - 1 ? ROJO : "#fff", textShadow: SOMBRA,
+            opacity: f >= i * porPal ? 1 : 0, transform: `translateY(${f >= i * porPal ? 0 : 14}px)`,
+          }}>{p}</span>
+        ))}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** MAPA de golpes: el cue trae `kind` y el build no importa cada componente por su nombre.
+ *  ⛔ Si un kind no está acá llegaría `undefined` y React tira el #130 sin decir cuál: se avisa. */
+export const Golpe: React.FC<{ kind: string; props: any; dur: number }> = ({ kind, props, dur }) => {
+  const M: Record<string, React.FC<any>> = { numero: NumeroGolpe, sello: SelloGolpe, etiqueta: EtiquetaGolpe, frase: FraseGolpe };
+  const C = M[kind];
+  if (!C) return null;
+  return <C {...props} dur={dur} />;
+};

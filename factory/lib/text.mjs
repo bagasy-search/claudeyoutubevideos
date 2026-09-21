@@ -132,7 +132,11 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
         errores.push(`${x.n}: el componente "${kind || "?"}" no trae \`props\` (si de verdad no lleva ninguna, poné "props": {})`);
       }
     }
-    const extra = { ...(x.k ? { k: x.k } : {}), ...(x.st ? { st: String(x.st) } : {}) };
+    // `gr` = GOLPE (gráfico del hook: numero|sello|etiqueta|frase). Viaja TAL CUAL al plan igual que
+    // `k` y `st`: lo lee planVlog §4.bis, que le mide palabras, duración y densidad.
+    // ⛔ NO se llama `g`: esa letra YA es "hay gente" en el contrato (`gente: !!x.g`, línea de abajo),
+    //    y reusarla habilitaría gente inventada en cada plano con gráfico.
+    const extra = { ...(x.k ? { k: x.k } : {}), ...(x.st ? { st: String(x.st) } : {}), ...(x.gr && typeof x.gr === "object" ? { gr: x.gr } : {}) };
     if (x.t === "avatar") { plan.push({ name: x.n, i: m.i, sec: secDe(m.i), dice: m.texto, tipo: "avatar", muestra: x.m || "presentador a cámara", ...extra }); continue; }
     if (!["wide", "medium", "close"].includes(x.e)) { errores.push(`${x.n}: encuadre inválido "${x.e}"`); continue; }
     // REGLA DEL CREADOR (18-sep-2026): `"q": 1` = plano QUIETO. Se queda como FOTO (con su

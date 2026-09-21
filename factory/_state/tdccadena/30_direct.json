@@ -1,6 +1,6 @@
 {
  "fase": "30_direct",
- "ts": "2026-09-21T02:24:24.798Z",
+ "ts": "2026-09-21T02:41:07.905Z",
  "status": "done",
  "inputsHash": "f1897955bac7d220",
  "medido": {
@@ -18,5 +18,5 @@
   "animadoPct": 30,
   "quietos": 71
  },
- "ms": 156
+ "ms": 16
 }

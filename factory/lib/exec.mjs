@@ -24,7 +24,14 @@ export function run(cmd, args = [], opts = {}) {
   if (!Number.isFinite(timeoutMs) || timeoutMs <= 0) throw new Error(`run(${cmd}): timeoutMs es obligatorio`);
   const t0 = Date.now();
   return new Promise((resolve, reject) => {
-    const p = spawn(cmd, args, { cwd, env: env ? { ...process.env, ...env } : process.env, shell, windowsHide: true });
+    // ⛔⛔ `gh` CUELGA cuando su stdout no es una terminal: el notificador de versión nueva se
+    //    queda con el pipe abierto y `run()` muere por TIMEOUT. Medido 20-sep-2026 con gh 2.96.0:
+    //    `gh --version` tarda 10 s desde la consola y NUNCA vuelve desde node (60 s de timeout),
+    //    así que 00_preflight informaba `faltan herramientas: gh` con gh instalado y funcionando —
+    //    y el mismo cuelgue le puede pegar a 80_render, que vive de `gh`. Con la variable puesta
+    //    vuelve en el acto. Va acá y no en cada llamada para que valga para TODO gh del motor.
+    const baseEnv = { ...process.env, GH_NO_UPDATE_NOTIFIER: "1" };
+    const p = spawn(cmd, args, { cwd, env: env ? { ...baseEnv, ...env } : baseEnv, shell, windowsHide: true });
     let stdout = "", stderr = "", killed = false, buf = "";
     const line = (chunk) => {
       if (!onLine) return;
@@ -55,6 +62,20 @@ export async function durSec(file, { timeoutMs = 60_000 } = {}) {
   const d = Number(r.stdout.replace(/\r/g, "").trim());
   if (!(d > 0)) throw new Error(`durSec(${file}): ffprobe devolvió "${r.stdout.trim()}"`);
   return d;
+}
+
+/**
+ * Duración del FLUJO DE VIDEO (no la del contenedor). `format=duration` devuelve el máximo entre
+ * las pistas, así que un mp4 cuyo video termina ANTES que su audio miente: mide largo y completo.
+ * Medido 20-sep-2026 en tdccadena: el reel de RunPod volvió a 25 fps con video 62,32 s y contenedor
+ * 62,44 s. `reelFaltanteSec` dio 0 (leía el contenedor), el relleno nunca se disparó, y la ÚLTIMA
+ * ventana salió 0,153 s corta → `ventanasMalCortadas: 1` sin forma de auto-curarse: re-correr la
+ * fase da exactamente lo mismo. Usar esta para decidir si hay que clonar cuadros.
+ */
+export async function durVideoSec(file, { timeoutMs = 60_000 } = {}) {
+  const r = await run("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=duration", "-of", "csv=p=0", file], { timeoutMs, allowFail: true });
+  const d = Number((r.stdout || "").replace(/\r/g, "").trim());
+  return d > 0 ? d : await durSec(file, { timeoutMs });   // N/A (algunos contenedores) → contenedor
 }
 
 /** Cuadros reales de video (cuenta paquetes). Tira si da 0. */

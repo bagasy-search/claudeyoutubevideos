@@ -112,3 +112,35 @@ test("apertura: si agnes redibujó, la miniatura QUIETA sigue sirviendo (calce e
   assert.equal(r.cues[0].foto, "img/x/x_thumb.jpg");
   assert.equal(r.audioDesdeF, 30, "el corrimiento no depende de que haya clip");
 });
+
+// ── GOLPES: los gráficos del hook (20-sep-2026) ──────────────────────────────────────────────────
+const conGolpes = (marcas) => {
+  const mom = mkMom();
+  const plan = mkPlan(mom).map((p) => (marcas[p.name] ? { ...p, gr: marcas[p.name] } : p));
+  return planVlog(base({ mom, plan }));
+};
+
+test("golpes: el gráfico sale en la capa over, atado a su plano", () => {
+  const r = conGolpes({ p002: { kind: "sello", props: { texto: "NO LO TIRES" } }, p016: { kind: "numero", props: { n: "5", sub: "TRUCOS" } } });
+  const g = r.cues.filter((c) => c.kind === "golpe");
+  assert.equal(g.length, 2);
+  assert.equal(r.medido.golpes, 2);
+  assert.deepEqual(g.map((c) => [c.golpe, c.capa, c.start]), [["sello", "over", 240], ["numero", "over", 1920]]);
+  assert.deepEqual(r.problemas, []);
+});
+
+test("TRAMPA golpe ilegible: más palabras de las que se leen en pantalla", () => {
+  const r = conGolpes({ p002: { kind: "frase", props: { texto: "una frase muchisimo mas larga de lo que se puede leer en dos segundos" } } });
+  assert.match(r.problemas.join(" "), /15 palabras \(máx 8\)/);
+  assert.equal(r.cues.filter((c) => c.kind === "golpe").length, 0, "el golpe ilegible NO se emite");
+});
+
+test("TRAMPA golpes pegados: dos gráficos encima quiebran el molde crudo", () => {
+  const r = conGolpes({ p002: { kind: "sello", props: { texto: "OJO" } }, p003: { kind: "sello", props: { texto: "ACÁ" } } });
+  assert.match(r.problemas.join(" "), /golpes pegados/);
+});
+
+test("TRAMPA golpe de tipo inventado: se avisa en vez de emitir undefined (React #130)", () => {
+  const r = conGolpes({ p002: { kind: "explosion3d", props: { texto: "BOOM" } } });
+  assert.match(r.problemas.join(" "), /tipo desconocido "explosion3d"/);
+});

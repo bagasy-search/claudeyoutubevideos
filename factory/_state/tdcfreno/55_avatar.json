@@ -1,8 +1,8 @@
 {
  "fase": "55_avatar",
  "ts": "2026-09-21T02:05:37.553Z",
- "status": "done",
- "inputsHash": "73e79818fb58a414",
+ "status": "running",
+ "inputsHash": "e9d8773de2e06e7f",
  "medido": {
   "ventanas": 4,
   "visiblesSec": 47.02,

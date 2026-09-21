@@ -16,7 +16,8 @@ const MONTAJES = ["vlog-crudo", "premium"];
 
 export function emitVlog({ slug, comp, total, cues, ventanas, placa, fondo, ambiente = null, fps = 30, premium = false, audioDesdeF = 0 }) {
   const U = slug.toUpperCase().replace(/[^A-Z0-9]/g, "_");
-  const el = (c) => (c.kind === "apertura" ? `<AperturaMiniatura ${c.src ? `src="${c.src}" ` : ""}${c.foto ? `foto="${c.foto}" ` : ""}frames={${c.frames || 0}} />`
+  const el = (c) => (c.kind === "golpe" ? `<Golpe kind="${c.golpe}" props={${JSON.stringify(c.props)} as any} dur={${c.dur}} />`
+    : c.kind === "apertura" ? `<AperturaMiniatura ${c.src ? `src="${c.src}" ` : ""}${c.foto ? `foto="${c.foto}" ` : ""}frames={${c.frames || 0}} />`
     : c.kind === "glitch" ? `<GlitchCut durationInFrames={${c.dur}} />`
     : c.kind === "cta" ? `<CtaFinal {...(${JSON.stringify(c.props)} as any)} />`
     // ⛔ El componente va SIN envoltorio: nada de placa/recuadro crema detrás (el creador lo rechazó
@@ -26,7 +27,7 @@ export function emitVlog({ slug, comp, total, cues, ventanas, placa, fondo, ambi
         : `<Foto src="${c.src}" seed={${c.start}} />`);
   const gen = `// cues_${slug}.gen.tsx — GENERADO por la FÁBRICA (factory/phases/60_build.mjs). NO editar a mano.
 import React from "react";
-import { Clip, CtaFinal, Foto${cues.some((c) => c.kind === "apertura") ? ", AperturaMiniatura, GlitchCut" : ""} } from "./Piezas";${premium ? `
+import { Clip, CtaFinal, Foto${cues.some((c) => c.kind === "apertura") ? ", AperturaMiniatura, GlitchCut" : ""}${cues.some((c) => c.kind === "golpe") ? ", Golpe" : ""} } from "./Piezas";${premium ? `
 import { Comp } from "./Comp";` : ""}
 
 export type Cue = { key: string; start: number; dur: number; capa: "base" | "over"; el: (frame: number) => React.ReactNode };

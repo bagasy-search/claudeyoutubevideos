@@ -1,8 +1,8 @@
 {
  "fase": "20_asr",
- "ts": "2026-09-21T02:00:18.096Z",
+ "ts": "2026-09-21T02:38:45.577Z",
  "status": "done",
- "inputsHash": "23bf5f3df177e149",
+ "inputsHash": "f6776d1cf0c03a04",
  "medido": {
   "motor": "modal",
   "palabras": 3039,
@@ -19,5 +19,5 @@
   "tramosRepartidos": 0,
   "tramos": []
  },
- "ms": 99665
+ "ms": 112397
 }

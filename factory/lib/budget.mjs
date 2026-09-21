@@ -50,7 +50,10 @@ export class BlockedError extends Error {
 export async function toolsPresent(tools = ["ffmpeg", "ffprobe", "gh", "node", "python"]) {
   const out = {};
   for (const t of tools) {
-    try { await run(t, [t === "python" ? "--version" : t === "gh" ? "--version" : t === "node" ? "-v" : "-version"], { timeoutMs: 20_000 }); out[t] = true; }
+    // ⛔ 20 s no alcanzaban: con tres videos a la vez `gh --version` midió 3, 10 y 10,5 s (antivirus
+    //    + contención de disco), así que el preflight informaba `faltan herramientas: gh` con gh
+    //    instalado y funcionando. Es un chequeo de PRESENCIA, no de velocidad: 60 s y se acabó.
+    try { await run(t, [t === "python" ? "--version" : t === "gh" ? "--version" : t === "node" ? "-v" : "-version"], { timeoutMs: 60_000 }); out[t] = true; }
     catch { out[t] = false; }
   }
   return out;

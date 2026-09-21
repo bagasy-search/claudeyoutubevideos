@@ -1,8 +1,8 @@
 {
  "fase": "20_asr",
- "ts": "2026-09-21T01:58:55.940Z",
+ "ts": "2026-09-21T02:44:41.041Z",
  "status": "done",
- "inputsHash": "102e59fc4a4d18d2",
+ "inputsHash": "8374231155340a90",
  "medido": {
   "motor": "modal",
   "palabras": 1515,
@@ -10,14 +10,14 @@
   "momentos": 102,
   "palabrasGuion": 1517,
   "palabrasAsr": 1514,
-  "similitud": 0.9786,
+  "similitud": 0.9726,
   "anclajeExactoPct": 100,
-  "duracionSec": 544.96,
-  "planoMedianaSec": 5.1,
-  "planoMaxSec": 12.14,
+  "duracionSec": 504.56,
+  "planoMedianaSec": 4.7,
+  "planoMaxSec": 10.66,
   "desorden": 0,
   "tramosRepartidos": 0,
   "tramos": []
  },
- "ms": 59123
+ "ms": 89767
 }

@@ -11,6 +11,8 @@ import { medirTimeline } from "./timeline.mjs";
 
 export const DEFAULTS = {
   fps: 30, minPlanoS: 1.2, partirS: 7.0, colaFotoS: 2.5, minCueF: 20, aperturaMinS: 3,
+  // golpes (gráficos del hook): techo medido, no gusto. Ver §4.bis
+  maxGolpes: 12, golpeSepMinS: 12, golpeDurS: 2.0, maxPalabrasFrase: 8, maxPalabrasSello: 4, maxPalabrasEtiqueta: 5,
   cerrarHuecoMaxS: 4.5, jcutProb: 0.55, lcutProb: 0.25, bordeVentanaF: 12,
   maxAvatarTapadoS: 1.0, maxPlacaVistaS: 1.5, minCoberturaPct: 99,
 };
@@ -164,6 +166,35 @@ export function planVlog({ mom, plan, ventanasSec, wavSec, assetOf, framesOf, fi
     cues.push({ key: `cta${idx + 1}`, start: f0, dur, capa: "over", kind: "cta", props: { head: c.head, sub: c.sub, ...(c.qr ? { qr: c.qr } : {}) } });
   });
 
+  // 4.bis GOLPES (capa over): los gráficos del HOOK. El DIRECTOR marca el plano con
+  //   `gr: { kind: "numero"|"sello"|"etiqueta"|"frase", props: {...}, durS }`.
+  //   ⛔ `gr`, no `g`: `g` ya es "hay gente" en el contrato del DIRECTOR.
+  // ⛔ Van en el hook y en los golpes, NO sobre el proceso: los ganadores de este molde son cámara
+  //   fija, manos y cero gráficos. Por eso hay TECHO de densidad medido, no "a gusto del director":
+  //   sin techo, el molde deja de calzar con la miniatura y se pierde la distribución, que es
+  //   justamente lo que costó 2.116.600 vs 780 vistas.
+  const golpes = [];
+  const LIM = { frase: O.maxPalabrasFrase, sello: O.maxPalabrasSello, etiqueta: O.maxPalabrasEtiqueta, numero: 3 };
+  for (const m of mm) {
+    const g = m.plan?.gr;
+    if (!g) continue;
+    if (!LIM[g.kind]) { prob.push(`${m.name}: golpe de tipo desconocido "${g.kind}" (numero|sello|etiqueta|frase)`); continue; }
+    const texto = String(g.props?.texto || g.props?.sub || g.props?.n || "");
+    const pal = texto.trim().split(/\s+/).filter(Boolean).length;
+    if (pal > LIM[g.kind]) { prob.push(`${m.name}: el golpe "${g.kind}" tiene ${pal} palabras (máx ${LIM[g.kind]}) — no se lee en pantalla`); continue; }
+    const f0 = F(m.start);
+    const dur = Math.min(F(g.durS || O.golpeDurS), F(m.end) - f0);
+    if (dur < F(0.8)) { prob.push(`${m.name}: el golpe dura ${(dur / O.fps).toFixed(2)} s, no llega a leerse`); continue; }
+    golpes.push({ key: `golpe_${m.name}`, start: f0, dur, capa: "over", kind: "golpe", golpe: g.kind, props: g.props || {} });
+  }
+  golpes.sort((a, b) => a.start - b.start);
+  if (golpes.length > O.maxGolpes) prob.push(`${golpes.length} golpes (máx ${O.maxGolpes}): con este molde el gráfico de más rompe el calce con la miniatura`);
+  for (let i = 1; i < golpes.length; i++) {
+    const sep = (golpes[i].start - (golpes[i - 1].start + golpes[i - 1].dur)) / O.fps;
+    if (sep < O.golpeSepMinS) prob.push(`golpes pegados: ${golpes[i - 1].key} y ${golpes[i].key} a ${sep.toFixed(1)} s (mín ${O.golpeSepMinS})`);
+  }
+  cues.push(...golpes);
+
   // 5. MEDICIÓN + problemas (todo con número)
   const base = cues.filter((c) => c.capa === "base").sort((a, b) => a.start - b.start);
   const ventanas = VENT.map((w) => ({ k: w.k, from: w.f0, dur: w.f1 - w.f0 }));
@@ -193,6 +224,7 @@ export function planVlog({ mom, plan, ventanasSec, wavSec, assetOf, framesOf, fi
       momentos: mom.length, fusionados: mm.length, cuesBase: base.length,
       clips: base.filter((c) => c.tipo === "clip").length, fotos: base.filter((c) => c.tipo === "foto").length,
       jcuts: nJ, lcuts: nL, huecosCerrados: cerrados, aperturaSec: +aperturaS.toFixed(2),
+      golpes: golpes.length, golpeUltimoSec: golpes.length ? +(golpes[golpes.length - 1].start / O.fps).toFixed(1) : 0,
       planoP25: q(0.25), planoMediana: q(0.5), planoP75: q(0.75), planoMax: +(durs[durs.length - 1] || 0).toFixed(2),
       ...med,
     },

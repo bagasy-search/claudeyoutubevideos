@@ -5,7 +5,7 @@
 // Los job ids se persisten: un corte NO vuelve a pagar un job.
 import fs from "node:fs";
 import path from "node:path";
-import { run, durSec } from "../lib/exec.mjs";
+import { run, durSec, durVideoSec } from "../lib/exec.mjs";
 import { assertMeasured } from "../lib/gate.mjs";
 import { withLease } from "../lib/lease.mjs";
 import { BlockedError, esSinCredito } from "../lib/budget.mjs";
@@ -206,7 +206,9 @@ export default {
         log("el reel quedó sin pista de audio (corrida anterior): lo rehago desde parte1");
         fs.copyFileSync(p1, reelMp4);
       }
-      const d = await durSec(reelMp4);
+      // El contenedor miente cuando el video termina antes que el audio: lo que hay que cubrir es el
+      // FLUJO DE VIDEO, porque es de ahí que se recorta cada ventana (ver durVideoSec en exec.mjs).
+      const d = Math.min(await durSec(reelMp4), await durVideoSec(reelMp4));
       const falta = reelSec - d;
       // Simétrico al relleno: si el reel quedó MÁS LARGO que las ventanas (pasa cuando se recompone el
       // plan y el span total baja unos segundos), el sobrante está en la COLA, después de la última
@@ -230,7 +232,7 @@ export default {
         fs.renameSync(pad, reelMp4);
       }
     }
-    const dReel = await durSec(reelMp4);
+    const dReel = Math.min(await durSec(reelMp4), await durVideoSec(reelMp4));
     assertMeasured("reelFaltanteSec", +Math.max(0, reelSec - dReel).toFixed(3), { max: TOL_CORTE_SEC, allowZero: true, log });
     assertMeasured("reelDesvioSec", +Math.abs(dReel - reelSec).toFixed(2), { max: 1.5, allowZero: true, log });
 
