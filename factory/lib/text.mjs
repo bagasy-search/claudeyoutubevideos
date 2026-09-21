@@ -169,6 +169,15 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
     plan.push({ name: x.n, i: m.i, sec: secDe(m.i), dice: m.texto, tipo: "imagen", muestra: x.m, encuadre: x.e, motor: x.c ? "gpt" : "gptsin", lugar: x.l, prompt: prompt(x), motion: x.mo, persona: !!x.c, gente: !!x.g, ...(x.q ? { quieto: true } : {}), ...extra });
   }
   plan.sort((a, b) => a.i - b.i || a.name.localeCompare(b.name));
+  // ⛔ `st` (consulta de metraje real) sólo lo consume 45_stock, y esa fase tiene
+  //   `applies: style.montaje === "premium"`. En vlog-crudo las marcas pasaban todas las validaciones,
+  //   viajaban al plan y NO HACÍAN NADA: un no-op silencioso. Medido en tdcfreno, que dirigió 27 planos
+  //   con `st` y entregó con 0 % de metraje real creyendo que iban a bajarse. Si la fase no aplica, se
+  //   dice acá y no después.
+  if ((style.montaje || "vlog-crudo") !== "premium") {
+    const conSt = tramos.filter((x) => x.st).map((x) => x.n);
+    if (conSt.length) errores.push(`${conSt.length} planos con "st" (${conSt.slice(0, 5).join(", ")}${conSt.length > 5 ? "…" : ""}): el montaje "${style.montaje || "vlog-crudo"}" no corre 45_stock, así que esas marcas no bajan nada. Sacalas o cambiá el montaje.`);
+  }
   const faltan = mom.filter((m) => !vistos.has(m.name)).map((m) => m.name);
   // ⛔⛔ DOS FUENTES DE VERDAD PARA LA MISMA DURACIÓN (medido en tdcfreno, 21-sep-2026).
   //   Esta compuerta filtraba por `m.dur`, que es el ESTIMADO por cps del guion, mientras que

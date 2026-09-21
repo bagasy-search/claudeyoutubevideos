@@ -162,3 +162,11 @@ test("plano corto de verdad: no se pide segundo plano", async () => {
   const r = compose({ mom, tramos: [{ n: "p041", t: "imagen", s: "una mesa", e: "medium", l: "taller_a", mo: "algo simple" }], style, secs: [] });
   assert.deepEqual(r.sinX, []);
 });
+
+test("TRAMPA `st` en un montaje sin 45_stock: se avisa en vez de ser un no-op silencioso", async () => {
+  const { compose } = await import("../lib/text.mjs");
+  const style = { montaje: "vlog-crudo", presentador: "un hombre", presentadorToken: "X", formula: "f", vintage: "v", vlog: { colaFotoS: 2.5 }, lugares: { taller_a: "en el taller" } };
+  const mom = [{ i: 0, name: "p001", start: 0, end: 4, dur: 4, texto: "algo" }];
+  const r = compose({ mom, tramos: [{ n: "p001", t: "imagen", s: "una mesa", e: "medium", l: "taller_a", mo: "simple", st: "old chain close up" }], style, secs: [] });
+  assert.match(r.errores.join(" "), /no corre 45_stock/);
+});
