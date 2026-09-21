@@ -175,5 +175,18 @@
     "text": "It was disarmed by your own key, by the relay, at the moment the door opened. The alarm did exactly what it was supposed to do — it recognized the owner. That's not an alarm failure. That's an alarm doing its job for the wrong person. The third one: I park in the garage. Good. That's real. That's a genuine layer and I'm glad you have it."
    }
   ]
+ },
+ "claudio_definitiva": {
+  "language": "es",
+  "refs": [
+   {
+    "wav": "fish_refs/claudio_s4_a.wav",
+    "text": "Mira, hay algo que casi nadie revisa antes de empezar a cambiar piezas y lo peor es que muchas veces el problema está ahí, frente a tus ojos. Me pasó durante años, escuchaba un ruido extraño, asumía que era algo grave y terminaba desmontando medio coche."
+   },
+   {
+    "wav": "fish_refs/claudio_s4_b.wav",
+    "text": "¿Ves esta conexión de aquí? Si tiene apenas un poco de juego, puede provocar vibraciones, fallos e incluso hacerte pensar que el motor está por romperse. Y no, no necesitas una herramienta especial. Sólo paciencia y mirar bien. Parece una tontería, pero te sorprendería saber cuánta gente gasta cientos de dólares por no revisar esto primero."
+   }
+  ]
  }
 }

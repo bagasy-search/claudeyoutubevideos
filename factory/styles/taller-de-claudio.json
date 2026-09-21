@@ -44,7 +44,9 @@
     "ferreteria": "at the counter of a small neighbourhood hardware store, in the background wooden drawers of screws, hanging coils of hose and rope, copper pipe fittings on a pegboard, boxes of nails and a paint tin display",
     "cocina": "in a modest home kitchen, in the background a gas stove with an old aluminium pot, white wall tiles, a dish rack with plates, a kettle, a jar of wooden spoons on the counter and a checkered cloth on the table",
     "patio": "in a small backyard patio, worn floor tiles, in the background a brick wall, a clothesline with laundry, a red plastic bucket under a tap, a coiled green garden hose and potted plants",
-    "living": "in a modest living room, in the background a worn brown sofa with a cushion, a low tv stand with the tv switched off, a thin rug, a window with curtains and a plant in a pot"
+    "living": "in a modest living room, in the background a worn brown sofa with a cushion, a low tv stand with the tv switched off, a thin rug, a window with curtains and a plant in a pot",
+    "jardin_fondo": "in the back garden of a suburban house, patchy grass and bare earth, in the background a tall ash tree with thick branches, a privet hedge along a brick wall, a wooden sawhorse, a pile of cut branches and a green wheelbarrow",
+    "banco_morsa": "at a heavy steel workbench with a big black bench vise bolted to the corner, in the background a welding mask hanging on a nail, a bench grinder, a sooty steel offcut bin, a fire extinguisher on the wall and metal filings on the bench top"
   },
   "cta": {
     "regex": "^Si esto te sirvió, suscribite",
