@@ -131,7 +131,7 @@ test("golpes: el gráfico sale en la capa over, atado a su plano", () => {
 
 test("TRAMPA golpe ilegible: más palabras de las que se leen en pantalla", () => {
   const r = conGolpes({ p002: { kind: "frase", props: { texto: "una frase muchisimo mas larga de lo que se puede leer en dos segundos" } } });
-  assert.match(r.problemas.join(" "), /15 palabras \(máx 8\)/);
+  assert.match(r.problemas.join(" "), /14 palabras \(máx 8\)/);
   assert.equal(r.cues.filter((c) => c.kind === "golpe").length, 0, "el golpe ilegible NO se emite");
 });
 
