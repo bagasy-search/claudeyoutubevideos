@@ -64,5 +64,9 @@
   "avatarMinPct": 4,
   "avatar": {
     "lipLeadSec": 0.1
+  },
+  "stock": {
+    "fuente": "ytcc",
+    "nota": "YouTube CC: en taller Pexels no tiene material y trae off-topic"
   }
 }

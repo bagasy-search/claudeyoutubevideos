@@ -13,5 +13,9 @@
   },
   "avatar": {
     "face": "public/ref/taller_claudio_full.png"
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCq1MjR_1TiXC6JLe_WokDvA",
+    "cardId": "tdc1789925792426-tdcfreno"
   }
 }

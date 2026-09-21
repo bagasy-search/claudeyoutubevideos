@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-21T06:24:15.509Z",
+ "status": "done",
+ "inputsHash": "dd3a99ed9f6c8c48",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/tdcfreno/tdcfreno.mp4?v=2",
+  "version": 2,
+  "bytes": 250748758,
+  "durSec": 504.33,
+  "saltosPts": 0,
+  "tramosNegros": 0,
+  "hoja": "D:\\rtmp\\factory\\tdcfreno\\audit\\hoja.jpg",
+  "bagasy": "entregado (--no-youtube)"
+ },
+ "ms": 224831
+}

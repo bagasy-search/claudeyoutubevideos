@@ -69,7 +69,10 @@ async function bajar(link, destino, { fps = 30 } = {}) {
 export default {
   id: "45_stock",
   deps: ["40_images"],
-  applies: ({ style }) => (style.montaje || "vlog-crudo") === "premium",
+  // ⛔ ANTES: sólo `premium`. En vlog-crudo la fase NO corría y las marcas `st` del director eran un
+  //    no-op silencioso: tdcfreno dirigió 27 planos con `st` y entregó con 0 % de metraje real.
+  //    Ahora corre en cualquier montaje que declare fuente en el estilo (`style.stock.fuente`).
+  applies: ({ style }) => (style.montaje || "vlog-crudo") === "premium" || !!style.stock?.fuente,
   inputs: ({ P, style }) => [P.plan, P.brollDir, style.stock || null],
   verify: ({ P }) => {
     const plan = JSON.parse(fs.readFileSync(P.plan, "utf8")).filter((p) => p.st);
@@ -91,6 +94,25 @@ export default {
       min: 1, total: plan.length, allowZero: !plan.some((p) => p.st), log,
     });
     if (!pedidos.length) return { stockPedidos: 0, stockNuevos: 0, stockEnDisco: 0 };
+
+    // FUENTE: `ytcc` = YouTube con licencia Creative Commons. En taller/metal Pexels no tiene nada
+    // (medido: 33 % útil y el resto off-topic, que es PEOR que la imagen IA), mientras que YouTube CC
+    // tiene el material exacto del tema y es gratis. Se baja UN tramo largo por consulta y se cortan
+    // todos sus planos de ahí: bajar clip por clip tarda ~3 min cada uno por estrangulamiento.
+    if ((style.stock?.fuente || "pexels") === "ytcc") {
+      fs.mkdirSync(P.brollDir, { recursive: true });
+      const lista = path.join(ROOT, "_v3", `${slug}_ytcc_lista.json`);
+      fs.writeFileSync(lista, JSON.stringify(pedidos.map((p) => ({ name: p.name, query: p.st, durSec: p.durSec || 0 })), null, 1));
+      const r = await run("node", ["scripts/ytcc_fetch.mjs", lista, P.brollDir], { cwd: ROOT, timeoutMs: 60 * 60_000, allowFail: true });
+      const bajados = Number((r.out.match(/bajados=(\d+)/) || [])[1]);
+      assertMeasured("stockYtccBajados", bajados, { min: 1, total: pedidos.length, log });
+      const cred = path.join(P.brollDir, "_ytcc_creditos.json");
+      const fuentes = fs.existsSync(cred) ? JSON.parse(fs.readFileSync(cred, "utf8")) : [];
+      assertMeasured("stockYtccFuentes", fuentes.length, { min: 1, log });
+      log(`  ⚠️ créditos CC-BY para la descripción: ${cred}`);
+      log(`  ⚠️ FALTA auditar los clips (marca de agua, subtítulos quemados, caras ajenas) antes de montar`);
+      return { stockPedidos: pedidos.length, stockNuevos: bajados, fuente: "ytcc", fuentes: fuentes.length };
+    }
 
     const keys = claves();
     assertMeasured("pexelsClaves", keys.length, { min: 1, log });
