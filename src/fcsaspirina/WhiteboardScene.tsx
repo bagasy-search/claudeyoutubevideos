@@ -5,7 +5,7 @@
 import { staticFile } from "remotion";
 
 export const SCENE_ASPIRINA_MEC = {
-  avatarSrc: staticFile("broll/fcsaspirina_av2/win-000.mp4"),
+  avatarSrc: staticFile("broll/fcsaspirina_av2/win-001.mp4"),
   muted: true,
   cameras: [
     { time: 0.0, fx: 30, fy: 18, z: 1.1 },
