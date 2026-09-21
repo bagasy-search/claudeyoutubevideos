@@ -60,5 +60,6 @@
     "glitchF": 12,
     "clip": "broll/{slug}/{slug}_apertura.mp4",
     "foto": "img/{slug}/{slug}_thumb.jpg"
-  }
+  },
+  "avatarMinPct": 4
 }

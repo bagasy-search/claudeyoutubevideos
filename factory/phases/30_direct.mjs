@@ -141,7 +141,13 @@ export default {
     if (spec.modo === "avatar") {
       const p0 = r.plan.find((p) => p.name === "p000");
       if (p0?.tipo !== "avatar") throw new Error("p000 tiene que ser avatar (apertura con el avatar hablando)");
-      assertMeasured("avatarPctMomentos", r.medido.avatarPctMomentos, { min: 10, max: 45, log });
+      // ⛔ El piso de avatar NO es universal: depende del MOLDE, no del nicho. Los moldes de
+      // CURIOSIDAD ("mezclá X y mirá") son cámara fija, manos y CERO locutor — ahí el avatar es sólo
+      // hook + CTA y da ~5 %. Con el piso clavado en 10 la compuerta OBLIGABA a meter avatares de
+      // transición que rompen justo lo que el molde promete (medido en tdccadena: 4 planos forzados).
+      // Se configura por estilo (`avatarMinPct`) o por video (`overrides.avatarMinPct`).
+      const avMin = spec.overrides?.avatarMinPct ?? style.avatarMinPct ?? 10;
+      assertMeasured("avatarPctMomentos", r.medido.avatarPctMomentos, { min: avMin, max: 45, log });
     }
     assertMeasured("rachaMaxLugar", r.medido.rachaMaxLugar, { max: Number(style.rachaMaxLugar || 8), log });
     // Regla del creador (18-sep-2026): animar TODAS las fotos se ve robotico (y agnes redibuja ~14 %).
