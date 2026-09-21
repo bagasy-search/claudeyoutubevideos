@@ -18,6 +18,7 @@ import { ROOT } from "./lib/env.mjs";
 import { State, hashInputs } from "./lib/state.mjs";
 import { slugPaths, STATE_ROOT, WORK_ROOT, insideSlug } from "./lib/paths.mjs";
 import { tomarCandado } from "./lib/candado.mjs";
+import { borrarSeguro } from "./lib/borrar.mjs";
 import { loadSpec, validateSpec } from "./lib/spec.mjs";
 import { logger, NeedsError, BlockedError } from "./lib/phase.mjs";
 import { usage, CAPACIDAD } from "./lib/lease.mjs";
@@ -182,7 +183,9 @@ function gc(apply) {
       const size = fs.statSync(b).isDirectory() ? fs.readdirSync(b).reduce((a, f) => a + fs.statSync(path.join(b, f)).size, 0) : fs.statSync(b).size;
       total += size;
       console.log(`${apply ? "borro" : "borraría"} ${(size / 1048576).toFixed(0)} MB  ${b}`);
-      if (apply) fs.rmSync(b, { recursive: true, force: true });
+      // ⛔ nunca con rmSync pelado: si algún día un borrable contiene un junction, el borrado lo
+      //    atraviesa y se lleva el destino real (ver lib/borrar.mjs).
+      if (apply) borrarSeguro(b);
     }
   }
   console.log(`${apply ? "liberados" : "liberables"}: ${(total / 1073741824).toFixed(2)} GB (sólo videos con 90_deliver done; nunca img/broll/avatar pagos)`);

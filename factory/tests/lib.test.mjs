@@ -162,3 +162,27 @@ test("candado: un segundo orquestador VIVO sobre el mismo slug es rechazado, y e
   assert.match(dijo, /huérfano/);
   fs.rmSync(path.dirname(f), { recursive: true, force: true });
 });
+
+// ── BORRADO QUE NO ATRAVIESA ENLACES ─────────────────────────────────────────────────────────────
+test("borrarSeguro: se NIEGA si hay un junction adentro, y el destino real sobrevive", async () => {
+  const { borrarSeguro, enlacesDentro } = await import("../lib/borrar.mjs");
+  const fs = await import("node:fs"); const os = await import("node:os"); const path = await import("node:path");
+  const base = fs.mkdtempSync(path.join(os.tmpdir(), "junc-"));
+  const real = path.join(base, "tesoro"); fs.mkdirSync(real);
+  fs.writeFileSync(path.join(real, "claves.env"), "OPENAI_API_KEY=no-me-borres");
+  const wt = path.join(base, "wt"); fs.mkdirSync(wt);
+  let hayJunction = true;
+  try { fs.symlinkSync(real, path.join(wt, "public"), "junction"); } catch { hayJunction = false; }
+  if (hayJunction) {
+    assert.equal(enlacesDentro(wt).length, 1);
+    let dijo = "";
+    assert.equal(borrarSeguro(wt, { log: (m) => { dijo += m; } }), false, "no puede borrar un árbol con enlaces");
+    assert.match(dijo, /ATRAVIESA/);
+    assert.ok(fs.existsSync(path.join(real, "claves.env")), "el destino real tiene que sobrevivir");
+    fs.rmdirSync(path.join(wt, "public"));   // así se desarma: rmdir sobre el enlace
+  }
+  // sin enlaces, borra normal
+  assert.equal(borrarSeguro(wt, { log: () => {} }), true);
+  assert.ok(!fs.existsSync(wt));
+  fs.rmSync(base, { recursive: true, force: true });
+});
