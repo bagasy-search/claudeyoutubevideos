@@ -25,7 +25,9 @@ const AVATAR_F = Math.round(plan.avatarEnd * FPS);
 const OVERLAY = new Set(cfg.OVERLAY);
 // ⛔⛔ MODO VENTANAS: el avatar NO es una capa continua. Fuera de las ventanas el fondo es NEGRO,
 //    asi que cada ventana se monta como un plano mas de la capa base con `RayAvatarWin` (media
-//    panel 960x540 = upscale 1,154x; `RayAvatar` a pantalla completa es 2,31x y el creador lo rechazo).
+//    a PANTALLA COMPLETA — regla dura del creador: o el avatar full, o la foto/video full; el PiP
+//    en panel se ve amateur y lo rechazo a la primera. El estiramiento de 2,31x se combate en el
+//    CONFORMADO del reel (lanczos + unsharp 0,95) y con una referencia nitida, no achicando la cara).
 const MODO = cfg.AVATAR_MODO || 'fondo';
 // ⛔ LA CONVENCION LA FIJA `scripts/rksafe_avatar.mjs`, que es quien las escribe:
 //    `public/broll/<slug>/av_wNNN.mp4` (960x540, 30/1 CFR). Si el build las busca en otro lado,
@@ -245,7 +247,7 @@ fs.writeFileSync(`src/index_${SLUG}.tsx`, entrySrc);
 console.log('═'.repeat(66));
 console.log('CUES     : ' + cues.length + '  ·  OVERLAYS: ' + overlays.length + '  ·  clips medidos con ffprobe: ' + nClip +
   '  ·  que se congelarían: ' + clipsCortos + (clipsCortos ? ' ⛔' : ' ✓'));
-if (MODO === 'ventanas') console.log('VENTANAS DE AVATAR: ' + nAv + ' planos RayAvatarWin (panel 960x540 = upscale 1,154x)');
+if (MODO === 'ventanas') console.log('VENTANAS DE AVATAR: ' + nAv + ' planos RayAvatarWin a PANTALLA COMPLETA (el reel se conforma a 1920x1080 con lanczos + unsharp)');
 console.log('CÁMARA DE VIGILANCIA: ' + nCam + ' planos ' + (nCam >= 8 ? '✓' : '⛔ el hook se va a ver como una foto quieta'));
 console.log('COMPONENTES importados: ' + compsNecesarios.length + ' → ' + compsNecesarios.join(' · '));
 console.log('TOTAL_FRAMES: ' + TOTAL_F + ' (' + plan.total.toFixed(2) + ' s)  ·  AVATAR_FRAMES: ' + AVATAR_F);
