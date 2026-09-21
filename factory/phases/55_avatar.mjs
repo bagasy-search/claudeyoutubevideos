@@ -87,7 +87,9 @@ export default {
   id: "55_avatar",
   deps: ["20_asr", "30_direct"],   // arranca apenas hay tiempos reales + qué momentos son avatar (en paralelo con imágenes/agnes)
   applies: ({ spec }) => spec.modo === "avatar",
-  inputs: ({ P, spec, style }) => [P.mom, P.plan, P.wav, spec.avatar, style.ventanas],
+  // `lipLeadSec` entra en el hash: si se cambia la compensación, las ventanas se vuelven a cortar
+  // solas en vez de quedar "frescas" con el corrimiento viejo.
+  inputs: ({ P, spec, style }) => [P.mom, P.plan, P.wav, spec.avatar, style.ventanas, style.avatar?.lipLeadSec ?? 0.25],
   async run({ slug, spec, style, P, log }) {
     const A = P.avatarDir;
     fs.mkdirSync(A, { recursive: true });
@@ -246,15 +248,33 @@ export default {
     // 4. un clip por ventana, 1920x1080 30/1, sin audio; cada uno dura lo que su ventana (±2 cuadros)
     fs.mkdirSync(P.brollDir, { recursive: true });
     const malos = [];
+    // ⛔⛔ EL ADELANTO DE LABIOS DE INFINITETALK (0,25 s CONSTANTE, medido en mdgutter tras 3 quejas
+    //    del creador, y otra vez acá en tdccadena). NO es deriva progresiva: es un corrimiento fijo,
+    //    y por eso se cura con UN corrimiento, no persiguiendo drift.
+    //    ⚠️ La compuerta de sync de arriba NO lo ve y nunca lo va a ver: mide el AUDIO del reel contra
+    //    su wav (correlación 1,00, desfase 0 ms) — los labios no entran en esa cuenta. Verde perfecto
+    //    con los labios adelantados un cuarto de segundo.
+    //    La cura, sin volver a pagar RunPod: cortar cada ventana `lipLeadSec` ANTES de su punto del
+    //    reel, lo que RETRASA el video contra el audio. Si la ventana empieza tan al principio que no
+    //    hay material previo, se clona el primer cuadro esa fracción (`tpad`).
+    const LIP = style.avatar?.lipLeadSec ?? 0.25;
+    let clonados = 0;
     await pool(W, 3, async (w) => {
       const d = w.end - w.start;
       const dst = path.join(P.brollDir, `av_w${String(w.k).padStart(3, "0")}.mp4`);
-      await run("ffmpeg", ["-v", "error", "-y", "-ss", w.reel_off.toFixed(3), "-i", reelMp4, "-t", d.toFixed(3), "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,setsar=1",
+      const off = w.reel_off - LIP;
+      const falta = off < 0 ? +(-off).toFixed(3) : 0;
+      if (falta) clonados++;
+      const vf = `scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,setsar=1${falta ? `,tpad=start_duration=${falta}:start_mode=clone` : ""}`;
+      await run("ffmpeg", ["-v", "error", "-y", "-ss", Math.max(0, off).toFixed(3), "-i", reelMp4, "-t", (d - falta).toFixed(3), "-vf", vf,
         "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", dst], { timeoutMs: 600_000 });
       const real = await durSec(dst);
       if (Math.abs(real - d) > 2 / 30 + 0.02) malos.push(`w${w.k}: ${real.toFixed(3)} vs ${d.toFixed(3)}`);
     });
     assertMeasured("ventanasMalCortadas", malos.length, { max: 0, allowZero: true, log });
+    // que quede en el estado CUÁNTO se corrió: si el creador vuelve a reportar desincronía, el número
+    // está a la vista en vez de tener que deducirlo del código.
+    assertMeasured("lipLeadCompensadoMs", Math.round(LIP * 1000), { min: 1, log });
     // El costo sale del SELLO de jobs.json, no del acumulador de esta corrida: al reanudar (reel ya
     // en disco, o parte1 reusada) no se llama a RunPod y `costo` queda en 0, con lo que el estado de
     // la fase decia que el avatar habia salido gratis y cualquier suma aguas abajo lo perdia.
@@ -264,6 +284,6 @@ export default {
       const suma = Object.values(js).reduce((a, j) => a + (Number(j?.costo) || 0), 0);
       if (suma > costoSellado) costoSellado = +suma.toFixed(4);
     } catch { /* sin sello: queda el acumulador */ }
-    return { ventanas: W.length, visiblesSec: +reelSec.toFixed(2), visiblesPct: +((100 * reelSec) / TOT).toFixed(1), jobs, costoUsd: costoSellado, syncCorr: corr, syncLagMs: Math.round(lag * 1000) };
+    return { ventanas: W.length, visiblesSec: +reelSec.toFixed(2), visiblesPct: +((100 * reelSec) / TOT).toFixed(1), jobs, costoUsd: costoSellado, syncCorr: corr, syncLagMs: Math.round(lag * 1000), lipLeadMs: Math.round(LIP * 1000), ventanasConClon: clonados };
   },
 };
