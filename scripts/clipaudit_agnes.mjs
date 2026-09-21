@@ -20,6 +20,12 @@
 // ⚠️ Dos falsos positivos que ya costaron re-generaciones y están corregidos en los prompts:
 //   · plano de MANOS sin cara -> el modelo puntuaba identidad 0-6 "porque no se ve la cara".
 //     Ahora: si no hay cara, identity = null y no cuenta.
+//   · ⛔⛔ VARIANTE MÁS CARA, medida en tdcfreno (21-sep-2026): si en el cuadro no hay NINGUNA persona
+//     (b-roll de objetos, que es el 100 % del animado cuando todo plano con presentador va `q:1`),
+//     el modelo puntuaba manos y anatomía 0 "porque no hay nadie a quien juzgar" y encima ponía
+//     broken:true → REDO en 27 de 33 clips SANOS (82 %). Un rojo sin mirar es tan malo como un verde
+//     sin mirar. Ahora el contrato pide `person_visible` y, sin persona, identidad/manos/anatomía/piel
+//     van en null y sólo se juzgan los OBJETOS.
 //   · etiquetas BORROSAS de fondo -> las marcaba como "texto inventado". Ahora solo cuenta el
 //     texto/logo LEGIBLE (que es el que de verdad arruina un plano).
 import fs from "node:fs";
@@ -48,14 +54,20 @@ const uri = (f) => `data:${/\.png$/i.test(f) ? "image/png" : "image/jpeg"};base6
 const P_FRAME = `Image 1 is a REFERENCE photo of a person. Image 2 is one frame from a short video clip.
 Judge image 2 as footage, and compare only the PERSON against image 1.
 Reply ONLY JSON:
-{"face_visible":true|false,"identity":0-10|null,"hands":0-10,"anatomy":0-10,"objects":0-10,"skin_texture":0-10,"broken":true|false,"why":"<short>"}
+{"person_visible":true|false,"face_visible":true|false,"identity":0-10|null,"hands":0-10|null,"anatomy":0-10|null,"objects":0-10,"skin_texture":0-10|null,"broken":true|false,"why":"<short>"}
+person_visible = there is a human being (or part of one: hands, arms, a torso) anywhere in the frame.
+⛔ MANY of these clips are objects only, with NO person at all, and that is CORRECT footage, not a defect.
+If person_visible is false: set identity, hands, anatomy and skin_texture to null, judge ONLY objects, and
+broken must be false unless the image itself is corrupted. Never mark a clip broken or score it 0 just
+because you cannot find a person to judge.
 face_visible = you can actually see enough of his face to judge who he is.
 identity = ONLY if face_visible is true (10 = clearly the same man, same face, hairline, grey beard, age). If the face is not visible (close-up of hands, back turned, head out of frame) set identity to null. Never guess identity from clothing.
 hands 10 = normal hands, right number of fingers, holding things plausibly; 0 = melted, fused, extra or missing fingers.
 anatomy 10 = normal body; 0 = duplicated or impossible limbs, twisted torso, floating parts.
 objects 10 = objects look solid and consistent; 0 = an object melts, bends impossibly, or merges with his hands.
 skin_texture 10 = real unretouched skin with pores; 0 = plastic or CGI.
-broken = the frame is corrupted, smeared, or the subject is an unrecognisable mess.`;
+broken = the frame is corrupted, smeared, or the subject is an unrecognisable mess. An empty scene with
+no person in it is NOT broken.`;
 
 const P_MOTION = `These two images are frames from the SAME continuous shot, about one and a half seconds apart. Image 1 is earlier, image 2 is later. There is no cut between them.
 Ask yourself whether the change between them is physically possible in that time, for a real person filmed in one take.
