@@ -301,9 +301,13 @@ export default {
       const med = await run("node", ["scripts/lipsync_medir.mjs", reelMp4, "--auto"], { cwd: ROOT, timeoutMs: 10 * 60_000, allowFail: true });
       lipR = Number((med.out.match(/correlación máx ([\d.]+)/) || [])[1]);
       const lag = Number((med.out.match(/DESFASE DE LABIOS: (-?[\d.]+)/) || [])[1]);
-      if (Number.isFinite(lipR) && lipR >= 0.25 && Number.isFinite(lag) && Math.abs(lag) <= 0.4) {
+      // ⛔ TOPE de lo que la medición puede mover: con correlaciones de 0,25-0,37 el estimador tiene
+      //    ruido de ±1-3 cuadros, así que se acepta sólo dentro de ±0,20 s. Más que eso no es una
+      //    medición, es ruido — y una compensación grande y equivocada es justo lo que el creador ya
+      //    vio en pantalla (0,25 aplicados sobre un adelanto real de 0,10).
+      if (Number.isFinite(lipR) && lipR >= 0.25 && Number.isFinite(lag) && Math.abs(lag) <= 0.20) {
         LIP = +(-lag).toFixed(3); lipFuente = `medido (r ${lipR.toFixed(2)})`;
-      } else log(`  lipsync: correlación ${Number.isFinite(lipR) ? lipR.toFixed(2) : "?"} insuficiente → uso el default del estilo`);
+      } else log(`  lipsync: correlación ${Number.isFinite(lipR) ? lipR.toFixed(2) : "?"} o desfase ${Number.isFinite(lag) ? lag : "?"} fuera de rango → uso el default del estilo (${(LIP * 1000).toFixed(0)} ms)`);
     } catch (e) { log(`  lipsync: no se pudo medir (${e.message.slice(0, 60)}) → default del estilo`); }
     log(`  compensación de labios: ${(LIP * 1000).toFixed(0)} ms (${lipFuente})`);
     // ⛔ Las ventanas de un reparto ANTERIOR quedaban tiradas en `public/broll/<slug>/`: al bajar de
