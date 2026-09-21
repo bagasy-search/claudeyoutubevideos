@@ -152,10 +152,10 @@ const Polaroid: React.FC<{ img: string; cap: string; delay: number; rot: number;
 };
 export const Senales: React.FC<{ kicker: string; items: { t: string; img: string }[]; h: H; durF: number }> = ({ kicker, items, h, durF }) => {
   const { f, s } = useF();
-  const at = [s(h.hit1 ?? 0.3), s(h.hit2 ?? 3), s(h.hit3 ?? 6)];
+  const at = [Math.min(s(h.hit1 ?? 0.3), 12), s(h.hit2 ?? 3), s(h.hit3 ?? 6)];
   return (
     <AbsoluteFill>
-      <Bed dim={0.15} />
+      <Bed img={items[0]?.img} dim={0.55} blur={14} />
       <div style={{ position: "absolute", top: 80, width: "100%" }}><Kick text={kicker} center size={42} color={T.paper} /></div>
       <Center style={{ transform: cam(f, durF, 0.04), top: 50 }}>
         <div style={{ display: "flex", gap: 40 }}>
