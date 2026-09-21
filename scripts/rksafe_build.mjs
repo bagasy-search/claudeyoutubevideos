@@ -247,7 +247,7 @@ fs.writeFileSync(`src/index_${SLUG}.tsx`, entrySrc);
 console.log('═'.repeat(66));
 console.log('CUES     : ' + cues.length + '  ·  OVERLAYS: ' + overlays.length + '  ·  clips medidos con ffprobe: ' + nClip +
   '  ·  que se congelarían: ' + clipsCortos + (clipsCortos ? ' ⛔' : ' ✓'));
-if (MODO === 'ventanas') console.log('X');
+if (MODO === 'ventanas') console.log('VENTANAS DE AVATAR: ' + nAv + ' planos RayAvatarWin a PANTALLA COMPLETA (el reel se conforma a 1920x1080 con lanczos + unsharp)');
 console.log('CÁMARA DE VIGILANCIA: ' + nCam + ' planos ' + (nCam >= 8 ? '✓' : '⛔ el hook se va a ver como una foto quieta'));
 console.log('COMPONENTES importados: ' + compsNecesarios.length + ' → ' + compsNecesarios.join(' · '));
 console.log('TOTAL_FRAMES: ' + TOTAL_F + ' (' + plan.total.toFixed(2) + ' s)  ·  AVATAR_FRAMES: ' + AVATAR_F);

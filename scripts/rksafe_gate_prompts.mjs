@@ -30,9 +30,16 @@ const objsDe = (s) => {
   const i1 = m ? s.indexOf(m[0]) + m[0].length : -1;
   const i2 = s.indexOf(':');
   const start = Math.max(i1, i2);
-  if (start < 0) return -1;
-  const cola = s.slice(start);
-  return (cola.match(/,\s*(a|an|two|three|four|five|six|thirty|the)\s+[a-z]/gi) || []).length + 1;
+  // ⛔ TERCERA FORMA, y el medidor daba 0 sobre 215 prompts SANOS (rkspots): la FÓRMULA DEFINITIVA
+  //    del pipeline ("candid photo taken on a modern smartphone, <escena>, bright natural daylight,
+  //    …") enumera el entorno con COMAS a lo largo del cuerpo, sin cláusula introductoria y sin dos
+  //    puntos. Un prompt así no es peor: nombra los mismos objetos concretos. Se cuenta sobre el
+  //    CUERPO, sacando la cola fija de la fórmula (que aporta comas propias y no son objetos).
+  const cola = start >= 0
+    ? s.slice(start)
+    : s.replace(/,\s*bright natural daylight[\s\S]*$/i, '').replace(/^[^,]*,/, '');
+  if (start < 0 && cola.length < 40) return -1;
+  return (cola.match(/,\s*(a|an|two|three|four|five|six|nine|ten|eleven|thirty|the)\s+[a-z]/gi) || []).length + 1;
 };
 
 const fallas = [];
