@@ -72,23 +72,44 @@ for (const [q, planos] of porQuery) {
   console.log(`· "${q}" → ${planos.length} plano(s)`);
   const cands = await buscar(q);
   if (!cands.length) { console.log("  sin resultados CC"); planos.forEach((p) => fallidos.push(p.name)); continue; }
-  let fuente = null, elegido = null;
-  for (const c of cands) { const f = bajarFuente(c.id); if (f && dur(f) > 30) { fuente = f; elegido = c; break; } }
-  if (!fuente) { planos.forEach((p) => fallidos.push(p.name)); continue; }
-  creditos.push({ query: q, id: elegido.id, titulo: elegido.titulo, canal: elegido.canal, url: `https://youtu.be/${elegido.id}`, licencia: "CC BY" });
-  const total = dur(fuente);
-  let t = cursor.get(fuente) ?? 3;
+  // ⛔ UNA FUENTE NO SIEMPRE ALCANZA (medido en tdcdesmal: una de 39 s para 80 s pedidos, y ahí se
+  //    perdían 5 de 9 planos). Se baja de a una y se sigue bajando MIENTRAS falte material, hasta 3
+  //    fuentes por consulta. Más variedad de fuentes además evita que media sección salga del mismo
+  //    plano fijo, que se lee como repetición.
+  const necesita = planos.reduce((a, p) => a + Math.max(MIN_SEG, p.durSec || MIN_SEG) + 6, 3);
+  const fuentes = [];
+  let disponible = 0;
+  for (const c of cands) {
+    if (disponible >= necesita || fuentes.length >= 3) break;
+    const f = bajarFuente(c.id);
+    if (!f) continue;
+    const d = dur(f);
+    if (d < 20) { console.log(`  fuente ${c.id} dura ${d.toFixed(0)} s: muy corta, sigo`); continue; }
+    fuentes.push({ f, c, total: d, t: 3 });
+    disponible += d - 6;
+    creditos.push({ query: q, id: c.id, titulo: c.titulo, canal: c.canal, url: `https://youtu.be/${c.id}`, licencia: "CC BY" });
+  }
+  if (!fuentes.length) { planos.forEach((p) => fallidos.push(p.name)); continue; }
+  console.log(`  ${fuentes.length} fuente(s) · ${disponible.toFixed(0)} s disponibles para ${necesita.toFixed(0)} s pedidos`);
+  let i = 0;
   for (const p of planos) {
     const d = Math.max(MIN_SEG, p.durSec || MIN_SEG);
-    if (t + d + 2 > total) { fallidos.push(p.name); continue; }
-    const dst = path.join(OUT, `${p.name}.mp4`);
-    execFileSync("ffmpeg", ["-v", "error", "-y", "-ss", t.toFixed(2), "-i", fuente, "-t", d.toFixed(2),
-      "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,setsar=1",
-      "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", dst], { timeout: 300_000 });
-    hechos.push({ name: p.name, fuente: elegido.id, desde: +t.toFixed(2), dur: +d.toFixed(2) });
-    t += d + 6;   // salto entre planos: dos cortes seguidos del mismo tramo se leen como repetición
+    // busca la próxima fuente con lugar, rotando: reparte los planos entre fuentes en vez de agotar una
+    let puesto = false;
+    for (let k = 0; k < fuentes.length && !puesto; k++) {
+      const F = fuentes[(i + k) % fuentes.length];
+      if (F.t + d + 2 > F.total) continue;
+      const dst = path.join(OUT, `${p.name}.mp4`);
+      execFileSync("ffmpeg", ["-v", "error", "-y", "-ss", F.t.toFixed(2), "-i", F.f, "-t", d.toFixed(2),
+        "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,setsar=1",
+        "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", dst], { timeout: 300_000 });
+      hechos.push({ name: p.name, fuente: F.c.id, desde: +F.t.toFixed(2), dur: +d.toFixed(2) });
+      F.t += d + 6;   // dos cortes pegados del mismo tramo se leen como repetición
+      i = (i + k + 1) % fuentes.length;
+      puesto = true;
+    }
+    if (!puesto) fallidos.push(p.name);
   }
-  cursor.set(fuente, t);
 }
 fs.writeFileSync(path.join(OUT, "_ytcc_creditos.json"), JSON.stringify(creditos, null, 1));
 fs.writeFileSync(path.join(OUT, "_ytcc_hechos.json"), JSON.stringify(hechos, null, 1));
