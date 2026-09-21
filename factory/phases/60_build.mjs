@@ -287,7 +287,7 @@ export default {
       const ap = conApertura({ cues: r.cues, ventanas, total: r.total, fps: P.fps || 30, ap: { ...apCfg, src: hayClip ? clipRel : null, foto: hayFoto ? fotoRel : null, frames: apFrames } });
       cuesFinal = ap.cues; ventanas = ap.ventanas; totalFinal = ap.total; audioDesdeF = ap.audioDesdeF;
       r.cues = cuesFinal; r.total = totalFinal;
-      log(`apertura con miniatura: ${ap.medido.aperturaSec} s de miniatura + glitch de ${ap.medido.glitchF} cuadros; audio y ventanas corridos ${ap.medido.holdF} cuadros`);
+      log(`apertura con miniatura: ${ap.medido.miniaturaSec} s de miniatura + glitch de ${ap.medido.glitchF} cuadros; audio y ventanas corridos ${ap.medido.holdF} cuadros`);
       for (const c of cuesFinal) if (c.foto) { /* la foto de respaldo también viaja al farm */ }
     }
     const out = emitVlog({ slug, comp: P.comp, total: totalFinal, cues: cuesFinal, ventanas, placa: spec.modo === "avatar" ? placaRel : null, fondo: style.fondo || "#0A0B08", ambiente: spec.ambiente || null, premium, audioDesdeF });

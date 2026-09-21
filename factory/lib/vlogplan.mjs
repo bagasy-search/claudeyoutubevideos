@@ -223,7 +223,10 @@ export function planVlog({ mom, plan, ventanasSec, wavSec, assetOf, framesOf, fi
     medido: {
       momentos: mom.length, fusionados: mm.length, cuesBase: base.length,
       clips: base.filter((c) => c.tipo === "clip").length, fotos: base.filter((c) => c.tipo === "foto").length,
-      jcuts: nJ, lcuts: nL, huecosCerrados: cerrados, aperturaSec: +aperturaS.toFixed(2),
+      jcuts: nJ, lcuts: nL, huecosCerrados: cerrados,
+      // `aperturaSec` = el tramo inicial de avatar hablando SIN b-roll encima. NO es la apertura con la
+      // miniatura (ésa la informa `apertura.mjs` como `miniaturaSec`).
+      aperturaSec: +aperturaS.toFixed(2),
       golpes: golpes.length, golpeUltimoSec: golpes.length ? +(golpes[golpes.length - 1].start / O.fps).toFixed(1) : 0,
       planoP25: q(0.25), planoMediana: q(0.5), planoP75: q(0.75), planoMax: +(durs[durs.length - 1] || 0).toFixed(2),
       ...med,

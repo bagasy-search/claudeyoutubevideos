@@ -289,6 +289,14 @@ export default {
     //    reel, lo que RETRASA el video contra el audio. Si la ventana empieza tan al principio que no
     //    hay material previo, se clona el primer cuadro esa fracción (`tpad`).
     const LIP = style.avatar?.lipLeadSec ?? 0.25;
+    // ⛔ Las ventanas de un reparto ANTERIOR quedaban tiradas en `public/broll/<slug>/`: al bajar de
+    //    4 ventanas a 2, `av_w002.mp4` y `av_w003.mp4` sobrevivieron con la boca de otro tramo. Nadie
+    //    las pisa (el cortador sólo escribe las que existen HOY) y viajan igual al farm. Se barren
+    //    todas las que no estén en el reparto de ahora, que es justo lo que las hace basura.
+    const vivas = new Set(W.map((w) => `av_w${String(w.k).padStart(3, "0")}.mp4`));
+    for (const f of fs.existsSync(P.brollDir) ? fs.readdirSync(P.brollDir) : []) {
+      if (/^av_w\d+\.mp4$/.test(f) && !vivas.has(f)) { fs.rmSync(path.join(P.brollDir, f), { force: true }); log(`  barro ${f}: es de un reparto de ventanas anterior`); }
+    }
     let clonados = 0;
     await pool(W, 3, async (w) => {
       const d = w.end - w.start;

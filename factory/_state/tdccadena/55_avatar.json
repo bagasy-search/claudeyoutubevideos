@@ -1,15 +1,18 @@
 {
  "fase": "55_avatar",
- "ts": "2026-09-21T03:25:31.646Z",
- "status": "failed",
+ "ts": "2026-09-21T03:37:59.802Z",
+ "status": "done",
  "inputsHash": "e7bc427aeb1b20bc",
- "error": "ventanasMalCortadas: 1 fuera de rango (max 0)",
- "detalle": {
-  "nombre": "ventanasMalCortadas",
-  "medido": 1,
-  "max": 0,
-  "unidad": "",
-  "ok": false
+ "medido": {
+  "ventanas": 2,
+  "visiblesSec": 33.55,
+  "visiblesPct": 6.8,
+  "jobs": 0,
+  "costoUsd": 0.25,
+  "syncCorr": 1,
+  "syncLagMs": 0,
+  "lipLeadMs": 250,
+  "ventanasConClon": 1
  },
- "ms": 14110
+ "ms": 36118
 }

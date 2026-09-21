@@ -31,6 +31,10 @@ export function conApertura({ cues, ventanas, total, fps = 30, ap }) {
     ventanas: ventanas.map((w) => ({ ...w, from: w.from + holdF })),
     total: total + holdF,
     audioDesdeF: holdF,
-    medido: { holdF, glitchF, aperturaSec: +(holdF / fps).toFixed(2) },
+    // ⛔ NO se llama `aperturaSec`: ese nombre YA lo usa el medido de vlogplan para otra cosa — el
+    //    tramo inicial que tiene que ser avatar hablando sin b-roll encima (`max(aperturaMinS, fin del
+    //    primer momento)`). Dos cosas distintas con el mismo nombre en la misma tabla es cómo se leen
+    //    mal los números de una entrega.
+    medido: { holdF, glitchF, miniaturaSec: +(holdF / fps).toFixed(2) },
   };
 }
