@@ -170,7 +170,21 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
   }
   plan.sort((a, b) => a.i - b.i || a.name.localeCompare(b.name));
   const faltan = mom.filter((m) => !vistos.has(m.name)).map((m) => m.name);
-  const sinX = mom.filter((m) => m.dur > 7 && !vistos.has(m.name + "x") && plan.find((p) => p.name === m.name && p.tipo !== "avatar")).map((m) => m.name);
+  // ⛔⛔ DOS FUENTES DE VERDAD PARA LA MISMA DURACIÓN (medido en tdcfreno, 21-sep-2026).
+  //   Esta compuerta filtraba por `m.dur`, que es el ESTIMADO por cps del guion, mientras que
+  //   `60_build` parte el plano por la duración ANCLADA del ASR. Con la voz nueva, p040 estimaba
+  //   6,27 s y ancló en 7,04: la compuerta lo dio por corto, el build lo partió igual y las dos
+  //   mitades se quedaron con la MISMA foto (3 pares repetidos, frenados recién por el chequeo de
+  //   assets repetidos, que es el último eslabón). Se mide por lo ANCLADO, como el build.
+  //   Y el techo no es sólo `partirS`: un plano ANIMADO no puede pasar de lo que cubre su clip
+  //   (agnes da 4,03 s) más la cola de foto, así que ahí el segundo plano hace falta antes.
+  const durAnclada = (m) => (Number.isFinite(m.end) && Number.isFinite(m.start) ? m.end - m.start : m.dur);
+  const TECHO_ANIMADO = 4.03 + (style.vlog?.colaFotoS ?? 2.5);
+  const sinX = mom.filter((m) => {
+    const p = plan.find((p) => p.name === m.name && p.tipo !== "avatar");
+    if (!p || vistos.has(m.name + "x")) return false;
+    return durAnclada(m) > (p.quieto ? 7 : Math.min(7, TECHO_ANIMADO));
+  }).map((m) => m.name);
   const img = plan.filter((p) => p.tipo === "imagen");
   const pct = (n) => (img.length ? Math.round((100 * n) / img.length) : 0);
   let racha = 1, rachaMax = img.length ? 1 : 0;

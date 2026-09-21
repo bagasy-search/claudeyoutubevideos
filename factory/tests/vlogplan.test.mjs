@@ -144,3 +144,21 @@ test("TRAMPA golpe de tipo inventado: se avisa en vez de emitir undefined (React
   const r = conGolpes({ p002: { kind: "explosion3d", props: { texto: "BOOM" } } });
   assert.match(r.problemas.join(" "), /tipo desconocido "explosion3d"/);
 });
+
+// ── DOS FUENTES DE VERDAD PARA LA DURACIÓN (21-sep-2026) ────────────────────────────────────────
+test("TRAMPA plano largo por ANCLAJE: la compuerta lo pide aunque el estimado por cps diga que entra", async () => {
+  const { compose } = await import("../lib/text.mjs");
+  const style = { presentador: "un hombre", presentadorToken: "X", formula: "f", vintage: "v", vlog: { colaFotoS: 2.5 }, lugares: { taller_a: "en el taller" } };
+  // p040: el guion estimaba 6,27 s (entra) pero el ASR lo ancló en 7,04 (el build lo parte)
+  const mom = [{ i: 0, name: "p040", start: 10, end: 17.04, dur: 6.27, texto: "una frase larga" }];
+  const r = compose({ mom, tramos: [{ n: "p040", t: "imagen", s: "una mesa con cosas", e: "medium", l: "taller_a", mo: "algo simple" }], style, secs: [] });
+  assert.deepEqual(r.sinX, ["p040"], "mide por end-start, no por el dur estimado");
+});
+
+test("plano corto de verdad: no se pide segundo plano", async () => {
+  const { compose } = await import("../lib/text.mjs");
+  const style = { presentador: "un hombre", presentadorToken: "X", formula: "f", vintage: "v", vlog: { colaFotoS: 2.5 }, lugares: { taller_a: "en el taller" } };
+  const mom = [{ i: 0, name: "p041", start: 10, end: 14, dur: 4, texto: "corta" }];
+  const r = compose({ mom, tramos: [{ n: "p041", t: "imagen", s: "una mesa", e: "medium", l: "taller_a", mo: "algo simple" }], style, secs: [] });
+  assert.deepEqual(r.sinX, []);
+});
