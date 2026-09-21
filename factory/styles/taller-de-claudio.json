@@ -53,5 +53,12 @@
     "head": "Suscribite al taller"
   },
   "avatarPrompt": "A man speaks warmly and naturally to the camera in his workshop, natural head movement, expressive face, realistic lighting",
-  "formulaVieja": "bright natural daylight, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs"
+  "formulaVieja": "bright natural daylight, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+  "apertura": {
+    "miniatura": true,
+    "holdS": 1,
+    "glitchF": 12,
+    "clip": "broll/{slug}/{slug}_apertura.mp4",
+    "foto": "img/{slug}/{slug}_thumb.jpg"
+  }
 }

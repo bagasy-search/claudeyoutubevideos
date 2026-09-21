@@ -1,0 +1,17 @@
+{
+  "slug": "tdccadena",
+  "canal": "taller-de-claudio",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "GUION_tdccadena.txt",
+  "voz": {
+    "id": "claudio_definitiva"
+  },
+  "cta": {
+    "head": "Suscribite al taller",
+    "ancla": "Si esto te sirvió, suscribite"
+  },
+  "avatar": {
+    "face": "public/ref/taller_claudio_full.png"
+  }
+}

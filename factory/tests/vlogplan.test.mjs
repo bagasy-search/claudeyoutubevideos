@@ -2,6 +2,7 @@
 // Cada trampa tiene que ser atrapada; el caso sano tiene que pasar.
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { conApertura } from "../lib/apertura.mjs";
 import { planVlog } from "../lib/vlogplan.mjs";
 import { medirTimeline } from "../lib/timeline.mjs";
 
@@ -83,4 +84,31 @@ test("TRAMPA cobertura baja: la placa quieta se ve", () => {
 
 test("medición: sin total tira (no mide sobre la nada)", () => {
   assert.throws(() => medirTimeline({ base: [], ventanas: [], total: 0 }), /total=0/);
+});
+
+// ── APERTURA CON LA MINIATURA (20-sep-2026) ────────────────────────────────────────────────────
+test("apertura: corre TODO a la derecha y el cuadro 0 es la miniatura", () => {
+  const cues = [{ key: "m000", start: 0, dur: 60, capa: "base", src: "a.mp4" }, { key: "m001", start: 60, dur: 60, capa: "base", src: "b.mp4" }];
+  const ventanas = [{ k: 0, from: 0, dur: 90 }];
+  const r = conApertura({ cues, ventanas, total: 120, fps: 30, ap: { miniatura: true, holdS: 1, glitchF: 12, src: "broll/x/x_apertura.mp4", foto: "img/x/x_thumb.jpg", frames: 121 } });
+  assert.equal(r.cues[0].key, "apertura");
+  assert.equal(r.cues[0].start, 0, "la miniatura tiene que empezar en el cuadro 0 o el truco no se lee");
+  assert.equal(r.cues[0].dur, 36, "la miniatura dura el hold + medio glitch (si no, se ve un cuadro de nadie)");
+  assert.equal(r.audioDesdeF, 30, "el audio se corre: si no, la voz arranca sobre la miniatura");
+  assert.equal(r.ventanas[0].from, 30, "la ventana de avatar se corre igual que el audio o el lipsync se desfasa");
+  assert.equal(r.total, 150);
+  assert.deepEqual(r.cues.filter((c) => c.capa === "over").map((c) => [c.key, c.start, c.dur]), [["glitchcut", 30, 12]]);
+  // lo de adentro no se toca, sólo se corre
+  assert.deepEqual(r.cues.filter((c) => c.key.startsWith("m")).map((c) => c.start), [30, 90]);
+});
+
+test("TRAMPA apertura sin clip de miniatura: tira en vez de emitir un video sin el truco", () => {
+  assert.throws(() => conApertura({ cues: [], ventanas: [], total: 30, fps: 30, ap: { miniatura: true, holdS: 1 } }), /miniatura/);
+});
+
+test("apertura: si agnes redibujó, la miniatura QUIETA sigue sirviendo (calce exacto sin clip)", () => {
+  const r = conApertura({ cues: [{ key: "m000", start: 0, dur: 60, capa: "base", src: "a.mp4" }], ventanas: [{ k: 0, from: 0, dur: 60 }], total: 60, fps: 30, ap: { miniatura: true, holdS: 1, glitchF: 12, src: null, foto: "img/x/x_thumb.jpg" } });
+  assert.equal(r.cues[0].src, null);
+  assert.equal(r.cues[0].foto, "img/x/x_thumb.jpg");
+  assert.equal(r.audioDesdeF, 30, "el corrimiento no depende de que haya clip");
 });

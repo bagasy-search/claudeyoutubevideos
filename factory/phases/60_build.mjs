@@ -5,6 +5,7 @@ import path from "node:path";
 import { run, durSec, frameCount } from "../lib/exec.mjs";
 import { assertMeasured, assertNoProblems } from "../lib/gate.mjs";
 import { planVlog } from "../lib/vlogplan.mjs";
+import { conApertura } from "../lib/apertura.mjs";
 import { cargarKit, planPremium } from "../lib/kit.mjs";
 import { ROOT, env } from "../lib/env.mjs";
 import { pool } from "../lib/phase.mjs";
@@ -13,9 +14,11 @@ const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const MONTAJES = ["vlog-crudo", "premium"];
 
-export function emitVlog({ slug, comp, total, cues, ventanas, placa, fondo, ambiente = null, fps = 30, premium = false }) {
+export function emitVlog({ slug, comp, total, cues, ventanas, placa, fondo, ambiente = null, fps = 30, premium = false, audioDesdeF = 0 }) {
   const U = slug.toUpperCase().replace(/[^A-Z0-9]/g, "_");
-  const el = (c) => (c.kind === "cta" ? `<CtaFinal {...(${JSON.stringify(c.props)} as any)} />`
+  const el = (c) => (c.kind === "apertura" ? `<AperturaMiniatura ${c.src ? `src="${c.src}" ` : ""}${c.foto ? `foto="${c.foto}" ` : ""}frames={${c.frames || 0}} />`
+    : c.kind === "glitch" ? `<GlitchCut durationInFrames={${c.dur}} />`
+    : c.kind === "cta" ? `<CtaFinal {...(${JSON.stringify(c.props)} as any)} />`
     // ⛔ El componente va SIN envoltorio: nada de placa/recuadro crema detrás (el creador lo rechazó
     //    expresamente). Comp.tsx sólo lo mete en un AbsoluteFill y le pasa durationInFrames.
     : c.comp ? `<Comp kind="${c.comp}" props={${JSON.stringify(c.props)} as any} />`
@@ -23,7 +26,7 @@ export function emitVlog({ slug, comp, total, cues, ventanas, placa, fondo, ambi
         : `<Foto src="${c.src}" seed={${c.start}} />`);
   const gen = `// cues_${slug}.gen.tsx — GENERADO por la FÁBRICA (factory/phases/60_build.mjs). NO editar a mano.
 import React from "react";
-import { Clip, CtaFinal, Foto } from "./Piezas";${premium ? `
+import { Clip, CtaFinal, Foto${cues.some((c) => c.kind === "apertura") ? ", AperturaMiniatura, GlitchCut" : ""} } from "./Piezas";${premium ? `
 import { Comp } from "./Comp";` : ""}
 
 export type Cue = { key: string; start: number; dur: number; capa: "base" | "over"; el: (frame: number) => React.ReactNode };
@@ -62,7 +65,7 @@ export const Main${comp}: React.FC = () => {
           <AbsoluteFill>{c.el(frame)}</AbsoluteFill>
         </Sequence>
       ))}
-      <Audio src={staticFile("${slug}.m4a")} />${ambiente ? `
+      ${audioDesdeF > 0 ? `<Sequence from={${audioDesdeF}} layout="none"><Audio src={staticFile("${slug}.m4a")} /></Sequence>` : `<Audio src={staticFile("${slug}.m4a")} />`}${ambiente ? `
       <Audio src={staticFile("${ambiente}")} />` : ""}
     </AbsoluteFill>
   );
@@ -254,8 +257,30 @@ export default {
     });
 
     for (const c of r.cues) if (c.tipo === "clip") c.frames = frames.get(c.src) || 0;
-    const ventanas = r.ventanas.map((w) => ({ ...w, src: `broll/${slug}/av_w${String(w.k).padStart(3, "0")}.mp4` }));
-    const out = emitVlog({ slug, comp: P.comp, total: r.total, cues: r.cues, ventanas, placa: spec.modo === "avatar" ? placaRel : null, fondo: style.fondo || "#0A0B08", ambiente: spec.ambiente || null, premium });
+    let ventanas = r.ventanas.map((w) => ({ ...w, src: `broll/${slug}/av_w${String(w.k).padStart(3, "0")}.mp4` }));
+    // APERTURA CON LA MINIATURA: corre todo `holdF` a la derecha y mete la miniatura + el glitch.
+    let cuesFinal = r.cues, totalFinal = r.total, audioDesdeF = 0;
+    const apCfg = style.apertura?.miniatura ? style.apertura : null;
+    if (apCfg) {
+      const clipRel = (apCfg.clip || "broll/{slug}/{slug}_apertura.mp4").replaceAll("{slug}", slug);
+      const fotoRel = (apCfg.foto || "img/{slug}/{slug}_thumb.jpg").replaceAll("{slug}", slug);
+      const clipAbs = path.join(ROOT, "public", clipRel);
+      const fotoAbs = path.join(ROOT, "public", fotoRel);
+      const hayClip = fs.existsSync(clipAbs), hayFoto = fs.existsSync(fotoAbs);
+      // La foto EXACTA es la que hace el truco; el clip de agnes sólo la mueve. Sin ninguna de las dos
+      // no hay apertura: se pide, no se inventa.
+      assertNoProblems("aperturaMiniaturaPresente", hayClip || hayFoto ? [] : [
+        `faltan ${clipRel} y ${fotoRel} — la apertura con la miniatura está prendida en el estilo. Generalos con: node scripts/apertura_miniatura.mjs ${slug} <miniatura.png> "<motion simple>"`,
+      ], 1, { log });
+      if (!hayClip) log(`  apertura SIN clip de agnes: va la miniatura quieta con su push (${fotoRel})`);
+      const apFrames = hayClip && !dry ? await frameCount(clipAbs) : 0;
+      const ap = conApertura({ cues: r.cues, ventanas, total: r.total, fps: P.fps || 30, ap: { ...apCfg, src: hayClip ? clipRel : null, foto: hayFoto ? fotoRel : null, frames: apFrames } });
+      cuesFinal = ap.cues; ventanas = ap.ventanas; totalFinal = ap.total; audioDesdeF = ap.audioDesdeF;
+      r.cues = cuesFinal; r.total = totalFinal;
+      log(`apertura con miniatura: ${ap.medido.aperturaSec} s de miniatura + glitch de ${ap.medido.glitchF} cuadros; audio y ventanas corridos ${ap.medido.holdF} cuadros`);
+      for (const c of cuesFinal) if (c.foto) { /* la foto de respaldo también viaja al farm */ }
+    }
+    const out = emitVlog({ slug, comp: P.comp, total: totalFinal, cues: cuesFinal, ventanas, placa: spec.modo === "avatar" ? placaRel : null, fondo: style.fondo || "#0A0B08", ambiente: spec.ambiente || null, premium, audioDesdeF });
     // DRY emite adentro del repo (gitignored) para que `tsc` resuelva remotion desde node_modules
     const dryRoot = path.join(ROOT, "factory", "_dry");
     const srcDir = dry ? path.join(dryRoot, slug) : P.srcDir;
@@ -289,6 +314,7 @@ export default {
     // entraba en la lista y el farm lo servia 404: el chunk moria con EncodingError. Medido en
     // cmeamazon (dos renders fallados seguidos por `public/qr/cmeamazon.png` 404).
     for (const c of r.cues) if (c.props?.qr) assets.add(c.props.qr);
+    for (const c of r.cues) if (c.foto) assets.add(c.foto);   // la foto de la apertura no viaja en `src`
     // ⛔ MISMA MINA, MÁS GRANDE, en premium: los componentes del kit reciben rutas de asset DENTRO de
     // las props (`image`, `src`, `steps[].image`, `events[].image`). Ninguna tiene `src` en el cue, así
     // que ninguna entraba en la lista y el farm las servía 404 → EncodingError y chunk muerto.

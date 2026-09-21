@@ -114,3 +114,52 @@ export const CtaFinal: React.FC<{ head: string; sub?: string; qr?: string }> = (
     </AbsoluteFill>
   );
 };
+
+/** APERTURA CON LA MINIATURA (truco del creador, 20-sep-2026): el primer fotograma del video ES la
+ *  miniatura, animada apenas por agnes, y al segundo un corte glitch del que sale el presentador
+ *  hablando. El que hace clic aterriza en la MISMA imagen que clickeó.
+ *  ⛔ Sin Ken-Burns y con `scale(1)` EXACTO en el cuadro 0: cualquier zoom (Clip usa 1,045) rompe el
+ *  calce con la miniatura y el truco deja de leerse. El push arranca DESPUÉS del cuadro 0. */
+export const AperturaMiniatura: React.FC<{ src?: string; foto?: string; frames?: number }> = ({ src, foto, frames }) => {
+  const frame = useCurrentFrame();
+  const { durationInFrames } = useVideoConfig();
+  const t = interpolate(frame, [0, Math.max(2, durationInFrames)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const st: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover", transform: `scale(${(1 + 0.02 * t).toFixed(4)})` };
+  const video = src ? <OffthreadVideo src={staticFile(src)} muted style={st} /> : null;
+  // ⛔ El cuadro 0 tiene que ser la miniatura EXACTA, y agnes la re-genera con un leve zoom (medido:
+  //    PSNR 20 dB contra la original, misma composición). Por eso la miniatura de verdad va ENCIMA y
+  //    se funde al clip en 6 cuadros: el calce es exacto por construcción, no por suerte del modelo.
+  const velo = !foto ? 0 : !src ? 1 : interpolate(frame, [4, 10], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return (
+    <AbsoluteFill style={{ backgroundColor: INK, overflow: "hidden" }}>
+      {video && frames && frames > 1 ? <Loop durationInFrames={frames}>{video}</Loop> : video}
+      {foto && velo > 0 ? <Img src={staticFile(foto)} style={{ ...st, position: "absolute", inset: 0, opacity: velo }} /> : null}
+    </AbsoluteFill>
+  );
+};
+
+/** CORTE GLITCH neutro (sin marca): tajadas horizontales que patinan + separación RGB, sube y baja
+ *  en `durationInFrames`. Va en la capa `over`, encima del cambio de la miniatura al presentador. */
+export const GlitchCut: React.FC<{ durationInFrames?: number }> = ({ durationInFrames = 12 }) => {
+  const frame = useCurrentFrame();
+  const env = Math.sin(Math.max(0, Math.min(1, frame / durationInFrames)) * Math.PI);
+  const SLICES = 9;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none", overflow: "hidden" }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(255,60,60,0.13), transparent 18%, transparent 82%, rgba(80,200,255,0.13))", transform: `translateX(${(env * 10).toFixed(2)}px)`, opacity: env }} />
+      {Array.from({ length: SLICES }).map((_, k) => {
+        const on = rnd(k + 7, Math.floor(frame / 2)) > 0.45;
+        if (!on) return null;
+        const dx = (rnd(k, Math.floor(frame / 2)) - 0.5) * 90 * env;
+        return (
+          <div key={k} style={{
+            position: "absolute", left: 0, right: 0, top: `${(k / SLICES) * 100}%`, height: `${100 / SLICES}%`,
+            transform: `translateX(${dx.toFixed(2)}px)`, background: k % 2 === 0 ? "rgba(255,255,255,0.07)" : "rgba(80,200,255,0.06)",
+            opacity: env,
+          }} />
+        );
+      })}
+      <div style={{ position: "absolute", inset: 0, background: "#fff", opacity: env * 0.12 }} />
+    </AbsoluteFill>
+  );
+};
