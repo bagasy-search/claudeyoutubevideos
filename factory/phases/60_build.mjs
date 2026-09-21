@@ -250,7 +250,16 @@ export default {
     // porque un video puede quedar legítimamente en 20 % si Pexels no tenía material del tema. Lo que
     // esta compuerta tiene que frenar es el DERRUMBE — el 1,2 % de fbaislar, que fue un bug y no una
     // decisión. Una compuerta que no puede fallar nunca no es una compuerta.
-    assertMeasured("metrajeRealEnPantallaPct", realPct, { min: 10, unidad: " % del b-roll", log });
+    // ⛔ Esta compuerta nació para los canales que SÍ tienen fuente de metraje real (Pexels/YouTube CC).
+    // `taller-de-claudio` no la tiene: su estilo no declara `stock`, 45_stock sale `skipped` y el b-roll
+    // es 100 % gpt-image + agnes por decisión del creador (20-sep-2026). Ahí el piso de 10 % es
+    // INALCANZABLE y mataba el build con "midió 0 = no miró", que es justo lo contrario de lo que pasa:
+    // se midió perfecto y da 0 porque no hay de dónde sacar metraje. Con estilo SIN `stock` se informa
+    // el número igual (nunca se deja de imprimir) pero no frena; con estilo CON `stock` sigue idéntica,
+    // así que el derrumbe del 1,2 % de fbaislar se sigue cazando.
+    const canalConStock = !!style.stock;
+    if (!canalConStock) log(`  (el estilo "${style.nombre || spec.canal}" no declara fuente de stock: el piso de metraje real no aplica)`);
+    assertMeasured("metrajeRealEnPantallaPct", realPct, { min: canalConStock ? 10 : undefined, allowZero: !canalConStock, unidad: " % del b-roll", log });
 
     if (!dry) await pool(finPend, 4, async ([name, clipSrc]) => {
       const jpg = path.join(P.imgDir, `${name}_fin.jpg`);

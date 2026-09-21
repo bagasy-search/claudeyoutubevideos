@@ -5,7 +5,13 @@
 // lento) casi no cambia; uno que agnes redibujo ya es OTRA escena. Separa limpio, a diferencia de
 // comparar contra el final (que mide ZOOM).
 import fs from "node:fs"; import { execFileSync } from "node:child_process";
-const FF="C:/Users/bauti/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe";
+// La ruta estaba QUEMADA a WinGet\Links, que ya no existe en esta máquina (20-sep-2026): TODOS los
+// grab() fallaban, `out` quedaba en -1 y la compuerta moría con un TypeError del percentil en vez de
+// decir "no pude medir". Ahora sale del PATH, con la ruta vieja sólo como respaldo.
+const FF=(()=>{ for(const c of [process.env.FFMPEG||"","ffmpeg","C:/Users/bauti/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe"]){
+  if(!c) continue;
+  try{ execFileSync(c,["-version"],{stdio:"ignore"}); return c; }catch{}
+} throw new Error("check_redibujo: no encuentro ffmpeg (probé PATH y WinGet)"); })();
 const SLUG=process.argv[2]; const UMBRAL=+(process.argv[3]||0.35);
 if(!SLUG){console.error("uso: node scripts/check_redibujo.mjs <slug> [umbral=0.35]");process.exit(1);}
 const dir=`public/broll/${SLUG}`, W=64,H=36;
@@ -26,7 +32,8 @@ fs.writeFileSync(`_v3/${SLUG}_salto.json`, JSON.stringify(out));
 const mal=out.filter(x=>x[1]>UMBRAL).map(x=>x[0].replace(/\.mp4$/,"")).sort();
 fs.writeFileSync(`_v3/${SLUG}_redibujados.json`, JSON.stringify(mal));
 const v=out.map(x=>x[1]).filter(x=>x>=0).sort((a,b)=>a-b);
-const q=p=>v[Math.floor(v.length*p)].toFixed(3);
+if(!v.length) { console.error(`check_redibujo: 0 clips medidos de ${out.length} archivos en ${dir} — NO MIDIÓ`); process.exit(2); }
+const q=p=>v[Math.min(v.length-1,Math.floor(v.length*p))].toFixed(3);
 console.log(`clips ${v.length} · mediana ${q(.5)} · p75 ${q(.75)} · p90 ${q(.9)}`);
 console.log(`REDIBUJADOS (salto > ${UMBRAL}): ${mal.length} (${Math.round(100*mal.length/v.length)}%) -> _v3/${SLUG}_redibujados.json`);
 console.log(mal.join(","));
