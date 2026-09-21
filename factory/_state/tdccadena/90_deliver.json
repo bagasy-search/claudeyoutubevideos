@@ -1,17 +1,17 @@
 {
  "fase": "90_deliver",
- "ts": "2026-09-21T04:00:42.286Z",
+ "ts": "2026-09-21T20:22:02.524Z",
  "status": "done",
- "inputsHash": "efa807bee289fb3c",
+ "inputsHash": "293a95fe6cfa007e",
  "medido": {
-  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/tdccadena/tdccadena.mp4?v=2",
-  "version": 2,
-  "bytes": 226518359,
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/tdccadena/tdccadena.mp4?v=3",
+  "version": 3,
+  "bytes": 259551177,
   "durSec": 492.83,
   "saltosPts": 0,
   "tramosNegros": 0,
   "hoja": "D:\\rtmp\\factory\\tdccadena\\audit\\hoja.jpg",
   "bagasy": "entregado (--no-youtube)"
  },
- "ms": 208542
+ "ms": 591276
 }

@@ -1,16 +1,16 @@
 {
  "fase": "80_render",
- "ts": "2026-09-21T03:46:46.274Z",
+ "ts": "2026-09-21T20:11:37.882Z",
  "status": "done",
- "inputsHash": "62a631e743df0c35",
+ "inputsHash": "500cda72c3f54d51",
  "medido": {
-  "runId": "35558316919",
-  "commit": "57205006deefa03871d5705e822f7ccb9729c243",
+  "runId": "35648839507",
+  "commit": "a7db9887ec225234c29da4f0da9af44c96bc1b32",
   "archivos": 4,
   "chunks": 30,
   "jobsOk": 32,
   "durSec": 495.21,
   "totalFrames": 14815
  },
- "ms": 475162
+ "ms": 512797
 }
