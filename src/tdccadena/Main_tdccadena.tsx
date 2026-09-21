@@ -6,7 +6,7 @@ import { AvatarVentana, PlacaPiso } from "./Piezas";
 
 export const TOTAL_FRAMES_TDCCADENA = 14815;
 
-const VENTANAS = [{"k":0,"from":30,"dur":494,"src":"broll/tdccadena/av_w000.mp4"},{"k":1,"from":2759,"dur":140,"src":"broll/tdccadena/av_w001.mp4"},{"k":2,"from":5252,"dur":189,"src":"broll/tdccadena/av_w002.mp4"},{"k":3,"from":8867,"dur":156,"src":"broll/tdccadena/av_w003.mp4"},{"k":4,"from":12022,"dur":205,"src":"broll/tdccadena/av_w004.mp4"},{"k":5,"from":14302,"dur":512,"src":"broll/tdccadena/av_w005.mp4"}];
+const VENTANAS = [{"k":0,"from":30,"dur":494,"src":"broll/tdccadena/av_w000.mp4"},{"k":1,"from":14302,"dur":512,"src":"broll/tdccadena/av_w001.mp4"}];
 
 export const MainTdccadena: React.FC = () => {
   const frame = useCurrentFrame();

@@ -87,8 +87,18 @@ export default {
     if (!a.size) a = await releaseAsset(repo, slug, `${slug}.mp4`, { log });
     log(`release: ${a.size} bytes publicados · local ${size}`);
     assertMeasured("releaseBytesIguales", a.size === size ? 1 : 0, { min: 1, log });
-    // re-entregas: la versión arranca DESPUÉS de la ya usada (FACTORY_V_START), si no el navegador sirve la vieja de caché
-    const version = Math.max((state.get("90_deliver")?.medido?.version || 0) + 1, Number(env("FACTORY_V_START") || 1));
+    // re-entregas: la versión arranca DESPUÉS de la ya usada (FACTORY_V_START), si no el navegador sirve la vieja de caché.
+    // ⛔ `state.get("90_deliver")` NO sirve para esto: cuando esta función corre, la fase YA se marcó
+    // `running` y su `medido` anterior se perdió, así que la cuenta daba 0+1=1 SIEMPRE. Medido 21-sep
+    // en tdccadena: la segunda entrega (avatar re-sincronizado, mp4 distinto byte a byte) volvió a
+    // salir con `?v=1` y la tarjeta quedó apuntando a una URL que el navegador ya tenía cacheada —
+    // justo el defecto que este sufijo existe para evitar. El número vive ahora en un sidecar propio.
+    const verFile = path.join(P.workDir || audit, `${slug}_entrega_version.json`);
+    let previa = 0;
+    try { previa = Number(JSON.parse(fs.readFileSync(verFile, "utf8")).version) || 0; } catch { /* primera entrega */ }
+    const version = Math.max(previa + 1, Number(env("FACTORY_V_START") || 1));
+    fs.mkdirSync(path.dirname(verFile), { recursive: true });
+    fs.writeFileSync(verFile, JSON.stringify({ version, ts: new Date().toISOString() }));
     const url = `https://github.com/${repo}/releases/download/${slug}/${slug}.mp4?v=${version}`;
 
     let bagasy = "no (sin spec.bagasy o FACTORY_DELIVER≠1)";

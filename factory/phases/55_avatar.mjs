@@ -297,7 +297,13 @@ export default {
       const falta = off < 0 ? +(-off).toFixed(3) : 0;
       if (falta) clonados++;
       const vf = `scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,setsar=1${falta ? `,tpad=start_duration=${falta}:start_mode=clone` : ""}`;
-      await run("ffmpeg", ["-v", "error", "-y", "-ss", Math.max(0, off).toFixed(3), "-i", reelMp4, "-t", (d - falta).toFixed(3), "-vf", vf,
+      // ⛔ `-t` va DESPUÉS de `-i`, así que es una opción de SALIDA: recorta lo que sale del filtro,
+      // no lo que entra. Con `-t (d - falta)` el `tpad` ponía sus `falta` segundos de cuadro clonado
+      // adelante y después el recorte se comía esa misma fracción del final: la ventana 0 salía
+      // 16,200 s en vez de 16,460 y `ventanasMalCortadas` la marcaba (medido 21-sep en tdccadena, la
+      // única ventana del video que empieza en el segundo 0 del reel). La salida tiene que durar `d`
+      // entera: el relleno del principio ya lo aporta `tpad`, el resto lo pone el reel.
+      await run("ffmpeg", ["-v", "error", "-y", "-ss", Math.max(0, off).toFixed(3), "-i", reelMp4, "-t", d.toFixed(3), "-vf", vf,
         "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", dst], { timeoutMs: 600_000 });
       const real = await durSec(dst);
       if (Math.abs(real - d) > 2 / 30 + 0.02) malos.push(`w${w.k}: ${real.toFixed(3)} vs ${d.toFixed(3)}`);
