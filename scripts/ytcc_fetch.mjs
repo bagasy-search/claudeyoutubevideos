@@ -113,6 +113,17 @@ for (const [q, planos] of porQuery) {
   console.log(`  ${fuentes.length} fuente(s) · ${disponible.toFixed(0)} s disponibles para ${necesita.toFixed(0)} s pedidos`);
   let i = 0;
   for (const p of planos) {
+    // ⛔ UN CLIP QUE YA ESTÁ EN DISCO NO SE VUELVE A CORTAR. No es sólo ahorro: los cortes salen de un
+    //    cursor que avanza por la lista, así que si cambia la cantidad de planos de la consulta, TODOS
+    //    los offsets se corren y el material deja de ser el que se auditó. Medido en tdcfreno: sacar
+    //    los clips con caras ajenas y re-correr la fase devolvía OTROS tramos del mismo video, y la
+    //    auditoría anterior ya no valía para ninguno. Con esto, auditar y sacar converge en vez de
+    //    volver a tirar el dado en cada vuelta.
+    const yaEsta = path.join(OUT, `${p.name}.mp4`);
+    if (fs.existsSync(yaEsta) && fs.statSync(yaEsta).size > 50_000) {
+      hechos.push({ name: p.name, fuente: "(ya estaba)", desde: -1, dur: Math.max(MIN_SEG, p.durSec || MIN_SEG) });
+      continue;
+    }
     const d = Math.max(MIN_SEG, p.durSec || MIN_SEG);
     // busca la próxima fuente con lugar, rotando: reparte los planos entre fuentes en vez de agotar una
     let puesto = false;

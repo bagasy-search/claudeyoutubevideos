@@ -133,10 +133,17 @@ export default {
       const hechos = fs.existsSync(hechosF) ? JSON.parse(fs.readFileSync(hechosF, "utf8")) : [];
       fs.mkdirSync(path.join(ROOT, "_v3"), { recursive: true });
       const qDe = new Map(pedidos.map((p) => [p.name, p.st]));
+      const regFileY = path.join(ROOT, "_v3", `${slug}_stock.json`);
+      // Se ARRANCA del registro anterior: un clip que ya estaba en disco no se vuelve a cortar, así que
+      // su fuente y su offset reales están sólo acá. Pisarlos con "(ya estaba)" borraría de dónde salió
+      // cada clip, que es lo que hace falta para auditar y para el crédito CC-BY.
       const regY = {};
+      const previo = fs.existsSync(regFileY) ? JSON.parse(fs.readFileSync(regFileY, "utf8")) : {};
       for (const h of hechos) {
         if (!fs.existsSync(path.join(P.brollDir, `${h.name}.mp4`))) continue;   // el registro lo escribe el DISCO
-        regY[h.name] = { id: `yt:${h.fuente}@${h.desde}`, query: qDe.get(h.name) || "", dur: h.dur, fuente: "ytcc" };
+        regY[h.name] = h.desde >= 0 || !previo[h.name]
+          ? { id: `yt:${h.fuente}@${h.desde}`, query: qDe.get(h.name) || "", dur: h.dur, fuente: "ytcc" }
+          : previo[h.name];
       }
       fs.writeFileSync(path.join(ROOT, "_v3", `${slug}_stock.json`), JSON.stringify(regY, null, 1));
       assertMeasured("stockYtccRegistrados", Object.keys(regY).length, { min: 1, total: pedidos.length, log });
