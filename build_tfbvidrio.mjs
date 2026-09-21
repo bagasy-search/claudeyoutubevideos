@@ -36,7 +36,8 @@ for (let i = 0; i < M.length; i++) M[i].end = i + 1 < M.length ? M[i + 1].start 
 // ── cues ──
 const cues = [], overlays = [], windows = [], NEEDS = { stock: [], agnes: [] };
 const push = (c) => { if (c.dur > 0.05) cues.push(c); };
-const clipFrames = (p) => +execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v', '-count_packets', '-show_entries', 'stream=nb_read_packets', '-of', 'csv=p=0', `${PUB}/${p}`]).toString().trim().replace(/\D.*$/, '');
+const clipFrames = (p) => { try { return clipFramesRaw(p); } catch (e) { FAIL(`no pude medir cuadros de ${p} (¿se está bajando?): ${e.message.slice(0, 60)}`); return 0; } };
+const clipFramesRaw = (p) => +execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v', '-count_packets', '-show_entries', 'stream=nb_read_packets', '-of', 'csv=p=0', `${PUB}/${p}`]).toString().trim().replace(/\D.*$/, '');
 const CAP = { lamina: 42, cta: 40, capitulo: 6, golpe: 4.5, pregunta: 9, alerta: 19, calzos: 19 };
 const FLOOR = { golpe: 2.2, capitulo: 3.2, pregunta: 3.5, lamina: 25 };
 let cursor = 0;
