@@ -176,7 +176,7 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
   //   dice acá y no después.
   if ((style.montaje || "vlog-crudo") !== "premium" && !style.stock?.fuente) {
     const conSt = tramos.filter((x) => x.st).map((x) => x.n);
-    if (conSt.length) errores.push(`${conSt.length} planos con "st" (${conSt.slice(0, 5).join(", ")}${conSt.length > 5 ? "…" : ""}): el estilo no declara `stock.fuente` y el montaje "${style.montaje || "vlog-crudo"}" no corre 45_stock, así que esas marcas no bajan nada. Sacalas o cambiá el montaje.`);
+    if (conSt.length) errores.push(`${conSt.length} planos con "st" (${conSt.slice(0, 5).join(", ")}${conSt.length > 5 ? "…" : ""}): el estilo no declara stock.fuente y el montaje "${style.montaje || "vlog-crudo"}" no corre 45_stock, así que esas marcas no bajan nada. Sacalas o cambiá el montaje.`);
   }
   const faltan = mom.filter((m) => !vistos.has(m.name)).map((m) => m.name);
   // ⛔⛔ DOS FUENTES DE VERDAD PARA LA MISMA DURACIÓN (medido en tdcfreno, 21-sep-2026).
