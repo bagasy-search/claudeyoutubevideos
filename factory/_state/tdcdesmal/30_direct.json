@@ -1,8 +1,8 @@
 {
  "fase": "30_direct",
- "ts": "2026-09-21T02:47:22.765Z",
+ "ts": "2026-09-21T03:34:52.497Z",
  "status": "done",
- "inputsHash": "f278c0eb2a0045a7",
+ "inputsHash": "859bc6d3d8bb9202",
  "medido": {
   "archivosDireccion": 4,
   "momentos": 206,
@@ -18,5 +18,5 @@
   "animadoPct": 15,
   "quietos": 154
  },
- "ms": 16
+ "ms": 17
 }

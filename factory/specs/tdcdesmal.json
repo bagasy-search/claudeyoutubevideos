@@ -1,17 +1,21 @@
 {
-  "slug": "tdcdesmal",
-  "canal": "taller-de-claudio",
-  "modo": "avatar",
-  "idioma": "es",
-  "guion": "GUION_tdcdesmal.txt",
-  "voz": {
-    "id": "claudio_definitiva"
-  },
-  "cta": {
-    "head": "Suscribite al taller",
-    "ancla": "Si esto te sirvió, suscribite"
-  },
-  "avatar": {
-    "face": "public/ref/taller_claudio_full.png"
-  }
+ "slug": "tdcdesmal",
+ "canal": "taller-de-claudio",
+ "modo": "avatar",
+ "idioma": "es",
+ "guion": "GUION_tdcdesmal.txt",
+ "voz": {
+  "id": "claudio_definitiva"
+ },
+ "cta": {
+  "head": "Suscribite al taller",
+  "ancla": "Si esto te sirvió, suscribite"
+ },
+ "avatar": {
+  "face": "public/ref/taller_claudio_full.png"
+ },
+ "bagasy": {
+  "channelKey": "https://www.youtube.com/channel/UCq1MjR_1TiXC6JLe_WokDvA",
+  "cardId": "tdc1789925792426-tdcdesmal"
+ }
 }
