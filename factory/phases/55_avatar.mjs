@@ -288,7 +288,24 @@ export default {
     //    La cura, sin volver a pagar RunPod: cortar cada ventana `lipLeadSec` ANTES de su punto del
     //    reel, lo que RETRASA el video contra el audio. Si la ventana empieza tan al principio que no
     //    hay material previo, se clona el primer cuadro esa fracción (`tpad`).
-    const LIP = style.avatar?.lipLeadSec ?? 0.25;
+    // ⛔⛔ EL VALOR NO SE FÍA, SE MIDE. La constante 0,25 venía de una prueba de oído de sep-2026 y
+    //    resultó ser el DOBLE de lo real en este endpoint: medido con `scripts/lipsync_medir.mjs`
+    //    (movimiento de boca contra energía del audio, correlación cruzada, 6 bandas coincidentes),
+    //    el reel crudo trae los labios **0,10 s adelantados**. Compensar 0,25 los dejaba 0,15
+    //    ATRASADOS — el creador vio los tres videos desincronizados y las cinco variantes que le mandé
+    //    estaban todas del lado equivocado.
+    //    Ahora se mide ESTE reel: si la correlación alcanza, manda la medición; si no, el default del
+    //    estilo. Nunca una constante silenciosa.
+    let LIP = style.avatar?.lipLeadSec ?? 0.10, lipR = null, lipFuente = "estilo";
+    try {
+      const med = await run("node", ["scripts/lipsync_medir.mjs", reelMp4, "--auto"], { cwd: ROOT, timeoutMs: 10 * 60_000, allowFail: true });
+      lipR = Number((med.out.match(/correlación máx ([\d.]+)/) || [])[1]);
+      const lag = Number((med.out.match(/DESFASE DE LABIOS: (-?[\d.]+)/) || [])[1]);
+      if (Number.isFinite(lipR) && lipR >= 0.25 && Number.isFinite(lag) && Math.abs(lag) <= 0.4) {
+        LIP = +(-lag).toFixed(3); lipFuente = `medido (r ${lipR.toFixed(2)})`;
+      } else log(`  lipsync: correlación ${Number.isFinite(lipR) ? lipR.toFixed(2) : "?"} insuficiente → uso el default del estilo`);
+    } catch (e) { log(`  lipsync: no se pudo medir (${e.message.slice(0, 60)}) → default del estilo`); }
+    log(`  compensación de labios: ${(LIP * 1000).toFixed(0)} ms (${lipFuente})`);
     // ⛔ Las ventanas de un reparto ANTERIOR quedaban tiradas en `public/broll/<slug>/`: al bajar de
     //    4 ventanas a 2, `av_w002.mp4` y `av_w003.mp4` sobrevivieron con la boca de otro tramo. Nadie
     //    las pisa (el cortador sólo escribe las que existen HOY) y viajan igual al farm. Se barren
@@ -319,7 +336,7 @@ export default {
     assertMeasured("ventanasMalCortadas", malos.length, { max: 0, allowZero: true, log });
     // que quede en el estado CUÁNTO se corrió: si el creador vuelve a reportar desincronía, el número
     // está a la vista en vez de tener que deducirlo del código.
-    assertMeasured("lipLeadCompensadoMs", Math.round(LIP * 1000), { min: 1, log });
+    assertMeasured("lipLeadCompensadoMs", Math.round(Math.abs(LIP) * 1000), { min: 1, log });
     // El costo sale del SELLO de jobs.json, no del acumulador de esta corrida: al reanudar (reel ya
     // en disco, o parte1 reusada) no se llama a RunPod y `costo` queda en 0, con lo que el estado de
     // la fase decia que el avatar habia salido gratis y cualquier suma aguas abajo lo perdia.
@@ -330,6 +347,6 @@ export default {
       if (suma > costoSellado) costoSellado = +suma.toFixed(4);
     } catch { /* sin sello: queda el acumulador */ }
     fs.writeFileSync(selloFile, JSON.stringify({ sello: selloVent, ventanas: W.length }, null, 1));
-    return { ventanas: W.length, visiblesSec: +reelSec.toFixed(2), visiblesPct: +((100 * reelSec) / TOT).toFixed(1), jobs, costoUsd: costoSellado, syncCorr: corr, syncLagMs: Math.round(lag * 1000), lipLeadMs: Math.round(LIP * 1000), ventanasConClon: clonados };
+    return { ventanas: W.length, visiblesSec: +reelSec.toFixed(2), visiblesPct: +((100 * reelSec) / TOT).toFixed(1), jobs, costoUsd: costoSellado, syncCorr: corr, syncLagMs: Math.round(lag * 1000), lipLeadMs: Math.round(LIP * 1000), lipLeadFuente: lipFuente, lipCorr: lipR, ventanasConClon: clonados };
   },
 };

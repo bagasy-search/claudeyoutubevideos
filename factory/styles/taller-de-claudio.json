@@ -61,5 +61,8 @@
     "clip": "broll/{slug}/{slug}_apertura.mp4",
     "foto": "img/{slug}/{slug}_thumb.jpg"
   },
-  "avatarMinPct": 4
+  "avatarMinPct": 4,
+  "avatar": {
+    "lipLeadSec": 0.1
+  }
 }
