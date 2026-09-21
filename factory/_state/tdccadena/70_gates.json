@@ -1,12 +1,12 @@
 {
  "fase": "70_gates",
- "ts": "2026-09-21T03:38:50.648Z",
+ "ts": "2026-09-21T20:02:35.630Z",
  "status": "done",
- "inputsHash": "b04f5a8b938f331b",
+ "inputsHash": "e72734a8f19df245",
  "medido": {
   "compuertas": 11,
   "archivosRender": 4,
-  "assets": 125
+  "assets": 159
  },
- "ms": 20058
+ "ms": 6008
 }

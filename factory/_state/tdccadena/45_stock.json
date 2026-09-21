@@ -1,5 +1,15 @@
 {
  "fase": "45_stock",
- "ts": "2026-09-21T03:57:13.669Z",
- "status": "skipped"
+ "ts": "2026-09-21T19:34:54.865Z",
+ "status": "done",
+ "inputsHash": "12234c93ec1f8d06",
+ "medido": {
+  "stockPedidos": 25,
+  "stockNuevos": 25,
+  "fuente": "ytcc",
+  "fuentes": 4,
+  "stockEnDisco": 25,
+  "metrajeRealPct": 23
+ },
+ "ms": 5280
 }

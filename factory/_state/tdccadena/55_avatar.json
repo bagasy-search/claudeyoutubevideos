@@ -1,8 +1,8 @@
 {
  "fase": "55_avatar",
- "ts": "2026-09-21T03:37:59.802Z",
+ "ts": "2026-09-21T19:54:50.097Z",
  "status": "done",
- "inputsHash": "e7bc427aeb1b20bc",
+ "inputsHash": "c6609d57f1adf403",
  "medido": {
   "ventanas": 2,
   "visiblesSec": 33.55,
@@ -11,8 +11,10 @@
   "costoUsd": 0.25,
   "syncCorr": 1,
   "syncLagMs": 0,
-  "lipLeadMs": 250,
+  "lipLeadMs": 167,
+  "lipLeadFuente": "medido (r 0.28)",
+  "lipCorr": 0.276,
   "ventanasConClon": 1
  },
- "ms": 36118
+ "ms": 50344
 }
