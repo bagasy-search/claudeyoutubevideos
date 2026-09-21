@@ -5,6 +5,9 @@
 //   node factory/run.mjs status [<slug>]                              estado por fase (medido)
 //   node factory/run.mjs new <slug> --canal <c> --modo avatar|narrador --guion <txt> --voz <id>
 //                            [--face <png>] [--idioma es] --cta-ancla "<frase>" --cta-head "<texto>"
+//                            [--card <cardId> --channel <clave>]   ← la tarjeta de Bagasy. Sin esto,
+//                            90_deliver entrega el mp4 pero NO engancha la tarjeta, y hay que agregar
+//                            el bloque `bagasy` al spec a mano y re-entregar (pasó en tdcfreno).
 //   node factory/run.mjs queue add <slug> | queue ls                  cola de videos
 //   node factory/run.mjs worker [--n 3]                               procesa la cola en paralelo
 //   node factory/run.mjs leases                                       uso de recursos compartidos

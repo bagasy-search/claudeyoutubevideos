@@ -101,7 +101,11 @@ export default {
     fs.writeFileSync(verFile, JSON.stringify({ version, ts: new Date().toISOString() }));
     const url = `https://github.com/${repo}/releases/download/${slug}/${slug}.mp4?v=${version}`;
 
-    let bagasy = "no (sin spec.bagasy o FACTORY_DELIVER≠1)";
+    // el mensaje dice CUÁL de las dos cosas falta y cómo se arregla: "sin spec.bagasy o FACTORY_DELIVER≠1"
+    // obligaba a adivinar, y con la tarjeta sin enganchar el video queda entregado a medias.
+    let bagasy = !spec.bagasy
+      ? 'no: al spec le falta el bloque `bagasy` ({ channelKey, cardId }) — se pone con `new --card <cardId> --channel <clave>` o a mano, y se re-entrega'
+      : 'no: falta FACTORY_DELIVER=1';
     if (spec.bagasy && env("FACTORY_DELIVER") === "1") {
       await run("node", ["scripts/deliver_card.mjs", spec.bagasy.channelKey, spec.bagasy.cardId, slug, "--no-youtube"], { cwd: ROOT, timeoutMs: 30 * 60_000, env: { MP4_SUFIJO: `?v=${version}` } });
       bagasy = "entregado (--no-youtube)";
