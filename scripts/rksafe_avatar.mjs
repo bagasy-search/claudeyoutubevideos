@@ -14,9 +14,14 @@
 //    start_mode=clone` sobre el REEL, antes de cortarlo (asi toda ventana hereda la correccion).
 // ⛔ 25 -> 30 fps con `fps=30` (DUPLICACION SIMPLE), nunca `minterpolate`: reparte el movimiento
 //    desparejo y eso se lee como tiron.
-// ⛔ El endpoint publico devuelve 832x464 FIJO (tambien con size 720p: esta medido). Por eso el reel
-//    se conforma a 960x540 = 1:1 con el panel de `RayAvatarWin` -> upscale REAL 1,154x, en vez de los
-//    2,31x de ponerlo a pantalla completa (que el creador rechazo en rkspare).
+// ⛔⛔ EL AVATAR VA A PANTALLA COMPLETA, SIEMPRE (regla dura del creador, jul-2026 y reafirmada el
+//    20-sep-2026): 'usa o el avatar pantalla completa, o la foto/video pantalla completa, porque queda
+//    raro sino'. El PiP en panel se ve amateur. ⚠️ Un intento anterior conformaba el reel a 960x540
+//    para bajar el upscale a 1,154x: RECHAZADO a la primera.
+// ⛔ El endpoint publico devuelve 832x464 FIJO (tambien con size 720p: esta medido), asi que a full
+//    frame el estiramiento es 2,31x. Eso NO se combate achicando el avatar: se combate en el
+//    CONFORMADO (lanczos + un unsharp FUERTE, 0,95 — a 2,31x es donde se juega que no se vea
+//    plastico) y con una REFERENCIA nitida en plano medio 16:9.
 import fs from 'node:fs';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { supaCreds } from './supa_creds.mjs';
@@ -170,7 +175,7 @@ if (corre('run')) {
   const costo = Object.values(jobs).reduce((a, j) => a + (+j.costo || 0), 0);
   console.log(`MEDIDO: ${Object.keys(jobs).length} job(s) de RunPod · costo US$${costo.toFixed(2)}`);
   const res = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', reel], { encoding: 'utf8' }).trim();
-  console.log(`  resolución que devolvió el endpoint: ${res}  (el panel de RayAvatarWin mide 960x540 → upscale ${(960 / +res.split(',')[0]).toFixed(3)}x)`);
+  console.log(`  resolución que devolvió el endpoint: ${res}  (a pantalla completa el estiramiento es ${(1920 / +res.split(',')[0]).toFixed(3)}x)`);
 }
 
 // ── 3 · CUT: corregir el adelanto de labios, conformar a 960x540 30 CFR y partir por ventana ─────
@@ -184,10 +189,10 @@ if (corre('cut')) {
   // ⛔ `unsharp` DESPUES del `scale=...:lanczos`: lanczos solo no devuelve el micro-contraste.
   execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', crudo, '-vf',
     'tpad=start_duration=0.25:start_mode=clone:stop_duration=1.0:stop_mode=clone,' +
-    'scale=960:540:force_original_aspect_ratio=increase:flags=lanczos,crop=960:540,' +
-    'unsharp=5:5:0.55:5:5:0.0,fps=30,setsar=1',
+    'scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,' +
+    'unsharp=5:5:0.95:5:5:0.0,fps=30,setsar=1',
     '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '17', '-pix_fmt', 'yuv420p', '-fps_mode', 'cfr', reel]);
-  console.log(`reel conformado: ${ultimoFrame(reel).toFixed(2)} s · 960x540 30/1 CFR · labios corregidos 0,25 s`);
+  console.log(`reel conformado: ${ultimoFrame(reel).toFixed(2)} s · 1920x1080 30/1 CFR · lanczos+unsharp 0,95 · labios corregidos 0,25 s`);
 
   const malos = [], fps = new Set();
   for (const w of W) {
