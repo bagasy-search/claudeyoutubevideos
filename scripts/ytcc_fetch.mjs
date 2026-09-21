@@ -39,7 +39,27 @@ const fetchR = async (u, intentos = 3) => {
     catch (e) { if (i === intentos) throw e; await new Promise((r) => setTimeout(r, 1500 * i)); }
   }
 };
+// ⛔⛔ ELEGIR LA FUENTE POR BÚSQUEDA ES UN DADO (medido 21-sep-2026 en tdcfreno): de 10 consultas con
+//    títulos impecables, 6 fuentes resultaron inservibles al mirarlas — una era un salvapantallas de
+//    vapor blanco donde se pedía humo negro, otra una caldera Beckett donde se pedía fundición al
+//    rojo, dos traían marca de agua VIVAVIDEO y una subtítulos quemados. Nada de eso está en el
+//    título, y `search` no devuelve el mismo orden dos veces. Por eso una consulta puede ser
+//    `id:VIDEOID`: una fuente que ya se miró y sirve queda CLAVADA y una re-corrida no vuelve a tirar
+//    el dado. El crédito CC-BY sale igual, pidiendo el título por la API de videos.
+const porId = async (id) => {
+  for (const key of KEYS) {
+    const u = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${id}&key=${key}`;
+    let j; try { j = await fetchR(u); } catch { continue; }
+    if (j.error || !j.items?.length) continue;
+    const s = j.items[0].snippet;
+    return [{ id, titulo: s.title, canal: s.channelTitle }];
+  }
+  return [{ id, titulo: `(sin título: ${id})`, canal: "(sin canal)" }];
+};
+
 const buscar = async (q) => {
+  const pin = q.match(/^id:([A-Za-z0-9_-]{11})$/);
+  if (pin) return porId(pin[1]);
   for (const key of KEYS) {
     const u = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoLicense=creativeCommon&videoEmbeddable=true&maxResults=8&q=${encodeURIComponent(q)}&key=${key}`;
     let j; try { j = await fetchR(u); } catch (e) { console.log(`  (red: ${String(e.message).slice(0, 40)})`); continue; }
