@@ -1,4 +1,4 @@
-// Main_fcsaspirina.tsx — GENERADO por build_fcsaspirina.mjs. NO editar a mano.
+// Main_fcsaspirina.tsx — GENERADO por build_fcsaspirina2.mjs. NO editar a mano.
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { CUES, OVERLAYS } from "./cues_fcsaspirina.gen";

@@ -272,6 +272,32 @@ export const SCENE_PIEL_9: Scene = {
   ],
 };
 
+// ── ESCENA "MECANISMO DE LA UREA" (Dr. Federer · fcscallos, beat de mecanismo) ──
+// Sin fotos: solo título + notas + lazo + flechas. 1828 (Wöhler) → urea → capa
+// córnea del callo → se ablanda. Duración objetivo ~30s.
+export const SCENE_UREA: Scene = {
+  avatarSrc: staticFile('broll/fcscallos_av50/av19.mp4'),
+  muted: true,
+  cameras: [
+    {time: 0.0, fx: 30, fy: 14, z: 1.1},
+    {time: 3.0, fx: 22, fy: 40, z: 1.3},
+    {time: 12.0, fx: 55, fy: 40, z: 1.2},
+    {time: 18.0, fx: 78, fy: 55, z: 1.3},
+    {time: 24.0, fx: 50, fy: 50, z: 1.0},
+  ],
+  elements: [
+    {t: 'title', x: 4, y: 6, text: 'Por qué la UREA ablanda el callo', start: 0.4},
+    {t: 'note', x: 22, y: 22, w: 26, text: '1828 · Friedrich Wöhler', start: 2.2, highlight: true, align: 'center'},
+    {t: 'note', x: 22, y: 40, w: 26, text: 'Sintetiza UREA en el laboratorio', start: 5.4},
+    {t: 'lasso', x: 22, y: 31, w: 30, h: 30, start: 8.0, rot: -2},
+    {t: 'arrow', from: [37, 40], to: [55, 40], start: 11.5, curve: -0.25},
+    {t: 'note', x: 58, y: 35, w: 24, text: 'Misma urea que produce tu piel', start: 12.5, align: 'center'},
+    {t: 'note', x: 58, y: 52, w: 24, text: 'Rompe los puentes de queratina', start: 16.0, fill: true, align: 'center'},
+    {t: 'arrow', from: [70, 58], to: [78, 70], start: 19.5, curve: 0.2},
+    {t: 'note', x: 78, y: 80, w: 22, text: 'La piel dura se afloja y se cae', start: 20.5, highlight: true, align: 'center'},
+  ],
+};
+
 /* ==================== FILTROS SVG (tinta a mano) ======================= */
 
 const InkDefs: React.FC = () => (
