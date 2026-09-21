@@ -73,12 +73,17 @@ export default {
   //    no-op silencioso: tdcfreno dirigió 27 planos con `st` y entregó con 0 % de metraje real.
   //    Ahora corre en cualquier montaje que declare fuente en el estilo (`style.stock.fuente`).
   applies: ({ style }) => (style.montaje || "vlog-crudo") === "premium" || !!style.stock?.fuente,
-  inputs: ({ P, style }) => [P.plan, P.brollDir, style.stock || null],
+  inputs: ({ P, style }) => [P.plan, P.mom, P.brollDir, style.stock || null],
   verify: ({ P }) => {
     const plan = JSON.parse(fs.readFileSync(P.plan, "utf8")).filter((p) => p.st);
     if (!plan.length) return null;
     const reg = path.join(ROOT, "_v3", `${P.slug}_stock.json`);
-    return fs.existsSync(reg) ? null : `sin registro de stock para ${plan.length} consultas`;
+    if (!fs.existsSync(reg)) return `sin registro de stock para ${plan.length} consultas`;
+    // ⛔ El registro NO es la prueba: una limpieza de Windows se llevó `public/broll/<slug>/` entero
+    //    (tdcfreno, 21-sep) y el registro quedó intacto. Lo que vale es el mp4 EN DISCO.
+    const faltan = Object.keys(JSON.parse(fs.readFileSync(reg, "utf8")))
+      .filter((n) => !fs.existsSync(path.join(P.brollDir, `${n}.mp4`)));
+    return faltan.length ? `${faltan.length} clips de stock registrados que ya no están en disco` : null;
   },
   async run({ slug, style, P, log }) {
     const plan = JSON.parse(fs.readFileSync(P.plan, "utf8"));
@@ -102,16 +107,46 @@ export default {
     if ((style.stock?.fuente || "pexels") === "ytcc") {
       fs.mkdirSync(P.brollDir, { recursive: true });
       const lista = path.join(ROOT, "_v3", `${slug}_ytcc_lista.json`);
-      fs.writeFileSync(lista, JSON.stringify(pedidos.map((p) => ({ name: p.name, query: p.st, durSec: p.durSec || 0 })), null, 1));
+      // ⛔⛔ `p.durSec` NO EXISTE en plan.json (compose no lo emite): la lista salía con `durSec: 0` y
+      //    ytcc_fetch caía a su mínimo de 2,5 s PARA TODOS. Un plano de 6 s con 2,5 s de clip se
+      //    completa con el ÚLTIMO CUADRO CONGELADO — o sea, el metraje real entraba y se convertía en
+      //    foto quieta a mitad de plano, que es justo lo que el creador rechazó. La duración sale de
+      //    los momentos ANCLADOS (la misma fuente que usa 60_build), con un techo para no vaciar la
+      //    fuente: cada plano consume `dur + 6 s` del tramo de 240 s que se baja por consulta.
+      const momDur = new Map(JSON.parse(fs.readFileSync(P.mom, "utf8")).map((m) => [m.name, +(m.end - m.start).toFixed(2)]));
+      const durDe = (name) => Math.min(8, Math.max(2.5, momDur.get(name.replace(/x$/, "")) || 0));
+      fs.writeFileSync(lista, JSON.stringify(pedidos.map((p) => ({ name: p.name, query: p.st, durSec: durDe(p.name) })), null, 1));
+      log(`ytcc: ${pedidos.length} planos en ${new Set(pedidos.map((p) => p.st)).size} consultas · ${pedidos.reduce((a, p) => a + durDe(p.name), 0).toFixed(0)} s de metraje real pedido`);
       const r = await run("node", ["scripts/ytcc_fetch.mjs", lista, P.brollDir], { cwd: ROOT, timeoutMs: 60 * 60_000, allowFail: true });
       const bajados = Number((r.out.match(/bajados=(\d+)/) || [])[1]);
       assertMeasured("stockYtccBajados", bajados, { min: 1, total: pedidos.length, log });
       const cred = path.join(P.brollDir, "_ytcc_creditos.json");
       const fuentes = fs.existsSync(cred) ? JSON.parse(fs.readFileSync(cred, "utf8")) : [];
       assertMeasured("stockYtccFuentes", fuentes.length, { min: 1, log });
+      // ⛔⛔ EL REGISTRO DE STOCK NO ES DECORACIÓN: es el ÚNICO discriminador que tiene `60_build` para
+      //    saber que el mp4 de un plano `q:1` es METRAJE REAL y no un clip de agnes (ver el bloque
+      //    `tapaElClip` en 60_build). La rama `ytcc` devolvía sin escribirlo: los planos de metraje real
+      //    van marcados `q:1` para salir del universo de agnes, así que sin registro el build los
+      //    convertía de vuelta en FOTO y el video se entregaba con 0 % de metraje real — exactamente el
+      //    defecto que esta fase vino a arreglar. Se escribe con el archivo YA conformado en disco.
+      const hechosF = path.join(P.brollDir, "_ytcc_hechos.json");
+      const hechos = fs.existsSync(hechosF) ? JSON.parse(fs.readFileSync(hechosF, "utf8")) : [];
+      fs.mkdirSync(path.join(ROOT, "_v3"), { recursive: true });
+      const qDe = new Map(pedidos.map((p) => [p.name, p.st]));
+      const regY = {};
+      for (const h of hechos) {
+        if (!fs.existsSync(path.join(P.brollDir, `${h.name}.mp4`))) continue;   // el registro lo escribe el DISCO
+        regY[h.name] = { id: `yt:${h.fuente}@${h.desde}`, query: qDe.get(h.name) || "", dur: h.dur, fuente: "ytcc" };
+      }
+      fs.writeFileSync(path.join(ROOT, "_v3", `${slug}_stock.json`), JSON.stringify(regY, null, 1));
+      assertMeasured("stockYtccRegistrados", Object.keys(regY).length, { min: 1, total: pedidos.length, log });
+      const planosImagenY = plan.filter((p) => p.tipo === "imagen").length;
+      const pctRealY = planosImagenY ? Math.round((100 * Object.keys(regY).length) / planosImagenY) : 0;
+      log(`metraje REAL ${pctRealY} % de los planos de imagen (la regla del canal es ≥25 %)`);
       log(`  ⚠️ créditos CC-BY para la descripción: ${cred}`);
       log(`  ⚠️ FALTA auditar los clips (marca de agua, subtítulos quemados, caras ajenas) antes de montar`);
-      return { stockPedidos: pedidos.length, stockNuevos: bajados, fuente: "ytcc", fuentes: fuentes.length };
+      return { stockPedidos: pedidos.length, stockNuevos: bajados, fuente: "ytcc", fuentes: fuentes.length,
+        stockEnDisco: Object.keys(regY).length, metrajeRealPct: pctRealY };
     }
 
     const keys = claves();
