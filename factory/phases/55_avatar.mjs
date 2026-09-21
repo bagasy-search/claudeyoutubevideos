@@ -5,6 +5,7 @@
 // Los job ids se persisten: un corte NO vuelve a pagar un job.
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import { run, durSec, durVideoSec } from "../lib/exec.mjs";
 import { assertMeasured } from "../lib/gate.mjs";
 import { withLease } from "../lib/lease.mjs";
@@ -158,6 +159,28 @@ export default {
         }
       }
     } catch { /* jobs.json ilegible: que lo rehaga */ }
+    // ⛔⛔ CADUCIDAD POR VENTANAS (21-sep-2026, medido en tdcfreno). La caducidad por audio de arriba
+    //    cubre "cambió la voz", pero NO cubre "cambió QUÉ tramos habla el avatar". Al sacar dos
+    //    momentos de avatar de la dirección, el audio quedó igual (mismo wav, misma fecha) y las
+    //    ventanas pasaron de 4 a 2. `sirve(parte1.mp4)` sólo pregunta si el mp4 es más nuevo que el
+    //    audio, así que dio por bueno el render de las 4 ventanas VIEJAS: la fase no llamó a RunPod,
+    //    le recortó 11,94 s de cola al reel y repartió ese material entre las ventanas nuevas — o sea
+    //    el CTA se habría comido la boca de otro tramo. Lo frenó `ventanasMalCortadas` (y la
+    //    correlación cayó de 1,00 a 0,763), pero la fase no debería llegar ahí.
+    //    Regla, la misma que la voz: la identidad de un pedazo NO es su fecha, es lo que representa.
+    const selloVent = createHash("sha1").update(JSON.stringify(W.map((w) => [w.k, w.start, w.end]))).digest("hex").slice(0, 16);
+    const selloFile = path.join(A, "ventanas_sello.json");
+    const selloPrevio = (() => { try { return JSON.parse(fs.readFileSync(selloFile, "utf8")).sello; } catch { return null; } })();
+    if (selloPrevio && selloPrevio !== selloVent) {
+      log(`las ventanas cambiaron (${selloPrevio} → ${selloVent}): el reel y su job no sirven, se rehacen`);
+      for (const f of ["reel.mp4", "parte1.mp4", "parte2.mp4"]) fs.rmSync(path.join(A, f), { force: true });
+      fs.rmSync(path.join(A, "jobs.json"), { force: true });
+    }
+    // ⛔ El sello se escribe AL FINAL, no acá. Sellar antes de tener el reel bueno hace que una corrida
+    //    que FALLA deje igual el sello nuevo, y la siguiente crea que los pedazos en disco ya son de
+    //    estas ventanas: medido en tdcfreno, el reel malo quedó recortado al largo correcto (31,5 s) y
+    //    pasó los tres chequeos de duración con el contenido de OTRO reparto. Un sello vale sólo si el
+    //    artefacto que describe llegó a estar bien.
     const sirve = (f) => {
       const t = mtime(f); if (!t) return false; if (t >= audioMs) return true;
       const b = path.basename(f, ".mp4");
@@ -170,6 +193,14 @@ export default {
       await withLease("runpod", slug, 1, async () => {
         const p1 = path.join(A, "parte1.mp4");
         let p1Nueva = false;
+        // ⛔ `parte1.mp4` también CADUCA POR LARGO, no sólo por fecha. El sello de ventanas de arriba
+        //    sólo protege a partir de la SEGUNDA corrida (la primera no tiene con qué comparar), y el
+        //    caso que hay que frenar aparece justo en la primera: un parte1 de las 4 ventanas viejas
+        //    (43,4 s) contra 2 ventanas nuevas (31,5 s). Un parte1 que sobra MÁS de lo que el cortador
+        //    tolera es de otro reparto de ventanas y no se reusa. Un job largo legítimo vuelve CORTO
+        //    (cap de RunPod), nunca largo, así que esto no rompe el retomar-job-vivo.
+        const sobra = fs.existsSync(p1) ? (await durSec(p1)) - reelSec : 0;
+        if (sobra > 1.5) { log(`parte1.mp4 sobra ${sobra.toFixed(2)} s sobre las ventanas de ahora: es de otro reparto, lo rehago`); fs.rmSync(p1, { force: true }); fs.rmSync(jobsFile, { force: true }); }
         if (!sirve(p1)) { const r = await runpodJob({ slug, parte: "parte1", face, audio: reelWav, prompt, jobsFile, outMp4: p1, log }); costo += r.costo || 0; p1Nueva = true; }
         jobs++;
         const d1 = await durSec(p1);
@@ -284,6 +315,7 @@ export default {
       const suma = Object.values(js).reduce((a, j) => a + (Number(j?.costo) || 0), 0);
       if (suma > costoSellado) costoSellado = +suma.toFixed(4);
     } catch { /* sin sello: queda el acumulador */ }
+    fs.writeFileSync(selloFile, JSON.stringify({ sello: selloVent, ventanas: W.length }, null, 1));
     return { ventanas: W.length, visiblesSec: +reelSec.toFixed(2), visiblesPct: +((100 * reelSec) / TOT).toFixed(1), jobs, costoUsd: costoSellado, syncCorr: corr, syncLagMs: Math.round(lag * 1000), lipLeadMs: Math.round(LIP * 1000), ventanasConClon: clonados };
   },
 };

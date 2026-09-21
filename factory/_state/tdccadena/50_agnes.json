@@ -1,9 +1,0 @@
-{
- "fase": "50_agnes",
- "ts": "2026-09-21T02:42:20.084Z",
- "status": "needs",
- "inputsHash": "fa9618c38a60e5da",
- "error": "30 clips de agnes esperan la revisión A OJO",
- "instrucciones": "Mirá las hojas en D:/rtmp/tdccadena_agnesqc_hojas y registrá: node scripts/agnes_qc.mjs tdccadena --revision \"ninguno\"  (o \"p015:motivo;p079:motivo\"); después: node factory/run.mjs run tdccadena --from 50_agnes",
- "ms": 1069833
-}

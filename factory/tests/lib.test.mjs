@@ -142,3 +142,23 @@ test("paths: aislamiento por slug", () => {
   assert.ok(!insideSlug("tcprueba", path.join(P.root, "public", "img", "otroslug", "p001.jpg")));
   assert.ok(!insideSlug("tcprueba", path.join(P.root, "public", "img", "tcprueba2", "x.jpg")), "prefijo parecido no cuenta");
 });
+
+// ── CANDADO POR SLUG (ítem B6) ───────────────────────────────────────────────────────────────────
+test("candado: un segundo orquestador VIVO sobre el mismo slug es rechazado, y el huérfano se pisa", async () => {
+  const { tomarCandado } = await import("../lib/candado.mjs");
+  const fs = await import("node:fs"); const os = await import("node:os"); const path = await import("node:path");
+  const { slugPaths } = await import("../lib/paths.mjs");
+  const slug = "zzcandado";
+  const f = path.join(slugPaths(slug).state, "orquestador.json");
+  fs.mkdirSync(path.dirname(f), { recursive: true });
+  // otro proceso VIVO (uso mi propio PID con otro número de proceso imposible de distinguir: uso el PID real)
+  fs.writeFileSync(f, JSON.stringify({ pid: process.pid + 0, host: os.hostname(), desde: "x", slug }));
+  // mismo PID = soy yo mismo reanudando: NO debe rechazar
+  assert.doesNotThrow(() => tomarCandado(slug, { log: () => {} }));
+  // un PID que NO existe = candado huérfano: se pisa sin quejarse
+  fs.writeFileSync(f, JSON.stringify({ pid: 999999, host: os.hostname(), desde: "x", slug }));
+  let dijo = "";
+  assert.doesNotThrow(() => tomarCandado(slug, { log: (m) => { dijo += m; } }));
+  assert.match(dijo, /huérfano/);
+  fs.rmSync(path.dirname(f), { recursive: true, force: true });
+});

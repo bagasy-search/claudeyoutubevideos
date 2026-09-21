@@ -17,6 +17,7 @@ import path from "node:path";
 import { ROOT } from "./lib/env.mjs";
 import { State, hashInputs } from "./lib/state.mjs";
 import { slugPaths, STATE_ROOT, WORK_ROOT, insideSlug } from "./lib/paths.mjs";
+import { tomarCandado } from "./lib/candado.mjs";
 import { loadSpec, validateSpec } from "./lib/spec.mjs";
 import { logger, NeedsError, BlockedError } from "./lib/phase.mjs";
 import { usage, CAPACIDAD } from "./lib/lease.mjs";
@@ -37,6 +38,7 @@ const flag = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : u
 const cmd = args[0];
 
 async function runSlug(slug, { from, only } = {}) {
+  const soltarCandado = tomarCandado(slug);   // ⛔ un solo orquestador por slug: ver lib/candado.mjs
   const spec = loadSpec(slug);
   const P = slugPaths(slug);
   const state = new State(slug);
@@ -106,6 +108,7 @@ async function runSlug(slug, { from, only } = {}) {
     if (!running.size) break;
     await Promise.race(running.values());
   }
+  soltarCandado();   // el worker corre varios slugs en el MISMO proceso: no alcanza con soltarlo al salir
   const res = phases.map((p) => ({ fase: p.id, status: status.get(p.id) || "pending" }));
   console.log(`\n=== ${slug} · ${Math.round((Date.now() - t0) / 1000)} s ===`);
   for (const r of res) console.log(`  ${r.fase.padEnd(13)} ${r.status}`);

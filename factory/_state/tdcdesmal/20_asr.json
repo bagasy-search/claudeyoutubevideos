@@ -1,23 +1,23 @@
 {
  "fase": "20_asr",
- "ts": "2026-09-21T02:38:45.577Z",
+ "ts": "2026-09-21T02:53:49.139Z",
  "status": "done",
- "inputsHash": "f6776d1cf0c03a04",
+ "inputsHash": "6ade55395a70fe2a",
  "medido": {
   "motor": "modal",
-  "palabras": 3039,
-  "inflacionPct": -0.7,
+  "palabras": 3026,
+  "inflacionPct": -1.1,
   "momentos": 206,
   "palabrasGuion": 3060,
-  "palabrasAsr": 3039,
-  "similitud": 0.949,
-  "anclajeExactoPct": 99.77,
-  "duracionSec": 1121.36,
-  "planoMedianaSec": 5.26,
-  "planoMaxSec": 10.48,
+  "palabrasAsr": 3026,
+  "similitud": 0.9553,
+  "anclajeExactoPct": 99.22,
+  "duracionSec": 1043.74,
+  "planoMedianaSec": 4.78,
+  "planoMaxSec": 9.66,
   "desorden": 0,
   "tramosRepartidos": 0,
   "tramos": []
  },
- "ms": 112397
+ "ms": 87376
 }

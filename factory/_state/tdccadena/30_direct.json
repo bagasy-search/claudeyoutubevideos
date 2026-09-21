@@ -1,22 +1,22 @@
 {
  "fase": "30_direct",
- "ts": "2026-09-21T02:41:07.905Z",
+ "ts": "2026-09-21T03:25:14.335Z",
  "status": "done",
- "inputsHash": "f1897955bac7d220",
+ "inputsHash": "8cc23573cee9b882",
  "medido": {
   "archivosDireccion": 2,
   "momentos": 96,
   "cubiertos": 96,
-  "planosImagen": 101,
-  "planosAvatar": 10,
-  "avatarPctMomentos": 10,
+  "planosImagen": 105,
+  "planosAvatar": 6,
+  "avatarPctMomentos": 6,
   "presentadorPct": 3,
-  "closePct": 20,
-  "mediumPct": 54,
-  "widePct": 26,
+  "closePct": 19,
+  "mediumPct": 53,
+  "widePct": 28,
   "rachaMaxLugar": 6,
-  "animadoPct": 30,
-  "quietos": 71
+  "animadoPct": 28,
+  "quietos": 76
  },
- "ms": 16
+ "ms": 13
 }
