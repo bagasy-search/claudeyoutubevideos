@@ -85,9 +85,24 @@ if (!process.env.FARM_FIXED_CHUNKS && !only) {
   }
   if (ref) {
     let remoto = "";
-    try { remoto = out(`git rev-parse ${ref}`); } catch { /* la rama todavía no existe local */ }
+    // El ref puede NO existir como rama LOCAL: se pushea con `HEAD:refs/heads/<ref>`, que no crea
+    // rama local. Antes eso dejaba remoto="" y el pre-vuelo entero se SALTEABA EN SILENCIO.
+    for (const cand of [ref, `origin/${ref}`]) {
+      try { remoto = out(`git rev-parse ${cand}`); break; } catch { /* pruebo el siguiente */ }
+    }
+    if (!remoto) {
+      try { remoto = out(`git ls-remote origin refs/heads/${ref}`).split(/\s/)[0]; } catch { remoto = ""; }
+    }
+    if (!remoto) {
+      console.error(`✗ PRE-VUELO: no pude resolver ${ref} (ni local, ni origin/${ref}, ni en el remoto).`);
+      console.error("  Sin ref no hay contra qué comparar: no puedo afirmar que el runner vaya a rendear TU código.");
+      process.exit(1);
+    }
     const local = out("git rev-parse HEAD");
-    if (remoto && remoto !== local) {
+    // SIEMPRE, aunque el SHA coincida con HEAD. Un archivo UNTRACKED existe en tu disco y NO en el
+    // commit, y una comparación de SHAs no lo ve. Los 9 de src/fcsclv/ voltearon una corrida de 20
+    // runners con "BigStat doesn't exist" DESPUÉS de que el pre-vuelo diera ✓.
+    if (remoto) {
       // Comparar SHAs sólo vale si commiteás sobre la rama en la que estás parado. Con VARIOS
       // agentes en el MISMO working tree la rama se arma por plumbing (read-tree + commit-tree
       // desde una base), así que HEAD es la rama de OTRO agente y el SHA nunca coincide.
@@ -108,7 +123,7 @@ if (!process.env.FARM_FIXED_CHUNKS && !only) {
       const difieren = [];
       for (const f of graf) {
         let enRama = null;
-        try { enRama = out(`git rev-parse ${ref}:${f}`); } catch { /* no está en la rama */ }
+        try { enRama = out(`git rev-parse ${remoto}:${f}`); } catch { /* no está en la rama */ }
         const enDisco = out(`git hash-object "${f}"`);
         if (enRama !== enDisco) difieren.push(`${f} ${enRama ? "DIFIERE" : "NO ESTÁ"} en ${ref}`);
       }
@@ -118,11 +133,11 @@ if (!process.env.FARM_FIXED_CHUNKS && !only) {
         console.error(`  Reconstruí la rama (make_ref) o sincronizá: git push -f origin HEAD:${ref}`);
         process.exit(1);
       }
-      console.log(`pre-vuelo: ${ref} (${remoto.slice(0, 7)}) != HEAD (${local.slice(0, 7)}), pero los ${graf.size} archivos del grafo de imports coinciden blob a blob ✓`);
+      console.log(`pre-vuelo: los ${graf.size} archivos del grafo de imports coinciden blob a blob con ${ref} (${remoto.slice(0, 7)}${remoto === local ? " = HEAD" : " != HEAD " + local.slice(0, 7)}) ✓`);
     }
     // el entry tiene que estar EN el commit que va a rendear, no solo en tu working dir
     if (entryFile && remoto) {
-      try { out(`git show ${ref}:${entryFile.replace(/\\/g, "/")}`); }
+      try { out(`git show ${remoto}:${entryFile.replace(/\\/g, "/")}`); }
       catch { console.error(`✗ PRE-VUELO: ${entryFile} no está commiteado en ${ref}. Commitealo y pusheá.`); process.exit(1); }
     }
   }
