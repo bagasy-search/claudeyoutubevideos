@@ -1,299 +1,195 @@
-// AUTO-GENERADO por gen_fcscallos.mjs — no editar a mano
-export const FCSCALLOS_TOTAL_S = 1419.64;
-export const FCSCALLOS_BEATS = [
+// AUTO-GENERADO por fcscallos_build50.mjs — no editar a mano
+export const FCSCALLOS_TOTAL_S = 1418.845261;
+export const FCSCALLOS_BEATS: any[] = [
  {
-  "kind": "avatar",
-  "tag": "hook",
-  "start": 0,
-  "dur": 34,
-  "src": "broll/fcscallos_avcomp/hook.mp4"
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s01.mp4",
-  "start": 34,
-  "dur": 5.74
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_01_consultorio_ramiro.png",
-  "start": 39.74,
-  "dur": 6.14
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_02_pie_callo_macro.png",
-  "start": 45.87,
-  "dur": 7.08
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s02.mp4",
-  "start": 52.96,
-  "dur": 7.34
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_03_ramiro_caminando_mercado.png",
-  "start": 60.29,
-  "dur": 7.9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_04_wohler_laboratorio_1828.png",
-  "start": 68.19,
-  "dur": 7.57
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s03.mp4",
-  "start": 75.76,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_05_urea_molecula_piel.png",
-  "start": 84.76,
-  "dur": 7.4
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_06_paul_brand_hospital_luisiana.png",
-  "start": 92.16,
-  "dur": 7.75
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s04.jpg",
-  "start": 99.92,
-  "dur": 5.25
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_07_federer_explicando_consultorio.png",
-  "start": 105.16,
-  "dur": 6.39
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_08_zapato_desgastado_suela.png",
-  "start": 111.56,
-  "dur": 5.99
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s05.jpg",
-  "start": 117.55,
-  "dur": 7.39
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_09_capas_queratina_diagrama.png",
-  "start": 124.94,
-  "dur": 6.66
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_10_remojo_pie_bicarbonato.png",
-  "start": 131.6,
-  "dur": 5.96
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s06.mp4",
-  "start": 137.56,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_11_piedra_pomez_uso.png",
-  "start": 146.56,
-  "dur": 6.73
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_12_romanos_termas_piedra.png",
-  "start": 153.29,
-  "dur": 5.09
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s07.jpg",
-  "start": 158.39,
-  "dur": 5.41
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_14_federer_revisando_zapato_ramiro.png",
-  "start": 163.8,
-  "dur": 5.29
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_15_ramiro_sonriendo_alta.png",
-  "start": 169.08,
-  "dur": 6.81
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s08.mp4",
-  "start": 175.89,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_16_pie_diabetico_alerta_mancha.png",
-  "start": 184.89,
-  "dur": 7.3
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_17_espejo_revision_pies.png",
-  "start": 192.19,
-  "dur": 7.02
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s09.mp4",
-  "start": 199.21,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_18_cuchilla_error_peligro.png",
-  "start": 208.21,
-  "dur": 5.31
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_19_federer_cocina_cafe.png",
-  "start": 213.52,
-  "dur": 7.5
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s10.jpg",
-  "start": 221.03,
-  "dur": 5.04
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_20_plantilla_zapato_ancho.png",
-  "start": 226.06,
-  "dur": 7.16
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_21_hyperqueratosis_diagrama.png",
-  "start": 233.22,
-  "dur": 7.29
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s11.jpg",
-  "start": 240.52,
-  "dur": 5.76
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_22_farmacia_parches_caros.png",
-  "start": 246.28,
-  "dur": 5.94
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_23_pedicura_clinica_rapida.png",
-  "start": 252.22,
-  "dur": 5.83
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s12.mp4",
-  "start": 258.05,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_24_federer_pensativo_escritorio.png",
-  "start": 267.05,
-  "dur": 6.97
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_25_puentes_hidrogeno_queratina.png",
-  "start": 274.03,
-  "dur": 7.72
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s13.mp4",
-  "start": 281.75,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_26_basin_agua_tibia_cocina.png",
-  "start": 290.75,
-  "dur": 6.15
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_27_piedra_pomez_objeto_cerca.png",
-  "start": 296.9,
-  "dur": 2.68
+  "kind": "lowerthird",
+  "start": 0.25,
+  "dur": 3.6,
+  "title": "Don Ramiro, 67 años",
+  "kicker": "EL CASO",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
   "kind": "avatar",
-  "tag": "mito",
-  "start": 299.58,
-  "dur": 34,
-  "src": "broll/fcscallos_avcomp/mito.mp4"
+  "tag": "av01",
+  "start": 11.64,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av01.mp4"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s14.mp4",
-  "start": 333.58,
-  "dur": 1.42
+  "kind": "bigstat",
+  "start": 31.14,
+  "dur": 6,
+  "value": 2,
+  "suffix": " años",
+  "eyebrow": "Don Ramiro caminó así",
+  "support": "con una piedra que él mismo fabricó, paso a paso, sin saberlo"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av02",
+  "start": 37.14,
+  "dur": 6.72,
+  "src": "broll/fcscallos_av50/av02.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 44.11,
+  "dur": 3.6,
+  "title": "Dos años con el mismo callo",
+  "kicker": "DATO",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av03",
+  "start": 61.14,
+  "dur": 6.52,
+  "src": "broll/fcscallos_av50/av03.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 76.91,
+  "dur": 3.6,
+  "title": "Wöhler sintetiza la urea",
+  "kicker": "1828",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av04",
+  "start": 90.34,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av04.mp4"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av05",
+  "start": 113.17,
+  "dur": 7.69,
+  "src": "broll/fcscallos_av50/av05.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 121.11,
+  "dur": 3.6,
+  "title": "\"El don del dolor\"",
+  "kicker": "DR. PAUL BRAND",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av06",
+  "start": 138.3,
+  "dur": 6,
+  "src": "broll/fcscallos_av50/av06.mp4"
+ },
+ {
+  "kind": "bigstat",
+  "start": 157.5,
+  "dur": 6,
+  "value": 1828,
+  "suffix": "",
+  "eyebrow": "El año",
+  "support": "Wöhler sintetiza la urea sin buscarlo, y nace la química orgánica moderna"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av07",
+  "start": 163.5,
+  "dur": 5.76,
+  "src": "broll/fcscallos_av50/av07.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 169.51,
+  "dur": 3.6,
+  "title": "\"Es cosa de la edad\" — falso",
+  "kicker": "MITO",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av08",
+  "start": 192.66,
+  "dur": 3.78,
+  "src": "broll/fcscallos_av50/av08.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 205.69,
+  "dur": 3.6,
+  "title": "Presión y fricción repetida",
+  "kicker": "CAUSA REAL",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av09",
+  "start": 215.28,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av09.mp4"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av10",
+  "start": 243.28,
+  "dur": 7.08,
+  "src": "broll/fcscallos_av50/av10.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 250.61,
+  "dur": 3.6,
+  "title": "Se engrosa para protegerse",
+  "kicker": "CAPA CÓRNEA",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av11",
+  "start": 267.42,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av11.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 285.67,
+  "dur": 3.6,
+  "title": "Parches y pedicura exprés",
+  "kicker": "EL ENEMIGO",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av12",
+  "start": 295.02,
+  "dur": 4.2,
+  "src": "broll/fcscallos_av50/av12.mp4"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av13",
+  "start": 320.82,
+  "dur": 4.76,
+  "src": "broll/fcscallos_av50/av13.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 325.83,
+  "dur": 3.6,
+  "title": "Puentes de hidrógeno",
+  "kicker": "MECANISMO",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
   "kind": "mitoverdad",
@@ -304,81 +200,80 @@ export const FCSCALLOS_BEATS = [
   "flipAt": 120
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_28_ramiro_zapatos_prueba_tienda.png",
-  "start": 343,
-  "dur": 6.38
+  "kind": "splitpanel",
+  "start": 340.76,
+  "dur": 8,
+  "eyebrow": "El enemigo de esta historia",
+  "title": "Parche caro vs. la causa real",
+  "bullets": [
+   "Parches y pedicura exprés cortan el callo",
+   "Nunca tocan la presión que lo fabrica",
+   "Vuelve a crecer en semanas",
+   "La rutina de 3 pasos ataca la causa"
+  ]
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_29_heloma_clavo_doloroso.png",
-  "start": 349.38,
-  "dur": 6.44
+  "kind": "avatar",
+  "tag": "av14",
+  "start": 348.76,
+  "dur": 8.56,
+  "src": "broll/fcscallos_av50/av14.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s15.jpg",
-  "start": 355.82,
-  "dur": 7.21
+  "kind": "lowerthird",
+  "start": 366.57,
+  "dur": 3.6,
+  "title": "Rompe la rigidez desde adentro",
+  "kicker": "LA UREA",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_30_juanete_deformidad_pie.png",
-  "start": 363.03,
-  "dur": 7
+  "kind": "avatar",
+  "tag": "av15",
+  "start": 370.94,
+  "dur": 4.9,
+  "src": "broll/fcscallos_av50/av15.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_31_neuropatia_diabetica_prueba.png",
-  "start": 370.03,
-  "dur": 5.44
+  "kind": "avatar",
+  "tag": "av16",
+  "start": 400.3,
+  "dur": 7.08,
+  "src": "broll/fcscallos_av50/av16.mp4"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s16.mp4",
-  "start": 375.46,
-  "dur": 9
+  "kind": "lowerthird",
+  "start": 407.63,
+  "dur": 3.6,
+  "title": "Remojo tibio, 15-20 min",
+  "kicker": "PASO 1",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_32_ulcera_alerta_mancha_oscura.png",
-  "start": 384.46,
-  "dur": 7.88
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_33_federer_alerta_seria.png",
-  "start": 392.34,
-  "dur": 7.31
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s17.mp4",
-  "start": 399.65,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_34_bisturi_profesional_consultorio.png",
-  "start": 408.65,
-  "dur": 5.43
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_35_familia_comentarios_celular.png",
-  "start": 414.08,
-  "dur": 6.18
+  "kind": "flowsteps",
+  "start": 415.06,
+  "dur": 9,
+  "title": "Cómo se forma un callo",
+  "nodes": [
+   {
+    "label": "Presión",
+    "sub": "roce repetido, día tras día"
+   },
+   {
+    "label": "Alerta",
+    "sub": "más producción de queratina"
+   },
+   {
+    "label": "Capas",
+    "sub": "se acumulan, compactadas"
+   },
+   {
+    "label": "Armadura",
+    "sub": "aprieta hacia adentro"
+   }
+  ]
  },
  {
   "kind": "lowerthird",
@@ -391,368 +286,343 @@ export const FCSCALLOS_BEATS = [
   "tone": "teal"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s18.mp4",
-  "start": 420.26,
-  "dur": 9
+  "kind": "avatar",
+  "tag": "av17",
+  "start": 424.06,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av17.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_36_compartir_video_familia.png",
-  "start": 429.26,
-  "dur": 5.66
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_37_una_gruesa_amarilla_teaser.png",
-  "start": 434.92,
-  "dur": 7.81
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s19.mp4",
-  "start": 442.72,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_38_federer_cierre_calido_camara.png",
-  "start": 451.72,
-  "dur": 6.05
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_39_guia_libro_recetas_mesa.png",
-  "start": 457.77,
-  "dur": 6.29
+  "kind": "lowerthird",
+  "start": 442.31,
+  "dur": 3.6,
+  "title": "Ablanda la capa externa",
+  "kicker": "BICARBONATO",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
   "kind": "avatar",
-  "tag": "mecanismo",
-  "start": 464.06,
-  "dur": 34,
-  "src": "broll/fcscallos_avcomp/mecanismo.mp4"
+  "tag": "av18",
+  "start": 452.28,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av18.mp4"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s20.mp4",
-  "start": 498.06,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_40_pies_descalzos_playa_libertad.png",
-  "start": 507.06,
-  "dur": 5.38
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_41_reserva_agua_remojo_reloj.png",
-  "start": 512.43,
-  "dur": 5.12
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s21.mp4",
-  "start": 517.55,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_42_piedra_pomez_secando_toalla.png",
-  "start": 526.55,
-  "dur": 7.05
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_43_frasco_urea_40_porciento.png",
-  "start": 533.6,
-  "dur": 6.62
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s22.mp4",
-  "start": 540.22,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_45_ramiro_llegando_consultorio_cojeando.png",
-  "start": 549.22,
-  "dur": 6.6
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_46_medico_manos_abiertas_explicando2.png",
-  "start": 555.82,
-  "dur": 7.49
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s23.mp4",
-  "start": 563.31,
-  "dur": 7.94
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_47_pie_grieta_talon_seco.png",
-  "start": 571.24,
-  "dur": 5.49
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_48_vendedor_ambulante_calzado_puesto.png",
-  "start": 576.74,
-  "dur": 5.28
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s24.jpg",
-  "start": 582.02,
-  "dur": 5.86
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_49_ramiro_probandose_calzado_ancho.png",
-  "start": 587.88,
-  "dur": 5.17
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_50_plantilla_ortopedica_mano.png",
-  "start": 593.05,
-  "dur": 6.71
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s25.jpg",
-  "start": 599.76,
-  "dur": 7.01
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_51_federer_sosteniendo_zapato_viejo.png",
-  "start": 606.77,
-  "dur": 6.97
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_52_hueso_juanete_radiografia_pared.png",
-  "start": 613.75,
-  "dur": 5.61
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s26.jpg",
-  "start": 619.36,
-  "dur": 6.19
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_53_ulcera_gasa_vendaje_pie.png",
-  "start": 625.54,
-  "dur": 6.61
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_54_espejo_mano_revision_diaria.png",
-  "start": 632.15,
-  "dur": 6.18
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s27.mp4",
-  "start": 638.32,
-  "dur": 6.57
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_55_ramiro_final_abrazo_esposa.png",
-  "start": 644.89,
-  "dur": 7.1
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_56_cuidado_pie_diabetico_enfermera.png",
-  "start": 651.99,
-  "dur": 7.79
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s28.mp4",
-  "start": 659.79,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_57_farmacia_estante_calcetines_algodon.png",
-  "start": 668.79,
-  "dur": 7.42
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_58_federer_libreta_notas_paciente.png",
-  "start": 676.21,
-  "dur": 7.71
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s29.jpg",
-  "start": 683.92,
-  "dur": 7.87
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_59_bicarbonato_caja_cocina_estante.png",
-  "start": 691.78,
-  "dur": 5.41
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_60_pies_juntos_recuperados_luz_calida.png",
-  "start": 697.19,
-  "dur": 5.68
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s30.mp4",
-  "start": 702.87,
-  "dur": 7.89
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s31.jpg",
-  "start": 710.76,
-  "dur": 5.25
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s32.mp4",
-  "start": 716,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s33.mp4",
-  "start": 725,
-  "dur": 2.08
+  "kind": "cutaway",
+  "start": 465.28,
+  "dur": 9,
+  "eyebrow": "Por dentro de la piel",
+  "title": "Dónde se forma el callo",
+  "callouts": [
+   {
+    "text": "Capa córnea",
+    "sub": "se engrosa por presión",
+    "tx": 0.3,
+    "ty": 0.3,
+    "side": "left"
+   },
+   {
+    "text": "Puentes de hidrógeno",
+    "sub": "mantienen todo rígido",
+    "tx": 0.7,
+    "ty": 0.45,
+    "side": "right"
+   },
+   {
+    "text": "Centro duro",
+    "sub": "aprieta hacia adentro",
+    "tx": 0.5,
+    "ty": 0.78,
+    "side": "left"
+   }
+  ]
  },
  {
   "kind": "avatar",
-  "tag": "paso3_urea",
-  "start": 727.08,
-  "dur": 40,
-  "src": "broll/fcscallos_avcomp/paso3_urea.mp4"
+  "tag": "av19",
+  "start": 474.28,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av19.mp4"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s34.mp4",
-  "start": 767.08,
-  "dur": 9
+  "kind": "fedwhiteboard",
+  "start": 483.28,
+  "dur": 30
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s35.jpg",
-  "start": 776.08,
-  "dur": 7.04
+  "kind": "avatar",
+  "tag": "av20",
+  "start": 516.02,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av20.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s36.jpg",
-  "start": 783.12,
-  "dur": 6.74
+  "kind": "avatar",
+  "tag": "av21",
+  "start": 528.76,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av21.mp4"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s37.mp4",
-  "start": 789.86,
-  "dur": 9
+  "kind": "flowsteps",
+  "start": 537.76,
+  "dur": 9,
+  "title": "Lo que hace la urea",
+  "nodes": [
+   {
+    "label": "Se cuela",
+    "sub": "entre las capas de queratina"
+   },
+   {
+    "label": "Rompe",
+    "sub": "los puentes de hidrógeno"
+   },
+   {
+    "label": "Hidrata",
+    "sub": "la estructura desde adentro"
+   },
+   {
+    "label": "Se afloja",
+    "sub": "la piel dura, de verdad"
+   }
+  ]
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s38.mp4",
-  "start": 798.86,
-  "dur": 9
+  "kind": "lowerthird",
+  "start": 547.01,
+  "dur": 3.6,
+  "title": "Piedra pómez en círculos",
+  "kicker": "PASO 2",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s39.mp4",
-  "start": 807.86,
-  "dur": 9
+  "kind": "avatar",
+  "tag": "av22",
+  "start": 554.4,
+  "dur": 8.74,
+  "src": "broll/fcscallos_av50/av22.mp4"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s40.mp4",
-  "start": 816.86,
-  "dur": 9
+  "kind": "checklist",
+  "start": 563.14,
+  "dur": 8,
+  "eyebrow": "Antes de empezar",
+  "title": "Lo que necesitás",
+  "items": [
+   "Un recipiente donde quepa tu pie",
+   "Agua tibia, bicarbonato o sal",
+   "Piedra pómez personal, no compartida",
+   "Crema con urea 10-40%"
+  ],
+  "stamp": "LISTO"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s01.mp4",
-  "start": 825.86,
-  "dur": 5.74
+  "kind": "checklist",
+  "start": 572,
+  "dur": 9,
+  "eyebrow": "La receta completa",
+  "title": "Los 3 pasos, en orden",
+  "items": [
+   "Remojo tibio 15-20 min con bicarbonato",
+   "Piedra pómez en círculos suaves",
+   "Crema con urea + calcetín toda la noche"
+  ],
+  "stamp": "3 PASOS"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_01_consultorio_ramiro.png",
-  "start": 831.6,
-  "dur": 5.42
+  "kind": "avatar",
+  "tag": "av23",
+  "start": 581,
+  "dur": 5.9,
+  "src": "broll/fcscallos_av50/av23.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_02_pie_callo_macro.png",
-  "start": 837.02,
-  "dur": 7.06
+  "kind": "lowerthird",
+  "start": 587.15,
+  "dur": 3.6,
+  "title": "Nunca hasta que duela",
+  "kicker": "OJO",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 602.76,
+  "dur": 5,
+  "kicker": "RUTINA",
+  "title": "Paso 1: el remojo",
+  "desc": "Agua tibia + bicarbonato, 15-20 minutos",
+  "tag": "paso1",
+  "tone": "info"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av24",
+  "start": 607.76,
+  "dur": 5.86,
+  "src": "broll/fcscallos_av50/av24.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 622.87,
+  "dur": 3.6,
+  "title": "Ya usaban piedra pómez",
+  "kicker": "ROMANOS",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av25",
+  "start": 637.36,
+  "dur": 3.98,
+  "src": "broll/fcscallos_av50/av25.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 659.04,
+  "dur": 5,
+  "kicker": "RUTINA",
+  "title": "Paso 2: piedra pómez",
+  "desc": "Círculos suaves, nunca hasta que duela",
+  "tag": "paso2",
+  "tone": "info"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av26",
+  "start": 664.04,
+  "dur": 6.54,
+  "src": "broll/fcscallos_av50/av26.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 672.25,
+  "dur": 3.6,
+  "title": "Crema con urea, cada noche",
+  "kicker": "PASO 3",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av27",
+  "start": 695.22,
+  "dur": 6.4,
+  "src": "broll/fcscallos_av50/av27.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 710.87,
+  "dur": 3.6,
+  "title": "10-20% para callos comunes",
+  "kicker": "CONCENTRACIÓN",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av28",
+  "start": 714.78,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av28.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 730,
+  "dur": 5,
+  "kicker": "RUTINA",
+  "title": "Paso 3: la urea",
+  "desc": "El paso que casi nadie hace bien",
+  "tag": "paso3",
+  "tone": "info"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av29",
+  "start": 739.96,
+  "dur": 7.5,
+  "src": "broll/fcscallos_av50/av29.mp4"
+ },
+ {
+  "kind": "bigstat",
+  "start": 747.46,
+  "dur": 6,
+  "value": 40,
+  "suffix": "%",
+  "eyebrow": "Urea en crema, para lo más antiguo",
+  "support": "como el callo de don Ramiro, más potente para romper la dureza"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 753.71,
+  "dur": 3.6,
+  "title": "Hasta 40% de urea",
+  "kicker": "CASOS DUROS",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "rankbars",
+  "start": 764.12,
+  "dur": 7,
+  "title": "Cuánto te lleva cada paso",
+  "unit": "min",
+  "rows": [
+   {
+    "label": "Remojo",
+    "value": 20
+   },
+   {
+    "label": "Piedra pómez",
+    "value": 1.5
+   },
+   {
+    "label": "Urea + calcetín",
+    "value": 8
+   }
+  ]
+ },
+ {
+  "kind": "avatar",
+  "tag": "av30",
+  "start": 771.12,
+  "dur": 4.42,
+  "src": "broll/fcscallos_av50/av30.mp4"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av31",
+  "start": 785.42,
+  "dur": 8.9,
+  "src": "broll/fcscallos_av50/av31.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 794.57,
+  "dur": 3.6,
+  "title": "Calcetín de algodón toda la noche",
+  "kicker": "TRUCO",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av32",
+  "start": 811.74,
+  "dur": 4.84,
+  "src": "broll/fcscallos_av50/av32.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 834.83,
+  "dur": 3.6,
+  "title": "3 a 4 semanas, no una sesión",
+  "kicker": "CONSTANCIA",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
   "kind": "lowerthird",
@@ -765,46 +635,36 @@ export const FCSCALLOS_BEATS = [
   "tone": "teal"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s02.mp4",
-  "start": 844.08,
-  "dur": 7.34
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_03_ramiro_caminando_mercado.png",
-  "start": 851.42,
-  "dur": 7.08
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_04_wohler_laboratorio_1828.png",
-  "start": 858.5,
-  "dur": 5.21
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s03.mp4",
-  "start": 863.71,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_05_urea_molecula_piel.png",
-  "start": 872.71,
-  "dur": 1.87
+  "kind": "avatar",
+  "tag": "av33",
+  "start": 842.3,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av33.mp4"
  },
  {
   "kind": "avatar",
-  "tag": "resultado_ramiro",
-  "start": 874.58,
-  "dur": 36,
-  "src": "broll/fcscallos_avcomp/resultado_ramiro.mp4"
+  "tag": "av34",
+  "start": 866.04,
+  "dur": 8.54,
+  "src": "broll/fcscallos_av50/av34.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 874.83,
+  "dur": 3.6,
+  "title": "Revisá la puntera y la suela",
+  "kicker": "EL CALZADO",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "bigstat",
+  "start": 884.24,
+  "dur": 6,
+  "value": 3,
+  "suffix": " semanas",
+  "eyebrow": "Lo que tardó Ramiro",
+  "support": "con la rutina completa y el cambio de calzado"
  },
  {
   "kind": "frasecinetica",
@@ -831,102 +691,115 @@ export const FCSCALLOS_BEATS = [
   "tone": "teal"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_06_paul_brand_hospital_luisiana.png",
-  "start": 910.58,
-  "dur": 6.51
+  "kind": "avatar",
+  "tag": "av35",
+  "start": 890.24,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av35.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s04.jpg",
-  "start": 917.09,
-  "dur": 5.86
+  "kind": "splitpanel",
+  "start": 900,
+  "dur": 7,
+  "eyebrow": "Zapato de don Ramiro",
+  "title": "Lo que confirmó el diagnóstico",
+  "bullets": [
+   "Punta angosta, apretaba los dedos",
+   "Suela gastada del lado del callo",
+   "No era casualidad: era el roce diario"
+  ]
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_07_federer_explicando_consultorio.png",
-  "start": 922.96,
-  "dur": 7.51
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_08_zapato_desgastado_suela.png",
-  "start": 930.47,
-  "dur": 6.02
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s05.jpg",
-  "start": 936.49,
-  "dur": 7.47
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_09_capas_queratina_diagrama.png",
-  "start": 943.96,
-  "dur": 6.65
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_10_remojo_pie_bicarbonato.png",
-  "start": 950.6,
-  "dur": 6.39
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s06.mp4",
-  "start": 956.99,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_11_piedra_pomez_uso.png",
-  "start": 965.99,
-  "dur": 2.49
+  "kind": "pullquote",
+  "start": 908.78,
+  "dur": 7,
+  "quote": "Doctor, ya no siento la piedrita.",
+  "author": "Don Ramiro",
+  "role": "paciente, 67 años"
  },
  {
   "kind": "avatar",
-  "tag": "alarma_diabetica",
-  "start": 968.48,
-  "dur": 46,
-  "src": "broll/fcscallos_avcomp/alarma_diabetica.mp4"
+  "tag": "av36",
+  "start": 915.78,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av36.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_12_romanos_termas_piedra.png",
-  "start": 1014.48,
-  "dur": 5.79
+  "kind": "lowerthird",
+  "start": 925.03,
+  "dur": 3.6,
+  "title": "\"Ya no siento la piedrita\"",
+  "kicker": "RESULTADO",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s07.jpg",
-  "start": 1020.27,
-  "dur": 7.26
+  "kind": "avatar",
+  "tag": "av37",
+  "start": 961.24,
+  "dur": 6.86,
+  "src": "broll/fcscallos_av50/av37.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_14_federer_revisando_zapato_ramiro.png",
-  "start": 1027.53,
-  "dur": 5.16
+  "kind": "pullquote",
+  "start": 971.38,
+  "dur": 8,
+  "quote": "El dolor no es un castigo, es un regalo, porque nos protege.",
+  "author": "Dr. Paul Brand",
+  "role": "cirujano, \"El don del dolor\""
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_15_ramiro_sonriendo_alta.png",
-  "start": 1032.7,
-  "dur": 5.23
+  "kind": "avatar",
+  "tag": "av38",
+  "start": 979.38,
+  "dur": 4.5,
+  "src": "broll/fcscallos_av50/av38.mp4"
+ },
+ {
+  "kind": "checklist",
+  "start": 985,
+  "dur": 9,
+  "eyebrow": "El doctor Paul Brand lo advirtió",
+  "title": "Alarma si vivís con diabetes",
+  "items": [
+   "Punto oscuro en el centro del callo",
+   "Sale una gotita de líquido al presionar",
+   "Piel más caliente o roja de lo normal",
+   "Aunque NO te duela"
+  ],
+  "stamp": "URGENCIA"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av39",
+  "start": 994.7,
+  "dur": 4.28,
+  "src": "broll/fcscallos_av50/av39.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 999.23,
+  "dur": 3.6,
+  "title": "Heloma o clavo: consultá a un podólogo",
+  "kicker": "LÍMITE",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av40",
+  "start": 1028.82,
+  "dur": 3.56,
+  "src": "broll/fcscallos_av50/av40.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 1032.63,
+  "dur": 3.6,
+  "title": "Diabetes + callo sin dolor",
+  "kicker": "ALARMA",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
   "kind": "lowerthird",
@@ -939,81 +812,57 @@ export const FCSCALLOS_BEATS = [
   "tone": "warn"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s08.mp4",
-  "start": 1037.93,
-  "dur": 9
+  "kind": "avatar",
+  "tag": "av41",
+  "start": 1056.96,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av41.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_16_pie_diabetico_alerta_mancha.png",
-  "start": 1046.93,
-  "dur": 6.64
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_17_espejo_revision_pies.png",
-  "start": 1053.57,
-  "dur": 5.69
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s09.mp4",
-  "start": 1059.26,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_18_cuchilla_error_peligro.png",
-  "start": 1068.26,
-  "dur": 5.21
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_19_federer_cocina_cafe.png",
-  "start": 1073.47,
-  "dur": 7.87
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s10.jpg",
-  "start": 1081.34,
-  "dur": 5.53
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_20_plantilla_zapato_ancho.png",
-  "start": 1086.87,
-  "dur": 7.98
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_21_hyperqueratosis_diagrama.png",
-  "start": 1094.86,
-  "dur": 6.7
+  "kind": "lowerthird",
+  "start": 1066.21,
+  "dur": 3.6,
+  "title": "Punto oscuro en el centro",
+  "kicker": "SEÑAL",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
   "kind": "avatar",
-  "tag": "error_cuchilla",
-  "start": 1101.56,
-  "dur": 38,
-  "src": "broll/fcscallos_avcomp/error_cuchilla.mp4"
+  "tag": "av42",
+  "start": 1072.7,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av42.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s11.jpg",
-  "start": 1139.56,
-  "dur": 1.44
+  "kind": "avatar",
+  "tag": "av43",
+  "start": 1101.56,
+  "dur": 8.02,
+  "src": "broll/fcscallos_av50/av43.mp4"
+ },
+ {
+  "kind": "mitoverdad",
+  "start": 1110,
+  "dur": 8,
+  "myth": "Cortarlo con cuchilla lo elimina para siempre",
+  "truth": "Vuelve en días y puede abrir una herida"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 1118.25,
+  "dur": 3.6,
+  "title": "Revisá tus pies todos los días",
+  "kicker": "REGLA DE ORO",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av44",
+  "start": 1126.04,
+  "dur": 4.34,
+  "src": "broll/fcscallos_av50/av44.mp4"
  },
  {
   "kind": "errorstinger",
@@ -1024,67 +873,43 @@ export const FCSCALLOS_BEATS = [
   "tone": "warn"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_22_farmacia_parches_caros.png",
-  "start": 1144,
-  "dur": 6.94
+  "kind": "avatar",
+  "tag": "av45",
+  "start": 1153.74,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av45.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_23_pedicura_clinica_rapida.png",
-  "start": 1150.94,
-  "dur": 7.5
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s12.mp4",
-  "start": 1158.44,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_24_federer_pensativo_escritorio.png",
-  "start": 1167.44,
-  "dur": 6.51
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_25_puentes_hidrogeno_queratina.png",
-  "start": 1173.94,
-  "dur": 6.53
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s13.mp4",
-  "start": 1180.47,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_26_basin_agua_tibia_cocina.png",
-  "start": 1189.47,
-  "dur": 7.69
+  "kind": "lowerthird",
+  "start": 1164.41,
+  "dur": 3.6,
+  "title": "Cortar con cuchilla en casa",
+  "kicker": "EL ERROR",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
   "kind": "avatar",
-  "tag": "recap",
-  "start": 1197.16,
-  "dur": 34,
-  "src": "broll/fcscallos_avcomp/recap.mp4"
+  "tag": "av46",
+  "start": 1174.52,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av46.mp4"
  },
  {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_27_piedra_pomez_objeto_cerca.png",
-  "start": 1231.16,
-  "dur": 0.84
+  "kind": "lowerthird",
+  "start": 1198.51,
+  "dur": 3.6,
+  "title": "Fácil cortar más profundo de lo que crees",
+  "kicker": "PELIGRO",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av47",
+  "start": 1205.72,
+  "dur": 7.6,
+  "src": "broll/fcscallos_av50/av47.mp4"
  },
  {
   "kind": "guardaesto",
@@ -1099,150 +924,915 @@ export const FCSCALLOS_BEATS = [
   "tag": "GUÁRDALO"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s14.mp4",
-  "start": 1241,
-  "dur": 3.84
+  "kind": "avatar",
+  "tag": "av48",
+  "start": 1234.84,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av48.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 1247.71,
+  "dur": 3.6,
+  "title": "Remojo + piedra pómez + urea",
+  "kicker": "RECAP",
+  "tag": "captionfill",
+  "tone": "teal"
  },
  {
   "kind": "avatar",
-  "tag": "cta_guia",
-  "start": 1244.84,
-  "dur": 38,
-  "src": "broll/fcscallos_avcomp/cta_guia.mp4"
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_28_ramiro_zapatos_prueba_tienda.png",
-  "start": 1282.84,
-  "dur": 7.52
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_29_heloma_clavo_doloroso.png",
-  "start": 1290.36,
-  "dur": 5.04
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "broll/fcscallos_s15.jpg",
-  "start": 1295.4,
-  "dur": 7.7
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_30_juanete_deformidad_pie.png",
-  "start": 1303.1,
-  "dur": 7.42
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_31_neuropatia_diabetica_prueba.png",
-  "start": 1310.52,
-  "dur": 6.75
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s16.mp4",
-  "start": 1317.27,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_32_ulcera_alerta_mancha_oscura.png",
-  "start": 1326.27,
-  "dur": 7.99
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_33_federer_alerta_seria.png",
-  "start": 1334.26,
-  "dur": 5
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s17.mp4",
-  "start": 1339.26,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_34_bisturi_profesional_consultorio.png",
-  "start": 1348.26,
-  "dur": 7.5
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_35_familia_comentarios_celular.png",
-  "start": 1355.76,
-  "dur": 6
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s18.mp4",
-  "start": 1361.76,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_36_compartir_video_familia.png",
-  "start": 1370.76,
-  "dur": 7.01
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_37_una_gruesa_amarilla_teaser.png",
-  "start": 1377.77,
-  "dur": 5.3
- },
- {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s19.mp4",
-  "start": 1383.08,
-  "dur": 9
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_38_federer_cierre_calido_camara.png",
-  "start": 1392.08,
-  "dur": 6.63
- },
- {
-  "kind": "raw",
-  "type": "img",
-  "src": "img/fe_callos_39_guia_libro_recetas_mesa.png",
-  "start": 1398.71,
-  "dur": 5.37
+  "tag": "av49",
+  "start": 1253.88,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av49.mp4"
  },
  {
   "kind": "avatar",
-  "tag": "cierre",
-  "start": 1404.08,
-  "dur": 14.02,
-  "src": "broll/fcscallos_avcomp/cierre.mp4"
+  "tag": "av50",
+  "start": 1282.56,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av50.mp4"
  },
  {
-  "kind": "raw",
-  "type": "vid",
-  "src": "broll/fcscallos_s20.mp4",
-  "start": 1418.1,
-  "dur": 1.54
+  "kind": "lowerthird",
+  "start": 1291.81,
+  "dur": 3.6,
+  "title": "Más remedios en la descripción",
+  "kicker": "LA GUÍA",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av51",
+  "start": 1304.26,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av51.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 1328.25,
+  "dur": 3.6,
+  "title": "Piedra pómez: personal, no se comparte",
+  "kicker": "DATO",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av52",
+  "start": 1337,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av52.mp4"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av53",
+  "start": 1360.58,
+  "dur": 8.02,
+  "src": "broll/fcscallos_av50/av53.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 1368.85,
+  "dur": 3.6,
+  "title": "La proteína que endurece la piel",
+  "kicker": "QUERATINA",
+  "tag": "captionfill",
+  "tone": "teal"
+ },
+ {
+  "kind": "avatar",
+  "tag": "av54",
+  "start": 1389.28,
+  "dur": 9,
+  "src": "broll/fcscallos_av50/av54.mp4"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 1402.37,
+  "dur": 3.6,
+  "title": "El roce diario fabrica el callo",
+  "kicker": "ZAPATO",
+  "tag": "captionfill",
+  "tone": "teal"
  }
-] as any[];
+];
+export const FCSCALLOS_BROLL: any[] = [
+ {
+  "start": 0,
+  "dur": 9,
+  "src": "broll/fcscallos_s28.mp4",
+  "video": true
+ },
+ {
+  "start": 9,
+  "dur": 2.64,
+  "src": "broll/fcscallos_s17.mp4",
+  "video": true
+ },
+ {
+  "start": 20.64,
+  "dur": 9,
+  "src": "broll/fcscallos_s09.mp4",
+  "video": true
+ },
+ {
+  "start": 29.64,
+  "dur": 1.5,
+  "src": "broll/fcscallos_s40.mp4",
+  "video": true
+ },
+ {
+  "start": 43.86,
+  "dur": 9,
+  "src": "broll/fcscallos_s08.mp4",
+  "video": true
+ },
+ {
+  "start": 52.86,
+  "dur": 8.28,
+  "src": "broll/fcscallos_s38.mp4",
+  "video": true
+ },
+ {
+  "start": 67.66,
+  "dur": 9,
+  "src": "broll/fcscallos_s16.mp4",
+  "video": true
+ },
+ {
+  "start": 76.66,
+  "dur": 9,
+  "src": "broll/fcscallos_s37.mp4",
+  "video": true
+ },
+ {
+  "start": 85.66,
+  "dur": 4.68,
+  "src": "broll/fcscallos_s34.mp4",
+  "video": true
+ },
+ {
+  "start": 99.34,
+  "dur": 9,
+  "src": "broll/fcscallos_s22.mp4",
+  "video": true
+ },
+ {
+  "start": 108.34,
+  "dur": 4.83,
+  "src": "broll/fcscallos_s27.mp4",
+  "video": true
+ },
+ {
+  "start": 120.86,
+  "dur": 9,
+  "src": "broll/fcscallos_s19.mp4",
+  "video": true
+ },
+ {
+  "start": 129.86,
+  "dur": 7.94,
+  "src": "broll/fcscallos_s23.mp4",
+  "video": true
+ },
+ {
+  "start": 137.8,
+  "dur": 0.5,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 144.3,
+  "dur": 1.42,
+  "src": "broll/fcscallos_s14.mp4",
+  "video": true
+ },
+ {
+  "start": 145.72,
+  "dur": 9,
+  "src": "broll/fcscallos_s32.mp4",
+  "video": true
+ },
+ {
+  "start": 154.72,
+  "dur": 2.78,
+  "src": "broll/fcscallos_s08.mp4",
+  "video": true
+ },
+ {
+  "start": 169.26,
+  "dur": 5.74,
+  "src": "broll/fcscallos_s01.mp4",
+  "video": true
+ },
+ {
+  "start": 175,
+  "dur": 9,
+  "src": "broll/fcscallos_s09.mp4",
+  "video": true
+ },
+ {
+  "start": 184,
+  "dur": 8.66,
+  "src": "broll/fcscallos_s03.mp4",
+  "video": true
+ },
+ {
+  "start": 196.44,
+  "dur": 9,
+  "src": "broll/fcscallos_s18.mp4",
+  "video": true
+ },
+ {
+  "start": 205.44,
+  "dur": 9,
+  "src": "broll/fcscallos_s06.mp4",
+  "video": true
+ },
+ {
+  "start": 214.44,
+  "dur": 0.84,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 224.28,
+  "dur": 9,
+  "src": "broll/fcscallos_s13.mp4",
+  "video": true
+ },
+ {
+  "start": 233.28,
+  "dur": 1.54,
+  "src": "broll/fcscallos_s20.mp4",
+  "video": true
+ },
+ {
+  "start": 234.82,
+  "dur": 2.08,
+  "src": "broll/fcscallos_s33.mp4",
+  "video": true
+ },
+ {
+  "start": 236.9,
+  "dur": 6.38,
+  "src": "broll/fcscallos_s39.mp4",
+  "video": true
+ },
+ {
+  "start": 250.36,
+  "dur": 9,
+  "src": "broll/fcscallos_s13.mp4",
+  "video": true
+ },
+ {
+  "start": 259.36,
+  "dur": 8.06,
+  "src": "broll/fcscallos_s18.mp4",
+  "video": true
+ },
+ {
+  "start": 276.42,
+  "dur": 9,
+  "src": "broll/fcscallos_s19.mp4",
+  "video": true
+ },
+ {
+  "start": 285.42,
+  "dur": 9,
+  "src": "broll/fcscallos_s12.mp4",
+  "video": true
+ },
+ {
+  "start": 294.42,
+  "dur": 0.6,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 299.22,
+  "dur": 7.34,
+  "src": "broll/fcscallos_s02.mp4",
+  "video": true
+ },
+ {
+  "start": 306.56,
+  "dur": 9,
+  "src": "broll/fcscallos_s12.mp4",
+  "video": true
+ },
+ {
+  "start": 315.56,
+  "dur": 5.26,
+  "src": "broll/fcscallos_s01.mp4",
+  "video": true
+ },
+ {
+  "start": 325.58,
+  "dur": 9,
+  "src": "broll/fcscallos_s21.mp4",
+  "video": true
+ },
+ {
+  "start": 334.58,
+  "dur": 6.18,
+  "src": "broll/fcscallos_s03.mp4",
+  "video": true
+ },
+ {
+  "start": 357.32,
+  "dur": 9,
+  "src": "broll/fcscallos_s20.mp4",
+  "video": true
+ },
+ {
+  "start": 366.32,
+  "dur": 4.62,
+  "src": "broll/fcscallos_s06.mp4",
+  "video": true
+ },
+ {
+  "start": 375.84,
+  "dur": 9,
+  "src": "broll/fcscallos_s17.mp4",
+  "video": true
+ },
+ {
+  "start": 384.84,
+  "dur": 9,
+  "src": "broll/fcscallos_s16.mp4",
+  "video": true
+ },
+ {
+  "start": 393.84,
+  "dur": 3.84,
+  "src": "broll/fcscallos_s14.mp4",
+  "video": true
+ },
+ {
+  "start": 397.68,
+  "dur": 2.62,
+  "src": "broll/fcscallos_s02.mp4",
+  "video": true
+ },
+ {
+  "start": 407.38,
+  "dur": 7.68,
+  "src": "broll/fcscallos_s30.mp4",
+  "video": true
+ },
+ {
+  "start": 433.06,
+  "dur": 9,
+  "src": "broll/fcscallos_s28.mp4",
+  "video": true
+ },
+ {
+  "start": 442.06,
+  "dur": 9,
+  "src": "broll/fcscallos_s17.mp4",
+  "video": true
+ },
+ {
+  "start": 451.06,
+  "dur": 1.22,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 461.28,
+  "dur": 4,
+  "src": "broll/fcscallos_s09.mp4",
+  "video": true
+ },
+ {
+  "start": 513.28,
+  "dur": 2.74,
+  "src": "broll/fcscallos_s40.mp4",
+  "video": true
+ },
+ {
+  "start": 525.02,
+  "dur": 3.74,
+  "src": "broll/fcscallos_s08.mp4",
+  "video": true
+ },
+ {
+  "start": 546.76,
+  "dur": 7.64,
+  "src": "broll/fcscallos_s38.mp4",
+  "video": true
+ },
+ {
+  "start": 571.14,
+  "dur": 0.86,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 586.9,
+  "dur": 9,
+  "src": "broll/fcscallos_s16.mp4",
+  "video": true
+ },
+ {
+  "start": 595.9,
+  "dur": 6.86,
+  "src": "broll/fcscallos_s37.mp4",
+  "video": true
+ },
+ {
+  "start": 613.62,
+  "dur": 9,
+  "src": "broll/fcscallos_s34.mp4",
+  "video": true
+ },
+ {
+  "start": 622.62,
+  "dur": 9,
+  "src": "broll/fcscallos_s22.mp4",
+  "video": true
+ },
+ {
+  "start": 631.62,
+  "dur": 5.74,
+  "src": "broll/fcscallos_s27.mp4",
+  "video": true
+ },
+ {
+  "start": 641.34,
+  "dur": 9,
+  "src": "broll/fcscallos_s19.mp4",
+  "video": true
+ },
+ {
+  "start": 650.34,
+  "dur": 7.94,
+  "src": "broll/fcscallos_s23.mp4",
+  "video": true
+ },
+ {
+  "start": 658.28,
+  "dur": 0.76,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 670.58,
+  "dur": 1.42,
+  "src": "broll/fcscallos_s14.mp4",
+  "video": true
+ },
+ {
+  "start": 672,
+  "dur": 9,
+  "src": "broll/fcscallos_s32.mp4",
+  "video": true
+ },
+ {
+  "start": 681,
+  "dur": 9,
+  "src": "broll/fcscallos_s08.mp4",
+  "video": true
+ },
+ {
+  "start": 690,
+  "dur": 5.22,
+  "src": "broll/fcscallos_s01.mp4",
+  "video": true
+ },
+ {
+  "start": 701.62,
+  "dur": 9,
+  "src": "broll/fcscallos_s09.mp4",
+  "video": true
+ },
+ {
+  "start": 710.62,
+  "dur": 4.16,
+  "src": "broll/fcscallos_s03.mp4",
+  "video": true
+ },
+ {
+  "start": 723.78,
+  "dur": 6.22,
+  "src": "broll/fcscallos_s18.mp4",
+  "video": true
+ },
+ {
+  "start": 735,
+  "dur": 4.96,
+  "src": "broll/fcscallos_s06.mp4",
+  "video": true
+ },
+ {
+  "start": 753.46,
+  "dur": 9,
+  "src": "broll/fcscallos_s13.mp4",
+  "video": true
+ },
+ {
+  "start": 762.46,
+  "dur": 1.54,
+  "src": "broll/fcscallos_s20.mp4",
+  "video": true
+ },
+ {
+  "start": 775.54,
+  "dur": 2.08,
+  "src": "broll/fcscallos_s33.mp4",
+  "video": true
+ },
+ {
+  "start": 777.62,
+  "dur": 7.8,
+  "src": "broll/fcscallos_s39.mp4",
+  "video": true
+ },
+ {
+  "start": 794.32,
+  "dur": 9,
+  "src": "broll/fcscallos_s13.mp4",
+  "video": true
+ },
+ {
+  "start": 803.32,
+  "dur": 8.42,
+  "src": "broll/fcscallos_s18.mp4",
+  "video": true
+ },
+ {
+  "start": 816.58,
+  "dur": 9,
+  "src": "broll/fcscallos_s19.mp4",
+  "video": true
+ },
+ {
+  "start": 825.58,
+  "dur": 9,
+  "src": "broll/fcscallos_s12.mp4",
+  "video": true
+ },
+ {
+  "start": 834.58,
+  "dur": 7.34,
+  "src": "broll/fcscallos_s02.mp4",
+  "video": true
+ },
+ {
+  "start": 851.3,
+  "dur": 9,
+  "src": "broll/fcscallos_s12.mp4",
+  "video": true
+ },
+ {
+  "start": 860.3,
+  "dur": 5.74,
+  "src": "broll/fcscallos_s01.mp4",
+  "video": true
+ },
+ {
+  "start": 874.58,
+  "dur": 9,
+  "src": "broll/fcscallos_s21.mp4",
+  "video": true
+ },
+ {
+  "start": 883.58,
+  "dur": 0.66,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 899.24,
+  "dur": 0.76,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 907,
+  "dur": 1.78,
+  "src": "broll/fcscallos_s03.mp4",
+  "video": true
+ },
+ {
+  "start": 924.78,
+  "dur": 9,
+  "src": "broll/fcscallos_s20.mp4",
+  "video": true
+ },
+ {
+  "start": 933.78,
+  "dur": 9,
+  "src": "broll/fcscallos_s06.mp4",
+  "video": true
+ },
+ {
+  "start": 942.78,
+  "dur": 9,
+  "src": "broll/fcscallos_s17.mp4",
+  "video": true
+ },
+ {
+  "start": 951.78,
+  "dur": 9,
+  "src": "broll/fcscallos_s16.mp4",
+  "video": true
+ },
+ {
+  "start": 960.78,
+  "dur": 0.46,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 968.1,
+  "dur": 3.28,
+  "src": "broll/fcscallos_s14.mp4",
+  "video": true
+ },
+ {
+  "start": 983.88,
+  "dur": 1.12,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 994,
+  "dur": 0.7,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 998.98,
+  "dur": 7.34,
+  "src": "broll/fcscallos_s02.mp4",
+  "video": true
+ },
+ {
+  "start": 1006.32,
+  "dur": 7.89,
+  "src": "broll/fcscallos_s30.mp4",
+  "video": true
+ },
+ {
+  "start": 1014.21,
+  "dur": 9,
+  "src": "broll/fcscallos_s28.mp4",
+  "video": true
+ },
+ {
+  "start": 1023.21,
+  "dur": 5.61,
+  "src": "broll/fcscallos_s17.mp4",
+  "video": true
+ },
+ {
+  "start": 1032.38,
+  "dur": 9,
+  "src": "broll/fcscallos_s09.mp4",
+  "video": true
+ },
+ {
+  "start": 1041.38,
+  "dur": 9,
+  "src": "broll/fcscallos_s40.mp4",
+  "video": true
+ },
+ {
+  "start": 1050.38,
+  "dur": 6.58,
+  "src": "broll/fcscallos_s08.mp4",
+  "video": true
+ },
+ {
+  "start": 1065.96,
+  "dur": 6.74,
+  "src": "broll/fcscallos_s38.mp4",
+  "video": true
+ },
+ {
+  "start": 1081.7,
+  "dur": 9,
+  "src": "broll/fcscallos_s16.mp4",
+  "video": true
+ },
+ {
+  "start": 1090.7,
+  "dur": 9,
+  "src": "broll/fcscallos_s37.mp4",
+  "video": true
+ },
+ {
+  "start": 1099.7,
+  "dur": 1.86,
+  "src": "broll/fcscallos_s34.mp4",
+  "video": true
+ },
+ {
+  "start": 1109.58,
+  "dur": 0.42,
+  "src": "img/fe_callos_01_consultorio_ramiro.png",
+  "video": false
+ },
+ {
+  "start": 1118,
+  "dur": 8.04,
+  "src": "broll/fcscallos_s22.mp4",
+  "video": true
+ },
+ {
+  "start": 1130.38,
+  "dur": 6.57,
+  "src": "broll/fcscallos_s27.mp4",
+  "video": true
+ },
+ {
+  "start": 1136.95,
+  "dur": 9,
+  "src": "broll/fcscallos_s19.mp4",
+  "video": true
+ },
+ {
+  "start": 1145.95,
+  "dur": 7.79,
+  "src": "broll/fcscallos_s23.mp4",
+  "video": true
+ },
+ {
+  "start": 1162.74,
+  "dur": 1.42,
+  "src": "broll/fcscallos_s14.mp4",
+  "video": true
+ },
+ {
+  "start": 1164.16,
+  "dur": 9,
+  "src": "broll/fcscallos_s32.mp4",
+  "video": true
+ },
+ {
+  "start": 1173.16,
+  "dur": 1.36,
+  "src": "broll/fcscallos_s08.mp4",
+  "video": true
+ },
+ {
+  "start": 1183.52,
+  "dur": 5.74,
+  "src": "broll/fcscallos_s01.mp4",
+  "video": true
+ },
+ {
+  "start": 1189.26,
+  "dur": 9,
+  "src": "broll/fcscallos_s09.mp4",
+  "video": true
+ },
+ {
+  "start": 1198.26,
+  "dur": 7.46,
+  "src": "broll/fcscallos_s03.mp4",
+  "video": true
+ },
+ {
+  "start": 1213.32,
+  "dur": 9,
+  "src": "broll/fcscallos_s18.mp4",
+  "video": true
+ },
+ {
+  "start": 1222.32,
+  "dur": 9,
+  "src": "broll/fcscallos_s06.mp4",
+  "video": true
+ },
+ {
+  "start": 1231.32,
+  "dur": 3.52,
+  "src": "broll/fcscallos_s13.mp4",
+  "video": true
+ },
+ {
+  "start": 1243.84,
+  "dur": 1.54,
+  "src": "broll/fcscallos_s20.mp4",
+  "video": true
+ },
+ {
+  "start": 1245.38,
+  "dur": 2.08,
+  "src": "broll/fcscallos_s33.mp4",
+  "video": true
+ },
+ {
+  "start": 1247.46,
+  "dur": 6.42,
+  "src": "broll/fcscallos_s39.mp4",
+  "video": true
+ },
+ {
+  "start": 1262.88,
+  "dur": 9,
+  "src": "broll/fcscallos_s13.mp4",
+  "video": true
+ },
+ {
+  "start": 1271.88,
+  "dur": 9,
+  "src": "broll/fcscallos_s18.mp4",
+  "video": true
+ },
+ {
+  "start": 1280.88,
+  "dur": 1.68,
+  "src": "broll/fcscallos_s19.mp4",
+  "video": true
+ },
+ {
+  "start": 1291.56,
+  "dur": 9,
+  "src": "broll/fcscallos_s12.mp4",
+  "video": true
+ },
+ {
+  "start": 1300.56,
+  "dur": 3.7,
+  "src": "broll/fcscallos_s02.mp4",
+  "video": true
+ },
+ {
+  "start": 1313.26,
+  "dur": 9,
+  "src": "broll/fcscallos_s12.mp4",
+  "video": true
+ },
+ {
+  "start": 1322.26,
+  "dur": 5.74,
+  "src": "broll/fcscallos_s01.mp4",
+  "video": true
+ },
+ {
+  "start": 1328,
+  "dur": 9,
+  "src": "broll/fcscallos_s21.mp4",
+  "video": true
+ },
+ {
+  "start": 1346,
+  "dur": 9,
+  "src": "broll/fcscallos_s03.mp4",
+  "video": true
+ },
+ {
+  "start": 1355,
+  "dur": 5.58,
+  "src": "broll/fcscallos_s20.mp4",
+  "video": true
+ },
+ {
+  "start": 1368.6,
+  "dur": 9,
+  "src": "broll/fcscallos_s06.mp4",
+  "video": true
+ },
+ {
+  "start": 1377.6,
+  "dur": 9,
+  "src": "broll/fcscallos_s17.mp4",
+  "video": true
+ },
+ {
+  "start": 1386.6,
+  "dur": 2.68,
+  "src": "broll/fcscallos_s16.mp4",
+  "video": true
+ },
+ {
+  "start": 1398.28,
+  "dur": 3.84,
+  "src": "broll/fcscallos_s14.mp4",
+  "video": true
+ },
+ {
+  "start": 1402.12,
+  "dur": 7.34,
+  "src": "broll/fcscallos_s02.mp4",
+  "video": true
+ },
+ {
+  "start": 1409.46,
+  "dur": 7.89,
+  "src": "broll/fcscallos_s30.mp4",
+  "video": true
+ },
+ {
+  "start": 1417.35,
+  "dur": 1.5,
+  "src": "broll/fcscallos_s28.mp4",
+  "video": true
+ }
+];

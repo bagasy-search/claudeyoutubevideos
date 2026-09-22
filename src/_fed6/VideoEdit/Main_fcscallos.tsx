@@ -9,7 +9,14 @@ import { ErrorStinger } from "./scenes/ErrorStinger";
 import { GuardaEsto } from "./scenes/GuardaEsto";
 import { LowerThird } from "./scenes/LowerThird";
 import { F_INTER } from "./kit/premium/theme";
-import { FCSCALLOS_BEATS, FCSCALLOS_TOTAL_S } from "./fcscallos_beats";
+import { THEME_MEDICO } from "./kit/premium/theme";
+import { BigStatReveal, RankBars } from "./kit/premium/stats";
+import { ChecklistReveal } from "./kit/premium/lists";
+import { FlowSteps, CutawayCallouts } from "./kit/premium/diagrams";
+import { SplitPanel } from "./kit/premium/media";
+import { PullQuote } from "./kit/premium/text";
+import { FedWhiteboard, SCENE_UREA } from "../../FedWhiteboard";
+import { FCSCALLOS_BEATS, FCSCALLOS_BROLL, FCSCALLOS_TOTAL_S } from "./fcscallos_beats";
 
 // ── CANAL "Federer Consejos Salud" · fcscallos · Callos y durezas (don Ramiro) ──
 // SIN avatar grabado: avatar 100% RunPod InfiniteTalk, SOLO 10 ventanas (~25% del
@@ -22,9 +29,12 @@ const BG = "#0E1D23";
 export const TOTAL_FRAMES_FCSCALLOS = sec(FCSCALLOS_TOTAL_S);
 
 const avatarBeats = FCSCALLOS_BEATS.filter((b: any) => b.kind === "avatar");
-const rawBeats = FCSCALLOS_BEATS.filter((b: any) => b.kind === "raw");
+const rawBeats = FCSCALLOS_BROLL.map((b: any) => ({ ...b, kind: "raw", type: b.video ? "vid" : "img" }));
 const fullComps = FCSCALLOS_BEATS.filter((b: any) => ["mitoverdad", "guardaesto", "errorstinger"].includes(b.kind));
 const overlayComps = FCSCALLOS_BEATS.filter((b: any) => ["lowerthird", "frasecinetica"].includes(b.kind));
+const premiumComps = FCSCALLOS_BEATS.filter((b: any) =>
+  ["bigstat", "checklist", "flowsteps", "splitpanel", "cutaway", "rankbars", "pullquote", "fedwhiteboard"].includes(b.kind)
+);
 
 const CTA_AT = FCSCALLOS_TOTAL_S - 16;
 
@@ -66,6 +76,25 @@ export const MainFcscallos: React.FC = () => {
           : <ErrorStinger durationInFrames={d} number={b.number} title={b.title} tone={b.tone} />;
         return (
           <Sequence key={`full_${i}`} from={sec(b.start)} durationInFrames={d} layout="none">
+            {comp}
+          </Sequence>
+        );
+      })}
+
+      {/* CAPA 3b — kit premium (BigStat/Checklist/FlowSteps/SplitPanel/CutawayCallouts/RankBars/PullQuote) + FedWhiteboard */}
+      {premiumComps.map((b: any, i: number) => {
+        const d = Math.max(1, sec(b.dur));
+        const comp =
+          b.kind === "bigstat" ? <BigStatReveal durationInFrames={d} theme={THEME_MEDICO} eyebrow={b.eyebrow} value={b.value} prefix={b.prefix} suffix={b.suffix} support={b.support} />
+          : b.kind === "checklist" ? <ChecklistReveal durationInFrames={d} theme={THEME_MEDICO} eyebrow={b.eyebrow} title={b.title} items={b.items} stamp={b.stamp} />
+          : b.kind === "flowsteps" ? <FlowSteps durationInFrames={d} theme={THEME_MEDICO} title={b.title} nodes={b.nodes} />
+          : b.kind === "splitpanel" ? <SplitPanel durationInFrames={d} theme={THEME_MEDICO} eyebrow={b.eyebrow} title={b.title} bullets={b.bullets} />
+          : b.kind === "cutaway" ? <CutawayCallouts durationInFrames={d} theme={THEME_MEDICO} eyebrow={b.eyebrow} title={b.title} callouts={b.callouts} />
+          : b.kind === "rankbars" ? <RankBars durationInFrames={d} theme={THEME_MEDICO} title={b.title} unit={b.unit} rows={b.rows} />
+          : b.kind === "pullquote" ? <PullQuote durationInFrames={d} theme={THEME_MEDICO} quote={b.quote} author={b.author} role={b.role} />
+          : <FedWhiteboard scene={SCENE_UREA} theme="white" />;
+        return (
+          <Sequence key={`prem_${i}`} from={sec(b.start)} durationInFrames={d} layout="none">
             {comp}
           </Sequence>
         );
