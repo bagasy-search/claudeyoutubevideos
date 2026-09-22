@@ -122,3 +122,15 @@ le podaron `public/img/` de 549 imágenes a 25 y `public/broll/` de 496 clips a 
    `gh release create` falla (p.ej. `target_commitish is invalid` porque tu commit local no
    está en el remoto), te quedás **sin release** y el render no tiene de dónde bajar nada.
    Recrearlo con `--target $(git rev-parse origin/<rama>)`.
+
+## ⛔ NO HAY `jq` EN ESTE ENTORNO
+Un monitor que hace `gh run view --json ... | jq ...` **no falla: devuelve vacío**. La variable
+de estado queda en `""`, nunca es igual a `"completed"`, y el watch gira para siempre sin emitir
+un solo evento. Se ve idéntico a "el render sigue corriendo".
+✅ Usar el `-q` que trae `gh` (evalúa la expresión jq del lado de `gh`):
+   `gh run view <id> --json status,conclusion -q '"\(.status)/\(.conclusion // "-")"'`
+
+Es la MISMA clase de bug que el `signalstats` sin salida, el `volumedetect` con `-v error`, el
+`blackdetect` con `pix_th=0.06` y el barrido con 0 stills: **una medición que no mide se lee
+como una medición que dio bien**. Cuando una compuerta te dé verde, preguntá siempre cuántas
+cosas contó — si la respuesta es "no sé", no midió nada.
