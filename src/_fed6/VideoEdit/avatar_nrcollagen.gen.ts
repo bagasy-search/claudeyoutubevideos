@@ -18,7 +18,7 @@ export const AVATAR_NRCOLLAGEN = [
  {
   "start": 127.37,
   "mode": "full",
-  "end": 143.27
+  "end": 143.3
  },
  {
   "start": 227.27,
@@ -98,12 +98,12 @@ export const AVATAR_NRCOLLAGEN = [
  {
   "start": 928.27,
   "mode": "full",
-  "end": 960.97
+  "end": 961
  },
  {
   "start": 980.43,
   "mode": "full",
-  "end": 987.6
+  "end": 987.57
  },
  {
   "start": 997.67,
@@ -113,7 +113,7 @@ export const AVATAR_NRCOLLAGEN = [
  {
   "start": 1021.47,
   "mode": "full",
-  "end": 1032.07
+  "end": 1032.1
  },
  {
   "start": 1040.23,
