@@ -83,7 +83,8 @@ export const FloatingCutout: React.FC<{
   image?: string;
   label?: string;
   sub?: string;
-}> = ({ durationInFrames, theme, image, label = "Sulfato de cobre", sub = "el ingrediente que nadie nombra" }) => {
+  kicker?: string;
+}> = ({ durationInFrames, theme, image, label = "Sulfato de cobre", sub = "el ingrediente que nadie nombra", kicker = "La pieza clave" }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
   const enterS = kick(frame, fps, 6, SPR.settle);
@@ -125,7 +126,7 @@ export const FloatingCutout: React.FC<{
             <ContactShadow theme={t} width={360} opacity={0.55 - Math.abs(float) * 0.012} style={{ margin: "18px auto 0", transform: `scaleX(${1 - Math.abs(float) * 0.004})` }} />
           </div>
           <div style={{ maxWidth: 640, opacity: labS, transform: `translateX(${(1 - labS) * 30}px)` }}>
-            <Eyebrow theme={t} size={28}>La pieza clave</Eyebrow>
+            <Eyebrow theme={t} size={28}>{kicker}</Eyebrow>
             <Display theme={t} size={76} style={{ marginTop: 14 }}>{label}</Display>
             {sub && <Support theme={t} size={36} style={{ marginTop: 16 }}>{sub}</Support>}
           </div>

@@ -43,6 +43,7 @@ jobs:
   render:
     needs: prepare
     runs-on: ubuntu-latest
+    timeout-minutes: 25   # (fix f08219e de main) un chunk colgado falla rapido y stitch persiste los buenos
     strategy:
       fail-fast: false
       matrix:
