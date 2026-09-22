@@ -31,7 +31,8 @@ import os from "node:os";
 // su propio checkout + install. 60 chunks son ~37 GB de transferencia contra ~12 GB con 20. Más
 // arriba de 60 el arranque pesaría más que el render, así que es el techo útil, no sólo el del plan.
 // Si hay VARIOS videos rendeando a la vez, repartí: chunks ≈ 60 / videos_en_curso.
-const [slug, comp, total, chunks = "60", pref] = process.argv.slice(2);
+const [slug, comp, total, chunksArg, pref] = process.argv.slice(2);
+let chunks = chunksArg || "60"; // puede BAJAR por auto-reparto (ver bloque de abajo)
 if (!slug || !comp || !total) {
   console.error("Uso: node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks] [prefijo]");
   process.exit(1);
@@ -40,6 +41,29 @@ const sh = (c) => execSync(c, { stdio: "inherit" });
 const out = (c) => execSync(c, { encoding: "utf8" }).trim();
 const only = process.env.ONLY_CHUNKS || ""; // re-render PARCIAL: solo estos chunks (reusa el resto; assets ya subidos)
 const reuseAssets = process.env.REUSE_ASSETS === "1"; // full rerender with an already validated release
+
+// ── AUTO-REPARTO DE LOS 60 SLOTS ENTRE VIDEOS ────────────────────────────────────────────────
+// La cuenta Team tiene 60 jobs concurrentes: es un TECHO DURO del plan (no sube gratis). Un render
+// de 60 chunks se lleva los 60 slots él solo, así que al lanzar VARIOS videos a la vez cada uno pide
+// su tanda, GitHub encola el resto y los videos se traban entre sí — y cada chunk encolado igual va a
+// rebajar el tarball de assets ENTERO (~600 MB) cuando le toque, así que partir de más también gasta
+// más. Acá SOLO BAJAMOS los chunks (nunca los subimos) y solo si hay OTROS videos en curso: repartimos
+// 60 entre todos (este incluido), con piso de 12 (menos arriesga el timeout de 90' por chunk en un
+// video largo). El número que pasás a mano queda como TECHO. Desactivar: FARM_FIXED_CHUNKS=1.
+if (!process.env.FARM_FIXED_CHUNKS && !only) {
+  try {
+    const runs = JSON.parse(execSync(`gh run list --workflow=render.yml -L 40 --json status,headBranch`, { encoding: "utf8" }))
+      .filter((r) => r.status !== "completed" && r.headBranch && r.headBranch !== `molino-${slug}`);
+    const otros = new Set(runs.map((r) => r.headBranch)).size;
+    if (otros > 0) {
+      const reparto = Math.max(12, Math.round(60 / (otros + 1)));
+      if (reparto < Number(chunks)) {
+        console.log(`auto-reparto: ${otros} otro(s) video(s) en curso → bajo de ${chunks} a ${reparto} chunks para no trabar la cola de 60 slots (FARM_FIXED_CHUNKS=1 lo desactiva)`);
+        chunks = String(reparto);
+      }
+    }
+  } catch { /* sin gh o sin red: me quedo con el valor pasado */ }
+}
 
 // ── PRE-VUELO (milisegundos, todo local) ────────────────────────────────────────────────
 // Sin esto se sube ~1 GB de assets y se encienden 20-24 runners para que recién ADENTRO del
@@ -64,9 +88,37 @@ const reuseAssets = process.env.REUSE_ASSETS === "1"; // full rerender with an a
     try { remoto = out(`git rev-parse ${ref}`); } catch { /* la rama todavía no existe local */ }
     const local = out("git rev-parse HEAD");
     if (remoto && remoto !== local) {
-      console.error(`✗ PRE-VUELO: la rama ${ref} apunta a ${remoto.slice(0, 7)} pero tu HEAD es ${local.slice(0, 7)}.`);
-      console.error(`  El farm rendearía un commit VIEJO. Sincronizá: git push -f origin HEAD:${ref}`);
-      process.exit(1);
+      // Comparar SHAs sólo vale si commiteás sobre la rama en la que estás parado. Con VARIOS
+      // agentes en el MISMO working tree la rama se arma por plumbing (read-tree + commit-tree
+      // desde una base), así que HEAD es la rama de OTRO agente y el SHA nunca coincide.
+      // Lo que de verdad importa es que el CONTENIDO que va a rendear sea el que acabás de
+      // generar: se compara blob a blob el grafo de imports locales del entry.
+      const graf = new Set(); const cola = [entryFile.replace(/\\/g, "/")];
+      while (cola.length) {
+        const f = cola.shift();
+        if (!f || graf.has(f) || !fs.existsSync(f)) continue;
+        graf.add(f);
+        for (const m of fs.readFileSync(f, "utf8").matchAll(/(?:from|import)\s+["'](\.[^"']+)["']/g)) {
+          const base = path.posix.join(path.posix.dirname(f), m[1]);
+          for (const ext of ["", ".tsx", ".ts", "/index.tsx", "/index.ts"]) {
+            if (fs.existsSync(base + ext) && fs.statSync(base + ext).isFile()) { cola.push(base + ext); break; }
+          }
+        }
+      }
+      const difieren = [];
+      for (const f of graf) {
+        let enRama = null;
+        try { enRama = out(`git rev-parse ${ref}:${f}`); } catch { /* no está en la rama */ }
+        const enDisco = out(`git hash-object "${f}"`);
+        if (enRama !== enDisco) difieren.push(`${f} ${enRama ? "DIFIERE" : "NO ESTÁ"} en ${ref}`);
+      }
+      if (difieren.length) {
+        console.error(`✗ PRE-VUELO: ${difieren.length} archivo(s) del render no coinciden con lo que hay en ${ref} — el farm rendearía código VIEJO:`);
+        difieren.slice(0, 10).forEach((d) => console.error("   " + d));
+        console.error(`  Reconstruí la rama (make_ref) o sincronizá: git push -f origin HEAD:${ref}`);
+        process.exit(1);
+      }
+      console.log(`pre-vuelo: ${ref} (${remoto.slice(0, 7)}) != HEAD (${local.slice(0, 7)}), pero los ${graf.size} archivos del grafo de imports coinciden blob a blob ✓`);
     }
     // el entry tiene que estar EN el commit que va a rendear, no solo en tu working dir
     if (entryFile && remoto) {
@@ -191,21 +243,50 @@ if (pref && pref.startsWith("@")) {
   for (const d of COMPARTIDAS) {
     if (!fs.existsSync(`public/${d}`) || items.includes(d)) continue;
     let usados = [];
+    // ¿el grep CORRIÓ? No es lo mismo "no usa nada de med/" que "el grep se rompió".
+    // Antes las dos cosas daban la misma lista vacía y las dos caían a la carpeta entera.
+    let grepOk = false;
     try {
       const re = new RegExp(`(?:public/)?${d}/[A-Za-z0-9_./-]+\\.(?:png|jpe?g|webp|mp4|webm|mov|mp3|wav)`, "g");
-      const salida = execSync(`git grep -hoE "(public/)?${d}/[A-Za-z0-9_./-]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src 2>/dev/null || true`,
+      // El veneno era `2>/dev/null || true`: bajo cmd.exe (el shell por defecto de execSync en
+      // Windows) no se parsea, la salida vuelve SIEMPRE vacía y el `|| true` dejaba exit 0.
+      // Resultado: "no pude listar" en TODOS los videos y med/ entero (882 MB) en CADA tarball,
+      // en vez de los 21 archivos que src referencia de verdad. Sin "|| true" para poder
+      // distinguir "sin coincidencias" (git grep sale 1) de "git falló" (sale >1).
+      const salida = execSync(`git grep -hoE "(public/)?${d}/[A-Za-z0-9_./-]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src`,
         { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"], maxBuffer: 32 * 1024 * 1024 });
       usados = [...new Set((salida.match(re) || []).map((r) => r.replace(/^public\//, "")))]
         .filter((r) => fs.existsSync(`public/${r}`));
-    } catch { usados = []; }
+      grepOk = true;
+    } catch (e) {
+      // status 1 = git grep corrió bien y no encontró nada -> cero legítimo, NO es una falla.
+      usados = [];
+      grepOk = e && e.status === 1;
+    }
     if (usados.length) {
       const mb = usados.reduce((a, r) => a + (fs.statSync(`public/${r}`).size || 0), 0) / 1048576;
-      const totalMb = execSync(`du -sm "public/${d}" 2>/dev/null || echo 0`, { encoding: "utf8", shell: "/bin/bash" }).trim().split(/\s/)[0];
+      // Solo para el log. Iba con shell: "/bin/bash", que en Windows es ENOENT y tumbaba el
+      // despacho entero... pero NUNCA se ejecutaba, porque el grep de arriba siempre volvia
+      // vacio y no se llegaba hasta aca. Arreglado el grep, salto al toque. Un dato de log no
+      // puede voltear el despacho: va en try y si falla se muestra "?".
+      let totalMb = "?";
+      try { totalMb = execSync(`du -sm "public/${d}"`, { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim().split(/\s/)[0]; } catch { totalMb = "?"; }
       console.log(`  ${d}: ${usados.length} archivo(s) usados (${mb.toFixed(0)} MB) en vez de la carpeta entera (${totalMb} MB)`);
       items.push(...usados);
     } else {
-      console.log(`  ${d}: no pude listar los usados → empaqueto la carpeta entera (seguro pero pesado)`);
-      items.push(d);
+      // Antes de caer a la carpeta ENTERA: si la lista EXPLÍCITA (@lista) ya nombra archivos de
+      // este dir (p.ej. med/<slug>_qr.png viene del BEAT, no de src), usar esos. El grep sólo mira
+      // src y no ve los assets nombrados en los beats → falso "no pude listar" y tarball inflado.
+      const enLista = items.filter((it) => it === d + "/" || it.startsWith(d + "/"));
+      if (enLista.length) {
+        console.log(`  ${d}: ${enLista.length} archivo(s) de la lista explícita (sin la carpeta entera)`);
+      } else if (grepOk) {
+        // cero MEDIDO, no cero por accidente: el video no usa nada de este dir y no se empaqueta.
+        console.log(`  ${d}: 0 archivo(s) usados (grep OK) → NO se empaqueta la carpeta`);
+      } else {
+        console.log(`  ${d}: no pude listar los usados (grep FALLÓ) → empaqueto la carpeta entera (seguro pero pesado)`);
+        items.push(d);
+      }
     }
   }
 
@@ -254,6 +335,18 @@ if (pref && pref.startsWith("@")) {
   console.log(`pre-vuelo compartidas ✓ (${COMPARTIDAS.filter((d) => fs.existsSync(`public/${d}`)).join(", ") || "ninguna"})`);
 }
 
+
+// ── PRE-VUELO AGNES QC (sep-2026, regla del creador: "por y para siempre, todos los canales") ────
+// Ningún clip de agnes entra al render sin el control único (scripts/agnes_qc.mjs): gente inventada,
+// escena cambiada, identidad, cosas derretidas, movimiento imposible, y REPETICIÓN (planos más
+// largos que su clip = el loop repite el movimiento; tcbriquetas tenía 86/236). Escape a la vista:
+// AGNES_QC_OVERRIDE="<motivo>".
+{
+  const { agnesGate } = await import("./agnes_qc_gate.mjs");
+  const g = agnesGate(slug, items);
+  if (!g.ok) { console.error(g.msg); process.exit(1); }
+  console.log(g.msg);
+}
 
 // nombre PER-SLUG en tmpdir: dos farm.mjs en paralelo NO se pisan la lista (antes era "_assets_list.txt" fijo en el CWD)
 const listFile = path.join(os.tmpdir(), `_assets_${slug}.txt`);
@@ -311,7 +404,20 @@ if (fs.statSync(tar).size <= releaseAssetLimit) {
 const relTag = `assets-${slug}`;
 // Stitch downloads the continuous master WAV as a release asset (not from inside the tar), so
 // publish the exact same file alongside the tar parts. The tar still contains it for Remotion.
-const releaseFiles = [...uploadFiles, wav];
+//
+// ⛔⛔ El stitch de render.yml busca el WAV con UN nombre fijo: `<slug>_fish.wav`.
+// Acá arriba, en cambio, se acepta también `<slug>.wav` (los videos cuyo audio no
+// sale de Fish: avatar propio, audio del creador, empalmes). Ese desacuerdo hizo
+// fallar el stitch de `vslcurso` DESPUÉS de renderizar los 15 chunks: subimos
+// `vslcurso.wav` y el workflow buscaba `vslcurso_fish.wav` → "no assets match the
+// file pattern". Si el nombre no es el que espera el stitch, se sube TAMBIÉN con
+// ese nombre. Cuesta una copia y evita perder un render entero.
+const wavEsperadoPorStitch = `public/${slug}_fish.wav`;
+if (path.resolve(wav) !== path.resolve(wavEsperadoPorStitch)) {
+  fs.copyFileSync(wav, wavEsperadoPorStitch);
+  console.log(`↳ el stitch espera ${path.basename(wavEsperadoPorStitch)}: subo también una copia de ${path.basename(wav)} con ese nombre`);
+}
+const releaseFiles = [...uploadFiles, wav, ...(path.resolve(wav) !== path.resolve(wavEsperadoPorStitch) ? [wavEsperadoPorStitch] : [])];
 let reusableRelease = false;
 try {
   const release = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
@@ -403,10 +509,13 @@ if (only) {
   }
 }
 
-// 2.5) CANDADO DE RENDER — la cuenta tiene 20 jobs concurrentes en total. Si dos videos rendean a la
-// vez se reparten los slots y los DOS tardan el doble. Serializando, cada render usa los 20 a pleno y
-// el throughput total es mayor. El resto del pipeline (guion, Modal, b-roll) sigue en paralelo: esto
-// solo hace cola en el render. Desactivable con FARM_NO_LOCK=1.
+// 2.5) CANDADO DE RENDER — OPT-IN. La cuenta es GitHub TEAM = 60 jobs concurrentes (NO 20; eso era el
+// tope Free viejo con el que se escribió esto). Un render son 60 chunks, así que UNO SOLO ya usa los
+// 60 en una ola. Serializar acá DESPERDICIA capacidad: cuando el render de adelante baja a sus últimos
+// chunks deja ~40-52 slots ociosos mientras el siguiente espera el candado (medido ago-2026: v2 esperó
+// 2 renders y sólo se usaban ~20). Por eso el default AHORA es NO serializar: se dispara y GitHub
+// encola los chunks, llenando hasta 60 entre todos los renders. El guard de DUPLICADOS (más abajo)
+// sigue evitando 2 corridas DEL MISMO video. Para volver al viejo modo serial: FARM_SERIALIZE=1.
 const LOCK = path.join(os.tmpdir(), "bagasy-render.lock");
 const LOCK_STALE_MS = 90 * 60 * 1000; // si el dueño se colgó, a los 90' el candado se considera vencido
 const napMs = (ms) => execSync(`sleep ${Math.round(ms / 1000)} 2>/dev/null || ping -n ${Math.round(ms / 1000) + 1} 127.0.0.1 >NUL`, { stdio: "ignore", shell: true });
@@ -421,14 +530,14 @@ function lockOwner() { // devuelve el dueño VIVO del candado, o null si está l
 function releaseLock() {
   try { if (JSON.parse(fs.readFileSync(LOCK, "utf8")).pid === process.pid) fs.rmSync(LOCK, { force: true }); } catch { /* no es mío o no está */ }
 }
-if (!process.env.FARM_NO_LOCK) {
+if (process.env.FARM_SERIALIZE) { // opt-in: viejo modo serial (cuenta Free/20). Default = no serializar (Team/60).
   let avisado = false;
   for (;;) {
     const dueño = lockOwner();
     if (!dueño) { try { fs.rmSync(LOCK, { force: true }); } catch { /* ya no está */ } }
     try { fs.writeFileSync(LOCK, JSON.stringify({ pid: process.pid, slug, at: Date.now() }), { flag: "wx" }); break; }
     catch {
-      if (!avisado) { console.log(`⏳ hay otro render en curso (${dueño?.slug || "otro video"}) — espero mi turno para usar los 20 slots enteros...`); avisado = true; }
+      if (!avisado) { console.log(`⏳ FARM_SERIALIZE: hay otro render en curso (${dueño?.slug || "otro video"}) — espero mi turno...`); avisado = true; }
       napMs(30_000);
     }
   }
@@ -491,7 +600,20 @@ if (!process.env.FARM_ALLOW_DUP) {
   } catch { /* sin gh o sin red: no bloqueo el render por no poder consultar */ }
 }
 console.log(only ? `disparando render.yml (PARCIAL, chunks ${only}) ...` : "disparando render.yml ...");
-sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}`);
+// ⭐⭐ `stitch_raw` ES EL DEFAULT (medido 12-sep-2026, rkfob). El paso `stitch` del workflow NO
+// "pega" los pedazos: hace un RE-ENCODE COMPLETO con x264 (`-preset fast -crf 18`) de todo el
+// video en un runner de DOS núcleos. Duraciones reales de este repo:
+//     clembudo (corto)  13 · 16 · 17 min   |   fasenales17  85 min   |   fasilla  101 min
+// Y ESE RE-ENCODE ESTÁ DUPLICADO: el re-encode de ENTREGA es obligatorio igual (rehacer los PTS,
+// corregir el color a tv/bt709 y montar el audio mono→estéreo del máster) y ya aplica el MISMO
+// `setpts=N/30/TB -r 30 -fps_mode cfr`. El concat crudo tarda SEGUNDOS: 42.277 cuadros en 2,42 s.
+// ⛔ `STITCH_RAW=0` lo desactiva, y sólo tendría sentido si el mp4 del farm se entregara tal cual —
+//    cosa que la regla dura del pipeline prohíbe. Por eso el default correcto es 1, no vacío.
+// 🔧 Si una corrida ya salió sin el flag: `node scripts/stitch_local.mjs <run_id> <total_frames>`
+//    baja los chunks (quedan como artifacts) y los concatena acá en segundos.
+const stitchRaw = process.env.STITCH_RAW === "0" ? "" : " -f stitch_raw=1";
+sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}${stitchRaw}`);
+if (stitchRaw) console.log("stitch_raw=1 → el runner publica el concat CRUDO (segundos, no ~65 min). El CFR/color/audio los pone el re-encode de entrega.");
 
 // 4) esperar y descargar el mp4 final
 console.log("esperando que aparezca la corrida ...");
