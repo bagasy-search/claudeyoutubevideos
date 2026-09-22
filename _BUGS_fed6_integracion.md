@@ -134,3 +134,29 @@ Es la MISMA clase de bug que el `signalstats` sin salida, el `volumedetect` con 
 `blackdetect` con `pix_th=0.06` y el barrido con 0 stills: **una medición que no mide se lee
 como una medición que dio bien**. Cuando una compuerta te dé verde, preguntá siempre cuántas
 cosas contó — si la respuesta es "no sé", no midió nada.
+
+### Corolario: un conteo de HALLAZGOS no es un conteo de TRABAJO HECHO
+La regla de arriba ("¿cuántas cosas contó?") se cumple mal si lo que la compuerta sabe decir es
+cuántos PROBLEMAS encontró en vez de cuánto MIDIÓ. `tramos negros: 0` y `casi negros: 0` son
+conteos de hallazgos: si ffmpeg falla, si el directorio está vacío o si la línea que se grepea
+está suprimida por el nivel de log, el resultado es **idéntico** a un verde legítimo.
+
+Una compuerta tiene que emitir el denominador y compararlo contra lo esperado:
+- `blackdetect` → cuántos cuadros DECODIFICÓ (`frame=` final) vs. los del mp4 (`ffprobe
+  -count_frames`). 0 tramos sobre 0 cuadros no es un verde.
+- luma de stills → cuántos stills MIDIÓ vs. los que el barrido tenía que dejar (2 por beat).
+- barrido → que `bundle.js` exista; `bundle()` puede volver "OK" y no emitir JS (disco lleno).
+
+Casos reales del 22-sep, los cuatro con la misma forma:
+1. `_v3/*_stills_luma.sh` con `-v error` + `metadata=print` (que escribe a INFO): el grep volvía
+   vacío, el check era `[ -n "$y" ] && ...` → saltaba TODOS los stills en silencio. Nunca midió
+   un cuadro, en ningún video. Fix: `file=-` (stdout) + falla dura si un still no se puede medir.
+2. `public/` de 72 GB copiado entero a cada bundle (en Windows `symlinkPublicDir` no tiene
+   efecto) → D: al 100 %, `bundle()` "OK" sin `bundle.js`, barrido muerto sin renderizar nada.
+3. El mismo luma daba verde con el directorio VACÍO (0 stills = 0 negros = exit 0).
+4. `blackdetect` con `pix_th=0.06` sobre un canal de fondo `#08110F` (luma ~14): 0 tramos donde
+   con `0.10` hay 57.
+
+⚠ Las compuertas JS (`overlay_gate.mjs`, `gen_beds.mjs`) esquivan (1) a propósito: NO usan
+`signalstats`, decodifican un píxel 1×1 a rawvideo (`format=gray,scale=1:1`), que es
+independiente del nivel de log. Por eso sus conteos sí valen. No las "simplifiques" a signalstats.
