@@ -48,13 +48,22 @@ const durCached = (rel) => { if (!_durCache.has(rel)) _durCache.set(rel, durDe(r
 // Vale igual para los clips de agnes: agnes_qc bloquea cualquier plano más largo que su mp4
 // (tolerancia 2 cuadros). El sobrante se lo queda el beat siguiente, que arranca antes.
 for (let i = 0; i + 1 < rows.length; i++) {
-  const fuente = rows[i].tipo === "avatar" ? rows[i].clip : rows[i].tipo === "clip" ? rows[i].src : null;
+  // `under` = el clip que va DEBAJO de un componente-overlay (ver OVERLAY_COMPONENTES).
+  // Cuenta igual que un clip propio: el plano no puede durar más que su mp4.
+  const fuente = rows[i].tipo === "avatar" ? rows[i].clip : rows[i].tipo === "clip" ? rows[i].src : rows[i].under || null;
   if (!fuente) continue;
   const cd = durCached(fuente);
   if (!cd) continue;
   const maxF1 = rows[i].f0 + Math.floor(cd * FPS);
   if (rows[i].f1 > maxF1 && maxF1 > rows[i].f0 + 1) { rows[i].f1 = maxF1; rows[i + 1].f0 = maxF1; }
 }
+
+// ── Componentes del kit que son OVERLAY PURO: no se pintan fondo (su `Stage` es
+//    transparente) y esperan `SurfaceCtx="footage"` para sacar tinta clara. Si
+//    se emiten como cue suelta quedan segundos de PANTALLA NEGRA con el texto
+//    en tinta oscura, invisible. Van SIEMPRE dentro de <PremiumOverlay> y sobre
+//    un clip real, que el plan declara en `under`. Ver _BUGS_fed6_integracion.md #6.
+const OVERLAY_COMPONENTES = new Set(["LowerThirdId"]);
 
 // props que son rutas de imagen → staticFile(...) en el JSX emitido
 const IMG_PROPS = new Set(["image", "beforeImage", "afterImage"]);
@@ -84,6 +93,18 @@ for (const b of rows) {
     cues.push({ key, start, dur, el: `<PhotoScene src={${JSON.stringify(b.src)}} seed={${b.f0}} />` });
   } else if (b.tipo === "componente" && b.componente === "FedWhiteboard") {
     cues.push({ key, start, dur, el: `<FedWhiteboard scene={SCENE_PUNTOS_MEC} />` });
+  } else if (b.tipo === "componente" && OVERLAY_COMPONENTES.has(b.componente)) {
+    if (!b.under) { console.error(`⛔ ${b.componente} @${start}s sin "under": un componente-overlay necesita un clip debajo`); process.exit(1); }
+    scan(b.props); scan(b.under);
+    const ud = durDe(b.under);
+    const uf = Math.floor(ud * FPS) - 1;
+    if (uf < 15) { console.error(`⛔ under ${b.under} con ${uf} cuadros`); process.exit(1); }
+    if (dur > ud + 0.02) { console.error(`⛔ ${b.componente} @${start}s pide ${dur.toFixed(2)}s y su under ${b.under} da ${ud.toFixed(2)}s`); process.exit(1); }
+    cues.push({ key, start, dur, el:
+      `<><ReframedVideo src={${JSON.stringify(b.under)}} seed={${b.f0}} frames={${uf}} />`
+      + `<PremiumOverlay durationInFrames={d} theme={THEME_MEDICO} zone={"left"} blur={12} grade={0.6}>`
+      + `<${b.componente} durationInFrames={d} theme={THEME_MEDICO} ${emitProps(b.props)} />`
+      + `</PremiumOverlay></>` });
   } else if (b.tipo === "componente") {
     scan(b.props);
     cues.push({ key, start, dur, el: `<${b.componente} durationInFrames={d} theme={THEME_MEDICO} ${emitProps(b.props)} />` });
@@ -143,6 +164,7 @@ import {
   VsDuel, BeforeAfter, DuelColumns, TierRanking,
   FramedPhoto, FloatingCutout, PhotoCarousel, SplitPanel,
 } from "./kit/premium";
+import { PremiumOverlay } from "./scenes/PremiumOverlay";
 import { RayCta } from "../../fcsclv/RayCta";
 import FedWhiteboard from "../../FedWhiteboard";
 import { SCENE_PUNTOS_MEC } from "../../fcspuntos/WhiteboardScene";

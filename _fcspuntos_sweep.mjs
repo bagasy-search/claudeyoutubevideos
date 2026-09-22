@@ -11,8 +11,15 @@ const OUT = 'D:/rtmp/fcspuntos_sweep'; fs.mkdirSync(OUT, { recursive: true });
 const FPS = 30;
 const main = fs.readFileSync('src/_fed6/VideoEdit/Main_fcspuntos.tsx', 'utf8');
 const beats = [];
-for (const m of main.matchAll(/key:\s*"componente_(\d+)",\s*startSec:\s*([\d.]+),\s*dur:\s*([\d.]+),\s*el:\s*\(d: number\) => <(\w+)/g)) {
-  const f0 = +m[1], dur = +m[3], comp = m[4];
+// ⚠ Los componentes-overlay se emiten como FRAGMENTO (`<><ReframedVideo …/><PremiumOverlay>…`),
+//    así que el viejo `=> <(\w+)` no los matcheaba y el barrido los SALTEABA en silencio —
+//    justo las cues donde vivía el bug #6. Ahora se toma el resto de la línea y se nombra
+//    el componente real: el de adentro del PremiumOverlay si es un fragmento.
+for (const m of main.matchAll(/key:\s*"componente_(\d+)",\s*startSec:\s*([\d.]+),\s*dur:\s*([\d.]+),\s*el:\s*\(d: number\) => (.*)$/gm)) {
+  const f0 = +m[1], dur = +m[3], el = m[4];
+  const comp = el.startsWith('<>')
+    ? (el.match(/<PremiumOverlay[^>]*><(\w+)/) || el.match(/<(\w+)/) || [, 'Fragmento'])[1]
+    : (el.match(/^<(\w+)/) || [, 'Desconocido'])[1];
   beats.push({ f0, frame: f0 + Math.max(1, Math.floor((dur * FPS) / 2)), comp });
 }
 console.log(`beats de componente: ${beats.length} · tipos ${new Set(beats.map(b => b.comp)).size}`);

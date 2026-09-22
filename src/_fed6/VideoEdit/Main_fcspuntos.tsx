@@ -11,6 +11,7 @@ import {
   VsDuel, BeforeAfter, DuelColumns, TierRanking,
   FramedPhoto, FloatingCutout, PhotoCarousel, SplitPanel,
 } from "./kit/premium";
+import { PremiumOverlay } from "./scenes/PremiumOverlay";
 import { RayCta } from "../../fcsclv/RayCta";
 import FedWhiteboard from "../../FedWhiteboard";
 import { SCENE_PUNTOS_MEC } from "../../fcspuntos/WhiteboardScene";
@@ -40,8 +41,8 @@ export const CUES_FCSPUNTOS: Cue[] = [
   { key: "componente_1636", startSec: 54.533, dur: 7.3, el: (d: number) => <ChecklistReveal durationInFrames={d} theme={THEME_MEDICO} eyebrow={"LO QUE VAS A APRENDER HOY" as any} title={"Cinco pruebas caseras" as any} stamp={"GRATIS" as any} items={["La prueba de las líneas de la piel","Pellizco de lado contra presión de frente","El limado suave","La foto con moneda a las 4 semanas","Las cinco banderas rojas"] as any} /> },
   { key: "clip_1855", startSec: 61.833, dur: 2.6, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_010.mp4"} seed={1855} frames={119} /> },
   { key: "clip_1933", startSec: 64.433, dur: 2.633, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_011.mp4"} seed={1933} frames={119} /> },
-  { key: "componente_2012", startSec: 67.067, dur: 5, el: (d: number) => <LowerThirdId durationInFrames={d} theme={THEME_MEDICO} name={"Don Efraín, 71 años" as any} role={"Carpintero · 38 años de pie sobre piso de cemento" as any} image={staticFile("img/fcspuntos/fcspuntos_010.png")} /> },
-  { key: "clip_2162", startSec: 72.067, dur: 1.6, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_012.mp4"} seed={2162} frames={119} /> },
+  { key: "componente_2012", startSec: 67.067, dur: 4, el: (d: number) => <><ReframedVideo src={"broll/fcspuntos/fcspuntos_009.mp4"} seed={2012} frames={119} /><PremiumOverlay durationInFrames={d} theme={THEME_MEDICO} zone={"left"} blur={12} grade={0.6}><LowerThirdId durationInFrames={d} theme={THEME_MEDICO} name={"Don Efraín, 71 años" as any} role={"Carpintero · 38 años de pie sobre piso de cemento" as any} image={staticFile("img/fcspuntos/fcspuntos_010.png")} /></PremiumOverlay></> },
+  { key: "clip_2132", startSec: 71.067, dur: 2.6, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_012.mp4"} seed={2132} frames={119} /> },
   { key: "componente_2210", startSec: 73.667, dur: 5.5, el: (d: number) => <KaraokePhrase durationInFrames={d} theme={THEME_MEDICO} eyebrow={"Quédate conmigo" as any} phrase={"Eso que estás viendo tiene nombre. Y tiene tratamiento." as any} /> },
   { key: "clip_2375", startSec: 79.167, dur: 1, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_013.mp4"} seed={2375} frames={119} /> },
   { key: "clip_2405", startSec: 80.167, dur: 2.833, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_014.mp4"} seed={2405} frames={119} /> },
@@ -267,15 +268,15 @@ export const CUES_FCSPUNTOS: Cue[] = [
   { key: "componente_26950", startSec: 898.333, dur: 7, el: (d: number) => <CutawayCallouts durationInFrames={d} theme={THEME_MEDICO} eyebrow={"BAJO LA UÑA" as any} title={"La banda que sí se revisa" as any} callouts={[{"text":"Se va haciendo más ancha en la base","tx":0.35,"ty":0.35},{"text":"Mancha también la piel del pliegue","tx":0.62,"ty":0.58},{"text":"No se tapa con esmalte","tx":0.45,"ty":0.82}] as any} image={staticFile("img/fcspuntos/fcspuntos_135.png")} /> },
   { key: "clip_27160", startSec: 905.333, dur: 3.767, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_176.mp4"} seed={27160} frames={119} /> },
   { key: "clip_27273", startSec: 909.1, dur: 2.367, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_177.mp4"} seed={27273} frames={119} /> },
-  { key: "componente_27344", startSec: 911.467, dur: 5, el: (d: number) => <LowerThirdId durationInFrames={d} theme={THEME_MEDICO} name={"Doña Herminia, 72 años" as any} role={"Vino por la rodilla · la mancha llevaba cinco años en el talón" as any} image={staticFile("img/fcspuntos/fcspuntos_138.png")} /> },
-  { key: "clip_27494", startSec: 916.467, dur: 3.133, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_178.mp4"} seed={27494} frames={119} /> },
-  { key: "clip_27588", startSec: 919.6, dur: 2.8, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_180.mp4"} seed={27588} frames={119} /> },
+  { key: "componente_27344", startSec: 911.467, dur: 4, el: (d: number) => <><ReframedVideo src={"broll/fcspuntos/fcspuntos_138.mp4"} seed={27344} frames={119} /><PremiumOverlay durationInFrames={d} theme={THEME_MEDICO} zone={"left"} blur={12} grade={0.6}><LowerThirdId durationInFrames={d} theme={THEME_MEDICO} name={"Doña Herminia, 72 años" as any} role={"Vino por la rodilla · la mancha llevaba cinco años en el talón" as any} image={staticFile("img/fcspuntos/fcspuntos_138.png")} /></PremiumOverlay></> },
+  { key: "clip_27464", startSec: 915.467, dur: 4, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_178.mp4"} seed={27464} frames={119} /> },
+  { key: "clip_27584", startSec: 919.467, dur: 2.933, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_180.mp4"} seed={27584} frames={119} /> },
   { key: "clip_27672", startSec: 922.4, dur: 2.8, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_181.mp4"} seed={27672} frames={119} /> },
   { key: "clip_27756", startSec: 925.2, dur: 2.833, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_182.mp4"} seed={27756} frames={119} /> },
   { key: "avatar_27841", startSec: 928.033, dur: 4.533, el: (d: number) => <AvatarWindow src={"broll/fcspuntos_av/win-027.mp4"} seed={27841} /> },
-  { key: "componente_27977", startSec: 932.567, dur: 5.6, el: (d: number) => <LowerThirdId durationInFrames={d} theme={THEME_MEDICO} name={"Doña Herminia" as any} role={"Vino por la rodilla · el pie se revisó por otro motivo" as any} image={staticFile("img/fcspuntos/fcspuntos_141.png")} /> },
-  { key: "clip_28145", startSec: 938.167, dur: 2.767, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_183.mp4"} seed={28145} frames={119} /> },
-  { key: "clip_28228", startSec: 940.933, dur: 2.767, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_184.mp4"} seed={28228} frames={119} /> },
+  { key: "componente_27977", startSec: 932.567, dur: 4, el: (d: number) => <><ReframedVideo src={"broll/fcspuntos/fcspuntos_141.mp4"} seed={27977} frames={119} /><PremiumOverlay durationInFrames={d} theme={THEME_MEDICO} zone={"left"} blur={12} grade={0.6}><LowerThirdId durationInFrames={d} theme={THEME_MEDICO} name={"Doña Herminia" as any} role={"Vino por la rodilla · el pie se revisó por otro motivo" as any} image={staticFile("img/fcspuntos/fcspuntos_141.png")} /></PremiumOverlay></> },
+  { key: "clip_28097", startSec: 936.567, dur: 4, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_183.mp4"} seed={28097} frames={119} /> },
+  { key: "clip_28217", startSec: 940.567, dur: 3.133, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_184.mp4"} seed={28217} frames={119} /> },
   { key: "clip_28311", startSec: 943.7, dur: 2.867, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_186.mp4"} seed={28311} frames={119} /> },
   { key: "componente_28397", startSec: 946.567, dur: 6, el: (d: number) => <PullQuote durationInFrames={d} theme={THEME_MEDICO} quote={"Hace como un año se puso más oscura, pero como no me duele, no le hice caso." as any} author={"Doña Herminia" as any} role={"la frase que más escucho en consulta" as any} image={staticFile("img/fcspuntos/fcspuntos_143.png")} /> },
   { key: "clip_28577", startSec: 952.567, dur: 1.2, el: (d: number) => <ReframedVideo src={"broll/fcspuntos/fcspuntos_187.mp4"} seed={28577} frames={119} /> },
