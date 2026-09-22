@@ -45,9 +45,12 @@ for (let i = 0; i < rows.length; i++) {
 // en vez de alargar el avatar, adelantamos el arranque del beat siguiente.
 const _durCache = new Map();
 const durCached = (rel) => { if (!_durCache.has(rel)) _durCache.set(rel, durDe(rel)); return _durCache.get(rel); };
+// Vale igual para los clips de agnes: agnes_qc bloquea cualquier plano más largo que su mp4
+// (tolerancia 2 cuadros). El sobrante se lo queda el beat siguiente, que arranca antes.
 for (let i = 0; i + 1 < rows.length; i++) {
-  if (rows[i].tipo !== "avatar" || !rows[i].clip) continue;
-  const cd = durCached(rows[i].clip);
+  const fuente = rows[i].tipo === "avatar" ? rows[i].clip : rows[i].tipo === "clip" ? rows[i].src : null;
+  if (!fuente) continue;
+  const cd = durCached(fuente);
   if (!cd) continue;
   const maxF1 = rows[i].f0 + Math.floor(cd * FPS);
   if (rows[i].f1 > maxF1 && maxF1 > rows[i].f0 + 1) { rows[i].f1 = maxF1; rows[i + 1].f0 = maxF1; }

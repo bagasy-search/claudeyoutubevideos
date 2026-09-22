@@ -116,9 +116,9 @@ export const AVATAR_FCSPUNTOS = [
   "end": 766.53
  },
  {
-  "start": 778.53,
+  "start": 778.43,
   "mode": "full",
-  "end": 782.93
+  "end": 782.83
  },
  {
   "start": 845,
@@ -281,9 +281,9 @@ export const AVATAR_FCSPUNTOS = [
   "end": 1594.63
  },
  {
-  "start": 1606.83,
+  "start": 1606.37,
   "mode": "full",
-  "end": 1611.03
+  "end": 1610.57
  },
  {
   "start": 1657.03,
