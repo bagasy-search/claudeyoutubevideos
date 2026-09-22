@@ -1,6 +1,39 @@
 # BUGS DE INTEGRACIÓN DEL KIT _fed6 — ya resueltos en el lote anterior (21-sep-2026)
 Aparecen al subir de ~5 a ~25 componentes. Con pocos componentes NO se ven, por eso no salieron antes.
 
+---
+
+## LA REGLA GENERAL DETRAS DE LOS SEIS BUGS DEL DIA (22-sep-2026)
+
+> **Un resultado que acusa TODO suele ser el instrumento, no el arbol.**
+
+Cuando un chequeo devuelve un veredicto *universal* — "faltan los 20 archivos", "no existe el m4a",
+"todo el directorio esta roto" — la primera hipotesis NO es que el arbol este podrido: es que la
+herramienta esta mal invocada, mal apuntada o mal parseada. Un arbol real falla PARCHEADO: fallan
+tres archivos, no los veinte.
+
+Dos veces salvo un despacho hoy:
+
+- `check_graph.mjs` dijo **"NO ESTAN: 20/20"**, incluido el propio entry que yo acababa de
+  commitear. Un entry commiteado no puede faltar → el `ref` no resolvia. No era el arbol.
+- El pre-vuelo dijo que **faltaba el m4a** del avatar. El archivo estaba ahi: `tar` estaba leyendo
+  `D:/rtmp/...` como `host:path` (sintaxis rsh) y se quejaba de un "hostname". No era el archivo.
+
+Corolario operativo, en este orden:
+
+1. Si el veredicto es 100% o 0%, **sospecha del instrumento primero**.
+2. Validalo contra un caso que sepas VERDADERO (un archivo que acabas de commitear, un mp4 que
+   acabas de abrir). Si el chequeo tambien lo acusa, el chequeo esta roto.
+3. Recien cuando el chequeo distingue bien ese caso, creele el veredicto.
+
+Corolario para escribir compuertas — el reverso de la misma moneda, y el que causo los cuatro
+despachos caidos: **una compuerta que no puede evaluar debe ABORTAR, nunca pasar en silencio.**
+`|| true`, un `rev-parse` que tira y deja la variable en `""`, un `if (remoto && ...)` que se
+saltea entero: los cuatro bugs del farm de hoy son la misma forma. Sin dato no hay "ok" — hay
+error.
+
+---
+
 1. **`__THEME_MEDICO__ is not defined`** — sustitución de placeholder en DOS PASOS rota en el
    generador. Tira ~29/30 chunks del render. (Es el que estaba fallando en `fcsunaclavada`.)
 2. **Escena de `FedWhiteboard` apuntando a `win-000.mp4`** — las ventanas del avatar son
@@ -160,3 +193,184 @@ Casos reales del 22-sep, los cuatro con la misma forma:
 ⚠ Las compuertas JS (`overlay_gate.mjs`, `gen_beds.mjs`) esquivan (1) a propósito: NO usan
 `signalstats`, decodifican un píxel 1×1 a rawvideo (`format=gray,scale=1:1`), que es
 independiente del nivel de log. Por eso sus conteos sí valen. No las "simplifiques" a signalstats.
+
+## `_v3/` ESTÁ GITIGNOREADO — un arreglo que vive ahí NO se commitea (22-sep-2026)
+
+`.gitignore:45` ignora `_v3*`. Las compuertas por-video viven ahí
+(`_v3/<slug>_auditor.sh`, `_v3/<slug>_stills_luma.sh`, los planes, los cues), así que
+`git add _v3/<slug>_auditor.sh` no falla: **no hace nada** y el archivo queda fuera del commit.
+
+Cómo muerde: arreglás la compuerta, la commiteás junto con el resto, el mensaje describe el
+arreglo — y el arreglo no está en el commit. El árbol de trabajo anda y el repo miente. En un
+worktree nuevo (o en el runner del farm) vuelve la versión rota, sin ningún aviso.
+
+Regla: si el arreglo es la COMPUERTA misma (no un intermedio regenerable), va con
+`git add -f _v3/<archivo>` y se dice en el mensaje por qué lleva `-f`. Antes de commitear:
+
+    git check-ignore -v <archivos>      # vacío = no hay nada ignorado
+    git diff --cached --name-only       # y que estén TODOS los que nombra el mensaje
+
+Los intermedios regenerables (planes, cues, JSON de momentos) se quedan ignorados: está bien.
+
+### Corolario del árbol compartido: `git add` SIEMPRE con rutas explícitas
+`git add -A` en este árbol stageó 5418 archivos de otros videos (borrados de `_v3/` y `public/`
+de compañeros incluidos). Nunca `-A`, nunca `.`: rutas explícitas y leer
+`git diff --cached --name-only` antes de confirmar. Lo mismo vale para archivos compartidos
+(`scripts/farm.mjs`, `CLAUDE.md`): suelen tener cambios sin commitear de OTRO agente, así que
+un arreglo tuyo ahí no se commitea de prepo — se avisa.
+
+## EL 5º ARGUMENTO DEL FARM NO ES OPCIONAL: sin él se empaqueta `img/` y `vid/` ENTEROS
+
+`node scripts/farm.mjs <slug> <comp> <frames> [chunks] [prefijoAssets]`. Si no pasás el 5º
+argumento, `farm.mjs:200` hace `items.push("img", "vid")`: las carpetas COMPARTIDAS completas,
+con los assets de TODOS los videos del repo. Medido el 22-sep-2026: el tar iba por **37 GB** y
+seguía creciendo cuando lo corté. No falla ni avisa — tar es feliz empaquetando.
+
+Siempre con la lista explícita del video:
+
+    TAR_DIR=D:/rtmp node scripts/farm.mjs fcsjuanetes Fcsjuanetes 80795 20 @_fcsjuanetes_assets.txt
+
+El `@` es lo que activa la lista explícita (rutas relativas a `public/`, una por línea).
+Sin `@` se interpreta como PREFIJO y filtra `img/<pref>*` — otra cosa distinta.
+
+Y antes de despachar, que la lista no mienta:
+
+    while read r; do [ -e "public/$r" ] || echo "FALTA $r"; done < _<slug>_assets.txt
+
+Dos señales de que te olvidaste el 5º arg: el log dice `empaquetando 25 entradas` (son
+DIRECTORIOS, no archivos) y el tar pasa de unos pocos GB. Un video normal son ~600 entradas.
+
+### `TAR_DIR` para no escribir el tarball en C:
+`TAR_DIR=D:/rtmp` manda el tarball a otro disco. En C: no entra y el farm muere a mitad del
+`tar` con el archivo a medio escribir, que además queda ocupando lo poco que quedaba.
+
+## UNA API KEY DE RUNPOD SE FUE EN UN COMMIT (22-sep-2026) — la frenó GitHub, no nosotros
+
+`_STATE_fcsjuanetes.md:9` tenía la key literal en un snippet (`K=rpa_...; ID=...`) y entró en un
+commit. El push lo rechazó **GitHub Push Protection** (GH013, "RunPod API Key"). Nunca llegó al
+remoto: la única copia estuvo en objetos git LOCALES.
+
+**El link de "unblock-secret" que ofrece el mensaje NO se toca.** Ese botón publica el secreto.
+Lo correcto es sacarlo de la historia y, si hace falta, rotar la credencial.
+
+Cómo se arregló sin romper el árbol compartido: `filter-branch` exige working tree limpio y acá
+hay miles de archivos sin commitear de otros agentes, así que se reconstruyeron los commits con
+plumbing e índice temporal (`GIT_INDEX_FILE`), sin tocar el working tree —
+`read-tree` → blob redactado con `hash-object -w` → `update-index --cacheinfo` → `write-tree` →
+`commit-tree`, preservando autor, fecha y mensaje, y después `update-ref` para mover la rama.
+Se verificó que el único cambio contra la cadena vieja fuera ese archivo.
+
+Reglas que salen de acá:
+- Los `_STATE_*.md` son NOTAS, no un llavero. La credencial va por variable de entorno
+  (`K=$RUNPOD_API_KEY`), nunca el valor literal, ni siquiera en un snippet de ejemplo.
+- Antes de commitear un `_STATE_*` o cualquier `.md` de notas:
+  `git diff --cached | grep -nE 'rpa_|sk-|ghp_|AKIA|BEGIN .*PRIVATE KEY'`
+- Un secreto que estuvo en un commit local sigue en `.git/objects` y en el reflog aunque
+  reescribas la rama. Si era una credencial viva, **rotarla** es lo único que cierra el tema.
+
+## UN ARCHIVO UNTRACKED PASA TODAS LAS COMPUERTAS (22-sep-2026)
+
+`src/fcsclv/` (12 componentes) estaba **untracked** — no gitignoreado: nunca commiteado. Lo
+importan 9 videos (`src/<slug>/Piezas.tsx` → `../fcsclv/RayStage`, y varios `cues_*.gen.tsx` →
+`../fcsclv/BigStat`). En el disco de cada agente andaba perfecto, así que nadie lo notó. En el
+checkout limpio del runner no existe y el bundle de Remotion muere:
+
+    src/fcsclv/BigStat.js doesn't exist ... Field 'browser' doesn't contain a valid alias configuration
+
+Costo: una corrida de 20 runners entera, DESPUÉS de dar `pre-vuelo ✓`.
+
+Por qué ninguna compuerta lo vio:
+- El pre-vuelo compara `git rev-parse <ref>` contra HEAD. Si el ref no existe como rama LOCAL
+  (y no existe: se pushea con `HEAD:refs/heads/<ref>`), ese rev-parse tira, `remoto` queda `""`
+  y el `if (remoto && remoto !== local)` **saltea el chequeo entero sin imprimir nada**.
+- Y aunque resolviera: con los SHAs iguales daba por sentado que estaba todo commiteado. Un
+  archivo untracked **es invisible para una comparación de SHAs**. Existe en tu disco, no en el
+  commit, y los dos chequeos dicen que sí.
+
+Arreglado en `farm.mjs` (454978c): el ref se resuelve por local / `origin/<ref>` / `ls-remote`,
+si no resuelve ABORTA, y el blob a blob corre SIEMPRE aunque el SHA coincida.
+
+Chequeo a mano antes de despachar (camina el grafo de imports desde el entry):
+
+    node D:/rtmp/check_graph.mjs src/index_<slug>.tsx HEAD
+
+⚠ Pasale un ref que RESUELVA. Con `molino-<slug>` (que no existe local) dio "NO ESTAN: 20/20",
+incluido mi propio entry — falso negativo por el ref, no por los archivos. Un resultado que
+acusa TODO suele ser la herramienta rota, no el árbol.
+
+### La regla
+Antes de despachar: `git status --porcelain src/ | grep '^??'`. Si algo que importás está ahí,
+o lo commiteás o el runner no lo va a tener. "Anda en mi máquina" es literalmente el bug.
+
+### Cierre del untracked (22-sep-2026)
+`src/fcsclv/` quedo commiteado en dos tandas: **c37ddc2** (9 componentes) y **1f0fbb3** (los 3 que
+faltaban: `RayChecklist`, `RaySecurityCam`, `RouteFlow`). `RayTimeline` YA estaba trackeado — el
+dato importa porque `RouteFlow`, que si estaba untracked, lo importan **8 archivos**, los mismos
+que `RayChecklist`: esos renders venian fallando por la misma causa y nadie los habia atribuido
+todavia. `RaySecurityCam` no lo importa nadie; entro por completitud del directorio.
+
+Moraleja: al cerrar un untracked, **no cierres el archivo que rompio TU render — cerra el
+directorio**. Los otros importadores fallan igual y sus fallas ya estaban en la cola, sin dueno.
+
+### Corolario: un monitor que sale 0 NO es un entregable (22-sep-2026)
+El watcher del mp4 terminó con `FIN` y `exit 0`. No había mp4: la corrida 35693400890 había caído
+con los 20 shards en `Can't resolve '../fcsclv/BigStat'` — se despachó desde `a8d247c`, ANTERIOR a
+`c37ddc2` que commiteó `src/fcsclv/`. El branch estaba bien; el SHA despachado, viejo.
+
+**Antes de arrancar la cadena de entrega, la prueba es el ARCHIVO EN DISCO**, no el código de
+salida del vigía. `exit 0` sólo dice que el script terminó, no que produjo algo.
+Y el vigía tiene que emitir en TODOS los estados terminales — si sólo hace grep del éxito, un
+crash se ve idéntico a "todavía corriendo".
+
+## UN RUN EN `success` ENTREGÓ EL MP4 CRUDO (22-sep-2026)
+
+`fcsunaclavada`, corrida **35690163948**: terminó en `success`, el `chequeo tecnico` dio todo OK
+(bytes, duración, dos streams, audio aac, cero negros) y el MP4 igual estaba **defectuoso**.
+
+Medido sobre el artefacto bajado, no sobre el veredicto del run:
+
+| | medido | esperado |
+|---|---|---|
+| saltos de PTS | **29**, de 86,7 ms, uno cada 80,8 s | 0 |
+| cadencia real | 29,981 fps | 30,000 |
+| color | `yuvj420p` / rango `pc` / matriz `bt470bg` | `yuv420p` / `tv` / `bt709` |
+| audio vs máster | 2424,9 s contra 2422,8 → **+2,1 s** | ±0,05 s |
+
+Los 29 saltos son las 29 costuras de los 30 chunks: es el tirón del `concat -c copy` que el propio
+workflow documenta y que el re-encode a CFR existe para borrar.
+
+**Por qué pasó.** El re-encode corrió ~83 min y murió al final:
+`[aost#0:1/aac] Error submitting a packet to the muxer: Cannot allocate memory` + `Error writing
+trailer`. Es **ENOMEM**, no la pared de disco de siempre (habría dicho `No space left on device`;
+no hay ni un rastro de ENOSPC en el log). Runner `ubuntu-24.04`. Sospechoso principal:
+`-movflags +faststart`, que reubica el `moov` al cerrar un archivo de ~900 MB.
+
+**Lo grave no fue el ENOMEM, fue lo que vino después.** El `else` del fallback hacía tres cosas en
+silencio: `::warning` (no `::error`), publicaba el crudo **bajo el nombre del bueno**, y encima el
+paso de release lo subía titulado *"MP4 final"*. El job seguía a verde. Una etapa falló, se degradó
+sola a un resultado peor y lo entregó — y el `success` es justamente lo que hace que nadie vuelva a
+mirar el archivo.
+
+### La regla
+**El `success` de un run no prueba que el artefacto sea el bueno.** Prueba que ningún paso devolvió
+≠0, y un fallback silencioso garantiza que ninguno lo haga. Lo que hay que verificar es el ARCHIVO.
+Y un workflow que se degrada solo **tiene que gritar**: si el resultado es peor que el prometido, el
+run va en ROJO, aunque haya producido algo.
+
+Arreglado en `render.yml`: el fallback pasa a `::error`, el crudo se sube como
+**`final-<slug>-RAW`** (otro nombre, para que no se confunda con un entregable) y **no** se publica
+como release (`if: env.RAW != '1'`); un último paso `fallar si el MP4 quedó crudo` deja el job en
+rojo. El paso de fallar va **al final, después del upload**, a propósito: así el artefacto -RAW
+alcanza a subirse y se rescata en local con `scripts/entrega_mp4.sh` en vez de tirar 80 min de CPU.
+
+### Confirmado por un segundo caso independiente
+`fcsjuanetes` pasó por lo mismo el mismo día: su mp4 también llegó crudo, y el re-encode local le
+bajó los saltos de PTS de **59 a 1** y la deriva de audio de **1,57 s a 7 ms**. No es un accidente
+de un slug: es el camino por defecto cada vez que el remux se cae.
+
+### Corolario operativo
+Antes de entregar un mp4 del farm, medí **tres cosas** sobre el archivo bajado — saltos de PTS,
+`pix_fmt`/rango/matriz, y duración del audio contra el WAV máster. `fcspuntos` pasó las tres y se
+entregó sin re-encode; `fcsunaclavada` y `fcsjuanetes` fallaron y hubo que rescatarlos. El chequeo
+del farm mira cuadros y negros: **ninguno de los tres defectos se ve ahí**, porque cada cuadro está
+perfecto y lo que está mal es cuándo se muestra.
