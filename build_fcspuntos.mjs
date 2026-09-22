@@ -65,9 +65,28 @@ for (let i = 0; i + 1 < rows.length; i++) {
 //    un clip real, que el plan declara en `under`. Ver _BUGS_fed6_integracion.md #6.
 const OVERLAY_COMPONENTES = new Set(["LowerThirdId"]);
 
+// ── LA CAMA (`props.bed`) — mecanismo del molde `fcsmanos10` (53/53 con cama → 0 negros).
+// En el kit _fed6 `Panel`/`Cinema` NO pintan placa opaca: tratan el FOOTAGE. Un componente
+// sin nada debajo trata el vacío y da negro, y el fade de `useBeat` (op=0 en el frame 0) lo
+// vuelve negro PURO. Medido: fcsunaclavada entregado = 57 tramos, fcspuntos = 119, TODOS en
+// el arranque de un cue de componente. Ver _BUGS_fed6_integracion.md #6-bis.
+// ⛔ FALLO DURO, no advertencia: `build_fcsmanos10.mjs:66` sólo imprimía "⚠️ componente sin
+//    cama" y seguía, y eso es exactamente lo que dejó salir los dos videos defectuosos.
+const sinCama = [];
+// ÚNICA excepción legítima: FedWhiteboard pinta su propia placa opaca (medido YAVG 204/211),
+// así que no necesita cama. Va NOMBRADO, no como un agujero genérico "si no tiene props".
+const SIN_CAMA_OK = new Set(["FedWhiteboard"]);
+const exigirCama = (b, start) => {
+  if (SIN_CAMA_OK.has(b.componente)) return;
+  if (!b.props?.bed) { sinCama.push(`${b.componente} @${start}s`); return; }
+  if (!existe(b.props.bed)) { sinCama.push(`${b.componente} @${start}s (falta el archivo ${b.props.bed})`); }
+};
+const cama = (b) => (b.props?.bed ? `<PhotoBed src={${JSON.stringify(b.props.bed)}} />` : "");
+
 // props que son rutas de imagen → staticFile(...) en el JSX emitido
+// `bed` NO va acá: lo emite <PhotoBed>, que ya hace su propio staticFile.
 const IMG_PROPS = new Set(["image", "beforeImage", "afterImage"]);
-const emitProps = (p) => Object.entries(p || {}).map(([k, v]) => {
+const emitProps = (p) => Object.entries(p || {}).filter(([k]) => k !== "bed").map(([k, v]) => {
   if (IMG_PROPS.has(k) && typeof v === "string") return `${k}={staticFile(${JSON.stringify(v)})}`;
   return `${k}={${JSON.stringify(v)} as any}`;
 }).join(" ");
@@ -95,19 +114,21 @@ for (const b of rows) {
     cues.push({ key, start, dur, el: `<FedWhiteboard scene={SCENE_PUNTOS_MEC} />` });
   } else if (b.tipo === "componente" && OVERLAY_COMPONENTES.has(b.componente)) {
     if (!b.under) { console.error(`⛔ ${b.componente} @${start}s sin "under": un componente-overlay necesita un clip debajo`); process.exit(1); }
+    exigirCama(b, start);
     scan(b.props); scan(b.under);
     const ud = durDe(b.under);
     const uf = Math.floor(ud * FPS) - 1;
     if (uf < 15) { console.error(`⛔ under ${b.under} con ${uf} cuadros`); process.exit(1); }
     if (dur > ud + 0.02) { console.error(`⛔ ${b.componente} @${start}s pide ${dur.toFixed(2)}s y su under ${b.under} da ${ud.toFixed(2)}s`); process.exit(1); }
     cues.push({ key, start, dur, el:
-      `<><ReframedVideo src={${JSON.stringify(b.under)}} seed={${b.f0}} frames={${uf}} />`
+      `<>${cama(b)}<ReframedVideo src={${JSON.stringify(b.under)}} seed={${b.f0}} frames={${uf}} />`
       + `<PremiumOverlay durationInFrames={d} theme={THEME_MEDICO} zone={"left"} blur={12} grade={0.6}>`
       + `<${b.componente} durationInFrames={d} theme={THEME_MEDICO} ${emitProps(b.props)} />`
       + `</PremiumOverlay></>` });
   } else if (b.tipo === "componente") {
+    exigirCama(b, start);
     scan(b.props);
-    cues.push({ key, start, dur, el: `<${b.componente} durationInFrames={d} theme={THEME_MEDICO} ${emitProps(b.props)} />` });
+    cues.push({ key, start, dur, el: `<>${cama(b)}<${b.componente} durationInFrames={d} theme={THEME_MEDICO} ${emitProps(b.props)} /></>` });
   }
 }
 const ov = overlays.map((o) => {
@@ -116,6 +137,12 @@ const ov = overlays.map((o) => {
   return { key: `ov_${f0}`, start: +(f0 / FPS).toFixed(3), dur: +((f1 - f0) / FPS).toFixed(3), el: `<RayCta durationInFrames={d} {...(${JSON.stringify(o.props)} as any)} />` };
 });
 
+if (sinCama.length) {
+  console.error(`⛔ ${sinCama.length} cues de componente SIN CAMA (props.bed). Cada uno es un tramo negro en el mp4:`);
+  sinCama.slice(0, 12).forEach((x) => console.error("   " + x));
+  console.error("   → corré: node scripts/gen_beds.mjs fcspuntos");
+  process.exit(1);
+}
 if (faltan.length) { console.error(`⛔ ${new Set(faltan).size} assets faltan. Primeros:`); [...new Set(faltan)].slice(0, 12).forEach((x) => console.error("   " + x)); process.exit(1); }
 if (avLargos) { console.error(`⛔ ${avLargos} ventanas de avatar duran más que su clip`); process.exit(1); }
 
@@ -165,6 +192,7 @@ import {
   FramedPhoto, FloatingCutout, PhotoCarousel, SplitPanel,
 } from "./kit/premium";
 import { PremiumOverlay } from "./scenes/PremiumOverlay";
+import { PhotoBed } from "./scenes/PhotoBed";
 import { RayCta } from "../../fcsclv/RayCta";
 import FedWhiteboard from "../../FedWhiteboard";
 import { SCENE_PUNTOS_MEC } from "../../fcspuntos/WhiteboardScene";

@@ -6,7 +6,19 @@ import { selectComposition, renderStill } from "@remotion/renderer";
 import { execFileSync } from "node:child_process";
 import path from "node:path";
 import fs from "node:fs";
-process.env.TEMP = "D:/rtmp/tmp"; process.env.TMP = "D:/rtmp/tmp"; process.env.TMPDIR = "D:/rtmp/tmp";
+import { prunePublic, exigirBundle } from "./prune_public.mjs";
+// ⚠ TEMP PROPIO por corrida: varios agentes comparten D:/rtmp/tmp y se borran el
+// `remotion-webpack-bundle-*` entre ellos (ENOENT bundle.js a mitad de camino).
+const _TMP = `D:/rtmp/tmp/gate_${process.pid}_${Date.now()}`;
+fs.mkdirSync(_TMP, { recursive: true });
+process.env.TEMP = _TMP; process.env.TMP = _TMP; process.env.TMPDIR = _TMP;
+// ⚠ Y HAY QUE BORRARLO. Cada corrida deja el perfil de Chrome de cientos de renderStill:
+// medido, 26-71 GB POR CORRIDA. Cuatro corridas llenaron un disco de 932 GB y el siguiente
+// comando murió con ENOSPC. Se limpia pase lo que pase.
+const _limpiar = () => { try { fs.rmSync(_TMP, { recursive: true, force: true }); } catch {} };
+process.on("exit", _limpiar);
+process.on("SIGINT", () => { _limpiar(); process.exit(130); });
+process.on("uncaughtException", (e) => { _limpiar(); console.error(e); process.exit(1); });
 const FFMPEG = "C:/Users/bauti/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe";
 
 // Luma media exacta: reducir a 1x1 en gris y leer el byte. `signalstats` NO sirve acá —
@@ -23,7 +35,7 @@ if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) {
   const i = process.argv.indexOf("--len"); const LEN = i > 0 ? +process.argv[i + 1] : 12;
   if (!slug || !f0s.length) { console.error("uso: node scripts/black_run_probe.mjs <slug> <f0,f0,...> [--len 12]"); process.exit(1); }
   const OUT = `D:/rtmp/${slug}_blackrun`; fs.mkdirSync(OUT, { recursive: true });
-  const serveUrl = await bundle({ entryPoint: path.resolve(`src/index_${slug}.tsx`), onProgress: () => {} });
+  const serveUrl = exigirBundle(await bundle({ entryPoint: path.resolve(`src/index_${slug}.tsx`), publicDir: prunePublic(slug), onProgress: () => {} }));
   const composition = await selectComposition({ serveUrl, id: slug.charAt(0).toUpperCase() + slug.slice(1) });
   for (const f0 of f0s) {
     const vals = [];

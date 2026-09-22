@@ -119,3 +119,101 @@ avatar `public/broll/fcspuntos_av/win-000..078.mp4` + `pip-wb.mp4` · agnes `pub
 
 **PROXIMO:** decidir si se re-renderiza por los 3 lower-thirds. Si se shipea asi, entrega + card de
 Bagasy + fila del canal quedan pendientes.
+
+## 22-sep 02:46 — ARREGLO DEL BUG #6 Y RE-RENDER
+
+⚠ El mp4 defectuoso quedo como `D:\videosdeclaude\fcspuntos_DEFECTUOSO_lowerthirds.mp4`.
+**NO subirlo.** El bueno va a `D:\videosdeclaude\fcspuntos.mp4` recien despues del re-render
+y del `entrega_mp4.sh`.
+
+### Que se arreglo (opcion de fondo, no la de una linea)
+- Nuevo `src/_fed6/VideoEdit/scenes/PremiumOverlay.tsx` (port del de `src/VideoEdit/scenes/`
+  contra el `stagecraft` de _fed6, que no lo tenia porque todo su kit es full-bleed).
+  Pone `Backdrop` + `OnFootage`: arregla el fondo negro **y** la tinta oscura de una.
+- `build_fcspuntos.mjs`: set `OVERLAY_COMPONENTES` (hoy solo `LowerThirdId`). Esos beats exigen
+  un campo `under` en el plan (compuerta si falta) y se emiten como
+  `<><ReframedVideo under/><PremiumOverlay zone="left" blur={12} grade={0.6}>…</PremiumOverlay></>`.
+  El `under` entra en el tope de duracion por mp4 (misma logica que ya habia para clips).
+- `_v3/fcspuntos_plan.json`: los 3 beats con `under`, elegido POR CONTENIDO:
+  | placa | seg | under | por que |
+  |---|---|---|---|
+  | Don Efrain | 67,07 | `fcspuntos_009.mp4` | el senor llegando al consultorio con los zapatos en la mano (unico uso previo 47,9 s) |
+  | Dona Herminia | 911,47 | `fcspuntos_138.mp4` | ella en la sala de espera con el baston (unico uso previo 742,6 s) |
+  | Dona Herminia | 932,57 | `fcspuntos_141.mp4` | ella revisandose el pie por otro motivo (unico uso previo 752,3 s) |
+  Son clips YA presentes en el tar de assets del farm: **no entra ningun asset nuevo**.
+- Efecto en el tiempo: los clips de agnes duran 4,03 s, asi que las placas de 5/5/5,6 s se recortan
+  a 4 s y el beat siguiente arranca antes. `TOTAL_FRAMES_FCSPUNTOS` **sigue en 64600**.
+
+### Compuertas de esta vuelta
+| compuerta | resultado |
+|---|---|
+| `node build_fcspuntos.mjs` | exit 0 · cobertura 64600 · 578 cues · 154 componentes |
+| barrido local `node _fcspuntos_sweep.mjs` | **154/154 stills, 0 fallas** (y ahora SI incluye las 3 placas) |
+| `node scripts/density_gate.mjs fcspuntos` | **exit 0** · 158 usos = 4,4/min · cruda 77% (max 78%) · 30 tipos |
+| `node scripts/agnes_qc.mjs fcspuntos` | 345 planos · 0 mas largos que su clip · 0 repetidos |
+| `node scripts/entry_untracked.mjs src/index_fcspuntos.tsx` | 0 del grafo sin commitear |
+| stills de las 3 placas | revisadas a ojo: footage visible, nombre BLANCO legible |
+
+⚠ `agnes_qc` mide `_v3/fcspuntos_cues.json`, que solo lleva beats `clip`/`imagen`: **no ve los 3
+`under`**. Las 3 reutilizaciones son deliberadas (misma persona, a 19/169/180 s de su unico uso
+previo, y ademas van desenfocadas bajo la placa). Si alguna vez se quiere que el QC las mida,
+hay que sumarlas a `cues.json` y el contador de repetidos va a dar 3.
+
+### Re-render
+- Commit `ae56df8` en `fcspuntos-render` (pusheado: el farm hace checkout del repo).
+- Despachado leyendo el Main, **sin recalcular**:
+  `TF=$(sed -n 's/.*TOTAL_FRAMES_FCSPUNTOS = \([0-9]*\).*/\1/p' src/_fed6/VideoEdit/Main_fcspuntos.tsx)`
+  → `gh workflow run render.yml --ref fcspuntos-render -f slug=fcspuntos -f comp_id=Fcspuntos
+     -f total_frames=$TF -f chunks=20 -f entry=src/index_fcspuntos.tsx`
+- Corrida **35680677146** (queued 02:46:13Z). Monitor `bdkk45937` (poll 5 min, solo emite en `completed`).
+
+**PROXIMO al terminar:** auditor completo (blackdetect tiene que dar **0**) → re-chequear la
+luminancia por cue (las 3 placas tienen que salir de los ~18,4 y meterse en el rango 24-60) →
+`bash scripts/entrega_mp4.sh <mp4_farm> fcspuntos D:/videosdeclaude/fcspuntos.mp4` →
+`node _fcs_card_done.mjs fc202609205 _fcspuntos_card_patch.json` → append de la fila al canal →
+borrar el `_DEFECTUOSO_`.
+
+## 22-sep — LA CAUSA REAL ERA LA CAMA (`props.bed`), Y ES MÁS ANCHA QUE 3 PLACAS
+
+⛔ Se canceló la corrida 35680677146: habría salido con 119 tramos negros.
+
+### Lo que se midió (no deducido)
+| video | cues de componente | con `props.bed` | tramos negros `d=0.2 pix_th=0.10` |
+|---|---|---|---|
+| `fcsmanos10` (MOLDE, aceptado) | 53 | 53 | **0** |
+| `fcsunaclavada` ENTREGADO | 78 | 0 | **57** (los 57 en el arranque de un cue de componente) |
+| `fcspuntos` defectuoso | 154 | 0 | **119** |
+
+### Causa raíz
+En el kit `_fed6`, `Panel` y `Cinema` **NO pintan placa opaca**: son TRATAMIENTOS del footage
+(`Cinema paper={0}`; el propio Panel dice "NADA DE PLACA/MARCO"). Un componente montado como cue
+BASE no tiene footage → el tratamiento se aplica al vacío y da negro. Encima `useBeat` devuelve
+`op = enter * exit` con `enter = 0` en el frame 0, así que los primeros cuadros son negro PURO.
+
+⛔ **Tres hipótesis MEDIDAS Y FALSAS** (no volver a pagarlas):
+1. "`LowerThirdId` y `StampBadge` son overlays puros" → `StampBadge` **sí** pinta `<Cinema>`.
+2. "alcanza con que `op` arranque en 1" → parcheado y remedido: los frames pasan de luma 0 a
+   luma **6-7** y `blackdetect` los sigue marcando. El fade agrava, no causa.
+3. "es el look oscuro del canal" → el molde `fcsmanos10` da **0** con el mismo umbral.
+
+### El arreglo: `props.bed`, el mecanismo del molde
+- `src/_fed6/VideoEdit/scenes/PhotoBed.tsx` — port del `PhotoBed` de `src/abuela/RayStage.tsx`.
+  Clave: **sin `src` NO cae a transparente**, pinta un degradado opaco. Red de seguridad.
+- `scripts/gen_beds.mjs <slug>` — deriva la cama del asset del PROPIO momento. Como una poda
+  dejó sólo los assets referenciados (clips 496→345, imágenes 549→25), la fuente es un cuadro
+  del clip de b-roll de ese momento. Sale JPG 1280x720 (`<slug>_NNN_prev_bed.jpg`, igual que el
+  molde): 138 camas = 10,6 MB en `fcspuntos`, 39 = 3,9 MB en `fcsunaclavada`.
+- Los dos generadores emiten `<><PhotoBed src={bed} /><Componente …/></>` y **fallan duro** si
+  un componente no trae cama. El molde sólo imprimía "⚠️ componente sin cama" y seguía: esa
+  advertencia blanda es exactamente lo que dejó salir los dos videos.
+- `TOTAL_FRAMES` no cambia (64600): la cama no toca el timing. **Cero re-timing.**
+
+### Compuertas nuevas
+- `scripts/overlay_gate.mjs <slug>` — renderiza el primer frame **y** el del medio de cada beat
+  y mide luma. El barrido viejo miraba sólo el MEDIO, por eso daba verde: `StampBadge` slamea
+  en el cuadro 8 y al medio ya está el sello.
+- `scripts/black_run_probe.mjs` — cuántos cuadros seguidos queda negro un arranque.
+- Auditor: `blackdetect=d=0.2:pix_th=0.10` y **`exit 1`** si aparece cualquier tramo.
+  El falso PASS NO era por `-v error`: era `pix_th=0.06`, que sólo cuenta negro por debajo de
+  luma ~15 y el fondo del canal (`#08110F`) es luma ~14. Mismo mp4: `0.06` → 0 tramos, `0.10` → 57.
+- ⚠ Para medir luma NO sirve `signalstats` (va por metadata, no al log). 1×1 en gris.

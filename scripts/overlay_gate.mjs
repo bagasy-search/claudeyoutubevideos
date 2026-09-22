@@ -21,7 +21,18 @@ import { execFileSync } from "node:child_process";
 import path from "node:path";
 import fs from "node:fs";
 
-process.env.TEMP = "D:/rtmp/tmp"; process.env.TMP = "D:/rtmp/tmp"; process.env.TMPDIR = "D:/rtmp/tmp";
+// ⚠ TEMP PROPIO por corrida: varios agentes comparten D:/rtmp/tmp y se borran el
+// `remotion-webpack-bundle-*` entre ellos (ENOENT bundle.js a mitad de camino).
+const _TMP = `D:/rtmp/tmp/gate_${process.pid}_${Date.now()}`;
+fs.mkdirSync(_TMP, { recursive: true });
+process.env.TEMP = _TMP; process.env.TMP = _TMP; process.env.TMPDIR = _TMP;
+// ⚠ Y HAY QUE BORRARLO. Cada corrida deja el perfil de Chrome de cientos de renderStill:
+// medido, 26-71 GB POR CORRIDA. Cuatro corridas llenaron un disco de 932 GB y el siguiente
+// comando murió con ENOSPC. Se limpia pase lo que pase.
+const _limpiar = () => { try { fs.rmSync(_TMP, { recursive: true, force: true }); } catch {} };
+process.on("exit", _limpiar);
+process.on("SIGINT", () => { _limpiar(); process.exit(130); });
+process.on("uncaughtException", (e) => { _limpiar(); console.error(e); process.exit(1); });
 const FFMPEG = "C:/Users/bauti/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe";
 
 const slug = process.argv[2];
@@ -43,9 +54,13 @@ for (const { f, src } of fuente) {
   const re = /key:\s*"(componente_\d+)",\s*start(?:Sec)?:\s*([\d.]+),\s*dur:\s*([\d.]+),\s*el:\s*\((?:d|d: number)\) => (.*)$/gm;
   for (const m of src.matchAll(re)) {
     const [, key, start, dur, el] = m;
-    const comp = el.startsWith("<>")
-      ? (el.match(/<PremiumOverlay[^>]*><(\w+)/) || el.match(/<(\w+)/) || [, "Fragmento"])[1]
-      : (el.match(/^<(\w+)/) || [, "Desconocido"])[1];
+    // El cue puede ser un FRAGMENTO: `<><PhotoBed/><Componente/></>` o
+    // `<><PhotoBed/><ReframedVideo/><PremiumOverlay><Componente/></PremiumOverlay></>`.
+    // El componente REAL es el primero que no sea andamiaje — si me quedo con el primer tag
+    // a secas termino llamando "PhotoBed" a los 154 y el filtro --comp no engancha nada.
+    const ANDAMIO = new Set(["PhotoBed", "ReframedVideo", "PremiumOverlay", "PhotoScene", "AvatarWindow"]);
+    const tags = [...el.matchAll(/<([A-Z]\w+)/g)].map((x) => x[1]);
+    const comp = tags.find((t) => !ANDAMIO.has(t)) || tags[0] || "Desconocido";
     if (soloComp.length && !soloComp.includes(comp)) continue;
     const f0 = Math.round(parseFloat(start) * FPS), nf = Math.max(1, Math.round(parseFloat(dur) * FPS));
     beats.push({ key, comp, archivo: f, f0, nf });
@@ -92,6 +107,18 @@ for (const b of beats) {
     }
   }
 }
+
+// ⛔ 0 frames medidos NO es "0 negros": es la compuerta rota. Pasó de verdad — el bundle se
+//    quedó sin disco (ENOSPC copiando public/), no se renderizó un solo still, y esto daba
+//    exit 0. Encima el wrapper de background también reporta 0 con node crasheado, así que
+//    el único testigo confiable es este conteo.
+const medidos = ok + oscuros.length + errores.length;
+const esperados = beats.length * 2;
+if (medidos < esperados) {
+  console.error(`⛔ se midieron ${medidos} frames de ${esperados}: la compuerta NO corrió entera (¿disco lleno? ¿bundle sin bundle.js?)`);
+  process.exit(1);
+}
+if (ok + oscuros.length === 0) { console.error("⛔ 0 frames medidos — la compuerta no midió NADA"); process.exit(1); }
 
 console.log(`\n=== COMPUERTA DE NEGROS · ${slug} · frames claros ${ok} · oscuros ${oscuros.length} · errores ${errores.length} ===`);
 if (errores.length) { console.log("ERRORES DE RENDER:"); errores.slice(0, 8).forEach((e) => console.log("  ⛔ " + e)); }
