@@ -43,7 +43,7 @@ jobs:
   render:
     needs: prepare
     runs-on: ubuntu-latest
-    timeout-minutes: 25   # (fix f08219e de main) un chunk colgado falla rapido y stitch persiste los buenos
+    timeout-minutes: 45   # (fix f08219e de main era 25: en nrcollagen mató 2 chunks sanos al 96%) un chunk colgado igual falla
     strategy:
       fail-fast: false
       matrix:
