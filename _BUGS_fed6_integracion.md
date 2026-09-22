@@ -29,6 +29,48 @@ Aparecen al subir de ~5 a ~25 componentes. Con pocos componentes NO se ven, por 
    para los clips).
    ⚠ **`SurfaceCtx="footage"` a secas NO alcanza**: arregla la tinta y te deja los 5 s de negro.
 
+   ### 6-bis. LA CAUSA ES MÁS ANCHA: **TODO** cue de componente abre en negro (22-sep-2026)
+   Medido, no deducido. `LowerThirdId` y `StampBadge` son sólo los casos extremos.
+
+   **Causa raíz:** en el kit `_fed6` **`Panel` y `Cinema` NO pintan una placa opaca**: son
+   TRATAMIENTOS del footage (`Cinema paper={0}` — el propio `Panel` dice "★ NADA DE
+   PLACA/MARCO … el fondo se DESENFOCA y las piezas flotan directamente sobre él"). Montados
+   como cue BASE no hay footage: el tratamiento se aplica al vacío y da negro. Encima
+   `useBeat` devuelve `op = enter * exit` con `enter = spring(...)`, que **vale 0 en el
+   frame 0**, así que los primeros cuadros son negro PURO.
+
+   **Escala real, medida con `blackdetect d=0.2 pix_th=0.10`:**
+   | | |
+   |---|---|
+   | `fcsunaclavada` ENTREGADO | **57 tramos negros**, y los **57 caen exactamente en el arranque de un cue de componente** (78 cues) |
+   | duraciones | 35×0,267 s · 10×0,20 s · 7×0,233 s · **5×0,30 s** |
+   | los 5 de 0,30 s | son los 5 `StampBadge` (357,5 · 1105,07 · 1406,6 · 1840,53 · 2077,1 s) |
+   | stills de `fcspuntos` | **106 de 106 primeros-frames de cue de componente dan luma 0** |
+
+   **Por qué `StampBadge` es el peor (0,30 s) y no otra cosa:** su slam arranca en `AT = 8`,
+   así que además del fade de `op` no dibuja NADA hasta el cuadro 8. Los demás componentes
+   sí dibujan desde el 0 y salen del negro un poco antes. Mismo mecanismo, distinta duración.
+
+   ⛔ **Dos hipótesis que MEDÍ Y SON FALSAS** — no volver a gastar tiempo en ellas:
+   1. *"`StampBadge` es un overlay puro que no pinta fondo"*: **sí** pinta (`<Cinema>`).
+   2. *"alcanza con que `op` arranque en 1"*: lo parcheé y volví a medir → los frames pasan
+      de luma 0 a luma **6-7**, y `blackdetect` los sigue marcando. El fade AGRAVA, no causa.
+      Lo que falta es el footage, y sin él no hay opacidad que alcance.
+
+   ✅ **Lo único que lo arregla, verificado:** footage real debajo del cue. El
+   `LowerThirdId` con `under` mide **luma 128 y 0,00 s de negro**, contra 0 / 0,27 s del resto.
+
+   ⛔ **Ningún heurístico ESTÁTICO caza esta clase.** Un detector de "exports que nunca pintan
+   `Panel`/`Cinema`" marca `LowerThirdId` y `CornerEyebrow` pero deja pasar `StampBadge`, y
+   sobre todo deja pasar a los otros ~150 cues que también abren en negro. Extender una lista
+   de nombres (`OVERLAY_COMPONENTES`) NO protege del próximo. La única compuerta que sostiene
+   es EMPÍRICA: `node scripts/overlay_gate.mjs <slug>` renderiza el primer frame **y** el del
+   medio de cada beat y mide luma.
+
+   ⚠ Para medir luma NO sirve `signalstats`: sus métricas van por METADATA y no salen al log
+   ni con `-v info`, así que "no imprime" se lee como "0" (me comí una corrida entera así).
+   Reducir a 1×1 en gris y leer el byte: `-vf "format=gray,scale=1:1" -f rawvideo -`.
+
 ## MÉTODO QUE LOS ENCONTRÓ BARATO (hacelo ANTES de despachar el farm)
 Barrido LOCAL con `bundle` + `renderStill` sobre **UN frame de CADA beat de componente**.
 Cada bug encontrado así ahorra un render fallido de ~30 min. ⛔ No los descubras de a uno por
@@ -44,6 +86,16 @@ del barrido sea **igual** al de componentes que reporta el build.
 ⚠ `volumedetect` imprime a nivel **info**: con `ffmpeg -v error` no sale nada y el auditor reporta
 **"SIN AUDIO"** en un video que tiene audio perfecto. Usar `-v info -hide_banner -nostats` y
 `-map 0:a:0`. (Falso positivo que costó una vuelta entera en `fcspuntos`.)
+
+⛔ **El `blackdetect` del auditor daba un falso PASS, y NO era por `-v error`.** Corría
+`d=0.5:pix_th=0.06`, y el problema es `pix_th`:
+- `pix_th=0.06` sólo cuenta como negro el píxel por debajo de luma ~15, y el fondo del canal
+  (`#08110F`, luma ~14) queda JUSTO en el borde → no califica casi nada.
+- `d=0.5` encima descarta todo tramo de menos de medio segundo, y los de este bug son de 0,20-0,30 s.
+
+Sobre el MISMO mp4 entregado de `fcsunaclavada`: `d=0.5:pix_th=0.06` → **0 tramos**;
+`d=0.2:pix_th=0.06` → **0 tramos**; `d=0.2:pix_th=0.10` (el default de ffmpeg) → **57 tramos**.
+Usar SIEMPRE `blackdetect=d=0.2:pix_th=0.10` y que cualquier tramo sea **FALLO de entrega**.
 
 ## GITHUB / FARM
 ⛔ No pollees el estado cada 60 s: dispara el **límite SECUNDARIO** (antiabuso por frecuencia)
