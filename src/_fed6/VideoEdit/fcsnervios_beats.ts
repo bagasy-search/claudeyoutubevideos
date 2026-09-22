@@ -1,6 +1,6 @@
 // AUTO-GENERADO por gen_fcsnervios.mjs — no editar a mano
 export const FCSNERVIOS_TOTAL_S = 1239.80;
-export const FCSNERVIOS_BEATS = [
+export const FCSNERVIOS_BEATS: any[] = [
  {
   "kind": "avatar",
   "tag": "hook",
@@ -32,6 +32,36 @@ export const FCSNERVIOS_BEATS = [
   ],
   "perWord": 12,
   "tone": "teal"
+ },
+ {
+  "kind": "bigstat",
+  "start": 119.62,
+  "dur": 6,
+  "eyebrow": "La noche que la trajo al consultorio",
+  "value": 3,
+  "suffix": " noches",
+  "support": "sin dormir, con los pies ardiendo como sobre la hornalla"
+ },
+ {
+  "kind": "frasecinetica",
+  "start": 150,
+  "dur": 4,
+  "words": [
+   {
+    "t": "Doce"
+   },
+   {
+    "t": "años."
+   },
+   {
+    "t": "En"
+   },
+   {
+    "t": "silencio."
+   }
+  ],
+  "perWord": 11,
+  "tone": "warn"
  },
  {
   "kind": "bigstat",
@@ -141,6 +171,14 @@ export const FCSNERVIOS_BEATS = [
   "src": "broll/fcsnervios_av/tres_caminos.mp4"
  },
  {
+  "kind": "mitoverdad",
+  "start": 340,
+  "dur": 9,
+  "flipAt": 120,
+  "myth": "Es cosa de la edad: a los 70 el cuerpo hace ruidos y ya.",
+  "truth": "Tiene nombre —neuropatía— y materiales concretos que el nervio necesita para repararse."
+ },
+ {
   "kind": "frasecinetica",
   "start": 348.84,
   "dur": 4,
@@ -159,6 +197,16 @@ export const FCSNERVIOS_BEATS = [
    }
   ],
   "perWord": 10,
+  "tone": "teal"
+ },
+ {
+  "kind": "lowerthird",
+  "start": 355,
+  "dur": 5,
+  "kicker": "HONESTIDAD",
+  "title": "Apoyo real, no milagro",
+  "desc": "no reemplaza tratar la causa de fondo",
+  "tag": "DR. FEDERER",
   "tone": "teal"
  },
  {
@@ -186,6 +234,15 @@ export const FCSNERVIOS_BEATS = [
   ]
  },
  {
+  "kind": "bigstat",
+  "start": 420,
+  "dur": 8,
+  "eyebrow": "Benfotiamina (B1) en los estudios",
+  "value": 300,
+  "suffix": " mg/día",
+  "support": "dosis usada en neuropatía, siempre bajo indicación médica"
+ },
+ {
   "kind": "lowerthird",
   "start": 437.98,
   "dur": 5,
@@ -201,6 +258,30 @@ export const FCSNERVIOS_BEATS = [
   "start": 460.36,
   "dur": 34,
   "src": "broll/fcsnervios_av/b12_importante.mp4"
+ },
+ {
+  "kind": "flowsteps",
+  "start": 497,
+  "dur": 12,
+  "title": "Por qué te falta B12 después de los 60",
+  "nodes": [
+   {
+    "label": "El estómago",
+    "sub": "produce menos ácido: absorbe menos B12"
+   },
+   {
+    "label": "La metformina",
+    "sub": "baja todavía más la absorción"
+   },
+   {
+    "label": "Dieta pobre",
+    "sub": "poca carne, huevo y lácteos"
+   },
+   {
+    "label": "Déficit silencioso",
+    "sub": "tres golpes que nadie conecta"
+   }
+  ]
  },
  {
   "kind": "lowerthird",
@@ -242,11 +323,58 @@ export const FCSNERVIOS_BEATS = [
   "tone": "warn"
  },
  {
+  "kind": "bigstat",
+  "start": 600,
+  "dur": 9,
+  "eyebrow": "Ácido alfa-lipoico",
+  "value": 600,
+  "suffix": " mg/día",
+  "support": "antioxidante; en Alemania se usa hace décadas para el nervio"
+ },
+ {
+  "kind": "frasecinetica",
+  "start": 620,
+  "dur": 3,
+  "words": [
+   {
+    "t": "Neutraliza."
+   },
+   {
+    "t": "El"
+   },
+   {
+    "t": "daño."
+   }
+  ],
+  "perWord": 12,
+  "tone": "teal"
+ },
+ {
   "kind": "avatar",
   "tag": "ala",
   "start": 629.24,
   "dur": 34,
   "src": "broll/fcsnervios_av/ala.mp4"
+ },
+ {
+  "kind": "flowsteps",
+  "start": 690,
+  "dur": 10,
+  "title": "Folato (B9) y B12 se piden JUNTAS",
+  "nodes": [
+   {
+    "label": "Trabajan de la mano",
+    "sub": "las dos reparan el nervio"
+   },
+   {
+    "label": "Síntomas iguales",
+    "sub": "hormigueo, adormecimiento, cansancio"
+   },
+   {
+    "label": "Ojo",
+    "sub": "folato de más tapa el déficit de B12"
+   }
+  ]
  },
  {
   "kind": "lowerthird",
@@ -267,6 +395,16 @@ export const FCSNERVIOS_BEATS = [
  },
  {
   "kind": "lowerthird",
+  "start": 785,
+  "dur": 6,
+  "kicker": "DATO",
+  "title": "Folato (B9)",
+  "desc": "acelga · espinaca · legumbres · hígado",
+  "tag": "DR. FEDERER",
+  "tone": "teal"
+ },
+ {
+  "kind": "lowerthird",
   "start": 797.98,
   "dur": 5,
   "kicker": "DATO",
@@ -274,6 +412,15 @@ export const FCSNERVIOS_BEATS = [
   "desc": "15-20 min de sol · pescado graso · yema · lácteos fortificados",
   "tag": "DR. FEDERER",
   "tone": "teal"
+ },
+ {
+  "kind": "bigstat",
+  "start": 815,
+  "dur": 8,
+  "eyebrow": "Magnesio — el más subestimado",
+  "value": 400,
+  "suffix": " mg/día",
+  "support": "relaja el músculo y calma el nervio; ojo si hay riñón"
  },
  {
   "kind": "rankbars",
@@ -367,6 +514,19 @@ export const FCSNERVIOS_BEATS = [
   "src": "broll/fcsnervios_av/dos_grupos.mp4"
  },
  {
+  "kind": "checklist",
+  "start": 1015,
+  "dur": 9,
+  "eyebrow": "Grupo 2 — esto no espera",
+  "title": "Si te reconocés acá, turno esta semana",
+  "items": [
+   "Ardor todas las noches, cada vez peor",
+   "No sentís bien los pies / se te cae algo",
+   "Diabetes que sabés que no controlás"
+  ],
+  "stamp": "NO ESPERES"
+ },
+ {
   "kind": "lowerthird",
   "start": 1022.24,
   "dur": 8,
@@ -456,6 +616,18 @@ export const FCSNERVIOS_BEATS = [
   "tone": "teal"
  },
  {
+  "kind": "guardaesto",
+  "start": 1075,
+  "dur": 8,
+  "title": "Antes de irte, tres reglas",
+  "items": [
+   "Dale 8 a 12 semanas: el nervio va lento",
+   "Más no es mejor: dosis correcta",
+   "Acompaña al médico, no lo reemplaza"
+  ],
+  "tag": "RECORDÁ"
+ },
+ {
   "kind": "frasecinetica",
   "start": 1091.68,
   "dur": 4,
@@ -506,6 +678,16 @@ export const FCSNERVIOS_BEATS = [
   "tone": "teal"
  },
  {
+  "kind": "lowerthird",
+  "start": 1210,
+  "dur": 8,
+  "kicker": "GUÍA COMPLETA",
+  "title": "La Guía Completa de la Salud Después de los 60",
+  "desc": "archivos-federer.vercel.app — el primer link abajo",
+  "tag": "DR. FEDERER",
+  "tone": "teal"
+ },
+ {
   "kind": "avatar",
   "tag": "cierre",
   "start": 1232.16,
@@ -527,4 +709,4 @@ export const FCSNERVIOS_BEATS = [
   "perWord": 16,
   "tone": "teal"
  }
-] as any[];
+];

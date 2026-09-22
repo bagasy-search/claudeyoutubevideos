@@ -44,7 +44,7 @@ export const MainFcsnervios: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: BG }}>
       {/* AUDIO MASTER — unico, continuo, ancla todo el video */}
-      <Audio src={staticFile("fcsnervios.wav")} />
+      <Audio src={staticFile("fcsnervios.m4a")} />
 
       {/* CAPA 1 — raw (b-roll denso Pexels), a pantalla completa, cubre TODO lo que no es avatar */}
       {rawBeats.map((b: any, i: number) => {
