@@ -396,7 +396,7 @@ export const CycleLoop: React.FC<{
 };
 
 // ── LayerStack — ensamblado por capas: planos 3D que caen y se apilan ────────
-export type StackLayer = { label: string; color?: string };
+export type StackLayer = { label: string; color?: string; sub?: string };
 export const LayerStack: React.FC<{
   durationInFrames: number;
   theme?: Theme;
@@ -455,7 +455,7 @@ export const LayerStack: React.FC<{
                 </svg>
                 <div>
                   <Display theme={t} size={38}>{ly.label}</Display>
-                  <Support theme={t} size={23}>capa {n - i} de {n}</Support>
+                  <Support theme={t} size={23}>{ly.sub !== undefined ? ly.sub : `capa ${n - i} de ${n}`}</Support>
                 </div>
               </div>
             </React.Fragment>
