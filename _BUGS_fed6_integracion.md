@@ -100,3 +100,25 @@ Usar SIEMPRE `blackdetect=d=0.2:pix_th=0.10` y que cualquier tramo sea **FALLO d
 ## GITHUB / FARM
 ⛔ No pollees el estado cada 60 s: dispara el **límite SECUNDARIO** (antiabuso por frecuencia)
 aunque la cuota principal esté intacta. **Backoff de 10 min**, o intentar bajar el artifact directo.
+
+## SELLO DE AGNES — AGUJERO CONOCIDO (pendiente, 22-sep-2026)
+`scripts/agnes_qc_gate.mjs` sella cada clip con **`size` + `mtime`**, y con eso **no distingue
+una poda de una edición**. Pasó: una poda de assets reseteó el `mtime` de 345 clips de
+`fcspuntos` y 269 de `fcsunaclavada`, el pre-vuelo del farm los marcó a los 614 como
+"modificados después del control" y bloqueó los dos despachos. Los 614 tenían **tamaño
+idéntico**, así que el contenido no había cambiado: se re-selló sólo el `mtime` conservando
+`revisado`/`ok` (backups en `_v3/*_agnes_qc.json.bak`).
+→ **PENDIENTE:** agregarle un **hash** (o tamaño + hash corto) al sello, para que una poda no
+   se vea igual que una edición. No hacerlo con renders en vuelo.
+
+## VARIOS AGENTES EN EL MISMO WORKING TREE — verificá los assets ANTES de cada tarball
+No son sólo los agentes del lote: `public/` y `node_modules/` aparecieron BORRADOS enteros
+(el agente de `fcsjuanetes` recuperó 240 clips y 363 imágenes desde staging), y a `fcspuntos`
+le podaron `public/img/` de 549 imágenes a 25 y `public/broll/` de 496 clips a 345.
+⛔ No asumas que los assets siguen en disco desde el chequeo anterior: **verificá contra el JSX
+   que vas a rendear**, justo antes de armar el tar. Si un render falla por asset faltante, lo
+   más probable es eso y no tu build.
+⚠ Y ojo con `farm.mjs`: **BORRA el release de assets antes de recrearlo**. Si el
+   `gh release create` falla (p.ej. `target_commitish is invalid` porque tu commit local no
+   está en el remoto), te quedás **sin release** y el render no tiene de dónde bajar nada.
+   Recrearlo con `--target $(git rev-parse origin/<rama>)`.
