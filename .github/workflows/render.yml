@@ -43,6 +43,10 @@ jobs:
   render:
     needs: prepare
     runs-on: ubuntu-latest
+    # Un chunk que se cuelga (blur/backdrop-filter pesado bajo swangle, o decode trabado) NO debe
+    # comerse el default de 360 min de un runner en silencio. Con esto FALLA en 25' y stitch
+    # (if:!cancelled()) persiste los buenos → re-render parcial limpio con only_chunks. (21-sep-2026)
+    timeout-minutes: 25
     strategy:
       fail-fast: false
       matrix:
