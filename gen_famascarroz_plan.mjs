@@ -29,6 +29,9 @@ const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().rep
 // ── AVATAR: UN reel RunPod cortado en ventanas (origen = ms exacto del momento en el máster)
 const RP = J(`_v3/${SLUG}_rp_groups.json`);
 const CORTES = fs.existsSync(`_v3/${SLUG}_cortes_runpod.json`) ? J(`_v3/${SLUG}_cortes_runpod.json`) : [];
+// ⛔ el QR tiene que estar EN PANTALLA mientras dice "escaneen el código": esas frases salen de la ventana de avatar
+//    (arranca después) y la tarjeta de la guía se estira hasta ahí.
+CORTES.push({ ventana: "win-018", en_ventana_s: 0, dur: 6.53 }, { ventana: "win-033", en_ventana_s: 0, dur: 6.69 }, { ventana: "win-056", en_ventana_s: 0, dur: 7.15 });
 const avatarBeats = [], WINS_EF = [];
 let recortadas = 0;
 for (const g of RP.groups) for (const sg of g.segments) {
@@ -123,8 +126,8 @@ const beats = [...avatarBeats, ...vlogBeats];
 const overlays = [];
 let sinAsset = 0, recortados = 0;
 const skip = new Set();
-const CAP = { ErrorStinger: 2.6, GuiaCTA3D: 12, RecetaEscena: 12, PhotoTriptych: 10 };
-const PISO = { GuiaCTA3D: 9.5, RecetaEscena: 9, MitoVerdad: 8, HourDial: 5 };
+const CAP = { ErrorStinger: 2.6, GuiaCTA3D: 16, RecetaEscena: 12, PhotoTriptych: 10 };
+const PISO = { GuiaCTA3D: 16, RecetaEscena: 9, MitoVerdad: 8, HourDial: 5 };
 
 for (let i = 0; i < MOM.length; i++) {
   const m = MOM[i];
