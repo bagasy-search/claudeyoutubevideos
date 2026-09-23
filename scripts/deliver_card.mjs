@@ -7,9 +7,10 @@
 // - <channel_key>: p.ej. "https://www.youtube.com/@FedererBuilding" (o "draft:xxxx")
 // - <card_id>: el id del item del plan (lo trae el prompt de Bagasy)
 // - <slug>: el slug del render; el release <slug> debe tener el asset <slug>.mp4, y debe existir public/<slug>_meta.json
-// Creds de Supabase: D:/Proyectos/yt-scout-web/.env.local (mismo patrón que deliver_to_bagasy.mjs / el worker).
+// Creds de Supabase: resueltas en cascada por scripts/supa_creds.mjs (env vars, <video2>/.env.local, yt-scout-web).
 import fs from "node:fs";
 import { execSync } from "node:child_process";
+import { supaCreds } from "./supa_creds.mjs";
 
 const [channelKey, cardId, slug, ...rest] = process.argv.slice(2);
 if (!channelKey || !cardId || !slug) {
@@ -21,10 +22,8 @@ const REPO = process.env.BAGASY_REPO || "bagasy-search/claudeyoutubevideos";
 const MINT = process.env.BAGASY_MINT || "https://bagasy-search.vercel.app/api/youtube/mint";
 const sh = (c) => execSync(c, { stdio: ["ignore", "pipe", "pipe"], encoding: "utf8" });
 
-const env = fs.readFileSync("D:/Proyectos/yt-scout-web/.env.local", "utf8");
-const g = (k) => (env.match(new RegExp("^" + k + "=(.*)$", "m")) || [])[1]?.trim();
-const U = g("NEXT_PUBLIC_SUPABASE_URL"), K = g("SUPABASE_SERVICE_ROLE_KEY");
-if (!U || !K) { console.error("faltan creds de Supabase en yt-scout-web/.env.local"); process.exit(3); }
+const { U, K, fuente: fuenteCreds } = supaCreds();
+console.log("creds de Supabase:", fuenteCreds);
 const H = { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" };
 
 // 1) verificar release descargable
@@ -76,10 +75,39 @@ const main = async () => {
     status: "done", mp4_url: url, thumb_url: thumb,
     yt_title: meta.title ? String(meta.title).slice(0, 120) : null, yt_description: meta.description || null,
   };
-  const jr = await fetch(`${U}/rest/v1/video_jobs`, { method: "POST", headers: { ...H, Prefer: "return=representation" }, body: JSON.stringify(jobBody) });
-  if (!jr.ok) { console.error("insert video_jobs falló:", jr.status, (await jr.text()).slice(0, 200)); process.exit(5); }
-  const job = (await jr.json())[0];
-  console.log("video_jobs ✓ id", job.id, "· status=done · mp4_url seteado");
+  // ⛔ ANTI-DUPLICADOS: un video = UN job por tarjeta. Cada corrida ANTES insertaba una fila nueva y
+  // re-enganchaba la tarjeta → quedaban varios jobs "subibles" para la misma tarjeta, y si se apretaba
+  // "subir" en momentos distintos se subía una versión INTERMEDIA distinta = DUPLICADO en el canal.
+  // Ahora: si la tarjeta ya tiene job, se ACTUALIZA esa fila (no se crea otra). Y si ese job YA ESTÁ
+  // SUBIDO a YouTube, se ABORTA (re-entregar crearía un 2º video) salvo --force-reupload explícito.
+  let existingJob = null;
+  if (item?.videoJobId) {
+    const ej = await (await fetch(`${U}/rest/v1/video_jobs?id=eq.${item.videoJobId}&select=id,yt_video_id,yt_upload_status`, { headers: H })).json();
+    existingJob = Array.isArray(ej) ? ej[0] : null;
+  }
+  // Guarda ANCHA: ¿ESTE slug en ESTE canal ya tiene ALGÚN job subido? (aunque la tarjeta apunte a otro
+  // job intermedio). Si sí, re-entregar y subir haría un 2º video = duplicado. Se aborta salvo --force.
+  const yaSubido = await (await fetch(`${U}/rest/v1/video_jobs?channel_key=eq.${encodeURIComponent(channelKey)}&slug=eq.${slug}&yt_video_id=not.is.null&select=id,yt_video_id&limit=1`, { headers: H })).json();
+  const subido = Array.isArray(yaSubido) ? yaSubido[0] : null;
+  if (subido) {
+    console.error(`\n⛔ DUPLICADO EVITADO: el slug ${slug} en este canal YA tiene un video SUBIDO (job ${subido.id}, yt_video_id=${subido.yt_video_id}).`);
+    console.error(`   Re-entregar y subir crearía un SEGUNDO video. Si esa subida es la versión EQUIVOCADA: borrala en`);
+    console.error(`   https://studio.youtube.com/video/${subido.yt_video_id}/edit y volvé a correr con --force-reupload.`);
+    if (!rest.includes("--force-reupload")) process.exit(6);
+    console.error("   (--force-reupload) sigo; actualizo el job pero NO re-subo automático, lo subís vos.");
+  }
+  let job;
+  if (existingJob) {
+    const up = await fetch(`${U}/rest/v1/video_jobs?id=eq.${existingJob.id}`, { method: "PATCH", headers: { ...H, Prefer: "return=representation" }, body: JSON.stringify(jobBody) });
+    if (!up.ok) { console.error("update video_jobs falló:", up.status, (await up.text()).slice(0, 200)); process.exit(5); }
+    job = (await up.json())[0];
+    console.log("video_jobs ✓ id", job.id, "· REUSADO (update, sin duplicar) · mp4_url seteado");
+  } else {
+    const jr = await fetch(`${U}/rest/v1/video_jobs`, { method: "POST", headers: { ...H, Prefer: "return=representation" }, body: JSON.stringify(jobBody) });
+    if (!jr.ok) { console.error("insert video_jobs falló:", jr.status, (await jr.text()).slice(0, 200)); process.exit(5); }
+    job = (await jr.json())[0];
+    console.log("video_jobs ✓ id", job.id, "· nuevo · mp4_url seteado");
+  }
 
   // 5) enganchar la tarjeta del planificador
   if (item) {

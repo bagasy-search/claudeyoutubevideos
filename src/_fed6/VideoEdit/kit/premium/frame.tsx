@@ -59,7 +59,9 @@ export const ChapterTitle: React.FC<{
   number?: string;
   title?: string;
   sub?: string;
-}> = ({ durationInFrames, theme, number = "III", title = "El error que arruina todo", sub = "y cómo esquivarlo en 30 segundos" }) => {
+  /** línea sobre el título; si se pasa reemplaza a "Capítulo {number}" (canales en inglés) */
+  eyebrow?: string;
+}> = ({ durationInFrames, theme, number = "III", title = "El error que arruina todo", sub = "y cómo esquivarlo en 30 segundos", eyebrow }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
   const numS = kick(frame, fps, 4, SPR.soft);
@@ -94,7 +96,7 @@ export const ChapterTitle: React.FC<{
           <div style={{ display: "flex", alignItems: "center", gap: 30, marginBottom: 26, opacity: numS }}>
             <div style={{ width: 130 * ruleP, height: 3, background: t.color.gold }} />
             <div style={{ fontFamily: t.fontLabel, fontWeight: 700, fontSize: 30, letterSpacing: 8, textTransform: "uppercase", color: t.color.gold }}>
-              Capítulo {number}
+              {eyebrow ?? `Capítulo ${number}`}
             </div>
             <div style={{ width: 130 * ruleP, height: 3, background: t.color.gold }} />
           </div>
