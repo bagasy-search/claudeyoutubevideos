@@ -1,0 +1,141 @@
+{
+ "dir": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S8",
+ "face": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/W_carmen.png"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same patio photo as the reference, late afternoon but still bright daylight: the doctor stands next to the big clay pot of parsley (with some stems freshly cut), holding a watering can, looking at the viewer. Everything else identical."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same patio: he has put the watering can down on the bench and stands next to the pot, relaxed, looking at the viewer."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same patio: he points at the outer stems of the parsley pot, explaining."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Close-up of a small new clay pot on the wooden bench with dark soil and a young parsley seedling, his hands holding its small root ball, about to press it in. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same close-up: the seedling now firmly planted, his fingers pressing the soil around it, a few drops of water on the leaves."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same patio, wide: he stands next to the bench with the small new pot beside the big parsley pot, brushing soil off his hands, smiling at the viewer."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same patio: he holds a freshly picked parsley stem near his nose, nodding."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same patio: he points down toward the bottom of the frame, casual smile."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same patio: he crouches next to the parsley pot, smiling warmly at the viewer."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same patio: he waves goodbye to the viewer with a big smile, a parsley leaf in the other hand."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s8_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Y bueno, aquí volvemos, al principio. Al perejil. Que cuesta casi nada y lo tienes en cualquier verdulería.",
+   "action": "He waters the parsley pot a little, puts the watering can down and looks at the viewer.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s8_01.wav"
+  },
+  {
+   "id": "s8_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Si lo quieres tener en casa, una maceta así, con sol de la mañana y riego seguido, y cortas de afuera hacia adentro.",
+   "action": "He touches the outer stems of the pot showing where to cut, then glances up at the sun.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s8_02.wav"
+  },
+  {
+   "id": "s8_02b",
+   "a": "K3",
+   "b": "K4",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s8_02b.wav",
+   "text": "Y compra un plantín, no semillas, que tardan muchísimo en salir. Un plantín, y en dos semanas ya estás cortando.",
+   "action": "Close-up: his hands press soil around a small parsley seedling in a new clay pot, then give it a little water."
+  },
+  {
+   "id": "s8_02c",
+   "a": "K5",
+   "b": "K6",
+   "text": "Y cuando florece, se pone amargo. Así que ve cortando seguido, que eso lo mantiene tierno.",
+   "action": "He cuts one stem from the big pot with his fingers, smells it, and nods.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s8_02c.wav"
+  },
+  {
+   "id": "s8_03",
+   "a": "K6",
+   "b": "K7",
+   "text": "Te dejo la receta entera en el video, y la hoja para que le saques foto. La guía de la firmeza está abajo, para el que quiera más.",
+   "action": "He points at the camera, then down toward the bottom of the frame, casual.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s8_03.wav"
+  },
+  {
+   "id": "s8_04",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y cuéntame en los comentarios cuántos años tienes y si lo vas a probar. Los leo todos, de verdad.",
+   "action": "He crouches next to the pot again, smiling, and mimes typing a comment with his thumbs.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s8_04.wav"
+  },
+  {
+   "id": "s8_05",
+   "a": "K8",
+   "b": "K9",
+   "text": "Nos vemos en el próximo. Y esta noche: algodón, perejil, y a dormir. Cuídate mucho.",
+   "action": "He picks one parsley leaf, holds it up with a wink, and waves goodbye to the viewer.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s8_05.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S8/vlog_S8.mp4"
+}

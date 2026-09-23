@@ -1,0 +1,465 @@
+{
+ "dir": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S4",
+ "face": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/W_carmen.png"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen photo, later in the day: the counter now has the wooden cutting board with a fresh bunch of flat-leaf parsley, a small white bowl, a small plain white cup of natural yogurt with a spoon, and a small hand blender cup. He stands behind the counter as before, looking to the left side of the frame toward the hallway with a welcoming smile, as if someone just arrived. Everything else identical — do NOT add any book or aloe."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: the elderly woman (exactly the woman in the last reference image: short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old) now stands at the left end of the counter next to him, both smiling; he gestures toward her with an open hand."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: the elderly woman points at her own face with both index fingers, laughing; the doctor beside her laughs silently, looking at her."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he holds an open hand toward the elderly woman inviting her to talk; she smiles at the viewer, ready to speak."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: the elderly woman touches the lines on her forehead with one finger, frank expression; the doctor listens, nodding."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: the elderly woman laughs with one hand on her chest; the doctor laughs silently beside her."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he explains to the viewer with an open hand; the elderly woman beside him nods, listening."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he shakes his head honestly with a small sincere smile; the elderly woman listens beside him."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: the elderly woman points toward the fridge at the side of the kitchen, smiling; the doctor listens."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: the elderly woman shakes her head laughing with open hands; the doctor beside her smiles."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he speaks warmly to the viewer with a hand gesturing toward her; she nods beside him."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he has the cutting board with parsley right in front of him and the knife in hand, looking at the elderly woman with a playful question."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: the elderly woman has both hands raised in mock surrender, laughing; the doctor holds the knife over the parsley, laughing silently."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Close-up of the wooden cutting board: a small pile of washed flat-leaf parsley and his hands with the kitchen knife starting to chop finely. Only hands visible. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "IMPORTANT: the elderly woman MUST be in the picture, standing on the left next to him exactly as in the first image; wide shot like the first image. Same close-up: the parsley is now minced very finely, almost a dark green paste, gathered with the flat of the knife."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K12",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen, wide: the minced parsley is now in the small white bowl; he holds the little cup of natural yogurt and a spoon; the elderly woman watches beside him."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he holds the empty spoon up after adding the yogurt to the bowl; the elderly woman looks into the bowl."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Close-up of the small white bowl on the marble counter: a spoonful of white yogurt on top of minced green parsley, a spoon starting to stir. Only his hand visible. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the HANDS ONLY, exactly the same tight framing and camera distance as the first image (which is already a close-up); his face is NOT visible at all, do not zoom out, do not show his head. Ignore the last input image for this shot. Same close-up: the mixture is now a smooth, even pale-green cream in the bowl, the spoon resting inside."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K16",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen, wide: he holds the small white bowl with the pale-green cream toward the viewer to show it; the elderly woman beside him looks at it."
+  },
+  {
+   "id": "K20",
+   "from": [
+    "K19",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he mimes spreading a mask on his cheek with two fingers; the elderly woman watches, nodding."
+  },
+  {
+   "id": "K21",
+   "from": [
+    "K20",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he holds up two fingers toward the viewer; the elderly woman beside him also holds up two fingers, smiling."
+  },
+  {
+   "id": "K22",
+   "from": [
+    "K21",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he leans on the counter toward the viewer, serious; the elderly woman stands attentive beside him."
+  },
+  {
+   "id": "K23",
+   "from": [
+    "K22",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he holds a yellow lemon up in one hand and shakes his head with a disapproving face; the elderly woman grimaces."
+  },
+  {
+   "id": "K24",
+   "from": [
+    "K23",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: the elderly woman covers her cheeks with both hands, laughing; the doctor beside her smiles and points at her."
+  },
+  {
+   "id": "K25",
+   "from": [
+    "K24",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft white-grey hair, lilac knitted cardigan over a white blouse, 70 years old). Same kitchen: he has an arm around the elderly woman's shoulder for a brief friendly hug, both smiling at the viewer, she waves goodbye."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s4_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Ah, mira quién llegó. Te dije que la paciente de la que te hablé me venía a visitar. Pasa, Carmen, pasa.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He looks toward the left edge of the frame, smiles widely and waves someone in with his hand; the elderly woman from the fourth reference image walks in from the left and stops at the left end of the counter.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_01.wav"
+  },
+  {
+   "id": "s4_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "¡Hola, doctor! Hola a todos. Yo soy Carmen, tengo setenta años, y sí, yo soy la de la cara.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. The elderly woman waves at the viewer, laughs, and points at her own face with both index fingers; the doctor laughs silently beside her.",
+   "refs": [
+    "W"
+   ],
+   "line": "¡Hola, doctor! Hola a todos. Yo soy Carmen, tengo setenta años, y sí, yo soy la de la cara.",
+   "secs": 8,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 70-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s4_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Carmen lleva... ¿cuánto? Casi dos meses con el agua de perejil. Cuéntales tú, que a mí no me van a creer.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He turns to her, hesitates counting on his fingers, then opens his hand toward her inviting her to speak; she listens smiling and nods.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_03.wav"
+  },
+  {
+   "id": "s4_04",
+   "a": "K3",
+   "b": "K4",
+   "text": "Mire, le voy a decir la verdad. Las arrugas siguen ahí, eh. Las de la frente siguen. No le voy a mentir a nadie.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. The elderly woman talks to the viewer, frank, touching the lines on her own forehead with one finger; the doctor listens silently and nods.",
+   "refs": [
+    "W"
+   ],
+   "line": "Mire, le voy a decir la verdad. Las arrugas siguen ahí, eh. Las de la frente siguen. No le voy a mentir a nadie.",
+   "secs": 10,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 70-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s4_05",
+   "a": "K4",
+   "b": "K5",
+   "text": "Pero ya no tengo la cara cansada. Y la semana pasada, en la farmacia, me pidieron la credencial para el descuento. ¡Me la pidieron!",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. The elderly woman tells it with growing delight, pretends to hand over a card, and laughs at the end with her hand on her chest; the doctor laughs silently.",
+   "refs": [
+    "W"
+   ],
+   "line": "Pero ya no tengo la cara cansada. Y la semana pasada, en la farmacia, me pidieron la credencial para el descuento. ¡Me la pidieron!",
+   "secs": 12,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 70-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s4_06",
+   "a": "K5",
+   "b": "K6",
+   "text": "Y eso es lo que te decía al principio. No es que desapareció la arruga. Desapareció la cara de cansada, que es lo que más avejenta.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. Still smiling, he turns to the viewer and explains, pointing gently toward her cheek without touching it; she listens, nodding.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_06.wav"
+  },
+  {
+   "id": "s4_07",
+   "a": "K6",
+   "b": "K7",
+   "text": "Cuando la piel está hidratada y con luz, las arrugas finitas se ven menos. Las profundas no, y no te voy a decir que sí.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He explains calmly, making a small 'little' gesture with thumb and finger, then shakes his head honestly; she listens.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_07.wav"
+  },
+  {
+   "id": "s4_08",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y yo me lo pongo de noche, como usted dijo, nunca de día. El frasco lo hago cada tres días, y lo tengo en la nevera junto a la leche.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. The elderly woman talks to the viewer, miming dabbing a cotton pad on her cheek and then pointing toward the fridge; the doctor listens silently.",
+   "refs": [
+    "W"
+   ],
+   "line": "Y yo me lo pongo de noche, como usted dijo, nunca de día. El frasco lo hago cada tres días, y lo tengo en la nevera junto a la leche.",
+   "secs": 12,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 70-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s4_08b",
+   "a": "K8",
+   "b": "K9",
+   "text": "Y mis hijas me preguntan qué me hice. Y yo les digo: ¡perejil! Y no me creen, doctor, no me creen.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. The elderly woman tells it laughing and shaking her head, hands open; the doctor listens silently, amused.",
+   "refs": [
+    "W"
+   ],
+   "line": "Y mis hijas me preguntan qué me hice. Y yo les digo: ¡perejil! Y no me creen, doctor, no me creen.",
+   "secs": 9,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 70-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s4_08c",
+   "a": "K9",
+   "b": "K10",
+   "text": "Y ese es el punto. No te vas a ver de cuarenta. Te vas a ver tú, pero descansada. Esa distancia es más corta de lo que crees.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He turns to the viewer and speaks warmly, one hand gesturing toward her; she smiles and nods.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_08c.wav"
+  },
+  {
+   "id": "s4_09",
+   "a": "K10",
+   "b": "K11",
+   "text": "Perfecto. Y Carmen hace algo más, dos veces por semana. Una mascarilla. ¿Me ayudas a prepararla?",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He nods, pulls the cutting board with the parsley toward him and looks at her with a playful question; she laughs.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_09.wav"
+  },
+  {
+   "id": "s4_10",
+   "a": "K11",
+   "b": "K12",
+   "text": "¡Claro que sí! Pero usted pica, que yo con el cuchillo soy un peligro.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. The elderly woman laughs and raises both hands in mock surrender, stepping back a little; the doctor laughs silently.",
+   "refs": [
+    "W"
+   ],
+   "line": "¡Claro que sí! Pero usted pica, que yo con el cuchillo soy un peligro.",
+   "secs": 7,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 70-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s4_11",
+   "a": "K13",
+   "b": "K14",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_11.wav",
+   "text": "Para la mascarilla, dos cucharadas de perejil fresco, picado muy finito, casi una pasta.",
+   "action": "Close-up: the knife chops the parsley very finely on the board, over and over, until it is almost a paste."
+  },
+  {
+   "id": "s4_12",
+   "a": "K15",
+   "b": "K16",
+   "text": "Y le agregas una cucharada de yogur natural. Natural, eh, sin azúcar, sin sabor a fresa, nada de eso.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He spoons one spoonful of white natural yogurt into the bowl with the minced parsley, showing the spoon first; she nods.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_12.wav"
+  },
+  {
+   "id": "s4_13",
+   "a": "K17",
+   "b": "K18",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_13.wav",
+   "text": "Mezclas hasta que quede una crema verde clarita. No es solo perejil, es verdad, lleva el yogur. Pero es lo único.",
+   "action": "Close-up: the spoon stirs the minced parsley into the white yogurt in the small white bowl until it becomes a smooth pale-green cream."
+  },
+  {
+   "id": "s4_14",
+   "a": "K19",
+   "b": "K20",
+   "text": "Se pone con la cara limpia, igual que el agua, lejos de los ojos. Diez minutos, quince como mucho. Y se quita con agua tibia.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He puts the bowl down and mimes spreading the mask on his cheeks with two fingers, then mimes rinsing; she listens.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_14.wav"
+  },
+  {
+   "id": "s4_15",
+   "a": "K20",
+   "b": "K21",
+   "text": "Dos veces por semana. No todos los días, que la piel también necesita descansar.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He shows two fingers to the viewer, then waves a finger 'no, not every day'.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_15.wav"
+  },
+  {
+   "id": "s4_16",
+   "a": "K21",
+   "b": "K22",
+   "text": "Y ahora, el otro error. El que hace que mucha gente diga: yo lo probé y no me sirvió.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He becomes serious, leans on the counter toward the viewer; she stays silent and attentive.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_16.wav"
+  },
+  {
+   "id": "s4_17",
+   "a": "K22",
+   "b": "K23",
+   "text": "Le ponen limón. O vinagre, o bicarbonato. Porque lo vieron en internet. Y eso en la cara irrita, y con sol mancha.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He picks up a lemon from the fruit bowl, shows it and shakes his head, puts it back firmly.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_17.wav"
+  },
+  {
+   "id": "s4_18",
+   "a": "K23",
+   "b": "K24",
+   "text": "Yo al principio le ponía limón, doctor. Y me puse colorada como un tomate.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. The elderly woman confesses laughing, covering her cheeks with both hands; the doctor puts the lemon back in the bowl and laughs silently.",
+   "refs": [
+    "W"
+   ],
+   "line": "Yo al principio le ponía limón, doctor. Y me puse colorada como un tomate.",
+   "secs": 7,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 70-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s4_19",
+   "a": "K24",
+   "b": "K25",
+   "text": "¿Ves? Por eso lo digo. Nada de limón, ni bicarbonato, ni aceites esenciales puros en la cara. Gracias, Carmen, de verdad.",
+   "action": "The elderly woman (fourth reference image is her face) is in the scene. He points at her, then counts the three no's on his fingers to the viewer, and finally hugs her briefly by the shoulder; she smiles and waves goodbye to the viewer.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s4_19.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S4/vlog_S4.mp4"
+}

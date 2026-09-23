@@ -1,0 +1,336 @@
+{
+ "dir": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S3",
+ "face": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/W_carmen.png"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "A real, slightly lived-in home bathroom lit by a big frosted window: white tiled walls, a white sink with a chrome tap, a large mirror above it, a glass shelf with a toothbrush cup, a bar of soap, a jar of cotton pads, a small closed glass jar of light-green liquid and a folded white hand towel, a towel hanging on a ring, a potted plant on the windowsill. The doctor stands in front of the sink, turned three-quarters toward the viewer (his reflection visible in the mirror), looking at the viewer mid-sentence. Medium shot from the doorway, waist up, room around him."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same bathroom: he leans against the sink with a slightly embarrassed smile, one hand gesturing toward the bright frosted window."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same bathroom: he holds a white cotton pad in one hand and the small glass jar of green parsley water in the other, showing them to the viewer."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Close-up of his left forearm turned up, pale inner skin, blue scrub sleeve pushed up, black smartwatch; his right hand holds a damp white cotton pad just above the inner forearm. Bathroom sink out of focus behind. Only arm and hands visible. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the HANDS ONLY, exactly the same tight framing and camera distance as the first image (which is already a close-up); his face is NOT visible at all, do not zoom out, do not show his head. Ignore the last input image for this shot. Same close-up: the cotton pad is pressed on the inner forearm, the skin slightly wet and shiny where it touched."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same bathroom, medium shot as before: he holds up his left forearm with the inner side toward the viewer, pointing at the damp spot with the cotton pad."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same bathroom: he stands with a relaxed shrug, palms up, calm reassuring face."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same bathroom: he is bent slightly over the sink with water on his face and hands, turning his wet face toward the viewer."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same bathroom: he stands straight with a wet face, one hand on the tap, looking at the viewer with a small frown of warning."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same bathroom: he holds the white hand towel pressed gently against his cheek, eyes on the viewer, face now dry."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Close-up over the white sink: his hand holds the small glass jar of light-green parsley water tilted toward a white cotton pad held in the other hand. Only hands visible. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the HANDS ONLY, exactly the same tight framing and camera distance as the first image (which is already a close-up); his face is NOT visible at all, do not zoom out, do not show his head. Ignore the last input image for this shot. Same close-up: the cotton pad is now damp and pale green, his fingers squeezing it lightly, one drop falling into the sink."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same bathroom, medium shot facing the mirror three-quarters: he raises the damp green cotton pad toward his lower cheek, looking at his reflection."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same bathroom: he is sweeping the cotton pad upward on his forehead, looking at his reflection, then his eyes move to the viewer."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same bathroom: he points near (not touching) his own eye with his index finger, shaking his head slightly, the cotton pad lowered."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same bathroom: chin slightly lifted, he sweeps the green cotton pad upward on the side of his neck, eyes toward the viewer."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same bathroom: he holds a plain white cream jar without label in one hand, face slightly damp, relaxed."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Close-up of the glass shelf above the sink: a jar of white cotton pads a little apart from a cup with toothbrushes, his hand reaching for the jar. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same close-up: the jar of cotton pads now stands right next to the toothbrush cup, his finger tapping its lid."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same bathroom, medium shot: he stands by the sink with his arms relaxed, looking at the viewer."
+  },
+  {
+   "id": "K20",
+   "from": [
+    "K19"
+   ],
+   "prompt": "Same bathroom: he shrugs with a kind smile, one hand waving lightly."
+  },
+  {
+   "id": "K21",
+   "from": [
+    "K20"
+   ],
+   "prompt": "Same bathroom: he faces the viewer fully with an amused grimace, hands together in front of him."
+  },
+  {
+   "id": "K22",
+   "from": [
+    "K21"
+   ],
+   "prompt": "Same bathroom: he points at the bright frosted window with a serious face."
+  },
+  {
+   "id": "K23",
+   "from": [
+    "K22"
+   ],
+   "prompt": "Same bathroom: he holds up one index finger toward the viewer ('number one'), firm but kind face."
+  },
+  {
+   "id": "K24",
+   "from": [
+    "K23"
+   ],
+   "prompt": "Same bathroom: he holds a plain white tube without label toward the viewer, nodding firmly."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s3_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Te confieso algo. Esto yo lo hago de noche, siempre de noche. Ahora es de día porque si no, en la cámara no se ve nada.",
+   "action": "He leans a hip against the sink, smiles a little embarrassed, and gestures at the bright window.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_01.wav"
+  },
+  {
+   "id": "s3_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Y ya vas a entender por qué de noche. Pero antes de ponértelo en la cara, la primera vez, la prueba del parche.",
+   "action": "He picks up a cotton pad from the jar on the shelf and the small jar of green parsley water, showing both.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_02.wav"
+  },
+  {
+   "id": "s3_03",
+   "a": "K3",
+   "b": "K4",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_03.wav",
+   "text": "Mojas un algodón y te pones un poquito aquí, en la parte de adentro del brazo. O detrás de la oreja.",
+   "action": "Close-up: he dabs the wet cotton pad on the pale inner side of his forearm, twice, gently."
+  },
+  {
+   "id": "s3_04",
+   "a": "K5",
+   "b": "K6",
+   "text": "Esperas veinticuatro horas. Si se pone rojo, si pica, si arde, no lo usas en la cara. Y listo, no pasa nada, hay otras cosas.",
+   "action": "He lowers the arm, counts the three warning signs on his fingers and then shrugs calmly.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_04.wav"
+  },
+  {
+   "id": "s3_05",
+   "a": "K6",
+   "b": "K7",
+   "text": "Si no pasó nada, entonces sí. La cara limpia primero. Con agua tibia, eh, no caliente.",
+   "action": "He turns to the sink, opens the tap, tests the water with his fingers and bends to splash his face with both hands.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_05.wav"
+  },
+  {
+   "id": "s3_06",
+   "a": "K7",
+   "b": "K8",
+   "text": "El agua muy caliente reseca, y deshace justo lo que después le vas a poner. Es un error que veo todo el tiempo.",
+   "action": "He straightens up with a wet face, shakes his head at the tap, and turns the hot tap off decisively.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_06.wav"
+  },
+  {
+   "id": "s3_07",
+   "a": "K8",
+   "b": "K9",
+   "text": "Secas suave, sin frotar, a toquecitos con la toalla. Así.",
+   "action": "He takes the folded hand towel and pats his face dry with small gentle dabs, without rubbing.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_07.wav"
+  },
+  {
+   "id": "s3_08",
+   "a": "K10",
+   "b": "K11",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_08.wav",
+   "text": "Ahora el agua de perejil, fría de la nevera. Mojas un algodón, que quede húmedo pero que no chorree.",
+   "action": "Close-up: he tilts the small glass jar and wets a cotton pad with the light-green parsley water, then squeezes it lightly."
+  },
+  {
+   "id": "s3_09",
+   "a": "K12",
+   "b": "K13",
+   "text": "Y lo pasas por la cara de abajo hacia arriba. Mejillas, frente, el mentón. Suavecito, sin tironear la piel.",
+   "action": "Looking in the mirror, he sweeps the cotton pad upward over his cheek, then his forehead, then his chin, gently.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_09.wav"
+  },
+  {
+   "id": "s3_10",
+   "a": "K13",
+   "b": "K14",
+   "text": "Los ojos, lejos. Ni el párpado ni justo debajo. Ahí la piel es muy finita y no es el lugar.",
+   "action": "He lowers the pad, points with his free index finger around his own eye without touching it, and shakes his head.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_10.wav"
+  },
+  {
+   "id": "s3_11",
+   "a": "K14",
+   "b": "K15",
+   "text": "Y no te olvides del cuello. El cuello es lo que más delata la edad, y nadie se lo trata. También de abajo hacia arriba.",
+   "action": "He lifts his chin a little and sweeps the cotton pad upward along the side of his neck several times.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_11.wav"
+  },
+  {
+   "id": "s3_12",
+   "a": "K15",
+   "b": "K16",
+   "text": "Y no lo enjuagas. Lo dejas secar solo, un minuto, y a dormir. Si usas tu crema de noche, va después, encima.",
+   "action": "He drops the cotton pad in a small bin, waves a hand near his face as if letting it dry, and picks up a plain white cream jar from the shelf.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_12.wav"
+  },
+  {
+   "id": "s3_12b",
+   "a": "K17",
+   "b": "K18",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_12b.wav",
+   "text": "Un truco para no olvidarte: los algodones, al lado del cepillo de dientes. Los ves cada noche y te acuerdas.",
+   "action": "Close-up: his hand moves the jar of cotton pads on the glass shelf right next to the toothbrush cup and taps its lid."
+  },
+  {
+   "id": "s3_12c",
+   "a": "K19",
+   "b": "K20",
+   "text": "¿Y si una noche te olvidas? No pasa nada. Lo que cuenta son las semanas, no una noche suelta.",
+   "action": "He shrugs with a kind smile and waves a hand as if it doesn't matter.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_12c.wav"
+  },
+  {
+   "id": "s3_13",
+   "a": "K20",
+   "b": "K21",
+   "text": "Ahora sí, el porqué de la noche. El perejil tiene unas sustancias que se llaman furanocumarinas. Una palabra fea, ya sé.",
+   "action": "He puts the cream jar down, turns fully to the viewer, and pronounces the long word with an amused grimace.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_13.wav"
+  },
+  {
+   "id": "s3_14",
+   "a": "K21",
+   "b": "K22",
+   "text": "Con el sol, esas sustancias pueden irritar la piel o dejar manchas. Por eso de noche, y a la mañana lavas la cara antes de salir.",
+   "action": "He points at the bright window with a serious face, then mimes washing his face with both hands.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_14.wav"
+  },
+  {
+   "id": "s3_15",
+   "a": "K22",
+   "b": "K23",
+   "text": "Nada de ponértelo y salir al jardín, ¿eh? Ese es el error número uno. El que lo arruina todo.",
+   "action": "He wags his finger at the viewer, holds up one finger for 'number one', and nods firmly.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_15.wav"
+  },
+  {
+   "id": "s3_16",
+   "a": "K23",
+   "b": "K24",
+   "text": "Y a la mañana, si vas a salir, protector solar. Con o sin perejil. Eso no se negocia, a ninguna edad.",
+   "action": "He takes a plain white sunscreen tube without label from the shelf and shows it, nodding firmly.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s3_16.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S3/vlog_S3.mp4"
+}

@@ -1,0 +1,366 @@
+{
+ "dir": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S2",
+ "face": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/W_carmen.png"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same photo, but: the book and the aloe leaves are gone from the counter. On the counter in front of him now: a big fresh bunch of flat-leaf parsley, a wooden cutting board with a kitchen knife, a clean empty glass jar with a metal lid, a white electric kettle, a tall heat-proof glass measuring jug, a small fine-mesh strainer and a small white saucer. He rests both hands on the counter beside the parsley, looking at the viewer mid-sentence, friendly. Keep the same kitchen, same window, same shelf, same framing (waist up behind the counter, room around him)."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same kitchen: he holds the empty clean glass jar up at chest height with one hand, showing it to the viewer, the other hand open, a small smile."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Close-up at the white kitchen sink by the window: his two hands hold the bunch of flat-leaf parsley under the black faucet, a thin stream of water starting to fall on the leaves. Only hands and forearms visible (blue scrub sleeves pushed up, black smartwatch). Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same close-up a few seconds later: the parsley is wet and shiny, water dripping from the leaves, his thumb rubbing the stems under the stream."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same kitchen, wide as before behind the counter: he holds the wet, freshly washed parsley bunch over the cutting board, a few drops falling, looking at the viewer."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same kitchen: he holds a loose handful of parsley leaves in his cupped right hand toward the viewer to show the amount, the rest of the bunch on the board."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Close-up of the wooden cutting board on the white marble counter: a handful of washed flat-leaf parsley, his left hand holding it with fingertips curled, his right hand holding the kitchen knife on it, about to chop. Only hands visible. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Keep the SAME kitchen as the first image: black window on the left, white marble backsplash, wooden open shelf with jars, wooden cabinets, the same counter and objects. WIDE shot exactly like the first image: same camera distance (waist up behind the counter, lots of kitchen visible around him), same objects on the counter. Same close-up a few seconds later: the parsley is now coarsely chopped in a small green pile on the board, the knife resting beside it."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same kitchen, wide: the coarsely chopped parsley is now inside the tall glass measuring jug on the counter; he holds the white electric kettle by the handle next to it, looking at the viewer."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same kitchen: the glass jug is filled to about one cup with hot water, chopped parsley floating, a little steam; he puts the kettle down and holds the small white saucer."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same kitchen: the glass jug is covered with the white saucer; he leans on the counter with one index finger raised in a gentle warning, serious face."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Close-up on the counter: his hand holds the fine-mesh strainer over the mouth of the empty clean glass jar, the other hand tilting the glass jug with the parsley infusion toward it. Only hands visible. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the HANDS ONLY, exactly the same tight framing and camera distance as the first image (which is already a close-up); his face is NOT visible at all, do not zoom out, do not show his head. Ignore the last input image for this shot. Same close-up a few seconds later: the glass jar is now full of a clear light-green liquid, the soaked chopped parsley sitting in the strainer."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same kitchen, wide: he holds the glass jar full of clear light-green parsley water up in front of the window light, looking at it and then at the viewer, pleased."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same kitchen: he stands at the open white fridge at the side of the kitchen placing the closed glass jar of green parsley water on a shelf next to a milk carton, looking at the viewer."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same kitchen, back behind the counter as in the first shot: he counts on his fingers, showing four fingers to the viewer, relaxed smile."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same kitchen: he holds a single parsley sprig up between thumb and index finger, explaining, eyebrows slightly raised."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same kitchen: he rests both hands on the counter, leaning slightly toward the viewer, sincere direct look."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same kitchen: his open hand is near his own cheek, a warm smile, looking at the viewer."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K18"
+   ],
+   "prompt": "Same kitchen: he leans on the counter with the kitchen towel over his shoulder, explaining calmly."
+  },
+  {
+   "id": "K20",
+   "from": [
+    "K19"
+   ],
+   "prompt": "Same kitchen: his interlocked fingers are loosened and drooping in front of his chest, a thoughtful face."
+  },
+  {
+   "id": "K21",
+   "from": [
+    "K20"
+   ],
+   "prompt": "Same kitchen: he holds the back of his left hand toward the viewer, rubbing it with the right thumb."
+  },
+  {
+   "id": "K22",
+   "from": [
+    "K21"
+   ],
+   "prompt": "Do NOT draw any circle, line or graphic on the image. Same kitchen: he draws a circle in the air around his face with one finger, nodding."
+  },
+  {
+   "id": "K23",
+   "from": [
+    "K22"
+   ],
+   "prompt": "Close-up of the white marble counter: a bunch of dark green flat-leaf parsley next to a bunch of curly parsley, his hand reaching for the flat-leaf one. Only hands visible. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K24",
+   "from": [
+    "K23"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the HANDS ONLY, exactly the same tight framing and camera distance as the first image (which is already a close-up); his face is NOT visible at all, do not zoom out, do not show his head. Ignore the last input image for this shot. Same close-up: his hand holds up the flat-leaf bunch, the other hand has pinched off one yellowish leaf and holds it aside."
+  },
+  {
+   "id": "K25",
+   "from": [
+    "K22"
+   ],
+   "prompt": "Same kitchen, wide: he holds a fresh bunch of flat-leaf parsley over a tall glass with a little water, about to put it in like flowers."
+  },
+  {
+   "id": "K26",
+   "from": [
+    "K25"
+   ],
+   "prompt": "Same kitchen: he holds the tall glass with the parsley standing in water like a bouquet, showing it to the viewer."
+  },
+  {
+   "id": "K27",
+   "from": [
+    "K26"
+   ],
+   "prompt": "Same kitchen: he has stepped out from behind the counter toward the left, half turned toward the hallway, looking back at the viewer, beckoning with one hand."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s2_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Bueno, aquí estamos. Todo lo que necesitas: el perejil, agua y un frasco de vidrio limpio. Nada más, de verdad.",
+   "action": "He points one by one at the parsley bunch, the kettle and the empty glass jar on the counter while he names them, then opens his hands.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_01.wav"
+  },
+  {
+   "id": "s2_02",
+   "a": "K2",
+   "b": "K3",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_02.wav",
+   "text": "Lo lavas bien bajo el chorro de agua fría. Que no quede nada de tierra, sobre todo en los tallos.",
+   "action": "Close-up at the kitchen sink: his hands rinse the parsley bunch under a thin stream of cold tap water, turning it and rubbing the stems with the thumb."
+  },
+  {
+   "id": "s2_03",
+   "a": "K4",
+   "b": "K5",
+   "text": "Y la cantidad, que es lo que siempre me preguntan: un puñado, unos veinte gramos. Una taza de hojas sin apretar.",
+   "action": "He shakes the wet parsley gently over the board, then shows a loose handful in his cupped hand toward the viewer to show the size.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_03.wav"
+  },
+  {
+   "id": "s2_04",
+   "a": "K6",
+   "b": "K7",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_04.wav",
+   "text": "Lo picas grueso, con hojas y tallitos finos. No hace falta que quede prolijo.",
+   "action": "Close-up: the knife chops the parsley coarsely on the wooden board with a steady rocking motion, the left hand's fingertips curled back."
+  },
+  {
+   "id": "s2_05",
+   "a": "K8",
+   "b": "K9",
+   "text": "Ahora, doscientos cincuenta mililitros de agua recién hervida, una taza. La echas encima, así.",
+   "action": "He lifts the kettle and slowly pours steaming water over the chopped parsley in the glass jug, watching the level, then looks at the viewer.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_05.wav"
+  },
+  {
+   "id": "s2_06",
+   "a": "K9",
+   "b": "K10",
+   "text": "Y lo tapas con un platito. Diez minutos. Ojo, no lo hiervas con el perejil adentro, eh, se echa a perder.",
+   "action": "He places the saucer on top of the jug as a lid, raises a finger in warning while he talks and shakes his head slightly.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_06.wav"
+  },
+  {
+   "id": "s2_07",
+   "a": "K11",
+   "b": "K12",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_07.wav",
+   "text": "Después lo cuelas, y te queda esto, un agua verde clarita.",
+   "action": "Close-up: his hands pour the pale green parsley infusion from the glass jug through the fine-mesh strainer into the clean glass jar; the chopped leaves stay in the strainer."
+  },
+  {
+   "id": "s2_08",
+   "a": "K13",
+   "b": "K14",
+   "text": "Lo dejas enfriar del todo y a la nevera, en el frasco bien tapado. Dura tres días. No más de tres.",
+   "action": "He screws the metal lid onto the jar, holds up three fingers toward the viewer, then walks two steps to the fridge and opens it.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_08.wav"
+  },
+  {
+   "id": "s2_09",
+   "a": "K14",
+   "b": "K15",
+   "text": "Eso es todo. Perejil, agua recién hervida, diez minutos tapado, colar, enfriar. Esa es la receta.",
+   "action": "He closes the fridge, comes back behind the counter and counts the steps on his fingers while he talks, calm.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_09.wav"
+  },
+  {
+   "id": "s2_10",
+   "a": "K15",
+   "b": "K16",
+   "text": "¿Y por qué funciona? El perejil tiene mucha vitamina C. Y la piel usa la vitamina C para fabricar su propio colágeno.",
+   "action": "He picks up one parsley sprig from the board and twirls it between his fingers while explaining, looking at the viewer.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_10.wav"
+  },
+  {
+   "id": "s2_11",
+   "a": "K16",
+   "b": "K17",
+   "text": "O sea, no le pones colágeno a la cara. Le das una herramienta que ella usa para hacerlo. Es distinto, y quiero que lo sepas.",
+   "action": "He puts the sprig down, taps his own cheek lightly with two fingers and then opens his hand toward the viewer, sincere.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_11.wav"
+  },
+  {
+   "id": "s2_12",
+   "a": "K17",
+   "b": "K18",
+   "text": "Tiene también clorofila y antioxidantes, que ayudan a que la piel se vea más descansada. Más luminosa, digamos.",
+   "action": "He gestures with one open hand near his face, searching for the word, then smiles as he finds it.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_12.wav"
+  },
+  {
+   "id": "s2_12b",
+   "a": "K18",
+   "b": "K19",
+   "text": "Y te digo por qué a esta edad se nota tanto. Después de los cincuenta, el colágeno se rompe más rápido de lo que se fabrica.",
+   "action": "He wipes his hands on a kitchen towel and leans on the counter, explaining calmly to the viewer.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_12b.wav"
+  },
+  {
+   "id": "s2_12c",
+   "a": "K19",
+   "b": "K20",
+   "text": "Imagínate un andamio debajo de la piel. Con los años el andamio se afloja, y la piel de arriba se ve más fina, más seca.",
+   "action": "He interlocks the fingers of both hands like a scaffold in front of him, then lets them loosen and droop slowly.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_12c.wav"
+  },
+  {
+   "id": "s2_12d",
+   "a": "K20",
+   "b": "K21",
+   "text": "Y además la piel produce menos grasa, se reseca. Y una piel seca marca mucho más cada arruga. Mucho más.",
+   "action": "He rubs the back of one hand with the other, showing the dry skin, then looks at the viewer.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_12d.wav"
+  },
+  {
+   "id": "s2_12e",
+   "a": "K21",
+   "b": "K22",
+   "text": "Por eso la hidratación cambia tanto la cara. No toca la arruga profunda, pero sí todo lo que está alrededor.",
+   "action": "He makes a circle around his own face with one finger in the air and nods.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_12e.wav"
+  },
+  {
+   "id": "s2_12f",
+   "a": "K23",
+   "b": "K24",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_12f.wav",
+   "text": "¿Liso o crespo? Da igual. Yo uso el liso porque se lava más fácil. Que esté verde oscuro y firme, sin hojas amarillas.",
+   "action": "Close-up: his hands lift a bunch of flat-leaf parsley next to a bunch of curly parsley on the counter, then pick one yellow leaf off and put it aside."
+  },
+  {
+   "id": "s2_12g",
+   "a": "K25",
+   "b": "K26",
+   "text": "Y el que te sobra, lo pones en un vaso con agua, como si fueran flores, dentro de la nevera. Así te dura una semana.",
+   "action": "He puts the parsley bunch standing in the tall glass of water like a bouquet and shows it to the viewer.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_12g.wav"
+  },
+  {
+   "id": "s2_13",
+   "a": "K26",
+   "b": "K27",
+   "text": "Pero cómo se usa decide si te sirve o te hace daño. Y hay un detalle que casi nadie dice. Vamos al baño, te muestro.",
+   "action": "He becomes a bit more serious, raises a finger, then nods toward the hallway and steps sideways out from behind the counter.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s2_13.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S2/vlog_S2.mp4"
+}

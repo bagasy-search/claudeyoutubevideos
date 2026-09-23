@@ -1,0 +1,261 @@
+{
+ "dir": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S6",
+ "face": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/W_carmen.png"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen photo, at lunchtime: on the counter a bowl of hot vegetable soup, a plate with scrambled eggs on toast, a bowl of green salad, the cutting board with a small pile of freshly chopped flat-leaf parsley, a glass of water. He stands behind the counter holding a pinch of chopped parsley over the soup, looking at the viewer. Everything else identical — do NOT add any book or aloe."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same kitchen: he has sprinkled chopped parsley over the soup and holds the spoon, looking at the viewer."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Close-up of a plate with scrambled eggs on toast on the marble counter, his fingers holding a pinch of chopped fresh parsley just above it. Only hand visible. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same close-up: bright green chopped parsley now scattered over the scrambled eggs, his fingers moving away."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same kitchen, wide: he takes a bite of the scrambled eggs with parsley with a fork, chewing, amused, looking at the viewer."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same kitchen: he points the fork toward the viewer, shaking his head with a small smile."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same kitchen: he taps the rim of the plate of eggs with one finger, explaining."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same kitchen: he opens both hands over the food on the counter, a practical smile."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Close-up of a plate with a piece of grilled white fish on the marble counter, a small glass bowl of green parsley sauce with olive oil beside it, his hand holding a spoon full of the sauce above the fish. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same close-up: the green parsley sauce is drizzled over the fish, shiny olive oil, the spoon moving away."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same kitchen, wide: he holds the small glass bowl of green parsley sauce, smiling at the viewer."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same kitchen: he taps the counter with one finger, counting days, explaining."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same kitchen: he holds up a small pinch of parsley between his fingers, laughing."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same kitchen: he leans with both hands on the counter, serious, looking straight at the viewer."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same kitchen: he holds up the small parsley bunch, serious caring face."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same kitchen: he makes a calming gesture with one open palm, reassuring face."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same kitchen: he holds up two fingers, calm and clear."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same kitchen: he mimes drinking from a huge imaginary glass with an ironic raised eyebrow."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same kitchen: he smiles warmly with four fingers up, then relaxed."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s6_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Porque la piel se arma desde adentro. Y el perejil fresco, comido, es de las fuentes más baratas de vitamina C que hay.",
+   "action": "He sprinkles the pinch of chopped parsley over the soup and looks up at the viewer while talking.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_01.wav"
+  },
+  {
+   "id": "s6_02",
+   "a": "K2",
+   "b": "K3",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_02.wav",
+   "text": "Dos cucharadas picadas al día. Arriba de la sopa, en la ensalada, en los huevos revueltos. Crudo, al final.",
+   "action": "Close-up: his fingers sprinkle chopped fresh parsley over scrambled eggs on toast, then over a green salad."
+  },
+  {
+   "id": "s6_03",
+   "a": "K4",
+   "b": "K5",
+   "text": "Crudo, porque el calor le quita buena parte de la vitamina C. Si lo hierves media hora en el guiso, ya no es lo mismo.",
+   "action": "He swallows, points the fork at the viewer, and mimes a pot boiling with his other hand, shaking his head.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_03.wav"
+  },
+  {
+   "id": "s6_04",
+   "a": "K5",
+   "b": "K6",
+   "text": "Y otra cosa: el colágeno se hace con proteína. Si comes poca, y después de los sesenta pasa mucho, el perejil solo no alcanza.",
+   "action": "He puts the fork down and raises an index finger, then taps the plate of eggs.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_04.wav"
+  },
+  {
+   "id": "s6_05",
+   "a": "K6",
+   "b": "K7",
+   "text": "Un huevo, un poco de pollo, lentejas, un yogur. Eso, junto con el perejil. No es magia, es materia prima.",
+   "action": "He points one by one at the eggs, the soup and the yogurt cup, then opens both hands.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_05.wav"
+  },
+  {
+   "id": "s6_05b",
+   "a": "K8",
+   "b": "K9",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_05b.wav",
+   "text": "Otra forma que me gusta: una salsa verde, con aceite de oliva, un diente de ajo y mucho perejil. Arriba del pescado, de la carne.",
+   "action": "Close-up: a spoon drizzles a rustic green parsley and olive-oil sauce over a piece of grilled white fish on a plate."
+  },
+  {
+   "id": "s6_05c",
+   "a": "K10",
+   "b": "K11",
+   "text": "Y la vitamina C el cuerpo no la guarda. Por eso es mejor un poquito todos los días, que mucho un día solo.",
+   "action": "He puts the bowl down and taps the counter rhythmically with his finger as if counting days.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_05c.wav"
+  },
+  {
+   "id": "s6_05d",
+   "a": "K11",
+   "b": "K12",
+   "text": "¿Y en el jugo verde de la mañana? Un puñadito está bien. Un puñadito, eh, no el atado entero.",
+   "action": "He shows a small pinch of parsley with his fingers, then pretends to hold a whole bunch and shakes his head, laughing.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_05d.wav"
+  },
+  {
+   "id": "s6_06",
+   "a": "K12",
+   "b": "K13",
+   "text": "Ahora, las advertencias. Y te pido que no te las saltes, porque son importantes.",
+   "action": "He wipes his hands on a kitchen towel, puts it down and leans on the counter, serious.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_06.wav"
+  },
+  {
+   "id": "s6_07",
+   "a": "K13",
+   "b": "K14",
+   "text": "El perejil tiene mucha vitamina K. Si tomas anticoagulantes, como la warfarina, comer mucho de golpe puede cambiar el efecto del remedio.",
+   "action": "He speaks slowly and clearly, holding up the small bunch of parsley in one hand as he talks.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_07.wav"
+  },
+  {
+   "id": "s6_08",
+   "a": "K14",
+   "b": "K15",
+   "text": "No quiere decir que no puedas comerlo. Quiere decir que lo hables con tu médico antes, y que no cambies la cantidad de un día para otro.",
+   "action": "He puts the parsley down, makes a calming gesture with his palm, and nods.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_08.wav"
+  },
+  {
+   "id": "s6_09",
+   "a": "K15",
+   "b": "K16",
+   "text": "Si tienes problemas de riñón, también consulta primero. Y en el embarazo, grandes cantidades de perejil no se recomiendan.",
+   "action": "He counts two more warnings on his fingers, calm and clear.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_09.wav"
+  },
+  {
+   "id": "s6_10",
+   "a": "K16",
+   "b": "K17",
+   "text": "Una ramita en la ensalada no es el problema. El problema es tomarse litros de jugo de perejil porque alguien dijo que desintoxica.",
+   "action": "He picks a single sprig and drops it on the salad with a relaxed smile, then mimes drinking a huge glass with an ironic face.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_10.wav"
+  },
+  {
+   "id": "s6_11",
+   "a": "K17",
+   "b": "K18",
+   "text": "Y en la piel, ya lo dijimos: prueba del parche, de noche, sin sol, lejos de los ojos. Con eso estás cuidada.",
+   "action": "He counts the four rules on his fingers, smiling warmly at the end.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s6_11.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S6/vlog_S6.mp4"
+}

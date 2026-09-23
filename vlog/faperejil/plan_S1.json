@@ -1,0 +1,111 @@
+{
+ "dir": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S1",
+ "face": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/W_carmen.png"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "A small sunny back patio of a modest family house in the morning: terracotta pots with herbs along a whitewashed wall, one BIG clay pot full of bright green flat-leaf parsley in the foreground on a low wooden bench, a watering can, a folded garden glove, a pair of kitchen scissors on the bench, a plastic chair, laundry line in the back, a glass door to the kitchen on the right. The doctor crouches beside the parsley pot, one hand touching the leaves, looking at the viewer mid-sentence, friendly. Medium-wide shot from about two meters, eye level with him, whole pot and his upper body in frame, room around him."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same patio, a few seconds later: he is still crouching by the parsley pot, now holding up a few long parsley stems between two fingers toward the viewer, eyebrows raised, about to tell a story."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same patio: he is crouching with forearms on his knees, a knowing half-smile and one eyebrow raised at the viewer."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Close-up shot of the big clay pot of flat-leaf parsley on the wooden bench: his left hand holds a group of stems, his right hand holds the kitchen scissors open around them near the soil. Only his hands and forearms (blue scrub sleeves pushed up, black smartwatch) are visible, no face. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same close-up a few seconds later: his left hand now holds a generous cut bunch of parsley, the scissors closed in the right hand, some cut stubs visible in the pot."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same patio, wide as before: he is now standing next to the parsley pot holding a generous bunch of cut parsley in his left hand and the scissors in his right, looking at the viewer, serious and sincere."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same patio: he stands holding up the bunch of parsley toward the viewer with a small confident smile, the other hand pointing at the glass kitchen door."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same patio: he has walked to the glass kitchen door on the right, one hand on the handle, the parsley bunch in the other hand, looking back over his shoulder at the viewer with a smile."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s1_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Mira esto. Es perejil, del común, del que te regalan en la verdulería. Y te voy a contar algo que me dijo una paciente de setenta años.",
+   "action": "He touches the parsley leaves and lifts a few stems toward the viewer while he talks, then looks back up at the viewer.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s1_01.wav"
+  },
+  {
+   "id": "s1_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Me dijo: doctor, yo no quiero verme linda. Quiero que cuando digo mi edad no me pongan esa cara. Ya sabes cuál cara.",
+   "action": "He lets go of the stems, rests his forearms on his knees and imitates a doubtful look with a small wry smile, then shrugs.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s1_02.wav"
+  },
+  {
+   "id": "s1_03",
+   "a": "K3",
+   "b": "K4",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s1_03.wav",
+   "text": "Y te digo lo mismo que a ella, derecho. El perejil no borra una arruga profunda. No fabrica colágeno por arte de magia.",
+   "action": "Close-up of his hands: the kitchen scissors cut a handful of parsley stems near the soil, slowly, stem by stem, and the left hand gathers them into a bunch."
+  },
+  {
+   "id": "s1_04",
+   "a": "K5",
+   "b": "K6",
+   "text": "Pero sí hace otra cosa, que se nota en el espejo en unas semanas. Y te la doy completa ahora mismo, no al final.",
+   "action": "Standing, he holds up the bunch of parsley toward the viewer, nods, then points at the kitchen door with the scissors.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s1_04.wav"
+  },
+  {
+   "id": "s1_05",
+   "a": "K6",
+   "b": "K7",
+   "text": "Corto un buen puñado, este, y nos vamos a la cocina.",
+   "action": "He shakes the bunch lightly, puts the scissors on the bench and starts walking toward the glass kitchen door, turning his head to the viewer.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s1_05.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S1/vlog_S1.mp4"
+}

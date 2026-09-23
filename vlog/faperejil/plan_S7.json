@@ -1,0 +1,261 @@
+{
+ "dir": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S7",
+ "face": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S3/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/W_carmen.png"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same bathroom photo as the reference: the doctor stands in front of the mirror looking closely at his own face in the reflection, one hand touching his cheek, then turned slightly toward the viewer. Everything else identical."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same bathroom: he has turned from the mirror toward the viewer, one hand still near his cheek, honest face."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same bathroom: he shows a tiny gap between thumb and index finger, encouraging smile."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same bathroom: his open hand hovers softly near his face, satisfied expression."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same bathroom: he points at the frown line between his own brows, shaking his head honestly."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same bathroom: his hand is on his chest, sincere face."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same bathroom: he smiles warmly, nodding toward the door."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Close-up by the bright frosted bathroom window: his hand holds a black smartphone up, the BACK of the phone toward the viewer (no screen visible), the window light on his fingers and wrist with the black smartwatch. Same place, same light and same objects as the first image, now seen in close-up."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same close-up: the phone slightly rotated, his thumb pressing the side, the back of the phone still toward the viewer."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same bathroom, medium shot: he lowers the phone, back toward the viewer, and looks at the viewer with a small smile."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Keep EXACTLY the same bathroom and the same camera framing as the first image (medium shot, waist up, same distance): the large mirror behind him on the left shows only HIS OWN reflection from behind, white tiled wall, glass shelf under the mirror; no wooden shelf, no jars, no other person. Same bathroom: he shrugs honestly, the phone face down on the glass shelf."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Keep EXACTLY the same bathroom and the same camera framing as the first image (medium shot, waist up, same distance): the large mirror behind him on the left shows only HIS OWN reflection from behind, white tiled wall, glass shelf under the mirror; no wooden shelf, no jars, no other person. Same bathroom: he taps the small glass jar of green parsley water on the shelf, laughing briefly."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Keep EXACTLY the same bathroom and the same camera framing as the first image (medium shot, waist up, same distance): the large mirror behind him on the left shows only HIS OWN reflection from behind, white tiled wall, glass shelf under the mirror; no wooden shelf, no jars, no other person. Same bathroom: he opens both hands honestly toward the viewer."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Keep EXACTLY the same bathroom and the same camera framing as the first image (medium shot, waist up, same distance): the large mirror behind him on the left shows only HIS OWN reflection from behind, white tiled wall, glass shelf under the mirror; no wooden shelf, no jars, no other person. Same bathroom: he puts the toothbrush back in the cup, smiling at the viewer."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Keep EXACTLY the same bathroom and the same camera framing as the first image (medium shot, waist up, same distance): the large mirror behind him on the left shows only HIS OWN reflection from behind, white tiled wall, glass shelf under the mirror; no wooden shelf, no jars, no other person. Same bathroom: he shakes his head with a small smile, one hand as if holding a fresh bunch."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Keep EXACTLY the same bathroom and the same camera framing as the first image (medium shot, waist up, same distance): the large mirror behind him on the left shows only HIS OWN reflection from behind, white tiled wall, glass shelf under the mirror; no wooden shelf, no jars, no other person. Same bathroom: he points toward the bright window with emphasis, serious."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Keep EXACTLY the same bathroom and the same camera framing as the first image (medium shot, waist up, same distance): the large mirror behind him on the left shows only HIS OWN reflection from behind, white tiled wall, glass shelf under the mirror; no wooden shelf, no jars, no other person. Same bathroom: he points at himself with a small embarrassed smile."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Keep EXACTLY the same bathroom and the same camera framing as the first image (medium shot, waist up, same distance): the large mirror behind him on the left shows only HIS OWN reflection from behind, white tiled wall, glass shelf under the mirror; no wooden shelf, no jars, no other person. Same bathroom: he touches his inner forearm, shaking his head firmly but kindly."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s7_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Bueno, ahora lo que todos quieren saber. ¿Qué vas a ver en el espejo, y cuándo? Te lo digo como es.",
+   "action": "He looks at his reflection, touches his cheek, then turns to the viewer and speaks directly.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_01.wav"
+  },
+  {
+   "id": "s7_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "La primera semana, casi nada. Quizás la piel un poco más fresca por la mañana. Nada más. No te desanimes.",
+   "action": "He makes a 'tiny' gesture with thumb and index finger, then an encouraging nod.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_02.wav"
+  },
+  {
+   "id": "s7_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "A las tres o cuatro semanas, si lo hiciste todas las noches, la piel se ve más luminosa, más pareja, más hidratada.",
+   "action": "He counts weeks on his fingers and then gestures softly around his own face.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_03.wav"
+  },
+  {
+   "id": "s7_04",
+   "a": "K3",
+   "b": "K4",
+   "text": "Las arrugas finitas, las de la sequedad, se suavizan a la vista. Las profundas, las del ceño, las de treinta años, esas no se van.",
+   "action": "He points at fine lines near his eye corner, then at the frown line between his brows, shaking his head.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_04.wav"
+  },
+  {
+   "id": "s7_05",
+   "a": "K4",
+   "b": "K5",
+   "text": "Y si alguien te dice que en siete días se te borran, desconfía. Yo prefiero decirte la verdad y que vuelvas.",
+   "action": "He wags a finger with a skeptical face, then puts his hand on his chest, sincere.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_05.wav"
+  },
+  {
+   "id": "s7_06",
+   "a": "K5",
+   "b": "K6",
+   "text": "Lo que sí cambia, y mucho, es la cara de cansada. Eso que te hace ver mayor de lo que eres. Eso es lo que notó Carmen.",
+   "action": "He smiles, gestures at his own face and then nods toward the door, remembering Carmen.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_06.wav"
+  },
+  {
+   "id": "s7_07",
+   "a": "K7",
+   "b": "K8",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_07.wav",
+   "text": "Un consejo: sácate una foto hoy, con la luz de la ventana. Y otra dentro de cuatro semanas, con la misma luz.",
+   "action": "Close-up: his hand holds a smartphone up by the bright frosted window, back of the phone toward the viewer, as if taking a selfie; small adjustment of the angle."
+  },
+  {
+   "id": "s7_08",
+   "a": "K9",
+   "b": "K10",
+   "text": "Porque uno se ve todos los días y no nota el cambio. En la foto sí se nota. O no se nota, y también está bien saberlo.",
+   "action": "He puts the phone face down on the shelf and shrugs honestly.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_08.wav"
+  },
+  {
+   "id": "s7_09",
+   "a": "K10",
+   "b": "K11",
+   "text": "Y si en un mes no ves nada, no pasa nada. No todas las pieles responden igual. Al menos no gastaste en una crema de ochenta dólares.",
+   "action": "He smiles, taps the small jar of green parsley water on the shelf and laughs briefly.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_09.wav"
+  },
+  {
+   "id": "s7_09b",
+   "a": "K11",
+   "b": "K12",
+   "text": "¿Y cuánto tiempo hay que hacerlo? El que quieras. Pero si lo dejas, la piel vuelve a como estaba. No queda fijo.",
+   "action": "He tilts his head at an imaginary question, then opens his hands honestly.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_09b.wav"
+  },
+  {
+   "id": "s7_09c",
+   "a": "K12",
+   "b": "K13",
+   "text": "Porque esto cuida la hidratación de todos los días. No es una cirugía, es un hábito. Como lavarse los dientes.",
+   "action": "He picks up his toothbrush from the cup, shows it with a smile, and puts it back.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_09c.wav"
+  },
+  {
+   "id": "s7_10",
+   "a": "K13",
+   "b": "K14",
+   "text": "¿Y me preguntan si sirve el perejil seco, el de frasquito? Para esto, no. Tiene que ser fresco, verde, firme.",
+   "action": "He shakes his head to an imaginary question, pretends to hold a small spice jar with disdain, then mimes a fresh bunch.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_10.wav"
+  },
+  {
+   "id": "s7_11",
+   "a": "K14",
+   "b": "K15",
+   "text": "¿Y para las manchas? Algo de luminosidad da. Pero para las manchas, lo que más importa es el protector solar de día. Siempre.",
+   "action": "He thinks, tilts his head, and then points toward the bright window with emphasis.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_11.wav"
+  },
+  {
+   "id": "s7_12",
+   "a": "K15",
+   "b": "K16",
+   "text": "¿Y los hombres? También, claro. La piel es piel. Yo mismo lo uso algunas noches, no te voy a mentir.",
+   "action": "He laughs, points at himself, and gives a small embarrassed smile.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_12.wav"
+  },
+  {
+   "id": "s7_13",
+   "a": "K16",
+   "b": "K17",
+   "text": "Y si tienes la piel muy sensible, o rosácea, prueba del parche con más cuidado. Si arde, no. No hay que aguantar nada.",
+   "action": "He speaks carefully, touches his inner forearm where he did the patch test, and shakes his head firmly.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s7_13.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S7/vlog_S7.mp4"
+}

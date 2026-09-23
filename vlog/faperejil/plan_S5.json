@@ -1,0 +1,111 @@
+{
+ "dir": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S5",
+ "face": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/faperejil/public/ref_faperejil_facecrop.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/W_carmen.png"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "A bright, lived-in home living room with a small wooden desk by a big window with sheer white curtains: on the desk a stack of papers, a mug of pens, reading glasses, a small potted plant and one single printed page lying face down; a bookshelf with books and framed family photos behind, a grey armchair with a knitted blanket. The doctor stands by the desk, looking at the viewer mid-sentence. Medium shot, waist up, room around him."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same living room: he holds the single printed page against his chest with the blank back facing the viewer, looking at the viewer seriously."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same living room: he holds up the printed page with both hands toward the viewer at chest height (a cream page with a green title, numbered boxes and a small diagram of a face, seen at an angle so no text is readable), serious face."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same living room: he stands relaxed with the page lowered at his side and one hand in his pocket, friendly face."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same living room: he holds up three fingers, casual smile."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same living room: he points down toward the bottom of the frame with his index finger, smiling."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same living room: he has turned toward the door on the side, looking back at the viewer with a curious raised eyebrow and a half smile."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s5_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Bueno, ya se fue Carmen. Y ahora quiero que veas esto, que es lo que más me importa del video.",
+   "action": "He walks to the desk, picks up the single printed page from the desk, still face down, and turns to the viewer.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s5_01.wav"
+  },
+  {
+   "id": "s5_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Presten mucha atención a esta imagen. Es la parte más importante del video.",
+   "action": "He slowly turns the page around and holds it up toward the viewer with both hands, serious, as if presenting it.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s5_02.wav"
+  },
+  {
+   "id": "s5_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Y dicho sea de paso, esta hoja la hice igual que las páginas de mi guía completa. El perejil no está en la guía, eh: esto es de aquí.",
+   "action": "Back in the living room, he lowers the page to his side casually and talks to the viewer relaxed, one hand in his pocket.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s5_03.wav"
+  },
+  {
+   "id": "s5_04",
+   "a": "K3",
+   "b": "K4",
+   "text": "La guía es para la firmeza: qué comer para el colágeno, la rutina de noche en tres pasos, y el cuello.",
+   "action": "He counts three things on his fingers while he talks, casual.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s5_04.wav"
+  },
+  {
+   "id": "s5_05",
+   "a": "K4",
+   "b": "K5",
+   "text": "Si están viendo en el televisor, escaneen el código; si están en el teléfono, el enlace está abajo.",
+   "action": "He points toward the side of the frame as if at a code on screen, then points down toward the bottom of the frame.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s5_05.wav"
+  },
+  {
+   "id": "s5_06",
+   "a": "K5",
+   "b": "K6",
+   "text": "Pero lo de hoy ya lo tienes entero. Y me falta la otra mitad: lo que pasa cuando el perejil, en vez de ponértelo, te lo comes.",
+   "action": "He puts the page back on the desk, raises an eyebrow with a curious smile and starts walking out toward the kitchen.",
+   "audio": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/tramos/s5_06.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/faperejil/vlog/faperejil/S5/vlog_S5.mp4"
+}
