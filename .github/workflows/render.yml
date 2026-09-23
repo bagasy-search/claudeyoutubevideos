@@ -43,7 +43,7 @@ jobs:
   render:
     needs: prepare
     runs-on: ubuntu-latest
-    timeout-minutes: 45   # (fix f08219e de main era 25: en nrcollagen mató 2 chunks sanos al 96%) un chunk colgado igual falla
+    timeout-minutes: 110   # nrvaseneck: con 20 chunks (auto-reparto) el chunk con los 3 MythTruth va a ~0,3 fps = ~66 min; 45 lo mató al 62%
     strategy:
       fail-fast: false
       matrix:
