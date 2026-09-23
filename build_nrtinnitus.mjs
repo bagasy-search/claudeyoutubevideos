@@ -117,6 +117,9 @@ for (const b of rows) {
     const bgL = `img/${SLUG}/p25/${id}_bg.jpg`, fgL = `img/${SLUG}/p25/${id}_fg.png`;
     if (existe(bgL) && existe(fgL)) { scan(bgL); scan(fgL); cues.push({ key, start, dur, el: `<Depth25 bg={${JSON.stringify(bgL)}} fg={${JSON.stringify(fgL)}} seed={${b.f0}} />` }); }
     else cues.push({ key, start, dur, el: `<PhotoScene src={${JSON.stringify(b.src)}} seed={${b.f0}} />` });
+  } else if (b.tipo === "premium") {
+    scan(b.props);
+    cues.push({ key, start, dur, el: `<${b.comp} {...(${JSON.stringify(b.props)} as any)} />` });
   } else if (b.tipo === "journey") {
     scan(b.a); scan(b.b);
     cues.push({ key, start, dur, el: `<Journey a={${JSON.stringify(b.a)}} b={${JSON.stringify(b.b)}} at={${b.at}} fx={${b.fx ?? 0.62}} fy={${b.fy ?? 0.5}} />` });
@@ -147,7 +150,7 @@ for (const b of rows) {
 const ov = overlays.map((o) => {
   scan(o.props); if (o.props && o.props.qr) assets.add(o.props.qr);
   const f0 = F(o.ms_in / 1000); let f1 = F(o.ms_out / 1000); if (f1 <= f0) f1 = f0 + F(2);
-  return { key: `ov_${f0}`, start: +(f0 / FPS).toFixed(3), dur: +((f1 - f0) / FPS).toFixed(3), el: `<RayCta durationInFrames={d} {...(${JSON.stringify(o.props)} as any)} />` };
+  return { key: `ov_${f0}`, start: +(f0 / FPS).toFixed(3), dur: +((f1 - f0) / FPS).toFixed(3), el: o.comp ? `<${o.comp} {...(${JSON.stringify(o.props)} as any)} />` : `<RayCta durationInFrames={d} {...(${JSON.stringify(o.props)} as any)} />` };
 });
 
 if (sinCama.length) {
@@ -196,6 +199,7 @@ import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { AvatarWindow, ReframedVideo, PhotoScene, LaminaZoom } from "../../nrvaseneck/Piezas";
 import { Depth25, Lamina3D, Journey } from "../../nrtinnitus/Premium";
+import { ThumbOpen, OpeningHUD, HonestKnob, WhichGroup, NightShot, FearThoughts } from "../../nrtinnitus/Opening";
 import {
   THEME_MEDICO, HookCaption, PullQuote, KaraokePhrase, HighlightSweep,
   NumberedSteps, ChecklistReveal, BulletCascade,

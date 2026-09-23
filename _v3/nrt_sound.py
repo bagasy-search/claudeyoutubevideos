@@ -104,7 +104,7 @@ for s, el in cues:
     if "<Lamina" in el:
         for k in re.findall(r'"at":([0-9.]+)', el): pass
 # keys de la lámina: un whoosh suave en cada movimiento de cámara
-for m in re.finditer(r'startSec: ([0-9.]+), dur: [0-9.]+, el: \(d: number\) => <Lamina\w* src=\{[^}]*\} keys=\{(\[[^\]]*\])\}', main):
+for m in re.finditer(r'startSec: ([0-9.]+), dur: [0-9.]+, el: \(d: number\) => <Lamina\w*[^\n]*? keys=\{(\[[^\]]*\])\}', main):
     s0 = float(m.group(1))
     for k in json.loads(m.group(2)):
         if k["at"] > 0.5: put(s0 + k["at"] - 1.1, whoosh(0.9), 0.35); nw += 1
@@ -118,6 +118,32 @@ for ph in ("tap. tap. tap.",):
         for j in range(3): put(s + j * 0.42, thump(90, 0.25), 0.8); nt += 1
 q = at("\"but i don't hate it anymore.\"") or at("but i don't hate it anymore.")
 if q: put(q, chime((987.8, 1480.0, 1975.5), 2.8), 0.4)
+# ── v3: primer minuto ──
+def click(f=2200, dur=0.05):
+    n = int(dur * SR); tt = np.arange(n) / SR
+    return (hp(rng.standard_normal(n).astype(np.float32), 900) * np.exp(-tt * 90) * 0.8 + np.sin(2 * np.pi * f * tt) * np.exp(-tt * 120) * 0.3).astype(np.float32)
+def glitch(dur=0.32):
+    n = int(dur * SR); x = rng.standard_normal(n).astype(np.float32)
+    gate = np.repeat((rng.random(n // 480 + 1) > 0.45).astype(np.float32), 480)[:n]
+    return hp(x * gate, 300) * 0.6
+def swell(dur=2.4, f=48):
+    n = int(dur * SR); tt = np.arange(n) / SR; e = np.sin(np.pi * tt / dur) ** 2
+    return (np.sin(2 * np.pi * f * tt) * 0.8 + lp(rng.standard_normal(n).astype(np.float32), 180) * 0.6) * e
+def crack(dur=0.5):
+    n = int(dur * SR); x = np.zeros(n, np.float32)
+    for k in range(18):
+        i = int(rng.random() * n * 0.8); m = int(SR * 0.004); x[i:i + m] += hp(rng.standard_normal(m).astype(np.float32), 1500) * (1 - k / 20)
+    return x
+put(0.58, glitch(), 0.7)
+put(12.5, impact(), 0.8)
+for j in range(7): put(20.2 + j * 1.3 / 6, click(1800 + j * 60), 0.55)
+put(27.35, whoosh(0.5), 0.35); put(32.05, whoosh(0.45), 0.4)
+put(35.5, click(900, 0.08), 0.7); put(35.52, thump(120, 0.15), 0.3)
+put(36.9, click(2600, 0.04), 0.8)
+put(39.4, swell(), 0.55); put(51.8, swell(2.8, 44), 0.6)
+for s0 in (60.1, 61.2, 62.9):
+    put(s0, thump(58, 0.3), 0.9); put(s0 + 0.28, thump(52, 0.3), 0.6)
+put(70.0, impact(), 0.6); put(71.3, crack(), 0.9)
 sfx = np.tanh(sfx * 0.9)
 def save(p, x, g):
     x = np.clip(x * g, -1, 1); b = (x * 32767).astype("<i2").tobytes()

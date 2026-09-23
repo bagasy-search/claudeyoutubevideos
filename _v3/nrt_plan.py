@@ -91,6 +91,22 @@ for x in range(jb + 1, len(beats)):
 at = round((beats[jb]["ms_in"] - beats[ja]["ms_in"]) / 1000, 2)
 jr = dict(tipo="journey", ms_in=beats[ja]["ms_in"], ms_out=end, a=img("m027"), b=img("m028"), at=at, fx=0.72, fy=0.52)
 beats = beats[:ja] + [jr] + [b for b in beats[ja + 1:] if not (b["ms_in"] < end and b["ms_in"] >= beats[ja]["ms_in"])]
+# ── v3: PRIMER MINUTO inmersivo (tiempos relativos al inicio de cada cue, desde el mapa palabra→ms) ──
+def swap(a_ms, z_ms, beat):
+    global beats
+    beats = [b for b in beats if not (a_ms <= b["ms_in"] < z_ms)]
+    beats.append(beat); beats.sort(key=lambda b: b["ms_in"])
+R = lambda s, base: round(s - base, 2)
+swap(11520, 25560, dict(tipo="premium", comp="HonestKnob", ms_in=11520, ms_out=25560, props=dict(bed=img("m001"),
+     tStamp=R(12.5, 11.52), tKnob=R(17.7, 11.52), tTurn0=R(20.2, 11.52), tTurn1=R(21.5, 11.52), tMin=R(22.2, 11.52), tLonger=R(24.6, 11.52))))
+swap(33320, 55040, dict(tipo="premium", comp="NightShot", ms_in=33320, ms_out=55040, props=dict(a=img("room_a"), b=img("room_b"), c=img("room_c2"), d=img("room_d"),
+     at=dict(tvOff=R(35.5, 33.32), lampOff=R(36.9, 33.32), loud=R(39.6, 33.32), hiss=R(40.9, 33.32), whistle=R(41.6, 33.32), crickets=R(43.6, 33.32), oldTv=R(47.1, 33.32), day=R(49.6, 33.32), night=R(51.9, 33.32)))))
+swap(60080, 72020, dict(tipo="premium", comp="FearThoughts", ms_in=60080, ms_out=72020, props=dict(bg=img("room_c2"),
+     lines=[dict(text="Am I going deaf?", at=R(60.1, 60.08)), dict(text="Is something wrong with my brain?", at=R(61.2, 60.08)), dict(text="Is this… for the rest of my life?", at=R(62.9, 60.08))],
+     tDim=R(65.7, 60.08), quote="You'll just have to learn to live with it.", tQuote=R(70.0, 60.08), tCrack=R(71.3, 60.08))))
+overlays[:0] = [dict(comp="OpeningHUD", ms_in=0, ms_out=11520, props=dict(tNow=1.0, tSixty=6.3, tHands=10.2, tEnd=11.52)),
+                dict(comp="ThumbOpen", ms_in=0, ms_out=1000, props=dict(src="img/nrtinnitus_thumb.jpg")),
+                dict(comp="WhichGroup", ms_in=27400, ms_out=33320, props=dict(tAsk=R(32.1, 27.4)))]
 # contigüidad estricta
 for i in range(len(beats) - 1): beats[i]["ms_out"] = beats[i + 1]["ms_in"]
 beats[-1]["ms_out"] = END_MS

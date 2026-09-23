@@ -3,6 +3,7 @@ import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { AvatarWindow, ReframedVideo, PhotoScene, LaminaZoom } from "../../nrvaseneck/Piezas";
 import { Depth25, Lamina3D, Journey } from "../../nrtinnitus/Premium";
+import { ThumbOpen, OpeningHUD, HonestKnob, WhichGroup, NightShot, FearThoughts } from "../../nrtinnitus/Opening";
 import {
   THEME_MEDICO, HookCaption, PullQuote, KaraokePhrase, HighlightSweep,
   NumberedSteps, ChecklistReveal, BulletCascade,
@@ -24,21 +25,11 @@ type Cue = { key: string; startSec: number; dur: number; el: (d: number) => Reac
 
 export const CUES_NRTINNITUS: Cue[] = [
   { key: "avatar_0", startSec: 0, dur: 11.533, el: (d: number) => <AvatarWindow src={"avatar/nrtinnitus/win-001.mp4"} seed={0} /> },
-  { key: "clip_346", startSec: 11.533, dur: 3.933, el: (d: number) => <ReframedVideo src={"broll/nrtinnitus/m001.mp4"} seed={346} frames={119} /> },
-  { key: "imagen_464", startSec: 15.467, dur: 2.267, el: (d: number) => <Depth25 bg={"img/nrtinnitus/p25/m001_bg.jpg"} fg={"img/nrtinnitus/p25/m001_fg.png"} seed={464} /> },
-  { key: "clip_532", startSec: 17.733, dur: 4.433, el: (d: number) => <ReframedVideo src={"broll/nrtinnitus/s_m002.mp4"} seed={532} frames={237} /> },
-  { key: "clip_665", startSec: 22.167, dur: 3.4, el: (d: number) => <ReframedVideo src={"broll/nrtinnitus/m003.mp4"} seed={665} frames={119} /> },
+  { key: "premium_346", startSec: 11.533, dur: 14.033, el: (d: number) => <HonestKnob {...({"bed":"img/nrtinnitus/m001.jpg","tStamp":0.98,"tKnob":6.18,"tTurn0":8.68,"tTurn1":9.98,"tMin":10.68,"tLonger":13.08} as any)} /> },
   { key: "avatar_767", startSec: 25.567, dur: 7.767, el: (d: number) => <AvatarWindow src={"avatar/nrtinnitus/win-002.mp4"} seed={767} /> },
-  { key: "clip_1000", startSec: 33.333, dur: 2.9, el: (d: number) => <ReframedVideo src={"broll/nrtinnitus/s_m005.mp4"} seed={1000} frames={299} /> },
-  { key: "clip_1087", startSec: 36.233, dur: 2.233, el: (d: number) => <ReframedVideo src={"broll/nrtinnitus/s_m006.mp4"} seed={1087} frames={247} /> },
-  { key: "imagen_1154", startSec: 38.467, dur: 6.967, el: (d: number) => <Depth25 bg={"img/nrtinnitus/p25/m007_bg.jpg"} fg={"img/nrtinnitus/p25/m007_fg.png"} seed={1154} /> },
-  { key: "imagen_1363", startSec: 45.433, dur: 4.133, el: (d: number) => <Depth25 bg={"img/nrtinnitus/p25/m008_bg.jpg"} fg={"img/nrtinnitus/p25/m008_fg.png"} seed={1363} /> },
-  { key: "clip_1487", startSec: 49.567, dur: 2.133, el: (d: number) => <ReframedVideo src={"broll/nrtinnitus/s_m009.mp4"} seed={1487} frames={299} /> },
-  { key: "imagen_1551", startSec: 51.7, dur: 3.333, el: (d: number) => <Depth25 bg={"img/nrtinnitus/p25/m010_bg.jpg"} fg={"img/nrtinnitus/p25/m010_fg.png"} seed={1551} /> },
+  { key: "premium_1000", startSec: 33.333, dur: 21.7, el: (d: number) => <NightShot {...({"a":"img/nrtinnitus/room_a.jpg","b":"img/nrtinnitus/room_b.jpg","c":"img/nrtinnitus/room_c2.jpg","d":"img/nrtinnitus/room_d.jpg","at":{"tvOff":2.18,"lampOff":3.58,"loud":6.28,"hiss":7.58,"whistle":8.28,"crickets":10.28,"oldTv":13.78,"day":16.28,"night":18.58}} as any)} /> },
   { key: "avatar_1651", startSec: 55.033, dur: 5.033, el: (d: number) => <AvatarWindow src={"avatar/nrtinnitus/win-003.mp4"} seed={1651} /> },
-  { key: "clip_1802", startSec: 60.067, dur: 3.933, el: (d: number) => <ReframedVideo src={"broll/nrtinnitus/m012.mp4"} seed={1802} frames={119} /> },
-  { key: "imagen_1920", startSec: 64, dur: 1.7, el: (d: number) => <Depth25 bg={"img/nrtinnitus/p25/m012_bg.jpg"} fg={"img/nrtinnitus/p25/m012_fg.png"} seed={1920} /> },
-  { key: "imagen_1971", startSec: 65.7, dur: 6.333, el: (d: number) => <Depth25 bg={"img/nrtinnitus/p25/m013_bg.jpg"} fg={"img/nrtinnitus/p25/m013_fg.png"} seed={1971} /> },
+  { key: "premium_1802", startSec: 60.067, dur: 11.967, el: (d: number) => <FearThoughts {...({"bg":"img/nrtinnitus/room_c2.jpg","lines":[{"text":"Am I going deaf?","at":0.02},{"text":"Is something wrong with my brain?","at":1.12},{"text":"Is this… for the rest of my life?","at":2.82}],"tDim":5.62,"quote":"You'll just have to learn to live with it.","tQuote":9.92,"tCrack":11.22} as any)} /> },
   { key: "avatar_2161", startSec: 72.033, dur: 3.8, el: (d: number) => <AvatarWindow src={"avatar/nrtinnitus/win-004.mp4"} seed={2161} /> },
   { key: "clip_2275", startSec: 75.833, dur: 7.267, el: (d: number) => <ReframedVideo src={"broll/nrtinnitus/s_m015.mp4"} seed={2275} frames={272} /> },
   { key: "clip_2493", startSec: 83.1, dur: 0.633, el: (d: number) => <ReframedVideo src={"broll/nrtinnitus/s_m016.mp4"} seed={2493} frames={299} /> },
@@ -217,6 +208,9 @@ export const CUES_NRTINNITUS: Cue[] = [
 ];
 
 export const OVERLAYS_NRTINNITUS: Cue[] = [
+  { key: "ov_0", startSec: 0, dur: 11.533, el: (d: number) => <OpeningHUD {...({"tNow":1,"tSixty":6.3,"tHands":10.2,"tEnd":11.52} as any)} /> },
+  { key: "ov_0", startSec: 0, dur: 1, el: (d: number) => <ThumbOpen {...({"src":"img/nrtinnitus_thumb.jpg"} as any)} /> },
+  { key: "ov_822", startSec: 27.4, dur: 5.933, el: (d: number) => <WhichGroup {...({"tAsk":4.7} as any)} /> },
   { key: "ov_29653", startSec: 988.433, dur: 4.5, el: (d: number) => <RayCta durationInFrames={d} {...({"eyebrow":"IN THE DESCRIPTION","title":"The Jaw-Drum Combo","sub":"Step by step, for ringing that changes when you clench","showQr":false} as any)} /> },
 ];
 
