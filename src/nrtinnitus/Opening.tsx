@@ -286,7 +286,7 @@ export const FearThoughts: React.FC<{ bg: string; lines: { text: string; at: num
   const T = durationInFrames / fps;
   const dim = 1 - 0.7 * eo((t - tDim) / 0.8);
   const q = eo((t - tQuote) / 0.35), cr = eo((t - tCrack) / 0.3);
-  const POS = [{ x: 470, y: 150, z: 120 }, { x: 980, y: 330, z: 40 }, { x: 560, y: 560, z: -60 }];
+  const POS = [{ x: 330, y: 150, z: 120 }, { x: 700, y: 330, z: 40 }, { x: 420, y: 560, z: -60 }];
   return (
     <AbsoluteFill style={{ backgroundColor: "#05080A", overflow: "hidden", perspective: 1400 }}>
       <Img src={staticFile(bg)} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transformOrigin: "22% 44%", transform: `scale(${(1.12 + 0.2 * eio(t / T)).toFixed(4)})` }} />
@@ -298,7 +298,7 @@ export const FearThoughts: React.FC<{ bg: string; lines: { text: string; at: num
         const drift = (t - l.at) * 14;
         const blur = i < lines.length - 1 && t > lines[i + 1].at ? 1.2 : 0;
         return (
-          <div key={i} style={{ position: "absolute", left: p.x, top: p.y, transform: `translate3d(0, ${-drift}px, ${p.z + (1 - k) * -300 + drift * 2}px) rotateY(${-8 + i * 6}deg)`, opacity: k * dim * (blur ? 0.55 : 1), filter: blur ? `blur(${blur}px)` : undefined, fontFamily: F_PLAYFAIR, fontStyle: "italic", fontSize: 76, color: "#EAF6F4", textShadow: "0 8px 40px rgba(0,0,0,0.9)", maxWidth: 1100, lineHeight: 1.1 }}>
+          <div key={i} style={{ position: "absolute", left: p.x, top: p.y, transform: `translate3d(0, ${-drift}px, ${p.z + (1 - k) * -300 + drift * 2}px) rotateY(${-5 + i * 3}deg)`, opacity: k * dim * (blur ? 0.55 : 1), filter: blur ? `blur(${blur}px)` : undefined, fontFamily: F_PLAYFAIR, fontStyle: "italic", fontSize: 76, color: "#EAF6F4", textShadow: "0 8px 40px rgba(0,0,0,0.9)", width: 1000, lineHeight: 1.1 }}>
             {l.text}
           </div>
         );
