@@ -116,6 +116,18 @@ if (fase === "clips") {
   log("clips listos → corré `check`");
 }
 
+
+// visión GRATIS con agnes-3.0-flash (23-sep: 4/4 en identidad, 1-3 s por imagen) — identidad + luz de un cuadro
+async function vision(frameJpg, facePng) {
+  const q = 'Image 1 is a reference face. Image 2 is a video frame. Is the presenter (the man/woman of image 1) present in image 2 with the SAME identity (not just similar clothes)? Is the image bright daylight, not dark or moody? Answer ONLY JSON: {"same_person":true/false,"confidence":0-1,"bright":true/false,"issues":"short"}';
+  for (let t = 0; t < 3; t++) try {
+    const j = await (await fetch(B + "/chat/completions", { method: "POST", headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, signal: AbortSignal.timeout(60000),
+      body: JSON.stringify({ model: "agnes-3.0-flash", messages: [{ role: "user", content: [{ type: "text", text: q }, { type: "image_url", image_url: { url: uri(facePng) } }, { type: "image_url", image_url: { url: uri(frameJpg) } }] }] }) })).json();
+    return JSON.parse(j.choices[0].message.content.replace(/```json|```/g, "").trim());
+  } catch (e) { await sleep(3000); }
+  return null;
+}
+
 // ---------- check ----------
 if (fase === "check") {
   const st = state(); const fr = (f, t, o) => { ff("-ss", t.toFixed(3), "-i", f, "-frames:v", "1", "-vf", "scale=320:180,format=gray", "-f", "rawvideo", o); return fs.readFileSync(o); };
@@ -136,7 +148,11 @@ if (fase === "check") {
     const start = fr(f, 0, CL + "_s.raw"), end = fr(f, s.T - 0.04, CL + "_e.raw");
     let costura = ""; if (prevEnd) { let d = 0; for (let i = 0; i < start.length; i++) d += Math.abs(start[i] - prevEnd[i]); costura = ` · costura con el anterior ${(d / start.length).toFixed(1)}/255`; }
     prevEnd = end;
-    log(`${c.id} [${s.file}] ${extra.length + falta.length > 2 || rep > 2 || txt === "(timeout)" ? "⛔ REGENERAR" : rep > 0 ? "⚠️ revisar" : "ok"} · dice: "${txt.trim()}"` + (extra.length ? ` · de más: ${extra.join(" ")}` : "") + (falta.length ? ` · falta: ${falta.join(" ")}` : "") + (rep > 0 ? ` · ${rep} palabra(s) de más (¿repitió?)` : "") + costura);
+    const mid = CL + c.id + "_mid.jpg"; ff("-ss", (s.T / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=768:-2", mid);
+    const v = await vision(mid, P.face);
+    const vis = !v ? " · visión: sin respuesta" : ` · cara ${v.same_person ? "✓" : "⛔ NO ES"} (${v.confidence}) · luz ${v.bright ? "✓" : "⛔ oscura"}${v.issues && !/^none/i.test(v.issues) ? " · " + v.issues : ""}`;
+    const malVis = v && (!v.same_person || !v.bright);
+    log(`${c.id} [${s.file}] ${extra.length + falta.length > 2 || rep > 2 || txt === "(timeout)" || malVis ? "⛔ REGENERAR" : rep > 0 ? "⚠️ revisar" : "ok"} · dice: "${txt.trim()}"` + (extra.length ? ` · de más: ${extra.join(" ")}` : "") + (falta.length ? ` · falta: ${falta.join(" ")}` : "") + (rep > 0 ? ` · ${rep} palabra(s) de más (¿repitió?)` : "") + costura + vis);
   }
   log("⛔ = el modelo cambió palabras → `clips <id>` y volvé a `check`. Costura >30 → mirá esos 2 cuadros.");
 }
