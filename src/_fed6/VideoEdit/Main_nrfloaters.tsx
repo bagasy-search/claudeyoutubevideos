@@ -110,7 +110,7 @@ export const CUES_NRFLOATERS: Cue[] = [
   { key: "avatar_11347", startSec: 378.233, dur: 6.233, el: (d: number) => <AvatarWindow src={"avatar/nrfloaters/win-017.mp4"} seed={11347} /> },
   { key: "floaters_11534", startSec: 384.467, dur: 7.8, el: (d: number) => <FloaterClip src={"broll/nrfloaters/s_m078.mp4"} seed={11534} frames={257} kind={"shower"} /> },
   { key: "clip_11768", startSec: 392.267, dur: 4.3, el: (d: number) => <ReframedVideo src={"broll/nrfloaters/s_m079.mp4"} seed={11768} frames={239} /> },
-  { key: "clip_11897", startSec: 396.567, dur: 8.3, el: (d: number) => <ReframedVideo src={"broll/nrfloaters/s_m080.mp4"} seed={11897} frames={272} /> },
+  { key: "clip_11897", startSec: 396.567, dur: 8.3, el: (d: number) => <ReframedVideo src={"broll/nrfloaters/s_m080.mp4"} seed={11897} frames={257} /> },
   { key: "floaters_12146", startSec: 404.867, dur: 9.4, el: (d: number) => <FloaterClip src={"broll/nrfloaters/s_m081.mp4"} seed={12146} frames={299} kind={"curtain"} /> },
   { key: "componente_12428", startSec: 414.267, dur: 4.3, el: (d: number) => <><PhotoBed src={"img/nrfloaters/bed_s_m081.jpg"} /><ChecklistReveal durationInFrames={d} theme={THEME_MEDICO} eyebrow={"Call an eye doctor today" as any} title={"Same-day signs" as any} items={["A shower of NEW floaters","Flashes of light","A curtain or shadow at the edge"] as any} stamp={"SAME DAY" as any} /></> },
   { key: "clip_12557", startSec: 418.567, dur: 5.6, el: (d: number) => <ReframedVideo src={"broll/nrfloaters/s_m083.mp4"} seed={12557} frames={239} /> },
