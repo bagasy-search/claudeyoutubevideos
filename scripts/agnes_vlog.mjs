@@ -53,19 +53,22 @@ async function edit(out, prompt, inputs) {
   if (fs.existsSync(out)) return log("ya", path.basename(out));
   for (let t = 0, fails = 0; fails < 4 && t < 200; t++) { // rate limit de la org (input-images/min) → esperar sin contar como fallo
     const fd = new FormData();
-    fd.append("model", "gpt-image-2"); fd.append("quality", "low"); fd.append("size", "1536x1024"); fd.append("prompt", prompt);
+    fd.append("model", "gpt-image-2"); fd.append("quality", "low"); fd.append("size", "1088x608"); fd.append("prompt", prompt);
     for (const f of inputs) fd.append("image[]", new Blob([fs.readFileSync(f)], { type: mime(f) }), path.basename(f));
     const j = await (await fetch("https://api.openai.com/v1/images/edits", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd })).json().catch(() => ({}));
     const b = j?.data?.[0]?.b64_json;
-    if (b) { const raw = out.replace(".png", "_raw.png"); fs.writeFileSync(raw, Buffer.from(b, "base64")); ff("-i", raw, "-vf", "crop=1536:864:0:24", out); return log("OK", path.basename(out)); }
+    if (b) { try { fs.appendFileSync(DIR + "usage_gptimage.jsonl", JSON.stringify({ a: path.basename(out), u: j.usage }) + String.fromCharCode(10)); } catch {} fs.writeFileSync(out, Buffer.from(b, "base64")); return log("OK", path.basename(out)); }
     const rl = /rate limit/i.test(JSON.stringify(j)); if (!rl) fails++;
     log(rl ? "rate-limit, espero" : "retry", path.basename(out), rl ? "" : JSON.stringify(j).slice(0, 160)); await sleep(rl ? 20000 + Math.random() * 25000 : 15000);
   }
   throw new Error("falló " + out);
 }
 if (fase === "anclas") {
+  // ⛔ 4 palancas de gpt-image-2 (orden del creador 23-sep): las anclas van por BATCH en rondas → scripts/vlog_anclas_batch.mjs.
+  //    Este camino directo (/edits sueltos, tarifa completa) queda SÓLO como emergencia con VLOG_ANCLAS_DIRECTO=1.
+  if (process.env.VLOG_ANCLAS_DIRECTO !== "1") { console.error("anclas → usá: node scripts/vlog_anclas_batch.mjs <planes,separados,por,coma>  (Batch · low · 1088x608 · cara 128x192)"); process.exit(1); }
   for (const a of P.anchors) {
-    const inputs = a.from.map(refPath); inputs.push(P.face);
+    const inputs = a.from.map(refPath); inputs.push(P.face_ref || P.face);
     await edit(ANC + a.id + ".png", a.prompt + (a.id === "K0" ? "" : " Everything else identical.") + IDENT + LIGHT, inputs);
   }
   log("anclas listas → mirá la hoja: identidad igual en todas, sin objetos colados");
@@ -122,7 +125,7 @@ if (fase === "clips") {
     } else if (c.audio) {
       const tr = tramo(c); T = tr.T;
       body = { mode: "reference", seconds: String(T), images: imgs, audios: [uri(tr.mp3)],
-        prompt: SE + "The presenter is the one speaking: the voice and every word are exactly the reference audio, lips perfectly synced; do not add, repeat or change any word — the audio is the only speech. " + c.action + LOOK + " No other voices." };
+        prompt: SE + "The presenter is the one speaking: the voice and every word are exactly the reference audio, lips perfectly synced; do not add, repeat or change any word — the audio is the only speech; after the last word he stays silent with his lips closed until the end, he never repeats the last sentence. " + c.action + LOOK + " No other voices." };
     } else {
       T = c.secs;
       body = { mode: "reference", seconds: String(T), images: imgs,
