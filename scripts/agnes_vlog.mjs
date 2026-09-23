@@ -2,7 +2,7 @@
 // continuas sin cortes. Validado 23-sep-2026 (1:02 Federer mascarilla de arroz, 7 clips en 7 min, $0 + ~$0,10 de anclas).
 // Memoria: reference_agnes_modelos_25_sep2026.md · skill agnes-broll § VLOG CONTINUO.
 //
-//   node scripts/agnes_vlog.mjs <plan.json> anclas   → gpt-image-2 LOW edits, K(n) desde K(n-1) + recorte de cara SIEMPRE
+//   node scripts/agnes_vlog.mjs <plan.json> anclas [más planes…] → gpt-image-2 LOW por BATCH en RONDAS, 1088x608, K(n-1) + cara 128x192 (face_gpt)
 //   node scripts/agnes_vlog.mjs <plan.json> clips    → agnes-video-2.5-flash `reference`, TODOS en paralelo, ancla→ancla
 //   node scripts/agnes_vlog.mjs <plan.json> check    → whisper-1 por clip vs texto esperado + costuras (dif. media /255)
 //   node scripts/agnes_vlog.mjs <plan.json> armar    → une con fundido 0,1 s; audio = tramos (o audio propio del clip)
@@ -48,27 +48,66 @@ const IDENT = " IDENTITY: the presenter must have EXACTLY the face of the man/wo
 const LOOK = " Ultra realistic casual home video, handheld phone footage with small natural shakes, BRIGHT correctly exposed image, big soft daylight from the window, neutral white balance, no grading, no vignette, no dark moody look; real skin with visible pores and fine lines, not smooth, not plastic; natural hands; nothing polished, no music.";
 const SE = "The video STARTS EXACTLY on the first reference image and ENDS EXACTLY on the second reference image: the very first frame is the first image and the very last frame is the second image — same place, same framing, same light, same objects in the same places; in between, one continuous take without cutting or changing angle. The third reference image is only the presenter's real face: keep exactly that face the whole time. ";
 
-// ---------- anclas ----------
-async function edit(out, prompt, inputs) {
-  if (fs.existsSync(out)) return log("ya", path.basename(out));
-  for (let t = 0, fails = 0; fails < 4 && t < 200; t++) { // rate limit de la org (input-images/min) → esperar sin contar como fallo
-    const fd = new FormData();
-    fd.append("model", "gpt-image-2"); fd.append("quality", "low"); fd.append("size", "1536x1024"); fd.append("prompt", prompt);
-    for (const f of inputs) fd.append("image[]", new Blob([fs.readFileSync(f)], { type: mime(f) }), path.basename(f));
-    const j = await (await fetch("https://api.openai.com/v1/images/edits", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd })).json().catch(() => ({}));
-    const b = j?.data?.[0]?.b64_json;
-    if (b) { const raw = out.replace(".png", "_raw.png"); fs.writeFileSync(raw, Buffer.from(b, "base64")); ff("-i", raw, "-vf", "crop=1536:864:0:24", out); return log("OK", path.basename(out)); }
-    const rl = /rate limit/i.test(JSON.stringify(j)); if (!rl) fails++;
-    log(rl ? "rate-limit, espero" : "retry", path.basename(out), rl ? "" : JSON.stringify(j).slice(0, 160)); await sleep(rl ? 20000 + Math.random() * 25000 : 15000);
-  }
-  throw new Error("falló " + out);
+// ---------- anclas: gpt-image-2 LOW por BATCH API, por RONDAS (override del creador 23-sep: 4 palancas SIEMPRE) ----------
+// low · Batch (-50 %) · size 1088x608 · ref de cara = SÓLO `face_gpt` (crop 128x192) · entradas achicadas a <=1088x608.
+// Varios planes a la vez: `node scripts/agnes_vlog.mjs <planA> anclas <planB> <planC> …` → cada ronda junta TODAS las anclas
+// cuyas entradas ya existen (de todos los planes) en UN batch; al volver arma la siguiente. Usage real → <dir>/anc/_usage.jsonl
+const GSIZE = "1088x608";
+const OA = "https://api.openai.com/v1", OH = { Authorization: "Bearer " + env.OPENAI_API_KEY };
+async function oa(p, opt = {}) { for (let t = 0; ; t++) { try { const r = await fetch(OA + p, { ...opt, headers: { ...OH, ...(opt.headers || {}) }, signal: AbortSignal.timeout(120000) }); if (r.ok || t >= 4) return r; } catch (e) { if (t >= 4) throw e; } await sleep(10000); } }
+function small(f) { // copia <=1088x608 (png) para no pagar tokens de entrada de más
+  const o = f.replace(/\.(png|jpg|jpeg)$/i, "") + "_g1088.png";
+  if (/_g1088\.png$/.test(f) || /^.*K\d+[a-z]?\.png$/.test(path.basename(f)) && dimsOk(f)) return f;
+  if (!fs.existsSync(o) || fs.statSync(o).mtimeMs < fs.statSync(f).mtimeMs) ff("-i", f, "-vf", "scale='min(1088,iw)':'min(608,ih)':force_original_aspect_ratio=decrease", o);
+  return o;
 }
+function dimsOk(f) { try { const [w, h] = execFileSync("ffprobe", ["-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number); return w <= 1088 && h <= 608; } catch { return false; } }
 if (fase === "anclas") {
-  for (const a of P.anchors) {
-    const inputs = a.from.map(refPath); inputs.push(P.face);
-    await edit(ANC + a.id + ".png", a.prompt + (a.id === "K0" ? "" : " Everything else identical.") + IDENT + LIGHT, inputs);
+  const plans = [planPath, ...soloIds].map(pp => { const Q = JSON.parse(fs.readFileSync(pp, "utf8")); const D = Q.dir.replace(/\\/g, "/").replace(/\/?$/, "/"); fs.mkdirSync(D + "anc/", { recursive: true }); return { Q, A: D + "anc/" }; });
+  const rp = (pl, n) => n === "k0" ? pl.Q.k0_from : /^K\d+$/.test(n) ? pl.A + n + ".png" : (pl.Q.extra || {})[n] || n;
+  const FG = P.face_gpt; if (!FG || !fs.existsSync(FG)) throw new Error("falta face_gpt (crop 128x192) en el plan");
+  let ronda = 0, usd = 0, nimg = 0;
+  for (;;) {
+    const items = [], pend = [];
+    plans.forEach((pl, pi) => pl.Q.anchors.forEach(a => {
+      const out = pl.A + a.id + ".png"; if (fs.existsSync(out)) return;
+      const deps = a.from.map(n => rp(pl, n)); pend.push(a.id);
+      if (deps.every(d => fs.existsSync(d))) items.push({ id: `p${pi}__${a.id}`, out, prompt: a.prompt + (a.id === "K0" ? "" : " Everything else identical.") + IDENT + LIGHT, inputs: [...deps.map(small), FG] });
+    }));
+    if (!items.length) { if (pend.length) throw new Error("anclas sin entradas: " + pend.join(",")); break; }
+    ronda++;
+    const cache = new Map(); const U = f => { if (!cache.has(f)) cache.set(f, uri(f)); return cache.get(f); };
+    const jsonl = items.map(it => JSON.stringify({ custom_id: it.id, method: "POST", url: "/v1/images/edits",
+      body: { model: "gpt-image-2", quality: "low", size: GSIZE, n: 1, prompt: it.prompt, images: it.inputs.map(f => ({ image_url: U(f) })) } })).join("\n") + "\n";
+    const fd = new FormData(); fd.append("purpose", "batch"); fd.append("file", new Blob([jsonl], { type: "application/jsonl" }), "anc.jsonl");
+    const file = await (await oa("/files", { method: "POST", body: fd })).json();
+    const b0 = await (await oa("/batches", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ input_file_id: file.id, endpoint: "/v1/images/edits", completion_window: "24h" }) })).json();
+    if (!b0.id) throw new Error("batch no creado: " + JSON.stringify(b0).slice(0, 300));
+    log(`ronda ${ronda}: ${items.length} anclas · ${(jsonl.length / 1048576).toFixed(2)} MB · batch ${b0.id}`);
+    let b = b0; const t0 = Date.now();
+    while (!["completed", "failed", "expired", "cancelled"].includes(b.status)) { await sleep(30000); b = await (await oa("/batches/" + b0.id)).json(); if ((Date.now() - t0) % 300000 < 30000) log(`  ronda ${ronda} ${b.status} ${JSON.stringify(b.request_counts)} ${Math.round((Date.now() - t0) / 1000)}s`); }
+    if (b.status !== "completed") throw new Error("batch " + b.status + " " + JSON.stringify(b.errors || {}).slice(0, 300));
+    const byId = Object.fromEntries(items.map(it => [it.id, it]));
+    let ok = 0, fail = 0;
+    for (const fid of [b.output_file_id, b.error_file_id].filter(Boolean)) {
+      const txt = await (await oa(`/files/${fid}/content`)).text(); // ~0,5 MB por imagen: rondas de <=40 entran de sobra
+      for (const ln of txt.split("\n").filter(Boolean)) {
+        const r = JSON.parse(ln), it = byId[r.custom_id], d = r.response?.body?.data?.[0], u = r.response?.body?.usage;
+        if (d?.b64_json && it) {
+          fs.writeFileSync(it.out, Buffer.from(d.b64_json, "base64")); ok++; nimg++;
+          // tarifa gpt-image-2 (USD/1M): texto in 5 · imagen in 8 · imagen out 30 → Batch = mitad
+          const itx = u?.input_tokens_details?.text_tokens || 0, iim = u?.input_tokens_details?.image_tokens || 0, out = u?.output_tokens || 0;
+          const c = (itx * 5 + iim * 8 + out * 30) / 1e6 / 2; usd += c;
+          fs.appendFileSync(path.dirname(it.out) + "/_usage.jsonl", JSON.stringify({ id: r.custom_id, usage: u, usd: +c.toFixed(5) }) + "\n");
+          if (nimg === 1) log(`  1ª imagen: usage ${JSON.stringify(u)} → $${c.toFixed(5)}/img (Batch)`);
+        } else { fail++; log("  ✗", r.custom_id, JSON.stringify(r.response?.body?.error || r.error || {}).slice(0, 200)); }
+      }
+    }
+    log(`ronda ${ronda}: ok ${ok} · fail ${fail} · acumulado ${nimg} img $${usd.toFixed(3)}`);
+    if (!ok) throw new Error("ronda sin ninguna imagen");
+    if (process.env.ANC_MAX_RONDAS && ronda >= Number(process.env.ANC_MAX_RONDAS)) { log("tope de rondas (ANC_MAX_RONDAS)"); break; }
   }
-  log("anclas listas → mirá la hoja: identidad igual en todas, sin objetos colados");
+  log(`anclas listas (${nimg} img, $${usd.toFixed(3)}) → mirá la hoja: identidad igual en todas, sin objetos colados`);
 }
 
 // ---------- clips ----------
