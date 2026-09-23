@@ -79,8 +79,9 @@ for k, m in enumerate(M):
         if ad > 1.5:
             cut = min(zm, a + int((ad - 0.1) * 1000))
             push(tipo="clip", ms_in=a, ms_out=cut, src=agn(m["id"]))
-            if zm - cut > 300: push(tipo="imagen", ms_in=cut, ms_out=zm, src=f)
-            else: beats[-1]["ms_out"] = zm
+            nxtA = k + 1 < len(M) and M[k + 1]["t"] == "A"
+            if zm - cut > 300 or nxtA: push(tipo="imagen", ms_in=cut, ms_out=zm, src=f)
+            else: beats[-1]["_pull"] = cut      # el plano siguiente arranca antes (nunca estirar el clip)
         else:
             push(tipo="imagen", ms_in=a, ms_out=zm, src=f)
     elif t == "C":
@@ -102,6 +103,8 @@ for b in beats:
         b["keys"] = [dict({k: v for k, v in kk.items() if k != "at_ms"}, at=round(max(0, (kk["at_ms"] - b["ms_in"]) / 1000), 2)) for kk in b.pop("_keys")]
         c = b.pop("_cta")
         if c: b["cta"] = round((c - b["ms_in"]) / 1000, 2)
+for i in range(len(beats) - 1):
+    if "_pull" in beats[i]: beats[i + 1]["ms_in"] = beats[i].pop("_pull")
 # apertura: el avatar abre y se sostiene >= 3 s (regla del creador); win-001 trae 3,17 s de video
 if beats[0]["tipo"] == "avatar" and beats[1]["ms_in"] < 3000: beats[1]["ms_in"] = 3000
 for i in range(len(beats) - 1): beats[i]["ms_out"] = beats[i + 1]["ms_in"]
