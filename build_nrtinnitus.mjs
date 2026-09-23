@@ -28,7 +28,7 @@ const F = (s) => Math.round(s * FPS);
 const assets = new Set([WAV_FILE]);
 const faltan = [];
 const scan = (v) => {
-  if (typeof v === "string") { if (/^img\/.+\.(png|jpe?g)$/i.test(v) || /^broll\/.+\.mp4$/i.test(v)) { if (existe(v)) assets.add(v); else faltan.push(v); } return; }
+  if (typeof v === "string") { if (/^img\/.+\.(png|jpe?g)$/i.test(v) || /^(broll|avatar)\/.+\.mp4$/i.test(v)) { if (existe(v)) assets.add(v); else faltan.push(v); } return; }
   if (Array.isArray(v)) return v.forEach(scan);
   if (v && typeof v === "object") Object.values(v).forEach(scan);
 };
