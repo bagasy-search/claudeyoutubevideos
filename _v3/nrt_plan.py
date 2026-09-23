@@ -80,6 +80,17 @@ for k, m in enumerate(M):
     if xs: push(tipo="clip", ms_in=zm, ms_out=z, src=stk("x_" + m["id"]))
     if m.get("ov") == "desc":
         overlays.append(dict(ms_in=a + 600, ms_out=z, props=dict(eyebrow="IN THE DESCRIPTION", title="The Jaw-Drum Combo", sub="Step by step, for ringing that changes when you clench", showQr=False)))
+# ── v2: viaje continuo cóclea → células ciliadas (UN plano, sin corte) ──
+ja = next(i for i, b in enumerate(beats) if b.get("src", "").endswith("/m027.jpg"))
+jb = ja + 1
+while not beats[jb].get("src", "").split("/")[-1].startswith("m028"): jb += 1
+end = beats[jb]["ms_out"]
+for x in range(jb + 1, len(beats)):
+    if beats[x].get("src", "").split("/")[-1].startswith("m028"): end = beats[x]["ms_out"]
+    else: break
+at = round((beats[jb]["ms_in"] - beats[ja]["ms_in"]) / 1000, 2)
+jr = dict(tipo="journey", ms_in=beats[ja]["ms_in"], ms_out=end, a=img("m027"), b=img("m028"), at=at, fx=0.72, fy=0.52)
+beats = beats[:ja] + [jr] + [b for b in beats[ja + 1:] if not (b["ms_in"] < end and b["ms_in"] >= beats[ja]["ms_in"])]
 # contigüidad estricta
 for i in range(len(beats) - 1): beats[i]["ms_out"] = beats[i + 1]["ms_in"]
 beats[-1]["ms_out"] = END_MS

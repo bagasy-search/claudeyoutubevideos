@@ -112,10 +112,17 @@ for (const b of rows) {
     cues.push({ key, start, dur, el: `<ReframedVideo src={${JSON.stringify(b.src)}} seed={${b.f0}} frames={${frames}} />` });
   } else if (b.tipo === "imagen") {
     scan(b.src);
-    cues.push({ key, start, dur, el: `<PhotoScene src={${JSON.stringify(b.src)}} seed={${b.f0}} />` });
+    // v2: 2.5D si la foto tiene sus capas (fondo inpintado + sujeto BiRefNet); si no, Ken Burns
+    const id = path.basename(b.src).replace(/\.(png|jpe?g)$/i, "");
+    const bgL = `img/${SLUG}/p25/${id}_bg.jpg`, fgL = `img/${SLUG}/p25/${id}_fg.png`;
+    if (existe(bgL) && existe(fgL)) { scan(bgL); scan(fgL); cues.push({ key, start, dur, el: `<Depth25 bg={${JSON.stringify(bgL)}} fg={${JSON.stringify(fgL)}} seed={${b.f0}} />` }); }
+    else cues.push({ key, start, dur, el: `<PhotoScene src={${JSON.stringify(b.src)}} seed={${b.f0}} />` });
+  } else if (b.tipo === "journey") {
+    scan(b.a); scan(b.b);
+    cues.push({ key, start, dur, el: `<Journey a={${JSON.stringify(b.a)}} b={${JSON.stringify(b.b)}} at={${b.at}} fx={${b.fx ?? 0.62}} fy={${b.fy ?? 0.5}} />` });
   } else if (b.tipo === "lamina") {
-    scan(b.src); assets.add(COVER); assets.add(QR);
-    cues.push({ key, start, dur, el: `<LaminaZoom src={${JSON.stringify(b.src)}} keys={${JSON.stringify(b.keys)}} ${b.cta !== undefined ? `cta={${b.cta}} cover={${JSON.stringify(COVER)}} qr={${JSON.stringify(QR)}} site={${JSON.stringify(SITE)}}` : ""} />` });
+    scan(b.src); assets.add(COVER); assets.add(QR); assets.add("img/nrtinnitus/m047_blur.jpg");
+    cues.push({ key, start, dur, el: `<Lamina3D table={"img/nrtinnitus/m047_blur.jpg"} src={${JSON.stringify(b.src)}} keys={${JSON.stringify(b.keys)}} ${b.cta !== undefined ? `cta={${b.cta}} cover={${JSON.stringify(COVER)}} qr={${JSON.stringify(QR)}} site={${JSON.stringify(SITE)}}` : ""} />` });
   } else if (b.tipo === "componente" && b.componente === "FedWhiteboard") {
     cues.push({ key, start, dur, el: `<FedWhiteboard scene={SCENE_PUNTOS_MEC} />` });
   } else if (b.tipo === "componente" && OVERLAY_COMPONENTES.has(b.componente)) {
@@ -188,6 +195,7 @@ fs.writeFileSync(`src/_fed6/VideoEdit/Main_${SLUG}.tsx`,
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { AvatarWindow, ReframedVideo, PhotoScene, LaminaZoom } from "../../nrvaseneck/Piezas";
+import { Depth25, Lamina3D, Journey } from "../../nrtinnitus/Premium";
 import {
   THEME_MEDICO, HookCaption, PullQuote, KaraokePhrase, HighlightSweep,
   NumberedSteps, ChecklistReveal, BulletCascade,
