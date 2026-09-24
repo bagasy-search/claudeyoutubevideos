@@ -123,8 +123,10 @@ if (RANK) {
   try {
     const { pipeline } = await import("@huggingface/transformers");
     const MODEL = process.env.MATCH_MODEL || "Xenova/clip-vit-base-patch32";
-    const DEV = process.env.CLIP_DEVICE || ""; // dml = GPU (10x más rápido para lotes grandes)
-    const DTY = process.env.CLIP_DTYPE || (DEV ? "fp16" : "q8");
+    // GPU (DirectML) por DEFECTO, igual que matchclip.mjs — es el mismo modelo y la misma librería,
+    // y acá estaba cayendo a CPU/q8 sin motivo (~17 min extra por video). Override: CLIP_DEVICE=cpu
+    const DEV = process.env.CLIP_DEVICE === "cpu" ? "" : (process.env.CLIP_DEVICE || "dml");
+    const DTY = process.env.CLIP_DTYPE || (DEV ? "fp32" : "q8");
     console.log(`cargando CLIP local (${MODEL}, ${DTY}, ${DEV || "CPU"}) para re-ranking…`);
     clf = await pipeline("zero-shot-image-classification", MODEL, DEV ? { device: DEV, dtype: DTY } : { dtype: DTY });
   } catch (e) {

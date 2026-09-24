@@ -1,0 +1,1705 @@
+{
+ "video": "maderarest",
+ "avatar": "maderarest_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 3.92,
+   "kind": "talk",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_1",
+   "start": 5.22,
+   "dur": 7.42,
+   "kind": "raw",
+   "src": "vid/mr_liquido_macro.mp4",
+   "hue": "red",
+   "kicker": "Menos de un dólar",
+   "hold": true,
+   "gen": {
+    "type": "clip",
+    "image": "mr_liquido_macro",
+    "prompt": "Foto documental muy realista, 16:9. extreme macro of a brush loaded with translucent amber liquid stroking across a weathered gray wood board, the grain instantly darkening and glowing warm as it soaks in, thirsty wood drinking. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 120
+   }
+  },
+  {
+   "id": "hook_2",
+   "start": 12.64,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "vid/mr_veta_revive.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "mr_veta_revive",
+    "prompt": "Foto documental muy realista, 16:9. close macro of dry gray wood grain turning rich golden brown as oil penetrates, color returning in real time. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "hook_3",
+   "start": 17,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "vid/mr_cerca_podrida.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "mr_cerca_podrida",
+    "prompt": "Foto documental muy realista, 16:9. an old weathered gray rotting wooden fence in a rural yard, cracked sun-bleached boards. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_4",
+   "start": 21.36,
+   "dur": 5.31,
+   "kind": "raw",
+   "src": "vid/mr_cerca_restaurada.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "mr_cerca_restaurada",
+    "prompt": "Foto documental muy realista, 16:9. the same wooden fence half restored: left side gray and dead, right side rich dark restored wood, before and after. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "hook_5",
+   "start": 26.67,
+   "dur": 5.3,
+   "kind": "raw",
+   "src": "vid/mr_terraza_vieja.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "mr_terraza_vieja",
+    "prompt": "Foto documental muy realista, 16:9. an old worn gray wooden deck terrace, faded and dried out by the sun. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_6",
+   "start": 31.97,
+   "dur": 5.31,
+   "kind": "raw",
+   "src": "vid/mr_mueble_basura.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "mr_mueble_basura",
+    "prompt": "Foto documental muy realista, 16:9. an old shabby wooden chair that looks ready for the trash, dusty and gray, in a shed. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_7",
+   "start": 37.28,
+   "dur": 7.77,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Sin"
+    },
+    {
+     "t": "lijar,"
+    },
+    {
+     "t": "sin"
+    },
+    {
+     "t": "herramientas,"
+    },
+    {
+     "t": "sin"
+    },
+    {
+     "t": "experiencia",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Nada complicado",
+   "bg": "image",
+   "image": "vid/mr_mueble_exhibicion.mp4",
+   "at": "sin lijar",
+   "hue": "red"
+  },
+  {
+   "id": "hook_8",
+   "start": 45.05,
+   "dur": 11.66,
+   "kind": "raw",
+   "src": "vid/mr_artesanos_30.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "mr_artesanos_30",
+    "prompt": "Foto documental muy realista, 16:9. a very old sepia 1930s photograph feel of craftsmen working wood in an old workshop, vintage tools. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_9",
+   "start": 56.71,
+   "dur": 11.66,
+   "kind": "raw",
+   "src": "vid/mr_ebanistas_sepia.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "mr_ebanistas_sepia",
+    "prompt": "Foto documental muy realista, 16:9. sepia vintage photo of an old cabinetmaker teaching his son to treat wood, 1930s workshop, warm archival tone. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_10",
+   "start": 68.37,
+   "dur": 2.43,
+   "kind": "quote",
+   "image": "img/mr_botella_enterrada.png",
+   "text": "La enterraron porque *funcionaba demasiado bien*.",
+   "accent": "danger",
+   "at": "la enterraron porque",
+   "hue": "red"
+  },
+  {
+   "id": "ident_0",
+   "start": 70.8,
+   "dur": 4.73,
+   "kind": "raw",
+   "src": "img/mr_tomas_retrato.png",
+   "hue": "red",
+   "kicker": "Tomás",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "mr_tomas_retrato",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, documentary portrait standing in his workshop next to old restored wooden furniture, calm confident gaze, en un taller rural con madera. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ident_1",
+   "start": 75.53,
+   "dur": 1.86,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Hoy"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "desenterramos"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "con"
+    },
+    {
+     "t": "las"
+    },
+    {
+     "t": "medidas exactas",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Completa",
+   "bg": "image",
+   "image": "vid/mr_tres_frascos_mesa.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "entender_0",
+   "start": 77.39,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "img/mr_tomas_serio.png",
+   "hue": "blue",
+   "kicker": "Entendé esto primero",
+   "gen": {
+    "type": "image",
+    "name": "mr_tomas_serio",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, leaning toward camera with a serious knowing look in his workshop, about to explain something important, en un taller rural con madera. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "entender_1",
+   "start": 80.84,
+   "dur": 3.46,
+   "kind": "raw",
+   "src": "vid/mr_madera_fallo.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "mr_madera_fallo",
+    "prompt": "Foto documental muy realista, 16:9. a piece of wood that was oiled wrong: sticky, gummy, uneven blotchy surface, a failed job. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "gris_0",
+   "start": 84.3,
+   "dur": 8,
+   "kind": "diagram",
+   "eyebrow": "Por qué la madera se pone gris",
+   "slides": [
+    {
+     "image": "img/dg_mr_gris.png",
+     "eyebrow": "El sol rompe la fibra, la lluvia se la lleva"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "gris_1",
+   "start": 92.3,
+   "dur": 5,
+   "kind": "raw",
+   "src": "vid/mr_sol_tabla.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "mr_sol_tabla",
+    "prompt": "Foto documental muy realista, 16:9. harsh sunlight beating down on a gray wooden board, heat shimmer, sun-bleached surface. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "gris_2",
+   "start": 97.3,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "vid/mr_lluvia_madera.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "mr_lluvia_madera",
+    "prompt": "Foto documental muy realista, 16:9. rain drops hitting weathered wood and running off, washing the surface, overcast. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "gris_3",
+   "start": 101.15,
+   "dur": 3.33,
+   "kind": "annotated",
+   "image": "img/mr_fibra_gris.png",
+   "eyebrow": "Madera muerta por fuera",
+   "caption": "Fibra seca, sin una gota de aceite",
+   "annotations": [
+    {
+     "kind": "arrow",
+     "x": 40,
+     "y": 35,
+     "label": "Fibra levantada"
+    },
+    {
+     "kind": "circle",
+     "x": 62,
+     "y": 62,
+     "label": "Sin aceite"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "gris_4",
+   "start": 104.48,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "vid/mr_banco_gris.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "mr_banco_gris",
+    "prompt": "Foto documental muy realista, 16:9. a gray weathered wooden garden bench and an old gray door, sun-faded, in a rural yard. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "gris_5",
+   "start": 108.33,
+   "dur": 3.19,
+   "kind": "chips",
+   "bg": "image",
+   "image": "vid/mr_fibra_gris.mp4",
+   "imageDarken": 0.6,
+   "title": "Madera sedienta",
+   "chips": [
+    "Seca",
+    "Apagada",
+    "Sin una gota de aceite"
+   ],
+   "hue": "amber",
+   "at": "madera sedienta"
+  },
+  {
+   "id": "lijar_0",
+   "start": 111.52,
+   "dur": 7.57,
+   "kind": "cross",
+   "title": "Barnizar = tapar el problema",
+   "eyebrow": "Qué pasa por dentro",
+   "layers": [
+    {
+     "label": "Barniz (capa de plástico)",
+     "color": "#A9794A",
+     "weight": 1
+    },
+    {
+     "label": "Madera muerta (sigue gris)",
+     "color": "#6F8478",
+     "weight": 3
+    },
+    {
+     "label": "Madera sana",
+     "color": "#6E8B47",
+     "weight": 2
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "lijar_1",
+   "start": 119.09,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "vid/mr_barniz_descascara.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "mr_barniz_descascara",
+    "prompt": "Foto documental muy realista, 16:9. old varnish peeling and flaking off a wooden surface in curls, a failed finish. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "lijar_2",
+   "start": 123.5,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "vid/mr_veta_tapada.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "mr_veta_tapada",
+    "prompt": "Foto documental muy realista, 16:9. beautiful wood grain covered and hidden under a thick shiny plastic varnish coat, a shame. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "lijar_3",
+   "start": 127.9,
+   "dur": 8.7,
+   "kind": "quote",
+   "image": "vid/mr_aceite_absorbe.mp4",
+   "text": "Los viejos hacían al revés: *alimentaban* la madera.",
+   "at": "era al reves",
+   "hue": "red"
+  },
+  {
+   "id": "tres_0",
+   "start": 136.6,
+   "dur": 2.44,
+   "kind": "splitlist",
+   "title": "Cada una hace algo distinto",
+   "items": [
+    "Vinagre — despierta la fibra",
+    "Linaza — nutre por dentro",
+    "Trementina — empuja el aceite"
+   ],
+   "palette": "A",
+   "hue": "blue"
+  },
+  {
+   "id": "tres_1",
+   "start": 139.04,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "vid/mr_tres_frascos_close.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "mr_tres_frascos_close",
+    "prompt": "Foto documental muy realista, 16:9. close-up of three labeled bottles side by side on a wood table: white vinegar, boiled linseed oil, turpentine. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "tres_2",
+   "start": 142.38,
+   "dur": 2.22,
+   "kind": "chips",
+   "bg": "image",
+   "image": "vid/mr_tres_frascos_mesa.mp4",
+   "imageDarken": 0.6,
+   "title": "Cada una hace algo distinto",
+   "chips": [
+    "Vinagre despierta",
+    "Linaza nutre",
+    "Trementina penetra"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "vinagre_0",
+   "start": 144.6,
+   "dur": 2.4,
+   "kind": "half",
+   "src": "vid/mr_vinagre_frasco.mp4",
+   "side": "right",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "mr_vinagre_frasco",
+    "prompt": "Foto documental muy realista, 16:9. a bottle of clear white vinegar next to a cloth on a rustic wood table, natural light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   },
+   "kicker": "1 · Vinagre blanco"
+  },
+  {
+   "id": "vinagre_1",
+   "start": 147,
+   "dur": 5.24,
+   "kind": "diagram",
+   "eyebrow": "Qué hace el vinagre",
+   "slides": [
+    {
+     "image": "img/dg_mr_vinagre.png",
+     "eyebrow": "Abre la fibra para que entre el aceite"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "vinagre_2",
+   "start": 152.24,
+   "dur": 9.11,
+   "kind": "raw",
+   "src": "vid/mr_vinagre_trapo.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "mr_vinagre_trapo",
+    "prompt": "Foto documental muy realista, 16:9. a cloth soaked in vinegar wiping over gray weathered wood, the gray loosening and lifting. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "vinagre_3",
+   "start": 161.35,
+   "dur": 6.07,
+   "kind": "callout",
+   "image": "vid/mr_puerta_cerrada.mp4",
+   "figure": "Paso 0",
+   "caption": "Sin esto, el aceite queda arriba y se pega.",
+   "hue": "amber"
+  },
+  {
+   "id": "linaza_0",
+   "start": 167.42,
+   "dur": 4.65,
+   "kind": "half",
+   "src": "vid/mr_linaza_frasco.mp4",
+   "side": "right",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "mr_linaza_frasco",
+    "prompt": "Foto documental muy realista, 16:9. a bottle of boiled linseed oil, amber colored, on a workshop shelf, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   },
+   "kicker": "2 · Aceite de linaza HERVIDO"
+  },
+  {
+   "id": "linaza_1",
+   "start": 172.07,
+   "dur": 6.35,
+   "kind": "raw",
+   "src": "vid/mr_linaza_cruda_vs.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "mr_linaza_cruda_vs",
+    "prompt": "Foto documental muy realista, 16:9. two bottles of linseed oil side by side, one raw pale, one boiled darker, comparison on a table. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "linaza_2",
+   "start": 178.42,
+   "dur": 7.52,
+   "kind": "raw",
+   "src": "vid/mr_semillas_gel.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "mr_semillas_gel",
+    "prompt": "Foto documental muy realista, 16:9. a pot boiling flax seeds in water turning into a useless sticky gel on a stove. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "linaza_3",
+   "start": 185.94,
+   "dur": 7.52,
+   "kind": "raw",
+   "src": "vid/mr_linaza_verter.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "mr_linaza_verter",
+    "prompt": "Foto documental muy realista, 16:9. pouring amber boiled linseed oil from a can into a glass jar, close-up, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "linaza_4",
+   "start": 193.46,
+   "dur": 7.53,
+   "kind": "raw",
+   "src": "vid/mr_ferreteria_estante.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "mr_ferreteria_estante",
+    "prompt": "Foto documental muy realista, 16:9. a hardware store shelf with cans of linseed oil, a hand reaching for one. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "linaza_5",
+   "start": 200.99,
+   "dur": 5.01,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Hervido"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "solo"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "nombre",
+     "hl": true
+    }
+   ],
+   "eyebrow": "No lo hervís vos",
+   "bg": "image",
+   "image": "vid/mr_etiqueta_boiled.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "trementina_0",
+   "start": 206,
+   "dur": 3.46,
+   "kind": "half",
+   "src": "vid/mr_trementina_frasco.mp4",
+   "side": "right",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "mr_trementina_frasco",
+    "prompt": "Foto documental muy realista, 16:9. a bottle of turpentine on a workshop table, yellowish tint, rag beside it. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   },
+   "kicker": "3 · Trementina (aguarrás)"
+  },
+  {
+   "id": "trementina_1",
+   "start": 209.46,
+   "dur": 7.55,
+   "kind": "diagram",
+   "eyebrow": "Qué hace la trementina",
+   "slides": [
+    {
+     "image": "img/dg_mr_trementina.png",
+     "eyebrow": "Empuja el aceite adentro, no lo deja arriba"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "trementina_2",
+   "start": 217.01,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "vid/mr_aguarras_mexico.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "mr_aguarras_mexico",
+    "prompt": "Foto documental muy realista, 16:9. a can labeled as high quality mineral spirits on a hardware store shelf in latin america, no legible text. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "proporciones_0",
+   "start": 221.73,
+   "dur": 7.56,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Las"
+    },
+    {
+     "t": "proporciones"
+    },
+    {
+     "t": "exactas",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Lo que casi nunca te dan",
+   "bg": "image",
+   "image": "vid/mr_jarro_midiendo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "proporciones_1",
+   "start": 229.29,
+   "dur": 11.34,
+   "kind": "raw",
+   "src": "vid/mr_partes_iguales.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "mr_partes_iguales",
+    "prompt": "Foto documental muy realista, 16:9. three small glasses side by side with equal amounts of vinegar, oil and turpentine on a wood table. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "proporciones_2",
+   "start": 240.63,
+   "dur": 9.5,
+   "kind": "raw",
+   "src": "vid/mr_agua_aceite.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "mr_agua_aceite",
+    "prompt": "Foto documental muy realista, 16:9. oil and water refusing to mix in a jar, separating into layers, close-up. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "proporciones_3",
+   "start": 250.13,
+   "dur": 9.49,
+   "kind": "raw",
+   "src": "vid/mr_mezcla_revolver.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "mr_mezcla_revolver",
+    "prompt": "Foto documental muy realista, 16:9. a hand stirring the oil and turpentine mixture in a jar with a stick, blending. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "recetas_0",
+   "start": 259.62,
+   "dur": 14.05,
+   "kind": "diagram",
+   "eyebrow": "Las dos recetas",
+   "slides": [
+    {
+     "image": "img/dg_mr_receta1.png",
+     "eyebrow": "Restaurar: 1 parte aceite + 1 parte trementina"
+    },
+    {
+     "image": "img/dg_mr_receta2.png",
+     "eyebrow": "Mantener: 2 partes aceite + 1 de trementina"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "recetas_1",
+   "start": 273.67,
+   "dur": 8.78,
+   "kind": "raw",
+   "src": "vid/mr_vinagre_primero.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "mr_vinagre_primero",
+    "prompt": "Foto documental muy realista, 16:9. applying vinegar first with a cloth on gray wood, then letting it dry, step one. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "recetas_2",
+   "start": 282.45,
+   "dur": 5.85,
+   "kind": "chips",
+   "bg": "image",
+   "image": "vid/mr_jarro_midiendo.mp4",
+   "imageDarken": 0.6,
+   "title": "Anotá esto",
+   "chips": [
+    "Restaurar 1:1",
+    "Mantener 2:1",
+    "El vinagre va aparte"
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "recetas_3",
+   "start": 288.3,
+   "dur": 7.43,
+   "kind": "stat",
+   "value": 90,
+   "suffix": "%",
+   "label": "de la madera de tu casa, ya lo arreglás con esto",
+   "eyebrow": "Con dos fórmulas",
+   "at": "el 90",
+   "hue": "red"
+  },
+  {
+   "id": "cta1_0",
+   "start": 295.73,
+   "dur": 8.5,
+   "kind": "half",
+   "src": "vid/mr_manual_tabla.mp4",
+   "side": "right",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "mr_manual_tabla",
+    "prompt": "Foto documental muy realista, 16:9. a printed table of wood treatment measurements pinned on a workshop wall, ruler beside it, no legible text. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   },
+   "kicker": "En el manual: la tabla al mililitro"
+  },
+  {
+   "id": "cta1_1",
+   "start": 304.23,
+   "dur": 18.53,
+   "kind": "diagram",
+   "eyebrow": "Las medidas exactas, documentadas",
+   "slides": [
+    {
+     "image": "img/dg_mr_manual1.png",
+     "eyebrow": "Imprimís, pegás en el taller, listo"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "dudas_0",
+   "start": 322.76,
+   "dur": 6.2,
+   "kind": "raw",
+   "src": "img/mr_tomas_dudas.png",
+   "hue": "amber",
+   "kicker": "Las dudas, una por una",
+   "gen": {
+    "type": "image",
+    "name": "mr_tomas_dudas",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, sitting relaxed talking to camera in his workshop, about to answer common questions, friendly, en un taller rural con madera. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "dudas_1",
+   "start": 328.96,
+   "dur": 4.14,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Las"
+    },
+    {
+     "t": "preguntas"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "siempre"
+    },
+    {
+     "t": "quedan",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Una por una",
+   "bg": "grid",
+   "hue": "amber"
+  },
+  {
+   "id": "pegajosa_0",
+   "start": 333.1,
+   "dur": 7.11,
+   "kind": "raw",
+   "src": "vid/mr_madera_pegajosa.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "mr_madera_pegajosa",
+    "prompt": "Foto documental muy realista, 16:9. a wooden surface left sticky and gummy after too much oil, shiny wet blotches, a mistake. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "pegajosa_1",
+   "start": 340.21,
+   "dur": 7.11,
+   "kind": "raw",
+   "src": "vid/mr_mucho_aceite.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "mr_mucho_aceite",
+    "prompt": "Foto documental muy realista, 16:9. pouring way too much oil onto wood, pooling on the surface, the wrong way. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "regla_0",
+   "start": 347.32,
+   "dur": 8.02,
+   "kind": "diagram",
+   "eyebrow": "La regla de oro",
+   "slides": [
+    {
+     "image": "img/dg_mr_regla.png",
+     "eyebrow": "La madera toma lo que necesita; el resto lo sacás"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "regla_1",
+   "start": 355.34,
+   "dur": 5.39,
+   "kind": "raw",
+   "src": "vid/mr_trapo_retira.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "mr_trapo_retira",
+    "prompt": "Foto documental muy realista, 16:9. a dry clean cloth wiping excess oil off wood 20 minutes after applying, shine turning to matte. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "regla_2",
+   "start": 360.73,
+   "dur": 3.59,
+   "kind": "stat",
+   "value": 20,
+   "suffix": " min",
+   "label": "y retirás con un trapo seco todo lo que no absorbió",
+   "eyebrow": "Regla de oro",
+   "hue": "red"
+  },
+  {
+   "id": "pintada_0",
+   "start": 364.32,
+   "dur": 10.61,
+   "kind": "annotated",
+   "image": "img/mr_cruda_vs_barniz.png",
+   "eyebrow": "¿En qué madera sirve?",
+   "caption": "Solo en madera cruda o gastada, no sobre barniz sano",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 30,
+     "y": 55,
+     "label": "Cruda: SÍ"
+    },
+    {
+     "kind": "arrow",
+     "x": 72,
+     "y": 45,
+     "label": "Barniz sano: NO"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "pintada_1",
+   "start": 374.93,
+   "dur": 9.01,
+   "kind": "raw",
+   "src": "vid/mr_lijar_apenas.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "mr_lijar_apenas",
+    "prompt": "Foto documental muy realista, 16:9. lightly sanding just the corner of a painted board to reach bare wood, minimal sanding. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "comida_0",
+   "start": 383.94,
+   "dur": 7.08,
+   "kind": "half",
+   "src": "vid/mr_tabla_cortar.mp4",
+   "side": "right",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "mr_tabla_cortar",
+    "prompt": "Foto documental muy realista, 16:9. a wooden cutting board and a dining table surface, warm kitchen light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   },
+   "kicker": "¿Mesa o tabla de cortar?"
+  },
+  {
+   "id": "comida_1",
+   "start": 391.02,
+   "dur": 7.08,
+   "kind": "splitlist",
+   "title": "Para algo que toca comida",
+   "items": [
+    "Aceite de linaza PURO",
+    "Sin trementina",
+    "Curar 2-3 semanas"
+   ],
+   "palette": "G",
+   "hue": "blue"
+  },
+  {
+   "id": "comida_2",
+   "start": 398.1,
+   "dur": 6.43,
+   "kind": "stat",
+   "value": 21,
+   "suffix": " días",
+   "label": "de curado y queda una superficie sana para comer",
+   "eyebrow": "Solo aceite",
+   "hue": "amber"
+  },
+  {
+   "id": "afuera_0",
+   "start": 404.53,
+   "dur": 7.65,
+   "kind": "raw",
+   "src": "vid/mr_madera_intemperie.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "mr_madera_intemperie",
+    "prompt": "Foto documental muy realista, 16:9. outdoor wooden deck and fence standing strong against rain and sun, weathered but solid. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "afuera_1",
+   "start": 412.18,
+   "dur": 5.09,
+   "kind": "stat",
+   "value": 50,
+   "suffix": " años",
+   "label": "y sigue firme, con una mano de mantenimiento al año",
+   "eyebrow": "Aguanta afuera",
+   "at": "50",
+   "hue": "amber"
+  },
+  {
+   "id": "afuera_2",
+   "start": 417.27,
+   "dur": 7.65,
+   "kind": "raw",
+   "src": "vid/mr_mantenimiento.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "mr_mantenimiento",
+    "prompt": "Foto documental muy realista, 16:9. a hand giving a quick maintenance coat of oil to an outdoor wooden railing, five minute job. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "gasoil_0",
+   "start": 424.92,
+   "dur": 9.09,
+   "kind": "raw",
+   "src": "vid/mr_gasoil_garrafa.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "mr_gasoil_garrafa",
+    "prompt": "Foto documental muy realista, 16:9. an old diesel fuel jerry can in a rural shed, warning red feel, not recommended for touchable wood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "gasoil_1",
+   "start": 434.01,
+   "dur": 9.1,
+   "kind": "raw",
+   "src": "vid/mr_gasoil_mezcla.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "mr_gasoil_mezcla",
+    "prompt": "Foto documental muy realista, 16:9. mixing linseed oil with diesel in an old bucket for outdoor posts, rural method, close-up. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "gasoil_2",
+   "start": 443.11,
+   "dur": 9.09,
+   "kind": "raw",
+   "src": "vid/mr_postes_campo.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "mr_postes_campo",
+    "prompt": "Foto documental muy realista, 16:9. weathered wooden fence posts standing in a field exposed to sun and rain, old rural fence. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "gasoil_3",
+   "start": 452.2,
+   "dur": 4.22,
+   "kind": "quote",
+   "image": "vid/mr_banco_plaza.mp4",
+   "text": "Hay una *versión mejor* para cada cosa.",
+   "at": "version mejor",
+   "hue": "amber"
+  },
+  {
+   "id": "seguridad_0",
+   "start": 456.42,
+   "dur": 7.46,
+   "kind": "checklist",
+   "title": "Seguridad — no se negocia",
+   "items": [
+    {
+     "text": "Guantes puestos",
+     "state": "done"
+    },
+    {
+     "text": "Lugar ventilado, puerta abierta",
+     "state": "done"
+    },
+    {
+     "text": "Tomá descansos",
+     "state": "done"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "seguridad_1",
+   "start": 463.88,
+   "dur": 9.32,
+   "kind": "raw",
+   "src": "vid/mr_guantes_ventilado.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "mr_guantes_ventilado",
+    "prompt": "Foto documental muy realista, 16:9. gloved hands working with wood oil near an open workshop door with fresh air, safe practice. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "trapos_0",
+   "start": 473.2,
+   "dur": 6.28,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "trapo"
+    },
+    {
+     "t": "puede"
+    },
+    {
+     "t": "prenderse"
+    },
+    {
+     "t": "fuego"
+    },
+    {
+     "t": "solo",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Esto salva casas",
+   "bg": "image",
+   "image": "vid/mr_trapos_bollo.mp4",
+   "at": "prenderse fuego solo",
+   "hold": true,
+   "hue": "blue"
+  },
+  {
+   "id": "trapos_1",
+   "start": 479.48,
+   "dur": 9.42,
+   "kind": "raw",
+   "src": "vid/mr_trapos_llama.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "mr_trapos_llama",
+    "prompt": "Foto documental muy realista, 16:9. a balled oily rag smoldering and catching fire on its own, spontaneous combustion, warning. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "trapos_2",
+   "start": 488.9,
+   "dur": 7.18,
+   "kind": "raw",
+   "src": "vid/mr_trapos_extendidos.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "mr_trapos_extendidos",
+    "prompt": "Foto documental muy realista, 16:9. oily rags laid out flat spread open outdoors on a wire to dry safely, sunlight. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "trapos_3",
+   "start": 496.08,
+   "dur": 4.78,
+   "kind": "callout",
+   "image": "vid/mr_trapos_secos.mp4",
+   "figure": "¡OJO!",
+   "caption": "Nunca los tires en bollo. Extendelos afuera.",
+   "accent": "danger",
+   "hue": "blue"
+  },
+  {
+   "id": "aplicacion_0",
+   "start": 500.86,
+   "dur": 4.62,
+   "kind": "checklist",
+   "title": "Cómo se aplica — 4 pasos",
+   "items": [
+    {
+     "text": "Limpiar: vinagre + cepillo, secar",
+     "state": "done"
+    },
+    {
+     "text": "Aplicar la mezcla, en la veta",
+     "state": "done"
+    },
+    {
+     "text": "Retirar el sobrante a los 20 min",
+     "state": "done"
+    },
+    {
+     "text": "Secar un día por mano",
+     "state": "done"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "paso1_0",
+   "start": 505.48,
+   "dur": 11.99,
+   "kind": "raw",
+   "src": "vid/mr_paso1_vinagre.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "mr_paso1_vinagre",
+    "prompt": "Foto documental muy realista, 16:9. applying vinegar on gray wood and scrubbing with a brush, dirt and gray coming off. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "paso1_1",
+   "start": 517.47,
+   "dur": 6.85,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Error"
+    },
+    {
+     "t": "#1:"
+    },
+    {
+     "t": "aceitar"
+    },
+    {
+     "t": "madera"
+    },
+    {
+     "t": "húmeda",
+     "hl": true
+    }
+   ],
+   "eyebrow": "La pudrís desde adentro",
+   "bg": "image",
+   "image": "vid/mr_madera_humeda.mp4",
+   "at": "madera humeda",
+   "hue": "blue"
+  },
+  {
+   "id": "paso2_0",
+   "start": 524.32,
+   "dur": 9.04,
+   "kind": "raw",
+   "src": "vid/mr_paso2_transforma.mp4",
+   "hue": "blue",
+   "hold": true,
+   "gen": {
+    "type": "clip",
+    "image": "mr_paso2_transforma",
+    "prompt": "Foto documental muy realista, 16:9. brushing the oil mixture on gray wood and the gray vanishing, color and life returning before your eyes, beautiful. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 120
+   }
+  },
+  {
+   "id": "paso2_1",
+   "start": 533.36,
+   "dur": 4.6,
+   "kind": "annotated",
+   "image": "img/mr_sentido_veta.png",
+   "eyebrow": "Siempre en el sentido de la veta",
+   "caption": "La madera lo toma como una esponja",
+   "annotations": [
+    {
+     "kind": "arrow",
+     "x": 50,
+     "y": 45,
+     "label": "En la veta"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "paso2_2",
+   "start": 537.96,
+   "dur": 5.32,
+   "kind": "raw",
+   "src": "vid/mr_esponja.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "mr_esponja",
+    "prompt": "Foto documental muy realista, 16:9. dry wood soaking up oil like a sponge, grain turning rich and alive, macro. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "paso3_0",
+   "start": 543.28,
+   "dur": 5.11,
+   "kind": "raw",
+   "src": "vid/mr_paso3_retira.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "mr_paso3_retira",
+    "prompt": "Foto documental muy realista, 16:9. waiting then wiping the excess oil off with a dry cloth, shine turning matte, step three. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "paso3_1",
+   "start": 548.39,
+   "dur": 3.41,
+   "kind": "callout",
+   "image": "vid/mr_20min_reloj.mp4",
+   "figure": "20 min",
+   "caption": "Lo que no absorbió, afuera.",
+   "hue": "red"
+  },
+  {
+   "id": "paso4_0",
+   "start": 551.8,
+   "dur": 5.07,
+   "kind": "raw",
+   "src": "vid/mr_paso4_secar.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "mr_paso4_secar",
+    "prompt": "Foto documental muy realista, 16:9. a richly oiled restored wooden board drying overnight, deep warm color, workshop. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "paso4_1",
+   "start": 556.87,
+   "dur": 3.38,
+   "kind": "stat",
+   "value": 3,
+   "suffix": " manos",
+   "label": "para un deck o mueble que sufre, un día entre cada una",
+   "eyebrow": "Más capas, más fuerte",
+   "hue": "blue"
+  },
+  {
+   "id": "paso4_2",
+   "start": 560.25,
+   "dur": 5.07,
+   "kind": "raw",
+   "src": "vid/mr_capas_profundo.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "mr_capas_profundo",
+    "prompt": "Foto documental muy realista, 16:9. applying a second coat of oil, the wood getting deeper and richer in color, layered. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "todo_0",
+   "start": 565.32,
+   "dur": 5.32,
+   "kind": "quote",
+   "image": "img/mr_manos_abuelo.png",
+   "text": "Esto es lo que sabía *tu abuelo*.",
+   "at": "sabia tu abuelo",
+   "hue": "blue"
+  },
+  {
+   "id": "todo_1",
+   "start": 570.64,
+   "dur": 6.33,
+   "kind": "bars",
+   "title": "Cuánto dura",
+   "unit": "años",
+   "bars": [
+    {
+     "label": "Barniz de $30",
+     "value": 1,
+     "tone": "danger"
+    },
+    {
+     "label": "Aceite de linaza",
+     "value": 50,
+     "winner": true
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "ocultaron_0",
+   "start": 576.97,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "vid/mr_barniz_publicidad.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "mr_barniz_publicidad",
+    "prompt": "Foto documental muy realista, 16:9. a vintage 1930s advertisement feel for synthetic varnish, sepia, old print, no legible text. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "ocultaron_1",
+   "start": 580.59,
+   "dur": 2.9,
+   "kind": "aged",
+   "heading": "El secreto de los abuelos",
+   "lines": [
+    {
+     "text": "No lo prohibieron.",
+     "mark": true
+    },
+    {
+     "text": "Simplemente dejaron de enseñártelo."
+    }
+   ],
+   "image": "vid/mr_manual_viejo_cajon.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ocultaron_2",
+   "start": 583.49,
+   "dur": 2.42,
+   "kind": "callout",
+   "image": "vid/mr_1932_archivo.mp4",
+   "figure": "1932",
+   "caption": "Cuando llegó el barniz que había que recomprar.",
+   "hue": "blue"
+  },
+  {
+   "id": "sinteticos_0",
+   "start": 585.91,
+   "dur": 7.39,
+   "kind": "quote",
+   "image": "vid/mr_ferreteria_barniz.mp4",
+   "text": "Duraba demasiado. *No les servía*.",
+   "accent": "danger",
+   "hue": "red"
+  },
+  {
+   "id": "sinteticos_1",
+   "start": 593.3,
+   "dur": 10.55,
+   "kind": "raw",
+   "src": "vid/mr_barniz_recomprar.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "mr_barniz_recomprar",
+    "prompt": "Foto documental muy realista, 16:9. a peeling varnished surface that needs to be redone and rebought every year, worn. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sinteticos_2",
+   "start": 603.85,
+   "dur": 10.55,
+   "kind": "raw",
+   "src": "vid/mr_lata_sintetico.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "mr_lata_sintetico",
+    "prompt": "Foto documental muy realista, 16:9. a can of modern synthetic varnish on a shelf, industrial product, cold light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sinteticos_3",
+   "start": 614.4,
+   "dur": 10.55,
+   "kind": "raw",
+   "src": "vid/mr_pincel_barniz.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "mr_pincel_barniz",
+    "prompt": "Foto documental muy realista, 16:9. a brush applying glossy synthetic varnish that will peel in a year, close-up. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "coment_0",
+   "start": 624.95,
+   "dur": 8.78,
+   "kind": "raw",
+   "src": "img/mr_tomas_camara.png",
+   "hue": "blue",
+   "kicker": "¿Qué madera vas a salvar?",
+   "gen": {
+    "type": "image",
+    "name": "mr_tomas_camara",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, talking warmly to camera in his workshop, inviting, friendly, asking a question, en un taller rural con madera. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "coment_1",
+   "start": 633.73,
+   "dur": 5.85,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Contame"
+    },
+    {
+     "t": "qué"
+    },
+    {
+     "t": "madera"
+    },
+    {
+     "t": "salvaste",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Leo todos los comentarios",
+   "bg": "grid",
+   "hue": "amber"
+  },
+  {
+   "id": "cta2_0",
+   "start": 639.58,
+   "dur": 20.64,
+   "kind": "diagram",
+   "eyebrow": "Todo, ordenado y probado",
+   "slides": [
+    {
+     "image": "img/dg_mr_manual2.png",
+     "eyebrow": "La tabla de madera + otros 39 arreglos de $1"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "cta2_1",
+   "start": 660.22,
+   "dur": 8.6,
+   "kind": "chips",
+   "bg": "image",
+   "image": "vid/mr_tres_frascos_mesa.mp4",
+   "imageDarken": 0.62,
+   "title": "40 arreglos de $1 a $5",
+   "chips": [
+    "Termitas",
+    "Óxido",
+    "Moho",
+    "Goteras"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "cta2_2",
+   "start": 668.82,
+   "dur": 10.75,
+   "kind": "bars",
+   "title": "El valor",
+   "unit": "US$",
+   "bars": [
+    {
+     "label": "Por separado",
+     "value": 158,
+     "tone": "danger"
+    },
+    {
+     "label": "Hoy, lanzamiento",
+     "value": 27,
+     "winner": true
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "cta2_3",
+   "start": 679.57,
+   "dur": 9.03,
+   "kind": "quote",
+   "image": "vid/mr_manual_celular.mp4",
+   "text": "Con arreglar una gotera, *ya lo pagaste*.",
+   "accent": "good",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_0",
+   "start": 688.6,
+   "dur": 2.7,
+   "kind": "quote",
+   "image": "img/mr_j_nueva.png",
+   "text": "La independencia no se compra. Se *prepara con las manos*.",
+   "hue": "red"
+  },
+  {
+   "id": "cierre_1",
+   "start": 691.3,
+   "dur": 2.56,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Cuidá"
+    },
+    {
+     "t": "tu"
+    },
+    {
+     "t": "madera",
+     "hl": true
+    }
+   ],
+   "eyebrow": "La independencia se prepara con las manos",
+   "bg": "image",
+   "image": "vid/mr_madera_dorada.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cierre_2",
+   "start": 693.86,
+   "dur": 6.55,
+   "kind": "raw",
+   "src": "img/mr_tomas_firma.png",
+   "hue": "amber",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "mr_tomas_firma",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, looking warmly at camera at his workshop door with restored wood around him, closing the video, golden hour, en un taller rural con madera. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  }
+ ],
+ "extraImages": [
+  {
+   "name": "mr_mueble_exhibicion",
+   "prompt": "Foto documental muy realista, 16:9. a beautifully restored glossy old wooden chair looking like a showroom piece, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_botella_enterrada",
+   "prompt": "Foto documental muy realista, 16:9. a small old amber glass bottle of wood oil half buried in dirt, forgotten, dim light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_tres_frascos_mesa",
+   "prompt": "Foto documental muy realista, 16:9. three glass bottles on a rustic workshop table: white vinegar, boiled linseed oil, turpentine, natural light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_fibra_gris",
+   "prompt": "Foto documental muy realista, 16:9. extreme macro of dry gray weathered wood grain, raised dead fibers, no shine, cracked surface. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_aceite_absorbe",
+   "prompt": "Foto documental muy realista, 16:9. close-up of a brush spreading oil on porous wood, the wood drinking it in, grain darkening. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_puerta_cerrada",
+   "prompt": "Foto documental muy realista, 16:9. a close macro comparing two wood surfaces, one sealed and closed, one open and porous. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_etiqueta_boiled",
+   "prompt": "Foto documental muy realista, 16:9. close-up of a can of boiled linseed oil on a shelf, hardware store, warm light, no legible text. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_jarro_midiendo",
+   "prompt": "Foto documental muy realista, 16:9. hands measuring oil and turpentine into a glass jar in a workshop, careful pouring. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_cruda_vs_barniz",
+   "prompt": "Foto documental muy realista, 16:9. split comparison of two wood boards, one raw bare wood and one with shiny sealed varnish. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_banco_plaza",
+   "prompt": "Foto documental muy realista, 16:9. an old wooden park bench outdoors exposed to weather in a plaza, worn but standing. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_trapos_bollo",
+   "prompt": "Foto documental muy realista, 16:9. oily rags balled up in a metal bucket, a fire hazard, dim workshop corner. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_trapos_secos",
+   "prompt": "Foto documental muy realista, 16:9. flattened dried stiff rags laid outside safely after use, correct disposal. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_madera_humeda",
+   "prompt": "Foto documental muy realista, 16:9. a wet damp wooden board, water on the surface, the wrong moment to oil it. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_sentido_veta",
+   "prompt": "Foto documental muy realista, 16:9. brushing oil along the direction of the wood grain, close-up, the wood absorbing it. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_20min_reloj",
+   "prompt": "Foto documental muy realista, 16:9. an old clock on a workshop wall, oiled board waiting below. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_manos_abuelo",
+   "prompt": "Foto documental muy realista, 16:9. old weathered wise hands resting on a beautifully aged wooden surface, dignified. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_manual_viejo_cajon",
+   "prompt": "Foto documental muy realista, 16:9. an old wood-treatment recipe manual being shut away in a drawer, sepia, forgotten knowledge. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_1932_archivo",
+   "prompt": "Foto documental muy realista, 16:9. a sepia 1930s hardware store scene with rows of new synthetic varnish cans, vintage archival. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_ferreteria_barniz",
+   "prompt": "Foto documental muy realista, 16:9. shelves of shiny synthetic varnish cans in a modern hardware store, cold light, no legible text. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_manual_celular",
+   "prompt": "Foto documental muy realista, 16:9. a phone showing an open ebook home-repair manual on a wooden workbench, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_j_nueva",
+   "prompt": "Foto documental muy realista, 16:9. a fully restored rich glowing wooden surface like new, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "mr_madera_dorada",
+   "prompt": "Foto documental muy realista, 16:9. a beautiful richly restored wooden surface glowing in golden hour light, a hand touching the grain. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  }
+ ]
+}

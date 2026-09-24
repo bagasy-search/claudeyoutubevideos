@@ -1,0 +1,2103 @@
+{
+ "video": "impermeable",
+ "avatar": "impermeable_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 3.02,
+   "kind": "talk",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_1",
+   "start": 4.32,
+   "dur": 9.68,
+   "kind": "raw",
+   "src": "vid/im_agua_perla.mp4",
+   "hue": "blue",
+   "hold": true,
+   "gen": {
+    "type": "clip",
+    "image": "im_agua_perla",
+    "prompt": "Foto documental muy realista, 16:9. extreme macro of water poured onto a pine wood board beading up into round droplets and rolling off, the wood staying dry, hydrophobic. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 120
+   }
+  },
+  {
+   "id": "hook_2",
+   "start": 14,
+   "dur": 5.56,
+   "kind": "raw",
+   "src": "vid/im_gotas_ruedan.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "im_gotas_ruedan",
+    "prompt": "Foto documental muy realista, 16:9. close macro of water droplets sliding off a treated wood surface like off marble, not soaking in. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "hook_3",
+   "start": 19.56,
+   "dur": 5.56,
+   "kind": "raw",
+   "src": "vid/im_pino_corralon.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_pino_corralon",
+    "prompt": "Foto documental muy realista, 16:9. cheap pine boards stacked at a hardware store, common lumber. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_4",
+   "start": 25.12,
+   "dur": 7.08,
+   "kind": "raw",
+   "src": "vid/im_tabla_hinchada.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_tabla_hinchada",
+    "prompt": "Foto documental muy realista, 16:9. a piece of pine wood swelling, going dark and rotting after soaking up water, ruined. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "hook_5",
+   "start": 32.2,
+   "dur": 12.75,
+   "kind": "raw",
+   "src": "vid/im_frasco_silicona.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_frasco_silicona",
+    "prompt": "Foto documental muy realista, 16:9. a cartridge of silicone and a can of solvent on a rustic workshop table, cheap materials. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_6",
+   "start": 44.95,
+   "dur": 12.76,
+   "kind": "raw",
+   "src": "vid/im_pincelada_seca.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "im_pincelada_seca",
+    "prompt": "Foto documental muy realista, 16:9. brushing the mix on wood, drying in minutes, quick and easy. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "hook_7",
+   "start": 57.71,
+   "dur": 12.75,
+   "kind": "raw",
+   "src": "vid/im_gondola_cara.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_gondola_cara",
+    "prompt": "Foto documental muy realista, 16:9. a store shelf of expensive branded waterproofing sprays with price tags. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_8",
+   "start": 70.46,
+   "dur": 2.53,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Impermeabiliza"
+    },
+    {
+     "t": "TODO"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "5"
+    },
+    {
+     "t": "minutos",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Menos de dos pesos",
+   "bg": "image",
+   "image": "vid/im_hook_super.mp4",
+   "at": "impermeabilizar la madera",
+   "hue": "red"
+  },
+  {
+   "id": "hook_9",
+   "start": 72.99,
+   "dur": 3.81,
+   "kind": "raw",
+   "src": "vid/im_carton_hook.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_carton_hook",
+    "prompt": "Foto documental muy realista, 16:9. water beading off a treated cardboard box, staying dry. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_10",
+   "start": 76.8,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "vid/im_botas_hook.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_botas_hook",
+    "prompt": "Foto documental muy realista, 16:9. water rolling off treated leather work boots. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_11",
+   "start": 80.6,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "img/im_tomas_hook.png",
+   "hue": "red",
+   "kicker": "El invento de $2",
+   "gen": {
+    "type": "image",
+    "name": "im_tomas_hook",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, holding a jar of homemade waterproofing mix, pouring water on a board that repels it, confident, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "entender_0",
+   "start": 84.4,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "img/im_tomas_serio.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_tomas_serio",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, leaning to camera explaining something important in his workshop, serious, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "entender_1",
+   "start": 87.85,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "vid/im_cerca_podrida.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_cerca_podrida",
+    "prompt": "Foto documental muy realista, 16:9. an old gray rotting wooden fence in a yard. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "entender_2",
+   "start": 91.3,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "vid/im_deck_gris.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "im_deck_gris",
+    "prompt": "Foto documental muy realista, 16:9. a gray weathered wooden deck lifting and warping, damaged by weather. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "entender_3",
+   "start": 94.74,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "vid/im_puerta_hinchada.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_puerta_hinchada",
+    "prompt": "Foto documental muy realista, 16:9. a swollen wooden shed door that won't close, jammed in its frame in winter. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "entender_4",
+   "start": 98.19,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "vid/im_carton_humedo.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_carton_humedo",
+    "prompt": "Foto documental muy realista, 16:9. a soggy cardboard box falling apart from damp in a storeroom. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "entender_5",
+   "start": 101.64,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "vid/im_lona_picada.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "im_lona_picada",
+    "prompt": "Foto documental muy realista, 16:9. an old canvas tarp pitted and rotting from moisture, torn. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "entender_6",
+   "start": 105.09,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "vid/im_botas_empapadas.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_botas_empapadas",
+    "prompt": "Foto documental muy realista, 16:9. wet work boots soaked through, dripping. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "entender_7",
+   "start": 108.54,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "vid/im_herramienta_oxida.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "im_herramienta_oxida",
+    "prompt": "Foto documental muy realista, 16:9. a metal tool rusting from humidity in a shed. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "entender_8",
+   "start": 111.98,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "vid/im_pared_salitre.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_pared_salitre",
+    "prompt": "Foto documental muy realista, 16:9. a house wall with rising damp and white saltpeter stains. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "entender_9",
+   "start": 115.43,
+   "dur": 2.53,
+   "kind": "splitlist",
+   "title": "Todo lo arruina el agua",
+   "items": [
+    "Madera que se pudre",
+    "Carton que se deshace",
+    "Tela que se pica",
+    "Metal que se oxida"
+   ],
+   "palette": "D",
+   "hue": "blue"
+  },
+  {
+   "id": "entender_10",
+   "start": 117.96,
+   "dur": 6.73,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Un"
+    },
+    {
+     "t": "solo"
+    },
+    {
+     "t": "culpable:"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "agua",
+     "hl": true
+    }
+   ],
+   "eyebrow": "El 90% de lo que se arruina",
+   "bg": "image",
+   "image": "vid/im_agua_culpable.mp4",
+   "at": "un solo culpable",
+   "hue": "red"
+  },
+  {
+   "id": "entender_11",
+   "start": 124.69,
+   "dur": 16.17,
+   "kind": "diagram",
+   "eyebrow": "El secreto del maestro carpintero",
+   "slides": [
+    {
+     "image": "img/dg_im_secar.png",
+     "eyebrow": "La madera se pudre cuando queda mojada, no por mojarse"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "entender_12",
+   "start": 140.86,
+   "dur": 10.1,
+   "kind": "raw",
+   "src": "vid/im_poste_podrido_abajo.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_poste_podrido_abajo",
+    "prompt": "Foto documental muy realista, 16:9. a wooden fence post rotted only at the buried base, sound above ground. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "entender_13",
+   "start": 150.96,
+   "dur": 33.4,
+   "kind": "quote",
+   "image": "vid/im_maestro_manos.mp4",
+   "text": "La madera se pudre cuando *queda mojada*.",
+   "at": "queda mojada",
+   "hue": "red"
+  },
+  {
+   "id": "mezcla_0",
+   "start": 184.36,
+   "dur": 7.62,
+   "kind": "splitlist",
+   "title": "Solo dos cosas",
+   "items": [
+    "Silicona de cartucho",
+    "Disolvente universal"
+   ],
+   "palette": "A",
+   "hue": "red"
+  },
+  {
+   "id": "mezcla_1",
+   "start": 191.98,
+   "dur": 9.01,
+   "kind": "half",
+   "src": "vid/im_silicona_cartucho.mp4",
+   "side": "right",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_silicona_cartucho",
+    "prompt": "Foto documental muy realista, 16:9. a common silicone cartridge tube on a workshop table. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   },
+   "kicker": "1 · Silicona (la mas barata)"
+  },
+  {
+   "id": "mezcla_2",
+   "start": 200.99,
+   "dur": 9.01,
+   "kind": "half",
+   "src": "vid/im_disolvente.mp4",
+   "side": "right",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_disolvente",
+    "prompt": "Foto documental muy realista, 16:9. a can of universal solvent / mineral spirits on a shelf. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   },
+   "kicker": "2 · Disolvente universal"
+  },
+  {
+   "id": "mezcla_3",
+   "start": 210,
+   "dur": 10.4,
+   "kind": "raw",
+   "src": "vid/im_poner_silicona.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_poner_silicona",
+    "prompt": "Foto documental muy realista, 16:9. squeezing silicone from the cartridge into a glass jar. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "mezcla_4",
+   "start": 220.4,
+   "dur": 4.68,
+   "kind": "raw",
+   "src": "vid/im_agregar_disolvente.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "im_agregar_disolvente",
+    "prompt": "Foto documental muy realista, 16:9. pouring universal solvent into the jar with the silicone. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "mezcla_5",
+   "start": 225.08,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "vid/im_revolver_frasco.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_revolver_frasco",
+    "prompt": "Foto documental muy realista, 16:9. stirring silicone dissolving into solvent in a glass jar with a stick until it turns liquid like milk. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "mezcla_6",
+   "start": 229.77,
+   "dur": 4.68,
+   "kind": "raw",
+   "src": "vid/im_pegote_silicona.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_pegote_silicona",
+    "prompt": "Foto documental muy realista, 16:9. the silicone still a sticky blob at first before it dissolves. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "mezcla_7",
+   "start": 234.45,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "vid/im_liquido_listo.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_liquido_listo",
+    "prompt": "Foto documental muy realista, 16:9. the finished milky liquid waterproofing mix, ready to brush, right consistency. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "mezcla_8",
+   "start": 239.14,
+   "dur": 4.06,
+   "kind": "annotated",
+   "image": "img/im_poner_silicona.png",
+   "eyebrow": "Dos cosas, nada mas",
+   "caption": "Silicona de cartucho + disolvente universal",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 40,
+     "y": 50,
+     "label": "Silicona"
+    },
+    {
+     "kind": "arrow",
+     "x": 70,
+     "y": 45,
+     "label": "Disolvente"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "mezcla_9",
+   "start": 243.2,
+   "dur": 33.31,
+   "kind": "callout",
+   "image": "vid/im_consistencia_leche.mp4",
+   "figure": "1 : 3",
+   "caption": "Una parte de silicona, tres o cuatro de disolvente.",
+   "at": "una parte de silicona",
+   "hue": "red"
+  },
+  {
+   "id": "seguridad1_0",
+   "start": 276.51,
+   "dur": 13.16,
+   "kind": "checklist",
+   "title": "El disolvente es INFLAMABLE",
+   "items": [
+    {
+     "text": "Lugar ventilado, puerta abierta",
+     "state": "done"
+    },
+    {
+     "text": "Lejos de toda llama o chispa",
+     "state": "done"
+    },
+    {
+     "text": "Guantes puestos",
+     "state": "done"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "seguridad1_1",
+   "start": 289.67,
+   "dur": 16.46,
+   "kind": "raw",
+   "src": "vid/im_ventilado.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_ventilado",
+    "prompt": "Foto documental muy realista, 16:9. gloved hands working with solvent near an open workshop door, fresh air, safe. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "ciencia_0",
+   "start": 306.13,
+   "dur": 14.38,
+   "kind": "diagram",
+   "eyebrow": "Por que el agua no se moja",
+   "slides": [
+    {
+     "image": "img/dg_im_capilar.png",
+     "eyebrow": "Sin tratar: el agua penetra y pudre"
+    },
+    {
+     "image": "img/dg_im_perla.png",
+     "eyebrow": "Con la pelicula: el agua se hace bolita y rueda"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "ciencia_1",
+   "start": 320.51,
+   "dur": 8.75,
+   "kind": "raw",
+   "src": "vid/im_capilaridad.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "im_capilaridad",
+    "prompt": "Foto documental muy realista, 16:9. macro of water being sucked into porous wood grain like a sponge, capillarity soaking in. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "ciencia_2",
+   "start": 329.26,
+   "dur": 7.58,
+   "kind": "annotated",
+   "image": "img/im_capilaridad.png",
+   "eyebrow": "El agua entra por capilaridad",
+   "caption": "Se mete en los poros y hincha la fibra",
+   "annotations": [
+    {
+     "kind": "arrow",
+     "x": 45,
+     "y": 40,
+     "label": "El agua penetra"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "ciencia_3",
+   "start": 336.84,
+   "dur": 8.75,
+   "kind": "raw",
+   "src": "vid/im_fibra_hincha.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_fibra_hincha",
+    "prompt": "Foto documental muy realista, 16:9. close macro of wood fiber swelling and softening after absorbing water. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ciencia_4",
+   "start": 345.59,
+   "dur": 14.66,
+   "kind": "raw",
+   "src": "vid/im_gota_bolita.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "im_gota_bolita",
+    "prompt": "Foto documental muy realista, 16:9. a water droplet pulling itself into a perfect round bead on a slippery surface. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "ciencia_5",
+   "start": 360.25,
+   "dur": 7.19,
+   "kind": "raw",
+   "src": "vid/im_hoja_loto.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "im_hoja_loto",
+    "prompt": "Foto documental muy realista, 16:9. macro of water beading on a lotus leaf, perfect round droplets rolling off, nature's hydrophobic surface. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "ciencia_6",
+   "start": 367.44,
+   "dur": 7.19,
+   "kind": "raw",
+   "src": "vid/im_repollo_rocio.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_repollo_rocio",
+    "prompt": "Foto documental muy realista, 16:9. dew beading into perfect drops on a cabbage leaf, nature's water repellent. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ciencia_7",
+   "start": 374.63,
+   "dur": 5.99,
+   "kind": "cross",
+   "title": "Que pasa en la superficie",
+   "eyebrow": "Capa por capa",
+   "layers": [
+    {
+     "label": "Pelicula impermeable (el agua rueda)",
+     "color": "#6F8478",
+     "weight": 1
+    },
+    {
+     "label": "Fibra de la madera (sellada)",
+     "color": "#A9794A",
+     "weight": 3
+    },
+    {
+     "label": "Madera sana adentro",
+     "color": "#6E8B47",
+     "weight": 2
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "ciencia_8",
+   "start": 380.62,
+   "dur": 7.19,
+   "kind": "raw",
+   "src": "vid/im_veta_plastico.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_veta_plastico",
+    "prompt": "Foto documental muy realista, 16:9. a treated wood surface where water beads like on plastic or marble, looks sealed. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ciencia_9",
+   "start": 387.81,
+   "dur": 4.79,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Parece"
+    },
+    {
+     "t": "plastico."
+    },
+    {
+     "t": "Es"
+    },
+    {
+     "t": "madera",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Abajo, tu tabla de dos pesos",
+   "bg": "image",
+   "image": "vid/im_parece_marmol.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "velocidad_0",
+   "start": 392.6,
+   "dur": 18.57,
+   "kind": "bars",
+   "title": "Cuanto tarda en secar",
+   "unit": "h",
+   "bars": [
+    {
+     "label": "Barniz / pintura",
+     "value": 24,
+     "tone": "danger"
+    },
+    {
+     "label": "Este invento",
+     "value": 1,
+     "winner": true
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "velocidad_1",
+   "start": 411.17,
+   "dur": 6.65,
+   "kind": "raw",
+   "src": "vid/im_seca_rapido.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "im_seca_rapido",
+    "prompt": "Foto documental muy realista, 16:9. a freshly brushed waterproofed board drying in minutes, solvent flashing off. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "velocidad_2",
+   "start": 417.82,
+   "dur": 4.43,
+   "kind": "stat",
+   "value": 5,
+   "suffix": " min",
+   "label": "y ya esta seco al tacto y listo para el agua",
+   "eyebrow": "Velocidad",
+   "hue": "blue"
+  },
+  {
+   "id": "velocidad_3",
+   "start": 422.25,
+   "dur": 4.43,
+   "kind": "chips",
+   "bg": "image",
+   "image": "vid/im_seca_rapido.mp4",
+   "imageDarken": 0.6,
+   "title": "Vs 24 horas del barniz",
+   "chips": [
+    "Se evapora",
+    "Seca solo",
+    "Listo para el agua"
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "velocidad_4",
+   "start": 426.68,
+   "dur": 4.87,
+   "kind": "process",
+   "title": "Como se aplica",
+   "eyebrow": "Simple",
+   "steps": [
+    {
+     "title": "Preparar",
+     "desc": "silicona + disolvente",
+     "image": "img/im_p_preparar.png"
+    },
+    {
+     "title": "Pincelar",
+     "desc": "una mano finita",
+     "image": "img/im_p_pincelar.png"
+    },
+    {
+     "title": "Secar",
+     "desc": "5-10 minutos",
+     "image": "img/im_p_secar.png"
+    },
+    {
+     "title": "2a mano",
+     "desc": "si sufre mucho",
+     "image": "img/im_p_segunda.png"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "velocidad_5",
+   "start": 431.55,
+   "dur": 6.65,
+   "kind": "raw",
+   "src": "vid/im_mano_pareja.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_mano_pareja",
+    "prompt": "Foto documental muy realista, 16:9. brushing a thin even coat of the mix onto wood with a brush. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "demo_0",
+   "start": 438.2,
+   "dur": 18.62,
+   "kind": "raw",
+   "src": "vid/im_media_tabla.mp4",
+   "hue": "amber",
+   "hold": true,
+   "gen": {
+    "type": "clip",
+    "image": "im_media_tabla",
+    "prompt": "Foto documental muy realista, 16:9. a board treated on only half, water poured across both halves: beads off the treated half, soaks the raw half, clear boundary line. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 120
+   }
+  },
+  {
+   "id": "demo_1",
+   "start": 456.82,
+   "dur": 1.95,
+   "kind": "raw",
+   "src": "vid/im_echar_agua.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_echar_agua",
+    "prompt": "Foto documental muy realista, 16:9. pouring water across both halves of a board, the moment of the test. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "demo_2",
+   "start": 458.77,
+   "dur": 4.59,
+   "kind": "annotated",
+   "image": "img/im_frontera.png",
+   "eyebrow": "La frontera que convence",
+   "caption": "Tratada resbala · cruda se empapa",
+   "annotations": [
+    {
+     "kind": "arrow",
+     "x": 30,
+     "y": 45,
+     "label": "Cruda: empapa"
+    },
+    {
+     "kind": "arrow",
+     "x": 70,
+     "y": 45,
+     "label": "Tratada: resbala"
+    }
+   ],
+   "at": "mira la frontera",
+   "hue": "red"
+  },
+  {
+   "id": "demo_3",
+   "start": 463.36,
+   "dur": 5.29,
+   "kind": "raw",
+   "src": "vid/im_mitad_cruda.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_mitad_cruda",
+    "prompt": "Foto documental muy realista, 16:9. the raw untreated half of the board darkened and soaked with water. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "demo_4",
+   "start": 468.65,
+   "dur": 5.29,
+   "kind": "raw",
+   "src": "vid/im_gotas_bonitas.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_gotas_bonitas",
+    "prompt": "Foto documental muy realista, 16:9. beautiful round water droplets sitting on the treated half of the board, catching light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "demo_5",
+   "start": 473.94,
+   "dur": 13.23,
+   "kind": "raw",
+   "src": "vid/im_dedo_seco.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "im_dedo_seco",
+    "prompt": "Foto documental muy realista, 16:9. a finger wiping the treated half of the board, coming away dry. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "demo_6",
+   "start": 487.17,
+   "dur": 13.23,
+   "kind": "raw",
+   "src": "vid/im_misma_tabla.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_misma_tabla",
+    "prompt": "Foto documental muy realista, 16:9. the same board, same water, only one half protected, the convincing comparison. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_madera_0",
+   "start": 500.4,
+   "dur": 11.93,
+   "kind": "raw",
+   "src": "img/im_tomas_superficies.png",
+   "hue": "blue",
+   "kicker": "Superficie por superficie",
+   "gen": {
+    "type": "image",
+    "name": "im_tomas_superficies",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, gesturing at a table full of different materials to waterproof, enthusiastic, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_madera_1",
+   "start": 512.33,
+   "dur": 11.92,
+   "kind": "raw",
+   "src": "vid/im_sf_deck.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "im_sf_deck",
+    "prompt": "Foto documental muy realista, 16:9. a weathered wooden deck being brushed with the mix, water later beading off. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "sf_madera_2",
+   "start": 524.25,
+   "dur": 11.93,
+   "kind": "raw",
+   "src": "vid/im_sf_aglomerado.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_aglomerado",
+    "prompt": "Foto documental muy realista, 16:9. particle board swelling and abombing with a single drop of water, the most delicate wood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_madera_3",
+   "start": 536.18,
+   "dur": 11.93,
+   "kind": "raw",
+   "src": "vid/im_sf_aglomerado_ok.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_sf_aglomerado_ok",
+    "prompt": "Foto documental muy realista, 16:9. the same particle board treated, now repelling water like nothing. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "sf_madera_4",
+   "start": 548.11,
+   "dur": 7.95,
+   "kind": "chips",
+   "bg": "image",
+   "image": "vid/im_sf_deck.mp4",
+   "imageDarken": 0.6,
+   "title": "Toda madera a la intemperie",
+   "chips": [
+    "Deck y cerca",
+    "Postes",
+    "Muebles de patio",
+    "Mangos de herramientas"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "sf_carton_0",
+   "start": 556.06,
+   "dur": 24.94,
+   "kind": "raw",
+   "src": "vid/im_sf_carton_aislante.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_carton_aislante",
+    "prompt": "Foto documental muy realista, 16:9. stacks of cardboard as a free insulation material, cheap and abundant. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_carton_1",
+   "start": 581,
+   "dur": 15.93,
+   "kind": "raw",
+   "src": "vid/im_sf_carton_agua.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "im_sf_carton_agua",
+    "prompt": "Foto documental muy realista, 16:9. water beading and rolling off a treated cardboard box, staying dry and firm. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "sf_carton_2",
+   "start": 596.93,
+   "dur": 15.94,
+   "kind": "raw",
+   "src": "vid/im_sf_carton_crudo.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_sf_carton_crudo",
+    "prompt": "Foto documental muy realista, 16:9. raw cardboard soaking up water, going soft, swelling and falling apart, ruined. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "sf_carton_3",
+   "start": 612.87,
+   "dur": 15.93,
+   "kind": "raw",
+   "src": "vid/im_sf_carton_seco.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_carton_seco",
+    "prompt": "Foto documental muy realista, 16:9. the treated cardboard lifted up completely dry after water, amazing. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_papel_0",
+   "start": 628.8,
+   "dur": 15.47,
+   "kind": "raw",
+   "src": "vid/im_sf_papel_gotas.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "im_sf_papel_gotas",
+    "prompt": "Foto documental muy realista, 16:9. water droplets sliding off a treated sheet of paper like off glass. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "sf_papel_1",
+   "start": 644.27,
+   "dur": 15.46,
+   "kind": "raw",
+   "src": "vid/im_sf_papel_etiquetas.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_papel_etiquetas",
+    "prompt": "Foto documental muy realista, 16:9. waterproofed garden plant labels and seed packets surviving the rain. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_papel_2",
+   "start": 659.73,
+   "dur": 15.47,
+   "kind": "raw",
+   "src": "vid/im_sf_papel_crudo.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "im_sf_papel_crudo",
+    "prompt": "Foto documental muy realista, 16:9. raw paper getting two drops, sticking, wrinkling and tearing. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "sf_tela_0",
+   "start": 675.2,
+   "dur": 20.6,
+   "kind": "raw",
+   "src": "vid/im_sf_lona.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_sf_lona",
+    "prompt": "Foto documental muy realista, 16:9. a waxed canvas tarp repelling rain, water rolling off the fabric. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "sf_tela_1",
+   "start": 695.8,
+   "dur": 20.6,
+   "kind": "raw",
+   "src": "vid/im_sf_encerado.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_encerado",
+    "prompt": "Foto documental muy realista, 16:9. old sailors in waxed oilskin capes and a waxed cotton work jacket, sepia history. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_tela_2",
+   "start": 716.4,
+   "dur": 20.6,
+   "kind": "raw",
+   "src": "vid/im_sf_toldo.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_toldo",
+    "prompt": "Foto documental muy realista, 16:9. a canvas awning and truck tarp shedding rain, waterproof fabric. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_cuero_0",
+   "start": 737,
+   "dur": 15.2,
+   "kind": "raw",
+   "src": "vid/im_sf_botas.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "im_sf_botas",
+    "prompt": "Foto documental muy realista, 16:9. leather work boots being waterproofed, water beading off, the foot staying dry. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "sf_cuero_1",
+   "start": 752.2,
+   "dur": 15.2,
+   "kind": "raw",
+   "src": "vid/im_sf_cuero_cera.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_cuero_cera",
+    "prompt": "Foto documental muy realista, 16:9. beeswax and grease being rubbed into leather boots, feeding and sealing them. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_cuero_2",
+   "start": 767.4,
+   "dur": 15.2,
+   "kind": "raw",
+   "src": "vid/im_sf_montura.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_montura",
+    "prompt": "Foto documental muy realista, 16:9. a leather saddle, belt and gloves treated against water. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_barro_0",
+   "start": 782.6,
+   "dur": 20.2,
+   "kind": "raw",
+   "src": "vid/im_sf_maceta_rajada.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_maceta_rajada",
+    "prompt": "Foto documental muy realista, 16:9. a terracotta pot cracked apart by frost after soaking up water. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_barro_1",
+   "start": 802.8,
+   "dur": 8.48,
+   "kind": "raw",
+   "src": "vid/im_sf_maceta_repele.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_sf_maceta_repele",
+    "prompt": "Foto documental muy realista, 16:9. a treated terracotta pot repelling water, no longer cracking in frost. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "sf_barro_2",
+   "start": 811.28,
+   "dur": 8.49,
+   "kind": "raw",
+   "src": "vid/im_sf_ladrillo.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_ladrillo",
+    "prompt": "Foto documental muy realista, 16:9. an exposed brick wall and porous concrete floor repelling water after treatment. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "sf_metal_0",
+   "start": 819.77,
+   "dur": 18.85,
+   "kind": "raw",
+   "src": "vid/im_sf_metal_film.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_sf_metal_film",
+    "prompt": "Foto documental muy realista, 16:9. a thin film coating a saw blade and hand tool to stop rust, workshop. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "sf_metal_1",
+   "start": 838.62,
+   "dur": 18.85,
+   "kind": "raw",
+   "src": "vid/im_sf_herramientas.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_sf_herramientas",
+    "prompt": "Foto documental muy realista, 16:9. tools stored for winter with a wax coat, rust-free next year. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "metodos_0",
+   "start": 857.47,
+   "dur": 21.17,
+   "kind": "raw",
+   "src": "img/im_tomas_metodos.png",
+   "hue": "red",
+   "kicker": "Un metodo para cada uso",
+   "gen": {
+    "type": "image",
+    "name": "im_tomas_metodos",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, showing several jars of different homemade waterproofing methods on a table, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "metodos_1",
+   "start": 878.64,
+   "dur": 84.7,
+   "kind": "scrolldoc",
+   "panels": [
+    {
+     "eyebrow": "El estrella",
+     "heading": "Silicona + disolvente",
+     "body": "una vela común o cera de abeja en agua rastibio, con muchísimo cuidado porque es inflamable, siempre a baño María, nunca al fuego directo.",
+     "media": "vid/im_m_silicona.mp4"
+    },
+    {
+     "eyebrow": "Natural",
+     "heading": "Cera disuelta",
+     "body": "de linaza. Derretís cera de abeja, la mezclás con aceite de linaza y te queda una pasta, una manteca de madera. Esa pasta la",
+     "media": "vid/im_m_cera.mp4"
+    },
+    {
+     "eyebrow": "Para lo que tocas",
+     "heading": "Cera de abeja + aceite",
+     "body": "Sin olor a solvente, sin tóxicos. Metodo 4, para restaurar además de impermeabilizar, aceite de linaza con trementina.",
+     "media": "vid/im_m_ceraaceite.mp4"
+    },
+    {
+     "eyebrow": "Para restaurar",
+     "heading": "Aceite de linaza + trementina",
+     "body": "un video entero, pero quédate con esto. El aceite penetra y restaura, la silicona sella por arriba y repele. Para madera",
+     "media": "vid/im_m_linaza.mp4"
+    }
+   ]
+  },
+  {
+   "id": "metodos_2",
+   "start": 963.34,
+   "dur": 15.53,
+   "kind": "splitlist",
+   "title": "El criterio",
+   "items": [
+    "Rapido y barato: silicona",
+    "Comida o piel: cera+aceite",
+    "Madera vieja: linaza",
+    "Cuero: cera o grasa"
+   ],
+   "palette": "G",
+   "hue": "blue"
+  },
+  {
+   "id": "usos_0",
+   "start": 978.87,
+   "dur": 17.82,
+   "kind": "raw",
+   "src": "vid/im_u_mimbre.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_u_mimbre",
+    "prompt": "Foto documental muy realista, 16:9. a wicker basket and straw hat treated to repel rain. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "usos_1",
+   "start": 996.69,
+   "dur": 17.81,
+   "kind": "raw",
+   "src": "vid/im_u_soga.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "im_u_soga",
+    "prompt": "Foto documental muy realista, 16:9. a natural fiber rope treated to resist moisture, outdoors. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "usos_2",
+   "start": 1014.5,
+   "dur": 17.82,
+   "kind": "raw",
+   "src": "vid/im_u_bote.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_u_bote",
+    "prompt": "Foto documental muy realista, 16:9. a small wooden boat and oar being waterproofed with the mix. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "usos_3",
+   "start": 1032.32,
+   "dur": 17.82,
+   "kind": "raw",
+   "src": "vid/im_u_adobe.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_u_adobe",
+    "prompt": "Foto documental muy realista, 16:9. an adobe mud wall protected from rain, still breathing. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "usos_4",
+   "start": 1050.14,
+   "dur": 17.81,
+   "kind": "raw",
+   "src": "vid/im_u_colmena.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_u_colmena",
+    "prompt": "Foto documental muy realista, 16:9. a wooden beehive, chicken coop and tool handles treated against water. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "usos_5",
+   "start": 1067.95,
+   "dur": 11.88,
+   "kind": "chips",
+   "bg": "image",
+   "image": "vid/im_u_mimbre.mp4",
+   "imageDarken": 0.6,
+   "title": "Cualquier cosa porosa",
+   "chips": [
+    "Mimbre y paja",
+    "Soga",
+    "Bote",
+    "Adobe"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "faq_0",
+   "start": 1079.83,
+   "dur": 32.96,
+   "kind": "raw",
+   "src": "img/im_tomas_faq.png",
+   "hue": "blue",
+   "kicker": "Las dudas, una por una",
+   "gen": {
+    "type": "image",
+    "name": "im_tomas_faq",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, sitting relaxed answering questions to camera in his workshop, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "faq_1",
+   "start": 1112.79,
+   "dur": 21.97,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Las"
+    },
+    {
+     "t": "dudas"
+    },
+    {
+     "t": "reales"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "te"
+    },
+    {
+     "t": "frenan",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Una por una",
+   "bg": "grid",
+   "hue": "amber"
+  },
+  {
+   "id": "faq_2",
+   "start": 1134.76,
+   "dur": 131.84,
+   "kind": "scrolldoc",
+   "panels": [
+    {
+     "eyebrow": "Duracion",
+     "heading": "Cuanto dura?",
+     "body": "de la gota es tu tablero de control, la haces en dos segundos. Tercera, ¿aguanta el sol? ¿No se reseca? Aguanta",
+     "media": "vid/im_q_dura.mp4"
+    },
+    {
+     "eyebrow": "La prueba de la gota",
+     "heading": "Cuando renovar?",
+     "body": "feas, y tenés que lijar todo para arreglarlo. Esto no se descascara, simplemente se va gastando parejo. Y renovarlo es dar otra mano encima, sin",
+     "media": "vid/im_q_renovar.mp4"
+    },
+    {
+     "eyebrow": "El sol",
+     "heading": "Aguanta el sol?",
+     "body": "con la humedad, ninguna película dura para siempre, porque es el ataque más bravo que existe. Para los postes, lo mejor es combinar. Tratás",
+     "media": "vid/im_q_sol.mp4"
+    },
+    {
+     "eyebrow": "Bajo tierra",
+     "heading": "Sirve enterrado?",
+     "body": "la única. Quinta, ¿cuándo seca es tóxico? ¿Puedo tenerlo cerca de las plantas, de los animales? Cuando el disolvente se",
+     "media": "vid/im_q_enterrado.mp4"
+    },
+    {
+     "eyebrow": "Cuando seca",
+     "heading": "Es toxico?",
+     "body": "el disolvente. Una vez seco y aireado, para un gallinero o una maceta, no hay drama. Pero repito, para lo que toca comida directamente,",
+     "media": "vid/im_q_toxico.mp4"
+    },
+    {
+     "eyebrow": "Sobre pintura",
+     "heading": "Sobre barniz viejo?",
+     "body": "sí, le da una capa que repele agua encima. Pero si la pintura vieja está descascarada, saltada, primero hay que sacarlo suelto, porque",
+     "media": "vid/im_q_pintura.mp4"
+    },
+    {
+     "eyebrow": "El auto",
+     "heading": "Sirve para vidrios?",
+     "body": "parabrisas? Mira, la idea es la misma, la de que el agua rebote, y hay productos específicos para vidrio que hacen justo eso. Pero para el auto, usa el producto de vidrio,",
+     "media": "vid/im_q_auto.mp4"
+    }
+   ]
+  },
+  {
+   "id": "plata_0",
+   "start": 1266.6,
+   "dur": 18.23,
+   "kind": "bars",
+   "title": "Lo que ahorras",
+   "unit": "US$",
+   "bars": [
+    {
+     "label": "Impermeabilizante de marca",
+     "value": 40,
+     "tone": "danger"
+    },
+    {
+     "label": "Casero (litros)",
+     "value": 2,
+     "winner": true
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "plata_1",
+   "start": 1284.83,
+   "dur": 21.88,
+   "kind": "raw",
+   "src": "vid/im_gondola_frascos.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_gondola_frascos",
+    "prompt": "Foto documental muy realista, 16:9. a hardware store shelf full of expensive branded waterproofing sprays. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "plata_2",
+   "start": 1306.71,
+   "dur": 15.32,
+   "kind": "quote",
+   "image": "vid/im_frasco_barato.mp4",
+   "text": "Un tarrito casero = *veinte frascos de marca*.",
+   "accent": "danger",
+   "at": "veinte frascos",
+   "hue": "blue"
+  },
+  {
+   "id": "trucos_0",
+   "start": 1322.03,
+   "dur": 98.72,
+   "kind": "scrolldoc",
+   "panels": [
+    {
+     "eyebrow": "Que dure meses",
+     "heading": "Guardar la mezcla",
+     "body": "trucos finos de artesano, de esos que hacen la diferencia entre que te salga bien y que te salga perfecto. Primero, ¿cómo guardar la mezcla? No prepares de a poquito",
+     "media": "vid/im_t_guardar.mp4"
+    },
+    {
+     "eyebrow": "Mate o satinado",
+     "heading": "El acabado",
+     "body": "cada vez que lo necesitas, lo revolvés un poco y a trabajar. Un frasco preparado es tener el impermeabilizante siempre listo. Segundo, el acabado.",
+     "media": "vid/im_t_acabado.mp4"
+    },
+    {
+     "eyebrow": "Dia templado",
+     "heading": "Temperatura y momento",
+     "body": "algo de trabajo, el brillo no importa. Para un mueble lindo, mezcla más suave y va a quedar natural. Tercero, la temperatura y el momento.",
+     "media": "vid/im_t_temperatura.mp4"
+    },
+    {
+     "eyebrow": "Mejor que pincel",
+     "heading": "El trapo",
+     "body": "suave después de aplicar, el sol tibio o un secador de pelo a distancia, ayuda a que la película se meta bien. Nunca calor fuerte ni llama,",
+     "media": "vid/im_t_trapo.mp4"
+    }
+   ]
+  },
+  {
+   "id": "trucos_1",
+   "start": 1420.75,
+   "dur": 16.45,
+   "kind": "callout",
+   "image": "vid/im_t_trapos_secar.mp4",
+   "figure": "OJO",
+   "caption": "Los trapos con solvente, extendidos afuera. Nunca en bollo.",
+   "accent": "danger",
+   "hue": "blue"
+  },
+  {
+   "id": "errores_0",
+   "start": 1437.2,
+   "dur": 104.2,
+   "kind": "scrolldoc",
+   "panels": [
+    {
+     "eyebrow": "Error 1",
+     "heading": "Mano demasiado gruesa",
+     "body": "Ahora los errores. Porque puedo darte la mejor mezcla del mundo, pero si la aplicás mal, no te va a funcionar, y vas a pensar que es mentira. Estos",
+     "media": "vid/im_e_gruesa.mp4"
+    },
+    {
+     "eyebrow": "Error 2",
+     "heading": "Superficie mojada o sucia",
+     "body": "y otra, protegen muchísimo más que una gruesa. La madera toma lo que necesita, el exceso solo hace desastre. Error 2. Aplicar sobre superficie",
+     "media": "vid/im_e_mojada.mp4"
+    },
+    {
+     "eyebrow": "Error 3",
+     "heading": "Pintar despues",
+     "body": "adentro, nunca. Error 3. Usarlo donde después vas a pintar o pegar. Ojo con esto. Una superficie tratada",
+     "media": "vid/im_e_pintar.mp4"
+    },
+    {
+     "eyebrow": "Error 4",
+     "heading": "En lo que toca comida",
+     "body": "Error 4. Usarlo en lo que toca comida o en interiores sin ventilar. Para la tabla de cortar, para la mesada de la cocina, para un juguete,",
+     "media": "vid/im_e_comida.mp4"
+    }
+   ]
+  },
+  {
+   "id": "ocultan_0",
+   "start": 1541.4,
+   "dur": 10.6,
+   "kind": "raw",
+   "src": "vid/im_barnices_publicidad.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "im_barnices_publicidad",
+    "prompt": "Foto documental muy realista, 16:9. shelves of shiny branded waterproofing products in a modern store, cold light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "ocultan_1",
+   "start": 1552,
+   "dur": 10.6,
+   "kind": "raw",
+   "src": "vid/im_spray_lindo.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_spray_lindo",
+    "prompt": "Foto documental muy realista, 16:9. a fancy branded waterproofing spray bottle with a nice label and a high price tag. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ocultan_2",
+   "start": 1562.6,
+   "dur": 10.59,
+   "kind": "raw",
+   "src": "vid/im_frasco_gasta.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_frasco_gasta",
+    "prompt": "Foto documental muy realista, 16:9. an expensive product that peels off after one season, needing rebuying. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ocultan_3",
+   "start": 1573.19,
+   "dur": 7.07,
+   "kind": "chips",
+   "bg": "image",
+   "image": "vid/im_spray_lindo.mp4",
+   "imageDarken": 0.62,
+   "title": "El negocio del reemplazo",
+   "chips": [
+    "Se descascara",
+    "Recomprás",
+    "Cada año"
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "ocultan_4",
+   "start": 1580.26,
+   "dur": 8.91,
+   "kind": "quote",
+   "image": "vid/im_industria.mp4",
+   "text": "Ellos viven de que *vuelvas a comprar*.",
+   "accent": "danger",
+   "at": "vuelvas a comprar",
+   "hue": "amber"
+  },
+  {
+   "id": "ocultan_5",
+   "start": 1589.17,
+   "dur": 12.74,
+   "kind": "raw",
+   "src": "vid/im_abuelo_lona.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_abuelo_lona",
+    "prompt": "Foto documental muy realista, 16:9. an old grandfather waterproofing a cart canvas with grease and wax for pennies, sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ocultan_6",
+   "start": 1601.91,
+   "dur": 8.49,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Las"
+    },
+    {
+     "t": "fabricas"
+    },
+    {
+     "t": "nos"
+    },
+    {
+     "t": "van"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "linchar",
+     "hl": true
+    }
+   ],
+   "eyebrow": "El dia que esto se sepa",
+   "bg": "image",
+   "image": "vid/im_linchar.mp4",
+   "at": "linchar",
+   "hue": "red"
+  },
+  {
+   "id": "historia_0",
+   "start": 1610.4,
+   "dur": 12.92,
+   "kind": "raw",
+   "src": "vid/im_h_barco.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "im_h_barco",
+    "prompt": "Foto documental muy realista, 16:9. an old sailing ship hull being sealed with pitch and tar, sepia vintage feel. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_1",
+   "start": 1623.32,
+   "dur": 12.91,
+   "kind": "raw",
+   "src": "vid/im_h_encerado.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "im_h_encerado",
+    "prompt": "Foto documental muy realista, 16:9. old sailors in waxed oilskin capes in a storm, sepia archival. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_2",
+   "start": 1636.23,
+   "dur": 12.92,
+   "kind": "raw",
+   "src": "vid/im_h_gaucho.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "im_h_gaucho",
+    "prompt": "Foto documental muy realista, 16:9. a gaucho curing leather boots and saddle with grease and tallow, rural sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_3",
+   "start": 1649.15,
+   "dur": 8.61,
+   "kind": "chips",
+   "bg": "image",
+   "image": "vid/im_h_barco.mp4",
+   "imageDarken": 0.62,
+   "title": "Lo NUEVO es el spray caro",
+   "chips": [
+    "Brea: 5000 anos",
+    "Cera: milenios",
+    "Spray: ayer"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "historia_4",
+   "start": 1657.76,
+   "dur": 9.48,
+   "kind": "splitlist",
+   "title": "Cinco mil anos ganandole al agua",
+   "items": [
+    "Brea en los barcos",
+    "Cera de abeja",
+    "Aceite y grasa",
+    "Sebo en el cuero"
+   ],
+   "palette": "A",
+   "hue": "blue"
+  },
+  {
+   "id": "historia_5",
+   "start": 1667.24,
+   "dur": 10.33,
+   "kind": "aged",
+   "heading": "Cinco mil anos ganandole al agua",
+   "lines": [
+    {
+     "text": "Brea, cera, aceite, grasa.",
+     "mark": true
+    },
+    {
+     "text": "El spray caro de la ferreteria es lo NUEVO."
+    }
+   ],
+   "image": "vid/im_h_lona_carro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cta_0",
+   "start": 1677.57,
+   "dur": 20.85,
+   "kind": "diagram",
+   "eyebrow": "Todo, ordenado y probado",
+   "slides": [
+    {
+     "image": "img/dg_im_manual.png",
+     "eyebrow": "Las medidas por superficie + 39 arreglos mas"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "cta_1",
+   "start": 1698.42,
+   "dur": 10.86,
+   "kind": "bars",
+   "title": "El valor",
+   "unit": "US$",
+   "bars": [
+    {
+     "label": "Por separado",
+     "value": 158,
+     "tone": "danger"
+    },
+    {
+     "label": "Hoy",
+     "value": 27,
+     "winner": true
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "cta_2",
+   "start": 1709.28,
+   "dur": 9.12,
+   "kind": "quote",
+   "image": "vid/im_manual_celular.mp4",
+   "text": "Con impermeabilizar una lona, *ya lo pagaste*.",
+   "accent": "good",
+   "hue": "amber"
+  },
+  {
+   "id": "coment_0",
+   "start": 1718.4,
+   "dur": 11.04,
+   "kind": "raw",
+   "src": "img/im_tomas_camara.png",
+   "hue": "red",
+   "kicker": "Que vas a impermeabilizar?",
+   "gen": {
+    "type": "image",
+    "name": "im_tomas_camara",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, talking warmly to camera inviting comments in his workshop, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "coment_1",
+   "start": 1729.44,
+   "dur": 7.36,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Que"
+    },
+    {
+     "t": "truco"
+    },
+    {
+     "t": "usaban"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "tu"
+    },
+    {
+     "t": "zona",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Grasa, cera, brea, aceite quemado?",
+   "bg": "grid",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_0",
+   "start": 1736.8,
+   "dur": 6.41,
+   "kind": "quote",
+   "image": "vid/im_madera_dorada.mp4",
+   "text": "La independencia se prepara *con las manos*.",
+   "at": "con las manos",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_1",
+   "start": 1743.21,
+   "dur": 6.1,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Que"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "agua"
+    },
+    {
+     "t": "resbale",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Cuida lo tuyo",
+   "bg": "image",
+   "image": "vid/im_cierre_gota.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cierre_2",
+   "start": 1749.31,
+   "dur": 15.57,
+   "kind": "raw",
+   "src": "img/im_tomas_firma.png",
+   "hue": "red",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "im_tomas_firma",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, at his workshop door closing the video, golden hour, warm, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  }
+ ],
+ "extraImages": [
+  {
+   "name": "im_hook_super",
+   "prompt": "Foto documental muy realista, 16:9. many objects lined up: wood, cardboard, boots, canvas, all beading water off, waterproof. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_agua_culpable",
+   "prompt": "Foto documental muy realista, 16:9. water dripping and pooling on various household surfaces causing damage. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_maestro_manos",
+   "prompt": "Foto documental muy realista, 16:9. old weathered carpenter hands on aged wood, wise. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_consistencia_leche",
+   "prompt": "Foto documental muy realista, 16:9. a jar of milky liquid waterproofing mix, right consistency, being brushed. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_parece_marmol",
+   "prompt": "Foto documental muy realista, 16:9. water beading on wood that looks like polished marble surface. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_p_preparar",
+   "prompt": "Foto documental muy realista, 16:9. stirring the silicone and solvent mix in a jar. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_p_pincelar",
+   "prompt": "Foto documental muy realista, 16:9. brushing a thin even coat of the mix onto wood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_p_secar",
+   "prompt": "Foto documental muy realista, 16:9. a freshly coated board drying quickly in the shade. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_p_segunda",
+   "prompt": "Foto documental muy realista, 16:9. applying a second thin coat after the first dried. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_frontera",
+   "prompt": "Foto documental muy realista, 16:9. close-up of the boundary line on a half-treated board, one side wet one side beading. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_frasco_barato",
+   "prompt": "Foto documental muy realista, 16:9. a cheap silicone cartridge and solvent making liters of waterproofing mix. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_t_trapos_secar",
+   "prompt": "Foto documental muy realista, 16:9. solvent rags laid out flat outdoors to dry safely, fire safety. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_industria",
+   "prompt": "Foto documental muy realista, 16:9. a faceless chemical company, expensive products that wear out and get rebought. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_linchar",
+   "prompt": "Foto documental muy realista, 16:9. a cheap homemade jar next to twenty expensive branded bottles. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_h_lona_carro",
+   "prompt": "Foto documental muy realista, 16:9. a waxed canvas cart cover from old times repelling rain, sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_manual_celular",
+   "prompt": "Foto documental muy realista, 16:9. a phone showing an open ebook home-repair manual on a workbench, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_madera_dorada",
+   "prompt": "Foto documental muy realista, 16:9. a beautifully waterproofed wooden surface glowing in golden hour, water beading. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_cierre_gota",
+   "prompt": "Foto documental muy realista, 16:9. a single water droplet rolling off restored wood at golden hour, macro. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_m_silicona",
+   "prompt": "Foto documental muy realista, 16:9. the silicone and solvent mix, fast cheap waterproofing being brushed on wood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_m_cera",
+   "prompt": "Foto documental muy realista, 16:9. beeswax or paraffin dissolving in warm solvent in a double boiler, natural sealer. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_m_ceraaceite",
+   "prompt": "Foto documental muy realista, 16:9. beeswax melted with linseed oil into a wood butter paste, food safe finish being rubbed on a cutting board. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_m_linaza",
+   "prompt": "Foto documental muy realista, 16:9. linseed oil penetrating and reviving old gray wood, restoration. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_q_dura",
+   "prompt": "Foto documental muy realista, 16:9. weathered outdoor wood still repelling water after years, renewal coat being applied. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_q_renovar",
+   "prompt": "Foto documental muy realista, 16:9. flicking water on wood to test if it still beads, the drop test. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_q_sol",
+   "prompt": "Foto documental muy realista, 16:9. sun beating on treated wood that wears evenly, no peeling flakes unlike varnish. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_q_enterrado",
+   "prompt": "Foto documental muy realista, 16:9. a fence post base in wet soil, the toughest test for any coating. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_q_toxico",
+   "prompt": "Foto documental muy realista, 16:9. cured dry waterproofed wood safe near a chicken coop and plants. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_q_pintura",
+   "prompt": "Foto documental muy realista, 16:9. flaking old paint being scraped off before treating clean firm wood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_q_auto",
+   "prompt": "Foto documental muy realista, 16:9. rain beading and rolling off a car windshield, glass water repellent. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_t_guardar",
+   "prompt": "Foto documental muy realista, 16:9. a sealed glass jar of waterproofing mix stored on a cool shelf, airtight. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_t_acabado",
+   "prompt": "Foto documental muy realista, 16:9. two wood samples, one matte invisible finish one satin sheen. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_t_temperatura",
+   "prompt": "Foto documental muy realista, 16:9. applying the mix in the shade on a mild day, warm sun helping it penetrate. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_t_trapo",
+   "prompt": "Foto documental muy realista, 16:9. wiping the mix on with an old cotton rag for thin even coats. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_e_gruesa",
+   "prompt": "Foto documental muy realista, 16:9. a thick sticky whitish coat of silicone that did not dry right, a mistake. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_e_mojada",
+   "prompt": "Foto documental muy realista, 16:9. damp dirty wood being sealed the wrong way, trapping moisture inside. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_e_pintar",
+   "prompt": "Foto documental muy realista, 16:9. paint refusing to stick to a silicone-treated surface, beading off. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "im_e_comida",
+   "prompt": "Foto documental muy realista, 16:9. a cutting board that should use food-safe beeswax not solvent mix. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  }
+ ]
+}

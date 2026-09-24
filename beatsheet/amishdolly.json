@@ -1,0 +1,1654 @@
+{
+  "video": "amishdolly",
+  "avatar": "amishdolly_opt.mp4",
+  "clipsfirst": true,
+  "beats": [
+    {
+      "id": "ad_h_dolly",
+      "start": 1.8,
+      "dur": 3.1,
+      "kind": "raw",
+      "src": "img/amishdolly/ad_h_dolly.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_dolly",
+        "prompt": "a low thick handmade wooden rolling dolly with four black swivel caster wheels sitting on a barn workshop floor, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_freezer",
+      "start": 4.4,
+      "dur": 2.9,
+      "kind": "raw",
+      "src": "img/amishdolly/ad_h_freezer.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_freezer",
+        "prompt": "an older Amish man's two fingers pushing a big loaded chest freezer that glides on a low wooden dolly across a concrete barn floor, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_impact",
+      "start": 6.8,
+      "dur": 4.4,
+      "kind": "impact",
+      "image": "img/amishdolly/ad_h_freezer.png",
+      "setup": "Four hundred pounds.",
+      "impact": "Two fingers.",
+      "impactAccent": "good",
+      "hitAt": 2,
+      "boom": 0,
+      "darken": 0.42
+    },
+    {
+      "id": "ad_h_casters",
+      "start": 11.2,
+      "dur": 2.9,
+      "kind": "raw",
+      "src": "img/amishdolly/ad_h_casters.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_casters",
+        "prompt": "extreme close-up of four black swivel caster wheels on the corners of a wooden platform, spinning, steel plates, rubber tread, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_key1",
+      "start": 13.6,
+      "dur": 3.4,
+      "kind": "keyphrase",
+      "text": "One man. Alone.",
+      "src": "img/amishdolly/ad_h_key1.png",
+      "accent": "good",
+      "fontSize": 104,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_key1",
+        "prompt": "an older Amish man in suspenders and straw hat rolling a heavy load alone on a wooden dolly in a barn, calm and easy, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_barrel",
+      "start": 17,
+      "dur": 3.1,
+      "kind": "raw",
+      "src": "img/amishdolly/ad_h_barrel.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_barrel",
+        "prompt": "a full fifty-five gallon rain barrel of water rolling on a low wooden dolly across a farmyard, weathered hands guiding it, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_anvil",
+      "start": 19.6,
+      "dur": 2.9,
+      "kind": "raw",
+      "src": "img/amishdolly/ad_h_anvil.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_anvil",
+        "prompt": "a heavy black cast iron anvil sitting on a low wooden rolling dolly in a dim workshop, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_key2",
+      "start": 22,
+      "dur": 3.6,
+      "kind": "keyphrase",
+      "text": "A board and four wheels.",
+      "src": "img/amishdolly/ad_h_key2.png",
+      "accent": "cold",
+      "fontSize": 88,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_key2",
+        "prompt": "a plain thick wooden board with four caster wheels bolted to the corners, laid on a workbench, honest and simple, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_child",
+      "start": 25.6,
+      "dur": 3.5,
+      "kind": "raw",
+      "src": "img/amishdolly/ad_h_child.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_child",
+        "prompt": "a young Amish boy easily pushing a heavy cast iron wood stove across a barn floor on a wooden dolly, grown men watching amazed, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_engineer",
+      "start": 28.6,
+      "dur": 3.7,
+      "kind": "raw",
+      "src": "img/amishdolly/ad_h_engineer.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_engineer",
+        "prompt": "a modern engineer with a clipboard staring in disbelief at a simple wooden rolling dolly, shaking his head, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_impact2",
+      "start": 31.8,
+      "dur": 4.2,
+      "kind": "impact",
+      "image": "img/amishdolly/ad_h_dolly.png",
+      "setup": "It shouldn't work that well.",
+      "impact": "But it does.",
+      "impactAccent": "good",
+      "hitAt": 2.1,
+      "boom": 0,
+      "darken": 0.42
+    },
+    {
+      "id": "ad_h_notch",
+      "start": 36,
+      "dur": 3.1,
+      "kind": "raw",
+      "src": "img/amishdolly/ad_h_notch.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_notch",
+        "prompt": "close-up of a curved hand-notch cut into the front edge of a thick wooden dolly deck, fingers hooking into it, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_key3",
+      "start": 38.6,
+      "dur": 3.4,
+      "kind": "keyphrase",
+      "text": "Genius. And it's homemade.",
+      "src": "img/amishdolly/ad_h_key3.png",
+      "accent": "good",
+      "fontSize": 92,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_key3",
+        "prompt": "a finished handmade wooden rolling dolly on a workbench beside a hand saw and a box of caster wheels, warm shop light, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ad_h_stack",
+      "start": 42,
+      "dur": 2.5,
+      "kind": "raw",
+      "src": "img/amishdolly/ad_h_stack.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/ad_h_stack",
+        "prompt": "weathered hands rolling a heavy stack of firewood on a low wooden dolly across a barn floor, easy motion, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_16",
+      "start": 62.7,
+      "dur": 6.56,
+      "kind": "raw",
+      "src": "img/amishdolly/s_16.png",
+      "darken": 0
+    },
+    {
+      "id": "s_18",
+      "start": 68.76,
+      "dur": 7.7,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_18.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_wanted",
+      "start": 75.96,
+      "dur": 8.02,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "It only ever wanted to roll",
+      "items": [
+        "Four grown men couldn't budge the stove",
+        "The old man slid a board under it",
+        "A ten-year-old pushed it across the barn",
+        "You were trying to carry it — it wanted to roll"
+      ]
+    },
+    {
+      "id": "cmp_load",
+      "start": 83.98,
+      "dur": 7.76,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "good",
+      "value": 400,
+      "suffix": " lb",
+      "label": "a loaded chest freezer rolling under one hand, two fingers — like it's an empty box",
+      "eyebrow": "One man moves"
+    },
+    {
+      "id": "cmp_shouldnt",
+      "start": 91.74,
+      "dur": 12.26,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "That should not work",
+      "eyebrow": "The engineer's reaction",
+      "caption": "a real engineer stood there shaking his head — a board and four wheels moving what four men couldn't",
+      "image": "img/amishdolly/cmp_shouldnt_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_shouldnt_bg",
+        "prompt": "a modern engineer with a clipboard staring in disbelief at a plain wooden rolling dolly in a barn, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_33",
+      "start": 160.94,
+      "dur": 4.88,
+      "kind": "raw",
+      "src": "img/amishdolly/s_33.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/s_33",
+        "prompt": "close on the old man's weathered face, calm smile, delivering the line that they were trying to carry it when it only wanted to roll, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_34",
+      "start": 165.32,
+      "dur": 5.4,
+      "kind": "raw",
+      "src": "img/amishdolly/s_34.png",
+      "darken": 0
+    },
+    {
+      "id": "s_35",
+      "start": 170.22,
+      "dur": 5.76,
+      "kind": "raw",
+      "src": "img/amishdolly/s_35.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_madeof",
+      "start": 175.48,
+      "dur": 13.62,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "The whole genius invention",
+      "chips": [
+        "one thick board",
+        "four swivel wheels",
+        "sixteen bolts",
+        "a hand-notch"
+      ],
+      "image": "img/amishdolly/cmp_madeof_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_madeof_bg",
+        "prompt": "a plain thick wooden board with four caster wheels and a handful of bolts laid out on a workbench, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_39",
+      "start": 189.1,
+      "dur": 6.94,
+      "kind": "raw",
+      "src": "img/amishdolly/s_39.png",
+      "darken": 0
+    },
+    {
+      "id": "s_40",
+      "start": 195.54,
+      "dur": 7.22,
+      "kind": "raw",
+      "src": "img/amishdolly/s_40.png",
+      "darken": 0
+    },
+    {
+      "id": "s_41",
+      "start": 202.26,
+      "dur": 7.78,
+      "kind": "raw",
+      "src": "img/amishdolly/s_41.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_dragroll",
+      "start": 209.54,
+      "dur": 9.9,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Drag vs. Roll",
+      "eyebrow": "The one question",
+      "caption": "sliding, you fight the whole weight pressed flat on the floor; rolling, you only ever fight the little wheel",
+      "image": "img/amishdolly/cmp_dragroll_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_dragroll_bg",
+        "prompt": "split idea of a heavy crate dragging flat on a floor beside the same crate on wheels, dim workshop, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_44",
+      "start": 219.44,
+      "dur": 5.48,
+      "kind": "raw",
+      "src": "img/amishdolly/s_44.png",
+      "darken": 0
+    },
+    {
+      "id": "s_45",
+      "start": 224.42,
+      "dur": 5.94,
+      "kind": "raw",
+      "src": "img/amishdolly/s_45.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_dragbars",
+      "start": 229.86,
+      "dur": 9.74,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": " lb",
+      "title": "Force to move 400 lb",
+      "eyebrow": "Slide it vs roll it",
+      "bars": [
+        {
+          "label": "Drag it flat",
+          "value": 300,
+          "display": "you can't budge it"
+        },
+        {
+          "label": "Roll it on casters",
+          "value": 6,
+          "display": "two fingers",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "s_48",
+      "start": 239.6,
+      "dur": 7.74,
+      "kind": "raw",
+      "src": "img/amishdolly/s_48.png",
+      "darken": 0
+    },
+    {
+      "id": "s_49",
+      "start": 246.84,
+      "dur": 6.36,
+      "kind": "raw",
+      "src": "img/amishdolly/s_49.png",
+      "darken": 0
+    },
+    {
+      "id": "s_50",
+      "start": 252.7,
+      "dur": 6.24,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_50.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_51",
+      "start": 258.44,
+      "dur": 7.7,
+      "kind": "raw",
+      "src": "img/amishdolly/s_51.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_neverdrag",
+      "start": 265.64,
+      "dur": 12.48,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "A wheel never drags",
+      "items": [
+        "A flat load grabs the floor across its whole face",
+        "A wheel touches one tiny spot",
+        "It rolls that spot on and picks up a fresh one",
+        "So you fight the wheel — not the weight"
+      ]
+    },
+    {
+      "id": "s_54",
+      "start": 278.12,
+      "dur": 4.9,
+      "kind": "raw",
+      "src": "img/amishdolly/s_54.png",
+      "darken": 0
+    },
+    {
+      "id": "s_55",
+      "start": 282.52,
+      "dur": 7.86,
+      "kind": "raw",
+      "src": "img/amishdolly/s_55.png",
+      "darken": 0
+    },
+    {
+      "id": "s_56",
+      "start": 289.88,
+      "dur": 7.38,
+      "kind": "raw",
+      "src": "img/amishdolly/s_56.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_100x",
+      "start": 296.76,
+      "dur": 9.44,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 100,
+      "suffix": "× easier",
+      "label": "on good casters and a smooth floor, rolling beats dragging by about a hundred to one — not twice, a hundred times",
+      "eyebrow": "Roll vs drag"
+    },
+    {
+      "id": "s_60",
+      "start": 306.2,
+      "dur": 6.92,
+      "kind": "raw",
+      "src": "img/amishdolly/s_60.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_suitcase",
+      "start": 312.62,
+      "dur": 6.52,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "You already know this",
+      "eyebrow": "Everyday proof",
+      "caption": "the same packed suitcase — add two little wheels and a child tows it, humming. Nothing changed but where the weight meets the ground",
+      "image": "img/amishdolly/cmp_suitcase_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_suitcase_bg",
+        "prompt": "a heavy packed suitcase with two small wheels being towed easily, plain floor, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_63",
+      "start": 319.14,
+      "dur": 5.68,
+      "kind": "raw",
+      "src": "img/amishdolly/s_63.png",
+      "darken": 0
+    },
+    {
+      "id": "s_64",
+      "start": 324.32,
+      "dur": 5.96,
+      "kind": "raw",
+      "src": "img/amishdolly/s_64.png",
+      "darken": 0
+    },
+    {
+      "id": "s_65",
+      "start": 329.78,
+      "dur": 6.4,
+      "kind": "raw",
+      "src": "img/amishdolly/s_65.png",
+      "darken": 0
+    },
+    {
+      "id": "s_66",
+      "start": 335.68,
+      "dur": 7.52,
+      "kind": "raw",
+      "src": "img/amishdolly/s_66.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_floorchips",
+      "start": 342.7,
+      "dur": 6.16,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "Where it rolls like a dream",
+      "chips": [
+        "concrete",
+        "wood floor",
+        "tile",
+        "smooth barn floor"
+      ],
+      "image": "img/amishdolly/cmp_floorchips_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_floorchips_bg",
+        "prompt": "a smooth concrete barn floor with a wooden dolly rolling across it, warm light, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_69",
+      "start": 348.86,
+      "dur": 6.6,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_69.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_70",
+      "start": 354.96,
+      "dur": 5.98,
+      "kind": "raw",
+      "src": "img/amishdolly/s_70.png",
+      "darken": 0
+    },
+    {
+      "id": "s_71",
+      "start": 360.44,
+      "dur": 7.36,
+      "kind": "raw",
+      "src": "img/amishdolly/s_71.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_rough",
+      "start": 367.3,
+      "dur": 6.78,
+      "kind": "mistake",
+      "number": "!",
+      "eyebrow": "On rough ground",
+      "title": "Size up the wheels",
+      "desc": "On soft dirt, thick gravel or deep grass small wheels sink in and it fights you. A big wheel rolls over the bump a little one falls into — go bigger for rough ground.",
+      "image": "img/amishdolly/cmp_rough_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_rough_bg",
+        "prompt": "a wooden cart with large wheels crossing soft dirt and gravel outdoors, dim light, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_74",
+      "start": 374.08,
+      "dur": 6.04,
+      "kind": "raw",
+      "src": "img/amishdolly/s_74.png",
+      "darken": 0
+    },
+    {
+      "id": "s_75",
+      "start": 379.62,
+      "dur": 7.74,
+      "kind": "raw",
+      "src": "img/amishdolly/s_75.png",
+      "darken": 0
+    },
+    {
+      "id": "s_76",
+      "start": 386.86,
+      "dur": 5.48,
+      "kind": "raw",
+      "src": "img/amishdolly/s_76.png",
+      "darken": 0
+    },
+    {
+      "id": "s_77",
+      "start": 391.84,
+      "dur": 11.42,
+      "kind": "raw",
+      "src": "img/amishdolly/s_77.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/s_77",
+        "prompt": "presenter turning back to the workbench, hands reaching for wood and tools to start building, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_fourswivel",
+      "start": 402.76,
+      "dur": 7.32,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "All four swivel — not two",
+      "eyebrow": "The old-timer's choice",
+      "caption": "two fixed wheels only go straight; four swivel casters turn a quarter-ton in place with your pinky",
+      "image": "img/amishdolly/cmp_fourswivel_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_fourswivel_bg",
+        "prompt": "four black swivel caster wheels on a wooden platform, all turned different ways, close-up, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_80",
+      "start": 410.08,
+      "dur": 8.16,
+      "kind": "raw",
+      "src": "img/amishdolly/s_80.png",
+      "darken": 0
+    },
+    {
+      "id": "s_82",
+      "start": 417.74,
+      "dur": 4.08,
+      "kind": "raw",
+      "src": "img/amishdolly/s_82.png",
+      "darken": 0
+    },
+    {
+      "id": "s_83",
+      "start": 421.32,
+      "dur": 5.56,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_83.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_swivelwhy",
+      "start": 426.38,
+      "dur": 6.66,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "Why all-swivel wins",
+      "items": [
+        "Turn it in place, any direction",
+        "No steering, no fighting",
+        "Back it neatly into a corner",
+        "Spin a quarter-ton with one finger"
+      ]
+    },
+    {
+      "id": "s_86",
+      "start": 433.04,
+      "dur": 6.62,
+      "kind": "raw",
+      "src": "img/amishdolly/s_86.png",
+      "darken": 0
+    },
+    {
+      "id": "s_88",
+      "start": 439.16,
+      "dur": 7.92,
+      "kind": "raw",
+      "src": "img/amishdolly/s_88.png",
+      "darken": 0
+    },
+    {
+      "id": "s_90",
+      "start": 446.58,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/amishdolly/s_90.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_rating",
+      "start": 451.98,
+      "dur": 9.08,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Read the stamped number",
+      "eyebrow": "Every caster has one",
+      "caption": "the load rating is printed right on the wheel — and the math almost everyone does is the math that gets them hurt",
+      "image": "img/amishdolly/cmp_rating_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_rating_bg",
+        "prompt": "close-up of a weight rating number stamped into the steel plate of a black caster wheel, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_93",
+      "start": 461.06,
+      "dur": 4.34,
+      "kind": "raw",
+      "src": "img/amishdolly/s_93.png",
+      "darken": 0
+    },
+    {
+      "id": "s_94",
+      "start": 464.9,
+      "dur": 3.02,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_94.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_divide",
+      "start": 467.42,
+      "dur": 12.28,
+      "kind": "mistake",
+      "number": "÷4",
+      "eyebrow": "The mistake that snaps",
+      "title": "Don't divide by four",
+      "desc": "A load never sits evenly on all four wheels. Cross a threshold or a pebble and for one second three come up light and one carries almost everything. That's the second it lets go.",
+      "image": "img/amishdolly/cmp_divide_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_divide_bg",
+        "prompt": "a loaded wooden dolly tilting over a door threshold, one caster taking all the weight, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_98",
+      "start": 479.7,
+      "dur": 5.02,
+      "kind": "raw",
+      "src": "img/amishdolly/s_98.png",
+      "darken": 0
+    },
+    {
+      "id": "s_99",
+      "start": 484.22,
+      "dur": 4.36,
+      "kind": "raw",
+      "src": "img/amishdolly/s_99.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_third",
+      "start": 488.08,
+      "dur": 6.52,
+      "kind": "callout",
+      "hue": "cold",
+      "accent": "good",
+      "figure": "⅓ of the whole load — each",
+      "eyebrow": "The rule that keeps you safe",
+      "caption": "size every single wheel to hold at least a third of the total, not a quarter. Overbuild it. Wheels are cheap; your feet are not",
+      "image": "img/amishdolly/cmp_third_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_third_bg",
+        "prompt": "four heavy-duty caster wheels lined up on a workbench beside a wooden deck, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_101",
+      "start": 494.6,
+      "dur": 8.12,
+      "kind": "raw",
+      "src": "img/amishdolly/s_101.png",
+      "darken": 0
+    },
+    {
+      "id": "s_103",
+      "start": 502.22,
+      "dur": 9.32,
+      "kind": "raw",
+      "src": "img/amishdolly/s_103.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_low",
+      "start": 511.04,
+      "dur": 8.26,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Low & centered",
+      "eyebrow": "The invisible genius",
+      "caption": "the lower the deck rides, the less a tall load wants to tip — keep the weight low and centered and it rolls all day without a wobble",
+      "image": "img/amishdolly/cmp_low_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_low_bg",
+        "prompt": "a very low wooden rolling dolly deck riding just two inches off a barn floor, side view, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_107",
+      "start": 519.3,
+      "dur": 5.44,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_107.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_deckbars",
+      "start": 524.24,
+      "dur": 6.42,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "",
+      "title": "Deck height",
+      "eyebrow": "Low wins",
+      "bars": [
+        {
+          "label": "Low deck",
+          "value": 3,
+          "display": "stable, won't tip",
+          "winner": true
+        },
+        {
+          "label": "Tall base",
+          "value": 1,
+          "display": "tips on a turn"
+        }
+      ]
+    },
+    {
+      "id": "s_110",
+      "start": 530.66,
+      "dur": 5.34,
+      "kind": "raw",
+      "src": "img/amishdolly/s_110.png",
+      "darken": 0
+    },
+    {
+      "id": "s_111",
+      "start": 535.5,
+      "dur": 4.48,
+      "kind": "raw",
+      "src": "img/amishdolly/s_111.png",
+      "darken": 0
+    },
+    {
+      "id": "s_112",
+      "start": 539.48,
+      "dur": 4.76,
+      "kind": "raw",
+      "src": "img/amishdolly/s_112.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_notch",
+      "start": 543.74,
+      "dur": 10.28,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "The notch",
+      "eyebrow": "You can't see why till you use it",
+      "caption": "a hand-hold cut in the front edge — to hook your fingers or a strap, nudge it to start, ease it down off a threshold nice and slow",
+      "image": "img/amishdolly/cmp_notch_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_notch_bg",
+        "prompt": "a curved hand-notch cut into the front edge of a thick wooden dolly deck, fingers hooking in, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_115",
+      "start": 554.02,
+      "dur": 6.24,
+      "kind": "raw",
+      "src": "img/amishdolly/s_115.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_invention",
+      "start": 559.76,
+      "dur": 7.12,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "The whole invention",
+      "eyebrow": "That's it — that's the genius",
+      "items": [
+        {
+          "text": "A low, thick hardwood slab",
+          "state": "done"
+        },
+        {
+          "text": "Four swivel wheels — each a third of the load",
+          "state": "done"
+        },
+        {
+          "text": "Bolted through with washers and lock nuts",
+          "state": "done"
+        },
+        {
+          "text": "A notch in the front to grab",
+          "state": "done"
+        }
+      ],
+      "image": "img/amishdolly/cmp_invention_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_invention_bg",
+        "prompt": "a finished handmade wooden rolling dolly with four swivel casters on a workbench, warm light, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_119",
+      "start": 566.88,
+      "dur": 7.32,
+      "kind": "raw",
+      "src": "img/amishdolly/s_119.png",
+      "darken": 0
+    },
+    {
+      "id": "s_121",
+      "start": 573.7,
+      "dur": 4.4,
+      "kind": "raw",
+      "src": "img/amishdolly/s_121.png",
+      "darken": 0
+    },
+    {
+      "id": "s_122",
+      "start": 577.6,
+      "dur": 6.22,
+      "kind": "raw",
+      "src": "img/amishdolly/s_122.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_moves",
+      "start": 583.32,
+      "dur": 11.46,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "What one man rolls, alone",
+      "items": [
+        "A full chest freezer, out to clean behind it",
+        "A brimming rain barrel to the garden",
+        "The cast anvil, the wood cookstove",
+        "Feed sacks, firewood, the whole workbench"
+      ]
+    },
+    {
+      "id": "s_125",
+      "start": 594.78,
+      "dur": 4.38,
+      "kind": "raw",
+      "src": "img/amishdolly/s_125.png",
+      "darken": 0
+    },
+    {
+      "id": "s_126",
+      "start": 598.66,
+      "dur": 6.24,
+      "kind": "raw",
+      "src": "img/amishdolly/s_126.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_barrel",
+      "start": 604.4,
+      "dur": 11.44,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 450,
+      "suffix": " lb",
+      "label": "a full fifty-five gallon rain barrel — rolled from the downspout to the garden instead of bucketed",
+      "eyebrow": "The rain barrel"
+    },
+    {
+      "id": "s_131",
+      "start": 615.84,
+      "dur": 4.4,
+      "kind": "raw",
+      "src": "img/amishdolly/s_131.png",
+      "darken": 0
+    },
+    {
+      "id": "s_132",
+      "start": 619.74,
+      "dur": 3.08,
+      "kind": "raw",
+      "src": "img/amishdolly/s_132.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_gift",
+      "start": 622.32,
+      "dur": 3.68,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Years back for your back",
+      "eyebrow": "It's not the wheels",
+      "caption": "the jobs you used to dread or wait on your sons for — now you roll it over, do it, roll it back, and nothing hurts at the end of the day",
+      "image": "img/amishdolly/cmp_gift_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_gift_bg",
+        "prompt": "an older Amish man standing easy at day's end in a tidy workshop, no strain, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_oneidea",
+      "start": 673.52,
+      "dur": 13.72,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "One idea, a hundred uses",
+      "items": [
+        "Move heavy loads with two fingers",
+        "Keep food cold with no icebox",
+        "Heat a whole room on one fire",
+        "Pull water uphill with no power"
+      ]
+    },
+    {
+      "id": "cmp_deck",
+      "start": 687.24,
+      "dur": 10.04,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "Build the deck",
+      "eyebrow": "A Saturday morning",
+      "items": [
+        {
+          "text": "Hardwood — oak, maple, ash if you have it",
+          "state": "done"
+        },
+        {
+          "text": "Or two layers of ¾-inch plywood, glued & screwed",
+          "state": "done"
+        },
+        {
+          "text": "About 16 × 24 in — size it to your load",
+          "state": "done"
+        },
+        {
+          "text": "Round the corners, cut the front notch",
+          "state": "done"
+        }
+      ],
+      "image": "img/amishdolly/cmp_deck_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_deck_bg",
+        "prompt": "a thick hardwood board being cut to size on a workbench with a hand saw, sawdust, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_150",
+      "start": 697.28,
+      "dur": 3.36,
+      "kind": "raw",
+      "src": "img/amishdolly/s_150.png",
+      "darken": 0
+    },
+    {
+      "id": "s_151",
+      "start": 700.14,
+      "dur": 8.96,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_151.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_seal",
+      "start": 708.6,
+      "dur": 9.1,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Boiled linseed oil",
+      "eyebrow": "If it lives in the barn",
+      "caption": "wipe it on, let it dry, wipe it again — bare wood drinks the damp, swells and rots; sealed wood shrugs it off",
+      "image": "img/amishdolly/cmp_seal_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_seal_bg",
+        "prompt": "weathered hands wiping boiled linseed oil onto a wooden board with a rag, warm light, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_155",
+      "start": 717.7,
+      "dur": 4.86,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_155.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_156",
+      "start": 722.06,
+      "dur": 5.6,
+      "kind": "raw",
+      "src": "img/amishdolly/s_156.png",
+      "darken": 0
+    },
+    {
+      "id": "s_157",
+      "start": 727.16,
+      "dur": 7.4,
+      "kind": "raw",
+      "src": "img/amishdolly/s_157.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_pickcasters",
+      "start": 734.06,
+      "dur": 7.64,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "Pick your casters",
+      "chips": [
+        "swivel",
+        "rubber tread",
+        "⅓-load rated",
+        "smooth-rolling"
+      ],
+      "image": "img/amishdolly/cmp_pickcasters_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_pickcasters_bg",
+        "prompt": "a box of new heavy-duty swivel caster wheels on a workbench in a workshop, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_161",
+      "start": 741.7,
+      "dur": 5.46,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_161.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_162",
+      "start": 746.66,
+      "dur": 5.88,
+      "kind": "raw",
+      "src": "img/amishdolly/s_162.png",
+      "darken": 0
+    },
+    {
+      "id": "s_163",
+      "start": 752.04,
+      "dur": 5.1,
+      "kind": "raw",
+      "src": "img/amishdolly/s_163.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_bolt",
+      "start": 756.64,
+      "dur": 6.86,
+      "kind": "mistake",
+      "number": "!",
+      "eyebrow": "Your whole safety, in four bolts",
+      "title": "Bolt them — never wood screws",
+      "desc": "Run a bolt through the deck with a washer and a lock nut on the back side. Wood screws back out under a shaking load, especially in end-grain. A through-bolt with a lock nut never comes loose. Don't cheap out on the bolts.",
+      "image": "img/amishdolly/cmp_bolt_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_bolt_bg",
+        "prompt": "weathered hands tightening a lock nut and washer under a wooden dolly deck with a wrench, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_166",
+      "start": 763.5,
+      "dur": 5.24,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_166.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_167",
+      "start": 768.24,
+      "dur": 4.78,
+      "kind": "raw",
+      "src": "img/amishdolly/s_167.png",
+      "darken": 0
+    },
+    {
+      "id": "s_168",
+      "start": 772.52,
+      "dur": 5.94,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_168.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_170",
+      "start": 777.96,
+      "dur": 7.7,
+      "kind": "raw",
+      "src": "img/amishdolly/s_170.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_grip",
+      "start": 785.16,
+      "dur": 8.1,
+      "kind": "callout",
+      "hue": "cold",
+      "accent": "good",
+      "figure": "A no-slip top",
+      "eyebrow": "A nice touch",
+      "caption": "a couple of wood cleats or a strip of no-slip rubber mat keeps the load from walking off the deck when you stop quick",
+      "image": "img/amishdolly/cmp_grip_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_grip_bg",
+        "prompt": "a strip of no-slip rubber mat and small wood cleats fixed on top of a wooden dolly deck, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_173",
+      "start": 793.26,
+      "dur": 4.44,
+      "kind": "raw",
+      "src": "img/amishdolly/s_173.png",
+      "darken": 0
+    },
+    {
+      "id": "s_174",
+      "start": 797.2,
+      "dur": 7.64,
+      "kind": "raw",
+      "src": "img/amishdolly/s_174.png",
+      "darken": 0
+    },
+    {
+      "id": "s_175",
+      "start": 804.34,
+      "dur": 4.9,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_175.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_versions",
+      "start": 808.74,
+      "dur": 7.46,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "A version for every job",
+      "eyebrow": "Once you've built one",
+      "items": [
+        {
+          "text": "Brake casters — flip a lever, it stays put",
+          "state": "done"
+        },
+        {
+          "text": "Bigger & longer — six wheels for grain bins & lumber",
+          "state": "done"
+        },
+        {
+          "text": "Two fixed wheels so a long one tracks straight",
+          "state": "done"
+        },
+        {
+          "text": "A lip or cradle for barrels and pipe",
+          "state": "done"
+        }
+      ],
+      "image": "img/amishdolly/cmp_versions_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_versions_bg",
+        "prompt": "several wooden rolling dollies of different sizes lined up in a workshop, warm light, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_177",
+      "start": 816.2,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "img/amishdolly/s_177.png",
+      "darken": 0
+    },
+    {
+      "id": "s_179",
+      "start": 823.2,
+      "dur": 4.78,
+      "kind": "raw",
+      "src": "img/amishdolly/s_179.png",
+      "darken": 0
+    },
+    {
+      "id": "s_180",
+      "start": 827.48,
+      "dur": 6.08,
+      "kind": "raw",
+      "src": "img/amishdolly/s_180.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_straighttight",
+      "start": 833.06,
+      "dur": 7.62,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "",
+      "title": "Which caster layout",
+      "eyebrow": "Match it to the job",
+      "bars": [
+        {
+          "label": "All four swivel",
+          "value": 3,
+          "display": "tight spaces, spins in place",
+          "winner": true
+        },
+        {
+          "label": "2 fixed + 2 swivel",
+          "value": 2,
+          "display": "long loads, tracks straight"
+        }
+      ]
+    },
+    {
+      "id": "s_182",
+      "start": 840.68,
+      "dur": 7.9,
+      "kind": "raw",
+      "src": "img/amishdolly/s_182.png",
+      "darken": 0
+    },
+    {
+      "id": "s_183",
+      "start": 848.08,
+      "dur": 5.74,
+      "kind": "raw",
+      "src": "img/amishdolly/s_183.png",
+      "darken": 0
+    },
+    {
+      "id": "s_184",
+      "start": 853.32,
+      "dur": 6.34,
+      "kind": "raw",
+      "src": "img/amishdolly/s_184.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_lip",
+      "start": 859.16,
+      "dur": 8.22,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "Add a lip for round loads",
+      "chips": [
+        "barrels",
+        "a stack of pipe",
+        "milk cans",
+        "kegs"
+      ],
+      "image": "img/amishdolly/cmp_lip_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_lip_bg",
+        "prompt": "a wooden dolly with a low wooden rail lip around the edge cradling a barrel, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_186",
+      "start": 867.38,
+      "dur": 3.08,
+      "kind": "raw",
+      "src": "img/amishdolly/s_186.png",
+      "darken": 0
+    },
+    {
+      "id": "s_187",
+      "start": 869.96,
+      "dur": 6.1,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_187.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_188",
+      "start": 875.56,
+      "dur": 4.96,
+      "kind": "raw",
+      "src": "img/amishdolly/s_188.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_20yr",
+      "start": 880.02,
+      "dur": 7.98,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 20,
+      "suffix": " years",
+      "label": "follow these five and this cart serves you faithfully for twenty years and never once hurts you",
+      "eyebrow": "Built to last"
+    },
+    {
+      "id": "cmp_fiverules",
+      "start": 888,
+      "dur": 9.92,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "The five safety rules",
+      "eyebrow": "Keep them and it serves 20 years",
+      "items": [
+        {
+          "text": "Never go over the wheels' rating",
+          "state": "done"
+        },
+        {
+          "text": "Load & unload on flat, level ground only",
+          "state": "done"
+        },
+        {
+          "text": "Steel-toe boots — fingers & toes clear",
+          "state": "done"
+        },
+        {
+          "text": "Don't ride it — it has no brakes",
+          "state": "done"
+        },
+        {
+          "text": "Tall loads: low, centered, strapped, slow turns",
+          "state": "done"
+        }
+      ],
+      "image": "img/amishdolly/cmp_fiverules_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_fiverules_bg",
+        "prompt": "a loaded wooden dolly parked safely on a flat clean barn floor, a chock under one wheel, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_192",
+      "start": 897.92,
+      "dur": 8.38,
+      "kind": "raw",
+      "src": "img/amishdolly/s_192.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_slope",
+      "start": 905.8,
+      "dur": 9.76,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "Never on a slope",
+      "eyebrow": "The big one — the runaway",
+      "caption": "a loaded cart on any grade wants to get away — it'll go through a wall or over a person. Flat ground only; chock a wheel when it's parked",
+      "image": "img/amishdolly/cmp_slope_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_slope_bg",
+        "prompt": "a loaded wooden cart starting to roll away down a sloped ramp, dramatic, dim light, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_196",
+      "start": 915.56,
+      "dur": 4.68,
+      "kind": "raw",
+      "src": "img/amishdolly/s_196.png",
+      "darken": 0
+    },
+    {
+      "id": "s_197",
+      "start": 919.74,
+      "dur": 6.04,
+      "kind": "raw",
+      "src": "img/amishdolly/s_197.png",
+      "darken": 0
+    },
+    {
+      "id": "s_198",
+      "start": 925.28,
+      "dur": 4.9,
+      "kind": "raw",
+      "src": "img/amishdolly/s_198.png",
+      "darken": 0
+    },
+    {
+      "id": "s_199",
+      "start": 929.68,
+      "dur": 6.24,
+      "kind": "raw",
+      "src": "broll/amishdolly/s_199.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_pinch",
+      "start": 935.42,
+      "dur": 11.74,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "Casters pinch",
+      "eyebrow": "Fingers & toes",
+      "caption": "keep your fingers out from under the load and off the floor when you set it down, and wear real boots — a caster will take a fingertip",
+      "image": "img/amishdolly/cmp_pinch_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_pinch_bg",
+        "prompt": "a heavy steel-toe work boot beside a caster wheel on a barn floor, close-up, cautionary, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_ride",
+      "start": 947.16,
+      "dur": 6.46,
+      "kind": "mistake",
+      "number": "✗",
+      "eyebrow": "It is not a scooter",
+      "title": "Don't ride it",
+      "desc": "No brakes, and it'll dump you on your head. Don't ride it, and don't let the little ones ride it — however much the grandkids beg.",
+      "image": "img/amishdolly/cmp_ride_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_ride_bg",
+        "prompt": "an empty wooden rolling dolly on a barn floor with a clear no-riding feeling, dim light, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_206",
+      "start": 953.62,
+      "dur": 4.78,
+      "kind": "raw",
+      "src": "img/amishdolly/s_206.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_payoff",
+      "start": 957.9,
+      "dur": 8.88,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "The real payoff",
+      "items": [
+        "Heavy work you used to dread or put off",
+        "Now one man, two fingers, done",
+        "Nothing hurts at the end of the day",
+        "Years given back to your back"
+      ]
+    },
+    {
+      "id": "cmp_tall",
+      "start": 966.78,
+      "dur": 9.38,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Low · centered · slow",
+      "eyebrow": "So a tall load won't tip",
+      "caption": "a tall, top-heavy load on a low cart tips when you turn quick — strap it, keep it low and centered, and take your turns slow and wide",
+      "image": "img/amishdolly/cmp_tall_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_tall_bg",
+        "prompt": "a tall load strapped down low and centered on a wooden dolly, being turned slowly, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_211",
+      "start": 976.16,
+      "dur": 5.66,
+      "kind": "raw",
+      "src": "img/amishdolly/s_211.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_recap",
+      "start": 981.32,
+      "dur": 6.82,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "The whole genius, again",
+      "eyebrow": "Go build one this weekend",
+      "items": [
+        {
+          "text": "A thick low slab + four swivel wheels",
+          "state": "done"
+        },
+        {
+          "text": "Each wheel a third of the load, bolted",
+          "state": "done"
+        },
+        {
+          "text": "A notch to grab, sealed against damp",
+          "state": "done"
+        },
+        {
+          "text": "Flat ground, real boots, never ride it",
+          "state": "done"
+        }
+      ],
+      "image": "img/amishdolly/cmp_recap_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "amishdolly/cmp_recap_bg",
+        "prompt": "a finished handmade wooden rolling dolly on a swept workshop floor, warm evening light, casual documentary phone snapshot, rustic Amish workshop and barn, warm dim window light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural weathered hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_214",
+      "start": 988.14,
+      "dur": 7.78,
+      "kind": "raw",
+      "src": "img/amishdolly/s_214.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_next",
+      "start": 995.42,
+      "dur": 10.58,
+      "kind": "nextvideo",
+      "kicker": "Next time",
+      "title": "Water uphill — all day, no pump, no power",
+      "sub": "How the old-timers pushed a low creek up to the house with nothing but the water itself. People don't believe it till they see it run."
+    }
+  ]
+}

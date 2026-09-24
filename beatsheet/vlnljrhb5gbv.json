@@ -1,0 +1,1943 @@
+{
+ "video": "vlnljrhb5gbv",
+ "avatar": "vlnljrhb5gbv_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 3.6,
+   "key": "hook",
+   "kind": "talk"
+  },
+  {
+   "id": "hook_1",
+   "start": 4.9,
+   "dur": 5.04,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_hombre_mira_piernas.png",
+   "kicker": "Después de los 60"
+  },
+  {
+   "id": "hook_2",
+   "start": 9.94,
+   "dur": 4.7,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_levantarse_silla_manos.png"
+  },
+  {
+   "id": "gesto_0",
+   "start": 14.64,
+   "dur": 2.8,
+   "key": "gesto",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LA PRIMERA SEÑAL",
+     "sub": "apoyarte en el brazo del sillón para levantarte",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/gesto_0.mp4"
+  },
+  {
+   "id": "gesto_1",
+   "start": 17.02,
+   "dur": 7.58,
+   "key": "gesto",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_apoyarse_brazo_sillon.png"
+  },
+  {
+   "id": "promesa_0",
+   "start": 24.6,
+   "dur": 5.18,
+   "key": "promesa",
+   "kind": "stat",
+   "big": "80·90",
+   "unit": "años",
+   "label": "Podés recuperar fuerza en las piernas. Incluso a los 80. Incluso a los 90.",
+   "tone": "teal"
+  },
+  {
+   "id": "promesa_1",
+   "start": 29.78,
+   "dur": 6.9,
+   "key": "promesa",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_piernas_fuertes_caminando.png"
+  },
+  {
+   "id": "ventana_0",
+   "start": 36.68,
+   "dur": 2.8,
+   "key": "ventana",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "UNA SOLA VENTANA",
+     "sub": "un momento del día para reconstruir músculo — y no es entrenando",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/ventana_0.mp4"
+  },
+  {
+   "id": "ventana_1",
+   "start": 45.84,
+   "dur": 3.76,
+   "key": "ventana",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "cuando"
+    },
+    {
+     "t": "entrenás"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "mientras"
+    },
+    {
+     "t": "dormís",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "ventana_2",
+   "start": 47.9,
+   "dur": 1.8,
+   "key": "ventana",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_reloj_despertador_noche.png"
+  },
+  {
+   "id": "roba_0",
+   "start": 49.7,
+   "dur": 4.12,
+   "key": "roba",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_sintesis_nocturna.png"
+    }
+   ]
+  },
+  {
+   "id": "roba_1",
+   "start": 53.82,
+   "dur": 4.2,
+   "key": "roba",
+   "kind": "mitoverdad",
+   "myth": "De noche el cuerpo solo descansa",
+   "truth": "De noche fabrica músculo nuevo... o te lo roba",
+   "flipAt": 48
+  },
+  {
+   "id": "roba_2",
+   "start": 57.6,
+   "dur": 2.4,
+   "key": "roba",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_musculo_noche_fabrica.png"
+  },
+  {
+   "id": "vacio_0",
+   "start": 60,
+   "dur": 7.83,
+   "key": "vacio",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_cama_estomago_vacio.png"
+  },
+  {
+   "id": "vacio_1",
+   "start": 67.83,
+   "dur": 5.87,
+   "key": "vacio",
+   "kind": "stat",
+   "big": "12 h",
+   "unit": "sin proteína",
+   "label": "Desde las 7 de la tarde a la mañana, sin una sola gota de proteína.",
+   "tone": "warn"
+  },
+  {
+   "id": "saca_piernas_0",
+   "start": 73.7,
+   "dur": 5.47,
+   "key": "saca_piernas",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_cuerpo_desarma_musculo.png"
+    }
+   ]
+  },
+  {
+   "id": "saca_piernas_1",
+   "start": 79.17,
+   "dur": 4.2,
+   "key": "saca_piernas",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Los"
+    },
+    {
+     "t": "saca"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "tus"
+    },
+    {
+     "t": "piernas",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "saca_piernas_2",
+   "start": 82.81,
+   "dur": 3.19,
+   "key": "saca_piernas",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_piernas_adelgazan.png"
+  },
+  {
+   "id": "barato_0",
+   "start": 86,
+   "dur": 4.48,
+   "key": "barato",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_requeson_heladera.png"
+  },
+  {
+   "id": "barato_1",
+   "start": 90.48,
+   "dur": 2.8,
+   "key": "barato",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "BARATO Y EN LA HELADERA",
+     "sub": "ninguna empresa te lo recomienda: no se patenta ni se vende caro",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/barato_1.mp4"
+  },
+  {
+   "id": "teaser_error_0",
+   "start": 95.98,
+   "dur": 6.54,
+   "key": "teaser_error",
+   "kind": "lowerthird",
+   "title": "El ERROR de 9 de cada 10 — te lo cuento al final",
+   "tone": "warn",
+   "kicker": "Quedate hasta el final",
+   "desc": "Un detalle mínimo que hace que sigan perdiendo fuerza. Y lo cambia todo."
+  },
+  {
+   "id": "teaser_error_1",
+   "start": 102.52,
+   "dur": 5.72,
+   "key": "teaser_error",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_hombre_pensativo_noche.png"
+  },
+  {
+   "id": "intro_0",
+   "start": 108.24,
+   "dur": 4.2,
+   "key": "intro",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Bienvenido a los archivos",
+   "image": "img/p_vlnljrhb5gbv_federer_saluda.png"
+  },
+  {
+   "id": "principio_0",
+   "start": 111.26,
+   "dur": 2.17,
+   "key": "principio",
+   "kind": "talk"
+  },
+  {
+   "id": "principio_1",
+   "start": 113.43,
+   "dur": 3.03,
+   "key": "principio",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_adulto_mayor_reflexivo.png"
+  },
+  {
+   "id": "principio_2",
+   "start": 116.46,
+   "dur": 11.2,
+   "key": "principio",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_federer_consultorio.png"
+  },
+  {
+   "id": "sarcopenia_0",
+   "start": 127.66,
+   "dur": 2.8,
+   "key": "sarcopenia",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SARCOPENIA",
+     "sub": "sarco = músculo · penia = pérdida",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/sarcopenia_0.mp4"
+  },
+  {
+   "id": "sarcopenia_1",
+   "start": 131.85,
+   "dur": 4.2,
+   "key": "sarcopenia",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_sarcopenia_fibras.png"
+    }
+   ]
+  },
+  {
+   "id": "sarcopenia_2",
+   "start": 135.72,
+   "dur": 2.26,
+   "key": "sarcopenia",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_musculo_pierna_corte.png"
+  },
+  {
+   "id": "perdida_decada_0",
+   "start": 137.98,
+   "dur": 7.77,
+   "key": "perdida_decada",
+   "kind": "stat",
+   "big": "3-8%",
+   "unit": "por década",
+   "label": "de masa muscular se pierde desde los 30. Después de los 60 se dispara.",
+   "tone": "warn"
+  },
+  {
+   "id": "perdida_decada_1",
+   "start": 145.75,
+   "dur": 10.37,
+   "key": "perdida_decada",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_calendario_decadas.png"
+  },
+  {
+   "id": "mitad_fibras_0",
+   "start": 156.12,
+   "dur": 9.24,
+   "key": "mitad_fibras",
+   "kind": "stat",
+   "big": "50%",
+   "unit": "de tus fibras",
+   "label": "Un adulto mayor puede perder la mitad de sus fibras entre los 50 y los 80.",
+   "tone": "warn"
+  },
+  {
+   "id": "mitad_fibras_1",
+   "start": 165.36,
+   "dur": 1.54,
+   "key": "mitad_fibras",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_escalera_cuesta.png"
+  },
+  {
+   "id": "mitad_fibras_2",
+   "start": 166.9,
+   "dur": 1.54,
+   "key": "mitad_fibras",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_caminar_baston.png"
+  },
+  {
+   "id": "piernas_primero_0",
+   "start": 168.44,
+   "dur": 4.2,
+   "key": "piernas_primero",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_piernas_primeras.png"
+    }
+   ]
+  },
+  {
+   "id": "piernas_primero_1",
+   "start": 170.28,
+   "dur": 2.8,
+   "key": "piernas_primero",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LAS PIERNAS, PRIMERO",
+     "sub": "el cuerpo recorta donde más energía cuesta",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/piernas_primero_1.mp4"
+  },
+  {
+   "id": "prueba_silla_0",
+   "start": 185.9,
+   "dur": 41.78,
+   "key": "prueba_silla",
+   "kind": "process",
+   "title": "La prueba de la silla",
+   "eyebrow": "La que usamos los médicos",
+   "steps": [
+    {
+     "title": "Te vas para adelante",
+     "desc": "y no salís",
+     "image": "img/p_vlnljrhb5gbv_intento_pararse.png"
+    },
+    {
+     "title": "Segundo intento",
+     "desc": "te empujás con los brazos",
+     "image": "img/p_vlnljrhb5gbv_empujarse_brazos.png"
+    },
+    {
+     "title": "El cuádriceps",
+     "desc": "perdió fuerza — se recupera",
+     "image": "img/p_vlnljrhb5gbv_cuadriceps_muslo.png"
+    }
+   ]
+  },
+  {
+   "id": "caidas_0",
+   "start": 227.68,
+   "dur": 5.79,
+   "key": "caidas",
+   "kind": "stat",
+   "big": "65+",
+   "unit": "años",
+   "label": "Las caídas: una de las principales causas de muerte por accidente. Detrás, piernas sin fuerza.",
+   "tone": "warn"
+  },
+  {
+   "id": "caidas_1",
+   "start": 233.47,
+   "dur": 7.71,
+   "key": "caidas",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_adulto_tropieza.png"
+  },
+  {
+   "id": "caidas_2",
+   "start": 241.18,
+   "dur": 7.72,
+   "key": "caidas",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_cadera_rota_hospital.png"
+  },
+  {
+   "id": "tropezon_0",
+   "start": 248.9,
+   "dur": 6.01,
+   "key": "tropezon",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "músculo"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "reaccionó"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "tiempo",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "tropezon_1",
+   "start": 254.91,
+   "dur": 5.25,
+   "key": "tropezon",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_tropiezo_vereda.png"
+  },
+  {
+   "id": "no_resignar_0",
+   "start": 260.16,
+   "dur": 10.7,
+   "key": "no_resignar",
+   "kind": "mitoverdad",
+   "myth": "La debilidad en las piernas es la edad",
+   "truth": "Es un proceso: se frena y muchas veces se da vuelta",
+   "flipAt": 173
+  },
+  {
+   "id": "no_resignar_1",
+   "start": 270.86,
+   "dur": 2.8,
+   "key": "no_resignar",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO ESTÁS CONDENADO",
+     "sub": "estás mal alimentado en el momento equivocado del día",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/no_resignar_1.mp4"
+  },
+  {
+   "id": "resistencia_0",
+   "start": 287.6,
+   "dur": 10.77,
+   "key": "resistencia",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_resistencia_anabolica.png"
+    }
+   ]
+  },
+  {
+   "id": "resistencia_1",
+   "start": 298.37,
+   "dur": 2.8,
+   "key": "resistencia",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "RESISTENCIA ANABÓLICA",
+     "sub": "a tu edad el músculo escucha menos la proteína",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/resistencia_1.mp4"
+  },
+  {
+   "id": "milanesa_0",
+   "start": 310.04,
+   "dur": 4.2,
+   "key": "milanesa",
+   "kind": "splitlist",
+   "title": "La regla cambió y nadie te avisó",
+   "items": [
+    "Joven: comés poco y el músculo construye",
+    "Después de los 60: necesita MÁS y concentrada",
+    "La milanesa del nieto ya no te alcanza"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "milanesa_1",
+   "start": 313.77,
+   "dur": 4.74,
+   "key": "milanesa",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_plato_milanesa.png"
+  },
+  {
+   "id": "milanesa_2",
+   "start": 318.51,
+   "dur": 4.75,
+   "key": "milanesa",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_abuelo_nieto_comer.png"
+  },
+  {
+   "id": "por_noche_0",
+   "start": 323.26,
+   "dur": 2.9,
+   "key": "por_noche",
+   "kind": "talk"
+  },
+  {
+   "id": "por_noche_1",
+   "start": 326.16,
+   "dur": 6.97,
+   "key": "por_noche",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_modo_reparacion.png"
+    }
+   ]
+  },
+  {
+   "id": "por_noche_2",
+   "start": 333.13,
+   "dur": 4.07,
+   "key": "por_noche",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_hombre_durmiendo.png"
+  },
+  {
+   "id": "hormona_0",
+   "start": 337.2,
+   "dur": 6.86,
+   "key": "hormona",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_hormona_crecimiento.png"
+    }
+   ]
+  },
+  {
+   "id": "hormona_1",
+   "start": 344.06,
+   "dur": 4.2,
+   "key": "hormona",
+   "kind": "checklist",
+   "title": "La hormona de crecimiento repara",
+   "items": [
+    {
+     "text": "Músculo",
+     "state": "done"
+    },
+    {
+     "text": "Piel",
+     "state": "done"
+    },
+    {
+     "text": "Hueso",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "hormona_2",
+   "start": 347.5,
+   "dur": 4,
+   "key": "hormona",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_sueno_profundo.png"
+  },
+  {
+   "id": "ladrillos_0",
+   "start": 351.5,
+   "dur": 3.17,
+   "key": "ladrillos",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LADRILLOS = AMINOÁCIDOS",
+     "sub": "vienen de la proteína que comés",
+     "tone": "teal",
+     "at": 11
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/ladrillos_0.mp4"
+  },
+  {
+   "id": "ladrillos_1",
+   "start": 361.78,
+   "dur": 5.54,
+   "key": "ladrillos",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_ladrillos_construccion.png"
+  },
+  {
+   "id": "desarma_0",
+   "start": 367.32,
+   "dur": 3.34,
+   "key": "desarma",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_cuerpo_roba_piernas.png"
+    }
+   ]
+  },
+  {
+   "id": "desarma_1",
+   "start": 370.66,
+   "dur": 5.81,
+   "key": "desarma",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Te"
+    },
+    {
+     "t": "desarma"
+    },
+    {
+     "t": "las"
+    },
+    {
+     "t": "piernas",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "desarma_2",
+   "start": 376.47,
+   "dur": 5.09,
+   "key": "desarma",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_piernas_flacas_cama.png"
+  },
+  {
+   "id": "estudio_0",
+   "start": 381.56,
+   "dur": 1.54,
+   "key": "estudio",
+   "kind": "talk"
+  },
+  {
+   "id": "estudio_1",
+   "start": 383.1,
+   "dur": 4.2,
+   "key": "estudio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_estudio_maastricht.png"
+    }
+   ]
+  },
+  {
+   "id": "estudio_2",
+   "start": 386.8,
+   "dur": 2.16,
+   "key": "estudio",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_laboratorio_estudio.png"
+  },
+  {
+   "id": "experimento_0",
+   "start": 388.96,
+   "dur": 21.96,
+   "key": "experimento",
+   "kind": "process",
+   "title": "El experimento",
+   "eyebrow": "Universidad de Maastricht, 2012",
+   "steps": [
+    {
+     "title": "Grupo A",
+     "desc": "proteína antes de dormir",
+     "image": "img/p_vlnljrhb5gbv_vaso_proteina_noche.png"
+    },
+    {
+     "title": "Grupo B",
+     "desc": "nada",
+     "image": "img/p_vlnljrhb5gbv_cama_vacia.png"
+    },
+    {
+     "title": "Resultado",
+     "desc": "A fabricó músculo durmiendo",
+     "image": "img/p_vlnljrhb5gbv_musculo_reparado.png"
+    }
+   ]
+  },
+  {
+   "id": "resultado_0",
+   "start": 410.92,
+   "dur": 4.2,
+   "key": "resultado",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "FABRICARON MÚSCULO DURMIENDO",
+     "sub": "sin levantar una sola pesa",
+     "tone": "teal",
+     "at": 42
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/resultado_0.mp4"
+  },
+  {
+   "id": "resultado_1",
+   "start": 419.86,
+   "dur": 4.82,
+   "key": "resultado",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_musculo_pierna_sano.png"
+  },
+  {
+   "id": "cantidad_0",
+   "start": 424.68,
+   "dur": 8.65,
+   "key": "cantidad",
+   "kind": "stat",
+   "big": "30-40 g",
+   "unit": "de proteína",
+   "label": "Un buen tazón de requesón, o un yogur griego grande con nueces. Nada raro ni caro.",
+   "tone": "teal"
+  },
+  {
+   "id": "cantidad_1",
+   "start": 433.33,
+   "dur": 11.53,
+   "key": "cantidad",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_tazon_requeson_nueces.png"
+  },
+  {
+   "id": "caseina_0",
+   "start": 444.86,
+   "dur": 4.2,
+   "key": "caseina",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_caseina_lenta.png"
+    }
+   ]
+  },
+  {
+   "id": "caseina_1",
+   "start": 446.32,
+   "dur": 2.8,
+   "key": "caseina",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "CASEÍNA",
+     "sub": "la proteína de la leche: yogur, queso, requesón",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/caseina_1.mp4"
+  },
+  {
+   "id": "caseina_2",
+   "start": 450.23,
+   "dur": 2.11,
+   "key": "caseina",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_leche_vaso_caseina.png"
+  },
+  {
+   "id": "lenta_0",
+   "start": 452.34,
+   "dur": 15.34,
+   "key": "lenta",
+   "kind": "splitlist",
+   "title": "Por qué la caseína gana de noche",
+   "items": [
+    "Entra despacio, gota a gota, durante horas",
+    "Otras proteínas: a las 2 h ya no queda nada",
+    "La caseína te cubre la madrugada entera"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "lenta_1",
+   "start": 467.68,
+   "dur": 19.52,
+   "key": "lenta",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_gota_leche_lenta.png"
+  },
+  {
+   "id": "leucina_0",
+   "start": 487.2,
+   "dur": 6.54,
+   "key": "leucina",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_leucina_interruptor.png"
+    }
+   ]
+  },
+  {
+   "id": "leucina_1",
+   "start": 493.74,
+   "dur": 2.8,
+   "key": "leucina",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LEUCINA, EL INTERRUPTOR",
+     "sub": "le da la orden al músculo: construí ahora",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/leucina_1.mp4"
+  },
+  {
+   "id": "leucina_dosis_0",
+   "start": 500.82,
+   "dur": 11.34,
+   "key": "leucina_dosis",
+   "kind": "stat",
+   "big": "2,5-3 g",
+   "unit": "de leucina",
+   "label": "en una sola comida para prender el interruptor. A tu edad está más duro.",
+   "tone": "teal"
+  },
+  {
+   "id": "leucina_dosis_1",
+   "start": 512.16,
+   "dur": 11.88,
+   "key": "leucina_dosis",
+   "kind": "chips",
+   "title": "Dónde está tu leucina",
+   "chips": [
+    "Requesón · Yogur griego",
+    "Huevo · Quesos",
+    "Cantidad y momento correctos"
+   ]
+  },
+  {
+   "id": "leucina_dosis_2",
+   "start": 524.04,
+   "dur": 15.12,
+   "key": "leucina_dosis",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_huevo_queso_leucina.png"
+  },
+  {
+   "id": "estrella_0",
+   "start": 539.16,
+   "dur": 4.14,
+   "key": "estrella",
+   "kind": "talk"
+  },
+  {
+   "id": "estrella_1",
+   "start": 543.3,
+   "dur": 2.8,
+   "key": "estrella",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "UNA PORCIÓN DE REQUESÓN",
+     "sub": "queso blanco, ricota, requesón — casi caseína pura",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/estrella_1.mp4"
+  },
+  {
+   "id": "estrella_2",
+   "start": 549.24,
+   "dur": 22.42,
+   "key": "estrella",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_requeson_tazon_hero.png",
+   "hold": true
+  },
+  {
+   "id": "preparar_0",
+   "start": 571.66,
+   "dur": 28.72,
+   "key": "preparar",
+   "kind": "process",
+   "title": "Tu postre de la noche en 3 minutos",
+   "eyebrow": "Para que no sea un castigo",
+   "steps": [
+    {
+     "title": "Requesón",
+     "desc": "un tazón chico",
+     "image": "img/p_vlnljrhb5gbv_requeson_cuchara.png"
+    },
+    {
+     "title": "Nueces",
+     "desc": "un puñado, 5 o 6",
+     "image": "img/p_vlnljrhb5gbv_nueces_encima.png"
+    },
+    {
+     "title": "Miel o banana",
+     "desc": "si lo querés dulce",
+     "image": "img/p_vlnljrhb5gbv_miel_banana.png"
+    }
+   ]
+  },
+  {
+   "id": "guia1_0",
+   "start": 600.38,
+   "dur": 7.28,
+   "key": "guia1",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_vlnljrhb5gbv_guia_heladera.png",
+   "imageDarken": 0.62,
+   "title": "Guía gratis: las cantidades exactas",
+   "chips": [
+    "Cuánto requesón, cuántas nueces",
+    "A qué hora de la noche",
+    "archivos-federer.vercel.app"
+   ]
+  },
+  {
+   "id": "guia1_1",
+   "start": 607.66,
+   "dur": 10.02,
+   "key": "guia1",
+   "kind": "lowerthird",
+   "title": "Pegala al lado de la heladera — es un regalo",
+   "tone": "teal",
+   "kicker": "Guía gratuita del canal",
+   "desc": "archivos-federer.vercel.app · seguí escuchando, falta lo mejor."
+  },
+  {
+   "id": "alternativas_0",
+   "start": 617.68,
+   "dur": 9.59,
+   "key": "alternativas",
+   "kind": "checklist",
+   "title": "Si no conseguís requesón",
+   "items": [
+    {
+     "text": "Yogur natural ENTERO, no descremado",
+     "state": "done"
+    },
+    {
+     "text": "Yogur griego: casi el doble de proteína",
+     "state": "done"
+    },
+    {
+     "text": "Un par de huevos duros pelados",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "alternativas_1",
+   "start": 627.27,
+   "dur": 11.18,
+   "key": "alternativas",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_yogur_griego_nueces.png"
+  },
+  {
+   "id": "alternativas_2",
+   "start": 638.45,
+   "dur": 11.19,
+   "key": "alternativas",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_huevos_duros_pelados.png"
+  },
+  {
+   "id": "porcion_chica_0",
+   "start": 649.64,
+   "dur": 4.47,
+   "key": "porcion_chica",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "MEDIA HORA ANTES, SENTADO",
+     "sub": "porción chica, masticando despacio — no en la cama",
+     "tone": "teal",
+     "at": 50
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/porcion_chica_0.mp4"
+  },
+  {
+   "id": "porcion_chica_1",
+   "start": 670.91,
+   "dur": 11.45,
+   "key": "porcion_chica",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_comer_sentado_tranquilo.png"
+  },
+  {
+   "id": "refuerzos_0",
+   "start": 682.36,
+   "dur": 5.21,
+   "key": "refuerzos",
+   "kind": "mitoverdad",
+   "myth": "Con la proteína de la noche alcanza",
+   "truth": "La proteína es la estrella, pero hay 3 refuerzos",
+   "flipAt": 98
+  },
+  {
+   "id": "refuerzos_1",
+   "start": 687.57,
+   "dur": 3.31,
+   "key": "refuerzos",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_tres_alimentos_refuerzo.png"
+  },
+  {
+   "id": "causa1_0",
+   "start": 690.88,
+   "dur": 9.84,
+   "key": "causa1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Vitamina D",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "vitd_musculo_0",
+   "start": 700.72,
+   "dur": 8,
+   "key": "vitd_musculo",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_receptores_vitd.png"
+    }
+   ]
+  },
+  {
+   "id": "vitd_musculo_1",
+   "start": 708.72,
+   "dur": 2.8,
+   "key": "vitd_musculo",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO ES SOLO EL HUESO",
+     "sub": "sin vitamina D el músculo reacciona lento y no te sostiene",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/vitd_musculo_1.mp4"
+  },
+  {
+   "id": "vitd_caidas_0",
+   "start": 717.38,
+   "dur": 25.43,
+   "key": "vitd_caidas",
+   "kind": "mitoverdad",
+   "myth": "En una caída lo que falla es el hueso",
+   "truth": "Es el músculo que no reaccionó a tiempo",
+   "flipAt": 151
+  },
+  {
+   "id": "vitd_caidas_1",
+   "start": 742.81,
+   "dur": 9.8,
+   "key": "vitd_caidas",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_sol_manana_brazos.png"
+  },
+  {
+   "id": "vitd_sol_0",
+   "start": 752.61,
+   "dur": 4.2,
+   "key": "vitd_sol",
+   "kind": "stat",
+   "big": "15-20 min",
+   "unit": "de sol",
+   "label": "Sol de mañana en los brazos. Un análisis dice en un minuto si la tenés baja.",
+   "tone": "teal"
+  },
+  {
+   "id": "vitd_sol_1",
+   "start": 754.78,
+   "dur": 2.89,
+   "key": "vitd_sol",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_analisis_sangre_tubo.png"
+  },
+  {
+   "id": "causa2_0",
+   "start": 757.67,
+   "dur": 3.6,
+   "key": "causa2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Magnesio",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "magnesio_mec_0",
+   "start": 761.27,
+   "dur": 18.79,
+   "key": "magnesio_mec",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_magnesio_musculo.png"
+    }
+   ]
+  },
+  {
+   "id": "magnesio_mec_1",
+   "start": 780.06,
+   "dur": 8.61,
+   "key": "magnesio_mec",
+   "kind": "splitlist",
+   "title": "El magnesio, dos cosas a la vez",
+   "items": [
+    "Contrae y relaja el músculo (menos calambres)",
+    "Te hace dormir más profundo",
+    "Más sueño = más hormona de crecimiento"
+   ],
+   "palette": "G"
+  },
+  {
+   "id": "magnesio_donde_0",
+   "start": 788.67,
+   "dur": 15.56,
+   "key": "magnesio_donde",
+   "kind": "chips",
+   "title": "Dónde está el magnesio",
+   "chips": [
+    "Nueces · semillas de zapallo",
+    "Hojas verdes · poroto",
+    "Chocolate amargo de verdad"
+   ]
+  },
+  {
+   "id": "magnesio_donde_1",
+   "start": 804.23,
+   "dur": 2.8,
+   "key": "magnesio_donde",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NUECES = 2 EN 1",
+     "sub": "proteína lenta y magnesio en un solo bocado",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/magnesio_donde_1.mp4"
+  },
+  {
+   "id": "magnesio_donde_2",
+   "start": 808.13,
+   "dur": 2.1,
+   "key": "magnesio_donde",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_nueces_semillas_hojas.png"
+  },
+  {
+   "id": "causa3_0",
+   "start": 810.23,
+   "dur": 5.48,
+   "key": "causa3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Glicina",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "glicina_mec_0",
+   "start": 815.71,
+   "dur": 4.2,
+   "key": "glicina_mec",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_glicina_sueno.png"
+    }
+   ]
+  },
+  {
+   "id": "glicina_mec_1",
+   "start": 817.75,
+   "dur": 2.8,
+   "key": "glicina_mec",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "GLICINA",
+     "sub": "gelatina y caldo de huesos — sueño profundo más rápido",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/glicina_mec_1.mp4"
+  },
+  {
+   "id": "caldo_huesos_0",
+   "start": 850.01,
+   "dur": 13.83,
+   "key": "caldo_huesos",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_caldo_huesos_olla.png"
+  },
+  {
+   "id": "caldo_huesos_1",
+   "start": 863.84,
+   "dur": 10.87,
+   "key": "caldo_huesos",
+   "kind": "callout",
+   "image": "img/p_vlnljrhb5gbv_caldo_huesos_olla.png",
+   "figure": "Caldo de huesos, tibio",
+   "caption": "Media hora antes de dormir. La misma olla de siempre de tus bisabuelas."
+  },
+  {
+   "id": "circulacion_0",
+   "start": 874.71,
+   "dur": 12.04,
+   "key": "circulacion",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_circulacion_riego.png"
+    }
+   ]
+  },
+  {
+   "id": "circulacion_1",
+   "start": 886.75,
+   "dur": 11.04,
+   "key": "circulacion",
+   "kind": "mitoverdad",
+   "myth": "Alcanza con tener los ladrillos",
+   "truth": "Sin circulación, el camión no llega a la obra",
+   "flipAt": 139
+  },
+  {
+   "id": "circulacion_tips_0",
+   "start": 897.79,
+   "dur": 4.2,
+   "key": "circulacion_tips",
+   "kind": "checklist",
+   "title": "Que la sangre llegue a la pierna",
+   "items": [
+    {
+     "text": "No cenar tan pesado",
+     "state": "done"
+    },
+    {
+     "text": "Suficiente agua durante el día",
+     "state": "done"
+    },
+    {
+     "text": "Mover las piernas: la bomba trabaja",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "circulacion_tips_1",
+   "start": 900.15,
+   "dur": 2.76,
+   "key": "circulacion_tips",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_caminar_piernas_bomba.png"
+  },
+  {
+   "id": "honesto_0",
+   "start": 902.91,
+   "dur": 5.32,
+   "key": "honesto",
+   "kind": "talk"
+  },
+  {
+   "id": "honesto_1",
+   "start": 908.23,
+   "dur": 11,
+   "key": "honesto",
+   "kind": "lowerthird",
+   "title": "Esto no es magia: dale un mes, dale dos",
+   "tone": "teal",
+   "kicker": "Con toda honestidad",
+   "desc": "El músculo se construye ladrillo por ladrillo, noche por noche."
+  },
+  {
+   "id": "honesto_2",
+   "start": 919.23,
+   "dur": 9.62,
+   "key": "honesto",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_calendario_un_mes.png"
+  },
+  {
+   "id": "no_reemplaza_0",
+   "start": 928.85,
+   "dur": 14.06,
+   "key": "no_reemplaza",
+   "kind": "mitoverdad",
+   "myth": "Con la mejor proteína ya alcanza",
+   "truth": "Sin movimiento, el cuerpo no ve motivo para el músculo",
+   "flipAt": 242
+  },
+  {
+   "id": "no_reemplaza_1",
+   "start": 942.91,
+   "dur": 10.84,
+   "key": "no_reemplaza",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "La"
+    },
+    {
+     "t": "comida"
+    },
+    {
+     "t": "pone"
+    },
+    {
+     "t": "los"
+    },
+    {
+     "t": "ladrillos"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "movimiento"
+    },
+    {
+     "t": "los"
+    },
+    {
+     "t": "ubica",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "sentadillas_0",
+   "start": 953.75,
+   "dur": 12.05,
+   "key": "sentadillas",
+   "kind": "stat",
+   "big": "10 × 2",
+   "unit": "por día",
+   "label": "Levantate de la silla 10 veces, 2 veces al día. Es una razón para quedarse.",
+   "tone": "teal"
+  },
+  {
+   "id": "sentadillas_1",
+   "start": 965.8,
+   "dur": 16.07,
+   "key": "sentadillas",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_sentadilla_silla.png"
+  },
+  {
+   "id": "rinon_0",
+   "start": 981.87,
+   "dur": 13.78,
+   "key": "rinon",
+   "kind": "lowerthird",
+   "title": "¿Riñón o medicación? Hablá con tu médico primero",
+   "tone": "warn",
+   "kicker": "Se respeta la salud",
+   "desc": "Yo te doy el conocimiento; las decisiones se toman con tu médico al lado."
+  },
+  {
+   "id": "rinon_1",
+   "start": 995.65,
+   "dur": 12.06,
+   "key": "rinon",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_medico_paciente_consulta.png"
+  },
+  {
+   "id": "enemigo_0",
+   "start": 1007.71,
+   "dur": 2.54,
+   "key": "enemigo",
+   "kind": "talk"
+  },
+  {
+   "id": "enemigo_1",
+   "start": 1010.25,
+   "dur": 2.8,
+   "key": "enemigo",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO HAY PASTILLA",
+     "sub": "nadie se hace rico recomendándote requesón",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/enemigo_1.mp4"
+  },
+  {
+   "id": "industria_0",
+   "start": 1028.85,
+   "dur": 4.67,
+   "key": "industria",
+   "kind": "splitlist",
+   "title": "Lo que sí te venden",
+   "items": [
+    "Potes de polvo a precio de oro",
+    "Máquinas de gimnasio que intimidan",
+    "Cuotas que no usás"
+   ],
+   "palette": "G"
+  },
+  {
+   "id": "industria_1",
+   "start": 1033.52,
+   "dur": 5.95,
+   "key": "industria",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_suplementos_polvo.png"
+  },
+  {
+   "id": "industria_2",
+   "start": 1039.47,
+   "dur": 5.94,
+   "key": "industria",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_gimnasio_maquinas.png"
+  },
+  {
+   "id": "gratis_0",
+   "start": 1045.41,
+   "dur": 21.91,
+   "key": "gratis",
+   "kind": "mitoverdad",
+   "myth": "Perder fuerza en las piernas es normal a tu edad",
+   "truth": "Nunca lo fue: es la excusa más cómoda que existe",
+   "flipAt": 276
+  },
+  {
+   "id": "gratis_1",
+   "start": 1067.32,
+   "dur": 13.95,
+   "key": "gratis",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_dinero_suplementos_caros.png"
+  },
+  {
+   "id": "diferencia_0",
+   "start": 1081.27,
+   "dur": 5.7,
+   "key": "diferencia",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Las"
+    },
+    {
+     "t": "encendemos"
+    },
+    {
+     "t": "con"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "porción"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "requesón",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "diferencia_1",
+   "start": 1086.97,
+   "dur": 4.98,
+   "key": "diferencia",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_requeson_antes_dormir.png"
+  },
+  {
+   "id": "error_0",
+   "start": 1091.95,
+   "dur": 11.42,
+   "key": "error",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "El error: el horario",
+   "tone": "warn",
+   "w": 3.8
+  },
+  {
+   "id": "error_horario_0",
+   "start": 1103.37,
+   "dur": 4.24,
+   "key": "error_horario",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_ventana_proteina.png"
+    }
+   ]
+  },
+  {
+   "id": "error_horario_1",
+   "start": 1107.61,
+   "dur": 1.86,
+   "key": "error_horario",
+   "kind": "stat",
+   "big": "25-30 g",
+   "unit": "por comida",
+   "label": "Lo que te pasás de ahí en un solo plato no se guarda: se quema o se elimina.",
+   "tone": "warn"
+  },
+  {
+   "id": "error_almuerzo_0",
+   "start": 1109.47,
+   "dur": 63.57,
+   "key": "error_almuerzo",
+   "kind": "process",
+   "title": "El error de todos",
+   "eyebrow": "Toda la proteína al mediodía",
+   "steps": [
+    {
+     "title": "Mediodía",
+     "desc": "un asado enorme",
+     "image": "img/p_vlnljrhb5gbv_asado_mediodia.png"
+    },
+    {
+     "title": "Noche",
+     "desc": "un té y una tostada",
+     "image": "img/p_vlnljrhb5gbv_te_tostada_noche.png"
+    },
+    {
+     "title": "12-14 h",
+     "desc": "sin un solo aminoácido",
+     "image": "img/p_vlnljrhb5gbv_reloj_noche.png"
+    }
+   ]
+  },
+  {
+   "id": "reparto_0",
+   "start": 1173.04,
+   "dur": 4.2,
+   "key": "reparto",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vlnljrhb5gbv_reparto_comidas.png"
+    }
+   ]
+  },
+  {
+   "id": "reparto_1",
+   "start": 1175.28,
+   "dur": 7.13,
+   "key": "reparto",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Desayuno",
+     "sub": "un poco de proteína",
+     "at": 0
+    },
+    {
+     "card": "Almuerzo",
+     "sub": "un poco",
+     "at": 46
+    },
+    {
+     "card": "Cena + antes de dormir",
+     "sub": "cubrí la noche entera",
+     "at": 88
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/reparto_1.mp4"
+  },
+  {
+   "id": "cuatro_0",
+   "start": 1185.48,
+   "dur": 2.8,
+   "key": "cuatro",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "4 MOMENTOS, NO UNO",
+     "sub": "y sobre todo, una porción justo antes de dormir",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/cuatro_0.mp4"
+  },
+  {
+   "id": "cuatro_1",
+   "start": 1194.66,
+   "dur": 4.94,
+   "key": "cuatro",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_cuatro_comidas.png"
+  },
+  {
+   "id": "arregla_0",
+   "start": 1199.6,
+   "dur": 5.74,
+   "key": "arregla",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Comé"
+    },
+    {
+     "t": "mejor"
+    },
+    {
+     "t": "repartido"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "gratis",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "arregla_1",
+   "start": 1205.34,
+   "dur": 5.02,
+   "key": "arregla",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_cuatro_platos_dia.png"
+  },
+  {
+   "id": "recap_0",
+   "start": 1210.36,
+   "dur": 14.35,
+   "key": "recap",
+   "kind": "talk"
+  },
+  {
+   "id": "recap_1",
+   "start": 1224.71,
+   "dur": 43.05,
+   "key": "recap",
+   "kind": "guardaesto",
+   "title": "Guardá esto: los 6 puntos",
+   "items": [
+    {
+     "text": "1. Proteína lenta antes de dormir (~30 g)",
+     "image": "img/p_vlnljrhb5gbv_requeson_tazon_hero.png"
+    },
+    {
+     "text": "2. Un puñado de nueces arriba",
+     "image": "img/p_vlnljrhb5gbv_nueces_encima.png"
+    },
+    {
+     "text": "3. Vitamina D: sol y suplemento si indican",
+     "image": "img/p_vlnljrhb5gbv_sol_manana_brazos.png"
+    },
+    {
+     "text": "4. Magnesio + caldo con glicina",
+     "image": "img/p_vlnljrhb5gbv_caldo_huesos_olla.png"
+    },
+    {
+     "text": "5. Repartí la proteína en 4 momentos",
+     "image": "img/p_vlnljrhb5gbv_cuatro_comidas.png"
+    },
+    {
+     "text": "6. Mové las piernas todos los días",
+     "image": "img/p_vlnljrhb5gbv_sentadilla_silla.png"
+    }
+   ]
+  },
+  {
+   "id": "recap_mov_0",
+   "start": 1267.76,
+   "dur": 4.44,
+   "key": "recap_mov",
+   "kind": "stat",
+   "big": "10 × 2",
+   "unit": "sentadillas",
+   "label": "Levantate de la silla 10 veces, 2 veces al día. Caminá hasta la esquina.",
+   "tone": "teal"
+  },
+  {
+   "id": "recap_mov_1",
+   "start": 1272.2,
+   "dur": 5.92,
+   "key": "recap_mov",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_caminar_esquina.png"
+  },
+  {
+   "id": "empieza_0",
+   "start": 1278.12,
+   "dur": 6,
+   "key": "empieza",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "EMPEZÁ ESTA NOCHE",
+     "sub": "un pote de requesón, unas nueces, y a dormir",
+     "tone": "teal",
+     "at": 96
+    }
+   ],
+   "clip": "avatar_clips/vlnljrhb5gbv/empieza_0.mp4"
+  },
+  {
+   "id": "empieza_1",
+   "start": 1284.75,
+   "dur": 3.57,
+   "key": "empieza",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_pote_requeson_cama.png"
+  },
+  {
+   "id": "guia2_0",
+   "start": 1288.32,
+   "dur": 22.34,
+   "key": "guia2",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_vlnljrhb5gbv_guia_celular_mano.png",
+   "imageDarken": 0.62,
+   "title": "La guía completa, gratis",
+   "chips": [
+    "Qué comer cada noche + cantidades",
+    "Cómo repartir + rutina de la silla",
+    "archivos-federer.vercel.app"
+   ]
+  },
+  {
+   "id": "guia2_1",
+   "start": 1310.66,
+   "dur": 7.9,
+   "key": "guia2",
+   "kind": "lowerthird",
+   "title": "Bajala y pegala en la heladera — es un regalo",
+   "tone": "teal",
+   "kicker": "Guía gratuita",
+   "desc": "archivos-federer.vercel.app · para acompañarte todas las noches."
+  },
+  {
+   "id": "comentarios_0",
+   "start": 1318.56,
+   "dur": 7.94,
+   "key": "comentarios",
+   "kind": "lowerthird",
+   "title": "Contame tu edad y si te cuesta pararte de la silla",
+   "tone": "teal",
+   "kicker": "En los comentarios",
+   "desc": "Los leo todos. Saber en qué punto estás me ayuda a preparar el próximo archivo."
+  },
+  {
+   "id": "comentarios_1",
+   "start": 1326.5,
+   "dur": 6.94,
+   "key": "comentarios",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_comentarios_celular.png"
+  },
+  {
+   "id": "teaser_0",
+   "start": 1333.44,
+   "dur": 12.73,
+   "key": "teaser",
+   "kind": "lowerthird",
+   "title": "Próximo: el único ejercicio que hacés sentado",
+   "tone": "teal",
+   "kicker": "No te lo pierdas",
+   "desc": "Despierta las piernas más rápido que caminar una hora. Casi nadie lo recomienda."
+  },
+  {
+   "id": "teaser_1",
+   "start": 1346.17,
+   "dur": 11.13,
+   "key": "teaser",
+   "kind": "raw",
+   "src": "img/p_vlnljrhb5gbv_ejercicio_sentado_silla.png"
+  },
+  {
+   "id": "cierre_0",
+   "start": 1357.3,
+   "dur": 2.46,
+   "key": "cierre",
+   "kind": "talk"
+  },
+  {
+   "id": "cierre_1",
+   "start": 1359.76,
+   "dur": 6.96,
+   "key": "cierre",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Tus"
+    },
+    {
+     "t": "piernas"
+    },
+    {
+     "t": "solo"
+    },
+    {
+     "t": "esperan"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "las"
+    },
+    {
+     "t": "alimentes",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "close_0",
+   "start": 1366.72,
+   "dur": 4.98,
+   "key": "close",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Cada semana, salud real para después de los 60",
+   "image": "img/p_vlnljrhb5gbv_federer_despide.png"
+  }
+ ]
+}

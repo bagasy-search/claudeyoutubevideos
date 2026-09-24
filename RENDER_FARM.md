@@ -43,5 +43,17 @@ workflow → espera → descarga **`out/<slug>.mp4`**. Listo, te entrego ese mp4
 - Runners ubuntu traen ffmpeg y 4 cores; `--concurrency=2` por pedazo va bien.
 - El `concat -c copy` exige que todos los pedazos compartan codec/params → los comparten
   (mismo render). Si alguna vez falla el concat, recodificar en el stitch (más lento).
-- PENDIENTE de probar end-to-end cuando el repo esté público + `gh` logueado (este esqueleto
-  está escrito pero aún no corrido).
+
+## ✅ PROBADO end-to-end (jun 2026) — timing y gotchas
+Validado en `bautielcrack4-web/claudeyoutubevideos` (público). Smoke de 8s = 2m21s; proyección
+de un video de 24 min ≈ **12-20 min de pared, gratis** (~10× más rápido que local ~3h).
+Gotchas que hubo que arreglar (ya corregidos en el repo):
+1. **YAML del `workflow_dispatch`**: `key:{...}` sin espacio rompe el parseo → GitHub no registra
+   el trigger (HTTP 422). Siempre `key: { ... }` con espacio.
+2. **`AvatarLayer` tenía `estufa.wav` hardcodeado** para el borde audio-reactive → 404 en el runner.
+   Ahora deriva el wav del `src` (`<slug>_opt.mp4` → `<slug>.wav`).
+3. **El tarball debe incluir `public/sfx/`** (camas + efectos) y el `.wav` — `farm.mjs` ya lo hace.
+4. **Los runners NO traen ffmpeg** → el job `stitch` lo instala (`apt-get install -y ffmpeg`).
+   (Los jobs de render usan el ffmpeg embebido de Remotion, por eso solo el stitch lo necesitaba.)
+- Optim. futura: cachear `node_modules` + el Chrome de Remotion (actions/cache) para sacar ~30-60s
+  de overhead por runner.

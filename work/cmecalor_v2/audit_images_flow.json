@@ -1,0 +1,94 @@
+{
+  "policy": "La referencia guía la apariencia general de Claudio, con identidad facial relajada. Se exigen literalidad por frase, mecánica plausible, manos correctas, equipos cerrados, seguridad estricta y ausencia de texto superpuesto.",
+  "items": [
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_flow_001.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058b0-72d2-73d3-a49d-5337a4acf6f4/exec-5fb122db-8dae-4f7d-a516-5c4a7291dc29.png",
+      "reason": "La calefacción permanece cerrada; Claudio separa visualmente el punto eléctrico oscuro del suministro de gas intacto, sin tocar la válvula ni abrir el equipo.",
+      "candidate": {
+        "start_ms": 146240,
+        "end_ms": 149640,
+        "caption_exact": "se corta la electricidad, pero el gas sigue llegando.",
+        "nouns": ["electricidad", "gas", "calefacción", "línea de gas"],
+        "action": "Claudio señala el punto eléctrico apagado y la calefacción cerrada alimentada por una línea de gas intacta.",
+        "safety": "Gabinete cerrado, instalación fija intacta, sin conductores expuestos, llama ni manipulación de la válvula de gas.",
+        "agnes_motion_es": "Claudio mueve apenas un dedo hacia el punto eléctrico apagado y luego el otro hacia la línea de gas; respiración y parpadeo naturales. Mantener inmóviles el gabinete, la tubería, la válvula y todas las conexiones; cámara de celular casi fija."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_flow_002.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058b0-72d2-73d3-a49d-5337a4acf6f4/exec-55919845-7fc3-4ab6-b342-50decba5cd87.png",
+      "reason": "El termostato físico marca una temperatura baja, Claudio lleva abrigo y el tanque exterior conserva un nivel cercano al máximo normal de llenado; no hay texto añadido.",
+      "candidate": {
+        "start_ms": 200840,
+        "end_ms": 204020,
+        "caption_exact": "La casa se enfría aunque el tanque de gas esté lleno.",
+        "nouns": ["casa", "tanque de gas", "termostato", "frío"],
+        "action": "Claudio se abriga y junta las manos junto al termostato frío mientras mira el tanque de gas lleno en el exterior.",
+        "safety": "Tanque derecho, al aire libre e intacto; válvula sin tocar, sin fuego y sin intervención en equipos.",
+        "agnes_motion_es": "Claudio frota suavemente las manos una vez y dirige la mirada del termostato al tanque. Mantener exactamente estables las cifras del termostato, la aguja del medidor, la válvula, la manguera y la forma del tanque; cámara fija."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_flow_003.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058b0-72d2-73d3-a49d-5337a4acf6f4/exec-c3c6c839-50af-4506-9b48-7714c86bab26.png",
+      "reason": "La toma muestra por separado la caja de control cerrada y el ventilador cerrado, con una batería pequeña al costado; Claudio señala ambos componentes sin manipularlos.",
+      "candidate": {
+        "start_ms": 225680,
+        "end_ms": 233400,
+        "caption_exact": "Aquí el respaldo no tiene que fabricar el calor, solo tiene que mantener vivo el cerebro y mover el aire o el agua.",
+        "nouns": ["respaldo", "calor", "cerebro", "aire", "agua", "caja de control", "ventilador", "batería"],
+        "action": "Claudio señala por separado la caja de control cerrada y el ventilador cerrado; una batería pequeña queda visible al costado.",
+        "safety": "Todas las cubiertas y cajas están cerradas; cables, tuberías y batería intactos; sin conductores, herramientas, fuego ni trabajo energizado.",
+        "agnes_motion_es": "Claudio alterna una indicación mínima entre la caja de control y el ventilador, con un leve asentimiento. Mantener rígidas la geometría del control, el ventilador, la batería, los cables, las tuberías y sus uniones; cámara casi inmóvil."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_flow_004.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058b0-72d2-73d3-a49d-5337a4acf6f4/exec-6bfa2906-6d96-48da-b41a-7cfa3afc511b.png",
+      "reason": "Un único cordón íntegro conecta la calefacción cerrada con un tomacorriente de pared; Claudio señala el enchufe sin tocarlo y no aparecen extensiones ni tableros abiertos.",
+      "candidate": {
+        "start_ms": 343760,
+        "end_ms": 347520,
+        "caption_exact": "En condiciones normales, el equipo recibe energía de la red.",
+        "nouns": ["equipo", "energía", "red", "tomacorriente", "cordón"],
+        "action": "Claudio señala el único enchufe completamente insertado que alimenta desde la pared a la calefacción cerrada.",
+        "safety": "Tomacorriente y cable íntegros, clavija asentada, gabinete cerrado, mano separada del enchufe y sin conductores expuestos.",
+        "agnes_motion_es": "Claudio acerca apenas el dedo hacia el enchufe sin tocarlo y vuelve a su posición, con parpadeo natural. Mantener fijos el enchufe, el tomacorriente, el cordón continuo y el gabinete; cámara de celular casi fija."
+      }
+    },
+    {
+      "status": "rejected",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058b0-72d2-73d3-a49d-5337a4acf6f4/exec-4ac3b4a0-7d5e-4410-a775-a19793e16e2e.png",
+      "reason": "El enchufe aparece montado sobre el propio equipo y el recorrido hacia la red no queda claro; se rechaza por conexión visualmente ambigua y se regenera.",
+      "candidate": {
+        "start_ms": 798400,
+        "end_ms": 802560,
+        "caption_exact": "Primero se prueba el sistema con la red normal y se anota el orden.",
+        "nouns": ["sistema", "red normal", "orden", "cuaderno", "calefacción"],
+        "action": "Claudio observa la calefacción cerrada durante una prueba de red y registra en un cuaderno el orden de arranque.",
+        "safety": "Equipo cerrado, sin intervención energizada; la conexión debe ser única, íntegra y claramente dirigida al tomacorriente de pared.",
+        "agnes_motion_es": "No animar: variante rechazada por ambigüedad en la conexión eléctrica."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_flow_005.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058b0-72d2-73d3-a49d-5337a4acf6f4/exec-76dcee62-d2fe-47fe-83a6-8ca0aea7375e.png",
+      "reason": "La regeneración deja visible el único recorrido continuo desde la calefacción cerrada hasta el tomacorriente de pared y el cuaderno contiene solo tres iconos ordenados, sin párrafos.",
+      "candidate": {
+        "start_ms": 798400,
+        "end_ms": 802560,
+        "caption_exact": "Primero se prueba el sistema con la red normal y se anota el orden.",
+        "nouns": ["sistema", "red normal", "orden", "cuaderno", "calefacción"],
+        "action": "Claudio observa la calefacción cerrada alimentada desde la pared y anota en el cuaderno la secuencia uno, dos y tres.",
+        "safety": "Gabinete cerrado, un único cable de fábrica intacto al tomacorriente de pared, clavija asentada y Claudio sin tocar el sistema energizado.",
+        "agnes_motion_es": "Claudio traza un movimiento corto con el bolígrafo junto al tercer icono y levanta apenas la mirada hacia la calefacción. Mantener exactos los tres dibujos, los números, la mano, el bolígrafo, el cordón, el enchufe y el gabinete; cámara fija."
+      }
+    }
+  ]
+}

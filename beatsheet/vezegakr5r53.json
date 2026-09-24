@@ -1,0 +1,1307 @@
+{
+ "video": "vezegakr5r53",
+ "avatar": "vezegakr5r53_opt.mp4",
+ "theme": "medico",
+ "clipsfirst": true,
+ "beats": [
+  {
+   "id": "hook_0_0",
+   "start": 1.3,
+   "dur": 18.24,
+   "key": "hook",
+   "kind": "talk"
+  },
+  {
+   "id": "hook_0_1",
+   "start": 19.54,
+   "dur": 14.84,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_hands_phone_spots.png",
+   "kicker": "Look now — the hand holding your phone",
+   "hold": true
+  },
+  {
+   "id": "hook_1_0",
+   "start": 34.38,
+   "dur": 10.62,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_cheek_melasma.png",
+   "kicker": "The patch a shade darker"
+  },
+  {
+   "id": "hook_1_1",
+   "start": 45,
+   "dur": 2.8,
+   "key": "hook",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NOT A SKIN PROBLEM",
+     "sub": "it's a repair problem — fixed at one time of day",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/hook_1_1.mp4"
+  },
+  {
+   "id": "hook_2_0",
+   "start": 48.62,
+   "dur": 3.28,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_woman_bare_face_night.png",
+   "kicker": "The truth almost nobody tells you"
+  },
+  {
+   "id": "hook_3_0",
+   "start": 51.9,
+   "dur": 24.04,
+   "key": "hook",
+   "kind": "mitoverdad",
+   "myth": "Your skin repairs itself during the day",
+   "truth": "By day it only defends — the real repair happens at night",
+   "flipAt": 483
+  },
+  {
+   "id": "hook_4_0",
+   "start": 75.94,
+   "dur": 6.78,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_woman_sleeping_peaceful.png",
+   "kicker": "Sleeping through the repair window"
+  },
+  {
+   "id": "hook_5_0",
+   "start": 82.72,
+   "dur": 4.84,
+   "key": "hook",
+   "kind": "talk"
+  },
+  {
+   "id": "hook_5_1",
+   "start": 87.56,
+   "dur": 6.78,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_rosemary_sprig_kitchen.png",
+   "kicker": "In most kitchens right now"
+  },
+  {
+   "id": "hook_6_0",
+   "start": 94.34,
+   "dur": 2.8,
+   "key": "hook",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ROSEMARY · ABOUT $2",
+     "sub": "the most powerful spot-fading tool you own",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/hook_6_0.mp4"
+  },
+  {
+   "id": "hook_6_1",
+   "start": 96.78,
+   "dur": 4.5,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_essential_oil_bottle.png",
+   "kicker": "NOT this little bottle"
+  },
+  {
+   "id": "hook_7_0",
+   "start": 101.28,
+   "dur": 16.82,
+   "key": "hook",
+   "kind": "looplock",
+   "title": "The mistake that ruins it for 9 of 10",
+   "sub": "used wrong, it makes your spots DARKER — I'll show you why at the end"
+  },
+  {
+   "id": "hook_8_0",
+   "start": 118.1,
+   "dur": 20.96,
+   "key": "hook",
+   "kind": "checklist",
+   "title": "What you walk away with tonight",
+   "items": [
+    {
+     "text": "Why your creams keep failing",
+     "state": "done"
+    },
+    {
+     "text": "The 3-layer night routine, with amounts",
+     "state": "done"
+    },
+    {
+     "text": "The rosemary glove for your hands",
+     "state": "done"
+    },
+    {
+     "text": "The real science — compounds named",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "hook_9_0",
+   "start": 139.06,
+   "dur": 14.98,
+   "key": "hook",
+   "kind": "lowerthird",
+   "title": "The exact measurements are in the description",
+   "tone": "teal",
+   "kicker": "So you never pause to scribble",
+   "desc": "The full recipe card — down to the spoon and the drop — is at the top of the description."
+  },
+  {
+   "id": "story_10_0",
+   "start": 154.04,
+   "dur": 1.48,
+   "key": "story",
+   "kind": "talk"
+  },
+  {
+   "id": "story_10_1",
+   "start": 155.52,
+   "dur": 4.2,
+   "key": "story",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "General doctor · Holistic Health",
+   "image": "img/p_vezegakr5r53_federer_kitchen.png"
+  },
+  {
+   "id": "story_11_0",
+   "start": 157.44,
+   "dur": 16.18,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_federer_kitchen.png",
+   "kicker": "The chemistry, not the marketing"
+  },
+  {
+   "id": "principio_12_0",
+   "start": 173.62,
+   "dur": 3.02,
+   "key": "principio",
+   "kind": "talk"
+  },
+  {
+   "id": "principio_12_1",
+   "start": 176.64,
+   "dur": 13.36,
+   "key": "principio",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "The dark spots soften",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "principio_12_2",
+   "start": 190,
+   "dur": 7.56,
+   "key": "principio",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_hands_spots_before.png",
+   "kicker": "3–4 weeks"
+  },
+  {
+   "id": "principio_13_0",
+   "start": 197.56,
+   "dur": 17.44,
+   "key": "principio",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "The"
+    },
+    {
+     "t": "hard"
+    },
+    {
+     "t": "border"
+    },
+    {
+     "t": "blurs",
+     "hl": true
+    },
+    {
+     "t": "first"
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "principio_14_0",
+   "start": 215,
+   "dur": 11.18,
+   "key": "principio",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "The melasma calms down",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "principio_14_1",
+   "start": 226.18,
+   "dur": 3.54,
+   "key": "principio",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_cheek_melasma.png",
+   "kicker": "6–8 weeks"
+  },
+  {
+   "id": "principio_15_0",
+   "start": 229.72,
+   "dur": 10.28,
+   "key": "principio",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "The skin feels tighter",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "principio_15_1",
+   "start": 240,
+   "dur": 3.26,
+   "key": "principio",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_eye_area_closeup.png",
+   "kicker": "Less like tissue paper"
+  },
+  {
+   "id": "principio_16_0",
+   "start": 243.26,
+   "dur": 2.8,
+   "key": "principio",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "THE GREEN BOTOX",
+     "sub": "the collagen effect — I'll name the exact compound",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/principio_16_0.mp4"
+  },
+  {
+   "id": "principio_17_0",
+   "start": 250.82,
+   "dur": 3.91,
+   "key": "principio",
+   "kind": "talk"
+  },
+  {
+   "id": "principio_17_1",
+   "start": 254.73,
+   "dur": 4.69,
+   "key": "principio",
+   "kind": "bars",
+   "title": "What fades a spot",
+   "unit": "",
+   "items": [
+    {
+     "label": "$2 rosemary (right way)",
+     "value": 100,
+     "winner": true
+    },
+    {
+     "label": "$50 day cream",
+     "value": 25
+    }
+   ]
+  },
+  {
+   "id": "principio_18_0",
+   "start": 259.42,
+   "dur": 14.6,
+   "key": "principio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vezegakr5r53_melanocyte.png"
+    }
+   ]
+  },
+  {
+   "id": "principio_19_0",
+   "start": 274.02,
+   "dur": 2.8,
+   "key": "principio",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TYROSINASE",
+     "sub": "say it once — the factory switch for pigment",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/principio_19_0.mp4"
+  },
+  {
+   "id": "principio_20_0",
+   "start": 279.98,
+   "dur": 20.32,
+   "key": "principio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vezegakr5r53_pigment_switch.png"
+    }
+   ]
+  },
+  {
+   "id": "principio_20_1",
+   "start": 300.3,
+   "dur": 2.8,
+   "key": "principio",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TURN THE SWITCH DOWN",
+     "sub": "you don't bleach the skin — you calm the switch",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/principio_20_1.mp4"
+  },
+  {
+   "id": "principio_21_0",
+   "start": 306.56,
+   "dur": 3.7,
+   "key": "principio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vezegakr5r53_three_compounds.png"
+    }
+   ]
+  },
+  {
+   "id": "principio_22_0",
+   "start": 310.26,
+   "dur": 16.14,
+   "key": "principio",
+   "kind": "splitlist",
+   "title": "Rosmarinic acid — quiets the switch",
+   "items": [
+    "Interferes with tyrosinase",
+    "Mops up the free radicals",
+    "Works both ends at once"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "principio_23_0",
+   "start": 326.4,
+   "dur": 9.26,
+   "key": "principio",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_rosemary_extract_food.png",
+   "kicker": "So strong food factories use it"
+  },
+  {
+   "id": "principio_23_1",
+   "start": 335.66,
+   "dur": 2.8,
+   "key": "principio",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "CARNOSIC ACID",
+     "sub": "the antioxidant bodyguard, all night",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/principio_23_1.mp4"
+  },
+  {
+   "id": "principio_24_0",
+   "start": 352.86,
+   "dur": 18.3,
+   "key": "principio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vezegakr5r53_collagen_scaffold.png"
+    }
+   ]
+  },
+  {
+   "id": "principio_24_1",
+   "start": 371.16,
+   "dur": 11.24,
+   "key": "principio",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "It"
+    },
+    {
+     "t": "feeds"
+    },
+    {
+     "t": "the"
+    },
+    {
+     "t": "structure",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "causa1_25_0",
+   "start": 382.4,
+   "dur": 2.8,
+   "key": "causa1",
+   "kind": "talk"
+  },
+  {
+   "id": "causa1_25_1",
+   "start": 385.2,
+   "dur": 2.8,
+   "key": "causa1",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "WHY AT NIGHT",
+     "sub": "this is where most skincare quietly falls apart",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/causa1_25_1.mp4"
+  },
+  {
+   "id": "causa1_26_0",
+   "start": 392.48,
+   "dur": 8.61,
+   "key": "causa1",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vezegakr5r53_night_repair_clock.png"
+    }
+   ]
+  },
+  {
+   "id": "causa1_26_1",
+   "start": 401.09,
+   "dur": 3.77,
+   "key": "causa1",
+   "kind": "stat",
+   "big": "2×",
+   "unit": "cell turnover",
+   "label": "your skin literally replaces itself faster while you sleep.",
+   "tone": "teal"
+  },
+  {
+   "id": "causa1_27_0",
+   "start": 404.86,
+   "dur": 31.16,
+   "key": "causa1",
+   "kind": "splitlist",
+   "title": "Every force is on your side at night",
+   "items": [
+    "Growth hormone — a repair signal",
+    "Cortisol at its lowest",
+    "The barrier lets things sink deeper"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "causa1_28_0",
+   "start": 436.02,
+   "dur": 17.26,
+   "key": "causa1",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vezegakr5r53_day_vs_night.png"
+    }
+   ]
+  },
+  {
+   "id": "causa1_29_0",
+   "start": 453.28,
+   "dur": 10.96,
+   "key": "causa1",
+   "kind": "freezezoom",
+   "image": "img/p_vezegakr5r53_boat_bailing.png",
+   "x": 0.5,
+   "y": 0.5,
+   "label": "Applying by day = bailing a boat with the hole open",
+   "zoom": 1.4,
+   "tone": "warn"
+  },
+  {
+   "id": "causa1_30_0",
+   "start": 464.24,
+   "dur": 2.8,
+   "key": "causa1",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "RIGHT INGREDIENT, RIGHT HOUR",
+     "sub": "either one alone is only half the job",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/causa1_30_0.mp4"
+  },
+  {
+   "id": "enemigo_31_0",
+   "start": 479.62,
+   "dur": 8.52,
+   "key": "enemigo",
+   "kind": "talk"
+  },
+  {
+   "id": "enemigo_31_1",
+   "start": 488.14,
+   "dur": 11.08,
+   "key": "enemigo",
+   "kind": "lowerthird",
+   "title": "The villain is not a person. It's a business model",
+   "tone": "warn",
+   "kicker": "Let me be careful here",
+   "desc": "Not a doctor. A model built to sell you the same face twice."
+  },
+  {
+   "id": "enemigo_32_0",
+   "start": 499.22,
+   "dur": 11.24,
+   "key": "enemigo",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_day_cream_jars.png",
+   "kicker": "Charged twice for the same face"
+  },
+  {
+   "id": "enemigo_32_1",
+   "start": 510.46,
+   "dur": 17.66,
+   "key": "enemigo",
+   "kind": "mitoverdad",
+   "myth": "A new jar every six weeks is normal",
+   "truth": "The jar is designed to run empty on schedule — that's the business",
+   "flipAt": 223
+  },
+  {
+   "id": "enemigo_33_0",
+   "start": 528.12,
+   "dur": 21.54,
+   "key": "enemigo",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "billboard"
+    },
+    {
+     "t": "for"
+    },
+    {
+     "t": "rosemary",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "causa2_34_0",
+   "start": 549.66,
+   "dur": 2.91,
+   "key": "causa2",
+   "kind": "talk"
+  },
+  {
+   "id": "causa2_34_1",
+   "start": 552.57,
+   "dur": 6.99,
+   "key": "causa2",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vezegakr5r53_three_layers.png"
+    }
+   ]
+  },
+  {
+   "id": "causa2_35_0",
+   "start": 559.56,
+   "dur": 7.61,
+   "key": "causa2",
+   "kind": "errorstinger",
+   "number": "L1",
+   "title": "Rosemary water — the calming base",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "causa2_35_1",
+   "start": 567.17,
+   "dur": 2.27,
+   "key": "causa2",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_rosemary_water_cup.png",
+   "kicker": "A handful per cup"
+  },
+  {
+   "id": "causa2_36_0",
+   "start": 569.44,
+   "dur": 16.94,
+   "key": "causa2",
+   "kind": "checklist",
+   "title": "Rosemary water — the do-nots",
+   "items": [
+    {
+     "text": "A handful fresh / a teaspoon dried per cup",
+     "state": "done"
+    },
+    {
+     "text": "Pour hot water over it — do NOT boil hard",
+     "state": "warn"
+    },
+    {
+     "text": "Steep till cool, keep 5 days in the fridge",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "causa2_37_0",
+   "start": 586.38,
+   "dur": 10.62,
+   "key": "causa2",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_cotton_pad_toner.png",
+   "kicker": "Your night toner"
+  },
+  {
+   "id": "causa2_37_1",
+   "start": 597,
+   "dur": 2.8,
+   "key": "causa2",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "DON'T MAKE IT STING",
+     "sub": "stronger is not better here",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/causa2_37_1.mp4"
+  },
+  {
+   "id": "causa3_38_0",
+   "start": 598.98,
+   "dur": 0.48,
+   "key": "causa3",
+   "kind": "talk"
+  },
+  {
+   "id": "causa3_38_1",
+   "start": 599.46,
+   "dur": 4.2,
+   "key": "causa3",
+   "kind": "errorstinger",
+   "number": "L2",
+   "title": "Rosemary-infused oil — the power",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "causa3_38_2",
+   "start": 601.7,
+   "dur": 8.62,
+   "key": "causa3",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_infused_oil_jar.png",
+   "kicker": "NOT the essential oil"
+  },
+  {
+   "id": "causa3_39_0",
+   "start": 610.32,
+   "dur": 16.92,
+   "key": "causa3",
+   "kind": "stat",
+   "big": "1 tbsp",
+   "unit": "dried per 100 ml oil",
+   "label": "dried rosemary only — fresh will turn the whole batch rancid.",
+   "tone": "teal"
+  },
+  {
+   "id": "causa3_40_0",
+   "start": 627.24,
+   "dur": 10.1,
+   "key": "causa3",
+   "kind": "bars",
+   "title": "Which carrier oil",
+   "unit": "",
+   "items": [
+    {
+     "label": "Jojoba — closest to skin's own oil",
+     "value": 100,
+     "winner": true
+    },
+    {
+     "label": "Rosehip — brings vitamin A",
+     "value": 90
+    }
+   ]
+  },
+  {
+   "id": "causa3_40_1",
+   "start": 637.34,
+   "dur": 38.3,
+   "key": "causa3",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_jojoba_rosehip_bottles.png",
+   "kicker": "Two treatments in one bottle"
+  },
+  {
+   "id": "causa3_41_0",
+   "start": 675.64,
+   "dur": 6,
+   "key": "causa3",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_oil_drops_fingertips.png",
+   "kicker": "2–3 drops is the whole dose"
+  },
+  {
+   "id": "causa3_41_1",
+   "start": 681.64,
+   "dur": 2.8,
+   "key": "causa3",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "DON'T DROWN YOUR FACE",
+     "sub": "more will only clog you",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/causa3_41_1.mp4"
+  },
+  {
+   "id": "causa3_42_0",
+   "start": 688.7,
+   "dur": 25.82,
+   "key": "causa3",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_massage_face_night.png",
+   "kicker": "30 seconds carries it deeper"
+  },
+  {
+   "id": "causa4_43_0",
+   "start": 714.52,
+   "dur": 9.34,
+   "key": "causa4",
+   "kind": "talk"
+  },
+  {
+   "id": "causa4_43_1",
+   "start": 723.86,
+   "dur": 10.06,
+   "key": "causa4",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_hands_aged_spots.png",
+   "kicker": "The hands age first, ignored most"
+  },
+  {
+   "id": "causa4_44_0",
+   "start": 733.92,
+   "dur": 2.8,
+   "key": "causa4",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "THE ROSEMARY GLOVE",
+     "sub": "heavier oil on the hands, cotton gloves, sleep in them",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/causa4_44_0.mp4"
+  },
+  {
+   "id": "causa4_45_0",
+   "start": 747.88,
+   "dur": 17.72,
+   "key": "causa4",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_cotton_gloves_bed.png",
+   "kicker": "8 hours of sealed contact"
+  },
+  {
+   "id": "causa4_45_1",
+   "start": 765.6,
+   "dur": 9.42,
+   "key": "causa4",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_hands_younger_after.png",
+   "kicker": "One month later"
+  },
+  {
+   "id": "causa5_46_0",
+   "start": 775.02,
+   "dur": 1.36,
+   "key": "causa5",
+   "kind": "talk"
+  },
+  {
+   "id": "causa5_46_1",
+   "start": 776.38,
+   "dur": 6.34,
+   "key": "causa5",
+   "kind": "errorstinger",
+   "number": "L3",
+   "title": "Gentle weekly buff (optional)",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "causa5_46_2",
+   "start": 782.72,
+   "dur": 10.04,
+   "key": "causa5",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_washcloth_exfoliate.png",
+   "kicker": "Only for stubborn old spots"
+  },
+  {
+   "id": "causa5_47_0",
+   "start": 792.76,
+   "dur": 2.8,
+   "key": "causa5",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "DO NOT SCRUB",
+     "sub": "scrubbing is inflammation — it flips the switch back on",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/causa5_47_0.mp4"
+  },
+  {
+   "id": "causa5_48_0",
+   "start": 802.32,
+   "dur": 15,
+   "key": "causa5",
+   "kind": "lowerthird",
+   "title": "Every ratio & the 21-day plan — in the description",
+   "tone": "teal",
+   "kicker": "Read it before you start",
+   "desc": "With a natural remedy the dose is the difference between it working and doing nothing."
+  },
+  {
+   "id": "honesto_49_0",
+   "start": 817.32,
+   "dur": 7.64,
+   "key": "honesto",
+   "kind": "talk"
+  },
+  {
+   "id": "honesto_49_1",
+   "start": 824.96,
+   "dur": 2.8,
+   "key": "honesto",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "WHAT ROSEMARY WILL NOT DO",
+     "sub": "if I only tell you the good, I'm no better than the ads",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/honesto_49_1.mp4"
+  },
+  {
+   "id": "honesto_50_0",
+   "start": 835.74,
+   "dur": 5.64,
+   "key": "honesto",
+   "kind": "checklist",
+   "title": "The honest limits",
+   "items": [
+    {
+     "text": "Not overnight — it's the work of many nights",
+     "state": "warn"
+    },
+    {
+     "text": "Not a cure. I'll never use that word",
+     "state": "warn"
+    },
+    {
+     "text": "Not a replacement for sun protection",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "honesto_51_0",
+   "start": 841.38,
+   "dur": 17.8,
+   "key": "honesto",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_sunscreen_hat_shade.png",
+   "kicker": "The other half of this"
+  },
+  {
+   "id": "honesto_52_0",
+   "start": 859.18,
+   "dur": 3.9,
+   "key": "honesto",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_patch_test_arm.png",
+   "kicker": "Patch test · wait 24 hours"
+  },
+  {
+   "id": "honesto_52_1",
+   "start": 863.08,
+   "dur": 25.54,
+   "key": "honesto",
+   "kind": "lowerthird",
+   "title": "Patch test on your arm — wait a full 24 hours",
+   "tone": "warn",
+   "kicker": "Before your face",
+   "desc": "If it reddens or itches, this is simply not for your skin, and that's okay."
+  },
+  {
+   "id": "honesto_53_0",
+   "start": 888.62,
+   "dur": 20.04,
+   "key": "honesto",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Consistency"
+    },
+    {
+     "t": "beats"
+    },
+    {
+     "t": "intensity",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "error_54_0",
+   "start": 908.66,
+   "dur": 1.24,
+   "key": "error",
+   "kind": "talk"
+  },
+  {
+   "id": "error_54_1",
+   "start": 909.9,
+   "dur": 5.78,
+   "key": "error",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "The mistake that makes it worse",
+   "tone": "warn",
+   "w": 3.6
+  },
+  {
+   "id": "error_55_0",
+   "start": 915.68,
+   "dur": 9.9,
+   "key": "error",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_essential_oil_bottle.png",
+   "kicker": "Concentrated hundreds of times"
+  },
+  {
+   "id": "error_55_1",
+   "start": 925.58,
+   "dur": 2.8,
+   "key": "error",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NEVER THE NEAT BOTTLE",
+     "sub": "essential oil undiluted = a different, aggressive thing",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/error_55_1.mp4"
+  },
+  {
+   "id": "error_56_0",
+   "start": 929.58,
+   "dur": 15.34,
+   "key": "error",
+   "kind": "checklist",
+   "title": "Undiluted, it does two kinds of damage",
+   "items": [
+    {
+     "text": "Burns & inflames → flips the switch ON",
+     "state": "warn"
+    },
+    {
+     "text": "Leaves skin reactive to sunlight",
+     "state": "warn"
+    },
+    {
+     "text": "Next morning the spot goes DARKER",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "error_57_0",
+   "start": 944.92,
+   "dur": 35.98,
+   "key": "error",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_sun_on_skin.png",
+   "kicker": "Primed to overproduce pigment"
+  },
+  {
+   "id": "error_58_0",
+   "start": 980.9,
+   "dur": 28.84,
+   "key": "error",
+   "kind": "mitoverdad",
+   "myth": "Stronger rosemary must work faster",
+   "truth": "The infused oil fades spots — the neat essential oil can set them on fire",
+   "flipAt": 363
+  },
+  {
+   "id": "recap_59_0",
+   "start": 1009.74,
+   "dur": 9.33,
+   "key": "recap",
+   "kind": "talk"
+  },
+  {
+   "id": "recap_59_1",
+   "start": 1019.07,
+   "dur": 24.27,
+   "key": "recap",
+   "kind": "process",
+   "title": "Start tonight — 5 steps",
+   "eyebrow": "Calmly and correctly",
+   "steps": [
+    {
+     "title": "Rosemary water",
+     "desc": "handful per cup, your toner",
+     "image": "img/p_vezegakr5r53_rosemary_water_cup.png"
+    },
+    {
+     "title": "Infused oil",
+     "desc": "spoon per 100 ml, ready in 2 weeks",
+     "image": "img/p_vezegakr5r53_infused_oil_jar.png"
+    },
+    {
+     "title": "Every night",
+     "desc": "water, then 2–3 drops, 30s",
+     "image": "img/p_vezegakr5r53_massage_face_night.png"
+    }
+   ]
+  },
+  {
+   "id": "recap_60_0",
+   "start": 1043.34,
+   "dur": 11.87,
+   "key": "recap",
+   "kind": "focuscards",
+   "title": "The 5-step night ritual",
+   "items": [
+    {
+     "image": "img/p_vezegakr5r53_rosemary_water_cup.png",
+     "label": "1 · Rosemary water",
+     "at": 0
+    },
+    {
+     "image": "img/p_vezegakr5r53_infused_oil_jar.png",
+     "label": "2 · Infused oil",
+     "at": 0
+    },
+    {
+     "image": "img/p_vezegakr5r53_massage_face_night.png",
+     "label": "3 · Every night",
+     "at": 0
+    },
+    {
+     "image": "img/p_vezegakr5r53_cotton_gloves_bed.png",
+     "label": "4 · Rosemary glove",
+     "at": 0
+    },
+    {
+     "image": "img/p_vezegakr5r53_sunscreen_hat_shade.png",
+     "label": "5 · Sun by day",
+     "at": 221
+    }
+   ]
+  },
+  {
+   "id": "recap_61_0",
+   "start": 1060.46,
+   "dur": 16.21,
+   "key": "recap",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_guide_phone.png",
+   "hold": true
+  },
+  {
+   "id": "recap_61_1",
+   "start": 1076.67,
+   "dur": 7.49,
+   "key": "recap",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_vezegakr5r53_guide_phone.png",
+   "imageDarken": 0.62,
+   "title": "The full recipe card",
+   "chips": [
+    "Every exact measurement · both oils",
+    "The full night routine + 21-day plan",
+    "At the top of the description"
+   ]
+  },
+  {
+   "id": "recap_62_0",
+   "start": 1084.16,
+   "dur": 15.02,
+   "key": "recap",
+   "kind": "lowerthird",
+   "title": "Where are your spots — and how many years?",
+   "tone": "teal",
+   "kicker": "Tell me in the comments",
+   "desc": "Hands? Cheeks? Melasma from a pregnancy? The questions you ask decide what I teach next."
+  },
+  {
+   "id": "teaser_63_0",
+   "start": 1099.18,
+   "dur": 2.96,
+   "key": "teaser",
+   "kind": "talk"
+  },
+  {
+   "id": "teaser_63_1",
+   "start": 1102.14,
+   "dur": 9.22,
+   "key": "teaser",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_kitchen_ingredient_teaser.png",
+   "kicker": "Next: one thing you drink"
+  },
+  {
+   "id": "teaser_63_2",
+   "start": 1111.36,
+   "dur": 6.6,
+   "key": "teaser",
+   "kind": "lowerthird",
+   "title": "Next: the kitchen thing most people throw away",
+   "tone": "teal",
+   "kicker": "Don't miss it",
+   "desc": "Drink it, and it changes what your skin can repair overnight. Not water. Not lemon."
+  },
+  {
+   "id": "teaser_64_0",
+   "start": 1117.96,
+   "dur": 4.73,
+   "key": "teaser",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SUBSCRIBE NOW",
+     "sub": "so the other half of the story lands in front of you",
+     "tone": "teal",
+     "at": 58
+    }
+   ],
+   "clip": "avatar_clips/vezegakr5r53/teaser_64_0.mp4"
+  },
+  {
+   "id": "close_65_0",
+   "start": 1128.52,
+   "dur": 7.2,
+   "key": "close",
+   "kind": "talk"
+  },
+  {
+   "id": "close_65_1",
+   "start": 1135.72,
+   "dur": 12.44,
+   "key": "close",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "A"
+    },
+    {
+     "t": "repair"
+    },
+    {
+     "t": "problem",
+     "hl": true
+    },
+    {
+     "t": "fixed"
+    },
+    {
+     "t": "at"
+    },
+    {
+     "t": "night",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "close_66_0",
+   "start": 1148.16,
+   "dur": 9.14,
+   "key": "close",
+   "kind": "raw",
+   "src": "img/p_vezegakr5r53_woman_sleeping_peaceful.png",
+   "kicker": "Designed to heal in the dark"
+  },
+  {
+   "id": "close_66_1",
+   "start": 1157.3,
+   "dur": 8.48,
+   "key": "close",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Holistic Health — repair while you sleep",
+   "image": "img/p_vezegakr5r53_federer_signoff.png"
+  }
+ ]
+}

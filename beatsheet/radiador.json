@@ -1,0 +1,1713 @@
+{
+ "video": "radiador",
+ "avatar": "radiador_opt.mp4",
+ "tutorial": true,
+ "maxRawDur": 6,
+ "beats": [
+  {
+   "id": "rad_s_01",
+   "start": 0,
+   "kind": "raw",
+   "src": "real/rad_s_01.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.12
+  },
+  {
+   "id": "rad_s_02",
+   "start": 4.82,
+   "kind": "raw",
+   "src": "real/rad_s_02.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.5
+  },
+  {
+   "id": "ov_bigstatreveal_5",
+   "start": 4.82,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Costo real de la caja",
+   "value": 30,
+   "prefix": "$",
+   "suffix": "",
+   "support": "Con materiales que casi todos tenían a mano"
+  },
+  {
+   "id": "rad_s_03",
+   "start": 12.02,
+   "kind": "raw",
+   "src": "real/rad_s_03.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 11.56
+  },
+  {
+   "id": "ov_highlightsweep_18",
+   "start": 17.64,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Aire caliente, gratis,",
+   "highlight": "sin un solo cable enchufado",
+   "post": "sin batería, sin panel solar caro.",
+   "note": "0 watts de luz"
+  },
+  {
+   "id": "rad_s_05",
+   "start": 23.28,
+   "kind": "raw",
+   "src": "real/rad_s_05.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 14.6
+  },
+  {
+   "id": "rad_s_07",
+   "start": 37.58,
+   "kind": "raw",
+   "src": "real/rad_s_07.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 18.82
+  },
+  {
+   "id": "ov_pullquote_50",
+   "start": 49.98,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Hace tres inviernos que no prendo la estufa hasta que se esconde el sol."
+  },
+  {
+   "id": "rad_s_10",
+   "start": 56.1,
+   "kind": "raw",
+   "src": "real/rad_s_10.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 30.3
+  },
+  {
+   "id": "ov_bigstatreveal_67",
+   "start": 66.5,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Antigüedad del invento",
+   "value": 50,
+   "prefix": "+",
+   "suffix": " años",
+   "support": "Se conoce y se estudia hace más de medio siglo"
+  },
+  {
+   "id": "rad_s_15",
+   "start": 86.1,
+   "kind": "raw",
+   "src": "real/rad_s_15.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 15.12
+  },
+  {
+   "id": "ov_pullquote_94",
+   "start": 93.52,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Sin ese paso, todo lo demás no sirve."
+  },
+  {
+   "id": "rad_s_17",
+   "start": 100.92,
+   "kind": "raw",
+   "src": "real/rad_s_17.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.52
+  },
+  {
+   "id": "rad_s_18",
+   "start": 108.14,
+   "kind": "raw",
+   "src": "real/rad_s_18.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.82
+  },
+  {
+   "id": "rad_s_19",
+   "start": 113.66,
+   "kind": "raw",
+   "src": "real/rad_s_19.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 12.48
+  },
+  {
+   "id": "rad_s_21",
+   "start": 125.84,
+   "kind": "raw",
+   "src": "real/rad_s_21.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.34
+  },
+  {
+   "id": "ov_vsduel_126",
+   "start": 125.84,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Dos formas de usar el sol",
+   "title": "Fotovoltaico vs. térmico",
+   "left": {
+    "label": "Panel fotovoltaico",
+    "sub": "Convierte la luz en electricidad",
+    "good": false
+   },
+   "right": {
+    "label": "Colector de aire",
+    "sub": "Usa el calor tal cual viene",
+    "good": true
+   }
+  },
+  {
+   "id": "rad_s_22",
+   "start": 131.88,
+   "kind": "raw",
+   "src": "real/rad_s_22.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.9
+  },
+  {
+   "id": "ov_bigstatreveal_138",
+   "start": 138.04,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Eficiencia del panel fotovoltaico",
+   "value": 20,
+   "prefix": "",
+   "suffix": "%",
+   "support": "El otro 80% se pierde en la conversión"
+  },
+  {
+   "id": "rad_s_24",
+   "start": 141.48,
+   "kind": "raw",
+   "src": "real/rad_s_24.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 21.22
+  },
+  {
+   "id": "ov_bigstatreveal_146",
+   "start": 146.12,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Eficiencia del calor solar directo",
+   "value": 90,
+   "prefix": "",
+   "suffix": "%",
+   "support": "Casi el 90% de lo que le llega al colector"
+  },
+  {
+   "id": "ov_highlightsweep_152",
+   "start": 151.88,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Es",
+   "highlight": "cuatro veces más eficiente",
+   "post": "que un panel fotovoltaico.",
+   "note": "Sin ninguna transformación en el medio"
+  },
+  {
+   "id": "rad_s_28",
+   "start": 162.4,
+   "kind": "raw",
+   "src": "real/rad_s_28.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.46
+  },
+  {
+   "id": "rad_s_29",
+   "start": 167.56,
+   "kind": "raw",
+   "src": "real/rad_s_29.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 11.4
+  },
+  {
+   "id": "rad_s_31",
+   "start": 178.66,
+   "kind": "raw",
+   "src": "real/rad_s_31.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 11.84
+  },
+  {
+   "id": "ov_vsduel_179",
+   "start": 178.66,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "A quién no le conviene que sepas esto",
+   "title": "El sol vs. el medidor",
+   "left": {
+    "label": "Gas y electricidad",
+    "sub": "Vos dependés, ellos cobran",
+    "good": false
+   },
+   "right": {
+    "label": "El sol",
+    "sub": "No manda factura",
+    "good": true
+   }
+  },
+  {
+   "id": "rad_s_33",
+   "start": 190.2,
+   "kind": "raw",
+   "src": "real/rad_s_33.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.34
+  },
+  {
+   "id": "rad_s_34",
+   "start": 195.24,
+   "kind": "raw",
+   "src": "real/rad_s_34.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.56
+  },
+  {
+   "id": "ov_floatingcutout_200",
+   "start": 200.16,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "full",
+   "image": "real/radiador_c6.png",
+   "label": "Muro Trombe",
+   "sub": "El mismo principio, integrado en casas caras"
+  },
+  {
+   "id": "rad_s_36",
+   "start": 205.5,
+   "kind": "raw",
+   "src": "real/rad_s_36.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 17.96
+  },
+  {
+   "id": "ov_pullquote_211",
+   "start": 211.14,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "El aire negro caliente sube igual en la mansión que en mi taller."
+  },
+  {
+   "id": "rad_s_39",
+   "start": 223.16,
+   "kind": "raw",
+   "src": "real/rad_s_39.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.54
+  },
+  {
+   "id": "rad_s_40",
+   "start": 228.4,
+   "kind": "raw",
+   "src": "real/rad_s_40.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.12
+  },
+  {
+   "id": "rad_s_41",
+   "start": 235.22,
+   "kind": "raw",
+   "src": "real/rad_s_41.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.02
+  },
+  {
+   "id": "ov_highlightsweep_235",
+   "start": 235.22,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "El fondo de la caja se pinta de",
+   "highlight": "negro mate",
+   "post": "nunca negro brillante.",
+   "note": "El negro mate absorbe la luz y no la rebota"
+  },
+  {
+   "id": "rad_s_42",
+   "start": 239.94,
+   "kind": "raw",
+   "src": "real/rad_s_42.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.46
+  },
+  {
+   "id": "rad_s_43",
+   "start": 245.1,
+   "kind": "raw",
+   "src": "real/rad_s_43.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.54
+  },
+  {
+   "id": "ov_bigstatreveal_245",
+   "start": 245.1,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Temperatura del absorbedor",
+   "value": 80,
+   "prefix": "",
+   "suffix": "°",
+   "support": "El fondo negro puede llegar a 70-80 grados"
+  },
+  {
+   "id": "rad_s_44",
+   "start": 250.34,
+   "kind": "raw",
+   "src": "real/rad_s_44.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.82
+  },
+  {
+   "id": "rad_s_45",
+   "start": 254.86,
+   "kind": "raw",
+   "src": "real/rad_s_45.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10
+  },
+  {
+   "id": "ov_cutawaycallouts_260",
+   "start": 259.96,
+   "dur": 6.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CutawayCallouts",
+   "theme": "earth",
+   "zone": "full",
+   "image": "real/radiador_c4.png",
+   "eyebrow": "Anatomía del colector",
+   "title": "Efecto invernadero",
+   "callouts": [
+    {
+     "text": "Vidrio",
+     "sub": "Deja entrar la luz, no deja salir el calor",
+     "tx": 0.5,
+     "ty": 0.2,
+     "side": "right"
+    },
+    {
+     "text": "Fondo negro mate",
+     "sub": "El absorbedor",
+     "tx": 0.5,
+     "ty": 0.8,
+     "side": "left"
+    },
+    {
+     "text": "Aire atrapado",
+     "sub": "Se pone hirviendo entre los dos",
+     "tx": 0.5,
+     "ty": 0.5,
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "id": "rad_s_47",
+   "start": 264.56,
+   "kind": "raw",
+   "src": "real/rad_s_47.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.04
+  },
+  {
+   "id": "rad_s_48",
+   "start": 269.3,
+   "kind": "raw",
+   "src": "real/rad_s_48.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.72
+  },
+  {
+   "id": "rad_s_50",
+   "start": 279.72,
+   "kind": "raw",
+   "src": "real/rad_s_50.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.4
+  },
+  {
+   "id": "rad_s_51",
+   "start": 284.82,
+   "kind": "raw",
+   "src": "real/rad_s_51.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.08
+  },
+  {
+   "id": "ov_highlightsweep_285",
+   "start": 284.82,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "El aire caliente sube, el",
+   "highlight": "frío baja",
+   "post": "es una ley de la naturaleza que no falla nunca.",
+   "note": ""
+  },
+  {
+   "id": "rad_s_52",
+   "start": 290.6,
+   "kind": "raw",
+   "src": "real/rad_s_52.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.64
+  },
+  {
+   "id": "rad_s_53",
+   "start": 296.94,
+   "kind": "raw",
+   "src": "real/rad_s_53.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.94
+  },
+  {
+   "id": "ov_numberedsteps_297",
+   "start": 296.94,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Cómo circula el aire",
+   "title": "El circuito del termosifón",
+   "steps": [
+    {
+     "title": "Entra frío",
+     "sub": "Por la boca de abajo"
+    },
+    {
+     "title": "Se calienta",
+     "sub": "Al tocar el fondo negro"
+    },
+    {
+     "title": "Sale caliente",
+     "sub": "Por la boca de arriba"
+    }
+   ]
+  },
+  {
+   "id": "rad_s_54",
+   "start": 301.58,
+   "kind": "raw",
+   "src": "real/rad_s_54.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.68
+  },
+  {
+   "id": "rad_s_55",
+   "start": 306.96,
+   "kind": "raw",
+   "src": "real/rad_s_55.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 11.06
+  },
+  {
+   "id": "rad_s_57",
+   "start": 317.72,
+   "kind": "raw",
+   "src": "real/rad_s_57.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.48
+  },
+  {
+   "id": "ov_highlightsweep_318",
+   "start": 317.72,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Se arma un circuito silencioso que da vueltas",
+   "highlight": "todo el tiempo que haya sol",
+   "post": "eso se llama termosifón.",
+   "note": ""
+  },
+  {
+   "id": "rad_s_58",
+   "start": 324.9,
+   "kind": "raw",
+   "src": "real/rad_s_58.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 30.72
+  },
+  {
+   "id": "ov_bigstatreveal_330",
+   "start": 329.72,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Consumo eléctrico",
+   "value": 0,
+   "prefix": "",
+   "suffix": " watts",
+   "support": "No es una manera de hablar, es literal"
+  },
+  {
+   "id": "ov_bigstatreveal_345",
+   "start": 345.24,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Año del invento probado",
+   "value": 1967,
+   "prefix": "",
+   "suffix": "",
+   "support": "Odeillo, Pirineos franceses"
+  },
+  {
+   "id": "rad_s_64",
+   "start": 355.32,
+   "kind": "raw",
+   "src": "real/rad_s_64.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 23.34
+  },
+  {
+   "id": "ov_floatingcutout_361",
+   "start": 360.94,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "full",
+   "image": "real/radiador_c5.png",
+   "label": "Muro Trombe",
+   "sub": "Se estudia en las universidades de arquitectura"
+  },
+  {
+   "id": "rad_s_68",
+   "start": 378.36,
+   "kind": "raw",
+   "src": "real/rad_s_68.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 34.02
+  },
+  {
+   "id": "ov_pullquote_378",
+   "start": 378.36,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Durante la crisis del petróleo, medio mundo construyó estos colectores en sus paredes."
+  },
+  {
+   "id": "rad_s_74",
+   "start": 412.08,
+   "kind": "raw",
+   "src": "real/rad_s_74.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.8
+  },
+  {
+   "id": "ov_mythtruth_412",
+   "start": 412.08,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "En invierno el sol no alcanza para esto",
+   "truth": "El sol bajo pega de frente contra la pared vertical, justo cuando más lo necesitás"
+  },
+  {
+   "id": "rad_s_76",
+   "start": 422.58,
+   "kind": "raw",
+   "src": "real/rad_s_76.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 17.48
+  },
+  {
+   "id": "ov_mythtruth_434",
+   "start": 434.2,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Necesitás vidrio térmico importado y pintura de laboratorio",
+   "truth": "Pintura negra mate de ferretería y un vidrio de ventana usado alcanzan"
+  },
+  {
+   "id": "rad_s_79",
+   "start": 439.76,
+   "kind": "raw",
+   "src": "real/rad_s_79.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.74
+  },
+  {
+   "id": "rad_s_80",
+   "start": 445.2,
+   "kind": "raw",
+   "src": "real/rad_s_80.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.38
+  },
+  {
+   "id": "rad_s_81",
+   "start": 450.28,
+   "kind": "raw",
+   "src": "real/rad_s_81.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.84
+  },
+  {
+   "id": "ov_floatingcutout_450",
+   "start": 450.28,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "full",
+   "image": "real/radiador_c4.png",
+   "label": "El mejor absorbedor",
+   "sub": "Latas de aluminio aplastadas y pintadas de negro"
+  },
+  {
+   "id": "rad_s_82",
+   "start": 455.82,
+   "kind": "raw",
+   "src": "real/rad_s_82.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.22
+  },
+  {
+   "id": "rad_s_83",
+   "start": 460.74,
+   "kind": "raw",
+   "src": "real/rad_s_83.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 18.5
+  },
+  {
+   "id": "ov_mythtruth_466",
+   "start": 466.26,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Solo te muestran las fotos lindas del colector calentando de día",
+   "truth": "De noche, la misma caja se puede dar vuelta en tu contra"
+  },
+  {
+   "id": "rad_s_86",
+   "start": 478.94,
+   "kind": "raw",
+   "src": "real/rad_s_86.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.04
+  },
+  {
+   "id": "ov_beforeafter_479",
+   "start": 478.94,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "El error que nadie te cuenta",
+   "title": "La caja de día vs. de noche",
+   "before": {
+    "label": "De día",
+    "sub": "Calienta tu casa"
+   },
+   "after": {
+    "label": "De noche sin tapar",
+    "sub": "Te roba el calor"
+   }
+  },
+  {
+   "id": "rad_s_88",
+   "start": 488.68,
+   "kind": "raw",
+   "src": "real/rad_s_88.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.02
+  },
+  {
+   "id": "rad_s_89",
+   "start": 493.4,
+   "kind": "raw",
+   "src": "real/rad_s_89.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.98
+  },
+  {
+   "id": "ov_highlightsweep_493",
+   "start": 493.4,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Apenas se esconde el sol, el fondo negro",
+   "highlight": "se enfría rapidísimo",
+   "post": "y pasa lo contrario de lo que querés.",
+   "note": ""
+  },
+  {
+   "id": "rad_s_91",
+   "start": 504.08,
+   "kind": "raw",
+   "src": "real/rad_s_91.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.1
+  },
+  {
+   "id": "rad_s_92",
+   "start": 508.88,
+   "kind": "raw",
+   "src": "real/rad_s_92.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.62
+  },
+  {
+   "id": "rad_s_93",
+   "start": 515.2,
+   "kind": "raw",
+   "src": "real/rad_s_93.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 17.3
+  },
+  {
+   "id": "ov_pullquote_515",
+   "start": 515.2,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "De noche, la caja se convierte en una aspiradora de calor."
+  },
+  {
+   "id": "rad_s_96",
+   "start": 532.2,
+   "kind": "raw",
+   "src": "real/rad_s_96.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.74
+  },
+  {
+   "id": "ov_numberedsteps_532",
+   "start": 532.2,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "La solución al error",
+   "title": "La tapa nocturna",
+   "steps": [
+    {
+     "title": "A la tarde",
+     "sub": "Tapás las dos bocas"
+    },
+    {
+     "title": "Toda la noche",
+     "sub": "El calor queda adentro"
+    },
+    {
+     "title": "A la mañana",
+     "sub": "Destapás y arranca de nuevo"
+    }
+   ]
+  },
+  {
+   "id": "rad_s_97",
+   "start": 537.64,
+   "kind": "raw",
+   "src": "real/rad_s_97.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.76
+  },
+  {
+   "id": "rad_s_98",
+   "start": 543.1,
+   "kind": "raw",
+   "src": "real/rad_s_98.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.98
+  },
+  {
+   "id": "rad_s_99",
+   "start": 548.78,
+   "kind": "raw",
+   "src": "real/rad_s_99.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.08
+  },
+  {
+   "id": "rad_s_100",
+   "start": 554.56,
+   "kind": "raw",
+   "src": "real/rad_s_100.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.46
+  },
+  {
+   "id": "rad_s_101",
+   "start": 559.72,
+   "kind": "raw",
+   "src": "real/rad_s_101.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.14
+  },
+  {
+   "id": "ov_floatingcutout_560",
+   "start": 559.72,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "full",
+   "image": "real/radiador_c5.png",
+   "label": "La válvula automática",
+   "sub": "Una cortinita que se abre y se cierra sola con el aire"
+  },
+  {
+   "id": "rad_s_102",
+   "start": 564.56,
+   "kind": "raw",
+   "src": "real/rad_s_102.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.24
+  },
+  {
+   "id": "rad_s_103",
+   "start": 569.5,
+   "kind": "raw",
+   "src": "real/rad_s_103.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 20.18
+  },
+  {
+   "id": "rad_s_106",
+   "start": 589.38,
+   "kind": "raw",
+   "src": "real/rad_s_106.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.3
+  },
+  {
+   "id": "rad_s_107",
+   "start": 595.38,
+   "kind": "raw",
+   "src": "real/rad_s_107.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.6
+  },
+  {
+   "id": "rad_s_109",
+   "start": 605.68,
+   "kind": "raw",
+   "src": "real/rad_s_109.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 19.5
+  },
+  {
+   "id": "ov_ctacard_606",
+   "start": 605.68,
+   "dur": 6.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Las medidas exactas",
+   "title": "La Colección del Constructor Libre",
+   "bullet": "Medidas al milímetro, plano de la compuerta y las dos versiones",
+   "price": 0,
+   "cta": "LINK EN LA DESCRIPCIÓN"
+  },
+  {
+   "id": "rad_s_113",
+   "start": 624.88,
+   "kind": "raw",
+   "src": "real/rad_s_113.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 11.66
+  },
+  {
+   "id": "ov_vsduel_625",
+   "start": 624.88,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Orientación según el hemisferio",
+   "title": "¿A qué pared la pegás?",
+   "left": {
+    "label": "Hemisferio sur",
+    "sub": "Pared que mira al norte",
+    "good": true
+   },
+   "right": {
+    "label": "Hemisferio norte",
+    "sub": "Pared que mira al sur",
+    "good": true
+   }
+  },
+  {
+   "id": "rad_s_115",
+   "start": 636.24,
+   "kind": "raw",
+   "src": "real/rad_s_115.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.94
+  },
+  {
+   "id": "rad_s_116",
+   "start": 640.88,
+   "kind": "raw",
+   "src": "real/rad_s_116.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.5
+  },
+  {
+   "id": "ov_bulletcascade_641",
+   "start": 640.88,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BulletCascade",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Orientación y horas de sol",
+   "bullets": [
+    {
+     "pre": "Al",
+     "key": "este",
+     "post": ", solo sirve a la mañana"
+    },
+    {
+     "pre": "Al",
+     "key": "oeste",
+     "post": ", solo sirve a la tarde"
+    },
+    {
+     "pre": "De sur a",
+     "key": "norte",
+     "post": ", sol de punta a punta del día"
+    }
+   ]
+  },
+  {
+   "id": "rad_s_118",
+   "start": 651.08,
+   "kind": "raw",
+   "src": "real/rad_s_118.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 21.04
+  },
+  {
+   "id": "rad_s_122",
+   "start": 671.82,
+   "kind": "raw",
+   "src": "real/rad_s_122.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.24
+  },
+  {
+   "id": "rad_s_123",
+   "start": 676.76,
+   "kind": "raw",
+   "src": "real/rad_s_123.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.42
+  },
+  {
+   "id": "ov_bigstatreveal_677",
+   "start": 676.76,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Temperatura de salida en un día de sol",
+   "value": 60,
+   "prefix": "",
+   "suffix": "°",
+   "support": "Sale aire entre 40 y 60 grados"
+  },
+  {
+   "id": "rad_s_124",
+   "start": 681.88,
+   "kind": "raw",
+   "src": "real/rad_s_124.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.02
+  },
+  {
+   "id": "rad_s_125",
+   "start": 687.6,
+   "kind": "raw",
+   "src": "real/rad_s_125.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.28
+  },
+  {
+   "id": "rad_s_126",
+   "start": 692.58,
+   "kind": "raw",
+   "src": "real/rad_s_126.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.02
+  },
+  {
+   "id": "rad_s_128",
+   "start": 702.3,
+   "kind": "raw",
+   "src": "real/rad_s_128.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 11.48
+  },
+  {
+   "id": "ov_pullquote_707",
+   "start": 707.4,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Con sol es una máquina, sin sol es una caja."
+  },
+  {
+   "id": "rad_s_130",
+   "start": 713.48,
+   "kind": "raw",
+   "src": "real/rad_s_130.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.9
+  },
+  {
+   "id": "rad_s_131",
+   "start": 719.08,
+   "kind": "raw",
+   "src": "real/rad_s_131.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.22
+  },
+  {
+   "id": "rad_s_132",
+   "start": 724,
+   "kind": "raw",
+   "src": "real/rad_s_132.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.82
+  },
+  {
+   "id": "rad_s_134",
+   "start": 734.52,
+   "kind": "raw",
+   "src": "real/rad_s_134.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.18
+  },
+  {
+   "id": "ov_floatingcutout_735",
+   "start": 734.52,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "full",
+   "image": "real/radiador_c6.png",
+   "label": "Es modular",
+   "sub": "Una caja para un cuarto, dos para un ambiente grande"
+  },
+  {
+   "id": "rad_s_135",
+   "start": 740.4,
+   "kind": "raw",
+   "src": "real/rad_s_135.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.6
+  },
+  {
+   "id": "rad_s_136",
+   "start": 745.7,
+   "kind": "raw",
+   "src": "real/rad_s_136.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.54
+  },
+  {
+   "id": "rad_s_137",
+   "start": 750.94,
+   "kind": "raw",
+   "src": "real/rad_s_137.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.44
+  },
+  {
+   "id": "rad_s_138",
+   "start": 756.08,
+   "kind": "raw",
+   "src": "real/rad_s_138.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.34
+  },
+  {
+   "id": "rad_s_139",
+   "start": 761.12,
+   "kind": "raw",
+   "src": "real/rad_s_139.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.44
+  },
+  {
+   "id": "ov_ctacard_761",
+   "start": 761.12,
+   "dur": 6.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Las dos versiones",
+   "title": "La Colección del Constructor Libre",
+   "bullet": "La versión de pared y la de ventana, con sus plantillas de corte",
+   "price": 0,
+   "cta": "LINK EN LA DESCRIPCIÓN"
+  },
+  {
+   "id": "rad_s_140",
+   "start": 766.26,
+   "kind": "raw",
+   "src": "real/rad_s_140.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 0.8
+  },
+  {
+   "id": "rad_s_174",
+   "start": 766.26,
+   "kind": "raw",
+   "src": "real/rad_s_174.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.96
+  },
+  {
+   "id": "rad_s_142",
+   "start": 776.92,
+   "kind": "raw",
+   "src": "real/rad_s_142.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.74
+  },
+  {
+   "id": "ov_vsduel_784",
+   "start": 784.14,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Corte de luz en pleno invierno",
+   "title": "Quién sigue teniendo calor",
+   "left": {
+    "label": "Vecino con caloventor",
+    "sub": "Tiritando en la oscuridad",
+    "good": false
+   },
+   "right": {
+    "label": "Vos, con la caja",
+    "sub": "Sol convertido en calor",
+    "good": true
+   }
+  },
+  {
+   "id": "rad_s_144",
+   "start": 787.36,
+   "kind": "raw",
+   "src": "real/rad_s_144.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 18.74
+  },
+  {
+   "id": "rad_s_147",
+   "start": 805.8,
+   "kind": "raw",
+   "src": "real/rad_s_147.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.34
+  },
+  {
+   "id": "ov_highlightsweep_806",
+   "start": 805.8,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Te estoy mostrando cómo sacarte",
+   "highlight": "la correa que te ata al medidor",
+   "post": "y a la factura.",
+   "note": ""
+  },
+  {
+   "id": "rad_s_148",
+   "start": 810.84,
+   "kind": "raw",
+   "src": "real/rad_s_148.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 15
+  },
+  {
+   "id": "rad_s_151",
+   "start": 825.54,
+   "kind": "raw",
+   "src": "real/rad_s_151.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 19.36
+  },
+  {
+   "id": "rad_s_154",
+   "start": 844.6,
+   "kind": "raw",
+   "src": "real/rad_s_154.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.08
+  },
+  {
+   "id": "rad_s_155",
+   "start": 850.38,
+   "kind": "raw",
+   "src": "real/rad_s_155.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.04
+  },
+  {
+   "id": "ov_checklistreveal_850",
+   "start": 850.38,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Los 5 pasos",
+   "items": [
+    "1. La caja y el absorbedor negro mate",
+    "2. El vidrio bien sellado",
+    "3. Las dos bocas",
+    "4. La orientación al sol del mediodía",
+    "5. La tapa nocturna"
+   ],
+   "stamp": "RECAP"
+  },
+  {
+   "id": "rad_s_156",
+   "start": 855.12,
+   "kind": "raw",
+   "src": "real/rad_s_156.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.9
+  },
+  {
+   "id": "rad_s_157",
+   "start": 859.72,
+   "kind": "raw",
+   "src": "real/rad_s_157.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.92
+  },
+  {
+   "id": "rad_s_158",
+   "start": 865.34,
+   "kind": "raw",
+   "src": "real/rad_s_158.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.06
+  },
+  {
+   "id": "rad_s_159",
+   "start": 870.1,
+   "kind": "raw",
+   "src": "real/rad_s_159.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.04
+  },
+  {
+   "id": "rad_s_160",
+   "start": 874.84,
+   "kind": "raw",
+   "src": "real/rad_s_160.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.5
+  },
+  {
+   "id": "rad_s_161",
+   "start": 882.04,
+   "kind": "raw",
+   "src": "real/rad_s_161.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.02
+  },
+  {
+   "id": "ov_highlightsweep_882",
+   "start": 882.04,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Cada rendija es",
+   "highlight": "calor que se te fuga",
+   "post": "sellado, sellado, sellado.",
+   "note": "Paso 2: el vidrio"
+  },
+  {
+   "id": "rad_s_162",
+   "start": 886.76,
+   "kind": "raw",
+   "src": "real/rad_s_162.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.92
+  },
+  {
+   "id": "rad_s_163",
+   "start": 891.38,
+   "kind": "raw",
+   "src": "real/rad_s_163.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.52
+  },
+  {
+   "id": "rad_s_164",
+   "start": 896.6,
+   "kind": "raw",
+   "src": "real/rad_s_164.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.14
+  },
+  {
+   "id": "rad_s_165",
+   "start": 901.44,
+   "kind": "raw",
+   "src": "real/rad_s_165.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.46
+  },
+  {
+   "id": "ov_numberedsteps_901",
+   "start": 901.44,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Paso 3: las dos bocas",
+   "title": "Más separación, más tiro",
+   "steps": [
+    {
+     "title": "Boca de abajo",
+     "sub": "Entra el aire frío"
+    },
+    {
+     "title": "Boca de arriba",
+     "sub": "Sale el aire caliente"
+    }
+   ]
+  },
+  {
+   "id": "rad_s_166",
+   "start": 906.6,
+   "kind": "raw",
+   "src": "real/rad_s_166.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 16.46
+  },
+  {
+   "id": "rad_s_169",
+   "start": 922.76,
+   "kind": "raw",
+   "src": "real/rad_s_169.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.04
+  },
+  {
+   "id": "rad_s_170",
+   "start": 928.5,
+   "kind": "raw",
+   "src": "real/rad_s_170.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.82
+  },
+  {
+   "id": "rad_s_171",
+   "start": 936.02,
+   "kind": "raw",
+   "src": "real/rad_s_171.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 15.22
+  },
+  {
+   "id": "rad_s_173",
+   "start": 950.94,
+   "kind": "raw",
+   "src": "real/rad_s_173.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 26.22
+  },
+  {
+   "id": "ov_ctacard_959",
+   "start": 959.44,
+   "dur": 6.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Todo dibujado paso a paso",
+   "title": "La Colección del Constructor Libre",
+   "bullet": "Medidas exactas, separación del vidrio y el plano de la compuerta nocturna",
+   "price": 0,
+   "cta": "LINK EN LA DESCRIPCIÓN"
+  },
+  {
+   "id": "rad_s_178",
+   "start": 976.86,
+   "kind": "raw",
+   "src": "real/rad_s_178.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 19.12
+  },
+  {
+   "id": "rad_s_181",
+   "start": 995.68,
+   "kind": "raw",
+   "src": "real/rad_s_181.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 27.44
+  },
+  {
+   "id": "rad_s_185",
+   "start": 1022.82,
+   "kind": "raw",
+   "src": "real/rad_s_185.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.62
+  },
+  {
+   "id": "rad_s_186",
+   "start": 1030.14,
+   "kind": "raw",
+   "src": "real/rad_s_186.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.94
+  },
+  {
+   "id": "ov_bigstatreveal_1035",
+   "start": 1035.38,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Todo el invierno, gratis",
+   "value": 30,
+   "prefix": "$",
+   "suffix": "",
+   "support": "Cero watts, todo el invierno"
+  }
+ ]
+}

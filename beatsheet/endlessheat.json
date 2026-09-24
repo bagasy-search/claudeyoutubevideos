@@ -1,0 +1,1315 @@
+{
+ "video": "endlessheat",
+ "avatar": "endlessheat_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "endlessheat_0",
+   "start": 0,
+   "kind": "raw",
+   "src": "img/eh_p_by_stove.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "endlessheat_1",
+   "start": 3.4,
+   "kind": "raw",
+   "src": "broll/eh_s_embers.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.3,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_2",
+   "start": 9.7,
+   "kind": "raw",
+   "src": "img/eh_o_warmstoveglow.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "endlessheat_3",
+   "start": 11.66,
+   "kind": "raw",
+   "src": "broll/eh_s_stovefire.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.26,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_4",
+   "start": 13.92,
+   "kind": "raw",
+   "src": "img/eh_o_warmstoveglow.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56
+  },
+  {
+   "id": "endlessheat_5",
+   "start": 17.48,
+   "kind": "raw",
+   "src": "img/eh_o_propanefurnace.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.08
+  },
+  {
+   "id": "endlessheat_6",
+   "start": 23.56,
+   "kind": "raw",
+   "src": "broll/eh_s_powerlines.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_7",
+   "start": 25.36,
+   "kind": "raw",
+   "src": "img/eh_o_propanefurnace.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.52
+  },
+  {
+   "id": "endlessheat_8",
+   "start": 32.88,
+   "kind": "raw",
+   "src": "img/eh_o_propanefurnace.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.9
+  },
+  {
+   "id": "endlessheat_9",
+   "start": 39.78,
+   "kind": "raw",
+   "src": "broll/eh_s_frostwindow.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_10",
+   "start": 41.62,
+   "kind": "raw",
+   "src": "img/eh_p_point_stove.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "endlessheat_11",
+   "start": 46,
+   "kind": "raw",
+   "src": "img/eh_o_castiron.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_12",
+   "start": 60.36,
+   "kind": "raw",
+   "src": "img/eh_o_vintagefamily.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_highlightsweep_80",
+   "start": 79.66,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "This isn't a trick —",
+   "highlight": "it's just physics we forgot",
+   "post": ".",
+   "note": "catch the heat you already make instead of letting it fly up the chimney"
+  },
+  {
+   "id": "endlessheat_13",
+   "start": 88,
+   "kind": "raw",
+   "src": "broll/eh_s_woodstove2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_100",
+   "start": 100.42,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "A normal stove throws away",
+   "value": 70,
+   "suffix": "% up the chimney",
+   "support": "most of your fire's heat leaves as hot smoke — heat you cut, split and carried in"
+  },
+  {
+   "id": "endlessheat_14",
+   "start": 103.62,
+   "kind": "raw",
+   "src": "broll/eh_s_chimneysmoke.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.52,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_15",
+   "start": 111.14,
+   "kind": "raw",
+   "src": "img/eh_p_hand_stovepipe.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84
+  },
+  {
+   "id": "ov_bigstatreveal_115",
+   "start": 114.98,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "That stove pipe runs",
+   "value": 500,
+   "prefix": "400–",
+   "suffix": "°F",
+   "support": "four to five hundred degrees of heat you paid for, escaping straight into the cold sky"
+  },
+  {
+   "id": "endlessheat_16",
+   "start": 123.42,
+   "kind": "raw",
+   "src": "broll/eh_s_splitwood.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.92,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_17",
+   "start": 130.34,
+   "kind": "raw",
+   "src": "img/eh_p_by_stove.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.42
+  },
+  {
+   "id": "ov_highlightsweep_138",
+   "start": 137.76,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "The whole Amish trick:",
+   "highlight": "stop letting the heat run away",
+   "post": ".",
+   "note": "catch it, hold it in mass, and let it out slow for hours after the fire dies"
+  },
+  {
+   "id": "ov_mythtruth_146",
+   "start": 145.5,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "'Endless' heat, forever, from one fire",
+   "truth": "Nothing's endless — but one morning fire in enough mass keeps a room warm till the next one, on zero electricity"
+  },
+  {
+   "id": "endlessheat_18",
+   "start": 151.06,
+   "kind": "raw",
+   "src": "img/eh_o_warmstoveglow.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "endlessheat_19",
+   "start": 154.76,
+   "kind": "raw",
+   "src": "broll/eh_s_candleflame.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.42,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_161",
+   "start": 161.18,
+   "dur": 6.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Do one, or stack all four",
+   "title": "Four ways to keep the heat",
+   "steps": [
+    {
+     "title": "Thermal mass",
+     "sub": "store the heat in brick and stone"
+    },
+    {
+     "title": "Heat reclaimer",
+     "sub": "rob the hot flue before it escapes"
+    },
+    {
+     "title": "Thermosiphon",
+     "sub": "move heat to another room, no pump"
+    },
+    {
+     "title": "Seal the drafts",
+     "sub": "stop the heat leaking back out"
+    }
+   ]
+  },
+  {
+   "id": "endlessheat_20",
+   "start": 176.16,
+   "kind": "raw",
+   "src": "img/eh_o_castiron.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_21",
+   "start": 186.9,
+   "kind": "raw",
+   "src": "broll/eh_s_brickwall.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_22",
+   "start": 196.4,
+   "kind": "raw",
+   "src": "img/eh_o_heatshield.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.46
+  },
+  {
+   "id": "ov_highlightsweep_203",
+   "start": 202.86,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "That brick wall behind the stove isn't a heat shield —",
+   "highlight": "it's a heat battery",
+   "post": ".",
+   "note": "it soaks heat all day and radiates it back all night, long after the fire's out"
+  },
+  {
+   "id": "endlessheat_23",
+   "start": 210.8,
+   "kind": "raw",
+   "src": "broll/eh_s_brickwall.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_24",
+   "start": 217.8,
+   "kind": "raw",
+   "src": "img/eh_o_heatshield.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_25",
+   "start": 229.3,
+   "kind": "raw",
+   "src": "broll/eh_s_stackbrick.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_26",
+   "start": 240.76,
+   "kind": "raw",
+   "src": "img/eh_o_reclaimbrick.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.7
+  },
+  {
+   "id": "endlessheat_27",
+   "start": 246.46,
+   "kind": "raw",
+   "src": "img/eh_p_stack_brick.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.6
+  },
+  {
+   "id": "endlessheat_28",
+   "start": 254.06,
+   "kind": "raw",
+   "src": "img/eh_o_woodstovebrick.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_29",
+   "start": 269.62,
+   "kind": "raw",
+   "src": "img/eh_p_hand_on_stone.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_pullquote_284",
+   "start": 284.36,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "One wall of rock changed how he heated for the rest of his life. It isn't hard — it's just been forgotten."
+  },
+  {
+   "id": "endlessheat_30",
+   "start": 294.1,
+   "kind": "raw",
+   "src": "img/eh_o_masonryheater.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.04
+  },
+  {
+   "id": "diag_flow_299",
+   "start": 299.14,
+   "dur": 8,
+   "kind": "massheater",
+   "mode": "flow",
+   "eyebrow": "Part one — the masonry heater",
+   "title": "Burn hot, store it in stone",
+   "fire": {
+    "text": "Fierce fire",
+    "sub": "1–2 hours, burns clean"
+   },
+   "mass": {
+    "text": "Stone drinks the heat",
+    "sub": "winding smoke channels"
+   },
+   "out": {
+    "text": "Radiates 12–24 hrs",
+    "sub": "gentle, even warmth"
+   },
+   "coolTag": "smoke leaves cool",
+   "effTag": "one fire a day"
+  },
+  {
+   "id": "ov_bigstatreveal_329",
+   "start": 329.36,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "A masonry heater radiates for",
+   "value": 24,
+   "prefix": "12–",
+   "suffix": " hours",
+   "support": "burn one hot fire, and a ton of warm stone gives heat back gentle and even, all day long"
+  },
+  {
+   "id": "endlessheat_32",
+   "start": 335.04,
+   "kind": "raw",
+   "src": "img/eh_o_masonryheater.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.56
+  },
+  {
+   "id": "endlessheat_33",
+   "start": 340.6,
+   "kind": "raw",
+   "src": "img/eh_p_by_masonry.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.34
+  },
+  {
+   "id": "endlessheat_34",
+   "start": 348.94,
+   "kind": "raw",
+   "src": "img/eh_p_point_desc.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_35",
+   "start": 368.02,
+   "kind": "raw",
+   "src": "img/eh_o_stovepipe.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.02
+  },
+  {
+   "id": "endlessheat_36",
+   "start": 373.04,
+   "kind": "raw",
+   "src": "img/eh_p_hand_stovepipe.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.2
+  },
+  {
+   "id": "endlessheat_37",
+   "start": 379.24,
+   "kind": "raw",
+   "src": "img/eh_o_doublebarrel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_38",
+   "start": 395.46,
+   "kind": "raw",
+   "src": "img/eh_o_barrelstove.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_39",
+   "start": 405.04,
+   "kind": "raw",
+   "src": "img/eh_o_reclaimer.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28
+  },
+  {
+   "id": "endlessheat_40",
+   "start": 408.32,
+   "kind": "raw",
+   "src": "broll/eh_s_copperpipe.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16,
+   "noSplit": true
+  },
+  {
+   "id": "ov_flowsteps_412",
+   "start": 412.48,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "title": "How the heat reclaimer works",
+   "nodes": [
+    {
+     "label": "Hot flue in the middle",
+     "sub": "400° smoke, about to escape up the chimney"
+    },
+    {
+     "label": "Cold room air rises around it",
+     "sub": "convection — warm air wants to rise"
+    },
+    {
+     "label": "Warm air pours out the top",
+     "sub": "no fan, no power — just physics"
+    }
+   ]
+  },
+  {
+   "id": "ov_mythtruth_426",
+   "start": 425.8,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "You need a fan to move the heat around",
+   "truth": "A fan dies the moment the power does. This runs on the plain fact that hot air rises — that's the whole motor"
+  },
+  {
+   "id": "endlessheat_41",
+   "start": 437.42,
+   "kind": "raw",
+   "src": "broll/eh_s_heatshimmer.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_442",
+   "start": 441.76,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Same fire, same wood — a reclaimer adds",
+   "value": 20,
+   "prefix": "10–",
+   "suffix": "° warmer",
+   "support": "ten to twenty degrees of extra warmth in the room, just by not throwing the flue heat away"
+  },
+  {
+   "id": "endlessheat_42",
+   "start": 448.36,
+   "kind": "raw",
+   "src": "img/eh_o_reclaimer.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_bigstatreveal_460",
+   "start": 460.06,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "The smoke up your flue carries off",
+   "value": 50,
+   "suffix": "% of the heat",
+   "support": "up to half of everything in that log leaves as hot exhaust — the single biggest waste in the system"
+  },
+  {
+   "id": "diag_rocket_486",
+   "start": 485.54,
+   "dur": 9,
+   "kind": "massheater",
+   "mode": "rocket",
+   "eyebrow": "Part two — the rocket mass heater",
+   "title": "Anatomy of a rocket mass heater",
+   "fire": {
+    "text": "J-tube feed",
+    "sub": "wood stands on end"
+   },
+   "mass": {
+    "text": "Cob & stone bench",
+    "sub": "clay, sand, straw — nearly free"
+   },
+   "out": {
+    "text": "A heated seat",
+    "sub": "warm for hours, runs on sticks"
+   },
+   "coolTag": "smoke burns twice",
+   "effTag": "−90% wood"
+  },
+  {
+   "id": "endlessheat_45",
+   "start": 506.9,
+   "kind": "raw",
+   "src": "img/eh_o_rocketbench.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_46",
+   "start": 526.98,
+   "kind": "raw",
+   "src": "broll/eh_s_twigs.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_47",
+   "start": 536.62,
+   "kind": "raw",
+   "src": "img/eh_o_oldradiator.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.86
+  },
+  {
+   "id": "ov_checklistreveal_538",
+   "start": 538.48,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "A thermosiphon needs none of this",
+   "items": [
+    "No pump — hot water rises on its own",
+    "No ductwork, no blower",
+    "No electricity, not a watt",
+    "Just a coil of copper and gravity"
+   ],
+   "stamp": "IT RUNS ON GRAVITY"
+  },
+  {
+   "id": "endlessheat_48",
+   "start": 544.04,
+   "kind": "raw",
+   "src": "img/eh_o_watercoil.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "ov_flowsteps_548",
+   "start": 548.32,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "title": "The thermosiphon loop",
+   "nodes": [
+    {
+     "label": "Fire heats water in a coil",
+     "sub": "copper against the firebox"
+    },
+    {
+     "label": "Hot water rises on its own",
+     "sub": "up to a radiator in the next room"
+    },
+    {
+     "label": "Cooled water sinks back",
+     "sub": "and around it goes, as long as there's a fire"
+    }
+   ]
+  },
+  {
+   "id": "endlessheat_49",
+   "start": 554.26,
+   "kind": "raw",
+   "src": "img/eh_o_watercoil.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "endlessheat_50",
+   "start": 558.74,
+   "kind": "raw",
+   "src": "img/eh_o_oldradiator.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.96
+  },
+  {
+   "id": "endlessheat_51",
+   "start": 565.7,
+   "kind": "raw",
+   "src": "broll/eh_s_boilwater.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.12,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_52",
+   "start": 568.82,
+   "kind": "raw",
+   "src": "broll/eh_s_radiatorsteam.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_53",
+   "start": 572.58,
+   "kind": "raw",
+   "src": "broll/eh_s_waterflow.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_54",
+   "start": 583.24,
+   "kind": "raw",
+   "src": "img/eh_p_serious_safety.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.78
+  },
+  {
+   "id": "ov_checklistreveal_591",
+   "start": 591.02,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Water + fire — the safety rules",
+   "items": [
+    "Never seal the loop — leave an open tank up top",
+    "Or fit a proper pressure-relief valve",
+    "Trapped, heated water builds dangerous pressure",
+    "First time? Read up or get help — do this one right"
+   ],
+   "stamp": "DO NOT SKIP THIS"
+  },
+  {
+   "id": "endlessheat_55",
+   "start": 606.64,
+   "kind": "raw",
+   "src": "img/eh_p_serious_safety.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_56",
+   "start": 622.02,
+   "kind": "raw",
+   "src": "broll/eh_s_snowcabin.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_57",
+   "start": 640.84,
+   "kind": "raw",
+   "src": "img/eh_o_weatherstrip.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_58",
+   "start": 655.84,
+   "kind": "raw",
+   "src": "img/eh_p_feel_draft.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.66
+  },
+  {
+   "id": "endlessheat_59",
+   "start": 661.5,
+   "kind": "raw",
+   "src": "img/eh_o_towelunderdoor.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_60",
+   "start": 673.84,
+   "kind": "raw",
+   "src": "img/eh_o_attichatch.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_61",
+   "start": 696.86,
+   "kind": "raw",
+   "src": "broll/eh_s_atticinsul.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_62",
+   "start": 712.44,
+   "kind": "raw",
+   "src": "img/eh_o_quiltwindow.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_63",
+   "start": 722.92,
+   "kind": "raw",
+   "src": "img/eh_o_quiltwindow.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_64",
+   "start": 744.04,
+   "kind": "raw",
+   "src": "img/eh_o_kachelofen.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8
+  },
+  {
+   "id": "endlessheat_65",
+   "start": 747.84,
+   "kind": "raw",
+   "src": "img/eh_o_kachelofen.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "endlessheat_66",
+   "start": 749.46,
+   "kind": "raw",
+   "src": "img/eh_o_russianstove.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.08
+  },
+  {
+   "id": "endlessheat_67",
+   "start": 753.54,
+   "kind": "raw",
+   "src": "img/eh_o_vintagefamily.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.76
+  },
+  {
+   "id": "ov_beforeafter_755",
+   "start": 755.3,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Our great-great-grandparents",
+   "beforeLabel": "No furnace",
+   "afterLabel": "Never froze",
+   "caption": "one hot fire a day, and a ton of stone that held it — for centuries"
+  },
+  {
+   "id": "endlessheat_68",
+   "start": 760.84,
+   "kind": "raw",
+   "src": "broll/eh_s_matches.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_69",
+   "start": 774.36,
+   "kind": "raw",
+   "src": "img/eh_o_propanefurnace.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "endlessheat_70",
+   "start": 777.72,
+   "kind": "raw",
+   "src": "broll/eh_s_thermostat.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.86,
+   "noSplit": true
+  },
+  {
+   "id": "ov_duelcolumns_783",
+   "start": 782.58,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "What we traded away",
+   "leftName": "The old way",
+   "rightName": "The modern furnace",
+   "rows": [
+    {
+     "attr": "Runs on gravity, fire and stone",
+     "leftWins": true
+    },
+    {
+     "attr": "Still works when the grid is down",
+     "leftWins": true
+    },
+    {
+     "attr": "Needs power, filters, a technician",
+     "leftWins": false
+    },
+    {
+     "attr": "A bill to the gas company for life",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "endlessheat_71",
+   "start": 797.46,
+   "kind": "raw",
+   "src": "broll/eh_s_darkhouse.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_72",
+   "start": 798.94,
+   "kind": "raw",
+   "src": "broll/eh_s_icestorm.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.42,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_800",
+   "start": 800.36,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "The ice storm, the grid down —",
+   "highlight": "the exact day you need heat, the furnace quits",
+   "post": ".",
+   "note": "no power means no blower, no gas, no heat. A fire and stone don't care about the grid"
+  },
+  {
+   "id": "ov_pullquote_826",
+   "start": 826.4,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "A furnace that runs forever on nothing doesn't sell you anything next month. There's no money in teaching a man to never need you again."
+  },
+  {
+   "id": "ov_mythtruth_833",
+   "start": 833.04,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "You'd have to feed the fire all night",
+   "truth": "That's the whole point of the mass. Burn one hot fire and the stone radiates 10–12 hours — some setups a full day. Nobody's up at 3 a.m."
+  },
+  {
+   "id": "endlessheat_73",
+   "start": 844.38,
+   "kind": "raw",
+   "src": "broll/eh_s_handsfire.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_859",
+   "start": 859.36,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Wood heat is dirty and smoky",
+   "truth": "A rocket-style burn goes hot, clean and complete before the smoke ever hits the mass — cleaner than the old stove, and it uses less wood"
+  },
+  {
+   "id": "endlessheat_74",
+   "start": 878.32,
+   "kind": "raw",
+   "src": "broll/eh_s_flames.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_881",
+   "start": 881.46,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "This must burn a ton of wood",
+   "truth": "The opposite — catching and storing the heat means you burn hot once and coast. A mass system can cut your wood in half"
+  },
+  {
+   "id": "endlessheat_75",
+   "start": 888.7,
+   "kind": "raw",
+   "src": "broll/eh_s_woodpile.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.9,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_76",
+   "start": 897.6,
+   "kind": "raw",
+   "src": "img/eh_o_woodstovebrick.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.84
+  },
+  {
+   "id": "endlessheat_77",
+   "start": 905.44,
+   "kind": "raw",
+   "src": "broll/eh_s_snowfall.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.68,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_78",
+   "start": 912.12,
+   "kind": "raw",
+   "src": "broll/eh_s_familyfire.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.42,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_79",
+   "start": 916.54,
+   "kind": "raw",
+   "src": "broll/eh_s_snowroad.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.66,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_80",
+   "start": 922.2,
+   "kind": "raw",
+   "src": "img/eh_o_warmstoveglow.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "endlessheat_81",
+   "start": 923.58,
+   "kind": "raw",
+   "src": "broll/eh_s_warmwindow.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.9,
+   "noSplit": true
+  },
+  {
+   "id": "ov_pullquote_929",
+   "start": 929.48,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "This isn't really about a heating bill. It's about your family being warm on the one night the grid goes down — the night it actually counts."
+  },
+  {
+   "id": "ov_numberedsteps_937",
+   "start": 937.4,
+   "dur": 6.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "This weekend — simplest to hardest",
+   "title": "Your whole plan",
+   "steps": [
+    {
+     "title": "Build the mass",
+     "sub": "stack brick or stone behind the stove"
+    },
+    {
+     "title": "Add a reclaimer",
+     "sub": "double barrel or clamp-on tubes — no fan"
+    },
+    {
+     "title": "Seal the drafts",
+     "sub": "boring, free, essential"
+    },
+    {
+     "title": "Add a thermosiphon",
+     "sub": "when you're ready, done safely"
+    }
+   ]
+  },
+  {
+   "id": "endlessheat_82",
+   "start": 945.3,
+   "kind": "raw",
+   "src": "img/eh_o_heatshield.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.66
+  },
+  {
+   "id": "endlessheat_83",
+   "start": 953.96,
+   "kind": "raw",
+   "src": "img/eh_o_reclaimer.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.02
+  },
+  {
+   "id": "endlessheat_84",
+   "start": 962.98,
+   "kind": "raw",
+   "src": "img/eh_o_weatherstrip.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_ctacard_999",
+   "start": 999.1,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "A hundred old methods, written down",
+   "title": "The Plain Almanac",
+   "bullet": "the plain-folk ways to heat, cool and keep a home off the bill cycle — the heating chapter is the first section. Link up at the top of the description",
+   "price": 0,
+   "cta": "LINK IN THE DESCRIPTION"
+  },
+  {
+   "id": "endlessheat_85",
+   "start": 1003.98,
+   "kind": "raw",
+   "src": "img/eh_p_hold_book.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_86",
+   "start": 1018.02,
+   "kind": "raw",
+   "src": "broll/eh_s_winterforest.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "endlessheat_87",
+   "start": 1027.52,
+   "kind": "raw",
+   "src": "img/eh_p_point_desc.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "endlessheat_88",
+   "start": 1039.14,
+   "kind": "raw",
+   "src": "img/eh_o_vintagefamily.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.98
+  },
+  {
+   "id": "ov_pullquote_1046",
+   "start": 1046.12,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "It was never magic. It was never expensive. It was just the heat you already make — and refusing to let it get away."
+  },
+  {
+   "id": "endlessheat_89",
+   "start": 1053.08,
+   "kind": "raw",
+   "src": "img/eh_p_close_warm.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "endlessheat_90",
+   "start": 1056.38,
+   "kind": "raw",
+   "src": "img/eh_p_close_warm.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  }
+ ]
+}

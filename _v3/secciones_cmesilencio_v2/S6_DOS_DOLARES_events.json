@@ -1,0 +1,117 @@
+[
+  {
+    "id": "s6_e1",
+    "ms": 600440,
+    "dur": 3.6,
+    "tipo": "CLIP",
+    "dice": "Y aquí está la mitad de la historia de este vídeo.",
+    "muestra": "Claudio agachado junto a la caja a medio armar del patio, levantando la pistola de sellador del concreto y girándola en la mano.",
+    "porque": "S5 cerró con la línea de luz escapándose por la junta sin sellar; el primer objeto que entra acá es justo el que la va a tapar, todavía sin nombrarlo.",
+    "nombre": "cms_s6_levanta_pistola_sellador",
+    "foto_change": "he is crouching in the back yard beside the half built raw plywood box, lifting a metal caulking gun with a cartridge loaded off the stained concrete and turning it in one hand, the low block wall and the neighbour's lit yellow window behind him, the red framed generator out of focus behind, cold grey blue late afternoon light, close medium shot from low, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the back yard stays exactly the same for the whole shot, same half built plywood box, same stained concrete, same low block wall with the lit yellow window behind it, same red framed generator out of focus, nothing behind him changes or moves.",
+      "action": "Action: he lifts the caulking gun off the concrete and turns it once in his hand so the nozzle points up, his lips stay closed, one single continuous action, his hand stays in contact with the caulking gun the whole time.",
+      "camera": "Camera: the framing never changes, close medium shot from low, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "metal de la pistola de sellador + roce de concreto",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1432,
+      "endWord": 1442,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s6_e2",
+    "ms": 600500,
+    "dur": 3.2,
+    "tipo": "TEXTO",
+    "dice": "aquí está la mitad de la historia de este vídeo.",
+    "muestra": "Rótulo LA MITAD DE LOS 12 dB entrando al lado de la pistola de sellador que acaba de levantar.",
+    "porque": "La promesa de la sección se planta encima del objeto que la va a cumplir, no sobre la cara: así el espectador ya está mirando el sellador cuando escucha el número.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "LA MITAD DE LOS 12 dB",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1433,
+      "endWord": 1442,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s6_seal",
+    "ms": 607280,
+    "dur": 5.2,
+    "tipo": "CLIP",
+    "dice": "Un detalle barato es el sellador en las juntas",
+    "nombre": "cms_s6_levanta_pistola_sellador",
+    "_manual": true,
+    "_sec": "S6_DOS_DOLARES",
+    "_anchor": {
+      "startWord": 1454,
+      "endWord": 1462,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s6_e6",
+    "ms": 609000,
+    "dur": 2.2,
+    "tipo": "TEXTO",
+    "dice": "El sellador en las juntas.",
+    "muestra": "Rótulo EL SELLADOR EN LAS JUNTAS clavado sobre la esquina de la caja por donde se escapa el hilo verde.",
+    "porque": "El rótulo señala la junta que está fugando en ese momento; nombrar el remedio sobre la fuga vale más que nombrarlo sobre el producto.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "EL SELLADOR EN LAS JUNTAS",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1458,
+      "endWord": 1462,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s6_vibration",
+    "ms": 631460,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "El otro detalle es la vibracion",
+    "nombre": "cms_s6_dos_objetos_concreto",
+    "_manual": true,
+    "_sec": "S6_DOS_DOLARES",
+    "_anchor": {
+      "startWord": 1513,
+      "endWord": 1518,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s6_test",
+    "ms": 663660,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "En mi medicion, el conjunto de barrera",
+    "nombre": "cms_s6_apoya_sonometro_muro",
+    "_manual": true,
+    "_sec": "S6_DOS_DOLARES",
+    "_anchor": {
+      "startWord": 1589,
+      "endWord": 1595,
+      "coverage": 1
+    }
+  }
+]

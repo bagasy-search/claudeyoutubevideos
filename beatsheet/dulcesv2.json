@@ -1,0 +1,3919 @@
+{
+ "video": "dulcesv2",
+ "beats": [
+  {
+   "id": "intro_1",
+   "kind": "raw",
+   "src": "broll/intro_1.mp4",
+   "start": 0.13,
+   "dur": 6.96,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "intro_2",
+   "kind": "raw",
+   "src": "real/vintage_cocina1_1.jpg",
+   "start": 7.09,
+   "dur": 10.49,
+   "hue": "amber"
+  },
+  {
+   "id": "teasecards_v2_cmp_tease",
+   "kind": "teasecards",
+   "eyebrow": "Algunos merecen volver…",
+   "title": "¿Cuántos probaste?",
+   "cards": [
+    {
+     "src": "real/card_d01.jpg",
+     "label": "Alfajor de maicena"
+    },
+    {
+     "src": "real/card_d02.jpg",
+     "label": "Dulce de leche"
+    },
+    {
+     "src": "real/card_d03.jpg",
+     "label": "Arroz con leche"
+    },
+    {
+     "src": "real/card_d05.jpg",
+     "label": "Bocaditos de coco"
+    },
+    {
+     "src": "real/card_d11.jpg",
+     "label": "Dulce de membrillo"
+    },
+    {
+     "src": "real/card_d10.jpg",
+     "label": "Alfeñiques"
+    },
+    {
+     "src": "real/card_d16.jpg",
+     "label": "Bombones caseros"
+    }
+   ],
+   "start": 17.24,
+   "dur": 8.6,
+   "overlay": true
+  },
+  {
+   "id": "intro_3",
+   "kind": "raw",
+   "src": "broll/intro_3.mp4",
+   "start": 17.58,
+   "dur": 6.76,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "intro_4",
+   "kind": "raw",
+   "src": "real/vintage_cocina2_1.jpg",
+   "start": 24.34,
+   "dur": 2.31,
+   "hue": "amber"
+  },
+  {
+   "id": "intro_5",
+   "kind": "raw",
+   "src": "broll/intro_5.mp4",
+   "start": 26.65,
+   "dur": 2.83,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "intro_15",
+   "kind": "raw",
+   "src": "broll/intro_15.mp4",
+   "start": 29.48,
+   "dur": 6.58,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "intro_6",
+   "kind": "raw",
+   "src": "broll/amb_abuela_cocina1.mp4",
+   "start": 36.06,
+   "dur": 1.42,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "intro_16",
+   "kind": "raw",
+   "src": "real/vintage_abuela_1.jpg",
+   "start": 37.48,
+   "dur": 4.28,
+   "hue": "amber"
+  },
+  {
+   "id": "intro_7",
+   "kind": "raw",
+   "src": "broll/amb_abuela_cocina2.mp4",
+   "start": 41.76,
+   "dur": 4.48,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "numerodulce_v2_cmp_aroma",
+   "kind": "numerodulce",
+   "number": "20",
+   "name": "dulces que se perdieron",
+   "total": "recetas",
+   "eyebrow": "¿Sentís ese olor?",
+   "image": "broll/intro_caramelo.mp4",
+   "start": 44.04,
+   "dur": 3.2,
+   "overlay": true
+  },
+  {
+   "id": "intro_8",
+   "kind": "raw",
+   "src": "real/vintage_familia1_1.jpg",
+   "start": 46.24,
+   "dur": 2.69,
+   "hue": "amber"
+  },
+  {
+   "id": "intro_9",
+   "kind": "raw",
+   "src": "broll/intro_9.mp4",
+   "start": 48.93,
+   "dur": 0.92,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "intro_10",
+   "kind": "raw",
+   "src": "broll/intro_10.mp4",
+   "start": 49.85,
+   "dur": 6.11,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "intro_11",
+   "kind": "raw",
+   "src": "broll/amb_almibar.mp4",
+   "start": 55.96,
+   "dur": 1.18,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "intro_12",
+   "kind": "raw",
+   "src": "broll/intro_12.mp4",
+   "start": 57.14,
+   "dur": 6.62,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "numerodulce_v2_cmp_stat20",
+   "kind": "numerodulce",
+   "number": "20",
+   "name": "hechos con las manos",
+   "total": "20",
+   "eyebrow": "Hoy te cuento",
+   "image": "broll/intro_caramelo.mp4",
+   "start": 63.24,
+   "dur": 3.8,
+   "overlay": true
+  },
+  {
+   "id": "intro_13",
+   "kind": "raw",
+   "src": "broll/amb_azucar_caramelo1.mp4",
+   "start": 63.76,
+   "dur": 3.97,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "intro_17",
+   "kind": "raw",
+   "src": "broll/intro_17.mp4",
+   "start": 67.73,
+   "dur": 5.73,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "intro_14",
+   "kind": "raw",
+   "src": "broll/intro_14.mp4",
+   "start": 73.46,
+   "dur": 1.63,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "intro_18",
+   "kind": "raw",
+   "src": "real/vintage_manos_1.jpg",
+   "start": 75.09,
+   "dur": 9.22,
+   "hue": "amber"
+  },
+  {
+   "id": "top_v2_1",
+   "kind": "topdulce",
+   "index": 1,
+   "total": 20,
+   "title": "Alfajores de maicena",
+   "image": "broll/d01_alfajor_1.mp4",
+   "start": 83.11,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d01_alfajor_1",
+   "kind": "raw",
+   "src": "broll/d01_alfajor_1.mp4",
+   "start": 84.31,
+   "dur": 6.33,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "fichadulce_v2_1_6",
+   "kind": "fichadulce",
+   "bg": "broll/d01_alfajor_1.mp4",
+   "title": "Alfajor de maicena",
+   "notes": [
+    "Maicena y muy poca harina",
+    "Dulce de leche generoso",
+    "Todo el borde en coco"
+   ],
+   "side": "left",
+   "eyebrow": "El rey de la merienda",
+   "image": "real/card_d01.jpg",
+   "start": 90.31,
+   "dur": 5.2,
+   "overlay": true
+  },
+  {
+   "id": "d01_alfajor_2",
+   "kind": "raw",
+   "src": "broll/d01_alfajores.mp4",
+   "start": 90.64,
+   "dur": 1.18,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d01_alfajor_3",
+   "kind": "raw",
+   "src": "broll/d01_alfajor_3.mp4",
+   "start": 91.82,
+   "dur": 3.16,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d01_alfajor_4",
+   "kind": "raw",
+   "src": "broll/d01_alfajor_4.mp4",
+   "start": 94.98,
+   "dur": 1.54,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d01_alfajor_5",
+   "kind": "raw",
+   "src": "broll/d01_alfajores_close.mp4",
+   "start": 96.52,
+   "dur": 4.07,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d01_alfajor_6",
+   "kind": "raw",
+   "src": "broll/d01_alfajor_6.mp4",
+   "start": 100.59,
+   "dur": 3.89,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "citaabuela_v2_1_19.2",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "y",
+     "at": 0
+    },
+    {
+     "t": "eso",
+     "at": 0.04
+    },
+    {
+     "t": "mi",
+     "at": 0.25
+    },
+    {
+     "t": "amor,",
+     "at": 0.45
+    },
+    {
+     "t": "no",
+     "at": 0.89
+    },
+    {
+     "t": "se",
+     "at": 0.95
+    },
+    {
+     "t": "compra",
+     "at": 1.09
+    },
+    {
+     "t": "en",
+     "at": 1.59
+    },
+    {
+     "t": "ningún",
+     "at": 1.93
+    },
+    {
+     "t": "quiosco.",
+     "at": 2.85
+    }
+   ],
+   "text": "y eso mi amor no se compra en ningun quiosco",
+   "fontSize": 74,
+   "image": "real/alfajores_maicena_1.jpg",
+   "start": 103.51,
+   "dur": 4.27,
+   "overlay": true
+  },
+  {
+   "id": "d01_alfajor_7",
+   "kind": "raw",
+   "src": "broll/d01_alfajor_7.mp4",
+   "start": 104.48,
+   "dur": 7.57,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d01_alfajor_8",
+   "kind": "raw",
+   "src": "broll/d01_alfajores_serve.mp4",
+   "start": 112.05,
+   "dur": 3.51,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d01_alfajor_9",
+   "kind": "raw",
+   "src": "broll/d01_alfajores_ingr.mp4",
+   "start": 115.56,
+   "dur": 5.4,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d01_alfajor_10",
+   "kind": "raw",
+   "src": "broll/d01_alfajores.mp4",
+   "start": 120.96,
+   "dur": 8.74,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d01_alfajor_11",
+   "kind": "raw",
+   "src": "broll/d01_alfajor_11.mp4",
+   "start": 129.7,
+   "dur": 6.83,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d01_alfajor_12",
+   "kind": "raw",
+   "src": "broll/d01_alfajores_close.mp4",
+   "start": 136.53,
+   "dur": 3.93,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d01_alfajor_13",
+   "kind": "raw",
+   "src": "broll/d01_alfajores_serve.mp4",
+   "start": 140.46,
+   "dur": 4.36,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_2",
+   "kind": "topdulce",
+   "index": 2,
+   "total": 20,
+   "title": "Dulce de leche",
+   "image": "broll/d02_dl_1.mp4",
+   "start": 143.62,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d02_dl_1",
+   "kind": "raw",
+   "src": "broll/d02_dl_1.mp4",
+   "start": 144.82,
+   "dur": 5.74,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d02_dl_2",
+   "kind": "raw",
+   "src": "broll/d02_dl_2.mp4",
+   "start": 150.56,
+   "dur": 2.3,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "ingredientesflotan_v2_2_6",
+   "kind": "ingredientesflotan",
+   "title": "El dulce de leche casero",
+   "items": [
+    "Leche",
+    "Azúcar",
+    "Bicarbonato"
+   ],
+   "atsec": [
+    0,
+    0.7,
+    2.7
+   ],
+   "image": "broll/d02_dulceleche.mp4",
+   "start": 150.82,
+   "dur": 6.1,
+   "overlay": true
+  },
+  {
+   "id": "d02_dl_3",
+   "kind": "raw",
+   "src": "broll/d02_dulceleche.mp4",
+   "start": 152.86,
+   "dur": 2.8,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d02_dl_4",
+   "kind": "raw",
+   "src": "broll/d02_dl_4.mp4",
+   "start": 155.66,
+   "dur": 3.77,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d02_dl_5",
+   "kind": "raw",
+   "src": "broll/d02_dl_5.mp4",
+   "start": 159.43,
+   "dur": 6.73,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "antesahora_v2_2_20.1",
+   "kind": "antesahora",
+   "beforeImage": "real/dulce_de_leche_1.jpg",
+   "afterImage": "real/dulce_de_leche_2.jpg",
+   "beforeLabel": "Casero",
+   "afterLabel": "En pote",
+   "start": 164.92,
+   "dur": 4.81,
+   "overlay": true
+  },
+  {
+   "id": "d02_dl_6",
+   "kind": "raw",
+   "src": "broll/d02_dl_6.mp4",
+   "start": 166.16,
+   "dur": 2.68,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d02_dl_13",
+   "kind": "raw",
+   "src": "broll/d02_dl_13.mp4",
+   "start": 168.84,
+   "dur": 3.84,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d02_dl_7",
+   "kind": "raw",
+   "src": "broll/d02_dl_7.mp4",
+   "start": 172.68,
+   "dur": 5.53,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d02_dl_8",
+   "kind": "raw",
+   "src": "broll/d01_alfajores.mp4",
+   "start": 178.21,
+   "dur": 4.71,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d02_dl_12",
+   "kind": "raw",
+   "src": "broll/d02_dl_12.mp4",
+   "start": 182.92,
+   "dur": 2.45,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d02_dl_9",
+   "kind": "raw",
+   "src": "broll/d02_dl_9.mp4",
+   "start": 185.37,
+   "dur": 7.72,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d02_dl_10",
+   "kind": "raw",
+   "src": "broll/d02_dl_10.mp4",
+   "start": 193.09,
+   "dur": 16.63,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d02_dl_11",
+   "kind": "raw",
+   "src": "broll/d02_dulceleche_close.mp4",
+   "start": 209.72,
+   "dur": 14.92,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_3",
+   "kind": "topdulce",
+   "index": 3,
+   "total": 20,
+   "title": "Arroz con leche",
+   "image": "broll/d03_arroz_2.mp4",
+   "start": 223.44,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d03_arroz_1",
+   "kind": "raw",
+   "src": "broll/d03_arrozleche.mp4",
+   "start": 224.64,
+   "dur": 5.29,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d03_arroz_2",
+   "kind": "raw",
+   "src": "broll/d03_arroz_2.mp4",
+   "start": 229.93,
+   "dur": 2.61,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "fichadulce_v2_3_6",
+   "kind": "fichadulce",
+   "bg": "broll/d03_arroz_2.mp4",
+   "title": "Arroz con leche",
+   "notes": [
+    "Canela y cáscara de limón",
+    "Revolver sin que se pegue",
+    "Cremoso, en su punto"
+   ],
+   "side": "right",
+   "eyebrow": "El consuelo del invierno",
+   "image": "real/card_d03.jpg",
+   "start": 230.64,
+   "dur": 4.6,
+   "overlay": true
+  },
+  {
+   "id": "d03_arroz_3",
+   "kind": "raw",
+   "src": "broll/d03_arroz_3.mp4",
+   "start": 232.54,
+   "dur": 4.46,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d03_arroz_4",
+   "kind": "raw",
+   "src": "broll/d03_arroz_4.mp4",
+   "start": 237,
+   "dur": 2.1,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d03_arroz_5",
+   "kind": "raw",
+   "src": "broll/d03_arroz_5.mp4",
+   "start": 239.1,
+   "dur": 6.31,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "citaabuela_v2_3_18.6",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "era",
+     "at": 0
+    },
+    {
+     "t": "un",
+     "at": 0.24
+    },
+    {
+     "t": "abrazo",
+     "at": 0.36
+    },
+    {
+     "t": "en",
+     "at": 0.99
+    },
+    {
+     "t": "un",
+     "at": 1.15
+    },
+    {
+     "t": "plato.",
+     "at": 1.33
+    }
+   ],
+   "text": "era un abrazo en un plato",
+   "fontSize": 92,
+   "image": "real/arroz_con_leche_1.jpg",
+   "start": 243.24,
+   "dur": 4.13,
+   "overlay": true
+  },
+  {
+   "id": "d03_arroz_6",
+   "kind": "raw",
+   "src": "broll/d02_dulceleche.mp4",
+   "start": 245.41,
+   "dur": 2.45,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d03_arroz_7",
+   "kind": "raw",
+   "src": "broll/d03_arroz_7.mp4",
+   "start": 247.86,
+   "dur": 2.11,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d03_arroz_11",
+   "kind": "raw",
+   "src": "broll/d03_arroz_11.mp4",
+   "start": 249.97,
+   "dur": 8.64,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d03_arroz_8",
+   "kind": "raw",
+   "src": "broll/d03_arroz_8.mp4",
+   "start": 258.61,
+   "dur": 5.42,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d03_arroz_9",
+   "kind": "raw",
+   "src": "broll/d03_arroz_9.mp4",
+   "start": 264.03,
+   "dur": 8.15,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d03_arroz_10",
+   "kind": "raw",
+   "src": "broll/d03_arrozleche_beauty.mp4",
+   "start": 272.18,
+   "dur": 8.25,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_4",
+   "kind": "topdulce",
+   "index": 4,
+   "total": 20,
+   "title": "Mazamorra",
+   "image": "broll/d04_maza_1.mp4",
+   "start": 279.23,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d04_maza_1",
+   "kind": "raw",
+   "src": "broll/d04_maza_1.mp4",
+   "start": 280.43,
+   "dur": 6.57,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "ingredientesflotan_v2_4_6",
+   "kind": "ingredientesflotan",
+   "title": "El dulce de la tierra",
+   "items": [
+    "Maíz blanco",
+    "Remojado"
+   ],
+   "atsec": [
+    0,
+    1.45
+   ],
+   "image": "broll/d04_mazamorra.mp4",
+   "start": 286.43,
+   "dur": 4.25,
+   "overlay": true
+  },
+  {
+   "id": "d04_maza_2",
+   "kind": "raw",
+   "src": "broll/d04_mazamorra.mp4",
+   "start": 287,
+   "dur": 4.33,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d04_maza_3",
+   "kind": "raw",
+   "src": "broll/d04_maza_3.mp4",
+   "start": 291.33,
+   "dur": 5.63,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d04_maza_4",
+   "kind": "raw",
+   "src": "broll/d04_maza_4.mp4",
+   "start": 296.96,
+   "dur": 4.04,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "citaabuela_v2_4_18.25",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "Perdimos",
+     "at": 0
+    },
+    {
+     "t": "un",
+     "at": 0.52
+    },
+    {
+     "t": "pedacito",
+     "at": 0.62
+    },
+    {
+     "t": "de",
+     "at": 1.13
+    },
+    {
+     "t": "quiénes",
+     "at": 1.22
+    },
+    {
+     "t": "éramos,",
+     "at": 1.83
+    }
+   ],
+   "text": "perdimos un pedacito de quienes eramos",
+   "fontSize": 78,
+   "image": "real/mazamorra_1.jpg",
+   "start": 298.68,
+   "dur": 4.23,
+   "overlay": true
+  },
+  {
+   "id": "d04_maza_5",
+   "kind": "raw",
+   "src": "broll/d04_maza_5.mp4",
+   "start": 301,
+   "dur": 5.72,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d04_maza_6",
+   "kind": "raw",
+   "src": "broll/d03_arrozleche_ingr.mp4",
+   "start": 306.72,
+   "dur": 2.96,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d04_maza_11",
+   "kind": "raw",
+   "src": "broll/d04_mazamorra_ingr.mp4",
+   "start": 309.68,
+   "dur": 1.74,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d04_maza_7",
+   "kind": "raw",
+   "src": "broll/d04_mazamorra_proc.mp4",
+   "start": 311.42,
+   "dur": 8.02,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d04_maza_8",
+   "kind": "raw",
+   "src": "broll/d04_mazamorra_serve.mp4",
+   "start": 319.44,
+   "dur": 3.66,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d04_maza_9",
+   "kind": "raw",
+   "src": "broll/d04_maza_9.mp4",
+   "start": 323.1,
+   "dur": 8.67,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d04_maza_12",
+   "kind": "raw",
+   "src": "broll/d04_mazamorra_close.mp4",
+   "start": 331.77,
+   "dur": 2.35,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d04_maza_10",
+   "kind": "raw",
+   "src": "broll/d04_maza_10.mp4",
+   "start": 334.12,
+   "dur": 7.44,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "top_v2_5",
+   "kind": "topdulce",
+   "index": 5,
+   "total": 20,
+   "title": "Bocaditos de coco",
+   "image": "broll/d05_coco_1.mp4",
+   "start": 340.36,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d05_coco_1",
+   "kind": "raw",
+   "src": "broll/d05_coco_1.mp4",
+   "start": 341.56,
+   "dur": 6.08,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "fichadulce_v2_5_6",
+   "kind": "fichadulce",
+   "bg": "broll/d05_coco_1.mp4",
+   "title": "Bocaditos de coco",
+   "notes": [
+    "Coco y dulce de leche",
+    "Bolitas con las manos",
+    "Algunos con chocolate"
+   ],
+   "side": "left",
+   "eyebrow": "Se hacían con los nietos",
+   "image": "real/card_d05.jpg",
+   "start": 347.56,
+   "dur": 4.6,
+   "overlay": true
+  },
+  {
+   "id": "d05_coco_2",
+   "kind": "raw",
+   "src": "broll/d05_coco.mp4",
+   "start": 347.64,
+   "dur": 2.52,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d05_coco_3",
+   "kind": "raw",
+   "src": "broll/d05_coco_3.mp4",
+   "start": 350.16,
+   "dur": 2.75,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d05_coco_4",
+   "kind": "raw",
+   "src": "broll/d05_coco_4.mp4",
+   "start": 352.91,
+   "dur": 6.98,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d05_coco_5",
+   "kind": "raw",
+   "src": "broll/d05_coco_5.mp4",
+   "start": 359.89,
+   "dur": 4.13,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "citaabuela_v2_5_18.6",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "Eran",
+     "at": 0
+    },
+    {
+     "t": "feos,",
+     "at": 0.36
+    },
+    {
+     "t": "disparejos,",
+     "at": 0.9
+    },
+    {
+     "t": "cada",
+     "at": 2.02
+    },
+    {
+     "t": "uno",
+     "at": 2.34
+    },
+    {
+     "t": "de",
+     "at": 2.61
+    },
+    {
+     "t": "un",
+     "at": 2.82
+    },
+    {
+     "t": "tamaño",
+     "at": 2.97
+    },
+    {
+     "t": "distinto",
+     "at": 3.59
+    },
+    {
+     "t": "y",
+     "at": 4.32
+    },
+    {
+     "t": "eran",
+     "at": 4.41
+    },
+    {
+     "t": "perfectos.",
+     "at": 4.77
+    }
+   ],
+   "text": "eran feos disparejos cada uno de un tamano distinto y eran perfectos",
+   "fontSize": 70,
+   "image": "real/bocaditos_coco_1.jpg",
+   "start": 360.16,
+   "dur": 7.17,
+   "overlay": true
+  },
+  {
+   "id": "d05_coco_10",
+   "kind": "raw",
+   "src": "broll/d05_coco_close.mp4",
+   "start": 364.02,
+   "dur": 4.66,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d05_coco_6",
+   "kind": "raw",
+   "src": "broll/d05_coco_6.mp4",
+   "start": 368.68,
+   "dur": 3.96,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d05_coco_7",
+   "kind": "raw",
+   "src": "broll/d05_coco_7.mp4",
+   "start": 372.64,
+   "dur": 2.04,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d05_coco_8",
+   "kind": "raw",
+   "src": "broll/d05_coco_proc.mp4",
+   "start": 374.68,
+   "dur": 4.85,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d05_coco_9",
+   "kind": "raw",
+   "src": "broll/d05_coco_ingr.mp4",
+   "start": 379.53,
+   "dur": 14.7,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d05_coco_11",
+   "kind": "raw",
+   "src": "broll/d05_coco.mp4",
+   "start": 394.23,
+   "dur": 6.07,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_6",
+   "kind": "topdulce",
+   "index": 6,
+   "total": 20,
+   "title": "Turrón de quaker",
+   "image": "broll/d06_quaker_2.mp4",
+   "start": 399.1,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d06_quaker_1",
+   "kind": "raw",
+   "src": "broll/d06_turronquaker.mp4",
+   "start": 400.3,
+   "dur": 6.03,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "ingredientesflotan_v2_6_6",
+   "kind": "ingredientesflotan",
+   "title": "Con lo de la alacena",
+   "items": [
+    "Avena",
+    "Azúcar quemada",
+    "Manteca"
+   ],
+   "atsec": [
+    0,
+    0.94,
+    5.11
+   ],
+   "image": "broll/d06_turronquaker.mp4",
+   "start": 406.3,
+   "dur": 7.91,
+   "overlay": true
+  },
+  {
+   "id": "d06_quaker_2",
+   "kind": "raw",
+   "src": "broll/d06_quaker_2.mp4",
+   "start": 406.33,
+   "dur": 4.27,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d06_quaker_3",
+   "kind": "raw",
+   "src": "broll/d06_quaker_3.mp4",
+   "start": 410.6,
+   "dur": 2.09,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d06_quaker_4",
+   "kind": "raw",
+   "src": "broll/d05_coco_ingr.mp4",
+   "start": 412.69,
+   "dur": 5.59,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d06_quaker_5",
+   "kind": "raw",
+   "src": "broll/d06_quaker_5.mp4",
+   "start": 418.28,
+   "dur": 4.31,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d06_quaker_7",
+   "kind": "raw",
+   "src": "broll/d06_turronquaker_proc.mp4",
+   "start": 422.59,
+   "dur": 3.42,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d06_quaker_6",
+   "kind": "raw",
+   "src": "broll/d06_quaker_6.mp4",
+   "start": 426.01,
+   "dur": 7.86,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d06_quaker_8",
+   "kind": "raw",
+   "src": "broll/d06_quaker_8.mp4",
+   "start": 433.87,
+   "dur": 12.9,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d06_quaker_9",
+   "kind": "raw",
+   "src": "broll/d06_turronquaker.mp4",
+   "start": 446.77,
+   "dur": 12.74,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d06_quaker_10",
+   "kind": "raw",
+   "src": "broll/d05_coco_ingr.mp4",
+   "start": 459.51,
+   "dur": 6.7,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_7",
+   "kind": "topdulce",
+   "index": 7,
+   "total": 20,
+   "title": "Mantecol",
+   "image": "broll/d07_mantecol_2.mp4",
+   "start": 465.01,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d07_mantecol_1",
+   "kind": "raw",
+   "src": "broll/d07_mantecol_ingr.mp4",
+   "start": 466.21,
+   "dur": 5.95,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d07_mantecol_2",
+   "kind": "raw",
+   "src": "broll/d07_mantecol_2.mp4",
+   "start": 472.16,
+   "dur": 1.25,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "fichadulce_v2_7_6",
+   "kind": "fichadulce",
+   "bg": "broll/d07_mantecol_2.mp4",
+   "title": "Mantecol casero",
+   "notes": [
+    "Maní tostado y molido",
+    "Azúcar y clara batida",
+    "Cortado en barritas"
+   ],
+   "side": "right",
+   "eyebrow": "Un lujo de monedas",
+   "image": "real/card_d07.jpg",
+   "start": 472.21,
+   "dur": 4.6,
+   "overlay": true
+  },
+  {
+   "id": "d07_mantecol_3",
+   "kind": "raw",
+   "src": "broll/d07_mantecol_proc.mp4",
+   "start": 473.41,
+   "dur": 4.63,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d07_mantecol_4",
+   "kind": "raw",
+   "src": "broll/d07_mantecol_4.mp4",
+   "start": 478.04,
+   "dur": 8.48,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "citaabuela_v2_7_18.6",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "de",
+     "at": 0
+    },
+    {
+     "t": "tanto",
+     "at": 0.27
+    },
+    {
+     "t": "ganar",
+     "at": 0.61
+    },
+    {
+     "t": "ratos",
+     "at": 1.32
+    },
+    {
+     "t": "nos",
+     "at": 2.03
+    },
+    {
+     "t": "quedamos",
+     "at": 2.63
+    },
+    {
+     "t": "sin",
+     "at": 3.6
+    },
+    {
+     "t": "sabores.",
+     "at": 4.03
+    }
+   ],
+   "text": "de tanto ganar ratos nos quedamos sin sabores",
+   "fontSize": 80,
+   "image": "real/mantecol_1.jpg",
+   "start": 484.81,
+   "dur": 5.51,
+   "overlay": true
+  },
+  {
+   "id": "d07_mantecol_5",
+   "kind": "raw",
+   "src": "broll/d07_mantecol_5.mp4",
+   "start": 486.52,
+   "dur": 2.9,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d07_mantecol_9",
+   "kind": "raw",
+   "src": "broll/d07_mantecol_9.mp4",
+   "start": 489.42,
+   "dur": 6.54,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d07_mantecol_7",
+   "kind": "raw",
+   "src": "broll/d07_mantecol_serve.mp4",
+   "start": 495.96,
+   "dur": 4.08,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d07_mantecol_6",
+   "kind": "raw",
+   "src": "broll/d07_mantecol_ingr.mp4",
+   "start": 500.04,
+   "dur": 11.49,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d07_mantecol_8",
+   "kind": "raw",
+   "src": "broll/d07_mantecol_proc.mp4",
+   "start": 511.53,
+   "dur": 6.83,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d07_mantecol_10",
+   "kind": "raw",
+   "src": "broll/d07_mantecol_serve.mp4",
+   "start": 518.36,
+   "dur": 4.38,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "top_v2_8",
+   "kind": "topdulce",
+   "index": 8,
+   "total": 20,
+   "title": "Cascaritas de naranja",
+   "image": "broll/d08_casca_1.mp4",
+   "start": 521.54,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d08_casca_1",
+   "kind": "raw",
+   "src": "broll/d08_casca_1.mp4",
+   "start": 522.74,
+   "dur": 6.5,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "antesahora_v2_8_6",
+   "kind": "antesahora",
+   "beforeImage": "real/cascaritas_naranja_1.jpg",
+   "afterImage": "real/cascaritas_naranja_2.png",
+   "beforeLabel": "Se aprovechaba",
+   "afterLabel": "A la basura",
+   "start": 528.74,
+   "dur": 5,
+   "overlay": true
+  },
+  {
+   "id": "d08_casca_2",
+   "kind": "raw",
+   "src": "broll/d08_cascaritas.mp4",
+   "start": 529.24,
+   "dur": 4.07,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d08_casca_3",
+   "kind": "raw",
+   "src": "broll/d08_casca_3.mp4",
+   "start": 533.31,
+   "dur": 3.47,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d08_casca_4",
+   "kind": "raw",
+   "src": "broll/d08_casca_4.mp4",
+   "start": 536.78,
+   "dur": 5.72,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d08_casca_5",
+   "kind": "raw",
+   "src": "broll/d08_casca_5.mp4",
+   "start": 542.5,
+   "dur": 1.92,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d08_casca_6",
+   "kind": "raw",
+   "src": "broll/d08_cascaritas_ingr.mp4",
+   "start": 544.42,
+   "dur": 1.65,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d08_casca_10",
+   "kind": "raw",
+   "src": "broll/d08_cascaritas_proc.mp4",
+   "start": 546.07,
+   "dur": 5.09,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d08_casca_7",
+   "kind": "raw",
+   "src": "broll/d08_casca_7.mp4",
+   "start": 551.16,
+   "dur": 10.03,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d08_casca_8",
+   "kind": "raw",
+   "src": "broll/d08_cascaritas_serve.mp4",
+   "start": 561.19,
+   "dur": 15.85,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d08_casca_9",
+   "kind": "raw",
+   "src": "broll/d08_cascaritas.mp4",
+   "start": 577.04,
+   "dur": 7.9,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_9",
+   "kind": "topdulce",
+   "index": 9,
+   "total": 20,
+   "title": "Colación",
+   "image": "broll/d09_colacion_1.mp4",
+   "start": 583.74,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d09_colacion_1",
+   "kind": "raw",
+   "src": "broll/d09_colacion_1.mp4",
+   "start": 584.94,
+   "dur": 6.82,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "fichadulce_v2_9_6",
+   "kind": "fichadulce",
+   "bg": "broll/d09_colacion_1.mp4",
+   "title": "Colación",
+   "notes": [
+    "Cascarita dura de azúcar",
+    "Relleno de dulce de leche",
+    "Bañadas en glasé"
+   ],
+   "side": "left",
+   "eyebrow": "De casamientos y fiestas",
+   "image": "real/card_d09.jpg",
+   "start": 590.94,
+   "dur": 4.6,
+   "overlay": true
+  },
+  {
+   "id": "d09_colacion_2",
+   "kind": "raw",
+   "src": "broll/d09_colacion_2.mp4",
+   "start": 591.76,
+   "dur": 2.4,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d09_colacion_3",
+   "kind": "raw",
+   "src": "broll/d09_colacion_3.mp4",
+   "start": 594.16,
+   "dur": 4.1,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d09_colacion_4",
+   "kind": "raw",
+   "src": "broll/d09_colacion_4.mp4",
+   "start": 598.26,
+   "dur": 11.02,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "citaabuela_v2_9_18.6",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "era",
+     "at": 0
+    },
+    {
+     "t": "una",
+     "at": 0.18
+    },
+    {
+     "t": "forma",
+     "at": 0.4
+    },
+    {
+     "t": "callada",
+     "at": 0.89
+    },
+    {
+     "t": "de",
+     "at": 1.28
+    },
+    {
+     "t": "amor.",
+     "at": 1.42
+    }
+   ],
+   "text": "era una forma callada de amor",
+   "fontSize": 82,
+   "image": "real/colacion_1.jpg",
+   "start": 603.54,
+   "dur": 3.82,
+   "overlay": true
+  },
+  {
+   "id": "d09_colacion_5",
+   "kind": "raw",
+   "src": "broll/d09_colacion_close.mp4",
+   "start": 609.28,
+   "dur": 8.13,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d09_colacion_6",
+   "kind": "raw",
+   "src": "broll/d08_cascaritas_serve.mp4",
+   "start": 617.41,
+   "dur": 4.68,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d09_colacion_7",
+   "kind": "raw",
+   "src": "broll/d09_colacion_7.mp4",
+   "start": 622.09,
+   "dur": 10.05,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d09_colacion_8",
+   "kind": "raw",
+   "src": "broll/d09_colacion_8.mp4",
+   "start": 632.14,
+   "dur": 6.91,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d09_colacion_9",
+   "kind": "raw",
+   "src": "broll/d09_colacion_9.mp4",
+   "start": 639.05,
+   "dur": 8.07,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "top_v2_10",
+   "kind": "topdulce",
+   "index": 10,
+   "total": 20,
+   "title": "Alfeñiques",
+   "image": "broll/d10_alfe_2.mp4",
+   "start": 645.92,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d10_alfe_1",
+   "kind": "raw",
+   "src": "broll/d10_alfeniques.mp4",
+   "start": 647.12,
+   "dur": 8.64,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "citaabuela_v2_10_6",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "y",
+     "at": 0
+    },
+    {
+     "t": "ver",
+     "at": 0.04
+    },
+    {
+     "t": "nacer",
+     "at": 0.33
+    },
+    {
+     "t": "la",
+     "at": 0.88
+    },
+    {
+     "t": "magia",
+     "at": 1.1
+    },
+    {
+     "t": "era",
+     "at": 1.66
+    },
+    {
+     "t": "la",
+     "at": 1.98
+    },
+    {
+     "t": "mitad",
+     "at": 2.3
+    },
+    {
+     "t": "de",
+     "at": 2.76
+    },
+    {
+     "t": "la",
+     "at": 2.98
+    },
+    {
+     "t": "felicidad.",
+     "at": 3.2
+    }
+   ],
+   "text": "y ver nacer la magia era la mitad de la felicidad",
+   "fontSize": 78,
+   "image": "real/alfeniques_1.jpg",
+   "start": 653.12,
+   "dur": 4.66,
+   "overlay": true
+  },
+  {
+   "id": "d10_alfe_2",
+   "kind": "raw",
+   "src": "broll/d10_alfe_2.mp4",
+   "start": 655.76,
+   "dur": 3.2,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d10_alfe_3",
+   "kind": "raw",
+   "src": "broll/d10_alfeniques_close.mp4",
+   "start": 658.96,
+   "dur": 5.14,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d10_alfe_4",
+   "kind": "raw",
+   "src": "broll/d10_alfe_4.mp4",
+   "start": 664.1,
+   "dur": 3.14,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d10_alfe_5",
+   "kind": "raw",
+   "src": "broll/d10_alfeniques_ingr.mp4",
+   "start": 667.24,
+   "dur": 6.66,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d10_alfe_6",
+   "kind": "raw",
+   "src": "broll/d10_alfeniques_proc.mp4",
+   "start": 673.9,
+   "dur": 3.91,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d10_alfe_7",
+   "kind": "raw",
+   "src": "broll/d10_alfeniques_serve.mp4",
+   "start": 677.81,
+   "dur": 10.1,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d10_alfe_10",
+   "kind": "raw",
+   "src": "broll/d10_alfeniques.mp4",
+   "start": 687.91,
+   "dur": 6.03,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d10_alfe_8",
+   "kind": "raw",
+   "src": "broll/d10_alfe_8.mp4",
+   "start": 693.94,
+   "dur": 7.67,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d10_alfe_11",
+   "kind": "raw",
+   "src": "broll/d10_alfeniques_close.mp4",
+   "start": 701.61,
+   "dur": 3.17,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d10_alfe_9",
+   "kind": "raw",
+   "src": "broll/d10_alfeniques_ingr.mp4",
+   "start": 704.78,
+   "dur": 6.26,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "top_v2_11",
+   "kind": "topdulce",
+   "index": 11,
+   "total": 20,
+   "title": "Dulce de membrillo",
+   "image": "broll/d11_memb_1.mp4",
+   "start": 709.84,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d11_memb_1",
+   "kind": "raw",
+   "src": "broll/d11_memb_1.mp4",
+   "start": 711.04,
+   "dur": 7.48,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "fichadulce_v2_11_6",
+   "kind": "fichadulce",
+   "bg": "broll/d11_memb_1.mp4",
+   "title": "Dulce de membrillo",
+   "notes": [
+    "Membrillos hervidos",
+    "Horas revolviendo",
+    "En cajones de madera"
+   ],
+   "side": "right",
+   "eyebrow": "El del vigilante",
+   "image": "real/card_d11.jpg",
+   "start": 717.04,
+   "dur": 4.97,
+   "overlay": true
+  },
+  {
+   "id": "d11_memb_2",
+   "kind": "raw",
+   "src": "broll/d11_membrillo.mp4",
+   "start": 718.52,
+   "dur": 2.73,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d11_memb_3",
+   "kind": "raw",
+   "src": "broll/d11_memb_3.mp4",
+   "start": 721.25,
+   "dur": 5.76,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d11_memb_4",
+   "kind": "raw",
+   "src": "broll/d11_memb_4.mp4",
+   "start": 727.01,
+   "dur": 5.82,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d11_memb_5",
+   "kind": "raw",
+   "src": "broll/d10_alfeniques_proc.mp4",
+   "start": 732.83,
+   "dur": 4.15,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d11_memb_6",
+   "kind": "raw",
+   "src": "broll/d11_memb_6.mp4",
+   "start": 736.98,
+   "dur": 2.14,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d11_memb_7",
+   "kind": "raw",
+   "src": "broll/d11_memb_7.mp4",
+   "start": 739.12,
+   "dur": 8.77,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d11_memb_8",
+   "kind": "raw",
+   "src": "broll/d11_membrillo_beauty.mp4",
+   "start": 747.89,
+   "dur": 5.49,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d11_memb_9",
+   "kind": "raw",
+   "src": "broll/d11_memb_9.mp4",
+   "start": 753.38,
+   "dur": 4.98,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d11_memb_12",
+   "kind": "raw",
+   "src": "broll/d11_membrillo_close.mp4",
+   "start": 758.36,
+   "dur": 8.47,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d11_memb_10",
+   "kind": "raw",
+   "src": "broll/d11_membrillo_ingr.mp4",
+   "start": 766.83,
+   "dur": 12.29,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d11_memb_11",
+   "kind": "raw",
+   "src": "broll/d11_memb_11.mp4",
+   "start": 779.12,
+   "dur": 10.88,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "top_v2_12",
+   "kind": "topdulce",
+   "index": 12,
+   "total": 20,
+   "title": "Arrope",
+   "image": "broll/d12_arrope_1.mp4",
+   "start": 788.8,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d12_arrope_1",
+   "kind": "raw",
+   "src": "broll/d12_arrope_1.mp4",
+   "start": 790,
+   "dur": 7,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "citaabuela_v2_12_6",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "Perder",
+     "at": 0
+    },
+    {
+     "t": "el",
+     "at": 0.42
+    },
+    {
+     "t": "arrope",
+     "at": 0.56
+    },
+    {
+     "t": "es",
+     "at": 0.98
+    },
+    {
+     "t": "perder",
+     "at": 1.13
+    },
+    {
+     "t": "la",
+     "at": 1.54
+    },
+    {
+     "t": "memoria",
+     "at": 1.89
+    },
+    {
+     "t": "más",
+     "at": 2.17
+    },
+    {
+     "t": "vieja",
+     "at": 2.45
+    },
+    {
+     "t": "del",
+     "at": 2.82
+    },
+    {
+     "t": "dulce,",
+     "at": 3.01
+    }
+   ],
+   "text": "perder el arrope es perder la memoria mas vieja del dulce",
+   "fontSize": 74,
+   "image": "real/arrope_1.jpg",
+   "start": 796,
+   "dur": 5.41,
+   "overlay": true
+  },
+  {
+   "id": "d12_arrope_2",
+   "kind": "raw",
+   "src": "broll/d12_arrope_2.mp4",
+   "start": 797,
+   "dur": 6.15,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d12_arrope_3",
+   "kind": "raw",
+   "src": "broll/d12_arrope_ingr.mp4",
+   "start": 803.15,
+   "dur": 1.59,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d12_arrope_4",
+   "kind": "raw",
+   "src": "broll/d12_arrope_4.mp4",
+   "start": 804.74,
+   "dur": 2.61,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d12_arrope_5",
+   "kind": "raw",
+   "src": "broll/d12_arrope_5.mp4",
+   "start": 807.35,
+   "dur": 4.15,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d12_arrope_6",
+   "kind": "raw",
+   "src": "broll/d12_arrope_6.mp4",
+   "start": 811.5,
+   "dur": 3,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d12_arrope_9",
+   "kind": "raw",
+   "src": "broll/d12_arrope_proc.mp4",
+   "start": 814.5,
+   "dur": 14.53,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d12_arrope_7",
+   "kind": "raw",
+   "src": "broll/d12_arrope_serve.mp4",
+   "start": 829.03,
+   "dur": 8.23,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d12_arrope_8",
+   "kind": "raw",
+   "src": "broll/d12_arrope_ingr.mp4",
+   "start": 837.26,
+   "dur": 8.35,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_13",
+   "kind": "topdulce",
+   "index": 13,
+   "total": 20,
+   "title": "Melcocha",
+   "image": "broll/d13_melcocha_close.mp4",
+   "start": 844.41,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d13_melco_1",
+   "kind": "raw",
+   "src": "broll/d13_melcocha_close.mp4",
+   "start": 845.61,
+   "dur": 6.27,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "fichadulce_v2_13_6",
+   "kind": "fichadulce",
+   "bg": "broll/d13_melcocha_close.mp4",
+   "title": "Melcocha",
+   "notes": [
+    "Miel o azúcar",
+    "Estirada a mano",
+    "El dulce de las ferias"
+   ],
+   "side": "left",
+   "eyebrow": "Un arte de circo",
+   "image": "real/card_d13.jpg",
+   "start": 851.61,
+   "dur": 4.6,
+   "overlay": true
+  },
+  {
+   "id": "d13_melco_2",
+   "kind": "raw",
+   "src": "broll/d12_arrope_serve.mp4",
+   "start": 851.88,
+   "dur": 3.24,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d13_melco_3",
+   "kind": "raw",
+   "src": "broll/d13_melcocha_ingr.mp4",
+   "start": 855.12,
+   "dur": 7.62,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d13_melco_4",
+   "kind": "raw",
+   "src": "broll/d13_melcocha_proc.mp4",
+   "start": 862.74,
+   "dur": 5.1,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d13_melco_5",
+   "kind": "raw",
+   "src": "broll/d13_melcocha_serve.mp4",
+   "start": 867.84,
+   "dur": 3.37,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d13_melco_6",
+   "kind": "raw",
+   "src": "broll/d13_melcocha_close.mp4",
+   "start": 871.21,
+   "dur": 7.76,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d13_melco_7",
+   "kind": "raw",
+   "src": "broll/d12_arrope_serve.mp4",
+   "start": 878.97,
+   "dur": 11.83,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d13_melco_9",
+   "kind": "raw",
+   "src": "broll/d13_melcocha_ingr.mp4",
+   "start": 890.8,
+   "dur": 11.62,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d13_melco_8",
+   "kind": "raw",
+   "src": "broll/d13_melcocha_proc.mp4",
+   "start": 902.42,
+   "dur": 5.63,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_14",
+   "kind": "topdulce",
+   "index": 14,
+   "total": 20,
+   "title": "Caramelos de leche",
+   "image": "broll/d14_caram_4.mp4",
+   "start": 906.85,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d14_caram_1",
+   "kind": "raw",
+   "src": "broll/d14_caramelosleche.mp4",
+   "start": 908.05,
+   "dur": 4.87,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d14_caram_2",
+   "kind": "raw",
+   "src": "broll/d13_melcocha_proc.mp4",
+   "start": 912.92,
+   "dur": 7.57,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "ingredientesflotan_v2_14_6",
+   "kind": "ingredientesflotan",
+   "title": "Los del delantal",
+   "items": [
+    "Leche",
+    "Azúcar",
+    "Manteca"
+   ],
+   "atsec": [
+    0,
+    0.77,
+    1.65
+   ],
+   "image": "broll/d14_caramelosleche.mp4",
+   "start": 914.05,
+   "dur": 4.45,
+   "overlay": true
+  },
+  {
+   "id": "d14_caram_3",
+   "kind": "raw",
+   "src": "broll/d14_caramelosleche_ingr.mp4",
+   "start": 920.49,
+   "dur": 2.48,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d14_caram_4",
+   "kind": "raw",
+   "src": "broll/d14_caram_4.mp4",
+   "start": 922.97,
+   "dur": 6.93,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "citaabuela_v2_14_18.45",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "era",
+     "at": 0
+    },
+    {
+     "t": "amor",
+     "at": 0.3
+    },
+    {
+     "t": "puro",
+     "at": 0.51
+    },
+    {
+     "t": "escondido",
+     "at": 0.93
+    },
+    {
+     "t": "en",
+     "at": 2.25
+    },
+    {
+     "t": "un",
+     "at": 2.54
+    },
+    {
+     "t": "papelito.",
+     "at": 2.95
+    }
+   ],
+   "text": "era amor puro escondido en un papelito",
+   "fontSize": 82,
+   "image": "real/caramelos_leche_1.jpg",
+   "start": 926.5,
+   "dur": 4.49,
+   "overlay": true
+  },
+  {
+   "id": "d14_caram_5",
+   "kind": "raw",
+   "src": "broll/d14_caram_5.mp4",
+   "start": 929.9,
+   "dur": 2.64,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d14_caram_6",
+   "kind": "raw",
+   "src": "broll/d14_caramelosleche_proc.mp4",
+   "start": 932.54,
+   "dur": 3.02,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d14_caram_9",
+   "kind": "raw",
+   "src": "broll/d14_caramelosleche.mp4",
+   "start": 935.56,
+   "dur": 7,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d14_caram_7",
+   "kind": "raw",
+   "src": "broll/d13_melcocha_proc.mp4",
+   "start": 942.56,
+   "dur": 23.31,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d14_caram_8",
+   "kind": "raw",
+   "src": "broll/d14_caramelosleche_ingr.mp4",
+   "start": 965.87,
+   "dur": 5.62,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_15",
+   "kind": "topdulce",
+   "index": 15,
+   "total": 20,
+   "title": "Ambrosía",
+   "image": "broll/d15_ambrosia.mp4",
+   "start": 970.29,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d15_ambr_1",
+   "kind": "raw",
+   "src": "broll/d15_ambrosia.mp4",
+   "start": 971.49,
+   "dur": 4.77,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d15_ambr_2",
+   "kind": "raw",
+   "src": "broll/d15_ambrosia_close.mp4",
+   "start": 976.26,
+   "dur": 5.86,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "ingredientesflotan_v2_15_6",
+   "kind": "ingredientesflotan",
+   "title": "Con lo que sobraba",
+   "items": [
+    "Yemas de huevo",
+    "Almíbar"
+   ],
+   "atsec": [
+    0,
+    3.58
+   ],
+   "image": "broll/d15_ambrosia.mp4",
+   "start": 977.49,
+   "dur": 6.38,
+   "overlay": true
+  },
+  {
+   "id": "d15_ambr_3",
+   "kind": "raw",
+   "src": "broll/d15_ambrosia_ingr.mp4",
+   "start": 982.12,
+   "dur": 3.84,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d15_ambr_4",
+   "kind": "raw",
+   "src": "broll/d15_ambrosia_proc.mp4",
+   "start": 985.96,
+   "dur": 8.27,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d15_ambr_5",
+   "kind": "raw",
+   "src": "broll/d15_ambrosia_serve.mp4",
+   "start": 994.23,
+   "dur": 5.02,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d15_ambr_6",
+   "kind": "raw",
+   "src": "broll/d15_ambrosia.mp4",
+   "start": 999.25,
+   "dur": 7.59,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d15_ambr_8",
+   "kind": "raw",
+   "src": "broll/d15_ambrosia_close.mp4",
+   "start": 1006.84,
+   "dur": 19.43,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d15_ambr_7",
+   "kind": "raw",
+   "src": "broll/d15_ambrosia_ingr.mp4",
+   "start": 1026.27,
+   "dur": 8.54,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_16",
+   "kind": "topdulce",
+   "index": 16,
+   "total": 20,
+   "title": "Bombones caseros",
+   "image": "broll/d16_bomb_1.mp4",
+   "start": 1033.61,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d16_bomb_1",
+   "kind": "raw",
+   "src": "broll/d16_bomb_1.mp4",
+   "start": 1034.81,
+   "dur": 8.11,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "antesahora_v2_16_6",
+   "kind": "antesahora",
+   "beforeImage": "real/bombones_caseros_1.jpg",
+   "afterImage": "real/bombones_caseros_2.jpg",
+   "beforeLabel": "Caseros",
+   "afterLabel": "Comprados",
+   "start": 1040.81,
+   "dur": 4.64,
+   "overlay": true
+  },
+  {
+   "id": "d16_bomb_2",
+   "kind": "raw",
+   "src": "broll/d16_bombones.mp4",
+   "start": 1042.92,
+   "dur": 2.02,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d16_bomb_3",
+   "kind": "raw",
+   "src": "broll/d16_bomb_3.mp4",
+   "start": 1044.94,
+   "dur": 1.26,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d16_bomb_4",
+   "kind": "raw",
+   "src": "broll/d16_bomb_4.mp4",
+   "start": 1046.2,
+   "dur": 3.99,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d16_bomb_5",
+   "kind": "raw",
+   "src": "broll/d15_ambrosia_ingr.mp4",
+   "start": 1050.19,
+   "dur": 9.2,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "citaabuela_v2_16_18.64",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "la",
+     "at": 0
+    },
+    {
+     "t": "pascua",
+     "at": 0.21
+    },
+    {
+     "t": "es",
+     "at": 0.93
+    },
+    {
+     "t": "un",
+     "at": 1.17
+    },
+    {
+     "t": "poco",
+     "at": 1.41
+    },
+    {
+     "t": "menos",
+     "at": 1.9
+    },
+    {
+     "t": "pascua.",
+     "at": 2.51
+    }
+   ],
+   "text": "la pascua es un poco menos pascua",
+   "fontSize": 84,
+   "image": "real/bombones_caseros_1.jpg",
+   "start": 1053.45,
+   "dur": 3.67,
+   "overlay": true
+  },
+  {
+   "id": "d16_bomb_6",
+   "kind": "raw",
+   "src": "broll/d16_bomb_6.mp4",
+   "start": 1059.39,
+   "dur": 4.48,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d16_bomb_10",
+   "kind": "raw",
+   "src": "broll/d16_bombones_ingr.mp4",
+   "start": 1063.87,
+   "dur": 4.71,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d16_bomb_7",
+   "kind": "raw",
+   "src": "broll/d16_bomb_7.mp4",
+   "start": 1068.58,
+   "dur": 13.28,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d16_bomb_8",
+   "kind": "raw",
+   "src": "broll/d16_bombones_proc.mp4",
+   "start": 1081.86,
+   "dur": 4.72,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d16_bomb_11",
+   "kind": "raw",
+   "src": "broll/d16_bomb_11.mp4",
+   "start": 1086.58,
+   "dur": 3.64,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d16_bomb_9",
+   "kind": "raw",
+   "src": "broll/d16_bomb_9.mp4",
+   "start": 1090.22,
+   "dur": 8.68,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_17",
+   "kind": "topdulce",
+   "index": 17,
+   "total": 20,
+   "title": "Chupetines",
+   "image": "broll/d17_chup_1.mp4",
+   "start": 1097.7,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d17_chup_1",
+   "kind": "raw",
+   "src": "broll/d17_chup_1.mp4",
+   "start": 1098.9,
+   "dur": 7.5,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "fichadulce_v2_17_6",
+   "kind": "fichadulce",
+   "bg": "broll/d17_chup_1.mp4",
+   "title": "Chupetines caseros",
+   "notes": [
+    "Caramelo con colorante",
+    "Sobre papel manteca",
+    "Un palito en el borde"
+   ],
+   "side": "right",
+   "eyebrow": "Las tardes de lluvia",
+   "image": "real/card_d17.jpg",
+   "start": 1104.9,
+   "dur": 4.6,
+   "overlay": true
+  },
+  {
+   "id": "d17_chup_2",
+   "kind": "raw",
+   "src": "broll/d17_chupetines.mp4",
+   "start": 1106.4,
+   "dur": 3.78,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d17_chup_3",
+   "kind": "raw",
+   "src": "broll/d17_chup_3.mp4",
+   "start": 1110.18,
+   "dur": 3.57,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d17_chup_4",
+   "kind": "raw",
+   "src": "broll/d17_chup_4.mp4",
+   "start": 1113.75,
+   "dur": 7.66,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d17_chup_5",
+   "kind": "raw",
+   "src": "broll/d16_bombones_serve.mp4",
+   "start": 1121.41,
+   "dur": 4.16,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d17_chup_6",
+   "kind": "raw",
+   "src": "broll/d17_chup_6.mp4",
+   "start": 1125.57,
+   "dur": 13.14,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d17_chup_7",
+   "kind": "raw",
+   "src": "broll/d17_chup_7.mp4",
+   "start": 1138.71,
+   "dur": 7.84,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d17_chup_9",
+   "kind": "raw",
+   "src": "broll/d17_chupetines_proc.mp4",
+   "start": 1146.55,
+   "dur": 8.51,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d17_chup_8",
+   "kind": "raw",
+   "src": "broll/d17_chup_8.mp4",
+   "start": 1155.06,
+   "dur": 7.52,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "top_v2_18",
+   "kind": "topdulce",
+   "index": 18,
+   "total": 20,
+   "title": "Frutas abrillantadas",
+   "image": "broll/d18_fruta_1.mp4",
+   "start": 1161.38,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d18_fruta_1",
+   "kind": "raw",
+   "src": "broll/d18_fruta_1.mp4",
+   "start": 1162.58,
+   "dur": 8.61,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "citaabuela_v2_18_6",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "se",
+     "at": 0
+    },
+    {
+     "t": "podía",
+     "at": 0.15
+    },
+    {
+     "t": "volver",
+     "at": 0.64
+    },
+    {
+     "t": "joya,",
+     "at": 1.12
+    }
+   ],
+   "text": "se podia volver joya",
+   "fontSize": 84,
+   "image": "real/frutas_abrillantadas_1.jpg",
+   "start": 1168.58,
+   "dur": 1.6,
+   "overlay": true
+  },
+  {
+   "id": "d18_fruta_2",
+   "kind": "raw",
+   "src": "broll/d18_fruta_2.mp4",
+   "start": 1171.19,
+   "dur": 2.56,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d18_fruta_3",
+   "kind": "raw",
+   "src": "broll/d18_fruta_3.mp4",
+   "start": 1173.75,
+   "dur": 8.94,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d18_fruta_4",
+   "kind": "raw",
+   "src": "broll/d18_fruta_4.mp4",
+   "start": 1182.69,
+   "dur": 5.31,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d18_fruta_5",
+   "kind": "raw",
+   "src": "broll/d18_fruta_5.mp4",
+   "start": 1188,
+   "dur": 6.86,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d18_fruta_6",
+   "kind": "raw",
+   "src": "broll/d18_frutasabrillantadas_ingr.mp4",
+   "start": 1194.86,
+   "dur": 6.98,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d18_fruta_9",
+   "kind": "raw",
+   "src": "broll/d18_fruta_9.mp4",
+   "start": 1201.84,
+   "dur": 7.78,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d18_fruta_7",
+   "kind": "raw",
+   "src": "broll/d18_fruta_7.mp4",
+   "start": 1209.62,
+   "dur": 10.84,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d18_fruta_8",
+   "kind": "raw",
+   "src": "broll/d18_fruta_8.mp4",
+   "start": 1220.46,
+   "dur": 8.55,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "top_v2_19",
+   "kind": "topdulce",
+   "index": 19,
+   "total": 20,
+   "title": "Conitos de dulce de leche",
+   "image": "broll/d19_coni_1.mp4",
+   "start": 1227.81,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d19_coni_1",
+   "kind": "raw",
+   "src": "broll/d19_coni_1.mp4",
+   "start": 1229.01,
+   "dur": 6.93,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "fichadulce_v2_19_6",
+   "kind": "fichadulce",
+   "bg": "broll/d19_coni_1.mp4",
+   "title": "Conitos de dulce de leche",
+   "notes": [
+    "Cucurucho de merengue",
+    "Relleno bien firme",
+    "Puntita en chocolate"
+   ],
+   "side": "left",
+   "eyebrow": "El mimo de los cumpleaños",
+   "image": "real/card_d19.jpg",
+   "start": 1235.01,
+   "dur": 4.6,
+   "overlay": true
+  },
+  {
+   "id": "d19_coni_2",
+   "kind": "raw",
+   "src": "broll/d19_coni_2.mp4",
+   "start": 1235.94,
+   "dur": 7.32,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d19_coni_3",
+   "kind": "raw",
+   "src": "broll/d19_conitos_ingr.mp4",
+   "start": 1243.26,
+   "dur": 4.51,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "citaabuela_v2_19_18.6",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "es",
+     "at": 0
+    },
+    {
+     "t": "de",
+     "at": 0.14
+    },
+    {
+     "t": "lo",
+     "at": 0.29
+    },
+    {
+     "t": "que",
+     "at": 0.42
+    },
+    {
+     "t": "más",
+     "at": 0.64
+    },
+    {
+     "t": "extraño.",
+     "at": 0.93
+    }
+   ],
+   "text": "es de lo que mas extrano",
+   "fontSize": 80,
+   "image": "real/conitos_ddl_1.jpg",
+   "start": 1247.61,
+   "dur": 1.94,
+   "overlay": true
+  },
+  {
+   "id": "d19_coni_4",
+   "kind": "raw",
+   "src": "broll/d19_coni_4.mp4",
+   "start": 1247.77,
+   "dur": 4.11,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d19_coni_9",
+   "kind": "raw",
+   "src": "broll/d19_coni_9.mp4",
+   "start": 1251.88,
+   "dur": 5.72,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d19_coni_5",
+   "kind": "raw",
+   "src": "broll/d19_coni_5.mp4",
+   "start": 1257.6,
+   "dur": 12.24,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d19_coni_6",
+   "kind": "raw",
+   "src": "broll/d18_frutasabrillantadas_ingr.mp4",
+   "start": 1269.84,
+   "dur": 5.18,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d19_coni_7",
+   "kind": "raw",
+   "src": "broll/d19_conitos_ingr.mp4",
+   "start": 1275.02,
+   "dur": 10.7,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d19_coni_8",
+   "kind": "raw",
+   "src": "broll/d18_frutasabrillantadas_ingr.mp4",
+   "start": 1285.72,
+   "dur": 6.88,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "top_v2_20",
+   "kind": "topdulce",
+   "index": 20,
+   "total": 20,
+   "title": "Quesillo con arrope",
+   "image": "broll/d20_quesillo.mp4",
+   "start": 1291.4,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "d20_ques_1",
+   "kind": "raw",
+   "src": "broll/d20_quesillo.mp4",
+   "start": 1292.6,
+   "dur": 10.22,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "antesahora_v2_20_6",
+   "kind": "antesahora",
+   "beforeImage": "real/quesillo_arrope_1.jpg",
+   "afterImage": "real/quesillo_arrope_2.jpg",
+   "beforeLabel": "Del patio",
+   "afterLabel": "De fábrica",
+   "start": 1298.6,
+   "dur": 4.4,
+   "overlay": true
+  },
+  {
+   "id": "d20_ques_2",
+   "kind": "raw",
+   "src": "broll/d20_quesillo_close.mp4",
+   "start": 1302.82,
+   "dur": 2.45,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d20_ques_3",
+   "kind": "raw",
+   "src": "broll/d20_quesillo_ingr.mp4",
+   "start": 1305.27,
+   "dur": 5.25,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d20_ques_4",
+   "kind": "raw",
+   "src": "broll/d20_quesillo_proc.mp4",
+   "start": 1310.52,
+   "dur": 5.72,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "citaabuela_v2_20_18.4",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "sino",
+     "at": 0
+    },
+    {
+     "t": "del",
+     "at": 0.88
+    },
+    {
+     "t": "propio",
+     "at": 1
+    },
+    {
+     "t": "patio,",
+     "at": 1.86
+    }
+   ],
+   "text": "sino del propio patio",
+   "fontSize": 80,
+   "image": "real/quesillo_arrope_1.jpg",
+   "start": 1311,
+   "dur": 4.26,
+   "overlay": true
+  },
+  {
+   "id": "d20_ques_5",
+   "kind": "raw",
+   "src": "broll/d20_quesillo_serve.mp4",
+   "start": 1316.24,
+   "dur": 6.78,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d20_ques_6",
+   "kind": "raw",
+   "src": "broll/d20_quesillo.mp4",
+   "start": 1323.02,
+   "dur": 15.72,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d20_ques_7",
+   "kind": "raw",
+   "src": "broll/d20_quesillo_close.mp4",
+   "start": 1338.74,
+   "dur": 5.75,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "d20_ques_9",
+   "kind": "raw",
+   "src": "broll/d20_quesillo_ingr.mp4",
+   "start": 1344.49,
+   "dur": 2.66,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "d20_ques_8",
+   "kind": "raw",
+   "src": "broll/d20_quesillo_proc.mp4",
+   "start": 1347.15,
+   "dur": 9.96,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "ex_intro",
+   "kind": "raw",
+   "src": "broll/amb_cuchara_madera.mp4",
+   "start": 1357.11,
+   "dur": 7.27,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "ex_menta_1",
+   "kind": "raw",
+   "src": "real/vintage_cocina1_3.jpg",
+   "start": 1364.38,
+   "dur": 7.38,
+   "hue": "amber"
+  },
+  {
+   "id": "ex_menta_2",
+   "kind": "raw",
+   "src": "broll/amb_cocina_vieja1.mp4",
+   "start": 1371.76,
+   "dur": 5,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "ex_menta_3",
+   "kind": "raw",
+   "src": "real/vintage_abuela_2.jpg",
+   "start": 1376.76,
+   "dur": 5.13,
+   "hue": "amber"
+  },
+  {
+   "id": "ex_menta_4",
+   "kind": "raw",
+   "src": "broll/amb_manos_viejas1.mp4",
+   "start": 1381.89,
+   "dur": 15.41,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "ex_cayote_1",
+   "kind": "raw",
+   "src": "real/vintage_familia1_2.jpg",
+   "start": 1397.3,
+   "dur": 4.46,
+   "hue": "amber"
+  },
+  {
+   "id": "ex_cayote_2",
+   "kind": "raw",
+   "src": "broll/amb_manos_viejas2.mp4",
+   "start": 1401.76,
+   "dur": 3.3,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "ex_cayote_3",
+   "kind": "raw",
+   "src": "real/vintage_manos_2.jpg",
+   "start": 1405.06,
+   "dur": 2.62,
+   "hue": "amber"
+  },
+  {
+   "id": "ex_cayote_4",
+   "kind": "raw",
+   "src": "broll/intro_caramelo.mp4",
+   "start": 1407.68,
+   "dur": 13.31,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "ex_rapa_1",
+   "kind": "raw",
+   "src": "real/vintage_cocina2_2.jpg",
+   "start": 1420.99,
+   "dur": 5.51,
+   "hue": "amber"
+  },
+  {
+   "id": "ex_rapa_2",
+   "kind": "raw",
+   "src": "broll/amb_campo_fruta.mp4",
+   "start": 1426.5,
+   "dur": 6.76,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "ex_rapa_3",
+   "kind": "raw",
+   "src": "broll/ex_rapa_3.mp4",
+   "start": 1433.26,
+   "dur": 11.68,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "ex_rapa_4",
+   "kind": "raw",
+   "src": "broll/ex_rapa_4.mp4",
+   "start": 1444.94,
+   "dur": 6.1,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "ex_miel_1",
+   "kind": "raw",
+   "src": "broll/ex_miel_1.mp4",
+   "start": 1451.04,
+   "dur": 2.63,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "ex_miel_2",
+   "kind": "raw",
+   "src": "broll/ex_miel_2.mp4",
+   "start": 1453.67,
+   "dur": 11.84,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "ex_miel_3",
+   "kind": "raw",
+   "src": "real/vintage_cocina1_1.jpg",
+   "start": 1465.51,
+   "dur": 7.14,
+   "hue": "amber"
+  },
+  {
+   "id": "ex_miel_4",
+   "kind": "raw",
+   "src": "broll/amb_abuela_cocina1.mp4",
+   "start": 1472.65,
+   "dur": 13.7,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "cierre_1",
+   "kind": "raw",
+   "src": "broll/cierre_1.mp4",
+   "start": 1486.35,
+   "dur": 4.33,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "cierre_2",
+   "kind": "raw",
+   "src": "broll/amb_abuela_cocina2.mp4",
+   "start": 1490.68,
+   "dur": 13.78,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "cierre_11",
+   "kind": "raw",
+   "src": "real/vintage_cocina2_1.jpg",
+   "start": 1504.46,
+   "dur": 2.69,
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_3",
+   "kind": "raw",
+   "src": "broll/cierre_3.mp4",
+   "start": 1507.15,
+   "dur": 2.13,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "cierre_4",
+   "kind": "raw",
+   "src": "real/vintage_abuela_1.jpg",
+   "start": 1509.28,
+   "dur": 2.2,
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_5",
+   "kind": "raw",
+   "src": "broll/amb_almibar.mp4",
+   "start": 1511.48,
+   "dur": 11.5,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "cierre_6",
+   "kind": "raw",
+   "src": "real/vintage_familia1_1.jpg",
+   "start": 1522.98,
+   "dur": 11.36,
+   "hue": "amber"
+  },
+  {
+   "id": "cita_v2_cierre",
+   "kind": "citaabuela",
+   "words": [
+    {
+     "t": "lo",
+     "at": 0
+    },
+    {
+     "t": "difícil",
+     "at": 0.16
+    },
+    {
+     "t": "de",
+     "at": 0.79
+    },
+    {
+     "t": "recuperar",
+     "at": 0.98
+    },
+    {
+     "t": "es",
+     "at": 1.65
+    },
+    {
+     "t": "el",
+     "at": 1.97
+    },
+    {
+     "t": "gesto.",
+     "at": 2.02
+    }
+   ],
+   "text": "lo dificil de recuperar es el gesto",
+   "fontSize": 88,
+   "image": "real/vintage_familia1_1.jpg",
+   "start": 1526.35,
+   "dur": 4.42,
+   "overlay": true
+  },
+  {
+   "id": "cierre_7",
+   "kind": "raw",
+   "src": "broll/amb_azucar_caramelo1.mp4",
+   "start": 1534.34,
+   "dur": 6.08,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "cierre_12",
+   "kind": "raw",
+   "src": "real/vintage_manos_1.jpg",
+   "start": 1540.42,
+   "dur": 11.64,
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_8",
+   "kind": "raw",
+   "src": "broll/amb_cuchara_madera.mp4",
+   "start": 1552.06,
+   "dur": 37.5,
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
+  },
+  {
+   "id": "cierre_9",
+   "kind": "raw",
+   "src": "real/vintage_cocina1_3.jpg",
+   "start": 1589.56,
+   "dur": 3.95,
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_13",
+   "kind": "raw",
+   "src": "broll/amb_cocina_vieja1.mp4",
+   "start": 1593.51,
+   "dur": 2.97,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "cierre_10",
+   "kind": "raw",
+   "src": "real/vintage_abuela_2.jpg",
+   "start": 1596.48,
+   "dur": 8.52,
+   "hue": "amber"
+  }
+ ]
+}

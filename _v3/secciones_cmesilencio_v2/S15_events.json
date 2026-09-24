@@ -1,0 +1,570 @@
+[
+  {
+    "id": "s15_e1",
+    "ms": 1307000,
+    "dur": 3.18,
+    "tipo": "CLIP",
+    "dice": "Y ahora sí, lo que te prometí al principio.",
+    "muestra": "Claudio se agacha frente a la caja cerrada en el patio de noche y apoya la palma abierta sobre la tapa de contrachapado.",
+    "porque": "Se está por abrir el bucle más viejo del video y el gesto tiene que ser el de ir a abrir la caja, no el de hablar.",
+    "nombre": "cms_s15_palma_tapa_noche",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is crouching in front of a closed raw plywood box in a dark concrete backyard at night, resting one open palm flat on its lid, an orange cord running away along the ground, a low block wall and a distant lit yellow window behind, cold blue night light with one work lamp, medium shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same closed plywood box, same orange cord on the ground, same low block wall, same distant lit window, nothing behind him changes or moves",
+      "action": "Action: he presses his palm down on the lid and slides it slowly toward the front edge of the box, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "motor amortiguado + grillos",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3098,
+      "endWord": 3106,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e34",
+    "ms": 1307000,
+    "dur": 4.2,
+    "tipo": "TEXTO",
+    "dice": "Y ahora sí, lo que te prometí al principio.",
+    "muestra": "Rótulo en verde-voltio sobre la caja cerrada, con el borde encendido.",
+    "porque": "Avisa que se está pagando el bucle abierto en el hook, para que el espectador que esperaba lo reconozca.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "LO QUE TE PROMETÍ AL PRINCIPIO",
+    "sfx": "zumbido corto",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3098,
+      "endWord": 3106,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e2",
+    "ms": 1310720,
+    "dur": 4.6,
+    "tipo": "LAMINA",
+    "dice": "la caja te da 12 decibeles la primera noche y a las tres semanas te da seis sin que hayas tocado nada.",
+    "muestra": "Lámina de la guía con dos columnas: NOCHE 1 con la barra entera de doce, y SEMANA 3 con la misma barra mordida a la mitad, seis; entre las dos, la foto real de la caja cerrada.",
+    "porque": "La pérdida ocurre a lo largo de semanas y no se puede filmar; la única forma de verla es enfrentando las dos noches en la misma hoja.",
+    "nombre": "cms_s15_lamina_doce_a_seis",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "LA MISMA CAJA\nNOCHE 1 · −12 dB\nSEMANA 3 · −6 dB",
+    "sfx": "barra que se derrumba a la mitad",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3109,
+      "endWord": 3130,
+      "coverage": 0.955
+    }
+  },
+  {
+    "id": "s15_e35",
+    "ms": 1310720,
+    "dur": 4.4,
+    "tipo": "ICONO",
+    "dice": "la caja te da 12 decibeles la primera noche",
+    "muestra": "Ícono de sonómetro sobre la columna de la noche uno de la lámina.",
+    "porque": "El número bueno tiene que entrar primero y solo, para que la caída del siguiente duela.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "NOCHE 1 · −12 dB",
+    "sfx": "tick doble",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3109,
+      "endWord": 3117,
+      "coverage": 0.889
+    }
+  },
+  {
+    "id": "s15_e36",
+    "ms": 1314240,
+    "dur": 4.2,
+    "tipo": "ICONO",
+    "dice": "y a las tres semanas te da seis sin que hayas tocado nada.",
+    "muestra": "Ícono de sonómetro sobre la columna de la semana tres, con la barra mordida a la mitad.",
+    "porque": "Es la pérdida que no se explicó en todo el video y la que sostiene el resto de la sección.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "SEMANA 3 · −6 dB",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3118,
+      "endWord": 3130,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e3",
+    "ms": 1319480,
+    "dur": 3.22,
+    "tipo": "CLIP",
+    "dice": "No es la madera, no son los tornillos, es la lana.",
+    "muestra": "Claudio golpea la madera de la caja con el nudillo y después con el mismo dedo señala hacia adentro, al borde de lana ocre que asoma por la junta.",
+    "porque": "La frase descarta dos culpables y nombra al tercero; el dedo tiene que hacer ese mismo recorrido sobre el objeto real.",
+    "nombre": "cms_s15_nudillo_madera_lana",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is crouching beside an open plywood box in a dark backyard, knocking on the plywood wall with one knuckle while the ochre yellow edge of mineral wool insulation shows along the inside seam, a work lamp raking across the wood, cold blue night light, medium close shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same plywood box, same ochre mineral wool visible inside the seam, same work lamp, nothing behind him changes or moves",
+      "action": "Action: he knocks twice on the plywood with his knuckle and then points one finger toward the ochre wool inside the box, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium close shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "dos golpes secos en la madera",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3131,
+      "endWord": 3139,
+      "coverage": 0.818
+    }
+  },
+  {
+    "id": "s15_e37",
+    "ms": 1319480,
+    "dur": 3.6,
+    "tipo": "TEXTO",
+    "dice": "No es la madera, no son los tornillos",
+    "muestra": "Dos rótulos tachados que caen: la madera y los tornillos.",
+    "porque": "Descartar en pantalla los dos sospechosos obvios deja el escenario vacío para el verdadero.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "NO ES LA MADERA · NO SON LOS TORNILLOS",
+    "sfx": "dos ticks apagados",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3131,
+      "endWord": 3138,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s15_humidity",
+    "ms": 1333000,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "La humedad entra por la lluvia y por la condensacion",
+    "nombre": "cms_s15_tapa_luz_dia",
+    "_manual": true,
+    "_sec": "S15_LANA",
+    "_anchor": {
+      "startWord": 3162,
+      "endWord": 3171,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e58",
+    "ms": 1356640,
+    "dur": 3.2,
+    "tipo": "TEXTO",
+    "dice": "y hay una consecuencia peor que el ruido.",
+    "muestra": "Rótulo chico de advertencia que entra en ámbar de alerta.",
+    "porque": "Marca el cambio de tema del ruido a la seguridad, que es el giro más importante del tramo.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "Y HAY ALGO PEOR QUE EL RUIDO",
+    "sfx": "zumbido de alerta",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3220,
+      "endWord": 3227,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e61",
+    "ms": 1371260,
+    "dur": 4.4,
+    "tipo": "TEXTO",
+    "dice": "La lana mineral no arde",
+    "muestra": "Rótulo sobre la muestra limpia de la izquierda.",
+    "porque": "La primera mitad de la distinción va sobre la muestra que no le pasa nada.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "LA LANA MINERAL NO ARDE",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 3251,
+      "endWord": 3255,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s15_cover",
+    "ms": 1379580,
+    "dur": 5.6,
+    "tipo": "CLIP",
+    "dice": "El material absorbente tiene que estar encapsulado",
+    "nombre": "cms_s15_engrapa_mosquitero_lana",
+    "_manual": true,
+    "_sec": "S15_LANA",
+    "_anchor": {
+      "startWord": 3270,
+      "endWord": 3276,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s15_review",
+    "ms": 1407090,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Cada cierto tiempo, con el generador apagado y frio",
+    "nombre": "cms_s15_trapo_gris_malla",
+    "_manual": true,
+    "_sec": "S15_LANA",
+    "_anchor": {
+      "startWord": 3329,
+      "endWord": 3337,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e19",
+    "ms": 1422410,
+    "dur": 4.6,
+    "tipo": "CLIP",
+    "dice": "Cinco dólares y 15 minutos",
+    "muestra": "Claudio corta un panel de lana nueva con el cúter contra un listón, con el rollo entero apoyado en el banco.",
+    "porque": "El costo del arreglo es un rollo y un rato; el cúter cortando el panel nuevo es exactamente ese rato.",
+    "nombre": "cms_s15_corta_lana_nueva",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is cutting a slab of fresh ochre mineral wool with a utility knife against a straight wooden batten on a workbench in a dim garage, a full roll of wool leaning on the bench beside him, warm work lamp from the left, medium close shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the workbench stays exactly the same for the whole shot, same roll of mineral wool leaning on the bench, same wooden batten, same work lamp, nothing behind him changes or moves",
+      "action": "Action: he draws the utility knife once along the batten through the wool and lifts the cut edge with his other hand, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium close shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "cúter que corta fibra",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3364,
+      "endWord": 3368,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e76",
+    "ms": 1422410,
+    "dur": 4.2,
+    "tipo": "ICONO",
+    "dice": "Cinco dólares y 15 minutos",
+    "muestra": "Ícono de billete y reloj junto al rollo de lana nueva y el cúter.",
+    "porque": "El precio del arreglo es lo que decide si alguien lo hace o lo posterga.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_dolar.png",
+    "texto": "5 DÓLARES · 15 MINUTOS",
+    "sfx": "tick doble",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3364,
+      "endWord": 3368,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e20",
+    "ms": 1428170,
+    "dur": 3.68,
+    "tipo": "LAMINA",
+    "dice": "y ya que estamos con el fuego, tres cosas más que convierten una caja en un problema serio.",
+    "muestra": "Lámina de la guía en ámbar de alerta con tres renglones vacíos numerados, listos para llenarse.",
+    "porque": "Anuncia tres peligros y conviene abrir la lista antes para que cada uno caiga en su renglón cuando se dice.",
+    "nombre": "cms_s15_lamina_tres_peligros",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "TRES COSAS QUE LA VUELVEN PELIGROSA\n1 ·\n2 ·\n3 ·",
+    "sfx": "papel + zumbido de alerta",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3376,
+      "endWord": 3393,
+      "coverage": 0.944
+    }
+  },
+  {
+    "id": "s15_e77",
+    "ms": 1430150,
+    "dur": 3.4,
+    "tipo": "TEXTO",
+    "dice": "tres cosas más que convierten una caja en un problema serio.",
+    "muestra": "Rótulo de alerta sobre la lámina de los tres renglones vacíos.",
+    "porque": "Anuncia el bloque de seguridad y le pone el peso justo antes de los tres ejemplos.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "TRES COSAS MÁS QUE LO VUELVEN GRAVE",
+    "sfx": "zumbido de alerta",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3383,
+      "endWord": 3393,
+      "coverage": 0.909
+    }
+  },
+  {
+    "id": "cme_v2_s15_fire",
+    "ms": 1444530,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "dejar la estructura sobre pasto seco",
+    "nombre": "cms_s15_caja_pasto_seco",
+    "_manual": true,
+    "_sec": "S15_LANA",
+    "_anchor": {
+      "startWord": 3412,
+      "endWord": 3417,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e25",
+    "ms": 1461150,
+    "dur": 5.08,
+    "tipo": "CLIP",
+    "dice": "Ahora te digo cuando no hacer esta caja, porque a veces la respuesta es no.",
+    "muestra": "Claudio levanta la tapa de la caja, la apoya de canto contra el muro y se queda mirando el patio con las manos en la cintura.",
+    "porque": "El tramo se da vuelta: deja de construir. El cuerpo tiene que soltar la herramienta y la tapa antes de que empiecen los contraejemplos.",
+    "nombre": "cms_s15_tapa_apoyada_muro",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is leaning the lid of a plywood box on its edge against a low block wall in a concrete backyard and standing back with his hands on his hips, looking out over the yard, the open box and the generator beside him, cold overcast daylight, medium wide shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same open plywood box, same generator, same low block wall, nothing behind him changes or moves",
+      "action": "Action: he settles the lid against the wall and steps back once, putting both hands on his hips, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium wide shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "madera que se apoya en el bloque",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3450,
+      "endWord": 3464,
+      "coverage": 0.933
+    }
+  },
+  {
+    "id": "s15_e84",
+    "ms": 1461150,
+    "dur": 4.6,
+    "tipo": "TEXTO",
+    "dice": "Ahora te digo cuando no hacer esta caja",
+    "muestra": "Rótulo en blanco frío sobre el patio, con la tapa apoyada en el muro detrás.",
+    "porque": "Abre el bloque de contraejemplos y avisa que el video va a argumentar contra sí mismo.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "CUÁNDO NO HACER ESTA CAJA",
+    "sfx": "golpe seco",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3450,
+      "endWord": 3456,
+      "coverage": 0.875
+    }
+  },
+  {
+    "id": "s15_e85",
+    "ms": 1464190,
+    "dur": 2.6,
+    "tipo": "TEXTO",
+    "dice": "porque a veces la respuesta es no.",
+    "muestra": "Rótulo corto en ámbar bajo el anterior.",
+    "porque": "Es la frase de honestidad que sostiene la autoridad del canal entero.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "A VECES LA RESPUESTA ES NO",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 3458,
+      "endWord": 3464,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s15_inverter",
+    "ms": 1466290,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Si tu generador es un inversor cerrado moderno",
+    "nombre": "cms_s15_inversor_junto_marco",
+    "_manual": true,
+    "_sec": "S15_LANA",
+    "_anchor": {
+      "startWord": 3465,
+      "endWord": 3472,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e92",
+    "ms": 1487090,
+    "dur": 4.3,
+    "tipo": "TEXTO",
+    "dice": "Y si queda debajo de una ventana o pegado a la pared de un dormitorio",
+    "muestra": "Rótulo sobre el generador apoyado contra la pared, bajo la ventana del dormitorio.",
+    "porque": "Define el segundo contraejemplo por la posición exacta del aparato, que es lo que lo causa.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "DEBAJO DE UNA VENTANA O PEGADO A UN DORMITORIO",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 3515,
+      "endWord": 3529,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e29",
+    "ms": 1487270,
+    "dur": 6.4,
+    "tipo": "T2V",
+    "dice": "si queda debajo de una ventana o pegado a la pared de un dormitorio, ninguna caja alcanza",
+    "muestra": "El generador pegado a la pared exterior de un dormitorio, bajo la ventana; del otro lado, la vibración recorre la pared y llega al cabecero de la cama.",
+    "porque": "El ruido estructural es invisible y por eso hay que cruzar la pared con la cámara: afuera el aparato, adentro la cama temblando.",
+    "nombre": "cms_s15_vibracion_cruza_pared",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "A running generator sits tight against the outside wall of a house directly under a bedroom window, the camera pushes through the wall into a dark bedroom where a glass of water on the bedside table trembles in tiny rings and the headboard rests against the same wall, cold blue night light on both sides, shallow depth of field, documentary feel, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "zumbido que pasa a vibración sorda",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3516,
+      "endWord": 3530,
+      "coverage": 0.882
+    }
+  },
+  {
+    "id": "s15_e94",
+    "ms": 1497370,
+    "dur": 2.6,
+    "tipo": "TEXTO",
+    "dice": "muévelo.",
+    "muestra": "Una sola palabra en verde-voltio sobre el generador que se despega de la pared.",
+    "porque": "Es la instrucción entera para ese caso y no necesita nada alrededor.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "MUÉVELO",
+    "sfx": "golpe seco",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3542,
+      "endWord": 3542,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s15_e31",
+    "ms": 1498830,
+    "dur": 9.38,
+    "tipo": "T2V",
+    "dice": "si lo que necesitas es que ande de noche mientras duermes con la casa cerrada, para un segundo y piensa",
+    "muestra": "Dormitorio a oscuras con la casa cerrada, la ventana con la persiana baja y el zumbido presente; el reloj de la mesa de luz marcando las tres de la mañana.",
+    "porque": "La pregunta del guion es sobre dormir; el cuadro tiene que ser la habitación a las tres de la mañana, no el patio.",
+    "nombre": "cms_s15_dormitorio_tres_manana",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "A dark closed bedroom at night with the blind pulled down, a bedside clock reading three in the morning, a faint band of cold light along the blind edge, the whole room very slightly vibrating, an empty rumpled bed in the foreground, cold blue night light, shallow depth of field, documentary feel, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "zumbido continuo que no deja dormir",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3544,
+      "endWord": 3563,
+      "coverage": 0.9
+    }
+  },
+  {
+    "id": "s15_e95",
+    "ms": 1498830,
+    "dur": 5,
+    "tipo": "TEXTO",
+    "dice": "si lo que necesitas es que ande de noche mientras duermes con la casa cerrada",
+    "muestra": "Rótulo sobre el dormitorio a oscuras con la persiana baja.",
+    "porque": "Plantea el caso más difícil del video en la habitación donde se sufre, y no en el patio.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "¿DE NOCHE, CON LA CASA CERRADA?",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 3544,
+      "endWord": 3558,
+      "coverage": 0.933
+    }
+  },
+  {
+    "id": "cme_v2_s15_battery",
+    "ms": 1508270,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Un respaldo de bateria no tiene escape ni monoxido",
+    "nombre": "cms_s15_respaldo_bateria_taller",
+    "_manual": true,
+    "_sec": "S15_LANA",
+    "_anchor": {
+      "startWord": 3571,
+      "endWord": 3579,
+      "coverage": 1
+    }
+  }
+]

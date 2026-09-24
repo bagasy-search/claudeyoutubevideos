@@ -1,0 +1,1500 @@
+{
+  "video": "rampump2",
+  "avatar": "rampump2_opt.mp4",
+  "clipsfirst": true,
+  "maxRawDur": 8,
+  "beats": [
+    {
+      "id": "rp_bench_pump",
+      "start": 12.72,
+      "dur": 10.27,
+      "kind": "raw",
+      "src": "img/rp_bench_pump.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_bench_pump",
+        "prompt": "homemade hydraulic ram pump on a workbench, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_water_climb",
+      "start": 22.49,
+      "dur": 12.69,
+      "kind": "raw",
+      "src": "img/rp_water_climb.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_water_climb",
+        "prompt": "water flowing up a pipe on a hillside, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_pump_running",
+      "start": 34.68,
+      "dur": 4.49,
+      "kind": "raw",
+      "src": "img/rp_pump_running.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_pump_running",
+        "prompt": "ram pump working by a creek, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_water_bill",
+      "start": 38.67,
+      "dur": 4.71,
+      "kind": "raw",
+      "src": "img/rp_water_bill.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_water_bill",
+        "prompt": "a water utility bill on a table, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_spring_low",
+      "start": 84.62,
+      "dur": 3.34,
+      "kind": "raw",
+      "src": "img/rp_spring_low.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_spring_low",
+        "prompt": "spring water at the bottom of a slope, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_house_hill",
+      "start": 87.46,
+      "dur": 17.13,
+      "kind": "raw",
+      "src": "img/rp_house_hill.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_house_hill",
+        "prompt": "farmhouse on top of a hill, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_buckets",
+      "start": 104.09,
+      "dur": 3.12,
+      "kind": "raw",
+      "src": "img/rp_buckets.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_buckets",
+        "prompt": "carrying water buckets uphill on a farm, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_hands_pail",
+      "start": 106.71,
+      "dur": 4.47,
+      "kind": "raw",
+      "src": "img/rp_hands_pail.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_hands_pail",
+        "prompt": "worn tired hands holding a bucket handle, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_gas_engine",
+      "start": 110.68,
+      "dur": 6.38,
+      "kind": "raw",
+      "src": "img/rp_gas_engine.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_gas_engine",
+        "prompt": "old gasoline water pump engine, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_engine_smoke",
+      "start": 116.56,
+      "dur": 9.03,
+      "kind": "raw",
+      "src": "broll/rp_engine_smoke.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_empty_can",
+      "start": 125.09,
+      "dur": 7.32,
+      "kind": "raw",
+      "src": "img/rp_empty_can.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_empty_can",
+        "prompt": "empty rusty fuel can, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_stream_moving",
+      "start": 131.91,
+      "dur": 7.31,
+      "kind": "raw",
+      "src": "broll/rp_stream_moving.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_rushing_creek",
+      "start": 138.72,
+      "dur": 10.27,
+      "kind": "raw",
+      "src": "broll/rp_rushing_creek.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_cycle",
+      "start": 148.49,
+      "dur": 10.32,
+      "kind": "rampump",
+      "eyebrow": "How it works",
+      "title": "One knock at a time",
+      "driveTag": {
+        "text": "Drive pipe",
+        "sub": "water falls & speeds up"
+      },
+      "wasteTag": {
+        "text": "Waste valve",
+        "sub": "slams shut → hammer"
+      },
+      "airTag": {
+        "text": "Air chamber",
+        "sub": "cushions the blow"
+      },
+      "tankTag": {
+        "text": "Up the hill",
+        "sub": "to your tank"
+      },
+      "ratioTag": "10 fall · 1 climbs"
+    },
+    {
+      "id": "rp_carry_pail",
+      "start": 158.81,
+      "dur": 6.07,
+      "kind": "raw",
+      "src": "img/rp_carry_pail.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_carry_pail",
+        "prompt": "person carrying a full bucket of water, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_spill_pail",
+      "start": 164.38,
+      "dur": 12.72,
+      "kind": "raw",
+      "src": "broll/rp_spill_pail.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_pipe_bang",
+      "start": 176.6,
+      "dur": 11.87,
+      "kind": "raw",
+      "src": "img/rp_pipe_bang.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_pipe_bang",
+        "prompt": "water pipe shaking from pressure, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_water_gush",
+      "start": 187.97,
+      "dur": 5.95,
+      "kind": "raw",
+      "src": "img/rp_water_gush.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_water_gush",
+        "prompt": "water bursting from a pipe close up, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_wall_pipe",
+      "start": 193.42,
+      "dur": 11.66,
+      "kind": "raw",
+      "src": "img/rp_wall_pipe.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_wall_pipe",
+        "prompt": "old pipes inside a wall, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_ticking",
+      "start": 204.58,
+      "dur": 8.07,
+      "kind": "raw",
+      "src": "img/rp_ticking.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_ticking",
+        "prompt": "hydraulic ram pump ticking rhythmically, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_parts",
+      "start": 212.15,
+      "dur": 14.05,
+      "kind": "checklist",
+      "hue": "cold",
+      "accent": "good",
+      "title": "The whole machine",
+      "eyebrow": "5 parts · 2 are just pipe",
+      "items": [
+        {
+          "text": "Drive pipe",
+          "state": "done"
+        },
+        {
+          "text": "Waste valve",
+          "state": "done"
+        },
+        {
+          "text": "Delivery valve",
+          "state": "done"
+        },
+        {
+          "text": "Air chamber",
+          "state": "done"
+        },
+        {
+          "text": "Delivery pipe",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_parts_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_parts_bg",
+        "prompt": "metal pipe fittings and two valves laid out on a workbench, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_drive_pipe",
+      "start": 226.2,
+      "dur": 8.19,
+      "kind": "raw",
+      "src": "img/rp_drive_pipe.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_drive_pipe",
+        "prompt": "water flowing down a sloped pipe, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_waste_valve",
+      "start": 233.89,
+      "dur": 7.48,
+      "kind": "raw",
+      "src": "broll/rp_waste_valve.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_delivery_valve",
+      "start": 240.87,
+      "dur": 10.15,
+      "kind": "raw",
+      "src": "img/rp_delivery_valve.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_delivery_valve",
+        "prompt": "one-way brass check valve close up, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_bottle_air",
+      "start": 250.52,
+      "dur": 9.57,
+      "kind": "raw",
+      "src": "broll/rp_bottle_air.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_delivery_line",
+      "start": 259.59,
+      "dur": 4.47,
+      "kind": "raw",
+      "src": "img/rp_delivery_line.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_delivery_line",
+        "prompt": "thin water line going up a hill, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_pipe_pieces",
+      "start": 263.56,
+      "dur": 8.14,
+      "kind": "raw",
+      "src": "img/rp_pipe_pieces.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_pipe_pieces",
+        "prompt": "cut lengths of pvc pipe, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_water_down",
+      "start": 271.2,
+      "dur": 3.94,
+      "kind": "raw",
+      "src": "broll/rp_water_down.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_waste_gush",
+      "start": 274.64,
+      "dur": 13.22,
+      "kind": "raw",
+      "src": "broll/rp_waste_gush.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_valve_slam",
+      "start": 287.36,
+      "dur": 7.63,
+      "kind": "raw",
+      "src": "img/rp_valve_slam.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_valve_slam",
+        "prompt": "a valve snapping shut fast, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_pressure",
+      "start": 294.49,
+      "dur": 5.58,
+      "kind": "raw",
+      "src": "broll/rp_pressure.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_slug_up",
+      "start": 299.57,
+      "dur": 4.05,
+      "kind": "raw",
+      "src": "img/rp_slug_up.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_slug_up",
+        "prompt": "a slug of water forced up a pipe, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_mouthful",
+      "start": 303.12,
+      "dur": 13.99,
+      "kind": "raw",
+      "src": "img/rp_mouthful.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_mouthful",
+        "prompt": "water spurting up into a chamber, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_cycle",
+      "start": 316.61,
+      "dur": 12.16,
+      "kind": "raw",
+      "src": "img/rp_cycle.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_cycle",
+        "prompt": "ram pump cycling repeatedly, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_heartbeat",
+      "start": 328.27,
+      "dur": 20.37,
+      "kind": "raw",
+      "src": "img/rp_heartbeat.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_heartbeat",
+        "prompt": "ram pump pulsing by a stream, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_materials",
+      "start": 348.14,
+      "dur": 15.13,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "good",
+      "title": "The shopping list",
+      "eyebrow": "~$40 · any hardware store",
+      "items": [
+        {
+          "text": "1¼\" pipe (drive + body)",
+          "state": "done"
+        },
+        {
+          "text": "Two check valves",
+          "state": "done"
+        },
+        {
+          "text": "A tee fitting",
+          "state": "done"
+        },
+        {
+          "text": "Rubber boots + clamps",
+          "state": "done"
+        },
+        {
+          "text": "A bottle for the air chamber",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_materials_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_materials_bg",
+        "prompt": "plumbing fittings, two check valves and a soda bottle on a hardware store counter, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_pvc_pipe",
+      "start": 363.27,
+      "dur": 15.67,
+      "kind": "raw",
+      "src": "img/rp_pvc_pipe.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_pvc_pipe",
+        "prompt": "grey pvc pipe lengths, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_check_valves",
+      "start": 378.44,
+      "dur": 17.16,
+      "kind": "raw",
+      "src": "img/rp_check_valves.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_check_valves",
+        "prompt": "two spring check valves, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_tee",
+      "start": 395.1,
+      "dur": 4.78,
+      "kind": "raw",
+      "src": "img/rp_tee.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_tee",
+        "prompt": "pvc tee fitting close up, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_rubber_boot",
+      "start": 399.38,
+      "dur": 14.66,
+      "kind": "raw",
+      "src": "img/rp_rubber_boot.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_rubber_boot",
+        "prompt": "black rubber pipe coupling with hose clamps, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_bottle",
+      "start": 413.54,
+      "dur": 17.08,
+      "kind": "raw",
+      "src": "broll/rp_bottle.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_forty",
+      "start": 430.12,
+      "dur": 21.16,
+      "kind": "raw",
+      "src": "broll/rp_forty.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_assemble",
+      "start": 450.78,
+      "dur": 35.2,
+      "kind": "raw",
+      "src": "img/rp_assemble.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_assemble",
+        "prompt": "assembling pvc pipe and a tee, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_glue",
+      "start": 485.48,
+      "dur": 22.63,
+      "kind": "raw",
+      "src": "img/rp_glue.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_glue",
+        "prompt": "applying pvc cement to a joint, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_bottle_water",
+      "start": 507.61,
+      "dur": 10.74,
+      "kind": "raw",
+      "src": "broll/rp_bottle_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_capped_pipe",
+      "start": 517.85,
+      "dur": 8.56,
+      "kind": "raw",
+      "src": "img/rp_capped_pipe.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_capped_pipe",
+        "prompt": "capped section of pvc pipe standing up, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_inner_tube",
+      "start": 525.91,
+      "dur": 15.09,
+      "kind": "raw",
+      "src": "img/rp_inner_tube.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_inner_tube",
+        "prompt": "old bicycle inner tube rubber, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_pressure_tank",
+      "start": 540.5,
+      "dur": 10.65,
+      "kind": "raw",
+      "src": "img/rp_pressure_tank.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_pressure_tank",
+        "prompt": "blue well pressure tank, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_brass_iron",
+      "start": 550.65,
+      "dur": 23.82,
+      "kind": "raw",
+      "src": "img/rp_brass_iron.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_brass_iron",
+        "prompt": "galvanized iron pipe and brass valves, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_iron_pump",
+      "start": 573.97,
+      "dur": 22.31,
+      "kind": "raw",
+      "src": "img/rp_iron_pump.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_iron_pump",
+        "prompt": "old iron water ram pump outdoors, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_set_water",
+      "start": 595.78,
+      "dur": 15.38,
+      "kind": "raw",
+      "src": "img/rp_set_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_set_water",
+        "prompt": "installing a pump at a creek bank, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_hillside_creek",
+      "start": 610.66,
+      "dur": 9.37,
+      "kind": "raw",
+      "src": "broll/rp_hillside_creek.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_flat_creek",
+      "start": 619.53,
+      "dur": 7.79,
+      "kind": "raw",
+      "src": "img/rp_flat_creek.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_flat_creek",
+        "prompt": "slow flat calm creek, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_barrel",
+      "start": 626.82,
+      "dur": 17.32,
+      "kind": "raw",
+      "src": "broll/rp_barrel.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_dig_bank",
+      "start": 643.64,
+      "dur": 14.15,
+      "kind": "raw",
+      "src": "broll/rp_dig_bank.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_rigid_pipe",
+      "start": 657.29,
+      "dur": 5.94,
+      "kind": "raw",
+      "src": "img/rp_rigid_pipe.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_rigid_pipe",
+        "prompt": "rigid straight metal pipe, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_garden_hose",
+      "start": 662.73,
+      "dur": 14.04,
+      "kind": "raw",
+      "src": "img/rp_garden_hose.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_garden_hose",
+        "prompt": "a coiled soft garden hose, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_pipe_long",
+      "start": 676.27,
+      "dur": 26.77,
+      "kind": "raw",
+      "src": "img/rp_pipe_long.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_pipe_long",
+        "prompt": "a long pipe running down a slope, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_poly_tube",
+      "start": 702.54,
+      "dur": 21.77,
+      "kind": "raw",
+      "src": "img/rp_poly_tube.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_poly_tube",
+        "prompt": "roll of black poly water tubing, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_tune_valve",
+      "start": 723.81,
+      "dur": 29.96,
+      "kind": "raw",
+      "src": "img/rp_tune_valve.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_tune_valve",
+        "prompt": "adjusting a check valve on a pump, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_tick_steady",
+      "start": 753.27,
+      "dur": 10.63,
+      "kind": "raw",
+      "src": "img/rp_tick_steady.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_tick_steady",
+        "prompt": "ram pump knocking steadily, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_washer_weight",
+      "start": 763.4,
+      "dur": 8.44,
+      "kind": "raw",
+      "src": "img/rp_washer_weight.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_washer_weight",
+        "prompt": "adding a washer to a valve arm, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_fiddle",
+      "start": 771.34,
+      "dur": 26.38,
+      "kind": "raw",
+      "src": "img/rp_fiddle.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_fiddle",
+        "prompt": "old man adjusting by ear, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_the_fall",
+      "start": 797.22,
+      "dur": 13.18,
+      "kind": "raw",
+      "src": "img/rp_the_fall.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_the_fall",
+        "prompt": "water dropping into a pump, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_three_feet",
+      "start": 809.9,
+      "dur": 16.89,
+      "kind": "raw",
+      "src": "img/rp_three_feet.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_three_feet",
+        "prompt": "a small three foot drop in a creek, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_lift",
+      "start": 826.29,
+      "dur": 10.37,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 10,
+      "suffix": "×",
+      "label": "higher than the distance the water falls",
+      "eyebrow": "The rule of ten"
+    },
+    {
+      "id": "cmp_ratio",
+      "start": 836.66,
+      "dur": 16,
+      "kind": "bars",
+      "hue": "cold",
+      "accent": "good",
+      "unit": "gal",
+      "title": "Out of every 10 gallons",
+      "eyebrow": "Where the water goes",
+      "bars": [
+        {
+          "label": "Back to the creek (free)",
+          "value": 9,
+          "display": "9 gal",
+          "tone": "amber"
+        },
+        {
+          "label": "Up the hill",
+          "value": 1,
+          "display": "1 gal",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "cmp_perday",
+      "start": 852.66,
+      "dur": 16.66,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "good",
+      "value": 1000,
+      "prefix": "+",
+      "suffix": " gal/day",
+      "label": "from a machine that costs a few dollars and runs on falling water",
+      "eyebrow": "Day and night"
+    },
+    {
+      "id": "rp_night_water",
+      "start": 869.32,
+      "dur": 14.71,
+      "kind": "raw",
+      "src": "img/rp_night_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_night_water",
+        "prompt": "water tank filling at dusk, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_tank_top",
+      "start": 883.53,
+      "dur": 7.93,
+      "kind": "raw",
+      "src": "img/rp_tank_top.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_tank_top",
+        "prompt": "water storage tank on a hilltop, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_tap_pressure",
+      "start": 890.96,
+      "dur": 11,
+      "kind": "raw",
+      "src": "img/rp_tap_pressure.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_tap_pressure",
+        "prompt": "water running from a tap with pressure, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_drip_garden",
+      "start": 901.46,
+      "dur": 3.95,
+      "kind": "raw",
+      "src": "img/rp_drip_garden.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_drip_garden",
+        "prompt": "drip irrigation line in a vegetable garden, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_duck_pond",
+      "start": 904.91,
+      "dur": 17.02,
+      "kind": "raw",
+      "src": "img/rp_duck_pond.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_duck_pond",
+        "prompt": "ducks on a small farm pond, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_homestead",
+      "start": 921.43,
+      "dur": 27.16,
+      "kind": "raw",
+      "src": "img/rp_homestead.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_homestead",
+        "prompt": "homestead with running water and garden, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_first_start",
+      "start": 948.09,
+      "dur": 11.44,
+      "kind": "raw",
+      "src": "img/rp_first_start.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_first_start",
+        "prompt": "starting a ram pump by a stream, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_flood_pump",
+      "start": 959.03,
+      "dur": 15.43,
+      "kind": "raw",
+      "src": "broll/rp_flood_pump.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_hand_prime",
+      "start": 973.96,
+      "dur": 14.39,
+      "kind": "raw",
+      "src": "img/rp_hand_prime.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_hand_prime",
+        "prompt": "a finger pressing a valve on a pump, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_catch",
+      "start": 987.85,
+      "dur": 5.36,
+      "kind": "raw",
+      "src": "img/rp_catch.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_catch",
+        "prompt": "ram pump starting to knock, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_water_up2",
+      "start": 992.71,
+      "dur": 13.06,
+      "kind": "raw",
+      "src": "img/rp_water_up2.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_water_up2",
+        "prompt": "water rising up a clear pipe, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_trouble",
+      "start": 1005.27,
+      "dur": 23.95,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "danger",
+      "title": "The 5 ways it fails",
+      "eyebrow": "…and every fix",
+      "items": [
+        {
+          "text": "Air chamber floods → a snifter hole",
+          "state": "done"
+        },
+        {
+          "text": "Valve stuck → screen the intake",
+          "state": "done"
+        },
+        {
+          "text": "Won't start → gain more fall",
+          "state": "done"
+        },
+        {
+          "text": "Air leak → seal the joints",
+          "state": "done"
+        },
+        {
+          "text": "Freeze → bury pipes, box it in",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_trouble_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_trouble_bg",
+        "prompt": "a homemade ram pump by a creek with tools beside it, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_chamber_flood",
+      "start": 1029.22,
+      "dur": 18.35,
+      "kind": "raw",
+      "src": "img/rp_chamber_flood.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_chamber_flood",
+        "prompt": "a waterlogged pump chamber, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_snifter",
+      "start": 1047.07,
+      "dur": 32.35,
+      "kind": "raw",
+      "src": "img/rp_snifter.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_snifter",
+        "prompt": "drilling a tiny hole in a pipe, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_grit_leaf",
+      "start": 1078.92,
+      "dur": 17,
+      "kind": "raw",
+      "src": "broll/rp_grit_leaf.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_no_fall",
+      "start": 1095.42,
+      "dur": 16.75,
+      "kind": "raw",
+      "src": "img/rp_no_fall.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_no_fall",
+        "prompt": "a very small drop in a flat stream, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_check_joints",
+      "start": 1111.67,
+      "dur": 10.47,
+      "kind": "raw",
+      "src": "broll/rp_check_joints.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_frozen_pipe",
+      "start": 1121.64,
+      "dur": 6.51,
+      "kind": "raw",
+      "src": "img/rp_frozen_pipe.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_frozen_pipe",
+        "prompt": "frozen cracked water pipe, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_bury_pipe",
+      "start": 1127.65,
+      "dur": 6.25,
+      "kind": "raw",
+      "src": "img/rp_bury_pipe.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_bury_pipe",
+        "prompt": "burying water pipe in a trench, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_straw_box",
+      "start": 1133.4,
+      "dur": 13.15,
+      "kind": "raw",
+      "src": "broll/rp_straw_box.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_pump_snow",
+      "start": 1146.05,
+      "dur": 17.04,
+      "kind": "raw",
+      "src": "img/rp_pump_snow.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_pump_snow",
+        "prompt": "a water pump working in the snow, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_more_water",
+      "start": 1162.59,
+      "dur": 7.72,
+      "kind": "raw",
+      "src": "broll/rp_more_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "rp_two_pumps",
+      "start": 1169.81,
+      "dur": 25.28,
+      "kind": "raw",
+      "src": "img/rp_two_pumps.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_two_pumps",
+        "prompt": "two small ram pumps side by side, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_two_clocks",
+      "start": 1194.59,
+      "dur": 15.51,
+      "kind": "raw",
+      "src": "img/rp_two_clocks.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_two_clocks",
+        "prompt": "two old mantel clocks ticking, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_montgolfier",
+      "start": 1250.32,
+      "dur": 6.3,
+      "kind": "raw",
+      "src": "broll/rp_montgolfier.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_history",
+      "start": 1256.12,
+      "dur": 6.3,
+      "kind": "timeline",
+      "eyebrow": "It is not new",
+      "title": "Why you never heard of it",
+      "events": [
+        {
+          "year": "1796",
+          "label": "patented in France",
+          "accent": "amber"
+        },
+        {
+          "year": "1800s",
+          "label": "farms & villages everywhere",
+          "accent": "amber"
+        },
+        {
+          "year": "1900s",
+          "label": "the grid buried it",
+          "accent": "danger"
+        }
+      ]
+    },
+    {
+      "id": "rp_village",
+      "start": 1262.42,
+      "dur": 6.4,
+      "kind": "raw",
+      "src": "img/rp_village.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_village",
+        "prompt": "old european village by a river, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_grid_towers",
+      "start": 1268.32,
+      "dur": 8.04,
+      "kind": "raw",
+      "src": "img/rp_grid_towers.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_grid_towers",
+        "prompt": "electric power lines being installed, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_meter_bill",
+      "start": 1275.86,
+      "dur": 7.93,
+      "kind": "raw",
+      "src": "img/rp_meter_bill.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_meter_bill",
+        "prompt": "electricity meter dial spinning, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_spring_free",
+      "start": 1283.29,
+      "dur": 4.31,
+      "kind": "raw",
+      "src": "img/rp_spring_free.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_spring_free",
+        "prompt": "free clear spring water on a farm, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_january_snow",
+      "start": 1287.1,
+      "dur": 7.41,
+      "kind": "raw",
+      "src": "img/rp_january_snow.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_january_snow",
+        "prompt": "deep snow on a winter farm, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "rp_pump_ice",
+      "start": 1294.01,
+      "dur": 26.46,
+      "kind": "raw",
+      "src": "img/rp_pump_ice.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rp_pump_ice",
+        "prompt": "ram pump under ice still working, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_next",
+      "start": 1319.97,
+      "dur": 13.82,
+      "kind": "nextvideo",
+      "kicker": "Next time",
+      "title": "Light a whole room with one small flame",
+      "sub": "No grid, no batteries — a forgotten trick that makes one candle shine like ten."
+    },
+    {
+      "id": "cmp_weekend",
+      "start": 1333.79,
+      "dur": 30.66,
+      "kind": "process",
+      "hue": "amber",
+      "accent": "good",
+      "title": "Your weekend",
+      "eyebrow": "Build a small one first",
+      "steps": [
+        {
+          "title": "Find falling water"
+        },
+        {
+          "title": "Build the pump ($40)"
+        },
+        {
+          "title": "Set it & tune the knock"
+        }
+      ]
+    },
+    {
+      "id": "ovp_22",
+      "start": 22.49,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Water uphill — on its own",
+      "pos": "bottom",
+      "accent": "cold"
+    },
+    {
+      "id": "ovp_15",
+      "start": 15.31,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "No power · no motor · no fuel",
+      "pos": "top",
+      "accent": "amber"
+    },
+    {
+      "id": "ov_339",
+      "start": 338.93,
+      "dur": 3.6,
+      "kind": "stattag",
+      "overlay": true,
+      "value": 79,
+      "suffix": " yrs",
+      "label": "still knocking",
+      "corner": "TR",
+      "accent": "cold"
+    },
+    {
+      "id": "ovp_177",
+      "start": 176.6,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Water hammer = the engine",
+      "pos": "bottom",
+      "accent": "danger"
+    },
+    {
+      "id": "ovp_287",
+      "start": 287.36,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "It slams shut",
+      "pos": "bottom",
+      "accent": "danger"
+    },
+    {
+      "id": "ovg_445",
+      "start": 444.72,
+      "dur": 4.2,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "📌 Full parts list — free guide in the comments",
+      "pos": "bottom",
+      "accent": "amber"
+    },
+    {
+      "id": "ovx_676",
+      "start": 676.27,
+      "dur": 3.6,
+      "kind": "stattag",
+      "overlay": true,
+      "text": "5–7×",
+      "label": "drive pipe vs fall",
+      "corner": "TL",
+      "accent": "amber"
+    },
+    {
+      "id": "ov_810",
+      "start": 809.9,
+      "dur": 3.6,
+      "kind": "stattag",
+      "overlay": true,
+      "value": 3,
+      "suffix": " ft",
+      "label": "drop is plenty",
+      "corner": "TR",
+      "accent": "cold"
+    },
+    {
+      "id": "ovx_826",
+      "start": 826.29,
+      "dur": 3.6,
+      "kind": "stattag",
+      "overlay": true,
+      "text": "1 : 10",
+      "label": "fall vs lift",
+      "corner": "TL",
+      "accent": "amber"
+    },
+    {
+      "id": "ovg_932",
+      "start": 932.2,
+      "dur": 4.2,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "📌 Sizing table — in the free guide (comments)",
+      "pos": "bottom",
+      "accent": "amber"
+    },
+    {
+      "id": "ovp_974",
+      "start": 973.96,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Prime it by hand → it catches",
+      "pos": "bottom",
+      "accent": "cold"
+    },
+    {
+      "id": "ovp_1146",
+      "start": 1146.05,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Runs right through winter",
+      "pos": "top",
+      "accent": "cold"
+    },
+    {
+      "id": "ovx_1276",
+      "start": 1275.86,
+      "dur": 3.6,
+      "kind": "stattag",
+      "overlay": true,
+      "text": "$0/yr",
+      "label": "to run, forever",
+      "corner": "TR",
+      "accent": "amber"
+    },
+    {
+      "id": "ovp_13",
+      "start": 12.72,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "No cord · no motor · no bill",
+      "pos": "bottom",
+      "accent": "cold"
+    },
+    {
+      "id": "ovg_1346",
+      "start": 1346.22,
+      "dur": 4.2,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "📌 Free guide + 90 old skills — in the comments",
+      "pos": "bottom",
+      "accent": "amber"
+    }
+  ]
+}

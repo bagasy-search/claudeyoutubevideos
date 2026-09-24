@@ -1,0 +1,434 @@
+{
+  "slug": "vbb0rdkrfduo",
+  "version": "first-minute-director-grid-v1",
+  "master_clock": "public/captions_vbb0rdkrfduo.json",
+  "fps": 30,
+  "coverage": {
+    "start_sec": 0,
+    "end_sec": 60,
+    "note": "El último beat continúa hasta 62.02 s para no cortar una advertencia a mitad de frase."
+  },
+  "hard_rules": [
+    "Frames 0 a 60, inclusive, muestran solamente al avatar a pantalla completa.",
+    "Los frames 15 y 45 deben auditarse y contener solo avatar full, sin texto, logo, placa ni transición.",
+    "No hay captions continuos ni subtítulos palabra por palabra.",
+    "Cada recurso visual de stock es único y no se repite dentro del video.",
+    "Las recreaciones históricas deben rotularse como recreación o leyenda para no presentarlas como evidencia.",
+    "Los cortes obedecen a unidades semánticas, no a intervalos fijos."
+  ],
+  "visual_arc": "Contacto humano inmediato; inmersión histórica; construcción de la leyenda; giro de investigación; corrección médica; rescate práctico; negación de promesas virales; beneficio realista; advertencia de seguridad.",
+  "beats": [
+    {
+      "id": "FM01",
+      "start_sec": 0.0,
+      "end_sec": 2.8,
+      "start_frame": 0,
+      "end_frame_exclusive": 84,
+      "voice_exact": "En el siglo XIV, Isabel de Polonia,",
+      "narrative_intent": "Abrir con autoridad humana y sembrar de inmediato el misterio histórico.",
+      "shot_type": "avatar_full",
+      "indispensable_visual_information": "Solo el Dr. Valler hablando a cámara. Debe quedar claro que la historia llega por medio de una persona confiable, antes de cualquier ilustración.",
+      "primary_resource": {
+        "asset_id": "avatar_master",
+        "type": "avatar_video",
+        "spec": "MP4 original del avatar, encuadre full 16:9; no overlays ni reemplazos visuales."
+      },
+      "internal_motion": "Movimiento natural del avatar. Como máximo, reencuadre imperceptible de 100% a 101% después del frame 60; antes, imagen intacta.",
+      "editorial_text": null,
+      "transition_in": "Inicio directo en frame 0, sin logo, fade ni placa.",
+      "transition_out": "Corte limpio después de «Polonia» y de la micro-pausa, nunca sobre la palabra.",
+      "retention_reason": "El rostro crea confianza inmediata y la fecha histórica abre una pregunta sin demorar el relato.",
+      "mismatch_risk": "Crítico: cualquier texto, logo, b-roll o transición antes del frame 61 incumple la apertura. Auditar frames 0, 15, 45 y 60."
+    },
+    {
+      "id": "FM02",
+      "start_sec": 2.8,
+      "end_sec": 6.16,
+      "start_frame": 84,
+      "end_frame_exclusive": 185,
+      "voice_exact": "reina de Hungría, quedó ligada a un pequeño frasco aromático que",
+      "narrative_intent": "Materializar a la protagonista y convertir el frasco en objeto de curiosidad.",
+      "shot_type": "visual_full_hero_historical",
+      "indispensable_visual_information": "Recreación inequívoca de una reina europea del siglo XIV junto a un frasco pequeño de vidrio; no una mujer moderna ni un frasco cosmético actual.",
+      "primary_resource": {
+        "asset_id": "gen_hist_isabel_vial_01",
+        "type": "modal_generated_image",
+        "spec": "Recreación pictórica cinematográfica históricamente plausible de Isabel de Polonia en una cámara palaciega del siglo XIV; pequeño frasco aromático de vidrio sobre mesa; vestuario centroeuropeo; sin texto ni marcas. Rotular RECREACIÓN ARTÍSTICA."
+      },
+      "internal_motion": "Dolly lento desde el retrato hacia el frasco; rack focus digital al pronunciar «pequeño frasco aromático».",
+      "editorial_text": "RECREACIÓN ARTÍSTICA",
+      "transition_in": "Match cut desde la dirección de la mirada del avatar hacia el retrato.",
+      "transition_out": "El vidrio del frasco llena brevemente el centro y se convierte por match cut en un marcador de mapa.",
+      "retention_reason": "El objeto concreto responde qué quedó ligado a la reina y prepara el nombre que se revelará enseguida.",
+      "mismatch_risk": "No presentar el retrato como imagen auténtica de Isabel ni mostrar una pomada verde: la voz todavía habla de un frasco aromático."
+    },
+    {
+      "id": "FM03",
+      "start_sec": 6.16,
+      "end_sec": 9.14,
+      "start_frame": 185,
+      "end_frame_exclusive": 274,
+      "voice_exact": "Europa terminaría conociendo como agua de Hungría.",
+      "narrative_intent": "Nombrar el preparado y ampliar la historia desde una corte hasta Europa.",
+      "shot_type": "visual_full_map_component",
+      "indispensable_visual_information": "Mapa antiguo de Europa con origen en Hungría y difusión visual sobria; el nombre Agua de Hungría aparece solo cuando se pronuncia.",
+      "primary_resource": {
+        "asset_id": "comp_europe_hungary_water_01",
+        "type": "remotion_editorial_component",
+        "spec": "Mapa de pergamino propio, marcador sobre Hungría y ondas/rutas discretas hacia Europa occidental; frasco antiguo como motivo, sin afirmar una ruta histórica específica."
+      },
+      "internal_motion": "El marcador aparece en 6.16 s; las rutas se expanden entre 6.48 y 8.20 s; el rótulo «AGUA DE HUNGRÍA» se revela entre 8.22 y 8.76 s.",
+      "editorial_text": "AGUA DE HUNGRÍA",
+      "transition_in": "Match cut circular desde el cuello del frasco al marcador del mapa.",
+      "transition_out": "La textura del mapa se funde por luz con una página de manuscrito real.",
+      "retention_reason": "Entrega el nombre prometido con una expansión visual que hace sentir que la leyenda crece.",
+      "mismatch_risk": "No dibujar rutas geográficas demasiado precisas ni fechas que la voz no aporta; evitar convertir la difusión en un hecho documentado exacto."
+    },
+    {
+      "id": "FM04",
+      "start_sec": 9.34,
+      "end_sec": 12.9,
+      "start_frame": 280,
+      "end_frame_exclusive": 387,
+      "voice_exact": "Siglos después, apareció una historia todavía más sorprendente,",
+      "narrative_intent": "Cambiar de registro: de dato histórico a relato transmitido con el tiempo.",
+      "shot_type": "visual_full_stock_macro",
+      "indispensable_visual_information": "Páginas antiguas pasando y escritura histórica, sin texto moderno ni prueba falsa de que la historia aparece literalmente en ese documento.",
+      "primary_resource": {
+        "asset_id": "stock_unique_manuscript_page_turn_01",
+        "type": "verified_stock_video",
+        "spec": "Macro auténtico de una mano enguantada pasando una página de manuscrito europeo antiguo; sin logos, texto incrustado ni decorado moderno; validar fotogramas antes de usar."
+      },
+      "internal_motion": "Usar el fragmento donde una sola página termina de pasar; foco cambia de la fibra del papel a una línea de caligrafía.",
+      "editorial_text": "SIGLOS DESPUÉS…",
+      "transition_in": "Disolución corta motivada por la textura de pergamino, no fade genérico.",
+      "transition_out": "La sombra de la página forma una máscara vertical que abre la ilustración siguiente.",
+      "retention_reason": "El movimiento real de página comunica transmisión temporal y crea anticipación antes de revelar la afirmación extraordinaria.",
+      "mismatch_risk": "No enfocar una frase legible que el espectador pueda interpretar como fuente histórica de la leyenda."
+    },
+    {
+      "id": "FM05",
+      "start_sec": 12.98,
+      "end_sec": 19.72,
+      "start_frame": 389,
+      "end_frame_exclusive": 592,
+      "voice_exact": "que el romero la había rejuvenecido tanto que, cuando ya tenía más de 70 años, un rey quiso casarse con ella.",
+      "narrative_intent": "Exponer la versión viral con energía, pero mantenerla claramente en el territorio de la leyenda.",
+      "shot_type": "visual_full_legend_triptych",
+      "indispensable_visual_information": "Tres hechos de la afirmación: romero, edad mayor de 70 y propuesta de un rey; todos tratados como relato ilustrado, no como prueba ni antes/después.",
+      "primary_resource": {
+        "asset_id": "comp_legend_rosemary_age_proposal_01",
+        "type": "remotion_cinematic_component",
+        "spec": "Tríptico sobre ilustraciones originales generadas en Modal: ramita de romero realista, reina madura digna sin rejuvenecimiento artificial, silueta de un rey ofreciendo alianza matrimonial; acabado de cuento histórico."
+      },
+      "internal_motion": "La ramita entra al nombrar «romero»; el número «MÁS DE 70» aparece en 16.06–17.86 s; la tercera capa revela al rey entre 18.02–19.20 s; una banda superior «LA LEYENDA DECÍA…» permanece visible.",
+      "editorial_text": "LA LEYENDA DECÍA… · MÁS DE 70 AÑOS",
+      "transition_in": "Máscara de página desde el manuscrito.",
+      "transition_out": "La ilustración se inmoviliza en 19.20 s y pierde saturación durante la pausa, preparando la corrección.",
+      "retention_reason": "La progresión en tres revelaciones convierte una frase larga en una mini-historia sin cortes frenéticos.",
+      "mismatch_risk": "No mostrar rejuvenecimiento facial, borrado de arrugas ni una boda consumada; la voz solo relata una leyenda sobre una propuesta."
+    },
+    {
+      "id": "FM06",
+      "start_sec": 19.72,
+      "end_sec": 23.3,
+      "start_frame": 592,
+      "end_frame_exclusive": 699,
+      "voice_exact": "Hay un detalle que casi nunca se cuenta.",
+      "narrative_intent": "Crear un silencio de investigación y devolver autoridad al Dr. Valler antes del giro.",
+      "shot_type": "avatar_full",
+      "indispensable_visual_information": "Avatar a pantalla completa; la pausa inicial forma parte del suspense.",
+      "primary_resource": {
+        "asset_id": "avatar_master",
+        "type": "avatar_video",
+        "spec": "Continuidad exacta del video fuente; labios y gesto sin cortes internos."
+      },
+      "internal_motion": "Sostener 19.72–21.28 s como pausa con presencia; desde 21.28 s, push-in muy suave de 101% a 103% que termina con «cuenta».",
+      "editorial_text": null,
+      "transition_in": "Corte limpio desde la leyenda desaturada al rostro.",
+      "transition_out": "Corte sobre la mirada sostenida posterior a «cuenta», antes de la nueva frase.",
+      "retention_reason": "El regreso del presentador señala que viene el dato que desmonta el relato y recompensa la atención.",
+      "mismatch_risk": "No anticipar el dato del hijo con texto o imagen antes de que la voz lo diga."
+    },
+    {
+      "id": "FM07",
+      "start_sec": 23.48,
+      "end_sec": 26.46,
+      "start_frame": 704,
+      "end_frame_exclusive": 794,
+      "voice_exact": "El rey de Polonia de aquella época era su propio hijo.",
+      "narrative_intent": "Entregar el giro factual de forma instantáneamente comprensible.",
+      "shot_type": "visual_full_genealogy_component",
+      "indispensable_visual_information": "Relación madre-hijo, no romance: figura de Isabel conectada a la figura coronada del rey de Polonia mediante una línea genealógica.",
+      "primary_resource": {
+        "asset_id": "comp_genealogy_mother_son_01",
+        "type": "remotion_editorial_component",
+        "spec": "Miniárbol genealógico con dos medallones ilustrados no identificados facialmente: ISABEL DE POLONIA → SU HIJO / REY DE POLONIA; corona polaca estilizada sin escudos oficiales dudosos."
+      },
+      "internal_motion": "El medallón del rey aparece en «rey de Polonia»; la línea se dibuja hacia arriba y cambia a la etiqueta «SU PROPIO HIJO» exactamente en 25.60–26.18 s.",
+      "editorial_text": "SU PROPIO HIJO",
+      "transition_in": "Corte seco tipo revelación.",
+      "transition_out": "La línea genealógica se estira horizontalmente y se transforma en divisor de una comparación.",
+      "retention_reason": "La visualización resuelve de un vistazo la contradicción que invalida el romance viral.",
+      "mismatch_risk": "No usar retratos de personas históricas incorrectas ni añadir nombres o fechas no pronunciados."
+    },
+    {
+      "id": "FM08",
+      "start_sec": 26.66,
+      "end_sec": 29.78,
+      "start_frame": 800,
+      "end_frame_exclusive": 893,
+      "voice_exact": "La escena romántica no puede tomarse como historia comprobada,",
+      "narrative_intent": "Diferenciar con precisión relato popular y evidencia histórica.",
+      "shot_type": "visual_full_myth_reality_split",
+      "indispensable_visual_information": "Una comparación editorial que deje la leyenda del lado de lo no comprobado, sin afirmar que todo el episodio histórico es falso.",
+      "primary_resource": {
+        "asset_id": "comp_legend_not_verified_01",
+        "type": "remotion_editorial_component",
+        "spec": "Split de pergamino: a la izquierda, siluetas románticas bajo etiqueta LEYENDA; a la derecha, lupa sobre documento bajo HISTORIA COMPROBADA; el puente entre ambos queda cortado."
+      },
+      "internal_motion": "El lado LEYENDA domina al inicio; al pronunciar «no puede», la línea central se corta; en «comprobada» aparece el sello sobrio «NO COMPROBADA» sobre el relato romántico.",
+      "editorial_text": "LEYENDA · NO COMPROBADA",
+      "transition_in": "La línea del árbol genealógico se convierte en el divisor central.",
+      "transition_out": "La lupa del lado derecho amplía una gota transparente y abre el macro del preparado.",
+      "retention_reason": "La claridad binaria evita confusión y transforma el giro histórico en criterio práctico: leyenda no equivale a evidencia.",
+      "mismatch_risk": "No usar un gran sello «FALSO»; la formulación correcta es «no comprobada»."
+    },
+    {
+      "id": "FM09",
+      "start_sec": 29.78,
+      "end_sec": 34.04,
+      "start_frame": 893,
+      "end_frame_exclusive": 1021,
+      "voice_exact": "y aquel preparado se describía como un perfume o destilado alcohólico,",
+      "narrative_intent": "Corregir la naturaleza del preparado original mediante materia y proceso reales.",
+      "shot_type": "visual_full_stock_apothecary",
+      "indispensable_visual_information": "Líquido transparente o ámbar ligero en cristalería de perfumería/destilación, no una crema, ungüento o té.",
+      "primary_resource": {
+        "asset_id": "stock_unique_antique_distillation_01",
+        "type": "verified_stock_video",
+        "spec": "Macro cinematográfico de destilación/perfumería tradicional: gota clara pasando a un frasco apotecario; utilería de época plausible, sin marca, sin llama insegura y sin pomada visible. Validar fotogramas."
+      },
+      "internal_motion": "Comenzar en el instante anterior a que caiga una gota; la gota cae en «perfume» y el enfoque viaja al líquido del frasco en «destilado alcohólico».",
+      "editorial_text": "PERFUME / DESTILADO ALCOHÓLICO",
+      "transition_in": "Match cut de la lente circular a la gota.",
+      "transition_out": "El frasco se desplaza al lado izquierdo para habilitar el split comparativo.",
+      "retention_reason": "Una acción física precisa convierte una corrección abstracta en una diferencia visual memorable.",
+      "mismatch_risk": "No mostrar aceite espeso, cera, pomada verde ni consumo oral; el preparado nombrado es perfume o destilado alcohólico."
+    },
+    {
+      "id": "FM10",
+      "start_sec": 34.1,
+      "end_sec": 36.56,
+      "start_frame": 1023,
+      "end_frame_exclusive": 1097,
+      "voice_exact": "no como la pomada verde que hoy circula en internet.",
+      "narrative_intent": "Cerrar la corrección histórica con una comparación contemporánea inequívoca.",
+      "shot_type": "visual_full_comparison_component",
+      "indispensable_visual_information": "A la izquierda, destilado líquido histórico; a la derecha, frasco moderno de bálsamo verdoso viral; un signo de desigualdad deja claro que no son lo mismo.",
+      "primary_resource": {
+        "asset_id": "comp_distillate_not_green_salve_01",
+        "type": "remotion_editorial_component",
+        "spec": "Comparador original con dos objetos fotografiados/generados por separado, sin marcas ni interfaces de red social copiadas; estética médica premium."
+      },
+      "internal_motion": "El frasco moderno entra solo en «pomada verde»; el signo ≠ aparece en «no como» y una trama de feed desenfocada se sugiere recién en «internet».",
+      "editorial_text": "DESTILADO ≠ POMADA VERDE",
+      "transition_in": "Expansión lateral del plano anterior al split.",
+      "transition_out": "El divisor se cierra como dos puertas y descubre al avatar.",
+      "retention_reason": "La comparación visual resuelve el principal equívoco del gancho antes de prometer la alternativa útil.",
+      "mismatch_risk": "No exhibir una publicación real, usuario, logo o marca; no sugerir que toda pomada de romero es fraude."
+    },
+    {
+      "id": "FM11",
+      "start_sec": 36.76,
+      "end_sec": 41.36,
+      "start_frame": 1103,
+      "end_frame_exclusive": 1241,
+      "voice_exact": "Pero detrás de esa leyenda mal contada, hay una receta que sí vale la pena rescatar.",
+      "narrative_intent": "Recompensar el desmontaje del mito con una promesa práctica y creíble.",
+      "shot_type": "avatar_full",
+      "indispensable_visual_information": "Dr. Valler a cámara, tono de autoridad y complicidad; no revelar todavía los ingredientes ni pasos.",
+      "primary_resource": {
+        "asset_id": "avatar_master",
+        "type": "avatar_video",
+        "spec": "Continuidad del MP4 fuente, a pantalla completa, sin PiP."
+      },
+      "internal_motion": "Reencuadre suave de 102% a 104%; micro-pausa visual antes de «sí vale la pena»; no cubrir rostro ni manos.",
+      "editorial_text": "SÍ VALE LA PENA RESCATARLA",
+      "transition_in": "Puertas del comparador se cierran sobre el avatar; entrada limpia y breve.",
+      "transition_out": "Corte en la respiración posterior a «rescatar» hacia el tablero de promesas.",
+      "retention_reason": "El avatar restaura confianza y abre un nuevo loop: cuál es la receta útil y bajo qué límites.",
+      "mismatch_risk": "El texto editorial debe aparecer solo desde 39.98 s, cuando se pronuncia «sí»; no anticipar la receta."
+    },
+    {
+      "id": "FM12",
+      "start_sec": 41.72,
+      "end_sec": 47.2,
+      "start_frame": 1252,
+      "end_frame_exclusive": 1416,
+      "voice_exact": "No porque borre venitas, desinfle ojeras, tense la piel y cure articulaciones al mismo tiempo.",
+      "narrative_intent": "Neutralizar cuatro promesas virales sin perder velocidad ni responsabilidad médica.",
+      "shot_type": "visual_full_progressive_claims_component",
+      "indispensable_visual_information": "Cuatro promesas distintas, todas negadas: venitas, ojeras, tensado de piel y cura articular; sin antes/después ni aplicación cerca del ojo.",
+      "primary_resource": {
+        "asset_id": "comp_four_claims_denied_01",
+        "type": "remotion_four_panel_component",
+        "spec": "Paneles originales con fotografías médicas sobrias y no gráficas: pierna madura con telangiectasias; esquema de contorno de ojo sin producto; textura de piel madura natural; diagrama de rodilla. Cada panel recibe una barra de negación al ser nombrado."
+      },
+      "internal_motion": "Panel 1 activa 42.06–42.94 s; panel 2, 43.24–44.06 s; panel 3, 44.34–44.98 s; panel 4, 45.32–47.20 s. Los paneles previos permanecen visibles y el encuadre final muestra los cuatro límites juntos.",
+      "editorial_text": "NO BORRA · NO DESINFLAMA · NO TENSA · NO CURA",
+      "transition_in": "Corte limpio al primer panel cuando comienza «No porque».",
+      "transition_out": "El tablero completo se reduce hacia el centro y deja un corredor de luz para el avatar.",
+      "retention_reason": "La revelación sincronizada acompaña la enumeración sin cuatro cortes abruptos y deja una imagen final fácil de recordar.",
+      "mismatch_risk": "Crítico: toda imagen debe leerse como promesa negada. No mostrar romero cerca de los ojos, venas desapareciendo ni articulaciones reparadas."
+    },
+    {
+      "id": "FM13",
+      "start_sec": 47.44,
+      "end_sec": 50.22,
+      "start_frame": 1423,
+      "end_frame_exclusive": 1507,
+      "voice_exact": "Vale la pena porque, preparada con cuidado, puede",
+      "narrative_intent": "Cambiar de negación a utilidad concreta con el Dr. Valler como garante.",
+      "shot_type": "avatar_full",
+      "indispensable_visual_information": "Avatar a cámara; todavía no presentar una textura final como resultado garantizado hasta pronunciar «bálsamo».",
+      "primary_resource": {
+        "asset_id": "avatar_master",
+        "type": "avatar_video",
+        "spec": "MP4 original en full, sin elementos flotantes ni captions."
+      },
+      "internal_motion": "Plano sostenido con un leve alivio de escala de 104% a 102%, visualmente más abierto y cálido que la corrección anterior.",
+      "editorial_text": null,
+      "transition_in": "Corte limpio desde el tablero al rostro.",
+      "transition_out": "Match cut desde el gesto/mano del avatar hacia una espátula de preparación, si la gestualidad lo permite; si no, corte por pausa a macro.",
+      "retention_reason": "El rostro convierte la promesa moderada en una recomendación personal, no en publicidad de un producto.",
+      "mismatch_risk": "No insertar ingredientes todavía si la voz no los nombra en este tramo."
+    },
+    {
+      "id": "FM14",
+      "start_sec": 50.22,
+      "end_sec": 52.66,
+      "start_frame": 1507,
+      "end_frame_exclusive": 1580,
+      "voice_exact": "convertirse en un bálsamo corporal agradable para",
+      "narrative_intent": "Dar forma sensorial al beneficio realista: un bálsamo corporal agradable.",
+      "shot_type": "visual_full_stock_balm_macro",
+      "indispensable_visual_information": "Textura de bálsamo corporal en un frasco limpio y seco, manipulada con espátula; no crema comercial, no aplicación facial y no resultado médico.",
+      "primary_resource": {
+        "asset_id": "stock_unique_balm_texture_spatula_01",
+        "type": "verified_stock_video",
+        "spec": "Macro real de una espátula levantando una pequeña cantidad de bálsamo casero desde un frasco de vidrio sin marca; textura homogénea, encuadre cálido y sanitario. Validar que no haya etiqueta oculta."
+      },
+      "internal_motion": "Elegir el fragmento donde la espátula entra, recoge una cantidad pequeña y se detiene en foco; no hacer loop.",
+      "editorial_text": "BÁLSAMO CORPORAL",
+      "transition_in": "Match cut de gesto a espátula o corte limpio en 50.22 s.",
+      "transition_out": "El círculo del frasco se transforma en tres marcos redondeados del componente siguiente.",
+      "retention_reason": "La textura concreta satisface la curiosidad por el objeto sin adelantar el método ni exagerar resultados.",
+      "mismatch_risk": "No usar una crema facial blanca genérica ni mostrar un envase comercial; debe parecer bálsamo corporal casero, limpio y no medicamentoso."
+    },
+    {
+      "id": "FM15",
+      "start_sec": 52.66,
+      "end_sec": 56.6,
+      "start_frame": 1580,
+      "end_frame_exclusive": 1698,
+      "voice_exact": "piel seca, piernas cansadas y molestias musculares leves.",
+      "narrative_intent": "Precisar tres usos razonables y cerrar la promesa con el modificador «leves».",
+      "shot_type": "visual_full_three_use_component",
+      "indispensable_visual_information": "Tres zonas/condiciones exactas y maduras: manos o codo con sequedad, piernas cansadas en reposo y masaje muscular suave de hombro o pantorrilla; nada de patología grave.",
+      "primary_resource": {
+        "asset_id": "comp_three_realistic_uses_01",
+        "type": "remotion_progressive_triptych",
+        "spec": "Tríptico con tres recursos únicos y verificados: foto macro de mano madura seca; clip corto de persona madura elevando piernas; clip corto de masaje suave de hombro/pantorrilla. Sin repetir estos recursos en el resto del video."
+      },
+      "internal_motion": "Foco al panel PIEL SECA en 52.92–53.12 s; rack focus al panel PIERNAS CANSADAS en 53.12–54.80 s; tercer panel se activa en 55.06 s y el calificativo LEVES aparece exactamente entre 56.20 y 56.60 s. Mantener los tres visibles al final.",
+      "editorial_text": "PIEL SECA · PIERNAS CANSADAS · MOLESTIA MUSCULAR LEVE",
+      "transition_in": "Transformación geométrica desde el frasco redondo a los tres marcos.",
+      "transition_out": "La iluminación cálida del tríptico cae a neutro durante la pausa de 56.60–56.90 s; luego corte al avatar.",
+      "retention_reason": "Un solo componente progresivo permite comprender la enumeración sin tres cortes de un segundo y subraya el límite clínico «leve».",
+      "mismatch_risk": "No mostrar várices severas, artritis, lesión aguda, hinchazón unilateral ni dolor intenso; la voz habla de cansancio y molestias leves."
+    },
+    {
+      "id": "FM16",
+      "start_sec": 56.9,
+      "end_sec": 62.02,
+      "start_frame": 1707,
+      "end_frame_exclusive": 1861,
+      "first_minute_visible_until_sec": 60.0,
+      "voice_exact": "Preparada de cualquier manera, en cambio, puede ser un frasco irritante que empeore exactamente aquello",
+      "narrative_intent": "Cerrar el minuto en tensión y abrir el loop de seguridad que se completa después de los 60 segundos.",
+      "shot_type": "avatar_full",
+      "indispensable_visual_information": "Dr. Valler a cámara en tono serio; el minuto termina con la palabra «irritante» en curso, sin ilustrar daño de forma sensacionalista.",
+      "primary_resource": {
+        "asset_id": "avatar_master",
+        "type": "avatar_video",
+        "spec": "Avatar full desde 56.90 s y continuidad obligatoria más allá de 60.00 s hasta terminar la unidad semántica."
+      },
+      "internal_motion": "Push-in lento de 101% a 104% iniciado en «de cualquier manera»; mantener mirada y labios limpios. En 59.20 s puede aparecer una banda baja muy discreta, fuera de manos y rostro.",
+      "editorial_text": "MAL PREPARADA = RIESGO DE IRRITACIÓN",
+      "transition_in": "Corte limpio después de la pausa de 0.30 s; cambio de temperatura de color de cálida a neutra.",
+      "transition_out": "No cortar en 60.00 s. Mantener el avatar hasta que concluya la advertencia completa en el siguiente bloque editorial.",
+      "retention_reason": "El contraste entre utilidad y riesgo crea una pregunta urgente —qué preparación evita irritar— que empuja al espectador más allá del primer minuto.",
+      "mismatch_risk": "No mostrar piel quemada, herida ni reacción extrema. La banda de advertencia no debe entrar antes de que la voz diga «frasco irritante» ni cubrir el gesto."
+    }
+  ],
+  "audit_checkpoints": [
+    {
+      "frame": 0,
+      "expected": "Avatar full, sin texto, logo, b-roll ni transición."
+    },
+    {
+      "frame": 15,
+      "expected": "Avatar full únicamente."
+    },
+    {
+      "frame": 45,
+      "expected": "Avatar full únicamente."
+    },
+    {
+      "frame": 60,
+      "expected": "Avatar full únicamente; todavía dentro de FM01."
+    },
+    {
+      "time_sec": 8.22,
+      "expected": "AGUA DE HUNGRÍA aparece al ser pronunciado, no antes."
+    },
+    {
+      "time_sec": 25.6,
+      "expected": "SU PROPIO HIJO se revela con la voz."
+    },
+    {
+      "time_sec": 29.18,
+      "expected": "La leyenda romántica queda marcada como NO COMPROBADA, no como FALSA."
+    },
+    {
+      "time_sec": 34.64,
+      "expected": "La pomada verde aparece solo cuando la voz la nombra."
+    },
+    {
+      "time_sec": 41.72,
+      "expected": "Toda la enumeración se interpreta como negación de promesas, nunca como demostración de eficacia."
+    },
+    {
+      "time_sec": 56.2,
+      "expected": "El modificador LEVE(S) queda claramente unido a las molestias musculares."
+    },
+    {
+      "time_sec": 60.0,
+      "expected": "Avatar full; la advertencia continúa sin corte artificial."
+    }
+  ],
+  "unique_resource_register": [
+    "gen_hist_isabel_vial_01",
+    "comp_europe_hungary_water_01",
+    "stock_unique_manuscript_page_turn_01",
+    "comp_legend_rosemary_age_proposal_01",
+    "comp_genealogy_mother_son_01",
+    "comp_legend_not_verified_01",
+    "stock_unique_antique_distillation_01",
+    "comp_distillate_not_green_salve_01",
+    "comp_four_claims_denied_01",
+    "stock_unique_balm_texture_spatula_01",
+    "comp_three_realistic_uses_01"
+  ]
+}

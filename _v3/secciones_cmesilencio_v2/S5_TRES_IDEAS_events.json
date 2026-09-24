@@ -1,0 +1,345 @@
+[
+  {
+    "id": "cme_v2_s5_ideas",
+    "ms": 506200,
+    "dur": 57,
+    "tipo": "ESCENA",
+    "dice": "Vamos a lo que si funciona",
+    "mov": "MovAgujero",
+    "escena": "MovAgujero",
+    "_manual": true,
+    "_sec": "S5_TRES_IDEAS",
+    "_anchor": {
+      "startWord": 1204,
+      "endWord": 1209,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e1",
+    "ms": 506200,
+    "dur": 1.8,
+    "tipo": "CLIP",
+    "dice": "Vamos a lo que sí funciona.",
+    "muestra": "Claudio en el patio trasero apoya el canto de la mano sobre la hoja de contrachapado cruda parada contra el muro bajo, con el generador rojo apagado a su espalda.",
+    "porque": "S4 cerró en el patio con los tres números y la luz volt; acá la luz baja a sky y la mano ya está tocando la primera de las tres ideas, la madera, antes de que se nombre.",
+    "nombre": "cms_s5_mano_hoja_cruda",
+    "foto_change": "he is in the back yard of his house beside the open frame red generator, resting the edge of one hand on a raw plywood sheet standing on end against the low block wall, the neighbour's lit yellow window visible over the wall, cold grey blue late afternoon light coming from the left, medium shot, he fills the middle of the frame, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the back yard stays exactly the same for the whole shot, same low block wall, same lit yellow window behind it, same red framed generator on the stained concrete, same raw plywood sheet on end, nothing behind him changes or moves.",
+      "action": "Action: he slides his hand once down the edge of the plywood sheet and settles it there, his lips stay closed, one single continuous action, his hand stays in contact with the plywood the whole time.",
+      "camera": "Camera: the framing never changes, medium shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "palma sobre madera cruda + zumbido lejano del patio",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1204,
+      "endWord": 1209,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e3",
+    "ms": 512920,
+    "dur": 3.4,
+    "tipo": "TEXTO",
+    "dice": "Idea 1.",
+    "muestra": "Rótulo IDEA 1 · MANDA EL PESO entrando por la izquierda a la altura de la placa de contrachapado.",
+    "porque": "Las tres ideas son el esqueleto de la sección: cada una tiene que quedar numerada en pantalla o a los diez minutos el espectador no sabe en cuál está.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "IDEA 1 · MANDA EL PESO",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1219,
+      "endWord": 1220,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e4",
+    "ms": 514640,
+    "dur": 3.6,
+    "tipo": "ICONO",
+    "dice": "El ruido lo detiene el peso, no la esponja. Lo que detiene el sonido es la masa.",
+    "muestra": "Una pesa de hierro en PNG sin fondo se apoya sobre la placa de contrachapado y la hunde un dedo, con el rótulo MASA, NO ESPONJA al lado.",
+    "porque": "La palabra masa es abstracta; el ícono la vuelve un objeto que pesa sobre la placa que ya está en cuadro, en vez de flotar por su cuenta.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_pesa.png",
+    "texto": "MASA, NO ESPONJA",
+    "sfx": "peso que se asienta",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1221,
+      "endWord": 1237,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s5_mass",
+    "ms": 521160,
+    "dur": 5.6,
+    "tipo": "CLIP",
+    "dice": "Una hoja de madera contrachapada de 12 milimetros",
+    "nombre": "cms_s5_mano_hoja_cruda",
+    "_manual": true,
+    "_sec": "S5_TRES_IDEAS",
+    "_anchor": {
+      "startWord": 1238,
+      "endWord": 1245,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e6",
+    "ms": 521160,
+    "dur": 5,
+    "tipo": "TEXTO",
+    "dice": "Una hoja de madera contrachapada de 12 milímetros, la que en tu país le dicen triplay o terciada",
+    "muestra": "Rótulo 12 mm DE CONTRACHAPADO clavado al canto laminado que la cámara está mirando.",
+    "porque": "El número tiene que salir pegado al canto justo cuando el canto se ve, no antes; y queda cinco segundos porque abajo van tres nombres de país distintos para la misma madera.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "12 mm DE CONTRACHAPADO\n(triplay · terciada)",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1238,
+      "endWord": 1255,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e7",
+    "ms": 528340,
+    "dur": 5,
+    "tipo": "TEXTO",
+    "dice": "detiene más ruido que 10 centímetros de espuma.",
+    "muestra": "Rótulo GANA A 10 cm DE ESPUMA apareciendo sobre el bloque de espuma hinchado, del lado que sube.",
+    "porque": "El segundo término de la comparación entra recién cuando la espuma terminó de crecer: si los dos rótulos salen juntos, la desproporción se lee como empate.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "GANA A 10 cm DE ESPUMA",
+    "sfx": "tick suave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1256,
+      "endWord": 1263,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e9",
+    "ms": 534160,
+    "dur": 3.6,
+    "tipo": "ICONO",
+    "dice": "forró la caja entera de espuma y no bajó nada",
+    "muestra": "Un cuadrado de espuma gris en PNG sin fondo pegado a la cara interna de la caja, con el rótulo FORRÓ TODO DE ESPUMA y una flecha corta que no baja.",
+    "porque": "El error necesita una etiqueta que se pueda señalar; el ícono se apoya en la pared que se está forrando en ese instante, no en el aire.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_espuma.png",
+    "texto": "FORRÓ TODO DE ESPUMA\n78 dB · NO BAJÓ NADA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1271,
+      "endWord": 1280,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e10",
+    "ms": 539640,
+    "dur": 5.2,
+    "tipo": "TEXTO",
+    "dice": "Puso toallas donde tenía que poner pared.",
+    "muestra": "Rótulo TOALLAS DONDE IBA LA PARED entrando justo cuando la espuma termina de volverse toalla colgada.",
+    "porque": "Es la frase-sentencia de la idea 1 y la bisagra hacia la idea 2: se queda más de cinco segundos porque el espectador tiene que leerla mientras mira la toalla, no después.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "TOALLAS DONDE IBA LA PARED",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1286,
+      "endWord": 1292,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e11",
+    "ms": 542020,
+    "dur": 3,
+    "tipo": "TEXTO",
+    "dice": "Idea 2.",
+    "muestra": "Rótulo IDEA 2 entrando en el mismo lugar y con el mismo movimiento que entró IDEA 1.",
+    "porque": "Las tres ideas se numeran igual y en el mismo sitio de la pantalla: la repetición es lo que hace que se recuerden como lista.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "IDEA 2",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1293,
+      "endWord": 1294,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e12",
+    "ms": 543860,
+    "dur": 5,
+    "tipo": "TEXTO",
+    "dice": "El absorbente no es la pared, es la toalla.",
+    "muestra": "Rótulo EL ABSORBENTE ES LA TOALLA colgado de la misma toalla que quedó del acto anterior.",
+    "porque": "La toalla ya está en cuadro por la metamorfosis del acto 3: el rótulo la reencuadra de error a herramienta, que es exactamente el giro de la frase.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "EL ABSORBENTE ES LA TOALLA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1295,
+      "endWord": 1302,
+      "coverage": 0.889
+    }
+  },
+  {
+    "id": "s5_e18",
+    "ms": 559100,
+    "dur": 3.4,
+    "tipo": "ICONO",
+    "dice": "La lana absorbe esos rebotes.",
+    "muestra": "El jirón de lana en PNG sin fondo del lado derecho del cuadro, comiéndose un anillo, con el rótulo ABSORBE LOS REBOTES.",
+    "porque": "Cada uno de los dos trabajos necesita su etiqueta en su mitad del cuadro; si comparten rótulo se vuelven a mezclar, que es justo el error que la sección viene a arreglar.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_lana.png",
+    "texto": "ABSORBE LOS REBOTES",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1333,
+      "endWord": 1337,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e19",
+    "ms": 562680,
+    "dur": 3,
+    "tipo": "TEXTO",
+    "dice": "La masa impide que el sonido atraviese la pared.",
+    "muestra": "Rótulo MASA: NO ATRAVIESA pegado a la pared de contrachapado, del lado izquierdo.",
+    "porque": "Es la mitad izquierda del cuadro puesta en palabras, en el mismo instante en que los anillos se estrellan ahí.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "MASA: NO ATRAVIESA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1338,
+      "endWord": 1346,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s5_e21",
+    "ms": 580780,
+    "dur": 2.6,
+    "tipo": "TEXTO",
+    "dice": "Idea 3. Y esta decide si tu caja sirve o no.",
+    "muestra": "Rótulo IDEA 3 en el mismo lugar de las otras dos, ahora sobre el negro que se está cerrando alrededor del agujero.",
+    "porque": "La numeración se mantiene idéntica aunque el fondo cambie de la caja al negro: es lo único de la pantalla que no se mueve en toda la sección.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "IDEA 3",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1382,
+      "endWord": 1392,
+      "coverage": 0.909
+    }
+  },
+  {
+    "id": "s5_e22",
+    "ms": 581800,
+    "dur": 4.5,
+    "tipo": "T2V",
+    "dice": "Y esta decide si tu caja sirve o no. Manda el agujero.",
+    "muestra": "Macro del borde del agujero de moneda visto desde adentro de la madera: oscuridad y sólo el filo circular encendido en verde-voltio, con polvo de aserrín flotando.",
+    "porque": "El movimiento salió exactamente acá y este plano lo continúa sin cortar: mismo negro, mismo filo volt, misma escala. Es el descanso que necesita el ojo antes de que entre el agua.",
+    "nombre": "cms_s5_borde_agujero_volt",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "extreme macro shot from inside a thick plywood board looking out through a round coin sized hole, total darkness all around, only the circular rim of the hole is lit with a hard green electric edge light, fine sawdust particles drifting slowly in the beam, splintered wood fibres on the rim, shallow depth of field, slow almost imperceptible push in, cinematic, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "aire que silba fino por un hueco",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1384,
+      "endWord": 1396,
+      "coverage": 0.833
+    }
+  },
+  {
+    "id": "s5_e24",
+    "ms": 586360,
+    "dur": 2.4,
+    "tipo": "T2V",
+    "dice": "El sonido se comporta como el agua.",
+    "muestra": "Macro del mismo agujero, ahora con un hilo de agua entrando a presión y abriéndose en abanico contra la oscuridad.",
+    "porque": "La comparación del guion se ejecuta en el mismo encuadre que ya venía: no cambia el agujero, cambia lo que pasa por él. Es la traducción literal de sonido a agua.",
+    "nombre": "cms_s5_agua_hilo_agujero",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "extreme macro shot of a round coin sized hole in a thick plywood board, a hard jet of water forcing its way through the hole and fanning out into the dark interior, droplets catching a cold green edge light on the rim, high speed look, water spray suspended, shallow depth of field, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "chorro fino a presión",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1396,
+      "endWord": 1402,
+      "coverage": 1
+    }
+  }
+]

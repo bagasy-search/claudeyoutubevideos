@@ -27,7 +27,7 @@ if (!slug) {
 }
 const SRC = path.join("public", process.argv[3] || `${slug}_opt.mp4`);
 const WINDOWS = path.join("public", `avatar_windows_${slug}.json`);
-const OUTDIR = path.join("public", "avatar_clips");
+const OUTDIR = path.join("public", "avatar_clips", slug);
 
 // ffmpeg: usa el binario del compositor de Remotion en Windows; si no, 'ffmpeg' del PATH
 // (en el VPS Linux estará en el PATH).

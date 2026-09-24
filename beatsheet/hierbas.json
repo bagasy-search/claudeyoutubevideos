@@ -1,0 +1,1843 @@
+{
+ "video": "hierbas",
+ "avatar": "hierbas_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "ov_highlightsweep_0",
+   "start": 0,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Un puñado de hierbas de tu huerta",
+   "highlight": "no valen ni un dólar",
+   "post": ".",
+   "note": "y le ganan a 11 frascos del vivero juntos"
+  },
+  {
+   "id": "hierbas_s_02",
+   "start": 7.5,
+   "kind": "raw",
+   "src": "img/hierbas_s_02.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "hierbas_s_03",
+   "start": 10.3,
+   "kind": "raw",
+   "src": "broll/hierbas_s_03.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.02
+  },
+  {
+   "id": "ov_duelcolumns_10",
+   "start": 10.3,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Lo que te vende el vivero",
+   "leftName": "11 frascos distintos",
+   "rightName": "1 puñado de hierbas",
+   "rows": [
+    {
+     "attr": "Uno para el pulgón",
+     "leftWins": false
+    },
+    {
+     "attr": "Uno para la mosca blanca",
+     "leftWins": false
+    },
+    {
+     "attr": "Uno para las hormigas",
+     "leftWins": false
+    },
+    {
+     "attr": "Todos cuestan; las hierbas crecen solas",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "hierbas_s_04",
+   "start": 13.02,
+   "kind": "raw",
+   "src": "broll/hierbas_s_04.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.22
+  },
+  {
+   "id": "hierbas_s_05",
+   "start": 15.94,
+   "kind": "raw",
+   "src": "broll/hierbas_s_05.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.2
+  },
+  {
+   "id": "hierbas_s_06",
+   "start": 19.84,
+   "kind": "raw",
+   "src": "img/hierbas_s_06.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.3
+  },
+  {
+   "id": "ov_highlightsweep_21",
+   "start": 21,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Para el final vas a saber",
+   "highlight": "el error que hace volver la plaga peor",
+   "post": ".",
+   "note": "casi todos lo cometen"
+  },
+  {
+   "id": "hierbas_s_09",
+   "start": 38.24,
+   "kind": "raw",
+   "src": "img/hierbas_s_09.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "hierbas_s_11",
+   "start": 45.18,
+   "kind": "raw",
+   "src": "broll/hierbas_s_11.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.98
+  },
+  {
+   "id": "hierbas_s_12",
+   "start": 48.86,
+   "kind": "raw",
+   "src": "broll/hierbas_s_12.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.34
+  },
+  {
+   "id": "ov_highlightsweep_49",
+   "start": 48.86,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Ese olor no es casualidad,",
+   "highlight": "es un arma",
+   "post": ".",
+   "note": "la defensa que la planta afiló en millones de años"
+  },
+  {
+   "id": "hierbas_s_13",
+   "start": 53.9,
+   "kind": "raw",
+   "src": "broll/hierbas_s_13.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.88
+  },
+  {
+   "id": "hierbas_s_14",
+   "start": 57.48,
+   "kind": "raw",
+   "src": "broll/hierbas_s_14.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.92
+  },
+  {
+   "id": "hierbas_s_15",
+   "start": 65.1,
+   "kind": "raw",
+   "src": "broll/hierbas_s_15.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.52
+  },
+  {
+   "id": "hierbas_s_16",
+   "start": 70.32,
+   "kind": "raw",
+   "src": "broll/hierbas_s_16.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.8
+  },
+  {
+   "id": "hierbas_s_17",
+   "start": 73.82,
+   "kind": "raw",
+   "src": "broll/hierbas_s_17.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.14
+  },
+  {
+   "id": "hierbas_s_18",
+   "start": 79.66,
+   "kind": "raw",
+   "src": "broll/hierbas_s_18.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.18
+  },
+  {
+   "id": "hierbas_s_19",
+   "start": 85.54,
+   "kind": "raw",
+   "src": "broll/hierbas_s_19.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.06
+  },
+  {
+   "id": "hierbas_s_20",
+   "start": 88.3,
+   "kind": "raw",
+   "src": "img/hierbas_s_20.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.04
+  },
+  {
+   "id": "hierbas_s_21",
+   "start": 96.04,
+   "kind": "raw",
+   "src": "broll/hierbas_s_21.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.58
+  },
+  {
+   "id": "hierbas_s_22",
+   "start": 99.32,
+   "kind": "raw",
+   "src": "broll/hierbas_s_22.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.24
+  },
+  {
+   "id": "hierbas_s_23",
+   "start": 105.26,
+   "kind": "raw",
+   "src": "broll/hierbas_s_23.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.2
+  },
+  {
+   "id": "ov_pullquote_122",
+   "start": 122.18,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Dejamos de usar las hierbas porque alguien encontró cómo cobrarnos por algo que crece solo."
+  },
+  {
+   "id": "hierbas_s_28",
+   "start": 127.62,
+   "kind": "raw",
+   "src": "img/hierbas_s_28.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.88
+  },
+  {
+   "id": "hierbas_s_29",
+   "start": 131.2,
+   "kind": "raw",
+   "src": "broll/hierbas_s_29.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.3
+  },
+  {
+   "id": "hierbas_s_34",
+   "start": 148.3,
+   "kind": "raw",
+   "src": "broll/hierbas_s_34.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.28
+  },
+  {
+   "id": "hierbas_s_35",
+   "start": 151.28,
+   "kind": "raw",
+   "src": "broll/hierbas_s_35.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4
+  },
+  {
+   "id": "hierbas_s_36",
+   "start": 154.98,
+   "kind": "raw",
+   "src": "broll/hierbas_s_36.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.04
+  },
+  {
+   "id": "ov_beforeafter_155",
+   "start": 154.98,
+   "dur": 5.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Lo que dejó el frasco caro",
+   "beforeLabel": "3 días · sin plaga",
+   "afterLabel": "3 semanas · vuelve peor",
+   "caption": "el veneno mató también a las mariquitas y las abejas: la plaga volvió sin enemigos"
+  },
+  {
+   "id": "hierbas_s_37",
+   "start": 157.72,
+   "kind": "raw",
+   "src": "broll/hierbas_s_37.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.92
+  },
+  {
+   "id": "hierbas_s_38",
+   "start": 160.34,
+   "kind": "raw",
+   "src": "broll/hierbas_s_38.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.54
+  },
+  {
+   "id": "hierbas_s_39",
+   "start": 163.58,
+   "kind": "raw",
+   "src": "broll/hierbas_s_39.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.42
+  },
+  {
+   "id": "hierbas_s_40",
+   "start": 166.7,
+   "kind": "raw",
+   "src": "broll/hierbas_s_40.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.06
+  },
+  {
+   "id": "hierbas_s_41",
+   "start": 169.46,
+   "kind": "raw",
+   "src": "broll/hierbas_s_41.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.44
+  },
+  {
+   "id": "hierbas_s_42",
+   "start": 175.6,
+   "kind": "raw",
+   "src": "broll/hierbas_s_42.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.86
+  },
+  {
+   "id": "hierbas_s_43",
+   "start": 182.16,
+   "kind": "raw",
+   "src": "img/hierbas_s_43.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.44
+  },
+  {
+   "id": "hierbas_s_44",
+   "start": 188.3,
+   "kind": "raw",
+   "src": "img/hierbas_s_44.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.46
+  },
+  {
+   "id": "hierbas_s_50",
+   "start": 211.64,
+   "kind": "raw",
+   "src": "broll/hierbas_s_50.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.28
+  },
+  {
+   "id": "hierbas_s_51",
+   "start": 214.62,
+   "kind": "raw",
+   "src": "broll/hierbas_s_51.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.48
+  },
+  {
+   "id": "hierbas_s_52",
+   "start": 217.8,
+   "kind": "raw",
+   "src": "broll/hierbas_s_52.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.88
+  },
+  {
+   "id": "hierbas_s_53",
+   "start": 221.38,
+   "kind": "raw",
+   "src": "broll/hierbas_s_53.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.5
+  },
+  {
+   "id": "hierbas_s_54",
+   "start": 224.58,
+   "kind": "raw",
+   "src": "broll/hierbas_s_54.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.76
+  },
+  {
+   "id": "hierbas_s_55",
+   "start": 228.04,
+   "kind": "raw",
+   "src": "broll/hierbas_s_55.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.72
+  },
+  {
+   "id": "hierbas_s_56",
+   "start": 231.46,
+   "kind": "raw",
+   "src": "broll/hierbas_s_56.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.86
+  },
+  {
+   "id": "hierbas_s_57",
+   "start": 238.02,
+   "kind": "raw",
+   "src": "broll/hierbas_s_57.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.68
+  },
+  {
+   "id": "hierbas_s_59",
+   "start": 249.74,
+   "kind": "raw",
+   "src": "broll/hierbas_s_59.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.82
+  },
+  {
+   "id": "ov_mythtruth_250",
+   "start": 249.74,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Una sola matita de albahaca protege toda la huerta",
+   "truth": "El olor no viaja ni medio metro: hay que REPARTIR muchas hierbas entre los cultivos, formando una red"
+  },
+  {
+   "id": "hierbas_s_60",
+   "start": 255.26,
+   "kind": "raw",
+   "src": "broll/hierbas_s_60.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.16
+  },
+  {
+   "id": "hierbas_s_61",
+   "start": 261.12,
+   "kind": "raw",
+   "src": "broll/hierbas_s_61.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.38
+  },
+  {
+   "id": "hierbas_s_62",
+   "start": 266.2,
+   "kind": "raw",
+   "src": "broll/hierbas_s_62.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.58
+  },
+  {
+   "id": "hierbas_s_63",
+   "start": 269.48,
+   "kind": "raw",
+   "src": "broll/hierbas_s_63.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.46
+  },
+  {
+   "id": "hierbas_s_64",
+   "start": 274.64,
+   "kind": "raw",
+   "src": "broll/hierbas_s_64.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.24
+  },
+  {
+   "id": "ov_highlightsweep_294",
+   "start": 294.2,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "La reina de la huerta:",
+   "highlight": "la albahaca",
+   "post": ".",
+   "note": "una mata cada 4 tomates y cambia las hojas de abajo"
+  },
+  {
+   "id": "hierbas_s_70",
+   "start": 297.5,
+   "kind": "raw",
+   "src": "broll/hierbas_s_70.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.24
+  },
+  {
+   "id": "hierbas_s_71",
+   "start": 300.44,
+   "kind": "raw",
+   "src": "broll/hierbas_s_71.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.02
+  },
+  {
+   "id": "hierbas_s_72",
+   "start": 305.16,
+   "kind": "raw",
+   "src": "broll/hierbas_s_72.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.86
+  },
+  {
+   "id": "hierbas_s_73",
+   "start": 311.72,
+   "kind": "raw",
+   "src": "broll/hierbas_s_73.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.96
+  },
+  {
+   "id": "hierbas_s_74",
+   "start": 315.38,
+   "kind": "raw",
+   "src": "broll/hierbas_s_74.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.52
+  },
+  {
+   "id": "hierbas_s_75",
+   "start": 321.6,
+   "kind": "raw",
+   "src": "broll/hierbas_s_75.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.94
+  },
+  {
+   "id": "ov_bigstatreveal_324",
+   "start": 323.5,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Semillas de albahaca",
+   "value": 2,
+   "suffix": " dólares",
+   "support": "te dan 20 o 30 plantas — el frasco de veneno cuesta 40 y se termina"
+  },
+  {
+   "id": "hierbas_s_76",
+   "start": 329.24,
+   "kind": "raw",
+   "src": "broll/hierbas_s_76.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.86
+  },
+  {
+   "id": "hierbas_s_77",
+   "start": 332.8,
+   "kind": "raw",
+   "src": "broll/hierbas_s_77.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.5
+  },
+  {
+   "id": "hierbas_s_78",
+   "start": 336,
+   "kind": "raw",
+   "src": "broll/hierbas_s_78.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.02
+  },
+  {
+   "id": "hierbas_s_79",
+   "start": 340.72,
+   "kind": "raw",
+   "src": "broll/hierbas_s_79.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.92
+  },
+  {
+   "id": "hierbas_s_80",
+   "start": 344.34,
+   "kind": "raw",
+   "src": "broll/hierbas_s_80.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.18
+  },
+  {
+   "id": "hierbas_s_81",
+   "start": 347.22,
+   "kind": "raw",
+   "src": "broll/hierbas_s_81.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.58
+  },
+  {
+   "id": "hierbas_s_82",
+   "start": 351.5,
+   "kind": "raw",
+   "src": "broll/hierbas_s_82.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.86
+  },
+  {
+   "id": "hierbas_s_83",
+   "start": 354.06,
+   "kind": "raw",
+   "src": "broll/hierbas_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.24
+  },
+  {
+   "id": "hierbas_s_84",
+   "start": 359,
+   "kind": "raw",
+   "src": "broll/hierbas_s_84.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.5
+  },
+  {
+   "id": "hierbas_s_85",
+   "start": 367.5,
+   "kind": "raw",
+   "src": "broll/hierbas_s_85.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.7
+  },
+  {
+   "id": "hierbas_s_90",
+   "start": 392.54,
+   "kind": "raw",
+   "src": "broll/hierbas_s_90.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.38
+  },
+  {
+   "id": "hierbas_s_91",
+   "start": 396.62,
+   "kind": "raw",
+   "src": "broll/hierbas_s_91.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.46
+  },
+  {
+   "id": "hierbas_s_92",
+   "start": 400.78,
+   "kind": "raw",
+   "src": "broll/hierbas_s_92.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.46
+  },
+  {
+   "id": "hierbas_s_93",
+   "start": 404.94,
+   "kind": "raw",
+   "src": "broll/hierbas_s_93.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.74
+  },
+  {
+   "id": "hierbas_s_94",
+   "start": 408.38,
+   "kind": "raw",
+   "src": "broll/hierbas_s_94.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.44
+  },
+  {
+   "id": "hierbas_s_95",
+   "start": 414.52,
+   "kind": "raw",
+   "src": "broll/hierbas_s_95.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.24
+  },
+  {
+   "id": "hierbas_s_96",
+   "start": 417.46,
+   "kind": "raw",
+   "src": "broll/hierbas_s_96.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.98
+  },
+  {
+   "id": "hierbas_s_97",
+   "start": 421.14,
+   "kind": "raw",
+   "src": "broll/hierbas_s_97.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.5
+  },
+  {
+   "id": "hierbas_s_98",
+   "start": 424.34,
+   "kind": "raw",
+   "src": "broll/hierbas_s_98.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.98
+  },
+  {
+   "id": "hierbas_s_99",
+   "start": 427.02,
+   "kind": "raw",
+   "src": "broll/hierbas_s_99.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.64
+  },
+  {
+   "id": "hierbas_s_100",
+   "start": 434.36,
+   "kind": "raw",
+   "src": "broll/hierbas_s_100.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.34
+  },
+  {
+   "id": "hierbas_s_101",
+   "start": 438.4,
+   "kind": "raw",
+   "src": "broll/hierbas_s_101.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.34
+  },
+  {
+   "id": "hierbas_s_102",
+   "start": 444.44,
+   "kind": "raw",
+   "src": "broll/hierbas_s_102.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.18
+  },
+  {
+   "id": "hierbas_s_103",
+   "start": 450.32,
+   "kind": "raw",
+   "src": "broll/hierbas_s_103.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.76
+  },
+  {
+   "id": "hierbas_s_104",
+   "start": 453.78,
+   "kind": "raw",
+   "src": "broll/hierbas_s_104.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.08
+  },
+  {
+   "id": "hierbas_s_105",
+   "start": 456.56,
+   "kind": "raw",
+   "src": "broll/hierbas_s_105.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.94
+  },
+  {
+   "id": "hierbas_s_106",
+   "start": 459.2,
+   "kind": "raw",
+   "src": "broll/hierbas_s_106.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.36
+  },
+  {
+   "id": "hierbas_s_107",
+   "start": 462.26,
+   "kind": "raw",
+   "src": "broll/hierbas_s_107.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.78
+  },
+  {
+   "id": "hierbas_s_108",
+   "start": 465.74,
+   "kind": "raw",
+   "src": "broll/hierbas_s_108.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.48
+  },
+  {
+   "id": "hierbas_s_109",
+   "start": 470.92,
+   "kind": "raw",
+   "src": "broll/hierbas_s_109.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.56
+  },
+  {
+   "id": "hierbas_s_110",
+   "start": 475.18,
+   "kind": "raw",
+   "src": "broll/hierbas_s_110.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.36
+  },
+  {
+   "id": "hierbas_s_111",
+   "start": 481.24,
+   "kind": "raw",
+   "src": "broll/hierbas_s_111.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.66
+  },
+  {
+   "id": "hierbas_s_112",
+   "start": 486.6,
+   "kind": "raw",
+   "src": "broll/hierbas_s_112.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.24
+  },
+  {
+   "id": "hierbas_s_113",
+   "start": 489.54,
+   "kind": "raw",
+   "src": "broll/hierbas_s_113.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.58
+  },
+  {
+   "id": "hierbas_s_114",
+   "start": 494.82,
+   "kind": "raw",
+   "src": "broll/hierbas_s_114.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.64
+  },
+  {
+   "id": "hierbas_s_115",
+   "start": 498.16,
+   "kind": "raw",
+   "src": "broll/hierbas_s_115.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.1
+  },
+  {
+   "id": "hierbas_s_116",
+   "start": 500.96,
+   "kind": "raw",
+   "src": "broll/hierbas_s_116.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.94
+  },
+  {
+   "id": "hierbas_s_117",
+   "start": 504.6,
+   "kind": "raw",
+   "src": "broll/hierbas_s_117.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.8
+  },
+  {
+   "id": "hierbas_s_118",
+   "start": 508.1,
+   "kind": "raw",
+   "src": "broll/hierbas_s_118.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.54
+  },
+  {
+   "id": "hierbas_s_119",
+   "start": 511.34,
+   "kind": "raw",
+   "src": "broll/hierbas_s_119.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.94
+  },
+  {
+   "id": "ov_checklistreveal_514",
+   "start": 513.94,
+   "dur": 5.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "La capuchina: planta-trampa",
+   "items": [
+    "Al pulgón le ENCANTA la capuchina",
+    "Plantala lejos, en una esquina",
+    "Se come esa y deja en paz tus tomates"
+   ],
+   "stamp": "TRAMPA"
+  },
+  {
+   "id": "hierbas_s_129",
+   "start": 557.47,
+   "kind": "raw",
+   "src": "broll/hierbas_s_129.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.44
+  },
+  {
+   "id": "hierbas_s_130",
+   "start": 562.61,
+   "kind": "raw",
+   "src": "broll/hierbas_s_130.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.4
+  },
+  {
+   "id": "hierbas_s_133",
+   "start": 578.15,
+   "kind": "raw",
+   "src": "img/hierbas_s_133.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "hierbas_s_138",
+   "start": 595.37,
+   "kind": "raw",
+   "src": "broll/hierbas_s_138.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.06
+  },
+  {
+   "id": "hierbas_s_139",
+   "start": 598.13,
+   "kind": "raw",
+   "src": "broll/hierbas_s_139.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.5
+  },
+  {
+   "id": "hierbas_s_140",
+   "start": 606.63,
+   "kind": "raw",
+   "src": "broll/hierbas_s_140.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.92
+  },
+  {
+   "id": "hierbas_s_141",
+   "start": 612.25,
+   "kind": "raw",
+   "src": "broll/hierbas_s_141.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.72
+  },
+  {
+   "id": "hierbas_s_142",
+   "start": 614.67,
+   "kind": "raw",
+   "src": "broll/hierbas_s_142.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3
+  },
+  {
+   "id": "hierbas_s_143",
+   "start": 617.37,
+   "kind": "raw",
+   "src": "broll/hierbas_s_143.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.16
+  },
+  {
+   "id": "hierbas_s_144",
+   "start": 622.23,
+   "kind": "raw",
+   "src": "broll/hierbas_s_144.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.62
+  },
+  {
+   "id": "hierbas_s_145",
+   "start": 627.55,
+   "kind": "raw",
+   "src": "img/hierbas_s_145.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "hierbas_s_146",
+   "start": 630.49,
+   "kind": "raw",
+   "src": "broll/hierbas_s_146.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.94
+  },
+  {
+   "id": "hierbas_s_147",
+   "start": 638.13,
+   "kind": "raw",
+   "src": "broll/hierbas_s_147.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.3
+  },
+  {
+   "id": "hierbas_s_148",
+   "start": 642.13,
+   "kind": "raw",
+   "src": "img/hierbas_s_148.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "hierbas_s_149",
+   "start": 644.89,
+   "kind": "raw",
+   "src": "img/hierbas_s_149.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.88
+  },
+  {
+   "id": "hierbas_s_150",
+   "start": 649.47,
+   "kind": "raw",
+   "src": "img/hierbas_s_150.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "hierbas_s_151",
+   "start": 652.85,
+   "kind": "raw",
+   "src": "img/hierbas_s_151.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.5
+  },
+  {
+   "id": "hierbas_s_152",
+   "start": 659.05,
+   "kind": "raw",
+   "src": "img/hierbas_s_152.webp",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "hierbas_s_153",
+   "start": 661.83,
+   "kind": "raw",
+   "src": "img/hierbas_s_153.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.08
+  },
+  {
+   "id": "hierbas_s_156",
+   "start": 676.59,
+   "kind": "raw",
+   "src": "img/hierbas_s_156.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.94
+  },
+  {
+   "id": "hierbas_s_161",
+   "start": 701.95,
+   "kind": "raw",
+   "src": "img/hierbas_s_161.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.74
+  },
+  {
+   "id": "hierbas_s_166",
+   "start": 729.25,
+   "kind": "raw",
+   "src": "img/hierbas_s_166.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.7
+  },
+  {
+   "id": "hierbas_s_167",
+   "start": 733.65,
+   "kind": "raw",
+   "src": "img/hierbas_s_167.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96
+  },
+  {
+   "id": "ov_numberedsteps_734",
+   "start": 733.65,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "El rociado de centavos",
+   "title": "Infusión de hierbas",
+   "steps": [
+    {
+     "title": "Un puñado de hierbas fuertes picadas",
+     "sub": "ajenjo, menta, romero, ruda"
+    },
+    {
+     "title": "Agua bien caliente y reposar 24 horas",
+     "sub": "como un té gigante, tapado"
+    },
+    {
+     "title": "Colás y sumás 1 cucharada de jabón neutro",
+     "sub": "para que se pegue a la hoja"
+    },
+    {
+     "title": "Rociás por debajo de las hojas",
+     "sub": "ahí se esconde el pulgón"
+    }
+   ]
+  },
+  {
+   "id": "hierbas_s_168",
+   "start": 737.31,
+   "kind": "raw",
+   "src": "img/hierbas_s_168.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "hierbas_s_169",
+   "start": 740.75,
+   "kind": "raw",
+   "src": "img/hierbas_s_169.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.36
+  },
+  {
+   "id": "hierbas_s_170",
+   "start": 745.81,
+   "kind": "raw",
+   "src": "img/hierbas_s_170.webp",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.56
+  },
+  {
+   "id": "hierbas_s_171",
+   "start": 751.07,
+   "kind": "raw",
+   "src": "img/hierbas_s_171.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "hierbas_s_174",
+   "start": 766.27,
+   "kind": "raw",
+   "src": "img/hierbas_s_174.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.36
+  },
+  {
+   "id": "hierbas_s_175",
+   "start": 772.33,
+   "kind": "raw",
+   "src": "img/hierbas_s_175.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.66
+  },
+  {
+   "id": "ov_checklistreveal_788",
+   "start": 788.31,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Seguridad — en serio",
+   "items": [
+    "La ruda es fototóxica: usá guantes",
+    "Embarazadas: NO manipular ruda",
+    "Probá el rociado en 2 hojas y esperá un día"
+   ],
+   "stamp": "CUIDADO"
+  },
+  {
+   "id": "hierbas_s_183",
+   "start": 814.13,
+   "kind": "raw",
+   "src": "img/hierbas_s_183.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "ov_checklistreveal_823",
+   "start": 823.43,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Lo que esto NO hace",
+   "items": [
+    "Repelen y reducen — no exterminan",
+    "No frenan solas una plaga desatada",
+    "Primero sacá a mano las hojas más infestadas"
+   ],
+   "stamp": "SIN MENTIRAS"
+  },
+  {
+   "id": "hierbas_s_187",
+   "start": 834.01,
+   "kind": "raw",
+   "src": "img/hierbas_s_187.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.44
+  },
+  {
+   "id": "hierbas_s_188",
+   "start": 838.15,
+   "kind": "raw",
+   "src": "img/hierbas_s_188.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.32
+  },
+  {
+   "id": "hierbas_s_189",
+   "start": 843.17,
+   "kind": "raw",
+   "src": "img/hierbas_s_189.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.32
+  },
+  {
+   "id": "hierbas_s_192",
+   "start": 857.99,
+   "kind": "raw",
+   "src": "img/hierbas_s_192.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.54
+  },
+  {
+   "id": "ov_mythtruth_875",
+   "start": 874.75,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Para ganarle a la plaga, hay que fumigar y matarla",
+   "truth": "El veneno mata también a tus depredadores — mariquitas, crisopas, avispas — y la plaga vuelve SIN enemigos, peor"
+  },
+  {
+   "id": "hierbas_s_197",
+   "start": 877.13,
+   "kind": "raw",
+   "src": "img/hierbas_s_197.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "hierbas_s_198",
+   "start": 879.99,
+   "kind": "raw",
+   "src": "broll/hierbas_s_198.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.56
+  },
+  {
+   "id": "hierbas_s_199",
+   "start": 884.25,
+   "kind": "raw",
+   "src": "img/hierbas_s_199.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.36
+  },
+  {
+   "id": "hierbas_s_200",
+   "start": 888.31,
+   "kind": "raw",
+   "src": "broll/hierbas_s_200.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.2
+  },
+  {
+   "id": "ov_flowsteps_895",
+   "start": 895.45,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "title": "Por qué la plaga vuelve PEOR",
+   "nodes": [
+    {
+     "label": "Fumigás",
+     "sub": "muere la plaga Y el ejército de bichos buenos"
+    },
+    {
+     "label": "La plaga vuelve en 3 semanas",
+     "sub": "se reproduce rápido; el ejército tarda meses"
+    },
+    {
+     "label": "Explota sin enemigos",
+     "sub": "vuelve a una huerta vacía que no la frena"
+    }
+   ]
+  },
+  {
+   "id": "hierbas_s_202",
+   "start": 900.29,
+   "kind": "raw",
+   "src": "img/hierbas_s_202.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "hierbas_s_203",
+   "start": 903.49,
+   "kind": "raw",
+   "src": "img/hierbas_s_203.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "hierbas_s_204",
+   "start": 907.33,
+   "kind": "raw",
+   "src": "img/hierbas_s_204.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.48
+  },
+  {
+   "id": "hierbas_s_205",
+   "start": 912.51,
+   "kind": "raw",
+   "src": "img/hierbas_s_205.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.44
+  },
+  {
+   "id": "hierbas_s_206",
+   "start": 917.65,
+   "kind": "raw",
+   "src": "img/hierbas_s_206.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "hierbas_s_207",
+   "start": 921.53,
+   "kind": "raw",
+   "src": "img/hierbas_s_207.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.86
+  },
+  {
+   "id": "hierbas_s_208",
+   "start": 926.09,
+   "kind": "raw",
+   "src": "img/hierbas_s_208.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.32
+  },
+  {
+   "id": "hierbas_s_209",
+   "start": 933.11,
+   "kind": "raw",
+   "src": "broll/hierbas_s_209.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.3
+  },
+  {
+   "id": "hierbas_s_210",
+   "start": 941.11,
+   "kind": "raw",
+   "src": "broll/hierbas_s_210.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.24
+  },
+  {
+   "id": "hierbas_s_211",
+   "start": 944.05,
+   "kind": "raw",
+   "src": "img/hierbas_s_211.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.58
+  },
+  {
+   "id": "hierbas_s_213",
+   "start": 955.03,
+   "kind": "raw",
+   "src": "img/hierbas_s_213.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.78
+  },
+  {
+   "id": "hierbas_s_214",
+   "start": 962.51,
+   "kind": "raw",
+   "src": "broll/hierbas_s_214.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.24
+  },
+  {
+   "id": "hierbas_s_215",
+   "start": 968.45,
+   "kind": "raw",
+   "src": "img/hierbas_s_215.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "ov_highlightsweep_982",
+   "start": 981.79,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Nadie te lo vende porque",
+   "highlight": "una hierba no se puede patentar",
+   "post": ".",
+   "note": "un frasco que vuelve cada 3 semanas sí es un buen negocio"
+  },
+  {
+   "id": "hierbas_s_220",
+   "start": 990.83,
+   "kind": "raw",
+   "src": "img/hierbas_s_220.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.5
+  },
+  {
+   "id": "hierbas_s_221",
+   "start": 997.03,
+   "kind": "raw",
+   "src": "img/hierbas_s_221.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.12
+  },
+  {
+   "id": "hierbas_s_222",
+   "start": 1003.85,
+   "kind": "raw",
+   "src": "img/hierbas_s_222.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "hierbas_s_223",
+   "start": 1006.81,
+   "kind": "raw",
+   "src": "broll/hierbas_s_223.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.96
+  },
+  {
+   "id": "hierbas_s_224",
+   "start": 1013.47,
+   "kind": "raw",
+   "src": "img/hierbas_s_224.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.16
+  },
+  {
+   "id": "ov_numberedsteps_1026",
+   "start": 1025.61,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Este fin de semana",
+   "title": "Empezá con tres cosas",
+   "steps": [
+    {
+     "title": "Plantá albahaca y caléndula entre tus cultivos"
+    },
+    {
+     "title": "Prepará la infusión y rociá por debajo de las hojas"
+    },
+    {
+     "title": "Dejá una esquina de flores: el cuartel de tu ejército"
+    }
+   ]
+  },
+  {
+   "id": "hierbas_s_230",
+   "start": 1037.93,
+   "kind": "raw",
+   "src": "img/hierbas_s_230.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "hierbas_s_231",
+   "start": 1042.17,
+   "kind": "raw",
+   "src": "img/hierbas_s_231.webp",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.2
+  },
+  {
+   "id": "hierbas_s_232",
+   "start": 1047.07,
+   "kind": "raw",
+   "src": "broll/hierbas_s_232.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.38
+  },
+  {
+   "id": "hierbas_s_233",
+   "start": 1052.15,
+   "kind": "raw",
+   "src": "broll/hierbas_s_233.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.76
+  },
+  {
+   "id": "hierbas_s_235",
+   "start": 1061.37,
+   "kind": "raw",
+   "src": "img/hierbas_s_235.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.44
+  },
+  {
+   "id": "hierbas_s_239",
+   "start": 1076.83,
+   "kind": "raw",
+   "src": "img/hierbas_s_239.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.2
+  },
+  {
+   "id": "hierbas_s_241",
+   "start": 1088.93,
+   "kind": "raw",
+   "src": "broll/hierbas_s_241.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.3
+  },
+  {
+   "id": "hierbas_s_242",
+   "start": 1091.93,
+   "kind": "raw",
+   "src": "broll/hierbas_s_242.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.92
+  },
+  {
+   "id": "hierbas_s_243",
+   "start": 1094.55,
+   "kind": "raw",
+   "src": "img/hierbas_s_243.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.04
+  },
+  {
+   "id": "ov_ctacard_1097",
+   "start": 1096.51,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "La lista y las recetas, en una guía",
+   "title": "La Guía del Jardín Amish",
+   "bullet": "todas las plantas, qué plaga espanta cada una y las 2 recetas con medidas exactas — link en la descripción",
+   "price": 0,
+   "cta": "LINK EN LA DESCRIPCIÓN"
+  },
+  {
+   "id": "hierbas_s_248",
+   "start": 1124.11,
+   "kind": "raw",
+   "src": "img/hierbas_s_248.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.06
+  }
+ ]
+}

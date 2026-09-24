@@ -1,0 +1,1196 @@
+{
+ "video": "federer7",
+ "avatar": "federer7_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 4,
+   "key": "hook",
+   "kind": "talk"
+  },
+  {
+   "id": "hook_1",
+   "start": 5.3,
+   "dur": 7.45,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/fe7_kiwi_partido.png",
+   "kicker": "Verde esmeralda por dentro"
+  },
+  {
+   "id": "hook_2",
+   "start": 12.75,
+   "dur": 11.71,
+   "key": "hook",
+   "kind": "mitoverdad",
+   "myth": "Una fruta no puede hacer lo que una pastilla",
+   "truth": "Un estudio real dice lo contrario",
+   "flipAt": 24
+  },
+  {
+   "id": "promesa_0",
+   "start": 24.46,
+   "dur": 5.88,
+   "key": "promesa",
+   "kind": "talk"
+  },
+  {
+   "id": "promesa_1",
+   "start": 30.34,
+   "dur": 8.24,
+   "key": "promesa",
+   "kind": "raw",
+   "src": "img/fe7_kiwi_heladera.png",
+   "kicker": "Quizá ya está en tu heladera"
+  },
+  {
+   "id": "no_moda_0",
+   "start": 38.58,
+   "dur": 12,
+   "key": "no_moda",
+   "kind": "mitoverdad",
+   "myth": "Es otro batido milagroso de internet",
+   "truth": "Es una fruta de unos pesos con ciencia detrás",
+   "flipAt": 324
+  },
+  {
+   "id": "no_moda_1",
+   "start": 50.58,
+   "dur": 6.6,
+   "key": "no_moda",
+   "kind": "raw",
+   "src": "img/fe7_mercado_kiwi.png"
+  },
+  {
+   "id": "historia_intro_0",
+   "start": 57.18,
+   "dur": 11.62,
+   "key": "historia_intro",
+   "kind": "talk"
+  },
+  {
+   "id": "taiwan_0",
+   "start": 68.8,
+   "dur": 11.3,
+   "key": "taiwan",
+   "kind": "raw",
+   "src": "img/fe7_taiwan_hospital.png",
+   "kicker": "Universidad Fu-Zhen, Taiwán",
+   "hold": true
+  },
+  {
+   "id": "taiwan_1",
+   "start": 80.1,
+   "dur": 10.36,
+   "key": "taiwan",
+   "kind": "raw",
+   "src": "img/fe7_mayor_desvelado.png"
+  },
+  {
+   "id": "costumbre_0",
+   "start": 90.46,
+   "dur": 10.37,
+   "key": "costumbre",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "image": "img/fe7_kiwi_cuchara.png",
+     "sub": "kiwi casi todas las noches, después de cenar",
+     "at": 118
+    },
+    {
+     "card": "No como remedio",
+     "sub": "solo por costumbre: la fruta era barata y abundante",
+     "at": 185
+    }
+   ],
+   "clip": "avatar_clips/costumbre_0.mp4"
+  },
+  {
+   "id": "prueba_0",
+   "start": 106.36,
+   "dur": 11.23,
+   "key": "prueba",
+   "kind": "raw",
+   "src": "img/fe7_estudio_paper.png"
+  },
+  {
+   "id": "prueba_1",
+   "start": 117.59,
+   "dur": 9.63,
+   "key": "prueba",
+   "kind": "bars",
+   "title": "El experimento",
+   "unit": "",
+   "bars": [
+    {
+     "label": "24 adultos con problemas de sueño",
+     "value": 100,
+     "winner": true
+    },
+    {
+     "label": "2 kiwis · 1 hora antes de dormir",
+     "value": 100,
+     "tone": "teal"
+    }
+   ]
+  },
+  {
+   "id": "publica_0",
+   "start": 127.22,
+   "dur": 7.54,
+   "key": "publica",
+   "kind": "nametag",
+   "name": "Asia Pacific Journal of Clinical Nutrition",
+   "role": "Estudio publicado · año 2011 · Taiwán",
+   "image": "img/fe7_estudio_paper.png"
+  },
+  {
+   "id": "resultados_0",
+   "start": 134.76,
+   "dur": 15.72,
+   "key": "resultados",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Lo que midieron",
+   "tone": "teal",
+   "w": 2.6
+  },
+  {
+   "id": "resultados_1",
+   "start": 150.48,
+   "dur": 5.58,
+   "key": "resultados",
+   "kind": "bars",
+   "title": "Resultados del estudio (2011)",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Tardaban menos en dormirse",
+     "value": 65,
+     "tone": "teal",
+     "note": "−35%"
+    },
+    {
+     "label": "Sueño más eficiente",
+     "value": 78,
+     "tone": "teal",
+     "note": "+5%"
+    },
+    {
+     "label": "Más tiempo dormido",
+     "value": 100,
+     "winner": true,
+     "note": "≈ +1 hora"
+    }
+   ]
+  },
+  {
+   "id": "resultados_2",
+   "start": 156.06,
+   "dur": 7.26,
+   "key": "resultados",
+   "kind": "freezezoom",
+   "image": "img/fe7_kiwi_partido.png",
+   "x": 0.5,
+   "y": 0.5,
+   "label": "Casi una hora más de sueño",
+   "zoom": 1.6,
+   "tone": "teal"
+  },
+  {
+   "id": "registrado_0",
+   "start": 163.32,
+   "dur": 9.92,
+   "key": "registrado",
+   "kind": "callout",
+   "image": "img/fe7_estudio_paper.png",
+   "figure": "Con nombre y fecha",
+   "caption": "No es un cuento de sobremesa: podés buscarlo y comprobarlo."
+  },
+  {
+   "id": "porque_0",
+   "start": 173.24,
+   "dur": 15.4,
+   "key": "porque",
+   "kind": "talk"
+  },
+  {
+   "id": "serotonina_0",
+   "start": 188.64,
+   "dur": 8.83,
+   "key": "serotonina",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SEROTONINA",
+     "sub": "la hormona de la calma y el buen ánimo",
+     "tone": "teal",
+     "at": 181
+    }
+   ],
+   "clip": "avatar_clips/serotonina_0.mp4"
+  },
+  {
+   "id": "serotonina_1",
+   "start": 194.01,
+   "dur": 2.68,
+   "key": "serotonina",
+   "kind": "annotated",
+   "image": "img/fe7_kiwi_partido.png",
+   "eyebrow": "Por dentro del kiwi",
+   "caption": "Todo lo que trae, natural",
+   "annotations": [
+    {
+     "label": "Serotonina natural",
+     "x": 35,
+     "y": 40
+    },
+    {
+     "label": "Fibra + compuestos → melatonina",
+     "x": 66,
+     "y": 62
+    }
+   ]
+  },
+  {
+   "id": "serotonina_2",
+   "start": 196.69,
+   "dur": 4.95,
+   "key": "serotonina",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe7_kiwi_melatonina.png"
+    }
+   ]
+  },
+  {
+   "id": "melatonina_propia_0",
+   "start": 201.64,
+   "dur": 9.8,
+   "key": "melatonina_propia",
+   "kind": "raw",
+   "src": "img/fe7_melatonina_frasco.png"
+  },
+  {
+   "id": "melatonina_propia_1",
+   "start": 211.44,
+   "dur": 8.4,
+   "key": "melatonina_propia",
+   "kind": "bars",
+   "title": "Melatonina: pastilla vs. kiwi",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Pastilla sintética · dosis externa",
+     "value": 55,
+     "tone": "danger",
+     "note": "dependencia"
+    },
+    {
+     "label": "Kiwi · el cuerpo la produce",
+     "value": 100,
+     "winner": true,
+     "note": "sin dependencia"
+    }
+   ]
+  },
+  {
+   "id": "regula_reloj_0",
+   "start": 219.84,
+   "dur": 4.86,
+   "key": "regula_reloj",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe7_natural_vs_sintetica.png"
+    }
+   ]
+  },
+  {
+   "id": "vitc_0",
+   "start": 224.7,
+   "dur": 9.29,
+   "key": "vitc",
+   "kind": "raw",
+   "src": "img/fe7_kiwi_partido.png"
+  },
+  {
+   "id": "vitc_1",
+   "start": 233.99,
+   "dur": 7.95,
+   "key": "vitc",
+   "kind": "bars",
+   "title": "Vitamina C (gramo por gramo)",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Naranja",
+     "value": 60,
+     "tone": "teal"
+    },
+    {
+     "label": "Kiwi",
+     "value": 100,
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "vitc_2",
+   "start": 241.94,
+   "dur": 7.3,
+   "key": "vitc",
+   "kind": "splitlist",
+   "title": "Tres aliados del descanso",
+   "items": [
+    "Vitamina C — relaja el sistema nervioso",
+    "Potasio — afloja los músculos",
+    "Folato — sueño más estable"
+   ]
+  },
+  {
+   "id": "repara_0",
+   "start": 249.24,
+   "dur": 11.7,
+   "key": "repara",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Dormir"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "cuando"
+    },
+    {
+     "t": "tu"
+    },
+    {
+     "t": "cuerpo"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "repara",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "industria_0",
+   "start": 260.94,
+   "dur": 6.48,
+   "key": "industria",
+   "kind": "talk"
+  },
+  {
+   "id": "industria_1",
+   "start": 267.42,
+   "dur": 30.28,
+   "key": "industria",
+   "kind": "raw",
+   "src": "img/fe7_pastillas_farmacia.png",
+   "kicker": "Somníferos: +2.000 millones al año"
+  },
+  {
+   "id": "patente_0",
+   "start": 297.7,
+   "dur": 8.68,
+   "key": "patente",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Lo"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "da"
+    },
+    {
+     "t": "patente"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "promociona",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "patente_1",
+   "start": 306.38,
+   "dur": 7.6,
+   "key": "patente",
+   "kind": "raw",
+   "src": "img/fe7_mercado_kiwi.png"
+  },
+  {
+   "id": "ben_intro_0",
+   "start": 313.98,
+   "dur": 7.38,
+   "key": "ben_intro",
+   "kind": "talk"
+  },
+  {
+   "id": "ben_intro_1",
+   "start": 321.36,
+   "dur": 8.12,
+   "key": "ben_intro",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/fe7_kiwi_cuchara.png",
+   "imageDarken": 0.6,
+   "title": "No es solo dormir mejor",
+   "chips": [
+    "Son 5 beneficios encadenados",
+    "El número 3 sorprende a todos",
+    "Quedate hasta ahí"
+   ]
+  },
+  {
+   "id": "ben1_0",
+   "start": 329.48,
+   "dur": 7.7,
+   "key": "ben1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Te dormís más rápido",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "ben1_1",
+   "start": 337.18,
+   "dur": 8.35,
+   "key": "ben1",
+   "kind": "raw",
+   "src": "img/fe7_mayor_desvelado.png"
+  },
+  {
+   "id": "ben1_2",
+   "start": 345.53,
+   "dur": 7.15,
+   "key": "ben1",
+   "kind": "bars",
+   "title": "Tiempo en quedarte dormido",
+   "unit": "min",
+   "bars": [
+    {
+     "label": "Antes",
+     "value": 100,
+     "tone": "danger",
+     "note": "≈ 60 min"
+    },
+    {
+     "label": "Con el kiwi",
+     "value": 28,
+     "winner": true,
+     "note": "15–20 min"
+    }
+   ]
+  },
+  {
+   "id": "ben2_0",
+   "start": 352.68,
+   "dur": 13.31,
+   "key": "ben2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Sueño más profundo",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "ben2_1",
+   "start": 365.99,
+   "dur": 7.23,
+   "key": "ben2",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe7_fases_sueno.png"
+    }
+   ]
+  },
+  {
+   "id": "ben2_2",
+   "start": 373.22,
+   "dur": 2.3,
+   "key": "ben2",
+   "kind": "raw",
+   "src": "img/fe7_mayor_descansado.png"
+  },
+  {
+   "id": "ben3_0",
+   "start": 375.52,
+   "dur": 11.82,
+   "key": "ben3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Energía a la mañana siguiente",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "ben3_1",
+   "start": 387.34,
+   "dur": 21.72,
+   "key": "ben3",
+   "kind": "raw",
+   "src": "img/fe7_mayor_cansado_manana.png"
+  },
+  {
+   "id": "ben3_2",
+   "start": 409.06,
+   "dur": 2.8,
+   "key": "ben3",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SIN NIEBLA MENTAL",
+     "sub": "te levantás con la mente despejada y las piernas ligeras",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/ben3_2.mp4"
+  },
+  {
+   "id": "ben3_3",
+   "start": 417.5,
+   "dur": 2.78,
+   "key": "ben3",
+   "kind": "raw",
+   "src": "img/fe7_mayor_descansado.png"
+  },
+  {
+   "id": "ben4_0",
+   "start": 420.28,
+   "dur": 5.38,
+   "key": "ben4",
+   "kind": "errorstinger",
+   "number": "04",
+   "title": "Mejor digestión",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "ben4_1",
+   "start": 425.66,
+   "dur": 2.8,
+   "key": "ben4",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ACTINIDINA",
+     "sub": "una enzima del kiwi que digiere mejor las proteínas de la cena",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/ben4_1.mp4"
+  },
+  {
+   "id": "ben4_2",
+   "start": 437.46,
+   "dur": 10.9,
+   "key": "ben4",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe7_actinidina.png"
+    }
+   ]
+  },
+  {
+   "id": "ben5_0",
+   "start": 448.36,
+   "dur": 9.36,
+   "key": "ben5",
+   "kind": "errorstinger",
+   "number": "05",
+   "title": "El efecto acumulativo",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "ben5_1",
+   "start": 457.72,
+   "dur": 12.38,
+   "key": "ben5",
+   "kind": "raw",
+   "src": "img/fe7_calendario_21.png"
+  },
+  {
+   "id": "ben5_2",
+   "start": 470.1,
+   "dur": 4.2,
+   "key": "ben5",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Tu"
+    },
+    {
+     "t": "reloj"
+    },
+    {
+     "t": "biológico"
+    },
+    {
+     "t": "aprende"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "regularse",
+     "hl": true
+    },
+    {
+     "t": "solo",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "honesto_0",
+   "start": 474.3,
+   "dur": 6.98,
+   "key": "honesto",
+   "kind": "talk"
+  },
+  {
+   "id": "honesto_1",
+   "start": 481.28,
+   "dur": 18.94,
+   "key": "honesto",
+   "kind": "lowerthird",
+   "title": "Esto no es un milagro instantáneo",
+   "tone": "warn",
+   "kicker": "Voy a ser honesto",
+   "desc": "Los resultados aparecen a la semana de hacerlo constante."
+  },
+  {
+   "id": "cuidado_0",
+   "start": 500.22,
+   "dur": 31.26,
+   "key": "cuidado",
+   "kind": "checklist",
+   "title": "Antes de empezar, ojo",
+   "items": [
+    {
+     "text": "Apnea o insomnio crónico: seguí con tu especialista",
+     "state": "warn"
+    },
+    {
+     "text": "Anticoagulantes: consultá a tu médico antes",
+     "state": "warn"
+    },
+    {
+     "text": "Esto acompaña un tratamiento, nunca lo reemplaza",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "err_intro_0",
+   "start": 531.48,
+   "dur": 7.52,
+   "key": "err_intro",
+   "kind": "talk"
+  },
+  {
+   "id": "err1_0",
+   "start": 539,
+   "dur": 4.44,
+   "key": "err1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "El momento equivocado",
+   "tone": "warn",
+   "w": 3.4
+  },
+  {
+   "id": "err1_1",
+   "start": 543.44,
+   "dur": 12.51,
+   "key": "err1",
+   "kind": "raw",
+   "src": "img/fe7_kiwi_entero.png"
+  },
+  {
+   "id": "err1_2",
+   "start": 555.95,
+   "dur": 21.45,
+   "key": "err1",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe7_ventana_tiempo.png"
+    }
+   ]
+  },
+  {
+   "id": "err2_0",
+   "start": 577.4,
+   "dur": 14.57,
+   "key": "err2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "El kiwi sin madurar",
+   "tone": "warn",
+   "w": 3.4
+  },
+  {
+   "id": "err2_1",
+   "start": 591.97,
+   "dur": 4.2,
+   "key": "err2",
+   "kind": "bars",
+   "title": "¿Está en su punto?",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Verde, duro, ácido",
+     "value": 40,
+     "tone": "danger",
+     "note": "no sirve todavía"
+    },
+    {
+     "label": "Cede al dedo, dulce, aromático",
+     "value": 100,
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "err2_2",
+   "start": 595.93,
+   "dur": 4.61,
+   "key": "err2",
+   "kind": "raw",
+   "src": "img/fe7_kiwi_maduro_punto.png"
+  },
+  {
+   "id": "err3_0",
+   "start": 600.54,
+   "dur": 7.06,
+   "key": "err3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Comerlo sin rutina",
+   "tone": "warn",
+   "w": 3.4
+  },
+  {
+   "id": "err3_1",
+   "start": 607.6,
+   "dur": 3.7,
+   "key": "err3",
+   "kind": "raw",
+   "src": "img/fe7_celular_apagado_cama.png"
+  },
+  {
+   "id": "protocolo_0",
+   "start": 611.3,
+   "dur": 15.8,
+   "key": "protocolo",
+   "kind": "talk"
+  },
+  {
+   "id": "paso1_0",
+   "start": 627.1,
+   "dur": 4.2,
+   "key": "paso1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Dos kiwis maduros",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "paso1_1",
+   "start": 630.3,
+   "dur": 2.76,
+   "key": "paso1",
+   "kind": "raw",
+   "src": "img/fe7_fed_corta_kiwi.png"
+  },
+  {
+   "id": "paso1_2",
+   "start": 633.06,
+   "dur": 16.88,
+   "key": "paso1",
+   "kind": "raw",
+   "src": "img/fe7_fed_cuchara_kiwi.png"
+  },
+  {
+   "id": "paso2_0",
+   "start": 649.94,
+   "dur": 4.2,
+   "key": "paso2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Medio plátano maduro",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "paso2_1",
+   "start": 651.7,
+   "dur": 7.08,
+   "key": "paso2",
+   "kind": "raw",
+   "src": "img/fe7_fed_machaca_platano.png"
+  },
+  {
+   "id": "paso2_2",
+   "start": 658.78,
+   "dur": 2.8,
+   "key": "paso2",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TRIPTÓFANO",
+     "sub": "el plátano suma potasio y triptófano → serotonina y melatonina",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/paso2_2.mp4"
+  },
+  {
+   "id": "paso3_0",
+   "start": 670,
+   "dur": 4.2,
+   "key": "paso3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Agua tibia + nuez moscada",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "paso3_1",
+   "start": 672.7,
+   "dur": 4.68,
+   "key": "paso3",
+   "kind": "raw",
+   "src": "img/fe7_fed_agua_tibia.png"
+  },
+  {
+   "id": "paso3_2",
+   "start": 677.38,
+   "dur": 4.2,
+   "key": "paso3",
+   "kind": "splitlist",
+   "title": "El agua, dos detalles",
+   "items": [
+    "Tibia, nunca fría (evita el choque digestivo)",
+    "Una pizca de nuez moscada relaja el sistema nervioso"
+   ]
+  },
+  {
+   "id": "paso3_3",
+   "start": 681.06,
+   "dur": 13.64,
+   "key": "paso3",
+   "kind": "raw",
+   "src": "img/fe7_fed_nuez_moscada.png"
+  },
+  {
+   "id": "paso4_0",
+   "start": 694.7,
+   "dur": 5.3,
+   "key": "paso4",
+   "kind": "errorstinger",
+   "number": "04",
+   "title": "Apagá las pantallas",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "paso4_1",
+   "start": 700,
+   "dur": 13.42,
+   "key": "paso4",
+   "kind": "raw",
+   "src": "img/fe7_celular_apagado_cama.png"
+  },
+  {
+   "id": "paso5_0",
+   "start": 713.42,
+   "dur": 4.2,
+   "key": "paso5",
+   "kind": "errorstinger",
+   "number": "05",
+   "title": "Constancia: 21 días",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "paso5_1",
+   "start": 716.24,
+   "dur": 9.46,
+   "key": "paso5",
+   "kind": "raw",
+   "src": "img/fe7_calendario_21.png",
+   "hold": true
+  },
+  {
+   "id": "paso5_2",
+   "start": 725.7,
+   "dur": 10.34,
+   "key": "paso5",
+   "kind": "process",
+   "title": "El ritual del kiwi",
+   "eyebrow": "Cada noche, 1 hora antes",
+   "steps": [
+    {
+     "title": "Comé",
+     "desc": "2 kiwis maduros con cucharita",
+     "image": "img/fe7_fed_cuchara_kiwi.png"
+    },
+    {
+     "title": "Sumá",
+     "desc": "medio plátano + agua tibia con nuez moscada",
+     "image": "img/fe7_fed_machaca_platano.png"
+    },
+    {
+     "title": "Apagá",
+     "desc": "pantallas y luces, penumbra 1 hora",
+     "image": "img/fe7_celular_apagado_cama.png"
+    }
+   ]
+  },
+  {
+   "id": "libro_0",
+   "start": 736.04,
+   "dur": 13.63,
+   "key": "libro",
+   "kind": "raw",
+   "src": "img/fe7_libro_ritual.png",
+   "hold": true
+  },
+  {
+   "id": "libro_1",
+   "start": 749.67,
+   "dur": 6.87,
+   "key": "libro",
+   "kind": "bars",
+   "title": "Lo que cuesta cada noche",
+   "unit": "pesos",
+   "bars": [
+    {
+     "label": "Pastillas / melatonina de marca (mes)",
+     "value": 100,
+     "tone": "danger",
+     "note": "300–400"
+    },
+    {
+     "label": "El ritual del kiwi (día)",
+     "value": 12,
+     "winner": true,
+     "note": "< 20"
+    }
+   ]
+  },
+  {
+   "id": "libro_2",
+   "start": 756.54,
+   "dur": 10.8,
+   "key": "libro",
+   "kind": "lowerthird",
+   "title": "Más recetas para dormir en mi guía",
+   "tone": "teal",
+   "kicker": "Si querés profundizar",
+   "desc": "Guía completa de la salud +60 — enlace en la descripción."
+  },
+  {
+   "id": "humano_0",
+   "start": 767.34,
+   "dur": 6.44,
+   "key": "humano",
+   "kind": "talk"
+  },
+  {
+   "id": "humano_1",
+   "start": 773.78,
+   "dur": 19.48,
+   "key": "humano",
+   "kind": "raw",
+   "src": "img/fe7_paciente_ojeras.png",
+   "kicker": "Llegaban agotados a la consulta",
+   "hold": true
+  },
+  {
+   "id": "vuelven_0",
+   "start": 793.26,
+   "dur": 14.2,
+   "key": "vuelven",
+   "kind": "raw",
+   "src": "img/fe7_abuelo_nietos.png",
+   "hold": true
+  },
+  {
+   "id": "vuelven_1",
+   "start": 807.46,
+   "dur": 4.52,
+   "key": "vuelven",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Es"
+    },
+    {
+     "t": "devolverle"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "alguien"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "energía",
+     "hl": true
+    },
+    {
+     "t": "para"
+    },
+    {
+     "t": "vivir",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "repaso_0",
+   "start": 811.98,
+   "dur": 4.96,
+   "key": "repaso",
+   "kind": "talk"
+  },
+  {
+   "id": "repaso_1",
+   "start": 816.94,
+   "dur": 39.34,
+   "key": "repaso",
+   "kind": "guardaesto",
+   "title": "El ritual del kiwi (guardá esto)",
+   "items": [
+    {
+     "text": "2 kiwis maduros, 1 hora antes de dormir",
+     "image": "img/fe7_kiwi_cuchara.png"
+    },
+    {
+     "text": "Sumá ½ plátano + agua tibia con nuez moscada",
+     "image": "img/fe7_kiwi_platano.png"
+    },
+    {
+     "text": "Apagá pantallas, dejá que la oscuridad ayude",
+     "image": "img/fe7_celular_apagado_cama.png"
+    },
+    {
+     "text": "Constancia: al menos 21 días",
+     "image": "img/fe7_calendario_21.png"
+    },
+    {
+     "text": "Anticoagulantes o trastorno del sueño: consultá",
+     "image": "img/fe7_paciente_ojeras.png"
+    }
+   ]
+  },
+  {
+   "id": "cta_0",
+   "start": 856.28,
+   "dur": 18.62,
+   "key": "cta",
+   "kind": "lowerthird",
+   "title": "Contame: ¿de qué parte nos ves y cuánto dormís?",
+   "tone": "teal",
+   "kicker": "En los comentarios",
+   "desc": "México o Latinoamérica, y cuántas horas dormís por noche."
+  },
+  {
+   "id": "comparte_0",
+   "start": 874.9,
+   "dur": 17.88,
+   "key": "comparte",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/fe7_abuelo_nietos.png",
+   "imageDarken": 0.62,
+   "title": "Compartilo con quien amás",
+   "chips": [
+    "Con tu mamá, tu papá",
+    "Con quien toma pastillas para dormir",
+    "Puede cambiarle las noches"
+   ]
+  },
+  {
+   "id": "teaser_0",
+   "start": 892.78,
+   "dur": 7.5,
+   "key": "teaser",
+   "kind": "talk"
+  },
+  {
+   "id": "teaser_1",
+   "start": 900.28,
+   "dur": 17.32,
+   "key": "teaser",
+   "kind": "lowerthird",
+   "title": "La próxima: una especia de tu alacena y el corazón",
+   "tone": "teal",
+   "kicker": "Próximo video",
+   "desc": "Un cardiólogo europeo empezó a recetarla. No te lo pierdas."
+  },
+  {
+   "id": "cierre_0",
+   "start": 917.6,
+   "dur": 1.97,
+   "key": "cierre",
+   "kind": "talk"
+  },
+  {
+   "id": "cierre_1",
+   "start": 919.57,
+   "dur": 2.55,
+   "key": "cierre",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Cada semana, salud real para después de los 60",
+   "image": "img/fe7_federer_pizarra.png"
+  }
+ ]
+}

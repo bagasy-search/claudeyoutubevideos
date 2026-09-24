@@ -1,0 +1,4163 @@
+{
+ "slug": "cytomato",
+ "total": 1240.2,
+ "beats": [
+  {
+   "id": "cytomato_1",
+   "start": 4.42,
+   "kind": "raw",
+   "src": "broll/cyt_hand_turns_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.44,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_2",
+   "start": 6.86,
+   "kind": "raw",
+   "src": "broll/cyt_cellar_rows_wide.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_3",
+   "start": 8.26,
+   "kind": "raw",
+   "src": "broll/cyt_pour_into_pot.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_4",
+   "start": 12.88,
+   "kind": "raw",
+   "src": "broll/cyt_august_rows.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_5",
+   "start": 16.16,
+   "kind": "raw",
+   "src": "broll/cyt_tin_can.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_6",
+   "start": 17.56,
+   "kind": "raw",
+   "src": "broll/cyt_store_shelf.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_7",
+   "start": 18.96,
+   "kind": "raw",
+   "src": "broll/cyt_pick_warm_vine.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_25",
+   "start": 25.18,
+   "dur": 4.73,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "They all say it:",
+   "highlight": "the one thing you cannot keep",
+   "post": "."
+  },
+  {
+   "id": "cytomato_9",
+   "start": 27.6,
+   "kind": "raw",
+   "src": "broll/cyt_soft_tomato_sill.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.54,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_10",
+   "start": 29.48,
+   "kind": "raw",
+   "src": "broll/cyt_four_days_sill.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_11",
+   "start": 33.76,
+   "kind": "raw",
+   "src": "broll/cyt_weeping_split.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_12",
+   "start": 35.16,
+   "kind": "raw",
+   "src": "broll/cyt_mold_fuzz.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_13",
+   "start": 36.56,
+   "kind": "raw",
+   "src": "broll/cyt_cut_drips.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.7,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_14",
+   "start": 38.26,
+   "kind": "raw",
+   "src": "broll/cyt_skin_paper.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_41",
+   "start": 41.1,
+   "dur": 8.71,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "No electricity",
+   "title": "Four old ways",
+   "steps": [
+    {
+     "title": "The jar",
+     "sub": "push the air out"
+    },
+    {
+     "title": "The screen",
+     "sub": "take the water out"
+    },
+    {
+     "title": "The crock",
+     "sub": "turn it sour"
+    },
+    {
+     "title": "The cool room",
+     "sub": "fresh in December"
+    }
+   ]
+  },
+  {
+   "id": "cytomato_18",
+   "start": 46.84,
+   "kind": "raw",
+   "src": "broll/cyt_tease_crock.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_20t",
+   "start": 57.32,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_tease_winterbowl.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_21",
+   "start": 63,
+   "kind": "raw",
+   "src": "broll/cyt_december_table.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_21t",
+   "start": 66.96,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_december_table.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "cytomato_22",
+   "start": 70.66,
+   "kind": "raw",
+   "src": "broll/cyt_wrap_newspaper.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_23",
+   "start": 74.04,
+   "kind": "raw",
+   "src": "broll/cyt_box_of_wrapped.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.44,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_25",
+   "start": 84.1,
+   "kind": "raw",
+   "src": "broll/cyt_two_year_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_84",
+   "start": 84.1,
+   "dur": 5.17,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Straight first:",
+   "highlight": "you change the tomato, not the clock",
+   "post": "."
+  },
+  {
+   "id": "cytomato_26",
+   "start": 88.16,
+   "kind": "raw",
+   "src": "broll/cyt_shelf_pan.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_26t",
+   "start": 92.12,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_shelf_pan.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_27t",
+   "start": 101.7,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_rot_macro.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "cytomato_28",
+   "start": 105.22,
+   "kind": "raw",
+   "src": "broll/cyt_water_in_fruit.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.12,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_29",
+   "start": 107.34,
+   "kind": "raw",
+   "src": "broll/cyt_air_over_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_30",
+   "start": 108.74,
+   "kind": "raw",
+   "src": "broll/cyt_warm_kitchen.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.12,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_31",
+   "start": 110.86,
+   "kind": "raw",
+   "src": "broll/cyt_skin_break.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.3,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_32",
+   "start": 113.16,
+   "kind": "raw",
+   "src": "broll/cyt_stem_scar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_32t",
+   "start": 117.12,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_stem_scar.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "ov_checklistreveal_118",
+   "start": 117.74,
+   "dur": 5.92,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "ROT NEEDS",
+   "title": "Take one away",
+   "items": [
+    "Water to move in",
+    "Air",
+    "A little warmth",
+    "A way in"
+   ],
+   "stamp": "TAKE ONE AWAY"
+  },
+  {
+   "id": "ov_flowsteps_125",
+   "start": 124.6,
+   "dur": 7.75,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "THE WHOLE IDEA",
+   "title": "Each way steals one",
+   "nodes": [
+    {
+     "label": "The jar",
+     "sub": "the air"
+    },
+    {
+     "label": "The drying",
+     "sub": "the water"
+    },
+    {
+     "label": "The crock",
+     "sub": "turns it sour"
+    },
+    {
+     "label": "The cool room",
+     "sub": "the warmth"
+    }
+   ]
+  },
+  {
+   "id": "cytomato_34",
+   "start": 126.92,
+   "kind": "raw",
+   "src": "broll/cyt_jar_air_out.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_35",
+   "start": 128.5,
+   "kind": "raw",
+   "src": "broll/cyt_drying_takes_water.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.74,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_36",
+   "start": 130.24,
+   "kind": "raw",
+   "src": "broll/cyt_crock_bubbles.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_37",
+   "start": 134.04,
+   "kind": "raw",
+   "src": "broll/cyt_cool_room_shelf.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_37t",
+   "start": 138,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_cool_room_shelf.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.88
+  },
+  {
+   "id": "cytomato_h39",
+   "start": 150.06,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_garden_start.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.4
+  },
+  {
+   "id": "cytomato_40",
+   "start": 156.46,
+   "kind": "raw",
+   "src": "broll/cyt_cloudy_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_42",
+   "start": 163.16,
+   "kind": "raw",
+   "src": "broll/cyt_paste_row.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.86,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_43",
+   "start": 167.02,
+   "kind": "raw",
+   "src": "broll/cyt_roma_pile.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_44",
+   "start": 171,
+   "kind": "raw",
+   "src": "broll/cyt_paste_cut_thick.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_duelcolumns_171",
+   "start": 171,
+   "dur": 6.57,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Which to put by",
+   "leftName": "Paste tomato",
+   "rightName": "Big slicer",
+   "rows": [
+    {
+     "attr": "Thick walls",
+     "leftWins": true
+    },
+    {
+     "attr": "Little jelly",
+     "leftWins": true
+    },
+    {
+     "attr": "Holds its shape",
+     "leftWins": true
+    },
+    {
+     "attr": "A bag of water",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "cytomato_45",
+   "start": 175.86,
+   "kind": "raw",
+   "src": "broll/cyt_slicer_cut_wet.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.64,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_46",
+   "start": 177.5,
+   "kind": "raw",
+   "src": "broll/cyt_sandwich_slice.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_46t",
+   "start": 181.46,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_sandwich_slice.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.08
+  },
+  {
+   "id": "cytomato_47",
+   "start": 183.54,
+   "kind": "raw",
+   "src": "broll/cyt_eat_today_bowl.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.62,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_49",
+   "start": 189.22,
+   "kind": "raw",
+   "src": "broll/cyt_dead_ripe_thumb.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_49t",
+   "start": 193.18,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_dead_ripe_thumb.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.88
+  },
+  {
+   "id": "cytomato_50",
+   "start": 197.06,
+   "kind": "raw",
+   "src": "broll/cyt_eating_ripe.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_51",
+   "start": 199.94,
+   "kind": "raw",
+   "src": "broll/cyt_breaker_stage.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_200",
+   "start": 199.94,
+   "dur": 7.16,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "BREAKER STAGE",
+   "title": "How to spot it",
+   "items": [
+    "Look at the bottom",
+    "A pale ring, not a blush",
+    "Done taking from the vine"
+   ],
+   "stamp": "A RING"
+  },
+  {
+   "id": "cytomato_52",
+   "start": 204.06,
+   "kind": "raw",
+   "src": "broll/cyt_blossom_end.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_52t",
+   "start": 208.02,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_blossom_end.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.4
+  },
+  {
+   "id": "cytomato_53",
+   "start": 209.42,
+   "kind": "raw",
+   "src": "broll/cyt_green_to_straw.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_53t",
+   "start": 213.38,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_green_to_straw.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.66
+  },
+  {
+   "id": "cytomato_54",
+   "start": 216.04,
+   "kind": "raw",
+   "src": "broll/cyt_not_pink_allover.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.86,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_56",
+   "start": 224.6,
+   "kind": "raw",
+   "src": "broll/cyt_vine_done_giving.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_56t",
+   "start": 228.56,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_vine_done_giving.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_57",
+   "start": 234.5,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_shelf_ripening.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.69
+  },
+  {
+   "id": "cytomato_58",
+   "start": 239.19,
+   "kind": "raw",
+   "src": "broll/cyt_rain_split_bird.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.81,
+   "noSplit": true
+  },
+  {
+   "id": "ov_pullquote_243",
+   "start": 243.02,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Not a tomato you picked too early. A tomato you rescued."
+  },
+  {
+   "id": "cytomato_60",
+   "start": 249.52,
+   "kind": "raw",
+   "src": "broll/cyt_dew_on_fruit.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_250",
+   "start": 249.52,
+   "dur": 7.91,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "IN THE GARDEN",
+   "title": "Four rules",
+   "items": [
+    "Plant paste tomatoes",
+    "Pick at breaker",
+    "Never pick them wet",
+    "Don't wash, don't stack"
+   ],
+   "stamp": "BEFORE ANY JAR"
+  },
+  {
+   "id": "cytomato_61",
+   "start": 254.46,
+   "kind": "raw",
+   "src": "broll/cyt_after_rain.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_62",
+   "start": 255.86,
+   "kind": "raw",
+   "src": "broll/cyt_sun_drying_fruit.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.02,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_63",
+   "start": 257.88,
+   "kind": "raw",
+   "src": "broll/cyt_drop_in_dip.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_63t",
+   "start": 261.84,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_drop_in_dip.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.36
+  },
+  {
+   "id": "ov_mythtruth_266",
+   "start": 265.76,
+   "dur": 9.64,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Wash them first — it's cleaner",
+   "truth": "Washing pushes water into the stem scar. That is the door. Wipe them dry.",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH"
+  },
+  {
+   "id": "cytomato_65",
+   "start": 268.46,
+   "kind": "raw",
+   "src": "broll/cyt_dry_cloth_wipe.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_65t",
+   "start": 272.42,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_dry_cloth_wipe.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.44
+  },
+  {
+   "id": "cytomato_66",
+   "start": 273.86,
+   "kind": "raw",
+   "src": "broll/cyt_water_into_scar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_66t",
+   "start": 277.82,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_water_into_scar.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.7
+  },
+  {
+   "id": "cytomato_67",
+   "start": 279.52,
+   "kind": "raw",
+   "src": "broll/cyt_bloom_coat.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_67t",
+   "start": 283.48,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_bloom_coat.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
+  },
+  {
+   "id": "cytomato_69",
+   "start": 291,
+   "kind": "raw",
+   "src": "broll/cyt_bruise_dark.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.04,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_69t",
+   "start": 293.04,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_bruise_dark.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_70",
+   "start": 297.22,
+   "kind": "raw",
+   "src": "broll/cyt_laid_out_single.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_70t",
+   "start": 301.18,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_laid_out_single.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.12
+  },
+  {
+   "id": "cytomato_73",
+   "start": 306.94,
+   "kind": "raw",
+   "src": "broll/cyt_canning_pot_boil.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_73t",
+   "start": 310.9,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_canning_pot_boil.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.28
+  },
+  {
+   "id": "cytomato_74",
+   "start": 313.18,
+   "kind": "raw",
+   "src": "broll/cyt_allday_chore.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_75",
+   "start": 314.58,
+   "kind": "raw",
+   "src": "broll/cyt_steam_window.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.72,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_76",
+   "start": 317.3,
+   "kind": "raw",
+   "src": "broll/cyt_grandmother_pot.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_76t",
+   "start": 321.26,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_grandmother_pot.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.64
+  },
+  {
+   "id": "cytomato_h77",
+   "start": 330.5,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_take_fear_out.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.44
+  },
+  {
+   "id": "cytomato_78",
+   "start": 333.28,
+   "kind": "raw",
+   "src": "broll/cyt_borderline_fruit.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_78t",
+   "start": 337.24,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_borderline_fruit.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.6
+  },
+  {
+   "id": "cytomato_79",
+   "start": 339.84,
+   "kind": "raw",
+   "src": "broll/cyt_sweet_varieties.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_340",
+   "start": 339.84,
+   "dur": 10.43,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "A tomato is acid enough on its own",
+   "truth": "It sits on the line, and sweet varieties drifted over it. Add the acid yourself.",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH"
+  },
+  {
+   "id": "cytomato_79t",
+   "start": 343.8,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_sweet_varieties.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.94
+  },
+  {
+   "id": "cytomato_80",
+   "start": 345.74,
+   "kind": "raw",
+   "src": "broll/cyt_pour_lemon_spoon.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_352",
+   "start": 352.12,
+   "dur": 6.37,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Every jar, every time",
+   "value": 2,
+   "suffix": " tbsp per quart",
+   "support": "bottled lemon juice · 1 tbsp per pint"
+  },
+  {
+   "id": "cytomato_82",
+   "start": 355.36,
+   "kind": "raw",
+   "src": "broll/cyt_pint_jar_spoon.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.7,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_83",
+   "start": 357.06,
+   "kind": "raw",
+   "src": "broll/cyt_citric_powder.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_83t",
+   "start": 361.02,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_citric_powder.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_84",
+   "start": 365.2,
+   "kind": "raw",
+   "src": "broll/cyt_bottled_vs_lemon.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_369",
+   "start": 368.74,
+   "dur": 9.57,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Fresh lemons beat the bottle",
+   "truth": "Every bottle is the same strength. A lemon is not — and you cannot see it.",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH"
+  },
+  {
+   "id": "cytomato_84t",
+   "start": 369.16,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_bottled_vs_lemon.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_85",
+   "start": 373.52,
+   "kind": "raw",
+   "src": "broll/cyt_lemons_tree.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_85t",
+   "start": 377.48,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_lemons_tree.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_86",
+   "start": 382.08,
+   "kind": "raw",
+   "src": "broll/cyt_use_the_bottle.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.22,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_385",
+   "start": 384.7,
+   "dur": 6.3,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Blanch to loosen the skins",
+   "value": 30,
+   "suffix": " seconds",
+   "support": "then cold water — they slip off"
+  },
+  {
+   "id": "cytomato_87",
+   "start": 386.3,
+   "kind": "raw",
+   "src": "broll/cyt_blanch_split.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.08,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_88",
+   "start": 388.38,
+   "kind": "raw",
+   "src": "broll/cyt_ice_water_dunk.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.97,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_89",
+   "start": 390.35,
+   "kind": "raw",
+   "src": "broll/cyt_skin_slips.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.61,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_90",
+   "start": 391.96,
+   "kind": "raw",
+   "src": "broll/cyt_core_and_halve.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_91",
+   "start": 395.38,
+   "kind": "raw",
+   "src": "broll/cyt_acid_first.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_395",
+   "start": 395.38,
+   "dur": 12.46,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Whole or halved",
+   "title": "The jar, in order",
+   "steps": [
+    {
+     "title": "Blanch, then cold water",
+     "sub": "skins slip off"
+    },
+    {
+     "title": "Acid in the EMPTY jar",
+     "sub": "first, always"
+    },
+    {
+     "title": "Pack firm, hot liquid over",
+     "sub": "½ inch headspace"
+    },
+    {
+     "title": "Wipe the rim, ring fingertip tight",
+     "sub": ""
+    }
+   ]
+  },
+  {
+   "id": "cytomato_91t",
+   "start": 399.34,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_acid_first.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.12
+  },
+  {
+   "id": "cytomato_92",
+   "start": 401.46,
+   "kind": "raw",
+   "src": "broll/cyt_acid_first2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_92t",
+   "start": 405.42,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_acid_first2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.42
+  },
+  {
+   "id": "cytomato_h93",
+   "start": 406.84,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_pack_jars.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6
+  },
+  {
+   "id": "cytomato_94",
+   "start": 408.24,
+   "kind": "raw",
+   "src": "broll/cyt_pack_firm.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_95",
+   "start": 411.16,
+   "kind": "raw",
+   "src": "broll/cyt_pour_hot_juice.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.98,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_96",
+   "start": 413.14,
+   "kind": "raw",
+   "src": "broll/cyt_headspace_half.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_413",
+   "start": 413.14,
+   "dur": 5.69,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Headspace",
+   "value": 0.5,
+   "suffix": " inch",
+   "support": "where the air pushes out — that is your seal"
+  },
+  {
+   "id": "cytomato_97",
+   "start": 417.24,
+   "kind": "raw",
+   "src": "broll/cyt_air_pushes_out.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_98",
+   "start": 421.86,
+   "kind": "raw",
+   "src": "broll/cyt_knife_bubbles.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_99",
+   "start": 425.14,
+   "kind": "raw",
+   "src": "broll/cyt_wipe_rim.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_100",
+   "start": 429.82,
+   "kind": "raw",
+   "src": "broll/cyt_fingertip_tight.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_100t",
+   "start": 433.78,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_fingertip_tight.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.78
+  },
+  {
+   "id": "cytomato_101",
+   "start": 435.56,
+   "kind": "raw",
+   "src": "broll/cyt_jars_into_bath.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.08,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_102",
+   "start": 437.64,
+   "kind": "raw",
+   "src": "broll/cyt_inch_over_jars.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_103",
+   "start": 441.32,
+   "kind": "raw",
+   "src": "broll/cyt_rolling_boil.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_103t",
+   "start": 445.28,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_rolling_boil.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.2
+  },
+  {
+   "id": "cytomato_104",
+   "start": 446.48,
+   "kind": "raw",
+   "src": "broll/cyt_kitchen_clock.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_446",
+   "start": 446.48,
+   "dur": 5.98,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Boiling water bath",
+   "value": 45,
+   "suffix": " minutes",
+   "support": "pints and quarts · +5 min over 1,000 ft"
+  },
+  {
+   "id": "cytomato_104t",
+   "start": 450.44,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_kitchen_clock.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.9
+  },
+  {
+   "id": "cytomato_105",
+   "start": 452.34,
+   "kind": "raw",
+   "src": "broll/cyt_hill_altitude.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_105t",
+   "start": 456.3,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_hill_altitude.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.34
+  },
+  {
+   "id": "cytomato_106",
+   "start": 458.64,
+   "kind": "raw",
+   "src": "broll/cyt_steam_thermometer.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_106t",
+   "start": 462.6,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_steam_thermometer.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.28
+  },
+  {
+   "id": "cytomato_107",
+   "start": 463.88,
+   "kind": "raw",
+   "src": "broll/cyt_stove_damper.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_108",
+   "start": 467.28,
+   "kind": "raw",
+   "src": "broll/cyt_lift_out_jars.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.5,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_109",
+   "start": 469.78,
+   "kind": "raw",
+   "src": "broll/cyt_towel_row.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.16,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_110",
+   "start": 471.94,
+   "kind": "raw",
+   "src": "broll/cyt_leave_alone.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_111",
+   "start": 474.72,
+   "kind": "raw",
+   "src": "broll/cyt_lid_ping.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_111t",
+   "start": 478.68,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_lid_ping.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.46
+  },
+  {
+   "id": "cytomato_112",
+   "start": 481.14,
+   "kind": "raw",
+   "src": "broll/cyt_ring_off.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.74,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_113",
+   "start": 482.88,
+   "kind": "raw",
+   "src": "broll/cyt_press_center.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_114",
+   "start": 487.8,
+   "kind": "raw",
+   "src": "broll/cyt_failed_seal.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_115",
+   "start": 491.64,
+   "kind": "raw",
+   "src": "broll/cyt_jar_in_icebox.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_h116",
+   "start": 494.7,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_warnings.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.1
+  },
+  {
+   "id": "cytomato_117",
+   "start": 500.8,
+   "kind": "raw",
+   "src": "broll/cyt_open_kettle.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_501",
+   "start": 500.8,
+   "dur": 7.48,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "NEVER",
+   "title": "Not safe, ever",
+   "items": [
+    "Open-kettle canning",
+    "Canning in the oven",
+    "Reusing the flat lid",
+    "Oil or garlic in the jar"
+   ],
+   "stamp": "NEVER"
+  },
+  {
+   "id": "cytomato_117t",
+   "start": 504.76,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_open_kettle.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_118",
+   "start": 510.72,
+   "kind": "raw",
+   "src": "broll/cyt_oven_jars.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_119",
+   "start": 512.2,
+   "kind": "raw",
+   "src": "broll/cyt_used_flat_lid.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.34,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_120",
+   "start": 514.54,
+   "kind": "raw",
+   "src": "broll/cyt_rings_box.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_120t",
+   "start": 518.5,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_rings_box.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76
+  },
+  {
+   "id": "cytomato_121",
+   "start": 522.26,
+   "kind": "raw",
+   "src": "broll/cyt_oil_into_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_122",
+   "start": 525.46,
+   "kind": "raw",
+   "src": "broll/cyt_onions_peppers.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_122t",
+   "start": 529.42,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_onions_peppers.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_123",
+   "start": 539.96,
+   "kind": "raw",
+   "src": "broll/cyt_pressure_canner.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.88,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_124",
+   "start": 541.84,
+   "kind": "raw",
+   "src": "broll/cyt_label_pencil.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.14,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_542",
+   "start": 541.84,
+   "dur": 6.09,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "ON THE SHELF",
+   "title": "Putting them away",
+   "items": [
+    "Label month and year",
+    "Rings OFF",
+    "Dark, 50–70°F"
+   ],
+   "stamp": "RINGS OFF"
+  },
+  {
+   "id": "cytomato_125",
+   "start": 543.98,
+   "kind": "raw",
+   "src": "broll/cyt_rings_removed_shelf.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_125t",
+   "start": 547.94,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_rings_removed_shelf.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_126",
+   "start": 552.5,
+   "kind": "raw",
+   "src": "broll/cyt_bulging_lid.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_553",
+   "start": 552.5,
+   "dur": 9.51,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "THROW IT OUT",
+   "title": "A jar gone wrong",
+   "items": [
+    "Bulging lid, or it spurts",
+    "Cloudy for no reason",
+    "Any smell that is off",
+    "Mushy when it should not be"
+   ],
+   "stamp": "NEVER TASTE IT"
+  },
+  {
+   "id": "cytomato_127",
+   "start": 555.78,
+   "kind": "raw",
+   "src": "broll/cyt_cloudy_liquid.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_128",
+   "start": 560.7,
+   "kind": "raw",
+   "src": "broll/cyt_mushy_food.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_128t",
+   "start": 564.66,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_mushy_food.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_129",
+   "start": 569.62,
+   "kind": "raw",
+   "src": "broll/cyt_into_trash.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_129t",
+   "start": 573.58,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_into_trash.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78
+  },
+  {
+   "id": "cytomato_130",
+   "start": 576.36,
+   "kind": "raw",
+   "src": "broll/cyt_dark_cool_store.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_131",
+   "start": 577.84,
+   "kind": "raw",
+   "src": "broll/cyt_thermometer_wall.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_132",
+   "start": 579.36,
+   "kind": "raw",
+   "src": "broll/cyt_sun_on_jars.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_132t",
+   "start": 583.32,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_sun_on_jars.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.54
+  },
+  {
+   "id": "cytomato_133",
+   "start": 586.86,
+   "kind": "raw",
+   "src": "broll/cyt_eighteen_months.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_587",
+   "start": 586.86,
+   "dur": 4.75,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "For quality, eat within",
+   "value": 18,
+   "suffix": " months",
+   "support": "light bleaches, heat ages"
+  },
+  {
+   "id": "cytomato_h134",
+   "start": 590.62,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_whole_shelf.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.52
+  },
+  {
+   "id": "cytomato_135",
+   "start": 593.14,
+   "kind": "raw",
+   "src": "broll/cyt_sauce_jars.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.68,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_136",
+   "start": 594.82,
+   "kind": "raw",
+   "src": "broll/cyt_soup_base.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.18,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_137",
+   "start": 597,
+   "kind": "raw",
+   "src": "broll/cyt_february_night.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_h138",
+   "start": 604.3,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_cta_seed.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84
+  },
+  {
+   "id": "cytomato_139",
+   "start": 608.62,
+   "kind": "raw",
+   "src": "broll/cyt_cool_dark_steady.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_139t",
+   "start": 612.58,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_cool_dark_steady.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "ov_ctacard_614",
+   "start": 614.08,
+   "dur": 8.75,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "All four need one thing",
+   "title": "The Plain Almanac",
+   "bullet": "Holding a room at 55°F with no wire running to it.",
+   "price": 0,
+   "cta": "LINK IN THE DESCRIPTION"
+  },
+  {
+   "id": "cytomato_140",
+   "start": 617,
+   "kind": "raw",
+   "src": "broll/cyt_cellar_stairs.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_140t",
+   "start": 620.96,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_cellar_stairs.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "cytomato_141",
+   "start": 623.98,
+   "kind": "raw",
+   "src": "broll/cyt_back_to_tomatoes.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.9,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_142",
+   "start": 625.88,
+   "kind": "raw",
+   "src": "broll/cyt_drying_hero.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_143",
+   "start": 629.3,
+   "kind": "raw",
+   "src": "broll/cyt_older_than_jars.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.44,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_144",
+   "start": 631.74,
+   "kind": "raw",
+   "src": "broll/cyt_sun_thousand_years.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_144t",
+   "start": 635.7,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_sun_thousand_years.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.8
+  },
+  {
+   "id": "cytomato_145",
+   "start": 638.5,
+   "kind": "raw",
+   "src": "broll/cyt_water_out.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94,
+   "noSplit": true
+  },
+  {
+   "id": "ov_pullquote_639",
+   "start": 638.5,
+   "dur": 5.73,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Take the water out, and the rot has nothing to swim in."
+  },
+  {
+   "id": "cytomato_146",
+   "start": 641.44,
+   "kind": "raw",
+   "src": "broll/cyt_paste_again.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.82,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_147",
+   "start": 643.26,
+   "kind": "raw",
+   "src": "broll/cyt_cut_long_way.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.76,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_148",
+   "start": 645.02,
+   "kind": "raw",
+   "src": "broll/cyt_thumb_seeds.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_149",
+   "start": 648.46,
+   "kind": "raw",
+   "src": "broll/cyt_cut_side_up.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.38,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_150",
+   "start": 650.84,
+   "kind": "raw",
+   "src": "broll/cyt_whisper_salt.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_151",
+   "start": 654.64,
+   "kind": "raw",
+   "src": "broll/cyt_salt_pulls_water.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_152",
+   "start": 658.6,
+   "kind": "raw",
+   "src": "broll/cyt_screens_raised.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_duelcolumns_659",
+   "start": 658.6,
+   "dur": 6.19,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Two ways to dry",
+   "leftName": "Sun and screens",
+   "rightName": "Oven / dehydrator",
+   "rows": [
+    {
+     "attr": "Costs nothing",
+     "leftWins": true
+    },
+    {
+     "attr": "2–4 days",
+     "leftWins": true
+    },
+    {
+     "attr": "In every night",
+     "leftWins": true
+    },
+    {
+     "attr": "135°F, 8–12 hours",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "cytomato_153",
+   "start": 663.38,
+   "kind": "raw",
+   "src": "broll/cyt_cheesecloth_flies.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.48,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_154",
+   "start": 665.86,
+   "kind": "raw",
+   "src": "broll/cyt_two_days_sun.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_155",
+   "start": 669.98,
+   "kind": "raw",
+   "src": "broll/cyt_carry_in_night.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_156",
+   "start": 672.86,
+   "kind": "raw",
+   "src": "broll/cyt_night_dew_screen.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_158",
+   "start": 679.7,
+   "kind": "raw",
+   "src": "broll/cyt_rainy_window.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_159",
+   "start": 683.46,
+   "kind": "raw",
+   "src": "broll/cyt_oven_low.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_160",
+   "start": 688.16,
+   "kind": "raw",
+   "src": "broll/cyt_oven_dial.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_688",
+   "start": 688.16,
+   "dur": 5.17,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Oven, lowest setting",
+   "value": 135,
+   "suffix": " °F",
+   "support": "8–12 hours · door propped open"
+  },
+  {
+   "id": "cytomato_161",
+   "start": 691.24,
+   "kind": "raw",
+   "src": "broll/cyt_wooden_spoon_door.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_162",
+   "start": 695.76,
+   "kind": "raw",
+   "src": "broll/cyt_steam_trapped.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.92,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_163",
+   "start": 699.68,
+   "kind": "raw",
+   "src": "broll/cyt_leathery_test.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_701",
+   "start": 701.16,
+   "dur": 5.75,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Done means",
+   "highlight": "leathery, not brittle",
+   "post": " — and not one bead of moisture."
+  },
+  {
+   "id": "cytomato_163t",
+   "start": 703.64,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_leathery_test.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "cytomato_164",
+   "start": 706.6,
+   "kind": "raw",
+   "src": "broll/cyt_squeeze_bead.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_165",
+   "start": 711.02,
+   "kind": "raw",
+   "src": "broll/cyt_bead_appears.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.98,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_166",
+   "start": 713,
+   "kind": "raw",
+   "src": "broll/cyt_mold_in_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_167",
+   "start": 716.68,
+   "kind": "raw",
+   "src": "broll/cyt_conditioning_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_flowsteps_717",
+   "start": 716.68,
+   "dur": 8.39,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "CONDITIONING",
+   "title": "The step everybody skips",
+   "nodes": [
+    {
+     "label": "Loose in a jar",
+     "sub": "two thirds full"
+    },
+    {
+     "label": "Shake once a day",
+     "sub": "for a week"
+    },
+    {
+     "label": "Fog on the glass",
+     "sub": "back to the heat"
+    }
+   ]
+  },
+  {
+   "id": "cytomato_167t",
+   "start": 720.64,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_conditioning_jar.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.4
+  },
+  {
+   "id": "cytomato_168",
+   "start": 723.04,
+   "kind": "raw",
+   "src": "broll/cyt_shake_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_168t",
+   "start": 727,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_shake_jar.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.5
+  },
+  {
+   "id": "cytomato_169",
+   "start": 728.5,
+   "kind": "raw",
+   "src": "broll/cyt_fog_inside_glass.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_169t",
+   "start": 732.46,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_fog_inside_glass.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_170",
+   "start": 737.5,
+   "kind": "raw",
+   "src": "broll/cyt_jars_dark_dried.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_740",
+   "start": 740.08,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Jarred tight, in the dark",
+   "value": 1,
+   "suffix": " year, easy",
+   "support": "leathery, conditioned, no fog"
+  },
+  {
+   "id": "cytomato_h171",
+   "start": 741.58,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_oil_warning.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.8
+  },
+  {
+   "id": "cytomato_172",
+   "start": 744.38,
+   "kind": "raw",
+   "src": "broll/cyt_oil_packed_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_172t",
+   "start": 748.34,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_oil_packed_jar.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "ov_mythtruth_749",
+   "start": 749.48,
+   "dur": 9.78,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Dried in oil keeps on the shelf",
+   "truth": "Oil seals the air out — and what grows without air is what you don't want.",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH"
+  },
+  {
+   "id": "cytomato_173",
+   "start": 752.04,
+   "kind": "raw",
+   "src": "broll/cyt_oil_seals_air.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_173t",
+   "start": 756,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_oil_seals_air.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84
+  },
+  {
+   "id": "cytomato_174",
+   "start": 758.84,
+   "kind": "raw",
+   "src": "broll/cyt_jar_in_fridge.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_175",
+   "start": 762.84,
+   "kind": "raw",
+   "src": "broll/cyt_garlic_in_oil.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_176",
+   "start": 766.56,
+   "kind": "raw",
+   "src": "broll/cyt_oil_on_plate.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_h177",
+   "start": 769.96,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_powder_favorite.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.52
+  },
+  {
+   "id": "cytomato_178",
+   "start": 773.48,
+   "kind": "raw",
+   "src": "broll/cyt_crisp_halves.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.72,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_179",
+   "start": 776.2,
+   "kind": "raw",
+   "src": "broll/cyt_grinder_dust.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_180",
+   "start": 779.36,
+   "kind": "raw",
+   "src": "broll/cyt_powder_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_779",
+   "start": 779.36,
+   "dur": 5.57,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "A bushel becomes",
+   "highlight": "tomato powder",
+   "post": " — paste any night of the year."
+  },
+  {
+   "id": "cytomato_181",
+   "start": 780.76,
+   "kind": "raw",
+   "src": "broll/cyt_spoon_and_water.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_181t",
+   "start": 784.72,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_spoon_and_water.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.94
+  },
+  {
+   "id": "cytomato_182",
+   "start": 786.66,
+   "kind": "raw",
+   "src": "broll/cyt_half_can_fridge.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.66,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_183",
+   "start": 789.32,
+   "kind": "raw",
+   "src": "broll/cyt_bushel_to_jars.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_789",
+   "start": 789.32,
+   "dur": 6.75,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "A whole bushel grinds down to",
+   "value": 2,
+   "suffix": " quart jars",
+   "support": "weighs nothing · keeps for years"
+  },
+  {
+   "id": "cytomato_183t",
+   "start": 793.28,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_bushel_to_jars.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_184",
+   "start": 799.42,
+   "kind": "raw",
+   "src": "broll/cyt_crock_forgotten.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_185",
+   "start": 804.02,
+   "kind": "raw",
+   "src": "broll/cyt_salt_brine_pour.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_186",
+   "start": 807.38,
+   "kind": "raw",
+   "src": "broll/cyt_no_vinegar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.62,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_188",
+   "start": 813.68,
+   "kind": "raw",
+   "src": "broll/cyt_crock_hero.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.9,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_189",
+   "start": 817.58,
+   "kind": "raw",
+   "src": "broll/cyt_bubbles_rising.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_189t",
+   "start": 821.54,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_bubbles_rising.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.38
+  },
+  {
+   "id": "cytomato_190",
+   "start": 822.92,
+   "kind": "raw",
+   "src": "broll/cyt_sauerkraut_crock.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.82,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_191",
+   "start": 824.74,
+   "kind": "raw",
+   "src": "broll/cyt_dill_pickles.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_191t",
+   "start": 828.7,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_dill_pickles.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_192",
+   "start": 833.1,
+   "kind": "raw",
+   "src": "broll/cyt_old_folks_still.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_193",
+   "start": 837.38,
+   "kind": "raw",
+   "src": "broll/cyt_cherry_small.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_837",
+   "start": 837.38,
+   "dur": 7.94,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "THE CROCK",
+   "title": "Pick them right",
+   "items": [
+    "Small and whole",
+    "Not one split",
+    "Pricked once with a needle",
+    "A grape or oak leaf"
+   ],
+   "stamp": "NO SPLITS"
+  },
+  {
+   "id": "cytomato_194",
+   "start": 840.4,
+   "kind": "raw",
+   "src": "broll/cyt_end_of_season.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_195",
+   "start": 843.3,
+   "kind": "raw",
+   "src": "broll/cyt_perfect_no_split.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_196",
+   "start": 846.72,
+   "kind": "raw",
+   "src": "broll/cyt_prick_needle.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_197",
+   "start": 850.16,
+   "kind": "raw",
+   "src": "broll/cyt_bobbing_balloons.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_198",
+   "start": 853.16,
+   "kind": "raw",
+   "src": "broll/cyt_salt_measure.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_853",
+   "start": 853.16,
+   "dur": 6.1,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Brine, per quart of water",
+   "value": 2.5,
+   "suffix": " tbsp salt",
+   "support": "pickling or kosher · never iodized"
+  },
+  {
+   "id": "cytomato_198t",
+   "start": 857.12,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_salt_measure.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.44
+  },
+  {
+   "id": "cytomato_199",
+   "start": 858.56,
+   "kind": "raw",
+   "src": "broll/cyt_salt_types.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_200",
+   "start": 862.88,
+   "kind": "raw",
+   "src": "broll/cyt_tap_water.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_201",
+   "start": 867.12,
+   "kind": "raw",
+   "src": "broll/cyt_well_bucket.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_201t",
+   "start": 871.08,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_well_bucket.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.86
+  },
+  {
+   "id": "cytomato_202",
+   "start": 872.94,
+   "kind": "raw",
+   "src": "broll/cyt_dill_head.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_202t",
+   "start": 876.9,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_dill_head.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.9
+  },
+  {
+   "id": "cytomato_203",
+   "start": 878.8,
+   "kind": "raw",
+   "src": "broll/cyt_leaves_tannin.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_204",
+   "start": 883.1,
+   "kind": "raw",
+   "src": "broll/cyt_firm_fermented.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_204t",
+   "start": 887.06,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_firm_fermented.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_205",
+   "start": 891.68,
+   "kind": "raw",
+   "src": "broll/cyt_tomatoes_in_crock.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_206",
+   "start": 895.7,
+   "kind": "raw",
+   "src": "broll/cyt_under_the_brine.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_896",
+   "start": 895.7,
+   "dur": 4.89,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Not negotiable:",
+   "highlight": "everything stays under the brine",
+   "post": "."
+  },
+  {
+   "id": "cytomato_207",
+   "start": 898.48,
+   "kind": "raw",
+   "src": "broll/cyt_mold_above_brine.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.58,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_208",
+   "start": 901.06,
+   "kind": "raw",
+   "src": "broll/cyt_stone_weight.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_208t",
+   "start": 905.02,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_stone_weight.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.44
+  },
+  {
+   "id": "cytomato_209",
+   "start": 907.46,
+   "kind": "raw",
+   "src": "broll/cyt_counter_three_days.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.64,
+   "noSplit": true
+  },
+  {
+   "id": "ov_flowsteps_907",
+   "start": 907.46,
+   "dur": 9.68,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "THE SOUR WAY",
+   "title": "How the crock goes",
+   "nodes": [
+    {
+     "label": "Brine over, weighted down",
+     "sub": "all of it under"
+    },
+    {
+     "label": "3–5 days on the counter",
+     "sub": "cloudy and sour"
+    },
+    {
+     "label": "Then the coldest corner",
+     "sub": "keeps for months"
+    }
+   ]
+  },
+  {
+   "id": "cytomato_210",
+   "start": 910.1,
+   "kind": "raw",
+   "src": "broll/cyt_cloud_up.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_210t",
+   "start": 914.06,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_cloud_up.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.98
+  },
+  {
+   "id": "cytomato_211",
+   "start": 916.04,
+   "kind": "raw",
+   "src": "broll/cyt_coldest_corner.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_211t",
+   "start": 920,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_coldest_corner.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.78
+  },
+  {
+   "id": "ov_checklistreveal_922",
+   "start": 922,
+   "dur": 7.85,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "READING THE CROCK",
+   "title": "Sour or rotten",
+   "items": [
+    "White film = skim it",
+    "Cloudy and sharp = right",
+    "Slimy or foul = compost"
+   ],
+   "stamp": "TRUST YOUR NOSE"
+  },
+  {
+   "id": "cytomato_212",
+   "start": 923.78,
+   "kind": "raw",
+   "src": "broll/cyt_white_film.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.62,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_213",
+   "start": 926.4,
+   "kind": "raw",
+   "src": "broll/cyt_skim_off.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.62,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_214",
+   "start": 929.02,
+   "kind": "raw",
+   "src": "broll/cyt_ropey_brine.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_214t",
+   "start": 932.98,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_ropey_brine.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_215",
+   "start": 937.04,
+   "kind": "raw",
+   "src": "broll/cyt_compost_heap.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_939",
+   "start": 938.68,
+   "dur": 4.96,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Sour and sharp is right.",
+   "highlight": "Rotten is rotten",
+   "post": " — your nose knows."
+  },
+  {
+   "id": "cytomato_216",
+   "start": 941.32,
+   "kind": "raw",
+   "src": "broll/cyt_nose_knows.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_h217",
+   "start": 948,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_fourth_way.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.64
+  },
+  {
+   "id": "cytomato_218",
+   "start": 950.64,
+   "kind": "raw",
+   "src": "broll/cyt_no_jar_no_heat.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_218t",
+   "start": 954.6,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_no_jar_no_heat.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "cytomato_219",
+   "start": 957.66,
+   "kind": "raw",
+   "src": "broll/cyt_whole_raw_tomato.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_220",
+   "start": 960.82,
+   "kind": "raw",
+   "src": "broll/cyt_frost_garden.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.08,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_221",
+   "start": 962.9,
+   "kind": "raw",
+   "src": "broll/cyt_breaker_recall.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_221t",
+   "start": 966.86,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_breaker_recall.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "cytomato_222",
+   "start": 970,
+   "kind": "raw",
+   "src": "broll/cyt_where_how_slow.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_h223",
+   "start": 978.6,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_two_ways.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6
+  },
+  {
+   "id": "ov_flowsteps_979",
+   "start": 978.6,
+   "dur": 9.3,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "METHOD ONE",
+   "title": "Hang the whole plant",
+   "nodes": [
+    {
+     "label": "Day before the frost",
+     "sub": "pull the whole plant"
+    },
+    {
+     "label": "Hang it upside down",
+     "sub": "dark, cool, dry"
+    },
+    {
+     "label": "Pick what turned red",
+     "sub": "six to ten weeks"
+    }
+   ]
+  },
+  {
+   "id": "cytomato_224",
+   "start": 980,
+   "kind": "raw",
+   "src": "broll/cyt_frost_coming.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_225",
+   "start": 984.94,
+   "kind": "raw",
+   "src": "broll/cyt_pull_whole_plant.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.64,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_226",
+   "start": 988.58,
+   "kind": "raw",
+   "src": "broll/cyt_shake_soil.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_227",
+   "start": 990.02,
+   "kind": "raw",
+   "src": "broll/cyt_hang_upside_down.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_228",
+   "start": 992.9,
+   "kind": "raw",
+   "src": "broll/cyt_dark_cool_dry.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_229",
+   "start": 996.46,
+   "kind": "raw",
+   "src": "broll/cyt_ripening_on_vine.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_1000",
+   "start": 999.96,
+   "dur": 4.85,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Ripening off a hanging vine",
+   "value": 8,
+   "prefix": "6–",
+   "suffix": " weeks",
+   "support": "sometimes ten"
+  },
+  {
+   "id": "cytomato_229t",
+   "start": 1000.42,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_ripening_on_vine.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.22
+  },
+  {
+   "id": "cytomato_230",
+   "start": 1002.64,
+   "kind": "raw",
+   "src": "broll/cyt_pick_from_hanging.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_231",
+   "start": 1005.7,
+   "kind": "raw",
+   "src": "broll/cyt_newspaper_box_hero.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_1006",
+   "start": 1005.7,
+   "dur": 10.32,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "The one I'd start with",
+   "title": "The newspaper box",
+   "steps": [
+    {
+     "title": "Pick the ones with the ring",
+     "sub": "wipe them dry"
+    },
+    {
+     "title": "Wrap each in newspaper",
+     "sub": "one on its own"
+    },
+    {
+     "title": "One layer, none touching",
+     "sub": "never stack"
+    }
+   ]
+  },
+  {
+   "id": "cytomato_231t",
+   "start": 1009.66,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_newspaper_box_hero.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.04
+  },
+  {
+   "id": "cytomato_232",
+   "start": 1010.7,
+   "kind": "raw",
+   "src": "broll/cyt_pale_ring_pick.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.7,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_233",
+   "start": 1013.4,
+   "kind": "raw",
+   "src": "broll/cyt_wipe_dry_cloth.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.16,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_234",
+   "start": 1015.56,
+   "kind": "raw",
+   "src": "broll/cyt_wrap_each_one.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.76,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_235",
+   "start": 1018.32,
+   "kind": "raw",
+   "src": "broll/cyt_single_layer_box.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_236",
+   "start": 1021.82,
+   "kind": "raw",
+   "src": "broll/cyt_stacked_lost_row.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_h237",
+   "start": 1025.94,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_temperature_boss.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.92
+  },
+  {
+   "id": "ov_beforeafter_1028",
+   "start": 1027.98,
+   "dur": 8.85,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Temperature is the throttle",
+   "beforeLabel": "50–55°F: two months",
+   "afterLabel": "65–70°F: two weeks",
+   "caption": "cool box below, a handful upstairs to finish"
+  },
+  {
+   "id": "cytomato_238",
+   "start": 1029.86,
+   "kind": "raw",
+   "src": "broll/cyt_thermometer_fifty.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_239",
+   "start": 1031.38,
+   "kind": "raw",
+   "src": "broll/cyt_slow_ripening_shelf.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_240",
+   "start": 1035.78,
+   "kind": "raw",
+   "src": "broll/cyt_warm_kitchen_sill.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_241",
+   "start": 1039.34,
+   "kind": "raw",
+   "src": "broll/cyt_big_box_cellar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_241t",
+   "start": 1043.3,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_big_box_cellar.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.38
+  },
+  {
+   "id": "cytomato_242",
+   "start": 1044.68,
+   "kind": "raw",
+   "src": "broll/cyt_handful_upstairs.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.58,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_243",
+   "start": 1047.26,
+   "kind": "raw",
+   "src": "broll/cyt_steady_supply.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_244",
+   "start": 1052.04,
+   "kind": "raw",
+   "src": "broll/cyt_weekly_check.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_1052",
+   "start": 1052.04,
+   "dur": 6.51,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "",
+   "title": "Minding the box",
+   "steps": [
+    {
+     "title": "Take out the ripe ones",
+     "sub": ""
+    },
+    {
+     "title": "Take out anything soft",
+     "sub": "that same day"
+    },
+    {
+     "title": "Re-wrap the rest",
+     "sub": ""
+    }
+   ]
+  },
+  {
+   "id": "cytomato_245",
+   "start": 1056.22,
+   "kind": "raw",
+   "src": "broll/cyt_pull_the_bad_one.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.8,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_246",
+   "start": 1059.02,
+   "kind": "raw",
+   "src": "broll/cyt_one_takes_the_box.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_1059",
+   "start": 1059.02,
+   "dur": 5.21,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "That's what the paper is for:",
+   "highlight": "one bad one takes the box",
+   "post": "."
+  },
+  {
+   "id": "cytomato_246t",
+   "start": 1062.98,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_one_takes_the_box.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "cytomato_h247",
+   "start": 1071.7,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_big_warning.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.66
+  },
+  {
+   "id": "cytomato_248",
+   "start": 1074.36,
+   "kind": "raw",
+   "src": "broll/cyt_tomato_in_fridge.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_1074",
+   "start": 1074.36,
+   "dur": 9.78,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "The fridge keeps a tomato longer",
+   "truth": "Below 50°F it goes mealy and the flavour shuts down. It never comes back.",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH"
+  },
+  {
+   "id": "cytomato_248t",
+   "start": 1078.32,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_tomato_in_fridge.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.48
+  },
+  {
+   "id": "cytomato_249",
+   "start": 1079.8,
+   "kind": "raw",
+   "src": "broll/cyt_cold_thermometer.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.64,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_250",
+   "start": 1081.44,
+   "kind": "raw",
+   "src": "broll/cyt_mealy_flesh.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_250t",
+   "start": 1085.4,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_mealy_flesh.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.58
+  },
+  {
+   "id": "cytomato_251",
+   "start": 1088.98,
+   "kind": "raw",
+   "src": "broll/cyt_dull_pink_cut.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_251t",
+   "start": 1092.94,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_dull_pink_cut.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "ov_bigstatreveal_1094",
+   "start": 1093.96,
+   "dur": 4.71,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Chilling injury starts below",
+   "value": 50,
+   "suffix": " °F",
+   "support": "a one-way door"
+  },
+  {
+   "id": "cytomato_252",
+   "start": 1095.92,
+   "kind": "raw",
+   "src": "broll/cyt_store_january.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_252t",
+   "start": 1099.88,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_store_january.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78
+  },
+  {
+   "id": "cytomato_253",
+   "start": 1102.66,
+   "kind": "raw",
+   "src": "broll/cyt_refrigerated_truck.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_253t",
+   "start": 1106.62,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_refrigerated_truck.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.48
+  },
+  {
+   "id": "cytomato_254",
+   "start": 1108.1,
+   "kind": "raw",
+   "src": "broll/cyt_cellar_right_place.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_254t",
+   "start": 1112.06,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_cellar_right_place.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "ov_duelcolumns_1116",
+   "start": 1116.16,
+   "dur": 8.82,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Where it waits out winter",
+   "leftName": "Cool dark room",
+   "rightName": "The refrigerator",
+   "rows": [
+    {
+     "attr": "Keeps its flavour",
+     "leftWins": true
+    },
+    {
+     "attr": "Two months of fruit",
+     "leftWins": true
+    },
+    {
+     "attr": "No wire, no bill",
+     "leftWins": true
+    },
+    {
+     "attr": "Mealy and pale, for good",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "cytomato_255",
+   "start": 1118.16,
+   "kind": "raw",
+   "src": "broll/cyt_kitchen_machine.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_h256",
+   "start": 1121,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_cta_room.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "cytomato_257",
+   "start": 1132.14,
+   "kind": "raw",
+   "src": "broll/cyt_christmas_bowl.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_257t",
+   "start": 1136.1,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_christmas_bowl.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.68
+  },
+  {
+   "id": "cytomato_258",
+   "start": 1137.78,
+   "kind": "raw",
+   "src": "broll/cyt_guest_picks_up.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_258t",
+   "start": 1141.74,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_guest_picks_up.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.58
+  },
+  {
+   "id": "cytomato_259",
+   "start": 1143.32,
+   "kind": "raw",
+   "src": "broll/cyt_green_stragglers.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_260",
+   "start": 1147.12,
+   "kind": "raw",
+   "src": "broll/cyt_cold_takes_all.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_261",
+   "start": 1151.48,
+   "kind": "raw",
+   "src": "broll/cyt_green_relish.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_1151",
+   "start": 1151.48,
+   "dur": 7.05,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "STRAGGLERS",
+   "title": "The green ones",
+   "items": [
+    "Green tomato relish",
+    "Sliced thick and fried",
+    "Straight into the crock"
+   ],
+   "stamp": "WASTE NONE"
+  },
+  {
+   "id": "cytomato_262",
+   "start": 1152.88,
+   "kind": "raw",
+   "src": "broll/cyt_fried_green.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_262t",
+   "start": 1156.84,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_fried_green.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.32
+  },
+  {
+   "id": "cytomato_263",
+   "start": 1159.16,
+   "kind": "raw",
+   "src": "broll/cyt_four_ways_table.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.94,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_1159",
+   "start": 1159.16,
+   "dur": 8.43,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "All four",
+   "title": "Four ways to keep a tomato",
+   "steps": [
+    {
+     "title": "The jar",
+     "sub": "the air"
+    },
+    {
+     "title": "The screen",
+     "sub": "the water"
+    },
+    {
+     "title": "The crock",
+     "sub": "turn it sour"
+    },
+    {
+     "title": "The cool room",
+     "sub": "slow the clock"
+    }
+   ]
+  },
+  {
+   "id": "cytomato_264",
+   "start": 1161.1,
+   "kind": "raw",
+   "src": "broll/cyt_recap_jar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.02,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_265",
+   "start": 1163.12,
+   "kind": "raw",
+   "src": "broll/cyt_recap_dried.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.42,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_266",
+   "start": 1165.54,
+   "kind": "raw",
+   "src": "broll/cyt_recap_crock.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_267",
+   "start": 1168.98,
+   "kind": "raw",
+   "src": "broll/cyt_recap_room.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_267t",
+   "start": 1172.94,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_recap_room.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.54
+  },
+  {
+   "id": "cytomato_268",
+   "start": 1175.48,
+   "kind": "raw",
+   "src": "broll/cyt_nothing_humming.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_h269",
+   "start": 1180.34,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_no_money.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_pullquote_1180",
+   "start": 1180.34,
+   "dur": 7.01,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "There is no money to be made in teaching a person to keep their own food."
+  },
+  {
+   "id": "cytomato_270",
+   "start": 1189.06,
+   "kind": "raw",
+   "src": "broll/cyt_cool_dark_foundation.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_270t",
+   "start": 1193.02,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_cool_dark_foundation.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "cytomato_h271",
+   "start": 1196.18,
+   "kind": "raw",
+   "src": "img/cytomato/cytp_p_cta_close.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_ctacard_1198",
+   "start": 1198.16,
+   "dur": 10.51,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "The piece most houses are missing",
+   "title": "The Plain Almanac",
+   "bullet": "Cooling a room without electricity — plus 90 plain methods.",
+   "price": 0,
+   "cta": "LINK IN THE DESCRIPTION"
+  },
+  {
+   "id": "cytomato_272",
+   "start": 1208.38,
+   "kind": "raw",
+   "src": "broll/cyt_old_ways_notebook.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_272t",
+   "start": 1212.34,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_old_ways_notebook.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.56
+  },
+  {
+   "id": "cytomato_273",
+   "start": 1214.9,
+   "kind": "raw",
+   "src": "broll/cyt_four_choices.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_273t",
+   "start": 1218.86,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_four_choices.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.66
+  },
+  {
+   "id": "cytomato_274",
+   "start": 1220.52,
+   "kind": "raw",
+   "src": "broll/cyt_cellar_steps_next.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_275",
+   "start": 1224.2,
+   "kind": "raw",
+   "src": "broll/cyt_cellar_built.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96,
+   "noSplit": true
+  },
+  {
+   "id": "cytomato_275t",
+   "start": 1228.16,
+   "kind": "raw",
+   "src": "img/cytomato/cyt_cellar_built.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  },
+  {
+   "id": "cytomato_277",
+   "start": 1236.42,
+   "kind": "raw",
+   "src": "broll/cyt_garden_evening.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06,
+   "noSplit": true
+  }
+ ]
+}

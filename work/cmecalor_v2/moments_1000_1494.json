@@ -1,0 +1,352 @@
+[
+  {
+    "start_ms": 1042060,
+    "end_ms": 1044760,
+    "caption_exact": "La extensión también forma parte del sistema.",
+    "nouns": ["extensión para exterior", "sistema de respaldo"],
+    "action": "Claudio ordena y presenta la extensión completa junto al sistema de respaldo, antes de conectarla.",
+    "safety": "Generador apagado; ambos extremos de la extensión visibles y desconectados; sin conductores expuestos.",
+    "prompt_es": "Usar el retrato de referencia de Claudio como identidad obligatoria y conservar exactamente su rostro, edad, cabello, piel y complexión. Fotografía horizontal 16:9 extremadamente fotorrealista, casual, tomada con un celular común en el patio real de una casa, luz natural corriente, sin estética cinematográfica, sin desenfoque artificial, sin texto sobreimpreso ni marcas. Claudio está arrodillado y ordena con ambas manos una extensión gruesa para exterior, completa y sin daños, al lado de un generador portátil apagado y una fuente de respaldo cerrada. Los dos extremos del cable se ven claramente desconectados y apoyados en el piso; manos anatómicamente correctas y topología del cable inequívoca.",
+    "agnes_motion_es": "Adjuntar la foto generada como <Picture 1> y el retrato de identidad de Claudio como <Picture 2>. Animar un movimiento documental mínimo: Claudio acomoda una sola vuelta de la extensión y mira sus dos extremos desconectados. Mantener idénticos rostro, manos, cable, conectores y fondo; cámara de celular casi fija; no conectar nada, no agregar cables, sin morphing."
+  },
+  {
+    "start_ms": 1054620,
+    "end_ms": 1060920,
+    "caption_exact": "Un cable demasiado fino puede perder tensión, calentarse y hacer que el motor arranque mal.",
+    "nouns": ["cable demasiado fino", "tensión", "calor", "motor"],
+    "action": "Claudio compara el diámetro de un cable fino con una extensión exterior apropiada y señala el cable fino como causa del problema.",
+    "safety": "Ambos cables están totalmente desconectados; el motor permanece dentro de su carcasa cerrada; no se representa calentamiento activo ni una falla energizada.",
+    "prompt_es": "Usar el retrato de referencia de Claudio como identidad obligatoria y conservar exactamente su rostro y proporciones. Foto horizontal 16:9 extremadamente realista de celular, casual, en un pequeño taller doméstico real, luz ambiente normal, nada cinematográfico, sin texto añadido ni logos. Claudio sostiene entre los dedos un cable de extensión demasiado fino y, con la otra mano, una extensión para exterior claramente más gruesa; detrás se ve la carcasa cerrada del motor ventilador de una calefacción. Los dos cables están desenchufados, sus clavijas descansan sobre la mesa y el calibre diferente se entiende de inmediato. Manos correctas, cinco dedos por mano, cables continuos y conectores físicamente posibles.",
+    "agnes_motion_es": "Usar <Picture 1> como escena exacta y <Picture 2> como identidad de Claudio. Claudio acerca lentamente los dos cables para comparar sus diámetros y señala el más fino; el motor sigue cerrado y quieto. Preservar manos, clavijas y continuidad de cada cable; sin calentamiento, chispas, humo ni nuevos objetos."
+  },
+  {
+    "start_ms": 1061300,
+    "end_ms": 1067220,
+    "caption_exact": "No te voy a leer una medida universal porque cambia con la tensión, la longitud y el consumo.",
+    "nouns": ["tensión", "longitud", "consumo", "extensión"],
+    "action": "Claudio mide la longitud de la extensión y contrasta ese dato con la tensión y el consumo medidos mediante instrumentos cerrados.",
+    "safety": "Medición mediante cinta métrica y medidor enchufable certificado, con todos los terminales cerrados; no hay puntas de multímetro ni conductores expuestos.",
+    "prompt_es": "Usar el retrato de Claudio como referencia de identidad obligatoria. Fotografía documental horizontal 16:9 hiperrealista de celular, casual y sin look cinematográfico, tomada en un garaje doméstico iluminado normalmente, sin texto gráfico ni marcas. Claudio mide con una cinta métrica una extensión extendida en el suelo; junto a él hay un medidor enchufable cerrado conectado de forma normal a una carga de prueba y un pequeño cuaderno donde compara longitud, tensión y consumo. La extensión recorre el suelo sin nudos, los enchufes son reales y las manos están bien formadas. El foco visual es Claudio midiendo la longitud, no un panel genérico.",
+    "agnes_motion_es": "<Picture 1> es el cuadro y la disposición obligatoria; <Picture 2> fija la identidad de Claudio. Animar a Claudio extendiendo unos centímetros la cinta métrica y mirando el medidor cerrado. No mover ni reconectar enchufes, no alterar números ni cableado; cámara fija y movimiento natural muy leve."
+  },
+  {
+    "start_ms": 1067720,
+    "end_ms": 1070980,
+    "caption_exact": "Usa la tabla correspondiente a tu país y deja margen.",
+    "nouns": ["tabla de calibre de cable", "país", "margen"],
+    "action": "Claudio consulta una tabla impresa de calibre por distancia y elige una extensión un calibre más robusta para dejar margen.",
+    "safety": "Todo el material está desconectado sobre una mesa; no se muestran instrucciones universales ni valores eléctricos potencialmente engañosos.",
+    "prompt_es": "Conservar exactamente la identidad de Claudio usando su retrato de referencia. Foto horizontal 16:9 extremadamente fotorrealista, tomada de manera casual con celular sobre una mesa de trabajo real, luz doméstica plana, nada cinematográfico, sin marcas ni texto sobreimpreso. Claudio consulta una tabla impresa sencilla de selección de extensión por longitud y consumo, y con el dedo elige una extensión exterior un calibre más gruesa que la mínima; dos tramos de cable desconectados están alineados junto a la hoja. Evitar párrafos legibles o letras inventadas: sólo una cuadrícula técnica limpia y marcas de calibre simples. Manos correctas y objetos físicamente coherentes.",
+    "agnes_motion_es": "Usar <Picture 1> para escena y objetos y <Picture 2> para el rostro de Claudio. Movimiento mínimo: el dedo de Claudio recorre una fila de la tabla y luego toca el cable más grueso. Mantener tabla, manos y cables sin deformaciones; no crear texto nuevo ni cambiar calibres."
+  },
+  {
+    "start_ms": 1085740,
+    "end_ms": 1089440,
+    "caption_exact": "Y antes de cargar combustible, se apaga y se deja enfriar.",
+    "nouns": ["generador", "combustible", "motor"],
+    "action": "Claudio coloca el interruptor del generador en apagado y comprueba a distancia que el motor se enfríe antes de acercar combustible.",
+    "safety": "Generador al aire libre, apagado, cable de bujía y salidas sin manipulación; bidón cerrado a varios metros; comprobación con termómetro infrarrojo.",
+    "prompt_es": "Usar el retrato de referencia para reproducir exactamente a Claudio. Foto horizontal 16:9 extremadamente realista de celular en un patio común, luz natural, encuadre casual, sin estética de anuncio ni cine, sin logos. Claudio acaba de poner en OFF el interruptor de un generador portátil situado al aire libre y ahora apunta un termómetro infrarrojo al bloque del motor para esperar que se enfríe. Un bidón homologado de combustible, cerrado, está claramente lejos del generador. No hay cables conectados, humo, llama ni derrames; manos y controles mecánicamente correctos.",
+    "agnes_motion_es": "<Picture 1> define toda la escena y <Picture 2> la identidad. Animar a Claudio retirando la mano del interruptor OFF y levantando suavemente el termómetro infrarrojo hacia el motor. El generador permanece apagado e inmóvil; el bidón sigue cerrado y lejos; sin humo, combustible ni cambios de objeto."
+  },
+  {
+    "start_ms": 1089860,
+    "end_ms": 1096560,
+    "caption_exact": "Derramar gasolina sobre un motor caliente es una forma muy rápida de convertir un apagón en un incendio.",
+    "nouns": ["gasolina", "motor caliente", "incendio"],
+    "action": "Claudio detiene el intento de repostar y mantiene el recipiente cerrado lejos del motor que todavía marca temperatura alta.",
+    "safety": "No mostrar vertido, llama ni incendio actuado; el recipiente permanece cerrado; generador apagado al aire libre y Claudio verifica la temperatura sin tocar el motor.",
+    "prompt_es": "Mantener exactamente la identidad de Claudio a partir del retrato de referencia. Fotografía 16:9 hiperrealista de celular, documental y casual, luz exterior corriente, cero dramatización cinematográfica. Un generador portátil está apagado al aire libre; un termómetro infrarrojo en la mano de Claudio apunta al motor todavía caliente. Con la otra mano Claudio hace un gesto claro de alto frente a un bidón de gasolina homologado que permanece cerrado y apartado. No hay gasolina derramada, no hay fuego, humo ni una persona vertiendo combustible. Manos correctas, rostro natural y objetos sin deformaciones.",
+    "agnes_motion_es": "Usar <Picture 1> como escena exacta y <Picture 2> como identidad. Claudio levanta apenas la palma en señal de alto mientras sostiene estable el termómetro. Mantener el bidón cerrado y el generador apagado; prohibido animar derrames, llamas, humo o apertura del depósito."
+  },
+  {
+    "start_ms": 1154360,
+    "end_ms": 1156240,
+    "caption_exact": "Cierra cortinas al caer el sol",
+    "nouns": ["cortinas", "sol"],
+    "action": "Claudio cierra por completo las cortinas de una ventana cuando empieza a anochecer.",
+    "safety": "Acción doméstica normal; ventana cerrada y despejada de calefactores o llamas.",
+    "prompt_es": "Usar el retrato de referencia para conservar exactamente la identidad de Claudio. Foto horizontal 16:9 extremadamente fotorrealista y casual de celular dentro de una sala común, luz real de atardecer, sin iluminación cinematográfica, sin texto. Claudio toma con ambas manos cortinas domésticas y las cierra sobre una ventana al caer el sol; afuera se ve un cielo de atardecer cotidiano. No hay calefactor ni vela junto a la tela. Manos naturales, tela y pliegues realistas, expresión espontánea.",
+    "agnes_motion_es": "<Picture 1> es la escena base y <Picture 2> la identidad. Animar a Claudio deslizando suavemente ambas cortinas hasta juntarlas; cambio de luz mínimo y natural. No modificar ventana, manos, rostro ni hora del día; cámara de celular fija."
+  },
+  {
+    "start_ms": 1156680,
+    "end_ms": 1159960,
+    "caption_exact": "aprovecha la radiación solar durante el día si aparece.",
+    "nouns": ["radiación solar", "cortinas", "habitación"],
+    "action": "Claudio abre las cortinas durante el día para dejar entrar el sol directo en la habitación.",
+    "safety": "Acción doméstica normal; ninguna fuente caliente toca las cortinas.",
+    "prompt_es": "Reproducir exactamente a Claudio usando su retrato como referencia de identidad. Fotografía horizontal 16:9 hiperrealista, casual, tomada con celular en una habitación real durante el día, luz solar natural sin look cinematográfico, sin texto ni logos. Claudio abre las cortinas con ambas manos y deja entrar un parche visible de sol sobre el piso y la pared; la ventana está cerrada y el ambiente es sencillo. Manos anatómicas, tela realista, nada escenificado ni publicitario.",
+    "agnes_motion_es": "Usar la imagen de escena como <Picture 1> y el retrato de Claudio como <Picture 2>. Claudio separa unos centímetros las cortinas y entra un poco más de luz solar real. Mantener rostro, manos, ventana y tela idénticos; sin flare cinematográfico ni movimiento de cámara."
+  },
+  {
+    "start_ms": 1206100,
+    "end_ms": 1209600,
+    "caption_exact": "No uses la cocina ni el horno para calentar la vivienda.",
+    "nouns": ["cocina", "horno", "vivienda"],
+    "action": "Claudio gira la perilla del horno a apagado y cierra la puerta, dejando claro que no se usa para calefaccionar.",
+    "safety": "Horno apagado, sin llama y con la puerta cerrada; no representar la práctica prohibida en funcionamiento.",
+    "prompt_es": "Mantener exactamente el rostro y cuerpo de Claudio a partir de la referencia. Foto horizontal 16:9 extremadamente realista de celular en una cocina doméstica corriente, luz ambiente, sin dramatismo cinematográfico ni texto. Claudio gira con una mano la perilla del horno hasta la posición de apagado y con la otra termina de cerrar la puerta del horno. Los quemadores están apagados, no hay llama y la cocina no se presenta como fuente de calor. Dedos correctos y perillas físicamente coherentes.",
+    "agnes_motion_es": "<Picture 1> fija cocina, horno y encuadre; <Picture 2> fija a Claudio. Animar únicamente un pequeño giro de la perilla hacia OFF y el cierre final de la puerta. Ningún quemador se enciende; no agregar llama, vapor ni texto."
+  },
+  {
+    "start_ms": 1210120,
+    "end_ms": 1214500,
+    "caption_exact": "No lleves una parrilla, bracero o carbón a un ambiente cerrado.",
+    "nouns": ["parrilla", "bracero", "carbón", "ambiente cerrado"],
+    "action": "Claudio deja una parrilla de carbón fría en el patio y cierra la puerta de la casa, sin introducirla.",
+    "safety": "Parrilla completamente apagada y fría, sin brasas ni humo; permanece al aire libre y lejos de la puerta.",
+    "prompt_es": "Usar el retrato de referencia para representar exactamente a Claudio. Foto horizontal 16:9 de celular, extremadamente fotorrealista y casual, en la puerta trasera de una casa real, luz cotidiana, nada cinematográfico. Claudio deja una pequeña parrilla de carbón totalmente fría y apagada varios metros afuera en el patio mientras cierra la puerta de la vivienda; una bolsa cerrada de carbón permanece junto a la parrilla. El interior queda limpio y sin parrilla ni bracero. Sin fuego, brasas o humo; manos correctas y distancias claras.",
+    "agnes_motion_es": "Usar <Picture 1> como disposición obligatoria y <Picture 2> como identidad. Claudio da un paso hacia el interior y comienza a cerrar la puerta, dejando la parrilla inmóvil afuera. No encender carbón, no mover la parrilla al interior, sin humo ni morphing."
+  },
+  {
+    "start_ms": 1215000,
+    "end_ms": 1217520,
+    "caption_exact": "No dejes velas encendidas mientras duermen",
+    "nouns": ["velas encendidas", "sueño"],
+    "action": "Claudio apaga una vela con un apagavelas antes de salir del dormitorio.",
+    "safety": "Usar apagavelas; la llama queda apagada; vela sobre base estable y lejos de textiles.",
+    "prompt_es": "Conservar exactamente la identidad de Claudio desde el retrato de referencia. Fotografía horizontal 16:9 hiperrealista, casual de celular, en un dormitorio doméstico real antes de dormir, luz ambiente normal, sin estética cinematográfica ni texto. Claudio usa un apagavelas metálico para extinguir una única vela sobre una mesa despejada, lejos de cortinas, ropa y cama. La otra mano permanece libre y bien formada; se entiende que apaga la vela antes de salir, no que la deja encendida.",
+    "agnes_motion_es": "<Picture 1> es el cuadro exacto y <Picture 2> la identidad de Claudio. Animar el apagavelas descendiendo sobre la llama y una extinción suave inmediata. No generar fuego adicional, humo excesivo ni objetos nuevos; manos y vela estables."
+  },
+  {
+    "start_ms": 1218020,
+    "end_ms": 1221620,
+    "caption_exact": "no conectes un calefactor eléctrico a una estación pequeña",
+    "nouns": ["calefactor eléctrico", "estación pequeña", "enchufe"],
+    "action": "Claudio desconecta correctamente el calefactor eléctrico de una estación de energía pequeña sujetando la clavija.",
+    "safety": "Ambos equipos apagados; manos secas; Claudio sujeta la clavija y no tira del cable; sin regletas ni adaptadores.",
+    "prompt_es": "Usar el retrato de referencia para mantener exactamente a Claudio. Foto horizontal 16:9 extremadamente realista, casual, tomada con celular en una sala común, luz doméstica plana, sin cine ni texto. Una estación de energía pequeña está apagada en el piso y un calefactor eléctrico compacto también está apagado. Claudio, arrodillado, sostiene correctamente el cuerpo de la clavija con una mano y acaba de retirarla de la salida de la estación; el conector se ve separado unos centímetros y la otra mano estabiliza el calefactor. Cable continuo, manos de cinco dedos, ninguna chispa o calor.",
+    "agnes_motion_es": "<Picture 1> fija exactamente el enchufe, la estación y el calefactor; <Picture 2> fija la identidad de Claudio. Animar una retirada corta y recta de la clavija, sujetándola por el cuerpo. Mantener ambos equipos apagados; no deformar cable, toma ni dedos; sin chispas."
+  },
+  {
+    "start_ms": 1225540,
+    "end_ms": 1228880,
+    "caption_exact": "El tamaño físico no dice nada, mira los vatios",
+    "nouns": ["tamaño físico", "vatios", "placa de potencia"],
+    "action": "Claudio gira un calefactor compacto apagado y señala con el dedo su placa real de potencia.",
+    "safety": "Calefactor desenchufado y frío; Claudio sólo inspecciona la placa exterior.",
+    "prompt_es": "Mantener exactamente la identidad de Claudio usando el retrato de referencia. Foto horizontal 16:9 hiperrealista de celular, casual, sobre una mesa de trabajo doméstica, luz normal, sin look cinematográfico, sin texto añadido ni logos. Claudio sostiene un calefactor eléctrico pequeño, claramente desenchufado, y señala la placa de potencia moldeada en la parte trasera; la cifra grande y simple de 1500 W se ve nítida y físicamente impresa en la etiqueta real del aparato. La clavija descansa visible sobre la mesa. Manos correctas y aparato no deformado.",
+    "agnes_motion_es": "Usar <Picture 1> como cuadro y aparato obligatorios y <Picture 2> como identidad. Claudio gira apenas el calefactor y posa el índice junto a la cifra de vatios. Conservar exactamente etiqueta, clavija y dedos; no inventar texto, no encender el aparato."
+  },
+  {
+    "start_ms": 1231260,
+    "end_ms": 1236000,
+    "caption_exact": "Si el apagón viene con frío extremo y la casa puede acercarse al congelamiento,",
+    "nouns": ["apagón", "frío extremo", "casa", "congelamiento"],
+    "action": "Claudio comprueba un termómetro interior muy bajo junto a una ventana helada durante el apagón.",
+    "safety": "Inspección visual segura; sin tocar tuberías congeladas ni usar llama para calentarlas.",
+    "prompt_es": "Usar el retrato de referencia como identidad obligatoria de Claudio. Foto horizontal 16:9 extremadamente fotorrealista y casual de celular dentro de una casa real durante un apagón diurno, iluminación sólo de ventana, sin estética cinematográfica. Claudio sostiene un termómetro doméstico frente a una ventana con escarcha por fuera y mira la lectura baja con atención; lleva ropa seca por capas. No hay velas, llamas ni calefactores improvisados. Termómetro, manos y escarcha físicamente realistas, sin texto gráfico.",
+    "agnes_motion_es": "<Picture 1> define escena, termómetro y luz; <Picture 2> define a Claudio. Animar a Claudio acercando un poco el termómetro a la vista y exhalando suavemente por el frío. No alterar la lectura ni crear hielo en el interior; cámara quieta."
+  },
+  {
+    "start_ms": 1246260,
+    "end_ms": 1250380,
+    "caption_exact": "No espere a que una tubería reviente para aprender dónde se corta.",
+    "nouns": ["tubería", "llave de corte"],
+    "action": "Claudio identifica y coloca una etiqueta visible en la llave general antes de que exista una rotura.",
+    "safety": "Tubería íntegra y seca; no se fuerza la válvula ni se representa una inundación.",
+    "prompt_es": "Reproducir exactamente a Claudio a partir del retrato de referencia. Foto horizontal 16:9 hiperrealista, casual de celular, en un cuarto de servicio doméstico real, luz plana, sin cine ni texto sobreimpreso. Una tubería de agua intacta llega a una llave general accesible; Claudio coloca con ambas manos una etiqueta simple de identificación en la manija para encontrarla antes de una emergencia. No hay fuga, agua, corrosión extrema ni herramientas sobre la válvula. Manos, tubo y llave mecánicamente correctos.",
+    "agnes_motion_es": "Usar <Picture 1> como escena exacta y <Picture 2> para identidad. Claudio termina de sujetar la etiqueta a la llave y la señala. No girar ni forzar la válvula; mantener tubería seca, manos y geometría constantes."
+  },
+  {
+    "start_ms": 1250680,
+    "end_ms": 1253740,
+    "caption_exact": "Antes de una tormenta, haz una prueba de autonomía real.",
+    "nouns": ["tormenta", "prueba de autonomía", "batería", "calefacción"],
+    "action": "Claudio inicia una prueba cronometrada de la batería alimentando sólo la calefacción antes de la tormenta.",
+    "safety": "Sistema cerrado y aprobado, calefacción aislada de la red, sin paneles abiertos; prueba realizada en seco y antes del temporal.",
+    "prompt_es": "Mantener exactamente la identidad de Claudio mediante su retrato de referencia. Fotografía horizontal 16:9 extremadamente realista de celular en un sótano o cuarto técnico doméstico, luz existente, encuadre casual, nada cinematográfico. Antes de una tormenta visible por una ventana pequeña, Claudio pulsa iniciar en un cronómetro y observa una estación de energía conectada mediante un único cable aprobado a una calefacción a gas; el gabinete y el conmutador están cerrados. Sólo esa carga está activa, sin regletas ni cables sueltos. Manos y conexión físicamente correctas, sin marcas.",
+    "agnes_motion_es": "<Picture 1> fija equipo, cable y encuadre; <Picture 2> fija a Claudio. Animar a Claudio pulsando una sola vez el cronómetro y mirando el indicador de la batería. No cambiar cableado, no abrir paneles, no conectar cargas nuevas; cámara casi fija."
+  },
+  {
+    "start_ms": 1269080,
+    "end_ms": 1273540,
+    "caption_exact": "Con una hora de datos ya puedes estimar mucho mejor que con la etiqueta.",
+    "nouns": ["una hora de datos", "estimación", "etiqueta del equipo"],
+    "action": "Claudio revisa una hoja con mediciones de una hora y la compara con la placa del equipo.",
+    "safety": "Panel cerrado; sólo lectura de datos y placa exterior; ningún conductor expuesto.",
+    "prompt_es": "Usar el retrato de Claudio como referencia de identidad obligatoria. Foto horizontal 16:9 hiperrealista y casual de celular junto a una calefacción doméstica cerrada, luz normal, sin look cinematográfico. Claudio sostiene una hoja simple con una secuencia de lecturas horarias y la compara con la placa exterior del equipo; un reloj de mesa indica que transcurrió una hora. La hoja tiene marcas y números grandes plausibles, sin párrafos deformados. El gabinete está cerrado y las manos son anatómicamente correctas.",
+    "agnes_motion_es": "Usar <Picture 1> como escena y documento exactos y <Picture 2> como identidad. Claudio baja la mirada de la placa a la hoja y señala una lectura. Mantener números, reloj, rostro y manos sin mutaciones; no abrir el gabinete."
+  },
+  {
+    "start_ms": 1273720,
+    "end_ms": 1275080,
+    "caption_exact": "Haz la cuenta con margen.",
+    "nouns": ["cuenta de autonomía", "margen", "reserva"],
+    "action": "Claudio calcula la autonomía en una calculadora y agrega una reserva visible en el cuaderno.",
+    "safety": "Actividad de planificación; no se manipula el sistema eléctrico.",
+    "prompt_es": "Conservar exactamente a Claudio usando el retrato de referencia. Fotografía horizontal 16:9 extremadamente realista de celular sobre una mesa doméstica, luz ambiente corriente, encuadre espontáneo, nada cinematográfico. Claudio usa una calculadora física junto a una hoja de datos de batería y dibuja con lápiz una reserva adicional al resultado de autonomía; una estación de energía apagada está al fondo. Sólo números grandes y una marca de reserva sencilla, sin texto falso, sin marcas comerciales. Manos correctas y útiles reales.",
+    "agnes_motion_es": "<Picture 1> fija la mesa y todos los objetos; <Picture 2> fija la identidad. Claudio pulsa una tecla de la calculadora y hace una pequeña marca de margen con el lápiz. Preservar manos, números y papeles; sin cambios de texto ni cámara."
+  },
+  {
+    "start_ms": 1286200,
+    "end_ms": 1290460,
+    "caption_exact": "cualquier teléfono que alguien conecte se comen esa precisión.",
+    "nouns": ["teléfono", "batería", "precisión de autonomía"],
+    "action": "Otra persona conecta un teléfono por USB y Claudio señala el aumento de carga en la estación.",
+    "safety": "Conexión USB de baja tensión; estación cerrada y seca; no tocar conexiones de red.",
+    "prompt_es": "Usar el retrato de referencia para representar exactamente a Claudio. Foto horizontal 16:9 hiperrealista, casual de celular, en una habitación real, luz doméstica normal, sin cine ni texto añadido. Una segunda mano conecta correctamente un teléfono a un puerto USB de una estación de energía cerrada; Claudio, junto a ella, señala el indicador de carga que acaba de aumentar. El cable USB es único y continuo, el teléfono está apoyado de forma estable y no hay regletas ni cables de red expuestos. Manos correctas y rostros naturales.",
+    "agnes_motion_es": "Usar <Picture 1> como escena y conexión obligatorias y <Picture 2> como identidad de Claudio. Animar una inserción corta del conector USB y a Claudio señalando el indicador. Mantener cable, puerto, dedos y pantalla estables; no agregar cargas ni modificar el equipo."
+  },
+  {
+    "start_ms": 1290840,
+    "end_ms": 1292800,
+    "caption_exact": "Diseña para llegar con reserva.",
+    "nouns": ["batería", "reserva"],
+    "action": "Claudio define en el plan un nivel de batería reservado para terminar la prueba antes de agotarla.",
+    "safety": "La batería no se descarga hasta cero; sólo planificación con el equipo cerrado.",
+    "prompt_es": "Mantener exactamente la identidad de Claudio desde el retrato de referencia. Foto horizontal 16:9 extremadamente fotorrealista de celular, casual, en una mesa junto a una estación de energía real, luz plana, sin estilo cinematográfico. Claudio señala un nivel de reserva claramente por encima de cero en el indicador de la batería y marca el mismo umbral en un cuaderno. La estación está cerrada, estable y sin cargas improvisadas. Evitar texto pequeño deformado; manos y pantalla físicamente coherentes.",
+    "agnes_motion_es": "<Picture 1> fija el indicador y la hoja; <Picture 2> fija a Claudio. Animar un gesto breve del índice entre el nivel de reserva y la marca del cuaderno. No cambiar el porcentaje, cables ni objetos; sin zoom dramático."
+  },
+  {
+    "start_ms": 1293100,
+    "end_ms": 1294540,
+    "caption_exact": "Y prepara un plan de salida.",
+    "nouns": ["plan de salida", "bolso de emergencia", "abrigos"],
+    "action": "Claudio coloca el plan familiar de salida junto a un bolso listo y los abrigos.",
+    "safety": "Ruta despejada; bolso de peso razonable; no se representa evacuación durante una condición activa.",
+    "prompt_es": "Usar el retrato de referencia para conservar exactamente a Claudio. Foto horizontal 16:9 extremadamente realista y casual de celular en la entrada de una casa común, luz doméstica, nada cinematográfico. Claudio coloca una hoja simple con un plano de salida junto a un bolso de emergencia cerrado y dos abrigos listos en perchas; señala la puerta de salida despejada. No hay humo ni peligro actuado, sólo preparación anticipada. Manos correctas, objetos cotidianos y sin texto sobreimpreso.",
+    "agnes_motion_es": "<Picture 1> es la escena obligatoria y <Picture 2> la identidad. Claudio deja la hoja junto al bolso y señala una vez la puerta. Mantener bolso, abrigos, manos y plano idénticos; no agregar personas ni una emergencia."
+  },
+  {
+    "start_ms": 1294940,
+    "end_ms": 1296680,
+    "caption_exact": "Si la temperatura sigue bajando,",
+    "nouns": ["temperatura", "termómetro"],
+    "action": "Claudio observa que la temperatura de la habitación continúa bajando en un termómetro independiente.",
+    "safety": "Lectura del termómetro sin soluciones improvisadas ni fuentes de llama.",
+    "prompt_es": "Mantener exactamente el rostro y cuerpo de Claudio mediante la referencia. Foto horizontal 16:9 hiperrealista de celular en una habitación fría real, luz disponible, aspecto casual, no cinematográfico. Claudio sostiene un termómetro digital doméstico y compara la lectura con una marca de límite ya dibujada en su plan de salida; viste capas secas y mira concentrado. No hay llama, horno abierto ni calefactor improvisado. Manos y termómetro realistas, sin texto gráfico.",
+    "agnes_motion_es": "Usar <Picture 1> para escena y termómetro y <Picture 2> para identidad. Claudio mira del termómetro al plan y asiente con seriedad. Mantener lectura, manos, rostro y fondo estables; cámara fija."
+  },
+  {
+    "start_ms": 1297000,
+    "end_ms": 1299500,
+    "caption_exact": "si la batería llega al límite que definiste,",
+    "nouns": ["batería", "límite definido"],
+    "action": "Claudio comprueba que la batería alcanzó el umbral de salida que había marcado.",
+    "safety": "Equipo cerrado y en buen estado; el umbral conserva reserva y no se muestra descarga total.",
+    "prompt_es": "Usar el retrato de referencia como identidad obligatoria de Claudio. Foto horizontal 16:9 extremadamente fotorrealista, casual de celular, junto a una estación de energía cerrada, luz doméstica corriente, sin cine. Claudio apunta al indicador de batería que coincide con un límite sencillo marcado en una tarjeta de planificación colocada al lado; ya tiene un abrigo preparado. No hay cables sueltos, regletas ni paneles abiertos. Dedos, pantalla y objetos correctos, sin texto inventado.",
+    "agnes_motion_es": "<Picture 1> define exactamente batería, tarjeta y encuadre; <Picture 2> define a Claudio. Animar un gesto breve hacia el indicador y luego hacia el abrigo. No cambiar el nivel, no conectar cargas, no alterar manos ni pantalla."
+  },
+  {
+    "start_ms": 1299840,
+    "end_ms": 1301300,
+    "caption_exact": "si el generador falla",
+    "nouns": ["generador", "falla"],
+    "action": "Claudio constata que el generador exterior se detuvo y deja de intentar usarlo.",
+    "safety": "Generador apagado y desconectado, al aire libre; no se abre la carcasa ni se hace reparación durante la emergencia.",
+    "prompt_es": "Conservar exactamente a Claudio a partir del retrato de referencia. Fotografía horizontal 16:9 extremadamente realista y casual de celular en un patio, luz natural, nada cinematográfico. Un generador portátil está detenido al aire libre con su interruptor en OFF y la extensión desconectada; Claudio lo observa desde un costado y hace un gesto de terminar el uso, sin abrirlo ni tocar el motor. La clavija queda visible en el suelo seco. Sin humo, combustible o herramientas; manos y controles correctos.",
+    "agnes_motion_es": "Usar <Picture 1> como escena exacta y <Picture 2> como identidad. Claudio da medio paso atrás y baja la mano, aceptando la falla. El generador permanece apagado, cerrado y desconectado; no animar reparación, humo, encendido ni movimiento del cable."
+  },
+  {
+    "start_ms": 1316760,
+    "end_ms": 1318420,
+    "caption_exact": "No reemplaza un plan familiar.",
+    "nouns": ["pieza eléctrica", "plan familiar"],
+    "action": "Claudio deja la pieza eléctrica junto al plan familiar y señala que son cosas distintas.",
+    "safety": "Pieza suelta, nueva y totalmente desconectada; el plan es preventivo.",
+    "prompt_es": "Usar el retrato de referencia para conservar exactamente la identidad de Claudio. Foto horizontal 16:9 hiperrealista y casual de celular sobre una mesa familiar real, luz normal, sin estética cinematográfica. Claudio coloca un tomacorriente con tierra nuevo y desconectado a un lado y, separado, un plan familiar con contactos, salida y bolso de emergencia al otro; señala el plan como elemento indispensable. La pieza no tiene ningún cable conectado. Manos correctas, papel simple sin texto deformado ni logos.",
+    "agnes_motion_es": "<Picture 1> fija mesa, pieza y plan; <Picture 2> fija a Claudio. Animar a Claudio dejando la pieza quieta y desplazando el dedo hacia el plan familiar. No conectar ni transformar la pieza; conservar manos y papeles."
+  },
+  {
+    "start_ms": 1321120,
+    "end_ms": 1326500,
+    "caption_exact": "Si tu calefacción produce calor con gas y solo necesita electricidad para control,",
+    "nouns": ["calefacción a gas", "electricidad", "control"],
+    "action": "Claudio señala por separado la línea de gas y el módulo de control eléctrico de una calefacción apagada.",
+    "safety": "Equipo apagado y aislado; panel de servicio abierto sólo sin tensión; ninguna válvula o conductor se manipula.",
+    "prompt_es": "Mantener exactamente la identidad de Claudio usando el retrato. Foto horizontal 16:9 extremadamente fotorrealista, casual de celular, en un cuarto técnico doméstico real, luz ambiente, nada cinematográfico. Frente a una calefacción a gas apagada, Claudio señala con una mano la tubería de gas que entra al equipo y con la otra el módulo electrónico de control claramente separado dentro de un compartimiento de servicio sin tensión. Interruptor de servicio visible en OFF, cables sujetos y sin cobre expuesto. Manos correctas, componentes reales, sin rótulos inventados.",
+    "agnes_motion_es": "Adjuntar la escena como <Picture 1> y el retrato como <Picture 2>. Claudio mueve suavemente el índice de la tubería de gas al módulo de control, sin tocar conexiones. Mantener equipo apagado, cableado, manos y rostro idénticos; no encender llama ni ventilador."
+  },
+  {
+    "start_ms": 1326980,
+    "end_ms": 1331240,
+    "caption_exact": "ventilador o bomba, puede ser una carga excelente para respaldo.",
+    "nouns": ["ventilador", "bomba de circulación", "carga de respaldo"],
+    "action": "Claudio identifica una bomba de circulación eléctrica como la pequeña carga que necesita el respaldo.",
+    "safety": "Caldera apagada; bomba instalada y cerrada; sólo se señala el componente, sin tocar conductores.",
+    "prompt_es": "Usar el retrato de referencia como identidad obligatoria de Claudio. Foto horizontal 16:9 extremadamente realista y casual de celular junto a una caldera a gas doméstica, luz técnica corriente, sin look cinematográfico ni texto. Claudio señala con precisión la bomba de circulación eléctrica instalada en la tubería y luego el único cordón cerrado que la alimenta; una estación de energía compacta apagada está al lado como respaldo. La bomba, tubería y cable son físicamente coherentes, sin fugas ni conductores expuestos; manos correctas.",
+    "agnes_motion_es": "<Picture 1> define bomba, cable y estación; <Picture 2> define a Claudio. Animar a Claudio señalando primero la bomba y después su cordón, sin tocarlo. No hacer circular agua visible, no conectar la estación ni cambiar la tubería."
+  },
+  {
+    "start_ms": 1335980,
+    "end_ms": 1342760,
+    "caption_exact": "Después instala una forma aprobada de aislarla de la red y alimentarla desde una fuente compatible.",
+    "nouns": ["aislamiento de red", "conmutador de un circuito", "fuente compatible", "cable con tierra"],
+    "action": "Claudio, junto a un electricista, termina de montar el cordón con tierra en un conmutador aprobado y desenergizado que separa red y respaldo.",
+    "safety": "Bloqueo y etiquetado visibles, circuito comprobado sin tensión, electricista calificado presente; fuente desconectada; no energizar ni puentear durante el montaje.",
+    "prompt_es": "Mantener exactamente la identidad de Claudio con su retrato de referencia. Foto horizontal 16:9 extremadamente fotorrealista, casual de celular, en un cuarto técnico doméstico real, luz normal, nada cinematográfico. Claudio trabaja junto a un electricista calificado en un conmutador aprobado de un solo circuito completamente desenergizado y bloqueado. En primer plano ambos terminan de sujetar dentro de una caja metálica el cordón correcto con tierra: conductor verde a borne de tierra, los demás conductores ordenados y sin cobre fuera de los bornes; la red y la fuente de respaldo están físicamente separadas y ambas desconectadas. Herramientas reales, manos anatómicas, topología eléctrica clara, sin cables de dos machos, sin texto falso.",
+    "agnes_motion_es": "Enviar la imagen montada como <Picture 1> y el retrato de Claudio como <Picture 2>. Movimiento mínimo y seguro: Claudio sostiene el cable inmóvil mientras el electricista da un pequeño giro final al tornillo del borne de tierra; después ambos retiran las manos. Preservar exactamente colores, bornes, número de cables, manos y bloqueo; no energizar, no crear chispas ni reconfigurar conexiones."
+  },
+  {
+    "start_ms": 1343300,
+    "end_ms": 1349400,
+    "caption_exact": "Si el equipo ya funciona sin electricidad, confirma el manual y no agregues piezas innecesarias.",
+    "nouns": ["equipo sin electricidad", "manual", "piezas innecesarias"],
+    "action": "Claudio lee el manual y aparta una pieza nueva al confirmar que la estufa ya funciona sin red.",
+    "safety": "Equipo apagado durante la inspección; no se modifica, perfora ni cablea; pieza adicional permanece suelta y desconectada.",
+    "prompt_es": "Usar el retrato de referencia para reproducir exactamente a Claudio. Foto horizontal 16:9 hiperrealista y casual de celular junto a una estufa de pared a gas de tiro natural, luz doméstica, sin cine ni texto sobreimpreso. Claudio lee el manual original abierto y señala el diagrama del equipo mientras aparta sobre una mesa un tomacorriente nuevo todavía en su caja, sin instalarlo. La estufa está apagada y cerrada; no hay herramientas ni cables añadidos. Manos correctas, manual con diagramas simples y sin párrafos ilegibles.",
+    "agnes_motion_es": "Usar <Picture 1> como escena exacta y <Picture 2> como identidad. Claudio pasa una página del manual y empuja suavemente la pieza sin abrir hacia un lado. No modificar el equipo ni inventar texto; mantener manos, caja y estufa estables."
+  },
+  {
+    "start_ms": 1349880,
+    "end_ms": 1356820,
+    "caption_exact": "Si la calefacción es eléctrica o depende de un compresor grande, una estación pequeña no es la respuesta.",
+    "nouns": ["calefacción eléctrica", "compresor grande", "estación pequeña"],
+    "action": "Claudio compara una estación pequeña con la placa de alta potencia de un calefactor eléctrico y un compresor grande, y descarta conectarla.",
+    "safety": "Todos los equipos apagados y desenchufados; ningún intento de conexión; compresor con gabinete cerrado.",
+    "prompt_es": "Conservar exactamente la identidad de Claudio con el retrato de referencia. Foto horizontal 16:9 extremadamente fotorrealista de celular, casual, en un garaje real, luz ambiente plana, nada cinematográfico. Claudio está entre una estación de energía pequeña apagada, un calefactor eléctrico desenchufado y la unidad exterior cerrada de una bomba de calor con compresor grande; sostiene la clavija del calefactor claramente separada de la estación y niega con la cabeza. Los cables están completos y desconectados, sin adaptadores ni paneles abiertos. Manos y proporciones reales, sin logos ni texto añadido.",
+    "agnes_motion_es": "<Picture 1> fija los tres equipos y sus cables; <Picture 2> fija a Claudio. Animar a Claudio alejando unos centímetros la clavija de la estación y negando levemente. No conectar, encender ni abrir ningún equipo; no alterar cables o manos."
+  },
+  {
+    "start_ms": 1357220,
+    "end_ms": 1360240,
+    "caption_exact": "Necesitas reducir el área que intentas calentar,",
+    "nouns": ["área a calentar", "habitación pequeña", "puertas"],
+    "action": "Claudio cierra las puertas de habitaciones vacías y concentra a la familia en una habitación pequeña.",
+    "safety": "Rejillas de suministro y retorno quedan visibles y libres; no se sellan salidas de aire ni rutas de evacuación.",
+    "prompt_es": "Mantener exactamente la identidad de Claudio desde su retrato. Foto horizontal 16:9 extremadamente realista y casual de celular en un pasillo doméstico, luz normal, sin estética cinematográfica. Claudio cierra la puerta de una habitación vacía y señala una sala pequeña donde la familia ya tiene mantas; las rejillas de suministro y retorno del sistema central permanecen completamente libres y visibles. No hay plásticos sobre rejillas ni puertas bloqueadas. Manos, puertas y espacio realistas, sin texto.",
+    "agnes_motion_es": "Usar <Picture 1> como escena y <Picture 2> como identidad. Claudio termina de cerrar sólo la puerta de la habitación vacía y señala la sala elegida. Mantener rejillas libres, manos y familiares estables; no tapar conductos ni bloquear la salida."
+  },
+  {
+    "start_ms": 1376600,
+    "end_ms": 1385180,
+    "caption_exact": "El problema no es que sea una solución poco elegante, es que puede dejar tensión en lugares donde una persona espera encontrar cero.",
+    "nouns": ["tensión", "tomacorriente", "cero voltios", "probador"],
+    "action": "Claudio verifica con un probador adecuado un tomacorriente que debería estar sin tensión antes de acercar la mano.",
+    "safety": "Comprobación sin desmontar el tomacorriente, con instrumento certificado y una sola mano; no tocar contactos ni conductores.",
+    "prompt_es": "Usar el retrato de referencia para conservar exactamente a Claudio. Foto horizontal 16:9 hiperrealista y casual de celular en una pared doméstica real, luz plana, sin cine. Claudio sostiene con una mano un comprobador de tensión de dos polos certificado frente a un tomacorriente aparentemente apagado y mantiene la otra mano lejos; la indicación del instrumento muestra que todavía hay tensión donde se esperaba cero. La tapa del tomacorriente está cerrada, no hay cobre ni cables expuestos. Manos correctas, probador real y expresión seria, sin texto gráfico.",
+    "agnes_motion_es": "<Picture 1> define tomacorriente, probador y posición; <Picture 2> define a Claudio. Animar un acercamiento corto del probador a los puntos de prueba sin que los dedos toquen contactos, seguido de una mirada a la indicación. Mantener tapa cerrada, manos y geometría; sin chispas ni cables nuevos."
+  },
+  {
+    "start_ms": 1420280,
+    "end_ms": 1423920,
+    "caption_exact": "La pieza del título no hace milagros, hace algo mejor.",
+    "nouns": ["pieza del título", "tomacorriente con tierra"],
+    "action": "Claudio sostiene en primer plano la pieza real del título, todavía nueva y desconectada.",
+    "safety": "Pieza suelta sin energía, sin cables ni instalación simulada.",
+    "prompt_es": "Mantener exactamente el rostro, edad y cuerpo de Claudio usando el retrato de referencia. Foto horizontal 16:9 extremadamente fotorrealista, casual, tomada con celular en su taller doméstico real, luz ambiente corriente, nada cinematográfico, sin texto ni precio. Claudio sostiene cerca de la cámara un tomacorriente sencillo con tierra, nuevo y completamente desconectado, mientras la otra mano señala su borne de tierra exterior sin introducir herramientas. La pieza es realista, del tamaño correcto, sin cables conectados; manos perfectas y rostro natural al fondo.",
+    "agnes_motion_es": "Usar la foto generada como <Picture 1> y el retrato de Claudio como <Picture 2>. Claudio gira apenas la pieza para mostrar la conexión de tierra y vuelve a sostenerla estable. No agregar cables, no energizar, no deformar dedos, bornes ni rostro; cámara de celular quieta."
+  },
+  {
+    "start_ms": 1468760,
+    "end_ms": 1478680,
+    "caption_exact": "En el próximo vídeo voy a medir cuánto dura una estación de energía con las cargas que de verdad importan durante un apagón, una por una hasta que se apague.",
+    "nouns": ["estación de energía", "cargas importantes", "medición", "apagón"],
+    "action": "Claudio conecta y mide una sola carga doméstica a la vez en una estación de energía, registrando la duración.",
+    "safety": "Sólo cargas compatibles y en buen estado; una por vez; potencia dentro del límite; conexiones cerradas y secas.",
+    "prompt_es": "Usar el retrato de referencia para representar exactamente a Claudio. Fotografía horizontal 16:9 extremadamente fotorrealista y casual de celular en un taller doméstico real, luz normal, sin estética cinematográfica. Claudio realiza una prueba ordenada con una estación de energía: en ese instante conecta únicamente el cordón de un ventilador de calefacción de banco mediante un medidor enchufable cerrado y anota la hora; otras cargas importantes están desenchufadas, separadas y alineadas para probarse una por una. Un único cable activo, sin regletas, paneles ni conductores expuestos. Manos y clavija correctas, sin logos.",
+    "agnes_motion_es": "<Picture 1> fija exactamente estación, medidor, carga y cables; <Picture 2> fija a Claudio. Animar una inserción corta de la única clavija en el medidor cerrado y a Claudio anotando una lectura. Ninguna otra carga se conecta; preservar topología, manos y objetos, sin chispas ni morphing."
+  },
+  {
+    "start_ms": 1490000,
+    "end_ms": 1493760,
+    "caption_exact": "qué parte de tu calefacción necesita electricidad.",
+    "nouns": ["calefacción", "parte eléctrica", "módulo de control", "ventilador"],
+    "action": "Claudio señala exactamente el módulo de control y el motor ventilador como las partes eléctricas de una calefacción a gas.",
+    "safety": "Calefacción apagada y aislada; panel de servicio abierto sin tensión; Claudio no toca bornes ni conductores.",
+    "prompt_es": "Conservar exactamente la identidad de Claudio mediante el retrato de referencia. Foto horizontal 16:9 hiperrealista de celular, casual, dentro de un cuarto técnico real, luz ambiente, sin cine ni texto. Una calefacción a gas está apagada y bloqueada; con el panel de servicio retirado sin tensión, Claudio señala claramente dos piezas reales: la placa electrónica de control y, debajo, el motor del ventilador dentro de su alojamiento. La tubería de gas queda separada y cerrada; cableado sujeto, sin cobre expuesto. Manos anatómicas, componentes correctos y ninguna conexión improvisada.",
+    "agnes_motion_es": "Enviar la escena como <Picture 1> y el retrato de Claudio como <Picture 2>. Claudio mueve el dedo lentamente de la placa de control al alojamiento del motor ventilador, sin tocar cables. Mantener exactamente rostro, manos, componentes y bloqueo; no energizar ni hacer girar el motor."
+  }
+]

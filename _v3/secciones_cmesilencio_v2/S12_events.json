@@ -1,0 +1,47 @@
+[
+  {
+    "id": "cme_v2_s12_first",
+    "ms": 937500,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "La primera version se veia muy bien en una foto",
+    "nombre": "cms_s12_deja_rejilla_banco",
+    "_manual": true,
+    "_sec": "S12_HORNO",
+    "_anchor": {
+      "startWord": 2241,
+      "endWord": 2250,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s12_hot",
+    "ms": 946800,
+    "dur": 5,
+    "tipo": "CLIP",
+    "dice": "La temperatura subio",
+    "nombre": "cms_s12_aguja_zona_roja",
+    "_manual": true,
+    "_sec": "S12_HORNO",
+    "_anchor": {
+      "startWord": 2266,
+      "endWord": 2268,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s12_test",
+    "ms": 963220,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "La prueba antes de dejar el generador funcionando",
+    "nombre": "cms_s12_termometro_en_mano",
+    "_manual": true,
+    "_sec": "S12_HORNO",
+    "_anchor": {
+      "startWord": 2303,
+      "endWord": 2310,
+      "coverage": 1
+    }
+  }
+]

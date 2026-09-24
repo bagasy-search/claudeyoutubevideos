@@ -133,24 +133,10 @@ jobs:
           mkdir -p cookies
           printf '%s\n' "$YTPROXIES" > cookies/proxies.txt
           echo "proxies inyectados: $(grep -c @ cookies/proxies.txt)"
-      - name: inject cookies (YouTube logueado → destraba las IPs flageadas en el search)
-        env:
-          YTCOOKIES1: ${{ secrets.YTCOOKIES1 }}
-          YTCOOKIES2: ${{ secrets.YTCOOKIES2 }}
-          YTCOOKIES3: ${{ secrets.YTCOOKIES3 }}
-          YTCOOKIES4: ${{ secrets.YTCOOKIES4 }}
-          YTCOOKIES5: ${{ secrets.YTCOOKIES5 }}
-          YTCOOKIES6: ${{ secrets.YTCOOKIES6 }}
-          YTCOOKIES7: ${{ secrets.YTCOOKIES7 }}
-        run: |
-          mkdir -p cookies
-          # base64 → preserva TABS y CRLF exactos del formato Netscape (printf los rompía).
-          # Varias cuentas → match_runner reparte una por shard (cookies[IDX % N]) → no se queman.
-          for n in 1 2 3 4 5 6 7; do
-            v=$(eval echo \$YTCOOKIES$n)
-            if [ -n "$v" ]; then echo "$v" | base64 -d > cookies/$n.txt; fi
-          done
-          echo "cookies inyectadas: $(ls cookies/*.txt 2>/dev/null | grep -v proxies | wc -l)"
+      # SIN COOKIES (jul 2026): las cookies vencidas colgaban yt-dlp en el login y la
+      # misma cuenta en muchas IPs disparaba el anti-abuso → shards muertos. Con los
+      # proxies (residenciales o los que ya andan) YouTube NO challengea → no hacen falta.
+      # match_runner corre "sin cookies" cuando cookies/ tiene SOLO proxies.txt.
       - name: match shard
         env:
           MATCH_CANDS: "5"

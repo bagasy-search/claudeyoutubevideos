@@ -1,0 +1,5058 @@
+{
+ "video": "sellador",
+ "avatar": "sellador_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "sel_s_001",
+   "start": 0.15,
+   "kind": "raw",
+   "src": "img/sel_s_001.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_001_b",
+   "start": 2.82,
+   "kind": "raw",
+   "src": "img/sel_s_001_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.19
+  },
+  {
+   "id": "sel_s_001_c",
+   "start": 5.71,
+   "kind": "raw",
+   "src": "img/sel_s_001_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.23
+  },
+  {
+   "id": "sel_s_002",
+   "start": 7.64,
+   "kind": "raw",
+   "src": "img/sel_s_002.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "sel_s_002_b",
+   "start": 10.36,
+   "kind": "raw",
+   "src": "img/sel_s_002_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "sel_s_002_c",
+   "start": 13.1,
+   "kind": "raw",
+   "src": "img/sel_s_002_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.05
+  },
+  {
+   "id": "sel_s_003",
+   "start": 14.85,
+   "kind": "raw",
+   "src": "img/sel_s_003.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.45
+  },
+  {
+   "id": "sel_s_003_b",
+   "start": 18,
+   "kind": "raw",
+   "src": "img/sel_s_003_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.41
+  },
+  {
+   "id": "sel_s_004",
+   "start": 22.11,
+   "kind": "raw",
+   "src": "img/sel_s_004.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "sel_s_004_b",
+   "start": 25.24,
+   "kind": "raw",
+   "src": "img/sel_s_004_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72
+  },
+  {
+   "id": "sel_s_005",
+   "start": 28.66,
+   "kind": "raw",
+   "src": "img/sel_s_005.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.17
+  },
+  {
+   "id": "sel_s_005_b",
+   "start": 31.53,
+   "kind": "raw",
+   "src": "img/sel_s_005_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.75
+  },
+  {
+   "id": "sel_s_006",
+   "start": 35.98,
+   "kind": "raw",
+   "src": "img/sel_s_006.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_006_b",
+   "start": 38.6,
+   "kind": "raw",
+   "src": "img/sel_s_006_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.92
+  },
+  {
+   "id": "sel_s_007",
+   "start": 43.22,
+   "kind": "raw",
+   "src": "img/sel_s_007.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "sel_s_007_b",
+   "start": 46.3,
+   "kind": "raw",
+   "src": "img/sel_s_007_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "sel_s_008",
+   "start": 49.02,
+   "kind": "raw",
+   "src": "img/sel_s_008.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "ov_beforeafter_51",
+   "start": 51.44,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "El sellador de película, afuera",
+   "beforeLabel": "Recién aplicado: brilla",
+   "afterLabel": "Al verano: se pela",
+   "caption": "hermoso al principio, un desastre después"
+  },
+  {
+   "id": "sel_s_008_b",
+   "start": 51.64,
+   "kind": "raw",
+   "src": "img/sel_s_008_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.05
+  },
+  {
+   "id": "sel_s_009",
+   "start": 56.39,
+   "kind": "raw",
+   "src": "img/sel_s_009.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "sel_s_009_b",
+   "start": 59.56,
+   "kind": "raw",
+   "src": "img/sel_s_009_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.51
+  },
+  {
+   "id": "sel_s_010",
+   "start": 63.77,
+   "kind": "raw",
+   "src": "img/sel_s_010.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.93
+  },
+  {
+   "id": "sel_s_010_b",
+   "start": 66.4,
+   "kind": "raw",
+   "src": "img/sel_s_010_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "sel_s_011",
+   "start": 70.28,
+   "kind": "raw",
+   "src": "img/sel_s_011.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "sel_s_011_b",
+   "start": 73.29,
+   "kind": "raw",
+   "src": "img/sel_s_011_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.55
+  },
+  {
+   "id": "ov_bigstatreveal_77",
+   "start": 76.66,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El carpintero de botes",
+   "value": 80,
+   "prefix": "",
+   "suffix": " años",
+   "support": "toda una vida haciendo y arreglando botes — la peor condición posible para la madera"
+  },
+  {
+   "id": "sel_s_012",
+   "start": 77.54,
+   "kind": "raw",
+   "src": "img/sel_s_012.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_012_b",
+   "start": 80.14,
+   "kind": "raw",
+   "src": "img/sel_s_012_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "sel_s_012_c",
+   "start": 82.88,
+   "kind": "raw",
+   "src": "img/sel_s_012_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.3
+  },
+  {
+   "id": "sel_s_013",
+   "start": 84.88,
+   "kind": "raw",
+   "src": "img/sel_s_013.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_013_b",
+   "start": 87.55,
+   "kind": "raw",
+   "src": "img/sel_s_013_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "sel_s_013_c",
+   "start": 90.25,
+   "kind": "raw",
+   "src": "img/sel_s_013_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "sel_s_014",
+   "start": 92.15,
+   "kind": "raw",
+   "src": "img/sel_s_014.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "sel_s_014_b",
+   "start": 94.95,
+   "kind": "raw",
+   "src": "img/sel_s_014_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.82
+  },
+  {
+   "id": "sel_s_015",
+   "start": 99.47,
+   "kind": "raw",
+   "src": "img/sel_s_015.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.12
+  },
+  {
+   "id": "sel_s_015_b",
+   "start": 102.29,
+   "kind": "raw",
+   "src": "img/sel_s_015_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.25
+  },
+  {
+   "id": "sel_s_016",
+   "start": 105.24,
+   "kind": "raw",
+   "src": "img/sel_s_016.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_016_b",
+   "start": 107.92,
+   "kind": "raw",
+   "src": "img/sel_s_016_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "sel_s_016_c",
+   "start": 110.64,
+   "kind": "raw",
+   "src": "img/sel_s_016_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "sel_s_017",
+   "start": 113.6,
+   "kind": "raw",
+   "src": "img/sel_s_017.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "sel_s_017_b",
+   "start": 116.51,
+   "kind": "raw",
+   "src": "img/sel_s_017_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "sel_s_017_c",
+   "start": 119.37,
+   "kind": "raw",
+   "src": "img/sel_s_017_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.49
+  },
+  {
+   "id": "sel_s_018",
+   "start": 121.56,
+   "kind": "raw",
+   "src": "img/sel_s_018.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_018_b",
+   "start": 124.24,
+   "kind": "raw",
+   "src": "img/sel_s_018_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.74
+  },
+  {
+   "id": "sel_s_019",
+   "start": 126.68,
+   "kind": "raw",
+   "src": "img/sel_s_019.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "sel_s_019_b",
+   "start": 129.48,
+   "kind": "raw",
+   "src": "img/sel_s_019_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "sel_s_019_c",
+   "start": 132.34,
+   "kind": "raw",
+   "src": "img/sel_s_019_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.48
+  },
+  {
+   "id": "sel_s_020",
+   "start": 134.52,
+   "kind": "raw",
+   "src": "img/sel_s_020.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "ov_pullquote_135",
+   "start": 135.12,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Vos ponés un plástico arriba de la madera. Yo pongo la protección adentro. Lo que se pone arriba, se despega; lo que se mete adentro, no."
+  },
+  {
+   "id": "sel_s_020_b",
+   "start": 137.72,
+   "kind": "raw",
+   "src": "img/sel_s_020_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "sel_s_021",
+   "start": 141.74,
+   "kind": "raw",
+   "src": "img/sel_s_021.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.53
+  },
+  {
+   "id": "ov_highlightsweep_142",
+   "start": 141.74,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Todo lo que se pone arriba,",
+   "highlight": "tarde o temprano se despega",
+   "post": "; lo que se mete adentro, no se despega nunca.",
+   "note": "la frase de Don Vicente"
+  },
+  {
+   "id": "sel_s_021_b",
+   "start": 144.97,
+   "kind": "raw",
+   "src": "img/sel_s_021_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.33
+  },
+  {
+   "id": "sel_s_022",
+   "start": 149,
+   "kind": "raw",
+   "src": "img/sel_s_022.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.95
+  },
+  {
+   "id": "sel_s_022_b",
+   "start": 151.65,
+   "kind": "raw",
+   "src": "img/sel_s_022_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "sel_s_023",
+   "start": 154.57,
+   "kind": "raw",
+   "src": "img/sel_s_023.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.09
+  },
+  {
+   "id": "sel_s_023_b",
+   "start": 157.36,
+   "kind": "raw",
+   "src": "img/sel_s_023_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.76
+  },
+  {
+   "id": "sel_s_024",
+   "start": 161.82,
+   "kind": "raw",
+   "src": "img/sel_s_024.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "sel_s_024_b",
+   "start": 164.68,
+   "kind": "raw",
+   "src": "img/sel_s_024_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.69
+  },
+  {
+   "id": "sel_s_025",
+   "start": 169.07,
+   "kind": "raw",
+   "src": "img/sel_s_025.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_025_b",
+   "start": 171.8,
+   "kind": "raw",
+   "src": "img/sel_s_025_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "sel_s_025_c",
+   "start": 174.52,
+   "kind": "raw",
+   "src": "img/sel_s_025_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.77
+  },
+  {
+   "id": "sel_s_026",
+   "start": 176.99,
+   "kind": "raw",
+   "src": "img/sel_s_026.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_026_b",
+   "start": 179.72,
+   "kind": "raw",
+   "src": "img/sel_s_026_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.15
+  },
+  {
+   "id": "sel_s_026_c",
+   "start": 182.57,
+   "kind": "raw",
+   "src": "img/sel_s_026_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.59
+  },
+  {
+   "id": "sel_s_027",
+   "start": 184.86,
+   "kind": "raw",
+   "src": "img/sel_s_027.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.95
+  },
+  {
+   "id": "sel_s_027_b",
+   "start": 187.51,
+   "kind": "raw",
+   "src": "img/sel_s_027_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "sel_s_027_c",
+   "start": 190.35,
+   "kind": "raw",
+   "src": "img/sel_s_027_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.01
+  },
+  {
+   "id": "sel_s_028",
+   "start": 192.06,
+   "kind": "raw",
+   "src": "img/sel_s_028.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  },
+  {
+   "id": "sel_s_028_b",
+   "start": 194.96,
+   "kind": "raw",
+   "src": "img/sel_s_028_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
+  },
+  {
+   "id": "sel_s_029",
+   "start": 198.08,
+   "kind": "raw",
+   "src": "img/sel_s_029.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "sel_s_029_b",
+   "start": 200.94,
+   "kind": "raw",
+   "src": "img/sel_s_029_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.99
+  },
+  {
+   "id": "sel_s_029_c",
+   "start": 203.63,
+   "kind": "raw",
+   "src": "img/sel_s_029_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.02
+  },
+  {
+   "id": "sel_s_030",
+   "start": 205.35,
+   "kind": "raw",
+   "src": "img/sel_s_030.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_030_b",
+   "start": 208.02,
+   "kind": "raw",
+   "src": "img/sel_s_030_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_031",
+   "start": 210.62,
+   "kind": "raw",
+   "src": "img/sel_s_031.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.99
+  },
+  {
+   "id": "sel_s_031_b",
+   "start": 213.31,
+   "kind": "raw",
+   "src": "img/sel_s_031_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.29
+  },
+  {
+   "id": "sel_s_032",
+   "start": 217.3,
+   "kind": "raw",
+   "src": "img/sel_s_032.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "sel_s_032_b",
+   "start": 220.36,
+   "kind": "raw",
+   "src": "img/sel_s_032_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "sel_s_033",
+   "start": 224.56,
+   "kind": "raw",
+   "src": "img/sel_s_033.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "sel_s_033_b",
+   "start": 227.2,
+   "kind": "raw",
+   "src": "img/sel_s_033_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "sel_s_034",
+   "start": 229.84,
+   "kind": "raw",
+   "src": "img/sel_s_034.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.55
+  },
+  {
+   "id": "ov_vsduel_230",
+   "start": 229.84,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Dos familias opuestas",
+   "title": "Película vs. Penetrante",
+   "left": {
+    "label": "Forma película",
+    "sub": "capa rígida arriba; afuera se agrieta y se pela",
+    "good": false
+   },
+   "right": {
+    "label": "Penetrante",
+    "sub": "se mete adentro, flexible, no se pela nunca",
+    "good": true
+   }
+  },
+  {
+   "id": "sel_s_034_b",
+   "start": 233.09,
+   "kind": "raw",
+   "src": "img/sel_s_034_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "sel_s_035",
+   "start": 237.33,
+   "kind": "raw",
+   "src": "img/sel_s_035.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.13
+  },
+  {
+   "id": "sel_s_035_b",
+   "start": 240.16,
+   "kind": "raw",
+   "src": "img/sel_s_035_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_035_c",
+   "start": 242.89,
+   "kind": "raw",
+   "src": "img/sel_s_035_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.08
+  },
+  {
+   "id": "sel_s_036",
+   "start": 244.67,
+   "kind": "raw",
+   "src": "img/sel_s_036.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "sel_s_036_b",
+   "start": 247.81,
+   "kind": "raw",
+   "src": "img/sel_s_036_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.37
+  },
+  {
+   "id": "sel_s_037",
+   "start": 251.88,
+   "kind": "raw",
+   "src": "img/sel_s_037.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.01
+  },
+  {
+   "id": "sel_s_037_b",
+   "start": 254.59,
+   "kind": "raw",
+   "src": "img/sel_s_037_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.87
+  },
+  {
+   "id": "sel_s_038",
+   "start": 259.16,
+   "kind": "raw",
+   "src": "img/sel_s_038.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "sel_s_038_b",
+   "start": 262.07,
+   "kind": "raw",
+   "src": "img/sel_s_038_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.91
+  },
+  {
+   "id": "sel_s_039",
+   "start": 264.68,
+   "kind": "raw",
+   "src": "img/sel_s_039.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.07
+  },
+  {
+   "id": "sel_s_039_b",
+   "start": 267.45,
+   "kind": "raw",
+   "src": "img/sel_s_039_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.83
+  },
+  {
+   "id": "sel_s_040",
+   "start": 271.98,
+   "kind": "raw",
+   "src": "img/sel_s_040.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "sel_s_040_b",
+   "start": 274.79,
+   "kind": "raw",
+   "src": "img/sel_s_040_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.39
+  },
+  {
+   "id": "sel_s_040_c",
+   "start": 277.88,
+   "kind": "raw",
+   "src": "img/sel_s_040_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.22
+  },
+  {
+   "id": "sel_s_041",
+   "start": 279.8,
+   "kind": "raw",
+   "src": "img/sel_s_041.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "sel_s_041_b",
+   "start": 282.74,
+   "kind": "raw",
+   "src": "img/sel_s_041_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.57
+  },
+  {
+   "id": "ov_beforeafter_287",
+   "start": 286.68,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Por qué la película falla",
+   "beforeLabel": "Película nueva, rígida",
+   "afterLabel": "Agrietada y despegada",
+   "caption": "la madera se mueve, el plástico no"
+  },
+  {
+   "id": "sel_s_042",
+   "start": 287.01,
+   "kind": "raw",
+   "src": "img/sel_s_042.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.05
+  },
+  {
+   "id": "sel_s_042_b",
+   "start": 289.76,
+   "kind": "raw",
+   "src": "img/sel_s_042_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.01
+  },
+  {
+   "id": "sel_s_042_c",
+   "start": 292.47,
+   "kind": "raw",
+   "src": "img/sel_s_042_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.11
+  },
+  {
+   "id": "sel_s_043",
+   "start": 294.28,
+   "kind": "raw",
+   "src": "img/sel_s_043.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "sel_s_043_b",
+   "start": 297.08,
+   "kind": "raw",
+   "src": "img/sel_s_043_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.81
+  },
+  {
+   "id": "sel_s_044",
+   "start": 301.59,
+   "kind": "raw",
+   "src": "img/sel_s_044.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "sel_s_044_b",
+   "start": 304.43,
+   "kind": "raw",
+   "src": "img/sel_s_044_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "sel_s_045",
+   "start": 307.6,
+   "kind": "raw",
+   "src": "img/sel_s_045.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.05
+  },
+  {
+   "id": "sel_s_045_b",
+   "start": 310.35,
+   "kind": "raw",
+   "src": "img/sel_s_045_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.19
+  },
+  {
+   "id": "ov_bigstatreveal_311",
+   "start": 310.72,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Cada cuánto te hacen recomprar",
+   "value": 2,
+   "prefix": "",
+   "suffix": " años",
+   "support": "lijar, sacar la película y comprar de nuevo el balde caro — un negocio redondo para ellos"
+  },
+  {
+   "id": "sel_s_045_c",
+   "start": 313.24,
+   "kind": "raw",
+   "src": "img/sel_s_045_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.03
+  },
+  {
+   "id": "sel_s_046",
+   "start": 314.97,
+   "kind": "raw",
+   "src": "img/sel_s_046.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "sel_s_046_b",
+   "start": 318.16,
+   "kind": "raw",
+   "src": "img/sel_s_046_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "sel_s_047",
+   "start": 321.12,
+   "kind": "raw",
+   "src": "img/sel_s_047.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "sel_s_047_b",
+   "start": 324.08,
+   "kind": "raw",
+   "src": "img/sel_s_047_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.57
+  },
+  {
+   "id": "sel_s_048",
+   "start": 328.35,
+   "kind": "raw",
+   "src": "img/sel_s_048.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32
+  },
+  {
+   "id": "sel_s_048_b",
+   "start": 331.37,
+   "kind": "raw",
+   "src": "img/sel_s_048_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.58
+  },
+  {
+   "id": "sel_s_049",
+   "start": 334.65,
+   "kind": "raw",
+   "src": "img/sel_s_049.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.93
+  },
+  {
+   "id": "sel_s_049_b",
+   "start": 337.28,
+   "kind": "raw",
+   "src": "img/sel_s_049_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "sel_s_050",
+   "start": 340.64,
+   "kind": "raw",
+   "src": "img/sel_s_050.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "sel_s_050_b",
+   "start": 343.3,
+   "kind": "raw",
+   "src": "img/sel_s_050_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "sel_s_051",
+   "start": 346.22,
+   "kind": "raw",
+   "src": "img/sel_s_051.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "sel_s_051_b",
+   "start": 349.21,
+   "kind": "raw",
+   "src": "img/sel_s_051_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.58
+  },
+  {
+   "id": "sel_s_052",
+   "start": 353.49,
+   "kind": "raw",
+   "src": "img/sel_s_052.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.65
+  },
+  {
+   "id": "sel_s_052_b",
+   "start": 356.84,
+   "kind": "raw",
+   "src": "img/sel_s_052_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.47
+  },
+  {
+   "id": "sel_s_053",
+   "start": 361.01,
+   "kind": "raw",
+   "src": "img/sel_s_053.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.17
+  },
+  {
+   "id": "sel_s_053_b",
+   "start": 363.88,
+   "kind": "raw",
+   "src": "img/sel_s_053_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_053_c",
+   "start": 366.61,
+   "kind": "raw",
+   "src": "img/sel_s_053_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.05
+  },
+  {
+   "id": "sel_s_054",
+   "start": 368.36,
+   "kind": "raw",
+   "src": "img/sel_s_054.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.09
+  },
+  {
+   "id": "sel_s_054_b",
+   "start": 371.15,
+   "kind": "raw",
+   "src": "img/sel_s_054_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_054_c",
+   "start": 373.75,
+   "kind": "raw",
+   "src": "img/sel_s_054_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.51
+  },
+  {
+   "id": "sel_s_055",
+   "start": 375.96,
+   "kind": "raw",
+   "src": "img/sel_s_055.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.34
+  },
+  {
+   "id": "sel_s_055_b",
+   "start": 379,
+   "kind": "raw",
+   "src": "img/sel_s_055_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.89
+  },
+  {
+   "id": "sel_s_056",
+   "start": 381.59,
+   "kind": "raw",
+   "src": "img/sel_s_056.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.93
+  },
+  {
+   "id": "sel_s_056_b",
+   "start": 384.22,
+   "kind": "raw",
+   "src": "img/sel_s_056_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.91
+  },
+  {
+   "id": "sel_s_056_c",
+   "start": 386.83,
+   "kind": "raw",
+   "src": "img/sel_s_056_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.43
+  },
+  {
+   "id": "sel_s_057",
+   "start": 388.96,
+   "kind": "raw",
+   "src": "img/sel_s_057.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "sel_s_057_b",
+   "start": 391.88,
+   "kind": "raw",
+   "src": "img/sel_s_057_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_057_c",
+   "start": 394.48,
+   "kind": "raw",
+   "src": "img/sel_s_057_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "sel_s_058",
+   "start": 396.38,
+   "kind": "raw",
+   "src": "img/sel_s_058.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "sel_s_058_b",
+   "start": 399.76,
+   "kind": "raw",
+   "src": "img/sel_s_058_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "ov_highlightsweep_400",
+   "start": 399.76,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "La protección",
+   "highlight": "no se pone encima, se mete adentro",
+   "post": ".",
+   "note": "el secreto de todo"
+  },
+  {
+   "id": "sel_s_059",
+   "start": 403.84,
+   "kind": "raw",
+   "src": "img/sel_s_059.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_059_b",
+   "start": 406.51,
+   "kind": "raw",
+   "src": "img/sel_s_059_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "sel_s_059_c",
+   "start": 409.17,
+   "kind": "raw",
+   "src": "img/sel_s_059_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.36
+  },
+  {
+   "id": "sel_s_060",
+   "start": 411.23,
+   "kind": "raw",
+   "src": "img/sel_s_060.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "sel_s_060_b",
+   "start": 414.37,
+   "kind": "raw",
+   "src": "img/sel_s_060_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "ov_checklistreveal_416",
+   "start": 416.12,
+   "dur": 7.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Las opciones de acabado penetrante",
+   "items": [
+    "Casera: aceite de linaza + solvente, bien diluida",
+    "Intermedia: aceite específico para exterior",
+    "Refuerzo: un poco de cera para zonas de mucha agua"
+   ],
+   "stamp": "RECETA EN LA DESCRIPCIÓN"
+  },
+  {
+   "id": "sel_s_061",
+   "start": 417.56,
+   "kind": "raw",
+   "src": "img/sel_s_061.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_061_b",
+   "start": 420.24,
+   "kind": "raw",
+   "src": "img/sel_s_061_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.93
+  },
+  {
+   "id": "sel_s_062",
+   "start": 424.87,
+   "kind": "raw",
+   "src": "img/sel_s_062.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.93
+  },
+  {
+   "id": "sel_s_062_b",
+   "start": 427.5,
+   "kind": "raw",
+   "src": "img/sel_s_062_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "sel_s_062_c",
+   "start": 430.2,
+   "kind": "raw",
+   "src": "img/sel_s_062_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.21
+  },
+  {
+   "id": "sel_s_063",
+   "start": 432.11,
+   "kind": "raw",
+   "src": "img/sel_s_063.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "sel_s_063_b",
+   "start": 435.21,
+   "kind": "raw",
+   "src": "img/sel_s_063_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.67
+  },
+  {
+   "id": "sel_s_064",
+   "start": 437.58,
+   "kind": "raw",
+   "src": "img/sel_s_064.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32
+  },
+  {
+   "id": "sel_s_064_b",
+   "start": 440.6,
+   "kind": "raw",
+   "src": "img/sel_s_064_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "sel_s_065",
+   "start": 444.52,
+   "kind": "raw",
+   "src": "img/sel_s_065.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_065_b",
+   "start": 447.2,
+   "kind": "raw",
+   "src": "img/sel_s_065_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_065_c",
+   "start": 449.93,
+   "kind": "raw",
+   "src": "img/sel_s_065_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.27
+  },
+  {
+   "id": "sel_s_066",
+   "start": 451.9,
+   "kind": "raw",
+   "src": "img/sel_s_066.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6
+  },
+  {
+   "id": "sel_s_066_b",
+   "start": 455.2,
+   "kind": "raw",
+   "src": "img/sel_s_066_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "sel_s_067",
+   "start": 459.14,
+   "kind": "raw",
+   "src": "img/sel_s_067.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.93
+  },
+  {
+   "id": "sel_s_067_b",
+   "start": 461.77,
+   "kind": "raw",
+   "src": "img/sel_s_067_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "sel_s_068",
+   "start": 464.68,
+   "kind": "raw",
+   "src": "img/sel_s_068.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "sel_s_068_b",
+   "start": 467.32,
+   "kind": "raw",
+   "src": "img/sel_s_068_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.86
+  },
+  {
+   "id": "sel_s_069",
+   "start": 469.88,
+   "kind": "raw",
+   "src": "img/sel_s_069.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_069_b",
+   "start": 472.48,
+   "kind": "raw",
+   "src": "img/sel_s_069_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "sel_s_069_c",
+   "start": 475.14,
+   "kind": "raw",
+   "src": "img/sel_s_069_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.24
+  },
+  {
+   "id": "sel_s_070",
+   "start": 477.08,
+   "kind": "raw",
+   "src": "img/sel_s_070.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "sel_s_070_b",
+   "start": 480.07,
+   "kind": "raw",
+   "src": "img/sel_s_070_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.65
+  },
+  {
+   "id": "sel_s_071",
+   "start": 484.42,
+   "kind": "raw",
+   "src": "img/sel_s_071.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_071_b",
+   "start": 487.02,
+   "kind": "raw",
+   "src": "img/sel_s_071_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "sel_s_071_c",
+   "start": 490.03,
+   "kind": "raw",
+   "src": "img/sel_s_071_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.17
+  },
+  {
+   "id": "sel_s_072",
+   "start": 491.9,
+   "kind": "raw",
+   "src": "img/sel_s_072.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "sel_s_072_b",
+   "start": 495.07,
+   "kind": "raw",
+   "src": "img/sel_s_072_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.63
+  },
+  {
+   "id": "sel_s_073",
+   "start": 497.4,
+   "kind": "raw",
+   "src": "img/sel_s_073.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_073_b",
+   "start": 500.07,
+   "kind": "raw",
+   "src": "img/sel_s_073_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.01
+  },
+  {
+   "id": "sel_s_074",
+   "start": 502.78,
+   "kind": "raw",
+   "src": "img/sel_s_074.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.91
+  },
+  {
+   "id": "sel_s_074_b",
+   "start": 505.39,
+   "kind": "raw",
+   "src": "img/sel_s_074_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "sel_s_075",
+   "start": 508.52,
+   "kind": "raw",
+   "src": "img/sel_s_075.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.17
+  },
+  {
+   "id": "sel_s_075_b",
+   "start": 511.39,
+   "kind": "raw",
+   "src": "img/sel_s_075_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "sel_s_076",
+   "start": 515.25,
+   "kind": "raw",
+   "src": "img/sel_s_076.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.99
+  },
+  {
+   "id": "sel_s_076_b",
+   "start": 517.94,
+   "kind": "raw",
+   "src": "img/sel_s_076_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.42
+  },
+  {
+   "id": "ov_highlightsweep_518",
+   "start": 517.94,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Sumarle al aceite",
+   "highlight": "un poco de pigmento",
+   "post": " hace de filtro solar: bloquea los rayos UV.",
+   "note": "más color = más años al sol"
+  },
+  {
+   "id": "sel_s_077",
+   "start": 522.06,
+   "kind": "raw",
+   "src": "img/sel_s_077.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "sel_s_077_b",
+   "start": 524.78,
+   "kind": "raw",
+   "src": "img/sel_s_077_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_077_c",
+   "start": 527.46,
+   "kind": "raw",
+   "src": "img/sel_s_077_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.4
+  },
+  {
+   "id": "sel_s_078",
+   "start": 529.56,
+   "kind": "raw",
+   "src": "img/sel_s_078.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.95
+  },
+  {
+   "id": "sel_s_078_b",
+   "start": 532.21,
+   "kind": "raw",
+   "src": "img/sel_s_078_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.91
+  },
+  {
+   "id": "sel_s_078_c",
+   "start": 534.82,
+   "kind": "raw",
+   "src": "img/sel_s_078_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.28
+  },
+  {
+   "id": "sel_s_079",
+   "start": 536.8,
+   "kind": "raw",
+   "src": "img/sel_s_079.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "sel_s_079_b",
+   "start": 539.79,
+   "kind": "raw",
+   "src": "img/sel_s_079_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.07
+  },
+  {
+   "id": "sel_s_079_c",
+   "start": 542.56,
+   "kind": "raw",
+   "src": "img/sel_s_079_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.01
+  },
+  {
+   "id": "sel_s_080",
+   "start": 544.27,
+   "kind": "raw",
+   "src": "img/sel_s_080.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "sel_s_080_b",
+   "start": 547.03,
+   "kind": "raw",
+   "src": "img/sel_s_080_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "sel_s_081",
+   "start": 549.67,
+   "kind": "raw",
+   "src": "img/sel_s_081.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.54
+  },
+  {
+   "id": "sel_s_081_b",
+   "start": 552.91,
+   "kind": "raw",
+   "src": "img/sel_s_081_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "sel_s_082",
+   "start": 557.15,
+   "kind": "raw",
+   "src": "img/sel_s_082.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "sel_s_082_b",
+   "start": 560.06,
+   "kind": "raw",
+   "src": "img/sel_s_082_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.15
+  },
+  {
+   "id": "sel_s_082_c",
+   "start": 562.91,
+   "kind": "raw",
+   "src": "img/sel_s_082_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.19
+  },
+  {
+   "id": "sel_s_083",
+   "start": 564.8,
+   "kind": "raw",
+   "src": "img/sel_s_083.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "sel_s_083_b",
+   "start": 568.16,
+   "kind": "raw",
+   "src": "img/sel_s_083_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "sel_s_084",
+   "start": 572.1,
+   "kind": "raw",
+   "src": "img/sel_s_084.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.95
+  },
+  {
+   "id": "sel_s_084_b",
+   "start": 574.75,
+   "kind": "raw",
+   "src": "img/sel_s_084_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_084_c",
+   "start": 577.48,
+   "kind": "raw",
+   "src": "img/sel_s_084_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.19
+  },
+  {
+   "id": "sel_s_085",
+   "start": 579.37,
+   "kind": "raw",
+   "src": "img/sel_s_085.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "sel_s_085_b",
+   "start": 582.18,
+   "kind": "raw",
+   "src": "img/sel_s_085_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.57
+  },
+  {
+   "id": "ov_vsduel_584",
+   "start": 583.64,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Por qué uno dura y el otro no",
+   "title": "Armadura vs. defensa flexible",
+   "left": {
+    "label": "Barniz (película)",
+    "sub": "armadura rígida que un día se quiebra",
+    "good": false
+   },
+   "right": {
+    "label": "Aceite (penetrante)",
+    "sub": "defensa flexible que vive con la madera",
+    "good": true
+   }
+  },
+  {
+   "id": "sel_s_086",
+   "start": 586.45,
+   "kind": "raw",
+   "src": "img/sel_s_086.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.99
+  },
+  {
+   "id": "sel_s_086_b",
+   "start": 589.14,
+   "kind": "raw",
+   "src": "img/sel_s_086_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76
+  },
+  {
+   "id": "ov_pullquote_590",
+   "start": 590.28,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Los botes de Don Vicente no se pelan nunca. No tienen nada arriba que se pueda pelar."
+  },
+  {
+   "id": "sel_s_087",
+   "start": 592.6,
+   "kind": "raw",
+   "src": "img/sel_s_087.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.25
+  },
+  {
+   "id": "sel_s_087_b",
+   "start": 595.55,
+   "kind": "raw",
+   "src": "img/sel_s_087_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28
+  },
+  {
+   "id": "sel_s_088",
+   "start": 598.53,
+   "kind": "raw",
+   "src": "img/sel_s_088.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "sel_s_088_b",
+   "start": 601.27,
+   "kind": "raw",
+   "src": "img/sel_s_088_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "sel_s_088_c",
+   "start": 604.05,
+   "kind": "raw",
+   "src": "img/sel_s_088_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.01
+  },
+  {
+   "id": "ov_ctacard_605",
+   "start": 605.3,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "40 arreglos y secretos de los viejos",
+   "title": "Manual del Constructor Libre",
+   "bullet": "madera, óxido, humedad, plagas, caños — con medidas exactas",
+   "price": 0,
+   "cta": "LINK EN LA DESCRIPCIÓN"
+  },
+  {
+   "id": "sel_s_089",
+   "start": 605.76,
+   "kind": "raw",
+   "src": "img/sel_s_089.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.01
+  },
+  {
+   "id": "sel_s_089_b",
+   "start": 608.47,
+   "kind": "raw",
+   "src": "img/sel_s_089_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.15
+  },
+  {
+   "id": "sel_s_089_c",
+   "start": 611.32,
+   "kind": "raw",
+   "src": "img/sel_s_089_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.03
+  },
+  {
+   "id": "sel_s_090",
+   "start": 613.05,
+   "kind": "raw",
+   "src": "img/sel_s_090.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_090_b",
+   "start": 615.72,
+   "kind": "raw",
+   "src": "img/sel_s_090_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_090_c",
+   "start": 618.4,
+   "kind": "raw",
+   "src": "img/sel_s_090_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.34
+  },
+  {
+   "id": "sel_s_091",
+   "start": 620.44,
+   "kind": "raw",
+   "src": "img/sel_s_091.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_091_b",
+   "start": 623.06,
+   "kind": "raw",
+   "src": "img/sel_s_091_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.03
+  },
+  {
+   "id": "sel_s_092",
+   "start": 626.79,
+   "kind": "raw",
+   "src": "img/sel_s_092.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "sel_s_092_b",
+   "start": 629.57,
+   "kind": "raw",
+   "src": "img/sel_s_092_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_092_c",
+   "start": 632.19,
+   "kind": "raw",
+   "src": "img/sel_s_092_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.58
+  },
+  {
+   "id": "sel_s_093",
+   "start": 634.47,
+   "kind": "raw",
+   "src": "img/sel_s_093.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "sel_s_093_b",
+   "start": 637.48,
+   "kind": "raw",
+   "src": "img/sel_s_093_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "sel_s_094",
+   "start": 641.22,
+   "kind": "raw",
+   "src": "img/sel_s_094.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "sel_s_094_b",
+   "start": 644.18,
+   "kind": "raw",
+   "src": "img/sel_s_094_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.75
+  },
+  {
+   "id": "sel_s_095",
+   "start": 646.63,
+   "kind": "raw",
+   "src": "img/sel_s_095.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_095_b",
+   "start": 649.3,
+   "kind": "raw",
+   "src": "img/sel_s_095_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_095_c",
+   "start": 651.92,
+   "kind": "raw",
+   "src": "img/sel_s_095_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.46
+  },
+  {
+   "id": "sel_s_096",
+   "start": 654.08,
+   "kind": "raw",
+   "src": "img/sel_s_096.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "sel_s_096_b",
+   "start": 656.92,
+   "kind": "raw",
+   "src": "img/sel_s_096_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.7
+  },
+  {
+   "id": "sel_s_097",
+   "start": 661.32,
+   "kind": "raw",
+   "src": "img/sel_s_097.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.85
+  },
+  {
+   "id": "sel_s_191",
+   "start": 662.87,
+   "kind": "raw",
+   "src": "img/sel_s_191.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.39
+  },
+  {
+   "id": "ov_numberedsteps_663",
+   "start": 662.87,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Secreto 1 de 4",
+   "title": "Los secretos de Don Vicente",
+   "steps": [
+    {
+     "title": "Madera limpia y seca",
+     "sub": "si está húmeda o sucia, el aceite no penetra"
+    }
+   ]
+  },
+  {
+   "id": "sel_s_097_b",
+   "start": 663.96,
+   "kind": "raw",
+   "src": "img/sel_s_097_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.95
+  },
+  {
+   "id": "sel_s_098",
+   "start": 668.61,
+   "kind": "raw",
+   "src": "img/sel_s_098.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.13
+  },
+  {
+   "id": "sel_s_098_b",
+   "start": 671.44,
+   "kind": "raw",
+   "src": "img/sel_s_098_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "sel_s_098_c",
+   "start": 674.3,
+   "kind": "raw",
+   "src": "img/sel_s_098_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.13
+  },
+  {
+   "id": "sel_s_099",
+   "start": 676.13,
+   "kind": "raw",
+   "src": "img/sel_s_099.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_099_b",
+   "start": 678.8,
+   "kind": "raw",
+   "src": "img/sel_s_099_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.13
+  },
+  {
+   "id": "sel_s_100",
+   "start": 683.63,
+   "kind": "raw",
+   "src": "img/sel_s_100.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84
+  },
+  {
+   "id": "sel_s_100_b",
+   "start": 687.17,
+   "kind": "raw",
+   "src": "img/sel_s_100_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "ov_numberedsteps_687",
+   "start": 687.17,
+   "dur": 7.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Secreto 2 de 4",
+   "title": "Los secretos de Don Vicente",
+   "steps": [
+    {
+     "title": "Madera limpia y seca",
+     "sub": "si está húmeda o sucia, el aceite no penetra"
+    },
+    {
+     "title": "Manos finas, nunca gruesas",
+     "sub": "dejá penetrar cada mano y sacá el excedente"
+    }
+   ]
+  },
+  {
+   "id": "sel_s_101",
+   "start": 690.97,
+   "kind": "raw",
+   "src": "img/sel_s_101.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "sel_s_101_b",
+   "start": 693.71,
+   "kind": "raw",
+   "src": "img/sel_s_101_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.82
+  },
+  {
+   "id": "sel_s_102",
+   "start": 698.23,
+   "kind": "raw",
+   "src": "img/sel_s_102.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_102_b",
+   "start": 700.83,
+   "kind": "raw",
+   "src": "img/sel_s_102_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_103",
+   "start": 703.5,
+   "kind": "raw",
+   "src": "img/sel_s_103.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.99
+  },
+  {
+   "id": "sel_s_103_b",
+   "start": 706.19,
+   "kind": "raw",
+   "src": "img/sel_s_103_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.86
+  },
+  {
+   "id": "sel_s_104",
+   "start": 710.75,
+   "kind": "raw",
+   "src": "img/sel_s_104.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.57
+  },
+  {
+   "id": "sel_s_104_b",
+   "start": 714.02,
+   "kind": "raw",
+   "src": "img/sel_s_104_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8
+  },
+  {
+   "id": "sel_s_105",
+   "start": 717.52,
+   "kind": "raw",
+   "src": "img/sel_s_105.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_105_b",
+   "start": 720.2,
+   "kind": "raw",
+   "src": "img/sel_s_105_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "sel_s_105_c",
+   "start": 722.98,
+   "kind": "raw",
+   "src": "img/sel_s_105_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1
+  },
+  {
+   "id": "sel_s_106",
+   "start": 724.78,
+   "kind": "raw",
+   "src": "img/sel_s_106.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "sel_s_106_b",
+   "start": 727.48,
+   "kind": "raw",
+   "src": "img/sel_s_106_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28
+  },
+  {
+   "id": "sel_s_106_c",
+   "start": 730.46,
+   "kind": "raw",
+   "src": "img/sel_s_106_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.12
+  },
+  {
+   "id": "sel_s_107",
+   "start": 732.28,
+   "kind": "raw",
+   "src": "img/sel_s_107.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "sel_s_107_b",
+   "start": 735.19,
+   "kind": "raw",
+   "src": "img/sel_s_107_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.93
+  },
+  {
+   "id": "sel_s_107_c",
+   "start": 737.82,
+   "kind": "raw",
+   "src": "img/sel_s_107_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.39
+  },
+  {
+   "id": "sel_s_108",
+   "start": 739.91,
+   "kind": "raw",
+   "src": "img/sel_s_108.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.15
+  },
+  {
+   "id": "ov_numberedsteps_741",
+   "start": 741.45,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Secreto 3 de 4",
+   "title": "Los secretos de Don Vicente",
+   "steps": [
+    {
+     "title": "Madera limpia y seca",
+     "sub": "si está húmeda o sucia, el aceite no penetra"
+    },
+    {
+     "title": "Manos finas, nunca gruesas",
+     "sub": "dejá penetrar cada mano y sacá el excedente"
+    },
+    {
+     "title": "Mojado sobre mojado",
+     "sub": "el truco de los botes para máxima protección al agua"
+    }
+   ]
+  },
+  {
+   "id": "sel_s_108_b",
+   "start": 742.76,
+   "kind": "raw",
+   "src": "img/sel_s_108_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.12
+  },
+  {
+   "id": "sel_s_109",
+   "start": 746.58,
+   "kind": "raw",
+   "src": "img/sel_s_109.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "sel_s_109_b",
+   "start": 749.52,
+   "kind": "raw",
+   "src": "img/sel_s_109_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.99
+  },
+  {
+   "id": "sel_s_109_c",
+   "start": 752.21,
+   "kind": "raw",
+   "src": "img/sel_s_109_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "sel_s_110",
+   "start": 754.11,
+   "kind": "raw",
+   "src": "img/sel_s_110.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_110_b",
+   "start": 756.71,
+   "kind": "raw",
+   "src": "img/sel_s_110_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.31
+  },
+  {
+   "id": "sel_s_111",
+   "start": 760.72,
+   "kind": "raw",
+   "src": "img/sel_s_111.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_111_b",
+   "start": 763.34,
+   "kind": "raw",
+   "src": "img/sel_s_111_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.07
+  },
+  {
+   "id": "sel_s_112",
+   "start": 766.11,
+   "kind": "raw",
+   "src": "img/sel_s_112.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.19
+  },
+  {
+   "id": "sel_s_112_b",
+   "start": 769,
+   "kind": "raw",
+   "src": "img/sel_s_112_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.21
+  },
+  {
+   "id": "sel_s_113",
+   "start": 772.91,
+   "kind": "raw",
+   "src": "img/sel_s_113.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_113_b",
+   "start": 775.64,
+   "kind": "raw",
+   "src": "img/sel_s_113_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.52
+  },
+  {
+   "id": "sel_s_114",
+   "start": 779.86,
+   "kind": "raw",
+   "src": "img/sel_s_114.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_114_b",
+   "start": 782.59,
+   "kind": "raw",
+   "src": "img/sel_s_114_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.15
+  },
+  {
+   "id": "ov_numberedsteps_783",
+   "start": 782.67,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Secreto 4 de 4",
+   "title": "Los secretos de Don Vicente",
+   "steps": [
+    {
+     "title": "Madera limpia y seca",
+     "sub": "si está húmeda o sucia, el aceite no penetra"
+    },
+    {
+     "title": "Manos finas, nunca gruesas",
+     "sub": "dejá penetrar cada mano y sacá el excedente"
+    },
+    {
+     "title": "Mojado sobre mojado",
+     "sub": "el truco de los botes para máxima protección al agua"
+    },
+    {
+     "title": "Mantenimiento: una caricia",
+     "sub": "una manito cada tanto, sin lijar nada"
+    }
+   ]
+  },
+  {
+   "id": "sel_s_115",
+   "start": 785.44,
+   "kind": "raw",
+   "src": "img/sel_s_115.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "sel_s_115_b",
+   "start": 788.6,
+   "kind": "raw",
+   "src": "img/sel_s_115_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "sel_s_116",
+   "start": 792.44,
+   "kind": "raw",
+   "src": "img/sel_s_116.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.23
+  },
+  {
+   "id": "sel_s_116_b",
+   "start": 795.37,
+   "kind": "raw",
+   "src": "img/sel_s_116_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.58
+  },
+  {
+   "id": "sel_s_117",
+   "start": 799.65,
+   "kind": "raw",
+   "src": "img/sel_s_117.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.07
+  },
+  {
+   "id": "sel_s_117_b",
+   "start": 802.42,
+   "kind": "raw",
+   "src": "img/sel_s_117_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.01
+  },
+  {
+   "id": "ov_bigstatreveal_805",
+   "start": 804.99,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El mantenimiento del penetrante",
+   "value": 10,
+   "prefix": "",
+   "suffix": " min",
+   "support": "una manito de aceite encima, la madera la toma — sin lijar, sin escamas"
+  },
+  {
+   "id": "sel_s_117_c",
+   "start": 805.13,
+   "kind": "raw",
+   "src": "img/sel_s_117_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.31
+  },
+  {
+   "id": "sel_s_118",
+   "start": 807.14,
+   "kind": "raw",
+   "src": "img/sel_s_118.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "sel_s_118_b",
+   "start": 809.88,
+   "kind": "raw",
+   "src": "img/sel_s_118_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "sel_s_118_c",
+   "start": 812.54,
+   "kind": "raw",
+   "src": "img/sel_s_118_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.56
+  },
+  {
+   "id": "sel_s_119",
+   "start": 814.8,
+   "kind": "raw",
+   "src": "img/sel_s_119.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "sel_s_119_b",
+   "start": 817.71,
+   "kind": "raw",
+   "src": "img/sel_s_119_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.43
+  },
+  {
+   "id": "sel_s_120",
+   "start": 821.84,
+   "kind": "raw",
+   "src": "img/sel_s_120.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_120_b",
+   "start": 824.44,
+   "kind": "raw",
+   "src": "img/sel_s_120_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5
+  },
+  {
+   "id": "ov_checklistreveal_824",
+   "start": 824.44,
+   "dur": 7.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Todo lo que podés proteger",
+   "items": [
+    "Deck y galería",
+    "Cerco y postes",
+    "Muebles de jardín",
+    "Pérgola, quincho y tirantes",
+    "Puertas y ventanas",
+    "Macetas, canteros y hasta botes"
+   ],
+   "stamp": "MISMO PRINCIPIO"
+  },
+  {
+   "id": "sel_s_121",
+   "start": 829.14,
+   "kind": "raw",
+   "src": "img/sel_s_121.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_121_b",
+   "start": 831.87,
+   "kind": "raw",
+   "src": "img/sel_s_121_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "sel_s_121_c",
+   "start": 834.57,
+   "kind": "raw",
+   "src": "img/sel_s_121_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.4
+  },
+  {
+   "id": "sel_s_122",
+   "start": 836.67,
+   "kind": "raw",
+   "src": "img/sel_s_122.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "sel_s_122_b",
+   "start": 839.31,
+   "kind": "raw",
+   "src": "img/sel_s_122_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.94
+  },
+  {
+   "id": "sel_s_123",
+   "start": 843.95,
+   "kind": "raw",
+   "src": "img/sel_s_123.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.07
+  },
+  {
+   "id": "sel_s_123_b",
+   "start": 846.72,
+   "kind": "raw",
+   "src": "img/sel_s_123_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.97
+  },
+  {
+   "id": "ov_beforeafter_847",
+   "start": 846.72,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "El deck con penetrante",
+   "beforeLabel": "Gris, reseco, áspero",
+   "afterLabel": "Color cálido, aguanta años",
+   "caption": "y cuando pierde color, una manito y vuelve"
+  },
+  {
+   "id": "sel_s_124",
+   "start": 851.39,
+   "kind": "raw",
+   "src": "img/sel_s_124.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "sel_s_124_b",
+   "start": 854.09,
+   "kind": "raw",
+   "src": "img/sel_s_124_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.88
+  },
+  {
+   "id": "sel_s_125",
+   "start": 858.67,
+   "kind": "raw",
+   "src": "img/sel_s_125.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_125_b",
+   "start": 861.35,
+   "kind": "raw",
+   "src": "img/sel_s_125_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_125_c",
+   "start": 863.97,
+   "kind": "raw",
+   "src": "img/sel_s_125_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.87
+  },
+  {
+   "id": "sel_s_126",
+   "start": 866.54,
+   "kind": "raw",
+   "src": "img/sel_s_126.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "sel_s_126_b",
+   "start": 869.68,
+   "kind": "raw",
+   "src": "img/sel_s_126_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.43
+  },
+  {
+   "id": "sel_s_127",
+   "start": 873.81,
+   "kind": "raw",
+   "src": "img/sel_s_127.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.01
+  },
+  {
+   "id": "sel_s_127_b",
+   "start": 876.52,
+   "kind": "raw",
+   "src": "img/sel_s_127_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.99
+  },
+  {
+   "id": "sel_s_127_c",
+   "start": 879.21,
+   "kind": "raw",
+   "src": "img/sel_s_127_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.49
+  },
+  {
+   "id": "sel_s_128",
+   "start": 881.4,
+   "kind": "raw",
+   "src": "img/sel_s_128.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "sel_s_128_b",
+   "start": 884.24,
+   "kind": "raw",
+   "src": "img/sel_s_128_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.71
+  },
+  {
+   "id": "sel_s_129",
+   "start": 888.65,
+   "kind": "raw",
+   "src": "img/sel_s_129.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32
+  },
+  {
+   "id": "sel_s_129_b",
+   "start": 891.67,
+   "kind": "raw",
+   "src": "img/sel_s_129_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.49
+  },
+  {
+   "id": "sel_s_130",
+   "start": 893.86,
+   "kind": "raw",
+   "src": "img/sel_s_130.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "sel_s_130_b",
+   "start": 897.05,
+   "kind": "raw",
+   "src": "img/sel_s_130_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.33
+  },
+  {
+   "id": "sel_s_131",
+   "start": 901.08,
+   "kind": "raw",
+   "src": "img/sel_s_131.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "sel_s_131_b",
+   "start": 903.89,
+   "kind": "raw",
+   "src": "img/sel_s_131_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "sel_s_131_c",
+   "start": 906.75,
+   "kind": "raw",
+   "src": "img/sel_s_131_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1
+  },
+  {
+   "id": "sel_s_132",
+   "start": 908.55,
+   "kind": "raw",
+   "src": "img/sel_s_132.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.19
+  },
+  {
+   "id": "sel_s_132_b",
+   "start": 911.44,
+   "kind": "raw",
+   "src": "img/sel_s_132_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.59
+  },
+  {
+   "id": "sel_s_133",
+   "start": 915.73,
+   "kind": "raw",
+   "src": "img/sel_s_133.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_133_b",
+   "start": 918.33,
+   "kind": "raw",
+   "src": "img/sel_s_133_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.73
+  },
+  {
+   "id": "sel_s_134",
+   "start": 921.76,
+   "kind": "raw",
+   "src": "img/sel_s_134.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "sel_s_134_b",
+   "start": 924.7,
+   "kind": "raw",
+   "src": "img/sel_s_134_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_134_c",
+   "start": 927.32,
+   "kind": "raw",
+   "src": "img/sel_s_134_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.01
+  },
+  {
+   "id": "sel_s_135",
+   "start": 929.03,
+   "kind": "raw",
+   "src": "img/sel_s_135.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_135_b",
+   "start": 931.71,
+   "kind": "raw",
+   "src": "img/sel_s_135_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.93
+  },
+  {
+   "id": "sel_s_136",
+   "start": 936.34,
+   "kind": "raw",
+   "src": "img/sel_s_136.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_136_b",
+   "start": 938.96,
+   "kind": "raw",
+   "src": "img/sel_s_136_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.09
+  },
+  {
+   "id": "sel_s_136_c",
+   "start": 941.75,
+   "kind": "raw",
+   "src": "img/sel_s_136_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.83
+  },
+  {
+   "id": "sel_s_137",
+   "start": 944.28,
+   "kind": "raw",
+   "src": "img/sel_s_137.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "sel_s_137_b",
+   "start": 947.22,
+   "kind": "raw",
+   "src": "img/sel_s_137_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.93
+  },
+  {
+   "id": "sel_s_137_c",
+   "start": 949.85,
+   "kind": "raw",
+   "src": "img/sel_s_137_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.47
+  },
+  {
+   "id": "sel_s_138",
+   "start": 952.02,
+   "kind": "raw",
+   "src": "img/sel_s_138.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "sel_s_138_b",
+   "start": 954.8,
+   "kind": "raw",
+   "src": "img/sel_s_138_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.27
+  },
+  {
+   "id": "sel_s_138_c",
+   "start": 957.77,
+   "kind": "raw",
+   "src": "img/sel_s_138_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.13
+  },
+  {
+   "id": "ov_bigstatreveal_958",
+   "start": 957.77,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "La promesa de la etiqueta",
+   "value": 5,
+   "prefix": "",
+   "suffix": " años",
+   "support": "impermeable, protección total… que afuera no se cumple, porque se pela igual"
+  },
+  {
+   "id": "sel_s_139",
+   "start": 959.6,
+   "kind": "raw",
+   "src": "img/sel_s_139.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "sel_s_139_b",
+   "start": 962.56,
+   "kind": "raw",
+   "src": "img/sel_s_139_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.65
+  },
+  {
+   "id": "sel_s_140",
+   "start": 966.91,
+   "kind": "raw",
+   "src": "img/sel_s_140.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "ov_highlightsweep_968",
+   "start": 968.12,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "La palabra mágica que tenés que pedir es",
+   "highlight": "PENETRANTE",
+   "post": " — mate, no película brillante.",
+   "note": "no te vendan gato por liebre"
+  },
+  {
+   "id": "sel_s_140_b",
+   "start": 969.77,
+   "kind": "raw",
+   "src": "img/sel_s_140_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.69
+  },
+  {
+   "id": "sel_s_141",
+   "start": 972.16,
+   "kind": "raw",
+   "src": "img/sel_s_141.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "sel_s_141_b",
+   "start": 974.92,
+   "kind": "raw",
+   "src": "img/sel_s_141_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "ov_beforeafter_977",
+   "start": 976.96,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Cómo reconocerlo en la mano",
+   "beforeLabel": "Brillante como espejo = película",
+   "afterLabel": "Mate natural = penetrante",
+   "caption": "si brilla como espejo, desconfiá"
+  },
+  {
+   "id": "sel_s_141_c",
+   "start": 977.59,
+   "kind": "raw",
+   "src": "img/sel_s_141_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1
+  },
+  {
+   "id": "sel_s_142",
+   "start": 979.39,
+   "kind": "raw",
+   "src": "img/sel_s_142.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "sel_s_142_b",
+   "start": 982.03,
+   "kind": "raw",
+   "src": "img/sel_s_142_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.07
+  },
+  {
+   "id": "sel_s_142_c",
+   "start": 984.8,
+   "kind": "raw",
+   "src": "img/sel_s_142_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.69
+  },
+  {
+   "id": "sel_s_143",
+   "start": 987.19,
+   "kind": "raw",
+   "src": "img/sel_s_143.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "sel_s_143_b",
+   "start": 989.95,
+   "kind": "raw",
+   "src": "img/sel_s_143_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_143_c",
+   "start": 992.57,
+   "kind": "raw",
+   "src": "img/sel_s_143_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.55
+  },
+  {
+   "id": "sel_s_144",
+   "start": 994.82,
+   "kind": "raw",
+   "src": "img/sel_s_144.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_144_b",
+   "start": 997.55,
+   "kind": "raw",
+   "src": "img/sel_s_144_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.81
+  },
+  {
+   "id": "sel_s_145",
+   "start": 1002.06,
+   "kind": "raw",
+   "src": "img/sel_s_145.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_145_b",
+   "start": 1004.73,
+   "kind": "raw",
+   "src": "img/sel_s_145_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "sel_s_146",
+   "start": 1007.74,
+   "kind": "raw",
+   "src": "img/sel_s_146.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "sel_s_146_b",
+   "start": 1010.4,
+   "kind": "raw",
+   "src": "img/sel_s_146_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "sel_s_146_c",
+   "start": 1013.18,
+   "kind": "raw",
+   "src": "img/sel_s_146_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.21
+  },
+  {
+   "id": "sel_s_147",
+   "start": 1015.09,
+   "kind": "raw",
+   "src": "img/sel_s_147.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.99
+  },
+  {
+   "id": "ov_ctacard_1016",
+   "start": 1015.86,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Cuesta menos que un balde caro",
+   "title": "Manual de Reparaciones Caseras",
+   "bullet": "40 soluciones caseras, con medidas y pasos, para cuando las necesites",
+   "price": 0,
+   "cta": "LINK ARRIBA DE TODO"
+  },
+  {
+   "id": "sel_s_147_b",
+   "start": 1017.78,
+   "kind": "raw",
+   "src": "img/sel_s_147_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "sel_s_148",
+   "start": 1020.5,
+   "kind": "raw",
+   "src": "img/sel_s_148.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "ov_bigstatreveal_1021",
+   "start": 1020.5,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Manual de reparaciones caseras",
+   "value": 40,
+   "prefix": "",
+   "suffix": "",
+   "support": "arreglos como este, con medidas y pasos, para cuando los necesites"
+  },
+  {
+   "id": "sel_s_148_b",
+   "start": 1023.26,
+   "kind": "raw",
+   "src": "img/sel_s_148_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "sel_s_148_c",
+   "start": 1025.9,
+   "kind": "raw",
+   "src": "img/sel_s_148_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.19
+  },
+  {
+   "id": "sel_s_149",
+   "start": 1027.79,
+   "kind": "raw",
+   "src": "img/sel_s_149.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.23
+  },
+  {
+   "id": "sel_s_149_b",
+   "start": 1030.72,
+   "kind": "raw",
+   "src": "img/sel_s_149_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "ov_checklistreveal_1031",
+   "start": 1031.42,
+   "dur": 7.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Lo que cubre el manual completo",
+   "items": [
+    "Madera",
+    "Óxido",
+    "Humedad y goteras",
+    "Plagas",
+    "Caños",
+    "Hasta cosas del auto"
+   ],
+   "stamp": "40 ARREGLOS"
+  },
+  {
+   "id": "sel_s_150",
+   "start": 1033.64,
+   "kind": "raw",
+   "src": "img/sel_s_150.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "sel_s_150_b",
+   "start": 1036.63,
+   "kind": "raw",
+   "src": "img/sel_s_150_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.57
+  },
+  {
+   "id": "sel_s_151",
+   "start": 1040.9,
+   "kind": "raw",
+   "src": "img/sel_s_151.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.12
+  },
+  {
+   "id": "sel_s_151_b",
+   "start": 1043.72,
+   "kind": "raw",
+   "src": "img/sel_s_151_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.91
+  },
+  {
+   "id": "sel_s_152",
+   "start": 1047.33,
+   "kind": "raw",
+   "src": "img/sel_s_152.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "sel_s_152_b",
+   "start": 1050.06,
+   "kind": "raw",
+   "src": "img/sel_s_152_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_152_c",
+   "start": 1052.66,
+   "kind": "raw",
+   "src": "img/sel_s_152_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.28
+  },
+  {
+   "id": "sel_s_153",
+   "start": 1054.64,
+   "kind": "raw",
+   "src": "img/sel_s_153.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_153_b",
+   "start": 1057.32,
+   "kind": "raw",
+   "src": "img/sel_s_153_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "sel_s_153_c",
+   "start": 1060.02,
+   "kind": "raw",
+   "src": "img/sel_s_153_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.44
+  },
+  {
+   "id": "sel_s_154",
+   "start": 1062.16,
+   "kind": "raw",
+   "src": "img/sel_s_154.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "sel_s_154_b",
+   "start": 1064.88,
+   "kind": "raw",
+   "src": "img/sel_s_154_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "sel_s_155",
+   "start": 1067.89,
+   "kind": "raw",
+   "src": "img/sel_s_155.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.15
+  },
+  {
+   "id": "ov_mythtruth_1070",
+   "start": 1069.85,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Usar barniz/sellador de película para la madera de afuera",
+   "truth": "Afuera la película es una trampa: se pela. Penetrante, siempre"
+  },
+  {
+   "id": "sel_s_155_b",
+   "start": 1070.74,
+   "kind": "raw",
+   "src": "img/sel_s_155_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.19
+  },
+  {
+   "id": "sel_s_156",
+   "start": 1073.63,
+   "kind": "raw",
+   "src": "img/sel_s_156.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "sel_s_156_b",
+   "start": 1077.03,
+   "kind": "raw",
+   "src": "img/sel_s_156_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "sel_s_157",
+   "start": 1080.97,
+   "kind": "raw",
+   "src": "img/sel_s_157.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.09
+  },
+  {
+   "id": "sel_s_157_b",
+   "start": 1083.76,
+   "kind": "raw",
+   "src": "img/sel_s_157_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "sel_s_158",
+   "start": 1086.77,
+   "kind": "raw",
+   "src": "img/sel_s_158.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "sel_s_158_b",
+   "start": 1089.58,
+   "kind": "raw",
+   "src": "img/sel_s_158_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.01
+  },
+  {
+   "id": "sel_s_158_c",
+   "start": 1092.29,
+   "kind": "raw",
+   "src": "img/sel_s_158_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.25
+  },
+  {
+   "id": "sel_s_159",
+   "start": 1094.24,
+   "kind": "raw",
+   "src": "img/sel_s_159.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "sel_s_159_b",
+   "start": 1096.92,
+   "kind": "raw",
+   "src": "img/sel_s_159_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "ov_mythtruth_1097",
+   "start": 1096.92,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Aplicar el aceite sobre madera húmeda, gris o sucia",
+   "truth": "Si no está limpia y seca, el aceite no penetra: primero recuperás, después aplicás"
+  },
+  {
+   "id": "sel_s_160",
+   "start": 1100.96,
+   "kind": "raw",
+   "src": "img/sel_s_160.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_160_b",
+   "start": 1103.58,
+   "kind": "raw",
+   "src": "img/sel_s_160_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.01
+  },
+  {
+   "id": "sel_s_160_c",
+   "start": 1106.29,
+   "kind": "raw",
+   "src": "img/sel_s_160_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.33
+  },
+  {
+   "id": "sel_s_161",
+   "start": 1108.32,
+   "kind": "raw",
+   "src": "img/sel_s_161.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "sel_s_161_b",
+   "start": 1111.04,
+   "kind": "raw",
+   "src": "img/sel_s_161_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "sel_s_162",
+   "start": 1114.84,
+   "kind": "raw",
+   "src": "img/sel_s_162.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.01
+  },
+  {
+   "id": "sel_s_162_b",
+   "start": 1117.55,
+   "kind": "raw",
+   "src": "img/sel_s_162_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.88
+  },
+  {
+   "id": "sel_s_163",
+   "start": 1121.13,
+   "kind": "raw",
+   "src": "img/sel_s_163.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "ov_mythtruth_1121",
+   "start": 1121.13,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Cargar mucho producto y dar una mano bien gruesa",
+   "truth": "Mano gruesa = capa pegajosa que junta mugre. Menos es más: manos finas"
+  },
+  {
+   "id": "sel_s_163_b",
+   "start": 1123.91,
+   "kind": "raw",
+   "src": "img/sel_s_163_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.17
+  },
+  {
+   "id": "sel_s_164",
+   "start": 1127.78,
+   "kind": "raw",
+   "src": "img/sel_s_164.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_164_b",
+   "start": 1130.4,
+   "kind": "raw",
+   "src": "img/sel_s_164_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.25
+  },
+  {
+   "id": "sel_s_165",
+   "start": 1135.35,
+   "kind": "raw",
+   "src": "img/sel_s_165.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
+  },
+  {
+   "id": "ov_mythtruth_1137",
+   "start": 1137.42,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Dejar el aceite que quedó arriba sin penetrar",
+   "truth": "A los 10 min pasás un trapo y sacás lo que brilla: acabado seco y prolijo"
+  },
+  {
+   "id": "sel_s_165_b",
+   "start": 1138.47,
+   "kind": "raw",
+   "src": "img/sel_s_165_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.82
+  },
+  {
+   "id": "sel_s_166",
+   "start": 1140.99,
+   "kind": "raw",
+   "src": "img/sel_s_166.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "sel_s_166_b",
+   "start": 1143.77,
+   "kind": "raw",
+   "src": "img/sel_s_166_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.58
+  },
+  {
+   "id": "sel_s_167",
+   "start": 1147.05,
+   "kind": "raw",
+   "src": "img/sel_s_167.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "sel_s_167_b",
+   "start": 1150.06,
+   "kind": "raw",
+   "src": "img/sel_s_167_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.48
+  },
+  {
+   "id": "sel_s_168",
+   "start": 1152.24,
+   "kind": "raw",
+   "src": "img/sel_s_168.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "sel_s_168_b",
+   "start": 1155.16,
+   "kind": "raw",
+   "src": "img/sel_s_168_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.95
+  },
+  {
+   "id": "sel_s_168_c",
+   "start": 1157.81,
+   "kind": "raw",
+   "src": "img/sel_s_168_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.21
+  },
+  {
+   "id": "sel_s_169",
+   "start": 1159.72,
+   "kind": "raw",
+   "src": "img/sel_s_169.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "sel_s_169_b",
+   "start": 1162.38,
+   "kind": "raw",
+   "src": "img/sel_s_169_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "ov_numberedsteps_1163",
+   "start": 1163.48,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Consejo 1 de 5",
+   "title": "Consejos de los que saben",
+   "steps": [
+    {
+     "title": "Día tibio, sin sol fuerte",
+     "sub": "poros abiertos, el aceite penetra mejor"
+    }
+   ]
+  },
+  {
+   "id": "sel_s_169_c",
+   "start": 1165.1,
+   "kind": "raw",
+   "src": "img/sel_s_169_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.25
+  },
+  {
+   "id": "sel_s_170",
+   "start": 1167.05,
+   "kind": "raw",
+   "src": "img/sel_s_170.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "sel_s_170_b",
+   "start": 1169.71,
+   "kind": "raw",
+   "src": "img/sel_s_170_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.39
+  },
+  {
+   "id": "sel_s_171",
+   "start": 1172.8,
+   "kind": "raw",
+   "src": "img/sel_s_171.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "sel_s_171_b",
+   "start": 1175.5,
+   "kind": "raw",
+   "src": "img/sel_s_171_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "sel_s_172",
+   "start": 1178.16,
+   "kind": "raw",
+   "src": "img/sel_s_172.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "ov_numberedsteps_1178",
+   "start": 1178.16,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Consejo 2 de 5",
+   "title": "Consejos de los que saben",
+   "steps": [
+    {
+     "title": "Día tibio, sin sol fuerte",
+     "sub": "poros abiertos, el aceite penetra mejor"
+    },
+    {
+     "title": "Cuidado con el trapo de linaza",
+     "sub": "puede calentarse solo; extendelo o mojalo"
+    }
+   ]
+  },
+  {
+   "id": "sel_s_172_b",
+   "start": 1180.88,
+   "kind": "raw",
+   "src": "img/sel_s_172_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.12
+  },
+  {
+   "id": "sel_s_173",
+   "start": 1183.7,
+   "kind": "raw",
+   "src": "img/sel_s_173.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.13
+  },
+  {
+   "id": "sel_s_173_b",
+   "start": 1186.53,
+   "kind": "raw",
+   "src": "img/sel_s_173_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.37
+  },
+  {
+   "id": "sel_s_174",
+   "start": 1190.6,
+   "kind": "raw",
+   "src": "img/sel_s_174.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "sel_s_174_b",
+   "start": 1193.26,
+   "kind": "raw",
+   "src": "img/sel_s_174_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.33
+  },
+  {
+   "id": "sel_s_175",
+   "start": 1196.29,
+   "kind": "raw",
+   "src": "img/sel_s_175.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32
+  },
+  {
+   "id": "sel_s_175_b",
+   "start": 1199.31,
+   "kind": "raw",
+   "src": "img/sel_s_175_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.79
+  },
+  {
+   "id": "ov_numberedsteps_1199",
+   "start": 1199.31,
+   "dur": 6.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Consejo 3 de 5",
+   "title": "Consejos de los que saben",
+   "steps": [
+    {
+     "title": "Día tibio, sin sol fuerte",
+     "sub": "poros abiertos, el aceite penetra mejor"
+    },
+    {
+     "title": "Cuidado con el trapo de linaza",
+     "sub": "puede calentarse solo; extendelo o mojalo"
+    },
+    {
+     "title": "Saturá cantos y puntas",
+     "sub": "el deck se pudre por los bordes, no por arriba"
+    }
+   ]
+  },
+  {
+   "id": "sel_s_176",
+   "start": 1201.8,
+   "kind": "raw",
+   "src": "img/sel_s_176.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "sel_s_176_b",
+   "start": 1204.74,
+   "kind": "raw",
+   "src": "img/sel_s_176_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.74
+  },
+  {
+   "id": "sel_s_177",
+   "start": 1209.18,
+   "kind": "raw",
+   "src": "img/sel_s_177.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "sel_s_177_b",
+   "start": 1211.96,
+   "kind": "raw",
+   "src": "img/sel_s_177_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "ov_highlightsweep_1214",
+   "start": 1213.64,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Un deck se pudre casi siempre",
+   "highlight": "por las puntas y los cantos",
+   "post": ", no por la cara de arriba.",
+   "note": "satura bien esos bordes"
+  },
+  {
+   "id": "sel_s_177_c",
+   "start": 1214.62,
+   "kind": "raw",
+   "src": "img/sel_s_177_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.23
+  },
+  {
+   "id": "sel_s_178",
+   "start": 1216.55,
+   "kind": "raw",
+   "src": "img/sel_s_178.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.83
+  },
+  {
+   "id": "sel_s_178_b",
+   "start": 1220.08,
+   "kind": "raw",
+   "src": "img/sel_s_178_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "ov_numberedsteps_1220",
+   "start": 1220.08,
+   "dur": 6.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Consejo 4 de 5",
+   "title": "Consejos de los que saben",
+   "steps": [
+    {
+     "title": "Día tibio, sin sol fuerte",
+     "sub": "poros abiertos, el aceite penetra mejor"
+    },
+    {
+     "title": "Cuidado con el trapo de linaza",
+     "sub": "puede calentarse solo; extendelo o mojalo"
+    },
+    {
+     "title": "Saturá cantos y puntas",
+     "sub": "el deck se pudre por los bordes, no por arriba"
+    },
+    {
+     "title": "Hacé la prueba del agua",
+     "sub": "si forma perlitas, está funcionando"
+    }
+   ]
+  },
+  {
+   "id": "sel_s_179",
+   "start": 1222.99,
+   "kind": "raw",
+   "src": "img/sel_s_179.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "sel_s_179_b",
+   "start": 1225.85,
+   "kind": "raw",
+   "src": "img/sel_s_179_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.64
+  },
+  {
+   "id": "sel_s_180",
+   "start": 1228.19,
+   "kind": "raw",
+   "src": "img/sel_s_180.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "sel_s_180_b",
+   "start": 1231.1,
+   "kind": "raw",
+   "src": "img/sel_s_180_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "sel_s_180_c",
+   "start": 1233.77,
+   "kind": "raw",
+   "src": "img/sel_s_180_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.41
+  },
+  {
+   "id": "sel_s_181",
+   "start": 1235.88,
+   "kind": "raw",
+   "src": "img/sel_s_181.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "sel_s_181_b",
+   "start": 1239.08,
+   "kind": "raw",
+   "src": "img/sel_s_181_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.37
+  },
+  {
+   "id": "sel_s_182",
+   "start": 1243.15,
+   "kind": "raw",
+   "src": "img/sel_s_182.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "sel_s_182_b",
+   "start": 1246.06,
+   "kind": "raw",
+   "src": "img/sel_s_182_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.44
+  },
+  {
+   "id": "sel_s_183",
+   "start": 1248.2,
+   "kind": "raw",
+   "src": "img/sel_s_183.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "ov_numberedsteps_1248",
+   "start": 1248.2,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Consejo 5 de 5",
+   "title": "Consejos de los que saben",
+   "steps": [
+    {
+     "title": "Día tibio, sin sol fuerte",
+     "sub": "poros abiertos, el aceite penetra mejor"
+    },
+    {
+     "title": "Cuidado con el trapo de linaza",
+     "sub": "puede calentarse solo; extendelo o mojalo"
+    },
+    {
+     "title": "Saturá cantos y puntas",
+     "sub": "el deck se pudre por los bordes, no por arriba"
+    },
+    {
+     "title": "Hacé la prueba del agua",
+     "sub": "si forma perlitas, está funcionando"
+    },
+    {
+     "title": "Dejá de pelear cada año",
+     "sub": "bien hecho una vez, después solo caricias"
+    }
+   ]
+  },
+  {
+   "id": "sel_s_183_b",
+   "start": 1250.84,
+   "kind": "raw",
+   "src": "img/sel_s_183_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "sel_s_183_c",
+   "start": 1253.83,
+   "kind": "raw",
+   "src": "img/sel_s_183_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.03
+  },
+  {
+   "id": "sel_s_184",
+   "start": 1255.56,
+   "kind": "raw",
+   "src": "img/sel_s_184.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_184_b",
+   "start": 1258.16,
+   "kind": "raw",
+   "src": "img/sel_s_184_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.99
+  },
+  {
+   "id": "sel_s_185",
+   "start": 1262.85,
+   "kind": "raw",
+   "src": "img/sel_s_185.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "sel_s_185_b",
+   "start": 1265.51,
+   "kind": "raw",
+   "src": "img/sel_s_185_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_185_c",
+   "start": 1268.13,
+   "kind": "raw",
+   "src": "img/sel_s_185_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.31
+  },
+  {
+   "id": "sel_s_186",
+   "start": 1270.14,
+   "kind": "raw",
+   "src": "img/sel_s_186.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_186_b",
+   "start": 1272.76,
+   "kind": "raw",
+   "src": "img/sel_s_186_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.73
+  },
+  {
+   "id": "sel_s_187",
+   "start": 1275.19,
+   "kind": "raw",
+   "src": "img/sel_s_187.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "sel_s_187_b",
+   "start": 1278.32,
+   "kind": "raw",
+   "src": "img/sel_s_187_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76
+  },
+  {
+   "id": "sel_s_188",
+   "start": 1281.78,
+   "kind": "raw",
+   "src": "img/sel_s_188.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "sel_s_188_b",
+   "start": 1284.88,
+   "kind": "raw",
+   "src": "img/sel_s_188_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "sel_s_189",
+   "start": 1288.24,
+   "kind": "raw",
+   "src": "img/sel_s_189.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "ov_numberedsteps_1289",
+   "start": 1288.8,
+   "dur": 7.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Antes de cerrar",
+   "title": "Para llevarte lo importante",
+   "steps": [
+    {
+     "title": "Película se pela; penetrante no"
+    },
+    {
+     "title": "Afuera, penetrante siempre"
+    },
+    {
+     "title": "Limpia, seca, manos finas, excedente afuera"
+    },
+    {
+     "title": "Mantenimiento: una caricia, sin lijar"
+    }
+   ]
+  },
+  {
+   "id": "sel_s_189_b",
+   "start": 1291.32,
+   "kind": "raw",
+   "src": "img/sel_s_189_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.44
+  },
+  {
+   "id": "sel_s_190",
+   "start": 1295.46,
+   "kind": "raw",
+   "src": "img/sel_s_190.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.07
+  },
+  {
+   "id": "sel_s_190_b",
+   "start": 1298.23,
+   "kind": "raw",
+   "src": "img/sel_s_190_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "ov_checklistreveal_1300",
+   "start": 1300.4,
+   "dur": 7.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Para llevarte lo importante",
+   "items": [
+    "Penetrante siempre (afuera)",
+    "Madera limpia y seca",
+    "Manos finas + sacar el excedente",
+    "Mojado sobre mojado para el agua",
+    "Mantenimiento: una manito, sin lijar"
+   ],
+   "stamp": "RESUMEN"
+  },
+  {
+   "id": "sel_s_190_c",
+   "start": 1301.31,
+   "kind": "raw",
+   "src": "img/sel_s_190_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.92
+  },
+  {
+   "id": "sel_s_191_b",
+   "start": 1305.93,
+   "kind": "raw",
+   "src": "img/sel_s_191_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.96
+  },
+  {
+   "id": "sel_s_192",
+   "start": 1310.59,
+   "kind": "raw",
+   "src": "img/sel_s_192.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "sel_s_192_b",
+   "start": 1313.43,
+   "kind": "raw",
+   "src": "img/sel_s_192_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.99
+  },
+  {
+   "id": "sel_s_192_c",
+   "start": 1316.12,
+   "kind": "raw",
+   "src": "img/sel_s_192_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.34
+  },
+  {
+   "id": "sel_s_193",
+   "start": 1318.16,
+   "kind": "raw",
+   "src": "img/sel_s_193.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "sel_s_193_b",
+   "start": 1320.78,
+   "kind": "raw",
+   "src": "img/sel_s_193_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "sel_s_193_c",
+   "start": 1323.5,
+   "kind": "raw",
+   "src": "img/sel_s_193_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.24
+  },
+  {
+   "id": "sel_s_194",
+   "start": 1325.44,
+   "kind": "raw",
+   "src": "img/sel_s_194.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "sel_s_194_b",
+   "start": 1328.04,
+   "kind": "raw",
+   "src": "img/sel_s_194_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.74
+  },
+  {
+   "id": "sel_s_195",
+   "start": 1332.48,
+   "kind": "raw",
+   "src": "img/sel_s_195.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.99
+  },
+  {
+   "id": "ov_ctacard_1335",
+   "start": 1334.84,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Empezá por el enlace de arriba",
+   "title": "Manual del Constructor Libre",
+   "bullet": "los 40 arreglos completos, medidas y pasos, todo en un lugar",
+   "price": 0,
+   "cta": "LINK EN LA DESCRIPCIÓN"
+  },
+  {
+   "id": "sel_s_195_b",
+   "start": 1335.17,
+   "kind": "raw",
+   "src": "img/sel_s_195_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "sel_s_195_c",
+   "start": 1337.81,
+   "kind": "raw",
+   "src": "img/sel_s_195_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.61
+  },
+  {
+   "id": "sel_s_196",
+   "start": 1340.12,
+   "kind": "raw",
+   "src": "img/sel_s_196.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.13
+  },
+  {
+   "id": "sel_s_196_b",
+   "start": 1342.95,
+   "kind": "raw",
+   "src": "img/sel_s_196_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "sel_s_197",
+   "start": 1345.59,
+   "kind": "raw",
+   "src": "img/sel_s_197.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  },
+  {
+   "id": "sel_s_197_b",
+   "start": 1348.49,
+   "kind": "raw",
+   "src": "img/sel_s_197_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.57
+  },
+  {
+   "id": "sel_s_198",
+   "start": 1351.76,
+   "kind": "raw",
+   "src": "img/sel_s_198.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.13
+  },
+  {
+   "id": "sel_s_198_b",
+   "start": 1354.59,
+   "kind": "raw",
+   "src": "img/sel_s_198_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "sel_s_199",
+   "start": 1358.61,
+   "kind": "raw",
+   "src": "img/sel_s_199.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "sel_s_199_b",
+   "start": 1361.6,
+   "kind": "raw",
+   "src": "img/sel_s_199_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.95
+  },
+  {
+   "id": "sel_s_200",
+   "start": 1365.25,
+   "kind": "raw",
+   "src": "img/sel_s_200.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.91
+  },
+  {
+   "id": "sel_s_200_b",
+   "start": 1367.86,
+   "kind": "raw",
+   "src": "img/sel_s_200_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.45
+  },
+  {
+   "id": "sel_s_201",
+   "start": 1371.01,
+   "kind": "raw",
+   "src": "img/sel_s_201.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.12
+  },
+  {
+   "id": "sel_s_201_b",
+   "start": 1373.83,
+   "kind": "raw",
+   "src": "img/sel_s_201_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.75
+  },
+  {
+   "id": "sel_s_202",
+   "start": 1378.28,
+   "kind": "raw",
+   "src": "img/sel_s_202.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "sel_s_202_b",
+   "start": 1380.98,
+   "kind": "raw",
+   "src": "img/sel_s_202_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "ov_highlightsweep_1382",
+   "start": 1381.68,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "En el próximo video:",
+   "highlight": "enterré maderas tratadas y las desenterré años después",
+   "post": ".",
+   "note": "no te lo pierdas"
+  },
+  {
+   "id": "sel_s_202_c",
+   "start": 1383.65,
+   "kind": "raw",
+   "src": "img/sel_s_202_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.87
+  },
+  {
+   "id": "sel_s_203",
+   "start": 1386.22,
+   "kind": "raw",
+   "src": "img/sel_s_203.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "sel_s_203_b",
+   "start": 1389.28,
+   "kind": "raw",
+   "src": "img/sel_s_203_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.52
+  },
+  {
+   "id": "sel_s_204",
+   "start": 1393.5,
+   "kind": "raw",
+   "src": "img/sel_s_204.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6
+  },
+  {
+   "id": "sel_s_204_b",
+   "start": 1396.8,
+   "kind": "raw",
+   "src": "img/sel_s_204_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "ov_pullquote_1399",
+   "start": 1399.1,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "A la madera, la protección se le mete adentro — nunca se le pone encima."
+  },
+  {
+   "id": "sel_s_205",
+   "start": 1400.78,
+   "kind": "raw",
+   "src": "img/sel_s_205.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "sel_s_205_b",
+   "start": 1403.94,
+   "kind": "raw",
+   "src": "img/sel_s_205_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.46
+  },
+  {
+   "id": "sel_s_206",
+   "start": 1408.1,
+   "kind": "raw",
+   "src": "img/sel_s_206.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.91
+  },
+  {
+   "id": "sel_s_206_b",
+   "start": 1410.71,
+   "kind": "raw",
+   "src": "img/sel_s_206_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "sel_s_207",
+   "start": 1413.52,
+   "kind": "raw",
+   "src": "img/sel_s_207.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  }
+ ]
+}

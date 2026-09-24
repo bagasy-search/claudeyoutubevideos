@@ -1,0 +1,1123 @@
+{
+ "video": "federer13",
+ "avatar": "federer13_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "m1_0_0",
+   "start": 0.4,
+   "dur": 0.52,
+   "key": "m1_0",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_1_0",
+   "start": 0.92,
+   "dur": 2.4,
+   "key": "m1_1",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "INCÓMODA",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_2_0",
+   "start": 3.32,
+   "dur": 1.46,
+   "key": "m1_2",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_3_0",
+   "start": 4.78,
+   "dur": 2.12,
+   "key": "m1_3",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "¿TUS",
+     "hl": false
+    },
+    {
+     "t": "RIÑONES?",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_4_0",
+   "start": 6.9,
+   "dur": 2,
+   "key": "m1_4",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_5_0",
+   "start": 8.9,
+   "dur": 1.4,
+   "key": "m1_5",
+   "kind": "raw",
+   "src": "img/fe13_min1_0.png"
+  },
+  {
+   "id": "m1_6_0",
+   "start": 10.3,
+   "dur": 4,
+   "key": "m1_6",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "SILENCIOSOS",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_7_0",
+   "start": 14.3,
+   "dur": 1.04,
+   "key": "m1_7",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe13_min1_1.png"
+    }
+   ]
+  },
+  {
+   "id": "m1_8_0",
+   "start": 15.34,
+   "dur": 1.74,
+   "key": "m1_8",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_9_0",
+   "start": 17.08,
+   "dur": 1.5,
+   "key": "m1_9",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "ABANDONADOS",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_10_0",
+   "start": 18.58,
+   "dur": 0.94,
+   "key": "m1_10",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_11_0",
+   "start": 19.52,
+   "dur": 1.36,
+   "key": "m1_11",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "HOY",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_12_0",
+   "start": 20.88,
+   "dur": 5.14,
+   "key": "m1_12",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_13_0",
+   "start": 26.02,
+   "dur": 1.62,
+   "key": "m1_13",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_14_0",
+   "start": 27.64,
+   "dur": 0.72,
+   "key": "m1_14",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_15_0",
+   "start": 28.36,
+   "dur": 2.06,
+   "key": "m1_15",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "ENTERARTE",
+     "hl": false
+    },
+    {
+     "t": "HOY",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_16_0",
+   "start": 30.42,
+   "dur": 2.68,
+   "key": "m1_16",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_17_0",
+   "start": 33.1,
+   "dur": 1.42,
+   "key": "m1_17",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "UNOS",
+     "hl": false
+    },
+    {
+     "t": "AÑOS",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_18_0",
+   "start": 34.52,
+   "dur": 1.8,
+   "key": "m1_18",
+   "kind": "raw",
+   "src": "img/fe13_min1_2.png"
+  },
+  {
+   "id": "m1_19_0",
+   "start": 36.32,
+   "dur": 1.68,
+   "key": "m1_19",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "MÁS",
+     "hl": false
+    },
+    {
+     "t": "DIFÍCIL",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_20_0",
+   "start": 38,
+   "dur": 1.2,
+   "key": "m1_20",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_21_0",
+   "start": 39.2,
+   "dur": 10.3,
+   "key": "m1_21",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "CANSADA",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_22_0",
+   "start": 49.5,
+   "dur": 1.38,
+   "key": "m1_22",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_23_0",
+   "start": 50.88,
+   "dur": 3.62,
+   "key": "m1_23",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "SIN",
+     "hl": false
+    },
+    {
+     "t": "FUERZAS",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_24_0",
+   "start": 54.5,
+   "dur": 2.1,
+   "key": "m1_24",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "PIES",
+     "hl": false
+    },
+    {
+     "t": "HINCHADOS",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_25_0",
+   "start": 56.6,
+   "dur": 2.84,
+   "key": "m1_25",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_26_0",
+   "start": 59.44,
+   "dur": 1.22,
+   "key": "m1_26",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_27_0",
+   "start": 60.66,
+   "dur": 1.14,
+   "key": "m1_27",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "ESPUMA",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_28_0",
+   "start": 61.8,
+   "dur": 1.72,
+   "key": "m1_28",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_29_0",
+   "start": 63.52,
+   "dur": 72.36,
+   "key": "m1_29",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "¿NORMAL?",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "coladores_0",
+   "start": 135.88,
+   "dur": 9.96,
+   "key": "coladores",
+   "kind": "talk"
+  },
+  {
+   "id": "coladores_1",
+   "start": 145.84,
+   "dur": 23.92,
+   "key": "coladores",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe13_coladores.png"
+    }
+   ]
+  },
+  {
+   "id": "menos_finos_0",
+   "start": 169.76,
+   "dur": 15.96,
+   "key": "menos_finos",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe13_desgaste.png"
+    }
+   ]
+  },
+  {
+   "id": "no_duelen_0",
+   "start": 185.72,
+   "dur": 7.47,
+   "key": "no_duelen",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LOS RIÑONES NO DUELEN",
+     "sub": "pueden trabajar a la mitad y tú sentirte 'normal' — por eso es la asesina silenciosa",
+     "tone": "warn",
+     "at": 140
+    }
+   ],
+   "clip": "avatar_clips/federer13/no_duelen_0.mp4"
+  },
+  {
+   "id": "asesina_0",
+   "start": 197.84,
+   "dur": 2.61,
+   "key": "asesina",
+   "kind": "stat",
+   "big": "50%",
+   "label": "de función pueden perder tus riñones SIN avisar con dolor",
+   "tone": "warn"
+  },
+  {
+   "id": "asesina_1",
+   "start": 200.45,
+   "dur": 7.15,
+   "key": "asesina",
+   "kind": "bars",
+   "w": 2.4,
+   "title": "El riñón no avisa con dolor",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Función que puede perderse en silencio",
+     "value": 50,
+     "tone": "danger",
+     "note": "sin síntomas claros"
+    },
+    {
+     "label": "Cuando por fin da la cara",
+     "value": 20,
+     "tone": "danger",
+     "note": "ya perdiste camino"
+    }
+   ]
+  },
+  {
+   "id": "senales_0",
+   "start": 207.6,
+   "dur": 14.7,
+   "key": "senales",
+   "kind": "checklist",
+   "w": 1.6,
+   "title": "Cómo tus riñones piden ayuda",
+   "tone": "warn",
+   "items": [
+    {
+     "text": "Cansancio que no se va con el descanso",
+     "state": "warn"
+    },
+    {
+     "text": "Hinchazón en pies, tobillos y cara",
+     "state": "warn"
+    },
+    {
+     "text": "Espuma en la orina",
+     "state": "warn"
+    },
+    {
+     "text": "Picazón en la piel, mal sabor de boca",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "espuma_mec_0",
+   "start": 222.3,
+   "dur": 23.22,
+   "key": "espuma_mec",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe13_espuma.png"
+    }
+   ]
+  },
+  {
+   "id": "camino_0",
+   "start": 245.52,
+   "dur": 17.52,
+   "key": "camino",
+   "kind": "talk"
+  },
+  {
+   "id": "camino_1",
+   "start": 263.04,
+   "dur": 3.58,
+   "key": "camino",
+   "kind": "raw",
+   "src": "img/fe13_dialisis.png",
+   "hold": true
+  },
+  {
+   "id": "dialisis_0",
+   "start": 266.62,
+   "dur": 2.8,
+   "key": "dialisis",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "MUCHOS CASOS SE PODÍAN EVITAR",
+     "sub": "con cosas simples, a tiempo — esa es la noticia hermosa: si tus riñones aún funcionan, estás a tiempo",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer13/dialisis_0.mp4"
+  },
+  {
+   "id": "miedos_0",
+   "start": 327.48,
+   "dur": 43.78,
+   "key": "miedos",
+   "kind": "mitoverdad",
+   "myth": "Si tomo mucha agua, me voy a hinchar",
+   "truth": "Al revés: cuando NO tomas agua, tu cuerpo la retiene y te hinchas MÁS",
+   "flipAt": 40
+  },
+  {
+   "id": "safety_0",
+   "start": 371.26,
+   "dur": 59.84,
+   "key": "safety",
+   "kind": "lowerthird",
+   "title": "¿Ya tienes enfermedad renal o diálisis? Habla con tu médico",
+   "tone": "warn",
+   "kicker": "Importante",
+   "desc": "Si tienes dieta baja en potasio o líquidos limitados, algunas de estas bebidas podrían NO convenirte. En tu caso, manda tu médico."
+  },
+  {
+   "id": "b1_0",
+   "start": 431.1,
+   "dur": 6.19,
+   "key": "b1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Agua pura, a sorbos",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Bebida"
+  },
+  {
+   "id": "b1_1",
+   "start": 437.29,
+   "dur": 3.77,
+   "key": "b1",
+   "kind": "raw",
+   "src": "img/fe13_agua_sorbos.png",
+   "hold": true
+  },
+  {
+   "id": "b1_2",
+   "start": 441.06,
+   "dur": 10.56,
+   "key": "b1",
+   "kind": "annotated",
+   "w": 1.4,
+   "image": "img/fe13_agua_sorbos.png",
+   "eyebrow": "La reina de las bebidas",
+   "caption": "Arrastra la basura y evita las piedras — la clave es el CÓMO",
+   "annotations": [
+    {
+     "label": "A sorbos",
+     "x": 40,
+     "y": 40
+    },
+    {
+     "label": "Todo el día",
+     "x": 64,
+     "y": 62
+    }
+   ]
+  },
+  {
+   "id": "b1_como_0",
+   "start": 451.62,
+   "dur": 23.68,
+   "key": "b1_como",
+   "kind": "splitlist",
+   "w": 1.6,
+   "title": "El agua, bien tomada",
+   "items": [
+    "❌ Dos litros de golpe → contraproducente",
+    "✅ A sorbos todo el día → un río tranquilo para el riñón"
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "b2_0",
+   "start": 475.3,
+   "dur": 4.47,
+   "key": "b2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Agua tibia con limón (en ayunas)",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Bebida"
+  },
+  {
+   "id": "b2_1",
+   "start": 479.77,
+   "dur": 2.73,
+   "key": "b2",
+   "kind": "raw",
+   "src": "img/fe13_limon_agua.png",
+   "hold": true
+  },
+  {
+   "id": "b2_mec_0",
+   "start": 482.5,
+   "dur": 19.84,
+   "key": "b2_mec",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe13_citrato.png"
+    }
+   ]
+  },
+  {
+   "id": "b3_0",
+   "start": 502.34,
+   "dur": 6,
+   "key": "b3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Infusión de perejil",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Bebida"
+  },
+  {
+   "id": "b3_1",
+   "start": 508.34,
+   "dur": 21.82,
+   "key": "b3",
+   "kind": "raw",
+   "src": "img/fe13_perejil_infusion.png",
+   "hold": true
+  },
+  {
+   "id": "b4_0",
+   "start": 530.16,
+   "dur": 4.2,
+   "key": "b4",
+   "kind": "errorstinger",
+   "number": "04",
+   "title": "Agua de jamaica (SIN azúcar)",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Bebida"
+  },
+  {
+   "id": "b4_1",
+   "start": 533.48,
+   "dur": 4.32,
+   "key": "b4",
+   "kind": "raw",
+   "src": "img/fe13_jamaica.png",
+   "hold": true
+  },
+  {
+   "id": "b4_2",
+   "start": 537.8,
+   "dur": 27.56,
+   "key": "b4",
+   "kind": "callout",
+   "w": 1.6,
+   "image": "img/fe13_jamaica.png",
+   "figure": "«Sin azúcar»",
+   "caption": "Antioxidantes y una mano a la presión. Con azúcar, hace más mal que bien."
+  },
+  {
+   "id": "b5_0",
+   "start": 565.36,
+   "dur": 6.3,
+   "key": "b5",
+   "kind": "errorstinger",
+   "number": "05",
+   "title": "Agua de jengibre",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Bebida"
+  },
+  {
+   "id": "b5_1",
+   "start": 571.66,
+   "dur": 18.72,
+   "key": "b5",
+   "kind": "raw",
+   "src": "img/fe13_jengibre.png",
+   "hold": true
+  },
+  {
+   "id": "b6_0",
+   "start": 590.38,
+   "dur": 7.48,
+   "key": "b6",
+   "kind": "errorstinger",
+   "number": "06",
+   "title": "Arándano diluido, sin azúcar",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Bebida"
+  },
+  {
+   "id": "b6_1",
+   "start": 597.86,
+   "dur": 18.92,
+   "key": "b6",
+   "kind": "raw",
+   "src": "img/fe13_arandano.png",
+   "hold": true
+  },
+  {
+   "id": "b7_0",
+   "start": 616.78,
+   "dur": 10.58,
+   "key": "b7",
+   "kind": "errorstinger",
+   "number": "07",
+   "title": "Cola de caballo o té verde",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Bebida"
+  },
+  {
+   "id": "b7_1",
+   "start": 627.36,
+   "dur": 74.1,
+   "key": "b7",
+   "kind": "raw",
+   "src": "img/fe13_cola_caballo.png",
+   "hold": true
+  },
+  {
+   "id": "reparto_0",
+   "start": 701.46,
+   "dur": 14.98,
+   "key": "reparto",
+   "kind": "process",
+   "w": 2.4,
+   "title": "Tus bebidas en el día",
+   "eyebrow": "Sin enredarte",
+   "steps": [
+    {
+     "title": "Al despertar",
+     "desc": "agua tibia con limón",
+     "image": "img/fe13_limon_agua.png"
+    },
+    {
+     "title": "Media mañana",
+     "desc": "infusión de perejil o jengibre",
+     "image": "img/fe13_perejil_infusion.png"
+    },
+    {
+     "title": "Tarde",
+     "desc": "jamaica sin azúcar; agua a sorbos siempre",
+     "image": "img/fe13_jamaica.png"
+    }
+   ]
+  },
+  {
+   "id": "error_0",
+   "start": 716.44,
+   "dur": 3.43,
+   "key": "error",
+   "kind": "talk"
+  },
+  {
+   "id": "error_1",
+   "start": 719.87,
+   "dur": 14.27,
+   "key": "error",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "Los refrescos",
+   "tone": "warn",
+   "w": 3.2,
+   "eyebrow": "El error"
+  },
+  {
+   "id": "refresco_0",
+   "start": 734.14,
+   "dur": 24.6,
+   "key": "refresco",
+   "kind": "raw",
+   "src": "img/fe13_refresco.png",
+   "hold": true
+  },
+  {
+   "id": "refresco_1",
+   "start": 758.74,
+   "dur": 22.5,
+   "key": "refresco",
+   "kind": "bars",
+   "w": 2.8,
+   "title": "Lo que castiga a tus riñones",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Refresco de cola (azúcar + fosfatos)",
+     "value": 100,
+     "tone": "danger",
+     "note": "arena al motor"
+    },
+    {
+     "label": "Agua con limón",
+     "value": 8,
+     "tone": "teal",
+     "note": "el cambio de oro"
+    }
+   ]
+  },
+  {
+   "id": "sal_0",
+   "start": 781.24,
+   "dur": 39.78,
+   "key": "sal",
+   "kind": "bars",
+   "w": 2.4,
+   "title": "Sal escondida (mg sodio, aprox.)",
+   "unit": "mg",
+   "bars": [
+    {
+     "label": "Sopa de sobre / cubito",
+     "value": 1200,
+     "tone": "danger"
+    },
+    {
+     "label": "Embutidos",
+     "value": 900,
+     "tone": "danger"
+    },
+    {
+     "label": "Comida casera",
+     "value": 250,
+     "tone": "teal",
+     "note": "así sí"
+    }
+   ]
+  },
+  {
+   "id": "analgesicos_0",
+   "start": 821.02,
+   "dur": 2.8,
+   "key": "analgesicos",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "OJO CON LOS ANTIINFLAMATORIOS",
+     "sub": "tomados a diario y por tu cuenta, son duros con el riñón — habla con tu médico",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer13/analgesicos_0.mp4"
+  },
+  {
+   "id": "injerto1_0",
+   "start": 874.04,
+   "dur": 32.96,
+   "key": "injerto1",
+   "kind": "lowerthird",
+   "title": "Todo esto, ordenado para tu edad",
+   "tone": "teal",
+   "kicker": "Lo reuní para ti",
+   "desc": "Tus riñones, tu presión, tu hígado y tu energía, en una guía sencilla con letra grande. El enlace está arriba, en la descripción.",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "remedios_vuelve_0",
+   "start": 907,
+   "dur": 1.58,
+   "key": "remedios_vuelve",
+   "kind": "talk"
+  },
+  {
+   "id": "remedios_vuelve_1",
+   "start": 908.58,
+   "dur": 42.04,
+   "key": "remedios_vuelve",
+   "kind": "raw",
+   "src": "img/fe13_remedios_consultorio.png",
+   "hold": true
+  },
+  {
+   "id": "remedios_cambio_0",
+   "start": 950.62,
+   "dur": 14.6,
+   "key": "remedios_cambio",
+   "kind": "process",
+   "w": 2.2,
+   "title": "El cambio de Doña Remedios",
+   "eyebrow": "Soltó el refresco, sumó las bebidas",
+   "steps": [
+    {
+     "title": "Antes",
+     "desc": "cansada, pies hinchados, espuma",
+     "image": "img/fe13_remedios_consultorio.png"
+    },
+    {
+     "title": "Semanas",
+     "desc": "menos hinchazón, más energía",
+     "image": "img/fe13_remedios_feliz.png"
+    },
+    {
+     "title": "Clave",
+     "desc": "y su médico le revisó los riñones",
+     "image": "img/fe13_analisis.png"
+    }
+   ]
+  },
+  {
+   "id": "gracias_0",
+   "start": 965.22,
+   "dur": 35.3,
+   "key": "gracias",
+   "kind": "lowerthird",
+   "title": "«Gracias por decirme que todavía podía hacer algo»",
+   "tone": "teal",
+   "kicker": "Doña Remedios",
+   "desc": "Ya casi no se me hinchan los pies, me levanto con energía, y la espumita casi ni la veo."
+  },
+  {
+   "id": "c1_0",
+   "start": 1000.52,
+   "dur": 8.2,
+   "key": "c1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "No esperes la sed",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Consejo"
+  },
+  {
+   "id": "c1_1",
+   "start": 1008.72,
+   "dur": 11.84,
+   "key": "c1",
+   "kind": "raw",
+   "src": "img/fe13_vaso_agua.png",
+   "hold": true
+  },
+  {
+   "id": "c2_0",
+   "start": 1020.56,
+   "dur": 15.48,
+   "key": "c2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Un análisis 1-2 veces al año",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Consejo"
+  },
+  {
+   "id": "c2_1",
+   "start": 1036.04,
+   "dur": 2.8,
+   "key": "c2",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "EL RIÑÓN NO AVISA — EL ANÁLISIS SÍ",
+     "sub": "barato, rápido, casi no duele, y te quita el pendiente",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer13/c2_1.mp4"
+  },
+  {
+   "id": "amigos_0",
+   "start": 1054.06,
+   "dur": 2.8,
+   "key": "amigos",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "PRESIÓN Y AZÚCAR: LOS 2 LADRONES",
+     "sub": "controlarlos hace más por tus riñones que cualquier tecito",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer13/amigos_0.mp4"
+  },
+  {
+   "id": "amigos_1",
+   "start": 1105.04,
+   "dur": 5.98,
+   "key": "amigos",
+   "kind": "splitlist",
+   "w": 2,
+   "title": "Los 2 mejores amigos de tus riñones",
+   "items": [
+    "Presión controlada → menos castigo al filtro",
+    "Azúcar controlada → filtros que duran"
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "c3_0",
+   "start": 1111.02,
+   "dur": 10.7,
+   "key": "c3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "La constancia",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Consejo"
+  },
+  {
+   "id": "c3_1",
+   "start": 1121.72,
+   "dur": 25.24,
+   "key": "c3",
+   "kind": "process",
+   "w": 1.4,
+   "title": "Tus llaves para el riñón",
+   "eyebrow": "Diario y simple",
+   "steps": [
+    {
+     "title": "Bebe",
+     "desc": "agua a sorbos + tus infusiones",
+     "image": "img/fe13_agua_sorbos.png"
+    },
+    {
+     "title": "Suelta",
+     "desc": "el refresco y la sal de más",
+     "image": "img/fe13_refresco.png"
+    },
+    {
+     "title": "Controla",
+     "desc": "presión y azúcar, con tu médico",
+     "image": "img/fe13_limon_agua.png"
+    }
+   ]
+  },
+  {
+   "id": "injerto2_0",
+   "start": 1146.96,
+   "dur": 32.62,
+   "key": "injerto2",
+   "kind": "freezezoom",
+   "image": "img/fe13_libro_guia.png",
+   "kicker": "Las 3 guías · enlace arriba en la descripción",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "inversion_0",
+   "start": 1179.58,
+   "dur": 14.8,
+   "key": "inversion",
+   "kind": "lowerthird",
+   "title": "La mejor inversión: tu tranquilidad",
+   "tone": "teal",
+   "kicker": "Cuida tu planta de limpieza",
+   "desc": "No es un gasto: es no terminar en ese camino difícil. El enlace está arriba, en la descripción.",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "despedida_0",
+   "start": 1194.38,
+   "dur": 21.72,
+   "key": "despedida",
+   "kind": "talk"
+  },
+  {
+   "id": "no_resignes_0",
+   "start": 1216.1,
+   "dur": 25.62,
+   "key": "no_resignes",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Empieza"
+    },
+    {
+     "t": "hoy."
+    },
+    {
+     "t": "Con"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "VASO",
+     "hl": true
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "agua"
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "cta_coment_0",
+   "start": 1241.72,
+   "dur": 5,
+   "key": "cta_coment",
+   "kind": "lowerthird",
+   "title": "¿Siempre cansado e hinchado? Cuéntame abajo",
+   "tone": "teal",
+   "kicker": "Déjame un me gusta",
+   "desc": "Suscríbete y compártelo con quien cree que 'es la edad'. Puede que le abras los ojos a tiempo."
+  },
+  {
+   "id": "cierre_0",
+   "start": 1246.72,
+   "dur": 36.9,
+   "key": "cierre",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Ahora mismo: ve por ese vaso de agua",
+   "image": "img/fe13_federer_cocina.png"
+  }
+ ]
+}

@@ -1,0 +1,992 @@
+{
+  "video": "evapcooler",
+  "avatar": "evapcooler_opt.mp4",
+  "clipsfirst": true,
+  "maxRawDur": 8,
+  "beats": [
+    {
+      "id": "ec_porch_heat",
+      "start": 5.56,
+      "dur": 10.42,
+      "kind": "raw",
+      "src": "img/ec_porch_heat.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_porch_heat",
+        "prompt": "hot dry summer farm at midday heat haze, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_cool_parlor",
+      "start": 15.48,
+      "dur": 6.82,
+      "kind": "raw",
+      "src": "img/ec_cool_parlor.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_cool_parlor",
+        "prompt": "cool dim old farmhouse parlor interior, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_no_wire",
+      "start": 21.8,
+      "dur": 8.94,
+      "kind": "raw",
+      "src": "img/ec_no_wire.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_no_wire",
+        "prompt": "bare farmhouse wall no outlets no wires, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_river_wet",
+      "start": 71.04,
+      "dur": 13.9,
+      "kind": "raw",
+      "src": "img/ec_river_wet.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_river_wet",
+        "prompt": "person wet climbing out of a river breeze, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_wet_arm",
+      "start": 84.44,
+      "dur": 12.04,
+      "kind": "raw",
+      "src": "img/ec_wet_arm.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_wet_arm",
+        "prompt": "water drops evaporating off skin close up, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_evaporation",
+      "start": 95.98,
+      "dur": 3.17,
+      "kind": "raw",
+      "src": "img/ec_evaporation.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_evaporation",
+        "prompt": "water evaporating into vapor close up, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_secret",
+      "start": 98.65,
+      "dur": 18.47,
+      "kind": "impact",
+      "image": "img/cmp_secret_bg.png",
+      "setup": "The whole secret:",
+      "impact": "Drying water pulls heat out of the air.",
+      "impactAccent": "cold",
+      "hitAt": 1.2,
+      "boom": 0,
+      "darken": 0.42,
+      "gen": {
+        "type": "image",
+        "name": "cmp_secret_bg",
+        "prompt": "water evaporating off a wet cloth in a sunny window, cool mist, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_sweat",
+      "start": 117.12,
+      "dur": 3.58,
+      "kind": "raw",
+      "src": "img/ec_sweat.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_sweat",
+        "prompt": "sweat on a brow in the heat close up, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_clay_jug",
+      "start": 120.2,
+      "dur": 4.38,
+      "kind": "raw",
+      "src": "img/ec_clay_jug.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_clay_jug",
+        "prompt": "porous clay water jug sweating cool, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_lake_breeze",
+      "start": 124.08,
+      "dur": 10.53,
+      "kind": "raw",
+      "src": "broll/ec_lake_breeze.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_stat20",
+      "start": 134.11,
+      "dur": 16.65,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 20,
+      "prefix": "-",
+      "suffix": "°",
+      "label": "in a hot dry room, from a bucket of water",
+      "eyebrow": "The drop"
+    },
+    {
+      "id": "ec_thermo_hot",
+      "start": 150.76,
+      "dur": 6.49,
+      "kind": "raw",
+      "src": "img/ec_thermo_hot.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_thermo_hot",
+        "prompt": "outdoor thermometer reading high heat, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_thermo_cool",
+      "start": 156.75,
+      "dur": 50.72,
+      "kind": "raw",
+      "src": "img/ec_thermo_cool.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_thermo_cool",
+        "prompt": "indoor thermometer reading cool, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_well_water",
+      "start": 206.97,
+      "dur": 6.01,
+      "kind": "raw",
+      "src": "img/ec_well_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_well_water",
+        "prompt": "drawing cold water from an old well bucket, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_sheet_window",
+      "start": 212.48,
+      "dur": 22.53,
+      "kind": "raw",
+      "src": "img/ec_sheet_window.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_sheet_window",
+        "prompt": "wet sheet hung across an open window, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_cellar_cool",
+      "start": 234.51,
+      "dur": 13.73,
+      "kind": "raw",
+      "src": "img/ec_cellar_cool.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_cellar_cool",
+        "prompt": "cool air drifting from a stone cellar, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_towel_test",
+      "start": 247.74,
+      "dur": 32.91,
+      "kind": "raw",
+      "src": "img/ec_towel_test.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_towel_test",
+        "prompt": "wet towel hung in a window test, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_materials",
+      "start": 280.15,
+      "dur": 38.29,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "good",
+      "title": "The whole cooler",
+      "eyebrow": "~$12 · any hardware store",
+      "items": [
+        {
+          "text": "A bucket of water (up top)",
+          "state": "done"
+        },
+        {
+          "text": "A wet pad — burlap or aspen",
+          "state": "done"
+        },
+        {
+          "text": "A frame / old window screen",
+          "state": "done"
+        },
+        {
+          "text": "A catch pan below",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_materials_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_materials_bg",
+        "prompt": "a bucket, burlap cloth, wooden frame and a pan on a workbench, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_bucket",
+      "start": 318.44,
+      "dur": 9.51,
+      "kind": "raw",
+      "src": "broll/ec_bucket.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ec_pad_hero",
+      "start": 327.45,
+      "dur": 7.7,
+      "kind": "raw",
+      "src": "img/ec_pad_hero.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_pad_hero",
+        "prompt": "a thick wet evaporative cooler pad, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_burlap",
+      "start": 334.65,
+      "dur": 11.81,
+      "kind": "raw",
+      "src": "img/ec_burlap.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_burlap",
+        "prompt": "rough burlap feed sack cloth texture, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_honeycomb_pad",
+      "start": 345.96,
+      "dur": 3.61,
+      "kind": "raw",
+      "src": "img/ec_honeycomb_pad.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_honeycomb_pad",
+        "prompt": "blue and white honeycomb evaporative cooler pad, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_frame",
+      "start": 349.07,
+      "dur": 8.35,
+      "kind": "raw",
+      "src": "img/ec_frame.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_frame",
+        "prompt": "a simple wooden frame with a screen, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_catch_pan",
+      "start": 356.92,
+      "dur": 42.82,
+      "kind": "raw",
+      "src": "img/ec_catch_pan.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_catch_pan",
+        "prompt": "a shallow pan catching dripping water, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_drip",
+      "start": 399.24,
+      "dur": 11.57,
+      "kind": "raw",
+      "src": "img/ec_drip.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_drip",
+        "prompt": "water dripping slowly down a wet pad, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_wick",
+      "start": 410.31,
+      "dur": 15.5,
+      "kind": "raw",
+      "src": "img/ec_wick.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_wick",
+        "prompt": "water wicking down damp cloth close up, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_window_shade",
+      "start": 425.31,
+      "dur": 27.86,
+      "kind": "raw",
+      "src": "img/ec_window_shade.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_window_shade",
+        "prompt": "wet cooler pad in a shaded window, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_cooler_box",
+      "start": 452.67,
+      "dur": 10.73,
+      "kind": "raw",
+      "src": "img/ec_cooler_box.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_cooler_box",
+        "prompt": "homemade wooden window cooler box, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_three_sides",
+      "start": 462.9,
+      "dur": 43.72,
+      "kind": "raw",
+      "src": "img/ec_three_sides.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_three_sides",
+        "prompt": "a box with wet pads on three sides, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_feed_sacks",
+      "start": 506.12,
+      "dur": 30.58,
+      "kind": "raw",
+      "src": "img/ec_feed_sacks.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_feed_sacks",
+        "prompt": "stacked burlap feed sacks, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_lime_scale",
+      "start": 536.2,
+      "dur": 27.51,
+      "kind": "raw",
+      "src": "img/ec_lime_scale.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_lime_scale",
+        "prompt": "white mineral lime crust on a pad, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_place",
+      "start": 563.21,
+      "dur": 16.62,
+      "kind": "checklist",
+      "hue": "cold",
+      "accent": "good",
+      "title": "Where to put it",
+      "eyebrow": "Get this right or it does nothing",
+      "items": [
+        {
+          "text": "Shady side of the house",
+          "state": "done"
+        },
+        {
+          "text": "Open a HIGH window far side",
+          "state": "done"
+        },
+        {
+          "text": "Let the house breathe through",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_place_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_place_bg",
+        "prompt": "a wet cooler pad in a shaded farmhouse window, breeze, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_airflow",
+      "start": 579.83,
+      "dur": 12.15,
+      "kind": "raw",
+      "src": "img/ec_airflow.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_airflow",
+        "prompt": "air flowing through an open house, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_high_window",
+      "start": 591.48,
+      "dur": 7.28,
+      "kind": "raw",
+      "src": "img/ec_high_window.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_high_window",
+        "prompt": "an open upstairs window high up, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_hot_rises",
+      "start": 598.26,
+      "dur": 28.54,
+      "kind": "raw",
+      "src": "img/ec_hot_rises.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_hot_rises",
+        "prompt": "hot air rising heat shimmer indoors, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_nightflush",
+      "start": 626.3,
+      "dur": 60.72,
+      "kind": "process",
+      "hue": "cold",
+      "accent": "good",
+      "title": "Night flush",
+      "eyebrow": "Costs nothing",
+      "steps": [
+        {
+          "title": "Open wide at night"
+        },
+        {
+          "title": "Flush the heat from the walls"
+        },
+        {
+          "title": "Shut tight by day"
+        }
+      ]
+    },
+    {
+      "id": "ec_thick_walls",
+      "start": 687.02,
+      "dur": 19.01,
+      "kind": "raw",
+      "src": "img/ec_thick_walls.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_thick_walls",
+        "prompt": "thick old stone farmhouse walls, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_windows_open",
+      "start": 705.53,
+      "dur": 20.17,
+      "kind": "raw",
+      "src": "img/ec_windows_open.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_windows_open",
+        "prompt": "all windows open at dusk farmhouse, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_shut_house",
+      "start": 725.2,
+      "dur": 31.36,
+      "kind": "raw",
+      "src": "img/ec_shut_house.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_shut_house",
+        "prompt": "closing shutters and curtains against sun, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_stone_wall",
+      "start": 756.06,
+      "dur": 20.52,
+      "kind": "raw",
+      "src": "img/ec_stone_wall.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_stone_wall",
+        "prompt": "thick stone farmhouse wall exterior, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_climate",
+      "start": 776.08,
+      "dur": 11.67,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "Honest limit",
+      "items": [
+        "DRY heat → drops 15-20° (a wonder)",
+        "MUGGY heat → weak by day",
+        "Run it at night when air dries"
+      ]
+    },
+    {
+      "id": "ec_humid",
+      "start": 787.75,
+      "dur": 30.76,
+      "kind": "raw",
+      "src": "img/ec_humid.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_humid",
+        "prompt": "humid muggy coastal air haze, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_finger_test",
+      "start": 818.01,
+      "dur": 28,
+      "kind": "raw",
+      "src": "img/ec_finger_test.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_finger_test",
+        "prompt": "a wet finger held up to test the air, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_fan",
+      "start": 845.51,
+      "dur": 11.1,
+      "kind": "raw",
+      "src": "img/ec_fan.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_fan",
+        "prompt": "a small fan behind a wet cooler pad, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_solar_fan",
+      "start": 856.11,
+      "dur": 49.07,
+      "kind": "raw",
+      "src": "img/ec_solar_fan.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_solar_fan",
+        "prompt": "a small solar panel powering a fan, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_barrel",
+      "start": 904.68,
+      "dur": 12.14,
+      "kind": "raw",
+      "src": "img/ec_barrel.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_barrel",
+        "prompt": "a raised water barrel feeding a drip, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_mistakes",
+      "start": 916.32,
+      "dur": 26.21,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "danger",
+      "title": "4 mistakes to avoid",
+      "eyebrow": "Then it just works",
+      "items": [
+        {
+          "text": "Never let the pad go dry",
+          "state": "done"
+        },
+        {
+          "text": "Give the air a way out",
+          "state": "done"
+        },
+        {
+          "text": "Keep it out of the sun",
+          "state": "done"
+        },
+        {
+          "text": "Ease off on muggy days",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_mistakes_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_mistakes_bg",
+        "prompt": "a wet cloth cooler in a window with tools beside it, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_dry_pad",
+      "start": 942.53,
+      "dur": 43.38,
+      "kind": "raw",
+      "src": "img/ec_dry_pad.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_dry_pad",
+        "prompt": "a dried out crusty cooler pad, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_cost",
+      "start": 985.41,
+      "dur": 89.59,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "USD",
+      "title": "Cost over 10 summers",
+      "eyebrow": "Staying cool",
+      "bars": [
+        {
+          "label": "Window AC",
+          "value": 100,
+          "display": "~$1000s",
+          "sub": "power + replace",
+          "tone": "danger"
+        },
+        {
+          "label": "Wet pad cooler",
+          "value": 1,
+          "display": "$12 once",
+          "sub": "water off the roof",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "ec_multi",
+      "start": 1075,
+      "dur": 34.02,
+      "kind": "raw",
+      "src": "img/ec_multi.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_multi",
+        "prompt": "several wet pads in different windows, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_wet_neck",
+      "start": 1108.52,
+      "dur": 6.28,
+      "kind": "raw",
+      "src": "img/ec_wet_neck.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_wet_neck",
+        "prompt": "a wet bandana on the back of the neck, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_feet_water",
+      "start": 1114.3,
+      "dur": 27.66,
+      "kind": "raw",
+      "src": "img/ec_feet_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_feet_water",
+        "prompt": "bare feet soaking in a pan of water, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_history",
+      "start": 1177.3,
+      "dur": 33.3,
+      "kind": "timeline",
+      "eyebrow": "It is not new",
+      "title": "3,000 years old",
+      "events": [
+        {
+          "year": "1000 BC",
+          "label": "Persian wind-catchers & ice houses",
+          "accent": "amber"
+        },
+        {
+          "year": "1800s",
+          "label": "farmhouse cooler rooms",
+          "accent": "amber"
+        },
+        {
+          "year": "1900s",
+          "label": "the AC & the meter buried it",
+          "accent": "danger"
+        }
+      ]
+    },
+    {
+      "id": "ec_yakhchal",
+      "start": 1210.6,
+      "dur": 18.94,
+      "kind": "raw",
+      "src": "img/ec_yakhchal.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_yakhchal",
+        "prompt": "ancient persian yakhchal ice house dome, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_cooler_room",
+      "start": 1229.04,
+      "dur": 6.58,
+      "kind": "raw",
+      "src": "img/ec_cooler_room.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_cooler_room",
+        "prompt": "old western farmhouse cooler pantry, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_ac_unit",
+      "start": 1235.12,
+      "dur": 7.59,
+      "kind": "raw",
+      "src": "img/ec_ac_unit.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_ac_unit",
+        "prompt": "modern air conditioner unit on a house, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_meter",
+      "start": 1242.21,
+      "dur": 12.07,
+      "kind": "raw",
+      "src": "img/ec_meter.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_meter",
+        "prompt": "an electric meter spinning fast, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_shimmer_road",
+      "start": 1253.78,
+      "dur": 4.2,
+      "kind": "raw",
+      "src": "img/ec_shimmer_road.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "ec_shimmer_road",
+        "prompt": "heat haze shimmering off a hot road, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "ec_cool_pad2",
+      "start": 1257.48,
+      "dur": 40.84,
+      "kind": "raw",
+      "src": "broll/ec_cool_pad2.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_next",
+      "start": 1297.82,
+      "dur": 29.32,
+      "kind": "nextvideo",
+      "kicker": "Next time",
+      "title": "Keep a whole cellar of food cold all summer",
+      "sub": "No ice, no power — the old way to store a season's food underground."
+    },
+    {
+      "id": "ovp_22",
+      "start": 21.8,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "No AC · no fan · no power",
+      "pos": "top",
+      "accent": "amber"
+    },
+    {
+      "id": "ovp_114",
+      "start": 113.69,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Drying water = cooling",
+      "pos": "bottom",
+      "accent": "cold"
+    },
+    {
+      "id": "ov_151",
+      "start": 150.76,
+      "dur": 3.6,
+      "kind": "stattag",
+      "overlay": true,
+      "value": 95,
+      "suffix": "°",
+      "label": "outside",
+      "corner": "TR",
+      "accent": "cold"
+    },
+    {
+      "id": "ov_157",
+      "start": 156.75,
+      "dur": 3.6,
+      "kind": "stattag",
+      "overlay": true,
+      "value": 78,
+      "suffix": "°",
+      "label": "inside",
+      "corner": "TL",
+      "accent": "cold"
+    },
+    {
+      "id": "ovg_382",
+      "start": 381.98,
+      "dur": 4.2,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "📌 Free build guide — in the comments",
+      "pos": "bottom",
+      "accent": "amber"
+    },
+    {
+      "id": "ovp_739",
+      "start": 738.68,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Open at night · shut by day",
+      "pos": "bottom",
+      "accent": "cold"
+    },
+    {
+      "id": "ovp_776",
+      "start": 776.08,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Works best in DRY heat",
+      "pos": "top",
+      "accent": "amber"
+    },
+    {
+      "id": "ovg_661",
+      "start": 661.16,
+      "dur": 4.2,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "📌 Sizing table — in the free guide (comments)",
+      "pos": "bottom",
+      "accent": "amber"
+    },
+    {
+      "id": "ovp_943",
+      "start": 942.53,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Keep the pad wet — always",
+      "pos": "bottom",
+      "accent": "danger"
+    },
+    {
+      "id": "ovx_1025",
+      "start": 1024.65,
+      "dur": 3.6,
+      "kind": "stattag",
+      "overlay": true,
+      "text": "$1000s",
+      "label": "AC over 10 yrs",
+      "corner": "TR",
+      "accent": "amber"
+    },
+    {
+      "id": "ovp_1269",
+      "start": 1268.58,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "No wire · no motor · no bill",
+      "pos": "bottom",
+      "accent": "cold"
+    },
+    {
+      "id": "ovg_1309",
+      "start": 1309.38,
+      "dur": 4.2,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "📌 Free guide + 90 old skills — in the comments",
+      "pos": "bottom",
+      "accent": "amber"
+    }
+  ]
+}

@@ -32,10 +32,22 @@ if (!KEY) {
   process.exit(1);
 }
 
-const [shotsArg, outArg] = process.argv.slice(2);
+const rawArgs = process.argv.slice(2);
+// slug del video: por --slug <x>, env SLUG, o derivado de dense_<slug>.json
+let slug = process.env.SLUG || "";
+const si = rawArgs.indexOf("--slug");
+if (si >= 0) { slug = rawArgs[si + 1] || ""; rawArgs.splice(si, 2); }
+const [shotsArg, outArg] = rawArgs;
 const SHOTS = shotsArg || "public/broll/shots.json";
-const OUT = outArg || "public/broll";
+if (!slug) { const m = /^dense_([a-z0-9]+)\.json$/i.exec(path.basename(SHOTS)); if (m) slug = m[1]; }
+// ★ AISLAMIENTO POR VIDEO: cada video baja su b-roll a su PROPIA subcarpeta public/broll/<slug>/, así
+// dos videos NUNCA comparten los clips genéricos dNNN (antes todo iba a public/broll/ y el fetcher
+// salteaba los existentes → el video de la sábila salió con clips de kiwi de otro video). El Main debe
+// referenciar broll/<slug>/dNNN.mp4. Si pasás outDir explícito, se respeta.
+const OUT = outArg || (slug ? path.join("public/broll", slug) : "public/broll");
 fs.mkdirSync(OUT, { recursive: true });
+if (slug) console.log(`[aislamiento] b-roll de este video → ${OUT}/  (referencialo como broll/${slug}/dNNN.mp4)`);
+else console.warn("[aislamiento] ⚠ sin slug: bajando a public/broll/ compartida — pasá --slug <slug> o usá dense_<slug>.json para AISLAR y evitar cruce de clips entre videos.");
 
 if (!fs.existsSync(SHOTS)) {
   console.error("No existe la lista de tomas:", SHOTS);

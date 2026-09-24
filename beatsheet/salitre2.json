@@ -1,0 +1,1055 @@
+{
+ "video": "salitre2",
+ "avatar": "salitre2_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 0.89,
+   "kind": "talk",
+   "hue": "blue"
+  },
+  {
+   "id": "hook_1",
+   "start": 2.19,
+   "dur": 1.94,
+   "kind": "raw",
+   "src": "img/sa_rascaste.png",
+   "hue": "red",
+   "hold": true,
+   "gen": {
+    "type": "clip",
+    "image": "sa_rascaste",
+    "prompt": "Foto documental muy realista, 16:9. hands scraping white salitre efflorescence off a wall with a spatula. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "hook_2",
+   "start": 4.13,
+   "dur": 5.11,
+   "kind": "raw",
+   "src": "img/sa_pintaste.png",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "sa_pintaste",
+    "prompt": "Foto documental muy realista, 16:9. painting over a patched wall section, looking neat and clean. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "hook_3",
+   "start": 9.24,
+   "dur": 15.64,
+   "kind": "raw",
+   "src": "img/sa_volvio.png",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "sa_volvio",
+    "prompt": "Foto documental muy realista, 16:9. white salitre stains coming back through fresh paint at the bottom of a wall, worse. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "hook_4",
+   "start": 24.88,
+   "dur": 3.29,
+   "kind": "raw",
+   "src": "img/sa_sintoma.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_sintoma",
+    "prompt": "Foto documental muy realista, 16:9. a thermometer showing fever, treating a symptom not the cause. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_5",
+   "start": 28.17,
+   "dur": 11.49,
+   "kind": "raw",
+   "src": "img/sa_aspirina_hook.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_aspirina_hook",
+    "prompt": "Foto documental muy realista, 16:9. an aspirin pill next to a sick wall, treating fever while infection continues. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_6",
+   "start": 39.66,
+   "dur": 3.88,
+   "kind": "raw",
+   "src": "broll/sa_cartel.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "sa_cartel",
+    "prompt": "Foto documental muy realista, 16:9. white salitre on a wall like a warning sign of hidden water damage. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_7",
+   "start": 43.54,
+   "dur": 40.62,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "error"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "nadie"
+    },
+    {
+     "t": "te"
+    },
+    {
+     "t": "dice",
+     "hl": true
+    }
+   ],
+   "eyebrow": "El salitre vuelve por esto",
+   "bg": "image",
+   "image": "img/sa_hook_super.png",
+   "hue": "red"
+  },
+  {
+   "id": "hook_8",
+   "start": 84.16,
+   "dur": 8.04,
+   "kind": "raw",
+   "src": "img/sa_tomas_hook.png",
+   "hue": "amber",
+   "kicker": "La barrera de $2",
+   "gen": {
+    "type": "image",
+    "name": "sa_tomas_hook",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, pointing at a wall with salitre stains, serious and knowledgeable, looking at camera, en una casa con problemas de humedad. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "guia1_0",
+   "start": 92.2,
+   "dur": 24.22,
+   "kind": "callout",
+   "image": "img/sa_manual1.png",
+   "figure": "+40",
+   "caption": "arreglos de la casa, en un solo lugar",
+   "accent": "good",
+   "hue": "red"
+  },
+  {
+   "id": "quees_0",
+   "start": 116.42,
+   "dur": 15.78,
+   "kind": "raw",
+   "src": "broll/sa_no_hongo.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_no_hongo",
+    "prompt": "Foto documental muy realista, 16:9. close macro of white salitre crystals, NOT mold, mineral salt not organic. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "quees_1",
+   "start": 132.2,
+   "dur": 9.84,
+   "kind": "raw",
+   "src": "broll/sa_sales.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "sa_sales",
+    "prompt": "Foto documental muy realista, 16:9. macro of white salt crystals on a wall surface, like table salt or sugar. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "quees_2",
+   "start": 142.04,
+   "dur": 41.16,
+   "kind": "diagram",
+   "eyebrow": "Cómo se forma el salitre",
+   "slides": [
+    {
+     "image": "img/dg_sa_proceso.png",
+     "eyebrow": "El agua se evapora, la sal se queda"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "quees_3",
+   "start": 183.2,
+   "dur": 9.7,
+   "kind": "raw",
+   "src": "img/sa_empuja.png",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "sa_empuja",
+    "prompt": "Foto documental muy realista, 16:9. salt crystals growing and pushing paint and render off a wall from underneath. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "quees_4",
+   "start": 192.9,
+   "dur": 10.81,
+   "kind": "raw",
+   "src": "broll/sa_revoque_cae.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "sa_revoque_cae",
+    "prompt": "Foto documental muy realista, 16:9. chunks of render falling off a damp wall on their own, salt damage. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "quees_5",
+   "start": 203.71,
+   "dur": 10.81,
+   "kind": "raw",
+   "src": "img/sa_ladrillo_polvo.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_ladrillo_polvo",
+    "prompt": "Foto documental muy realista, 16:9. a brick crumbling to powder eaten away by salt and damp. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "quees_6",
+   "start": 214.52,
+   "dur": 17.44,
+   "kind": "avpizarra",
+   "items": [
+    {
+     "png": "img/sa_cut_gota.png",
+     "title": "Si hay salitre, hay HUMEDAD",
+     "body": "el salitre es la punta del iceberg"
+    }
+   ],
+   "side": "right",
+   "eyebrow": "La regla de oro",
+   "hue": "amber"
+  },
+  {
+   "id": "ignorar_0",
+   "start": 231.96,
+   "dur": 24.83,
+   "kind": "raw",
+   "src": "broll/sa_estructura.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "sa_estructura",
+    "prompt": "Foto documental muy realista, 16:9. a weakened damaged wall with crumbling render, structural damage from damp. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ignorar_1",
+   "start": 256.79,
+   "dur": 11.35,
+   "kind": "raw",
+   "src": "img/sa_moho_salud.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_moho_salud",
+    "prompt": "Foto documental muy realista, 16:9. black mold in a damp corner, bad for health, kids breathing it. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ignorar_2",
+   "start": 268.14,
+   "dur": 14.3,
+   "kind": "raw",
+   "src": "broll/sa_valor_casa.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_valor_casa",
+    "prompt": "Foto documental muy realista, 16:9. a house viewing where a buyer frowns at damp stains on the wall, lost value. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aspirina_0",
+   "start": 282.44,
+   "dur": 24.1,
+   "kind": "raw",
+   "src": "img/sa_acido.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_acido",
+    "prompt": "Foto documental muy realista, 16:9. a bottle of muriatic hydrochloric acid from a hardware store, dangerous chemical. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aspirina_1",
+   "start": 306.54,
+   "dur": 11.75,
+   "kind": "raw",
+   "src": "broll/sa_vapores.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "sa_vapores",
+    "prompt": "Foto documental muy realista, 16:9. corrosive acid fumes rising, danger, working with a mask near an open window. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "aspirina_2",
+   "start": 318.29,
+   "dur": 10.92,
+   "kind": "checklist",
+   "title": "Seguridad con el ácido",
+   "items": [
+    {
+     "text": "Guantes de goma y antiparras",
+     "state": "done"
+    },
+    {
+     "text": "Barbijo + ventana abierta",
+     "state": "done"
+    },
+    {
+     "text": "Cubrir el piso con nylon",
+     "state": "done"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "aspirina_3",
+   "start": 329.21,
+   "dur": 32.22,
+   "kind": "raw",
+   "src": "img/sa_cepillo.png",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "sa_cepillo",
+    "prompt": "Foto documental muy realista, 16:9. dry-brushing loose salitre and flaking paint off a wall with a stiff brush. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "aspirina_4",
+   "start": 361.43,
+   "dur": 11.46,
+   "kind": "raw",
+   "src": "img/sa_dilucion.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_dilucion",
+    "prompt": "Foto documental muy realista, 16:9. measuring one part acid into three parts water in a bucket, correct dilution. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aspirina_5",
+   "start": 372.89,
+   "dur": 14.61,
+   "kind": "raw",
+   "src": "broll/sa_agua_primero.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "sa_agua_primero",
+    "prompt": "Foto documental muy realista, 16:9. pouring water into a bucket first, then adding acid carefully, correct order. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "aspirina_6",
+   "start": 387.5,
+   "dur": 8.99,
+   "kind": "raw",
+   "src": "img/sa_efervescencia.png",
+   "hue": "red",
+   "hold": true,
+   "gen": {
+    "type": "clip",
+    "image": "sa_efervescencia",
+    "prompt": "Foto documental muy realista, 16:9. acid fizzing and bubbling on white salitre on a wall, dissolving the salt. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "aspirina_7",
+   "start": 396.49,
+   "dur": 10.79,
+   "kind": "raw",
+   "src": "img/sa_diez_minutos.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_diez_minutos",
+    "prompt": "Foto documental muy realista, 16:9. acid left to work on a wall stain for five to ten minutes, a clock. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aspirina_8",
+   "start": 407.28,
+   "dur": 17.98,
+   "kind": "raw",
+   "src": "broll/sa_enjuague.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "sa_enjuague",
+    "prompt": "Foto documental muy realista, 16:9. rinsing a wall with plenty of warm water and a brush after the acid. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "aspirina_9",
+   "start": 425.26,
+   "dur": 11.77,
+   "kind": "raw",
+   "src": "img/sa_terminacion.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_terminacion",
+    "prompt": "Foto documental muy realista, 16:9. finishing a clean dry wall with sealer and latex paint, restored. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aspirina_10",
+   "start": 437.03,
+   "dur": 11.77,
+   "kind": "raw",
+   "src": "broll/sa_revocar.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_revocar",
+    "prompt": "Foto documental muy realista, 16:9. removing loose blown render off a wall down to the brick, then re-rendering. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aspirina_11",
+   "start": 448.8,
+   "dur": 25.91,
+   "kind": "raw",
+   "src": "broll/sa_ladrillo_visto.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "sa_ladrillo_visto",
+    "prompt": "Foto documental muy realista, 16:9. white salitre stains on exposed brick, cleaned with a weaker acid dilution. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "bridge_0",
+   "start": 474.71,
+   "dur": 30.53,
+   "kind": "raw",
+   "src": "img/sa_tomas_bridge.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_tomas_bridge",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, explaining that removing salitre is only half, the cause must be cut, to camera, en una casa con problemas de humedad. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "antibiotico_0",
+   "start": 505.24,
+   "dur": 19.76,
+   "kind": "raw",
+   "src": "img/sa_tomas_medico.png",
+   "hue": "blue",
+   "kicker": "3 humedades, 3 tratamientos",
+   "gen": {
+    "type": "image",
+    "name": "sa_tomas_medico",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, reading the wall like a doctor reading symptoms, diagnosing the damp, en una casa con problemas de humedad. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "filtracion_0",
+   "start": 525,
+   "dur": 16.07,
+   "kind": "raw",
+   "src": "broll/sa_cano_roto.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_cano_roto",
+    "prompt": "Foto documental muy realista, 16:9. a broken leaking water pipe inside a wall, water escaping. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "filtracion_1",
+   "start": 541.07,
+   "dur": 10.93,
+   "kind": "raw",
+   "src": "img/sa_suda_gotitas.png",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "sa_suda_gotitas",
+    "prompt": "Foto documental muy realista, 16:9. an intense wet patch on a wall sweating water droplets, sharp defined edges. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "filtracion_2",
+   "start": 552,
+   "dur": 14.36,
+   "kind": "raw",
+   "src": "broll/sa_marca_crece.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "sa_marca_crece",
+    "prompt": "Foto documental muy realista, 16:9. a pencil mark on a damp stain edge that grows bigger over days. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "filtracion_3",
+   "start": 566.36,
+   "dur": 10.84,
+   "kind": "raw",
+   "src": "img/sa_plomero.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_plomero",
+    "prompt": "Foto documental muy realista, 16:9. a plumber fixing a leaking pipe in a wall, the real fix. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "lluvia_0",
+   "start": 577.2,
+   "dur": 12.84,
+   "kind": "raw",
+   "src": "broll/sa_pared_exterior.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_pared_exterior",
+    "prompt": "Foto documental muy realista, 16:9. damp and salitre only on the exterior weather-facing walls of a house. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "lluvia_1",
+   "start": 590.04,
+   "dur": 10.82,
+   "kind": "raw",
+   "src": "broll/sa_empeora_lluvia.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "sa_empeora_lluvia",
+    "prompt": "Foto documental muy realista, 16:9. an exterior wall getting wetter and darker right after rain. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "lluvia_2",
+   "start": 600.86,
+   "dur": 4.96,
+   "kind": "raw",
+   "src": "broll/sa_impermeable_afuera.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_impermeable_afuera",
+    "prompt": "Foto documental muy realista, 16:9. sealing an exterior wall from outside with waterproof render or paint. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "lluvia_3",
+   "start": 605.82,
+   "dur": 31.7,
+   "kind": "raw",
+   "src": "img/sa_latex_imper.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_latex_imper",
+    "prompt": "Foto documental muy realista, 16:9. brushing waterproof exterior latex paint onto an outside wall. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "capilaridad_0",
+   "start": 637.52,
+   "dur": 35.2,
+   "kind": "diagram",
+   "eyebrow": "La humedad que SUBE",
+   "slides": [
+    {
+     "image": "img/dg_sa_capilaridad.png",
+     "eyebrow": "El agua sube del suelo como el café por el azúcar"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "capilaridad_1",
+   "start": 672.72,
+   "dur": 10.92,
+   "kind": "raw",
+   "src": "broll/sa_cafe_terron.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "sa_cafe_terron",
+    "prompt": "Foto documental muy realista, 16:9. coffee wicking up a sugar cube by capillarity, analogy for rising damp. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "capilaridad_2",
+   "start": 683.64,
+   "dur": 10.92,
+   "kind": "raw",
+   "src": "img/sa_capa_rota.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_capa_rota",
+    "prompt": "Foto documental muy realista, 16:9. an old failed damp-proof course near the floor, broken, letting water rise. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "capilaridad_3",
+   "start": 694.56,
+   "dur": 11.8,
+   "kind": "raw",
+   "src": "broll/sa_franja_abajo.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "sa_franja_abajo",
+    "prompt": "Foto documental muy realista, 16:9. a horizontal band of damp and salitre along the bottom 40cm of a wall, rising from the floor. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "capilaridad_4",
+   "start": 706.36,
+   "dur": 25.48,
+   "kind": "raw",
+   "src": "broll/sa_linea_sube.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_linea_sube",
+    "prompt": "Foto documental muy realista, 16:9. a clear tide line of damp rising from the skirting board up the wall. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "inyeccion_0",
+   "start": 731.84,
+   "dur": 28.16,
+   "kind": "raw",
+   "src": "broll/sa_taladro_mecha.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_taladro_mecha",
+    "prompt": "Foto documental muy realista, 16:9. a drill with a long 13mm bit ready to drill a wall for damp injection. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "inyeccion_1",
+   "start": 760,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "img/sa_dos_tercios.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_dos_tercios",
+    "prompt": "Foto documental muy realista, 16:9. a cross-section of a wall showing angled holes drilled two thirds of its thickness. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "inyeccion_2",
+   "start": 764.48,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "broll/sa_perforaciones.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "sa_perforaciones",
+    "prompt": "Foto documental muy realista, 16:9. drilling a row of holes every 10-15cm along the bottom of a wall, angled down. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "inyeccion_3",
+   "start": 768.96,
+   "dur": 14.81,
+   "kind": "raw",
+   "src": "img/sa_inyectar.png",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "sa_inyectar",
+    "prompt": "Foto documental muy realista, 16:9. injecting liquid silicate sealer into the drilled holes at the base of a wall. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "inyeccion_4",
+   "start": 783.77,
+   "dur": 17.64,
+   "kind": "raw",
+   "src": "broll/sa_tres_dias.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_tres_dias",
+    "prompt": "Foto documental muy realista, 16:9. repeatedly topping up injected sealer into wall holes over three days until saturated. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "inyeccion_5",
+   "start": 801.41,
+   "dur": 18.2,
+   "kind": "raw",
+   "src": "img/sa_cristaliza.png",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "sa_cristaliza",
+    "prompt": "Foto documental muy realista, 16:9. the injected liquid crystallizing inside the brick pores forming a continuous barrier. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "inyeccion_6",
+   "start": 819.61,
+   "dur": 21.71,
+   "kind": "raw",
+   "src": "broll/sa_pared_seca.mp4",
+   "hue": "red",
+   "hold": true,
+   "gen": {
+    "type": "clip",
+    "image": "sa_pared_seca",
+    "prompt": "Foto documental muy realista, 16:9. a damp wall drying out from the top down over weeks, the stain retreating to the floor. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "guia2_0",
+   "start": 841.32,
+   "dur": 27.64,
+   "kind": "callout",
+   "image": "img/sa_manual2.png",
+   "figure": "cm",
+   "caption": "cada cuánto perforar + dosis exactas",
+   "accent": "good",
+   "hue": "amber"
+  },
+  {
+   "id": "otros_0",
+   "start": 868.96,
+   "dur": 17.71,
+   "kind": "raw",
+   "src": "broll/sa_rehacer_capa.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "sa_rehacer_capa",
+    "prompt": "Foto documental muy realista, 16:9. cutting a wall in sections to insert a new damp-proof course, invasive work. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "otros_1",
+   "start": 886.67,
+   "dur": 21.62,
+   "kind": "raw",
+   "src": "img/sa_electroosmosis.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_electroosmosis",
+    "prompt": "Foto documental muy realista, 16:9. a small electronic electro-osmosis box on a wall inverting rising damp. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "plata_0",
+   "start": 908.29,
+   "dur": 52.23,
+   "kind": "bars",
+   "title": "Barrera anti-humedad",
+   "unit": "US$",
+   "bars": [
+    {
+     "label": "Empresa especialista",
+     "value": 100,
+     "tone": "danger"
+    },
+    {
+     "label": "Inyección casera",
+     "value": 5,
+     "winner": true
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "plata_1",
+   "start": 960.52,
+   "dur": 29.72,
+   "kind": "raw",
+   "src": "broll/sa_revoque_hidrofugo.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_revoque_hidrofugo",
+    "prompt": "Foto documental muy realista, 16:9. applying a waterproof hydrofuge render base coat against brick, then normal render. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "esconden_0",
+   "start": 990.24,
+   "dur": 22.92,
+   "kind": "raw",
+   "src": "img/sa_pintura_antihumedad.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_pintura_antihumedad",
+    "prompt": "Foto documental muy realista, 16:9. shelves of expensive anti-damp wall paint at a store, an aspirin that peels off. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "esconden_1",
+   "start": 1013.16,
+   "dur": 31.72,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Te"
+    },
+    {
+     "t": "venden"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "aspirina",
+     "hl": true
+    }
+   ],
+   "eyebrow": "El antibiótico te lo esconden",
+   "bg": "image",
+   "image": "img/sa_cliente.png",
+   "hue": "blue"
+  },
+  {
+   "id": "esconden_2",
+   "start": 1044.88,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/sa_capa_vieja.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "sa_capa_vieja",
+    "prompt": "Foto documental muy realista, 16:9. old builders laying a course of vitrified bricks as a damp barrier, sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "esconden_3",
+   "start": 1048.73,
+   "dur": 40.36,
+   "kind": "raw",
+   "src": "broll/sa_brea.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_brea",
+    "prompt": "Foto documental muy realista, 16:9. an old damp-proof course layer of tar or lead above the foundation, historical sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "faq_0",
+   "start": 1089.09,
+   "dur": 4.47,
+   "kind": "raw",
+   "src": "img/sa_tomas_faq.png",
+   "hue": "blue",
+   "kicker": "Las dudas de siempre",
+   "gen": {
+    "type": "image",
+    "name": "sa_tomas_faq",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, answering questions to camera about damp, relaxed, en una casa con problemas de humedad. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "faq_1",
+   "start": 1093.56,
+   "dur": 151.04,
+   "kind": "scrolldoc",
+   "panels": [
+    {
+     "eyebrow": "Diagnóstico",
+     "heading": "¿Cuál de las 3?",
+     "body": "cómo sé cuál de las tres humedades tengo. La regla",
+     "poster": "img/sa_q_cual.png"
+    },
+    {
+     "eyebrow": "Orden",
+     "heading": "¿Pinto encima?",
+     "body": "Primero sacas el salitre con la aspirina y cortas la humedad",
+     "poster": "img/sa_q_pintar.png"
+    },
+    {
+     "eyebrow": "El ácido",
+     "heading": "¿Daña la pared?",
+     "body": "cortar la humedad? Paciencia con",
+     "poster": "img/sa_q_acido.png"
+    },
+    {
+     "eyebrow": "Paciencia",
+     "heading": "¿Cuánto tarda en secar?",
+     "body": "depende de donde vivas. Si es capilaridad en una",
+     "poster": "img/sa_q_seca.png"
+    }
+   ]
+  },
+  {
+   "id": "cta_0",
+   "start": 1244.6,
+   "dur": 45,
+   "kind": "quote",
+   "image": "img/sa_manual3.png",
+   "text": "Con NO llamar a un especialista, *ya lo pagaste*.",
+   "accent": "good",
+   "hue": "red"
+  },
+  {
+   "id": "cierre_0",
+   "start": 1289.6,
+   "dur": 56.4,
+   "kind": "raw",
+   "src": "broll/sa_aliado.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "sa_aliado",
+    "prompt": "Foto documental muy realista, 16:9. white salitre on a wall reframed as a helpful warning sign, not an enemy. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cierre_1",
+   "start": 1346,
+   "dur": 7.3,
+   "kind": "raw",
+   "src": "img/sa_encontra_agua.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "sa_encontra_agua",
+    "prompt": "Foto documental muy realista, 16:9. finding the source of water in a wall and cutting it off, the smart fix. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cierre_2",
+   "start": 1353.3,
+   "dur": 7.31,
+   "kind": "raw",
+   "src": "img/sa_tomas_cierre.png",
+   "hue": "red",
+   "kicker": "El próximo: el moho y la condensación",
+   "gen": {
+    "type": "image",
+    "name": "sa_tomas_cierre",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, on camera closing the video pointing at black mold in a bathroom corner, warm, en una casa con problemas de humedad. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cierre_3",
+   "start": 1360.61,
+   "dur": 4.81,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Curá"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "pared"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "verdad",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Aspirina para hoy, antibiótico para siempre",
+   "bg": "image",
+   "image": "img/sa_cierre.png",
+   "hue": "amber"
+  }
+ ],
+ "extraImages": [
+  {
+   "name": "sa_hook_super",
+   "prompt": "Foto documental muy realista, 16:9. a wall with rising damp and salitre, water rising from ground. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "sa_manual1",
+   "prompt": "Foto documental muy realista, 16:9. a phone showing an ebook home-repair manual, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "sa_manual2",
+   "prompt": "Foto documental muy realista, 16:9. a printed injection diagram and dosage table on a wall. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "sa_cliente",
+   "prompt": "Foto documental muy realista, 16:9. repainting a damp wall that keeps failing forever. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "sa_manual3",
+   "prompt": "Foto documental muy realista, 16:9. a phone showing an ebook home-repair manual, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "sa_cierre",
+   "prompt": "Foto documental muy realista, 16:9. a healed dry clean wall at golden hour, restored. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "sa_q_cual",
+   "prompt": "Foto documental muy realista, 16:9. reading where the salitre appears on a wall to diagnose the damp type. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "sa_q_pintar",
+   "prompt": "Foto documental muy realista, 16:9. paint peeling off because it was applied over salitre and damp, wrong order. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "sa_q_acido",
+   "prompt": "Foto documental muy realista, 16:9. diluted rinsed acid safe on a wall vs pure acid damage. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "sa_q_seca",
+   "prompt": "Foto documental muy realista, 16:9. a wall slowly drying over weeks after cutting the damp, patience. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  }
+ ]
+}

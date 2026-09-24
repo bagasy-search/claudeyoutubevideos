@@ -35,11 +35,19 @@ if (fs.existsSync(envFile)) {
   }
 }
 
-const KEY = process.env.DEAPI_API_KEY;
-if (!KEY) {
-  console.error("Falta DEAPI_API_KEY (set DEAPI_API_KEY=12669|... o ponela en .env).");
+// ── POOL de keys que ROTA POR-CLIP (no por-request: el polling de un clip debe ir a
+// la MISMA cuenta que lo creó). Con N cuentas free, cada una ve solo 1/N de las
+// requests → se reparte el rate-limit de ~10 RPM. Regla: GAP × N ≥ 6000ms para que
+// ninguna key pase los 10 RPM. Pasá varias con DEAPI_KEYS=key1,key2,key3 (o una sola
+// en DEAPI_API_KEY). Cada key free trae su crédito → sumás velocidad Y saldo gratis.
+const KEYS = (process.env.DEAPI_KEYS || process.env.DEAPI_API_KEY || "")
+  .split(",").map((s) => s.trim()).filter(Boolean);
+if (!KEYS.length) {
+  console.error("Falta DEAPI_API_KEY o DEAPI_KEYS=key1,key2,... en el entorno o .env.");
   process.exit(1);
 }
+const authH = (k) => ({ Authorization: `Bearer ${k}`, Accept: "application/json" });
+if (KEYS.length > 1) console.log(`deAPI: POOL de ${KEYS.length} keys rotando por-clip. Para free tier (~10 RPM) usá GAP × ${KEYS.length} ≥ 6000ms (ej. DEAPI_GAP_MS=${Math.ceil(6000 / KEYS.length)}).`);
 
 const [clipsArg, imgArg, outArg, concArg] = process.argv.slice(2);
 const CLIPS = clipsArg || "public/vid/clips.json";
@@ -56,7 +64,6 @@ const FPS = 30; // LTX 0.9.8: fijo
 const STEPS = 1; // LTX 0.9.8: fijo
 
 const BASE = "https://api.deapi.ai/api/v1/client";
-const H = { Authorization: `Bearer ${KEY}`, Accept: "application/json" };
 
 fs.mkdirSync(OUT, { recursive: true });
 if (!fs.existsSync(CLIPS)) {
@@ -106,7 +113,7 @@ async function api(url, opts = {}, tries = 8) {
 }
 
 const POLL_EVERY = Number(process.env.DEAPI_POLL_EVERY_MS) || 4000;
-async function pollResult(requestId, label) {
+async function pollResult(requestId, label, H) {
   for (let i = 0; i < 240; i++) {
     const res = await api(`${BASE}/request-status/${requestId}`, { headers: H });
     const j = await res.json();
@@ -118,7 +125,8 @@ async function pollResult(requestId, label) {
   throw new Error(`timeout esperando ${label}`);
 }
 
-const genOne = async (item) => {
+const genOne = async (item, jobIdx = 0) => {
+  const H = authH(KEYS[jobIdx % KEYS.length]); // esta cuenta hace submit + polls de ESTE clip
   const {
     name,
     image,
@@ -155,7 +163,7 @@ const genOne = async (item) => {
   const requestId = (await sub.json())?.data?.request_id;
   if (!requestId) throw new Error("respuesta sin request_id");
 
-  const url = await pollResult(requestId, name);
+  const url = await pollResult(requestId, name, H);
   const vid = await fetch(url); // descarga directa del CDN (no cuenta para el límite)
   const buf = Buffer.from(await vid.arrayBuffer());
   fs.writeFileSync(dest, buf);
@@ -170,7 +178,7 @@ const worker = async () => {
     const i = next++;
     const item = list[i];
     try {
-      index[i] = await genOne(item);
+      index[i] = await genOne(item, i);
     } catch (e) {
       console.error(`✗ ${item.name} — ${e.message}`);
       index[i] = { name: item.name, error: e.message };

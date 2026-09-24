@@ -55,7 +55,7 @@ const INFLIGHT = Number(concArg) || Number(process.env.DEAPI_INFLIGHT) || 12;
 const MODEL = process.env.DEAPI_IMAGE_MODEL || "Flux_2_Klein_4B_BF16";
 const DEFAULT_W = Number(process.env.DEAPI_IMAGE_W) || 1536;
 const DEFAULT_H = Number(process.env.DEAPI_IMAGE_H) || 832;
-const STEPS = 4; // Klein: fijo en 4
+const STEPS = Number(process.env.DEAPI_STEPS) || 4; // Klein=4; Z-Image-Turbo=8 (DEAPI_STEPS=8)
 
 const BASE = "https://api.deapi.ai/api/v1/client";
 const H = { Authorization: `Bearer ${KEY}`, Accept: "application/json" };

@@ -12,9 +12,15 @@ if (!slug) { console.error("Uso: node contactsheet.mjs <slug>"); process.exit(1)
 const FF = path.join(process.cwd(), "node_modules/@remotion/compositor-win32-x64-msvc/ffmpeg.exe");
 const bs = JSON.parse(fs.readFileSync(`beatsheet/${slug}.json`, "utf8"));
 
-// juntar refs únicas (clips broll + imágenes img/, sin avatar_clips ni _blur)
+// juntar refs únicas (clips broll/vid + imágenes img/real, sin avatar_clips ni _blur)
+// FIX: antes solo broll/+img/ → los videos que usan real/ (76 imágenes en ventilador)
+// quedaban sin auditar en la hoja de contactos.
 const refs = new Map(); // src -> kind
-const add = (s) => { if (typeof s === "string" && (s.startsWith("broll/") || s.startsWith("img/")) && !s.includes("_blur")) refs.set(s, s.startsWith("broll/") ? "clip" : "img"); };
+const add = (s) => {
+  if (typeof s !== "string" || s.includes("_blur")) return;
+  if (/^(broll|vid)\//.test(s) && /\.(mp4|webm|mov)$/i.test(s)) refs.set(s, "clip");
+  else if (/^(img|real)\//.test(s)) refs.set(s, "img");
+};
 const walk = (o) => { if (!o || typeof o !== "object") return; if (Array.isArray(o)) return o.forEach(walk); if (o.src) add(o.src); if (o.image) add(o.image); for (const s of o.slides || []) add(s.image); for (const w of o.waypoints || []) add(w.image); for (const k of Object.keys(o)) if (k !== "gen") walk(o[k]); };
 walk(bs.beats);
 

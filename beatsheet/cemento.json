@@ -1,0 +1,1967 @@
+{
+ "video": "cemento",
+ "avatar": "cemento_opt.mp4",
+ "tutorial": true,
+ "clipsfirst": true,
+ "beats": [
+  {
+   "id": "ce_old_healthy_wall",
+   "start": 2.56,
+   "dur": 2.84,
+   "kind": "raw",
+   "src": "broll/ce_old_healthy_wall.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_old_wall_no_crack",
+   "start": 5.1,
+   "dur": 4.14,
+   "kind": "raw",
+   "src": "real/ce_old_wall_no_crack.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_new_cracked_wall",
+   "start": 8.94,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/ce_new_cracked_wall.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxbefore_9",
+   "start": 8.94,
+   "dur": 4.6,
+   "kind": "oxbefore",
+   "overlay": true,
+   "hue": "amber",
+   "before": "real/ce_old_wall_no_crack.png",
+   "after": "real/ce_damp_stain_wall.png",
+   "accent": "red"
+  },
+  {
+   "id": "ce_damp_stain_wall",
+   "start": 12.32,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "real/ce_damp_stain_wall.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_old_masons_knew",
+   "start": 22.75,
+   "dur": 2.47,
+   "kind": "raw",
+   "src": "broll/ce_old_masons_knew.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_cement_factory_hide",
+   "start": 24.92,
+   "dur": 3.42,
+   "kind": "raw",
+   "src": "broll/ce_cement_factory_hide.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_sell_expensive_bag",
+   "start": 30.86,
+   "dur": 2.19,
+   "kind": "raw",
+   "src": "real/ce_sell_expensive_bag.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_use_bag_wrong",
+   "start": 32.75,
+   "dur": 3.19,
+   "kind": "raw",
+   "src": "real/ce_fill_use_bag_wrong.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_one_dollar_bill",
+   "start": 39.73,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ce_one_dollar_bill.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_callout_st_40",
+   "start": 39.73,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "$1",
+   "caption": "Lo que los viejos sabían te cuesta, literalmente, un dólar.",
+   "accent": "good",
+   "image": "real/ce_one_dollar_bill.png"
+  },
+  {
+   "id": "ce_why_wall_cracks",
+   "start": 44.62,
+   "dur": 2.96,
+   "kind": "raw",
+   "src": "real/ce_why_wall_cracks.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_lime_bag_ingredient",
+   "start": 47.28,
+   "dur": 2.24,
+   "kind": "raw",
+   "src": "real/ce_lime_bag_ingredient.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_fill_ingredient_mix",
+   "start": 49.22,
+   "dur": 2.2,
+   "kind": "raw",
+   "src": "real/ce_fill_ingredient_mix.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_ruins_best_cement",
+   "start": 57.5,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "real/ce_ruins_best_cement.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_fill_stay_until_end",
+   "start": 61.4,
+   "dur": 5.1,
+   "kind": "raw",
+   "src": "real/ce_fill_stay_until_end.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_wall_100_years",
+   "start": 66.2,
+   "dur": 2.24,
+   "kind": "raw",
+   "src": "real/ce_wall_100_years.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxstat_66",
+   "start": 66.2,
+   "dur": 4.2,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 100,
+   "suffix": " años",
+   "label": "vs una que se raja en 5: la diferencia no es la plata, es lo que sabés",
+   "glyph": "🧱",
+   "accent": "green"
+  },
+  {
+   "id": "ce_wall_falls_apart",
+   "start": 68.14,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ce_wall_falls_apart.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_vs_st_68",
+   "start": 68.28,
+   "dur": 6.5,
+   "kind": "vs",
+   "hue": "amber",
+   "title": "Cuánto te dura la pared",
+   "left": {
+    "label": "Con cal",
+    "value": "100 años",
+    "sub": "la pared de los viejos",
+    "good": true
+   },
+   "right": {
+    "label": "Sin cal",
+    "value": "5 años",
+    "sub": "y ya se raja"
+   }
+  },
+  {
+   "id": "ce_what_is_cement",
+   "start": 71.04,
+   "dur": 2.98,
+   "kind": "raw",
+   "src": "real/ce_what_is_cement.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_first_deception",
+   "start": 73.72,
+   "dur": 2.4,
+   "kind": "raw",
+   "src": "real/ce_fill_first_deception.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_people_think_dries",
+   "start": 75.82,
+   "dur": 3.36,
+   "kind": "raw",
+   "src": "broll/ce_people_think_dries.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_mud_dries_sun",
+   "start": 81.44,
+   "dur": 2.69,
+   "kind": "raw",
+   "src": "real/ce_mud_dries_sun.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_that_is_a_lie",
+   "start": 83.83,
+   "dur": 2.2,
+   "kind": "raw",
+   "src": "broll/ce_that_is_a_lie.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_costs_you_wall",
+   "start": 85.73,
+   "dur": 2.83,
+   "kind": "raw",
+   "src": "real/ce_fill_costs_you_wall.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_diagram_2_4",
+   "start": 88.26,
+   "dur": 3.74,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "El cemento no se seca: se cura",
+   "slides": [
+    {
+     "image": "img/dg_ce_cure.png",
+     "eyebrow": "Reacción química con agua adentro, no evaporación"
+    }
+   ]
+  },
+  {
+   "id": "ov_oxrule_88",
+   "start": 88.26,
+   "dur": 4.6,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "El cemento *no se seca*: se *cura*. Es una reacción química que necesita agua adentro.",
+   "accent": "amber"
+  },
+  {
+   "id": "cmp_aged_st_88",
+   "start": 88.26,
+   "dur": 6.5,
+   "kind": "aged",
+   "hue": "amber",
+   "heading": "EL PRIMER ENGAÑO",
+   "eyebrow": "El cemento no se seca: se cura",
+   "lines": [
+    {
+     "text": "No se seca como el barro al sol"
+    },
+    {
+     "text": "Es una reacción química con agua adentro"
+    },
+    {
+     "text": "Si se seca rápido, pierde la mitad de su fuerza",
+     "mark": true
+    }
+   ]
+  },
+  {
+   "id": "ce_chemical_reaction",
+   "start": 91.6,
+   "dur": 5.12,
+   "kind": "raw",
+   "src": "broll/ce_chemical_reaction.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_water_days_strength",
+   "start": 96.42,
+   "dur": 2.72,
+   "kind": "raw",
+   "src": "real/ce_fill_water_days_strength.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_vs_st_99",
+   "start": 98.84,
+   "dur": 6.5,
+   "kind": "vs",
+   "hue": "red",
+   "title": "El cemento no se seca, se cura",
+   "left": {
+    "label": "Curada 7 días",
+    "value": "100% fuerza",
+    "sub": "dura como piedra",
+    "good": true
+   },
+   "right": {
+    "label": "Seca muy rápido",
+    "value": "la mitad",
+    "sub": "débil para siempre"
+   }
+  },
+  {
+   "id": "ce_fill_half_resistance",
+   "start": 101.78,
+   "dur": 3,
+   "kind": "raw",
+   "src": "real/ce_fill_half_resistance.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_mason_wetting_wall",
+   "start": 112.72,
+   "dur": 4.32,
+   "kind": "raw",
+   "src": "broll/ce_mason_wetting_wall.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_day_after_day",
+   "start": 116.74,
+   "dur": 1.42,
+   "kind": "raw",
+   "src": "real/ce_fill_day_after_day.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_bucket_wet_wall",
+   "start": 117.86,
+   "dur": 2.5,
+   "kind": "raw",
+   "src": "real/ce_bucket_wet_wall.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_young_laughs_habit",
+   "start": 120.06,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "real/ce_young_laughs_habit.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxrule_126",
+   "start": 125.7,
+   "dur": 4.4,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Mojá la pared recién hecha, día tras otro. Es el secreto Nº1 y encima es *gratis*.",
+   "accent": "green"
+  },
+  {
+   "id": "cmp_process_st_126",
+   "start": 125.7,
+   "dur": 6.5,
+   "kind": "process",
+   "hue": "blue",
+   "title": "El curado, paso a paso",
+   "eyebrow": "Gratis, y es lo que más cambia el resultado",
+   "steps": [
+    {
+     "title": "Mojá la pared recién hecha",
+     "desc": "a la mañana y a la tarde, con manguera o balde"
+    },
+    {
+     "title": "Siete días mínimo",
+     "desc": "más todavía si hace calor o corre viento"
+    },
+    {
+     "title": "Queda dura como piedra",
+     "desc": "el agua adentro termina la reacción química"
+    }
+   ]
+  },
+  {
+   "id": "ce_fill_giving_the_water",
+   "start": 129.1,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "real/ce_fill_giving_the_water.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_water_finishes_reaction",
+   "start": 132,
+   "dur": 2.17,
+   "kind": "raw",
+   "src": "real/ce_water_finishes_reaction.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_hard_as_stone",
+   "start": 133.87,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ce_hard_as_stone.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_callout_st_134",
+   "start": 133.87,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "El curado",
+   "caption": "Darle al cemento el agua para terminar la reacción y quedar duro como piedra.",
+   "accent": "cold",
+   "image": "real/ce_water_finishes_reaction.png"
+  },
+  {
+   "id": "ce_cement_bag_instructions",
+   "start": 135.54,
+   "dur": 3.14,
+   "kind": "raw",
+   "src": "real/ce_cement_bag_instructions.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_only_mixing_printed",
+   "start": 138.38,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "broll/ce_only_mixing_printed.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_never_shouts",
+   "start": 142.62,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "real/ce_fill_never_shouts.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_diagram_4_3",
+   "start": 147.42,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "El curado: 7 días mínimo",
+   "slides": [
+    {
+     "image": "img/dg_ce_7days.png",
+     "eyebrow": "Mañana y tarde · más si hay sol o viento"
+    }
+   ]
+  },
+  {
+   "id": "ov_oxstat_147",
+   "start": 147.42,
+   "dur": 4.4,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 7,
+   "suffix": " días",
+   "label": "curando la pared, mañana y tarde: más si hay sol fuerte o viento",
+   "glyph": "💧",
+   "accent": "blue"
+  },
+  {
+   "id": "ce_seven_days_minimum",
+   "start": 148.74,
+   "dur": 2.28,
+   "kind": "raw",
+   "src": "broll/ce_seven_days_minimum.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_more_if_hot_windy",
+   "start": 150.72,
+   "dur": 5.27,
+   "kind": "raw",
+   "src": "broll/ce_more_if_hot_windy.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_sun_wind_enemies",
+   "start": 155.69,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "real/ce_sun_wind_enemies.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxside_156",
+   "start": 155.69,
+   "dur": 5,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ce_sun_wind_enemies.png",
+   "title": "Los enemigos del curado",
+   "lines": [
+    "El sol fuerte le chupa el agua",
+    "El viento la evapora",
+    "Sin agua adentro: aparecen las grietas"
+   ],
+   "side": "right",
+   "accent": "red"
+  },
+  {
+   "id": "ce_fill_before_it_cures",
+   "start": 159.06,
+   "dur": 1.8,
+   "kind": "raw",
+   "src": "real/ce_fill_before_it_cures.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_cracks_appear",
+   "start": 160.56,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "real/ce_cracks_appear.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_curing_one_secret",
+   "start": 165.1,
+   "dur": 4.87,
+   "kind": "raw",
+   "src": "broll/ce_curing_one_secret.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_manualcard_165",
+   "start": 165.1,
+   "dur": 6,
+   "kind": "manualcard",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/manual_cover.png",
+   "title": "Manual del Constructor Libre",
+   "desc": "Los 40 arreglos de $1 a $5 del hogar, con los pasos y las medidas exactas.",
+   "accent": "amber"
+  },
+  {
+   "id": "ce_years_writing_tricks",
+   "start": 169.67,
+   "dur": 5.8,
+   "kind": "raw",
+   "src": "real/ce_years_writing_tricks.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_wood_no_rot_notes",
+   "start": 175.17,
+   "dur": 2.07,
+   "kind": "raw",
+   "src": "real/ce_wood_no_rot_notes.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_wall_no_leak",
+   "start": 176.94,
+   "dur": 2.08,
+   "kind": "raw",
+   "src": "real/ce_fill_wall_no_leak.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_fill_iron_no_rust",
+   "start": 178.72,
+   "dur": 2.56,
+   "kind": "raw",
+   "src": "real/ce_fill_iron_no_rust.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_carpenter_mason_showed",
+   "start": 180.98,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/ce_carpenter_mason_showed.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_exact_measures_proportions",
+   "start": 185.82,
+   "dur": 4.24,
+   "kind": "raw",
+   "src": "real/ce_exact_measures_proportions.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_forty_fixes_manual",
+   "start": 189.76,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ce_forty_fixes_manual.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_industry_hides_fixes",
+   "start": 197.3,
+   "dur": 4.94,
+   "kind": "raw",
+   "src": "broll/ce_industry_hides_fixes.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_link_below_pinned",
+   "start": 201.94,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ce_fill_link_below_pinned.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_lime_the_star",
+   "start": 210.84,
+   "dur": 2.84,
+   "kind": "raw",
+   "src": "real/ce_lime_the_star.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxtag_211",
+   "start": 210.84,
+   "dur": 4.2,
+   "kind": "oxtag",
+   "overlay": true,
+   "hue": "amber",
+   "name": "La cal",
+   "what": "El ingrediente de un dólar que los viejos le metían a casi toda mezcla",
+   "side": "left",
+   "accent": "green"
+  },
+  {
+   "id": "ce_ask_lime_hardware",
+   "start": 213.38,
+   "dur": 2.86,
+   "kind": "raw",
+   "src": "real/ce_ask_lime_hardware.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_two_coins_bag",
+   "start": 215.94,
+   "dur": 2.18,
+   "kind": "raw",
+   "src": "real/ce_fill_two_coins_bag.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_lime_in_every_mix",
+   "start": 217.82,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/ce_lime_in_every_mix.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_to_plaster",
+   "start": 221.42,
+   "dur": 0.97,
+   "kind": "raw",
+   "src": "real/ce_fill_to_plaster.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_lime_for_bricks",
+   "start": 222.09,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "real/ce_lime_for_bricks.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_industry_all_in_one",
+   "start": 227,
+   "dur": 4.76,
+   "kind": "raw",
+   "src": "broll/ce_industry_all_in_one.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_sets_in_two_days",
+   "start": 231.46,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/ce_sets_in_two_days.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_bad_for_the_wall",
+   "start": 237.09,
+   "dur": 2.55,
+   "kind": "raw",
+   "src": "broll/ce_bad_for_the_wall.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_why_lime_magic",
+   "start": 239.34,
+   "dur": 2.36,
+   "kind": "raw",
+   "src": "broll/ce_why_lime_magic.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxside_239",
+   "start": 239.34,
+   "dur": 5.4,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ce_lime_bag_ingredient.png",
+   "title": "Lo que la cal te da",
+   "lines": [
+    "Flexible: la pared se mueve sin partirse",
+    "Se auto-repara: sella la fisura sola",
+    "Deja respirar: no atrapa la humedad"
+   ],
+   "side": "right",
+   "accent": "green"
+  },
+  {
+   "id": "ce_fill_three_reasons",
+   "start": 241.4,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ce_fill_three_reasons.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "burst_241",
+   "start": 241.4,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ce_lime_flexible_mix.png",
+    "real/ce_lime_self_heals.png",
+    "real/ce_lime_lets_breathe.png"
+   ],
+   "captions": [
+    "Flexible",
+    "Se cura sola",
+    "Deja respirar"
+   ],
+   "accent": "green"
+  },
+  {
+   "id": "cmp_splitlist_st_241",
+   "start": 241.4,
+   "dur": 6.5,
+   "kind": "splitlist",
+   "hue": "blue",
+   "title": "Lo que la cal te da",
+   "items": [
+    "Flexible: la pared se mueve sin rajarse",
+    "Se cura sola: sella la microfisura",
+    "Deja respirar: no atrapa la humedad",
+    "Cuesta apenas un dólar la bolsa"
+   ],
+   "palette": "A"
+  },
+  {
+   "id": "ce_lime_flexible_mix",
+   "start": 244.92,
+   "dur": 3.29,
+   "kind": "raw",
+   "src": "real/ce_lime_flexible_mix.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_pure_cement_brittle",
+   "start": 247.91,
+   "dur": 5.11,
+   "kind": "raw",
+   "src": "broll/ce_pure_cement_brittle.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_movement_temp_cracks",
+   "start": 252.72,
+   "dur": 5.48,
+   "kind": "raw",
+   "src": "broll/ce_movement_temp_cracks.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_lime_lets_wall_move",
+   "start": 257.9,
+   "dur": 2.76,
+   "kind": "raw",
+   "src": "broll/ce_lime_lets_wall_move.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_move_without_break",
+   "start": 260.36,
+   "dur": 2.44,
+   "kind": "raw",
+   "src": "real/ce_fill_move_without_break.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_lime_self_heals",
+   "start": 264.78,
+   "dur": 1.9,
+   "kind": "raw",
+   "src": "broll/ce_lime_self_heals.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_diagram_8_1",
+   "start": 266.38,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "La cal sella la fisura sola",
+   "slides": [
+    {
+     "image": "img/dg_ce_selfheal.png",
+     "eyebrow": "Con humedad y aire, la cal vuelve a cerrarla"
+    }
+   ]
+  },
+  {
+   "id": "ce_micro_crack_humidity",
+   "start": 267.7,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "real/ce_micro_crack_humidity.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_lime_closes_crack",
+   "start": 270.74,
+   "dur": 5.15,
+   "kind": "raw",
+   "src": "broll/ce_lime_closes_crack.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_seals_itself",
+   "start": 275.59,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ce_seals_itself.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxrule_276",
+   "start": 275.59,
+   "dur": 4.4,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Una pared con cal *se repara sola*: sella la microfisura. El cemento puro solo la agranda.",
+   "accent": "green"
+  },
+  {
+   "id": "cmp_callout_st_276",
+   "start": 275.59,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "Se repara sola",
+   "caption": "Una pared de cal sella la microfisura ella sola con la humedad y el aire.",
+   "accent": "good",
+   "image": "real/ce_seals_itself.png"
+  },
+  {
+   "id": "ce_fill_repairs_itself",
+   "start": 277.38,
+   "dur": 6.58,
+   "kind": "raw",
+   "src": "real/ce_fill_repairs_itself.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_pure_cement_crack_grows",
+   "start": 283.66,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "broll/ce_pure_cement_crack_grows.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_lime_lets_breathe",
+   "start": 287.22,
+   "dur": 3.87,
+   "kind": "raw",
+   "src": "real/ce_lime_lets_breathe.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_fill_vapor_outward",
+   "start": 290.79,
+   "dur": 2.37,
+   "kind": "raw",
+   "src": "real/ce_fill_vapor_outward.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_9_1",
+   "start": 292.86,
+   "dur": 5.64,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "La cal respira, el cemento atrapa",
+   "slides": [
+    {
+     "image": "img/dg_ce_breathe.png",
+     "eyebrow": "El cemento atrapa la humedad: manchas y salitre"
+    }
+   ]
+  },
+  {
+   "id": "ce_fill_traps_humidity",
+   "start": 294.96,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "real/ce_fill_traps_humidity.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_salitre_white_stain",
+   "start": 298.1,
+   "dur": 2.56,
+   "kind": "raw",
+   "src": "real/ce_salitre_white_stain.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_paint_blisters",
+   "start": 300.36,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ce_fill_paint_blisters.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_callout_st_300",
+   "start": 300.36,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "Salitre",
+   "caption": "El cemento puro atrapa la humedad: salitre, manchas y pintura que se cae.",
+   "accent": "danger",
+   "image": "real/ce_salitre_white_stain.png"
+  },
+  {
+   "id": "ce_lime_wall_stays_dry",
+   "start": 303.38,
+   "dur": 2.84,
+   "kind": "raw",
+   "src": "real/ce_lime_wall_stays_dry.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_lime_walls_centuries",
+   "start": 308.23,
+   "dur": 1.26,
+   "kind": "raw",
+   "src": "broll/ce_lime_walls_centuries.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_hundreds_years",
+   "start": 309.19,
+   "dur": 2.95,
+   "kind": "raw",
+   "src": "real/ce_fill_hundreds_years.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_romans_built_lime",
+   "start": 311.84,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "real/ce_romans_built_lime.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_roman_ruins_intact",
+   "start": 315.04,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ce_roman_ruins_intact.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxstat_315",
+   "start": 315.04,
+   "dur": 4.2,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 2000,
+   "suffix": " años",
+   "label": "las obras romanas de cal siguen enteras: no es el tiempo, es la cal",
+   "glyph": "🏛️",
+   "accent": "amber"
+  },
+  {
+   "id": "ce_believe_crack_in_five",
+   "start": 319.28,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ce_believe_crack_in_five.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_callout_st_319",
+   "start": 319.28,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "2000 años",
+   "caption": "Las obras romanas de cal siguen enteras. No es el tiempo: es la cal.",
+   "accent": "good",
+   "image": "real/ce_roman_ruins_intact.png"
+  },
+  {
+   "id": "ce_not_time_problem",
+   "start": 322.06,
+   "dur": 2.66,
+   "kind": "raw",
+   "src": "real/ce_not_time_problem.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_cement_sand_only",
+   "start": 329.4,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ce_cement_sand_only.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_process_st_329",
+   "start": 329.4,
+   "dur": 6.5,
+   "kind": "process",
+   "hue": "cold",
+   "title": "La mezcla con cal",
+   "eyebrow": "La proporción que nunca falla",
+   "steps": [
+    {
+     "title": "1 parte de cemento",
+     "desc": "para que la mezcla agarre fuerza"
+    },
+    {
+     "title": "1 parte de cal",
+     "desc": "flexible, se auto-repara y deja respirar la pared"
+    },
+    {
+     "title": "5 a 6 partes de arena",
+     "desc": "limpia y de grano parejo, como relleno"
+    }
+   ]
+  },
+  {
+   "id": "ce_add_the_lime",
+   "start": 332.34,
+   "dur": 1.26,
+   "kind": "raw",
+   "src": "real/ce_add_the_lime.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_fill_never_fails_ratio",
+   "start": 333.3,
+   "dur": 4.79,
+   "kind": "raw",
+   "src": "real/ce_fill_never_fails_ratio.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_11_2",
+   "start": 337.79,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "La proporción que nunca falla",
+   "slides": [
+    {
+     "image": "img/dg_ce_ratio.png",
+     "eyebrow": "1 cemento · 1 cal · 5-6 arena"
+    }
+   ]
+  },
+  {
+   "id": "ov_oxmethod_338",
+   "start": 337.79,
+   "dur": 4.8,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "1·1·6",
+   "title": "La proporción que nunca falla",
+   "chips": [
+    "1 de cemento: fuerza",
+    "1 de cal: lo bueno",
+    "5-6 de arena: relleno"
+   ],
+   "cost": "$1 la cal",
+   "accent": "green"
+  },
+  {
+   "id": "burst_338",
+   "start": 337.79,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ce_one_part_cement.png",
+    "real/ce_lime_bag_ingredient.png",
+    "real/ce_sand_as_filler.png"
+   ],
+   "captions": [
+    "1 cemento",
+    "1 cal",
+    "5-6 arena"
+   ],
+   "accent": "amber"
+  },
+  {
+   "id": "cmp_cross_st_338",
+   "start": 337.79,
+   "dur": 6.5,
+   "kind": "cross",
+   "hue": "amber",
+   "title": "La mezcla, en 3 ingredientes",
+   "eyebrow": "1 : 1 : 5-6",
+   "layers": [
+    {
+     "label": "Cemento (1)",
+     "depth": "para que agarre fuerza",
+     "color": "#8a8f96"
+    },
+    {
+     "label": "Cal (1)",
+     "depth": "flexible, respira, se repara",
+     "color": "#e8e2d2"
+    },
+    {
+     "label": "Arena (5-6)",
+     "depth": "limpia, grano parejo, relleno",
+     "color": "#c9a25f"
+    }
+   ]
+  },
+  {
+   "id": "ce_one_part_cement",
+   "start": 339.11,
+   "dur": 1.62,
+   "kind": "raw",
+   "src": "real/ce_one_part_cement.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_one_part_lime_sand",
+   "start": 340.43,
+   "dur": 2.11,
+   "kind": "raw",
+   "src": "broll/ce_one_part_lime_sand.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_fill_cement_grabs",
+   "start": 342.24,
+   "dur": 4.99,
+   "kind": "raw",
+   "src": "real/ce_fill_cement_grabs.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_sand_as_filler",
+   "start": 346.93,
+   "dur": 2.09,
+   "kind": "raw",
+   "src": "broll/ce_sand_as_filler.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_same_mix_always",
+   "start": 348.72,
+   "dur": 4.09,
+   "kind": "raw",
+   "src": "real/ce_fill_same_mix_always.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_grandparents_houses",
+   "start": 352.51,
+   "dur": 2.91,
+   "kind": "raw",
+   "src": "broll/ce_grandparents_houses.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_now_the_sand",
+   "start": 355.12,
+   "dur": 1.83,
+   "kind": "raw",
+   "src": "real/ce_now_the_sand.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_sand_must_be_clean",
+   "start": 359.86,
+   "dur": 1.95,
+   "kind": "raw",
+   "src": "broll/ce_sand_must_be_clean.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxrule_360",
+   "start": 359.86,
+   "dur": 4.4,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Arena *limpia* y de grano *parejo*. La tierra y las raíces te debilitan la mezcla.",
+   "accent": "blue"
+  },
+  {
+   "id": "ce_dirty_sand_roots",
+   "start": 361.51,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "real/ce_dirty_sand_roots.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_dirt_weakens",
+   "start": 365.07,
+   "dur": 3.37,
+   "kind": "raw",
+   "src": "real/ce_fill_dirt_weakens.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_old_ones_sieved_sand",
+   "start": 368.14,
+   "dur": 4.75,
+   "kind": "raw",
+   "src": "broll/ce_old_ones_sieved_sand.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_medium_grain_sand",
+   "start": 374.68,
+   "dur": 4.97,
+   "kind": "raw",
+   "src": "broll/ce_medium_grain_sand.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_bad_sand_ruins_mix",
+   "start": 379.35,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ce_bad_sand_ruins_mix.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_callout_st_379",
+   "start": 379.35,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "Arena limpia",
+   "caption": "Con tierra o raíces, la arena te arruina hasta la mejor de las mezclas.",
+   "accent": "danger",
+   "image": "real/ce_dirty_sand_roots.png"
+  },
+  {
+   "id": "ce_fill_dont_neglect_it",
+   "start": 382.58,
+   "dur": 2.64,
+   "kind": "raw",
+   "src": "real/ce_fill_dont_neglect_it.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_now_the_error",
+   "start": 384.92,
+   "dur": 6.75,
+   "kind": "raw",
+   "src": "broll/ce_now_the_error.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_most_common_all",
+   "start": 391.37,
+   "dur": 2.65,
+   "kind": "raw",
+   "src": "real/ce_fill_most_common_all.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_error_is_water",
+   "start": 393.72,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ce_error_is_water.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxrule_394",
+   "start": 393.72,
+   "dur": 4.8,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "El error más común: *demasiada agua*. Cómoda de tirar, pero es veneno para la pared.",
+   "accent": "red"
+  },
+  {
+   "id": "cmp_aged_st_394",
+   "start": 393.72,
+   "dur": 6.5,
+   "kind": "aged",
+   "hue": "red",
+   "heading": "EL ERROR MÁS COMÚN",
+   "eyebrow": "Demasiada agua = una pared de aire",
+   "lines": [
+    {
+     "text": "Queda blandita y cómoda de tirar"
+    },
+    {
+     "text": "El agua de más se evapora y deja huecos"
+    },
+    {
+     "text": "Pared débil y porosa que se raja al primer frío",
+     "mark": true
+    }
+   ]
+  },
+  {
+   "id": "ce_soupy_easy_mix",
+   "start": 398.44,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "broll/ce_soupy_easy_mix.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_fill_easy_to_throw",
+   "start": 401.46,
+   "dur": 3.42,
+   "kind": "raw",
+   "src": "real/ce_fill_easy_to_throw.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_comfortable_poison",
+   "start": 404.58,
+   "dur": 5.01,
+   "kind": "raw",
+   "src": "broll/ce_comfortable_poison.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_diagram_13_4",
+   "start": 409.29,
+   "dur": 2.95,
+   "kind": "diagram",
+   "hue": "blue",
+   "k": "comp",
+   "eyebrow": "El agua de más te deja aire adentro",
+   "slides": [
+    {
+     "image": "img/dg_ce_water.png",
+     "eyebrow": "Se evapora y deja huecos, poros y burbujas"
+    }
+   ]
+  },
+  {
+   "id": "ce_holes_pores_inside",
+   "start": 411.84,
+   "dur": 4.81,
+   "kind": "raw",
+   "src": "real/ce_holes_pores_inside.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_wall_full_of_air",
+   "start": 416.35,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ce_wall_full_of_air.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxstat_416",
+   "start": 416.35,
+   "dur": 4.2,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 0,
+   "prefix": "Aire",
+   "suffix": "",
+   "label": "el agua de más se evapora y deja huecos: pared débil, porosa, que se raja",
+   "glyph": "🫧",
+   "accent": "red"
+  },
+  {
+   "id": "cmp_vs_st_416",
+   "start": 416.35,
+   "dur": 6.5,
+   "kind": "vs",
+   "hue": "red",
+   "title": "El agua de la mezcla",
+   "left": {
+    "label": "Mezcla firme",
+    "value": "llena de piedra",
+    "sub": "fuerte y sana",
+    "good": true
+   },
+   "right": {
+    "label": "Agua de más",
+    "value": "llena de aire",
+    "sub": "porosa, se raja"
+   }
+  },
+  {
+   "id": "ce_fill_weak_and_porous",
+   "start": 419.28,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "real/ce_fill_weak_and_porous.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_cracks_first_cold",
+   "start": 422.46,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "real/ce_cracks_first_cold.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_firm_dry_mix_trowel",
+   "start": 424.76,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "real/ce_firm_dry_mix_trowel.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_holds_no_drip",
+   "start": 428.16,
+   "dur": 3.29,
+   "kind": "raw",
+   "src": "real/ce_fill_holds_no_drip.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_more_arm_work",
+   "start": 431.15,
+   "dur": 6.92,
+   "kind": "raw",
+   "src": "real/ce_more_arm_work.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_stone_vs_air_wall",
+   "start": 437.77,
+   "dur": 2.71,
+   "kind": "raw",
+   "src": "broll/ce_stone_vs_air_wall.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_old_ones_sweated",
+   "start": 440.18,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/ce_old_ones_sweated.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxrule_440",
+   "start": 440.18,
+   "dur": 4.4,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Mezcla *seca y firme* que se sostenga sola. Cuanta menos agua, más piedra vas a tener.",
+   "accent": "amber"
+  },
+  {
+   "id": "ce_fill_walls_still_up",
+   "start": 443.78,
+   "dur": 3.24,
+   "kind": "raw",
+   "src": "real/ce_fill_walls_still_up.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_quick_recap_plan",
+   "start": 446.72,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ce_quick_recap_plan.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "burst_447",
+   "start": 446.72,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ce_wet_wall_seven_days.png",
+    "real/ce_add_the_lime.png",
+    "real/ce_firm_dry_mix_trowel.png"
+   ],
+   "captions": [
+    "Curá 7 días",
+    "Metele cal",
+    "Mezcla firme"
+   ],
+   "accent": "blue"
+  },
+  {
+   "id": "cmp_checklist_st_447",
+   "start": 446.72,
+   "dur": 6.5,
+   "kind": "checklist",
+   "hue": "blue",
+   "title": "El plan completo",
+   "items": [
+    {
+     "text": "Curá: mojá la pared 7 días, mañana y tarde",
+     "state": "done"
+    },
+    {
+     "text": "Metele cal: 1 cemento, 1 cal, 5-6 arena",
+     "state": "done"
+    },
+    {
+     "text": "Arena limpia y de grano parejo, sin tierra",
+     "state": "done"
+    },
+    {
+     "text": "Nunca te pases con el agua: mezcla firme",
+     "state": "done"
+    },
+    {
+     "text": "Menos agua, más piedra vas a tener",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "ce_first_cement_cures",
+   "start": 453.36,
+   "dur": 3.16,
+   "kind": "raw",
+   "src": "broll/ce_first_cement_cures.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_wet_wall_seven_days",
+   "start": 456.22,
+   "dur": 5.34,
+   "kind": "raw",
+   "src": "real/ce_wet_wall_seven_days.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_second_add_lime",
+   "start": 465.4,
+   "dur": 2.5,
+   "kind": "raw",
+   "src": "broll/ce_second_add_lime.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_ratio_one_one_six",
+   "start": 467.6,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ce_ratio_one_one_six.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_dollar_a_bag",
+   "start": 476.32,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "real/ce_fill_dollar_a_bag.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_third_clean_sand",
+   "start": 479.54,
+   "dur": 6.88,
+   "kind": "raw",
+   "src": "broll/ce_third_clean_sand.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fourth_never_water",
+   "start": 486.12,
+   "dur": 3.04,
+   "kind": "raw",
+   "src": "real/ce_fourth_never_water.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_less_water_more_stone",
+   "start": 488.86,
+   "dur": 6.54,
+   "kind": "raw",
+   "src": "broll/ce_less_water_more_stone.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_four_things_no_crack",
+   "start": 495.1,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ce_fill_four_things_no_crack.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_fill_neighbor_picks_cracks",
+   "start": 502.21,
+   "dur": 5.59,
+   "kind": "raw",
+   "src": "real/ce_fill_neighbor_picks_cracks.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_its_what_you_know",
+   "start": 507.5,
+   "dur": 2.62,
+   "kind": "raw",
+   "src": "real/ce_fill_its_what_you_know.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_before_you_go_close",
+   "start": 509.82,
+   "dur": 3.1,
+   "kind": "raw",
+   "src": "broll/ce_before_you_go_close.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_lime_curing_water",
+   "start": 512.62,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/ce_lime_curing_water.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_proven_generations",
+   "start": 520.51,
+   "dur": 5.81,
+   "kind": "raw",
+   "src": "real/ce_fill_proven_generations.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_lost_being_too_good",
+   "start": 526.02,
+   "dur": 2.16,
+   "kind": "raw",
+   "src": "real/ce_lost_being_too_good.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_fill_too_durable",
+   "start": 527.88,
+   "dur": 6.54,
+   "kind": "raw",
+   "src": "real/ce_fill_too_durable.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_wall_hundred_years_dollar",
+   "start": 534.12,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ce_wall_hundred_years_dollar.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_callout_st_534",
+   "start": 534.12,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "La industria",
+   "caption": "No le sirve una pared que dura 100 años y se hace con $1 de cal.",
+   "accent": "danger",
+   "image": "real/ce_wall_hundred_years_dollar.png"
+  },
+  {
+   "id": "ce_sell_expensive_fast",
+   "start": 540.96,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ce_sell_expensive_fast.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_manual_constructor_libre",
+   "start": 552.06,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ce_manual_constructor_libre.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_callout_st_552",
+   "start": 552.06,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "40 arreglos",
+   "caption": "Los 40 secretos de los viejos en el Manual del Constructor Libre.",
+   "accent": "good",
+   "image": "real/ce_manual_constructor_libre.png"
+  },
+  {
+   "id": "ce_no_depend_on_anyone",
+   "start": 562.9,
+   "dur": 2.02,
+   "kind": "raw",
+   "src": "broll/ce_no_depend_on_anyone.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_hardware_corralon",
+   "start": 564.62,
+   "dur": 6.88,
+   "kind": "raw",
+   "src": "real/ce_fill_hardware_corralon.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ce_fill_less_than_a_bag",
+   "start": 571.2,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ce_fill_less_than_a_bag.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_manualcard_579",
+   "start": 579.34,
+   "dur": 6,
+   "kind": "manualcard",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/manual_cover.png",
+   "title": "Manual del Constructor Libre",
+   "desc": "Los 40 arreglos, incluido el de la cal y el curado, con las medidas exactas.",
+   "chip": "Accedé en la descripción",
+   "accent": "amber"
+  },
+  {
+   "id": "ce_next_water_out_wall",
+   "start": 588.4,
+   "dur": 3.1,
+   "kind": "raw",
+   "src": "broll/ce_next_water_out_wall.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_fill_water_from_rain",
+   "start": 591.2,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "real/ce_fill_water_from_rain.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ce_fill_lime_render_dry",
+   "start": 595.5,
+   "dur": 5.8,
+   "kind": "raw",
+   "src": "real/ce_fill_lime_render_dry.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ce_independence_built",
+   "start": 601,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "real/ce_independence_built.png",
+   "darken": 0,
+   "hue": "amber"
+  }
+ ]
+}

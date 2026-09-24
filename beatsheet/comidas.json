@@ -1,0 +1,3560 @@
+{
+ "video": "comidas",
+ "beats": [
+  {
+   "id": "b0",
+   "kind": "raw",
+   "src": "broll/cs_boiling.mp4",
+   "start": 0.11,
+   "dur": 2.34,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b1",
+   "kind": "raw",
+   "src": "real/e_viejo_come_1_1.jpg",
+   "start": 2.45,
+   "dur": 2.34,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b2",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_1.mp4",
+   "start": 4.8,
+   "dur": 3.72,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b3",
+   "kind": "raw",
+   "src": "broll/cs_bread_slice.mp4",
+   "start": 8.52,
+   "dur": 2.44,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b4",
+   "kind": "raw",
+   "src": "real/e_abuela_cocina_1_2.jpg",
+   "start": 10.96,
+   "dur": 2.44,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b5",
+   "kind": "raw",
+   "src": "broll/cc_lentejas_1.mp4",
+   "start": 13.41,
+   "dur": 2.44,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b6",
+   "kind": "raw",
+   "src": "broll/cs_chopping_veg.mp4",
+   "start": 15.85,
+   "dur": 2.24,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b7",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_1_1.jpg",
+   "start": 18.09,
+   "dur": 2.24,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b8",
+   "kind": "raw",
+   "src": "broll/cc_polenta_1.mp4",
+   "start": 20.34,
+   "dur": 2.24,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b9",
+   "kind": "raw",
+   "src": "broll/cs_fire_cooking.mp4",
+   "start": 22.58,
+   "dur": 3.77,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b10",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_1_3.jpg",
+   "start": 26.35,
+   "dur": 2.41,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b11",
+   "kind": "raw",
+   "src": "broll/cc_tortillapapa_2.mp4",
+   "start": 28.76,
+   "dur": 2.41,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b12",
+   "kind": "raw",
+   "src": "broll/cs_flame_stove.mp4",
+   "start": 31.17,
+   "dur": 2.41,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b13",
+   "kind": "raw",
+   "src": "real/e_abuela_cocina_1_3.jpg",
+   "start": 33.58,
+   "dur": 3.28,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b14",
+   "kind": "raw",
+   "src": "broll/cc_arrozhuevo_1.mp4",
+   "start": 36.86,
+   "dur": 2.25,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b15",
+   "kind": "raw",
+   "src": "broll/cs_frying_oil.mp4",
+   "start": 39.11,
+   "dur": 2.25,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b16",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_1_6.jpg",
+   "start": 41.36,
+   "dur": 2.26,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b17",
+   "kind": "raw",
+   "src": "broll/cc_fideosmanteca_2.mp4",
+   "start": 43.62,
+   "dur": 2.26,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b18",
+   "kind": "raw",
+   "src": "broll/cs_grandma_cook.mp4",
+   "start": 45.88,
+   "dur": 2.52,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "dishgrid",
+   "kind": "dishgrid",
+   "images": [
+    "real/d01_sopapan_1_2.jpg",
+    "real/d02_lentejas_1_2.jpg",
+    "real/d03_polenta_1_2.jpg",
+    "real/d04_tortillapapa_1_2.jpg",
+    "real/d05_arrozhuevo_1_2.jpg",
+    "real/d06_fideosmanteca_1_2.jpg",
+    "real/d07_arrozguisado_1_2.jpg",
+    "real/d08_zapallo_1_2.jpg",
+    "real/d09_puchero_1_2.jpg",
+    "real/d10_guisoarroz_1_2.jpg",
+    "real/d11_tortasfritas_1_2.jpg",
+    "real/d12_bunuelos_1_3.jpg",
+    "real/d13_pangrasa_1_2.jpg",
+    "real/d14_sopaverdura_1_2.jpg",
+    "real/d15_croquetas_1_2.jpg",
+    "real/d16_pastelpapa_1_3.jpg",
+    "real/d17_locro_1_2.jpg",
+    "real/d18_zapallitos_1_2.jpg",
+    "real/d19_albondigas_1_2.jpg",
+    "real/d20_ensladalentejas_1_2.jpg",
+    "real/d21_budinpan_1_2.jpg",
+    "real/d22_maicena_1_5.jpg",
+    "real/d23_fideosguisados_1_2.jpg",
+    "real/d24_matecocido_1_2.jpg",
+    "real/d25_papamanteca_1_2.jpg"
+   ],
+   "cols": 5,
+   "eyebrow": "de antes",
+   "title": "25 comidas",
+   "start": 47.9,
+   "dur": 9.6,
+   "overlay": true
+  },
+  {
+   "id": "b19",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_1_6.jpg",
+   "start": 48.4,
+   "dur": 2.52,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b20",
+   "kind": "raw",
+   "src": "broll/cc_arrozguisado_1.mp4",
+   "start": 50.92,
+   "dur": 2.52,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b21",
+   "kind": "raw",
+   "src": "broll/cs_grating_cheese.mp4",
+   "start": 53.44,
+   "dur": 2.75,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b22",
+   "kind": "raw",
+   "src": "real/e_abuela_cocina_1_6.jpg",
+   "start": 56.19,
+   "dur": 3.19,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b23",
+   "kind": "raw",
+   "src": "broll/cc_zapallo_1.mp4",
+   "start": 59.38,
+   "dur": 3.19,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b24",
+   "kind": "raw",
+   "src": "broll/cs_kettle_steam.mp4",
+   "start": 62.56,
+   "dur": 2.97,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b25",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_1_8.jpg",
+   "start": 65.53,
+   "dur": 2.97,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b26",
+   "kind": "raw",
+   "src": "real/d09_puchero_1_3.jpg",
+   "start": 68.51,
+   "dur": 2.97,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b27",
+   "kind": "raw",
+   "src": "broll/cs_knead_dough.mp4",
+   "start": 71.48,
+   "dur": 3.84,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b28",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_1_7.jpg",
+   "start": 75.32,
+   "dur": 2.73,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "top_1",
+   "kind": "topdulce",
+   "index": 1,
+   "total": 25,
+   "title": "Sopa de pan",
+   "image": "real/d01_sopapan_1_1.jpg",
+   "start": 79.05,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b29",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_3.mp4",
+   "start": 81.59,
+   "dur": 5.65,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b30",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_4.mp4",
+   "start": 87.24,
+   "dur": 3.58,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b31",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_5.mp4",
+   "start": 90.82,
+   "dur": 3.58,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b32",
+   "kind": "raw",
+   "src": "broll/cs_ladle_soup.mp4",
+   "start": 94.4,
+   "dur": 4.4,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b33",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_6.mp4",
+   "start": 98.8,
+   "dur": 3.63,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b34",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_7.mp4",
+   "start": 102.42,
+   "dur": 3.63,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b35",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_1.mp4",
+   "start": 106.05,
+   "dur": 4,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b36",
+   "kind": "raw",
+   "src": "broll/cs_melting_butter.mp4",
+   "start": 110.05,
+   "dur": 4,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b37",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_3.mp4",
+   "start": 114.04,
+   "dur": 3.28,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b38",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_4.mp4",
+   "start": 117.32,
+   "dur": 3.28,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_2",
+   "kind": "topdulce",
+   "index": 2,
+   "total": 25,
+   "title": "Guiso de lentejas",
+   "image": "real/d02_lentejas_1_1.jpg",
+   "start": 119.93,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b39",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_5.mp4",
+   "start": 120.6,
+   "dur": 3.16,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b40",
+   "kind": "raw",
+   "src": "broll/cs_old_hands_food.mp4",
+   "start": 123.76,
+   "dur": 3.16,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b41",
+   "kind": "raw",
+   "src": "broll/cc_lentejas_2.mp4",
+   "start": 126.92,
+   "dur": 3.49,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b42",
+   "kind": "raw",
+   "src": "broll/cc_lentejas_3.mp4",
+   "start": 130.41,
+   "dur": 3.49,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b43",
+   "kind": "raw",
+   "src": "broll/cc_lentejas_5.mp4",
+   "start": 133.91,
+   "dur": 3.7,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b44",
+   "kind": "raw",
+   "src": "broll/cs_old_man_eating.mp4",
+   "start": 137.62,
+   "dur": 3.7,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b45",
+   "kind": "raw",
+   "src": "broll/cc_lentejas_6.mp4",
+   "start": 141.32,
+   "dur": 6,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b46",
+   "kind": "raw",
+   "src": "broll/cc_lentejas_7.mp4",
+   "start": 147.32,
+   "dur": 5.05,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b47",
+   "kind": "raw",
+   "src": "broll/cc_lentejas_1.mp4",
+   "start": 152.37,
+   "dur": 5.42,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b48",
+   "kind": "raw",
+   "src": "broll/cs_plate_serving.mp4",
+   "start": 157.79,
+   "dur": 5.51,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_3",
+   "kind": "topdulce",
+   "index": 3,
+   "total": 25,
+   "title": "Polenta",
+   "image": "real/d03_polenta_1_1.jpg",
+   "start": 162.3,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b49",
+   "kind": "raw",
+   "src": "broll/cc_polenta_3.mp4",
+   "start": 163.3,
+   "dur": 3.95,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b50",
+   "kind": "raw",
+   "src": "broll/cc_polenta_5.mp4",
+   "start": 167.25,
+   "dur": 3.95,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b51",
+   "kind": "raw",
+   "src": "broll/cc_polenta_6.mp4",
+   "start": 171.2,
+   "dur": 3.64,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b52",
+   "kind": "raw",
+   "src": "broll/cs_pot_lid_steam.mp4",
+   "start": 174.84,
+   "dur": 3.64,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b53",
+   "kind": "raw",
+   "src": "broll/cc_polenta_7.mp4",
+   "start": 178.48,
+   "dur": 3.05,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b54",
+   "kind": "raw",
+   "src": "broll/cc_polenta_1.mp4",
+   "start": 181.53,
+   "dur": 3.05,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b55",
+   "kind": "raw",
+   "src": "broll/cc_polenta_3.mp4",
+   "start": 184.58,
+   "dur": 3.05,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b56",
+   "kind": "raw",
+   "src": "broll/cs_pour_broth.mp4",
+   "start": 187.64,
+   "dur": 3.66,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b57",
+   "kind": "raw",
+   "src": "broll/cc_polenta_5.mp4",
+   "start": 191.29,
+   "dur": 3.66,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b58",
+   "kind": "raw",
+   "src": "broll/cc_polenta_6.mp4",
+   "start": 194.95,
+   "dur": 2.51,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b59",
+   "kind": "raw",
+   "src": "broll/cc_polenta_7.mp4",
+   "start": 197.46,
+   "dur": 4.77,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_4",
+   "kind": "topdulce",
+   "index": 4,
+   "total": 25,
+   "title": "Tortilla de papas",
+   "image": "real/d04_tortillapapa_1_1.jpg",
+   "start": 199.6,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b60",
+   "kind": "raw",
+   "src": "broll/cc_tortillapapa_3.mp4",
+   "start": 202.23,
+   "dur": 3.54,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b61",
+   "kind": "raw",
+   "src": "broll/cc_tortillapapa_4.mp4",
+   "start": 205.76,
+   "dur": 3.54,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b62",
+   "kind": "raw",
+   "src": "broll/cc_tortillapapa_5.mp4",
+   "start": 209.3,
+   "dur": 3.35,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b63",
+   "kind": "raw",
+   "src": "broll/cs_rustic_kitchen.mp4",
+   "start": 212.65,
+   "dur": 3.35,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b64",
+   "kind": "raw",
+   "src": "broll/cc_tortillapapa_6.mp4",
+   "start": 216,
+   "dur": 4.16,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b65",
+   "kind": "raw",
+   "src": "broll/cc_tortillapapa_7.mp4",
+   "start": 220.16,
+   "dur": 3.86,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b66",
+   "kind": "raw",
+   "src": "broll/cc_tortillapapa_2.mp4",
+   "start": 224.02,
+   "dur": 3.86,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b67",
+   "kind": "raw",
+   "src": "broll/cs_simmer_stew.mp4",
+   "start": 227.88,
+   "dur": 2.48,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b68",
+   "kind": "raw",
+   "src": "broll/cc_tortillapapa_3.mp4",
+   "start": 230.36,
+   "dur": 5.64,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_5",
+   "kind": "topdulce",
+   "index": 5,
+   "total": 25,
+   "title": "Arroz con huevo",
+   "image": "real/d05_arrozhuevo_1_1.jpg",
+   "start": 235.23,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b69",
+   "kind": "raw",
+   "src": "broll/cc_arrozhuevo_2.mp4",
+   "start": 236,
+   "dur": 3.69,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b70",
+   "kind": "raw",
+   "src": "broll/cc_arrozhuevo_3.mp4",
+   "start": 239.69,
+   "dur": 3.69,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b71",
+   "kind": "raw",
+   "src": "broll/cc_arrozhuevo_4.mp4",
+   "start": 243.37,
+   "dur": 4.81,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b72",
+   "kind": "raw",
+   "src": "broll/cs_spoon_taste.mp4",
+   "start": 248.18,
+   "dur": 5.98,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b73",
+   "kind": "raw",
+   "src": "broll/cc_arrozhuevo_5.mp4",
+   "start": 254.16,
+   "dur": 3.73,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b74",
+   "kind": "raw",
+   "src": "broll/cc_arrozhuevo_6.mp4",
+   "start": 257.89,
+   "dur": 3.73,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b75",
+   "kind": "raw",
+   "src": "broll/cc_arrozhuevo_7.mp4",
+   "start": 261.62,
+   "dur": 2.49,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b76",
+   "kind": "raw",
+   "src": "broll/cs_steam_pot.mp4",
+   "start": 264.11,
+   "dur": 4.62,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_6",
+   "kind": "topdulce",
+   "index": 6,
+   "total": 25,
+   "title": "Fideos con manteca",
+   "image": "real/d06_fideosmanteca_1_1.jpg",
+   "start": 267.83,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b77",
+   "kind": "raw",
+   "src": "broll/cc_fideosmanteca_3.mp4",
+   "start": 268.73,
+   "dur": 4.43,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b78",
+   "kind": "raw",
+   "src": "broll/cc_fideosmanteca_4.mp4",
+   "start": 273.16,
+   "dur": 5.82,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b79",
+   "kind": "raw",
+   "src": "broll/cc_fideosmanteca_5.mp4",
+   "start": 278.98,
+   "dur": 5.45,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b80",
+   "kind": "raw",
+   "src": "broll/cs_steam_soup.mp4",
+   "start": 284.43,
+   "dur": 3.85,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b81",
+   "kind": "raw",
+   "src": "broll/cc_fideosmanteca_6.mp4",
+   "start": 288.28,
+   "dur": 3.81,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b82",
+   "kind": "raw",
+   "src": "broll/cc_fideosmanteca_7.mp4",
+   "start": 292.08,
+   "dur": 3.81,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b83",
+   "kind": "raw",
+   "src": "broll/cc_fideosmanteca_2.mp4",
+   "start": 295.89,
+   "dur": 3.48,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b84",
+   "kind": "raw",
+   "src": "broll/cs_stir_pot.mp4",
+   "start": 299.37,
+   "dur": 3.48,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_7",
+   "kind": "topdulce",
+   "index": 7,
+   "total": 25,
+   "title": "Arroz guisado",
+   "image": "real/d07_arrozguisado_1_1.jpg",
+   "start": 302.04,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b85",
+   "kind": "raw",
+   "src": "broll/cc_arrozguisado_2.mp4",
+   "start": 302.85,
+   "dur": 4.95,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b86",
+   "kind": "raw",
+   "src": "broll/cc_arrozguisado_3.mp4",
+   "start": 307.8,
+   "dur": 3.34,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b87",
+   "kind": "raw",
+   "src": "broll/cc_arrozguisado_5.mp4",
+   "start": 311.14,
+   "dur": 3.34,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b88",
+   "kind": "raw",
+   "src": "broll/cs_veg_into_pot.mp4",
+   "start": 314.48,
+   "dur": 5.91,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b89",
+   "kind": "raw",
+   "src": "broll/cc_arrozguisado_6.mp4",
+   "start": 320.39,
+   "dur": 4.03,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b90",
+   "kind": "raw",
+   "src": "broll/cc_arrozguisado_7.mp4",
+   "start": 324.42,
+   "dur": 5.18,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b91",
+   "kind": "raw",
+   "src": "broll/cc_arrozguisado_1.mp4",
+   "start": 329.6,
+   "dur": 3.8,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b92",
+   "kind": "raw",
+   "src": "broll/cs_boiling.mp4",
+   "start": 333.4,
+   "dur": 5.59,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_8",
+   "kind": "topdulce",
+   "index": 8,
+   "total": 25,
+   "title": "Zapallo",
+   "image": "real/d08_zapallo_1_1.jpg",
+   "start": 337.99,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b93",
+   "kind": "raw",
+   "src": "broll/cc_zapallo_2.mp4",
+   "start": 338.99,
+   "dur": 5.45,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b94",
+   "kind": "raw",
+   "src": "broll/cc_zapallo_3.mp4",
+   "start": 344.44,
+   "dur": 5.36,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b95",
+   "kind": "raw",
+   "src": "broll/cc_zapallo_4.mp4",
+   "start": 349.8,
+   "dur": 3.17,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b96",
+   "kind": "raw",
+   "src": "broll/cs_bread_slice.mp4",
+   "start": 352.97,
+   "dur": 3.17,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b97",
+   "kind": "raw",
+   "src": "broll/cc_zapallo_5.mp4",
+   "start": 356.14,
+   "dur": 5.94,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b98",
+   "kind": "raw",
+   "src": "broll/cc_zapallo_1.mp4",
+   "start": 362.08,
+   "dur": 4,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b99",
+   "kind": "raw",
+   "src": "broll/cc_zapallo_2.mp4",
+   "start": 366.08,
+   "dur": 4,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b100",
+   "kind": "raw",
+   "src": "broll/cs_chopping_veg.mp4",
+   "start": 370.09,
+   "dur": 5.92,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_9",
+   "kind": "topdulce",
+   "index": 9,
+   "total": 25,
+   "title": "Puchero",
+   "image": "real/d09_puchero_1_1.jpg",
+   "start": 375.01,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b101",
+   "kind": "raw",
+   "src": "real/d09_puchero_1_1.jpg",
+   "start": 376.01,
+   "dur": 5.3,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b102",
+   "kind": "raw",
+   "src": "real/d09_puchero_1_2.jpg",
+   "start": 381.31,
+   "dur": 5.51,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b103",
+   "kind": "raw",
+   "src": "real/d09_puchero_1_4.jpg",
+   "start": 386.82,
+   "dur": 3.66,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b104",
+   "kind": "raw",
+   "src": "broll/cs_fire_cooking.mp4",
+   "start": 390.49,
+   "dur": 3.66,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b105",
+   "kind": "raw",
+   "src": "real/d09_puchero_1_5.jpg",
+   "start": 394.15,
+   "dur": 5.84,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b106",
+   "kind": "raw",
+   "src": "real/d09_puchero_1_6.jpg",
+   "start": 399.99,
+   "dur": 3,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b107",
+   "kind": "raw",
+   "src": "real/d09_puchero_1_7.jpg",
+   "start": 403,
+   "dur": 3,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b108",
+   "kind": "raw",
+   "src": "broll/cs_flame_stove.mp4",
+   "start": 406,
+   "dur": 3.34,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b109",
+   "kind": "raw",
+   "src": "real/d09_puchero_2_1.jpg",
+   "start": 409.34,
+   "dur": 3.34,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "top_10",
+   "kind": "topdulce",
+   "index": 10,
+   "total": 25,
+   "title": "Guiso de arroz",
+   "image": "real/d10_guisoarroz_1_1.jpg",
+   "start": 412.15,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b110",
+   "kind": "raw",
+   "src": "real/d09_puchero_2_2.jpg",
+   "start": 412.67,
+   "dur": 5.41,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b111",
+   "kind": "raw",
+   "src": "real/d10_guisoarroz_1_1.jpg",
+   "start": 418.08,
+   "dur": 4.5,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b112",
+   "kind": "raw",
+   "src": "real/d10_guisoarroz_1_2.jpg",
+   "start": 422.58,
+   "dur": 4.93,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b113",
+   "kind": "raw",
+   "src": "real/d10_guisoarroz_1_3.jpg",
+   "start": 427.51,
+   "dur": 5.59,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b114",
+   "kind": "raw",
+   "src": "broll/cs_frying_oil.mp4",
+   "start": 433.1,
+   "dur": 3.3,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b115",
+   "kind": "raw",
+   "src": "real/d10_guisoarroz_1_4.jpg",
+   "start": 436.4,
+   "dur": 5.04,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b116",
+   "kind": "raw",
+   "src": "real/d10_guisoarroz_1_6.jpg",
+   "start": 441.44,
+   "dur": 3.01,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b117",
+   "kind": "raw",
+   "src": "real/d10_guisoarroz_1_8.jpg",
+   "start": 444.45,
+   "dur": 3.01,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b118",
+   "kind": "raw",
+   "src": "broll/cs_grandma_cook.mp4",
+   "start": 447.46,
+   "dur": 5.63,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_11",
+   "kind": "topdulce",
+   "index": 11,
+   "total": 25,
+   "title": "Tortas fritas",
+   "image": "real/d11_tortasfritas_1_1.jpg",
+   "start": 452.44,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b119",
+   "kind": "raw",
+   "src": "real/d10_guisoarroz_2_2.jpg",
+   "start": 453.09,
+   "dur": 3.08,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b120",
+   "kind": "raw",
+   "src": "real/d10_guisoarroz_2_3.jpg",
+   "start": 456.17,
+   "dur": 3.08,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b121",
+   "kind": "raw",
+   "src": "real/d11_tortasfritas_1_1.jpg",
+   "start": 459.25,
+   "dur": 5.33,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b122",
+   "kind": "raw",
+   "src": "real/d11_tortasfritas_1_2.jpg",
+   "start": 464.58,
+   "dur": 5.46,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b123",
+   "kind": "raw",
+   "src": "real/d11_tortasfritas_1_3.jpg",
+   "start": 470.04,
+   "dur": 5.24,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b124",
+   "kind": "raw",
+   "src": "broll/cs_grating_cheese.mp4",
+   "start": 475.28,
+   "dur": 3.61,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b125",
+   "kind": "raw",
+   "src": "real/d11_tortasfritas_1_4.jpg",
+   "start": 478.89,
+   "dur": 3.61,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b126",
+   "kind": "raw",
+   "src": "real/d11_tortasfritas_1_5.jpg",
+   "start": 482.5,
+   "dur": 3.35,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b127",
+   "kind": "raw",
+   "src": "real/d11_tortasfritas_1_6.jpg",
+   "start": 485.86,
+   "dur": 3.35,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "top_12",
+   "kind": "topdulce",
+   "index": 12,
+   "total": 25,
+   "title": "Buñuelos de acelga",
+   "image": "real/d12_bunuelos_1_1.jpg",
+   "start": 488.4,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b128",
+   "kind": "raw",
+   "src": "real/d12_bunuelos_1_1.jpg",
+   "start": 489.21,
+   "dur": 3.38,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b129",
+   "kind": "raw",
+   "src": "real/d12_bunuelos_1_3.jpg",
+   "start": 492.58,
+   "dur": 3.38,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b130",
+   "kind": "raw",
+   "src": "real/d12_bunuelos_1_4.jpg",
+   "start": 495.96,
+   "dur": 3.65,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b131",
+   "kind": "raw",
+   "src": "broll/cs_kettle_steam.mp4",
+   "start": 499.61,
+   "dur": 3.65,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b132",
+   "kind": "raw",
+   "src": "real/d12_bunuelos_1_6.jpg",
+   "start": 503.26,
+   "dur": 4.93,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b133",
+   "kind": "raw",
+   "src": "real/d12_bunuelos_1_7.jpg",
+   "start": 508.19,
+   "dur": 3.71,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b134",
+   "kind": "raw",
+   "src": "real/d12_bunuelos_1_8.jpg",
+   "start": 511.89,
+   "dur": 3.71,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b135",
+   "kind": "raw",
+   "src": "broll/cs_knead_dough.mp4",
+   "start": 515.6,
+   "dur": 4.04,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b136",
+   "kind": "raw",
+   "src": "real/d12_bunuelos_2_1.jpg",
+   "start": 519.64,
+   "dur": 5.24,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "top_13",
+   "kind": "topdulce",
+   "index": 13,
+   "total": 25,
+   "title": "Pan con grasa",
+   "image": "real/d13_pangrasa_1_1.jpg",
+   "start": 522.87,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b137",
+   "kind": "raw",
+   "src": "real/d13_pangrasa_1_1.jpg",
+   "start": 524.88,
+   "dur": 3.73,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b138",
+   "kind": "raw",
+   "src": "real/d13_pangrasa_1_2.jpg",
+   "start": 528.61,
+   "dur": 3.73,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b139",
+   "kind": "raw",
+   "src": "real/d13_pangrasa_1_3.jpg",
+   "start": 532.33,
+   "dur": 3.81,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b140",
+   "kind": "raw",
+   "src": "broll/cs_ladle_soup.mp4",
+   "start": 536.14,
+   "dur": 3.81,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b141",
+   "kind": "raw",
+   "src": "real/d13_pangrasa_1_4.jpg",
+   "start": 539.96,
+   "dur": 5.53,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b142",
+   "kind": "raw",
+   "src": "real/d13_pangrasa_1_5.jpg",
+   "start": 545.49,
+   "dur": 3.18,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b143",
+   "kind": "raw",
+   "src": "real/d13_pangrasa_1_6.jpg",
+   "start": 548.66,
+   "dur": 3.18,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b144",
+   "kind": "raw",
+   "src": "broll/cs_melting_butter.mp4",
+   "start": 551.84,
+   "dur": 5.41,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_14",
+   "kind": "topdulce",
+   "index": 14,
+   "total": 25,
+   "title": "Sopa de verduras",
+   "image": "real/d14_sopaverdura_1_1.jpg",
+   "start": 556.39,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b145",
+   "kind": "raw",
+   "src": "real/d14_sopaverdura_1_1.jpg",
+   "start": 557.25,
+   "dur": 4.53,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b146",
+   "kind": "raw",
+   "src": "real/d14_sopaverdura_1_2.jpg",
+   "start": 561.78,
+   "dur": 5,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b147",
+   "kind": "raw",
+   "src": "real/d14_sopaverdura_1_3.jpg",
+   "start": 566.78,
+   "dur": 2.54,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b148",
+   "kind": "raw",
+   "src": "broll/cs_old_hands_food.mp4",
+   "start": 569.32,
+   "dur": 3.2,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b149",
+   "kind": "raw",
+   "src": "real/d14_sopaverdura_1_4.jpg",
+   "start": 572.52,
+   "dur": 3.2,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b150",
+   "kind": "raw",
+   "src": "real/d14_sopaverdura_1_5.jpg",
+   "start": 575.72,
+   "dur": 5.56,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b151",
+   "kind": "raw",
+   "src": "real/d14_sopaverdura_1_6.jpg",
+   "start": 581.28,
+   "dur": 3.34,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b152",
+   "kind": "raw",
+   "src": "broll/cs_old_man_eating.mp4",
+   "start": 584.62,
+   "dur": 3.34,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b153",
+   "kind": "raw",
+   "src": "real/d14_sopaverdura_1_7.jpg",
+   "start": 587.95,
+   "dur": 3.02,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b154",
+   "kind": "raw",
+   "src": "real/d14_sopaverdura_1_8.jpg",
+   "start": 590.98,
+   "dur": 3.02,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "top_15",
+   "kind": "topdulce",
+   "index": 15,
+   "total": 25,
+   "title": "Croquetas",
+   "image": "real/d15_croquetas_1_1.jpg",
+   "start": 591.25,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b155",
+   "kind": "raw",
+   "src": "real/d15_croquetas_1_1.jpg",
+   "start": 594,
+   "dur": 5.12,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b156",
+   "kind": "raw",
+   "src": "real/d15_croquetas_1_2.jpg",
+   "start": 599.12,
+   "dur": 3.02,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b157",
+   "kind": "raw",
+   "src": "real/d15_croquetas_1_3.jpg",
+   "start": 602.14,
+   "dur": 5.92,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b158",
+   "kind": "raw",
+   "src": "broll/cs_plate_serving.mp4",
+   "start": 608.06,
+   "dur": 3.49,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b159",
+   "kind": "raw",
+   "src": "real/d15_croquetas_1_4.jpg",
+   "start": 611.54,
+   "dur": 3.49,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b160",
+   "kind": "raw",
+   "src": "real/d15_croquetas_1_5.jpg",
+   "start": 615.03,
+   "dur": 3.49,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b161",
+   "kind": "raw",
+   "src": "real/d15_croquetas_1_6.jpg",
+   "start": 618.51,
+   "dur": 3.49,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b162",
+   "kind": "raw",
+   "src": "broll/cs_pot_lid_steam.mp4",
+   "start": 622,
+   "dur": 5.09,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_16",
+   "kind": "topdulce",
+   "index": 16,
+   "total": 25,
+   "title": "Pastel de papa",
+   "image": "real/d16_pastelpapa_1_2.jpg",
+   "start": 626.31,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b163",
+   "kind": "raw",
+   "src": "real/d16_pastelpapa_1_2.jpg",
+   "start": 627.09,
+   "dur": 4.88,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b164",
+   "kind": "raw",
+   "src": "real/d16_pastelpapa_1_3.jpg",
+   "start": 631.97,
+   "dur": 3.31,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b165",
+   "kind": "raw",
+   "src": "real/d16_pastelpapa_1_4.jpg",
+   "start": 635.28,
+   "dur": 3.31,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b166",
+   "kind": "raw",
+   "src": "broll/cs_pour_broth.mp4",
+   "start": 638.59,
+   "dur": 3.56,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b167",
+   "kind": "raw",
+   "src": "real/d16_pastelpapa_1_5.jpg",
+   "start": 642.15,
+   "dur": 3.56,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b168",
+   "kind": "raw",
+   "src": "real/d16_pastelpapa_1_6.jpg",
+   "start": 645.72,
+   "dur": 4.73,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b169",
+   "kind": "raw",
+   "src": "real/d16_pastelpapa_1_7.jpg",
+   "start": 650.45,
+   "dur": 3.83,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b170",
+   "kind": "raw",
+   "src": "broll/cs_rustic_kitchen.mp4",
+   "start": 654.29,
+   "dur": 3.83,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b171",
+   "kind": "raw",
+   "src": "real/d16_pastelpapa_2_2.jpg",
+   "start": 658.12,
+   "dur": 4.5,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "top_17",
+   "kind": "topdulce",
+   "index": 17,
+   "total": 25,
+   "title": "Locro",
+   "image": "real/d17_locro_1_1.jpg",
+   "start": 661.62,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b172",
+   "kind": "raw",
+   "src": "real/d17_locro_1_1.jpg",
+   "start": 662.62,
+   "dur": 3.99,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b173",
+   "kind": "raw",
+   "src": "real/d17_locro_1_2.jpg",
+   "start": 666.61,
+   "dur": 3.99,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b174",
+   "kind": "raw",
+   "src": "real/d17_locro_1_4.jpg",
+   "start": 670.59,
+   "dur": 3.39,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b175",
+   "kind": "raw",
+   "src": "broll/cs_simmer_stew.mp4",
+   "start": 673.99,
+   "dur": 3.39,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b176",
+   "kind": "raw",
+   "src": "real/d17_locro_1_5.jpg",
+   "start": 677.38,
+   "dur": 3.71,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b177",
+   "kind": "raw",
+   "src": "real/d17_locro_1_6.jpg",
+   "start": 681.09,
+   "dur": 3.71,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b178",
+   "kind": "raw",
+   "src": "real/d17_locro_1_7.jpg",
+   "start": 684.8,
+   "dur": 3.15,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b179",
+   "kind": "raw",
+   "src": "broll/cs_spoon_taste.mp4",
+   "start": 687.95,
+   "dur": 3.15,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b180",
+   "kind": "raw",
+   "src": "real/d17_locro_1_8.jpg",
+   "start": 691.1,
+   "dur": 4.93,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b181",
+   "kind": "raw",
+   "src": "real/d17_locro_2_2.jpg",
+   "start": 696.03,
+   "dur": 5.92,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "top_18",
+   "kind": "topdulce",
+   "index": 18,
+   "total": 25,
+   "title": "Revuelto de zapallitos",
+   "image": "real/d18_zapallitos_1_1.jpg",
+   "start": 698.94,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b182",
+   "kind": "raw",
+   "src": "real/d18_zapallitos_1_1.jpg",
+   "start": 701.95,
+   "dur": 3.44,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b183",
+   "kind": "raw",
+   "src": "real/d18_zapallitos_1_2.jpg",
+   "start": 705.39,
+   "dur": 3.44,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b184",
+   "kind": "raw",
+   "src": "real/d18_zapallitos_1_4.jpg",
+   "start": 708.84,
+   "dur": 3.69,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b185",
+   "kind": "raw",
+   "src": "broll/cs_steam_pot.mp4",
+   "start": 712.53,
+   "dur": 3.69,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b186",
+   "kind": "raw",
+   "src": "real/d18_zapallitos_1_5.jpg",
+   "start": 716.21,
+   "dur": 4.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b187",
+   "kind": "raw",
+   "src": "real/d18_zapallitos_1_7.jpg",
+   "start": 720.81,
+   "dur": 4.33,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b188",
+   "kind": "raw",
+   "src": "real/d18_zapallitos_1_8.jpg",
+   "start": 725.13,
+   "dur": 4.33,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b189",
+   "kind": "raw",
+   "src": "broll/cs_steam_soup.mp4",
+   "start": 729.46,
+   "dur": 5.61,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_19",
+   "kind": "topdulce",
+   "index": 19,
+   "total": 25,
+   "title": "Albóndigas",
+   "image": "real/d19_albondigas_1_1.jpg",
+   "start": 734.39,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b190",
+   "kind": "raw",
+   "src": "real/d18_zapallitos_2_3.jpg",
+   "start": 735.07,
+   "dur": 5.95,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b191",
+   "kind": "raw",
+   "src": "real/d19_albondigas_1_1.jpg",
+   "start": 741.02,
+   "dur": 5.15,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b192",
+   "kind": "raw",
+   "src": "real/d19_albondigas_1_2.jpg",
+   "start": 746.17,
+   "dur": 3.35,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b193",
+   "kind": "raw",
+   "src": "real/d19_albondigas_1_3.jpg",
+   "start": 749.52,
+   "dur": 3.35,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b194",
+   "kind": "raw",
+   "src": "broll/cs_stir_pot.mp4",
+   "start": 752.87,
+   "dur": 3.8,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b195",
+   "kind": "raw",
+   "src": "real/d19_albondigas_1_4.jpg",
+   "start": 756.66,
+   "dur": 3.8,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b196",
+   "kind": "raw",
+   "src": "real/d19_albondigas_1_5.jpg",
+   "start": 760.46,
+   "dur": 3.74,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b197",
+   "kind": "raw",
+   "src": "real/d19_albondigas_1_7.jpg",
+   "start": 764.2,
+   "dur": 4.51,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "top_20",
+   "kind": "topdulce",
+   "index": 20,
+   "total": 25,
+   "title": "Ensalada de lentejas",
+   "image": "real/d20_ensladalentejas_1_1.jpg",
+   "start": 767.94,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b198",
+   "kind": "raw",
+   "src": "real/d20_ensladalentejas_1_1.jpg",
+   "start": 768.71,
+   "dur": 3.88,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b199",
+   "kind": "raw",
+   "src": "real/d20_ensladalentejas_1_2.jpg",
+   "start": 772.59,
+   "dur": 3.88,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b200",
+   "kind": "raw",
+   "src": "real/d20_ensladalentejas_1_3.jpg",
+   "start": 776.46,
+   "dur": 5.56,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b201",
+   "kind": "raw",
+   "src": "broll/cs_veg_into_pot.mp4",
+   "start": 782.02,
+   "dur": 5.16,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b202",
+   "kind": "raw",
+   "src": "real/d20_ensladalentejas_1_4.jpg",
+   "start": 787.18,
+   "dur": 3.62,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b203",
+   "kind": "raw",
+   "src": "real/d20_ensladalentejas_1_5.jpg",
+   "start": 790.79,
+   "dur": 3.62,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b204",
+   "kind": "raw",
+   "src": "real/d20_ensladalentejas_1_6.jpg",
+   "start": 794.41,
+   "dur": 4.81,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b205",
+   "kind": "raw",
+   "src": "broll/cs_boiling.mp4",
+   "start": 799.22,
+   "dur": 4.74,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_21",
+   "kind": "topdulce",
+   "index": 21,
+   "total": 25,
+   "title": "Budín de pan",
+   "image": "real/d21_budinpan_1_1.jpg",
+   "start": 803.12,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b206",
+   "kind": "raw",
+   "src": "real/d21_budinpan_1_1.jpg",
+   "start": 803.96,
+   "dur": 4.51,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b207",
+   "kind": "raw",
+   "src": "real/d21_budinpan_1_2.jpg",
+   "start": 808.47,
+   "dur": 3.4,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b208",
+   "kind": "raw",
+   "src": "real/d21_budinpan_1_4.jpg",
+   "start": 811.88,
+   "dur": 3.4,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b209",
+   "kind": "raw",
+   "src": "broll/cs_bread_slice.mp4",
+   "start": 815.28,
+   "dur": 3.43,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b210",
+   "kind": "raw",
+   "src": "real/d21_budinpan_1_5.jpg",
+   "start": 818.71,
+   "dur": 3.43,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b211",
+   "kind": "raw",
+   "src": "real/d21_budinpan_1_6.jpg",
+   "start": 822.14,
+   "dur": 4.2,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b212",
+   "kind": "raw",
+   "src": "real/d21_budinpan_1_7.jpg",
+   "start": 826.34,
+   "dur": 4.2,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b213",
+   "kind": "raw",
+   "src": "broll/cs_chopping_veg.mp4",
+   "start": 830.54,
+   "dur": 5.75,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_22",
+   "kind": "topdulce",
+   "index": 22,
+   "total": 25,
+   "title": "Leche cocida con maicena",
+   "image": "real/d22_maicena_1_2.jpg",
+   "start": 835.35,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b214",
+   "kind": "raw",
+   "src": "real/d22_maicena_1_2.jpg",
+   "start": 836.29,
+   "dur": 4.52,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b215",
+   "kind": "raw",
+   "src": "real/d22_maicena_1_5.jpg",
+   "start": 840.81,
+   "dur": 3.67,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b216",
+   "kind": "raw",
+   "src": "real/d22_maicena_1_6.jpg",
+   "start": 844.48,
+   "dur": 3.67,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b217",
+   "kind": "raw",
+   "src": "broll/cs_fire_cooking.mp4",
+   "start": 848.15,
+   "dur": 5.96,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b218",
+   "kind": "raw",
+   "src": "real/d22_maicena_1_7.jpg",
+   "start": 854.11,
+   "dur": 3.26,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b219",
+   "kind": "raw",
+   "src": "real/d22_maicena_2_1.jpg",
+   "start": 857.37,
+   "dur": 3.63,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b220",
+   "kind": "raw",
+   "src": "real/d22_maicena_2_2.jpg",
+   "start": 861,
+   "dur": 3.63,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b221",
+   "kind": "raw",
+   "src": "broll/cs_flame_stove.mp4",
+   "start": 864.63,
+   "dur": 3.51,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b222",
+   "kind": "raw",
+   "src": "real/d22_maicena_2_3.jpg",
+   "start": 868.14,
+   "dur": 3.51,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "top_23",
+   "kind": "topdulce",
+   "index": 23,
+   "total": 25,
+   "title": "Fideos guisados",
+   "image": "real/d23_fideosguisados_1_1.jpg",
+   "start": 870.96,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b223",
+   "kind": "raw",
+   "src": "real/d22_maicena_2_4.jpg",
+   "start": 871.65,
+   "dur": 5.7,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3
+  },
+  {
+   "id": "b224",
+   "kind": "raw",
+   "src": "real/d23_fideosguisados_1_1.jpg",
+   "start": 877.35,
+   "dur": 3.74,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b225",
+   "kind": "raw",
+   "src": "real/d23_fideosguisados_1_2.jpg",
+   "start": 881.09,
+   "dur": 3.74,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b226",
+   "kind": "raw",
+   "src": "real/d23_fideosguisados_1_3.jpg",
+   "start": 884.83,
+   "dur": 3.83,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b227",
+   "kind": "raw",
+   "src": "broll/cs_frying_oil.mp4",
+   "start": 888.66,
+   "dur": 3.83,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b228",
+   "kind": "raw",
+   "src": "real/d23_fideosguisados_1_4.jpg",
+   "start": 892.5,
+   "dur": 3.97,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b229",
+   "kind": "raw",
+   "src": "real/d23_fideosguisados_1_5.jpg",
+   "start": 896.47,
+   "dur": 3.97,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b230",
+   "kind": "raw",
+   "src": "real/d23_fideosguisados_1_6.jpg",
+   "start": 900.44,
+   "dur": 4.63,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b231",
+   "kind": "raw",
+   "src": "broll/cs_grandma_cook.mp4",
+   "start": 905.07,
+   "dur": 5.63,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_24",
+   "kind": "topdulce",
+   "index": 24,
+   "total": 25,
+   "title": "Mate cocido",
+   "image": "real/d24_matecocido_1_1.jpg",
+   "start": 906.84,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b232",
+   "kind": "raw",
+   "src": "real/d24_matecocido_1_1.jpg",
+   "start": 910.7,
+   "dur": 3.84,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b233",
+   "kind": "raw",
+   "src": "real/d24_matecocido_1_2.jpg",
+   "start": 914.55,
+   "dur": 3.84,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b234",
+   "kind": "raw",
+   "src": "real/d24_matecocido_1_4.jpg",
+   "start": 918.39,
+   "dur": 4.67,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b235",
+   "kind": "raw",
+   "src": "broll/cs_grating_cheese.mp4",
+   "start": 923.06,
+   "dur": 5.36,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b236",
+   "kind": "raw",
+   "src": "real/d24_matecocido_1_5.jpg",
+   "start": 928.42,
+   "dur": 3.58,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b237",
+   "kind": "raw",
+   "src": "real/d24_matecocido_1_6.jpg",
+   "start": 932,
+   "dur": 5.25,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b238",
+   "kind": "raw",
+   "src": "real/d24_matecocido_1_7.jpg",
+   "start": 937.25,
+   "dur": 4.81,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b239",
+   "kind": "raw",
+   "src": "broll/cs_kettle_steam.mp4",
+   "start": 942.06,
+   "dur": 5.85,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "top_25",
+   "kind": "topdulce",
+   "index": 25,
+   "total": 25,
+   "title": "Papa con manteca",
+   "image": "real/d25_papamanteca_1_1.jpg",
+   "start": 947.15,
+   "dur": 4,
+   "overlay": true
+  },
+  {
+   "id": "b240",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_1_1.jpg",
+   "start": 947.91,
+   "dur": 4.15,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b241",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_1_2.jpg",
+   "start": 952.06,
+   "dur": 3.7,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b242",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_1_3.jpg",
+   "start": 955.75,
+   "dur": 3.7,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b243",
+   "kind": "raw",
+   "src": "broll/cs_knead_dough.mp4",
+   "start": 959.45,
+   "dur": 4.52,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b244",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_1_4.jpg",
+   "start": 963.97,
+   "dur": 5.35,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b245",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_1_5.jpg",
+   "start": 969.32,
+   "dur": 3.11,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b246",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_1_6.jpg",
+   "start": 972.43,
+   "dur": 3.11,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b247",
+   "kind": "raw",
+   "src": "broll/cs_ladle_soup.mp4",
+   "start": 975.55,
+   "dur": 2.63,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b248",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_1_7.jpg",
+   "start": 978.18,
+   "dur": 3.31,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b249",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_1_8.jpg",
+   "start": 981.48,
+   "dur": 3.31,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b250",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_2_1.jpg",
+   "start": 984.79,
+   "dur": 3.36,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b251",
+   "kind": "raw",
+   "src": "broll/cs_melting_butter.mp4",
+   "start": 988.15,
+   "dur": 3.36,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b252",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_2_2.jpg",
+   "start": 991.51,
+   "dur": 3.91,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b253",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_2_3.jpg",
+   "start": 995.41,
+   "dur": 3.91,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b254",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_2_4.jpg",
+   "start": 999.32,
+   "dur": 5.7,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  },
+  {
+   "id": "b255",
+   "kind": "raw",
+   "src": "broll/cs_old_hands_food.mp4",
+   "start": 1005.02,
+   "dur": 3.86,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ]
+  },
+  {
+   "id": "b256",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_2_5.jpg",
+   "start": 1008.88,
+   "dur": 3.86,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0
+  },
+  {
+   "id": "b257",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_2_6.jpg",
+   "start": 1012.74,
+   "dur": 3.13,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1
+  },
+  {
+   "id": "b258",
+   "kind": "raw",
+   "src": "real/d25_papamanteca_2_7.jpg",
+   "start": 1015.87,
+   "dur": 3.13,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2
+  }
+ ]
+}

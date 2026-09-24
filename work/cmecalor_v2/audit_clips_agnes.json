@@ -1,0 +1,663 @@
+{
+  "policy": "Identidad relajada; literalidad, manos, objetos, mecánica y seguridad obligatorios.",
+  "items": [
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_0_002.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 9,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_0_003.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 8,
+        "hands": 9,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_0_005.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 8,
+        "hands": 6,
+        "anatomy": 8,
+        "objects": 6,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_0_006.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 10,
+        "anatomy": 10,
+        "objects": 10,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_0_007.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 5,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_0_010.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 7,
+        "anatomy": 9,
+        "objects": 8,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_0_012.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_10_001.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 7,
+        "anatomy": 10,
+        "objects": 10,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_10_002.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 9,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "rejected",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_10_003.mp4",
+      "reason": "movimiento imposible (9)",
+      "source_verdict": "redo",
+      "structural_reasons": [
+        "movimiento imposible (9)"
+      ],
+      "worst": {
+        "identity": 5,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": true,
+        "motion_severity": 9,
+        "motion_what": "The open window with a city view is instantly replaced by closed curtains while the man stands with his arms at his sides, which is physically impossible in 1.5 seconds."
+      },
+      "motion_what": "The open window with a city view is instantly replaced by closed curtains while the man stands with his arms at his sides, which is physically impossible in 1.5 seconds."
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_10_004.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 8,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "rejected",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_10_005.mp4",
+      "reason": "manos 0; anatomía 0",
+      "source_verdict": "redo",
+      "structural_reasons": [
+        "manos 0",
+        "anatomía 0"
+      ],
+      "worst": {
+        "identity": 9,
+        "hands": 0,
+        "anatomy": 0,
+        "objects": 9,
+        "skin_texture": 0,
+        "broken": false,
+        "impossible_change": true,
+        "motion_severity": 7,
+        "motion_what": "New objects (pots) appear on the patio between frames — a brown pot on the left near the fence and a grey pot on the right were not present in the first frame"
+      },
+      "motion_what": "New objects (pots) appear on the patio between frames — a brown pot on the left near the fence and a grey pot on the right were not present in the first frame"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_10_006.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 8,
+        "hands": 8,
+        "anatomy": 10,
+        "objects": 9,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": true,
+        "motion_severity": 7,
+        "motion_what": "The candle on the table changes from a tall white lit pillar to a small grey unlit object (like a tea light or cup)."
+      },
+      "motion_what": "The candle on the table changes from a tall white lit pillar to a small grey unlit object (like a tea light or cup)."
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_10_007.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 10,
+        "hands": 9,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_5_002.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 8,
+        "hands": 6,
+        "anatomy": 9,
+        "objects": 8,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_5_004.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 6,
+        "anatomy": 9,
+        "objects": 6,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_5_005.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_5_006.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "redo",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 1,
+        "hands": 9,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_5_008.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 8,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_5_009.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 9,
+        "anatomy": 10,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_auto_002.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 8,
+        "hands": 7,
+        "anatomy": 8,
+        "objects": 8,
+        "skin_texture": 6,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_auto_003.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 8,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 8,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "rejected",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_auto_006.mp4",
+      "reason": "manos 4",
+      "source_verdict": "redo",
+      "structural_reasons": [
+        "manos 4"
+      ],
+      "worst": {
+        "identity": 7,
+        "hands": 4,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_fuel_001.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "redo",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 4,
+        "hands": 9,
+        "anatomy": 10,
+        "objects": 10,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_fuel_005.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_fuel_006.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 6,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_heat_002.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 8,
+        "hands": 6,
+        "anatomy": 9,
+        "objects": 10,
+        "skin_texture": 9,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_heat_004.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 7,
+        "anatomy": 9,
+        "objects": 8,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "rejected",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_heat_005.mp4",
+      "reason": "manos 3; movimiento imposible (9)",
+      "source_verdict": "redo",
+      "structural_reasons": [
+        "manos 3",
+        "movimiento imposible (9)"
+      ],
+      "worst": {
+        "identity": 7,
+        "hands": 3,
+        "anatomy": 8,
+        "objects": 6,
+        "skin_texture": 5,
+        "broken": false,
+        "impossible_change": true,
+        "motion_severity": 9,
+        "motion_what": "The notebook changes from closed to open, and a pencil appears in the man's hand as he begins writing."
+      },
+      "motion_what": "The notebook changes from closed to open, and a pencil appears in the man's hand as he begins writing."
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_heat_006.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 10,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "rejected",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_root_001.mp4",
+      "reason": "movimiento imposible (8)",
+      "source_verdict": "redo",
+      "structural_reasons": [
+        "movimiento imposible (8)"
+      ],
+      "worst": {
+        "identity": 9,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": true,
+        "motion_severity": 8,
+        "motion_what": "Image 1 and Image 2 appear identical - no movement detected in 1.5 seconds, which is physically impossible for a living person in a continuous shot"
+      },
+      "motion_what": "Image 1 and Image 2 appear identical - no movement detected in 1.5 seconds, which is physically impossible for a living person in a continuous shot"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_root_006.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "redo",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 3,
+        "hands": 9,
+        "anatomy": 9,
+        "objects": 10,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_root_007.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 8,
+        "anatomy": 9,
+        "objects": 9,
+        "skin_texture": 8,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    },
+    {
+      "status": "approved",
+      "file": "public/broll/cmecalor_v2_agnes/cmec_v2_root_008.mp4",
+      "reason": "Pasa manos, anatomía, objetos y continuidad física; la identidad facial no es gate por pedido explícito del usuario.",
+      "source_verdict": "ok",
+      "structural_reasons": [],
+      "worst": {
+        "identity": 9,
+        "hands": 6,
+        "anatomy": 8,
+        "objects": 9,
+        "skin_texture": 7,
+        "broken": false,
+        "impossible_change": false,
+        "motion_severity": 0,
+        "motion_what": "nothing"
+      },
+      "motion_what": "nothing"
+    }
+  ]
+}

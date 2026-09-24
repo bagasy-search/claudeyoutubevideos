@@ -1,0 +1,1919 @@
+{
+ "video": "fcscoagulos",
+ "avatar": "fcscoagulos_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "s_01",
+   "start": 3.69,
+   "dur": 3.69,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_01.png"
+  },
+  {
+   "id": "s_02",
+   "start": 7.37,
+   "dur": 7.43,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_02.png"
+  },
+  {
+   "id": "s_03",
+   "start": 14.8,
+   "dur": 2.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_03.png"
+  },
+  {
+   "id": "s_04",
+   "start": 17.18,
+   "dur": 7.27,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_04.mp4"
+  },
+  {
+   "id": "s_05",
+   "start": 24.45,
+   "dur": 7.41,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_05.png"
+  },
+  {
+   "id": "s_06",
+   "start": 31.86,
+   "dur": 7.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_06.png"
+  },
+  {
+   "id": "s_07",
+   "start": 38.96,
+   "dur": 7.35,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_07.png"
+  },
+  {
+   "id": "s_08",
+   "start": 46.31,
+   "dur": 2.93,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_08.png"
+  },
+  {
+   "id": "s_09",
+   "start": 49.24,
+   "dur": 5.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_09.png"
+  },
+  {
+   "id": "s_10",
+   "start": 54.6,
+   "dur": 4.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_10.mp4"
+  },
+  {
+   "id": "s_11",
+   "start": 59.16,
+   "dur": 2.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_11.png"
+  },
+  {
+   "id": "s_12",
+   "start": 62.12,
+   "dur": 7.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_12.png"
+  },
+  {
+   "id": "s_13",
+   "start": 69.74,
+   "dur": 7.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_13.mp4"
+  },
+  {
+   "id": "s_14",
+   "start": 76.96,
+   "dur": 6.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_14.mp4"
+  },
+  {
+   "id": "s_15",
+   "start": 83.34,
+   "dur": 7.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_15.png"
+  },
+  {
+   "id": "s_16",
+   "start": 90.84,
+   "dur": 5.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_16.mp4"
+  },
+  {
+   "id": "s_17",
+   "start": 96.04,
+   "dur": 7.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_17.mp4"
+  },
+  {
+   "id": "s_18",
+   "start": 103.16,
+   "dur": 6.25,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_18.mp4"
+  },
+  {
+   "id": "s_19",
+   "start": 109.41,
+   "dur": 6.15,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_19.mp4"
+  },
+  {
+   "id": "s_20",
+   "start": 115.56,
+   "dur": 7.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_20.mp4"
+  },
+  {
+   "id": "s_21",
+   "start": 123.08,
+   "dur": 7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_21.mp4"
+  },
+  {
+   "id": "s_22",
+   "start": 130.08,
+   "dur": 7.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_22.mp4"
+  },
+  {
+   "id": "s_23",
+   "start": 137.4,
+   "dur": 4.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_23.mp4"
+  },
+  {
+   "id": "s_24",
+   "start": 142.16,
+   "dur": 7.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_24.mp4"
+  },
+  {
+   "id": "s_25",
+   "start": 149.24,
+   "dur": 7.69,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_25.mp4"
+  },
+  {
+   "id": "s_26",
+   "start": 156.93,
+   "dur": 4.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_26.mp4"
+  },
+  {
+   "id": "s_27",
+   "start": 161.51,
+   "dur": 7.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_27.mp4"
+  },
+  {
+   "id": "s_28",
+   "start": 169.09,
+   "dur": 3.03,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_28.mp4"
+  },
+  {
+   "id": "s_29",
+   "start": 172.12,
+   "dur": 6.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_29.png"
+  },
+  {
+   "id": "s_30",
+   "start": 178.16,
+   "dur": 5.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_30.mp4"
+  },
+  {
+   "id": "s_31",
+   "start": 184.04,
+   "dur": 6.89,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_31.mp4"
+  },
+  {
+   "id": "s_32",
+   "start": 190.93,
+   "dur": 5.85,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_32.mp4"
+  },
+  {
+   "id": "s_33",
+   "start": 196.78,
+   "dur": 5.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_33.mp4"
+  },
+  {
+   "id": "s_34",
+   "start": 201.94,
+   "dur": 6.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_34.mp4"
+  },
+  {
+   "id": "s_35",
+   "start": 208,
+   "dur": 7.63,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_35.mp4"
+  },
+  {
+   "id": "cmp_s_35_avatarpizarra",
+   "start": 208,
+   "dur": 10.2,
+   "key": "s",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "1 · La vena = cañería",
+     "sub": "el sarro pegajoso es FIBRINA, una malla que tapona la sangre",
+     "at": 0
+    },
+    {
+     "card": "2 · Plaquetas apelmazadas",
+     "sub": "se apelmazan como grasa en el caño y la sangre pasa apretada",
+     "at": 90
+    },
+    {
+     "card": "3 · Bromelina = destapacaños",
+     "sub": "afloja y deshace ese sarro para que la sangre vuelva a fluir",
+     "at": 180
+    }
+   ]
+  },
+  {
+   "id": "s_36",
+   "start": 215.63,
+   "dur": 6.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_36.mp4"
+  },
+  {
+   "id": "s_37",
+   "start": 221.85,
+   "dur": 4.63,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_37.mp4"
+  },
+  {
+   "id": "s_38",
+   "start": 226.48,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_38.mp4"
+  },
+  {
+   "id": "s_39",
+   "start": 232.19,
+   "dur": 4.73,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_39.mp4"
+  },
+  {
+   "id": "s_40",
+   "start": 236.92,
+   "dur": 7.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_40.mp4"
+  },
+  {
+   "id": "s_41",
+   "start": 244.34,
+   "dur": 5.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_41.mp4"
+  },
+  {
+   "id": "cmp_s_41_mitoverdad",
+   "start": 244.34,
+   "dur": 6,
+   "key": "s",
+   "kind": "mitoverdad",
+   "myth": "Las várices y las piernas hinchadas son la edad, aguántate",
+   "truth": "Mucho se puede mejorar con movimiento, agua y alimentación",
+   "flipAt": 76
+  },
+  {
+   "id": "s_42",
+   "start": 249.36,
+   "dur": 2.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_42.mp4"
+  },
+  {
+   "id": "s_43",
+   "start": 251.64,
+   "dur": 5.59,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_43.mp4"
+  },
+  {
+   "id": "s_44",
+   "start": 257.23,
+   "dur": 7.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_44.mp4"
+  },
+  {
+   "id": "s_45",
+   "start": 264.79,
+   "dur": 6.01,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_45.mp4"
+  },
+  {
+   "id": "s_46",
+   "start": 270.8,
+   "dur": 6.89,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_46.mp4"
+  },
+  {
+   "id": "s_47",
+   "start": 277.69,
+   "dur": 7.29,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_47.mp4"
+  },
+  {
+   "id": "cmp_s_47_bars",
+   "start": 277.69,
+   "dur": 6,
+   "key": "s",
+   "kind": "bars",
+   "title": "Lo mismo, dos precios",
+   "unit": "USD",
+   "bars": [
+    {
+     "label": "Pastilla de circulación (trae bromelina)",
+     "value": 40,
+     "tone": "danger",
+     "note": "y pagás cada mes"
+    },
+    {
+     "label": "Piña de la esquina",
+     "value": 1,
+     "winner": true,
+     "note": "centavos"
+    }
+   ]
+  },
+  {
+   "id": "s_48",
+   "start": 284.98,
+   "dur": 7.43,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_48.png"
+  },
+  {
+   "id": "s_49",
+   "start": 292.41,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_49.mp4"
+  },
+  {
+   "id": "s_50",
+   "start": 298.12,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_50.png"
+  },
+  {
+   "id": "s_51",
+   "start": 300.52,
+   "dur": 7.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_51.mp4"
+  },
+  {
+   "id": "s_52",
+   "start": 307.6,
+   "dur": 7.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_52.png"
+  },
+  {
+   "id": "s_53",
+   "start": 314.98,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_53.mp4"
+  },
+  {
+   "id": "s_54",
+   "start": 320.69,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_54.png"
+  },
+  {
+   "id": "s_55",
+   "start": 326.4,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_55.png"
+  },
+  {
+   "id": "s_56",
+   "start": 332.11,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_56.png"
+  },
+  {
+   "id": "s_57",
+   "start": 337.81,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_57.png"
+  },
+  {
+   "id": "s_58",
+   "start": 343.52,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_58.png"
+  },
+  {
+   "id": "s_59",
+   "start": 349.23,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_59.png"
+  },
+  {
+   "id": "s_60",
+   "start": 354.94,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_60.png"
+  },
+  {
+   "id": "s_61",
+   "start": 360.65,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_61.png"
+  },
+  {
+   "id": "s_62",
+   "start": 366.35,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_62.png"
+  },
+  {
+   "id": "s_63",
+   "start": 372.06,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_63.png"
+  },
+  {
+   "id": "s_64",
+   "start": 377.77,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_64.png"
+  },
+  {
+   "id": "s_65",
+   "start": 383.48,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_65.png"
+  },
+  {
+   "id": "s_66",
+   "start": 389.19,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_66.png"
+  },
+  {
+   "id": "s_67",
+   "start": 394.89,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_67.png"
+  },
+  {
+   "id": "s_68",
+   "start": 400.6,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_68.png"
+  },
+  {
+   "id": "s_69",
+   "start": 406.31,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_69.mp4"
+  },
+  {
+   "id": "cmp_s_69_splitlist",
+   "start": 406.31,
+   "dur": 7,
+   "key": "s",
+   "kind": "splitlist",
+   "title": "Lo que le devuelve a tus piernas",
+   "items": [
+    "1 · La sangre fluye — piernas más ligeras, menos pesadas",
+    "2 · Desinflama — baja el pie y el tobillo hinchados",
+    "3 · Digestión ↔ menos inflamación — desde la panza calma todo el cuerpo"
+   ]
+  },
+  {
+   "id": "s_70",
+   "start": 412.02,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_70.mp4"
+  },
+  {
+   "id": "s_71",
+   "start": 417.73,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_71.mp4"
+  },
+  {
+   "id": "s_72",
+   "start": 423.44,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_72.mp4"
+  },
+  {
+   "id": "s_73",
+   "start": 429.14,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_73.mp4"
+  },
+  {
+   "id": "s_74",
+   "start": 434.85,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_74.mp4"
+  },
+  {
+   "id": "s_75",
+   "start": 440.56,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_75.mp4"
+  },
+  {
+   "id": "s_76",
+   "start": 446.27,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_76.mp4"
+  },
+  {
+   "id": "s_77",
+   "start": 451.98,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_77.mp4"
+  },
+  {
+   "id": "s_78",
+   "start": 457.69,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_78.mp4"
+  },
+  {
+   "id": "s_79",
+   "start": 463.39,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_79.mp4"
+  },
+  {
+   "id": "s_80",
+   "start": 469.1,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_80.mp4"
+  },
+  {
+   "id": "s_81",
+   "start": 474.81,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_81.mp4"
+  },
+  {
+   "id": "s_82",
+   "start": 480.52,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_82.mp4"
+  },
+  {
+   "id": "s_83",
+   "start": 486.23,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_83.mp4"
+  },
+  {
+   "id": "s_84",
+   "start": 491.93,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_84.mp4"
+  },
+  {
+   "id": "s_85",
+   "start": 497.64,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_85.mp4"
+  },
+  {
+   "id": "s_86",
+   "start": 503.35,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_86.mp4"
+  },
+  {
+   "id": "s_87",
+   "start": 509.06,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_87.mp4"
+  },
+  {
+   "id": "s_88",
+   "start": 514.77,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_88.mp4"
+  },
+  {
+   "id": "s_89",
+   "start": 520.48,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_89.mp4"
+  },
+  {
+   "id": "s_90",
+   "start": 526.18,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_90.mp4"
+  },
+  {
+   "id": "s_91",
+   "start": 531.89,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_91.mp4"
+  },
+  {
+   "id": "s_92",
+   "start": 537.6,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_92.mp4"
+  },
+  {
+   "id": "s_93",
+   "start": 543.31,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_93.mp4"
+  },
+  {
+   "id": "s_94",
+   "start": 549.02,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_94.mp4"
+  },
+  {
+   "id": "cmp_s_87_avatarpizarra",
+   "start": 549.35,
+   "dur": 12.23,
+   "key": "s",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Cada paso la exprime",
+     "sub": "el músculo se aprieta y exprime las venas de la pierna",
+     "at": 0
+    },
+    {
+     "card": "Contra la gravedad, hacia arriba",
+     "sub": "empuja la sangre de regreso arriba; por eso caminar la destapa",
+     "at": 63
+    },
+    {
+     "card": "La pantorrilla = 2º corazón",
+     "sub": "el músculo de abajo que impulsa la sangre de vuelta al corazón",
+     "at": 241
+    }
+   ]
+  },
+  {
+   "id": "s_95",
+   "start": 554.72,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_95.mp4"
+  },
+  {
+   "id": "s_96",
+   "start": 560.43,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_96.mp4"
+  },
+  {
+   "id": "s_97",
+   "start": 566.14,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_97.mp4"
+  },
+  {
+   "id": "s_98",
+   "start": 571.85,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_98.mp4"
+  },
+  {
+   "id": "s_99",
+   "start": 577.56,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_99.mp4"
+  },
+  {
+   "id": "s_100",
+   "start": 583.26,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_100.png"
+  },
+  {
+   "id": "s_101",
+   "start": 588.97,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_101.png"
+  },
+  {
+   "id": "s_102",
+   "start": 594.68,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_102.png"
+  },
+  {
+   "id": "s_103",
+   "start": 600.39,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_103.png"
+  },
+  {
+   "id": "s_104",
+   "start": 606.1,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_104.png"
+  },
+  {
+   "id": "s_105",
+   "start": 611.81,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_105.png"
+  },
+  {
+   "id": "s_106",
+   "start": 617.51,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_106.png"
+  },
+  {
+   "id": "s_107",
+   "start": 623.22,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_107.png"
+  },
+  {
+   "id": "s_108",
+   "start": 628.93,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_108.png"
+  },
+  {
+   "id": "s_109",
+   "start": 634.64,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_109.png"
+  },
+  {
+   "id": "s_110",
+   "start": 640.35,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_110.png"
+  },
+  {
+   "id": "s_111",
+   "start": 646.06,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_111.png"
+  },
+  {
+   "id": "s_112",
+   "start": 651.76,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_112.png"
+  },
+  {
+   "id": "s_113",
+   "start": 657.47,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_113.png"
+  },
+  {
+   "id": "s_114",
+   "start": 663.18,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_114.png"
+  },
+  {
+   "id": "s_115",
+   "start": 668.89,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_115.png"
+  },
+  {
+   "id": "s_116",
+   "start": 674.6,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_116.png"
+  },
+  {
+   "id": "s_117",
+   "start": 680.3,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_117.png"
+  },
+  {
+   "id": "s_118",
+   "start": 686.01,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_118.png"
+  },
+  {
+   "id": "s_119",
+   "start": 691.72,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_119.png"
+  },
+  {
+   "id": "s_120",
+   "start": 697.43,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_120.png"
+  },
+  {
+   "id": "s_121",
+   "start": 703.14,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_121.png"
+  },
+  {
+   "id": "s_122",
+   "start": 708.85,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_122.png"
+  },
+  {
+   "id": "s_123",
+   "start": 714.55,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_123.png"
+  },
+  {
+   "id": "s_124",
+   "start": 720.26,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_124.png"
+  },
+  {
+   "id": "s_125",
+   "start": 725.97,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_125.png"
+  },
+  {
+   "id": "s_126",
+   "start": 731.68,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_126.png"
+  },
+  {
+   "id": "s_127",
+   "start": 737.39,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_127.png"
+  },
+  {
+   "id": "s_128",
+   "start": 743.1,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_128.png"
+  },
+  {
+   "id": "cmp_s_129_chips",
+   "start": 744.28,
+   "dur": 6,
+   "key": "s",
+   "kind": "chips",
+   "title": "Los aliados de la piña",
+   "items": [
+    "Jengibre",
+    "Ajo",
+    "Cítricos con su telita",
+    "Agua + caminar"
+   ]
+  },
+  {
+   "id": "s_129",
+   "start": 748.8,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_129.png"
+  },
+  {
+   "id": "s_130",
+   "start": 754.51,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_130.png"
+  },
+  {
+   "id": "s_131",
+   "start": 760.22,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_131.png"
+  },
+  {
+   "id": "s_132",
+   "start": 765.93,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_132.png"
+  },
+  {
+   "id": "s_133",
+   "start": 771.64,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_133.png"
+  },
+  {
+   "id": "s_134",
+   "start": 777.34,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_134.png"
+  },
+  {
+   "id": "s_135",
+   "start": 783.05,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_135.png"
+  },
+  {
+   "id": "s_136",
+   "start": 788.76,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_136.png"
+  },
+  {
+   "id": "s_137",
+   "start": 794.47,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_137.png"
+  },
+  {
+   "id": "s_138",
+   "start": 800.18,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_138.png"
+  },
+  {
+   "id": "s_139",
+   "start": 805.88,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_139.png"
+  },
+  {
+   "id": "s_140",
+   "start": 811.59,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_140.png"
+  },
+  {
+   "id": "s_141",
+   "start": 817.3,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_141.png"
+  },
+  {
+   "id": "s_142",
+   "start": 823.01,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_142.png"
+  },
+  {
+   "id": "s_143",
+   "start": 828.72,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_143.png"
+  },
+  {
+   "id": "s_144",
+   "start": 834.43,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_144.mp4"
+  },
+  {
+   "id": "cmp_s_144_process",
+   "start": 839.42,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "title": "Qué vas a notar",
+   "steps": [
+    {
+     "title": "Semana 1",
+     "desc": "medí el tobillo con una cinta y anotá el número"
+    },
+    {
+     "title": "Semana 2–3",
+     "desc": "las piernas se sienten menos pesadas al caer la tarde"
+    },
+    {
+     "title": "Semana 4–6",
+     "desc": "el tobillo mide menos, el zapato entra más suelto"
+    },
+    {
+     "title": "Con constancia",
+     "desc": "la pierna desinflama y la sangre circula mejor"
+    }
+   ]
+  },
+  {
+   "id": "s_145",
+   "start": 840.13,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_145.mp4"
+  },
+  {
+   "id": "s_146",
+   "start": 845.84,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_146.mp4"
+  },
+  {
+   "id": "s_147",
+   "start": 851.55,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_147.mp4"
+  },
+  {
+   "id": "s_148",
+   "start": 857.26,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_148.mp4"
+  },
+  {
+   "id": "s_149",
+   "start": 862.97,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_149.mp4"
+  },
+  {
+   "id": "s_150",
+   "start": 868.67,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_150.mp4"
+  },
+  {
+   "id": "s_151",
+   "start": 874.38,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_151.mp4"
+  },
+  {
+   "id": "s_152",
+   "start": 880.09,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_152.mp4"
+  },
+  {
+   "id": "cmp_s_153_mitoverdad",
+   "start": 882.17,
+   "dur": 6,
+   "key": "s",
+   "kind": "mitoverdad",
+   "myth": "La piña de lata o el jugo de cartón sirven igual",
+   "truth": "El almíbar y el pasteurizado matan la enzima: piña FRESCA o nada"
+  },
+  {
+   "id": "s_153",
+   "start": 885.8,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_153.mp4"
+  },
+  {
+   "id": "s_154",
+   "start": 891.51,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_154.mp4"
+  },
+  {
+   "id": "s_155",
+   "start": 897.22,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_155.mp4"
+  },
+  {
+   "id": "s_156",
+   "start": 902.92,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_156.mp4"
+  },
+  {
+   "id": "s_157",
+   "start": 908.63,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_157.mp4"
+  },
+  {
+   "id": "s_158",
+   "start": 914.34,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_158.mp4"
+  },
+  {
+   "id": "s_159",
+   "start": 920.05,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_159.png"
+  },
+  {
+   "id": "s_160",
+   "start": 925.76,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_160.png"
+  },
+  {
+   "id": "s_161",
+   "start": 931.47,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_161.png"
+  },
+  {
+   "id": "s_162",
+   "start": 937.17,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_162.mp4"
+  },
+  {
+   "id": "s_163",
+   "start": 942.88,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_163.mp4"
+  },
+  {
+   "id": "s_164",
+   "start": 948.59,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_164.mp4"
+  },
+  {
+   "id": "cmp_s_159_checklist",
+   "start": 950.47,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "checklist",
+   "title": "Con honestidad — leé esto",
+   "items": [
+    {
+     "text": "⚠ Una pierna SOLA hinchada, caliente y dolorosa = urgencia médica HOY",
+     "state": "danger"
+    },
+    {
+     "text": "Si tomás anticoagulantes, consultá antes — NO dejes tu pastilla",
+     "state": "warn"
+    },
+    {
+     "text": "Úlcera o gastritis: cuidado con la piña en ayunas",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "s_165",
+   "start": 954.3,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_165.mp4"
+  },
+  {
+   "id": "s_166",
+   "start": 960.01,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_166.mp4"
+  },
+  {
+   "id": "s_167",
+   "start": 965.72,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_167.mp4"
+  },
+  {
+   "id": "s_168",
+   "start": 971.42,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_168.png"
+  },
+  {
+   "id": "s_169",
+   "start": 977.13,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_169.mp4"
+  },
+  {
+   "id": "s_170",
+   "start": 982.84,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_170.mp4"
+  },
+  {
+   "id": "s_171",
+   "start": 988.55,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_171.mp4"
+  },
+  {
+   "id": "s_172",
+   "start": 994.26,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_172.png"
+  },
+  {
+   "id": "s_173",
+   "start": 999.96,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_173.mp4"
+  },
+  {
+   "id": "s_174",
+   "start": 1005.67,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_174.mp4"
+  },
+  {
+   "id": "s_175",
+   "start": 1011.38,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_175.mp4"
+  },
+  {
+   "id": "s_176",
+   "start": 1017.09,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_176.mp4"
+  },
+  {
+   "id": "s_177",
+   "start": 1022.8,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_177.png"
+  },
+  {
+   "id": "s_178",
+   "start": 1028.51,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_178.png"
+  },
+  {
+   "id": "s_179",
+   "start": 1034.21,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_179.png"
+  },
+  {
+   "id": "s_180",
+   "start": 1039.92,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_180.png"
+  },
+  {
+   "id": "s_181",
+   "start": 1045.63,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_181.mp4"
+  },
+  {
+   "id": "cmp_s_183_checklist",
+   "start": 1048.69,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "checklist",
+   "title": "Los 3 pasos (guardá esto)",
+   "items": [
+    {
+     "text": "1 · Piña FRESCA, con el CORAZÓN (ahí está la bromelina)",
+     "state": "done"
+    },
+    {
+     "text": "2 · En ayunas, para que trabaje en la circulación",
+     "state": "done"
+    },
+    {
+     "text": "3 · Agua + caminar — acompaña, NO reemplaza al médico",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "s_182",
+   "start": 1051.34,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_182.png"
+  },
+  {
+   "id": "s_183",
+   "start": 1057.05,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_183.png"
+  },
+  {
+   "id": "s_184",
+   "start": 1062.75,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_184.png"
+  },
+  {
+   "id": "s_185",
+   "start": 1068.46,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_185.png"
+  },
+  {
+   "id": "s_186",
+   "start": 1074.17,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_186.png"
+  },
+  {
+   "id": "s_187",
+   "start": 1079.88,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_187.mp4"
+  },
+  {
+   "id": "s_188",
+   "start": 1085.59,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_188.mp4"
+  },
+  {
+   "id": "s_189",
+   "start": 1091.3,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_189.mp4"
+  },
+  {
+   "id": "s_190",
+   "start": 1097,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_190.mp4"
+  },
+  {
+   "id": "s_191",
+   "start": 1102.71,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_191.png"
+  },
+  {
+   "id": "s_192",
+   "start": 1108.42,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_192.png"
+  },
+  {
+   "id": "s_193",
+   "start": 1114.13,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_193.mp4"
+  },
+  {
+   "id": "s_194",
+   "start": 1119.84,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_194.mp4"
+  },
+  {
+   "id": "s_195",
+   "start": 1125.54,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_195.png"
+  },
+  {
+   "id": "cmp_s_195_lowerthird",
+   "start": 1130.28,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Las cantidades exactas están en la DESCRIPCIÓN",
+   "kicker": "El paso a paso",
+   "desc": "Cuánta piña, cuándo y cómo — todo ahí abajo.",
+   "tone": "teal"
+  },
+  {
+   "id": "s_196",
+   "start": 1131.25,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_196.mp4"
+  },
+  {
+   "id": "s_197",
+   "start": 1136.96,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_197.mp4"
+  },
+  {
+   "id": "s_198",
+   "start": 1142.67,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_198.mp4"
+  },
+  {
+   "id": "s_199",
+   "start": 1148.38,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_199.mp4"
+  },
+  {
+   "id": "s_200",
+   "start": 1154.09,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_200.mp4"
+  },
+  {
+   "id": "s_201",
+   "start": 1159.79,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_201.mp4"
+  },
+  {
+   "id": "s_202",
+   "start": 1165.5,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_202.mp4"
+  },
+  {
+   "id": "s_203",
+   "start": 1171.21,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_203.mp4"
+  },
+  {
+   "id": "s_204",
+   "start": 1176.92,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_204.mp4"
+  },
+  {
+   "id": "s_205",
+   "start": 1182.63,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_205.png"
+  },
+  {
+   "id": "s_206",
+   "start": 1188.33,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_206.mp4"
+  },
+  {
+   "id": "s_207",
+   "start": 1194.04,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_207.png"
+  },
+  {
+   "id": "s_208",
+   "start": 1199.75,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcscoagulos_s_208.png"
+  },
+  {
+   "id": "s_209",
+   "start": 1205.46,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_209.mp4"
+  },
+  {
+   "id": "s_210",
+   "start": 1211.17,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_210.mp4"
+  },
+  {
+   "id": "s_211",
+   "start": 1216.88,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_211.mp4"
+  },
+  {
+   "id": "cmp_s_211_nametag",
+   "start": 1216.88,
+   "dur": 6,
+   "key": "s",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Cada semana, salud real para tus piernas después de los 60",
+   "image": "img/fcsmanchas_s_229.png"
+  },
+  {
+   "id": "s_212",
+   "start": 1222.58,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_212.mp4"
+  },
+  {
+   "id": "s_213",
+   "start": 1228.29,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fcscoagulos_s_213.mp4"
+  }
+ ]
+}

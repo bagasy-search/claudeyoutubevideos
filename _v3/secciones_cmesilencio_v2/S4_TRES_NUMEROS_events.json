@@ -1,0 +1,180 @@
+[
+  {
+    "id": "cme_v2_s4_numbers",
+    "ms": 422740,
+    "dur": 20.2,
+    "tipo": "ESCENA",
+    "dice": "Bien, los numeros",
+    "mov": "MovNumeros",
+    "escena": "MovNumeros",
+    "_manual": true,
+    "_sec": "S4_TRES_NUMEROS",
+    "_anchor": {
+      "startWord": 1004,
+      "endWord": 1006,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s4_e13",
+    "ms": 453580,
+    "dur": 2.4,
+    "tipo": "T2V",
+    "dice": "Y este lo ignora todo el mundo",
+    "muestra": "Macro de hojas secas y polvo pegados contra la rejilla del ventilador de refrigeración, tapándola a medias.",
+    "porque": "La consecuencia de ignorar el caudal se ve enseguida: una rejilla tapada. Es un plano corto y feo a propósito, para que el espectador vaya a mirar la suya.",
+    "nombre": "cms_s4_rejilla_tapada_hojas",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "extreme macro of dry leaves and dust stuck flat against the cooling fan grille of a generator, half blocking the openings, the blades barely visible turning behind, cool light, very shallow depth of field, no people, no hands, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "aleteo seco de hojas contra la rejilla",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1070,
+      "endWord": 1076,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s4_e14",
+    "ms": 453580,
+    "dur": 3.6,
+    "tipo": "TEXTO",
+    "dice": "Y este lo ignora todo el mundo",
+    "muestra": "Rótulo corto sobre la rejilla tapada, en ámbar de alerta.",
+    "porque": "Marca cuál de los tres números es el que cuesta caro. El ámbar lo separa de los rótulos fríos de los otros dos.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "ESTE LO IGNORA TODO EL MUNDO",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1070,
+      "endWord": 1076,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s4_e15",
+    "ms": 456660,
+    "dur": 5.2,
+    "tipo": "T2V",
+    "dice": "Un generador no usa el aire solamente para quemar gasolina",
+    "muestra": "Macro del filtro de aire del generador con la tapa sacada: la espuma sucia en el borde y un hilo fino de aire entrando por el centro hacia el carburador.",
+    "porque": "El aire de combustión es el que todos imaginan y hay que mostrarlo primero para después poder decir que es la parte chica. La espuma sucia da la escala del caudal que pasa por ahí.",
+    "nombre": "cms_s4_filtro_aire_espuma",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "macro of a small engine air filter with its cover removed, dirty foam element with dust caked around its rim, a thin stream of air drawn through its centre toward the carburettor throat, warm side light, very shallow depth of field, no people, no hands, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "aspiración rítmica del motor",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1077,
+      "endWord": 1086,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s4_e23",
+    "ms": 486540,
+    "dur": 7.4,
+    "tipo": "CLIP",
+    "dice": "Y los tres pelean entre ellos. Si tapas para bajar el primero, arruinas el segundo y disparas el tercero.",
+    "muestra": "Claudio en el patio empujando un panel de contrachapado sobre la boca de entrada de la caja hasta taparla del todo, y dejando la mano ahí, sosteniendo la tapa contra la madera.",
+    "porque": "La pelea de los tres números se resuelve en un solo gesto físico: tapar. La mano que se queda apoyada es la que el espectador reconoce como la suya cuando intenta bajar el ruido a lo bruto.",
+    "nombre": "cms_s4_tapa_boca_panel",
+    "foto_change": "he is crouching beside the plywood box in the backyard pushing a loose plywood panel flat over the square air intake opening until it covers it completely, keeping his hand pressed on the panel to hold it there, the generator running inside the box, the low concrete block wall behind him, cool blue grey light at the end of the day with one warm work lamp from the left, medium shot from low, he fills the right of the frame, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same plywood box with the generator running inside, same low concrete block wall, same work lamp from the left, nothing behind him changes or moves.",
+      "action": "Action: he slides the loose panel the last few centimeters over the intake opening until it is fully covered and holds it there with his hand, his lips stay closed, one single continuous action, his hand stays in contact with the panel.",
+      "camera": "Camera: the framing never changes, medium shot from low, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "madera contra madera + el motor que se ahoga y cambia de tono",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1156,
+      "endWord": 1174,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s4_e24",
+    "ms": 489100,
+    "dur": 4.8,
+    "tipo": "TEXTO",
+    "dice": "Si tapas para bajar el primero, arruinas el segundo y disparas el tercero",
+    "muestra": "Los tres números vuelven como tres rótulos numerados sobre el panel que tapa, encadenados por dos flechas: el primero baja, el segundo se corta, el tercero sube.",
+    "porque": "Es el pago de la pelea que se sembró en el primer acto del movimiento. Los tres rótulos vuelven con los mismos números que ya se aprendieron y por eso la cadena se lee de un vistazo.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "1 ↓ · 2 SE CORTA · 3 ↑↑",
+    "sfx": "tres ticks encadenados, el último grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1162,
+      "endWord": 1174,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s4_e26",
+    "ms": 497500,
+    "dur": 4.2,
+    "tipo": "ICONO",
+    "dice": "son peligrosas",
+    "muestra": "Un ícono de prohibido se apoya sobre la caja sellada, cubriendo la tapa lisa.",
+    "porque": "Cierra el juicio sobre las cajas de internet en el mismo cuadro que las muestra, para que nadie se lleve la imagen sin la advertencia pegada.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_prohibido.png",
+    "texto": "SIN AIRE · SIN ESCAPE · PELIGROSA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1183,
+      "endWord": 1184,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s4_e27",
+    "ms": 499500,
+    "dur": 4.38,
+    "tipo": "CLIP",
+    "dice": "Bajan el ruido porque tapan y tapar es lo único que no puedes hacer",
+    "muestra": "Claudio levantando despacio la palma del panel que tapaba la boca de entrada, dejándola descubierta otra vez, con la lámpara de trabajo tiñendo de cálido el canto del contrachapado.",
+    "porque": "La sección cierra deshaciendo el error delante del espectador: la mano se retira y el agujero vuelve. ENTREGA AL TRAMO SIGUIENTE en plano cercano y bajo, tres cuartos sobre el canto del contrachapado y la boca de entrada descubierta, con luz `sky` fría de anochecer y el primer acento cálido de `torch` de la lámpara de trabajo entrando por la izquierda. La cámara ya bajó y se acercó y no debe remontarse.",
+    "nombre": "cms_s4_retira_mano_boca",
+    "foto_change": "he is crouching low beside the plywood box lifting his palm slowly off the loose panel so the square air intake opening is uncovered again, the panel sliding aside on the concrete, a warm work lamp on the left staining the raw plywood edge orange, the last cold blue light of dusk on the low block wall behind, close medium shot from low, he fills the right of the frame and the plywood edge the left, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same plywood box with the generator running inside, same loose panel on the concrete, same low concrete block wall, same warm work lamp on the left, nothing behind him changes or moves.",
+      "action": "Action: he lifts his palm slowly off the panel and draws his hand back toward his knee, leaving the intake opening uncovered, his lips stay closed, one single continuous action, his other hand stays resting on the edge of the box.",
+      "camera": "Camera: the framing never changes, close medium shot from low, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "el motor recupera su tono al destaparse la boca",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1185,
+      "endWord": 1197,
+      "coverage": 0.929
+    }
+  }
+]

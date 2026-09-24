@@ -1,0 +1,586 @@
+{
+ "s00_006": {
+  "kind": "mapa",
+  "origen": "Cañadón Seco de las Lajas",
+  "destino": "Colonia Sarmiento",
+  "cifra": "41",
+  "unidad": " km",
+  "pie": "dos días de carro"
+ },
+ "s00_013": {
+  "kind": "ficha",
+  "cifra": "11",
+  "unidad": " días",
+  "pie": "de agonía",
+  "bed": "img/friogranero_s00_012d.jpg"
+ },
+ "s01_007": {
+  "kind": "planta",
+  "titulo": "el granero",
+  "ancho": "10 metros",
+  "alto": "6 metros",
+  "nota": "troncos de álamo carolino, 1894"
+ },
+ "s01_010": {
+  "kind": "corte",
+  "titulo": "el piso del granero",
+  "capas": [
+   {
+    "prof": "tablones",
+    "temp": "5 cm",
+    "nota": "lenga sobre durmientes",
+    "color": "#8A6B42"
+   },
+   {
+    "prof": "el hueco",
+    "temp": "40 cm",
+    "nota": "aire quieto: el mejor aislante que hay",
+    "color": "#D8C8A2"
+   },
+   {
+    "prof": "el suelo",
+    "temp": "0 cm",
+    "nota": "tierra desnuda",
+    "color": "#8E7649"
+   }
+  ]
+ },
+ "s01_012": {
+  "kind": "corte",
+  "titulo": "cuarenta centímetros de aire",
+  "capas": [
+   {
+    "prof": "tablones",
+    "temp": "5 cm",
+    "nota": "madera maciza",
+    "color": "#8A6B42"
+   },
+   {
+    "prof": "el hueco",
+    "temp": "40 cm",
+    "nota": "en cuatro meses salva tres vidas",
+    "color": "#D8C8A2"
+   },
+   {
+    "prof": "el suelo",
+    "temp": "—",
+    "nota": "tierra",
+    "color": "#8E7649"
+   }
+  ]
+ },
+ "s01_014": {
+  "kind": "ficha",
+  "cifra": "40",
+  "unidad": " cm",
+  "pie": "de aire debajo del piso",
+  "bed": "img/frio_w06_hueco40.jpg"
+ },
+ "s02_007": {
+  "kind": "cita",
+  "fecha": "6 de abril de 1899",
+  "texto": "La tierra pasa a los hermanos varones si el titular muere sin hijo varón.",
+  "atribucion": "el papel que trajeron los cuñados"
+ },
+ "s02_014": {
+  "kind": "barras",
+  "titulo": "los expedientes de la meseta",
+  "barras": [
+   {
+    "rotulo": "los más rápidos",
+    "valor": 8,
+    "sufijo": " años"
+   },
+   {
+    "rotulo": "los más lentos",
+    "valor": 14,
+    "sufijo": " años",
+    "acento": true
+   }
+  ]
+ },
+ "s03_012": {
+  "kind": "cuenta",
+  "pierde": {
+   "valor": 2340,
+   "unidad": " $",
+   "rotulo": "lo que debía"
+  },
+  "produce": {
+   "valor": 500,
+   "unidad": " $",
+   "rotulo": "lo que costaba el escrito"
+  },
+  "veredicto": "No fue crueldad. Fue aritmética."
+ },
+ "s03_026": {
+  "kind": "inventario",
+  "titulo": "lo que le quedaba",
+  "pie": "25 de abril de 1899",
+  "items": [
+   {
+    "que": "harina",
+    "cuanto": "11 kg"
+   },
+   {
+    "que": "azúcar",
+    "cuanto": "4,5 kg"
+   },
+   {
+    "que": "yerba",
+    "cuanto": "2 kg"
+   },
+   {
+    "que": "querosén",
+    "cuanto": "un cuarto"
+   },
+   {
+    "que": "velas de sebo",
+    "cuanto": "7"
+   },
+   {
+    "que": "papas",
+    "cuanto": "30 kg"
+   }
+  ]
+ },
+ "s04_011": {
+  "kind": "barras",
+  "titulo": "la hacienda ovina del sur",
+  "barras": [
+   {
+    "rotulo": "pérdida general",
+    "valor": 50,
+    "sufijo": " %"
+   },
+   {
+    "rotulo": "las estancias peores",
+    "valor": 90,
+    "sufijo": " %",
+    "acento": true
+   }
+  ]
+ },
+ "s04_029": {
+  "kind": "cita",
+  "fecha": "anotado el 28 de abril de 1899",
+  "texto": "Abajo, la tierra no sabe qué mes es.",
+  "atribucion": "Elías Bordagaray, 1894"
+ },
+ "s06_011": {
+  "kind": "inventario",
+  "titulo": "cuatro formas de morirse",
+  "pie": "todas rápidas, todas silenciosas",
+  "items": [
+   {
+    "que": "el agua de deshielo",
+    "cuanto": "×25 más rápido que el aire"
+   },
+   {
+    "que": "la condensación",
+    "cuanto": "te llueve encima"
+   },
+   {
+    "que": "el monóxido",
+    "cuanto": "no huele, no despierta"
+   },
+   {
+    "que": "el derrumbe",
+    "cuanto": "grava suelta"
+   }
+  ]
+ },
+ "s06_030": {
+  "kind": "inventario",
+  "titulo": "abajo del granero",
+  "pie": "una sola decisión, cuatro problemas",
+  "items": [
+   {
+    "que": "el techo desvía el agua",
+    "cuanto": "60 m²"
+   },
+   {
+    "que": "el hueco aísla",
+    "cuanto": "40 cm"
+   },
+   {
+    "que": "nadie la ve",
+    "cuanto": "puerta cerrada"
+   }
+  ]
+ },
+ "s07_012": {
+  "kind": "cuaderno",
+  "total": 174,
+  "pie": "CARGAS DE CARRETILLA",
+  "filas": [
+   {
+    "dia": "28 de abril",
+    "n": 7
+   },
+   {
+    "dia": "29",
+    "n": 9
+   },
+   {
+    "dia": "30",
+    "n": 12
+   },
+   {
+    "dia": "1 de mayo",
+    "n": 4,
+    "nota": "piedra"
+   },
+   {
+    "dia": "2",
+    "n": 2,
+    "nota": "piedra grande, todo el día"
+   },
+   {
+    "dia": "3",
+    "n": 11
+   },
+   {
+    "dia": "4",
+    "n": 14
+   },
+   {
+    "dia": "5",
+    "n": 0,
+    "nota": "lluvia"
+   },
+   {
+    "dia": "6",
+    "n": 0,
+    "nota": "lluvia. Milena tos"
+   }
+  ]
+ },
+ "s07_039": {
+  "kind": "corte",
+  "titulo": "la entibación",
+  "capas": [
+   {
+    "prof": "tablones",
+    "temp": "22",
+    "nota": "álamo, 2½ pulgadas, del altillo",
+    "color": "#8A6B42"
+   },
+   {
+    "prof": "postes",
+    "temp": "14",
+    "nota": "lenga de 4 pulgadas, cada 60 cm",
+    "color": "#6E5A38"
+   },
+   {
+    "prof": "clavados",
+    "temp": "40 cm",
+    "nota": "en el piso de la excavación",
+    "color": "#4A3E28"
+   }
+  ]
+ },
+ "s08_015": {
+  "kind": "canos"
+ },
+ "s08_021": {
+  "kind": "canos"
+ },
+ "s09_020": {
+  "kind": "ficha",
+  "cifra": "400",
+  "unidad": " W",
+  "pie": "continuos, doce horas, sin humo",
+  "bed": "img/frio_w15_fogon.jpg"
+ },
+ "s09_073": {
+  "kind": "termometros",
+  "medidas": [
+   {
+    "donde": "afuera",
+    "valor": -11
+   },
+   {
+    "donde": "el granero",
+    "valor": -6
+   },
+   {
+    "donde": "la cámara",
+    "valor": 14
+   }
+  ]
+ },
+ "s10_012": {
+  "kind": "ficha",
+  "cifra": "14,5",
+  "unidad": " t",
+  "pie": "de nieve sobre el techo",
+  "bed": "img/frio_w04_granero_nieve.jpg"
+ },
+ "s10_044": {
+  "kind": "cita",
+  "fecha": "9 de julio de 1899",
+  "texto": "Mirar los dos caños todas las mañanas antes de nada. Todas. Aunque llueva.",
+  "atribucion": "escrito más grande que el resto de la página"
+ },
+ "s10_085": {
+  "kind": "inventario",
+  "titulo": "lo que fueron quemando",
+  "pie": "agosto de 1899",
+  "items": [
+   {
+    "que": "los postes del alambrado",
+    "cuanto": "31"
+   },
+   {
+    "que": "la puerta del galpón",
+    "cuanto": "1"
+   },
+   {
+    "que": "el mango y las varas del arado",
+    "cuanto": ""
+   },
+   {
+    "que": "los marcos de las ventanas",
+    "cuanto": "2"
+   },
+   {
+    "que": "el catre de los chicos",
+    "cuanto": "1"
+   }
+  ]
+ },
+ "s11_013": {
+  "kind": "cuenta",
+  "pierde": {
+   "valor": 1200,
+   "unidad": " W",
+   "rotulo": "lo que el cuerpo pierde"
+  },
+  "produce": {
+   "valor": 80,
+   "unidad": " W",
+   "rotulo": "lo que el cuerpo produce"
+  },
+  "veredicto": "La cuenta no cierra. La reserva son dos horas."
+ },
+ "s11_020": {
+  "kind": "termometros",
+  "medidas": [
+   {
+    "donde": "afuera",
+    "valor": -25
+   },
+   {
+    "donde": "la cámara",
+    "valor": 17
+   }
+  ]
+ },
+ "s11_061": {
+  "kind": "linea",
+  "titulo": "la temperatura del cuerpo",
+  "hitos": [
+   {
+    "cuando": "35°",
+    "que": "tirita fuerte"
+   },
+   {
+    "cuando": "33°",
+    "que": "torpeza"
+   },
+   {
+    "cuando": "31°",
+    "que": "deja de tiritar"
+   },
+   {
+    "cuando": "29°",
+    "que": "se saca la ropa"
+   }
+  ]
+ },
+ "s12_004": {
+  "kind": "inventario",
+  "titulo": "el rancho, por dentro",
+  "pie": "7 de septiembre de 1899",
+  "items": [
+   {
+    "que": "los postes",
+    "cuanto": "quemados"
+   },
+   {
+    "que": "la puerta",
+    "cuanto": "quemada"
+   },
+   {
+    "que": "el arado",
+    "cuanto": "quemado"
+   },
+   {
+    "que": "el armario",
+    "cuanto": "quemado"
+   },
+   {
+    "que": "dos vigas del alero",
+    "cuanto": "quemadas"
+   },
+   {
+    "que": "el piso del dormitorio",
+    "cuanto": "levantado"
+   }
+  ]
+ },
+ "s12_024": {
+  "kind": "planta",
+  "titulo": "la cámara",
+  "ancho": "2,40 m",
+  "alto": "1,80 m",
+  "nota": "calculada para tres, de golpe eran siete",
+  "interior": {
+   "ancho": "1,80 m",
+   "alto": "1,80 m",
+   "rotulo": "el ala nueva"
+  }
+ },
+ "s13_003": {
+  "kind": "barras",
+  "titulo": "la majada de Ceferino",
+  "barras": [
+   {
+    "rotulo": "a su cargo",
+    "valor": 420
+   },
+   {
+    "rotulo": "vivas en septiembre",
+    "valor": 41,
+    "acento": true
+   }
+  ]
+ },
+ "s13_028": {
+  "kind": "linea",
+  "titulo": "lo que quedó en pie",
+  "hitos": [
+   {
+    "cuando": "1894",
+    "que": "Elías levanta el granero"
+   },
+   {
+    "cuando": "1899",
+    "que": "la Gran Nevada"
+   },
+   {
+    "cuando": "1921",
+    "que": "el último invierno abajo"
+   },
+   {
+    "cuando": "1934",
+    "que": "muere Rosalía, a los 72"
+   },
+   {
+    "cuando": "1961",
+    "que": "un viento tira el granero"
+   }
+  ]
+ },
+ "s05_009": {
+  "kind": "corte",
+  "titulo": "la oscilación del día",
+  "capas": [
+   {
+    "prof": "20 cm",
+    "temp": "siente",
+    "nota": "todavía llega el día y la noche",
+    "color": "#D8C8A2"
+   },
+   {
+    "prof": "50 cm",
+    "temp": "no siente",
+    "nota": "la oscilación diaria se apaga entera",
+    "color": "#BFA87C"
+   },
+   {
+    "prof": "abajo",
+    "temp": "—",
+    "nota": "no existe la noche",
+    "color": "#6E5A38"
+   }
+  ]
+ },
+ "s05_014": {
+  "kind": "corte",
+  "titulo": "la oscilación del año",
+  "capas": [
+   {
+    "prof": "1 m",
+    "temp": "la mitad",
+    "nota": "y llega con un mes de retraso",
+    "color": "#BFA87C"
+   },
+   {
+    "prof": "1,50 m",
+    "temp": "3°",
+    "nota": "casi nada de diferencia entre estaciones",
+    "color": "#8E7649"
+   },
+   {
+    "prof": "2 m",
+    "temp": "2°",
+    "nota": "tres meses de atraso: en julio se entera de abril",
+    "color": "#4A3E28"
+   }
+  ]
+ },
+ "s05_019": {
+  "kind": "ficha",
+  "cifra": "8",
+  "unidad": " °C",
+  "pie": "todo el año, todos los días",
+  "bed": "img/frio_w09_camara.jpg"
+ },
+ "s05_031": {
+  "kind": "inventario",
+  "titulo": "lo que calienta un pozo",
+  "pie": "sin quemar nada de noche",
+  "items": [
+   {
+    "que": "una persona en reposo",
+    "cuanto": "70–100 W"
+   },
+   {
+    "que": "tres personas",
+    "cuanto": "250 W"
+   },
+   {
+    "que": "una vela de sebo",
+    "cuanto": "40 W"
+   },
+   {
+    "que": "un brasero de leña dura",
+    "cuanto": "800–1000 W"
+   }
+  ]
+ },
+ "s05_043": {
+  "kind": "linea",
+  "titulo": "lo que sube adentro",
+  "hitos": [
+   {
+    "cuando": "8°",
+    "que": "lo que da la tierra sola"
+   },
+   {
+    "cuando": "12°",
+    "que": "con los cuerpos"
+   },
+   {
+    "cuando": "15°",
+    "que": "con la vela"
+   },
+   {
+    "cuando": "18°",
+    "que": "con las piedras"
+   }
+  ]
+ }
+}

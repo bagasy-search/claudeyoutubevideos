@@ -1,0 +1,328 @@
+[
+  {
+    "nombre": "mdtoilet_h01_handle",
+    "change": "The man is standing beside a white toilet in a small ordinary bathroom, one hand resting flat on top of the tank lid, the other hand on the chrome flush handle, looking down into the bowl. Beige wall tile, a towel on a bar behind him, daylight from a small window.",
+    "motion": "he presses the flush handle down and keeps watching the water in the bowl, his hand still resting on the tank"
+  },
+  {
+    "nombre": "mdtoilet_h02_sbend",
+    "change": "The man is crouched on the bathroom floor at the side of the toilet, tracing the curved shape of the porcelain trapway at the base with his index finger, explaining it to himself. Small bathroom, white vinyl floor, the base of the toilet and the floor seam clearly visible.",
+    "motion": "his finger traces the curve of the porcelain from the base upward and back down, once, slowly, then he taps the porcelain twice"
+  },
+  {
+    "nombre": "mdtoilet_h03_gurgle",
+    "change": "The man is leaning over an open toilet bowl with his head tilted, listening to the end of a flush, one hand braced on the tank lid. Small bathroom, white tile, the water in the bowl still swirling.",
+    "motion": "he tilts his head a little further toward the bowl, listening, then straightens up and nods once"
+  },
+  {
+    "nombre": "mdtoilet_h04_rimfinger",
+    "change": "Close view of the man holding the toilet seat up with one hand and running his index finger along the underside of the porcelain rim, feeling for the holes. His face is above, tilted, looking under the rim. Small bathroom, white toilet, plain wall behind.",
+    "motion": "his finger slides along the underside of the rim and stops, and he leans down a little to see what is on his fingertip",
+    "causality": "the seat stays held up by his other hand the whole time, the toilet does not move"
+  },
+  {
+    "nombre": "mdtoilet_h05_mirror",
+    "change": "The man is crouched at the front of a toilet holding a small round inspection mirror on a handle up under the rim, angled so he can see the underside. Bathroom floor, white porcelain, his other hand steadying the bowl edge.",
+    "motion": "he turns the little mirror slightly to change the angle and leans in closer to look at the reflection"
+  },
+  {
+    "nombre": "mdtoilet_h06_scrubwrong",
+    "change": "The man is scrubbing the inside of a full toilet bowl with a plastic toilet brush the ordinary way, wrist moving fast, with a flat unimpressed expression on his face. Small bathroom, white tile, cleaning bottle standing on the floor beside him.",
+    "motion": "he scrubs the bowl a few strokes, then stops, lifts the dripping brush out and looks at it without expression"
+  },
+  {
+    "nombre": "mdtoilet_h07_pointbowl",
+    "change": "The man is standing over a clean white toilet pointing down into the empty bowl with the handle of a toilet brush, mid-explanation, mouth slightly open. Small bathroom, white tile wall, morning light.",
+    "motion": "he moves the brush handle in a small circle over the bowl and looks up past the camera as he explains"
+  },
+  {
+    "nombre": "mdtoilet_h08_valve",
+    "change": "The man is crouched low behind and to the left of a toilet, thumb and fingers on the small oval chrome shutoff valve on the wall supply line, turning it. His face is close to the wall, concentrating. Baseboard, braided steel supply hose, dusty floor corner.",
+    "motion": "his fingers turn the small oval valve handle clockwise about a quarter turn and stop, and he checks the hose with his other hand",
+    "causality": "only the valve handle turns, the hose and pipe stay exactly where they are"
+  },
+  {
+    "nombre": "mdtoilet_h09_drain",
+    "change": "The man is holding the flush handle down with one finger, watching the water level drop in the toilet bowl, leaning over it. Small bathroom, white toilet, the bowl half emptied.",
+    "motion": "he keeps the handle held down and watches the last of the water leave the bowl, then lets the handle come back up"
+  },
+  {
+    "nombre": "mdtoilet_h10_bottle",
+    "change": "The man is standing in a bathroom holding up a brown plastic drugstore bottle of hydrogen peroxide with a white label, turning it so the label faces forward, looking at it. White tile behind him, the toilet visible at the edge of the frame.",
+    "motion": "he turns the brown bottle a little so the label faces front, gives it a small shake, and looks up past the camera"
+  },
+  {
+    "nombre": "mdtoilet_h11_squirtrim",
+    "change": "The man is crouched at a toilet with the seat up, holding the brown peroxide bottle upside down and tilted up under the porcelain rim, squeezing it, his other hand steadying the bowl. Small bathroom, empty dry bowl, white porcelain.",
+    "motion": "he squeezes the bottle and moves it slowly along under the rim, then shifts his grip and keeps going around the curve",
+    "causality": "the liquid only appears where the bottle nozzle already passed, running down the inside of the bowl"
+  },
+  {
+    "nombre": "mdtoilet_h12_paperring",
+    "change": "Close view of the man's hands laying flat sheets of toilet paper around the inside wall of an empty dry toilet bowl, pressing them against the porcelain at the old waterline stain. His face above, looking down, concentrating.",
+    "motion": "his fingers press one sheet flat against the porcelain and smooth it sideways, then he reaches for the next sheet",
+    "causality": "each sheet stays where his fingers pressed it, the ones already placed do not move"
+  },
+  {
+    "nombre": "mdtoilet_h13_soakpaper",
+    "change": "The man is squeezing the brown peroxide bottle onto the toilet paper he has laid around the inside of the bowl, soaking it dark and translucent. Small bathroom, white porcelain, his hand and forearm in the bowl.",
+    "motion": "he squeezes the bottle in short pulses along the paper and the wet patch spreads outward across the sheet"
+  },
+  {
+    "nombre": "mdtoilet_h14_tanklid",
+    "change": "The man is lifting the heavy ceramic tank lid off a toilet with both hands, holding it out level, about to set it down on a folded towel on the bathroom floor. Small bathroom, plain wall, his shoulders braced by the weight.",
+    "motion": "he lowers the tank lid carefully toward the folded towel on the floor and his knees bend as he goes down with it"
+  },
+  {
+    "nombre": "mdtoilet_h15_pourtank",
+    "change": "The man is pouring hydrogen peroxide from a brown bottle into the open toilet tank, one hand on the rim of the tank, looking down into the water. Bathroom, the tank interior with the fill valve and float visible.",
+    "motion": "he tips the brown bottle further and the stream keeps running into the tank water, then he straightens the bottle back up"
+  },
+  {
+    "nombre": "mdtoilet_h16_wait",
+    "change": "The man is leaning on the bathroom doorframe with his arms crossed, looking at his wristwatch, waiting, relaxed. Behind him the bathroom with the toilet and the tank lid on the floor.",
+    "motion": "he glances at his watch, then looks up past the camera and shifts his weight to the other foot"
+  },
+  {
+    "nombre": "mdtoilet_h17_brushring",
+    "change": "The man is scrubbing the waterline ring inside an empty toilet bowl with a stiff brush, working hard, sleeves pushed up. Small bathroom, dry white bowl, the paper he used pushed to one side.",
+    "motion": "he scrubs a short section of the ring back and forth, then lifts the brush and looks at the porcelain he just cleared"
+  },
+  {
+    "nombre": "mdtoilet_h18_pointring",
+    "change": "Close view of the man's fingertip touching the dark ring at the waterline inside a toilet bowl, his face above it looking down, serious. White porcelain, the ring a clear brown grey band.",
+    "motion": "his fingertip presses on the ring and drags a short way along it, then lifts away"
+  },
+  {
+    "nombre": "mdtoilet_h19_twobottles",
+    "change": "The man is standing in a bathroom holding a white bleach bottle in one hand and the brown peroxide bottle in the other, at chest height, weighing them, looking from one to the other. White tile, toilet behind him.",
+    "motion": "he raises the brown bottle a little and lowers the bleach bottle, comparing them, then looks up past the camera"
+  },
+  {
+    "nombre": "mdtoilet_h20_wipecolor",
+    "change": "Close view of the man wiping a section of stained porcelain with a white cloth, the color lifting off the cloth but the surface still looking rough and dull. His face above, unconvinced. Bathroom, white bowl.",
+    "motion": "he wipes once across the stain, turns the cloth over to look at the brown mark on it, and looks back at the porcelain"
+  },
+  {
+    "nombre": "mdtoilet_h21_breakfilm",
+    "change": "The man is working a stiff brush hard against the inside wall of a dry toilet bowl, breaking up a thick film, his jaw set. Small bathroom, sleeves rolled up, white porcelain.",
+    "motion": "he pushes the brush in short hard strokes against the same spot, then pulls it back and looks at the surface"
+  },
+  {
+    "nombre": "mdtoilet_h22_calendar",
+    "change": "The man is standing at a kitchen counter writing on a paper wall calendar with a pen, marking a date a week ahead. Kitchen background, a mug and the brown peroxide bottle on the counter beside him.",
+    "motion": "he finishes the mark on the calendar square and taps the pen on it twice, then looks up"
+  },
+  {
+    "nombre": "mdtoilet_h23_tubedge",
+    "change": "The man is sitting on the edge of a bathtub in an old bathroom with his forearms on his knees and his hands loosely together, telling a story, looking off to the side and not at the camera. Small dated bathroom, the toilet beside him.",
+    "motion": "he shifts his weight slightly, rubs one thumb over the other, and keeps looking off to the side as he talks"
+  },
+  {
+    "nombre": "mdtoilet_h24_pumice",
+    "change": "The man is kneeling at a toilet, working a wet grey pumice stone in small circles against the inside of the bowl at the waterline, concentrating hard. Small bathroom, knee pad on the floor, sleeve pushed up.",
+    "motion": "he works the pumice stone in small circles on the same spot, then lifts it and blows lightly on the porcelain to see it"
+  },
+  {
+    "nombre": "mdtoilet_h25_phonecall",
+    "change": "The man is standing in a garage workshop holding an old phone to his ear, listening, his face falling, one hand on his hip. Workbench with tools behind him, plaid shirt.",
+    "motion": "he listens, then lowers his eyes and rubs the back of his neck with his free hand while still holding the phone"
+  },
+  {
+    "nombre": "mdtoilet_h26_liftlid",
+    "change": "The man is lifting a toilet tank lid and looking down into the tank for the first time, his eyebrows up, genuinely surprised at what he sees. Small bathroom, the lid tilted in his hands.",
+    "motion": "he raises the lid a little higher and leans over the open tank, staring down into it without moving the lid"
+  },
+  {
+    "nombre": "mdtoilet_h27_blackfinger",
+    "change": "Close view of the man wiping one finger along the underside of a toilet tank lid and then holding the finger up to look at the dark grey slime on it. His face behind, mouth slightly open in disgust.",
+    "motion": "he turns his fingertip slowly to look at the dark smear on it, then rubs it against his thumb"
+  },
+  {
+    "nombre": "mdtoilet_h28_flapper",
+    "change": "The man is holding a soft worn black rubber toilet flapper up in front of him between two fingers, examining it in the light from the bathroom window. Small bathroom, open tank behind him.",
+    "motion": "he squeezes the rubber flapper between finger and thumb and it deforms, then he turns it over to look at the other side"
+  },
+  {
+    "nombre": "mdtoilet_h29_invoice",
+    "change": "The man is standing at a kitchen table looking down at a paper invoice pad with his name printed at the top, holding a pen he is not using, quiet and a little ashamed. Kitchen, morning light, work jacket over the chair.",
+    "motion": "he looks at the invoice pad, then sets the pen down flat on the paper and leaves his hand resting there"
+  },
+  {
+    "nombre": "mdtoilet_h30_valveweep",
+    "change": "The man is crouched behind a toilet with a small adjustable wrench on the nut of an old shutoff valve, a rag stuffed under it, checking for a drip. Baseboard, supply line, tight space.",
+    "motion": "he gives the wrench a small quarter turn and then pulls the rag out and looks at it for a wet mark"
+  },
+  {
+    "nombre": "mdtoilet_h31_newvalve",
+    "change": "The man is holding a new chrome quarter turn shutoff valve up in the palm of his hand, showing it, standing in a bathroom doorway. Small bathroom behind him, the old valve visible at the baseboard.",
+    "motion": "he turns the little valve over in his palm and moves the lever with his thumb, then closes his hand around it"
+  },
+  {
+    "nombre": "mdtoilet_h32_phonerim",
+    "change": "The man is crouched at the front of a toilet holding his phone flat under the rim with the screen facing up, taking a picture of the underside, his other hand holding the seat up. Small bathroom, his face concentrating above.",
+    "motion": "he slides the phone a little further under the rim and taps the screen with his thumb, then draws it back out"
+  },
+  {
+    "nombre": "mdtoilet_h33_phonelook",
+    "change": "The man is standing in the bathroom looking at the photo on his phone screen with his eyebrows raised and his mouth pulled to one side. Small bathroom, the toilet behind him.",
+    "motion": "he zooms the photo with two fingers, tilts the phone slightly, and shakes his head once"
+  },
+  {
+    "nombre": "mdtoilet_h34_walkout",
+    "change": "The man is closing the toilet lid and walking out of a small bathroom, hand on the doorframe, glancing back at the toilet as he goes. Bathroom light on, hallway dark behind him.",
+    "motion": "he lets the lid down, straightens up, and turns toward the doorway with one hand on the frame"
+  },
+  {
+    "nombre": "mdtoilet_h35_brushtank",
+    "change": "The man is reaching into an open toilet tank with a small brush, scrubbing the inside wall of the tank below the waterline, looking down into it. Small bathroom, tank lid on a towel on the floor.",
+    "motion": "he moves the brush up and down against the inner tank wall, then lifts it out dripping and looks at the bristles"
+  },
+  {
+    "nombre": "mdtoilet_h36_newflapper",
+    "change": "The man is holding a new clean black rubber flapper in his open palm, showing it toward the camera, standing in a bathroom. Open tank behind him, plaid shirt sleeves rolled.",
+    "motion": "he tilts his palm slightly so the new flapper catches the light and lifts his hand a little higher"
+  },
+  {
+    "nombre": "mdtoilet_h37_bluetablet",
+    "change": "The man is holding a blue in tank toilet cleaning tablet between his thumb and forefinger, holding it away from himself with a disapproving look, standing beside an open toilet tank. Small bathroom, blue tinted water in the tank.",
+    "motion": "he turns the blue tablet slightly between his fingers, then shakes his head once and lowers his hand"
+  },
+  {
+    "nombre": "mdtoilet_h38_sticker",
+    "change": "The man is pointing with one finger at a printed warning sticker on the inside wall of an open toilet tank, leaning over the tank so he can see it, explaining. Small bathroom, the tank lid off.",
+    "motion": "his finger taps the inside of the tank twice next to the sticker and he looks up past the camera"
+  },
+  {
+    "nombre": "mdtoilet_h39_vinegar",
+    "change": "The man is pouring white vinegar from a gallon jug into a plastic measuring cup on the bathroom counter, watching the level. Small bathroom, the brown peroxide bottle standing beside the cup.",
+    "motion": "he tips the jug a little further and then brings it back upright as the cup fills, watching the line"
+  },
+  {
+    "nombre": "mdtoilet_h40_wirejet",
+    "change": "Close view of the man pushing a short piece of stiff wire up into one of the small holes on the underside of a toilet rim, working it back and forth, his other hand holding a mirror. His face above, one eye closed, concentrating.",
+    "motion": "he works the wire in and out of the small hole a few times and a little chalky white grit falls out onto the porcelain",
+    "causality": "the grit only appears after the wire has been in the hole, and it falls straight down"
+  },
+  {
+    "nombre": "mdtoilet_h41_goodswirl",
+    "change": "The man is standing over a toilet watching a strong fast swirl going around the bowl after a flush, one eyebrow up, quietly pleased. Small bathroom, clean white bowl, his hand still near the handle.",
+    "motion": "he watches the swirl go around and then gives a single small nod and steps back half a step"
+  },
+  {
+    "nombre": "mdtoilet_h42_hingecap",
+    "change": "Close view of the man flipping up a small plastic hinge cap at the back of a toilet seat with the tip of a screwdriver, revealing the bolt hole underneath. His face above, looking down at the hinge.",
+    "motion": "he levers the little plastic cap up with the screwdriver tip and it swings open on its hinge"
+  },
+  {
+    "nombre": "mdtoilet_h43_toothbrushbolt",
+    "change": "Close view of the man scrubbing around a toilet seat hinge bolt with an old toothbrush, working into the small recess, the brown peroxide bottle standing on the tank beside his hand.",
+    "motion": "he works the toothbrush in small fast circles around the bolt, then wipes the spot with his thumb and looks at it"
+  },
+  {
+    "nombre": "mdtoilet_h44_handle",
+    "change": "The man is wiping the chrome flush handle and the front of the toilet tank with a white cloth, deliberately, looking at what he is doing. Small bathroom, white tile behind.",
+    "motion": "he wipes the handle, turns the cloth, and wipes along the front edge of the tank lid"
+  },
+  {
+    "nombre": "mdtoilet_h45_baseseam",
+    "change": "The man is kneeling on a bathroom floor pressing a folded paper towel into the seam where the base of the toilet meets the floor, running it all the way around. Vinyl floor, the porcelain base and old caulk line clearly visible.",
+    "motion": "he presses the paper towel down into the seam with two fingers and slides it slowly around the curve of the base",
+    "causality": "the towel stays folded and only the part under his fingers is pressed into the joint"
+  },
+  {
+    "nombre": "mdtoilet_h46_caddy",
+    "change": "The man is holding a wet toilet brush in one hand and lifting the lid of its closed plastic holder cup with the other, looking down into the cup with obvious distaste. Small bathroom, the cup on the floor beside the toilet.",
+    "motion": "he tilts the plastic cup toward himself to look inside, then pulls his head back slightly"
+  },
+  {
+    "nombre": "mdtoilet_h47_rinsebrush",
+    "change": "The man is holding a toilet brush down in the clean water pouring into the bowl during a flush, rinsing the bristles in the stream, looking into the bowl. Small bathroom, water running.",
+    "motion": "he turns the brush in the running water so a different side of the bristles is in the stream"
+  },
+  {
+    "nombre": "mdtoilet_h48_wedgebrush",
+    "change": "The man is wedging the handle of a toilet brush under the closed toilet seat so the brush hangs over the bowl to drip dry, adjusting it with one hand. Small bathroom, white toilet.",
+    "motion": "he pushes the brush handle a little further under the seat until it holds, then lets go and checks that it stays"
+  },
+  {
+    "nombre": "mdtoilet_h49_pourcaddy",
+    "change": "The man is pouring hydrogen peroxide from the brown bottle into the bottom of an empty plastic toilet brush holder cup that he is holding tilted in his other hand. Bathroom floor, tile, his knees on the floor.",
+    "motion": "he tips the brown bottle and a small amount runs into the bottom of the cup, then he swirls the cup once"
+  },
+  {
+    "nombre": "mdtoilet_h50_closelid",
+    "change": "The man is putting the toilet lid down with one flat hand before flushing, looking straight down at it, calm and deliberate. Small bathroom, white toilet, towel on the rail behind.",
+    "motion": "he lowers the lid until it is closed, keeps his palm flat on it for a moment, then reaches for the handle"
+  },
+  {
+    "nombre": "mdtoilet_h51_toothbrushcup",
+    "change": "The man is standing at a bathroom vanity looking at a ceramic cup with toothbrushes standing in it, then turning his head toward the toilet a few feet away. Mirror behind, small bathroom.",
+    "motion": "he looks at the toothbrush cup, then turns his head slowly toward the toilet and back"
+  },
+  {
+    "nombre": "mdtoilet_h52_wallbehind",
+    "change": "The man is wiping the wall directly behind a toilet with a cloth, reaching around the tank, working the area low near the baseboard. Small bathroom, painted wall, spray bottle on the floor.",
+    "motion": "he reaches further behind the tank with the cloth and wipes downward toward the baseboard"
+  },
+  {
+    "nombre": "mdtoilet_h53_hardring",
+    "change": "Close view of the man running a fingernail across a hard raised mineral ring inside a toilet bowl, feeling the ledge of it, his face above, evaluating. White porcelain, a chalky grey band.",
+    "motion": "his fingernail scrapes across the ridge and stops, then he presses his thumb against it to test how hard it is"
+  },
+  {
+    "nombre": "mdtoilet_h54_pinkfixture",
+    "change": "The man is crouched beside an old pink coloured toilet in a dated bathroom, testing a small hidden spot low on the porcelain with a corner of a wet cloth. Nineteen fifties tile, pink fixture, careful expression.",
+    "motion": "he rubs the small hidden spot gently with the cloth corner and then leans in to look closely at the result"
+  },
+  {
+    "nombre": "mdtoilet_h55_waxring",
+    "change": "The man is kneeling on a bathroom floor beside a toilet that has been pulled and set on its side on cardboard, looking down at the exposed floor flange and the old wax ring. Bare subfloor, tools on the floor.",
+    "motion": "he leans over the open flange and points at the old wax with one finger without touching it"
+  },
+  {
+    "nombre": "mdtoilet_h56_cupwater",
+    "change": "The man is pouring a cup of water into the bowl of a toilet in a clean unused guest bathroom, unhurried, explaining as he does it. Tidy small half bathroom, folded guest towels, nothing dirty anywhere.",
+    "motion": "he tips the cup and the water runs into the bowl, then he lowers the empty cup and looks up past the camera"
+  },
+  {
+    "nombre": "mdtoilet_h57_gelbottle",
+    "change": "The man is holding up a thick angled neck toilet bowl cleaner bottle with a serious expression, showing the shape of the neck, standing in a bathroom. White tile behind him.",
+    "motion": "he turns the angled bottle so the bent neck is clearly facing forward and holds it steady"
+  },
+  {
+    "nombre": "mdtoilet_h58_bleachdown",
+    "change": "The man is setting a white bleach jug down firmly on the bathroom floor and keeping his hand flat on the cap, looking straight ahead, serious. Small bathroom, tile floor.",
+    "motion": "he presses his palm down on the cap of the jug and holds it there, then lifts his hand away slowly"
+  },
+  {
+    "nombre": "mdtoilet_h59_apart",
+    "change": "The man is holding the brown peroxide bottle in one hand and a vinegar jug in the other, arms held wide apart, making a point, serious face. Kitchen counter behind him.",
+    "motion": "he moves the two bottles a little further apart and holds them there, then lowers both hands"
+  },
+  {
+    "nombre": "mdtoilet_h60_label",
+    "change": "The man is holding the brown hydrogen peroxide bottle with the white label turned toward the camera, tapping the percentage on the label with one finger. Bathroom, plain wall behind.",
+    "motion": "he taps the label twice with his fingertip and then steadies the bottle with both hands"
+  },
+  {
+    "nombre": "mdtoilet_h61_windowsill",
+    "change": "The man is picking up a clear plastic spray bottle of colourless liquid off a sunny windowsill, holding it up to the light with a resigned expression. Bright window, dusty sill, kitchen or laundry room.",
+    "motion": "he raises the clear bottle toward the window light and turns it slowly, then lowers it and shrugs slightly"
+  },
+  {
+    "nombre": "mdtoilet_h62_gloves",
+    "change": "The man is pulling a blue nitrile glove onto one hand, snapping the cuff at the wrist, standing in a bathroom doorway ready to work. Bathroom behind him, cleaning things on the floor.",
+    "motion": "he pulls the glove cuff up over his wrist and lets it snap, then flexes his fingers once"
+  },
+  {
+    "nombre": "mdtoilet_h63_checklist",
+    "change": "The man is crouched at an open bathroom vanity cabinet with a printed sheet of paper taped to the inside of the cabinet door, pointing at it. Under sink plumbing, cleaning bottles inside the cabinet.",
+    "motion": "he presses the taped corner of the sheet flat against the cabinet door with his thumb and then taps the middle of the page"
+  },
+  {
+    "nombre": "mdtoilet_h64_finalstand",
+    "change": "The man is standing beside a finished clean toilet with the lid closed, one hand resting on the tank, looking directly toward the camera with a calm satisfied expression. Small bright bathroom, everything put away, the brown bottle on the counter.",
+    "motion": "he pats the top of the tank once with his hand and gives a small nod toward the camera"
+  }
+]

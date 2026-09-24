@@ -1,0 +1,21 @@
+// S9 (899–955s) — "¿Y a mi edad ya para qué?" 1% al año, menopausia, pero EL FIBROBLASTO NO SE MURIÓ.
+export default [
+  ["y a mi edad ya para que", "an older mexican woman sitting alone at her kitchen table looking at her hands"],
+  ["los estudios estiman que despues", "a printed research page on a desk with a percentage figure circled in pen"],
+  ["de los 25 anos vas perdiendo", "a wall calendar with many pages torn off, hanging on a plain wall"],
+  ["vas perdiendo alrededor de un 1", "a slowly emptying glass jar of pale powder on a plain shelf"],
+  ["y en las mujeres en los primeros anos", "two women in their fifties sitting together in a plain waiting room"],
+  ["despues de la menopausia", "a plain wall calendar with a single date circled in pen"],
+  ["esa caida se acelera bastante", "a line drawn steeply downward on squared paper, pen resting beside it"],
+  ["porque el estrogeno tambien le daba ordenes", "a small handwritten note pinned to a plain corkboard"],
+  ["al fibroblasto de trabajar", "extreme close view of a branching star shaped cell in soft tissue"],
+  ["pero fijate bien en una cosa que casi nadie dice", "Dr Federer in blue medical scrubs leaning in towards the camera with a warm encouraging expression", "hero"],
+  ["el fibroblasto no se murio", "extreme close view of a living star shaped cell surrounded by fibres, soft tissue"],
+  ["esta ahi sigue vivo", "extreme close view of fine white fibres in living tissue"],
+  ["sigue en tu piel a los 70 y a los 80", "close view of the face of a woman in her seventies, plain daylight, calm expression"],
+  ["lo que pasa es que se volvio lento", "an old man working slowly at a workbench in a small workshop"],
+  ["y le llega poco material", "an almost empty stack of a few bricks on bare ground at a building site"],
+  ["y a un obrero lento con material le sacas trabajo", "an older bricklayer laying a brick onto mortar, working steadily"],
+  ["menos que a los 20 pero le sacas trabajo", "a short section of newly laid brick wall in plain daylight"],
+  ["nunca es tarde para eso", "an old pair of working hands resting on a workbench, plain light"],
+];

@@ -86,16 +86,59 @@ if (!process.env.FARM_FIXED_CHUNKS && !only) {
   }
   if (ref) {
     let remoto = "";
-    try { remoto = out(`git rev-parse ${ref}`); } catch { /* la rama todavía no existe local */ }
-    const local = out("git rev-parse HEAD");
-    if (remoto && remoto !== local) {
-      console.error(`✗ PRE-VUELO: la rama ${ref} apunta a ${remoto.slice(0, 7)} pero tu HEAD es ${local.slice(0, 7)}.`);
-      console.error(`  El farm rendearía un commit VIEJO. Sincronizá: git push -f origin HEAD:${ref}`);
+    // El ref puede NO existir como rama LOCAL: se pushea con `HEAD:refs/heads/<ref>`, que no crea
+    // rama local. Antes eso dejaba remoto="" y el pre-vuelo entero se SALTEABA EN SILENCIO.
+    for (const cand of [ref, `origin/${ref}`]) {
+      try { remoto = out(`git rev-parse ${cand}`); break; } catch { /* pruebo el siguiente */ }
+    }
+    if (!remoto) {
+      try { remoto = out(`git ls-remote origin refs/heads/${ref}`).split(/\s/)[0]; } catch { remoto = ""; }
+    }
+    if (!remoto) {
+      console.error(`✗ PRE-VUELO: no pude resolver ${ref} (ni local, ni origin/${ref}, ni en el remoto).`);
+      console.error("  Sin ref no hay contra qué comparar: no puedo afirmar que el runner vaya a rendear TU código.");
       process.exit(1);
+    }
+    const local = out("git rev-parse HEAD");
+    // SIEMPRE, aunque el SHA coincida con HEAD. Un archivo UNTRACKED existe en tu disco y NO en el
+    // commit, y una comparación de SHAs no lo ve. Los 9 de src/fcsclv/ voltearon una corrida de 20
+    // runners con "BigStat doesn't exist" DESPUÉS de que el pre-vuelo diera ✓.
+    if (remoto) {
+      // Comparar SHAs sólo vale si commiteás sobre la rama en la que estás parado. Con VARIOS
+      // agentes en el MISMO working tree la rama se arma por plumbing (read-tree + commit-tree
+      // desde una base), así que HEAD es la rama de OTRO agente y el SHA nunca coincide.
+      // Lo que de verdad importa es que el CONTENIDO que va a rendear sea el que acabás de
+      // generar: se compara blob a blob el grafo de imports locales del entry.
+      const graf = new Set(); const cola = [entryFile.replace(/\\/g, "/")];
+      while (cola.length) {
+        const f = cola.shift();
+        if (!f || graf.has(f) || !fs.existsSync(f)) continue;
+        graf.add(f);
+        for (const m of fs.readFileSync(f, "utf8").matchAll(/(?:from|import)\s+["'](\.[^"']+)["']/g)) {
+          const base = path.posix.join(path.posix.dirname(f), m[1]);
+          for (const ext of ["", ".tsx", ".ts", "/index.tsx", "/index.ts"]) {
+            if (fs.existsSync(base + ext) && fs.statSync(base + ext).isFile()) { cola.push(base + ext); break; }
+          }
+        }
+      }
+      const difieren = [];
+      for (const f of graf) {
+        let enRama = null;
+        try { enRama = out(`git rev-parse ${remoto}:${f}`); } catch { /* no está en la rama */ }
+        const enDisco = out(`git hash-object "${f}"`);
+        if (enRama !== enDisco) difieren.push(`${f} ${enRama ? "DIFIERE" : "NO ESTÁ"} en ${ref}`);
+      }
+      if (difieren.length) {
+        console.error(`✗ PRE-VUELO: ${difieren.length} archivo(s) del render no coinciden con lo que hay en ${ref} — el farm rendearía código VIEJO:`);
+        difieren.slice(0, 10).forEach((d) => console.error("   " + d));
+        console.error(`  Reconstruí la rama (make_ref) o sincronizá: git push -f origin HEAD:${ref}`);
+        process.exit(1);
+      }
+      console.log(`pre-vuelo: los ${graf.size} archivos del grafo de imports coinciden blob a blob con ${ref} (${remoto.slice(0, 7)}${remoto === local ? " = HEAD" : " != HEAD " + local.slice(0, 7)}) ✓`);
     }
     // el entry tiene que estar EN el commit que va a rendear, no solo en tu working dir
     if (entryFile && remoto) {
-      try { out(`git show ${ref}:${entryFile.replace(/\\/g, "/")}`); }
+      try { out(`git show ${remoto}:${entryFile.replace(/\\/g, "/")}`); }
       catch { console.error(`✗ PRE-VUELO: ${entryFile} no está commiteado en ${ref}. Commitealo y pusheá.`); process.exit(1); }
     }
   }
@@ -216,16 +259,34 @@ if (pref && pref.startsWith("@")) {
   for (const d of COMPARTIDAS) {
     if (!fs.existsSync(`public/${d}`) || items.includes(d)) continue;
     let usados = [];
+    // ¿el grep CORRIÓ? No es lo mismo "no usa nada de med/" que "el grep se rompió".
+    // Antes las dos cosas daban la misma lista vacía y las dos caían a la carpeta entera.
+    let grepOk = false;
     try {
       const re = new RegExp(`(?:public/)?${d}/[A-Za-z0-9_./-]+\\.(?:png|jpe?g|webp|mp4|webm|mov|mp3|wav)`, "g");
-      const salida = execSync(`git grep -hoE "(public/)?${d}/[A-Za-z0-9_./-]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src 2>/dev/null || true`,
+      // El veneno era `2>/dev/null || true`: bajo cmd.exe (el shell por defecto de execSync en
+      // Windows) no se parsea, la salida vuelve SIEMPRE vacía y el `|| true` dejaba exit 0.
+      // Resultado: "no pude listar" en TODOS los videos y med/ entero (882 MB) en CADA tarball,
+      // en vez de los 21 archivos que src referencia de verdad. Sin "|| true" para poder
+      // distinguir "sin coincidencias" (git grep sale 1) de "git falló" (sale >1).
+      const salida = execSync(`git grep -hoE "(public/)?${d}/[A-Za-z0-9_./-]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src`,
         { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"], maxBuffer: 32 * 1024 * 1024 });
       usados = [...new Set((salida.match(re) || []).map((r) => r.replace(/^public\//, "")))]
         .filter((r) => fs.existsSync(`public/${r}`));
-    } catch { usados = []; }
+      grepOk = true;
+    } catch (e) {
+      // status 1 = git grep corrió bien y no encontró nada -> cero legítimo, NO es una falla.
+      usados = [];
+      grepOk = e && e.status === 1;
+    }
     if (usados.length) {
       const mb = usados.reduce((a, r) => a + (fs.statSync(`public/${r}`).size || 0), 0) / 1048576;
-      const totalMb = execSync(`du -sm "public/${d}" 2>/dev/null || echo 0`, { encoding: "utf8", shell: "/bin/bash" }).trim().split(/\s/)[0];
+      // Solo para el log. Iba con shell: "/bin/bash", que en Windows es ENOENT y tumbaba el
+      // despacho entero... pero NUNCA se ejecutaba, porque el grep de arriba siempre volvia
+      // vacio y no se llegaba hasta aca. Arreglado el grep, salto al toque. Un dato de log no
+      // puede voltear el despacho: va en try y si falla se muestra "?".
+      let totalMb = "?";
+      try { totalMb = execSync(`du -sm "public/${d}"`, { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim().split(/\s/)[0]; } catch { totalMb = "?"; }
       console.log(`  ${d}: ${usados.length} archivo(s) usados (${mb.toFixed(0)} MB) en vez de la carpeta entera (${totalMb} MB)`);
       items.push(...usados);
     } else {
@@ -235,8 +296,11 @@ if (pref && pref.startsWith("@")) {
       const enLista = items.filter((it) => it === d + "/" || it.startsWith(d + "/"));
       if (enLista.length) {
         console.log(`  ${d}: ${enLista.length} archivo(s) de la lista explícita (sin la carpeta entera)`);
+      } else if (grepOk) {
+        // cero MEDIDO, no cero por accidente: el video no usa nada de este dir y no se empaqueta.
+        console.log(`  ${d}: 0 archivo(s) usados (grep OK) → NO se empaqueta la carpeta`);
       } else {
-        console.log(`  ${d}: no pude listar los usados → empaqueto la carpeta entera (seguro pero pesado)`);
+        console.log(`  ${d}: no pude listar los usados (grep FALLÓ) → empaqueto la carpeta entera (seguro pero pesado)`);
         items.push(d);
       }
     }

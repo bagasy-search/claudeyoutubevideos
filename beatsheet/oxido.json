@@ -2396,65 +2396,12 @@
   {
    "id": "ox_tomas_cierre",
    "start": 1351.98,
-   "dur": 1.72,
+   "dur": 7.33,
    "kind": "raw",
    "src": "img/ox_tomas_cierre.png",
    "darken": 0,
    "hue": "amber",
    "kicker": "Salvá lo que ibas a tirar"
-  },
-  {
-   "id": "cmp_journey_15_1",
-   "start": 1353.3,
-   "dur": 6.01,
-   "kind": "journey",
-   "hue": "red",
-   "k": "comp",
-   "eyebrow": "Los métodos, de lo simple a lo poderoso",
-   "title": "Tu arsenal contra el óxido",
-   "accent": "amber",
-   "waypoints": [
-    {
-     "x": 0.15,
-     "y": 0.3,
-     "image": "real/ox_candle_wax.png",
-     "num": "1",
-     "label": "Cera y tiza",
-     "sub": "que no aparezca",
-     "dwell": 2.2,
-     "travel": 1.2
-    },
-    {
-     "x": 0.42,
-     "y": 0.22,
-     "image": "real/ox_vinegar_bottle.png",
-     "num": "2",
-     "label": "Vinagre",
-     "sub": "lo chico ya comido",
-     "dwell": 2.2,
-     "travel": 1.2
-    },
-    {
-     "x": 0.66,
-     "y": 0.4,
-     "image": "real/ox_strong_tea.png",
-     "num": "3",
-     "label": "Ácido tánico",
-     "sub": "el óxido se vuelve escudo",
-     "dwell": 2.2,
-     "travel": 1.2
-    },
-    {
-     "x": 0.88,
-     "y": 0.26,
-     "image": "real/ox_electro_bucket.png",
-     "num": "4",
-     "label": "Electrólisis",
-     "sub": "se desprende solo",
-     "dwell": 2.2,
-     "travel": 1.2
-    }
-   ]
   },
   {
    "id": "ox_restored_tools",
@@ -2463,7 +2410,7 @@
    "kind": "raw",
    "src": "broll/ox_restored_tools.mp4",
    "darken": 0,
-   "hue": "blue"
+   "hue": "red"
   },
   {
    "id": "ox_saved_wrench",
@@ -2472,7 +2419,7 @@
    "kind": "raw",
    "src": "real/ox_saved_wrench.png",
    "darken": 0,
-   "hue": "amber"
+   "hue": "blue"
   },
   {
    "id": "ox_wipe_proud",
@@ -2481,7 +2428,7 @@
    "kind": "raw",
    "src": "real/ox_wipe_proud.png",
    "darken": 0,
-   "hue": "red"
+   "hue": "amber"
   },
   {
    "id": "ox_clean_fence_done",
@@ -2490,7 +2437,7 @@
    "kind": "raw",
    "src": "real/ox_clean_fence_done.png",
    "darken": 0,
-   "hue": "blue"
+   "hue": "red"
   },
   {
    "id": "cmp_diagram_16_0",

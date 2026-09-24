@@ -65,6 +65,7 @@
 // }
 import fs from "fs";
 import path from "path";
+import { probeMedia } from "./match_v3/lib.mjs";
 
 const bsArg = process.argv[2];
 if (!bsArg) {
@@ -78,7 +79,61 @@ if (!fs.existsSync(bsArg)) {
 const bs = JSON.parse(fs.readFileSync(bsArg, "utf8"));
 const VIDEO = bs.video || path.basename(bsArg).replace(/\.json$/, "");
 const AVATAR = bs.avatar || "avatar.mp4";
-const beats = bs.beats || [];
+let beats = bs.beats || [];
+
+// ── DURACIÓN REAL de cada clip (ffprobe, cache por mtime) ────────────────────
+// Alimenta el anti-congelado de Media: si el beat en el timeline es más largo que
+// el archivo, el playbackRate se adapta o se loopea — nunca más un frame clavado.
+const PROBE_CACHE = path.join("public", "broll", "_probe_cache.json");
+let _probeCache = {};
+try { _probeCache = JSON.parse(fs.readFileSync(PROBE_CACHE, "utf8")); } catch {}
+let _probeDirty = false;
+const clipDurOf = (rel) => {
+  if (!/\.(mp4|webm|mov)$/i.test(rel || "")) return null;
+  const abs = path.join("public", rel);
+  if (!fs.existsSync(abs)) return null;
+  const key = `${rel}:${Math.round(fs.statSync(abs).mtimeMs)}`;
+  if (_probeCache[key] != null) return _probeCache[key];
+  const m = probeMedia(abs);
+  const d = m ? +m.duration.toFixed(2) : null;
+  _probeCache[key] = d; _probeDirty = true;
+  return d;
+};
+
+// ── GRADE de normalización por clip (lo escribe scripts/probe_grade.mjs) ─────
+// {"<asset sin ext>": "brightness(1.03) saturate(0.97)"} — corrige el salto de
+// exposición/saturación entre fuentes; NO es un look (regla: colores naturales).
+let gradeMap = {};
+try { gradeMap = JSON.parse(fs.readFileSync(path.join("public", "broll", `_grade_${VIDEO}.json`), "utf8")); } catch {}
+const gradeOf = (rel) => gradeMap[path.basename(rel || "").replace(/\.[^.]+$/, "")] || null;
+
+// ── AUTOSPLIT de pacing (opt-in con "maxRawDur" en el beatsheet) ──────────────
+// Un plano raw más largo que maxRawDur se parte en tomas A/B/C del MISMO asset con
+// Ken-Burns distinto (kbPhase) → el corte "respira" sin cambiar el footage. Fix del
+// patrón medido en ventilador.mp4: planos de 24-41s clavados matando la retención.
+const MAX_RAW = +bs.maxRawDur || 0;
+if (MAX_RAW > 0) {
+  const out = [];
+  let nsplit = 0;
+  for (const b of beats) {
+    if (b.kind !== "raw" || !b.dur || b.dur <= MAX_RAW * 1.25 || b.noSplit) { out.push(b); continue; }
+    const parts = Math.min(5, Math.ceil(b.dur / MAX_RAW));
+    const step = +(b.dur / parts).toFixed(2);
+    for (let p = 0; p < parts; p++) {
+      out.push({
+        ...b,
+        id: `${b.id}_${"abc"[p]}`,
+        start: +(b.start + p * step).toFixed(2),
+        dur: p === parts - 1 ? +(b.dur - step * (parts - 1)).toFixed(2) : step,
+        kbPhase: p + 1,
+        ...(p > 0 ? { trans: 0, kicker: undefined } : {}),
+      });
+    }
+    nsplit++;
+  }
+  if (nsplit) console.log(`✂ autosplit: ${nsplit} planos raw > ${MAX_RAW}s partidos en tomas A/B (kbPhase)`);
+  beats = out;
+}
 
 // ── 1+2) extraer assets a generar (dedup por nombre) ─────────────────────────
 const images = new Map(); // name -> {name,prompt,width?,height?}
@@ -112,12 +167,26 @@ const cueBeats = beats.filter((b) => b.kind && b.kind !== "talk");
 const sorted = [...cueBeats].filter((b) => b.kind !== "float" && !b.overlay).sort((a, b) => a.start - b.start);
 for (let i = 1; i < sorted.length; i++) {
   const prevEnd = sorted[i - 1].start + sorted[i - 1].dur;
-  if (sorted[i].start < prevEnd - 1e-6) {
+  // hasta 0.35s de solape es INTENCIONAL (overlap anti-flash del build) → no avisar
+  if (sorted[i].start < prevEnd - 0.35) {
     warnings.push(
       `solapan: ${sorted[i - 1].id} (${sorted[i - 1].start}–${prevEnd.toFixed(1)}) y ${sorted[i].id} (desde ${sorted[i].start})`
     );
   }
 }
+// ── GATE DE PACING (dato medido: en ventilador.mp4 los cortes/min cayeron de 15 a 4
+// en la 2ª mitad y hubo planos de 30-41s → retención muerta). Aviso duro acá; el fix
+// automático es "maxRawDur" (autosplit) o partir el beat en el build.
+{
+  const rawBeats = beats.filter((b) => b.kind === "raw" && b.dur);
+  const longs = rawBeats.filter((b) => b.dur > 12);
+  if (longs.length) warnings.push(`PACING: ${longs.length} planos raw >12s (${longs.slice(0, 6).map((b) => `${b.id}:${b.dur}s`).join(", ")}${longs.length > 6 ? "…" : ""}) → poné "maxRawDur": 8 en el beatsheet o partilos`);
+  if (rawBeats.length) {
+    const avg = rawBeats.reduce((a, b) => a + b.dur, 0) / rawBeats.length;
+    if (avg > 7) warnings.push(`PACING: plano raw medio ${avg.toFixed(1)}s (regla del nicho ~4.5-5s)`);
+  }
+}
+
 // assets referenciados que no se generan ni existen en disco
 const exists = (rel) => fs.existsSync(path.join("public", rel));
 const refs = [];
@@ -145,6 +214,26 @@ for (const r of [...new Set(refs)]) {
 
 // ── 3) emitir cues_<video>.gen.tsx ───────────────────────────────────────────
 const j = (v) => JSON.stringify(v); // string/num/array/obj -> literal JS válido en JSX
+
+// ── KIT genérico (src/VideoEdit/kit/) — kind → Componente. Props se pasan por spread+as any ──
+const KIT = {
+  titlecard: "TitleCardKit", lowerthird: "LowerThirdKit", chaptermarker: "ChapterMarkerKit",
+  bigstat: "BigStatKit", statgrid: "StatGridKit", bulletlist: "BulletListKit",
+  numberedsteps: "NumberedStepsKit", timeline: "TimelineKit", comparetwo: "CompareTwoKit",
+  barchart: "BarChartKit", rankingbars: "RankingBarsKit", donutstat: "DonutStatKit",
+  partsdiagram: "PartsDiagramKit", crosssection: "CrossSectionKit", flowarrows: "FlowArrowsKit",
+  cyclediagram: "CycleDiagramKit", mappin: "MapPinKit", annotatedphoto: "AnnotatedPhotoKit",
+  polaroidstack: "PolaroidStackKit", quotecard: "QuoteCardKit", equation: "EquationKit",
+  ingredientscard: "IngredientsCardKit", costtally: "CostTallyKit", gaugemeter: "GaugeMeterKit",
+  stampreveal: "StampRevealKit", labelcallout: "LabelCalloutKit", splitpanel: "SplitPanelKit",
+  processgrid: "ProcessGridKit", closingcard: "ClosingCardKit",
+  // ── bespoke peróxido ──
+  pxbottle: "PxBottleReveal", pxsoil: "PxSoilBreath", pxseed: "PxSeedAwaken", pxrescue: "PxRootRescue",
+  pxmildew: "PxMildewRetreat", pxsun: "PxSunLupa", pxdose: "PxDoseScale", pxfizz: "PxFizzTest",
+  pxamber: "PxAmberDecay", pxgnats: "PxGnatsLift", pxwater: "PxWaterRevive", pxcost: "PxCostCart",
+  pxforge: "PxMoleculeForge", pxdrown: "PxDrownedPlant", pxmyth: "PxMythStamp", pxseven: "PxSevenSeal",
+};
+const KIT_SYS = new Set(["id", "start", "dur", "kind", "overlay", "gen", "anec", "darken", "reframe", "t", "src", "focus", "trans", "grade", "kbPhase", "noSplit", "sfx"]);
 const cleanSlides = (slides) =>
   (slides || []).map((s) => {
     const o = {};
@@ -156,7 +245,15 @@ const cleanSlides = (slides) =>
 
 function renderEl(b) {
   switch (b.kind) {
-    case "raw":
+    case "city3d": return `<City3D${b.tOffset != null ? ` tOffset={${b.tOffset}}` : ``} />`;
+    case "globe3d": return `<Globe3D${b.tOffset != null ? ` tOffset={${b.tOffset}}` : ``} />`;
+    case "oner3d": return `<Oner3D${b.tOffset != null ? ` tOffset={${b.tOffset}}` : ``} />`;
+    case "photo25d": return `<Photo25D src=${j(b.src)}${b.kicker ? ` kicker=${j(b.kicker)}` : ``}${b.tOffset != null ? ` tOffset={${b.tOffset}}` : ``} />`;
+    case "number3d":
+      return `<Number3D num=${j(String(b.num ?? "01"))} country=${j(String(b.country ?? ""))}${b.accent ? ` accent=${j(b.accent)}` : ``}${b.tOffset != null ? ` tOffset={${b.tOffset}}` : ``} />`;
+    case "raw": {
+      const cd = clipDurOf(b.src);
+      const gr = b.grade ?? gradeOf(b.src);
       return (
         `<RawShot durationInFrames={d} src=${j(b.src)}` +
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
@@ -165,6 +262,29 @@ function renderEl(b) {
         (b.darken != null ? ` darken={${b.darken}}` : ``) +
         (b.blur != null ? ` blur={${b.blur}}` : ``) +
         (b.zoom != null ? ` zoom={${j(b.zoom)}}` : ``) +
+        (b.fit ? ` fit=${j(b.fit)}` : ``) +
+        (cd != null ? ` clipDur={${cd}}` : ``) +
+        (b.focus ? ` focus=${j(b.focus)}` : ``) +
+        (b.trans ? ` trans={${b.trans === true ? 9 : b.trans}}` : ``) +
+        (gr ? ` grade=${j(gr)}` : ``) +
+        (b.kbPhase != null ? ` kbPhase={${b.kbPhase}}` : ``) +
+        ` />`
+      );
+    }
+    case "scrolldoc":
+      // LIENZO UNIFICADO que scrollea sin cortes (ScrollDoc): cada placa = clip/foto +
+      // texto que se tipea sincronizado. Reemplaza tandas de comps sueltos que hacían "fin".
+      return `<ScrollDoc durationInFrames={d} panels={${j(b.panels || [])}} />`;
+    case "avpizarra":
+      // PIZARRA SOBRE EL AVATAR VIVO: zoom+dim+blur del clip del avatar + PNG recortado
+      // (transparente) entrando con animación + título/cuerpo + flecha. clip recortado
+      // por split_avatar_diagrams → OffthreadVideo desde frame 0 (no negro en el farm).
+      return (
+        `<AvatarPizarra durationInFrames={d}` +
+        ` clip=${j(`avatar_clips/${b.id}.mp4`)}` +
+        ` items={${j(b.items || [])}}` +
+        (b.side ? ` side=${j(b.side)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
         ` />`
       );
     case "diagram": {
@@ -179,6 +299,16 @@ function renderEl(b) {
         ` pages={${j(pages)}} />`
       );
     }
+    case "layered":
+      // REVELADO POR CAPAS con zoom (LayeredReveal): imagen principal + sub-revelados
+      // escalonados (cada uno con su atFrame LOCAL, ya calculado en build_madera).
+      return (
+        `<LayeredReveal durationInFrames={d} main={${j(b.main || {})}}` +
+        (b.subs ? ` subs={${j(b.subs)}}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
     case "quote":
       return (
         `<KineticQuote durationInFrames={d}` +
@@ -381,6 +511,14 @@ function renderEl(b) {
         (b.title ? ` title=${j(b.title)}` : ``) +
         ` />`
       );
+    case "perox":
+      return (
+        `<PeroxidoDiagram durationInFrames={d}` +
+        (b.mode ? ` mode=${j(b.mode)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        ` />`
+      );
     case "gridreveal":
       return (
         `<GridReveal durationInFrames={d} tiles={${j(b.tiles || [])}}` +
@@ -457,6 +595,14 @@ function renderEl(b) {
         (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
         (b.image ? ` image=${j(b.image)}` : ``) +
         (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "vs":
+      return (
+        `<VsCard durationInFrames={d} left={${j(b.left || {})}} right={${j(b.right || {})}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
         ` />`
       );
@@ -593,6 +739,63 @@ function renderEl(b) {
         (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
         (b.caption ? ` caption=${j(b.caption)}` : ``) +
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "breaking":
+      return (
+        `<BreakingReveal durationInFrames={d} headline=${j(b.headline || "")}` +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.number ? ` number=${j(b.number)}` : ``) +
+        (b.badge ? ` badge=${j(b.badge)}` : ``) +
+        (b.ticker ? ` ticker=${j(b.ticker)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "presenter":
+      return (
+        `<PresenterTag durationInFrames={d} name=${j(b.name || "")}` +
+        (b.subtitle ? ` subtitle=${j(b.subtitle)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "ticker":
+      return (
+        `<NewsTicker durationInFrames={d} items={${j(b.items || [])}}` +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.speed ? ` speed={${Number(b.speed)}}` : ``) +
+        ` />`
+      );
+    case "verified":
+      return (
+        `<VerifiedStamp durationInFrames={d}` +
+        (b.text ? ` text=${j(b.text)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.angle != null ? ` angle={${Number(b.angle)}}` : ``) +
+        ` />`
+      );
+    case "steptrack":
+      return (
+        `<StepTracker durationInFrames={d} step={${Number(b.step || 1)}}` +
+        (b.total != null ? ` total={${Number(b.total)}}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "statslam":
+      return (
+        `<StatSlam durationInFrames={d} figure=${j(b.figure || "")}` +
+        (b.caption ? ` caption=${j(b.caption)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "alertwipe":
+      return (
+        `<AlertWipe durationInFrames={d}` +
+        (b.text ? ` text=${j(b.text)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
         ` />`
       );
     case "callout":
@@ -847,7 +1050,7 @@ function renderEl(b) {
       );
     case "keyphrase":
       return (
-        `<KeyPhrase durationInFrames={d} text=${j(b.text || "")}` +
+        `<KineticText durationInFrames={d} text=${j(b.text || "")}` +
         (b.src ? ` src=${j(b.src)}` : ``) +
         (b.blur === false ? ` blur={false}` : ``) +
         (b.accent ? ` accent=${j(b.accent)}` : ``) +
@@ -1034,8 +1237,207 @@ function renderEl(b) {
       return (`<OxQuoteSplit durationInFrames={d} quote=${j(b.quote || "")} image=${j(b.image)}` + (b.attribution ? ` attribution=${j(b.attribution)}` : ``) + (b.side ? ` side=${j(b.side)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     case "manualcard":
       return (`<ManualCard durationInFrames={d} image=${j(b.image || "real/manual_cover.png")}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.desc ? ` desc=${j(b.desc)}` : ``) + (b.chip ? ` chip=${j(b.chip)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
-    default:
+    // ── OVERLAYS A MEDIDA "madera" (MaderaCards): sobre el clip vivo + blur ──
+    case "mdgauge":
+      return (`<MdMoistureGauge durationInFrames={d}` + (b.value != null ? ` value={${b.value}}` : ``) + (b.danger != null ? ` danger={${b.danger}}` : ``) + (b.label ? ` label=${j(b.label)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdlife":
+      return (`<MdLifespanBar durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.low ? ` low={${j(b.low)}}` : ``) + (b.high ? ` high={${j(b.high)}}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdrecipe":
+      return (`<MdRecipeCard durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.items ? ` items={${j(b.items)}}` : ``) + (b.note ? ` note=${j(b.note)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdpost":
+      return (`<MdPostGroundLine durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdchar":
+      return (`<MdCharReveal durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.chips ? ` chips={${j(b.chips)}}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdrecap":
+      return (`<MdMethodRecap durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.methods ? ` methods={${j(b.methods)}}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdname":
+      return (`<MdNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdnext":
+      return (`<MdNextCard durationInFrames={d}` + (b.kicker ? ` kicker=${j(b.kicker)}` : ``) + (b.title ? ` title=${j(b.title)}` : ``) + (b.image ? ` image=${j(b.image)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── SET DE PULIDO cine "madera" (MaderaPolish): overlays HERMOSOS a medida ──
+    case "mdtwoplanks":
+      return (`<MdTwoPlanks durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.buried ? ` buried=${j(b.buried)}` : ``) + (b.note ? ` note=${j(b.note)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdsealtrap":
+      return (`<MdSealTrap durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdrotinside":
+      return (`<MdRotFromInside durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdrulestamp":
+      return (`<MdRuleStamp durationInFrames={d}` + (b.text ? ` text=${j(b.text)}` : ``) + (b.num ? ` num=${j(b.num)}` : ``) + (b.label ? ` label=${j(b.label)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdfungus":
+      return (`<MdFungusNeeds durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdslider":
+      return (`<MdBeforeAfterSlider durationInFrames={d}` + (b.beforeImg ? ` beforeImg=${j(b.beforeImg)}` : ``) + (b.afterImg ? ` afterImg=${j(b.afterImg)}` : ``) + (b.beforeLabel ? ` beforeLabel=${j(b.beforeLabel)}` : ``) + (b.afterLabel ? ` afterLabel=${j(b.afterLabel)}` : ``) + (b.beforeYears ? ` beforeYears=${j(b.beforeYears)}` : ``) + (b.afterYears ? ` afterYears=${j(b.afterYears)}` : ``) + (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdkicker":
+      return (`<MdChapterKicker durationInFrames={d}` + (b.num ? ` num=${j(b.num)}` : ``) + (b.title ? ` title=${j(b.title)}` : ``) + (b.kicker ? ` kicker=${j(b.kicker)}` : ``) + (b.glyph ? ` glyph=${j(b.glyph)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdendcard":
+      return (`<MdEndcardManual durationInFrames={d}` + (b.manualImg ? ` manualImg=${j(b.manualImg)}` : ``) + (b.nextImg ? ` nextImg=${j(b.nextImg)}` : ``) + (b.manualTitle ? ` manualTitle=${j(b.manualTitle)}` : ``) + (b.nextKicker ? ` nextKicker=${j(b.nextKicker)}` : ``) + (b.nextTitle ? ` nextTitle=${j(b.nextTitle)}` : ``) + (b.motto ? ` motto=${j(b.motto)}` : ``) + (b.cta ? ` cta=${j(b.cta)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdtrans":
+      return (`<MdTransition durationInFrames={d}` + (b.variant ? ` variant=${j(b.variant)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── SET DE PULIDO cine "cemento" (CementoPolish): heroes propios del cemento/cal ──
+    case "cmrecipe":
+      return (`<CmRecipe durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.note ? ` note=${j(b.note)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "cmyears":
+      return (`<CmYears durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.low ? ` low={${j(b.low)}}` : ``) + (b.high ? ` high={${j(b.high)}}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "cmselfheal":
+      return (`<CmSelfHeal durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "cmcure":
+      return (`<CmCure durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "cmerror":
+      return (`<CmError durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "cmname":
+      return (`<CmNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── SET DE PULIDO cine "salitre" (SalitrePolish): heroes propios de la humedad ascendente/salitre ──
+    case "slcapillary":
+      return (`<SlCapillary durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "slsalt":
+      return (`<SlSalt durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "slseal":
+      return (`<SlSeal durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "slbarrier":
+      return (`<SlBarrier durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "sllime":
+      return (`<SlLime durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "sltwowalls":
+      return (`<SlTwoWalls durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.buried ? ` buried=${j(b.buried)}` : ``) + (b.note ? ` note=${j(b.note)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "slname":
+      return (`<SlNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── SET DE PULIDO cine "acauto" (AcautoPolish): heroes propios del aire de auto/recarga ──
+    case "acgauge":
+      return (`<AcGauge durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "acports":
+      return (`<AcPorts durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "acoverfill":
+      return (`<AcOverfill durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "acsteps":
+      return (`<AcSteps durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "accircuit":
+      return (`<AcCircuit durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "acname":
+      return (`<AcNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── SET DE PULIDO "ventilador" (VentiladorKit): 22 heroes del ventilador+botellas ──
+    case "eyebrowkicker": case "frictioncard": case "secretsealcard": case "promisechecklist":
+    case "fanfailproof": case "evaporationphysics": case "fanbottleassembly": case "wrongvsrightplacement":
+    case "bottlesizegauge": case "saltphysicsdiagram": case "stepbystepbuild": case "driptraycallout":
+    case "rotationcyclediagram": case "oldtimersstamp": case "mythbustercard": case "distancelimitwarning":
+    case "threelegsdiagram": case "nightdaycycle": case "costvscard": case "recapnumberedlist":
+    case "manualctacard": case "nextvideoteaser": {
+      const VT_MAP = { eyebrowkicker: "EyebrowKicker", frictioncard: "FrictionCard", secretsealcard: "SecretSealCard", promisechecklist: "PromiseChecklist", fanfailproof: "FanFailProof", evaporationphysics: "EvaporationPhysics", fanbottleassembly: "FanBottleAssembly", wrongvsrightplacement: "WrongVsRightPlacement", bottlesizegauge: "BottleSizeGauge", saltphysicsdiagram: "SaltPhysicsDiagram", stepbystepbuild: "StepByStepBuild", driptraycallout: "DripTrayCallout", rotationcyclediagram: "RotationCycleDiagram", oldtimersstamp: "OldTimersStamp", mythbustercard: "MythBusterCard", distancelimitwarning: "DistanceLimitWarning", threelegsdiagram: "ThreeLegsDiagram", nightdaycycle: "NightDayCycle", costvscard: "CostVsCard", recapnumberedlist: "RecapNumberedList", manualctacard: "ManualCTACard", nextvideoteaser: "NextVideoTeaser" };
+      const Comp = VT_MAP[b.kind];
+      const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k)) rest[k] = b[k];
+      delete rest.kind;
+      return `<${Comp} {...({ durationInFrames: d, ...${j(rest)} } as any)} />`;
+    }
+    // ── BESPOKE "dulces" (canal Abuela Rosa) — cocina de la abuela, cálido ──
+    case "fichadulce":
+      return (
+        `<FichaDulce durationInFrames={d} image=${j(b.image)} title=${j(b.title || "")}` +
+        (b.notes ? ` notes={${j(b.notes)}}` : ``) +
+        (b.bg ? ` bg=${j(b.bg)}` : ``) +
+        (b.side ? ` side=${j(b.side)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
+    case "antesahora":
+      return (
+        `<AntesAhora durationInFrames={d} beforeImage=${j(b.beforeImage)} afterImage=${j(b.afterImage)}` +
+        (b.beforeLabel ? ` beforeLabel=${j(b.beforeLabel)}` : ``) +
+        (b.afterLabel ? ` afterLabel=${j(b.afterLabel)}` : ``) +
+        ` />`
+      );
+    case "citaabuela":
+      return (
+        `<CitaAbuela durationInFrames={d} text=${j(b.text || "")}` +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.words ? ` words={${j(b.words)}}` : ``) +
+        (b.fontSize ? ` fontSize={${b.fontSize}}` : ``) +
+        ` />`
+      );
+    case "ingredientesflotan":
+      return (
+        `<IngredientesFlotan durationInFrames={d} items={${j(b.items || [])}}` +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.atsec ? ` ats={${j(b.atsec)}}` : ``) +
+        ` />`
+      );
+    case "topdulce":
+      return (
+        `<TopDulce durationInFrames={d} index={${b.index}} title=${j(b.title || "")}` +
+        (b.total != null ? ` total={${b.total}}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.nameAt != null ? ` nameAt={${b.nameAt}}` : ``) +
+        ` />`
+      );
+    case "numerodulce":
+      return (
+        `<NumeroDulce durationInFrames={d} number=${j(b.number)} name=${j(b.name || "")}` +
+        (b.total ? ` total=${j(b.total)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
+    case "dishgrid":
+      return (
+        `<DishGrid durationInFrames={d} images={${j(b.images || [])}}` +
+        (b.cols != null ? ` cols={${b.cols}}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
+    // ── KIT PREMIUM (src/VideoEdit/kit/premium/) — catálogo themeable genérico.
+    // beat: { kind:"premium", comp:"VsDuel", theme:"earth", zone:"topLeft", overlay:true, ...props }
+    // `comp` = nombre EXACTO exportado por kit/premium/index.ts (VsDuel, BigStatReveal,
+    // NumberedSteps, ChecklistReveal, FlowSteps, MythTruth, CtaCard, etc). `zone` posiciona
+    // el componente (full-bleed por diseño) dentro de una caja recortada en zona segura vía
+    // PremiumOverlay (topLeft|left|top|full) para que el b-roll siga viéndose alrededor y
+    // no tape el avatar PiP abajo-derecha. Todas las demás props pasan tal cual al componente.
+    // ── componentes a medida del video "cultivos de septiembre" (full-screen) ──
+    case "showcase":
+      return `<CropShowcase durationInFrames={d} focus={${b.focus | 0}} number={${j(String(b.number ?? ""))}} name={${j(b.name || "")}} description={${j(b.description || "")}} tip={${j(b.tip || "")}} images={${j(b.images || [])}} months={${j(b.months || [])}}${b.assemble === false ? " assemble={false}" : ""}${b.accent ? ` accent={${j(b.accent)}}` : ""}${b.pastel ? ` pastel={${j(b.pastel)}}` : ""} />`;
+    case "seasondial": return `<SeasonDial durationInFrames={d} />`;
+    case "starchsugar": return `<StarchToSugar durationInFrames={d} />`;
+    case "vernalize": return `<VernalizationClock durationInFrames={d} />`;
+    case "soilfridge": return `<SoilFridge durationInFrames={d} />`;
+    // ── componentes FIRMA del canal Agua Oxigenada (full-bleed, escena propia) ──
+    // src/peroxide/PeroxideHero.tsx + PeroxideKit.tsx. Son escenas completas (rojo/negro/
+    // blanco, THEME_PEROXIDE), NO overlays: durante ellas el avatar va HIDDEN. Todas las
+    // props (eyebrow/phrase/number/title/…) pasan tal cual; texto en INGLÉS desde el build.
+    case "glitch":
+      // TRANSICIÓN GLITCH SUAVE (overlay ~0.4s) entre bloques/secciones + tras el 1er clip.
+      return `<GlitchCut durationInFrames={d} />`;
+    case "typebeside":
+      // TARJETA QUE TIPEA AL LADO DEL AVATAR (avatar VISIBLE): tips/notas sin oscurecer todo.
+      return (
+        `<TypeCardBeside durationInFrames={d}` +
+        (b.side ? ` side=${j(b.side)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.lines ? ` lines={${j(b.lines)}}` : ``) +
+        ` />`
+      );
+    case "pxfan": case "pxchap": case "pxtoggle": case "pxhero": case "pxfoam": case "pxpour": {
+      const PXC = { pxfan: "LightTrailCards", pxchap: "ChapterTrailCard", pxtoggle: "NodeRingToggle", pxhero: "BottleHero", pxfoam: "FoamClean", pxpour: "GluGluPour" };
+      const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k) && k !== "comp" && k !== "zone" && k !== "theme") rest[k] = b[k];
+      delete rest.kind;
+      return `<${PXC[b.kind]} durationInFrames={d} {...(${j(rest)} as any)} />`;
+    }
+    case "premium": {
+      const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k) && k !== "comp" && k !== "zone" && k !== "theme") rest[k] = b[k];
+      const themeConst = `THEME_${(b.theme || "earth").toUpperCase()}`;
+      const zoneAttr = b.zone ? ` zone=${j(b.zone)}` : "";
+      return (
+        `<PremiumOverlay durationInFrames={d}${zoneAttr} theme={${themeConst}}>` +
+        `<${b.comp} durationInFrames={d} theme={${themeConst}} {...(${j(rest)} as any)} />` +
+        `</PremiumOverlay>`
+      );
+    }
+    default: {
+      if (KIT[b.kind]) {
+        const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k)) rest[k] = b[k];
+        delete rest.kind;
+        return `<${KIT[b.kind]} {...({ durationInFrames: d, ...${j(rest)} } as any)} />`;
+      }
       return null; // talk
+    }
   }
 }
 
@@ -1063,9 +1465,21 @@ if (usedPal.size) themeImports.push("COLORS");
 const imports = [`import { ReactNode } from "react";`];
 if (themeImports.length) imports.push(`import { ${themeImports.join(", ")} } from "./theme";`);
 if (kinds.has("raw")) imports.push(`import { RawShot } from "./scenes/RawShot";`);
+for (const k of kinds) if (KIT[k]) imports.push(`import { ${KIT[k]} } from "./kit/${KIT[k]}";`);
 if (kinds.has("quote")) imports.push(`import { KineticQuote, parseQuote } from "./scenes/KineticQuote";`);
+if (kinds.has("breaking")) imports.push(`import { BreakingReveal } from "./scenes/BreakingReveal";`);
+if (kinds.has("presenter")) imports.push(`import { PresenterTag } from "./scenes/PresenterTag";`);
+if (kinds.has("ticker")) imports.push(`import { NewsTicker } from "./scenes/NewsTicker";`);
+if (kinds.has("verified")) imports.push(`import { VerifiedStamp } from "./scenes/VerifiedStamp";`);
+if (kinds.has("steptrack")) imports.push(`import { StepTracker } from "./scenes/StepTracker";`);
+if (kinds.has("statslam")) imports.push(`import { StatSlam } from "./scenes/StatSlam";`);
+if (kinds.has("alertwipe")) imports.push(`import { AlertWipe } from "./scenes/AlertWipe";`);
+if (kinds.has("layered")) imports.push(`import { LayeredReveal } from "./scenes/LayeredReveal";`);
+if (kinds.has("scrolldoc")) imports.push(`import { ScrollDoc } from "./scenes/ScrollDoc";`);
+if (kinds.has("avpizarra")) imports.push(`import { AvatarPizarra } from "./scenes/AvatarPizarra";`);
 if (kinds.has("chips")) imports.push(`import { ChipsCluster } from "./scenes/ReframeContent";`);
 if (kinds.has("splitlist")) imports.push(`import { SplitList } from "./scenes/SplitList";`);
+if (["city3d", "globe3d", "number3d", "oner3d", "photo25d"].some((k) => kinds.has(k))) imports.push(`import { City3D, Globe3D, Number3D, Oner3D, Photo25D } from "./three/Scene3D";`);
 if (kinds.has("struckcards")) imports.push(`import { StruckCards } from "./scenes/StruckCards";`);
 if (kinds.has("radsky")) imports.push(`import { ColdRadiationSky } from "./scenes/ColdRadiationSky";`);
 if (kinds.has("coldcal")) imports.push(`import { ColdCalendar } from "./scenes/ColdCalendar";`);
@@ -1079,6 +1493,11 @@ if (kinds.has("heatslow")) imports.push(`import { HeatSlowDiagram } from "./scen
 if (kinds.has("frostwipe")) imports.push(`import { FrostWipe } from "./scenes/FrostWipe";`);
 if (kinds.has("rollnum")) imports.push(`import { Odometer } from "./scenes/Odometer";`);
 if (kinds.has("splitba")) imports.push(`import { SplitBeforeAfter } from "./scenes/SplitBeforeAfter";`);
+if (kinds.has("showcase")) imports.push(`import { CropShowcase } from "./scenes/CropShowcase";`);
+if (kinds.has("seasondial")) imports.push(`import { SeasonDial } from "./scenes/CropMechanisms";`);
+if (kinds.has("starchsugar")) imports.push(`import { StarchToSugar } from "./scenes/CropMechanisms";`);
+if (kinds.has("vernalize")) imports.push(`import { VernalizationClock } from "./scenes/CropMechanisms";`);
+if (kinds.has("soilfridge")) imports.push(`import { SoilFridge } from "./scenes/CropMechanisms";`);
 if (kinds.has("saltplunge")) imports.push(`import { SaltPlunge } from "./scenes/SaltPlunge";`);
 if (kinds.has("redacted")) imports.push(`import { RedactedReveal } from "./scenes/RedactedReveal";`);
 if (kinds.has("impstamp")) imports.push(`import { ImpossibleStamp } from "./scenes/ImpossibleStamp";`);
@@ -1100,6 +1519,7 @@ if (kinds.has("float")) imports.push(`import { FloatingInsert } from "./scenes/F
 if (kinds.has("headline")) imports.push(`import { KineticHeadline } from "./scenes/KineticHeadline";`);
 if (kinds.has("aged")) imports.push(`import { AgedDoc } from "./scenes/AgedDoc";`);
 if (kinds.has("bars")) imports.push(`import { BarCompare } from "./scenes/BarCompare";`);
+if (kinds.has("vs")) imports.push(`import { VsCard } from "./scenes/VsCard";`);
 if (kinds.has("cross")) imports.push(`import { CrossSection } from "./scenes/CrossSection";`);
 if (kinds.has("process")) imports.push(`import { ProcessSteps } from "./scenes/ProcessSteps";`);
 if (kinds.has("checklist")) imports.push(`import { Checklist } from "./scenes/Checklist";`);
@@ -1137,7 +1557,7 @@ if (kinds.has("signature")) imports.push(`import { SignaturePhrase } from "./sce
 if (kinds.has("vsmed")) imports.push(`import { MedicareVsMedicaid } from "./scenes/MedicareVsMedicaid";`);
 if (kinds.has("action")) imports.push(`import { ActionStepCard } from "./scenes/ActionStepCard";`);
 if (kinds.has("nextvideo")) imports.push(`import { NextVideoEndcard } from "./scenes/NextVideoEndcard";`);
-if (kinds.has("keyphrase")) imports.push(`import { KeyPhrase } from "./scenes/KeyPhrase";`);
+if (kinds.has("keyphrase")) imports.push(`import { KineticText } from "./scenes/KineticText";`);
 if (kinds.has("spooncream")) imports.push(`import { SpoonInCream } from "./scenes/SpoonInCream";`);
 if (kinds.has("statpills")) imports.push(`import { StatPills } from "./scenes/StatPills";`);
 if (kinds.has("floatprop")) imports.push(`import { FloatingProp } from "./scenes/FloatingProp";`);
@@ -1151,6 +1571,7 @@ if (kinds.has("kineticline")) imports.push(`import { KineticLine } from "./scene
 if (kinds.has("blurreveal")) imports.push(`import { BlurReveal } from "./scenes/BlurReveal";`);
 if (kinds.has("hugel")) imports.push(`import { HugelDiagram } from "./scenes/HugelDiagram";`);
 if (kinds.has("olla")) imports.push(`import { OllaDiagram } from "./scenes/OllaDiagram";`);
+if (kinds.has("perox")) imports.push(`import { PeroxidoDiagram } from "./scenes/PeroxidoDiagram";`);
 if (kinds.has("floatcards")) imports.push(`import { FloatCards } from "./scenes/FloatCards";`);
 // ── set pieces de imagen/clip ──
 if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);
@@ -1174,9 +1595,105 @@ if (kinds.has("sonarhud")) imports.push(`import { SonarHUD } from "./overlays/So
   const oxUsed = Object.entries(oxMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
   if (oxUsed.length) imports.push(`import { ${oxUsed.join(", ")} } from "./overlays/OxCards";`); }
 if (kinds.has("manualcard")) imports.push(`import { ManualCard } from "./overlays/ManualCard";`);
+{ const mdMap = { mdgauge: "MdMoistureGauge", mdlife: "MdLifespanBar", mdrecipe: "MdRecipeCard", mdpost: "MdPostGroundLine", mdchar: "MdCharReveal", mdrecap: "MdMethodRecap", mdname: "MdNameTag", mdnext: "MdNextCard" };
+  const mdUsed = Object.entries(mdMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (mdUsed.length) imports.push(`import { ${mdUsed.join(", ")} } from "./overlays/MaderaCards";`); }
+{ const mpMap = { mdtwoplanks: "MdTwoPlanks", mdsealtrap: "MdSealTrap", mdrotinside: "MdRotFromInside", mdrulestamp: "MdRuleStamp", mdfungus: "MdFungusNeeds", mdslider: "MdBeforeAfterSlider", mdkicker: "MdChapterKicker", mdendcard: "MdEndcardManual", mdtrans: "MdTransition" };
+  const mpUsed = Object.entries(mpMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (mpUsed.length) imports.push(`import { ${mpUsed.join(", ")} } from "./overlays/MaderaPolish";`); }
+{ const cmMap = { cmrecipe: "CmRecipe", cmyears: "CmYears", cmselfheal: "CmSelfHeal", cmcure: "CmCure", cmerror: "CmError", cmname: "CmNameTag" };
+  const cmUsed = Object.entries(cmMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (cmUsed.length) imports.push(`import { ${cmUsed.join(", ")} } from "./overlays/CementoPolish";`); }
+{ const slMap = { slcapillary: "SlCapillary", slsalt: "SlSalt", slseal: "SlSeal", slbarrier: "SlBarrier", sllime: "SlLime", sltwowalls: "SlTwoWalls", slname: "SlNameTag" };
+  const slUsed = Object.entries(slMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (slUsed.length) imports.push(`import { ${slUsed.join(", ")} } from "./overlays/SalitrePolish";`); }
+{ const acMap = { acgauge: "AcGauge", acports: "AcPorts", acoverfill: "AcOverfill", acsteps: "AcSteps", accircuit: "AcCircuit", acname: "AcNameTag" };
+  const acUsed = Object.entries(acMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (acUsed.length) imports.push(`import { ${acUsed.join(", ")} } from "./overlays/AcautoPolish";`); }
+{ const vtMap = { eyebrowkicker: "EyebrowKicker", frictioncard: "FrictionCard", secretsealcard: "SecretSealCard", promisechecklist: "PromiseChecklist", fanfailproof: "FanFailProof", evaporationphysics: "EvaporationPhysics", fanbottleassembly: "FanBottleAssembly", wrongvsrightplacement: "WrongVsRightPlacement", bottlesizegauge: "BottleSizeGauge", saltphysicsdiagram: "SaltPhysicsDiagram", stepbystepbuild: "StepByStepBuild", driptraycallout: "DripTrayCallout", rotationcyclediagram: "RotationCycleDiagram", oldtimersstamp: "OldTimersStamp", mythbustercard: "MythBusterCard", distancelimitwarning: "DistanceLimitWarning", threelegsdiagram: "ThreeLegsDiagram", nightdaycycle: "NightDayCycle", costvscard: "CostVsCard", recapnumberedlist: "RecapNumberedList", manualctacard: "ManualCTACard", nextvideoteaser: "NextVideoTeaser" };
+  const vtUsed = Object.entries(vtMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (vtUsed.length) imports.push(`import { ${vtUsed.join(", ")} } from "./overlays/VentiladorKit";`); }
+{ const duMap = { fichadulce: "FichaDulce", antesahora: "AntesAhora", citaabuela: "CitaAbuela", ingredientesflotan: "IngredientesFlotan", topdulce: "TopDulce", numerodulce: "NumeroDulce" };
+  const duUsed = Object.entries(duMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (duUsed.length) imports.push(`import { ${duUsed.join(", ")} } from "./components/DulcesCards";`); }
+if (kinds.has("dishgrid")) imports.push(`import { DishGrid } from "./components/DishGrid";`);
+// ── COMPONENTES FIRMA "Agua Oxigenada" (src/peroxide/) — full-bleed, escena propia ──
+{
+  const PX_HERO = { pxfan: "LightTrailCards", pxchap: "ChapterTrailCard", pxtoggle: "NodeRingToggle", pxhero: "BottleHero", glitch: "GlitchCut", typebeside: "TypeCardBeside" };
+  const PX_KIT = { pxfoam: "FoamClean", pxpour: "GluGluPour" };
+  const heroUsed = Object.entries(PX_HERO).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  const kitUsed = Object.entries(PX_KIT).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (heroUsed.length) imports.push(`import { ${heroUsed.join(", ")} } from "../peroxide/PeroxideHero";`);
+  if (kitUsed.length) imports.push(`import { ${kitUsed.join(", ")} } from "../peroxide/PeroxideKit";`);
+}
+// ── KIT PREMIUM (themeable) — componentes usados vía kind:"premium" + comp:"X" ──
+if (kinds.has("premium")) {
+  imports.push(`import { PremiumOverlay } from "./scenes/PremiumOverlay";`);
+  const premiumBeats = beats.filter((b) => b.kind === "premium");
+  const compsUsed = [...new Set(premiumBeats.map((b) => b.comp).filter(Boolean))];
+  const themesUsed = [...new Set(premiumBeats.map((b) => `THEME_${(b.theme || "earth").toUpperCase()}`))];
+  if (compsUsed.length) imports.push(`import { ${[...compsUsed, ...themesUsed].join(", ")} } from "./kit/premium";`);
+  else if (themesUsed.length) imports.push(`import { ${themesUsed.join(", ")} } from "./kit/premium";`);
+}
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";
+
+// ── AUDIO: cama de música con ducking (Whisper) + riel de SFX ────────────────
+// bs.music = { "src": "music/bed_x.mp3", "base"?: 0.13, "duck"?: 0.05 }
+// La actividad de voz sale de public/captions_<slug>.json (o bs.captions): palabras
+// con ms exactos → intervalos de habla mergeados (gap ≤ 350ms) → AudioBed duckea ahí.
+let audioBedLit = "null";
+if (bs.music?.src) {
+  // Los timestamps de palabra de Whisper NO tienen pausas (estira los bordes) → la
+  // actividad de voz se mide del AUDIO REAL del avatar con silencedetect (ffmpeg
+  // completo). Silencios ≥0.35s a -32dB = respiraciones/pausas donde la música asoma.
+  let spans = [];
+  const avatarPath = path.join("public", bs.musicVoice || AVATAR);
+  const winget = path.join(process.env.LOCALAPPDATA || "", "Microsoft", "WinGet", "Links", "ffmpeg.exe");
+  const FFULL = process.env.FFMPEG || (fs.existsSync(winget) ? winget : "ffmpeg");
+  if (fs.existsSync(avatarPath)) {
+    const { spawnSync } = await import("child_process");
+    const r = spawnSync(FFULL, ["-hide_banner", "-i", avatarPath, "-af", "silencedetect=noise=-32dB:d=0.35", "-f", "null", "-"], { encoding: "utf8", maxBuffer: 1 << 24, timeout: 300000 });
+    const txt = (r.stderr || "") + (r.stdout || "");
+    const sil = [];
+    const reS = /silence_start: ([\d.]+)/g, reE = /silence_end: ([\d.]+)/g;
+    let m; const starts = [], ends = [];
+    while ((m = reS.exec(txt))) starts.push(+m[1]);
+    while ((m = reE.exec(txt))) ends.push(+m[1]);
+    for (let i = 0; i < starts.length; i++) sil.push([starts[i], ends[i] ?? Infinity]);
+    const durM = txt.match(/Duration: (\d+):(\d+):(\d+\.\d+)/);
+    const aDur = durM ? +durM[1] * 3600 + +durM[2] * 60 + +durM[3] : 0;
+    // complemento: voz = todo lo que no es silencio
+    let t = 0;
+    for (const [a, b] of sil) { if (a - t > 0.1) spans.push([+t.toFixed(2), +a.toFixed(2)]); t = Math.min(b, aDur || b); }
+    if (aDur && aDur - t > 0.1) spans.push([+t.toFixed(2), +aDur.toFixed(2)]);
+    if (!spans.length) warnings.push(`music: silencedetect no devolvió nada sobre ${avatarPath} → ducking constante`);
+  } else {
+    warnings.push(`music: no encontré ${avatarPath} → AudioBed sin ducking (base fijo)`);
+  }
+  const totalSec = bs.total || (beats.length ? Math.max(...beats.map((b) => (b.start || 0) + (b.dur || 0))) : 60);
+  audioBedLit = j({ src: bs.music.src, activity: spans, base: bs.music.base ?? 0.13, duck: bs.music.duck ?? 0.05, totalSec: +(+totalSec).toFixed(2), loop: bs.music.loop !== false });
+}
+// SFX automáticos (desactivar con "sfx": false): pop suave cuando entra un componente
+// gráfico, transición suave en los cambios de sección (beats con trans). Cap 1/2s.
+const sfxCues = [];
+if (bs.sfx !== false) {
+  const OVERLAY_ROLE = { raw: null, talk: null };
+  let lastAt = -99;
+  for (const b of [...beats].sort((a, c) => (a.start || 0) - (c.start || 0))) {
+    if (b.sfx === false) continue;
+    let role = typeof b.sfx === "string" ? b.sfx : null;
+    if (!role) {
+      if (b.kind === "raw" && b.trans) role = "transition";
+      else if (b.kind !== "raw" && b.kind !== "talk" && OVERLAY_ROLE[b.kind] !== null) role = "popUp";
+    }
+    if (!role) continue;
+    if (b.start - lastAt < 2) continue;
+    lastAt = b.start;
+    sfxCues.push({ at: +(+b.start).toFixed(2), role, vol: role === "transition" ? 0.3 : 0.32 });
+  }
+}
 
 const header = `// cues_${VIDEO}.gen.tsx — GENERADO por beatsheet.mjs desde ${path.basename(bsArg)}.
 // NO editar a mano: cambiá el beatsheet y re-corré  node beatsheet.mjs ${bsArg}
@@ -1193,6 +1710,12 @@ export const REFRAME: { start: number; end: number }[] = ${j(reframe)};
 export const OVERLAYS: Cue[] = [
 ${overlayLines.join("\n")}
 ];
+
+// cama de música (AudioBed) — null si el beatsheet no define "music"
+export const AUDIO_BED: { src: string; activity: [number, number][]; base: number; duck: number; totalSec: number; loop: boolean } | null = ${audioBedLit};
+
+// riel de SFX suaves (SfxRail) — [] si "sfx": false
+export const SFX_CUES: { at: number; role: string; vol?: number }[] = ${j(sfxCues)};
 `;
 
 const outTsx = path.join("src", "VideoEdit", `cues_${VIDEO}.gen.tsx`);
@@ -1205,8 +1728,11 @@ const clipsPath = path.join("public", "vid", `clips_${VIDEO}.json`);
 fs.writeFileSync(promptsPath, JSON.stringify(imgList, null, 2));
 fs.writeFileSync(clipsPath, JSON.stringify(clipList, null, 2));
 
+if (_probeDirty) { try { fs.mkdirSync(path.dirname(PROBE_CACHE), { recursive: true }); fs.writeFileSync(PROBE_CACHE, JSON.stringify(_probeCache, null, 1)); } catch {} }
+
 // ── resumen ──────────────────────────────────────────────────────────────────
 console.log(`=== beatsheet ${VIDEO} ===`);
+if (bs.music?.src) console.log(`música: ${bs.music.src} (ducking silencedetect del avatar) · sfx auto: ${sfxCues.length}`);
 console.log(`beats: ${beats.length}  ·  cues: ${cueLines.length}  ·  reframe: ${reframe.length}`);
 console.log(`imágenes a generar: ${imgList.length}  ·  clips: ${clipList.length}`);
 console.log(`→ ${outTsx}`);

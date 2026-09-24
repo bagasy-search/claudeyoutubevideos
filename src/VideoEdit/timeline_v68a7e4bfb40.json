@@ -1,0 +1,4231 @@
+{
+  "version": 1,
+  "slug": "v68a7e4bfb40",
+  "kit": "federer-fluid",
+  "premium_director_enabled": true,
+  "composition_id": "Bagasy-v68a7e4bfb40",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration_in_frames": 46474,
+  "audio_src": "avatar_v68a7e4bfb40.mp4",
+  "captions_src": "captions_v68a7e4bfb40.json",
+  "scenes": [
+    {
+      "id": "s01-apertura-m001",
+      "section_id": "s01-apertura",
+      "from": 0,
+      "duration": 341,
+      "narration": "Estos siete ejercicios pueden reactivar después de los cuarenta las señales de fuerza músculo y vitalidad que ninguna",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m002",
+      "section_id": "s01-apertura",
+      "from": 341,
+      "duration": 246,
+      "narration": "Y no no estoy diciendo que una sentadilla rejuvenezca sus hormonas veinte años Eso sería falso Estoy hablando",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_001.mp4",
+          "asset_id": "v68a7e4bfb40:s01-apertura-m002:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m003",
+      "section_id": "s01-apertura",
+      "from": 587,
+      "duration": 360,
+      "narration": "movimientos que reclutan grandes masas musculares ayudan a reducir grasa abdominal y crean condiciones más favorables para una",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_001.png",
+          "asset_id": "v68a7e4bfb40:s01-apertura-m003:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m004",
+      "section_id": "s01-apertura",
+      "from": 947,
+      "duration": 225,
+      "narration": "El primer número importante es dos Dos sesiones de fuerza por semana ya pueden iniciar cambios medibles en",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_002.mp4",
+          "asset_id": "v68a7e4bfb40:s01-apertura-m004:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m005",
+      "section_id": "s01-apertura",
+      "from": 1172,
+      "duration": 416,
+      "narration": "capacidad física El segundo número es veinte Con veinte a cuarenta minutos por sesión",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Dos sesiones de fuerza por semana cambian su capacidad",
+          "sub": "Veinte a cuarenta minutos por sesión alcanzan",
+          "detail": "Semana en siete columnas donde dos se elevan con una marca de fuerza y una barra de capacidad sube detrás",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "dose-two-sessions",
+          "value": "2",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m006",
+      "section_id": "s01-apertura",
+      "from": 1588,
+      "duration": 170,
+      "narration": "Pero existe una trampa incómoda Mucha gente hace ejercicios correctos y termina con menos energía peor sueño y",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m007",
+      "section_id": "s01-apertura",
+      "from": 1758,
+      "duration": 353,
+      "narration": "menos energía peor sueño y más dolor Al final le revelaré el error",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "La trampa: menos energía, peor sueño y más dolor",
+          "sub": "Al final, el error y la prueba de cuarenta y ocho horas",
+          "detail": "Cuatro pesos que hunden lentamente una barra mientras al fondo espera un reloj de cuarenta y ocho horas",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "promise-ledger",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Menos energía",
+            "Peor sueño",
+            "Más dolor",
+            "Rutina abandonada"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m008",
+      "section_id": "s01-apertura",
+      "from": 2111,
+      "duration": 206,
+      "narration": "le daré una prueba de cuarenta y ocho horas para saber si usted está entrenando o solamente castigando",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_003.mp4",
+          "asset_id": "v68a7e4bfb40:s01-apertura-m008:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s02-que-significa-m009",
+      "section_id": "s02-que-significa",
+      "from": 2317,
+      "duration": 304,
+      "narration": "Primero aclaremos qué significa reactivar la testosterona A partir de la mediana edad sus niveles pueden disminuir gradualmente",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_002.png",
+          "asset_id": "v68a7e4bfb40:s02-que-significa-m009:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s02-que-significa-m010",
+      "section_id": "s02-que-significa",
+      "from": 2621,
+      "duration": 356,
+      "narration": "edad no actúa sola El exceso de grasa abdominal la inactividad el sueño deficiente el alcohol",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "La edad no actúa sola sobre sus niveles",
+          "sub": "Grasa abdominal, inactividad, sueño, alcohol y medicamentos",
+          "detail": "Una línea descendente central con cinco entradas laterales que empujan la pendiente, cada una con su propia luz",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "multifactor-decline",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s02-que-significa-m011",
+      "section_id": "s02-que-significa",
+      "from": 2977,
+      "duration": 94,
+      "narration": "Sentirse cansado no demuestra que exista testosterona baja Tampoco lo demuestran por separado la pérdida de deseo sexual",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_004.mp4",
+          "asset_id": "v68a7e4bfb40:s02-que-significa-m011:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s02-que-significa-m012",
+      "section_id": "s02-que-significa",
+      "from": 3071,
+      "duration": 450,
+      "narration": "Sentirse cansado no demuestra que exista testosterona baja Tampoco lo demuestran por separado la pérdida de deseo",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Sentirse cansado no demuestra que exista testosterona baja",
+          "sub": "Deseo, ánimo, concentración y fuerza tienen otras causas",
+          "detail": "Un síntoma central del que se abren cuatro rutas causales hacia atrás, todas encendidas a la vez",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "differential-symptoms",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Pérdida de deseo sexual",
+            "Ánimo deprimido",
+            "Dificultad para concentrarse",
+            "Reducción de fuerza"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s02-que-significa-m013",
+      "section_id": "s02-que-significa",
+      "from": 3521,
+      "duration": 107,
+      "narration": "Cuando hay una sospecha real el diagnóstico requiere síntomas compatibles y análisis de sangre realizados en condiciones apropiadas",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s02-que-significa-m014",
+      "section_id": "s02-que-significa",
+      "from": 3628,
+      "duration": 570,
+      "narration": "síntomas compatibles y análisis de sangre realizados en condiciones apropiadas Normalmente se mide por la mañana",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Normalmente se mide por la mañana y se confirma",
+          "sub": "Síntomas compatibles más análisis en condiciones apropiadas",
+          "detail": "Tubo de extracción con luz de mañana temprana y una segunda extracción que confirma la primera cifra",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "diagnostic-protocol",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 1,
+          "total": 2,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s03-por-que-musculo-m015",
+      "section_id": "s03-por-que-musculo",
+      "from": 4198,
+      "duration": 388,
+      "narration": "Ahora por qué estos siete y no cualquier gimnasia Porque el músculo es un tejido activo Cuando usted",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_005.mp4",
+          "asset_id": "v68a7e4bfb40:s03-por-que-musculo-m015:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s03-por-que-musculo-m016",
+      "section_id": "s03-por-que-musculo",
+      "from": 4586,
+      "duration": 187,
+      "narration": "recibe una orden conserve esta fuerza porque todavía la necesitamos",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "El músculo es un tejido activo que recibe una",
+          "sub": "Conserve esta fuerza porque todavía la necesitamos",
+          "detail": "Fibra muscular que recibe tensión desde una carga y responde encendiendo una señal que viaja hacia el fondo",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "tension-order",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s03-por-que-musculo-m017",
+      "section_id": "s03-por-que-musculo",
+      "from": 4773,
+      "duration": 346,
+      "narration": "Esa orden importa muchísimo después de los sesenta Más fuerza significa levantarse con menos ayuda Subir escaleras Cargar",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_003.png",
+          "asset_id": "v68a7e4bfb40:s03-por-que-musculo-m017:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s03-por-que-musculo-m018",
+      "section_id": "s03-por-que-musculo",
+      "from": 5119,
+      "duration": 292,
+      "narration": "Reaccionar ante un tropiezo También ayuda al cuerpo a manejar mejor la glucosa y facilita conservar músculo mientras",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_006.mp4",
+          "asset_id": "v68a7e4bfb40:s03-por-que-musculo-m018:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s03-por-que-musculo-m019",
+      "section_id": "s03-por-que-musculo",
+      "from": 5411,
+      "duration": 253,
+      "narration": "El verdadero enemigo no es cumplir años Es la combinación de inactividad pérdida muscular y soluciones rápidas",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s03-por-que-musculo-m020",
+      "section_id": "s03-por-que-musculo",
+      "from": 5664,
+      "duration": 220,
+      "narration": "cápsula se termina y usted compra otra Una capacidad recuperada permanece en su cuerpo mientras siga utilizándola",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Una cápsula se termina; una capacidad se queda",
+          "sub": "Mientras usted siga utilizándola",
+          "detail": "A la izquierda frascos que se vacían y se reemplazan; a la derecha la misma persona sosteniendo la carga sin ayuda",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "capsule-vs-capacity",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s03-por-que-musculo-m021",
+      "section_id": "s03-por-que-musculo",
+      "from": 5884,
+      "duration": 184,
+      "narration": "Tampoco confunda la elevación hormonal breve que puede aparecer después del esfuerzo con un aumento permanente",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_007.mp4",
+          "asset_id": "v68a7e4bfb40:s03-por-que-musculo-m021:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s03-por-que-musculo-m022",
+      "section_id": "s03-por-que-musculo",
+      "from": 6068,
+      "duration": 290,
+      "narration": "aumento permanente Una sesión puede generar cambios transitorios",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "Una sesión genera cambios transitorios, no un aumento",
+          "sub": "El beneficio confiable está en la suma",
+          "detail": "Pizarra escrita a mano con un pico que sube y vuelve a bajar, y debajo una línea base que apenas se mueve",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "transient-vs-basal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s03-por-que-musculo-m023",
+      "section_id": "s03-por-que-musculo",
+      "from": 6358,
+      "duration": 303,
+      "narration": "basal El beneficio más confiable está en la suma fuerza mejor composición corporal descanso movilidad y autonomía",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_004.png",
+          "asset_id": "v68a7e4bfb40:s03-por-que-musculo-m023:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m024",
+      "section_id": "s04-silla",
+      "from": 6661,
+      "duration": 106,
+      "narration": "El primer ejercicio parece demasiado sencillo Precisamente por eso",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_008.mp4",
+          "asset_id": "v68a7e4bfb40:s04-silla-m024:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m025",
+      "section_id": "s04-silla",
+      "from": 6767,
+      "duration": 167,
+      "narration": "ejercicio parece demasiado sencillo Precisamente por eso casi todos lo subestiman Es levantarse de una silla",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio uno: levantarse de una silla",
+          "sub": "Parece demasiado sencillo y casi todos lo subestiman",
+          "detail": "La silla entra desde fuera de cuadro y queda contra la pared mientras el fondo se oscurece en capas",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "exercise-one-open",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m026",
+      "section_id": "s04-silla",
+      "from": 6934,
+      "duration": 200,
+      "narration": "Use una silla firme apoyada contra una pared Siéntese cerca del borde Separe los pies al ancho de",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m027",
+      "section_id": "s04-silla",
+      "from": 7134,
+      "duration": 272,
+      "narration": "ancho de las caderas Incline un poco el torso y empuje el suelo hasta quedar de pie",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Silla firme contra la pared y pies al ancho",
+          "sub": "Incline el torso y empuje el suelo hasta quedar de pie",
+          "detail": "Vista lateral con la silla, la pared y la separación de los pies marcada por una guía que aparece y se retira",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "chair-setup",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 1,
+          "total": 3,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m028",
+      "section_id": "s04-silla",
+      "from": 7406,
+      "duration": 300,
+      "narration": "Haga entre seis y diez repeticiones Descanse y repita una vez más si mantiene el control Al principio",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_009.mp4",
+          "asset_id": "v68a7e4bfb40:s04-silla-m028:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m029",
+      "section_id": "s04-silla",
+      "from": 7706,
+      "duration": 255,
+      "narration": "manos sobre los muslos Luego use menos ayuda Más adelante cruce los brazos o sostenga una mochila liviana",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_005.png",
+          "asset_id": "v68a7e4bfb40:s04-silla-m029:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m030",
+      "section_id": "s04-silla",
+      "from": 7961,
+      "duration": 425,
+      "narration": "Haga ahora una prueba física Complete una repetición dejándose caer sobre la silla Después realice otra tardando tres",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_010.mp4",
+          "asset_id": "v68a7e4bfb40:s04-silla-m030:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m031",
+      "section_id": "s04-silla",
+      "from": 8386,
+      "duration": 231,
+      "narration": "segunda repetición los muslos deben frenar su peso",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Dejarse caer contra bajar tardando tres segundos",
+          "sub": "En la segunda, los muslos deben frenar su peso",
+          "detail": "Dos descensos idénticos en paralelo; uno colapsa de golpe y el otro se frena con tensión visible en los muslos",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "drop-vs-control",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m032",
+      "section_id": "s04-silla",
+      "from": 8617,
+      "duration": 305,
+      "narration": "No hace falta golpear el suelo No hace falta jadear El músculo responde a una resistencia suficiente aplicada",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m033",
+      "section_id": "s04-silla",
+      "from": 8922,
+      "duration": 292,
+      "narration": "Este movimiento involucra muslos caderas y tronco Además entrena una acción que determina mucha independencia Si necesita impulsarse",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_006.png",
+          "asset_id": "v68a7e4bfb40:s04-silla-m033:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m034",
+      "section_id": "s04-silla",
+      "from": 9214,
+      "duration": 186,
+      "narration": "con las manos cada vez que se levanta no lo tome como una condena Es su punto de",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m035",
+      "section_id": "s04-silla",
+      "from": 9400,
+      "duration": 138,
+      "narration": "Anote cuántas repeticiones controladas puede realizar hoy Repita la prueba dentro de cuatro semanas utilizando",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m036",
+      "section_id": "s04-silla",
+      "from": 9538,
+      "duration": 315,
+      "narration": "prueba dentro de cuatro semanas utilizando la misma silla Quizá haga más repeticiones Quizá necesite menos ayuda",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Repita la prueba dentro de cuatro semanas",
+          "sub": "Misma silla: más repeticiones o menos ayuda",
+          "detail": "Dos columnas de repeticiones separadas por cuatro semanas, con la misma silla como referencia fija en el fondo",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "four-week-retest",
+          "value": "4",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m037",
+      "section_id": "s04-silla",
+      "from": 9853,
+      "duration": 57,
+      "narration": "Si aparece dolor agudo en la rodilla la cadera o la espalda deténgase El esfuerzo muscular no es",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_011.mp4",
+          "asset_id": "v68a7e4bfb40:s04-silla-m037:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s04-silla-m038",
+      "section_id": "s04-silla",
+      "from": 9910,
+      "duration": 445,
+      "narration": "dolor agudo en la rodilla la cadera o la espalda deténgase",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Dolor agudo en rodilla, cadera o espalda: deténgase",
+          "sub": "Un pinchazo articular no es falta de carácter",
+          "detail": "Frontera de seguridad que se ilumina sobre la articulación y detiene el movimiento antes de completar la repetición",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "joint-alarm",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Pinchazo articular",
+            "Bloqueo de la articulación",
+            "Dolor que aumenta con cada repetición",
+            "Dolor en la espalda"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m039",
+      "section_id": "s05-bisagra",
+      "from": 10355,
+      "duration": 241,
+      "narration": "El segundo ejercicio trabaja una zona que muchos pierden sin notarlo hasta que intentan levantar una",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_007.png",
+          "asset_id": "v68a7e4bfb40:s05-bisagra-m039:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m040",
+      "section_id": "s05-bisagra",
+      "from": 10596,
+      "duration": 215,
+      "narration": "Glúteos parte posterior de los muslos y espalda El movimiento se llama bisagra de cadera",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio dos: la bisagra de cadera",
+          "sub": "Glúteos, parte posterior de los muslos y espalda",
+          "detail": "El torso entra en plano lateral y la cadera viaja hacia atrás mientras se encienden las tres zonas implicadas",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "exercise-two-open",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m041",
+      "section_id": "s05-bisagra",
+      "from": 10811,
+      "duration": 224,
+      "narration": "A ver el nombre suena técnico pero la idea es simple La cadera viaja hacia atrás",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_012.mp4",
+          "asset_id": "v68a7e4bfb40:s05-bisagra-m041:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m042",
+      "section_id": "s05-bisagra",
+      "from": 11035,
+      "duration": 198,
+      "narration": "mientras el torso se inclina como una pieza firme No es doblar y redondear toda la espalda",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m043",
+      "section_id": "s05-bisagra",
+      "from": 11233,
+      "duration": 56,
+      "narration": "Colóquese de pie a unos veinte centímetros de una pared mirando en dirección contraria Lleve la cadera hacia",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_013.mp4",
+          "asset_id": "v68a7e4bfb40:s05-bisagra-m043:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m044",
+      "section_id": "s05-bisagra",
+      "from": 11289,
+      "duration": 436,
+      "narration": "unos veinte centímetros de una pared mirando en dirección contraria Lleve la cadera hacia atrás hasta tocar",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Cadera hacia atrás hasta tocar la pared con los",
+          "sub": "De pie a unos veinte centímetros, mirando en dirección contraria",
+          "detail": "Pared como referencia fija y la cadera que la alcanza; el torso se inclina como una pieza firme, no se redondea",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "wall-hinge-drill",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 2,
+          "total": 3,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m045",
+      "section_id": "s05-bisagra",
+      "from": 11725,
+      "duration": 294,
+      "narration": "Cuando pueda hacerlo con equilibrio sostenga una mochila con ambas manos Déjela bajar cerca de sus piernas y",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_008.png",
+          "asset_id": "v68a7e4bfb40:s05-bisagra-m045:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m046",
+      "section_id": "s05-bisagra",
+      "from": 12019,
+      "duration": 274,
+      "narration": "Empiece con dos o tres libros El peso debe permanecer cerca del cuerpo",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Empiece con dos o tres libros en la mochila",
+          "sub": "El peso debe permanecer cerca del cuerpo",
+          "detail": "Mochila con dos libros junto al cuerpo y la misma carga alejada, donde la palanca sobre la espalda crece visiblemente",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "load-lever",
+          "value": "2-3",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m047",
+      "section_id": "s05-bisagra",
+      "from": 12293,
+      "duration": 401,
+      "narration": "Realice entre seis y diez repeticiones lentas Al subir termine recto No empuje la pelvis hacia delante ni",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_014.mp4",
+          "asset_id": "v68a7e4bfb40:s05-bisagra-m047:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m048",
+      "section_id": "s05-bisagra",
+      "from": 12694,
+      "duration": 246,
+      "narration": "Por qué vale tanto Porque enseña a producir fuerza desde la cadera Esa habilidad aparece al recoger una",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m049",
+      "section_id": "s05-bisagra",
+      "from": 12940,
+      "duration": 311,
+      "narration": "mover una maceta o levantar una valija También permite entrenar una enorme cantidad de músculo sin depender de",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_015.mp4",
+          "asset_id": "v68a7e4bfb40:s05-bisagra-m049:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m050",
+      "section_id": "s05-bisagra",
+      "from": 13251,
+      "duration": 272,
+      "narration": "La bisagra no enciende la testosterona como un interruptor Proporciona una razón para conservar músculo Si dentro de",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_009.png",
+          "asset_id": "v68a7e4bfb40:s05-bisagra-m050:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m051",
+      "section_id": "s05-bisagra",
+      "from": 13523,
+      "duration": 236,
+      "narration": "varias semanas puede mover un poco más de carga con la misma técnica su cuerpo se habrá adaptado",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_016.mp4",
+          "asset_id": "v68a7e4bfb40:s05-bisagra-m051:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m052",
+      "section_id": "s05-bisagra",
+      "from": 13759,
+      "duration": 340,
+      "narration": "Si tiene osteoporosis diagnosticada fracturas vertebrales dolor que baja por una pierna o una cirugía reciente necesita",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m053",
+      "section_id": "s05-bisagra",
+      "from": 14099,
+      "duration": 249,
+      "narration": "adaptación profesional antes de añadir peso No copie la carga de otra persona",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Osteoporosis o fracturas vertebrales: adaptación profesional",
+          "sub": "No copie la carga de otra persona",
+          "detail": "Columna en corte con una carga que se detiene antes de entrar mientras una ficha clínica se superpone",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "spine-boundary",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Osteoporosis diagnosticada",
+            "Fracturas vertebrales",
+            "Dolor que baja por una pierna",
+            "Cirugía reciente"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s05-bisagra-m054",
+      "section_id": "s05-bisagra",
+      "from": 14348,
+      "duration": 206,
+      "narration": "sabe cuántos años tiene el hombre del video que usted vio Solo siente la fuerza que recibe",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_017.mp4",
+          "asset_id": "v68a7e4bfb40:s05-bisagra-m054:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m055",
+      "section_id": "s06-flexion",
+      "from": 14554,
+      "duration": 83,
+      "narration": "El tercer ejercicio devuelve fuerza de empuje Es",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_010.png",
+          "asset_id": "v68a7e4bfb40:s06-flexion-m055:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m056",
+      "section_id": "s06-flexion",
+      "from": 14637,
+      "duration": 158,
+      "narration": "ejercicio devuelve fuerza de empuje Es la flexión contra una pared",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio tres: la flexión contra una pared",
+          "sub": "Devuelve fuerza de empuje",
+          "detail": "Las manos entran a cuadro y se apoyan en la superficie mientras el cuerpo se alinea en profundidad",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "exercise-three-open",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m057",
+      "section_id": "s06-flexion",
+      "from": 14795,
+      "duration": 381,
+      "narration": "Apoye las manos algo más abiertas que los hombros Lleve los pies hacia atrás y mantenga el cuerpo",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_018.mp4",
+          "asset_id": "v68a7e4bfb40:s06-flexion-m057:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m058",
+      "section_id": "s06-flexion",
+      "from": 15176,
+      "duration": 89,
+      "narration": "La pared es la versión más accesible Una encimera firme aumenta la dificultad Una superficie más",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m059",
+      "section_id": "s06-flexion",
+      "from": 15265,
+      "duration": 91,
+      "narration": "encimera firme aumenta la dificultad Una superficie más baja la aumenta todavía más La inclinación es su regulador",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "La inclinación es su regulador de dificultad",
+          "sub": "Pared, encimera firme y superficies más bajas",
+          "detail": "Tres alturas de apoyo escalonadas en profundidad; la mano sube o baja de superficie y el esfuerzo cambia con ella",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "incline-dial",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 2,
+          "total": 3,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m060",
+      "section_id": "s06-flexion",
+      "from": 15356,
+      "duration": 503,
+      "narration": "Haga entre seis y doce repeticiones Los codos deben viajar en diagonal no completamente abiertos Si termina doce",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_019.mp4",
+          "asset_id": "v68a7e4bfb40:s06-flexion-m060:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m061",
+      "section_id": "s06-flexion",
+      "from": 15859,
+      "duration": 247,
+      "narration": "facilidad aleje un poco los pies la próxima vez Si la cintura se hunde o la cabeza se",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_011.png",
+          "asset_id": "v68a7e4bfb40:s06-flexion-m061:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m062",
+      "section_id": "s06-flexion",
+      "from": 16106,
+      "duration": 350,
+      "narration": "Este movimiento fortalece pecho hombros brazos y tronco Pero su valor verdadero aparece al empujar una puerta pesada",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_020.mp4",
+          "asset_id": "v68a7e4bfb40:s06-flexion-m062:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m063",
+      "section_id": "s06-flexion",
+      "from": 16456,
+      "duration": 271,
+      "narration": "o protegerse si pierde el equilibrio La fuerza no es una fotografía frente al espejo Es una reserva",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m064",
+      "section_id": "s06-flexion",
+      "from": 16727,
+      "duration": 545,
+      "narration": "Aquí suele aparecer una objeción Doctor yo camino todos los días eso no alcanza Caminar es excelente para",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_012.png",
+          "asset_id": "v68a7e4bfb40:s06-flexion-m064:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m065",
+      "section_id": "s06-flexion",
+      "from": 17272,
+      "duration": 59,
+      "narration": "torso y toda la potencia de las piernas Caminar y entrenar fuerza no compiten Se completan",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Caminar y entrenar fuerza no compiten: se completan",
+          "sub": "La caminata puede no conservar la fuerza del torso",
+          "detail": "Camino de caminata a la izquierda y empuje contra superficie a la derecha; las dos imágenes convergen en vez de excluirse",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "walk-vs-strength",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s06-flexion-m066",
+      "section_id": "s06-flexion",
+      "from": 17331,
+      "duration": 180,
+      "narration": "la fuerza del torso y toda la potencia de las piernas Caminar y entrenar fuerza no compiten Se",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s07-remo-m067",
+      "section_id": "s07-remo",
+      "from": 17511,
+      "duration": 82,
+      "narration": "El cuarto ejercicio es el compañero del",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s07-remo-m068",
+      "section_id": "s07-remo",
+      "from": 17593,
+      "duration": 117,
+      "narration": "ejercicio es el compañero del empuje Es el remo con banda elástica",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio cuatro: el remo con banda elástica",
+          "sub": "Es el compañero del empuje",
+          "detail": "La banda entra desde fuera de cuadro y se tensa mientras el fondo de empuje retrocede a segundo plano",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "exercise-four-open",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s07-remo-m069",
+      "section_id": "s07-remo",
+      "from": 17710,
+      "duration": 345,
+      "narration": "Fije la banda a un punto verdaderamente sólido Antes de tirar revise el material Si tiene grietas",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_021.mp4",
+          "asset_id": "v68a7e4bfb40:s07-remo-m069:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s07-remo-m070",
+      "section_id": "s07-remo",
+      "from": 18055,
+      "duration": 108,
+      "narration": "banda que se rompe puede golpearle la cara",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Antes de tirar, revise el material de la banda",
+          "sub": "Una banda que se rompe puede golpearle la cara",
+          "detail": "Banda a contraluz donde se marcan las zonas gastadas y el anclaje se comprueba antes del primer tirón",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "band-safety-check",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Grietas en el material",
+            "Zonas blanquecinas",
+            "Banda reseca",
+            "Anclaje poco sólido"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s07-remo-m071",
+      "section_id": "s07-remo",
+      "from": 18163,
+      "duration": 245,
+      "narration": "Sostenga un extremo con cada mano Retroceda hasta sentir una tensión suave Lleve los codos hacia atrás",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_013.png",
+          "asset_id": "v68a7e4bfb40:s07-remo-m071:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s07-remo-m072",
+      "section_id": "s07-remo",
+      "from": 18408,
+      "duration": 58,
+      "narration": "y acerque las manos a las costillas Imagine que junta los omóplatos sin levantar los hombros Regrese despacio",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_022.mp4",
+          "asset_id": "v68a7e4bfb40:s07-remo-m072:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s07-remo-m073",
+      "section_id": "s07-remo",
+      "from": 18466,
+      "duration": 432,
+      "narration": "Realice entre ocho y doce repeticiones Si puede hacer veinte sin esfuerzo la resistencia ya es",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s07-remo-m074",
+      "section_id": "s07-remo",
+      "from": 18898,
+      "duration": 206,
+      "narration": "pequeña Aléjese ligeramente acorte la banda de manera segura o utilice otra un poco más firme",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_023.mp4",
+          "asset_id": "v68a7e4bfb40:s07-remo-m074:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s07-remo-m075",
+      "section_id": "s07-remo",
+      "from": 19104,
+      "duration": 266,
+      "narration": "El remo fortalece espalda hombros y brazos También devuelve trabajo a músculos que pasan demasiadas horas alargados frente",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_014.png",
+          "asset_id": "v68a7e4bfb40:s07-remo-m075:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s07-remo-m076",
+      "section_id": "s07-remo",
+      "from": 19370,
+      "duration": 256,
+      "narration": "o al televisor No corregirá por arte de magia todos los cambios posturales Sí puede recuperar la capacidad",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_024.mp4",
+          "asset_id": "v68a7e4bfb40:s07-remo-m076:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s08-hormonas-publicidad-m077",
+      "section_id": "s08-hormonas-publicidad",
+      "from": 19626,
+      "duration": 370,
+      "narration": "Y qué tiene esto que ver con las hormonas Más de lo que parece pero no",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s08-hormonas-publicidad-m078",
+      "section_id": "s08-hormonas-publicidad",
+      "from": 19996,
+      "duration": 93,
+      "narration": "cuerpo no entiende etiquetas para hombres Entiende tensión alimento descanso y repetición",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "El cuerpo entiende tensión, alimento, descanso y",
+          "sub": "No entiende etiquetas para hombres",
+          "detail": "Cuatro entradas que convergen en una señal de entrenamiento; una etiqueta comercial intenta entrar y no encaja",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "training-signal-inputs",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s08-hormonas-publicidad-m079",
+      "section_id": "s08-hormonas-publicidad",
+      "from": 20089,
+      "duration": 131,
+      "narration": "la señal de entrenamiento El cuerpo no entiende etiquetas para hombres Entiende tensión alimento descanso y repetición",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_025.mp4",
+          "asset_id": "v68a7e4bfb40:s08-hormonas-publicidad-m079:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s08-hormonas-publicidad-m080",
+      "section_id": "s08-hormonas-publicidad",
+      "from": 20220,
+      "duration": 247,
+      "narration": "sighs Me da cierta bronca ver cómo se explota la preocupación de quien perdió vitalidad Le muestran el",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_015.png",
+          "asset_id": "v68a7e4bfb40:s08-hormonas-publicidad-m080:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s08-hormonas-publicidad-m081",
+      "section_id": "s08-hormonas-publicidad",
+      "from": 20467,
+      "duration": 277,
+      "narration": "joven Después le ofrecen una mezcla de hierbas y le hacen creer que su hombría cabe en un",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_026.mp4",
+          "asset_id": "v68a7e4bfb40:s08-hormonas-publicidad-m081:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s08-hormonas-publicidad-m082",
+      "section_id": "s08-hormonas-publicidad",
+      "from": 20744,
+      "duration": 132,
+      "narration": "Natural tampoco significa automáticamente eficaz o seguro Algunos suplementos pueden interactuar con medicamentos alterar análisis o contener cantidades",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s08-hormonas-publicidad-m083",
+      "section_id": "s08-hormonas-publicidad",
+      "from": 20876,
+      "duration": 575,
+      "narration": "Natural tampoco significa automáticamente eficaz o seguro Algunos suplementos pueden interactuar con medicamentos",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedQuote",
+          "render_component": "FedQuote",
+          "title": "Natural tampoco significa automáticamente eficaz o seguro",
+          "sub": "Algunos suplementos pueden interactuar con medicamentos",
+          "detail": "Tarjeta clara sobre fondo desaturado con el presentador asomando detrás del borde superior",
+          "kicker": "",
+          "family": "FedQuote",
+          "layout_family": "principle-quote",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": true,
+          "author": "Federer Building",
+          "role": "Principio del canal",
+          "depth_layers": 9,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s08-hormonas-publicidad-m084",
+      "section_id": "s08-hormonas-publicidad",
+      "from": 21451,
+      "duration": 67,
+      "narration": "La testosterona indicada por un médico requiere valorar beneficios contraindicaciones y seguimiento Puede reducir la",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_027.mp4",
+          "asset_id": "v68a7e4bfb40:s08-hormonas-publicidad-m084:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s08-hormonas-publicidad-m085",
+      "section_id": "s08-hormonas-publicidad",
+      "from": 21518,
+      "duration": 444,
+      "narration": "testosterona indicada por un médico requiere valorar beneficios contraindicaciones y seguimiento Puede reducir la producción de espermatozoides",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "La testosterona indicada requiere valorar y hacer seguimiento",
+          "sub": "Puede reducir la producción de espermatozoides",
+          "detail": "Rótulo inferior sobrio sobre el presentador con una hoja de indicaciones desenfocada detrás",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "medical-stance",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m086",
+      "section_id": "s09-escalon",
+      "from": 21962,
+      "duration": 80,
+      "narration": "Ahora llegamos al quinto ejercicio Este revela diferencias entre ambas piernas que",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_016.png",
+          "asset_id": "v68a7e4bfb40:s09-escalon-m086:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m087",
+      "section_id": "s09-escalon",
+      "from": 22042,
+      "duration": 277,
+      "narration": "revela diferencias entre ambas piernas que una caminata tranquila puede esconder Es el ascenso a un escalón bajo",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio cinco: el ascenso a un escalón bajo",
+          "sub": "Revela diferencias entre ambas piernas",
+          "detail": "El escalón y la baranda entran en profundidad mientras una pierna queda iluminada y la otra en sombra",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "exercise-five-open",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m088",
+      "section_id": "s09-escalon",
+      "from": 22319,
+      "duration": 202,
+      "narration": "Use el primer escalón de una escalera y sujétese de una baranda firme Coloque un pie completo sobre",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_028.mp4",
+          "asset_id": "v68a7e4bfb40:s09-escalon-m088:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m089",
+      "section_id": "s09-escalon",
+      "from": 22521,
+      "duration": 244,
+      "narration": "Empuje con esa pierna hasta subir Baje de forma controlada Complete entre cinco y ocho repeticiones Después cambie",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m090",
+      "section_id": "s09-escalon",
+      "from": 22765,
+      "duration": 201,
+      "narration": "Empiece con poca altura Evite que la rodilla se desplace bruscamente hacia dentro Tampoco se impulse casi por",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_029.mp4",
+          "asset_id": "v68a7e4bfb40:s09-escalon-m090:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m091",
+      "section_id": "s09-escalon",
+      "from": 22966,
+      "duration": 212,
+      "narration": "completo con el pie que permanece abajo La baranda ayuda al equilibrio No debe arrastrar todo su cuerpo",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_017.png",
+          "asset_id": "v68a7e4bfb40:s09-escalon-m091:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m092",
+      "section_id": "s09-escalon",
+      "from": 23178,
+      "duration": 245,
+      "narration": "El ascenso combina fuerza estabilidad y coordinación Sirve para entrar a un autobús Superar un desnivel Subir",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_030.mp4",
+          "asset_id": "v68a7e4bfb40:s09-escalon-m092:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m093",
+      "section_id": "s09-escalon",
+      "from": 23423,
+      "duration": 226,
+      "narration": "una escalera con menos temor Cuando esta capacidad se pierde el mundo empieza a llenarse de barreras pequeñas",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m094",
+      "section_id": "s09-escalon",
+      "from": 23649,
+      "duration": 116,
+      "narration": "Progrese primero con repeticiones Después disminuya un poco la ayuda de la mano Solo entonces considere una carga",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_018.png",
+          "asset_id": "v68a7e4bfb40:s09-escalon-m094:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m095",
+      "section_id": "s09-escalon",
+      "from": 23765,
+      "duration": 388,
+      "narration": "ayuda de la mano Solo entonces considere una carga liviana Cambie una variable por vez",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Cambie una variable por vez",
+          "sub": "Repeticiones, después menos ayuda, después carga liviana",
+          "detail": "Tres diales alineados donde solo uno gira por semana y los otros dos quedan fijos y apagados",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "one-variable-rule",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 3,
+          "total": 3,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s09-escalon-m096",
+      "section_id": "s09-escalon",
+      "from": 24153,
+      "duration": 410,
+      "narration": "Un ejercicio eficaz no tiene que parecer heroico Después de los sesenta progresar durante meses vale más que",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s10-granjero-m097",
+      "section_id": "s10-granjero",
+      "from": 24563,
+      "duration": 97,
+      "narration": "El sexto ejercicio es casi incómodamente simple Consiste en",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s10-granjero-m098",
+      "section_id": "s10-granjero",
+      "from": 24660,
+      "duration": 208,
+      "narration": "ejercicio es casi incómodamente simple Consiste en cargar peso mientras camina Algunos lo llaman paseo del granjero",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio seis: cargar peso mientras camina",
+          "sub": "Algunos lo llaman paseo del granjero",
+          "detail": "Dos cargas entran a los lados del cuadro y el pasillo se abre hacia el fondo",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "exercise-six-open",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s10-granjero-m099",
+      "section_id": "s10-granjero",
+      "from": 24868,
+      "duration": 254,
+      "narration": "Tome dos objetos de peso parecido Pueden ser bolsas resistentes o recipientes con asa Manténgalos a los lados",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_031.mp4",
+          "asset_id": "v68a7e4bfb40:s10-granjero-m099:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s10-granjero-m100",
+      "section_id": "s10-granjero",
+      "from": 25122,
+      "duration": 294,
+      "narration": "durante veinte o treinta segundos por un espacio despejado Descanse entre cuarenta y sesenta segundos Repita dos o",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_019.png",
+          "asset_id": "v68a7e4bfb40:s10-granjero-m100:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s10-granjero-m101",
+      "section_id": "s10-granjero",
+      "from": 25416,
+      "duration": 372,
+      "narration": "No aguante la respiración No encoja los hombros Mire hacia delante y camine con pasos naturales Si una",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_032.mp4",
+          "asset_id": "v68a7e4bfb40:s10-granjero-m101:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s10-granjero-m102",
+      "section_id": "s10-granjero",
+      "from": 25788,
+      "duration": 211,
+      "narration": "Este movimiento fortalece el agarre las piernas los hombros y la zona media Y el agarre importa Abrir",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s10-granjero-m103",
+      "section_id": "s10-granjero",
+      "from": 25999,
+      "duration": 389,
+      "narration": "agarre importa Abrir un frasco sostener una herramienta o llevar alimentos depende de él Una mano débil",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "El agarre decide abrir un frasco o sostener herramientas",
+          "sub": "Una mano débil vuelve pesada una tarea pequeña",
+          "detail": "Tres gestos cotidianos encadenados en profundidad: la tapa que cede, la herramienta sostenida y las bolsas que llegan enteras",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "grip-stakes",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s10-granjero-m104",
+      "section_id": "s10-granjero",
+      "from": 26388,
+      "duration": 308,
+      "narration": "La carga también proporciona una medida clara Hoy camina veinte segundos Más adelante llega a treinta manteniendo la",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_033.mp4",
+          "asset_id": "v68a7e4bfb40:s10-granjero-m104:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s10-granjero-m105",
+      "section_id": "s10-granjero",
+      "from": 26696,
+      "duration": 307,
+      "narration": "postura No necesita perseguir una vaga sensación de energía masculina Puede observar una capacidad concreta que está regresando",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_020.png",
+          "asset_id": "v68a7e4bfb40:s10-granjero-m105:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s11-progresion-m106",
+      "section_id": "s11-progresion",
+      "from": 27003,
+      "duration": 270,
+      "narration": "Aquí aparece el principio que une los seis movimientos progresión El cuerpo cambia cuando la tarea es",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_021.png",
+          "asset_id": "v68a7e4bfb40:s11-progresion-m106:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s11-progresion-m107",
+      "section_id": "s11-progresion",
+      "from": 27273,
+      "duration": 248,
+      "narration": "más difícil que aquello a lo que ya está acostumbrado Ligeramente Esa palabra protege sus articulaciones",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "Ligeramente más difícil que aquello ya acostumbrado",
+          "sub": "Esa palabra protege sus articulaciones",
+          "detail": "Pizarra a mano con una rampa suave dibujada paso a paso frente a un salto brusco que se tacha",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "progression-principle",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s11-progresion-m108",
+      "section_id": "s11-progresion",
+      "from": 27521,
+      "duration": 177,
+      "narration": "Puede sumar una repetición Añadir un libro a la mochila Bajar un poco la inclinación de",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s11-progresion-m109",
+      "section_id": "s11-progresion",
+      "from": 27698,
+      "duration": 236,
+      "narration": "la flexión Caminar cinco segundos más Si modifica todo cada semana transforma el entrenamiento en una lotería",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_034.mp4",
+          "asset_id": "v68a7e4bfb40:s11-progresion-m109:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s12-intervalos-m110",
+      "section_id": "s12-intervalos",
+      "from": 27934,
+      "duration": 236,
+      "narration": "Todavía falta el séptimo ejercicio Es el que más se parece a lo que muchos",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_022.png",
+          "asset_id": "v68a7e4bfb40:s12-intervalos-m110:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s12-intervalos-m111",
+      "section_id": "s12-intervalos",
+      "from": 28170,
+      "duration": 129,
+      "narration": "intervalos breves de esfuerzo También es el que peor se utiliza",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio siete: intervalos breves de esfuerzo",
+          "sub": "También es el que peor se utiliza",
+          "detail": "Una línea de ritmo entra plana y se quiebra en picos cortos mientras el fondo cambia de calma a esfuerzo",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "exercise-seven-open",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s12-intervalos-m112",
+      "section_id": "s12-intervalos",
+      "from": 28299,
+      "duration": 367,
+      "narration": "Elija una actividad segura Caminar a paso vivo subir una pendiente suave o pedalear en una bicicleta",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_035.mp4",
+          "asset_id": "v68a7e4bfb40:s12-intervalos-m112:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s12-intervalos-m113",
+      "section_id": "s12-intervalos",
+      "from": 28666,
+      "duration": 250,
+      "narration": "acelere entre veinte y treinta segundos No vaya al máximo Busque una intensidad de siete sobre diez",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Busque una intensidad de siete sobre diez",
+          "sub": "Acelere entre veinte y treinta segundos, no al máximo",
+          "detail": "Escala de esfuerzo de uno a diez con la marca detenida en siete y el extremo superior apagado",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "intensity-target",
+          "value": "7/10",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s12-intervalos-m114",
+      "section_id": "s12-intervalos",
+      "from": 28916,
+      "duration": 316,
+      "narration": "al máximo Busque una intensidad de siete sobre diez La respiración aumenta pero usted conserva el control",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s12-intervalos-m115",
+      "section_id": "s12-intervalos",
+      "from": 29232,
+      "duration": 268,
+      "narration": "Recupérese durante noventa segundos a un ritmo suave Repita cuatro veces Termine con cinco minutos tranquilos Eso es",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_036.mp4",
+          "asset_id": "v68a7e4bfb40:s12-intervalos-m115:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s12-intervalos-m116",
+      "section_id": "s12-intervalos",
+      "from": 29500,
+      "duration": 278,
+      "narration": "Después de dos o tres semanas si duerme bien y se recupera sin problemas puede añadir una quinta",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_023.png",
+          "asset_id": "v68a7e4bfb40:s12-intervalos-m116:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s12-intervalos-m117",
+      "section_id": "s12-intervalos",
+      "from": 29778,
+      "duration": 288,
+      "narration": "repetición No convierta el ejercicio en una persecución Los intervalos son una dosis No un examen de valentía",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_037.mp4",
+          "asset_id": "v68a7e4bfb40:s12-intervalos-m117:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s13-intervalos-seguridad-m118",
+      "section_id": "s13-intervalos-seguridad",
+      "from": 30066,
+      "duration": 324,
+      "narration": "Por qué incluirlos Porque entrenan la capacidad de cambiar de ritmo y exigen a piernas corazón y pulmones",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s13-intervalos-seguridad-m119",
+      "section_id": "s13-intervalos-seguridad",
+      "from": 30390,
+      "duration": 285,
+      "narration": "caminata uniforme Pueden favorecer la condición metabólica No existe sin embargo una garantía de que eleven permanentemente la",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_038.mp4",
+          "asset_id": "v68a7e4bfb40:s13-intervalos-seguridad-m119:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s13-intervalos-seguridad-m120",
+      "section_id": "s13-intervalos-seguridad",
+      "from": 30675,
+      "duration": 315,
+      "narration": "Además son opcionales Si tiene dolor de pecho falta de aire desproporcionada mareos desmayos palpitaciones",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_024.png",
+          "asset_id": "v68a7e4bfb40:s13-intervalos-seguridad-m120:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s13-intervalos-seguridad-m121",
+      "section_id": "s13-intervalos-seguridad",
+      "from": 30990,
+      "duration": 169,
+      "narration": "realice intervalos intensos Deténgase y busque evaluación médica",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "No realice intervalos intensos con dolor de pecho",
+          "sub": "Deténgase y busque evaluación médica",
+          "detail": "Cuatro señales que encienden un límite tenue y detienen el cronómetro del intervalo",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "cardiac-stop",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Dolor de pecho",
+            "Falta de aire desproporcionada",
+            "Mareos o desmayos",
+            "Palpitaciones nuevas"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s13-intervalos-seguridad-m122",
+      "section_id": "s13-intervalos-seguridad",
+      "from": 31159,
+      "duration": 277,
+      "narration": "Si recibe tratamiento cardíaco usa medicamentos que modifican la frecuencia del corazón o tiene diabetes con riesgo de",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_039.mp4",
+          "asset_id": "v68a7e4bfb40:s13-intervalos-seguridad-m122:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s13-intervalos-seguridad-m123",
+      "section_id": "s13-intervalos-seguridad",
+      "from": 31436,
+      "duration": 284,
+      "narration": "acuerde la intensidad con su profesional Esta advertencia es firme Una rutina de internet no conoce su historia",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s13-intervalos-seguridad-m124",
+      "section_id": "s13-intervalos-seguridad",
+      "from": 31720,
+      "duration": 310,
+      "narration": "Sabe qué me preocupa Que alguien escuche veinte segundos y piense que cuarenta serán el doble de buenos",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_025.png",
+          "asset_id": "v68a7e4bfb40:s13-intervalos-seguridad-m124:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s13-intervalos-seguridad-m125",
+      "section_id": "s13-intervalos-seguridad",
+      "from": 32030,
+      "duration": 256,
+      "narration": "segundos y piense que cuarenta serán el doble de buenos",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Cuarenta segundos no serán el doble de buenos",
+          "sub": "Peor técnica, peor sueño y una semana sin moverse",
+          "detail": "Dos intervalos iguales en duración aparente; el segundo se degrada en técnica y arrastra una semana vacía detrás",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "more-is-not-double",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m126",
+      "section_id": "s14-armar-semana",
+      "from": 32286,
+      "duration": 197,
+      "narration": "Ahora unamos las piezas No haga los siete ejercicios como un circuito brutal durante el primer",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m127",
+      "section_id": "s14-armar-semana",
+      "from": 32483,
+      "duration": 264,
+      "narration": "día Comience con levantarse de la silla bisagra de cadera flexión inclinada remo y escalón Complete una",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m128",
+      "section_id": "s14-armar-semana",
+      "from": 32747,
+      "duration": 234,
+      "narration": "o dos series de cada uno Descanse hasta recuperar una respiración cómoda Termine con dos paseos cargados",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_040.mp4",
+          "asset_id": "v68a7e4bfb40:s14-armar-semana-m128:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m129",
+      "section_id": "s14-armar-semana",
+      "from": 32981,
+      "duration": 270,
+      "narration": "Entrene fuerza dos días no consecutivos durante las primeras semanas Por ejemplo martes y viernes Los intervalos pueden",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_026.png",
+          "asset_id": "v68a7e4bfb40:s14-armar-semana-m129:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m130",
+      "section_id": "s14-armar-semana",
+      "from": 33251,
+      "duration": 254,
+      "narration": "consecutivos durante las primeras semanas Por ejemplo martes y viernes Los intervalos pueden ocupar un tercer día",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Dos días no consecutivos: por ejemplo martes y viernes",
+          "sub": "Los intervalos pueden ocupar un tercer día",
+          "detail": "Calendario semanal donde dos días se elevan separados y un tercero aparece atenuado como opcional",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "weekly-frame",
+          "value": "2",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m131",
+      "section_id": "s14-armar-semana",
+      "from": 33505,
+      "duration": 309,
+      "narration": "Para elegir la resistencia use esta regla termine cada serie sintiendo que todavía podría realizar dos o tres",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_041.mp4",
+          "asset_id": "v68a7e4bfb40:s14-armar-semana-m131:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m132",
+      "section_id": "s14-armar-semana",
+      "from": 33814,
+      "duration": 341,
+      "narration": "termine cada serie sintiendo que todavía podría realizar dos o tres repeticiones correctas Si podría hacer diez más",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "Termine cada serie pudiendo hacer dos o tres más",
+          "sub": "Si podría hacer diez más, falta desafío",
+          "detail": "Pizarra a mano con una serie dibujada y dos repeticiones guardadas al final, marcadas en un margen",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "reps-in-reserve",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m133",
+      "section_id": "s14-armar-semana",
+      "from": 34155,
+      "duration": 231,
+      "narration": "Cuando alcance el extremo superior del rango durante dos sesiones y conserve una técnica limpia aumente apenas",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m134",
+      "section_id": "s14-armar-semana",
+      "from": 34386,
+      "duration": 254,
+      "narration": "la dificultad Uno o dos libros Un poco más de tensión Cinco segundos adicionales No duplique nada",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_042.mp4",
+          "asset_id": "v68a7e4bfb40:s14-armar-semana-m134:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m135",
+      "section_id": "s14-armar-semana",
+      "from": 34640,
+      "duration": 282,
+      "narration": "Respire durante cada repetición Exhale en la parte exigente e inhale al regresar Evite cerrar la garganta y",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_027.png",
+          "asset_id": "v68a7e4bfb40:s14-armar-semana-m135:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s14-armar-semana-m136",
+      "section_id": "s14-armar-semana",
+      "from": 34922,
+      "duration": 283,
+      "narration": "el aire sobre todo si tiene presión arterial alta una hernia problemas oculares sensibles a la presión o",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_043.mp4",
+          "asset_id": "v68a7e4bfb40:s14-armar-semana-m136:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s15-error-m137",
+      "section_id": "s15-error",
+      "from": 35205,
+      "duration": 122,
+      "narration": "Y ahora llegamos al punto que casi nadie quiere escuchar El músculo no se",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s15-error-m138",
+      "section_id": "s15-error",
+      "from": 35327,
+      "duration": 261,
+      "narration": "músculo no se construye durante el esfuerzo El entrenamiento inicia la señal La adaptación ocurre",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "El entrenamiento inicia la señal; la adaptación ocurre",
+          "sub": "El músculo no se construye durante el esfuerzo",
+          "detail": "Señal que se dispara en el esfuerzo y una ventana posterior donde la fibra se reconstruye con el descanso",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "adaptation-window",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s15-error-m139",
+      "section_id": "s15-error",
+      "from": 35588,
+      "duration": 197,
+      "narration": "Ese es el error incómodo que prometí intentar compensar años de inactividad",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_044.mp4",
+          "asset_id": "v68a7e4bfb40:s15-error-m139:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s15-error-m140",
+      "section_id": "s15-error",
+      "from": 35785,
+      "duration": 164,
+      "narration": "hambre durmiendo cinco horas y repitiendo sesiones duras todos los días",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "El error: entrenar con hambre y durmiendo cinco",
+          "sub": "Repitiendo sesiones duras todos los días",
+          "detail": "Las tres carencias entran apiladas sobre la misma persona hasta hundir la escena, sin nada que salga",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "error-reveal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s15-error-m141",
+      "section_id": "s15-error",
+      "from": 35949,
+      "duration": 318,
+      "narration": "Al principio parece disciplina Después se convierte en una trampa Usted termina destruido Al día siguiente se mueve",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_028.png",
+          "asset_id": "v68a7e4bfb40:s15-error-m141:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s15-error-m142",
+      "section_id": "s15-error",
+      "from": 36267,
+      "duration": 428,
+      "narration": "empeora el sueño Reduce demasiado la comida para perder abdomen rápidamente Finalmente abandona antes de que el cuerpo",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_045.mp4",
+          "asset_id": "v68a7e4bfb40:s15-error-m142:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s15-error-m143",
+      "section_id": "s15-error",
+      "from": 36695,
+      "duration": 282,
+      "narration": "La prueba de cuarenta y ocho horas es sencilla Observe qué ocurre durante los dos días posteriores al",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s15-error-m144",
+      "section_id": "s15-error",
+      "from": 36977,
+      "duration": 312,
+      "narration": "prueba de cuarenta y ocho horas es sencilla Observe qué ocurre durante los dos días posteriores al entrenamiento",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "La prueba de cuarenta y ocho horas es sencilla",
+          "sub": "Observe los dos días posteriores al entrenamiento",
+          "detail": "Dos días en una línea temporal donde cuatro indicadores se leen uno a uno tras la sesión",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "forty-eight-hour-test",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Rendimiento que cae en cada sesión",
+            "Duerme peor",
+            "Dolor articular",
+            "Pierde las ganas de entrenar"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s15-error-m145",
+      "section_id": "s15-error",
+      "from": 37289,
+      "duration": 289,
+      "narration": "articular pierde completamente las ganas de entrenar y las tareas habituales se vuelven más pesadas la dosis está",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_046.mp4",
+          "asset_id": "v68a7e4bfb40:s15-error-m145:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s16-recuperacion-m146",
+      "section_id": "s16-recuperacion",
+      "from": 37578,
+      "duration": 256,
+      "narration": "La solución es aburridamente barata Reduzca un poco el volumen Deje al menos un día entre",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_029.png",
+          "asset_id": "v68a7e4bfb40:s16-recuperacion-m146:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s16-recuperacion-m147",
+      "section_id": "s16-recuperacion",
+      "from": 37834,
+      "duration": 323,
+      "narration": "Deje al menos un día entre las sesiones de fuerza Mantenga horarios regulares de sueño Consuma suficiente energía",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Reduzca el volumen y deje un día entre sesiones",
+          "sub": "Horarios regulares de sueño y energía suficiente",
+          "detail": "Barra de volumen que baja un tramo y un día vacío que se abre entre dos sesiones",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "deload-recipe",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 2,
+          "total": 2,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s16-recuperacion-m148",
+      "section_id": "s16-recuperacion",
+      "from": 38157,
+      "duration": 276,
+      "narration": "Si tiene enfermedad renal u otra condición que limite proteínas o líquidos no copie cantidades",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_047.mp4",
+          "asset_id": "v68a7e4bfb40:s16-recuperacion-m148:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s16-recuperacion-m149",
+      "section_id": "s16-recuperacion",
+      "from": 38433,
+      "duration": 222,
+      "narration": "generales de internet Consulte a su médico o nutricionista Más proteína tampoco significa automáticamente más músculo",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s16-recuperacion-m150",
+      "section_id": "s16-recuperacion",
+      "from": 38655,
+      "duration": 343,
+      "narration": "La grasa abdominal merece otra aclaración Reducir un exceso de grasa puede mejorar el contexto hormonal en algunos",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_048.mp4",
+          "asset_id": "v68a7e4bfb40:s16-recuperacion-m150:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s16-recuperacion-m151",
+      "section_id": "s16-recuperacion",
+      "from": 38998,
+      "duration": 332,
+      "narration": "músculo y empeorar la recuperación El objetivo no es pasar hambre Es reducir grasa gradualmente mientras conserva fuerza",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Reducir grasa gradualmente mientras conserva fuerza",
+          "sub": "Una dieta extrema sacrifica músculo y recuperación",
+          "detail": "Dos descensos de grasa en paralelo: uno arrastra la fuerza hacia abajo y el otro la mantiene estable",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "gradual-vs-crash",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s16-recuperacion-m152",
+      "section_id": "s16-recuperacion",
+      "from": 39330,
+      "duration": 316,
+      "narration": "El sueño tampoco es un detalle Ronquidos intensos pausas respiratorias observadas dolor de cabeza al despertar o quedarse",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_030.png",
+          "asset_id": "v68a7e4bfb40:s16-recuperacion-m152:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s16-recuperacion-m153",
+      "section_id": "s16-recuperacion",
+      "from": 39646,
+      "duration": 178,
+      "narration": "evaluación Ningún ejercicio compensa completamente una noche en la que la respiración",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Ronquidos intensos o pausas respiratorias: pida evaluación",
+          "sub": "Ningún ejercicio compensa una respiración interrumpida",
+          "detail": "Trazado respiratorio nocturno que se corta una y otra vez mientras el resto de la escena queda en silencio",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "sleep-apnea-flag",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Ronquidos intensos",
+            "Pausas respiratorias observadas",
+            "Dolor de cabeza al despertar",
+            "Quedarse dormido durante el día"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s16-recuperacion-m154",
+      "section_id": "s16-recuperacion",
+      "from": 39824,
+      "duration": 252,
+      "narration": "Revise también el alcohol Un consumo ocasional no es igual a beber mucho cada noche El alcohol puede",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_049.mp4",
+          "asset_id": "v68a7e4bfb40:s16-recuperacion-m154:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s16-recuperacion-m155",
+      "section_id": "s16-recuperacion",
+      "from": 40076,
+      "duration": 258,
+      "narration": "recuperación y el control del peso Antes de comprar un suplemento exótico mire con honestidad aquello que entra",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s17-limites-m156",
+      "section_id": "s17-limites",
+      "from": 40334,
+      "duration": 232,
+      "narration": "Ahora le digo lo que esta rutina no puede prometer No corrige por sí sola una enfermedad de",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_031.png",
+          "asset_id": "v68a7e4bfb40:s17-limites-m156:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s17-limites-m157",
+      "section_id": "s17-limites",
+      "from": 40566,
+      "duration": 302,
+      "narration": "la hipófisis o de los testículos No sustituye el tratamiento de la apnea No elimina el efecto de",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s17-limites-m158",
+      "section_id": "s17-limites",
+      "from": 40868,
+      "duration": 262,
+      "narration": "medicamentos No garantiza una cifra en un análisis Tampoco convierte en seguro un movimiento que provoca síntomas de",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s17-limites-m159",
+      "section_id": "s17-limites",
+      "from": 41130,
+      "duration": 269,
+      "narration": "Lo que sí puede hacer es devolver estímulo al músculo y ofrecer pruebas reales de progreso Usted",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_050.mp4",
+          "asset_id": "v68a7e4bfb40:s17-limites-m159:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s17-limites-m160",
+      "section_id": "s17-limites",
+      "from": 41399,
+      "duration": 115,
+      "narration": "mochila se siente más liviana El escalón",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "La mochila más liviana y el escalón sin intimidar",
+          "sub": "Esa es vitalidad observable",
+          "detail": "Tres pruebas cotidianas que entran encadenadas en profundidad: la silla, la mochila y el escalón, cada una resuelta",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "observable-vitality",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s17-limites-m161",
+      "section_id": "s17-limites",
+      "from": 41514,
+      "duration": 380,
+      "narration": "intimidarlo Las bolsas llegan a la cocina sin una parada a mitad de camino Esa es vitalidad observable",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_032.png",
+          "asset_id": "v68a7e4bfb40:s17-limites-m161:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m162",
+      "section_id": "s18-cierre",
+      "from": 41894,
+      "duration": 113,
+      "narration": "clears throat Vamos a dejarlo completamente accionable",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_051.mp4",
+          "asset_id": "v68a7e4bfb40:s18-cierre-m162:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m163",
+      "section_id": "s18-cierre",
+      "from": 42007,
+      "duration": 342,
+      "narration": "Esta semana haga lo siguiente Primero elija dos días no consecutivos Segundo prepare una silla firme una mochila",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m164",
+      "section_id": "s18-cierre",
+      "from": 42349,
+      "duration": 170,
+      "narration": "silla bisagra flexión inclinada remo y escalón Cuarto cierre con dos paseos cargados de veinte segundos",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Silla, bisagra, flexión inclinada, remo y escalón",
+          "sub": "Cierre con dos paseos cargados de veinte segundos",
+          "detail": "Cinco estaciones que se ordenan en el suelo de la sala y dos paseos cargados cierran el recorrido",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "week-one-plan",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 1,
+          "total": 2,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m165",
+      "section_id": "s18-cierre",
+      "from": 42519,
+      "duration": 261,
+      "narration": "cierre con dos paseos cargados de veinte segundos Quinto si su salud lo permite pruebe cuatro intervalos breves",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_052.mp4",
+          "asset_id": "v68a7e4bfb40:s18-cierre-m165:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m166",
+      "section_id": "s18-cierre",
+      "from": 42780,
+      "duration": 277,
+      "narration": "Anote tres datos repeticiones resistencia utilizada y cómo se sintió durante las cuarenta y ocho horas siguientes Cuando",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_033.png",
+          "asset_id": "v68a7e4bfb40:s18-cierre-m166:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m167",
+      "section_id": "s18-cierre",
+      "from": 43057,
+      "duration": 245,
+      "narration": "con buena técnica en dos sesiones aumente una sola variable Esa libreta vale más que entrenar según el",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_053.mp4",
+          "asset_id": "v68a7e4bfb40:s18-cierre-m167:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m168",
+      "section_id": "s18-cierre",
+      "from": 43302,
+      "duration": 159,
+      "narration": "Si aparece dolor de pecho desmayo falta de aire inusual debilidad repentina palpitaciones intensas o",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m169",
+      "section_id": "s18-cierre",
+      "from": 43461,
+      "duration": 353,
+      "narration": "debilidad repentina palpitaciones intensas o dolor articular agudo deténgase y busque atención Esos síntomas no son una prueba",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Dolor de pecho, desmayo o debilidad repentina: deténgase",
+          "sub": "Esos síntomas no son una prueba de voluntad",
+          "detail": "Cuatro señales de alarma que detienen la escena en seco y abren paso a la puerta de una consulta",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "red-flags-stop",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Dolor de pecho",
+            "Desmayo",
+            "Falta de aire inusual",
+            "Debilidad repentina"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m170",
+      "section_id": "s18-cierre",
+      "from": 43814,
+      "duration": 438,
+      "narration": "Si mantiene síntomas compatibles con testosterona baja pida una evaluación clínica No compre hormonas por su cuenta Una",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_054.mp4",
+          "asset_id": "v68a7e4bfb40:s18-cierre-m170:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m171",
+      "section_id": "s18-cierre",
+      "from": 44252,
+      "duration": 402,
+      "narration": "Cuénteme en los comentarios cuál de los siete movimientos le cuesta más y desde qué país está entrenando",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_034.png",
+          "asset_id": "v68a7e4bfb40:s18-cierre-m171:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m172",
+      "section_id": "s18-cierre",
+      "from": 44654,
+      "duration": 270,
+      "narration": "Suscríbase a Federer Building para recibir la próxima rutina práctica Deje un me gusta si esta explicación le",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_055.mp4",
+          "asset_id": "v68a7e4bfb40:s18-cierre-m172:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m173",
+      "section_id": "s18-cierre",
+      "from": 44924,
+      "duration": 314,
+      "narration": "Suscríbase a Federer Building para recibir la próxima rutina",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedCta",
+          "render_component": "FedCta",
+          "title": "Suscríbase a Federer Building para la próxima rutina",
+          "sub": "Comparta el video con quien cree que entrenar arriesga rodillas",
+          "detail": "Cierre sobrio donde la silla y la mochila quedan preparadas y el nombre del canal aparece sin estridencia",
+          "kicker": "",
+          "family": "FedCta",
+          "layout_family": "closing-invite",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m174",
+      "section_id": "s18-cierre",
+      "from": 45238,
+      "duration": 228,
+      "narration": "En el próximo video le enseñaré una prueba casera de treinta segundos junto a una pared y una",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v68a7e4bfb40.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m175",
+      "section_id": "s18-cierre",
+      "from": 45466,
+      "duration": 323,
+      "narration": "Esa prueba revela tres debilidades silenciosas de equilibrio y fuerza Después veremos cómo corregir cada una sin tirarse",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_056.mp4",
+          "asset_id": "v68a7e4bfb40:s18-cierre-m175:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m176",
+      "section_id": "s18-cierre",
+      "from": 45789,
+      "duration": 257,
+      "narration": "Bah al final no se trata de perseguir el cuerpo que usted tenía a los veinticinco Se",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v68a7e4bfb40_presenter_035.png",
+          "asset_id": "v68a7e4bfb40:s18-cierre-m176:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m177",
+      "section_id": "s18-cierre",
+      "from": 46046,
+      "duration": 172,
+      "narration": "cuerpo que tiene hoy una razón para seguir siendo fuerte mañana Dos días Siete movimientos Progresión pequeña",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedQuote",
+          "render_component": "FedQuote",
+          "title": "Darle al cuerpo de hoy una razón para seguir fuerte",
+          "sub": "Dos días, siete movimientos, progresión pequeña",
+          "detail": "Tarjeta clara final con el presentador asomando y la sala ordenada detrás en penumbra",
+          "kicker": "",
+          "family": "FedQuote",
+          "layout_family": "closing-principle",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": true,
+          "author": "Federer Building",
+          "role": "Cierre del canal",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m178",
+      "section_id": "s18-cierre",
+      "from": 46218,
+      "duration": 256,
+      "narration": "Siete movimientos Progresión pequeña Recuperación verdadera Y por favor no sea terco cuando su cuerpo encienda una alarma",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v68a7e4bfb40/v68a7e4bfb40_stock_057.mp4",
+          "asset_id": "v68a7e4bfb40:s18-cierre-m178:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "scenes": 178,
+    "avatar_scenes": 39,
+    "clip_scenes": 57,
+    "image_scenes": 35,
+    "component_scenes": 47,
+    "distinct_render_components": 10,
+    "duration_seconds": 1549.11,
+    "unresolved_assets": 0,
+    "visual_v3": {
+      "moments": 178,
+      "counts": {
+        "avatar_full": 39,
+        "clean_stock": 57,
+        "presenter_action": 35,
+        "hero_component": 47
+      },
+      "ratios": {
+        "avatar_full": 0.2191,
+        "clean_stock": 0.3202,
+        "presenter_action": 0.1966,
+        "hero_component": 0.264
+      },
+      "clean_media_without_overlay_ratio": 1,
+      "clean_media_mix_ratio": 0.3202,
+      "hero_families": 47,
+      "rendered_components": 10,
+      "dominant_rendered_component_share": 0.1915,
+      "max_consecutive_rendered_component": 2,
+      "transition_modes": 5,
+      "clean_cut_ratio": 0.3034,
+      "max_consecutive_transition": 1,
+      "presenter_section_coverage": 1
+    }
+  }
+}

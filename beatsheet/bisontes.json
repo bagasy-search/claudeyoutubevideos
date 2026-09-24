@@ -166,7 +166,7 @@
     {
       "id": "bi_c_woodbison_forest",
       "start": 99.4,
-      "dur": 5.1,
+      "dur": 0.6,
       "kind": "raw",
       "src": "vid/bi_c_woodbison_forest.mp4",
       "hue": "cold",
@@ -176,6 +176,32 @@
         "image": "bi_c_woodbison_forest",
         "prompt": "a giant dark wood bison walking slowly through a dense boreal forest of birch and black pine, ferns, dappled cold light, half hidden among trees",
         "frames": 110
+      }
+    },
+    {
+      "id": "bi_p_woodbison_size",
+      "start": 106.2,
+      "dur": 4.3,
+      "kind": "raw",
+      "src": "img/bi_p_woodbison_size.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "bi_p_woodbison_size",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a massive wood bison towering next to a small birch tree for scale, the largest land animal in North America, low angle, imposing. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
+      }
+    },
+    {
+      "id": "bi_p_bison_scale_man",
+      "start": 110.5,
+      "dur": 3.3,
+      "kind": "raw",
+      "src": "img/bi_p_bison_scale_man.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "bi_p_bison_scale_man",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage sepia archival photograph of a vintage photo of a huge dark bison bull beside a tiny human figure for scale, archival, scratched grain, sun-faded yellowed tones, late 1800s. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
       }
     },
     {
@@ -213,6 +239,20 @@
       "impactAccent": "danger",
       "hitAt": 1,
       "boom": 2
+    },
+    {
+      "id": "bi_c_hunters_rifles",
+      "start": 133,
+      "dur": 3.7,
+      "kind": "raw",
+      "src": "vid/bi_c_hunters_rifles.mp4",
+      "hue": "red",
+      "gen": {
+        "type": "clip",
+        "image": "bi_c_hunters_rifles",
+        "prompt": "19th century commercial buffalo hunters lying in tall prairie grass aiming long Sharps rifles at a distant herd, smoke from a rifle shot, sepia archival",
+        "frames": 100
+      }
     },
     {
       "id": "d005",
@@ -304,19 +344,6 @@
         "type": "image",
         "name": "bi_p_dene_camp",
         "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage sepia archival photograph of a late 1800s northern indigenous camp by a river in the boreal north, tipis and drying racks, sepia archival, scratched grain, sun-faded yellowed tones, late 1800s. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
-      "id": "bi_p_elder_child",
-      "start": 256.4,
-      "dur": 5.6,
-      "kind": "raw",
-      "src": "img/bi_p_elder_child.png",
-      "hue": "amber",
-      "gen": {
-        "type": "image",
-        "name": "bi_p_elder_child",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage sepia archival photograph of a vintage photo of an indigenous elder telling a story to a child by a fire, warm sepia archival, generational, scratched grain, sun-faded yellowed tones, late 1800s. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
       }
     },
     {
@@ -499,7 +526,7 @@
     {
       "id": "bi_p_remote_valley_find",
       "start": 439.8,
-      "dur": 6.7,
+      "dur": 0.2,
       "kind": "raw",
       "src": "img/bi_p_remote_valley_find.png",
       "hue": "cold",
@@ -882,20 +909,6 @@
       }
     },
     {
-      "id": "bi_p_reinforce_1989",
-      "start": 768.9,
-      "dur": 3.1,
-      "kind": "raw",
-      "src": "img/bi_p_reinforce_1989.png",
-      "hue": "amber",
-      "kicker": "1989 · +12",
-      "gen": {
-        "type": "image",
-        "name": "bi_p_reinforce_1989",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of a few additional bison being released from a trailer into the valley, 1989, faded color documentary. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
       "id": "bi_p_fort_liard",
       "start": 777.2,
       "dur": 2.8,
@@ -1033,20 +1046,6 @@
         "type": "image",
         "name": "bi_p_expansion_map_photo",
         "prompt": "Realistic handheld 16:9 documentary-style video frame of bison tracks and a lone bison on a frosty plateau expanding into new territory toward distant mountains, wide. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
-      "id": "bi_p_documentary_crew",
-      "start": 866.3,
-      "dur": 4.2,
-      "kind": "raw",
-      "src": "img/bi_p_documentary_crew.png",
-      "hue": "amber",
-      "kicker": "Un milagro de la conservación",
-      "gen": {
-        "type": "image",
-        "name": "bi_p_documentary_crew",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of a modern wildlife documentary film crew with a camera on a tripod filming bison in a northern valley, behind the scenes. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
       }
     },
     {
@@ -1461,7 +1460,7 @@
     {
       "id": "bi_p_pride_fear",
       "start": 1251.3,
-      "dur": 5.5,
+      "dur": 3.2,
       "kind": "raw",
       "src": "img/bi_p_pride_fear.png",
       "hue": "cold",
@@ -1469,21 +1468,6 @@
         "type": "image",
         "name": "bi_p_pride_fear",
         "prompt": "Realistic handheld 16:9 documentary-style video frame of a biologist looking at a bison herd through binoculars with a complex expression of pride and worry, present day. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
-      "id": "bi_c_gps_collar",
-      "start": 1256.8,
-      "dur": 4.7,
-      "kind": "raw",
-      "src": "vid/bi_c_gps_collar.mp4",
-      "hue": "cold",
-      "kicker": "Monitoreo satelital",
-      "gen": {
-        "type": "clip",
-        "image": "bi_c_gps_collar",
-        "prompt": "a tranquilized bison being fitted with a GPS tracking collar by veterinarians who arrived by helicopter, present day field science",
-        "frames": 110
       }
     },
     {
@@ -1835,32 +1819,6 @@
       }
     },
     {
-      "id": "bi_a017",
-      "start": 104.5,
-      "dur": 4,
-      "kind": "raw",
-      "src": "img/bi_a017.png",
-      "hue": "cold",
-      "gen": {
-        "type": "image",
-        "name": "bi_a017",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of the hooves of a giant bison sinking into mossy boggy ground among ferns. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
-      "id": "bi_a018",
-      "start": 108.5,
-      "dur": 5.3,
-      "kind": "raw",
-      "src": "img/bi_a018.png",
-      "hue": "amber",
-      "gen": {
-        "type": "image",
-        "name": "bi_a018",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage sepia archival photograph of a towering dark bison bull beside a small wooden cabin for scale, vintage, scratched grain, sun-faded yellowed tones, late 1800s. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
       "id": "bi_a020",
       "start": 120,
       "dur": 2.7,
@@ -1970,7 +1928,7 @@
     {
       "id": "bi_a035",
       "start": 251.5,
-      "dur": 4.9,
+      "dur": 4.5,
       "kind": "raw",
       "src": "img/bi_a035.png",
       "hue": "amber",
@@ -1978,21 +1936,6 @@
         "type": "image",
         "name": "bi_a035",
         "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage sepia archival photograph of drying racks and a quiet northern indigenous camp by a river, no bison, sepia, scratched grain, sun-faded yellowed tones, late 1800s. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
-      "id": "bi_a041",
-      "start": 291.5,
-      "dur": 4.5,
-      "kind": "raw",
-      "src": "vid/bi_a041.mp4",
-      "hue": "amber",
-      "kicker": "1957",
-      "gen": {
-        "type": "clip",
-        "image": "bi_a041",
-        "prompt": "a 1950s float plane banking over endless swampy boreal forest, faded color film",
-        "frames": 90
       }
     },
     {
@@ -2473,19 +2416,6 @@
       }
     },
     {
-      "id": "bi_a096",
-      "start": 766,
-      "dur": 2.9,
-      "kind": "raw",
-      "src": "img/bi_a096.png",
-      "hue": "amber",
-      "gen": {
-        "type": "image",
-        "name": "bi_a096",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of a healthy bison herd with several calves resting in tall summer grass. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
       "id": "bi_a097",
       "start": 772,
       "dur": 5.2,
@@ -2583,7 +2513,7 @@
     {
       "id": "bi_a104",
       "start": 863.5,
-      "dur": 2.8,
+      "dur": 2.5,
       "kind": "raw",
       "src": "img/bi_a104.png",
       "hue": "amber",
@@ -2711,19 +2641,6 @@
         "type": "image",
         "name": "bi_a121",
         "prompt": "Realistic handheld 16:9 documentary-style video frame of a solitary bison at the edge of a dark spruce forest in falling snow. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
-      "id": "bi_a129",
-      "start": 1063.5,
-      "dur": 6,
-      "kind": "raw",
-      "src": "img/bi_a129.png",
-      "hue": "cold",
-      "gen": {
-        "type": "image",
-        "name": "bi_a129",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of green grass visible frozen beneath a clear sheet of ice, macro. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
       }
     },
     {
@@ -3007,16 +2924,17 @@
       }
     },
     {
-      "id": "bi_a154",
-      "start": 1261.5,
-      "dur": 5.7,
+      "id": "bi_a153",
+      "start": 1254.5,
+      "dur": 2,
       "kind": "raw",
-      "src": "img/bi_a154.png",
+      "src": "img/bi_a153.png",
       "hue": "cold",
+      "kicker": "Monitoreo",
       "gen": {
         "type": "image",
-        "name": "bi_a154",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of a research helicopter landed in a snowy valley with veterinarians at work. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
+        "name": "bi_a153",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a GPS tracking collar being fitted on a tranquilized bison, modern field science. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
       }
     },
     {
@@ -3089,7 +3007,7 @@
     {
       "id": "bi_a164",
       "start": 1348.5,
-      "dur": 8,
+      "dur": 3.5,
       "kind": "raw",
       "src": "img/bi_a164.png",
       "hue": "amber",
@@ -3097,19 +3015,6 @@
         "type": "image",
         "name": "bi_a164",
         "prompt": "Realistic handheld 16:9 documentary-style video frame of a lone Hercules plane silhouette against a vast dusk sky, historic. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
-      "id": "bi_a165",
-      "start": 1356.5,
-      "dur": 6.7,
-      "kind": "raw",
-      "src": "img/bi_a165.png",
-      "hue": "amber",
-      "gen": {
-        "type": "image",
-        "name": "bi_a165",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of bison grazing peacefully at golden hour, the experiment still a success. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
       }
     },
     {
@@ -3197,7 +3102,7 @@
     {
       "id": "bi_a172",
       "start": 1426.5,
-      "dur": 8.8,
+      "dur": 1.5,
       "kind": "raw",
       "src": "img/bi_a172.png",
       "hue": "cold",
@@ -3509,7 +3414,7 @@
     {
       "id": "r001",
       "start": 53,
-      "dur": 4.5,
+      "dur": 1.5,
       "kind": "raw",
       "src": "real/real_herd_hist_2.jpg",
       "hue": "amber",
@@ -3518,7 +3423,7 @@
     {
       "id": "r006",
       "start": 83.3,
-      "dur": 5.7,
+      "dur": 0.7,
       "kind": "raw",
       "src": "real/real_woodbison_2.jpg",
       "hue": "cold"
@@ -3526,19 +3431,11 @@
     {
       "id": "r007",
       "start": 126.7,
-      "dur": 5,
+      "dur": 2.3,
       "kind": "raw",
       "src": "real/real_skullpile_1.jpg",
       "hue": "red",
       "kicker": "Foto real, 1870s"
-    },
-    {
-      "id": "r008",
-      "start": 131.7,
-      "dur": 5,
-      "kind": "raw",
-      "src": "real/real_skullpile_2.jpg",
-      "hue": "red"
     },
     {
       "id": "r009",
@@ -3664,7 +3561,7 @@
     {
       "id": "r024",
       "start": 268,
-      "dur": 4.5,
+      "dur": 0.5,
       "kind": "raw",
       "src": "real/real_woodbuffalo_1.jpg",
       "hue": "cold",
@@ -3691,19 +3588,10 @@
     {
       "id": "r039",
       "start": 685,
-      "dur": 4.5,
+      "dur": 0.5,
       "kind": "raw",
       "src": "real/real_bison_snow_1.jpg",
       "hue": "cold"
-    },
-    {
-      "id": "r044",
-      "start": 912,
-      "dur": 4.5,
-      "kind": "raw",
-      "src": "real/real_wolf_1.jpg",
-      "hue": "cold",
-      "kicker": "Lobos"
     },
     {
       "id": "r046",
@@ -3717,7 +3605,7 @@
     {
       "id": "r052",
       "start": 1238,
-      "dur": 4.5,
+      "dur": 0.6,
       "kind": "raw",
       "src": "real/real_nahanni_2.jpg",
       "hue": "cold"
@@ -3782,7 +3670,7 @@
     {
       "id": "r062",
       "start": 287.5,
-      "dur": 4,
+      "dur": 0.5,
       "kind": "raw",
       "src": "broll/pex_forest_fog.mp4",
       "hue": "cold"
@@ -3839,25 +3727,9 @@
     {
       "id": "r069",
       "start": 516.9,
-      "dur": 5,
+      "dur": 0.1,
       "kind": "raw",
       "src": "broll/pex_snowy_mountains.mp4",
-      "hue": "cold"
-    },
-    {
-      "id": "r070",
-      "start": 521.9,
-      "dur": 5,
-      "kind": "raw",
-      "src": "broll/pex_frozen_river.mp4",
-      "hue": "cold"
-    },
-    {
-      "id": "r071",
-      "start": 526.9,
-      "dur": 7.6,
-      "kind": "raw",
-      "src": "broll/pex_river_water.mp4",
       "hue": "cold"
     },
     {
@@ -3993,7 +3865,7 @@
     {
       "id": "r088",
       "start": 1059.6,
-      "dur": 3.9,
+      "dur": 0.4,
       "kind": "raw",
       "src": "broll/pex_blizzard.mp4",
       "hue": "cold"
@@ -4013,6 +3885,363 @@
       "kind": "raw",
       "src": "broll/pex_mountains_winter.mp4",
       "hue": "cold"
+    },
+    {
+      "id": "ru047",
+      "start": 54.5,
+      "dur": 3,
+      "kind": "rule",
+      "hue": "amber",
+      "title": "El reino del bisonte",
+      "number": "01"
+    },
+    {
+      "id": "ru048",
+      "start": 268.5,
+      "dur": 3,
+      "kind": "rule",
+      "hue": "blue",
+      "title": "El regreso",
+      "number": "02"
+    },
+    {
+      "id": "ru049",
+      "start": 685.5,
+      "dur": 3,
+      "kind": "rule",
+      "hue": "amber",
+      "title": "Contra todo pronóstico",
+      "number": "03"
+    },
+    {
+      "id": "ru050",
+      "start": 912,
+      "dur": 3,
+      "kind": "rule",
+      "hue": "red",
+      "title": "El misterio",
+      "number": "04"
+    },
+    {
+      "id": "ru051",
+      "start": 1238.6,
+      "dur": 3,
+      "kind": "rule",
+      "hue": "blue",
+      "title": "El presente",
+      "number": "05"
+    },
+    {
+      "id": "he052",
+      "start": 84,
+      "dur": 4,
+      "kind": "headline",
+      "hue": "amber",
+      "eyebrow": "Antes de la colonización",
+      "tokens": [
+        {
+          "t": "Hasta "
+        },
+        {
+          "t": "60 millones",
+          "good": true
+        },
+        {
+          "t": " de bisontes"
+        }
+      ]
+    },
+    {
+      "id": "an053",
+      "start": 100,
+      "dur": 5,
+      "kind": "annotated",
+      "hue": "cold",
+      "image": "real/real_woodbison_1.jpg",
+      "eyebrow": "El bisonte de bosque",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.46,
+          "y": 0.34,
+          "w": 0.16,
+          "label": "Joroba enorme"
+        },
+        {
+          "kind": "arrow",
+          "x": 0.62,
+          "y": 0.6,
+          "fromX": 0.85,
+          "fromY": 0.78,
+          "label": "Pelaje grueso"
+        }
+      ],
+      "caption": "El animal terrestre más grande de Norteamérica"
+    },
+    {
+      "id": "ca054",
+      "start": 129,
+      "dur": 4,
+      "kind": "callout",
+      "hue": "red",
+      "image": "real/real_skullpile_1.jpg",
+      "eyebrow": "La masacre",
+      "accent": "danger",
+      "figure": "1870–1890",
+      "caption": "Casi exterminados en 20 años"
+    },
+    {
+      "id": "ag055",
+      "start": 256,
+      "dur": 6,
+      "kind": "aged",
+      "hue": "amber",
+      "image": "real/real_dene_1.jpg",
+      "eyebrow": "Los pueblos del norte",
+      "accent": "amber",
+      "heading": "Una generación sin bisontes",
+      "lines": [
+        {
+          "text": "Los abuelos contaban cómo cazarlos."
+        },
+        {
+          "text": "Los nietos no los vieron nunca.",
+          "mark": true
+        }
+      ]
+    },
+    {
+      "id": "ca056",
+      "start": 288,
+      "dur": 4,
+      "kind": "callout",
+      "hue": "cold",
+      "image": "real/real_floatplane_1.jpg",
+      "eyebrow": "Se daba por extinto",
+      "accent": "cold",
+      "figure": "1957",
+      "caption": "Hasta que algo cambió todo"
+    },
+    {
+      "id": "ch057",
+      "start": 440,
+      "dur": 6.5,
+      "kind": "checklist",
+      "hue": "cold",
+      "eyebrow": "La búsqueda",
+      "accent": "good",
+      "title": "Necesitaban un valle así",
+      "items": [
+        {
+          "text": "Sin enfermedades",
+          "state": "done"
+        },
+        {
+          "text": "Aislado, sin contacto con otras manadas",
+          "state": "done"
+        },
+        {
+          "text": "Solo accesible por avión",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "id": "pr058",
+      "start": 517,
+      "dur": 13,
+      "kind": "process",
+      "hue": "amber",
+      "eyebrow": "El operativo",
+      "accent": "amber",
+      "title": "De Alberta al Ártico",
+      "steps": [
+        {
+          "title": "Selección",
+          "desc": "28 en Elk Island",
+          "image": "img/bi_p_selected_bison.png"
+        },
+        {
+          "title": "Sedación y tag",
+          "desc": "ID individual",
+          "image": "img/bi_a066.png"
+        },
+        {
+          "title": "Cajón a medida",
+          "desc": "+1000 kg c/u",
+          "image": "img/bi_a069.png"
+        },
+        {
+          "title": "Carga",
+          "desc": "Al Hércules",
+          "image": "img/bi_a073.png"
+        },
+        {
+          "title": "Vuelo",
+          "desc": "Pista de tierra",
+          "image": "img/bi_p_dirt_strip.png"
+        },
+        {
+          "title": "Liberación",
+          "desc": "Junio de 1980",
+          "image": "img/bi_a080.png"
+        }
+      ]
+    },
+    {
+      "id": "ba059",
+      "start": 766,
+      "dur": 6,
+      "kind": "bars",
+      "hue": "amber",
+      "eyebrow": "El conteo aéreo",
+      "accent": "good",
+      "title": "De 28 a 960",
+      "bars": [
+        {
+          "label": "1980",
+          "value": 28,
+          "display": "28"
+        },
+        {
+          "label": "2004",
+          "value": 403,
+          "display": "403"
+        },
+        {
+          "label": "2017",
+          "value": 960,
+          "display": "960",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "he060",
+      "start": 866,
+      "dur": 4,
+      "kind": "headline",
+      "hue": "amber",
+      "eyebrow": "Caso Nahanni",
+      "tokens": [
+        {
+          "t": "Un "
+        },
+        {
+          "t": "milagro",
+          "good": true
+        },
+        {
+          "t": " de la conservación"
+        }
+      ]
+    },
+    {
+      "id": "cr061",
+      "start": 1060,
+      "dur": 8,
+      "kind": "cross",
+      "hue": "cold",
+      "eyebrow": "Rain on snow",
+      "title": "Comida bajo el hielo",
+      "layers": [
+        {
+          "label": "Placa de hielo",
+          "depth": "sellado",
+          "color": "#cfe0e6",
+          "weight": 0.8
+        },
+        {
+          "label": "Nieve",
+          "depth": "",
+          "color": "#eef3f5",
+          "weight": 2.4
+        },
+        {
+          "label": "Pasto atrapado",
+          "depth": "comida",
+          "color": "#6E8B47",
+          "weight": 1.4
+        },
+        {
+          "label": "Suelo",
+          "depth": "",
+          "color": "#5b4a35",
+          "weight": 3.2
+        }
+      ],
+      "marker": {
+        "label": "No pueden romperla",
+        "atDepth": 1,
+        "color": "danger"
+      }
+    },
+    {
+      "id": "ch062",
+      "start": 1256.5,
+      "dur": 6,
+      "kind": "checklist",
+      "hue": "cold",
+      "eyebrow": "Conservación activa",
+      "accent": "cold",
+      "title": "Cómo lo cuidan hoy",
+      "items": [
+        {
+          "text": "Monitoreo satelital",
+          "state": "doing"
+        },
+        {
+          "text": "Collares GPS",
+          "state": "doing"
+        },
+        {
+          "text": "Muestras desde helicóptero",
+          "state": "doing"
+        }
+      ]
+    },
+    {
+      "id": "in063",
+      "start": 1428,
+      "dur": 7,
+      "kind": "infzoom",
+      "accent": "accent",
+      "images": [
+        {
+          "src": "img/bi_im_200.png",
+          "label": "200"
+        },
+        {
+          "src": "img/bi_im_960.png",
+          "label": "960"
+        },
+        {
+          "src": "img/bi_im_544.png",
+          "label": "≈500"
+        }
+      ]
+    },
+    {
+      "id": "ag064",
+      "start": 1352,
+      "dur": 6,
+      "kind": "aged",
+      "hue": "amber",
+      "eyebrow": "La lección de Nahanni",
+      "accent": "good",
+      "heading": "Un éxito incierto",
+      "lines": [
+        {
+          "text": "Complicado."
+        },
+        {
+          "text": "Incierto."
+        },
+        {
+          "text": "Pero un éxito.",
+          "mark": true
+        }
+      ]
     },
     {
       "id": "bi_c_herc_land_still",
@@ -4051,6 +4280,19 @@
         "type": "image",
         "name": "bi_c_woodbison_forest",
         "prompt": "Realistic handheld 16:9 documentary-style video frame of a giant dark wood bison walking slowly through a dense boreal forest of birch and black pine, ferns, dappled cold light, half hidden among trees. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
+      }
+    },
+    {
+      "id": "bi_c_hunters_rifles_still",
+      "start": 999,
+      "dur": 3,
+      "kind": "talk",
+      "src": "img/bi_c_hunters_rifles.png",
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "bi_c_hunters_rifles",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of 19th century commercial buffalo hunters lying in tall prairie grass aiming long Sharps rifles at a distant herd, smoke from a rifle shot, sepia archival. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
       }
     },
     {
@@ -4288,19 +4530,6 @@
       }
     },
     {
-      "id": "bi_c_gps_collar_still",
-      "start": 999,
-      "dur": 3,
-      "kind": "talk",
-      "src": "img/bi_c_gps_collar.png",
-      "hue": "cold",
-      "gen": {
-        "type": "image",
-        "name": "bi_c_gps_collar",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of a tranquilized bison being fitted with a GPS tracking collar by veterinarians who arrived by helicopter, present day field science. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
       "id": "bi_c_calf_spring_still",
       "start": 999,
       "dur": 3,
@@ -4415,19 +4644,6 @@
         "type": "image",
         "name": "bi_a024",
         "prompt": "Realistic handheld 16:9 documentary-style video frame of a steam locomotive crossing the open plains belching black smoke as bison flee, faded sepia archival. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
-      }
-    },
-    {
-      "id": "bi_a041_still",
-      "start": 999,
-      "dur": 3,
-      "kind": "talk",
-      "src": "img/bi_a041.png",
-      "hue": "amber",
-      "gen": {
-        "type": "image",
-        "name": "bi_a041",
-        "prompt": "Realistic handheld 16:9 documentary-style video frame of a 1950s float plane banking over endless swampy boreal forest, faded color film. natural soft overcast northern daylight, muted cold colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, fantasy style, illustration, modern clothing."
       }
     },
     {

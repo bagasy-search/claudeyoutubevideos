@@ -1,0 +1,1028 @@
+{
+ "video": "rosemarymask",
+ "avatar": "rosemarymask_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 0.3,
+   "dur": 5.56,
+   "key": "hook",
+   "kind": "freezezoom",
+   "image": "img/hook_spot_macro.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 1.7,
+   "label": "This isn't a stain.",
+   "tone": "teal"
+  },
+  {
+   "id": "pricewar_0",
+   "start": 5.86,
+   "dur": 16.14,
+   "key": "pricewar",
+   "kind": "pricewar",
+   "leftImage": "img/hook_jar.jpg",
+   "rightImage": "img/hook_cream.jpg",
+   "leftPrice": "$2",
+   "rightPrice": "$90",
+   "strike": "/ jar",
+   "leftLabel": "Rosemary, spread thin overnight",
+   "rightLabel": "“Brightening” night cream",
+   "subtitle": "Fades the spots faster than the $90 jar on your shelf ever did."
+  },
+  {
+   "id": "reprint_0",
+   "start": 22,
+   "dur": 6.86,
+   "key": "reprint",
+   "kind": "reprintscan",
+   "image": "img/hook_spot_macro.jpg",
+   "spot": {
+    "x": 0.5,
+    "y": 0.48,
+    "r": 0.16
+   },
+   "passes": 3,
+   "label": "Your skin keeps RE-PRINTING it — every day.",
+   "tone": "teal"
+  },
+  {
+   "id": "onehour_0",
+   "start": 28.86,
+   "dur": 6.18,
+   "key": "onehour",
+   "kind": "hourdial",
+   "hour": 2,
+   "big": "1",
+   "unit": "hour",
+   "label": "It only stops at ONE hour of the day.",
+   "tone": "gold"
+  },
+  {
+   "id": "dontgetup_0",
+   "start": 35.04,
+   "dur": 7.38,
+   "key": "dontgetup",
+   "kind": "talk"
+  },
+  {
+   "id": "twospots_0",
+   "start": 42.42,
+   "dur": 17.05,
+   "key": "twospots",
+   "kind": "freezezoom",
+   "image": "img/hook_hand.jpg",
+   "x": 0.6,
+   "y": 0.42,
+   "zoom": 2,
+   "label": "The two you already know by shape.",
+   "tone": "teal"
+  },
+  {
+   "id": "presstest_0",
+   "start": 59.47,
+   "dur": 2.8,
+   "key": "presstest",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "THE PRESS TEST",
+     "sub": "press the skin between your knuckles, let go — slow to fill back in? that is the same story as the spot",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/presstest_0.mp4"
+  },
+  {
+   "id": "samestory_0",
+   "start": 81.26,
+   "dur": 15,
+   "key": "samestory",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Slow"
+    },
+    {
+     "t": "snap-back."
+    },
+    {
+     "t": "Brown"
+    },
+    {
+     "t": "spots."
+    },
+    {
+     "t": "SAME",
+     "hl": true
+    },
+    {
+     "t": "STORY.",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "readout_0",
+   "start": 96.26,
+   "dur": 13.04,
+   "key": "readout",
+   "kind": "lowerthird",
+   "title": "A spot is a READOUT — not a flaw",
+   "tone": "teal",
+   "kicker": "One layer down",
+   "desc": "Most people treat the spot as a cosmetic thing to hide. It is actually your skin reporting what is happening one layer down — treat that, and the spot is one of the first things to move."
+  },
+  {
+   "id": "whyform_0",
+   "start": 109.3,
+   "dur": 16.3,
+   "key": "whyform",
+   "kind": "talk"
+  },
+  {
+   "id": "ledger_0",
+   "start": 125.6,
+   "dur": 2.8,
+   "key": "ledger",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "YOUR SKIN KEPT A LEDGER",
+     "sub": "every hour of sun you ever caught got tallied — and cashed in during your 50s and 60s",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/ledger_0.mp4"
+  },
+  {
+   "id": "twohalves_0",
+   "start": 154.07,
+   "dur": 8.17,
+   "key": "twohalves",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Too"
+    },
+    {
+     "t": "much"
+    },
+    {
+     "t": "pigment."
+    },
+    {
+     "t": "Too"
+    },
+    {
+     "t": "little"
+    },
+    {
+     "t": "CLEANUP.",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "nobody_0",
+   "start": 162.24,
+   "dur": 8.26,
+   "key": "nobody",
+   "kind": "talk"
+  },
+  {
+   "id": "notdirt_0",
+   "start": 170.5,
+   "dur": 22.06,
+   "key": "notdirt",
+   "kind": "mitoverdad",
+   "myth": "A dark spot is dirt — or damage you scrub off",
+   "truth": "It is pigment — melanin a cell factory keeps printing on a schedule",
+   "flipAt": 53
+  },
+  {
+   "id": "printer_0",
+   "start": 192.56,
+   "dur": 9.15,
+   "key": "printer",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "You"
+    },
+    {
+     "t": "treated"
+    },
+    {
+     "t": "the"
+    },
+    {
+     "t": "print."
+    },
+    {
+     "t": "Nobody"
+    },
+    {
+     "t": "showed"
+    },
+    {
+     "t": "you"
+    },
+    {
+     "t": "the"
+    },
+    {
+     "t": "PRINTER.",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "reveal_0",
+   "start": 201.71,
+   "dur": 1.39,
+   "key": "reveal",
+   "kind": "talk"
+  },
+  {
+   "id": "reveal_1",
+   "start": 203.1,
+   "dur": 1.94,
+   "key": "reveal",
+   "kind": "raw",
+   "src": "img/rm_federer_rosemary.png",
+   "kicker": "Two dollars a bunch — or free from the windowsill"
+  },
+  {
+   "id": "rosemary_0",
+   "start": 205.04,
+   "dur": 2.8,
+   "key": "rosemary",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ROSEMARY",
+     "sub": "the herb that talks to the printer — $2 a bunch, common, in every store",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/rosemary_0.mp4"
+  },
+  {
+   "id": "openloop_0",
+   "start": 218.85,
+   "dur": 62.03,
+   "key": "openloop",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "9 out of 10 ruin it — one move cancels the whole thing",
+   "tone": "warn",
+   "w": 3.2,
+   "eyebrow": "Revealed at the end"
+  },
+  {
+   "id": "desc1_0",
+   "start": 280.88,
+   "dur": 12.26,
+   "key": "desc1",
+   "kind": "guardaesto",
+   "title": "Exact recipe → in the description",
+   "items": [
+    "How much rosemary",
+    "What to infuse it into",
+    "How thin, how many nights"
+   ]
+  },
+  {
+   "id": "intro_0",
+   "start": 293.14,
+   "dur": 10.86,
+   "key": "intro",
+   "kind": "talk"
+  },
+  {
+   "id": "intro_1",
+   "start": 304,
+   "dur": 14.12,
+   "key": "intro",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Physician — the plain chemistry of aging skin",
+   "image": "img/rm_federer_nametag.png"
+  },
+  {
+   "id": "expect_0",
+   "start": 318.12,
+   "dur": 8.68,
+   "key": "expect",
+   "kind": "talk"
+  },
+  {
+   "id": "result1_0",
+   "start": 326.8,
+   "dur": 20.28,
+   "key": "result1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "~Day 7: calmer, brighter, less angry — the printer slowing",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Result"
+  },
+  {
+   "id": "result2_0",
+   "start": 347.08,
+   "dur": 9.88,
+   "key": "result2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Weeks 4–6: spots lift at the edges, blur outward",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Result"
+  },
+  {
+   "id": "result3_0",
+   "start": 356.96,
+   "dur": 8.44,
+   "key": "result3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Old spots: months — fading & softening, never deleting",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Result"
+  },
+  {
+   "id": "nolie_0",
+   "start": 365.4,
+   "dur": 7.08,
+   "key": "nolie",
+   "kind": "mitoverdad",
+   "myth": "A 10-year-old spot vanishes in a week",
+   "truth": "Months to truly fade — I would rather lose you now than lie to you",
+   "flipAt": 148
+  },
+  {
+   "id": "science_0",
+   "start": 372.48,
+   "dur": 8.11,
+   "key": "science",
+   "kind": "talk"
+  },
+  {
+   "id": "tyros_0",
+   "start": 380.59,
+   "dur": 2.8,
+   "key": "tyros",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TYROSINASE",
+     "sub": "the enzyme foreman — the switch that turns a building block into melanin. say it with me",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/tyros_0.mp4"
+  },
+  {
+   "id": "secret90_0",
+   "start": 405.28,
+   "dur": 8.54,
+   "key": "secret90",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Every"
+    },
+    {
+     "t": "brightener"
+    },
+    {
+     "t": "just"
+    },
+    {
+     "t": "slows"
+    },
+    {
+     "t": "ONE",
+     "hl": true
+    },
+    {
+     "t": "enzyme."
+    },
+    {
+     "t": "$90",
+     "hl": true
+    },
+    {
+     "t": "for"
+    },
+    {
+     "t": "that."
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "compounds_0",
+   "start": 413.82,
+   "dur": 4.18,
+   "key": "compounds",
+   "kind": "talk"
+  },
+  {
+   "id": "carnosic_0",
+   "start": 418,
+   "dur": 2.8,
+   "key": "carnosic",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "CARNOSIC ACID",
+     "sub": "the bodyguard — soaks up the oxidation sparks that scream 'make more pigment'",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/carnosic_0.mp4"
+  },
+  {
+   "id": "apple_0",
+   "start": 469.55,
+   "dur": 12.17,
+   "key": "apple",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Carnosic"
+    },
+    {
+     "t": "is"
+    },
+    {
+     "t": "the"
+    },
+    {
+     "t": "LEMON",
+     "hl": true
+    },
+    {
+     "t": "on"
+    },
+    {
+     "t": "the"
+    },
+    {
+     "t": "apple."
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "rosmarinic_0",
+   "start": 481.72,
+   "dur": 17.7,
+   "key": "rosmarinic",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Rosmarinic acid — the peacemaker: calms the quiet inflammation",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Compound"
+  },
+  {
+   "id": "ursolic_0",
+   "start": 499.42,
+   "dur": 15.16,
+   "key": "ursolic",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Ursolic acid — the glue: holds the barrier & water in",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Compound"
+  },
+  {
+   "id": "threejobs_0",
+   "start": 514.58,
+   "dur": 13.2,
+   "key": "threejobs",
+   "kind": "guardaesto",
+   "title": "One $2 herb — three jobs",
+   "items": [
+    "Carnosic → guards, mops up sparks",
+    "Rosmarinic → calms inflammation",
+    "Ursolic → seals the barrier"
+   ]
+  },
+  {
+   "id": "whynight_0",
+   "start": 527.78,
+   "dur": 2.3,
+   "key": "whynight",
+   "kind": "talk"
+  },
+  {
+   "id": "whynight_1",
+   "start": 530.08,
+   "dur": 3.69,
+   "key": "whynight",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Why"
+    },
+    {
+     "t": "at"
+    },
+    {
+     "t": "NIGHT?",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "daydefense_0",
+   "start": 533.77,
+   "dur": 27.2,
+   "key": "daydefense",
+   "kind": "mitoverdad",
+   "myth": "Any hour works — rub it on in the morning",
+   "truth": "By DAY the sun floors tyrosinase — you fight a losing battle",
+   "flipAt": 535
+  },
+  {
+   "id": "nightrepair_0",
+   "start": 560.97,
+   "dur": 2.8,
+   "key": "nightrepair",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NIGHT = REPAIR MODE",
+     "sub": "sun's switch off, skin clears old pigment cells — the herb finally gets a clean shot",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/nightrepair_0.mp4"
+  },
+  {
+   "id": "circadian_0",
+   "start": 591.58,
+   "dur": 2.8,
+   "key": "circadian",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "THE FIRST HOURS OF SLEEP",
+     "sub": "turnover speeds up, the cleanup crews clock in — you hand them the tool",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/circadian_0.mp4"
+  },
+  {
+   "id": "bothhalves_0",
+   "start": 633.36,
+   "dur": 15.75,
+   "key": "bothhalves",
+   "kind": "hourdial",
+   "hour": 2,
+   "big": "1",
+   "unit": "hour",
+   "label": "Both halves — in one hour of the night.",
+   "tone": "gold"
+  },
+  {
+   "id": "patients_0",
+   "start": 649.11,
+   "dur": 13.25,
+   "key": "patients",
+   "kind": "talk"
+  },
+  {
+   "id": "patients_1",
+   "start": 662.36,
+   "dur": 21.19,
+   "key": "patients",
+   "kind": "lowerthird",
+   "title": "Hundreds spent — spots unmoved. Always the timing.",
+   "tone": "teal",
+   "kicker": "Patient after patient",
+   "desc": "The correction step was always at the wrong hour, washed off too soon, or buried under other product. Fix the timing and the same face that 'tried everything' starts moving in a month."
+  },
+  {
+   "id": "villain_0",
+   "start": 683.55,
+   "dur": 13.62,
+   "key": "villain",
+   "kind": "talk"
+  },
+  {
+   "id": "villain_1",
+   "start": 697.17,
+   "dur": 16.35,
+   "key": "villain",
+   "kind": "bars",
+   "title": "Two bottles, two prices — one job (night)",
+   "bars": [
+    {
+     "label": "Day 'brightener'",
+     "value": 50,
+     "tone": "danger",
+     "note": "sold to you"
+    },
+    {
+     "label": "Night 'brightener'",
+     "value": 50,
+     "tone": "danger",
+     "note": "also sold to you"
+    }
+   ]
+  },
+  {
+   "id": "onejob_0",
+   "start": 713.52,
+   "dur": 4.2,
+   "key": "onejob",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "One"
+    },
+    {
+     "t": "job."
+    },
+    {
+     "t": "One"
+    },
+    {
+     "t": "HOUR.",
+     "hl": true
+    },
+    {
+     "t": "Two"
+    },
+    {
+     "t": "DOLLARS.",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "howto_0",
+   "start": 716.8,
+   "dur": 2.24,
+   "key": "howto",
+   "kind": "talk"
+  },
+  {
+   "id": "howto_1",
+   "start": 719.04,
+   "dur": 4.61,
+   "key": "howto",
+   "kind": "raw",
+   "src": "img/rm_federer_mix.png",
+   "kicker": "Three layers — each one for a reason"
+  },
+  {
+   "id": "layer1_0",
+   "start": 723.65,
+   "dur": 2.8,
+   "key": "layer1",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LAYER 1 · BARE, CLEAN SKIN",
+     "sub": "no sunscreen, no makeup, no serum first — any of that is a wall the herb sits on and dries out",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/layer1_0.mp4"
+  },
+  {
+   "id": "layer2_0",
+   "start": 743.2,
+   "dur": 9.26,
+   "key": "layer2",
+   "kind": "raw",
+   "src": "img/rm_federer_apply.png",
+   "kicker": "A thin film — thin enough to see your skin through it"
+  },
+  {
+   "id": "layer2_1",
+   "start": 752.46,
+   "dur": 2.8,
+   "key": "layer2",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LAYER 2 · A THIN FILM",
+     "sub": "rosemary infused into a light carrier — spread thin over the spots, not a thick clay mask",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/layer2_1.mp4"
+  },
+  {
+   "id": "film_0",
+   "start": 769.67,
+   "dur": 4.2,
+   "key": "film",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Not"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "clay"
+    },
+    {
+     "t": "mask."
+    },
+    {
+     "t": "A"
+    },
+    {
+     "t": "FILM.",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "layer3_0",
+   "start": 772,
+   "dur": 2.8,
+   "key": "layer3",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LAYER 3 · A LIGHT SEAL",
+     "sub": "a touch of plain oil or moisturizer on top — keeps it in contact all night. the layer everybody skips",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/layer3_0.mp4"
+  },
+  {
+   "id": "donots_0",
+   "start": 801.17,
+   "dur": 38.75,
+   "key": "donots",
+   "kind": "checklist",
+   "title": "Go gentle — two more do-nots",
+   "eyebrow": "Do not",
+   "tone": "warn",
+   "items": [
+    {
+     "text": "Not every single night at first — a few nights a week",
+     "state": "warn"
+    },
+    {
+     "text": "Not thicker — more is not faster, it is irritation",
+     "state": "warn"
+    },
+    {
+     "text": "Not with retinol/acid the same night — alternate",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "mistake_0",
+   "start": 839.92,
+   "dur": 8.22,
+   "key": "mistake",
+   "kind": "talk"
+  },
+  {
+   "id": "mistake_1",
+   "start": 848.14,
+   "dur": 34.17,
+   "key": "mistake",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "They RINSE it off at 15 minutes",
+   "tone": "warn",
+   "w": 3.2,
+   "eyebrow": "The mistake"
+  },
+  {
+   "id": "notmask_0",
+   "start": 882.31,
+   "dur": 13.89,
+   "key": "notmask",
+   "kind": "mitoverdad",
+   "myth": "A mask — rinse after 10–15 minutes",
+   "truth": "The repair window opens hours later — rinsing it off early throws the medicine away",
+   "flipAt": 14
+  },
+  {
+   "id": "leaveiton_0",
+   "start": 896.2,
+   "dur": 4.2,
+   "key": "leaveiton",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Leave."
+    },
+    {
+     "t": "It."
+    },
+    {
+     "t": "ON.",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "honesty_0",
+   "start": 899.15,
+   "dur": 17.5,
+   "key": "honesty",
+   "kind": "talk"
+  },
+  {
+   "id": "honesty_1",
+   "start": 916.65,
+   "dur": 20.99,
+   "key": "honesty",
+   "kind": "checklist",
+   "title": "Be honest — what this will NOT do",
+   "eyebrow": "The honest truth",
+   "tone": "warn",
+   "items": [
+    {
+     "text": "Bleach your skin — it evens, gently, over weeks",
+     "state": "warn"
+    },
+    {
+     "text": "Blank your face in 7 days (calmer & brighter, yes)",
+     "state": "warn"
+    },
+    {
+     "text": "'Detox' you — there are no toxins to pull out",
+     "state": "warn"
+    },
+    {
+     "text": "Replace sun protection by day",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "patchtest_0",
+   "start": 937.64,
+   "dur": 2.8,
+   "key": "patchtest",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TEST ON YOUR ARM FIRST",
+     "sub": "inside of the arm, wait a day — red or itchy? this one is not for you, and that is fine",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/patchtest_0.mp4"
+  },
+  {
+   "id": "meds_0",
+   "start": 947.83,
+   "dur": 2.8,
+   "key": "meds",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "PREGNANT OR ON MEDS? ASK FIRST",
+     "sub": "a concentrated infusion is stronger than a sprig on the potatoes — check with your own doctor",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/meds_0.mp4"
+  },
+  {
+   "id": "redflag_0",
+   "start": 955.08,
+   "dur": 2.8,
+   "key": "redflag",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "A SPOT THAT CHANGES → SEE A DOCTOR",
+     "sub": "growing, ragged edges, or ever bleeds — that is a job for a doctor in person, soon",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/redflag_0.mp4"
+  },
+  {
+   "id": "recap_0",
+   "start": 977.68,
+   "dur": 14.79,
+   "key": "recap",
+   "kind": "talk"
+  },
+  {
+   "id": "recap_1",
+   "start": 992.47,
+   "dur": 44.39,
+   "key": "recap",
+   "kind": "guardaesto",
+   "title": "The Rosemary Night Mask — 5 steps",
+   "items": [
+    "1 · Slow the factory, not scrub the paper",
+    "2 · Rosemary hits tyrosinase — 3 compounds",
+    "3 · Night only — the repair window",
+    "4 · Bare skin → thin film → light seal",
+    "5 · Leave it on all night; rinse at dawn"
+   ]
+  },
+  {
+   "id": "guide_0",
+   "start": 1036.86,
+   "dur": 18.93,
+   "key": "guide",
+   "kind": "lowerthird",
+   "title": "The full card is in the description",
+   "tone": "teal",
+   "kicker": "Read it before your first night",
+   "desc": "Exact amounts, what to infuse it into, how thin, how many nights a week, and the gentle way to test it first — doing it gently matters more than doing it strong."
+  },
+  {
+   "id": "comment_0",
+   "start": 1055.79,
+   "dur": 2.8,
+   "key": "comment",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TELL ME: RINSED, OR LEFT ON?",
+     "sub": "have you been rinsing your masks off at 15 minutes this whole time, thinking that was right?",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/comment_0.mp4"
+  },
+  {
+   "id": "teaser_0",
+   "start": 1071.61,
+   "dur": 2.8,
+   "key": "teaser",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NEXT: THE 2-MINUTE MORNING MOVE",
+     "sub": "the daytime half that makes the night mask work twice as hard by the time you sleep",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/rosemarymask/teaser_0.mp4"
+  },
+  {
+   "id": "cierre_0",
+   "start": 1097.32,
+   "dur": 12.85,
+   "key": "cierre",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Those spots were never who you are. Tonight, tell the printer to stop.",
+   "image": "img/rm_federer_serious.png"
+  }
+ ]
+}

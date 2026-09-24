@@ -1,0 +1,1564 @@
+{
+ "video": "quebracho",
+ "avatar": "quebracho_opt.mp4",
+ "tutorial": false,
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 1.56,
+   "kind": "talk",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_1",
+   "start": 2.86,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "vid/qb_hacha_rebota.mp4",
+   "hue": "blue",
+   "hold": true,
+   "gen": {
+    "type": "clip",
+    "image": "qb_hacha_rebota",
+    "prompt": "Foto documental muy realista, 16:9. extreme slow motion of an axe striking an extremely hard dark wood log and bouncing off, sparks, the wood barely marked. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 120
+   }
+  },
+  {
+   "id": "hook_2",
+   "start": 6.49,
+   "dur": 2.13,
+   "kind": "raw",
+   "src": "vid/qb_poste_100.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "qb_poste_100",
+    "prompt": "Foto documental muy realista, 16:9. a gray weathered wooden fence post that has stood in a field for a hundred years, still solid. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "hook_3",
+   "start": 8.62,
+   "dur": 2.13,
+   "kind": "raw",
+   "src": "vid/qb_durmiente.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_durmiente",
+    "prompt": "Foto documental muy realista, 16:9. an old wooden railway sleeper under train tracks, a century old, weathered but sound. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_4",
+   "start": 10.75,
+   "dur": 2.14,
+   "kind": "raw",
+   "src": "vid/qb_estufa_raja.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "qb_estufa_raja",
+    "prompt": "Foto documental muy realista, 16:9. a wood stove glowing red hot, its iron cracking from the intense heat of burning extremely dense hardwood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "hook_5",
+   "start": 12.89,
+   "dur": 2.13,
+   "kind": "raw",
+   "src": "vid/qb_generaciones.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_generaciones",
+    "prompt": "Foto documental muy realista, 16:9. an old man, his grown son and a small grandson standing by the same old wooden post, three generations. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_6",
+   "start": 15.02,
+   "dur": 2.13,
+   "kind": "raw",
+   "src": "vid/qb_hunde_agua.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "qb_hunde_agua",
+    "prompt": "Foto documental muy realista, 16:9. a dense dark piece of wood sinking straight to the bottom of a bucket of water like a stone. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "hook_7",
+   "start": 17.15,
+   "dur": 29.59,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "100"
+    },
+    {
+     "t": "años"
+    },
+    {
+     "t": "enterrada."
+    },
+    {
+     "t": "Sin"
+    },
+    {
+     "t": "pudrirse",
+     "hl": true
+    }
+   ],
+   "eyebrow": "La madera que rompe el hacha",
+   "bg": "image",
+   "image": "vid/qb_hook_super.mp4",
+   "at": "cien anos",
+   "hue": "blue"
+  },
+  {
+   "id": "hook_8",
+   "start": 46.74,
+   "dur": 44.38,
+   "kind": "raw",
+   "src": "img/qb_tomas_hook.png",
+   "hue": "red",
+   "kicker": "La madera que quisieron borrar",
+   "gen": {
+    "type": "image",
+    "name": "qb_tomas_hook",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, holding a heavy dark piece of hardwood, showing its weight to camera, serious, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_0",
+   "start": 91.12,
+   "dur": 7.13,
+   "kind": "raw",
+   "src": "img/qb_tomas_ensena.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_tomas_ensena",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, explaining, holding a chunk of dense red hardwood, in his workshop, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_1",
+   "start": 98.25,
+   "dur": 7.14,
+   "kind": "raw",
+   "src": "vid/qb_arbol.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_arbol",
+    "prompt": "Foto documental muy realista, 16:9. a gnarled quebracho tree in the dry Chaco scrubland, tough and ancient. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_2",
+   "start": 105.39,
+   "dur": 7.13,
+   "kind": "raw",
+   "src": "vid/qb_nandubay_alambrado.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_nandubay_alambrado",
+    "prompt": "Foto documental muy realista, 16:9. old twisted nandubay fence posts holding a wire fence along a rural road. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_3",
+   "start": 112.52,
+   "dur": 7.13,
+   "kind": "raw",
+   "src": "vid/qb_ruta_postes.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_ruta_postes",
+    "prompt": "Foto documental muy realista, 16:9. a long line of gray weathered fence posts along a rural roadside, older than the people who drive past. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_4",
+   "start": 119.65,
+   "dur": 7.13,
+   "kind": "raw",
+   "src": "vid/qb_urunday_rojo.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_urunday_rojo",
+    "prompt": "Foto documental muy realista, 16:9. freshly cut urunday wood showing deep blood-red color inside. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_5",
+   "start": 126.78,
+   "dur": 7.14,
+   "kind": "raw",
+   "src": "vid/qb_hacha_rebota_cerca.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_hacha_rebota_cerca",
+    "prompt": "Foto documental muy realista, 16:9. an axe head bouncing off an extremely hard log, the blade barely marking it. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_6",
+   "start": 133.92,
+   "dur": 7.13,
+   "kind": "raw",
+   "src": "vid/qb_osage_arco.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_osage_arco",
+    "prompt": "Foto documental muy realista, 16:9. a native american osage orange bow, honey colored hardwood, historical. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_7",
+   "start": 141.05,
+   "dur": 7.13,
+   "kind": "raw",
+   "src": "vid/qb_caballo.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_caballo",
+    "prompt": "Foto documental muy realista, 16:9. a criollo horse standing in a field, once the price of a single osage bow. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_8",
+   "start": 148.18,
+   "dur": 14.27,
+   "kind": "avpizarra",
+   "items": [
+    {
+     "png": "img/qb_cut_colorado.png",
+     "title": "Quebracho",
+     "body": "el rey"
+    },
+    {
+     "png": "img/qb_cut_nandubay.png",
+     "title": "Ñandubay"
+    },
+    {
+     "png": "img/qb_cut_urunday.png",
+     "title": "Urunday"
+    },
+    {
+     "png": "img/qb_cut_algarrobo.png",
+     "title": "Algarrobo"
+    },
+    {
+     "png": "img/qb_cut_lapacho.png",
+     "title": "Lapacho"
+    }
+   ],
+   "side": "right",
+   "eyebrow": "Las maderas eternas",
+   "at": "el nandubay",
+   "hue": "amber"
+  },
+  {
+   "id": "conoces_9",
+   "start": 162.45,
+   "dur": 7.13,
+   "kind": "raw",
+   "src": "vid/qb_itin_arbol.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_itin_arbol",
+    "prompt": "Foto documental muy realista, 16:9. a dense thorny itin tree in dry scrubland, extremely hard wood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_10",
+   "start": 169.58,
+   "dur": 7.13,
+   "kind": "raw",
+   "src": "vid/qb_lapacho.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_lapacho",
+    "prompt": "Foto documental muy realista, 16:9. a lapacho tree in bloom with pink flowers, its wood famously hard and lasting. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "conoces_11",
+   "start": 176.71,
+   "dur": 7.13,
+   "kind": "raw",
+   "src": "vid/qb_algarrobo_arbol.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "qb_algarrobo_arbol",
+    "prompt": "Foto documental muy realista, 16:9. an old spreading algarrobo tree in the dry countryside, noble and ancient. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "conoces_12",
+   "start": 183.84,
+   "dur": 4.76,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Por"
+    },
+    {
+     "t": "qué"
+    },
+    {
+     "t": "esta"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "pudre",
+     "hl": true
+    }
+   ],
+   "eyebrow": "La misma madera imposible, en todo el mundo",
+   "bg": "image",
+   "image": "vid/qb_mundo.mp4",
+   "at": "por que esta no se pudre",
+   "hue": "blue"
+  },
+  {
+   "id": "ciencia_0",
+   "start": 188.6,
+   "dur": 7.64,
+   "kind": "diagram",
+   "eyebrow": "Por qué no se pudre",
+   "slides": [
+    {
+     "image": "img/dg_qb_densidad.png",
+     "eyebrow": "Densidad: anillos finos, sin aire para el hongo"
+    },
+    {
+     "image": "img/dg_qb_taninos.png",
+     "eyebrow": "Taninos: veneno natural contra hongo y termita"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "ciencia_1",
+   "start": 196.24,
+   "dur": 14.66,
+   "kind": "raw",
+   "src": "vid/qb_anillos_finos.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "qb_anillos_finos",
+    "prompt": "Foto documental muy realista, 16:9. macro of extremely fine tight growth rings in a cross section of dense hardwood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "ciencia_2",
+   "start": 210.9,
+   "dur": 14.66,
+   "kind": "raw",
+   "src": "vid/qb_pesa_hierro.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_pesa_hierro",
+    "prompt": "Foto documental muy realista, 16:9. a small block of dark dense wood on a scale, weighing as much as iron. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ciencia_3",
+   "start": 225.56,
+   "dur": 14.66,
+   "kind": "raw",
+   "src": "vid/qb_resinas.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_resinas",
+    "prompt": "Foto documental muy realista, 16:9. amber colored natural resins and oils inside dense hardwood, the tree's own defense. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ciencia_4",
+   "start": 240.22,
+   "dur": 14.66,
+   "kind": "raw",
+   "src": "vid/qb_tanino_hongo.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_tanino_hongo",
+    "prompt": "Foto documental muy realista, 16:9. wood fungus unable to grow on a tannin-rich dark hardwood, dying. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ciencia_5",
+   "start": 254.88,
+   "dur": 5.39,
+   "kind": "raw",
+   "src": "vid/qb_termita_va.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "qb_termita_va",
+    "prompt": "Foto documental muy realista, 16:9. a termite biting hard tannin-rich wood and turning away, unable to eat it. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "ciencia_6",
+   "start": 260.27,
+   "dur": 5.39,
+   "kind": "raw",
+   "src": "vid/qb_bacteria_no.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_bacteria_no",
+    "prompt": "Foto documental muy realista, 16:9. microscopic view of bacteria unable to break down tannin-protected wood fiber. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ciencia_7",
+   "start": 265.66,
+   "dur": 10.79,
+   "kind": "avpizarra",
+   "items": [
+    {
+     "png": "img/qb_cut_veta.png",
+     "title": "Anillos finos",
+     "body": "sin aire, no entra la pudrición"
+    },
+    {
+     "png": "img/qb_cut_hongo.png",
+     "title": "El hongo se muere"
+    },
+    {
+     "png": "img/qb_cut_termita.png",
+     "title": "La termita se va"
+    }
+   ],
+   "side": "left",
+   "eyebrow": "Veneno de fábrica",
+   "at": "el hongo que",
+   "hue": "amber"
+  },
+  {
+   "id": "ciencia_8",
+   "start": 276.45,
+   "dur": 13.53,
+   "kind": "quote",
+   "image": "vid/qb_blindada.mp4",
+   "text": "Ya viene con la protección puesta *de fábrica*.",
+   "at": "de fabrica",
+   "hue": "blue"
+  },
+  {
+   "id": "dureza_0",
+   "start": 289.98,
+   "dur": 7,
+   "kind": "bars",
+   "title": "Dureza (escala Janka)",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Pino (corralón)",
+     "value": 15
+    },
+    {
+     "label": "Roble",
+     "value": 50
+    },
+    {
+     "label": "Quebracho colorado",
+     "value": 100,
+     "winner": true
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "dureza_1",
+   "start": 296.98,
+   "dur": 8.4,
+   "kind": "raw",
+   "src": "vid/qb_sierra_chispas.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "qb_sierra_chispas",
+    "prompt": "Foto documental muy realista, 16:9. a saw blade throwing sparks and struggling against extremely hard dense wood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "dureza_2",
+   "start": 305.38,
+   "dur": 8.4,
+   "kind": "raw",
+   "src": "vid/qb_filo_embota.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_filo_embota",
+    "prompt": "Foto documental muy realista, 16:9. a dulled chipped saw blade after cutting extremely hard wood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "dureza_3",
+   "start": 313.78,
+   "dur": 8.4,
+   "kind": "raw",
+   "src": "vid/qb_carpintero_maldice.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_carpintero_maldice",
+    "prompt": "Foto documental muy realista, 16:9. a carpenter frustrated and impressed working a stubborn dense hardwood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "dureza_4",
+   "start": 322.18,
+   "dur": 8.4,
+   "kind": "raw",
+   "src": "vid/qb_brasas_horas.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_brasas_horas",
+    "prompt": "Foto documental muy realista, 16:9. long-lasting glowing embers of hardwood still burning hot hours later in a stove. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "dureza_5",
+   "start": 330.58,
+   "dur": 30.94,
+   "kind": "avpizarra",
+   "items": [
+    {
+     "png": "img/qb_cut_hacha.png",
+     "title": "Rompe el hacha",
+     "body": "más dura que el roble"
+    }
+   ],
+   "side": "left",
+   "eyebrow": "Dureza Janka",
+   "at": "el carpintero",
+   "hue": "red"
+  },
+  {
+   "id": "dureza_6",
+   "start": 361.52,
+   "dur": 29.17,
+   "kind": "raw",
+   "src": "vid/qb_arde_brasas.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "qb_arde_brasas",
+    "prompt": "Foto documental muy realista, 16:9. quebracho firewood burning with intense heat and long lasting embers in a stove. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "especies_0",
+   "start": 390.69,
+   "dur": 17.03,
+   "kind": "raw",
+   "src": "img/qb_tomas_especies.png",
+   "hue": "blue",
+   "kicker": "Cada una tiene su carácter",
+   "gen": {
+    "type": "image",
+    "name": "qb_tomas_especies",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, showing several different dense wood samples on a table, teaching, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "especies_1",
+   "start": 407.72,
+   "dur": 68.12,
+   "kind": "scrolldoc",
+   "panels": [
+    {
+     "eyebrow": "El rey",
+     "heading": "Quebracho colorado",
+     "body": "mundo entero. Competi contra cualquiera.",
+     "media": "vid/qb_e_colorado.mp4"
+    },
+    {
+     "eyebrow": "Durísimo igual",
+     "heading": "Quebracho blanco",
+     "body": "postes colorados de hace más de 100 años todavía",
+     "media": "vid/qb_e_blanco.mp4"
+    },
+    {
+     "eyebrow": "El del alambrado",
+     "heading": "Ñandubay",
+     "body": "El nandubay, el clásico del alambrado",
+     "media": "vid/qb_e_nandubay.mp4"
+    },
+    {
+     "eyebrow": "Rojo sangre",
+     "heading": "Urunday",
+     "body": "rojizo, que se usaba para las obras que tenían que",
+     "media": "vid/qb_e_urunday.mp4"
+    },
+    {
+     "eyebrow": "Casi imposible",
+     "heading": "Itín",
+     "body": "es noble y hermoso para los muebles.",
+     "media": "vid/qb_e_itin.mp4"
+    },
+    {
+     "eyebrow": "Noble y hermoso",
+     "heading": "Algarrobo",
+     "body": "Crecieron peleando. En suelos secos,",
+     "media": "vid/qb_e_algarrobo.mp4"
+    }
+   ]
+  },
+  {
+   "id": "especies_2",
+   "start": 475.84,
+   "dur": 8.4,
+   "kind": "quote",
+   "image": "vid/qb_pelearon.mp4",
+   "text": "La comodidad hace madera blanda. La pelea hace madera *eterna*.",
+   "at": "la pelea hace madera",
+   "hue": "amber"
+  },
+  {
+   "id": "belleza_0",
+   "start": 484.24,
+   "dur": 12.6,
+   "kind": "raw",
+   "src": "vid/qb_mesa_algarrobo.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_mesa_algarrobo",
+    "prompt": "Foto documental muy realista, 16:9. a solid algarrobo wood table with beautiful dark grain, heirloom quality. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "belleza_1",
+   "start": 496.84,
+   "dur": 12.59,
+   "kind": "raw",
+   "src": "vid/qb_veta_roja.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "qb_veta_roja",
+    "prompt": "Foto documental muy realista, 16:9. close macro of polished quebracho colorado showing deep red fiery grain. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "belleza_2",
+   "start": 509.43,
+   "dur": 12.6,
+   "kind": "raw",
+   "src": "vid/qb_marca_anos.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_marca_anos",
+    "prompt": "Foto documental muy realista, 16:9. an old well-used hardwood table whose marks and patina make it more beautiful. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "belleza_3",
+   "start": 522.03,
+   "dur": 12.59,
+   "kind": "raw",
+   "src": "vid/qb_lustre.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_lustre",
+    "prompt": "Foto documental muy realista, 16:9. hands rubbing oil into dark hardwood bringing out a deep warm glow. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_0",
+   "start": 534.62,
+   "dur": 33.55,
+   "kind": "diagram",
+   "eyebrow": "El tanino: de la madera al cuero",
+   "slides": [
+    {
+     "image": "img/dg_qb_tanino.png",
+     "eyebrow": "El veneno del árbol curtía el cuero del mundo"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "historia_1",
+   "start": 568.17,
+   "dur": 19.59,
+   "kind": "avpizarra",
+   "items": [
+    {
+     "png": "img/qb_cut_mapa.png",
+     "title": "El Chaco",
+     "body": "millones de quebrachos"
+    }
+   ],
+   "side": "right",
+   "eyebrow": "La Forestal",
+   "at": "millones de",
+   "hue": "blue"
+  },
+  {
+   "id": "historia_2",
+   "start": 587.76,
+   "dur": 9.8,
+   "kind": "raw",
+   "src": "vid/qb_forestal_fabrica.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_forestal_fabrica",
+    "prompt": "Foto documental muy realista, 16:9. an old early 1900s tannin factory in the Chaco forest, sepia archival feel. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_3",
+   "start": 597.56,
+   "dur": 9.79,
+   "kind": "raw",
+   "src": "vid/qb_hacheros.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_hacheros",
+    "prompt": "Foto documental muy realista, 16:9. axemen (hacheros) felling giant quebracho trees by hand in the hot Chaco forest, sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_4",
+   "start": 607.35,
+   "dur": 9.8,
+   "kind": "raw",
+   "src": "vid/qb_hervir_madera.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_hervir_madera",
+    "prompt": "Foto documental muy realista, 16:9. workers boiling quebracho wood chips in huge vats to extract dark tannin, sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_5",
+   "start": 617.15,
+   "dur": 9.79,
+   "kind": "raw",
+   "src": "vid/qb_tren_monte.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_tren_monte",
+    "prompt": "Foto documental muy realista, 16:9. an old logging railway cutting into the quebracho forest to haul out logs, sepia vintage. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_6",
+   "start": 626.94,
+   "dur": 9.8,
+   "kind": "raw",
+   "src": "vid/qb_extracto_tanino.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_extracto_tanino",
+    "prompt": "Foto documental muy realista, 16:9. old barrels and sacks of dark quebracho tannin extract in a factory yard, sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_7",
+   "start": 636.74,
+   "dur": 9.8,
+   "kind": "raw",
+   "src": "vid/qb_cuero_curtido.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "qb_cuero_curtido",
+    "prompt": "Foto documental muy realista, 16:9. hides being tanned into leather in vats, tannin turning skin into lasting leather, sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "historia_8",
+   "start": 646.54,
+   "dur": 9.79,
+   "kind": "raw",
+   "src": "vid/qb_rollizos.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_rollizos",
+    "prompt": "Foto documental muy realista, 16:9. giant quebracho logs stacked waiting to be processed for tannin, sepia archival. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_9",
+   "start": 656.33,
+   "dur": 9.8,
+   "kind": "raw",
+   "src": "vid/qb_almacen_empresa.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_almacen_empresa",
+    "prompt": "Foto documental muy realista, 16:9. an old company store where workers spent their wages, early 1900s, sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_10",
+   "start": 666.13,
+   "dur": 9.79,
+   "kind": "raw",
+   "src": "vid/qb_casas_caidas.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_casas_caidas",
+    "prompt": "Foto documental muy realista, 16:9. collapsed abandoned wooden worker houses in the depleted Chaco, sepia, silent. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "historia_11",
+   "start": 675.92,
+   "dur": 7.84,
+   "kind": "aged",
+   "heading": "Se llevaron en décadas lo que la naturaleza tardó siglos en hacer",
+   "lines": [
+    {
+     "text": "Millones de quebrachos volteados por su tanino.",
+     "mark": true
+    },
+    {
+     "text": "Cuando el monte se agotó, la empresa se fue."
+    }
+   ],
+   "image": "vid/qb_pueblo_fantasma.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "borrar_0",
+   "start": 683.76,
+   "dur": 24.06,
+   "kind": "raw",
+   "src": "vid/qb_cerca_viva.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_cerca_viva",
+    "prompt": "Foto documental muy realista, 16:9. a living fence of dense thorny trees grown together as a green wall in old countryside. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borrar_1",
+   "start": 707.82,
+   "dur": 24.05,
+   "kind": "raw",
+   "src": "vid/qb_poste_campo.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_poste_campo",
+    "prompt": "Foto documental muy realista, 16:9. endless line of hardwood fence posts across the pampas, a century old. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borrar_2",
+   "start": 731.87,
+   "dur": 9.03,
+   "kind": "raw",
+   "src": "vid/qb_alambre_puas.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "qb_alambre_puas",
+    "prompt": "Foto documental muy realista, 16:9. vintage barbed wire and steel fence posts replacing old living fences, sepia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "borrar_3",
+   "start": 740.9,
+   "dur": 9.03,
+   "kind": "raw",
+   "src": "vid/qb_cerca_muralla.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_cerca_muralla",
+    "prompt": "Foto documental muy realista, 16:9. a thick living fence of thorny trees grown as an impenetrable green wall. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borrar_4",
+   "start": 749.93,
+   "dur": 9.02,
+   "kind": "raw",
+   "src": "vid/qb_grampas.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_grampas",
+    "prompt": "Foto documental muy realista, 16:9. a hand hammering steel staples and barbed wire onto posts, the replacement industry. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borrar_5",
+   "start": 758.95,
+   "dur": 9.03,
+   "kind": "raw",
+   "src": "vid/qb_fabrica_alambre.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_fabrica_alambre",
+    "prompt": "Foto documental muy realista, 16:9. an old steel wire and fence factory, industrial, replacing the living fence. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borrar_6",
+   "start": 767.98,
+   "dur": 9.03,
+   "kind": "raw",
+   "src": "vid/qb_herbicida_cerca.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_herbicida_cerca",
+    "prompt": "Foto documental muy realista, 16:9. a living fence sprayed with herbicide to kill it, official campaign against it. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borrar_7",
+   "start": 777.01,
+   "dur": 9.03,
+   "kind": "raw",
+   "src": "vid/qb_poste_tratado.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_poste_tratado",
+    "prompt": "Foto documental muy realista, 16:9. cheap chemically treated pine fence posts that rot in a few years, contrast. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borrar_8",
+   "start": 786.04,
+   "dur": 70.5,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Si"
+    },
+    {
+     "t": "dura"
+    },
+    {
+     "t": "demasiado"
+    },
+    {
+     "t": "dejan"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "nombrarlo",
+     "hl": true
+    }
+   ],
+   "eyebrow": "No lo prohíben: lo hacen quedar mal",
+   "bg": "image",
+   "image": "vid/qb_plaga.mp4",
+   "at": "dejan de nombrarlo",
+   "hue": "amber"
+  },
+  {
+   "id": "reconocer_0",
+   "start": 856.54,
+   "dur": 25.43,
+   "kind": "checklist",
+   "title": "Cómo reconocer la madera buena",
+   "items": [
+    {
+     "text": "Pesa una barbaridad para su tamaño",
+     "state": "done"
+    },
+    {
+     "text": "Tirada al agua, se HUNDE",
+     "state": "done"
+    },
+    {
+     "text": "Cortada fresca, huele fuerte a tanino",
+     "state": "done"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "reconocer_1",
+   "start": 881.97,
+   "dur": 17.27,
+   "kind": "raw",
+   "src": "vid/qb_test_agua.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "qb_test_agua",
+    "prompt": "Foto documental muy realista, 16:9. throwing a piece of dense wood into a bucket of water where it sinks, a test. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "reconocer_2",
+   "start": 899.24,
+   "dur": 17.27,
+   "kind": "raw",
+   "src": "vid/qb_peso_mano.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_peso_mano",
+    "prompt": "Foto documental muy realista, 16:9. a hand struggling to lift a small but very heavy dark wood block, surprised by the weight. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "reconocer_3",
+   "start": 916.51,
+   "dur": 17.27,
+   "kind": "raw",
+   "src": "vid/qb_olor_tanino.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "qb_olor_tanino",
+    "prompt": "Foto documental muy realista, 16:9. freshly sawn dense wood releasing sawdust, the astringent smell of tannin, macro. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 60
+   }
+  },
+  {
+   "id": "reconocer_4",
+   "start": 933.78,
+   "dur": 17.28,
+   "kind": "raw",
+   "src": "vid/qb_veta_densa.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_veta_densa",
+    "prompt": "Foto documental muy realista, 16:9. macro of dense dark tight tannin-rich wood grain freshly cut. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "reconocer_5",
+   "start": 951.06,
+   "dur": 17.27,
+   "kind": "raw",
+   "src": "vid/qb_clavo_dobla.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_clavo_dobla",
+    "prompt": "Foto documental muy realista, 16:9. a bent nail that buckled trying to go into extremely hard wood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "reconocer_6",
+   "start": 968.33,
+   "dur": 17.27,
+   "kind": "raw",
+   "src": "vid/qb_agujero_guia.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_agujero_guia",
+    "prompt": "Foto documental muy realista, 16:9. drilling a pilot hole in extremely hard wood before nailing, workshop. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "usos_0",
+   "start": 985.6,
+   "dur": 76.32,
+   "kind": "scrolldoc",
+   "panels": [
+    {
+     "eyebrow": "Bajo los trenes",
+     "heading": "Durmientes",
+     "body": "para que se usaba esta madera cuando se necesitaba algo que no",
+     "media": "vid/qb_u_durmientes.mp4"
+    },
+    {
+     "eyebrow": "En las calles",
+     "heading": "Adoquines de madera",
+     "body": "algunas ciudades pavimentaban las calles con tacos de madera",
+     "media": "vid/qb_u_adoquines.mp4"
+    },
+    {
+     "eyebrow": "Bajo el agua",
+     "heading": "Pilotes de muelle",
+     "body": "aguantaba. Las ruedas de los carros, los",
+     "media": "vid/qb_u_pilotes.mp4"
+    },
+    {
+     "eyebrow": "El golpe diario",
+     "heading": "Ruedas y mangos",
+     "body": "fallar, que iba a estar sometido al agua, al peso,",
+     "media": "vid/qb_u_ruedas.mp4"
+    }
+   ]
+  },
+  {
+   "id": "usos_1",
+   "start": 1061.92,
+   "dur": 4.37,
+   "kind": "quote",
+   "image": "vid/qb_no_falla.mp4",
+   "text": "Lo barato, a la larga, *siempre sale caro*.",
+   "at": "siempre sale caro",
+   "hue": "blue"
+  },
+  {
+   "id": "faq_0",
+   "start": 1066.29,
+   "dur": 16.01,
+   "kind": "raw",
+   "src": "img/qb_tomas_faq.png",
+   "hue": "blue",
+   "kicker": "Las dudas de siempre",
+   "gen": {
+    "type": "image",
+    "name": "qb_tomas_faq",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, answering questions relaxed to camera in his workshop, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "faq_1",
+   "start": 1082.3,
+   "dur": 64.03,
+   "kind": "scrolldoc",
+   "panels": [
+    {
+     "eyebrow": "¿De verdad?",
+     "heading": "¿Dura 100 años?",
+     "body": "documentados de más de un siglo, todavía",
+     "media": "vid/qb_q_cien.mp4"
+    },
+    {
+     "eyebrow": "Entonces...",
+     "heading": "¿Por qué no se usa hoy?",
+     "body": "se agoto la fácil, crece lentísimo",
+     "media": "vid/qb_q_hoy.mp4"
+    },
+    {
+     "eyebrow": "Lo mejor",
+     "heading": "¿Puedo plantar una?",
+     "body": "¿Puedo plantar una? Sí, y deberías",
+     "media": "vid/qb_q_plantar.mp4"
+    }
+   ]
+  },
+  {
+   "id": "caveat_0",
+   "start": 1146.33,
+   "dur": 18.6,
+   "kind": "raw",
+   "src": "img/qb_tomas_sincero.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_tomas_sincero",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, speaking honestly and warmly to camera, hand on heart, sincere, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "caveat_1",
+   "start": 1164.93,
+   "dur": 18.6,
+   "kind": "raw",
+   "src": "vid/qb_monte_agotado.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "qb_monte_agotado",
+    "prompt": "Foto documental muy realista, 16:9. a thinned depleted forest where the big hardwoods were all taken, few left. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "caveat_2",
+   "start": 1183.53,
+   "dur": 18.61,
+   "kind": "raw",
+   "src": "vid/qb_rama_caida.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_rama_caida",
+    "prompt": "Foto documental muy realista, 16:9. a fallen hardwood branch and an old recovered post worth reusing, not cutting new. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "caveat_3",
+   "start": 1202.14,
+   "dur": 18.6,
+   "kind": "raw",
+   "src": "vid/qb_plantar.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "qb_plantar",
+    "prompt": "Foto documental muy realista, 16:9. an old man planting a tree he will never see grown, for his grandchildren. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "cta_0",
+   "start": 1220.74,
+   "dur": 25.34,
+   "kind": "avpizarra",
+   "items": [
+    {
+     "png": "img/qb_cut_aceite.png",
+     "title": "Aceite"
+    },
+    {
+     "png": "img/qb_cut_borato.png",
+     "title": "Borato"
+    },
+    {
+     "png": "img/qb_cut_fuego.png",
+     "title": "Fuego"
+    },
+    {
+     "png": "img/qb_cut_cal.png",
+     "title": "Cal"
+    }
+   ],
+   "side": "right",
+   "eyebrow": "Blindá tu madera barata",
+   "at": "con el aceite",
+   "hue": "amber"
+  },
+  {
+   "id": "cta_1",
+   "start": 1246.08,
+   "dur": 12.68,
+   "kind": "raw",
+   "src": "vid/qb_aceite_pincel.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "qb_aceite_pincel",
+    "prompt": "Foto documental muy realista, 16:9. brushing protective oil into cheap pine to make it last like hardwood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "cta_2",
+   "start": 1258.76,
+   "dur": 12.67,
+   "kind": "raw",
+   "src": "vid/qb_borato_tratar.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "qb_borato_tratar",
+    "prompt": "Foto documental muy realista, 16:9. treating cheap wood with borate solution to poison it against fungus and termites. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cta_3",
+   "start": 1271.43,
+   "dur": 12.67,
+   "kind": "raw",
+   "src": "vid/qb_fuego_chamuscar.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "qb_fuego_chamuscar",
+    "prompt": "Foto documental muy realista, 16:9. charring the surface of a wooden board with fire to protect it, japanese technique. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "cta_4",
+   "start": 1284.1,
+   "dur": 12.67,
+   "kind": "raw",
+   "src": "vid/qb_tanino_hervido.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "qb_tanino_hervido",
+    "prompt": "Foto documental muy realista, 16:9. boiling quebracho bark to make dark tannin water to protect and age cheap wood. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cta_5",
+   "start": 1296.77,
+   "dur": 10.56,
+   "kind": "bars",
+   "title": "El valor",
+   "unit": "US$",
+   "bars": [
+    {
+     "label": "Por separado",
+     "value": 158,
+     "tone": "danger"
+    },
+    {
+     "label": "Hoy",
+     "value": 27,
+     "winner": true
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "cta_6",
+   "start": 1307.33,
+   "dur": 8.87,
+   "kind": "quote",
+   "image": "vid/qb_manual_celular.mp4",
+   "text": "Que tu madera de dos pesos dure *como una de cien años*.",
+   "accent": "good",
+   "hue": "amber"
+  },
+  {
+   "id": "coment_0",
+   "start": 1316.2,
+   "dur": 19.75,
+   "kind": "raw",
+   "src": "img/qb_tomas_camara.png",
+   "hue": "blue",
+   "kicker": "¿Cuál es la madera eterna de tu zona?",
+   "gen": {
+    "type": "image",
+    "name": "qb_tomas_camara",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, talking warmly to camera inviting comments in his workshop, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "coment_1",
+   "start": 1335.95,
+   "dur": 13.17,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "mapa"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "las"
+    },
+    {
+     "t": "maderas"
+    },
+    {
+     "t": "eternas",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Quebracho, ñandubay, lapacho, algarrobo?",
+   "bg": "grid",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_0",
+   "start": 1349.12,
+   "dur": 8.02,
+   "kind": "quote",
+   "image": "vid/qb_arbol_dorado.mp4",
+   "text": "La madera que dura es la que *nadie apuró*.",
+   "at": "nadie apuro",
+   "hue": "red"
+  },
+  {
+   "id": "cierre_1",
+   "start": 1357.14,
+   "dur": 7.64,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Plantá"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "árbol"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "dure"
+    },
+    {
+     "t": "más"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "vos",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Cuida la que dura",
+   "bg": "image",
+   "image": "vid/qb_cierre_plantar.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_2",
+   "start": 1364.78,
+   "dur": 19.47,
+   "kind": "raw",
+   "src": "img/qb_tomas_firma.png",
+   "hue": "blue",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "qb_tomas_firma",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 anos, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marron, at his workshop door closing the video, golden hour, warm, en un taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  }
+ ],
+ "extraImages": [
+  {
+   "name": "qb_hook_super",
+   "prompt": "Foto documental muy realista, 16:9. an ancient dark hardwood fence post in a field, monumental, golden light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_mundo",
+   "prompt": "Foto documental muy realista, 16:9. different hard dense woods from around the world side by side, dark and heavy. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_blindada",
+   "prompt": "Foto documental muy realista, 16:9. dense dark hardwood, sealed and protected from within. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_pelearon",
+   "prompt": "Foto documental muy realista, 16:9. hard trees growing in harsh dry cracked soil under harsh sun. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_pueblo_fantasma",
+   "prompt": "Foto documental muy realista, 16:9. an abandoned ghost town in the Chaco, rusted rails and fallen houses, the forest gone. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_plaga",
+   "prompt": "Foto documental muy realista, 16:9. hardwood trees being cleared as a nuisance. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_no_falla",
+   "prompt": "Foto documental muy realista, 16:9. hardwood chosen for things that must never fail. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_manual_celular",
+   "prompt": "Foto documental muy realista, 16:9. a phone showing an open ebook wood-care manual on a workbench, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_arbol_dorado",
+   "prompt": "Foto documental muy realista, 16:9. an ancient hardwood tree at golden hour, weathered and eternal. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_cierre_plantar",
+   "prompt": "Foto documental muy realista, 16:9. hands firming soil around a newly planted tree at golden hour. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_e_colorado",
+   "prompt": "Foto documental muy realista, 16:9. deep red dark quebracho colorado hardwood, one of the hardest woods in the world. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_e_blanco",
+   "prompt": "Foto documental muy realista, 16:9. pale hard quebracho blanco wood log. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_e_nandubay",
+   "prompt": "Foto documental muy realista, 16:9. twisted nandubay fence post that resists river humidity for decades. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_e_urunday",
+   "prompt": "Foto documental muy realista, 16:9. reddish urunday hardwood used for lasting construction. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_e_itin",
+   "prompt": "Foto documental muy realista, 16:9. extremely dense itin wood, almost impossible to work. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_e_algarrobo",
+   "prompt": "Foto documental muy realista, 16:9. beautiful algarrobo hardwood with dark grain, prized for furniture. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_u_durmientes",
+   "prompt": "Foto documental muy realista, 16:9. wooden railway sleepers under tracks holding train weight for decades outdoors. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_u_adoquines",
+   "prompt": "Foto documental muy realista, 16:9. old streets paved with hardwood wooden blocks that lasted generations. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_u_pilotes",
+   "prompt": "Foto documental muy realista, 16:9. hardwood pilings driven underwater to hold a dock, resisting rot. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_u_ruedas",
+   "prompt": "Foto documental muy realista, 16:9. hardwood cart wheel hubs and tool handles that take a lifetime of blows. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_q_cien",
+   "prompt": "Foto documental muy realista, 16:9. a documented century-old hardwood post still standing sound in a field. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_q_hoy",
+   "prompt": "Foto documental muy realista, 16:9. scarce slow growing hardwood, expensive and hard to work, vs cheap treated pine. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "qb_q_plantar",
+   "prompt": "Foto documental muy realista, 16:9. hands planting a young hardwood sapling for future generations, hopeful. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinacion de camara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequenas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental autentico, saturacion baja, colores suaves y ligeramente apagados. Sin texto legible."
+  }
+ ]
+}

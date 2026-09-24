@@ -1,0 +1,2493 @@
+{
+ "video": "pxwash",
+ "avatar": "pxwash_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "px_pxhero_3",
+   "start": 4.26,
+   "dur": 1.74,
+   "kind": "pxhero",
+   "eyebrow": "The $1 bottle",
+   "phrase": "just *a dollar* at the drugstore"
+  },
+  {
+   "id": "pxwash_h3_7",
+   "start": 6.5,
+   "dur": 2.4,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_bottle_up.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "glitch_870",
+   "start": 8.7,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "fill_890",
+   "start": 8.9,
+   "dur": 1.92,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_pressure_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_hook_9",
+   "start": 10.82,
+   "dur": 1.64,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_9.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_12",
+   "start": 12.46,
+   "dur": 1.54,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "What the pros charge",
+   "prefix": "$",
+   "value": 400,
+   "support": "to come out and clean the exact same stuff a $1 bottle handles"
+  },
+  {
+   "id": "pxwash_h3_14",
+   "start": 14,
+   "dur": 5.24,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_foam_pour.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "ov_bulletcascade_19",
+   "start": 19.24,
+   "dur": 4.76,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BulletCascade",
+   "theme": "peroxide",
+   "zone": "left",
+   "eyebrow": "All of it is on the list",
+   "bullets": [
+    {
+     "key": "Green algae",
+     "post": " · siding"
+    },
+    {
+     "key": "Black streaks",
+     "post": " · roof"
+    },
+    {
+     "key": "Slippery film",
+     "post": " · deck"
+    }
+   ]
+  },
+  {
+   "id": "pxwash_h3_24",
+   "start": 24,
+   "dur": 4,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_fizz_macro.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "ov_mythtruth_28",
+   "start": 28,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "myth": "Hydrogen peroxide is just for a scraped knee",
+   "truth": "It kills algae, mold & mildew outside your house",
+   "mythLabel": "Myth",
+   "truthLabel": "Truth"
+  },
+  {
+   "id": "pxwash_h3_33",
+   "start": 33,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_roof_dramatic.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "pxwash_hook_37",
+   "start": 37.66,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_37.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_4796",
+   "start": 47.96,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_softwash_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_hook_52",
+   "start": 52.56,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_52.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_5906",
+   "start": 59.06,
+   "dur": 4.22,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_moss_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "tb_60",
+   "start": 63.28,
+   "dur": 4.72,
+   "kind": "typebeside",
+   "overlay": true,
+   "side": "right",
+   "title": "The quote",
+   "lines": [
+    "$240 — one wall",
+    "Just green film",
+    "He didn't know it's alive"
+   ]
+  },
+  {
+   "id": "pxwash_h3_68",
+   "start": 68,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_point_siding.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "fill_7480",
+   "start": 74.8,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_h3_88",
+   "start": 88,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "fill_9500",
+   "start": 95,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_h3_100",
+   "start": 100,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "fill_10700",
+   "start": 107,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_h3_110",
+   "start": 110,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "fill_11300",
+   "start": 113,
+   "dur": 5.48,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_concrete_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "px_pxfan_117",
+   "start": 118.48,
+   "dur": 12,
+   "kind": "pxfan",
+   "eyebrow": "Hydrogen peroxide, outside the house",
+   "phrase": "*9 ways* the pros won't tell you",
+   "number": "#1",
+   "goldCard": 4,
+   "goldAt": 196
+  },
+  {
+   "id": "fill_13048",
+   "start": 130.48,
+   "dur": 2.02,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "glitch_14202",
+   "start": 142.02,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "pxwash_h2o2_molecule",
+   "start": 142.22,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "img/pxwash_h2o2_molecule.png",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "fit": "blur"
+  },
+  {
+   "id": "fill_14872",
+   "start": 148.72,
+   "dur": 3.28,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_flowsteps_152",
+   "start": 152,
+   "dur": 6.28,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "peroxide",
+   "zone": "top",
+   "title": "Why it works",
+   "kicker": "H2O2 = water + one extra oxygen",
+   "nodes": [
+    {
+     "label": "H2O2"
+    },
+    {
+     "label": "Weak bond breaks"
+    },
+    {
+     "label": "Oxygen burst"
+    },
+    {
+     "label": "Rips the gunk apart"
+    },
+    {
+     "label": "Back to water + oxygen"
+    }
+   ]
+  },
+  {
+   "id": "px_pxfoam_163",
+   "start": 158.28,
+   "dur": 7.4,
+   "kind": "pxfoam",
+   "eyebrow": "The reaction you can see",
+   "title": "It foams and lifts the gunk",
+   "cleanLabel": "CLEAN!"
+  },
+  {
+   "id": "pxwash_quimica_168",
+   "start": 165.68,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "broll/pxwash_quimica_168.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_quimica_172",
+   "start": 170.48,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_quimica_172.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_18078",
+   "start": 180.78,
+   "dur": 5.82,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_rinse_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_vsduel_186",
+   "start": 186.6,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "peroxide",
+   "zone": "left",
+   "eyebrow": "Two kinds of bleach",
+   "title": "Chlorine vs Oxygen",
+   "left": {
+    "label": "Chlorine bleach",
+    "sub": "harsh, scorches plants",
+    "image": "img/pxwash_bleach.png",
+    "good": false
+   },
+   "right": {
+    "label": "Oxygen bleach",
+    "sub": "same kill, gone to water + air",
+    "image": "img/pxwash_oxygen.png",
+    "good": true
+   }
+  },
+  {
+   "id": "fill_19690",
+   "start": 196.9,
+   "dur": 5.04,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_shrubs_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_quimica_201",
+   "start": 201.94,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_moss_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_20844",
+   "start": 208.44,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_rinse_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "px_pxtoggle_212",
+   "start": 213.16,
+   "dur": 7.84,
+   "kind": "pxtoggle",
+   "eyebrow": "Right next to the garden",
+   "phrase": "harsh → *safe by the beds*"
+  },
+  {
+   "id": "glitch_22790",
+   "start": 227.9,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "px_pxchap_228",
+   "start": 228.1,
+   "dur": 1.9,
+   "kind": "pxchap",
+   "number": "#1",
+   "title": "Siding",
+   "sub": "the green film on the north side"
+  },
+  {
+   "id": "pxwash_trick1_230",
+   "start": 230,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_siding_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_23650",
+   "start": 236.5,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_siding_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "tb_241",
+   "start": 241,
+   "dur": 9,
+   "kind": "typebeside",
+   "overlay": true,
+   "side": "right",
+   "title": "Reality check",
+   "lines": [
+    "That green film",
+    "is NOT dirt",
+    "It's living algae"
+   ]
+  },
+  {
+   "id": "ov_bigstatreveal_250",
+   "start": 250,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "What a softwash charges",
+   "prefix": "$",
+   "value": 250,
+   "support": "a bleach mix on your siding — it can yellow your shrubs and kill the grass"
+  },
+  {
+   "id": "fill_26030",
+   "start": 260.3,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "img/pxwash_photo_sidingalgae_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "pxwash_trick1_264",
+   "start": 264,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_trick1_264.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_27050",
+   "start": 270.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_sprayer_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_278",
+   "start": 278,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "peroxide",
+   "zone": "left",
+   "eyebrow": "The recipe",
+   "title": "Siding, how I do it",
+   "steps": [
+    {
+     "title": "Mix 1:1",
+     "sub": "one part 3% peroxide, one part water"
+    },
+    {
+     "title": "Wet the siding first"
+    },
+    {
+     "title": "Spray bottom to top"
+    },
+    {
+     "title": "Wait 10–15 min"
+    }
+   ]
+  },
+  {
+   "id": "fill_28830",
+   "start": 288.3,
+   "dur": 4.85,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_softwash_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_29315",
+   "start": 293.15,
+   "dur": 4.85,
+   "kind": "raw",
+   "src": "img/pxwash_photo_sidingalgae_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "pxwash_trick1_298",
+   "start": 298,
+   "dur": 8,
+   "kind": "raw",
+   "src": "broll/pxwash_trick1_298.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "px_pxfoam_306",
+   "start": 306,
+   "dur": 6.5,
+   "kind": "pxfoam",
+   "eyebrow": "You'll see it work",
+   "title": "It foams where the algae is thickest",
+   "cleanLabel": "CLEAN!"
+  },
+  {
+   "id": "fill_31250",
+   "start": 312.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_shrubs_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_beforeafter_316",
+   "start": 316,
+   "dur": 9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "peroxide",
+   "zone": "top",
+   "eyebrow": "Rinse top to bottom",
+   "beforeLabel": "Green film",
+   "afterLabel": "Gone",
+   "caption": "the green's gone"
+  },
+  {
+   "id": "ov_bigstatreveal_325",
+   "start": 325,
+   "dur": 6.74,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "A $200 service call",
+   "prefix": "$",
+   "value": 200,
+   "suffix": " → pocket change",
+   "support": "you just did it for pocket change"
+  },
+  {
+   "id": "pxwash_trick1_331",
+   "start": 331.74,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_trick1_331.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_34204",
+   "start": 342.04,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_34702",
+   "start": 347.02,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "glitch_35180",
+   "start": 351.8,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "px_pxchap_352",
+   "start": 352,
+   "dur": 3.98,
+   "kind": "pxchap",
+   "number": "#2",
+   "title": "Wood deck",
+   "sub": "gray, green & slippery"
+  },
+  {
+   "id": "pxwash_trick2_355",
+   "start": 355.98,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_deck_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_36628",
+   "start": 366.28,
+   "dur": 2.72,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_deck_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_369",
+   "start": 369,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "A restoration crew charges",
+   "prefix": "$",
+   "value": 700,
+   "support": "$600–$700 for a deck a $1 bottle can bring back"
+  },
+  {
+   "id": "fill_37930",
+   "start": 379.3,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "img/pxwash_photo_deckmildew_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "pxwash_trick2_382",
+   "start": 382,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/pxwash_trick2_382.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_vsduel_389",
+   "start": 389,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "peroxide",
+   "zone": "left",
+   "eyebrow": "On wood",
+   "title": "Peroxide vs Chlorine",
+   "left": {
+    "label": "Chlorine",
+    "sub": "bleaches it white & blotchy",
+    "image": "img/pxwash_bleach.png",
+    "good": false
+   },
+   "right": {
+    "label": "Peroxide",
+    "sub": "brightens, restores the wood",
+    "image": "img/pxwash_oxygen.png",
+    "good": true
+   }
+  },
+  {
+   "id": "fill_39550",
+   "start": 395.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_hands_scrub_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_399",
+   "start": 399,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "peroxide",
+   "zone": "left",
+   "eyebrow": "The recipe (stronger than #1)",
+   "title": "Deck, how I do it",
+   "steps": [
+    {
+     "title": "Sweep the deck"
+    },
+    {
+     "title": "Mix 2:1 peroxide to water"
+    },
+    {
+     "title": "Add a tiny squirt of dish soap"
+    },
+    {
+     "title": "Work in sections"
+    },
+    {
+     "title": "Wait 15–20 min"
+    }
+   ]
+  },
+  {
+   "id": "fill_40930",
+   "start": 409.3,
+   "dur": 5.62,
+   "kind": "raw",
+   "src": "img/pxwash_photo_deckmildew_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "fill_41492",
+   "start": 414.92,
+   "dur": 5.62,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_trick2_420",
+   "start": 420.54,
+   "dur": 6.58,
+   "kind": "raw",
+   "src": "broll/pxwash_trick2_420.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_beforeafter_432",
+   "start": 427.12,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "peroxide",
+   "zone": "top",
+   "eyebrow": "Scrub with the grain",
+   "beforeLabel": "Gray & green",
+   "afterLabel": "Warm, clean tone",
+   "caption": "that was under there the whole time"
+  },
+  {
+   "id": "fill_43742",
+   "start": 437.42,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_pressure_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "glitch_44424",
+   "start": 444.24,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "px_pxchap_444",
+   "start": 444.44,
+   "dur": 5.56,
+   "kind": "pxchap",
+   "number": "#3",
+   "title": "Concrete",
+   "sub": "the black-green slip hazard"
+  },
+  {
+   "id": "pxwash_trick3_450",
+   "start": 450,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_trick3_450.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_46030",
+   "start": 460.3,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_concrete_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_463",
+   "start": 463,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "They charge by the square foot",
+   "prefix": "$",
+   "value": 200,
+   "suffix": "+",
+   "support": "a couple hundred dollars, easy, for concrete"
+  },
+  {
+   "id": "fill_46950",
+   "start": 469.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "img/pxwash_photo_concretefilm_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "pxwash_trick3_475",
+   "start": 475,
+   "dur": 9,
+   "kind": "raw",
+   "src": "broll/pxwash_trick3_475.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "px_pxfoam_484",
+   "start": 484,
+   "dur": 6.5,
+   "kind": "pxfoam",
+   "eyebrow": "Straight 3%, no diluting",
+   "title": "It bubbles up through the pores",
+   "cleanLabel": "CLEAN!"
+  },
+  {
+   "id": "fill_49430",
+   "start": 494.3,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_concrete_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_49851",
+   "start": 498.51,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_pressure_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_50272",
+   "start": 502.72,
+   "dur": 4.22,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_trick3_499",
+   "start": 506.94,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_51724",
+   "start": 517.24,
+   "dur": 4.22,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_rinse_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_pullquote_523",
+   "start": 531.92,
+   "dur": 6.08,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "quote": "The pressure washer rinses. The peroxide cleans.",
+   "role": "the secret of the whole video"
+  },
+  {
+   "id": "ov_vsduel_538",
+   "start": 538,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "peroxide",
+   "zone": "left",
+   "eyebrow": "Which one lasts",
+   "title": "Blast only vs Kill first",
+   "left": {
+    "label": "Blast only",
+    "sub": "looks great for 3 weeks, then it's back",
+    "good": false
+   },
+   "right": {
+    "label": "Kill first",
+    "sub": "the algae is dead — it stays gone",
+    "good": true
+   }
+  },
+  {
+   "id": "fill_54830",
+   "start": 548.3,
+   "dur": 5.66,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_concrete_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "glitch_55818",
+   "start": 558.18,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "px_pxchap_558",
+   "start": 558.38,
+   "dur": 7.62,
+   "kind": "pxchap",
+   "number": "#4",
+   "title": "Driveway stains",
+   "sub": "two kinds: rust & oil"
+  },
+  {
+   "id": "pxwash_trick4_566",
+   "start": 566,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_trick4_566.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_57250",
+   "start": 572.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_rust_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_576",
+   "start": 576,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "myth": "Bleach removes rust stains",
+   "truth": "Bleach only kills living stuff — it ignores oxidized metal",
+   "mythLabel": "Myth",
+   "truthLabel": "Truth"
+  },
+  {
+   "id": "fill_58630",
+   "start": 586.3,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "img/pxwash_photo_ruststain_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "ov_flowsteps_589",
+   "start": 589,
+   "dur": 7.98,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "peroxide",
+   "zone": "top",
+   "title": "Rust is different",
+   "kicker": "chemistry, not biology",
+   "nodes": [
+    {
+     "label": "Peroxide"
+    },
+    {
+     "label": "Reacts with the iron"
+    },
+    {
+     "label": "Breaks the oxidation"
+    },
+    {
+     "label": "The stain lifts"
+    }
+   ]
+  },
+  {
+   "id": "pxwash_trick4_602",
+   "start": 596.98,
+   "dur": 7.76,
+   "kind": "raw",
+   "src": "broll/pxwash_trick4_602.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_trick4_607",
+   "start": 604.74,
+   "dur": 8.26,
+   "kind": "raw",
+   "src": "broll/pxwash_trick4_607.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "px_pxfoam_613",
+   "start": 613,
+   "dur": 6.5,
+   "kind": "pxfoam",
+   "eyebrow": "For oil: baking soda + peroxide",
+   "title": "That satisfying fizz",
+   "cleanLabel": "CLEAN!"
+  },
+  {
+   "id": "fill_61950",
+   "start": 619.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_oil_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "tb_625",
+   "start": 625,
+   "dur": 6.5,
+   "kind": "typebeside",
+   "overlay": true,
+   "side": "left",
+   "title": "Honest limits",
+   "lines": [
+    "Works: rust stains",
+    "Works: fresh oil",
+    "Not: 10-year-old oil"
+   ]
+  },
+  {
+   "id": "fill_63150",
+   "start": 631.5,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "img/pxwash_photo_oilstain_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "glitch_63914",
+   "start": 639.14,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "px_pxchap_639",
+   "start": 639.34,
+   "dur": 8.66,
+   "kind": "pxchap",
+   "number": "#5",
+   "title": "The roof",
+   "sub": "the $400 one"
+  },
+  {
+   "id": "pxwash_trick5_648",
+   "start": 648,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_65830",
+   "start": 658.3,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "px_pxtoggle_661",
+   "start": 662.16,
+   "dur": 6.5,
+   "kind": "pxtoggle",
+   "eyebrow": "Not shingle failure",
+   "phrase": "'failing' → *it's alive*"
+  },
+  {
+   "id": "fill_66866",
+   "start": 668.66,
+   "dur": 5.34,
+   "kind": "raw",
+   "src": "img/pxwash_photo_roofstreaks_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "pxwash_gloeocapsa_magma",
+   "start": 674,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "img/pxwash_gloeocapsa_magma.png",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "fit": "blur"
+  },
+  {
+   "id": "fill_68050",
+   "start": 680.5,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_688",
+   "start": 685.66,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "A pro roof soft-wash",
+   "prefix": "$",
+   "value": 600,
+   "support": "$400–$600 on average to remove it professionally"
+  },
+  {
+   "id": "fill_69216",
+   "start": 692.16,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_trick5_696",
+   "start": 695.78,
+   "dur": 6.54,
+   "kind": "raw",
+   "src": "broll/pxwash_trick5_696.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_700",
+   "start": 702.32,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "title": "Roof safety — critical",
+   "items": [
+    "Spray from a ladder at the edge",
+    "Better: from the ground with reach",
+    "NEVER walk on the roof"
+   ],
+   "stamp": "A WET ROOF IS DANGEROUS"
+  },
+  {
+   "id": "fill_71262",
+   "start": 712.62,
+   "dur": 3.38,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_sprayer_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_trick5_716",
+   "start": 716,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_trick5_716.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_72250",
+   "start": 722.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_beforeafter_728",
+   "start": 728,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "peroxide",
+   "zone": "top",
+   "eyebrow": "It's not instant",
+   "beforeLabel": "Week 1: lighter",
+   "afterLabel": "Week 2: basically gone",
+   "caption": "let the rain and gravity rinse it"
+  },
+  {
+   "id": "fill_73830",
+   "start": 738.3,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_rinse_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_74272",
+   "start": 742.72,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "px_pxtoggle_746",
+   "start": 747.14,
+   "dur": 6.5,
+   "kind": "pxtoggle",
+   "eyebrow": "That slow fade",
+   "phrase": "streaks → *the algae dying off*"
+  },
+  {
+   "id": "fill_75364",
+   "start": 753.64,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "img/pxwash_photo_roofstreaks_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "ov_bigstatreveal_758",
+   "start": 758,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "The payoff",
+   "prefix": "$",
+   "value": 400,
+   "suffix": " saved",
+   "support": "with a $2 bottle and an afternoon"
+  },
+  {
+   "id": "fill_76450",
+   "start": 764.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_768",
+   "start": 768,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "peroxide",
+   "zone": "top",
+   "pre": "A partial re-roof is thousands — ",
+   "highlight": "that difference is somebody's commission",
+   "post": ".",
+   "note": "a salesman called a living stain 'shingle failure'"
+  },
+  {
+   "id": "fill_77830",
+   "start": 778.3,
+   "dur": 5.85,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_78415",
+   "start": 784.15,
+   "dur": 5.85,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_sprayer_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_80400",
+   "start": 804,
+   "dur": 3.22,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "glitch_81280",
+   "start": 812.8,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "tb_813",
+   "start": 813,
+   "dur": 6.5,
+   "kind": "typebeside",
+   "overlay": true,
+   "side": "right",
+   "title": "It won't…",
+   "lines": [
+    "Fix a cracked driveway",
+    "Restain your fence",
+    "Repair real damage"
+   ]
+  },
+  {
+   "id": "fill_82330",
+   "start": 823.3,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_tools_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_82802",
+   "start": 828.02,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_hookcaption_831",
+   "start": 832.74,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HookCaption",
+   "theme": "peroxide",
+   "zone": "top",
+   "words": [
+    {
+     "text": "Routine"
+    },
+    {
+     "text": "cleaning,",
+     "boxed": true
+    },
+    {
+     "text": "not"
+    },
+    {
+     "text": "a"
+    },
+    {
+     "text": "four-figure",
+     "boxed": true
+    },
+    {
+     "text": "invoice"
+    }
+   ],
+   "sub": "most of what they charge a premium for is just maintenance"
+  },
+  {
+   "id": "fill_84304",
+   "start": 843.04,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_midroll_842",
+   "start": 847.24,
+   "dur": 4.68,
+   "kind": "raw",
+   "src": "broll/pxwash_midroll_842.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "glitch_85172",
+   "start": 851.72,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "px_pxchap_851",
+   "start": 851.92,
+   "dur": 6.56,
+   "kind": "pxchap",
+   "number": "#6",
+   "title": "Fence",
+   "sub": "same story, vertical"
+  },
+  {
+   "id": "pxwash_trick6_856",
+   "start": 858.48,
+   "dur": 6.82,
+   "kind": "raw",
+   "src": "broll/pxwash_trick6_856.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_864",
+   "start": 865.3,
+   "dur": 5.7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "A clean & seal service",
+   "prefix": "$",
+   "value": 300,
+   "support": "another few hundred dollars"
+  },
+  {
+   "id": "ov_numberedsteps_871",
+   "start": 871,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "peroxide",
+   "zone": "left",
+   "eyebrow": "The recipe",
+   "title": "Fence, how I do it",
+   "steps": [
+    {
+     "title": "Mix 1:1 + a squirt of dish soap"
+    },
+    {
+     "title": "Spray bottom to top",
+     "sub": "always, on anything vertical"
+    },
+    {
+     "title": "Wait 15 min"
+    },
+    {
+     "title": "Soft brush, then rinse"
+    }
+   ]
+  },
+  {
+   "id": "fill_88130",
+   "start": 881.3,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_fence_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_88580",
+   "start": 885.8,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "img/pxwash_photo_fencemildew_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "ov_beforeafter_888",
+   "start": 890.3,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "peroxide",
+   "zone": "top",
+   "eyebrow": "Back to wood color",
+   "beforeLabel": "Sad weathered gray",
+   "afterLabel": "Actual wood color",
+   "caption": "neighbors will think you replaced it"
+  },
+  {
+   "id": "pxwash_trick6_896",
+   "start": 895.7,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_trick6_896.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_90220",
+   "start": 902.2,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_fence_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_907",
+   "start": 907,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "myth": "Just stain right over the green",
+   "truth": "You laminate the mildew under the sealer — it comes back",
+   "mythLabel": "Myth",
+   "truthLabel": "Truth"
+  },
+  {
+   "id": "fill_91730",
+   "start": 917.3,
+   "dur": 2.82,
+   "kind": "raw",
+   "src": "img/pxwash_photo_fencemildew_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "tb_921",
+   "start": 920.12,
+   "dur": 7.54,
+   "kind": "typebeside",
+   "overlay": true,
+   "side": "left",
+   "title": "The pattern",
+   "lines": [
+    "Kill it first",
+    "THEN finish",
+    "Noticing it yet?"
+   ]
+  },
+  {
+   "id": "glitch_92746",
+   "start": 927.46,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "px_pxchap_927",
+   "start": 927.66,
+   "dur": 3.34,
+   "kind": "pxchap",
+   "number": "#7",
+   "title": "Cushions & fabric",
+   "sub": "the black mildew speckles"
+  },
+  {
+   "id": "pxwash_trick7_931",
+   "start": 931,
+   "dur": 9,
+   "kind": "raw",
+   "src": "broll/pxwash_trick7_931.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_940",
+   "start": 940,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "They just throw them out",
+   "support": "a new cushion set can cost more than the whole list combined"
+  },
+  {
+   "id": "fill_94650",
+   "start": 946.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_cushion_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_vsduel_950",
+   "start": 950,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "peroxide",
+   "zone": "left",
+   "eyebrow": "On colored fabric",
+   "title": "Oxygen vs Chlorine",
+   "left": {
+    "label": "Chlorine",
+    "sub": "fades navy to sad gray",
+    "image": "img/pxwash_bleach.png",
+    "good": false
+   },
+   "right": {
+    "label": "Oxygen bleach",
+    "sub": "way safer on color",
+    "image": "img/pxwash_oxygen.png",
+    "good": true
+   }
+  },
+  {
+   "id": "fill_95650",
+   "start": 956.5,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "img/pxwash_photo_cushionmildew_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "ov_numberedsteps_961",
+   "start": 961,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "peroxide",
+   "zone": "left",
+   "eyebrow": "The recipe",
+   "title": "Fabric, how I do it",
+   "steps": [
+    {
+     "title": "Mix 1:1, spray till damp"
+    },
+    {
+     "title": "Let it sit a good 30 min"
+    },
+    {
+     "title": "Scrub with a soft brush"
+    },
+    {
+     "title": "Rinse, dry in the sun"
+    }
+   ]
+  },
+  {
+   "id": "fill_97130",
+   "start": 971.3,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_awning_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_97650",
+   "start": 976.5,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_sunny_patio_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_trick7_980",
+   "start": 981.7,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/pxwash_trick7_980.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "tb_986",
+   "start": 986,
+   "dur": 6.5,
+   "kind": "typebeside",
+   "overlay": true,
+   "side": "right",
+   "title": "Test first",
+   "lines": [
+    "A hidden corner",
+    "Bottom of a cushion",
+    "Check colorfastness"
+   ]
+  },
+  {
+   "id": "fill_99250",
+   "start": 992.5,
+   "dur": 2.74,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_cushion_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "glitch_99866",
+   "start": 998.66,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "px_pxchap_998",
+   "start": 998.86,
+   "dur": 7.32,
+   "kind": "pxchap",
+   "number": "#8",
+   "title": "Brick & pavers",
+   "sub": "moss in the joints"
+  },
+  {
+   "id": "pxwash_trick8_1003",
+   "start": 1006.18,
+   "dur": 5.82,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_pavers_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_1012",
+   "start": 1012,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "myth": "Just power-wash the pavers",
+   "truth": "A high blast blows out the joint sand — then they upsell you re-sanding",
+   "mythLabel": "Myth",
+   "truthLabel": "Truth"
+  },
+  {
+   "id": "fill_102230",
+   "start": 1022.3,
+   "dur": 6.7,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_pavers_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_trick8_1029",
+   "start": 1029,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/pxwash_trick8_1029.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_1036",
+   "start": 1036,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "peroxide",
+   "zone": "left",
+   "eyebrow": "The recipe",
+   "title": "Pavers, how I do it",
+   "steps": [
+    {
+     "title": "Straight 3% into the joints"
+    },
+    {
+     "title": "Let it foam ~20 min"
+    },
+    {
+     "title": "Stiff brush"
+    },
+    {
+     "title": "GENTLE rinse — keep the joint sand"
+    }
+   ]
+  },
+  {
+   "id": "fill_104630",
+   "start": 1046.3,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "img/pxwash_photo_mossjoints_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "px_pxfoam_1049",
+   "start": 1049,
+   "dur": 5,
+   "kind": "pxfoam",
+   "eyebrow": "Down in the porous joints",
+   "title": "It reaches where a rinse never does",
+   "cleanLabel": "CLEAN!"
+  },
+  {
+   "id": "ov_beforeafter_1054",
+   "start": 1054,
+   "dur": 9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "peroxide",
+   "zone": "top",
+   "eyebrow": "The moss browns out & dies",
+   "beforeLabel": "Black moss",
+   "afterLabel": "Real brick color",
+   "caption": "killed at the root — stays gone longer"
+  },
+  {
+   "id": "glitch_106980",
+   "start": 1069.8,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "px_pxchap_1070",
+   "start": 1070,
+   "dur": 6.5,
+   "kind": "pxchap",
+   "number": "#9",
+   "title": "Trash cans",
+   "sub": "that summer smell"
+  },
+  {
+   "id": "fill_107650",
+   "start": 1076.5,
+   "dur": 2.66,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_trash_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "pxwash_trick9_1076",
+   "start": 1079.16,
+   "dur": 6.22,
+   "kind": "raw",
+   "src": "broll/pxwash_trick9_1076.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_1085",
+   "start": 1085.38,
+   "dur": 6.62,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "myth": "Just hose out the can",
+   "truth": "Rinsing only moves the slime — the bacteria stays and the smell returns",
+   "mythLabel": "Myth",
+   "truthLabel": "Truth"
+  },
+  {
+   "id": "px_pxfoam_1092",
+   "start": 1092,
+   "dur": 6.5,
+   "kind": "pxfoam",
+   "eyebrow": "A cup or two of 3% + water",
+   "title": "It foams up the sides",
+   "cleanLabel": "CLEAN!"
+  },
+  {
+   "id": "fill_110230",
+   "start": 1102.3,
+   "dur": 5.8,
+   "kind": "raw",
+   "src": "img/pxwash_photo_bingrime_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "pxwash_trick9_1105",
+   "start": 1108.1,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_trick9_1105.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_111460",
+   "start": 1114.6,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_hose_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "tb_1119",
+   "start": 1119,
+   "dur": 6.5,
+   "kind": "typebeside",
+   "overlay": true,
+   "side": "left",
+   "title": "Also works on",
+   "lines": [
+    "Recycling bin",
+    "Base of a grill",
+    "Dog patio area"
+   ]
+  },
+  {
+   "id": "fill_112930",
+   "start": 1129.3,
+   "dur": 3.28,
+   "kind": "raw",
+   "src": "img/pxwash_photo_bingrime_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "glitch_113580",
+   "start": 1135.8,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "ov_bigstatreveal_1136",
+   "start": 1136,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "Concentration matters",
+   "value": 3,
+   "suffix": "% only",
+   "support": "the standard brown bottle — 35% food grade can burn your skin"
+  },
+  {
+   "id": "fill_114630",
+   "start": 1146.3,
+   "dur": 6.7,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_1153",
+   "start": 1153,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "myth": "Mixing makes it stronger",
+   "truth": "Peroxide + vinegar in one bottle makes peracetic acid — irritates skin & lungs",
+   "mythLabel": "Myth",
+   "truthLabel": "Truth"
+  },
+  {
+   "id": "fill_116330",
+   "start": 1163.3,
+   "dur": 5.7,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_1169",
+   "start": 1169,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "title": "Safety kit",
+   "items": [
+    "Never mix with bleach either",
+    "Gloves + eye protection up high",
+    "Store cool & dark",
+    "If it doesn't fizz, it's flat"
+   ],
+   "stamp": "SAY IT PLAINLY"
+  },
+  {
+   "id": "fill_117930",
+   "start": 1179.3,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_hands_gloves_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_118387",
+   "start": 1183.87,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_118844",
+   "start": 1188.44,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "px_pxfoam_1193",
+   "start": 1193,
+   "dur": 5,
+   "kind": "pxfoam",
+   "eyebrow": "The fizz test",
+   "title": "No fizz? The bottle's gone flat",
+   "cleanLabel": "TOSS IT"
+  },
+  {
+   "id": "pxwash_seguridad_1198",
+   "start": 1198,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/pxwash_seguridad_1198.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_120830",
+   "start": 1208.3,
+   "dur": 5.15,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_121345",
+   "start": 1213.45,
+   "dur": 5.15,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_121860",
+   "start": 1218.6,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_hands_gloves_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_pullquote_1218",
+   "start": 1223.74,
+   "dur": 4.26,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "quote": "The tricks are for routine cleaning — not for risking a fall.",
+   "role": "be smart about it"
+  },
+  {
+   "id": "glitch_122780",
+   "start": 1227.8,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "px_pxhero_1228",
+   "start": 1228,
+   "dur": 6.5,
+   "kind": "pxhero",
+   "eyebrow": "A dollar bottle",
+   "phrase": "there's *no invoice* in a dollar"
+  },
+  {
+   "id": "fill_123450",
+   "start": 1234.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_tools_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_1247",
+   "start": 1247,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "A $2 bottle just saved you",
+   "prefix": "$",
+   "value": 400,
+   "suffix": " saved",
+   "support": "a $400 roof cleaning — your wallet's going to be fine"
+  },
+  {
+   "id": "fill_125350",
+   "start": 1253.5,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_sunny_patio_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_ctacard_1257",
+   "start": 1257.1,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "peroxide",
+   "zone": "topLeft",
+   "eyebrow": "All 9 — exact mixes & soak times",
+   "title": "Free printable guide",
+   "bullet": "link's down in the description",
+   "price": 0,
+   "cta": "LINK IN DESCRIPTION"
+  },
+  {
+   "id": "fill_126740",
+   "start": 1267.4,
+   "dur": 5.6,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_hookcaption_1273",
+   "start": 1273,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HookCaption",
+   "theme": "peroxide",
+   "zone": "top",
+   "words": [
+    {
+     "text": "Is"
+    },
+    {
+     "text": "this"
+    },
+    {
+     "text": "stuff"
+    },
+    {
+     "text": "ALIVE?",
+     "boxed": true
+    }
+   ],
+   "sub": "if you remember one thing, ask that"
+  },
+  {
+   "id": "fill_128330",
+   "start": 1283.3,
+   "dur": 2.24,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_hands_gloves_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_1281",
+   "start": 1285.54,
+   "dur": 5.98,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "peroxide",
+   "zone": "top",
+   "pre": "",
+   "highlight": "Green · black · streaks · moss · mildew",
+   "post": " — that's all living.",
+   "note": "that's the whole game"
+  },
+  {
+   "id": "pxwash_cierre_1300",
+   "start": 1300.58,
+   "dur": 8.3,
+   "kind": "raw",
+   "src": "broll/pxwash_cierre_1300.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  }
+ ]
+}

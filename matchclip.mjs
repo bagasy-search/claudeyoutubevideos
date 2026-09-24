@@ -63,7 +63,7 @@ const TAIL = 0.06; // saltea el último 6% (créditos/outro)
 const REUSE = process.env.MATCH_REUSE === "1";
 const MINGAP_SAME = +(process.env.MATCH_MINGAP || 10);
 
-const TMP = "_match";
+const TMP = process.env.MATCH_TMP || "_match";
 const vidId = (u) => (u.match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([A-Za-z0-9_-]{11})/) || u.match(/([A-Za-z0-9_-]{11})/) || [])[1];
 
 // ── relevancia léxica del título al concepto ────────────────────────────────
@@ -254,10 +254,10 @@ for (const b of beats) {
   const flag = best.score < 0.55 ? "  ⚠ DUDOSO" : "";
   console.log(`  → ${name}: ${best.score.toFixed(3)} @ ${best.t}s  start=${start}${flag}${fresh ? " (diverso)" : ""}${reusedTs ? " (multi-doc)" : ""}`);
   results.push({ name, url: best.url, start, dur, _score: +best.score.toFixed(3) });
-  fs.writeFileSync(outPath, JSON.stringify(results, null, 2)); // guardado INCREMENTAL
+  fs.writeFileSync(outPath + ".tmp", JSON.stringify(results, null, 2)); fs.renameSync(outPath + ".tmp", outPath); // guardado INCREMENTAL atómico
 }
 
-fs.writeFileSync(outPath, JSON.stringify(results, null, 2));
+fs.writeFileSync(outPath + ".tmp", JSON.stringify(results, null, 2)); fs.renameSync(outPath + ".tmp", outPath);
 console.log(`\n=== ${results.length} beats → ${outPath} ===`);
 console.log("Revisá los _score (números, 0 tokens). Luego: node fetch_clips.mjs " + outPath);
 fs.rmSync(TMP, { recursive: true, force: true });

@@ -1,0 +1,1113 @@
+{
+ "video": "vh7v3kdc5l9h",
+ "avatar": "vh7v3kdc5l9h_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 2.6,
+   "key": "hook",
+   "kind": "talk"
+  },
+  {
+   "id": "hook_1",
+   "start": 3.9,
+   "dur": 9.08,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_hombre_despierta_3am.png",
+   "kicker": "Las 3 de la madrugada"
+  },
+  {
+   "id": "hook_2",
+   "start": 12.98,
+   "dur": 18.76,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_vaso_agua_mesaluz.png"
+  },
+  {
+   "id": "aviso_0",
+   "start": 31.74,
+   "dur": 2.8,
+   "key": "aviso",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO ES LA EDAD",
+     "sub": "es tu cuerpo prendiendo una lucecita en el tablero",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/aviso_0.mp4"
+  },
+  {
+   "id": "aviso_1",
+   "start": 44.94,
+   "dur": 11.16,
+   "key": "aviso",
+   "kind": "mitoverdad",
+   "myth": "La boca seca de noche es la edad",
+   "truth": "Es un aviso: puede ser una de 5 cosas",
+   "flipAt": 141
+  },
+  {
+   "id": "confirma_0",
+   "start": 56.1,
+   "dur": 23.02,
+   "key": "confirma",
+   "kind": "stat",
+   "big": "9 de 10",
+   "unit": "",
+   "label": "creen que la boca seca de noche es normal por la edad. Casi nunca lo es.",
+   "tone": "teal"
+  },
+  {
+   "id": "promesa_0",
+   "start": 79.12,
+   "dur": 23.84,
+   "key": "promesa",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_vh7v3kdc5l9h_hombre_despierta_3am.png",
+   "imageDarken": 0.62,
+   "title": "5 causas de la boca seca después de los 60",
+   "chips": [
+    "Deshidratación · Medicamentos",
+    "Respirar por la boca · Azúcar",
+    "Y una que va al médico"
+   ]
+  },
+  {
+   "id": "story_0",
+   "start": 102.96,
+   "dur": 6.24,
+   "key": "story",
+   "kind": "talk"
+  },
+  {
+   "id": "story_1",
+   "start": 109.2,
+   "dur": 14.84,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_don_alberto_consultorio.png",
+   "kicker": "Don Alberto, 73 años",
+   "hold": true
+  },
+  {
+   "id": "story_pregunta_0",
+   "start": 124.04,
+   "dur": 10.03,
+   "key": "story_pregunta",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "¿Tomás mucha agua de día?",
+     "at": 61
+    },
+    {
+     "card": "¿Roncás?",
+     "at": 118
+    },
+    {
+     "card": "¿Vas al baño de noche?",
+     "sub": "tres, cuatro veces",
+     "at": 175
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/story_pregunta_0.mp4"
+  },
+  {
+   "id": "story_dx_0",
+   "start": 139.3,
+   "dur": 3.62,
+   "key": "story_dx",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_analisis_sangre_glucosa.png"
+  },
+  {
+   "id": "story_dx_1",
+   "start": 142.92,
+   "dur": 15.04,
+   "key": "story_dx",
+   "kind": "quote",
+   "image": "img/p_vh7v3kdc5l9h_don_alberto_consultorio.png",
+   "text": "La única señal que su cuerpo le dio en meses fue esa boca seca. *Esa pavada le estaba salvando la vida.*"
+  },
+  {
+   "id": "principio_0",
+   "start": 157.96,
+   "dur": 2.74,
+   "key": "principio",
+   "kind": "talk"
+  },
+  {
+   "id": "principio_1",
+   "start": 160.7,
+   "dur": 2.8,
+   "key": "principio",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LA SALIVA NO ES BABA",
+     "sub": "medio litro a litro y medio por día — te protege",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/principio_1.mp4"
+  },
+  {
+   "id": "principio_2",
+   "start": 186.48,
+   "dur": 10.9,
+   "key": "principio",
+   "kind": "splitlist",
+   "title": "Para qué sirve la saliva",
+   "items": [
+    "Lava las bacterias",
+    "Cuida los dientes de las caries",
+    "Arranca la digestión y te deja tragar"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "saliva_stat_0",
+   "start": 197.38,
+   "dur": 12.87,
+   "key": "saliva_stat",
+   "kind": "stat",
+   "big": "1 de 3",
+   "unit": "",
+   "label": "mayores de 60 convive con la boca seca. Casi ninguna sabe que se puede tratar.",
+   "tone": "teal"
+  },
+  {
+   "id": "saliva_stat_1",
+   "start": 210.25,
+   "dur": 14.71,
+   "key": "saliva_stat",
+   "kind": "checklist",
+   "title": "Sin saliva, mucho tiempo",
+   "items": [
+    {
+     "text": "Caries donde nunca tuviste",
+     "state": "warn"
+    },
+    {
+     "text": "Llagas y mal aliento",
+     "state": "warn"
+    },
+    {
+     "text": "La dentadura postiza lastima",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "saliva_stat_2",
+   "start": 224.96,
+   "dur": 15.14,
+   "key": "saliva_stat",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_dentadura_postiza.png"
+  },
+  {
+   "id": "clave_0",
+   "start": 240.1,
+   "dur": 4.2,
+   "key": "clave",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vh7v3kdc5l9h_saliva_glandula.png"
+    }
+   ]
+  },
+  {
+   "id": "clave_1",
+   "start": 241.66,
+   "dur": 2.8,
+   "key": "clave",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "AGUA + SANGRE",
+     "sub": "las glándulas necesitan las dos cosas para fabricar saliva",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/clave_1.mp4"
+  },
+  {
+   "id": "fuego_0",
+   "start": 276.06,
+   "dur": 4.66,
+   "key": "fuego",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vh7v3kdc5l9h_cinco_causas.png"
+    }
+   ]
+  },
+  {
+   "id": "fuego_1",
+   "start": 280.72,
+   "dur": 3.1,
+   "key": "fuego",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "La"
+    },
+    {
+     "t": "boca"
+    },
+    {
+     "t": "seca"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "humo",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "causa1_0",
+   "start": 283.82,
+   "dur": 6.86,
+   "key": "causa1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Deshidratación silenciosa",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "causa1_mec_0",
+   "start": 290.68,
+   "dur": 4.2,
+   "key": "causa1_mec",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vh7v3kdc5l9h_sensacion_sed.png"
+    }
+   ]
+  },
+  {
+   "id": "causa1_mec_1",
+   "start": 292.68,
+   "dur": 2.8,
+   "key": "causa1_mec",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SE APAGA LA SED",
+     "sub": "podés estar deshidratado y no sentir ni una pizca",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/causa1_mec_1.mp4"
+  },
+  {
+   "id": "prioriza_0",
+   "start": 316.54,
+   "dur": 13.48,
+   "key": "prioriza",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vh7v3kdc5l9h_prioriza_agua.png"
+    }
+   ]
+  },
+  {
+   "id": "prioriza_1",
+   "start": 330.02,
+   "dur": 7.86,
+   "key": "prioriza",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_hombre_mayor_cansado.png"
+  },
+  {
+   "id": "senales_0",
+   "start": 337.88,
+   "dur": 49.9,
+   "key": "senales",
+   "kind": "splitlist",
+   "title": "La deshidratación también da",
+   "items": [
+    "Mareo al pararte de la silla",
+    "Más cansancio, ideas confusas",
+    "Hasta estreñimiento"
+   ],
+   "palette": "G"
+  },
+  {
+   "id": "cafe_0",
+   "start": 387.78,
+   "dur": 4.7,
+   "key": "cafe",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_cafe_te_taza.png"
+  },
+  {
+   "id": "cafe_1",
+   "start": 392.48,
+   "dur": 2.8,
+   "key": "cafe",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SON DIURÉTICOS",
+     "sub": "por cada café, sumá un vaso de agua aparte",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/cafe_1.mp4"
+  },
+  {
+   "id": "pis_0",
+   "start": 410.46,
+   "dur": 6.62,
+   "key": "pis",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vh7v3kdc5l9h_semaforo_pis.png"
+    }
+   ]
+  },
+  {
+   "id": "pis_1",
+   "start": 417.08,
+   "dur": 5.1,
+   "key": "pis",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_vaso_agua_dia.png"
+  },
+  {
+   "id": "error_teaser_0",
+   "start": 422.18,
+   "dur": 11.98,
+   "key": "error_teaser",
+   "kind": "lowerthird",
+   "title": "Guardá esto para el final: el ERROR que empeora todo",
+   "tone": "warn",
+   "kicker": "Quedate",
+   "desc": "Lo hace el 90% cada noche. Ya vas a ver por qué."
+  },
+  {
+   "id": "causa2_0",
+   "start": 434.16,
+   "dur": 4.2,
+   "key": "causa2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Tus remedios",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "causa2_1",
+   "start": 437.94,
+   "dur": 6.26,
+   "key": "causa2",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_mesita_remedios.png"
+  },
+  {
+   "id": "causa2_num_0",
+   "start": 444.2,
+   "dur": 11.8,
+   "key": "causa2_num",
+   "kind": "stat",
+   "big": "+400",
+   "unit": "",
+   "label": "medicamentos de uso común resecan la boca. Presión, diuréticos, alergia, sueño, vejiga.",
+   "tone": "warn"
+  },
+  {
+   "id": "causa2_num_1",
+   "start": 456,
+   "dur": 26.98,
+   "key": "causa2_num",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vh7v3kdc5l9h_medicamentos_resecan.png"
+    }
+   ]
+  },
+  {
+   "id": "coctel_0",
+   "start": 482.98,
+   "dur": 5.33,
+   "key": "coctel",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "EL CÓCTEL",
+     "sub": "no es un remedio malo, es la SUMA de varios",
+     "tone": "warn",
+     "at": 76
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/coctel_0.mp4"
+  },
+  {
+   "id": "ejemplo_0",
+   "start": 491.46,
+   "dur": 36.1,
+   "key": "ejemplo",
+   "kind": "process",
+   "title": "El cóctel que reseca",
+   "eyebrow": "Cada uno recetado aparte",
+   "steps": [
+    {
+     "title": "Presión",
+     "desc": "+ diurético",
+     "image": "img/p_vh7v3kdc5l9h_pastillas_mano.png"
+    },
+    {
+     "title": "Alergia",
+     "desc": "antihistamínico",
+     "image": "img/p_vh7v3kdc5l9h_mesita_remedios.png"
+    },
+    {
+     "title": "Dormir",
+     "desc": "una pastillita",
+     "image": "img/p_vh7v3kdc5l9h_pastillas_mano.png"
+    }
+   ]
+  },
+  {
+   "id": "no_dejes_0",
+   "start": 527.56,
+   "dur": 16.66,
+   "key": "no_dejes",
+   "kind": "lowerthird",
+   "title": "NUNCA toques tu medicación por tu cuenta",
+   "tone": "warn",
+   "kicker": "Escudo de honestidad",
+   "desc": "Cortar una pastilla de la presión es más peligroso que la boca seca."
+  },
+  {
+   "id": "pregunta_medico_0",
+   "start": 544.22,
+   "dur": 11.09,
+   "key": "pregunta_medico",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_lista_medicamentos_medico.png"
+  },
+  {
+   "id": "pregunta_medico_1",
+   "start": 555.31,
+   "dur": 8.71,
+   "key": "pregunta_medico",
+   "kind": "callout",
+   "image": "img/p_vh7v3kdc5l9h_lista_medicamentos_medico.png",
+   "figure": "Preguntale al médico",
+   "caption": "¿Alguno me reseca la boca? ¿Se puede cambiar o mover el horario?"
+  },
+  {
+   "id": "pregunta_medico_2",
+   "start": 564.02,
+   "dur": 10.08,
+   "key": "pregunta_medico",
+   "kind": "lowerthird",
+   "title": "Qué preguntarle al médico, ordenado en mi guía",
+   "tone": "teal",
+   "kicker": "Si querés la lista",
+   "desc": "El enlace está abajo, en la descripción."
+  },
+  {
+   "id": "causa3_0",
+   "start": 574.1,
+   "dur": 6.08,
+   "key": "causa3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Respirás por la boca de noche",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "respira_0",
+   "start": 580.18,
+   "dur": 4.2,
+   "key": "respira",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vh7v3kdc5l9h_respiracion_bucal.png"
+    }
+   ]
+  },
+  {
+   "id": "respira_1",
+   "start": 584.2,
+   "dur": 14.34,
+   "key": "respira",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_hombre_boca_abierta_duerme.png"
+  },
+  {
+   "id": "roncas_0",
+   "start": 598.54,
+   "dur": 6.63,
+   "key": "roncas",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SI RONCÁS, ES ESTO",
+     "sub": "roncar = respirás por la boca",
+     "tone": "warn",
+     "at": 115
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/roncas_0.mp4"
+  },
+  {
+   "id": "roncas_1",
+   "start": 601.2,
+   "dur": 24,
+   "key": "roncas",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_pareja_ronca_noche.png"
+  },
+  {
+   "id": "costado_0",
+   "start": 625.2,
+   "dur": 7.72,
+   "key": "costado",
+   "kind": "splitlist",
+   "title": "Un truco que no cuesta nada",
+   "items": [
+    "Boca arriba: la lengua se va atrás, roncás",
+    "De costado: respirás por la nariz",
+    "Probalo una semana"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "costado_1",
+   "start": 632.92,
+   "dur": 8.12,
+   "key": "costado",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_dormir_costado.png"
+  },
+  {
+   "id": "apnea_0",
+   "start": 641.04,
+   "dur": 6.1,
+   "key": "apnea",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vh7v3kdc5l9h_apnea_sueno.png"
+    }
+   ]
+  },
+  {
+   "id": "apnea_1",
+   "start": 647.14,
+   "dur": 41.56,
+   "key": "apnea",
+   "kind": "lowerthird",
+   "title": "¿Seco Y cansado aunque dormiste 8 horas? Al médico",
+   "tone": "warn",
+   "kicker": "Ojo con la apnea",
+   "desc": "Sube la presión y castiga el corazón. Se estudia y tiene solución."
+  },
+  {
+   "id": "causa4_0",
+   "start": 688.7,
+   "dur": 8.78,
+   "key": "causa4",
+   "kind": "errorstinger",
+   "number": "04",
+   "title": "El azúcar en la sangre",
+   "tone": "warn",
+   "w": 3.8
+  },
+  {
+   "id": "azucar_0",
+   "start": 697.48,
+   "dur": 29.8,
+   "key": "azucar",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vh7v3kdc5l9h_azucar_orina.png"
+    }
+   ]
+  },
+  {
+   "id": "azucar_senales_0",
+   "start": 727.28,
+   "dur": 12.37,
+   "key": "azucar_senales",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Boca seca",
+     "sub": "sobre todo de noche",
+     "at": 0
+    },
+    {
+     "card": "Sed que no se calma",
+     "sub": "tomás y seguís seco",
+     "at": 99
+    },
+    {
+     "card": "Pis varias veces de noche",
+     "sub": "las tres juntas",
+     "at": 245
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/azucar_senales_0.mp4"
+  },
+  {
+   "id": "analisis_0",
+   "start": 746.06,
+   "dur": 2.98,
+   "key": "analisis",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_glucometro_dedo.png"
+  },
+  {
+   "id": "analisis_1",
+   "start": 749.04,
+   "dur": 2.8,
+   "key": "analisis",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "GLUCOSA EN AYUNAS",
+     "sub": "un pinchazo, barato — puede ser lo único que avisa",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/analisis_1.mp4"
+  },
+  {
+   "id": "analisis_2",
+   "start": 750.29,
+   "dur": 0.77,
+   "key": "analisis",
+   "kind": "freezezoom",
+   "image": "img/p_vh7v3kdc5l9h_glucometro_dedo.png",
+   "x": 0.5,
+   "y": 0.5,
+   "label": "Esa lucecita te está gritando",
+   "zoom": 1.6,
+   "tone": "warn"
+  },
+  {
+   "id": "callada_0",
+   "start": 751.06,
+   "dur": 76.84,
+   "key": "callada",
+   "kind": "mitoverdad",
+   "myth": "Un poco más de sed es la edad",
+   "truth": "Puede ser azúcar comiéndote los vasos",
+   "flipAt": 1616
+  },
+  {
+   "id": "error_0",
+   "start": 827.9,
+   "dur": 20.26,
+   "key": "error",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "El error que empeora todo",
+   "tone": "warn",
+   "w": 3.6
+  },
+  {
+   "id": "error1_0",
+   "start": 848.16,
+   "dur": 5.92,
+   "key": "error1",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_enjuague_alcohol.png"
+  },
+  {
+   "id": "error1_1",
+   "start": 854.08,
+   "dur": 2.8,
+   "key": "error1",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ENJUAGUE CON ALCOHOL",
+     "sub": "reseca más — buscá uno sin alcohol",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/error1_1.mp4"
+  },
+  {
+   "id": "error2_0",
+   "start": 865.08,
+   "dur": 24.44,
+   "key": "error2",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_vaso_litro_noche.png"
+  },
+  {
+   "id": "error2_1",
+   "start": 889.52,
+   "dur": 2.02,
+   "key": "error2",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "más"
+    },
+    {
+     "t": "agua"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "golpe"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "llegar"
+    },
+    {
+     "t": "húmedo",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "causa5_0",
+   "start": 891.54,
+   "dur": 17.16,
+   "key": "causa5",
+   "kind": "errorstinger",
+   "number": "05",
+   "title": "Las propias glándulas",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "sjogren_0",
+   "start": 908.7,
+   "dur": 11.07,
+   "key": "sjogren",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vh7v3kdc5l9h_sjogren_glandulas.png"
+    }
+   ]
+  },
+  {
+   "id": "sjogren_1",
+   "start": 919.77,
+   "dur": 2.8,
+   "key": "sjogren",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SÍNDROME DE SJÖGREN",
+     "sub": "el sistema inmune seca saliva y lágrimas",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/vh7v3kdc5l9h/sjogren_1.mp4"
+  },
+  {
+   "id": "ojos_secos_0",
+   "start": 931.76,
+   "dur": 30.46,
+   "key": "ojos_secos",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_ojos_secos_gotas.png"
+  },
+  {
+   "id": "ojos_secos_1",
+   "start": 962.22,
+   "dur": 23.94,
+   "key": "ojos_secos",
+   "kind": "callout",
+   "image": "img/p_vh7v3kdc5l9h_ojos_secos_gotas.png",
+   "figure": "Boca seca + ojos secos",
+   "caption": "Decíselo al médico por nombre: quiero descartar Sjögren."
+  },
+  {
+   "id": "enemigo_0",
+   "start": 986.16,
+   "dur": 16.75,
+   "key": "enemigo",
+   "kind": "talk"
+  },
+  {
+   "id": "enemigo_1",
+   "start": 1002.91,
+   "dur": 36.85,
+   "key": "enemigo",
+   "kind": "mitoverdad",
+   "myth": "Te venden el spray y el chicle para la boca seca",
+   "truth": "El spray es un cliente; la causa es un paciente que se cura",
+   "flipAt": 464
+  },
+  {
+   "id": "alivio_0",
+   "start": 1039.76,
+   "dur": 53.76,
+   "key": "alivio",
+   "kind": "guardaesto",
+   "title": "Mientras encontrás la causa",
+   "items": [
+    {
+     "text": "Humidificador en la pieza",
+     "image": "img/p_vh7v3kdc5l9h_humidificador_pieza.png"
+    },
+    {
+     "text": "Chicle sin azúcar de día (estimula saliva)",
+     "image": "img/p_vh7v3kdc5l9h_chicle_sin_azucar.png"
+    },
+    {
+     "text": "Saliva artificial de la farmacia",
+     "image": "img/p_vh7v3kdc5l9h_saliva_artificial.png"
+    }
+   ]
+  },
+  {
+   "id": "honesto_0",
+   "start": 1093.52,
+   "dur": 9.52,
+   "key": "honesto",
+   "kind": "talk"
+  },
+  {
+   "id": "honesto_1",
+   "start": 1103.04,
+   "dur": 15.24,
+   "key": "honesto",
+   "kind": "lowerthird",
+   "title": "La mayoría de las veces es solo deshidratación",
+   "tone": "teal",
+   "kicker": "Con toda honestidad",
+   "desc": "Agua a sorbos todo el día. Lo más común y lo más simple."
+  },
+  {
+   "id": "banderas_0",
+   "start": 1118.28,
+   "dur": 44.78,
+   "key": "banderas",
+   "kind": "checklist",
+   "title": "Tres banderas rojas que van al médico",
+   "items": [
+    {
+     "text": "Con mucha sed y pis de noche → análisis de azúcar",
+     "state": "warn"
+    },
+    {
+     "text": "Ronquido fuerte y cansancio → estudio del sueño",
+     "state": "warn"
+    },
+    {
+     "text": "Ojos secos siempre → descartar lo autoinmune",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "recap_0",
+   "start": 1163.06,
+   "dur": 3.72,
+   "key": "recap",
+   "kind": "talk"
+  },
+  {
+   "id": "recap_1",
+   "start": 1166.78,
+   "dur": 56.38,
+   "key": "recap",
+   "kind": "guardaesto",
+   "title": "Las 5 causas (guardá esto)",
+   "items": [
+    {
+     "text": "Deshidratación — agua a sorbos todo el día",
+     "image": "img/p_vh7v3kdc5l9h_vaso_agua_dia.png"
+    },
+    {
+     "text": "Remedios — la lista al médico",
+     "image": "img/p_vh7v3kdc5l9h_lista_medicamentos_medico.png"
+    },
+    {
+     "text": "Respirás por la boca — dormí de costado",
+     "image": "img/p_vh7v3kdc5l9h_dormir_costado.png"
+    },
+    {
+     "text": "Azúcar — análisis de glucosa YA",
+     "image": "img/p_vh7v3kdc5l9h_glucometro_dedo.png"
+    },
+    {
+     "text": "Glándulas / Sjögren — boca + ojos secos",
+     "image": "img/p_vh7v3kdc5l9h_ojos_secos_gotas.png"
+    }
+   ]
+  },
+  {
+   "id": "recap_error_0",
+   "start": 1223.16,
+   "dur": 23.28,
+   "key": "recap_error",
+   "kind": "splitlist",
+   "title": "El error a corregir esta noche",
+   "items": [
+    "Nada de enjuague con alcohol",
+    "Nada de un litro de agua antes de dormir",
+    "Humidificador + chicle sin azúcar mientras tanto"
+   ],
+   "palette": "G"
+  },
+  {
+   "id": "comentarios_0",
+   "start": 1246.44,
+   "dur": 37.36,
+   "key": "comentarios",
+   "kind": "lowerthird",
+   "title": "¿Cuál de las 5 es tu caso? Escribime el número",
+   "tone": "teal",
+   "kicker": "En los comentarios",
+   "desc": "Los leo todos, uno por uno. No estás solo con esto."
+  },
+  {
+   "id": "guia_0",
+   "start": 1283.8,
+   "dur": 1.78,
+   "key": "guia",
+   "kind": "raw",
+   "src": "img/p_vh7v3kdc5l9h_guia_celular.png",
+   "hold": true
+  },
+  {
+   "id": "guia_1",
+   "start": 1285.58,
+   "dur": 0.82,
+   "key": "guia",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_vh7v3kdc5l9h_guia_celular.png",
+   "imageDarken": 0.62,
+   "title": "La Guía de la Salud +60",
+   "chips": [
+    "Cuánta agua según tu peso",
+    "Qué preguntarle al médico",
+    "archivos-federer.vercel.app"
+   ]
+  },
+  {
+   "id": "guia_2",
+   "start": 1286.4,
+   "dur": 7.7,
+   "key": "guia",
+   "kind": "lowerthird",
+   "title": "El enlace está abajo, en la descripción",
+   "tone": "teal",
+   "kicker": "Un regalo, no una obligación",
+   "desc": "archivos-federer.vercel.app — te acompaña más allá del video."
+  },
+  {
+   "id": "cierre_0",
+   "start": 1294.1,
+   "dur": 11.88,
+   "key": "cierre",
+   "kind": "talk"
+  },
+  {
+   "id": "cierre_1",
+   "start": 1305.98,
+   "dur": 3.8,
+   "key": "cierre",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Los"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "aprenden"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "escucharlas"
+    },
+    {
+     "t": "viven"
+    },
+    {
+     "t": "mejor",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "teaser_0",
+   "start": 1309.78,
+   "dur": 5.7,
+   "key": "teaser",
+   "kind": "lowerthird",
+   "title": "Próximo: por qué te levantás al baño de noche",
+   "tone": "teal",
+   "kicker": "No te lo pierdas",
+   "desc": "En el hombre, muchas veces NO es la próstata. Empieza más arriba."
+  },
+  {
+   "id": "close_0",
+   "start": 1315.48,
+   "dur": 15.82,
+   "key": "close",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Cada semana, salud real para después de los 60",
+   "image": "img/p_vh7v3kdc5l9h_federer_despide.png"
+  }
+ ]
+}

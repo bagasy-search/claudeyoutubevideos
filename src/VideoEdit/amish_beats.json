@@ -1,0 +1,66 @@
+{
+  "audioEnd": 71000,
+  "total": 72500,
+  "beats": [
+    {
+      "img": "am_01_farm",
+      "startMs": 110,
+      "endMs": 3150
+    },
+    {
+      "img": "am_09_lantern",
+      "startMs": 3150,
+      "endMs": 5500
+    },
+    {
+      "img": "am_11_window",
+      "startMs": 5500,
+      "endMs": 8000
+    },
+    {
+      "img": "am_02_cellardoor",
+      "startMs": 8000,
+      "endMs": 13000
+    },
+    {
+      "img": "am_03_cellar",
+      "startMs": 13000,
+      "endMs": 23110
+    },
+    {
+      "img": "am_04_crates",
+      "startMs": 23110,
+      "endMs": 32000
+    },
+    {
+      "img": "am_05_straw",
+      "startMs": 32000,
+      "endMs": 40660
+    },
+    {
+      "img": "am_06_jars",
+      "startMs": 40660,
+      "endMs": 45000
+    },
+    {
+      "img": "am_07_canning",
+      "startMs": 45000,
+      "endMs": 53110
+    },
+    {
+      "img": "am_08_sealedjar",
+      "startMs": 53110,
+      "endMs": 57600
+    },
+    {
+      "img": "am_01_farm",
+      "startMs": 57600,
+      "endMs": 66040
+    },
+    {
+      "img": "am_10_hands",
+      "startMs": 66040,
+      "endMs": 72500
+    }
+  ]
+}

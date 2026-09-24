@@ -1,0 +1,40 @@
+{
+  "slug": "cmecalor",
+  "gate": "§4 AUDITOR — contenido antes del FARM",
+  "status": "PASS",
+  "basis": "Literal phrase-level anchors from the real avatar WAV; only independently approved assets; avatar on every uncovered interval.",
+  "metrics": {
+    "duration_seconds": 1493.933,
+    "duration_minutes": 24.899,
+    "visual_cues": 190,
+    "unique_visual_assets": 188,
+    "approved_manifest_assets": 193,
+    "rejected_assets_excluded": 220,
+    "clips": 33,
+    "still_cues": 153,
+    "floating_cta_cues": 4,
+    "visual_moments_per_minute": 7.631,
+    "median_visual_duration_seconds": 5.017,
+    "share_visuals_at_least_3_seconds": 0.853,
+    "share_visuals_at_least_5_seconds": 0.5,
+    "exact_visual_coverage_seconds": 986.698,
+    "exact_visual_coverage_share": 0.66,
+    "avatar_fallback_share": 0.34,
+    "first_visual_second": 0,
+    "word_error_rate": 0.02452,
+    "missing_anchors": 0,
+    "intentional_overlap_groups": 42
+  },
+  "documented_exceptions": [],
+  "checks": {
+    "literal_phrase_start": true,
+    "own_phrase_asset_only": true,
+    "approved_assets_only": true,
+    "rejected_assets_absent": true,
+    "exact_avatar_fallback": true,
+    "no_subtitles": true,
+    "cta_floats_over_avatar_only_while_spoken": true,
+    "native_speed_clip_with_still_floor": true
+  },
+  "errors": []
+}

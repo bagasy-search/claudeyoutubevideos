@@ -1,0 +1,1146 @@
+{
+ "video": "federer12",
+ "avatar": "federer12_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "m1_0_0",
+   "start": 0.4,
+   "dur": 5.2,
+   "key": "m1_0",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_1_0",
+   "start": 5.6,
+   "dur": 1.42,
+   "key": "m1_1",
+   "kind": "raw",
+   "src": "img/fe12_min1_0.png"
+  },
+  {
+   "id": "m1_2_0",
+   "start": 7.02,
+   "dur": 1.2,
+   "key": "m1_2",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "SIN",
+     "hl": false
+    },
+    {
+     "t": "LAS",
+     "hl": false
+    },
+    {
+     "t": "MANOS",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_3_0",
+   "start": 8.22,
+   "dur": 4.82,
+   "key": "m1_3",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_4_0",
+   "start": 13.04,
+   "dur": 2.86,
+   "key": "m1_4",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_5_0",
+   "start": 15.9,
+   "dur": 6.08,
+   "key": "m1_5",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "TE",
+     "hl": false
+    },
+    {
+     "t": "TEMBLARON",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_6_0",
+   "start": 21.98,
+   "dur": 1.72,
+   "key": "m1_6",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "CASI",
+     "hl": false
+    },
+    {
+     "t": "NO",
+     "hl": false
+    },
+    {
+     "t": "ME",
+     "hl": false
+    },
+    {
+     "t": "LEVANTO",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_7_0",
+   "start": 23.7,
+   "dur": 2.72,
+   "key": "m1_7",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_8_0",
+   "start": 26.42,
+   "dur": 1.48,
+   "key": "m1_8",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "EL",
+     "hl": false
+    },
+    {
+     "t": "MÁS",
+     "hl": false
+    },
+    {
+     "t": "IMPORTANTE",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_9_0",
+   "start": 27.9,
+   "dur": 2.16,
+   "key": "m1_9",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_10_0",
+   "start": 30.06,
+   "dur": 3.18,
+   "key": "m1_10",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_11_0",
+   "start": 33.24,
+   "dur": 1.68,
+   "key": "m1_11",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "CASI",
+     "hl": false
+    },
+    {
+     "t": "NADIE",
+     "hl": false
+    },
+    {
+     "t": "TE",
+     "hl": false
+    },
+    {
+     "t": "LO",
+     "hl": false
+    },
+    {
+     "t": "EXPLICA",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_12_0",
+   "start": 34.92,
+   "dur": 3.1,
+   "key": "m1_12",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_13_0",
+   "start": 38.02,
+   "dur": 1.1,
+   "key": "m1_13",
+   "kind": "raw",
+   "src": "img/fe12_min1_1.png"
+  },
+  {
+   "id": "m1_14_0",
+   "start": 39.12,
+   "dur": 5.9,
+   "key": "m1_14",
+   "kind": "stat",
+   "big": "78 AÑOS",
+   "label": "",
+   "tone": "warn"
+  },
+  {
+   "id": "m1_15_0",
+   "start": 45.02,
+   "dur": 4.34,
+   "key": "m1_15",
+   "kind": "raw",
+   "src": "img/fe12_min1_2.png"
+  },
+  {
+   "id": "m1_16_0",
+   "start": 49.36,
+   "dur": 1.2,
+   "key": "m1_16",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "VERGÜENZA",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_17_0",
+   "start": 50.56,
+   "dur": 3.46,
+   "key": "m1_17",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_18_0",
+   "start": 54.02,
+   "dur": 0.82,
+   "key": "m1_18",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_19_0",
+   "start": 54.84,
+   "dur": 3.24,
+   "key": "m1_19",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "SE",
+     "hl": false
+    },
+    {
+     "t": "ME",
+     "hl": false
+    },
+    {
+     "t": "QUEDÓ",
+     "hl": false
+    },
+    {
+     "t": "CLAVADA",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_20_0",
+   "start": 58.08,
+   "dur": 1.36,
+   "key": "m1_20",
+   "kind": "raw",
+   "src": "img/fe12_min1_3.png"
+  },
+  {
+   "id": "m1_21_0",
+   "start": 59.44,
+   "dur": 4.58,
+   "key": "m1_21",
+   "kind": "raw",
+   "src": "img/fe12_min1_4.png"
+  },
+  {
+   "id": "m1_22_0",
+   "start": 64.02,
+   "dur": 5.94,
+   "key": "m1_22",
+   "kind": "talk"
+  },
+  {
+   "id": "quebro_0",
+   "start": 69.96,
+   "dur": 5.44,
+   "key": "quebro",
+   "kind": "talk"
+  },
+  {
+   "id": "dignidad_0",
+   "start": 75.4,
+   "dur": 2.8,
+   "key": "dignidad",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO ERA VANIDAD. ERA SU DIGNIDAD",
+     "sub": "para un hombre así, no poder levantarse solo es empezar a sentirse una carga",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer12/dignidad_0.mp4"
+  },
+  {
+   "id": "no_edad_0",
+   "start": 89.68,
+   "dur": 20.36,
+   "key": "no_edad",
+   "kind": "talk"
+  },
+  {
+   "id": "no_edad_1",
+   "start": 110.04,
+   "dur": 44.8,
+   "key": "no_edad",
+   "kind": "mitoverdad",
+   "myth": "Esta debilidad es solo 'la edad'",
+   "truth": "Tiene nombre, se puede frenar y muchas veces REVERTIR, incluso a los 90",
+   "flipAt": 564
+  },
+  {
+   "id": "sarcopenia_0",
+   "start": 154.84,
+   "dur": 11.23,
+   "key": "sarcopenia",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SARCOPENIA",
+     "sub": "la pérdida de músculo con la edad — el ladrón silencioso de tu independencia",
+     "tone": "warn",
+     "at": 253
+    }
+   ],
+   "clip": "avatar_clips/federer12/sarcopenia_0.mp4"
+  },
+  {
+   "id": "porcentaje_0",
+   "start": 178.08,
+   "dur": 26,
+   "key": "porcentaje",
+   "kind": "stat",
+   "big": "3–5%",
+   "label": "de tu músculo puedes perder por década después de los 60 si no haces nada",
+   "tone": "warn"
+  },
+  {
+   "id": "banco_0",
+   "start": 204.08,
+   "dur": 16.62,
+   "key": "banco",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe12_banco.png"
+    }
+   ]
+  },
+  {
+   "id": "tres_cosas_0",
+   "start": 220.7,
+   "dur": 8.84,
+   "key": "tres_cosas",
+   "kind": "talk"
+  },
+  {
+   "id": "sordo_0",
+   "start": 229.54,
+   "dur": 23.12,
+   "key": "sordo",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe12_resistencia.png"
+    }
+   ]
+  },
+  {
+   "id": "comes_menos_0",
+   "start": 252.66,
+   "dur": 20.52,
+   "key": "comes_menos",
+   "kind": "splitlist",
+   "title": "Comes menos proteína sin notarlo",
+   "items": [
+    "Más pan, más sopa, más café con galletas",
+    "Menos carne, huevo, lo que construye músculo"
+   ],
+   "tone": "warn"
+  },
+  {
+   "id": "te_mueves_0",
+   "start": 273.18,
+   "dur": 2.8,
+   "key": "te_mueves",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LO QUE NO SE USA, SE PIERDE",
+     "sub": "el músculo es un inquilino exigente: si no le pides fuerza, se va",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer12/te_mueves_0.mp4"
+  },
+  {
+   "id": "tres_influir_0",
+   "start": 299.82,
+   "dur": 23.96,
+   "key": "tres_influir",
+   "kind": "chips",
+   "title": "No es 'la edad', es fisiología",
+   "chips": [
+    "Cuerpo sordo a la proteína",
+    "Comes poca proteína",
+    "Te mueves poco"
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "seguro_vida_0",
+   "start": 323.78,
+   "dur": 1.81,
+   "key": "seguro_vida",
+   "kind": "talk"
+  },
+  {
+   "id": "seguro_vida_1",
+   "start": 325.59,
+   "dur": 2.8,
+   "key": "seguro_vida",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TUS MÚSCULOS SON TU SEGURO DE VIDA",
+     "sub": "no es vanidad: unas piernas fuertes te salvan de la caída",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer12/seguro_vida_1.mp4"
+  },
+  {
+   "id": "caida_0",
+   "start": 330.3,
+   "dur": 18.78,
+   "key": "caida",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe12_caida.png"
+    }
+   ]
+  },
+  {
+   "id": "cadera_0",
+   "start": 349.08,
+   "dur": 6,
+   "key": "cadera",
+   "kind": "raw",
+   "src": "img/fe12_cadera_hospital.png",
+   "hold": true
+  },
+  {
+   "id": "pozo_0",
+   "start": 355.08,
+   "dur": 34.04,
+   "key": "pozo",
+   "kind": "bars",
+   "w": 2,
+   "title": "Músculo que se pierde en cama (aprox.)",
+   "unit": "",
+   "bars": [
+    {
+     "label": "1 semana en cama +70 años",
+     "value": 100,
+     "tone": "danger",
+     "note": "mucho, muy rápido"
+    },
+    {
+     "label": "Recuperarlo después",
+     "value": 40,
+     "tone": "teal",
+     "note": "cuesta el triple"
+    }
+   ]
+  },
+  {
+   "id": "marta_0",
+   "start": 389.12,
+   "dur": 27.82,
+   "key": "marta",
+   "kind": "raw",
+   "src": "img/fe12_marta_consultorio.png",
+   "kicker": "Doña Marta, 74 — su hermana se cayó",
+   "hold": true
+  },
+  {
+   "id": "marta_hoy_0",
+   "start": 416.94,
+   "dur": 30.04,
+   "key": "marta_hoy",
+   "kind": "raw",
+   "src": "img/fe12_marta_escaleras.png",
+   "hold": true
+  },
+  {
+   "id": "urgencia_0",
+   "start": 446.98,
+   "dur": 18.26,
+   "key": "urgencia",
+   "kind": "checklist",
+   "title": "Esto NO es sarcopenia — es urgencia, ve ya al médico",
+   "tone": "warn",
+   "items": [
+    {
+     "text": "Debilidad fuerte en UN solo lado",
+     "state": "warn"
+    },
+    {
+     "text": "Se te cae algo de la mano sin razón",
+     "state": "warn"
+    },
+    {
+     "text": "Dificultad para hablar",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "recete_alfredo_0",
+   "start": 465.24,
+   "dur": 5.34,
+   "key": "recete_alfredo",
+   "kind": "talk"
+  },
+  {
+   "id": "recete_alfredo_1",
+   "start": 470.58,
+   "dur": 38.14,
+   "key": "recete_alfredo",
+   "kind": "raw",
+   "src": "img/fe12_alfredo_incredulo.png",
+   "kicker": "Tan simple que no lo creyó"
+  },
+  {
+   "id": "ladrillos_0",
+   "start": 508.72,
+   "dur": 34.68,
+   "key": "ladrillos",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe12_ladrillos.png"
+    }
+   ]
+  },
+  {
+   "id": "lenteja_0",
+   "start": 543.4,
+   "dur": 11.92,
+   "key": "lenteja",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Lenteja — la carne de los pobres",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Campeona"
+  },
+  {
+   "id": "lenteja_1",
+   "start": 555.32,
+   "dur": 11.95,
+   "key": "lenteja",
+   "kind": "raw",
+   "src": "img/fe12_lentejas_plato.png",
+   "hold": true
+  },
+  {
+   "id": "lenteja_2",
+   "start": 567.27,
+   "dur": 13.25,
+   "key": "lenteja",
+   "kind": "bars",
+   "w": 2.2,
+   "title": "Proteína (g por porción, aprox.)",
+   "unit": "g",
+   "bars": [
+    {
+     "label": "Sardinas (lata)",
+     "value": 22,
+     "tone": "teal",
+     "note": "+ vitamina D"
+    },
+    {
+     "label": "Lentejas cocidas",
+     "value": 18,
+     "tone": "teal",
+     "note": "por centavos"
+    },
+    {
+     "label": "Huevo (1)",
+     "value": 6,
+     "tone": "teal"
+    }
+   ]
+  },
+  {
+   "id": "lenteja_arroz_0",
+   "start": 580.52,
+   "dur": 14.12,
+   "key": "lenteja_arroz",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe12_completa.png"
+    }
+   ]
+  },
+  {
+   "id": "huevo_0",
+   "start": 594.64,
+   "dur": 15.26,
+   "key": "huevo",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Huevo — la proteína más perfecta",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Campeona"
+  },
+  {
+   "id": "huevo_1",
+   "start": 609.9,
+   "dur": 8.98,
+   "key": "huevo",
+   "kind": "raw",
+   "src": "img/fe12_huevos.png",
+   "hold": true
+  },
+  {
+   "id": "sardina_0",
+   "start": 618.88,
+   "dur": 4.2,
+   "key": "sardina",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Sardina — ladrillos + vitamina D",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Campeona"
+  },
+  {
+   "id": "sardina_1",
+   "start": 622.52,
+   "dur": 8.33,
+   "key": "sardina",
+   "kind": "raw",
+   "src": "img/fe12_sardinas_lata.png",
+   "hold": true
+  },
+  {
+   "id": "sardina_2",
+   "start": 630.85,
+   "dur": 3.85,
+   "key": "sardina",
+   "kind": "callout",
+   "image": "img/fe12_sardinas_lata.png",
+   "figure": "«Doble regalo»",
+   "caption": "Proteína de primera + vitamina D + omega 3, en una lata baratísima."
+  },
+  {
+   "id": "vitd_0",
+   "start": 634.7,
+   "dur": 20.82,
+   "key": "vitd",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe12_vitd.png"
+    }
+   ]
+  },
+  {
+   "id": "cuando_0",
+   "start": 655.52,
+   "dur": 3.56,
+   "key": "cuando",
+   "kind": "talk"
+  },
+  {
+   "id": "cuando_1",
+   "start": 659.08,
+   "dur": 2.8,
+   "key": "cuando",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO ES SOLO QUÉ — ES CUÁNDO",
+     "sub": "casi ningún médico se toma el tiempo de explicarte esto",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer12/cuando_1.mp4"
+  },
+  {
+   "id": "vaso_0",
+   "start": 685.68,
+   "dur": 3.06,
+   "key": "vaso",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe12_reparto.png"
+    }
+   ]
+  },
+  {
+   "id": "vaso_1",
+   "start": 688.74,
+   "dur": 14.88,
+   "key": "vaso",
+   "kind": "splitlist",
+   "w": 1.6,
+   "title": "El secreto está en el CUÁNDO",
+   "items": [
+    "❌ Toda la proteína de golpe en la cena → se desperdicia",
+    "✅ Repartida en las 3 comidas → tu cuerpo la aprovecha"
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "desayuno_0",
+   "start": 703.62,
+   "dur": 2.9,
+   "key": "desayuno",
+   "kind": "raw",
+   "src": "img/fe12_desayuno_proteina.png",
+   "hold": true
+  },
+  {
+   "id": "desayuno_1",
+   "start": 706.52,
+   "dur": 83.96,
+   "key": "desayuno",
+   "kind": "annotated",
+   "image": "img/fe12_desayuno_proteina.png",
+   "eyebrow": "El desayuno que despierta el músculo",
+   "caption": "Empieza el día con proteína, no solo café y pan",
+   "annotations": [
+    {
+     "label": "Huevo",
+     "x": 34,
+     "y": 46
+    },
+    {
+     "label": "Algo de fruta",
+     "x": 66,
+     "y": 58
+    }
+   ]
+  },
+  {
+   "id": "dia_plan_0",
+   "start": 790.48,
+   "dur": 5,
+   "key": "dia_plan",
+   "kind": "process",
+   "w": 1.6,
+   "title": "Tu día con proteína repartida",
+   "eyebrow": "Sin gastar más",
+   "steps": [
+    {
+     "title": "Desayuno",
+     "desc": "un huevo o frijol, despierta el músculo",
+     "image": "img/fe12_huevos.png"
+    },
+    {
+     "title": "Comida",
+     "desc": "lentejas con arroz, o pollo, o pescado",
+     "image": "img/fe12_lentejas_plato.png"
+    },
+    {
+     "title": "Cena",
+     "desc": "ligera, pero con su proteína",
+     "image": "img/fe12_sardinas_lata.png"
+    }
+   ]
+  },
+  {
+   "id": "movimiento_0",
+   "start": 795.48,
+   "dur": 2.8,
+   "key": "movimiento",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LEVÁNTATE DE LA SILLA 10 VECES",
+     "sub": "no es gimnasio: el músculo solo escucha la proteína si lo usas",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer12/movimiento_0.mp4"
+  },
+  {
+   "id": "batidos_0",
+   "start": 847.04,
+   "dur": 39.92,
+   "key": "batidos",
+   "kind": "mitoverdad",
+   "myth": "Necesito batidos caros de gimnasio",
+   "truth": "Un huevo, lentejas y una lata de sardinas le ganan a la mayoría de esos polvos",
+   "flipAt": 727
+  },
+  {
+   "id": "error_0",
+   "start": 886.96,
+   "dur": 7.53,
+   "key": "error",
+   "kind": "talk"
+  },
+  {
+   "id": "error_1",
+   "start": 894.49,
+   "dur": 31.35,
+   "key": "error",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "«Ya es demasiado tarde»",
+   "tone": "warn",
+   "w": 3.2,
+   "eyebrow": "El error"
+  },
+  {
+   "id": "noventa_0",
+   "start": 925.84,
+   "dur": 5.97,
+   "key": "noventa",
+   "kind": "stat",
+   "big": "90+",
+   "label": "personas de más de 90 ganaron fuerza y dejaron el bastón en semanas",
+   "tone": "teal"
+  },
+  {
+   "id": "noventa_1",
+   "start": 931.81,
+   "dur": 13.63,
+   "key": "noventa",
+   "kind": "bars",
+   "w": 2,
+   "title": "Nunca es tarde — fuerza en semanas",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Si te resignas ('ya para qué')",
+     "value": 15,
+     "tone": "danger",
+     "note": "sigues perdiendo"
+    },
+    {
+     "label": "Si empiezas hoy, a cualquier edad",
+     "value": 90,
+     "tone": "teal",
+     "note": "el cuerpo responde"
+    }
+   ]
+  },
+  {
+   "id": "rendicion_0",
+   "start": 945.44,
+   "dur": 36.4,
+   "key": "rendicion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Nunca"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "demasiado"
+    },
+    {
+     "t": "TARDE",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "injerto1_0",
+   "start": 981.84,
+   "dur": 44.3,
+   "key": "injerto1",
+   "kind": "lowerthird",
+   "title": "Todo esto, ordenado para tu edad",
+   "tone": "teal",
+   "kicker": "Lo reuní para ti",
+   "desc": "Qué comer, cuánto y en qué momento, y los movimientos que hacen la diferencia — en una guía sencilla con letra grande. El enlace está arriba, en la descripción.",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "alfredo_vuelve_0",
+   "start": 1026.14,
+   "dur": 4.24,
+   "key": "alfredo_vuelve",
+   "kind": "talk"
+  },
+  {
+   "id": "alfredo_vuelve_1",
+   "start": 1030.38,
+   "dur": 9.5,
+   "key": "alfredo_vuelve",
+   "kind": "raw",
+   "src": "img/fe12_alfredo_plan.png",
+   "hold": true
+  },
+  {
+   "id": "alfredo_silla_0",
+   "start": 1039.88,
+   "dur": 27.36,
+   "key": "alfredo_silla",
+   "kind": "process",
+   "w": 1.6,
+   "title": "El cambio de Don Alfredo",
+   "eyebrow": "10 veces cada mañana",
+   "steps": [
+    {
+     "title": "Semana 1",
+     "desc": "le costaba pararse 3 veces",
+     "image": "img/fe12_alfredo_incredulo.png"
+    },
+    {
+     "title": "Semana 6",
+     "desc": "se levanta sin pensarlo",
+     "image": "img/fe12_alfredo_plan.png"
+    },
+    {
+     "title": "El premio",
+     "desc": "cargó a su nieto hasta el techo",
+     "image": "img/fe12_alfredo_nieto.png"
+    }
+   ]
+  },
+  {
+   "id": "nieto_0",
+   "start": 1067.24,
+   "dur": 34.8,
+   "key": "nieto",
+   "kind": "lowerthird",
+   "title": "«Cargué a mi nieto y lo levanté, como cuando era joven»",
+   "tone": "teal",
+   "kicker": "Don Alfredo",
+   "desc": "Y me levanto de mi sillón sin pensarlo. Ni me acuerdo de que no podía."
+  },
+  {
+   "id": "sueno_0",
+   "start": 1102.04,
+   "dur": 12.66,
+   "key": "sueno",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Cuida el sueño",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Consejo"
+  },
+  {
+   "id": "sueno_1",
+   "start": 1114.7,
+   "dur": 7.72,
+   "key": "sueno",
+   "kind": "raw",
+   "src": "img/fe12_dormir.png",
+   "hold": true
+  },
+  {
+   "id": "sol_0",
+   "start": 1122.42,
+   "dur": 4.9,
+   "key": "sol",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Sol suave de la mañana (vitamina D)",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Consejo"
+  },
+  {
+   "id": "sol_1",
+   "start": 1127.32,
+   "dur": 12.94,
+   "key": "sol",
+   "kind": "raw",
+   "src": "img/fe12_sol_manana.png",
+   "hold": true
+  },
+  {
+   "id": "constancia_0",
+   "start": 1140.26,
+   "dur": 16.62,
+   "key": "constancia",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "La constancia",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Consejo"
+  },
+  {
+   "id": "constancia_1",
+   "start": 1156.88,
+   "dur": 2.8,
+   "key": "constancia",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO FALLÓ NI UNA MAÑANA",
+     "sub": "Don Alfredo no ganó fuerza en un día — la ganó por constancia. Está a tu alcance.",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer12/constancia_1.mp4"
+  },
+  {
+   "id": "constancia_2",
+   "start": 1164.09,
+   "dur": 10.09,
+   "key": "constancia",
+   "kind": "process",
+   "w": 1.4,
+   "title": "Tus 3 llaves para no perder fuerza",
+   "eyebrow": "Simple y diario",
+   "steps": [
+    {
+     "title": "Proteína",
+     "desc": "repartida, empezando por el desayuno",
+     "image": "img/fe12_huevos.png"
+    },
+    {
+     "title": "Movimiento",
+     "desc": "levántate de la silla, camina",
+     "image": "img/fe12_desayuno_proteina.png"
+    },
+    {
+     "title": "Descanso y sol",
+     "desc": "duerme bien, vitamina D",
+     "image": "img/fe12_dormir.png"
+    }
+   ]
+  },
+  {
+   "id": "injerto2_0",
+   "start": 1174.18,
+   "dur": 36.2,
+   "key": "injerto2",
+   "kind": "freezezoom",
+   "image": "img/fe12_libro_guia.png",
+   "kicker": "Las 3 guías · enlace arriba en la descripción",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "inversion_0",
+   "start": 1210.38,
+   "dur": 11.18,
+   "key": "inversion",
+   "kind": "lowerthird",
+   "title": "La mejor inversión: tu independencia",
+   "tone": "teal",
+   "kicker": "Para no depender de nadie",
+   "desc": "No es una inversión en un producto: es poder levantarte solo, cargar a tus nietos, tu libertad. El enlace está arriba, en la descripción.",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "despedida_0",
+   "start": 1221.56,
+   "dur": 13.54,
+   "key": "despedida",
+   "kind": "talk"
+  },
+  {
+   "id": "primer_ladrillo_0",
+   "start": 1235.1,
+   "dur": 40.68,
+   "key": "primer_ladrillo",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Empieza"
+    },
+    {
+     "t": "mañana."
+    },
+    {
+     "t": "En"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "DESAYUNO",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "cta_coment_0",
+   "start": 1275.78,
+   "dur": 36,
+   "key": "cta_coment",
+   "kind": "lowerthird",
+   "title": "¿Te cuesta levantarte de la silla? Cuéntame abajo",
+   "tone": "teal",
+   "kicker": "Déjame un me gusta",
+   "desc": "Suscríbete y compártelo con alguien que anda perdiendo fuerza y ya se resignó a 'la edad'. Puede que le devuelvas su independencia."
+  },
+  {
+   "id": "cierre_0",
+   "start": 1311.78,
+   "dur": 4.18,
+   "key": "cierre",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Mañana, en el desayuno, ya sabes lo que tienes que hacer",
+   "image": "img/fe12_federer_cocina.png"
+  }
+ ]
+}

@@ -62,8 +62,10 @@ _v3probe/
 
 .flowprofile/
 .flowaccounts.json
+.render_accounts.json
 
-# fábrica: backups de .env (tienen claves), estado local y salidas DRY
+# fábrica: backups de .env (tienen claves) y estado local
 .env.*
 factory/_state/
 factory/_dry/
+.pubprune/

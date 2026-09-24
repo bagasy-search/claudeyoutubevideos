@@ -1,0 +1,28 @@
+{
+  "note": "Frases-ancla por seccion del video dulces. fill_starts.mjs las mapea a ms.",
+  "anchors": {
+    "intro":            "Sentate un ratito conmigo",
+    "s01_alfajores":    "El alfajor de maicena casero",
+    "s02_dulceleche":   "El dulce de leche casero",
+    "s03_arrozleche":   "El arroz con leche",
+    "s04_mazamorra":    "La mazamorra",
+    "s05_coco":         "Los bocaditos de coco",
+    "s06_turronquaker": "El turron de avena",
+    "s07_mantecol":     "El mantecol casero",
+    "s08_cascaritas":   "Las cascaritas de naranja abrillantadas",
+    "s09_colacion":     "La colacion",
+    "s10_alfeniques":   "El decimo era pura magia",
+    "s11_membrillo":    "El dulce de membrillo casero",
+    "s12_arrope":       "El arrope",
+    "s13_melcocha":     "La melcocha",
+    "s14_caramelosleche":"Los caramelos de leche caseros",
+    "s15_ambrosia":     "La ambrosia",
+    "s16_bombones":     "Los huevos y bombones de chocolate caseros",
+    "s17_chupetines":   "Los chupetines caseros",
+    "s18_frutasabrillantadas":"Las frutas abrillantadas caseras",
+    "s19_conitos":      "Los conitos de dulce de leche",
+    "s20_quesillo":     "El quesillo con arrope",
+    "extras":           "todavia me quedan algunos guardados",
+    "cierre":           "Ninguno de estos dulces se perdio"
+  }
+}

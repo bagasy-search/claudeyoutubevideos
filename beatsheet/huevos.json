@@ -1,0 +1,728 @@
+{
+  "video": "huevos",
+  "avatar": "huevos_opt.mp4",
+  "clipsfirst": true,
+  "maxRawDur": 8,
+  "beats": [
+    {
+      "id": "hu_crock_eggs",
+      "start": 7.39,
+      "dur": 5.02,
+      "kind": "raw",
+      "src": "img/hu_crock_eggs.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_crock_eggs",
+        "prompt": "a crock or bucket full of eggs, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_no_fridge",
+      "start": 11.91,
+      "dur": 13.59,
+      "kind": "raw",
+      "src": "img/hu_no_fridge.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_no_fridge",
+        "prompt": "an old rustic farmhouse kitchen no fridge, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_hook",
+      "start": 25,
+      "dur": 9.56,
+      "kind": "impact",
+      "image": "img/cmp_hook_bg.png",
+      "setup": "A year old.",
+      "impact": "Fresh as the day it was laid. No fridge.",
+      "impactAccent": "cold",
+      "hitAt": 1.2,
+      "boom": 0,
+      "darken": 0.42,
+      "gen": {
+        "type": "image",
+        "name": "cmp_hook_bg",
+        "prompt": "a crock full of eggs and one fresh egg cracked into a pan, rustic kitchen, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_lime_bag",
+      "start": 34.56,
+      "dur": 4.94,
+      "kind": "raw",
+      "src": "img/hu_lime_bag.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_lime_bag",
+        "prompt": "a bag of white pickling lime powder, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_egg_counter",
+      "start": 95.96,
+      "dur": 32.6,
+      "kind": "raw",
+      "src": "img/hu_egg_counter.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_egg_counter",
+        "prompt": "a single egg sitting on a kitchen counter, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_shell_close",
+      "start": 128.06,
+      "dur": 7.76,
+      "kind": "raw",
+      "src": "img/hu_shell_close.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_shell_close",
+        "prompt": "extreme close up of an eggshell surface, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_pores",
+      "start": 135.32,
+      "dur": 38.66,
+      "kind": "raw",
+      "src": "img/hu_pores.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_pores",
+        "prompt": "magnified porous eggshell surface, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_air_cell",
+      "start": 173.48,
+      "dur": 8.08,
+      "kind": "raw",
+      "src": "img/hu_air_cell.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_air_cell",
+        "prompt": "a candled egg showing the air cell, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_secret",
+      "start": 181.06,
+      "dur": 47.97,
+      "kind": "impact",
+      "image": "img/cmp_secret_bg.png",
+      "setup": "The whole secret:",
+      "impact": "Seal the pores of the shell.",
+      "impactAccent": "cold",
+      "hitAt": 1.2,
+      "boom": 0,
+      "darken": 0.42,
+      "gen": {
+        "type": "image",
+        "name": "cmp_secret_bg",
+        "prompt": "extreme close up of an eggshell being sealed, macro, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_hen_lay",
+      "start": 229.03,
+      "dur": 14.29,
+      "kind": "raw",
+      "src": "broll/hu_hen_lay.mp4",
+      "darken": 0
+    },
+    {
+      "id": "hu_egg_wash",
+      "start": 242.82,
+      "dur": 45.79,
+      "kind": "raw",
+      "src": "img/hu_egg_wash.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_egg_wash",
+        "prompt": "eggs being washed and graded on a conveyor, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_euro_market",
+      "start": 288.11,
+      "dur": 3.16,
+      "kind": "raw",
+      "src": "img/hu_euro_market.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_euro_market",
+        "prompt": "a european market with eggs on a shelf, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_europe",
+      "start": 290.77,
+      "dur": 40.52,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "danger",
+      "figure": "ILLEGAL",
+      "eyebrow": "In Europe",
+      "caption": "it is against the law to WASH an egg — they keep them on the shelf, unrefrigerated. Only here do we wash off the seal and then must chill them.",
+      "image": "img/cmp_europe_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_europe_bg",
+        "prompt": "brown eggs on an open unrefrigerated european store shelf, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_unwashed",
+      "start": 331.29,
+      "dur": 18.09,
+      "kind": "raw",
+      "src": "img/hu_unwashed.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_unwashed",
+        "prompt": "dirty unwashed fresh farm eggs, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_materials",
+      "start": 348.88,
+      "dur": 47.4,
+      "kind": "checklist",
+      "hue": "cold",
+      "accent": "good",
+      "title": "The whole method",
+      "eyebrow": "~$2 · keeps a year",
+      "items": [
+        {
+          "text": "Fresh UNWASHED eggs",
+          "state": "done"
+        },
+        {
+          "text": "Pickling lime (1 oz per quart, by weight)",
+          "state": "done"
+        },
+        {
+          "text": "A crock or glass jar of water",
+          "state": "done"
+        },
+        {
+          "text": "Cover them · cool, dark spot",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_materials_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_materials_bg",
+        "prompt": "a crock, a bag of pickling lime, and fresh eggs on a table, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_jar_crock",
+      "start": 396.28,
+      "dur": 8.9,
+      "kind": "raw",
+      "src": "broll/hu_jar_crock.mp4",
+      "darken": 0
+    },
+    {
+      "id": "hu_pickling_lime",
+      "start": 404.68,
+      "dur": 73.48,
+      "kind": "raw",
+      "src": "img/hu_pickling_lime.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_pickling_lime",
+        "prompt": "a container of pickling lime hydrated lime, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_scale",
+      "start": 477.66,
+      "dur": 12.58,
+      "kind": "raw",
+      "src": "img/hu_scale.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_scale",
+        "prompt": "weighing white powder on a kitchen scale, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_limewater",
+      "start": 489.74,
+      "dur": 11.94,
+      "kind": "raw",
+      "src": "img/hu_limewater.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_limewater",
+        "prompt": "cloudy milky white water in a jar, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_lower_eggs",
+      "start": 501.18,
+      "dur": 5.24,
+      "kind": "raw",
+      "src": "broll/hu_lower_eggs.mp4",
+      "darken": 0
+    },
+    {
+      "id": "hu_submerged",
+      "start": 505.92,
+      "dur": 13.01,
+      "kind": "raw",
+      "src": "img/hu_submerged.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_submerged",
+        "prompt": "eggs fully submerged in cloudy water, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_pantry",
+      "start": 518.43,
+      "dur": 9.03,
+      "kind": "raw",
+      "src": "img/hu_pantry.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_pantry",
+        "prompt": "crocks of eggs on a dark pantry shelf, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_gather_eggs",
+      "start": 526.96,
+      "dur": 17.57,
+      "kind": "raw",
+      "src": "img/hu_gather_eggs.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_gather_eggs",
+        "prompt": "collecting eggs from a hen house, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_bucket_eggs",
+      "start": 544.03,
+      "dur": 19.73,
+      "kind": "raw",
+      "src": "img/hu_bucket_eggs.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_bucket_eggs",
+        "prompt": "a five gallon bucket full of eggs, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_duck_eggs",
+      "start": 563.26,
+      "dur": 49.39,
+      "kind": "raw",
+      "src": "img/hu_duck_eggs.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_duck_eggs",
+        "prompt": "duck eggs in a basket, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_history",
+      "start": 612.15,
+      "dur": 55.92,
+      "kind": "timeline",
+      "eyebrow": "It is not new",
+      "title": "Proven for centuries",
+      "events": [
+        {
+          "year": "1800s",
+          "label": "waterglass on farms & ships",
+          "accent": "amber"
+        },
+        {
+          "year": "1940s",
+          "label": "wartime kitchens everywhere",
+          "accent": "amber"
+        },
+        {
+          "year": "Now",
+          "label": "the fridge made folks forget",
+          "accent": "danger"
+        }
+      ]
+    },
+    {
+      "id": "hu_old_crock",
+      "start": 668.07,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "img/hu_old_crock.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_old_crock",
+        "prompt": "an antique stoneware crock, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_ship",
+      "start": 672.99,
+      "dur": 5.7,
+      "kind": "raw",
+      "src": "img/hu_ship.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_ship",
+        "prompt": "an old wooden sailing ship at sea, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_wagon",
+      "start": 678.19,
+      "dur": 8.57,
+      "kind": "raw",
+      "src": "img/hu_wagon.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_wagon",
+        "prompt": "a covered pioneer wagon on the plains, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_war_kitchen",
+      "start": 686.26,
+      "dur": 66.04,
+      "kind": "raw",
+      "src": "img/hu_war_kitchen.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_war_kitchen",
+        "prompt": "a 1940s wartime farm kitchen, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_cake",
+      "start": 751.8,
+      "dur": 32.9,
+      "kind": "raw",
+      "src": "img/hu_cake.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_cake",
+        "prompt": "a homemade cake at a county fair, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_grease",
+      "start": 784.2,
+      "dur": 16.74,
+      "kind": "raw",
+      "src": "img/hu_grease.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_grease",
+        "prompt": "rubbing an egg with oil or lard, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_pack_sand",
+      "start": 800.44,
+      "dur": 49.26,
+      "kind": "raw",
+      "src": "img/hu_pack_sand.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_pack_sand",
+        "prompt": "eggs packed in a box of sawdust or sand, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_float_test",
+      "start": 849.2,
+      "dur": 38.02,
+      "kind": "raw",
+      "src": "img/hu_float_test.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_float_test",
+        "prompt": "an egg floating in a glass of water, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_scramble",
+      "start": 886.72,
+      "dur": 43.23,
+      "kind": "raw",
+      "src": "img/hu_scramble.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_scramble",
+        "prompt": "scrambled eggs in a pan, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_mistakes",
+      "start": 929.45,
+      "dur": 22.11,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "danger",
+      "title": "The 4 mistakes",
+      "eyebrow": "…and every one is easy to avoid",
+      "items": [
+        {
+          "text": "Never use washed / store eggs",
+          "state": "done"
+        },
+        {
+          "text": "Only whole, sound, clean eggs",
+          "state": "done"
+        },
+        {
+          "text": "Keep them under the water, cool",
+          "state": "done"
+        },
+        {
+          "text": "No rusting metal · mark the date",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_mistakes_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_mistakes_bg",
+        "prompt": "a crock of eggs in limewater with a few eggs beside it, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_carton",
+      "start": 951.56,
+      "dur": 9.45,
+      "kind": "raw",
+      "src": "img/hu_carton.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_carton",
+        "prompt": "a supermarket carton of washed white eggs, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "hu_cracked",
+      "start": 960.51,
+      "dur": 16.02,
+      "kind": "raw",
+      "src": "img/hu_cracked.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_cracked",
+        "prompt": "a cracked egg shell, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_cost",
+      "start": 976.03,
+      "dur": 60.97,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "USD",
+      "title": "A year of eggs",
+      "eyebrow": "Store vs. the crock",
+      "bars": [
+        {
+          "label": "Store, twice a week",
+          "value": 100,
+          "display": "$100s/yr",
+          "sub": "+ empty shelves when it's bad",
+          "tone": "danger"
+        },
+        {
+          "label": "A crock + lime",
+          "value": 2,
+          "display": "~$2",
+          "sub": "keeps a year, no power",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "cmp_recap",
+      "start": 1141.9,
+      "dur": 39.65,
+      "kind": "process",
+      "hue": "cold",
+      "accent": "good",
+      "title": "This week",
+      "eyebrow": "Start one crock",
+      "steps": [
+        {
+          "title": "Get fresh unwashed eggs"
+        },
+        {
+          "title": "1 oz lime per quart of water"
+        },
+        {
+          "title": "Submerge · cover · cool & dark"
+        }
+      ]
+    },
+    {
+      "id": "hu_farm_market",
+      "start": 1181.55,
+      "dur": 83.6,
+      "kind": "raw",
+      "src": "img/hu_farm_market.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "hu_farm_market",
+        "prompt": "fresh eggs at a farmers market stall, documentary photo that looks like a real casual snapshot, slightly soft focus, uneven natural light, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_next",
+      "start": 1264.65,
+      "dur": 57.98,
+      "kind": "nextvideo",
+      "kicker": "Next time",
+      "title": "Keep butter sweet for a year — no icebox",
+      "sub": "Buried in nothing but a crock of cold water and one thing drawn up from the well."
+    },
+    {
+      "id": "ovp_12",
+      "start": 11.91,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "A year of eggs · no fridge",
+      "pos": "top",
+      "accent": "amber"
+    },
+    {
+      "id": "ovp_135",
+      "start": 135.32,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "7,000 pores in every shell",
+      "pos": "bottom",
+      "accent": "cold"
+    },
+    {
+      "id": "ovp_272",
+      "start": 272,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Washed = you must keep buying",
+      "pos": "bottom",
+      "accent": "danger"
+    },
+    {
+      "id": "ovx_291",
+      "start": 290.77,
+      "dur": 3.6,
+      "kind": "stattag",
+      "overlay": true,
+      "text": "ILLEGAL",
+      "label": "to wash eggs in Europe",
+      "corner": "TR",
+      "accent": "amber"
+    },
+    {
+      "id": "ov_478",
+      "start": 477.66,
+      "dur": 3.6,
+      "kind": "stattag",
+      "overlay": true,
+      "value": 1,
+      "suffix": " oz",
+      "label": "lime per quart (by weight)",
+      "corner": "TL",
+      "accent": "cold"
+    },
+    {
+      "id": "ovg_594",
+      "start": 593.62,
+      "dur": 4.2,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "📌 Free guide — pinned in the comments",
+      "pos": "bottom",
+      "accent": "amber"
+    },
+    {
+      "id": "ovp_865",
+      "start": 864.56,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Floats = bad · sinks = good",
+      "pos": "bottom",
+      "accent": "cold"
+    },
+    {
+      "id": "ovg_825",
+      "start": 824.71,
+      "dur": 4.2,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "📌 All the methods — free guide (comments)",
+      "pos": "bottom",
+      "accent": "amber"
+    },
+    {
+      "id": "ovp_1113",
+      "start": 1113.25,
+      "dur": 3.4,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "The crock makes you free",
+      "pos": "bottom",
+      "accent": "cold"
+    },
+    {
+      "id": "ovg_1288",
+      "start": 1287.97,
+      "dur": 4.2,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "📌 Free guide + 90 old skills — in the comments",
+      "pos": "bottom",
+      "accent": "amber"
+    }
+  ]
+}

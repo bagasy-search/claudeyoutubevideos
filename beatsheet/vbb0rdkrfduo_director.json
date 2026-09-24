@@ -1,0 +1,2116 @@
+{
+  "slug": "vbb0rdkrfduo",
+  "clock": "public/captions_vbb0rdkrfduo.json",
+  "first_minute": "beatsheet/vbb0rdkrfduo_first_minute.json",
+  "scene_count": 78,
+  "scenes": [
+    {
+      "id": "fm02",
+      "start_sec": 2.8,
+      "end_sec": 6.16,
+      "phrase_anchor": "RECREACIÓN ARTÍSTICA — Isabel de Polonia",
+      "narrative_intent": "Isabel de Polonia",
+      "indispensable_visual_information": [],
+      "shot_type": "image",
+      "primary_resource": [
+        "vbb_new_isabel_poland"
+      ],
+      "internal_motion": "Ken Burns suave y cambio de foco hacia el sujeto nombrado.",
+      "editorial_text": [
+        "RECREACIÓN ARTÍSTICA",
+        "Isabel de Polonia"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "fm03",
+      "start_sec": 6.16,
+      "end_sec": 9.14,
+      "phrase_anchor": "EUROPA MEDIEVAL — Agua de Hungría",
+      "narrative_intent": "Agua de Hungría",
+      "indispensable_visual_information": [],
+      "shot_type": "image",
+      "primary_resource": [
+        "vbb_new_hungary_water"
+      ],
+      "internal_motion": "Ken Burns suave y cambio de foco hacia el sujeto nombrado.",
+      "editorial_text": [
+        "EUROPA MEDIEVAL",
+        "Agua de Hungría"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "fm04",
+      "start_sec": 9.34,
+      "end_sec": 12.9,
+      "phrase_anchor": "SIGLOS DESPUÉS — La historia creció",
+      "narrative_intent": "La historia creció",
+      "indispensable_visual_information": [],
+      "shot_type": "image",
+      "primary_resource": [
+        "vbb_new_medieval_manuscript"
+      ],
+      "internal_motion": "Ken Burns suave y cambio de foco hacia el sujeto nombrado.",
+      "editorial_text": [
+        "SIGLOS DESPUÉS",
+        "La historia creció"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "fm05",
+      "start_sec": 12.98,
+      "end_sec": 19.72,
+      "phrase_anchor": "LA LEYENDA DECÍA… — Romero, más de 70 años y una propuesta real",
+      "narrative_intent": "Romero, más de 70 años y una propuesta real",
+      "indispensable_visual_information": [
+        "ROMERO",
+        "MÁS DE 70",
+        "UN REY QUISO CASARSE"
+      ],
+      "shot_type": "triptych",
+      "primary_resource": [
+        "vbb_rosemary_macro",
+        "vbb_new_isabel_poland",
+        "vbb_new_mother_son_royal"
+      ],
+      "internal_motion": "Tres paneles se activan en el orden exacto de la enumeración.",
+      "editorial_text": [
+        "LA LEYENDA DECÍA…",
+        "Romero, más de 70 años y una propuesta real",
+        "ROMERO",
+        "MÁS DE 70",
+        "UN REY QUISO CASARSE"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "fm07",
+      "start_sec": 23.48,
+      "end_sec": 26.46,
+      "phrase_anchor": "EL DETALLE OMITIDO — Era su propio hijo",
+      "narrative_intent": "Era su propio hijo",
+      "indispensable_visual_information": [],
+      "shot_type": "image",
+      "primary_resource": [
+        "vbb_new_mother_son_royal"
+      ],
+      "internal_motion": "Ken Burns suave y cambio de foco hacia el sujeto nombrado.",
+      "editorial_text": [
+        "EL DETALLE OMITIDO",
+        "Era su propio hijo"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "fm08",
+      "start_sec": 26.66,
+      "end_sec": 29.78,
+      "phrase_anchor": "LEYENDA ≠ EVIDENCIA — No es historia comprobada",
+      "narrative_intent": "No es historia comprobada",
+      "indispensable_visual_information": [
+        "RELATO ROMÁNTICO",
+        "DOCUMENTO HISTÓRICO"
+      ],
+      "shot_type": "compare",
+      "primary_resource": [
+        "vbb_new_isabel_poland",
+        "vbb_new_medieval_manuscript"
+      ],
+      "internal_motion": "Dos estados permanecen juntos; divisor central y diferencia explícita.",
+      "editorial_text": [
+        "LEYENDA ≠ EVIDENCIA",
+        "No es historia comprobada",
+        "RELATO ROMÁNTICO",
+        "DOCUMENTO HISTÓRICO"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "fm0910",
+      "start_sec": 29.78,
+      "end_sec": 36.56,
+      "phrase_anchor": "LA CORRECCIÓN HISTÓRICA — Destilado ≠ pomada verde",
+      "narrative_intent": "Destilado ≠ pomada verde",
+      "indispensable_visual_information": [
+        "PERFUME / DESTILADO",
+        "POMADA DE INTERNET"
+      ],
+      "shot_type": "compare",
+      "primary_resource": [
+        "vbb_new_hungary_water",
+        "vbb_new_distillate_not_balm"
+      ],
+      "internal_motion": "Dos estados permanecen juntos; divisor central y diferencia explícita.",
+      "editorial_text": [
+        "LA CORRECCIÓN HISTÓRICA",
+        "Destilado ≠ pomada verde",
+        "PERFUME / DESTILADO",
+        "POMADA DE INTERNET"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "fm12",
+      "start_sec": 41.72,
+      "end_sec": 47.2,
+      "phrase_anchor": "NO HACE TODO A LA VEZ — Cuatro promesas que vamos a revisar",
+      "narrative_intent": "Cuatro promesas que vamos a revisar",
+      "indispensable_visual_information": [
+        "No borra venitas",
+        "No desinfla ojeras",
+        "No tensa la piel",
+        "No cura articulaciones"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "NO HACE TODO A LA VEZ",
+        "Cuatro promesas que vamos a revisar",
+        "No borra venitas",
+        "No desinfla ojeras",
+        "No tensa la piel",
+        "No cura articulaciones"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "fm14",
+      "start_sec": 50.22,
+      "end_sec": 52.66,
+      "phrase_anchor": "LO QUE SÍ PUEDE SER — Un bálsamo corporal",
+      "narrative_intent": "Un bálsamo corporal",
+      "indispensable_visual_information": [],
+      "shot_type": "image",
+      "primary_resource": [
+        "vbb_new_jars_cooling"
+      ],
+      "internal_motion": "Ken Burns suave y cambio de foco hacia el sujeto nombrado.",
+      "editorial_text": [
+        "LO QUE SÍ PUEDE SER",
+        "Un bálsamo corporal"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "fm15",
+      "start_sec": 52.66,
+      "end_sec": 56.6,
+      "phrase_anchor": "TRES USOS REALISTAS — Una tarea concreta, no cinco curaciones",
+      "narrative_intent": "Una tarea concreta, no cinco curaciones",
+      "indispensable_visual_information": [
+        "PIEL SECA",
+        "PIERNAS CANSADAS",
+        "MOLESTIA MUSCULAR LEVE"
+      ],
+      "shot_type": "triptych",
+      "primary_resource": [
+        "vbb_mature_hands_history",
+        "vbb_new_spider_veins",
+        "vbb_new_joint_relief"
+      ],
+      "internal_motion": "Tres paneles se activan en el orden exacto de la enumeración.",
+      "editorial_text": [
+        "TRES USOS REALISTAS",
+        "Una tarea concreta, no cinco curaciones",
+        "PIEL SECA",
+        "PIERNAS CANSADAS",
+        "MOLESTIA MUSCULAR LEVE"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "roadmap",
+      "start_sec": 70,
+      "end_sec": 89.5,
+      "phrase_anchor": "HOY VAS A APRENDER — Prepararla sin convertir tu piel en un laboratorio",
+      "narrative_intent": "Prepararla sin convertir tu piel en un laboratorio",
+      "indispensable_visual_information": [
+        "Medidas y temperatura exactas",
+        "Textura y prueba de parche",
+        "Tres formas de usarla",
+        "Cinco promesas bajo la lupa",
+        "Plan prudente de 14 días"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [
+        "vbb_new_recipe_ingredients"
+      ],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "HOY VAS A APRENDER",
+        "Prepararla sin convertir tu piel en un laboratorio",
+        "Medidas y temperatura exactas",
+        "Textura y prueba de parche",
+        "Tres formas de usarla",
+        "Cinco promesas bajo la lupa",
+        "Plan prudente de 14 días"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "longevity",
+      "start_sec": 116.16,
+      "end_sec": 151,
+      "phrase_anchor": "NO HAY UNA SOLA HOJITA MÁGICA — La piel acumula décadas",
+      "narrative_intent": "La piel acumula décadas",
+      "indispensable_visual_information": [
+        "GENÉTICA Y DÉCADAS",
+        "EXPOSICIÓN SOLAR",
+        "TABACO",
+        "MOVIMIENTO",
+        "DESCANSO",
+        "CUIDADOS ACUMULADOS"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb_dyn_outdoor_years",
+        "vbb_dyn_sun_face",
+        "vbb_dyn_smoking",
+        "vbb_dyn_night_routine",
+        "vbb_dyn_sleep",
+        "vbb_dyn_morning_routine"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "NO HAY UNA SOLA HOJITA MÁGICA",
+        "La piel acumula décadas",
+        "GENÉTICA Y DÉCADAS",
+        "EXPOSICIÓN SOLAR",
+        "TABACO",
+        "MOVIMIENTO",
+        "DESCANSO",
+        "CUIDADOS ACUMULADOS"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "extracts",
+      "start_sec": 173.2,
+      "end_sec": 204,
+      "phrase_anchor": "NO SON CUATRO VERSIONES IGUALES — Agua, alcohol, grasa y fórmula controlada",
+      "narrative_intent": "Agua, alcohol, grasa y fórmula controlada",
+      "indispensable_visual_information": [
+        "Extracto acuoso",
+        "Destilado alcohólico",
+        "Aceite macerado",
+        "Aceite esencial",
+        "Crema formulada"
+      ],
+      "shot_type": "mechanism",
+      "primary_resource": [
+        "vbb_new_distillate_not_balm"
+      ],
+      "internal_motion": "Nodos y relaciones aparecen por etapas sin cambiar de tema.",
+      "editorial_text": [
+        "NO SON CUATRO VERSIONES IGUALES",
+        "Agua, alcohol, grasa y fórmula controlada",
+        "Extracto acuoso",
+        "Destilado alcohólico",
+        "Aceite macerado",
+        "Aceite esencial",
+        "Crema formulada"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "barrier",
+      "start_sec": 219,
+      "end_sec": 242,
+      "phrase_anchor": "LA PIEL NO ES UNA ESPONJA — La barrera limita el paso",
+      "narrative_intent": "La barrera limita el paso",
+      "indispensable_visual_information": [
+        "SUPERFICIE",
+        "BARRERA CUTÁNEA",
+        "PASO LIMITADO",
+        "IRRITACIÓN POSIBLE"
+      ],
+      "shot_type": "mechanism",
+      "primary_resource": [
+        "vbb_new_skin_barrier"
+      ],
+      "internal_motion": "Nodos y relaciones aparecen por etapas sin cambiar de tema.",
+      "editorial_text": [
+        "LA PIEL NO ES UNA ESPONJA",
+        "La barrera limita el paso",
+        "SUPERFICIE",
+        "BARRERA CUTÁNEA",
+        "PASO LIMITADO",
+        "IRRITACIÓN POSIBLE"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "why_oil",
+      "start_sec": 247.9,
+      "end_sec": 273,
+      "phrase_anchor": "UNA TAREA RAZONABLE — ¿Por qué una base aceitosa?",
+      "narrative_intent": "¿Por qué una base aceitosa?",
+      "indispensable_visual_information": [
+        "Reduce pérdida de agua en piel seca",
+        "Permite masaje con menos fricción",
+        "Aporta aroma y tradición corporal",
+        "Solo para molestias leves",
+        "No regenera cartílago ni abre venas"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [
+        "vbb_new_skin_barrier"
+      ],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "UNA TAREA RAZONABLE",
+        "¿Por qué una base aceitosa?",
+        "Reduce pérdida de agua en piel seca",
+        "Permite masaje con menos fricción",
+        "Aporta aroma y tradición corporal",
+        "Solo para molestias leves",
+        "No regenera cartílago ni abre venas"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "recipe_chapter",
+      "start_sec": 278.38,
+      "end_sec": 287.64,
+      "phrase_anchor": "RECETA BASE — Poca cantidad, medidas exactas",
+      "narrative_intent": "Poca cantidad, medidas exactas",
+      "indispensable_visual_information": [],
+      "shot_type": "chapter",
+      "primary_resource": [],
+      "internal_motion": "Entrada de capítulo por profundidad y jerarquía tipográfica.",
+      "editorial_text": [
+        "RECETA BASE",
+        "Poca cantidad, medidas exactas"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "oil_ingredient",
+      "start_sec": 287.64,
+      "end_sec": 317.74,
+      "phrase_anchor": "INGREDIENTE 1 — 120 ml de aceite",
+      "narrative_intent": "120 ml de aceite",
+      "indispensable_visual_information": [
+        "MEDIA TAZA · 120 ML",
+        "Aceite fresco, sin olor rancio",
+        "No usar una base deteriorada",
+        "La base es casi toda la fórmula"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [
+        "vbb_new_oil_measure"
+      ],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "INGREDIENTE 1",
+        "120 ml de aceite",
+        "MEDIA TAZA · 120 ML",
+        "Aceite fresco, sin olor rancio",
+        "No usar una base deteriorada",
+        "La base es casi toda la fórmula"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "rosemary_ingredient",
+      "start_sec": 317.74,
+      "end_sec": 347.04,
+      "phrase_anchor": "INGREDIENTE 2 — Dos cucharadas rasas de romero seco",
+      "narrative_intent": "Dos cucharadas rasas de romero seco",
+      "indispensable_visual_information": [
+        "NO recién cortado y húmedo",
+        "Sin polvo extraño ni moho",
+        "No hace falta pulverizar",
+        "Menos residuos rozando la piel"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [
+        "vbb_new_dry_rosemary"
+      ],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "INGREDIENTE 2",
+        "Dos cucharadas rasas de romero seco",
+        "NO recién cortado y húmedo",
+        "Sin polvo extraño ni moho",
+        "No hace falta pulverizar",
+        "Menos residuos rozando la piel"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "beeswax_ingredient",
+      "start_sec": 347.04,
+      "end_sec": 377.98,
+      "phrase_anchor": "INGREDIENTE 3 · OPCIONAL — 10 gramos de cera de abejas",
+      "narrative_intent": "10 gramos de cera de abejas",
+      "indispensable_visual_information": [
+        "10 G = BÁLSAMO BLANDO",
+        "12 G solo en un próximo lote cálido",
+        "Esperar a que enfríe por completo",
+        "No corregir a ciegas"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [
+        "vbb_new_beeswax_scale"
+      ],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "INGREDIENTE 3 · OPCIONAL",
+        "10 gramos de cera de abejas",
+        "10 G = BÁLSAMO BLANDO",
+        "12 G solo en un próximo lote cálido",
+        "Esperar a que enfríe por completo",
+        "No corregir a ciegas"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "wash_tools",
+      "start_sec": 377.98,
+      "end_sec": 391.5,
+      "phrase_anchor": "ANTES DE EMPEZAR — Lavar, enjuagar y secar",
+      "narrative_intent": "Lavar, enjuagar y secar",
+      "indispensable_visual_information": [
+        "UTENSILIOS LIMPIOS",
+        "FRASCOS COMPLETAMENTE SECOS"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb3_washing_tools",
+        "vbb_dyn_clean_jar"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "ANTES DE EMPEZAR",
+        "Lavar, enjuagar y secar",
+        "UTENSILIOS LIMPIOS",
+        "FRASCOS COMPLETAMENTE SECOS"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "tools",
+      "start_sec": 391.5,
+      "end_sec": 411.7,
+      "phrase_anchor": "EQUIPO NECESARIO — Todo limpio. Todo seco.",
+      "narrative_intent": "Todo limpio. Todo seco.",
+      "indispensable_visual_information": [
+        "Recipiente resistente al calor",
+        "Olla para baño María",
+        "Cuchara y colador fino",
+        "Tela limpia y seca",
+        "Frascos pequeños con tapa",
+        "Ni una gota escondida"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [
+        "vbb_new_tools_overhead"
+      ],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "EQUIPO NECESARIO",
+        "Todo limpio. Todo seco.",
+        "Recipiente resistente al calor",
+        "Olla para baño María",
+        "Cuchara y colador fino",
+        "Tela limpia y seca",
+        "Frascos pequeños con tapa",
+        "Ni una gota escondida"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "step1",
+      "start_sec": 411.7,
+      "end_sec": 423.9,
+      "phrase_anchor": "BAÑO MARÍA — Calor indirecto",
+      "narrative_intent": "Calor indirecto",
+      "indispensable_visual_information": [
+        "3 CM DE AGUA",
+        "120 ML DE ACEITE",
+        "SIN CONTACTO CON AGUA"
+      ],
+      "shot_type": "step",
+      "primary_resource": [
+        "vbb3_double_boiler"
+      ],
+      "internal_motion": "Número estable, cantidades progresivas y demostración visible durante todo el paso.",
+      "editorial_text": [
+        "BAÑO MARÍA",
+        "Calor indirecto",
+        "3 CM DE AGUA",
+        "120 ML DE ACEITE",
+        "SIN CONTACTO CON AGUA"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "step2",
+      "start_sec": 423.9,
+      "end_sec": 446.46,
+      "phrase_anchor": "TEMPERATURA — Tibio, no fritura",
+      "narrative_intent": "Tibio, no fritura",
+      "indispensable_visual_information": [
+        "45–60 °C",
+        "FUEGO MÍNIMO",
+        "ACEITE SIN HUMO"
+      ],
+      "shot_type": "step",
+      "primary_resource": [
+        "vbb_new_thermometer_oil"
+      ],
+      "internal_motion": "Número estable, cantidades progresivas y demostración visible durante todo el paso.",
+      "editorial_text": [
+        "TEMPERATURA",
+        "Tibio, no fritura",
+        "45–60 °C",
+        "FUEGO MÍNIMO",
+        "ACEITE SIN HUMO"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "step3",
+      "start_sec": 446.46,
+      "end_sec": 465.34,
+      "phrase_anchor": "PASO 03 / 08 — Romero cubierto y calor bajo",
+      "narrative_intent": "Romero cubierto y calor bajo",
+      "indispensable_visual_information": [
+        "2 CUCHARADAS RASAS",
+        "30 MINUTOS · MOVER CADA 10"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb_new_add_rosemary",
+        "vbb_new_low_heat_stir"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "PASO 03 / 08",
+        "Romero cubierto y calor bajo",
+        "2 CUCHARADAS RASAS",
+        "30 MINUTOS · MOVER CADA 10"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "step4",
+      "start_sec": 465.34,
+      "end_sec": 482.58,
+      "phrase_anchor": "REPOSO — Apagar y esperar",
+      "narrative_intent": "Apagar y esperar",
+      "indispensable_visual_information": [
+        "15 MINUTOS",
+        "AMARILLO VERDOSO ≠ MÁS FUERTE"
+      ],
+      "shot_type": "step",
+      "primary_resource": [
+        "vbb_new_rest_15"
+      ],
+      "internal_motion": "Número estable, cantidades progresivas y demostración visible durante todo el paso.",
+      "editorial_text": [
+        "REPOSO",
+        "Apagar y esperar",
+        "15 MINUTOS",
+        "AMARILLO VERDOSO ≠ MÁS FUERTE"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "step5",
+      "start_sec": 482.58,
+      "end_sec": 499.54,
+      "phrase_anchor": "FILTRADO — Colar lentamente",
+      "narrative_intent": "Colar lentamente",
+      "indispensable_visual_information": [
+        "ACEITE TIBIO",
+        "SIN EXPRIMIR",
+        "SEGUNDA PASADA SI HACE FALTA"
+      ],
+      "shot_type": "step",
+      "primary_resource": [
+        "vbb_new_strain_oil"
+      ],
+      "internal_motion": "Número estable, cantidades progresivas y demostración visible durante todo el paso.",
+      "editorial_text": [
+        "FILTRADO",
+        "Colar lentamente",
+        "ACEITE TIBIO",
+        "SIN EXPRIMIR",
+        "SEGUNDA PASADA SI HACE FALTA"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "oil_done",
+      "start_sec": 499.54,
+      "end_sec": 512.36,
+      "phrase_anchor": "DOS CAMINOS — Aceite corporal o pomada",
+      "narrative_intent": "Aceite corporal o pomada",
+      "indispensable_visual_information": [],
+      "shot_type": "image",
+      "primary_resource": [
+        "vbb_new_dark_bottle"
+      ],
+      "internal_motion": "Ken Burns suave y cambio de foco hacia el sujeto nombrado.",
+      "editorial_text": [
+        "DOS CAMINOS",
+        "Aceite corporal o pomada"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "step6",
+      "start_sec": 512.36,
+      "end_sec": 527.42,
+      "phrase_anchor": "CONVERTIR EN POMADA — Derretir la cera",
+      "narrative_intent": "Derretir la cera",
+      "indispensable_visual_information": [
+        "10 G DE CERA",
+        "FUEGO MÍNIMO",
+        "NO COCINAR OTROS 30 MIN"
+      ],
+      "shot_type": "step",
+      "primary_resource": [
+        "vbb_new_melt_beeswax"
+      ],
+      "internal_motion": "Número estable, cantidades progresivas y demostración visible durante todo el paso.",
+      "editorial_text": [
+        "CONVERTIR EN POMADA",
+        "Derretir la cera",
+        "10 G DE CERA",
+        "FUEGO MÍNIMO",
+        "NO COCINAR OTROS 30 MIN"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "step7",
+      "start_sec": 527.42,
+      "end_sec": 545.98,
+      "phrase_anchor": "PRUEBA DE TEXTURA — Una cucharadita en plato frío",
+      "narrative_intent": "Una cucharadita en plato frío",
+      "indispensable_visual_information": [
+        "ESPERAR 2 MIN",
+        "MUY DURA → POCO ACEITE",
+        "MUY LÍQUIDA → 1–2 G CERA"
+      ],
+      "shot_type": "step",
+      "primary_resource": [
+        "vbb_new_cold_plate_test"
+      ],
+      "internal_motion": "Número estable, cantidades progresivas y demostración visible durante todo el paso.",
+      "editorial_text": [
+        "PRUEBA DE TEXTURA",
+        "Una cucharadita en plato frío",
+        "ESPERAR 2 MIN",
+        "MUY DURA → POCO ACEITE",
+        "MUY LÍQUIDA → 1–2 G CERA"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "step8",
+      "start_sec": 545.98,
+      "end_sec": 558.8,
+      "phrase_anchor": "ENVASADO — Frascos pequeños y abiertos",
+      "narrative_intent": "Frascos pequeños y abiertos",
+      "indispensable_visual_information": [
+        "LUGAR LIMPIO",
+        "LEJOS DE NIÑOS Y MASCOTAS",
+        "ESCRIBIR LA FECHA"
+      ],
+      "shot_type": "step",
+      "primary_resource": [
+        "vbb_new_jars_cooling"
+      ],
+      "internal_motion": "Número estable, cantidades progresivas y demostración visible durante todo el paso.",
+      "editorial_text": [
+        "ENVASADO",
+        "Frascos pequeños y abiertos",
+        "LUGAR LIMPIO",
+        "LEJOS DE NIÑOS Y MASCOTAS",
+        "ESCRIBIR LA FECHA"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "no_water",
+      "start_sec": 558.8,
+      "end_sec": 570.08,
+      "phrase_anchor": "NO LO MEZCLES — Agua + aceite sin conservante = producto inestable",
+      "narrative_intent": "Agua + aceite sin conservante = producto inestable",
+      "indispensable_visual_information": [
+        "Sin té de romero",
+        "Sin aloe fresco",
+        "Sin jugo de limón",
+        "Sin agua dentro del frasco"
+      ],
+      "shot_type": "alert",
+      "primary_resource": [],
+      "internal_motion": "Placa sobria con señales progresivas y pausa visual final.",
+      "editorial_text": [
+        "NO LO MEZCLES",
+        "Agua + aceite sin conservante = producto inestable",
+        "Sin té de romero",
+        "Sin aloe fresco",
+        "Sin jugo de limón",
+        "Sin agua dentro del frasco"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "storage",
+      "start_sec": 570.08,
+      "end_sec": 595.1,
+      "phrase_anchor": "CONSERVACIÓN PRUDENTE — Un lote pequeño y vigilado",
+      "narrative_intent": "Un lote pequeño y vigilado",
+      "indispensable_visual_information": [
+        "FECHAR EL FRASCO",
+        "MANOS Y ESPÁTULA SECAS",
+        "SI CAMBIA: DESCARTAR"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb_new_date_label",
+        "vbb_dyn_simple_products",
+        "vbb_new_discard_contaminated"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "CONSERVACIÓN PRUDENTE",
+        "Un lote pequeño y vigilado",
+        "FECHAR EL FRASCO",
+        "MANOS Y ESPÁTULA SECAS",
+        "SI CAMBIA: DESCARTAR"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "patch_video",
+      "start_sec": 595.1,
+      "end_sec": 603.4,
+      "phrase_anchor": "ANTES DEL PRIMER USO — Prueba en el antebrazo",
+      "narrative_intent": "Prueba en el antebrazo",
+      "indispensable_visual_information": [],
+      "shot_type": "image",
+      "primary_resource": [
+        "vbb2dyn_patch"
+      ],
+      "internal_motion": "Ken Burns suave y cambio de foco hacia el sujeto nombrado.",
+      "editorial_text": [
+        "ANTES DEL PRIMER USO",
+        "Prueba en el antebrazo"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "patch_rules",
+      "start_sec": 603.4,
+      "end_sec": 629.38,
+      "phrase_anchor": "PRUEBA DE PARCHE — Una zona pequeña durante 48 horas",
+      "narrative_intent": "Una zona pequeña durante 48 horas",
+      "indispensable_visual_information": [
+        "Medio grano de arroz",
+        "Área de 2 centímetros",
+        "Sin cubrir con plástico",
+        "Ardor, picazón o ronchas → lavar y suspender",
+        "La alergia puede aparecer al repetir"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [
+        "vbb_patch_test"
+      ],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "PRUEBA DE PARCHE",
+        "Una zona pequeña durante 48 horas",
+        "Medio grano de arroz",
+        "Área de 2 centímetros",
+        "Sin cubrir con plástico",
+        "Ardor, picazón o ronchas → lavar y suspender",
+        "La alergia puede aparecer al repetir"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "essential_compare",
+      "start_sec": 629.38,
+      "end_sec": 642.5,
+      "phrase_anchor": "NATURAL NO SIGNIFICA SUAVE — Macerado ≠ aceite esencial",
+      "narrative_intent": "Macerado ≠ aceite esencial",
+      "indispensable_visual_information": [
+        "HOJAS SECAS MACERADAS",
+        "ACEITE ESENCIAL CONCENTRADO"
+      ],
+      "shot_type": "compare",
+      "primary_resource": [
+        "vbb_new_dark_bottle",
+        "vbb_infusion_vs_oil"
+      ],
+      "internal_motion": "Dos estados permanecen juntos; divisor central y diferencia explícita.",
+      "editorial_text": [
+        "NATURAL NO SIGNIFICA SUAVE",
+        "Macerado ≠ aceite esencial",
+        "HOJAS SECAS MACERADAS",
+        "ACEITE ESENCIAL CONCENTRADO"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "essential_warn",
+      "start_sec": 642.5,
+      "end_sec": 651.5,
+      "phrase_anchor": "NO LO HAGAS “MÁS FUERTE” — Nunca puro sobre la piel",
+      "narrative_intent": "Nunca puro sobre la piel",
+      "indispensable_visual_information": [],
+      "shot_type": "image",
+      "primary_resource": [
+        "vbb_dyn_dropper"
+      ],
+      "internal_motion": "Ken Burns suave y cambio de foco hacia el sujeto nombrado.",
+      "editorial_text": [
+        "NO LO HAGAS “MÁS FUERTE”",
+        "Nunca puro sobre la piel"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "promise1",
+      "start_sec": 659.5,
+      "end_sec": 681,
+      "phrase_anchor": "PROMESA 01 / 05 — “Borra venitas y barre sangre estancada”",
+      "narrative_intent": "“Borra venitas y barre sangre estancada”",
+      "indispensable_visual_information": [
+        "Masaje suave: sensación agradable",
+        "Mover tobillos",
+        "Caminar",
+        "Elevar las piernas"
+      ],
+      "shot_type": "promise",
+      "primary_resource": [
+        "vbb_new_spider_veins"
+      ],
+      "internal_motion": "La promesa aparece primero; el veredicto y los límites se revelan después.",
+      "editorial_text": [
+        "PROMESA 01 / 05",
+        "“Borra venitas y barre sangre estancada”",
+        "Masaje suave: sensación agradable",
+        "Mover tobillos",
+        "Caminar",
+        "Elevar las piernas"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "carmen",
+      "start_sec": 696.74,
+      "end_sec": 726.2,
+      "phrase_anchor": "EL CASO DE CARMEN — Alivio de cansancio ≠ vena borrada",
+      "narrative_intent": "Alivio de cansancio ≠ vena borrada",
+      "indispensable_visual_information": [
+        "SEIS HORAS DE PIE",
+        "MASAJE MUY SUAVE · 3 MIN",
+        "MISMA LUZ PARA COMPARAR"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb3_older_standing_legs",
+        "vbb3_leg_massage",
+        "vbb_dyn_phone_photo"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "EL CASO DE CARMEN",
+        "Alivio de cansancio ≠ vena borrada",
+        "SEIS HORAS DE PIE",
+        "MASAJE MUY SUAVE · 3 MIN",
+        "MISMA LUZ PARA COMPARAR"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "leg_alert",
+      "start_sec": 726.2,
+      "end_sec": 750.1,
+      "phrase_anchor": "NO MASAJEAR — Una sola pierna cambia de repente",
+      "narrative_intent": "Una sola pierna cambia de repente",
+      "indispensable_visual_information": [
+        "Hinchazón unilateral",
+        "Calor y enrojecimiento",
+        "Dolor intenso",
+        "Falta de aire o dolor de pecho → urgencia",
+        "Úlcera, piel abierta o secreción"
+      ],
+      "shot_type": "alert",
+      "primary_resource": [],
+      "internal_motion": "Placa sobria con señales progresivas y pausa visual final.",
+      "editorial_text": [
+        "NO MASAJEAR",
+        "Una sola pierna cambia de repente",
+        "Hinchazón unilateral",
+        "Calor y enrojecimiento",
+        "Dolor intenso",
+        "Falta de aire o dolor de pecho → urgencia",
+        "Úlcera, piel abierta o secreción"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "promise2",
+      "start_sec": 750.1,
+      "end_sec": 779.46,
+      "phrase_anchor": "PROMESA 02 / 05 — “Estimula colágeno como toxina botulínica”",
+      "narrative_intent": "“Estimula colágeno como toxina botulínica”",
+      "indispensable_visual_information": [
+        "Antioxidante en laboratorio ≠ efecto clínico",
+        "No plancha una arruga profunda",
+        "Hidratación sí puede suavizar líneas finas"
+      ],
+      "shot_type": "promise",
+      "primary_resource": [
+        "vbb_wrinkle_macro"
+      ],
+      "internal_motion": "La promesa aparece primero; el veredicto y los límites se revelan después.",
+      "editorial_text": [
+        "PROMESA 02 / 05",
+        "“Estimula colágeno como toxina botulínica”",
+        "Antioxidante en laboratorio ≠ efecto clínico",
+        "No plancha una arruga profunda",
+        "Hidratación sí puede suavizar líneas finas"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "occlusion",
+      "start_sec": 779.46,
+      "end_sec": 801.56,
+      "phrase_anchor": "LO QUE SÍ PUEDE PASAR — Menos pérdida de agua",
+      "narrative_intent": "Menos pérdida de agua",
+      "indispensable_visual_information": [
+        "PELÍCULA ACEITOSA",
+        "MENOS EVAPORACIÓN",
+        "MÁS FLEXIBILIDAD",
+        "NO REJUVENECIMIENTO DE 20 AÑOS"
+      ],
+      "shot_type": "mechanism",
+      "primary_resource": [
+        "vbb_new_skin_barrier"
+      ],
+      "internal_motion": "Nodos y relaciones aparecen por etapas sin cambiar de tema.",
+      "editorial_text": [
+        "LO QUE SÍ PUEDE PASAR",
+        "Menos pérdida de agua",
+        "PELÍCULA ACEITOSA",
+        "MENOS EVAPORACIÓN",
+        "MÁS FLEXIBILIDAD",
+        "NO REJUVENECIMIENTO DE 20 AÑOS"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "dry_skin_use",
+      "start_sec": 801.56,
+      "end_sec": 823.5,
+      "phrase_anchor": "PARA PIEL SECA — Poca cantidad sobre piel apenas húmeda",
+      "narrative_intent": "Poca cantidad sobre piel apenas húmeda",
+      "indispensable_visual_information": [
+        "AGUA TIBIA",
+        "PELÍCULA FINA",
+        "UNA CAPA GRUESA NO HACE 10 VECES MÁS"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb_dyn_water",
+        "vbb_dyn_moisturizer",
+        "vbb_dyn_calm_skin"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "PARA PIEL SECA",
+        "Poca cantidad sobre piel apenas húmeda",
+        "AGUA TIBIA",
+        "PELÍCULA FINA",
+        "UNA CAPA GRUESA NO HACE 10 VECES MÁS"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "spots",
+      "start_sec": 834.78,
+      "end_sec": 847.5,
+      "phrase_anchor": "LAS MANCHAS — Irritar puede oscurecer",
+      "narrative_intent": "Irritar puede oscurecer",
+      "indispensable_visual_information": [
+        "NO SE ACLARAN CON ACEITE",
+        "PROTECCIÓN SOLAR DIARIA"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb_dyn_age_spots",
+        "vbb_dyn_sunscreen"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "LAS MANCHAS",
+        "Irritar puede oscurecer",
+        "NO SE ACLARAN CON ACEITE",
+        "PROTECCIÓN SOLAR DIARIA"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "lesion_alert",
+      "start_sec": 847.5,
+      "end_sec": 865.82,
+      "phrase_anchor": "UNA MANCHA QUE CAMBIA — No se trata con pomada",
+      "narrative_intent": "No se trata con pomada",
+      "indispensable_visual_information": [
+        "Forma o color nuevos",
+        "Aumento de tamaño",
+        "Sangrado",
+        "No cicatriza",
+        "Revisión profesional"
+      ],
+      "shot_type": "alert",
+      "primary_resource": [
+        "vbb_dermatologist_consult"
+      ],
+      "internal_motion": "Placa sobria con señales progresivas y pausa visual final.",
+      "editorial_text": [
+        "UNA MANCHA QUE CAMBIA",
+        "No se trata con pomada",
+        "Forma o color nuevos",
+        "Aumento de tamaño",
+        "Sangrado",
+        "No cicatriza",
+        "Revisión profesional"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "under_eye_alert",
+      "start_sec": 875,
+      "end_sec": 888.94,
+      "phrase_anchor": "PROMESA 03 / 05 — No coloques romero bajo los ojos",
+      "narrative_intent": "No coloques romero bajo los ojos",
+      "indispensable_visual_information": [
+        "Párpado muy fino",
+        "Riesgo de hinchazón",
+        "Ardor periocular",
+        "Suspender de inmediato"
+      ],
+      "shot_type": "alert",
+      "primary_resource": [],
+      "internal_motion": "Placa sobria con señales progresivas y pausa visual final.",
+      "editorial_text": [
+        "PROMESA 03 / 05",
+        "No coloques romero bajo los ojos",
+        "Párpado muy fino",
+        "Riesgo de hinchazón",
+        "Ardor periocular",
+        "Suspender de inmediato"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "dark_circle_causes",
+      "start_sec": 888.94,
+      "end_sec": 905.18,
+      "phrase_anchor": "OJERAS ≠ UNA SOLA CAUSA — Una receta única no puede borrarlas todas",
+      "narrative_intent": "Una receta única no puede borrarlas todas",
+      "indispensable_visual_information": [
+        "Pigmento",
+        "Vasos visibles",
+        "Anatomía del surco",
+        "Alergia y frotamiento",
+        "Retención de líquido",
+        "Falta de sueño"
+      ],
+      "shot_type": "mechanism",
+      "primary_resource": [],
+      "internal_motion": "Nodos y relaciones aparecen por etapas sin cambiar de tema.",
+      "editorial_text": [
+        "OJERAS ≠ UNA SOLA CAUSA",
+        "Una receta única no puede borrarlas todas",
+        "Pigmento",
+        "Vasos visibles",
+        "Anatomía del surco",
+        "Alergia y frotamiento",
+        "Retención de líquido",
+        "Falta de sueño"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "cold_compress",
+      "start_sec": 905.18,
+      "end_sec": 925.5,
+      "phrase_anchor": "ALTERNATIVA CASERA SEGURA — Dos gasas con agua fría",
+      "narrative_intent": "Dos gasas con agua fría",
+      "indispensable_visual_information": [
+        "AGUA FRÍA",
+        "5 MINUTOS",
+        "SIN HIELO DIRECTO",
+        "SIN LIMÓN NI ACEITES"
+      ],
+      "shot_type": "step",
+      "primary_resource": [
+        "vbb_new_under_eye_safe"
+      ],
+      "internal_motion": "Número estable, cantidades progresivas y demostración visible durante todo el paso.",
+      "editorial_text": [
+        "ALTERNATIVA CASERA SEGURA",
+        "Dos gasas con agua fría",
+        "AGUA FRÍA",
+        "5 MINUTOS",
+        "SIN HIELO DIRECTO",
+        "SIN LIMÓN NI ACEITES"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "eye_alert",
+      "start_sec": 925.5,
+      "end_sec": 940.8,
+      "phrase_anchor": "CONSULTAR — Cuando una bolsa no es solo cansancio",
+      "narrative_intent": "Cuando una bolsa no es solo cansancio",
+      "indispensable_visual_information": [
+        "Persiste",
+        "Aparece de un solo lado",
+        "Duele o afecta la visión",
+        "Falta de aire o hinchazón general"
+      ],
+      "shot_type": "alert",
+      "primary_resource": [],
+      "internal_motion": "Placa sobria con señales progresivas y pausa visual final.",
+      "editorial_text": [
+        "CONSULTAR",
+        "Cuando una bolsa no es solo cansancio",
+        "Persiste",
+        "Aparece de un solo lado",
+        "Duele o afecta la visión",
+        "Falta de aire o hinchazón general"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "promise4",
+      "start_sec": 940.8,
+      "end_sec": 967.86,
+      "phrase_anchor": "PROMESA 04 / 05 — “Bloquea dolor y desinflama cartílago”",
+      "narrative_intent": "“Bloquea dolor y desinflama cartílago”",
+      "indispensable_visual_information": [
+        "Calor y aroma",
+        "Masaje",
+        "Descanso",
+        "Alivio temporal"
+      ],
+      "shot_type": "promise",
+      "primary_resource": [
+        "vbb_new_joint_relief"
+      ],
+      "internal_motion": "La promesa aparece primero; el veredicto y los límites se revelan después.",
+      "editorial_text": [
+        "PROMESA 04 / 05",
+        "“Bloquea dolor y desinflama cartílago”",
+        "Calor y aroma",
+        "Masaje",
+        "Descanso",
+        "Alivio temporal"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "shoulder_use",
+      "start_sec": 967.86,
+      "end_sec": 981.2,
+      "phrase_anchor": "MOLESTIA LEVE — Capa fina · 3 a 5 minutos",
+      "narrative_intent": "Capa fina · 3 a 5 minutos",
+      "indispensable_visual_information": [],
+      "shot_type": "image",
+      "primary_resource": [
+        "vbb3_shoulder_massage"
+      ],
+      "internal_motion": "Ken Burns suave y cambio de foco hacia el sujeto nombrado.",
+      "editorial_text": [
+        "MOLESTIA LEVE",
+        "Capa fina · 3 a 5 minutos"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "no_heat",
+      "start_sec": 981.2,
+      "end_sec": 989.82,
+      "phrase_anchor": "NO AUMENTES EL CALOR — Sin plástico, venda apretada ni almohadilla caliente",
+      "narrative_intent": "Sin plástico, venda apretada ni almohadilla caliente",
+      "indispensable_visual_information": [],
+      "shot_type": "alert",
+      "primary_resource": [],
+      "internal_motion": "Placa sobria con señales progresivas y pausa visual final.",
+      "editorial_text": [
+        "NO AUMENTES EL CALOR",
+        "Sin plástico, venda apretada ni almohadilla caliente"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "joint_alert",
+      "start_sec": 989.82,
+      "end_sec": 1015.18,
+      "phrase_anchor": "NO LO TRATES COMO CONTRACTURA — Una articulación puede necesitar diagnóstico",
+      "narrative_intent": "Una articulación puede necesitar diagnóstico",
+      "indispensable_visual_information": [
+        "Muy roja o caliente",
+        "Hinchada o deformada",
+        "Después de una caída",
+        "Dolor nocturno persistente",
+        "Fiebre, debilidad o pérdida de sensibilidad"
+      ],
+      "shot_type": "alert",
+      "primary_resource": [],
+      "internal_motion": "Placa sobria con señales progresivas y pausa visual final.",
+      "editorial_text": [
+        "NO LO TRATES COMO CONTRACTURA",
+        "Una articulación puede necesitar diagnóstico",
+        "Muy roja o caliente",
+        "Hinchada o deformada",
+        "Después de una caída",
+        "Dolor nocturno persistente",
+        "Fiebre, debilidad o pérdida de sensibilidad"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "jose",
+      "start_sec": 1015.18,
+      "end_sec": 1026,
+      "phrase_anchor": "EL CASO DE JOSÉ — Hombro tenso después del jardín",
+      "narrative_intent": "Hombro tenso después del jardín",
+      "indispensable_visual_information": [],
+      "shot_type": "image",
+      "primary_resource": [
+        "vbb_new_joint_relief"
+      ],
+      "internal_motion": "Ken Burns suave y cambio de foco hacia el sujeto nombrado.",
+      "editorial_text": [
+        "EL CASO DE JOSÉ",
+        "Hombro tenso después del jardín"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "chest_alert",
+      "start_sec": 1026,
+      "end_sec": 1039.94,
+      "phrase_anchor": "EL CONTEXTO CAMBIA TODO — Dolor al brazo + presión en pecho = pedir ayuda",
+      "narrative_intent": "Dolor al brazo + presión en pecho = pedir ayuda",
+      "indispensable_visual_information": [
+        "Sudor frío",
+        "Falta de aire",
+        "No buscar primero el frasco"
+      ],
+      "shot_type": "alert",
+      "primary_resource": [],
+      "internal_motion": "Placa sobria con señales progresivas y pausa visual final.",
+      "editorial_text": [
+        "EL CONTEXTO CAMBIA TODO",
+        "Dolor al brazo + presión en pecho = pedir ayuda",
+        "Sudor frío",
+        "Falta de aire",
+        "No buscar primero el frasco"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "promise5",
+      "start_sec": 1039.94,
+      "end_sec": 1068.9,
+      "phrase_anchor": "PROMESA 05 / 05 — “Mata hongos, cierra grietas y cura heridas”",
+      "narrative_intent": "“Mata hongos, cierra grietas y cura heridas”",
+      "indispensable_visual_information": [
+        "Uña engrosada: varias causas",
+        "Grieta profunda: puede infectarse",
+        "Pie diabético: no esperar"
+      ],
+      "shot_type": "promise",
+      "primary_resource": [
+        "vbb_new_closed_heel"
+      ],
+      "internal_motion": "La promesa aparece primero; el veredicto y los límites se revelan después.",
+      "editorial_text": [
+        "PROMESA 05 / 05",
+        "“Mata hongos, cierra grietas y cura heridas”",
+        "Uña engrosada: varias causas",
+        "Grieta profunda: puede infectarse",
+        "Pie diabético: no esperar"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "wound_alert",
+      "start_sec": 1068.9,
+      "end_sec": 1099.72,
+      "phrase_anchor": "SOLO PIEL INTACTA — Nunca sobre una herida o infección",
+      "narrative_intent": "Nunca sobre una herida o infección",
+      "indispensable_visual_information": [
+        "No en quemadura o ampolla rota",
+        "No en úlcera, pus o secreción",
+        "No entre dedos húmedos del pie",
+        "Talón seco y cerrado: capa fina",
+        "Diabetes o enrojecimiento que avanza → consultar"
+      ],
+      "shot_type": "alert",
+      "primary_resource": [
+        "vbb_new_closed_heel"
+      ],
+      "internal_motion": "Placa sobria con señales progresivas y pausa visual final.",
+      "editorial_text": [
+        "SOLO PIEL INTACTA",
+        "Nunca sobre una herida o infección",
+        "No en quemadura o ampolla rota",
+        "No en úlcera, pus o secreción",
+        "No entre dedos húmedos del pie",
+        "Talón seco y cerrado: capa fina",
+        "Diabetes o enrojecimiento que avanza → consultar"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "three_uses_chapter",
+      "start_sec": 1123.86,
+      "end_sec": 1127.28,
+      "phrase_anchor": "UNA MISMA PREPARACIÓN — Tres usos concretos",
+      "narrative_intent": "Tres usos concretos",
+      "indispensable_visual_information": [],
+      "shot_type": "chapter",
+      "primary_resource": [],
+      "internal_motion": "Entrada de capítulo por profundidad y jerarquía tipográfica.",
+      "editorial_text": [
+        "UNA MISMA PREPARACIÓN",
+        "Tres usos concretos"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "hands_use",
+      "start_sec": 1127.28,
+      "end_sec": 1157.26,
+      "phrase_anchor": "MANERA 01 / 03 — Manos y codos secos",
+      "narrative_intent": "Manos y codos secos",
+      "indispensable_visual_information": [
+        "LAVAR CON AGUA TIBIA",
+        "SECAR SIN FROTAR",
+        "PELÍCULA FINA",
+        "ALGODÓN HOLGADO SOLO SI YA TOLERÓ"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb2dyn_face_wash",
+        "vbb_dyn_hands_history",
+        "vbb_stock_moisturize",
+        "vbb_mature_hands_history"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "MANERA 01 / 03",
+        "Manos y codos secos",
+        "LAVAR CON AGUA TIBIA",
+        "SECAR SIN FROTAR",
+        "PELÍCULA FINA",
+        "ALGODÓN HOLGADO SOLO SI YA TOLERÓ"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "massage_use",
+      "start_sec": 1157.26,
+      "end_sec": 1185.54,
+      "phrase_anchor": "MANERA 02 / 03 — Masaje corporal",
+      "narrative_intent": "Masaje corporal",
+      "indispensable_visual_information": [
+        "MEDIA A UNA CUCHARADITA",
+        "10 MOVIMIENTOS DE TOBILLO",
+        "CAMINATA BREVE",
+        "PIERNAS ELEVADAS"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb2dyn_age_spots",
+        "vbb3_ankle_exercise",
+        "vbb3_walking_senior",
+        "vbb3_legs_elevated"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "MANERA 02 / 03",
+        "Masaje corporal",
+        "MEDIA A UNA CUCHARADITA",
+        "10 MOVIMIENTOS DE TOBILLO",
+        "CAMINATA BREVE",
+        "PIERNAS ELEVADAS"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "legs_use",
+      "start_sec": 1185.54,
+      "end_sec": 1208.44,
+      "phrase_anchor": "MANERA 03 / 03 — Piel seca de las piernas",
+      "narrative_intent": "Piel seca de las piernas",
+      "indispensable_visual_information": [
+        "DESPUÉS DE LA DUCHA",
+        "CAPA FINA SOBRE PIEL HÚMEDA",
+        "NO ANTES DEL SOL"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb2dyn_water",
+        "vbb_stock_sunscreen",
+        "vbb2dyn_sun_face"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "MANERA 03 / 03",
+        "Piel seca de las piernas",
+        "DESPUÉS DE LA DUCHA",
+        "CAPA FINA SOBRE PIEL HÚMEDA",
+        "NO ANTES DEL SOL"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "face_caution",
+      "start_sec": 1217,
+      "end_sec": 1240.86,
+      "phrase_anchor": "SI AUN ASÍ QUIERES PROBAR EN EL ROSTRO — Un punto junto a la mandíbula",
+      "narrative_intent": "Un punto junto a la mandíbula",
+      "indispensable_visual_information": [
+        "Nunca párpado ni contorno de ojos",
+        "Cantidad casi invisible",
+        "Una sola noche",
+        "Observar durante dos días",
+        "Sin retinoides, ácidos, exfoliantes ni perfumes"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [
+        "vbb_patch_test"
+      ],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "SI AUN ASÍ QUIERES PROBAR EN EL ROSTRO",
+        "Un punto junto a la mandíbula",
+        "Nunca párpado ni contorno de ojos",
+        "Cantidad casi invisible",
+        "Una sola noche",
+        "Observar durante dos días",
+        "Sin retinoides, ácidos, exfoliantes ni perfumes"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "plan_title",
+      "start_sec": 1240.86,
+      "end_sec": 1242.88,
+      "phrase_anchor": "SEGUIMIENTO REALISTA — Plan de 14 días",
+      "narrative_intent": "Plan de 14 días",
+      "indispensable_visual_information": [],
+      "shot_type": "chapter",
+      "primary_resource": [],
+      "internal_motion": "Entrada de capítulo por profundidad y jerarquía tipográfica.",
+      "editorial_text": [
+        "SEGUIMIENTO REALISTA",
+        "Plan de 14 días"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "day0",
+      "start_sec": 1242.88,
+      "end_sec": 1252.36,
+      "phrase_anchor": "DÍA 0 — Prueba de parche",
+      "narrative_intent": "Prueba de parche",
+      "indispensable_visual_information": [],
+      "shot_type": "calendar",
+      "primary_resource": [],
+      "internal_motion": "Avance temporal de día 0 a día 14.",
+      "editorial_text": [
+        "DÍA 0",
+        "Prueba de parche"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "days13",
+      "start_sec": 1252.36,
+      "end_sec": 1268.96,
+      "phrase_anchor": "DÍAS 1 · 2 · 3 — Una sola zona pequeña",
+      "narrative_intent": "Una sola zona pequeña",
+      "indispensable_visual_information": [
+        "Un codo o dorso de una mano",
+        "Una aplicación diaria",
+        "No cambiar jabón, perfume y crema juntos"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "DÍAS 1 · 2 · 3",
+        "Una sola zona pequeña",
+        "Un codo o dorso de una mano",
+        "Una aplicación diaria",
+        "No cambiar jabón, perfume y crema juntos"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "days47",
+      "start_sec": 1268.96,
+      "end_sec": 1285.2,
+      "phrase_anchor": "DÍAS 4 A 7 — Medir comodidad, no juventud",
+      "narrative_intent": "Medir comodidad, no juventud",
+      "indispensable_visual_information": [
+        "Tirantez",
+        "Picazón",
+        "Comodidad",
+        "Escala de 0 a 10"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [
+        "vbb3_calendar_journal"
+      ],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "DÍAS 4 A 7",
+        "Medir comodidad, no juventud",
+        "Tirantez",
+        "Picazón",
+        "Comodidad",
+        "Escala de 0 a 10"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "day7photo",
+      "start_sec": 1285.2,
+      "end_sec": 1302.68,
+      "phrase_anchor": "DÍA 7 · FOTO COMPARABLE — Misma luz, distancia y postura",
+      "narrative_intent": "Misma luz, distancia y postura",
+      "indispensable_visual_information": [
+        "SIN FILTRO NI ACEITE",
+        "MISMA CONDICIÓN"
+      ],
+      "shot_type": "compare",
+      "primary_resource": [
+        "vbb_stock_phone",
+        "vbb_new_same_light_photos"
+      ],
+      "internal_motion": "Dos estados permanecen juntos; divisor central y diferencia explícita.",
+      "editorial_text": [
+        "DÍA 7 · FOTO COMPARABLE",
+        "Misma luz, distancia y postura",
+        "SIN FILTRO NI ACEITE",
+        "MISMA CONDICIÓN"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "week2",
+      "start_sec": 1302.68,
+      "end_sec": 1322.8,
+      "phrase_anchor": "SEGUNDA SEMANA — Mantener la misma cantidad",
+      "narrative_intent": "Mantener la misma cantidad",
+      "indispensable_visual_information": [
+        "No duplicar porque “ya me acostumbré”",
+        "Registrar cuánto dura el alivio",
+        "No ocultar un dolor que empeora"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [
+        "vbb_new_symptom_journal"
+      ],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "SEGUNDA SEMANA",
+        "Mantener la misma cantidad",
+        "No duplicar porque “ya me acostumbré”",
+        "Registrar cuánto dura el alivio",
+        "No ocultar un dolor que empeora"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "day14",
+      "start_sec": 1322.8,
+      "end_sec": 1347.44,
+      "phrase_anchor": "DÍA 14 — Tres preguntas honestas",
+      "narrative_intent": "Tres preguntas honestas",
+      "indispensable_visual_information": [
+        "¿La piel está más cómoda?",
+        "¿Apareció irritación?",
+        "¿El ritual ayuda sin reemplazar algo importante?",
+        "Si no aporta: no concentrar ni duplicar"
+      ],
+      "shot_type": "checklist",
+      "primary_resource": [],
+      "internal_motion": "Revelación escalonada; cada punto entra cuando la voz lo justifica.",
+      "editorial_text": [
+        "DÍA 14",
+        "Tres preguntas honestas",
+        "¿La piel está más cómoda?",
+        "¿Apareció irritación?",
+        "¿El ritual ayuda sin reemplazar algo importante?",
+        "Si no aporta: no concentrar ni duplicar"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "errors_title",
+      "start_sec": 1347.44,
+      "end_sec": 1352.16,
+      "phrase_anchor": "LA PARTE QUE SALVA EL RESULTADO — Siete errores",
+      "narrative_intent": "Siete errores",
+      "indispensable_visual_information": [],
+      "shot_type": "chapter",
+      "primary_resource": [],
+      "internal_motion": "Entrada de capítulo por profundidad y jerarquía tipográfica.",
+      "editorial_text": [
+        "LA PARTE QUE SALVA EL RESULTADO",
+        "Siete errores"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "error1",
+      "start_sec": 1352.16,
+      "end_sec": 1360.26,
+      "phrase_anchor": "ERROR 01 / 07 — Romero fresco mojado + meses guardado",
+      "narrative_intent": "Romero fresco mojado + meses guardado",
+      "indispensable_visual_information": [],
+      "shot_type": "error",
+      "primary_resource": [
+        "vbb2_wash_sprig"
+      ],
+      "internal_motion": "Número dominante, acción equivocada y corrección visual inmediata.",
+      "editorial_text": [
+        "ERROR 01 / 07",
+        "Romero fresco mojado + meses guardado"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "error2",
+      "start_sec": 1360.26,
+      "end_sec": 1367.72,
+      "phrase_anchor": "ERROR 02 / 07 — Freír las hojas",
+      "narrative_intent": "Freír las hojas",
+      "indispensable_visual_information": [],
+      "shot_type": "error",
+      "primary_resource": [
+        "vbb_dyn_kettle"
+      ],
+      "internal_motion": "Número dominante, acción equivocada y corrección visual inmediata.",
+      "editorial_text": [
+        "ERROR 02 / 07",
+        "Freír las hojas"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "error3",
+      "start_sec": 1367.72,
+      "end_sec": 1377.08,
+      "phrase_anchor": "ERROR 03 / 07 — Agregar esencia “a ojo”",
+      "narrative_intent": "Agregar esencia “a ojo”",
+      "indispensable_visual_information": [],
+      "shot_type": "error",
+      "primary_resource": [
+        "vbb_dyn_cosmetic_shelf"
+      ],
+      "internal_motion": "Número dominante, acción equivocada y corrección visual inmediata.",
+      "editorial_text": [
+        "ERROR 03 / 07",
+        "Agregar esencia “a ojo”"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "error4",
+      "start_sec": 1377.08,
+      "end_sec": 1387.22,
+      "phrase_anchor": "ERROR 04 / 07 — La mezcla que puede quemar",
+      "narrative_intent": "La mezcla que puede quemar",
+      "indispensable_visual_information": [
+        "LIMÓN",
+        "BICARBONATO",
+        "MEZCLA IMPROVISADA"
+      ],
+      "shot_type": "montage",
+      "primary_resource": [
+        "vbb_dyn_lemon",
+        "vbb_dyn_baking_soda",
+        "vbb_dyn_kitchen_mix"
+      ],
+      "internal_motion": "Cortes por cambio semántico; cada recurso tiene movimiento natural y encuadre progresivo.",
+      "editorial_text": [
+        "ERROR 04 / 07",
+        "La mezcla que puede quemar",
+        "LIMÓN",
+        "BICARBONATO",
+        "MEZCLA IMPROVISADA"
+      ],
+      "transition_in": "Corte limpio motivado por cambio de sujeto.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    },
+    {
+      "id": "error5",
+      "start_sec": 1387.22,
+      "end_sec": 1392.3,
+      "phrase_anchor": "ERROR 05 / 07 — Cerca de ojos o mucosas",
+      "narrative_intent": "Cerca de ojos o mucosas",
+      "indispensable_visual_information": [],
+      "shot_type": "error",
+      "primary_resource": [
+        "vbb_dyn_cotton_rub"
+      ],
+      "internal_motion": "Número dominante, acción equivocada y corrección visual inmediata.",
+      "editorial_text": [
+        "ERROR 05 / 07",
+        "Cerca de ojos o mucosas"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "error6",
+      "start_sec": 1392.3,
+      "end_sec": 1399.02,
+      "phrase_anchor": "ERROR 06 / 07 — Sobre herida, hongo o infección",
+      "narrative_intent": "Sobre herida, hongo o infección",
+      "indispensable_visual_information": [],
+      "shot_type": "error",
+      "primary_resource": [
+        "vbb2dyn_derm_consult"
+      ],
+      "internal_motion": "Número dominante, acción equivocada y corrección visual inmediata.",
+      "editorial_text": [
+        "ERROR 06 / 07",
+        "Sobre herida, hongo o infección"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "error7",
+      "start_sec": 1399.02,
+      "end_sec": 1409.48,
+      "phrase_anchor": "ERROR 07 / 07 — Creer que arder significa funcionar",
+      "narrative_intent": "Creer que arder significa funcionar",
+      "indispensable_visual_information": [],
+      "shot_type": "error",
+      "primary_resource": [
+        "vbb_dyn_red_skin"
+      ],
+      "internal_motion": "Número dominante, acción equivocada y corrección visual inmediata.",
+      "editorial_text": [
+        "ERROR 07 / 07",
+        "Creer que arder significa funcionar"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "reaction",
+      "start_sec": 1409.48,
+      "end_sec": 1430.12,
+      "phrase_anchor": "SI OCURRE UNA REACCIÓN — Retirar, lavar y no neutralizar",
+      "narrative_intent": "Retirar, lavar y no neutralizar",
+      "indispensable_visual_information": [
+        "Agua + limpiador ya tolerado",
+        "No agregar otra mezcla casera",
+        "Ampollas o hinchazón importante → ayuda",
+        "En el ojo: abundante agua limpia"
+      ],
+      "shot_type": "alert",
+      "primary_resource": [
+        "vbb_dyn_face_rinse"
+      ],
+      "internal_motion": "Placa sobria con señales progresivas y pausa visual final.",
+      "editorial_text": [
+        "SI OCURRE UNA REACCIÓN",
+        "Retirar, lavar y no neutralizar",
+        "Agua + limpiador ya tolerado",
+        "No agregar otra mezcla casera",
+        "Ampollas o hinchazón importante → ayuda",
+        "En el ojo: abundante agua limpia"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "La acción peligrosa o exagerada debe leerse como negada, nunca como recomendación."
+    },
+    {
+      "id": "recipe_recap",
+      "start_sec": 1451.76,
+      "end_sec": 1470.7,
+      "phrase_anchor": "LA RECETA COMPLETA — No son solo dos ingredientes",
+      "narrative_intent": "No son solo dos ingredientes",
+      "indispensable_visual_information": [
+        "ROMERO SECO",
+        "CALOR SUAVE",
+        "UTENSILIOS SIN AGUA",
+        "LOTE PEQUEÑO",
+        "PRUEBA DE PARCHE",
+        "EXPECTATIVAS HONESTAS"
+      ],
+      "shot_type": "mechanism",
+      "primary_resource": [
+        "vbb_new_recipe_ingredients"
+      ],
+      "internal_motion": "Nodos y relaciones aparecen por etapas sin cambiar de tema.",
+      "editorial_text": [
+        "LA RECETA COMPLETA",
+        "No son solo dos ingredientes",
+        "ROMERO SECO",
+        "CALOR SUAVE",
+        "UTENSILIOS SIN AGUA",
+        "LOTE PEQUEÑO",
+        "PRUEBA DE PARCHE",
+        "EXPECTATIVAS HONESTAS"
+      ],
+      "transition_in": "Corte limpio o transformación de profundidad en límite semántico.",
+      "transition_out": "Salida al completar la unidad de voz; nunca a mitad de palabra o gesto.",
+      "retention_reason": "Representa la idea pronunciada y agrega una revelación visual funcional.",
+      "mismatch_risk": "No adelantar el siguiente concepto ni mantener el recurso cuando la voz ya cambió de tema."
+    }
+  ]
+}

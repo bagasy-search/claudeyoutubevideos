@@ -18,7 +18,14 @@ if (!slug) {
 }
 const root = process.cwd();
 const exe = path.join(root, "whisper_cuda", "Release", "whisper-cli.exe");
-const model = path.join(root, "whisper.cpp", "ggml-medium.en.bin");
+// Idioma por env (default español para los videos del usuario). El modelo .en SOLO
+// sirve para inglés; para español/multilingüe hay que usar ggml-medium.bin.
+const LANG = process.env.WHISPER_LANG || "es";
+const model = path.join(
+  root,
+  "whisper.cpp",
+  LANG === "en" ? "ggml-medium.en.bin" : "ggml-medium.bin",
+);
 let wav = path.join(root, "public", `${slug}_16k.wav`);
 if (!fs.existsSync(wav)) wav = path.join(root, "public", `${slug}.wav`);
 for (const [label, p] of [["exe", exe], ["model", model], ["wav", wav]]) {
@@ -34,7 +41,7 @@ const t0 = Date.now();
 // -ml 1 -sow = un segmento por palabra (timestamps por palabra); -oj = JSON; -of = base salida
 execFileSync(
   exe,
-  ["-m", model, "-f", wav, "-t", "8", "-ml", "1", "-sow", "-oj", "-of", tmpBase, "-l", "en"],
+  ["-m", model, "-f", wav, "-t", "8", "-ml", "1", "-sow", "-oj", "-of", tmpBase, "-l", LANG],
   { stdio: ["ignore", "inherit", "inherit"] },
 );
 const secs = ((Date.now() - t0) / 1000).toFixed(1);

@@ -1,0 +1,2297 @@
+{
+ "video": "rayones",
+ "avatar": "rayones_opt.mp4",
+ "tutorial": true,
+ "clipsfirst": true,
+ "beats": [
+  {
+   "id": "ra_finger_scratch_paint",
+   "start": 1.19,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/ra_finger_scratch_paint.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_worried_owner_scratch",
+   "start": 4.09,
+   "dur": 1.69,
+   "kind": "raw",
+   "src": "broll/ra_worried_owner_scratch.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_save_a_fortune",
+   "start": 5.48,
+   "dur": 3.3,
+   "kind": "raw",
+   "src": "real/ra_fill_save_a_fortune.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_charge_200_500",
+   "start": 8.48,
+   "dur": 5.42,
+   "kind": "raw",
+   "src": "real/ra_fill_charge_200_500.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_body_shop_repaint_panel",
+   "start": 13.6,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_body_shop_repaint_panel.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_bars_st_14",
+   "start": 13.6,
+   "dur": 6.5,
+   "kind": "bars",
+   "hue": "red",
+   "title": "Lo que pagás de más",
+   "bars": [
+    {
+     "label": "Repintar el panel entero",
+     "value": 100,
+     "display": "$500",
+     "tone": "danger"
+    },
+    {
+     "label": "Sacarlo vos mismo",
+     "value": 3,
+     "display": "café",
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "ra_scratch_only_clearcoat",
+   "start": 19.7,
+   "dur": 2.75,
+   "kind": "raw",
+   "src": "real/ra_scratch_only_clearcoat.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_polish_scratch_curb",
+   "start": 22.15,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_polish_scratch_curb.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_callout_st_22",
+   "start": 22.15,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "10 min",
+   "caption": "En la vereda, vos solo, por menos que un café.",
+   "accent": "good",
+   "image": "real/ra_polish_scratch_curb.png"
+  },
+  {
+   "id": "ra_coffee_cheap_price",
+   "start": 25.49,
+   "dur": 2.89,
+   "kind": "raw",
+   "src": "real/ra_coffee_cheap_price.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_shop_wont_tell_you",
+   "start": 28.08,
+   "dur": 3.14,
+   "kind": "raw",
+   "src": "broll/ra_shop_wont_tell_you.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_wipe_scratch_with_rag",
+   "start": 36.5,
+   "dur": 1.04,
+   "kind": "raw",
+   "src": "real/ra_wipe_scratch_with_rag.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_old_body_man_portrait",
+   "start": 40.12,
+   "dur": 1.3,
+   "kind": "raw",
+   "src": "real/ra_old_body_man_portrait.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_gone_body_men",
+   "start": 41.12,
+   "dur": 4.83,
+   "kind": "raw",
+   "src": "real/ra_fill_gone_body_men.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_wallet_in_hand_pay",
+   "start": 45.65,
+   "dur": 5.35,
+   "kind": "raw",
+   "src": "broll/ra_wallet_in_hand_pay.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_man_stops_you_gesture",
+   "start": 50.7,
+   "dur": 2.26,
+   "kind": "raw",
+   "src": "broll/ra_man_stops_you_gesture.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxquote_51",
+   "start": 50.7,
+   "dur": 5.2,
+   "kind": "oxquote",
+   "overlay": true,
+   "hue": "amber",
+   "quote": "Guardá la plata. Eso se saca con *la uña y dos cosas que ya tenés en casa*.",
+   "image": "real/ra_old_body_man_portrait.png",
+   "attribution": "Un chapista viejo",
+   "side": "right",
+   "accent": "amber"
+  },
+  {
+   "id": "ra_fingernail_on_scratch",
+   "start": 52.66,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ra_fingernail_on_scratch.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_aged_st_53",
+   "start": 52.66,
+   "dur": 6.5,
+   "kind": "aged",
+   "hue": "amber",
+   "heading": "EL TRUCO DE LA UÑA",
+   "eyebrow": "Tarda dos segundos y vale oro",
+   "lines": [
+    {
+     "text": "Pasa lisa: es barniz, fácil"
+    },
+    {
+     "text": "Engancha apenas: llegó al color"
+    },
+    {
+     "text": "Se traba fuerte: llegó al metal",
+     "mark": true
+    }
+   ]
+  },
+  {
+   "id": "ra_three_scratch_types",
+   "start": 63.82,
+   "dur": 2.51,
+   "kind": "raw",
+   "src": "real/ra_three_scratch_types.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "burst_64",
+   "start": 63.82,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ra_scratch_only_clearcoat.png",
+    "real/ra_scratch_reached_color.png",
+    "real/ra_deep_scratch_bare_metal.png"
+   ],
+   "captions": [
+    "Solo el barniz",
+    "Llegó al color",
+    "Llegó al metal"
+   ],
+   "accent": "amber"
+  },
+  {
+   "id": "ra_fill_two_second_trick",
+   "start": 66.03,
+   "dur": 2.16,
+   "kind": "raw",
+   "src": "real/ra_fill_two_second_trick.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_which_you_fix",
+   "start": 67.89,
+   "dur": 2.54,
+   "kind": "raw",
+   "src": "real/ra_fill_which_you_fix.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_white_scuff_mark_car",
+   "start": 70.13,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "broll/ra_white_scuff_mark_car.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_mirror_scuff",
+   "start": 74.17,
+   "dur": 5.79,
+   "kind": "raw",
+   "src": "real/ra_fill_mirror_scuff.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_scratch_car_worse_mistake",
+   "start": 79.66,
+   "dur": 2.12,
+   "kind": "raw",
+   "src": "broll/ra_scratch_car_worse_mistake.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_stay_until_end_ruin",
+   "start": 81.48,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/ra_stay_until_end_ruin.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_ruin_paint_forever",
+   "start": 85.24,
+   "dur": 2.57,
+   "kind": "raw",
+   "src": "real/ra_fill_ruin_paint_forever.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_this_changes_head",
+   "start": 87.51,
+   "dur": 3.38,
+   "kind": "raw",
+   "src": "real/ra_fill_this_changes_head.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_car_paint_glossy_panel",
+   "start": 90.59,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_car_paint_glossy_panel.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_cross_st_91",
+   "start": 90.92,
+   "dur": 6.5,
+   "kind": "cross",
+   "hue": "cold",
+   "title": "Tu pintura tiene 3 capas",
+   "eyebrow": "De arriba hacia abajo",
+   "layers": [
+    {
+     "label": "Barniz (clear coat)",
+     "depth": "casi todo rayón",
+     "color": "#dfe7ee"
+    },
+    {
+     "label": "Color",
+     "depth": "la pintura",
+     "color": "#c94f4f"
+    },
+    {
+     "label": "Metal + base",
+     "depth": "si llega, se oxida",
+     "color": "#8a8f96"
+    }
+   ]
+  },
+  {
+   "id": "ra_fill_it_has_three",
+   "start": 92.6,
+   "dur": 0.87,
+   "kind": "raw",
+   "src": "real/ra_fill_it_has_three.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_2_1",
+   "start": 93.17,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "Tu pintura tiene tres capas",
+   "slides": [
+    {
+     "image": "img/dg_ra_layers.png",
+     "eyebrow": "Metal + base · color · barniz transparente"
+    }
+   ]
+  },
+  {
+   "id": "ra_bare_metal_primer_base",
+   "start": 94.49,
+   "dur": 2.02,
+   "kind": "raw",
+   "src": "broll/ra_bare_metal_primer_base.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_color_coat_spray",
+   "start": 96.21,
+   "dur": 1.21,
+   "kind": "raw",
+   "src": "broll/ra_color_coat_spray.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_color_paint_itself",
+   "start": 97.12,
+   "dur": 3.07,
+   "kind": "raw",
+   "src": "real/ra_fill_color_paint_itself.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_clearcoat_name",
+   "start": 102.73,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ra_fill_clearcoat_name.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_clearcoat_layer_shine",
+   "start": 103.02,
+   "dur": 6.66,
+   "kind": "raw",
+   "src": "broll/ra_clearcoat_layer_shine.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_sun_rain_on_paint",
+   "start": 109.38,
+   "dur": 2.2,
+   "kind": "raw",
+   "src": "broll/ra_sun_rain_on_paint.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_protects_from_rain",
+   "start": 111.28,
+   "dur": 2.66,
+   "kind": "raw",
+   "src": "real/ra_fill_protects_from_rain.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_secret_shop_hides",
+   "start": 113.64,
+   "dur": 5.87,
+   "kind": "raw",
+   "src": "real/ra_fill_secret_shop_hides.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_3_0",
+   "start": 119.21,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "El 90% de los rayones",
+   "slides": [
+    {
+     "image": "img/dg_ra_90_clearcoat.png",
+     "eyebrow": "Solo tocan el barniz, no el color ni el metal"
+    }
+   ]
+  },
+  {
+   "id": "ov_oxstat_119",
+   "start": 119.21,
+   "dur": 4.2,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 90,
+   "suffix": " %",
+   "label": "de los rayones están solo en el barniz, no tocan el color",
+   "glyph": "🚗",
+   "accent": "green"
+  },
+  {
+   "id": "cmp_bars_st_119",
+   "start": 119.21,
+   "dur": 6.5,
+   "kind": "bars",
+   "hue": "amber",
+   "title": "Qué tan hondo va el rayón",
+   "bars": [
+    {
+     "label": "Solo el barniz (se saca)",
+     "value": 90,
+     "display": "90%",
+     "winner": true
+    },
+    {
+     "label": "Llega al color o al metal",
+     "value": 10,
+     "display": "10%",
+     "tone": "danger"
+    }
+   ]
+  },
+  {
+   "id": "ra_scratch_only_surface",
+   "start": 120.53,
+   "dur": 1.9,
+   "kind": "raw",
+   "src": "broll/ra_scratch_only_surface.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_barniz_takes_hits",
+   "start": 129.65,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_barniz_takes_hits.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_callout_st_130",
+   "start": 129.65,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "El barniz",
+   "caption": "Está ahí para llevarse los golpes en lugar de la pintura.",
+   "accent": "cold",
+   "image": "real/ra_clearcoat_layer_shine.png"
+  },
+  {
+   "id": "ov_oxbefore_133",
+   "start": 133.06,
+   "dur": 4.4,
+   "kind": "oxbefore",
+   "overlay": true,
+   "hue": "amber",
+   "before": "real/ra_scratch_only_clearcoat.png",
+   "after": "real/ra_scratch_buffed_out_gone.png",
+   "accent": "green"
+  },
+  {
+   "id": "ra_no_paint_no_shop",
+   "start": 137.55,
+   "dur": 2.54,
+   "kind": "raw",
+   "src": "broll/ra_no_paint_no_shop.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fingernail_test_close",
+   "start": 144.36,
+   "dur": 5.51,
+   "kind": "raw",
+   "src": "real/ra_fingernail_test_close.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxrule_144",
+   "start": 144.36,
+   "dur": 4.4,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Pasá *la uña* cruzando el rayón. Tarda dos segundos y vale oro.",
+   "accent": "amber"
+  },
+  {
+   "id": "ra_fill_worth_gold_trick",
+   "start": 149.57,
+   "dur": 1.17,
+   "kind": "raw",
+   "src": "real/ra_fill_worth_gold_trick.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_nail_across_scratch",
+   "start": 150.44,
+   "dur": 2.29,
+   "kind": "raw",
+   "src": "real/ra_nail_across_scratch.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxside_150",
+   "start": 150.44,
+   "dur": 5.2,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ra_fingernail_test_close.png",
+   "title": "El truco de la uña",
+   "lines": [
+    "Pasa lisa: es barniz, fácil",
+    "Engancha apenas: llegó al color",
+    "Se traba fuerte: llegó al metal"
+   ],
+   "side": "right",
+   "accent": "amber"
+  },
+  {
+   "id": "ra_fill_slowly_crossing",
+   "start": 152.43,
+   "dur": 2.11,
+   "kind": "raw",
+   "src": "real/ra_fill_slowly_crossing.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_nail_glides_smooth",
+   "start": 154.24,
+   "dur": 2.59,
+   "kind": "raw",
+   "src": "broll/ra_nail_glides_smooth.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_easy_ones",
+   "start": 156.53,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "real/ra_fill_easy_ones.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_ten_minutes_yourself",
+   "start": 160.33,
+   "dur": 2.57,
+   "kind": "raw",
+   "src": "broll/ra_ten_minutes_yourself.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_nail_catches_slightly",
+   "start": 162.6,
+   "dur": 3.14,
+   "kind": "raw",
+   "src": "broll/ra_nail_catches_slightly.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_reached_color_level",
+   "start": 165.44,
+   "dur": 4.15,
+   "kind": "raw",
+   "src": "real/ra_fill_reached_color_level.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_nail_deep_catches_metal",
+   "start": 169.29,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/ra_nail_deep_catches_metal.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_deep_scratch_bare_metal",
+   "start": 172.69,
+   "dur": 4.88,
+   "kind": "raw",
+   "src": "broll/ra_deep_scratch_bare_metal.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_do_the_nail_first",
+   "start": 182.44,
+   "dur": 2.03,
+   "kind": "raw",
+   "src": "real/ra_do_the_nail_first.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_before_call_anyone",
+   "start": 184.17,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_before_call_anyone.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_almost_paid_500",
+   "start": 192.49,
+   "dur": 6.57,
+   "kind": "raw",
+   "src": "broll/ra_almost_paid_500.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxstat_192",
+   "start": 192.49,
+   "dur": 4,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 8,
+   "suffix": "/10",
+   "label": "veces la uña pasa lisa: era un arreglo de un trapo",
+   "glyph": "👍",
+   "accent": "green"
+  },
+  {
+   "id": "ra_most_common_clearcoat",
+   "start": 198.76,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_most_common_clearcoat.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxmethod_199",
+   "start": 198.76,
+   "dur": 4.6,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "01",
+   "title": "Rayón en el barniz",
+   "chips": [
+    "Pomada de pulir",
+    "Trapo de microfibra",
+    "Derecho, no en círculos"
+   ],
+   "cost": "$2-3",
+   "accent": "blue"
+  },
+  {
+   "id": "cmp_process_st_199",
+   "start": 198.76,
+   "dur": 6.5,
+   "kind": "process",
+   "hue": "blue",
+   "title": "El rayón de barniz, en 10 minutos",
+   "eyebrow": "Por monedas, en la vereda",
+   "steps": [
+    {
+     "title": "Lavá la zona",
+     "desc": "si hay tierra, se convierte en lija y raya más"
+    },
+    {
+     "title": "Pomada en microfibra",
+     "desc": "frotá derecho, siguiendo el rayón, no en círculos"
+    },
+    {
+     "title": "Dos o tres pasadas",
+     "desc": "el rayón se va aclarando hasta desaparecer"
+    }
+   ]
+  },
+  {
+   "id": "ra_polishing_compound_tube",
+   "start": 206.2,
+   "dur": 2.97,
+   "kind": "raw",
+   "src": "real/ra_polishing_compound_tube.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxtag_206",
+   "start": 206.2,
+   "dur": 4,
+   "kind": "oxtag",
+   "overlay": true,
+   "hue": "amber",
+   "name": "La pomada de pulir",
+   "what": "Un abrasivo finísimo que empareja el barniz alrededor del rayón",
+   "side": "left",
+   "accent": "blue"
+  },
+  {
+   "id": "burst_206",
+   "start": 206.2,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ra_polishing_compound_tube.png",
+    "real/ra_microfiber_cloth_polish.png",
+    "real/ra_scratch_fading_away.png"
+   ],
+   "captions": [
+    "Pomada de pulir",
+    "Trapo microfibra",
+    "El rayón se va"
+   ],
+   "accent": "blue"
+  },
+  {
+   "id": "ra_hardware_store_polish",
+   "start": 208.87,
+   "dur": 3.33,
+   "kind": "raw",
+   "src": "broll/ra_hardware_store_polish.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_ask_pulimento",
+   "start": 211.9,
+   "dur": 4.02,
+   "kind": "raw",
+   "src": "real/ra_fill_ask_pulimento.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_diagram_5_4",
+   "start": 220.1,
+   "dur": 7.2,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "Cómo trabaja la pomada de pulir",
+   "slides": [
+    {
+     "image": "img/dg_ra_polish.png",
+     "eyebrow": "Un abrasivo finito que empareja el barniz"
+    }
+   ]
+  },
+  {
+   "id": "ra_creamy_between_fingers",
+   "start": 230.25,
+   "dur": 6.14,
+   "kind": "raw",
+   "src": "real/ra_creamy_between_fingers.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_wash_area_first",
+   "start": 236.09,
+   "dur": 1.97,
+   "kind": "raw",
+   "src": "broll/ra_wash_area_first.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_dust_becomes_sandpaper",
+   "start": 240.56,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/ra_dust_becomes_sandpaper.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxrule_241",
+   "start": 240.56,
+   "dur": 4.2,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Lavá *primero*: la tierra se convierte en lija y raya más.",
+   "accent": "red"
+  },
+  {
+   "id": "ra_microfiber_cloth_polish",
+   "start": 243.78,
+   "dur": 6.26,
+   "kind": "raw",
+   "src": "real/ra_microfiber_cloth_polish.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_rub_along_scratch",
+   "start": 249.74,
+   "dur": 5.28,
+   "kind": "raw",
+   "src": "broll/ra_rub_along_scratch.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_follow_scratch_dir",
+   "start": 254.72,
+   "dur": 2.62,
+   "kind": "raw",
+   "src": "real/ra_fill_follow_scratch_dir.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_not_in_circles_straight",
+   "start": 257.04,
+   "dur": 2.07,
+   "kind": "raw",
+   "src": "broll/ra_not_in_circles_straight.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_wipe_dry_look",
+   "start": 260.59,
+   "dur": 4.18,
+   "kind": "raw",
+   "src": "broll/ra_wipe_dry_look.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_scratch_fading_away",
+   "start": 264.47,
+   "dur": 2.52,
+   "kind": "raw",
+   "src": "broll/ra_scratch_fading_away.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_repeat_two_three_passes",
+   "start": 271.28,
+   "dur": 2.09,
+   "kind": "raw",
+   "src": "broll/ra_repeat_two_three_passes.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_drove_crazy_gone",
+   "start": 273.07,
+   "dur": 3.08,
+   "kind": "raw",
+   "src": "real/ra_fill_drove_crazy_gone.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_handwritten_repair_notes",
+   "start": 279.17,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/ra_handwritten_repair_notes.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_manualcard_279",
+   "start": 279.17,
+   "dur": 6,
+   "kind": "manualcard",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/manual_cover.png",
+   "title": "Manual de Reparaciones Caseras",
+   "desc": "Los 40 arreglos de $1 a $5 del hogar y el auto, con los pasos y las medidas exactas.",
+   "accent": "amber"
+  },
+  {
+   "id": "ra_notes_scratch_headlight_rust",
+   "start": 286.36,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "real/ra_notes_scratch_headlight_rust.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_wood_rust_leaks",
+   "start": 291.2,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_wood_rust_leaks.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_exact_measures_note",
+   "start": 299.42,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_exact_measures_note.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_manual_stacked_fixes",
+   "start": 306.41,
+   "dur": 4.13,
+   "kind": "raw",
+   "src": "real/ra_manual_stacked_fixes.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_industry_hides_fixes",
+   "start": 310.24,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/ra_industry_hides_fixes.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_industry_prefers",
+   "start": 313.53,
+   "dur": 5.86,
+   "kind": "raw",
+   "src": "real/ra_fill_industry_prefers.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_link_below_description",
+   "start": 319.09,
+   "dur": 5.96,
+   "kind": "raw",
+   "src": "broll/ra_link_below_description.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_still_the_best",
+   "start": 324.75,
+   "dur": 6.07,
+   "kind": "raw",
+   "src": "real/ra_fill_still_the_best.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_scratch_reached_color",
+   "start": 330.52,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_scratch_reached_color.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxmethod_331",
+   "start": 330.52,
+   "dur": 4.8,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "02",
+   "title": "Rayón que llegó al color",
+   "chips": [
+    "Pintura de retoque",
+    "Código de tu auto",
+    "En gotitas, en capas"
+   ],
+   "cost": "$5",
+   "accent": "amber"
+  },
+  {
+   "id": "cmp_process_st_331",
+   "start": 330.52,
+   "dur": 6.5,
+   "kind": "process",
+   "hue": "amber",
+   "title": "El rayón que llegó al color",
+   "eyebrow": "Pintura de retoque, con paciencia",
+   "steps": [
+    {
+     "title": "Código de color",
+     "desc": "la plaquita en el marco de la puerta del conductor"
+    },
+    {
+     "title": "Gotitas finitas",
+     "desc": "con un palillo, adentro del rayón, en capas"
+    },
+    {
+     "title": "Sellá y pulí",
+     "desc": "barniz transparente arriba y empatalo con la pomada"
+    }
+   ]
+  },
+  {
+   "id": "ra_fill_not_repaint_panic",
+   "start": 336.68,
+   "dur": 6.04,
+   "kind": "raw",
+   "src": "real/ra_fill_not_repaint_panic.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_replace_lost_paint_seal",
+   "start": 342.42,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "broll/ra_replace_lost_paint_seal.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_touchup_paint_pens",
+   "start": 346.28,
+   "dur": 6.74,
+   "kind": "raw",
+   "src": "real/ra_touchup_paint_pens.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_exact_color_car",
+   "start": 352.72,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_exact_color_car.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_diagram_8_3",
+   "start": 360.12,
+   "dur": 3.17,
+   "kind": "diagram",
+   "hue": "blue",
+   "k": "comp",
+   "eyebrow": "El código de color de tu auto",
+   "slides": [
+    {
+     "image": "img/dg_ra_colorcode.png",
+     "eyebrow": "La plaquita en el marco de la puerta del conductor"
+    }
+   ]
+  },
+  {
+   "id": "ra_door_jamb_color_plate",
+   "start": 362.89,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "real/ra_door_jamb_color_plate.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_under_the_hood",
+   "start": 365.99,
+   "dur": 3.05,
+   "kind": "raw",
+   "src": "real/ra_fill_under_the_hood.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_write_code_ask",
+   "start": 368.74,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "real/ra_fill_write_code_ask.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_identical_color_match",
+   "start": 372.1,
+   "dur": 5.99,
+   "kind": "raw",
+   "src": "broll/ra_identical_color_match.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_manual_where_plate",
+   "start": 377.79,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_manual_where_plate.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_dont_glob_touchup",
+   "start": 386.86,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "real/ra_dont_glob_touchup.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxrule_387",
+   "start": 386.86,
+   "dur": 4.4,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No *embadurnes*: gotita fina, dejar secar, *en capas*. La paciencia es todo.",
+   "accent": "amber"
+  },
+  {
+   "id": "ra_toothpick_tiny_drop",
+   "start": 391.11,
+   "dur": 2.76,
+   "kind": "raw",
+   "src": "real/ra_toothpick_tiny_drop.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_thin_drop_inside_scratch",
+   "start": 393.57,
+   "dur": 5.31,
+   "kind": "raw",
+   "src": "broll/ra_thin_drop_inside_scratch.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_layers_dry_between",
+   "start": 399.5,
+   "dur": 3.1,
+   "kind": "raw",
+   "src": "broll/ra_layers_dry_between.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_flush_with_rest",
+   "start": 402.3,
+   "dur": 5.79,
+   "kind": "raw",
+   "src": "real/ra_fill_flush_with_rest.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_glob_makes_bump",
+   "start": 407.79,
+   "dur": 5.56,
+   "kind": "raw",
+   "src": "broll/ra_glob_makes_bump.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_clearcoat_over_seal",
+   "start": 413.05,
+   "dur": 3.99,
+   "kind": "raw",
+   "src": "broll/ra_clearcoat_over_seal.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_seal_and_polish",
+   "start": 416.74,
+   "dur": 2.55,
+   "kind": "raw",
+   "src": "real/ra_fill_seal_and_polish.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_five_not_five_hundred",
+   "start": 420.31,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_five_not_five_hundred.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_callout_st_420",
+   "start": 420.31,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "$5",
+   "caption": "Retoque en capas: cinco dólares en vez de quinientos.",
+   "accent": "good",
+   "image": "real/ra_five_not_five_hundred.png"
+  },
+  {
+   "id": "ra_scuff_wall_parking",
+   "start": 444.52,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "broll/ra_scuff_wall_parking.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_white_transfer_mark",
+   "start": 448.83,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "real/ra_white_transfer_mark.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_stuck_on_paint",
+   "start": 452.35,
+   "dur": 1.97,
+   "kind": "raw",
+   "src": "real/ra_fill_stuck_on_paint.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_owner_thinks_ruined",
+   "start": 454.02,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/ra_owner_thinks_ruined.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_10_3",
+   "start": 458.12,
+   "dur": 4.62,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "No es un rayón: es pintura pegada",
+   "slides": [
+    {
+     "image": "img/dg_ra_transfer.png",
+     "eyebrow": "La pintura del otro quedó apoyada, no metida"
+    }
+   ]
+  },
+  {
+   "id": "ov_oxrule_458",
+   "start": 458.12,
+   "dur": 4.6,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No es un rayón: es *transferencia*. La pintura del otro quedó apoyada, se frota y se va.",
+   "accent": "green"
+  },
+  {
+   "id": "cmp_callout_st_458",
+   "start": 458.12,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "Se frota",
+   "caption": "La marca blanca es pintura pegada arriba: se frota y se va.",
+   "accent": "good",
+   "image": "real/ra_white_transfer_mark.png"
+  },
+  {
+   "id": "ra_paint_sitting_on_top",
+   "start": 462.34,
+   "dur": 3.36,
+   "kind": "raw",
+   "src": "broll/ra_paint_sitting_on_top.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_resting_not_in",
+   "start": 465.4,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "real/ra_fill_resting_not_in.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_polish_scuff_off_easy",
+   "start": 469.26,
+   "dur": 3.46,
+   "kind": "raw",
+   "src": "broll/ra_polish_scuff_off_easy.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_mild_products",
+   "start": 472.42,
+   "dur": 2.85,
+   "kind": "raw",
+   "src": "real/ra_fill_mild_products.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_alcohol_corner_test",
+   "start": 474.97,
+   "dur": 4.01,
+   "kind": "raw",
+   "src": "broll/ra_alcohol_corner_test.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_test_corner_first",
+   "start": 478.68,
+   "dur": 2.33,
+   "kind": "raw",
+   "src": "real/ra_fill_test_corner_first.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_scuff_gone_paint_intact",
+   "start": 480.71,
+   "dur": 4.11,
+   "kind": "raw",
+   "src": "broll/ra_scuff_gone_paint_intact.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_intact_no_scratch",
+   "start": 484.52,
+   "dur": 3.16,
+   "kind": "raw",
+   "src": "real/ra_fill_intact_no_scratch.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_toothpaste_wd40_myths",
+   "start": 501.25,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ra_toothpaste_wd40_myths.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "burst_501",
+   "start": 501.25,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ra_toothpaste_on_scratch.png",
+    "real/ra_wd40_can_scratch.png",
+    "real/ra_scratch_back_same.png"
+   ],
+   "captions": [
+    "Pasta: lija floja",
+    "WD-40: aceite",
+    "Vuelve igual"
+   ],
+   "accent": "red"
+  },
+  {
+   "id": "cmp_splitlist_st_501",
+   "start": 501.39,
+   "dur": 6.5,
+   "kind": "splitlist",
+   "hue": "blue",
+   "title": "Lo que NO te sirve para un rayón",
+   "items": [
+    "Pasta de dientes: apenas una lija floja",
+    "WD-40: lo tapa 2 días y se va con la lluvia",
+    "Frotar en seco: raya el auto más",
+    "Trapo viejo sucio: mete arenilla"
+   ],
+   "palette": "D"
+  },
+  {
+   "id": "ra_toothpaste_on_scratch",
+   "start": 504.61,
+   "dur": 2.96,
+   "kind": "raw",
+   "src": "broll/ra_toothpaste_on_scratch.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_why_it_works",
+   "start": 507.27,
+   "dur": 2.34,
+   "kind": "raw",
+   "src": "real/ra_fill_why_it_works.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_11_2",
+   "start": 509.31,
+   "dur": 7.2,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "Por qué la pasta de dientes 'funciona'",
+   "slides": [
+    {
+     "image": "img/dg_ra_toothpaste.png",
+     "eyebrow": "Un abrasivo más débil que la pomada de pulir"
+    }
+   ]
+  },
+  {
+   "id": "ra_worse_version_polish",
+   "start": 521.18,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/ra_worse_version_polish.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_tiny_scratch_emergency",
+   "start": 524.38,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/ra_tiny_scratch_emergency.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_weak_sandpaper_not_magic",
+   "start": 531.09,
+   "dur": 2.1,
+   "kind": "raw",
+   "src": "broll/ra_weak_sandpaper_not_magic.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxrule_531",
+   "start": 531.09,
+   "dur": 4.2,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "La pasta de dientes es *una lija floja*: solo un parche de urgencia.",
+   "accent": "red"
+  },
+  {
+   "id": "ra_dont_believe_videos",
+   "start": 536.02,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "real/ra_dont_believe_videos.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_wd40_can_scratch",
+   "start": 539.82,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "real/ra_wd40_can_scratch.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_no_scratch_wd40",
+   "start": 543.02,
+   "dur": 3.95,
+   "kind": "raw",
+   "src": "real/ra_fill_no_scratch_wd40.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_oily_film_fills_scratch",
+   "start": 546.67,
+   "dur": 5.25,
+   "kind": "raw",
+   "src": "broll/ra_oily_film_fills_scratch.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_shine_two_days_rain",
+   "start": 551.62,
+   "dur": 5.8,
+   "kind": "raw",
+   "src": "broll/ra_shine_two_days_rain.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxstat_552",
+   "start": 551.62,
+   "dur": 4,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 2,
+   "suffix": " días",
+   "label": "el WD-40 tapa el rayón hasta que llueve: no arregla nada",
+   "glyph": "💧",
+   "accent": "red"
+  },
+  {
+   "id": "ra_scratch_back_same",
+   "start": 557.12,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/ra_scratch_back_same.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_trick_for_photo_only",
+   "start": 566.78,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_trick_for_photo_only.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_bars_st_567",
+   "start": 566.78,
+   "dur": 6.5,
+   "kind": "bars",
+   "hue": "red",
+   "title": "El WD-40 vs el arreglo real",
+   "bars": [
+    {
+     "label": "WD-40: dura",
+     "value": 5,
+     "display": "2 días",
+     "tone": "danger"
+    },
+    {
+     "label": "Pomada y retoque: dura",
+     "value": 100,
+     "display": "años",
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "ra_fill_dont_forget_oil",
+   "start": 569.83,
+   "dur": 3.77,
+   "kind": "raw",
+   "src": "real/ra_fill_dont_forget_oil.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_nail_polish_touchup_recap",
+   "start": 573.3,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/ra_nail_polish_touchup_recap.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_honest_part_now",
+   "start": 584.68,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_honest_part_now.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_deep_scratch_to_metal",
+   "start": 615.1,
+   "dur": 5.54,
+   "kind": "raw",
+   "src": "broll/ra_deep_scratch_to_metal.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxmethod_615",
+   "start": 615.1,
+   "dur": 4.8,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "03",
+   "title": "Rayón hasta el metal",
+   "chips": [
+    "Limpiá el rayón",
+    "Tapá el metal desnudo",
+    "Llevalo a arreglar bien"
+   ],
+   "cost": "urgente",
+   "accent": "red"
+  },
+  {
+   "id": "cmp_diagram_13_1",
+   "start": 620.34,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "blue",
+   "k": "comp",
+   "eyebrow": "El metal desnudo se oxida",
+   "slides": [
+    {
+     "image": "img/dg_ra_rust.png",
+     "eyebrow": "Expuesto al aire y la humedad, empieza a oxidarse"
+    }
+   ]
+  },
+  {
+   "id": "cmp_callout_st_620",
+   "start": 620.34,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "Óxido",
+   "caption": "El metal desnudo, expuesto al aire, empieza a oxidarse.",
+   "accent": "danger",
+   "image": "real/ra_bare_metal_exposed.png"
+  },
+  {
+   "id": "ra_bare_metal_exposed",
+   "start": 621.66,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "broll/ra_bare_metal_exposed.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_rust_in_weeks",
+   "start": 625.4,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "real/ra_fill_rust_in_weeks.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_rust_eats_the_body",
+   "start": 629.53,
+   "dur": 2.03,
+   "kind": "raw",
+   "src": "broll/ra_rust_eats_the_body.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_truly_expensive",
+   "start": 631.26,
+   "dur": 3.76,
+   "kind": "raw",
+   "src": "real/ra_fill_truly_expensive.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_cheap_play_meanwhile",
+   "start": 634.72,
+   "dur": 6.91,
+   "kind": "raw",
+   "src": "broll/ra_cheap_play_meanwhile.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_clean_deep_scratch",
+   "start": 641.33,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "real/ra_fill_clean_deep_scratch.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_cover_metal_touchup",
+   "start": 644.51,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/ra_cover_metal_touchup.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_metal_not_touch_air",
+   "start": 652.34,
+   "dur": 3.42,
+   "kind": "raw",
+   "src": "real/ra_fill_metal_not_touch_air.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_not_perfect_time",
+   "start": 655.46,
+   "dur": 2.71,
+   "kind": "raw",
+   "src": "real/ra_fill_not_perfect_time.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_buys_time_stops_rust",
+   "start": 657.87,
+   "dur": 5.87,
+   "kind": "raw",
+   "src": "broll/ra_buys_time_stops_rust.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_cover_bare_metal_always",
+   "start": 663.44,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_cover_bare_metal_always.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxrule_663",
+   "start": 663.44,
+   "dur": 4.6,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Tapá el metal desnudo, *siempre*, cuanto antes. Es el consejo que vale por todo el video.",
+   "accent": "red"
+  },
+  {
+   "id": "ra_now_the_mistake",
+   "start": 671.34,
+   "dur": 2.54,
+   "kind": "raw",
+   "src": "broll/ra_now_the_mistake.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_ruin_forever_warn",
+   "start": 673.58,
+   "dur": 3.11,
+   "kind": "raw",
+   "src": "real/ra_fill_ruin_forever_warn.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_rub_dry_any_rag_circles",
+   "start": 676.39,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_rub_dry_any_rag_circles.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxrule_676",
+   "start": 676.39,
+   "dur": 4.6,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "El error: *en seco*, con *cualquier trapo*, y *en círculos*. Las tres son veneno.",
+   "accent": "red"
+  },
+  {
+   "id": "cmp_aged_st_676",
+   "start": 676.39,
+   "dur": 6.5,
+   "kind": "aged",
+   "hue": "red",
+   "heading": "EL ERROR FATAL",
+   "eyebrow": "Las tres cosas juntas son veneno",
+   "lines": [
+    {
+     "text": "En seco, sin lubricación"
+    },
+    {
+     "text": "Con cualquier trapo con arenilla"
+    },
+    {
+     "text": "Y en círculos: quedan remolinos para siempre",
+     "mark": true
+    }
+   ]
+  },
+  {
+   "id": "ra_dry_abrasive_scratches",
+   "start": 701.41,
+   "dur": 5.96,
+   "kind": "raw",
+   "src": "broll/ra_dry_abrasive_scratches.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_old_rag_grit",
+   "start": 707.07,
+   "dur": 1.01,
+   "kind": "raw",
+   "src": "real/ra_fill_old_rag_grit.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_dirty_rag_grit_inside",
+   "start": 707.78,
+   "dur": 5.89,
+   "kind": "raw",
+   "src": "real/ra_dirty_rag_grit_inside.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_grit_like_sandpaper",
+   "start": 713.37,
+   "dur": 5.6,
+   "kind": "raw",
+   "src": "broll/ra_grit_like_sandpaper.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_swirl_marks_sun",
+   "start": 718.67,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ra_swirl_marks_sun.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_callout_st_719",
+   "start": 718.67,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "Remolinos",
+   "caption": "Los círculos dejan remolinos: lo más difícil de sacar después.",
+   "accent": "danger",
+   "image": "real/ra_swirl_marks_sun.png"
+  },
+  {
+   "id": "ra_fill_circles_swirls",
+   "start": 722.91,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "real/ra_fill_circles_swirls.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_do_it_wet_straight",
+   "start": 727.22,
+   "dur": 6.36,
+   "kind": "raw",
+   "src": "broll/ra_do_it_wet_straight.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_wet_clean_microfiber",
+   "start": 733.28,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "real/ra_fill_wet_clean_microfiber.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_straight_never_circles",
+   "start": 737.35,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_straight_never_circles.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_like_new_vs_swirls",
+   "start": 745.05,
+   "dur": 4.71,
+   "kind": "raw",
+   "src": "broll/ra_like_new_vs_swirls.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_recap_plan_scratch",
+   "start": 751.18,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_recap_plan_scratch.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "burst_751",
+   "start": 751.18,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ra_fingernail_test_close.png",
+    "real/ra_polishing_compound_tube.png",
+    "real/ra_touchup_paint_pens.png"
+   ],
+   "captions": [
+    "Pasá la uña",
+    "Pomada de pulir",
+    "Retoque en capas"
+   ],
+   "accent": "amber"
+  },
+  {
+   "id": "cmp_checklist_st_751",
+   "start": 751.18,
+   "dur": 6.5,
+   "kind": "checklist",
+   "hue": "blue",
+   "title": "El plan completo",
+   "items": [
+    {
+     "text": "Pasá la uña: te dice todo",
+     "state": "done"
+    },
+    {
+     "text": "Barniz: pomada de pulir, derecho, no en círculos",
+     "state": "done"
+    },
+    {
+     "text": "Color: retoque del código, en gotitas y capas",
+     "state": "done"
+    },
+    {
+     "text": "Marca blanca: es pintura pegada, se frota",
+     "state": "done"
+    },
+    {
+     "text": "Metal: tapalo ya y llevalo a arreglar bien",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "ra_fill_when_you_check",
+   "start": 755.51,
+   "dur": 2.41,
+   "kind": "raw",
+   "src": "real/ra_fill_when_you_check.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_first_the_nail",
+   "start": 757.62,
+   "dur": 5.22,
+   "kind": "raw",
+   "src": "broll/ra_first_the_nail.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_smooth_is_barniz",
+   "start": 762.54,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_smooth_is_barniz.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_second_polish_barniz",
+   "start": 769.98,
+   "dur": 6.23,
+   "kind": "raw",
+   "src": "broll/ra_second_polish_barniz.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_third_touchup_color",
+   "start": 779.11,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/ra_third_touchup_color.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_patience_seal_polish",
+   "start": 786.17,
+   "dur": 4.35,
+   "kind": "raw",
+   "src": "real/ra_fill_patience_seal_polish.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fourth_white_rubs_off",
+   "start": 790.22,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "broll/ra_fourth_white_rubs_off.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_stuck_paint_rubs",
+   "start": 793.26,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "real/ra_fill_stuck_paint_rubs.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fifth_myths_waste",
+   "start": 796.92,
+   "dur": 6.17,
+   "kind": "raw",
+   "src": "broll/ra_fifth_myths_waste.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_dont_waste_time",
+   "start": 802.79,
+   "dur": 4.18,
+   "kind": "raw",
+   "src": "real/ra_fill_dont_waste_time.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_sixth_cover_metal",
+   "start": 806.67,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/ra_sixth_cover_metal.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_solve_at_home",
+   "start": 828.06,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "real/ra_fill_solve_at_home.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_scratch_headlight_wood_rust",
+   "start": 840.56,
+   "dur": 2.42,
+   "kind": "raw",
+   "src": "broll/ra_scratch_headlight_wood_rust.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_industry_wins_you_doubt",
+   "start": 842.68,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_industry_wins_you_doubt.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_callout_st_843",
+   "start": 842.68,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "La industria",
+   "caption": "Gana cuando creés que no podés hacer las cosas solo.",
+   "accent": "danger",
+   "image": "real/ra_industry_wins_you_doubt.png"
+  },
+  {
+   "id": "ra_fill_need_the_shop",
+   "start": 846.71,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_need_the_shop.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_two_dollar_ten_minutes",
+   "start": 854.26,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "broll/ra_two_dollar_ten_minutes.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_someone_decided",
+   "start": 856.76,
+   "dur": 5.55,
+   "kind": "raw",
+   "src": "real/ra_fill_someone_decided.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_manual_cover_repairs",
+   "start": 865.08,
+   "dur": 4,
+   "kind": "raw",
+   "src": "real/ra_manual_cover_repairs.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_exact_measures_steps",
+   "start": 868.78,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/ra_exact_measures_steps.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_no_depend_anyone",
+   "start": 875.91,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "real/ra_fill_no_depend_anyone.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_guarantee_refund",
+   "start": 880.06,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/ra_guarantee_refund.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_callout_st_880",
+   "start": 880.06,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "< 1 visita",
+   "caption": "El manual cuesta menos que una sola visita al taller.",
+   "accent": "good",
+   "image": "real/ra_manual_cover_repairs.png"
+  },
+  {
+   "id": "ra_fill_refund_every_peso",
+   "start": 883.77,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_refund_every_peso.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_manualcard_887",
+   "start": 886.79,
+   "dur": 6,
+   "kind": "manualcard",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/manual_cover.png",
+   "title": "Manual de Reparaciones Caseras",
+   "desc": "Los 40 arreglos, incluido el del rayón, con las medidas exactas.",
+   "chip": "Accedé en la descripción",
+   "accent": "amber"
+  },
+  {
+   "id": "ra_next_video_ac",
+   "start": 899.44,
+   "dur": 3.05,
+   "kind": "raw",
+   "src": "broll/ra_next_video_ac.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_ac_no_ripoff",
+   "start": 902.19,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "real/ra_fill_ac_no_ripoff.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_independence_built",
+   "start": 906.58,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/ra_independence_built.mp4",
+   "darken": 0,
+   "hue": "blue"
+  }
+ ]
+}
