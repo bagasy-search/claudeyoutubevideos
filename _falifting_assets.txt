@@ -3,12 +3,14 @@ broll/falifting/falifting_001_fx.m4a
 broll/falifting/falifting_007.mp4
 broll/falifting/falifting_008.mp4
 broll/falifting/falifting_008_fx.m4a
+broll/falifting/falifting_009.mp4
 broll/falifting/falifting_010.mp4
 broll/falifting/falifting_010_fx.m4a
 broll/falifting/falifting_011.mp4
 broll/falifting/falifting_012.mp4
 broll/falifting/falifting_013.mp4
 broll/falifting/falifting_013_fx.m4a
+broll/falifting/falifting_034.mp4
 broll/falifting/falifting_056.mp4
 broll/falifting/falifting_066.mp4
 broll/falifting/falifting_085.mp4
@@ -62,7 +64,7 @@ broll/falifting_st/falifting_114.mp4
 broll/falifting_st/falifting_115.mp4
 falifting.m4a
 img/falifting/falifting_001_bed.jpg
-img/falifting/falifting_009.jpg
+img/falifting/falifting_009_last.jpg
 img/falifting/falifting_012_last.jpg
 img/falifting/falifting_013_bed.jpg
 img/falifting/falifting_016_bed.jpg
@@ -71,6 +73,8 @@ img/falifting/falifting_024_bed.jpg
 img/falifting/falifting_031.jpg
 img/falifting/falifting_032_bed.jpg
 img/falifting/falifting_034.jpg
+img/falifting/falifting_034_bed.jpg
+img/falifting/falifting_034_last.jpg
 img/falifting/falifting_039_bed.jpg
 img/falifting/falifting_050_bed.jpg
 img/falifting/falifting_056_last.jpg
