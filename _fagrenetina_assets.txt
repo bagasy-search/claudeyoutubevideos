@@ -214,7 +214,6 @@ img/fagrenetina/fagrenetina_202_prev_bed.jpg
 img/fagrenetina/fagrenetina_205_prev_bed.jpg
 img/fagrenetina/fagrenetina_212_prev_bed.jpg
 img/fagrenetina/fagrenetina_218.jpg
-img/fagrenetina/fagrenetina_221.jpg
 img/fagrenetina/fagrenetina_223.jpg
 img/fagrenetina/fagrenetina_226_prev_bed.jpg
 img/fagrenetina/fagrenetina_230_bed.jpg
