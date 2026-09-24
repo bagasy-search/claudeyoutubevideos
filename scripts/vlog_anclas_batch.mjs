@@ -54,6 +54,18 @@ function pendientes() {
   }
   return out;
 }
+const GATE = !args.includes("--no-gate"), retries = {};
+const AK = (env.AGNES_KEYS || env.AGNES_KEY || "").split(",").map(s => s.trim()).filter(Boolean); let ak = 0;
+async function vision(face, img, det, hasW) {
+  const q = det ? 'Close-up photo of hands doing a task at home. Answer ONLY JSON: {"bright":true/false,"issues":"short"}. bright = well exposed, not dark, not amber.'
+    : `Image 1 is a reference face of a man. Image 2 is a photo. Answer ONLY JSON: {"same_person":true/false,"confidence":0-1,"bright":true/false,"extra_man":true/false,"people_count":N,"issues":"short"}. same_person = the main man in image 2 has the SAME identity as image 1. bright = well exposed, not dark or amber. extra_man = a second adult man or a mirror reflection of a man is visible. people_count = real people physically present in the room (NOT people in framed photos, pictures or screens)${hasW ? "; an elderly woman is expected too" : ""}.`;
+  for (let t = 0; t < 4; t++) try {
+    const j = await (await fetch("https://apihub.agnes-ai.com/v1/chat/completions", { method: "POST", signal: AbortSignal.timeout(60000), headers: { Authorization: "Bearer " + AK[(ak++) % AK.length], "Content-Type": "application/json" },
+      body: JSON.stringify({ model: "agnes-3.0-flash", messages: [{ role: "user", content: [{ type: "text", text: q }, ...(det ? [] : [{ type: "image_url", image_url: { url: uri(face) } }]), { type: "image_url", image_url: { url: `data:image/png;base64,` + fs.readFileSync(img).toString("base64") } }] }] }) })).json();
+    return JSON.parse(j.choices[0].message.content.replace(/```json|```/g, "").match(/\{[\s\S]*\}/)[0]);
+  } catch { await sleep(3000); }
+  return null;
+}
 let ronda = 0;
 for (;;) {
   const pend = pendientes();
@@ -87,6 +99,18 @@ for (;;) {
     }
   }
   log(`ronda ${ronda}: MEDIDO ${ok}/${pend.length} ok · ${fail} fallidas · US$${cost.toFixed(4)} (${ok ? (cost / ok).toFixed(5) : "-"}/img, tarifa Batch)`);
+  // COMPUERTA por ronda (visión GRATIS agnes-3.0-flash): cara distinta / oscura / 2º hombre → se aparta (_vN) y se rehace en la ronda
+  // siguiente ANTES de que nadie derive de ella (máx 2 reintentos por ancla). Detalle (kf) sólo luz.
+  if (GATE) for (const p of pend) {
+    if (!fs.existsSync(p.dst)) continue;
+    const det = p.x.P.clips.some(c => c.kf && (c.a === p.a.id || c.b === p.a.id));
+    const hasW = (p.a.from || []).includes("W");
+    const v = await vision(p.x.P.face, p.dst, det, hasW);
+    const bad = v && (det ? v.bright === false : (v.same_person === false || v.bright === false || v.extra_man === true || (!hasW && v.people_count > 1)));
+    const key = p.x.S + ":" + p.a.id; retries[key] = retries[key] || 0;
+    if (bad && retries[key] < 2) { retries[key]++; let k2 = 1; while (fs.existsSync(p.dst.replace(".png", `_v${k2}.png`))) k2++; fs.renameSync(p.dst, p.dst.replace(".png", `_v${k2}.png`)); log("⛔ GATE aparta", key, JSON.stringify(v)); }
+    else if (bad) log("⚠️ GATE sigue mal tras 2 reintentos (queda para la hoja):", key, JSON.stringify(v));
+  }
   if (!ok) { log("ronda sin imágenes: paro"); process.exit(2); }
   if (ONCE) break;
 }

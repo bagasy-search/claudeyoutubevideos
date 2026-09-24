@@ -106,7 +106,10 @@ async function acquire() {
   for (;;) {
     for (let i = 0; i < MAXS; i++) {
       const f = path.join(SLOTS, "slot" + i);
-      try { fs.writeFileSync(f, String(process.pid), { flag: "wx" }); return () => { try { fs.unlinkSync(f); } catch {} }; } catch {}
+      try { fs.writeFileSync(f, String(process.pid), { flag: "wx" }); return () => { try { fs.unlinkSync(f); } catch {} }; } catch {
+        // slot de un proceso MUERTO (caída, corte de red) → se libera; los de procesos vivos (de cualquier agente) se respetan
+        try { const pid = Number(fs.readFileSync(f, "utf8").trim()); if (pid && pid !== process.pid) { try { process.kill(pid, 0); } catch (e) { if (e.code === "ESRCH") { fs.unlinkSync(f); log("slot liberado (PID muerto)", pid); } } } } catch {}
+      }
     }
     await sleep(5000 + Math.random() * 5000);
   }
@@ -153,7 +156,7 @@ async function vision(frameJpg, facePng) {
 // ---------- check ----------
 if (fase === "check") {
   const st = state(); const fr = (f, t, o) => { ff("-ss", t.toFixed(3), "-i", f, "-frames:v", "1", "-vf", "scale=320:180,format=gray", "-f", "rawvideo", o); return fs.readFileSync(o); };
-  const norm = s => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zñ0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+  const norm = s => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zñ0-9 ]/g, " ").replace(/\s+/g, " ").replace(/extravirgen/g, "extra virgen").trim();
   let prevEnd = null;
   for (const c of P.clips) {
     const s = st[c.id]; if (!s) { log("FALTA", c.id); prevEnd = null; continue; }
@@ -163,7 +166,10 @@ if (fase === "check") {
     const fd = new FormData(); fd.append("model", "whisper-1"); fd.append("language", P.lang || "es"); fd.append("response_format", "text");
     fd.append("file", new Blob([fs.readFileSync(wav)], { type: "audio/wav" }), "a.wav");
     let txt = "(timeout)";
-    for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
+    const ASRF = CL + "asr_modal.json"; const asrM = fs.existsSync(ASRF) ? JSON.parse(fs.readFileSync(ASRF, "utf8")) : {};
+    if (asrM[s.file] !== undefined) txt = asrM[s.file] || "(vacío)"; // transcripción de Modal (modal_clipasr.py) cuando whisper-1 no está
+    else
+    for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); } if (/"error"/.test(txt)) { log("whisper-1 ERROR", txt.slice(0, 120)); txt = "(timeout)"; }
     const esperado = c.text || c.line || "";
     const NUM = /^(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien)$/;
     const wa = norm(esperado).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));
@@ -190,7 +196,8 @@ if (fase === "armar") {
   ff("-f", "concat", "-safe", "0", "-i", CL + "_aud.txt", "-c", "copy", CL + "_audio_total.wav");
   const ins = [], fl = [];
   C.forEach((c, i) => { const L = c.T + (i < C.length - 1 ? X : 0); ins.push("-t", L.toFixed(3), "-i", CL + c.file);
-    fl.push(`[${i}:v]fps=30,scale=1920:1080:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=0.5,trim=duration=${L.toFixed(3)},setpts=PTS-STARTPTS[v${i}]`); });
+    const eq = c.satA ? `,eq=saturation=${c.satA.toFixed(3)}+(${(c.satB - c.satA).toFixed(3)})*t/${c.T}:eval=frame` : ""; // corrige la deriva de saturación de la cadena de anclas
+    fl.push(`[${i}:v]fps=30,scale=1920:1080:flags=lanczos,setsar=1${eq},tpad=stop_mode=clone:stop_duration=0.5,trim=duration=${L.toFixed(3)},setpts=PTS-STARTPTS[v${i}]`); });
   let prev = "v0", off = 0;
   for (let i = 1; i < C.length; i++) { off += C[i - 1].T; fl.push(`[${prev}][v${i}]xfade=transition=fade:duration=${X}:offset=${off.toFixed(3)}[x${i}]`); prev = `x${i}`; }
   ff(...ins, "-i", CL + "_audio_total.wav", "-filter_complex", fl.join(";"), "-map", `[${prev}]`, "-map", `${C.length}:a`,
