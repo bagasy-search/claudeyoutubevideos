@@ -1,5 +1,5 @@
 // agnes_vlog.mjs — "VLOG CONTINUO": el presentador HACIENDO algo en su set, hablando con SU voz, en tomas
-// continuas sin cortes. Validado 23-sep-2026 (1:02 Federer mascarilla de arroz; 18:34 tfbgrietas, 151 clips).
+// continuas sin cortes. Validado 23-sep-2026 (1:02 Federer mascarilla de arroz; tfbgrietas 151 clips: v1 18:34 → v2 17:29,9 con el armado nuevo).
 // Memoria: reference_agnes_modelos_25_sep2026.md · reference_tfbgrietas_vlog_agnes_gotchas_sep2026.md ·
 //          feedback_gptimage_low_batch_siempre.md (las 4 palancas) · skill agnes-broll § VLOG CONTINUO.
 //
@@ -13,11 +13,22 @@
 //          Si se corta mientras espera un batch, al relanzar RETOMA el batch pendiente (anc/_batch_pendiente.json del
 //          1er plan) en vez de pagarlo de nuevo. Lotes de ≤70 por batch; la salida se lee stremeada por línea.
 //   node scripts/agnes_vlog.mjs <plan.json> clips    → agnes-video-2.5-flash `reference`, TODOS en paralelo, ancla→ancla
-//   node scripts/agnes_vlog.mjs <plan.json> check    → whisper-1 por clip vs texto + costuras + visión; guarda HISTORIAL
-//        por clip (clips/check_hist.json) y deja en state.json la MEJOR versión por puntaje, no la última.
-//   node scripts/agnes_vlog.mjs <plan.json> armar    → une con fundido 0,1 s (tpad clona el último cuadro si el clip
-//        viene justo en T); audio = tramos (o audio propio del clip)
-//   (clips/check aceptan ids: `clips c4 c7` regenera sólo esos, con sufijo r; `check --recheck` re-mide todo)
+//   node scripts/agnes_vlog.mjs <plan.json> check    → por clip, SÓLO sobre lo que se muestra (el largo real del tramo):
+//        whisper-1 vs texto (lo que balbucea en la cola silenciosa no cuenta) + ⛔ LABIOS: correlación de envolvente audio
+//        propio del clip vs tramo ≥ 0,8 y |lag| ≤ 0,1 s (en tfbgrietas v1 11 clips movían la boca con OTRA frase; sobre T
+//        entero falla por el balbuceo; planos `detail` excluidos) + saltos de POSE dentro del clip (media móvil de 12
+//        cuadros, ⛔ ≥ 7,5) + costuras cortada/entera + visión. Guarda HISTORIAL por clip (clips/check_hist.json, con el
+//        puntaje de labios adentro) y deja en state.json la MEJOR versión por puntaje, no la última.
+//   node scripts/agnes_vlog.mjs <plan.json> armar    → receta tfbgrietas v2 (el creador vio la v1: "lagazos de voces,
+//        cortes malos"): voz = MÁSTER continuo (tramos tal cual, NUNCA el relleno a segundo entero); cada clip a 1x cortado
+//        al largo REAL de su tramo; sólo si esa costura salta (> max(entera+4, 12)/255) se ACELERA la cola silenciosa
+//        (tope 2,5x → ≤2,7x con el redondeo) en vez de cortar; costura ≥ 15/255 o entrando/saliendo de un `detail` = CORTE
+//        LIMPIO (fundido entre poses distintas = cara fantasma), fundido 0,1 s sólo entre poses casi iguales; `overrides`
+//        por clip (mode/maxSpeed/cut/fade/trimTo/coverFrom, ver § armar). Salida 30 fps CFR 1920x1080 bt709 con audio +
+//        audio_<out>.wav + timeline_<out>.json (start = voz, vstart = video de cada clip). Lee state.json + state_det.json.
+//   (clips/check aceptan ids: `clips c4 c7` regenera sólo esos, con sufijo r; `check --recheck` re-mide todo;
+//    check/armar `--out=<dir>` escriben todo ahí y sólo LEEN la carpeta del plan; `--overrides=<json>` o plan.overrides
+//    o <dir>/overrides.json)
 //
 // 💰 COSTO DE LAS ANCLAS — medido 23-sep-2026 con el `usage` REAL (tfbgrietas S1, cadena K0→K3, prompt ~340 tok):
 //    config                                                   img-entrada  salida   $/ancla
@@ -50,9 +61,11 @@
 //   "clips": [ { "id":"c1", "a":"K0", "b":"K1", "audio":"…/tramo1.wav", "text":"lo que dice", "action":"qué hace (inglés)" },
 //              { "id":"c5", "a":"K4", "b":"K5", "secs":10, "line":"diálogo literal", "voice":"in Spanish with a warm Mexican accent, the lively voice of a 76-year-old grandmother", "refs":["W"], "action":"…" } ],
 //   "out": "…/vlog_<slug>.mp4" }
-// · clip con `audio` → se rellena con silencio hasta segundo ENTERO (el ancla final cae justo en la costura) y va como audios[].
-//   Al final del prompt va SIEMPRE "When the reference audio ends he stops talking and keeps the mouth closed" (sin eso
-//   `mode:"reference"` inventa palabras en el silencio del relleno; en el armado suena igual el tramo del máster).
+// · clip con `audio` → PARA GENERAR se rellena con silencio hasta segundo ENTERO (agnes pide segundos enteros 4-12) y va
+//   como audios[]. Ese relleno NUNCA se oye ni se ve: `armar` corta el clip al largo real del tramo. Al final del prompt va
+//   SIEMPRE "When the reference audio ends he stops talking and keeps the mouth closed" (sin eso `mode:"reference"`
+//   inventa palabras en el silencio del relleno).
+// · clip con `detail:true` (plano detalle keyframe d1→d2, en clips/state_det.json): sin labios, corte limpio a los dos lados.
 // · clip con `line` (personaje secundario SIN audio ref) → el modelo dice el texto literal con ese acento; en el armado suena SU audio.
 // · Límites 2.5-flash: 4-12 s, sólo 720P (1280x720: el ancla de 1088x608 se sube ×1,18), sin fps, cola GLOBAL
 //   (`video_queue_full` con todas las claves) → reintento cada ~30 s.
@@ -349,71 +362,215 @@ async function vision(frameJpg, facePng) {
   return null;
 }
 
+// ---------- medidas compartidas por check y armar (portadas de tfbgrietas _v3/v2: vend.py, seams.py, sync.py, jumps2.py) ----------
+// `--out=<dir>`: check/armar escriben TODO (historial, state, intermedios, mp4, wav, timeline) en esa carpeta y sólo LEEN
+// la del plan (para probar/rearmar sin tocar el worktree de otro).
+const WORK = FL.out ? String(FL.out).replace(/\\/g, "/").replace(/\/?$/, "/") : CL;
+if (FL.out) fs.mkdirSync(WORK, { recursive: true });
+const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
+const stateDet = () => J(CL + "state_det.json");        // planos `detail` (keyframe d1→d2) van aparte
+const ffo = (...a) => execFileSync("ffmpeg", ["-v", "error", ...a], { maxBuffer: 1 << 28 });
+function pcm(f, T) { // mono 16 kHz float; con T: rellena/corta a T (como load() de sync.py)
+  const a = ["-i", f, "-vn", "-ac", "1", "-ar", "16000"]; if (T) a.push("-af", `apad=whole_dur=${T}`, "-t", String(T));
+  const b = ffo(...a, "-f", "s16le", "-"), x = new Float32Array(b.length >> 1);
+  for (let i = 0; i < x.length; i++) x[i] = b.readInt16LE(2 * i) / 32768;
+  return x;
+}
+const r3 = v => Math.round(v * 1000) / 1000, r2 = v => Math.round(v * 100) / 100, r1 = v => Math.round(v * 10) / 10;
+// fin REAL de la voz en el tramo (−38 dB bajo el pico, ventanas de 10 ms) y largo del tramo sin relleno
+const _vf = {};
+function vozFin(f) {
+  if (_vf[f]) return _vf[f];
+  const x = pcm(f), n = Math.floor(x.length / 160), e = new Float64Array(n);
+  for (let i = 0; i < n; i++) { let s = 0; for (let j = i * 160; j < i * 160 + 160; j++) s += x[j] * x[j]; e[i] = 20 * Math.log10(Math.sqrt(s / 160) + 1e-7); }
+  const th = Math.max(...e) - 38; let a = 0, b = n - 1; while (a < n && e[a] <= th) a++; while (b > 0 && e[b] <= th) b--;
+  return (_vf[f] = { len: r3(x.length / 16000), vs: r2(a * 0.01), ve: r2((b + 1) * 0.01) });
+}
+// compuerta de LABIOS: correlación de la envolvente (log RMS 10 ms) del audio PROPIO del clip vs el tramo, sólo sobre
+// los primeros L s (lo que se muestra), mejor lag en ±3 s. Pasa con corr ≥ 0,8 y |lag| ≤ 0,1 s.
+function envol(x) { const n = Math.floor(x.length / 160), e = new Float64Array(n);
+  for (let i = 0; i < n; i++) { let s = 0; for (let j = i * 160; j < i * 160 + 160; j++) s += x[j] * x[j]; e[i] = Math.log10(Math.sqrt(s / 160 + 1e-9) + 1e-4); } return e; }
+function pearson(a, ao, b, bo, m) { let sa = 0, sb = 0; for (let i = 0; i < m; i++) { sa += a[ao + i]; sb += b[bo + i]; }
+  const ma = sa / m, mb = sb / m; let num = 0, da = 0, db = 0;
+  for (let i = 0; i < m; i++) { const u = a[ao + i] - ma, v = b[bo + i] - mb; num += u * v; da += u * u; db += v * v; }
+  return da && db ? num / Math.sqrt(da * db) : 0; }
+const LAB_CORR = 0.8, LAB_LAG = 0.1;
+function labios(clip, tramoWav, L) {
+  const a = envol(pcm(clip, L)), b = envol(pcm(tramoWav, L)), n = Math.min(a.length, b.length);
+  let best = [-2, 0];
+  for (let lag = -300; lag <= 300; lag++) { const m = n - Math.abs(lag); if (m < 100) continue;
+    const c = lag >= 0 ? pearson(a, lag, b, 0, m) : pearson(a, 0, b, -lag, m); if (c > best[0]) best = [c, lag]; }
+  const corr = r3(best[0]), lag = r2(best[1] * 0.01);
+  return { corr, lag, c0: r3(pearson(a, 0, b, 0, n)), ok: corr >= LAB_CORR && Math.abs(lag) <= LAB_LAG };
+}
+// cuadro gris 160x90 en t (seek de entrada, como seams.py) y diferencia media 0-255
+function gris(f, t) { try { const b = ffo("-ss", Math.max(0, t).toFixed(3), "-i", f, "-frames:v", "1", "-vf", "scale=160:90,format=gray", "-f", "rawvideo", "-"); return b.length === 14400 ? b : null; } catch { return null; } }
+const difG = (a, b) => { if (!a || !b) return null; let d = 0; for (let i = 0; i < a.length; i++) d += Math.abs(a[i] - b[i]); return r1(d / a.length); };
+// costuras de cada clip con el siguiente: `trunc` = cortado al largo del tramo (L−0,034) · `orig` = entero (T−0,08)
+function costuras(C, dirClips) {
+  const cf = WORK + "_costuras.json", cache = J(cf);
+  const R = C.map((c, i) => { const n = C[i + 1], f = dirClips + c.file, L = c.len;
+    const k = `${c.file}|${n ? n.file : "-"}|${L}|${c.T}`; if (cache[k]) return cache[k];
+    const nx = n ? gris(dirClips + n.file, 0) : null, eL = gris(f, L - 0.034), eT = gris(f, c.T - 0.08);
+    return (cache[k] = { trunc: difG(eL, nx), orig: difG(eT, nx), tail_motion: difG(eL, eT) }); });
+  fs.writeFileSync(cf, JSON.stringify(cache, null, 0)); return R;
+}
+// saltos de POSE dentro del clip (jumps2.py): dif. cuadro a cuadro 160x90 a 30 fps (24→30 duplica cuadros: por eso media
+// móvil de 12), sólo sobre la parte que se muestra, sin 6 cuadros de cada borde. ⛔ pico ≥ 7,5 (umbral del auditor v2).
+const SALTO = 7.5;
+function saltos(f, L) {
+  const b = ffo("-t", L.toFixed(3), "-i", f, "-vf", "fps=30,scale=160:90,format=gray", "-f", "rawvideo", "-"), N = Math.floor(b.length / 14400);
+  if (N < 24) return null;
+  const d = new Float64Array(N - 1);
+  for (let k = 1; k < N; k++) { let s = 0; const o = k * 14400; for (let i = 0; i < 14400; i++) s += Math.abs(b[o + i] - b[o - 14400 + i]); d[k - 1] = s / 14400; }
+  const r = Array.from(d, (_, i) => { let s = 0; for (let j = i - 6; j <= i + 5; j++) if (j >= 0 && j < d.length) s += d[j]; return s / 12; }); // np.convolve 'same'
+  const seg = r.slice(6, r.length - 6); if (seg.length < 10) return null;
+  let im = 0; seg.forEach((v, i) => { if (v > seg[im]) im = i; });
+  const med = [...seg].sort((x, y) => x - y)[seg.length >> 1];
+  return { t: r2((6 + im) / 30), peak: r1(seg[im]), base: r1(med), ratio: r1(seg[im] / Math.max(med, 0.5)) };
+}
+function overrides() { // {id:{mode:"acc"|"trunc", maxSpeed, cut, fade, trimTo, coverFrom}} — FL.overrides > plan.overrides > <dir>/overrides.json
+  if (FL.overrides) return J(String(FL.overrides));
+  if (typeof P.overrides === "string") return J(P.overrides);
+  return P.overrides || J(DIR + "overrides.json");
+}
+
 // ---------- check ----------
-// Puntaje por versión (menor = mejor): palabras de más + faltantes + repetidas; +50 cara/luz mal; +100 sin transcripción.
-// El historial (clips/check_hist.json) junta TODAS las versiones medidas de cada clip y state.json queda con la MEJOR
-// (en tfbgrietas la última regeneración a veces era peor que la anterior y el runner se quedaba con la última).
+// Puntaje por versión (menor = mejor): palabras de más + faltantes + repetidas; +50 cara/luz mal; +50 LABIOS mal
+// (corr < 0,8 o |lag| > 0,1 s); +100 sin transcripción. Whisper y labios se miden SÓLO sobre lo que se muestra (el largo
+// del tramo; `own` = T entero): lo que agnes balbucea en la cola silenciosa no se ve ni se oye, no marca REGENERAR.
+// Planos `detail`: sin whisper ni labios (suena el tramo del máster), sí saltos y costura.
+// El historial (clips/check_hist.json) junta TODAS las versiones medidas de cada clip y state.json queda con la MEJOR.
 if (fase === "check") {
-  const st = state(); const fr = (f, t, o) => { ff("-ss", t.toFixed(3), "-i", f, "-frames:v", "1", "-vf", "scale=320:180,format=gray", "-f", "rawvideo", o); return fs.readFileSync(o); };
-  const norm = s => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zñ0-9 ]/g, " ").replace(/\s+/g, " ").trim();
-  const HF = CL + "check_hist.json", hist = fs.existsSync(HF) ? JSON.parse(fs.readFileSync(HF, "utf8")) : {};
-  let prevEnd = null;
-  for (const c of P.clips) {
-    const s = st[c.id]; if (!s) { log("FALTA", c.id); prevEnd = null; continue; }
-    const f = CL + s.file;
-    let h = !FL.recheck && hist[c.id]?.[s.file];
+  const stM = state(), stD = stateDet(), st = { ...stM, ...stD }, O = overrides();
+  const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zñ0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+  const HF = WORK + "check_hist.json", hist = fs.existsSync(HF) ? J(HF) : J(CL + "check_hist.json");
+  const C = P.clips.filter(c => st[c.id]).map(c => ({ ...c, ...st[c.id] }));
+  for (const c of C) c.len = c.own || !c.audio ? c.T : vozFin(c.audio).len;
+  const SE_ = costuras(C, CL);
+  const falta = P.clips.filter(c => !st[c.id]).map(c => c.id); if (falta.length) log("FALTAN", falta.join(" "));
+  let nLab = 0, nSal = 0;
+  for (const [i, c] of C.entries()) {
+    const f = CL + c.file, win = c.len;
+    let h = !FL.recheck && hist[c.id]?.[c.file];
+    if (h && h.win !== win) h = null; // medido con la ventana vieja (T entero) → re-medir
     if (!h) {
-      const wav = CL + c.id + "_chk.wav"; ff("-i", f, "-vn", "-ac", "1", "-ar", "16000", "-t", String(s.T), wav);
-      const fd = new FormData(); fd.append("model", "whisper-1"); fd.append("language", P.lang || "es"); fd.append("response_format", "text");
-      fd.append("file", new Blob([fs.readFileSync(wav)], { type: "audio/wav" }), "a.wav");
-      let txt = "(timeout)";
-      for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
-      const esperadoTxt = c.text || c.line || "";
-      const NUM = /^(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien)$/;
-      const wa = norm(esperadoTxt).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));
-      const a = new Set(wa), extra = b.filter(w => !a.has(w)), falta = [...a].filter(w => !b.includes(w));
-      const rep = b.length - wa.length; // palabras de más aunque existan (frases repetidas)
-      const mid = CL + c.id + "_mid.jpg"; ff("-ss", (s.T / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=768:-2", mid);
-      const v = await vision(mid, P.face);
-      const vis = !v ? " · visión: sin respuesta" : ` · cara ${v.same_person ? "✓" : "⛔ NO ES"} (${v.confidence}) · luz ${v.bright ? "✓" : "⛔ oscura"}${v.issues && !/^none/i.test(v.issues) ? " · " + v.issues : ""}`;
-      const malVis = v && (!v.same_person || !v.bright);
-      const score = extra.length + falta.length + Math.max(0, rep) + (malVis ? 50 : 0) + (txt === "(timeout)" ? 100 : 0);
-      const verd = extra.length + falta.length > 2 || rep > 2 || txt === "(timeout)" || malVis ? "⛔ REGENERAR" : rep > 0 ? "⚠️ revisar" : "ok";
-      h = { score, verd, line: `dice: "${txt.trim()}"` + (extra.length ? ` · de más: ${extra.join(" ")}` : "") + (falta.length ? ` · falta: ${falta.join(" ")}` : "") + (rep > 0 ? ` · ${rep} palabra(s) de más (¿repitió?)` : "") + vis };
-      (hist[c.id] ||= {})[s.file] = h; fs.writeFileSync(HF, JSON.stringify(hist, null, 1));
+      h = { win };
+      if (c.detail) { h.score = 0; h.verd = "detalle"; h.line = "plano detalle (sin whisper/labios)"; }
+      else {
+        const wav = WORK + c.id + "_chk.wav"; ff("-i", f, "-vn", "-ac", "1", "-ar", "16000", "-t", win.toFixed(3), wav);
+        const fd = new FormData(); fd.append("model", "whisper-1"); fd.append("language", P.lang || "es"); fd.append("response_format", "text");
+        fd.append("file", new Blob([fs.readFileSync(wav)], { type: "audio/wav" }), "a.wav");
+        let txt = "(timeout)";
+        for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
+        const esperadoTxt = c.text || c.line || "";
+        const NUM = /^(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien)$/;
+        const wa = norm(esperadoTxt).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));
+        const a = new Set(wa), extra = b.filter(w => !a.has(w)), faltan = [...a].filter(w => !b.includes(w));
+        const rep = b.length - wa.length;
+        const mid = WORK + c.id + "_mid.jpg"; ff("-ss", (win / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=768:-2", mid);
+        const v = await vision(mid, P.face);
+        const vis = !v ? " · visión: sin respuesta" : ` · cara ${v.same_person ? "✓" : "⛔ NO ES"} (${v.confidence}) · luz ${v.bright ? "✓" : "⛔ oscura"}${v.issues && !/^none/i.test(v.issues) ? " · " + v.issues : ""}`;
+        const malVis = v && (!v.same_person || !v.bright);
+        const lb = c.audio && !c.own ? labios(f, c.audio, win) : null; h.labios = lb;
+        const malLab = lb && !lb.ok;
+        h.score = extra.length + faltan.length + Math.max(0, rep) + (malVis ? 50 : 0) + (malLab ? 50 : 0) + (txt === "(timeout)" ? 100 : 0);
+        h.verd = extra.length + faltan.length > 2 || rep > 2 || txt === "(timeout)" || malVis || malLab ? "⛔ REGENERAR" : rep > 0 ? "⚠️ revisar" : "ok";
+        h.line = `dice: "${txt.trim()}"` + (extra.length ? ` · de más: ${extra.join(" ")}` : "") + (faltan.length ? ` · falta: ${faltan.join(" ")}` : "") + (rep > 0 ? ` · ${rep} palabra(s) de más (¿repitió?)` : "") + vis
+          + (lb ? ` · labios ${lb.ok ? "✓" : "⛔"} corr ${lb.corr} lag ${lb.lag}s` : "");
+      }
     }
-    const start = fr(f, 0, CL + "_s.raw"), end = fr(f, s.T - 0.04, CL + "_e.raw");
-    let costura = ""; if (prevEnd) { let d = 0; for (let i = 0; i < start.length; i++) d += Math.abs(start[i] - prevEnd[i]); costura = ` · costura con el anterior ${(d / start.length).toFixed(1)}/255`; }
-    prevEnd = end;
+    // saltos sólo sobre lo que se VE: trimTo/coverFrom del override recortan la parte mostrada (barato: se re-mide si cambia)
+    const o = O[c.id] || {}, swin = Math.min(win, o.trimTo ?? Infinity, o.coverFrom ?? Infinity);
+    if (h.swin !== swin) { h.swin = swin; h.salto = saltos(f, swin); }
+    (hist[c.id] ||= {})[c.file] = h; fs.writeFileSync(HF, JSON.stringify(hist, null, 1));
+    if (h.labios && !h.labios.ok) nLab++;
+    const sj = h.salto, s = SE_[i];
+    const sal = !sj ? "" : sj.peak >= SALTO ? (nSal++, ` · ⛔ SALTO de pose en ${sj.t}s${swin < win ? ` (mirando ${swin}s por override)` : ""} (pico ${sj.peak}, base ${sj.base}): regenerar suele repetirlo → tapalo con un detalle (override coverFrom)`) : sj.peak >= 6 && sj.ratio >= 3 ? ` · ⚠️ ráfaga en ${sj.t}s (pico ${sj.peak}, ×${sj.ratio})` : "";
+    const cos = C[i + 1] && s.trunc != null ? ` · costura al siguiente ${s.trunc}/255 cortado${s.orig != null ? `, ${s.orig} entero` : ""}` : "";
     const vers = Object.keys(hist[c.id] || {}).length;
-    log(`${c.id} [${s.file}] ${h.verd} (puntaje ${h.score}${vers > 1 ? `, ${vers} versiones` : ""}) · ${h.line}` + costura);
+    log(`${c.id}${c.detail ? " (detalle)" : ""} [${c.file}] ${h.verd} (puntaje ${h.score}${vers > 1 ? `, ${vers} versiones` : ""}) · ${h.line}` + sal + cos);
   }
-  // quedarse con la MEJOR versión existente de cada clip
-  let cambios = 0;
+  // quedarse con la MEJOR versión existente de cada clip (state.json o state_det.json según dónde esté)
+  let cM = 0, cD = 0;
   for (const [cid, vers] of Object.entries(hist)) {
-    if (!st[cid]) continue;
+    const tgt = stD[cid] ? stD : stM[cid] ? stM : null; if (!tgt) continue;
     const best = Object.entries(vers).filter(([fn]) => fs.existsSync(CL + fn)).sort((x, y) => x[1].score - y[1].score)[0];
-    const cur = vers[st[cid].file];
-    if (best && best[0] !== st[cid].file && (!cur || best[1].score < cur.score)) { log(`↩ ${cid}: me quedo con ${best[0]} (puntaje ${best[1].score}) en vez de ${st[cid].file} (${cur ? cur.score : "sin medir"})`); st[cid].file = best[0]; cambios++; }
+    const cur = vers[tgt[cid].file];
+    if (best && best[0] !== tgt[cid].file && (!cur || best[1].score < cur.score)) { log(`↩ ${cid}: me quedo con ${best[0]} (puntaje ${best[1].score}) en vez de ${tgt[cid].file} (${cur ? cur.score : "sin medir"})`); tgt[cid].file = best[0]; tgt === stD ? cD++ : cM++; }
   }
-  if (cambios) fs.writeFileSync(CL + "state.json", JSON.stringify(st, null, 1));
-  log("⛔ = el modelo cambió palabras → `clips <id>` y volvé a `check` (queda la MEJOR versión, no la última). Costura >30 → mirá esos 2 cuadros.");
+  if (cM) fs.writeFileSync(WORK + "state.json", JSON.stringify(stM, null, 1));
+  if (cD) fs.writeFileSync(WORK + "state_det.json", JSON.stringify(stD, null, 1));
+  if ((cM || cD) && FL.out) log(`(--out: la mejor versión quedó en ${WORK}state*.json; el state del plan NO se tocó)`);
+  log(`labios mal: ${nLab} · saltos de pose ⛔: ${nSal}. ⛔ REGENERAR = cambió palabras o labios de otra frase → \`clips <id>\` y volvé a \`check\` (queda la MEJOR versión, no la última). Costura ≥15 → armar corta limpio; >30 → mirá esos 2 cuadros.`);
 }
 
 // ---------- armar ----------
+// La voz es el MÁSTER continuo: los tramos se concatenan tal cual, SIN el relleno a segundo entero con el que se generó el
+// clip (en tfbgrietas v1 ese relleno eran 74 s de silencio = pausa antinatural cada ~7 s + balbuceo). Cada clip hablado va a
+// 1x y se corta al largo REAL de su tramo. Sólo si esa costura cortada SALTA (dif. > max(entera + 4, 12)/255) y el siguiente
+// no es detalle, la cola silenciosa (fin de voz → T) se ACELERA (tope 2,5x; con el redondeo a cuadros queda ≤2,7x) en vez
+// de cortar, agregando sólo la pausa mínima. Costura ≥15/255, o entrando/saliendo de un `detail` → CORTE LIMPIO (fundido
+// entre poses distintas = cara fantasma); fundido 0,1 s sólo entre poses casi iguales. `own` (personaje con su línea) = T
+// entero con su audio. Fronteras acumuladas en cuadros (sin deriva). Salida 30 fps CFR 1920x1080 bt709 + audio_<x>.wav +
+// timeline_<x>.json (inicio de cada clip: start = voz, vstart = video).
+// overrides {id:{…}}: mode "acc"|"trunc" (forzar) · maxSpeed (tope de aceleración) · cut/fade (costura con el ANTERIOR) ·
+//   trimTo s (usa sólo los primeros s del clip, estirados en cámara lenta) · coverFrom s (el clip se corta en s y el
+//   SIGUIENTE —un detalle— arranca antes, en cámara lenta, tapando p. ej. un giro brusco).
 if (fase === "armar") {
-  const st = state(), X = 0.1, C = P.clips.map(c => ({ ...c, ...st[c.id] }));
-  if (C.some(c => !c.file)) throw new Error("faltan clips");
-  const parts = C.map((c, i) => { const o = CL + `_aud${i}.wav`; ff("-i", c.own ? CL + c.file : c.audio, "-vn", "-t", String(c.T), "-af", `apad=whole_dur=${c.T}`, "-ac", "1", "-ar", "48000", o); return o; });
-  fs.writeFileSync(CL + "_aud.txt", parts.map(p => `file '${path.basename(p)}'\n`).join(""));
-  ff("-f", "concat", "-safe", "0", "-i", CL + "_aud.txt", "-c", "copy", CL + "_audio_total.wav");
+  const st = { ...state(), ...stateDet() }, O = overrides(), FPS = 30, X = 0.1, MAXS = 2.5, CUT = 15;
+  const C = P.clips.map(c => ({ ...c, ...st[c.id] }));
+  const miss = C.filter(c => !c.file).map(c => c.id); if (miss.length) throw new Error("faltan clips: " + miss.join(" "));
+  const base = path.basename(P.out).replace(/\.[^.]+$/, ""), OUT = FL.out ? WORK + path.basename(P.out) : P.out, OD = path.dirname(OUT).replace(/\\/g, "/") + "/";
+  const TMP = WORK + "_armar/"; fs.mkdirSync(TMP, { recursive: true });
+  for (const c of C) { if (c.own || !c.audio) { c.own = true; c.len = c.T; c.ve = c.T; } else { const v = vozFin(c.audio); c.len = v.len; c.ve = Math.min(v.ve + 0.04, v.len); } }
+  const S = costuras(C, CL);
+  for (const [i, c] of C.entries()) {
+    const o = O[c.id] || {}, s = S[i];
+    if (c.own) { c.mode = "own"; c.d = c.T; continue; }
+    let mode = o.mode || "trunc";
+    if (!o.mode && !c.detail && s.trunc != null && s.orig != null && s.trunc > Math.max(s.orig + 4, 12) && !(C[i + 1] || {}).detail) mode = "acc";
+    c.mode = mode;
+    if (mode === "acc") { const W = Math.max(c.len - c.ve, (c.T - c.ve) / (o.maxSpeed || MAXS)); c.d = c.ve + W; } else c.d = c.len;
+  }
+  C.forEach((c, i) => { const n = C[i + 1]; if (!n) return; const s = S[i]; const eff = c.mode === "acc" ? s.orig : s.trunc;
+    c.cutNext = !!((O[n.id] || {}).cut || c.detail || n.detail || eff == null || eff >= CUT); if ((O[n.id] || {}).fade) c.cutNext = false; });
+  C.forEach(c => c.vd = c.d);
+  C.forEach((c, i) => { const o = O[c.id] || {}; if (o.coverFrom != null && C[i + 1] && C[i + 1].detail) { C[i + 1].vd += c.d - o.coverFrom; c.vd = o.coverFrom; c.cutNext = true; } });
+  let cum = 0, cv = 0; const Bf = [0], Bv = [0]; for (const c of C) { cum += c.d; Bf.push(Math.round(cum * FPS)); cv += c.vd; Bv.push(Math.round(cv * FPS)); }
+  C.forEach((c, i) => { c.nf = Bv[i + 1] - Bv[i]; c.start = Bf[i] / FPS; c.adur = (Bf[i + 1] - Bf[i]) / FPS; c.src = (O[c.id] || {}).trimTo ?? c.T;
+    c.slow = (c.vd > c.d + 0.01 || c.src < c.vd) ? +(Math.min(c.src, c.vd) / c.vd).toFixed(3) : undefined; });
+  // audio: tramo tal cual (+ la pausa mínima si acc); own = su audio a T
+  const parts = C.map((c, i) => { const o = TMP + `aud${i}.wav`, D = c.d.toFixed(4);
+    ff("-i", c.own ? CL + c.file : c.audio, "-vn", "-af", `apad=whole_dur=${D}`, "-t", D, "-ac", "1", "-ar", "48000", o); return o; });
+  fs.writeFileSync(TMP + "aud.txt", parts.map(p => `file '${path.basename(p)}'\n`).join(""));
+  const AUD = OD + `audio_${base}.wav`; ff("-f", "concat", "-safe", "0", "-i", TMP + "aud.txt", "-c", "copy", AUD);
+  // video
   const ins = [], fl = [];
-  // tpad clona el último cuadro: si el clip dura EXACTAMENTE T, sin él el xfade se queda sin los 0,1 s de solape y se corre todo
-  C.forEach((c, i) => { const L = c.T + (i < C.length - 1 ? X : 0); ins.push("-i", CL + c.file);
-    fl.push(`[${i}:v]fps=30,scale=1920:1080:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=1,trim=duration=${L.toFixed(3)},setpts=PTS-STARTPTS[v${i}]`); });
-  let prev = "v0", off = 0;
-  for (let i = 1; i < C.length; i++) { off += C[i - 1].T; fl.push(`[${prev}][v${i}]xfade=transition=fade:duration=${X}:offset=${off.toFixed(3)}[x${i}]`); prev = `x${i}`; }
-  ff(...ins, "-i", CL + "_audio_total.wav", "-filter_complex", fl.join(";"), "-map", `[${prev}]`, "-map", `${C.length}:a`,
-    "-r", "30", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", P.out);
-  log("OK", P.out, dur(P.out).toFixed(2) + "s (30 fps, 1920x1080) — hoja de contactos antes de usarlo");
+  C.forEach((c, i) => {
+    const xn = i < C.length - 1 ? (c.cutNext ? 1 : Math.round(X * FPS)) : 0; c.xn = xn; ins.push("-i", CL + c.file);
+    // tpad clona el último cuadro (clips que vienen justo en T o más cortos que lo pedido)
+    const post = `fps=${FPS},scale=1920:1080:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=2,trim=end_frame=${c.nf + xn},setpts=PTS-STARTPTS[v${i}]`;
+    if (c.mode === "acc") {
+      const a = Math.round(c.ve * FPS), tailF = c.nf - a, sp = (c.T - a / FPS) / (tailF / FPS);
+      fl.push(`[${i}:v]split[a${i}][b${i}]`, `[a${i}]trim=0:${(a / FPS).toFixed(4)},setpts=PTS-STARTPTS[p${i}]`,
+        `[b${i}]trim=${(a / FPS).toFixed(4)}:${c.T},setpts=(PTS-STARTPTS)/${sp.toFixed(4)}[q${i}]`, `[p${i}][q${i}]concat=n=2:v=1:a=0,${post}`);
+      c.speed = +sp.toFixed(3);
+    } else if (c.slow) fl.push(`[${i}:v]trim=0:${c.src},setpts=(PTS-STARTPTS)/${c.slow},${post}`);
+    else fl.push(`[${i}:v]${post}`);
+  });
+  // corte limpio = xfade de 1 cuadro (sin fundido visible); fundido = 3 cuadros (0,1 s)
+  let prev = "v0";
+  for (let i = 1; i < C.length; i++) { const x = C[i - 1].xn; fl.push(`[${prev}][v${i}]xfade=transition=fade:duration=${(x / FPS).toFixed(4)}:offset=${(Bv[i] / FPS).toFixed(4)}[x${i}]`); prev = `x${i}`; }
+  fs.writeFileSync(TMP + "graph.txt", fl.join(";\n"));
+  ff(...ins, "-i", AUD, "-/filter_complex", TMP + "graph.txt", "-map", `[${prev}]`, "-map", `${C.length}:a`, "-r", String(FPS), "-fps_mode", "cfr",
+    "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", "-pix_fmt", "yuv420p", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv",
+    "-bsf:v", "h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1:video_full_range_flag=0", // sin esto quedan "unknown"
+    "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", OUT);
+  const tl = C.map((c, i) => ({ id: c.id, file: c.file, start: +c.start.toFixed(4), T: c.T, dur: +c.adur.toFixed(4), vstart: +(Bv[i] / FPS).toFixed(4), vdur: +(c.nf / FPS).toFixed(4), mode: c.mode, speed: c.speed, slow: c.slow, cut: c.cutNext || undefined, detail: c.detail || undefined, text: c.text }));
+  fs.writeFileSync(OD + `timeline_${base}.json`, JSON.stringify(tl, null, 1));
+  const nfr = +execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", OUT]).toString().trim();
+  const pad = C.filter(c => !c.own).reduce((a, c) => a + (c.d - c.len), 0);
+  log(`OK ${OUT} ${dur(OUT).toFixed(2)}s · cuadros ${nfr}/${Bv.at(-1)}${nfr !== Bv.at(-1) ? " ⛔ NO COINCIDEN" : " ✓"} · audio ${dur(AUD).toFixed(2)}s · cortes limpios ${C.filter(c => c.cutNext).length}/${C.length - 1}`
+    + ` · acc ${C.filter(c => c.mode === "acc").map(c => c.id + "@" + c.speed).join(" ") || "-"} · silencio agregado ${pad.toFixed(2)}s — hoja de contactos antes de usarlo`);
 }
