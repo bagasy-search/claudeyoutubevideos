@@ -2,7 +2,7 @@
 import React from "react";
 import { AvatarClip, Clip, ClipHold, Foto, Lamina } from "../falifting/Piezas";
 import { BigNumber, CrossList, FactorChips, GuideCTA, KeyWords, LoopCards, MythFlip, NameTag, QuoteCard, RedFlags, SplitCompare, StepsPaper, StoryCard } from "../falifting/Kit";
-import { FaceMuscles, RoutineClock } from "../falifting/KitNuevos";
+import { FaceMuscles, FlechasTrack, Gravedad, LaminaV2NB, RoutineClock } from "../falifting/KitNuevos";
 
 export type Cue = { key: string; start: number; dur: number; el: (d: number) => React.ReactNode };
 export const CUES: Cue[] = [
@@ -21,8 +21,8 @@ export const CUES: Cue[] = [
   { key: "clip_1835", start: 61.166666666666664, dur: 5.7, el: (d) => <Clip src="broll/falifting/falifting_011.mp4" seed={1835} frames={218} /> },
   { key: "clip_2006", start: 66.86666666666666, dur: 4.3, el: (d) => <Clip src="broll/falifting/falifting_012.mp4" seed={2006} frames={239} /> },
   { key: "clip_2135", start: 71.16666666666667, dur: 3.3333333333333335, el: (d) => <Foto src="img/falifting/falifting_012_last.jpg" seed={2135} punch /> },
-  { key: "clip_2235", start: 74.5, dur: 6.933333333333334, el: (d) => <Clip src="broll/falifting/falifting_013.mp4" seed={2235} frames={239} /> },
-  { key: "componente_2443", start: 81.43333333333334, dur: 3.9, el: (d) => <BigNumber durationInFrames={d} {...({"value":"5 DÍAS","unit":"","caption":"por semana, como mínimo · mejor todos","tone":"teal","bed":"img/falifting/falifting_013_bed.jpg"} as any)} /> },
+  { key: "componente_2235", start: 74.5, dur: 6.933333333333334, el: (d) => <FlechasTrack durationInFrames={d} {...({"durS":6.94,"sc":0.8675,"bed":"img/falifting/falifting_013.jpg"} as any)} /> },
+  { key: "componente_2443", start: 81.43333333333334, dur: 3.9, el: (d) => <BigNumber durationInFrames={d} {...({"value":"5 DÍAS","unit":"","caption":"por semana, como mínimo · mejor todos","tone":"teal","bed":"img/falifting/falifting_012_bed.jpg"} as any)} /> },
   { key: "clip_2560", start: 85.33333333333333, dur: 6.1, el: (d) => <Clip src="broll/falifting_st/falifting_015.mp4" seed={2560} frames={359} /> },
   { key: "clip_2743", start: 91.43333333333334, dur: 3.6666666666666665, el: (d) => <Clip src="broll/falifting_st/falifting_016.mp4" seed={2743} frames={359} /> },
   { key: "componente_2853", start: 95.1, dur: 6.933333333333334, el: (d) => <BigNumber durationInFrames={d} {...({"value":"2 A 3 MESES","unit":"","caption":"haciéndolo seguido · no es una semana","tone":"amber","bed":"img/falifting/falifting_016_bed.jpg"} as any)} /> },
@@ -52,11 +52,9 @@ export const CUES: Cue[] = [
   { key: "avatar_6220", start: 207.33333333333334, dur: 10.566666666666666, el: (d) => <AvatarClip src="broll/falifting_av/win-008.mp4" seed={6220} /> },
   { key: "clip_6537", start: 217.9, dur: 4.133333333333334, el: (d) => <Clip src="broll/falifting_st/falifting_039.mp4" seed={6537} frames={359} /> },
   { key: "clip_6661", start: 222.03333333333333, dur: 3.3333333333333335, el: (d) => <Clip src="broll/falifting_st/falifting_039.mp4" seed={6661} frames={197} startFrom={5.4} /> },
-  { key: "componente_6761", start: 225.36666666666667, dur: 21.966666666666665, el: (d) => <FaceMuscles durationInFrames={d} {...({"title":"Los músculos que trabajas","muscles":[{"key":"frontal","label":"Frontal","at":0.64},{"key":"ojos","label":"Orbicular de los ojos","at":4.94},{"key":"cigo","label":"Cigomáticos","at":9.66},{"key":"boca","label":"Orbicular de la boca","at":15.16},{"key":"platisma","label":"Platisma","at":19.36}],"bed":"img/falifting/falifting_039_bed.jpg"} as any)} /> },
-  { key: "clip_7420", start: 247.33333333333334, dur: 3.9, el: (d) => <Clip src="broll/falifting_st/falifting_039.mp4" seed={7420} frames={359} /> },
-  { key: "clip_7537", start: 251.23333333333332, dur: 4.9, el: (d) => <Clip src="broll/falifting_st/falifting_045.mp4" seed={7537} frames={296} /> },
-  { key: "clip_7684", start: 256.1333333333333, dur: 3.7, el: (d) => <Clip src="broll/falifting_st/falifting_046.mp4" seed={7684} frames={359} /> },
-  { key: "avatar_7795", start: 259.8333333333333, dur: 18.2, el: (d) => <AvatarClip src="broll/falifting_av/win-009.mp4" seed={7795} /> },
+  { key: "componente_6761", start: 225.36666666666667, dur: 20.833333333333332, el: (d) => <FaceMuscles durationInFrames={d} {...({"durS":20.84,"title":"Los músculos que trabajas","muscles":[{"key":"frontal","label":"Frontal","at":0.64},{"key":"ojos","label":"Orbicular de los ojos","at":4.94},{"key":"cigo","label":"Cigomáticos","at":9.66},{"key":"boca","label":"Orbicular de la boca","at":15.16},{"key":"platisma","label":"Platisma","at":19.36}],"bed":"img/falifting/falifting_039_bed.jpg"} as any)} /> },
+  { key: "componente_7386", start: 246.2, dur: 27.333333333333332, el: (d) => <Gravedad durationInFrames={d} {...({"durS":27.34,"G":{"arrows":64,"sag":245,"flip":459,"calls":[488,576,618],"end":820,"pp":true},"bed":"img/falifting/falifting_039_bed.jpg"} as any)} /> },
+  { key: "avatar_8206", start: 273.53333333333336, dur: 4.5, el: (d) => <AvatarClip src="broll/falifting_av/win-009.mp4" seed={8206} startFrom={13.72} /> },
   { key: "clip_8341", start: 278.03333333333336, dur: 4.066666666666666, el: (d) => <Clip src="broll/falifting_st/falifting_050.mp4" seed={8341} frames={329} /> },
   { key: "clip_8463", start: 282.1, dur: 4.033333333333333, el: (d) => <Clip src="broll/falifting_st/falifting_050.mp4" seed={8463} frames={180} startFrom={4.95} /> },
   { key: "componente_8584", start: 286.1333333333333, dur: 5.3, el: (d) => <SplitCompare durationInFrames={d} {...({"title":"Lo que se vio","left":{"label":"Lo que prometen","text":"Otra cara, diez años menos","tone":"danger"},"right":{"label":"El estudio","text":"Mejillas algo más llenas","tone":"teal"},"verdict":"Algo. No otra cara.","bed":"img/falifting/falifting_050_bed.jpg"} as any)} /> },
@@ -89,11 +87,7 @@ export const CUES: Cue[] = [
   { key: "clip_12751", start: 425.03333333333336, dur: 6.4, el: (d) => <Clip src="broll/falifting_st/falifting_073.mp4" seed={12751} frames={359} /> },
   { key: "avatar_12943", start: 431.43333333333334, dur: 6.6, el: (d) => <AvatarClip src="broll/falifting_av/win-014.mp4" seed={12943} /> },
   { key: "clip_13141", start: 438.03333333333336, dur: 0.06666666666666667, el: (d) => <Clip src="broll/falifting_st/falifting_073.mp4" seed={13141} frames={359} /> },
-  { key: "lamina_13143", start: 438.1, dur: 8.3, el: (d) => <Lamina src="img/falifting/falifting_lamina.jpg" zoom="completa" desde="completa" /> },
-  { key: "lamina_13392", start: 446.4, dur: 7.233333333333333, el: (d) => <Lamina src="img/falifting/falifting_lamina.jpg" zoom="pasos" desde="completa" /> },
-  { key: "lamina_13609", start: 453.6333333333333, dur: 9.333333333333334, el: (d) => <Lamina src="img/falifting/falifting_lamina.jpg" zoom="paso2" desde="pasos" /> },
-  { key: "lamina_13889", start: 462.96666666666664, dur: 5.8, el: (d) => <Lamina src="img/falifting/falifting_lamina.jpg" zoom="paso3" desde="paso2" /> },
-  { key: "lamina_14063", start: 468.76666666666665, dur: 8.233333333333333, el: (d) => <Lamina src="img/falifting/falifting_lamina.jpg" zoom="errores" desde="paso3" /> },
+  { key: "componente_13143", start: 438.1, dur: 38.9, el: (d) => <LaminaV2NB durationInFrames={d} {...({"durS":38.9,"T":{"cards":[142,249,335,466,567,654,746],"err":920,"w3":[329,371,460,502],"wE":[970,1012,1117,1159],"foot":835,"qr":null},"bed":"img/falifting/falifting_073_bed.jpg"} as any)} /> },
   { key: "avatar_14310", start: 477, dur: 9.1, el: (d) => <AvatarClip src="broll/falifting_av/win-015.mp4" seed={14310} /> },
   { key: "clip_14583", start: 486.1, dur: 0.03333333333333333, el: (d) => <Clip src="broll/falifting_st/falifting_073.mp4" seed={14583} frames={359} /> },
   { key: "componente_14584", start: 486.1333333333333, dur: 10.233333333333333, el: (d) => <GuideCTA durationInFrames={d} {...({"kicker":"DE LA GUÍA DEL DR. FEDERER","title":"Esta es una página de la guía","sub":"En la tele, escanea el código. En el teléfono, el enlace está abajo.","cover":"img/falifting/portada_piel.jpg","qr":"img/falifting/qr_falifting.png","domain":"drfederer.com","bed":"img/falifting/falifting_lamina.jpg"} as any)} /> },
@@ -147,7 +141,6 @@ export const OVERLAYS: Cue[] = [
   { key: "ov_1640", start: 54.666666666666664, dur: 5.8, el: (d) => <NameTag durationInFrames={d} {...({"name":"4 · LA BOCA","role":"«O» larga y sonrisa · 1 min"} as any)} /> },
   { key: "ov_1841", start: 61.36666666666667, dur: 5.5, el: (d) => <NameTag durationInFrames={d} {...({"name":"5 · LA MANDÍBULA","role":"Nudillos, del mentón a la oreja · 1 min"} as any)} /> },
   { key: "ov_2012", start: 67.06666666666666, dur: 5.8, el: (d) => <NameTag durationInFrames={d} {...({"name":"6 · EL CUELLO","role":"Labio de abajo sobre el de arriba · 1 min"} as any)} /> },
-  { key: "ov_2241", start: 74.7, dur: 5.8, el: (d) => <NameTag durationInFrames={d} {...({"name":"7 · EL CIERRE","role":"Palmas hacia las orejas y respirar · 1 min"} as any)} /> },
   { key: "ov_4217", start: 140.56666666666666, dur: 3.433333333333333, el: (d) => <NameTag durationInFrames={d} {...({"name":"Dr. Federer","role":"Médico general · salud después de los 60"} as any)} /> },
   { key: "ov_8749", start: 291.6333333333333, dur: 4.766666666666667, el: (d) => <KeyWords durationInFrames={d} {...({"words":[{"t":"LIFTING DE"},{"t":"TONO","hl":true}]} as any)} /> },
 ];

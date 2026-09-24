@@ -154,3 +154,7 @@ export const FaceMuscles: React.FC<P & { title?: string; muscles?: Mus[] }> = ({
     </AbsoluteFill>
   );
 };
+
+// componentes aprobados por el creador (prototipos con tracking facial)
+export { Gravedad, FlechasTrack } from "../proto/Proto";
+export { LaminaV2NB } from "../proto/LaminaV2";

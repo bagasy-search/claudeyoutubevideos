@@ -117,7 +117,7 @@ for (let i = 0; i < MOM.length; i++) {
     const { p, ats } = resolve(c, t0);
     const lastHit = ats.length ? Math.max(...ats) : 0;
     const piso = Math.min(11, 2.8 + 0.28 * Math.max(0, palabras(p) - 3));
-    const want = Math.min(lastHit + 2.6 > 13 ? Math.min(24, lastHit + 2.6) : 13, Math.max(m.dur, piso, lastHit + 2.6, c.comp === "GuideCTA" ? 6 : 0));
+    const want = c.props.durS ? c.props.durS : Math.min(lastHit + 2.6 > 13 ? Math.min(24, lastHit + 2.6) : 13, Math.max(m.dur, piso, lastHit + 2.6, c.comp === "GuideCTA" ? 6 : 0));
     const out = Math.min(t0 + want, proxAvatar(t0 + 0.1));
     for (const at of ats) if (at < 0 || at > out - t0 - 0.4) { console.error(`⛔ ${c.name} (${c.comp}): tiempo ${at}s fuera del componente (${(out - t0).toFixed(2)}s)`); fails++; }
     for (let j = i + 1; j < MOM.length && MOM[j].t < out - 0.3; j++) if (SPEC[MOM[j].name]?.t !== "avatar") skip.add(j);

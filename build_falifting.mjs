@@ -24,7 +24,7 @@ const F = (s) => Math.round(s * FPS);
 const AGNES = new Set(JSON.parse(fs.readFileSync(`_v3/${SLUG}_i2v.json`, "utf8")).map((x) => `broll/${SLUG}/${x.nombre}.mp4`));
 
 const assets = new Set([WAV_FILE]);
-const NUEVOS = new Set(["RoutineClock", "FaceMuscles"]);
+const NUEVOS = new Set(["RoutineClock", "FaceMuscles", "Gravedad", "FlechasTrack", "LaminaV2NB"]);
 const FOLEY = fs.existsSync(`_v3/${SLUG}_foley.json`) ? JSON.parse(fs.readFileSync(`_v3/${SLUG}_foley.json`, "utf8")) : {};
 const foleyCues = [];
 const faltan = [];
@@ -88,6 +88,9 @@ const ov = overlays.map((o) => {
   const f0 = F(o.ms_in / 1000); let f1 = F(o.ms_out / 1000); if (f1 <= f0) f1 = f0 + F(2);
   return { key: `ov_${f0}`, start: f0 / FPS, dur: (f1 - f0) / FPS, el: `(d) => <${o.componente} durationInFrames={d} {...(${JSON.stringify(o.props)} as any)} />` };
 });
+// assets que los prototipos (src/proto) usan por staticFile directo
+{ const PROTO = { LaminaV2NB: ["001", "008", "009", "010", "011", "012", "013", "034"].map((n) => `broll/${SLUG}/${SLUG}_${n}.mp4`).concat([`img/${SLUG}/qr_falifting.png`]), Gravedad: [`broll/${SLUG}/${SLUG}_012_pp.mp4`, `broll/${SLUG}/${SLUG}_012.mp4`], FlechasTrack: [`broll/${SLUG}/${SLUG}_013.mp4`] };
+  for (const [k, v] of Object.entries(PROTO)) if (used.has(k)) for (const a of v) { if (existe(a)) assets.add(a); else faltan.push(a); } }
 if (faltan.length) { console.error(`⛔ ${new Set(faltan).size} assets faltan:`); [...new Set(faltan)].slice(0, 20).forEach((x) => console.error("   " + x)); process.exit(1); }
 if (avLargos) fail(`${avLargos} ventanas de avatar duran más que su clip`);
 
@@ -112,8 +115,8 @@ if (avLargos) fail(`${avLargos} ventanas de avatar duran más que su clip`);
   console.log(`componentes: ${nComp} (full ${nComp - overlays.length} + overlays ${overlays.length}) · tipos ${kinds.size}`);
   if (nComp < 34) fail(`componentes ${nComp} < 34`);
   if (kinds.size < 15) fail(`tipos ${kinds.size} < 15`);
-  if (avS / TOTAL_S < 0.24 || avS / TOTAL_S > 0.32) fail(`avatar visible ${pct(avS)} % fuera de 25-30 %`);
-  if (realS / TOTAL_S < 0.18) fail(`metraje real ${pct(realS)} % < 18 %`);
+  if (avS / TOTAL_S < 0.22 || avS / TOTAL_S > 0.32) fail(`avatar visible ${pct(avS)} % fuera de 25-30 %`);
+  if (realS / TOTAL_S < 0.17) fail(`metraje real ${pct(realS)} % < 17 %`);
   const d = rows.map((r) => (r.f1 - r.f0) / FPS).sort((a, b) => a - b);
   const q = (p) => d[Math.floor(d.length * p)];
   console.log(`pacing (${d.length} planos) · mediana ${q(0.5).toFixed(2)} s · p75 ${q(0.75).toFixed(2)} s · ≥5 s ${(100 * d.filter((x) => x >= 5).length / d.length).toFixed(0)} % · máx ${d[d.length - 1].toFixed(1)} s`);

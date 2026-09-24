@@ -22,7 +22,6 @@ export const MainFalifting: React.FC = () => (
     <Sequence from={198} durationInFrames={155} layout="none"><Audio src={staticFile("broll/falifting/falifting_001_fx.m4a")} volume={(f) => 1 * Math.min(1, f / 4.5, (155 - f) / 4.5)} /></Sequence>
     <Sequence from={1210} durationInFrames={180} layout="none"><Audio src={staticFile("broll/falifting/falifting_008_fx.m4a")} volume={(f) => 1 * Math.min(1, f / 4.5, (180 - f) / 4.5)} /></Sequence>
     <Sequence from={1634} durationInFrames={201} layout="none"><Audio src={staticFile("broll/falifting/falifting_010_fx.m4a")} volume={(f) => 1 * Math.min(1, f / 4.5, (201 - f) / 4.5)} /></Sequence>
-    <Sequence from={2235} durationInFrames={208} layout="none"><Audio src={staticFile("broll/falifting/falifting_013_fx.m4a")} volume={(f) => 1 * Math.min(1, f / 4.5, (208 - f) / 4.5)} /></Sequence>
     <Sequence from={16976} durationInFrames={114} layout="none"><Audio src={staticFile("broll/falifting/falifting_095_fx.m4a")} volume={(f) => 1 * Math.min(1, f / 4.5, (114 - f) / 4.5)} /></Sequence>
     <Sequence from={17224} durationInFrames={141} layout="none"><Audio src={staticFile("broll/falifting/falifting_097_fx.m4a")} volume={(f) => 1 * Math.min(1, f / 4.5, (141 - f) / 4.5)} /></Sequence>
   </AbsoluteFill>
