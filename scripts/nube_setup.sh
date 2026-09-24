@@ -65,7 +65,7 @@ if ! grep -q 'video2-secrets' ~/.claude/CLAUDE.md 2>/dev/null; then
 - PRIMER PASO de cada sesión: `bash ~/.video2-secrets/bootstrap_repo.sh` (pone .env/.env.local en el repo, la memoria del proyecto y node_modules). Si no existe, el setup falló: leé `~/setup_videos.log`.
 - Claves: `set -a; . ~/.video2-secrets/video2.env; . ~/.video2-secrets/video2.env.local; set +a`. No imprimirlas ni commitearlas: el repo es PÚBLICO.
 - Memoria del creador: @~/.claude/memoria/MEMORY.md — leé el .md de cada tema antes de actuar.
-- Skills del creador en ~/.claude/skills. Rama de trabajo: `nube`. Sin disco D:, GPU local, ComfyUI ni Chrome.
+- Skills del creador en ~/.claude/skills. Rama de trabajo: `main` (nube quedó fusionada el 24-sep). Sin disco D:, GPU local, ComfyUI ni Chrome.
 - Español rioplatense.
 MD
 fi
