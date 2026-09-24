@@ -56,6 +56,17 @@ grep -q 'video2-secrets' ~/.bashrc 2>/dev/null || cat >> ~/.bashrc <<'RC'
 # video2-secrets
 set -a; . ~/.video2-secrets/video2.env 2>/dev/null; . ~/.video2-secrets/video2.env.local 2>/dev/null; set +a
 RC
+
+# 4b) Remotion en la nube: Chrome headless_shell de Playwright + CAs del proxy en el NSS de Chrome
+CHROME=$(ls /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell 2>/dev/null | head -1)
+if [ -n "$CHROME" ]; then
+  grep -q REMOTION_CHROME ~/.bashrc || echo "export REMOTION_CHROME=$CHROME" >> ~/.bashrc
+fi
+if [ -f /root/.ccr/ca-bundle.crt ] && command -v certutil >/dev/null || apt-get install -y -qq libnss3-tools >/dev/null 2>&1; then
+  mkdir -p ~/.pki/nssdb; [ -f ~/.pki/nssdb/cert9.db ] || certutil -N -d sql:$HOME/.pki/nssdb --empty-password
+  D=$(mktemp -d); (cd "$D" && csplit -s -z -f c- /root/.ccr/ca-bundle.crt '/-----BEGIN CERTIFICATE-----/' '{*}' 2>/dev/null)
+  for c in "$D"/c-*; do subj=$(openssl x509 -noout -subject -in "$c" 2>/dev/null); case "$subj" in *Anthropic*) certutil -A -d sql:$HOME/.pki/nssdb -t "C,," -n "$(echo "$subj" | sed 's/.*CN *= *//')" -i "$c" 2>/dev/null;; esac; done; rm -rf "$D"
+fi
 cp ~/.bashrc ~/.bash_profile 2>/dev/null || true
 
 # 5) instrucciones para Claude en TODAS las sesiones
@@ -65,7 +76,10 @@ if ! grep -q 'video2-secrets' ~/.claude/CLAUDE.md 2>/dev/null; then
 - PRIMER PASO de cada sesión: `bash ~/.video2-secrets/bootstrap_repo.sh` (pone .env/.env.local en el repo, la memoria del proyecto y node_modules). Si no existe, el setup falló: leé `~/setup_videos.log`.
 - Claves: `set -a; . ~/.video2-secrets/video2.env; . ~/.video2-secrets/video2.env.local; set +a`. No imprimirlas ni commitearlas: el repo es PÚBLICO.
 - Memoria del creador: @~/.claude/memoria/MEMORY.md — leé el .md de cada tema antes de actuar.
-- Skills del creador en ~/.claude/skills. Rama de trabajo: `main` (nube quedó fusionada el 24-sep). Sin disco D:, GPU local, ComfyUI ni Chrome.
+- Skills del creador en ~/.claude/skills. Rama de trabajo: `nube`. Sin disco D:, GPU local, ComfyUI ni Chrome.
+- Remotion local (stills/pruebas): `npx remotion still ... --browser-executable="$REMOTION_CHROME"`. Los renders de verdad van al FARM (`node scripts/farm.mjs`).
+- ⛔ MODAL NO ANDA en la nube (usa gRPC y el proxy no lo soporta): el ASR va por el respaldo `whisper-1` de OpenAI.
+- `public/` viene casi vacío (los assets no están en git): se generan en la sesión y el farm los empaqueta desde este disco.
 - Español rioplatense.
 MD
 fi
