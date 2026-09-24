@@ -45,7 +45,7 @@ const QR: React.FC = () => {
   );
 };
 
-export const MainFaperejil: React.FC = () => (
+export const MainFaoliva: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
     {TL.map((c, i) => (
       <Sequence key={i} from={c.from} durationInFrames={c.dur}>
