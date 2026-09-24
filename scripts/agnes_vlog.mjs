@@ -72,7 +72,7 @@ if (fase === "anclas") {
     plans.forEach((pl, pi) => pl.Q.anchors.forEach(a => {
       const out = pl.A + a.id + ".png"; if (fs.existsSync(out)) return;
       const deps = a.from.map(n => rp(pl, n)); pend.push(a.id);
-      if (deps.every(d => fs.existsSync(d))) items.push({ id: `p${pi}__${a.id}`, out, prompt: a.prompt + (a.id === "K0" ? "" : " Everything else identical.") + IDENT + LIGHT, inputs: [...deps.map(small), FG] });
+      if (deps.every(d => fs.existsSync(d))) items.push({ id: `p${pi}__${a.id}`, out, prompt: a.prompt + (a.id === "K0" ? "" : " Everything else identical.") + (a.noface ? "" : IDENT) + LIGHT, inputs: a.noface ? deps.map(small) : [...deps.map(small), FG] }); // noface: detalle de manos/objetos (con la cara al final vuelve a plano medio)
     }));
     if (!items.length) { if (pend.length) throw new Error("anclas sin entradas: " + pend.join(",")); break; }
     ronda++;
