@@ -1,5 +1,11 @@
 # video2
 
+> ☁️ **SESIÓN EN LA NUBE (claude.ai/code, entorno "Videos")** — si NO hay `.env` en el repo, antes de nada:
+> `bash ~/.video2-secrets/bootstrap_repo.sh` · si ese archivo no existe (el setup del entorno no corrió):
+> `bash scripts/nube_setup.sh && bash ~/.video2-secrets/bootstrap_repo.sh` (necesita la variable `GH_TOKEN`).
+> Eso trae claves, skills y memoria del repo privado del creador. Este repo es PÚBLICO: jamás commitear `.env*` ni imprimir claves.
+
+
 > 🏭 **ORDEN VIGENTE (15-sep-2026): FÁBRICA x10.** Antes de producir o tocar el pipeline de
 > video, leé `factory/PLAN_FABRICA.md` (§0–§2 + §7 LOG), avanzá el próximo ítem del checklist
 > y actualizá el LOG al cerrar. Prohibido crear scripts nuevos por slug (`build_<slug>.mjs`, etc.).
