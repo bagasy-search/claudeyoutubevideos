@@ -2,7 +2,7 @@
 
 > ☁️ **SESIÓN EN LA NUBE (claude.ai/code, entorno "Videos")** — si NO hay `.env` en el repo, antes de nada:
 > `bash ~/.video2-secrets/bootstrap_repo.sh` · si ese archivo no existe (el setup del entorno no corrió):
-> `bash scripts/nube_setup.sh && bash ~/.video2-secrets/bootstrap_repo.sh` (necesita la variable `GH_TOKEN`).
+> `bash scripts/nube_setup.sh && bash ~/.video2-secrets/bootstrap_repo.sh` (necesita `bautielcrack4-web/claude-brain` conectado a la sesión como 2º repo; si no está, pedíselo al creador — NO hace falta ningún token).
 > Eso trae claves, skills y memoria del repo privado del creador. Este repo es PÚBLICO: jamás commitear `.env*` ni imprimir claves.
 
 

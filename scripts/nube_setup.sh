@@ -1,6 +1,6 @@
 #!/bin/bash
 # Entorno "Videos" — corre al iniciar cada sesión. NO depende de la carpeta en la que arranque.
-# Única variable necesaria: GH_TOKEN. Claves, skills y memoria salen del repo PRIVADO claude-brain.
+# Sin variables: claude-brain se conecta a la sesión como 2º repo (o BRAIN_TOKEN=ghp_... como respaldo). Claves, skills y memoria salen del repo PRIVADO claude-brain.
 LOG=~/setup_videos.log
 exec > >(tee -a "$LOG") 2>&1
 echo "=== setup Videos $(date -u +%FT%TZ) · pwd=$(pwd) · HOME=$HOME"
@@ -10,11 +10,21 @@ echo "=== setup Videos $(date -u +%FT%TZ) · pwd=$(pwd) · HOME=$HOME"
 pip install -q modal openai requests yt-dlp 2>/dev/null || true
 
 # 2) cerebro desde claude-brain → ~/.video2-secrets, ~/.claude/skills, ~/.claude/memoria
-if [ -z "${GH_TOKEN:-}" ]; then echo "!! FALTA la variable GH_TOKEN en el entorno"; exit 0; fi
-B=/tmp/claude-brain; rm -rf "$B"
-if ! git clone -q --depth 1 "https://x-access-token:${GH_TOKEN}@github.com/bautielcrack4-web/claude-brain.git" "$B"; then
-  echo "!! no pude clonar claude-brain (GH_TOKEN sin acceso o red bloqueada)"; exit 0
+# Acceso a claude-brain, en orden:
+#  1) proxy de GitHub de la nube (claude-brain conectado a la sesión como 2º repo) — sin token
+#  2) BRAIN_TOKEN (token real, si lo cargaste en el entorno; GH_TOKEN lo pisa la nube)
+#  3) GH_TOKEN sólo si es un token real (ghp_ / github_pat_)
+B=/tmp/claude-brain; rm -rf "$B"; OK=
+git clone -q --depth 1 https://github.com/bautielcrack4-web/claude-brain.git "$B" 2>/dev/null && OK=proxy
+if [ -z "$OK" ]; then
+  for T in "${BRAIN_TOKEN:-}" "${GH_TOKEN:-}"; do
+    case "$T" in ghp_*|github_pat_*) rm -rf "$B"; git clone -q --depth 1 "https://x-access-token:${T}@github.com/bautielcrack4-web/claude-brain.git" "$B" 2>/dev/null && { OK=token; break; } ;; esac
+  done
 fi
+if [ -z "$OK" ]; then
+  echo "!! no pude clonar claude-brain: conectá bautielcrack4-web/claude-brain a la sesión (botón + junto al repo) o cargá BRAIN_TOKEN=ghp_... en el entorno"; exit 0
+fi
+echo "claude-brain clonado vía $OK"
 S=~/.video2-secrets; mkdir -p "$S" ~/.claude/skills ~/.claude/memoria
 cp "$B/secretos/"* "$S/"
 cp "$S/modal.toml" ~/.modal.toml
