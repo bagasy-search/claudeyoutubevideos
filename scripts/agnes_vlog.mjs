@@ -2,7 +2,7 @@
 // continuas sin cortes. Validado 23-sep-2026 (1:02 Federer mascarilla de arroz, 7 clips en 7 min, $0 + ~$0,10 de anclas).
 // Memoria: reference_agnes_modelos_25_sep2026.md · skill agnes-broll § VLOG CONTINUO.
 //
-//   node scripts/agnes_vlog.mjs <plan.json> anclas   → gpt-image-2 LOW edits, K(n) desde K(n-1) + recorte de cara SIEMPRE
+//   node scripts/agnes_vlog.mjs <plan.json> anclas [más planes…] → gpt-image-2 LOW por BATCH en RONDAS, 1088x608, K(n-1) + cara 128x192 (face_gpt)
 //   node scripts/agnes_vlog.mjs <plan.json> clips    → agnes-video-2.5-flash `reference`, TODOS en paralelo, ancla→ancla
 //   node scripts/agnes_vlog.mjs <plan.json> check    → whisper-1 por clip vs texto esperado + costuras (dif. media /255)
 //   node scripts/agnes_vlog.mjs <plan.json> armar    → une con fundido 0,1 s; audio = tramos (o audio propio del clip)
@@ -48,26 +48,68 @@ const IDENT = " IDENTITY: the presenter must have EXACTLY the face of the man/wo
 const LOOK = " Ultra realistic casual home video, handheld phone footage with small natural shakes, BRIGHT correctly exposed image, big soft daylight from the window, neutral white balance, no grading, no vignette, no dark moody look; real skin with visible pores and fine lines, not smooth, not plastic; natural hands; nothing polished, no music.";
 const SE = "The video STARTS EXACTLY on the first reference image and ENDS EXACTLY on the second reference image: the very first frame is the first image and the very last frame is the second image — same place, same framing, same light, same objects in the same places; in between, one continuous take without cutting or changing angle. The third reference image is only the presenter's real face: keep exactly that face the whole time. ";
 
-// ---------- anclas ----------
-async function edit(out, prompt, inputs) {
-  if (fs.existsSync(out)) return log("ya", path.basename(out));
-  for (let t = 0; t < 4; t++) {
-    const fd = new FormData();
-    fd.append("model", "gpt-image-2"); fd.append("quality", "low"); fd.append("size", "1536x1024"); fd.append("prompt", prompt);
-    for (const f of inputs) fd.append("image[]", new Blob([fs.readFileSync(f)], { type: mime(f) }), path.basename(f));
-    const j = await (await fetch("https://api.openai.com/v1/images/edits", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd })).json().catch(() => ({}));
-    const b = j?.data?.[0]?.b64_json;
-    if (b) { const raw = out.replace(".png", "_raw.png"); fs.writeFileSync(raw, Buffer.from(b, "base64")); ff("-i", raw, "-vf", "crop=1536:864:0:24", out); return log("OK", path.basename(out)); }
-    log("retry", path.basename(out), JSON.stringify(j).slice(0, 160)); await sleep(15000);
-  }
-  throw new Error("falló " + out);
+// ---------- anclas: gpt-image-2 LOW por BATCH API, por RONDAS (override del creador 23-sep: 4 palancas SIEMPRE) ----------
+// low · Batch (-50 %) · size 1088x608 · ref de cara = SÓLO `face_gpt` (crop 128x192) · entradas achicadas a <=1088x608.
+// Varios planes a la vez: `node scripts/agnes_vlog.mjs <planA> anclas <planB> <planC> …` → cada ronda junta TODAS las anclas
+// cuyas entradas ya existen (de todos los planes) en UN batch; al volver arma la siguiente. Usage real → <dir>/anc/_usage.jsonl
+const GSIZE = "1088x608";
+const OA = "https://api.openai.com/v1", OH = { Authorization: "Bearer " + env.OPENAI_API_KEY };
+async function oa(p, opt = {}) { for (let t = 0; ; t++) { try { const r = await fetch(OA + p, { ...opt, headers: { ...OH, ...(opt.headers || {}) }, signal: AbortSignal.timeout(120000) }); if (r.ok || t >= 4) return r; } catch (e) { if (t >= 4) throw e; } await sleep(10000); } }
+function small(f) { // copia <=1088x608 (png) para no pagar tokens de entrada de más
+  const o = f.replace(/\.(png|jpg|jpeg)$/i, "") + "_g1088.png";
+  if (/_g1088\.png$/.test(f) || /^.*K\d+[a-z]?\.png$/.test(path.basename(f)) && dimsOk(f)) return f;
+  if (!fs.existsSync(o) || fs.statSync(o).mtimeMs < fs.statSync(f).mtimeMs) ff("-i", f, "-vf", "scale='min(1088,iw)':'min(608,ih)':force_original_aspect_ratio=decrease", o);
+  return o;
 }
+function dimsOk(f) { try { const [w, h] = execFileSync("ffprobe", ["-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number); return w <= 1088 && h <= 608; } catch { return false; } }
 if (fase === "anclas") {
-  for (const a of P.anchors) {
-    const inputs = a.from.map(refPath); inputs.push(P.face);
-    await edit(ANC + a.id + ".png", a.prompt + (a.id === "K0" ? "" : " Everything else identical.") + IDENT + LIGHT, inputs);
+  const plans = [planPath, ...soloIds].map(pp => { const Q = JSON.parse(fs.readFileSync(pp, "utf8")); const D = Q.dir.replace(/\\/g, "/").replace(/\/?$/, "/"); fs.mkdirSync(D + "anc/", { recursive: true }); return { Q, A: D + "anc/" }; });
+  const rp = (pl, n) => n === "k0" ? pl.Q.k0_from : /^K\d+$/.test(n) ? pl.A + n + ".png" : (pl.Q.extra || {})[n] || n;
+  const FG = P.face_gpt; if (!FG || !fs.existsSync(FG)) throw new Error("falta face_gpt (crop 128x192) en el plan");
+  let ronda = 0, usd = 0, nimg = 0;
+  for (;;) {
+    const items = [], pend = [];
+    plans.forEach((pl, pi) => pl.Q.anchors.forEach(a => {
+      const out = pl.A + a.id + ".png"; if (fs.existsSync(out)) return;
+      const deps = a.from.map(n => rp(pl, n)); pend.push(a.id);
+      if (deps.every(d => fs.existsSync(d))) items.push({ id: `p${pi}__${a.id}`, out, prompt: a.prompt + (a.id === "K0" ? "" : " Everything else identical.") + (a.noface ? "" : IDENT) + LIGHT, inputs: a.noface ? deps.map(small) : [...deps.map(small), FG] }); // noface: detalle de manos/objetos (con la cara al final vuelve a plano medio)
+    }));
+    if (!items.length) { if (pend.length) throw new Error("anclas sin entradas: " + pend.join(",")); break; }
+    ronda++;
+    const cache = new Map(); const U = f => { if (!cache.has(f)) cache.set(f, uri(f)); return cache.get(f); };
+    const jsonl = items.map(it => JSON.stringify({ custom_id: it.id, method: "POST", url: "/v1/images/edits",
+      body: { model: "gpt-image-2", quality: "low", size: GSIZE, n: 1, prompt: it.prompt, images: it.inputs.map(f => ({ image_url: U(f) })) } })).join("\n") + "\n";
+    const fd = new FormData(); fd.append("purpose", "batch"); fd.append("file", new Blob([jsonl], { type: "application/jsonl" }), "anc.jsonl");
+    const file = await (await oa("/files", { method: "POST", body: fd })).json();
+    const b0 = await (await oa("/batches", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ input_file_id: file.id, endpoint: "/v1/images/edits", completion_window: "24h" }) })).json();
+    if (!b0.id) throw new Error("batch no creado: " + JSON.stringify(b0).slice(0, 300));
+    log(`ronda ${ronda}: ${items.length} anclas · ${(jsonl.length / 1048576).toFixed(2)} MB · batch ${b0.id}`);
+    let b = b0; const t0 = Date.now();
+    let cancelado = false; // cola larga: si a los 6 min ya volvió >=85 %, se cancela y se usa el parcial (el resto va a la ronda siguiente)
+    while (!["completed", "failed", "expired", "cancelled"].includes(b.status)) { await sleep(20000); b = await (await oa("/batches/" + b0.id)).json(); const rc = b.request_counts || {}; if ((Date.now() - t0) % 300000 < 20000) log(`  ronda ${ronda} ${b.status} ${JSON.stringify(rc)} ${Math.round((Date.now() - t0) / 1000)}s`);
+      if (!cancelado && b.status === "in_progress" && Date.now() - t0 > 360000 && rc.total && rc.completed >= Math.max(1, Math.floor(rc.total * 0.85)) && rc.completed < rc.total) { await oa("/batches/" + b0.id + "/cancel", { method: "POST" }); cancelado = true; log(`  ronda ${ronda}: cancelo la cola larga con ${rc.completed}/${rc.total} listas`); } }
+    if (!["completed", "cancelled"].includes(b.status) || !b.output_file_id) throw new Error("batch " + b.status + " " + JSON.stringify(b.errors || {}).slice(0, 300));
+    const byId = Object.fromEntries(items.map(it => [it.id, it]));
+    let ok = 0, fail = 0;
+    for (const fid of [b.output_file_id, b.error_file_id].filter(Boolean)) {
+      const txt = await (await oa(`/files/${fid}/content`)).text(); // ~0,5 MB por imagen: rondas de <=40 entran de sobra
+      for (const ln of txt.split("\n").filter(Boolean)) {
+        const r = JSON.parse(ln), it = byId[r.custom_id], d = r.response?.body?.data?.[0], u = r.response?.body?.usage;
+        if (d?.b64_json && it) {
+          fs.writeFileSync(it.out, Buffer.from(d.b64_json, "base64")); ok++; nimg++;
+          // tarifa gpt-image-2 (USD/1M): texto in 5 · imagen in 8 · imagen out 30 → Batch = mitad
+          const itx = u?.input_tokens_details?.text_tokens || 0, iim = u?.input_tokens_details?.image_tokens || 0, out = u?.output_tokens || 0;
+          const c = (itx * 5 + iim * 8 + out * 30) / 1e6 / 2; usd += c;
+          fs.appendFileSync(path.dirname(it.out) + "/_usage.jsonl", JSON.stringify({ id: r.custom_id, usage: u, usd: +c.toFixed(5) }) + "\n");
+          if (nimg === 1) log(`  1ª imagen: usage ${JSON.stringify(u)} → $${c.toFixed(5)}/img (Batch)`);
+        } else { fail++; log("  ✗", r.custom_id, JSON.stringify(r.response?.body?.error || r.error || {}).slice(0, 200)); }
+      }
+    }
+    log(`ronda ${ronda}: ok ${ok} · fail ${fail} · acumulado ${nimg} img $${usd.toFixed(3)}`);
+    if (!ok) throw new Error("ronda sin ninguna imagen");
+    if (process.env.ANC_MAX_RONDAS && ronda >= Number(process.env.ANC_MAX_RONDAS)) { log("tope de rondas (ANC_MAX_RONDAS)"); break; }
   }
-  log("anclas listas → mirá la hoja: identidad igual en todas, sin objetos colados");
+  log(`anclas listas (${nimg} img, $${usd.toFixed(3)}) → mirá la hoja: identidad igual en todas, sin objetos colados`);
 }
 
 // ---------- clips ----------
@@ -94,23 +136,41 @@ async function gen(id, body) {
   }
   log("TIMEOUT", id);
 }
+// semáforo ENTRE procesos (varias escenas en paralelo comparten la cola global): VLOG_SLOTS_DIR + VLOG_MAX (default 12)
+const SLOTS = process.env.VLOG_SLOTS_DIR, MAXS = Number(process.env.VLOG_MAX || 12);
+async function acquire() {
+  if (!SLOTS) return () => {};
+  fs.mkdirSync(SLOTS, { recursive: true });
+  for (;;) {
+    for (let i = 0; i < MAXS; i++) {
+      const f = path.join(SLOTS, "slot" + i);
+      try { fs.writeFileSync(f, String(process.pid), { flag: "wx" }); return () => { try { fs.unlinkSync(f); } catch {} }; } catch {}
+    }
+    await sleep(5000 + Math.random() * 5000);
+  }
+}
 const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSync(CL + "state.json", "utf8")) : {};
 if (fase === "clips") {
   const st = state(), sel = P.clips.filter(c => !soloIds.length || soloIds.includes(c.id));
   await Promise.all(sel.map((c, i) => sleep(i * 3000).then(async () => {
-    const out = soloIds.length ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
+    const out = soloIds.length && st[c.id] ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
     const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(P.face), ...(c.refs || []).map(n => uri(refPath(n)))];
     let body, T;
-    if (c.audio) {
+    if (c.kf) { // plano de DETALLE sin habla: keyframe clava primer y último cuadro; la voz del tramo suena encima en el armado
+      const tr = tramo(c); T = tr.T;
+      body = { mode: "keyframe", seconds: String(T), first_frame: uri(refPath(c.a)), last_frame: uri(refPath(c.b)),
+        prompt: "The video starts exactly on the first frame and ends exactly on the last frame, one continuous close-up take without cutting or changing angle. " + c.action + LOOK + " Nobody speaks, no voices, only quiet natural room sounds." };
+    } else if (c.audio) {
       const tr = tramo(c); T = tr.T;
       body = { mode: "reference", seconds: String(T), images: imgs, audios: [uri(tr.mp3)],
-        prompt: SE + "The presenter is the one speaking: the voice and every word are exactly the reference audio, lips perfectly synced; do not add, repeat or change any word — the audio is the only speech. " + c.action + LOOK + " No other voices." };
+        prompt: SE + "The presenter is the one speaking: the voice and every word are exactly the reference audio, lips perfectly synced; do not add, repeat or change any word — the audio is the only speech; when the audio goes silent he stays silent with his mouth closed until the end, never repeating the last words. " + c.action + LOOK + " No other voices." };
     } else {
       T = c.secs;
       body = { mode: "reference", seconds: String(T), images: imgs,
         prompt: SE + `The person speaking is ${c.who || "the other person (last reference image is their face)"}, ${c.voice}, lips perfectly synced, saying exactly: "${c.line}" Nobody else speaks. ` + c.action + LOOK };
     }
-    await gen(out, body);
+    const rel = await acquire();
+    try { await gen(out, body); } finally { rel(); }
     if (fs.existsSync(CL + out + ".mp4")) { const s = state(); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(CL + "state.json", JSON.stringify(s, null, 1)); }
   })));
   log("clips listos → corré `check`");
@@ -131,25 +191,29 @@ async function vision(frameJpg, facePng) {
 // ---------- check ----------
 if (fase === "check") {
   const st = state(); const fr = (f, t, o) => { ff("-ss", t.toFixed(3), "-i", f, "-frames:v", "1", "-vf", "scale=320:180,format=gray", "-f", "rawvideo", o); return fs.readFileSync(o); };
+  const CK = CL + "check_cache.json", cache = fs.existsSync(CK) ? JSON.parse(fs.readFileSync(CK, "utf8")) : {}; // cache por archivo: no re-transcribir clips ya medidos
   const norm = s => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zñ0-9 ]/g, " ").replace(/\s+/g, " ").trim();
   let prevEnd = null;
   for (const c of P.clips) {
     const s = st[c.id]; if (!s) { log("FALTA", c.id); prevEnd = null; continue; }
-    const f = CL + s.file, wav = CL + c.id + "_chk.wav"; ff("-i", f, "-vn", "-ac", "1", "-ar", "16000", "-t", String(s.T), wav);
+    const f = CL + s.file, wav = CL + c.id + "_chk.wav";
+    if (c.kf) { const st0 = fr(f, 0, CL + "_s.raw"); let costura = ""; if (prevEnd) { let d = 0; for (let i = 0; i < st0.length; i++) d += Math.abs(st0[i] - prevEnd[i]); costura = ` · costura con el anterior ${(d / st0.length).toFixed(1)}/255 (corte a detalle)`; } prevEnd = fr(f, Math.min(s.T, dur(f)) - 0.1, CL + "_e.raw"); log(`${c.id} [${s.file}] detalle (keyframe, sin habla)` + costura); continue; }
+    ff("-i", f, "-vn", "-ac", "1", "-ar", "16000", "-t", String(s.T), wav);
     const fd = new FormData(); fd.append("model", "whisper-1"); fd.append("language", P.lang || "es"); fd.append("response_format", "text");
     fd.append("file", new Blob([fs.readFileSync(wav)], { type: "audio/wav" }), "a.wav");
-    let txt = "(timeout)";
+    let txt = cache[s.file]?.txt || "(timeout)";
     for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
     const esperado = c.text || c.line || "";
     const NUM = /^(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien)$/;
     const wa = norm(esperado).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));
     const a = new Set(wa), extra = b.filter(w => !a.has(w)), falta = [...a].filter(w => !b.includes(w));
     const rep = b.length - wa.length; // palabras de más aunque existan (frases repetidas)
-    const start = fr(f, 0, CL + "_s.raw"), end = fr(f, s.T - 0.04, CL + "_e.raw");
+    const start = fr(f, 0, CL + "_s.raw"), end = fr(f, Math.min(s.T, dur(f)) - 0.1, CL + "_e.raw");
     let costura = ""; if (prevEnd) { let d = 0; for (let i = 0; i < start.length; i++) d += Math.abs(start[i] - prevEnd[i]); costura = ` · costura con el anterior ${(d / start.length).toFixed(1)}/255`; }
     prevEnd = end;
     const mid = CL + c.id + "_mid.jpg"; ff("-ss", (s.T / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=768:-2", mid);
-    const v = await vision(mid, P.face);
+    const v = cache[s.file]?.v || await vision(mid, P.face);
+    if (txt !== "(timeout)" && v) { cache[s.file] = { txt, v }; fs.writeFileSync(CK, JSON.stringify(cache)); }
     const vis = !v ? " · visión: sin respuesta" : ` · cara ${v.same_person ? "✓" : "⛔ NO ES"} (${v.confidence}) · luz ${v.bright ? "✓" : "⛔ oscura"}${v.issues && !/^none/i.test(v.issues) ? " · " + v.issues : ""}`;
     const malVis = v && (!v.same_person || !v.bright);
     log(`${c.id} [${s.file}] ${extra.length + falta.length > 2 || rep > 2 || txt === "(timeout)" || malVis ? "⛔ REGENERAR" : rep > 0 ? "⚠️ revisar" : "ok"} · dice: "${txt.trim()}"` + (extra.length ? ` · de más: ${extra.join(" ")}` : "") + (falta.length ? ` · falta: ${falta.join(" ")}` : "") + (rep > 0 ? ` · ${rep} palabra(s) de más (¿repitió?)` : "") + costura + vis);
@@ -166,7 +230,7 @@ if (fase === "armar") {
   ff("-f", "concat", "-safe", "0", "-i", CL + "_aud.txt", "-c", "copy", CL + "_audio_total.wav");
   const ins = [], fl = [];
   C.forEach((c, i) => { const L = c.T + (i < C.length - 1 ? X : 0); ins.push("-t", L.toFixed(3), "-i", CL + c.file);
-    fl.push(`[${i}:v]fps=30,scale=1920:1080:flags=lanczos,setsar=1,trim=duration=${L.toFixed(3)},setpts=PTS-STARTPTS[v${i}]`); });
+    fl.push(`[${i}:v]fps=30,scale=1920:1080:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=0.5,trim=duration=${L.toFixed(3)},setpts=PTS-STARTPTS[v${i}]`); });
   let prev = "v0", off = 0;
   for (let i = 1; i < C.length; i++) { off += C[i - 1].T; fl.push(`[${prev}][v${i}]xfade=transition=fade:duration=${X}:offset=${off.toFixed(3)}[x${i}]`); prev = `x${i}`; }
   ff(...ins, "-i", CL + "_audio_total.wav", "-filter_complex", fl.join(";"), "-map", `[${prev}]`, "-map", `${C.length}:a`,
