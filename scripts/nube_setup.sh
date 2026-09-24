@@ -6,7 +6,7 @@ exec > >(tee -a "$LOG") 2>&1
 echo "=== setup Videos $(date -u +%FT%TZ) · pwd=$(pwd) · HOME=$HOME"
 
 # 1) herramientas del sistema
-(apt-get update -qq && apt-get install -y -qq ffmpeg jq >/dev/null) || sudo apt-get install -y -qq ffmpeg jq >/dev/null || true
+(apt-get update -qq && apt-get install -y -qq ffmpeg jq gh >/dev/null) || sudo apt-get install -y -qq ffmpeg jq gh >/dev/null || true
 pip install -q modal openai requests yt-dlp 2>/dev/null || true
 
 # 2) cerebro desde claude-brain → ~/.video2-secrets, ~/.claude/skills, ~/.claude/memoria
