@@ -55,7 +55,7 @@ export const MainFalaurel: React.FC = () => (
         ) : c.kind === "lam" ? (
           <Lamina />
         ) : c.kind === "txt" ? (
-          <FraseCinetica durationInFrames={c.dur} words={c.words!} ats={c.ats} tone="warn" onImage={false} />
+          <FraseCinetica durationInFrames={c.dur} words={c.words!} ats={c.ats} perWord={c.perWord} tone="warn" onImage={false} />
         ) : (
           <QR />
         )}

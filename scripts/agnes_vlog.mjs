@@ -85,8 +85,10 @@ if (fase === "anclas") {
     if (!b0.id) throw new Error("batch no creado: " + JSON.stringify(b0).slice(0, 300));
     log(`ronda ${ronda}: ${items.length} anclas · ${(jsonl.length / 1048576).toFixed(2)} MB · batch ${b0.id}`);
     let b = b0; const t0 = Date.now();
-    while (!["completed", "failed", "expired", "cancelled"].includes(b.status)) { await sleep(30000); b = await (await oa("/batches/" + b0.id)).json(); if ((Date.now() - t0) % 300000 < 30000) log(`  ronda ${ronda} ${b.status} ${JSON.stringify(b.request_counts)} ${Math.round((Date.now() - t0) / 1000)}s`); }
-    if (b.status !== "completed") throw new Error("batch " + b.status + " " + JSON.stringify(b.errors || {}).slice(0, 300));
+    let cancelado = false; // cola larga: si a los 6 min ya volvió >=85 %, se cancela y se usa el parcial (el resto va a la ronda siguiente)
+    while (!["completed", "failed", "expired", "cancelled"].includes(b.status)) { await sleep(20000); b = await (await oa("/batches/" + b0.id)).json(); const rc = b.request_counts || {}; if ((Date.now() - t0) % 300000 < 20000) log(`  ronda ${ronda} ${b.status} ${JSON.stringify(rc)} ${Math.round((Date.now() - t0) / 1000)}s`);
+      if (!cancelado && b.status === "in_progress" && Date.now() - t0 > 360000 && rc.total && rc.completed >= Math.max(1, Math.floor(rc.total * 0.85)) && rc.completed < rc.total) { await oa("/batches/" + b0.id + "/cancel", { method: "POST" }); cancelado = true; log(`  ronda ${ronda}: cancelo la cola larga con ${rc.completed}/${rc.total} listas`); } }
+    if (!["completed", "cancelled"].includes(b.status) || !b.output_file_id) throw new Error("batch " + b.status + " " + JSON.stringify(b.errors || {}).slice(0, 300));
     const byId = Object.fromEntries(items.map(it => [it.id, it]));
     let ok = 0, fail = 0;
     for (const fid of [b.output_file_id, b.error_file_id].filter(Boolean)) {
@@ -151,7 +153,7 @@ const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSyn
 if (fase === "clips") {
   const st = state(), sel = P.clips.filter(c => !soloIds.length || soloIds.includes(c.id));
   await Promise.all(sel.map((c, i) => sleep(i * 3000).then(async () => {
-    const out = soloIds.length ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
+    const out = soloIds.length && st[c.id] ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
     const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(P.face), ...(c.refs || []).map(n => uri(refPath(n)))];
     let body, T;
     if (c.kf) { // plano de DETALLE sin habla: keyframe clava primer y último cuadro; la voz del tramo suena encima en el armado
@@ -161,7 +163,7 @@ if (fase === "clips") {
     } else if (c.audio) {
       const tr = tramo(c); T = tr.T;
       body = { mode: "reference", seconds: String(T), images: imgs, audios: [uri(tr.mp3)],
-        prompt: SE + "The presenter is the one speaking: the voice and every word are exactly the reference audio, lips perfectly synced; do not add, repeat or change any word — the audio is the only speech. " + c.action + LOOK + " No other voices." };
+        prompt: SE + "The presenter is the one speaking: the voice and every word are exactly the reference audio, lips perfectly synced; do not add, repeat or change any word — the audio is the only speech; when the audio goes silent he stays silent with his mouth closed until the end, never repeating the last words. " + c.action + LOOK + " No other voices." };
     } else {
       T = c.secs;
       body = { mode: "reference", seconds: String(T), images: imgs,
