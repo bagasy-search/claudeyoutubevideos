@@ -34,8 +34,8 @@ jobs:
           echo "matrix=$LIST" >> "$GITHUB_OUTPUT"
       # PREFETCH del modelo CLIP UNA sola vez (los 20 shards lo bajaban a la vez de HF
       # → rate-limit → fallaban). Acá se baja 1 vez y se cachea; los shards lo restauran.
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: "20"
       - name: cache node_modules
@@ -65,8 +65,8 @@ jobs:
       matrix:
         idx: ${{ fromJSON(needs.prepare.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: "20"
       # CACHE node_modules (incluye el binario de onnxruntime-node) → evita el npm ci
@@ -158,7 +158,7 @@ jobs:
     if: ${{ always() }}   # mergea lo que haya, aunque algún shard falle (no perder todo)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/download-artifact@v4
         with:
           path: parts
