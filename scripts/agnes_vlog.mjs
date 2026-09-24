@@ -145,6 +145,13 @@ async function acquire() {
     for (let i = 0; i < MAXS; i++) {
       const f = path.join(SLOTS, "slot" + i);
       try { fs.writeFileSync(f, String(process.pid), { flag: "wx" }); return () => { try { fs.unlinkSync(f); } catch {} }; } catch {}
+      // slot ocupado: si su dueño murió (corte de red, cierre de sesión) lo libero para que la cola no se trabe
+      try {
+        const pid = Number(fs.readFileSync(f, "utf8").trim());
+        let vivo = true;
+        if (pid && pid !== process.pid) { try { process.kill(pid, 0); } catch (e) { if (e.code === "ESRCH") vivo = false; } }
+        if (!vivo) { fs.unlinkSync(f); log("slot huérfano liberado", "slot" + i, "pid " + pid); i--; }
+      } catch {}
     }
     await sleep(5000 + Math.random() * 5000);
   }
@@ -170,7 +177,7 @@ if (fase === "clips") {
         prompt: SE + `The person speaking is ${c.who || "the other person (last reference image is their face)"}, ${c.voice}, lips perfectly synced, saying exactly: "${c.line}" Nobody else speaks. ` + c.action + LOOK };
     }
     const rel = await acquire();
-    try { await gen(out, body); } finally { rel(); }
+    try { await gen(out, body); } catch (e) { log("FAIL", out, "red: " + (e?.cause?.code || e?.message || e)); } finally { rel(); }
     if (fs.existsSync(CL + out + ".mp4")) { const s = state(); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(CL + "state.json", JSON.stringify(s, null, 1)); }
   })));
   log("clips listos → corré `check`");
