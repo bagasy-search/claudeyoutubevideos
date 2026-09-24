@@ -191,6 +191,7 @@ async function vision(frameJpg, facePng) {
 // ---------- check ----------
 if (fase === "check") {
   const st = state(); const fr = (f, t, o) => { ff("-ss", t.toFixed(3), "-i", f, "-frames:v", "1", "-vf", "scale=320:180,format=gray", "-f", "rawvideo", o); return fs.readFileSync(o); };
+  const CK = CL + "check_cache.json", cache = fs.existsSync(CK) ? JSON.parse(fs.readFileSync(CK, "utf8")) : {}; // cache por archivo: no re-transcribir clips ya medidos
   const norm = s => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zñ0-9 ]/g, " ").replace(/\s+/g, " ").trim();
   let prevEnd = null;
   for (const c of P.clips) {
@@ -200,7 +201,7 @@ if (fase === "check") {
     ff("-i", f, "-vn", "-ac", "1", "-ar", "16000", "-t", String(s.T), wav);
     const fd = new FormData(); fd.append("model", "whisper-1"); fd.append("language", P.lang || "es"); fd.append("response_format", "text");
     fd.append("file", new Blob([fs.readFileSync(wav)], { type: "audio/wav" }), "a.wav");
-    let txt = "(timeout)";
+    let txt = cache[s.file]?.txt || "(timeout)";
     for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
     const esperado = c.text || c.line || "";
     const NUM = /^(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien)$/;
@@ -211,7 +212,8 @@ if (fase === "check") {
     let costura = ""; if (prevEnd) { let d = 0; for (let i = 0; i < start.length; i++) d += Math.abs(start[i] - prevEnd[i]); costura = ` · costura con el anterior ${(d / start.length).toFixed(1)}/255`; }
     prevEnd = end;
     const mid = CL + c.id + "_mid.jpg"; ff("-ss", (s.T / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=768:-2", mid);
-    const v = await vision(mid, P.face);
+    const v = cache[s.file]?.v || await vision(mid, P.face);
+    if (txt !== "(timeout)" && v) { cache[s.file] = { txt, v }; fs.writeFileSync(CK, JSON.stringify(cache)); }
     const vis = !v ? " · visión: sin respuesta" : ` · cara ${v.same_person ? "✓" : "⛔ NO ES"} (${v.confidence}) · luz ${v.bright ? "✓" : "⛔ oscura"}${v.issues && !/^none/i.test(v.issues) ? " · " + v.issues : ""}`;
     const malVis = v && (!v.same_person || !v.bright);
     log(`${c.id} [${s.file}] ${extra.length + falta.length > 2 || rep > 2 || txt === "(timeout)" || malVis ? "⛔ REGENERAR" : rep > 0 ? "⚠️ revisar" : "ok"} · dice: "${txt.trim()}"` + (extra.length ? ` · de más: ${extra.join(" ")}` : "") + (falta.length ? ` · falta: ${falta.join(" ")}` : "") + (rep > 0 ? ` · ${rep} palabra(s) de más (¿repitió?)` : "") + costura + vis);
