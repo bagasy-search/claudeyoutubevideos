@@ -245,8 +245,23 @@ const publicJob = (j) => {
   return { ...rest, key: j.key != null ? keyTag(j.key) : null };
 };
 
+// AGNES_PASS=… → pide contraseña (Basic Auth, cualquier usuario). Obligatorio si se expone fuera de casa.
+const PASS = E("AGNES_PASS");
+const authed = (req) => {
+  if (!PASS) return true;
+  const m = (req.headers.authorization || "").match(/^Basic (.+)$/);
+  if (!m) return false;
+  const pass = Buffer.from(m[1], "base64").toString("utf8").split(":").slice(1).join(":");
+  const a = Buffer.from(pass), b = Buffer.from(PASS);
+  return a.length === b.length && crypto.timingSafeEqual(a, b);
+};
+
 const server = http.createServer(async (req, res) => {
   const u = new URL(req.url, "http://x");
+  if (!authed(req)) {
+    res.writeHead(401, { "WWW-Authenticate": 'Basic realm="Agnes Studio", charset="UTF-8"', "Content-Type": "text/plain; charset=utf-8" });
+    return res.end("contraseña incorrecta");
+  }
   try {
     if (req.method === "GET" && u.pathname === "/") {
       return send(res, 200, fs.readFileSync(path.join(HERE, "index.html")), "text/html; charset=utf-8");
