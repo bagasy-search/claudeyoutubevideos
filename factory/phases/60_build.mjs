@@ -281,7 +281,7 @@ export default {
     // SONIDO NATIVO de los clips (agnes 2.5-flash): sólo los que traen pista de audio, que ya pasó el
     // detector de voz en agnes_i2v. Volumen de cama bajo la voz (`style.clipAudioVol`, default 0,28).
     const eventosClip = [];
-    if (!dry && style.agnesModelo) {
+    if (!dry && (style.agnesModelo || Object.keys(spec.overrides?.agnesFlash || {}).length)) {   // flash por plano: overrides.agnesFlash
       let conAudio = 0;
       const clipsBase = [...new Set(r.cues.filter((c) => c.tipo === "clip").map((c) => c.src))];
       const tiene = new Map();

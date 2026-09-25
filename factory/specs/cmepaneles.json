@@ -1,0 +1,70 @@
+{
+  "slug": "cmepaneles",
+  "canal": "claudio-mendoza",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_cmepaneles.txt",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200
+  },
+  "cta": {
+    "head": "Suscríbete al canal",
+    "ancla": "Si esto te sirvi",
+    "sub": "Los 3 manuales, en el enlace de abajo",
+    "qr": "qr/cmepaneles.png"
+  },
+  "avatar": {
+    "face": "public/ref/claudio_mendoza_full.png",
+    "ref": "public/ref/claudio_mendoza_face128.png"
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
+    "cardId": "cmep2026092407"
+  },
+  "titulo": "El Verdadero Problema de los Paneles Solares que Nadie te Dice",
+  "ctas": [
+    {
+      "ancla": "Si esto te está sirviendo hasta aquí",
+      "head": "27 equipos solares medidos con pinza",
+      "sub": "Escanea el código",
+      "qr": "qr/cmepaneles.png",
+      "durS": 10
+    },
+    {
+      "ancla": "Esa prueba, y otras parecidas",
+      "head": "La prueba de 10 minutos antes de pagar",
+      "sub": "Escanea el código",
+      "qr": "qr/cmepaneles.png",
+      "durS": 10
+    },
+    {
+      "ancla": "Y antes de firmar cualquier presupuesto",
+      "head": "Las 7 mentiras del vendedor",
+      "sub": "Escanea el código",
+      "qr": "qr/cmepaneles.png",
+      "durS": 10
+    }
+  ],
+  "overrides": {
+    "animadoMaxPct": 90,
+    "agnesFlash": {
+      "p040": "the sharp mechanical click of a household main breaker being switched off, the faint hum of the meter box stopping, quiet utility passage, no voices",
+      "p054": "a stovetop coffee pot gurgling and hissing on a gas flame, a soft morning kitchen ambience, a spoon touching a mug, no voices",
+      "p058": "the low hum of a refrigerator motor and the soft suction of its door seal, a quiet kitchen at night, no voices",
+      "p072": "the faint steady whir of an old electricity meter disc spinning, a quiet outdoor passage, distant birds, no voices",
+      "p104": "a garden hose spraying water hard onto glass, water splashing and dripping onto tiles, birds in the backyard, no voices",
+      "p109": "cicadas buzzing loudly in the midday summer heat, a distant dog barking, no voices",
+      "p149": "sparrows chirping and fluttering on a rooftop, light wind, distant street traffic, no voices",
+      "p150": "water sloshing in a plastic bucket and dripping from a brush, rooftop ambience with light wind and birds, no voices",
+      "p151": "a soft brush scrubbing wet glass, water running and dripping onto roof tiles, light wind, no voices",
+      "p155": "heavy rain drumming on glass panels and a concrete roof, water gushing from a drain, distant thunder, no voices",
+      "p289": "gusty wind in a backyard, clothes flapping on a washing line, a grey overcast day, no voices",
+      "p293": "a heavy downpour pouring into a backyard, rain splashing on tiles and gushing from a gutter, no voices",
+      "p294": "steady rain falling outside an open garage door, water running off the roof edge, a mug set softly, no voices",
+      "p295": "rainwater streaming and dripping off the edge of glass panels, steady soft rain, no voices",
+      "p296": "birds singing after the rain, water dripping from a gutter into a puddle, a calm fresh morning, no voices"
+    },
+    "clipAudioVol": 0.4
+  }
+}

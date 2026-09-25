@@ -141,7 +141,7 @@ const submit = async (it, ki) => {
   try {
     const body = FLASH
       ? { model: MODEL, mode: "keyframe", first_frame: it._url || (it._url = await hostear(it.nombre, srcImg(it.nombre))), prompt: buildPrompt(it),
-          seconds: process.env.AG_SECS || "4", size: process.env.AG_SIZE || "720P", aspect_ratio: "16:9" }
+          seconds: String(it.secs ? Math.max(4, Math.min(12, Math.round(it.secs))) : (process.env.AG_SECS || "4")), size: process.env.AG_SIZE || "720P", aspect_ratio: "16:9" }
       : { model: MODEL, image: dataURI(srcImg(it.nombre)), prompt: buildPrompt(it),
           negative_prompt: NEG, width: 1280, height: 720, num_frames: FRAMES, frame_rate: FPS };
     const r = await fetch(B + "/videos", {

@@ -40,7 +40,7 @@ export default {
   // el runner cuenta como hecha.
   deps: ["45_stock"],
   inputs: ({ P }) => [P.plan, P.imgDir, P.brollDir, path.join(ROOT, "_v3", `${P.slug}_agnes_qc.json`)],
-  async run({ slug, P, style, log }) {
+  async run({ slug, P, spec, style, log }) {
     const plan = JSON.parse(fs.readFileSync(P.plan, "utf8")).filter((p) => p.tipo === "imagen" && !p.quieto);   // `quieto` = foto con Ken-Burns, no va a agnes
     const i2v = plan.map((p) => ({ nombre: p.name, person: p.motor === "gpt" || !!p.gente, pres: p.motor === "gpt", gente: !!p.gente,
       change: "The scene stays exactly as it is. No cut, no new place, no camera move.", motion: p.motion,
@@ -62,6 +62,26 @@ export default {
     try { const q = JSON.parse(fs.readFileSync(path.join(ROOT, "_v3", `${slug}_agnes_qc.json`), "utf8")).clips || {}; removidos = new Set(Object.keys(q).filter((n) => q[n].removed)); } catch {}
     if (removidos.size) log(`${removidos.size} planos pasados a foto quieta por el QC a ojo (no se regeneran)`);
     const falta = () => i2v.filter((x) => !removidos.has(x.nombre) && !fs.existsSync(path.join(P.brollDir, `${x.nombre}.mp4`)));
+    // ⭐ MEZCLA POR PLANO (25-sep-2026, regla del creador): `overrides.agnesFlash = {"p104": "sonido", …}`
+    //    manda SÓLO esos planos a agnes-video-2.5-flash (gratis, AUDIO nativo, hasta 12 s) y el resto
+    //    a v2.0 (~7 clips/min). Todo flash son ~6 h por video (la cola gratis de flash rinde ~0,7/min).
+    //    Los de flash corren ANTES (en paralelo sería competir por la misma cuenta) y quedan en brollDir:
+    //    la corrida v2.0 los saltea porque ya existen. La duración = la del momento (4-12 s).
+    const flashSel = spec.overrides?.agnesFlash || {};
+    const flashNames = Object.keys(flashSel).filter((n) => i2v.some((x) => x.nombre === n));
+    if (!style.agnesModelo && flashNames.length) {
+      const durDe = (n) => { try { const m = JSON.parse(fs.readFileSync(P.mom, "utf8")).find((mm) => mm.name === n.replace(/x$/, "")); return m ? (m.end - m.start || m.dur) : 6; } catch { return 6; } };
+      const fl = i2v.filter((x) => flashNames.includes(x.nombre) && !fs.existsSync(path.join(P.brollDir, `${x.nombre}.mp4`)))
+        .map((x) => ({ ...x, sonido: flashSel[x.nombre], secs: Math.ceil(durDe(x.nombre) + 0.5) }));
+      if (fl.length) {
+        const listaF = path.join(P.listas, "i2v_flash.json");
+        fs.writeFileSync(listaF, JSON.stringify(fl, null, 1));
+        log(`flash con sonido: ${fl.length} planos (${fl.map((x) => `${x.nombre}:${x.secs}s`).join(" ")})`);
+        const rF = await withLease("agnes", slug, CAPACIDAD.agnes(), () => run("node", ["scripts/agnes_i2v.mjs", listaF, slug, P.imgDir, P.brollDir],
+          { cwd: ROOT, timeoutMs: 8 * 3600_000, allowFail: true, env: { AG_MODEL: "agnes-video-2.5-flash" }, onLine: (l) => /✗|⛔|error|429|listo|===|voz/i.test(l) && log(l.slice(0, 160)) }), { log });
+        if (rF.code !== 0) log(`agnes flash salió con ${rF.code}: los que falten van por v2.0 (mudos)`);
+      }
+    }
     if (falta().length) {
       const units = CAPACIDAD.agnes();
       // `agnes_i2v.mjs` sale con 1 si falló ALGÚN clip, aunque hayan salido 305 de 307. Con el exit
