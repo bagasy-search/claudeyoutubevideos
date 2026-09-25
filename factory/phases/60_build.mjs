@@ -14,20 +14,22 @@ const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const MONTAJES = ["vlog-crudo", "premium"];
 
-export function emitVlog({ slug, comp, total, cues, ventanas, placa, fondo, ambiente = null, fps = 30, premium = false, audioDesdeF = 0 }) {
+export function emitVlog({ slug, comp, total, cues, ventanas, placa, fondo, ambiente = null, fps = 30, premium = false, audioDesdeF = 0, audios = [], audioSrc = null }) {
+  const AUD = audioSrc || `${slug}.m4a`;
   const U = slug.toUpperCase().replace(/[^A-Z0-9]/g, "_");
-  const el = (c) => (c.kind === "golpe" ? `<Golpe kind="${c.golpe}" props={${JSON.stringify(c.props)} as any} dur={${c.dur}} />`
+  const el = (c) => (c.kind === "hook" ? `<Hook kind="${c.hook}" props={${JSON.stringify(c.props || {})} as any} dur={${c.dur}} />`
+    : c.kind === "golpe" ? `<Golpe kind="${c.golpe}" props={${JSON.stringify(c.props)} as any} dur={${c.dur}} />`
     : c.kind === "apertura" ? `<AperturaMiniatura ${c.src ? `src="${c.src}" ` : ""}${c.foto ? `foto="${c.foto}" ` : ""}frames={${c.frames || 0}} />`
     : c.kind === "glitch" ? `<GlitchCut durationInFrames={${c.dur}} />`
     : c.kind === "cta" ? `<CtaFinal {...(${JSON.stringify(c.props)} as any)} />`
     // ⛔ El componente va SIN envoltorio: nada de placa/recuadro crema detrás (el creador lo rechazó
     //    expresamente). Comp.tsx sólo lo mete en un AbsoluteFill y le pasa durationInFrames.
     : c.comp ? `<Comp kind="${c.comp}" props={${JSON.stringify(c.props)} as any} />`
-      : c.tipo === "clip" ? `<Clip src="${c.src}" seed={${c.start}} frames={${c.frames || 0}} />`
+      : c.tipo === "clip" ? `<Clip src="${c.src}" seed={${c.start}} frames={${c.frames || 0}}${c.audio ? ` audio={${c.audio}}` : ""} />`
         : `<Foto src="${c.src}" seed={${c.start}} />`);
   const gen = `// cues_${slug}.gen.tsx — GENERADO por la FÁBRICA (factory/phases/60_build.mjs). NO editar a mano.
 import React from "react";
-import { Clip, CtaFinal, Foto${cues.some((c) => c.kind === "apertura") ? ", AperturaMiniatura, GlitchCut" : ""}${cues.some((c) => c.kind === "golpe") ? ", Golpe" : ""} } from "./Piezas";${premium ? `
+import { Clip, CtaFinal, Foto${cues.some((c) => c.kind === "apertura") ? ", AperturaMiniatura, GlitchCut" : ""}${cues.some((c) => c.kind === "golpe") ? ", Golpe" : ""}${cues.some((c) => c.kind === "hook") ? ", Hook" : ""} } from "./Piezas";${premium ? `
 import { Comp } from "./Comp";` : ""}
 
 export type Cue = { key: string; start: number; dur: number; capa: "base" | "over"; el: (frame: number) => React.ReactNode };
@@ -45,6 +47,7 @@ import { AvatarVentana, PlacaPiso } from "./Piezas";
 export const TOTAL_FRAMES_${U} = ${total};
 
 const VENTANAS = ${JSON.stringify(ventanas)};
+const AUDIOS: { from: number; dur: number; src: string; vol: number; fi: number; fo: number; loop?: boolean }[] = ${JSON.stringify(audios)};
 
 export const Main${comp}: React.FC = () => {
   const frame = useCurrentFrame();
@@ -53,7 +56,7 @@ export const Main${comp}: React.FC = () => {
       ${placa ? `<PlacaPiso src="${placa}" />` : ""}
       {VENTANAS.map((w) => (
         <Sequence key={"av" + w.k} from={w.from} durationInFrames={w.dur} layout="none">
-          <AvatarVentana src={w.src} desde={w.from} />
+          <AvatarVentana src={w.src} desde={w.from} fg={(w as any).fg} fx={(w as any).fx} />
         </Sequence>
       ))}
       {CUES_${U}.filter((c) => c.capa === "base").map((c) => (
@@ -66,8 +69,13 @@ export const Main${comp}: React.FC = () => {
           <AbsoluteFill>{c.el(frame)}</AbsoluteFill>
         </Sequence>
       ))}
-      ${audioDesdeF > 0 ? `<Sequence from={${audioDesdeF}} layout="none"><Audio src={staticFile("${slug}.m4a")} /></Sequence>` : `<Audio src={staticFile("${slug}.m4a")} />`}${ambiente ? `
+      ${audioDesdeF > 0 ? `<Sequence from={${audioDesdeF}} layout="none"><Audio src={staticFile("${AUD}")} /></Sequence>` : `<Audio src={staticFile("${AUD}")} />`}${ambiente ? `
       <Audio src={staticFile("${ambiente}")} />` : ""}
+      {AUDIOS.map((a, i) => (
+        <Sequence key={"sfx" + i} from={a.from} durationInFrames={a.dur} layout="none">
+          <Audio src={staticFile(a.src)} loop={a.loop} volume={(f) => a.vol * Math.max(0, Math.min(1, a.fi ? f / a.fi : 1, a.fo ? (a.dur - f) / a.fo : 1))} />
+        </Sequence>
+      ))}
     </AbsoluteFill>
   );
 };
@@ -91,7 +99,7 @@ export default {
   deps: ["20_asr", "50_agnes", "55_avatar"],
   inputs: ({ P, style, spec }) => {
     const est = path.join(ROOT, "factory", "styles", style.montaje || "vlog-crudo");
-    return [P.mom, P.plan, P.ventanas, P.wav, P.imgDir, P.brollDir, style.vlog, spec.cta, spec.ctas || null,
+    return [P.mom, P.plan, P.ventanas, P.wav, P.imgDir, P.brollDir, style.vlog, spec.cta, spec.ctas || null, spec.fx || null, spec.hook || null,
       path.join(est, "Piezas.tsx"),
       ...((style.montaje || "vlog-crudo") === "premium" ? [path.join(est, "Comp.tsx"), path.join(est, "kit.json")] : []),
       env("FACTORY_DRY") || ""];
@@ -182,7 +190,10 @@ export default {
     for (const p of plan) { assetOf(p.name); assetOf(`${p.name}x`); }
     const frames = new Map();
     await pool([...new Set(clips)], 8, async (src) => { try { frames.set(src, await frameCount(path.join(ROOT, "public", src))); } catch { frames.set(src, 0); } });
-    assertMeasured("clipsMedidos", frames.size, { min: 1, allowZero: plan.every((p) => p.tipo === "avatar"), log });
+    // 0 clips es legítimo si el director marcó TODOS los planos de imagen quietos (`q:1`, brief sin agnes:
+    // cmecargador 24-sep-2026) y no hay metraje real: ahí no hay nada que medir, no es "no haber mirado".
+    const sinClips = plan.every((p) => p.tipo === "avatar" || (p.quieto && !p.st));
+    assertMeasured("clipsMedidos", frames.size, { min: sinClips ? 0 : 1, allowZero: sinClips, log });
 
     const finPend = [];
     const planificar = premium ? planPremium : planVlog;
@@ -267,7 +278,109 @@ export default {
     });
 
     for (const c of r.cues) if (c.tipo === "clip") c.frames = frames.get(c.src) || 0;
+    // SONIDO NATIVO de los clips (agnes 2.5-flash): sólo los que traen pista de audio, que ya pasó el
+    // detector de voz en agnes_i2v. Volumen de cama bajo la voz (`style.clipAudioVol`, default 0,28).
+    const eventosClip = [];
+    if (!dry && style.agnesModelo) {
+      let conAudio = 0;
+      const clipsBase = [...new Set(r.cues.filter((c) => c.tipo === "clip").map((c) => c.src))];
+      const tiene = new Map();
+      await pool(clipsBase, 6, async (src) => {
+        const o = await run("ffprobe", ["-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", path.join(ROOT, "public", src)], { timeoutMs: 30_000, allowFail: true });
+        tiene.set(src, /\d/.test(o.stdout || ""));
+      });
+      for (const c of r.cues) if (c.tipo === "clip" && tiene.get(c.src)) {
+        const durF = Math.min(c.dur, c.frames || c.dur);
+        eventosClip.push({ src: path.join(ROOT, "public", c.src), atF: c.start, dur: durF / 30, vol: Number(style.clipAudioVol ?? 0.28), norm: -24, maxGain: 20, piso: -62, fi: 4 / 30, fo: 4 / 30 });
+        conAudio++;
+      }
+      log(`sonido nativo: ${conAudio} planos con audio de agnes (de ${r.cues.filter((c) => c.tipo === "clip").length} clips)`);
+    }
     let ventanas = r.ventanas.map((w) => ({ ...w, src: `broll/${slug}/av_w${String(w.k).padStart(3, "0")}.mp4` }));
+    // COMPOSITING (`fx` en momentos de avatar): el efecto se ancla al ms de la frase (+ `at` s) y se
+    // mete en SU ventana, con el recorte del presentador (RVM en Modal) para el sándwich
+    // fondo → efecto → presentador. ⛔ Un fx que no cae en una ventana es un error, no un no-op.
+    // el fx vive en el SPEC (spec.fx[momento]) o en la dirección (p.fx): el spec no invalida imágenes/clips
+    for (const p of plan) if (spec.fx?.[p.name]) p.fx = spec.fx[p.name];
+    const conFx = plan.filter((p) => p.fx);
+    if (conFx.length) {
+      const probFx = [];
+      const momDe = new Map(mom.map((m) => [m.name, m]));
+      for (const p of conFx) {
+        const m = momDe.get(p.name);
+        const f = Math.round((m.start + (Number(p.fx.at) || 0)) * 30);
+        const w = ventanas.find((v) => f >= v.from && f < v.from + v.dur);
+        if (!w) { probFx.push(`${p.name}: el fx cae en ${(f / 30).toFixed(2)} s y ahí no hay ventana de avatar`); continue; }
+        const dur = Math.min(Math.round((Number(p.fx.durS) || (m.end - m.start)) * 30), w.from + w.dur - f);
+        if (dur < 30) { probFx.push(`${p.name}: el fx dura ${(dur / 30).toFixed(2)} s dentro de la ventana (mín 1 s)`); continue; }
+        w.fx = [...(w.fx || []), { start: f - w.from, dur, kind: p.fx.kind, props: p.fx.props || {} }];
+        w.fg = `broll/${slug}/av_w${String(w.k).padStart(3, "0")}_fg.webm`;
+      }
+      const fgs = ventanas.filter((w) => w.fg);
+      if (!dry) for (const w of fgs) {
+        const fgAbs = path.join(ROOT, "public", w.fg);
+        if (fs.existsSync(fgAbs)) continue;
+        await run("node", [path.join(ROOT, "factory", "tools", "matte.mjs"), path.join(ROOT, "public", w.src), fgAbs], { timeoutMs: 30 * 60_000 });
+      }
+      for (const w of fgs) if (!dry && !fs.existsSync(path.join(ROOT, "public", w.fg))) probFx.push(`falta el recorte ${w.fg}`);
+      assertNoProblems("compositingFx", probFx, conFx.length, { log });
+      log(`compositing: ${conFx.length} fx en ${fgs.length} ventanas con recorte`);
+    }
+    // EDICIÓN DEL PRIMER MINUTO (spec.hook, en SEGUNDOS del máster anclados a la palabra):
+    //   cortes: planos BASE que reemplazan lo que el plan puso en [desde, hasta) — nunca sobre una ventana
+    //   over:   capas encima (reloj, relámpago, caída a negro, cascada)
+    //   sfx / camas: pista de efectos con fundidos
+    // ⛔ Todo asset que viaja en props se suma a la lista del farm (si no, 404 y chunk muerto).
+    const audios = [], hookAssets = new Set();
+    const H = spec.hook;
+    if (H) {
+      const { HOOK_KINDS } = { HOOK_KINDS: ["foto", "clip", "dianoche", "reloj", "flash", "negro", "cascada"] };
+      const F = (s) => Math.round(s * 30), probH = [];
+      const juntar = (v) => { if (typeof v === "string" && /^(img|broll|sfx_fab)\//.test(v)) hookAssets.add(v); else if (v && typeof v === "object") Object.values(v).forEach(juntar); };
+      for (const [i, c] of (H.cortes || []).entries()) {
+        if (!HOOK_KINDS.includes(c.kind)) { probH.push(`corte ${i}: kind desconocido "${c.kind}"`); continue; }
+        const f0 = F(c.desde), f1 = F(c.hasta);
+        if (!(f1 > f0)) { probH.push(`corte ${i}: rango vacío`); continue; }
+        if (ventanas.some((w) => f0 < w.from + w.dur && f1 > w.from)) { probH.push(`corte ${i} (${c.desde}-${c.hasta} s) pisa una ventana de avatar`); continue; }
+        const nuevos = [];
+        for (const b of r.cues) {
+          if (b.capa !== "base") { nuevos.push(b); continue; }
+          const e = b.start + b.dur;
+          if (e <= f0 || b.start >= f1) { nuevos.push(b); continue; }
+          if (b.start < f0) nuevos.push({ ...b, dur: f0 - b.start });
+          if (e > f1) nuevos.push({ ...b, key: b.key + "_h" + i, start: f1, dur: e - f1 });
+        }
+        const props = { ...(c.props || {}) };
+        let kind = c.kind;
+        // `plano: "pNNN"` = el MISMO plano del plan: su clip de agnes si pasó el QC, si no su foto.
+        if (props.plano) {
+          const clipRel = `broll/${slug}/${props.plano}.mp4`, fotoRel = `img/${slug}/${props.plano}.jpg`;
+          if (fs.existsSync(path.join(ROOT, "public", clipRel))) { kind = "clip"; props.src = clipRel; } else { kind = "foto"; props.src = fotoRel; }
+          delete props.plano;
+        }
+        if (kind === "clip" && !dry) props.frames = await frameCount(path.join(ROOT, "public", props.src));
+        nuevos.push({ key: `hook_b${i}`, start: f0, dur: f1 - f0, capa: "base", kind: "hook", hook: kind, props });
+        r.cues = nuevos; juntar(props);
+      }
+      for (const [i, c] of (H.over || []).entries()) {
+        if (!HOOK_KINDS.includes(c.kind)) { probH.push(`over ${i}: kind desconocido "${c.kind}"`); continue; }
+        const f0 = F(c.desde), f1 = F(c.hasta);
+        r.cues.push({ key: `hook_o${i}`, start: f0, dur: Math.max(1, f1 - f0), capa: "over", kind: "hook", hook: c.kind, props: c.props || {} });
+        juntar(c.props || {});
+      }
+      for (const a of H.sfx || []) {
+        const d = F(a.durS || 2.5);
+        audios.push({ from: F(a.t), dur: d, src: a.src, vol: a.vol ?? 0.6, fi: 0, fo: Math.min(6, d) }); hookAssets.add(a.src);
+      }
+      for (const a of H.camas || []) {
+        audios.push({ from: F(a.desde), dur: F(a.hasta) - F(a.desde), src: a.src, vol: a.vol ?? 0.2, fi: F(a.fadeIn ?? 1), fo: F(a.fadeOut ?? 1), loop: true }); hookAssets.add(a.src);
+      }
+      r.cues.sort((a, b) => a.start - b.start);
+      const faltan = [...hookAssets].filter((a) => !dry && !fs.existsSync(path.join(ROOT, "public", a)));
+      for (const a of faltan) probH.push(`falta public/${a}`);
+      assertNoProblems("hookEdicion", probH, (H.cortes || []).length + (H.over || []).length + audios.length, { log });
+      log(`hook: ${(H.cortes || []).length} cortes · ${(H.over || []).length} capas · ${audios.length} sonidos · ${hookAssets.size} assets`);
+    }
     // APERTURA CON LA MINIATURA: corre todo `holdF` a la derecha y mete la miniatura + el glitch.
     let cuesFinal = r.cues, totalFinal = r.total, audioDesdeF = 0;
     const apCfg = style.apertura?.miniatura ? style.apertura : null;
@@ -290,7 +403,26 @@ export default {
       log(`apertura con miniatura: ${ap.medido.miniaturaSec} s de miniatura + glitch de ${ap.medido.glitchF} cuadros; audio y ventanas corridos ${ap.medido.holdF} cuadros`);
       for (const c of cuesFinal) if (c.foto) { /* la foto de respaldo también viaja al farm */ }
     }
-    const out = emitVlog({ slug, comp: P.comp, total: totalFinal, cues: cuesFinal, ventanas, placa: spec.modo === "avatar" ? placaRel : null, fondo: style.fondo || "#0A0B08", ambiente: spec.ambiente || null, premium, audioDesdeF });
+    // MÁSTER DE MEZCLA: voz + efectos del hook + sonido nativo de los clips, cada uno en su cuadro.
+    // ⛔ La entrega (90_deliver) le pone al mp4 el audio del máster: lo que viviera sólo en Remotion
+    //    se perdería en silencio. Por eso NADA de audio suelto en el render: un único máster mezclado.
+    let audioSrc = null;
+    const eventos = [
+      ...audios.map((a) => ({ src: path.join(ROOT, "public", a.src), at: a.from / 30, dur: a.dur / 30, vol: a.vol, fi: a.fi / 30, fo: a.fo / 30, loop: !!a.loop })),
+      ...eventosClip.map((e) => ({ ...e, at: (e.atF - audioDesdeF) / 30 })),
+    ].filter((e) => e.at >= 0);
+    if (eventos.length && !dry) {
+      const evFile = path.join(P.work, "audio", `${slug}_mezcla.json`);
+      const mixWav = path.join(P.work, "audio", `${slug}_mix.wav`);
+      fs.writeFileSync(evFile, JSON.stringify(eventos, null, 1));
+      const rm = await run("python", [path.join(ROOT, "factory", "py", "mezcla.py"), P.wav, evFile, mixWav], { timeoutMs: 30 * 60_000, allowFail: true });
+      log((rm.out || "").trim().split("\n").slice(-2).join(" · "));
+      assertMeasured("mezclaEventos", rm.code === 0 && fs.existsSync(mixWav) ? eventos.length : 0, { min: 1, log });
+      await run("ffmpeg", ["-v", "error", "-y", "-i", mixWav, "-c:a", "aac", "-b:a", "192k", "-ar", "48000", path.join(ROOT, "public", `${slug}_mix.m4a`)], { timeoutMs: 20 * 60_000 });
+      audioSrc = `${slug}_mix.m4a`;
+      log(`máster de mezcla: ${eventos.length} eventos (${audios.length} efectos/camas + ${eventosClip.length} clips con sonido)`);
+    }
+    const out = emitVlog({ slug, comp: P.comp, total: totalFinal, cues: cuesFinal, ventanas, placa: spec.modo === "avatar" ? placaRel : null, fondo: style.fondo || "#0A0B08", ambiente: spec.ambiente || null, premium, audioDesdeF, audioSrc });
     // DRY emite adentro del repo (gitignored) para que `tsc` resuelva remotion desde node_modules
     const dryRoot = path.join(ROOT, "factory", "_dry");
     const srcDir = dry ? path.join(dryRoot, slug) : P.srcDir;
@@ -316,7 +448,7 @@ export default {
     fs.writeFileSync(path.join(srcDir, `Main_${slug}.tsx`), out.main);
     fs.writeFileSync(entry, out.index);
 
-    const assets = new Set([`${slug}.m4a`]);
+    const assets = new Set([audioSrc || `${slug}.m4a`]);
     if (spec.ambiente) assets.add(spec.ambiente);   // la cama de ambiente tambien viaja al farm
     if (spec.modo === "avatar") assets.add(placaRel);
     for (const c of r.cues) if (c.src) assets.add(c.src);
@@ -330,7 +462,8 @@ export default {
     // que ninguna entraba en la lista y el farm las servía 404 → EncodingError y chunk muerto.
     // planPremium las junta recorriendo el contrato (kit.json declara cuáles son de tipo `asset`).
     for (const a of r.compAssets || []) assets.add(a);
-    for (const w of ventanas) assets.add(w.src);
+    for (const w of ventanas) { assets.add(w.src); if (w.fg) assets.add(w.fg); }
+    for (const a of hookAssets) assets.add(a);
     const lista = [...assets];
     const sinDisco = dry ? [] : lista.filter((a) => !fs.existsSync(path.join(ROOT, "public", a)));
     assertNoProblems("assetsEnDisco", sinDisco.map((a) => `no existe public/${a}`), lista.length, { log });

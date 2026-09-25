@@ -102,7 +102,11 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
     //    La marca `gente` existía en el plan desde siempre pero NO llegaba al prompt.
     //    Las MANOS sí se permiten: media dirección son manos trabajando, y "no hands" rompería esos planos.
     const sinGente = !x.c && !x.g ? ", nobody in the picture, no people, no person, no face, no bystander, no figure in the background" : "";
-    return x.v ? `${cuerpo}${sinGente}, ${style.vintage}` : `candid photo taken on a modern smartphone, ${cuerpo}${sinGente}, ${style.formula}`;
+    // `luz` = fórmula alternativa del estilo (`style.formulas.noche|gris`). La fórmula fija dice
+    // "bright natural daylight" y un plano de noche o de temporal la contradice (cmenino, 24-sep-2026).
+    if (x.luz && !style.formulas?.[x.luz]) errores.push(`${x.n}: luz "${x.luz}" no está en style.formulas`);
+    const formula = (x.luz && style.formulas?.[x.luz]) || style.formula;
+    return x.v ? `${cuerpo}${sinGente}, ${style.vintage}` : `candid photo taken on a modern smartphone, ${cuerpo}${sinGente}, ${formula}`;
   };
   const plan = [];
   const vistos = new Set();
@@ -136,7 +140,10 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
     // `k` y `st`: lo lee planVlog §4.bis, que le mide palabras, duración y densidad.
     // ⛔ NO se llama `g`: esa letra YA es "hay gente" en el contrato (`gente: !!x.g`, línea de abajo),
     //    y reusarla habilitaría gente inventada en cada plano con gráfico.
-    const extra = { ...(x.k ? { k: x.k } : {}), ...(x.st ? { st: String(x.st) } : {}), ...(x.gr && typeof x.gr === "object" ? { gr: x.gr } : {}) };
+    // `fx` = COMPOSITING dentro de la ventana del avatar (texto DETRÁS del presentador, datos que lo
+    //    orbitan pasando por delante y por detrás). Sólo en momentos `t:"avatar"`; lo arma 60_build.
+    if (x.fx && x.t !== "avatar") errores.push(`${x.n}: "fx" sólo va en momentos de avatar (necesita el recorte del presentador)`);
+    const extra = { ...(x.k ? { k: x.k } : {}), ...(x.st ? { st: String(x.st) } : {}), ...(x.gr && typeof x.gr === "object" ? { gr: x.gr } : {}), ...(x.fx && typeof x.fx === "object" ? { fx: x.fx } : {}) };
     if (x.t === "avatar") { plan.push({ name: x.n, i: m.i, sec: secDe(m.i), dice: m.texto, tipo: "avatar", muestra: x.m || "presentador a cámara", ...extra }); continue; }
     if (!["wide", "medium", "close"].includes(x.e)) { errores.push(`${x.n}: encuadre inválido "${x.e}"`); continue; }
     // REGLA DEL CREADOR (18-sep-2026): `"q": 1` = plano QUIETO. Se queda como FOTO (con su

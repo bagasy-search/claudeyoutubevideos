@@ -46,7 +46,17 @@
     "ferreteria": "at the counter of a small neighbourhood hardware store, in the background wooden drawers of screws, hanging coils of cable, boxes of breakers and plug adaptors on a pegboard, extension leads on hooks and a shelf of torches",
     "cocina": "in a modest home kitchen, in the background a refrigerator, white wall tiles, a dish rack with plates, a kettle and a microwave on the counter and a checkered cloth on the table",
     "living": "in a modest living room, in the background a worn brown sofa with a cushion, a low tv stand with the tv switched off, a thin rug, a window with curtains, a floor fan and a plant in a pot",
-    "entrada": "in the driveway in front of the house at dusk, in the background a parked pickup truck with the bonnet up, a jump lead running from the battery, the house windows dark and a torch standing on the bumper"
+    "entrada": "in the driveway in front of the house at dusk, in the background a parked pickup truck with the bonnet up, a jump lead running from the battery, the house windows dark and a torch standing on the bumper",
+    "cuarto": "in a small bedroom, in the background a single bed with a striped blanket, a wooden nightstand with a glass of water and a small box of pills, a wardrobe with one door ajar, a pair of sandals on the tiled floor and a folded towel on a chair",
+    "calle": "on a residential street of low concrete houses, in the background houses with barred windows and metal gates, a leaning concrete power pole with sagging cables, brown puddles on the cracked pavement, a motorbike under a blue tarp and a gutter overflowing at the curb",
+    "tienda": "at the counter of a small neighbourhood appliance shop, in the background shelves of boxed fans and irons, plastic emergency lamps hanging on a pegboard, a glass display case with phone chargers and cables, and a cardboard box of loose batteries beside the till",
+    "vano_motor": "leaning into the open engine bay of a ten year old silver sedan parked in a home driveway, in the background the radiator, the black air filter box, the coolant reservoir, a greasy rag on the fender and the raised bonnet held by its metal rod",
+    "dentro_auto": "inside the car in the driver seat, in the background the dashboard with the instrument cluster, the steering wheel, a thermos cup in the holder, a folded map on the passenger seat and the house garage door visible through the windscreen",
+    "entrada_manana": "in the concrete driveway in front of the house in the early morning, in the background a ten year old silver sedan with the bonnet up, the open garage door with shelves inside, a low wall with potted plants and the street with parked cars",
+    "lavadero": "in a small laundry area off the kitchen, in the background a white front-loading washing machine, a plastic laundry basket with folded clothes, a mop and a bucket, a shelf with plain detergent bottles and a folding clothes rack against the tiled wall",
+    "rincon": "in a narrow utility corner inside the house, in the background a painted wall with grey conduit pipes running up to the ceiling, a small wooden shelf with a torch, a roll of insulating tape and a box of spare fuses, a broom leaning in the corner and a bare bulb on the ceiling",
+    "bano": "in a small tiled bathroom, in the background white wall tiles, a shower curtain pushed aside, a plastic stool, a towel on a hook, a small mirror above the sink and a bucket on the floor",
+    "mesa_prueba": "at a folding test table in a corner of the garage by the side window, in the background a grey steel filing cabinet, a paper wall calendar, an extension reel hanging on a nail, a dusty radio on a shelf and a stack of cardboard boxes"
   },
   "cta": {
     "regex": "^Si esto te sirvi",
@@ -80,5 +90,9 @@
       "Nunca decir el nombre personal del creador ni nada que revele que no es Claudio.",
       "3 CTA por video, casuales, dentro del flujo de lo que está explicando — nunca un corte comercial. La 1ª nace de un dato que acaba de medir, la 2ª de un error que acaba de mostrar, la 3ª al cierre."
     ]
+  },
+  "formulas": {
+    "noche": "at night with the electricity cut, the scene lit by the warm white light of the small bulb described, the light falling on the nearby walls and objects so the whole room stays readable, true-to-life colors, sharp focus, deep depth of field, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "gris": "flat grey overcast daylight from a cloudy sky, no shadows on the ground, wet surfaces, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs"
   }
 }

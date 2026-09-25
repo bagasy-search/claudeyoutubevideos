@@ -19,6 +19,8 @@ export const SCHEMA = {
   ambiente: { type: "string", required: false },                 // cama de ambiente bajo todo el video (ruta en public/)
   secciones: { type: "array", required: false },                // [[NOMBRE, "frase ancla"], ...]
   overrides: { type: "object", required: false },               // perillas del estilo por video (auditables)
+  fx: { type: "object", required: false },                      // compositing en ventanas de avatar: {pNNN: {kind: detras|orbita, at?, durS?, props}}
+  hook: { type: "object", required: false },                    // edición del primer minuto: {cortes, over, sfx, camas} en segundos del máster
 };
 
 function check(obj, schema, where, errs) {

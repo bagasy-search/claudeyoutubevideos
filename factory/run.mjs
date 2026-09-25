@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // run.mjs — LA FÁBRICA. Un solo motor para todos los videos. Plan: factory/PLAN_FABRICA.md
 //
-//   node factory/run.mjs run <slug> [--from <fase>] [--only <fase>]   corre/reanuda el video
+//   node factory/run.mjs run <slug> [--from <fase>] [--only <fase>] [--hasta <fase>]   corre/reanuda el video
 //   node factory/run.mjs status [<slug>]                              estado por fase (medido)
 //   node factory/run.mjs new <slug> --canal <c> --modo avatar|narrador --guion <txt> --voz <id>
 //                            [--face <png>] [--idioma es] --cta-ancla "<frase>" --cta-head "<texto>"
@@ -41,12 +41,16 @@ const args = process.argv.slice(2);
 const flag = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : undefined; };
 const cmd = args[0];
 
-async function runSlug(slug, { from, only } = {}) {
+async function runSlug(slug, { from, only, hasta } = {}) {
   const soltarCandado = tomarCandado(slug);   // ⛔ un solo orquestador por slug: ver lib/candado.mjs
   const spec = loadSpec(slug);
   const P = slugPaths(slug);
   const state = new State(slug);
-  const phases = await loadPhases();
+  // `--hasta <fase>`: corre en paralelo todo lo que falte HASTA esa fase inclusive y frena (p. ej. antes
+  // del render, para mirar la hoja de contactos del §4 AUDITOR sin gastar el farm).
+  const todas = await loadPhases();
+  if (hasta && !todas.some((p) => p.id === hasta)) throw new Error(`fase desconocida "${hasta}"`);
+  const phases = hasta ? todas.slice(0, todas.findIndex((p) => p.id === hasta) + 1) : todas;
   const ids = phases.map((p) => p.id);
   for (const x of [from, only].filter(Boolean)) if (!ids.includes(x)) throw new Error(`fase desconocida "${x}" (${ids.join(", ")})`);
   if (from) for (const p of phases.slice(ids.indexOf(from))) state.reset(p.id);
@@ -215,7 +219,7 @@ const HELP = fs.readFileSync(new URL(import.meta.url), "utf8").split("\n").slice
 
 try {
   if (!cmd || cmd === "help" || cmd === "--help") { console.log(HELP); console.log("fases: " + PHASE_FILES.join(" → ")); process.exit(0); }
-  if (cmd === "run") process.exit(await runSlug(args[1], { from: flag("--from"), only: flag("--only") }));
+  if (cmd === "run") process.exit(await runSlug(args[1], { from: flag("--from"), only: flag("--only"), hasta: flag("--hasta") }));
   if (cmd === "status") { printStatus(args[1]); process.exit(0); }
   if (cmd === "reset") {
     // Rehacer UNA fase sin arrastrar las de atrás. `--only` respeta el hash (no rehace nada) y

@@ -11,14 +11,20 @@ import { NeedsError } from "../lib/phase.mjs";
 import { ROOT, env } from "../lib/env.mjs";
 import { REPO } from "./80_render.mjs";
 
+const mezclaDe = (P) => { const f = path.join(P.work, "audio", `${P.slug}_mix.wav`); return fs.existsSync(f) ? f : null; };
+
 export default {
   id: "90_deliver",
   deps: ["80_render"],
-  inputs: ({ P, state }) => [P.rawMp4, P.wav, P.meta, state.get("80_render")?.runId || ""],
+  inputs: ({ P, state }) => [P.rawMp4, P.wav, mezclaDe(P), P.meta, state.get("80_render")?.runId || ""],
   async run({ slug, spec, P, state, log }) {
     if (!fs.existsSync(P.meta)) throw new NeedsError("falta el meta (título/descripción: creativo)", `Escribí ${P.meta} ({title, description, tags}) y: node factory/run.mjs run ${slug} --from 90_deliver`);
     const libre = await diskFreeGB("D");
     if (libre < 2) throw new BlockedError(`D: con ${libre.toFixed(1)} GB: no entra el re-encode`);
+    // máster de audio: la MEZCLA (voz + efectos + sonido de clips, estéreo) si la armó 60_build; si no, la voz.
+    const mix = mezclaDe(P);
+    const MASTER = mix || P.wav;
+    if (mix) log(`audio de entrega = máster de MEZCLA (${path.basename(mix)})`);
     const wavSec = await durSec(P.wav);
     fs.mkdirSync(path.dirname(P.finalMp4), { recursive: true });
     // Codificador: NVENC (RTX de la máquina) si está, si no libx264. Mismo contrato de entrega: CFR, tv/bt709,
@@ -46,11 +52,11 @@ export default {
     }
     const parcial = P.finalMp4 + ".part";
     if (!yaHecho) { try { fs.unlinkSync(parcial); } catch { /* no estaba */ } }
-    if (!yaHecho) await run("ffmpeg", ["-v", "error", "-y", "-i", P.rawMp4, "-i", P.wav, "-map", "0:v:0", "-map", "1:a:0",
+    if (!yaHecho) await run("ffmpeg", ["-v", "error", "-y", "-i", P.rawMp4, "-i", MASTER, "-map", "0:v:0", "-map", "1:a:0",
       "-vf", "setpts=N/30/TB,scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p", "-fps_mode", "passthrough",
       "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
       ...vcodec,
-      "-af", "pan=stereo|c0=c0|c1=c0", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", String(wavSec), "-movflags", "+faststart",
+      "-af", mix ? "aformat=channel_layouts=stereo" : "pan=stereo|c0=c0|c1=c0", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", String(wavSec), "-movflags", "+faststart",
       // ⛔ el archivo de salida es "<final>.mp4.part": ffmpeg infiere el formato por EXTENSION y ".part" no le
       // dice nada -> "Unable to choose an output format". Medido en tfbsilicona (entrega frenada). Va explicito.
       "-f", "mp4", parcial], { timeoutMs: 3 * 3600_000 });

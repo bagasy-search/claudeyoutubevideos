@@ -152,7 +152,9 @@ export default {
     assertMeasured("rachaMaxLugar", r.medido.rachaMaxLugar, { max: Number(style.rachaMaxLugar || 8), log });
     // Regla del creador (18-sep-2026): animar TODAS las fotos se ve robotico (y agnes redibuja ~14 %).
     // Mide sobre los planos de IMAGEN; `q:1` deja el plano como foto quieta con Ken-Burns.
-    assertMeasured("animadoPct", r.medido.animadoPct, { max: 50, allowZero: true, log });
+    // Un brief puede pedir lo contrario para un video puntual (cmenino, 24-sep-2026: "animar casi
+    // todas pero levemente y pocos segundos") → `spec.overrides.animadoMaxPct`, nunca tocar el default.
+    assertMeasured("animadoPct", r.medido.animadoPct, { max: Number(spec.overrides?.animadoMaxPct ?? 50), allowZero: true, log });
     fs.writeFileSync(P.plan, JSON.stringify(r.plan, null, 1));
     return { archivosDireccion: files.length, ...r.medido };
   },
