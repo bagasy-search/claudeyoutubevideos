@@ -61,7 +61,9 @@ for (const [S, from, to] of SEG) {
   }
   const I = info[S], f0 = from ? I.startF[from] : 0, f1 = to ? I.startF[to] : I.want;
   if (f0 === undefined || f1 === undefined) throw new Error("segmento " + S + from + to);
-  TL.push({ kind: "vid", src: I.src, from: fr, dur: f1 - f0, startFrom: f0 });
+  const cue = { kind: "vid", src: I.src, from: fr, dur: f1 - f0, startFrom: f0 };
+  if (fr < 60 * FPS) cue.punch = 60 * FPS - fr; // 1er minuto: salto de zoom cada 4 s (la toma continua no puede quedar quieta >4 s)
+  TL.push(cue);
   if (!from) chap.push([S, fr]);
   if (S === "S4" && from === "s4_09") TL.push({ kind: "qr", from: fr, dur: I.startF["s4_10"] - f0 + 75 });
   if (S === "S13") TL.push({ kind: "qr", from: fr + I.startF["s13_05"], dur: I.startF["s13_07"] - I.startF["s13_05"] });
@@ -81,7 +83,7 @@ const K = [[0, 0.5, 0.5, 1], [la("paso", 0) - 0.3, 0.26, 0.31, 1.9], [la("paso",
 const ts = `// GENERADO por vlog/falaurel/mktimeline.mjs — no editar a mano
 export const TOTAL_FRAMES_FALAUREL = ${TOTAL};
 export const AUDIO = "falaurel.m4a";
-export type Cue = { kind: "vid" | "lam" | "qr" | "txt"; src?: string; from: number; dur: number; startFrom?: number; words?: { t: string; hl?: boolean }[]; ats?: number[]; perWord?: number };
+export type Cue = { kind: "vid" | "lam" | "qr" | "txt"; src?: string; from: number; dur: number; startFrom?: number; words?: { t: string; hl?: boolean }[]; ats?: number[]; perWord?: number; punch?: number };
 export const TL: Cue[] = ${JSON.stringify(TL.map(({ trl, ...x }) => x))};
 export const LAM_KEYS: [number, number, number, number][] = ${JSON.stringify(K.map(q => q.map(v => +(+v).toFixed(3))))};
 `;

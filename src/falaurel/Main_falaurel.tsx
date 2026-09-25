@@ -46,12 +46,21 @@ const QR: React.FC = () => {
   );
 };
 
+// Salto de zoom (jump-cut de vlog): corte seco 1,0 ↔ 1,18 cada 4 s, centrado arriba (la cara), sólo los primeros `until` cuadros.
+const Punch: React.FC<{ until: number; children: React.ReactNode }> = ({ until, children }) => {
+  const f = useCurrentFrame();
+  const s = f < until && Math.floor(f / 120) % 2 === 1 ? 1.18 : 1;
+  return <AbsoluteFill style={{ transform: `scale(${s})`, transformOrigin: "50% 30%" }}>{children}</AbsoluteFill>;
+};
+
 export const MainFalaurel: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
     {TL.map((c, i) => (
       <Sequence key={i} from={c.from} durationInFrames={c.dur}>
         {c.kind === "vid" ? (
-          <OffthreadVideo src={staticFile(c.src!)} startFrom={c.startFrom || 0} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          <Punch until={c.punch || 0}>
+            <OffthreadVideo src={staticFile(c.src!)} startFrom={c.startFrom || 0} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          </Punch>
         ) : c.kind === "lam" ? (
           <Lamina />
         ) : c.kind === "txt" ? (

@@ -6,7 +6,8 @@
    "src": "vid/falaurel/S1.mp4",
    "from": 0,
    "dur": 180,
-   "startFrom": 0
+   "startFrom": 0,
+   "punch": 1800
   },
   {
    "kind": "vid",
@@ -137,7 +138,8 @@
    "src": "vid/falaurel/S1.mp4",
    "from": 936,
    "dur": 3390,
-   "startFrom": 180
+   "startFrom": 180,
+   "punch": 864
   },
   {
    "kind": "vid",
