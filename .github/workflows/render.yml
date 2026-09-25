@@ -52,8 +52,8 @@ jobs:
       matrix:
         idx: ${{ fromJSON(needs.prepare.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with: { node-version: "20", cache: "npm" }
       - name: cache node_modules + chromium
         uses: actions/cache@v4
@@ -282,8 +282,14 @@ jobs:
             echo "timestamps reescritos a 30 fps CFR (video y audio)"
             rm -f "_v_$SLUG.h264" "_a_$SLUG.aac" "_cat_$SLUG.mp4"
           else
-            echo "::warning::el remux a CFR falló — publico el concat crudo (puede tener el tirón de las costuras)"
+            # ⛔⛔ NO SE DEGRADA EN SILENCIO. Medido en fcsunaclavada (22-sep-2026): el remux murió
+            # con "Cannot allocate memory" en el muxer, el job siguió, publicó el concat crudo bajo
+            # el nombre del bueno y el run quedó en SUCCESS con el tirón de las 29 costuras adentro.
+            # Un run verde NO puede entregar el crudo. Se conserva para poder rescatarlo (son ~80 min
+            # de CPU), pero con OTRO NOMBRE de artefacto y el job termina en RED — ver el paso final.
+            echo "::error::el remux a CFR falló — el MP4 quedó CRUDO (tirón en cada costura). Se publica como final-$SLUG-RAW y el job falla a propósito: NO es entregable sin pasarle scripts/entrega_mp4.sh"
             mv -f "_cat_$SLUG.mp4" "$SLUG.mp4"
+            echo "RAW=1" >> "$GITHUB_ENV"
           fi
           fi
           # Segundo cinturón: aunque estén los N archivos, si el resultado dura mucho menos de lo
@@ -297,7 +303,9 @@ jobs:
           fi
       - uses: actions/upload-artifact@v4
         with:
-          name: final-${{ github.event.inputs.slug }}
+          # Si el remux a CFR se cayó, el archivo es el concat CRUDO: va con sufijo -RAW para que
+          # nadie lo confunda con un entregable (el nombre limpio significa "pasó la compuerta CFR").
+          name: final-${{ github.event.inputs.slug }}${{ env.RAW == '1' && '-RAW' || '' }}
           path: ${{ github.event.inputs.slug }}.mp4
           retention-days: 7
       # ── CHEQUEO TECNICO EN LA NUBE (etapa 2 del auditor) ────────────────────────────────────
@@ -322,7 +330,10 @@ jobs:
       # mover un archivo de GitHub a GitHub. Peor: lo que se publicaba salia del disco local, y
       # por eso una vez se entrego un render viejo (la parte 1 sola) en vez del final.
       # Publicando aca, lo entregado ES exactamente lo que se acaba de concatenar.
+      # ⛔ Si el remux a CFR se cayó, el MP4 es el CRUDO: NO se publica como release. Antes sí se
+      # publicaba (fcsunaclavada, 22-sep-2026) con el título "MP4 final", y era el del tirón.
       - name: publicar el MP4 final como release
+        if: env.RAW != '1'
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
@@ -335,3 +346,14 @@ jobs:
         continue-on-error: true
         run: |
           curl -s -X POST "${{ secrets.SB_URL }}/rest/v1/rpc/render_bump" -H "apikey: ${{ secrets.SB_ANON }}" -H "Authorization: Bearer ${{ secrets.SB_ANON }}" -H "Content-Type: application/json" -d '{"p_slug":"${{ github.event.inputs.slug }}","p_delta":100}' || true
+      # ⛔⛔ ÚLTIMO PASO A PROPÓSITO: el job tiene que terminar en ROJO si se degradó.
+      # Va al final (y no en el paso del concat) para que el artefacto -RAW alcance a subirse:
+      # son ~80 min de CPU y se puede rescatar en local con scripts/entrega_mp4.sh. Pero el run
+      # NO puede quedar verde, porque "success" es lo que hace que nadie vuelva a mirar el archivo.
+      - name: fallar si el MP4 quedó crudo
+        if: env.RAW == '1'
+        run: |
+          echo "::error::el MP4 de ${{ github.event.inputs.slug }} quedó CRUDO (el remux a CFR falló)."
+          echo "Está en el artefacto final-${{ github.event.inputs.slug }}-RAW y NO se publicó como release."
+          echo "Para rescatarlo: bash scripts/entrega_mp4.sh <mp4> ${{ github.event.inputs.slug }} <salida.mp4>"
+          exit 1

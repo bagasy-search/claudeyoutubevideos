@@ -1,0 +1,205 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S4",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": null,
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [],
+   "prompt": "Create a new photo: A small bright family bathroom in daylight: white wall tiles, a white sink with a chrome tap, a frosted window letting in soft daylight, a hand towel on a ring, a cup with toothbrushes, a small glass shelf with a jar of white cream, the small dark amber dropper bottle and a folded printed sheet of paper. The camera is exactly where the mirror would be: the doctor stands at the sink facing the camera as if looking into the mirror, a small white towel over his shoulder, face clean. There is NO mirror and NO reflection anywhere in the frame. Medium close shot, chest up, room around him. The man is the doctor of the input image (a close-up of his real face): EXACTLY that face — same face shape, eyes, nose, eyebrows, dark curly hair with a little grey, short salt-and-pepper beard, same age (about 40) — do not make him younger or more handsome. He wears blue medical scrubs with short sleeves, a black stethoscope around his neck and a black smartwatch on his left wrist. A casual home video frame, ordinary, candid."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he faces the camera, face clean and dry, hands relaxed, friendly."
+  },
+  {
+   "id": "K2",
+   "noface": true,
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his HANDS ONLY above the white sink: the small amber dropper bottle tilted, one drop of golden oil falling onto the fingertips of his other hand. No face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K3",
+   "noface": true,
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same close-up: he rubs his glistening oily fingertips together."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he raises his glistening fingertips toward his face, looking at the camera."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: his fingertips rest just in front of his ears, calm expression."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: his fingertips rest on his temples, eyes on the camera."
+  },
+  {
+   "id": "K7",
+   "noface": false,
+   "from": [
+    "K6"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the right side of his face: two oily fingertips resting at the corner of his mouth on the cheek, short beard stubble and skin pores visible. Only the lower cheek and fingers. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K8",
+   "noface": false,
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same extreme close-up: the fingertips have glided up the cheek to the temple."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: both his hands rest on his cheeks, relaxed."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light: his hands are on his neck under the jaw, chin slightly raised."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light: his fingertips press lightly on his cheekbones, relaxed half smile."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he holds an unfolded printed sheet of paper up toward the camera, its blank back facing the camera, looking at the viewer over its top edge."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the sheet against his chest, pointing down with one finger, relaxed smile."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he stands half turned toward the door with the amber bottle, looking back at the camera."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s4_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Aquí estoy, frente al espejo. Cara lavada, seca. Imagínate que la cámara es tu espejo, y hazlo conmigo, ¿sí?",
+   "action": "He dabs his face dry with the small towel, puts it back on his shoulder and looks straight into the camera as into a mirror, inviting.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s4_01.wav"
+  },
+  {
+   "id": "s4_02",
+   "a": "K2",
+   "b": "K3",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s4_02.wav",
+   "text": "Tres o cuatro gotas en las yemas. Frotas un poquito los dedos, para entibiarlo. Así se desliza, no tironea.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY above the sink: a drop of oil falls from the amber dropper onto the fingertips, then he rubs the fingertips together."
+  },
+  {
+   "id": "s4_03",
+   "a": "K4",
+   "b": "K5",
+   "text": "Con los dedos del medio y el anular, circulitos suaves, desde el mentón hacia las orejas. Suave, eh. No estás amasando pan.",
+   "action": "Looking into the camera as into a mirror, he makes small gentle circles with his middle and ring fingers from his chin along the jawline toward his ears.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s4_03.wav"
+  },
+  {
+   "id": "s4_04",
+   "a": "K5",
+   "b": "K6",
+   "text": "Después, las mejillas: barres desde las comisuras de la boca hacia las sienes. Siempre hacia arriba. Hacia afuera.",
+   "action": "He sweeps his fingertips slowly from the corners of his mouth up over his cheeks toward his temples, several times, always upward.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s4_04.wav"
+  },
+  {
+   "id": "s4_05",
+   "a": "K7",
+   "b": "K8",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s4_05.wav",
+   "text": "Así, despacito. Tres, cuatro veces de cada lado. La piel se mueve con los dedos; no la estiras.",
+   "action": "EXTREME CLOSE-UP of the CHEEK only: two oily fingertips glide slowly upward from the corner of the mouth across the cheek to the temple, the skin moving with them, not stretched."
+  },
+  {
+   "id": "s4_06",
+   "a": "K9",
+   "b": "K10",
+   "text": "En la frente, del entrecejo hacia las sienes. Y el cuello, de abajo hacia arriba, desde la clavícula hasta la mandíbula.",
+   "action": "He glides his fingertips from between the eyebrows outward to the temples, then strokes his neck upward from the collarbone to the jaw.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s4_06.wav"
+  },
+  {
+   "id": "s4_07",
+   "a": "K10",
+   "b": "K11",
+   "text": "Y terminas con presiones suaves, dos o tres segundos, en las sienes y en los pómulos. Ocho, diez minutos en total. No más.",
+   "action": "He presses gently on his temples and then on his cheekbones for a few seconds each, eyes half closed, relaxed.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s4_07.wav"
+  },
+  {
+   "id": "s4_08",
+   "a": "K11",
+   "b": "K12",
+   "text": "Mira, te lo dejé todo en una sola hoja. Presten mucha atención a esta imagen, es la parte más importante del video.",
+   "action": "He takes the folded printed sheet from the glass shelf, unfolds it and holds it up toward the camera, serious and intent.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s4_08.wav"
+  },
+  {
+   "id": "s4_09",
+   "a": "K12",
+   "b": "K13",
+   "text": "Y dicho sea de paso, esta es solo una página de la guía completa. Si están viendo en el televisor escaneen el código; si están en el teléfono, el enlace está abajo.",
+   "action": "He lowers the sheet, holds it against his chest and talks casually to the camera, pointing downward with one finger.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s4_09.wav"
+  },
+  {
+   "id": "s4_10",
+   "a": "K13",
+   "b": "K14",
+   "text": "Bueno. Sigo, que falta lo mejor: la versión lenta del aceite, la que hacían las abuelas, y qué hacer con las manchas.",
+   "action": "He puts the sheet back on the shelf, takes the amber bottle and turns toward the door, glancing at the camera.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s4_10.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S4/vlog_S4.mp4"
+}

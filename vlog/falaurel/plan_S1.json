@@ -1,0 +1,269 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S1",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same photo, but: the book, the aloe leaves, the knife and the small glass bowl are GONE from the counter. On the marble counter in front of him now, from left to right: a small clear plastic bag of dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere), a wooden cutting board, a clean EMPTY glass jar with its metal lid beside it, a bottle of pale golden sweet almond oil, a glass measuring jug, and a small dark amber glass bottle with a dropper cap. He leans slightly forward and holds ONE dried bay leaf up between his fingers close to the camera, looking at the viewer. Keep the same kitchen, window, shelf, stove, same framing."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands behind the counter holding the two halves of the broken dried bay leaf at chest height, looking straight at the viewer, eyebrows raised."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he rests both hands on the edge of the counter behind the row of items (bag of dried bay leaves, cutting board, empty glass jar, bottle of almond oil, measuring jug, small amber bottle), friendly, mid-sentence."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the open clear bag of dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) at chest height with a few dry leaves in his other palm, serious face, eyebrows slightly drawn together."
+  },
+  {
+   "id": "K4",
+   "noface": true,
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his two HANDS ONLY above the wooden cutting board on the marble counter, holding about ten dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere); one leaf is being torn in half between his fingers. Only hands and forearms (blue scrub sleeves, black smartwatch), no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K5",
+   "noface": true,
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same close-up a few seconds later: a small pile of torn dry bay leaf pieces on the cutting board, his fingers tearing the last leaf."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he holds a small pile of torn dry bay leaf pieces in his cupped left palm above the counter, looking at the viewer."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: the glass jar with the dry torn bay leaves at the bottom stands on the counter in front of him; he holds his index finger up, emphatic, looking at the viewer."
+  },
+  {
+   "id": "K8",
+   "noface": true,
+   "from": [
+    "K7"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the glass jar with torn dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) at the bottom on the marble counter; his hand tilts the glass measuring jug full of pale golden oil so the first thin stream of oil touches the leaves. Only hands, no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same close-up: the jar is now two-thirds full of clear pale golden oil with all the torn dry bay leaves fully submerged; the measuring jug is almost empty."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he stands behind the counter holding the jar full of golden oil with bay leaves in both hands at chest height, looking at the viewer."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same kitchen, the camera turned a little to the right: he now stands at the gas stove, the open glass jar of oil and bay leaves sits inside a small steel pot of shallow water on a tiny blue flame, his hand on the knob, face turned to the viewer."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: the small pot with the jar inside shows only tiny bubbles on the bottom and faint steam; he holds his flat hand horizontally above the pot, looking at the viewer."
+  },
+  {
+   "id": "K13",
+   "noface": true,
+   "from": [
+    "K12"
+   ],
+   "prompt": "EXTREME CLOSE-UP on the marble counter: a small dark amber glass bottle with a small funnel in its neck and a fine mesh strainer lined with white gauze resting on it; his hand pours golden oil with soaked bay leaves from a glass jar into the strainer. Only hands, no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K14",
+   "noface": true,
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same close-up: his fingers squeeze the gauze bundle with the soaked pale bay leaves above the funnel, the last golden drops falling into the full amber bottle."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same kitchen, back at the counter in the original framing: he holds up a small dark amber glass bottle full of oil toward the viewer, a small proud smile."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same place, same framing and same light: the amber bottle stands on the wooden wall shelf behind him; he faces the viewer, one hand pointing back at it."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up three glistening oily fingertips toward the viewer, the amber dropper bottle in his other hand, nodding."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same place, same framing and same light: his fingertips rest lightly on his temples, calm smile, looking at the viewer."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K18"
+   ],
+   "prompt": "Same place, same framing and same light: he stands behind the counter with both open palms toward the viewer, confident half-smile, the amber bottle and the empty jar on the counter."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s1_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Esta hoja, la del laurel de tu cocina... casi todo el mundo la usa mal en la piel.",
+   "action": "He stretches his arm toward the camera and snaps the dried bay leaf in half right in front of the lens, tiny dry crumbs falling, then pulls his hand back and keeps talking to the viewer.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_01.wav"
+  },
+  {
+   "id": "s1_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Bueno. Vamos a lo que importa: la receta completa, ahora mismo, no al final. Mira lo que tengo aquí en la mesa.",
+   "action": "He puts the leaf halves down on the cutting board, rubs his palms together once and sweeps an open hand over the items lined up on the counter.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_02.wav"
+  },
+  {
+   "id": "s1_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Hojas de laurel secas. Las de la bolsita del súper, las de cocinar. Ojo, eh: laurel de cocina. No el laurel rosa de los jardines, que es tóxico.",
+   "action": "He picks up the small clear bag of dried bay leaves, holds it up toward the viewer, then taps it with one finger and wags that finger in a gentle warning.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_03.wav"
+  },
+  {
+   "id": "s1_04",
+   "a": "K4",
+   "b": "K5",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_04.wav",
+   "text": "Cuento unas diez hojas. Diez, doce, no más. Y las rompo con los dedos, en tres o cuatro pedazos, para que suelten el aroma.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY above the wooden cutting board: he tears dried bay leaves one by one into three or four pieces, dry fragments falling onto the board."
+  },
+  {
+   "id": "s1_05",
+   "a": "K6",
+   "b": "K7",
+   "text": "Van a un frasco de vidrio limpio. Y seco, eh, bien seco. Esto es importantísimo, ahora te digo por qué.",
+   "action": "He tips the torn leaf pieces from his palm into the empty glass jar, lifts the jar to show it is dry inside, then raises his index finger.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_05.wav"
+  },
+  {
+   "id": "s1_06",
+   "a": "K8",
+   "b": "K9",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_06.wav",
+   "text": "Ahora el aceite. Media taza, unos ciento veinte mililitros. Yo uso de almendras dulces; también sirve uno de oliva suave. Que tape bien las hojas.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: pale golden almond oil pours slowly from the glass measuring jug into the jar over the torn dry bay leaves until they are fully covered."
+  },
+  {
+   "id": "s1_07",
+   "a": "K10",
+   "b": "K11",
+   "text": "Y ahora, calor suave. El frasco destapado, dentro de una olla con dos dedos de agua. Fuego mínimo, treinta, cuarenta minutos.",
+   "action": "He turns to the gas stove on the right, lowers the open jar into a small steel pot with a little water on the front burner, and turns the knob down to the smallest flame; the camera turns a little to the right to follow him.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_07.wav"
+  },
+  {
+   "id": "s1_08",
+   "a": "K11",
+   "b": "K12",
+   "text": "El agua nunca tiene que hervir fuerte. Si ves burbujas grandes, bajas el fuego. El aceite se entibia, no se fríe.",
+   "action": "He glances into the pot, points at the water, and makes a slow flat-hand 'keep it low' gesture over the pot.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_08.wav"
+  },
+  {
+   "id": "s1_09",
+   "a": "K13",
+   "b": "K14",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_09.wav",
+   "text": "Se apaga, se enfría ahí mismo, y al otro día se cuela. Mira, este lo preparé ayer: colador fino, una gasa, y se aprieta un poquito.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: golden oil pours through a fine mesh strainer lined with gauze into a small funnel in a dark amber glass bottle, then his fingers gently squeeze the gauze bundle, the last drops falling."
+  },
+  {
+   "id": "s1_10",
+   "a": "K15",
+   "b": "K16",
+   "text": "Frasco oscuro, tapado, lejos del calor de la estufa. Así te dura unos dos, tres meses. Si un día huele a rancio, se tira.",
+   "action": "He screws the dropper cap onto the amber bottle, turns and places it on the wooden wall shelf, far from the stove, then turns back and wrinkles his nose briefly as if smelling something bad.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_10.wav"
+  },
+  {
+   "id": "s1_11",
+   "a": "K16",
+   "b": "K17",
+   "text": "¿Cómo se usa? De noche, con la cara y el cuello limpios. Tres o cuatro gotas en las yemas de los dedos. No más, eh. Tres o cuatro.",
+   "action": "He takes the amber bottle down from the shelf, squeezes the dropper and lets three drops fall onto the fingertips of his other hand, then shows the glistening fingertips to the camera.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_11.wav"
+  },
+  {
+   "id": "s1_12",
+   "a": "K17",
+   "b": "K18",
+   "text": "Y el masaje, siempre hacia arriba y hacia afuera, nunca hacia abajo. Del mentón a las orejas, de la boca a las sienes.",
+   "action": "He gently slides his fingertips up along his own jaw from the chin to the ear, and from the corners of his mouth up to his temples, slowly, demonstrating while he talks.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_12.wav"
+  },
+  {
+   "id": "s1_13",
+   "a": "K18",
+   "b": "K19",
+   "text": "Y antes de la primera vez, siempre, prueba de parche en el antebrazo, veinticuatro horas. Esa es la receta. Completa. Ahora, los detalles que la hacen funcionar.",
+   "action": "He taps the inside of his forearm with two fingers, shows the forearm to the viewer, then counts on his fingers and opens both hands.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s1_13.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S1/vlog_S1.mp4"
+}

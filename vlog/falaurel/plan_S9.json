@@ -1,0 +1,310 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S9",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen as the input photo, now he sits at a small round wooden kitchen table near the window: on the table a cup of tea, a plate with a halved boiled egg, a small bowl of cooked beans, a cup of plain yogurt, a glass of water, a sweet bread roll on a small plate, the small dark amber dropper bottle and a phone lying face down. The book and the aloe are gone. Medium shot, from about two meters, he looks at the viewer with his forearms on the table."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: his flat palm rests on the table, he looks at the viewer."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up a warning finger, serious."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up four fingers."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he sits up with a small smile."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: the bread roll is back on the plate, he smiles."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the glass of water, nodding."
+  },
+  {
+   "id": "K7",
+   "noface": true,
+   "from": [
+    "K6"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the table: a plate with a halved boiled egg, a small bowl of cooked beans and a cup of plain yogurt. No face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K8",
+   "noface": true,
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same close-up: his hand places a glass of water next to the plate."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he sits at the table with the food in front of him, looking at the viewer."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light: his fingertips rest on his cheekbone."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the amber bottle in one hand, the other hand raised."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he shakes his head with an honest face."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he leans toward the camera, finger raised."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: his hand rests on his heart, warm face."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light: his hands are open, questioning look."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same place, same framing and same light: he smiles warmly."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same place, same framing and same light: he nods with his fingers on his cheek."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same place, same framing and same light: he nods, hands folded on the table."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K18"
+   ],
+   "prompt": "Same place, same framing and same light: he smiles with a gentle, accepting face."
+  },
+  {
+   "id": "K20",
+   "from": [
+    "K19"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the phone up at arm's length, its back toward the camera, smiling."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s9_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "El colágeno es como el colchón de la piel. Con los años el cuerpo fabrica menos, y el que hay se va gastando. Eso nos pasa a todos.",
+   "action": "He explains with his hands, pressing his flat palm on the table like on a soft mattress.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_01.wav"
+  },
+  {
+   "id": "s9_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "¿Un aceite de laurel activa el colágeno? Te lo digo derecho: no hay aceite casero que haga eso. Y si alguien te lo promete, desconfía.",
+   "action": "He shakes his head honestly, then raises a finger in warning.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_02.wav"
+  },
+  {
+   "id": "s9_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Lo que sí ayuda a cuidarlo, a que se gaste menos, son cosas aburridas: protector solar, no fumar, dormir bien, y comer proteína.",
+   "action": "He counts on his fingers, one, two, three, four.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_03.wav"
+  },
+  {
+   "id": "s9_03b",
+   "a": "K3",
+   "b": "K4",
+   "text": "Dormir. En serio, eh: la piel se repara de noche. Si duermes cinco horas, no hay aceite que lo tape.",
+   "action": "He rests his cheek on his folded hands like sleeping, then smiles.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_03b.wav"
+  },
+  {
+   "id": "s9_03c",
+   "a": "K4",
+   "b": "K5",
+   "text": "El dulce. No te digo que no comas pan dulce; te digo que no todos los días. Tanta azúcar tampoco le hace bien a la piel.",
+   "action": "He picks up the sweet bread roll from the small plate, looks at it, and puts it back with a little smile.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_03c.wav"
+  },
+  {
+   "id": "s9_03d",
+   "a": "K5",
+   "b": "K6",
+   "text": "Y el agua. No hace milagros, pero una piel deshidratada se ve más marcada. Un vaso al levantarte, y otro en cada comida.",
+   "action": "He drinks from the glass of water and raises it slightly toward the viewer.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_03d.wav"
+  },
+  {
+   "id": "s9_04",
+   "a": "K7",
+   "b": "K8",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_04.wav",
+   "text": "Un huevo, un poco de pescado, frijoles, un yogur. En cada comida, algo de proteína. La piel también se hace con lo que comes.",
+   "action": "EXTREME CLOSE-UP of the table: his hand places a glass of water next to the plate with the halved boiled egg, the beans and the yogurt."
+  },
+  {
+   "id": "s9_05",
+   "a": "K9",
+   "b": "K10",
+   "text": "Y el masaje. El masaje no fabrica colágeno, pero mueve la circulación y le da a la cara ese aspecto de más tono, menos cansado.",
+   "action": "He mimes the upward massage lightly on his own cheek while talking.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_05.wav"
+  },
+  {
+   "id": "s9_06",
+   "a": "K10",
+   "b": "K11",
+   "text": "Y el aceite es el deslizante perfecto para ese masaje. Esa es la verdad: el aceite es el qué. Cómo lo aplicas, eso es lo que suma.",
+   "action": "He holds up the amber bottle, points at it, then makes the upward massage gesture with the other hand.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_06.wav"
+  },
+  {
+   "id": "s9_07",
+   "a": "K11",
+   "b": "K12",
+   "text": "¿Y lo del botox natural, que se ve tanto en internet? No. El botox relaja el músculo. Ningún aceite hace eso. Ni el de laurel, ni ninguno.",
+   "action": "He waves a hand dismissively and shakes his head with a small smile.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_07.wav"
+  },
+  {
+   "id": "s9_08",
+   "a": "K12",
+   "b": "K13",
+   "text": "Y aquí te doy un truco para saber a quién creerle, en cualquier video, también en los míos: créele al que te dice lo que su receta no hace.",
+   "action": "He leans forward toward the camera, speaking in a confidential tone, finger raised.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_08.wav"
+  },
+  {
+   "id": "s9_09",
+   "a": "K13",
+   "b": "K14",
+   "text": "El que te promete que borra todo en siete días, te está vendiendo algo. El que te dice los límites, ese te está cuidando.",
+   "action": "He counts with his fingers, then puts his hand on his heart.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_09.wav"
+  },
+  {
+   "id": "s9_09b",
+   "a": "K14",
+   "b": "K15",
+   "text": "Y fíjate que yo te dije desde el principio lo que el laurel no hace. No borra arrugas, no aclara manchas, no fabrica colágeno. Y aun así vale la pena. ¿Por qué?",
+   "action": "He counts three things on his fingers, then opens his hands with a questioning look.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_09b.wav"
+  },
+  {
+   "id": "s9_09c",
+   "a": "K15",
+   "b": "K16",
+   "text": "Porque una piel hidratada, masajeada y protegida del sol se ve distinta. Más viva. Y eso, a los setenta, la gente lo nota.",
+   "action": "He smiles warmly, touching his own cheek with the back of his fingers.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_09c.wav"
+  },
+  {
+   "id": "s9_10",
+   "a": "K16",
+   "b": "K17",
+   "text": "¿Qué puedes esperar, de verdad? La primera semana, la piel más suave al tacto. Eso casi todo el mundo lo nota enseguida.",
+   "action": "He touches his cheek with the back of his fingers, feeling it smooth.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_10.wav"
+  },
+  {
+   "id": "s9_11",
+   "a": "K17",
+   "b": "K18",
+   "text": "A las tres, cuatro semanas, si eres constante, un aspecto más descansado, más luminoso. Las líneas finas se ven más suavizadas.",
+   "action": "He shows four fingers, then nods slowly.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_11.wav"
+  },
+  {
+   "id": "s9_12",
+   "a": "K18",
+   "b": "K19",
+   "text": "Las arrugas profundas, las de expresión de toda la vida, no se borran. Y está bien, son tu historia. Lo que queremos es una piel cuidada.",
+   "action": "He points at the lines around his own eyes, smiling gently.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_12.wav"
+  },
+  {
+   "id": "s9_13",
+   "a": "K19",
+   "b": "K20",
+   "text": "Un consejo: tómate una foto hoy, con luz de ventana, sin maquillaje. Y otra en un mes, con la misma luz. Así no te engañas, ni para bien ni para mal.",
+   "action": "He picks up the phone from the table and holds it at arm's length toward the window as if taking a selfie, the screen facing away from the camera.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s9_13.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S9/vlog_S9.mp4"
+}

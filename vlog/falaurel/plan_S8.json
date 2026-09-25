@@ -1,0 +1,209 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S8",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen as the input photo, now he stands at the kitchen sink by the window on the left side: on the counter beside the sink a small white bowl, a glass sugar jar with fine white sugar, a tablespoon, the small dark amber dropper bottle, a tube of hand cream and a folded hand towel. The book and the aloe are gone. Waist-up, from about two meters, daylight from the window, he looks at the viewer."
+  },
+  {
+   "id": "K1",
+   "noface": true,
+   "from": [
+    "K0"
+   ],
+   "prompt": "EXTREME CLOSE-UP: a small white bowl with two spoonfuls of fine white sugar on the counter; his hand pours a tablespoon of golden oil over it. Only hands, no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K2",
+   "noface": true,
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same close-up: the spoon has mixed the sugar and oil into a grainy glistening paste in the bowl."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the small bowl of sugar paste, looking at the viewer."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he rubs the sugar paste on the back of his hand above the sink."
+  },
+  {
+   "id": "K5",
+   "noface": true,
+   "from": [
+    "K4"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his HANDS ONLY above the sink: grainy sugar paste on the back of his left hand, right fingertips starting small circles. No face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K6",
+   "noface": true,
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same close-up: the paste spread over the back of the hand, the fingers moving around the knuckles."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he holds his hands over the sink, looking at the viewer."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he rubs hand cream between his hands."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his HANDS ONLY: white hand cream between his fingers and on the knuckles. No face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same close-up: the cream almost absorbed, the skin of the hands soft and moist."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he shows his hands to the camera, satisfied."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the empty bowl, finger raised."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he massages his cuticles, looking at the viewer."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he holds his hand up with a serious, caring face."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same kitchen: he sits at the small round wooden table near the window, looking at the viewer."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s8_01",
+   "a": "K1",
+   "b": "K2",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s8_01.wav",
+   "text": "Dos cucharadas de azúcar fina, una cucharada de aceite. Lo mezclas hasta que quede una pasta, así, granulada.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: a tablespoon of golden oil is poured over fine sugar in a small white bowl and stirred into a grainy paste."
+  },
+  {
+   "id": "s8_02",
+   "a": "K3",
+   "b": "K4",
+   "text": "Con las manos secas, lo pasas por el dorso uno o dos minutos, en circulitos suaves. Suave, que la piel de las manos es más fina que la de la cara.",
+   "action": "He scoops a little paste with his fingers and rubs it on the back of his other hand in small gentle circles.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s8_02.wav"
+  },
+  {
+   "id": "s8_03",
+   "a": "K5",
+   "b": "K6",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s8_03.wav",
+   "text": "Así. Y sin apretar sobre los nudillos, sobre todo si te duelen las articulaciones.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY above the sink: fingertips make small circles with the grainy paste on the back of the hand, avoiding the knuckles."
+  },
+  {
+   "id": "s8_04",
+   "a": "K7",
+   "b": "K8",
+   "text": "Enjuagas con agua tibia, secas con toquecitos, y enseguida crema de manos. Dos veces por semana, no más; todos los días irrita.",
+   "action": "He rinses his hands under the lukewarm tap, pats them dry with the towel, and squeezes hand cream onto one hand.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s8_04.wav"
+  },
+  {
+   "id": "s8_04b",
+   "a": "K9",
+   "b": "K10",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s8_04b.wav",
+   "text": "La crema, bien metida entre los dedos y en los nudillos. Ahí es donde la piel se agrieta primero.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: hand cream is rubbed between the fingers and over the knuckles until absorbed."
+  },
+  {
+   "id": "s8_05",
+   "a": "K11",
+   "b": "K12",
+   "text": "Y se prepara al momento, cada vez. No lo guardes mezclado, que el azúcar se humedece y se echa a perder.",
+   "action": "He shows the empty small bowl and wags a finger.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s8_05.wav"
+  },
+  {
+   "id": "s8_05b",
+   "a": "K12",
+   "b": "K13",
+   "text": "¿Y el aceite de laurel en las manos? Perfecto. De noche, después de lavar los platos, dos o tres gotas en el dorso y en las cutículas.",
+   "action": "He puts two drops from the amber dropper on the back of his hands and rubs them into his cuticles.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s8_05b.wav"
+  },
+  {
+   "id": "s8_06",
+   "a": "K13",
+   "b": "K14",
+   "text": "Y una cosa seria: si una mancha cambia de color, crece rápido, se levanta o sangra, eso no es para aceite. Eso es para el dermatólogo, sin demora.",
+   "action": "He looks at the camera very seriously and points at a small spot on the back of his hand.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s8_06.wav"
+  },
+  {
+   "id": "s8_07",
+   "a": "K14",
+   "b": "K15",
+   "text": "Ahora, el colágeno. Porque el título lo dice, y te lo debo explicar bien, sin cuentos. Siéntate conmigo un momento.",
+   "action": "He dries his hands, pulls out a chair at the small round kitchen table near the window and sits down, inviting the viewer.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s8_07.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S8/vlog_S8.mp4"
+}

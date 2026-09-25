@@ -1,0 +1,1192 @@
+[
+ {
+  "i": 0,
+  "s": 0.0,
+  "e": 4.975,
+  "d": 4.975,
+  "t": "Esta hoja, la del laurel de tu cocina... casi todo el mundo la usa mal en la piel."
+ },
+ {
+  "i": 1,
+  "s": 4.975,
+  "e": 13.715,
+  "d": 8.74,
+  "t": "Mis pacientes de setenta no me piden parecer de cuarenta. Me piden otra cosa: que cuando dicen su edad, les contesten: ¿en serio?"
+ },
+ {
+  "i": 2,
+  "s": 13.715,
+  "e": 22.935,
+  "d": 9.22,
+  "t": "Y con un frasco, unas hojas secas y ocho minutos de masaje, la piel se ve más cuidada, más suave. Eso sí te lo puedo mostrar."
+ },
+ {
+  "i": 3,
+  "s": 22.935,
+  "e": 30.175,
+  "d": 7.24,
+  "t": "Pero hay un error, uno solo, que te arruina el frasco en dos semanas. Y casi todos lo cometen. Hoy te lo enseño todo."
+ },
+ {
+  "i": 4,
+  "s": 30.175,
+  "e": 38.205,
+  "d": 8.03,
+  "t": "Bueno. Vamos a lo que importa: la receta completa, ahora mismo, no al final. Mira lo que tengo aquí en la mesa."
+ },
+ {
+  "i": 5,
+  "s": 38.205,
+  "e": 48.225,
+  "d": 10.02,
+  "t": "Hojas de laurel secas. Las de la bolsita del súper, las de cocinar. Ojo, eh: laurel de cocina. No el laurel rosa de los jardines, que es tóxico."
+ },
+ {
+  "i": 6,
+  "s": 48.225,
+  "e": 56.895,
+  "d": 8.67,
+  "t": "Cuento unas diez hojas. Diez, doce, no más. Y las rompo con los dedos, en tres o cuatro pedazos, para que suelten el aroma."
+ },
+ {
+  "i": 7,
+  "s": 56.895,
+  "e": 64.615,
+  "d": 7.72,
+  "t": "Van a un frasco de vidrio limpio. Y seco, eh, bien seco. Esto es importantísimo, ahora te digo por qué."
+ },
+ {
+  "i": 8,
+  "s": 64.615,
+  "e": 74.265,
+  "d": 9.65,
+  "t": "Ahora el aceite. Media taza, unos ciento veinte mililitros. Yo uso de almendras dulces; también sirve uno de oliva suave. Que tape bien las hojas."
+ },
+ {
+  "i": 9,
+  "s": 74.265,
+  "e": 82.995,
+  "d": 8.73,
+  "t": "Y ahora, calor suave. El frasco destapado, dentro de una olla con dos dedos de agua. Fuego mínimo, treinta, cuarenta minutos."
+ },
+ {
+  "i": 10,
+  "s": 82.995,
+  "e": 90.575,
+  "d": 7.58,
+  "t": "El agua nunca tiene que hervir fuerte. Si ves burbujas grandes, bajas el fuego. El aceite se entibia, no se fríe."
+ },
+ {
+  "i": 11,
+  "s": 90.575,
+  "e": 99.785,
+  "d": 9.21,
+  "t": "Se apaga, se enfría ahí mismo, y al otro día se cuela. Mira, este lo preparé ayer: colador fino, una gasa, y se aprieta un poquito."
+ },
+ {
+  "i": 12,
+  "s": 99.785,
+  "e": 108.595,
+  "d": 8.81,
+  "t": "Frasco oscuro, tapado, lejos del calor de la estufa. Así te dura unos dos, tres meses. Si un día huele a rancio, se tira."
+ },
+ {
+  "i": 13,
+  "s": 108.595,
+  "e": 117.385,
+  "d": 8.79,
+  "t": "¿Cómo se usa? De noche, con la cara y el cuello limpios. Tres o cuatro gotas en las yemas de los dedos. No más, eh. Tres o cuatro."
+ },
+ {
+  "i": 14,
+  "s": 117.385,
+  "e": 125.245,
+  "d": 7.86,
+  "t": "Y el masaje, siempre hacia arriba y hacia afuera, nunca hacia abajo. Del mentón a las orejas, de la boca a las sienes."
+ },
+ {
+  "i": 15,
+  "s": 125.245,
+  "e": 136.335,
+  "d": 11.09,
+  "t": "Y antes de la primera vez, siempre, prueba de parche en el antebrazo, veinticuatro horas. Esa es la receta. Completa. Ahora, los detalles que la hacen funcionar."
+ },
+ {
+  "i": 16,
+  "s": 136.335,
+  "e": 142.995,
+  "d": 6.66,
+  "t": "A ver, vamos con calma, porque aquí es donde se equivoca casi todo el mundo. Y te lo cuento con un caso real."
+ },
+ {
+  "i": 17,
+  "s": 142.995,
+  "e": 153.035,
+  "d": 10.04,
+  "t": "Doña Elena, setenta y tres años. Hizo su aceite, contentísima, y a las dos semanas me trae el frasco. Turbio. Con unos puntitos blancos flotando."
+ },
+ {
+  "i": 18,
+  "s": 153.035,
+  "e": 162.265,
+  "d": 9.23,
+  "t": "Moho. ¿Y sabes por qué? Porque lavó las hojas y las metió mojadas al frasco. Y un aceite con agua adentro... se echa a perder."
+ },
+ {
+  "i": 19,
+  "s": 162.265,
+  "e": 171.985,
+  "d": 9.72,
+  "t": "Una gota de agua basta. Por eso: hojas secas, frasco seco, cuchara seca. Si lavas el frasco, lo dejas secar un día entero boca abajo."
+ },
+ {
+  "i": 20,
+  "s": 171.985,
+  "e": 180.445,
+  "d": 8.46,
+  "t": "Ese es el error número uno. Y hay un segundo, casi igual de común: el calor. La gente pone el frasco directo al fuego, o hierve el agua fuerte."
+ },
+ {
+  "i": 21,
+  "s": 180.445,
+  "e": 190.495,
+  "d": 10.05,
+  "t": "Y el aceite se recalienta, huele a quemado, y en vez de cuidar la piel, la irrita. Por eso te digo: fuego mínimo, el agua apenas temblando."
+ },
+ {
+  "i": 22,
+  "s": 190.495,
+  "e": 198.335,
+  "d": 7.84,
+  "t": "Mira, así. Burbujitas chiquitas en el fondo, nada más. Si metes el dedo en el agua, está caliente, pero se aguanta."
+ },
+ {
+  "i": 23,
+  "s": 198.335,
+  "e": 205.825,
+  "d": 7.49,
+  "t": "Yo le pongo un trapito doblado en el fondo de la olla, para que el vidrio no toque directo el metal. Truco de abuela, eh."
+ },
+ {
+  "i": 24,
+  "s": 205.825,
+  "e": 214.665,
+  "d": 8.84,
+  "t": "Treinta, cuarenta minutos. Si tienes paciencia, una hora, con el fuego al mínimo mínimo. Más tiempo no le hace daño. Más calor, sí."
+ },
+ {
+  "i": 25,
+  "s": 214.665,
+  "e": 222.675,
+  "d": 8.01,
+  "t": "Y mientras tanto, la cocina huele a laurel. A mí me recuerda a la cocina de mi mamá, los domingos, con la olla del caldo."
+ },
+ {
+  "i": 26,
+  "s": 222.675,
+  "e": 231.795,
+  "d": 9.12,
+  "t": "Cuando termina, apagas, y lo dejas enfriar dentro del agua, despacito. Nunca lo pases de golpe a algo frío, que el vidrio se puede romper."
+ },
+ {
+  "i": 27,
+  "s": 231.795,
+  "e": 240.245,
+  "d": 8.45,
+  "t": "Y después, tapado, reposa hasta el otro día. Las hojas siguen soltando lo suyo mientras se enfría. No lo apures."
+ },
+ {
+  "i": 28,
+  "s": 240.245,
+  "e": 247.085,
+  "d": 6.84,
+  "t": "Ahora, antes de ponértelo en la cara, hay una cosa que no te puedes saltar. Ninguna. Vamos a la mesa."
+ },
+ {
+  "i": 29,
+  "s": 247.085,
+  "e": 255.965,
+  "d": 8.88,
+  "t": "Prueba de parche. Ya sé, suena aburrido. Pero el laurel es una planta aromática, y a algunas personas les da alergia. Así de simple."
+ },
+ {
+  "i": 30,
+  "s": 255.965,
+  "e": 265.445,
+  "d": 9.48,
+  "t": "Una gota del aceite, en la parte de adentro del antebrazo. Aquí, donde la piel es finita. La extiendes un poquito, en un círculo chiquito."
+ },
+ {
+  "i": 31,
+  "s": 265.445,
+  "e": 272.675,
+  "d": 7.23,
+  "t": "Y esperas veinticuatro horas. Sin lavar esa zona, si puedes. Yo le pongo una curita encima, para acordarme, mira."
+ },
+ {
+  "i": 32,
+  "s": 272.675,
+  "e": 281.745,
+  "d": 9.07,
+  "t": "Si al otro día está roja, te pica o te arde, no lo uses en la cara. Lavas con agua y jabón, y listo: ese aceite no es para ti."
+ },
+ {
+  "i": 33,
+  "s": 281.745,
+  "e": 289.785,
+  "d": 8.04,
+  "t": "Y si está todo normal, bien, ya puedes usarlo en la cara. Pero ojo: nunca en el contorno de los ojos, ni en los párpados."
+ },
+ {
+  "i": 34,
+  "s": 289.785,
+  "e": 299.615,
+  "d": 9.83,
+  "t": "Ni sobre piel lastimada, ni sobre una herida, ni después de quemarte con el sol. Y si un día arde, lavas y suspendes. Así, derecho."
+ },
+ {
+  "i": 35,
+  "s": 299.615,
+  "e": 309.075,
+  "d": 9.46,
+  "t": "Ahora sí, la parte que casi todos hacen mal sin saberlo: cómo se aplica. Porque no es untarse y ya. Vamos al baño, frente al espejo."
+ },
+ {
+  "i": 36,
+  "s": 309.075,
+  "e": 317.025,
+  "d": 7.95,
+  "t": "Aquí estoy, frente al espejo. Cara lavada, seca. Imagínate que la cámara es tu espejo, y hazlo conmigo, ¿sí?"
+ },
+ {
+  "i": 37,
+  "s": 317.025,
+  "e": 324.455,
+  "d": 7.43,
+  "t": "Tres o cuatro gotas en las yemas. Frotas un poquito los dedos, para entibiarlo. Así se desliza, no tironea."
+ },
+ {
+  "i": 38,
+  "s": 324.455,
+  "e": 333.125,
+  "d": 8.67,
+  "t": "Con los dedos del medio y el anular, circulitos suaves, desde el mentón hacia las orejas. Suave, eh. No estás amasando pan."
+ },
+ {
+  "i": 39,
+  "s": 333.125,
+  "e": 341.405,
+  "d": 8.28,
+  "t": "Después, las mejillas: barres desde las comisuras de la boca hacia las sienes. Siempre hacia arriba. Hacia afuera."
+ },
+ {
+  "i": 40,
+  "s": 341.405,
+  "e": 348.485,
+  "d": 7.08,
+  "t": "Así, despacito. Tres, cuatro veces de cada lado. La piel se mueve con los dedos; no la estiras."
+ },
+ {
+  "i": 41,
+  "s": 348.485,
+  "e": 356.075,
+  "d": 7.59,
+  "t": "En la frente, del entrecejo hacia las sienes. Y el cuello, de abajo hacia arriba, desde la clavícula hasta la mandíbula."
+ },
+ {
+  "i": 42,
+  "s": 356.075,
+  "e": 364.855,
+  "d": 8.78,
+  "t": "Y terminas con presiones suaves, dos o tres segundos, en las sienes y en los pómulos. Ocho, diez minutos en total. No más."
+ },
+ {
+  "i": 43,
+  "s": 364.855,
+  "e": 372.095,
+  "d": 7.24,
+  "t": "Mira, te lo dejé todo en una sola hoja. Presten mucha atención a esta imagen, es la parte más importante del video."
+ },
+ {
+  "i": 44,
+  "s": 372.095,
+  "e": 406.505,
+  "d": 34.41,
+  "t": "Paso uno: cara limpia, y tres o cuatro gotas de aceite en las yemas. Paso dos: circulitos, del mentón hacia las orejas. Paso tres: de las comisuras a las sienes, y en la frente, del entrecejo hacia afuera. Paso cuatro: presiones suaves, dos o tres segundos, en sienes y pómulos. Las flechas, siempre hacia arriba. Y en el recuadro, los tres errores que lo arruinan: apretar fuerte, ir hacia abajo, y hacerlo con la piel seca. Ocho a diez minutos, tres o cuatro veces por semana. Sácale una foto."
+ },
+ {
+  "i": 45,
+  "s": 406.505,
+  "e": 416.745,
+  "d": 10.24,
+  "t": "Y dicho sea de paso, esta es solo una página de la guía completa. Si están viendo en el televisor escaneen el código; si están en el teléfono, el enlace está abajo."
+ },
+ {
+  "i": 46,
+  "s": 416.745,
+  "e": 424.465,
+  "d": 7.72,
+  "t": "Bueno. Sigo, que falta lo mejor: la versión lenta del aceite, la que hacían las abuelas, y qué hacer con las manchas."
+ },
+ {
+  "i": 47,
+  "s": 424.465,
+  "e": 433.295,
+  "d": 8.83,
+  "t": "Hay otra forma de hacerlo, sin fuego. Muchas de ustedes me la escriben: el frasco, un mes, en la oscuridad. Y tienen toda la razón."
+ },
+ {
+  "i": 48,
+  "s": 433.295,
+  "e": 444.895,
+  "d": 11.6,
+  "t": "Mismo frasco seco, mismas diez hojas rotas, mismo aceite. Lo tapas, y lo guardas en un lugar oscuro y fresco. Debajo del fregadero no, que hay humedad."
+ },
+ {
+  "i": 49,
+  "s": 444.895,
+  "e": 452.155,
+  "d": 7.26,
+  "t": "Una vez por semana lo sacas y lo mueves así, suavecito, dándolo vuelta. Tres o cuatro semanas. Nada más."
+ },
+ {
+  "i": 50,
+  "s": 452.155,
+  "e": 462.645,
+  "d": 10.49,
+  "t": "¿Cuál es mejor, el rápido o el lento? Mira... el lento suele quedar más suave, más perfumado. El rápido te sirve cuando no quieres esperar un mes."
+ },
+ {
+  "i": 51,
+  "s": 462.645,
+  "e": 470.665,
+  "d": 8.02,
+  "t": "Yo, la verdad, tengo los dos andando. Uno rápido para usar ya, y uno lento guardado, que va a estar listo cuando se me acabe el otro."
+ },
+ {
+  "i": 52,
+  "s": 470.665,
+  "e": 479.095,
+  "d": 8.43,
+  "t": "Este lo empecé hace cuatro semanas. Mira el color. ¿Ves? Doradito. Y las hojas ya están pálidas; soltaron lo suyo."
+ },
+ {
+  "i": 53,
+  "s": 479.095,
+  "e": 486.975,
+  "d": 7.88,
+  "t": "Y fíjate que el aceite no se puso turbio. Está transparente. Eso es buena señal: no entró agua, no hay moho."
+ },
+ {
+  "i": 54,
+  "s": 486.975,
+  "e": 493.525,
+  "d": 6.55,
+  "t": "Lo cuelo igual: colador fino, gasa, y lo dejo escurrir solo un buen rato. Sin apurarlo."
+ },
+ {
+  "i": 55,
+  "s": 493.525,
+  "e": 500.765,
+  "d": 7.24,
+  "t": "Y aquí va otra cosa que casi nadie cuenta: el aceite que elijas importa, eh. A veces más que el laurel."
+ },
+ {
+  "i": 56,
+  "s": 500.765,
+  "e": 510.685,
+  "d": 9.92,
+  "t": "El de oliva extra virgen, el fuerte, en algunas pieles muy blancas deja un tono verdoso y un olor intenso. Para la cara yo prefiero almendras dulces."
+ },
+ {
+  "i": 57,
+  "s": 510.685,
+  "e": 520.745,
+  "d": 10.06,
+  "t": "O un oliva suave, o de semilla de uva, o jojoba. ¿Coco? En la cara, a mucha gente le tapa los poros. Para las manos, va bien."
+ },
+ {
+  "i": 58,
+  "s": 520.745,
+  "e": 530.675,
+  "d": 9.93,
+  "t": "¿Y cuánto laurel? No te pases. Más hojas no es más efecto: es más olor, y más riesgo de irritar. Diez, doce hojas por media taza."
+ },
+ {
+  "i": 59,
+  "s": 530.675,
+  "e": 540.365,
+  "d": 9.69,
+  "t": "Y algo que me preguntan mucho: ¿puedo usar aceite esencial de laurel? No. Puro, sobre la piel, no. Es muy concentrado, y quema."
+ },
+ {
+  "i": 60,
+  "s": 540.365,
+  "e": 550.015,
+  "d": 9.65,
+  "t": "Lo que hacemos aquí es otra cosa: un aceite vegetal perfumado con hojas. Suave. Por eso, con la prueba del parche, es seguro."
+ },
+ {
+  "i": 61,
+  "s": 550.015,
+  "e": 557.405,
+  "d": 7.39,
+  "t": "Guardado: frasco de vidrio oscuro, tapado, en la alacena. Nada de dejarlo al sol en la ventana, aunque se vea bonito."
+ },
+ {
+  "i": 62,
+  "s": 557.405,
+  "e": 566.655,
+  "d": 9.25,
+  "t": "Yo le pego un papelito con la fecha, así sé cuándo lo hice. Dos, tres meses. Y si huele a crayón viejo, a rancio, se tira."
+ },
+ {
+  "i": 63,
+  "s": 566.655,
+  "e": 573.825,
+  "d": 7.17,
+  "t": "Y si quieres regalarlo, es un regalo precioso. Frasquitos chiquitos, oscuros, para tus amigas o tus hermanas."
+ },
+ {
+  "i": 64,
+  "s": 573.825,
+  "e": 581.085,
+  "d": 7.26,
+  "t": "Con su etiqueta, la fecha, y una tarjetita que diga: primero la prueba del parche. Así la cuidas de verdad."
+ },
+ {
+  "i": 65,
+  "s": 581.085,
+  "e": 588.615,
+  "d": 7.53,
+  "t": "Porque un aceite regalado sin instrucciones termina en los ojos, o en la cara de alguien con alergia. Y eso no es regalo."
+ },
+ {
+  "i": 66,
+  "s": 588.615,
+  "e": 596.555,
+  "d": 7.94,
+  "t": "Ahora te quiero contar cómo terminó lo de Doña Elena. Porque justo hoy viene a tomar un café, y ella lo cuenta mejor que yo."
+ },
+ {
+  "i": 67,
+  "s": 596.555,
+  "e": 603.935,
+  "d": 7.38,
+  "t": "¡Ahí está! Pasa, pasa, Elena. Mira, estoy grabando, ¿no te molesta? Les estaba contando lo de tu frasco."
+ },
+ {
+  "i": 68,
+  "s": 603.935,
+  "e": 610.385,
+  "d": 6.45,
+  "t": "Elena tiene setenta y tres años. Y cuando vino a verme por primera vez, me dijo algo que no se me olvida."
+ },
+ {
+  "i": 69,
+  "s": 610.385,
+  "e": 615.095,
+  "d": 4.71,
+  "t": "Y habías probado de todo, ¿no? Cremas carísimas, cosas que viste en internet..."
+ },
+ {
+  "i": 70,
+  "s": 615.095,
+  "e": 621.835,
+  "d": 6.74,
+  "t": "Y lo que más me gustó es que no te rendiste. Lo hicimos de nuevo, bien hecho, y te enseñé el masaje."
+ },
+ {
+  "i": 71,
+  "s": 621.835,
+  "e": 625.155,
+  "d": 3.32,
+  "t": "Enséñales tu frasco, a ver. ¿Lo trajiste?"
+ },
+ {
+  "i": 72,
+  "s": 625.155,
+  "e": 632.235,
+  "d": 7.08,
+  "t": "Perfecto. Transparente, sin puntitos, con fecha. Eso es un frasco bien hecho. Cien por ciento."
+ },
+ {
+  "i": 73,
+  "s": 632.235,
+  "e": 636.015,
+  "d": 3.78,
+  "t": "A ver, dile la verdad a la gente, Elena: ¿se te borraron las arrugas?"
+ },
+ {
+  "i": 74,
+  "s": 636.015,
+  "e": 645.655,
+  "d": 9.64,
+  "t": "¿Ves? Eso es lo honesto. No es magia. Es constancia, hidratación, el masaje... y algo que Elena hace todas las mañanas, sin falta."
+ },
+ {
+  "i": 75,
+  "s": 645.655,
+  "e": 648.985,
+  "d": 3.33,
+  "t": "¿Y cómo te sientes ahora, con el espejo? Dime la verdad."
+ },
+ {
+  "i": 76,
+  "s": 648.985,
+  "e": 655.905,
+  "d": 6.92,
+  "t": "Hasta en las manos. Y justo de eso te quiero hablar ahora: de las manchas. Gracias, Elena. ¿Te sirvo el café?"
+ },
+ {
+  "i": 77,
+  "s": 655.905,
+  "e": 665.435,
+  "d": 9.53,
+  "t": "Las manchas. Te voy a decir la verdad, aunque no sea lo que quieres escuchar: ningún aceite casero aclara una mancha. Ninguno. Tampoco el de laurel."
+ },
+ {
+  "i": 78,
+  "s": 665.435,
+  "e": 673.815,
+  "d": 8.38,
+  "t": "¿Sabes qué es lo que más las oscurece? El sol. El de todos los días: ir al mercado, colgar la ropa, manejar con el brazo en la ventana."
+ },
+ {
+  "i": 79,
+  "s": 673.815,
+  "e": 681.555,
+  "d": 7.74,
+  "t": "Así que el verdadero antimanchas cuesta poco y está en la farmacia: protector solar, todas las mañanas, aunque esté nublado."
+ },
+ {
+  "i": 80,
+  "s": 681.555,
+  "e": 692.595,
+  "d": 11.04,
+  "t": "Y las manchas que ya tienes, las de muchos años, no se van con nada de la cocina. Ni con limón, ni con bicarbonato, ni con agua oxigenada. Eso irrita, y mancha más."
+ },
+ {
+  "i": 81,
+  "s": 692.595,
+  "e": 701.435,
+  "d": 8.84,
+  "t": "Lo que sí hace el protector, con constancia, es que no aparezcan nuevas, y que las de ahora no se oscurezcan más. Y eso ya es muchísimo."
+ },
+ {
+  "i": 82,
+  "s": 701.435,
+  "e": 709.215,
+  "d": 7.78,
+  "t": "Una cantidad como de dos dedos, para la cara y el cuello. Y aquí viene lo que casi nadie hace: el dorso de las manos."
+ },
+ {
+  "i": 83,
+  "s": 709.215,
+  "e": 718.175,
+  "d": 8.96,
+  "t": "Las manos delatan la edad antes que la cara. ¿Y sabes por qué? Porque nadie se pone protector en las manos. Treinta segundos, y listo."
+ },
+ {
+  "i": 84,
+  "s": 718.175,
+  "e": 726.415,
+  "d": 8.24,
+  "t": "Si vas a estar afuera, te vuelves a poner después de lavarte las manos. Y un sombrero de ala ancha, que es el protector que nunca falla."
+ },
+ {
+  "i": 85,
+  "s": 726.415,
+  "e": 736.055,
+  "d": 9.64,
+  "t": "Y el manejo, eh. La mano izquierda y el lado izquierdo de la cara reciben sol por la ventana del auto. Por eso a muchos se les mancha más un lado."
+ },
+ {
+  "i": 86,
+  "s": 736.055,
+  "e": 746.355,
+  "d": 10.3,
+  "t": "Ahora, ¿qué papel juega el aceite de laurel con las manchas? Uno pequeño, y honesto: hidrata. Y la piel hidratada se ve más pareja, más luminosa."
+ },
+ {
+  "i": 87,
+  "s": 746.355,
+  "e": 756.145,
+  "d": 9.79,
+  "t": "Pero ojo con esto: el aceite, de noche. Nunca antes de salir al sol. Y nada de ponerle limón al aceite, que con el sol mancha más."
+ },
+ {
+  "i": 88,
+  "s": 756.145,
+  "e": 765.155,
+  "d": 9.01,
+  "t": "Y si una mancha de la cara te molesta mucho, eso se habla con un dermatólogo: hay tratamientos de verdad. Pero en casa, primero, el protector."
+ },
+ {
+  "i": 89,
+  "s": 765.155,
+  "e": 773.675,
+  "d": 8.52,
+  "t": "Para el dorso de las manos te dejo algo más, bien sencillo: un exfoliante de azúcar con el mismo aceite. Vamos al fregadero."
+ },
+ {
+  "i": 90,
+  "s": 773.675,
+  "e": 781.095,
+  "d": 7.42,
+  "t": "Dos cucharadas de azúcar fina, una cucharada de aceite. Lo mezclas hasta que quede una pasta, así, granulada."
+ },
+ {
+  "i": 91,
+  "s": 781.095,
+  "e": 790.595,
+  "d": 9.5,
+  "t": "Con las manos secas, lo pasas por el dorso uno o dos minutos, en circulitos suaves. Suave, que la piel de las manos es más fina que la de la cara."
+ },
+ {
+  "i": 92,
+  "s": 790.595,
+  "e": 796.255,
+  "d": 5.66,
+  "t": "Así. Y sin apretar sobre los nudillos, sobre todo si te duelen las articulaciones."
+ },
+ {
+  "i": 93,
+  "s": 796.255,
+  "e": 804.885,
+  "d": 8.63,
+  "t": "Enjuagas con agua tibia, secas con toquecitos, y enseguida crema de manos. Dos veces por semana, no más; todos los días irrita."
+ },
+ {
+  "i": 94,
+  "s": 804.885,
+  "e": 811.035,
+  "d": 6.15,
+  "t": "La crema, bien metida entre los dedos y en los nudillos. Ahí es donde la piel se agrieta primero."
+ },
+ {
+  "i": 95,
+  "s": 811.035,
+  "e": 818.045,
+  "d": 7.01,
+  "t": "Y se prepara al momento, cada vez. No lo guardes mezclado, que el azúcar se humedece y se echa a perder."
+ },
+ {
+  "i": 96,
+  "s": 818.045,
+  "e": 826.825,
+  "d": 8.78,
+  "t": "¿Y el aceite de laurel en las manos? Perfecto. De noche, después de lavar los platos, dos o tres gotas en el dorso y en las cutículas."
+ },
+ {
+  "i": 97,
+  "s": 826.825,
+  "e": 836.735,
+  "d": 9.91,
+  "t": "Y una cosa seria: si una mancha cambia de color, crece rápido, se levanta o sangra, eso no es para aceite. Eso es para el dermatólogo, sin demora."
+ },
+ {
+  "i": 98,
+  "s": 836.735,
+  "e": 844.275,
+  "d": 7.54,
+  "t": "Ahora, el colágeno. Porque el título lo dice, y te lo debo explicar bien, sin cuentos. Siéntate conmigo un momento."
+ },
+ {
+  "i": 99,
+  "s": 844.275,
+  "e": 853.045,
+  "d": 8.77,
+  "t": "El colágeno es como el colchón de la piel. Con los años el cuerpo fabrica menos, y el que hay se va gastando. Eso nos pasa a todos."
+ },
+ {
+  "i": 100,
+  "s": 853.045,
+  "e": 861.295,
+  "d": 8.25,
+  "t": "¿Un aceite de laurel activa el colágeno? Te lo digo derecho: no hay aceite casero que haga eso. Y si alguien te lo promete, desconfía."
+ },
+ {
+  "i": 101,
+  "s": 861.295,
+  "e": 870.385,
+  "d": 9.09,
+  "t": "Lo que sí ayuda a cuidarlo, a que se gaste menos, son cosas aburridas: protector solar, no fumar, dormir bien, y comer proteína."
+ },
+ {
+  "i": 102,
+  "s": 870.385,
+  "e": 877.235,
+  "d": 6.85,
+  "t": "Dormir. En serio, eh: la piel se repara de noche. Si duermes cinco horas, no hay aceite que lo tape."
+ },
+ {
+  "i": 103,
+  "s": 877.235,
+  "e": 885.175,
+  "d": 7.94,
+  "t": "El dulce. No te digo que no comas pan dulce; te digo que no todos los días. Tanta azúcar tampoco le hace bien a la piel."
+ },
+ {
+  "i": 104,
+  "s": 885.175,
+  "e": 893.405,
+  "d": 8.23,
+  "t": "Y el agua. No hace milagros, pero una piel deshidratada se ve más marcada. Un vaso al levantarte, y otro en cada comida."
+ },
+ {
+  "i": 105,
+  "s": 893.405,
+  "e": 901.895,
+  "d": 8.49,
+  "t": "Un huevo, un poco de pescado, frijoles, un yogur. En cada comida, algo de proteína. La piel también se hace con lo que comes."
+ },
+ {
+  "i": 106,
+  "s": 901.895,
+  "e": 910.795,
+  "d": 8.9,
+  "t": "Y el masaje. El masaje no fabrica colágeno, pero mueve la circulación y le da a la cara ese aspecto de más tono, menos cansado."
+ },
+ {
+  "i": 107,
+  "s": 910.795,
+  "e": 919.335,
+  "d": 8.54,
+  "t": "Y el aceite es el deslizante perfecto para ese masaje. Esa es la verdad: el aceite es el qué. Cómo lo aplicas, eso es lo que suma."
+ },
+ {
+  "i": 108,
+  "s": 919.335,
+  "e": 929.365,
+  "d": 10.03,
+  "t": "¿Y lo del botox natural, que se ve tanto en internet? No. El botox relaja el músculo. Ningún aceite hace eso. Ni el de laurel, ni ninguno."
+ },
+ {
+  "i": 109,
+  "s": 929.365,
+  "e": 937.755,
+  "d": 8.39,
+  "t": "Y aquí te doy un truco para saber a quién creerle, en cualquier video, también en los míos: créele al que te dice lo que su receta no hace."
+ },
+ {
+  "i": 110,
+  "s": 937.755,
+  "e": 945.705,
+  "d": 7.95,
+  "t": "El que te promete que borra todo en siete días, te está vendiendo algo. El que te dice los límites, ese te está cuidando."
+ },
+ {
+  "i": 111,
+  "s": 945.705,
+  "e": 956.205,
+  "d": 10.5,
+  "t": "Y fíjate que yo te dije desde el principio lo que el laurel no hace. No borra arrugas, no aclara manchas, no fabrica colágeno. Y aun así vale la pena. ¿Por qué?"
+ },
+ {
+  "i": 112,
+  "s": 956.205,
+  "e": 965.105,
+  "d": 8.9,
+  "t": "Porque una piel hidratada, masajeada y protegida del sol se ve distinta. Más viva. Y eso, a los setenta, la gente lo nota."
+ },
+ {
+  "i": 113,
+  "s": 965.105,
+  "e": 973.065,
+  "d": 7.96,
+  "t": "¿Qué puedes esperar, de verdad? La primera semana, la piel más suave al tacto. Eso casi todo el mundo lo nota enseguida."
+ },
+ {
+  "i": 114,
+  "s": 973.065,
+  "e": 981.635,
+  "d": 8.57,
+  "t": "A las tres, cuatro semanas, si eres constante, un aspecto más descansado, más luminoso. Las líneas finas se ven más suavizadas."
+ },
+ {
+  "i": 115,
+  "s": 981.635,
+  "e": 990.665,
+  "d": 9.03,
+  "t": "Las arrugas profundas, las de expresión de toda la vida, no se borran. Y está bien, son tu historia. Lo que queremos es una piel cuidada."
+ },
+ {
+  "i": 116,
+  "s": 990.665,
+  "e": 1000.225,
+  "d": 9.56,
+  "t": "Un consejo: tómate una foto hoy, con luz de ventana, sin maquillaje. Y otra en un mes, con la misma luz. Así no te engañas, ni para bien ni para mal."
+ },
+ {
+  "i": 117,
+  "s": 1000.225,
+  "e": 1007.935,
+  "d": 7.71,
+  "t": "Ya es de noche. Y te voy a mostrar la rutina completa, como la hago yo, en orden, porque el orden también importa."
+ },
+ {
+  "i": 118,
+  "s": 1007.935,
+  "e": 1017.225,
+  "d": 9.29,
+  "t": "Primero, lavar la cara con agua tibia y un limpiador suave. Nada de agua caliente, que reseca. Y secar con toquecitos, sin frotar."
+ },
+ {
+  "i": 119,
+  "s": 1017.225,
+  "e": 1026.635,
+  "d": 9.41,
+  "t": "El pelo recogido, con una vincha o una toalla, para que no se te pegue el aceite. Y las manos lavadas, y las uñas cortas, para no arañarte."
+ },
+ {
+  "i": 120,
+  "s": 1026.635,
+  "e": 1034.935,
+  "d": 8.3,
+  "t": "Si tu piel es seca, primero una crema hidratante, una capa finita. Y encima, el aceite. El aceite sella, como una tapa."
+ },
+ {
+  "i": 121,
+  "s": 1034.935,
+  "e": 1044.635,
+  "d": 9.7,
+  "t": "Si tu piel es mixta, con el aceite solo alcanza. Y si usas algún tratamiento del dermatólogo, ácidos, retinol, pregúntale a él primero."
+ },
+ {
+  "i": 122,
+  "s": 1044.635,
+  "e": 1053.455,
+  "d": 8.82,
+  "t": "Después, las gotas, y el masaje que ya viste. Ocho minutos. Yo pongo una canción que me gusta, y cuando termina, termino."
+ },
+ {
+  "i": 123,
+  "s": 1053.455,
+  "e": 1061.135,
+  "d": 7.68,
+  "t": "Lo que te sobra en los dedos, no lo desperdicies: al dorso de las manos, y a las cutículas. Ahí siempre hace falta."
+ },
+ {
+  "i": 124,
+  "s": 1061.135,
+  "e": 1070.555,
+  "d": 9.42,
+  "t": "Y un truco para las manos muy secas: aceite, crema encima, y unos guantes de algodón para dormir. Al otro día parecen otras manos."
+ },
+ {
+  "i": 125,
+  "s": 1070.555,
+  "e": 1079.565,
+  "d": 9.01,
+  "t": "Y si un día estás cansada y no tienes ganas del masaje, no pasa nada. Pones las gotas y a dormir. Lo que cuenta es la semana, no el día."
+ },
+ {
+  "i": 126,
+  "s": 1079.565,
+  "e": 1087.295,
+  "d": 7.73,
+  "t": "Y a la cama. Tres o cuatro gotas se absorben solas. Si amaneces con la almohada grasosa, es que pusiste de más."
+ },
+ {
+  "i": 127,
+  "s": 1087.295,
+  "e": 1096.075,
+  "d": 8.78,
+  "t": "Un detalle práctico: usa una funda de almohada vieja, o de color oscuro. El aceite, aunque sea poquito, a la larga la marca."
+ },
+ {
+  "i": 128,
+  "s": 1096.075,
+  "e": 1105.665,
+  "d": 9.59,
+  "t": "Y a la mañana: lavar, crema si quieres, y protector solar. De noche cuidas; de día proteges. Así de simple es la rutina."
+ },
+ {
+  "i": 129,
+  "s": 1105.665,
+  "e": 1112.215,
+  "d": 6.55,
+  "t": "Ahora, las preguntas que más me hacen sobre este aceite. Me las anoté aquí, porque hay algunas muy buenas."
+ },
+ {
+  "i": 130,
+  "s": 1112.215,
+  "e": 1122.045,
+  "d": 9.83,
+  "t": "Primera: '¿Cuántas veces por semana?' El masaje, tres o cuatro. El aceite solo, sin masaje, puede ser todas las noches, si te cae bien."
+ },
+ {
+  "i": 131,
+  "s": 1122.045,
+  "e": 1130.615,
+  "d": 8.57,
+  "t": "Segunda: '¿Sirve para el cuello?' Sí, y el cuello siempre se olvida. De abajo hacia arriba, suave, sin apretar la garganta."
+ },
+ {
+  "i": 132,
+  "s": 1130.615,
+  "e": 1141.315,
+  "d": 10.7,
+  "t": "Tercera: '¿Y para las piernas, para las várices?' Aquí te freno. Un masaje suave relaja, sí, pero las várices se revisan con el médico. No las aprietes."
+ },
+ {
+  "i": 133,
+  "s": 1141.315,
+  "e": 1151.035,
+  "d": 9.72,
+  "t": "Cuarta: '¿Tengo la piel grasa, me sirve?' Con cuidado. Una o dos gotas, solo en las zonas secas. Si te salen granitos, lo dejas."
+ },
+ {
+  "i": 134,
+  "s": 1151.035,
+  "e": 1161.005,
+  "d": 9.97,
+  "t": "Quinta: '¿Lo puedo mezclar con romero?' Se puede, una ramita seca. Pero empieza con el laurel solo; si mezclas y algo te irrita, no sabes qué fue."
+ },
+ {
+  "i": 135,
+  "s": 1161.005,
+  "e": 1170.125,
+  "d": 9.12,
+  "t": "Sexta: '¿Y si tengo rosácea?' No masajees donde está roja, inflamada. Ahí, primero el dermatólogo. El aceite puede esperar."
+ },
+ {
+  "i": 136,
+  "s": 1170.125,
+  "e": 1178.965,
+  "d": 8.84,
+  "t": "Séptima: '¿Sirve para los dolores de las rodillas?' Un masaje con aceite reconforta, eso sí. Pero si te duele seguido, eso lo ve tu médico."
+ },
+ {
+  "i": 137,
+  "s": 1178.965,
+  "e": 1188.795,
+  "d": 9.83,
+  "t": "Octava: '¿Puedo usar hojas frescas, del árbol?' Mejor no. Tienen agua adentro... y ya sabes lo que pasa con el agua. Secas, siempre."
+ },
+ {
+  "i": 138,
+  "s": 1188.795,
+  "e": 1198.335,
+  "d": 9.54,
+  "t": "Novena: '¿Cada cuánto hago un frasco nuevo?' Media taza te dura más o menos un mes y medio. Haz poquito, y más seguido; así siempre está fresco."
+ },
+ {
+  "i": 139,
+  "s": 1198.335,
+  "e": 1207.605,
+  "d": 9.27,
+  "t": "Décima: '¿El calor no le quita lo bueno?' Con calor suave, no. Lo que lo arruina es el calor fuerte. Por eso el fuego al mínimo."
+ },
+ {
+  "i": 140,
+  "s": 1207.605,
+  "e": 1218.475,
+  "d": 10.87,
+  "t": "Once: '¿Y en las patas de gallo?' Ahí no pongas el aceite, que los ojos se irritan fácil. Si quieres, un toquecito suave con el anular, sin producto, hacia afuera."
+ },
+ {
+  "i": 141,
+  "s": 1218.475,
+  "e": 1228.715,
+  "d": 10.24,
+  "t": "Doce: '¿Se lo puedo poner a mi mamá, que tiene noventa?' Sí, con más cuidado todavía: parche primero, y un masaje muy suave, casi una caricia."
+ },
+ {
+  "i": 142,
+  "s": 1228.715,
+  "e": 1238.245,
+  "d": 9.53,
+  "t": "Trece: '¿Sirve el laurel que tengo hace años en la alacena?' Si ya no huele a nada, no. Hojas viejas, aceite sin aroma. Compra una bolsita nueva."
+ },
+ {
+  "i": 143,
+  "s": 1238.245,
+  "e": 1248.265,
+  "d": 10.02,
+  "t": "Y catorce, de un señor: '¿Me lo puedo poner después de afeitarme?' Mejor al otro día, o de noche. Sobre la piel recién afeitada puede arder."
+ },
+ {
+  "i": 144,
+  "s": 1248.265,
+  "e": 1256.925,
+  "d": 8.66,
+  "t": "Y una que me asustó: '¿Lo puedo tomar?' No. Este aceite es para la piel, por fuera. No se toma, ni en gotas, ni en té."
+ },
+ {
+  "i": 145,
+  "s": 1256.925,
+  "e": 1267.225,
+  "d": 10.3,
+  "t": "Y la última, que es la más linda: '¿Ya estoy muy vieja para empezar?' No. Nunca es tarde para cuidarte. A los setenta, a los ochenta, cuando quieras."
+ },
+ {
+  "i": 146,
+  "s": 1267.225,
+  "e": 1275.085,
+  "d": 7.86,
+  "t": "Y si tienes el árbol en tu casa, ¿estás seguro de que es laurel de cocina? Porque aquí viene la advertencia más importante de todo el video."
+ },
+ {
+  "i": 147,
+  "s": 1275.085,
+  "e": 1285.005,
+  "d": 9.92,
+  "t": "Estoy en la tienda de la esquina, y te quiero mostrar esto. Esta bolsita: laurel de cocina. Hojas secas, verde olivo, alargadas. Sin flores."
+ },
+ {
+  "i": 148,
+  "s": 1285.005,
+  "e": 1292.135,
+  "d": 7.13,
+  "t": "Se llama Laurus nobilis. Es el de toda la vida, el del caldo, el de los frijoles. Ese es el único que usamos."
+ },
+ {
+  "i": 149,
+  "s": 1292.135,
+  "e": 1301.395,
+  "d": 9.26,
+  "t": "Y ahora lo serio. Hay un arbusto que en muchos lugares también le dicen laurel: el laurel rosa, o adelfa. El de las flores rosadas o blancas."
+ },
+ {
+  "i": 150,
+  "s": 1301.395,
+  "e": 1309.815,
+  "d": 8.42,
+  "t": "Ese es tóxico. Muy tóxico. No se usa ni en aceite, ni en té, ni en nada. Ni lo toques y después te toques la cara."
+ },
+ {
+  "i": 151,
+  "s": 1309.815,
+  "e": 1320.095,
+  "d": 10.28,
+  "t": "Si en tu calle hay un arbusto de hojas largas, con flores rosadas, bonito, de esos que aguantan todo... probablemente es adelfa. No es laurel de cocina."
+ },
+ {
+  "i": 152,
+  "s": 1320.095,
+  "e": 1330.105,
+  "d": 10.01,
+  "t": "Se confunden porque las hojas se parecen: largas, verdes. Pero el laurel de cocina, seco, huele a guiso. La adelfa no huele a nada de la cocina."
+ },
+ {
+  "i": 153,
+  "s": 1330.105,
+  "e": 1338.945,
+  "d": 8.84,
+  "t": "Y hay otro, el laurel cerezo, que se usa en los cercos de los jardines. También es tóxico. Así que si no estás seguro de qué árbol es: no."
+ },
+ {
+  "i": 154,
+  "s": 1338.945,
+  "e": 1346.175,
+  "d": 7.23,
+  "t": "Si tienes nietos o mascotas en casa, y hay adelfa en el jardín, que no la mastiquen. Es de verdad peligrosa."
+ },
+ {
+  "i": 155,
+  "s": 1346.175,
+  "e": 1354.885,
+  "d": 8.71,
+  "t": "Por eso yo siempre digo: bolsita del súper, de la sección de especias. Cuesta muy poco, es segura, y ya viene seca. Tres ventajas."
+ },
+ {
+  "i": 156,
+  "s": 1354.885,
+  "e": 1363.805,
+  "d": 8.92,
+  "t": "Y fíjate en la bolsita: que diga laurel, hojas de laurel, nada más. Nada de mezclas con otras cosas, ni sabores, ni sal."
+ },
+ {
+  "i": 157,
+  "s": 1363.805,
+  "e": 1370.965,
+  "d": 7.16,
+  "t": "Y fíjate que las hojas estén verdes, no cafés, y que al romperlas huelan. Si no huelen a nada, son viejas."
+ },
+ {
+  "i": 158,
+  "s": 1370.965,
+  "e": 1378.215,
+  "d": 7.25,
+  "t": "Me llevo dos bolsitas: una para la cocina y otra para el aceite. Vamos a casa, que ya casi terminamos."
+ },
+ {
+  "i": 159,
+  "s": 1378.215,
+  "e": 1383.635,
+  "d": 5.42,
+  "t": "Bueno, ya en casa. Te hago un resumen rapidito, para que no se te escape nada, ¿sí?"
+ },
+ {
+  "i": 160,
+  "s": 1383.635,
+  "e": 1393.835,
+  "d": 10.2,
+  "t": "Diez hojas secas, rotas. Media taza de aceite de almendras. Frasco seco. Baño María suave, cuarenta minutos... o un mes en la oscuridad."
+ },
+ {
+  "i": 161,
+  "s": 1393.835,
+  "e": 1403.175,
+  "d": 9.34,
+  "t": "Colar, frasco oscuro, la fecha. Parche de veinticuatro horas. Tres o cuatro gotas de noche, masaje hacia arriba. Y protector solar de día."
+ },
+ {
+  "i": 162,
+  "s": 1403.175,
+  "e": 1411.245,
+  "d": 8.07,
+  "t": "Y el error que arruina todo: el agua. Hojas mojadas, frasco mojado. Una gota basta. Acuérdate de Elena."
+ },
+ {
+  "i": 163,
+  "s": 1411.245,
+  "e": 1422.285,
+  "d": 11.04,
+  "t": "El aceite es el qué. Cómo aplicarlo para que sume firmeza, el masaje completo, el cuello, las manos y la rutina en orden, está en mi guía, El Método Piel Joven."
+ },
+ {
+  "i": 164,
+  "s": 1422.285,
+  "e": 1428.345,
+  "d": 6.06,
+  "t": "El enlace está abajo, en la descripción. Y si estás en el televisor, el código está en pantalla."
+ },
+ {
+  "i": 165,
+  "s": 1428.345,
+  "e": 1436.125,
+  "d": 7.78,
+  "t": "Y si te sirvió, compártelo con esa amiga que se hace sus remedios en casa. Que lo haga bien: sin agua, y con la prueba del parche."
+ },
+ {
+  "i": 166,
+  "s": 1436.125,
+  "e": 1444.915,
+  "d": 8.79,
+  "t": "Y cuéntame en los comentarios: ¿cuántos años tienes, y cuántos te dicen que tienes? Me encanta leerlos. Nos vemos en el próximo video."
+ },
+ {
+  "i": 167,
+  "s": 1444.915,
+  "e": 1454.685,
+  "d": 9.77,
+  "t": "Mi mamá tiene setenta y ocho. Y te digo algo que aprendí con ella: no le importa verse joven. Le importa verse bien, verse cuidada. Como ella es."
+ },
+ {
+  "i": 168,
+  "s": 1454.685,
+  "e": 1464.135,
+  "d": 9.45,
+  "t": "Eso es lo que te deseo a ti también. No pelearte con el espejo. Mirarte, y reconocerte. Y que cuando digas tu edad... te digan: ¿en serio?"
+ },
+ {
+  "i": 169,
+  "s": 1464.135,
+  "e": 1465.2196825396825,
+  "d": 1.0846825396823696,
+  "t": "Cuídate mucho."
+ }
+]

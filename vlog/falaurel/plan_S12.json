@@ -1,0 +1,218 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S12",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": null,
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [],
+   "prompt": "Create a new photo: A small neighborhood grocery store in the daytime: wooden shelves with jars, bags of rice and beans, a spice section with rows of small clear bags of dried herbs, fruit crates near the open entrance door, a counter with an old scale; bright daylight from the door and white ceiling lights. The doctor stands in the aisle by the spice shelf holding a small clear bag of dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) at chest height, looking at the viewer. Medium shot, from about two meters. The man is the doctor of the input image (a close-up of his real face): EXACTLY that face — same face shape, eyes, nose, eyebrows, dark curly hair with a little grey, short salt-and-pepper beard, same age (about 40) — do not make him younger or more handsome. He wears blue medical scrubs with short sleeves, a black stethoscope around his neck and a black smartwatch on his left wrist. A casual home video frame, ordinary, candid."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the bag of dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) up close to the camera."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he holds one dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) up between two fingers."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he stands serious with a warning finger raised, the bag in his other hand."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he holds both palms out in a firm 'no', serious."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he points toward the open door, serious."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the open bag of dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) near his face, serious."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he shows two fingers, firm face."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: his hand rests on his chest, serious and caring."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up three fingers next to the spice shelf, smiling."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the same small clear bag of dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) close to the camera, pointing at it."
+  },
+  {
+   "id": "K11",
+   "noface": true,
+   "from": [
+    "K10"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his HANDS ONLY: one dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) held between his fingers above the open clear bag. No face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K12",
+   "noface": true,
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same close-up: the dry leaf broken in half, tiny crumbs falling into the bag."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light: he holds two small clear bags of dried bay leaves, smiling."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the store counter with the two bags, looking back at the viewer."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s12_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Estoy en la tienda de la esquina, y te quiero mostrar esto. Esta bolsita: laurel de cocina. Hojas secas, verde olivo, alargadas. Sin flores.",
+   "action": "In the store aisle, he shows the small clear bag of dried bay leaves to the camera, turning it.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_01.wav"
+  },
+  {
+   "id": "s12_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Se llama Laurus nobilis. Es el de toda la vida, el del caldo, el de los frijoles. Ese es el único que usamos.",
+   "action": "He opens the bag, takes out one dried leaf and holds it up between two fingers.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_02.wav"
+  },
+  {
+   "id": "s12_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Y ahora lo serio. Hay un arbusto que en muchos lugares también le dicen laurel: el laurel rosa, o adelfa. El de las flores rosadas o blancas.",
+   "action": "He puts the leaf back, his face becomes serious, and he raises a warning finger.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_03.wav"
+  },
+  {
+   "id": "s12_04",
+   "a": "K3",
+   "b": "K4",
+   "text": "Ese es tóxico. Muy tóxico. No se usa ni en aceite, ni en té, ni en nada. Ni lo toques y después te toques la cara.",
+   "action": "He shakes his head firmly, makes a 'no' with both hands, and mimes not touching his face.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_04.wav"
+  },
+  {
+   "id": "s12_05",
+   "a": "K4",
+   "b": "K5",
+   "text": "Si en tu calle hay un arbusto de hojas largas, con flores rosadas, bonito, de esos que aguantan todo... probablemente es adelfa. No es laurel de cocina.",
+   "action": "He gestures toward the street outside the open door, describing something with his hands, very serious.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_05.wav"
+  },
+  {
+   "id": "s12_05b",
+   "a": "K5",
+   "b": "K6",
+   "text": "Se confunden porque las hojas se parecen: largas, verdes. Pero el laurel de cocina, seco, huele a guiso. La adelfa no huele a nada de la cocina.",
+   "action": "He holds up the bag of dried bay leaves, opens it, smells it with a small smile, then shakes his head seriously while talking.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_05b.wav"
+  },
+  {
+   "id": "s12_06",
+   "a": "K6",
+   "b": "K7",
+   "text": "Y hay otro, el laurel cerezo, que se usa en los cercos de los jardines. También es tóxico. Así que si no estás seguro de qué árbol es: no.",
+   "action": "He counts two on his fingers, then shakes his head firmly.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_06.wav"
+  },
+  {
+   "id": "s12_07",
+   "a": "K7",
+   "b": "K8",
+   "text": "Si tienes nietos o mascotas en casa, y hay adelfa en el jardín, que no la mastiquen. Es de verdad peligrosa.",
+   "action": "He speaks with a caring, serious face, hand on his chest.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_07.wav"
+  },
+  {
+   "id": "s12_08",
+   "a": "K8",
+   "b": "K9",
+   "text": "Por eso yo siempre digo: bolsita del súper, de la sección de especias. Cuesta muy poco, es segura, y ya viene seca. Tres ventajas.",
+   "action": "He points at the spice shelf full of small clear bags of dried herbs and counts three advantages on his fingers.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_08.wav"
+  },
+  {
+   "id": "s12_08b",
+   "a": "K9",
+   "b": "K10",
+   "text": "Y fíjate en la bolsita: que diga laurel, hojas de laurel, nada más. Nada de mezclas con otras cosas, ni sabores, ni sal.",
+   "action": "He turns the small clear bag of dried bay leaves over, looks closely at it, and taps it with his finger.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_08b.wav"
+  },
+  {
+   "id": "s12_09",
+   "a": "K11",
+   "b": "K12",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_09.wav",
+   "text": "Y fíjate que las hojas estén verdes, no cafés, y que al romperlas huelan. Si no huelen a nada, son viejas.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: he breaks a dried bay leaf from the bag in half, dry and crisp."
+  },
+  {
+   "id": "s12_10",
+   "a": "K13",
+   "b": "K14",
+   "text": "Me llevo dos bolsitas: una para la cocina y otra para el aceite. Vamos a casa, que ya casi terminamos.",
+   "action": "He takes a second bag from the shelf, shows both to the camera, and walks toward the counter.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s12_10.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S12/vlog_S12.mp4"
+}

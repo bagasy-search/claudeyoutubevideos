@@ -1,0 +1,233 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S7",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": null,
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [],
+   "prompt": "Create a new photo: A small sunny back patio of a modest family house in the late morning: a whitewashed wall with potted herbs in terracotta pots, a clothesline with a few towels, a small white plastic table with a tube of sunscreen, a wide-brimmed straw hat and a glass of water; the glass door to the kitchen on the right; bright even daylight. The doctor stands in the patio next to the little table, looking at the viewer mid-sentence. Medium shot, waist up, from about two meters. The man is the doctor of the input image (a close-up of his real face): EXACTLY that face — same face shape, eyes, nose, eyebrows, dark curly hair with a little grey, short salt-and-pepper beard, same age (about 40) — do not make him younger or more handsome. He wears blue medical scrubs with short sleeves, a black stethoscope around his neck and a black smartwatch on his left wrist. A casual home video frame, ordinary, candid."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands with a serious, honest face, hands open."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he stands in the sun shading his eyes with one hand."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the tube of sunscreen toward the camera."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up three fingers, serious."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the tube against his chest, calm smile."
+  },
+  {
+   "id": "K6",
+   "noface": true,
+   "from": [
+    "K5"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his HANDS ONLY in bright daylight: a line of white sunscreen squeezed along his index and middle fingers, the tube in the other hand. No face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K7",
+   "noface": true,
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same close-up: his fingers spread the white sunscreen over the back of his other hand."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he rubs the backs of his hands together, looking at the viewer."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he holds both hands up with the backs toward the camera."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light: he wears the wide-brimmed straw hat, smiling."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light: he points at his left cheek, eyebrows raised."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the amber bottle, the hat on the table, calm."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he shakes his head with a warning face."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he stands with one hand on his chest, sincere."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the glass kitchen door, one hand on the handle, looking back at the viewer."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s7_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Las manchas. Te voy a decir la verdad, aunque no sea lo que quieres escuchar: ningún aceite casero aclara una mancha. Ninguno. Tampoco el de laurel.",
+   "action": "He talks honestly to the camera, shaking his head slightly, hands open.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_01.wav"
+  },
+  {
+   "id": "s7_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "¿Sabes qué es lo que más las oscurece? El sol. El de todos los días: ir al mercado, colgar la ropa, manejar con el brazo en la ventana.",
+   "action": "He points up at the sky, mimes hanging laundry on the line, and rests an arm as if on a car window.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_02.wav"
+  },
+  {
+   "id": "s7_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Así que el verdadero antimanchas cuesta poco y está en la farmacia: protector solar, todas las mañanas, aunque esté nublado.",
+   "action": "He picks up the tube of sunscreen from the little table and shows it to the camera.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_03.wav"
+  },
+  {
+   "id": "s7_03b",
+   "a": "K3",
+   "b": "K4",
+   "text": "Y las manchas que ya tienes, las de muchos años, no se van con nada de la cocina. Ni con limón, ni con bicarbonato, ni con agua oxigenada. Eso irrita, y mancha más.",
+   "action": "He shakes his head and counts on his fingers, the sunscreen tube in the other hand.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_03b.wav"
+  },
+  {
+   "id": "s7_03c",
+   "a": "K4",
+   "b": "K5",
+   "text": "Lo que sí hace el protector, con constancia, es que no aparezcan nuevas, y que las de ahora no se oscurezcan más. Y eso ya es muchísimo.",
+   "action": "He nods slowly, holding the sunscreen tube against his chest.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_03c.wav"
+  },
+  {
+   "id": "s7_04",
+   "a": "K6",
+   "b": "K7",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_04.wav",
+   "text": "Una cantidad como de dos dedos, para la cara y el cuello. Y aquí viene lo que casi nadie hace: el dorso de las manos.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: white sunscreen is squeezed along two fingers, then spread over the back of the other hand."
+  },
+  {
+   "id": "s7_05",
+   "a": "K8",
+   "b": "K9",
+   "text": "Las manos delatan la edad antes que la cara. ¿Y sabes por qué? Porque nadie se pone protector en las manos. Treinta segundos, y listo.",
+   "action": "He shows the backs of his hands to the camera, turning them slowly.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_05.wav"
+  },
+  {
+   "id": "s7_06",
+   "a": "K9",
+   "b": "K10",
+   "text": "Si vas a estar afuera, te vuelves a poner después de lavarte las manos. Y un sombrero de ala ancha, que es el protector que nunca falla.",
+   "action": "He picks up the wide-brimmed straw hat, puts it on and adjusts it with a smile.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_06.wav"
+  },
+  {
+   "id": "s7_06b",
+   "a": "K10",
+   "b": "K11",
+   "text": "Y el manejo, eh. La mano izquierda y el lado izquierdo de la cara reciben sol por la ventana del auto. Por eso a muchos se les mancha más un lado.",
+   "action": "Wearing the hat, he mimes holding a steering wheel with his left elbow out, then points at the left side of his face.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_06b.wav"
+  },
+  {
+   "id": "s7_07",
+   "a": "K11",
+   "b": "K12",
+   "text": "Ahora, ¿qué papel juega el aceite de laurel con las manchas? Uno pequeño, y honesto: hidrata. Y la piel hidratada se ve más pareja, más luminosa.",
+   "action": "He takes off the hat, picks up the small amber bottle from the table and speaks calmly.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_07.wav"
+  },
+  {
+   "id": "s7_08",
+   "a": "K12",
+   "b": "K13",
+   "text": "Pero ojo con esto: el aceite, de noche. Nunca antes de salir al sol. Y nada de ponerle limón al aceite, que con el sol mancha más.",
+   "action": "He wags his finger, mimes squeezing a lemon, and shakes his head.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_08.wav"
+  },
+  {
+   "id": "s7_08b",
+   "a": "K13",
+   "b": "K14",
+   "text": "Y si una mancha de la cara te molesta mucho, eso se habla con un dermatólogo: hay tratamientos de verdad. Pero en casa, primero, el protector.",
+   "action": "He speaks seriously, one hand on his chest.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_08b.wav"
+  },
+  {
+   "id": "s7_09",
+   "a": "K14",
+   "b": "K15",
+   "text": "Para el dorso de las manos te dejo algo más, bien sencillo: un exfoliante de azúcar con el mismo aceite. Vamos al fregadero.",
+   "action": "He walks toward the glass kitchen door, inviting the viewer to follow.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s7_09.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S7/vlog_S7.mp4"
+}

@@ -1,0 +1,268 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/T",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": null,
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K1",
+   "noface": true,
+   "from": [
+    "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S1/anc/K0.png"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his two HANDS ONLY right in front of the camera, holding one dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) by both ends, about to snap it, the kitchen softly visible behind. No face in frame. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K2",
+   "noface": true,
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same close-up: the dry bay leaf snapped in two, tiny dry crumbs falling."
+  },
+  {
+   "id": "K3",
+   "noface": true,
+   "from": [
+    "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S1/anc/K0.png"
+   ],
+   "prompt": "EXTREME CLOSE-UP of a glass jar with torn dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) at the bottom on the marble counter; a thin stream of pale golden oil starts pouring into it from a glass jug. No face in frame. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K4",
+   "noface": true,
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same close-up: the golden oil covers the torn leaves, the leaves lifting and swirling in the oil."
+  },
+  {
+   "id": "K5",
+   "noface": true,
+   "from": [
+    "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S5/anc/K0.png"
+   ],
+   "prompt": "EXTREME CLOSE-UP of a closed glass jar of clear golden oil with pale dried bay leaves inside, standing on the bright kitchen window sill, daylight shining through the oil. No face in frame. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K6",
+   "noface": true,
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same close-up: the sunlight a touch brighter, the golden oil glowing, the leaves still."
+  },
+  {
+   "id": "K7",
+   "noface": true,
+   "from": [
+    "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S5/anc/K0.png"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his fingers squeezing a white gauze bundle of pale soaked bay leaves above a small funnel in a dark amber glass bottle; golden oil dripping. No face in frame. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K8",
+   "noface": true,
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same close-up: the last golden drops falling from the gauze into the funnel."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S3/anc/K0.png"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the inner side of his forearm resting palm-up on a blue checked tablecloth; one golden drop of oil hanging from a fingertip just above the skin. No face in frame. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same close-up: the drop has touched the skin and spread into a small glossy circle."
+  },
+  {
+   "id": "K11",
+   "noface": false,
+   "from": [
+    "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S4/anc/K0.png"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the right side of his face in the bright bathroom: two oily fingertips resting at the corner of his mouth, short beard stubble and pores visible. Only the lower cheek and fingers. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K12",
+   "noface": false,
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same extreme close-up: the fingertips have glided up the cheek to the upper cheekbone near the ear, well below and away from the eye."
+  },
+  {
+   "id": "K13",
+   "noface": false,
+   "from": [
+    "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S6/anc/K0.png",
+    "W"
+   ],
+   "prompt": "The white front door in the hall of the same house, seen from inside, opening: the elderly woman (the second input image: short grey hair, navy-blue cardigan over a white blouse with small printed flowers, 73 years old) stands outside in daylight smiling, holding her handbag. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K14",
+   "noface": false,
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same view: she has stepped inside the hall, waving at the camera with a big warm smile."
+  },
+  {
+   "id": "K15",
+   "noface": true,
+   "from": [
+    "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S13/anc/K0.png",
+    "COVER"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the coffee table: the printed guide book whose cover is exactly the second input image lying face up, next to the small dark amber dropper bottle and a small glass jar of dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere), soft daylight. No people. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K16",
+   "noface": true,
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same close-up, the camera slightly closer to the guide cover, daylight a touch brighter."
+  },
+  {
+   "id": "K17",
+   "noface": true,
+   "from": [
+    "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S7/anc/K0.png"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his HANDS ONLY in bright patio sunlight: a line of white sunscreen squeezed along two fingers above the back of the other hand. No face in frame. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K18",
+   "noface": true,
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same close-up: the sunscreen spread over the back of the hand."
+  },
+  {
+   "id": "K19",
+   "noface": true,
+   "from": [
+    "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S2/anc/K0.png"
+   ],
+   "prompt": "EXTREME CLOSE-UP looking into the small steel pot on the gas burner: a glass jar of pale golden oil with dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) in shallow water, tiny bubbles on the bottom, a small blue flame. No face in frame. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K20",
+   "noface": true,
+   "from": [
+    "K19"
+   ],
+   "prompt": "Same close-up: tiny bubbles rising along the jar, faint wisps of steam."
+  }
+ ],
+ "clips": [
+  {
+   "id": "t01",
+   "a": "K1",
+   "b": "K2",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/_sil36.wav",
+   "text": "",
+   "action": "Slow motion feel: his fingers snap the dry bay leaf in half right in front of the lens, tiny crumbs falling."
+  },
+  {
+   "id": "t02",
+   "a": "K3",
+   "b": "K4",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/_sil36.wav",
+   "text": "",
+   "action": "Slow motion feel: pale golden oil pours over the torn dry bay leaves in the jar, the leaves swirling."
+  },
+  {
+   "id": "t03",
+   "a": "K5",
+   "b": "K6",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/_sil36.wav",
+   "text": "",
+   "action": "The golden jar glows in the window light, tiny reflections moving on the glass."
+  },
+  {
+   "id": "t04",
+   "a": "K7",
+   "b": "K8",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/_sil36.wav",
+   "text": "",
+   "action": "Slow golden drops fall from the squeezed gauze into the amber bottle."
+  },
+  {
+   "id": "t05",
+   "a": "K9",
+   "b": "K10",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/_sil36.wav",
+   "text": "",
+   "action": "The golden drop falls onto the inner forearm and is spread in a tiny circle."
+  },
+  {
+   "id": "t06",
+   "a": "K11",
+   "b": "K12",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/_sil36.wav",
+   "text": "",
+   "action": "The fingertips glide slowly upward from the corner of the mouth to the temple."
+  },
+  {
+   "id": "t07",
+   "a": "K13",
+   "b": "K14",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/_sil36.wav",
+   "text": "",
+   "action": "The front door opens and the smiling elderly woman steps into the hall, waving."
+  },
+  {
+   "id": "t08",
+   "a": "K15",
+   "b": "K16",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/_sil36.wav",
+   "text": "",
+   "action": "Slow gentle push toward the guide book on the table, the amber bottle beside it."
+  },
+  {
+   "id": "t09",
+   "a": "K17",
+   "b": "K18",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/_sil36.wav",
+   "text": "",
+   "action": "The fingers spread the white sunscreen over the back of the hand in the sun."
+  },
+  {
+   "id": "t10",
+   "a": "K19",
+   "b": "K20",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/_sil36.wav",
+   "text": "",
+   "action": "Tiny bubbles rise around the jar in the barely simmering water, faint steam."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/T/vlog_T.mp4"
+}

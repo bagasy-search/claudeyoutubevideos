@@ -8,7 +8,8 @@ const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a]);
 const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
 const nfr = f => Number((execFileSync("ffprobe", ["-v", "error", "-select_streams", "v", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", f]).toString().match(/\d+/) || [0])[0]);
 fs.mkdirSync(PV, { recursive: true });
-const SC = TXT.map(s => s.id);
+const SKIP = (process.env.SKIP || "").split(",").filter(Boolean); // PRUEBA: escenas aún sin armar (nunca para el render final)
+const SC = TXT.map(s => s.id).filter(s => !SKIP.includes(s));
 const tr = JSON.parse(fs.readFileSync(V + "tramos.json", "utf8"));
 const voz = TXT.flatMap(s => s.lines.filter(l => l[1] !== "w").map(l => l[0]));
 const TR = Object.fromEntries(voz.map((id, i) => [id, tr[i]]));
@@ -41,6 +42,7 @@ const TL = [], auds = [], chap = [];
 let fr = 0, k = 0;
 const seg = (id, o) => { const t = TR[id]; ff("-ss", t.s.toFixed(3), "-to", t.e.toFixed(3), "-i", R + "out/falaurel/master.wav", "-ac", "1", "-ar", "48000", o); return t.e - t.s; };
 for (const [S, from, to] of SEG) {
+  if (SKIP.includes(S)) continue;
   if (S === "TRL") {
     for (const [vid, cuts] of TRAILER) {
       const o = V + `_aud_${vid}.wav`, d = seg(vid, o), nf = Math.round(d * FPS);

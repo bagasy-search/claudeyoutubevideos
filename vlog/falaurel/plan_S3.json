@@ -1,0 +1,143 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S3",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": null,
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [],
+   "prompt": "Create a new photo: A bright dining room of a modest family home next to the kitchen: a wooden table with a light blue checked tablecloth; on it the small dark amber glass bottle with a dropper, a small box of adhesive bandages, a folded napkin, a glass of water and a fruit bowl with oranges; behind him a window with white curtains, framed family photos on the wall, a wooden sideboard with plates. The doctor sits at the table, his left forearm resting palm-up on the tablecloth, looking at the viewer mid-sentence, friendly. Medium shot, waist up, eye level, from about two meters. The man is the doctor of the input image (a close-up of his real face): EXACTLY that face — same face shape, eyes, nose, eyebrows, dark curly hair with a little grey, short salt-and-pepper beard, same age (about 40) — do not make him younger or more handsome. He wears blue medical scrubs with short sleeves, a black stethoscope around his neck and a black smartwatch on his left wrist. A casual home video frame, ordinary, candid."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he sits at the table holding the amber dropper bottle, his left forearm resting palm-up on the tablecloth."
+  },
+  {
+   "id": "K2",
+   "noface": true,
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the inner side of his left forearm resting palm-up on the blue checked tablecloth; his right index fingertip holds a single golden drop of oil just above the skin. Only arm and hand, no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K3",
+   "noface": true,
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same close-up: a small glossy round spot of oil spread on the inner forearm skin, the fingertip lifting away."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he sits holding up his left forearm toward the camera, showing the small glossy spot."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up his forearm with a small adhesive bandage on the inner side, smiling."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he sits with a serious face, hands open over the table, shaking his head gently."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he holds one finger near the outer corner of his eye, eyebrows drawn together, warning."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he shows his flat palm like a stop sign toward the viewer, firm but kind."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he stands by the hallway door on the right holding the amber bottle, looking back at the viewer over his shoulder."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s3_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Prueba de parche. Ya sé, suena aburrido. Pero el laurel es una planta aromática, y a algunas personas les da alergia. Así de simple.",
+   "action": "Seated at the table, he talks with a small honest shrug, then picks up the amber bottle and shows it.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s3_01.wav"
+  },
+  {
+   "id": "s3_02",
+   "a": "K2",
+   "b": "K3",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s3_02.wav",
+   "text": "Una gota del aceite, en la parte de adentro del antebrazo. Aquí, donde la piel es finita. La extiendes un poquito, en un círculo chiquito.",
+   "action": "EXTREME CLOSE-UP of the FOREARM and HAND ONLY: the fingertip touches the inner forearm, spreads the golden drop of oil in a tiny circle and lifts away."
+  },
+  {
+   "id": "s3_03",
+   "a": "K4",
+   "b": "K5",
+   "text": "Y esperas veinticuatro horas. Sin lavar esa zona, si puedes. Yo le pongo una curita encima, para acordarme, mira.",
+   "action": "He takes an adhesive bandage from the box, peels it and sticks it over the spot on his inner forearm, then shows it to the camera.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s3_03.wav"
+  },
+  {
+   "id": "s3_04",
+   "a": "K5",
+   "b": "K6",
+   "text": "Si al otro día está roja, te pica o te arde, no lo uses en la cara. Lavas con agua y jabón, y listo: ese aceite no es para ti.",
+   "action": "With a serious face he mimes itching on the forearm, grimaces, then mimes washing with soap and shakes his head.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s3_04.wav"
+  },
+  {
+   "id": "s3_05",
+   "a": "K6",
+   "b": "K7",
+   "text": "Y si está todo normal, bien, ya puedes usarlo en la cara. Pero ojo: nunca en el contorno de los ojos, ni en los párpados.",
+   "action": "He nods, relieved, then points at the skin around his own eyes and wags his finger 'no'.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s3_05.wav"
+  },
+  {
+   "id": "s3_06",
+   "a": "K7",
+   "b": "K8",
+   "text": "Ni sobre piel lastimada, ni sobre una herida, ni después de quemarte con el sol. Y si un día arde, lavas y suspendes. Así, derecho.",
+   "action": "He counts the warnings on his fingers one by one, then makes a firm stop gesture with his palm.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s3_06.wav"
+  },
+  {
+   "id": "s3_07",
+   "a": "K8",
+   "b": "K9",
+   "text": "Ahora sí, la parte que casi todos hacen mal sin saberlo: cómo se aplica. Porque no es untarse y ya. Vamos al baño, frente al espejo.",
+   "action": "He stands up from the chair, takes the amber bottle and walks toward the hallway door on the right, glancing back at the viewer.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s3_07.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S3/vlog_S3.mp4"
+}

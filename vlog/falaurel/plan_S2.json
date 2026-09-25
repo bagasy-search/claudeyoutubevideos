@@ -1,0 +1,269 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S2",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen as the input photo, but now he stands at the gas stove on the right side of the kitchen, the camera turned a little to the right: on the front burner a small steel pot with a little water, inside it an open glass jar of pale golden oil with dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere); on the counter beside the stove: a folded white kitchen towel with a clean empty glass jar upside down drying on it, and a second glass jar of CLOUDY oil with little white specks floating in it. The book and the aloe are gone. Waist-up, about two meters, the stove and that counter corner in frame, room around him. He rests one hand on the counter, looking at the viewer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the stove with one hand on the counter, looking at the viewer, serious and friendly."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the jar of CLOUDY oil with small white specks close to the camera, frowning slightly."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: the cloudy jar stands pushed to the side of the counter; he holds his thumb and index finger together as if showing a drop of water, eyebrows raised."
+  },
+  {
+   "id": "K4",
+   "noface": true,
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the counter beside the stove: a clean empty glass jar upside down on a folded white kitchen towel, drying; his hand reaches in to lift it. Only hands, no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K5",
+   "noface": true,
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same close-up: his hand holds the jar upright and wipes the inside with a dry white cotton cloth."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the dry clean jar in one hand and the cloth in the other, looking at the viewer."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up two fingers toward the viewer, his other hand pointing at the small flame under the pot."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he looks into the pot of barely trembling water with the jar inside, calm, his flat hand hovering above it."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "EXTREME CLOSE-UP looking into the small steel pot on the gas burner: a glass jar of pale golden oil with dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) stands in shallow water, only tiny bubbles on the bottom of the pot, a small blue flame under it. No hands, no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same close-up: a few more tiny bubbles rise along the jar, faint wisps of steam above the water."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the stove next to the pot, looking at the viewer with a small approving nod."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up the corner of the folded rag at the bottom of the pot next to the jar, smiling with a 'grandma's trick' face."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he stands relaxed with his arms crossed near the stove, looking at the viewer."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he stands with a warm nostalgic smile, one hand on his chest, near the pot."
+  },
+  {
+   "id": "K15",
+   "noface": true,
+   "from": [
+    "K14"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his hand on the black knob of the gas stove, next to the small steel pot with the jar of oil in water on a small blue flame. Only the hand, no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K16",
+   "noface": true,
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same close-up: the knob is turned to off, the flame is gone, the pot with the jar still in the water."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the stove with the flame off, pointing at the jar resting in the water."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same place, same framing and same light: the lidded jar sits in the pot; he holds a calm palm up toward the viewer."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K18"
+   ],
+   "prompt": "Same place, same framing and same light: he has taken two steps to the left, looking back at the viewer over his shoulder, the towel over his shoulder."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s2_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "A ver, vamos con calma, porque aquí es donde se equivoca casi todo el mundo. Y te lo cuento con un caso real.",
+   "action": "Leaning with one hand on the counter beside the stove, he talks calmly, then points down at the pot with the jar of oil.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_01.wav"
+  },
+  {
+   "id": "s2_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Doña Elena, setenta y tres años. Hizo su aceite, contentísima, y a las dos semanas me trae el frasco. Turbio. Con unos puntitos blancos flotando.",
+   "action": "He picks up the glass jar of cloudy oil from the counter and holds it toward the camera, turning it slowly so the little white specks floating inside are visible.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_02.wav"
+  },
+  {
+   "id": "s2_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Moho. ¿Y sabes por qué? Porque lavó las hojas y las metió mojadas al frasco. Y un aceite con agua adentro... se echa a perder.",
+   "action": "He shakes the spoiled jar a little, sets it down far to the side with a disapproving face, and makes a 'water dripping' gesture with his fingers.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_03.wav"
+  },
+  {
+   "id": "s2_04",
+   "a": "K4",
+   "b": "K5",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_04.wav",
+   "text": "Una gota de agua basta. Por eso: hojas secas, frasco seco, cuchara seca. Si lavas el frasco, lo dejas secar un día entero boca abajo.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: his hand lifts the upside-down clean glass jar from the towel, turns it upright and wipes the inside with a dry cotton cloth."
+  },
+  {
+   "id": "s2_05",
+   "a": "K6",
+   "b": "K7",
+   "text": "Ese es el error número uno. Y hay un segundo, casi igual de común: el calor. La gente pone el frasco directo al fuego, o hierve el agua fuerte.",
+   "action": "He sets the jar down, holds up one finger, then two fingers, and gestures at the burner flame with a worried face.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_05.wav"
+  },
+  {
+   "id": "s2_06",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y el aceite se recalienta, huele a quemado, y en vez de cuidar la piel, la irrita. Por eso te digo: fuego mínimo, el agua apenas temblando.",
+   "action": "He mimes sniffing a burnt smell with a grimace, then lowers his flat hand slowly to show a very low flame, and nods.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_06.wav"
+  },
+  {
+   "id": "s2_07",
+   "a": "K9",
+   "b": "K10",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_07.wav",
+   "text": "Mira, así. Burbujitas chiquitas en el fondo, nada más. Si metes el dedo en el agua, está caliente, pero se aguanta.",
+   "action": "EXTREME CLOSE-UP, no hands: tiny bubbles form on the bottom of the pot and rise slowly around the glass jar, faint steam, the golden oil still."
+  },
+  {
+   "id": "s2_08",
+   "a": "K11",
+   "b": "K12",
+   "text": "Yo le pongo un trapito doblado en el fondo de la olla, para que el vidrio no toque directo el metal. Truco de abuela, eh.",
+   "action": "He lifts the jar a little with a folded cloth, shows the folded rag lying on the bottom of the pot under it, and puts the jar back.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_08.wav"
+  },
+  {
+   "id": "s2_09",
+   "a": "K12",
+   "b": "K13",
+   "text": "Treinta, cuarenta minutos. Si tienes paciencia, una hora, con el fuego al mínimo mínimo. Más tiempo no le hace daño. Más calor, sí.",
+   "action": "He looks at his black smartwatch, taps it, then makes a patient, calming gesture with both hands.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_09.wav"
+  },
+  {
+   "id": "s2_10",
+   "a": "K13",
+   "b": "K14",
+   "text": "Y mientras tanto, la cocina huele a laurel. A mí me recuerda a la cocina de mi mamá, los domingos, con la olla del caldo.",
+   "action": "He leans over the pot, closes his eyes and breathes in the aroma with a nostalgic smile, then looks back at the viewer.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_10.wav"
+  },
+  {
+   "id": "s2_11",
+   "a": "K15",
+   "b": "K16",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_11.wav",
+   "text": "Cuando termina, apagas, y lo dejas enfriar dentro del agua, despacito. Nunca lo pases de golpe a algo frío, que el vidrio se puede romper.",
+   "action": "EXTREME CLOSE-UP of the HAND ONLY: his hand turns the black knob of the gas stove to off and the small blue flame disappears; the jar stays in the warm water."
+  },
+  {
+   "id": "s2_12",
+   "a": "K17",
+   "b": "K18",
+   "text": "Y después, tapado, reposa hasta el otro día. Las hojas siguen soltando lo suyo mientras se enfría. No lo apures.",
+   "action": "He places the metal lid loosely on the jar, pats the lid, and raises a calm palm meaning 'wait'.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_12.wav"
+  },
+  {
+   "id": "s2_13",
+   "a": "K18",
+   "b": "K19",
+   "text": "Ahora, antes de ponértelo en la cara, hay una cosa que no te puedes saltar. Ninguna. Vamos a la mesa.",
+   "action": "He dries his hands on the kitchen towel, raises a finger, then gestures toward the left of the frame and starts to walk that way.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s2_13.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S2/vlog_S2.mp4"
+}

@@ -1,0 +1,311 @@
+{
+ "TOTAL": 50157,
+ "TL": [
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S1.mp4",
+   "from": 0,
+   "dur": 180,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/T_t07.mp4",
+   "from": 180,
+   "dur": 87,
+   "startFrom": 15,
+   "trl": "t07"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/T_t03.mp4",
+   "from": 267,
+   "dur": 88,
+   "startFrom": 15,
+   "trl": "t03"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/T_t06.mp4",
+   "from": 355,
+   "dur": 87,
+   "startFrom": 15,
+   "trl": "t06"
+  },
+  {
+   "kind": "txt",
+   "from": 415,
+   "dur": 27,
+   "words": [
+    {
+     "t": "¿EN",
+     "hl": true
+    },
+    {
+     "t": "SERIO?",
+     "hl": true
+    }
+   ],
+   "ats": [
+    3,
+    12
+   ]
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/T_t01.mp4",
+   "from": 442,
+   "dur": 69,
+   "startFrom": 15,
+   "trl": "t01"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/T_t02.mp4",
+   "from": 511,
+   "dur": 70,
+   "startFrom": 15,
+   "trl": "t02"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/T_t10.mp4",
+   "from": 581,
+   "dur": 69,
+   "startFrom": 15,
+   "trl": "t10"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/T_t04.mp4",
+   "from": 650,
+   "dur": 69,
+   "startFrom": 15,
+   "trl": "t04"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/T_t05.mp4",
+   "from": 719,
+   "dur": 72,
+   "startFrom": 15,
+   "trl": "t05"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/T_t09.mp4",
+   "from": 791,
+   "dur": 73,
+   "startFrom": 15,
+   "trl": "t09"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/T_t08.mp4",
+   "from": 864,
+   "dur": 72,
+   "startFrom": 15,
+   "trl": "t08"
+  },
+  {
+   "kind": "txt",
+   "from": 725,
+   "dur": 75,
+   "words": [
+    {
+     "t": "EL"
+    },
+    {
+     "t": "ERROR",
+     "hl": true
+    },
+    {
+     "t": "QUE"
+    },
+    {
+     "t": "ARRUINA"
+    },
+    {
+     "t": "TODO",
+     "hl": true
+    }
+   ],
+   "perWord": 5
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S1.mp4",
+   "from": 936,
+   "dur": 3390,
+   "startFrom": 180
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S2.mp4",
+   "from": 4326,
+   "dur": 3540,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S3.mp4",
+   "from": 7866,
+   "dur": 2010,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S4.mp4",
+   "from": 9876,
+   "dur": 2040,
+   "startFrom": 0
+  },
+  {
+   "kind": "lam",
+   "from": 11916,
+   "dur": 1041
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S4.mp4",
+   "from": 12957,
+   "dur": 570,
+   "startFrom": 2040
+  },
+  {
+   "kind": "qr",
+   "from": 12957,
+   "dur": 405
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S5.mp4",
+   "from": 13527,
+   "dur": 5580,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S6.mp4",
+   "from": 19107,
+   "dur": 4980,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S7.mp4",
+   "from": 24087,
+   "dur": 3750,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S8.mp4",
+   "from": 27837,
+   "dur": 2280,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S9.mp4",
+   "from": 30117,
+   "dur": 5070,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S10.mp4",
+   "from": 35187,
+   "dur": 3330,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S11.mp4",
+   "from": 38517,
+   "dur": 5400,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S12.mp4",
+   "from": 43917,
+   "dur": 3360,
+   "startFrom": 0
+  },
+  {
+   "kind": "vid",
+   "src": "vid/falaurel/S13.mp4",
+   "from": 47277,
+   "dur": 2880,
+   "startFrom": 0
+  },
+  {
+   "kind": "qr",
+   "from": 48357,
+   "dur": 810
+  }
+ ],
+ "chap": [
+  [
+   "S1",
+   0
+  ],
+  [
+   "tráiler",
+   0
+  ],
+  [
+   "S2",
+   4326
+  ],
+  [
+   "S3",
+   7866
+  ],
+  [
+   "S4",
+   9876
+  ],
+  [
+   "LAMINA",
+   11916
+  ],
+  [
+   "S5",
+   13527
+  ],
+  [
+   "S6",
+   19107
+  ],
+  [
+   "S7",
+   24087
+  ],
+  [
+   "S8",
+   27837
+  ],
+  [
+   "S9",
+   30117
+  ],
+  [
+   "S10",
+   35187
+  ],
+  [
+   "S11",
+   38517
+  ],
+  [
+   "S12",
+   43917
+  ],
+  [
+   "S13",
+   47277
+  ]
+ ]
+}

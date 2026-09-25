@@ -1,0 +1,455 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S6",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen as the input photo, seen toward the kitchen doorway on the right side, with the front hall and the white front door visible through it. On the counter: a coffee maker, two white cups and a small plate of cookies; a small round wooden kitchen table with two chairs near the window. The book and the aloe are gone. He walks toward the doorway, smiling, looking back at the viewer. Medium-wide shot from about two and a half meters."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same kitchen: he and the elderly woman stand side by side in the kitchen doorway facing the camera; he gestures at the camera, she laughs shyly."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she and he stand side by side, she smiles at the camera, he looks at her."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same kitchen: they now sit at the small round wooden table near the window, facing the camera, two cups of coffee in front of them."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she looks at the doctor; he listens with a warm face."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she smiles and raises her eyebrows at him."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: both laugh, looking at each other."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she shakes her head with a guilty smile; he smiles kindly."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: his hand rests on hers on the table, both smiling."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she sits with her palms together next to her cheek, smiling."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she takes a small dark amber glass bottle out of her handbag."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she holds the amber bottle toward the camera, delighted."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: he gives the bottle back to her and shows a thumbs-up; she laughs."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: he leans toward her with a playful look, she is about to answer."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she touches her cheek with her fingertips, proud smile."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she laughs with her hand on her chest; he laughs too."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: he looks at her with a knowing smile."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: he looks at her, waiting for the answer."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she smiles proudly with her hands resting on the table."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K18",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she shows the back of her hand to the camera."
+  },
+  {
+   "id": "K20",
+   "from": [
+    "K19",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: he stands next to her holding the coffee pot; she holds her cup."
+  },
+  {
+   "id": "K21",
+   "from": [
+    "K20",
+    "W"
+   ],
+   "prompt": "The elderly woman is exactly the woman in the second input image (her face, short soft grey hair, navy-blue knitted cardigan over a white blouse with small printed flowers, small gold earrings, 73 years old, not younger). Same place, same framing and same light: she waves at the camera with a big smile, he stands beside her smiling."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s6_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "¡Ahí está! Pasa, pasa, Elena. Mira, estoy grabando, ¿no te molesta? Les estaba contando lo de tu frasco.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. He opens the front door in the hall; the elderly woman steps in smiling; he greets her with a kiss on the cheek and turns her toward the camera.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s6_01.wav"
+  },
+  {
+   "id": "s6_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "¡Ay, doctor! No les cuente eso, qué vergüenza. Bueno, sí, cuénteles. Que les sirva a otros.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. The elderly woman covers her mouth with her hand, laughing with embarrassment, then waves her hand in resignation; he laughs.",
+   "refs": [
+    "W"
+   ],
+   "line": "¡Ay, doctor! No les cuente eso, qué vergüenza. Bueno, sí, cuénteles. Que les sirva a otros.",
+   "secs": 8,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s6_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Elena tiene setenta y tres años. Y cuando vino a verme por primera vez, me dijo algo que no se me olvida.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. He puts a hand lightly on her shoulder and talks to the camera about her while they walk to the small round kitchen table and sit down; she nods.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s6_03.wav"
+  },
+  {
+   "id": "s6_04",
+   "a": "K3",
+   "b": "K4",
+   "text": "Le dije: doctor, yo no quiero verme de cincuenta. Quiero que cuando digo mi edad, no me miren con lástima.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. Sitting at the table, she speaks to the camera with a firm, slightly emotional face, tapping the table with her finger.",
+   "refs": [
+    "W"
+   ],
+   "line": "Le dije: doctor, yo no quiero verme de cincuenta. Quiero que cuando digo mi edad, no me miren con lástima.",
+   "secs": 10,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s6_05",
+   "a": "K4",
+   "b": "K5",
+   "text": "Y habías probado de todo, ¿no? Cremas carísimas, cosas que viste en internet...",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. He turns to her and speaks, counting on his fingers; she rolls her eyes playfully.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s6_05.wav"
+  },
+  {
+   "id": "s6_05b",
+   "a": "K5",
+   "b": "K6",
+   "text": "Mi nieta me decía: abuela, te vas a quemar la cara con esas cosas de internet. ¡Y casi, eh!",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. She laughs and fans her face with her hand.",
+   "refs": [
+    "W"
+   ],
+   "line": "Mi nieta me decía: abuela, te vas a quemar la cara con esas cosas de internet. ¡Y casi, eh!",
+   "secs": 8,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s6_06",
+   "a": "K6",
+   "b": "K7",
+   "text": "¡De todo! Y el aceite de laurel lo hice mal, con las hojas mojadas. Se me llenó de moho en dos semanas.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. She speaks with a guilty face, mimes washing leaves under water with her hands, then shakes her head.",
+   "refs": [
+    "W"
+   ],
+   "line": "¡De todo! Y el aceite de laurel lo hice mal, con las hojas mojadas. Se me llenó de moho en dos semanas.",
+   "secs": 9,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s6_07",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y lo que más me gustó es que no te rendiste. Lo hicimos de nuevo, bien hecho, y te enseñé el masaje.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. He smiles at her proudly and pats her hand on the table.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s6_07.wav"
+  },
+  {
+   "id": "s6_08",
+   "a": "K8",
+   "b": "K9",
+   "text": "Y la prueba del parche, que yo ni sabía que existía. Ahora lo hago tres veces por semana, de noche, antes de dormir.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. She counts on her fingers, then presses her palms together next to her cheek like sleeping.",
+   "refs": [
+    "W"
+   ],
+   "line": "Y la prueba del parche, que yo ni sabía que existía. Ahora lo hago tres veces por semana, de noche, antes de dormir.",
+   "secs": 10,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s6_08b",
+   "a": "K9",
+   "b": "K10",
+   "text": "Enséñales tu frasco, a ver. ¿Lo trajiste?",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. He points at her handbag, curious; she opens the handbag.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s6_08b.wav"
+  },
+  {
+   "id": "s6_08c",
+   "a": "K10",
+   "b": "K11",
+   "text": "¡Claro! Mire: oscurito, con su fecha, como usted dijo. Y huele a laurel, a cocina de domingo. A mí me encanta.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. She holds up her small dark amber bottle with a handwritten label, opens the cap and sniffs it happily.",
+   "refs": [
+    "W"
+   ],
+   "line": "¡Claro! Mire: oscurito, con su fecha, como usted dijo. Y huele a laurel, a cocina de domingo. A mí me encanta.",
+   "secs": 10,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s6_08d",
+   "a": "K11",
+   "b": "K12",
+   "text": "Perfecto. Transparente, sin puntitos, con fecha. Eso es un frasco bien hecho. Cien por ciento.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. He takes the bottle, holds it against the window light, inspects it and gives a thumbs-up.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s6_08d.wav"
+  },
+  {
+   "id": "s6_09",
+   "a": "K12",
+   "b": "K13",
+   "text": "A ver, dile la verdad a la gente, Elena: ¿se te borraron las arrugas?",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. He leans toward her with a playful, challenging face.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s6_09.wav"
+  },
+  {
+   "id": "s6_10",
+   "a": "K13",
+   "b": "K14",
+   "text": "¡No, qué se me van a borrar! Tengo setenta y tres años. Pero la piel la siento más suavecita, y me veo más descansada.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. She laughs out loud, waves her hand 'no way', then touches her own cheek softly with a proud smile.",
+   "refs": [
+    "W"
+   ],
+   "line": "¡No, qué se me van a borrar! Tengo setenta y tres años. Pero la piel la siento más suavecita, y me veo más descansada.",
+   "secs": 11,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s6_11",
+   "a": "K14",
+   "b": "K15",
+   "text": "Y el otro día, en el mercado, una muchacha me preguntó mi edad, y me dijo: ¿de verdad? No me creía. ¡Me alegró el día!",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. She tells the story animatedly, imitates the young woman's surprised face, and laughs.",
+   "refs": [
+    "W"
+   ],
+   "line": "Y el otro día, en el mercado, una muchacha me preguntó mi edad, y me dijo: ¿de verdad? No me creía. ¡Me alegró el día!",
+   "secs": 11,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s6_12",
+   "a": "K15",
+   "b": "K16",
+   "text": "¿Ves? Eso es lo honesto. No es magia. Es constancia, hidratación, el masaje... y algo que Elena hace todas las mañanas, sin falta.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. He talks to the camera, counting on his fingers, and glances at her at the end.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s6_12.wav"
+  },
+  {
+   "id": "s6_12b",
+   "a": "K16",
+   "b": "K17",
+   "text": "¿Y cómo te sientes ahora, con el espejo? Dime la verdad.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. He turns to her and asks gently, with a warm face.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s6_12b.wav"
+  },
+  {
+   "id": "s6_12c",
+   "a": "K17",
+   "b": "K18",
+   "text": "Mejor, doctor. Ya no me tapo la cara con la mano cuando me toman fotos. Eso ya es mucho.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. She talks softly, mimes covering her face with one hand, then lowers it and smiles proudly.",
+   "refs": [
+    "W"
+   ],
+   "line": "Mejor, doctor. Ya no me tapo la cara con la mano cuando me toman fotos. Eso ya es mucho.",
+   "secs": 8,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s6_13",
+   "a": "K18",
+   "b": "K19",
+   "text": "El protector solar. Eso sí me lo repitió mil veces, doctor. Todas las mañanas, hasta en las manos.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. She pats the back of her own hand and mimes spreading sunscreen on it.",
+   "refs": [
+    "W"
+   ],
+   "line": "El protector solar. Eso sí me lo repitió mil veces, doctor. Todas las mañanas, hasta en las manos.",
+   "secs": 9,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  },
+  {
+   "id": "s6_14",
+   "a": "K19",
+   "b": "K20",
+   "text": "Hasta en las manos. Y justo de eso te quiero hablar ahora: de las manchas. Gracias, Elena. ¿Te sirvo el café?",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. He smiles, stands up, takes the coffee pot and pours coffee into her cup.",
+   "refs": [
+    "W"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s6_14.wav"
+  },
+  {
+   "id": "s6_15",
+   "a": "K20",
+   "b": "K21",
+   "text": "¡Claro que sí! Y les mando un saludo a todos. Háganle caso al doctor, eh.",
+   "action": "The elderly woman (the fourth reference image is her face) is in the scene. She raises her cup toward the camera and waves goodbye to the viewer with a big smile.",
+   "refs": [
+    "W"
+   ],
+   "line": "¡Claro que sí! Y les mando un saludo a todos. Háganle caso al doctor, eh.",
+   "secs": 7,
+   "who": "the elderly woman (the fourth reference image is her face)",
+   "voice": "in Spanish with a warm Mexican accent, the lively voice of a 73-year-old grandmother; the doctor does NOT speak, he only listens and reacts"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S6/vlog_S6.mp4"
+}

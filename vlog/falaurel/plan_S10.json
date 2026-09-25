@@ -1,0 +1,237 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S10",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S4/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same bathroom as the input image, in the evening: the frosted window is now dusk blue outside, the bright white ceiling light is on and the room is evenly and brightly lit with neutral white light. Same sink, tiles, towel, shelf with the cream jar and the amber dropper bottle; a small tube of gentle cleanser by the tap, a soft grey fabric headband on the shelf. He stands at the sink facing the camera as if looking into the mirror, towel over his shoulder. NO mirror and NO reflection in the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he faces the camera, relaxed."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he pats his face dry with the towel."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he wears the grey headband, showing his fingernails, amused."
+  },
+  {
+   "id": "K4",
+   "noface": true,
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his HANDS ONLY above the sink: a small dab of white moisturizing cream on his fingertips. No face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K5",
+   "noface": true,
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same close-up: two drops of golden oil from the amber dropper on top of the cream on his fingertips."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he wears the grey headband and raises his fingertips toward his face."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he looks at the camera, one hand open."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: his fingertips rest on his temples, eyes half closed."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his HANDS ONLY: his oily fingertips rubbing the back of the other hand. No face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same close-up: his fingertips pushing oil into the cuticles of the other hand."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he looks at the camera, rubbing his hands together."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he shows his hands in white cotton gloves, amused."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he stands relaxed with a kind smile."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he stands without the headband, pointing toward the door."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the dark grey pillowcase."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same place, same framing and same light: he faces the camera with a calm smile."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s10_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Ya es de noche. Y te voy a mostrar la rutina completa, como la hago yo, en orden, porque el orden también importa.",
+   "action": "He stands at the bathroom sink in the evening light, towel on his shoulder, and talks to the camera as into a mirror.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_01.wav"
+  },
+  {
+   "id": "s10_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Primero, lavar la cara con agua tibia y un limpiador suave. Nada de agua caliente, que reseca. Y secar con toquecitos, sin frotar.",
+   "action": "He washes his face with water and a little gentle cleanser, then pats it dry with the towel.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_02.wav"
+  },
+  {
+   "id": "s10_02b",
+   "a": "K2",
+   "b": "K3",
+   "text": "El pelo recogido, con una vincha o una toalla, para que no se te pegue el aceite. Y las manos lavadas, y las uñas cortas, para no arañarte.",
+   "action": "He pushes his curly hair back with the soft grey fabric headband, a bit comically, then shows his short fingernails.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_02b.wav"
+  },
+  {
+   "id": "s10_03",
+   "a": "K4",
+   "b": "K5",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_03.wav",
+   "text": "Si tu piel es seca, primero una crema hidratante, una capa finita. Y encima, el aceite. El aceite sella, como una tapa.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: a small dab of white cream on the fingertips, then two drops of golden oil fall on top of it."
+  },
+  {
+   "id": "s10_04",
+   "a": "K6",
+   "b": "K7",
+   "text": "Si tu piel es mixta, con el aceite solo alcanza. Y si usas algún tratamiento del dermatólogo, ácidos, retinol, pregúntale a él primero.",
+   "action": "He talks with a questioning face, one hand open.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_04.wav"
+  },
+  {
+   "id": "s10_05",
+   "a": "K7",
+   "b": "K8",
+   "text": "Después, las gotas, y el masaje que ya viste. Ocho minutos. Yo pongo una canción que me gusta, y cuando termina, termino.",
+   "action": "He does the slow upward massage on his cheeks while humming, relaxed.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_05.wav"
+  },
+  {
+   "id": "s10_06",
+   "a": "K9",
+   "b": "K10",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_06.wav",
+   "text": "Lo que te sobra en los dedos, no lo desperdicies: al dorso de las manos, y a las cutículas. Ahí siempre hace falta.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: oily fingertips rub the back of the other hand, then push the oil into the cuticles."
+  },
+  {
+   "id": "s10_06b",
+   "a": "K11",
+   "b": "K12",
+   "text": "Y un truco para las manos muy secas: aceite, crema encima, y unos guantes de algodón para dormir. Al otro día parecen otras manos.",
+   "action": "He pulls on a pair of white cotton gloves and wiggles his fingers, amused.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_06b.wav"
+  },
+  {
+   "id": "s10_06c",
+   "a": "K12",
+   "b": "K13",
+   "text": "Y si un día estás cansada y no tienes ganas del masaje, no pasa nada. Pones las gotas y a dormir. Lo que cuenta es la semana, no el día.",
+   "action": "He takes the gloves off, shrugs kindly, relaxed.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_06c.wav"
+  },
+  {
+   "id": "s10_07",
+   "a": "K13",
+   "b": "K14",
+   "text": "Y a la cama. Tres o cuatro gotas se absorben solas. Si amaneces con la almohada grasosa, es que pusiste de más.",
+   "action": "He takes off the headband, puts the towel away and gestures toward the door.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_07.wav"
+  },
+  {
+   "id": "s10_07b",
+   "a": "K14",
+   "b": "K15",
+   "text": "Un detalle práctico: usa una funda de almohada vieja, o de color oscuro. El aceite, aunque sea poquito, a la larga la marca.",
+   "action": "He holds up a dark grey pillowcase with a small smile.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_07b.wav"
+  },
+  {
+   "id": "s10_08",
+   "a": "K15",
+   "b": "K16",
+   "text": "Y a la mañana: lavar, crema si quieres, y protector solar. De noche cuidas; de día proteges. Así de simple es la rutina.",
+   "action": "He mimes the morning routine: splashing water, then spreading sunscreen on his face.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s10_08.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S10/vlog_S10.mp4"
+}

@@ -1,0 +1,391 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S5",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen as the input photo, another corner: he stands next to the big kitchen window on the left, beside an open lower wooden cupboard. On the counter by the window: a closed glass jar of clear golden oil with pale dried bay leaves inside, a second glass jar with torn dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) and fresh oil, a fine mesh strainer, white gauze, a small funnel, two small dark amber glass bottles, a bottle of pale almond oil, a bottle of dark green olive oil, a few small blank paper labels and a pen. The book and the aloe are gone. Waist-up, about two meters, bright daylight from the window, he looks at the viewer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the cupboard door open with one hand, the other hand gesturing toward the viewer."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: the jar sits inside the open dark cupboard; he points toward the sink with a playful 'no' face."
+  },
+  {
+   "id": "K3",
+   "noface": true,
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of his two HANDS ONLY holding a closed glass jar of golden oil with dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere), tilted to one side, counter and window light behind. No face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K4",
+   "noface": true,
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same close-up: the jar tilted to the other side, the bay leaves swirled gently in the oil."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the jar in both hands at chest height, looking at the viewer."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he holds one jar in each hand at shoulder height, balanced like a scale."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: both jars stand side by side on the counter, his hands resting on the two lids."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the jar up against the bright window, the oil glowing clear golden."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the clear golden jar toward the camera, nodding."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "K9"
+   ],
+   "prompt": "EXTREME CLOSE-UP: golden oil pours from the jar into a fine mesh strainer lined with white gauze sitting on a small funnel in a dark amber glass bottle. Only hands, no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K11",
+   "noface": true,
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same close-up: slow golden drops fall from the gauze bundle of pale soaked bay leaves into the funnel."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the strainer dripping into the amber bottle, arms relaxed, patient smile."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he leans toward the camera, finger raised, eyebrows up."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the pale almond oil bottle toward the camera, smiling."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light: he rubs the back of one hand with the other, relaxed."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same place, same framing and same light: he shows about ten dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) in his open palm toward the camera."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same place, same framing and same light: his forearms are crossed in an X, firm but kind face."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the golden jar in both hands, calm."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K18"
+   ],
+   "prompt": "Same place, same framing and same light: the cupboard is closed; he points at the bright window with a playful 'no' face."
+  },
+  {
+   "id": "K20",
+   "noface": true,
+   "from": [
+    "K19"
+   ],
+   "prompt": "EXTREME CLOSE-UP: his hand writes with a pen on a small blank paper label on the counter next to a dark amber glass bottle. Only hands, no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K21",
+   "noface": true,
+   "from": [
+    "K20"
+   ],
+   "prompt": "Same close-up: the small handwritten label is stuck on the amber bottle, his finger pressing it flat."
+  },
+  {
+   "id": "K22",
+   "from": [
+    "K19"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the labeled amber bottle up to the camera."
+  },
+  {
+   "id": "K23",
+   "from": [
+    "K22"
+   ],
+   "prompt": "Same place, same framing and same light: he holds three small dark amber bottles tied together with a thin cotton string, smiling warmly."
+  },
+  {
+   "id": "K24",
+   "noface": true,
+   "from": [
+    "K23"
+   ],
+   "prompt": "EXTREME CLOSE-UP: three small dark amber glass bottles tied with a cotton string on the counter and a small blank white card beside them; his hand picks up the card. Only hands, no face —  Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K25",
+   "noface": true,
+   "from": [
+    "K24"
+   ],
+   "prompt": "Same close-up: the small card is tucked under the string around the bottles."
+  },
+  {
+   "id": "K26",
+   "from": [
+    "K23"
+   ],
+   "prompt": "Same place, same framing and same light: the gift bottles with the card stand on the counter; he looks at the viewer."
+  },
+  {
+   "id": "K27",
+   "from": [
+    "K26"
+   ],
+   "prompt": "Same place, same framing and same light: he stands with a serious, caring face, one hand on the counter."
+  },
+  {
+   "id": "K28",
+   "from": [
+    "K27"
+   ],
+   "prompt": "Same place, same framing and same light: he looks toward the right side of the frame with an expectant smile."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s5_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Hay otra forma de hacerlo, sin fuego. Muchas de ustedes me la escriben: el frasco, un mes, en la oscuridad. Y tienen toda la razón.",
+   "action": "He opens the lower cupboard door wider, shows the dark inside and talks warmly to the camera.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_01.wav"
+  },
+  {
+   "id": "s5_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Mismo frasco seco, mismas diez hojas rotas, mismo aceite. Lo tapas, y lo guardas en un lugar oscuro y fresco. Debajo del fregadero no, que hay humedad.",
+   "action": "He screws the lid onto the jar with torn bay leaves and fresh oil, puts it into the dark lower cupboard, then wags a finger toward the sink.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_02.wav"
+  },
+  {
+   "id": "s5_03",
+   "a": "K3",
+   "b": "K4",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_03.wav",
+   "text": "Una vez por semana lo sacas y lo mueves así, suavecito, dándolo vuelta. Tres o cuatro semanas. Nada más.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: his hands slowly tilt the closed jar back and forth, the dried bay leaves drifting in the golden oil."
+  },
+  {
+   "id": "s5_04",
+   "a": "K5",
+   "b": "K6",
+   "text": "¿Cuál es mejor, el rápido o el lento? Mira... el lento suele quedar más suave, más perfumado. El rápido te sirve cuando no quieres esperar un mes.",
+   "action": "He takes the golden jar in one hand and the fresh jar in the other, weighs them like a scale and shrugs with a smile.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_04.wav"
+  },
+  {
+   "id": "s5_04b",
+   "a": "K6",
+   "b": "K7",
+   "text": "Yo, la verdad, tengo los dos andando. Uno rápido para usar ya, y uno lento guardado, que va a estar listo cuando se me acabe el otro.",
+   "action": "He sets both jars on the counter side by side and pats each lid in turn, amused.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_04b.wav"
+  },
+  {
+   "id": "s5_05",
+   "a": "K7",
+   "b": "K8",
+   "text": "Este lo empecé hace cuatro semanas. Mira el color. ¿Ves? Doradito. Y las hojas ya están pálidas; soltaron lo suyo.",
+   "action": "He lifts the golden four-week jar against the window light, the oil glowing golden with the pale leaves inside, and admires the color.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_05.wav"
+  },
+  {
+   "id": "s5_06",
+   "a": "K8",
+   "b": "K9",
+   "text": "Y fíjate que el aceite no se puso turbio. Está transparente. Eso es buena señal: no entró agua, no hay moho.",
+   "action": "He tilts the jar to show it is clear, taps the glass with a fingernail and nods, satisfied.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_06.wav"
+  },
+  {
+   "id": "s5_07",
+   "a": "K10",
+   "b": "K11",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_07.wav",
+   "text": "Lo cuelo igual: colador fino, gasa, y lo dejo escurrir solo un buen rato. Sin apurarlo.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: the golden oil pours through the gauze-lined strainer, then drips slowly on its own into the funnel of the amber bottle."
+  },
+  {
+   "id": "s5_08",
+   "a": "K12",
+   "b": "K13",
+   "text": "Y aquí va otra cosa que casi nadie cuenta: el aceite que elijas importa, eh. A veces más que el laurel.",
+   "action": "He raises a finger with a 'secret' face and leans slightly toward the camera.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_08.wav"
+  },
+  {
+   "id": "s5_09",
+   "a": "K13",
+   "b": "K14",
+   "text": "El de oliva extra virgen, el fuerte, en algunas pieles muy blancas deja un tono verdoso y un olor intenso. Para la cara yo prefiero almendras dulces.",
+   "action": "He picks up the bottle of dark green olive oil and the bottle of pale almond oil, compares them, and puts the olive oil back with a small doubtful face.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_09.wav"
+  },
+  {
+   "id": "s5_10",
+   "a": "K14",
+   "b": "K15",
+   "text": "O un oliva suave, o de semilla de uva, o jojoba. ¿Coco? En la cara, a mucha gente le tapa los poros. Para las manos, va bien.",
+   "action": "He counts other oils on his fingers, makes a small 'careful' gesture near his face, then points at his hands.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_10.wav"
+  },
+  {
+   "id": "s5_11",
+   "a": "K15",
+   "b": "K16",
+   "text": "¿Y cuánto laurel? No te pases. Más hojas no es más efecto: es más olor, y más riesgo de irritar. Diez, doce hojas por media taza.",
+   "action": "He takes a handful of dried bay leaves from the bag, lets most fall back, keeps a small number in his palm and shows it.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_11.wav"
+  },
+  {
+   "id": "s5_12",
+   "a": "K16",
+   "b": "K17",
+   "text": "Y algo que me preguntan mucho: ¿puedo usar aceite esencial de laurel? No. Puro, sobre la piel, no. Es muy concentrado, y quema.",
+   "action": "He shakes his head firmly and crosses his forearms in an X.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_12.wav"
+  },
+  {
+   "id": "s5_13",
+   "a": "K17",
+   "b": "K18",
+   "text": "Lo que hacemos aquí es otra cosa: un aceite vegetal perfumado con hojas. Suave. Por eso, con la prueba del parche, es seguro.",
+   "action": "He uncrosses his arms and holds the golden jar with both hands, gentle expression.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_13.wav"
+  },
+  {
+   "id": "s5_14",
+   "a": "K18",
+   "b": "K19",
+   "text": "Guardado: frasco de vidrio oscuro, tapado, en la alacena. Nada de dejarlo al sol en la ventana, aunque se vea bonito.",
+   "action": "He puts the amber bottle into the upper cupboard next to plates, closes the door, then points at the sunny window and shakes his head.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_14.wav"
+  },
+  {
+   "id": "s5_15",
+   "a": "K20",
+   "b": "K21",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_15.wav",
+   "text": "Yo le pego un papelito con la fecha, así sé cuándo lo hice. Dos, tres meses. Y si huele a crayón viejo, a rancio, se tira.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: he finishes writing on a small paper label and sticks it on the amber bottle, pressing it flat."
+  },
+  {
+   "id": "s5_15b",
+   "a": "K22",
+   "b": "K23",
+   "text": "Y si quieres regalarlo, es un regalo precioso. Frasquitos chiquitos, oscuros, para tus amigas o tus hermanas.",
+   "action": "He brings three tiny dark amber bottles tied together with a cotton string and shows them like a gift.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_15b.wav"
+  },
+  {
+   "id": "s5_15c",
+   "a": "K24",
+   "b": "K25",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_15c.wav",
+   "text": "Con su etiqueta, la fecha, y una tarjetita que diga: primero la prueba del parche. Así la cuidas de verdad.",
+   "action": "EXTREME CLOSE-UP of the HANDS ONLY: he tucks a small blank card under the string around the three little amber bottles."
+  },
+  {
+   "id": "s5_15d",
+   "a": "K26",
+   "b": "K27",
+   "text": "Porque un aceite regalado sin instrucciones termina en los ojos, o en la cara de alguien con alergia. Y eso no es regalo.",
+   "action": "He talks seriously, touches the area next to his eye as a warning, then shakes his head.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_15d.wav"
+  },
+  {
+   "id": "s5_16",
+   "a": "K27",
+   "b": "K28",
+   "text": "Ahora te quiero contar cómo terminó lo de Doña Elena. Porque justo hoy viene a tomar un café, y ella lo cuenta mejor que yo.",
+   "action": "He glances at his smartwatch, smiles and looks toward the right side of the kitchen as if expecting someone.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s5_16.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S5/vlog_S5.mp4"
+}

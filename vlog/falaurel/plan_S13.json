@@ -1,0 +1,220 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S13",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S11/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "COVER"
+   ],
+   "prompt": "The printed guide book's cover is exactly the second input image (same design, same colors), shown as a real printed book. Same living room as the first input image, a little later. On the coffee table now: the printed guide book whose cover is EXACTLY the second input image, lying face up and clearly visible, next to the small dark amber dropper bottle and a small glass jar of dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere). He sits relaxed on the sofa, hands together, looking at the viewer with a warm smile."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he sits relaxed, hands together, looking at the viewer."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up his open hand, counting."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he points at the amber bottle on the coffee table."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he holds a finger up, serious."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4",
+    "COVER"
+   ],
+   "prompt": "The printed guide book's cover is exactly the second input image (same design, same colors), shown as a real printed book. Same place, same framing and same light: he holds the guide book on his lap, the cover clearly facing the camera (the cover of the second input image), calm smile."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5",
+    "COVER"
+   ],
+   "prompt": "The printed guide book's cover is exactly the second input image (same design, same colors), shown as a real printed book. Same place, same framing and same light: he holds the guide on his lap and points down with one finger."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6",
+    "COVER"
+   ],
+   "prompt": "The printed guide book's cover is exactly the second input image (same design, same colors), shown as a real printed book. Same place, same framing and same light: the guide lies on the coffee table; he gestures warmly."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he leans forward with a curious smile."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he sits with a soft, emotional smile."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light: he raises his hand in a small goodbye wave, warm smile."
+  },
+  {
+   "id": "K11",
+   "noface": true,
+   "from": [
+    "K10",
+    "COVER"
+   ],
+   "prompt": "The printed guide book's cover is exactly the second input image (same design, same colors), shown as a real printed book. EXTREME CLOSE-UP of the coffee table: the small dark amber dropper bottle and a small glass jar of dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere) next to the guide book (the cover of the second input image). No people. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K12",
+   "noface": true,
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same close-up, a moment later, daylight a touch brighter on the bottle."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K10",
+    "COVER"
+   ],
+   "prompt": "The printed guide book's cover is exactly the second input image (same design, same colors), shown as a real printed book. Same place, same framing and same light: he sits on the sofa, smiling at the viewer."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s13_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Bueno, ya en casa. Te hago un resumen rapidito, para que no se te escape nada, ¿sí?",
+   "action": "Sitting on the sofa, he smiles and settles in, hands together.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_01.wav"
+  },
+  {
+   "id": "s13_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Diez hojas secas, rotas. Media taza de aceite de almendras. Frasco seco. Baño María suave, cuarenta minutos... o un mes en la oscuridad.",
+   "action": "He counts the steps on his fingers one by one, briskly.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_02.wav"
+  },
+  {
+   "id": "s13_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Colar, frasco oscuro, la fecha. Parche de veinticuatro horas. Tres o cuatro gotas de noche, masaje hacia arriba. Y protector solar de día.",
+   "action": "He keeps counting on his other hand, then points to the amber bottle on the coffee table.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_03.wav"
+  },
+  {
+   "id": "s13_04",
+   "a": "K3",
+   "b": "K4",
+   "text": "Y el error que arruina todo: el agua. Hojas mojadas, frasco mojado. Una gota basta. Acuérdate de Elena.",
+   "action": "He raises a warning finger and mimes a drop of water with a serious face.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_04.wav"
+  },
+  {
+   "id": "s13_05",
+   "a": "K4",
+   "b": "K5",
+   "text": "El aceite es el qué. Cómo aplicarlo para que sume firmeza, el masaje completo, el cuello, las manos y la rutina en orden, está en mi guía, El Método Piel Joven.",
+   "action": "The printed guide book (the fourth reference image is its cover) is in the scene. He picks up the guide book from the coffee table and holds it on his lap with the cover toward the camera, calm and sincere.",
+   "refs": [
+    "COVER"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_05.wav"
+  },
+  {
+   "id": "s13_06",
+   "a": "K5",
+   "b": "K6",
+   "text": "El enlace está abajo, en la descripción. Y si estás en el televisor, el código está en pantalla.",
+   "action": "The printed guide book (the fourth reference image is its cover) is in the scene. He points down toward the bottom of the frame, then toward the camera, relaxed.",
+   "refs": [
+    "COVER"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_06.wav"
+  },
+  {
+   "id": "s13_06b",
+   "a": "K6",
+   "b": "K7",
+   "text": "Y si te sirvió, compártelo con esa amiga que se hace sus remedios en casa. Que lo haga bien: sin agua, y con la prueba del parche.",
+   "action": "The printed guide book (the fourth reference image is its cover) is in the scene. He puts the guide back on the coffee table and talks warmly, gesturing as if to a friend.",
+   "refs": [
+    "COVER"
+   ],
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_06b.wav"
+  },
+  {
+   "id": "s13_07",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y cuéntame en los comentarios: ¿cuántos años tienes, y cuántos te dicen que tienes? Me encanta leerlos. Nos vemos en el próximo video.",
+   "action": "He leans forward with a curious, warm smile, inviting the viewer to comment.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_07.wav"
+  },
+  {
+   "id": "s13_07b",
+   "a": "K8",
+   "b": "K9",
+   "text": "Mi mamá tiene setenta y ocho. Y te digo algo que aprendí con ella: no le importa verse joven. Le importa verse bien, verse cuidada. Como ella es.",
+   "action": "He leans back, his face softens, and he talks with emotion about his mother, looking at the viewer.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_07b.wav"
+  },
+  {
+   "id": "s13_07c",
+   "a": "K9",
+   "b": "K10",
+   "text": "Eso es lo que te deseo a ti también. No pelearte con el espejo. Mirarte, y reconocerte. Y que cuando digas tu edad... te digan: ¿en serio?",
+   "action": "He smiles warmly, nods slowly, and lifts his hand in a small goodbye wave.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_07c.wav"
+  },
+  {
+   "id": "s13_08",
+   "a": "K11",
+   "b": "K12",
+   "kf": true,
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s13_08.wav",
+   "text": "Cuídate mucho.",
+   "action": "EXTREME CLOSE-UP, no hands: the small dark amber bottle and the jar of dried bay leaves next to the guide on the coffee table, soft daylight moving slightly."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S13/vlog_S13.mp4"
+}

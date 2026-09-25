@@ -1,0 +1,291 @@
+{
+ "dir": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S11",
+ "face": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_facecrop.png",
+ "face_gpt": "D:/Proyectos/video2-wt/falaurel/public/ref_falaurel_face.png",
+ "k0_from": null,
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/refs/W_elena.png",
+  "COVER": "D:/Proyectos/video2-wt/falaurel/public/img/falaurel/portada_piel.jpg"
+ },
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [],
+   "prompt": "Create a new photo: A bright living room of a modest family home in daylight: a beige sofa with cushions and a knitted throw, a low wooden coffee table with a small open notebook, a pen, a cup of tea, the small dark amber dropper bottle and a small clear bag of dried culinary bay leaves (Laurus nobilis: dry, matte olive-green, elongated oval leaves with slightly wavy edges, like the ones from a supermarket spice bag; only dry leaves, no flowers anywhere); a bookshelf, a window with sheer white curtains, a floor lamp and a woven rug. The doctor sits on the sofa holding the open notebook, looking at the viewer mid-sentence. Medium shot from about two meters. The man is the doctor of the input image (a close-up of his real face): EXACTLY that face — same face shape, eyes, nose, eyebrows, dark curly hair with a little grey, short salt-and-pepper beard, same age (about 40) — do not make him younger or more handsome. He wears blue medical scrubs with short sleeves, a black stethoscope around his neck and a black smartwatch on his left wrist. A casual home video frame, ordinary, candid."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the open notebook on his knee, reading."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he looks up from the notebook toward the viewer."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: his hand rests on his neck, gentle face."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he holds a palm up, serious."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he shows one finger, careful face."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the notebook again, reading."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he looks at the viewer, caring face."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he holds his knee, honest face."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he wags a finger, smiling."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up the amber bottle."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light: his flat hand hovers low, calm."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he holds a finger near the outer corner of his eye, warning face."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he smiles tenderly."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the dried leaf, eyebrows raised."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light: he rubs his jaw, amused."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same place, same framing and same light: he shakes his head firmly."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the closed notebook on his lap, warm smile."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same place, same framing and same light: he leans forward with a serious face, finger raised."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s11_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Ahora, las preguntas que más me hacen sobre este aceite. Me las anoté aquí, porque hay algunas muy buenas.",
+   "action": "He holds up the small open notebook, flips a page and smiles at the camera.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_01.wav"
+  },
+  {
+   "id": "s11_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Primera: '¿Cuántas veces por semana?' El masaje, tres o cuatro. El aceite solo, sin masaje, puede ser todas las noches, si te cae bien.",
+   "action": "He reads from the notebook, then looks up and answers, counting on his fingers.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_02.wav"
+  },
+  {
+   "id": "s11_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Segunda: '¿Sirve para el cuello?' Sí, y el cuello siempre se olvida. De abajo hacia arriba, suave, sin apretar la garganta.",
+   "action": "He reads, then strokes his own neck upward gently to demonstrate.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_03.wav"
+  },
+  {
+   "id": "s11_04",
+   "a": "K3",
+   "b": "K4",
+   "text": "Tercera: '¿Y para las piernas, para las várices?' Aquí te freno. Un masaje suave relaja, sí, pero las várices se revisan con el médico. No las aprietes.",
+   "action": "He reads, then raises a palm to stop, shakes his head and points at his legs.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_04.wav"
+  },
+  {
+   "id": "s11_05",
+   "a": "K4",
+   "b": "K5",
+   "text": "Cuarta: '¿Tengo la piel grasa, me sirve?' Con cuidado. Una o dos gotas, solo en las zonas secas. Si te salen granitos, lo dejas.",
+   "action": "He reads, then touches his forehead and nose lightly, then shows one finger.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_05.wav"
+  },
+  {
+   "id": "s11_06",
+   "a": "K5",
+   "b": "K6",
+   "text": "Quinta: '¿Lo puedo mezclar con romero?' Se puede, una ramita seca. Pero empieza con el laurel solo; si mezclas y algo te irrita, no sabes qué fue.",
+   "action": "He picks up the small clear bag of dried bay leaves from the coffee table, looks at it and puts it down, answering.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_06.wav"
+  },
+  {
+   "id": "s11_07",
+   "a": "K6",
+   "b": "K7",
+   "text": "Sexta: '¿Y si tengo rosácea?' No masajees donde está roja, inflamada. Ahí, primero el dermatólogo. El aceite puede esperar.",
+   "action": "He reads, then gestures softly near his own cheek and shakes his head.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_07.wav"
+  },
+  {
+   "id": "s11_08",
+   "a": "K7",
+   "b": "K8",
+   "text": "Séptima: '¿Sirve para los dolores de las rodillas?' Un masaje con aceite reconforta, eso sí. Pero si te duele seguido, eso lo ve tu médico.",
+   "action": "He reads, then rubs his knee lightly and shrugs honestly.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_08.wav"
+  },
+  {
+   "id": "s11_09",
+   "a": "K8",
+   "b": "K9",
+   "text": "Octava: '¿Puedo usar hojas frescas, del árbol?' Mejor no. Tienen agua adentro... y ya sabes lo que pasa con el agua. Secas, siempre.",
+   "action": "He reads, then shakes his head and mimes water dripping with his fingers.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_09.wav"
+  },
+  {
+   "id": "s11_09b",
+   "a": "K9",
+   "b": "K10",
+   "text": "Novena: '¿Cada cuánto hago un frasco nuevo?' Media taza te dura más o menos un mes y medio. Haz poquito, y más seguido; así siempre está fresco.",
+   "action": "He reads the next question, then holds up the small amber bottle to show how much is left.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_09b.wav"
+  },
+  {
+   "id": "s11_09c",
+   "a": "K10",
+   "b": "K11",
+   "text": "Décima: '¿El calor no le quita lo bueno?' Con calor suave, no. Lo que lo arruina es el calor fuerte. Por eso el fuego al mínimo.",
+   "action": "He reads, then lowers a flat hand slowly to mean 'low heat'.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_09c.wav"
+  },
+  {
+   "id": "s11_09d",
+   "a": "K11",
+   "b": "K12",
+   "text": "Once: '¿Y en las patas de gallo?' Ahí no pongas el aceite, que los ojos se irritan fácil. Si quieres, un toquecito suave con el anular, sin producto, hacia afuera.",
+   "action": "He reads, points at the outer corner of his eye and shakes his head.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_09d.wav"
+  },
+  {
+   "id": "s11_09e",
+   "a": "K12",
+   "b": "K13",
+   "text": "Doce: '¿Se lo puedo poner a mi mamá, que tiene noventa?' Sí, con más cuidado todavía: parche primero, y un masaje muy suave, casi una caricia.",
+   "action": "He reads with a tender face, then strokes the back of his own hand very softly like a caress.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_09e.wav"
+  },
+  {
+   "id": "s11_09f",
+   "a": "K13",
+   "b": "K14",
+   "text": "Trece: '¿Sirve el laurel que tengo hace años en la alacena?' Si ya no huele a nada, no. Hojas viejas, aceite sin aroma. Compra una bolsita nueva.",
+   "action": "He reads, sniffs a dried bay leaf from the bag and wrinkles his nose.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_09f.wav"
+  },
+  {
+   "id": "s11_09g",
+   "a": "K14",
+   "b": "K15",
+   "text": "Y catorce, de un señor: '¿Me lo puedo poner después de afeitarme?' Mejor al otro día, o de noche. Sobre la piel recién afeitada puede arder.",
+   "action": "He reads, rubs his own stubble on the jaw and nods.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_09g.wav"
+  },
+  {
+   "id": "s11_09h",
+   "a": "K15",
+   "b": "K16",
+   "text": "Y una que me asustó: '¿Lo puedo tomar?' No. Este aceite es para la piel, por fuera. No se toma, ni en gotas, ni en té.",
+   "action": "He reads, looks up alarmed, and shakes his head firmly.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_09h.wav"
+  },
+  {
+   "id": "s11_09i",
+   "a": "K16",
+   "b": "K17",
+   "text": "Y la última, que es la más linda: '¿Ya estoy muy vieja para empezar?' No. Nunca es tarde para cuidarte. A los setenta, a los ochenta, cuando quieras.",
+   "action": "He reads, lowers the notebook and smiles warmly at the camera.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_09i.wav"
+  },
+  {
+   "id": "s11_10",
+   "a": "K17",
+   "b": "K18",
+   "text": "Y si tienes el árbol en tu casa, ¿estás seguro de que es laurel de cocina? Porque aquí viene la advertencia más importante de todo el video.",
+   "action": "He puts the notebook down, leans forward with a serious face and raises a finger.",
+   "audio": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/tramos/s11_10.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/falaurel/vlog/falaurel/S11/vlog_S11.mp4"
+}
