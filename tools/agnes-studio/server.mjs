@@ -245,22 +245,32 @@ const publicJob = (j) => {
   return { ...rest, key: j.key != null ? keyTag(j.key) : null };
 };
 
-// AGNES_PASS=… → pide contraseña (Basic Auth, cualquier usuario). Obligatorio si se expone fuera de casa.
+// AGNES_PASS=… → pide contraseña con un formulario y deja una cookie de sesión. Obligatorio si se
+// expone fuera de casa. (Antes era Basic Auth: en el celular el navegador no reenviaba la clave en
+// los fetch de la página y enviar un prompt daba "Failed to fetch".)
 const PASS = E("AGNES_PASS");
-const authed = (req) => {
-  if (!PASS) return true;
-  const m = (req.headers.authorization || "").match(/^Basic (.+)$/);
-  if (!m) return false;
-  const pass = Buffer.from(m[1], "base64").toString("utf8").split(":").slice(1).join(":");
-  const a = Buffer.from(pass), b = Buffer.from(PASS);
-  return a.length === b.length && crypto.timingSafeEqual(a, b);
-};
+const SESSION = PASS ? crypto.createHmac("sha256", PASS).update("agnes-studio").digest("hex") : "";
+const sameText = (a, b) => { const x = Buffer.from(String(a)), y = Buffer.from(String(b)); return x.length === y.length && crypto.timingSafeEqual(x, y); };
+const authed = (req) => !PASS || (req.headers.cookie || "").split(/;\s*/).some((c) => c.startsWith("ag_s=") && sameText(c.slice(5), SESSION));
+const loginPage = (err = "") => `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Agnes Studio</title>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f4f3ef;color:#1d1c1a;font:15px system-ui,sans-serif}
+@media(prefers-color-scheme:dark){body{background:#141416;color:#ecebe7}input{background:#1d1d21;color:#ecebe7;border-color:#2d2d33}}
+form{display:grid;gap:12px;width:min(320px,90vw)}h1{margin:0 0 6px;font-size:22px}input{font:inherit;padding:12px;border-radius:10px;border:1px solid #ccc}
+button{font:inherit;font-weight:700;padding:12px;border:0;border-radius:10px;background:#5b4bdb;color:#fff}.e{color:#c0392b;font-size:13px;min-height:1em}</style></head>
+<body><form method="post" action="/login"><h1>Agnes Studio</h1><input type="password" name="password" placeholder="Contraseña" autofocus autocomplete="current-password">
+<div class="e">${err}</div><button>Entrar</button></form></body></html>`;
 
 const server = http.createServer(async (req, res) => {
   const u = new URL(req.url, "http://x");
+  if (PASS && req.method === "POST" && u.pathname === "/login") {
+    const pw = new URLSearchParams((await readBody(req, 1e4).catch(() => Buffer.alloc(0))).toString("utf8")).get("password") || "";
+    if (!sameText(pw, PASS)) return send(res, 401, loginPage("Contraseña incorrecta"), "text/html; charset=utf-8");
+    res.writeHead(303, { "Set-Cookie": `ag_s=${SESSION}; Path=/; HttpOnly; SameSite=Lax; Max-Age=2592000`, Location: "/" });
+    return res.end();
+  }
   if (!authed(req)) {
-    res.writeHead(401, { "WWW-Authenticate": 'Basic realm="Agnes Studio", charset="UTF-8"', "Content-Type": "text/plain; charset=utf-8" });
-    return res.end("contraseña incorrecta");
+    if (u.pathname.startsWith("/api/")) return send(res, 401, { error: "sesión vencida: recargá la página y poné la contraseña" });
+    return send(res, 401, loginPage(), "text/html; charset=utf-8");
   }
   try {
     if (req.method === "GET" && u.pathname === "/") {

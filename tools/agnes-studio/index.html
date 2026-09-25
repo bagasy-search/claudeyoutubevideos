@@ -233,12 +233,20 @@ $("#chips").addEventListener("click", (e) => {
 // ---------- subida ----------
 const kindOf = (type, name) => /^image\//.test(type) ? "image" : /^audio\//.test(type) ? "audio" : /^video\//.test(type) ? "video"
   : /\.(png|jpe?g|webp)$/i.test(name) ? "image" : /\.(mp3|wav|m4a|ogg)$/i.test(name) ? "audio" : /\.(mp4|mov|webm)$/i.test(name) ? "video" : null;
+// fetch con errores entendibles: sin conexión → mensaje claro; sesión vencida → vuelve al login
+async function call(url, opts) {
+  let r;
+  try { r = await fetch(url, { credentials: "same-origin", ...opts }); }
+  catch { throw new Error("No pude conectar con el servidor. ¿Sigue abierta la ventana del server en la PC (y la del túnel, si entrás desde afuera)?"); }
+  if (r.status === 401) { location.reload(); throw new Error("sesión vencida, volvé a poner la contraseña"); }
+  const j = await r.json().catch(() => ({ error: `respuesta rara del servidor (${r.status})` }));
+  if (!r.ok) throw new Error(j.error || `error ${r.status}`);
+  return j;
+}
 async function upload(file) {
   uploading++; refreshGo();
   try {
-    const r = await fetch(`/api/upload?name=${encodeURIComponent(file.name)}`, { method: "POST", headers: { "Content-Type": file.type || "application/octet-stream" }, body: file });
-    const j = await r.json(); if (!r.ok) throw new Error(j.error);
-    return j;
+    return await call(`/api/upload?name=${encodeURIComponent(file.name)}`, { method: "POST", headers: { "Content-Type": file.type || "application/octet-stream" }, body: file });
   } finally { uploading--; refreshGo(); }
 }
 function limitsOk(kind) {
@@ -310,8 +318,7 @@ $("#go").onclick = async () => {
   $("#go").disabled = true;
   try {
     for (let i = 0; i < n; i++) {
-      const r = await fetch("/api/jobs", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(params) });
-      const j = await r.json(); if (!r.ok) throw new Error(j.error);
+      await call("/api/jobs", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(params) });
     }
     loadJobs();
   } catch (e) { showErr(e.message); } finally { refreshGo(); }

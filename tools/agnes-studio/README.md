@@ -15,5 +15,5 @@ npm run agnes        # → http://localhost:5178 (y en consola imprime el link p
 - **Referencias**: la API sólo acepta URLs públicas, así que los archivos se suben al bucket público de Supabase
   (`thumbnails/tmp_agnes/`, credenciales de `.env.local`) y se borran cuando el video termina.
   También podés pegar una URL pública directamente.
-- **Contraseña**: `AGNES_PASS=algo npm run agnes` pide contraseña (obligatorio si la exponés con un túnel fuera de casa).
+- **Contraseña**: `AGNES_PASS=algo npm run agnes` pide contraseña con un formulario (cookie de sesión de 30 días). Obligatorio si la exponés con un túnel fuera de casa.
 - **Salida**: `out/agnes-studio/<id>.mp4` (ignorado por git) + historial en `out/agnes-studio/jobs.json`.
