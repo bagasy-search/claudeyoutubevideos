@@ -17,6 +17,7 @@ import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import os from "node:os";
 import { fileURLToPath } from "node:url";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -314,4 +315,7 @@ const server = http.createServer(async (req, res) => {
 });
 server.listen(PORT, () => {
   log(`agnes-studio → http://localhost:${PORT}  ·  ${KEYS.length} claves  ·  Supabase ${SUPA_URL && SUPA_KEY ? "OK" : "NO (sólo URLs)"}`);
+  // link para el celular (misma red wifi que la PC)
+  const lan = Object.values(os.networkInterfaces()).flat().filter((i) => i && i.family === "IPv4" && !i.internal).map((i) => i.address);
+  for (const ip of lan) log(`📱 desde el celu (mismo wifi): http://${ip}:${PORT}`);
 });

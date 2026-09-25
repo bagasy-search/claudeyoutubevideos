@@ -3,7 +3,7 @@
 UI local para generar videos con **agnes-video-2.5-flash** (gratis en promo) y **agnes-video-2.5** (pago).
 
 ```
-npm run agnes        # → http://localhost:5178
+npm run agnes        # → http://localhost:5178 (y en consola imprime el link para el celu, mismo wifi)
 ```
 
 - **Claves**: usa `AGNES_KEYS` de `.env` y las rota solo (1 envío por minuto por clave).
