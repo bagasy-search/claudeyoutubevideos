@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agnes Studio</title>
+<style>
+:root {
+  --bg: #f4f3ef; --panel: #ffffff; --ink: #1d1c1a; --muted: #6b6860; --line: #e2dfd7;
+  --accent: #5b4bdb; --accent-ink: #fff; --ok: #1f8a4c; --warn: #b7791f; --bad: #c0392b; --soft: #efedf9;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #141416; --panel: #1d1d21; --ink: #ecebe7; --muted: #9a978f; --line: #2d2d33;
+    --accent: #8b7dff; --accent-ink: #111; --ok: #3fbf74; --warn: #e0a84a; --bad: #ef6b5b; --soft: #26243a; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { padding: 18px 24px; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+header h1 { margin: 0; font-size: 20px; letter-spacing: -.01em; }
+header .meta { color: var(--muted); font-size: 13px; }
+main { display: grid; grid-template-columns: minmax(340px, 460px) 1fr; gap: 20px; padding: 0 24px 40px; align-items: start; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; padding: 0 16px 40px; } header { padding: 16px; } }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+.form { position: sticky; top: 12px; display: grid; gap: 16px; }
+label.t, .t { display: block; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-bottom: 6px; }
+select, input[type=text], input[type=number], input[type=url], textarea {
+  width: 100%; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 9px; padding: 9px 10px; }
+textarea { min-height: 110px; resize: vertical; }
+.row { display: flex; gap: 10px; }
+.row > * { flex: 1; }
+.seg { display: flex; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 3px; gap: 3px; flex-wrap: wrap; }
+.seg button { flex: 1; border: 0; background: transparent; color: var(--ink); font: inherit; padding: 7px 8px; border-radius: 7px; cursor: pointer; white-space: nowrap; }
+.seg button.on { background: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.seg button:disabled { opacity: .35; cursor: not-allowed; }
+.dur { display: flex; align-items: center; gap: 12px; }
+.dur input { flex: 1; accent-color: var(--accent); }
+.dur b { font-size: 22px; min-width: 52px; text-align: right; font-variant-numeric: tabular-nums; }
+.hint { color: var(--muted); font-size: 12px; margin-top: 5px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.chip { font-size: 12px; border: 1px solid var(--line); background: var(--soft); color: var(--ink); border-radius: 999px; padding: 3px 9px; cursor: pointer; }
+.drop { border: 1.5px dashed var(--line); border-radius: 11px; padding: 12px; text-align: center; color: var(--muted); cursor: pointer; transition: .15s; }
+.drop:hover, .drop.over { border-color: var(--accent); color: var(--ink); background: var(--soft); }
+.refs { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; margin-top: 8px; }
+.ref { position: relative; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; background: var(--bg); min-height: 70px; font-size: 11px; }
+.ref img, .ref video { width: 100%; height: 72px; object-fit: cover; display: block; }
+.ref .cap { padding: 4px 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ref .tag { position: absolute; top: 4px; left: 4px; background: rgba(0,0,0,.65); color: #fff; border-radius: 5px; padding: 1px 5px; font-size: 10px; }
+.ref .x { position: absolute; top: 3px; right: 3px; border: 0; background: rgba(0,0,0,.65); color: #fff; width: 20px; height: 20px; border-radius: 50%; cursor: pointer; line-height: 1; }
+.ref.up::after { content: "subiendo…"; position: absolute; inset: 0; display: grid; place-items: center; background: rgba(0,0,0,.55); color: #fff; }
+.kf { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.urlrow { display: flex; gap: 6px; margin-top: 6px; }
+.urlrow input { font-size: 12px; padding: 6px 8px; }
+button.sec { border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 8px; padding: 6px 10px; cursor: pointer; font: inherit; font-size: 12px; }
+button.go { width: 100%; border: 0; background: var(--accent); color: var(--accent-ink); font: inherit; font-weight: 700; font-size: 15px; padding: 12px; border-radius: 11px; cursor: pointer; }
+button.go:disabled { opacity: .5; cursor: wait; }
+.cost { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; }
+.err { color: var(--bad); font-size: 13px; min-height: 1em; }
+.jobs { display: grid; gap: 14px; }
+.jobs h2 { margin: 0 0 4px; font-size: 15px; }
+.empty { color: var(--muted); text-align: center; padding: 50px 10px; }
+.job { display: grid; grid-template-columns: 300px 1fr; gap: 16px; }
+@media (max-width: 1200px) { .job { grid-template-columns: 1fr; } }
+.job .media { background: #000; border-radius: 10px; overflow: hidden; aspect-ratio: 16/9; display: grid; place-items: center; color: #aaa; font-size: 13px; }
+.job .media video { width: 100%; height: 100%; object-fit: contain; }
+.job .top { display: flex; justify-content: space-between; gap: 10px; align-items: center; flex-wrap: wrap; }
+.badge { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding: 3px 8px; border-radius: 999px; background: var(--soft); }
+.badge.completed { background: color-mix(in srgb, var(--ok) 18%, transparent); color: var(--ok); }
+.badge.failed { background: color-mix(in srgb, var(--bad) 18%, transparent); color: var(--bad); }
+.badge.waiting, .badge.submitting { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn); }
+.badge.in_progress, .badge.queued, .badge.pending, .badge.downloading { color: var(--accent); }
+.bar { height: 10px; border-radius: 99px; background: var(--bg); border: 1px solid var(--line); overflow: hidden; margin: 10px 0 4px; }
+.bar i { display: block; height: 100%; background: var(--accent); transition: width .6s; }
+.bar.indet i { width: 35% !important; animation: slide 1.3s infinite ease-in-out; opacity: .6; }
+@keyframes slide { 0% { transform: translateX(-100%); } 100% { transform: translateX(300%); } }
+.pct { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.pct b { color: var(--ink); font-size: 16px; }
+.prompt { margin: 8px 0; font-size: 13px; white-space: pre-wrap; max-height: 5.8em; overflow: auto; }
+.params { color: var(--muted); font-size: 12px; }
+.acts { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.acts a { text-decoration: none; }
+.note { font-size: 12px; color: var(--warn); margin-top: 4px; }
+.jerr { font-size: 12px; color: var(--bad); margin-top: 4px; word-break: break-word; }
+.hide { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Agnes Studio</h1>
+  <span class="meta" id="info">conectando…</span>
+</header>
+<main>
+  <section class="panel form" id="form">
+    <div>
+      <span class="t">Modelo</span>
+      <select id="model">
+        <option value="agnes-video-2.5-flash">agnes-video-2.5-flash · gratis (promo)</option>
+        <option value="agnes-video-2.5">agnes-video-2.5 · pago (hasta 2K)</option>
+      </select>
+    </div>
+
+    <div>
+      <span class="t">Modo</span>
+      <div class="seg" id="mode">
+        <button data-v="text" class="on">Sólo texto</button>
+        <button data-v="keyframe">Primer / último cuadro</button>
+        <button data-v="reference">Referencias</button>
+      </div>
+    </div>
+
+    <div id="kfBox" class="hide">
+      <div class="kf">
+        <div><span class="t">Primer cuadro</span><div id="slot_first"></div></div>
+        <div><span class="t">Último cuadro</span><div id="slot_last"></div></div>
+      </div>
+      <div class="hint">Con uno alcanza. Con los dos, agnes arma la transición entre ambos.</div>
+    </div>
+
+    <div id="refBox" class="hide">
+      <span class="t">Referencias <span id="refCount"></span></span>
+      <div class="drop" id="refDrop">Arrastrá fotos, audios o un video · o hacé click<br><small>hasta 8 imágenes · 3 audios (2–12 s en total) · 1 video (2–12 s) · 12 en total</small></div>
+      <input type="file" id="refFile" multiple accept="image/*,audio/*,video/*" hidden>
+      <div class="urlrow"><input type="url" id="refUrl" placeholder="…o pegá una URL pública (https://…)"><button class="sec" id="refUrlAdd">Agregar</button></div>
+      <div class="refs" id="refs"></div>
+      <div id="vidOpts" class="hide row" style="margin-top:8px">
+        <div><span class="t">Video: arranca en (s)</span><input type="number" id="vidStart" min="0" step="0.1" value="0"></div>
+        <div><span class="t">&nbsp;</span><label style="display:flex;gap:6px;align-items:center;padding-top:8px"><input type="checkbox" id="vidAudio"> usar el audio del video</label></div>
+      </div>
+    </div>
+
+    <div>
+      <span class="t">Prompt</span>
+      <textarea id="prompt" placeholder="Describí la escena: qué pasa, quién, dónde, cómo se mueve la cámara…"></textarea>
+      <div class="chips" id="chips"></div>
+    </div>
+
+    <div>
+      <span class="t">Duración</span>
+      <div class="dur"><input type="range" id="seconds" min="4" max="12" step="1" value="5"><b id="secOut">5 s</b></div>
+    </div>
+
+    <div class="row">
+      <div>
+        <span class="t">Resolución</span>
+        <div class="seg" id="size">
+          <button data-v="720P" class="on">720P</button>
+          <button data-v="1080P">1080P</button>
+          <button data-v="2K">2K</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="t">Formato</span>
+      <div class="seg" id="ar">
+        <button data-v="16:9" class="on">16:9</button><button data-v="9:16">9:16</button><button data-v="1:1">1:1</button>
+        <button data-v="4:3">4:3</button><button data-v="3:4">3:4</button><button data-v="21:9">21:9</button>
+      </div>
+    </div>
+    <div class="row">
+      <div><span class="t">Seed (opcional)</span><input type="number" id="seed" placeholder="aleatorio"></div>
+      <div><span class="t">Cantidad</span><input type="number" id="count" min="1" max="10" value="1"></div>
+    </div>
+
+    <div class="cost"><span id="costTxt"></span><span id="dimTxt"></span></div>
+    <div class="err" id="err"></div>
+    <button class="go" id="go">Generar video</button>
+  </section>
+
+  <section class="jobs">
+    <div class="top" style="display:flex;justify-content:space-between;align-items:center">
+      <h2>Generaciones</h2>
+      <span class="meta" id="qsum" style="color:var(--muted);font-size:12px"></span>
+    </div>
+    <div id="jobs"><div class="panel empty">Todavía no generaste nada.</div></div>
+  </section>
+</main>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const RATE = { "720P": 0.025, "1080P": 0.04, "1K": 0.04, "2K": 0.055 };
+const DIMS = { "16:9": ["1280×720", "1920×1080", "2560×1440"], "9:16": ["720×1280", "1080×1920", "1440×2560"], "1:1": ["960×960", "1440×1440", "1920×1920"],
+  "4:3": ["1112×834", "1664×1248", "2224×1668"], "3:4": ["834×1112", "1248×1664", "1668×2224"], "21:9": ["1470×630", "2206×946", "2940×1260"] };
+const state = { mode: "text", size: "720P", ar: "16:9", first: null, last: null, refs: [] };
+let uploading = 0;
+
+function seg(id, key, cb) {
+  $(id).addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b || b.disabled) return;
+    $(id).querySelectorAll("button").forEach((x) => x.classList.toggle("on", x === b));
+    state[key] = b.dataset.v; cb && cb(); refresh();
+  });
+}
+const setSeg = (id, key, v) => { state[key] = v; $(id).querySelectorAll("button").forEach((x) => x.classList.toggle("on", x.dataset.v === v)); };
+seg("#mode", "mode"); seg("#size", "size"); seg("#ar", "ar");
+$("#model").addEventListener("change", refresh);
+$("#seconds").addEventListener("input", refresh);
+
+function refresh() {
+  const flash = $("#model").value.endsWith("flash");
+  $("#size").querySelectorAll("button").forEach((b) => { b.disabled = flash && b.dataset.v !== "720P"; });
+  if (flash && state.size !== "720P") setSeg("#size", "size", "720P");
+  $("#kfBox").classList.toggle("hide", state.mode !== "keyframe");
+  $("#refBox").classList.toggle("hide", state.mode !== "reference");
+  const s = +$("#seconds").value; $("#secOut").textContent = s + " s";
+  const n = Math.max(1, +$("#count").value || 1);
+  const cost = flash ? 0 : RATE[state.size] * s * n;
+  $("#costTxt").textContent = flash ? "Costo: $0 (flash gratis en promo)" : `Costo estimado: $${cost.toFixed(3)}`;
+  const di = { "720P": 0, "1080P": 1, "2K": 2 }[state.size];
+  $("#dimTxt").textContent = DIMS[state.ar][di];
+  // referencias
+  const imgs = state.refs.filter((r) => r.kind === "image"), auds = state.refs.filter((r) => r.kind === "audio"), vids = state.refs.filter((r) => r.kind === "video");
+  $("#refCount").textContent = state.refs.length ? `· ${imgs.length} img · ${auds.length} audio · ${vids.length} video` : "";
+  $("#vidOpts").classList.toggle("hide", !vids.length);
+  const counters = { image: 0, audio: 0, video: 0 };
+  $("#refs").innerHTML = state.refs.map((r, i) => {
+    const k = ++counters[r.kind]; r.token = r.kind === "image" ? `<Picture ${k}>` : r.kind === "audio" ? `<Audio ${k}>` : `<Video ${k}>`;
+    const prev = r.kind === "image" ? `<img src="${esc(r.preview || r.url)}">` : r.kind === "video" ? `<video src="${esc(r.preview || r.url)}" muted></video>` : `<div style="height:72px;display:grid;place-items:center;font-size:26px">♪</div>`;
+    return `<div class="ref ${r.url ? "" : "up"}">${prev}<span class="tag">${esc(r.token)}</span><button class="x" data-i="${i}" title="quitar">×</button><div class="cap">${esc(r.name)}</div></div>`;
+  }).join("");
+  $("#chips").innerHTML = state.mode === "reference" && state.refs.length
+    ? `<span class="hint" style="margin:0 4px 0 0">Insertar en el prompt:</span>` + state.refs.map((r) => `<span class="chip" data-t="${esc(r.token)}">${esc(r.token)}</span>`).join("")
+    : "";
+  renderSlot("first"); renderSlot("last");
+}
+$("#count").addEventListener("input", refresh);
+$("#refs").addEventListener("click", (e) => { const b = e.target.closest(".x"); if (b) { state.refs.splice(+b.dataset.i, 1); refresh(); } });
+$("#chips").addEventListener("click", (e) => {
+  const c = e.target.closest(".chip"); if (!c) return;
+  const ta = $("#prompt"), a = ta.selectionStart, z = ta.selectionEnd, t = c.dataset.t;
+  ta.value = ta.value.slice(0, a) + t + ta.value.slice(z); ta.focus(); ta.selectionStart = ta.selectionEnd = a + t.length;
+});
+
+// ---------- subida ----------
+const kindOf = (type, name) => /^image\//.test(type) ? "image" : /^audio\//.test(type) ? "audio" : /^video\//.test(type) ? "video"
+  : /\.(png|jpe?g|webp)$/i.test(name) ? "image" : /\.(mp3|wav|m4a|ogg)$/i.test(name) ? "audio" : /\.(mp4|mov|webm)$/i.test(name) ? "video" : null;
+async function upload(file) {
+  uploading++; refreshGo();
+  try {
+    const r = await fetch(`/api/upload?name=${encodeURIComponent(file.name)}`, { method: "POST", headers: { "Content-Type": file.type || "application/octet-stream" }, body: file });
+    const j = await r.json(); if (!r.ok) throw new Error(j.error);
+    return j;
+  } finally { uploading--; refreshGo(); }
+}
+function limitsOk(kind) {
+  const c = (k) => state.refs.filter((r) => r.kind === k).length;
+  if (state.refs.length >= 12) return "máximo 12 referencias";
+  if (kind === "image" && c("image") >= 8) return "máximo 8 imágenes";
+  if (kind === "audio" && c("audio") >= 3) return "máximo 3 audios";
+  if (kind === "video" && c("video") >= 1) return "sólo 1 video de referencia";
+  return null;
+}
+async function addRefFiles(files) {
+  for (const f of files) {
+    const kind = kindOf(f.type, f.name); if (!kind) { showErr(`${f.name}: formato no soportado`); continue; }
+    const lim = limitsOk(kind); if (lim) { showErr(lim); continue; }
+    const r = { kind, name: f.name, preview: URL.createObjectURL(f), url: null, obj: null };
+    state.refs.push(r); refresh();
+    upload(f).then((h) => { r.url = h.url; r.obj = h.obj; refresh(); })
+      .catch((e) => { state.refs.splice(state.refs.indexOf(r), 1); showErr(`${f.name}: ${e.message}`); refresh(); });
+  }
+}
+const drop = $("#refDrop");
+drop.onclick = () => $("#refFile").click();
+$("#refFile").onchange = (e) => { addRefFiles([...e.target.files]); e.target.value = ""; };
+["dragover", "dragenter"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach((ev) => drop.addEventListener(ev, () => drop.classList.remove("over")));
+drop.addEventListener("drop", (e) => { e.preventDefault(); addRefFiles([...e.dataTransfer.files]); });
+$("#refUrlAdd").onclick = () => {
+  const url = $("#refUrl").value.trim(); if (!/^https?:\/\//.test(url)) return showErr("la URL tiene que empezar con http(s)://");
+  const kind = kindOf("", url.split("?")[0]) || "image"; const lim = limitsOk(kind); if (lim) return showErr(lim);
+  state.refs.push({ kind, name: url.split("/").pop().slice(0, 40), url, preview: url }); $("#refUrl").value = ""; refresh();
+};
+
+// primer / último cuadro
+function renderSlot(which) {
+  const el = $("#slot_" + which), v = state[which];
+  if (v) {
+    el.innerHTML = `<div class="ref ${v.url ? "" : "up"}"><img src="${esc(v.preview || v.url)}"><button class="x" title="quitar">×</button><div class="cap">${esc(v.name)}</div></div>`;
+    el.querySelector(".x").onclick = () => { state[which] = null; refresh(); };
+  } else {
+    el.innerHTML = `<div class="drop">Soltá una imagen<br>o click</div><input type="file" accept="image/*" hidden><div class="urlrow"><input type="url" placeholder="…o URL"><button class="sec">OK</button></div>`;
+    const d = el.querySelector(".drop"), inp = el.querySelector("input[type=file]");
+    const take = (f) => { if (!f) return; const r = { name: f.name, preview: URL.createObjectURL(f), url: null }; state[which] = r; refresh();
+      upload(f).then((h) => { r.url = h.url; r.obj = h.obj; refresh(); }).catch((e) => { state[which] = null; showErr(e.message); refresh(); }); };
+    d.onclick = () => inp.click(); inp.onchange = () => take(inp.files[0]);
+    d.ondragover = (e) => { e.preventDefault(); d.classList.add("over"); }; d.ondragleave = () => d.classList.remove("over");
+    d.ondrop = (e) => { e.preventDefault(); d.classList.remove("over"); take(e.dataTransfer.files[0]); };
+    el.querySelector(".sec").onclick = () => { const u = el.querySelector("input[type=url]").value.trim(); if (/^https?:\/\//.test(u)) { state[which] = { name: u.split("/").pop(), url: u, preview: u }; refresh(); } };
+  }
+}
+
+// ---------- enviar ----------
+const showErr = (m) => { $("#err").textContent = m || ""; if (m) setTimeout(() => { if ($("#err").textContent === m) $("#err").textContent = ""; }, 7000); };
+const refreshGo = () => { $("#go").disabled = uploading > 0; $("#go").textContent = uploading ? `Subiendo ${uploading} archivo(s)…` : "Generar video"; };
+$("#go").onclick = async () => {
+  showErr("");
+  const vids = state.refs.filter((r) => r.kind === "video");
+  const params = {
+    model: $("#model").value, mode: state.mode, prompt: $("#prompt").value.trim(), seconds: $("#seconds").value,
+    size: state.size, aspect_ratio: state.ar, seed: $("#seed").value,
+    first_frame: state.mode === "keyframe" ? state.first?.url : undefined,
+    last_frame: state.mode === "keyframe" ? state.last?.url : undefined,
+    images: state.mode === "reference" ? state.refs.filter((r) => r.kind === "image").map((r) => r.url) : undefined,
+    audios: state.mode === "reference" ? state.refs.filter((r) => r.kind === "audio").map((r) => r.url) : undefined,
+    video: state.mode === "reference" && vids.length ? { url: vids[0].url, start_seconds: +$("#vidStart").value || 0, require_audio: $("#vidAudio").checked } : undefined,
+    hosted: [state.first, state.last, ...state.refs].filter((r) => r && r.obj).map((r) => r.obj),
+    previews: [state.first, state.last, ...state.refs].filter(Boolean).map((r) => ({ url: r.url, kind: r.kind || "image" })),
+  };
+  const n = Math.max(1, Math.min(10, +$("#count").value || 1));
+  $("#go").disabled = true;
+  try {
+    for (let i = 0; i < n; i++) {
+      const r = await fetch("/api/jobs", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(params) });
+      const j = await r.json(); if (!r.ok) throw new Error(j.error);
+    }
+    loadJobs();
+  } catch (e) { showErr(e.message); } finally { refreshGo(); }
+};
+
+// ---------- lista de jobs ----------
+const LABEL = { waiting: "esperando cupo", submitting: "enviando", queued: "en cola de agnes", pending: "en cola de agnes", in_progress: "generando", downloading: "descargando", completed: "listo", failed: "falló" };
+const fmt = (ms) => { const s = Math.max(0, Math.round(ms / 1000)); return s < 60 ? `${s}s` : `${Math.floor(s / 60)}m ${String(s % 60).padStart(2, "0")}s`; };
+const rendered = new Map();
+function jobHtml(j) {
+  const p = j.params, done = j.status === "completed", failed = j.status === "failed";
+  const pct = Math.round(j.progress || 0);
+  const indet = !done && !failed && (["waiting", "submitting"].includes(j.status) || pct === 0);
+  const t0 = j.created_at, t1 = j.finished_at || Date.now();
+  const media = done ? `<video src="/videos/${esc(j.file)}" controls loop playsinline preload="metadata"></video>`
+    : failed ? "✗" : (p.previews?.find((x) => x.kind === "image")?.url ? `<img src="${esc(p.previews.find((x) => x.kind === "image").url)}" style="width:100%;height:100%;object-fit:cover;opacity:.35">` : "⏳");
+  const pctTxt = done ? "100%" : failed ? "—" : (j.status === "in_progress" || pct > 0) ? `${pct}%` : "";
+  return `<div class="panel job" id="j_${j.id}">
+    <div class="media">${media}</div>
+    <div>
+      <div class="top"><span class="badge ${j.status}">${LABEL[j.status] || j.status}</span><span class="params">${esc(j.id)}</span></div>
+      ${failed ? "" : `<div class="bar ${indet ? "indet" : ""}"><i style="width:${done ? 100 : pct}%"></i></div>
+      <div class="pct"><span><b>${pctTxt}</b> ${!done && !pctTxt ? "agnes todavía no informa porcentaje" : ""}</span><span>${fmt(t1 - t0)}</span></div>`}
+      ${j.note ? `<div class="note">${esc(j.note)}</div>` : ""}
+      ${j.error ? `<div class="jerr">${esc(j.error)}</div>` : ""}
+      <div class="prompt">${esc(p.prompt)}</div>
+      <div class="params">${esc(p.model)} · ${esc(p.mode)} · ${esc(p.seconds)} s · ${esc(p.size)} · ${esc(p.aspect_ratio)}${p.seed ? " · seed " + esc(p.seed) : ""}${j.key ? " · clave " + esc(j.key) : ""}${(p.images?.length || 0) + (p.audios?.length || 0) + (p.video ? 1 : 0) ? ` · ${(p.images?.length || 0)} img, ${(p.audios?.length || 0)} audio, ${p.video ? 1 : 0} video` : ""}</div>
+      <div class="acts">
+        ${done ? `<a class="sec" href="/videos/${esc(j.file)}" download><button class="sec">Descargar mp4</button></a>` : ""}
+        <button class="sec" data-a="reuse" data-id="${j.id}">Reusar prompt</button>
+        ${failed ? `<button class="sec" data-a="retry" data-id="${j.id}">Reintentar</button>` : ""}
+        ${["waiting", "submitting"].includes(j.status) ? `<button class="sec" data-a="cancel" data-id="${j.id}">Cancelar</button>` : ""}
+        <button class="sec" data-a="del" data-id="${j.id}">Quitar</button>
+      </div>
+    </div></div>`;
+}
+let cache = [];
+async function loadJobs() {
+  try {
+    const r = await fetch("/api/jobs"); cache = await r.json();
+    const box = $("#jobs");
+    if (!cache.length) { box.innerHTML = `<div class="panel empty">Todavía no generaste nada.</div>`; rendered.clear(); return; }
+    // re-render sólo los que cambiaron (para no cortar la reproducción de los videos listos)
+    const ids = new Set(cache.map((j) => j.id));
+    for (const [id] of rendered) if (!ids.has(id)) { document.getElementById("j_" + id)?.remove(); rendered.delete(id); }
+    box.querySelector(".empty")?.remove();
+    let prev = null;
+    for (const j of cache) {
+      const sig = JSON.stringify([j.status, j.progress, j.note, j.error, j.file, j.status === "completed" || j.status === "failed" ? 0 : Math.floor(Date.now() / 1000)]);
+      let el = document.getElementById("j_" + j.id);
+      if (!el || rendered.get(j.id) !== sig) {
+        const tmp = document.createElement("div"); tmp.innerHTML = jobHtml(j); const nu = tmp.firstElementChild;
+        if (el) el.replaceWith(nu); else if (prev) prev.after(nu); else box.prepend(nu);
+        el = nu; rendered.set(j.id, sig);
+      }
+      prev = el;
+    }
+    const act = cache.filter((j) => !["completed", "failed"].includes(j.status)).length;
+    $("#qsum").textContent = `${act} en curso · ${cache.filter((j) => j.status === "completed").length} listos`;
+  } catch {}
+}
+$("#jobs").addEventListener("click", async (e) => {
+  const b = e.target.closest("button[data-a]"); if (!b) return;
+  const j = cache.find((x) => x.id === b.dataset.id); if (!j) return;
+  if (b.dataset.a === "reuse") {
+    $("#prompt").value = j.params.prompt; $("#model").value = j.params.model; $("#seconds").value = j.params.seconds;
+    setSeg("#mode", "mode", j.params.mode); setSeg("#size", "size", j.params.size); setSeg("#ar", "ar", j.params.aspect_ratio);
+    $("#seed").value = j.params.seed || ""; refresh(); window.scrollTo({ top: 0, behavior: "smooth" }); return;
+  }
+  if (b.dataset.a === "del") {
+    const conFile = j.file && confirm("¿Borrar también el mp4 del disco?\n(Cancelar = sólo sacarlo de la lista)");
+    await fetch(`/api/jobs/${j.id}${conFile ? "?file=1" : ""}`, { method: "DELETE" });
+  } else {
+    const r = await fetch(`/api/jobs/${j.id}/${b.dataset.a}`, { method: "POST" }); const x = await r.json(); if (!r.ok) showErr(x.error);
+  }
+  loadJobs();
+});
+
+fetch("/api/info").then((r) => r.json()).then((i) => {
+  $("#info").textContent = `${i.keys} claves de agnes · subida de referencias ${i.supabase ? "OK" : "desactivada (usá URLs)"} · mp4 en ${i.out}/`;
+});
+refresh(); loadJobs(); setInterval(loadJobs, 2000);
+</script>
+</body>
+</html>
