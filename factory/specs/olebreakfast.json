@@ -1,0 +1,80 @@
+{
+  "slug": "olebreakfast",
+  "canal": "ole-camp",
+  "modo": "avatar",
+  "idioma": "en",
+  "guion": "D:/rtmp/factory/_guiones/GUION_olebreakfast.txt",
+  "voz": {
+    "id": "ole_camp",
+    "blockChars": 1200
+  },
+  "cta": {
+    "head": "Subscribe for the suppers",
+    "ancla": "If this brought back",
+    "sub": "New stories every week"
+  },
+  "avatar": {
+    "face": "public/ref/ole_full.png",
+    "ref": "public/ref/ole_face128.png"
+  },
+  "bagasy": {
+    "channelKey": "draft:olescamp",
+    "cardId": "ole2026092501"
+  },
+  "titulo": "25 Logging Camp Breakfasts I Cooked Before Dawn (Nobody Makes Them Anymore)",
+  "secciones": [
+    [
+      "GANCHO",
+      "Four o"
+    ],
+    [
+      "CONTEXTO",
+      "Now before we start"
+    ],
+    [
+      "B01",
+      "Number one."
+    ],
+    [
+      "B06",
+      "Number six."
+    ],
+    [
+      "B11",
+      "Number eleven."
+    ],
+    [
+      "B16",
+      "Number sixteen."
+    ],
+    [
+      "B21",
+      "Number twenty-one."
+    ],
+    [
+      "B25",
+      "And now, number twenty-five"
+    ],
+    [
+      "CIERRE",
+      "Mrs. Lindqvist cooked in the woods"
+    ]
+  ],
+  "overrides": {
+    "agnesFlash": {
+      "p026": "a thick batter sizzling loudly in a hot cast-iron skillet, crackling fat, a quiet log cabin kitchen, no voices",
+      "p043": "thick slices of pork frying and crackling in hot fat in a cast-iron skillet, quiet kitchen, no voices",
+      "p052": "coffee boiling and gurgling hard in an enamel pot on a wood stove, crackling fire underneath, no voices",
+      "p060": "birch logs crackling and popping fast in a wood stove firebox, no voices",
+      "p062": "a wood stove roaring with a strong draft, the stovepipe rumbling and ticking with heat, no voices",
+      "p068": "potatoes and onions frying in hot lard in a big iron skillet, a steady loud sizzle, no voices",
+      "p075": "a large hardwood fire crackling in an outdoor pit, wind in the pine trees, no voices",
+      "p080": "a heavy iron lid lifted, dirt falling, morning birds in cold pine woods, no voices",
+      "p113": "doughnuts frying in a kettle of hot lard, bubbling and sizzling, no voices",
+      "p157": "maple sap boiling hard in a big iron kettle over an open fire, crackling wood, spring birds, no voices",
+      "p258": "a steel triangle dinner bell beaten hard with an iron rod, ringing out over a silent snowy camp before dawn, no voices",
+      "p271": "forks and knives clinking on tin plates in a quiet log hall, a wood stove ticking, wind outside, nobody talking",
+      "p272": "a wood stove ticking and crackling softly, cold wind blowing outside a log cabin, no voices"
+    }
+  }
+}

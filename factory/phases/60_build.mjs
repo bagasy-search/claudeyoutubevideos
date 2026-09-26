@@ -435,9 +435,10 @@ export default {
       // en los dos casos, y para que el importTree del farm arrastre los .tsx del kit al tarball.
       const rel = path.relative(srcDir, path.join(ROOT, "src", "VideoEdit", "scenes")).split(path.sep).join("/");
       const comp = fs.readFileSync(path.join(estiloDir, "Comp.tsx"), "utf8")
-        .replace(/(["'])\.\.\/VideoEdit\/scenes\//g, `$1${rel}/`);
+        .replace(/(["'])\.\.\/VideoEdit\/scenes\//g, `$1${rel}/`)
+        .replace(/(["'])\.\.\/VideoEdit\/kit\//g, `$1${rel.replace(/scenes$/, "kit")}/`);
       fs.writeFileSync(path.join(srcDir, "Comp.tsx"), comp);
-      const importados = [...comp.matchAll(/^import\s*\{([^}]+)\}\s*from\s*["']\.[^"']*scenes\/([^"']+)["']/gm)];
+      const importados = [...comp.matchAll(/^import\s*\{([^}]+)\}\s*from\s*["']\.[^"']*(?:scenes|kit)\/([^"']+)["']/gm)];
       // el MAPA de Comp.tsx tiene que cubrir exactamente los kinds del contrato: si falta uno, ese
       // cue emite `undefined` y el chunk muere con el React #130 que no dice cuál fue.
       const enMapa = new Set(importados.flatMap((m) => m[1].split(",").map((s) => s.trim()).filter(Boolean)));

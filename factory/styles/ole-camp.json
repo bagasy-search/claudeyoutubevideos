@@ -1,0 +1,78 @@
+{
+  "nombre": "Ole's Camp Kitchen",
+  "montaje": "premium",
+  "idioma": "en",
+  "fish": {
+    "voz": "ole_camp",
+    "blockChars": 1200,
+    "cps": 13.3
+  },
+  "frases": {
+    "cps": 13.3,
+    "minChars": 55,
+    "maxSec": 9,
+    "objetivoSec": 5.5
+  },
+  "ventanas": {
+    "padSec": 0.4,
+    "fusionarSec": 0.2
+  },
+  "vlog": {
+    "minPlanoS": 1.2,
+    "partirS": 7,
+    "colaFotoS": 2.5,
+    "maxAvatarTapadoS": 1,
+    "maxPlacaVistaS": 1.5
+  },
+  "avatar": {
+    "lipLeadSec": 0.25
+  },
+  "fondo": "#0B0907",
+  "placa": "img/{slug}/{slug}_placa_a.jpg",
+  "apertura": {
+    "miniatura": true,
+    "holdS": 1,
+    "glitchF": 12
+  },
+  "imagen": {
+    "size": "1088x608",
+    "quality": "low",
+    "motorConCara": "gpt",
+    "motorSinCara": "gptsin"
+  },
+  "presentador": "the same old man from the reference image, 78 years old, white Scandinavian-American from northern Minnesota, a full short white beard, short white hair, deep crow's feet, a big weathered nose, big rough knuckled hands, wearing a green and black buffalo-plaid wool shirt over a grey thermal undershirt and an old stained canvas apron",
+  "presentadorToken": "OLE",
+  "formula": "soft grey winter daylight from the window mixed with the warm glow of the wood stove, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background full of ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+  "formulas": {
+    "lampara": "before dawn, lit by two kerosene lanterns and the orange glow of the open firebox, the room still clearly visible in warm light, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background full of ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "nieve": "flat bright overcast winter daylight on deep snow, true-to-life colors, sharp focus, deep depth of field with everything in focus, trees and snow in the background stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs"
+  },
+  "vintage": "faded 1960s colour photograph from a family album, real amateur snapshot, slightly washed-out colours, sharp enough to read every object, no text, no letters, no labels, no signs",
+  "lugares": {
+    "cocina": "in his own log-cabin kitchen in the Minnesota woods, in the background a big black cast-iron wood cookstove with six lids and a chrome rail, a stack of split birch firewood beside it, cast-iron skillets hanging on nails on the log wall, a dented blue enamel coffee pot, a window with snowy pine woods outside and a kerosene lantern on a shelf",
+    "mesa": "at the long wooden plank table of his log cabin, in the background rough log walls, a small window with snow on the sill, a tin plate and a blue speckled enamel mug on the table, a crock of utensils, an oil lamp, a wool blanket over a bench and a calendar-free wall with an axe hanging on pegs",
+    "despensa": "in the cold pantry room off his cabin kitchen, in the background wooden shelves of stoneware crocks with cloth covers, a small wooden barrel, sacks of flour and potatoes on the floor, strings of dried apples hanging from a beam, a lantern on a nail and frost on the small window",
+    "porche": "on the snowy porch of his log cabin, in the background a tall stack of split firewood under the eave, a chopping block with an axe in it, a galvanized bucket, snowshoes leaning on the log wall and tall pine woods covered in snow",
+    "cookshack": "inside a 1960s northern Minnesota logging-camp cook shack, in the background a huge black cast-iron range with a tall stovepipe, a long work table dusted with flour, washtubs and big pots, shelves of tin plates and enamel pitchers, a hanging steel triangle by the door, log walls and a frosted window",
+    "comedor": "inside the long log dining hall of a 1960s logging camp, in the background rows of long plank tables with benches, tin plates and enamel cups set in lines, plates of food down the middle of the tables, kerosene lanterns hanging from the beams, a wood heater and small frosted windows",
+    "campamento": "in the snowy clearing of a 1960s logging camp in the northern Minnesota woods, in the background low log bunkhouses with smoking stovepipes, a cook shack with a lit window, stacked pulpwood logs, an old crawler tractor, a horse-drawn sled and tall spruce and pine forest",
+    "bunkhouse": "inside a 1960s logging-camp bunkhouse, in the background two-tier wooden bunks with grey wool blankets, a barrel stove glowing in the middle, wool socks and mittens drying on a line above it, boots lined up by the door, axes and bow saws hanging on pegs and a lantern on a post",
+    "fosa": "behind a logging-camp cook shack in the snow, in the background a rock-lined pit in the ground with a bed of glowing coals, a shovel stuck in a pile of dirt and ashes, a lidded black cast-iron bean pot, split hardwood stacked nearby, the log wall of the cook shack and pine trees",
+    "bosque": "in winter timber in the northern Minnesota woods, in the background tall spruce and pine trees, felled logs stacked beside a snowy skid trail, a two-man crosscut saw leaning on a stump, an axe stuck in a log, wood chips on the snow and a horse-drawn sled",
+    "arce": "at the edge of a snowy clearing among maple trees in early spring, in the background tapped maple trunks with metal buckets hanging from spouts, a big black iron kettle over an open fire on stones, a stack of firewood, patches of snow melting on the ground and a log cook shack behind",
+    "asilo": "in a small nursing home room in Duluth, in the background a bed with a hand-knitted afghan, a window with a view of the snowy harbor, a wooden armchair, a potted red geranium on the sill and framed family photos on a dresser",
+    "rio": "on the rocky bank of a cold north-woods river in late autumn, in the background flat grey granite rocks along the shore, dark water with thin ice at the edges, a canvas sack lying open on the rocks, a wooden wheelbarrow, birch and spruce trees on the far bank and a dusting of snow",
+    "cocina_casa": "in the small plain kitchen of his house in town, in the background a white enamel electric range with an oven door and round dial knobs, a black cast-iron Dutch oven on the stovetop, a window with snow on the sill, a wooden table with a red checkered oilcloth, a dish rack with enamel mugs and a braided rag rug on the linoleum floor",
+    "patio": "in the small snowy backyard behind his house, in the background a shallow pit lined with old red bricks, a bag of hardwood charcoal, a spade stuck in a pile of dark dirt, a stack of split firewood against a wooden fence, a clothesline and bare maple trees",
+    "mesa_casa": "at the small kitchen table of his house in town, in the background a window with white lace curtains and snow outside, an old radio on the windowsill, a bowl of red apples, a framed black and white photograph of a logging crew on the wall and a wool mackinaw hanging on a coat hook"
+  },
+  "movimiento": "camara",
+  "avatarPrompt": "An old man speaks warmly and naturally to the camera at the table of his log cabin, telling a story, natural head movement, expressive face, realistic lighting",
+  "dialecto": "AMERICAN ENGLISH, plain spoken, an old man from northern Minnesota telling stories: short sentences, 'you' addressed to the viewer, a little dry humor, no slang from other regions. Numbers written as words.",
+  "cta": {
+    "regex": "^If this brought back",
+    "head": "Subscribe for the suppers"
+  },
+  "avatarMinPct": 10,
+  "rachaMaxLugar": 8
+}

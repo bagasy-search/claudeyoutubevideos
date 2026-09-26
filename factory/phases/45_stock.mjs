@@ -96,7 +96,7 @@ export default {
     assertNoProblems("stockEnPlanoConPersona", prohibidos, plan.length, { log });
 
     assertMeasured("stockPedidos", pedidos.length, {
-      min: 1, total: plan.length, allowZero: !plan.some((p) => p.st), log,
+      min: plan.some((p) => p.st) ? 1 : 0, total: plan.length, allowZero: !plan.some((p) => p.st), log,
     });
     if (!pedidos.length) return { stockPedidos: 0, stockNuevos: 0, stockEnDisco: 0 };
 
