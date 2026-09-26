@@ -1,0 +1,80 @@
+{
+  "nombre": "Claudio el Plomero (premium)",
+  "montaje": "premium",
+  "idioma": "es",
+  "fish": {
+    "voz": "claudio_mendoza_s4",
+    "blockChars": 1200,
+    "cps": 14.2
+  },
+  "frases": {
+    "cps": 14.2,
+    "minChars": 55,
+    "maxSec": 9,
+    "objetivoSec": 5.5
+  },
+  "ventanas": {
+    "padSec": 0.4,
+    "fusionarSec": 0.2
+  },
+  "vlog": {
+    "minPlanoS": 1.2,
+    "partirS": 7,
+    "colaFotoS": 2.5,
+    "maxAvatarTapadoS": 1,
+    "maxPlacaVistaS": 1.5
+  },
+  "fondo": "#0A0B08",
+  "placa": "img/{slug}/{slug}_placa_a.jpg",
+  "imagen": {
+    "size": "1088x608",
+    "quality": "low",
+    "motorConCara": "gpt",
+    "motorSinCara": "gptsin"
+  },
+  "presentador": "the same man from the reference image, about 48, dark curly hair with volume, a short salt-and-pepper beard, olive skin, a plumber wearing a navy blue short-sleeved work shirt with a small white embroidered name patch on the chest, over a black t-shirt, dark grey work trousers with a leather tool belt, black nitrile gloves when he works",
+  "presentadorToken": "CLAUDIO",
+  "formula": "bright natural daylight, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+  "vintage": "faded 1970s colour photograph, real family snapshot, no text, no letters, no labels, no signs",
+  "lugares": {
+    "cocina_cliente": "in a real customer family kitchen with white shaker cabinets, the cabinet doors under the sink open, a red bucket and an old towel on the floor, a dish rack full of plates on the counter, a coffee maker, a fruit bowl and a window over the sink with a potted plant",
+    "bajo_fregadero": "inside the open cabinet under a kitchen sink, white PVC drain pipes with a U-shaped trap, a black plastic bucket, bottles of dish soap and a sponge pushed to the side, the wooden cabinet floor stained by old water rings",
+    "cocina_casa": "in his own modest home kitchen, a stainless steel sink with a mesh strainer in the drain, an old gas stove with a frying pan, a jar of used cooking oil by the stove, a kettle, a wall calendar from a hardware store and checkered curtains",
+    "cocina_noche": "in a family kitchen at night after dinner, dirty plates stacked by the sink, pots with leftover food, a frying pan with fat going white on the stove, warm ceiling light",
+    "bano": "in a small tiled bathroom with white wall tiles and a turquoise border, a white pedestal basin with a chrome tap, a toilet with a plunger next to it, a grey towel on a rail, a mirror cabinet",
+    "lavadero": "in a small home laundry room with a deep white utility sink, a top-loading washing machine, a plastic basket of clothes, bottles of detergent on a shelf and a floor drain grate",
+    "camioneta": "at the open back doors of his white work van parked in a residential street, shelves full of PVC fittings, coils of drain snake cables, a red toolbox, pipe wrenches hanging on hooks",
+    "taller": "in his small plumbing workshop, a workbench covered with cut sections of old drain pipes, a vice, a hacksaw, boxes of fittings, a shop light hanging above, pipe offcuts leaning on the wall",
+    "patio_registro": "in a family backyard next to an open concrete drain inspection box in the ground, the heavy lid set aside on the grass, a garden hose coiled, a plastic chair and a clothesline in the background",
+    "calle": "in a quiet residential street of one-storey houses with small front gardens, parked cars, a tree on the sidewalk and his white work van at the curb",
+    "ferreteria": "in a neighbourhood hardware store aisle with shelves of PVC pipes and fittings, drain cleaner bottles, plungers hanging on hooks and a wooden counter at the end",
+    "restaurante": "in the back kitchen of a small family restaurant, stainless steel counters, big pots, a commercial dishwashing sink and a metal grease trap box on the floor with its lid open",
+    "mesa_demo": "at his kitchen table set up for a demonstration, clear glass jars, a pot of hot water, a bowl of rice, a paper bag of coffee grounds, a bottle of cooking oil, a notebook and a pen",
+    "cloaca": "inside a city sewer tunnel lit by work lamps, a huge whitish mass of hardened grease blocking the brick channel, municipal workers in waterproof suits and helmets with shovels and high-pressure hoses",
+    "encimera": "on his own kitchen counter seen from the other side of the room, a wooden bread box, a fruit bowl with bananas, a small radio, a pot of basil and a tiled backsplash with a few chipped tiles",
+    "ventana": "on the windowsill of his kitchen in soft morning light, a row of potted herbs, a cracked mug holding pencils, net curtains pulled to the side, and a neighbouring wall and a lemon tree visible through the glass"
+  },
+  "movimiento": "camara",
+  "avatarPrompt": "A plumber speaks warmly and naturally to the camera in a bathroom, natural head movement, expressive face and hands, realistic lighting",
+  "dialecto": "ESPAÑOL NEUTRO LATINOAMERICANO — TÚ (mira, fíjate, tienes, pon, vas a ver, échale). ⛔ NUNCA voseo (mirá, tenés, poné) y NUNCA vosotros. Es el dialecto de la voz clonada claudio_mendoza_s4. Vocabulario neutro: fregadero, sifón (la curva en U debajo del fregadero), desagüe, tubería, destapacaños, trampa de grasa, registro, bote de basura, encimera, refrigerador, detergente, bicarbonato, vinagre, sosa cáustica, guía de plomero.",
+  "cta": {
+    "regex": "^Si esto te sirvi",
+    "head": "Suscríbete al canal"
+  },
+  "formulas": {
+    "noche": "at night with the electricity cut, the scene lit by the warm white light of the small bulb described, the light falling on the nearby walls and objects so the whole room stays readable, true-to-life colors, sharp focus, deep depth of field, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "gris": "flat grey overcast daylight from a cloudy sky, no shadows on the ground, wet surfaces, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "amanecer": "early morning sunlight low in the sky, long soft shadows, cool fresh air and a little dew on the surfaces, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "atardecer": "late afternoon golden light low in the sky, long warm shadows across the ground, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "nublado": "flat grey overcast daylight from a cloudy sky, soft even light with no hard shadows, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "lluvia": "during heavy rain under a dark grey sky, rain streaks in the air, wet shining surfaces and puddles, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "nochelux": "at night with the house lights on, warm lamp light filling the room and falling on the nearby walls and objects so the whole place stays readable, dark window behind, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs"
+  },
+  "apertura": {
+    "miniatura": true,
+    "holdS": 1,
+    "glitchF": 12,
+    "clip": "broll/{slug}/{slug}_apertura.mp4",
+    "foto": "img/{slug}/{slug}_thumb.jpg"
+  }
+}

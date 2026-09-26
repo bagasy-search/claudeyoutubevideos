@@ -25,7 +25,15 @@ export default {
     const mix = mezclaDe(P);
     const MASTER = mix || P.wav;
     if (mix) log(`audio de entrega = máster de MEZCLA (${path.basename(mix)})`);
-    const wavSec = await durSec(P.wav);
+    // ⛔⛔ (26-sep-2026, cploerror) con la APERTURA de miniatura, 60_build corre el audio `audioDesdeF` cuadros
+    //    (<Sequence from={N}><Audio>) y alarga el video. Acá se entregaba el máster SIN ese corrimiento y con
+    //    `-t` = duración del wav: voz 1,0 s ADELANTADA a los labios en todo el video y el último segundo cortado.
+    //    Ninguna compuerta lo veía (sync del avatar = reel vs audio, no entrega vs render). Se lee del Main REAL.
+    const mainTxt = fs.readFileSync(path.join(P.srcDir, `Main_${slug}.tsx`), "utf8");
+    const audioDesdeS = Number((mainTxt.match(/<Sequence from=\{(\d+)\} layout="none"><Audio/) || [0, 0])[1]) / 30;
+    const totalSec = Number((mainTxt.match(/TOTAL_FRAMES_\w+ = (\d+)/) || [0, 0])[1]) / 30;
+    const wavSec = Math.max(await durSec(P.wav) + audioDesdeS, totalSec);   // duración de la ENTREGA
+    log(`audio corrido ${audioDesdeS.toFixed(3)} s (apertura) · entrega ${wavSec.toFixed(2)} s`);
     fs.mkdirSync(path.dirname(P.finalMp4), { recursive: true });
     // Codificador: NVENC (RTX de la máquina) si está, si no libx264. Mismo contrato de entrega: CFR, tv/bt709,
     // GOP 2 s, SIN B-frames (pts==dts: el "lageado" real), audio = máster. FACTORY_ENCODER=x264 fuerza CPU.
@@ -56,7 +64,7 @@ export default {
       "-vf", "setpts=N/30/TB,scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p", "-fps_mode", "passthrough",
       "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
       ...vcodec,
-      "-af", mix ? "aformat=channel_layouts=stereo" : "pan=stereo|c0=c0|c1=c0", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", String(wavSec), "-movflags", "+faststart",
+      "-af", `${audioDesdeS > 0 ? `adelay=${Math.round(audioDesdeS * 1000)}:all=1,apad,` : ""}${mix ? "aformat=channel_layouts=stereo" : "pan=stereo|c0=c0|c1=c0"}`, "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", String(wavSec), "-movflags", "+faststart",
       // ⛔ el archivo de salida es "<final>.mp4.part": ffmpeg infiere el formato por EXTENSION y ".part" no le
       // dice nada -> "Unable to choose an output format". Medido en tfbsilicona (entrega frenada). Va explicito.
       "-f", "mp4", parcial], { timeoutMs: 3 * 3600_000 });

@@ -1,0 +1,96 @@
+{
+  "slug": "cploerror",
+  "canal": "claudio-plomero-premium",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_cploerror.txt",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200
+  },
+  "cta": {
+    "head": "Suscríbete al canal",
+    "ancla": "Si esto te sirvió",
+    "sub": "Un video nuevo cada semana"
+  },
+  "avatar": {
+    "face": "public/ref/claudio_plomero_full.png",
+    "ref": "public/ref/claudio_plomero_face128.png"
+  },
+  "bagasy": {
+    "channelKey": "draft:claudioplomero",
+    "cardId": "cplo2026092501"
+  },
+  "titulo": "El error en la cocina que me hace ir a destapar 3 casas por semana",
+  "secciones": [
+    [
+      "GANCHO",
+      "Mira esto. Esto salió hoy a la mañana de"
+    ],
+    [
+      "VISITA",
+      "Vamos. Empiezo por la visita de esta mañ"
+    ],
+    [
+      "MECANISMO",
+      "Aquí viene la parte que casi nadie te ex"
+    ],
+    [
+      "PRUEBA",
+      "Así que te voy a mostrar la prueba que l"
+    ],
+    [
+      "COMPLICES",
+      "Ahora hablemos de los cómplices, porque "
+    ],
+    [
+      "SENALES",
+      "Antes de seguir, te dejo las señales de "
+    ],
+    [
+      "QUIMICOS",
+      "Ahora vamos al remedio que todo el mundo"
+    ],
+    [
+      "MECANICO",
+      "Lo que sí funciona cuando el agua ya baj"
+    ],
+    [
+      "COSTO",
+      "Ahora hablemos de dinero, porque esto es"
+    ],
+    [
+      "RUTINA",
+      "Así que vamos a lo que viniste a buscar."
+    ],
+    [
+      "ERROR",
+      "Ahora te cuento el error. El mío."
+    ],
+    [
+      "CIERRE",
+      "Y aquí te quiero dejar una última cosa, "
+    ]
+  ],
+  "overrides": {
+    "animadoMaxPct": 50,
+    "clipAudioVol": 0.4,
+    "agnesFlash": {
+      "p009": "hot water from a kitchen tap splashing hard into a metal frying pan and gurgling down a sink drain, a quiet kitchen at night, no voices",
+      "p016x": "dirty water gurgling and glugging up out of a blocked kitchen sink drain, air bubbles bursting, a quiet kitchen, no voices",
+      "p020": "a thick stream of dirty water splashing out of a pipe into a plastic bucket, dripping, inside a kitchen cabinet, no voices",
+      "p024": "a hot tap running hard onto a frying pan, a sponge scrubbing and squeaking on metal, soap foam fizzing, no voices",
+      "p035": "hot water and oil pouring from a pan down a kitchen sink drain with a hollow gurgle, the tap running, no voices",
+      "p055": "a kitchen sink slowly filling with water that cannot drain, deep gurgles from the blocked drain, a family kitchen, no voices",
+      "p067": "drops of hot oil falling into a glass jar of hot water with tiny plops, a spoon clinking on glass, a quiet kitchen, no voices",
+      "p069": "a spoon stirring fast inside a glass jar, clinking against the glass, liquid sloshing and foam fizzing, no voices",
+      "p115": "the last water in a sink gulping down the drain with a loud glug glug and a burst of air, a quiet kitchen, no voices",
+      "p147": "baking soda and vinegar fizzing and crackling loudly in a kitchen sink drain, bubbles popping, no voices",
+      "p154x": "a sink full of water suddenly rushing down the drain with a loud swirling gurgle and a final slurp, no voices",
+      "p207": "hot water running steadily from a kitchen tap into a stainless steel sink, a soft hiss, a quiet kitchen, no voices",
+      "p222": "dirty water draining fast from a kitchen sink in a loud swirling whirlpool with a final slurping gurgle, no voices",
+      "p236": "a high pressure water jet blasting inside a pipe, a loud hiss and spray, chunks splashing, a workshop, no voices",
+      "p245x": "a high pressure hose blasting against a mass of grease inside a brick sewer tunnel, echoing water rushing, dripping, no voices"
+    }
+  }
+}
