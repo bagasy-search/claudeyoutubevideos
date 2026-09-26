@@ -24,11 +24,18 @@ import { SignaturePhrase } from "../VideoEdit/scenes/SignaturePhrase";
 import { SizeScale } from "../VideoEdit/scenes/SizeScale";
 import { StepTracker } from "../VideoEdit/scenes/StepTracker";
 import { VsCard } from "../VideoEdit/scenes/VsCard";
+import { IngredientsCardKit } from "../VideoEdit/kit/IngredientsCardKit";
+import { CostTallyKit } from "../VideoEdit/kit/CostTallyKit";
+import { CampItemCard } from "../VideoEdit/scenes/CampItemCard";
+import { FoodTeaseCards } from "../VideoEdit/scenes/FoodTeaseCards";
+import { RevealCards } from "../VideoEdit/scenes/RevealCards";
 
 const MAPA: Record<string, React.FC<any>> = {
   AvatarScrimText, BarCompare, Checklist, CrossSection, StatBig, FloatingInsert,
   KineticQuote, MistakeCard, ProcessSteps, RuleNumberScene, SagaTimeline,
   SignaturePhrase, SizeScale, StepTracker, VsCard,
+  CampItemCard, FoodTeaseCards, RevealCards,
+  IngredientsCardKit, CostTallyKit,
 };
 
 export const Comp: React.FC<{ kind: string; props: Record<string, unknown> }> = ({ kind, props }) => {

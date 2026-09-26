@@ -189,5 +189,12 @@
       }
     ],
     "nota": "VOZ REAL de @TallerClaudioMendoza, clonada el 20-sep-2026 del video ATIU8OUwdwg (130,9-170,4 s y 205,1-237,7 s, cortes en silencio). 15,2 cps, coincide con style.fish.cps=15. NO confundir con claudio_mendoza_s4 (row 207, otra persona, 11 cps)."
+  },
+  "ole_camp": {
+    "wav": "fish_refs/ole_camp.wav",
+    "text": "I was sixteen years old the first winter I peeled potatoes in that shack. I'm seventy-eight now. And I'm going to tell you the ten meals that kept every one of those men on his feet until the spring breakup, what each one cost, and the one trick behind every single one of them that nobody cooks with anymore.\n\nHere's how Emil did it. Saturday afternoon we'd dig a pit behind the cook shack, about three feet deep, lined with rocks. We'd build a hardwood fire in it, birch and maple, and let it burn down for three, four hours until it was nothing but a bed of glowing coals.",
+    "language": "en",
+    "backend": "s2.1-pro-free",
+    "nota": "Ole (Ole's Camp Kitchen, EN/US Upper Midwest, 78). Clon zero-shot de la voz publica de Fish 'Old man' 3d40669a01e045329ab4d6d7e25ce10e (deep raspy older, storytelling) generada con s2.1-pro-free sobre el guion de olewinter; ~13,3 c/s. 26-sep-2026."
   }
 }
