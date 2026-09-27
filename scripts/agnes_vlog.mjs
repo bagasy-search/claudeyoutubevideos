@@ -333,6 +333,9 @@ async function gen(id, body) {
 }
 const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSync(CL + "state.json", "utf8")) : {};
 const PRON = P.pronoun || "he";
+const min256 = f => { const [w, h] = wh(f); if (Math.min(w, h) >= 256) return f;
+  const k = 256 / Math.min(w, h), o = CL + "_min256_" + path.basename(f).replace(/\.[^.]+$/, "") + ".png";
+  if (!fs.existsSync(o)) ff("-i", f, "-vf", `scale=${Math.ceil(w * k)}:${Math.ceil(h * k)}:flags=lanczos`, o); return o; };
 const MUTE = ` When the reference audio ends ${PRON} stops talking and keeps the mouth closed.`;            // anti-balbuceo del relleno
 const MUTE_LINE = " After saying that line they stop talking and keep the mouth closed.";
 if (fase === "clips") {
@@ -346,8 +349,9 @@ if (fase === "clips") {
       if (fs.existsSync(CL + out + ".mp4")) { const f = CL + "state_det.json", s = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {}; s[c.id] = { file: out + ".mp4", T, own: false }; fs.writeFileSync(f, JSON.stringify(s, null, 1)); }
       return;
     }
+    // ⛔ agnes rechaza lados <256 px: refs chicas pasan por min256() (tfbinodoro, 27-sep)
     // `solo`: plano del OTRO personaje (contraplano) → sin la cara del presentador en las refs
-    const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), ...(c.solo ? [] : [uri(P.face)]), ...(c.refs || []).map(n => uri(refPath(n)))];
+    const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), ...(c.solo ? [] : [uri(min256(P.face))]), ...(c.refs || []).map(n => uri(min256(refPath(n))))];
     let body, T;
     if (c.audio) {
       const tr = tramo(c); T = tr.T;
