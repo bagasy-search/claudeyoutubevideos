@@ -73,7 +73,7 @@ import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
 import { Readable } from "node:stream";
-import { execFileSync } from "node:child_process";
+import { execFileSync as _efs } from "node:child_process"; const execFileSync = (c, a, o) => _efs(c, a, { windowsHide: true, ...(o || {}) }); // sin ventanas de consola (27-sep)
 
 const [, , planArg, fase, ...rest] = process.argv;
 const FL = Object.fromEntries(rest.filter(a => a.startsWith("--")).map(a => { const [k, v] = a.slice(2).split("="); return [k, v ?? true]; }));
@@ -187,8 +187,8 @@ function prepararItem(it) { // arma inputs chicos recién cuando sus K previos e
   const { Pl, a } = it, ANCd = dirsOf(Pl).ANC;
   it.inputs = a.from.map(n => { const f = refPathOf(Pl, n); return small(f, n === "k0" || /^K\d+$/.test(n) ? prevOf(Pl) : EXTRA_BOX, ANCd); });
   it.size = sizeOf(Pl);
-  it.inputs.push(face128(Pl));
-  it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + IDENT + LIGHT;
+  if (!a.noface) it.inputs.push(face128(Pl));                       // `noface`: ancla de detalle (sólo manos/objeto)
+  it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + (a.noface ? "" : IDENT) + LIGHT;
   return it;
 }
 let gasto = 0, nimg = 0, avisos = 0;
@@ -326,6 +326,7 @@ async function gen(id, body) {
   log("TIMEOUT", id);
 }
 const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSync(CL + "state.json", "utf8")) : {};
+function J(f) { return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {}; }
 const PRON = P.pronoun || "he";
 const MUTE = ` When the reference audio ends ${PRON} stops talking and keeps the mouth closed.`;            // anti-balbuceo del relleno
 const MUTE_LINE = " After saying that line they stop talking and keep the mouth closed.";
@@ -333,9 +334,14 @@ if (fase === "clips") {
   const sel = P.clips.filter(c => !soloIds.length || soloIds.includes(c.id));
   await Promise.all(sel.map((c, i) => sleep(i * 3000).then(async () => {
     const out = soloIds.length ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
-    const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(P.face), ...(c.refs || []).map(n => uri(refPath(n)))];
+    const imgs = c.detail ? [] : [uri(refPath(c.a)), uri(refPath(c.b)), uri(P.face), ...(c.refs || []).map(n => uri(refPath(n)))];
     let body, T;
-    if (c.audio) {
+    if (c.detail) { // plano detalle `keyframe` (primer y último cuadro clavados, SIN habla, CON foley real). Con `audio` dura lo
+      //               del tramo (suena el máster encima); sin `audio` dura `secs` y en el armado suena su propio foley.
+      T = c.audio ? tramo(c).T : Math.min(12, Math.max(4, c.secs || 4));
+      body = { mode: "keyframe", seconds: String(T), first_frame: uri(refPath(c.a)), last_frame: uri(refPath(c.b)),
+        prompt: `Close-up detail shot, one continuous take from the first frame to the last frame: ${c.d1}; it slowly becomes: ${c.d2}. Real hands and real materials, natural physical movement, nothing appears or disappears by itself, no text, no faces, no cuts, no camera jumps.` + LOOK + ` No speech and no voices; the only sound is ${c.sound || "the real, quiet sound of the action itself"}.` };
+    } else if (c.audio) {
       const tr = tramo(c); T = tr.T;
       body = { mode: "reference", seconds: String(T), images: imgs, audios: [uri(tr.mp3)],
         prompt: SE + "The presenter is the one speaking: the voice and every word are exactly the reference audio, lips perfectly synced; do not add, repeat or change any word — the audio is the only speech. " + c.action + LOOK + " No other voices." + MUTE };
@@ -345,7 +351,7 @@ if (fase === "clips") {
         prompt: SE + `The person speaking is ${c.who || "the other person (last reference image is their face)"}, ${c.voice}, lips perfectly synced, saying exactly: "${c.line}" Nobody else speaks. ` + c.action + LOOK + MUTE_LINE };
     }
     await gen(out, body);
-    if (fs.existsSync(CL + out + ".mp4")) { const s = state(); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(CL + "state.json", JSON.stringify(s, null, 1)); }
+    if (fs.existsSync(CL + out + ".mp4")) { const SF = CL + (c.detail ? "state_det.json" : "state.json"), s = J(SF); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(SF, JSON.stringify(s, null, 1)); }
   })));
   log("clips listos → corré `check`");
 }
@@ -367,7 +373,6 @@ async function vision(frameJpg, facePng) {
 // la del plan (para probar/rearmar sin tocar el worktree de otro).
 const WORK = FL.out ? String(FL.out).replace(/\\/g, "/").replace(/\/?$/, "/") : CL;
 if (FL.out) fs.mkdirSync(WORK, { recursive: true });
-const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
 const stateDet = () => J(CL + "state_det.json");        // planos `detail` (keyframe d1→d2) van aparte
 const ffo = (...a) => execFileSync("ffmpeg", ["-v", "error", ...a], { maxBuffer: 1 << 28 });
 function pcm(f, T) { // mono 16 kHz float; con T: rellena/corta a T (como load() de sync.py)
@@ -523,11 +528,13 @@ if (fase === "armar") {
   const miss = C.filter(c => !c.file).map(c => c.id); if (miss.length) throw new Error("faltan clips: " + miss.join(" "));
   const base = path.basename(P.out).replace(/\.[^.]+$/, ""), OUT = FL.out ? WORK + path.basename(P.out) : P.out, OD = path.dirname(OUT).replace(/\\/g, "/") + "/";
   const TMP = WORK + "_armar/"; fs.mkdirSync(TMP, { recursive: true });
-  for (const c of C) { if (c.own || !c.audio) { c.own = true; c.len = c.T; c.ve = c.T; } else { const v = vozFin(c.audio); c.len = v.len; c.ve = Math.min(v.ve + 0.04, v.len); } }
+  // `own` (vecino con su línea / detalle sin tramo): se muestra `show` s si el plan lo fija; si es una línea hablada, hasta el
+  // fin REAL de su voz + 0,25 s (el resto del clip es relleno mudo = silencio en el video); si no, T entero.
+  for (const c of C) { if (c.own || !c.audio) { c.own = true; const sh = c.show ?? (c.line ? Math.min(c.T, vozFin(CL + c.file).ve + 0.25) : c.T); c.len = sh; c.ve = sh; c.showLen = sh; } else { const v = vozFin(c.audio); c.len = v.len; c.ve = Math.min(v.ve + 0.04, v.len); } }
   const S = costuras(C, CL);
   for (const [i, c] of C.entries()) {
     const o = O[c.id] || {}, s = S[i];
-    if (c.own) { c.mode = "own"; c.d = c.T; continue; }
+    if (c.own) { c.mode = "own"; c.d = c.showLen; continue; }
     let mode = o.mode || "trunc";
     if (!o.mode && !c.detail && s.trunc != null && s.orig != null && s.trunc > Math.max(s.orig + 4, 12) && !(C[i + 1] || {}).detail) mode = "acc";
     c.mode = mode;
