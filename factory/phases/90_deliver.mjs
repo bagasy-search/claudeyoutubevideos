@@ -25,7 +25,21 @@ export default {
     const mix = mezclaDe(P);
     const MASTER = mix || P.wav;
     if (mix) log(`audio de entrega = máster de MEZCLA (${path.basename(mix)})`);
-    const wavSec = await durSec(P.wav);
+    const wavSecMaster = await durSec(P.wav);
+    // ⛔⛔ APERTURA CON MINIATURA (26-sep-2026, olebeans): 60_build corre TODO `holdF` cuadros a la derecha,
+    //    AUDIO incluido (`<Sequence from={holdF}><Audio …/>` en el Main). Esta fase re-pegaba el máster SIN
+    //    ese corrimiento → la voz salía 1 s ADELANTADA respecto de la imagen en TODO el video (labios,
+    //    componentes y planos corridos) y se cortaba el último segundo. Ninguna compuerta lo veía: duración,
+    //    cuadros y PTS daban bien. El corrimiento se lee del Main REAL que se rendeó, no de un supuesto.
+    let audioDesdeF = 0;
+    try {
+      const mainSrc = fs.readFileSync(path.join(P.srcDir, `Main_${slug}.tsx`), "utf8");
+      const mm = mainSrc.match(/<Sequence from=\{(\d+)\}[^>]*>\s*<Audio /);
+      if (mm) audioDesdeF = Number(mm[1]);
+    } catch (e) { log(`⚠ no pude leer el Main para el corrimiento de audio (${String(e.message || e).slice(0, 80)})`); }
+    const delaySec = audioDesdeF / 30;
+    if (audioDesdeF) log(`audio corrido ${audioDesdeF} cuadros (${delaySec.toFixed(3)} s) por la apertura: el máster se atrasa igual`);
+    const wavSec = wavSecMaster + delaySec;   // duración de ENTREGA
     fs.mkdirSync(path.dirname(P.finalMp4), { recursive: true });
     // Codificador: NVENC (RTX de la máquina) si está, si no libx264. Mismo contrato de entrega: CFR, tv/bt709,
     // GOP 2 s, SIN B-frames (pts==dts: el "lageado" real), audio = máster. FACTORY_ENCODER=x264 fuerza CPU.
@@ -56,7 +70,7 @@ export default {
       "-vf", "setpts=N/30/TB,scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p", "-fps_mode", "passthrough",
       "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
       ...vcodec,
-      "-af", mix ? "aformat=channel_layouts=stereo" : "pan=stereo|c0=c0|c1=c0", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", String(wavSec), "-movflags", "+faststart",
+      "-af", `${audioDesdeF ? `adelay=${Math.round(delaySec * 1000)}:all=1,` : ""}${mix ? "aformat=channel_layouts=stereo" : "pan=stereo|c0=c0|c1=c0"}`, "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", String(wavSec), "-movflags", "+faststart",
       // ⛔ el archivo de salida es "<final>.mp4.part": ffmpeg infiere el formato por EXTENSION y ".part" no le
       // dice nada -> "Unable to choose an output format". Medido en tfbsilicona (entrega frenada). Va explicito.
       "-f", "mp4", parcial], { timeoutMs: 3 * 3600_000 });
