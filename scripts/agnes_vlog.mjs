@@ -73,7 +73,7 @@ import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
 import { Readable } from "node:stream";
-import { execFileSync } from "node:child_process";
+import { execFileSync as _efs } from "node:child_process"; const execFileSync = (c, a, o) => _efs(c, a, { windowsHide: true, ...(o || {}) }); // sin ventanas de consola (27-sep)
 
 const [, , planArg, fase, ...rest] = process.argv;
 const FL = Object.fromEntries(rest.filter(a => a.startsWith("--")).map(a => { const [k, v] = a.slice(2).split("="); return [k, v ?? true]; }));
@@ -243,7 +243,7 @@ async function bajar(b, porKey) { // stremeado por línea (el JSONL con base64 r
 async function anclasBatch(items) {
   const porKey = Object.fromEntries(items.map(it => [it.key, it]));
   if (fs.existsSync(PEND)) { const pend = JSON.parse(fs.readFileSync(PEND, "utf8")); log("retomo batch pendiente", pend.join(" "));
-    items.filter(it => !fs.existsSync(it.out)).forEach(prepararItem); await esperarYBajar(pend, porKey); fs.unlinkSync(PEND); }
+    items.filter(it => !fs.existsSync(it.out) && it.deps.every(f => fs.existsSync(f))).forEach(prepararItem); await esperarYBajar(pend, porKey); fs.unlinkSync(PEND); }
   for (let ronda = 1; ; ronda++) {
     const pend = items.filter(it => !fs.existsSync(it.out));
     if (!pend.length) return;
