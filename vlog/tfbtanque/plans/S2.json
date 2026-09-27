@@ -1,0 +1,220 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S2/",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K0.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbtanque/public/img/tfbtanque/lamina_0.png"
+ },
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "prev_box": "384x216",
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place as the first image, same objects, same light. The tank is standing on its base, leaking a thin trickle from the crack. The neighbour is not in the frame yet. He stands between the tank and the low wall. He is at the start of this moment: he walks toward the low wall, nodding, pointing back at the tank with his thumb. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. Light of this place: flat overcast daylight from the open sky over the patio, soft and even; the wall facing the sky a little brighter, the corner under the eave dimmer."
+  },
+  {
+   "id": "V1a",
+   "from": [
+    "K0",
+    "V"
+   ],
+   "prompt": "Same place and light as the first image, reverse angle toward the neighbour: the neighbour rests both forearms on the low wall, holding a cup of coffee, doubtful frown. He is at the start of his line, mouth closed. The presenter is visible only from behind or at the edge of the frame.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "V1b",
+   "from": [
+    "V1a",
+    "V"
+   ],
+   "prompt": "Same photo, same framing, a few seconds later: the neighbour finishes talking, mouth closed, same pose and expression.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he walks toward the low wall, nodding, pointing back at the tank with his thumb. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he stands between the tank and the wall, pressing his palm flat against the black tank. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he rubs his fingertips on the tank surface and shows them to the camera, frowning. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he mimes laying something on the tank surface with flat fingers, then lifting it off. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he pushes outward from inside an imaginary tank with both hands, then shakes his head. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he points up at the sky and then to the tank, squinting in the daylight. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he pinches the air between two fingers, showing a tiny gap. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he leans on the tank looking at the neighbour, friendly. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "V2a",
+   "from": [
+    "K0",
+    "V"
+   ],
+   "prompt": "Same place and light as the first image, reverse angle toward the neighbour: the neighbour lifts his eyebrows and points at the tank with his cup, sceptical grin. He is at the start of his line, mouth closed. The presenter is visible only from behind or at the edge of the frame.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "V2b",
+   "from": [
+    "V2a",
+    "V"
+   ],
+   "prompt": "Same photo, same framing, a few seconds later: the neighbour finishes talking, mouth closed, same pose and expression.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he laughs and turns to the camera, taking a step toward the workshop door. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  }
+ ],
+ "clips": [
+  {
+   "id": "S2_01",
+   "a": "V1a",
+   "b": "V1b",
+   "secs": 9,
+   "line": "Yo al mío le puse ese pegamento especial para tanques, y a la semana goteaba igual.",
+   "text": "Yo al mío le puse ese pegamento especial para tanques, y a la semana goteaba igual.",
+   "who": "the neighbour, a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "V"
+   ],
+   "action": "the neighbour rests both forearms on the low wall, holding a cup of coffee, doubtful frown. The presenter, if visible, listens in silence."
+  },
+  {
+   "id": "S2_02",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S2_02.wav",
+   "text": "Es lo que más me escriben. Le puse pegamento, le puse silicona, y a los pocos días volvió a gotear.",
+   "action": "he walks toward the low wall, nodding, pointing back at the tank with his thumb. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S2_03",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S2_03.wav",
+   "text": "Y tiene una explicación. Estos tanques casi siempre son de polietileno.",
+   "action": "he stands between the tank and the wall, pressing his palm flat against the black tank. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S2_04",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S2_04.wav",
+   "text": "Es un plástico ceroso, resbaloso, al que casi nada se le pega. Por eso lo usan para guardar agua.",
+   "action": "he rubs his fingertips on the tank surface and shows them to the camera, frowning. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S2_05",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S2_05.wav",
+   "text": "El pegamento queda apoyado encima, pero no se agarra.",
+   "action": "he mimes laying something on the tank surface with flat fingers, then lifting it off. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S2_06",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S2_06.wav",
+   "text": "Y el agua empuja desde adentro con todo su peso, todo el día.",
+   "action": "he pushes outward from inside an imaginary tank with both hands, then shakes his head. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S2_07",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S2_07.wav",
+   "text": "Y encima el sol lo calienta de día y lo enfría de noche, y el plástico se mueve.",
+   "action": "he points up at the sky and then to the tank, squinting in the daylight. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S2_08",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S2_08.wav",
+   "text": "Un pegamento que no se agarró se despega con muy poquito.",
+   "action": "he pinches the air between two fingers, showing a tiny gap. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S2_09",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S2_09.wav",
+   "text": "Por eso no pegamos nada. Hacemos que el propio tanque se cierre.",
+   "action": "he leans on the tank looking at the neighbour, friendly. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S2_10",
+   "a": "V2a",
+   "b": "V2b",
+   "secs": 6,
+   "line": "¿Y cómo se cierra solo un tanque? ¿Le rezas?",
+   "text": "¿Y cómo se cierra solo un tanque? ¿Le rezas?",
+   "who": "the neighbour, a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "V"
+   ],
+   "action": "the neighbour lifts his eyebrows and points at the tank with his cup, sceptical grin. The presenter, if visible, listens in silence."
+  },
+  {
+   "id": "S2_11",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S2_11.wav",
+   "text": "Casi. Lo derrites. Pero con un detalle que decide todo: tiene que ser el mismo plástico. Vamos al taller.",
+   "action": "he laughs and turns to the camera, taking a step toward the workshop door. He speaks naturally to the friend holding the camera, with small natural gestures."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S2/vlog_S2.mp4"
+}

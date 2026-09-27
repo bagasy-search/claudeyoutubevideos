@@ -1,0 +1,238 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S7B/",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K1.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbtanque/public/img/tfbtanque/lamina_0.png"
+ },
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "prev_box": "384x216",
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place as the first image, same objects, same light. The tank is lying on its side on the blanket, empty; on its upper side a thin irregular hairline crack about a hand long, with one small round black marker dot just beyond each end of the crack (no other marks). He kneels next to it. He is at the start of this moment: he kneels by the black tank lying on its side on the blanket, the marked crack facing up. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. Light of this place: flat overcast daylight from the open sky over the patio, soft and even; the wall facing the sky a little brighter, the corner under the eave dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he kneels by the black tank lying on its side on the blanket, the marked crack facing up. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he tilts the tank a little with both hands so the last water runs out of the open lid. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he rubs the crack area with a dry rag, then fans it with the rag. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D1a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: a hand pours alcohol onto a folded white cloth. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D1b",
+   "from": [
+    "D1a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the cloth wipes along the crack, leaving a clean damp streak on the dull black plastic. No face in the frame."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he points at the dull greyish surface around the crack, then at a darker scraped patch. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D2a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: the back of a cutter blade scrapes the grey surface in short strokes, black plastic shavings curling off. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D2b",
+   "from": [
+    "D2a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: a satiny dark black area two fingers wide all around the crack. No face in the frame."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he taps the end of the crack with a fingernail, looking closely. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he draws a line in the air continuing the crack with his finger. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he shows a thin drill bit to the camera between two fingers. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he fits the thin bit into a cordless drill and sets the drill speed low, careful. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D3a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: the tip of a thin drill bit is set a few millimetres past the upper end of the crack. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D3b",
+   "from": [
+    "D3a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the bit goes through, a round hole just beyond the end of the crack, shavings around. No face in the frame."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he blows the shavings away and runs his fingertip over the hole. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  }
+ ],
+ "clips": [
+  {
+   "id": "S7B_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_01.wav",
+   "text": "Ahora sí, paso uno: vaciarlo hasta que el agua quede por debajo de la grieta.",
+   "action": "he kneels by the black tank lying on its side on the blanket, the marked crack facing up. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S7B_02",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_02.wav",
+   "text": "No hace falta vaciarlo entero si la grieta está arriba. Pero tiene que quedar seca y sin presión.",
+   "action": "he tilts the tank a little with both hands so the last water runs out of the open lid. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S7B_03",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_03.wav",
+   "text": "Seco con un trapo, y le doy unos minutos al sol. Una gota atrapada adentro hierve con el calor y te deja un poro.",
+   "action": "he rubs the crack area with a dry rag, then fans it with the rag. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S7B_04",
+   "a": "D1a",
+   "b": "D1b",
+   "detail": true,
+   "text": "Limpio con alcohol isopropílico. Nada de detergente, que deja una película.",
+   "d1": "close view: a hand pours alcohol onto a folded white cloth",
+   "d2": "the cloth wipes along the crack, leaving a clean damp streak on the dull black plastic",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_04.wav"
+  },
+  {
+   "id": "S7B_05",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_05.wav",
+   "text": "Fíjate en este color gris opaco. Es la piel que quemó el sol. Esa capa no se funde bien.",
+   "action": "he points at the dull greyish surface around the crack, then at a darker scraped patch. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S7B_06",
+   "a": "D2a",
+   "b": "D2b",
+   "detail": true,
+   "text": "La raspo con el lomo del cúter hasta que aparece el negro sano, un par de dedos alrededor de la grieta.",
+   "d1": "close view: the back of a cutter blade scrapes the grey surface in short strokes, black plastic shavings curling off",
+   "d2": "a satiny dark black area two fingers wide all around the crack",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_06.wav"
+  },
+  {
+   "id": "S7B_07",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_07.wav",
+   "text": "Ahora, lo que casi nadie hace. Mira la punta de la grieta.",
+   "action": "he taps the end of the crack with a fingernail, looking closely. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S7B_08",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_08.wav",
+   "text": "Con cada llenado, el peso del agua empuja, y la grieta sigue avanzando por la punta.",
+   "action": "he draws a line in the air continuing the crack with his finger. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S7B_09",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_09.wav",
+   "text": "Por eso, en cada punta, un agujerito de tres milímetros.",
+   "action": "he shows a thin drill bit to the camera between two fingers. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S7B_10",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_10.wav",
+   "text": "Con el taladro despacio y sin apretar, porque la broca en el plástico se engancha y te lo raja más.",
+   "action": "he fits the thin bit into a cordless drill and sets the drill speed low, careful. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S7B_11",
+   "a": "D3a",
+   "b": "D3b",
+   "detail": true,
+   "text": "Un poquito más allá de donde termina, para agarrarla entera.",
+   "d1": "close view: the tip of a thin drill bit is set a few millimetres past the upper end of the crack",
+   "d2": "the bit goes through, a round hole just beyond the end of the crack, shavings around",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_11.wav"
+  },
+  {
+   "id": "S7B_12",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S7B_12.wav",
+   "text": "El agujero redondo reparte la fuerza, y la grieta se frena ahí. Después se rellena con plástico, no queda abierto.",
+   "action": "he blows the shavings away and runs his fingertip over the hole. He speaks naturally to the friend holding the camera, with small natural gestures."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S7B/vlog_S7B.mp4"
+}

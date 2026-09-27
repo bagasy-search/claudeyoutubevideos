@@ -1,0 +1,294 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S13/",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K2.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbtanque/public/img/tfbtanque/lamina_0.png"
+ },
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "prev_box": "384x216",
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place as the first image, same objects, same light. He stands at the workbench; on it lies a flat black plastic scrap the size of a book with three different things stuck on it side by side: a thick rounded bead of light-grey silicone sealant, a round translucent amber blob of hardened epoxy glue, and a short strip of shiny silver duct tape. He is at the start of this moment: he lays out on the workbench a black plastic scrap with three strips stuck on it: a bead of grey silicone, a blob of epoxy and a strip of duct tape. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. Light of this place: grey daylight coming in through the wide-open garage door on the left, plus one plain fluorescent tube on the ceiling; the side near the door brighter and cooler, the back corners dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he lays out on the workbench a black plastic scrap with three strips stuck on it: a bead of grey silicone, a blob of epoxy and a strip of duct tape. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D1a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: fingers pinch the edge of the grey silicone bead on the black plastic. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D1b",
+   "from": [
+    "D1a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the whole bead peels off in one clean piece, the plastic under it clean and shiny. No face in the frame."
+  },
+  {
+   "id": "D2a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: a screwdriver tip pries under the edge of the epoxy blob. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D2b",
+   "from": [
+    "D2a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the epoxy pops off in one piece, leaving a clean mark. No face in the frame."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he pulls the tape off in one move and shows the clean scrap to the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he picks up a small plastic dropper bottle of water, holding the scrap flat. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D3a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: a drop of water falls from a dropper onto the flat black polyethylene scrap. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D3b",
+   "from": [
+    "D3a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the water sits as a round bead that does not spread. No face in the frame."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he tilts the scrap slightly and the bead rolls, he follows it with his eyes, then looks at the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he holds up the welded test piece he practised on and pulls it hard with both hands. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D4a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: two hands bend and pull the welded black plastic test piece. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D4b",
+   "from": [
+    "D4a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the plastic tears beside the weld, the welded seam itself intact. No face in the frame."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he puts the torn piece down on the bench, pointing at it. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "V1a",
+   "from": [
+    "K0",
+    "V"
+   ],
+   "prompt": "Same place and light as the first image, reverse angle toward the neighbour: the neighbour appears in the doorway of the garage, holding the dry paper towel from the tank, looking at the torn piece and sighing. He is at the start of his line, mouth closed. The presenter is visible only from behind or at the edge of the frame.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "V1b",
+   "from": [
+    "V1a",
+    "V"
+   ],
+   "prompt": "Same photo, same framing, a few seconds later: the neighbour finishes talking, mouth closed, same pose and expression.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he laughs and hands the iron toward the neighbour, then turns to the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is halfway through this action: he points down at the bottom of the frame, warm. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he points down at the bottom of the frame, warm. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  }
+ ],
+ "clips": [
+  {
+   "id": "S13_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_01.wav",
+   "text": "Esto lo preparé hace tres días. Un pedazo del mismo tanque, con silicona, con epoxi y con cinta, bien secos.",
+   "action": "he lays out on the workbench a black plastic scrap with three strips stuck on it: a bead of grey silicone, a blob of epoxy and a strip of duct tape. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S13_02",
+   "a": "D1a",
+   "b": "D1b",
+   "detail": true,
+   "text": "La silicona sale entera, de una tira.",
+   "d1": "close view: fingers pinch the edge of the grey silicone bead on the black plastic",
+   "d2": "the whole bead peels off in one clean piece, the plastic under it clean and shiny",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_02.wav"
+  },
+  {
+   "id": "S13_03",
+   "a": "D2a",
+   "b": "D2b",
+   "detail": true,
+   "text": "El epoxi salta de una pieza, con un destornillador.",
+   "d1": "close view: a screwdriver tip pries under the edge of the epoxy blob",
+   "d2": "the epoxy pops off in one piece, leaving a clean mark",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_03.wav"
+  },
+  {
+   "id": "S13_04",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_04.wav",
+   "text": "Y la cinta ni hablar. Fíjate que abajo el plástico queda limpio. Nunca se agarraron.",
+   "action": "he pulls the tape off in one move and shows the clean scrap to the camera. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S13_05",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_05.wav",
+   "text": "Y ahora, lo que te prometí: una gota de agua.",
+   "action": "he picks up a small plastic dropper bottle of water, holding the scrap flat. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S13_06",
+   "a": "D3a",
+   "b": "D3b",
+   "detail": true,
+   "text": "Mira cómo queda. No se desparrama. Queda hecha una bolita.",
+   "d1": "close view: a drop of water falls from a dropper onto the flat black polyethylene scrap",
+   "d2": "the water sits as a round bead that does not spread",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_06.wav"
+  },
+  {
+   "id": "S13_07",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_07.wav",
+   "text": "El agua ni siquiera lo moja. Si el agua no lo moja, imagínate un pegamento.",
+   "action": "he tilts the scrap slightly and the bead rolls, he follows it with his eyes, then looks at the camera. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S13_08",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_08.wav",
+   "text": "En cambio, esta es la pieza que soldé practicando. Tiro con todo…",
+   "action": "he holds up the welded test piece he practised on and pulls it hard with both hands. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S13_09",
+   "a": "D4a",
+   "b": "D4b",
+   "detail": true,
+   "text": "…y se rompe el plástico al costado. La costura aguanta.",
+   "d1": "close view: two hands bend and pull the welded black plastic test piece",
+   "d2": "the plastic tears beside the weld, the welded seam itself intact",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_09.wav"
+  },
+  {
+   "id": "S13_10",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_10.wav",
+   "text": "Por eso el pegamento falla y esto no. Esto no está pegado: es el mismo plástico, otra vez de una sola pieza.",
+   "action": "he puts the torn piece down on the bench, pointing at it. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S13_11",
+   "a": "V1a",
+   "b": "V1b",
+   "secs": 6,
+   "line": "Bueno. Me callo. ¿Me prestas el soldador para el mío?",
+   "text": "Bueno. Me callo. ¿Me prestas el soldador para el mío?",
+   "who": "the neighbour, a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "V"
+   ],
+   "action": "the neighbour appears in the doorway of the garage, holding the dry paper towel from the tank, looking at the torn piece and sighing. The presenter, if visible, listens in silence."
+  },
+  {
+   "id": "S13_12",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_12.wav",
+   "text": "Así me gusta. Y tú, si tienes el tanque rajado, ya sabes: mismo plástico, agujeritos, malla, y paciencia.",
+   "action": "he laughs and hands the iron toward the neighbour, then turns to the camera. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S13_13a",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_13a.wav",
+   "text": "La hoja y la guía con los arreglos del agua de la casa, en el enlace de abajo.",
+   "action": "he points down at the bottom of the frame, warm. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S13_13b",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S13_13b.wav",
+   "text": "Cuéntame en los comentarios de qué es tu tanque y dónde se rajó.",
+   "action": "he points down at the bottom of the frame, warm. He speaks naturally to the friend holding the camera, with small natural gestures."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S13/vlog_S13.mp4"
+}

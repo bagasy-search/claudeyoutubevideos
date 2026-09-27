@@ -1,0 +1,152 @@
+[
+ {
+  "seg": "S0",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S0.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S0/vlog_S0.mp4"
+ },
+ {
+  "seg": "S1",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S1.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/vlog_S1.mp4"
+ },
+ {
+  "seg": "S2",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S2.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S2/vlog_S2.mp4"
+ },
+ {
+  "seg": "S3",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S3.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/vlog_S3.mp4"
+ },
+ {
+  "seg": "S4",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S4.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S4/vlog_S4.mp4"
+ },
+ {
+  "seg": "S5",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S5.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S5/vlog_S5.mp4"
+ },
+ {
+  "seg": "S6",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S6.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S6/vlog_S6.mp4"
+ },
+ {
+  "seg": "LAMINA",
+  "type": "lamina",
+  "tramos": [
+   {
+    "id": "S6_02a",
+    "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S6_02a.wav",
+    "len": 7.04,
+    "text": "Aquí tienes el arreglo entero en una hoja. Arriba, antes de empezar: vaciar por debajo de la grieta,"
+   },
+   {
+    "id": "S6_02b",
+    "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S6_02b.wav",
+    "len": 4.7,
+    "text": "secar, limpiar con alcohol y raspar la capa quemada por el sol."
+   },
+   {
+    "id": "S6_03",
+    "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S6_03.wav",
+    "len": 7.99,
+    "text": "Después, los agujeritos de tres milímetros en las dos puntas, y la grieta abierta en V, hasta la mitad del espesor de la pared."
+   },
+   {
+    "id": "S6_04a",
+    "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S6_04a.wav",
+    "len": 5.12,
+    "text": "La malla se corta dos centímetros más grande que la grieta por cada lado,"
+   },
+   {
+    "id": "S6_04b",
+    "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S6_04b.wav",
+    "len": 4.77,
+    "text": "se hunde con calor, y se tapa con una capa de plástico del mismo número."
+   },
+   {
+    "id": "S6_05",
+    "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S6_05.wav",
+    "len": 7.435,
+    "text": "Por dentro, una sola capa de plástico limpio, sin malla. Y el tiempo de enfriado: media hora, sin agua."
+   },
+   {
+    "id": "S6_06",
+    "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S6_06.wav",
+    "len": 7.465,
+    "text": "Y abajo, los tres errores que arruinan el arreglo. Sácale una captura, o pausa el video y guárdala."
+   }
+  ]
+ },
+ {
+  "seg": "S6b",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S6b.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S6b/vlog_S6b.mp4"
+ },
+ {
+  "seg": "S7",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S7.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S7/vlog_S7.mp4"
+ },
+ {
+  "seg": "S7B",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S7B.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S7B/vlog_S7B.mp4"
+ },
+ {
+  "seg": "S8",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S8.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S8/vlog_S8.mp4"
+ },
+ {
+  "seg": "S9",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S9.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S9/vlog_S9.mp4"
+ },
+ {
+  "seg": "S10",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S10.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S10/vlog_S10.mp4"
+ },
+ {
+  "seg": "S11",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S11.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S11/vlog_S11.mp4"
+ },
+ {
+  "seg": "S11B",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S11B.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S11B/vlog_S11B.mp4"
+ },
+ {
+  "seg": "S12",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S12.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/vlog_S12.mp4"
+ },
+ {
+  "seg": "S13",
+  "type": "scene",
+  "plan": "D:/Proyectos/video2-wt/tfbtanque/vlog/tfbtanque/plans/S13.json",
+  "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S13/vlog_S13.mp4"
+ }
+]

@@ -1,0 +1,388 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S0/",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K0.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbtanque/public/img/tfbtanque/lamina_0.png"
+ },
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "prev_box": "384x216",
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place as the first image, same objects, same light. The tank is standing on its concrete base, leaking a hard jet of water from the crack. He stands next to the tank turned toward the leak. He is at the start of this moment: he turns from the leaking tank toward the camera with a tired half smile, water still spurting behind him. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. Light of this place: flat overcast daylight from the open sky over the patio, soft and even; the wall facing the sky a little brighter, the corner under the eave dimmer."
+  },
+  {
+   "id": "D1a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: a hard thin jet of water shoots sideways out of a short vertical crack in the ribbed black plastic tank and splashes on the concrete; a dusty index finger comes in from the right and points at the crack. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D1b",
+   "from": [
+    "D1a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the finger is right beside the crack, the jet still shooting past it. No face in the frame."
+  },
+  {
+   "id": "V1a",
+   "from": [
+    "K0",
+    "V"
+   ],
+   "prompt": "Same place and light as the first image, reverse angle toward the neighbour: the neighbour leans on the low wall shaking his head, flicking his hand dismissively at the tank. He is at the start of his line, mouth closed. The presenter is visible only from behind or at the edge of the frame.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "V1b",
+   "from": [
+    "V1a",
+    "V"
+   ],
+   "prompt": "Same photo, same framing, a few seconds later: the neighbour finishes talking, mouth closed, same pose and expression.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he turns from the leaking tank toward the camera with a tired half smile, water still spurting behind him. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he knocks twice on the tank beside the crack with his knuckles and looks straight at the camera, sure of himself. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D2a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view of the bottom edge of the black tank: a small raised recycling triangle moulded in the plastic, half covered in dust; a thumb starts wiping it. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D2b",
+   "from": [
+    "D2a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the triangle is clean, a number 2 inside it and the letters PE under it, the thumb resting beside it. No face in the frame."
+  },
+  {
+   "id": "D3a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view of the tip of the crack in the black plastic: a cordless drill with a thin bit touches the exact end of the crack. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D3b",
+   "from": [
+    "D3a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the bit has gone through: a small clean round hole at the very end of the crack, curly black shavings on the surface. No face in the frame."
+  },
+  {
+   "id": "D4a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view, the tank now empty and completely dry, no water anywhere: the flat hot tip of a soldering iron presses a small square of metal mosquito mesh onto the crack, a thin wisp of white smoke rising. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D4b",
+   "from": [
+    "D4a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the mesh is half sunk into shiny melted black plastic. No face in the frame."
+  },
+  {
+   "id": "D5a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view, the tank empty and completely dry, no water anywhere: a strip of black plastic is fed under the hot tip and melts over the sunken mesh. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D5b",
+   "from": [
+    "D5a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the mesh has vanished under a raised ridge of glossy melted black plastic. No face in the frame."
+  },
+  {
+   "id": "D6a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view, the tank empty and dry: the hot flat tip slowly smooths the ridge of melted plastic with long strokes. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D6b",
+   "from": [
+    "D6a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the patch is smooth and even, one piece with the tank wall. No face in the frame."
+  },
+  {
+   "id": "K3s",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing, some time later: the tank is standing again and full, no leak; he crouches beside the patch and runs his thumb over it, then looks up at the camera; this is the moment just before, he is about to start the movement. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: later: the tank is standing again and full, no leak; he crouches beside the patch and runs his thumb over it, then looks up at the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D7a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view of the patched spot on the full black tank, no leak and no water jet at all, the surface dry; a folded sheet of dry white paper towel is taped just under the patch. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D7b",
+   "from": [
+    "D7a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: same view, the paper towel still perfectly dry, a finger presses it to show it is dry. No face in the frame."
+  },
+  {
+   "id": "K4s",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing, some time later: the tank stands on its base full and patched, a smooth black patch where the crack was, no leak, the floor dry; he stands beside it and knocks on it proudly, looking at the camera with raised eyebrows, looking at the camera with raised eyebrows; this is the moment just before, he is about to start the movement. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: later: the tank stands on its base full and patched, a smooth black patch where the crack was, no leak, the floor dry; he stands beside it and knocks on it proudly, looking at the camera with raised eyebrows, looking at the camera with raised eyebrows. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "V2a",
+   "from": [
+    "K0",
+    "V"
+   ],
+   "prompt": "Same place and light as the first image, reverse angle toward the neighbour: the neighbour, now standing next to the tank, bends down and squints at the patch suspiciously, adjusting the glasses hanging on his cord. He is at the start of his line, mouth closed. The presenter is visible only from behind or at the edge of the frame.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "V2b",
+   "from": [
+    "V2a",
+    "V"
+   ],
+   "prompt": "Same photo, same framing, a few seconds later: the neighbour finishes talking, mouth closed, same pose and expression.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: next to the patched tank (no leak, dry floor) he points off to the side with his chin, amused, then turns to the camera lowering his voice. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is halfway through this action: next to the patched tank (no leak, dry floor) he holds up three fingers counting, serious, looking at the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: next to the patched tank (no leak, dry floor) he holds up three fingers counting, serious, looking at the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  }
+ ],
+ "clips": [
+  {
+   "id": "S0_01",
+   "a": "D1a",
+   "b": "D1b",
+   "detail": true,
+   "text": "",
+   "d1": "a hard thin jet of water shoots sideways out of a short vertical crack in the ribbed black plastic tank and splashes on the concrete; a dusty index finger comes in from the right and points at the crack",
+   "d2": "the finger is right beside the crack, the jet still shooting past it",
+   "secs": 4,
+   "show": 3.0,
+   "sound": "the loud hiss and splash of the water jet hitting the concrete"
+  },
+  {
+   "id": "S0_02",
+   "a": "V1a",
+   "b": "V1b",
+   "secs": 6,
+   "line": "Eso no tiene arreglo, cómprate otro tanque.",
+   "text": "Eso no tiene arreglo, cómprate otro tanque.",
+   "who": "the neighbour, a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "V"
+   ],
+   "action": "the neighbour leans on the low wall shaking his head, flicking his hand dismissively at the tank. The presenter, if visible, listens in silence."
+  },
+  {
+   "id": "S0_03",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_03.wav",
+   "text": "Un tanque nuevo sale una fortuna.",
+   "action": "he turns from the leaking tank toward the camera with a tired half smile, water still spurting behind him. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S0_04",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_04.wav",
+   "text": "Y esto se arregla con menos de dos dólares en materiales, sin soldar metal y sin una gota de pegamento.",
+   "action": "he knocks twice on the tank beside the crack with his knuckles and looks straight at the camera, sure of himself. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S0_05",
+   "a": "D2a",
+   "b": "D2b",
+   "detail": true,
+   "text": "Este símbolo te dice qué plástico es.",
+   "d1": "close view of the bottom edge of the black tank: a small raised recycling triangle moulded in the plastic, half covered in dust; a thumb starts wiping it",
+   "d2": "the triangle is clean, a number 2 inside it and the letters PE under it, the thumb resting beside it",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_05.wav"
+  },
+  {
+   "id": "S0_06",
+   "a": "D3a",
+   "b": "D3b",
+   "detail": true,
+   "text": "Dos agujeritos en las puntas, para que la grieta no siga caminando.",
+   "d1": "close view of the tip of the crack in the black plastic: a cordless drill with a thin bit touches the exact end of the crack",
+   "d2": "the bit has gone through: a small clean round hole at the very end of the crack, curly black shavings on the surface",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_06.wav"
+  },
+  {
+   "id": "S0_07",
+   "a": "D4a",
+   "b": "D4b",
+   "detail": true,
+   "text": "Un pedazo de malla metálica, que se hunde…",
+   "d1": "close view, the tank now empty and completely dry, no water anywhere: the flat hot tip of a soldering iron presses a small square of metal mosquito mesh onto the crack, a thin wisp of white smoke rising",
+   "d2": "the mesh is half sunk into shiny melted black plastic",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_07.wav"
+  },
+  {
+   "id": "S0_08",
+   "a": "D5a",
+   "b": "D5b",
+   "detail": true,
+   "text": "…en el mismo plástico derretido.",
+   "d1": "close view, the tank empty and completely dry, no water anywhere: a strip of black plastic is fed under the hot tip and melts over the sunken mesh",
+   "d2": "the mesh has vanished under a raised ridge of glossy melted black plastic",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_08.wav"
+  },
+  {
+   "id": "S0_09",
+   "a": "D6a",
+   "b": "D6b",
+   "detail": true,
+   "text": "Se alisa, y queda de una sola pieza con el tanque.",
+   "d1": "close view, the tank empty and dry: the hot flat tip slowly smooths the ridge of melted plastic with long strokes",
+   "d2": "the patch is smooth and even, one piece with the tank wall",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_09.wav"
+  },
+  {
+   "id": "S0_10",
+   "a": "K3s",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_10.wav",
+   "text": "Por fuera, y también por dentro.",
+   "action": "the tank is standing again and full, no leak; he crouches beside the patch and runs his thumb over it, then looks up at the camera. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S0_11",
+   "a": "D7a",
+   "b": "D7b",
+   "detail": true,
+   "text": "Lo lleno hasta arriba, lo dejo un día entero…",
+   "d1": "close view of the patched spot on the full black tank, no leak and no water jet at all, the surface dry; a folded sheet of dry white paper towel is taped just under the patch",
+   "d2": "same view, the paper towel still perfectly dry, a finger presses it to show it is dry",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_11.wav"
+  },
+  {
+   "id": "S0_12",
+   "a": "K4s",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_12.wav",
+   "text": "…y ni una gota.",
+   "action": "the tank stands on its base full and patched, a smooth black patch where the crack was, no leak, the floor dry; he stands beside it and knocks on it proudly, looking at the camera with raised eyebrows, looking at the camera with raised eyebrows. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S0_13",
+   "a": "V2a",
+   "b": "V2b",
+   "secs": 6,
+   "line": "A ver, a ver… eso con el sol se despega en una semana.",
+   "text": "A ver, a ver… eso con el sol se despega en una semana.",
+   "who": "the neighbour, a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "V"
+   ],
+   "action": "the neighbour, now standing next to the tank, bends down and squints at the patch suspiciously, adjusting the glasses hanging on his cord. The presenter, if visible, listens in silence."
+  },
+  {
+   "id": "S0_14",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_14.wav",
+   "text": "Eso dicen todos. Pero quédate hasta el final,",
+   "action": "next to the patched tank (no leak, dry floor) he points off to the side with his chin, amused, then turns to the camera lowering his voice. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S0_15a",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_15a.wav",
+   "text": "porque te voy a mostrar por qué el pegamento,",
+   "action": "next to the patched tank (no leak, dry floor) he holds up three fingers counting, serious, looking at the camera. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S0_15b",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S0_15b.wav",
+   "text": "la silicona y la cinta nunca funcionan en estos tanques. Con una sola gota de agua.",
+   "action": "next to the patched tank (no leak, dry floor) he holds up three fingers counting, serious, looking at the camera. He speaks naturally to the friend holding the camera, with small natural gestures."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S0/vlog_S0.mp4"
+}

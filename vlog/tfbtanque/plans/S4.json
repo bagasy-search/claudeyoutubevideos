@@ -1,0 +1,160 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S4/",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K2.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbtanque/public/img/tfbtanque/lamina_0.png"
+ },
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "prev_box": "384x216",
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place as the first image, same objects, same light. He stands at the workbench, with long white plastic strips cut from a jug lying on the bench. He is at the start of this moment: he stands at the workbench, one hand flat on the bench, looking at the camera, grave. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. Light of this place: grey daylight coming in through the wide-open garage door on the left, plus one plain fluorescent tube on the ceiling; the side near the door brighter and cooler, the back corners dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he stands at the workbench, one hand flat on the bench, looking at the camera, grave. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he holds a white strip in one hand and a greasy oil container in the other, weighing them. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he puts the oil container away under the bench, shaking his head. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he holds up a small square of metal mesh next to his face. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he sits on a stool by the bench, elbows on his knees, telling a story. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he counts on his fingers, amused. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he opens his hand wide, as if something fell apart. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he smiles and nods, pointing at the white strips on the bench. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he taps the bench twice, looking at the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  }
+ ],
+ "clips": [
+  {
+   "id": "S4_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S4_01.wav",
+   "text": "Y ojo con esto, que es agua para tomar.",
+   "action": "he stands at the workbench, one hand flat on the bench, looking at the camera, grave. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S4_02",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S4_02.wav",
+   "text": "Para la capa de adentro, la que toca el agua, usa solo plástico limpio de un envase de agua o de comida.",
+   "action": "he holds a white strip in one hand and a greasy oil container in the other, weighing them. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S4_03",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S4_03.wav",
+   "text": "Nada de envases de aceite de motor, de químicos, ni de cloro.",
+   "action": "he puts the oil container away under the bench, shaking his head. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S4_04",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S4_04.wav",
+   "text": "Y la malla metálica va solo por fuera. Adentro no va nada de metal.",
+   "action": "he holds up a small square of metal mesh next to his face. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S4_05",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S4_05.wav",
+   "text": "Me escribió Ramón, de Barquisimeto, en Venezuela. Le había puesto pegamento especial a su tanque tres veces.",
+   "action": "he sits on a stool by the bench, elbows on his knees, telling a story. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S4_06",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S4_06.wav",
+   "text": "Tres veces goteó otra vez. Entonces se compró un cautín y lo soldó con tapitas.",
+   "action": "he counts on his fingers, amused. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S4_07",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S4_07.wav",
+   "text": "Aguantó dos semanas. Cuando le pregunté de qué eran las tapitas, fue a mirar: cinco. Polipropileno.",
+   "action": "he opens his hand wide, as if something fell apart. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S4_08",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S4_08.wav",
+   "text": "Lo rehízo con tiras de un bidón de agua. Me mandó la foto un mes después, seco.",
+   "action": "he smiles and nods, pointing at the white strips on the bench. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S4_09",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S4_09.wav",
+   "text": "No fue magia. Fue usar el plástico correcto.",
+   "action": "he taps the bench twice, looking at the camera. He speaks naturally to the friend holding the camera, with small natural gestures."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S4/vlog_S4.mp4"
+}

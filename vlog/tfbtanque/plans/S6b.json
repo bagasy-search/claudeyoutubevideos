@@ -1,0 +1,58 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S6b/",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K2.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbtanque/public/img/tfbtanque/lamina_0.png"
+ },
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "prev_box": "384x216",
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "LAM"
+   ],
+   "prompt": "Same place as the first image, same objects, same light. He stands at the workbench; a printed sheet of paper is pinned on the pegboard behind him. He is at the start of this moment: he folds the sheet and taps it against his palm, casual, looking at the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. Light of this place: grey daylight coming in through the wide-open garage door on the left, plus one plain fluorescent tube on the ceiling; the side near the door brighter and cooler, the back corners dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "LAM"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he folds the sheet and taps it against his palm, casual, looking at the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. The printed sheet in his hands is exactly the second input image: a cream-coloured reference card with a big brown title, numbered steps and a small diagram, seen at an angle, its text small."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0",
+    "LAM"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he points down, toward the bottom of the frame, relaxed. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. The printed sheet in his hands is exactly the second input image: a cream-coloured reference card with a big brown title, numbered steps and a small diagram, seen at an angle, its text small."
+  }
+ ],
+ "clips": [
+  {
+   "id": "S6_07",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S6_07.wav",
+   "text": "Esta hoja la armé con el mismo estilo que la guía del canal, donde tengo ordenados otros arreglos de agua de la casa.",
+   "action": "he folds the sheet and taps it against his palm, casual, looking at the camera. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S6_08",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S6_08.wav",
+   "text": "Si estás en el televisor, apunta la cámara de tu teléfono a este código. Si estás en el teléfono, el enlace está abajo.",
+   "action": "he points down, toward the bottom of the frame, relaxed. He speaks naturally to the friend holding the camera, with small natural gestures."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S6b/vlog_S6b.mp4"
+}

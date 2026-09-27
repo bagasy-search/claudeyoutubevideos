@@ -1,0 +1,208 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S8/",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K1.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbtanque/public/img/tfbtanque/lamina_0.png"
+ },
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "prev_box": "384x216",
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place as the first image, same objects, same light. The tank is lying on its side on the blanket; on its upper side the hand-long irregular crack has been scraped around (a satiny darker patch two fingers wide), with a tiny round drilled hole just beyond each end. He kneels next to it holding a pencil-type soldering iron with a flat tip, its cable running to the orange extension cord. He is at the start of this moment: he plugs in the soldering iron and waits holding it up, checking the tip, kneeling by the tank. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. Light of this place: flat overcast daylight from the open sky over the patio, soft and even; the wall facing the sky a little brighter, the corner under the eave dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he plugs in the soldering iron and waits holding it up, checking the tip, kneeling by the tank. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D1a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: the flat hot tip is set at the start of the crack, angled. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D1b",
+   "from": [
+    "D1a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the tip has travelled along the crack, leaving a neat V-shaped groove in the black plastic. No face in the frame."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he points into the groove with the back of a pen, explaining. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D2a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: a white plastic strip is held against the groove and the hot tip melts strip and groove edge together. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D2b",
+   "from": [
+    "D2a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: a glossy line of mixed melted plastic fills the first part of the groove. No face in the frame."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he works the iron back and forth in small circles, concentrated, the strip feeding in. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he stops and shows the tip with a small blob of plastic on it, explaining. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D3a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: the hot tip kneads the melted strip and the groove edges into each other with small circular movements. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D3b",
+   "from": [
+    "D3a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the groove is fully filled with a raised seam of melted plastic. No face in the frame."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he runs his thumbnail across the cooled seam, feeling it, then shows the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he points at an imaginary loose cord on the seam, shaking his head. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he lifts the iron and leans back, watching the seam, satisfied. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  }
+ ],
+ "clips": [
+  {
+   "id": "S8_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S8_01.wav",
+   "text": "Paso dos: el cautín bien caliente, unos minutos.",
+   "action": "he plugs in the soldering iron and waits holding it up, checking the tip, kneeling by the tank. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S8_02",
+   "a": "D1a",
+   "b": "D1b",
+   "detail": true,
+   "text": "Con la punta, abro la grieta en V, como una canaleta, hasta la mitad del espesor.",
+   "d1": "close view: the flat hot tip is set at the start of the crack, angled",
+   "d2": "the tip has travelled along the crack, leaving a neat V-shaped groove in the black plastic",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S8_02.wav"
+  },
+  {
+   "id": "S8_03",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S8_03.wav",
+   "text": "¿Por qué en V? Porque el relleno tiene que entrar hasta el fondo de la grieta, no quedar arriba como una curita.",
+   "action": "he points into the groove with the back of a pen, explaining. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S8_04",
+   "a": "D2a",
+   "b": "D2b",
+   "detail": true,
+   "text": "Ahora apoyo la tira y la derrito junto con los bordes del tanque, al mismo tiempo.",
+   "d1": "close view: a white plastic strip is held against the groove and the hot tip melts strip and groove edge together",
+   "d2": "a glossy line of mixed melted plastic fills the first part of the groove",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S8_04.wav"
+  },
+  {
+   "id": "S8_05",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S8_05.wav",
+   "text": "Esto es lo más importante: tienes que ver que el tanque también se derrite. Que se mezclen los dos.",
+   "action": "he works the iron back and forth in small circles, concentrated, the strip feeding in. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S8_06",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S8_06.wav",
+   "text": "Si solo derrites la tira encima, se enfría arriba del tanque, sin agarrarse. Es otro pegamento.",
+   "action": "he stops and shows the tip with a small blob of plastic on it, explaining. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S8_07",
+   "a": "D3a",
+   "b": "D3b",
+   "detail": true,
+   "text": "Amaso con la punta, como si mezclaras masa, hasta llenar toda la canaleta y los dos agujeritos.",
+   "d1": "close view: the hot tip kneads the melted strip and the groove edges into each other with small circular movements",
+   "d2": "the groove is fully filled with a raised seam of melted plastic",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S8_07.wav"
+  },
+  {
+   "id": "S8_08",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S8_08.wav",
+   "text": "¿Cómo sabes si quedó bien fundido? Cuando se enfría, pásale la uña. No tiene que haber una línea donde termina la tira y empieza el tanque.",
+   "action": "he runs his thumbnail across the cooled seam, feeling it, then shows the camera. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S8_09",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S8_09.wav",
+   "text": "Si ves la tira como un cordoncito apoyado, con bordes, no se fundió. Vuelve a pasar la punta, más lento.",
+   "action": "he points at an imaginary loose cord on the seam, shaking his head. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S8_10",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S8_10.wav",
+   "text": "Primera capa lista. Ahora viene la que le da la fuerza.",
+   "action": "he lifts the iron and leans back, watching the seam, satisfied. He speaks naturally to the friend holding the camera, with small natural gestures."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S8/vlog_S8.mp4"
+}

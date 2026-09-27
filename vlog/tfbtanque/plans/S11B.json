@@ -1,0 +1,268 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S11B/",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K0.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbtanque/public/img/tfbtanque/lamina_0.png"
+ },
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "prev_box": "384x216",
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place as the first image, same objects, same light. The tank is standing on its concrete base with a smooth black patch where the crack was, no leak at all, the floor dry. The neighbour is not in the frame. He is at the start of this moment: he pats the tank now standing back on its concrete base, the smooth black patch facing the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. Light of this place: flat overcast daylight from the open sky over the patio, soft and even; the wall facing the sky a little brighter, the corner under the eave dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he pats the tank now standing back on its concrete base, the smooth black patch facing the camera. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D1a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: a hand tapes a folded sheet of white paper towel just under the patch on the black tank. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D1b",
+   "from": [
+    "D1a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the paper towel is taped flat, clean and dry. No face in the frame."
+  },
+  {
+   "id": "D2a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: a garden hose pours into the top opening of the black tank. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D2b",
+   "from": [
+    "D2a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the water is near the top, hose still running. No face in the frame."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he turns off the hose tap and wipes his hands on his apron. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "V1a",
+   "from": [
+    "K0",
+    "V"
+   ],
+   "prompt": "Same place and light as the first image, reverse angle toward the neighbour: the neighbour leans over the low wall, pointing at the paper towel with his coffee cup, suspicious. He is at the start of his line, mouth closed. The presenter is visible only from behind or at the edge of the frame.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "V1b",
+   "from": [
+    "V1a",
+    "V"
+   ],
+   "prompt": "Same photo, same framing, a few seconds later: the neighbour finishes talking, mouth closed, same pose and expression.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he laughs, pointing at the neighbour and then at the paper. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D3a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view next morning: the same patch on the full black tank, the paper towel under it, early light. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D3b",
+   "from": [
+    "D3a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: a finger presses the paper towel: it is completely dry. No face in the frame."
+  },
+  {
+   "id": "V2a",
+   "from": [
+    "K0",
+    "V"
+   ],
+   "prompt": "Same place and light as the first image, reverse angle toward the neighbour: the neighbour, now standing next to the tank, touches the dry paper towel with two fingers, lips pushed out, grudgingly impressed. He is at the start of his line, mouth closed. The presenter is visible only from behind or at the edge of the frame.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "V2b",
+   "from": [
+    "V2a",
+    "V"
+   ],
+   "prompt": "Same photo, same framing, a few seconds later: the neighbour finishes talking, mouth closed, same pose and expression.  The neighbour is exactly the man of the second input image (copy his face): a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he nods with a patient smile, arms crossed. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is halfway through this action: he turns to the camera, hand resting on the tank, practical. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he turns to the camera, hand resting on the tank, practical. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he looks up at the sky shading his eyes, then at the tank. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  }
+ ],
+ "clips": [
+  {
+   "id": "S11B_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S11B_01.wav",
+   "text": "Lo paro en su lugar. Y ahora, la prueba que no se saltea.",
+   "action": "he pats the tank now standing back on its concrete base, the smooth black patch facing the camera. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S11B_02",
+   "a": "D1a",
+   "b": "D1b",
+   "detail": true,
+   "text": "Un papel seco pegado justo abajo del parche.",
+   "d1": "close view: a hand tapes a folded sheet of white paper towel just under the patch on the black tank",
+   "d2": "the paper towel is taped flat, clean and dry",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S11B_02.wav"
+  },
+  {
+   "id": "S11B_03",
+   "a": "D2a",
+   "b": "D2b",
+   "detail": true,
+   "text": "Lo lleno hasta arriba, para que la grieta aguante la presión más alta.",
+   "d1": "close view: a garden hose pours into the top opening of the black tank",
+   "d2": "the water is near the top, hose still running",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S11B_03.wav"
+  },
+  {
+   "id": "S11B_04",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S11B_04.wav",
+   "text": "Y lo dejo veinticuatro horas. Si hay una pérdida mínima, el papel te la marca, aunque no la veas.",
+   "action": "he turns off the hose tap and wipes his hands on his apron. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S11B_05",
+   "a": "V1a",
+   "b": "V1b",
+   "secs": 8,
+   "line": "¿Y el papelito ese para qué? ¿Para secar las lágrimas cuando se rompa?",
+   "text": "¿Y el papelito ese para qué? ¿Para secar las lágrimas cuando se rompa?",
+   "who": "the neighbour, a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "V"
+   ],
+   "action": "the neighbour leans over the low wall, pointing at the paper towel with his coffee cup, suspicious. The presenter, if visible, listens in silence."
+  },
+  {
+   "id": "S11B_06",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S11B_06.wav",
+   "text": "Para que mañana no me digas que no lo viste.",
+   "action": "he laughs, pointing at the neighbour and then at the paper. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S11B_07",
+   "a": "D3a",
+   "b": "D3b",
+   "detail": true,
+   "text": "Al otro día: papel seco. Ni una marca.",
+   "d1": "close view next morning: the same patch on the full black tank, the paper towel under it, early light",
+   "d2": "a finger presses the paper towel: it is completely dry",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S11B_07.wav"
+  },
+  {
+   "id": "S11B_08",
+   "a": "V2a",
+   "b": "V2b",
+   "secs": 6,
+   "line": "Mmm. Bueno. Está seco. Pero ya vas a ver en el verano.",
+   "text": "Mmm. Bueno. Está seco. Pero ya vas a ver en el verano.",
+   "who": "the neighbour, a heavy-set man about 65, bald on top with short grey hair on the sides, a thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "V"
+   ],
+   "action": "the neighbour, now standing next to the tank, touches the dry paper towel with two fingers, lips pushed out, grudgingly impressed. The presenter, if visible, listens in silence."
+  },
+  {
+   "id": "S11B_09",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S11B_09.wav",
+   "text": "El verano es justo lo que le va a probar. Te aviso.",
+   "action": "he nods with a patient smile, arms crossed. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S11B_10a",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S11B_10a.wav",
+   "text": "Y si el papel te sale húmedo, no es el fin.",
+   "action": "he turns to the camera, hand resting on the tank, practical. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S11B_10b",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S11B_10b.wav",
+   "text": "Vacías, raspas ese punto, y le das otra pasada de plástico. Casi siempre es un poro chiquito.",
+   "action": "he turns to the camera, hand resting on the tank, practical. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S11B_11",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S11B_11.wav",
+   "text": "Y si puedes, dale sombra: un techito, una lona. El sol es lo que más envejece estos tanques.",
+   "action": "he looks up at the sky shading his eyes, then at the tank. He speaks naturally to the friend holding the camera, with small natural gestures."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S11B/vlog_S11B.mp4"
+}

@@ -1,0 +1,34 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque.png",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "prev_box": "384x216",
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The place is the small backyard patio of a modest working-class house in Latin America: cracked grey concrete floor with old stains, a faded pale-yellow painted block wall with damp marks at the bottom, a chest-high low wall on the right that separates the neighbour's patio, with a potted geranium on top; a clothesline with two faded towels, a coiled green garden hose, a red plastic bucket, a wooden fruit crate with a few tools on it, the back door of the house half open. Against the back wall stands a cylindrical black ribbed plastic water tank about 1.2 m tall (horizontal ribs all around, a large round black screw lid on top, a small white outlet fitting near the bottom) on a low square concrete base; a hard thin jet of water shoots sideways out of a short vertical crack in the lower third of the tank and splashes on the concrete, a dark wet patch spreading on the floor. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. He stands beside the tank, half turned, looking down at the leak with one hand on his hip, frowning. Medium-wide shot, the whole tank and the low wall visible. Light of this place: flat overcast daylight from the open sky over the patio, soft and even; the wall facing the sky a little brighter, the corner under the eave dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same patio, same wall, same low wall, same objects, later the same day: the black tank has been emptied and is now lying on its side on an old folded grey blanket on the concrete floor in front of its empty concrete base, its round top opening facing left, the crack facing up; beside it, on the wooden fruit crate used as a small table, a soldering iron on a metal stand, a small roll of metal mosquito mesh, scissors, a rag, a small plastic bottle of alcohol and a cordless drill; an orange extension cord runs from the back door. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. He kneels on the blanket beside the tank looking at the crack. Light of this place: flat overcast daylight from the open sky over the patio, soft and even; the wall facing the sky a little brighter, the corner under the eave dimmer."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The place is a real, messy home garage-workshop in a working-class house in Latin America: concrete floor with old stains and dust, a long wooden workbench covered in tools, tins, rags and offcuts, a pegboard with hanging tools and a printed sheet pinned on it, stacked plastic buckets, a bicycle leaning on the wall, an old grey fibre-cement water tank standing in a corner, bare painted brick walls with damp patches, the wide garage door open to the street on the left. On the workbench: a broken piece of black plastic tank, a white plastic water jug, a glass jar full of coloured bottle caps, a soldering iron on a metal stand, a heat gun, a small roll of metal mesh. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. He stands at the workbench facing the camera, one hand resting on the bench. Medium shot from the waist up. Light of this place: grey daylight coming in through the wide-open garage door on the left, plus one plain fluorescent tube on the ceiling; the side near the door brighter and cooler, the back corners dimmer."
+  }
+ ],
+ "clips": [],
+ "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/sets.mp4"
+}

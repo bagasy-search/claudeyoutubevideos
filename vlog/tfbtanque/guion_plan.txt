@@ -1,0 +1,187 @@
+# tfbtanque — guion DIRIGIDO. Una línea = un tramo = un plano.
+# TIPO|ESCENA|ACCIÓN (inglés, lo que se ve)|TEXTO (lo que se oye)
+# T = él habla haciendo la acción (clip reference, su voz) · D = detalle keyframe (voz del máster encima, foley propio)
+# F = detalle SIN voz (suena su foley) · V = vecino habla (audio propio del clip, NO va al TTS) · L = lámina a pantalla completa
+# ---------------------------------------------------------------- S0 · GANCHO (patio, tanque parado perdiendo agua)
+F|S0|a hard thin jet of water shoots sideways out of a short vertical crack in the ribbed black plastic tank and splashes on the concrete; a dusty index finger comes in from the right and points at the crack >> the finger is right beside the crack, the jet still shooting past it|
+V|S0|the neighbour leans on the low wall shaking his head, flicking his hand dismissively at the tank|Eso no tiene arreglo, cómprate otro tanque.
+T|S0|he turns from the leaking tank toward the camera with a tired half smile, water still spurting behind him|Un tanque nuevo sale una fortuna.
+T|S0|he knocks twice on the tank beside the crack with his knuckles and looks straight at the camera, sure of himself|Y esto se arregla con menos de dos dólares en materiales, sin soldar metal y sin una gota de pegamento.
+D|S0|close view of the bottom edge of the black tank: a small raised recycling triangle moulded in the plastic, half covered in dust; a thumb starts wiping it >> the triangle is clean, a number 2 inside it and the letters PE under it, the thumb resting beside it|Este símbolo te dice qué plástico es.
+D|S0|close view of the tip of the crack in the black plastic: a cordless drill with a thin bit touches the exact end of the crack >> the bit has gone through: a small clean round hole at the very end of the crack, curly black shavings on the surface|Dos agujeritos en las puntas, para que la grieta no siga caminando.
+D|S0|close view, the tank now empty and completely dry, no water anywhere: the flat hot tip of a soldering iron presses a small square of metal mosquito mesh onto the crack, a thin wisp of white smoke rising >> the mesh is half sunk into shiny melted black plastic|Un pedazo de malla metálica, que se hunde…
+D|S0|close view, the tank empty and completely dry, no water anywhere: a strip of black plastic is fed under the hot tip and melts over the sunken mesh >> the mesh has vanished under a raised ridge of glossy melted black plastic|…en el mismo plástico derretido.
+D|S0|close view, the tank empty and dry: the hot flat tip slowly smooths the ridge of melted plastic with long strokes >> the patch is smooth and even, one piece with the tank wall|Se alisa, y queda de una sola pieza con el tanque.
+T|S0|later: the tank is standing again and full, no leak; he crouches beside the patch and runs his thumb over it, then looks up at the camera|Por fuera, y también por dentro.
+D|S0|close view of the patched spot on the full black tank, no leak and no water jet at all, the surface dry; a folded sheet of dry white paper towel is taped just under the patch >> same view, the paper towel still perfectly dry, a finger presses it to show it is dry|Lo lleno hasta arriba, lo dejo un día entero…
+T|S0|later: the tank stands on its base full and patched, a smooth black patch where the crack was, no leak, the floor dry; he stands beside it and knocks on it proudly, looking at the camera with raised eyebrows, looking at the camera with raised eyebrows|…y ni una gota.
+V|S0|the neighbour, now standing next to the tank, bends down and squints at the patch suspiciously, adjusting the glasses hanging on his cord|A ver, a ver… eso con el sol se despega en una semana.
+T|S0|next to the patched tank (no leak, dry floor) he points off to the side with his chin, amused, then turns to the camera lowering his voice|Eso dicen todos. Pero quédate hasta el final,
+T|S0|next to the patched tank (no leak, dry floor) he holds up three fingers counting, serious, looking at the camera|porque te voy a mostrar por qué el pegamento, la silicona y la cinta nunca funcionan en estos tanques. Con una sola gota de agua.
+# ---------------------------------------------------------------- S1 · EL ARREGLO COMPLETO EN UN MINUTO (patio, tanque acostado sobre una manta)
+T|S1|he kneels next to the empty black tank lying on its side on an old blanket, palms open toward the camera|Primero te muestro el arreglo completo, de corrido, y después vamos paso por paso con los trucos.
+D|S1|close view: the drain valve at the bottom of the tank is opened by a hand and water gushes into a red bucket >> the water is only a trickle now, the bucket half full|Vacío el tanque por debajo de la grieta.
+T|S1|he wipes the area around the crack with a rag, then holds up the rag to the camera|Seco bien, y limpio con alcohol, porque el plástico con tierra no se funde parejo.
+D|S1|close view: a hand scrapes the dull greyish surface around the crack with the back of a cutter blade >> the scraped area is darker and satiny black|Raspo la capa de afuera, la que quemó el sol, hasta que aparece el plástico sano.
+D|S1|close view: a thin drill bit touches the lower end of the crack >> a small round hole at the lower end of the crack, shavings around|Un agujerito de tres milímetros en cada punta.
+D|S1|close view: the hot flat tip of a soldering iron is dragged along the crack opening it into a shallow groove >> a clean V-shaped groove runs along the whole crack|Abro la grieta en V con la punta caliente.
+T|S1|he holds a long thin strip of black plastic up to the camera like a pencil, pleased|Y relleno con una tira del mismo plástico, derretida junto con el tanque.
+D|S1|close view: a square of metal mesh bigger than the crack is laid over the groove >> the mesh is pressed down into molten black plastic by the hot tip, almost disappearing|Encima, la malla, hundida con calor.
+D|S1|close view: melted strip plastic is spread over the mesh by the hot tip >> a smooth continuous black patch covers everything|Y otra capa de plástico que la tapa entera.
+T|S1|he leans half into the round opening of the lying tank, one arm inside, the soldering iron cable running in|Por dentro, lo mismo, pero sin malla: una capa de plástico solo.
+T|S1|he sits back on his heels next to the tank and wipes his forehead with the back of his wrist, looking at the camera|Lo dejo enfriar solo, sin mojarlo, media hora.
+D|S1|close view: a garden hose fills the standing black tank through the top opening, water rushing in >> the water level is high, the hose still pouring|Lo paro, lo lleno…
+T|S1|later: the tank stands upright again on its concrete base, full, with a smooth black patch; he stands beside it, arms crossed, nodding slowly at the camera|…y esa es la reparación completa. Ahora, lo que nadie te explica: por qué funciona, y dónde se arruina.
+# ---------------------------------------------------------------- S2 · EL VECINO Y EL PEGAMENTO (patio, tanque parado, vecino en la pared baja)
+V|S2|the neighbour rests both forearms on the low wall, holding a cup of coffee, doubtful frown|Yo al mío le puse ese pegamento especial para tanques, y a la semana goteaba igual.
+T|S2|he walks toward the low wall, nodding, pointing back at the tank with his thumb|Es lo que más me escriben. Le puse pegamento, le puse silicona, y a los pocos días volvió a gotear.
+T|S2|he stands between the tank and the wall, pressing his palm flat against the black tank|Y tiene una explicación. Estos tanques casi siempre son de polietileno.
+T|S2|he rubs his fingertips on the tank surface and shows them to the camera, frowning|Es un plástico ceroso, resbaloso, al que casi nada se le pega. Por eso lo usan para guardar agua.
+T|S2|he mimes laying something on the tank surface with flat fingers, then lifting it off|El pegamento queda apoyado encima, pero no se agarra.
+T|S2|he pushes outward from inside an imaginary tank with both hands, then shakes his head|Y el agua empuja desde adentro con todo su peso, todo el día.
+T|S2|he points up at the sky and then to the tank, squinting in the daylight|Y encima el sol lo calienta de día y lo enfría de noche, y el plástico se mueve.
+T|S2|he pinches the air between two fingers, showing a tiny gap|Un pegamento que no se agarró se despega con muy poquito.
+T|S2|he leans on the tank looking at the neighbour, friendly|Por eso no pegamos nada. Hacemos que el propio tanque se cierre.
+V|S2|the neighbour lifts his eyebrows and points at the tank with his cup, sceptical grin|¿Y cómo se cierra solo un tanque? ¿Le rezas?
+T|S2|he laughs and turns to the camera, taking a step toward the workshop door|Casi. Lo derrites. Pero con un detalle que decide todo: tiene que ser el mismo plástico. Vamos al taller.
+# ---------------------------------------------------------------- S3 · QUÉ PLÁSTICO ES (taller, banco)
+T|S3|he comes into the garage workshop and puts a broken piece of black plastic tank on the workbench, pointing at it|Este pedazo es de un tanque viejo que se partió. Y lo primero que tienes que buscar en el tuyo es esto.
+D|S3|close view: a finger slides along the moulded edge of the broken black plastic piece >> the finger stops on a small moulded triangle with a 2 inside and letters PE below|El triangulito de reciclaje. Suele estar en la base, cerca de la tapa o en la etiqueta del fabricante.
+T|S3|he holds the broken piece at eye level, tilting it to catch the light, reading|Si adentro dice dos, o cuatro, o las letras PE, es polietileno. Es lo más común en tanques de agua.
+T|S3|he puts the black piece down and knocks on an old grey cement water tank standing in the corner of the workshop|Y si tu tanque es de estos viejos, grises, de fibrocemento, esto no va. Esos pueden tener amianto: no se raspan ni se lijan. Se cambian.
+T|S3|he comes back to the bench and taps a hard, shiny, painted-looking fibreglass offcut|Y los de fibra de vidrio tampoco se derriten: se arreglan con resina, que es otro video. Esto es para los de plástico, que son la mayoría.
+T|S3|he picks up the broken black piece again and turns it over, searching the surface with his thumb|¿Y si no encuentras el símbolo? Busca la etiqueta o el nombre del fabricante. Casi todos los tanques de plástico para agua son de polietileno.
+T|S3|he puts the piece down and holds up a clear plastic bottle cap between two fingers|Si dice cinco, o PP, es polipropileno. Y aquí viene la trampa.
+T|S3|he tips a handful of coloured bottle caps from a jar onto the workbench|Mucha gente funde tapitas de refresco, porque lo vio en internet.
+T|S3|he picks up one cap, turns it over and shows the inside to the camera|Y muchas tapitas son de polipropileno. Mira: aquí dice cinco.
+T|S3|he presses two different plastic bits together with his fingers and pulls them apart easily, shrugging|El polietileno y el polipropileno se derriten juntos, parecen unidos, pero no se mezclan.
+T|S3|he taps the crack on the broken piece with the cap, serious|A los días, con la presión, el parche se suelta de una pieza. Y crees que el método no sirve.
+T|S3|he pushes the caps aside and picks up an old white plastic water jug from under the bench|Lo seguro es rellenar con plástico del mismo número.
+D|S3|close view: the bottom of an empty white plastic water jug with a moulded triangle and number 2 >> the jug turned, a cutter blade starting to cut a long strip from its side|Un bidón viejo de agua que diga dos te da tiras de sobra.
+T|S3|he pulls a long white strip cut from the jug and holds it up, bending it to show it is flexible|Lo corto en tiras de medio centímetro de ancho. Esas son mis varillas de relleno.
+T|S3|he lays the strips next to a black strip on the bench, comparing them with a finger|Si consigues tiras negras, de un tanque roto del mismo tipo, mejor todavía: queda del mismo color.
+# ---------------------------------------------------------------- S4 · AGUA POTABLE + LA HISTORIA (taller)
+T|S4|he stands at the workbench, one hand flat on the bench, looking at the camera, grave|Y ojo con esto, que es agua para tomar.
+T|S4|he holds a white strip in one hand and a greasy oil container in the other, weighing them|Para la capa de adentro, la que toca el agua, usa solo plástico limpio de un envase de agua o de comida.
+T|S4|he puts the oil container away under the bench, shaking his head|Nada de envases de aceite de motor, de químicos, ni de cloro.
+T|S4|he holds up a small square of metal mesh next to his face|Y la malla metálica va solo por fuera. Adentro no va nada de metal.
+T|S4|he sits on a stool by the bench, elbows on his knees, telling a story|Me escribió Ramón, de Barquisimeto, en Venezuela. Le había puesto pegamento especial a su tanque tres veces.
+T|S4|he counts on his fingers, amused|Tres veces goteó otra vez. Entonces se compró un cautín y lo soldó con tapitas.
+T|S4|he opens his hand wide, as if something fell apart|Aguantó dos semanas. Cuando le pregunté de qué eran las tapitas, fue a mirar: cinco. Polipropileno.
+T|S4|he smiles and nods, pointing at the white strips on the bench|Lo rehízo con tiras de un bidón de agua. Me mandó la foto un mes después, seco.
+T|S4|he taps the bench twice, looking at the camera|No fue magia. Fue usar el plástico correcto.
+# ---------------------------------------------------------------- S5 · LA HERRAMIENTA (taller)
+T|S5|he lifts a pencil-type soldering iron with a flat spade tip from its stand and shows it to the camera|Ahora, la herramienta. Esto es un cautín, un soldador de estaño común, de sesenta a cien vatios.
+D|S5|close view: the plain pointed tip of a soldering iron is unscrewed by gloved fingers >> a flat spade-shaped tip is screwed in its place|Le cambio la punta por una plana, tipo paleta, y esa punta queda solo para plástico.
+T|S5|he holds the iron in one hand and a hot air gun in the other, comparing them|Si no tienes cautín, sirve una pistola de calor, la de decapar. Es más lenta y calienta más alrededor.
+T|S5|he puts the heat gun down and points the iron at the camera like a pen, teaching|Con el cautín controlas mejor dónde derrites. Por eso lo prefiero.
+T|S5|he lines up on the bench a small piece of mesh, a small bottle of alcohol and a thin drill bit, counting them with a finger|Y los dos dólares son esto: un retazo de malla, un poco de alcohol y una broca fina. El plástico sale gratis de un bidón viejo.
+T|S5|he lifts the iron again, honest shrug|Si no tienes el cautín, esa es la única compra de verdad. Pero te queda para siempre, y con él arreglas baldes, sillas y cajones de plástico.
+T|S5|he turns a small dial on the soldering station base, watching the tip|Si el tuyo tiene perilla de temperatura, empieza bajo y ve subiendo de a poco, hasta que el plástico brille sin humear.
+T|S5|he holds up a cheap plastic lighter and a candle stub, then puts them away firmly|¿Y con un encendedor o una vela? No. El plástico se quema por arriba, se llena de hollín y queda crudo abajo. Y el hollín no deja que se mezcle.
+T|S5|he taps a scrap of black plastic on the bench with the iron, cable hanging|Antes de tocar el tanque, practica en un pedazo que no te importe.
+D|S5|close view: the hot flat tip touches the black scrap and the plastic around it turns glossy and soft >> the tip is pressed a bit too long: the plastic bubbles and a small hole appears, a thin plume of smoke|Si el plástico humea mucho o hace burbujas, está demasiado caliente. Así se agujerea.
+D|S5|close view: the tip moves slowly, making the surface glossy and wet-looking without bubbles >> a shallow smooth glossy puddle of plastic, no smoke|Tiene que ponerse brillante, como mojado, sin burbujas. Ese es el punto.
+T|S5|he walks to the wide-open garage door and points outside at the street and the open air|Y el humo del plástico no se respira. Hazlo al aire libre o con la puerta abierta, y aléjate de la cara.
+T|S5|he stands at the bench with his hands resting on it, speaking slowly and seriously|Si tu tanque está arriba, en el techo: lo vacías, escalera firme, y entre dos. Mejor bajarlo.
+# ---------------------------------------------------------------- S6 · LA LÁMINA (taller: toma una hoja)
+T|S6|he takes a printed sheet of paper from the pegboard shelf and holds it up toward the camera, serious|Presta muchísima atención a esta imagen, porque probablemente sea la parte más importante del video.
+L|S6|FULL-SCREEN LÁMINA (ficha)|Aquí tienes el arreglo entero en una hoja. Arriba, antes de empezar: vaciar por debajo de la grieta, secar, limpiar con alcohol y raspar la capa quemada por el sol.
+L|S6|zoom: pasos 1-3|Después, los agujeritos de tres milímetros en las dos puntas, y la grieta abierta en V, hasta la mitad del espesor de la pared.
+L|S6|zoom: malla y capas|La malla se corta dos centímetros más grande que la grieta por cada lado, se hunde con calor, y se tapa con una capa de plástico del mismo número.
+L|S6|zoom: por dentro|Por dentro, una sola capa de plástico limpio, sin malla. Y el tiempo de enfriado: media hora, sin agua.
+L|S6|zoom: los 3 errores|Y abajo, los tres errores que arruinan el arreglo. Sácale una captura, o pausa el video y guárdala.
+T|S6|he folds the sheet and taps it against his palm, casual, looking at the camera|Esta hoja la armé con el mismo estilo que la guía del canal, donde tengo ordenados otros arreglos de agua de la casa.
+T|S6|he points down, toward the bottom of the frame, relaxed|Si estás en el televisor, apunta la cámara de tu teléfono a este código. Si estás en el teléfono, el enlace está abajo.
+# ---------------------------------------------------------------- S7 · PREPARAR (patio, tanque acostado)
+T|S7|he stands by the full black tank on its base, holding a thick black marker, looking at the small leak|Vamos al tanque. Y antes de vaciarlo, un truco que te ahorra una segunda reparación.
+D|S7|close view: a thick marker draws a short line just past the visible end of the wet crack on the full black tank >> two marker lines frame the crack, a little beyond both of its ends|Con el tanque lleno, marco con un marcador dónde empieza y dónde termina la grieta, un poco más allá.
+T|S7|he caps the marker and taps the tank, explaining|Porque cuando lo vacías, la presión se va, la grieta se cierra, y la mitad ya no la ves. Siempre es más larga de lo que parece.
+T|S7B|he kneels by the black tank lying on its side on the blanket, the marked crack facing up|Ahora sí, paso uno: vaciarlo hasta que el agua quede por debajo de la grieta.
+T|S7B|he tilts the tank a little with both hands so the last water runs out of the open lid|No hace falta vaciarlo entero si la grieta está arriba. Pero tiene que quedar seca y sin presión.
+T|S7B|he rubs the crack area with a dry rag, then fans it with the rag|Seco con un trapo, y le doy unos minutos al sol. Una gota atrapada adentro hierve con el calor y te deja un poro.
+D|S7B|close view: a hand pours alcohol onto a folded white cloth >> the cloth wipes along the crack, leaving a clean damp streak on the dull black plastic|Limpio con alcohol isopropílico. Nada de detergente, que deja una película.
+T|S7B|he points at the dull greyish surface around the crack, then at a darker scraped patch|Fíjate en este color gris opaco. Es la piel que quemó el sol. Esa capa no se funde bien.
+D|S7B|close view: the back of a cutter blade scrapes the grey surface in short strokes, black plastic shavings curling off >> a satiny dark black area two fingers wide all around the crack|La raspo con el lomo del cúter hasta que aparece el negro sano, un par de dedos alrededor de la grieta.
+T|S7B|he taps the end of the crack with a fingernail, looking closely|Ahora, lo que casi nadie hace. Mira la punta de la grieta.
+T|S7B|he draws a line in the air continuing the crack with his finger|Con cada llenado, el peso del agua empuja, y la grieta sigue avanzando por la punta.
+T|S7B|he shows a thin drill bit to the camera between two fingers|Por eso, en cada punta, un agujerito de tres milímetros.
+T|S7B|he fits the thin bit into a cordless drill and sets the drill speed low, careful|Con el taladro despacio y sin apretar, porque la broca en el plástico se engancha y te lo raja más.
+D|S7B|close view: the tip of a thin drill bit is set a few millimetres past the upper end of the crack >> the bit goes through, a round hole just beyond the end of the crack, shavings around|Un poquito más allá de donde termina, para agarrarla entera.
+T|S7B|he blows the shavings away and runs his fingertip over the hole|El agujero redondo reparte la fuerza, y la grieta se frena ahí. Después se rellena con plástico, no queda abierto.
+# ---------------------------------------------------------------- S8 · ABRIR EN V (patio, tanque acostado)
+T|S8|he plugs in the soldering iron and waits holding it up, checking the tip, kneeling by the tank|Paso dos: el cautín bien caliente, unos minutos.
+D|S8|close view: the flat hot tip is set at the start of the crack, angled >> the tip has travelled along the crack, leaving a neat V-shaped groove in the black plastic|Con la punta, abro la grieta en V, como una canaleta, hasta la mitad del espesor.
+T|S8|he points into the groove with the back of a pen, explaining|¿Por qué en V? Porque el relleno tiene que entrar hasta el fondo de la grieta, no quedar arriba como una curita.
+D|S8|close view: a white plastic strip is held against the groove and the hot tip melts strip and groove edge together >> a glossy line of mixed melted plastic fills the first part of the groove|Ahora apoyo la tira y la derrito junto con los bordes del tanque, al mismo tiempo.
+T|S8|he works the iron back and forth in small circles, concentrated, the strip feeding in|Esto es lo más importante: tienes que ver que el tanque también se derrite. Que se mezclen los dos.
+T|S8|he stops and shows the tip with a small blob of plastic on it, explaining|Si solo derrites la tira encima, se enfría arriba del tanque, sin agarrarse. Es otro pegamento.
+D|S8|close view: the hot tip kneads the melted strip and the groove edges into each other with small circular movements >> the groove is fully filled with a raised seam of melted plastic|Amaso con la punta, como si mezclaras masa, hasta llenar toda la canaleta y los dos agujeritos.
+T|S8|he runs his thumbnail across the cooled seam, feeling it, then shows the camera|¿Cómo sabes si quedó bien fundido? Cuando se enfría, pásale la uña. No tiene que haber una línea donde termina la tira y empieza el tanque.
+T|S8|he points at an imaginary loose cord on the seam, shaking his head|Si ves la tira como un cordoncito apoyado, con bordes, no se fundió. Vuelve a pasar la punta, más lento.
+T|S8|he lifts the iron and leans back, watching the seam, satisfied|Primera capa lista. Ahora viene la que le da la fuerza.
+# ---------------------------------------------------------------- S9 · LA MALLA (patio, tanque acostado)
+T|S9|he unrolls a small piece of metal mosquito mesh and holds it over the crack to measure|La malla. Sirve la de mosquitero de aluminio, o mejor de acero inoxidable.
+T|S9|he holds up a rusty piece of old iron mesh next to the clean aluminium mesh, comparing|La de aluminio es la más fácil de conseguir, y como va afuera y queda tapada, sirve. La de hierro común, no: se oxida y te mancha el tanque.
+T|S9|he cuts the mesh with scissors, measuring with two fingers beyond the crack|La corto dos centímetros más grande que la grieta, por todos lados, contando los agujeritos.
+T|S9|he bends the mesh slightly with his fingers to follow the curve of the tank|La curvo un poco con los dedos, para que copie la forma del tanque.
+D|S9|close view: the mesh is laid over the filled crack and the flat hot tip presses one corner down >> that corner has sunk into glossy melted plastic|Apoyo la malla y la hundo con la punta caliente, empezando por una esquina.
+D|S9|close view: the tip presses along the mesh edge, the black plastic rising through the holes >> the whole mesh sits half inside the plastic, only the top of the wires showing|El plástico del tanque sube por los agujeritos de la malla y la abraza.
+T|S9|he holds the iron still, looking closely, explaining carefully|No la aprietes de más. Si la hundes hasta el fondo, adelgazas la pared del tanque. Tiene que quedar a media altura.
+D|S9|close view: more white and black strip plastic is melted over the sunken mesh >> the mesh completely disappears under an even layer of melted plastic|Y encima, otra capa de tira derretida, hasta que la malla no se vea.
+T|S9|he smooths the patch with slow long strokes of the flat tip|Se alisa con la punta plana, pasadas largas y lentas.
+T|S9|he points at the edges of the patch with the back of the pen|Y los bordes, en rampa, sin escalón. Un borde con escalón es donde se engancha el agua y la tierra.
+T|S9|he looks at the camera and pats the tank beside the patch|La malla hace el trabajo del hierro en el cemento: el plástico solo se puede volver a rajar. Con la malla adentro, no se abre.
+# ---------------------------------------------------------------- S10 · POR DENTRO Y ENFRIAR (patio, tanque acostado)
+T|S10|he turns the lying tank a little so the round top opening faces him and looks inside with a flashlight|Ahora, por dentro. En los tanques con tapa grande, llegas con el brazo.
+T|S10|he leans halfway into the opening, one arm and the soldering iron inside, the cable running in|Del lado de adentro, la misma limpieza, y una sola capa de plástico limpio, sin malla.
+T|S10|he shines the flashlight into the opening and points at the white inner wall, turning to the camera|Mira el color de adentro: blanco. Muchos tanques negros son de varias capas. La negra de afuera aguanta el sol; la de adentro es la que toca el agua.
+T|S10|he backs out of the opening and sits on his heels, speaking to the camera|Por eso adentro va plástico limpio, y nada más. Y queda la grieta sellada de los dos lados, como un sándwich.
+T|S10|he points at the camera with the unplugged iron, warning|Si no llegas por dentro, el de afuera solo con malla aguanta igual en grietas chicas. Pero si llegas, hazlo.
+T|S10|he sets the iron on its stand and puts a bucket of water far away from the tank with a firm gesture|Y ahora, lo que arruina todo: no lo enfríes con agua.
+T|S10|he mimes something cracking with both hands|El plástico que se enfría de golpe se contrae desparejo, y te hace grietitas nuevas alrededor del parche.
+T|S10|he checks his watch, then sits back against the wall next to the tank|Media hora, a la sombra, que se enfríe solo.
+# ---------------------------------------------------------------- S11 · LA PRUEBA + EL VECINO (patio, tanque parado)
+T|S11|he crouches by the empty concrete base of the tank and sweeps it with his hand, picking up a small stone|Antes de pararlo, mira la base. ¿Por qué se rajó? Casi siempre es una de tres cosas: un golpe, el sol, o una base despareja.
+T|S11|he holds the small stone up to the camera between two fingers|Una piedrita abajo, y todo el peso del agua cargando en un punto. Si no la sacas, se vuelve a rajar, en otro lado.
+T|S11|he runs a long level along the base, checking the bubble|La base tiene que ser pareja y más grande que el fondo del tanque, que apoye entero.
+T|S11B|he pats the tank now standing back on its concrete base, the smooth black patch facing the camera|Lo paro en su lugar. Y ahora, la prueba que no se saltea.
+D|S11B|close view: a hand tapes a folded sheet of white paper towel just under the patch on the black tank >> the paper towel is taped flat, clean and dry|Un papel seco pegado justo abajo del parche.
+D|S11B|close view: a garden hose pours into the top opening of the black tank >> the water is near the top, hose still running|Lo lleno hasta arriba, para que la grieta aguante la presión más alta.
+T|S11B|he turns off the hose tap and wipes his hands on his apron|Y lo dejo veinticuatro horas. Si hay una pérdida mínima, el papel te la marca, aunque no la veas.
+V|S11B|the neighbour leans over the low wall, pointing at the paper towel with his coffee cup, suspicious|¿Y el papelito ese para qué? ¿Para secar las lágrimas cuando se rompa?
+T|S11B|he laughs, pointing at the neighbour and then at the paper|Para que mañana no me digas que no lo viste.
+D|S11B|close view next morning: the same patch on the full black tank, the paper towel under it, early light >> a finger presses the paper towel: it is completely dry|Al otro día: papel seco. Ni una marca.
+V|S11B|the neighbour, now standing next to the tank, touches the dry paper towel with two fingers, lips pushed out, grudgingly impressed|Mmm. Bueno. Está seco. Pero ya vas a ver en el verano.
+T|S11B|he nods with a patient smile, arms crossed|El verano es justo lo que le va a probar. Te aviso.
+T|S11B|he turns to the camera, hand resting on the tank, practical|Y si el papel te sale húmedo, no es el fin. Vacías, raspas ese punto, y le das otra pasada de plástico. Casi siempre es un poro chiquito.
+T|S11B|he looks up at the sky shading his eyes, then at the tank|Y si puedes, dale sombra: un techito, una lona. El sol es lo que más envejece estos tanques.
+# ---------------------------------------------------------------- S12 · LOS 3 ERRORES Y LOS LÍMITES (taller)
+T|S12|back in the workshop he leans on the workbench, the broken tank piece in front of him|Te resumo los tres errores que más arruinan este arreglo.
+T|S12|he holds up one finger, then points at the jar of bottle caps|Uno: rellenar con otro plástico. Las tapitas que no son del mismo número. Parece pegado, y se suelta.
+T|S12|he holds up two fingers, then draws a line past the end of the crack on the broken piece|Dos: no hacer los agujeritos. El parche aguanta, pero la grieta sigue caminando por el costado, y a los meses gotea al lado.
+T|S12|he holds up three fingers and taps the flat tip of the cold iron|Tres: derretir solo la tira, sin fundir el tanque. Queda una costra linda encima, que no está agarrada a nada.
+T|S12|he puts the piece aside and stands straight, honest tone|Y ahora te digo cuándo no vale la pena, porque no todo tanque se salva.
+T|S12|he spreads his hands wide apart, showing a long length|Si la grieta es muy larga, de más de un palmo, o hay varias.
+T|S12|he points down at the base of the broken piece and at a threaded plastic outlet fitting on the bench|Si está en la base, donde apoya todo el peso, o en la rosca de la salida.
+T|S12|he bends a grey chalky piece of old tank plastic and it snaps like a cracker|Y si el plástico se quiebra como una galleta cuando lo doblas: está cristalizado por el sol. Ahí el cautín no lo salva, cambia el tanque.
+T|S12|he puts the snapped pieces down and looks at the camera, honest|Y no te voy a decir que dura para siempre. Un parche bien fundido es el mismo plástico que el tanque: dura lo que dure el tanque alrededor.
+T|S12|he picks up a small coil of thin stainless steel wire from the bench and shows it|Y hay una variante de esto que funciona todavía mejor cuando la grieta está en una curva o en una esquina, donde la malla no se acomoda.
+T|S12|he points down, toward the bottom of the frame|Te dejé exactamente cómo hacerlo en la descripción, con las medidas.
+T|S12|he sits on an upturned bucket next to the lying tank, looks toward the house, then back at the camera, reflective|Y algo que aprendí con los años: el tanque es lo que se ve. El agua que más se pierde en una casa es la que no se ve.
+T|S12|still sitting on the bucket, he gestures toward the house, counting on his fingers|Una llave que gotea, un tubo que pierde abajo del piso. Eso lo tengo en la guía del canal, junto con el tubo que pierde, arreglado sin soldar.
+T|S12|still sitting on the bucket, he gives a small shrug and a smile, pointing down|Si te sirve, el enlace está abajo. Y ahora, lo que te prometí.
+# ---------------------------------------------------------------- S13 · EL CIERRE: POR QUÉ EL PEGAMENTO NO SIRVE (taller, prueba con la gota)
+T|S13|he lays out on the workbench a black plastic scrap with three strips stuck on it: a bead of grey silicone, a blob of epoxy and a strip of duct tape|Esto lo preparé hace tres días. Un pedazo del mismo tanque, con silicona, con epoxi y con cinta, bien secos.
+D|S13|close view: fingers pinch the edge of the grey silicone bead on the black plastic >> the whole bead peels off in one clean piece, the plastic under it clean and shiny|La silicona sale entera, de una tira.
+D|S13|close view: a screwdriver tip pries under the edge of the epoxy blob >> the epoxy pops off in one piece, leaving a clean mark|El epoxi salta de una pieza, con un destornillador.
+T|S13|he pulls the tape off in one move and shows the clean scrap to the camera|Y la cinta ni hablar. Fíjate que abajo el plástico queda limpio. Nunca se agarraron.
+T|S13|he picks up a small plastic dropper bottle of water, holding the scrap flat|Y ahora, lo que te prometí: una gota de agua.
+D|S13|close view: a drop of water falls from a dropper onto the flat black polyethylene scrap >> the water sits as a round bead that does not spread|Mira cómo queda. No se desparrama. Queda hecha una bolita.
+T|S13|he tilts the scrap slightly and the bead rolls, he follows it with his eyes, then looks at the camera|El agua ni siquiera lo moja. Si el agua no lo moja, imagínate un pegamento.
+T|S13|he holds up the welded test piece he practised on and pulls it hard with both hands|En cambio, esta es la pieza que soldé practicando. Tiro con todo…
+D|S13|close view: two hands bend and pull the welded black plastic test piece >> the plastic tears beside the weld, the welded seam itself intact|…y se rompe el plástico al costado. La costura aguanta.
+T|S13|he puts the torn piece down on the bench, pointing at it|Por eso el pegamento falla y esto no. Esto no está pegado: es el mismo plástico, otra vez de una sola pieza.
+V|S13|the neighbour appears in the doorway of the garage, holding the dry paper towel from the tank, looking at the torn piece and sighing|Bueno. Me callo. ¿Me prestas el soldador para el mío?
+T|S13|he laughs and hands the iron toward the neighbour, then turns to the camera|Así me gusta. Y tú, si tienes el tanque rajado, ya sabes: mismo plástico, agujeritos, malla, y paciencia.
+T|S13|he points down at the bottom of the frame, warm|La hoja y la guía con los arreglos del agua de la casa, en el enlace de abajo. Cuéntame en los comentarios de qué es tu tanque y dónde se rajó.

@@ -1,0 +1,238 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S9/",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K1.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbtanque/public/img/tfbtanque/lamina_0.png"
+ },
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "prev_box": "384x216",
+ "lang": "es",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place as the first image, same objects, same light. The tank is lying on its side on the blanket; on its upper side the hand-long crack is now filled with a slightly raised, glossy seam of melted black plastic. He kneels next to it holding a small rectangle of aluminium mosquito mesh about the size of a paperback book, and the pencil-type soldering iron rests on its stand on the crate. He is at the start of this moment: he unrolls a small piece of metal mosquito mesh and holds it over the crack to measure. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers. Light of this place: flat overcast daylight from the open sky over the patio, soft and even; the wall facing the sky a little brighter, the corner under the eave dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he unrolls a small piece of metal mosquito mesh and holds it over the crack to measure. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is halfway through this action: he holds up a rusty piece of old iron mesh next to the clean aluminium mesh, comparing. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he holds up a rusty piece of old iron mesh next to the clean aluminium mesh, comparing. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he cuts the mesh with scissors, measuring with two fingers beyond the crack. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he bends the mesh slightly with his fingers to follow the curve of the tank. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D1a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: the mesh is laid over the filled crack and the flat hot tip presses one corner down. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D1b",
+   "from": [
+    "D1a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: that corner has sunk into glossy melted plastic. No face in the frame."
+  },
+  {
+   "id": "D2a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: the tip presses along the mesh edge, the black plastic rising through the holes. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D2b",
+   "from": [
+    "D2a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the whole mesh sits half inside the plastic, only the top of the wires showing. No face in the frame."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he holds the iron still, looking closely, explaining carefully. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "D3a",
+   "from": [
+    "K0"
+   ],
+   "noface": true,
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, filling the frame, in the same place and light as the first image: close view: more white and black strip plastic is melted over the sunken mesh. Any forearm enters from the edge of the frame and wears the rolled-up olive-green work shirt sleeve. No face in the frame."
+  },
+  {
+   "id": "D3b",
+   "from": [
+    "D3a"
+   ],
+   "noface": true,
+   "prompt": "Same close-up, same framing, same light, a few seconds later: the mesh completely disappears under an even layer of melted plastic. No face in the frame."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he smooths the patch with slow long strokes of the flat tip. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he points at the edges of the patch with the back of the pen. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is at the end of this moment: he looks at the camera and pats the tank beside the patch. He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
+  }
+ ],
+ "clips": [
+  {
+   "id": "S9_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_01.wav",
+   "text": "La malla. Sirve la de mosquitero de aluminio, o mejor de acero inoxidable.",
+   "action": "he unrolls a small piece of metal mosquito mesh and holds it over the crack to measure. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S9_02a",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_02a.wav",
+   "text": "La de aluminio es la más fácil de conseguir, y como va afuera y queda tapada, sirve. La de hierro común,",
+   "action": "he holds up a rusty piece of old iron mesh next to the clean aluminium mesh, comparing. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S9_02b",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_02b.wav",
+   "text": "no: se oxida y te mancha el tanque.",
+   "action": "he holds up a rusty piece of old iron mesh next to the clean aluminium mesh, comparing. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S9_03",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_03.wav",
+   "text": "La corto dos centímetros más grande que la grieta, por todos lados, contando los agujeritos.",
+   "action": "he cuts the mesh with scissors, measuring with two fingers beyond the crack. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S9_04",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_04.wav",
+   "text": "La curvo un poco con los dedos, para que copie la forma del tanque.",
+   "action": "he bends the mesh slightly with his fingers to follow the curve of the tank. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S9_05",
+   "a": "D1a",
+   "b": "D1b",
+   "detail": true,
+   "text": "Apoyo la malla y la hundo con la punta caliente, empezando por una esquina.",
+   "d1": "close view: the mesh is laid over the filled crack and the flat hot tip presses one corner down",
+   "d2": "that corner has sunk into glossy melted plastic",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_05.wav"
+  },
+  {
+   "id": "S9_06",
+   "a": "D2a",
+   "b": "D2b",
+   "detail": true,
+   "text": "El plástico del tanque sube por los agujeritos de la malla y la abraza.",
+   "d1": "close view: the tip presses along the mesh edge, the black plastic rising through the holes",
+   "d2": "the whole mesh sits half inside the plastic, only the top of the wires showing",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_06.wav"
+  },
+  {
+   "id": "S9_07",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_07.wav",
+   "text": "No la aprietes de más. Si la hundes hasta el fondo, adelgazas la pared del tanque. Tiene que quedar a media altura.",
+   "action": "he holds the iron still, looking closely, explaining carefully. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S9_08",
+   "a": "D3a",
+   "b": "D3b",
+   "detail": true,
+   "text": "Y encima, otra capa de tira derretida, hasta que la malla no se vea.",
+   "d1": "close view: more white and black strip plastic is melted over the sunken mesh",
+   "d2": "the mesh completely disappears under an even layer of melted plastic",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_08.wav"
+  },
+  {
+   "id": "S9_09",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_09.wav",
+   "text": "Se alisa con la punta plana, pasadas largas y lentas.",
+   "action": "he smooths the patch with slow long strokes of the flat tip. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S9_10",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_10.wav",
+   "text": "Y los bordes, en rampa, sin escalón. Un borde con escalón es donde se engancha el agua y la tierra.",
+   "action": "he points at the edges of the patch with the back of the pen. He speaks naturally to the friend holding the camera, with small natural gestures."
+  },
+  {
+   "id": "S9_11",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbtanque/out/tfbtanque/tramos/S9_11.wav",
+   "text": "La malla hace el trabajo del hierro en el cemento: el plástico solo se puede volver a rajar. Con la malla adentro, no se abre.",
+   "action": "he looks at the camera and pats the tank beside the patch. He speaks naturally to the friend holding the camera, with small natural gestures."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S9/vlog_S9.mp4"
+}
