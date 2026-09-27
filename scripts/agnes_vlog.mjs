@@ -73,7 +73,7 @@ import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
 import { Readable } from "node:stream";
-import { execFileSync } from "node:child_process";
+import { execFileSync as _efs } from "node:child_process"; const execFileSync = (c, a, o) => _efs(c, a, { windowsHide: true, ...(o || {}) }); // sin ventanas de consola (27-sep)
 
 const [, , planArg, fase, ...rest] = process.argv;
 const FL = Object.fromEntries(rest.filter(a => a.startsWith("--")).map(a => { const [k, v] = a.slice(2).split("="); return [k, v ?? true]; }));
@@ -91,6 +91,7 @@ for (const P of PLANS) { const d = dirsOf(P); fs.mkdirSync(d.ANC, { recursive: t
 const P = PLANS[0], { DIR, ANC, CL } = dirsOf(P);
 let k = Math.floor(Math.random() * Math.max(1, KS.length)); const key = () => KS[(k++) % KS.length];
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
 const mime = f => f.endsWith(".png") ? "image/png" : /\.(mp3)$/.test(f) ? "audio/mpeg" : /\.wav$/.test(f) ? "audio/wav" : "image/jpeg";
 const uri = f => `data:${mime(f)};base64,` + fs.readFileSync(f).toString("base64");
@@ -187,8 +188,8 @@ function prepararItem(it) { // arma inputs chicos recién cuando sus K previos e
   const { Pl, a } = it, ANCd = dirsOf(Pl).ANC;
   it.inputs = a.from.map(n => { const f = refPathOf(Pl, n); return small(f, n === "k0" || /^K\d+$/.test(n) ? prevOf(Pl) : EXTRA_BOX, ANCd); });
   it.size = sizeOf(Pl);
-  it.inputs.push(face128(Pl));
-  it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + IDENT + LIGHT;
+  if (!a.noface) it.inputs.push(face128(Pl)); // noface: plano detalle de manos/objeto (la cara lo devuelve a plano medio)
+  it.prompt = a.prompt + (a.from.includes("k0") || !a.from.length ? "" : " Everything else identical.") + (a.noface ? "" : IDENT) + LIGHT;
   return it;
 }
 let gasto = 0, nimg = 0, avisos = 0;
@@ -310,7 +311,7 @@ function tramo(c) { // audio rellenado a segundo entero → mp3
 async function gen(id, body) {
   let vid;
   for (let t = 0; t < 200 && !vid; t++) {
-    const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
+    const j = await fetch(B + "/videos", { method: "POST", signal: AbortSignal.timeout(120000), headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) }).then(r => r.json()).catch(e => ({ error: "red/queue " + (e?.cause?.code || e?.message) }));
     vid = j.video_id || j.id;
     if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(25000 + Math.random() * 10000); }
   }
@@ -319,13 +320,33 @@ async function gen(id, body) {
   const t0 = Date.now();
   while (Date.now() - t0 < 40 * 60e3) {
     await sleep(15000);
-    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + key() } })).json().catch(() => ({}));
-    if (g.status === "completed" && g.url) { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
+    const g = await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { signal: AbortSignal.timeout(60000), headers: { Authorization: "Bearer " + key() } }).then(r => r.json()).catch(() => ({}));
+    if (g.status === "completed" && g.url) {
+      for (let t = 0; t < 5; t++) try { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url, { signal: AbortSignal.timeout(300000) })).arrayBuffer())); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); } catch (e) { log("descarga falló, reintento", id, e?.cause?.code || e?.message); await sleep(10000); }
+      return log("FAIL descarga", id);
+    }
     if (/fail|error|cancel/i.test(g.status || "")) return log("FAIL", id, JSON.stringify(g).slice(0, 200));
   }
   log("TIMEOUT", id);
 }
 const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSync(CL + "state.json", "utf8")) : {};
+// semáforo ENTRE procesos (varias escenas / varios videos comparten la cola global de agnes): VLOG_SLOTS_DIR + VLOG_MAX.
+// Un slot = un clip en vuelo; los de PIDs muertos se liberan solos (portado de falaurel-render).
+const SLOTS = process.env.VLOG_SLOTS_DIR || env.VLOG_SLOTS_DIR, MAXSL = Number(process.env.VLOG_MAX || env.VLOG_MAX || 12);
+async function acquire() {
+  if (!SLOTS) return () => {};
+  fs.mkdirSync(SLOTS, { recursive: true });
+  for (;;) {
+    for (let i = 0; i < MAXSL; i++) {
+      const f = path.join(SLOTS, "slot" + i);
+      try { fs.writeFileSync(f, String(process.pid), { flag: "wx" }); return () => { try { fs.unlinkSync(f); } catch {} }; } catch {}
+      try { const pid = Number(fs.readFileSync(f, "utf8").trim()); let vivo = true;
+        if (pid && pid !== process.pid) { try { process.kill(pid, 0); } catch (e) { if (e.code === "ESRCH") vivo = false; } }
+        if (!vivo) { fs.unlinkSync(f); log("slot huérfano liberado", "slot" + i, "pid " + pid); i--; } } catch {}
+    }
+    await sleep(5000 + Math.random() * 5000);
+  }
+}
 const PRON = P.pronoun || "he";
 const MUTE = ` When the reference audio ends ${PRON} stops talking and keeps the mouth closed.`;            // anti-balbuceo del relleno
 const MUTE_LINE = " After saying that line they stop talking and keep the mouth closed.";
@@ -335,7 +356,11 @@ if (fase === "clips") {
     const out = soloIds.length ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
     const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(P.face), ...(c.refs || []).map(n => uri(refPath(n)))];
     let body, T;
-    if (c.audio) {
+    if (c.detail) { // plano DETALLE sin habla: keyframe clava primer y último cuadro, trae foley real; si hay `audio`, la voz del tramo suena encima en el armado
+      T = c.audio ? tramo(c).T : c.secs;
+      body = { mode: "keyframe", seconds: String(T), first_frame: uri(refPath(c.a)), last_frame: uri(refPath(c.b)),
+        prompt: "The video starts exactly on the first frame and ends exactly on the last frame, one continuous close-up take without cutting or changing angle. " + c.action + LOOK + " Nobody speaks, no voices, only the real sounds of the action." };
+    } else if (c.audio) {
       const tr = tramo(c); T = tr.T;
       body = { mode: "reference", seconds: String(T), images: imgs, audios: [uri(tr.mp3)],
         prompt: SE + "The presenter is the one speaking: the voice and every word are exactly the reference audio, lips perfectly synced; do not add, repeat or change any word — the audio is the only speech. " + c.action + LOOK + " No other voices." + MUTE };
@@ -344,8 +369,11 @@ if (fase === "clips") {
       body = { mode: "reference", seconds: String(T), images: imgs,
         prompt: SE + `The person speaking is ${c.who || "the other person (last reference image is their face)"}, ${c.voice}, lips perfectly synced, saying exactly: "${c.line}" Nobody else speaks. ` + c.action + LOOK + MUTE_LINE };
     }
-    await gen(out, body);
-    if (fs.existsSync(CL + out + ".mp4")) { const s = state(); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(CL + "state.json", JSON.stringify(s, null, 1)); }
+    const rel = await acquire();
+    try { await gen(out, body); } catch (e) { log("FAIL", out, "red: " + (e?.cause?.code || e?.message || e)); } finally { rel(); }
+    if (fs.existsSync(CL + out + ".mp4")) {
+      const sf = CL + (c.detail ? "state_det.json" : "state.json"), s = J(sf);
+      s[c.id] = { file: out + ".mp4", T, own: !c.audio, ...(c.detail ? { detail: true } : {}) }; fs.writeFileSync(sf, JSON.stringify(s, null, 1)); }
   })));
   log("clips listos → corré `check`");
 }
@@ -367,7 +395,6 @@ async function vision(frameJpg, facePng) {
 // la del plan (para probar/rearmar sin tocar el worktree de otro).
 const WORK = FL.out ? String(FL.out).replace(/\\/g, "/").replace(/\/?$/, "/") : CL;
 if (FL.out) fs.mkdirSync(WORK, { recursive: true });
-const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
 const stateDet = () => J(CL + "state_det.json");        // planos `detail` (keyframe d1→d2) van aparte
 const ffo = (...a) => execFileSync("ffmpeg", ["-v", "error", ...a], { maxBuffer: 1 << 28 });
 function pcm(f, T) { // mono 16 kHz float; con T: rellena/corta a T (como load() de sync.py)
