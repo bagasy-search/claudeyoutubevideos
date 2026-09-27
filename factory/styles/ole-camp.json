@@ -25,7 +25,7 @@
     "maxPlacaVistaS": 1.5
   },
   "avatar": {
-    "lipLeadSec": 0.25
+    "lipLeadSec": 0.13
   },
   "fondo": "#0B0907",
   "placa": "img/{slug}/{slug}_placa_a.jpg",
@@ -64,7 +64,8 @@
     "rio": "on the rocky bank of a cold north-woods river in late autumn, in the background flat grey granite rocks along the shore, dark water with thin ice at the edges, a canvas sack lying open on the rocks, a wooden wheelbarrow, birch and spruce trees on the far bank and a dusting of snow",
     "cocina_casa": "in the small plain kitchen of his house in town, in the background a white enamel electric range with an oven door and round dial knobs, a black cast-iron Dutch oven on the stovetop, a window with snow on the sill, a wooden table with a red checkered oilcloth, a dish rack with enamel mugs and a braided rag rug on the linoleum floor",
     "patio": "in the small snowy backyard behind his house, in the background a shallow pit lined with old red bricks, a bag of hardwood charcoal, a spade stuck in a pile of dark dirt, a stack of split firewood against a wooden fence, a clothesline and bare maple trees",
-    "mesa_casa": "at the small kitchen table of his house in town, in the background a window with white lace curtains and snow outside, an old radio on the windowsill, a bowl of red apples, a framed black and white photograph of a logging crew on the wall and a wool mackinaw hanging on a coat hook"
+    "mesa_casa": "at the small kitchen table of his house in town, in the background a window with white lace curtains and snow outside, an old radio on the windowsill, a bowl of red apples, a framed black and white photograph of a logging crew on the wall and a wool mackinaw hanging on a coat hook",
+    "lago": "on a frozen north-woods lake in winter, in the background a round hole chopped in the grey ice with a wooden tip-up beside it, a wooden fish box and a small sled, a canvas bag on the ice, the snowy shoreline with dark spruce trees and a far pine ridge"
   },
   "movimiento": "camara",
   "avatarPrompt": "An old man speaks warmly and naturally to the camera at the table of his log cabin, telling a story, natural head movement, expressive face, realistic lighting",

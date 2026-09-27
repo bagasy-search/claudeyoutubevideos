@@ -12,7 +12,7 @@ export const SCHEMA = {
   guion: { type: "string", required: true },                    // ruta al .txt (relativa a video2 o absoluta)
   titulo: { type: "string", required: false },
   voz: { type: "object", required: true, props: { id: { type: "string", required: true }, blockChars: { type: "number", required: false } } },
-  avatar: { type: "object", required: false, props: { face: { type: "string", required: true }, ref: { type: "string", required: false }, prompt: { type: "string", required: false } } },
+  avatar: { type: "object", required: false, props: { face: { type: "string", required: true }, ref: { type: "string", required: false }, prompt: { type: "string", required: false }, lipLeadSec: { type: "number", required: false } } },
   cta: { type: "object", required: true, props: { head: { type: "string", required: true }, sub: { type: "string", required: false }, ancla: { type: "string", required: true }, landing: { type: "string", required: false }, qr: { type: "string", required: false } } },
   bagasy: { type: "object", required: false, props: { channelKey: { type: "string", required: true }, cardId: { type: "string", required: true } } },
   ctas: { type: "array", required: false },                     // CTA del MEDIO: [{ancla, head, sub?, qr?, durS?}]; el de cierre es `cta`

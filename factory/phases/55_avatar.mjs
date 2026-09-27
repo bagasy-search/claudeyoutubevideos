@@ -90,7 +90,7 @@ export default {
   applies: ({ spec }) => spec.modo === "avatar",
   // `lipLeadSec` entra en el hash: si se cambia la compensación, las ventanas se vuelven a cortar
   // solas en vez de quedar "frescas" con el corrimiento viejo.
-  inputs: ({ P, spec, style }) => [P.mom, P.plan, P.wav, spec.avatar, style.ventanas, style.avatar?.lipLeadSec ?? 0.25],
+  inputs: ({ P, spec, style }) => [P.mom, P.plan, P.wav, spec.avatar, style.ventanas, style.avatar?.lipLeadSec ?? 0.25, spec.avatar?.lipLeadSec ?? null],
   async run({ slug, spec, style, P, log }) {
     const A = P.avatarDir;
     fs.mkdirSync(A, { recursive: true });
@@ -305,7 +305,11 @@ export default {
       //    ruido de ±1-3 cuadros, así que se acepta sólo dentro de ±0,20 s. Más que eso no es una
       //    medición, es ruido — y una compensación grande y equivocada es justo lo que el creador ya
       //    vio en pantalla (0,25 aplicados sobre un adelanto real de 0,10).
-      if (Number.isFinite(lipR) && lipR >= 0.25 && Number.isFinite(lag) && Math.abs(lag) <= 0.20) {
+      // ⛔ Override por VIDEO (medido a mano con un recorte fijo de la boca): gana a la medición automática
+      //    y al default del estilo. Medido en olewinter (26-sep-2026): la barba blanca baja la correlación
+      //    de `--auto` a 0,20, la fase caía al default 0,25 del estilo y los labios quedaron ~0,12 s ATRASADOS.
+      if (Number.isFinite(spec.avatar?.lipLeadSec)) { LIP = spec.avatar.lipLeadSec; lipFuente = "spec (medido a mano)"; }
+      else if (Number.isFinite(lipR) && lipR >= 0.25 && Number.isFinite(lag) && Math.abs(lag) <= 0.20) {
         LIP = +(-lag).toFixed(3); lipFuente = `medido (r ${lipR.toFixed(2)})`;
       } else log(`  lipsync: correlación ${Number.isFinite(lipR) ? lipR.toFixed(2) : "?"} o desfase ${Number.isFinite(lag) ? lag : "?"} fuera de rango → uso el default del estilo (${(LIP * 1000).toFixed(0)} ms)`);
     } catch (e) { log(`  lipsync: no se pudo medir (${e.message.slice(0, 60)}) → default del estilo`); }

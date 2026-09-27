@@ -12,7 +12,8 @@
     "ancla": "If you want more of these"
   },
   "avatar": {
-    "face": "public/ref/ole_full.png"
+    "face": "public/ref/ole_full.png",
+    "lipLeadSec": 0.13
   },
   "bagasy": {
     "channelKey": "draft:olescamp",
