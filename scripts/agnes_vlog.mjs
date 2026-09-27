@@ -100,9 +100,9 @@ const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a]);
 const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
 const wh = f => execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number);
 
-const LIGHT = " BRIGHT, correctly exposed photo, big soft DAYLIGHT from a window, white balance NEUTRAL, no amber cast, no grading, no vignette, no film grain, no dark moody look, lifted shadows; brightness from the room lighting, not post-production — do not raise saturation, no glow, no HDR. An ordinary photo, not a film still. Real skin with visible pores, fine lines and natural texture, not smooth, not plastic, not retouched.";
+const LIGHT = P.light != null ? " " + P.light : " BRIGHT, correctly exposed photo, big soft DAYLIGHT from a window, white balance NEUTRAL, no amber cast, no grading, no vignette, no film grain, no dark moody look, lifted shadows; brightness from the room lighting, not post-production — do not raise saturation, no glow, no HDR. An ordinary photo, not a film still. Real skin with visible pores, fine lines and natural texture, not smooth, not plastic, not retouched.";
 const IDENT = " IDENTITY: the presenter must have EXACTLY the face of the man/woman in the LAST input image (a close-up of the real face): same face shape, eyes, nose, eyebrows, hair and beard, same age — copy that face, do not let it drift, do not make them younger or more attractive. The last image is only for the face; the scene comes from the first image. Do NOT add objects that are not described.";
-const LOOK = " Ultra realistic casual home video, handheld phone footage with small natural shakes, BRIGHT correctly exposed image, big soft daylight from the window, neutral white balance, no grading, no vignette, no dark moody look; real skin with visible pores and fine lines, not smooth, not plastic; natural hands; nothing polished, no music.";
+const LOOK = P.look != null ? " " + P.look : " Ultra realistic casual home video, handheld phone footage with small natural shakes, BRIGHT correctly exposed image, big soft daylight from the window, neutral white balance, no grading, no vignette, no dark moody look; real skin with visible pores and fine lines, not smooth, not plastic; natural hands; nothing polished, no music.";
 const SE = "The video STARTS EXACTLY on the first reference image and ENDS EXACTLY on the second reference image: the very first frame is the first image and the very last frame is the second image — same place, same framing, same light, same objects in the same places; in between, one continuous take without cutting or changing angle. The third reference image is only the presenter's real face: keep exactly that face the whole time. ";
 
 // ---------- anclas ----------
@@ -325,6 +325,23 @@ async function gen(id, body) {
   }
   log("TIMEOUT", id);
 }
+// semáforo ENTRE procesos (varios videos/escenas comparten la cola GLOBAL de agnes): VLOG_SLOTS_DIR + VLOG_MAX (default 12).
+// Portado de falaurel-render: un slot por clip en vuelo; libera slots de PIDs muertos (corte de red / sesión cerrada).
+const SLOTS = process.env.VLOG_SLOTS_DIR, MAXSL = Number(process.env.VLOG_MAX || 12);
+async function acquire() {
+  if (!SLOTS) return () => {};
+  fs.mkdirSync(SLOTS, { recursive: true });
+  for (;;) {
+    for (let i = 0; i < MAXSL; i++) {
+      const f = path.join(SLOTS, "slot" + i);
+      try { fs.writeFileSync(f, String(process.pid), { flag: "wx" }); return () => { try { fs.unlinkSync(f); } catch {} }; } catch {}
+      try { const pid = Number(fs.readFileSync(f, "utf8").trim()); let vivo = true;
+        if (pid && pid !== process.pid) { try { process.kill(pid, 0); } catch (e) { if (e.code === "ESRCH") vivo = false; } }
+        if (!vivo) { fs.unlinkSync(f); log("slot huérfano liberado", "slot" + i, "pid " + pid); i--; } } catch {}
+    }
+    await sleep(5000 + Math.random() * 5000);
+  }
+}
 const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSync(CL + "state.json", "utf8")) : {};
 const PRON = P.pronoun || "he";
 const MUTE = ` When the reference audio ends ${PRON} stops talking and keeps the mouth closed.`;            // anti-balbuceo del relleno
@@ -335,7 +352,11 @@ if (fase === "clips") {
     const out = soloIds.length ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
     const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(P.face), ...(c.refs || []).map(n => uri(refPath(n)))];
     let body, T;
-    if (c.audio) {
+    if (c.kf) { // plano DETALLE sin habla (keyframe clava primer y último cuadro; trae foley real). Su T = tramo (si hay voz encima) o secs
+      T = c.audio ? tramo(c).T : c.secs;
+      body = { mode: "keyframe", seconds: String(T), first_frame: uri(refPath(c.a)), last_frame: uri(refPath(c.b)),
+        prompt: "The video starts exactly on the first frame and ends exactly on the last frame, one continuous close-up take without cutting or changing angle. " + c.action + LOOK + " Nobody speaks, no voices: only the real sounds of the action." };
+    } else if (c.audio) {
       const tr = tramo(c); T = tr.T;
       body = { mode: "reference", seconds: String(T), images: imgs, audios: [uri(tr.mp3)],
         prompt: SE + "The presenter is the one speaking: the voice and every word are exactly the reference audio, lips perfectly synced; do not add, repeat or change any word — the audio is the only speech. " + c.action + LOOK + " No other voices." + MUTE };
@@ -344,7 +365,8 @@ if (fase === "clips") {
       body = { mode: "reference", seconds: String(T), images: imgs,
         prompt: SE + `The person speaking is ${c.who || "the other person (last reference image is their face)"}, ${c.voice}, lips perfectly synced, saying exactly: "${c.line}" Nobody else speaks. ` + c.action + LOOK + MUTE_LINE };
     }
-    await gen(out, body);
+    const rel = await acquire();
+    try { await gen(out, body); } catch (e) { log("FAIL", out, "red: " + (e?.cause?.code || e?.message || e)); } finally { rel(); }
     if (fs.existsSync(CL + out + ".mp4")) { const s = state(); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(CL + "state.json", JSON.stringify(s, null, 1)); }
   })));
   log("clips listos → corré `check`");

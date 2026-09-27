@@ -1,0 +1,242 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S8",
+ "face": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a completely new place: nothing from the workshop of the first image remains. The place is the small real bathroom of a modest family house in Latin America: white wall tiles up to shoulder height with greyish grout, pale green painted wall above, an ordinary white ceramic toilet with its tank against the wall and the seat and lid up, a toilet brush in a plastic holder beside it, a small white sink with a chrome tap and a bar of soap, a plastic shower curtain on the right, a towel on a hook, a small bathroom rug; the toilet bowl has a thick yellow-brown ring of limescale at the water line and brownish streaks under the rim. He is the man of the reference photo — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. The lid of the toilet tank is off, leaning against the wall; he stands beside the toilet, one hand on the edge of the open tank, looking at the camera. A thin vertical brownish streak of limescale runs down the inside of the bowl from under the rim to the water. Medium shot from the doorway, waist-up. Light: daylight from a frosted window on the left above the toilet, plus a ceiling lamp with a plain warm bulb; the tiles near the window brighter and cooler, the corner by the door dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: his finger points at the streak inside the bowl; he looks at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Close view inside the open toilet tank: water, the flush valve and the float, a tiny steady ripple at the flush valve seal where water keeps leaking. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Close view inside the toilet bowl under the rim: a thin trickle of water running down the white porcelain along a brownish streak into the water. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera, one hand on the open tank. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds a small bottle of blue food colouring, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "A hand squeezes a few drops of blue food colouring into the clear water of the open toilet tank; blue swirls spread in the water. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Close view of the toilet bowl water, a moment later: a faint blue tint has appeared in the water of the bowl. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he points at the faintly blue water in the bowl, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera, one hand inside the open tank. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the small plastic bag with the tablet, looking at the camera, serious. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera, serious, one hand on the tank. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place and same light as the first image, but a different camera angle: Same bathroom, closer: he sits on the edge of the bathtub side (by the shower curtain) holding a phone in his hand, screen dark, turned toward the camera, the toilet beside him. Medium close shot. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera, the phone lowered in his hand. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: his flat hand held low, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: two fingers up, a small smile. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: standing beside the toilet, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he points down, smiling at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s8_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Ahora, algo que casi nadie relaciona. ¿Tienes una raya de sarro que baja desde el borde, siempre por el mismo lugar?",
+   "action": "He points at the thin brownish streak running down inside the bowl from under the rim, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_01.wav"
+  },
+  {
+   "id": "s8_02",
+   "a": "K2",
+   "b": "K3",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_02.wav",
+   "text": "Eso casi siempre es la mochila que pierde. Un hilito de agua que corre día y noche, y deja cal por donde pasa.",
+   "action": "The camera goes from the leaking valve in the tank to the thin trickle running down the bowl along the streak."
+  },
+  {
+   "id": "s8_03",
+   "a": "K4",
+   "b": "K5",
+   "text": "Y ese hilito, además, es agua que pagas y se va sin que la veas. Hay una prueba muy fácil para saberlo.",
+   "action": "He taps the edge of the open tank and talks to the camera, shaking his head.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_03.wav"
+  },
+  {
+   "id": "s8_04",
+   "a": "K6",
+   "b": "K7",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_04.wav",
+   "text": "Unas gotas de colorante en la mochila, y esperas unos veinte minutos sin usar el inodoro. Si aparece color en la taza, pierde.",
+   "action": "Blue drops fall into the tank water and spread; then the water in the bowl turns faintly blue."
+  },
+  {
+   "id": "s8_05",
+   "a": "K8",
+   "b": "K9",
+   "text": "Casi siempre es el sello del pulsador o el flotante mal regulado. Eso está explicado paso a paso en la guía del canal, en el arreglo del agua que se va sin que la veas.",
+   "action": "He lifts the float arm inside the tank slightly and lets it go, then presses on the flush valve with a finger, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_05.wav"
+  },
+  {
+   "id": "s8_05b",
+   "a": "K9",
+   "b": "K10",
+   "text": "Y ojo con esto: si usas pastillas de cloro en la mochila, sácalas antes de echar vinagre o cualquier ácido, y descarga un par de veces.",
+   "action": "He picks up a round white chlorine tablet from the edge of the tank, shows it to the camera and drops it into a small plastic bag.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_05b.wav"
+  },
+  {
+   "id": "s8_05c",
+   "a": "K10",
+   "b": "K11",
+   "text": "Cloro y ácido juntos, aunque sea en poca cantidad, sueltan un gas que no quieres respirar en un baño cerrado. Primero una cosa, y otro día la otra.",
+   "action": "He points at the open window, then waves his hand in front of his nose, serious, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_05c.wav"
+  },
+  {
+   "id": "s8_06",
+   "a": "K12",
+   "b": "K13",
+   "text": "Y te cuento algo que me escribió Rosa, de Guadalajara. Había probado tres productos distintos y la línea amarilla no salía con nada.",
+   "action": "He sits holding the phone with its screen dark, glances at it and tells the story to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_06.wav"
+  },
+  {
+   "id": "s8_07",
+   "a": "K13",
+   "b": "K14",
+   "text": "¿Qué pasaba? Echaba todo con la taza llena. Le dije: baja el agua primero. Y me mandó la foto a la semana.",
+   "action": "He shrugs with a small laugh, telling the story, then mimes lowering a level with his flat hand.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_07.wav"
+  },
+  {
+   "id": "s8_08",
+   "a": "K14",
+   "b": "K15",
+   "text": "No salió en una noche, ¿eh? Le llevó dos noches de vinagre y dos pasadas de piedra. Pero salió, y con el mismo inodoro.",
+   "action": "He holds up two fingers, then nods, telling the story to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_08.wav"
+  },
+  {
+   "id": "s8_09",
+   "a": "K15",
+   "b": "K16",
+   "text": "Y así con cada cosa de la casa: casi siempre hay un arreglo barato antes de cambiar la pieza.",
+   "action": "He stands up and gestures around the bathroom with an open hand, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_09.wav"
+  },
+  {
+   "id": "s8_10",
+   "a": "K16",
+   "b": "K17",
+   "text": "Por eso armé la colección del canal, con los materiales y las medidas de cada arreglo. El enlace está abajo.",
+   "action": "He points down at the bottom of the frame with his index finger, friendly, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s8_10.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S8/vlog_S8.mp4"
+}

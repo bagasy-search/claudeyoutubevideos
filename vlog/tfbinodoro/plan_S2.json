@@ -1,0 +1,192 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S2",
+ "face": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a completely new place: nothing from the workshop of the first image remains. The place is the small real bathroom of a modest family house in Latin America: white wall tiles up to shoulder height with greyish grout, pale green painted wall above, an ordinary white ceramic toilet with its tank against the wall and the seat and lid up, a toilet brush in a plastic holder beside it, a small white sink with a chrome tap and a bar of soap, a plastic shower curtain on the right, a towel on a hook, a small bathroom rug; the toilet bowl has a thick yellow-brown ring of limescale at the water line and brownish streaks under the rim. He is the man of the reference photo — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it, with yellow rubber gloves on. He kneels on the rug beside the toilet, turned three-quarters to the camera, one gloved hand on the small chrome quarter-turn valve on the wall under the tank. On the tiled floor beside him: a red plastic bucket, a plastic cup, an old yellow sponge, a glass jug of clear vinegar, a grey pumice stone, a short piece of thin wire and a roll of toilet paper. Medium shot from the bathroom doorway, at the eye level of a kneeling man. Light: daylight from a frosted window on the left above the toilet, plus a ceiling lamp with a plain warm bulb; the tiles near the window brighter and cooler, the corner by the door dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he kneels beside the toilet, one gloved hand resting on the flush button on the tank, the water in the bowl settling, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "A gloved hand scoops water out of the toilet bowl with a plastic cup; the thick yellow-brown ring of limescale at the water line is right there. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same close-up, a moment later: the bowl is almost empty, a yellow sponge in the gloved hand soaks up the last water at the bottom; the yellow-brown ring and the brown crust at the bottom now fully exposed. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he kneels beside the toilet, the bowl empty, the red bucket beside him half full of water, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "A gloved hand tilts a glass jug of steaming clear vinegar over the rim of the empty toilet bowl, the first thin stream starting to pour. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same close-up, a moment later: the vinegar runs down the inside of the bowl over the yellow limescale ring, a shallow steaming pool of vinegar at the bottom, the jug lifted away. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the empty glass jug, kneeling beside the toilet, a little steam rising from the bowl, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the seat and lid are down; he sits back on his heels beside the toilet, one hand resting on the closed lid, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "A gloved hand holds a dripping-wet grey pumice stone against the thick yellow-brown ring inside the toilet bowl. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same close-up, a moment later: the wet pumice has rubbed a clean white strip through the ring, grey muddy residue on the stone and running down the white porcelain. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the lid is up again; he holds up the wet grey pumice stone toward the camera, kneeling beside the toilet. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Seen from below the rim of the toilet bowl: the row of small holes under the rim, several blocked with white-brown crust, a gloved hand pushing a thin wire into one hole. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same close-up under the rim, a moment later: strips of wet toilet paper soaked in vinegar pressed flat along the underside of the rim, covering the holes. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera holding the thin wire up in one gloved hand, kneeling beside the toilet. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the bowl is now clean and white with clear water, the yellow ring gone; he kneels beside it, one gloved hand on the tank, a small satisfied smile at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s2_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Vamos al baño de mi casa, que este sí está en uso. Primero, la llave de paso de la mochila: la cierras, y descargas una vez.",
+   "action": "He turns the small chrome valve on the wall under the tank closed with his gloved hand, then reaches up and presses the flush button on top of the tank, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s2_01.wav"
+  },
+  {
+   "id": "s2_02",
+   "a": "K2",
+   "b": "K3",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s2_02.wav",
+   "text": "Ahora bajas el agua de la taza. Con un vaso y una esponja, casi hasta el fondo. Si el producto queda flotando en agua, no le hace nada a la costra.",
+   "action": "The gloved hand scoops water out of the bowl with the cup, then presses the sponge into the bottom; the water level drops."
+  },
+  {
+   "id": "s2_03",
+   "a": "K5",
+   "b": "K6",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s2_03.wav",
+   "text": "Vinagre blanco, del común, bien caliente pero sin hervir. Lo echas despacio, por el borde, y que moje toda la línea amarilla.",
+   "action": "The steaming vinegar is poured slowly around the inside of the bowl, running down over the yellow ring."
+  },
+  {
+   "id": "s2_04",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y lo dejas trabajar. Mínimo una hora; si la costra es vieja, toda la noche. Aquí el tiempo hace más que la fuerza.",
+   "action": "He sets the jug down, lowers the toilet lid and taps it twice with his gloved hand, then holds up one finger while explaining to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s2_04.wav"
+  },
+  {
+   "id": "s2_05",
+   "a": "K9",
+   "b": "K10",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s2_05.wav",
+   "text": "Después, la piedra pómez. Siempre mojada, eh. Siempre. Frotas suave sobre la línea y la costra sale como un barro gris.",
+   "action": "The wet pumice stone rubs gently back and forth along the ring; the crust comes off as grey mud and clean white porcelain appears."
+  },
+  {
+   "id": "s2_06",
+   "a": "K12",
+   "b": "K13",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s2_06.wav",
+   "text": "Los agujeritos de abajo del borde: un alambre fino, uno por uno. Y después, papel higiénico empapado en vinagre, pegado ahí debajo.",
+   "action": "The gloved hand pushes the thin wire in and out of a blocked rim hole, then presses a wet strip of toilet paper under the rim."
+  },
+  {
+   "id": "s2_07",
+   "a": "K14",
+   "b": "K15",
+   "text": "Abres la llave, descargas, y listo. Ese es el arreglo completo. Y una vez por semana, un vaso de vinagre en la taza, para que no vuelva.",
+   "action": "He reaches down and opens the chrome valve under the tank, presses the flush button, watches the clean water rush around the bowl and looks back at the camera, satisfied.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s2_07.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S2/vlog_S2.mp4"
+}

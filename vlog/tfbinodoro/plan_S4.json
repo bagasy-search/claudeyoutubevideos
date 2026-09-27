@@ -1,0 +1,252 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S4",
+ "face": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a new place. The place is a real, messy home garage-workshop of a working-class house in Latin America: concrete floor with old stains and cement dust, a wooden workbench covered in tools, tins, rags and offcuts, a pegboard with hanging tools, stacked plastic buckets, a bicycle leaning on the wall, bare painted brick walls with damp patches, the wide garage door on the left open to the street. He is the man of the reference photo — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. One half of an old white porcelain toilet sawn in half lengthwise: the flat cut face shows the inside of the curved trap channel lined with a thick, rough, layered crust of yellow-brown and grey limescale, like stone, narrowing the passage to less than half lies on the workbench on its back, the cut face up and toward the camera; the other half stands beside it. He leans over the bench with a small flashlight in one hand, looking at the camera, a pencil behind his ear. Medium shot, slightly from the side, waist-up. Light: flat overcast daylight coming in through the open garage door on the left, plus one plain fluorescent tube on the ceiling; the side near the door a little brighter and cooler, the back corners dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he leans over the cut toilet half, lighting the curved channel with the flashlight, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Macro view of the layered limescale crust on the cut face of the porcelain: thin stacked layers of white, grey, yellow and brown mineral, like the rings of a tree, a flashlight beam across it. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same macro view, a moment later: a gloved fingertip enters from the right edge and traces along the layers of the crust. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he stands behind the bench beside the cut toilet half, looking at the camera, the flashlight pointed down. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: his finger rests on the line of the old water level inside the cut bowl; he looks at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: a little yellow-brown powder on the bench in front of him; he looks at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Close view along the cut rim of the toilet: the hollow channel inside the rim is visible in cross-section, and below it a row of small holes, most of them blocked with white-brown crust. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same close view, a moment later: the beam of a small flashlight shines into the channel inside the rim, showing crust inside it. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the flashlight near the rim of the cut toilet half, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the pencil up, looking at the camera, a little white dust on the bench. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: his finger rests inside the narrowest part of the curved channel, he looks at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Macro view inside the curved trap channel of the cut toilet: the passage is lined with rough, bumpy yellow-brown stone-like crust, leaving only a narrow gap. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same macro view, a moment later: a small wad of white toilet paper is caught on the rough crust inside the narrow channel. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he stands behind the bench looking at the camera, holding the flashlight. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Macro view of the thick crust on the cut face at the top of the curve: a gloved fingertip placed flat beside it for scale; the crust is about as thick as the finger. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same macro view lower down, at the bottom bend of the curve: the crust there is even thicker, the fingertip beside it. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera, one hand on the cut toilet half, eyebrows raised. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera with a skeptical half smile. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K18"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: his hand rests on the top edge of the cut bowl; he looks at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s4_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Bueno. Ahora mira bien el corte, porque aquí se entiende todo. Esto es lo que no te muestra nadie.",
+   "action": "He switches on the small flashlight and points it at the cut face of the toilet half on the bench, looking at the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_01.wav"
+  },
+  {
+   "id": "s4_02",
+   "a": "K2",
+   "b": "K3",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_02.wav",
+   "text": "El agua que usas trae cal disuelta. No se ve, pero está. Donde el agua se queda quieta, esa cal se va pegando a la loza, capa por capa.",
+   "action": "The flashlight beam slides slowly across the layered crust; a gloved fingertip traces the layers."
+  },
+  {
+   "id": "s4_03",
+   "a": "K4",
+   "b": "K5",
+   "text": "Por eso la línea amarilla está justo en el nivel del agua. Ahí el agua se queda quieta días enteros, se evapora un poquito, y deja la cal.",
+   "action": "He traces with his finger the horizontal line where the crust starts on the inside of the bowl, at the old water level, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_03.wav"
+  },
+  {
+   "id": "s4_04",
+   "a": "K5",
+   "b": "K6",
+   "text": "¿Y el color? La cal sola es blanca o gris. Lo amarillo y lo marrón es lo que se le va pegando: el óxido del agua y todo lo que pasa por ahí.",
+   "action": "He scrapes a little of the yellow-brown crust with his fingernail onto the bench, looks at the colour and talks to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_04.wav"
+  },
+  {
+   "id": "s4_05",
+   "a": "K7",
+   "b": "K8",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_05.wav",
+   "text": "Ahora mira el borde de arriba. Por adentro corre un canal, y de ahí salen los agujeritos que lavan la taza cuando descargas.",
+   "action": "The flashlight beam moves slowly along the hollow channel inside the rim and the blocked holes below it."
+  },
+  {
+   "id": "s4_06",
+   "a": "K9",
+   "b": "K10",
+   "text": "Aquí están casi todos tapados. ¿Qué pasa? El agua ya no lava la taza pareja: baja por dos o tres chorros, y el resto se va ensuciando.",
+   "action": "He pokes the blocked holes under the rim one after another with the tip of a pencil, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_06.wav"
+  },
+  {
+   "id": "s4_07",
+   "a": "K10",
+   "b": "K11",
+   "text": "Y esta es la curva, el sifón. Por aquí tiene que pasar todo cuando descargas. Mira cuánto espacio le queda al agua.",
+   "action": "He runs his finger along the curved trap channel of the cut toilet from top to bottom, following the curve, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_07.wav"
+  },
+  {
+   "id": "s4_08",
+   "a": "K12",
+   "b": "K13",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_08.wav",
+   "text": "Donde debería haber un tubo liso, hay una piedra rugosa. El agua pierde fuerza, el papel se engancha, y la descarga se siente floja.",
+   "action": "The camera stays on the rough narrow channel; a small wad of toilet paper slides down and snags on the crust."
+  },
+  {
+   "id": "s4_08b",
+   "a": "K15",
+   "b": "K16",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_08b.wav",
+   "text": "Mira el grosor. Arriba de la curva, casi un dedo de piedra. Y abajo, en el codo, todavía más.",
+   "action": "The gloved fingertip moves from the crust at the top of the curve down to the thicker crust at the bottom bend."
+  },
+  {
+   "id": "s4_09",
+   "a": "K17",
+   "b": "K18",
+   "text": "Esto lleva años, ¿eh? No se hizo en una semana, y no se va en una pasada. Si alguien te promete eso, te está vendiendo algo.",
+   "action": "He shakes his head slowly and talks to the camera, tapping the crust with the flashlight.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_09.wav"
+  },
+  {
+   "id": "s4_10",
+   "a": "K18",
+   "b": "K19",
+   "text": "Y esto no era un inodoro abandonado, ¿eh? Funcionaba. Lo usaban todos los días, y lo limpiaban. Pero por arriba.",
+   "action": "He pats the toilet half like an old car and talks to the camera, then glances at the top edge of the bowl.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s4_10.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S4/vlog_S4.mp4"
+}

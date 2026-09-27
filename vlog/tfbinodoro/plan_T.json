@@ -1,0 +1,386 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/T",
+ "face": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_vecino_face.png",
+  "S1K0": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S1/anc/K0.png",
+  "S2K0": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S2/anc/K0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K1",
+   "from": [
+    "S1K0"
+   ],
+   "prompt": "An old white porcelain toilet lying on its side on a folded dirty blanket; gloved hands press the spinning disc of an angle grinder against the porcelain, the disc just touching, the first orange sparks and a puff of white dust. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same close-up, a moment later: the disc is halfway into the bowl, throwing a wide fan of orange sparks and a cloud of white dust drifting toward the open door. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "S1K0"
+   ],
+   "prompt": "The old white toilet just sawn in half lengthwise lies on the blanket, the two halves still pressed together, a thin cut line all around, white dust everywhere; gloved hands grip both halves. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same close-up, a moment later: the gloved hands have pulled the two halves apart, the cut face revealing the curved channel lined with thick yellow-brown and grey limescale crust. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "S1K0"
+   ],
+   "prompt": "Macro view of the cut face of the toilet trap: thick rough yellow-brown limescale crust with a dark narrow hole through the middle, like stone. EXTREME CLOSE-UP of the crust ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same macro view, a moment later, slightly closer: the rough texture and layers of the crust, fine white dust settling on it. EXTREME CLOSE-UP of the crust ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "S1K0"
+   ],
+   "prompt": "Macro view: a man's bare fingernail pressed against the yellow-brown limescale crust inside the cut toilet trap. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same macro view, a moment later: the fingernail has scratched a short groove in the crust, yellow-brown powder crumbling off. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "S1K0"
+   ],
+   "prompt": "The cut toilet half lifted a little by gloved hands, seen from the side, white dust sliding off the cut face. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same close-up, a moment later: the half is tilted toward the camera, showing the whole crusted curve inside. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "S2K0"
+   ],
+   "prompt": "Looking down into the bowl of a toilet right after flushing: the water level is high, swirling slowly, a little toilet paper floating. EXTREME CLOSE-UP of the toilet bowl ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same view, a moment later: the water is still high and swirling slowly, only slightly lower, the paper still there. EXTREME CLOSE-UP of the toilet bowl ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "S2K0"
+   ],
+   "prompt": "Close view of the inside of the toilet bowl at the water line: a thick yellow-brown ring of limescale just above the still water. EXTREME CLOSE-UP of the toilet bowl ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same close view, a moment later, slightly further along the ring, the still water reflecting the window light. EXTREME CLOSE-UP of the toilet bowl ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "S2K0"
+   ],
+   "prompt": "Seen from inside the bowl looking up under the rim: the row of small rim holes, most blocked with white-brown crust, dry. EXTREME CLOSE-UP of the toilet rim ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same view under the rim, a moment later: water trickles out of only two of the holes, the others stay dry and blocked. EXTREME CLOSE-UP of the toilet rim ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "S2K0"
+   ],
+   "prompt": "A toilet brush held in a hand scrubbing hard inside the bowl above the yellow ring, foam. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same close-up, a moment later: the brush lifted out, the yellow ring still exactly there under the foam. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "S2K0"
+   ],
+   "prompt": "Looking down into the toilet bowl as it is flushed: the water rises slowly with a wad of toilet paper turning in it. EXTREME CLOSE-UP of the toilet bowl ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K20",
+   "from": [
+    "K19"
+   ],
+   "prompt": "Same view, a moment later: the water has risen higher, the paper still turning, not going down. EXTREME CLOSE-UP of the toilet bowl ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K21",
+   "from": [
+    "S1K0"
+   ],
+   "prompt": "Macro view of the lowest bend inside the cut toilet trap, in deep shadow, only the edge of rough crust visible. EXTREME CLOSE-UP of the crust ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K22",
+   "from": [
+    "K21"
+   ],
+   "prompt": "Same macro view, a moment later: a flashlight beam from the side catches the edge of a hard crust ridge in the bend, the rest still in shadow. EXTREME CLOSE-UP of the crust ONLY, the detail fills the whole frame; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K23",
+   "from": [
+    "S1K0"
+   ],
+   "prompt": "Low view at floor level: the angle grinder cutting into the toilet on the blanket, a man's knee and gloved hands, sparks and dust flying toward the camera. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K24",
+   "from": [
+    "K23"
+   ],
+   "prompt": "Same low view, a moment later: a thick cloud of white dust fills half the frame, sparks still flying. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K25",
+   "from": [
+    "S1K0"
+   ],
+   "prompt": "A gloved hand lays one cut half of the toilet down on the blanket, cut face up. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K26",
+   "from": [
+    "K25"
+   ],
+   "prompt": "Same close-up, a moment later: the half lies still, cut face up, the crusted curve fully visible, dust settling. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K27",
+   "from": [
+    "S2K0"
+   ],
+   "prompt": "A gloved hand tilts a glass jug of steaming vinegar over the yellow ring inside a toilet bowl, the stream starting. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K28",
+   "from": [
+    "K27"
+   ],
+   "prompt": "Same close-up, a moment later: the steaming vinegar runs down over the ring into the bowl. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K29",
+   "from": [
+    "S2K0"
+   ],
+   "prompt": "A gloved hand holds a dripping-wet pumice stone against the yellow ring inside the bowl. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K30",
+   "from": [
+    "K29"
+   ],
+   "prompt": "Same close-up, a moment later: a clean white stripe rubbed through the ring, grey mud running down. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K31",
+   "from": [
+    "S2K0"
+   ],
+   "prompt": "Under the toilet rim, a gloved hand pushes a thin wire into a blocked rim hole. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K32",
+   "from": [
+    "K31"
+   ],
+   "prompt": "Same close-up, a moment later: white crust crumbles out of the hole around the wire, and water trickles out of it. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  }
+ ],
+ "clips": [
+  {
+   "id": "t01",
+   "a": "K1",
+   "b": "K2",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The spinning grinder disc bites into the porcelain; sparks and white dust burst out."
+  },
+  {
+   "id": "t02",
+   "a": "K3",
+   "b": "K4",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The gloved hands pull the two halves apart and the crusted inside is revealed; dust falls."
+  },
+  {
+   "id": "t03",
+   "a": "K5",
+   "b": "K6",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The view slowly pushes in on the crust; fine dust settles."
+  },
+  {
+   "id": "t04",
+   "a": "K7",
+   "b": "K8",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The fingernail scratches along the crust; powder crumbles off."
+  },
+  {
+   "id": "t05",
+   "a": "K9",
+   "b": "K10",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The gloved hands tilt the cut half toward the camera; dust slides off."
+  },
+  {
+   "id": "t06",
+   "a": "K11",
+   "b": "K12",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The water in the bowl swirls slowly and drains very slowly."
+  },
+  {
+   "id": "t07",
+   "a": "K13",
+   "b": "K14",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The view glides slowly along the yellow ring at the water line."
+  },
+  {
+   "id": "t08",
+   "a": "K15",
+   "b": "K16",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The flush starts: water trickles from only two holes under the rim, the rest stay blocked."
+  },
+  {
+   "id": "t09",
+   "a": "K17",
+   "b": "K18",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The brush scrubs hard and is lifted away; the yellow ring is still there."
+  },
+  {
+   "id": "t10",
+   "a": "K19",
+   "b": "K20",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The water rises slowly, the paper turns and does not go down."
+  },
+  {
+   "id": "t11",
+   "a": "K21",
+   "b": "K22",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "A flashlight beam slowly sweeps into the dark bend and catches the edge of a hard ridge."
+  },
+  {
+   "id": "t12",
+   "a": "K23",
+   "b": "K24",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "Sparks and white dust fly toward the camera from the grinder cutting the porcelain."
+  },
+  {
+   "id": "t13",
+   "a": "K25",
+   "b": "K26",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The half is laid down cut face up; dust settles over the crusted curve."
+  },
+  {
+   "id": "t14",
+   "a": "K27",
+   "b": "K28",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "Steaming vinegar pours over the yellow ring."
+  },
+  {
+   "id": "t15",
+   "a": "K29",
+   "b": "K30",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The wet pumice rubs a clean white stripe through the ring."
+  },
+  {
+   "id": "t16",
+   "a": "K31",
+   "b": "K32",
+   "kf": true,
+   "detail": true,
+   "secs": 4,
+   "action": "The wire pushes into the rim hole and crust crumbles out; water starts to trickle."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/T/vlog_T.mp4"
+}

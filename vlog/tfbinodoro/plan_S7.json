@@ -1,0 +1,352 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S7",
+ "face": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a completely new place: nothing from the workshop of the first image remains. The place is the small real bathroom of a modest family house in Latin America: white wall tiles up to shoulder height with greyish grout, pale green painted wall above, an ordinary white ceramic toilet with its tank against the wall and the seat and lid up, a toilet brush in a plastic holder beside it, a small white sink with a chrome tap and a bar of soap, a plastic shower curtain on the right, a towel on a hook, a small bathroom rug; the toilet bowl has a thick yellow-brown ring of limescale at the water line and brownish streaks under the rim. He is the man of the reference photo — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it, with yellow rubber gloves on. He kneels beside the toilet with the seat and lid up; on the floor beside him: a red plastic bucket full of water, a plastic cup, an old yellow sponge, a glass jug, a grey pumice stone, a thin wire, a small round hand mirror and a roll of toilet paper. He looks at the camera, mid-sentence. Medium shot from the other side of the bathroom, near the sink, at the eye level of a kneeling man. Light: daylight from a frosted window on the left above the toilet, plus a ceiling lamp with a plain warm bulb; the tiles near the window brighter and cooler, the corner by the door dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the red bucket of water by the handle, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "The red bucket tilted by gloved hands pours a big splash of water into the toilet bowl all at once. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Close view of the toilet bowl a moment later: the water swirls down the drain and the level in the bowl is left very low. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he sets the empty bucket down beside the toilet, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "A gloved hand scoops the last water from the bottom of the toilet bowl with a plastic cup. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same close-up, a moment later: an old yellow sponge in the gloved hand pressed into the bottom of the dry bowl. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he wrings the sponge into the bucket, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place and same light as the first image, but a different camera angle: Same house, the small kitchen next to the bathroom: he stands at the stove, a steel pot of vinegar on the gas burner, a little steam rising, one gloved hand on the pot handle, looking at the camera. Daylight from a kitchen window. Medium shot, waist-up. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the burner is off; he holds the pot handle, steam rising, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A gloved hand pours steaming vinegar from a glass jug slowly around the rim of the empty toilet bowl, the liquid running down the white porcelain. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same close-up, a moment later: the jug moves along the far side of the rim, the vinegar sheet covering the yellow ring and pooling in the bottom curve. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: back in the bathroom, he kneels beside the toilet with the empty jug, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the jug with the spoon in it, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: a paper note is taped on the closed lid; he looks at the camera with a grin. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "A gloved hand dips a grey pumice stone into the water at the bottom of the bowl, the stone dripping. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same close-up, a moment later: the wet pumice glides lightly along the yellow ring, a clean white line opening behind it, grey mud running down. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the lid is up; he holds the wet pumice, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: two fingers up, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K18"
+   ],
+   "prompt": "A small round hand mirror held under the rim of the toilet bowl by a gloved hand reflects the row of rim holes, several blocked with crust. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K20",
+   "from": [
+    "K19"
+   ],
+   "prompt": "Same close-up, a moment later: a thin wire pokes into one of the holes seen in the mirror, a little white crust crumbling out. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K21",
+   "from": [
+    "K18"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the mirror and the wire, kneeling beside the toilet, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K22",
+   "from": [
+    "K21"
+   ],
+   "prompt": "Gloved fingers press long strips of toilet paper soaked in vinegar flat against the yellow ring inside the bowl. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K23",
+   "from": [
+    "K22"
+   ],
+   "prompt": "Same close-up, a moment later: the wet paper strips cover the whole ring and the underside of the rim, stuck flat to the porcelain. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K24",
+   "from": [
+    "K21"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera, the paper strips stuck inside the bowl behind him. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K25",
+   "from": [
+    "K24"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he points into the bottom of the bowl, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K26",
+   "from": [
+    "K25"
+   ],
+   "prompt": "Looking down into the drained toilet bowl: at the bottom front, a larger round hole partly blocked with yellow-brown crust; a narrow bottle brush held in a gloved hand enters from the bottom edge. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K27",
+   "from": [
+    "K26"
+   ],
+   "prompt": "Same view, a moment later: the narrow brush scrubs at the rim of the larger hole, flakes of crust coming loose. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K28",
+   "from": [
+    "K25"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the narrow brush up, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K29",
+   "from": [
+    "K28"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he points down with a knowing look at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s7_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Y ahora sí, los detalles que hacen la diferencia. Primero, cómo bajar el agua de la taza sin volverte loco.",
+   "action": "He holds up a plastic cup and a sponge, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_01.wav"
+  },
+  {
+   "id": "s7_02",
+   "a": "K2",
+   "b": "K3",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_02.wav",
+   "text": "Con la llave cerrada y ya descargado, queda un poco de agua abajo. Si echas un balde de agua de golpe, el sifón chupa y el nivel baja solo.",
+   "action": "A bucket of water is dumped into the bowl in one go; it swirls and the water level drops very low."
+  },
+  {
+   "id": "s7_03",
+   "a": "K5",
+   "b": "K6",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_03.wav",
+   "text": "Lo que queda lo sacas con un vaso, y el fondo con una esponja vieja, que después tiras. Con guantes, siempre.",
+   "action": "The cup scoops out the remaining water, then the sponge soaks up the bottom."
+  },
+  {
+   "id": "s7_04",
+   "a": "K8",
+   "b": "K9",
+   "text": "¿Cuánto vinagre? Para un inodoro normal, unos dos litros. Lo caliento en una olla, hasta que sale vapor, y lo apago antes de que hierva.",
+   "action": "He looks at the steam rising from the pot, then turns off the burner knob, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_04.wav"
+  },
+  {
+   "id": "s7_05",
+   "a": "K10",
+   "b": "K11",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_05.wav",
+   "text": "Y lo echo despacio, con una jarra, dando la vuelta por todo el borde. Así baja por la loza, moja la línea, y llena la curva de abajo.",
+   "action": "The jug pours slowly all the way around the rim, the vinegar running down over the ring into the bottom."
+  },
+  {
+   "id": "s7_06",
+   "a": "K12",
+   "b": "K13",
+   "text": "Si no tienes vinagre, sirve el ácido cítrico en polvo, el de cocina, disuelto en agua caliente. Hace lo mismo, y casi no tiene olor.",
+   "action": "He holds up a small clear bag of white citric acid powder, then pours a little into the jug of hot water and stirs it with a spoon, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_06.wav"
+  },
+  {
+   "id": "s7_07",
+   "a": "K13",
+   "b": "K14",
+   "text": "Y mientras espera, tapa bajada, y que nadie lo use. Yo le pongo un papel en la tapa, porque siempre hay alguien que se olvida.",
+   "action": "He closes the lid and sticks a handwritten paper note on it with tape, the writing turned away from the camera, talking to the camera with a grin.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_07.wav"
+  },
+  {
+   "id": "s7_08",
+   "a": "K15",
+   "b": "K16",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_08.wav",
+   "text": "La piedra pómez: la mojas en el agua de la taza, y la pasas como si borraras un lápiz. Sin apretar. Cada tanto la vuelves a mojar.",
+   "action": "The pumice is wetted and then glides lightly along the ring like an eraser; a clean white line appears behind it."
+  },
+  {
+   "id": "s7_09",
+   "a": "K17",
+   "b": "K18",
+   "text": "Si la línea es muy gruesa, no la saques toda el primer día. Una pasada, otra noche de vinagre, y al día siguiente otra pasada.",
+   "action": "He points at a part of the ring that is still yellow and holds up one finger, then two, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_09.wav"
+  },
+  {
+   "id": "s7_10",
+   "a": "K19",
+   "b": "K20",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_10.wav",
+   "text": "Los agujeros del borde. Te pones de costado, con un espejito, y los ves. El alambre entra y sale, sin forzar, como sacando un tapón.",
+   "action": "The mirror shows the blocked holes under the rim; the thin wire goes in and out of one, crust crumbling out."
+  },
+  {
+   "id": "s7_11",
+   "a": "K22",
+   "b": "K23",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_11.wav",
+   "text": "Y el truco del papel: tiras de papel higiénico empapadas en vinagre, pegadas contra la línea y bajo el borde. El papel sostiene el ácido ahí.",
+   "action": "Wet strips of toilet paper are pressed flat one after another along the ring and under the rim."
+  },
+  {
+   "id": "s7_12",
+   "a": "K24",
+   "b": "K25",
+   "text": "En muchos inodoros, además, hay un agujero más grande abajo, al fondo, que empuja el agua hacia la curva. Si está tapado, la descarga sale débil.",
+   "action": "He leans over the bowl and points down into the bottom front of the bowl, where there is a larger hole, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_12.wav"
+  },
+  {
+   "id": "s7_13",
+   "a": "K26",
+   "b": "K27",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_13.wav",
+   "text": "A ese le llegas con la mano, con guante, o con un cepillo angosto. Lo raspas suave, y el vinagre de la noche hace el resto.",
+   "action": "The narrow brush scrubs gently at the edge of the larger hole; flakes of crust come loose."
+  },
+  {
+   "id": "s7_14",
+   "a": "K28",
+   "b": "K29",
+   "text": "Y hay una variante de esto que funciona todavía mejor cuando la costra está en la curva escondida, donde no llegas. Te dejé exactamente cómo hacerlo en la descripción.",
+   "action": "He leans toward the camera and lowers his voice a little, pointing down toward the bottom of the frame, with a knowing look.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7_14.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S7/vlog_S7.mp4"
+}

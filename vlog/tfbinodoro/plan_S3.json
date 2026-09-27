@@ -1,0 +1,293 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S3",
+ "face": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a new place. The place is a real, messy home garage-workshop of a working-class house in Latin America: concrete floor with old stains and cement dust, a wooden workbench covered in tools, tins, rags and offcuts, a pegboard with hanging tools, stacked plastic buckets, a bicycle leaning on the wall, bare painted brick walls with damp patches, the wide garage door on the left open to the street. He is the man of the reference photo — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. The two halves of an old white porcelain toilet sawn in half lengthwise: the flat cut face shows the inside of the curved trap channel lined with a thick, rough, layered crust of yellow-brown and grey limescale, like stone, narrowing the passage to less than half now stand upright on the wooden workbench, their cut faces toward the camera. He stands behind the workbench, waist-up, one hand resting on a toilet half, talking to the camera; the open garage door on the left edge. Light: flat overcast daylight coming in through the open garage door on the left, plus one plain fluorescent tube on the ceiling; the side near the door a little brighter and cooler, the back corners dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks toward the garage door on the left with a half smile and raised eyebrows. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "Same place and same light as the first image, but a different camera angle: Same garage, the camera turned a little to the left: the neighbour, the neighbour of the second input image (his face): a heavy-set man around 65, bald on top with grey hair on the sides, a thick grey moustache, a faded light-blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck, leans on the end of the workbench with his arms crossed, looking at the toilet halves and then at the presenter; the presenter stands at the right edge of the frame, partly visible, listening."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2",
+    "W"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the neighbour lifts both hands in a shrug; the presenter at the right edge listens. The neighbour is exactly the man of the second input image (his face)."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place and same light as the first image, but a different camera angle: The camera is back on the presenter behind the workbench with the toilet halves, turned slightly toward the neighbour off-frame on the left, answering him calmly with one open hand raised. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera, one hand on the cut toilet half. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the clear glass of tap water up beside the toilet halves, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "Same place and same light as the first image, but a different camera angle: Same garage, closer on the neighbour, the neighbour of the second input image (his face): a heavy-set man around 65, bald on top with grey hair on the sides, a thick grey moustache, a faded light-blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck, standing by the workbench, waist-up, index finger raised, a knowing grin; a toilet half at the edge of the frame; the presenter is not in this frame."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7",
+    "W"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the neighbour nods to himself, arms crossed again, pleased with himself. The neighbour is exactly the man of the second input image (his face)."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place and same light as the first image, but a different camera angle: The camera is back on the presenter behind the workbench, nodding with a half grin toward the left; a plain white plastic bottle without any label stands on the bench beside the toilet halves. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the plain white plastic bottle up toward the camera, serious. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Hands in thick orange rubber gloves pour a little clear liquid from a plain white plastic bottle into a red bucket that is already half full of water; clear safety glasses lie on the bench beside it. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same close-up, a moment later: the gloved hands set the plain white bottle down beside the red bucket; clear safety glasses and a folded dust mask on the bench. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he now wears clear safety glasses and orange rubber gloves, standing behind the workbench beside the red bucket, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds up the dull, spotted chrome flush lever toward the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the blank-labelled plastic bottle, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he wags his index finger 'no' at the camera, the white tub on the bench beside him. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the glass jar on the bench overflows a little with white foam; he looks at the camera with raised eyebrows. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the rag, looking at the camera, the jar beside him with flat liquid. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K18"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the cola bottle stands aside on the bench; he looks at the camera with a small shrug. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K20",
+   "from": [
+    "K19"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: both gloved hands raised at shoulder height, looking at the camera with a grin. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s3_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Ahora sí, con calma. Porque cuando subí el video del corte a las redes, lo primero que me dijeron fue lo mismo que dice mi vecino.",
+   "action": "He wipes his hands on his apron and talks to the camera, glancing once toward the open garage door on the left.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_01.wav"
+  },
+  {
+   "id": "s3_w1",
+   "a": "K2",
+   "b": "K3",
+   "text": "Mejor compra uno nuevo y te ahorras todo este lío.",
+   "action": "The neighbour, arms crossed, shakes his head and speaks to the presenter with a smirk; the presenter listens.",
+   "refs": [
+    "W"
+   ],
+   "line": "Mejor compra uno nuevo y te ahorras todo este lío.",
+   "secs": 6,
+   "who": "the neighbour (the fourth reference image is his face)",
+   "voice": "the neighbour (the fourth reference image is his face), in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man; the presenter does NOT speak"
+  },
+  {
+   "id": "s3_02",
+   "a": "K4",
+   "b": "K5",
+   "text": "Mira, si el tuyo está rajado, o si pierde agua por la base, sí: ese se cambia. Esto no arregla una loza rota.",
+   "action": "He answers the neighbour off-frame on the left calmly, then runs a finger along the cut edge of the porcelain.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_02.wav"
+  },
+  {
+   "id": "s3_03",
+   "a": "K5",
+   "b": "K6",
+   "text": "Pero si está sano, el problema no es el inodoro. Es tu agua. Pones uno nuevo con la misma agua dura y en unos años tienes esta misma costra.",
+   "action": "He taps the thick crust inside the cut trap with his knuckle, then picks up a clear glass of tap water from the bench and holds it up, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_03.wav"
+  },
+  {
+   "id": "s3_w2",
+   "a": "K7",
+   "b": "K8",
+   "text": "Yo le echo ácido muriático toda la noche y listo.",
+   "action": "The neighbour lifts his index finger and says his line with a knowing grin, nodding.",
+   "refs": [
+    "W"
+   ],
+   "line": "Yo le echo ácido muriático toda la noche y listo.",
+   "secs": 6,
+   "who": "the neighbour (the fourth reference image is his face)",
+   "voice": "the neighbour (the fourth reference image is his face), in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man; the presenter does NOT speak"
+  },
+  {
+   "id": "s3_04",
+   "a": "K9",
+   "b": "K10",
+   "text": "Y funciona, ¿eh? El muriático es más rápido que el vinagre. Pero tiene sus reglas, y casi nadie las cumple.",
+   "action": "He nods toward the neighbour off-frame, then picks up the plain white plastic bottle and holds it up to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_04.wav"
+  },
+  {
+   "id": "s3_05",
+   "a": "K11",
+   "b": "K12",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_05.wav",
+   "text": "Siempre diluido, nunca puro. Guantes, lentes y la ventana abierta. Y nunca, pero nunca, lo mezcles con cloro: eso suelta un gas tóxico.",
+   "action": "The gloved hands pour a small amount of the clear liquid slowly into the bucket of water, then set the bottle down."
+  },
+  {
+   "id": "s3_06",
+   "a": "K13",
+   "b": "K14",
+   "text": "Y cuidado con los cromados y los herrajes: el muriático los mancha y los come. Por eso yo empiezo siempre por lo suave, y subo sólo si hace falta.",
+   "action": "He picks up an old chrome toilet flush lever from the bench, dull and spotted, turns it in his gloved fingers and talks to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_06.wav"
+  },
+  {
+   "id": "s3_07",
+   "a": "K14",
+   "b": "K15",
+   "text": "¿Y los antisarro de la ferretería? Casi todos son eso mismo: un ácido. Lee la etiqueta, respeta el tiempo, y nunca los mezcles entre ellos.",
+   "action": "He sets the lever down and picks up a plastic bottle of descaler with a blank white label, turns it as if reading the back, then looks at the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_07.wav"
+  },
+  {
+   "id": "s3_09",
+   "a": "K15",
+   "b": "K16",
+   "text": "Y la soda cáustica, la de destapar cañerías, para esto no sirve. Es para la grasa, no para la cal. Y en un inodoro con agua te puede salpicar.",
+   "action": "He points at a small white plastic tub of caustic soda granules on the bench and shakes his head, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_09.wav"
+  },
+  {
+   "id": "s3_10",
+   "a": "K16",
+   "b": "K17",
+   "text": "¿Y el famoso bicarbonato con vinagre? Hace mucha espuma, y parece que trabaja. Pero uno anula al otro: lo que queda es agua con un poco de sal.",
+   "action": "He tips a spoonful of white baking soda into a glass jar of vinegar on the bench; it fizzes up with white foam; he looks at the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_10.wav"
+  },
+  {
+   "id": "s3_11",
+   "a": "K17",
+   "b": "K18",
+   "text": "Para el sarro, el vinagre solo. La espuma queda linda en un video, pero no le hace nada a la costra.",
+   "action": "He wipes the foam off the bench with a rag while talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_11.wav"
+  },
+  {
+   "id": "s3_12",
+   "a": "K18",
+   "b": "K19",
+   "text": "¿Y la gaseosa de cola? Tiene un ácido, sí, pero flojo, y deja azúcar pegada. El vinagre hace más, y cuesta menos.",
+   "action": "He picks up a plastic bottle of dark cola soda from the bench, shows it to the camera and puts it aside with a small shrug.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_12.wav"
+  },
+  {
+   "id": "s3_08",
+   "a": "K19",
+   "b": "K20",
+   "text": "Y otra cosa que me dijeron mucho: que el del video metía la mano sin nada. Guantes siempre. Esto es un inodoro, no una taza de café.",
+   "action": "He raises both hands in orange rubber gloves, turning them to show them, with a grin, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s3_08.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S3/vlog_S3.mp4"
+}

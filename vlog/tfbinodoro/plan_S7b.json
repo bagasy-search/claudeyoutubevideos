@@ -1,0 +1,129 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S7b",
+ "face": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a completely new place: nothing from the workshop of the first image remains. The place is the small real bathroom of a modest family house in Latin America: white wall tiles up to shoulder height with greyish grout, pale green painted wall above, an ordinary white ceramic toilet with its tank against the wall and the seat and lid up, a toilet brush in a plastic holder beside it, a small white sink with a chrome tap and a bar of soap, a plastic shower curtain on the right, a towel on a hook, a small bathroom rug; the toilet bowl has a thick yellow-brown ring of limescale at the water line and brownish streaks under the rim. He is the man of the reference photo — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. The frosted window on the left is open a little; he stands in the bathroom between the sink and the toilet, taking off one yellow rubber glove, looking at the camera. A red plastic bucket with some water stands beside the toilet. Medium shot, waist-up, from the doorway. Light: daylight from a frosted window on the left above the toilet, plus a ceiling lamp with a plain warm bulb; the tiles near the window brighter and cooler, the corner by the door dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the window is open wider; he looks at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the seat hinges are covered by a plastic bag; he looks at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Gloved hands lift the red plastic bucket of cloudy water beside the toilet. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same close-up, a moment later: the gloved hands pour the bucket of water slowly into the toilet bowl. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he sets the empty bucket down, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera with a doubtful face, one hand on the tank. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: warning finger raised, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: crouched, pointing at the base of the toilet, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s7b_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Tres cuidados mientras trabajas. Ventana abierta o el extractor prendido, aunque sea vinagre: el olor cansa, y en un baño chico se junta.",
+   "action": "He pushes the frosted window open a bit more and switches on a small wall extractor fan, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7b_01.wav"
+  },
+  {
+   "id": "s7b_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Si los herrajes o las bisagras del asiento son de metal, tápalos con una bolsa o sácalos. El ácido, aunque sea suave, los mancha.",
+   "action": "He covers the chrome hinges of the toilet seat with a small plastic bag, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7b_02.wav"
+  },
+  {
+   "id": "s7b_03",
+   "a": "K3",
+   "b": "K4",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7b_03.wav",
+   "text": "Y el agua que sacaste de la taza la juntas en un balde, y cuando terminas la tiras por el mismo inodoro. Nunca en el fregadero.",
+   "action": "The bucket is lifted and its water poured slowly into the toilet bowl."
+  },
+  {
+   "id": "s7b_04",
+   "a": "K5",
+   "b": "K6",
+   "text": "¿Y cuándo esto no alcanza? Si la costra ya salió y la descarga sigue floja, y el agua sube, el tapón está más allá, en la cañería. Eso ya es otro trabajo.",
+   "action": "He presses the flush, watches the water rise slowly in the bowl and then drop, and talks to the camera with a doubtful face.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7b_04.wav"
+  },
+  {
+   "id": "s7b_05",
+   "a": "K6",
+   "b": "K7",
+   "text": "Si al bajar el agua ves una rajadura en la loza, aunque sea finita, no sigas. Un inodoro rajado no se arregla con esto: se cambia.",
+   "action": "He runs a gloved finger along the porcelain as if searching for a crack, then raises a warning finger, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7b_05.wav"
+  },
+  {
+   "id": "s7b_06",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y si pierde agua por la base, en el piso, tampoco es sarro. Eso es el sello de abajo, y es otro arreglo.",
+   "action": "He crouches and points at the base of the toilet where it meets the floor tiles, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s7b_06.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S7b/vlog_S7b.mp4"
+}

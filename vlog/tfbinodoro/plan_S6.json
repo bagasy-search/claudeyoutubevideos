@@ -1,0 +1,173 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S6",
+ "face": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a new place. The place is a real, messy home garage-workshop of a working-class house in Latin America: concrete floor with old stains and cement dust, a wooden workbench covered in tools, tins, rags and offcuts, a pegboard with hanging tools, stacked plastic buckets, a bicycle leaning on the wall, bare painted brick walls with damp patches, the wide garage door on the left open to the street. He is the man of the reference photo — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. He stands beside the workbench, the two halves of an old white porcelain toilet sawn in half lengthwise: the flat cut face shows the inside of the curved trap channel lined with a thick, rough, layered crust of yellow-brown and grey limescale, like stone, narrowing the passage to less than half on the bench beside him, and he holds a single sheet of cream-coloured printed paper in one hand, lowered at his side, looking at the camera with a serious face. Medium shot, waist-up. Light: flat overcast daylight coming in through the open garage door on the left, plus one plain fluorescent tube on the ceiling; the side near the door a little brighter and cooler, the back corners dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds up one finger, the sheet face down on the bench. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: his open hand is held over the cut toilet half, he shakes his head at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: a calm, reassuring expression, one hand open toward the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he taps his wrist, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the dry pumice stone up toward the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds up three fingers, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the sheet of cream paper up at chest height, facing the camera, printed side toward the camera but too far to read, looking at the camera seriously. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the sheet at his side, looking at the camera with a friendly face. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he points down with his index finger, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he looks at the camera with a small grin, turned half toward the right. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s6_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Y ahora el error. Uno solo, que te arruina todo el trabajo, y lo veo en casi todas las casas.",
+   "action": "He puts the sheet of paper down on the bench, face down, and talks to the camera seriously, holding up one finger.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s6_01.wav"
+  },
+  {
+   "id": "s6_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Echar el producto con la taza llena. El agua lo diluye, la costra de abajo ni se entera, y dices: esto no sirve. Y sí sirve.",
+   "action": "He mimes pouring from a bottle into the full toilet bowl of the cut half, shaking his head, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s6_02.wav"
+  },
+  {
+   "id": "s6_02b",
+   "a": "K2",
+   "b": "K3",
+   "text": "Y si ya lo echaste con la taza llena, no pasa nada, ¿eh? Bajas el agua, calientas vinagre de nuevo, y repites. No se perdió nada.",
+   "action": "He shrugs reassuringly and talks to the camera with a calm hand gesture.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s6_02b.wav"
+  },
+  {
+   "id": "s6_03",
+   "a": "K3",
+   "b": "K4",
+   "text": "El segundo error es la impaciencia. Frotar fuerte a los cinco minutos. La costra no está blanda todavía y terminas rayando.",
+   "action": "He mimes scrubbing hard with his fist, then stops and taps his wrist as if pointing at a watch, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s6_03.wav"
+  },
+  {
+   "id": "s6_04",
+   "a": "K4",
+   "b": "K5",
+   "text": "Y el tercero: la piedra pómez seca. Raya el esmalte, y un esmalte rayado junta sarro más rápido.",
+   "action": "He picks up a dry grey pumice stone from the bench and holds it up, rubbing it with his thumb, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s6_04.wav"
+  },
+  {
+   "id": "s6_04b",
+   "a": "K5",
+   "b": "K6",
+   "text": "Tres errores, y los tres te hacen creer que el sarro no sale.",
+   "action": "He puts the pumice down and counts three fingers to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s6_04b.wav"
+  },
+  {
+   "id": "s6_05",
+   "a": "K6",
+   "b": "K7",
+   "text": "Presta muchísima atención a esta imagen, porque probablemente sea la parte más importante del video.",
+   "action": "He picks up the sheet of cream paper from the bench and slowly raises it toward the camera, serious.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s6_05.wav"
+  },
+  {
+   "id": "s6_06",
+   "a": "K7",
+   "b": "K8",
+   "text": "Esto lo tengo ordenado junto con otros arreglos en la colección del canal.",
+   "action": "He lowers the sheet, taps it with his finger and talks to the camera, calm.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s6_06.wav"
+  },
+  {
+   "id": "s6_06b",
+   "a": "K8",
+   "b": "K9",
+   "text": "Si estás en el televisor, apunta la cámara de tu teléfono a este código; si estás en el teléfono, el enlace está abajo.",
+   "action": "He mimes holding up a phone toward the camera with one hand, then points down, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s6_06b.wav"
+  },
+  {
+   "id": "s6_07",
+   "a": "K9",
+   "b": "K10",
+   "text": "Y ahora te muestro cómo lo corté, y un par de pruebas que te van a convencer.",
+   "action": "He puts the sheet down on the bench and turns toward the floor on the right, where the grinder is, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/s6_07.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/S6/vlog_S6.mp4"
+}

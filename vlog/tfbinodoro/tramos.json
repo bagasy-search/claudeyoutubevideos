@@ -1,0 +1,765 @@
+[
+ {
+  "i": 0,
+  "s": 0.0,
+  "e": 4.345,
+  "d": 4.345,
+  "t": "Esto es lo que tienes adentro de tu inodoro. Y no, no se va limpiando."
+ },
+ {
+  "i": 1,
+  "s": 4.345,
+  "e": 13.745,
+  "d": 9.4,
+  "t": "Esta costra amarilla, dura como piedra, es sarro: la cal del agua, pegada capa por capa durante años, justo donde el cepillo nunca llega."
+ },
+ {
+  "i": 2,
+  "s": 13.745,
+  "e": 16.635,
+  "d": 2.89,
+  "t": "Uno viejo, tranquilo. Mira por qué lo saqué."
+ },
+ {
+  "i": 3,
+  "s": 16.635,
+  "e": 27.415,
+  "d": 10.78,
+  "t": "Si el agua te baja lenta, si tienes esa línea amarilla que no sale con nada, si los agujeritos del borde ya casi no echan agua… es esto. Y crece por dentro, donde no lo ves."
+ },
+ {
+  "i": 4,
+  "s": 27.415,
+  "e": 37.675,
+  "d": 10.26,
+  "t": "La buena noticia: esto se saca sin cambiar el inodoro. Con vinagre caliente, una piedra pómez y un alambre. Y te lo muestro completo ahora mismo, no al final."
+ },
+ {
+  "i": 5,
+  "s": 37.675,
+  "e": 45.615,
+  "d": 7.94,
+  "t": "Pero en la curva de abajo encontré otra cosa. Algo que explica por qué se te tapa con tan poco papel. Eso te lo enseño al final."
+ },
+ {
+  "i": 6,
+  "s": 45.615,
+  "e": 53.775,
+  "d": 8.16,
+  "t": "Vamos al baño de mi casa, que este sí está en uso. Primero, la llave de paso de la mochila: la cierras, y descargas una vez."
+ },
+ {
+  "i": 7,
+  "s": 53.775,
+  "e": 62.575,
+  "d": 8.8,
+  "t": "Ahora bajas el agua de la taza. Con un vaso y una esponja, casi hasta el fondo. Si el producto queda flotando en agua, no le hace nada a la costra."
+ },
+ {
+  "i": 8,
+  "s": 62.575,
+  "e": 70.305,
+  "d": 7.73,
+  "t": "Vinagre blanco, del común, bien caliente pero sin hervir. Lo echas despacio, por el borde, y que moje toda la línea amarilla."
+ },
+ {
+  "i": 9,
+  "s": 70.305,
+  "e": 77.825,
+  "d": 7.52,
+  "t": "Y lo dejas trabajar. Mínimo una hora; si la costra es vieja, toda la noche. Aquí el tiempo hace más que la fuerza."
+ },
+ {
+  "i": 10,
+  "s": 77.825,
+  "e": 86.805,
+  "d": 8.98,
+  "t": "Después, la piedra pómez. Siempre mojada, eh. Siempre. Frotas suave sobre la línea y la costra sale como un barro gris."
+ },
+ {
+  "i": 11,
+  "s": 86.805,
+  "e": 96.235,
+  "d": 9.43,
+  "t": "Los agujeritos de abajo del borde: un alambre fino, uno por uno. Y después, papel higiénico empapado en vinagre, pegado ahí debajo."
+ },
+ {
+  "i": 12,
+  "s": 96.235,
+  "e": 105.305,
+  "d": 9.07,
+  "t": "Abres la llave, descargas, y listo. Ese es el arreglo completo. Y una vez por semana, un vaso de vinagre en la taza, para que no vuelva."
+ },
+ {
+  "i": 13,
+  "s": 105.305,
+  "e": 113.195,
+  "d": 7.89,
+  "t": "Ahora sí, con calma. Porque cuando subí el video del corte a las redes, lo primero que me dijeron fue lo mismo que dice mi vecino."
+ },
+ {
+  "i": 14,
+  "s": 113.195,
+  "e": 121.695,
+  "d": 8.5,
+  "t": "Mira, si el tuyo está rajado, o si pierde agua por la base, sí: ese se cambia. Esto no arregla una loza rota."
+ },
+ {
+  "i": 15,
+  "s": 121.695,
+  "e": 131.285,
+  "d": 9.59,
+  "t": "Pero si está sano, el problema no es el inodoro. Es tu agua. Pones uno nuevo con la misma agua dura y en unos años tienes esta misma costra."
+ },
+ {
+  "i": 16,
+  "s": 131.285,
+  "e": 139.035,
+  "d": 7.75,
+  "t": "Y funciona, ¿eh? El muriático es más rápido que el vinagre. Pero tiene sus reglas, y casi nadie las cumple."
+ },
+ {
+  "i": 17,
+  "s": 139.035,
+  "e": 149.055,
+  "d": 10.02,
+  "t": "Siempre diluido, nunca puro. Guantes, lentes y la ventana abierta. Y nunca, pero nunca, lo mezcles con cloro: eso suelta un gas tóxico."
+ },
+ {
+  "i": 18,
+  "s": 149.055,
+  "e": 158.795,
+  "d": 9.74,
+  "t": "Y cuidado con los cromados y los herrajes: el muriático los mancha y los come. Por eso yo empiezo siempre por lo suave, y subo sólo si hace falta."
+ },
+ {
+  "i": 19,
+  "s": 158.795,
+  "e": 168.815,
+  "d": 10.02,
+  "t": "¿Y los antisarro de la ferretería? Casi todos son eso mismo: un ácido. Lee la etiqueta, respeta el tiempo, y nunca los mezcles entre ellos."
+ },
+ {
+  "i": 20,
+  "s": 168.815,
+  "e": 178.235,
+  "d": 9.42,
+  "t": "Y la soda cáustica, la de destapar cañerías, para esto no sirve. Es para la grasa, no para la cal. Y en un inodoro con agua te puede salpicar."
+ },
+ {
+  "i": 21,
+  "s": 178.235,
+  "e": 187.755,
+  "d": 9.52,
+  "t": "¿Y el famoso bicarbonato con vinagre? Hace mucha espuma, y parece que trabaja. Pero uno anula al otro: lo que queda es agua con un poco de sal."
+ },
+ {
+  "i": 22,
+  "s": 187.755,
+  "e": 194.095,
+  "d": 6.34,
+  "t": "Para el sarro, el vinagre solo. La espuma queda linda en un video, pero no le hace nada a la costra."
+ },
+ {
+  "i": 23,
+  "s": 194.095,
+  "e": 202.615,
+  "d": 8.52,
+  "t": "¿Y la gaseosa de cola? Tiene un ácido, sí, pero flojo, y deja azúcar pegada. El vinagre hace más, y cuesta menos."
+ },
+ {
+  "i": 24,
+  "s": 202.615,
+  "e": 211.415,
+  "d": 8.8,
+  "t": "Y otra cosa que me dijeron mucho: que el del video metía la mano sin nada. Guantes siempre. Esto es un inodoro, no una taza de café."
+ },
+ {
+  "i": 25,
+  "s": 211.415,
+  "e": 217.915,
+  "d": 6.5,
+  "t": "Bueno. Ahora mira bien el corte, porque aquí se entiende todo. Esto es lo que no te muestra nadie."
+ },
+ {
+  "i": 26,
+  "s": 217.915,
+  "e": 226.935,
+  "d": 9.02,
+  "t": "El agua que usas trae cal disuelta. No se ve, pero está. Donde el agua se queda quieta, esa cal se va pegando a la loza, capa por capa."
+ },
+ {
+  "i": 27,
+  "s": 226.935,
+  "e": 235.215,
+  "d": 8.28,
+  "t": "Por eso la línea amarilla está justo en el nivel del agua. Ahí el agua se queda quieta días enteros, se evapora un poquito, y deja la cal."
+ },
+ {
+  "i": 28,
+  "s": 235.215,
+  "e": 244.345,
+  "d": 9.13,
+  "t": "¿Y el color? La cal sola es blanca o gris. Lo amarillo y lo marrón es lo que se le va pegando: el óxido del agua y todo lo que pasa por ahí."
+ },
+ {
+  "i": 29,
+  "s": 244.345,
+  "e": 252.195,
+  "d": 7.85,
+  "t": "Ahora mira el borde de arriba. Por adentro corre un canal, y de ahí salen los agujeritos que lavan la taza cuando descargas."
+ },
+ {
+  "i": 30,
+  "s": 252.195,
+  "e": 261.315,
+  "d": 9.12,
+  "t": "Aquí están casi todos tapados. ¿Qué pasa? El agua ya no lava la taza pareja: baja por dos o tres chorros, y el resto se va ensuciando."
+ },
+ {
+  "i": 31,
+  "s": 261.315,
+  "e": 268.865,
+  "d": 7.55,
+  "t": "Y esta es la curva, el sifón. Por aquí tiene que pasar todo cuando descargas. Mira cuánto espacio le queda al agua."
+ },
+ {
+  "i": 32,
+  "s": 268.865,
+  "e": 277.415,
+  "d": 8.55,
+  "t": "Donde debería haber un tubo liso, hay una piedra rugosa. El agua pierde fuerza, el papel se engancha, y la descarga se siente floja."
+ },
+ {
+  "i": 33,
+  "s": 277.415,
+  "e": 284.345,
+  "d": 6.93,
+  "t": "Mira el grosor. Arriba de la curva, casi un dedo de piedra. Y abajo, en el codo, todavía más."
+ },
+ {
+  "i": 34,
+  "s": 284.345,
+  "e": 292.435,
+  "d": 8.09,
+  "t": "Esto lleva años, ¿eh? No se hizo en una semana, y no se va en una pasada. Si alguien te promete eso, te está vendiendo algo."
+ },
+ {
+  "i": 35,
+  "s": 292.435,
+  "e": 300.215,
+  "d": 7.78,
+  "t": "Y esto no era un inodoro abandonado, ¿eh? Funcionaba. Lo usaban todos los días, y lo limpiaban. Pero por arriba."
+ },
+ {
+  "i": 36,
+  "s": 300.215,
+  "e": 307.145,
+  "d": 6.93,
+  "t": "Y ahora el error. Uno solo, que te arruina todo el trabajo, y lo veo en casi todas las casas."
+ },
+ {
+  "i": 37,
+  "s": 307.145,
+  "e": 315.945,
+  "d": 8.8,
+  "t": "Echar el producto con la taza llena. El agua lo diluye, la costra de abajo ni se entera, y dices: esto no sirve. Y sí sirve."
+ },
+ {
+  "i": 38,
+  "s": 315.945,
+  "e": 325.015,
+  "d": 9.07,
+  "t": "Y si ya lo echaste con la taza llena, no pasa nada, ¿eh? Bajas el agua, calientas vinagre de nuevo, y repites. No se perdió nada."
+ },
+ {
+  "i": 39,
+  "s": 325.015,
+  "e": 333.595,
+  "d": 8.58,
+  "t": "El segundo error es la impaciencia. Frotar fuerte a los cinco minutos. La costra no está blanda todavía y terminas rayando."
+ },
+ {
+  "i": 40,
+  "s": 333.595,
+  "e": 341.225,
+  "d": 7.63,
+  "t": "Y el tercero: la piedra pómez seca. Raya el esmalte, y un esmalte rayado junta sarro más rápido."
+ },
+ {
+  "i": 41,
+  "s": 341.225,
+  "e": 345.515,
+  "d": 4.29,
+  "t": "Tres errores, y los tres te hacen creer que el sarro no sale."
+ },
+ {
+  "i": 42,
+  "s": 345.515,
+  "e": 351.715,
+  "d": 6.2,
+  "t": "Presta muchísima atención a esta imagen, porque probablemente sea la parte más importante del video."
+ },
+ {
+  "i": 43,
+  "s": 351.715,
+  "e": 393.015,
+  "d": 41.3,
+  "t": "Aquí está todo en una sola ficha. Paso uno: cierras la llave de la mochila, descargas y bajas el agua de la taza con un vaso y una esponja. Paso dos: vinagre blanco caliente, sin hervir, unos dos litros, echado por el borde para que moje la línea. Paso tres: tiempo. Una hora como mínimo, toda la noche si la costra es vieja. Paso cuatro: piedra pómez siempre mojada, suave, sobre la línea. Paso cinco: los agujeritos del borde con un alambre fino, y después papel empapado en vinagre pegado debajo. Y abajo, los tres errores: la taza llena, la impaciencia y la piedra seca."
+ },
+ {
+  "i": 44,
+  "s": 393.015,
+  "e": 397.485,
+  "d": 4.47,
+  "t": "Esto lo tengo ordenado junto con otros arreglos en la colección del canal."
+ },
+ {
+  "i": 45,
+  "s": 397.485,
+  "e": 404.875,
+  "d": 7.39,
+  "t": "Si estás en el televisor, apunta la cámara de tu teléfono a este código; si estás en el teléfono, el enlace está abajo."
+ },
+ {
+  "i": 46,
+  "s": 404.875,
+  "e": 410.175,
+  "d": 5.3,
+  "t": "Y ahora te muestro cómo lo corté, y un par de pruebas que te van a convencer."
+ },
+ {
+  "i": 47,
+  "s": 410.175,
+  "e": 419.665,
+  "d": 9.49,
+  "t": "¿Y cómo se corta un inodoro? Te lo cuento, pero primero lo importante: esto no hace falta para limpiar el tuyo. Yo lo corté para verlo por dentro."
+ },
+ {
+  "i": 48,
+  "s": 419.665,
+  "e": 428.485,
+  "d": 8.82,
+  "t": "Este lo saqué de una remodelación; ya lo iban a tirar. Bien vacío y lavado, y lo acuesto sobre una manta vieja para que no rebote."
+ },
+ {
+  "i": 49,
+  "s": 428.485,
+  "e": 437.945,
+  "d": 9.46,
+  "t": "Disco diamantado, el de cortar cerámica. Un disco común se gasta enseguida y se puede romper. Y agua cerca, para bajar el polvo."
+ },
+ {
+  "i": 50,
+  "s": 437.945,
+  "e": 448.115,
+  "d": 10.17,
+  "t": "Máscara para polvo, sí o sí: el polvo de la loza tiene sílice, y eso no se respira. Lentes, guantes, y nadie alrededor mirando de cerca."
+ },
+ {
+  "i": 51,
+  "s": 448.115,
+  "e": 457.775,
+  "d": 9.66,
+  "t": "Se corta despacio, por el medio, siguiendo la curva. Sin forzar el disco. Si lo aprietas, se calienta, y la loza se raja por donde quiere."
+ },
+ {
+  "i": 52,
+  "s": 457.775,
+  "e": 465.555,
+  "d": 7.78,
+  "t": "Y cuando se abre, cuidado con los bordes: la loza cortada corta como un vidrio. Por eso los guantes, hasta el final."
+ },
+ {
+  "i": 53,
+  "s": 465.555,
+  "e": 471.705,
+  "d": 6.15,
+  "t": "Y cuando lo abrí y vi esto, entendí por qué el dueño decía que se le tapaba siempre. Mira."
+ },
+ {
+  "i": 54,
+  "s": 471.705,
+  "e": 478.085,
+  "d": 6.38,
+  "t": "Ahora, ¿por qué funciona el vinagre? Te lo muestro aquí mismo, con un pedazo de esta costra."
+ },
+ {
+  "i": 55,
+  "s": 478.085,
+  "e": 486.385,
+  "d": 8.3,
+  "t": "Vamos a ver. En este vaso, vinagre frío. En este otro, vinagre caliente. Mismo pedazo de costra en cada uno."
+ },
+ {
+  "i": 56,
+  "s": 486.385,
+  "e": 494.585,
+  "d": 8.2,
+  "t": "Mira las burbujitas. Eso es el ácido del vinagre deshaciendo la cal. En el caliente salen más rápido, mucho más."
+ },
+ {
+  "i": 57,
+  "s": 494.585,
+  "e": 502.385,
+  "d": 7.8,
+  "t": "Por eso te dije caliente. Pero ojo: caliente, no hirviendo. Agua hirviendo en una loza fría puede rajarla."
+ },
+ {
+  "i": 58,
+  "s": 502.385,
+  "e": 511.335,
+  "d": 8.95,
+  "t": "Y otra prueba, la más importante. Este pedazo de loza, de la parte limpia, lo voy a frotar con la piedra pómez… seca."
+ },
+ {
+  "i": 59,
+  "s": 511.335,
+  "e": 521.885,
+  "d": 10.55,
+  "t": "¿Ves estas rayas grises? Eso es el esmalte rayado. Y un esmalte rayado junta sarro el doble de rápido. Por eso la piedra, siempre mojada."
+ },
+ {
+  "i": 60,
+  "s": 521.885,
+  "e": 530.995,
+  "d": 9.11,
+  "t": "Ahora, mojada. La misma piedra, la misma fuerza. Mira: la costra sale y el esmalte queda liso. El agua hace de colchón."
+ },
+ {
+  "i": 61,
+  "s": 530.995,
+  "e": 540.135,
+  "d": 9.14,
+  "t": "Y el vinagre del vaso, después de una hora. La costra se ablandó por fuera. Por dentro sigue dura. Por eso lleva más de una pasada."
+ },
+ {
+  "i": 62,
+  "s": 540.135,
+  "e": 548.905,
+  "d": 8.77,
+  "t": "Probé también con ácido cítrico en polvo, el de cocina, disuelto en agua caliente. Hizo lo mismo que el vinagre caliente, y sin el olor."
+ },
+ {
+  "i": 63,
+  "s": 548.905,
+  "e": 557.575,
+  "d": 8.67,
+  "t": "Lo que no hizo ninguno es deshacer la costra entera en un rato. Eso no existe. Lo que existe es tiempo, repetición y la piedra mojada."
+ },
+ {
+  "i": 64,
+  "s": 557.575,
+  "e": 567.375,
+  "d": 9.8,
+  "t": "Y el vinagre no daña el esmalte sano. Lo que sí lo daña es frotar con algo duro: un cuchillo, una lija, un destornillador. Eso nunca."
+ },
+ {
+  "i": 65,
+  "s": 567.375,
+  "e": 574.305,
+  "d": 6.93,
+  "t": "Ahora, algo que casi nadie relaciona. ¿Tienes una raya de sarro que baja desde el borde, siempre por el mismo lugar?"
+ },
+ {
+  "i": 66,
+  "s": 574.305,
+  "e": 581.135,
+  "d": 6.83,
+  "t": "Eso casi siempre es la mochila que pierde. Un hilito de agua que corre día y noche, y deja cal por donde pasa."
+ },
+ {
+  "i": 67,
+  "s": 581.135,
+  "e": 588.255,
+  "d": 7.12,
+  "t": "Y ese hilito, además, es agua que pagas y se va sin que la veas. Hay una prueba muy fácil para saberlo."
+ },
+ {
+  "i": 68,
+  "s": 588.255,
+  "e": 596.325,
+  "d": 8.07,
+  "t": "Unas gotas de colorante en la mochila, y esperas unos veinte minutos sin usar el inodoro. Si aparece color en la taza, pierde."
+ },
+ {
+  "i": 69,
+  "s": 596.325,
+  "e": 607.575,
+  "d": 11.25,
+  "t": "Casi siempre es el sello del pulsador o el flotante mal regulado. Eso está explicado paso a paso en la guía del canal, en el arreglo del agua que se va sin que la veas."
+ },
+ {
+  "i": 70,
+  "s": 607.575,
+  "e": 616.445,
+  "d": 8.87,
+  "t": "Y ojo con esto: si usas pastillas de cloro en la mochila, sácalas antes de echar vinagre o cualquier ácido, y descarga un par de veces."
+ },
+ {
+  "i": 71,
+  "s": 616.445,
+  "e": 626.055,
+  "d": 9.61,
+  "t": "Cloro y ácido juntos, aunque sea en poca cantidad, sueltan un gas que no quieres respirar en un baño cerrado. Primero una cosa, y otro día la otra."
+ },
+ {
+  "i": 72,
+  "s": 626.055,
+  "e": 634.855,
+  "d": 8.8,
+  "t": "Y te cuento algo que me escribió Rosa, de Guadalajara. Había probado tres productos distintos y la línea amarilla no salía con nada."
+ },
+ {
+  "i": 73,
+  "s": 634.855,
+  "e": 641.305,
+  "d": 6.45,
+  "t": "¿Qué pasaba? Echaba todo con la taza llena. Le dije: baja el agua primero. Y me mandó la foto a la semana."
+ },
+ {
+  "i": 74,
+  "s": 641.305,
+  "e": 649.935,
+  "d": 8.63,
+  "t": "No salió en una noche, ¿eh? Le llevó dos noches de vinagre y dos pasadas de piedra. Pero salió, y con el mismo inodoro."
+ },
+ {
+  "i": 75,
+  "s": 649.935,
+  "e": 656.745,
+  "d": 6.81,
+  "t": "Y así con cada cosa de la casa: casi siempre hay un arreglo barato antes de cambiar la pieza."
+ },
+ {
+  "i": 76,
+  "s": 656.745,
+  "e": 664.035,
+  "d": 7.29,
+  "t": "Por eso armé la colección del canal, con los materiales y las medidas de cada arreglo. El enlace está abajo."
+ },
+ {
+  "i": 77,
+  "s": 664.035,
+  "e": 671.315,
+  "d": 7.28,
+  "t": "Y ahora sí, los detalles que hacen la diferencia. Primero, cómo bajar el agua de la taza sin volverte loco."
+ },
+ {
+  "i": 78,
+  "s": 671.315,
+  "e": 679.915,
+  "d": 8.6,
+  "t": "Con la llave cerrada y ya descargado, queda un poco de agua abajo. Si echas un balde de agua de golpe, el sifón chupa y el nivel baja solo."
+ },
+ {
+  "i": 79,
+  "s": 679.915,
+  "e": 687.605,
+  "d": 7.69,
+  "t": "Lo que queda lo sacas con un vaso, y el fondo con una esponja vieja, que después tiras. Con guantes, siempre."
+ },
+ {
+  "i": 80,
+  "s": 687.605,
+  "e": 696.655,
+  "d": 9.05,
+  "t": "¿Cuánto vinagre? Para un inodoro normal, unos dos litros. Lo caliento en una olla, hasta que sale vapor, y lo apago antes de que hierva."
+ },
+ {
+  "i": 81,
+  "s": 696.655,
+  "e": 705.195,
+  "d": 8.54,
+  "t": "Y lo echo despacio, con una jarra, dando la vuelta por todo el borde. Así baja por la loza, moja la línea, y llena la curva de abajo."
+ },
+ {
+  "i": 82,
+  "s": 705.195,
+  "e": 714.695,
+  "d": 9.5,
+  "t": "Si no tienes vinagre, sirve el ácido cítrico en polvo, el de cocina, disuelto en agua caliente. Hace lo mismo, y casi no tiene olor."
+ },
+ {
+  "i": 83,
+  "s": 714.695,
+  "e": 722.725,
+  "d": 8.03,
+  "t": "Y mientras espera, tapa bajada, y que nadie lo use. Yo le pongo un papel en la tapa, porque siempre hay alguien que se olvida."
+ },
+ {
+  "i": 84,
+  "s": 722.725,
+  "e": 731.195,
+  "d": 8.47,
+  "t": "La piedra pómez: la mojas en el agua de la taza, y la pasas como si borraras un lápiz. Sin apretar. Cada tanto la vuelves a mojar."
+ },
+ {
+  "i": 85,
+  "s": 731.195,
+  "e": 739.275,
+  "d": 8.08,
+  "t": "Si la línea es muy gruesa, no la saques toda el primer día. Una pasada, otra noche de vinagre, y al día siguiente otra pasada."
+ },
+ {
+  "i": 86,
+  "s": 739.275,
+  "e": 748.485,
+  "d": 9.21,
+  "t": "Los agujeros del borde. Te pones de costado, con un espejito, y los ves. El alambre entra y sale, sin forzar, como sacando un tapón."
+ },
+ {
+  "i": 87,
+  "s": 748.485,
+  "e": 757.925,
+  "d": 9.44,
+  "t": "Y el truco del papel: tiras de papel higiénico empapadas en vinagre, pegadas contra la línea y bajo el borde. El papel sostiene el ácido ahí."
+ },
+ {
+  "i": 88,
+  "s": 757.925,
+  "e": 768.415,
+  "d": 10.49,
+  "t": "En muchos inodoros, además, hay un agujero más grande abajo, al fondo, que empuja el agua hacia la curva. Si está tapado, la descarga sale débil."
+ },
+ {
+  "i": 89,
+  "s": 768.415,
+  "e": 776.265,
+  "d": 7.85,
+  "t": "A ese le llegas con la mano, con guante, o con un cepillo angosto. Lo raspas suave, y el vinagre de la noche hace el resto."
+ },
+ {
+  "i": 90,
+  "s": 776.265,
+  "e": 787.525,
+  "d": 11.26,
+  "t": "Y hay una variante de esto que funciona todavía mejor cuando la costra está en la curva escondida, donde no llegas. Te dejé exactamente cómo hacerlo en la descripción."
+ },
+ {
+  "i": 91,
+  "s": 787.525,
+  "e": 796.855,
+  "d": 9.33,
+  "t": "Tres cuidados mientras trabajas. Ventana abierta o el extractor prendido, aunque sea vinagre: el olor cansa, y en un baño chico se junta."
+ },
+ {
+  "i": 92,
+  "s": 796.855,
+  "e": 805.685,
+  "d": 8.83,
+  "t": "Si los herrajes o las bisagras del asiento son de metal, tápalos con una bolsa o sácalos. El ácido, aunque sea suave, los mancha."
+ },
+ {
+  "i": 93,
+  "s": 805.685,
+  "e": 813.535,
+  "d": 7.85,
+  "t": "Y el agua que sacaste de la taza la juntas en un balde, y cuando terminas la tiras por el mismo inodoro. Nunca en el fregadero."
+ },
+ {
+  "i": 94,
+  "s": 813.535,
+  "e": 825.225,
+  "d": 11.69,
+  "t": "¿Y cuándo esto no alcanza? Si la costra ya salió y la descarga sigue floja, y el agua sube, el tapón está más allá, en la cañería. Eso ya es otro trabajo."
+ },
+ {
+  "i": 95,
+  "s": 825.225,
+  "e": 834.385,
+  "d": 9.16,
+  "t": "Si al bajar el agua ves una rajadura en la loza, aunque sea finita, no sigas. Un inodoro rajado no se arregla con esto: se cambia."
+ },
+ {
+  "i": 96,
+  "s": 834.385,
+  "e": 841.545,
+  "d": 7.16,
+  "t": "Y si pierde agua por la base, en el piso, tampoco es sarro. Eso es el sello de abajo, y es otro arreglo."
+ },
+ {
+  "i": 97,
+  "s": 841.545,
+  "e": 849.235,
+  "d": 7.69,
+  "t": "¿Cómo hacer que no vuelva? Una vez por semana, antes de dormir, un vaso de vinagre en la taza, y a la mañana, descargas."
+ },
+ {
+  "i": 98,
+  "s": 849.235,
+  "e": 856.545,
+  "d": 7.31,
+  "t": "Y el cepillo, pásalo también por debajo del borde, no sólo por la taza. Ahí empieza todo, y es donde nadie mira."
+ },
+ {
+  "i": 99,
+  "s": 856.545,
+  "e": 864.385,
+  "d": 7.84,
+  "t": "Si tu agua es muy dura, lo vas a notar en la ducha y en el hervidor también. Ahí conviene repetir esto cada pocos meses."
+ },
+ {
+  "i": 100,
+  "s": 864.385,
+  "e": 871.885,
+  "d": 7.5,
+  "t": "¿Cómo saber si tu agua es dura? Mira el vidrio de la ducha. Si queda con manchas blancas que no salen con jabón, eso es cal."
+ },
+ {
+  "i": 101,
+  "s": 871.885,
+  "e": 878.455,
+  "d": 6.57,
+  "t": "Lo de la curva lo guardé para el final porque fue lo que más me sorprendió cuando lo abrí. Y lo vas a entender enseguida."
+ },
+ {
+  "i": 102,
+  "s": 878.455,
+  "e": 886.415,
+  "d": 7.96,
+  "t": "Y te había prometido lo de la curva de abajo. Mira esto. Aquí, en el codo más bajo, la costra no es pareja."
+ },
+ {
+  "i": 103,
+  "s": 886.415,
+  "e": 895.865,
+  "d": 9.450000000000045,
+  "t": "Hace un escalón. Un borde duro, filoso, que sobresale. Justo ahí se engancha el papel, y detrás se va juntando todo lo demás."
+ },
+ {
+  "i": 104,
+  "s": 895.865,
+  "e": 904.155,
+  "d": 8.289999999999964,
+  "t": "Por eso hay inodoros que se tapan con muy poco papel. No es el papel. Es este escalón, que ningún cepillo alcanza."
+ },
+ {
+  "i": 105,
+  "s": 904.155,
+  "e": 913.635,
+  "d": 9.48,
+  "t": "Y ahí sólo llega una cosa: el ácido, con el agua bien bajada, y con tiempo. Por eso el primer paso es el más importante de todos."
+ },
+ {
+  "i": 106,
+  "s": 913.635,
+  "e": 921.795,
+  "d": 8.16,
+  "t": "Y si la línea te vuelve en pocas semanas, revisa la mochila, que ya te mostré la prueba del colorante. Casi siempre es eso."
+ },
+ {
+  "i": 107,
+  "s": 921.795,
+  "e": 930.285,
+  "d": 8.49,
+  "t": "Úsalo, pero diluido y sin cloro cerca. Y tú, si esto te sirvió, cuéntame en los comentarios cómo está la línea de tu inodoro."
+ },
+ {
+  "i": 108,
+  "s": 930.285,
+  "e": 938.7409750566893,
+  "d": 8.455975056689349,
+  "t": "Y si quieres tener estos arreglos a mano, con materiales y medidas, la colección está en el enlace de abajo. Nos vemos en el próximo."
+ }
+]

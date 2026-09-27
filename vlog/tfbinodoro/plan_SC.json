@@ -1,0 +1,160 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/SC",
+ "face": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_tfbinodoro.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbinodoro/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a new place. The place is a real, messy home garage-workshop of a working-class house in Latin America: concrete floor with old stains and cement dust, a wooden workbench covered in tools, tins, rags and offcuts, a pegboard with hanging tools, stacked plastic buckets, a bicycle leaning on the wall, bare painted brick walls with damp patches, the wide garage door on the left open to the street. He is the man of the reference photo — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. On the floor in front of him lies a whole old white porcelain toilet on its side on a folded dirty blanket, uncut. He stands beside it wearing clear safety glasses and a white dust mask pulled down under his chin, holding an angle grinder with a grey diamond cutting disc, switched off, pointing down; a bucket of water beside the blanket. Medium-wide shot, full body, from about two and a half metres. Light: flat overcast daylight coming in through the open garage door on the left, plus one plain fluorescent tube on the ceiling; the side near the door a little brighter and cooler, the back corners dimmer."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he lifts the switched-off grinder a little toward the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he crouches beside the toilet on the blanket, one hand on it, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "The grinder's grey diamond cutting disc seen close, with its segmented rim, the grinder held in gloved hands, switched off. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same close-up, a moment later: a gloved hand pours a little water from a cup over the side of the porcelain toilet where the cut will start. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he crouches beside the toilet holding the grinder, wet porcelain in front of him, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: mask on his face and glasses on, he gives a thumbs up to the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "The spinning diamond disc of the grinder cuts slowly into the side of the white porcelain toilet along a straight line, throwing a fan of fine white dust and a few orange sparks. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame). Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same close-up, a moment later: the disc has cut deeper along the curve, a long clean cut line in the porcelain, white dust hanging in the air and settling on the blanket. EXTREME CLOSE-UP of the HANDS and the object ONLY, the detail fills the whole frame; the wrists and forearms enter from the bottom edge; ignore the last input image (no face in this frame)."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he kneels beside the toilet with the grinder switched off, dust on his shoulders, mask down under his chin, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: he holds the gloved hand near the sharp cut edge, looking at the camera. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light, a few seconds later: the two halves lie slightly apart on the blanket, the yellow-brown crust visible inside; he looks at the camera, amazed. He keeps exactly the same clothes: the faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "sc_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "¿Y cómo se corta un inodoro? Te lo cuento, pero primero lo importante: esto no hace falta para limpiar el tuyo. Yo lo corté para verlo por dentro.",
+   "action": "He stands beside the uncut toilet holding the switched-off grinder pointed down, talking to the camera, shaking his head once.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/sc_01.wav"
+  },
+  {
+   "id": "sc_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Este lo saqué de una remodelación; ya lo iban a tirar. Bien vacío y lavado, y lo acuesto sobre una manta vieja para que no rebote.",
+   "action": "He crouches and pats the side of the old toilet lying on the blanket, then straightens the blanket under it, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/sc_02.wav"
+  },
+  {
+   "id": "sc_03",
+   "a": "K3",
+   "b": "K4",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/sc_03.wav",
+   "text": "Disco diamantado, el de cortar cerámica. Un disco común se gasta enseguida y se puede romper. Y agua cerca, para bajar el polvo.",
+   "action": "The gloved hands turn the grinder to show the diamond disc, then water is poured over the porcelain where the cut will go."
+  },
+  {
+   "id": "sc_04",
+   "a": "K5",
+   "b": "K6",
+   "text": "Máscara para polvo, sí o sí: el polvo de la loza tiene sílice, y eso no se respira. Lentes, guantes, y nadie alrededor mirando de cerca.",
+   "action": "He pulls the white dust mask up over his nose and mouth and pulls the safety glasses down over his eyes, then gives a thumbs up to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/sc_04.wav"
+  },
+  {
+   "id": "sc_05",
+   "a": "K7",
+   "b": "K8",
+   "kf": true,
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/sc_05.wav",
+   "text": "Se corta despacio, por el medio, siguiendo la curva. Sin forzar el disco. Si lo aprietas, se calienta, y la loza se raja por donde quiere.",
+   "action": "The spinning disc advances slowly along the cut line, white dust flying and settling, a few sparks."
+  },
+  {
+   "id": "sc_06",
+   "a": "K9",
+   "b": "K10",
+   "text": "Y cuando se abre, cuidado con los bordes: la loza cortada corta como un vidrio. Por eso los guantes, hasta el final.",
+   "action": "He carefully lifts one freshly cut edge of porcelain with his gloved hand and runs a gloved finger near the sharp edge, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/sc_06.wav"
+  },
+  {
+   "id": "sc_07",
+   "a": "K10",
+   "b": "K11",
+   "text": "Y cuando lo abrí y vi esto, entendí por qué el dueño decía que se le tapaba siempre. Mira.",
+   "action": "He pulls the two halves slightly apart on the blanket and looks inside, then back at the camera with raised eyebrows.",
+   "audio": "D:/Proyectos/video2-wt/tfbinodoro/vlog/tfbinodoro/tramos/sc_07.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbinodoro/out/vlog/SC/vlog_SC.mp4"
+}
