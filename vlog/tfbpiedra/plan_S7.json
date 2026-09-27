@@ -1,0 +1,236 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S7",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg",
+  "SET": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "SET"
+   ],
+   "prompt": "Same place, same framing and same light: the same yard; in the middle stands a rectangular wooden form of rough pine boards, about one metre by two metres and ten centimetres high, held by short wooden stakes divided in two halves by a middle board, filled with concrete whose whole surface has been washed: densely packed wet glistening rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, each pebble showing about a third of its height. He stands beside it with the hose hanging from one hand, looking at the camera, satisfied. He wears yellow rubber gloves. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the washed slab, one finger raised, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K2",
+   "noface": true,
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of dry densely packed rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black in concrete, a thin whitish cement haze dulling their tops. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K3",
+   "noface": true,
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same close-up: a yellow gloved finger wipes across the pebbles, leaving a stripe where the colours show brighter under the haze. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: the next day, the form divided in two halves by a middle board, the concrete surface of densely packed rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black now dry, with a thin whitish cement haze dulling the tops of the pebbles. He stands beside it holding a soft brush and the hose, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches at the edge scrubbing the wet pebbles with the soft brush, the hose beside him, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches at the edge, the brush resting on his knee, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the wet slab holding the hose with a gentle shower, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K8",
+   "noface": true,
+   "from": [
+    "K7"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the wet pebble concrete; the edge of a clear plastic sheet held by two hands just above it. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same close-up: the clear plastic sheet lies over the wet pebbles, water drops under it, a brick holding its edge. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: a rectangular wooden form of rough pine boards, about one metre by two metres and ten centimetres high, held by short wooden stakes divided in two halves by a middle board, the washed pebble concrete completely covered by a clear plastic sheet wet with water drops, the edges of the sheet held down by a few old bricks. He stands beside it, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the covered slab, one hand pointing up at the sky, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K12",
+   "noface": true,
+   "from": [
+    "K11"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the edge of the slab: a pine board of the form, a flat steel pry bar pushed between the board and a wooden stake. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K13",
+   "noface": true,
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same close-up: the board pulled a few centimetres away from the clean edge of the concrete, the pry bar in the gap. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches at the edge of the covered slab, one finger on the edge, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches at the edge of the covered slab, smiling, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K15"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the covered slab dusting off his hands, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s7_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_01.wav",
+   "text": "Así quedó hoy. Mojado se ve precioso, pero ojo, que todavía no terminé.",
+   "action": "He looks down at the washed slab, then back at the camera, raising a finger."
+  },
+  {
+   "id": "s7_02",
+   "detail": true,
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_02.wav",
+   "text": "Al otro día, cuando seca, aparece esto: un velo blanquecino arriba de las piedras. Es un resto de cemento.",
+   "action": "A gloved finger wipes across the hazy pebbles and the colours show brighter where it passes."
+  },
+  {
+   "id": "s7_03",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_03.wav",
+   "text": "Le doy un segundo lavado con agua y el cepillo, y casi todo sale. Si todavía queda velo, hay limpiadores de cemento en la ferretería.",
+   "action": "He sprays a soft shower on the slab and scrubs with the soft brush."
+  },
+  {
+   "id": "s7_04",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_04.wav",
+   "text": "Si usas uno, lee la etiqueta completa, guantes y gafas, y enjuaga mucho. Yo siempre pruebo primero solo con agua.",
+   "action": "He stops scrubbing and talks to the camera, crouched."
+  },
+  {
+   "id": "s7_05",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_05.wav",
+   "text": "Y ahora el paso que más se saltea la gente: el curado. El concreto no se seca, se cura. Necesita agua para endurecer bien.",
+   "action": "He stands and sprays a gentle shower of water over the whole slab."
+  },
+  {
+   "id": "s7_06",
+   "detail": true,
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_06.wav",
+   "text": "Lo mojo, y lo tapo con un plástico unos siete días. Cada día levanto el plástico, y lo vuelvo a mojar.",
+   "action": "His hands lay the clear plastic sheet down over the wet pebbles and put a brick on its edge."
+  },
+  {
+   "id": "s7_07",
+   "a": "K10",
+   "b": "K11",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_07.wav",
+   "text": "Si lo dejas al sol sin agua, la superficie se seca antes que el resto y aparecen fisuritas. Con el curado, eso casi no pasa.",
+   "action": "He talks to the camera beside the covered slab, gesturing toward the sun."
+  },
+  {
+   "id": "s7_07b",
+   "detail": true,
+   "a": "K12",
+   "b": "K13",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_07b.wav",
+   "text": "Al tercer día saco las tablas del marco, con cuidado, haciendo palanca suave. Los bordes todavía son frágiles.",
+   "action": "The pry bar levers gently and the pine board comes away from the concrete edge."
+  },
+  {
+   "id": "s7_07c",
+   "a": "K11",
+   "b": "K14",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_07c.wav",
+   "text": "Y si en estos días aparece alguna fisura muy fina, no te asustes:",
+   "action": "He crouches at the edge of the covered slab and runs a finger along it, talking."
+  },
+  {
+   "id": "s7_07cx",
+   "a": "K14",
+   "b": "K15",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_07cx.wav",
+   "text": "en un piso así casi no se nota, porque la textura de las piedras la disimula.",
+   "action": "Crouched, he smiles and shrugs a little."
+  },
+  {
+   "id": "s7_08",
+   "a": "K15",
+   "b": "K16",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s7_08.wav",
+   "text": "Y durante esos días, nada de pisarlo fuerte, ni muebles, ni un vehículo si es una entrada.",
+   "action": "He places an old brick on a corner of the plastic sheet and stands up."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S7/vlog_S7.mp4"
+}

@@ -1,0 +1,149 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S5a",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K2.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg",
+  "SET": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K2.png"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "SET"
+   ],
+   "prompt": "Same place, same framing and same light: on the workbench in front of him: a glass jar of white sugar, a plastic spray bottle with clear water, and a small white plastic jug without any label. He stands at the bench, looking at the camera, relaxed. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the workbench, both hands resting on it, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up the glass jar of white sugar toward the camera, eyebrows raised. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the white plastic spray bottle in one hand, the sugar jar on the bench, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K4",
+   "noface": true,
+   "from": [
+    "K3",
+    "V"
+   ],
+   "prompt": "Same place and same day as the first image, a new camera angle: a MEDIUM SHOT of the older neighbour from about one and a half metres, waist-up, his head and chest filling the upper half of the frame. View toward the open garage door: the older neighbour stands in the doorway in the daylight, one hand on the door frame, staring at the sugar jar on the bench, incredulous. He is the older neighbour of the second input image — the same face: about 65, heavy-set, bald on top with grey hair on the sides, a thick grey moustache — wearing a light-blue checked short-sleeved shirt with a pen in the breast pocket and reading glasses hanging from a cord around his neck; the second input image is only for his face and clothes, not the place. The man in the olive shirt is out of frame."
+  },
+  {
+   "id": "K5",
+   "noface": true,
+   "from": [
+    "K4",
+    "VF"
+   ],
+   "prompt": "Same view: the neighbour in the doorway taps his temple with one finger, grinning, incredulous. Same man, same face as the second image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the bench holding the spray bottle, looking at the camera, half smile. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up the small white plastic jug toward the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the bench, the jug, jar and bottle in a row in front of him, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s5_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_01.wav",
+   "text": "Y ahora, a esperar. Mientras eso fragua, vengo al taller, porque te debo lo del azúcar que le rocié.",
+   "action": "He puts down a rag on the bench and talks to the camera, relaxed."
+  },
+  {
+   "id": "s5_a1",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_a1.wav",
+   "text": "Era agua con azúcar. El famoso azúcar: lo vas a ver en muchos videos, así que te voy a decir la verdad.",
+   "action": "He picks up the glass jar of white sugar from the bench and shows it."
+  },
+  {
+   "id": "s5_a2",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_a2.wav",
+   "text": "El azúcar retrasa el fraguado del cemento. Eso es real. Rociada arriba, hace que la superficie tarde más en endurecer que el resto.",
+   "action": "He puts the jar down and picks up the plastic spray bottle, showing it."
+  },
+  {
+   "id": "s5_a3",
+   "solo": true,
+   "a": "K4",
+   "b": "K5",
+   "secs": 7,
+   "line": "¿Azúcar? ¿Ahora le vas a echar azúcar al cemento? Te volviste loco.",
+   "who": "the older neighbour with the thick grey moustache and the light-blue checked shirt (the third reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man; the man in the olive shirt does NOT speak",
+   "refs": [
+    "VF"
+   ],
+   "action": "The neighbour in the doorway stares at the sugar, then taps his temple with a finger, laughing."
+  },
+  {
+   "id": "s5_a4",
+   "a": "K3",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_a4.wav",
+   "text": "Loco no, vecino. Pero la verdad es esta: con el azúcar casero el resultado es irregular. En una parte frena mucho, y en otra casi nada.",
+   "action": "He turns toward the door answering, then back to the camera, shaking his head a little."
+  },
+  {
+   "id": "s5_a5",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_a5.wav",
+   "text": "Existe un retardante de superficie comercial, hecho para esto. Se rocía parejo y te da más margen. Si lo consigues, es más seguro.",
+   "action": "He puts the bottle down and lifts the small white plastic jug without label, showing it."
+  },
+  {
+   "id": "s5_a6",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_a6.wav",
+   "text": "¿Y si no uso ninguno? También se puede. Solo tienes que estar más atento al momento de lavar, que es justo lo que te voy a enseñar.",
+   "action": "He sets the jug down on the bench and talks, both hands on the bench."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S5a/vlog_S5a.mp4"
+}

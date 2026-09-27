@@ -1,0 +1,226 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S2a",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg",
+  "SET": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "SET"
+   ],
+   "prompt": "Same place, same framing and same light: the same yard, the wooden form filled with flat compacted grey gravel. He stands at the near end of the form, the shovel leaning against the white chair, one hand open toward the form, looking at the camera, mid-sentence. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the near end of the form, one hand pointing at the gravel inside it, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he has walked to the long side of the form and stands beside it, turned toward the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches beside the long side of the form, one forearm on his knee, looking at the camera, a little serious. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches beside the form, holding up one hand, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches beside the form showing three fingers of one hand, eyebrows raised, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the form with one boot on the gravel, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the form, one finger raised, a slight smile, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he stands near the left wall holding the coiled green garden hose up in one hand, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the ground at the edge of the form: a steel shovel blade pushed into dark soft soil full of grass roots, his boot on the blade. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same close-up: the shovel lifts a clump of dark soil with grass roots out of the hole, crumbs falling. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the near end of the form again, the hose back on its hook, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K12",
+   "noface": true,
+   "from": [
+    "K11"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the grey gravel inside the wooden form: the flat square steel foot of a hand tamper on a long wooden handle, raised a few centimetres above the loose gravel. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K13",
+   "noface": true,
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same close-up: the tamper foot pressed down on the gravel, the stones packed flat and tight around it. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the near end of the form holding a hand tamper with a long wooden handle upright beside him, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light: he stands holding a handful of plain grey gravel on his open palm toward the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s2_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_01.wav",
+   "text": "Bueno. Esta es la esquina del patio donde lo vamos a hacer. Un rectángulo de un metro por dos, más o menos.",
+   "action": "He gestures with an open hand over the empty wooden form while talking, then looks back at the camera."
+  },
+  {
+   "id": "s2_02",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_02.wav",
+   "text": "Y te cuento por qué hago este video. Me llegan muchos mensajes de gente que lo intentó y le salió mal.",
+   "action": "He walks slowly along the side of the form, glancing at it, then back at the camera."
+  },
+  {
+   "id": "s2_03",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_03.wav",
+   "text": "Unos lo lavaron y se les salieron todas las piedras: quedó lleno de huecos. Otros esperaron al otro día, y ya no salió nada.",
+   "action": "He crouches down beside the form while talking, shaking his head a little."
+  },
+  {
+   "id": "s2_04",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_04.wav",
+   "text": "Y en los comentarios de los videos de piedra lavada se repiten siempre las mismas tres preguntas.",
+   "action": "Still crouched, he talks to the camera with small hand movements."
+  },
+  {
+   "id": "s2_05",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_05.wav",
+   "text": "¿Cuándo se lava? ¿Resbala cuando está mojado? ¿Y se puede hacer sin hidrolavadora? Las tres te las contesto hoy.",
+   "action": "Crouched, he counts on his fingers while asking the three questions."
+  },
+  {
+   "id": "s2_05b",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_05b.wav",
+   "text": "Y la segunda, rápido: resbala mucho menos que el cemento liso,",
+   "action": "He stands up slowly and puts one boot on the gravel inside the form, pressing it."
+  },
+  {
+   "id": "s2_05bx",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_05bx.wav",
+   "text": "porque cada piedra asoma y da agarre. Con una excepción, que te muestro al final.",
+   "action": "He takes the boot off the gravel and wags one finger, smiling a little."
+  },
+  {
+   "id": "s2_06",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_06.wav",
+   "text": "La tercera, ya mismo: sí. Yo lo hago con la manguera del jardín y un cepillo. La hidrolavadora, al principio, hasta te arranca las piedras.",
+   "action": "He steps to the left wall and lifts the coiled green garden hose off its hook, showing it."
+  },
+  {
+   "id": "s2_07",
+   "detail": true,
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_07.wav",
+   "text": "Ahora sí, la base. Saqué unos quince centímetros de tierra, toda la parte blanda, la que tiene raíces y pasto.",
+   "action": "The shovel digs into the soft dark soil and lifts out a clump with grass roots."
+  },
+  {
+   "id": "s2_08",
+   "detail": true,
+   "a": "K12",
+   "b": "K13",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_08.wav",
+   "text": "Y abajo va grava, unos diez centímetros, bien compactada con este pisón. Golpe, golpe, golpe, hasta que al pisar no se hunde.",
+   "action": "The heavy hand tamper pounds down on the loose gravel again and again, packing it flat."
+  },
+  {
+   "id": "s2_08b",
+   "a": "K14",
+   "b": "K15",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_08b.wav",
+   "text": "Ojo, que la grava de abajo no es la piedra bonita. Abajo va cualquier grava común. La piedra de colores va arriba, en la mezcla.",
+   "action": "He bends, picks up a handful of plain grey gravel and shows it on his open palm."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S2a/vlog_S2a.mp4"
+}

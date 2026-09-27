@@ -1,0 +1,181 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S3b",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K1.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg",
+  "SET": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K1.png"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "SET"
+   ],
+   "prompt": "Same place, same framing and same light: the wheelbarrow now holds a dry heap of sand, cement and pebbles. He stands beside it holding an empty plastic bucket up in one hand, looking at the camera. He wears yellow rubber gloves. Clear plastic safety glasses on his eyes. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the wheelbarrow holding the empty bucket up, three fingers of the other hand raised, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K2",
+   "noface": true,
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the inside of the red wheelbarrow: a plastic bucket tipped over it, grey cement powder pouring out onto a heap of yellow sand. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K3",
+   "noface": true,
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same close-up: a heap of rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black on top of the sand and cement in the wheelbarrow, the last pebbles tumbling out of the bucket. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the wheelbarrow holding the shovel, the dry mix heaped inside it, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the wheelbarrow, the shovel in the dry grey mix, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the wheelbarrow pouring a thin stream of water from a bucket into the mix, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he leans on the shovel handle beside the wheelbarrow, the mix now damp and grey, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K8",
+   "noface": true,
+   "from": [
+    "K7"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the wheelbarrow: a shovel blade pushed into thick wet grey concrete mix full of pebbles. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same close-up: the shovel lifted, holding a thick heap of wet concrete with pebbles that keeps its shape and does not run. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: the wheelbarrow is full of thick wet grey concrete mix with pebbles, the shovel standing in it; he rests one gloved hand on the handle, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light: he leans on the wheelbarrow, one gloved hand drawing in the air, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he leans on the wheelbarrow, one gloved finger at his temple, a slight smile, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s3_07",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_07.wav",
+   "text": "Ahora, la proporción. La que yo uso: una de cemento, dos de arena, tres de piedra. Todo medido con el mismo balde, que es lo que no falla.",
+   "action": "He raises the empty bucket and taps it, then counts one-two-three on his fingers."
+  },
+  {
+   "id": "s3_08",
+   "detail": true,
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_08.wav",
+   "text": "Un balde de cemento. Dos de arena. Y tres de piedra. Primero en seco: revuelvo hasta que el color quede parejo.",
+   "action": "Bucket after bucket is tipped into the wheelbarrow: grey cement, yellow sand, then colourful pebbles tumbling in."
+  },
+  {
+   "id": "s3_09",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_09.wav",
+   "text": "¿Por qué en seco primero? Porque si le echas el agua antes, el cemento hace grumos y te quedan partes flojas.",
+   "action": "He turns the dry mix over with the shovel, slowly, while talking."
+  },
+  {
+   "id": "s3_10",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_10.wav",
+   "text": "Y el agua, de a poco. Este es el error de casi todos: le ponen mucha agua para que sea fácil de trabajar.",
+   "action": "He picks up a bucket of water and pours a little of it into the mix, carefully."
+  },
+  {
+   "id": "s3_11",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_11.wav",
+   "text": "Con mucha agua, las piedras se van al fondo, arriba te queda pura pasta, y cuando lavas no aparece casi nada.",
+   "action": "He puts the bucket down and leans on the shovel, talking to the camera, shaking his head a little."
+  },
+  {
+   "id": "s3_12",
+   "detail": true,
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_12.wav",
+   "text": "La textura que buscas es esta: espesa, que se sostiene en la pala y no chorrea. Como una avena bien espesa.",
+   "action": "The shovel lifts a heavy load of thick wet concrete with pebbles; it holds its shape without dripping."
+  },
+  {
+   "id": "s3_12b",
+   "a": "K10",
+   "b": "K11",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_12b.wav",
+   "text": "¿Cuánta mezcla? Para este paño de un metro por dos, a ocho centímetros, son unos ciento sesenta litros.",
+   "action": "He leans on the wheelbarrow and draws a rectangle in the air with one finger while talking."
+  },
+  {
+   "id": "s3_12bx",
+   "a": "K11",
+   "b": "K12",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_12bx.wav",
+   "text": "Haz la cuenta antes, para no quedarte corto a la mitad.",
+   "action": "He taps his temple with a gloved finger, smiling."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S3b/vlog_S3b.mp4"
+}

@@ -1,0 +1,251 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S8a",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg",
+  "SET": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "SET"
+   ],
+   "prompt": "Same place, same framing and same light: weeks later, the same yard; in the middle is a finished exposed-pebble concrete slab about one metre by two metres, set flush in the ground with a straight joint across the middle, the wooden boards removed and the edges clean; its surface densely packed rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, dry, matte and a little lighter in colour, each pebble showing about a third of its height; the grass around it is trimmed and a few plants in tins stand at its edge. He stands beside the slab, looking at the camera, proud. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the long side of the finished slab, one open hand toward it, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "noface": true,
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the finished slab surface of dry rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black: a black rubber boot about to step on it. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K3",
+   "noface": true,
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same close-up: the boot sole resting flat on the pebbles, twisting slightly, gripping. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the slab, weight on one foot, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the slab, one hand raised cautiously, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the slab pointing toward the house, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up a small plain metal tin without any label toward the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K8",
+   "noface": true,
+   "from": [
+    "K7"
+   ],
+   "prompt": "EXTREME CLOSE-UP of dry rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black in the slab; a paint roller wet with clear liquid resting on one corner. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same close-up: the roller has rolled across, the pebbles behind it darker and richer in colour, glistening wet-look, no puddles. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the slab holding a paint roller on a pole, one corner of the slab darker where it was sealed, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the slab holding the small plain tin, turned to show its back, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he holds a big smooth grey beach stone up toward the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the slab holding a broom, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K14",
+   "noface": true,
+   "from": [
+    "K13",
+    "V"
+   ],
+   "prompt": "Same place and same day as the first image, a new camera angle: a MEDIUM SHOT of the older neighbour from about one and a half metres, waist-up, his head and chest filling the upper half of the frame. The older neighbour stands in the middle of the finished pebble slab in the yard, looking down at it, hands in his pockets, grudgingly impressed. He is the older neighbour of the second input image — the same face: about 65, heavy-set, bald on top with grey hair on the sides, a thick grey moustache — wearing a light-blue checked short-sleeved shirt with a pen in the breast pocket and reading glasses hanging from a cord around his neck; the second input image is only for his face and clothes, not the place. The man in the olive shirt is out of frame."
+  },
+  {
+   "id": "K15",
+   "noface": true,
+   "from": [
+    "K14",
+    "VF"
+   ],
+   "prompt": "Same view: the neighbour on the slab looks up with a reluctant smile, one hand open, shrugging. Same man, same face as the second image."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the slab laughing, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s8_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_01.wav",
+   "text": "Pasaron unas semanas. Mira cómo quedó. Seco se ve así: más claro, más mate.",
+   "action": "He walks slowly along the finished slab, looking at it, then at the camera."
+  },
+  {
+   "id": "s8_02",
+   "detail": true,
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_02.wav",
+   "text": "Y ahora la otra pregunta: ¿resbala? Mira la textura. Cada piedra asoma un poquito, y eso da agarre.",
+   "action": "The rubber boot steps onto the pebbles and twists a little, gripping the rough surface."
+  },
+  {
+   "id": "s8_03",
+   "a": "K1",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_03.wav",
+   "text": "Comparado con un cemento liso mojado, esto agarra bastante más.",
+   "action": "He stands on the slab and shifts his weight from one foot to the other while talking."
+  },
+  {
+   "id": "s8_03x",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_03x.wav",
+   "text": "Pero no es magia: piedras muy grandes y muy pulidas, mojadas, pueden resbalar.",
+   "action": "He raises one hand in a cautious gesture while talking."
+  },
+  {
+   "id": "s8_04",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_04.wav",
+   "text": "Para escaleras o rampas, yo usaría piedra más chica, y no le pondría un sellador de los que dejan brillo.",
+   "action": "He steps off the slab and talks to the camera, pointing toward the back steps of the house."
+  },
+  {
+   "id": "s8_05",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_05.wav",
+   "text": "Porque el sellador es opcional. Le da ese color de piedra mojada que a mucha gente le encanta. Pero los hay con brillo y los hay mate.",
+   "action": "He picks up a small metal paint tin without any label from the grass and shows it."
+  },
+  {
+   "id": "s8_06",
+   "detail": true,
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_06.wav",
+   "text": "Si lo sellas, espera a que esté bien curado y seco, varias semanas, o lo que diga la etiqueta. Rodillo, capa fina, sin charcos.",
+   "action": "The roller rolls a thin coat of clear sealer across the pebbles and their colours deepen behind it."
+  },
+  {
+   "id": "s8_07",
+   "a": "K10",
+   "b": "K11",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_07.wav",
+   "text": "Y ojo al elegir el sellador: no todos sirven para afuera. Que la etiqueta diga que es para exterior, y para piedra o concreto.",
+   "action": "He picks up the small plain tin again and turns it as if reading its back, talking."
+  },
+  {
+   "id": "s8_08",
+   "a": "K11",
+   "b": "K12",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_08.wav",
+   "text": "¿Y con piedras de playa, más grandes? El mismo proceso. Solo que el piso va un poco más grueso, y la regla del tercio importa todavía más.",
+   "action": "He picks up a big smooth beach stone from a tin and turns it in his hand."
+  },
+  {
+   "id": "s8_08b",
+   "a": "K12",
+   "b": "K13",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_08b.wav",
+   "text": "Y el mantenimiento es casi nada: agua y escoba. Si en la parte de sombra aparece verdín, cepillo, agua y sol. Nada más.",
+   "action": "He takes a broom and sweeps the slab slowly while talking."
+  },
+  {
+   "id": "s8_09",
+   "solo": true,
+   "a": "K14",
+   "b": "K15",
+   "secs": 7,
+   "line": "Bueno... me callo. Quedó bien. ¿Y cuánto me cobras por hacerme el mío?",
+   "who": "the older neighbour with the thick grey moustache and the light-blue checked shirt (the third reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man; the man in the olive shirt does NOT speak",
+   "refs": [
+    "VF"
+   ],
+   "action": "The neighbour on the slab looks down, shrugs and gives a reluctant smile."
+  },
+  {
+   "id": "s8_10",
+   "a": "K13",
+   "b": "K16",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_10.wav",
+   "text": "A usted, vecino, le cobro una carretilla de piedra.",
+   "action": "He laughs, turns toward his left and pats the air as if patting the neighbour's shoulder, then looks back at the camera."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S8a/vlog_S8a.mp4"
+}

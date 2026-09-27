@@ -1,0 +1,39 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Move this same man out of the garage into a small backyard of a modest working-class house in Latin America: on the left a rough brick wall with half-finished grey cement render; at the back a low brick wall about chest high separates it from the neighbour's yard, with a lemon tree and a corrugated tin roof visible beyond it; a clothesline with two faded towels; a green garden hose coiled on a hook next to an outdoor tap on the left wall; a small square metal floor drain in the narrow cement path along that wall; plants in old paint tins; a white plastic chair; packed earth and patchy grass. In the middle of the yard stands a rectangular wooden form of rough pine boards, about one metre by two metres and ten centimetres high, held by short wooden stakes, filled with flat compacted grey gravel. Bright late-morning daylight with a pale sun behind thin clouds: the back wall throws a soft shadow over the far end of the form, the near end is in sunlight. He stands at the near end of the wooden form holding a short-handled shovel, turned slightly toward the camera, mid-sentence. Waist-up to knees, about two and a half metres away, the form and most of the yard in frame. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots. Not the blue overalls of the input photo."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same backyard, same day and same light, but the camera now looks at the right-hand corner of the same backyard, along the side wall: a heap of clean yellow-grey building sand, a heap of rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, three plain grey paper cement bags stacked on a wooden pallet, an old red metal wheelbarrow, a shovel stuck in the sand, two plastic buckets, the green garden hose on the ground. He stands beside the wheelbarrow, one hand on its handle, looking at the camera. The wooden form is out of frame. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same garage-workshop as the input photo, the camera a step further back: a real, lived-in home garage-workshop: the wide door on the left is open to the bright backyard; a heavy wooden workbench with tools, tins, rags and offcuts; a pegboard with hanging tools; stacked plastic buckets; bare painted brick walls; one plain fluorescent tube on the ceiling. It is the same afternoon: daylight comes in through the open door on the left, the side near the door a little brighter, the back dimmer. He stands at the workbench, one hand resting on it, looking at the camera. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots. Not the blue overalls of the input photo."
+  }
+ ],
+ "clips": [],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/vlog_SETS.mp4"
+}

@@ -1,0 +1,181 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S3a",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K1.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg",
+  "SET": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K1.png"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "SET"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the wheelbarrow holding a pair of yellow rubber gloves in one hand, clear safety glasses hanging from his shirt pocket, looking at the camera. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the wheelbarrow wearing yellow rubber gloves, adjusting the cuff of one glove, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the wheelbarrow wearing the yellow rubber gloves and clear safety glasses, one gloved finger touching the glasses, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K3",
+   "noface": true,
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of a yellow gloved hand scooping into a heap of rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K4",
+   "noface": true,
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same close-up: the gloved hand lifted up, holding a heap of rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, a few falling back onto the pile. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the heap of pebbles holding a handful of them on his gloved palm, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he holds round pebbles in one gloved hand and a few sharp broken grey stones in the other, both hands toward the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he stands between the two heaps of pebbles, pointing at the smaller one, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he holds out a gloved palm with big and small pebbles mixed, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "EXTREME CLOSE-UP of a plastic bucket of cloudy brown water full of rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, a gloved hand stirring them. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same close-up: the bucket tipped slightly, cloudy brown water pouring out over the grass, the pebbles left clean and shiny. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the heaps, holding the bucket of clean wet pebbles, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the sand heap letting clean sand fall from his gloved hand, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s3_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_01.wav",
+   "text": "Vamos con la mezcla. Y antes de tocar nada: guantes de goma, botas y gafas. El cemento fresco quema la piel, no es broma.",
+   "action": "He pulls on the yellow rubber gloves while talking to the camera."
+  },
+  {
+   "id": "s3_02",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_02.wav",
+   "text": "No quema como el fuego, eh. Es cáustico: te deja la piel roja y agrietada. Y en los ojos es peor. Por eso las gafas.",
+   "action": "He puts on the clear safety glasses and taps them with a gloved finger."
+  },
+  {
+   "id": "s3_03",
+   "detail": true,
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_03.wav",
+   "text": "Y esta es la estrella: canto rodado. Piedra de río, redonda, de uno a dos centímetros. Mira los colores: gris, blanca, rojiza, casi negra.",
+   "action": "The gloved hand scoops up a handful of colourful river pebbles and lifts it, a few rolling off."
+  },
+  {
+   "id": "s3_04",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_04.wav",
+   "text": "La redonda es la que queda más linda y se siente suave al pisar. La partida, la de cantos filosos, también sirve, pero se ve distinta.",
+   "action": "He shows the handful of round pebbles, then picks up a sharp broken grey stone with the other hand to compare."
+  },
+  {
+   "id": "s3_05",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_05.wav",
+   "text": "Un truco que leí en un comentario, de Ecuador: mezcla un poco de piedra más chica.",
+   "action": "He drops the stones back and points at a small heap of smaller pebbles beside the big heap."
+  },
+  {
+   "id": "s3_05x",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_05x.wav",
+   "text": "Rellena los huecos entre las grandes y el piso queda más parejo.",
+   "action": "He takes a pinch of the small pebbles and shows how they fill the gaps between big ones in his palm."
+  },
+  {
+   "id": "s3_06",
+   "detail": true,
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_06.wav",
+   "text": "Y la lavo antes. Si la piedra viene con tierra o polvo, la pasta no se agarra bien. Un balde de agua, la revuelvo, y afuera el agua turbia.",
+   "action": "The gloved hand stirs the pebbles in the bucket and the cloudy water is tipped out onto the grass."
+  },
+  {
+   "id": "s3_06b",
+   "a": "K11",
+   "b": "K12",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s3_06b.wav",
+   "text": "Y la arena, que sea de río o de construcción, limpia, sin tierra. La de playa no, porque trae sal, y la sal le hace mal al concreto.",
+   "action": "He sets the bucket down, takes a little sand in his gloved hand and lets it run through his fingers."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S3a/vlog_S3a.mp4"
+}

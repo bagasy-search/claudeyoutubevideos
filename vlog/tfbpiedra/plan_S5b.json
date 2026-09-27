@@ -1,0 +1,209 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S5b",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K2.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg",
+  "SET": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K2.png"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "SET"
+   ],
+   "prompt": "Same place, same framing and same light: the jar of sugar, the spray bottle and the small white jug stand in a row on the workbench. He leans back against the edge of the workbench, arms folded, the camera a little to the right, looking at the camera. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he leans back against the workbench with his arms folded, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he leans on the bench, one hand open in front of him, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he leans on the bench, pointing at the watch on his left wrist, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he leans on the bench, shaking his head slightly, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he leans on the bench, smiling, one thumb up, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the bench, one hand raised high and the other low, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the bench, knuckles resting on the bench top, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the bench, one hand on it, the other open toward the camera, friendly. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the bench pointing down with one finger, friendly, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "K9",
+    "V"
+   ],
+   "prompt": "Same place and same day as the first image, a new camera angle: a MEDIUM SHOT of the older neighbour from about one and a half metres, waist-up, his head and chest filling the upper half of the frame. View toward the open garage door: the older neighbour leans in through the doorway with one hand on the frame, eyebrows raised, curious. He is the older neighbour of the second input image — the same face: about 65, heavy-set, bald on top with grey hair on the sides, a thick grey moustache — wearing a light-blue checked short-sleeved shirt with a pen in the breast pocket and reading glasses hanging from a cord around his neck; the second input image is only for his face and clothes, not the place. The man in the olive shirt is out of frame."
+  },
+  {
+   "id": "K11",
+   "noface": true,
+   "from": [
+    "K10",
+    "VF"
+   ],
+   "prompt": "Same view: the neighbour in the doorway lifts his chin toward the backyard, questioning. Same man, same face as the second image."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light: he stands a step closer to the open door, one arm waving toward the backyard, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s5_05",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_05.wav",
+   "text": "Bueno. Y ahora te cuento lo que le pasó a un lector, porque es exactamente el error del que te hablaba.",
+   "action": "He leans against the edge of the bench, folding his arms."
+  },
+  {
+   "id": "s5_06",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_06.wav",
+   "text": "Me escribió Rubén, de Mendoza, en Argentina. Hizo la entrada de su casa, y vio en un video que había que lavar a las cuatro horas.",
+   "action": "Leaning on the bench, he talks to the camera with small gestures."
+  },
+  {
+   "id": "s5_07",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_07.wav",
+   "text": "Y a las cuatro horas, reloj en mano, abrió la manguera. Pero era invierno, hacía frío, y el concreto todavía estaba blando.",
+   "action": "He taps the watch on his wrist with a finger while talking."
+  },
+  {
+   "id": "s5_08",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_08.wav",
+   "text": "Resultado: el chorro le arrancó las piedras de una esquina entera. Tuvo que rellenar esos huecos, y el parche se nota.",
+   "action": "He shakes his head slowly, lips pressed, while talking."
+  },
+  {
+   "id": "s5_08b",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_08b.wav",
+   "text": "Y te cuento que Rubén no se rindió: el paño siguiente lo hizo con la prueba de la esquina, y me mandó la foto. Ese sí quedó parejo.",
+   "action": "He smiles and nods, holding up a thumb."
+  },
+  {
+   "id": "s5_09",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_09.wav",
+   "text": "El reloj no sabe si hace frío o calor. Con calor, el cemento endurece mucho más rápido. Con frío, mucho más lento. La misma mezcla.",
+   "action": "He stands straight and gestures with both hands, one up for heat, one down for cold."
+  },
+  {
+   "id": "s5_10",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_10.wav",
+   "text": "Y también cambia con el cemento, con la humedad, con el sol o la sombra. Por eso el momento no se adivina: se prueba.",
+   "action": "He taps the bench top twice with his knuckles while talking."
+  },
+  {
+   "id": "s5_10b",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_10b.wav",
+   "text": "Y esa es la idea de toda la colección del canal: cada arreglo con sus materiales y sus medidas,",
+   "action": "He talks to the camera, calm, one hand resting on the bench."
+  },
+  {
+   "id": "s5_10bx",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_10bx.wav",
+   "text": "y con la prueba para saber si te salió bien. El enlace te lo dejé abajo.",
+   "action": "He points down toward the bottom of the frame with one finger, friendly."
+  },
+  {
+   "id": "s5_11",
+   "solo": true,
+   "a": "K10",
+   "b": "K11",
+   "secs": 5,
+   "line": "Oye, ¿y ya lo vas a lavar, o todavía no?",
+   "who": "the older neighbour with the thick grey moustache and the light-blue checked shirt (the third reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man; the man in the olive shirt does NOT speak",
+   "refs": [
+    "VF"
+   ],
+   "action": "The neighbour leans in through the doorway and asks, nodding toward the backyard."
+  },
+  {
+   "id": "s5_12",
+   "a": "K9",
+   "b": "K12",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s5_12.wav",
+   "text": "Todavía no, vecino. Pero venga, que le muestro la prueba.",
+   "action": "He turns toward the door and waves the neighbour to come, walking a step toward the door."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S5b/vlog_S5b.mp4"
+}

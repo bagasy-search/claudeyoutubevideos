@@ -73,7 +73,7 @@ import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
 import { Readable } from "node:stream";
-import { execFileSync } from "node:child_process";
+import { execFileSync as _efs } from "node:child_process"; const execFileSync = (c, a, o) => _efs(c, a, { windowsHide: true, ...(o || {}) }); // sin ventanas de consola (27-sep)
 
 const [, , planArg, fase, ...rest] = process.argv;
 const FL = Object.fromEntries(rest.filter(a => a.startsWith("--")).map(a => { const [k, v] = a.slice(2).split("="); return [k, v ?? true]; }));
@@ -100,9 +100,9 @@ const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a]);
 const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
 const wh = f => execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number);
 
-const LIGHT = " BRIGHT, correctly exposed photo, big soft DAYLIGHT from a window, white balance NEUTRAL, no amber cast, no grading, no vignette, no film grain, no dark moody look, lifted shadows; brightness from the room lighting, not post-production — do not raise saturation, no glow, no HDR. An ordinary photo, not a film still. Real skin with visible pores, fine lines and natural texture, not smooth, not plastic, not retouched.";
+const LIGHT = P.light != null ? " " + P.light : " BRIGHT, correctly exposed photo, big soft DAYLIGHT from a window, white balance NEUTRAL, no amber cast, no grading, no vignette, no film grain, no dark moody look, lifted shadows; brightness from the room lighting, not post-production — do not raise saturation, no glow, no HDR. An ordinary photo, not a film still. Real skin with visible pores, fine lines and natural texture, not smooth, not plastic, not retouched.";
 const IDENT = " IDENTITY: the presenter must have EXACTLY the face of the man/woman in the LAST input image (a close-up of the real face): same face shape, eyes, nose, eyebrows, hair and beard, same age — copy that face, do not let it drift, do not make them younger or more attractive. The last image is only for the face; the scene comes from the first image. Do NOT add objects that are not described.";
-const LOOK = " Ultra realistic casual home video, handheld phone footage with small natural shakes, BRIGHT correctly exposed image, big soft daylight from the window, neutral white balance, no grading, no vignette, no dark moody look; real skin with visible pores and fine lines, not smooth, not plastic; natural hands; nothing polished, no music.";
+const LOOK = P.look != null ? " " + P.look : " Ultra realistic casual home video, handheld phone footage with small natural shakes, BRIGHT correctly exposed image, big soft daylight from the window, neutral white balance, no grading, no vignette, no dark moody look; real skin with visible pores and fine lines, not smooth, not plastic; natural hands; nothing polished, no music.";
 const SE = "The video STARTS EXACTLY on the first reference image and ENDS EXACTLY on the second reference image: the very first frame is the first image and the very last frame is the second image — same place, same framing, same light, same objects in the same places; in between, one continuous take without cutting or changing angle. The third reference image is only the presenter's real face: keep exactly that face the whole time. ";
 
 // ---------- anclas ----------
@@ -129,7 +129,7 @@ const usd = (u, batch) => { const d = u.input_tokens_details || {}; const f = ba
 // lo ESPERADO con las palancas de default (1088x608, K/foto base en caja 256x144, cara 96 tok, extras como vengan) en el
 // modo elegido: si el real se pasa >15% es que algo se salteó (size grande, ref sin achicar, cara entera…) → aviso.
 const esperado = (it, batch) => usd({ input_tokens_details: { text_tokens: Math.ceil(it.prompt.length / 4),
-  image_tokens: 96 + it.a.from.reduce((s, n) => s + (n === "k0" || /^K\d+$/.test(n) ? 144 : tokIn(...wh(small(refPathOf(it.Pl, n), EXTRA_BOX, dirsOf(it.Pl).ANC)))), 0) },
+  image_tokens: (it.a.noface ? 0 : 96) + it.a.from.reduce((s, n) => s + (n === "k0" || /^K\d+$/.test(n) ? 144 : tokIn(...wh(small(refPathOf(it.Pl, n), EXTRA_BOX, dirsOf(it.Pl).ANC)))), 0) },
   output_tokens: OUT_TOK[SIZE0] || 96 }, batch);
 
 // ref achicada (cacheada en anc/_ref/): cabe en la caja sin deformar
@@ -187,8 +187,8 @@ function prepararItem(it) { // arma inputs chicos recién cuando sus K previos e
   const { Pl, a } = it, ANCd = dirsOf(Pl).ANC;
   it.inputs = a.from.map(n => { const f = refPathOf(Pl, n); return small(f, n === "k0" || /^K\d+$/.test(n) ? prevOf(Pl) : EXTRA_BOX, ANCd); });
   it.size = sizeOf(Pl);
-  it.inputs.push(face128(Pl));
-  it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + IDENT + LIGHT;
+  if (!a.noface) it.inputs.push(face128(Pl));            // `noface`: detalle de manos / otro personaje → sin la cara del presentador
+  it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + (a.noface ? "" : IDENT) + LIGHT;
   return it;
 }
 let gasto = 0, nimg = 0, avisos = 0;
@@ -243,7 +243,7 @@ async function bajar(b, porKey) { // stremeado por línea (el JSONL con base64 r
 async function anclasBatch(items) {
   const porKey = Object.fromEntries(items.map(it => [it.key, it]));
   if (fs.existsSync(PEND)) { const pend = JSON.parse(fs.readFileSync(PEND, "utf8")); log("retomo batch pendiente", pend.join(" "));
-    items.filter(it => !fs.existsSync(it.out)).forEach(prepararItem); await esperarYBajar(pend, porKey); fs.unlinkSync(PEND); }
+    items.filter(it => !fs.existsSync(it.out) && it.deps.every(f => fs.existsSync(f))).forEach(prepararItem); await esperarYBajar(pend, porKey); /* sólo los listos: preparar uno sin sus K previos revienta */ fs.unlinkSync(PEND); }
   for (let ronda = 1; ; ronda++) {
     const pend = items.filter(it => !fs.existsSync(it.out));
     if (!pend.length) return;
@@ -333,7 +333,15 @@ if (fase === "clips") {
   const sel = P.clips.filter(c => !soloIds.length || soloIds.includes(c.id));
   await Promise.all(sel.map((c, i) => sleep(i * 3000).then(async () => {
     const out = soloIds.length ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
-    const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(P.face), ...(c.refs || []).map(n => uri(refPath(n)))];
+    if (c.detail) { // plano DETALLE: keyframe first/last clavados, sin habla (su voz del máster va encima en `armar`); foley propio
+      const T = c.audio ? Math.min(12, Math.max(4, Math.ceil(dur(c.audio) + 0.15))) : c.secs || 4;
+      await gen(out, { mode: "keyframe", seconds: String(T), first_frame: uri(refPath(c.a)), last_frame: uri(refPath(c.b)),
+        prompt: `One continuous take from the first frame to the last frame: ${c.action} Real hands and real materials, natural unhurried movement, the camera stays close and steady, no cuts, no camera jumps.${LOOK} No speech, no voices, only the real sound of what is happening.` });
+      if (fs.existsSync(CL + out + ".mp4")) { const f = CL + "state_det.json", s = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {}; s[c.id] = { file: out + ".mp4", T, own: false }; fs.writeFileSync(f, JSON.stringify(s, null, 1)); }
+      return;
+    }
+    // `solo`: plano del OTRO personaje (contraplano) → sin la cara del presentador en las refs
+    const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), ...(c.solo ? [] : [uri(P.face)]), ...(c.refs || []).map(n => uri(refPath(n)))];
     let body, T;
     if (c.audio) {
       const tr = tramo(c); T = tr.T;
@@ -342,7 +350,7 @@ if (fase === "clips") {
     } else {
       T = c.secs;
       body = { mode: "reference", seconds: String(T), images: imgs,
-        prompt: SE + `The person speaking is ${c.who || "the other person (last reference image is their face)"}, ${c.voice}, lips perfectly synced, saying exactly: "${c.line}" Nobody else speaks. ` + c.action + LOOK + MUTE_LINE };
+        prompt: (c.solo ? SE.replace(/The third reference image is only the presenter's real face: keep exactly that face the whole time\. /, "The third reference image is only the real face of the person speaking: keep exactly that face the whole time. ") : SE) + `The person speaking is ${c.who || "the other person (last reference image is their face)"}, ${c.voice}, lips perfectly synced, saying exactly: "${c.line}" Nobody else speaks. ` + c.action + LOOK + MUTE_LINE };
     }
     await gen(out, body);
     if (fs.existsSync(CL + out + ".mp4")) { const s = state(); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(CL + "state.json", JSON.stringify(s, null, 1)); }
@@ -469,7 +477,7 @@ if (fase === "check") {
         const a = new Set(wa), extra = b.filter(w => !a.has(w)), faltan = [...a].filter(w => !b.includes(w));
         const rep = b.length - wa.length;
         const mid = WORK + c.id + "_mid.jpg"; ff("-ss", (win / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=768:-2", mid);
-        const v = await vision(mid, P.face);
+        const v = await vision(mid, c.solo && c.refs ? refPath(c.refs[0]) : P.face);
         const vis = !v ? " · visión: sin respuesta" : ` · cara ${v.same_person ? "✓" : "⛔ NO ES"} (${v.confidence}) · luz ${v.bright ? "✓" : "⛔ oscura"}${v.issues && !/^none/i.test(v.issues) ? " · " + v.issues : ""}`;
         const malVis = v && (!v.same_person || !v.bright);
         const lb = c.audio && !c.own ? labios(f, c.audio, win) : null; h.labios = lb;

@@ -1,0 +1,162 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S8b",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg",
+  "SET": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "SET"
+   ],
+   "prompt": "Same place, same framing and same light: weeks later, the same yard; in the middle is a finished exposed-pebble concrete slab about one metre by two metres, set flush in the ground with a straight joint across the middle, the wooden boards removed and the edges clean; its surface densely packed rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, dry, matte and a little lighter in colour, each pebble showing about a third of its height. He stands on the slab itself, both boots on the pebbles, the camera a little closer, looking at the camera. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: the camera is a little closer; he stands on the slab looking into the camera, serious. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the slab, one finger raised, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the slab pointing toward the shaded end by the back wall, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the slab, both hands flat in the air to one side, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches on the slab, one hand on the straight joint across the middle, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the slab, calm, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the slab pointing down with one finger, friendly, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the slab, pointing toward the camera, friendly. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the slab smiling, one open hand raised in a goodbye wave. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s8_11",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_11.wav",
+   "text": "Y ahora, lo que te prometí al principio: el secreto del momento exacto.",
+   "action": "He steps closer to the camera, serious, lowering his voice."
+  },
+  {
+   "id": "s8_11x",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_11x.wav",
+   "text": "Ya viste la prueba de la esquina. Pero hay algo que casi nadie te dice.",
+   "action": "He raises one finger, serious, talking."
+  },
+  {
+   "id": "s8_12",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_12.wav",
+   "text": "Un mismo piso no fragua parejo. La parte que da al sol endurece antes que la de la sombra, y los bordes antes que el centro.",
+   "action": "He points at the sunny end of the slab and then at the shaded end by the back wall."
+  },
+  {
+   "id": "s8_13",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_13.wav",
+   "text": "Entonces, si lavas todo de una vez, una parte está en su punto, otra todavía blanda, y otra ya pasada. Por eso a tantos les queda manchado.",
+   "action": "He holds his hands flat and moves them to three different spots in the air."
+  },
+  {
+   "id": "s8_14",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_14.wav",
+   "text": "El secreto es lavar por paños, empezando por donde fragua primero, y hacer la prueba en cada paño. No una vez: en cada uno.",
+   "action": "He crouches and taps the straight joint across the middle of the slab with his knuckles."
+  },
+  {
+   "id": "s8_15",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_15.wav",
+   "text": "Por eso te dije que dividas el piso en paños chicos. No es solo por las fisuras. Es para llegar a tiempo a cada uno.",
+   "action": "He stands up and talks to the camera, calm."
+  },
+  {
+   "id": "s8_16",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_16.wav",
+   "text": "Y si quieres tener ordenados otros arreglos de la casa, con sus materiales y medidas,",
+   "action": "He talks to the camera and points down toward the bottom of the frame."
+  },
+  {
+   "id": "s8_16x",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_16x.wav",
+   "text": "la colección del canal está en el enlace de abajo, o en este código.",
+   "action": "He points toward the camera with a friendly nod."
+  },
+  {
+   "id": "s8_17",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s8_17.wav",
+   "text": "Si lo haces, cuéntame en los comentarios cómo te quedó. Y si te salió mal, también, que de eso aprendemos todos.",
+   "action": "He smiles and raises one open hand in a goodbye wave."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S8b/vlog_S8b.mp4"
+}

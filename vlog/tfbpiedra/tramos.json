@@ -1,0 +1,954 @@
+[
+ {
+  "s": 0.0,
+  "e": 4.044988662131519,
+  "d": 4.044988662131519,
+  "t": "Le tiré agua al cemento fresco... y mira lo que apareció.",
+  "i": 0
+ },
+ {
+  "s": 4.044988662131519,
+  "e": 11.45501133786848,
+  "d": 7.410022675736961,
+  "t": "Cemento, arena y piedra de río. Una regla de madera, un cepillo y la manguera del jardín. Nada más.",
+  "i": 1
+ },
+ {
+  "s": 11.45501133786848,
+  "e": 17.23501133786848,
+  "d": 5.78,
+  "t": "Nada de máquinas caras. Es la misma piedra lavada que ves en las entradas de las casas de antes.",
+  "i": 2
+ },
+ {
+  "s": 17.23501133786848,
+  "e": 24.93501133786848,
+  "d": 7.7,
+  "t": "Un piso con agarre, que no resbala como el cemento liso, y que aguanta años afuera, al sol y a la lluvia.",
+  "i": 3
+ },
+ {
+  "s": 24.93501133786848,
+  "e": 30.76501133786848,
+  "d": 5.83,
+  "t": "Hoy lo hacemos juntos, paso a paso: la base, la mezcla, el colado y el lavado.",
+  "i": 4
+ },
+ {
+  "s": 30.76501133786848,
+  "e": 36.20498866213152,
+  "d": 5.4399773242630385,
+  "t": "Pero el secreto no es la manguera. El secreto es el momento exacto en que lo lavas.",
+  "i": 5
+ },
+ {
+  "s": 36.20498866213152,
+  "e": 43.09498866213152,
+  "d": 6.89,
+  "t": "Si te adelantas, lo arruinas. Y si te atrasas, ya no sale. Y ese momento, hoy te enseño a encontrarlo.",
+  "i": 6
+ },
+ {
+  "s": 43.09498866213152,
+  "e": 48.955011337868484,
+  "d": 5.860022675736961,
+  "t": "Te doy primero la receta completa, así ya la tienes. Y después vamos al detalle de cada paso.",
+  "i": 7
+ },
+ {
+  "s": 48.955011337868484,
+  "e": 56.964988662131525,
+  "d": 8.009977324263039,
+  "t": "Uno, la base. Sacas la tierra blanda, pones grava, la compactas bien y armas un marco de tablas con una pendiente suave.",
+  "i": 8
+ },
+ {
+  "s": 56.964988662131525,
+  "e": 65.89501133786848,
+  "d": 8.93002267573696,
+  "t": "Dos, la mezcla. Una parte de cemento, dos de arena y tres de piedra redonda de río, medidas con el mismo balde. Poca agua.",
+  "i": 9
+ },
+ {
+  "s": 65.89501133786848,
+  "e": 73.75501133786848,
+  "d": 7.86,
+  "t": "Tres. La llenas, la emparejas con una regla de madera y aprietas las piedras con la llana, para que queden apenas tapadas.",
+  "i": 10
+ },
+ {
+  "s": 73.75501133786848,
+  "e": 82.72501133786848,
+  "d": 8.97,
+  "t": "Cuatro. Esperas, y cada tanto haces la prueba en una esquina. Si la pasta sale con el cepillo y la piedra no se mueve, es el momento.",
+  "i": 11
+ },
+ {
+  "s": 82.72501133786848,
+  "e": 90.32498866213152,
+  "d": 7.599977324263039,
+  "t": "Cinco. Lluvia fina de manguera y cepillo suave, hasta que se vea más o menos un tercio de cada piedra. No más.",
+  "i": 12
+ },
+ {
+  "s": 90.32498866213152,
+  "e": 97.88498866213152,
+  "d": 7.56,
+  "t": "Seis. Al otro día, un lavado final. Y después lo mantienes húmedo y tapado con un plástico, unos siete días.",
+  "i": 13
+ },
+ {
+  "s": 97.88498866213152,
+  "e": 106.01498866213151,
+  "d": 8.13,
+  "t": "Y siete, si quieres, un sellador, cuando ya secó bien. Esa es la receta. Ahora, lo que hace que te salga bien de verdad.",
+  "i": 14
+ },
+ {
+  "s": 106.01498866213151,
+  "e": 112.74498866213152,
+  "d": 6.73,
+  "t": "Bueno. Esta es la esquina del patio donde lo vamos a hacer. Un rectángulo de un metro por dos, más o menos.",
+  "i": 15
+ },
+ {
+  "s": 112.74498866213152,
+  "e": 119.71498866213152,
+  "d": 6.97,
+  "t": "Y te cuento por qué hago este video. Me llegan muchos mensajes de gente que lo intentó y le salió mal.",
+  "i": 16
+ },
+ {
+  "s": 119.71498866213152,
+  "e": 127.54498866213152,
+  "d": 7.83,
+  "t": "Unos lo lavaron y se les salieron todas las piedras: quedó lleno de huecos. Otros esperaron al otro día, y ya no salió nada.",
+  "i": 17
+ },
+ {
+  "s": 127.54498866213152,
+  "e": 133.78498866213152,
+  "d": 6.24,
+  "t": "Y en los comentarios de los videos de piedra lavada se repiten siempre las mismas tres preguntas.",
+  "i": 18
+ },
+ {
+  "s": 133.78498866213152,
+  "e": 141.18498866213153,
+  "d": 7.4,
+  "t": "¿Cuándo se lava? ¿Resbala cuando está mojado? ¿Y se puede hacer sin hidrolavadora? Las tres te las contesto hoy.",
+  "i": 19
+ },
+ {
+  "s": 141.18498866213153,
+  "e": 145.5350113378685,
+  "d": 4.3500226757369616,
+  "t": "Y la segunda, rápido: resbala mucho menos que el cemento liso,",
+  "i": 20
+ },
+ {
+  "s": 145.5350113378685,
+  "e": 150.9450113378685,
+  "d": 5.41,
+  "t": "porque cada piedra asoma y da agarre. Con una excepción, que te muestro al final.",
+  "i": 21
+ },
+ {
+  "s": 150.9450113378685,
+  "e": 160.4350113378685,
+  "d": 9.49,
+  "t": "La tercera, ya mismo: sí. Yo lo hago con la manguera del jardín y un cepillo. La hidrolavadora, al principio, hasta te arranca las piedras.",
+  "i": 22
+ },
+ {
+  "s": 160.4350113378685,
+  "e": 168.36498866213154,
+  "d": 7.929977324263039,
+  "t": "Ahora sí, la base. Saqué unos quince centímetros de tierra, toda la parte blanda, la que tiene raíces y pasto.",
+  "i": 23
+ },
+ {
+  "s": 168.36498866213154,
+  "e": 177.0350113378685,
+  "d": 8.670022675736961,
+  "t": "Y abajo va grava, unos diez centímetros, bien compactada con este pisón. Golpe, golpe, golpe, hasta que al pisar no se hunde.",
+  "i": 24
+ },
+ {
+  "s": 177.0350113378685,
+  "e": 186.1550113378685,
+  "d": 9.12,
+  "t": "Ojo, que la grava de abajo no es la piedra bonita. Abajo va cualquier grava común. La piedra de colores va arriba, en la mezcla.",
+  "i": 25
+ },
+ {
+  "s": 186.1550113378685,
+  "e": 194.58498866213154,
+  "d": 8.429977324263039,
+  "t": "¿Por qué tanto trabajo abajo? Porque el piso de arriba es tan bueno como lo que tiene debajo. Si la base se hunde, el piso se raja.",
+  "i": 26
+ },
+ {
+  "s": 194.58498866213154,
+  "e": 203.4750113378685,
+  "d": 8.890022675736962,
+  "t": "Después, el marco. Tablas de pino, clavadas a estacas. La altura de las tablas es el grosor del piso: unos ocho, diez centímetros.",
+  "i": 27
+ },
+ {
+  "s": 203.4750113378685,
+  "e": 212.1150113378685,
+  "d": 8.64,
+  "t": "Y fíjate en esto: el nivel. Le doy una pendiente suave, más o menos un centímetro por cada metro, hacia el lado del jardín.",
+  "i": 28
+ },
+ {
+  "s": 212.1150113378685,
+  "e": 219.36498866213154,
+  "d": 7.249977324263039,
+  "t": "Si lo dejas perfectamente plano, el agua se te queda en charcos. Y con el tiempo eso ensucia y hace verdín.",
+  "i": 29
+ },
+ {
+  "s": 219.36498866213154,
+  "e": 224.3150113378685,
+  "d": 4.950022675736961,
+  "t": "Un piso, vecino. Un piso de piedra lavada. Después me cuenta qué le parece.",
+  "i": 30
+ },
+ {
+  "s": 224.3150113378685,
+  "e": 230.9950113378685,
+  "d": 6.68,
+  "t": "Y otra pregunta que se repite: ¿se pueden hacer varios cuadros y juntarlos? Sí. Y además te conviene.",
+  "i": 31
+ },
+ {
+  "s": 230.9950113378685,
+  "e": 241.4050113378685,
+  "d": 10.41,
+  "t": "Con una tabla en el medio divido el piso en dos paños. Así cada paño lo lavo a tiempo, sin correr, y la junta ayuda a que no se raje.",
+  "i": 32
+ },
+ {
+  "s": 241.4050113378685,
+  "e": 250.10498866213155,
+  "d": 8.699977324263038,
+  "t": "Si un paño es tan grande que no llegas a lavarlo entero antes de que endurezca, es demasiado grande. Acuérdate de esto, que después importa.",
+  "i": 33
+ },
+ {
+  "s": 250.10498866213155,
+  "e": 258.5150113378685,
+  "d": 8.410022675736961,
+  "t": "Y última cosa antes de mezclar: mojo bien la grava. Si está seca, le chupa el agua al concreto de abajo, y seca desparejo.",
+  "i": 34
+ },
+ {
+  "s": 258.5150113378685,
+  "e": 266.6150113378685,
+  "d": 8.1,
+  "t": "Vamos con la mezcla. Y antes de tocar nada: guantes de goma, botas y gafas. El cemento fresco quema la piel, no es broma.",
+  "i": 35
+ },
+ {
+  "s": 266.6150113378685,
+  "e": 274.26498866213154,
+  "d": 7.6499773242630384,
+  "t": "No quema como el fuego, eh. Es cáustico: te deja la piel roja y agrietada. Y en los ojos es peor. Por eso las gafas.",
+  "i": 36
+ },
+ {
+  "s": 274.26498866213154,
+  "e": 284.5250113378685,
+  "d": 10.26002267573696,
+  "t": "Y esta es la estrella: canto rodado. Piedra de río, redonda, de uno a dos centímetros. Mira los colores: gris, blanca, rojiza, casi negra.",
+  "i": 37
+ },
+ {
+  "s": 284.5250113378685,
+  "e": 293.6049886621315,
+  "d": 9.079977324263039,
+  "t": "La redonda es la que queda más linda y se siente suave al pisar. La partida, la de cantos filosos, también sirve, pero se ve distinta.",
+  "i": 38
+ },
+ {
+  "s": 293.6049886621315,
+  "e": 298.78501133786847,
+  "d": 5.180022675736962,
+  "t": "Un truco que leí en un comentario, de Ecuador: mezcla un poco de piedra más chica.",
+  "i": 39
+ },
+ {
+  "s": 298.78501133786847,
+  "e": 302.61501133786845,
+  "d": 3.83,
+  "t": "Rellena los huecos entre las grandes y el piso queda más parejo.",
+  "i": 40
+ },
+ {
+  "s": 302.61501133786845,
+  "e": 311.7649886621315,
+  "d": 9.14997732426304,
+  "t": "Y la lavo antes. Si la piedra viene con tierra o polvo, la pasta no se agarra bien. Un balde de agua, la revuelvo, y afuera el agua turbia.",
+  "i": 41
+ },
+ {
+  "s": 311.7649886621315,
+  "e": 321.2149886621315,
+  "d": 9.45,
+  "t": "Y la arena, que sea de río o de construcción, limpia, sin tierra. La de playa no, porque trae sal, y la sal le hace mal al concreto.",
+  "i": 42
+ },
+ {
+  "s": 321.2149886621315,
+  "e": 330.6849886621315,
+  "d": 9.47,
+  "t": "Ahora, la proporción. La que yo uso: una de cemento, dos de arena, tres de piedra. Todo medido con el mismo balde, que es lo que no falla.",
+  "i": 43
+ },
+ {
+  "s": 330.6849886621315,
+  "e": 338.1049886621315,
+  "d": 7.42,
+  "t": "Un balde de cemento. Dos de arena. Y tres de piedra. Primero en seco: revuelvo hasta que el color quede parejo.",
+  "i": 44
+ },
+ {
+  "s": 338.1049886621315,
+  "e": 344.59501133786847,
+  "d": 6.490022675736961,
+  "t": "¿Por qué en seco primero? Porque si le echas el agua antes, el cemento hace grumos y te quedan partes flojas.",
+  "i": 45
+ },
+ {
+  "s": 344.59501133786847,
+  "e": 351.59501133786847,
+  "d": 7.0,
+  "t": "Y el agua, de a poco. Este es el error de casi todos: le ponen mucha agua para que sea fácil de trabajar.",
+  "i": 46
+ },
+ {
+  "s": 351.59501133786847,
+  "e": 359.05501133786845,
+  "d": 7.46,
+  "t": "Con mucha agua, las piedras se van al fondo, arriba te queda pura pasta, y cuando lavas no aparece casi nada.",
+  "i": 47
+ },
+ {
+  "s": 359.05501133786845,
+  "e": 367.17501133786845,
+  "d": 8.12,
+  "t": "La textura que buscas es esta: espesa, que se sostiene en la pala y no chorrea. Como una avena bien espesa.",
+  "i": 48
+ },
+ {
+  "s": 367.17501133786845,
+  "e": 374.5649886621315,
+  "d": 7.389977324263039,
+  "t": "¿Cuánta mezcla? Para este paño de un metro por dos, a ocho centímetros, son unos ciento sesenta litros.",
+  "i": 49
+ },
+ {
+  "s": 374.5649886621315,
+  "e": 377.8950113378685,
+  "d": 3.3300226757369615,
+  "t": "Haz la cuenta antes, para no quedarte corto a la mitad.",
+  "i": 50
+ },
+ {
+  "s": 377.8950113378685,
+  "e": 382.73501133786846,
+  "d": 4.84,
+  "t": "Justamente, vecino. No quiero que quede liso. Quiero que se vean las piedras.",
+  "i": 51
+ },
+ {
+  "s": 382.73501133786846,
+  "e": 390.8849886621315,
+  "d": 8.14997732426304,
+  "t": "Y antes de volcar esto, presta muchísima atención a esta imagen, porque probablemente sea la parte más importante del video.",
+  "i": 52
+ },
+ {
+  "s": 390.8849886621315,
+  "e": 401.35501133786846,
+  "d": 10.470022675736962,
+  "t": "Aquí está todo el proceso en una sola hoja. Arriba, las capas: unos diez centímetros de grava compactada, y encima, ocho a diez de concreto con la piedra.",
+  "i": 53
+ },
+ {
+  "s": 401.35501133786846,
+  "e": 410.5249886621315,
+  "d": 9.169977324263039,
+  "t": "Después, la mezcla: uno de cemento, dos de arena y tres de piedra, medido con el mismo balde, y el agua justa para que no chorree.",
+  "i": 54
+ },
+ {
+  "s": 410.5249886621315,
+  "e": 419.4049886621315,
+  "d": 8.88,
+  "t": "En el medio, la prueba del punto. En una esquina, el cepillo: si la piedra se mueve, es temprano. Si la pasta ya no sale, es tarde.",
+  "i": 55
+ },
+ {
+  "s": 419.4049886621315,
+  "e": 429.0049886621315,
+  "d": 9.6,
+  "t": "Y abajo, los tres errores que arruinan el piso: lavar antes de tiempo, echarle mucha agua a la mezcla, y tirar el agua del lavado al desagüe.",
+  "i": 56
+ },
+ {
+  "s": 429.0049886621315,
+  "e": 433.4949886621315,
+  "d": 4.49,
+  "t": "Esta hoja la armé con el mismo estilo de las fichas de la colección del canal,",
+  "i": 57
+ },
+ {
+  "s": 433.4949886621315,
+  "e": 438.2049886621315,
+  "d": 4.71,
+  "t": "donde tengo ordenados otros arreglos de la casa, con materiales y medidas.",
+  "i": 58
+ },
+ {
+  "s": 438.2049886621315,
+  "e": 446.1449886621315,
+  "d": 7.94,
+  "t": "Si estás en el televisor, apunta la cámara de tu teléfono a este código. Y si estás en el teléfono, el enlace está abajo.",
+  "i": 59
+ },
+ {
+  "s": 446.1449886621315,
+  "e": 452.87501133786844,
+  "d": 6.7300226757369614,
+  "t": "Ahora sí, a llenar. Vuelco la carretilla dentro del marco, y con la pala la reparto hasta las esquinas.",
+  "i": 60
+ },
+ {
+  "s": 452.87501133786844,
+  "e": 459.17501133786845,
+  "d": 6.3,
+  "t": "Las esquinas y los bordes, con cuidado. Ahí es donde se hacen los huecos si no metes bien la mezcla.",
+  "i": 61
+ },
+ {
+  "s": 459.17501133786845,
+  "e": 468.4550113378684,
+  "d": 9.28,
+  "t": "Y ahora la regla. Una tabla recta, apoyada en el marco. La arrastro así, en zigzag, de un lado al otro, y lo que sobra se va.",
+  "i": 62
+ },
+ {
+  "s": 468.4550113378684,
+  "e": 475.9150113378684,
+  "d": 7.46,
+  "t": "Donde queda un pozo, echo un poco de mezcla y paso la regla otra vez, hasta que quede parejo con el borde del marco.",
+  "i": 63
+ },
+ {
+  "s": 475.9150113378684,
+  "e": 483.60498866213146,
+  "d": 7.6899773242630385,
+  "t": "Y este es el paso que casi nadie explica: aprieto las piedras con la llana. Suave, sin frotar, solo para hundirlas.",
+  "i": 64
+ },
+ {
+  "s": 483.60498866213146,
+  "e": 490.04498866213146,
+  "d": 6.44,
+  "t": "Lo que quiero es que las piedras de arriba queden apenas tapadas por una capita de pasta. Que se adivinen debajo.",
+  "i": 65
+ },
+ {
+  "s": 490.04498866213146,
+  "e": 498.81501133786844,
+  "d": 8.77002267573696,
+  "t": "Y ojo con alisar de más. Si lo trabajas mucho, sube agua y pasta a la superficie, y las piedras se hunden. Aprietas, y lo dejas.",
+  "i": 66
+ },
+ {
+  "s": 498.81501133786844,
+  "e": 504.13501133786843,
+  "d": 5.32,
+  "t": "Hay una variante de esto que funciona todavía mejor cuando la piedra de color te sale cara.",
+  "i": 67
+ },
+ {
+  "s": 504.13501133786843,
+  "e": 506.84498866213147,
+  "d": 2.7099773242630385,
+  "t": "Te dejé exactamente cómo hacerlo en la descripción.",
+  "i": 68
+ },
+ {
+  "s": 506.84498866213147,
+  "e": 513.5050113378684,
+  "d": 6.660022675736961,
+  "t": "Y arriba le rocío esto, bien parejo. Qué es, te lo cuento en un rato, porque tiene su truco.",
+  "i": 69
+ },
+ {
+  "s": 513.5050113378684,
+  "e": 522.4550113378684,
+  "d": 8.95,
+  "t": "Y si hay mucho sol, lo tapo con un plástico levantado, que no toque la superficie. Así la cara de arriba no se seca antes que el resto.",
+  "i": 70
+ },
+ {
+  "s": 522.4550113378684,
+  "e": 529.2849886621315,
+  "d": 6.829977324263038,
+  "t": "Y ahora, a esperar. Mientras eso fragua, vengo al taller, porque te debo lo del azúcar que le rocié.",
+  "i": 71
+ },
+ {
+  "s": 529.2849886621315,
+  "e": 535.8750113378684,
+  "d": 6.590022675736962,
+  "t": "Era agua con azúcar. El famoso azúcar: lo vas a ver en muchos videos, así que te voy a decir la verdad.",
+  "i": 72
+ },
+ {
+  "s": 535.8750113378684,
+  "e": 544.6849886621314,
+  "d": 8.809977324263038,
+  "t": "El azúcar retrasa el fraguado del cemento. Eso es real. Rociada arriba, hace que la superficie tarde más en endurecer que el resto.",
+  "i": 73
+ },
+ {
+  "s": 544.6849886621314,
+  "e": 554.6850113378684,
+  "d": 10.000022675736961,
+  "t": "Loco no, vecino. Pero la verdad es esta: con el azúcar casero el resultado es irregular. En una parte frena mucho, y en otra casi nada.",
+  "i": 74
+ },
+ {
+  "s": 554.6850113378684,
+  "e": 563.4750113378684,
+  "d": 8.79,
+  "t": "Existe un retardante de superficie comercial, hecho para esto. Se rocía parejo y te da más margen. Si lo consigues, es más seguro.",
+  "i": 75
+ },
+ {
+  "s": 563.4750113378684,
+  "e": 572.0350113378684,
+  "d": 8.56,
+  "t": "¿Y si no uso ninguno? También se puede. Solo tienes que estar más atento al momento de lavar, que es justo lo que te voy a enseñar.",
+  "i": 76
+ },
+ {
+  "s": 572.0350113378684,
+  "e": 578.1550113378684,
+  "d": 6.12,
+  "t": "Bueno. Y ahora te cuento lo que le pasó a un lector, porque es exactamente el error del que te hablaba.",
+  "i": 77
+ },
+ {
+  "s": 578.1550113378684,
+  "e": 586.0650113378683,
+  "d": 7.91,
+  "t": "Me escribió Rubén, de Mendoza, en Argentina. Hizo la entrada de su casa, y vio en un video que había que lavar a las cuatro horas.",
+  "i": 78
+ },
+ {
+  "s": 586.0650113378683,
+  "e": 594.5049886621314,
+  "d": 8.439977324263038,
+  "t": "Y a las cuatro horas, reloj en mano, abrió la manguera. Pero era invierno, hacía frío, y el concreto todavía estaba blando.",
+  "i": 79
+ },
+ {
+  "s": 594.5049886621314,
+  "e": 602.0049886621314,
+  "d": 7.5,
+  "t": "Resultado: el chorro le arrancó las piedras de una esquina entera. Tuvo que rellenar esos huecos, y el parche se nota.",
+  "i": 80
+ },
+ {
+  "s": 602.0049886621314,
+  "e": 610.6649886621313,
+  "d": 8.66,
+  "t": "Y te cuento que Rubén no se rindió: el paño siguiente lo hizo con la prueba de la esquina, y me mandó la foto. Ese sí quedó parejo.",
+  "i": 81
+ },
+ {
+  "s": 610.6649886621313,
+  "e": 620.5849886621313,
+  "d": 9.92,
+  "t": "El reloj no sabe si hace frío o calor. Con calor, el cemento endurece mucho más rápido. Con frío, mucho más lento. La misma mezcla.",
+  "i": 82
+ },
+ {
+  "s": 620.5849886621313,
+  "e": 629.2249886621313,
+  "d": 8.64,
+  "t": "Y también cambia con el cemento, con la humedad, con el sol o la sombra. Por eso el momento no se adivina: se prueba.",
+  "i": 83
+ },
+ {
+  "s": 629.2249886621313,
+  "e": 635.535759637188,
+  "d": 6.310770975056689,
+  "t": "Y esa es la idea de toda la colección del canal: cada arreglo con sus materiales y sus medidas,",
+  "i": 84
+ },
+ {
+  "s": 635.535759637188,
+  "e": 640.6725170068025,
+  "d": 5.136757369614513,
+  "t": "y con la prueba para saber si te salió bien. El enlace te lo dejé abajo.",
+  "i": 85
+ },
+ {
+  "s": 640.6725170068025,
+  "e": 644.1625396825395,
+  "d": 3.4900226757369612,
+  "t": "Todavía no, vecino. Pero venga, que le muestro la prueba.",
+  "i": 86
+ },
+ {
+  "s": 644.1625396825395,
+  "e": 649.5925170068026,
+  "d": 5.429977324263039,
+  "t": "Mira. Voy a una esquina, la que da al sol, y paso el cepillo. Suave.",
+  "i": 87
+ },
+ {
+  "s": 649.5925170068026,
+  "e": 657.2725396825396,
+  "d": 7.680022675736962,
+  "t": "¿Ves? La pasta de arriba sale, pero la piedra se mueve. Si la empujo con el dedo, se suelta. Todavía es temprano.",
+  "i": 88
+ },
+ {
+  "s": 657.2725396825396,
+  "e": 663.1725170068027,
+  "d": 5.8999773242630384,
+  "t": "Si ahora le tiro agua, me pasa lo de Rubén. Así que lo tapo otra vez, y espero un rato más.",
+  "i": 89
+ },
+ {
+  "s": 663.1725170068027,
+  "e": 671.0225396825396,
+  "d": 7.8500226757369616,
+  "t": "Un rato después, la misma prueba. Paso el cepillo... y ahora la pasta sale, pero la piedra queda firme. No se mueve.",
+  "i": 90
+ },
+ {
+  "s": 671.0225396825396,
+  "e": 679.2925170068027,
+  "d": 8.269977324263039,
+  "t": "Y la prueba del dedo: aprieto la superficie. Si deja marca pero no se hunde, y la piedra no gira, estamos en el punto.",
+  "i": 91
+ },
+ {
+  "s": 679.2925170068027,
+  "e": 684.0525170068026,
+  "d": 4.76,
+  "t": "Ese es el momento. Y fíjate que lo encontré probando, no mirando el reloj.",
+  "i": 92
+ },
+ {
+  "s": 684.0525170068026,
+  "e": 691.9025396825396,
+  "d": 7.8500226757369616,
+  "t": "Ahora, la manguera. Pero atención: lluvia fina, no chorro. Pongo la pistola en modo lluvia, y la mantengo lejos.",
+  "i": 93
+ },
+ {
+  "s": 691.9025396825396,
+  "e": 699.6325170068026,
+  "d": 7.7299773242630385,
+  "t": "Y con la otra mano, el cepillo. Suave, en círculos. El agua afloja la pasta, y el cepillo la arrastra.",
+  "i": 94
+ },
+ {
+  "s": 699.6325170068026,
+  "e": 708.5725170068026,
+  "d": 8.94,
+  "t": "¿Y cuánta agua? Poca: la que el cepillo necesita. Si inundas el paño, el agua arrastra pasta de donde no quieres y te queda desparejo.",
+  "i": 95
+ },
+ {
+  "s": 708.5725170068026,
+  "e": 715.8825170068026,
+  "d": 7.31,
+  "t": "¿Ves cómo aparecen? Primero se asoman las puntas, y después los colores. Esto es lo más lindo de todo el trabajo.",
+  "i": 96
+ },
+ {
+  "s": 715.8825170068026,
+  "e": 720.4925170068026,
+  "d": 4.61,
+  "t": "Tóquelas, vecino. Están firmes. Por eso hice la prueba antes.",
+  "i": 97
+ },
+ {
+  "s": 720.4925170068026,
+  "e": 729.3925396825396,
+  "d": 8.900022675736961,
+  "t": "¿Hasta dónde lavo? Hasta que se vea más o menos un tercio de cada piedra. Si destapas más, la piedra queda floja y se suelta con el tiempo.",
+  "i": 98
+ },
+ {
+  "s": 729.3925396825396,
+  "e": 736.2525170068026,
+  "d": 6.859977324263038,
+  "t": "Y lavo de a poco, por paños, empezando por donde fragua primero. Donde da el sol, por ahí empiezo.",
+  "i": 99
+ },
+ {
+  "s": 736.2525170068026,
+  "e": 744.2025396825395,
+  "d": 7.950022675736961,
+  "t": "El agua con pasta que sale, ojo con esto: no va al desagüe. Esa pasta se asienta en el caño, endurece, y lo tapa.",
+  "i": 100
+ },
+ {
+  "s": 744.2025396825395,
+  "e": 752.6925170068025,
+  "d": 8.48997732426304,
+  "t": "Yo la junto en este balde, la dejo asentar, y el agua clara de arriba va a la tierra. El barro gris, cuando se seca, a la basura.",
+  "i": 101
+ },
+ {
+  "s": 752.6925170068025,
+  "e": 756.6625396825394,
+  "d": 3.9700226757369617,
+  "t": "¿Y si se te pasó el punto y ya no sale? Te digo la verdad:",
+  "i": 102
+ },
+ {
+  "s": 756.6625396825394,
+  "e": 762.0625396825394,
+  "d": 5.4,
+  "t": "no hay truco casero que lo arregle bien. Te queda un cemento con algunas piedras asomando.",
+  "i": 103
+ },
+ {
+  "s": 762.0625396825394,
+  "e": 769.8625396825394,
+  "d": 7.8,
+  "t": "Y lo que no hay que hacer: cepillo de alambre, o la hidrolavadora a toda potencia. Rayan la pasta y arrancan piedras.",
+  "i": 104
+ },
+ {
+  "s": 769.8625396825394,
+  "e": 774.7825396825393,
+  "d": 4.92,
+  "t": "Así quedó hoy. Mojado se ve precioso, pero ojo, que todavía no terminé.",
+  "i": 105
+ },
+ {
+  "s": 774.7825396825393,
+  "e": 782.5325170068023,
+  "d": 7.749977324263039,
+  "t": "Al otro día, cuando seca, aparece esto: un velo blanquecino arriba de las piedras. Es un resto de cemento.",
+  "i": 106
+ },
+ {
+  "s": 782.5325170068023,
+  "e": 791.0225396825393,
+  "d": 8.490022675736961,
+  "t": "Le doy un segundo lavado con agua y el cepillo, y casi todo sale. Si todavía queda velo, hay limpiadores de cemento en la ferretería.",
+  "i": 107
+ },
+ {
+  "s": 791.0225396825393,
+  "e": 798.7425396825394,
+  "d": 7.72,
+  "t": "Si usas uno, lee la etiqueta completa, guantes y gafas, y enjuaga mucho. Yo siempre pruebo primero solo con agua.",
+  "i": 108
+ },
+ {
+  "s": 798.7425396825394,
+  "e": 807.1225170068024,
+  "d": 8.379977324263038,
+  "t": "Y ahora el paso que más se saltea la gente: el curado. El concreto no se seca, se cura. Necesita agua para endurecer bien.",
+  "i": 109
+ },
+ {
+  "s": 807.1225170068024,
+  "e": 813.6425396825393,
+  "d": 6.5200226757369615,
+  "t": "Lo mojo, y lo tapo con un plástico unos siete días. Cada día levanto el plástico, y lo vuelvo a mojar.",
+  "i": 110
+ },
+ {
+  "s": 813.6425396825393,
+  "e": 822.3525170068024,
+  "d": 8.709977324263038,
+  "t": "Si lo dejas al sol sin agua, la superficie se seca antes que el resto y aparecen fisuritas. Con el curado, eso casi no pasa.",
+  "i": 111
+ },
+ {
+  "s": 822.3525170068024,
+  "e": 829.9325170068024,
+  "d": 7.58,
+  "t": "Al tercer día saco las tablas del marco, con cuidado, haciendo palanca suave. Los bordes todavía son frágiles.",
+  "i": 112
+ },
+ {
+  "s": 829.9325170068024,
+  "e": 834.7725396825393,
+  "d": 4.840022675736962,
+  "t": "Y si en estos días aparece alguna fisura muy fina, no te asustes:",
+  "i": 113
+ },
+ {
+  "s": 834.7725396825393,
+  "e": 839.8725170068024,
+  "d": 5.099977324263039,
+  "t": "en un piso así casi no se nota, porque la textura de las piedras la disimula.",
+  "i": 114
+ },
+ {
+  "s": 839.8725170068024,
+  "e": 846.2125170068024,
+  "d": 6.34,
+  "t": "Y durante esos días, nada de pisarlo fuerte, ni muebles, ni un vehículo si es una entrada.",
+  "i": 115
+ },
+ {
+  "s": 846.2125170068024,
+  "e": 852.0325170068024,
+  "d": 5.82,
+  "t": "Pasaron unas semanas. Mira cómo quedó. Seco se ve así: más claro, más mate.",
+  "i": 116
+ },
+ {
+  "s": 852.0325170068024,
+  "e": 859.0425396825394,
+  "d": 7.010022675736962,
+  "t": "Y ahora la otra pregunta: ¿resbala? Mira la textura. Cada piedra asoma un poquito, y eso da agarre.",
+  "i": 117
+ },
+ {
+  "s": 859.0425396825394,
+  "e": 863.2925170068024,
+  "d": 4.249977324263039,
+  "t": "Comparado con un cemento liso mojado, esto agarra bastante más.",
+  "i": 118
+ },
+ {
+  "s": 863.2925170068024,
+  "e": 869.1625396825394,
+  "d": 5.870022675736961,
+  "t": "Pero no es magia: piedras muy grandes y muy pulidas, mojadas, pueden resbalar.",
+  "i": 119
+ },
+ {
+  "s": 869.1625396825394,
+  "e": 875.5525170068024,
+  "d": 6.389977324263039,
+  "t": "Para escaleras o rampas, yo usaría piedra más chica, y no le pondría un sellador de los que dejan brillo.",
+  "i": 120
+ },
+ {
+  "s": 875.5525170068024,
+  "e": 883.5425396825394,
+  "d": 7.990022675736961,
+  "t": "Porque el sellador es opcional. Le da ese color de piedra mojada que a mucha gente le encanta. Pero los hay con brillo y los hay mate.",
+  "i": 121
+ },
+ {
+  "s": 883.5425396825394,
+  "e": 892.1025396825394,
+  "d": 8.56,
+  "t": "Si lo sellas, espera a que esté bien curado y seco, varias semanas, o lo que diga la etiqueta. Rodillo, capa fina, sin charcos.",
+  "i": 122
+ },
+ {
+  "s": 892.1025396825394,
+  "e": 900.5095238095234,
+  "d": 8.406984126984128,
+  "t": "Y ojo al elegir el sellador: no todos sirven para afuera. Que la etiqueta diga que es para exterior, y para piedra o concreto.",
+  "i": 123
+ },
+ {
+  "s": 900.5095238095234,
+  "e": 909.3895464852604,
+  "d": 8.880022675736962,
+  "t": "¿Y con piedras de playa, más grandes? El mismo proceso. Solo que el piso va un poco más grueso, y la regla del tercio importa todavía más.",
+  "i": 124
+ },
+ {
+  "s": 909.3895464852604,
+  "e": 918.5095238095234,
+  "d": 9.119977324263038,
+  "t": "Y el mantenimiento es casi nada: agua y escoba. Si en la parte de sombra aparece verdín, cepillo, agua y sol. Nada más.",
+  "i": 125
+ },
+ {
+  "s": 918.5095238095234,
+  "e": 921.9395464852604,
+  "d": 3.4300226757369616,
+  "t": "A usted, vecino, le cobro una carretilla de piedra.",
+  "i": 126
+ },
+ {
+  "s": 921.9395464852604,
+  "e": 926.6295238095234,
+  "d": 4.6899773242630385,
+  "t": "Y ahora, lo que te prometí al principio: el secreto del momento exacto.",
+  "i": 127
+ },
+ {
+  "s": 926.6295238095234,
+  "e": 930.8995464852604,
+  "d": 4.2700226757369615,
+  "t": "Ya viste la prueba de la esquina. Pero hay algo que casi nadie te dice.",
+  "i": 128
+ },
+ {
+  "s": 930.8995464852604,
+  "e": 939.1095464852605,
+  "d": 8.21,
+  "t": "Un mismo piso no fragua parejo. La parte que da al sol endurece antes que la de la sombra, y los bordes antes que el centro.",
+  "i": 129
+ },
+ {
+  "s": 939.1095464852605,
+  "e": 949.4395464852605,
+  "d": 10.33,
+  "t": "Entonces, si lavas todo de una vez, una parte está en su punto, otra todavía blanda, y otra ya pasada. Por eso a tantos les queda manchado.",
+  "i": 130
+ },
+ {
+  "s": 949.4395464852605,
+  "e": 958.0895464852605,
+  "d": 8.65,
+  "t": "El secreto es lavar por paños, empezando por donde fragua primero, y hacer la prueba en cada paño. No una vez: en cada uno.",
+  "i": 131
+ },
+ {
+  "s": 958.0895464852605,
+  "e": 965.8995238095235,
+  "d": 7.809977324263039,
+  "t": "Por eso te dije que dividas el piso en paños chicos. No es solo por las fisuras. Es para llegar a tiempo a cada uno.",
+  "i": 132
+ },
+ {
+  "s": 965.8995238095235,
+  "e": 971.3795238095236,
+  "d": 5.48,
+  "t": "Y si quieres tener ordenados otros arreglos de la casa, con sus materiales y medidas,",
+  "i": 133
+ },
+ {
+  "s": 971.3795238095236,
+  "e": 975.4495464852605,
+  "d": 4.070022675736961,
+  "t": "la colección del canal está en el enlace de abajo, o en este código.",
+  "i": 134
+ },
+ {
+  "s": 975.4495464852605,
+  "e": 982.422222222222,
+  "d": 6.972675736961452,
+  "t": "Si lo haces, cuéntame en los comentarios cómo te quedó. Y si te salió mal, también, que de eso aprendemos todos.",
+  "i": 135
+ }
+]

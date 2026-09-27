@@ -1,0 +1,228 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S2b",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg",
+  "SET": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "SET"
+   ],
+   "prompt": "Same place, same framing and same light: the same yard and the same form filled with compacted gravel; the camera is a little more to the left and closer. He stands on the gravel inside the form, both boots on the stones, looking at the camera. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands on the gravel, both hands open in front of him, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches beside the form with one hand on top of a pine board, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K3",
+   "noface": true,
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the top edge of a pine board of the form: a yellow spirit level lying along it, the bubble slightly off centre. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K4",
+   "noface": true,
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same close-up: the level has been moved a little along the board, the bubble resting just off centre toward one side. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches beside the form, the yellow spirit level in one hand, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches beside the form, pointing toward the garden side with the level, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K7",
+   "noface": true,
+   "from": [
+    "K6",
+    "V"
+   ],
+   "prompt": "Same place and same day as the first image, a new camera angle: a MEDIUM SHOT of the older neighbour from about one and a half metres, waist-up, his head and chest filling the upper half of the frame. Reverse view toward the back of the yard: the older neighbour leans his forearms on top of the low brick wall, looking down at the wooden form with a mocking half-smile. The lemon tree and the tin roof behind him. He is the older neighbour of the second input image — the same face: about 65, heavy-set, bald on top with grey hair on the sides, a thick grey moustache — wearing a light-blue checked short-sleeved shirt with a pen in the breast pocket and reading glasses hanging from a cord around his neck; the second input image is only for his face and clothes, not the place. The man in the olive shirt is out of frame."
+  },
+  {
+   "id": "K8",
+   "noface": true,
+   "from": [
+    "K7",
+    "VF"
+   ],
+   "prompt": "Same view: the neighbour, still leaning on the low wall, lifts one hand, grinning, eyebrows raised. Same man, same face as the second image."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches beside the form, laughing, turned toward the camera again. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the form, holding a spare pine board, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K11",
+   "noface": true,
+   "from": [
+    "K10"
+   ],
+   "prompt": "EXTREME CLOSE-UP inside the form: his hands in the rolled olive sleeves holding a pine board on edge across the middle of the gravel, about to set it. Same place, same light and same objects as the first image, but the camera is now VERY CLOSE: this detail fills the whole frame. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K12",
+   "noface": true,
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same close-up: the pine board stands on edge across the middle, fixed against the side boards, dividing the gravel into two halves. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place, same framing and same light: the form now has filled with flat compacted grey gravel, with one extra pine board standing on edge across the middle dividing it into two equal halves. He stands beside it, one hand on the middle board, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the divided form, one finger raised, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same place, same framing and same light: he stands beside the form spraying a fine shower of water over the gravel with the green hose, the gravel dark and wet, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s2_09",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_09.wav",
+   "text": "¿Por qué tanto trabajo abajo? Porque el piso de arriba es tan bueno como lo que tiene debajo. Si la base se hunde, el piso se raja.",
+   "action": "He shifts his weight on the gravel, pressing it with his boot, while talking to the camera."
+  },
+  {
+   "id": "s2_10",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_10.wav",
+   "text": "Después, el marco. Tablas de pino, clavadas a estacas. La altura de las tablas es el grosor del piso: unos ocho, diez centímetros.",
+   "action": "He steps out of the form and taps the top edge of a pine board with his knuckles."
+  },
+  {
+   "id": "s2_11",
+   "detail": true,
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_11.wav",
+   "text": "Y fíjate en esto: el nivel. Le doy una pendiente suave, más o menos un centímetro por cada metro, hacia el lado del jardín.",
+   "action": "His hand slides the yellow spirit level along the top of the board and the bubble settles slightly off centre."
+  },
+  {
+   "id": "s2_12",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_12.wav",
+   "text": "Si lo dejas perfectamente plano, el agua se te queda en charcos. Y con el tiempo eso ensucia y hace verdín.",
+   "action": "He points with the level toward the garden side of the yard while talking."
+  },
+  {
+   "id": "s2_13",
+   "solo": true,
+   "a": "K7",
+   "b": "K8",
+   "secs": 5,
+   "line": "¿Y eso qué va a ser? ¿Un arenero para los nietos?",
+   "who": "the older neighbour with the thick grey moustache and the light-blue checked shirt (the third reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man; the man in the olive shirt does NOT speak",
+   "refs": [
+    "VF"
+   ],
+   "action": "The neighbour, leaning on the low back wall, asks with a mocking grin and gestures with one hand toward the wooden form."
+  },
+  {
+   "id": "s2_14",
+   "a": "K6",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_14.wav",
+   "text": "Un piso, vecino. Un piso de piedra lavada. Después me cuenta qué le parece.",
+   "action": "He turns his head toward the back wall and answers laughing, then looks back at the camera."
+  },
+  {
+   "id": "s2_15",
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_15.wav",
+   "text": "Y otra pregunta que se repite: ¿se pueden hacer varios cuadros y juntarlos? Sí. Y además te conviene.",
+   "action": "He stands up and talks to the camera, nodding."
+  },
+  {
+   "id": "s2_16",
+   "detail": true,
+   "a": "K11",
+   "b": "K12",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_16.wav",
+   "text": "Con una tabla en el medio divido el piso en dos paños. Así cada paño lo lavo a tiempo, sin correr, y la junta ayuda a que no se raje.",
+   "action": "His hands set the divider board on edge across the middle of the form and tap it into place."
+  },
+  {
+   "id": "s2_17",
+   "a": "K13",
+   "b": "K14",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_17.wav",
+   "text": "Si un paño es tan grande que no llegas a lavarlo entero antes de que endurezca, es demasiado grande. Acuérdate de esto, que después importa.",
+   "action": "He raises one finger while talking, serious."
+  },
+  {
+   "id": "s2_18",
+   "a": "K14",
+   "b": "K15",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/s2_18.wav",
+   "text": "Y última cosa antes de mezclar: mojo bien la grava. Si está seca, le chupa el agua al concreto de abajo, y seca desparejo.",
+   "action": "He takes the green hose with a spray gun and sprays a fine shower of water over the gravel."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/S2b/vlog_S2b.mp4"
+}

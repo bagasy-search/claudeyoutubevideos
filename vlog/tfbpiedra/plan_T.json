@@ -1,0 +1,585 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/T",
+ "face": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_tfbpiedra_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino.png",
+  "VF": "D:/Proyectos/video2-wt/tfbpiedra/public/ref_vecino_face.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/lamina/lamina_hoja.jpg",
+  "SETP": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K0.png",
+  "SETM": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/SETS/anc/K1.png"
+ },
+ "lang": "es",
+ "pronoun": "he",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "SETP"
+   ],
+   "prompt": "Same place, same framing and same light: the same yard; in the middle stands a rectangular wooden form of rough pine boards, about one metre by two metres and ten centimetres high, held by short wooden stakes divided in two halves by a middle board, filled with concrete: the near half already washed, showing densely packed wet glistening rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, the far half still covered with a smooth grey cement paste. He stands at the near edge of the slab holding the green garden hose with a spray gun in one hand, turned toward the camera, the other hand pointing down at the washed wet pebbles, amazed. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, a worn brown leather work apron over it, dark work trousers and black rubber boots. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the near edge holding the hose, pointing at the wet pebbles with his other hand, looking at the camera, smiling. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the near edge, the hose hanging from one hand, four fingers of the other hand raised, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the spray gun up beside his face, serious, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he is a step closer to the camera, the hose lowered, looking into the camera, serious. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he stands relaxed, one open hand toward the slab, looking at the camera. He still wears the faded olive-green work shirt with rolled-up sleeves and the worn brown leather apron. He wears yellow rubber gloves."
+  },
+  {
+   "id": "K6",
+   "noface": true,
+   "from": [
+    "SETP",
+    "V"
+   ],
+   "prompt": "Same yard and same day as the first image, a new camera angle: a MEDIUM SHOT of the older neighbour from about one and a half metres, waist-up, his head and chest filling the upper half of the frame, leaning his forearms on top of the low brick wall at the back of the yard, looking down toward the slab with an alarmed frown, one hand raised. The lemon tree and the tin roof behind him. He is the older neighbour of the second input image — the same face: about 65, heavy-set, bald on top with grey hair on the sides, a thick grey moustache — wearing a light-blue checked short-sleeved shirt with a pen in the breast pocket and reading glasses hanging from a cord around his neck; the second input image is only for his face and clothes, not the place. The man in the olive shirt is out of frame."
+  },
+  {
+   "id": "K7",
+   "noface": true,
+   "from": [
+    "K6",
+    "VF"
+   ],
+   "prompt": "Same view: the neighbour leaning over the wall shakes his head, both hands raised, alarmed. Same man, same face as the second image."
+  },
+  {
+   "id": "K8",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "CLOSE VIEW, a little from above, of the concrete slab inside the wooden form, covered with smooth grey cement paste; a strong fan of water spray from a garden hose nozzle hits the left side, where the first coloured pebbles start to show. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same view: a wide strip on the left washed clean, densely packed wet glistening rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, the spray moving on over the remaining grey paste on the right. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "SETM"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the edge of the wooden form: a shovel full of thick wet grey concrete with rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black tipping over the gravel. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K11",
+   "noface": true,
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same close-up: the load has dropped into the form in a heap, pebbles rolling off its sides. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K12",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP from above of fresh wet grey concrete in the form: the edge of a long straight wooden board resting on it, a ridge of wet concrete in front of it. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K13",
+   "noface": true,
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same close-up: the board has slid along, leaving a flat smooth grey surface behind it. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K14",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP of matte grey concrete paste: a soft-bristled brush in a yellow gloved hand resting on it, a thin shower of water falling. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K15",
+   "noface": true,
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same close-up: the brush has swept a patch clean, wet glistening rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black revealed. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K16",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP of a yellow gloved fingertip touching a matte grey concrete surface with faint pebble shapes under it. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K17",
+   "noface": true,
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same close-up: the fingertip pressing, a faint shallow print around it, nothing sinking. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K18",
+   "noface": true,
+   "from": [
+    "SETM"
+   ],
+   "prompt": "EXTREME CLOSE-UP of two cupped yellow gloved hands full of rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, above the heap of pebbles. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K19",
+   "noface": true,
+   "from": [
+    "K18"
+   ],
+   "prompt": "Same close-up: the hands open slightly and the pebbles pour back down onto the heap, bouncing. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K20",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP, low, at ground level, of a finished exposed-pebble concrete slab set flush in the ground (no wooden boards), its surface wet and glistening, densely packed rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black; a black rubber boot lifted just above it. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K21",
+   "noface": true,
+   "from": [
+    "K20"
+   ],
+   "prompt": "Same close-up: the boot planted flat on the wet pebbles, a little water squeezing out around the sole. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K22",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the finished slab of dry rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, a thin sheet of water starting to flow over it from one side. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K23",
+   "noface": true,
+   "from": [
+    "K22"
+   ],
+   "prompt": "Same close-up: the water has spread across the pebbles, the colours deep and glistening. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K24",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "Wide view of the same yard from the house side: in the middle is a finished exposed-pebble concrete slab about one metre by two metres, set flush in the ground with a straight joint across the middle, the wooden boards removed and the edges clean; its surface densely packed rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, dry, matte and a little lighter in colour, each pebble showing about a third of its height, wet after watering, glistening, the colours of the pebbles clearly visible; no wooden boards around it; nobody in the yard. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K25",
+   "noface": true,
+   "from": [
+    "K24"
+   ],
+   "prompt": "Same yard from a step closer and a little lower: a finished exposed-pebble concrete slab about one metre by two metres, set flush in the ground with a straight joint across the middle, the wooden boards removed and the edges clean; its surface densely packed rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, dry, matte and a little lighter in colour, each pebble showing about a third of its height, wet and glistening; nobody in the yard. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K26",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP of soft grey concrete paste with pebbles under it: a stiff brush in a yellow gloved hand pushing hard. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K27",
+   "noface": true,
+   "from": [
+    "K26"
+   ],
+   "prompt": "Same close-up: a pebble has popped out and rolled away, leaving a round empty hole in the soft paste. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K28",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP looking DOWN at the flat horizontal top of the concrete slab lying on the ground inside the wooden form: a hard, dry, pale grey surface; a stiff brush in a yellow gloved hand scrubbing it flat on the ground. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K29",
+   "noface": true,
+   "from": [
+    "K28"
+   ],
+   "prompt": "Same close-up: the brush still scrubbing, the surface still hard and grey, only a little dust, no pebbles showing. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K30",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP inside the wooden form on bare earth: a plastic bucket tipping grey gravel into the form. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K31",
+   "noface": true,
+   "from": [
+    "K30"
+   ],
+   "prompt": "Same close-up: the gravel spread flat and packed inside the form, the square foot of a hand tamper resting on it. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K32",
+   "noface": true,
+   "from": [
+    "SETM"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the inside of the red wheelbarrow: sand, grey cement powder and rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, a shovel blade under them. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K33",
+   "noface": true,
+   "from": [
+    "K32"
+   ],
+   "prompt": "Same close-up: the shovel has turned it over and it is now a thick wet grey concrete mix full of pebbles. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K34",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP of fresh wet grey concrete in the form with pebbles sticking out, a wooden hand float just above it. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K35",
+   "noface": true,
+   "from": [
+    "K34"
+   ],
+   "prompt": "Same close-up: the float pressed down, the pebbles now just under a thin grey film of paste. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K36",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the corner of a matte grey concrete slab, a soft brush in a yellow gloved hand at the corner. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K37",
+   "noface": true,
+   "from": [
+    "K36"
+   ],
+   "prompt": "Same close-up: the brush has swept a small patch, the grey paste gone and the coloured pebbles firm and in place. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K38",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "View from above of the slab in the form: half grey paste, half washed wet rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, a fine shower of water and a soft brush at the border between them. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K39",
+   "noface": true,
+   "from": [
+    "K38"
+   ],
+   "prompt": "Same view: the washed part has grown, the brush and shower moving on, grey water running off the edge. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K40",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the washed wet rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black slab, a hose sprinkling water over it and the edge of a clear plastic sheet above it. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K41",
+   "noface": true,
+   "from": [
+    "K40"
+   ],
+   "prompt": "Same close-up: the clear plastic sheet lies on the wet pebbles, water drops under it, a brick on its edge. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K42",
+   "noface": true,
+   "from": [
+    "SETP"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the dry finished slab of rounded river pebbles about one to two centimetres across, in mixed natural colours: grey, white, reddish-brown and almost black, a paint roller with clear sealer resting on it. Same yard, same day and same light as the first image. Only hands, forearms and materials, no face in frame."
+  },
+  {
+   "id": "K43",
+   "noface": true,
+   "from": [
+    "K42"
+   ],
+   "prompt": "Same close-up: the roller has passed, the pebbles behind it deeper in colour with a wet look. Only hands, forearms and materials, no face in frame."
+  }
+ ],
+ "clips": [
+  {
+   "id": "t_01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/t_01.wav",
+   "text": "Le tiré agua al cemento fresco... y mira lo que apareció.",
+   "action": "He lifts the hose a little and points at the washed pebbles, talking to the camera, amazed."
+  },
+  {
+   "id": "t_05",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/t_05.wav",
+   "text": "Hoy lo hacemos juntos, paso a paso: la base, la mezcla, el colado y el lavado.",
+   "action": "He counts four steps on his fingers while talking."
+  },
+  {
+   "id": "t_06",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/t_06.wav",
+   "text": "Pero el secreto no es la manguera. El secreto es el momento exacto en que lo lavas.",
+   "action": "He lifts the hose's spray gun up beside his face, serious."
+  },
+  {
+   "id": "t_07",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/t_07.wav",
+   "text": "Si te adelantas, lo arruinas. Y si te atrasas, ya no sale. Y ese momento, hoy te enseño a encontrarlo.",
+   "action": "He steps toward the camera, lowering the hose, serious and a little conspiratorial."
+  },
+  {
+   "id": "r_01",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/r_01.wav",
+   "text": "Te doy primero la receta completa, así ya la tienes. Y después vamos al detalle de cada paso.",
+   "action": "He relaxes and talks to the camera with an open hand."
+  },
+  {
+   "id": "t_w1",
+   "solo": true,
+   "a": "K6",
+   "b": "K7",
+   "secs": 5,
+   "line": "¿Le estás lavando el cemento? Lo vas a arruinar.",
+   "who": "the older neighbour with the thick grey moustache and the light-blue checked shirt (the third reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man; the man in the olive shirt does NOT speak",
+   "refs": [
+    "VF"
+   ],
+   "action": "The neighbour leans over the wall, alarmed, and shakes his head, raising his hands."
+  },
+  {
+   "id": "t_agua",
+   "detail": true,
+   "a": "K8",
+   "b": "K9",
+   "text": "",
+   "action": "The fan of water spray sweeps across the grey paste from left to right and the wet colourful pebbles appear under it, glistening, splashes flying.",
+   "secs": 5
+  },
+  {
+   "id": "t_c1",
+   "detail": true,
+   "a": "K10",
+   "b": "K11",
+   "text": "",
+   "action": "The shovel tips and the heavy wet concrete full of pebbles drops into the form, pebbles rolling.",
+   "secs": 4
+  },
+  {
+   "id": "t_c2",
+   "detail": true,
+   "a": "K12",
+   "b": "K13",
+   "text": "",
+   "action": "The straight board slides across the wet concrete, leaving it flat and smooth.",
+   "secs": 4
+  },
+  {
+   "id": "t_c3",
+   "detail": true,
+   "a": "K14",
+   "b": "K15",
+   "text": "",
+   "action": "The brush circles under the fine shower and the paste melts away, revealing the colourful pebbles.",
+   "secs": 4
+  },
+  {
+   "id": "t_c4",
+   "detail": true,
+   "a": "K16",
+   "b": "K17",
+   "text": "",
+   "action": "The gloved finger presses into the setting concrete and lifts, leaving only a faint print.",
+   "secs": 4
+  },
+  {
+   "id": "t_c5",
+   "detail": true,
+   "a": "K18",
+   "b": "K19",
+   "text": "",
+   "action": "The cupped hands open and the colourful pebbles pour down onto the heap, bouncing and clicking.",
+   "secs": 4
+  },
+  {
+   "id": "t_c7",
+   "detail": true,
+   "a": "K20",
+   "b": "K21",
+   "text": "",
+   "action": "The rubber boot steps down firmly on the wet pebble surface and grips.",
+   "secs": 4
+  },
+  {
+   "id": "t_c8",
+   "detail": true,
+   "a": "K22",
+   "b": "K23",
+   "text": "",
+   "action": "A thin sheet of water flows across the dry pebbles and their colours light up as it passes.",
+   "secs": 4
+  },
+  {
+   "id": "t_c9",
+   "detail": true,
+   "a": "K24",
+   "b": "K25",
+   "text": "",
+   "action": "The camera moves slowly toward the finished glistening pebble slab.",
+   "secs": 4
+  },
+  {
+   "id": "t_c10",
+   "detail": true,
+   "a": "K26",
+   "b": "K27",
+   "text": "",
+   "action": "The brush pushes too early: a pebble pops out of the soft paste and rolls away, leaving a hole.",
+   "secs": 4
+  },
+  {
+   "id": "t_c11",
+   "detail": true,
+   "a": "K28",
+   "b": "K29",
+   "text": "",
+   "action": "The brush scrubs hard on the dry grey surface but nothing comes off, only a little dust.",
+   "secs": 4
+  },
+  {
+   "id": "r_02",
+   "detail": true,
+   "a": "K30",
+   "b": "K31",
+   "text": "Uno, la base. Sacas la tierra blanda, pones grava, la compactas bien y armas un marco de tablas con una pendiente suave.",
+   "action": "Gravel pours into the form, is spread and packed flat by the tamper.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/r_02.wav"
+  },
+  {
+   "id": "r_03",
+   "detail": true,
+   "a": "K32",
+   "b": "K33",
+   "text": "Dos, la mezcla. Una parte de cemento, dos de arena y tres de piedra redonda de río, medidas con el mismo balde. Poca agua.",
+   "action": "The shovel turns the sand, cement and pebbles over while water is added, until it is a thick wet mix.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/r_03.wav"
+  },
+  {
+   "id": "r_04",
+   "detail": true,
+   "a": "K34",
+   "b": "K35",
+   "text": "Tres. La llenas, la emparejas con una regla de madera y aprietas las piedras con la llana, para que queden apenas tapadas.",
+   "action": "The wooden float presses the pebbles gently into the fresh concrete.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/r_04.wav"
+  },
+  {
+   "id": "r_05",
+   "detail": true,
+   "a": "K36",
+   "b": "K37",
+   "text": "Cuatro. Esperas, y cada tanto haces la prueba en una esquina. Si la pasta sale con el cepillo y la piedra no se mueve, es el momento.",
+   "action": "The soft brush sweeps the corner, the paste comes off and the pebbles stay firm.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/r_05.wav"
+  },
+  {
+   "id": "r_06",
+   "detail": true,
+   "a": "K38",
+   "b": "K39",
+   "text": "Cinco. Lluvia fina de manguera y cepillo suave, hasta que se vea más o menos un tercio de cada piedra. No más.",
+   "action": "The fine shower and the soft brush move along and the washed colourful part grows.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/r_06.wav"
+  },
+  {
+   "id": "r_07",
+   "detail": true,
+   "a": "K40",
+   "b": "K41",
+   "text": "Seis. Al otro día, un lavado final. Y después lo mantienes húmedo y tapado con un plástico, unos siete días.",
+   "action": "Water is sprinkled on the washed slab and a clear plastic sheet is laid over it.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/r_07.wav"
+  },
+  {
+   "id": "r_08",
+   "detail": true,
+   "a": "K42",
+   "b": "K43",
+   "text": "Y siete, si quieres, un sellador, cuando ya secó bien. Esa es la receta. Ahora, lo que hace que te salga bien de verdad.",
+   "action": "The roller passes a thin clear coat over the pebbles and their colours deepen.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/tramos/r_08.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiedra/vlog/tfbpiedra/T/vlog_T.mp4"
+}
