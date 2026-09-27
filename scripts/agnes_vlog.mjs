@@ -350,13 +350,18 @@ async function acquire() {
 }
 const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSync(CL + "state.json", "utf8")) : {};
 const PRON = P.pronoun || "he";
+const min256 = f => { const [w, h] = wh(f); if (Math.min(w, h) >= 256) return f;
+  const k = 256 / Math.min(w, h), o = CL + "_min256_" + path.basename(f).replace(/\.[^.]+$/, "") + ".png";
+  if (!fs.existsSync(o)) ff("-i", f, "-vf", `scale=${Math.ceil(w * k)}:${Math.ceil(h * k)}:flags=lanczos`, o); return o; };
 const MUTE = ` When the reference audio ends ${PRON} stops talking and keeps the mouth closed.`;            // anti-balbuceo del relleno
 const MUTE_LINE = " After saying that line they stop talking and keep the mouth closed.";
 if (fase === "clips") {
   const sel = P.clips.filter(c => !soloIds.length || soloIds.includes(c.id));
   await Promise.all(sel.map((c, i) => sleep(i * 3000).then(async () => {
     const out = soloIds.length ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
-    const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(P.face), ...(c.refs || []).map(n => uri(refPath(n)))];
+    // ⛔ agnes rechaza lados <256 px ("input image side length must be between 256 and 5760"): la cara de gpt-image-2
+    //    viene en 128x192 (palanca de costo de las anclas) → para los clips va una copia agrandada (tfbinodoro, 27-sep).
+    const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(min256(P.face)), ...(c.refs || []).map(n => uri(min256(refPath(n))))];
     let body, T;
     if (c.kf) { // plano DETALLE sin habla (keyframe clava primer y último cuadro; trae foley real). Su T = tramo (si hay voz encima) o secs
       T = c.audio ? tramo(c).T : c.secs;
