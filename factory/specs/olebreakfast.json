@@ -15,7 +15,8 @@
   },
   "avatar": {
     "face": "public/ref/ole_full.png",
-    "ref": "public/ref/ole_face128.png"
+    "ref": "public/ref/ole_face128.png",
+    "lipLeadSec": 0.08
   },
   "bagasy": {
     "channelKey": "draft:olescamp",

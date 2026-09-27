@@ -7,6 +7,7 @@ import { assertMeasured, assertNoProblems } from "../lib/gate.mjs";
 import { planVlog } from "../lib/vlogplan.mjs";
 import { conApertura } from "../lib/apertura.mjs";
 import { cargarKit, planPremium } from "../lib/kit.mjs";
+import { aplicarFx } from "../lib/fxpack.mjs";
 import { ROOT, env } from "../lib/env.mjs";
 import { pool } from "../lib/phase.mjs";
 
@@ -24,12 +25,13 @@ export function emitVlog({ slug, comp, total, cues, ventanas, placa, fondo, ambi
     : c.kind === "cta" ? `<CtaFinal {...(${JSON.stringify(c.props)} as any)} />`
     // ⛔ El componente va SIN envoltorio: nada de placa/recuadro crema detrás (el creador lo rechazó
     //    expresamente). Comp.tsx sólo lo mete en un AbsoluteFill y le pasa durationInFrames.
+    : c.kind === "fxover" ? `<FxOver kind="${c.fxkind}" props={${JSON.stringify(c.props)} as any} dur={${c.dur}} />`
     : c.comp ? `<Comp kind="${c.comp}" props={${JSON.stringify(c.props)} as any} />`
-      : c.tipo === "clip" ? `<Clip src="${c.src}" seed={${c.start}} frames={${c.frames || 0}}${c.audio ? ` audio={${c.audio}}` : ""} />`
-        : `<Foto src="${c.src}" seed={${c.start}} />`);
+      : c.tipo === "clip" ? `<Clip src="${c.src}" seed={${c.start}} frames={${c.frames || 0}}${c.audio ? ` audio={${c.audio}}` : ""}${c.fx ? ` fx={${JSON.stringify(c.fx)} as any}` : ""} />`
+        : `<Foto src="${c.src}" seed={${c.start}}${c.fx ? ` fx={${JSON.stringify(c.fx)} as any}` : ""} />`);
   const gen = `// cues_${slug}.gen.tsx — GENERADO por la FÁBRICA (factory/phases/60_build.mjs). NO editar a mano.
 import React from "react";
-import { Clip, CtaFinal, Foto${cues.some((c) => c.kind === "apertura") ? ", AperturaMiniatura, GlitchCut" : ""}${cues.some((c) => c.kind === "golpe") ? ", Golpe" : ""}${cues.some((c) => c.kind === "hook") ? ", Hook" : ""} } from "./Piezas";${premium ? `
+import { Clip, CtaFinal, Foto${cues.some((c) => c.kind === "fxover") ? ", FxOver" : ""}${cues.some((c) => c.kind === "apertura") ? ", AperturaMiniatura, GlitchCut" : ""}${cues.some((c) => c.kind === "golpe") ? ", Golpe" : ""}${cues.some((c) => c.kind === "hook") ? ", Hook" : ""} } from "./Piezas";${premium ? `
 import { Comp } from "./Comp";` : ""}
 
 export type Cue = { key: string; start: number; dur: number; capa: "base" | "over"; el: (frame: number) => React.ReactNode };
@@ -56,7 +58,7 @@ export const Main${comp}: React.FC = () => {
       ${placa ? `<PlacaPiso src="${placa}" />` : ""}
       {VENTANAS.map((w) => (
         <Sequence key={"av" + w.k} from={w.from} durationInFrames={w.dur} layout="none">
-          <AvatarVentana src={w.src} desde={w.from} fg={(w as any).fg} fx={(w as any).fx} />
+          <AvatarVentana src={w.src} desde={w.from} fg={(w as any).fg} fx={(w as any).fx} zoom={(w as any).zoom} />
         </Sequence>
       ))}
       {CUES_${U}.filter((c) => c.capa === "base").map((c) => (
@@ -411,6 +413,23 @@ export default {
       ...audios.map((a) => ({ src: path.join(ROOT, "public", a.src), at: a.from / 30, dur: a.dur / 30, vol: a.vol, fi: a.fi / 30, fo: a.fo / 30, loop: !!a.loop })),
       ...eventosClip.map((e) => ({ ...e, at: (e.atF - audioDesdeF) / 30 })),
     ].filter((e) => e.at >= 0);
+    // PAQUETE DE EFECTOS (style.fx): atmósfera, 2.5D, transiciones, contador de números, segunda cámara,
+    // riel de la lista y camas de sonido REAL. Decide por reglas; lo dibuja Piezas.tsx.
+    const fxAssets = [];
+    if (style.fx && premium) {
+      const words = JSON.parse(fs.readFileSync(path.join(ROOT, "public", `captions_${slug}.json`), "utf8"));
+      const overlayKinds = new Set(Object.entries(kit.kinds).filter(([, d]) => d.capa === "overlay").map(([k]) => k));
+      const fx = aplicarFx({ slug, style, cues: cuesFinal, ventanas, plan, words, audioDesdeF, total: totalFinal, root: ROOT, overlayKinds, log });
+      cuesFinal = fx.cues; r.cues = cuesFinal; ventanas = fx.ventanas;
+      eventos.push(...fx.eventos.filter((e) => e.at >= 0));
+      fxAssets.push(...fx.assets);
+      log(`paquete de efectos: ${JSON.stringify(fx.medido)}`);
+      assertMeasured("fxPlanosConCapas2p5D", fx.medido.parallax, { min: 1, total: fx.medido.planosB, log });
+      assertMeasured("fxEfectosSobreCara", fx.medido.efectosSobreCara, { max: 0, allowZero: true, log });
+      assertMeasured("fxMaxHuecoSinHitoSec", fx.medido.maxHuecoSinHitoS, { max: Number(style.fx.maxHuecoS ?? 20), log });
+      const faltanFx = fxAssets.filter((a) => !fs.existsSync(path.join(ROOT, "public", a)));
+      assertNoProblems("fxAssetsEnDisco", faltanFx.map((a) => `falta public/${a}`), fxAssets.length, { log });
+    }
     if (eventos.length && !dry) {
       const evFile = path.join(P.work, "audio", `${slug}_mezcla.json`);
       const mixWav = path.join(P.work, "audio", `${slug}_mix.wav`);
@@ -465,6 +484,7 @@ export default {
     for (const a of r.compAssets || []) assets.add(a);
     for (const w of ventanas) { assets.add(w.src); if (w.fg) assets.add(w.fg); }
     for (const a of hookAssets) assets.add(a);
+    for (const a of fxAssets) assets.add(a);
     const lista = [...assets];
     const sinDisco = dry ? [] : lista.filter((a) => !fs.existsSync(path.join(ROOT, "public", a)));
     assertNoProblems("assetsEnDisco", sinDisco.map((a) => `no existe public/${a}`), lista.length, { log });

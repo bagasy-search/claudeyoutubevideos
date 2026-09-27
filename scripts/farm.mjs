@@ -47,7 +47,9 @@ const only = process.env.ONLY_CHUNKS || ""; // re-render PARCIAL: solo estos chu
 const reuseAssets = process.env.REUSE_ASSETS === "1"; // full rerender with an already validated release
 
 // ── AUTO-REPARTO DE LOS 60 SLOTS ENTRE VIDEOS ────────────────────────────────────────────────
-// La cuenta Team tiene 60 jobs concurrentes: es un TECHO DURO del plan (no sube gratis). Un render
+// ⚠ HISTÓRICO: con la cuenta Team eran 60 jobs concurrentes. Desde sep-2026 (Enterprise) el panel
+// oficial da 360; el pico medido fue 64-80 por un freno de GitHub. El reparto usa FARM_SLOTS (350). MEDIDO 27-sep-2026: 350 jobs de prueba corrieron TODOS a la vez (352 con otros), 0 en cola.
+// La cuenta Team tenía 60 jobs concurrentes. Un render
 // de 60 chunks se lleva los 60 slots él solo, así que al lanzar VARIOS videos a la vez cada uno pide
 // su tanda, GitHub encola el resto y los videos se traban entre sí — y cada chunk encolado igual va a
 // rebajar el tarball de assets ENTERO (~600 MB) cuando le toque, así que partir de más también gasta
@@ -60,9 +62,10 @@ if (!process.env.FARM_FIXED_CHUNKS && !only) {
       .filter((r) => r.status !== "completed" && r.headBranch && r.headBranch !== `molino-${slug}`);
     const otros = new Set(runs.map((r) => r.headBranch)).size;
     if (otros > 0) {
-      const reparto = Math.max(12, Math.round(60 / (otros + 1)));
+      const SLOTS = Number(process.env.FARM_SLOTS || 350);   // techo REAL de la cuenta: 360 (enterprises/bagasy, medido 21-sep-2026); 300 deja margen
+      const reparto = Math.max(12, Math.round(SLOTS / (otros + 1)));
       if (reparto < Number(chunks)) {
-        console.log(`auto-reparto: ${otros} otro(s) video(s) en curso → bajo de ${chunks} a ${reparto} chunks para no trabar la cola de 60 slots (FARM_FIXED_CHUNKS=1 lo desactiva)`);
+        console.log(`auto-reparto: ${otros} otro(s) video(s) en curso → bajo de ${chunks} a ${reparto} chunks para no trabar la cola de ${process.env.FARM_SLOTS || 350} slots (FARM_FIXED_CHUNKS=1 lo desactiva)`);
         chunks = String(reparto);
       }
     }

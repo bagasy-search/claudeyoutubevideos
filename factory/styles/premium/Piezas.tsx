@@ -46,7 +46,7 @@ const useKenBurns = (seed: number, intensidad = 1): React.CSSProperties => {
 
 /** CLIP a sangre. ⛔ `loop` NO es prop de OffthreadVideo (se ignora y el clip se CONGELA): va
  *  `<Loop durationInFrames={frames}>` con los cuadros REALES que midió el build. */
-export const Clip: React.FC<{ src: string; seed?: number; frames?: number; audio?: number }> = ({ src, seed = 1, frames, audio }) => {
+export const Clip: React.FC<{ src: string; seed?: number; frames?: number; audio?: number; fx?: FotoFx }> = ({ src, seed = 1, frames, audio, fx }) => {
   const t = useKenBurns(seed, 0.45);
   const { durationInFrames: d } = useVideoConfig();
   const video = <OffthreadVideo src={staticFile(src)} muted style={{ width: "100%", height: "100%", objectFit: "cover", ...t }} />;
@@ -55,18 +55,26 @@ export const Clip: React.FC<{ src: string; seed?: number; frames?: number; audio
   const fin = Math.min(d, frames && frames > 1 ? frames : d);
   return (
     <AbsoluteFill style={{ backgroundColor: INK, overflow: "hidden" }}>
-      {frames && frames > 1 ? <Loop durationInFrames={frames}>{video}</Loop> : video}
+      <FxEntrada fx={fx}>{frames && frames > 1 ? <Loop durationInFrames={frames}>{video}</Loop> : video}</FxEntrada>
+      {fx ? <FxCapas fx={fx} seed={seed} /> : null}
       {audio ? <Sequence durationInFrames={fin} layout="none"><Audio src={staticFile(src)} volume={(f) => audio * Math.max(0, Math.min(1, f / 4, (fin - f) / 4))} /></Sequence> : null}
     </AbsoluteFill>
   );
 };
 
 /** FOTO con Ken-Burns (red de seguridad cuando el clip de agnes no llega o se rechaza). */
-export const Foto: React.FC<{ src: string; seed?: number }> = ({ src, seed = 1 }) => {
+export const Foto: React.FC<{ src: string; seed?: number; fx?: FotoFx }> = ({ src, seed = 1, fx }) => {
   const t = useKenBurns(seed);
+  if (fx?.pf && fx?.pb) return (
+    <AbsoluteFill style={{ backgroundColor: INK, overflow: "hidden" }}>
+      <FxEntrada fx={fx}><Parallax pf={fx.pf} pb={fx.pb} seed={seed} /></FxEntrada>
+      <FxCapas fx={fx} seed={seed} />
+    </AbsoluteFill>
+  );
   return (
     <AbsoluteFill style={{ backgroundColor: INK, overflow: "hidden" }}>
-      <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...t }} />
+      <FxEntrada fx={fx}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...t }} /></FxEntrada>
+      {fx ? <FxCapas fx={fx} seed={seed} /> : null}
     </AbsoluteFill>
   );
 };
@@ -87,9 +95,13 @@ export const PlacaPiso: React.FC<{ src: string }> = ({ src }) => {
  *  El push es el MISMO que el de la placa (misma fórmula sobre el cuadro GLOBAL), así la entrada y la
  *  salida de la ventana no saltan de escala. */
 export type FxCue = { start: number; dur: number; kind: "detras" | "orbita"; props: any };
-export const AvatarVentana: React.FC<{ src: string; desde: number; fg?: string; fx?: FxCue[] }> = ({ src, desde, fg, fx }) => {
-  const f = useCurrentFrame() + desde;
-  const s = 1.03 + Math.sin(f / 900) * 0.02;
+export const AvatarVentana: React.FC<{ src: string; desde: number; fg?: string; fx?: FxCue[]; zoom?: [number, number, number][] }> = ({ src, desde, fg, fx, zoom }) => {
+  const loc = useCurrentFrame();
+  const f = loc + desde;
+  // "SEGUNDA CÁMARA" (paquete de efectos): en los remates corta a un encuadre más cerrado del MISMO
+  // avatar (corte seco, sin zoom animado: se lee como otra cámara). Tope 1,15 para no ablandar la cara.
+  const z2 = (zoom || []).find(([a, d]) => loc >= a && loc < a + d);
+  const s = (1.03 + Math.sin(f / 900) * 0.02) * (z2 ? z2[2] : 1);
   const V: React.CSSProperties = { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" };
   // COMPOSITING (cmenino, 24-sep-2026): las capas del efecto van ADENTRO del mismo contenedor que el
   // avatar (mismo push), en sándwich: fondo → efecto "detrás" → recorte del presentador → efecto
@@ -101,7 +113,7 @@ export const AvatarVentana: React.FC<{ src: string; desde: number; fg?: string; 
   ));
   return (
     <AbsoluteFill style={{ backgroundColor: INK, overflow: "hidden" }}>
-      <AbsoluteFill style={{ transform: `scale(${s.toFixed(4)})` }}>
+      <AbsoluteFill style={{ transform: `scale(${s.toFixed(4)})`, transformOrigin: z2 ? "48% 34%" : undefined }}>
         <OffthreadVideo src={staticFile(src)} muted style={V} />
         {fg && fx?.length ? capa("back") : null}
         {fg && fx?.length ? <OffthreadVideo src={staticFile(fg)} muted transparent style={V} /> : null}
@@ -495,3 +507,216 @@ export const Golpe: React.FC<{ kind: string; props: any; dur: number }> = ({ kin
   if (!C) return null;
   return <C {...props} dur={dur} />;
 };
+
+// ─── PAQUETE DE EFECTOS (factory/lib/fxpack.mjs decide QUÉ va DÓNDE; esto sólo lo dibuja) ────────
+// Todo es opcional: sin `fx` las piezas se ven exactamente como antes (los otros canales no cambian).
+// Reglas de oficio: movimiento SUBPÍXEL por CSS, determinista por `seed` (el farm rinde en chunks),
+// nada tapa la cara del presentador, y nunca más de DOS capas de efecto a la vez (lo impone fxpack).
+export type FotoFx = {
+  pf?: string; pb?: string;                 // capas 2.5D: primer plano RGBA + fondo reconstruido
+  era?: "v";                                // recuerdo de los años 60: grano, temblor de proyector, viñeta
+  atm?: "vapor" | "nieve" | "farol" | "polvo";
+  glint?: boolean;                          // brillo que recorre la comida (grasa, jarabe, manteca)
+  entra?: "whip-l" | "whip-r" | "zoom" | "burn";
+  punch?: number;                           // cuadro local del micro-acercamiento (palabra clave)
+};
+const clampP = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
+const easeOut = Easing.bezier(0.16, 1, 0.3, 1);
+
+const punchK = (f: number, at: number) => {
+  if (f < at) return 1;
+  const up = interpolate(f, [at, at + 4], [0, 1], { ...clampP, easing: easeOut });
+  const down = interpolate(f, [at + 4, at + 34], [1, 0.35], { ...clampP, easing: Easing.inOut(Easing.cubic) });
+  return 1 + 0.035 * up * down;
+};
+
+/** Entrada del plano: barrido con desenfoque de movimiento, acercamiento o quemado de película. */
+const FxEntrada: React.FC<{ fx?: FotoFx; children: React.ReactNode }> = ({ fx, children }) => {
+  const f = useCurrentFrame();
+  const e = fx?.entra;
+  const pk = fx?.punch != null ? punchK(f, fx.punch) : 1;
+  const base = pk !== 1 ? `scale(${pk.toFixed(4)})` : "";
+  if (!e || e === "burn") return <><AbsoluteFill style={{ transform: base || undefined }}>{children}</AbsoluteFill>{e === "burn" ? <Quemado /> : null}</>;
+  const k = interpolate(f, [0, e === "zoom" ? 10 : 8], [1, 0], { ...clampP, easing: easeOut });
+  const tf = e === "zoom" ? `scale(${1 + 0.16 * k})` : `translateX(${(e === "whip-l" ? 1 : -1) * 13 * k}%) scale(${1 + 0.05 * k})`;
+  return <AbsoluteFill style={{ transform: `${tf} ${base}`, filter: k > 0.01 ? `blur(${(k * (e === "zoom" ? 9 : 16)).toFixed(2)}px)` : undefined }}>{children}</AbsoluteFill>;
+};
+
+/** Quemado de película en el cambio de época (presente ↔ recuerdo): luz cálida que se come el cuadro y se va. */
+const Quemado: React.FC = () => {
+  const f = useCurrentFrame();
+  const a = interpolate(f, [0, 3, 13], [0.85, 0.7, 0], clampP);
+  if (a <= 0) return null;
+  const sp = interpolate(f, [0, 13], [0.6, 1.5], clampP);
+  return (
+    <AbsoluteFill style={{ mixBlendMode: "screen", opacity: a, pointerEvents: "none" }}>
+      <AbsoluteFill style={{ background: `radial-gradient(${60 * sp}% ${80 * sp}% at 12% 50%, rgba(255,190,110,1) 0%, rgba(255,120,40,0.55) 35%, rgba(120,30,0,0) 70%)` }} />
+      <AbsoluteFill style={{ background: `radial-gradient(${35 * sp}% ${45 * sp}% at 88% 30%, rgba(255,230,180,0.9) 0%, rgba(255,140,60,0) 70%)` }} />
+    </AbsoluteFill>
+  );
+};
+
+/** 2.5D: el fondo reconstruido se mueve poco y el primer plano más, en sentido opuesto: la foto se
+ *  vuelve una escena con profundidad. Sentido y deriva sorteados por plano (como el Ken-Burns). */
+const Parallax: React.FC<{ pf: string; pb: string; seed: number }> = ({ pf, pb, seed }) => {
+  const f = useCurrentFrame();
+  const { durationInFrames } = useVideoConfig();
+  const t = interpolate(f, [0, Math.max(2, durationInFrames)], [0, 1], clampP);
+  const acerca = rnd(seed, 11) > 0.35;
+  const k = acerca ? t : 1 - t;
+  const dir = rnd(seed, 12) > 0.5 ? 1 : -1;
+  const bg = `scale(${(1.06 + 0.035 * k).toFixed(4)}) translateX(${(dir * 0.9 * k).toFixed(3)}%)`;
+  const fg = `scale(${(1.075 + 0.075 * k).toFixed(4)}) translateX(${(-dir * 1.4 * k).toFixed(3)}%) translateY(${(-0.6 * k).toFixed(3)}%)`;
+  const S: React.CSSProperties = { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transformOrigin: "50% 58%" };
+  return (
+    <AbsoluteFill>
+      <Img src={staticFile(pb)} style={{ ...S, transform: bg }} />
+      <Img src={staticFile(pf)} style={{ ...S, transform: fg, filter: "drop-shadow(0 10px 24px rgba(0,0,0,0.35))" }} />
+    </AbsoluteFill>
+  );
+};
+
+/** Capas encima del plano: la LUZ/ATMÓSFERA del lugar, el brillo sobre la comida y el look de época. */
+const FxCapas: React.FC<{ fx: FotoFx; seed: number }> = ({ fx, seed }) => (
+  <>
+    {fx.atm === "vapor" ? <Vapor seed={seed} /> : null}
+    {fx.atm === "nieve" ? <Nieve seed={seed} /> : null}
+    {fx.atm === "farol" ? <Farol seed={seed} /> : null}
+    {fx.atm === "polvo" ? <Polvo seed={seed} /> : null}
+    {fx.glint ? <Brillo pf={fx.pf} seed={seed} /> : null}
+    {fx.era === "v" ? <Pelicula seed={seed} /> : null}
+  </>
+);
+
+const Vapor: React.FC<{ seed: number }> = ({ seed }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none", mixBlendMode: "screen" }}>
+      {Array.from({ length: 12 }).map((_, i) => {
+        const per = 2.6 + rnd(seed, 20 + i) * 1.8;
+        const t = ((f / fps) / per + rnd(seed, 40 + i)) % 1;
+        const x = 34 + rnd(seed, 60 + i) * 32 + Math.sin(t * 5 + i) * 3;
+        const y = 66 - t * 52;
+        const sz = 140 + t * 260;
+        const op = Math.sin(t * Math.PI) * (0.14 + rnd(seed, 80 + i) * 0.1);
+        return <div key={i} style={{ position: "absolute", left: `${x}%`, top: `${y}%`, width: sz, height: sz, marginLeft: -sz / 2, marginTop: -sz / 2, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,250,240,1) 0%, rgba(255,250,240,0) 65%)", opacity: op, filter: "blur(18px)" }} />;
+      })}
+    </AbsoluteFill>
+  );
+};
+
+const Nieve: React.FC<{ seed: number }> = ({ seed }) => {
+  const f = useCurrentFrame();
+  const { fps, width, height } = useVideoConfig();
+  const tt = f / fps;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      {Array.from({ length: 130 }).map((_, i) => {
+        const capa = i % 3;
+        const v = [0.06, 0.1, 0.17][capa];
+        const y = ((rnd(seed, 100 + i) + tt * v) % 1.08) - 0.04;
+        const x = ((rnd(seed, 200 + i) + Math.sin(tt * 0.8 + i) * 0.012 + tt * 0.01) % 1 + 1) % 1;
+        const s = [3.2, 5.5, 10][capa];
+        return <div key={i} style={{ position: "absolute", left: x * width, top: y * height, width: s, height: s, borderRadius: "50%", background: "rgba(255,255,255,1)", opacity: [0.7, 0.85, 0.9][capa], filter: capa === 2 ? "blur(2px)" : capa === 1 ? "blur(0.6px)" : undefined, boxShadow: "0 0 4px rgba(0,0,0,0.25)" }} />;
+      })}
+    </AbsoluteFill>
+  );
+};
+
+const Farol: React.FC<{ seed: number }> = ({ seed }) => {
+  const f = useCurrentFrame();
+  const n = Math.sin(f * 0.31 + seed) * 0.5 + Math.sin(f * 0.73 + seed * 2) * 0.3 + Math.sin(f * 1.9) * 0.2;
+  const a = 0.13 + n * 0.045;
+  const x = 20 + rnd(seed, 300) * 60;
+  return <AbsoluteFill style={{ pointerEvents: "none", mixBlendMode: "soft-light", opacity: a, background: `radial-gradient(70% 90% at ${x}% 28%, rgba(255,170,80,1) 0%, rgba(255,140,60,0.4) 40%, rgba(0,0,0,0) 75%)` }} />;
+};
+
+const Polvo: React.FC<{ seed: number }> = ({ seed }) => {
+  const f = useCurrentFrame();
+  const { fps, width, height } = useVideoConfig();
+  const tt = f / fps;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none", mixBlendMode: "screen" }}>
+      {Array.from({ length: 36 }).map((_, i) => {
+        const x = ((rnd(seed, 400 + i) + Math.sin(tt * 0.25 + i) * 0.02 + tt * 0.006) % 1 + 1) % 1;
+        const y = ((rnd(seed, 500 + i) + Math.cos(tt * 0.2 + i * 1.3) * 0.02 - tt * 0.004) % 1 + 1) % 1;
+        const tw = 0.35 + 0.35 * Math.sin(tt * 1.5 + i * 2.1);
+        return <div key={i} style={{ position: "absolute", left: x * width, top: y * height, width: 4, height: 4, borderRadius: "50%", background: "rgba(255,236,200,1)", opacity: tw * 0.8, filter: "blur(0.6px)" }} />;
+      })}
+    </AbsoluteFill>
+  );
+};
+
+/** Brillo que cruza la comida una vez (grasa, jarabe, manteca). Con capas 2.5D, sólo sobre el primer plano. */
+const Brillo: React.FC<{ pf?: string; seed: number }> = ({ pf, seed }) => {
+  const f = useCurrentFrame();
+  if (f < 8 || f > 46) return null;
+  const x = interpolate(f, [8, 44], [-40, 140], { ...clampP, easing: Easing.inOut(Easing.cubic) });
+  const mask: React.CSSProperties = pf ? { WebkitMaskImage: `url(${staticFile(pf)})`, WebkitMaskSize: "cover", maskImage: `url(${staticFile(pf)})`, maskSize: "cover" } : {};
+  return <AbsoluteFill style={{ pointerEvents: "none", mixBlendMode: "soft-light", ...mask, background: `linear-gradient(${105 + rnd(seed, 600) * 20}deg, rgba(255,255,255,0) ${x - 14}%, rgba(255,248,225,0.95) ${x}%, rgba(255,255,255,0) ${x + 14}%)` }} />;
+};
+
+/** Look de RECUERDO (sólo planos de los años 60, nunca el avatar): grano que cambia en cada cuadro,
+ *  temblor de proyector de medio píxel, viñeta y alguna mota/raya muy de vez en cuando. Sin virar el color. */
+const Pelicula: React.FC<{ seed: number }> = ({ seed }) => {
+  const f = useCurrentFrame();
+  const id = `g${seed}`;
+  const dx = (rnd(f, 700) - 0.5) * 1.2, dy = (rnd(f, 701) - 0.5) * 1.2;
+  const mota = rnd(f + seed, 702) < 0.12;
+  const raya = rnd(Math.floor(f / 3) + seed, 703) < 0.06;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none", transform: `translate(${dx.toFixed(2)}px, ${dy.toFixed(2)}px)` }}>
+      <svg width="100%" height="100%" style={{ position: "absolute", inset: 0, mixBlendMode: "overlay", opacity: 0.2 }}>
+        <filter id={id}><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={f % 997} stitchTiles="stitch" /><feColorMatrix type="saturate" values="0" /></filter>
+        <rect width="100%" height="100%" filter={`url(#${id})`} />
+      </svg>
+      <AbsoluteFill style={{ background: "radial-gradient(110% 110% at 50% 50%, rgba(0,0,0,0) 55%, rgba(20,12,4,0.42) 100%)" }} />
+      {mota ? <div style={{ position: "absolute", left: `${rnd(f, 704) * 100}%`, top: `${rnd(f, 705) * 100}%`, width: 5 + rnd(f, 706) * 6, height: 3 + rnd(f, 707) * 4, borderRadius: "50%", background: "rgba(20,14,8,0.55)" }} /> : null}
+      {raya ? <div style={{ position: "absolute", left: `${10 + rnd(Math.floor(f / 3), 708) * 80}%`, top: 0, width: 1.5, height: "100%", background: "rgba(255,250,235,0.18)" }} /> : null}
+    </AbsoluteFill>
+  );
+};
+
+// ─── CAPAS "over" del paquete: el riel de la lista y el contador de números ───────────────────
+/** Riel persistente "N.º X de 25": se llena con cada tarjeta y deja el último con un candado hasta el
+ *  final (la intriga abierta). Se esconde mientras un componente ocupa la pantalla y en el CTA. */
+export const RielLista: React.FC<{ marcas: number[]; total: number; ocultar: [number, number][]; label?: string }> = ({ marcas, total, ocultar, label = "Breakfast" }) => {
+  const f = useCurrentFrame();
+  const n = marcas.filter((m) => f >= m).length;
+  const ult = marcas[n - 1] ?? -999;
+  const vis = ocultar.reduce((v, [a, b]) => Math.min(v, f < a - 6 || f > b + 6 ? 1 : f < a ? (a - f) / 6 : f > b ? (f - b) / 6 : 0), 1);
+  if (n === 0 || vis <= 0.01) return null;
+  const pop = interpolate(f - ult, [0, 5, 18], [1.35, 1.35, 1], { ...clampP, easing: easeOut });
+  return (
+    <div style={{ position: "absolute", right: 46, top: 38, opacity: 0.92 * vis, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 8, fontFamily: '"EB Garamond", Georgia, serif', filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.7))" }}>
+      <div style={{ color: "#F3EAD6", fontSize: 26, letterSpacing: 3, textTransform: "uppercase" }}>
+        {label} <span style={{ color: "#D9A15A", fontSize: 34, fontWeight: 700, display: "inline-block", transform: `scale(${pop.toFixed(3)})` }}>{n}</span> <span style={{ opacity: 0.6 }}>of {total}</span>
+      </div>
+      <div style={{ display: "flex", gap: 4, alignItems: "flex-end" }}>
+        {Array.from({ length: total }).map((_, i) => {
+          const hecho = i < n, cur = i === n - 1, candado = i === total - 1 && n < total;
+          return <div key={i} style={{ width: cur ? 11 : 8, height: cur ? 22 * pop : candado ? 16 : 12, borderRadius: 3, background: candado ? "transparent" : hecho ? (cur ? "#E8B26A" : "rgba(217,161,90,0.75)") : "rgba(243,234,214,0.22)", border: candado ? "1.5px solid rgba(232,178,106,0.9)" : undefined, boxShadow: cur ? "0 0 12px rgba(232,178,106,0.8)" : undefined }} />;
+        })}
+      </div>
+    </div>
+  );
+};
+
+/** Número que dice el presentador, contado en pantalla (abajo a la izquierda, lejos de la cara). */
+export const NumeroPop: React.FC<{ n: number; unidad: string; dur: number }> = ({ n, unidad, dur }) => {
+  const f = useCurrentFrame();
+  const a = interpolate(f, [0, 6, dur - 10, dur], [0, 1, 1, 0], clampP);
+  const v = Math.round(interpolate(f, [0, 16], [0, n], { ...clampP, easing: easeOut }));
+  const y = interpolate(f, [0, 10], [22, 0], { ...clampP, easing: easeOut });
+  return (
+    <div style={{ position: "absolute", left: 70, bottom: 86, opacity: a, transform: `translateY(${y.toFixed(2)}px)`, fontFamily: '"EB Garamond", Georgia, serif', filter: "drop-shadow(0 4px 16px rgba(0,0,0,0.85))" }}>
+      <div style={{ color: "#F3EAD6", fontSize: 128, fontWeight: 700, lineHeight: 0.9 }}>{v.toLocaleString("en-US")}</div>
+      <div style={{ color: "#E8B26A", fontSize: 34, letterSpacing: 5, textTransform: "uppercase", marginTop: 6 }}>{unidad}</div>
+      <div style={{ height: 3, width: interpolate(f, [6, 20], [0, 220], clampP), background: "#E8B26A", marginTop: 12, borderRadius: 2 }} />
+    </div>
+  );
+};
+
+export const FxOver: React.FC<{ kind: string; props: any; dur: number }> = ({ kind, props, dur }) =>
+  kind === "riel" ? <RielLista {...props} /> : kind === "num" ? <NumeroPop {...props} dur={dur} /> : null;

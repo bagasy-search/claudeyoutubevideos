@@ -75,5 +75,50 @@
     "head": "Subscribe for the suppers"
   },
   "avatarMinPct": 10,
-  "rachaMaxLugar": 8
+  "rachaMaxLugar": 8,
+  "fx": {
+    "_": "Paquete de efectos (factory/lib/fxpack.mjs). Sonidos: public/sfx_ole (grabaciones reales CC0, ver LICENCIAS.txt).",
+    "exterior": [
+      "porche",
+      "campamento",
+      "bosque",
+      "fosa",
+      "arce"
+    ],
+    "railComp": "CampItemCard",
+    "railTotal": 25,
+    "railLabel": "Breakfast",
+    "unidades": {
+      "pounds": "pounds",
+      "flapjacks": "flapjacks",
+      "dozen": "dozen",
+      "hours": "hours",
+      "minutes": "minutes",
+      "months": "months",
+      "pies": "pies",
+      "men": "men",
+      "winters": "winters",
+      "calories": "calories",
+      "days": "days",
+      "seconds": "seconds",
+      "miles": "miles",
+      "feet": "feet",
+      "loaves": "loaves",
+      "eggs": "eggs"
+    },
+    "entradaMinS": 4,
+    "burnMinS": 25,
+    "whooshMinS": 45,
+    "proyectorMinS": 70,
+    "numMinS": 16,
+    "zoomMinVentanaS": 5.5,
+    "zoomEscala": 1.13,
+    "volFuego": 0.45,
+    "volViento": 0.55,
+    "volSizzle": 0.35,
+    "volTriangulo": 0.16,
+    "volWhoosh": 0.1,
+    "volProyector": 0.1,
+    "maxHuecoS": 20
+  }
 }
