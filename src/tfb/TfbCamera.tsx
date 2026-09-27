@@ -1,17 +1,19 @@
 // TfbCamera — cámara virtual sobre el footage: push-in lento, punch (zoom seco en un golpe), shake (impacto),
-// whip (barrido lateral con desenfoque de movimiento para pasar de un plano a otro) y drift (deriva suave).
+// whip (barrido lateral con desenfoque de movimiento para pasar de un plano a otro), drift (deriva suave) y frame
+// (reencuadre seco: salto a un plano más cerrado dentro de la misma toma, para cortar planos largos sin cambiar de clip).
 // Envuelve la capa base; los eventos se anclan en cuadros ABSOLUTOS del video.
 // Uso: <TfbCamera events={[{f:120,dur:10,kind:"punch",amt:0.12},{f:300,dur:8,kind:"whip",dir:1}]}> …footage… </TfbCamera>
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { EIO, EO, lin, rnd } from "./theme";
 
-export type CamEvent = { f: number; dur: number; kind: "push" | "punch" | "shake" | "whip" | "drift"; amt?: number; dir?: 1 | -1; ox?: number; oy?: number };
+export type CamEvent = { f: number; dur: number; kind: "push" | "punch" | "shake" | "whip" | "drift" | "frame"; amt?: number; dir?: 1 | -1; ox?: number; oy?: number };
 
 const evalEvent = (e: CamEvent, fr: number) => {
   const t = fr - e.f; if (t < 0 || t > e.dur) return null;
   const p = t / Math.max(1, e.dur), a = e.amt ?? 1, d = e.dir ?? 1;
   switch (e.kind) {
+    case "frame": return { s: 1 + (a || 0.25), x: 0, y: 0, blur: 0 };   // reencuadre SECO (jump cut a plano más cerrado)
     case "push": return { s: 1 + (a || 0.06) * EIO(p), x: 0, y: 0, blur: 0 };
     case "drift": return { s: 1.04, x: d * (a || 1.2) * (p - 0.5), y: (a || 1.2) * 0.4 * Math.sin(p * Math.PI), blur: 0 };
     case "punch": { // sube rápido y vuelve con rebote corto

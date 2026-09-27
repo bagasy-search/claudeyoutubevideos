@@ -13,7 +13,7 @@ export const TfbCrackStop: React.FC<{ dur: number; holesAt: number; title?: stri
   // grieta: polilínea vertical dentada; su largo crece por pulsos hasta holesAt, después se congela
   const pulses = [0, 1, 2, 3].map((k) => 12 + k * Math.max(8, (holesAt - 12) / 4));
   const grow = pulses.reduce((a, p) => a + lin(f, [p, p + 7], [0, 1], EO), 0);
-  const len0 = 150, len = Math.min(len0 + grow * 55, len0 + 4 * 55);
+  const len0 = 250, len = Math.min(len0 + grow * 60, len0 + 4 * 60);
   const pts: [number, number][] = [];
   for (let i = 0; i <= 30; i++) { const t = i / 30; const y = cy - len / 2 + t * len; pts.push([cx + (rnd(i * 3.1) - 0.5) * 26 + Math.sin(t * 9) * 6, y]); }
   const d = "M " + pts.map((p) => p.map((v) => v.toFixed(1)).join(" ")).join(" L ");
@@ -43,7 +43,7 @@ export const TfbCrackStop: React.FC<{ dur: number; holesAt: number; title?: stri
             </g>
           );
         })}
-        <path d={d} fill="none" stroke="#050505" strokeWidth={14} strokeLinecap="round" strokeLinejoin="round" />
+        <path d={d} fill="none" stroke="#050505" strokeWidth={18} strokeLinecap="round" strokeLinejoin="round" />
         <path d={d} fill="none" stroke="#6b6b70" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" transform="translate(-4 0)" />
         {/* puntas: antes de los agujeros, la punta brilla al avanzar */}
         {f < holesAt ? [top, bot].map((p, i) => <circle key={i} cx={p[0]} cy={p[1]} r={10 + 14 * lin(f % 16, [0, 4, 12], [0, 1, 0])} fill="none" stroke={C.red} strokeWidth={5} />) : null}
