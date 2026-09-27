@@ -11,7 +11,7 @@ import numpy as np, soundfile as sf
 R = 'D:/Proyectos/video2-wt/tfbtanque/'
 VL = R + 'out/vlog/'; PL = R + 'vlog/tfbtanque/plans/'; os.makedirs(PL, exist_ok=True)
 T = json.load(open(R + 'vlog/tfbtanque/tramos.json', encoding='utf8'))
-FACE = R + 'public/ref_tfbtanque_face.png'; VFACE = R + 'public/ref_vecino_face.png'; REF = R + 'public/ref_tfbtanque.png'
+FACE = R + 'public/ref_tfbtanque_face_hd.png'; FACE_ANC = R + 'public/ref_tfbtanque_face.png'; VFACE = R + 'public/ref_vecino_face.png'; REF = R + 'public/ref_tfbtanque.png'
 LIGHT = ("This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.")
 LOOK = ("Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.")
 WEAR = "He is the man of the reference face — same face, same dark curly hair, same short salt-and-pepper beard — wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it; dark work trousers."
@@ -78,7 +78,7 @@ for s in segs:
 def dsplit(a):
     p = a.split(' >> '); return (p[0], p[1] if len(p) > 1 else p[0])
 order = []; tot = {'anc': 0, 'clips': 0}
-sets_plan = {'dir': VL + 'SETS/', 'face': FACE, 'k0_from': REF, 'light': LIGHT, 'look': LOOK, 'prev_box': '384x216', 'lang': 'es',
+sets_plan = {'dir': VL + 'SETS/', 'face': FACE, 'face_anc': FACE_ANC, 'k0_from': REF, 'light': LIGHT, 'look': LOOK, 'prev_box': '384x216', 'lang': 'es',
              'anchors': [{'id': k, 'from': v['from'], 'prompt': v['prompt']} for k, v in SETS.items()], 'clips': [], 'out': VL + 'SETS/sets.mp4'}
 json.dump(sets_plan, open(PL + 'SETS.json', 'w', encoding='utf8'), ensure_ascii=False, indent=1)
 for s in segs:
@@ -121,7 +121,7 @@ for s in segs:
             secs = min(12, max(4, math.ceil(len(t['text']) / 12 + 1.5)))
             clips.append({'id': t['id'], 'a': A1, 'b': A2, 'secs': secs, 'line': t['text'], 'text': t['text'], 'who': WHO, 'voice': VOICE, 'refs': ['V'],
                           'action': act + '. The presenter, if visible, listens in silence.'})
-    plan = {'dir': d, 'face': FACE, 'k0_from': k0, 'extra': {'V': VFACE, 'LAM': R + 'public/img/tfbtanque/lamina_0.png'}, 'light': LIGHT, 'look': LOOK, 'prev_box': '384x216', 'lang': 'es',
+    plan = {'dir': d, 'face': FACE, 'face_anc': FACE_ANC, 'k0_from': k0, 'extra': {'V': VFACE, 'LAM': R + 'public/img/tfbtanque/lamina_0.png'}, 'light': LIGHT, 'look': LOOK, 'prev_box': '384x216', 'lang': 'es',
             'anchors': anchors, 'clips': clips, 'out': d + f'vlog_{name}.mp4'}
     json.dump(plan, open(PL + name + '.json', 'w', encoding='utf8'), ensure_ascii=False, indent=1)
     order.append({'seg': name, 'type': 'scene', 'plan': PL + name + '.json', 'out': d + f'vlog_{name}.mp4'})

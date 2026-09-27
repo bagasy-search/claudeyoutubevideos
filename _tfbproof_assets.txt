@@ -1,0 +1,7 @@
+img/tfbtanque/proof_bg.jpg
+img/tfbtanque/proof_jet.jpg
+img/tfbtanque/proof_ok.jpg
+img/tfbtanque/proof_mesh.jpg
+img/tfbtanque/lamina_0.png
+img/tfbtanque/qr_tfbtanque.png
+img/tfbtanque/portada-coleccion.jpg

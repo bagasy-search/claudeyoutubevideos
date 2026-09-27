@@ -94,7 +94,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
 const mime = f => f.endsWith(".png") ? "image/png" : /\.(mp3)$/.test(f) ? "audio/mpeg" : /\.wav$/.test(f) ? "audio/wav" : "image/jpeg";
 const uri = f => `data:${mime(f)};base64,` + fs.readFileSync(f).toString("base64");
-const refPathOf = (P, n) => n === "k0" ? P.k0_from : /^K\d+$/.test(n) ? dirsOf(P).ANC + n + ".png" : (P.extra || {})[n] || n;
+const isAnc = (P, n) => /^K\d+$/.test(n) || (P.anchors || []).some(a => a.id === n);   // cualquier id de ancla del plan (D1a, V2b, K3s…)
+const refPathOf = (P, n) => n === "k0" ? P.k0_from : isAnc(P, n) ? dirsOf(P).ANC + n + ".png" : (P.extra || {})[n] || n;
 const refPath = n => refPathOf(P, n);
 const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a]);
 const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
@@ -129,7 +130,7 @@ const usd = (u, batch) => { const d = u.input_tokens_details || {}; const f = ba
 // lo ESPERADO con las palancas de default (1088x608, K/foto base en caja 256x144, cara 96 tok, extras como vengan) en el
 // modo elegido: si el real se pasa >15% es que algo se salteó (size grande, ref sin achicar, cara entera…) → aviso.
 const esperado = (it, batch) => usd({ input_tokens_details: { text_tokens: Math.ceil(it.prompt.length / 4),
-  image_tokens: 96 + it.a.from.reduce((s, n) => s + (n === "k0" || /^K\d+$/.test(n) ? 144 : tokIn(...wh(small(refPathOf(it.Pl, n), EXTRA_BOX, dirsOf(it.Pl).ANC)))), 0) },
+  image_tokens: 96 + it.a.from.reduce((s, n) => s + (n === "k0" || isAnc(it.Pl, n) ? 144 : tokIn(...wh(small(refPathOf(it.Pl, n), EXTRA_BOX, dirsOf(it.Pl).ANC)))), 0) },
   output_tokens: OUT_TOK[SIZE0] || 96 }, batch);
 
 // ref achicada (cacheada en anc/_ref/): cabe en la caja sin deformar
@@ -143,8 +144,8 @@ function small(f, [bw, bh], ANCd) {
   return o;
 }
 // cara 128x192 (96 tok): crop 2:3 centrado (o `face_crop` del plan) y escala. Si ya es 128x192 se usa tal cual.
-function face128(Pl) {
-  const f = Pl.face, [w, h] = wh(f); if (w === 128 && h === 192) return f;
+function face128(Pl) { // `face_anc`: cara para las ANCLAS (128x192 ok); `face`: la de los CLIPS (agnes pide lados ≥ 256 px)
+  const f = Pl.face_anc || Pl.face, [w, h] = wh(f); if (w === 128 && h === 192) return f;
   const o = dirsOf(Pl).ANC + "_ref/_face128.png";
   if (!fs.existsSync(o) || fs.statSync(o).mtimeMs < fs.statSync(f).mtimeMs) {
     fs.mkdirSync(path.dirname(o), { recursive: true });
@@ -185,7 +186,7 @@ function construirItems() {
 }
 function prepararItem(it) { // arma inputs chicos recién cuando sus K previos existen
   const { Pl, a } = it, ANCd = dirsOf(Pl).ANC;
-  it.inputs = a.from.map(n => { const f = refPathOf(Pl, n); return small(f, n === "k0" || /^K\d+$/.test(n) ? prevOf(Pl) : EXTRA_BOX, ANCd); });
+  it.inputs = a.from.map(n => { const f = refPathOf(Pl, n); return small(f, n === "k0" || isAnc(Pl, n) ? prevOf(Pl) : EXTRA_BOX, ANCd); });
   it.size = sizeOf(Pl);
   if (!a.noface) it.inputs.push(face128(Pl));                       // `noface`: ancla de detalle (sólo manos/objeto)
   it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + (a.noface ? "" : IDENT) + LIGHT;
