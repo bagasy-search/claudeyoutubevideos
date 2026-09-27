@@ -885,6 +885,11 @@ const sprigColor = (mood: ValMood): string =>
 
 type CamVec = {px: number; py: number};
 
+/** Foto de fondo de la escena (la pone Comp.tsx de la fábrica con la imagen del propio plano). Si hay,
+ *  la capa 1 del Stage deja de ser un degradé plano: la foto a pantalla completa, desenfocada y lavada en
+ *  crema — la escena gana profundidad sin competir con la tarjeta (valpapa, 27-sep-2026). */
+export const ValBgContext = React.createContext<string | undefined>(undefined);
+
 export const Stage: React.FC<{
   mood: ValMood;
   accent: string;
@@ -908,6 +913,7 @@ export const Stage: React.FC<{
 }) => {
   const frame = useCurrentFrame();
   const {width, height} = useVideoConfig();
+  const bgPhoto = React.useContext(ValBgContext);
   const seedN = React.useMemo(() => random(seed + '-cam') * 10, [seed]);
 
   const push = interpolate(frame, [0, VAL_SCENE_F], [1, pushTo], CLAMP);
@@ -942,6 +948,12 @@ export const Stage: React.FC<{
         <ParallaxLayer factor={0.22} z={1} px={px} py={py}>
           <AbsoluteFill style={{filter: 'blur(13px)', transform: 'scale(1.16)'}}>
             <AbsoluteFill style={{background: moodBg(mood)}} />
+            {bgPhoto ? (
+              <>
+                <Img src={bgPhoto} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'blur(6px) saturate(0.9)'}} />
+                <AbsoluteFill style={{background: `linear-gradient(90deg, ${rgba(VAL.paper, 0.9)} 0%, ${rgba(VAL.paper, 0.72)} 45%, ${rgba(VAL.paper, 0.45)} 100%)`}} />
+              </>
+            ) : null}
             <MotesLayer motes={farMotes} blur={0} scale={height / 1080} />
             <AbsoluteFill
               style={{
@@ -1232,7 +1244,7 @@ export const ValHero: React.FC<ValHeroProps> = ({
                   src={image}
                   accent={accent}
                   delayF={Math.round(0.35 * fps)}
-                  w={Math.min(width * 0.32, height * 0.58)}
+                  w={Math.min(width * 0.42, height * 0.74)}
                   cx={cx}
                   cy={50}
                   rot={isLeft ? 1.6 : -1.8}
@@ -1363,7 +1375,7 @@ export const ValStat: React.FC<ValStatProps> = ({
                   src={image}
                   accent={accent}
                   delayF={Math.round(0.4 * fps)}
-                  w={Math.min(width * 0.22, height * 0.42)}
+                  w={Math.min(width * 0.32, height * 0.6)}
                   cx={73}
                   cy={50}
                   rot={1.8}
@@ -1977,7 +1989,7 @@ export const ValStep: React.FC<ValStepProps> = ({
                   src={image}
                   accent={accent}
                   delayF={Math.round(0.35 * fps)}
-                  w={Math.min(width * 0.26, height * 0.5)}
+                  w={Math.min(width * 0.38, height * 0.68)}
                   cx={63}
                   cy={50}
                   rot={1.6}
@@ -2551,7 +2563,7 @@ export const ValChecklist: React.FC<ValChecklistProps> = ({
                       hot={hot}
                       accent={accent}
                       startSec={0.58}
-                      size={Math.round(Math.min(width * 0.036, height * 0.064))}
+                      size={Math.round(Math.min(width * 0.046, height * 0.082))}
                       uppercase={false}
                     />
                   </div>
@@ -2598,7 +2610,7 @@ export const ValChecklist: React.FC<ValChecklistProps> = ({
                             filter: `blur(${Math.max(0, interpolate(rowIn, [0, 1], [8, 0], CLAMP))}px)`,
                           }}
                         >
-                          <svg width={38} height={38} viewBox="0 0 34 34" style={{flexShrink: 0}}>
+                          <svg width={50} height={50} viewBox="0 0 34 34" style={{flexShrink: 0}}>
                             <circle
                               cx={17}
                               cy={17}
@@ -2627,7 +2639,7 @@ export const ValChecklist: React.FC<ValChecklistProps> = ({
                             style={{
                               fontFamily: FONT_SERIF,
                               fontWeight: 500,
-                              fontSize: Math.round(height * 0.03),
+                              fontSize: Math.round(height * 0.043),
                               color: VAL.ink,
                             }}
                           >
@@ -2717,7 +2729,7 @@ export const ValCta: React.FC<ValCtaProps> = ({
                   src={image}
                   accent={accent}
                   delayF={Math.round(0.35 * fps)}
-                  w={Math.min(width * 0.3, height * 0.56)}
+                  w={Math.min(width * 0.4, height * 0.72)}
                   cx={70}
                   cy={50}
                   rot={-2}
