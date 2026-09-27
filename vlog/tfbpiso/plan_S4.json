@@ -1,0 +1,204 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/S4",
+ "face": "D:/Proyectos/video2-wt/tfbpiso/public/ref_tfbpiso_facebig.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiso/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/BASE/anc/K0.png"
+   ],
+   "prompt": "Same patio as the first input image (same walls, laundry sink, gate, plants and porch), a new moment and a new camera position: The back patio of a modest working-class house in a Latin American town, about five by six metres, open to the sky: whitewashed brick walls with grey damp marks at the base, a concrete laundry sink with a brass tap against the back wall, a clothesline with two faded towels, terracotta pots with red geraniums and a small lemon tree along the right wall, a green-painted metal gate to the side passage on the left, and at the far end a small roofed porch with red floor tiles, a wooden table and two plastic chairs beside the back door of the house. The LEFT half of the floor has been redone: new light-grey cement with fine straight parallel broom grooves, divided by straight joint lines into roughly square panels; the RIGHT half is still the old grey cement, worn, stained and cracked; the border between them runs diagonally across the patio. The man is the person of the last input image (a close-up of his real face): EXACTLY that face, same dark curly black hair, same short salt-and-pepper beard, about 50 years old. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and cement dust, a worn brown leather apron over it, dark work trousers and black rubber boots. He kneels on the OLD half of the floor holding a claw hammer and a stick of white chalk, a few white chalk circles already drawn around cracks near his knees, looking at the friend who films. Medium shot from about two metres, slightly from above. Soft bright daylight of a high overcast sky."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he kneels with both palms raised in a frank 'wait' gesture, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half, where he kneels, is old, stained and cracked with white chalk circles. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he points at the damp marks at the base of the wall, looking at the friend who films with a serious face. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half, where he kneels, is old, stained and cracked with white chalk circles. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he presses his flat palm down on the old floor, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half, where he kneels, is old, stained and cracked with white chalk circles. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he holds one finger on a crack in the old floor, looking at the friend who films, eyebrows raised. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half, where he kneels, is old, stained and cracked with white chalk circles. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K5",
+   "noface": true,
+   "from": [
+    "K4"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the old grey cement floor with fine surface cracks; the head of a claw hammer held low just above it by a hand at the top edge of the frame. Same place, same light and same materials as the first input image, but the camera is now VERY CLOSE: this detail fills the whole frame. No face in frame."
+  },
+  {
+   "id": "K6",
+   "noface": true,
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same close-up: the hammer head is tapping the floor a little further along, a stick of white chalk in the other hand entering from the side. Same close-up framing and light as the input image. No face in frame."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Back to the normal camera distance of the first input image. Same patio: he kneels on the old half holding the claw hammer, his ear turned toward the floor as if listening, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half, where he kneels, is old, stained and cracked with white chalk circles. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the hammer still on a spot of the floor, frowning, one hand cupped behind his ear. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half, where he kneels, is old, stained and cracked with white chalk circles. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the old grey cement floor around a dull loose patch; a hand holding a stick of white chalk touching the floor. Same place, same light and same materials as the first input image, but the camera is now VERY CLOSE: this detail fills the whole frame. No face in frame."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same close-up: a white chalk circle drawn around the loose patch, the chalk lifting away. Same close-up framing and light as the input image. No face in frame."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Back to the normal camera distance of the first input image. Same patio: he kneels on the old half with several white chalk circles on the floor around him, the chalk in his hand, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half, where he kneels, is old, stained and cracked with white chalk circles. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: he kneels, shaking his head slowly, the chalk held between two fingers, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half, where he kneels, is old, stained and cracked with white chalk circles. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he kneels wearing grey rubber gloves, safety glasses on his forehead, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half, where he kneels, is old, stained and cracked with white chalk circles. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same place, same framing and same light: he kneels with gloves on and safety glasses on his forehead, calm, nodding at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half, where he kneels, is old, stained and cracked with white chalk circles. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s4_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Ahora, lo honesto. Esto no sirve para todos los pisos, y prefiero decírtelo antes de que gastes un solo saco.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4_01.wav",
+   "action": "Kneeling, he puts the hammer down, raises both hands as if to stop the viewer, and speaks frankly."
+  },
+  {
+   "id": "s4_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Si el piso tiene humedad que sube desde abajo, manchas que no se secan nunca, o salitre blanco, esto no lo arregla.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4_02.wav",
+   "action": "He points at the grey damp marks at the base of the whitewashed wall and at a white chalky crust near the wall, then shakes his head."
+  },
+  {
+   "id": "s4_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Si tiene grietas que se abren cada vez más, o en escalera, o si una parte se hunde, tampoco. Eso viene de la base.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4_03.wav",
+   "action": "He traces a crack on the old floor with his finger, drawing a zigzag like a staircase in the air, then presses his palm down as if something were sinking."
+  },
+  {
+   "id": "s4_04",
+   "a": "K3",
+   "b": "K4",
+   "text": "Le pones una capa linda encima, y en unos meses la grieta vuelve a salir, por el mismo lugar. Primero, la causa.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4_04.wav",
+   "action": "He makes a 'pretty layer' gesture sweeping his flat hand over the floor, then traces a line with a finger as if a crack came back up."
+  },
+  {
+   "id": "s4_05",
+   "a": "K5",
+   "b": "K6",
+   "detail": true,
+   "action": "EXTREME CLOSE-UP: the hammer taps the old floor lightly, moving along it spot by spot, tap, tap, tap.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4_05.wav"
+  },
+  {
+   "id": "s4_06",
+   "a": "K7",
+   "b": "K8",
+   "text": "Golpecitos por todo el piso. Donde suena seco, está pegado. Donde suena hueco, como a cajón, está suelto, y eso se pica.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4_06.wav",
+   "action": "He taps the floor with the hammer in two places, cupping his ear, nodding at the first and frowning at the second."
+  },
+  {
+   "id": "s4_07",
+   "a": "K9",
+   "b": "K10",
+   "detail": true,
+   "action": "EXTREME CLOSE-UP: the hand draws a white chalk circle around the loose patch in one smooth stroke.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4_07.wav"
+  },
+  {
+   "id": "s4_08",
+   "a": "K11",
+   "b": "K12",
+   "text": "Y sobre cerámica esmaltada, cuidado: la lechada no agarra bien sobre ese brillo. Ahí yo no te lo recomiendo así nomás.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4_08.wav",
+   "action": "He points toward the back door of the house, where a strip of white glazed ceramic tile shows at the threshold, taps it with the chalk and shakes his head slowly."
+  },
+  {
+   "id": "s4_09",
+   "a": "K12",
+   "b": "K13",
+   "text": "Antes de tocar el cemento: guantes, botas y gafas. El cemento fresco es cáustico: quema la piel, aunque no lo sientas enseguida.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4_09.wav",
+   "action": "He picks up a pair of grey rubber gloves and safety glasses from beside him, pulls the gloves on and pushes the safety glasses up onto his forehead."
+  },
+  {
+   "id": "s4_10",
+   "a": "K13",
+   "b": "K14",
+   "text": "Si te salpica un ojo, agua limpia, mucha, enseguida. Y mangas largas. No es exagerar: es trabajar tranquilo.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4_10.wav",
+   "action": "He taps the safety glasses on his forehead, then pulls one sleeve down over the forearm and back up, calm."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/S4/vlog_S4.mp4"
+}

@@ -1,0 +1,97 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/S4B",
+ "face": "D:/Proyectos/video2-wt/tfbpiso/public/ref_tfbpiso_facebig.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiso/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/BASE/anc/K0.png"
+   ],
+   "prompt": "Same patio as the first input image (same walls, laundry sink, gate, plants and porch), a new moment and a new camera position: The back patio of a modest working-class house in a Latin American town, about five by six metres, open to the sky: whitewashed brick walls with grey damp marks at the base, a concrete laundry sink with a brass tap against the back wall, a clothesline with two faded towels, terracotta pots with red geraniums and a small lemon tree along the right wall, a green-painted metal gate to the side passage on the left, and at the far end a small roofed porch with red floor tiles, a wooden table and two plastic chairs beside the back door of the house. The LEFT half of the floor has been redone: new light-grey cement with fine straight parallel broom grooves, divided by straight joint lines into roughly square panels; the RIGHT half is still the old grey cement, worn, stained and cracked; the border between them runs diagonally across the patio. The corner by the concrete laundry sink, seen closer: two paper bags of grey cement, a pile of clean sand on a blue plastic sheet, a white plastic bottle of PVA wood glue with a blank label, a metal wheelbarrow, two black buckets, a shovel, a stiff scrubbing brush, a long aluminium straightedge, a wooden float, a steel trowel, a small jointing tool, a club hammer and a cold chisel, two straight wooden battens, a spirit level, a coiled green garden hose, a folded clear plastic sheet, grey rubber gloves, safety glasses and rubber boots. The man is the person of the last input image (a close-up of his real face): EXACTLY that face, same dark curly black hair, same short salt-and-pepper beard, about 50 years old. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and cement dust, a worn brown leather apron over it, dark work trousers and black rubber boots. He stands behind the materials with one hand on the wheelbarrow handle, talking to the friend who films. Medium shot from about two metres. Soft bright daylight, the corner a little shaded by the wall."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the white plastic bottle of PVA glue with a blank label in one hand, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up the stiff scrubbing brush, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up the small jointing tool, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the spirit level in one hand, pointing at the folded plastic sheet with the other, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he smiles at the friend who films, one hand pointing at the patio broom leaning on the wall. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s4b_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Lo que vas a necesitar. Cemento común, del de toda la vida. Arena limpia, sin tierra ni raíces. Y cola vinílica, la blanca.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4b_01.wav",
+   "action": "He pats one of the cement bags, then runs his hand through the pile of sand, and lifts the white bottle of glue to show it."
+  },
+  {
+   "id": "s4b_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Una carretilla o una batea para mezclar, una pala, dos baldes, y un cepillo duro para la lechada.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4b_02.wav",
+   "action": "He puts the bottle down, rocks the wheelbarrow by its handle, taps the shovel and holds up the stiff brush."
+  },
+  {
+   "id": "s4b_03",
+   "a": "K2",
+   "b": "K3",
+   "text": "Una regla de aluminio derecha, un fratás de madera, una llana, y esta herramienta para marcar las juntas.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4b_03.wav",
+   "action": "He lifts the long aluminium straightedge and sights along it with one eye closed, then shows the wooden float, the steel trowel and the small jointing tool one by one."
+  },
+  {
+   "id": "s4b_04",
+   "a": "K3",
+   "b": "K4",
+   "text": "Martillo y cincel, dos listones derechos, un nivel, la manguera, y un plástico grande para tapar. Nada raro.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4b_04.wav",
+   "action": "He taps the hammer and chisel, holds up the two wooden battens and the spirit level, then points at the coiled hose and the folded plastic sheet."
+  },
+  {
+   "id": "s4b_05",
+   "a": "K4",
+   "b": "K5",
+   "text": "Todo lo consigues en cualquier ferretería o corralón. La escoba, la de patio, y esa ya la tienes.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s4b_05.wav",
+   "action": "He puts the level down, shrugs with a smile and nods toward the patio broom leaning on the wall."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/S4B/vlog_S4B.mp4"
+}

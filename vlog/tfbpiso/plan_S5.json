@@ -1,0 +1,112 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/S5",
+ "face": "D:/Proyectos/video2-wt/tfbpiso/public/ref_tfbpiso_facebig.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiso/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/BASE/anc/K0.png"
+   ],
+   "prompt": "Same patio as the first input image (same walls, laundry sink, gate, plants and porch), a new moment and a new camera position: The back patio of a modest working-class house in a Latin American town, about five by six metres, open to the sky: whitewashed brick walls with grey damp marks at the base, a concrete laundry sink with a brass tap against the back wall, a clothesline with two faded towels, terracotta pots with red geraniums and a small lemon tree along the right wall, a green-painted metal gate to the side passage on the left, and at the far end a small roofed porch with red floor tiles, a wooden table and two plastic chairs beside the back door of the house. The LEFT half of the floor has been redone: new light-grey cement with fine straight parallel broom grooves, divided by straight joint lines into roughly square panels; the RIGHT half is still the old grey cement, worn, stained and cracked; the border between them runs diagonally across the patio. The small roofed porch with red floor tiles at the far side of the patio: a sturdy wooden work table with a folded cream-coloured printed sheet of paper lying face down, a pencil, a tape measure and a mug of coffee; the patio floor visible behind in daylight. The man is the person of the last input image (a close-up of his real face): EXACTLY that face, same dark curly black hair, same short salt-and-pepper beard, about 50 years old. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and cement dust, a worn brown leather apron over it, dark work trousers and black rubber boots. He stands at the table, leaning on it with both hands, talking to the friend who films. Medium shot, waist up, from about two metres. Daylight from the open patio on the left side, the back of the porch dimmer, a plain warm bulb hanging from the porch ceiling, switched off."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the wooden work table, one hand resting on the folded cream-coloured printed sheet, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the unfolded cream-coloured printed sheet up at chest height, its blank back facing the camera, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the sheet in one hand, tapping it with a finger, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the folded sheet against his chest, relaxed, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place, same framing and same light: he holds up four fingers, the folded sheet under his arm, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place, same framing and same light: he points down toward the bottom of the frame, smiling at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s5_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Bueno, ven un momento, que te quiero mostrar algo antes de hacer la otra mitad.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s5_01.wav",
+   "action": "He waves the friend who films closer with one hand and walks two steps to the wooden work table under the porch roof."
+  },
+  {
+   "id": "s5_02",
+   "a": "K1",
+   "b": "K2",
+   "text": "Presta muchísima atención a esta imagen, porque probablemente sea la parte más importante de todo el video.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s5_02.wav",
+   "action": "He picks up the cream-coloured printed sheet from the table, unfolds it and holds it up at chest height toward the friend who films, serious and warm."
+  },
+  {
+   "id": "s5_02b",
+   "a": "K2",
+   "b": "K3",
+   "text": "Pausa aquí si quieres. Esa es toda la receta en una sola hoja.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s5_02b.wav",
+   "action": "He lowers the sheet a little and taps it with one finger, nodding slowly."
+  },
+  {
+   "id": "s5_03",
+   "a": "K3",
+   "b": "K4",
+   "text": "Esta ficha la armé con el estilo de la colección del canal, donde tengo ordenados setenta y seis arreglos de la casa.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s5_03.wav",
+   "action": "He folds the sheet in half, holding it up, and speaks casually, a relaxed smile."
+  },
+  {
+   "id": "s5_04",
+   "a": "K4",
+   "b": "K5",
+   "text": "Con materiales y medidas, la guía contra la humedad, la hoja de compras y las fichas de emergencia.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s5_04.wav",
+   "action": "He counts on his fingers while he talks, relaxed, the folded sheet under his arm."
+  },
+  {
+   "id": "s5_05",
+   "a": "K5",
+   "b": "K6",
+   "text": "Si estás en el televisor, apunta la cámara de tu teléfono a este código. Si estás en el teléfono, el enlace está abajo.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s5_05.wav",
+   "action": "He points straight at the camera, then points down toward the bottom of the frame, smiling."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/S5/vlog_S5.mp4"
+}

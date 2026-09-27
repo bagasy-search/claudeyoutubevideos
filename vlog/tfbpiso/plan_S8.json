@@ -1,0 +1,251 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/S8",
+ "face": "D:/Proyectos/video2-wt/tfbpiso/public/ref_tfbpiso_facebig.png",
+ "extra": {
+  "V": "D:/Proyectos/video2-wt/tfbpiso/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/BASE/anc/K0.png"
+   ],
+   "prompt": "Same patio as the first input image (same walls, laundry sink, gate, plants and porch), a new moment and a new camera position: The back patio of a modest working-class house in a Latin American town, about five by six metres, open to the sky: whitewashed brick walls with grey damp marks at the base, a concrete laundry sink with a brass tap against the back wall, a clothesline with two faded towels, terracotta pots with red geraniums and a small lemon tree along the right wall, a green-painted metal gate to the side passage on the left, and at the far end a small roofed porch with red floor tiles, a wooden table and two plastic chairs beside the back door of the house. The RIGHT half of the floor is prepared: old grey cement, clean, dark and damp from water but with no puddles, the loose patches chiselled out, two straight wooden battens lying parallel on small mounds of mortar about a metre and a half apart; the LEFT half is the finished new grooved light-grey cement. A wheelbarrow of damp grey mortar and a bucket of grey slurry with a stiff brush stand at the edge. The man is the person of the last input image (a close-up of his real face): EXACTLY that face, same dark curly black hair, same short salt-and-pepper beard, about 50 years old. He wears a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and cement dust, a worn brown leather apron over it, dark work trousers and black rubber boots. He wears grey rubber work gloves. He stands at the edge of the damp floor holding the stiff brush, looking at the floor and then at the friend who films. Medium-wide shot from about three metres. Soft bright daylight of a high overcast sky."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same framing and same light: he crouches at the edge of the damp floor with the stiff brush, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K2",
+   "noface": true,
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the damp dark old cement floor; a stiff brush loaded with thick grey slurry pressed onto it. Same place, same light and same materials as the first input image, but the camera is now VERY CLOSE: this detail fills the whole frame. No face in frame."
+  },
+  {
+   "id": "K3",
+   "noface": true,
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same close-up: the grey slurry is scrubbed into the old floor in a patch, filling its pores and cracks, brush marks visible. Same close-up framing and light as the input image. No face in frame."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Back to the normal camera distance of the first input image. Same patio: he stands at the edge of a patch of fresh grey slurry between the battens, the wheelbarrow of mortar beside him, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K5",
+   "noface": true,
+   "from": [
+    "K4"
+   ],
+   "prompt": "EXTREME CLOSE-UP of fresh grey slurry on the floor between two wooden battens; the lip of a tipped metal wheelbarrow at the top edge. Same place, same light and same materials as the first input image, but the camera is now VERY CLOSE: this detail fills the whole frame. No face in frame."
+  },
+  {
+   "id": "K6",
+   "noface": true,
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same close-up: a heap of damp grey mortar lies on the slurry between the battens, a little higher than the battens. Same close-up framing and light as the input image. No face in frame."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Back to the normal camera distance of the first input image. Same patio: he kneels by the heap of mortar between the battens, holding up his index finger sideways, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place, same framing and same light: he holds his finger sideways against the mortar, looking at the friend who films, serious. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K9",
+   "noface": true,
+   "from": [
+    "K8"
+   ],
+   "prompt": "EXTREME CLOSE-UP of a long aluminium straightedge resting across two wooden battens on a heap of grey mortar, gloved hands on it. Same place, same light and same materials as the first input image, but the camera is now VERY CLOSE: this detail fills the whole frame. No face in frame."
+  },
+  {
+   "id": "K10",
+   "noface": true,
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same close-up: the straightedge has moved along, leaving a flat surface of mortar level with the battens and a roll of excess in front of it. Same close-up framing and light as the input image. No face in frame."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Back to the normal camera distance of the first input image. Same patio: he stands holding the straightedge upright beside a flat strip of fresh mortar between the battens, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same place, same framing and same light: the strip of mortar is flat and level with the battens; he rests the straightedge on his shoulder, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K12"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the lifted batten in one hand and the trowel in the other, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K14",
+   "noface": true,
+   "from": [
+    "K13"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the fresh flat grey mortar; a wooden float laid flat on it, a gloved hand on the float's handle. Same place, same light and same materials as the first input image, but the camera is now VERY CLOSE: this detail fills the whole frame. No face in frame."
+  },
+  {
+   "id": "K15",
+   "noface": true,
+   "from": [
+    "K14"
+   ],
+   "prompt": "Same close-up: the float has moved in circles, the surface is now smooth, even and matte around it. Same close-up framing and light as the input image. No face in frame."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Back to the normal camera distance of the first input image. Same patio: he kneels on a small board at the edge of the smooth fresh screed holding the wooden float, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K17",
+   "from": [
+    "K16"
+   ],
+   "prompt": "Same place, same framing and same light: he holds the float like a fan near his face, eyebrows raised, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K18",
+   "from": [
+    "K17"
+   ],
+   "prompt": "Same place, same framing and same light: he kneels with the float resting on the smooth screed, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  },
+  {
+   "id": "K19",
+   "from": [
+    "K18"
+   ],
+   "prompt": "Same place, same framing and same light: he stands at the edge of the fresh screed with his hands on his lower back, looking at the friend who films. He still wears exactly the same clothes as in the first input image: the worn brown leather apron over the faded olive-green work shirt with rolled-up sleeves, dark work trousers and black rubber boots. Same soft bright overcast daylight as the first input image, the patio well lit. The floor: the LEFT half is new light-grey grooved cement, the RIGHT half is where the fresh mortar goes between the battens. The camera stays at about the same distance and height as in the first input image: a casual medium shot, the patio around him, not a posed frontal portrait."
+  }
+ ],
+ "clips": [
+  {
+   "id": "s8_01",
+   "a": "K0",
+   "b": "K1",
+   "text": "Ahora sí. Miro el piso: oscuro de humedad, pero sin charcos. Si hay agua parada, la saco con la escoba.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_01.wav",
+   "action": "He crouches and touches the dark damp floor with a gloved finger, looks at it, then pushes a small puddle away with the stiff brush."
+  },
+  {
+   "id": "s8_02",
+   "a": "K2",
+   "b": "K3",
+   "detail": true,
+   "action": "EXTREME CLOSE-UP: the stiff brush scrubs the thick grey slurry into the damp old cement with short hard strokes, working it into every pore.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_02.wav"
+  },
+  {
+   "id": "s8_03",
+   "a": "K5",
+   "b": "K6",
+   "detail": true,
+   "action": "EXTREME CLOSE-UP: the wheelbarrow tips and damp grey mortar slides out onto the fresh slurry, a shovel spreading it between the battens.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_03.wav"
+  },
+  {
+   "id": "s8_04",
+   "a": "K7",
+   "b": "K8",
+   "text": "¿Qué grosor? Como mínimo, el de un dedo. Más fino que eso parece que ahorras, pero es lo que después se despega.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_04.wav",
+   "action": "He holds his index finger horizontally against the side of the heap of mortar to show its height, then taps the heap."
+  },
+  {
+   "id": "s8_05",
+   "a": "K9",
+   "b": "K10",
+   "detail": true,
+   "action": "EXTREME CLOSE-UP: the straightedge slides side to side across the battens in a sawing motion and moves slowly back, flattening the mortar.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_05.wav"
+  },
+  {
+   "id": "s8_06",
+   "a": "K11",
+   "b": "K12",
+   "text": "Donde queda un hueco, echo un poco de mezcla y vuelvo a pasar la regla. Hasta que queda al ras de las guías.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_06.wav",
+   "action": "He drops a trowel-full of mortar into a low spot and passes the straightedge over it again."
+  },
+  {
+   "id": "s8_07",
+   "a": "K12",
+   "b": "K13",
+   "text": "Las guías las saco apenas termino ese paño, y el hueco que dejan lo relleno con la misma mezcla.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_07.wav",
+   "action": "He lifts one wooden batten out of the fresh mortar and fills its groove with mortar from the trowel, smoothing it."
+  },
+  {
+   "id": "s8_08",
+   "a": "K14",
+   "b": "K15",
+   "detail": true,
+   "action": "EXTREME CLOSE-UP: the wooden float moves in slow flat circles, closing the rough surface of the mortar into a smooth even finish.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_08.wav"
+  },
+  {
+   "id": "s8_08b",
+   "a": "K16",
+   "b": "K17",
+   "text": "Y si hace mucho calor o hay viento, trabaja temprano, o a la tarde. El sol y el viento te secan la superficie antes de que termines.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_08b.wav",
+   "action": "He points up at the sky, then fans himself with the wooden float as if it were hot, and shakes his head."
+  },
+  {
+   "id": "s8_09",
+   "a": "K17",
+   "b": "K18",
+   "text": "Si lo pasas con la mezcla muy fresca, arrastra. Si está muy seca, ya no la mueves. Firme, pero todavía trabajable.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_09.wav",
+   "action": "He presses the float lightly on the screed and shows a smear, then presses on a firmer part and moves it smoothly."
+  },
+  {
+   "id": "s8_10",
+   "a": "K18",
+   "b": "K19",
+   "text": "Esta parte, en un patio chico como este, es la hora que te prometí. Lo que tarda es lo que viene después.",
+   "audio": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/tramos/s8_10.wav",
+   "action": "He stands up, stretches his back, taps his wrist as if there were a watch, then points at the plastic sheet folded by the wall."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpiso/vlog/tfbpiso/S8/vlog_S8.mp4"
+}
