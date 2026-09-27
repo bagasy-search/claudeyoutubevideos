@@ -96,7 +96,7 @@ export default {
   async run({ slug, P, state, log }) {
     const repo = REPO();
     const base = env("FACTORY_RENDER_BASE") || "molino-v1";
-    const chunks = Number(env("FACTORY_FARM_CHUNKS") || 30);
+    const chunks = Number(env("FACTORY_FARM_CHUNKS") || 60);
     const tree = importTree(P.entry, { root: ROOT });
     assertMeasured("archivosCommit", tree.archivos.length, { min: 3, log });
 

@@ -462,6 +462,17 @@ export default {
     // que ninguna entraba en la lista y el farm las servía 404 → EncodingError y chunk muerto.
     // planPremium las junta recorriendo el contrato (kit.json declara cuáles son de tipo `asset`).
     for (const a of r.compAssets || []) assets.add(a);
+    // ⛔ (26-sep-2026, cploerror) los comps con foto de fondo (StatBig bg:image, Checklist/KineticQuote image)
+    //    piden `<img>_blur.jpg` EN RUNTIME: no estaba en la lista → 404 y chunk muerto, con blurRuntime en verde.
+    //    Se genera (si falta) y viaja junto a toda imagen que va en props.
+    for (const a of r.compAssets || []) {
+      if (!/\.(jpe?g|png)$/i.test(a) || /_blur\.jpg$/i.test(a)) continue;
+      const b = a.replace(/\.(jpe?g|png)$/i, "_blur.jpg");
+      const bAbs = path.join(ROOT, "public", b);
+      if (!dry && !fs.existsSync(bAbs) && fs.existsSync(path.join(ROOT, "public", a)))
+        await run("ffmpeg", ["-v", "error", "-y", "-i", path.join(ROOT, "public", a), "-vf", "scale=640:-2,gblur=sigma=18", "-q:v", "4", bAbs], { timeoutMs: 60_000 });
+      assets.add(b);
+    }
     for (const w of ventanas) { assets.add(w.src); if (w.fg) assets.add(w.fg); }
     for (const a of hookAssets) assets.add(a);
     const lista = [...assets];

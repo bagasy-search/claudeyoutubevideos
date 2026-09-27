@@ -60,9 +60,10 @@ if (!process.env.FARM_FIXED_CHUNKS && !only) {
       .filter((r) => r.status !== "completed" && r.headBranch && r.headBranch !== `molino-${slug}`);
     const otros = new Set(runs.map((r) => r.headBranch)).size;
     if (otros > 0) {
-      const reparto = Math.max(12, Math.round(60 / (otros + 1)));
+      const FARM_SLOTS = Number(process.env.FARM_SLOTS || 360);   // 21-sep: el techo real es 360, no 60
+      const reparto = Math.min(Number(chunks), Math.max(12, Math.round(FARM_SLOTS / (otros + 1))));
       if (reparto < Number(chunks)) {
-        console.log(`auto-reparto: ${otros} otro(s) video(s) en curso → bajo de ${chunks} a ${reparto} chunks para no trabar la cola de 60 slots (FARM_FIXED_CHUNKS=1 lo desactiva)`);
+        console.log(`auto-reparto: ${otros} otro(s) video(s) en curso → bajo de ${chunks} a ${reparto} chunks para no trabar la cola de ${FARM_SLOTS} slots (FARM_FIXED_CHUNKS=1 lo desactiva)`);
         chunks = String(reparto);
       }
     }

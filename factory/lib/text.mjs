@@ -126,6 +126,7 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
     // sale a la luz recien al contar `componentesEmitidos` despues de armar los cues, o peor, mirandolo.
     // No es torpeza del director: el formato invita al error. Se caza aca, en la direccion, que es
     // donde cuesta cero arreglarlo.
+    if (x.k && /x$/.test(x.n)) errores.push(`${x.n}: un componente (k) no puede ir en un plano segundo "x" — va en ${x.n.replace(/x$/, "")} (si no, 60_build falla con "el plano no es un momento")`);
     if (x.k) {
       const kind = typeof x.k.kind === "string" ? x.k.kind : null;
       if (!kind) errores.push(`${x.n}: el componente no declara "kind"`);
