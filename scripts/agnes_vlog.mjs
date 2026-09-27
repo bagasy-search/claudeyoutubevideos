@@ -97,9 +97,11 @@ const uri = f => `data:${mime(f)};base64,` + fs.readFileSync(f).toString("base64
 const isAnc = (P, n) => /^K\d+$/.test(n) || (P.anchors || []).some(a => a.id === n);   // cualquier id de ancla del plan (D1a, V2b, K3s…)
 const refPathOf = (P, n) => n === "k0" ? P.k0_from : isAnc(P, n) ? dirsOf(P).ANC + n + ".png" : (P.extra || {})[n] || n;
 const refPath = n => refPathOf(P, n);
-const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a]);
-const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
-const wh = f => execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number);
+// reintento ante caídas de proceso de Windows (0xC0000142 = DLL init failed cuando hay cientos de procesos: 6 videos a la vez)
+const xsync = (cmd, args, o) => { for (let t = 0; ; t++) { try { return execFileSync(cmd, args, o); } catch (e) { if (t >= 4 || e.status === 1) throw e; Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 3000 * (t + 1)); } } };
+const ff = (...a) => xsync("ffmpeg", ["-v", "error", "-y", ...a]);
+const dur = f => Number(xsync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
+const wh = f => xsync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number);
 
 const LIGHT = P.light != null ? " " + P.light : " BRIGHT, correctly exposed photo, big soft DAYLIGHT from a window, white balance NEUTRAL, no amber cast, no grading, no vignette, no film grain, no dark moody look, lifted shadows; brightness from the room lighting, not post-production — do not raise saturation, no glow, no HDR. An ordinary photo, not a film still. Real skin with visible pores, fine lines and natural texture, not smooth, not plastic, not retouched.";
 const IDENT = " IDENTITY: the presenter must have EXACTLY the face of the man/woman in the LAST input image (a close-up of the real face): same face shape, eyes, nose, eyebrows, hair and beard, same age — copy that face, do not let it drift, do not make them younger or more attractive. The last image is only for the face; the scene comes from the first image. Do NOT add objects that are not described.";
@@ -135,7 +137,10 @@ const esperado = (it, batch) => usd({ input_tokens_details: { text_tokens: Math.
 
 // ref achicada (cacheada en anc/_ref/): cabe en la caja sin deformar
 function small(f, [bw, bh], ANCd) {
-  const o = ANCd + "_ref/" + path.basename(f).replace(/\.[^.]+$/, "") + `_${bw}x${bh}.png`;
+  // ⛔ el nombre lleva un hash de la RUTA completa: dos refs con el mismo basename (S1/anc/K0.png y S2/anc/K0.png como
+  //    `extra`) pisaban la misma copia chica y TODAS las anclas de la 2ª salían del set de la 1ª (tfbinodoro, 27-sep).
+  const hsh = [...path.resolve(f)].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7).toString(36);
+  const o = ANCd + "_ref/" + path.basename(f).replace(/\.[^.]+$/, "") + `_${hsh}_${bw}x${bh}.png`;
   if (!fs.existsSync(o) || fs.statSync(o).mtimeMs < fs.statSync(f).mtimeMs) {
     fs.mkdirSync(ANCd + "_ref", { recursive: true });
     const [w, h] = wh(f); if (w <= bw && h <= bh) fs.copyFileSync(f, o);
@@ -194,6 +199,7 @@ function prepararItem(it) { // arma inputs chicos recién cuando sus K previos e
 }
 let gasto = 0, nimg = 0, avisos = 0;
 function guardar(it, b64, usage, batch) {
+  if (!it.prompt) { it.prompt = it.a.prompt; it.inputs = []; it.size = sizeOf(it.Pl); } // retomado de un batch viejo sin preparar
   const raw = it.out.replace(".png", "_raw.png"); fs.writeFileSync(raw, Buffer.from(b64, "base64")); to169(raw, it.out);
   const c = usd(usage || {}, batch), e = esperado(it, batch); gasto += c; nimg++;
   const d = usage?.input_tokens_details || {};
@@ -244,7 +250,7 @@ async function bajar(b, porKey) { // stremeado por línea (el JSONL con base64 r
 async function anclasBatch(items) {
   const porKey = Object.fromEntries(items.map(it => [it.key, it]));
   if (fs.existsSync(PEND)) { const pend = JSON.parse(fs.readFileSync(PEND, "utf8")); log("retomo batch pendiente", pend.join(" "));
-    items.filter(it => !fs.existsSync(it.out)).forEach(prepararItem); await esperarYBajar(pend, porKey); fs.unlinkSync(PEND); }
+    items.filter(it => !fs.existsSync(it.out) && it.deps.every(f => fs.existsSync(f))).forEach(prepararItem); await esperarYBajar(pend, porKey); fs.unlinkSync(PEND); }
   for (let ronda = 1; ; ronda++) {
     const pend = items.filter(it => !fs.existsSync(it.out));
     if (!pend.length) return;
