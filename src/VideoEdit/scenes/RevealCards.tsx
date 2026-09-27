@@ -20,7 +20,8 @@ export const RevealCards: React.FC<{
   eyebrow?: string;
   title?: string;
   numbered?: boolean;
-}> = ({ durationInFrames, items, eyebrow = "", title = "", numbered = true }) => {
+  scale?: number;
+}> = ({ durationInFrames, items, eyebrow = "", title = "", numbered = true, scale = 1 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
@@ -42,7 +43,7 @@ export const RevealCards: React.FC<{
         {title ? <div style={{ color: "#F4E6CF", fontSize: 54, fontWeight: 800, marginTop: 2 }}>{title}</div> : null}
       </div>
 
-      <div style={{ display: "flex", gap: 36, alignItems: "center", marginTop: 50 }}>
+      <div style={{ display: "flex", gap: 36, alignItems: "center", marginTop: 50 * scale, transform: `scale(${scale})` }}>
         {items.map((it, i) => {
           const at = it.at != null ? it.at : i * 0.9;
           const spr = spring({ frame: frame - Math.round(at * fps), fps, config: { damping: 15, mass: 0.7, stiffness: 150 }, durationInFrames: 16 });
