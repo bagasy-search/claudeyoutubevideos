@@ -67,7 +67,12 @@ for c in lam:                                                         # durante 
     a, b = int(c["from"] / 30 * SR), int((c["from"] + c["dur"]) / 30 * SR); env = np.ones(N, np.float32)
     k = int(0.8 * SR); env[a:b] = db(-6); env[a - k:a] = np.linspace(1, db(-6), k); env[b:b + k] = np.linspace(db(-6), 1, k); mus *= env
 mus[-int(3 * SR):] *= np.linspace(1, 0, int(3 * SR))
-mix = voz + fol + fx + mus
+# 5) cama de ambiente del taller en el minuto 1 (compuerta: 0 silencios de >0,3 s a -32 dB): ruido real del lugar, -28 dBFS RMS
+amb = np.zeros(N, np.float32); a0 = load(L + "amb_taller.mp3"); a0 = a0 / rms(a0) * db(-28); a0 = np.clip(a0, -db(-16), db(-16)); A1 = min(N, int(64 * SR)); pos = 0
+while pos < A1:
+    seg = a0[: A1 - pos].copy(); put(amb, fade(seg, 0.5, 0.5), pos / SR); pos += max(1, len(seg) - int(0.5 * SR))
+amb[int(58 * SR):A1] *= np.linspace(1, 0, A1 - int(58 * SR))
+mix = voz + fol + fx + mus + amb
 for nm, b in (("voz", voz), ("foley", fol), ("sfx", fx), ("musica", mus)): print(f"  pico {nm} {20*np.log10(np.max(np.abs(b))+1e-9):.1f} dBFS @ {np.argmax(np.abs(b))/SR:.2f}s")
 pk = np.max(np.abs(mix)); print(f"pico antes del limitador {20*np.log10(pk):.1f} dBFS")
 mix = np.tanh(mix / db(-1.5)) * db(-1.5)                              # limitador suave a -1,5 dBFS
