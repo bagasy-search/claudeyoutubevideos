@@ -1,0 +1,153 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S3/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a completely new place; nothing from the first image's background remains. The place is a real, lived-in home garage-workshop in a working-class Latin American house: the wide metal roll-up door is open on the left to a quiet street in bright daylight, a plain fluorescent tube on the ceiling, concrete floor with old stains and sawdust, a heavy wooden workbench with a vise, clamps and hand tools, a pegboard with hanging tools, shelves with paint tins and glass jars, stacked plastic buckets, a bicycle leaning on the painted brick wall. Light: plenty of daylight comes in through the wide open roll-up door on the left, plus the fluorescent tube overhead; the workbench area is well lit. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. He stands at the heavy wooden workbench in the garage workshop, the glass jar of smooth pale honey-coloured glue on the bench next to a flat brush, two short raw pine boards and a steel bar clamp; he looks at the lens. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points with his index finger at a thin bead of glue squeezed out along the clamped joint, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a glued pair of pine boards up with both hands, the joint line toward the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the broken piece at chest height, his thumbnail on the glue line, looking at the lens with a satisfied half smile. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he half turns, pointing with his thumb over his shoulder at a white plastic glue bottle on the shelf, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up three fingers, calm face, talking to the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he spreads both hands open over the bench, eyebrows raised, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is halfway through this action: he picks up the jar again and turns it in the light from the open door. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the jar up toward the daylight of the open door, looking at the glue inside. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b026",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b026.wav",
+   "text": "Capa fina en las dos caras, las junto, y a la prensa, hasta que salga un cordoncito de cola.",
+   "action": "he brushes glue on both boards, presses them together and tightens the bar clamp around them."
+  },
+  {
+   "id": "b027",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b027.wav",
+   "text": "Toda la noche en la prensa, y un día antes de cargarle peso. Y aquí tengo unas que pegué ayer, con la misma cola.",
+   "action": "he pats the clamp, then reaches under the bench and lifts two glued pine boards, showing the joint to the lens."
+  },
+  {
+   "id": "b028",
+   "a": "K2",
+   "b": "K2",
+   "text": "Colgamos la pesa… y ya viste lo que pasa: se partió la madera, al lado. La unión, entera.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b028.wav"
+  },
+  {
+   "id": "b029",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b029.wav",
+   "text": "Eso es lo que prometí: una cola casera que aguanta más que la madera que pega.",
+   "action": "he holds up the broken piece and runs his thumbnail along the intact glue line, talking to the lens."
+  },
+  {
+   "id": "b030",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b030.wav",
+   "text": "Ahora, ojo, que una buena cola blanca de ferretería también hace eso. No te voy a mentir.",
+   "action": "he sets the broken piece down and points at a white plastic bottle of wood glue on the shelf behind him."
+  },
+  {
+   "id": "b031",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b031.wav",
+   "text": "La diferencia es otra: esta te cuesta centavos, la haces tú con lo que hay en la cocina, y no tiene solventes.",
+   "action": "he counts three points on his fingers, talking to the lens, relaxed."
+  },
+  {
+   "id": "b032",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b032.wav",
+   "text": "Un litro de leche descremada, un poco de vinagre y una cucharadita de bicarbonato. Haz la cuenta con los precios de tu país.",
+   "action": "he taps the jar of glue, then spreads his hands as if to say \"that's all\"."
+  },
+  {
+   "id": "b033a",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b033a.wav",
+   "text": "Y con eso pegas una silla, un cajón, un marco,",
+   "action": "he picks up the jar again and turns it in the light from the open door."
+  },
+  {
+   "id": "b033b",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b033b.wav",
+   "text": "varias cosas en el mismo día. Pero hay detalles que hacen que funcione o que falle.",
+   "action": "he picks up the jar again and turns it in the light from the open door."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S3/vlog_S3.mp4"
+}

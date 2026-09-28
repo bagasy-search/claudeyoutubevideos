@@ -1,0 +1,243 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S8/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/out/vlog/base_taller.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The same place as the first image — the very same room, same walls, same door, same furniture and shelves, same light — seen from a slightly different spot a little later. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. He stands at the heavy wooden workbench in the garage workshop; on the bench: a glass jar with white curd, a small box of baking soda, a small paper bag of hydrated lime with a teaspoon, a glass of water, a wooden stirring stick, a pair of rubber gloves and safety glasses; he looks at the lens. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his hand hovering between the baking soda box and the bag of lime, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a level teaspoon of white powder above the jar, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he leans over the jar watching, a small smile, eyebrows up. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stirs the jar hard with the wooden stick, the jar held firmly in his other hand. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the stick high above the jar, a thick glossy ribbon of glue falling from it, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the tilted jar toward the lens, the smooth paste inside, looking at it. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he pulls two sticky fingers apart slowly, a thread of glue between them, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the stick in the jar, looking at the lens, calm. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the paper bag of hydrated lime at chest height, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he wears the safety glasses and rubber gloves, holding up his gloved hands, serious face at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his gloved finger touching the side of his safety glasses, looking at the lens, very serious. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a half teaspoon of white lime powder over the second jar, concentrating. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up the stick with smooth glue from the second jar, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K13"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: both jars side by side on the bench, his gloved hand on one lid, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b082",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b082.wav",
+   "text": "Para que la cuajada se vuelva cola, necesita algo alcalino. Tienes dos opciones, y las dos funcionan.",
+   "action": "he points at the baking soda box and then at the bag of lime."
+  },
+  {
+   "id": "b083",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b083.wav",
+   "text": "La primera, la más fácil: bicarbonato de sodio. Una cucharadita al ras por cada puñado de cuajada.",
+   "action": "he picks up the baking soda box and shows a level teaspoon of it."
+  },
+  {
+   "id": "b084",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b084.wav",
+   "text": "Si burbujea un poco, no te asustes: es el poquito de vinagre que quedaba. Es normal.",
+   "action": "he tips the teaspoon into the jar and watches the curd with interest."
+  },
+  {
+   "id": "b085",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b085.wav",
+   "text": "Le agrego dos o tres cucharadas de agua, de a poquito, y revuelvo fuerte con un palito.",
+   "action": "he adds splashes of water from the glass and stirs hard with the wooden stick."
+  },
+  {
+   "id": "b086",
+   "a": "K4",
+   "b": "K4",
+   "text": "Al principio parece que no va a pasar nada. Todo grumos. Tú sigue.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b086.wav"
+  },
+  {
+   "id": "b087",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b087.wav",
+   "text": "A los cinco, diez minutos, los grumos se deshacen y se vuelve lisa, brillante, como miel espesa.",
+   "action": "he lifts the stick out and lets the glue fall back into the jar in a thick ribbon."
+  },
+  {
+   "id": "b088",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b088.wav",
+   "text": "¿Qué pasó ahí? La caseína sola no se disuelve en agua. Con algo alcalino, sí. Se vuelve una pasta pegajosa.",
+   "action": "he tilts the jar toward the lens to show the smooth paste."
+  },
+  {
+   "id": "b089",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b089.wav",
+   "text": "Y cuando pierde el agua, se endurece y queda metida en los poros de la madera. Por eso agarra tanto.",
+   "action": "he rubs a drop of glue between two fingers and lets it tack."
+  },
+  {
+   "id": "b090",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b090.wav",
+   "text": "Si queda muy dura, una gota más de agua. Si queda muy líquida, la próxima vez exprime más la cuajada.",
+   "action": "he adds a drop of water from his fingertip and stirs a little more."
+  },
+  {
+   "id": "b091",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b091.wav",
+   "text": "La segunda opción es la de antes: cal. Cal hidratada, la de construcción, la que se usa para blanquear paredes.",
+   "action": "he puts the stick down and lifts the paper bag of hydrated lime, showing it."
+  },
+  {
+   "id": "b092",
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b092.wav",
+   "text": "Con cal la cola aguanta mejor la humedad que con bicarbonato. Pero ojo, que la cal es cáustica.",
+   "action": "he puts on the safety glasses and pulls on the rubber gloves."
+  },
+  {
+   "id": "b093",
+   "a": "K10",
+   "b": "K11",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b093.wav",
+   "text": "Guantes y gafas, siempre. Si te salpica en el ojo, es un problema serio. Y que no la toquen los niños.",
+   "action": "he taps the side of his safety glasses with a gloved finger."
+  },
+  {
+   "id": "b094",
+   "a": "K11",
+   "b": "K12",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b094.wav",
+   "text": "Con cal va menos: media cucharadita por puñado de cuajada, más el chorrito de agua.",
+   "action": "he measures half a teaspoon of lime powder carefully into a second jar with curd."
+  },
+  {
+   "id": "b095",
+   "a": "K12",
+   "b": "K13",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b095.wav",
+   "text": "Con cal se pone lista más rápido, pero también se endurece antes en el frasco. Tienes unas pocas horas.",
+   "action": "he stirs the second jar and holds up the stick to show the glue."
+  },
+  {
+   "id": "b096",
+   "a": "K13",
+   "b": "K14",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b096.wav",
+   "text": "Por eso prepara sólo lo que vas a usar ese día. Déjala reposar un cuarto de hora, y a pegar.",
+   "action": "he sets both jars side by side on the bench and taps the lid of one."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S8/vlog_S8.mp4"
+}

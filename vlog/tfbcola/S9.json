@@ -1,0 +1,123 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S9/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/out/vlog/base_taller.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The same place as the first image — the very same room, same walls, same door, same furniture and shelves, same light — seen from a slightly different spot a little later. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. He stands at the heavy wooden workbench in the garage workshop, an old wooden chair with one loose leg lying on its side on the bench, a jar of pale honey-coloured glue, a flat brush, a sheet of sandpaper, two steel bar clamps and a damp rag; he looks at the lens. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the loose chair leg up with the dirty end toward the lens, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he rubs the sandpaper on the end of the leg, sawdust falling, looking down at it. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the brush inside the hole of the chair seat, carefully, looking at it. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: both hands on the bar clamp across the chair, tightening it, looking at the joint. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points at a small bead of glue at the joint, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds both fists together in front of his chest, shaking his head slightly at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b097",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b097.wav",
+   "text": "Ahora, lo que sí arruina cualquier cola, casera o comprada: pegar sobre cola vieja y suciedad.",
+   "action": "he picks up the loose chair leg from the chair and shows the dirty old glue on its end."
+  },
+  {
+   "id": "b098",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b098.wav",
+   "text": "Esto se lija o se raspa hasta ver madera limpia. La cola pega madera, no pega polvo ni cola vieja.",
+   "action": "he scrapes and sands the end of the chair leg with the sandpaper."
+  },
+  {
+   "id": "b099",
+   "a": "K2",
+   "b": "K2",
+   "text": "Madera limpia, sin brillo. Así.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b099.wav"
+  },
+  {
+   "id": "b100",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b100.wav",
+   "text": "Pincel en las dos caras: en la espiga y en el agujero. Capa fina, pareja.",
+   "action": "he brushes glue on the end of the leg and inside the hole of the chair."
+  },
+  {
+   "id": "b101",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b101.wav",
+   "text": "Encajo, giro un poquito para que se reparta, y enseguida a la prensa.",
+   "action": "he pushes the leg into the hole, twists it a little, and positions a bar clamp across the chair."
+  },
+  {
+   "id": "b102",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b102.wav",
+   "text": "No hace falta apretar con toda tu fuerza. Firme. Lo justo para que salga el cordoncito.",
+   "action": "he tightens a last half turn and stops, pointing at the squeeze-out."
+  },
+  {
+   "id": "b103",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b103.wav",
+   "text": "Si aprietas de más, sacas toda la cola de la unión y la dejas seca por dentro.",
+   "action": "he mimes crushing with both fists, shaking his head."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S9/vlog_S9.mp4"
+}

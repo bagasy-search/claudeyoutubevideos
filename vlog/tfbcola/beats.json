@@ -1,0 +1,1469 @@
+{
+ "scenes": [
+  {
+   "id": "S1",
+   "set": "taller",
+   "nb": true,
+   "k0": "The presenter stands at the heavy wooden workbench beside the vise, and HE (not the neighbour) holds a small glass jar of thick honey-coloured glue in his left hand, the neighbour's hands are busy with the wood; on the bench in front of him lies a pine board broken in two, the break jagged and splintered a few centimetres to the side of a glued overlap joint; an old iron weight with a ring sits on the concrete floor below, a rope still tied to it. The neighbour stands on the other side of the bench holding the longer broken piece of board in both hands, looking at the joint. Both half-turned toward each other."
+  },
+  {
+   "id": "S2",
+   "set": "cocina",
+   "nb": false,
+   "k0": "He stands at the gas stove in the kitchen, next to a medium steel pot on a burner; on the counter beside the stove: a carton of skimmed milk, a bottle of white vinegar, a tablespoon, a plastic colander lined with a white cotton cloth, a small box of baking soda and a glass jar. He looks at the lens, one hand on the counter."
+  },
+  {
+   "id": "S3",
+   "set": "taller",
+   "nb": false,
+   "k0": "He stands at the heavy wooden workbench in the garage workshop, the glass jar of smooth pale honey-coloured glue on the bench next to a flat brush, two short raw pine boards and a steel bar clamp; he looks at the lens."
+  },
+  {
+   "id": "S4",
+   "set": "taller",
+   "nb": true,
+   "k0": "He leans with one hip against the heavy wooden workbench in the garage workshop, arms loosely crossed; on the bench a glass jar of pale honey-coloured glue and a small bowl of white flour paste. The neighbour stands in the open roll-up door on the left, one hand on the door frame, looking in."
+  },
+  {
+   "id": "S5",
+   "set": "cocina",
+   "nb": false,
+   "k0": "He stands at the kitchen counter by the window, a steel pot on the gas stove behind him, a carton of skimmed milk, a bottle of white vinegar, a tablespoon, a small bowl and a kitchen thermometer on the counter; he looks at the lens."
+  },
+  {
+   "id": "S6",
+   "set": "cocina",
+   "nb": false,
+   "k0": "He stands at the kitchen sink by the window, a plastic colander lined with a thin white cotton cloth sitting in the sink, the steel pot with curds and whey on the counter next to him; he looks at the lens."
+  },
+  {
+   "id": "S7",
+   "set": "taller",
+   "nb": false,
+   "k0": "He stands at the heavy wooden workbench in the garage workshop, a glass jar with white curd on the bench, a sheet of cream-coloured paper lying face down on the bench beside it; he looks at the lens."
+  },
+  {
+   "id": "S8",
+   "set": "taller",
+   "nb": false,
+   "k0": "He stands at the heavy wooden workbench in the garage workshop; on the bench: a glass jar with white curd, a small box of baking soda, a small paper bag of hydrated lime with a teaspoon, a glass of water, a wooden stirring stick, a pair of rubber gloves and safety glasses; he looks at the lens."
+  },
+  {
+   "id": "S9",
+   "set": "taller",
+   "nb": false,
+   "k0": "He stands at the heavy wooden workbench in the garage workshop, an old wooden chair with one loose leg lying on its side on the bench, a jar of pale honey-coloured glue, a flat brush, a sheet of sandpaper, two steel bar clamps and a damp rag; he looks at the lens."
+  },
+  {
+   "id": "S9m",
+   "set": "taller",
+   "nb": false,
+   "k0": "He stands at the heavy wooden workbench in the garage workshop, a second old wooden chair lying on its side on the bench with one leg pulled out of its hole, the first chair already standing clamped at the far end of the bench, a jar of pale honey-coloured glue, a flat brush, a strip of cotton cloth, a small wooden drawer frame, a tape measure, two steel bar clamps and a damp rag; he looks at the lens."
+  },
+  {
+   "id": "S9b",
+   "set": "taller",
+   "nb": false,
+   "k0": "He stands at the heavy wooden workbench in the garage workshop, a jar of pale honey-coloured glue, a flat brush in a glass of water, a few small pine offcuts, a small steel clamp and a damp rag on the bench; the repaired chair clamped at the far end of the bench; he looks at the lens."
+  },
+  {
+   "id": "S10",
+   "set": "patio",
+   "nb": false,
+   "k0": "He stands on the back patio of the house, on red clay tiles in daylight, next to an old wooden garden bench with one armrest come loose; behind him a whitewashed wall with potted plants and a clothesline; he looks at the lens."
+  },
+  {
+   "id": "S10b",
+   "set": "patio",
+   "nb": false,
+   "k0": "He stands on the back patio of the house, on red clay tiles in daylight, beside an old wooden garden bench with one loose armrest; behind him a whitewashed wall with potted plants, a plastic flower pot on the floor and a clothesline; he looks at the lens, one hand resting on the bench."
+  },
+  {
+   "id": "S11",
+   "set": "taller",
+   "nb": true,
+   "k0": "He stands at the heavy wooden workbench in the garage workshop the next morning, the repaired wooden chair standing on the floor beside the bench, a glued pine board clamped flat to the edge of the bench sticking out into the air, a thick rope and an old black iron weight on the concrete floor. The neighbour stands next to the chair with his arms crossed."
+  },
+  {
+   "id": "S12",
+   "set": "taller",
+   "nb": true,
+   "k0": "The presenter stands at the heavy wooden workbench in the garage workshop, and HE holds a glued pine board marked with a strip of blue tape in his hands; on the bench a carton of whole milk and a carton of skimmed milk side by side. The neighbour stands at the side of the bench with empty hands, looking at the board the presenter holds."
+  },
+  {
+   "id": "S13",
+   "set": "taller",
+   "nb": true,
+   "k0": "He stands at the heavy wooden workbench in the garage workshop, a small piece of wood with a crack in it and a jar of pale honey-coloured glue on the bench; the broken pine boards from the test lie at the end of the bench. The neighbour stands at the side of the bench, relaxed, hands in his pockets."
+  }
+ ],
+ "beats": [
+  {
+   "id": "b000",
+   "scene": "S1",
+   "type": "X",
+   "d1": "Side view at the height of a garage workbench, nobody in the frame: a pine board glued to a second board with an overlap joint is clamped flat to the edge of the workbench with a steel clamp and sticks far out into the air; a thick rope tied at its far end holds an old black iron weight hanging freely a hand's width above the concrete floor; the board bends slightly under the load; the open roll-up door and the street in daylight in the background.",
+   "d2": "The same side view: the pine board has snapped with a jagged splintered break a few centimetres beside the glued overlap joint, the glue line between the two boards still intact on the clamped part; the far piece of board and the iron weight lie on the concrete floor, splinters and sawdust flying in the air.",
+   "secs": 4
+  },
+  {
+   "id": "b001",
+   "scene": "S1",
+   "type": "X",
+   "d1": "Extreme close view of a broken pine board lying on a scratched workbench, nobody in the frame: two layers of pine glued together with a thin pale line of glue between them, intact, and a few centimetres away the wood is torn apart in long jagged splinters; fine sawdust floating in the daylight.",
+   "d2": "The same extreme close view of the broken board, nobody in the frame, the camera a little further along the intact glue line, the dust settling.",
+   "secs": 4
+  },
+  {
+   "id": "b002",
+   "scene": "S1",
+   "type": "V",
+   "line": "¡Se rompió la madera… pero la cola no!",
+   "A": "The neighbour lifts the broken piece close to his face, turns it and stares at the intact glue line, then looks up amazed; the presenter watches him, amused, silent.",
+   "K": "The neighbour holds the broken piece up at eye level, eyebrows raised, pointing at the glue line with his thumb; the presenter beside him smiles, silent.",
+   "secs": 4
+  },
+  {
+   "id": "b003",
+   "scene": "S1",
+   "type": "A",
+   "text": "Esta cola la hice yo. Con cosas de la cocina.",
+   "A": "he raises the glass jar of honey-coloured glue toward the person filming and tilts it so the thick glue slowly moves",
+   "K": "he holds the jar up near his face, tilted, looking into the lens with a small proud smile"
+  },
+  {
+   "id": "b004",
+   "scene": "S1",
+   "type": "A",
+   "text": "Y pega tan fuerte que se rompe primero la madera. Por un dólar, más o menos.",
+   "A": "he points with his free index finger at the broken board on the bench, then looks back to the lens",
+   "K": "his index finger touches the splintered break of the board on the bench, he looks at the lens with raised eyebrows"
+  },
+  {
+   "id": "b005",
+   "scene": "S1",
+   "type": "D",
+   "text": "Leche descremada, tibia.",
+   "d1": "A pot on a gas burner with a thin layer of skimmed milk, a hand holding a milk carton just starting to pour, the stream entering the pot.",
+   "d2": "The same pot, now about half full of white milk, a small wisp of steam, the carton lifted away at the edge of the frame."
+  },
+  {
+   "id": "b006",
+   "scene": "S1",
+   "type": "D",
+   "text": "Un chorrito de vinagre… y se corta sola.",
+   "d1": "Close view into a pot of warm white milk, a spoon of clear vinegar tilted above the surface, the first drops falling.",
+   "d2": "The same pot, the milk has separated into soft white curds floating in a yellowish-clear whey, the spoon resting still."
+  },
+  {
+   "id": "b007",
+   "scene": "S1",
+   "type": "D",
+   "text": "La cuajada la cuelas en un trapo…",
+   "d1": "A colander lined with a thin white cotton cloth sitting in a sink, the rim of a pot tilting into view at the top of the frame.",
+   "d2": "The same colander with the cloth full of white curds, yellowish whey draining through into the sink."
+  },
+  {
+   "id": "b008",
+   "scene": "S1",
+   "type": "D",
+   "text": "la lavas con agua limpia…",
+   "d1": "Close view looking down into a steel kitchen sink: a man's two hands with olive-green work shirt sleeves rolled up hold open a cotton cloth full of white curds under a running tap, the water starting to fall on them; only the sink, the cloth and his hands and forearms fill the frame.",
+   "d2": "The same curds, rinsed and whiter, gathered in the cloth, water dripping, the tap nearly closed."
+  },
+  {
+   "id": "b009",
+   "scene": "S1",
+   "type": "D",
+   "text": "y le agregas una cucharadita de esto.",
+   "d1": "A glass jar with a lump of white curd at the bottom on a wooden bench, a teaspoon of fine white powder held just above the mouth of the jar.",
+   "d2": "The same jar, the white powder resting on top of the curd, the empty teaspoon lifted away."
+  },
+  {
+   "id": "b010",
+   "scene": "S1",
+   "type": "D",
+   "text": "Revuelves… y en unos minutos se vuelve una miel espesa.",
+   "d1": "A wooden stick stirring a lumpy white paste inside a glass jar on a workbench.",
+   "d2": "The same jar, the paste now smooth, glossy and thick like honey, pale cream to light amber, dripping slowly from the lifted stick."
+  },
+  {
+   "id": "b011",
+   "scene": "S1",
+   "type": "D",
+   "text": "Pincel en las dos caras…",
+   "d1": "A flat brush beginning to spread a thin coat of cream-coloured glue on the edge of a raw pine board on a workbench.",
+   "d2": "The same board edge fully covered with an even glossy coat of glue, the brush lifted at the side."
+  },
+  {
+   "id": "b012",
+   "scene": "S1",
+   "type": "D",
+   "text": "y a la prensa, toda la noche.",
+   "d1": "Two glued pine boards lying together on a workbench, a steel bar clamp open around them.",
+   "d2": "The same boards squeezed tight in the bar clamp, a thin bead of glue squeezed out along the joint."
+  },
+  {
+   "id": "b013",
+   "scene": "S1",
+   "type": "V",
+   "line": "¿Con leche? Eso no pega ni una estampita.",
+   "A": "The neighbour, arms crossed, shakes his head at the presenter with a sceptical half smile; the presenter listens, silent.",
+   "K": "The neighbour with arms crossed and one eyebrow raised, head tilted; the presenter looks at him grinning, silent.",
+   "secs": 4
+  },
+  {
+   "id": "b014",
+   "scene": "S1",
+   "type": "A",
+   "text": "Eso decía él. Hasta que colgamos la pesa.",
+   "A": "he glances at the neighbour, chuckles, then turns back to the lens and nods toward the iron weight on the floor",
+   "K": "he looks at the lens with a grin, his thumb pointing down at the iron weight on the floor"
+  },
+  {
+   "id": "b015",
+   "scene": "S1",
+   "type": "A",
+   "text": "Hoy te doy la receta completa, con las medidas exactas, y la prueba de verdad.",
+   "A": "he sets the jar down on the bench and counts on his fingers while talking to the lens",
+   "K": "the jar on the bench, he holds up three fingers of his right hand, talking to the lens"
+  },
+  {
+   "id": "b016",
+   "scene": "S1",
+   "type": "A",
+   "text": "Y también cuándo no usarla, porque para algunas cosas conviene la de ferretería.",
+   "A": "he lowers his hand and shrugs, honest face, talking to the lens",
+   "K": "he stands with both palms open at chest height, a frank half shrug, looking at the lens"
+  },
+  {
+   "id": "b017",
+   "scene": "S1",
+   "type": "A",
+   "text": "Pero ojo: hay un error que la hace fallar a las veinticuatro horas…",
+   "A": "he leans a little toward the lens and raises his index finger in warning",
+   "K": "he leans toward the lens, index finger raised, serious eyes"
+  },
+  {
+   "id": "b018",
+   "scene": "S1",
+   "type": "A",
+   "text": "y casi todos lo cometen. Te lo muestro al final, con la prueba. Ven, vamos a la cocina.",
+   "A": "he taps the broken board once, then turns toward the door at the back that leads into the house, glancing back at the lens",
+   "K": "he is turned three-quarters toward the inner door of the garage, looking back over his shoulder at the lens with a small smile"
+  },
+  {
+   "id": "b019",
+   "scene": "S2",
+   "type": "A",
+   "text": "Te lo muestro entero y rápido. Un litro de leche descremada, tibia. Que no hierva.",
+   "A": "he pours the skimmed milk from the carton into the pot on the lit burner, talking to the lens",
+   "K": "the carton back on the counter, he holds his index fingertip just above the milk in the pot, looking at the lens"
+  },
+  {
+   "id": "b020",
+   "scene": "S2",
+   "type": "A",
+   "text": "Apago el fuego, cuatro cucharadas de vinagre blanco, y revuelvo despacito.",
+   "A": "he turns off the burner, pours spoonfuls of white vinegar into the milk and stirs gently",
+   "K": "he stirs the pot slowly with the tablespoon, looking down into the pot"
+  },
+  {
+   "id": "b021",
+   "scene": "S2",
+   "type": "D",
+   "text": "Mira cómo se corta. Esos grumos blancos son la cuajada. Eso es lo que pega.",
+   "d1": "Close view into the pot: warm milk just starting to form small white flecks around a slowly moving spoon.",
+   "d2": "The same pot, big soft white curds clumped together floating in yellowish-clear whey."
+  },
+  {
+   "id": "b022",
+   "scene": "S2",
+   "type": "A",
+   "text": "Cuelo en un trapo de algodón, lavo la cuajada con agua fría dos o tres veces, y exprimo.",
+   "A": "he holds the cloth bundle of white curds under the running cold tap, then twists it hard over the sink",
+   "K": "he holds the twisted cloth bundle over the sink, water dripping, looking at the lens"
+  },
+  {
+   "id": "b023",
+   "scene": "S2",
+   "type": "A",
+   "text": "En un frasco: la cuajada, una cucharadita de bicarbonato y un chorrito de agua.",
+   "A": "he drops the curd into the glass jar, adds a teaspoon of baking soda and a splash of water from a glass",
+   "K": "he holds the glass jar with curd and powder in one hand and the empty teaspoon in the other, looking at the lens"
+  },
+  {
+   "id": "b024",
+   "scene": "S2",
+   "type": "D",
+   "text": "Revuelvo fuerte… y en unos minutos se vuelve lisa, brillante, como miel.",
+   "d1": "A spoon handle stirring lumpy wet white curd with a few bubbles inside a glass jar.",
+   "d2": "The same jar, the contents now a smooth glossy thick paste like honey, pale cream colour, a slow drip falling from the lifted spoon handle."
+  },
+  {
+   "id": "b025",
+   "scene": "S2",
+   "type": "A",
+   "text": "Esa es tu cola. Se usa en el día. Vamos al taller.",
+   "A": "he holds up the jar of smooth glue to the lens, then tucks it against his apron and heads for the kitchen door",
+   "K": "he is walking toward the kitchen door with the jar held against his apron, glancing back at the lens"
+  },
+  {
+   "id": "b026",
+   "scene": "S3",
+   "type": "A",
+   "text": "Capa fina en las dos caras, las junto, y a la prensa, hasta que salga un cordoncito de cola.",
+   "A": "he brushes glue on both boards, presses them together and tightens the bar clamp around them",
+   "K": "he points with his index finger at a thin bead of glue squeezed out along the clamped joint, looking at the lens"
+  },
+  {
+   "id": "b027",
+   "scene": "S3",
+   "type": "A",
+   "text": "Toda la noche en la prensa, y un día antes de cargarle peso. Y aquí tengo unas que pegué ayer, con la misma cola.",
+   "A": "he pats the clamp, then reaches under the bench and lifts two glued pine boards, showing the joint to the lens",
+   "K": "he holds a glued pair of pine boards up with both hands, the joint line toward the lens"
+  },
+  {
+   "id": "b028",
+   "scene": "S3",
+   "type": "D",
+   "text": "Colgamos la pesa… y ya viste lo que pasa: se partió la madera, al lado. La unión, entera.",
+   "d1": "A glued pine board clamped flat to the edge of the workbench sticking out into the air, an old black iron weight hanging from a rope at its far end.",
+   "d2": "Close view of the same board broken in two, the jagged splintered break a few centimetres beside the thin intact glue line of the overlap joint."
+  },
+  {
+   "id": "b029",
+   "scene": "S3",
+   "type": "A",
+   "text": "Eso es lo que prometí: una cola casera que aguanta más que la madera que pega.",
+   "A": "he holds up the broken piece and runs his thumbnail along the intact glue line, talking to the lens",
+   "K": "he holds the broken piece at chest height, his thumbnail on the glue line, looking at the lens with a satisfied half smile"
+  },
+  {
+   "id": "b030",
+   "scene": "S3",
+   "type": "A",
+   "text": "Ahora, ojo, que una buena cola blanca de ferretería también hace eso. No te voy a mentir.",
+   "A": "he sets the broken piece down and points at a white plastic bottle of wood glue on the shelf behind him",
+   "K": "he half turns, pointing with his thumb over his shoulder at a white plastic glue bottle on the shelf, looking at the lens"
+  },
+  {
+   "id": "b031",
+   "scene": "S3",
+   "type": "A",
+   "text": "La diferencia es otra: esta te cuesta centavos, la haces tú con lo que hay en la cocina, y no tiene solventes.",
+   "A": "he counts three points on his fingers, talking to the lens, relaxed",
+   "K": "he holds up three fingers, calm face, talking to the lens"
+  },
+  {
+   "id": "b032",
+   "scene": "S3",
+   "type": "A",
+   "text": "Un litro de leche descremada, un poco de vinagre y una cucharadita de bicarbonato. Haz la cuenta con los precios de tu país.",
+   "A": "he taps the jar of glue, then spreads his hands as if to say \"that's all\"",
+   "K": "he spreads both hands open over the bench, eyebrows raised, looking at the lens"
+  },
+  {
+   "id": "b033",
+   "scene": "S3",
+   "type": "A",
+   "text": "Y con eso pegas una silla, un cajón, un marco, varias cosas en el mismo día. Pero hay detalles que hacen que funcione o que falle.",
+   "A": "he picks up the jar again and turns it in the light from the open door",
+   "K": "he holds the jar up toward the daylight of the open door, looking at the glue inside"
+  },
+  {
+   "id": "b034",
+   "scene": "S4",
+   "type": "A",
+   "text": "Leí los comentarios de otros videos de cola casera, y la pregunta que más se repite es esta.",
+   "A": "he uncrosses his arms and holds up a phone in his right hand, glancing at the screen then at the lens",
+   "K": "he holds the phone at chest height with the screen toward himself, looking at the lens"
+  },
+  {
+   "id": "b035",
+   "scene": "S4",
+   "type": "A",
+   "text": "\"Si es cola de carpintero… ¿por qué nadie la prueba en madera?\" Y tienen toda la razón.",
+   "A": "he lowers the phone and nods, serious",
+   "K": "the phone lowered by his side, he nods at the lens with a serious face"
+  },
+  {
+   "id": "b036",
+   "scene": "S4",
+   "type": "A",
+   "text": "Porque casi todas esas recetas son engrudo. Harina con agua, cocida. Esto de acá.",
+   "A": "he picks up the small bowl of white flour paste and tilts it toward the lens",
+   "K": "he holds the bowl of flour paste tilted toward the lens, the paste visible, looking at the lens"
+  },
+  {
+   "id": "b037",
+   "scene": "S4",
+   "type": "A",
+   "text": "El engrudo sirve para papel, para cartón, para una piñata. En madera, no aguanta.",
+   "A": "he pokes the flour paste with a finger and rubs it between two fingers, shaking his head",
+   "K": "he rubs the sticky paste between thumb and finger, shaking his head slightly, looking at the lens"
+  },
+  {
+   "id": "b038",
+   "scene": "S4",
+   "type": "V",
+   "line": "Mi abuelo pegaba todo con engrudo, y se le despegaba todo.",
+   "A": "The neighbour steps in from the door and talks to the presenter, waving a hand dismissively; the presenter listens, silent, smiling.",
+   "K": "The neighbour stands next to the bench with one hand raised mid-gesture, the presenter smiles at him, silent.",
+   "secs": 4
+  },
+  {
+   "id": "b039",
+   "scene": "S4",
+   "type": "A",
+   "text": "¡Claro! Porque la harina no es un pegamento de carpintero. Lo que usaban los carpinteros era otra cosa.",
+   "A": "he laughs, points at the neighbour, then puts the bowl down and picks up the jar of honey-coloured glue",
+   "K": "he holds the jar of glue up at shoulder height, looking at the neighbour with a smile"
+  },
+  {
+   "id": "b040",
+   "scene": "S4",
+   "type": "A",
+   "text": "Esta es cola de caseína. La caseína es la proteína de la leche. Durante muchísimo tiempo se pegaron muebles con esto.",
+   "A": "he turns to the lens and tilts the jar so the thick glue flows slowly",
+   "K": "he holds the tilted jar at eye level, the thick glue flowing slowly inside, looking at the lens"
+  },
+  {
+   "id": "b041",
+   "scene": "S4",
+   "type": "A",
+   "text": "Antes de que existieran las colas sintéticas, esta era una de las colas de los carpinteros.",
+   "A": "he sets the jar on the bench and rests his palm on an old wooden chair standing beside the bench",
+   "K": "his palm rests on the backrest of the old wooden chair, looking at the lens"
+  },
+  {
+   "id": "b042",
+   "scene": "S4",
+   "type": "A",
+   "text": "Y la segunda pregunta que más se repite: \"¿cuánto dura?\", \"¿no se pone fea en el frasco?\".",
+   "A": "he looks back at the phone for a second, then at the lens",
+   "K": "he holds the phone again at chest height, eyebrows raised, looking at the lens"
+  },
+  {
+   "id": "b043",
+   "scene": "S4",
+   "type": "A",
+   "text": "La verdad: en el frasco dura poco. Se hace y se usa en el día. No es para guardar.",
+   "A": "he pockets the phone and taps the lid of the jar twice",
+   "K": "his hand on the lid of the jar, frank face, looking at the lens"
+  },
+  {
+   "id": "b044",
+   "scene": "S4",
+   "type": "A",
+   "text": "Hay quien le pone conservantes para que dure en el refrigerador. Yo no lo recomiendo: la cola vieja pega peor.",
+   "A": "he shakes his head, holding the jar up at eye level",
+   "K": "he holds the jar at eye level, shaking his head slightly, looking at the lens"
+  },
+  {
+   "id": "b045",
+   "scene": "S4",
+   "type": "A",
+   "text": "Lo que dura años es la unión, ya seca. La cola en el frasco, no. Eso hay que tenerlo claro.",
+   "A": "he picks up a glued pine joint from the bench and knocks on it with his knuckles",
+   "K": "he holds the glued joint and knocks it with his knuckles, looking at the lens"
+  },
+  {
+   "id": "b046",
+   "scene": "S4",
+   "type": "V",
+   "line": "¿Y con leche del refrigerador sirve, o hay que comprar algo especial?",
+   "A": "The neighbour, now curious, leans on the bench and asks, pointing at the jar; the presenter listens, silent.",
+   "K": "The neighbour leans on the bench with his finger pointing at the jar, curious; the presenter looks at him, silent.",
+   "secs": 4
+  },
+  {
+   "id": "b047",
+   "scene": "S4",
+   "type": "A",
+   "text": "Sirve la del súper, pero tiene que ser descremada. Al final te muestro por qué, con una prueba. Vamos.",
+   "A": "he answers the neighbour with a nod, then turns to the lens and gestures toward the inner door of the house",
+   "K": "he is turned toward the inner door, arm extended pointing the way, looking back at the lens"
+  },
+  {
+   "id": "b048",
+   "scene": "S5",
+   "type": "A",
+   "text": "Vamos por partes. La leche: descremada. Puede ser líquida, o en polvo descremada preparada con agua.",
+   "A": "he shows the skimmed milk carton, then taps a bag of powdered milk on the counter",
+   "K": "he holds the milk carton in one hand, the other hand resting on a bag of powdered skimmed milk, looking at the lens"
+  },
+  {
+   "id": "b049",
+   "scene": "S5",
+   "type": "A",
+   "text": "Con un litro te sale cola para varias uniones. Para una silla floja, te sobra.",
+   "A": "he pours milk into the pot, the carton in his hand, talking to the lens",
+   "K": "he is pouring a steady stream of milk into the pot, looking at the lens"
+  },
+  {
+   "id": "b050",
+   "scene": "S5",
+   "type": "A",
+   "text": "La caliento a fuego bajo. No tiene que hervir. Tibia, entre cuarenta y cincuenta grados.",
+   "A": "he lights the burner low and dips a kitchen thermometer into the milk",
+   "K": "he holds the kitchen thermometer in the milk, reading it, one eyebrow up"
+  },
+  {
+   "id": "b051",
+   "scene": "S5",
+   "type": "A",
+   "text": "Si no tienes termómetro: tiene que estar más caliente que tu mano, pero que aguante el dedo adentro.",
+   "A": "he takes out the thermometer and dips his fingertip into the milk for a second",
+   "K": "his fingertip just out of the milk, a small grimace of \"warm\", looking at the lens"
+  },
+  {
+   "id": "b052",
+   "scene": "S5",
+   "type": "A",
+   "text": "Si la hierves, la cuajada sale dura, como goma, y después cuesta disolverla.",
+   "A": "he shakes his head, lowering the flame, talking to the lens",
+   "K": "he holds the knob of the stove, looking at the lens with a warning face"
+  },
+  {
+   "id": "b053",
+   "scene": "S5",
+   "type": "A",
+   "text": "Ahora apago, y el vinagre. Cuatro cucharadas de vinagre blanco, de a una.",
+   "A": "he turns the burner off and pours tablespoons of white vinegar into the milk one at a time",
+   "K": "he holds a tablespoon of vinegar over the pot, about to pour, looking at the lens"
+  },
+  {
+   "id": "b054",
+   "scene": "S5",
+   "type": "A",
+   "text": "¿Y si no tienes vinagre blanco? Sirve cualquier vinagre, o jugo de limón. El blanco es el más barato y no le da color.",
+   "A": "he holds up a lemon and a bottle of apple vinegar, one in each hand",
+   "K": "he holds a lemon in one hand and a bottle of vinegar in the other, eyebrows raised at the lens"
+  },
+  {
+   "id": "b055",
+   "scene": "S5",
+   "type": "D",
+   "text": "Revuelvo despacio, como si fuera un guiso delicado… y enseguida se empieza a cortar.",
+   "d1": "Close view looking straight down into a steel pot on a gas stove: a man's hand with an olive-green rolled sleeve slowly stirs warm milk with a tablespoon, the first small white flecks appearing; only the pot, the spoon and his hand and forearm fill the frame.",
+   "d2": "The same pot, the white flecks grown into soft curds, the whey turning yellowish-clear."
+  },
+  {
+   "id": "b056",
+   "scene": "S5",
+   "type": "A",
+   "text": "Si al minuto el líquido sigue blanco como leche, le falta vinagre. Le pones una cucharada más.",
+   "A": "he looks into the pot, then adds one more spoon of vinegar",
+   "K": "he holds the empty tablespoon above the pot, looking at the lens"
+  },
+  {
+   "id": "b057",
+   "scene": "S5",
+   "type": "A",
+   "text": "Cuando el líquido queda amarillento y transparente, listo. Eso es el suero. Lo dejo reposar cinco minutos.",
+   "A": "he tilts the pot a little toward the lens to show the clear yellowish whey and the curds",
+   "K": "he holds the pot handle with the pot slightly tilted toward the lens, looking at it"
+  },
+  {
+   "id": "b058",
+   "scene": "S5",
+   "type": "A",
+   "text": "Y aquí una cosa que casi nadie te dice: el vinagre que quede es un problema.",
+   "A": "he sets the pot back and leans on the counter, lowering his voice a little",
+   "K": "he leans on the counter with both hands, leaning toward the lens, serious"
+  },
+  {
+   "id": "b059",
+   "scene": "S5",
+   "type": "A",
+   "text": "Porque después le vamos a poner bicarbonato, y el bicarbonato se gasta peleando con el vinagre en vez de disolver la cuajada.",
+   "A": "he holds up the baking soda box in one hand and the vinegar bottle in the other, bringing them together",
+   "K": "he holds the baking soda box and the vinegar bottle close together at chest height, looking at the lens"
+  },
+  {
+   "id": "b060",
+   "scene": "S5",
+   "type": "A",
+   "text": "Por eso el paso siguiente es el más aburrido… y el más importante.",
+   "A": "he puts both down and picks up the cloth-lined colander from the counter",
+   "K": "he holds the colander lined with white cloth at chest height, looking at the lens"
+  },
+  {
+   "id": "b061",
+   "scene": "S6",
+   "type": "A",
+   "text": "El trapo tiene que ser de algodón, fino. Un trapo de cocina viejo, una gasa doblada. Nada de papel.",
+   "A": "he stretches the white cotton cloth in the colander, showing it",
+   "K": "he holds a corner of the thin cotton cloth up to the light of the window, looking at the lens"
+  },
+  {
+   "id": "b062",
+   "scene": "S6",
+   "type": "A",
+   "text": "Cuelo todo despacio. El suero se va por el desagüe, la cuajada queda arriba.",
+   "A": "he pours the pot slowly through the cloth-lined colander",
+   "K": "he holds the empty pot tilted over the colander, the curds in the cloth, looking into the sink"
+  },
+  {
+   "id": "b063",
+   "scene": "S6",
+   "type": "D",
+   "text": "Mira qué linda queda. Esto parece requesón, y en el fondo es casi lo mismo.",
+   "d1": "Close view looking down into a steel kitchen sink: white curds sitting in a cotton cloth inside a plastic colander, yellowish whey still dripping through; the colander fills the frame and the sink is empty around it.",
+   "d2": "The same curds, drained, a little more compact, only a last drop of whey falling."
+  },
+  {
+   "id": "b064",
+   "scene": "S6",
+   "type": "A",
+   "text": "Ahora el lavado. Agua fría de la llave, y la revuelvo con los dedos.",
+   "A": "he opens the cold tap and runs water over the curds, moving them with his fingers",
+   "K": "his fingers in the curds under the running cold tap, looking at the lens"
+  },
+  {
+   "id": "b065",
+   "scene": "S6",
+   "type": "A",
+   "text": "Dos, tres veces. Hasta que la cuajada ya no huela a vinagre. Huele.",
+   "A": "he closes the tap, lifts a pinch of curd to his nose and sniffs",
+   "K": "he holds a pinch of curd near his nose, eyes half closed, sniffing"
+  },
+  {
+   "id": "b066",
+   "scene": "S6",
+   "type": "A",
+   "text": "Si todavía huele fuerte a vinagre, otra lavada. No te ahorres esto.",
+   "A": "he shakes his head and opens the tap again for another rinse",
+   "K": "he rinses the curds again, looking at the lens with a serious face"
+  },
+  {
+   "id": "b067",
+   "scene": "S6",
+   "type": "A",
+   "text": "Ahora junto las puntas del trapo, y exprimo. Fuerte, que salga toda el agua que pueda.",
+   "A": "he gathers the corners of the cloth into a bundle and twists it hard over the sink",
+   "K": "his hands twisting the cloth bundle hard, water dripping into the sink, his forearms tense"
+  },
+  {
+   "id": "b068",
+   "scene": "S6",
+   "type": "A",
+   "text": "Si la dejas muy aguada, la cola te queda como leche aguada, y no agarra.",
+   "A": "he keeps squeezing, then opens the bundle a bit to check",
+   "K": "he holds the half-open bundle, checking the curd, looking at the lens"
+  },
+  {
+   "id": "b069",
+   "scene": "S6",
+   "type": "A",
+   "text": "Tiene que quedar así: húmeda pero que se desgrane. Como queso fresco.",
+   "A": "he opens the cloth fully and crumbles a bit of curd between his fingers toward the lens",
+   "K": "he holds the open cloth toward the lens with crumbly white curd, a few crumbs between his fingers"
+  },
+  {
+   "id": "b070",
+   "scene": "S6",
+   "type": "A",
+   "text": "De un litro de leche descremada sale más o menos esto: un puñado. Parece poco, pero rinde.",
+   "A": "he gathers the curd into a ball in his palm and shows it",
+   "K": "he holds a ball of curd the size of a big egg in his open palm toward the lens"
+  },
+  {
+   "id": "b071",
+   "scene": "S6",
+   "type": "A",
+   "text": "Esto ya es caseína casi pura. Ahora nos falta lo que la convierte en cola.",
+   "A": "he drops the ball of curd into a glass jar on the counter",
+   "K": "he holds the glass jar with the curd inside, looking at the lens"
+  },
+  {
+   "id": "b072",
+   "scene": "S6",
+   "type": "A",
+   "text": "Pero antes de eso, quiero que veas algo. Ven al taller.",
+   "A": "he picks up the jar and walks toward the kitchen door",
+   "K": "he walks toward the door holding the jar, glancing back at the lens"
+  },
+  {
+   "id": "b073",
+   "scene": "S7",
+   "type": "A",
+   "text": "Presta muchísima atención a esta imagen, porque probablemente sea la parte más importante del video.",
+   "A": "he picks up the sheet of cream paper from the bench and turns it toward the lens",
+   "K": "he holds the sheet of cream paper up at chest height with both hands, facing the lens, looking at the lens"
+  },
+  {
+   "id": "b074",
+   "scene": "S7",
+   "type": "L",
+   "text": "Aquí está todo en una sola ficha. Los ingredientes: un litro de leche descremada, cuatro cucharadas de vinagre, una cucharadita de bicarbonato, o media de cal, y un chorrito de agua."
+  },
+  {
+   "id": "b075",
+   "scene": "S7",
+   "type": "L",
+   "text": "El paso a paso: entibiar sin hervir, cortar con vinagre, colar, lavar hasta que no huela, exprimir, y mezclar hasta que quede como miel."
+  },
+  {
+   "id": "b076",
+   "scene": "S7",
+   "type": "L",
+   "text": "Los tiempos: pincel en las dos caras, prensa toda la noche, y un día entero antes de cargarle peso."
+  },
+  {
+   "id": "b077",
+   "scene": "S7",
+   "type": "L",
+   "text": "Y abajo, los tres errores que más veces arruinan esta cola. El primero: no lavar la cuajada. El segundo: usarla con grumos, sin esperar a que se vuelva lisa."
+  },
+  {
+   "id": "b078",
+   "scene": "S7",
+   "type": "L",
+   "text": "Y el tercero: guardarla para mañana. La de hoy se usa hoy. Si quieres, pausa el video y sácale una foto a esta ficha."
+  },
+  {
+   "id": "b079",
+   "scene": "S7",
+   "type": "A",
+   "text": "Esta ficha la hice con el mismo estilo de la guía del canal, donde tengo ordenados muchos otros arreglos caseros, con materiales y medidas.",
+   "A": "he holds the sheet beside his face and taps it with a finger, talking casually",
+   "K": "he holds the sheet beside his shoulder, tapping it with one finger, relaxed smile at the lens"
+  },
+  {
+   "id": "b080",
+   "scene": "S7",
+   "type": "A",
+   "text": "Si estás en el televisor, apunta la cámara de tu teléfono a este código. Si estás en el teléfono, el enlace está abajo.",
+   "A": "he lowers the sheet and points down toward the lower corner of the frame",
+   "K": "he points with his index finger toward the lower right corner of the frame, looking at the lens"
+  },
+  {
+   "id": "b081",
+   "scene": "S7",
+   "type": "A",
+   "text": "Bueno. Volvemos a lo nuestro, que la cuajada no espera.",
+   "A": "he puts the sheet down on the bench and picks up the jar of curd",
+   "K": "he holds the jar of curd at chest height, looking at the lens"
+  },
+  {
+   "id": "b082",
+   "scene": "S8",
+   "type": "A",
+   "text": "Para que la cuajada se vuelva cola, necesita algo alcalino. Tienes dos opciones, y las dos funcionan.",
+   "A": "he points at the baking soda box and then at the bag of lime",
+   "K": "his hand hovering between the baking soda box and the bag of lime, looking at the lens"
+  },
+  {
+   "id": "b083",
+   "scene": "S8",
+   "type": "A",
+   "text": "La primera, la más fácil: bicarbonato de sodio. Una cucharadita al ras por cada puñado de cuajada.",
+   "A": "he picks up the baking soda box and shows a level teaspoon of it",
+   "K": "he holds a level teaspoon of white powder above the jar, looking at the lens"
+  },
+  {
+   "id": "b084",
+   "scene": "S8",
+   "type": "A",
+   "text": "Si burbujea un poco, no te asustes: es el poquito de vinagre que quedaba. Es normal.",
+   "A": "he tips the teaspoon into the jar and watches the curd with interest",
+   "K": "he leans over the jar watching, a small smile, eyebrows up"
+  },
+  {
+   "id": "b085",
+   "scene": "S8",
+   "type": "A",
+   "text": "Le agrego dos o tres cucharadas de agua, de a poquito, y revuelvo fuerte con un palito.",
+   "A": "he adds splashes of water from the glass and stirs hard with the wooden stick",
+   "K": "he stirs the jar hard with the wooden stick, the jar held firmly in his other hand"
+  },
+  {
+   "id": "b086",
+   "scene": "S8",
+   "type": "D",
+   "text": "Al principio parece que no va a pasar nada. Todo grumos. Tú sigue.",
+   "d1": "A wooden stick stirring lumpy wet white curd inside a glass jar on a workbench.",
+   "d2": "The same jar, the curd half dissolved, lumps getting smaller, the mixture turning creamy."
+  },
+  {
+   "id": "b087",
+   "scene": "S8",
+   "type": "A",
+   "text": "A los cinco, diez minutos, los grumos se deshacen y se vuelve lisa, brillante, como miel espesa.",
+   "A": "he lifts the stick out and lets the glue fall back into the jar in a thick ribbon",
+   "K": "he holds the stick high above the jar, a thick glossy ribbon of glue falling from it, looking at the lens"
+  },
+  {
+   "id": "b088",
+   "scene": "S8",
+   "type": "A",
+   "text": "¿Qué pasó ahí? La caseína sola no se disuelve en agua. Con algo alcalino, sí. Se vuelve una pasta pegajosa.",
+   "A": "he tilts the jar toward the lens to show the smooth paste",
+   "K": "he holds the tilted jar toward the lens, the smooth paste inside, looking at it"
+  },
+  {
+   "id": "b089",
+   "scene": "S8",
+   "type": "A",
+   "text": "Y cuando pierde el agua, se endurece y queda metida en los poros de la madera. Por eso agarra tanto.",
+   "A": "he rubs a drop of glue between two fingers and lets it tack",
+   "K": "he pulls two sticky fingers apart slowly, a thread of glue between them, looking at the lens"
+  },
+  {
+   "id": "b090",
+   "scene": "S8",
+   "type": "A",
+   "text": "Si queda muy dura, una gota más de agua. Si queda muy líquida, la próxima vez exprime más la cuajada.",
+   "A": "he adds a drop of water from his fingertip and stirs a little more",
+   "K": "he holds the stick in the jar, looking at the lens, calm"
+  },
+  {
+   "id": "b091",
+   "scene": "S8",
+   "type": "A",
+   "text": "La segunda opción es la de antes: cal. Cal hidratada, la de construcción, la que se usa para blanquear paredes.",
+   "A": "he puts the stick down and lifts the paper bag of hydrated lime, showing it",
+   "K": "he holds the paper bag of hydrated lime at chest height, looking at the lens"
+  },
+  {
+   "id": "b092",
+   "scene": "S8",
+   "type": "A",
+   "text": "Con cal la cola aguanta mejor la humedad que con bicarbonato. Pero ojo, que la cal es cáustica.",
+   "A": "he puts on the safety glasses and pulls on the rubber gloves",
+   "K": "he wears the safety glasses and rubber gloves, holding up his gloved hands, serious face at the lens"
+  },
+  {
+   "id": "b093",
+   "scene": "S8",
+   "type": "A",
+   "text": "Guantes y gafas, siempre. Si te salpica en el ojo, es un problema serio. Y que no la toquen los niños.",
+   "A": "he taps the side of his safety glasses with a gloved finger",
+   "K": "his gloved finger touching the side of his safety glasses, looking at the lens, very serious"
+  },
+  {
+   "id": "b094",
+   "scene": "S8",
+   "type": "A",
+   "text": "Con cal va menos: media cucharadita por puñado de cuajada, más el chorrito de agua.",
+   "A": "he measures half a teaspoon of lime powder carefully into a second jar with curd",
+   "K": "he holds a half teaspoon of white lime powder over the second jar, concentrating"
+  },
+  {
+   "id": "b095",
+   "scene": "S8",
+   "type": "A",
+   "text": "Con cal se pone lista más rápido, pero también se endurece antes en el frasco. Tienes unas pocas horas.",
+   "A": "he stirs the second jar and holds up the stick to show the glue",
+   "K": "he holds up the stick with smooth glue from the second jar, looking at the lens"
+  },
+  {
+   "id": "b096",
+   "scene": "S8",
+   "type": "A",
+   "text": "Por eso prepara sólo lo que vas a usar ese día. Déjala reposar un cuarto de hora, y a pegar.",
+   "A": "he sets both jars side by side on the bench and taps the lid of one",
+   "K": "both jars side by side on the bench, his gloved hand on one lid, looking at the lens"
+  },
+  {
+   "id": "b097",
+   "scene": "S9",
+   "type": "A",
+   "text": "Ahora, lo que sí arruina cualquier cola, casera o comprada: pegar sobre cola vieja y suciedad.",
+   "A": "he picks up the loose chair leg from the chair and shows the dirty old glue on its end",
+   "K": "he holds the loose chair leg up with the dirty end toward the lens, looking at the lens"
+  },
+  {
+   "id": "b098",
+   "scene": "S9",
+   "type": "A",
+   "text": "Esto se lija o se raspa hasta ver madera limpia. La cola pega madera, no pega polvo ni cola vieja.",
+   "A": "he scrapes and sands the end of the chair leg with the sandpaper",
+   "K": "he rubs the sandpaper on the end of the leg, sawdust falling, looking down at it"
+  },
+  {
+   "id": "b099",
+   "scene": "S9",
+   "type": "D",
+   "text": "Madera limpia, sin brillo. Así.",
+   "d1": "Close view looking down at a scratched workbench: a man's hand with an olive-green rolled sleeve holds a loose wooden chair leg whose round end is covered in dark old glue and dirt, his other hand rubbing it with a folded sheet of sandpaper; only the chair leg, the sandpaper and his hands and forearms fill the frame.",
+   "d2": "The same end of the chair leg, now clean bare light wood, a little sawdust around."
+  },
+  {
+   "id": "b100",
+   "scene": "S9",
+   "type": "A",
+   "text": "Pincel en las dos caras: en la espiga y en el agujero. Capa fina, pareja.",
+   "A": "he brushes glue on the end of the leg and inside the hole of the chair",
+   "K": "he holds the brush inside the hole of the chair seat, carefully, looking at it"
+  },
+  {
+   "id": "b101",
+   "scene": "S9",
+   "type": "A",
+   "text": "Encajo, giro un poquito para que se reparta, y enseguida a la prensa.",
+   "A": "he pushes the leg into the hole, twists it a little, and positions a bar clamp across the chair",
+   "K": "both hands on the bar clamp across the chair, tightening it, looking at the joint"
+  },
+  {
+   "id": "b102",
+   "scene": "S9",
+   "type": "A",
+   "text": "No hace falta apretar con toda tu fuerza. Firme. Lo justo para que salga el cordoncito.",
+   "A": "he tightens a last half turn and stops, pointing at the squeeze-out",
+   "K": "he points at a small bead of glue at the joint, looking at the lens"
+  },
+  {
+   "id": "b103",
+   "scene": "S9",
+   "type": "A",
+   "text": "Si aprietas de más, sacas toda la cola de la unión y la dejas seca por dentro.",
+   "A": "he mimes crushing with both fists, shaking his head",
+   "K": "he holds both fists together in front of his chest, shaking his head slightly at the lens"
+  },
+  {
+   "id": "b104",
+   "scene": "S9m",
+   "type": "A",
+   "text": "¿Y si la pata baila porque el agujero se agrandó? La cola sola no rellena huecos grandes.",
+   "A": "he wiggles the chair leg in its hole to show the gap",
+   "K": "he holds the chair leg loosely in the hole, showing the gap with his thumb, looking at the lens"
+  },
+  {
+   "id": "b105",
+   "scene": "S9m",
+   "type": "A",
+   "text": "Ahí envuelves la punta con una tira fina de tela de algodón encolada, o una viruta de madera, y recién ahí la metes.",
+   "A": "he wraps a thin strip of cotton cloth around the end of the chair leg",
+   "K": "he holds the chair leg with a strip of cloth wrapped around its end, looking at the lens"
+  },
+  {
+   "id": "b106",
+   "scene": "S9m",
+   "type": "A",
+   "text": "Trapo húmedo, limpio el sobrante ahora. Después, seco, se pone duro como vidrio.",
+   "A": "he wipes the joint with the damp rag",
+   "K": "he folds the damp rag, the joint clean, looking at the lens"
+  },
+  {
+   "id": "b107",
+   "scene": "S9m",
+   "type": "A",
+   "text": "Y si lo que pegas es un cajón o un marco, antes de dejarlo en la prensa, mide las dos diagonales con la cinta.",
+   "A": "he stretches a tape measure diagonally across a small wooden drawer frame on the bench",
+   "K": "he holds the tape measure stretched across the diagonal of the drawer frame, reading it"
+  },
+  {
+   "id": "b108",
+   "scene": "S9m",
+   "type": "A",
+   "text": "Si las dos diagonales miden lo mismo, está a escuadra. Si no, lo empujas un poquito desde la esquina larga, antes de que seque.",
+   "A": "he pushes one corner of the drawer frame gently with the heel of his hand",
+   "K": "the heel of his hand pressing a corner of the drawer frame, looking at the lens"
+  },
+  {
+   "id": "b109",
+   "scene": "S9m",
+   "type": "A",
+   "text": "Toda la noche en la prensa. Y al otro día, sin apuro: le das un día entero antes de sentarte.",
+   "A": "he pats the chair seat and wags his finger, smiling",
+   "K": "he pats the chair seat with one hand, wagging the index finger of the other, smiling at the lens"
+  },
+  {
+   "id": "b110",
+   "scene": "S9m",
+   "type": "A",
+   "text": "Y si la madera es de roble o de algo parecido, oscura, prueba primero en un pedacito.",
+   "A": "he picks up a small offcut of dark oak from the bench",
+   "K": "he holds up a small dark oak offcut, looking at the lens"
+  },
+  {
+   "id": "b111",
+   "scene": "S9m",
+   "type": "A",
+   "text": "Porque con cal, esta cola puede manchar esas maderas de un tono más oscuro. Sobre todo si luego no la vas a pintar.",
+   "A": "he turns the oak offcut to show a darker stain line on its edge",
+   "K": "he holds the oak offcut with its darker stained edge toward the lens, looking at it"
+  },
+  {
+   "id": "b112",
+   "scene": "S9m",
+   "type": "A",
+   "text": "Ahora déjame contarte lo que me pasó con una lectora, porque esto es importante.",
+   "A": "he puts the offcut down and wipes his hands on his apron",
+   "K": "he wipes his hands on his leather apron, looking at the lens, thoughtful"
+  },
+  {
+   "id": "b113",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Te dejo cuatro trucos de taller que aprendí a los golpes, para que tu cola salga bien a la primera.",
+   "A": "he holds up four fingers, then lowers his hand to the bench",
+   "K": "his hand resting next to the pine offcuts, looking at the lens, friendly"
+  },
+  {
+   "id": "b114",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Primero: antes de pegar algo que te importa, pega dos retazos con la misma cola del frasco.",
+   "A": "he brushes glue on two small pine offcuts and presses them together",
+   "K": "he holds two small offcuts pressed together between his fingers, looking at the lens"
+  },
+  {
+   "id": "b115",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Los aprietas con una prensita, y al otro día intentas romperlos. Si rompe la madera, tu cola está bien hecha.",
+   "A": "he sets the offcuts in a small steel clamp and tightens it",
+   "K": "the two offcuts in the small clamp on the bench, his hand on the clamp, looking at the lens"
+  },
+  {
+   "id": "b116",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Si se despegan por la cola, algo falló: la leche, el lavado o los grumos. Y lo descubriste con dos pedacitos, no con tu silla.",
+   "A": "he taps the small clamp and then points at the chair clamped at the far end of the bench",
+   "K": "he points at the chair at the far end of the bench, looking at the lens with a knowing smile"
+  },
+  {
+   "id": "b117",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Segundo: las puntas de la madera, la veta de punta, chupan la cola como una esponja.",
+   "A": "he picks up an offcut and shows its end grain, running a finger over it",
+   "K": "he holds a pine offcut with its end grain toward the lens, fingertip on the end"
+  },
+  {
+   "id": "b118",
+   "scene": "S9b",
+   "type": "D",
+   "text": "Ahí la pinceladas una vez, esperas unos minutos a que se absorba, y le das una segunda mano antes de juntar.",
+   "d1": "Close view of a flat brush spreading cream-coloured glue on the end grain of a pine offcut, the glue soaking in.",
+   "d2": "The same end grain with a second glossy coat of glue sitting on the surface, the brush lifted away."
+  },
+  {
+   "id": "b119",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Tercero: no la dejes abierta mucho rato. Pinta y junta enseguida, en los primeros minutos.",
+   "A": "he brushes glue on an offcut and immediately presses a second one onto it",
+   "K": "he holds the two freshly joined offcuts, pressing them, looking at the lens"
+  },
+  {
+   "id": "b120",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Si la cola ya formó una piel encima, esa capa no va a agarrar bien. Mejor una mano nueva.",
+   "A": "he lifts a brush with slightly skinned glue and looks at it closely",
+   "K": "he holds the brush close to his eyes, inspecting the glue on the bristles"
+  },
+  {
+   "id": "b121",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Y cuarto: el pincel, al agua enseguida. Esta cola se limpia con agua mientras está fresca. Seca, ya no.",
+   "A": "he drops the brush into the glass of water and swishes it",
+   "K": "he swishes the brush in the glass of water, the water turning milky, looking at the lens"
+  },
+  {
+   "id": "b122",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Y si después vas a pintar o barnizar, raspa el sobrante que se secó y lija. Donde queda cola, el barniz no entra parejo.",
+   "A": "he scrapes a dried drop of glue off a joint with a chisel and runs sandpaper over it",
+   "K": "he runs his fingertip over the clean sanded joint, looking at the lens"
+  },
+  {
+   "id": "b123",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Si la cola del frasco empieza a oler agria o se pone como gelatina y ya no se estira, se terminó. A la basura, y haces otra.",
+   "A": "he picks up the jar, sniffs it briefly and shows the glue stretching from the stick",
+   "K": "he holds the stick above the jar with a stretching thread of glue, looking at the lens"
+  },
+  {
+   "id": "b124",
+   "scene": "S9b",
+   "type": "A",
+   "text": "Por eso te digo: prepara sólo lo que vas a usar. Un litro de leche te alcanza para una tarde de arreglos.",
+   "A": "he screws the lid onto the jar and sets it down",
+   "K": "his hand on the lid of the closed jar, looking at the lens"
+  },
+  {
+   "id": "b125",
+   "scene": "S10",
+   "type": "A",
+   "text": "Me escribió Rosa, de Arequipa, en Perú. Hizo esta misma cola y pegó la pata de una silla del comedor.",
+   "A": "he holds up his phone briefly as if reading a message, then lowers it",
+   "K": "the phone lowered by his side, he looks at the lens with a warm face"
+  },
+  {
+   "id": "b126",
+   "scene": "S10",
+   "type": "A",
+   "text": "Me dijo que le quedó firme, y que la silla se sigue usando todos los días. Hasta ahí, perfecto.",
+   "A": "he nods and gives a small thumbs up",
+   "K": "he gives a small thumbs up at chest height, smiling at the lens"
+  },
+  {
+   "id": "b127",
+   "scene": "S10",
+   "type": "A",
+   "text": "Fíjate que es lo más común: la misma cola, en dos lugares distintos, y dos resultados distintos.",
+   "A": "he holds up two fingers, then points at the patio around him",
+   "K": "he holds up two fingers, eyebrows raised, looking at the lens"
+  },
+  {
+   "id": "b128",
+   "scene": "S10",
+   "type": "A",
+   "text": "Y lo primero que hizo, me contó, fue raspar la cola vieja de la pata, como te mostré. Por eso le funcionó.",
+   "A": "he mimes scraping with his thumb on the armrest of the bench",
+   "K": "his thumb on the armrest mid-gesture, looking at the lens, nodding"
+  },
+  {
+   "id": "b129",
+   "scene": "S10",
+   "type": "A",
+   "text": "Pero con la misma cola pegó también una banca del patio. Una como esta.",
+   "A": "he turns and puts his hand on the loose armrest of the garden bench",
+   "K": "his hand holding the loose armrest of the bench, looking at the lens"
+  },
+  {
+   "id": "b130",
+   "scene": "S10",
+   "type": "A",
+   "text": "Y cuando llegaron las lluvias, se le despegó. Y tiene lógica.",
+   "A": "he wiggles the loose armrest, which moves freely",
+   "K": "he holds the loose armrest lifted a little away from the bench, eyebrows raised at the lens"
+  },
+  {
+   "id": "b131",
+   "scene": "S10b",
+   "type": "A",
+   "text": "La cola de caseína no es para la intemperie. Ni para lo que se moja seguido: el baño, la cocina junto al fregadero, el patio.",
+   "A": "he gestures around the patio with an open hand",
+   "K": "his open hand gesturing toward the wet corner of the patio, looking at the lens"
+  },
+  {
+   "id": "b132",
+   "scene": "S10b",
+   "type": "A",
+   "text": "Para exterior, compra una cola para exteriores, de las resistentes al agua, o una de poliuretano. Esa sí conviene.",
+   "A": "he counts on his fingers, talking frankly to the lens",
+   "K": "he holds up two fingers, frank face, looking at the lens"
+  },
+  {
+   "id": "b133",
+   "scene": "S10b",
+   "type": "A",
+   "text": "Y tampoco es para cosas que cargan mucho peso sobre la cabeza de alguien. Ahí no se experimenta.",
+   "A": "he points up at the eaves of the patio roof and shakes his head",
+   "K": "he points up toward the edge of the roof, shaking his head, serious"
+  },
+  {
+   "id": "b134",
+   "scene": "S10b",
+   "type": "A",
+   "text": "Ni para plástico, metal o vidrio. Es cola para madera, y de paso para papel, cartón y tela.",
+   "A": "he taps a plastic flower pot with a knuckle and shakes his head",
+   "K": "his knuckle on a plastic flower pot, shaking his head, looking at the lens"
+  },
+  {
+   "id": "b135",
+   "scene": "S10b",
+   "type": "A",
+   "text": "Esta cola es para adentro: una silla floja, un cajón, un marco, una caja de madera, un juguete.",
+   "A": "he sits down sideways on the sound end of the bench and counts on his fingers",
+   "K": "he sits on the bench, counting on his fingers, looking at the lens relaxed"
+  },
+  {
+   "id": "b136",
+   "scene": "S10b",
+   "type": "A",
+   "text": "Y para eso, si la haces bien, aguanta lo mismo que una buena cola blanca, y te cuesta centavos.",
+   "A": "he taps the wooden seat of the bench beside him",
+   "K": "his hand flat on the bench seat, smiling at the lens"
+  },
+  {
+   "id": "b137",
+   "scene": "S10b",
+   "type": "A",
+   "text": "Rosa, por cierto, me preguntó dónde tenía anotados los otros arreglos que hago con cosas de la casa.",
+   "A": "he takes the phone out again and looks at it with a smile",
+   "K": "he holds the phone at chest height, smiling at its screen"
+  },
+  {
+   "id": "b138",
+   "scene": "S10b",
+   "type": "A",
+   "text": "Y es lo que te decía antes: los tengo ordenados en la guía del canal, con materiales y medidas. El enlace está abajo.",
+   "A": "he pockets the phone and points down toward the lower corner of the frame",
+   "K": "he points down toward the lower right corner of the frame, casual smile at the lens"
+  },
+  {
+   "id": "b139",
+   "scene": "S10b",
+   "type": "A",
+   "text": "Bueno. Ya pasó la noche. Vamos a ver si la silla y las probetas aguantaron.",
+   "A": "he stands up from the bench and heads toward the back door of the house",
+   "K": "he walks toward the back door, glancing back at the lens"
+  },
+  {
+   "id": "b140",
+   "scene": "S11",
+   "type": "A",
+   "text": "Buenos días. Traje testigo, porque si no, no me cree.",
+   "A": "he waves at the lens and points with his thumb at the neighbour",
+   "K": "he points his thumb at the neighbour, grinning at the lens"
+  },
+  {
+   "id": "b141",
+   "scene": "S11",
+   "type": "V",
+   "line": "Yo sigo diciendo que con leche no se pega nada.",
+   "A": "The neighbour shrugs with his arms crossed, talking to the presenter with a sceptical smile; the presenter listens, silent.",
+   "K": "The neighbour with arms crossed and a sceptical smile, chin up; the presenter looks at him, silent, amused.",
+   "secs": 4
+  },
+  {
+   "id": "b142",
+   "scene": "S11",
+   "type": "A",
+   "text": "Primero la silla. Siéntate tú, que pesas más que yo.",
+   "A": "he takes the clamp off the chair and invites the neighbour to sit with an open hand",
+   "K": "the clamp off, he holds the chair steady with one hand, the other hand open inviting the neighbour to sit"
+  },
+  {
+   "id": "b143",
+   "scene": "S11",
+   "type": "V",
+   "line": "A ver… Bueno, no se mueve.",
+   "A": "The neighbour sits down carefully on the chair, rocks side to side testing it, then looks at the leg; the presenter watches, silent.",
+   "K": "The neighbour sitting on the chair, both hands on the seat, looking down at the leg, surprised; the presenter stands beside him, silent.",
+   "secs": 4
+  },
+  {
+   "id": "b144",
+   "scene": "S11",
+   "type": "A",
+   "text": "Ahora la de verdad. Ata la cuerda a la punta, y colgamos la pesa.",
+   "A": "he ties the rope to the far end of the clamped board while the neighbour lifts the iron weight",
+   "K": "he pulls a knot tight at the end of the clamped board, looking at the knot"
+  },
+  {
+   "id": "b145",
+   "scene": "S11",
+   "type": "D",
+   "text": "Ahí está colgando. Y ahora le sumo peso, de a poco.",
+   "d1": "An old black iron weight hanging from a rope under a pine board clamped to a workbench, the board flat and still.",
+   "d2": "The same setup with a second iron weight hooked onto the first, the pine board bending more."
+  },
+  {
+   "id": "b146",
+   "scene": "S11",
+   "type": "A",
+   "text": "Escucha la madera. Está sonando. Eso no es la cola, eso son las fibras de la madera.",
+   "A": "he bends toward the board with a hand behind his ear",
+   "K": "he leans toward the bending board, hand cupped behind his ear, eyebrows up"
+  },
+  {
+   "id": "b147",
+   "scene": "S11",
+   "type": "X",
+   "d1": "Side view at the height of a garage workbench, nobody in the frame: a pine board clamped flat to the edge of the workbench sticks out into the air, two old black iron weights hang from a thick rope tied to its far end, a hand's width above the concrete floor, the board bending under the load.",
+   "d2": "The same side view: the pine board has snapped with a jagged splintered break a few centimetres beside the glued joint, the far piece of board and both iron weights have fallen to the concrete floor, splinters and sawdust flying in the air.",
+   "secs": 4
+  },
+  {
+   "id": "b148",
+   "scene": "S11",
+   "type": "A",
+   "text": "¡Ahí está! Mira dónde se rompió. Al lado. La unión, entera.",
+   "A": "he picks up the broken piece from the floor and shows the break and the intact joint to the lens",
+   "K": "he holds the broken piece toward the lens, the intact glue line visible, triumphant smile"
+  },
+  {
+   "id": "b149",
+   "scene": "S11",
+   "type": "V",
+   "line": "Bueno… me callo. Se rompió la madera, pero la cola no.",
+   "A": "The neighbour takes the piece, looks closely at the joint and gives in with a laugh, shaking his head; the presenter listens, silent.",
+   "K": "The neighbour holds the piece, laughing and shaking his head, one hand raised in surrender; the presenter grins, silent.",
+   "secs": 4
+  },
+  {
+   "id": "b150",
+   "scene": "S11",
+   "type": "A",
+   "text": "Eso es lo honesto: la unión aguantó más que la madera. Lo mismo que hace una buena cola de ferretería.",
+   "A": "he takes the piece back and sets it on the bench, talking to the lens",
+   "K": "he rests his hand on the broken piece on the bench, calm face, looking at the lens"
+  },
+  {
+   "id": "b151",
+   "scene": "S11",
+   "type": "A",
+   "text": "Y ahora sí, el error que te prometí. El que la hace fallar a las veinticuatro horas.",
+   "A": "he reaches under the bench and takes out a second glued board with a strip of blue tape on it",
+   "K": "he holds a second glued pine board marked with a strip of blue tape, looking at the lens"
+  },
+  {
+   "id": "b152",
+   "scene": "S12",
+   "type": "A",
+   "text": "Esta la pegué igual, el mismo día, con la misma receta. Con una sola diferencia: leche entera.",
+   "A": "he taps the blue tape on the board and then the carton of whole milk",
+   "K": "his finger on the carton of whole milk, the taped board in his other hand, looking at the lens"
+  },
+  {
+   "id": "b153",
+   "scene": "S12",
+   "type": "A",
+   "text": "Porque es la que casi todo el mundo tiene en el refrigerador, y la receta dice \"leche\", y ya.",
+   "A": "he shrugs, holding the whole milk carton up",
+   "K": "he holds up the whole milk carton, a shrug, looking at the lens"
+  },
+  {
+   "id": "b154",
+   "scene": "S12",
+   "type": "A",
+   "text": "Recién sacada de la prensa, parecía perfecta. Firme. Pero mira lo que pasa ahora.",
+   "A": "he grips the two boards of the taped joint with both hands",
+   "K": "both hands gripping the taped board on each side of the joint, looking at the lens"
+  },
+  {
+   "id": "b155",
+   "scene": "S12",
+   "type": "D",
+   "text": "Sin herramientas. Con la mano.",
+   "d1": "Two glued pine boards held in two hands at the joint, fingers tense, starting to pull apart.",
+   "d2": "The same two boards separated in two hands, the joint opened cleanly along the glue line, a greasy dull film of glue on both faces."
+  },
+  {
+   "id": "b156",
+   "scene": "S12",
+   "type": "A",
+   "text": "Se abrió por la cola, no por la madera. Y mira la cara: grasosa, opaca. Casi no agarró las fibras.",
+   "A": "he shows one of the opened faces close to the lens, rubbing it with his thumb",
+   "K": "he holds the opened board face toward the lens, his thumb rubbing the dull glue film"
+  },
+  {
+   "id": "b157",
+   "scene": "S12",
+   "type": "V",
+   "line": "¿Y todo por la leche?",
+   "A": "The neighbour leans in and looks at the opened joint, frowning, then asks the presenter; the presenter listens, silent.",
+   "K": "The neighbour leans close to the opened board, frowning curiously; the presenter holds the board, silent.",
+   "secs": 4
+  },
+  {
+   "id": "b158",
+   "scene": "S12",
+   "type": "A",
+   "text": "Todo por la grasa. La grasa de la leche se queda metida en la cuajada, y la cola no moja bien la madera.",
+   "A": "he answers the neighbour, then turns to the lens, pointing at the two milk cartons",
+   "K": "he points at the carton of skimmed milk, looking at the lens"
+  },
+  {
+   "id": "b159",
+   "scene": "S12",
+   "type": "A",
+   "text": "Por eso las recetas de cola de caseína piden leche descremada. No es un capricho: es lo que hace que pegue.",
+   "A": "he taps the skimmed milk carton twice with his finger",
+   "K": "his finger on the skimmed milk carton, serious nod at the lens"
+  },
+  {
+   "id": "b160",
+   "scene": "S12",
+   "type": "A",
+   "text": "Y a las pocas horas parece que pegó, pero cuando le cargas peso, al otro día, se abre así. Por eso: descremada. Siempre.",
+   "A": "he picks up the skimmed milk carton and holds it next to his face",
+   "K": "he holds the skimmed milk carton beside his face, firm look at the lens"
+  },
+  {
+   "id": "b161",
+   "scene": "S12",
+   "type": "A",
+   "text": "Y si sólo tienes entera: lava la cuajada con agua tibia en vez de fría. Se lleva parte de la grasa. Ayuda, pero no es lo mismo.",
+   "A": "he mimes rinsing curds under a tap with his hands",
+   "K": "he holds both hands cupped as if rinsing, looking at the lens"
+  },
+  {
+   "id": "b162",
+   "scene": "S13",
+   "type": "A",
+   "text": "Ah, y te prometí algo más. Hay una variante de esto que funciona todavía mejor cuando no tienes una unión, sino una grieta o un agujero en la madera.",
+   "A": "he picks up a small piece of wood with a crack in it and shows the crack",
+   "K": "he holds the cracked piece of wood up to the lens, his fingernail in the crack"
+  },
+  {
+   "id": "b163",
+   "scene": "S13",
+   "type": "A",
+   "text": "Te dejé exactamente cómo hacerlo en la descripción, con las medidas.",
+   "A": "he points down toward the lower part of the frame with a smile",
+   "K": "he points down with a smile, looking at the lens"
+  },
+  {
+   "id": "b164",
+   "scene": "S13",
+   "type": "A",
+   "text": "Y una pregunta que seguro me vas a hacer: ¿sirve para un mueble de melamina? No. La melamina es plástico por fuera, y esta cola pega madera.",
+   "A": "he taps a white melamine board leaning against the bench and shakes his head",
+   "K": "his knuckle on the white melamine board, shaking his head, looking at the lens"
+  },
+  {
+   "id": "b165",
+   "scene": "S13",
+   "type": "A",
+   "text": "Resumen: leche descremada, cuajada bien lavada, sin grumos, se usa en el día, prensa toda la noche, y un día antes de cargarla.",
+   "A": "he counts the points on his fingers one by one",
+   "K": "he holds up his open hand with all five fingers spread, looking at the lens"
+  },
+  {
+   "id": "b166",
+   "scene": "S13",
+   "type": "A",
+   "text": "Para adentro de la casa, es una cola buenísima. Para afuera, la de ferretería. Así de simple.",
+   "A": "he points to the jar on the bench and then out through the open garage door",
+   "K": "he points out through the open garage door to the street, looking at the lens"
+  },
+  {
+   "id": "b167",
+   "scene": "S13",
+   "type": "A",
+   "text": "Y si te gustan estos arreglos con cosas de la casa, la guía del canal los tiene ordenados, con materiales y medidas. Está en la descripción.",
+   "A": "he wipes his hands on his apron and gestures down toward the lower corner of the frame",
+   "K": "he gestures down toward the lower right corner of the frame, relaxed smile"
+  },
+  {
+   "id": "b168",
+   "scene": "S13",
+   "type": "A",
+   "text": "Y si la haces, haz la prueba del retazo y cuéntame qué se rompió primero: la madera o la cola.",
+   "A": "he picks up two small glued offcuts and taps them together",
+   "K": "he holds up two small glued offcuts, smiling at the lens"
+  },
+  {
+   "id": "b169",
+   "scene": "S13",
+   "type": "A",
+   "text": "Y cuéntame en los comentarios qué vas a pegar primero. Yo voy a arreglar el cajón de la cocina, que se viene desarmando hace un año.",
+   "A": "he laughs and glances at the neighbour, then back to the lens",
+   "K": "he smiles at the lens, the neighbour beside him laughing"
+  },
+  {
+   "id": "b170",
+   "scene": "S13",
+   "type": "V",
+   "line": "¡Hace dos años! Yo lo vi.",
+   "A": "The neighbour laughs and pats the presenter on the shoulder, talking; the presenter laughs silently.",
+   "K": "The neighbour with his hand on the presenter's shoulder, both laughing, the presenter silent.",
+   "secs": 4
+  }
+ ]
+}

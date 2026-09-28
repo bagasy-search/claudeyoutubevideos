@@ -1,0 +1,213 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S5/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/out/vlog/base_cocina.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The same place as the first image — the very same room, same walls, same door, same furniture and shelves, same light — seen from a slightly different spot a little later. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. He stands at the kitchen counter by the window, a steel pot on the gas stove behind him, a carton of skimmed milk, a bottle of white vinegar, a tablespoon, a small bowl and a kitchen thermometer on the counter; he looks at the lens. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the milk carton in one hand, the other hand resting on a bag of powdered skimmed milk, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is pouring a steady stream of milk into the pot, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the kitchen thermometer in the milk, reading it, one eyebrow up. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his fingertip just out of the milk, a small grimace of \"warm\", looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the knob of the stove, looking at the lens with a warning face. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a tablespoon of vinegar over the pot, about to pour, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a lemon in one hand and a bottle of vinegar in the other, eyebrows raised at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the empty tablespoon above the pot, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the pot handle with the pot slightly tilted toward the lens, looking at it. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he leans on the counter with both hands, leaning toward the lens, serious. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the baking soda box and the vinegar bottle close together at chest height, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the colander lined with white cloth at chest height, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b048",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b048.wav",
+   "text": "Vamos por partes. La leche: descremada. Puede ser líquida, o en polvo descremada preparada con agua.",
+   "action": "he shows the skimmed milk carton, then taps a bag of powdered milk on the counter."
+  },
+  {
+   "id": "b049",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b049.wav",
+   "text": "Con un litro te sale cola para varias uniones. Para una silla floja, te sobra.",
+   "action": "he pours milk into the pot, the carton in his hand, talking to the lens."
+  },
+  {
+   "id": "b050",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b050.wav",
+   "text": "La caliento a fuego bajo. No tiene que hervir. Tibia, entre cuarenta y cincuenta grados.",
+   "action": "he lights the burner low and dips a kitchen thermometer into the milk."
+  },
+  {
+   "id": "b051",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b051.wav",
+   "text": "Si no tienes termómetro: tiene que estar más caliente que tu mano, pero que aguante el dedo adentro.",
+   "action": "he takes out the thermometer and dips his fingertip into the milk for a second."
+  },
+  {
+   "id": "b052",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b052.wav",
+   "text": "Si la hierves, la cuajada sale dura, como goma, y después cuesta disolverla.",
+   "action": "he shakes his head, lowering the flame, talking to the lens."
+  },
+  {
+   "id": "b053",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b053.wav",
+   "text": "Ahora apago, y el vinagre. Cuatro cucharadas de vinagre blanco, de a una.",
+   "action": "he turns the burner off and pours tablespoons of white vinegar into the milk one at a time."
+  },
+  {
+   "id": "b054",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b054.wav",
+   "text": "¿Y si no tienes vinagre blanco? Sirve cualquier vinagre, o jugo de limón. El blanco es el más barato y no le da color.",
+   "action": "he holds up a lemon and a bottle of apple vinegar, one in each hand."
+  },
+  {
+   "id": "b055",
+   "a": "K7",
+   "b": "K7",
+   "text": "Revuelvo despacio, como si fuera un guiso delicado… y enseguida se empieza a cortar.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b055.wav"
+  },
+  {
+   "id": "b056",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b056.wav",
+   "text": "Si al minuto el líquido sigue blanco como leche, le falta vinagre. Le pones una cucharada más.",
+   "action": "he looks into the pot, then adds one more spoon of vinegar."
+  },
+  {
+   "id": "b057",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b057.wav",
+   "text": "Cuando el líquido queda amarillento y transparente, listo. Eso es el suero. Lo dejo reposar cinco minutos.",
+   "action": "he tilts the pot a little toward the lens to show the clear yellowish whey and the curds."
+  },
+  {
+   "id": "b058",
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b058.wav",
+   "text": "Y aquí una cosa que casi nadie te dice: el vinagre que quede es un problema.",
+   "action": "he sets the pot back and leans on the counter, lowering his voice a little."
+  },
+  {
+   "id": "b059",
+   "a": "K10",
+   "b": "K11",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b059.wav",
+   "text": "Porque después le vamos a poner bicarbonato, y el bicarbonato se gasta peleando con el vinagre en vez de disolver la cuajada.",
+   "action": "he holds up the baking soda box in one hand and the vinegar bottle in the other, bringing them together."
+  },
+  {
+   "id": "b060",
+   "a": "K11",
+   "b": "K12",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b060.wav",
+   "text": "Por eso el paso siguiente es el más aburrido… y el más importante.",
+   "action": "he puts both down and picks up the cloth-lined colander from the counter."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S5/vlog_S5.mp4"
+}

@@ -1,0 +1,86 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S7/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/out/vlog/base_taller.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The same place as the first image — the very same room, same walls, same door, same furniture and shelves, same light — seen from a slightly different spot a little later. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. He stands at the heavy wooden workbench in the garage workshop, a glass jar with white curd on the bench, a sheet of cream-coloured paper lying face down on the bench beside it; he looks at the lens. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "LAM"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the sheet of cream paper up at chest height with both hands, facing the lens, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The sheet of paper he holds is exactly the printed page of the second input image (a cream page with a red title and small drawings), facing the viewer, slightly curved in his hands."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1",
+    "LAM"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the sheet beside his shoulder, tapping it with one finger, relaxed smile at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The sheet of paper he holds is exactly the printed page of the second input image (a cream page with a red title and small drawings), facing the viewer, slightly curved in his hands."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points with his index finger toward the lower right corner of the frame, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the jar of curd at chest height, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b073",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b073.wav",
+   "text": "Presta muchísima atención a esta imagen, porque probablemente sea la parte más importante del video.",
+   "action": "he picks up the sheet of cream paper from the bench and turns it toward the lens."
+  },
+  {
+   "id": "b079",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b079.wav",
+   "text": "Esta ficha la hice con el mismo estilo de la guía del canal, donde tengo ordenados muchos otros arreglos caseros, con materiales y medidas.",
+   "action": "he holds the sheet beside his face and taps it with a finger, talking casually."
+  },
+  {
+   "id": "b080",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b080.wav",
+   "text": "Si estás en el televisor, apunta la cámara de tu teléfono a este código. Si estás en el teléfono, el enlace está abajo.",
+   "action": "he lowers the sheet and points down toward the lower corner of the frame."
+  },
+  {
+   "id": "b081",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b081.wav",
+   "text": "Bueno. Volvemos a lo nuestro, que la cuajada no espera.",
+   "action": "he puts the sheet down on the bench and picks up the jar of curd."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S7/vlog_S7.mp4"
+}

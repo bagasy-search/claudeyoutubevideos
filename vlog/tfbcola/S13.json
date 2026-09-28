@@ -1,0 +1,237 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S13/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/out/vlog/base_taller.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "W"
+   ],
+   "prompt": "The same place as the first image — the very same room, same walls, same door, same furniture and shelves, same light — seen from a slightly different spot a little later. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. He stands at the heavy wooden workbench in the garage workshop, a small piece of wood with a crack in it and a jar of pale honey-coloured glue on the bench; the broken pine boards from the test lie at the end of the bench. The neighbour stands at the side of the bench, relaxed, hands in his pockets. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is halfway through this action: he picks up a small piece of wood with a crack in it and shows the crack. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the cracked piece of wood up to the lens, his fingernail in the crack. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points down with a smile, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is halfway through this action: he taps a white melamine board leaning against the bench and shakes his head. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his knuckle on the white melamine board, shaking his head, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up his open hand with all five fingers spread, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points out through the open garage door to the street, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he gestures down toward the lower right corner of the frame, relaxed smile. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up two small glued offcuts, smiling at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he smiles at the lens, the neighbour beside him laughing. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: The neighbour with his hand on the presenter's shoulder, both laughing, the presenter silent.. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b162a",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b162a.wav",
+   "text": "Ah, y te prometí algo más. Hay una variante de esto que funciona todavía",
+   "action": "he picks up a small piece of wood with a crack in it and shows the crack. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b162b",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b162b.wav",
+   "text": "mejor cuando no tienes una unión, sino una grieta o un agujero en la madera.",
+   "action": "he picks up a small piece of wood with a crack in it and shows the crack. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b163",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b163.wav",
+   "text": "Te dejé exactamente cómo hacerlo en la descripción, con las medidas.",
+   "action": "he points down toward the lower part of the frame with a smile. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b164a",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b164a.wav",
+   "text": "Y una pregunta que seguro me vas a hacer: ¿sirve para un mueble de melamina? No.",
+   "action": "he taps a white melamine board leaning against the bench and shakes his head. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b164b",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b164b.wav",
+   "text": "La melamina es plástico por fuera, y esta cola pega madera.",
+   "action": "he taps a white melamine board leaning against the bench and shakes his head. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b165",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b165.wav",
+   "text": "Resumen: leche descremada, cuajada bien lavada, sin grumos, se usa en el día, prensa toda la noche, y un día antes de cargarla.",
+   "action": "he counts the points on his fingers one by one. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b166",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b166.wav",
+   "text": "Para adentro de la casa, es una cola buenísima. Para afuera, la de ferretería. Así de simple.",
+   "action": "he points to the jar on the bench and then out through the open garage door. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b167",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b167.wav",
+   "text": "Y si te gustan estos arreglos con cosas de la casa, la guía del canal los tiene ordenados, con materiales y medidas. Está en la descripción.",
+   "action": "he wipes his hands on his apron and gestures down toward the lower corner of the frame. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b168",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b168.wav",
+   "text": "Y si la haces, haz la prueba del retazo y cuéntame qué se rompió primero: la madera o la cola.",
+   "action": "he picks up two small glued offcuts and taps them together. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b169",
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b169.wav",
+   "text": "Y cuéntame en los comentarios qué vas a pegar primero. Yo voy a arreglar el cajón de la cocina, que se viene desarmando hace un año.",
+   "action": "he laughs and glances at the neighbour, then back to the lens. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b170",
+   "a": "K10",
+   "b": "K11",
+   "secs": 4,
+   "line": "¡Hace dos años! Yo lo vi.",
+   "who": "the neighbour, a stout man of about 65 with a thick grey moustache and a light-blue checked shirt (the fourth reference image)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "W"
+   ],
+   "text": "¡Hace dos años! Yo lo vi.",
+   "action": "The neighbour laughs and pats the presenter on the shoulder, talking; the presenter laughs silently."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S13/vlog_S13.mp4"
+}

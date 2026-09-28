@@ -1,0 +1,117 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S2/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a completely new place; nothing from the first image's background remains. The place is the kitchen of a modest, tidy middle-class Latin American home: white tiled wall, a four-burner gas stove, a steel sink under a big window on the left, a wooden shelf with jars and cups, a dish rack, a small table with a plastic tablecloth, the edge of a fridge with magnets. Light: bright daylight from the big window over the sink on the left plus the ceiling light; the counter is well lit. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. He stands at the gas stove in the kitchen, next to a medium steel pot on a burner; on the counter beside the stove: a carton of skimmed milk, a bottle of white vinegar, a tablespoon, a plastic colander lined with a white cotton cloth, a small box of baking soda and a glass jar. He looks at the lens, one hand on the counter. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the carton back on the counter, he holds his index fingertip just above the milk in the pot, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stirs the pot slowly with the tablespoon, looking down into the pot. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the twisted cloth bundle over the sink, water dripping, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the glass jar with curd and powder in one hand and the empty teaspoon in the other, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is walking toward the kitchen door with the jar held against his apron, glancing back at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b019",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b019.wav",
+   "text": "Te lo muestro entero y rápido. Un litro de leche descremada, tibia. Que no hierva.",
+   "action": "he pours the skimmed milk from the carton into the pot on the lit burner, talking to the lens."
+  },
+  {
+   "id": "b020",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b020.wav",
+   "text": "Apago el fuego, cuatro cucharadas de vinagre blanco, y revuelvo despacito.",
+   "action": "he turns off the burner, pours spoonfuls of white vinegar into the milk and stirs gently."
+  },
+  {
+   "id": "b021",
+   "a": "K2",
+   "b": "K2",
+   "text": "Mira cómo se corta. Esos grumos blancos son la cuajada. Eso es lo que pega.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b021.wav"
+  },
+  {
+   "id": "b022",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b022.wav",
+   "text": "Cuelo en un trapo de algodón, lavo la cuajada con agua fría dos o tres veces, y exprimo.",
+   "action": "he holds the cloth bundle of white curds under the running cold tap, then twists it hard over the sink."
+  },
+  {
+   "id": "b023",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b023.wav",
+   "text": "En un frasco: la cuajada, una cucharadita de bicarbonato y un chorrito de agua.",
+   "action": "he drops the curd into the glass jar, adds a teaspoon of baking soda and a splash of water from a glass."
+  },
+  {
+   "id": "b024",
+   "a": "K4",
+   "b": "K4",
+   "text": "Revuelvo fuerte… y en unos minutos se vuelve lisa, brillante, como miel.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b024.wav"
+  },
+  {
+   "id": "b025",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b025.wav",
+   "text": "Esa es tu cola. Se usa en el día. Vamos al taller.",
+   "action": "he holds up the jar of smooth glue to the lens, then tucks it against his apron and heads for the kitchen door."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S2/vlog_S2.mp4"
+}

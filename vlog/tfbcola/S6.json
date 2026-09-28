@@ -1,0 +1,198 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S6/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/out/vlog/base_cocina.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The same place as the first image — the very same room, same walls, same door, same furniture and shelves, same light — seen from a slightly different spot a little later. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. He stands at the kitchen sink by the window, a plastic colander lined with a thin white cotton cloth sitting in the sink, the steel pot with curds and whey on the counter next to him; he looks at the lens. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a corner of the thin cotton cloth up to the light of the window, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the empty pot tilted over the colander, the curds in the cloth, looking into the sink. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his fingers in the curds under the running cold tap, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a pinch of curd near his nose, eyes half closed, sniffing. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he rinses the curds again, looking at the lens with a serious face. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his hands twisting the cloth bundle hard, water dripping into the sink, his forearms tense. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the half-open bundle, checking the curd, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the open cloth toward the lens with crumbly white curd, a few crumbs between his fingers. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a ball of curd the size of a big egg in his open palm toward the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the glass jar with the curd inside, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he walks toward the door holding the jar, glancing back at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b061",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b061.wav",
+   "text": "El trapo tiene que ser de algodón, fino. Un trapo de cocina viejo, una gasa doblada. Nada de papel.",
+   "action": "he stretches the white cotton cloth in the colander, showing it."
+  },
+  {
+   "id": "b062",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b062.wav",
+   "text": "Cuelo todo despacio. El suero se va por el desagüe, la cuajada queda arriba.",
+   "action": "he pours the pot slowly through the cloth-lined colander."
+  },
+  {
+   "id": "b063",
+   "a": "K2",
+   "b": "K2",
+   "text": "Mira qué linda queda. Esto parece requesón, y en el fondo es casi lo mismo.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b063.wav"
+  },
+  {
+   "id": "b064",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b064.wav",
+   "text": "Ahora el lavado. Agua fría de la llave, y la revuelvo con los dedos.",
+   "action": "he opens the cold tap and runs water over the curds, moving them with his fingers."
+  },
+  {
+   "id": "b065",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b065.wav",
+   "text": "Dos, tres veces. Hasta que la cuajada ya no huela a vinagre. Huele.",
+   "action": "he closes the tap, lifts a pinch of curd to his nose and sniffs."
+  },
+  {
+   "id": "b066",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b066.wav",
+   "text": "Si todavía huele fuerte a vinagre, otra lavada. No te ahorres esto.",
+   "action": "he shakes his head and opens the tap again for another rinse."
+  },
+  {
+   "id": "b067",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b067.wav",
+   "text": "Ahora junto las puntas del trapo, y exprimo. Fuerte, que salga toda el agua que pueda.",
+   "action": "he gathers the corners of the cloth into a bundle and twists it hard over the sink."
+  },
+  {
+   "id": "b068",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b068.wav",
+   "text": "Si la dejas muy aguada, la cola te queda como leche aguada, y no agarra.",
+   "action": "he keeps squeezing, then opens the bundle a bit to check."
+  },
+  {
+   "id": "b069",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b069.wav",
+   "text": "Tiene que quedar así: húmeda pero que se desgrane. Como queso fresco.",
+   "action": "he opens the cloth fully and crumbles a bit of curd between his fingers toward the lens."
+  },
+  {
+   "id": "b070",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b070.wav",
+   "text": "De un litro de leche descremada sale más o menos esto: un puñado. Parece poco, pero rinde.",
+   "action": "he gathers the curd into a ball in his palm and shows it."
+  },
+  {
+   "id": "b071",
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b071.wav",
+   "text": "Esto ya es caseína casi pura. Ahora nos falta lo que la convierte en cola.",
+   "action": "he drops the ball of curd into a glass jar on the counter."
+  },
+  {
+   "id": "b072",
+   "a": "K10",
+   "b": "K11",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b072.wav",
+   "text": "Pero antes de eso, quiero que veas algo. Ven al taller.",
+   "action": "he picks up the jar and walks toward the kitchen door."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S6/vlog_S6.mp4"
+}

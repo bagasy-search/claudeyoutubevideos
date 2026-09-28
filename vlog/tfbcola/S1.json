@@ -1,0 +1,271 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S1/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/out/vlog/base_taller.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "W"
+   ],
+   "prompt": "The same place as the first image — the very same room, same walls, same door, same furniture and shelves, same light — seen from a slightly different spot a little later. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The presenter stands at the heavy wooden workbench beside the vise, and HE (not the neighbour) holds a small glass jar of thick honey-coloured glue in his left hand, the neighbour's hands are busy with the wood; on the bench in front of him lies a pine board broken in two, the break jagged and splintered a few centimetres to the side of a glued overlap joint; an old iron weight with a ring sits on the concrete floor below, a rope still tied to it. The neighbour stands on the other side of the bench holding the longer broken piece of board in both hands, looking at the joint. Both half-turned toward each other. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: The neighbour holds the broken piece up at eye level, eyebrows raised, pointing at the glue line with his thumb; the presenter beside him smiles, silent.. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the jar up near his face, tilted, looking into the lens with a small proud smile. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his index finger touches the splintered break of the board on the bench, he looks at the lens with raised eyebrows. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: The neighbour with arms crossed and one eyebrow raised, head tilted; the presenter looks at him grinning, silent.. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he looks at the lens with a grin, his thumb pointing down at the iron weight on the floor. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the jar on the bench, he holds up three fingers of his right hand, talking to the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he leans toward the lens, index finger raised, serious eyes. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7",
+    "W"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he is turned three-quarters toward the inner door of the garage, looking back over his shoulder at the lens with a small smile. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron. The neighbour is exactly the man of the second input image: about 65, stout, bald on top with grey hair on the sides, thick grey moustache, a light-blue short-sleeved checked shirt with a pen in the pocket, reading glasses hanging on a cord around his neck. The neighbour stays where he is, listening, silent."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b000",
+   "a": "K0",
+   "b": "K0",
+   "text": "",
+   "action": "DETAIL",
+   "detail": true
+  },
+  {
+   "id": "b001",
+   "a": "K0",
+   "b": "K0",
+   "text": "",
+   "action": "DETAIL",
+   "detail": true
+  },
+  {
+   "id": "b002",
+   "a": "K0",
+   "b": "K1",
+   "secs": 4,
+   "line": "¡Se rompió la madera… pero la cola no!",
+   "who": "the neighbour, a stout man of about 65 with a thick grey moustache and a light-blue checked shirt (the fourth reference image)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "W"
+   ],
+   "text": "¡Se rompió la madera… pero la cola no!",
+   "action": "The neighbour lifts the broken piece close to his face, turns it and stares at the intact glue line, then looks up amazed; the presenter watches him, amused, silent."
+  },
+  {
+   "id": "b003",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b003.wav",
+   "text": "Esta cola la hice yo. Con cosas de la cocina.",
+   "action": "he raises the glass jar of honey-coloured glue toward the person filming and tilts it so the thick glue slowly moves. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b004",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b004.wav",
+   "text": "Y pega tan fuerte que se rompe primero la madera. Por un dólar, más o menos.",
+   "action": "he points with his free index finger at the broken board on the bench, then looks back to the lens. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b005",
+   "a": "K3",
+   "b": "K3",
+   "text": "Leche descremada, tibia.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b005.wav"
+  },
+  {
+   "id": "b006",
+   "a": "K3",
+   "b": "K3",
+   "text": "Un chorrito de vinagre… y se corta sola.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b006.wav"
+  },
+  {
+   "id": "b007",
+   "a": "K3",
+   "b": "K3",
+   "text": "La cuajada la cuelas en un trapo…",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b007.wav"
+  },
+  {
+   "id": "b008",
+   "a": "K3",
+   "b": "K3",
+   "text": "la lavas con agua limpia…",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b008.wav"
+  },
+  {
+   "id": "b009",
+   "a": "K3",
+   "b": "K3",
+   "text": "y le agregas una cucharadita de esto.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b009.wav"
+  },
+  {
+   "id": "b010",
+   "a": "K3",
+   "b": "K3",
+   "text": "Revuelves… y en unos minutos se vuelve una miel espesa.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b010.wav"
+  },
+  {
+   "id": "b011",
+   "a": "K3",
+   "b": "K3",
+   "text": "Pincel en las dos caras…",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b011.wav"
+  },
+  {
+   "id": "b012",
+   "a": "K3",
+   "b": "K3",
+   "text": "y a la prensa, toda la noche.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b012.wav"
+  },
+  {
+   "id": "b013",
+   "a": "K3",
+   "b": "K4",
+   "secs": 4,
+   "line": "¿Con leche? Eso no pega ni una estampita.",
+   "who": "the neighbour, a stout man of about 65 with a thick grey moustache and a light-blue checked shirt (the fourth reference image)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "W"
+   ],
+   "text": "¿Con leche? Eso no pega ni una estampita.",
+   "action": "The neighbour, arms crossed, shakes his head at the presenter with a sceptical half smile; the presenter listens, silent."
+  },
+  {
+   "id": "b014",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b014.wav",
+   "text": "Eso decía él. Hasta que colgamos la pesa.",
+   "action": "he glances at the neighbour, chuckles, then turns back to the lens and nods toward the iron weight on the floor. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b015",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b015.wav",
+   "text": "Hoy te doy la receta completa, con las medidas exactas, y la prueba de verdad.",
+   "action": "he sets the jar down on the bench and counts on his fingers while talking to the lens. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b017",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b017.wav",
+   "text": "Pero ojo: hay un error que la hace fallar a las veinticuatro horas…",
+   "action": "he leans a little toward the lens and raises his index finger in warning. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  },
+  {
+   "id": "b018",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b018.wav",
+   "text": "y casi todos lo cometen. Te lo muestro al final, con la prueba. Ven, vamos a la cocina.",
+   "action": "he taps the broken board once, then turns toward the door at the back that leads into the house, glancing back at the lens. The neighbour (fourth reference image) stays where he is, listening, silent.",
+   "refs": [
+    "W"
+   ]
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S1/vlog_S1.mp4"
+}

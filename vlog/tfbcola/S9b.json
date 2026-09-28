@@ -1,0 +1,198 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S9b/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/out/vlog/base_taller.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The same place as the first image — the very same room, same walls, same door, same furniture and shelves, same light — seen from a slightly different spot a little later. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. He stands at the heavy wooden workbench in the garage workshop, a jar of pale honey-coloured glue, a flat brush in a glass of water, a few small pine offcuts, a small steel clamp and a damp rag on the bench; the repaired chair clamped at the far end of the bench; he looks at the lens. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his hand resting next to the pine offcuts, looking at the lens, friendly. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds two small offcuts pressed together between his fingers, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the two offcuts in the small clamp on the bench, his hand on the clamp, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points at the chair at the far end of the bench, looking at the lens with a knowing smile. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a pine offcut with its end grain toward the lens, fingertip on the end. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the two freshly joined offcuts, pressing them, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the brush close to his eyes, inspecting the glue on the bristles. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he swishes the brush in the glass of water, the water turning milky, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he runs his fingertip over the clean sanded joint, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the stick above the jar with a stretching thread of glue, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his hand on the lid of the closed jar, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b113",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b113.wav",
+   "text": "Te dejo cuatro trucos de taller que aprendí a los golpes, para que tu cola salga bien a la primera.",
+   "action": "he holds up four fingers, then lowers his hand to the bench."
+  },
+  {
+   "id": "b114",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b114.wav",
+   "text": "Primero: antes de pegar algo que te importa, pega dos retazos con la misma cola del frasco.",
+   "action": "he brushes glue on two small pine offcuts and presses them together."
+  },
+  {
+   "id": "b115",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b115.wav",
+   "text": "Los aprietas con una prensita, y al otro día intentas romperlos. Si rompe la madera, tu cola está bien hecha.",
+   "action": "he sets the offcuts in a small steel clamp and tightens it."
+  },
+  {
+   "id": "b116",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b116.wav",
+   "text": "Si se despegan por la cola, algo falló: la leche, el lavado o los grumos. Y lo descubriste con dos pedacitos, no con tu silla.",
+   "action": "he taps the small clamp and then points at the chair clamped at the far end of the bench."
+  },
+  {
+   "id": "b117",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b117.wav",
+   "text": "Segundo: las puntas de la madera, la veta de punta, chupan la cola como una esponja.",
+   "action": "he picks up an offcut and shows its end grain, running a finger over it."
+  },
+  {
+   "id": "b118",
+   "a": "K5",
+   "b": "K5",
+   "text": "Ahí la pinceladas una vez, esperas unos minutos a que se absorba, y le das una segunda mano antes de juntar.",
+   "action": "DETAIL",
+   "detail": true,
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b118.wav"
+  },
+  {
+   "id": "b119",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b119.wav",
+   "text": "Tercero: no la dejes abierta mucho rato. Pinta y junta enseguida, en los primeros minutos.",
+   "action": "he brushes glue on an offcut and immediately presses a second one onto it."
+  },
+  {
+   "id": "b120",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b120.wav",
+   "text": "Si la cola ya formó una piel encima, esa capa no va a agarrar bien. Mejor una mano nueva.",
+   "action": "he lifts a brush with slightly skinned glue and looks at it closely."
+  },
+  {
+   "id": "b121",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b121.wav",
+   "text": "Y cuarto: el pincel, al agua enseguida. Esta cola se limpia con agua mientras está fresca. Seca, ya no.",
+   "action": "he drops the brush into the glass of water and swishes it."
+  },
+  {
+   "id": "b122",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b122.wav",
+   "text": "Y si después vas a pintar o barnizar, raspa el sobrante que se secó y lija. Donde queda cola, el barniz no entra parejo.",
+   "action": "he scrapes a dried drop of glue off a joint with a chisel and runs sandpaper over it."
+  },
+  {
+   "id": "b123",
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b123.wav",
+   "text": "Si la cola del frasco empieza a oler agria o se pone como gelatina y ya no se estira, se terminó. A la basura, y haces otra.",
+   "action": "he picks up the jar, sniffs it briefly and shows the glue stretching from the stick."
+  },
+  {
+   "id": "b124",
+   "a": "K10",
+   "b": "K11",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b124.wav",
+   "text": "Por eso te digo: prepara sólo lo que vas a usar. Un litro de leche te alcanza para una tarde de arreglos.",
+   "action": "he screws the lid onto the jar and sets it down."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S9b/vlog_S9b.mp4"
+}

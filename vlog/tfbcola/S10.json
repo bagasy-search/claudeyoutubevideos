@@ -1,0 +1,114 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S10/",
+ "face": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola_face_clip.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbcola/public/ref_tfbcola.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbcola/public/ref_vecino.png",
+  "LAM": "D:/Proyectos/video2-wt/tfbcola/vlog/tfbcola/lamina/v_0.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Place this same man in a completely new place; nothing from the first image's background remains. The place is the back patio of a Latin American house: red clay floor tiles, whitewashed walls with potted plants, a clothesline with a faded towel, the open back door of the house. Light: plain bright overcast daylight over the whole patio. The presenter is the man of the reference photos — about 50, black curly hair, short greying beard, the face of the last input image — dressed in a worn olive-green work shirt with the sleeves rolled up to the elbows, stained with paint and dust, and a worn brown leather apron over it. He stands on the back patio of the house, on red clay tiles in daylight, next to an old wooden garden bench with one armrest come loose; behind him a whitewashed wall with potted plants and a clothesline; he looks at the lens. Medium shot from the waist up, the scene fills the frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the phone lowered by his side, he looks at the lens with a warm face. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he gives a small thumbs up at chest height, smiling at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up two fingers, eyebrows raised, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his thumb on the armrest mid-gesture, looking at the lens, nodding. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his hand holding the loose armrest of the bench, looking at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the loose armrest lifted a little away from the bench, eyebrows raised at the lens. He still wears the same worn olive-green work shirt with rolled sleeves and the brown leather apron."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b125",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b125.wav",
+   "text": "Me escribió Rosa, de Arequipa, en Perú. Hizo esta misma cola y pegó la pata de una silla del comedor.",
+   "action": "he holds up his phone briefly as if reading a message, then lowers it."
+  },
+  {
+   "id": "b126",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b126.wav",
+   "text": "Me dijo que le quedó firme, y que la silla se sigue usando todos los días. Hasta ahí, perfecto.",
+   "action": "he nods and gives a small thumbs up."
+  },
+  {
+   "id": "b127",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b127.wav",
+   "text": "Fíjate que es lo más común: la misma cola, en dos lugares distintos, y dos resultados distintos.",
+   "action": "he holds up two fingers, then points at the patio around him."
+  },
+  {
+   "id": "b128",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b128.wav",
+   "text": "Y lo primero que hizo, me contó, fue raspar la cola vieja de la pata, como te mostré. Por eso le funcionó.",
+   "action": "he mimes scraping with his thumb on the armrest of the bench."
+  },
+  {
+   "id": "b129",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b129.wav",
+   "text": "Pero con la misma cola pegó también una banca del patio. Una como esta.",
+   "action": "he turns and puts his hand on the loose armrest of the garden bench."
+  },
+  {
+   "id": "b130",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/tfbcola/out/tfbcola/tramos/b130.wav",
+   "text": "Y cuando llegaron las lluvias, se le despegó. Y tiene lógica.",
+   "action": "he wiggles the loose armrest, which moves freely."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbcola/out/vlog/S10/vlog_S10.mp4"
+}
