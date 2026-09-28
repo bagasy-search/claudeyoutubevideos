@@ -87,18 +87,21 @@ const TOTAL = fr, AD = dur(R + "public/tfbpiso_voz.wav");
 console.log("TOTAL", TOTAL, "cuadros =", (TOTAL / FPS).toFixed(2), "s · voz", AD.toFixed(2), "s · Δ", (AD - TOTAL / FPS).toFixed(3));
 if (Math.abs(AD - TOTAL / FPS) > 0.1) throw new Error("audio y video no cuadran");
 // ---- anclaje a la palabra: W(línea, palabra, n) → cuadro global
-const W = (id, word, n = 0, dt = 0) => { const L = lineAt[id]; if (!L) throw new Error("línea sin ubicar " + id); const t = TR[id]; const w = norm(word);
+const NOPE = -1e9; // en modo PRUEBA (SKIP) lo que cae en escenas salteadas se descarta en vez de abortar
+const W = (id, word, n = 0, dt = 0) => { const L = lineAt[id]; if (!L) { if (SKIP.length) return NOPE; throw new Error("línea sin ubicar " + id); } const t = TR[id]; const w = norm(word);
   const h = caps.filter(c => c.startMs / 1000 >= t.s - 0.05 && c.startMs / 1000 < t.e && norm(c.text) === w);
   if (!h.length) throw new Error(`palabra "${word}" no está en ${id}: ${t.t}`);
   return L.f + Math.round((h[Math.min(n, h.length - 1)].startMs / 1000 - t.s + dt) * FPS); };
-const Lf = id => { if (!lineAt[id]) throw new Error("línea sin ubicar " + id); return lineAt[id].f; };
-const Le = id => Lf(id) + Math.round((TR[id].e - TR[id].s) * FPS);
+const Lf = id => { if (!lineAt[id]) { if (SKIP.length) return NOPE; throw new Error("línea sin ubicar " + id); } return lineAt[id].f; };
+const Le = id => lineAt[id] ? Lf(id) + Math.round((TR[id].e - TR[id].s) * FPS) : NOPE;
 // ---- dirección (overlays, inserts, cámara, sfx) — vive en director.mjs
 const D = direccion({ W, Lf, Le, TL, Tsrc, TOTAL, info, FPS });
-const OV = D.OV.filter(Boolean).sort((a, b) => a.from - b.from), SFX = D.SFX.filter(Boolean);
-for (const c of D.INSERTS) { TL.push(c); if (c.foley) FOLEY.push({ src: c.foley, from: c.from, dur: c.dur, startFrom: c.startFrom || 0, vol: c.foleyVol ?? 0.35 }); }
+const ok = x => x && x.from >= 0 && x.from < TOTAL && (x.dur == null || x.dur > 0);
+const OV = D.OV.filter(ok).sort((a, b) => a.from - b.from), SFX = D.SFX.filter(ok);
+if (D.OV.length !== OV.length) console.log("⚠️ overlays descartados:", D.OV.length - OV.length, SKIP.length ? "(modo prueba)" : "⛔ revisar");
+for (const c of D.INSERTS.filter(ok)) { TL.push(c); if (c.foley) FOLEY.push({ src: c.foley, from: c.from, dur: c.dur, startFrom: c.startFrom || 0, vol: c.foleyVol ?? 0.35 }); }
 // cámara: punch/shake/whip por segmento (director devuelve {matchFrom, ...cam})
-for (const cam of D.CAM) { const c = TL.find(x => x.kind === "vid" && x.from <= cam.at && cam.at < x.from + x.dur && !x.insert);
+for (const cam of D.CAM.filter(c => c.at >= 0)) { const c = TL.find(x => x.kind === "vid" && x.from <= cam.at && cam.at < x.from + x.dur && !x.insert);
   if (!c) continue; const rel = cam.at - c.from;
   if (cam.punch) (c.punch ||= []).push({ f: rel, s: cam.punch, x: cam.x, y: cam.y });
   if (cam.shake) (c.shakes ||= []).push(rel); }
@@ -120,8 +123,13 @@ for (let f = 0; f < TOTAL; f++) { const speaking = env.slice(Math.max(0, f - 3),
   // curva por tramos con el filtro volume (eval=frame) a partir de una tabla → usamos asendcmd
   const cmds = expr.map(l => { const [t, v] = l.split(" "); return `${t} volume volume ${v};`; }).join("\n");
   fs.writeFileSync(V + "_music_cmd.txt", cmds);
-  ff("-i", raw, "-af", `asendcmd=f='${(V + "_music_cmd.txt").replace(/:/g, "\\:")}',volume=0:eval=frame,afade=t=in:d=1.5,afade=t=out:st=${(mdur - 3).toFixed(2)}:d=3`, "-ac", "2", "-ar", "48000", R + "public/tfbpiso_music.wav"); }
-const MUSIC = [{ src: "tfbpiso_music.wav", from: MUSIC_FROM, dur: MUSIC_END - MUSIC_FROM, vol: 1, fadeIn: 1, fadeOut: 1 }];
+  ff("-i", raw, "-af", `asendcmd=f='${(V + "_music_cmd.txt").replace(/:/g, "\\:")}',volume=0:eval=frame,afade=t=in:d=1.5,afade=t=out:st=${(mdur - 3).toFixed(2)}:d=3`, "-ac", "2", "-ar", "48000", V + "_music_duck.wav");
+  // + AMBIENTE del patio (pájaros, tránsito lejano) PAREJO todo el video, bajo la voz: ningún hueco queda en silencio digital
+  const T = TOTAL / FPS;
+  ff("-stream_loop", "-1", "-i", R + "public/sfx/ra_ambient_day.mp3", "-i", V + "_music_duck.wav", "-filter_complex",
+    `[0:a]atrim=0:${T.toFixed(3)},volume=${D.AMB_DB}dB,aformat=channel_layouts=stereo,afade=t=out:st=${(T - 2).toFixed(2)}:d=2[a];[1:a]adelay=${Math.round(MUSIC_FROM / FPS * 1000)}:all=1[m];[a][m]amix=inputs=2:duration=first:normalize=0[o]`,
+    "-map", "[o]", "-t", T.toFixed(3), "-c:a", "aac", "-b:a", "160k", R + "public/tfbpiso_music.m4a"); }
+const MUSIC = [{ src: "tfbpiso_music.m4a", from: 0, dur: TOTAL, vol: 1, fadeIn: 1, fadeOut: 1 }];
 // ---- lámina: teclas y marcas
 const lam = TL.find(x => x.kind === "lam"); Object.assign(lam, D.LAM);
 // ---- escribir
@@ -142,7 +150,7 @@ fs.writeFileSync(R + "src/tfbpiso/timeline_tfbpiso.gen.ts", ts);
 fs.writeFileSync(V + "timeline.json", JSON.stringify({ TOTAL, TL, OV, chap, lineAt }, null, 1));
 const imgs = new Set(); const walk = o => { if (typeof o === "string" && /^(img|vid|sfx)\//.test(o)) imgs.add(o); else if (o && typeof o === "object") Object.values(o).forEach(walk); };
 walk(TL); walk(OV); walk(SFX); walk(FOLEY);
-const assets = [...imgs, "tfbpiso_voz.wav", "tfbpiso_music.wav"];
+const assets = [...imgs, "tfbpiso_voz.wav", "tfbpiso_music.m4a"];
 fs.writeFileSync(R + "_tfbpiso_assets.txt", assets.join("\n") + "\n");
 console.log("capítulos:", chap.map(([n, f]) => `${n} ${Math.floor(f / FPS / 60)}:${String(Math.floor(f / FPS % 60)).padStart(2, "0")}`).join(" | "));
 console.log("overlays", OV.length, "· sfx", SFX.length, "· foley", FOLEY.length, "· assets", assets.length);

@@ -316,10 +316,10 @@ function tramo(c) { // audio rellenado a segundo entero → mp3
 }
 async function gen(id, body) {
   let vid;
-  for (let t = 0; t < 200 && !vid; t++) {
+  for (let t = 0; t < (+process.env.VLOG_MAX_TRIES || 200) && !vid; t++) {
     const j = await fetch(B + "/videos", { method: "POST", signal: AbortSignal.timeout(120000), headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) }).then(r => r.json()).catch(e => ({ error: "red/queue " + (e?.cause?.code || e?.message) }));
     vid = j.video_id || j.id;
-    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(25000 + Math.random() * 10000); }
+    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(+(process.env.VLOG_RETRY_MS || 25000) + Math.random() * 10000); } // VLOG_RETRY_MS: con el cupo gratis agotado, reintentar cada ≥10 min (no martillar)
   }
   if (!vid) return log("GAVE UP", id);
   log("en cola", id);

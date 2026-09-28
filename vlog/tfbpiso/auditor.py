@@ -23,7 +23,7 @@ print("toma más larga min 1: %.2f s" % max(gaps))
 # 3) streams
 p = json.loads(run(["ffprobe", "-v", "error", "-show_streams", "-show_format", "-of", "json", mp4]).stdout)
 v = [s for s in p["streams"] if s["codec_type"] == "video"][0]
-nb = int(run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", mp4]).stdout.strip())
+nb = int(run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", mp4]).stdout.strip().strip(","))
 print("video", v["width"], v["height"], v.get("r_frame_rate"), v.get("color_range"), v.get("color_space"), v.get("color_primaries"), v.get("color_transfer"), "cuadros", nb, "/", total)
 if nb != total: fail.append(f"cuadros {nb}!={total}")
 if v.get("color_range") != "tv" or v.get("color_space") != "bt709": fail.append("color")

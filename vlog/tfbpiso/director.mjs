@@ -99,5 +99,11 @@ export function direccion({ W, Lf, Le, TL, Tsrc, TOTAL, FPS }) {
   { const f = Lf("s11_02"); ov("TfbWipeCompare", f, Math.min(150, Le("s11_02") - f), { before: { src: "img/tfbpiso/antes.jpg" }, after: { src: "img/tfbpiso/despues.jpg" }, sweepFrom: 3, sweepFrames: 30, rest: 1.25 }, DEEP); }
   { const f = Lf("s11_04"), e = Le("s11_04"); ov("TfbQrCard", f, e - f + 20, { qr: "img/tfbpiso/qr_tfbpiso.png", cover: "img/tfbpiso/portada-coleccion.jpg", kicker: "La colección del canal", line: "o el enlace en la descripción", url: "constructorlibre.com" }, POP); }
   { const f = Lf("s11_05"); ov("TfbTitleSlam", f, Le("s11_05") - f + 10, { lines: [{ t: "PICAR · LAVAR · MOJAR", style: "white", size: 76 }, { t: "LECHADA · CARPETA", style: "white", size: 76 }, { t: "ESCOBA · AGUA", style: "yellowbox", size: 86 }], y: 34, stagger: 12 }, POP); }
-  return { OV, SFX, INSERTS, CAM, LAM, MUSIC_FROM: 180, MUSIC_LOW: 0.07, MUSIC_HIGH: 0.3 };
+    // MINUTO 1: ninguna toma quieta > ~3,5 s → salto de zoom (jump-cut de vlog) en los planos largos que no son del tráiler
+  for (const c of TL.filter(x => x.kind === "vid" && !x.trl && x.from < 60 * FPS)) {
+    let k = 0; for (let f = c.from + 100; f < Math.min(c.from + c.dur - 20, 60 * FPS); f += 100, k++) {
+      if (CAM.some(q => Math.abs(q.at - f) < 45) || INSERTS.some(q => f >= q.from - 20 && f < q.from + q.dur + 20)) continue;
+      CAM.push({ at: f, punch: k % 2 ? 1 : 1.17, x: 0.5, y: 0.36 }); }
+  }
+  return { OV, SFX, INSERTS, CAM, LAM, MUSIC_FROM: 180, MUSIC_LOW: 0.07, MUSIC_HIGH: 0.3, AMB_DB: 10 };
 }
