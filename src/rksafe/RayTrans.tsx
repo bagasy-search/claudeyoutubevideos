@@ -25,18 +25,21 @@ export const RayTrans: React.FC<{
 }> = ({ inKind = "cut", outKind = "cut", d, ov = 10, children }) => {
   const f = useCurrentFrame();
   const e = Easing.bezier(0.6, 0, 0.2, 1);
-  const pin = interpolate(f, [0, ov], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
-  const pout = interpolate(f, [d, d + ov], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
+  // ⛔ ov=0 (el ÚLTIMO plano, o uno sin vecino contiguo) daría inputRange [0,0] y Remotion TIRA: mató
+  //    el último chunk del farm en rkremote. Con ov<1 no hay transición: corte seco.
+  const o = Math.max(1, ov);
+  const pin = ov >= 1 ? interpolate(f, [0, o], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e }) : 1;
+  const pout = ov >= 1 ? interpolate(f, [d, d + o], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e }) : 0;
   let style: React.CSSProperties = {};
   let filo: React.ReactNode = null;
-  if (f < ov && inKind !== "cut") {
+  if (ov >= 1 && f < ov && inKind !== "cut") {
     if (inKind === "push") style = { transform: `translateX(${((1 - pin) * 100).toFixed(2)}%)` };
     else if (inKind === "wipe") {
       style = { clipPath: `inset(0 0 0 ${((1 - pin) * 100).toFixed(2)}%)` };
       filo = <div style={{ position: "absolute", top: 0, bottom: 0, left: `${((1 - pin) * 100).toFixed(2)}%`, width: 6, marginLeft: -3, background: V.brass, boxShadow: `0 0 24px ${V.brass}` }} />;
     } else if (inKind === "iris") style = { clipPath: `circle(${(pin * 78).toFixed(2)}% at 50% 46%)` };
     else if (inKind === "zoom") style = { transform: `scale(${(1.18 - 0.18 * pin).toFixed(4)})`, opacity: Math.min(1, pin * 1.6) };
-  } else if (f >= d && outKind === "push") {
+  } else if (ov >= 1 && f >= d && outKind === "push") {
     style = { transform: `translateX(${(-pout * 100).toFixed(2)}%)` };
   }
   return (
