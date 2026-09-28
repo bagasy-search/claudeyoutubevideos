@@ -3,13 +3,24 @@
 // node vlog/tfbpintura/sup.mjs [MAXF=10]  · log en vlog/tfbpintura/sup.log · estado en vlog/tfbpintura/sup_state.json
 // Pausa: crear vlog/tfbpintura/sup.pause  ·  Excluir ids: vlog/tfbpintura/sup_hold.txt (uno por línea)
 import fs from "fs"; import { spawn } from "child_process";
-const V = "vlog/tfbpintura/", MAXF = +(process.argv[2] || 10), GROUP = 3;
+const V = "vlog/tfbpintura/", GROUP = 1; let MAXF = +(process.argv[2] || 1);
+// ritmo adaptativo (orden del creador 27-sep): 1 en vuelo mientras agnes esté en el cupo; si en los últimos 40 min
+// salieron ≥2 clips OK (agnes volvió a aceptar), sube a 3 como máximo (somos 6 agentes). sup_max.txt lo fuerza a mano.
+function ritmo() {
+  if (fs.existsSync(V + "sup_max.txt")) return +fs.readFileSync(V + "sup_max.txt", "utf8").trim() || 1;
+  const hoy = new Date().toISOString().slice(0, 10); let n = 0;
+  for (const f of fs.readdirSync(V).filter(f => /^clips_\w+\.log$/.test(f)))
+    for (const ln of fs.readFileSync(V + f, "utf8").split(String.fromCharCode(10))) { const m = ln.match(/^(\d\d):(\d\d):(\d\d) OK b/); if (!m) continue;
+      const t = Date.parse(`${hoy}T${m[1]}:${m[2]}:${m[3]}Z`); const d = Date.now() - t; if (d >= 0 && d < 40 * 60e3) n++; }
+  return n >= 2 ? 3 : 1;
+}
 const SF = V + "sup_state.json", st = fs.existsSync(SF) ? JSON.parse(fs.readFileSync(SF, "utf8")) : { launched: {} };
 const log = (...a) => fs.appendFileSync(V + "sup.log", new Date().toISOString().slice(11, 19) + " " + a.join(" ") + "\n");
 const running = new Map(); // pid -> {ids}
 const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
 function tick() {
   if (fs.existsSync(V + "sup.pause")) return;
+  const m2 = ritmo(); if (m2 !== MAXF) { log("ritmo", MAXF, "→", m2); MAXF = m2; }
   const hold = new Set(fs.existsSync(V + "sup_hold.txt") ? fs.readFileSync(V + "sup_hold.txt", "utf8").split(/\s+/).filter(Boolean) : []);
   let inflight = [...running.values()].reduce((s, r) => s + r.ids.length, 0);
   const plans = fs.readdirSync(V).filter(f => /^plan_\w+\.json$/.test(f)).sort();
@@ -17,14 +28,16 @@ function tick() {
   for (const pf of plans) {
     const P = JSON.parse(fs.readFileSync(V + pf, "utf8")), ANC = P.dir + "anc/", CL = P.dir + "clips/";
     const done = { ...J(CL + "state.json"), ...J(CL + "state_det.json") };
-    const ready = P.clips.filter(c => !done[c.id] && !st.launched[c.id] && !hold.has(c.id) && (c.audio || c.line || c.secs) &&
+    const regen = new Set(fs.existsSync(V + "sup_regen.txt") ? fs.readFileSync(V + "sup_regen.txt", "utf8").split(/\s+/).filter(Boolean) : []);
+    st.regen = st.regen || {};
+    const ready = P.clips.filter(c => (!done[c.id] || (regen.has(c.id) && !st.regen[c.id])) && !st.launched[c.id] && !hold.has(c.id) && (c.audio || c.line || c.secs) &&
       (c.detail ? fs.existsSync(ANC + `D_${c.id}_1.png`) && fs.existsSync(ANC + `D_${c.id}_2.png`) : fs.existsSync(ANC + c.a + ".png") && fs.existsSync(ANC + c.b + ".png")));
     pending += P.clips.filter(c => !done[c.id]).length;
     while (ready.length && inflight < MAXF) {
       const ids = ready.splice(0, Math.min(GROUP, MAXF - inflight)).map(c => c.id);
       const out = fs.openSync(V + `clips_${pf.slice(5, -5)}.log`, "a");
       const ch = spawn(process.execPath, ["scripts/agnes_vlog.mjs", V + pf, "clips", ...ids], { stdio: ["ignore", out, out], windowsHide: true });
-      running.set(ch.pid, { ids }); inflight += ids.length; ids.forEach(i => st.launched[i] = Date.now());
+      running.set(ch.pid, { ids }); inflight += ids.length; ids.forEach(i => { st.launched[i] = Date.now(); if (done[i]) st.regen[i] = 1; });
       log("lanzo", pf, ids.join(" "), "pid", ch.pid, "· en vuelo", inflight);
       ch.on("exit", code => { running.delete(ch.pid); log("terminó pid", ch.pid, ids.join(" "), "code", code);
         // si no quedó archivo, se puede volver a lanzar
@@ -40,7 +53,7 @@ import { execSync } from "child_process";
 try {
   const ps = execSync(`powershell -NoProfile -Command "Get-CimInstance Win32_Process | Where-Object Name -eq 'node.exe' | ForEach-Object { [string]$_.ProcessId + ' ' + $_.CommandLine } | Out-String -Width 8000"`, { encoding: "utf8", windowsHide: true });
   for (const ln of ps.split(/\r?\n/)) { const m = ln.match(/^(\d+) .*agnes_vlog\.mjs (vlog\/tfbpintura\/plan_\w+\.json) clips (.+)$/); if (!m) continue;
-    const ids = m[3].trim().split(/\s+/), P = JSON.parse(fs.readFileSync(m[2], "utf8")); running.set(+m[1], { ids, P, adopt: true }); ids.forEach(i => st.launched[i] = Date.now()); }
+    const ids = m[3].trim().split(/\s+/), P = JSON.parse(fs.readFileSync(m[2], "utf8")); running.set(+m[1], { ids, P, adopt: true }); ids.forEach(i => { st.launched[i] = Date.now(); if (done[i]) st.regen[i] = 1; }); }
 } catch (e) { log("no pude listar procesos", e.message); }
 setInterval(() => { for (const [pid, r] of running) { if (!r.adopt) continue; try { process.kill(pid, 0); } catch { running.delete(pid); log("terminó (adoptado) pid", pid, r.ids.join(" "));
   const d = { ...J(r.P.dir + "clips/state.json"), ...J(r.P.dir + "clips/state_det.json") }; r.ids.forEach(i => { if (!d[i]) delete st.launched[i]; }); } } }, 30000);
