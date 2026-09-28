@@ -18,7 +18,7 @@ export const LorOvenDial: React.FC<{ stages: { temp: number; minutes: string }[]
   const prevT = si === 0 ? TEMP_MIN : stages[si - 1].temp;
   const temp = interpolate(local, [0, 0.9 * fps], [prevT, stages[si].temp], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.3, 1.25, 0.5, 1) });
   const ang = angOf(temp);
-  const timerAng = interpolate(local, [0.9 * fps, segDur], [0, 300], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const timerAng = interpolate(local, [0.9 * fps, Math.max(0.9 * fps + 1, segDur)], [0, 300], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const ticks = [];
   for (let t = 200; t <= 550; t += 50) {
     const a = (angOf(t) - 90) * Math.PI / 180;

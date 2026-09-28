@@ -90,7 +90,7 @@ export const LorCookbook3D: React.FC<{ pages: BookPage[]; flips?: number; flipSt
   const push = interpolate(frame, [endFlip - 6, Math.max(endFlip + 10, durationInFrames - 1)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.3, 0, 0.2, 1) });
   const camPos: [number, number, number] = [0.25 + push * 0.5, 3.3 - push * 0.45, 1.9 - push * 0.75];
   const target: [number, number, number] = [0.1 + push * 0.65, 0, 0.05];
-  const coverTitleOp = interpolate(frame, [0, 10, flipStart, flipStart + 8], [1, 1, 1, 0], { extrapolateRight: "clamp" });
+  const coverTitleOp = interpolate(frame, [flipStart, flipStart + 8], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ backgroundColor: "#E9DCC0" }}>
       {ready && coverMat && finalRight && leftBlank ? (

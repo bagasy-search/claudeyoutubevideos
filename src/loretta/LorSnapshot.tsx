@@ -43,7 +43,7 @@ export const LorEraTimeline: React.FC<{ from: number; to: number; photos: string
   const tIn = durationInFrames * 0.5; // mitad: caen las fotos · mitad: entran los intrusos
   const yearP = interpolate(f, [0, durationInFrames - 10], [0, 1], cl);
   const year = Math.round(from + (to - from) * yearP);
-  const fade = interpolate(f, [tIn, durationInFrames - 6], [0, 1], cl);
+  const fade = interpolate(f, [tIn, Math.max(tIn + 1, durationInFrames - 6)], [0, 1], cl);
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Wood />
