@@ -131,7 +131,7 @@ export const CUES: Cue[] = [
   { key: "clip_754233", start: 754.2333333333333, dur: 4, el: (d) => <RaySecurityCam image={"img/rkwindow_k09.jpg"} clip={"broll/rkwindow/rkwindow_k09.mp4"} label={"CAM 01 · FRONT PORCH"} date="04 / 17 / 2026" clockStart={28992} intensity={1} push /> },
   { key: "clip_758233", start: 758.2333333333333, dur: 5.233333333333333, el: (d) => <Clip src="broll/rkwindow_real/rkwindow_r161.mp4" rate={1} /> },
   { key: "clip_763467", start: 763.4666666666667, dur: 4, el: (d) => <Clip src="broll/rkwindow/rkwindow_k07.mp4" rate={1} /> },
-  { key: "componente_767467", start: 767.4666666666667, dur: 5.16667, el: (d) => <PullQuote durationInFrames={d} {...({"quote":"It does not cost money. It costs attention.","attrib":"Ray Kessler","bed":"img/rkwindow_k01_blur.jpg"} as any)} /> },
+  { key: "componente_767467", start: 767.4666666666667, dur: 5.166666666666667, el: (d) => <PullQuote durationInFrames={d} {...({"quote":"It does not cost money. It costs attention.","attrib":"Ray Kessler","bed":"img/rkwindow_k01_blur.jpg"} as any)} /> },
   { key: "clip_772633", start: 772.6333333333333, dur: 5.8, el: (d) => <Clip src="broll/rkwindow_real/rkwindow_r162.mp4" rate={1} /> },
   { key: "clip_778433", start: 778.4333333333333, dur: 3.6, el: (d) => <Clip src="broll/rkwindow_real/rkwindow_r110.mp4" rate={1} /> },
   { key: "clip_782033", start: 782.0333333333333, dur: 4.633333333333334, el: (d) => <Clip src="broll/rkwindow_real/rkwindow_r163.mp4" rate={1} /> },
