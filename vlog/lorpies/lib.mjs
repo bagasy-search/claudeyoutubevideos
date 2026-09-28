@@ -6,4 +6,4 @@ export const WHO = "Loretta, an 81-year-old woman with short curly white hair, l
 export const KIT = "her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book";
 export const A = (id, from, prompt) => ({ id, from, prompt });
 export const act = (s) => s + " She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time.";
-export const plan = (dir, anchors, clips) => ({ dir: R + dir, face: R + "public/ref_lorpies_facecrop.png", k0_from: R + "public/ref_lorpies.png", pronoun: "she", light: LIGHT, look: LOOK, anchors, clips, out: R + dir + "/out.mp4" });
+export const plan = (dir, anchors, clips) => ({ dir: R + dir, face: R + "public/ref_lorpies_facecrop.png", k0_from: R + "public/ref_lorpies.png", pronoun: "she", lang: "en", light: LIGHT, look: LOOK, anchors, clips, out: R + dir + "/out.mp4" });

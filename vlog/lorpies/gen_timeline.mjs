@@ -14,6 +14,15 @@ const probeDur = (p) => { try { return +execFileSync("ffprobe", ["-v", "error", 
 const CLIP0 = { m1: 0, m2: 6.80, m4: 38.62, m5: 46.42 };
 for (const [k, v] of Object.entries(vl)) if (!(k in CLIP0)) CLIP0[k] = v.s - 0.03;
 const AV_READY = ex("avatar_clips/lorpies/reel30.mp4");
+// foley REAL de public/sfx debajo de los detalles de agnes v2.0 (mudos) — plan intermedio del creador (28-sep)
+const FOL = { hd_chess: "lorf_lor_wood.mp3", hd_sugar: "lorf_px_wipe_alt1.mp3", hd_lemon: "lorf_px_wipe.mp3", hd_mock: "lorf_lor_wood.mp3", hd_book: "lorf_sfx_paper_tick.mp3",
+  h_c_chess1: "lorf_lor_wood.mp3", h_c_chess2: "lorf_px_wipe.mp3", h_c_chess3: "lorf_px_gluglu_alt1.mp3", h_c_crust: "lorf_px_bubble.mp3", h_c_sugar1: "lorf_px_gluglu_alt1.mp3",
+  h_c_sugar2: "lorf_px_wipe_alt1.mp3", h_c_sugar3: "lorf_lor_wood.mp3", h_c_shoo1: "lorf_px_wipe.mp3", h_c_shoo2: "lorf_px_fizz.mp3", h_c_bs1: "lorf_lor_sizzle.mp3",
+  h_c_bs2: "lorf_lor_sizzle.mp3", h_c_bs3: "lorf_lor_sizzle.mp3", h_c_lem1: "lorf_px_bubble.mp3", h_c_lem2: "lorf_px_wipe_alt1.mp3", h_c_lem3: "lorf_px_wipe.mp3",
+  h_c_rai1: "lorf_px_bubble.mp3", h_c_rai2: "lorf_px_bubble.mp3", h_c_mock1: "lorf_lor_wood.mp3", h_c_mock2: "lorf_px_bubble.mp3", h_c_mock3: "lorf_lor_wood.mp3" };
+const v2 = (name) => { const p = `broll/lorpies/${name}.mp4`, im = `img/lorpies/${name}.jpg`;
+  if (ex(p)) return { clip: p, clipF: Math.floor(probeDur(p) * FPS) - 1, img: ex(im) ? im : null };
+  return ex(im) ? { img: im } : null; }; // clip rechazado a ojo → la foto quieta con Ken-Burns
 const TOTAL = F(END + 0.4);
 const cues = [], ovs = [], sfx = [], foley = [];
 const warn = [];
@@ -27,14 +36,23 @@ shots.forEach((s, i) => {
   } else if (s.kind === "vl") {
     const p = `vid/lorpies/${s.name}.mp4`;
     if (ex(p)) { c.src = p; c.sf = Math.max(0, F(s.start - CLIP0[s.name])); }
-    else { // repuesto: el avatar cubre el tramo (el reel incluye las ventanas de los clips)
+    else { // repuesto: el avatar cubre el tramo (el reel incluye las ventanas de los clips) + el detalle de manos (v2.0) de esa acción
       const w = avwin.find((w) => s.start >= w.s - 0.06 && s.end <= w.e + 0.06);
       c.k = "av"; c.src = AV_READY ? "avatar_clips/lorpies/reel30.mp4" : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0; c.fallback = s.name;
+      const d = v2("h_" + s.name);
+      if (d && s.dur > 4) { // corte en la palabra más cercana al 45 % del tramo
+        const tgt = s.start + s.dur * 0.45; let cut = null;
+        for (const x of W) if (x.s > s.start + 1.8 && x.s < s.end - 2.2 && (cut == null || Math.abs(x.s - tgt) < Math.abs(cut - tgt))) cut = x.s - 0.04;
+        if (cut) { const fc = F(cut); const c2 = { k: "img", from: fc, dur: c.from + c.dur - fc, seed: (fc * 2654435761) >>> 0, ...d, detail: "h_" + s.name };
+          c.dur = fc - c.from; cues.push(c); foley.push({ from: fc, dur: c2.dur, src: "sfx/" + FOL["h_" + s.name] }); cues.push(c2); return; }
+      }
     }
   } else if (s.kind === "kf") {
     const p = `vid/lorpies/${s.name}.mp4`;
     if (ex(p)) { c.src = p; c.sf = 0; if (ex(`vid/lorpies/${s.name}_foley.m4a`)) foley.push({ from: f0, dur: c.dur, src: `vid/lorpies/${s.name}_foley.m4a` }); }
-    else { c.k = "img"; c.src = null; c.fallback = s.name; }
+    else { const d = v2("hd_" + s.name.replace(/^d_/, ""));
+      if (d) { Object.assign(c, { k: "img" }, d); foley.push({ from: f0, dur: c.dur, src: "sfx/" + FOL["hd_" + s.name.replace(/^d_/, "")] }); }
+      else { c.k = "img"; c.src = null; c.fallback = s.name; } }
   } else if (s.kind === "bi" || s.kind === "lor") {
     const st = `broll/lorpies_st30/${s.name}.mp4`; // stock REAL (Pexels, 30/1 CFR, mirado en hoja) manda sobre el clip agnes
     const clip = ex(st) ? st : `broll/lorpies/${s.name}.mp4`, img = `img/lorpies/${s.name}.jpg`;
@@ -66,7 +84,7 @@ cues.forEach((c, i) => {
   if (t < 60 && i > 0 && c.k !== "av") S(t - 0.12, i % 2 ? "whoosh.mp3" : "sfx_whoosh_soft.mp3", 0.22, 20);
   if (c.k === "comp" && c.name === "LorPieCount") { S(t, "lor_whoosh_airy.mp3", 0.3, 40); S(t + 0.4, "lor_impact.mp3", 0.32, 60); }
   if (c.k === "comp" && ["LorYear", "LorTrick"].includes(c.name)) S(t + 0.2, "text_slam.mp3", 0.28, 40);
-  if (c.k === "comp" && c.name === "LorCookbook3D") S(t + 0.2, "sfx_paper_tick.mp3", 0.3, 40);
+  if (c.k === "comp" && c.name === "LorCookbook3D") S(t + 0.2, "lorf_sfx_paper_tick.mp3", 0.3, 40);
   if (c.k === "comp" && ["LorPie3D", "LorPotluckTable", "LorEraTimeline"].includes(c.name)) S(t, "lor_swell.mp3", 0.22, 80);
   if (c.k === "snap") S(t + 0.15, "lor_paper_pop.mp3", 0.3, 30);
 });

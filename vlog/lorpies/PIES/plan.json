@@ -1,0 +1,426 @@
+{
+ "dir": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/PIES",
+ "face": "D:/Proyectos/video2-wt/lorpies/public/ref_lorpies_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/lorpies/public/ref_lorpies.png",
+ "pronoun": "she",
+ "light": "This is one ordinary frame pulled from a normal handheld home video shot by her grandson with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered kitchen background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the window a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; hair with stray strands; clothes and apron with real creases and flour dust. People are caught mid-action, unposed. Daylight from the window on the left plus the ceiling lamp.",
+ "look": "Ordinary handheld home video filmed by her grandson with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural old hands; she moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "CA0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She sits at the floury table cracking a brown egg on the rim of a yellow mixing bowl full of pale sugary filling, a wooden spoon in the bowl, two broken eggshells beside it, looking at the camera mid-sentence."
+  },
+  {
+   "id": "CA1",
+   "from": [
+    "CA0"
+   ],
+   "prompt": "Same place a few seconds later: she stirs the filling slowly with the wooden spoon, gently, the egg disappearing into it, looking at the camera while she talks."
+  },
+  {
+   "id": "CA2",
+   "from": [
+    "CA1"
+   ],
+   "prompt": "Same place a few seconds later: she holds the wooden spoon up and wags it at the camera like a stern but amused teacher, the yellow bowl in front of her."
+  },
+  {
+   "id": "CB0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She stands at the floury table pouring pale yellow chess pie filling from the yellow mixing bowl into an unbaked crimped pie crust in a clear glass pie plate, talking to the camera."
+  },
+  {
+   "id": "CB1",
+   "from": [
+    "CB0"
+   ],
+   "prompt": "Same place a few seconds later: the crust is full of filling and she scrapes the last of it from the bowl with a rubber spatula, glancing up at the camera."
+  },
+  {
+   "id": "CC0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She sits at the floury table spooning ice water from a tall glass of ice water onto crumbly flour and fat in a big mixing bowl, a tablespoon in her hand, concentrating."
+  },
+  {
+   "id": "CC1",
+   "from": [
+    "CC0"
+   ],
+   "prompt": "Same place a few seconds later: she squeezes a handful of pie dough in her fist and opens her hand to show the camera that it holds together, satisfied."
+  },
+  {
+   "id": "CS0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She sits at the floury table pouring heavy cream from a glass measuring cup into an unbaked pie shell in a glass plate that has a layer of sugar and flour in the bottom, a carton of cream beside her."
+  },
+  {
+   "id": "CS1",
+   "from": [
+    "CS0"
+   ],
+   "prompt": "Same place a few seconds later: she stirs the cream in the pie shell gently with one index finger, laughing at the camera."
+  },
+  {
+   "id": "CS2",
+   "from": [
+    "CS1"
+   ],
+   "prompt": "Same place a few seconds later: she holds her creamy index finger up toward the camera with a mischievous grin, the pale liquid pie in front of her."
+  },
+  {
+   "id": "CS3",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She stands next to the white enamel stove holding a full glass pie plate of pale liquid sugar cream pie with both hands in quilted oven mitts, walking carefully, eyes on the pie, the oven door open."
+  },
+  {
+   "id": "CS4",
+   "from": [
+    "CS3"
+   ],
+   "prompt": "Same place a few seconds later: she bends and slides the pie onto the rack inside the open white enamel oven, careful, the pie still level."
+  },
+  {
+   "id": "CH0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She sits at the floury table rubbing flour, brown sugar and cold butter together between her fingertips over a yellow mixing bowl, crumbs falling back into the bowl, looking at the camera."
+  },
+  {
+   "id": "CH1",
+   "from": [
+    "CH0"
+   ],
+   "prompt": "Same place a few seconds later: she lifts both floury hands and lets the last crumbs fall into the bowl, showing the coarse crumbs, pleased."
+  },
+  {
+   "id": "CH2",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She sits at the floury table stirring baking soda into a glass measuring cup of steaming hot water with a spoon, the water fizzing and foaming up, a bowl of dark molasses beside it."
+  },
+  {
+   "id": "CH3",
+   "from": [
+    "CH2"
+   ],
+   "prompt": "Same place a few seconds later: she pours the foamy water from the measuring cup into the bowl of dark molasses and stirs, the molasses turning lighter brown."
+  },
+  {
+   "id": "CT0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She stands at the white enamel stove stirring foaming melted butter in a black cast iron skillet with a wooden spoon, a cup of dark brown sugar in her other hand, talking to the camera."
+  },
+  {
+   "id": "CT1",
+   "from": [
+    "CT0"
+   ],
+   "prompt": "Same place a few seconds later: she tips the dark brown sugar from the cup into the foaming butter in the skillet, stirring."
+  },
+  {
+   "id": "CT2",
+   "from": [
+    "CT1"
+   ],
+   "prompt": "Same place a few seconds later: the syrup in the skillet is dark amber and bubbling; she holds the wooden spoon up and raises one eyebrow at the camera knowingly."
+  },
+  {
+   "id": "CT3",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She stands at the white enamel stove pouring warm milk from a small saucepan into the black skillet of dark butterscotch syrup, a big puff of steam rising."
+  },
+  {
+   "id": "CT4",
+   "from": [
+    "CT3"
+   ],
+   "prompt": "Same place a few seconds later: she stirs the skillet and the mixture has become smooth light brown milk, the steam settling."
+  },
+  {
+   "id": "CL0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She stands at the white enamel stove spooning a little hot clear lemon mixture from a saucepan into a small bowl of beaten egg yolks, careful, lemons on the counter."
+  },
+  {
+   "id": "CL1",
+   "from": [
+    "CL0"
+   ],
+   "prompt": "Same place a few seconds later: she whisks the small bowl of warmed yolks briskly with a fork, the saucepan steaming beside her."
+  },
+  {
+   "id": "CL2",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She stands at the floury table holding a big glass bowl against her body and beating egg whites with an old electric hand mixer, the whites foamy, a cup of sugar beside the bowl."
+  },
+  {
+   "id": "CL3",
+   "from": [
+    "CL2"
+   ],
+   "prompt": "Same place a few seconds later: the whites are stiff and glossy and she lifts the beaters to show a tall stiff peak to the camera, proud."
+  },
+  {
+   "id": "CL4",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She sits at the floury table spreading white meringue with a spatula over a lemon pie with bright yellow filling in a glass plate, pushing it out to touch the crimped crust edge."
+  },
+  {
+   "id": "CL5",
+   "from": [
+    "CL4"
+   ],
+   "prompt": "Same place a few seconds later: the meringue covers the whole pie sealed to the crust, and she pulls up curled peaks with the spatula, glancing at the camera."
+  },
+  {
+   "id": "CR0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She stands at the white enamel stove pouring a cup of dark raisins into a small saucepan of water, steam rising, a wooden spoon resting on the stove."
+  },
+  {
+   "id": "CR1",
+   "from": [
+    "CR0"
+   ],
+   "prompt": "Same place a few seconds later: she stands at the white enamel sink draining the steaming plump raisins in a small metal sieve, a puff of steam."
+  },
+  {
+   "id": "CR2",
+   "from": [
+    "CR1"
+   ],
+   "prompt": "Same place a few seconds later: she holds up a spoonful of plump shiny raisins toward the camera with a delighted smile."
+  },
+  {
+   "id": "CM0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She sits at the floury table holding a round butter cracker above an unbaked pie crust in a glass plate and breaking it into quarters with her fingers, a box of crackers without any label beside her."
+  },
+  {
+   "id": "CM1",
+   "from": [
+    "CM0"
+   ],
+   "prompt": "Same place a few seconds later: the crust is half full of big cracker pieces and she holds one quarter up to the camera like a slice of apple, smiling."
+  },
+  {
+   "id": "CM2",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She stands at the kitchen window with the yellow checked curtains, a saucepan of clear syrup cooling on the windowsill, dipping the tip of one finger into the syrup to test it."
+  },
+  {
+   "id": "CM3",
+   "from": [
+    "CM2"
+   ],
+   "prompt": "Same place a few seconds later: she holds up her fingertip, thoughtful, then nods at the camera, the saucepan still on the windowsill."
+  },
+  {
+   "id": "CM4",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same kitchen, same moment of the day. Loretta, an 81-year-old woman with short curly white hair, light-framed glasses, a pearl necklace, a lilac cardigan over a lilac blouse and a floral apron with a green trim, old hands with age spots and veins, in her 1950s white farmhouse kitchen: a white enamel stove, yellow checked curtains on the window at the left, a ceramic rooster on the wooden dresser, a small wooden cross on the wall, a paper church calendar, a floury wooden table with a worn spiral recipe book. She sits at the table beside a golden double crust pie with one slice cut and served on a flowered plate; from the edge of the frame a young man's hand holds a fork taking a bite from the slice; she watches, amused."
+  },
+  {
+   "id": "CM5",
+   "from": [
+    "CM4"
+   ],
+   "prompt": "Same place a few seconds later: she laughs and points at the young man at the edge of the frame, the forkful gone from the plate."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c_chess1",
+   "a": "CA0",
+   "b": "CA1",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_chess1.wav",
+   "text": "Now the eggs go in one at a time, and here's the first thing nobody tells you. You stir them in, you do not beat them. You don't want air in this pie.",
+   "action": "She cracks the egg into the bowl and stirs it in gently with the wooden spoon while she explains to her grandson. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_chess2",
+   "a": "CA1",
+   "b": "CA2",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_chess2.wav",
+   "text": "If you whip it, it puffs up in the oven like a souffle and then it falls and cracks down the middle. Stir, honey. Just stir.",
+   "action": "She keeps stirring gently, then lifts the wooden spoon and wags it at the camera, amused. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_chess3",
+   "a": "CB0",
+   "b": "CB1",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_chess3.wav",
+   "text": "You pour it into the crust, and it goes into a three hundred and fifty degree",
+   "action": "She pours the filling into the crust and scrapes the bowl with the spatula. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_crust",
+   "a": "CC0",
+   "b": "CC1",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_crust.wav",
+   "text": "Then ice water, three or four tablespoons, a spoon at a time, just until it holds together when you squeeze it.",
+   "action": "She spoons ice water onto the dough a little at a time, then squeezes a handful to show it holds. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_sugar1",
+   "a": "CS0",
+   "b": "CS1",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_sugar1.wav",
+   "text": "And now watch this, because this is Mrs. Lindqvist's trick. You put the dry mix right into the pie shell, and you pour the cream over it, and you stir it right there in the crust, gently, with your finger.",
+   "action": "She pours the cream into the pie shell and stirs it gently with her finger, laughing. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_sugar2",
+   "a": "CS1",
+   "b": "CS2",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_sugar2.wav",
+   "text": "No beater, no whisk. You don't want foam. The old Indiana ladies all did it this way, and she said if your finger's clean enough for the Lord, it's clean enough for the pie.",
+   "action": "She finishes stirring with her finger and holds it up to the camera, joking. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_sugar3",
+   "a": "CS3",
+   "b": "CS4",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_sugar3.wav",
+   "text": "Now carrying it to the oven is the hard part, because it's runny as milk. You go slow.",
+   "action": "She carries the runny pie very carefully to the oven and slides it in. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_shoo1",
+   "a": "CH0",
+   "b": "CH1",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_shoo1.wav",
+   "text": "Like this. Just rub it and let it fall. Rub it and let it fall. My hands aren't what they used to be, but they still remember this part.",
+   "action": "She rubs the butter into the flour and sugar with her fingertips and lets the crumbs fall. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_shoo2",
+   "a": "CH2",
+   "b": "CH3",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_shoo2.wav",
+   "text": "And here's Esther's trick. You dissolve the soda in the hot water first, see, it fizzes up, and then you stir that into the molasses and egg.",
+   "action": "She stirs the soda into the hot water, it fizzes, then she pours it into the molasses and stirs. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_bs1",
+   "a": "CT0",
+   "b": "CT1",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_bs1.wav",
+   "text": "You melt the butter in the skillet till it foams and starts to smell nutty, and then you stir in the brown sugar and you let it cook.",
+   "action": "She stirs the foaming butter in the iron skillet and tips in the brown sugar. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_bs2",
+   "a": "CT1",
+   "b": "CT2",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_bs2.wav",
+   "text": "And here's the trick. You take it darker than you think. When you're scared it's going to burn, give it one more minute. That's where the flavor is.",
+   "action": "She keeps stirring the darkening syrup, then raises the spoon and an eyebrow at the camera. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_bs3",
+   "a": "CT3",
+   "b": "CT4",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_bs3.wav",
+   "text": "Pour it in slow. It'll hiss at you. Keep stirring and it all melts back together into a beautiful brown milk.",
+   "action": "She pours the warm milk into the skillet, it hisses and steams, and she keeps stirring. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_lem1",
+   "a": "CL0",
+   "b": "CL1",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_lem1.wav",
+   "text": "Then you take a little of that hot mixture and you stir it into your beaten yolks, so they warm up slow and don't scramble.",
+   "action": "She spoons hot mixture into the yolks and whisks them. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_lem2",
+   "a": "CL2",
+   "b": "CL3",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_lem2.wav",
+   "text": "You beat the whites till they foam, then you add the sugar a spoon at a time, and you keep beating until it stands up in stiff shiny peaks.",
+   "action": "She beats the whites with the hand mixer until they stand in stiff shiny peaks, then lifts the beaters. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_lem3",
+   "a": "CL4",
+   "b": "CL5",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_lem3.wav",
+   "text": "And you push the meringue all the way out until it touches the crust all the way around. Seal it, like a lid. That's what stops it from weeping and from shrinking away from the",
+   "action": "She pushes the meringue out to the crust edge all the way around and pulls up peaks. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_rai1",
+   "a": "CR0",
+   "b": "CR1",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_rai1.wav",
+   "text": "Now the trick with this one is the raisins. You put them in a little pan, cover them with water, and simmer them five minutes. Then drain them.",
+   "action": "She pours the raisins into the simmering water, then drains them at the sink. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_rai2",
+   "a": "CR1",
+   "b": "CR2",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_rai2.wav",
+   "text": "Plump them first. They come out soft and juicy, like they just remembered they were grapes.",
+   "action": "She shakes the sieve and shows a spoonful of plump raisins to the camera. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_mock1",
+   "a": "CM0",
+   "b": "CM1",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_mock1.wav",
+   "text": "You don't crush the crackers. You break them with your hands, into big pieces, about like quarters. Like apple slices.",
+   "action": "She breaks the crackers by hand into big pieces into the crust and shows one piece. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_mock2",
+   "a": "CM2",
+   "b": "CM3",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_mock2.wav",
+   "text": "And here's the real secret. The part I never showed anybody. Mama let the syrup cool. All the way.",
+   "action": "She tests the cooling syrup with her fingertip at the window, telling the secret. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  },
+  {
+   "id": "c_mock3",
+   "a": "CM4",
+   "b": "CM5",
+   "audio": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/tramos/c_mock3.wav",
+   "text": "Danny, taste that. Go on. Tell them what it is. See? Apples. He knows it's crackers, and he still says apples.",
+   "action": "She watches her grandson's hand take a bite of the pie and laughs at him. She wears the same lilac cardigan, pearl necklace, light-framed glasses and floral apron with the green trim the whole time."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/lorpies/vlog/lorpies/PIES/out.mp4",
+ "lang": "en"
+}
