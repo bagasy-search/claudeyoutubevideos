@@ -1,0 +1,1684 @@
+{
+ "total": 794.463,
+ "avatarEnd": 794.463,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 3.7666666666666666,
+   "dur": 3,
+   "sec": "S1",
+   "lugar": "truck",
+   "kind": "imagen",
+   "asset": "img/rkremote_s1_02.jpg"
+  },
+  {
+   "t": 6.766666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S1",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkremote_s1_06.jpg"
+  },
+  {
+   "t": 10.8,
+   "dur": 2.566666666666667,
+   "sec": "S1",
+   "lugar": "door",
+   "kind": "imagen",
+   "asset": "img/rkremote_s1_10.jpg"
+  },
+  {
+   "t": 13.366666666666667,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "RemoteTally",
+   "props": {
+    "kicker": "WHAT HE KEPT",
+    "title": "",
+    "items": [
+     {
+      "text": "Two more remotes"
+     },
+     {
+      "text": "The keypad code"
+     },
+     {
+      "text": "His old car"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s1_01_blur.jpg"
+  },
+  {
+   "t": 28.666666666666668,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "LastDoorCutaway",
+   "props": {
+    "stage": "unlocked",
+    "kicker": "THE LAST DOOR",
+    "title": "Garage to kitchen",
+    "caption": ""
+   },
+   "bed": "img/rkremote_s1_01_blur.jpg"
+  },
+  {
+   "t": 35.666666666666664,
+   "dur": 1.8666666666666667,
+   "sec": "S1",
+   "lugar": "driveway",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r02.mp4",
+   "rate": 1
+  },
+  {
+   "t": 37.53333333333333,
+   "dur": 5.6,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "TODAY",
+    "title": "Today",
+    "items": [
+     {
+      "text": "Old remotes: dead"
+     },
+     {
+      "text": "The door nobody locks"
+     },
+     {
+      "text": "The car you sold"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s1_01_blur.jpg"
+  },
+  {
+   "t": 43.13333333333333,
+   "dur": 6.4,
+   "sec": "S1",
+   "lugar": "car",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r03.mp4",
+   "rate": 1
+  },
+  {
+   "t": 53.56666666666667,
+   "dur": 2.7666666666666666,
+   "sec": "S1",
+   "lugar": "driveway",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r04.mp4",
+   "rate": 1
+  },
+  {
+   "t": 60.36666666666667,
+   "dur": 5.4,
+   "sec": "S2",
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r06.mp4",
+   "rate": 1
+  },
+  {
+   "t": 65.76666666666667,
+   "dur": 5.6,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "BigStat",
+   "props": {
+    "value": "16 ft",
+    "unit": "hole in the house",
+    "tone": "danger",
+    "caption": "Open for the right little box."
+   },
+   "bed": "img/rkremote_s2_01_blur.jpg"
+  },
+  {
+   "t": 74.76666666666667,
+   "dur": 3.8666666666666667,
+   "sec": "S2",
+   "lugar": "driveway",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r59.mp4",
+   "rate": 1
+  },
+  {
+   "t": 78.63333333333334,
+   "dur": 5.033333333333333,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "THE RULES HERE",
+    "myth": "How anybody gets in",
+    "truth": "How you shut it"
+   },
+   "bed": "img/rkremote_s2_01_blur.jpg"
+  },
+  {
+   "t": 83.66666666666667,
+   "dur": 6.2,
+   "sec": "S2",
+   "lugar": "car",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r29.mp4",
+   "rate": 1
+  },
+  {
+   "t": 97.86666666666666,
+   "dur": 4,
+   "sec": "S3",
+   "lugar": "motor",
+   "kind": "clip",
+   "asset": "broll/rkremote/rkremote_s3_01.mp4",
+   "rate": 1
+  },
+  {
+   "t": 101.86666666666666,
+   "dur": 8.5,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "LearnButtonWipe",
+   "props": {
+    "mode": "list",
+    "kicker": "THE MOTOR REMEMBERS",
+    "title": "Every remote, ever",
+    "seconds": 6,
+    "color": "purple",
+    "slots": [
+     {
+      "text": "Remote"
+     },
+     {
+      "text": "Remote"
+     },
+     {
+      "text": "Keypad"
+     },
+     {
+      "text": "Car"
+     },
+     {
+      "text": "???"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s3_01_blur.jpg"
+  },
+  {
+   "t": 113.76666666666667,
+   "dur": 7.466666666666667,
+   "sec": "S3",
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r12.mp4",
+   "rate": 1
+  },
+  {
+   "t": 121.23333333333333,
+   "dur": 5.333333333333333,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "RouteFlow",
+   "props": {
+    "kicker": "NEVER CLEARS",
+    "title": "Still on the list",
+    "steps": [
+     {
+      "label": "House sold"
+     },
+     {
+      "label": "Lockbox changed"
+     },
+     {
+      "label": "New family"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s3_01_blur.jpg"
+  },
+  {
+   "t": 126.56666666666666,
+   "dur": 6.2,
+   "sec": "S3",
+   "lugar": "street",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r13.mp4",
+   "rate": 1
+  },
+  {
+   "t": 135.76666666666668,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "RemoteTally",
+   "props": {
+    "kicker": "WHO'S ON IT",
+    "title": "",
+    "final": "?",
+    "items": [
+     {
+      "text": "Family before"
+     },
+     {
+      "text": "Dog walker"
+     },
+     {
+      "text": "Contractor"
+     },
+     {
+      "text": "Neighbor"
+     },
+     {
+      "text": "Old car"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s3_01_blur.jpg"
+  },
+  {
+   "t": 143.76666666666668,
+   "dur": 7.9,
+   "sec": "S3",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r14.mp4",
+   "rate": 1
+  },
+  {
+   "t": 151.66666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S3",
+   "lugar": "street",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r16.mp4",
+   "rate": 1
+  },
+  {
+   "t": 155.7,
+   "dur": 3.6,
+   "sec": "S3",
+   "lugar": "street",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r85.mp4",
+   "rate": 1
+  },
+  {
+   "t": 159.3,
+   "dur": 7.166666666666667,
+   "sec": "S3",
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r112.mp4",
+   "rate": 1
+  },
+  {
+   "t": 166.46666666666667,
+   "dur": 6,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ProcessChips",
+   "props": {
+    "kicker": "SEVEN FIXES",
+    "title": "Cheapest first",
+    "steps": [
+     {
+      "title": "Count"
+     },
+     {
+      "title": "Erase"
+     },
+     {
+      "title": "Keypad"
+     },
+     {
+      "title": "Car"
+     },
+     {
+      "title": "Screws"
+     },
+     {
+      "title": "Deadbolt"
+     },
+     {
+      "title": "Opener"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s4_01_blur.jpg"
+  },
+  {
+   "t": 172.46666666666667,
+   "dur": 5.6,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "FIX 1 · FREE",
+    "title": "Count them",
+    "items": [
+     {
+      "text": "Visors"
+     },
+     {
+      "text": "Drawer"
+     },
+     {
+      "text": "Keypad"
+     },
+     {
+      "text": "Car button"
+     },
+     {
+      "text": "Phone app"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s4_01_blur.jpg"
+  },
+  {
+   "t": 178.06666666666666,
+   "dur": 3.2,
+   "sec": "S4",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkremote_s4_03.jpg"
+  },
+  {
+   "t": 181.26666666666668,
+   "dur": 7.4,
+   "sec": "S4",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r19.mp4",
+   "rate": 1
+  },
+  {
+   "t": 188.66666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S4",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r44.mp4",
+   "rate": 1
+  },
+  {
+   "t": 192.7,
+   "dur": 6.933333333333334,
+   "sec": "S4",
+   "lugar": "truck",
+   "kind": "clip",
+   "asset": "broll/rkremote/rkremote_s1_02.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 199.63333333333333,
+   "dur": 4.466666666666667,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": "2 min",
+    "unit": "$0",
+    "tone": "brass",
+    "caption": "The fix in the title."
+   },
+   "bed": "img/rkremote_s5_01_blur.jpg"
+  },
+  {
+   "t": 204.1,
+   "dur": 2.9,
+   "sec": "S5",
+   "lugar": "motor",
+   "kind": "imagen",
+   "asset": "img/rkremote_s5_03.jpg"
+  },
+  {
+   "t": 207,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "LearnButtonWipe",
+   "props": {
+    "mode": "find",
+    "kicker": "FIX 2 · FREE",
+    "title": "Find the learn button",
+    "seconds": 6,
+    "color": "purple",
+    "slots": [
+     {
+      "text": "Remote"
+     },
+     {
+      "text": "Remote"
+     },
+     {
+      "text": "Keypad"
+     },
+     {
+      "text": "Car"
+     },
+     {
+      "text": "???"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s5_01_blur.jpg"
+  },
+  {
+   "t": 215,
+   "dur": 7.4,
+   "sec": "S5",
+   "lugar": "motor",
+   "kind": "imagen",
+   "asset": "img/rkremote_s5_08.jpg"
+  },
+  {
+   "t": 225.16666666666666,
+   "dur": 10,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "LearnButtonWipe",
+   "props": {
+    "mode": "wipe",
+    "kicker": "HOLD ~6 SECONDS",
+    "title": "The list is gone",
+    "seconds": 6,
+    "color": "purple",
+    "slots": [
+     {
+      "text": "Remote"
+     },
+     {
+      "text": "Remote"
+     },
+     {
+      "text": "Keypad"
+     },
+     {
+      "text": "Car"
+     },
+     {
+      "text": "???"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s5_01_blur.jpg"
+  },
+  {
+   "t": 243.36666666666667,
+   "dur": 5.3,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "BRANDS DIFFER",
+    "title": "Where to look",
+    "items": [
+     {
+      "text": "Motor sticker"
+     },
+     {
+      "text": "The manual"
+     },
+     {
+      "text": "Model number online"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s5_01_blur.jpg"
+  },
+  {
+   "t": 248.66666666666666,
+   "dur": 6.6,
+   "sec": "S5",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r21.mp4",
+   "rate": 1
+  },
+  {
+   "t": 255.26666666666668,
+   "dur": 4.033333333333333,
+   "sec": "S5",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r24.mp4",
+   "rate": 1
+  },
+  {
+   "t": 259.3,
+   "dur": 3.5,
+   "sec": "S5",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r22.mp4",
+   "rate": 1
+  },
+  {
+   "t": 270.8,
+   "dur": 5.033333333333333,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ProcessChips",
+   "props": {
+    "kicker": "TEACH IT BACK",
+    "title": "Keepers only",
+    "steps": [
+     {
+      "title": "Tap LEARN"
+     },
+     {
+      "title": "30 seconds"
+     },
+     {
+      "title": "Press remote"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s5_01_blur.jpg"
+  },
+  {
+   "t": 286.46666666666664,
+   "dur": 5.033333333333333,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "THE OLD GRAY ONE",
+    "myth": "Still opens the garage",
+    "truth": "Just plastic now"
+   },
+   "bed": "img/rkremote_s5_01_blur.jpg"
+  },
+  {
+   "t": 297.5,
+   "dur": 4.033333333333333,
+   "sec": "S5",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r23.mp4",
+   "rate": 1
+  },
+  {
+   "t": 301.53333333333336,
+   "dur": 4.5,
+   "sec": "S5",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r77.mp4",
+   "rate": 1
+  },
+  {
+   "t": 306.03333333333336,
+   "dur": 4.233333333333333,
+   "sec": "S6",
+   "lugar": "keypad",
+   "kind": "imagen",
+   "asset": "img/rkremote_s6_05.jpg"
+  },
+  {
+   "t": 310.26666666666665,
+   "dur": 5.333333333333333,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "FIX 3",
+    "title": "New keypad code",
+    "items": [
+     {
+      "text": "Not your house number"
+     },
+     {
+      "text": "Not a birthday"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s6_01_blur.jpg"
+  },
+  {
+   "t": 315.6,
+   "dur": 7.6,
+   "sec": "S6",
+   "lugar": "street",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r109.mp4",
+   "rate": 1
+  },
+  {
+   "t": 323.2,
+   "dur": 3.4,
+   "sec": "S6",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r27.mp4",
+   "rate": 1
+  },
+  {
+   "t": 334.6666666666667,
+   "dur": 5.466666666666667,
+   "sec": "S6",
+   "lugar": "driveway",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r108.mp4",
+   "rate": 1
+  },
+  {
+   "t": 340.1333333333333,
+   "dur": 5.333333333333333,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "Worn shiny",
+    "leftValue": "4 keys",
+    "rightLabel": "Like new",
+    "rightValue": "the rest",
+    "verdict": "That is a hint."
+   },
+   "bed": "img/rkremote_s6_01_blur.jpg"
+  },
+  {
+   "t": 359.53333333333336,
+   "dur": 5.3,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "THE PHONE APP",
+    "title": "Who has access?",
+    "items": [
+     {
+      "text": "Remove old owner"
+     },
+     {
+      "text": "Reset the hub"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s6_01_blur.jpg"
+  },
+  {
+   "t": 364.8333333333333,
+   "dur": 3.6,
+   "sec": "S6",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r18.mp4",
+   "rate": 1
+  },
+  {
+   "t": 368.43333333333334,
+   "dur": 6.8,
+   "sec": "S6",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r91.mp4",
+   "rate": 1
+  },
+  {
+   "t": 377.6333333333333,
+   "dur": 4.9,
+   "sec": "S7",
+   "lugar": "truck",
+   "kind": "imagen",
+   "asset": "img/rkremote_s7_02.jpg"
+  },
+  {
+   "t": 382.53333333333336,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "HomeLinkClear",
+   "props": {
+    "mode": "risk",
+    "kicker": "FIX 4 · THE CAR",
+    "title": "It still knows your garage"
+   },
+   "bed": "img/rkremote_s7_01_blur.jpg"
+  },
+  {
+   "t": 393.73333333333335,
+   "dur": 8.066666666666666,
+   "sec": "S7",
+   "lugar": "car",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r30.mp4",
+   "rate": 1
+  },
+  {
+   "t": 401.8,
+   "dur": 4.666666666666667,
+   "sec": "S7",
+   "lugar": "keypad",
+   "kind": "imagen",
+   "asset": "img/rkremote_s6_05.jpg"
+  },
+  {
+   "t": 406.46666666666664,
+   "dur": 9,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "HomeLinkClear",
+   "props": {
+    "mode": "clear",
+    "kicker": "BEFORE YOU SELL IT",
+    "title": "Clear the buttons"
+   },
+   "bed": "img/rkremote_s7_01_blur.jpg"
+  },
+  {
+   "t": 415.46666666666664,
+   "dur": 4.033333333333333,
+   "sec": "S7",
+   "lugar": "car",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r92.mp4",
+   "rate": 1
+  },
+  {
+   "t": 419.5,
+   "dur": 4.433333333333334,
+   "sec": "S7",
+   "lugar": "truck",
+   "kind": "imagen",
+   "asset": "img/rkremote_s1_02.jpg"
+  },
+  {
+   "t": 423.93333333333334,
+   "dur": 5.033333333333333,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "The car forgot nothing. Your garage forgot the car.",
+    "attrib": "— Ray"
+   },
+   "bed": "img/rkremote_s7_01_blur.jpg"
+  },
+  {
+   "t": 431.76666666666665,
+   "dur": 1.8,
+   "sec": "S7",
+   "lugar": "truck",
+   "kind": "imagen",
+   "asset": "img/rkremote_s7_09.jpg"
+  },
+  {
+   "t": 433.56666666666666,
+   "dur": 4.766666666666667,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "RouteFlow",
+   "props": {
+    "kicker": "THE CAR OUTSIDE",
+    "title": "A labeled key",
+    "steps": [
+     {
+      "label": "Visor remote"
+     },
+     {
+      "label": "Glovebox address"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s7_01_blur.jpg"
+  },
+  {
+   "t": 444.3333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S7",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r113.mp4",
+   "rate": 1
+  },
+  {
+   "t": 452.43333333333334,
+   "dur": 6,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "VideoRefCard",
+   "props": {
+    "kicker": "WATCH NEXT",
+    "title": "Your Car Key Is Talking All Night",
+    "sub": "Same idea"
+   },
+   "bed": "img/rkremote_s7_01_blur.jpg"
+  },
+  {
+   "t": 469.53333333333336,
+   "dur": 5.033333333333333,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "BigStat",
+   "props": {
+    "value": "$3",
+    "unit": "the last door",
+    "tone": "brass",
+    "caption": "Between the garage and the house."
+   },
+   "bed": "img/rkremote_s8_01_blur.jpg"
+  },
+  {
+   "t": 474.56666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "door",
+   "kind": "imagen",
+   "asset": "img/rkremote_s8_07.jpg"
+  },
+  {
+   "t": 478.6,
+   "dur": 7.4,
+   "sec": "S8",
+   "lugar": "bench",
+   "kind": "imagen",
+   "asset": "img/rkremote_s8_09.jpg"
+  },
+  {
+   "t": 488.1333333333333,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "LastDoorCutaway",
+   "props": {
+    "stage": "knob",
+    "kicker": "FIX 5 · $3",
+    "title": "The last door",
+    "caption": ""
+   },
+   "bed": "img/rkremote_s8_01_blur.jpg"
+  },
+  {
+   "t": 496.1333333333333,
+   "dur": 8.066666666666666,
+   "sec": "S8",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r35.mp4",
+   "rate": 1
+  },
+  {
+   "t": 504.2,
+   "dur": 4.433333333333334,
+   "sec": "S8",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r69.mp4",
+   "rate": 1
+  },
+  {
+   "t": 508.6333333333333,
+   "dur": 6,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ScrewHero",
+   "props": {
+    "kicker": "THE THREE DOLLAR PART",
+    "title": "$3",
+    "sub": "Three-inch screws, into the stud.",
+    "pieces": [
+     {
+      "kind": "bolt",
+      "x": 20,
+      "scale": 0.86,
+      "rot": -14
+     },
+     {
+      "kind": "stubby",
+      "x": 39,
+      "scale": 0.9,
+      "rot": 8
+     },
+     {
+      "kind": "wood",
+      "x": 58,
+      "scale": 1.05,
+      "rot": -6,
+      "hero": true
+     },
+     {
+      "kind": "nail",
+      "x": 79,
+      "scale": 0.82,
+      "rot": 18
+     }
+    ]
+   },
+   "bed": "img/rkremote_s8_01_blur.jpg"
+  },
+  {
+   "t": 514.6333333333333,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "LastDoorCutaway",
+   "props": {
+    "stage": "screws",
+    "kicker": "LONG SCREWS",
+    "title": "Into the stud",
+    "caption": ""
+   },
+   "bed": "img/rkremote_s8_01_blur.jpg"
+  },
+  {
+   "t": 522.6333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r38.mp4",
+   "rate": 1
+  },
+  {
+   "t": 526.6666666666666,
+   "dur": 3.5,
+   "sec": "S8",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r68.mp4",
+   "rate": 1
+  },
+  {
+   "t": 530.1666666666666,
+   "dur": 7.8,
+   "sec": "S8",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r95.mp4",
+   "rate": 1
+  },
+  {
+   "t": 540.6333333333333,
+   "dur": 4.5,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "Knob lock",
+    "leftValue": "convenience",
+    "rightLabel": "Deadbolt",
+    "rightValue": "$25–40",
+    "verdict": "Steel in the frame."
+   },
+   "bed": "img/rkremote_s9_01_blur.jpg"
+  },
+  {
+   "t": 545.1333333333333,
+   "dur": 5,
+   "sec": "S9",
+   "lugar": "door",
+   "kind": "imagen",
+   "asset": "img/rkremote_s9_03.jpg"
+  },
+  {
+   "t": 550.1333333333333,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "LastDoorCutaway",
+   "props": {
+    "stage": "deadbolt",
+    "kicker": "FIX 6",
+    "title": "Want the bolt",
+    "caption": ""
+   },
+   "bed": "img/rkremote_s9_01_blur.jpg"
+  },
+  {
+   "t": 558.1333333333333,
+   "dur": 3.4,
+   "sec": "S9",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r41.mp4",
+   "rate": 1
+  },
+  {
+   "t": 561.5333333333333,
+   "dur": 8.066666666666666,
+   "sec": "S9",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r122.mp4",
+   "rate": 1
+  },
+  {
+   "t": 583.1666666666666,
+   "dur": 5.266666666666667,
+   "sec": "S10",
+   "lugar": "motor",
+   "kind": "imagen",
+   "asset": "img/rkremote_s10_05.jpg"
+  },
+  {
+   "t": 588.4333333333333,
+   "dur": 5.033333333333333,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "GOING AWAY",
+    "title": "Remotes off",
+    "items": [
+     {
+      "text": "Vacation lock switch"
+     },
+     {
+      "text": "Or unplug the motor"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s10_01_blur.jpg"
+  },
+  {
+   "t": 605.3333333333334,
+   "dur": 5.033333333333333,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "THE RED CORD",
+    "title": "Emergency release",
+    "items": [
+     {
+      "text": "Pulled from inside"
+     },
+     {
+      "text": "About $5 shield"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s10_01_blur.jpg"
+  },
+  {
+   "t": 613.2666666666667,
+   "dur": 7.9,
+   "sec": "S10",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r72.mp4",
+   "rate": 1
+  },
+  {
+   "t": 624.6333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "bench",
+   "kind": "imagen",
+   "asset": "img/rkremote_s11_02.jpg"
+  },
+  {
+   "t": 628.6666666666666,
+   "dur": 2.3,
+   "sec": "S11",
+   "lugar": "table",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r49.mp4",
+   "rate": 1
+  },
+  {
+   "t": 630.9666666666667,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "DipSwitchReveal",
+   "props": {
+    "kicker": "FIX 7",
+    "title": "Tiny switches inside?",
+    "tag": "FIXED CODE",
+    "sub": "Same code, every click",
+    "switches": 10
+   },
+   "bed": "img/rkremote_s11_01_blur.jpg"
+  },
+  {
+   "t": 642.1666666666666,
+   "dur": 4.2,
+   "sec": "S11",
+   "lugar": "table",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r48.mp4",
+   "rate": 1
+  },
+  {
+   "t": 646.3666666666667,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "RollingCodeWaves",
+   "props": {
+    "mode": "fixed",
+    "kicker": "FIXED CODE",
+    "verdict": "Same every time. Repeatable.",
+    "clicks": 4
+   },
+   "bed": "img/rkremote_s11_01_blur.jpg"
+  },
+  {
+   "t": 663.1333333333333,
+   "dur": 9,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "RollingCodeWaves",
+   "props": {
+    "mode": "both",
+    "kicker": "NEWER OPENERS",
+    "verdict": "Yesterday's click is worthless.",
+    "clicks": 4
+   },
+   "bed": "img/rkremote_s11_01_blur.jpg"
+  },
+  {
+   "t": 672.1333333333333,
+   "dur": 3.5,
+   "sec": "S11",
+   "lugar": "table",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r51.mp4",
+   "rate": 1
+  },
+  {
+   "t": 675.6333333333333,
+   "dur": 7.8,
+   "sec": "S11",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r52.mp4",
+   "rate": 1
+  },
+  {
+   "t": 693.6333333333333,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "THE LIST",
+    "title": "Recap",
+    "items": [
+     {
+      "text": "Count"
+     },
+     {
+      "text": "Erase"
+     },
+     {
+      "text": "Keypad, app"
+     },
+     {
+      "text": "Car"
+     },
+     {
+      "text": "Screws"
+     },
+     {
+      "text": "Deadbolt"
+     },
+     {
+      "text": "Switches"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s12_01_blur.jpg"
+  },
+  {
+   "t": 703.8333333333334,
+   "dur": 7.4,
+   "sec": "S12",
+   "lugar": "door",
+   "kind": "imagen",
+   "asset": "img/rkremote_s8_06.jpg"
+  },
+  {
+   "t": 711.2333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S12",
+   "lugar": "street",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r74.mp4",
+   "rate": 1
+  },
+  {
+   "t": 715.2666666666667,
+   "dur": 1.5,
+   "sec": "S12",
+   "lugar": "drive",
+   "kind": "clip",
+   "asset": "broll/rkremote/rkremote_s12_03.mp4",
+   "rate": 0.5
+  },
+  {
+   "t": 716.7666666666667,
+   "dur": 5.033333333333333,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Not a break-in. An invitation you forgot you sent.",
+    "attrib": "— Ray"
+   },
+   "bed": "img/rkremote_s12_01_blur.jpg"
+  },
+  {
+   "t": 721.8,
+   "dur": 3,
+   "sec": "S12",
+   "lugar": "bench",
+   "kind": "imagen",
+   "asset": "img/rkremote_s1_01.jpg"
+  },
+  {
+   "t": 724.8,
+   "dur": 2.033333333333333,
+   "sec": "S12",
+   "lugar": "driveway",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r75.mp4",
+   "rate": 1
+  },
+  {
+   "t": 726.8333333333334,
+   "dur": 4.466666666666667,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "The bunker",
+    "leftValue": "$20,000",
+    "rightLabel": "The fix",
+    "rightValue": "$3",
+    "verdict": "Plus six seconds."
+   },
+   "bed": "img/rkremote_s12_01_blur.jpg"
+  },
+  {
+   "t": 731.3,
+   "dur": 5.433333333333334,
+   "sec": "S12",
+   "lugar": "ladder",
+   "kind": "imagen",
+   "asset": "img/rkremote_s1_11.jpg"
+  },
+  {
+   "t": 736.7333333333333,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "LearnButtonWipe",
+   "props": {
+    "mode": "wipe",
+    "kicker": "THE LIGHT GOES OUT",
+    "title": "Sleep better",
+    "seconds": 6,
+    "color": "purple",
+    "slots": [
+     {
+      "text": "Old owner"
+     },
+     {
+      "text": "Old car"
+     },
+     {
+      "text": "???"
+     }
+    ]
+   },
+   "bed": "img/rkremote_s12_01_blur.jpg"
+  },
+  {
+   "t": 743.7333333333333,
+   "dur": 2.3,
+   "sec": "S12",
+   "lugar": "floor",
+   "kind": "clip",
+   "asset": "broll/rkremote/rkremote_s12_06.mp4",
+   "rate": 1
+  },
+  {
+   "t": 746.02,
+   "dur": 34,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "RayCta",
+   "props": {
+    "eyebrow": "THE THOUSAND DOLLAR AFTERNOON",
+    "title": "Three guides, one afternoon",
+    "sub": "The door, the late-night call, fixes that cost nothing. $27 · 30-day refund.",
+    "domain": "raykessler.vercel.app",
+    "qr": "img/rkremote_qr.png",
+    "showQr": true
+   },
+   "bed": "img/rkremote_s13_01_blur.jpg"
+  },
+  {
+   "t": 780.0333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S13",
+   "lugar": "street",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkremote_real/rkremote_r57.mp4",
+   "rate": 1
+  },
+  {
+   "t": 784.0666666666667,
+   "dur": 7.8,
+   "sec": "S13",
+   "lugar": "ladder",
+   "kind": "imagen",
+   "asset": "img/rkremote_s5_07.jpg"
+  },
+  {
+   "t": 791.8666666666667,
+   "dur": 2.6,
+   "sec": "S13",
+   "lugar": "truck",
+   "kind": "imagen",
+   "asset": "img/rkremote_s1_02.jpg"
+  },
+  {
+   "t": 0,
+   "dur": 3.7666666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 21.366666666666667,
+   "dur": 7.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 49.53333333333333,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 56.333333333333336,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 71.36666666666666,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 89.86666666666666,
+   "dur": 8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 110.36666666666666,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 132.76666666666668,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 222.4,
+   "dur": 2.7666666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 235.16666666666666,
+   "dur": 8.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 262.8,
+   "dur": 8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 275.8333333333333,
+   "dur": 10.633333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 291.5,
+   "dur": 6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 326.6,
+   "dur": 8.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 345.46666666666664,
+   "dur": 14.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 375.23333333333335,
+   "dur": 2.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 390.53333333333336,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 428.96666666666664,
+   "dur": 2.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 438.3333333333333,
+   "dur": 6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 448.3666666666667,
+   "dur": 4.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 458.43333333333334,
+   "dur": 11.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 486,
+   "dur": 2.1333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 537.9666666666667,
+   "dur": 2.6666666666666665,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 569.6,
+   "dur": 13.566666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 593.4666666666667,
+   "dur": 11.866666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 610.3666666666667,
+   "dur": 2.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 621.1666666666666,
+   "dur": 3.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 638.9666666666667,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 654.3666666666667,
+   "dur": 8.766666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 683.4333333333333,
+   "dur": 10.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 700.6333333333333,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 746.0333333333333,
+   "dur": 34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  }
+ ]
+}

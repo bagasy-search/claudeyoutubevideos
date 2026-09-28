@@ -1,0 +1,404 @@
+[
+ {
+  "key": "imagen_3767",
+  "src": "img/rkremote_s1_02.jpg",
+  "start": 3.7666666666666666,
+  "dur": 3
+ },
+ {
+  "key": "imagen_6767",
+  "src": "img/rkremote_s1_06.jpg",
+  "start": 6.766666666666667,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_10800",
+  "src": "img/rkremote_s1_10.jpg",
+  "start": 10.8,
+  "dur": 2.566666666666667
+ },
+ {
+  "key": "clip_35667",
+  "src": "broll/rkremote_real/rkremote_r02.mp4",
+  "start": 35.666666666666664,
+  "dur": 1.8666666666666667
+ },
+ {
+  "key": "clip_43133",
+  "src": "broll/rkremote_real/rkremote_r03.mp4",
+  "start": 43.13333333333333,
+  "dur": 6.4
+ },
+ {
+  "key": "clip_53567",
+  "src": "broll/rkremote_real/rkremote_r04.mp4",
+  "start": 53.56666666666667,
+  "dur": 2.7666666666666666
+ },
+ {
+  "key": "clip_60367",
+  "src": "broll/rkremote_real/rkremote_r06.mp4",
+  "start": 60.36666666666667,
+  "dur": 5.4
+ },
+ {
+  "key": "clip_74767",
+  "src": "broll/rkremote_real/rkremote_r59.mp4",
+  "start": 74.76666666666667,
+  "dur": 3.8666666666666667
+ },
+ {
+  "key": "clip_83667",
+  "src": "broll/rkremote_real/rkremote_r29.mp4",
+  "start": 83.66666666666667,
+  "dur": 6.2
+ },
+ {
+  "key": "clip_97867",
+  "src": "broll/rkremote/rkremote_s3_01.mp4",
+  "start": 97.86666666666666,
+  "dur": 4
+ },
+ {
+  "key": "clip_113767",
+  "src": "broll/rkremote_real/rkremote_r12.mp4",
+  "start": 113.76666666666667,
+  "dur": 7.466666666666667
+ },
+ {
+  "key": "clip_126567",
+  "src": "broll/rkremote_real/rkremote_r13.mp4",
+  "start": 126.56666666666666,
+  "dur": 6.2
+ },
+ {
+  "key": "clip_143767",
+  "src": "broll/rkremote_real/rkremote_r14.mp4",
+  "start": 143.76666666666668,
+  "dur": 7.9
+ },
+ {
+  "key": "clip_151667",
+  "src": "broll/rkremote_real/rkremote_r16.mp4",
+  "start": 151.66666666666666,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "clip_155700",
+  "src": "broll/rkremote_real/rkremote_r85.mp4",
+  "start": 155.7,
+  "dur": 3.6
+ },
+ {
+  "key": "clip_159300",
+  "src": "broll/rkremote_real/rkremote_r112.mp4",
+  "start": 159.3,
+  "dur": 7.166666666666667
+ },
+ {
+  "key": "imagen_178067",
+  "src": "img/rkremote_s4_03.jpg",
+  "start": 178.06666666666666,
+  "dur": 3.2
+ },
+ {
+  "key": "clip_181267",
+  "src": "broll/rkremote_real/rkremote_r19.mp4",
+  "start": 181.26666666666668,
+  "dur": 7.4
+ },
+ {
+  "key": "clip_188667",
+  "src": "broll/rkremote_real/rkremote_r44.mp4",
+  "start": 188.66666666666666,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "clip_192700",
+  "src": "broll/rkremote/rkremote_s1_02.mp4",
+  "start": 192.7,
+  "dur": 3.466666666666667
+ },
+ {
+  "key": "imagen_204100",
+  "src": "img/rkremote_s5_03.jpg",
+  "start": 204.1,
+  "dur": 2.9
+ },
+ {
+  "key": "imagen_215000",
+  "src": "img/rkremote_s5_08.jpg",
+  "start": 215,
+  "dur": 7.4
+ },
+ {
+  "key": "clip_248667",
+  "src": "broll/rkremote_real/rkremote_r21.mp4",
+  "start": 248.66666666666666,
+  "dur": 6.6
+ },
+ {
+  "key": "clip_255267",
+  "src": "broll/rkremote_real/rkremote_r24.mp4",
+  "start": 255.26666666666668,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "clip_259300",
+  "src": "broll/rkremote_real/rkremote_r22.mp4",
+  "start": 259.3,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_297500",
+  "src": "broll/rkremote_real/rkremote_r23.mp4",
+  "start": 297.5,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "clip_301533",
+  "src": "broll/rkremote_real/rkremote_r77.mp4",
+  "start": 301.53333333333336,
+  "dur": 4.5
+ },
+ {
+  "key": "imagen_306033",
+  "src": "img/rkremote_s6_05.jpg",
+  "start": 306.03333333333336,
+  "dur": 4.233333333333333
+ },
+ {
+  "key": "clip_315600",
+  "src": "broll/rkremote_real/rkremote_r109.mp4",
+  "start": 315.6,
+  "dur": 7.6
+ },
+ {
+  "key": "clip_323200",
+  "src": "broll/rkremote_real/rkremote_r27.mp4",
+  "start": 323.2,
+  "dur": 3.4
+ },
+ {
+  "key": "clip_334667",
+  "src": "broll/rkremote_real/rkremote_r108.mp4",
+  "start": 334.6666666666667,
+  "dur": 5.466666666666667
+ },
+ {
+  "key": "clip_364833",
+  "src": "broll/rkremote_real/rkremote_r18.mp4",
+  "start": 364.8333333333333,
+  "dur": 3.6
+ },
+ {
+  "key": "clip_368433",
+  "src": "broll/rkremote_real/rkremote_r91.mp4",
+  "start": 368.43333333333334,
+  "dur": 6.8
+ },
+ {
+  "key": "imagen_377633",
+  "src": "img/rkremote_s7_02.jpg",
+  "start": 377.6333333333333,
+  "dur": 4.9
+ },
+ {
+  "key": "clip_393733",
+  "src": "broll/rkremote_real/rkremote_r30.mp4",
+  "start": 393.73333333333335,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_401800",
+  "src": "img/rkremote_s6_05.jpg",
+  "start": 401.8,
+  "dur": 4.666666666666667
+ },
+ {
+  "key": "clip_415467",
+  "src": "broll/rkremote_real/rkremote_r92.mp4",
+  "start": 415.46666666666664,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_419500",
+  "src": "img/rkremote_s1_02.jpg",
+  "start": 419.5,
+  "dur": 4.433333333333334
+ },
+ {
+  "key": "imagen_431767",
+  "src": "img/rkremote_s7_09.jpg",
+  "start": 431.76666666666665,
+  "dur": 1.8
+ },
+ {
+  "key": "clip_444333",
+  "src": "broll/rkremote_real/rkremote_r113.mp4",
+  "start": 444.3333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_474567",
+  "src": "img/rkremote_s8_07.jpg",
+  "start": 474.56666666666666,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_478600",
+  "src": "img/rkremote_s8_09.jpg",
+  "start": 478.6,
+  "dur": 7.4
+ },
+ {
+  "key": "clip_496133",
+  "src": "broll/rkremote_real/rkremote_r35.mp4",
+  "start": 496.1333333333333,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "clip_504200",
+  "src": "broll/rkremote_real/rkremote_r69.mp4",
+  "start": 504.2,
+  "dur": 4.433333333333334
+ },
+ {
+  "key": "clip_522633",
+  "src": "broll/rkremote_real/rkremote_r38.mp4",
+  "start": 522.6333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "clip_526667",
+  "src": "broll/rkremote_real/rkremote_r68.mp4",
+  "start": 526.6666666666666,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_530167",
+  "src": "broll/rkremote_real/rkremote_r95.mp4",
+  "start": 530.1666666666666,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_545133",
+  "src": "img/rkremote_s9_03.jpg",
+  "start": 545.1333333333333,
+  "dur": 5
+ },
+ {
+  "key": "clip_558133",
+  "src": "broll/rkremote_real/rkremote_r41.mp4",
+  "start": 558.1333333333333,
+  "dur": 3.4
+ },
+ {
+  "key": "clip_561533",
+  "src": "broll/rkremote_real/rkremote_r122.mp4",
+  "start": 561.5333333333333,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_583167",
+  "src": "img/rkremote_s10_05.jpg",
+  "start": 583.1666666666666,
+  "dur": 5.266666666666667
+ },
+ {
+  "key": "clip_613267",
+  "src": "broll/rkremote_real/rkremote_r72.mp4",
+  "start": 613.2666666666667,
+  "dur": 7.9
+ },
+ {
+  "key": "imagen_624633",
+  "src": "img/rkremote_s11_02.jpg",
+  "start": 624.6333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "clip_628667",
+  "src": "broll/rkremote_real/rkremote_r49.mp4",
+  "start": 628.6666666666666,
+  "dur": 2.3
+ },
+ {
+  "key": "clip_642167",
+  "src": "broll/rkremote_real/rkremote_r48.mp4",
+  "start": 642.1666666666666,
+  "dur": 4.2
+ },
+ {
+  "key": "clip_672133",
+  "src": "broll/rkremote_real/rkremote_r51.mp4",
+  "start": 672.1333333333333,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_675633",
+  "src": "broll/rkremote_real/rkremote_r52.mp4",
+  "start": 675.6333333333333,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_703833",
+  "src": "img/rkremote_s8_06.jpg",
+  "start": 703.8333333333334,
+  "dur": 7.4
+ },
+ {
+  "key": "clip_711233",
+  "src": "broll/rkremote_real/rkremote_r74.mp4",
+  "start": 711.2333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "clip_715267",
+  "src": "broll/rkremote/rkremote_s12_03.mp4",
+  "start": 715.2666666666667,
+  "dur": 0.75
+ },
+ {
+  "key": "imagen_721800",
+  "src": "img/rkremote_s1_01.jpg",
+  "start": 721.8,
+  "dur": 3
+ },
+ {
+  "key": "clip_724800",
+  "src": "broll/rkremote_real/rkremote_r75.mp4",
+  "start": 724.8,
+  "dur": 2.033333333333333
+ },
+ {
+  "key": "imagen_731300",
+  "src": "img/rkremote_s1_11.jpg",
+  "start": 731.3,
+  "dur": 5.433333333333334
+ },
+ {
+  "key": "clip_743733",
+  "src": "broll/rkremote/rkremote_s12_06.mp4",
+  "start": 743.7333333333333,
+  "dur": 2.3
+ },
+ {
+  "key": "clip_780033",
+  "src": "broll/rkremote_real/rkremote_r57.mp4",
+  "start": 780.0333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_784067",
+  "src": "img/rkremote_s5_07.jpg",
+  "start": 784.0666666666667,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_791867",
+  "src": "img/rkremote_s1_02.jpg",
+  "start": 791.8666666666667,
+  "dur": 2.6
+ }
+]

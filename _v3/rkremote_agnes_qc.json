@@ -1,0 +1,330 @@
+{
+ "clips": {
+  "rkremote_s12_06": {
+   "size": 2796654,
+   "mtime": 1790549308003,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.945Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s11_03": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s1_04": {
+   "size": 1749824,
+   "mtime": 1790549333100,
+   "auto": null,
+   "hint": "Garage door opens and closes between frames",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.933Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s10_07": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s1_07": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s1_10": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s1_02": {
+   "size": 1590791,
+   "mtime": 1790549151544,
+   "auto": null,
+   "hint": "Remote stretches in middle frame; visor turns dark in last f",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.931Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s1_06": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s2_03": {
+   "size": 1806238,
+   "mtime": 1790549298099,
+   "auto": null,
+   "hint": "Doormat distorts and floats in middle frame",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.938Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s11_05": {
+   "size": 539066,
+   "mtime": 1790549446406,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.944Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s1_08": {
+   "size": 1536337,
+   "mtime": 1790549485404,
+   "auto": null,
+   "hint": "Bright artifact/glare distorts the view through the windshie",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.935Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s12_03": {
+   "size": 1219171,
+   "mtime": 1790549310465,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.945Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s2_04": {
+   "size": 701166,
+   "mtime": 1790549412706,
+   "auto": null,
+   "hint": "Security camera lens turns bright white.",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.938Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s3_01": {
+   "size": 410222,
+   "mtime": 1790549268725,
+   "auto": null,
+   "hint": "A string or wire appears hanging from the opener in the last",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.939Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s3_08": {
+   "size": 865796,
+   "mtime": 1790549605943,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.945Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s2_06": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s10_05": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s3_05": {
+   "size": 1320600,
+   "mtime": 1790549514352,
+   "auto": null,
+   "hint": "White floor stain appears and background shoes disappear.",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.939Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s3_10": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s3_03": {
+   "size": 2069939,
+   "mtime": 1790549305967,
+   "auto": null,
+   "hint": "jump in framing",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.939Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s5_16": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s5_12": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s10_01": {
+   "size": 1112513,
+   "mtime": 1790549252154,
+   "auto": null,
+   "hint": "black device bottom part glows white",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.935Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s6_05": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s1_13": {
+   "size": 1074872,
+   "mtime": 1790549590611,
+   "auto": null,
+   "hint": "Yellow artifacts appear on garage and car; light fixture cha",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.935Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s4_07": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s7_08": {
+   "size": 1160850,
+   "mtime": 1790549509214,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s6_03": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s3_09": {
+   "size": 866621,
+   "mtime": 1790549587597,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.945Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s6_01": {
+   "size": 963188,
+   "mtime": 1790549296015,
+   "auto": null,
+   "hint": "middle frame has distorted sensor shape and empty garage int",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.941Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s7_14": {
+   "size": 648368,
+   "mtime": 1790549607592,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s5_14": {
+   "size": 1331799,
+   "mtime": 1790549540927,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s6_09": {
+   "size": 692690,
+   "mtime": 1790549559697,
+   "auto": null,
+   "hint": "Green light appeared on the white device.",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.942Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s7_09": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s8_11": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s9_03": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s7_12": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s8_07": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s8_01": {
+   "size": 686606,
+   "mtime": 1790549275130,
+   "auto": null,
+   "hint": "Door warps and doormat disappears.",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.943Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s9_06": {
+   "removed": true,
+   "why": "no se pudo regenerar: el build usa la foto del momento"
+  },
+  "rkremote_s8_05": {
+   "size": 1286013,
+   "mtime": 1790549388752,
+   "auto": null,
+   "hint": "Jump in framing between images 3 and 4; hallway visibility c",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.943Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s7_04": {
+   "size": 1685618,
+   "mtime": 1790549443353,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "rkremote_s4_03": {
+   "size": 1388321,
+   "mtime": 1790549300683,
+   "auto": null,
+   "hint": "A bottle cap appears on the floor.",
+   "dur": 4.033,
+   "revisado": "2026-09-28T00:21:31.940Z",
+   "rechazado": null,
+   "ok": true
+  }
+ },
+ "hojas": null,
+ "version": 2,
+ "slug": "rkremote",
+ "at": "2026-09-28T01:06:32.953Z",
+ "repeticion": {
+  "planos": 46,
+  "loops": 0,
+  "dobles": 0,
+  "ejemplos": []
+ }
+}
