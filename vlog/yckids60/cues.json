@@ -1,0 +1,1169 @@
+[
+ {
+  "t": "card",
+  "comp": "PrintPush",
+  "at": "On a Saturday morning in 1963",
+  "until": "in Dayton, Ohio",
+  "props": {
+   "src": "@jpg:0",
+   "others": [
+    "@jpg:1",
+    "@jpg:2",
+    "@jpg:3"
+   ]
+  },
+  "after": "@jpg:0"
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "a nine-year-old in Dayton",
+  "dur": 4.2,
+  "props": {
+   "place": "DAYTON, OHIO",
+   "date": "1963"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Diorama3D",
+  "at": "ride his bike two miles",
+  "until": "three and a half hours",
+  "props": {
+   "mode": "route",
+   "place": "DAYTON, OHIO · 1963",
+   "distance": "2",
+   "title": "home to the Saturday matinee"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Ticket",
+  "at": "Cartoons, a newsreel",
+  "until": "two westerns back to back",
+  "props": {
+   "price": "25¢",
+   "line1": "Saturday Matinee",
+   "line2": "Cartoons · Newsreel · Serial · Two Westerns",
+   "bed": "@img:2"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Nobody called it neglect",
+  "until": "They called it Saturday",
+  "pad": 0.8,
+  "props": {
+   "text": "Nobody called it neglect. They called it Saturday.",
+   "keys": [
+    "neglect",
+    "saturday"
+   ],
+   "bed": "@img:4"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today, a parent who did that",
+  "until": "knock on the door",
+  "pad": 0.6,
+  "props": {
+   "then": {
+    "src": "@img:3",
+    "year": "1963"
+   },
+   "now": {
+    "src": "@img:5",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Projector3D",
+  "at": "Number fourteen on this list",
+  "until": "teacher's monthly paycheck",
+  "props": {
+   "screen": "@arch:14:0",
+   "bed": "@img:6",
+   "caption": "#14 · worth more than a month of the teacher's pay"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "And number three put",
+  "until": "completely legal",
+  "pad": 0.5,
+  "props": {
+   "text": "A fourteen-year-old. A two-ton machine. A public road. Completely legal.",
+   "keys": [
+    "fourteen-year-old",
+    "two-ton",
+    "legal"
+   ],
+   "bed": "@arch:3:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Timeline3D",
+  "at": "These are twenty things",
+  "until": "never have given up",
+  "props": {
+   "kicker": "TWENTY THINGS · 1960s",
+   "events": [
+    {
+     "year": "#20",
+     "label": "The playground that could hurt you",
+     "src": "@arch:20:0"
+    },
+    {
+     "year": "#14",
+     "label": "The machine only a kid could run",
+     "src": "@arch:14:1"
+    },
+    {
+     "year": "#8",
+     "label": "The car he built himself",
+     "src": "@arch:8:0"
+    },
+    {
+     "year": "#3",
+     "label": "Fourteen, and behind the wheel",
+     "src": "@arch:3:1"
+    },
+    {
+     "year": "#1",
+     "label": "The thing we should never have given up",
+     "src": "@arch:1:0",
+     "now": true
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Welcome to Yesterday's Classroom",
+  "until": "start at number twenty",
+  "props": {
+   "text": "Yesterday's Classroom",
+   "keys": [
+    "classroom"
+   ],
+   "align": "center",
+   "size": 150,
+   "bed": "@img:12"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number twenty.",
+  "until": "could actually hurt you",
+  "pad": 0.5,
+  "props": {
+   "n": 20,
+   "title": "Play on a playground that could actually hurt you",
+   "bed": "@arch:20:1"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "A slide twelve feet tall",
+  "dur": 3.6,
+  "props": {
+   "to": 12,
+   "suffix": " FT",
+   "label": "a steel slide, 1960s"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Timeline3D",
+  "at": "Then in 1981",
+  "until": "The ground turned soft",
+  "props": {
+   "kicker": "HOW THE PLAYGROUND CHANGED",
+   "events": [
+    {
+     "year": "1963",
+     "label": "Steel pipe, bolted and painted",
+     "src": "@arch:20:2"
+    },
+    {
+     "year": "1981",
+     "label": "The first federal playground safety handbook",
+     "src": "@img:@find:handbook"
+    },
+    {
+     "year": "1990s",
+     "label": "Merry-go-rounds start coming down",
+     "src": "@img:@find:merry"
+    },
+    {
+     "year": "TODAY",
+     "label": "Rubber ground, half-size slides",
+     "src": "@now:modern playground rubber surface",
+     "now": true
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "The slide was scary",
+  "until": "That was the point",
+  "pad": 0.7,
+  "props": {
+   "text": "The slide was scary. That was the point.",
+   "keys": [
+    "scary",
+    "point"
+   ],
+   "bed": "@arch:20:3"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number nineteen.",
+  "until": "lawn darts in the backyard",
+  "pad": 0.5,
+  "props": {
+   "n": 19,
+   "title": "Play lawn darts in the backyard",
+   "side": "right",
+   "bed": "@img:@find:dart"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Nobody read the instructions",
+  "dur": 2.6,
+  "props": {
+   "text": "Nobody read the instructions.",
+   "keys": [
+    "nobody"
+   ],
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BanStamp",
+  "at": "the federal government did exactly that",
+  "dur": 3.4,
+  "props": {
+   "top": "FEDERAL",
+   "big": "BANNED",
+   "date": "DECEMBER 1988"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number eighteen.",
+  "until": "did real chemistry",
+  "pad": 0.5,
+  "props": {
+   "n": 18,
+   "title": "Buy a chemistry set that did real chemistry",
+   "bed": "@img:@find:chemistry"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "A. C. Gilbert of New Haven",
+  "dur": 4.0,
+  "props": {
+   "place": "NEW HAVEN, CONNECTICUT",
+   "date": "1950"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "It came with a Geiger counter",
+  "until": "uranium ore",
+  "pad": 0.4,
+  "props": {
+   "text": "It came with a Geiger counter and real uranium ore.",
+   "keys": [
+    "geiger",
+    "uranium"
+   ],
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "A modern chemistry set proudly",
+  "until": "a warning label",
+  "props": {
+   "then": {
+    "src": "@img:@find:bottles",
+    "year": "1962"
+   },
+   "now": {
+    "src": "@img:@near",
+    "label": "TODAY"
+   },
+   "caption": "\"Contains no chemicals.\""
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number seventeen.",
+  "until": "Walk home for lunch",
+  "pad": 0.5,
+  "props": {
+   "n": 17,
+   "title": "Walk home for lunch",
+   "bed": "@arch:17:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Nobody signed you out",
+  "until": "and you did",
+  "pad": 0.5,
+  "props": {
+   "text": "Nobody signed you out. Nobody signed you back in.",
+   "keys": [
+    "out",
+    "in"
+   ],
+   "bed": "@arch:17:1"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today most schools are closed campuses",
+  "until": "treated as a security incident",
+  "props": {
+   "then": {
+    "src": "@arch:17:2",
+    "year": "1963"
+   },
+   "now": {
+    "src": "@now:school entrance locked door security buzzer",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number sixteen.",
+  "until": "cupcakes to class",
+  "pad": 0.5,
+  "props": {
+   "n": 16,
+   "title": "Bring homemade cupcakes to class",
+   "side": "right",
+   "bed": "@arch:16:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "It was the one day you were a celebrity",
+  "dur": 3.0,
+  "props": {
+   "text": "It was the one day you were a celebrity.",
+   "keys": [
+    "celebrity"
+   ],
+   "bed": "@arch:16:1"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today, many school districts ban homemade food",
+  "until": "if they are allowed at all",
+  "props": {
+   "then": {
+    "src": "@arch:16:2",
+    "year": "1964"
+   },
+   "now": {
+    "src": "@now:store-bought cupcakes packaged",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number fifteen.",
+  "until": "Red Rover at recess",
+  "pad": 0.5,
+  "props": {
+   "n": 15,
+   "title": "Play tag, dodgeball, and Red Rover at recess",
+   "bed": "@arch:15:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "schools from Washington State to Massachusetts",
+  "until": "banning tag",
+  "pad": 1.2,
+  "props": {
+   "masthead": "THE MORNING HERALD",
+   "date": "HEADLINES · 2006 – 2013",
+   "headline": "School bans the game of tag at recess, citing injuries",
+   "photo": "@arch:15:1"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "injuries, lawsuits, and hurt feelings",
+  "dur": 3.0,
+  "props": {
+   "text": "Injuries. Lawsuits. Hurt feelings.",
+   "keys": [
+    "injuries",
+    "lawsuits",
+    "feelings"
+   ],
+   "bed": "@arch:15:2"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number fourteen.",
+  "until": "movie projector",
+  "pad": 0.5,
+  "props": {
+   "n": 14,
+   "title": "Run the school's movie projector",
+   "side": "right",
+   "bed": "@arch:14:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "FilmStrip",
+  "at": "threaded the film through a maze",
+  "until": "checked the bulb",
+  "props": {
+   "srcs": [
+    "@arch:14:1",
+    "@arch:14:3",
+    "@arch:14:2"
+   ],
+   "label": "16 mm · threaded by hand"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Projector3D",
+  "at": "dimmed the lights, and pressed the switch",
+  "until": "the water cycle",
+  "pad": 0.4,
+  "props": {
+   "screen": "@arch:general:0",
+   "bed": "@img:@near",
+   "caption": "The fan hummed. The reel clicked."
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChalkBars",
+  "at": "A good sound projector in 1962",
+  "until": "a month of the teacher's salary",
+  "props": {
+   "title": "1962, in dollars",
+   "bars": [
+    {
+     "label": "SOUND FILM PROJECTOR",
+     "value": 520,
+     "display": "$500+",
+     "hot": true
+    },
+    {
+     "label": "AVERAGE TEACHER, PER MONTH",
+     "value": 420,
+     "display": "≈ $420"
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today, no student touches the equipment",
+  "until": "it is locked",
+  "props": {
+   "then": {
+    "src": "@arch:14:4",
+    "year": "1962"
+   },
+   "now": {
+    "src": "@now:students on laptops classroom",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number thirteen.",
+  "until": "School Safety Patrol",
+  "pad": 0.5,
+  "props": {
+   "n": 13,
+   "title": "Stop real traffic on the School Safety Patrol",
+   "bed": "@arch:13:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Grown men in Buicks",
+  "until": "a child in a white belt",
+  "pad": 0.5,
+  "props": {
+   "text": "Grown men stopped for a child in a white belt.",
+   "keys": [
+    "stopped",
+    "white",
+    "belt"
+   ],
+   "bed": "@arch:13:1"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "But today the guidelines are clear",
+  "until": "belongs to adults",
+  "props": {
+   "then": {
+    "src": "@arch:13:2",
+    "year": "1963"
+   },
+   "now": {
+    "src": "@now:adult crossing guard school",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number twelve.",
+  "until": "Saturday matinee alone",
+  "pad": 0.5,
+  "props": {
+   "n": 12,
+   "title": "Go to the Saturday matinee alone",
+   "side": "right",
+   "bed": "@arch:12:0"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "For a quarter you got",
+  "dur": 3.4,
+  "props": {
+   "to": 25,
+   "suffix": "¢",
+   "label": "hours of movies"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today, many theaters have policies",
+  "until": "simply gone",
+  "props": {
+   "then": {
+    "src": "@arch:12:1",
+    "year": "1962"
+   },
+   "now": {
+    "src": "@now:modern movie theater seats",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number eleven.",
+  "until": "city bus downtown alone",
+  "pad": 0.5,
+  "props": {
+   "n": 11,
+   "title": "Ride the city bus downtown alone",
+   "bed": "@arch:11:0"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "usually fifteen or twenty cents",
+  "dur": 3.2,
+  "props": {
+   "to": 15,
+   "suffix": "¢",
+   "label": "exact change, 1960s"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today, a child riding public transit",
+  "until": "each way",
+  "props": {
+   "then": {
+    "src": "@arch:11:1",
+    "year": "1962"
+   },
+   "now": {
+    "src": "@now:child with parent at airport",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number ten.",
+  "until": "note from home",
+  "pad": 0.5,
+  "props": {
+   "n": 10,
+   "title": "Run errands to the corner store with a note from home",
+   "side": "right",
+   "bed": "@arch:10:0"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "Empty soda bottles were worth two cents",
+  "dur": 3.4,
+  "props": {
+   "to": 2,
+   "suffix": "¢",
+   "label": "per empty bottle"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today, the federal minimum age",
+  "until": "from another planet",
+  "props": {
+   "then": {
+    "src": "@arch:10:1",
+    "year": "1963"
+   },
+   "now": {
+    "src": "@now:convenience store counter cashier",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number nine.",
+  "until": "without a permit",
+  "pad": 0.5,
+  "props": {
+   "n": 9,
+   "title": "Run a lemonade stand without a permit",
+   "bed": "@img:@find:lemonade"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Nobody asked for a license",
+  "until": "inspected the kitchen",
+  "pad": 0.5,
+  "props": {
+   "text": "Nobody asked for a license. Nobody inspected the kitchen.",
+   "keys": [
+    "license",
+    "kitchen"
+   ],
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "In 2015, two young sisters",
+  "until": "Father's Day present",
+  "props": {
+   "masthead": "THE DAILY SENTINEL",
+   "date": "OVERTON, TEXAS · 2015",
+   "headline": "Police shut down sisters' lemonade stand over a $150 permit",
+   "photo": "@now:kids lemonade stand"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number eight.",
+  "until": "soapbox derby car",
+  "pad": 0.5,
+  "props": {
+   "n": 8,
+   "title": "Build their own soapbox derby car",
+   "side": "right",
+   "bed": "@arch:8:0"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "All-American Soap Box Derby in Akron",
+  "dur": 4.2,
+  "props": {
+   "place": "DERBY DOWNS, AKRON, OHIO",
+   "date": "1960s"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "The boy had to build the car himself",
+  "dur": 3.0,
+  "props": {
+   "text": "The boy had to build the car himself.",
+   "keys": [
+    "himself"
+   ],
+   "bed": "@arch:8:1"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Timeline3D",
+  "at": "Then came 1973",
+  "until": "not the rule",
+  "props": {
+   "kicker": "THE DERBY CHANGES",
+   "events": [
+    {
+     "year": "1960s",
+     "label": "Built by hand, in the garage",
+     "src": "@arch:8:2"
+    },
+    {
+     "year": "1973",
+     "label": "Winner stripped: a magnet hidden in the nose",
+     "src": "@arch:8:3"
+    },
+    {
+     "year": "TODAY",
+     "label": "Standardized kits",
+     "src": "@now:child soapbox car race",
+     "now": true
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number seven.",
+  "until": "quarry all day",
+  "pad": 0.5,
+  "props": {
+   "n": 7,
+   "title": "Swim in the creek, the pond, or the quarry all day",
+   "bed": "@arch:7:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "No lifeguard",
+  "until": "No cell phone",
+  "pad": 0.4,
+  "props": {
+   "text": "No lifeguard. No sunscreen. No cell phone.",
+   "keys": [
+    "lifeguard",
+    "sunscreen",
+    "phone"
+   ],
+   "bed": "@arch:7:1"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today most of them are posted",
+  "until": "patrolled",
+  "pad": 0.3,
+  "props": {
+   "then": {
+    "src": "@img:@find:rope",
+    "year": "1964"
+   },
+   "now": {
+    "src": "@now:fenced pond no swimming",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number six.",
+  "until": "hammers and nails",
+  "pad": 0.5,
+  "props": {
+   "n": 6,
+   "title": "Build a fort in the woods with real hammers and nails",
+   "side": "right",
+   "bed": "@arch:6:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "The fort was a whole society",
+  "until": "set foot in it",
+  "pad": 0.5,
+  "props": {
+   "text": "The fort was a whole society, and not one adult ever set foot in it.",
+   "keys": [
+    "society",
+    "adult"
+   ],
+   "bed": "@arch:6:1"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today, the wild place",
+  "until": "building permit",
+  "props": {
+   "then": {
+    "src": "@arch:6:2",
+    "year": "1963"
+   },
+   "now": {
+    "src": "@now:backyard treehouse",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number five.",
+  "until": "all over town",
+  "pad": 0.5,
+  "props": {
+   "n": 5,
+   "title": "Go trick-or-treating alone, all over town",
+   "bed": "@arch:5:0"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "a tradition that began in 1950",
+  "dur": 3.2,
+  "props": {
+   "to": 1950,
+   "label": "the first orange UNICEF boxes"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "a lot of children trick-or-treat in a church parking lot",
+  "until": "a dozen adults",
+  "props": {
+   "then": {
+    "src": "@arch:5:1",
+    "year": "1963"
+   },
+   "now": {
+    "src": "@now:trunk or treat halloween parking lot",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number four.",
+  "until": "President mentioned it",
+  "pad": 0.5,
+  "props": {
+   "n": 4,
+   "title": "Hike fifty miles, just because the President mentioned it",
+   "side": "right",
+   "bed": "@arch:4:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Timeline3D",
+  "at": "In February of 1963",
+  "until": "in the snow",
+  "props": {
+   "kicker": "THE FIFTY-MILE CRAZE",
+   "events": [
+    {
+     "year": "1908",
+     "label": "Roosevelt: Marines must hike 50 miles in 20 hours",
+     "src": "@jpg:200"
+    },
+    {
+     "year": "FEB 1963",
+     "label": "Kennedy asks: could today's Marines do it?",
+     "src": "@jpg:201"
+    },
+    {
+     "year": "1963",
+     "label": "Robert Kennedy walks it, in street shoes",
+     "src": "@jpg:204"
+    }
+   ]
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "fifty-mile hikes of their own",
+  "dur": 3.4,
+  "props": {
+   "to": 50,
+   "suffix": " MILES",
+   "label": "on foot, just because"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BanStamp",
+  "at": "In 2012, that test was retired",
+  "dur": 3.2,
+  "props": {
+   "top": "FITNESS TEST",
+   "big": "RETIRED",
+   "date": "2012"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number three.",
+  "until": "legally, at fourteen",
+  "pad": 0.5,
+  "props": {
+   "n": 3,
+   "title": "Drive a car, legally, at fourteen",
+   "bed": "@arch:3:0"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "a fourteen- or fifteen-year-old could drive legally",
+  "dur": 3.4,
+  "props": {
+   "to": 14,
+   "label": "years old, behind the wheel"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "It was a rite of passage",
+  "until": "paid for by the town",
+  "pad": 0.4,
+  "props": {
+   "text": "A rite of passage, taught by the school, paid for by the town.",
+   "keys": [
+    "rite",
+    "passage"
+   ],
+   "bed": "@arch:3:2"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Fewer teenagers have a license at sixteen",
+  "dur": 4.2,
+  "props": {
+   "then": {
+    "src": "@arch:3:3",
+    "year": "1965"
+   },
+   "now": {
+    "src": "@now:teen driver with parent learning to drive",
+    "label": "TODAY"
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "Number two.",
+  "until": "streetlights came on",
+  "pad": 0.5,
+  "props": {
+   "n": 2,
+   "title": "Leave after breakfast and come home when the streetlights came on",
+   "side": "right",
+   "bed": "@arch:2:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Diorama3D",
+  "at": "The only rule was the streetlights",
+  "until": "you went home",
+  "pad": 0.8,
+  "props": {
+   "mode": "streetlights",
+   "title": "When the streetlights came on, you went home."
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "In 2015, in Silver Spring, Maryland",
+  "until": "investigated for neglect",
+  "props": {
+   "masthead": "THE MORNING POST",
+   "date": "SILVER SPRING, MARYLAND · 2015",
+   "headline": "Parents investigated after children, 10 and 6, walk home from park",
+   "photo": "@now:empty park swings"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "in 2018, Utah became the first state",
+  "until": "not, by itself, neglect",
+  "props": {
+   "kind": "law",
+   "masthead": "UTAH · 2018 · NEW STATE LAW",
+   "date": "THE FIRST OF ITS KIND",
+   "headline": "Letting a child walk to school or play outside alone is not, by itself, neglect."
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "A state legislature had to write it down",
+  "dur": 3.2,
+  "props": {
+   "text": "A state legislature had to write it down.",
+   "keys": [
+    "write"
+   ],
+   "bed": "@arch:2:2"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "NumberCard3D",
+  "at": "And number one.",
+  "until": "no adult in charge",
+  "pad": 0.6,
+  "props": {
+   "n": 1,
+   "title": "Solve their own problems, with no adult in charge",
+   "bed": "@arch:1:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "The tree is first base",
+  "until": "garden",
+  "pad": 0.4,
+  "props": {
+   "text": "The tree is first base. Ground rule double if it goes in Mrs. Miller's garden.",
+   "keys": [
+    "tree",
+    "first",
+    "base"
+   ],
+   "bed": "@arch:1:1"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "The trust. The competence.",
+  "until": "belonging to you",
+  "pad": 0.8,
+  "props": {
+   "text": "The trust. The competence. A whole summer day belonging to you.",
+   "keys": [
+    "trust",
+    "competence",
+    "summer"
+   ],
+   "bed": "@arch:2:3"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "which one would you bring back tomorrow",
+  "until": "if you could",
+  "pad": 0.6,
+  "props": {
+   "text": "Which one would you bring back?",
+   "keys": [
+    "bring",
+    "back"
+   ],
+   "align": "center",
+   "size": 130,
+   "bed": "@arch:1:2"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "If this took you back",
+  "until": "every week",
+  "pad": 2.0,
+  "props": {
+   "text": "Yesterday's Classroom · Class is back in session.",
+   "keys": [
+    "classroom"
+   ],
+   "align": "center",
+   "size": 110,
+   "bed": "@img:261"
+  }
+ }
+]
