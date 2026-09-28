@@ -499,6 +499,9 @@ if (fase === "check") {
         fd.append("file", new Blob([fs.readFileSync(wav)], { type: "audio/wav" }), "a.wav");
         let txt = "(timeout)";
         for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
+        // ⛔ una respuesta de ERROR de la API (sin crédito, 429…) NO es una transcripción: se trata como "(timeout)" = no midió.
+        //    Sin esto, el 27-sep, sin saldo en OpenAI, TODO S2/S3 salió ⛔ REGENERAR y el supervisor regeneró 13 clips sanos.
+        if (/^\s*\{\s*"error"/.test(txt)) { log("whisper ERROR", c.id, txt.replace(/\s+/g, " ").slice(0, 120)); txt = "(timeout)"; }
         const esperadoTxt = c.text || c.line || "";
         const NUM = /^(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien)$/;
         const wa = norm(esperadoTxt).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));

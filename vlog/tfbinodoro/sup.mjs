@@ -49,7 +49,7 @@ for (;;) {
       if (p.clips.some(c => running.has(s + ":" + c.id))) continue;
       const chk = spawnSync(process.execPath, ["scripts/agnes_vlog.mjs", `${V}/plan_${s}.json`, "check"], { env, encoding: "utf8", windowsHide: true, timeout: 30 * 60e3 });
       const txt = (chk.stdout || "") + (chk.stderr || ""); fs.writeFileSync(`${V}/check_${s}.log`, txt);
-      const rojos = txt.split("\n").filter(l => l.includes("REGENERAR") && !l.includes('"(timeout)"')).map(l => l.trim().split(/\s+/)[1]);
+      const rojos = txt.split("\n").map(l => l.match(/^\S+ (\S+) \[\S+\.mp4\] ⛔ REGENERAR/)).filter(m => m && !m.input.includes('"(timeout)"')).map(m => m[1]);
       const nuevos = rojos.filter(id => id && !regen.has(s + ":" + id));
       for (const id of nuevos) { regen.add(s + ":" + id); fs.appendFileSync(`${V}/regen.txt`, s + ":" + id + "\n"); L(`regen ${s} ${id}`); launch(s, id, true); }
       if (!nuevos.length) {
