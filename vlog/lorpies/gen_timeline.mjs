@@ -26,6 +26,7 @@ const v2 = (name) => { const p = `broll/lorpies/${name}.mp4`, im = `img/lorpies/
 const TOTAL = F(END + 0.4);
 const cues = [], ovs = [], sfx = [], foley = [];
 const warn = [];
+let lastImg = null;
 shots.forEach((s, i) => {
   const f0 = F(s.start), f1 = i + 1 < shots.length ? F(shots[i + 1].start) : TOTAL;
   const c = { k: s.kind, from: f0, dur: Math.max(1, f1 - f0), seed: (f0 * 2654435761) >>> 0 };
@@ -74,6 +75,9 @@ shots.forEach((s, i) => {
       c.props = { keys };
     }
   }
+  // cama de foto bajo TODO componente de tarjeta (regla 2.quater): la última foto del video antes de esta toma
+  if (c.k === "comp" && ["LorRecipeCard", "LorTwoCards", "LorTrick", "LorOvenDial", "LorSignUpSheet", "LorYear"].includes(c.name) && !c.props.bed && lastImg) c.props = { ...c.props, bed: lastImg };
+  if ((c.k === "img" || c.k === "snap") && c.img) lastImg = c.img;
   if (s.ov) ovs.push({ from: f0, dur: c.dur, name: s.ov.c, props: s.ov.props });
   cues.push(c);
 });

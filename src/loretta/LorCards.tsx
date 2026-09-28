@@ -74,7 +74,7 @@ const Cup: React.FC<{ fill: number; color: string; kind: "cup" | "spoon" }> = ({
 
 export const LorMeasure: React.FC<{ title?: string; items: { amt: string; what: string }[] }> = ({ title, items }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
-  const colors = ["#F4EFE3", "#FFFFFF", "#F6E6B8", "#C9A87A", "#E9D9B4"];
+  const colors = ["#E3CFA3", "#CFC7B8", "#EFD27E", "#B98A55", "#E6C27A"];
   const per = Math.min(1.1 * fps, 60);
   return (
     <AbsoluteFill style={{ ...gingham(LOR.gingham, 60, 0.2) }}>
@@ -87,7 +87,7 @@ export const LorMeasure: React.FC<{ title?: string; items: { amt: string; what: 
           const kind = /tsp|Tbsp|pinch/i.test(it.amt) ? "spoon" : "cup";
           return (
             <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", opacity: Math.min(1, s * 1.5), translate: `0 ${(1 - s) * 120}px` }}>
-              <Cup fill={fill} color={colors[i % colors.length]} kind={kind as "cup" | "spoon"} />
+              <div style={{ scale: "1.35", marginBottom: 40 }}><Cup fill={fill} color={colors[i % colors.length]} kind={kind as "cup" | "spoon"} /></div>
               <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 70, color: LOR.gingham, marginTop: 20 }}>{it.amt}</div>
               <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: LOR.ink, maxWidth: 420, textAlign: "center", lineHeight: "54px" }}>{it.what}</div>
             </div>
