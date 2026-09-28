@@ -90,6 +90,23 @@ const dirsOf = P => { const DIR = P.dir.replace(/\\/g, "/").replace(/\/?$/, "/")
 for (const P of PLANS) { const d = dirsOf(P); fs.mkdirSync(d.ANC, { recursive: true }); fs.mkdirSync(d.CL, { recursive: true }); }
 const P = PLANS[0], { DIR, ANC, CL } = dirsOf(P);
 let k = Math.floor(Math.random() * Math.max(1, KS.length)); const key = () => KS[(k++) % KS.length];
+
+// ⛔ (27-sep) la consulta de estado va con la MISMA CLAVE que creó el job: las claves ya no comparten jobs
+//    (con una clave al azar: 404 task not found → TIMEOUT a los 40 min → reenvío que quema cupo). kFor() busca
+//    una vez qué clave ve el job y la recuerda.
+const KMAP = new Map();
+async function kFor(vid) {
+  if (KMAP.has(vid)) return KMAP.get(vid);
+  for (const kx of KS) {
+    try {
+      const r = await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + kx }, signal: AbortSignal.timeout(30000) });
+      const t = await r.text();
+      if (r.ok && !/not.?found/i.test(t)) { KMAP.set(vid, kx); return kx; }
+    } catch {}
+  }
+  return key();
+}
+
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
@@ -317,8 +334,8 @@ function tramo(c) { // audio rellenado a segundo entero → mp3
 async function gen(id, body) {
   let vid;
   for (let t = 0; t < (+process.env.VLOG_MAX_TRIES || 200) && !vid; t++) {
-    const j = await fetch(B + "/videos", { method: "POST", signal: AbortSignal.timeout(120000), headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) }).then(r => r.json()).catch(e => ({ error: "red/queue " + (e?.cause?.code || e?.message) }));
-    vid = j.video_id || j.id;
+    const kPost = key(); const j = await fetch(B + "/videos", { method: "POST", signal: AbortSignal.timeout(120000), headers: { Authorization: "Bearer " + kPost, "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) }).then(r => r.json()).catch(e => ({ error: "red/queue " + (e?.cause?.code || e?.message) }));
+    vid = j.video_id || j.id; if (vid) KMAP.set(vid, kPost); // la clave que lo creó es la que lo ve
     if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(+(process.env.VLOG_RETRY_MS || 25000) + Math.random() * 10000); } // VLOG_RETRY_MS: con el cupo gratis agotado, reintentar cada ≥10 min (no martillar)
   }
   if (!vid) return log("GAVE UP", id);
@@ -326,7 +343,7 @@ async function gen(id, body) {
   const t0 = Date.now();
   while (Date.now() - t0 < 40 * 60e3) {
     await sleep(15000);
-    const g = await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { signal: AbortSignal.timeout(60000), headers: { Authorization: "Bearer " + key() } }).then(r => r.json()).catch(() => ({}));
+    const g = await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { signal: AbortSignal.timeout(60000), headers: { Authorization: "Bearer " + (await kFor(vid)) } }).then(r => r.json()).catch(() => ({}));
     if (g.status === "completed" && g.url) {
       for (let t = 0; t < 5; t++) try { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url, { signal: AbortSignal.timeout(300000) })).arrayBuffer())); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); } catch (e) { log("descarga falló, reintento", id, e?.cause?.code || e?.message); await sleep(10000); }
       return log("FAIL descarga", id);
