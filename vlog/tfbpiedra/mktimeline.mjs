@@ -24,7 +24,11 @@ const norm = w => w.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "
 function wordAt(id, word, n = 0) {
   const t = TR[id]; const w = norm(word);
   const h = caps.filter(c => c.startMs / 1000 >= t.s - 0.05 && c.startMs / 1000 < t.e && norm(c.text) === w);
-  if (!h.length) throw new Error(`palabra "${word}" no está en ${id} (${TEXT[id]})`);
+  if (!h.length) { // el ASR escribe números ("1") o parte palabras: posición proporcional dentro del texto de la línea
+    const ws = TEXT[id].split(/\s+/).map(norm); let k = -1, c = 0; for (let i = 0; i < ws.length; i++) if (ws[i] === w && c++ === n) { k = i; break; }
+    if (k < 0) throw new Error(`palabra "${word}" no está en ${id} (${TEXT[id]})`);
+    const chars = TEXT[id].split(/\s+/).slice(0, k).join(" ").length; console.log(`(aprox) "${word}" en ${id}`); return Math.max(0, t.d * chars / TEXT[id].length - 0.05);
+  }
   return Math.max(0, h[Math.min(n, h.length - 1)].startMs / 1000 - t.s);
 }
 const master = R + "out/tfbpiedra/master_c2.wav";
@@ -38,7 +42,7 @@ function silWav(D, tag) { const o = V + `_aud/${tag}.wav`; ff("-f", "lavfi", "-i
 // el clip del plan T a 30 fps 1920x1080 en public (con su audio: el foley se toma de acá)
 const TP = J(V + "plan_T.json"), TST = { ...(fs.existsSync(V + "T/clips/state.json") ? J(V + "T/clips/state.json") : {}), ...(fs.existsSync(V + "T/clips/state_det.json") ? J(V + "T/clips/state_det.json") : {}) };
 function tclip(id) {
-  if (!TST[id]) throw new Error("falta el clip " + id + " del plan T");
+  if (!TST[id]) { if (!SKIP.length) throw new Error("falta el clip " + id + " del plan T"); console.log("PRUEBA: falta", id, "→ uso otro"); id = Object.keys(TST).find(k => k.startsWith(id.slice(0, 3))) || Object.keys(TST)[0]; }
   const src = V + "T/clips/" + TST[id].file, o = PVA + `T_${id}.mp4`;
   if (!fs.existsSync(o) || fs.statSync(o).mtimeMs < fs.statSync(src).mtimeMs)
     ff("-i", src, "-vf", "fps=30,scale=1920:1080:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=3", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", o);
@@ -76,7 +80,7 @@ const punchCam = (D, at = 0.5, s = 1.16) => ({ keys: [[0, 1, 0, 0], [F(D * at), 
 function hclip(id, D, cam) { const c = tclip(id); return { src: c.rel, ss: 0, cam: cam || (D > 3.6 ? punchCam(D) : undefined), tag: id }; }
 function det(id, ss = 0.25, extra = {}) { const c = tclip(id); return { src: c.rel, ss, tag: id, foley: 0.35, foleyFile: c.abs, ...extra }; }
 const TD = id => TR[id].d;
-block(TD("t_01"), D => tramoWav("t_01", D), [hclip("t_01", TD("t_01"), { keys: [[0, 1, 0, 0]] })], "t_01");
+block(TD("t_01"), D => tramoWav("t_01", D), [hclip("t_01", TD("t_01"), punchCam(TD("t_01"), 0.3))], "t_01");
 block(TD("t_02"), D => tramoWav("t_02", D), [det("t_c1"), det("t_c2"), det("t_c3")], "t_02");
 // t_03: prueba del dedo · piedras · ANTES/DESPUÉS (la cortina de agua sobre las dos fotos del mismo encuadre)
 fs.copyFileSync(V + "T/anc/" + TP.clips.find(c => c.id === "t_agua").a + ".png", R + "public/img/tfbpiedra/wipe_a.png");

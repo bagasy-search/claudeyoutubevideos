@@ -5,7 +5,7 @@ const QR = { qr: "img/tfbpiedra/qr_tfbpiedra.png", cover: "img/tfbpiedra/portada
 const STEPS = ["La base", "La mezcla", "El colado", "La prueba", "El lavado", "El curado", "El sellado"];
 export const FXPLAN = [
   // ---- TRÁILER (0-60 s)
-  { kind: "zoom", at: ["t_01", "mira"], until: ["t_02", null, 0, -0.05], p: { path: [[0, 760, 760], [60, 800, 740]], r: 230, zoom: 1.8, label: "¡Apareció esto!", labelDx: 300, labelDy: -260 } }, // ⭐ la lupa de la miniatura
+  { kind: "zoom", at: ["t_01", "mira"], until: ["t_02", null, 0, -0.05], p: { path: [[0, 1250, 880], [60, 1210, 860]], r: 210, zoom: 1.9, label: "¡Apareció esto!", labelDx: -620, labelDy: -300 } }, // ⭐ la lupa de la miniatura
   { kind: "wipe", at: ["t_03", "casas"], until: ["t_04", null, 0, -0.03], p: { beforeSrc: "img/tfbpiedra/wipe_a.png", afterSrc: "img/tfbpiedra/wipe_b.png", beforeLabel: "ANTES", afterLabel: "DESPUÉS", from: 2, to: 26 } }, // ⭐
   { kind: "label", at: ["t_04", "agarre"], dur: 2.6, p: { text: "No resbala como el cemento liso", variant: "yellow", x: 110, y: 800 } },
   { kind: "label", at: ["t_05", "paso"], dur: 2.8, p: { kicker: "Hoy, completo", text: "Base · mezcla · colado · lavado", variant: "white", x: 110, y: 820, size: 58 } },
@@ -21,7 +21,7 @@ export const FXPLAN = [
   // ---- S3 mezcla
   { kind: "errors", at: ["s3_01", "guantes"], until: ["s3_02", null, 0, 0], p: { title: "CEMENTO FRESCO = CÁUSTICO", icon: "check", items: ["Guantes de goma", "Botas", "Gafas"], ats: [2, 22, 40] } },
   { kind: "label", at: ["s3_03", "canto"], dur: 3, p: { kicker: "Canto rodado", text: "Piedra de río de 1 a 2 cm", variant: "yellow", x: 110, y: 120 } },
-  { kind: "prop", at: ["s3_07", "una"], until: ["s3_08", "seco"], p: { title: "CON EL MISMO BALDE", note: "primero en seco", items: [{ n: 1, label: "Cemento", color: "#9a9a95" }, { n: 2, label: "Arena", color: "#d8c089" }, { n: 3, label: "Piedra", color: "#a4553a" }], x: 1330, y: 560 } }, // ⭐ min 5
+  { kind: "prop", at: ["s3_07", "una"], until: ["s3_08", "seco"], p: { title: "CON EL MISMO BALDE", note: "primero en seco", items: [{ n: 1, label: "Cemento", color: "#9a9a95" }, { n: 2, label: "Arena", color: "#d8c089" }, { n: 3, label: "Piedra", color: "#a4553a" }], x: 540, y: 560 } }, // ⭐ min 5
   { kind: "label", at: ["s3_11", "fondo"], dur: 3.2, p: { kicker: "El error", text: "Mucha agua: no aparece nada", variant: "red" } },
   { kind: "label", at: ["s3_12b", "ciento"], dur: 3.6, p: { kicker: "1 m × 2 m × 8 cm", text: "≈ 160 litros de mezcla", variant: "yellow", x: 110, y: 130 } },
   { kind: "qr", at: ["s3_17", null, 0, -0.2], until: ["s3_17", null, 0, 6.2], p: QR },

@@ -28,6 +28,9 @@ for (;;) {
       const bad = (lab && lab[1] === "⛔") || /NO ES/.test(l) || l.includes("⛔ SALTO") || (/de más:|falta:/.test(l) && corr != null && corr < 0.9 && /⛔ REGENERAR/.test(l));
       return bad ? m[1] : null; }).filter(Boolean).filter(c => (q.regen[c] || 0) < 2);
     if (id === "T") { q.state = "revisado"; log("T check (se arma en mktimeline)", malos.join(" ")); if (!malos.length) { q.state = "armado"; } }
+    const MAX = +(fs.existsSync(V + "max.txt") ? fs.readFileSync(V + "max.txt", "utf8").trim() : 3) || 3;
+    const vuelo = new Set([...Object.values(J(V + "launched.json")).map(x => x.pid), ...Object.values(Q).map(x => x.pid)].filter(p => p && alive(p))).size;
+    if (malos.length && vuelo >= MAX) { log(id, `espero cupo (${vuelo}/${MAX} en vuelo) para regenerar`, malos.join(" ")); continue; }
     if (malos.length) {
       malos.forEach(c => q.regen[c] = (q.regen[c] || 0) + 1);
       const o = fs.openSync(V + `clips_${id}.log`, "a");

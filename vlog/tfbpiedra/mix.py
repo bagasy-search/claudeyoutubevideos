@@ -10,6 +10,10 @@ def load(f, ss=0.0, d=None, rate=1.0):
     b = subprocess.run(a, capture_output=True, creationflags=0x08000000).stdout
     return np.frombuffer(b, dtype=np.float32).copy()
 voz = load(V + "voz.wav"); N = len(voz); out = voz.copy()
+def movavg(x, w):  # media móvil O(N) (np.convolve con ventanas de 1e4 sobre 5e7 muestras tardaba >15 min)
+    c = np.cumsum(np.concatenate([[0.0], x.astype(np.float64)])); h = w // 2
+    i = np.clip(np.arange(len(x)) - h, 0, len(x)); j = np.clip(np.arange(len(x)) + h, 0, len(x))
+    return ((c[j] - c[i]) / np.maximum(1, j - i)).astype(np.float32)
 rms = lambda x: float(np.sqrt(np.mean(x ** 2) + 1e-12))
 vr = rms(voz[np.abs(voz) > 0.01]) if (np.abs(voz) > 0.01).any() else 0.1
 def add(x, t, g):
@@ -48,9 +52,9 @@ while len(bed) < N - T0 + SR:
         fade = np.linspace(0, 1, X, dtype=np.float32); ov = bed[-X:] * (1 - fade) + b[:X] * fade
         bed = np.concatenate([bed[:-X], ov, b[X:]])
 bed = bed[: N - T0]
-env = np.convolve(np.abs(voz), np.ones(SR // 5) / (SR // 5), "same")[T0:]
+env = movavg(np.abs(voz), SR // 5)[T0:]
 duck = np.where(env > vr * 0.08, 1.0, 1.9).astype(np.float32)
-duck = np.convolve(duck, np.ones(SR // 4) / (SR // 4), "same").astype(np.float32)
+duck = movavg(duck, SR // 4)
 g = vr * 10 ** (-22 / 20)
 fi = np.minimum(1, np.arange(len(bed)) / (1.5 * SR)).astype(np.float32); fo = np.minimum(1, (len(bed) - np.arange(len(bed))) / (3 * SR)).astype(np.float32)
 out[T0:] += bed * g * duck * fi * fo
