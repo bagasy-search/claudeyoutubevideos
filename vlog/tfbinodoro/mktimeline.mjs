@@ -50,6 +50,9 @@ const SEG = [
   { k: "S", s: "SC", whip: true }, { k: "S", s: "S5", whip: true }, { k: "S", s: "S8", whip: true }, { k: "S", s: "S7", whip: true },
   { k: "S", s: "S7b", whip: true }, { k: "S", s: "S9", whip: true },
 ];
+// PARCIAL=1: arma sólo hasta la primera escena sin armar (preview de los primeros minutos y compuertas del minuto 1).
+const PARCIAL = !!process.env.PARCIAL;
+if (PARCIAL) { const i = SEG.findIndex(g => g.k === "LAM" || (g.k === "S" && !fs.existsSync(O + `${g.s}/vlog_${g.s}.mp4`))); if (i >= 0) SEG.splice(i); console.log("PARCIAL:", SEG.length, "segmentos"); }
 const TL = [], AUD = [], SFX = [], FOLEY = [], chap = [], LS = {}; // LS[lineId] = {f0, S, sf0} para anclar palabras
 let fr = 0;
 const master = R + "out/tfbinodoro/master_c.wav";
@@ -91,19 +94,21 @@ for (const g of SEG) {
 }
 const TOTAL = fr;
 // ---- anclas de palabra
-const lineStartF = id => { if (!LS[id]) throw new Error("línea sin ubicar " + id); return LS[id].f0; };
+const lineStartF = id => { if (!LS[id]) { if (PARCIAL) return NaN; throw new Error("línea sin ubicar " + id); } return LS[id].f0; };
 const wordF = (id, word, n = 0, dt = 0) => { const T = TR[id]; const h = caps.filter(c => c.startMs / 1000 >= T.s - 0.05 && c.startMs / 1000 < T.e && norm(c.text) === norm(word));
   if (!h.length) throw new Error(`palabra "${word}" no está en ${id}`); return lineStartF(id) + Math.round((h[Math.min(n, h.length - 1)].startMs / 1000 - T.s + dt) * FPS); };
-const endF = id => LS[id].f0 + LS[id].n;
-const footAt = (id, df = 0) => { const L = LS[id]; if (!L.S) throw new Error("footAt sólo en escenas: " + id); return { src: SCN[L.S].src, startFrom: L.sf0 + df }; };
+const endF = id => LS[id] ? LS[id].f0 + LS[id].n : PARCIAL ? NaN : (() => { throw new Error("línea sin ubicar " + id); })();
+const footAt = (id, df = 0) => { const L = LS[id]; if (!L && PARCIAL) return { src: "x", startFrom: NaN }; if (!L.S) throw new Error("footAt sólo en escenas: " + id); return { src: SCN[L.S].src, startFrom: L.sf0 + df }; };
 const anc = (S, K) => `img/tfbinodoro/anc/${S}_${K}.jpg`;
 const ANC_USED = new Set(); const ancImg = (S, K) => { ANC_USED.add(`${S}/${K}`); return anc(S, K); };
 const { buildFx } = await import("./fx.mjs");
-const FX = buildFx({ wordF, lineStartF, endF, footAt, ancImg, TL, SFX, FPS });
+let FX = buildFx({ wordF: (id, ...a) => (PARCIAL && !LS[id] ? NaN : wordF(id, ...a)), lineStartF, endF, footAt, ancImg, TL, SFX, FPS });
+if (PARCIAL) { FX = FX.filter(x => Number.isFinite(x.from) && Number.isFinite(x.dur) && x.from + x.dur <= TOTAL && !JSON.stringify(x).includes("NaN") && !JSON.stringify(x).includes("null"));
+  for (let i = SFX.length - 1; i >= 0; i--) if (!Number.isFinite(SFX[i].at) || SFX[i].at * FPS > TOTAL) SFX.splice(i, 1); }
 for (const k of ANC_USED) { const [S, K] = k.split("/"); const o = R + "public/" + anc(S, K); fs.mkdirSync(R + "public/img/tfbinodoro/anc", { recursive: true });
   if (!fs.existsSync(o)) ff("-i", O + `${S}/anc/${K}.png`, "-vf", "scale=1920:1080:flags=lanczos", "-q:v", "2", o); }
 // ---- salida
-const LAM_KEYS = (() => { const L = LS.LAM.f0, t = (w, n = 0) => (wordF("LAM", w, n) - L) / FPS;
+const LAM_KEYS = !LS.LAM ? [] : (() => { const L = LS.LAM.f0, t = (w, n = 0) => (wordF("LAM", w, n) - L) / FPS;
   return [[0, 0.5, 0.5, 1], [t("paso", 0) - 0.2, 0.47, 0.37, 2.1], [t("paso", 1) - 0.2, 0.47, 0.47, 2.1], [t("paso", 2) - 0.2, 0.47, 0.57, 2.1], [t("paso", 3) - 0.2, 0.47, 0.67, 2.1],
     [t("paso", 4) - 0.2, 0.47, 0.77, 2.1], [t("errores") - 0.6, 0.78, 0.55, 1.8], [(LS.LAM.n / FPS) - 1.2, 0.5, 0.5, 1]]; })();
 const ts = `// GENERADO por vlog/tfbinodoro/mktimeline.mjs — no editar a mano
@@ -129,4 +134,4 @@ fs.writeFileSync(R + "_tfbinodoro_assets.txt", assets.join("\n") + "\n");
 const mm = f => `${Math.floor(f / FPS / 60)}:${String(Math.floor(f / FPS % 60)).padStart(2, "0")}`;
 console.log("TOTAL", TOTAL, "cuadros =", (TOTAL / FPS).toFixed(2), "s ·", mm(TOTAL), "· FX", FX.length, "· SFX", SFX.length, "· FOLEY", FOLEY.length);
 console.log("capítulos:", chap.map(([n, f]) => `${n} ${mm(f)}`).join(" | "));
-console.log("hitos: arreglo base visto", mm(endF("s2_07")), "· lámina", mm(LS.LAM.f0), "→", ((LS.LAM.n) / FPS).toFixed(1), "s");
+if (LS.LAM) console.log("hitos: arreglo base visto", mm(endF("s2_07")), "· lámina", mm(LS.LAM.f0), "→", ((LS.LAM.n) / FPS).toFixed(1), "s");

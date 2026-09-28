@@ -35,7 +35,10 @@ for f in T["FOLEY"]:
     if not len(x) or rms(x) < 1e-4: continue
     loud = f["t"] in ("t01", "t02")
     tgt = -15 if loud else (-30 if f.get("gain", 0.5) >= 0.5 else -32)
-    x = fade(x * db(tgt) / rms(x), 0.01, 0.05); put(fol, x, f["at"])
+    x = x * db(tgt) / rms(x)
+    pmax = db(-4 if loud else -14); pk = np.max(np.abs(x))                # ⛔ RMS de un clip casi mudo + 1 golpe = +17 dBFS: tope de pico
+    if pk > pmax: x *= pmax / pk
+    x = fade(x, 0.01, 0.05); put(fol, x, f["at"])
 # 3) SFX
 L = R + "public/sfx/"
 MAP = {"whoosh": [L + f"lib/whoosh_soft_{i}.mp3" for i in range(1, 9)], "whoosh_big": [L + "cp_whoosh.wav", L + "whoosh.mp3"],
@@ -65,6 +68,7 @@ for c in lam:                                                         # durante 
     k = int(0.8 * SR); env[a:b] = db(-6); env[a - k:a] = np.linspace(1, db(-6), k); env[b:b + k] = np.linspace(db(-6), 1, k); mus *= env
 mus[-int(3 * SR):] *= np.linspace(1, 0, int(3 * SR))
 mix = voz + fol + fx + mus
+for nm, b in (("voz", voz), ("foley", fol), ("sfx", fx), ("musica", mus)): print(f"  pico {nm} {20*np.log10(np.max(np.abs(b))+1e-9):.1f} dBFS @ {np.argmax(np.abs(b))/SR:.2f}s")
 pk = np.max(np.abs(mix)); print(f"pico antes del limitador {20*np.log10(pk):.1f} dBFS")
 mix = np.tanh(mix / db(-1.5)) * db(-1.5)                              # limitador suave a -1,5 dBFS
 os.makedirs(R + "out/tfbinodoro", exist_ok=True)

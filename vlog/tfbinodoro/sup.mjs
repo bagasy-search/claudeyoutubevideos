@@ -50,7 +50,7 @@ for (;;) {
       const chk = spawnSync(process.execPath, ["scripts/agnes_vlog.mjs", `${V}/plan_${s}.json`, "check"], { env, encoding: "utf8", windowsHide: true, timeout: 30 * 60e3 });
       const txt = (chk.stdout || "") + (chk.stderr || ""); fs.writeFileSync(`${V}/check_${s}.log`, txt);
       const rojos = txt.split("\n").map(l => l.match(/^\S+ (\S+) \[\S+\.mp4\] ⛔ REGENERAR/)).filter(m => m && !m.input.includes('"(timeout)"')).map(m => m[1]);
-      const nuevos = rojos.filter(id => id && !regen.has(s + ":" + id));
+      const nuevos = process.env.NO_REGEN ? [] : rojos.filter(id => id && !regen.has(s + ":" + id)); // NO_REGEN=1: cupo agnes agotado, se arma con lo que hay
       for (const id of nuevos) { regen.add(s + ":" + id); fs.appendFileSync(`${V}/regen.txt`, s + ":" + id + "\n"); L(`regen ${s} ${id}`); launch(s, id, true); }
       if (!nuevos.length) {
         const a = spawnSync(process.execPath, ["scripts/agnes_vlog.mjs", `${V}/plan_${s}.json`, "armar"], { env, encoding: "utf8", windowsHide: true });
@@ -63,5 +63,5 @@ for (;;) {
     L(`clips ${t}/${n} · en vuelo ${running.size} · slots globales ocupados ${slots} · armadas ${arm}/${SC.length - 1}`);
     if (arm >= SC.length - 1 && t >= n && !running.size) { L("SUP fin"); break; }
   } catch (e) { L("SUP error vuelta: " + String((e && e.stack) || e).slice(0, 300).replace(/\s+/g, " ")); }
-  await sleep(180e3);
+  await sleep(+(process.env.SUP_SLEEP_MS || 180e3));
 }
