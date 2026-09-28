@@ -64,7 +64,10 @@ function block(D, audio, cuts, id) {
     f0 = f1; });
   fr += nf;
 }
-const punchCam = (D, at = 0.5, s = 1.16) => ({ keys: [[0, 1, 0, 0], [F(D * at), 1, 0, 0], [F(D * at) + 1, s, 0, 40]] });
+const punchCam = (D, at = 0.5, s = 1.3) => { // saltos de zoom fuertes (se leen como corte, scene>0,3): uno cada ~2,2 s, alternando 1 ↔ s
+  const n = Math.max(1, Math.round(D / 2.2) - 1), k = [[0, 1, 0, 0]];
+  for (let i = 1; i <= n; i++) { const f = F(D * (n === 1 ? at : i / (n + 1))), z = i % 2 ? [s, -70, 70] : [1, 0, 0], p = k[k.length - 1]; k.push([f, p[1], p[2], p[3]], [f + 1, ...z]); }
+  return { keys: k }; };
 
 // ================= TRÁILER =================
 { const a = tclip("t_agua"); // 0-4 s: el chorro destapa las piedras. A normal, B en cámara lenta (rampa), sin voz: foley real
@@ -76,7 +79,7 @@ const punchCam = (D, at = 0.5, s = 1.16) => ({ keys: [[0, 1, 0, 0], [F(D * at), 
   EV.push({ t: DA, sfx: "impact" }); fr = F(DA) + F(DB); }
 { const c = tclip("t_w1"); const sp = speechEnd(c.abs, c.T); // vecino: su audio
   LINE.t_w1 = fr / FPS; const D = Math.min(c.T, sp + 0.25), nf = F(D);
-  AUD.push(clipWav(c.abs, 0, nf / FPS, "t_w1")); TL.push({ kind: "vid", src: c.rel, from: fr, dur: nf, startFrom: 0, cam: { keys: [[0, 1.12, 0, 30]], whipIn: 6 }, tag: "t_w1" }); EV.push({ t: fr / FPS, sfx: "whoosh" }); fr += nf; }
+  AUD.push(clipWav(c.abs, 0, nf / FPS, "t_w1")); TL.push({ kind: "vid", src: c.rel, from: fr, dur: nf, startFrom: 0, cam: { ...punchCam(D), whipIn: 6 }, tag: "t_w1" }); EV.push({ t: fr / FPS, sfx: "whoosh" }); fr += nf; }
 function hclip(id, D, cam) { const c = tclip(id); return { src: c.rel, ss: 0, cam: cam || (D > 3.6 ? punchCam(D) : undefined), tag: id }; }
 function det(id, ss = 0.25, extra = {}) { const c = tclip(id); return { src: c.rel, ss, tag: id, foley: 0.35, foleyFile: c.abs, ...extra }; }
 const TD = id => TR[id].d;
@@ -95,7 +98,7 @@ block(TD("t_06"), D => tramoWav("t_06", D), [hclip("t_06", TD("t_06"))], "t_06")
 block(TD("r_01"), D => tramoWav("r_01", D), [hclip("r_01", TD("r_01"))], "r_01");
 for (const id of ["r_02", "r_03", "r_04", "r_05", "r_06", "r_07", "r_08"]) {
   const D = TD(id), c = tclip(id);
-  block(D, D2 => tramoWav(id, D2), [{ src: c.rel, ss: 0, tag: id, foley: 0.3, foleyFile: c.abs, whoosh: true, cam: fr / FPS < 64 && D > 4 ? { keys: [[0, 1, 0, 0], [F(D / 2), 1, 0, 0], [F(D / 2) + 1, 1.2, 0, 0]] } : { keys: [[0, 1, 0, 0], [F(D), 1.08, 0, 0]] } }], id);
+  block(D, D2 => tramoWav(id, D2), [{ src: c.rel, ss: 0, tag: id, foley: 0.3, foleyFile: c.abs, whoosh: true, cam: fr / FPS < 64 && D > 4 ? punchCam(D) : { keys: [[0, 1, 0, 0], [F(D), 1.08, 0, 0]] } }], id);
 }
 function speechEnd(file, T) { // fin de la voz en el audio propio del clip (−35 dB bajo el pico)
   const b = execFileSync("ffmpeg", ["-v", "error", "-i", file, "-vn", "-ac", "1", "-ar", "16000", "-t", String(T), "-f", "s16le", "-"]);

@@ -25,7 +25,13 @@ for (;;) {
     // Palabras: si los labios dan corr ≥0,9 el clip dice el tramo (el ASR se equivoca: "he sofragua"); "luz oscura" = falso positivo frecuente → a ojo.
     const malos = out.split(/\r?\n/).map(l => { const m = l.match(/^\S+ (\S+?)(?: \(detalle\))? \[[^\]]+\]/); if (!m) return null;
       const lab = l.match(/labios (✓|⛔) corr ([\d.-]+)/), corr = lab ? +lab[2] : null;
-      const bad = (lab && lab[1] === "⛔") || /NO ES/.test(l) || l.includes("⛔ SALTO") || (/de más:|falta:/.test(l) && corr != null && corr < 0.9 && /⛔ REGENERAR/.test(l));
+      // "cara NO ES" del juez de visión = falsos positivos frecuentes (medido: s4_02 era él) → sólo se anota para mirarlo a ojo
+      if (/NO ES/.test(l)) log(id, "mirar a ojo (visión dice otra cara):", m[1]);
+      // salto de pose en un DETALLE en el último 40 %: no se regenera (suele repetirse) → se usa hasta antes del salto, en cámara lenta
+      const sj = l.match(/⛔ SALTO de pose en ([\d.]+)s/), det = /\(detalle\)/.test(l);
+      if (sj && det) { const tl = P.clips.find(c => c.id === m[1]), len = tl.audio ? Math.max(4, +(tl.len || 0)) : 4; const t = +sj[1];
+        const OF = P.dir + "/overrides.json", O = J(OF); if (t >= 3) { O[m[1]] = { ...(O[m[1]] || {}), trimTo: +(t - 0.15).toFixed(2) }; fs.writeFileSync(OF, JSON.stringify(O, null, 1)); log(id, m[1], "salto en", t, "→ trimTo", (t - 0.15).toFixed(2)); return null; } }
+      const bad = (lab && lab[1] === "⛔") || (l.includes("⛔ SALTO") && !det) || (sj && det) || (/de más:|falta:/.test(l) && corr != null && corr < 0.9 && /⛔ REGENERAR/.test(l));
       return bad ? m[1] : null; }).filter(Boolean).filter(c => (q.regen[c] || 0) < 2);
     if (id === "T") { q.state = "revisado"; log("T check (se arma en mktimeline)", malos.join(" ")); if (!malos.length) { q.state = "armado"; } }
     const MAX = +(fs.existsSync(V + "max.txt") ? fs.readFileSync(V + "max.txt", "utf8").trim() : 3) || 3;
@@ -43,5 +49,6 @@ for (;;) {
     fs.writeFileSync(QF, JSON.stringify(Q, null, 1));
   }
   if (!pend) { log("TODO ARMADO"); break; }
+  if (process.env.ONCE) break; // una pasada (a mano, sin loop de fondo)
   await new Promise(r => setTimeout(r, 120000));
 }
