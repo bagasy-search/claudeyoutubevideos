@@ -127,6 +127,7 @@ for (const [pid, part] of Object.entries(A.PARTS)) {
     if (id.startsWith("r_")) c.audio = wavOf?.[id]; else c.secs = secs;
     p.clips.push(c);
   }
+  p.clips = p.clips.filter(c => c.id !== "t_c9"); // t_c9: anclas con manos coladas → fuera (t_04 va con t_c7 + t_c8); las anclas quedan para no renumerar
   save("T", p); tot.anc += p.anchors.length; tot.clips += p.clips.length; console.log("T anclas", p.anchors.length, "clips", p.clips.length);
 }
 console.log("TOTAL", tot);

@@ -82,7 +82,7 @@ block(TD("t_02"), D => tramoWav("t_02", D), [det("t_c1"), det("t_c2"), det("t_c3
 fs.copyFileSync(V + "T/anc/" + TP.clips.find(c => c.id === "t_agua").a + ".png", R + "public/img/tfbpiedra/wipe_a.png");
 fs.copyFileSync(V + "T/anc/" + TP.clips.find(c => c.id === "t_agua").b + ".png", R + "public/img/tfbpiedra/wipe_b.png");
 block(TD("t_03"), D => tramoWav("t_03", D), [det("t_c4"), det("t_c5"), { kind: "still", src: "img/tfbpiedra/wipe_a.png", tag: "wipe", w: 1.3 }], "t_03");
-block(TD("t_04"), D => tramoWav("t_04", D), [det("t_c7"), det("t_c8"), det("t_c9")], "t_04");
+block(TD("t_04"), D => tramoWav("t_04", D), [det("t_c7"), det("t_c8")], "t_04");
 block(TD("t_05"), D => tramoWav("t_05", D), [hclip("t_05", TD("t_05"))], "t_05");
 block(TD("t_06"), D => tramoWav("t_06", D), [hclip("t_06", TD("t_06"))], "t_06");
 { const D = TD("t_07"), y1 = wordAt("t_07", "y", 0), y2 = wordAt("t_07", "y", 1) - 0.05, c = tclip("t_07");

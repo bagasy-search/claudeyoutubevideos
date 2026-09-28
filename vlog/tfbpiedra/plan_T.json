@@ -491,15 +491,6 @@
    "secs": 4
   },
   {
-   "id": "t_c9",
-   "detail": true,
-   "a": "K24",
-   "b": "K25",
-   "text": "",
-   "action": "The camera moves slowly toward the finished glistening pebble slab.",
-   "secs": 4
-  },
-  {
    "id": "t_c10",
    "detail": true,
    "a": "K26",

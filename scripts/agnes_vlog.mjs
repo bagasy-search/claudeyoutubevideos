@@ -480,7 +480,12 @@ if (fase === "check") {
         const fd = new FormData(); fd.append("model", "whisper-1"); fd.append("language", P.lang || "es"); fd.append("response_format", "text");
         fd.append("file", new Blob([fs.readFileSync(wav)], { type: "audio/wav" }), "a.wav");
         let txt = "(timeout)";
-        for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
+        const ASR_URL = process.env.ASR_URL || env.ASR_URL; // ASR local (vlog/<slug>/asr_server.py) cuando OpenAI/Modal no tienen saldo
+        for (let t = 0; t < 3 && txt === "(timeout)"; t++) try {
+          txt = ASR_URL ? await (await fetch(ASR_URL, { method: "POST", body: fs.readFileSync(wav), signal: AbortSignal.timeout(120000) })).text()
+            : await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text();
+          if (/"error"\s*:|insufficient_quota|credit_balance/.test(txt)) { log("⛔ ASR sin saldo / error: NO se puntúa como habla —", txt.slice(0, 80).replace(/\s+/g, " ")); txt = "(timeout)"; break; }
+        } catch (e) { log("whisper timeout, reintento", c.id); }
         const esperadoTxt = c.text || c.line || "";
         const NUM = /^(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien)$/;
         const wa = norm(esperadoTxt).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));

@@ -6,7 +6,7 @@ import fs from "node:fs";
 import { spawn } from "node:child_process";
 const R = "D:/Proyectos/video2-wt/tfbpiedra/", V = R + "vlog/tfbpiedra/";
 const MAX = +(process.argv[2] || 10);
-const PL = (process.argv[3] ? process.argv[3].split(",") : fs.readdirSync(V).filter(f => /^plan_.*\.json$/.test(f) && f !== "plan_SETS.json").map(f => f.slice(5, -5)));
+const PL = (process.argv[3] ? process.argv[3].split(",") : fs.readdirSync(V).filter(f => /^plan_.*\.json$/.test(f) && f !== "plan_SETS.json").map(f => f.slice(5, -5)).sort((a, b) => (a === "T" ? -1 : b === "T" ? 1 : 0))); // el tráiler/receta primero
 const LF = V + "launched.json"; const L = fs.existsSync(LF) ? JSON.parse(fs.readFileSync(LF, "utf8")) : {};
 const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
 const log = (...a) => fs.appendFileSync(V + "sup.log", new Date().toISOString().slice(11, 19) + " " + a.join(" ") + "\n");
