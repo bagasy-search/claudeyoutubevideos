@@ -1,0 +1,1565 @@
+[
+ {
+  "id": "b001",
+  "type": "DX",
+  "scene": "E1",
+  "secs": 4,
+  "d1": "close view of the lower part of a freshly limewashed chalky white exterior wall, a strong jet of water from a green garden hose nozzle hitting the white paint at chest height, water sheeting down the wall",
+  "d2": "the same wall wet and shiny, water running down in streams, the chalky white paint still intact, the jet still hitting",
+  "text": ""
+ },
+ {
+  "id": "b002",
+  "type": "V",
+  "scene": "E1",
+  "A": "the neighbor stands behind the low unplastered brick wall on the right with his arms crossed, shaking his head, talking to the presenter",
+  "K": "the neighbor behind the low brick wall with arms crossed, head tilted, sceptical half smile, the presenter beside the white wall holding the hose pointed down",
+  "line": "¿Con cal y cemento? Con la primera lluvia se te lava todo, te lo digo yo.",
+  "text": "¿Con cal y cemento? Con la primera lluvia se te lava todo, te lo digo yo."
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "E1",
+  "A": "he lifts the hose pistol and sprays the white half of the wall again at close range, water splashing, glancing at the neighbor",
+  "K": "he holds the green hose pistol spraying the white half of the wall, water running down, he looks sideways at the neighbor with a small calm smile",
+  "text": "Mira."
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "E1",
+  "A": "he lowers the hose, turns to the camera and talks, pointing back at the wet white wall with his thumb",
+  "K": "he faces the camera holding the dripping hose down at his side, thumb pointing back over his shoulder at the wet white wall, eyebrows raised",
+  "text": "Loco o genio: pinté la casa con cemento, cal y agua. Y no se cae."
+ },
+ {
+  "id": "b005",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of a plastic jug pouring white hydrated lime powder into an empty grey plastic twenty-litre bucket on a concrete floor, a puff of white dust rising",
+  "d2": "the same bucket with a heap of white lime powder inside, a little dust still floating above it",
+  "text": "Cal hidratada."
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "G1",
+  "A": "he tips a plastic jug of fine white cement powder into the bucket on the workbench, looking at the camera",
+  "K": "he holds the empty plastic jug above the bucket, a thin trail of white powder still falling, looking at the camera",
+  "text": "Cemento blanco, poquito."
+ },
+ {
+  "id": "b007",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of a plastic jug pouring clear water into a grey bucket of white powder, the water turning milky",
+  "d2": "the same bucket now full of milky white liquid with small ripples on the surface",
+  "text": "Agua."
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "G1",
+  "A": "he holds up a small glass jar of coarse salt next to the bucket and shakes it toward the camera with a half smile",
+  "K": "he holds the glass jar of coarse grey salt at face height beside his cheek, one eyebrow raised, looking at the camera",
+  "text": "Y un cuarto ingrediente, que casi nadie pone."
+ },
+ {
+  "id": "b009",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of a wooden stick stirring thick milky white limewash in a grey bucket, swirls on the surface",
+  "d2": "the same bucket with a smooth creamy white surface, the stick lifted, white liquid dripping from it",
+  "text": "Se revuelve hasta que queda como leche."
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "E2",
+  "A": "he dips a wide white-bristle brush into a bucket of limewash and paints a long stroke on the old grey wall, talking",
+  "K": "a long fresh stroke of pale translucent white on the grey old wall, the wet brush resting against the wall, he looks at the camera",
+  "text": "Y con una brocha ancha, sobre el repello, manos finitas."
+ },
+ {
+  "id": "b011",
+  "type": "D",
+  "scene": "E2",
+  "d1": "close view of a wide brush laying limewash on bare grey cement plaster, the paint looking thin and see-through as it goes on",
+  "d2": "the same patch of wall covered with an even thin milky coat, the brush lifting away at the edge of the frame",
+  "text": "La primera mano parece que no tapa nada."
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "E1",
+  "A": "he walks slowly along the wall and stops at the line where the chalky white half meets the old grey stained half, touching both",
+  "K": "he stands at the dividing line, his right palm on the bright white half and his left palm on the old grey stained half, looking at the camera",
+  "text": "Pero mira el antes y el después, en la misma pared."
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "E1",
+  "A": "he rubs his palm hard on the white half and shows the camera his clean palm",
+  "K": "he holds his open right palm toward the camera, the palm clean with no white dust, the white wall behind him",
+  "text": "Froto, y no me deja la mano blanca."
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "E1",
+  "A": "he gestures to the whole wall with an open arm while talking to the camera, calm and sure",
+  "K": "he stands in front of the wall with his left arm open toward the white half, looking at the camera with a confident small nod",
+  "text": "Y va aguada, así que rinde muchísimo. Con un balde pinto toda esta pared, y me sobra."
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "E1",
+  "A": "he knocks on the white wall with his knuckles and explains to the camera",
+  "K": "his knuckles resting on the white wall, he looks at the camera explaining, serious",
+  "text": "¿Por qué no se cae? Porque no es una capa de plástico pegada encima. La cal se mete en los poros del repello."
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "E1",
+  "A": "he runs his fingertips along the texture of the white wall, then looks at the camera",
+  "K": "his fingertips on the white chalky surface, he looks at the camera with a small smile",
+  "text": "Y con el aire, poco a poco, se vuelve piedra otra vez. Por eso no se descascara como la pintura común."
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "E1",
+  "A": "he glances at the neighbor behind the low wall and back to the camera, amused",
+  "K": "he looks at the camera with an amused face, his thumb pointing sideways toward the neighbor behind the low brick wall",
+  "text": "Mi vecino todavía no me cree. Ya le voy a mostrar.",
+  "skip": true
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "E1",
+  "A": "he raises a finger and leans toward the camera, lowering his voice a little",
+  "K": "he leans slightly toward the camera with his index finger raised, eyebrows up, conspiratorial face",
+  "text": "Pero ojo: el cuarto ingrediente es el que hace que no se caiga, y casi nadie lo pone bien. Al final te enseño el error."
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "G1",
+  "A": "he puts the salt jar down on the workbench and spreads his hands over the bucket, talking to the camera",
+  "K": "he stands behind the workbench, hands resting on both sides of the grey bucket, looking at the camera",
+  "text": "Te doy la receta completa ya, con las medidas, y después te muestro cada paso de cerca."
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "G1",
+  "A": "he holds up an empty plastic one-litre jug and taps it",
+  "K": "he holds the empty clear plastic jug up at shoulder height, tapping its side with a finger, looking at the camera",
+  "text": "Todo se mide con el mismo recipiente. Yo uso esta jarra. No en kilos: en jarras."
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "G1",
+  "A": "he scoops lime powder with the jug from the open paper bag four times into the bucket, counting on his fingers",
+  "K": "he holds four fingers up with his left hand, the jug in his right hand dusty with white powder, looking at the camera",
+  "text": "Cuatro jarras de cal hidratada."
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "G1",
+  "A": "he scoops one jug of white cement from a smaller bag and shows one finger",
+  "K": "he holds one finger up, the jug in the other hand dusted white, the small bag of white cement open on the bench",
+  "text": "Una jarra de cemento blanco. Cuatro a uno."
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "G1",
+  "A": "he tips a handful of coarse salt from the jar into a mug of steaming hot water and stirs it with a spoon",
+  "K": "he stirs the mug with a spoon, steam rising, looking at the camera",
+  "text": "Un puñado de sal gruesa, disuelta antes en un poco de agua caliente."
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "G1",
+  "A": "he pours water from a large plastic jug into the bucket while stirring with a wooden stick",
+  "K": "he stirs the bucket with the wooden stick, milky white liquid inside, looking down at it",
+  "text": "Y agua, más o menos el doble que de polvo, hasta que quede como leche. Leche, no yogur."
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "G1",
+  "A": "he taps the side of the bucket and raises a warning finger",
+  "K": "he holds his index finger up beside the bucket, serious look at the camera",
+  "text": "Y la pared tiene que ser mineral: repello, ladrillo o cemento. Sobre pintura plástica, no. Ya te explico por qué.",
+  "skip": true
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "G1",
+  "A": "he taps the bucket lid and points at a calendar hanging on the wall, talking",
+  "K": "he rests a hand on the bucket lid, pointing with the other hand toward the wall of the garage, looking at the camera",
+  "text": "La cal la dejo remojando desde la noche anterior. El cemento y la sal van el día que pinto."
+ },
+ {
+  "id": "b027",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of milky limewash being poured from a bucket through a piece of green mosquito mesh stretched over another bucket",
+  "d2": "the second bucket full of smooth white limewash, the mesh holding a few small lumps",
+  "text": "Se cuela, para que no queden grumos."
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "E2",
+  "A": "he sprays the old grey wall with a garden pump sprayer, the plaster darkening where it gets wet",
+  "K": "the wall is darker grey and damp where he sprayed, he holds the pump sprayer lowered, looking at the camera",
+  "text": "La pared limpia, sin pintura plástica, y mojada antes de pintar."
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "E2",
+  "A": "he paints another thin stroke with the wide brush, then holds up three fingers",
+  "K": "he holds up three fingers of his left hand, the brush in his right hand, a few thin white strokes on the grey wall behind him",
+  "text": "Tres o cuatro manos finas, dejando secar entre una y otra."
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "E2",
+  "A": "he mists the painted wall lightly with the pump sprayer and nods to the camera",
+  "K": "a fine mist settles on the painted wall, he lowers the sprayer and nods at the camera",
+  "text": "Y los días siguientes, un rocío de agua para que cure despacio. Eso es todo."
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "E2",
+  "A": "he puts the sprayer down and talks to the camera, counting the questions on his fingers",
+  "K": "he holds up two fingers, looking at the camera with a friendly serious face",
+  "text": "Ahora sí, vamos con las preguntas que más me hicieron, porque ahí es donde la gente la arruina."
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "G2",
+  "A": "he lifts the lid of an old bucket with hardened grey-white lumps inside and shows it to the camera",
+  "K": "he holds the lid up with one hand, the old bucket with hard lumpy white paste inside tilted toward the camera, disgusted face",
+  "text": "La primera, y la que más se repite: ¿se puede guardar para el otro día? Mira lo que pasa."
+ },
+ {
+  "id": "b033",
+  "type": "D",
+  "scene": "G2",
+  "d1": "close view of a stick pushing into a thick lumpy grey-white paste in a bucket, the paste cracking in chunks",
+  "d2": "the stick stuck upright in the hardened lumpy paste",
+  "text": "Esto lo preparé ayer con el cemento adentro. Grumos. Ya no pinta igual, por más que lo revuelvas."
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "G2",
+  "A": "he taps the bag of white cement with his finger, explaining",
+  "K": "his finger rests on the paper bag of white cement on the bench, he looks at the camera explaining",
+  "text": "¿Por qué? Porque el cemento empieza a fraguar en cuanto le cae agua. No espera a que tú termines."
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "G2",
+  "A": "he puts the lid back on the old bucket and slides it away across the bench",
+  "K": "the old bucket is pushed to the far end of the bench, lid on, he looks at the camera with a small shrug",
+  "text": "Entonces la regla es sencilla: el cemento se mezcla sólo con lo que vas a usar ese día."
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "G2",
+  "A": "he pats the lid of another bucket full of soaked lime paste, satisfied",
+  "K": "his palm flat on the lid of the lime paste bucket, satisfied smile at the camera",
+  "text": "La cal sola, en cambio, sí aguanta. Tapada, con un dedito de agua encima, dura semanas. Por eso separo."
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "G2",
+  "A": "he holds up a clear plastic jug of lime powder next to a kitchen scale, comparing",
+  "K": "he holds the jug of white powder above a small kitchen scale on the bench, looking at the camera with raised eyebrows",
+  "text": "Segunda pregunta: ¿kilos o botes? Un bote de cal no pesa lo mismo que un bote de cemento."
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "G2",
+  "A": "he puts the jug on the scale, reads it, then puts a same jug of cement on the scale",
+  "K": "the jug of cement sits on the small scale, he points at it looking at the camera",
+  "text": "La cal es mucho más liviana. Si mides la cal en kilos y el cemento en jarras, te sale otra mezcla."
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "G2",
+  "A": "he taps the same jug twice, nodding",
+  "K": "he holds the clear jug up next to his face, nodding at the camera",
+  "text": "Por eso todo en jarras, con la misma jarra. Cuatro de cal, una de cemento. Así no te equivocas nunca."
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "G2",
+  "A": "he sits on a stool by the bench and holds up four fingers, thinking",
+  "K": "he sits on the stool with four fingers raised, a thoughtful look at the camera",
+  "text": "Cuarta pregunta: ¿cuánto dura? No te voy a inventar un número. Depende de la lluvia, del sol, y de cómo la pongas."
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "G2",
+  "A": "he stands up from the stool and pats the bucket of lime, smiling",
+  "K": "he stands with one hand on the lime bucket, a warm smile at the camera",
+  "text": "Lo bueno es que cuando se gasta no hay que raspar nada: se moja y se le pasa otra mano encima, y queda como nueva."
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "I1",
+  "A": "he stands in a small bedroom next to a wall painted with old glossy cream latex paint and knocks on it",
+  "K": "he stands beside the old cream latex wall, his knuckles against it, looking at the camera",
+  "text": "Y la tercera: ¿la puedo poner encima de la pintura que ya tengo? Aquí está la parte honesta."
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "I1",
+  "A": "he presses a strip of masking tape on a small test patch of dried limewash on the latex wall and pulls it off",
+  "K": "he holds up the strip of tape toward the camera, the tape covered in white flakes, a bare patch visible on the wall",
+  "text": "Sobre látex, esmalte o pintura plástica, se agarra mal. Mira la cinta: se llevó todo."
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "I1",
+  "A": "he points at the test patch on the latex wall, serious",
+  "K": "he points at the flaking test patch on the cream latex wall, serious face at the camera",
+  "text": "La cal necesita un fondo mineral para meterse: repello, ladrillo, cemento. El plástico no la deja entrar."
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "I1",
+  "A": "he flicks a few drops of water from his wet fingers onto the cream latex wall, the drops beading and running down",
+  "K": "water drops bead and run down the glossy cream wall, he points at them looking at the camera",
+  "text": "¿Cómo sabes si tu pared es mineral? La prueba de la gota. Le tiras unas gotas de agua. Si resbalan como en un vidrio, hay plástico."
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "I1",
+  "A": "he flicks water drops onto a bare scraped patch of grey plaster, the drops soaking in and darkening it",
+  "K": "a dark damp spot on the bare grey plaster where the drops soaked in, he points at it with a satisfied face",
+  "text": "Si se chupan y la pared se oscurece, es mineral. Ahí la cal se va a agarrar."
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "I1",
+  "A": "he scrapes the old latex paint with a wide putty knife, a flake curling off",
+  "K": "a curl of cream paint hangs from the putty knife, a patch of bare grey plaster exposed, he looks at the camera",
+  "text": "Si tu pared tiene pintura vieja, hay que sacarla o, por lo menos, sacar todo lo que está flojo, hasta ver el repello."
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "I1",
+  "A": "he taps a smooth white gypsum wall on the other side of the room and shakes his head",
+  "K": "he rests a hand on the smooth white gypsum wall, shaking his head slightly at the camera",
+  "text": "Y sobre yeso pintado tampoco. Eso no te lo dicen en los videos: te lo digo yo, para que no tires tu dinero."
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "G3",
+  "A": "he puts on clear safety goggles and pulls on rubber gloves at the workbench",
+  "K": "he wears clear safety goggles and orange rubber gloves, holding his gloved hands up to the camera",
+  "text": "Antes de abrir la bolsa: gafas y guantes. No es exagerar."
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "G3",
+  "A": "he points at his goggles with a gloved finger, very serious",
+  "K": "his gloved index finger touches the side of his goggles, he looks at the camera very serious",
+  "text": "La cal y el cemento son cáusticos: te queman la piel. Y la cal en los ojos es una urgencia. Si te salta, agua limpia abundante y al médico."
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "G3",
+  "A": "he opens the paper bag of hydrated lime and shows the white powder inside",
+  "K": "he holds the paper bag open toward the camera, fine white powder inside, dust rising a little",
+  "text": "Esta es cal hidratada, la de construcción. Viene en polvo, en bolsa, en cualquier ferretería."
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "G3",
+  "A": "he rubs a pinch of lime between his gloved fingers",
+  "K": "a little white powder falls from his gloved fingertips, he looks at the camera",
+  "text": "No es yeso ni es cal viva. La viva es la que hierve con el agua y quema. Esta ya está apagada."
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "G3",
+  "A": "he shakes his head and wags a gloved finger at the bag, warning",
+  "K": "he wags his gloved index finger beside the bag, a warning face at the camera",
+  "text": "Y cuidado en la ferretería: hay cal agrícola, que es piedra molida para la tierra. Esa no endurece en la pared. Pide cal hidratada, de construcción."
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "G3",
+  "A": "he tilts the bag and explains the old tradition with a nostalgic smile",
+  "K": "he holds the bag against his chest, nostalgic half smile at the camera",
+  "text": "Así se pintaban las bardas de las escuelas, las casas del campo, las iglesias. Nada nuevo. Lo nuevo es que se olvidó."
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "G3",
+  "A": "he puts the bag down and picks up the small bag of white cement, comparing both",
+  "K": "he holds the small bag of white cement up beside the lime bag, looking at the camera",
+  "text": "¿Y para qué el cemento blanco? La cal sola es de adentro. Afuera, donde pega la lluvia, el cemento le da más dureza al frote."
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "G3",
+  "A": "he taps the lime bag, then the cement bag, then holds up four fingers and one finger",
+  "K": "he holds up four fingers on one hand and one on the other, looking at the camera",
+  "text": "Pero es poquito. Si le pones mucho cemento, queda más dura, pero respira menos y se puede cuartear."
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "G3",
+  "A": "he lays out tools on the bench one by one: a wide brush, two buckets, a jug, a piece of green mosquito mesh and a pump sprayer",
+  "K": "the tools lie in a row on the bench, he points along them with his gloved hand, looking at the camera",
+  "text": "Las herramientas: una brocha ancha, dos baldes, una jarra, un pedazo de mosquitero y un rociador de jardín, o una botella con atomizador."
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "G3",
+  "A": "he picks up the wide brush and flexes its thick bristles against his gloved palm",
+  "K": "he holds the wide brush up to the camera, bristles fanned out, looking at the camera",
+  "text": "La brocha, ancha y de cerda gruesa, porque carga mucha cal aguada. El rodillo sirve, pero con brocha la cal entra mejor en los poros."
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "G3",
+  "A": "he puts his gloved hand on the lime bag, the small cement bag and the salt jar in turn",
+  "K": "his gloved hand rests on the salt jar next to the two bags, he looks at the camera with a small smile",
+  "text": "¿Y cuánto gastas? Una bolsa de cal, una bolsa chica de cemento blanco y sal gruesa. Cuesta una fracción de una lata de pintura."
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "G4",
+  "A": "he scoops lime powder with the jug into a grey bucket, the night before, a lamp on",
+  "K": "he empties the fourth jug of lime into the bucket, white dust floating, looking into the bucket",
+  "text": "La noche anterior: cuatro jarras de cal en el balde vacío. Primero el polvo."
+ },
+ {
+  "id": "b061",
+  "type": "D",
+  "scene": "G4",
+  "d1": "close view of water pouring slowly from a jug onto a heap of white lime powder in a bucket, forming a wet crater",
+  "d2": "the same bucket with the powder soaked into a thick wet white paste, a thin layer of water on top",
+  "text": "Después el agua, de a poco, y lo dejo que se empape solo."
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "G4",
+  "A": "he stirs the thick lime paste with a wooden stick, working hard",
+  "K": "he leans over the bucket stirring the thick white paste with a wooden stick, focused, sleeves rolled up",
+  "text": "Revuelvo hasta que no quede polvo seco. Queda una pasta espesa, como crema."
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "G4",
+  "A": "he pours a thin layer of water on top of the lime paste and puts the lid on the bucket",
+  "K": "he presses the lid onto the bucket with both hands, looking at the camera",
+  "text": "Le dejo un dedo de agua encima, tapo, y a dormir. Mínimo una noche."
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "G4",
+  "A": "he taps the lid with his knuckles and explains to the camera",
+  "K": "his knuckles resting on the bucket lid, he looks at the camera explaining with a calm face",
+  "text": "¿Para qué el reposo? Para que la cal se hidrate bien. Si la usas recién mezclada, queda más arenosa y se agarra peor."
+ },
+ {
+  "id": "b065",
+  "type": "D",
+  "scene": "G4",
+  "d1": "close view of a bucket lid being lifted off, revealing a smooth creamy white lime putty under a thin clear layer of water",
+  "d2": "the lid fully off, the smooth white lime putty surface with a little clear water on top",
+  "text": "Al día siguiente, mira qué cremosa quedó."
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "G4",
+  "A": "he adds water from a large jug into the lime putty and stirs, the mixture turning to milk",
+  "K": "he stirs a thin milky white liquid in the bucket with the stick, looking at the camera",
+  "text": "Ahora le agrego agua hasta que quede líquida. Tiene que chorrear del palo, fina, como leche."
+ },
+ {
+  "id": "b067",
+  "type": "A",
+  "scene": "G4",
+  "A": "he lifts the stick out of the bucket and lets the white liquid drip back, showing the camera",
+  "K": "he holds the stick above the bucket, a thin stream of milky white liquid running off it, looking at the camera",
+  "text": "¿Ves cómo chorrea? Si queda pastosa, pintas una capa gruesa, y la capa gruesa es la que se cuartea y se cae."
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "G5",
+  "A": "he dissolves coarse salt in a steaming mug of hot water with a spoon",
+  "K": "he stirs the mug with a spoon, steam rising, the salt nearly gone, looking at the camera",
+  "text": "Ahora la sal. Un puñado en un poco de agua caliente, y la revuelvo hasta que no quede ni un grano."
+ },
+ {
+  "id": "b069",
+  "type": "D",
+  "scene": "G5",
+  "d1": "close view of a mug of hot water with coarse salt crystals dissolving as a spoon stirs",
+  "d2": "the same mug with clear water and no crystals left, the spoon resting in it",
+  "text": "Disuelta. Nunca en grano directo en el balde."
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "G5",
+  "A": "he pours the salt water from the mug into the bucket and stirs",
+  "K": "he stirs the bucket, the empty mug on the bench beside it, looking down at the mix",
+  "text": "La echo al balde, y revuelvo bien."
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "G5",
+  "A": "he mixes one jug of white cement with a little water in a small separate bucket into a thin cream",
+  "K": "he stirs a small bucket with thin grey-white cement cream, looking at the camera",
+  "text": "Y el cemento, la jarra de cemento blanco, primero aparte con un poco de agua, para que no haga bolitas."
+ },
+ {
+  "id": "b072",
+  "type": "D",
+  "scene": "G5",
+  "d1": "close view of thin white cement cream being poured from a small bucket into a larger bucket of milky limewash",
+  "d2": "the milky limewash with a creamy swirl of cement blending into it",
+  "text": "Y ahora sí, todo junto."
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "G5",
+  "A": "he stirs the full bucket slowly for a long time with the stick",
+  "K": "he keeps stirring the full bucket, looking at the camera with a patient face",
+  "text": "Revuelvo un buen rato. Y lo voy revolviendo también mientras pinto, porque el cemento se va al fondo."
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "G5",
+  "A": "he pours the limewash through green mosquito mesh stretched over another bucket",
+  "K": "he holds the empty bucket tilted over the mesh, a few lumps left on the green mesh, looking at the camera",
+  "text": "Y lo último: la cuelo por un pedazo de mosquitero. Lo que queda arriba no va a la pared."
+ },
+ {
+  "id": "b075",
+  "type": "A",
+  "scene": "G5",
+  "A": "he lifts the full bucket onto the bench with both hands, showing how full it is",
+  "K": "the full bucket of white limewash sits on the bench, he rests his hands on its rim, looking at the camera",
+  "text": "Con estas medidas me sale casi un balde lleno. Y lo que no uses hoy, ya sabes: con cemento adentro, no se guarda."
+ },
+ {
+  "id": "b076",
+  "type": "V",
+  "scene": "G5",
+  "A": "the neighbor walks into the garage door on the left, looks into the bucket and frowns, talking to the presenter",
+  "K": "the neighbor stands in the garage doorway leaning to look at the bucket, frowning with a hand on his hip, the presenter beside the bench",
+  "line": "¿Y la sal? ¿Vas a pintar o vas a hacer un guiso?",
+  "text": "¿Y la sal? ¿Vas a pintar o vas a hacer un guiso?"
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "G5",
+  "A": "he laughs and points at the salt jar, talking to the neighbor, then to the camera",
+  "K": "he laughs looking at the camera, pointing at the salt jar on the bench, the neighbor still in the doorway",
+  "text": "¡Ja! Eso mismo dicen todos. La sal es el truco de los viejos albañiles. Ya vas a ver, vecino."
+ },
+ {
+  "id": "b078",
+  "type": "A",
+  "scene": "G5",
+  "A": "he puts the bucket down, takes off one glove and picks up a printed sheet of paper from the bench",
+  "K": "he holds a printed sheet of cream paper in his bare hand, looking at the camera, serious",
+  "text": "Y ahora presta muchísima atención a esta imagen, porque probablemente sea la parte más importante del video."
+ },
+ {
+  "id": "b079",
+  "type": "L",
+  "scene": "LAM",
+  "text": "Aquí está todo en una sola hoja. Los materiales: cuatro jarras de cal hidratada, una de cemento blanco, un puñado de sal gruesa disuelta, y agua hasta leche."
+ },
+ {
+  "id": "b080",
+  "type": "L",
+  "scene": "LAM",
+  "text": "El paso a paso: la cal remojada desde la noche anterior, colada. La pared limpia, sin pintura plástica, y humedecida."
+ },
+ {
+  "id": "b081",
+  "type": "L",
+  "scene": "LAM",
+  "text": "Tres o cuatro manos finas con brocha ancha, cruzadas, dejando secar entre mano y mano. Y los días siguientes, un rocío de agua para que cure."
+ },
+ {
+  "id": "b082",
+  "type": "L",
+  "scene": "LAM",
+  "text": "Y abajo, los tres errores que la hacen caer: pintar encima de pintura plástica, dar una sola mano gruesa, y pintar con el sol de mediodía pegando en la pared."
+ },
+ {
+  "id": "b083",
+  "type": "L",
+  "scene": "LAM",
+  "text": "Si te quedas con esta hoja, ya puedes pintar. Tómale captura si quieres."
+ },
+ {
+  "id": "b084",
+  "type": "A",
+  "scene": "G5",
+  "A": "he puts the sheet down on the bench and talks casually to the camera",
+  "K": "he leans on the workbench with one hand on the printed sheet, relaxed, looking at the camera",
+  "text": "Esto lo tengo ordenado junto con otros arreglos en la guía del canal. Si estás en el televisor, apunta la cámara de tu teléfono a este código."
+ },
+ {
+  "id": "b085",
+  "type": "A",
+  "scene": "G5",
+  "A": "he taps the sheet and nods, relaxed",
+  "K": "he stands relaxed with his arms folded, a friendly look at the camera",
+  "text": "Y si estás en el teléfono, el enlace está abajo. Seguimos, que ahora viene la pared."
+ },
+ {
+  "id": "b086",
+  "type": "A",
+  "scene": "EP",
+  "A": "he walks to the old grey half of the exterior wall carrying a bucket and a wire brush",
+  "K": "he stands in front of the old grey half of the wall with a wire brush in one hand and the bucket at his feet, looking at the camera",
+  "text": "Esta es la otra mitad de la pared. Repello de cemento, con restos de una pintura vieja que se estaba pelando."
+ },
+ {
+  "id": "b087",
+  "type": "A",
+  "scene": "EP",
+  "A": "he scrapes the peeling old paint with a wide putty knife, flakes falling to the ground",
+  "K": "he holds the putty knife against the wall, a clean grey scraped area, pale flakes on the ground, looking at the camera",
+  "text": "Todo lo que se levanta, afuera. Con la espátula, hasta que no salga nada más."
+ },
+ {
+  "id": "b088",
+  "type": "D",
+  "scene": "EP",
+  "d1": "close view of a wide steel putty knife scraping off curling flakes of old off-white paint from grey cement plaster",
+  "d2": "the same patch now bare grey plaster with scratch marks, a few flakes falling",
+  "text": "Lo que está bien pegado, lo dejo; lo que suena hueco, lo saco."
+ },
+ {
+  "id": "b089",
+  "type": "A",
+  "scene": "EP",
+  "A": "he scrubs the scraped area with the wire brush, dust flying",
+  "K": "he brushes the wall with the wire brush, a little grey dust in the air, focused on the wall",
+  "text": "Después, cepillo de alambre, para sacar el polvo y lo suelto. La cal se pega a la pared, no al polvo."
+ },
+ {
+  "id": "b090",
+  "type": "A",
+  "scene": "EP",
+  "A": "he rubs a damp dark patch at the bottom of the wall with his fingers and shows the camera",
+  "K": "he crouches by the base of the wall, his fingers on a dark damp stain near the ground, looking up at the camera",
+  "text": "Y ojo con esto: si la pared tiene humedad que sube del piso, primero hay que resolver eso. La pintura no arregla una humedad."
+ },
+ {
+  "id": "b091",
+  "type": "A",
+  "scene": "EP",
+  "A": "he stands up and brushes his hands, talking to the camera",
+  "K": "he stands brushing dust off his hands, looking at the camera",
+  "text": "Donde hay una mancha así, la cal sí deja respirar la pared mejor que un plástico. Pero si el agua sigue subiendo, va a seguir manchando."
+ },
+ {
+  "id": "b092",
+  "type": "A",
+  "scene": "EP",
+  "A": "he spreads an old plastic sheet on the ground along the wall and tapes plastic over a nearby window frame",
+  "K": "plastic sheeting covers the ground and the window frame, he presses the tape down, looking at the camera",
+  "text": "Antes de pintar, tapa el piso y las ventanas. La cal salpica, y en los vidrios y en el aluminio deja manchas que cuestan mucho sacar."
+ },
+ {
+  "id": "b093",
+  "type": "A",
+  "scene": "EP",
+  "A": "he wipes a white splash off the window glass with a wet rag",
+  "K": "he holds the wet rag against the clean glass, looking at the camera",
+  "text": "Si te cae una gota, límpiala en el momento con un trapo mojado. Fresca sale fácil; seca, ya no tanto."
+ },
+ {
+  "id": "b094",
+  "type": "A",
+  "scene": "EP",
+  "A": "he walks to the end of the wall where a section of bare red brick is exposed and taps it",
+  "K": "his hand rests on the bare red brick section at the end of the wall, he looks at the camera",
+  "text": "¿Y sobre ladrillo sin repellar? También agarra muy bien. El ladrillo chupa más: mójalo más, y cuenta con una mano extra."
+ },
+ {
+  "id": "b095",
+  "type": "A",
+  "scene": "EP",
+  "A": "he pumps the garden sprayer and sprays water on the bare plaster, which darkens",
+  "K": "he sprays the grey plaster, a large dark wet area, he looks at the camera over his shoulder",
+  "text": "Ahora la mojo. Esto es lo que casi todos se saltan, y es lo más importante."
+ },
+ {
+  "id": "b096",
+  "type": "D",
+  "scene": "EP",
+  "d1": "close view of a fine spray of water hitting dry grey cement plaster, the surface darkening where it lands",
+  "d2": "the whole patch evenly dark and damp, tiny droplets on the surface",
+  "text": "Húmeda, no chorreando."
+ },
+ {
+  "id": "b097",
+  "type": "A",
+  "scene": "EP",
+  "A": "he touches the damp wall with his palm and explains",
+  "K": "his palm flat on the damp dark wall, he looks at the camera explaining",
+  "text": "¿Por qué? Porque una pared seca le chupa el agua a la cal en un segundo. Y la cal, sin agua, no se agarra: queda polvo."
+ },
+ {
+  "id": "b098",
+  "type": "A",
+  "scene": "EP",
+  "A": "he looks up at the sky shading his eyes with his hand, then back to the camera",
+  "K": "he shades his eyes with his hand looking up at the overcast sky, then looks at the camera",
+  "text": "Por eso tampoco se pinta con el sol del mediodía pegando de frente. Yo pinto temprano o a la tarde, o con el día nublado como hoy."
+ },
+ {
+  "id": "b099",
+  "type": "A",
+  "scene": "EP",
+  "A": "he checks the weather on his old phone and puts it back in his apron pocket",
+  "K": "he slides the phone into the apron pocket, looking at the camera with a practical face",
+  "text": "Y mira el pronóstico: que no llueva en los dos días siguientes, ni que vaya a helar. La cal fresca necesita esos días tranquilos."
+ },
+ {
+  "id": "b100",
+  "type": "A",
+  "scene": "E3",
+  "A": "he stirs the bucket of limewash with the stick and talks to the camera, thoughtful",
+  "K": "he holds the stick still in the bucket, looking at the camera with a thoughtful face",
+  "text": "Te cuento algo. Me escribió Ramiro, de Cochabamba, en Bolivia. Pintó la barda de su patio con cal y cemento."
+ },
+ {
+  "id": "b101",
+  "type": "A",
+  "scene": "E3",
+  "A": "he rubs his hand on the old grey wall and shows his palm to the camera, imitating the story",
+  "K": "he shows his palm to the camera with a little grey dust on it, eyebrows raised",
+  "text": "A los pocos meses pasaba la mano por la pared y le quedaba blanca. Y me dijo: esto no sirve."
+ },
+ {
+  "id": "b102",
+  "type": "A",
+  "scene": "E3",
+  "A": "he raises one finger, then two, then three while talking",
+  "K": "he holds up three fingers, looking at the camera with a knowing face",
+  "text": "Le pregunté tres cosas. ¿La mojaste antes? No. ¿A qué hora pintaste? Al mediodía. ¿Cuántas manos? Una, bien gruesa, para terminar rápido."
+ },
+ {
+  "id": "b103",
+  "type": "A",
+  "scene": "E3",
+  "A": "he nods slowly, half smiling, then points at the wall",
+  "K": "he points at the grey wall with the stick, a patient half smile at the camera",
+  "text": "Las tres cosas que la hacen fallar, juntas. No era la receta: era cómo la puso."
+ },
+ {
+  "id": "b104",
+  "type": "A",
+  "scene": "E3",
+  "A": "he dips the wide brush into the bucket and wipes the excess on the rim",
+  "K": "he holds the loaded brush above the bucket, wiping it on the rim, looking at the camera",
+  "text": "Así que vamos a hacerlo bien. Brocha ancha, cargada pero sin chorrear."
+ },
+ {
+  "id": "b105",
+  "type": "A",
+  "scene": "E3",
+  "A": "he paints the damp grey wall with wide crossing strokes",
+  "K": "he paints a wide area with crossing strokes, the fresh coat translucent milky over the grey, his face turned to the wall",
+  "text": "Pinceladas cruzadas, en todas direcciones, y metiendo la cal en los poros."
+ },
+ {
+  "id": "b106",
+  "type": "A",
+  "scene": "E3",
+  "A": "he reaches up and paints a full band along the top of the wall from one corner, moving sideways",
+  "K": "a fresh band of translucent white runs along the top of the wall, he paints near the corner, face turned to the wall",
+  "text": "Y un orden: de arriba hacia abajo, y un paño completo de esquina a esquina, sin parar a la mitad. Si paras a la mitad, se nota la marca."
+ },
+ {
+  "id": "b107",
+  "type": "D",
+  "scene": "E3",
+  "d1": "close view of a wide brush pushing thin limewash into the pores of rough grey plaster with crossing strokes",
+  "d2": "the same area covered in a thin translucent milky white layer, the brush lifting",
+  "text": "Se aprieta un poquito, para que entre."
+ },
+ {
+  "id": "b108",
+  "type": "A",
+  "scene": "E3",
+  "A": "he steps back and looks at the translucent first coat, showing it to the camera with a hand",
+  "K": "he stands a step back, his open hand toward the translucent patchy coat on the wall, looking at the camera",
+  "text": "Y aquí es donde la gente se asusta. Mira: se ve transparente, manchada. Parece que no sirve."
+ },
+ {
+  "id": "b109",
+  "type": "V",
+  "scene": "E3",
+  "A": "the neighbor looks over the low brick wall at the translucent patchy wall and laughs, talking to the presenter",
+  "K": "the neighbor leans his forearms on the low brick wall, laughing, pointing at the patchy wall with his chin, the presenter standing with the brush",
+  "line": "¿Y eso es pintura? Se ve más gris que antes, hombre.",
+  "text": "¿Y eso es pintura? Se ve más gris que antes, hombre."
+ },
+ {
+  "id": "b110",
+  "type": "A",
+  "scene": "E3",
+  "A": "he smiles at the neighbor and taps the side of his nose, then talks to the camera",
+  "K": "he looks at the camera with a calm confident smile, the brush in his hand, the neighbor behind the low wall",
+  "text": "Espérate a que seque. La cal mojada se ve gris y transparente. Al secarse se pone blanca, blanca tiza."
+ },
+ {
+  "id": "b111",
+  "type": "D",
+  "scene": "E3",
+  "d1": "close view of a wet translucent greyish limewash patch on a wall drying and turning bright white",
+  "d2": "the same patch now dry and bright chalky white",
+  "text": "Así."
+ },
+ {
+  "id": "b112",
+  "type": "A",
+  "scene": "E3",
+  "A": "he checks his watch and holds up his hand with fingers spread",
+  "K": "he shows the camera his wristwatch, his other hand with five fingers spread, looking at the camera",
+  "text": "Entre mano y mano, de cuatro a seis horas, según el calor. Que esté seca al tacto, pero que no pase un día entero."
+ },
+ {
+  "id": "b113",
+  "type": "A",
+  "scene": "E3",
+  "A": "he sprays the dried first coat lightly with the pump sprayer before the second coat",
+  "K": "a light mist on the first coat, he lowers the sprayer and looks at the camera",
+  "text": "Y antes de la segunda mano, un rocío otra vez. Siempre sobre húmedo."
+ },
+ {
+  "id": "b114",
+  "type": "A",
+  "scene": "E4",
+  "A": "he paints the second coat with long crossing strokes, the wall turning whiter",
+  "K": "the wall is noticeably whiter, still a little uneven, he paints with the wide brush, focused",
+  "text": "Segunda mano. Ahora sí empieza a tapar. Todavía se ven sombras, y está bien."
+ },
+ {
+  "id": "b115",
+  "type": "A",
+  "scene": "E4",
+  "A": "he stirs the bucket again with the stick before loading the brush",
+  "K": "he stirs the bucket, the brush resting across the rim, looking at the camera",
+  "text": "Cada tanto revuelvo el balde. Si no, el cemento se va al fondo y la última mano sale aguada."
+ },
+ {
+  "id": "b116",
+  "type": "A",
+  "scene": "E4",
+  "A": "he paints the third coat on the wall, the white becoming even",
+  "K": "the wall is evenly white and matte, he finishes a stroke at the top with the brush, looking at the result",
+  "text": "Tercera mano. Esta es la que la deja pareja."
+ },
+ {
+  "id": "b117",
+  "type": "D",
+  "scene": "E4",
+  "d1": "close view of a wide brush laying a final coat of limewash on an already white wall, the surface becoming smooth and even",
+  "d2": "the wall surface evenly bright chalky white and matte, the brush gone from the frame",
+  "text": "Si todavía ves transparencias, una cuarta. Nunca una gruesa: varias finitas."
+ },
+ {
+  "id": "b118",
+  "type": "A",
+  "scene": "E4",
+  "A": "he steps back and runs his hand in the air over the finish, talking about the look",
+  "K": "he stands back with his open hand toward the finished matte white wall, looking at the camera",
+  "text": "El acabado es mate, tipo tiza. No brilla como la pintura de lata. Si buscas brillo, esto no es para ti."
+ },
+ {
+  "id": "b119",
+  "type": "A",
+  "scene": "E4",
+  "A": "he points at a thin hairline crack in the white wall near the window",
+  "K": "his fingertip rests beside a thin hairline crack in the white wall, he looks at the camera",
+  "text": "Si la pared tiene grietas finas, la cal las rellena un poco. Pero una grieta que se mueve vuelve a aparecer. Esa se arregla antes de pintar."
+ },
+ {
+  "id": "b120",
+  "type": "A",
+  "scene": "E4",
+  "A": "he shows a small cup of red iron oxide pigment powder to the camera",
+  "K": "he holds a small plastic cup of reddish earth pigment powder toward the camera",
+  "text": "¿Y con color? Sí, pero con pigmentos minerales, los óxidos en polvo, los que se usan para el cemento."
+ },
+ {
+  "id": "b121",
+  "type": "D",
+  "scene": "E4",
+  "d1": "close view of red iron oxide pigment powder being stirred into a small bucket of white limewash, turning it pale terracotta",
+  "d2": "the small bucket with an even pale terracotta pink liquid, the stick resting on the rim",
+  "text": "Primero en un poco de agua, y después al balde. Salen tonos suaves: arena, rosado, ocre, gris."
+ },
+ {
+  "id": "b122",
+  "type": "A",
+  "scene": "E4",
+  "A": "he paints a small test stroke of the pale terracotta color on a scrap of plaster board",
+  "K": "he holds the scrap board up to the camera with a pale terracotta test stroke on it",
+  "text": "Y prueba siempre en un pedazo antes. Seco, queda mucho más claro que mojado."
+ },
+ {
+  "id": "b123",
+  "type": "A",
+  "scene": "E7",
+  "A": "he puts the scrap board down and talks to the camera, remembering the story",
+  "K": "he leans the scrap board against the wall and looks at the camera with a warm smile",
+  "text": "Ah, y Ramiro. Volvió a pintar su barda así: mojada, temprano, en manos finas. Me mandó foto del antes y el después."
+ },
+ {
+  "id": "b124",
+  "type": "A",
+  "scene": "E7",
+  "A": "he rubs the white wall and shows the clean palm, smiling",
+  "K": "he holds his clean palm up to the camera, smiling, the white wall behind him",
+  "text": "Y esta vez, la mano limpia. Dijo que ya no le mancha la ropa a los niños cuando se recargan."
+ },
+ {
+  "id": "b125",
+  "type": "A",
+  "scene": "E7",
+  "A": "he wipes his hands on a rag and talks casually to the camera",
+  "K": "he holds the rag, relaxed, looking at the camera",
+  "text": "Por cosas como esa armé la guía del canal: los arreglos con sus medidas y sus errores, para no depender de nadie."
+ },
+ {
+  "id": "b126",
+  "type": "A",
+  "scene": "E7",
+  "A": "he gestures down toward the bottom of the frame with his hand",
+  "K": "he points down toward the bottom of the frame with his hand, friendly look at the camera",
+  "text": "Si estás en el televisor, el código está en pantalla. Si estás en el teléfono, el enlace está abajo, en la descripción."
+ },
+ {
+  "id": "b127",
+  "type": "A",
+  "scene": "E7",
+  "A": "he mists the finished white wall with the pump sprayer, a fine mist floating",
+  "K": "a fine mist floats in front of the white wall, he holds the sprayer, looking at the camera",
+  "text": "Terminaste de pintar. Pero la cal no terminó. Ahora empieza a endurecer, y tarda."
+ },
+ {
+  "id": "b128",
+  "type": "A",
+  "scene": "E7",
+  "A": "he taps the wall with his knuckles and explains, calm",
+  "K": "his knuckles rest on the white wall, he looks at the camera explaining",
+  "text": "La cal se endurece tomando el aire. Es lento: semanas. Y para que lo haga bien, necesita un poco de humedad."
+ },
+ {
+  "id": "b129",
+  "type": "A",
+  "scene": "E7",
+  "A": "he holds up three fingers and then sprays once more",
+  "K": "he holds up three fingers with the sprayer in the other hand, looking at the camera",
+  "text": "Por eso, los dos o tres días siguientes, un rocío de agua a la mañana y otro a la tarde. Rocío, no manguera."
+ },
+ {
+  "id": "b130",
+  "type": "A",
+  "scene": "E7",
+  "A": "he points to a piece of old cloth hanging to shade the wall",
+  "K": "he points at an old sheet hung from the eaves shading part of the wall, looking at the camera",
+  "text": "Y si le va a pegar sol fuerte o viento, la tapo con una tela. Que no se seque de golpe."
+ },
+ {
+  "id": "b131",
+  "type": "A",
+  "scene": "E7",
+  "A": "he washes the wide brush in a bucket of clean water, the water turning milky",
+  "K": "he lifts the clean brush out of the milky water, looking at the camera",
+  "text": "Cuando termines, lava la brocha y los baldes con agua, enseguida. Y lo que sobra con cemento no lo tires por la cañería: se endurece adentro."
+ },
+ {
+  "id": "b132",
+  "type": "A",
+  "scene": "E7",
+  "A": "he pats the wall and puts the sprayer down, satisfied",
+  "K": "he puts the sprayer down at his feet, standing beside the white wall, satisfied look at the camera",
+  "text": "Y ahora, lo que te prometí al principio. Pero antes, te muestro la versión de adentro."
+ },
+ {
+  "id": "b133",
+  "type": "A",
+  "scene": "I2",
+  "A": "he walks into a small bedroom with a bare grey plastered wall and puts a bucket down",
+  "K": "he stands in front of the bare grey plastered bedroom wall with the bucket at his feet, looking at the camera",
+  "text": "Para adentro, en un cuarto, yo no le pongo cemento. Uso la receta de la guía: cal sola, sal y agua."
+ },
+ {
+  "id": "b134",
+  "type": "A",
+  "scene": "I2",
+  "A": "he pours milky limewash from a jug into a small bucket",
+  "K": "he holds the jug above the small bucket, a thin stream of milky liquid, looking at the camera",
+  "text": "Una jarra de cal por dos o tres de agua, hasta leche fina. La misma idea, sin el cemento."
+ },
+ {
+  "id": "b135",
+  "type": "A",
+  "scene": "I2",
+  "A": "he paints the bare interior wall with wide crossing strokes",
+  "K": "he paints the grey wall with wide crossing strokes, a translucent milky coat, his face turned to the wall",
+  "text": "Adentro no la lava la lluvia, y la cal sola respira mejor. Es muy buena en cuartos donde se junta humedad."
+ },
+ {
+  "id": "b136",
+  "type": "A",
+  "scene": "I2",
+  "A": "he opens the bedroom window wide, then turns back to the camera",
+  "K": "he stands by the wide open window, one hand on the frame, looking at the camera",
+  "text": "Adentro, pinta con la ventana abierta, y ten a los niños y a las mascotas lejos del balde mientras trabajas."
+ },
+ {
+  "id": "b137",
+  "type": "A",
+  "scene": "I2",
+  "A": "he points at a corner of the ceiling with a small dark mould stain",
+  "K": "he points up at a dark mould stain in the corner of the ceiling, looking at the camera",
+  "text": "Además, la cal es alcalina. Al moho no le gusta nada. Por eso se usaba en cocinas, baños y establos."
+ },
+ {
+  "id": "b138",
+  "type": "A",
+  "scene": "I2",
+  "A": "he touches the painted wall with a finger and shows it, honest face",
+  "K": "he holds up his fingertip toward the camera, a trace of white on it, an honest face",
+  "text": "Ahora, los límites, porque no todo es perfecto. Recién pintada, si la frotas, puede soltar un poquito de polvo."
+ },
+ {
+  "id": "b139",
+  "type": "A",
+  "scene": "I2",
+  "A": "he rubs a dry older section of the wall and shows a clean finger",
+  "K": "he holds up a clean fingertip toward the camera, the old painted section behind him",
+  "text": "Cuando cura bien, eso casi desaparece. Pero una cal mal hecha, sin mojar la pared, con los años suelta polvo al frotarla."
+ },
+ {
+  "id": "b140",
+  "type": "A",
+  "scene": "I2",
+  "A": "he shakes his head and wags his finger lightly",
+  "K": "he wags his index finger lightly, a small smile at the camera",
+  "text": "Y no es pintura lavable. Una mancha de grasa no se va con trapo y jabón: se retoca con otra mano de cal, que para eso es barata."
+ },
+ {
+  "id": "b141",
+  "type": "A",
+  "scene": "I2",
+  "A": "he picks up the bucket and walks toward the door",
+  "K": "he stands at the doorway of the bedroom with the bucket in his hand, looking back at the camera",
+  "text": "Y cuesta una fracción de una lata de pintura. Por eso, si se ensucia, no duele volver a pasarle."
+ },
+ {
+  "id": "b142",
+  "type": "A",
+  "scene": "I2",
+  "A": "he stops at the door and raises a finger, remembering",
+  "K": "he stands at the doorway with his index finger raised, eyebrows up, looking at the camera",
+  "text": "Ah, una cosa. Hay una variante de esto que funciona todavía mejor en paredes que se mojan mucho con la lluvia."
+ },
+ {
+  "id": "b143",
+  "type": "A",
+  "scene": "I2",
+  "A": "he points down toward the bottom of the frame with a knowing smile",
+  "K": "he points down toward the bottom of the frame, a knowing smile at the camera",
+  "text": "Te dejé exactamente cómo hacerla en la descripción."
+ },
+ {
+  "id": "b144",
+  "type": "A",
+  "scene": "E5",
+  "A": "he walks out to the exterior wall, now fully white, and picks up the green garden hose",
+  "K": "he stands in front of the fully white wall holding the green hose pistol, looking at the camera with a small smile",
+  "text": "Pasaron varios días. La pared completa, las dos mitades, curadas."
+ },
+ {
+  "id": "b145",
+  "type": "A",
+  "scene": "E5",
+  "A": "he presses a strip of masking tape firmly on the dry white wall and pulls it off, showing it to the camera",
+  "K": "he holds up the strip of tape toward the camera, the tape almost clean with only a faint white trace, the white wall behind him",
+  "text": "Primero, la cinta, la misma prueba que hice adentro. La aprieto, la arranco... y casi limpia."
+ },
+ {
+  "id": "b146",
+  "type": "V",
+  "scene": "E5",
+  "A": "the neighbor comes up to the low brick wall with a coffee mug, looks at the white wall and talks to the presenter, sceptical",
+  "K": "the neighbor rests his mug on the low brick wall, eyebrows raised, pointing at the hose with his free hand",
+  "line": "A ver, genio. Dale con la manguera, que yo quiero ver.",
+  "text": "A ver, genio. Dale con la manguera, que yo quiero ver."
+ },
+ {
+  "id": "b147",
+  "type": "A",
+  "scene": "E5",
+  "A": "he sprays the white wall hard with the hose, water running down",
+  "K": "he sprays the white wall at close range, water streaming down, the paint intact, he looks at the neighbor",
+  "text": "Con gusto."
+ },
+ {
+  "id": "b148",
+  "type": "DX",
+  "scene": "E5",
+  "secs": 4,
+  "d1": "close view of a strong jet of water hitting a chalky white limewashed wall, water running in streams down the surface",
+  "d2": "the same wet white wall with water still running, the white paint intact, a few drops falling from the edge",
+  "text": ""
+ },
+ {
+  "id": "b149",
+  "type": "A",
+  "scene": "E5",
+  "A": "he turns off the hose and rubs the wet wall with his palm, then shows the palm",
+  "K": "he holds his wet palm up toward the neighbor and the camera, the palm clean, water dripping from the wall",
+  "text": "Froto la pared mojada, y nada. Ni se ablanda ni se va."
+ },
+ {
+  "id": "b150",
+  "type": "A",
+  "scene": "E5",
+  "A": "he lifts the hose pistol and shows the nozzle to the camera, explaining",
+  "K": "he holds the dripping hose pistol up beside his face, looking at the camera, eyebrows raised",
+  "text": "Y esto es con el chorro a presión, de cerca. La lluvia le pega mucho más suave que esto."
+ },
+ {
+  "id": "b151",
+  "type": "V",
+  "scene": "E5",
+  "A": "the neighbor leans closer, rubs the wall with his own finger, looks at his clean finger and shrugs, talking to the presenter",
+  "K": "the neighbor looks at his clean fingertip with a grudging face, shrugging, the presenter smiling beside the wall",
+  "line": "Bueno... me callo. Pero la receta me la pasas, ¿eh?",
+  "text": "Bueno... me callo. Pero la receta me la pasas, ¿eh?"
+ },
+ {
+  "id": "b152",
+  "type": "A",
+  "scene": "E5",
+  "A": "he laughs and gives a thumbs up to the neighbor, then turns to the camera",
+  "K": "he looks at the camera laughing, thumb still up, the neighbor behind the low wall",
+  "text": "Te la paso, vecino. Y ahora sí, lo que te prometí: el error del cuarto ingrediente."
+ },
+ {
+  "id": "b153",
+  "type": "A",
+  "scene": "E8",
+  "A": "he holds up the glass jar of coarse salt to the camera, serious",
+  "K": "he holds the jar of coarse salt at face height, a serious face at the camera",
+  "text": "La sal ayuda a que la cal seque más despacio y agarre mejor. Pero es un puñado por balde. Uno. No más."
+ },
+ {
+  "id": "b154",
+  "type": "A",
+  "scene": "E8",
+  "A": "he points at a white powdery bloom stain on an old wall in the corner of the patio",
+  "K": "he points at a white fluffy salt stain on an old wall near the ground, looking at the camera",
+  "text": "Si te pasas de sal, la pared te la devuelve: salen estas manchas blancas, como pelusa, y la cal se suelta ahí."
+ },
+ {
+  "id": "b155",
+  "type": "A",
+  "scene": "E8",
+  "A": "he shakes the salt jar and then puts it down on the low wall",
+  "K": "the salt jar sits on the low brick wall, he looks at the camera with his arms crossed, calm",
+  "text": "Y siempre disuelta en agua caliente. En grano se queda en puntitos, y cada puntito es un lugar donde se va a soltar."
+ },
+ {
+  "id": "b156",
+  "type": "A",
+  "scene": "E8",
+  "A": "he holds the pump sprayer and talks to the camera, calm",
+  "K": "he holds the pump sprayer lowered, looking at the camera, calm",
+  "text": "Poca sal, bien disuelta, y la pared húmeda durante el curado."
+ },
+ {
+  "id": "b157",
+  "type": "A",
+  "scene": "E8",
+  "A": "he mists the white wall with the sprayer one more time",
+  "K": "a light mist floats in front of the white wall, he looks at the camera with a small nod",
+  "text": "Eso es lo que casi nadie hace bien. Y es lo que hace que no se caiga."
+ },
+ {
+  "id": "b158",
+  "type": "A",
+  "scene": "E8",
+  "A": "he stands at the line where the old wall used to be, gesturing to the whole white wall",
+  "K": "he stands in front of the fully white wall with his arms open, looking at the camera",
+  "text": "Así que, ¿loco o genio? Ninguno de los dos. Esto es lo que hacían los abuelos, y lo olvidamos porque la lata es más cómoda."
+ },
+ {
+  "id": "b159",
+  "type": "A",
+  "scene": "E8",
+  "A": "he counts on his fingers the key rules while talking",
+  "K": "he holds up four fingers, looking at the camera, serious and friendly",
+  "text": "Cuatro de cal, una de cemento, un puñado de sal disuelta, agua hasta leche. Pared mineral y mojada. Manos finas. Curado con rocío."
+ },
+ {
+  "id": "b160",
+  "type": "A",
+  "scene": "E8",
+  "A": "he picks up the bucket and brush and points at the camera",
+  "K": "he holds the bucket and brush, pointing the brush toward the camera with a smile",
+  "text": "Si lo haces así, tienes una pared que respira, que no se descascara, y que cuesta muy poco."
+ },
+ {
+  "id": "b161",
+  "type": "A",
+  "scene": "E8",
+  "A": "he gestures toward the back corner of the house, suggesting a small test",
+  "K": "he points toward the back corner of the house with his brush, a friendly look at the camera",
+  "text": "Y si te da miedo, pruébala primero en un pedazo chico, atrás de la casa. Una semana. Si te convence, pintas todo."
+ },
+ {
+  "id": "b162",
+  "type": "A",
+  "scene": "E8",
+  "A": "he puts the bucket down and talks to the camera, relaxed",
+  "K": "he stands relaxed with one hand on his apron, looking at the camera",
+  "text": "La hoja con todo, y los demás arreglos de la casa, están en la guía del canal. El código en pantalla o el enlace abajo."
+ },
+ {
+  "id": "b163",
+  "type": "A",
+  "scene": "E8",
+  "A": "he nods to the neighbor behind the low wall and back to the camera, warm",
+  "K": "he waves goodbye at the camera with a warm smile, the neighbor behind the low wall raising his mug",
+  "text": "Y cuéntame en los comentarios qué pared vas a pintar. Nos vemos en el próximo arreglo."
+ },
+ {
+  "id": "b164",
+  "type": "I",
+  "scene": "E1",
+  "secs": 4,
+  "d1": "close view of the chalky white limewashed wall with a strong jet of water from a hose splashing on it, droplets flying toward the camera",
+  "d2": "the same patch of white wall streaming with water, the paint intact, drops running down",
+  "host": "b003",
+  "text": ""
+ },
+ {
+  "id": "b165",
+  "type": "I",
+  "scene": "E1",
+  "secs": 4,
+  "d1": "the neighbour behind the low red brick wall with arms crossed, frowning sceptically, his moustache twitching",
+  "d2": "the same neighbour raising one eyebrow and shaking his head slowly, arms still crossed",
+  "host": "b004",
+  "text": ""
+ },
+ {
+  "id": "b166",
+  "type": "I",
+  "scene": "E1",
+  "secs": 4,
+  "d1": "close view of the exact vertical line where the chalky white limewash meets the old grey stained plaster on the same wall",
+  "d2": "the same line with a hand sliding slowly from the grey side onto the white side",
+  "host": "b012",
+  "text": ""
+ },
+ {
+  "id": "b167",
+  "type": "I",
+  "scene": "E1",
+  "secs": 4,
+  "d1": "close view of a man's open palm rubbing hard on a chalky white wall",
+  "d2": "the palm turned toward the camera, clean, with no white dust on it",
+  "host": "b013",
+  "text": ""
+ },
+ {
+  "id": "b168",
+  "type": "I",
+  "scene": "E1",
+  "secs": 4,
+  "d1": "close view of a wide brush dipping into a grey bucket of milky white limewash",
+  "d2": "the brush lifted, loaded, milky liquid dripping back into the bucket",
+  "host": "b014",
+  "text": ""
+ },
+ {
+  "id": "b169",
+  "type": "I",
+  "scene": "E1",
+  "secs": 4,
+  "d1": "close view of knuckles knocking on a chalky white limewashed wall",
+  "d2": "the knuckles resting on the white wall, a little white texture visible around them",
+  "host": "b015",
+  "text": ""
+ },
+ {
+  "id": "b170",
+  "type": "I",
+  "scene": "E1",
+  "secs": 4,
+  "d1": "extreme close view of the texture of chalky white limewash on rough plaster, fingertips gliding over it",
+  "d2": "the fingertips stopped, the matte white crystalline surface in detail",
+  "host": "b016",
+  "text": ""
+ },
+ {
+  "id": "b171",
+  "type": "I",
+  "scene": "G1",
+  "secs": 4,
+  "d1": "close view of a glass jar of coarse grey salt on a wooden workbench, a hand reaching for it",
+  "d2": "the hand holding the jar up, the coarse salt crystals shifting inside",
+  "host": "b018",
+  "text": ""
+ },
+ {
+  "id": "b172",
+  "type": "I",
+  "scene": "G1",
+  "secs": 4,
+  "d1": "close view of the clear plastic one-litre jug scooping white powder from an open paper bag",
+  "d2": "the jug full to the brim with white powder, lifted out of the bag",
+  "host": "b021",
+  "text": ""
+ },
+ {
+  "id": "b173",
+  "type": "I",
+  "scene": "G2",
+  "secs": 4,
+  "d1": "close view of a kitchen scale on a workbench with a jug of white powder on it, the display blank",
+  "d2": "the same jug being lifted off the scale by a hand",
+  "host": "b038",
+  "text": ""
+ },
+ {
+  "id": "b174",
+  "type": "I",
+  "scene": "I1",
+  "secs": 4,
+  "d1": "close view of water drops beading and sliding down a glossy cream painted wall",
+  "d2": "the drops leaving thin shiny trails down the glossy paint",
+  "host": "b045",
+  "text": ""
+ },
+ {
+  "id": "b175",
+  "type": "I",
+  "scene": "G3",
+  "secs": 4,
+  "d1": "close view of rubber gloved hands pulling on a pair of clear safety goggles",
+  "d2": "the goggles on, gloved hands lowering",
+  "host": "b049",
+  "text": ""
+ },
+ {
+  "id": "b176",
+  "type": "I",
+  "scene": "G4",
+  "secs": 4,
+  "d1": "close view of a bucket with thick white lime paste being stirred by a wooden stick, the paste folding over",
+  "d2": "the smooth thick white paste with the stick resting on it",
+  "host": "b062",
+  "text": ""
+ },
+ {
+  "id": "b177",
+  "type": "I",
+  "scene": "G5",
+  "secs": 4,
+  "d1": "close view of a stick lifted out of a bucket of milky limewash, a thin white stream running off it",
+  "d2": "the stream thinning to drops, the stick held above the bucket",
+  "host": "b066",
+  "text": ""
+ },
+ {
+  "id": "b178",
+  "type": "I",
+  "scene": "EP",
+  "secs": 4,
+  "d1": "close view of a stiff wire brush scrubbing grey cement plaster, grey dust puffing off",
+  "d2": "the scrubbed patch clean and rough, a little dust settling",
+  "host": "b089",
+  "text": ""
+ },
+ {
+  "id": "b179",
+  "type": "I",
+  "scene": "EP",
+  "secs": 4,
+  "d1": "close view of a garden pump sprayer nozzle misting water onto grey plaster",
+  "d2": "the plaster darkened and damp where the mist landed",
+  "host": "b097",
+  "text": ""
+ },
+ {
+  "id": "b180",
+  "type": "I",
+  "scene": "E3",
+  "secs": 4,
+  "d1": "close view of a wide brush laying a long stroke of thin milky limewash onto damp grey plaster",
+  "d2": "the stroke finished, translucent milky white over the grey",
+  "host": "b104",
+  "text": ""
+ },
+ {
+  "id": "b181",
+  "type": "I",
+  "scene": "E3",
+  "secs": 4,
+  "d1": "close view of a wide brush painting crossing strokes near the top edge of a wall, milky limewash spreading",
+  "d2": "a finished band of translucent white along the top edge",
+  "host": "b106",
+  "text": ""
+ },
+ {
+  "id": "b182",
+  "type": "I",
+  "scene": "E4",
+  "secs": 4,
+  "d1": "close view of a wide brush painting a second coat, the white getting more opaque on the wall",
+  "d2": "the patch evenly white and opaque, the brush lifted",
+  "host": "b114",
+  "text": ""
+ },
+ {
+  "id": "b183",
+  "type": "I",
+  "scene": "E4",
+  "secs": 4,
+  "d1": "close view of a wooden stick stirring a bucket of limewash, the settled white sediment rising from the bottom",
+  "d2": "the limewash evenly milky again, the stick resting on the rim",
+  "host": "b115",
+  "text": ""
+ },
+ {
+  "id": "b184",
+  "type": "I",
+  "scene": "E7",
+  "secs": 4,
+  "d1": "close view of a pump sprayer misting a finished chalky white wall, fine droplets floating in the air",
+  "d2": "the white wall with a faint damp sheen, the mist settling",
+  "host": "b129",
+  "text": ""
+ },
+ {
+  "id": "b185",
+  "type": "I",
+  "scene": "E7",
+  "secs": 4,
+  "d1": "close view of a wide brush being rinsed in a bucket of clean water, the water turning milky white",
+  "d2": "the clean brush lifted out of the milky water, dripping",
+  "host": "b131",
+  "text": ""
+ },
+ {
+  "id": "b186",
+  "type": "I",
+  "scene": "I2",
+  "secs": 4,
+  "d1": "close view of a wide brush painting milky limewash on bare grey plaster inside a room, near a window",
+  "d2": "the painted patch translucent white, the brush moving away",
+  "host": "b135",
+  "text": ""
+ },
+ {
+  "id": "b187",
+  "type": "I",
+  "scene": "E5",
+  "secs": 4,
+  "d1": "close view of a strip of masking tape pressed onto a chalky white wall and being peeled off",
+  "d2": "the strip lifted in the air, almost clean, the wall intact behind it",
+  "host": "b145",
+  "text": ""
+ },
+ {
+  "id": "b188",
+  "type": "I",
+  "scene": "E8",
+  "secs": 4,
+  "d1": "close view of a white fluffy salt bloom stain on the bottom of an old plastered wall near the ground",
+  "d2": "a finger touching the fluffy white stain, some of it crumbling off",
+  "host": "b154",
+  "text": ""
+ },
+ {
+  "id": "b189",
+  "type": "I",
+  "scene": "E8",
+  "secs": 4,
+  "d1": "close view of coarse salt being stirred into a steaming mug of hot water with a spoon",
+  "d2": "the water clear, the salt fully dissolved",
+  "host": "b155",
+  "text": ""
+ }
+]

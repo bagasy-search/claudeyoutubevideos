@@ -1,0 +1,190 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G4/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same garage, same framing, late afternoon: the ceiling fluorescent tube is on and daylight still comes through the open garage door. He stands at the bench with an empty grey bucket in front of him and the open paper bag of lime. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he empties the fourth jug of lime into the bucket, white dust floating, looking into the bucket. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b061_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of water pouring slowly from a jug onto a heap of white lime powder in a bucket, forming a wet crater."
+  },
+  {
+   "id": "D_b061_2",
+   "from": [
+    "D_b061_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same bucket with the powder soaked into a thick wet white paste, a thin layer of water on top."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he leans over the bucket stirring the thick white paste with a wooden stick, focused, sleeves rolled up. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he presses the lid onto the bucket with both hands, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his knuckles resting on the bucket lid, he looks at the camera explaining with a calm face. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b065_1",
+   "from": [
+    "K4"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a bucket lid being lifted off, revealing a smooth creamy white lime putty under a thin clear layer of water."
+  },
+  {
+   "id": "D_b065_2",
+   "from": [
+    "D_b065_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the lid fully off, the smooth white lime putty surface with a little clear water on top."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stirs a thin milky white liquid in the bucket with the stick, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the stick above the bucket, a thin stream of milky white liquid running off it, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b176_1",
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a bucket with thick white lime paste being stirred by a wooden stick, the paste folding over."
+  },
+  {
+   "id": "D_b176_2",
+   "from": [
+    "D_b176_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the smooth thick white paste with the stick resting on it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b060",
+   "a": "K0",
+   "b": "K1",
+   "text": "La noche anterior: cuatro jarras de cal en el balde vacío. Primero el polvo.",
+   "action": "he scoops lime powder with the jug into a grey bucket, the night before, a lamp on.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b060.wav"
+  },
+  {
+   "id": "b061",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of water pouring slowly from a jug onto a heap of white lime powder in a bucket, forming a wet crater",
+   "d2": "the same bucket with the powder soaked into a thick wet white paste, a thin layer of water on top",
+   "text": "Después el agua, de a poco, y lo dejo que se empape solo.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b061.wav"
+  },
+  {
+   "id": "b062",
+   "a": "K1",
+   "b": "K2",
+   "text": "Revuelvo hasta que no quede polvo seco. Queda una pasta espesa, como crema.",
+   "action": "he stirs the thick lime paste with a wooden stick, working hard.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b062.wav"
+  },
+  {
+   "id": "b063",
+   "a": "K2",
+   "b": "K3",
+   "text": "Le dejo un dedo de agua encima, tapo, y a dormir. Mínimo una noche.",
+   "action": "he pours a thin layer of water on top of the lime paste and puts the lid on the bucket.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b063.wav"
+  },
+  {
+   "id": "b064",
+   "a": "K3",
+   "b": "K4",
+   "text": "¿Para qué el reposo? Para que la cal se hidrate bien. Si la usas recién mezclada, queda más arenosa y se agarra peor.",
+   "action": "he taps the lid with his knuckles and explains to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b064.wav"
+  },
+  {
+   "id": "b065",
+   "a": "K4",
+   "b": "K4",
+   "detail": true,
+   "d1": "close view of a bucket lid being lifted off, revealing a smooth creamy white lime putty under a thin clear layer of water",
+   "d2": "the lid fully off, the smooth white lime putty surface with a little clear water on top",
+   "text": "Al día siguiente, mira qué cremosa quedó.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b065.wav"
+  },
+  {
+   "id": "b066",
+   "a": "K4",
+   "b": "K5",
+   "text": "Ahora le agrego agua hasta que quede líquida. Tiene que chorrear del palo, fina, como leche.",
+   "action": "he adds water from a large jug into the lime putty and stirs, the mixture turning to milk.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b066.wav"
+  },
+  {
+   "id": "b067",
+   "a": "K5",
+   "b": "K6",
+   "text": "¿Ves cómo chorrea? Si queda pastosa, pintas una capa gruesa, y la capa gruesa es la que se cuartea y se cae.",
+   "action": "he lifts the stick out of the bucket and lets the white liquid drip back, showing the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b067.wav"
+  },
+  {
+   "id": "b176",
+   "a": "K2",
+   "b": "K2",
+   "detail": true,
+   "insert": "b062",
+   "secs": 4,
+   "d1": "close view of a bucket with thick white lime paste being stirred by a wooden stick, the paste folding over",
+   "d2": "the smooth thick white paste with the stick resting on it",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G4/vlog_G4.mp4"
+}

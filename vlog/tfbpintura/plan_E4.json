@@ -1,0 +1,231 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E4/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, days earlier. The neighbour is not there. The right half of the wall now has a first thin coat of limewash, milky and a little patchy over the grey. He stands in front of it loading a wide brush from a grey bucket of limewash. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the wall is noticeably whiter, still a little uneven, he paints with the wide brush, focused. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stirs the bucket, the brush resting across the rim, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the wall is evenly white and matte, he finishes a stroke at the top with the brush, looking at the result. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b117_1",
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wide brush laying a final coat of limewash on an already white wall, the surface becoming smooth and even."
+  },
+  {
+   "id": "D_b117_2",
+   "from": [
+    "D_b117_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the wall surface evenly bright chalky white and matte, the brush gone from the frame."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands back with his open hand toward the finished matte white wall, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his fingertip rests beside a thin hairline crack in the white wall, he looks at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a small plastic cup of reddish earth pigment powder toward the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b121_1",
+   "from": [
+    "K6"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of red iron oxide pigment powder being stirred into a small bucket of white limewash, turning it pale terracotta."
+  },
+  {
+   "id": "D_b121_2",
+   "from": [
+    "D_b121_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the small bucket with an even pale terracotta pink liquid, the stick resting on the rim."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the scrap board up to the camera with a pale terracotta test stroke on it. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b182_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wide brush painting a second coat, the white getting more opaque on the wall."
+  },
+  {
+   "id": "D_b182_2",
+   "from": [
+    "D_b182_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the patch evenly white and opaque, the brush lifted."
+  },
+  {
+   "id": "D_b183_1",
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wooden stick stirring a bucket of limewash, the settled white sediment rising from the bottom."
+  },
+  {
+   "id": "D_b183_2",
+   "from": [
+    "D_b183_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the limewash evenly milky again, the stick resting on the rim."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b114",
+   "a": "K0",
+   "b": "K1",
+   "text": "Segunda mano. Ahora sí empieza a tapar. Todavía se ven sombras, y está bien.",
+   "action": "he paints the second coat with long crossing strokes, the wall turning whiter.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b114.wav"
+  },
+  {
+   "id": "b115",
+   "a": "K1",
+   "b": "K2",
+   "text": "Cada tanto revuelvo el balde. Si no, el cemento se va al fondo y la última mano sale aguada.",
+   "action": "he stirs the bucket again with the stick before loading the brush.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b115.wav"
+  },
+  {
+   "id": "b116",
+   "a": "K2",
+   "b": "K3",
+   "text": "Tercera mano. Esta es la que la deja pareja.",
+   "action": "he paints the third coat on the wall, the white becoming even.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b116.wav"
+  },
+  {
+   "id": "b117",
+   "a": "K3",
+   "b": "K3",
+   "detail": true,
+   "d1": "close view of a wide brush laying a final coat of limewash on an already white wall, the surface becoming smooth and even",
+   "d2": "the wall surface evenly bright chalky white and matte, the brush gone from the frame",
+   "text": "Si todavía ves transparencias, una cuarta. Nunca una gruesa: varias finitas.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b117.wav"
+  },
+  {
+   "id": "b118",
+   "a": "K3",
+   "b": "K4",
+   "text": "El acabado es mate, tipo tiza. No brilla como la pintura de lata. Si buscas brillo, esto no es para ti.",
+   "action": "he steps back and runs his hand in the air over the finish, talking about the look.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b118.wav"
+  },
+  {
+   "id": "b119",
+   "a": "K4",
+   "b": "K5",
+   "text": "Si la pared tiene grietas finas, la cal las rellena un poco. Pero una grieta que se mueve vuelve a aparecer. Esa se arregla antes de pintar.",
+   "action": "he points at a thin hairline crack in the white wall near the window.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b119.wav"
+  },
+  {
+   "id": "b120",
+   "a": "K5",
+   "b": "K6",
+   "text": "¿Y con color? Sí, pero con pigmentos minerales, los óxidos en polvo, los que se usan para el cemento.",
+   "action": "he shows a small cup of red iron oxide pigment powder to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b120.wav"
+  },
+  {
+   "id": "b121",
+   "a": "K6",
+   "b": "K6",
+   "detail": true,
+   "d1": "close view of red iron oxide pigment powder being stirred into a small bucket of white limewash, turning it pale terracotta",
+   "d2": "the small bucket with an even pale terracotta pink liquid, the stick resting on the rim",
+   "text": "Primero en un poco de agua, y después al balde. Salen tonos suaves: arena, rosado, ocre, gris.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b121.wav"
+  },
+  {
+   "id": "b122",
+   "a": "K6",
+   "b": "K7",
+   "text": "Y prueba siempre en un pedazo antes. Seco, queda mucho más claro que mojado.",
+   "action": "he paints a small test stroke of the pale terracotta color on a scrap of plaster board.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b122.wav"
+  },
+  {
+   "id": "b182",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "insert": "b114",
+   "secs": 4,
+   "d1": "close view of a wide brush painting a second coat, the white getting more opaque on the wall",
+   "d2": "the patch evenly white and opaque, the brush lifted",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b183",
+   "a": "K2",
+   "b": "K2",
+   "detail": true,
+   "insert": "b115",
+   "secs": 4,
+   "d1": "close view of a wooden stick stirring a bucket of limewash, the settled white sediment rising from the bottom",
+   "d2": "the limewash evenly milky again, the stick resting on the rim",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E4/vlog_E4.mp4"
+}

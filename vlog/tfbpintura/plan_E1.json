@@ -1,0 +1,414 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E1/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "W"
+   ],
+   "prompt": "The place is the side patio of a modest working-class house in Latin America: a long exterior wall of cement plaster about two and a half metres high with an aluminium-framed window; on the right a chest-high wall of bare red brick separates the neighbour's yard; cracked concrete floor, a green garden hose coiled on the floor, grey plastic buckets, a few potted plants, a clothesline with pegs. Light: bright overcast daylight from the open sky, soft and even, the whole wall well lit and correctly exposed. The left half of the long wall is freshly painted with limewash, a flat chalky bright white; the right half is the old wall: grey cement plaster with patches of old peeling off-white paint and dark damp stains near the ground. The presenter is a man of about 50 with black curly hair and a short salt-and-pepper beard (exactly the face of the last input image), wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with white paint and dust, a worn brown leather apron over it, and dark work trousers. He stands beside the white half of the wall holding a green garden hose pistol, spraying a jet of water on the white paint, water running down the wall. Behind the low red brick wall on the right stands the neighbour with his arms crossed, watching with a sceptical frown. The neighbour is exactly the man of the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "D_b001_1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of the lower part of a freshly limewashed chalky white exterior wall, a strong jet of water from a green garden hose nozzle hitting the white paint at chest height, water sheeting down the wall."
+  },
+  {
+   "id": "D_b001_2",
+   "from": [
+    "D_b001_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same wall wet and shiny, water running down in streams, the chalky white paint still intact, the jet still hitting."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the neighbor behind the low brick wall with arms crossed, head tilted, sceptical half smile, the presenter beside the white wall holding the hose pointed down. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the green hose pistol spraying the white half of the wall, water running down, he looks sideways at the neighbor with a small calm smile. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he faces the camera holding the dripping hose down at his side, thumb pointing back over his shoulder at the wet white wall, eyebrows raised. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands at the dividing line, his right palm on the bright white half and his left palm on the old grey stained half, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds his open right palm toward the camera, the palm clean with no white dust, the white wall behind him. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands in front of the wall with his left arm open toward the white half, looking at the camera with a confident small nod. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his knuckles resting on the white wall, he looks at the camera explaining, serious. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his fingertips on the white chalky surface, he looks at the camera with a small smile. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he looks at the camera with an amused face, his thumb pointing sideways toward the neighbor behind the low brick wall. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he leans slightly toward the camera with his index finger raised, eyebrows up, conspiratorial face. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "D_b164_1",
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of the chalky white limewashed wall with a strong jet of water from a hose splashing on it, droplets flying toward the camera."
+  },
+  {
+   "id": "D_b164_2",
+   "from": [
+    "D_b164_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same patch of white wall streaming with water, the paint intact, drops running down."
+  },
+  {
+   "id": "D_b165_1",
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): the neighbour behind the low red brick wall with arms crossed, frowning sceptically, his moustache twitching."
+  },
+  {
+   "id": "D_b165_2",
+   "from": [
+    "D_b165_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same neighbour raising one eyebrow and shaking his head slowly, arms still crossed."
+  },
+  {
+   "id": "D_b166_1",
+   "from": [
+    "K4"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of the exact vertical line where the chalky white limewash meets the old grey stained plaster on the same wall."
+  },
+  {
+   "id": "D_b166_2",
+   "from": [
+    "D_b166_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same line with a hand sliding slowly from the grey side onto the white side."
+  },
+  {
+   "id": "D_b167_1",
+   "from": [
+    "K5"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a man's open palm rubbing hard on a chalky white wall."
+  },
+  {
+   "id": "D_b167_2",
+   "from": [
+    "D_b167_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the palm turned toward the camera, clean, with no white dust on it."
+  },
+  {
+   "id": "D_b168_1",
+   "from": [
+    "K6"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wide brush dipping into a grey bucket of milky white limewash."
+  },
+  {
+   "id": "D_b168_2",
+   "from": [
+    "D_b168_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the brush lifted, loaded, milky liquid dripping back into the bucket."
+  },
+  {
+   "id": "D_b169_1",
+   "from": [
+    "K7"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of knuckles knocking on a chalky white limewashed wall."
+  },
+  {
+   "id": "D_b169_2",
+   "from": [
+    "D_b169_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the knuckles resting on the white wall, a little white texture visible around them."
+  },
+  {
+   "id": "D_b170_1",
+   "from": [
+    "K8"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): extreme close view of the texture of chalky white limewash on rough plaster, fingertips gliding over it."
+  },
+  {
+   "id": "D_b170_2",
+   "from": [
+    "D_b170_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the fingertips stopped, the matte white crystalline surface in detail."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b001",
+   "a": "K0",
+   "b": "K0",
+   "detail": true,
+   "d1": "close view of the lower part of a freshly limewashed chalky white exterior wall, a strong jet of water from a green garden hose nozzle hitting the white paint at chest height, water sheeting down the wall",
+   "d2": "the same wall wet and shiny, water running down in streams, the chalky white paint still intact, the jet still hitting",
+   "text": "",
+   "action": "DETAIL",
+   "secs": 4
+  },
+  {
+   "id": "b002",
+   "a": "K0",
+   "b": "K1",
+   "secs": 6,
+   "line": "¿Con cal y cemento? Con la primera lluvia se te lava todo, te lo digo yo.",
+   "who": "the neighbour, a heavy-set man of about 65 with a thick grey moustache and a light blue checked shirt (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "WF"
+   ],
+   "text": "¿Con cal y cemento? Con la primera lluvia se te lava todo, te lo digo yo.",
+   "action": "the neighbor stands behind the low unplastered brick wall on the right with his arms crossed, shaking his head, talking to the presenter. The presenter (third reference image face) listens and reacts silently, he does not speak."
+  },
+  {
+   "id": "b003",
+   "a": "K1",
+   "b": "K2",
+   "text": "Mira.",
+   "action": "he lifts the hose pistol and sprays the white half of the wall again at close range, water splashing, glancing at the neighbor. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b003.wav"
+  },
+  {
+   "id": "b004",
+   "a": "K2",
+   "b": "K3",
+   "text": "Loco o genio: pinté la casa con cemento, cal y agua. Y no se cae.",
+   "action": "he lowers the hose, turns to the camera and talks, pointing back at the wet white wall with his thumb. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b004.wav"
+  },
+  {
+   "id": "b012",
+   "a": "K3",
+   "b": "K4",
+   "text": "Pero mira el antes y el después, en la misma pared.",
+   "action": "he walks slowly along the wall and stops at the line where the chalky white half meets the old grey stained half, touching both. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b012.wav"
+  },
+  {
+   "id": "b013",
+   "a": "K4",
+   "b": "K5",
+   "text": "Froto, y no me deja la mano blanca.",
+   "action": "he rubs his palm hard on the white half and shows the camera his clean palm. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b013.wav"
+  },
+  {
+   "id": "b014",
+   "a": "K5",
+   "b": "K6",
+   "text": "Y va aguada, así que rinde muchísimo. Con un balde pinto toda esta pared, y me sobra.",
+   "action": "he gestures to the whole wall with an open arm while talking to the camera, calm and sure. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b014.wav"
+  },
+  {
+   "id": "b015",
+   "a": "K6",
+   "b": "K7",
+   "text": "¿Por qué no se cae? Porque no es una capa de plástico pegada encima. La cal se mete en los poros del repello.",
+   "action": "he knocks on the white wall with his knuckles and explains to the camera. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b015.wav"
+  },
+  {
+   "id": "b016",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y con el aire, poco a poco, se vuelve piedra otra vez. Por eso no se descascara como la pintura común.",
+   "action": "he runs his fingertips along the texture of the white wall, then looks at the camera. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b016.wav"
+  },
+  {
+   "id": "b018",
+   "a": "K9",
+   "b": "K10",
+   "text": "Pero ojo: el cuarto ingrediente es el que hace que no se caiga, y casi nadie lo pone bien. Al final te enseño el error.",
+   "action": "he raises a finger and leans toward the camera, lowering his voice a little. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b018.wav"
+  },
+  {
+   "id": "b164",
+   "a": "K2",
+   "b": "K2",
+   "detail": true,
+   "insert": "b003",
+   "secs": 4,
+   "d1": "close view of the chalky white limewashed wall with a strong jet of water from a hose splashing on it, droplets flying toward the camera",
+   "d2": "the same patch of white wall streaming with water, the paint intact, drops running down",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b165",
+   "a": "K3",
+   "b": "K3",
+   "detail": true,
+   "insert": "b004",
+   "secs": 4,
+   "d1": "the neighbour behind the low red brick wall with arms crossed, frowning sceptically, his moustache twitching",
+   "d2": "the same neighbour raising one eyebrow and shaking his head slowly, arms still crossed",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b166",
+   "a": "K4",
+   "b": "K4",
+   "detail": true,
+   "insert": "b012",
+   "secs": 4,
+   "d1": "close view of the exact vertical line where the chalky white limewash meets the old grey stained plaster on the same wall",
+   "d2": "the same line with a hand sliding slowly from the grey side onto the white side",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b167",
+   "a": "K5",
+   "b": "K5",
+   "detail": true,
+   "insert": "b013",
+   "secs": 4,
+   "d1": "close view of a man's open palm rubbing hard on a chalky white wall",
+   "d2": "the palm turned toward the camera, clean, with no white dust on it",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b168",
+   "a": "K6",
+   "b": "K6",
+   "detail": true,
+   "insert": "b014",
+   "secs": 4,
+   "d1": "close view of a wide brush dipping into a grey bucket of milky white limewash",
+   "d2": "the brush lifted, loaded, milky liquid dripping back into the bucket",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b169",
+   "a": "K7",
+   "b": "K7",
+   "detail": true,
+   "insert": "b015",
+   "secs": 4,
+   "d1": "close view of knuckles knocking on a chalky white limewashed wall",
+   "d2": "the knuckles resting on the white wall, a little white texture visible around them",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b170",
+   "a": "K8",
+   "b": "K8",
+   "detail": true,
+   "insert": "b016",
+   "secs": 4,
+   "d1": "extreme close view of the texture of chalky white limewash on rough plaster, fingertips gliding over it",
+   "d2": "the fingertips stopped, the matte white crystalline surface in detail",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E1/vlog_E1.mp4"
+}

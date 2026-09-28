@@ -1,0 +1,288 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G5/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same garage, same framing, the next morning. On the bench: a grey bucket of milky limewash, a mug of steaming hot water, the glass jar of coarse salt, a small bucket, a second empty bucket with a piece of green mosquito mesh beside it. He wears clear safety goggles and orange rubber gloves. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stirs the mug with a spoon, steam rising, the salt nearly gone, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b069_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a mug of hot water with coarse salt crystals dissolving as a spoon stirs."
+  },
+  {
+   "id": "D_b069_2",
+   "from": [
+    "D_b069_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same mug with clear water and no crystals left, the spoon resting in it."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stirs the bucket, the empty mug on the bench beside it, looking down at the mix. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stirs a small bucket with thin grey-white cement cream, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b072_1",
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of thin white cement cream being poured from a small bucket into a larger bucket of milky limewash."
+  },
+  {
+   "id": "D_b072_2",
+   "from": [
+    "D_b072_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the milky limewash with a creamy swirl of cement blending into it."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he keeps stirring the full bucket, looking at the camera with a patient face. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the empty bucket tilted over the mesh, a few lumps left on the green mesh, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the full bucket of white limewash sits on the bench, he rests his hands on its rim, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the neighbor stands in the garage doorway leaning to look at the bucket, frowning with a hand on his hip, the presenter beside the bench. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he laughs looking at the camera, pointing at the salt jar on the bench, the neighbor still in the doorway. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a printed sheet of cream paper in his bare hand, looking at the camera, serious. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he leans on the workbench with one hand on the printed sheet, relaxed, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands relaxed with his arms folded, a friendly look at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck."
+  },
+  {
+   "id": "D_b177_1",
+   "from": [
+    "K5"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a stick lifted out of a bucket of milky limewash, a thin white stream running off it."
+  },
+  {
+   "id": "D_b177_2",
+   "from": [
+    "D_b177_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the stream thinning to drops, the stick held above the bucket."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b068",
+   "a": "K0",
+   "b": "K1",
+   "text": "Ahora la sal. Un puñado en un poco de agua caliente, y la revuelvo hasta que no quede ni un grano.",
+   "action": "he dissolves coarse salt in a steaming mug of hot water with a spoon.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b068.wav"
+  },
+  {
+   "id": "b069",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of a mug of hot water with coarse salt crystals dissolving as a spoon stirs",
+   "d2": "the same mug with clear water and no crystals left, the spoon resting in it",
+   "text": "Disuelta. Nunca en grano directo en el balde.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b069.wav"
+  },
+  {
+   "id": "b070",
+   "a": "K1",
+   "b": "K2",
+   "text": "La echo al balde, y revuelvo bien.",
+   "action": "he pours the salt water from the mug into the bucket and stirs.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b070.wav"
+  },
+  {
+   "id": "b071",
+   "a": "K2",
+   "b": "K3",
+   "text": "Y el cemento, la jarra de cemento blanco, primero aparte con un poco de agua, para que no haga bolitas.",
+   "action": "he mixes one jug of white cement with a little water in a small separate bucket into a thin cream.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b071.wav"
+  },
+  {
+   "id": "b072",
+   "a": "K3",
+   "b": "K3",
+   "detail": true,
+   "d1": "close view of thin white cement cream being poured from a small bucket into a larger bucket of milky limewash",
+   "d2": "the milky limewash with a creamy swirl of cement blending into it",
+   "text": "Y ahora sí, todo junto.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b072.wav"
+  },
+  {
+   "id": "b073",
+   "a": "K3",
+   "b": "K4",
+   "text": "Revuelvo un buen rato. Y lo voy revolviendo también mientras pinto, porque el cemento se va al fondo.",
+   "action": "he stirs the full bucket slowly for a long time with the stick.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b073.wav"
+  },
+  {
+   "id": "b074",
+   "a": "K4",
+   "b": "K5",
+   "text": "Y lo último: la cuelo por un pedazo de mosquitero. Lo que queda arriba no va a la pared.",
+   "action": "he pours the limewash through green mosquito mesh stretched over another bucket.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b074.wav"
+  },
+  {
+   "id": "b075",
+   "a": "K5",
+   "b": "K6",
+   "text": "Con estas medidas me sale casi un balde lleno. Y lo que no uses hoy, ya sabes: con cemento adentro, no se guarda.",
+   "action": "he lifts the full bucket onto the bench with both hands, showing how full it is.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b075.wav"
+  },
+  {
+   "id": "b076",
+   "a": "K6",
+   "b": "K7",
+   "secs": 4,
+   "line": "¿Y la sal? ¿Vas a pintar o vas a hacer un guiso?",
+   "who": "the neighbour, a heavy-set man of about 65 with a thick grey moustache and a light blue checked shirt (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "WF"
+   ],
+   "text": "¿Y la sal? ¿Vas a pintar o vas a hacer un guiso?",
+   "action": "the neighbor walks into the garage door on the left, looks into the bucket and frowns, talking to the presenter. The presenter (third reference image face) listens and reacts silently, he does not speak."
+  },
+  {
+   "id": "b077",
+   "a": "K7",
+   "b": "K8",
+   "text": "¡Ja! Eso mismo dicen todos. La sal es el truco de los viejos albañiles. Ya vas a ver, vecino.",
+   "action": "he laughs and points at the salt jar, talking to the neighbor, then to the camera. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b077.wav"
+  },
+  {
+   "id": "b078",
+   "a": "K8",
+   "b": "K9",
+   "text": "Y ahora presta muchísima atención a esta imagen, porque probablemente sea la parte más importante del video.",
+   "action": "he puts the bucket down, takes off one glove and picks up a printed sheet of paper from the bench. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b078.wav"
+  },
+  {
+   "id": "b084",
+   "a": "K9",
+   "b": "K10",
+   "text": "Esto lo tengo ordenado junto con otros arreglos en la guía del canal. Si estás en el televisor, apunta la cámara de tu teléfono a este código.",
+   "action": "he puts the sheet down on the bench and talks casually to the camera. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b084.wav"
+  },
+  {
+   "id": "b085",
+   "a": "K10",
+   "b": "K11",
+   "text": "Y si estás en el teléfono, el enlace está abajo. Seguimos, que ahora viene la pared.",
+   "action": "he taps the sheet and nods, relaxed. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b085.wav"
+  },
+  {
+   "id": "b177",
+   "a": "K5",
+   "b": "K5",
+   "detail": true,
+   "insert": "b066",
+   "secs": 4,
+   "d1": "close view of a stick lifted out of a bucket of milky limewash, a thin white stream running off it",
+   "d2": "the stream thinning to drops, the stick held above the bucket",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G5/vlog_G5.mp4"
+}

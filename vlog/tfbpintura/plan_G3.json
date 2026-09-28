@@ -1,0 +1,215 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G3/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same garage, same framing. Clear safety goggles and a pair of orange rubber gloves lie on the bench beside the two paper bags. He stands behind the bench with his hands on it. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he wears clear safety goggles and orange rubber gloves, holding his gloved hands up to the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his gloved index finger touches the side of his goggles, he looks at the camera very serious. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the paper bag open toward the camera, fine white powder inside, dust rising a little. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: a little white powder falls from his gloved fingertips, he looks at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he wags his gloved index finger beside the bag, a warning face at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the bag against his chest, nostalgic half smile at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the small bag of white cement up beside the lime bag, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up four fingers on one hand and one on the other, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the tools lie in a row on the bench, he points along them with his gloved hand, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the wide brush up to the camera, bristles fanned out, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his gloved hand rests on the salt jar next to the two bags, he looks at the camera with a small smile. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b175_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of rubber gloved hands pulling on a pair of clear safety goggles."
+  },
+  {
+   "id": "D_b175_2",
+   "from": [
+    "D_b175_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the goggles on, gloved hands lowering."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b049",
+   "a": "K0",
+   "b": "K1",
+   "text": "Antes de abrir la bolsa: gafas y guantes. No es exagerar.",
+   "action": "he puts on clear safety goggles and pulls on rubber gloves at the workbench.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b049.wav"
+  },
+  {
+   "id": "b050",
+   "a": "K1",
+   "b": "K2",
+   "text": "La cal y el cemento son cáusticos: te queman la piel. Y la cal en los ojos es una urgencia. Si te salta, agua limpia abundante y al médico.",
+   "action": "he points at his goggles with a gloved finger, very serious.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b050.wav"
+  },
+  {
+   "id": "b051",
+   "a": "K2",
+   "b": "K3",
+   "text": "Esta es cal hidratada, la de construcción. Viene en polvo, en bolsa, en cualquier ferretería.",
+   "action": "he opens the paper bag of hydrated lime and shows the white powder inside.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b051.wav"
+  },
+  {
+   "id": "b052",
+   "a": "K3",
+   "b": "K4",
+   "text": "No es yeso ni es cal viva. La viva es la que hierve con el agua y quema. Esta ya está apagada.",
+   "action": "he rubs a pinch of lime between his gloved fingers.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b052.wav"
+  },
+  {
+   "id": "b053",
+   "a": "K4",
+   "b": "K5",
+   "text": "Y cuidado en la ferretería: hay cal agrícola, que es piedra molida para la tierra. Esa no endurece en la pared. Pide cal hidratada, de construcción.",
+   "action": "he shakes his head and wags a gloved finger at the bag, warning.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b053.wav"
+  },
+  {
+   "id": "b054",
+   "a": "K5",
+   "b": "K6",
+   "text": "Así se pintaban las bardas de las escuelas, las casas del campo, las iglesias. Nada nuevo. Lo nuevo es que se olvidó.",
+   "action": "he tilts the bag and explains the old tradition with a nostalgic smile.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b054.wav"
+  },
+  {
+   "id": "b055",
+   "a": "K6",
+   "b": "K7",
+   "text": "¿Y para qué el cemento blanco? La cal sola es de adentro. Afuera, donde pega la lluvia, el cemento le da más dureza al frote.",
+   "action": "he puts the bag down and picks up the small bag of white cement, comparing both.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b055.wav"
+  },
+  {
+   "id": "b056",
+   "a": "K7",
+   "b": "K8",
+   "text": "Pero es poquito. Si le pones mucho cemento, queda más dura, pero respira menos y se puede cuartear.",
+   "action": "he taps the lime bag, then the cement bag, then holds up four fingers and one finger.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b056.wav"
+  },
+  {
+   "id": "b057",
+   "a": "K8",
+   "b": "K9",
+   "text": "Las herramientas: una brocha ancha, dos baldes, una jarra, un pedazo de mosquitero y un rociador de jardín, o una botella con atomizador.",
+   "action": "he lays out tools on the bench one by one: a wide brush, two buckets, a jug, a piece of green mosquito mesh and a pump sprayer.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b057.wav"
+  },
+  {
+   "id": "b058",
+   "a": "K9",
+   "b": "K10",
+   "text": "La brocha, ancha y de cerda gruesa, porque carga mucha cal aguada. El rodillo sirve, pero con brocha la cal entra mejor en los poros.",
+   "action": "he picks up the wide brush and flexes its thick bristles against his gloved palm.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b058.wav"
+  },
+  {
+   "id": "b059",
+   "a": "K10",
+   "b": "K11",
+   "text": "¿Y cuánto gastas? Una bolsa de cal, una bolsa chica de cemento blanco y sal gruesa. Cuesta una fracción de una lata de pintura.",
+   "action": "he puts his gloved hand on the lime bag, the small cement bag and the salt jar in turn.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b059.wav"
+  },
+  {
+   "id": "b175",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "insert": "b049",
+   "secs": 4,
+   "d1": "close view of rubber gloved hands pulling on a pair of clear safety goggles",
+   "d2": "the goggles on, gloved hands lowering",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G3/vlog_G3.mp4"
+}

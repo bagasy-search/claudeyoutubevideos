@@ -1,0 +1,215 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/I2/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/I1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same bedroom, same light, turned toward the bare grey cement plaster wall on the right. He stands in front of the bare grey wall with a grey bucket of milky limewash at his feet and a wide brush. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands in front of the bare grey plastered bedroom wall with the bucket at his feet, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the jug above the small bucket, a thin stream of milky liquid, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he paints the grey wall with wide crossing strokes, a translucent milky coat, his face turned to the wall. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands by the wide open window, one hand on the frame, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points up at a dark mould stain in the corner of the ceiling, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up his fingertip toward the camera, a trace of white on it, an honest face. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up a clean fingertip toward the camera, the old painted section behind him. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he wags his index finger lightly, a small smile at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands at the doorway of the bedroom with the bucket in his hand, looking back at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands at the doorway with his index finger raised, eyebrows up, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points down toward the bottom of the frame, a knowing smile at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b186_1",
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wide brush painting milky limewash on bare grey plaster inside a room, near a window."
+  },
+  {
+   "id": "D_b186_2",
+   "from": [
+    "D_b186_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the painted patch translucent white, the brush moving away."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b133",
+   "a": "K0",
+   "b": "K1",
+   "text": "Para adentro, en un cuarto, yo no le pongo cemento. Uso la receta de la guía: cal sola, sal y agua.",
+   "action": "he walks into a small bedroom with a bare grey plastered wall and puts a bucket down.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b133.wav"
+  },
+  {
+   "id": "b134",
+   "a": "K1",
+   "b": "K2",
+   "text": "Una jarra de cal por dos o tres de agua, hasta leche fina. La misma idea, sin el cemento.",
+   "action": "he pours milky limewash from a jug into a small bucket.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b134.wav"
+  },
+  {
+   "id": "b135",
+   "a": "K2",
+   "b": "K3",
+   "text": "Adentro no la lava la lluvia, y la cal sola respira mejor. Es muy buena en cuartos donde se junta humedad.",
+   "action": "he paints the bare interior wall with wide crossing strokes.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b135.wav"
+  },
+  {
+   "id": "b136",
+   "a": "K3",
+   "b": "K4",
+   "text": "Adentro, pinta con la ventana abierta, y ten a los niños y a las mascotas lejos del balde mientras trabajas.",
+   "action": "he opens the bedroom window wide, then turns back to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b136.wav"
+  },
+  {
+   "id": "b137",
+   "a": "K4",
+   "b": "K5",
+   "text": "Además, la cal es alcalina. Al moho no le gusta nada. Por eso se usaba en cocinas, baños y establos.",
+   "action": "he points at a corner of the ceiling with a small dark mould stain.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b137.wav"
+  },
+  {
+   "id": "b138",
+   "a": "K5",
+   "b": "K6",
+   "text": "Ahora, los límites, porque no todo es perfecto. Recién pintada, si la frotas, puede soltar un poquito de polvo.",
+   "action": "he touches the painted wall with a finger and shows it, honest face.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b138.wav"
+  },
+  {
+   "id": "b139",
+   "a": "K6",
+   "b": "K7",
+   "text": "Cuando cura bien, eso casi desaparece. Pero una cal mal hecha, sin mojar la pared, con los años suelta polvo al frotarla.",
+   "action": "he rubs a dry older section of the wall and shows a clean finger.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b139.wav"
+  },
+  {
+   "id": "b140",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y no es pintura lavable. Una mancha de grasa no se va con trapo y jabón: se retoca con otra mano de cal, que para eso es barata.",
+   "action": "he shakes his head and wags his finger lightly.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b140.wav"
+  },
+  {
+   "id": "b141",
+   "a": "K8",
+   "b": "K9",
+   "text": "Y cuesta una fracción de una lata de pintura. Por eso, si se ensucia, no duele volver a pasarle.",
+   "action": "he picks up the bucket and walks toward the door.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b141.wav"
+  },
+  {
+   "id": "b142",
+   "a": "K9",
+   "b": "K10",
+   "text": "Ah, una cosa. Hay una variante de esto que funciona todavía mejor en paredes que se mojan mucho con la lluvia.",
+   "action": "he stops at the door and raises a finger, remembering.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b142.wav"
+  },
+  {
+   "id": "b143",
+   "a": "K10",
+   "b": "K11",
+   "text": "Te dejé exactamente cómo hacerla en la descripción.",
+   "action": "he points down toward the bottom of the frame with a knowing smile.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b143.wav"
+  },
+  {
+   "id": "b186",
+   "a": "K3",
+   "b": "K3",
+   "detail": true,
+   "insert": "b135",
+   "secs": 4,
+   "d1": "close view of a wide brush painting milky limewash on bare grey plaster inside a room, near a window",
+   "d2": "the painted patch translucent white, the brush moving away",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/I2/vlog_I2.mp4"
+}

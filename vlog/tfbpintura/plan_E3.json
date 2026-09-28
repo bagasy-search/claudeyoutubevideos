@@ -1,0 +1,325 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E3/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, days earlier. The neighbour is not there. The right half of the wall is scraped clean, bare grey cement plaster, damp and darker from water. He stands in front of it holding a wooden stick in a grey bucket of milky white limewash, a wide brush resting on the rim. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the stick still in the bucket, looking at the camera with a thoughtful face. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he shows his palm to the camera with a little grey dust on it, eyebrows raised. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up three fingers, looking at the camera with a knowing face. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points at the grey wall with the stick, a patient half smile at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the loaded brush above the bucket, wiping it on the rim, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he paints a wide area with crossing strokes, the fresh coat translucent milky over the grey, his face turned to the wall. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: a fresh band of translucent white runs along the top of the wall, he paints near the corner, face turned to the wall. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b107_1",
+   "from": [
+    "K7"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wide brush pushing thin limewash into the pores of rough grey plaster with crossing strokes."
+  },
+  {
+   "id": "D_b107_2",
+   "from": [
+    "D_b107_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same area covered in a thin translucent milky white layer, the brush lifting."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands a step back, his open hand toward the translucent patchy coat on the wall, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the neighbor leans his forearms on the low brick wall, laughing, pointing at the patchy wall with his chin, the presenter standing with the brush. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he looks at the camera with a calm confident smile, the brush in his hand, the neighbor behind the low wall. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "D_b111_1",
+   "from": [
+    "K10"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wet translucent greyish limewash patch on a wall drying and turning bright white."
+  },
+  {
+   "id": "D_b111_2",
+   "from": [
+    "D_b111_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same patch now dry and bright chalky white."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he shows the camera his wristwatch, his other hand with five fingers spread, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: a light mist on the first coat, he lowers the sprayer and looks at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "D_b180_1",
+   "from": [
+    "K5"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wide brush laying a long stroke of thin milky limewash onto damp grey plaster."
+  },
+  {
+   "id": "D_b180_2",
+   "from": [
+    "D_b180_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the stroke finished, translucent milky white over the grey."
+  },
+  {
+   "id": "D_b181_1",
+   "from": [
+    "K7"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wide brush painting crossing strokes near the top edge of a wall, milky limewash spreading."
+  },
+  {
+   "id": "D_b181_2",
+   "from": [
+    "D_b181_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: a finished band of translucent white along the top edge."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b100",
+   "a": "K0",
+   "b": "K1",
+   "text": "Te cuento algo. Me escribió Ramiro, de Cochabamba, en Bolivia. Pintó la barda de su patio con cal y cemento.",
+   "action": "he stirs the bucket of limewash with the stick and talks to the camera, thoughtful.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b100.wav"
+  },
+  {
+   "id": "b101",
+   "a": "K1",
+   "b": "K2",
+   "text": "A los pocos meses pasaba la mano por la pared y le quedaba blanca. Y me dijo: esto no sirve.",
+   "action": "he rubs his hand on the old grey wall and shows his palm to the camera, imitating the story.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b101.wav"
+  },
+  {
+   "id": "b102",
+   "a": "K2",
+   "b": "K3",
+   "text": "Le pregunté tres cosas. ¿La mojaste antes? No. ¿A qué hora pintaste? Al mediodía. ¿Cuántas manos? Una, bien gruesa, para terminar rápido.",
+   "action": "he raises one finger, then two, then three while talking.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b102.wav"
+  },
+  {
+   "id": "b103",
+   "a": "K3",
+   "b": "K4",
+   "text": "Las tres cosas que la hacen fallar, juntas. No era la receta: era cómo la puso.",
+   "action": "he nods slowly, half smiling, then points at the wall.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b103.wav"
+  },
+  {
+   "id": "b104",
+   "a": "K4",
+   "b": "K5",
+   "text": "Así que vamos a hacerlo bien. Brocha ancha, cargada pero sin chorrear.",
+   "action": "he dips the wide brush into the bucket and wipes the excess on the rim.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b104.wav"
+  },
+  {
+   "id": "b105",
+   "a": "K5",
+   "b": "K6",
+   "text": "Pinceladas cruzadas, en todas direcciones, y metiendo la cal en los poros.",
+   "action": "he paints the damp grey wall with wide crossing strokes.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b105.wav"
+  },
+  {
+   "id": "b106",
+   "a": "K6",
+   "b": "K7",
+   "text": "Y un orden: de arriba hacia abajo, y un paño completo de esquina a esquina, sin parar a la mitad. Si paras a la mitad, se nota la marca.",
+   "action": "he reaches up and paints a full band along the top of the wall from one corner, moving sideways.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b106.wav"
+  },
+  {
+   "id": "b107",
+   "a": "K7",
+   "b": "K7",
+   "detail": true,
+   "d1": "close view of a wide brush pushing thin limewash into the pores of rough grey plaster with crossing strokes",
+   "d2": "the same area covered in a thin translucent milky white layer, the brush lifting",
+   "text": "Se aprieta un poquito, para que entre.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b107.wav"
+  },
+  {
+   "id": "b108",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y aquí es donde la gente se asusta. Mira: se ve transparente, manchada. Parece que no sirve.",
+   "action": "he steps back and looks at the translucent first coat, showing it to the camera with a hand.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b108.wav"
+  },
+  {
+   "id": "b109",
+   "a": "K8",
+   "b": "K9",
+   "secs": 4,
+   "line": "¿Y eso es pintura? Se ve más gris que antes, hombre.",
+   "who": "the neighbour, a heavy-set man of about 65 with a thick grey moustache and a light blue checked shirt (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 65-year-old man",
+   "refs": [
+    "WF"
+   ],
+   "text": "¿Y eso es pintura? Se ve más gris que antes, hombre.",
+   "action": "the neighbor looks over the low brick wall at the translucent patchy wall and laughs, talking to the presenter. The presenter (third reference image face) listens and reacts silently, he does not speak."
+  },
+  {
+   "id": "b110",
+   "a": "K9",
+   "b": "K10",
+   "text": "Espérate a que seque. La cal mojada se ve gris y transparente. Al secarse se pone blanca, blanca tiza.",
+   "action": "he smiles at the neighbor and taps the side of his nose, then talks to the camera. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b110.wav"
+  },
+  {
+   "id": "b111",
+   "a": "K10",
+   "b": "K10",
+   "detail": true,
+   "d1": "close view of a wet translucent greyish limewash patch on a wall drying and turning bright white",
+   "d2": "the same patch now dry and bright chalky white",
+   "text": "Así.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b111.wav"
+  },
+  {
+   "id": "b112",
+   "a": "K10",
+   "b": "K11",
+   "text": "Entre mano y mano, de cuatro a seis horas, según el calor. Que esté seca al tacto, pero que no pase un día entero.",
+   "action": "he checks his watch and holds up his hand with fingers spread. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b112.wav"
+  },
+  {
+   "id": "b113",
+   "a": "K11",
+   "b": "K12",
+   "text": "Y antes de la segunda mano, un rocío otra vez. Siempre sobre húmedo.",
+   "action": "he sprays the dried first coat lightly with the pump sprayer before the second coat. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b113.wav"
+  },
+  {
+   "id": "b180",
+   "a": "K5",
+   "b": "K5",
+   "detail": true,
+   "insert": "b104",
+   "secs": 4,
+   "d1": "close view of a wide brush laying a long stroke of thin milky limewash onto damp grey plaster",
+   "d2": "the stroke finished, translucent milky white over the grey",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b181",
+   "a": "K7",
+   "b": "K7",
+   "detail": true,
+   "insert": "b106",
+   "secs": 4,
+   "d1": "close view of a wide brush painting crossing strokes near the top edge of a wall, milky limewash spreading",
+   "d2": "a finished band of translucent white along the top edge",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E3/vlog_E3.mp4"
+}

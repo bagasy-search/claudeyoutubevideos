@@ -1,0 +1,306 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/EP/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, days earlier. The neighbour is not there. He stands in front of the old grey right half of the wall holding a wide steel putty knife and a wire brush, curling flakes of old paint on the wall, a garden pump sprayer and an empty bucket at his feet. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands in front of the old grey half of the wall with a wire brush in one hand and the bucket at his feet, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the putty knife against the wall, a clean grey scraped area, pale flakes on the ground, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b088_1",
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wide steel putty knife scraping off curling flakes of old off-white paint from grey cement plaster."
+  },
+  {
+   "id": "D_b088_2",
+   "from": [
+    "D_b088_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same patch now bare grey plaster with scratch marks, a few flakes falling."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he brushes the wall with the wire brush, a little grey dust in the air, focused on the wall. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he crouches by the base of the wall, his fingers on a dark damp stain near the ground, looking up at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands brushing dust off his hands, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: plastic sheeting covers the ground and the window frame, he presses the tape down, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the wet rag against the clean glass, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his hand rests on the bare red brick section at the end of the wall, he looks at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he sprays the grey plaster, a large dark wet area, he looks at the camera over his shoulder. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b096_1",
+   "from": [
+    "K9"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a fine spray of water hitting dry grey cement plaster, the surface darkening where it lands."
+  },
+  {
+   "id": "D_b096_2",
+   "from": [
+    "D_b096_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the whole patch evenly dark and damp, tiny droplets on the surface."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his palm flat on the damp dark wall, he looks at the camera explaining. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he shades his eyes with his hand looking up at the overcast sky, then looks at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K11"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he slides the phone into the apron pocket, looking at the camera with a practical face. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b178_1",
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a stiff wire brush scrubbing grey cement plaster, grey dust puffing off."
+  },
+  {
+   "id": "D_b178_2",
+   "from": [
+    "D_b178_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the scrubbed patch clean and rough, a little dust settling."
+  },
+  {
+   "id": "D_b179_1",
+   "from": [
+    "K10"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a garden pump sprayer nozzle misting water onto grey plaster."
+  },
+  {
+   "id": "D_b179_2",
+   "from": [
+    "D_b179_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the plaster darkened and damp where the mist landed."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b086",
+   "a": "K0",
+   "b": "K1",
+   "text": "Esta es la otra mitad de la pared. Repello de cemento, con restos de una pintura vieja que se estaba pelando.",
+   "action": "he walks to the old grey half of the exterior wall carrying a bucket and a wire brush.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b086.wav"
+  },
+  {
+   "id": "b087",
+   "a": "K1",
+   "b": "K2",
+   "text": "Todo lo que se levanta, afuera. Con la espátula, hasta que no salga nada más.",
+   "action": "he scrapes the peeling old paint with a wide putty knife, flakes falling to the ground.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b087.wav"
+  },
+  {
+   "id": "b088",
+   "a": "K2",
+   "b": "K2",
+   "detail": true,
+   "d1": "close view of a wide steel putty knife scraping off curling flakes of old off-white paint from grey cement plaster",
+   "d2": "the same patch now bare grey plaster with scratch marks, a few flakes falling",
+   "text": "Lo que está bien pegado, lo dejo; lo que suena hueco, lo saco.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b088.wav"
+  },
+  {
+   "id": "b089",
+   "a": "K2",
+   "b": "K3",
+   "text": "Después, cepillo de alambre, para sacar el polvo y lo suelto. La cal se pega a la pared, no al polvo.",
+   "action": "he scrubs the scraped area with the wire brush, dust flying.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b089.wav"
+  },
+  {
+   "id": "b090",
+   "a": "K3",
+   "b": "K4",
+   "text": "Y ojo con esto: si la pared tiene humedad que sube del piso, primero hay que resolver eso. La pintura no arregla una humedad.",
+   "action": "he rubs a damp dark patch at the bottom of the wall with his fingers and shows the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b090.wav"
+  },
+  {
+   "id": "b091",
+   "a": "K4",
+   "b": "K5",
+   "text": "Donde hay una mancha así, la cal sí deja respirar la pared mejor que un plástico. Pero si el agua sigue subiendo, va a seguir manchando.",
+   "action": "he stands up and brushes his hands, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b091.wav"
+  },
+  {
+   "id": "b092",
+   "a": "K5",
+   "b": "K6",
+   "text": "Antes de pintar, tapa el piso y las ventanas. La cal salpica, y en los vidrios y en el aluminio deja manchas que cuestan mucho sacar.",
+   "action": "he spreads an old plastic sheet on the ground along the wall and tapes plastic over a nearby window frame.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b092.wav"
+  },
+  {
+   "id": "b093",
+   "a": "K6",
+   "b": "K7",
+   "text": "Si te cae una gota, límpiala en el momento con un trapo mojado. Fresca sale fácil; seca, ya no tanto.",
+   "action": "he wipes a white splash off the window glass with a wet rag.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b093.wav"
+  },
+  {
+   "id": "b094",
+   "a": "K7",
+   "b": "K8",
+   "text": "¿Y sobre ladrillo sin repellar? También agarra muy bien. El ladrillo chupa más: mójalo más, y cuenta con una mano extra.",
+   "action": "he walks to the end of the wall where a section of bare red brick is exposed and taps it.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b094.wav"
+  },
+  {
+   "id": "b095",
+   "a": "K8",
+   "b": "K9",
+   "text": "Ahora la mojo. Esto es lo que casi todos se saltan, y es lo más importante.",
+   "action": "he pumps the garden sprayer and sprays water on the bare plaster, which darkens.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b095.wav"
+  },
+  {
+   "id": "b096",
+   "a": "K9",
+   "b": "K9",
+   "detail": true,
+   "d1": "close view of a fine spray of water hitting dry grey cement plaster, the surface darkening where it lands",
+   "d2": "the whole patch evenly dark and damp, tiny droplets on the surface",
+   "text": "Húmeda, no chorreando.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b096.wav"
+  },
+  {
+   "id": "b097",
+   "a": "K9",
+   "b": "K10",
+   "text": "¿Por qué? Porque una pared seca le chupa el agua a la cal en un segundo. Y la cal, sin agua, no se agarra: queda polvo.",
+   "action": "he touches the damp wall with his palm and explains.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b097.wav"
+  },
+  {
+   "id": "b098",
+   "a": "K10",
+   "b": "K11",
+   "text": "Por eso tampoco se pinta con el sol del mediodía pegando de frente. Yo pinto temprano o a la tarde, o con el día nublado como hoy.",
+   "action": "he looks up at the sky shading his eyes with his hand, then back to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b098.wav"
+  },
+  {
+   "id": "b099",
+   "a": "K11",
+   "b": "K12",
+   "text": "Y mira el pronóstico: que no llueva en los dos días siguientes, ni que vaya a helar. La cal fresca necesita esos días tranquilos.",
+   "action": "he checks the weather on his old phone and puts it back in his apron pocket.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b099.wav"
+  },
+  {
+   "id": "b178",
+   "a": "K3",
+   "b": "K3",
+   "detail": true,
+   "insert": "b089",
+   "secs": 4,
+   "d1": "close view of a stiff wire brush scrubbing grey cement plaster, grey dust puffing off",
+   "d2": "the scrubbed patch clean and rough, a little dust settling",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b179",
+   "a": "K10",
+   "b": "K10",
+   "detail": true,
+   "insert": "b097",
+   "secs": 4,
+   "d1": "close view of a garden pump sprayer nozzle misting water onto grey plaster",
+   "d2": "the plaster darkened and damp where the mist landed",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/EP/vlog_EP.mp4"
+}

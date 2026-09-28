@@ -1,0 +1,210 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G2/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same garage, same framing. On the bench there is now also an old grey bucket with a lid (yesterday's mix), a small kitchen scale and a low stool beside the bench. He stands behind the bench. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the lid up with one hand, the old bucket with hard lumpy white paste inside tilted toward the camera, disgusted face. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b033_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a stick pushing into a thick lumpy grey-white paste in a bucket, the paste cracking in chunks."
+  },
+  {
+   "id": "D_b033_2",
+   "from": [
+    "D_b033_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the stick stuck upright in the hardened lumpy paste."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his finger rests on the paper bag of white cement on the bench, he looks at the camera explaining. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the old bucket is pushed to the far end of the bench, lid on, he looks at the camera with a small shrug. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his palm flat on the lid of the lime paste bucket, satisfied smile at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the jug of white powder above a small kitchen scale on the bench, looking at the camera with raised eyebrows. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the jug of cement sits on the small scale, he points at it looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the clear jug up next to his face, nodding at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he sits on the stool with four fingers raised, a thoughtful look at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands with one hand on the lime bucket, a warm smile at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b173_1",
+   "from": [
+    "K6"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a kitchen scale on a workbench with a jug of white powder on it, the display blank."
+  },
+  {
+   "id": "D_b173_2",
+   "from": [
+    "D_b173_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same jug being lifted off the scale by a hand."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b032",
+   "a": "K0",
+   "b": "K1",
+   "text": "La primera, y la que más se repite: ¿se puede guardar para el otro día? Mira lo que pasa.",
+   "action": "he lifts the lid of an old bucket with hardened grey-white lumps inside and shows it to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b032.wav"
+  },
+  {
+   "id": "b033",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of a stick pushing into a thick lumpy grey-white paste in a bucket, the paste cracking in chunks",
+   "d2": "the stick stuck upright in the hardened lumpy paste",
+   "text": "Esto lo preparé ayer con el cemento adentro. Grumos. Ya no pinta igual, por más que lo revuelvas.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b033.wav"
+  },
+  {
+   "id": "b034",
+   "a": "K1",
+   "b": "K2",
+   "text": "¿Por qué? Porque el cemento empieza a fraguar en cuanto le cae agua. No espera a que tú termines.",
+   "action": "he taps the bag of white cement with his finger, explaining.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b034.wav"
+  },
+  {
+   "id": "b035",
+   "a": "K2",
+   "b": "K3",
+   "text": "Entonces la regla es sencilla: el cemento se mezcla sólo con lo que vas a usar ese día.",
+   "action": "he puts the lid back on the old bucket and slides it away across the bench.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b035.wav"
+  },
+  {
+   "id": "b036",
+   "a": "K3",
+   "b": "K4",
+   "text": "La cal sola, en cambio, sí aguanta. Tapada, con un dedito de agua encima, dura semanas. Por eso separo.",
+   "action": "he pats the lid of another bucket full of soaked lime paste, satisfied.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b036.wav"
+  },
+  {
+   "id": "b037",
+   "a": "K4",
+   "b": "K5",
+   "text": "Segunda pregunta: ¿kilos o botes? Un bote de cal no pesa lo mismo que un bote de cemento.",
+   "action": "he holds up a clear plastic jug of lime powder next to a kitchen scale, comparing.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b037.wav"
+  },
+  {
+   "id": "b038",
+   "a": "K5",
+   "b": "K6",
+   "text": "La cal es mucho más liviana. Si mides la cal en kilos y el cemento en jarras, te sale otra mezcla.",
+   "action": "he puts the jug on the scale, reads it, then puts a same jug of cement on the scale.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b038.wav"
+  },
+  {
+   "id": "b039",
+   "a": "K6",
+   "b": "K7",
+   "text": "Por eso todo en jarras, con la misma jarra. Cuatro de cal, una de cemento. Así no te equivocas nunca.",
+   "action": "he taps the same jug twice, nodding.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b039.wav"
+  },
+  {
+   "id": "b040",
+   "a": "K7",
+   "b": "K8",
+   "text": "Cuarta pregunta: ¿cuánto dura? No te voy a inventar un número. Depende de la lluvia, del sol, y de cómo la pongas.",
+   "action": "he sits on a stool by the bench and holds up four fingers, thinking.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b040.wav"
+  },
+  {
+   "id": "b041",
+   "a": "K8",
+   "b": "K9",
+   "text": "Lo bueno es que cuando se gasta no hay que raspar nada: se moja y se le pasa otra mano encima, y queda como nueva.",
+   "action": "he stands up from the stool and pats the bucket of lime, smiling.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b041.wav"
+  },
+  {
+   "id": "b173",
+   "a": "K6",
+   "b": "K6",
+   "detail": true,
+   "insert": "b038",
+   "secs": 4,
+   "d1": "close view of a kitchen scale on a workbench with a jug of white powder on it, the display blank",
+   "d2": "the same jug being lifted off the scale by a hand",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G2/vlog_G2.mp4"
+}

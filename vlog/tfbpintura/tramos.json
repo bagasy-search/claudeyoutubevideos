@@ -1,0 +1,1406 @@
+[
+ {
+  "beat": "b003",
+  "scene": "E1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b003.wav",
+  "start": 0.0,
+  "len": 0.94,
+  "text": "Mira."
+ },
+ {
+  "beat": "b004",
+  "scene": "E1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b004.wav",
+  "start": 0.94,
+  "len": 6.07,
+  "text": "Loco o genio: pinté la casa con cemento, cal y agua. Y no se cae."
+ },
+ {
+  "beat": "b005",
+  "scene": "G1",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b005.wav",
+  "start": 7.01,
+  "len": 1.2,
+  "text": "Cal hidratada."
+ },
+ {
+  "beat": "b006",
+  "scene": "G1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b006.wav",
+  "start": 8.21,
+  "len": 2.18,
+  "text": "Cemento blanco, poquito."
+ },
+ {
+  "beat": "b007",
+  "scene": "G1",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b007.wav",
+  "start": 10.39,
+  "len": 0.34,
+  "text": "Agua."
+ },
+ {
+  "beat": "b008",
+  "scene": "G1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b008.wav",
+  "start": 10.73,
+  "len": 3.19,
+  "text": "Y un cuarto ingrediente, que casi nadie pone."
+ },
+ {
+  "beat": "b009",
+  "scene": "G1",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b009.wav",
+  "start": 13.92,
+  "len": 2.44,
+  "text": "Se revuelve hasta que queda como leche."
+ },
+ {
+  "beat": "b010",
+  "scene": "E2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b010.wav",
+  "start": 16.36,
+  "len": 3.85,
+  "text": "Y con una brocha ancha, sobre el repello, manos finitas."
+ },
+ {
+  "beat": "b011",
+  "scene": "E2",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b011.wav",
+  "start": 20.21,
+  "len": 2.89,
+  "text": "La primera mano parece que no tapa nada."
+ },
+ {
+  "beat": "b012",
+  "scene": "E1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b012.wav",
+  "start": 23.1,
+  "len": 3.23,
+  "text": "Pero mira el antes y el después, en la misma pared."
+ },
+ {
+  "beat": "b013",
+  "scene": "E1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b013.wav",
+  "start": 26.33,
+  "len": 2.57,
+  "text": "Froto, y no me deja la mano blanca."
+ },
+ {
+  "beat": "b014",
+  "scene": "E1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b014.wav",
+  "start": 28.9,
+  "len": 6.71,
+  "text": "Y va aguada, así que rinde muchísimo. Con un balde pinto toda esta pared, y me sobra."
+ },
+ {
+  "beat": "b015",
+  "scene": "E1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b015.wav",
+  "start": 35.61,
+  "len": 6.65,
+  "text": "¿Por qué no se cae? Porque no es una capa de plástico pegada encima. La cal se mete en los poros del repello."
+ },
+ {
+  "beat": "b016",
+  "scene": "E1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b016.wav",
+  "start": 42.26,
+  "len": 6.82,
+  "text": "Y con el aire, poco a poco, se vuelve piedra otra vez. Por eso no se descascara como la pintura común."
+ },
+ {
+  "beat": "b017",
+  "scene": "E1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b017.wav",
+  "start": 49.08,
+  "len": 3.29,
+  "text": "Mi vecino todavía no me cree. Ya le voy a mostrar."
+ },
+ {
+  "beat": "b018",
+  "scene": "E1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b018.wav",
+  "start": 52.37,
+  "len": 7.89,
+  "text": "Pero ojo: el cuarto ingrediente es el que hace que no se caiga, y casi nadie lo pone bien. Al final te enseño el error."
+ },
+ {
+  "beat": "b019",
+  "scene": "G1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b019.wav",
+  "start": 60.26,
+  "len": 5.67,
+  "text": "Te doy la receta completa ya, con las medidas, y después te muestro cada paso de cerca."
+ },
+ {
+  "beat": "b020",
+  "scene": "G1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b020.wav",
+  "start": 65.93,
+  "len": 6.04,
+  "text": "Todo se mide con el mismo recipiente. Yo uso esta jarra. No en kilos: en jarras."
+ },
+ {
+  "beat": "b021",
+  "scene": "G1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b021.wav",
+  "start": 71.97,
+  "len": 2.05,
+  "text": "Cuatro jarras de cal hidratada."
+ },
+ {
+  "beat": "b022",
+  "scene": "G1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b022.wav",
+  "start": 74.02,
+  "len": 3.3,
+  "text": "Una jarra de cemento blanco. Cuatro a uno."
+ },
+ {
+  "beat": "b023",
+  "scene": "G1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b023.wav",
+  "start": 77.32,
+  "len": 4.82,
+  "text": "Un puñado de sal gruesa, disuelta antes en un poco de agua caliente."
+ },
+ {
+  "beat": "b024",
+  "scene": "G1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b024.wav",
+  "start": 82.14,
+  "len": 6.28,
+  "text": "Y agua, más o menos el doble que de polvo, hasta que quede como leche. Leche, no yogur."
+ },
+ {
+  "beat": "b025",
+  "scene": "G1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b025.wav",
+  "start": 88.42,
+  "len": 8.17,
+  "text": "Y la pared tiene que ser mineral: repello, ladrillo o cemento. Sobre pintura plástica, no. Ya te explico por qué."
+ },
+ {
+  "beat": "b026",
+  "scene": "G1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b026.wav",
+  "start": 96.59,
+  "len": 6.75,
+  "text": "La cal la dejo remojando desde la noche anterior. El cemento y la sal van el día que pinto."
+ },
+ {
+  "beat": "b027",
+  "scene": "G1",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b027.wav",
+  "start": 103.34,
+  "len": 2.29,
+  "text": "Se cuela, para que no queden grumos."
+ },
+ {
+  "beat": "b028",
+  "scene": "E2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b028.wav",
+  "start": 105.63,
+  "len": 4.61,
+  "text": "La pared limpia, sin pintura plástica, y mojada antes de pintar."
+ },
+ {
+  "beat": "b029",
+  "scene": "E2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b029.wav",
+  "start": 110.24,
+  "len": 3.69,
+  "text": "Tres o cuatro manos finas, dejando secar entre una y otra."
+ },
+ {
+  "beat": "b030",
+  "scene": "E2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b030.wav",
+  "start": 113.93,
+  "len": 5.54,
+  "text": "Y los días siguientes, un rocío de agua para que cure despacio. Eso es todo."
+ },
+ {
+  "beat": "b031",
+  "scene": "E2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b031.wav",
+  "start": 119.47,
+  "len": 5.77,
+  "text": "Ahora sí, vamos con las preguntas que más me hicieron, porque ahí es donde la gente la arruina."
+ },
+ {
+  "beat": "b032",
+  "scene": "G2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b032.wav",
+  "start": 125.24,
+  "len": 5.67,
+  "text": "La primera, y la que más se repite: ¿se puede guardar para el otro día? Mira lo que pasa."
+ },
+ {
+  "beat": "b033",
+  "scene": "G2",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b033.wav",
+  "start": 130.91,
+  "len": 6.13,
+  "text": "Esto lo preparé ayer con el cemento adentro. Grumos. Ya no pinta igual, por más que lo revuelvas."
+ },
+ {
+  "beat": "b034",
+  "scene": "G2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b034.wav",
+  "start": 137.04,
+  "len": 5.8,
+  "text": "¿Por qué? Porque el cemento empieza a fraguar en cuanto le cae agua. No espera a que tú termines."
+ },
+ {
+  "beat": "b035",
+  "scene": "G2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b035.wav",
+  "start": 142.84,
+  "len": 5.48,
+  "text": "Entonces la regla es sencilla: el cemento se mezcla sólo con lo que vas a usar ese día."
+ },
+ {
+  "beat": "b036",
+  "scene": "G2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b036.wav",
+  "start": 148.32,
+  "len": 7.36,
+  "text": "La cal sola, en cambio, sí aguanta. Tapada, con un dedito de agua encima, dura semanas. Por eso separo."
+ },
+ {
+  "beat": "b037",
+  "scene": "G2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b037.wav",
+  "start": 155.68,
+  "len": 6.41,
+  "text": "Segunda pregunta: ¿kilos o botes? Un bote de cal no pesa lo mismo que un bote de cemento."
+ },
+ {
+  "beat": "b038",
+  "scene": "G2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b038.wav",
+  "start": 162.09,
+  "len": 6.4,
+  "text": "La cal es mucho más liviana. Si mides la cal en kilos y el cemento en jarras, te sale otra mezcla."
+ },
+ {
+  "beat": "b039",
+  "scene": "G2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b039.wav",
+  "start": 168.49,
+  "len": 6.73,
+  "text": "Por eso todo en jarras, con la misma jarra. Cuatro de cal, una de cemento. Así no te equivocas nunca."
+ },
+ {
+  "beat": "b040",
+  "scene": "G2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b040.wav",
+  "start": 175.22,
+  "len": 7.54,
+  "text": "Cuarta pregunta: ¿cuánto dura? No te voy a inventar un número. Depende de la lluvia, del sol, y de cómo la pongas."
+ },
+ {
+  "beat": "b041",
+  "scene": "G2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b041.wav",
+  "start": 182.76,
+  "len": 7.14,
+  "text": "Lo bueno es que cuando se gasta no hay que raspar nada: se moja y se le pasa otra mano encima, y queda como nueva."
+ },
+ {
+  "beat": "b042",
+  "scene": "I1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b042.wav",
+  "start": 189.9,
+  "len": 5.66,
+  "text": "Y la tercera: ¿la puedo poner encima de la pintura que ya tengo? Aquí está la parte honesta."
+ },
+ {
+  "beat": "b043",
+  "scene": "I1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b043.wav",
+  "start": 195.56,
+  "len": 6.44,
+  "text": "Sobre látex, esmalte o pintura plástica, se agarra mal. Mira la cinta: se llevó todo."
+ },
+ {
+  "beat": "b044",
+  "scene": "I1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b044.wav",
+  "start": 202.0,
+  "len": 7.76,
+  "text": "La cal necesita un fondo mineral para meterse: repello, ladrillo, cemento. El plástico no la deja entrar."
+ },
+ {
+  "beat": "b045",
+  "scene": "I1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b045.wav",
+  "start": 209.76,
+  "len": 8.08,
+  "text": "¿Cómo sabes si tu pared es mineral? La prueba de la gota. Le tiras unas gotas de agua. Si resbalan como en un vidrio, hay plástico."
+ },
+ {
+  "beat": "b046",
+  "scene": "I1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b046.wav",
+  "start": 217.84,
+  "len": 5.26,
+  "text": "Si se chupan y la pared se oscurece, es mineral. Ahí la cal se va a agarrar."
+ },
+ {
+  "beat": "b047",
+  "scene": "I1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b047.wav",
+  "start": 223.1,
+  "len": 7.31,
+  "text": "Si tu pared tiene pintura vieja, hay que sacarla o, por lo menos, sacar todo lo que está flojo, hasta ver el repello."
+ },
+ {
+  "beat": "b048",
+  "scene": "I1",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b048.wav",
+  "start": 230.41,
+  "len": 6.92,
+  "text": "Y sobre yeso pintado tampoco. Eso no te lo dicen en los videos: te lo digo yo, para que no tires tu dinero."
+ },
+ {
+  "beat": "b049",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b049.wav",
+  "start": 237.33,
+  "len": 4.49,
+  "text": "Antes de abrir la bolsa: gafas y guantes. No es exagerar."
+ },
+ {
+  "beat": "b050",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b050.wav",
+  "start": 241.82,
+  "len": 11.13,
+  "text": "La cal y el cemento son cáusticos: te queman la piel. Y la cal en los ojos es una urgencia. Si te salta, agua limpia abundante y al médico."
+ },
+ {
+  "beat": "b051",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b051.wav",
+  "start": 252.95,
+  "len": 7.58,
+  "text": "Esta es cal hidratada, la de construcción. Viene en polvo, en bolsa, en cualquier ferretería."
+ },
+ {
+  "beat": "b052",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b052.wav",
+  "start": 260.53,
+  "len": 6.73,
+  "text": "No es yeso ni es cal viva. La viva es la que hierve con el agua y quema. Esta ya está apagada."
+ },
+ {
+  "beat": "b053",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b053.wav",
+  "start": 267.26,
+  "len": 10.1,
+  "text": "Y cuidado en la ferretería: hay cal agrícola, que es piedra molida para la tierra. Esa no endurece en la pared. Pide cal hidratada, de construcción."
+ },
+ {
+  "beat": "b054",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b054.wav",
+  "start": 277.36,
+  "len": 7.84,
+  "text": "Así se pintaban las bardas de las escuelas, las casas del campo, las iglesias. Nada nuevo. Lo nuevo es que se olvidó."
+ },
+ {
+  "beat": "b055",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b055.wav",
+  "start": 285.2,
+  "len": 8.85,
+  "text": "¿Y para qué el cemento blanco? La cal sola es de adentro. Afuera, donde pega la lluvia, el cemento le da más dureza al frote."
+ },
+ {
+  "beat": "b056",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b056.wav",
+  "start": 294.05,
+  "len": 6.71,
+  "text": "Pero es poquito. Si le pones mucho cemento, queda más dura, pero respira menos y se puede cuartear."
+ },
+ {
+  "beat": "b057",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b057.wav",
+  "start": 300.76,
+  "len": 9.99,
+  "text": "Las herramientas: una brocha ancha, dos baldes, una jarra, un pedazo de mosquitero y un rociador de jardín, o una botella con atomizador."
+ },
+ {
+  "beat": "b058",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b058.wav",
+  "start": 310.75,
+  "len": 9.14,
+  "text": "La brocha, ancha y de cerda gruesa, porque carga mucha cal aguada. El rodillo sirve, pero con brocha la cal entra mejor en los poros."
+ },
+ {
+  "beat": "b059",
+  "scene": "G3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b059.wav",
+  "start": 319.89,
+  "len": 9.03,
+  "text": "¿Y cuánto gastas? Una bolsa de cal, una bolsa chica de cemento blanco y sal gruesa. Cuesta una fracción de una lata de pintura."
+ },
+ {
+  "beat": "b060",
+  "scene": "G4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b060.wav",
+  "start": 328.92,
+  "len": 5.2,
+  "text": "La noche anterior: cuatro jarras de cal en el balde vacío. Primero el polvo."
+ },
+ {
+  "beat": "b061",
+  "scene": "G4",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b061.wav",
+  "start": 334.12,
+  "len": 4.14,
+  "text": "Después el agua, de a poco, y lo dejo que se empape solo."
+ },
+ {
+  "beat": "b062",
+  "scene": "G4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b062.wav",
+  "start": 338.26,
+  "len": 5.08,
+  "text": "Revuelvo hasta que no quede polvo seco. Queda una pasta espesa, como crema."
+ },
+ {
+  "beat": "b063",
+  "scene": "G4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b063.wav",
+  "start": 343.34,
+  "len": 5.07,
+  "text": "Le dejo un dedo de agua encima, tapo, y a dormir. Mínimo una noche."
+ },
+ {
+  "beat": "b064",
+  "scene": "G4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b064.wav",
+  "start": 348.41,
+  "len": 7.31,
+  "text": "¿Para qué el reposo? Para que la cal se hidrate bien. Si la usas recién mezclada, queda más arenosa y se agarra peor."
+ },
+ {
+  "beat": "b065",
+  "scene": "G4",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b065.wav",
+  "start": 355.72,
+  "len": 3.06,
+  "text": "Al día siguiente, mira qué cremosa quedó."
+ },
+ {
+  "beat": "b066",
+  "scene": "G4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b066.wav",
+  "start": 358.78,
+  "len": 6.43,
+  "text": "Ahora le agrego agua hasta que quede líquida. Tiene que chorrear del palo, fina, como leche."
+ },
+ {
+  "beat": "b067",
+  "scene": "G4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b067.wav",
+  "start": 365.21,
+  "len": 7.67,
+  "text": "¿Ves cómo chorrea? Si queda pastosa, pintas una capa gruesa, y la capa gruesa es la que se cuartea y se cae."
+ },
+ {
+  "beat": "b068",
+  "scene": "G5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b068.wav",
+  "start": 372.88,
+  "len": 7.0,
+  "text": "Ahora la sal. Un puñado en un poco de agua caliente, y la revuelvo hasta que no quede ni un grano."
+ },
+ {
+  "beat": "b069",
+  "scene": "G5",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b069.wav",
+  "start": 379.88,
+  "len": 3.08,
+  "text": "Disuelta. Nunca en grano directo en el balde."
+ },
+ {
+  "beat": "b070",
+  "scene": "G5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b070.wav",
+  "start": 382.96,
+  "len": 2.25,
+  "text": "La echo al balde, y revuelvo bien."
+ },
+ {
+  "beat": "b071",
+  "scene": "G5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b071.wav",
+  "start": 385.21,
+  "len": 6.35,
+  "text": "Y el cemento, la jarra de cemento blanco, primero aparte con un poco de agua, para que no haga bolitas."
+ },
+ {
+  "beat": "b072",
+  "scene": "G5",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b072.wav",
+  "start": 391.56,
+  "len": 1.78,
+  "text": "Y ahora sí, todo junto."
+ },
+ {
+  "beat": "b073",
+  "scene": "G5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b073.wav",
+  "start": 393.34,
+  "len": 6.84,
+  "text": "Revuelvo un buen rato. Y lo voy revolviendo también mientras pinto, porque el cemento se va al fondo."
+ },
+ {
+  "beat": "b074",
+  "scene": "G5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b074.wav",
+  "start": 400.18,
+  "len": 5.91,
+  "text": "Y lo último: la cuelo por un pedazo de mosquitero. Lo que queda arriba no va a la pared."
+ },
+ {
+  "beat": "b075",
+  "scene": "G5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b075.wav",
+  "start": 406.09,
+  "len": 8.35,
+  "text": "Con estas medidas me sale casi un balde lleno. Y lo que no uses hoy, ya sabes: con cemento adentro, no se guarda."
+ },
+ {
+  "beat": "b077",
+  "scene": "G5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b077.wav",
+  "start": 414.44,
+  "len": 6.43,
+  "text": "¡Ja! Eso mismo dicen todos. La sal es el truco de los viejos albañiles. Ya vas a ver, vecino."
+ },
+ {
+  "beat": "b078",
+  "scene": "G5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b078.wav",
+  "start": 420.87,
+  "len": 7.06,
+  "text": "Y ahora presta muchísima atención a esta imagen, porque probablemente sea la parte más importante del video."
+ },
+ {
+  "beat": "b079",
+  "scene": "LAM",
+  "type": "L",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b079.wav",
+  "start": 427.93,
+  "len": 11.42,
+  "text": "Aquí está todo en una sola hoja. Los materiales: cuatro jarras de cal hidratada, una de cemento blanco, un puñado de sal gruesa disuelta, y agua hasta leche."
+ },
+ {
+  "beat": "b080",
+  "scene": "LAM",
+  "type": "L",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b080.wav",
+  "start": 439.35,
+  "len": 8.39,
+  "text": "El paso a paso: la cal remojada desde la noche anterior, colada. La pared limpia, sin pintura plástica, y humedecida."
+ },
+ {
+  "beat": "b081",
+  "scene": "LAM",
+  "type": "L",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b081.wav",
+  "start": 447.74,
+  "len": 9.95,
+  "text": "Tres o cuatro manos finas con brocha ancha, cruzadas, dejando secar entre mano y mano. Y los días siguientes, un rocío de agua para que cure."
+ },
+ {
+  "beat": "b082",
+  "scene": "LAM",
+  "type": "L",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b082.wav",
+  "start": 457.69,
+  "len": 10.48,
+  "text": "Y abajo, los tres errores que la hacen caer: pintar encima de pintura plástica, dar una sola mano gruesa, y pintar con el sol de mediodía pegando en la pared."
+ },
+ {
+  "beat": "b083",
+  "scene": "LAM",
+  "type": "L",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b083.wav",
+  "start": 468.17,
+  "len": 4.37,
+  "text": "Si te quedas con esta hoja, ya puedes pintar. Tómale captura si quieres."
+ },
+ {
+  "beat": "b084",
+  "scene": "G5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b084.wav",
+  "start": 472.54,
+  "len": 8.4,
+  "text": "Esto lo tengo ordenado junto con otros arreglos en la guía del canal. Si estás en el televisor, apunta la cámara de tu teléfono a este código."
+ },
+ {
+  "beat": "b085",
+  "scene": "G5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b085.wav",
+  "start": 480.94,
+  "len": 6.15,
+  "text": "Y si estás en el teléfono, el enlace está abajo. Seguimos, que ahora viene la pared."
+ },
+ {
+  "beat": "b086",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b086.wav",
+  "start": 487.09,
+  "len": 7.56,
+  "text": "Esta es la otra mitad de la pared. Repello de cemento, con restos de una pintura vieja que se estaba pelando."
+ },
+ {
+  "beat": "b087",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b087.wav",
+  "start": 494.65,
+  "len": 5.53,
+  "text": "Todo lo que se levanta, afuera. Con la espátula, hasta que no salga nada más."
+ },
+ {
+  "beat": "b088",
+  "scene": "EP",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b088.wav",
+  "start": 500.18,
+  "len": 4.38,
+  "text": "Lo que está bien pegado, lo dejo; lo que suena hueco, lo saco."
+ },
+ {
+  "beat": "b089",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b089.wav",
+  "start": 504.56,
+  "len": 7.22,
+  "text": "Después, cepillo de alambre, para sacar el polvo y lo suelto. La cal se pega a la pared, no al polvo."
+ },
+ {
+  "beat": "b090",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b090.wav",
+  "start": 511.78,
+  "len": 8.62,
+  "text": "Y ojo con esto: si la pared tiene humedad que sube del piso, primero hay que resolver eso. La pintura no arregla una humedad."
+ },
+ {
+  "beat": "b091",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b091.wav",
+  "start": 520.4,
+  "len": 8.6,
+  "text": "Donde hay una mancha así, la cal sí deja respirar la pared mejor que un plástico. Pero si el agua sigue subiendo, va a seguir manchando."
+ },
+ {
+  "beat": "b092",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b092.wav",
+  "start": 529.0,
+  "len": 8.85,
+  "text": "Antes de pintar, tapa el piso y las ventanas. La cal salpica, y en los vidrios y en el aluminio deja manchas que cuestan mucho sacar."
+ },
+ {
+  "beat": "b093",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b093.wav",
+  "start": 537.85,
+  "len": 8.17,
+  "text": "Si te cae una gota, límpiala en el momento con un trapo mojado. Fresca sale fácil; seca, ya no tanto."
+ },
+ {
+  "beat": "b094",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b094.wav",
+  "start": 546.02,
+  "len": 8.36,
+  "text": "¿Y sobre ladrillo sin repellar? También agarra muy bien. El ladrillo chupa más: mójalo más, y cuenta con una mano extra."
+ },
+ {
+  "beat": "b095",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b095.wav",
+  "start": 554.38,
+  "len": 5.18,
+  "text": "Ahora la mojo. Esto es lo que casi todos se saltan, y es lo más importante."
+ },
+ {
+  "beat": "b096",
+  "scene": "EP",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b096.wav",
+  "start": 559.56,
+  "len": 1.74,
+  "text": "Húmeda, no chorreando."
+ },
+ {
+  "beat": "b097",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b097.wav",
+  "start": 561.3,
+  "len": 7.94,
+  "text": "¿Por qué? Porque una pared seca le chupa el agua a la cal en un segundo. Y la cal, sin agua, no se agarra: queda polvo."
+ },
+ {
+  "beat": "b098",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b098.wav",
+  "start": 569.24,
+  "len": 8.48,
+  "text": "Por eso tampoco se pinta con el sol del mediodía pegando de frente. Yo pinto temprano o a la tarde, o con el día nublado como hoy."
+ },
+ {
+  "beat": "b099",
+  "scene": "EP",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b099.wav",
+  "start": 577.72,
+  "len": 8.17,
+  "text": "Y mira el pronóstico: que no llueva en los dos días siguientes, ni que vaya a helar. La cal fresca necesita esos días tranquilos."
+ },
+ {
+  "beat": "b100",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b100.wav",
+  "start": 585.89,
+  "len": 6.69,
+  "text": "Te cuento algo. Me escribió Ramiro, de Cochabamba, en Bolivia. Pintó la barda de su patio con cal y cemento."
+ },
+ {
+  "beat": "b101",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b101.wav",
+  "start": 592.58,
+  "len": 6.63,
+  "text": "A los pocos meses pasaba la mano por la pared y le quedaba blanca. Y me dijo: esto no sirve."
+ },
+ {
+  "beat": "b102",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b102.wav",
+  "start": 599.21,
+  "len": 10.17,
+  "text": "Le pregunté tres cosas. ¿La mojaste antes? No. ¿A qué hora pintaste? Al mediodía. ¿Cuántas manos? Una, bien gruesa, para terminar rápido."
+ },
+ {
+  "beat": "b103",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b103.wav",
+  "start": 609.38,
+  "len": 5.9,
+  "text": "Las tres cosas que la hacen fallar, juntas. No era la receta: era cómo la puso."
+ },
+ {
+  "beat": "b104",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b104.wav",
+  "start": 615.28,
+  "len": 4.89,
+  "text": "Así que vamos a hacerlo bien. Brocha ancha, cargada pero sin chorrear."
+ },
+ {
+  "beat": "b105",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b105.wav",
+  "start": 620.17,
+  "len": 4.8,
+  "text": "Pinceladas cruzadas, en todas direcciones, y metiendo la cal en los poros."
+ },
+ {
+  "beat": "b106",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b106.wav",
+  "start": 624.97,
+  "len": 9.19,
+  "text": "Y un orden: de arriba hacia abajo, y un paño completo de esquina a esquina, sin parar a la mitad. Si paras a la mitad, se nota la marca."
+ },
+ {
+  "beat": "b107",
+  "scene": "E3",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b107.wav",
+  "start": 634.16,
+  "len": 2.14,
+  "text": "Se aprieta un poquito, para que entre."
+ },
+ {
+  "beat": "b108",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b108.wav",
+  "start": 636.3,
+  "len": 6.24,
+  "text": "Y aquí es donde la gente se asusta. Mira: se ve transparente, manchada. Parece que no sirve."
+ },
+ {
+  "beat": "b110",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b110.wav",
+  "start": 642.54,
+  "len": 7.16,
+  "text": "Espérate a que seque. La cal mojada se ve gris y transparente. Al secarse se pone blanca, blanca tiza."
+ },
+ {
+  "beat": "b111",
+  "scene": "E3",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b111.wav",
+  "start": 649.7,
+  "len": 0.63,
+  "text": "Así."
+ },
+ {
+  "beat": "b112",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b112.wav",
+  "start": 650.33,
+  "len": 7.42,
+  "text": "Entre mano y mano, de cuatro a seis horas, según el calor. Que esté seca al tacto, pero que no pase un día entero."
+ },
+ {
+  "beat": "b113",
+  "scene": "E3",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b113.wav",
+  "start": 657.75,
+  "len": 5.23,
+  "text": "Y antes de la segunda mano, un rocío otra vez. Siempre sobre húmedo."
+ },
+ {
+  "beat": "b114",
+  "scene": "E4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b114.wav",
+  "start": 662.98,
+  "len": 5.33,
+  "text": "Segunda mano. Ahora sí empieza a tapar. Todavía se ven sombras, y está bien."
+ },
+ {
+  "beat": "b115",
+  "scene": "E4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b115.wav",
+  "start": 668.31,
+  "len": 6.51,
+  "text": "Cada tanto revuelvo el balde. Si no, el cemento se va al fondo y la última mano sale aguada."
+ },
+ {
+  "beat": "b116",
+  "scene": "E4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b116.wav",
+  "start": 674.82,
+  "len": 2.96,
+  "text": "Tercera mano. Esta es la que la deja pareja."
+ },
+ {
+  "beat": "b117",
+  "scene": "E4",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b117.wav",
+  "start": 677.78,
+  "len": 5.93,
+  "text": "Si todavía ves transparencias, una cuarta. Nunca una gruesa: varias finitas."
+ },
+ {
+  "beat": "b118",
+  "scene": "E4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b118.wav",
+  "start": 683.71,
+  "len": 7.03,
+  "text": "El acabado es mate, tipo tiza. No brilla como la pintura de lata. Si buscas brillo, esto no es para ti."
+ },
+ {
+  "beat": "b119",
+  "scene": "E4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b119.wav",
+  "start": 690.74,
+  "len": 9.4,
+  "text": "Si la pared tiene grietas finas, la cal las rellena un poco. Pero una grieta que se mueve vuelve a aparecer. Esa se arregla antes de pintar."
+ },
+ {
+  "beat": "b120",
+  "scene": "E4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b120.wav",
+  "start": 700.14,
+  "len": 7.18,
+  "text": "¿Y con color? Sí, pero con pigmentos minerales, los óxidos en polvo, los que se usan para el cemento."
+ },
+ {
+  "beat": "b121",
+  "scene": "E4",
+  "type": "D",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b121.wav",
+  "start": 707.32,
+  "len": 7.31,
+  "text": "Primero en un poco de agua, y después al balde. Salen tonos suaves: arena, rosado, ocre, gris."
+ },
+ {
+  "beat": "b122",
+  "scene": "E4",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b122.wav",
+  "start": 714.63,
+  "len": 5.88,
+  "text": "Y prueba siempre en un pedazo antes. Seco, queda mucho más claro que mojado."
+ },
+ {
+  "beat": "b123",
+  "scene": "E7",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b123.wav",
+  "start": 720.51,
+  "len": 8.23,
+  "text": "Ah, y Ramiro. Volvió a pintar su barda así: mojada, temprano, en manos finas. Me mandó foto del antes y el después."
+ },
+ {
+  "beat": "b124",
+  "scene": "E7",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b124.wav",
+  "start": 728.74,
+  "len": 5.79,
+  "text": "Y esta vez, la mano limpia. Dijo que ya no le mancha la ropa a los niños cuando se recargan."
+ },
+ {
+  "beat": "b125",
+  "scene": "E7",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b125.wav",
+  "start": 734.53,
+  "len": 7.45,
+  "text": "Por cosas como esa armé la guía del canal: los arreglos con sus medidas y sus errores, para no depender de nadie."
+ },
+ {
+  "beat": "b126",
+  "scene": "E7",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b126.wav",
+  "start": 741.98,
+  "len": 7.19,
+  "text": "Si estás en el televisor, el código está en pantalla. Si estás en el teléfono, el enlace está abajo, en la descripción."
+ },
+ {
+  "beat": "b127",
+  "scene": "E7",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b127.wav",
+  "start": 749.17,
+  "len": 5.71,
+  "text": "Terminaste de pintar. Pero la cal no terminó. Ahora empieza a endurecer, y tarda."
+ },
+ {
+  "beat": "b128",
+  "scene": "E7",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b128.wav",
+  "start": 754.88,
+  "len": 7.1,
+  "text": "La cal se endurece tomando el aire. Es lento: semanas. Y para que lo haga bien, necesita un poco de humedad."
+ },
+ {
+  "beat": "b129",
+  "scene": "E7",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b129.wav",
+  "start": 761.98,
+  "len": 7.17,
+  "text": "Por eso, los dos o tres días siguientes, un rocío de agua a la mañana y otro a la tarde. Rocío, no manguera."
+ },
+ {
+  "beat": "b130",
+  "scene": "E7",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b130.wav",
+  "start": 769.15,
+  "len": 6.13,
+  "text": "Y si le va a pegar sol fuerte o viento, la tapo con una tela. Que no se seque de golpe."
+ },
+ {
+  "beat": "b131",
+  "scene": "E7",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b131.wav",
+  "start": 775.28,
+  "len": 9.53,
+  "text": "Cuando termines, lava la brocha y los baldes con agua, enseguida. Y lo que sobra con cemento no lo tires por la cañería: se endurece adentro."
+ },
+ {
+  "beat": "b132",
+  "scene": "E7",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b132.wav",
+  "start": 784.81,
+  "len": 5.8,
+  "text": "Y ahora, lo que te prometí al principio. Pero antes, te muestro la versión de adentro."
+ },
+ {
+  "beat": "b133",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b133.wav",
+  "start": 790.61,
+  "len": 7.66,
+  "text": "Para adentro, en un cuarto, yo no le pongo cemento. Uso la receta de la guía: cal sola, sal y agua."
+ },
+ {
+  "beat": "b134",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b134.wav",
+  "start": 798.27,
+  "len": 6.47,
+  "text": "Una jarra de cal por dos o tres de agua, hasta leche fina. La misma idea, sin el cemento."
+ },
+ {
+  "beat": "b135",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b135.wav",
+  "start": 804.74,
+  "len": 7.72,
+  "text": "Adentro no la lava la lluvia, y la cal sola respira mejor. Es muy buena en cuartos donde se junta humedad."
+ },
+ {
+  "beat": "b136",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b136.wav",
+  "start": 812.46,
+  "len": 7.54,
+  "text": "Adentro, pinta con la ventana abierta, y ten a los niños y a las mascotas lejos del balde mientras trabajas."
+ },
+ {
+  "beat": "b137",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b137.wav",
+  "start": 820.0,
+  "len": 7.98,
+  "text": "Además, la cal es alcalina. Al moho no le gusta nada. Por eso se usaba en cocinas, baños y establos."
+ },
+ {
+  "beat": "b138",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b138.wav",
+  "start": 827.98,
+  "len": 7.95,
+  "text": "Ahora, los límites, porque no todo es perfecto. Recién pintada, si la frotas, puede soltar un poquito de polvo."
+ },
+ {
+  "beat": "b139",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b139.wav",
+  "start": 835.93,
+  "len": 7.84,
+  "text": "Cuando cura bien, eso casi desaparece. Pero una cal mal hecha, sin mojar la pared, con los años suelta polvo al frotarla."
+ },
+ {
+  "beat": "b140",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b140.wav",
+  "start": 843.77,
+  "len": 8.94,
+  "text": "Y no es pintura lavable. Una mancha de grasa no se va con trapo y jabón: se retoca con otra mano de cal, que para eso es barata."
+ },
+ {
+  "beat": "b141",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b141.wav",
+  "start": 852.71,
+  "len": 7.48,
+  "text": "Y cuesta una fracción de una lata de pintura. Por eso, si se ensucia, no duele volver a pasarle."
+ },
+ {
+  "beat": "b142",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b142.wav",
+  "start": 860.19,
+  "len": 7.47,
+  "text": "Ah, una cosa. Hay una variante de esto que funciona todavía mejor en paredes que se mojan mucho con la lluvia."
+ },
+ {
+  "beat": "b143",
+  "scene": "I2",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b143.wav",
+  "start": 867.66,
+  "len": 3.42,
+  "text": "Te dejé exactamente cómo hacerla en la descripción."
+ },
+ {
+  "beat": "b144",
+  "scene": "E5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b144.wav",
+  "start": 871.08,
+  "len": 5.0,
+  "text": "Pasaron varios días. La pared completa, las dos mitades, curadas."
+ },
+ {
+  "beat": "b145",
+  "scene": "E5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b145.wav",
+  "start": 876.08,
+  "len": 6.88,
+  "text": "Primero, la cinta, la misma prueba que hice adentro. La aprieto, la arranco... y casi limpia."
+ },
+ {
+  "beat": "b147",
+  "scene": "E5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b147.wav",
+  "start": 882.96,
+  "len": 0.99,
+  "text": "Con gusto."
+ },
+ {
+  "beat": "b149",
+  "scene": "E5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b149.wav",
+  "start": 883.95,
+  "len": 3.84,
+  "text": "Froto la pared mojada, y nada. Ni se ablanda ni se va."
+ },
+ {
+  "beat": "b150",
+  "scene": "E5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b150.wav",
+  "start": 887.79,
+  "len": 6.33,
+  "text": "Y esto es con el chorro a presión, de cerca. La lluvia le pega mucho más suave que esto."
+ },
+ {
+  "beat": "b152",
+  "scene": "E5",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b152.wav",
+  "start": 894.12,
+  "len": 5.85,
+  "text": "Te la paso, vecino. Y ahora sí, lo que te prometí: el error del cuarto ingrediente."
+ },
+ {
+  "beat": "b153",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b153.wav",
+  "start": 899.97,
+  "len": 8.0,
+  "text": "La sal ayuda a que la cal seque más despacio y agarre mejor. Pero es un puñado por balde. Uno. No más."
+ },
+ {
+  "beat": "b154",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b154.wav",
+  "start": 907.97,
+  "len": 7.47,
+  "text": "Si te pasas de sal, la pared te la devuelve: salen estas manchas blancas, como pelusa, y la cal se suelta ahí."
+ },
+ {
+  "beat": "b155",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b155.wav",
+  "start": 915.44,
+  "len": 7.61,
+  "text": "Y siempre disuelta en agua caliente. En grano se queda en puntitos, y cada puntito es un lugar donde se va a soltar."
+ },
+ {
+  "beat": "b156",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b156.wav",
+  "start": 923.05,
+  "len": 4.45,
+  "text": "Poca sal, bien disuelta, y la pared húmeda durante el curado."
+ },
+ {
+  "beat": "b157",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b157.wav",
+  "start": 927.5,
+  "len": 4.36,
+  "text": "Eso es lo que casi nadie hace bien. Y es lo que hace que no se caiga."
+ },
+ {
+  "beat": "b158",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b158.wav",
+  "start": 931.86,
+  "len": 8.51,
+  "text": "Así que, ¿loco o genio? Ninguno de los dos. Esto es lo que hacían los abuelos, y lo olvidamos porque la lata es más cómoda."
+ },
+ {
+  "beat": "b159",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b159.wav",
+  "start": 940.37,
+  "len": 9.89,
+  "text": "Cuatro de cal, una de cemento, un puñado de sal disuelta, agua hasta leche. Pared mineral y mojada. Manos finas. Curado con rocío."
+ },
+ {
+  "beat": "b160",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b160.wav",
+  "start": 950.26,
+  "len": 5.97,
+  "text": "Si lo haces así, tienes una pared que respira, que no se descascara, y que cuesta muy poco."
+ },
+ {
+  "beat": "b161",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b161.wav",
+  "start": 956.23,
+  "len": 8.28,
+  "text": "Y si te da miedo, pruébala primero en un pedazo chico, atrás de la casa. Una semana. Si te convence, pintas todo."
+ },
+ {
+  "beat": "b162",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b162.wav",
+  "start": 964.51,
+  "len": 7.53,
+  "text": "La hoja con todo, y los demás arreglos de la casa, están en la guía del canal. El código en pantalla o el enlace abajo."
+ },
+ {
+  "beat": "b163",
+  "scene": "E8",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b163.wav",
+  "start": 972.04,
+  "len": 5.512,
+  "text": "Y cuéntame en los comentarios qué pared vas a pintar. Nos vemos en el próximo arreglo."
+ }
+]

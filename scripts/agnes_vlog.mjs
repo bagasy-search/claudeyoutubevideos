@@ -317,11 +317,11 @@ function tramo(c) { // audio rellenado a segundo entero → mp3
 }
 async function gen(id, body) {
   let vid;
-  for (let t = 0; t < 200 && !vid; t++) {
+  for (let t = 0; t < +(process.env.VLOG_TRIES || 200) && !vid; t++) {
     let j = {};
     try { j = await (await fetch(B + "/videos", { method: "POST", signal: AbortSignal.timeout(120000), headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json(); } catch (e) { j = { error: "red: " + e.message + " (queue retry)" }; }
     vid = j.video_id || j.id;
-    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(25000 + Math.random() * 10000); }
+    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(+(process.env.VLOG_RETRY_MS || 25000) + Math.random() * 10000); }
   }
   if (!vid) return log("GAVE UP", id);
   log("en cola", id);

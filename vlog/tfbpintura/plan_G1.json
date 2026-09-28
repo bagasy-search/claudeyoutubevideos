@@ -1,0 +1,318 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G1/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The place is a real, cluttered home garage-workshop in a working-class Latin American house: concrete floor with old stains and white dust, a sturdy wooden workbench with grey plastic twenty-litre buckets, a paper bag of hydrated lime and a smaller paper bag of white cement (plain paper bags), a clear plastic one-litre jug, a glass jar of coarse grey salt, a wooden stirring stick, rags, a pegboard with hanging tools on the back wall, metal shelves with old tins, a bicycle leaning on the wall. Light: the wide garage door on the left is open to a bright overcast day, plus one fluorescent tube on the ceiling; the side near the door is brighter and a little cooler, the back corners dimmer, everything correctly exposed. The presenter is a man of about 50 with black curly hair and a short salt-and-pepper beard (exactly the face of the last input image), wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with white paint and dust, a worn brown leather apron over it, and dark work trousers. He stands behind the workbench beside an empty grey bucket, holding the clear plastic one-litre jug, looking at the camera."
+  },
+  {
+   "id": "D_b005_1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a plastic jug pouring white hydrated lime powder into an empty grey plastic twenty-litre bucket on a concrete floor, a puff of white dust rising."
+  },
+  {
+   "id": "D_b005_2",
+   "from": [
+    "D_b005_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same bucket with a heap of white lime powder inside, a little dust still floating above it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the empty plastic jug above the bucket, a thin trail of white powder still falling, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b007_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a plastic jug pouring clear water into a grey bucket of white powder, the water turning milky."
+  },
+  {
+   "id": "D_b007_2",
+   "from": [
+    "D_b007_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same bucket now full of milky white liquid with small ripples on the surface."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the glass jar of coarse grey salt at face height beside his cheek, one eyebrow raised, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b009_1",
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wooden stick stirring thick milky white limewash in a grey bucket, swirls on the surface."
+  },
+  {
+   "id": "D_b009_2",
+   "from": [
+    "D_b009_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same bucket with a smooth creamy white surface, the stick lifted, white liquid dripping from it."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands behind the workbench, hands resting on both sides of the grey bucket, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the empty clear plastic jug up at shoulder height, tapping its side with a finger, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds four fingers up with his left hand, the jug in his right hand dusty with white powder, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds one finger up, the jug in the other hand dusted white, the small bag of white cement open on the bench. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stirs the mug with a spoon, steam rising, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stirs the bucket with the wooden stick, milky white liquid inside, looking down at it. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds his index finger up beside the bucket, serious look at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he rests a hand on the bucket lid, pointing with the other hand toward the wall of the garage, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b027_1",
+   "from": [
+    "K10"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of milky limewash being poured from a bucket through a piece of green mosquito mesh stretched over another bucket."
+  },
+  {
+   "id": "D_b027_2",
+   "from": [
+    "D_b027_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the second bucket full of smooth white limewash, the mesh holding a few small lumps."
+  },
+  {
+   "id": "D_b171_1",
+   "from": [
+    "K10"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a glass jar of coarse grey salt on a wooden workbench, a hand reaching for it."
+  },
+  {
+   "id": "D_b171_2",
+   "from": [
+    "D_b171_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the hand holding the jar up, the coarse salt crystals shifting inside."
+  },
+  {
+   "id": "D_b172_1",
+   "from": [
+    "K5"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of the clear plastic one-litre jug scooping white powder from an open paper bag."
+  },
+  {
+   "id": "D_b172_2",
+   "from": [
+    "D_b172_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the jug full to the brim with white powder, lifted out of the bag."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b005",
+   "a": "K0",
+   "b": "K0",
+   "detail": true,
+   "d1": "close view of a plastic jug pouring white hydrated lime powder into an empty grey plastic twenty-litre bucket on a concrete floor, a puff of white dust rising",
+   "d2": "the same bucket with a heap of white lime powder inside, a little dust still floating above it",
+   "text": "Cal hidratada.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b005.wav"
+  },
+  {
+   "id": "b006",
+   "a": "K0",
+   "b": "K1",
+   "text": "Cemento blanco, poquito.",
+   "action": "he tips a plastic jug of fine white cement powder into the bucket on the workbench, looking at the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b006.wav"
+  },
+  {
+   "id": "b007",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of a plastic jug pouring clear water into a grey bucket of white powder, the water turning milky",
+   "d2": "the same bucket now full of milky white liquid with small ripples on the surface",
+   "text": "Agua.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b007.wav"
+  },
+  {
+   "id": "b008",
+   "a": "K1",
+   "b": "K2",
+   "text": "Y un cuarto ingrediente, que casi nadie pone.",
+   "action": "he holds up a small glass jar of coarse salt next to the bucket and shakes it toward the camera with a half smile.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b008.wav"
+  },
+  {
+   "id": "b009",
+   "a": "K2",
+   "b": "K2",
+   "detail": true,
+   "d1": "close view of a wooden stick stirring thick milky white limewash in a grey bucket, swirls on the surface",
+   "d2": "the same bucket with a smooth creamy white surface, the stick lifted, white liquid dripping from it",
+   "text": "Se revuelve hasta que queda como leche.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b009.wav"
+  },
+  {
+   "id": "b019",
+   "a": "K2",
+   "b": "K3",
+   "text": "Te doy la receta completa ya, con las medidas, y después te muestro cada paso de cerca.",
+   "action": "he puts the salt jar down on the workbench and spreads his hands over the bucket, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b019.wav"
+  },
+  {
+   "id": "b020",
+   "a": "K3",
+   "b": "K4",
+   "text": "Todo se mide con el mismo recipiente. Yo uso esta jarra. No en kilos: en jarras.",
+   "action": "he holds up an empty plastic one-litre jug and taps it.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b020.wav"
+  },
+  {
+   "id": "b021",
+   "a": "K4",
+   "b": "K5",
+   "text": "Cuatro jarras de cal hidratada.",
+   "action": "he scoops lime powder with the jug from the open paper bag four times into the bucket, counting on his fingers.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b021.wav"
+  },
+  {
+   "id": "b022",
+   "a": "K5",
+   "b": "K6",
+   "text": "Una jarra de cemento blanco. Cuatro a uno.",
+   "action": "he scoops one jug of white cement from a smaller bag and shows one finger.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b022.wav"
+  },
+  {
+   "id": "b023",
+   "a": "K6",
+   "b": "K7",
+   "text": "Un puñado de sal gruesa, disuelta antes en un poco de agua caliente.",
+   "action": "he tips a handful of coarse salt from the jar into a mug of steaming hot water and stirs it with a spoon.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b023.wav"
+  },
+  {
+   "id": "b024",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y agua, más o menos el doble que de polvo, hasta que quede como leche. Leche, no yogur.",
+   "action": "he pours water from a large plastic jug into the bucket while stirring with a wooden stick.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b024.wav"
+  },
+  {
+   "id": "b026",
+   "a": "K9",
+   "b": "K10",
+   "text": "La cal la dejo remojando desde la noche anterior. El cemento y la sal van el día que pinto.",
+   "action": "he taps the bucket lid and points at a calendar hanging on the wall, talking.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b026.wav"
+  },
+  {
+   "id": "b027",
+   "a": "K10",
+   "b": "K10",
+   "detail": true,
+   "d1": "close view of milky limewash being poured from a bucket through a piece of green mosquito mesh stretched over another bucket",
+   "d2": "the second bucket full of smooth white limewash, the mesh holding a few small lumps",
+   "text": "Se cuela, para que no queden grumos.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b027.wav"
+  },
+  {
+   "id": "b171",
+   "a": "K10",
+   "b": "K10",
+   "detail": true,
+   "insert": "b018",
+   "secs": 4,
+   "d1": "close view of a glass jar of coarse grey salt on a wooden workbench, a hand reaching for it",
+   "d2": "the hand holding the jar up, the coarse salt crystals shifting inside",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b172",
+   "a": "K5",
+   "b": "K5",
+   "detail": true,
+   "insert": "b021",
+   "secs": 4,
+   "d1": "close view of the clear plastic one-litre jug scooping white powder from an open paper bag",
+   "d2": "the jug full to the brim with white powder, lifted out of the bag",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G1/vlog_G1.mp4"
+}

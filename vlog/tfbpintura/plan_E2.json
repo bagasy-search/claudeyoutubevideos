@@ -1,0 +1,124 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E2/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, earlier the same day. The neighbour is not there. He stands in front of the old grey right half of the wall holding a wide white-bristle brush, a grey bucket of milky white limewash at his feet, the hose coiled on the floor. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: a long fresh stroke of pale translucent white on the grey old wall, the wet brush resting against the wall, he looks at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b011_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wide brush laying limewash on bare grey cement plaster, the paint looking thin and see-through as it goes on."
+  },
+  {
+   "id": "D_b011_2",
+   "from": [
+    "D_b011_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same patch of wall covered with an even thin milky coat, the brush lifting away at the edge of the frame."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the wall is darker grey and damp where he sprayed, he holds the pump sprayer lowered, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up three fingers of his left hand, the brush in his right hand, a few thin white strokes on the grey wall behind him. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: a fine mist settles on the painted wall, he lowers the sprayer and nods at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up two fingers, looking at the camera with a friendly serious face. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b010",
+   "a": "K0",
+   "b": "K1",
+   "text": "Y con una brocha ancha, sobre el repello, manos finitas.",
+   "action": "he dips a wide white-bristle brush into a bucket of limewash and paints a long stroke on the old grey wall, talking.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b010.wav"
+  },
+  {
+   "id": "b011",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of a wide brush laying limewash on bare grey cement plaster, the paint looking thin and see-through as it goes on",
+   "d2": "the same patch of wall covered with an even thin milky coat, the brush lifting away at the edge of the frame",
+   "text": "La primera mano parece que no tapa nada.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b011.wav"
+  },
+  {
+   "id": "b028",
+   "a": "K1",
+   "b": "K2",
+   "text": "La pared limpia, sin pintura plástica, y mojada antes de pintar.",
+   "action": "he sprays the old grey wall with a garden pump sprayer, the plaster darkening where it gets wet.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b028.wav"
+  },
+  {
+   "id": "b029",
+   "a": "K2",
+   "b": "K3",
+   "text": "Tres o cuatro manos finas, dejando secar entre una y otra.",
+   "action": "he paints another thin stroke with the wide brush, then holds up three fingers.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b029.wav"
+  },
+  {
+   "id": "b030",
+   "a": "K3",
+   "b": "K4",
+   "text": "Y los días siguientes, un rocío de agua para que cure despacio. Eso es todo.",
+   "action": "he mists the painted wall lightly with the pump sprayer and nods to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b030.wav"
+  },
+  {
+   "id": "b031",
+   "a": "K4",
+   "b": "K5",
+   "text": "Ahora sí, vamos con las preguntas que más me hicieron, porque ahí es donde la gente la arruina.",
+   "action": "he puts the sprayer down and talks to the camera, counting the questions on his fingers.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b031.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E2/vlog_E2.mp4"
+}

@@ -1,0 +1,286 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E8/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "W"
+   ],
+   "prompt": "Same place, same framing, several days later. The whole long wall is evenly matte chalky white and wet, water drops running down. He stands in front of it holding a small glass jar of coarse salt. At the far left of the patio there is an old low garden wall with a white fluffy salt stain near the ground. Behind the low red brick wall on the right the neighbour leans with a coffee mug. The neighbour is exactly the man of the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the jar of coarse salt at face height, a serious face at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points at a white fluffy salt stain on an old wall near the ground, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the salt jar sits on the low brick wall, he looks at the camera with his arms crossed, calm. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the pump sprayer lowered, looking at the camera, calm. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: a light mist floats in front of the white wall, he looks at the camera with a small nod. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands in front of the fully white wall with his arms open, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up four fingers, looking at the camera, serious and friendly. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the bucket and brush, pointing the brush toward the camera with a smile. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points toward the back corner of the house with his brush, a friendly look at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands relaxed with one hand on his apron, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he waves goodbye at the camera with a warm smile, the neighbor behind the low wall raising his mug. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a heavy-set man of about 65, bald on top with grey hair on the sides, a thick grey moustache, a light blue checked short-sleeve shirt with a pen in the breast pocket, reading glasses hanging on a cord around his neck. The neighbour stays on his own side of the property line: behind the chest-high red brick wall on the right, only his chest, arms and head showing above the bricks; he does not step over to this side and does not come closer to the camera."
+  },
+  {
+   "id": "D_b188_1",
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a white fluffy salt bloom stain on the bottom of an old plastered wall near the ground."
+  },
+  {
+   "id": "D_b188_2",
+   "from": [
+    "D_b188_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: a finger touching the fluffy white stain, some of it crumbling off."
+  },
+  {
+   "id": "D_b189_1",
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of coarse salt being stirred into a steaming mug of hot water with a spoon."
+  },
+  {
+   "id": "D_b189_2",
+   "from": [
+    "D_b189_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the water clear, the salt fully dissolved."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b153",
+   "a": "K0",
+   "b": "K1",
+   "text": "La sal ayuda a que la cal seque más despacio y agarre mejor. Pero es un puñado por balde. Uno. No más.",
+   "action": "he holds up the glass jar of coarse salt to the camera, serious. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b153.wav"
+  },
+  {
+   "id": "b154",
+   "a": "K1",
+   "b": "K2",
+   "text": "Si te pasas de sal, la pared te la devuelve: salen estas manchas blancas, como pelusa, y la cal se suelta ahí.",
+   "action": "he points at a white powdery bloom stain on an old wall in the corner of the patio. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b154.wav"
+  },
+  {
+   "id": "b155",
+   "a": "K2",
+   "b": "K3",
+   "text": "Y siempre disuelta en agua caliente. En grano se queda en puntitos, y cada puntito es un lugar donde se va a soltar.",
+   "action": "he shakes the salt jar and then puts it down on the low wall. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b155.wav"
+  },
+  {
+   "id": "b156",
+   "a": "K3",
+   "b": "K4",
+   "text": "Poca sal, bien disuelta, y la pared húmeda durante el curado.",
+   "action": "he holds the pump sprayer and talks to the camera, calm. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b156.wav"
+  },
+  {
+   "id": "b157",
+   "a": "K4",
+   "b": "K5",
+   "text": "Eso es lo que casi nadie hace bien. Y es lo que hace que no se caiga.",
+   "action": "he mists the white wall with the sprayer one more time. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b157.wav"
+  },
+  {
+   "id": "b158",
+   "a": "K5",
+   "b": "K6",
+   "text": "Así que, ¿loco o genio? Ninguno de los dos. Esto es lo que hacían los abuelos, y lo olvidamos porque la lata es más cómoda.",
+   "action": "he stands at the line where the old wall used to be, gesturing to the whole white wall. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b158.wav"
+  },
+  {
+   "id": "b159",
+   "a": "K6",
+   "b": "K7",
+   "text": "Cuatro de cal, una de cemento, un puñado de sal disuelta, agua hasta leche. Pared mineral y mojada. Manos finas. Curado con rocío.",
+   "action": "he counts on his fingers the key rules while talking. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b159.wav"
+  },
+  {
+   "id": "b160",
+   "a": "K7",
+   "b": "K8",
+   "text": "Si lo haces así, tienes una pared que respira, que no se descascara, y que cuesta muy poco.",
+   "action": "he picks up the bucket and brush and points at the camera. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b160.wav"
+  },
+  {
+   "id": "b161",
+   "a": "K8",
+   "b": "K9",
+   "text": "Y si te da miedo, pruébala primero en un pedazo chico, atrás de la casa. Una semana. Si te convence, pintas todo.",
+   "action": "he gestures toward the back corner of the house, suggesting a small test. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b161.wav"
+  },
+  {
+   "id": "b162",
+   "a": "K9",
+   "b": "K10",
+   "text": "La hoja con todo, y los demás arreglos de la casa, están en la guía del canal. El código en pantalla o el enlace abajo.",
+   "action": "he puts the bucket down and talks to the camera, relaxed. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b162.wav"
+  },
+  {
+   "id": "b163",
+   "a": "K10",
+   "b": "K11",
+   "text": "Y cuéntame en los comentarios qué pared vas a pintar. Nos vemos en el próximo arreglo.",
+   "action": "he nods to the neighbor behind the low wall and back to the camera, warm. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b163.wav"
+  },
+  {
+   "id": "b188",
+   "a": "K2",
+   "b": "K2",
+   "detail": true,
+   "insert": "b154",
+   "secs": 4,
+   "d1": "close view of a white fluffy salt bloom stain on the bottom of an old plastered wall near the ground",
+   "d2": "a finger touching the fluffy white stain, some of it crumbling off",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b189",
+   "a": "K3",
+   "b": "K3",
+   "detail": true,
+   "insert": "b155",
+   "secs": 4,
+   "d1": "close view of coarse salt being stirred into a steaming mug of hot water with a spoon",
+   "d2": "the water clear, the salt fully dissolved",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E8/vlog_E8.mp4"
+}

@@ -1,0 +1,226 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E7/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, days earlier. The neighbour is not there. Both halves of the long wall are now matte chalky white, the right half freshly painted and slightly damp. He stands in front of it holding a garden pump sprayer; an old sheet hangs from the eaves shading part of the wall. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he leans the scrap board against the wall and looks at the camera with a warm smile. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds his clean palm up to the camera, smiling, the white wall behind him. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the rag, relaxed, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points down toward the bottom of the frame with his hand, friendly look at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: a fine mist floats in front of the white wall, he holds the sprayer, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: his knuckles rest on the white wall, he looks at the camera explaining. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up three fingers with the sprayer in the other hand, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he points at an old sheet hung from the eaves shading part of the wall, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he lifts the clean brush out of the milky water, looking at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K9"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he puts the sprayer down at his feet, standing beside the white wall, satisfied look at the camera. He is still wearing the faded olive-green work shirt with the sleeves rolled up and the worn brown leather apron tied over it, exactly as in the first image."
+  },
+  {
+   "id": "D_b184_1",
+   "from": [
+    "K7"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a pump sprayer misting a finished chalky white wall, fine droplets floating in the air."
+  },
+  {
+   "id": "D_b184_2",
+   "from": [
+    "D_b184_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the white wall with a faint damp sheen, the mist settling."
+  },
+  {
+   "id": "D_b185_1",
+   "from": [
+    "K9"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wide brush being rinsed in a bucket of clean water, the water turning milky white."
+  },
+  {
+   "id": "D_b185_2",
+   "from": [
+    "D_b185_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the clean brush lifted out of the milky water, dripping."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b123",
+   "a": "K0",
+   "b": "K1",
+   "text": "Ah, y Ramiro. Volvió a pintar su barda así: mojada, temprano, en manos finas. Me mandó foto del antes y el después.",
+   "action": "he puts the scrap board down and talks to the camera, remembering the story.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b123.wav"
+  },
+  {
+   "id": "b124",
+   "a": "K1",
+   "b": "K2",
+   "text": "Y esta vez, la mano limpia. Dijo que ya no le mancha la ropa a los niños cuando se recargan.",
+   "action": "he rubs the white wall and shows the clean palm, smiling.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b124.wav"
+  },
+  {
+   "id": "b125",
+   "a": "K2",
+   "b": "K3",
+   "text": "Por cosas como esa armé la guía del canal: los arreglos con sus medidas y sus errores, para no depender de nadie.",
+   "action": "he wipes his hands on a rag and talks casually to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b125.wav"
+  },
+  {
+   "id": "b126",
+   "a": "K3",
+   "b": "K4",
+   "text": "Si estás en el televisor, el código está en pantalla. Si estás en el teléfono, el enlace está abajo, en la descripción.",
+   "action": "he gestures down toward the bottom of the frame with his hand.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b126.wav"
+  },
+  {
+   "id": "b127",
+   "a": "K4",
+   "b": "K5",
+   "text": "Terminaste de pintar. Pero la cal no terminó. Ahora empieza a endurecer, y tarda.",
+   "action": "he mists the finished white wall with the pump sprayer, a fine mist floating.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b127.wav"
+  },
+  {
+   "id": "b128",
+   "a": "K5",
+   "b": "K6",
+   "text": "La cal se endurece tomando el aire. Es lento: semanas. Y para que lo haga bien, necesita un poco de humedad.",
+   "action": "he taps the wall with his knuckles and explains, calm.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b128.wav"
+  },
+  {
+   "id": "b129",
+   "a": "K6",
+   "b": "K7",
+   "text": "Por eso, los dos o tres días siguientes, un rocío de agua a la mañana y otro a la tarde. Rocío, no manguera.",
+   "action": "he holds up three fingers and then sprays once more.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b129.wav"
+  },
+  {
+   "id": "b130",
+   "a": "K7",
+   "b": "K8",
+   "text": "Y si le va a pegar sol fuerte o viento, la tapo con una tela. Que no se seque de golpe.",
+   "action": "he points to a piece of old cloth hanging to shade the wall.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b130.wav"
+  },
+  {
+   "id": "b131",
+   "a": "K8",
+   "b": "K9",
+   "text": "Cuando termines, lava la brocha y los baldes con agua, enseguida. Y lo que sobra con cemento no lo tires por la cañería: se endurece adentro.",
+   "action": "he washes the wide brush in a bucket of clean water, the water turning milky.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b131.wav"
+  },
+  {
+   "id": "b132",
+   "a": "K9",
+   "b": "K10",
+   "text": "Y ahora, lo que te prometí al principio. Pero antes, te muestro la versión de adentro.",
+   "action": "he pats the wall and puts the sprayer down, satisfied.",
+   "audio": "D:/Proyectos/video2-wt/tfbpintura/out/tfbpintura/tramos/b132.wav"
+  },
+  {
+   "id": "b184",
+   "a": "K7",
+   "b": "K7",
+   "detail": true,
+   "insert": "b129",
+   "secs": 4,
+   "d1": "close view of a pump sprayer misting a finished chalky white wall, fine droplets floating in the air",
+   "d2": "the white wall with a faint damp sheen, the mist settling",
+   "text": "",
+   "action": "INSERT"
+  },
+  {
+   "id": "b185",
+   "a": "K9",
+   "b": "K9",
+   "detail": true,
+   "insert": "b131",
+   "secs": 4,
+   "d1": "close view of a wide brush being rinsed in a bucket of clean water, the water turning milky white",
+   "d2": "the clean brush lifted out of the milky water, dripping",
+   "text": "",
+   "action": "INSERT"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E7/vlog_E7.mp4"
+}
