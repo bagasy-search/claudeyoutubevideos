@@ -23,13 +23,13 @@ shots.forEach((s, i) => {
   if (s.kind === "av") {
     const w = avwin.find((w) => s.start >= w.s - 0.06 && s.end <= w.e + 0.06);
     if (!w) warn.push(`av sin ventana @${s.start}`);
-    c.src = AV_READY ? "avatar_clips/lorpies/reel30.mp4" : null; c.sf = w ? F(s.start - w.ms + w.off) : 0;
+    c.src = AV_READY ? "avatar_clips/lorpies/reel30.mp4" : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0;
   } else if (s.kind === "vl") {
     const p = `vid/lorpies/${s.name}.mp4`;
     if (ex(p)) { c.src = p; c.sf = Math.max(0, F(s.start - CLIP0[s.name])); }
     else { // repuesto: el avatar cubre el tramo (el reel incluye las ventanas de los clips)
       const w = avwin.find((w) => s.start >= w.s - 0.06 && s.end <= w.e + 0.06);
-      c.k = "av"; c.src = AV_READY ? "avatar_clips/lorpies/reel30.mp4" : null; c.sf = w ? F(s.start - w.ms + w.off) : 0; c.fallback = s.name;
+      c.k = "av"; c.src = AV_READY ? "avatar_clips/lorpies/reel30.mp4" : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0; c.fallback = s.name;
     }
   } else if (s.kind === "kf") {
     const p = `vid/lorpies/${s.name}.mp4`;
