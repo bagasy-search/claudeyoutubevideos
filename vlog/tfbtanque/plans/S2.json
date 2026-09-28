@@ -1,6 +1,7 @@
 {
  "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S2/",
- "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face_hd.png",
+ "face_anc": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
  "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K0.png",
  "extra": {
   "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",

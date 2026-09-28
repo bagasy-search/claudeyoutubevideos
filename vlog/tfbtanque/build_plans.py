@@ -121,7 +121,8 @@ for s in segs:
             secs = min(12, max(4, math.ceil(len(t['text']) / 12 + 1.5)))
             clips.append({'id': t['id'], 'a': A1, 'b': A2, 'secs': secs, 'line': t['text'], 'text': t['text'], 'who': WHO, 'voice': VOICE, 'refs': ['V'],
                           'action': act + '. The presenter, if visible, listens in silence.'})
-    plan = {'dir': d, 'face': FACE, 'face_anc': FACE_ANC, 'k0_from': k0, 'extra': {'V': VFACE, 'LAM': R + 'public/img/tfbtanque/lamina_0.png'}, 'light': LIGHT, 'look': LOOK, 'prev_box': '384x216', 'lang': 'es',
+    look = LOOK + (" The garage door is wide open and plenty of grey daylight comes in, plus the ceiling tube is on: the workshop is well lit and his face is clearly lit." if SET_OF[sc] == 'K2' else '')
+    plan = {'dir': d, 'face': FACE, 'face_anc': FACE_ANC, 'k0_from': k0, 'extra': {'V': VFACE, 'LAM': R + 'public/img/tfbtanque/lamina_0.png'}, 'light': LIGHT, 'look': look, 'prev_box': '384x216', 'lang': 'es',
             'anchors': anchors, 'clips': clips, 'out': d + f'vlog_{name}.mp4'}
     json.dump(plan, open(PL + name + '.json', 'w', encoding='utf8'), ensure_ascii=False, indent=1)
     order.append({'seg': name, 'type': 'scene', 'plan': PL + name + '.json', 'out': d + f'vlog_{name}.mp4'})

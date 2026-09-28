@@ -1,13 +1,14 @@
 {
  "dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S6/",
- "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
+ "face": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face_hd.png",
+ "face_anc": "D:/Proyectos/video2-wt/tfbtanque/public/ref_tfbtanque_face.png",
  "k0_from": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/SETS/anc/K2.png",
  "extra": {
   "V": "D:/Proyectos/video2-wt/tfbtanque/public/ref_vecino_face.png",
   "LAM": "D:/Proyectos/video2-wt/tfbtanque/public/img/tfbtanque/lamina_0.png"
  },
  "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
- "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music. The garage door is wide open and plenty of grey daylight comes in, plus the ceiling tube is on: the workshop is well lit and his face is clearly lit.",
  "prev_box": "384x216",
  "lang": "es",
  "anchors": [

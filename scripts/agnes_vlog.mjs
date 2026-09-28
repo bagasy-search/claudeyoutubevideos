@@ -480,15 +480,20 @@ if (fase === "check") {
         fd.append("file", new Blob([fs.readFileSync(wav)], { type: "audio/wav" }), "a.wav");
         let txt = "(timeout)";
         for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
+        // ⛔ si OpenAI contesta un ERROR (cuota agotada, 401…) eso NO es una transcripción: sin ASR, las palabras no se
+        //    puntúan y manda la compuerta de LABIOS (correlación con el tramo) + visión; h.noasr permite re-medir después.
+        if (/^\s*\{/.test(txt) && /"error"/.test(txt)) { log("whisper ERROR (sin ASR, mando labios):", txt.replace(/\s+/g, " ").slice(0, 90)); txt = ""; h.noasr = true; }
         const esperadoTxt = c.text || c.line || "";
         const NUM = /^(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien)$/;
-        const wa = norm(esperadoTxt).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));
+        const wa = h.noasr ? [] : norm(esperadoTxt).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));
         const a = new Set(wa), extra = b.filter(w => !a.has(w)), faltan = [...a].filter(w => !b.includes(w));
         const rep = b.length - wa.length;
         const mid = WORK + c.id + "_mid.jpg"; ff("-ss", (win / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=768:-2", mid);
         const v = await vision(mid, P.face);
         const vis = !v ? " · visión: sin respuesta" : ` · cara ${v.same_person ? "✓" : "⛔ NO ES"} (${v.confidence}) · luz ${v.bright ? "✓" : "⛔ oscura"}${v.issues && !/^none/i.test(v.issues) ? " · " + v.issues : ""}`;
-        const malVis = v && (!v.same_person || !v.bright);
+        // luz: la visión da falsos "oscuro" en interiores bien expuestos → sólo cuenta si la luma real también es baja (<55)
+        const yav = +(ffo("-ss", (win / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=160:90,format=gray", "-f", "rawvideo", "-").reduce((a, x) => a + x, 0) / 14400).toFixed(1);
+        const malVis = v && (!v.same_person || (!v.bright && yav < 55));
         const lb = c.audio && !c.own ? labios(f, c.audio, win) : null; h.labios = lb;
         const malLab = lb && !lb.ok;
         h.score = extra.length + faltan.length + Math.max(0, rep) + (malVis ? 50 : 0) + (malLab ? 50 : 0) + (txt === "(timeout)" ? 100 : 0);
