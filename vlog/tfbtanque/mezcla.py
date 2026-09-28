@@ -24,7 +24,7 @@ def put(x, t, g):
 # 1) foley de los detalles (lo que suena de verdad en la acción), bajo la voz; con fundidos de 60 ms
 nf = 0
 for c in G['clips']:
-    if not c.get('detail') or c.get('own'): continue
+    if not c.get('detail') or c.get('mode') == 'own': continue
     f = c['dir'] + c['file']; x = dec(f, 0, c['vdur'] * (c.get('slow') or 1))
     if not len(x) or rms(x) < 1e-4: continue
     if c.get('slow'):  # el video va en cámara lenta: estirar el foley igual (sin cambiar tono no importa: es ruido de acción)

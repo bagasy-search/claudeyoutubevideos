@@ -18,7 +18,11 @@ def load(f):
     return x
 vparts, apar, clips, words, segs = [], [], [], [], []
 F0 = 0
+PARCIAL = os.environ.get('PARCIAL') == '1'   # prueba: escenas sin armar van como hueco negro con su voz
 for o in order:
+    if o['type'] == 'scene' and PARCIAL and not os.path.exists(o['out']):
+        P = json.load(open(o['plan'], encoding='utf8'))
+        o = {'seg': o['seg'], 'type': 'hueco', 'tramos': [{'id': c['id'], 'audio': c['audio'], 'len': T[c['id']]['len']} for c in P['clips'] if c.get('audio')]}
     if o['type'] == 'scene':
         mp4 = o['out']; tl = json.load(open(os.path.dirname(mp4) + '/timeline_' + os.path.basename(mp4).replace('.mp4', '.json'), encoding='utf8'))
         nf = nframes(mp4); v = TMP + o['seg'] + '_v.mp4'; run('ffmpeg', '-v', 'error', '-y', '-i', mp4, '-an', '-c:v', 'copy', v)
@@ -27,7 +31,7 @@ for o in order:
             g = {**c, 'seg': o['seg'], 'gstart': F0 / FPS + c['start'], 'gvstart': F0 / FPS + c['vstart'], 'dir': os.path.dirname(mp4) + '/clips/'}
             clips.append(g)
             t = T.get(c['id'])
-            if t and 'a' in t and not c.get('own'):
+            if t and 'a' in t and c.get('mode') != 'own':
                 for w in caps:
                     ws = w['startMs'] / 1000
                     if t['a'] - 0.02 <= ws < t['b']: words.append({'w': w['text'].strip(), 't': round(g['gstart'] + ws - t['a'], 3), 'e': round(g['gstart'] + w['endMs'] / 1000 - t['a'], 3), 'id': c['id']})
@@ -36,7 +40,7 @@ for o in order:
     else:  # lámina: audio de sus tramos, video negro
         a = np.concatenate([load(t['audio']) for t in o['tramos']]); nf = int(round(len(a) / SR * FPS))
         a = np.pad(a, (0, max(0, int(nf / FPS * SR) - len(a))))[:int(nf / FPS * SR)]
-        v = TMP + 'LAMINA_v.mp4'
+        v = TMP + o['seg'] + '_v.mp4'
         run('ffmpeg', '-v', 'error', '-y', '-f', 'lavfi', '-i', f'color=c=0x1a1410:s=1920x1080:r=30', '-frames:v', str(nf), '-c:v', 'libx264', '-crf', '18', '-preset', 'veryfast', '-pix_fmt', 'yuv420p', v)
         acc = 0.0
         for t in o['tramos']:
@@ -46,9 +50,12 @@ for o in order:
             acc += t['len']
     a = np.pad(a, (0, max(0, int(round(nf / FPS * SR)) - len(a))))[:int(round(nf / FPS * SR))]
     segs.append({'seg': o['seg'], 'type': o['type'], 'f0': F0, 'nf': nf}); vparts.append(v); apar.append(a); F0 += nf
-open(TMP + 'list.txt', 'w').write(''.join(f"file '{p}'\n" for p in vparts))
 OUTV = R + 'public/tfbtanque_vlog.mp4'
-run('ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', TMP + 'list.txt', '-an', '-vf', 'setpts=N/(30*TB)', '-r', '30', '-fps_mode', 'cfr', '-c:v', 'libx264', '-crf', '20', '-preset', 'veryfast',
+# concat por FILTRO (el demuxer concat perdía ~5 % de cuadros al mezclar fuentes de encoders distintos)
+ins = sum([['-i', p] for p in vparts], [])
+graph = ''.join(f'[{i}:v]setpts=PTS-STARTPTS,fps=30[v{i}];' for i in range(len(vparts))) + ''.join(f'[v{i}]' for i in range(len(vparts))) + f'concat=n={len(vparts)}:v=1:a=0[out]'
+open(TMP + 'graph.txt', 'w').write(graph)
+run('ffmpeg', '-v', 'error', '-y', *ins, '-/filter_complex', TMP + 'graph.txt', '-map', '[out]', '-an', '-r', '30', '-fps_mode', 'cfr', '-c:v', 'libx264', '-crf', '20', '-preset', 'veryfast',
     '-pix_fmt', 'yuv420p', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-color_range', 'tv', '-g', '30', OUTV)
 voz = np.concatenate(apar); sf.write(R + 'out/tfbtanque/voz_global.wav', voz, SR, subtype='PCM_16')
 nf = nframes(OUTV)

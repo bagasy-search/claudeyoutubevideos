@@ -314,23 +314,53 @@ function tramo(c) { // audio rellenado a segundo entero → mp3
   const mp3 = CL + c.id + "_tramo.mp3"; ff("-i", c.audio, "-af", `apad=whole_dur=${T}`, "-t", String(T), "-ac", "1", "-ar", "44100", "-b:a", "160k", mp3);
   return { T, mp3 };
 }
-async function gen(id, body) {
-  let vid;
-  for (let t = 0; t < 200 && !vid; t++) {
-    const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
-    vid = j.video_id || j.id;
-    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(25000 + Math.random() * 10000); }
+// ── cola cortés (27-sep: se agotó el cupo gratis de TODA la cuenta y 60 procesos martillaban el límite) ──
+// · SLOTS: como mucho VLOG_MAX (default 1) clips EN VUELO por máquina entre todos los procesos, vía archivos-candado en
+//   VLOG_SLOTS_DIR (default D:/rtmp/agnes_slots). Un candado de más de 50 min se considera muerto y se recicla.
+// · "free users"/rate limit → espera VLOG_RATE_WAIT s (default 600) antes de reintentar; queue_full → 30 s.
+// · PENDIENTES: cada video_id aceptado se guarda en clips/_pend.json; si el proceso muere, `clips` lo RETOMA (sólo sondea)
+//   en vez de volver a gastar cupo.
+const SLOTS = (process.env.VLOG_SLOTS_DIR || env.VLOG_SLOTS_DIR || "D:/rtmp/agnes_slots").split("\\").join("/"), VMAX = +(process.env.VLOG_MAX || env.VLOG_MAX || 1);
+const RWAIT = +(process.env.VLOG_RATE_WAIT || 600) * 1000;
+fs.mkdirSync(SLOTS, { recursive: true });
+async function slotGet(id) {
+  for (;;) {
+    const now = Date.now();
+    for (const f of fs.readdirSync(SLOTS)) { try { if (now - fs.statSync(SLOTS + "/" + f).mtimeMs > 50 * 60e3) fs.unlinkSync(SLOTS + "/" + f); } catch {} }
+    for (let i = 0; i < VMAX; i++) { const f = `${SLOTS}/slot${i}`; try { fs.writeFileSync(f, `${process.pid} ${id}`, { flag: "wx" }); return f; } catch {} }
+    await sleep(20000 + Math.random() * 10000);
   }
-  if (!vid) return log("GAVE UP", id);
-  log("en cola", id);
+}
+const slotTouch = f => { try { const t = new Date(); fs.utimesSync(f, t, t); } catch {} };
+const slotFree = f => { try { if (fs.readFileSync(f, "utf8").startsWith(String(process.pid))) fs.unlinkSync(f); } catch {} };
+const PENDF = () => CL + "_pend.json";
+const pendSet = (id, v) => { const p = J(PENDF()); if (v) p[id] = v; else delete p[id]; fs.writeFileSync(PENDF(), JSON.stringify(p, null, 1)); };
+async function poll(id, vid, slot) {
   const t0 = Date.now();
-  while (Date.now() - t0 < 40 * 60e3) {
-    await sleep(15000);
+  while (Date.now() - t0 < 60 * 60e3) {
+    await sleep(20000); if (slot) slotTouch(slot);
     const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + key() } })).json().catch(() => ({}));
-    if (g.status === "completed" && g.url) { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
-    if (/fail|error|cancel/i.test(g.status || "")) return log("FAIL", id, JSON.stringify(g).slice(0, 200));
+    if (g.status === "completed" && g.url) { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); pendSet(id, null); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
+    if (/fail|error|cancel/i.test(g.status || "")) { pendSet(id, null); return log("FAIL", id, JSON.stringify(g).slice(0, 200)); }
   }
   log("TIMEOUT", id);
+}
+async function gen(id, body, meta = {}) {
+  const slot = await slotGet(id);
+  try {
+    let vid;
+    for (let t = 0; t < 400 && !vid; t++) {
+      slotTouch(slot);
+      const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
+      vid = j.video_id || j.id;
+      if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; }
+        const lim = /free users|rate_limit|rate limit/i.test(m); if (lim && t % 3 === 0) log("límite de cuenta, espero", RWAIT / 1000, "s ·", id);
+        await sleep(lim ? RWAIT : 30000 + Math.random() * 10000); }
+    }
+    if (!vid) return log("GAVE UP", id);
+    pendSet(id, { vid, ...meta }); log("en cola", id);
+    await poll(id, vid, slot);
+  } finally { slotFree(slot); }
 }
 const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSync(CL + "state.json", "utf8")) : {};
 function J(f) { return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {}; }
@@ -341,7 +371,12 @@ const min256 = f => { const [w, h] = wh(f); if (Math.min(w, h) >= 256) return f;
 const MUTE = ` When the reference audio ends ${PRON} stops talking and keeps the mouth closed.`;            // anti-balbuceo del relleno
 const MUTE_LINE = " After saying that line they stop talking and keep the mouth closed.";
 if (fase === "clips") {
-  const sel = P.clips.filter(c => !soloIds.length || soloIds.includes(c.id));
+  // primero RETOMAR lo que ya aceptó agnes en una corrida anterior (sólo sondeo, no gasta cupo)
+  const pend = J(PENDF()), yaEnVuelo = new Set(Object.values(pend).map(v => v.cid));
+  await Promise.all(Object.entries(pend).map(async ([out, v]) => { log("retomo", out); await poll(out, v.vid, null);
+    if (fs.existsSync(CL + out + ".mp4")) { const SF = CL + (v.detail ? "state_det.json" : "state.json"), s = J(SF); if (!s[v.cid] || soloIds.length) { s[v.cid] = { file: out + ".mp4", T: v.T, own: v.own }; fs.writeFileSync(SF, JSON.stringify(s, null, 1)); } } }));
+  const hechos = { ...J(CL + "state.json"), ...J(CL + "state_det.json") };
+  const sel = P.clips.filter(c => (!soloIds.length || soloIds.includes(c.id)) && !yaEnVuelo.has(c.id) && (soloIds.length || !hechos[c.id]));
   await Promise.all(sel.map((c, i) => sleep(i * 3000).then(async () => {
     const out = soloIds.length ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
     // ⛔ agnes rechaza lados <256 px ("input image side length must be between 256 and 5760"): la cara de gpt-image-2
@@ -362,7 +397,7 @@ if (fase === "clips") {
       body = { mode: "reference", seconds: String(T), images: imgs,
         prompt: SE + `The person speaking is ${c.who || "the other person (last reference image is their face)"}, ${c.voice}, lips perfectly synced, saying exactly: "${c.line}" Nobody else speaks. ` + c.action + LOOK + MUTE_LINE };
     }
-    await gen(out, body);
+    await gen(out, body, { cid: c.id, T, own: !c.audio, detail: !!c.detail });
     if (fs.existsSync(CL + out + ".mp4")) { const SF = CL + (c.detail ? "state_det.json" : "state.json"), s = J(SF); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(SF, JSON.stringify(s, null, 1)); }
   })));
   log("clips listos → corré `check`");
@@ -493,7 +528,7 @@ if (fase === "check") {
         const vis = !v ? " · visión: sin respuesta" : ` · cara ${v.same_person ? "✓" : "⛔ NO ES"} (${v.confidence}) · luz ${v.bright ? "✓" : "⛔ oscura"}${v.issues && !/^none/i.test(v.issues) ? " · " + v.issues : ""}`;
         // luz: la visión da falsos "oscuro" en interiores bien expuestos → sólo cuenta si la luma real también es baja (<55)
         const yav = +(ffo("-ss", (win / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=160:90,format=gray", "-f", "rawvideo", "-").reduce((a, x) => a + x, 0) / 14400).toFixed(1);
-        const malVis = v && (!v.same_person || (!v.bright && yav < 55));
+        const malVis = v && (!v.same_person || (!v.bright && yav < 45));
         const lb = c.audio && !c.own ? labios(f, c.audio, win) : null; h.labios = lb;
         const malLab = lb && !lb.ok;
         h.score = extra.length + faltan.length + Math.max(0, rep) + (malVis ? 50 : 0) + (malLab ? 50 : 0) + (txt === "(timeout)" ? 100 : 0);

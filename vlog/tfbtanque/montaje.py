@@ -1,7 +1,7 @@
 # MONTAJE — la capa de motion graphics y la cámara virtual, anclada al ms por PALABRA (global.json), más la lista de SFX
 # para la mezcla. Un momento "wow" por minuto. Salidas: src/tfbtanque/timeline.gen.ts + vlog/tfbtanque/sfx.json
 # uso: python vlog/tfbtanque/montaje.py
-import json, re, unicodedata, math
+import json, re, unicodedata, math, os
 R = 'D:/Proyectos/video2-wt/tfbtanque/'
 G = json.load(open(R + 'vlog/tfbtanque/global.json', encoding='utf8'))
 FPS = 30; TOT = G['frames']
@@ -17,6 +17,7 @@ def find(ph, after=0.0, which='start'):
         if W[i][1] < after: continue
         if all(i + k < len(W) and _eq(W[i + k][0], toks[k]) for k in range(len(toks))):
             return W[i][1] if which == 'start' else W[i + len(toks) - 1][2]
+    if os.environ.get('PARCIAL') == '1': return 1e9
     raise SystemExit(f'⛔ no encuentro la frase: "{ph}" (después de {after:.1f}s)')
 F = lambda s: int(round(s * FPS))
 CLIP = {c['id']: c for c in G['clips']}
@@ -202,6 +203,7 @@ t = find('mismo plástico, agujeritos, malla, y paciencia'); over('list', t, 5.5
 t = find('La hoja y la guía con los arreglos del agua'); over('cta', t, (TOT / FPS - t) - 0.3, sfx=POP[1], sdb=-10, qr='img/tfbtanque/qr_tfbtanque.png', cover='img/tfbtanque/portada-coleccion.jpg', kicker='LA GUÍA DEL CANAL', line='Escanea con tu teléfono')
 
 # ── clip límites y salida
+OVER = [o for o in OVER if 0 <= o['from'] < TOT]; CAM = [c for c in CAM if 0 <= c['f'] < TOT]; SFX = [x for x in SFX if 0 <= x['t'] < TOT / FPS]
 for o in OVER:
     o['dur'] = max(6, min(o['dur'], TOT - o['from']))
 OVER.sort(key=lambda o: o['from']); CAM.sort(key=lambda c: c['f']); SFX.sort(key=lambda s: s['t'])
