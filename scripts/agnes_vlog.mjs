@@ -318,7 +318,7 @@ async function gen(id, body) {
   for (let t = 0; t < 200 && !vid; t++) {
     const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + (kk = key()), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
     vid = j.video_id || j.id;
-    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep((+(process.env.AGNES_RETRY_MS || env.AGNES_RETRY_MS) || 25000) + Math.random() * 10000); } // AGNES_RETRY_MS: espera entre reintentos con cupo agotado ("free users")
+    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep((/queue_full|queue is full/i.test(m) ? 45000 : (+(process.env.AGNES_RETRY_MS || env.AGNES_RETRY_MS) || 25000)) + Math.random() * 10000); } // cola llena (rechazo, no gasta cupo) → 45 s; cupo/rate → AGNES_RETRY_MS // AGNES_RETRY_MS: espera entre reintentos con cupo agotado ("free users")
   }
   if (!vid) return log("GAVE UP", id);
   log("en cola", id);
