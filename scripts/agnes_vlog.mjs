@@ -373,7 +373,7 @@ async function gen(id, body, meta = {}) {
       const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + kk, "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
       vid = j.video_id || j.id;
       if (vid) { KMAP.set(vid, kk); meta.k = kk; }
-      if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; }
+      if (!vid) { const m = JSON.stringify(j); if (t % 10 === 0) log("espera", id, "try", t, m.slice(0, 160)); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; }
         const lim = /free users|rate_limit|rate limit/i.test(m); if (lim && t % 3 === 0) log("límite de cuenta, espero", RWAIT / 1000, "s ·", id);
         await sleep(lim ? RWAIT : 30000 + Math.random() * 10000); }
     }

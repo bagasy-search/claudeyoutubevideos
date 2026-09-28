@@ -85,8 +85,26 @@ export const OV: any[] = ${JSON.stringify(ovs)};
 export const SFX: any[] = ${JSON.stringify(sfx)};
 export const FOLEY: any[] = ${JSON.stringify(foley)};
 `;
+// cues de la capa base para la compuerta de repetición de agnes_qc (un clip = un plano; los vl partidos por un
+// inserto son UNA toma continua: se emite su tramo entero, que nunca repite cuadros)
+const qc = [];
+const vlSpan = {};
+for (const c of cues) {
+  if ((c.k === "vl" || c.k === "kf") && c.src) { const v = (vlSpan[c.src] ||= { key: c.src, src: c.src, a: c.from, b: c.from + c.dur, sf: c.sf }); v.b = c.from + c.dur; }
+  if (c.k === "img" && c.clip) qc.push({ key: c.clip, src: c.clip, start: c.from / FPS, dur: Math.min(c.dur, c.clipF) / FPS });
+}
+for (const v of Object.values(vlSpan)) qc.push({ key: v.key, src: v.src, start: v.a / FPS, dur: (v.b - v.a) / FPS });
+fs.writeFileSync(R + "_v3/lorpies_cues.json", JSON.stringify(qc, null, 1));
 fs.mkdirSync(R + "src/lorpies", { recursive: true });
 fs.writeFileSync(R + "src/lorpies/timeline_lorpies.gen.ts", out);
+// lista EXPLÍCITA de assets para el tar del farm: toda ruta citada en cues/props (recursivo) + derivadas (_last.jpg)
+const refs = new Set(["lorpies.m4a", "sfx/lorpies_bed.m4a", "ref_lorpies.png"]);
+const walk = (o) => { if (typeof o === "string") { if (/^(img|broll|vid|sfx|avatar_clips)\/.+\.(jpg|png|mp4|m4a|mp3|wav)$/.test(o)) refs.add(o); } else if (o && typeof o === "object") Object.values(o).forEach(walk); };
+walk(cues); walk(ovs); walk(sfx); walk(foley);
+for (const c of cues) if (c.clip && c.clipF < c.dur) refs.add(c.clip.replace(/\.mp4$/, "_last.jpg"));
+const faltan = [...refs].filter((r) => !ex(r));
+fs.writeFileSync(R + "_lorpies_assets.txt", [...refs].filter((r) => ex(r)).join(String.fromCharCode(10)) + String.fromCharCode(10));
+console.log("assets al tar:", refs.size - faltan.length, faltan.length ? `· ⛔ FALTAN ${faltan.length}: ${faltan.slice(0, 6).join(" ")}` : "");
 const cnt = {}; for (const c of cues) cnt[c.k] = (cnt[c.k] || 0) + 1;
 console.log("cues", cues.length, JSON.stringify(cnt), "· overlays", ovs.length, "· sfx", sfx.length, "· foley", foley.length, "· frames", TOTAL, "· avatar", AV_READY ? "LISTO" : "placeholder");
 const fb = cues.filter((c) => c.fallback); if (fb.length) console.log("⚠️ repuestos (asset aún no existe):", fb.length, fb.slice(0, 12).map((c) => c.fallback).join(" "));
