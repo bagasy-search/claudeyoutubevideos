@@ -37,16 +37,16 @@ if (fase === "anclas") {
 }
 const uri = f => `data:image/png;base64,` + fs.readFileSync(f).toString("base64");
 async function gen(cl, id, body) {
-  let vid;
+  let vid, kk; // consulta con la MISMA clave que creó el job (las claves no comparten jobs)
   for (let t = 0; t < 400 && !vid; t++) {
-    const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
+    const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + (kk = key()), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
     vid = j.video_id || j.id;
     if (!vid) { const m = JSON.stringify(j); if (!/queue|rate|limit|busy/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(25000 + Math.random() * 10000); }
   }
   if (!vid) return log("GAVE UP", id); log("en cola", id); const t0 = Date.now();
   while (Date.now() - t0 < 60 * 60e3) {
     await sleep(20000);
-    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + key() } })).json().catch(() => ({}));
+    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + kk } })).json().catch(() => ({}));
     if (g.status === "completed" && g.url) { fs.writeFileSync(cl + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
     if (/fail|error|cancel/i.test(g.status || "")) return log("FAIL", id, JSON.stringify(g).slice(0, 200));
   }
