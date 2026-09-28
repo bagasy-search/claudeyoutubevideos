@@ -83,7 +83,7 @@ const punchCam = (D, at = 0.5, s = 1.3) => { // saltos de zoom fuertes (se leen 
 function hclip(id, D, cam) { const c = tclip(id); return { src: c.rel, ss: 0, cam: cam || (D > 3.6 ? punchCam(D) : undefined), tag: id }; }
 function det(id, ss = 0.25, extra = {}) { const c = tclip(id); return { src: c.rel, ss, tag: id, foley: 0.35, foleyFile: c.abs, ...extra }; }
 const TD = id => TR[id].d;
-block(TD("t_01"), D => tramoWav("t_01", D), [hclip("t_01", TD("t_01"), punchCam(TD("t_01"), 0.3))], "t_01");
+block(TD("t_01"), D => tramoWav("t_01", D), [hclip("t_01", TD("t_01"), { keys: [[0, 1, 0, 0]] })] /* sin salto: la lupa usa el mismo cuadro sin escalar */, "t_01");
 block(TD("t_02"), D => tramoWav("t_02", D), [det("t_c1"), det("t_c2"), det("t_c3")], "t_02");
 // t_03: prueba del dedo · piedras · ANTES/DESPUÉS (la cortina de agua sobre las dos fotos del mismo encuadre)
 fs.copyFileSync(V + "T/anc/" + TP.clips.find(c => c.id === "t_agua").a + ".png", R + "public/img/tfbpiedra/wipe_a.png");
@@ -97,8 +97,9 @@ block(TD("t_06"), D => tramoWav("t_06", D), [hclip("t_06", TD("t_06"))], "t_06")
 // ================= RECETA =================
 block(TD("r_01"), D => tramoWav("r_01", D), [hclip("r_01", TD("r_01"))], "r_01");
 for (const id of ["r_02", "r_03", "r_04", "r_05", "r_06", "r_07", "r_08"]) {
-  const D = TD(id), c = tclip(id);
-  block(D, D2 => tramoWav(id, D2), [{ src: c.rel, ss: 0, tag: id, foley: 0.3, foleyFile: c.abs, whoosh: true, cam: fr / FPS < 64 && D > 4 ? punchCam(D) : { keys: [[0, 1, 0, 0], [F(D), 1.08, 0, 0]] } }], id);
+  const D = TD(id), c = tclip(id), TRIM = { r_04: 7.15, r_07: 7.15 }; // salto de pose medido en 7,3 s → se usa hasta antes, apenas más lento
+  const rate = TRIM[id] && TRIM[id] < D ? +(TRIM[id] / D).toFixed(3) : undefined;
+  block(D, D2 => tramoWav(id, D2), [{ src: c.rel, ss: 0, rate, tag: id, foley: 0.3, foleyFile: c.abs, whoosh: true, cam: fr / FPS < 64 && D > 4 ? punchCam(D) : { keys: [[0, 1, 0, 0], [F(D), 1.08, 0, 0]] } }], id);
 }
 function speechEnd(file, T) { // fin de la voz en el audio propio del clip (−35 dB bajo el pico)
   const b = execFileSync("ffmpeg", ["-v", "error", "-i", file, "-vn", "-ac", "1", "-ar", "16000", "-t", String(T), "-f", "s16le", "-"]);

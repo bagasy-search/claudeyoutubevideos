@@ -5,7 +5,7 @@ const QR = { qr: "img/tfbpiedra/qr_tfbpiedra.png", cover: "img/tfbpiedra/portada
 const STEPS = ["La base", "La mezcla", "El colado", "La prueba", "El lavado", "El curado", "El sellado"];
 export const FXPLAN = [
   // ---- TRÁILER (0-60 s)
-  { kind: "zoom", at: ["t_01", "mira"], until: ["t_02", null, 0, -0.05], p: { path: [[0, 1250, 880], [60, 1210, 860]], r: 210, zoom: 1.9, label: "¡Apareció esto!", labelDx: -620, labelDy: -300 } }, // ⭐ la lupa de la miniatura
+  { kind: "zoom", at: ["t_01", "fresco"], until: ["t_02", null, 0, -0.05], p: { path: [[0, 1250, 880], [60, 1210, 860]], r: 210, zoom: 1.9, label: "¡Apareció esto!", labelDx: -620, labelDy: -300 } }, // ⭐ la lupa de la miniatura
   { kind: "wipe", at: ["t_03", "casas"], until: ["t_04", null, 0, -0.03], p: { beforeSrc: "img/tfbpiedra/wipe_a.png", afterSrc: "img/tfbpiedra/wipe_b.png", beforeLabel: "ANTES", afterLabel: "DESPUÉS", from: 2, to: 26 } }, // ⭐
   { kind: "label", at: ["t_04", "agarre"], dur: 2.6, p: { text: "No resbala como el cemento liso", variant: "yellow", x: 110, y: 800 } },
   { kind: "label", at: ["t_05", "paso"], dur: 2.8, p: { kicker: "Hoy, completo", text: "Base · mezcla · colado · lavado", variant: "white", x: 110, y: 820, size: 58 } },
@@ -37,11 +37,11 @@ export const FXPLAN = [
   { kind: "label", at: ["s5_10", "adivina"], dur: 3, p: { text: "No se adivina: se prueba", variant: "yellow" } },
   { kind: "qr", at: ["s5_10bx", null, 0, 0], until: ["s5_10bx", null, 0, 5.2], p: QR },
   // ---- S6 la prueba y el lavado
-  { kind: "freeze", at: ["s6_02", "suelta"], dur: 2.8, p: { at: 0, tag: "TODAVÍA NO", scribble: { kind: "circle", box: [760, 560, 420, 300], color: "#E0342A" } } },
+  { kind: "freeze", at: ["s6_02", "suelta"], dur: 2.8, p: { at: 0, tag: "TODAVÍA NO", scribble: { kind: "circle", box: [300, 280, 400, 360], color: "#E0342A" } } },
   { kind: "dial", at: ["s6_04", "firme"], until: ["s6_05", null, 0, 5], p: { title: "EL PUNTO DE LAVADO", needle: [[0, 0.15], [25, 0.15], [60, 0.5]], x: 1480, y: 520 } }, // ⭐ min 11
   { kind: "label", at: ["s6_06", "probando"], dur: 2.6, p: { text: "Probando, no mirando el reloj", variant: "yellow" } },
   { kind: "label", at: ["s6_07", "lluvia"], dur: 2.6, p: { text: "Lluvia fina, no chorro", variant: "yellow" } },
-  { kind: "layer", at: ["s6_12", "hasta", 1], until: ["s6_12", null, 0, 9], p: { title: "¿HASTA DÓNDE?", washAt: 40, washLabel: "Un tercio de la piedra", layers: [{ label: "Grava", kind: "gravel", h: 90 }, { label: "Concreto con piedra", kind: "concrete", h: 140 }] } }, // ⭐ min 12
+  { kind: "layer", at: ["s6_12", "hasta", 1], until: ["s6_12", null, 0, 9], p: { title: "¿HASTA DÓNDE?", x: 1180, y: 790, w: 1100, washAt: 40, washLabel: "Un tercio de la piedra", layers: [{ label: "Grava", kind: "gravel", h: 90 }, { label: "Concreto con piedra", kind: "concrete", h: 140 }] } }, // ⭐ min 12
   { kind: "label", at: ["s6_14", "desague"], dur: 3, p: { kicker: "Ojo", text: "La lechada no va al desagüe", variant: "red" } },
   { kind: "errors", at: ["s6_16", "alambre"], until: ["s6_16", null, 0, 5.4], p: { title: "NO USES", items: ["Cepillo de alambre", "Hidrolavadora a fondo"], ats: [0, 45] } },
   // ---- S7 curado

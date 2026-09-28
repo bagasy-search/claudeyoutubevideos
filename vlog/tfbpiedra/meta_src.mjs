@@ -7,7 +7,7 @@ const title = "Le Tiré AGUA al Cemento Fresco y Apareció ESTO (Piedra Lavada, 
 const guia = `🔧 LA COLECCIÓN DEL CONSTRUCTOR LIBRE — el Manual de Reparaciones Caseras (76 arreglos paso a paso, con materiales, medidas y la prueba para saber si te salió bien), la Guía Anti-Humedad, Moho y Goteras, una guía exclusiva de herramientas, la Hoja de Compras Maestra y las Fichas de Emergencia.
 👉 https://constructorlibre.com/?src=tfb-piedra`;
 const truco = `EL TRUCO QUE MENCIONÉ EN EL VIDEO → si la piedra de color te sale cara, no la mezcles toda.
-Cuela el piso con concreto común (1 de cemento, 2 de arena y 3 de grava común, medido con el mismo balde), reglalo, y enseguida SIEMBRA encima una sola capa de la piedra bonita, piedras tocándose entre sí.
+Cuela el piso con concreto común (1 de cemento, 2 de arena y 3 de grava común, medido con el mismo balde), pásale la regla, y enseguida SIEMBRA encima una sola capa de la piedra bonita, piedras tocándose entre sí.
 Apriétalas con la llana de madera hasta que queden hundidas unos dos tercios, apenas cubiertas por la pasta, sin frotar.
 Después, lo mismo de siempre: la prueba de la esquina con el cepillo y el lavado con lluvia fina, destapando más o menos un tercio de cada piedra.
 Por arriba se ve igual, y usas mucho menos piedra de color.`;
