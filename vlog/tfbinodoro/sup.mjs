@@ -9,7 +9,18 @@ import { spawn, spawnSync } from "node:child_process";
 const W = "D:/Proyectos/video2-wt/tfbinodoro", V = "vlog/tfbinodoro";
 process.chdir(W);
 const env = { ...process.env, VLOG_SLOTS_DIR: "D:/rtmp/vlog_slots", VLOG_MAX: process.env.VLOG_MAX || "12", PYTHONUTF8: "1" };
-const MY_MAX = +(process.env.MY_MAX || 6);
+const MY_MAX0 = +(process.env.MY_MAX || 6), MY_MAX_UP = +(process.env.MY_MAX_UP || MY_MAX0);
+let MY_MAX = MY_MAX0;
+// cupo de agnes: mira los últimos POST de MIS clips (logs clips_*.log: "en cola" = aceptado, "RATE" = rechazado por cupo).
+// Los últimos 3 aceptados seguidos → sube a MY_MAX_UP (3: somos 6 videos); un RATE → vuelve a MY_MAX0 (goteo de 1).
+function cupo() {
+  const ev = [];
+  for (const f of fs.readdirSync(V).filter(f => /^clips_.*\.log$/.test(f)))
+    for (const l of fs.readFileSync(`${V}/${f}`, "utf8").split(/\r?\n/).slice(-60)) { const m = l.match(/^(\d\d:\d\d:\d\d) (en cola|RATE) /); if (m) ev.push([fs.statSync(`${V}/${f}`).mtimeMs, m[1], m[2]]); }
+  ev.sort((a, b) => (a[1] < b[1] ? -1 : 1)); const u = ev.slice(-3).map(e => e[2]);
+  const nuevo = u.length === 3 && u.every(x => x === "en cola") ? MY_MAX_UP : MY_MAX0;
+  if (nuevo !== MY_MAX) L(`cupo agnes: ${u.join(",")} → MY_MAX ${MY_MAX} → ${nuevo}`); MY_MAX = nuevo;
+}
 const SC = (process.env.SCENES || "T S1 S2 S3 S4 S6 SC S5 S8 S7 S7b S9").split(" ");
 const hm = () => new Date().toISOString().slice(11, 16);
 const L = m => fs.appendFileSync(`${V}/loop.log`, `${hm()} ${m}\n`);
@@ -30,6 +41,7 @@ L(`SUP arranca pid ${process.pid} · MY_MAX ${MY_MAX}`);
 for (;;) {
   try {
     if (fs.existsSync(`${V}/STOP`)) { L("STOP"); break; }
+    try { cupo(); } catch (e) { L("cupo: " + e.message); }
     // 1) lanzar lo que está listo
     for (const s of SC) {
       const p = plan(s), S = st(s), anc = `out/vlog/${s}/anc/`;

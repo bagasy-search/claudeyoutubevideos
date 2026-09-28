@@ -317,18 +317,18 @@ function tramo(c) { // audio rellenado a segundo entero → mp3
   return { T, mp3 };
 }
 async function gen(id, body) {
-  let vid;
+  let vid, kk; // ⛔ (27-sep) la consulta de estado va con la MISMA CLAVE que creó el job: las claves ya no comparten jobs (404 task not found → TIMEOUT → reenvío que quema cupo)
   for (let t = 0; t < 200 && !vid; t++) {
-    const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
+    const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + (kk = key()), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
     vid = j.video_id || j.id;
-    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(+(process.env.AGNES_RETRY_MS || 25000) + Math.random() * 10000); } // AGNES_RETRY_MS: con el cupo free agotado, ≥600000 para no martillar
+    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } log("RATE", id, /free users/i.test(m) ? "free" : "queue"); await sleep(+(process.env.AGNES_RETRY_MS || 25000) + Math.random() * 10000); } // AGNES_RETRY_MS: con el cupo free agotado, ≥600000 para no martillar
   }
   if (!vid) return log("GAVE UP", id);
   log("en cola", id);
   const t0 = Date.now();
   while (Date.now() - t0 < 40 * 60e3) {
     await sleep(15000);
-    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + key() } })).json().catch(() => ({}));
+    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + kk } })).json().catch(() => ({}));
     if (g.status === "completed" && g.url) { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
     if (/fail|error|cancel/i.test(g.status || "")) return log("FAIL", id, JSON.stringify(g).slice(0, 200));
   }
