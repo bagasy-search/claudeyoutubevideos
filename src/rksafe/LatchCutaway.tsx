@@ -51,7 +51,7 @@ export const LatchCutaway: React.FC<{
     // la rampa toca la esquina del marco (y=760) -> entra; sobre el marco queda adentro; al hueco salta
     const latchTop = 510 + dy;
     if (latchTop > 760) r = 0;
-    else if (latchTop > 700) r = interpolate(latchTop, [760, 700], [0, 60]);
+    else if (latchTop > 700) r = interpolate(latchTop, [700, 760], [60, 0]);
     else if (latchTop > 512) r = 60;
     else r = 0;
     click = mov > 0.985 ? 1 - ph(0.64, 0.8) : 0;
