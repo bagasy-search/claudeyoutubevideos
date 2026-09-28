@@ -19,7 +19,7 @@ export const SHOTS = [
   S(2, "And mock", "kf", "d_mock"),
   S(2, "Not one", "lor", "l_cracker", { p: LORP("She sits at the table holding up one round butter cracker between two fingers toward the camera with a mischievous grin, eyebrows raised, a glass pie plate and a bowl of apples beside her.") }),
   S(3, "", "kf", "d_book"),
-  S(3, "and the one", "c", "LorTrick", { props: { title: "7 pies", text: "7 little tricks nobody wrote down", stamp: "7 pies" } }),
+  S(3, "and the one", "c", "LorTrick", { props: { title: "", text: "7 little tricks nobody wrote down", stamp: "7 pies" } }),
   S(4, "", "vl", "m4"),
   S(4, "It was a", "bi", "b_mixbox", { p: BI("A plain cardboard box of instant cake mix with a blank white front slides onto a floury kitchen counter next to a glass pie plate, a 1970s avocado green kitchen behind, a hand pushing it into place."), anim: "the box slides a few centimeters across the counter and stops" }),
   S(4, "and a tub", "bi", "b_tub", { p: BI("An open supermarket freezer case with frosted glass doors, a hand lifting out a plain white plastic tub of whipped topping with a blank lid, frozen boxed pies stacked on the shelves behind, cold fog around."), anim: "cold fog rolls out of the open freezer door" }),
