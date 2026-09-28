@@ -169,10 +169,10 @@
   {
    "id": "K22",
    "from": [
-    "K21",
-    "W"
+    "K21"
    ],
-   "prompt": "Same place, same framing and same light, a few seconds later: the neighbour straightens up with a reluctant half smile, taking off his reading glasses. The neighbour is exactly the man of the second input image (his face)."
+   "prompt": "Same place, same framing and same light, a few seconds later: the neighbour straightens up with a reluctant half smile, taking off his reading glasses. The neighbour is exactly the man of the second input image (his face). Only the neighbour is in the frame: the bald heavy-set man with the grey moustache and the light-blue checked shirt; the curly-haired presenter is not in this shot.",
+   "face": "W"
   }
  ],
  "clips": [

@@ -71,10 +71,10 @@
   {
    "id": "K8",
    "from": [
-    "K7",
-    "W"
+    "K7"
    ],
-   "prompt": "Same place, same framing and same light, a few seconds later: the neighbour nods to himself, arms crossed again, pleased with himself. The neighbour is exactly the man of the second input image (his face)."
+   "prompt": "Same place, same framing and same light, a few seconds later: the neighbour nods to himself, arms crossed again, pleased with himself. The neighbour is exactly the man of the second input image (his face). Only the neighbour is in the frame: the bald heavy-set man with the grey moustache and the light-blue checked shirt; the curly-haired presenter is not in this shot.",
+   "face": "W"
   },
   {
    "id": "K9",

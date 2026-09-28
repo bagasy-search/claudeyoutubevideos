@@ -192,8 +192,11 @@ function prepararItem(it) { // arma inputs chicos recién cuando sus K previos e
   const { Pl, a } = it, ANCd = dirsOf(Pl).ANC;
   it.inputs = a.from.map(n => { const f = refPathOf(Pl, n); return small(f, n === "k0" || /^K\d+$/.test(n) ? prevOf(Pl) : EXTRA_BOX, ANCd); });
   it.size = sizeOf(Pl);
-  it.inputs.push(face128(Pl));
-  it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + IDENT + LIGHT;
+  // `face: "W"` = plano de OTRO personaje solo (el vecino de cerca): su cara va última y la IDENTIDAD habla de él. Sin esto
+  // la cara del presentador + "the presenter must have…" le ponía la cara del presentador al vecino (tfbinodoro S3/K8, S5/K22).
+  it.inputs.push(a.face ? small(refPathOf(Pl, a.face), EXTRA_BOX, ANCd) : face128(Pl));
+  const ident = a.face ? IDENT.replace("the presenter must have", "the only person in the frame (not the presenter) must have") : IDENT;
+  it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + ident + LIGHT;
   return it;
 }
 let gasto = 0, nimg = 0, avisos = 0;
