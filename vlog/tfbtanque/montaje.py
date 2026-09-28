@@ -73,7 +73,7 @@ steps = [('Vacío el tanque', 'Vaciar'), ('Seco bien', 'Secar y limpiar'), ('Ras
          ('Lo dejo enfriar solo', 'Enfriar'), ('Lo paro, lo lleno', 'Prueba')]
 ts = [find(p) for p, _ in steps] + [find('y esa es la reparación completa')]
 for i, ((p, lab), t) in enumerate(zip(steps, ts)):
-    over('step', t, ts[i + 1] - t + 0.05, sfx=TICK, sdb=-12, n=i + 1, total=len(steps), label=lab)
+    over('step', t, min(12.0, ts[i + 1] - t + 0.05), sfx=TICK, sdb=-12, n=i + 1, total=len(steps), label=lab)
 t = find('y esa es la reparación completa'); over('word', t, 2.2, sfx=CHIME, sdb=-10, text='reparación completa', variant='yellow', y=78, size=100)
 
 # ═════════ S2 — el pegamento (dolor #1) ═════════

@@ -1,0 +1,16510 @@
+{
+"frames": 28091,
+"segs": [
+{
+"seg": "S0",
+"type": "hueco",
+"f0": 0,
+"nf": 1337
+},
+{
+"seg": "S1",
+"type": "scene",
+"f0": 1337,
+"nf": 1620
+},
+{
+"seg": "S2",
+"type": "hueco",
+"f0": 2957,
+"nf": 1456
+},
+{
+"seg": "S3",
+"type": "scene",
+"f0": 4413,
+"nf": 2846
+},
+{
+"seg": "S4",
+"type": "hueco",
+"f0": 7259,
+"nf": 1441
+},
+{
+"seg": "S5",
+"type": "hueco",
+"f0": 8700,
+"nf": 2664
+},
+{
+"seg": "S6",
+"type": "hueco",
+"f0": 11364,
+"nf": 191
+},
+{
+"seg": "LAMINA",
+"type": "lamina",
+"f0": 11555,
+"nf": 1336
+},
+{
+"seg": "S6b",
+"type": "hueco",
+"f0": 12891,
+"nf": 457
+},
+{
+"seg": "S7",
+"type": "hueco",
+"f0": 13348,
+"nf": 635
+},
+{
+"seg": "S7B",
+"type": "hueco",
+"f0": 13983,
+"nf": 2051
+},
+{
+"seg": "S8",
+"type": "hueco",
+"f0": 16034,
+"nf": 1857
+},
+{
+"seg": "S9",
+"type": "hueco",
+"f0": 17891,
+"nf": 1949
+},
+{
+"seg": "S10",
+"type": "hueco",
+"f0": 19840,
+"nf": 2084
+},
+{
+"seg": "S11",
+"type": "hueco",
+"f0": 21924,
+"nf": 680
+},
+{
+"seg": "S11B",
+"type": "hueco",
+"f0": 22604,
+"nf": 1319
+},
+{
+"seg": "S12",
+"type": "scene",
+"f0": 23923,
+"nf": 2133
+},
+{
+"seg": "S13",
+"type": "hueco",
+"f0": 26056,
+"nf": 2035
+}
+],
+"clips": [
+{
+"id": "S1_01",
+"file": "S1_01rfde.mp4",
+"start": 0,
+"T": 7,
+"dur": 6.4,
+"vstart": 0,
+"vdur": 6.4,
+"mode": "trunc",
+"cut": true,
+"text": "Primero te muestro el arreglo completo, de corrido, y después vamos paso por paso con los trucos.",
+"seg": "S1",
+"gstart": 44.56666666666667,
+"gvstart": 44.56666666666667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_02",
+"file": "S1_02.mp4",
+"start": 6.4,
+"T": 4,
+"dur": 3.2,
+"vstart": 6.4,
+"vdur": 3.2,
+"mode": "trunc",
+"cut": true,
+"detail": true,
+"text": "Vacío el tanque por debajo de la grieta.",
+"seg": "S1",
+"gstart": 50.96666666666667,
+"gvstart": 50.96666666666667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_03",
+"file": "S1_03rsyc.mp4",
+"start": 9.6,
+"T": 6,
+"dur": 5.4333,
+"vstart": 9.6,
+"vdur": 5.4333,
+"mode": "trunc",
+"cut": true,
+"text": "Seco bien, y limpio con alcohol, porque el plástico con tierra no se funde parejo.",
+"seg": "S1",
+"gstart": 54.16666666666667,
+"gvstart": 54.16666666666667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_04",
+"file": "S1_04.mp4",
+"start": 15.0333,
+"T": 6,
+"dur": 5.6,
+"vstart": 15.0333,
+"vdur": 5.6,
+"mode": "trunc",
+"cut": true,
+"detail": true,
+"text": "Raspo la capa de afuera, la que quemó el sol, hasta que aparece el plástico sano.",
+"seg": "S1",
+"gstart": 59.599966666666674,
+"gvstart": 59.599966666666674,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_05",
+"file": "S1_05.mp4",
+"start": 20.6333,
+"T": 4,
+"dur": 3.1333,
+"vstart": 20.6333,
+"vdur": 3.1333,
+"mode": "trunc",
+"cut": true,
+"detail": true,
+"text": "Un agujerito de tres milímetros en cada punta.",
+"seg": "S1",
+"gstart": 65.19996666666667,
+"gvstart": 65.19996666666667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_06",
+"file": "S1_06.mp4",
+"start": 23.7667,
+"T": 4,
+"dur": 2.5667,
+"vstart": 23.7667,
+"vdur": 2.5667,
+"mode": "trunc",
+"cut": true,
+"detail": true,
+"text": "Abro la grieta en V con la punta caliente.",
+"seg": "S1",
+"gstart": 68.33336666666668,
+"gvstart": 68.33336666666668,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_07",
+"file": "S1_07rk07.mp4",
+"start": 26.3333,
+"T": 6,
+"dur": 5.2333,
+"vstart": 26.3333,
+"vdur": 5.2333,
+"mode": "trunc",
+"cut": true,
+"text": "Y relleno con una tira del mismo plástico, derretida junto con el tanque.",
+"seg": "S1",
+"gstart": 70.89996666666667,
+"gvstart": 70.89996666666667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_08",
+"file": "S1_08.mp4",
+"start": 31.5667,
+"T": 4,
+"dur": 2.5333,
+"vstart": 31.5667,
+"vdur": 2.5333,
+"mode": "trunc",
+"cut": true,
+"detail": true,
+"text": "Encima, la malla, hundida con calor.",
+"seg": "S1",
+"gstart": 76.13336666666667,
+"gvstart": 76.13336666666667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_09",
+"file": "S1_09.mp4",
+"start": 34.1,
+"T": 4,
+"dur": 3.5333,
+"vstart": 34.1,
+"vdur": 3.5333,
+"mode": "trunc",
+"cut": true,
+"detail": true,
+"text": "Y otra capa de plástico que la tapa entera.",
+"seg": "S1",
+"gstart": 78.66666666666667,
+"gvstart": 78.66666666666667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_10",
+"file": "S1_10rmbe.mp4",
+"start": 37.6333,
+"T": 5,
+"dur": 4.6,
+"vstart": 37.6333,
+"vdur": 4.6,
+"mode": "acc",
+"speed": 2.714,
+"cut": true,
+"text": "Por dentro, lo mismo, pero sin malla: una capa de plástico solo.",
+"seg": "S1",
+"gstart": 82.19996666666667,
+"gvstart": 82.19996666666667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_11",
+"file": "S1_11romz.mp4",
+"start": 42.2333,
+"T": 4,
+"dur": 3.4667,
+"vstart": 42.2333,
+"vdur": 3.4667,
+"mode": "trunc",
+"cut": true,
+"text": "Lo dejo enfriar solo, sin mojarlo, media hora.",
+"seg": "S1",
+"gstart": 86.79996666666668,
+"gvstart": 86.79996666666668,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_12",
+"file": "S1_12.mp4",
+"start": 45.7,
+"T": 4,
+"dur": 1.2667,
+"vstart": 45.7,
+"vdur": 1.2667,
+"mode": "trunc",
+"cut": true,
+"detail": true,
+"text": "Lo paro, lo lleno…",
+"seg": "S1",
+"gstart": 90.26666666666668,
+"gvstart": 90.26666666666668,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S1_13",
+"file": "S1_13rqyf.mp4",
+"start": 46.9667,
+"T": 8,
+"dur": 7.0333,
+"vstart": 46.9667,
+"vdur": 7.0333,
+"mode": "trunc",
+"text": "…y esa es la reparación completa. Ahora, lo que nadie te explica: por qué funciona, y dónde se arruina.",
+"seg": "S1",
+"gstart": 91.53336666666667,
+"gvstart": 91.53336666666667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S1/clips/"
+},
+{
+"id": "S3_01",
+"file": "S3_01rft4.mp4",
+"start": 0,
+"T": 7,
+"dur": 6.6667,
+"vstart": 0,
+"vdur": 6.6667,
+"mode": "trunc",
+"cut": true,
+"text": "Este pedazo es de un tanque viejo que se partió. Y lo primero que tienes que buscar en el tuyo es esto.",
+"seg": "S3",
+"gstart": 147.1,
+"gvstart": 147.1,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_02",
+"file": "S3_02.mp4",
+"start": 6.6667,
+"T": 7,
+"dur": 6.3667,
+"vstart": 6.6667,
+"vdur": 6.3667,
+"mode": "trunc",
+"cut": true,
+"detail": true,
+"text": "El triangulito de reciclaje. Suele estar en la base, cerca de la tapa o en la etiqueta del fabricante.",
+"seg": "S3",
+"gstart": 153.7667,
+"gvstart": 153.7667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_03",
+"file": "S3_03ri4r.mp4",
+"start": 13.0333,
+"T": 9,
+"dur": 7.8667,
+"vstart": 13.0333,
+"vdur": 7.8667,
+"mode": "trunc",
+"text": "Si adentro dice dos, o cuatro, o las letras PE, es polietileno. Es lo más común en tanques de agua.",
+"seg": "S3",
+"gstart": 160.1333,
+"gvstart": 160.1333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_04a",
+"file": "S3_04arkg1.mp4",
+"start": 20.9,
+"T": 6,
+"dur": 4.9333,
+"vstart": 20.9,
+"vdur": 4.9333,
+"mode": "trunc",
+"cut": true,
+"text": "Y si tu tanque es de estos viejos, grises, de fibrocemento, esto no va.",
+"seg": "S3",
+"gstart": 168.0,
+"gvstart": 168.0,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_04b",
+"file": "S3_04brmrh.mp4",
+"start": 25.8333,
+"T": 5,
+"dur": 4.6667,
+"vstart": 25.8333,
+"vdur": 4.6667,
+"mode": "acc",
+"speed": 2.25,
+"cut": true,
+"text": "Esos pueden tener amianto: no se raspan ni se lijan. Se cambian.",
+"seg": "S3",
+"gstart": 172.9333,
+"gvstart": 172.9333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_05",
+"file": "S3_05rp2p.mp4",
+"start": 30.5,
+"T": 9,
+"dur": 8.7667,
+"vstart": 30.5,
+"vdur": 8.7667,
+"mode": "trunc",
+"text": "Y los de fibra de vidrio tampoco se derriten: se arreglan con resina, que es otro video. Esto es para los de plástico, que son la mayoría.",
+"seg": "S3",
+"gstart": 177.6,
+"gvstart": 177.6,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_06a",
+"file": "S3_06arre3.mp4",
+"start": 39.2667,
+"T": 6,
+"dur": 5.4667,
+"vstart": 39.2667,
+"vdur": 5.4667,
+"mode": "acc",
+"speed": 2.333,
+"text": "¿Y si no encuentras el símbolo? Busca la etiqueta o el nombre del fabricante.",
+"seg": "S3",
+"gstart": 186.36669999999998,
+"gvstart": 186.36669999999998,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_06b",
+"file": "S3_06bra9g.mp4",
+"start": 44.7333,
+"T": 5,
+"dur": 4.0667,
+"vstart": 44.7333,
+"vdur": 4.0667,
+"mode": "trunc",
+"cut": true,
+"text": "Casi todos los tanques de plástico para agua son de polietileno.",
+"seg": "S3",
+"gstart": 191.8333,
+"gvstart": 191.8333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_07",
+"file": "S3_07rw0g.mp4",
+"start": 48.8,
+"T": 6,
+"dur": 5.5333,
+"vstart": 48.8,
+"vdur": 5.5333,
+"mode": "acc",
+"speed": 2.75,
+"text": "Si dice cinco, o PP, es polipropileno. Y aquí viene la trampa.",
+"seg": "S3",
+"gstart": 195.89999999999998,
+"gvstart": 195.89999999999998,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_08",
+"file": "S3_08rybr.mp4",
+"start": 54.3333,
+"T": 4,
+"dur": 3.7,
+"vstart": 54.3333,
+"vdur": 3.7,
+"mode": "trunc",
+"text": "Mucha gente funde tapitas de refresco, porque lo vio en internet.",
+"seg": "S3",
+"gstart": 201.4333,
+"gvstart": 201.4333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_09",
+"file": "S3_09r0nd.mp4",
+"start": 58.0333,
+"T": 6,
+"dur": 5.4,
+"vstart": 58.0333,
+"vdur": 5.4,
+"mode": "acc",
+"speed": 2.636,
+"text": "Y muchas tapitas son de polipropileno. Mira: aquí dice cinco.",
+"seg": "S3",
+"gstart": 205.1333,
+"gvstart": 205.1333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_10",
+"file": "S3_10rznz.mp4",
+"start": 63.4333,
+"T": 7,
+"dur": 6.3333,
+"vstart": 63.4333,
+"vdur": 6.3333,
+"mode": "trunc",
+"text": "El polietileno y el polipropileno se derriten juntos, parecen unidos, pero no se mezclan.",
+"seg": "S3",
+"gstart": 210.5333,
+"gvstart": 210.5333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_11",
+"file": "S3_11r1za.mp4",
+"start": 69.7667,
+"T": 7,
+"dur": 6.1,
+"vstart": 69.7667,
+"vdur": 6.1,
+"mode": "trunc",
+"text": "A los días, con la presión, el parche se suelta de una pieza. Y crees que el método no sirve.",
+"seg": "S3",
+"gstart": 216.86669999999998,
+"gvstart": 216.86669999999998,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_12",
+"file": "S3_12r7la.mp4",
+"start": 75.8667,
+"T": 4,
+"dur": 3.5333,
+"vstart": 75.8667,
+"vdur": 3.5333,
+"mode": "trunc",
+"cut": true,
+"text": "Lo seguro es rellenar con plástico del mismo número.",
+"seg": "S3",
+"gstart": 222.9667,
+"gvstart": 222.9667,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_13",
+"file": "S3_13.mp4",
+"start": 79.4,
+"T": 5,
+"dur": 4,
+"vstart": 79.4,
+"vdur": 4,
+"mode": "trunc",
+"cut": true,
+"detail": true,
+"text": "Un bidón viejo de agua que diga dos te da tiras de sobra.",
+"seg": "S3",
+"gstart": 226.5,
+"gvstart": 226.5,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_14",
+"file": "S3_14r9wq.mp4",
+"start": 83.4,
+"T": 5,
+"dur": 4.7667,
+"vstart": 83.4,
+"vdur": 4.7667,
+"mode": "acc",
+"speed": 2.4,
+"cut": true,
+"text": "Lo corto en tiras de medio centímetro de ancho. Esas son mis varillas de relleno.",
+"seg": "S3",
+"gstart": 230.5,
+"gvstart": 230.5,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S3_15",
+"file": "S3_15rc7z.mp4",
+"start": 88.1667,
+"T": 7,
+"dur": 6.7,
+"vstart": 88.1667,
+"vdur": 6.7,
+"mode": "trunc",
+"text": "Si consigues tiras negras, de un tanque roto del mismo tipo, mejor todavía: queda del mismo color.",
+"seg": "S3",
+"gstart": 235.26670000000001,
+"gvstart": 235.26670000000001,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S3/clips/"
+},
+{
+"id": "S12_01",
+"file": "S12_01.mp4",
+"start": 0,
+"T": 4,
+"dur": 3.7333,
+"vstart": 0,
+"vdur": 3.7333,
+"mode": "trunc",
+"text": "Te resumo los tres errores que más arruinan este arreglo.",
+"seg": "S12",
+"gstart": 797.4333333333333,
+"gvstart": 797.4333333333333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_02",
+"file": "S12_02.mp4",
+"start": 3.7333,
+"T": 8,
+"dur": 7,
+"vstart": 3.7333,
+"vdur": 7,
+"mode": "trunc",
+"cut": true,
+"text": "Uno: rellenar con otro plástico. Las tapitas que no son del mismo número. Parece pegado, y se suelta.",
+"seg": "S12",
+"gstart": 801.1666333333333,
+"gvstart": 801.1666333333333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_03",
+"file": "S12_03.mp4",
+"start": 10.7333,
+"T": 9,
+"dur": 8.7667,
+"vstart": 10.7333,
+"vdur": 8.7667,
+"mode": "trunc",
+"cut": true,
+"text": "Dos: no hacer los agujeritos. El parche aguanta, pero la grieta sigue caminando por el costado, y a los meses gotea al lado.",
+"seg": "S12",
+"gstart": 808.1666333333333,
+"gvstart": 808.1666333333333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_04",
+"file": "S12_04.mp4",
+"start": 19.5,
+"T": 8,
+"dur": 7.4,
+"vstart": 19.5,
+"vdur": 7.4,
+"mode": "acc",
+"speed": 2.5,
+"text": "Tres: derretir solo la tira, sin fundir el tanque. Queda una costra linda encima, que no está agarrada a nada.",
+"seg": "S12",
+"gstart": 816.9333333333333,
+"gvstart": 816.9333333333333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_05",
+"file": "S12_05.mp4",
+"start": 26.9,
+"T": 5,
+"dur": 4.8,
+"vstart": 26.9,
+"vdur": 4.8,
+"mode": "trunc",
+"text": "Y ahora te digo cuándo no vale la pena, porque no todo tanque se salva.",
+"seg": "S12",
+"gstart": 824.3333333333333,
+"gvstart": 824.3333333333333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_06",
+"file": "S12_06.mp4",
+"start": 31.7,
+"T": 5,
+"dur": 4.3333,
+"vstart": 31.7,
+"vdur": 4.3333,
+"mode": "acc",
+"speed": 2.538,
+"text": "Si la grieta es muy larga, de más de un palmo, o hay varias.",
+"seg": "S12",
+"gstart": 829.1333333333333,
+"gvstart": 829.1333333333333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_07",
+"file": "S12_07.mp4",
+"start": 36.0333,
+"T": 5,
+"dur": 4.6667,
+"vstart": 36.0333,
+"vdur": 4.6667,
+"mode": "acc",
+"speed": 2.667,
+"cut": true,
+"text": "Si está en la base, donde apoya todo el peso, o en la rosca de la salida.",
+"seg": "S12",
+"gstart": 833.4666333333332,
+"gvstart": 833.4666333333332,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_08",
+"file": "S12_08.mp4",
+"start": 40.7,
+"T": 10,
+"dur": 8.9333,
+"vstart": 40.7,
+"vdur": 8.9333,
+"mode": "trunc",
+"cut": true,
+"text": "Y si el plástico se quiebra como una galleta cuando lo doblas: está cristalizado por el sol. Ahí el cautín no lo salva, cambia el tanque.",
+"seg": "S12",
+"gstart": 838.1333333333333,
+"gvstart": 838.1333333333333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_09",
+"file": "S12_09.mp4",
+"start": 49.6333,
+"T": 9,
+"dur": 8.5333,
+"vstart": 49.6333,
+"vdur": 8.5333,
+"mode": "trunc",
+"text": "Y no te voy a decir que dura para siempre. Un parche bien fundido es el mismo plástico que el tanque: dura lo que dure el tanque alrededor.",
+"seg": "S12",
+"gstart": 847.0666333333332,
+"gvstart": 847.0666333333332,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_10a",
+"file": "S12_10a.mp4",
+"start": 58.1667,
+"T": 5,
+"dur": 4.5,
+"vstart": 58.1667,
+"vdur": 4.5,
+"mode": "trunc",
+"text": "Y hay una variante de esto que funciona todavía mejor cuando la grieta",
+"seg": "S12",
+"gstart": 855.6000333333333,
+"gvstart": 855.6000333333333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_10b",
+"file": "S12_10b.mp4",
+"start": 62.6667,
+"T": 5,
+"dur": 4.5333,
+"vstart": 62.6667,
+"vdur": 4.5333,
+"mode": "trunc",
+"cut": true,
+"text": "está en una curva o en una esquina, donde la malla no se acomoda.",
+"seg": "S12",
+"gstart": 860.1000333333333,
+"gvstart": 860.1000333333333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+},
+{
+"id": "S12_11",
+"file": "S12_11.mp4",
+"start": 67.2,
+"T": 5,
+"dur": 3.9,
+"vstart": 67.2,
+"vdur": 3.9,
+"mode": "trunc",
+"text": "Te dejé exactamente cómo hacerlo en la descripción, con las medidas.",
+"seg": "S12",
+"gstart": 864.6333333333333,
+"gvstart": 864.6333333333333,
+"dir": "D:/Proyectos/video2-wt/tfbtanque/out/vlog/S12/clips/"
+}
+],
+"words": [
+{
+"w": "Un",
+"t": 0.0,
+"e": 0.24,
+"id": "S0_03"
+},
+{
+"w": "tanque",
+"t": 0.24,
+"e": 0.64,
+"id": "S0_03"
+},
+{
+"w": "nuevo",
+"t": 0.64,
+"e": 1.04,
+"id": "S0_03"
+},
+{
+"w": "sale",
+"t": 1.56,
+"e": 1.68,
+"id": "S0_03"
+},
+{
+"w": "una",
+"t": 1.68,
+"e": 2.16,
+"id": "S0_03"
+},
+{
+"w": "fortuna",
+"t": 2.16,
+"e": 2.62,
+"id": "S0_03"
+},
+{
+"w": "y",
+"t": 2.62,
+"e": 3.14,
+"id": "S0_04"
+},
+{
+"w": "esto",
+"t": 3.14,
+"e": 3.48,
+"id": "S0_04"
+},
+{
+"w": "se",
+"t": 3.48,
+"e": 3.9,
+"id": "S0_04"
+},
+{
+"w": "arregla",
+"t": 3.9,
+"e": 4.18,
+"id": "S0_04"
+},
+{
+"w": "con",
+"t": 4.18,
+"e": 4.56,
+"id": "S0_04"
+},
+{
+"w": "menos",
+"t": 4.56,
+"e": 4.76,
+"id": "S0_04"
+},
+{
+"w": "de",
+"t": 4.76,
+"e": 5.08,
+"id": "S0_04"
+},
+{
+"w": "dos",
+"t": 5.08,
+"e": 5.32,
+"id": "S0_04"
+},
+{
+"w": "dólares",
+"t": 5.32,
+"e": 5.62,
+"id": "S0_04"
+},
+{
+"w": "en",
+"t": 5.62,
+"e": 6.04,
+"id": "S0_04"
+},
+{
+"w": "materiales",
+"t": 6.18,
+"e": 6.94,
+"id": "S0_04"
+},
+{
+"w": "sin",
+"t": 7.0,
+"e": 7.2,
+"id": "S0_04"
+},
+{
+"w": "soldar",
+"t": 7.2,
+"e": 7.64,
+"id": "S0_04"
+},
+{
+"w": "metal",
+"t": 7.64,
+"e": 7.98,
+"id": "S0_04"
+},
+{
+"w": "y",
+"t": 7.98,
+"e": 8.5,
+"id": "S0_04"
+},
+{
+"w": "sin",
+"t": 8.5,
+"e": 8.76,
+"id": "S0_04"
+},
+{
+"w": "una",
+"t": 8.76,
+"e": 9.22,
+"id": "S0_04"
+},
+{
+"w": "gota",
+"t": 9.22,
+"e": 9.3,
+"id": "S0_04"
+},
+{
+"w": "de",
+"t": 9.3,
+"e": 9.64,
+"id": "S0_04"
+},
+{
+"w": "pegamento",
+"t": 9.64,
+"e": 9.98,
+"id": "S0_04"
+},
+{
+"w": "Este",
+"t": 10.54,
+"e": 10.74,
+"id": "S0_05"
+},
+{
+"w": "símbolo",
+"t": 10.74,
+"e": 11.2,
+"id": "S0_05"
+},
+{
+"w": "te",
+"t": 11.2,
+"e": 11.64,
+"id": "S0_05"
+},
+{
+"w": "dice",
+"t": 11.64,
+"e": 11.64,
+"id": "S0_05"
+},
+{
+"w": "qué",
+"t": 11.64,
+"e": 12.24,
+"id": "S0_05"
+},
+{
+"w": "plástico",
+"t": 12.24,
+"e": 12.68,
+"id": "S0_05"
+},
+{
+"w": "es",
+"t": 12.68,
+"e": 13.1,
+"id": "S0_05"
+},
+{
+"w": "dos",
+"t": 13.6,
+"e": 13.66,
+"id": "S0_06"
+},
+{
+"w": "agujeritos",
+"t": 13.66,
+"e": 14.28,
+"id": "S0_06"
+},
+{
+"w": "en",
+"t": 14.28,
+"e": 14.48,
+"id": "S0_06"
+},
+{
+"w": "las",
+"t": 14.48,
+"e": 14.92,
+"id": "S0_06"
+},
+{
+"w": "puntas",
+"t": 14.92,
+"e": 15.06,
+"id": "S0_06"
+},
+{
+"w": "para",
+"t": 15.06,
+"e": 15.54,
+"id": "S0_06"
+},
+{
+"w": "que",
+"t": 15.54,
+"e": 15.7,
+"id": "S0_06"
+},
+{
+"w": "la",
+"t": 15.7,
+"e": 16.14,
+"id": "S0_06"
+},
+{
+"w": "grieta",
+"t": 16.14,
+"e": 16.2,
+"id": "S0_06"
+},
+{
+"w": "no",
+"t": 16.2,
+"e": 16.64,
+"id": "S0_06"
+},
+{
+"w": "siga",
+"t": 16.64,
+"e": 16.9,
+"id": "S0_06"
+},
+{
+"w": "caminando",
+"t": 16.9,
+"e": 17.44,
+"id": "S0_06"
+},
+{
+"w": "un",
+"t": 18.06,
+"e": 18.28,
+"id": "S0_07"
+},
+{
+"w": "pedazo",
+"t": 18.28,
+"e": 18.58,
+"id": "S0_07"
+},
+{
+"w": "de",
+"t": 18.58,
+"e": 19.06,
+"id": "S0_07"
+},
+{
+"w": "malla",
+"t": 19.06,
+"e": 19.06,
+"id": "S0_07"
+},
+{
+"w": "metálica",
+"t": 19.06,
+"e": 19.6,
+"id": "S0_07"
+},
+{
+"w": "que",
+"t": 19.6,
+"e": 20.06,
+"id": "S0_07"
+},
+{
+"w": "se",
+"t": 20.06,
+"e": 20.46,
+"id": "S0_07"
+},
+{
+"w": "hunde",
+"t": 20.46,
+"e": 20.46,
+"id": "S0_08"
+},
+{
+"w": "en",
+"t": 20.46,
+"e": 20.8,
+"id": "S0_08"
+},
+{
+"w": "el",
+"t": 20.8,
+"e": 21.06,
+"id": "S0_08"
+},
+{
+"w": "mismo",
+"t": 21.06,
+"e": 21.28,
+"id": "S0_08"
+},
+{
+"w": "plástico",
+"t": 21.28,
+"e": 21.72,
+"id": "S0_08"
+},
+{
+"w": "derretido",
+"t": 21.72,
+"e": 22.32,
+"id": "S0_08"
+},
+{
+"w": "se",
+"t": 22.78,
+"e": 22.96,
+"id": "S0_09"
+},
+{
+"w": "alisa",
+"t": 22.96,
+"e": 23.24,
+"id": "S0_09"
+},
+{
+"w": "y",
+"t": 23.24,
+"e": 23.9,
+"id": "S0_09"
+},
+{
+"w": "queda",
+"t": 23.9,
+"e": 24.0,
+"id": "S0_09"
+},
+{
+"w": "de",
+"t": 24.0,
+"e": 24.4,
+"id": "S0_09"
+},
+{
+"w": "una",
+"t": 24.4,
+"e": 24.54,
+"id": "S0_09"
+},
+{
+"w": "sola",
+"t": 24.54,
+"e": 24.94,
+"id": "S0_09"
+},
+{
+"w": "pieza",
+"t": 24.94,
+"e": 25.14,
+"id": "S0_09"
+},
+{
+"w": "con",
+"t": 25.14,
+"e": 25.38,
+"id": "S0_09"
+},
+{
+"w": "el",
+"t": 25.38,
+"e": 25.72,
+"id": "S0_09"
+},
+{
+"w": "tanque",
+"t": 25.72,
+"e": 25.9,
+"id": "S0_09"
+},
+{
+"w": "por",
+"t": 26.28,
+"e": 26.48,
+"id": "S0_10"
+},
+{
+"w": "fuera",
+"t": 26.48,
+"e": 26.74,
+"id": "S0_10"
+},
+{
+"w": "y",
+"t": 26.74,
+"e": 27.18,
+"id": "S0_10"
+},
+{
+"w": "también",
+"t": 27.18,
+"e": 27.54,
+"id": "S0_10"
+},
+{
+"w": "por",
+"t": 27.54,
+"e": 27.72,
+"id": "S0_10"
+},
+{
+"w": "dentro",
+"t": 27.72,
+"e": 28.0,
+"id": "S0_10"
+},
+{
+"w": "lo",
+"t": 28.56,
+"e": 28.66,
+"id": "S0_11"
+},
+{
+"w": "lleno",
+"t": 28.66,
+"e": 28.92,
+"id": "S0_11"
+},
+{
+"w": "hasta",
+"t": 28.92,
+"e": 29.4,
+"id": "S0_11"
+},
+{
+"w": "arriba",
+"t": 29.4,
+"e": 29.66,
+"id": "S0_11"
+},
+{
+"w": "lo",
+"t": 30.18,
+"e": 30.38,
+"id": "S0_11"
+},
+{
+"w": "dejo",
+"t": 30.38,
+"e": 30.44,
+"id": "S0_11"
+},
+{
+"w": "un",
+"t": 30.44,
+"e": 30.68,
+"id": "S0_11"
+},
+{
+"w": "día",
+"t": 30.68,
+"e": 30.86,
+"id": "S0_11"
+},
+{
+"w": "entero",
+"t": 30.86,
+"e": 31.14,
+"id": "S0_11"
+},
+{
+"w": "y",
+"t": 31.14,
+"e": 31.58,
+"id": "S0_12"
+},
+{
+"w": "ni",
+"t": 31.58,
+"e": 31.76,
+"id": "S0_12"
+},
+{
+"w": "una",
+"t": 31.76,
+"e": 32.2,
+"id": "S0_12"
+},
+{
+"w": "gota",
+"t": 32.2,
+"e": 32.34,
+"id": "S0_12"
+},
+{
+"w": "eso",
+"t": 32.86,
+"e": 32.9,
+"id": "S0_14"
+},
+{
+"w": "dicen",
+"t": 32.9,
+"e": 33.22,
+"id": "S0_14"
+},
+{
+"w": "todos",
+"t": 33.22,
+"e": 33.62,
+"id": "S0_14"
+},
+{
+"w": "Pero",
+"t": 34.06,
+"e": 34.28,
+"id": "S0_14"
+},
+{
+"w": "quédate",
+"t": 34.28,
+"e": 34.68,
+"id": "S0_14"
+},
+{
+"w": "hasta",
+"t": 34.68,
+"e": 34.84,
+"id": "S0_14"
+},
+{
+"w": "el",
+"t": 34.84,
+"e": 35.5,
+"id": "S0_14"
+},
+{
+"w": "final",
+"t": 35.5,
+"e": 35.5,
+"id": "S0_15a"
+},
+{
+"w": "porque",
+"t": 35.5,
+"e": 35.9,
+"id": "S0_15a"
+},
+{
+"w": "te",
+"t": 35.9,
+"e": 36.18,
+"id": "S0_15a"
+},
+{
+"w": "voy",
+"t": 36.18,
+"e": 36.26,
+"id": "S0_15a"
+},
+{
+"w": "a",
+"t": 36.26,
+"e": 36.72,
+"id": "S0_15a"
+},
+{
+"w": "mostrar",
+"t": 36.72,
+"e": 36.72,
+"id": "S0_15a"
+},
+{
+"w": "por",
+"t": 36.72,
+"e": 37.12,
+"id": "S0_15a"
+},
+{
+"w": "qué",
+"t": 37.12,
+"e": 37.12,
+"id": "S0_15a"
+},
+{
+"w": "el",
+"t": 37.12,
+"e": 37.38,
+"id": "S0_15a"
+},
+{
+"w": "pegamento",
+"t": 37.38,
+"e": 37.84,
+"id": "S0_15a"
+},
+{
+"w": "la",
+"t": 38.34,
+"e": 38.56,
+"id": "S0_15b"
+},
+{
+"w": "silicona",
+"t": 38.56,
+"e": 39.08,
+"id": "S0_15b"
+},
+{
+"w": "y",
+"t": 39.08,
+"e": 39.52,
+"id": "S0_15b"
+},
+{
+"w": "la",
+"t": 39.52,
+"e": 40.06,
+"id": "S0_15b"
+},
+{
+"w": "cinta",
+"t": 40.06,
+"e": 40.06,
+"id": "S0_15b"
+},
+{
+"w": "nunca",
+"t": 40.06,
+"e": 40.8,
+"id": "S0_15b"
+},
+{
+"w": "funcionan",
+"t": 40.8,
+"e": 41.5,
+"id": "S0_15b"
+},
+{
+"w": "en",
+"t": 41.5,
+"e": 41.76,
+"id": "S0_15b"
+},
+{
+"w": "estos",
+"t": 41.76,
+"e": 42.1,
+"id": "S0_15b"
+},
+{
+"w": "tanques",
+"t": 42.1,
+"e": 42.46,
+"id": "S0_15b"
+},
+{
+"w": "con",
+"t": 42.78,
+"e": 43.06,
+"id": "S0_15b"
+},
+{
+"w": "una",
+"t": 43.06,
+"e": 43.3,
+"id": "S0_15b"
+},
+{
+"w": "sola",
+"t": 43.3,
+"e": 43.68,
+"id": "S0_15b"
+},
+{
+"w": "gota",
+"t": 43.68,
+"e": 43.86,
+"id": "S0_15b"
+},
+{
+"w": "de",
+"t": 43.86,
+"e": 44.36,
+"id": "S0_15b"
+},
+{
+"w": "agua",
+"t": 44.36,
+"e": 44.36,
+"id": "S0_15b"
+},
+{
+"w": "Primero",
+"t": 44.772,
+"e": 44.932,
+"id": "S1_01"
+},
+{
+"w": "te",
+"t": 44.932,
+"e": 45.552,
+"id": "S1_01"
+},
+{
+"w": "muestro",
+"t": 45.552,
+"e": 45.552,
+"id": "S1_01"
+},
+{
+"w": "el",
+"t": 45.552,
+"e": 45.892,
+"id": "S1_01"
+},
+{
+"w": "arreglo",
+"t": 45.892,
+"e": 46.172,
+"id": "S1_01"
+},
+{
+"w": "completo",
+"t": 46.172,
+"e": 46.772,
+"id": "S1_01"
+},
+{
+"w": "de",
+"t": 47.152,
+"e": 47.272,
+"id": "S1_01"
+},
+{
+"w": "corrido",
+"t": 47.272,
+"e": 47.712,
+"id": "S1_01"
+},
+{
+"w": "y",
+"t": 47.712,
+"e": 48.132,
+"id": "S1_01"
+},
+{
+"w": "después",
+"t": 48.132,
+"e": 48.592,
+"id": "S1_01"
+},
+{
+"w": "vamos",
+"t": 48.592,
+"e": 49.392,
+"id": "S1_01"
+},
+{
+"w": "paso",
+"t": 49.392,
+"e": 49.452,
+"id": "S1_01"
+},
+{
+"w": "por",
+"t": 49.452,
+"e": 49.972,
+"id": "S1_01"
+},
+{
+"w": "paso",
+"t": 49.972,
+"e": 49.972,
+"id": "S1_01"
+},
+{
+"w": "con",
+"t": 49.972,
+"e": 50.172,
+"id": "S1_01"
+},
+{
+"w": "los",
+"t": 50.172,
+"e": 50.452,
+"id": "S1_01"
+},
+{
+"w": "trucos",
+"t": 50.452,
+"e": 50.752,
+"id": "S1_01"
+},
+{
+"w": "Vacío",
+"t": 51.482,
+"e": 51.782,
+"id": "S1_02"
+},
+{
+"w": "el",
+"t": 51.782,
+"e": 52.222,
+"id": "S1_02"
+},
+{
+"w": "tanque",
+"t": 52.222,
+"e": 52.522,
+"id": "S1_02"
+},
+{
+"w": "por",
+"t": 52.522,
+"e": 52.942,
+"id": "S1_02"
+},
+{
+"w": "debajo",
+"t": 52.942,
+"e": 53.202,
+"id": "S1_02"
+},
+{
+"w": "de",
+"t": 53.202,
+"e": 53.382,
+"id": "S1_02"
+},
+{
+"w": "la",
+"t": 53.382,
+"e": 53.602,
+"id": "S1_02"
+},
+{
+"w": "grieta",
+"t": 53.602,
+"e": 53.862,
+"id": "S1_02"
+},
+{
+"w": "seco",
+"t": 54.542,
+"e": 54.702,
+"id": "S1_03"
+},
+{
+"w": "bien",
+"t": 54.702,
+"e": 55.002,
+"id": "S1_03"
+},
+{
+"w": "y",
+"t": 55.002,
+"e": 55.562,
+"id": "S1_03"
+},
+{
+"w": "limpio",
+"t": 55.562,
+"e": 55.882,
+"id": "S1_03"
+},
+{
+"w": "con",
+"t": 55.882,
+"e": 56.082,
+"id": "S1_03"
+},
+{
+"w": "alcohol",
+"t": 56.082,
+"e": 56.442,
+"id": "S1_03"
+},
+{
+"w": "porque",
+"t": 56.802,
+"e": 57.002,
+"id": "S1_03"
+},
+{
+"w": "el",
+"t": 57.002,
+"e": 57.622,
+"id": "S1_03"
+},
+{
+"w": "plástico",
+"t": 57.622,
+"e": 57.622,
+"id": "S1_03"
+},
+{
+"w": "con",
+"t": 57.622,
+"e": 58.222,
+"id": "S1_03"
+},
+{
+"w": "tierra",
+"t": 58.222,
+"e": 58.222,
+"id": "S1_03"
+},
+{
+"w": "no",
+"t": 58.222,
+"e": 58.622,
+"id": "S1_03"
+},
+{
+"w": "se",
+"t": 58.622,
+"e": 58.982,
+"id": "S1_03"
+},
+{
+"w": "funde",
+"t": 58.982,
+"e": 59.122,
+"id": "S1_03"
+},
+{
+"w": "parejo",
+"t": 59.122,
+"e": 59.542,
+"id": "S1_03"
+},
+{
+"w": "raspo",
+"t": 60.115,
+"e": 60.255,
+"id": "S1_04"
+},
+{
+"w": "la",
+"t": 60.255,
+"e": 60.515,
+"id": "S1_04"
+},
+{
+"w": "capa",
+"t": 60.515,
+"e": 60.775,
+"id": "S1_04"
+},
+{
+"w": "de",
+"t": 60.775,
+"e": 61.235,
+"id": "S1_04"
+},
+{
+"w": "afuera",
+"t": 61.235,
+"e": 61.275,
+"id": "S1_04"
+},
+{
+"w": "la",
+"t": 61.655,
+"e": 61.775,
+"id": "S1_04"
+},
+{
+"w": "que",
+"t": 61.775,
+"e": 61.935,
+"id": "S1_04"
+},
+{
+"w": "quemó",
+"t": 61.935,
+"e": 62.195,
+"id": "S1_04"
+},
+{
+"w": "el",
+"t": 62.195,
+"e": 62.635,
+"id": "S1_04"
+},
+{
+"w": "sol",
+"t": 62.635,
+"e": 62.635,
+"id": "S1_04"
+},
+{
+"w": "hasta",
+"t": 62.975,
+"e": 63.175,
+"id": "S1_04"
+},
+{
+"w": "que",
+"t": 63.175,
+"e": 63.715,
+"id": "S1_04"
+},
+{
+"w": "aparece",
+"t": 63.715,
+"e": 63.715,
+"id": "S1_04"
+},
+{
+"w": "el",
+"t": 63.715,
+"e": 64.015,
+"id": "S1_04"
+},
+{
+"w": "plástico",
+"t": 64.015,
+"e": 64.415,
+"id": "S1_04"
+},
+{
+"w": "sano",
+"t": 64.415,
+"e": 64.795,
+"id": "S1_04"
+},
+{
+"w": "un",
+"t": 65.355,
+"e": 65.455,
+"id": "S1_05"
+},
+{
+"w": "agujerito",
+"t": 65.455,
+"e": 66.055,
+"id": "S1_05"
+},
+{
+"w": "de",
+"t": 66.055,
+"e": 66.415,
+"id": "S1_05"
+},
+{
+"w": "tres",
+"t": 66.415,
+"e": 66.695,
+"id": "S1_05"
+},
+{
+"w": "milímetros",
+"t": 66.695,
+"e": 67.135,
+"id": "S1_05"
+},
+{
+"w": "en",
+"t": 67.135,
+"e": 67.415,
+"id": "S1_05"
+},
+{
+"w": "cada",
+"t": 67.415,
+"e": 67.695,
+"id": "S1_05"
+},
+{
+"w": "punta",
+"t": 67.695,
+"e": 68.015,
+"id": "S1_05"
+},
+{
+"w": "abro",
+"t": 68.638,
+"e": 68.658,
+"id": "S1_06"
+},
+{
+"w": "la",
+"t": 68.658,
+"e": 68.938,
+"id": "S1_06"
+},
+{
+"w": "grieta",
+"t": 68.938,
+"e": 69.158,
+"id": "S1_06"
+},
+{
+"w": "en",
+"t": 69.158,
+"e": 69.478,
+"id": "S1_06"
+},
+{
+"w": "nube",
+"t": 69.478,
+"e": 69.558,
+"id": "S1_06"
+},
+{
+"w": "con",
+"t": 69.558,
+"e": 69.938,
+"id": "S1_06"
+},
+{
+"w": "la",
+"t": 69.938,
+"e": 70.418,
+"id": "S1_06"
+},
+{
+"w": "punta",
+"t": 70.418,
+"e": 70.418,
+"id": "S1_06"
+},
+{
+"w": "caliente",
+"t": 70.418,
+"e": 70.918,
+"id": "S1_06"
+},
+{
+"w": "y",
+"t": 70.9,
+"e": 71.56,
+"id": "S1_07"
+},
+{
+"w": "relleno",
+"t": 71.56,
+"e": 71.9,
+"id": "S1_07"
+},
+{
+"w": "con",
+"t": 71.9,
+"e": 72.18,
+"id": "S1_07"
+},
+{
+"w": "una",
+"t": 72.18,
+"e": 72.6,
+"id": "S1_07"
+},
+{
+"w": "tira",
+"t": 72.6,
+"e": 72.66,
+"id": "S1_07"
+},
+{
+"w": "del",
+"t": 72.66,
+"e": 72.96,
+"id": "S1_07"
+},
+{
+"w": "mismo",
+"t": 72.96,
+"e": 73.3,
+"id": "S1_07"
+},
+{
+"w": "plástico",
+"t": 73.3,
+"e": 73.76,
+"id": "S1_07"
+},
+{
+"w": "derretida",
+"t": 73.76,
+"e": 74.7,
+"id": "S1_07"
+},
+{
+"w": "junto",
+"t": 74.7,
+"e": 75.08,
+"id": "S1_07"
+},
+{
+"w": "con",
+"t": 75.08,
+"e": 75.32,
+"id": "S1_07"
+},
+{
+"w": "el",
+"t": 75.32,
+"e": 75.66,
+"id": "S1_07"
+},
+{
+"w": "tanque",
+"t": 75.66,
+"e": 75.84,
+"id": "S1_07"
+},
+{
+"w": "encima",
+"t": 76.578,
+"e": 76.658,
+"id": "S1_08"
+},
+{
+"w": "la",
+"t": 76.658,
+"e": 77.538,
+"id": "S1_08"
+},
+{
+"w": "malla",
+"t": 77.538,
+"e": 77.538,
+"id": "S1_08"
+},
+{
+"w": "hundida",
+"t": 77.538,
+"e": 78.078,
+"id": "S1_08"
+},
+{
+"w": "con",
+"t": 78.078,
+"e": 78.438,
+"id": "S1_08"
+},
+{
+"w": "calor",
+"t": 78.438,
+"e": 78.658,
+"id": "S1_08"
+},
+{
+"w": "y",
+"t": 78.667,
+"e": 79.347,
+"id": "S1_09"
+},
+{
+"w": "otra",
+"t": 79.347,
+"e": 79.647,
+"id": "S1_09"
+},
+{
+"w": "capa",
+"t": 79.647,
+"e": 79.907,
+"id": "S1_09"
+},
+{
+"w": "de",
+"t": 79.907,
+"e": 80.547,
+"id": "S1_09"
+},
+{
+"w": "plástico",
+"t": 80.547,
+"e": 80.547,
+"id": "S1_09"
+},
+{
+"w": "que",
+"t": 80.547,
+"e": 81.007,
+"id": "S1_09"
+},
+{
+"w": "la",
+"t": 81.007,
+"e": 81.247,
+"id": "S1_09"
+},
+{
+"w": "tapa",
+"t": 81.247,
+"e": 81.427,
+"id": "S1_09"
+},
+{
+"w": "entera",
+"t": 81.427,
+"e": 81.827,
+"id": "S1_09"
+},
+{
+"w": "por",
+"t": 82.245,
+"e": 82.465,
+"id": "S1_10"
+},
+{
+"w": "dentro",
+"t": 82.465,
+"e": 82.785,
+"id": "S1_10"
+},
+{
+"w": "lo",
+"t": 82.785,
+"e": 83.085,
+"id": "S1_10"
+},
+{
+"w": "mismo",
+"t": 83.085,
+"e": 83.405,
+"id": "S1_10"
+},
+{
+"w": "pero",
+"t": 83.405,
+"e": 83.905,
+"id": "S1_10"
+},
+{
+"w": "sin",
+"t": 83.905,
+"e": 84.165,
+"id": "S1_10"
+},
+{
+"w": "malla",
+"t": 84.165,
+"e": 84.405,
+"id": "S1_10"
+},
+{
+"w": "una",
+"t": 84.925,
+"e": 85.065,
+"id": "S1_10"
+},
+{
+"w": "capa",
+"t": 85.065,
+"e": 85.345,
+"id": "S1_10"
+},
+{
+"w": "de",
+"t": 85.345,
+"e": 85.525,
+"id": "S1_10"
+},
+{
+"w": "plástico",
+"t": 85.525,
+"e": 85.885,
+"id": "S1_10"
+},
+{
+"w": "solo",
+"t": 85.885,
+"e": 86.325,
+"id": "S1_10"
+},
+{
+"w": "lo",
+"t": 86.945,
+"e": 87.045,
+"id": "S1_11"
+},
+{
+"w": "dejo",
+"t": 87.045,
+"e": 87.285,
+"id": "S1_11"
+},
+{
+"w": "enfriar",
+"t": 87.285,
+"e": 87.825,
+"id": "S1_11"
+},
+{
+"w": "solo",
+"t": 87.825,
+"e": 88.225,
+"id": "S1_11"
+},
+{
+"w": "sin",
+"t": 88.505,
+"e": 88.685,
+"id": "S1_11"
+},
+{
+"w": "mojarlo",
+"t": 88.805,
+"e": 89.405,
+"id": "S1_11"
+},
+{
+"w": "media",
+"t": 89.405,
+"e": 89.725,
+"id": "S1_11"
+},
+{
+"w": "hora",
+"t": 89.725,
+"e": 89.945,
+"id": "S1_11"
+},
+{
+"w": "lo",
+"t": 90.442,
+"e": 90.662,
+"id": "S1_12"
+},
+{
+"w": "paro",
+"t": 90.662,
+"e": 90.902,
+"id": "S1_12"
+},
+{
+"w": "lo",
+"t": 91.102,
+"e": 91.422,
+"id": "S1_12"
+},
+{
+"w": "lleno",
+"t": 91.422,
+"e": 91.522,
+"id": "S1_12"
+},
+{
+"w": "y",
+"t": 91.533,
+"e": 91.973,
+"id": "S1_13"
+},
+{
+"w": "esa",
+"t": 91.973,
+"e": 92.193,
+"id": "S1_13"
+},
+{
+"w": "es",
+"t": 92.193,
+"e": 92.313,
+"id": "S1_13"
+},
+{
+"w": "la",
+"t": 92.313,
+"e": 92.573,
+"id": "S1_13"
+},
+{
+"w": "reparación",
+"t": 92.573,
+"e": 92.973,
+"id": "S1_13"
+},
+{
+"w": "completa",
+"t": 92.973,
+"e": 93.553,
+"id": "S1_13"
+},
+{
+"w": "Ahora",
+"t": 93.893,
+"e": 94.173,
+"id": "S1_13"
+},
+{
+"w": "lo",
+"t": 94.173,
+"e": 94.613,
+"id": "S1_13"
+},
+{
+"w": "que",
+"t": 94.613,
+"e": 94.893,
+"id": "S1_13"
+},
+{
+"w": "nadie",
+"t": 94.893,
+"e": 95.013,
+"id": "S1_13"
+},
+{
+"w": "te",
+"t": 95.013,
+"e": 95.573,
+"id": "S1_13"
+},
+{
+"w": "explica",
+"t": 95.573,
+"e": 95.633,
+"id": "S1_13"
+},
+{
+"w": "por",
+"t": 96.093,
+"e": 96.293,
+"id": "S1_13"
+},
+{
+"w": "qué",
+"t": 96.293,
+"e": 96.373,
+"id": "S1_13"
+},
+{
+"w": "funciona",
+"t": 96.373,
+"e": 96.973,
+"id": "S1_13"
+},
+{
+"w": "y",
+"t": 96.973,
+"e": 97.513,
+"id": "S1_13"
+},
+{
+"w": "dónde",
+"t": 97.513,
+"e": 97.773,
+"id": "S1_13"
+},
+{
+"w": "se",
+"t": 97.773,
+"e": 98.313,
+"id": "S1_13"
+},
+{
+"w": "arruina",
+"t": 98.313,
+"e": 98.373,
+"id": "S1_13"
+},
+{
+"w": "es",
+"t": 98.922,
+"e": 99.102,
+"id": "S2_02"
+},
+{
+"w": "lo",
+"t": 99.102,
+"e": 99.222,
+"id": "S2_02"
+},
+{
+"w": "que",
+"t": 99.222,
+"e": 99.462,
+"id": "S2_02"
+},
+{
+"w": "más",
+"t": 99.462,
+"e": 99.582,
+"id": "S2_02"
+},
+{
+"w": "me",
+"t": 99.582,
+"e": 99.882,
+"id": "S2_02"
+},
+{
+"w": "escriben",
+"t": 99.882,
+"e": 100.142,
+"id": "S2_02"
+},
+{
+"w": "le",
+"t": 100.582,
+"e": 100.862,
+"id": "S2_02"
+},
+{
+"w": "puse",
+"t": 100.862,
+"e": 100.922,
+"id": "S2_02"
+},
+{
+"w": "pegamento",
+"t": 100.922,
+"e": 101.562,
+"id": "S2_02"
+},
+{
+"w": "le",
+"t": 101.982,
+"e": 102.482,
+"id": "S2_02"
+},
+{
+"w": "puse",
+"t": 102.482,
+"e": 102.482,
+"id": "S2_02"
+},
+{
+"w": "silicona",
+"t": 102.482,
+"e": 103.002,
+"id": "S2_02"
+},
+{
+"w": "y",
+"t": 103.002,
+"e": 103.402,
+"id": "S2_02"
+},
+{
+"w": "a",
+"t": 103.402,
+"e": 103.482,
+"id": "S2_02"
+},
+{
+"w": "los",
+"t": 103.482,
+"e": 103.782,
+"id": "S2_02"
+},
+{
+"w": "pocos",
+"t": 103.782,
+"e": 103.962,
+"id": "S2_02"
+},
+{
+"w": "días",
+"t": 103.962,
+"e": 104.362,
+"id": "S2_02"
+},
+{
+"w": "volvió",
+"t": 104.362,
+"e": 104.842,
+"id": "S2_02"
+},
+{
+"w": "a",
+"t": 104.842,
+"e": 105.142,
+"id": "S2_02"
+},
+{
+"w": "gotear",
+"t": 105.142,
+"e": 105.362,
+"id": "S2_02"
+},
+{
+"w": "y",
+"t": 105.362,
+"e": 105.962,
+"id": "S2_03"
+},
+{
+"w": "tiene",
+"t": 105.962,
+"e": 106.222,
+"id": "S2_03"
+},
+{
+"w": "una",
+"t": 106.222,
+"e": 106.562,
+"id": "S2_03"
+},
+{
+"w": "explicación",
+"t": 106.562,
+"e": 107.102,
+"id": "S2_03"
+},
+{
+"w": "estos",
+"t": 107.682,
+"e": 107.842,
+"id": "S2_03"
+},
+{
+"w": "tanques",
+"t": 107.842,
+"e": 108.262,
+"id": "S2_03"
+},
+{
+"w": "casi",
+"t": 108.262,
+"e": 108.742,
+"id": "S2_03"
+},
+{
+"w": "siempre",
+"t": 108.742,
+"e": 109.122,
+"id": "S2_03"
+},
+{
+"w": "son",
+"t": 109.122,
+"e": 109.422,
+"id": "S2_03"
+},
+{
+"w": "de",
+"t": 109.422,
+"e": 109.682,
+"id": "S2_03"
+},
+{
+"w": "polietileno",
+"t": 109.682,
+"e": 110.242,
+"id": "S2_03"
+},
+{
+"w": "es",
+"t": 110.242,
+"e": 110.722,
+"id": "S2_04"
+},
+{
+"w": "un",
+"t": 110.722,
+"e": 110.982,
+"id": "S2_04"
+},
+{
+"w": "plástico",
+"t": 110.982,
+"e": 111.402,
+"id": "S2_04"
+},
+{
+"w": "ceroso",
+"t": 111.402,
+"e": 111.982,
+"id": "S2_04"
+},
+{
+"w": "resbaloso",
+"t": 112.662,
+"e": 113.122,
+"id": "S2_04"
+},
+{
+"w": "al",
+"t": 113.582,
+"e": 113.602,
+"id": "S2_04"
+},
+{
+"w": "que",
+"t": 113.602,
+"e": 113.782,
+"id": "S2_04"
+},
+{
+"w": "casi",
+"t": 113.782,
+"e": 114.122,
+"id": "S2_04"
+},
+{
+"w": "nada",
+"t": 114.122,
+"e": 114.362,
+"id": "S2_04"
+},
+{
+"w": "se",
+"t": 114.362,
+"e": 114.522,
+"id": "S2_04"
+},
+{
+"w": "le",
+"t": 114.522,
+"e": 114.902,
+"id": "S2_04"
+},
+{
+"w": "pega",
+"t": 114.902,
+"e": 114.902,
+"id": "S2_04"
+},
+{
+"w": "por",
+"t": 115.382,
+"e": 115.502,
+"id": "S2_04"
+},
+{
+"w": "eso",
+"t": 115.502,
+"e": 115.602,
+"id": "S2_04"
+},
+{
+"w": "lo",
+"t": 115.602,
+"e": 115.842,
+"id": "S2_04"
+},
+{
+"w": "usan",
+"t": 115.842,
+"e": 116.162,
+"id": "S2_04"
+},
+{
+"w": "para",
+"t": 116.162,
+"e": 116.402,
+"id": "S2_04"
+},
+{
+"w": "guardar",
+"t": 116.402,
+"e": 116.822,
+"id": "S2_04"
+},
+{
+"w": "agua",
+"t": 116.822,
+"e": 117.382,
+"id": "S2_04"
+},
+{
+"w": "el",
+"t": 117.742,
+"e": 117.862,
+"id": "S2_05"
+},
+{
+"w": "pegamento",
+"t": 117.862,
+"e": 118.382,
+"id": "S2_05"
+},
+{
+"w": "queda",
+"t": 118.382,
+"e": 118.742,
+"id": "S2_05"
+},
+{
+"w": "apoyado",
+"t": 118.742,
+"e": 119.182,
+"id": "S2_05"
+},
+{
+"w": "encima",
+"t": 119.182,
+"e": 119.642,
+"id": "S2_05"
+},
+{
+"w": "pero",
+"t": 120.042,
+"e": 120.142,
+"id": "S2_05"
+},
+{
+"w": "no",
+"t": 120.142,
+"e": 120.422,
+"id": "S2_05"
+},
+{
+"w": "se",
+"t": 120.422,
+"e": 120.882,
+"id": "S2_05"
+},
+{
+"w": "agarra",
+"t": 120.882,
+"e": 120.962,
+"id": "S2_05"
+},
+{
+"w": "y",
+"t": 120.962,
+"e": 121.202,
+"id": "S2_06"
+},
+{
+"w": "el",
+"t": 121.202,
+"e": 121.542,
+"id": "S2_06"
+},
+{
+"w": "agua",
+"t": 121.542,
+"e": 121.542,
+"id": "S2_06"
+},
+{
+"w": "empuja",
+"t": 121.542,
+"e": 122.022,
+"id": "S2_06"
+},
+{
+"w": "desde",
+"t": 122.022,
+"e": 122.322,
+"id": "S2_06"
+},
+{
+"w": "adentro",
+"t": 122.322,
+"e": 122.742,
+"id": "S2_06"
+},
+{
+"w": "con",
+"t": 123.122,
+"e": 123.402,
+"id": "S2_06"
+},
+{
+"w": "todo",
+"t": 123.402,
+"e": 123.642,
+"id": "S2_06"
+},
+{
+"w": "su",
+"t": 123.642,
+"e": 124.162,
+"id": "S2_06"
+},
+{
+"w": "peso",
+"t": 124.162,
+"e": 124.162,
+"id": "S2_06"
+},
+{
+"w": "todo",
+"t": 124.642,
+"e": 124.722,
+"id": "S2_06"
+},
+{
+"w": "el",
+"t": 124.722,
+"e": 125.122,
+"id": "S2_06"
+},
+{
+"w": "día",
+"t": 125.122,
+"e": 125.122,
+"id": "S2_07"
+},
+{
+"w": "y",
+"t": 125.122,
+"e": 125.602,
+"id": "S2_07"
+},
+{
+"w": "encima",
+"t": 125.602,
+"e": 125.982,
+"id": "S2_07"
+},
+{
+"w": "el",
+"t": 125.982,
+"e": 126.582,
+"id": "S2_07"
+},
+{
+"w": "sol",
+"t": 126.582,
+"e": 126.582,
+"id": "S2_07"
+},
+{
+"w": "lo",
+"t": 126.582,
+"e": 126.902,
+"id": "S2_07"
+},
+{
+"w": "calienta",
+"t": 126.902,
+"e": 127.242,
+"id": "S2_07"
+},
+{
+"w": "de",
+"t": 127.242,
+"e": 127.482,
+"id": "S2_07"
+},
+{
+"w": "día",
+"t": 127.482,
+"e": 127.642,
+"id": "S2_07"
+},
+{
+"w": "y",
+"t": 127.642,
+"e": 128.082,
+"id": "S2_07"
+},
+{
+"w": "lo",
+"t": 128.082,
+"e": 128.402,
+"id": "S2_07"
+},
+{
+"w": "enfría",
+"t": 128.402,
+"e": 128.582,
+"id": "S2_07"
+},
+{
+"w": "de",
+"t": 128.582,
+"e": 129.062,
+"id": "S2_07"
+},
+{
+"w": "noche",
+"t": 129.062,
+"e": 129.062,
+"id": "S2_07"
+},
+{
+"w": "y",
+"t": 129.062,
+"e": 129.502,
+"id": "S2_07"
+},
+{
+"w": "el",
+"t": 129.502,
+"e": 129.722,
+"id": "S2_07"
+},
+{
+"w": "plástico",
+"t": 129.722,
+"e": 130.042,
+"id": "S2_07"
+},
+{
+"w": "se",
+"t": 130.042,
+"e": 130.602,
+"id": "S2_07"
+},
+{
+"w": "mueve",
+"t": 130.602,
+"e": 130.662,
+"id": "S2_07"
+},
+{
+"w": "un",
+"t": 131.082,
+"e": 131.242,
+"id": "S2_08"
+},
+{
+"w": "pegamento",
+"t": 131.242,
+"e": 131.662,
+"id": "S2_08"
+},
+{
+"w": "que",
+"t": 131.662,
+"e": 131.962,
+"id": "S2_08"
+},
+{
+"w": "no",
+"t": 131.962,
+"e": 132.182,
+"id": "S2_08"
+},
+{
+"w": "se",
+"t": 132.182,
+"e": 132.442,
+"id": "S2_08"
+},
+{
+"w": "agarró",
+"t": 132.442,
+"e": 132.742,
+"id": "S2_08"
+},
+{
+"w": "se",
+"t": 133.042,
+"e": 133.202,
+"id": "S2_08"
+},
+{
+"w": "despega",
+"t": 133.202,
+"e": 133.622,
+"id": "S2_08"
+},
+{
+"w": "con",
+"t": 133.622,
+"e": 133.982,
+"id": "S2_08"
+},
+{
+"w": "muy",
+"t": 133.982,
+"e": 134.382,
+"id": "S2_08"
+},
+{
+"w": "poquito",
+"t": 134.382,
+"e": 134.642,
+"id": "S2_08"
+},
+{
+"w": "por",
+"t": 135.122,
+"e": 135.222,
+"id": "S2_09"
+},
+{
+"w": "eso",
+"t": 135.222,
+"e": 135.362,
+"id": "S2_09"
+},
+{
+"w": "no",
+"t": 135.362,
+"e": 135.662,
+"id": "S2_09"
+},
+{
+"w": "pegamos",
+"t": 135.662,
+"e": 136.062,
+"id": "S2_09"
+},
+{
+"w": "nada",
+"t": 136.062,
+"e": 136.402,
+"id": "S2_09"
+},
+{
+"w": "hacemos",
+"t": 136.802,
+"e": 137.062,
+"id": "S2_09"
+},
+{
+"w": "que",
+"t": 137.062,
+"e": 137.342,
+"id": "S2_09"
+},
+{
+"w": "el",
+"t": 137.342,
+"e": 137.682,
+"id": "S2_09"
+},
+{
+"w": "tanque",
+"t": 137.682,
+"e": 138.242,
+"id": "S2_09"
+},
+{
+"w": "se",
+"t": 138.242,
+"e": 138.442,
+"id": "S2_09"
+},
+{
+"w": "cierre",
+"t": 138.442,
+"e": 138.802,
+"id": "S2_09"
+},
+{
+"w": "casi",
+"t": 139.222,
+"e": 139.422,
+"id": "S2_11"
+},
+{
+"w": "lo",
+"t": 139.842,
+"e": 139.982,
+"id": "S2_11"
+},
+{
+"w": "derrites",
+"t": 139.982,
+"e": 140.442,
+"id": "S2_11"
+},
+{
+"w": "pero",
+"t": 140.442,
+"e": 141.322,
+"id": "S2_11"
+},
+{
+"w": "con",
+"t": 141.322,
+"e": 141.622,
+"id": "S2_11"
+},
+{
+"w": "un",
+"t": 141.622,
+"e": 141.942,
+"id": "S2_11"
+},
+{
+"w": "detalle",
+"t": 141.942,
+"e": 142.182,
+"id": "S2_11"
+},
+{
+"w": "que",
+"t": 142.182,
+"e": 142.522,
+"id": "S2_11"
+},
+{
+"w": "decide",
+"t": 142.522,
+"e": 142.922,
+"id": "S2_11"
+},
+{
+"w": "todo",
+"t": 142.922,
+"e": 143.362,
+"id": "S2_11"
+},
+{
+"w": "tiene",
+"t": 143.822,
+"e": 143.982,
+"id": "S2_11"
+},
+{
+"w": "que",
+"t": 143.982,
+"e": 144.322,
+"id": "S2_11"
+},
+{
+"w": "ser",
+"t": 144.322,
+"e": 144.382,
+"id": "S2_11"
+},
+{
+"w": "el",
+"t": 144.382,
+"e": 144.802,
+"id": "S2_11"
+},
+{
+"w": "mismo",
+"t": 144.802,
+"e": 145.062,
+"id": "S2_11"
+},
+{
+"w": "plástico",
+"t": 145.062,
+"e": 145.502,
+"id": "S2_11"
+},
+{
+"w": "Vamos",
+"t": 146.082,
+"e": 146.202,
+"id": "S2_11"
+},
+{
+"w": "al",
+"t": 146.202,
+"e": 146.442,
+"id": "S2_11"
+},
+{
+"w": "taller",
+"t": 146.442,
+"e": 146.702,
+"id": "S2_11"
+},
+{
+"w": "este",
+"t": 147.315,
+"e": 147.415,
+"id": "S3_01"
+},
+{
+"w": "pedazo",
+"t": 147.415,
+"e": 147.835,
+"id": "S3_01"
+},
+{
+"w": "es",
+"t": 147.835,
+"e": 148.175,
+"id": "S3_01"
+},
+{
+"w": "de",
+"t": 148.175,
+"e": 148.335,
+"id": "S3_01"
+},
+{
+"w": "un",
+"t": 148.335,
+"e": 148.515,
+"id": "S3_01"
+},
+{
+"w": "tanque",
+"t": 148.515,
+"e": 148.775,
+"id": "S3_01"
+},
+{
+"w": "viejo",
+"t": 148.775,
+"e": 149.115,
+"id": "S3_01"
+},
+{
+"w": "que",
+"t": 149.115,
+"e": 149.335,
+"id": "S3_01"
+},
+{
+"w": "se",
+"t": 149.335,
+"e": 149.735,
+"id": "S3_01"
+},
+{
+"w": "partió",
+"t": 149.735,
+"e": 149.895,
+"id": "S3_01"
+},
+{
+"w": "y",
+"t": 149.895,
+"e": 150.335,
+"id": "S3_01"
+},
+{
+"w": "lo",
+"t": 150.335,
+"e": 150.595,
+"id": "S3_01"
+},
+{
+"w": "primero",
+"t": 150.595,
+"e": 150.775,
+"id": "S3_01"
+},
+{
+"w": "que",
+"t": 150.775,
+"e": 151.015,
+"id": "S3_01"
+},
+{
+"w": "tienes",
+"t": 151.015,
+"e": 151.275,
+"id": "S3_01"
+},
+{
+"w": "que",
+"t": 151.275,
+"e": 151.855,
+"id": "S3_01"
+},
+{
+"w": "buscar",
+"t": 151.855,
+"e": 151.855,
+"id": "S3_01"
+},
+{
+"w": "en",
+"t": 151.855,
+"e": 152.115,
+"id": "S3_01"
+},
+{
+"w": "el",
+"t": 152.115,
+"e": 152.395,
+"id": "S3_01"
+},
+{
+"w": "tuyo",
+"t": 152.395,
+"e": 152.535,
+"id": "S3_01"
+},
+{
+"w": "es",
+"t": 152.535,
+"e": 153.135,
+"id": "S3_01"
+},
+{
+"w": "esto",
+"t": 153.135,
+"e": 153.575,
+"id": "S3_01"
+},
+{
+"w": "el",
+"t": 153.862,
+"e": 154.022,
+"id": "S3_02"
+},
+{
+"w": "triangulito",
+"t": 154.022,
+"e": 154.662,
+"id": "S3_02"
+},
+{
+"w": "de",
+"t": 154.662,
+"e": 154.962,
+"id": "S3_02"
+},
+{
+"w": "reciclaje",
+"t": 154.962,
+"e": 155.482,
+"id": "S3_02"
+},
+{
+"w": "suele",
+"t": 155.902,
+"e": 156.042,
+"id": "S3_02"
+},
+{
+"w": "estar",
+"t": 156.042,
+"e": 156.262,
+"id": "S3_02"
+},
+{
+"w": "en",
+"t": 156.262,
+"e": 156.442,
+"id": "S3_02"
+},
+{
+"w": "la",
+"t": 156.442,
+"e": 157.042,
+"id": "S3_02"
+},
+{
+"w": "base",
+"t": 157.042,
+"e": 157.042,
+"id": "S3_02"
+},
+{
+"w": "cerca",
+"t": 157.522,
+"e": 157.542,
+"id": "S3_02"
+},
+{
+"w": "de",
+"t": 157.542,
+"e": 157.742,
+"id": "S3_02"
+},
+{
+"w": "la",
+"t": 157.742,
+"e": 158.102,
+"id": "S3_02"
+},
+{
+"w": "tapa",
+"t": 158.102,
+"e": 158.182,
+"id": "S3_02"
+},
+{
+"w": "o",
+"t": 158.182,
+"e": 158.622,
+"id": "S3_02"
+},
+{
+"w": "en",
+"t": 158.622,
+"e": 158.722,
+"id": "S3_02"
+},
+{
+"w": "la",
+"t": 158.722,
+"e": 158.982,
+"id": "S3_02"
+},
+{
+"w": "etiqueta",
+"t": 158.982,
+"e": 159.262,
+"id": "S3_02"
+},
+{
+"w": "del",
+"t": 159.262,
+"e": 159.562,
+"id": "S3_02"
+},
+{
+"w": "fabricante",
+"t": 159.562,
+"e": 160.082,
+"id": "S3_02"
+},
+{
+"w": "si",
+"t": 160.608,
+"e": 160.768,
+"id": "S3_03"
+},
+{
+"w": "adentro",
+"t": 160.768,
+"e": 161.168,
+"id": "S3_03"
+},
+{
+"w": "dice",
+"t": 161.168,
+"e": 161.488,
+"id": "S3_03"
+},
+{
+"w": "2",
+"t": 161.488,
+"e": 161.968,
+"id": "S3_03"
+},
+{
+"w": "o",
+"t": 161.968,
+"e": 162.448,
+"id": "S3_03"
+},
+{
+"w": "4",
+"t": 162.448,
+"e": 162.888,
+"id": "S3_03"
+},
+{
+"w": "o",
+"t": 162.888,
+"e": 163.348,
+"id": "S3_03"
+},
+{
+"w": "las",
+"t": 163.348,
+"e": 163.708,
+"id": "S3_03"
+},
+{
+"w": "letras",
+"t": 163.708,
+"e": 163.888,
+"id": "S3_03"
+},
+{
+"w": "PE",
+"t": 163.888,
+"e": 164.388,
+"id": "S3_03"
+},
+{
+"w": "es",
+"t": 164.388,
+"e": 164.988,
+"id": "S3_03"
+},
+{
+"w": "polietileno",
+"t": 164.988,
+"e": 165.708,
+"id": "S3_03"
+},
+{
+"w": "es",
+"t": 166.048,
+"e": 166.228,
+"id": "S3_03"
+},
+{
+"w": "lo",
+"t": 166.228,
+"e": 166.328,
+"id": "S3_03"
+},
+{
+"w": "más",
+"t": 166.328,
+"e": 166.668,
+"id": "S3_03"
+},
+{
+"w": "común",
+"t": 166.668,
+"e": 166.868,
+"id": "S3_03"
+},
+{
+"w": "en",
+"t": 166.868,
+"e": 167.188,
+"id": "S3_03"
+},
+{
+"w": "tanques",
+"t": 167.188,
+"e": 167.508,
+"id": "S3_03"
+},
+{
+"w": "de",
+"t": 167.508,
+"e": 168.008,
+"id": "S3_03"
+},
+{
+"w": "agua",
+"t": 168.0,
+"e": 168.0,
+"id": "S3_04a"
+},
+{
+"w": "y",
+"t": 168.0,
+"e": 168.36,
+"id": "S3_04a"
+},
+{
+"w": "si",
+"t": 168.36,
+"e": 168.52,
+"id": "S3_04a"
+},
+{
+"w": "tu",
+"t": 168.52,
+"e": 168.74,
+"id": "S3_04a"
+},
+{
+"w": "tanque",
+"t": 168.74,
+"e": 169.02,
+"id": "S3_04a"
+},
+{
+"w": "es",
+"t": 169.02,
+"e": 169.32,
+"id": "S3_04a"
+},
+{
+"w": "de",
+"t": 169.32,
+"e": 169.46,
+"id": "S3_04a"
+},
+{
+"w": "estos",
+"t": 169.46,
+"e": 169.82,
+"id": "S3_04a"
+},
+{
+"w": "viejos",
+"t": 169.82,
+"e": 170.32,
+"id": "S3_04a"
+},
+{
+"w": "grises",
+"t": 170.32,
+"e": 170.68,
+"id": "S3_04a"
+},
+{
+"w": "de",
+"t": 170.68,
+"e": 170.98,
+"id": "S3_04a"
+},
+{
+"w": "fibrocemento",
+"t": 170.98,
+"e": 171.72,
+"id": "S3_04a"
+},
+{
+"w": "esto",
+"t": 172.18,
+"e": 172.28,
+"id": "S3_04a"
+},
+{
+"w": "no",
+"t": 172.28,
+"e": 172.46,
+"id": "S3_04a"
+},
+{
+"w": "va",
+"t": 172.46,
+"e": 172.64,
+"id": "S3_04a"
+},
+{
+"w": "esos",
+"t": 173.178,
+"e": 173.278,
+"id": "S3_04b"
+},
+{
+"w": "pueden",
+"t": 173.278,
+"e": 173.558,
+"id": "S3_04b"
+},
+{
+"w": "tener",
+"t": 173.558,
+"e": 173.838,
+"id": "S3_04b"
+},
+{
+"w": "amianto",
+"t": 173.838,
+"e": 174.478,
+"id": "S3_04b"
+},
+{
+"w": "no",
+"t": 174.778,
+"e": 174.858,
+"id": "S3_04b"
+},
+{
+"w": "se",
+"t": 174.858,
+"e": 175.278,
+"id": "S3_04b"
+},
+{
+"w": "raspan",
+"t": 175.278,
+"e": 175.578,
+"id": "S3_04b"
+},
+{
+"w": "ni",
+"t": 175.718,
+"e": 175.898,
+"id": "S3_04b"
+},
+{
+"w": "se",
+"t": 175.898,
+"e": 176.238,
+"id": "S3_04b"
+},
+{
+"w": "lijan",
+"t": 176.238,
+"e": 176.358,
+"id": "S3_04b"
+},
+{
+"w": "se",
+"t": 176.698,
+"e": 177.038,
+"id": "S3_04b"
+},
+{
+"w": "cambian",
+"t": 177.038,
+"e": 177.338,
+"id": "S3_04b"
+},
+{
+"w": "y",
+"t": 177.6,
+"e": 177.9,
+"id": "S3_05"
+},
+{
+"w": "los",
+"t": 177.9,
+"e": 178.08,
+"id": "S3_05"
+},
+{
+"w": "de",
+"t": 178.08,
+"e": 178.38,
+"id": "S3_05"
+},
+{
+"w": "fibra",
+"t": 178.38,
+"e": 178.52,
+"id": "S3_05"
+},
+{
+"w": "de",
+"t": 178.52,
+"e": 179.02,
+"id": "S3_05"
+},
+{
+"w": "vidrio",
+"t": 179.02,
+"e": 179.02,
+"id": "S3_05"
+},
+{
+"w": "tampoco",
+"t": 179.02,
+"e": 179.72,
+"id": "S3_05"
+},
+{
+"w": "se",
+"t": 179.72,
+"e": 180.04,
+"id": "S3_05"
+},
+{
+"w": "derriten",
+"t": 180.04,
+"e": 180.44,
+"id": "S3_05"
+},
+{
+"w": "se",
+"t": 180.78,
+"e": 180.98,
+"id": "S3_05"
+},
+{
+"w": "arreglan",
+"t": 180.98,
+"e": 181.34,
+"id": "S3_05"
+},
+{
+"w": "con",
+"t": 181.34,
+"e": 181.72,
+"id": "S3_05"
+},
+{
+"w": "resina",
+"t": 181.72,
+"e": 182.04,
+"id": "S3_05"
+},
+{
+"w": "que",
+"t": 182.42,
+"e": 182.5,
+"id": "S3_05"
+},
+{
+"w": "es",
+"t": 182.5,
+"e": 182.84,
+"id": "S3_05"
+},
+{
+"w": "otro",
+"t": 182.84,
+"e": 183.14,
+"id": "S3_05"
+},
+{
+"w": "vídeo",
+"t": 183.14,
+"e": 183.5,
+"id": "S3_05"
+},
+{
+"w": "esto",
+"t": 184.0,
+"e": 184.1,
+"id": "S3_05"
+},
+{
+"w": "es",
+"t": 184.1,
+"e": 184.3,
+"id": "S3_05"
+},
+{
+"w": "para",
+"t": 184.3,
+"e": 184.42,
+"id": "S3_05"
+},
+{
+"w": "los",
+"t": 184.42,
+"e": 184.62,
+"id": "S3_05"
+},
+{
+"w": "de",
+"t": 184.62,
+"e": 184.96,
+"id": "S3_05"
+},
+{
+"w": "plástico",
+"t": 184.96,
+"e": 185.16,
+"id": "S3_05"
+},
+{
+"w": "que",
+"t": 185.36,
+"e": 185.7,
+"id": "S3_05"
+},
+{
+"w": "son",
+"t": 185.7,
+"e": 185.82,
+"id": "S3_05"
+},
+{
+"w": "la",
+"t": 185.82,
+"e": 186.12,
+"id": "S3_05"
+},
+{
+"w": "mayoría",
+"t": 186.12,
+"e": 186.38,
+"id": "S3_05"
+},
+{
+"w": "y",
+"t": 186.367,
+"e": 186.827,
+"id": "S3_06a"
+},
+{
+"w": "si",
+"t": 186.827,
+"e": 187.007,
+"id": "S3_06a"
+},
+{
+"w": "no",
+"t": 187.007,
+"e": 187.247,
+"id": "S3_06a"
+},
+{
+"w": "encuentras",
+"t": 187.247,
+"e": 187.527,
+"id": "S3_06a"
+},
+{
+"w": "el",
+"t": 187.527,
+"e": 188.027,
+"id": "S3_06a"
+},
+{
+"w": "símbolo",
+"t": 188.027,
+"e": 188.467,
+"id": "S3_06a"
+},
+{
+"w": "busca",
+"t": 188.467,
+"e": 188.807,
+"id": "S3_06a"
+},
+{
+"w": "la",
+"t": 188.807,
+"e": 189.507,
+"id": "S3_06a"
+},
+{
+"w": "etiqueta",
+"t": 189.507,
+"e": 189.507,
+"id": "S3_06a"
+},
+{
+"w": "o",
+"t": 189.507,
+"e": 189.927,
+"id": "S3_06a"
+},
+{
+"w": "el",
+"t": 189.927,
+"e": 190.327,
+"id": "S3_06a"
+},
+{
+"w": "nombre",
+"t": 190.327,
+"e": 190.327,
+"id": "S3_06a"
+},
+{
+"w": "del",
+"t": 190.327,
+"e": 190.607,
+"id": "S3_06a"
+},
+{
+"w": "fabricante",
+"t": 190.607,
+"e": 191.147,
+"id": "S3_06a"
+},
+{
+"w": "casi",
+"t": 192.028,
+"e": 192.228,
+"id": "S3_06b"
+},
+{
+"w": "todos",
+"t": 192.228,
+"e": 192.628,
+"id": "S3_06b"
+},
+{
+"w": "los",
+"t": 192.628,
+"e": 193.028,
+"id": "S3_06b"
+},
+{
+"w": "tanques",
+"t": 193.028,
+"e": 193.168,
+"id": "S3_06b"
+},
+{
+"w": "de",
+"t": 193.168,
+"e": 193.478,
+"id": "S3_06b"
+},
+{
+"w": "plástico",
+"t": 193.478,
+"e": 193.798,
+"id": "S3_06b"
+},
+{
+"w": "para",
+"t": 193.798,
+"e": 194.138,
+"id": "S3_06b"
+},
+{
+"w": "agua",
+"t": 194.138,
+"e": 194.438,
+"id": "S3_06b"
+},
+{
+"w": "son",
+"t": 194.438,
+"e": 194.978,
+"id": "S3_06b"
+},
+{
+"w": "de",
+"t": 194.978,
+"e": 195.258,
+"id": "S3_06b"
+},
+{
+"w": "polietileno",
+"t": 195.258,
+"e": 195.778,
+"id": "S3_06b"
+},
+{
+"w": "si",
+"t": 196.395,
+"e": 196.495,
+"id": "S3_07"
+},
+{
+"w": "dice",
+"t": 196.495,
+"e": 196.715,
+"id": "S3_07"
+},
+{
+"w": "5",
+"t": 196.715,
+"e": 197.215,
+"id": "S3_07"
+},
+{
+"w": "o",
+"t": 197.215,
+"e": 197.675,
+"id": "S3_07"
+},
+{
+"w": "PP",
+"t": 197.675,
+"e": 197.935,
+"id": "S3_07"
+},
+{
+"w": "es",
+"t": 197.935,
+"e": 198.595,
+"id": "S3_07"
+},
+{
+"w": "polipropileno",
+"t": 198.595,
+"e": 199.415,
+"id": "S3_07"
+},
+{
+"w": "y",
+"t": 199.415,
+"e": 199.795,
+"id": "S3_07"
+},
+{
+"w": "aquí",
+"t": 199.795,
+"e": 200.095,
+"id": "S3_07"
+},
+{
+"w": "viene",
+"t": 200.095,
+"e": 200.295,
+"id": "S3_07"
+},
+{
+"w": "la",
+"t": 200.295,
+"e": 200.875,
+"id": "S3_07"
+},
+{
+"w": "trampa",
+"t": 200.875,
+"e": 200.875,
+"id": "S3_07"
+},
+{
+"w": "mucha",
+"t": 201.678,
+"e": 201.818,
+"id": "S3_08"
+},
+{
+"w": "gente",
+"t": 201.818,
+"e": 202.118,
+"id": "S3_08"
+},
+{
+"w": "funde",
+"t": 202.118,
+"e": 202.558,
+"id": "S3_08"
+},
+{
+"w": "tapitas",
+"t": 202.558,
+"e": 202.958,
+"id": "S3_08"
+},
+{
+"w": "de",
+"t": 202.958,
+"e": 203.278,
+"id": "S3_08"
+},
+{
+"w": "refresco",
+"t": 203.278,
+"e": 203.718,
+"id": "S3_08"
+},
+{
+"w": "porque",
+"t": 203.718,
+"e": 204.178,
+"id": "S3_08"
+},
+{
+"w": "lo",
+"t": 204.178,
+"e": 204.458,
+"id": "S3_08"
+},
+{
+"w": "vio",
+"t": 204.458,
+"e": 204.458,
+"id": "S3_08"
+},
+{
+"w": "en",
+"t": 204.458,
+"e": 204.698,
+"id": "S3_08"
+},
+{
+"w": "internet",
+"t": 204.698,
+"e": 205.118,
+"id": "S3_08"
+},
+{
+"w": "y",
+"t": 205.133,
+"e": 205.653,
+"id": "S3_09"
+},
+{
+"w": "muchas",
+"t": 205.653,
+"e": 205.973,
+"id": "S3_09"
+},
+{
+"w": "tapitas",
+"t": 205.973,
+"e": 206.513,
+"id": "S3_09"
+},
+{
+"w": "son",
+"t": 206.513,
+"e": 206.993,
+"id": "S3_09"
+},
+{
+"w": "de",
+"t": 206.993,
+"e": 207.313,
+"id": "S3_09"
+},
+{
+"w": "polipropileno",
+"t": 207.313,
+"e": 207.953,
+"id": "S3_09"
+},
+{
+"w": "mira",
+"t": 208.453,
+"e": 208.633,
+"id": "S3_09"
+},
+{
+"w": "aquí",
+"t": 208.633,
+"e": 209.173,
+"id": "S3_09"
+},
+{
+"w": "dice",
+"t": 209.173,
+"e": 209.413,
+"id": "S3_09"
+},
+{
+"w": "5",
+"t": 209.413,
+"e": 209.913,
+"id": "S3_09"
+},
+{
+"w": "el",
+"t": 210.638,
+"e": 210.798,
+"id": "S3_10"
+},
+{
+"w": "polietileno",
+"t": 210.798,
+"e": 211.418,
+"id": "S3_10"
+},
+{
+"w": "y",
+"t": 211.418,
+"e": 211.698,
+"id": "S3_10"
+},
+{
+"w": "el",
+"t": 211.698,
+"e": 211.958,
+"id": "S3_10"
+},
+{
+"w": "polipropileno",
+"t": 211.958,
+"e": 212.598,
+"id": "S3_10"
+},
+{
+"w": "se",
+"t": 212.598,
+"e": 213.178,
+"id": "S3_10"
+},
+{
+"w": "derriten",
+"t": 213.178,
+"e": 213.598,
+"id": "S3_10"
+},
+{
+"w": "juntos",
+"t": 213.598,
+"e": 214.098,
+"id": "S3_10"
+},
+{
+"w": "parecen",
+"t": 214.618,
+"e": 214.738,
+"id": "S3_10"
+},
+{
+"w": "unidos",
+"t": 214.738,
+"e": 215.198,
+"id": "S3_10"
+},
+{
+"w": "pero",
+"t": 215.198,
+"e": 215.638,
+"id": "S3_10"
+},
+{
+"w": "no",
+"t": 215.638,
+"e": 215.878,
+"id": "S3_10"
+},
+{
+"w": "se",
+"t": 215.878,
+"e": 216.218,
+"id": "S3_10"
+},
+{
+"w": "mezclan",
+"t": 216.218,
+"e": 216.838,
+"id": "S3_10"
+},
+{
+"w": "a",
+"t": 217.182,
+"e": 217.302,
+"id": "S3_11"
+},
+{
+"w": "los",
+"t": 217.302,
+"e": 217.422,
+"id": "S3_11"
+},
+{
+"w": "días",
+"t": 217.422,
+"e": 217.722,
+"id": "S3_11"
+},
+{
+"w": "con",
+"t": 217.722,
+"e": 218.122,
+"id": "S3_11"
+},
+{
+"w": "la",
+"t": 218.122,
+"e": 218.722,
+"id": "S3_11"
+},
+{
+"w": "presión",
+"t": 218.722,
+"e": 218.722,
+"id": "S3_11"
+},
+{
+"w": "el",
+"t": 218.722,
+"e": 219.262,
+"id": "S3_11"
+},
+{
+"w": "parche",
+"t": 219.262,
+"e": 219.502,
+"id": "S3_11"
+},
+{
+"w": "se",
+"t": 219.502,
+"e": 219.822,
+"id": "S3_11"
+},
+{
+"w": "suelta",
+"t": 219.822,
+"e": 220.082,
+"id": "S3_11"
+},
+{
+"w": "de",
+"t": 220.082,
+"e": 220.242,
+"id": "S3_11"
+},
+{
+"w": "una",
+"t": 220.242,
+"e": 220.462,
+"id": "S3_11"
+},
+{
+"w": "pieza",
+"t": 220.462,
+"e": 220.742,
+"id": "S3_11"
+},
+{
+"w": "y",
+"t": 220.742,
+"e": 221.282,
+"id": "S3_11"
+},
+{
+"w": "crees",
+"t": 221.282,
+"e": 221.502,
+"id": "S3_11"
+},
+{
+"w": "que",
+"t": 221.502,
+"e": 221.602,
+"id": "S3_11"
+},
+{
+"w": "el",
+"t": 221.602,
+"e": 221.782,
+"id": "S3_11"
+},
+{
+"w": "método",
+"t": 221.782,
+"e": 222.082,
+"id": "S3_11"
+},
+{
+"w": "no",
+"t": 222.082,
+"e": 222.502,
+"id": "S3_11"
+},
+{
+"w": "sirve",
+"t": 222.502,
+"e": 222.662,
+"id": "S3_11"
+},
+{
+"w": "lo",
+"t": 223.112,
+"e": 223.332,
+"id": "S3_12"
+},
+{
+"w": "seguro",
+"t": 223.332,
+"e": 223.552,
+"id": "S3_12"
+},
+{
+"w": "es",
+"t": 223.552,
+"e": 224.132,
+"id": "S3_12"
+},
+{
+"w": "rellenar",
+"t": 224.132,
+"e": 224.552,
+"id": "S3_12"
+},
+{
+"w": "con",
+"t": 224.552,
+"e": 224.792,
+"id": "S3_12"
+},
+{
+"w": "plástico",
+"t": 224.792,
+"e": 225.172,
+"id": "S3_12"
+},
+{
+"w": "del",
+"t": 225.172,
+"e": 225.472,
+"id": "S3_12"
+},
+{
+"w": "mismo",
+"t": 225.472,
+"e": 225.752,
+"id": "S3_12"
+},
+{
+"w": "número",
+"t": 225.752,
+"e": 226.112,
+"id": "S3_12"
+},
+{
+"w": "un",
+"t": 226.635,
+"e": 226.775,
+"id": "S3_13"
+},
+{
+"w": "bidón",
+"t": 226.775,
+"e": 227.015,
+"id": "S3_13"
+},
+{
+"w": "viejo",
+"t": 227.015,
+"e": 227.395,
+"id": "S3_13"
+},
+{
+"w": "de",
+"t": 227.395,
+"e": 227.955,
+"id": "S3_13"
+},
+{
+"w": "agua",
+"t": 227.955,
+"e": 227.955,
+"id": "S3_13"
+},
+{
+"w": "que",
+"t": 227.955,
+"e": 228.335,
+"id": "S3_13"
+},
+{
+"w": "diga",
+"t": 228.335,
+"e": 228.575,
+"id": "S3_13"
+},
+{
+"w": "2",
+"t": 228.575,
+"e": 228.855,
+"id": "S3_13"
+},
+{
+"w": "te",
+"t": 228.855,
+"e": 229.255,
+"id": "S3_13"
+},
+{
+"w": "da",
+"t": 229.255,
+"e": 229.455,
+"id": "S3_13"
+},
+{
+"w": "tiras",
+"t": 229.455,
+"e": 229.715,
+"id": "S3_13"
+},
+{
+"w": "de",
+"t": 229.715,
+"e": 230.015,
+"id": "S3_13"
+},
+{
+"w": "sobra",
+"t": 230.015,
+"e": 230.215,
+"id": "S3_13"
+},
+{
+"w": "lo",
+"t": 230.625,
+"e": 231.005,
+"id": "S3_14"
+},
+{
+"w": "corto",
+"t": 231.005,
+"e": 231.085,
+"id": "S3_14"
+},
+{
+"w": "en",
+"t": 231.085,
+"e": 231.445,
+"id": "S3_14"
+},
+{
+"w": "tiras",
+"t": 231.445,
+"e": 231.505,
+"id": "S3_14"
+},
+{
+"w": "de",
+"t": 231.505,
+"e": 231.765,
+"id": "S3_14"
+},
+{
+"w": "medio",
+"t": 231.765,
+"e": 231.965,
+"id": "S3_14"
+},
+{
+"w": "centímetro",
+"t": 231.965,
+"e": 232.465,
+"id": "S3_14"
+},
+{
+"w": "de",
+"t": 232.465,
+"e": 233.025,
+"id": "S3_14"
+},
+{
+"w": "ancho",
+"t": 233.025,
+"e": 233.025,
+"id": "S3_14"
+},
+{
+"w": "esas",
+"t": 233.625,
+"e": 233.685,
+"id": "S3_14"
+},
+{
+"w": "son",
+"t": 233.685,
+"e": 233.945,
+"id": "S3_14"
+},
+{
+"w": "mis",
+"t": 233.945,
+"e": 234.185,
+"id": "S3_14"
+},
+{
+"w": "varillas",
+"t": 234.185,
+"e": 234.445,
+"id": "S3_14"
+},
+{
+"w": "de",
+"t": 234.445,
+"e": 234.985,
+"id": "S3_14"
+},
+{
+"w": "relleno",
+"t": 234.985,
+"e": 235.065,
+"id": "S3_14"
+},
+{
+"w": "si",
+"t": 235.472,
+"e": 235.612,
+"id": "S3_15"
+},
+{
+"w": "consigues",
+"t": 235.612,
+"e": 236.192,
+"id": "S3_15"
+},
+{
+"w": "tiras",
+"t": 236.192,
+"e": 236.572,
+"id": "S3_15"
+},
+{
+"w": "negras",
+"t": 236.572,
+"e": 237.012,
+"id": "S3_15"
+},
+{
+"w": "de",
+"t": 237.012,
+"e": 237.452,
+"id": "S3_15"
+},
+{
+"w": "un",
+"t": 237.452,
+"e": 237.832,
+"id": "S3_15"
+},
+{
+"w": "tanque",
+"t": 237.832,
+"e": 238.072,
+"id": "S3_15"
+},
+{
+"w": "roto",
+"t": 238.072,
+"e": 238.352,
+"id": "S3_15"
+},
+{
+"w": "del",
+"t": 238.352,
+"e": 238.612,
+"id": "S3_15"
+},
+{
+"w": "mismo",
+"t": 238.612,
+"e": 238.872,
+"id": "S3_15"
+},
+{
+"w": "tipo",
+"t": 238.872,
+"e": 239.232,
+"id": "S3_15"
+},
+{
+"w": "mejor",
+"t": 239.232,
+"e": 239.892,
+"id": "S3_15"
+},
+{
+"w": "todavía",
+"t": 239.892,
+"e": 240.452,
+"id": "S3_15"
+},
+{
+"w": "queda",
+"t": 240.932,
+"e": 241.012,
+"id": "S3_15"
+},
+{
+"w": "del",
+"t": 241.012,
+"e": 241.312,
+"id": "S3_15"
+},
+{
+"w": "mismo",
+"t": 241.312,
+"e": 241.572,
+"id": "S3_15"
+},
+{
+"w": "color",
+"t": 241.572,
+"e": 241.972,
+"id": "S3_15"
+},
+{
+"w": "y",
+"t": 241.967,
+"e": 242.527,
+"id": "S4_01"
+},
+{
+"w": "ojo",
+"t": 242.527,
+"e": 242.687,
+"id": "S4_01"
+},
+{
+"w": "con",
+"t": 242.687,
+"e": 242.967,
+"id": "S4_01"
+},
+{
+"w": "esto",
+"t": 242.967,
+"e": 243.247,
+"id": "S4_01"
+},
+{
+"w": "que",
+"t": 243.247,
+"e": 243.647,
+"id": "S4_01"
+},
+{
+"w": "es",
+"t": 243.647,
+"e": 244.167,
+"id": "S4_01"
+},
+{
+"w": "agua",
+"t": 244.167,
+"e": 244.327,
+"id": "S4_01"
+},
+{
+"w": "para",
+"t": 244.327,
+"e": 244.727,
+"id": "S4_01"
+},
+{
+"w": "tomar",
+"t": 244.727,
+"e": 245.047,
+"id": "S4_01"
+},
+{
+"w": "para",
+"t": 245.567,
+"e": 245.567,
+"id": "S4_02"
+},
+{
+"w": "la",
+"t": 245.567,
+"e": 245.967,
+"id": "S4_02"
+},
+{
+"w": "capa",
+"t": 245.967,
+"e": 246.067,
+"id": "S4_02"
+},
+{
+"w": "de",
+"t": 246.067,
+"e": 246.587,
+"id": "S4_02"
+},
+{
+"w": "adentro",
+"t": 246.587,
+"e": 246.627,
+"id": "S4_02"
+},
+{
+"w": "la",
+"t": 246.627,
+"e": 247.047,
+"id": "S4_02"
+},
+{
+"w": "que",
+"t": 247.047,
+"e": 247.267,
+"id": "S4_02"
+},
+{
+"w": "toca",
+"t": 247.267,
+"e": 247.427,
+"id": "S4_02"
+},
+{
+"w": "el",
+"t": 247.427,
+"e": 248.087,
+"id": "S4_02"
+},
+{
+"w": "agua",
+"t": 248.087,
+"e": 248.087,
+"id": "S4_02"
+},
+{
+"w": "usa",
+"t": 248.087,
+"e": 248.507,
+"id": "S4_02"
+},
+{
+"w": "sólo",
+"t": 248.507,
+"e": 248.947,
+"id": "S4_02"
+},
+{
+"w": "plástico",
+"t": 248.947,
+"e": 249.447,
+"id": "S4_02"
+},
+{
+"w": "limpio",
+"t": 249.447,
+"e": 250.027,
+"id": "S4_02"
+},
+{
+"w": "de",
+"t": 250.027,
+"e": 250.287,
+"id": "S4_02"
+},
+{
+"w": "un",
+"t": 250.287,
+"e": 250.747,
+"id": "S4_02"
+},
+{
+"w": "envase",
+"t": 250.747,
+"e": 250.787,
+"id": "S4_02"
+},
+{
+"w": "de",
+"t": 250.787,
+"e": 251.187,
+"id": "S4_02"
+},
+{
+"w": "agua",
+"t": 251.187,
+"e": 251.307,
+"id": "S4_02"
+},
+{
+"w": "o",
+"t": 251.307,
+"e": 251.767,
+"id": "S4_02"
+},
+{
+"w": "de",
+"t": 251.767,
+"e": 252.267,
+"id": "S4_02"
+},
+{
+"w": "comida",
+"t": 252.267,
+"e": 252.287,
+"id": "S4_02"
+},
+{
+"w": "nada",
+"t": 253.027,
+"e": 253.067,
+"id": "S4_03"
+},
+{
+"w": "de",
+"t": 253.067,
+"e": 253.387,
+"id": "S4_03"
+},
+{
+"w": "envases",
+"t": 253.387,
+"e": 253.647,
+"id": "S4_03"
+},
+{
+"w": "de",
+"t": 253.647,
+"e": 254.227,
+"id": "S4_03"
+},
+{
+"w": "aceite",
+"t": 254.227,
+"e": 254.227,
+"id": "S4_03"
+},
+{
+"w": "de",
+"t": 254.227,
+"e": 254.807,
+"id": "S4_03"
+},
+{
+"w": "motor",
+"t": 254.807,
+"e": 254.807,
+"id": "S4_03"
+},
+{
+"w": "de",
+"t": 255.267,
+"e": 255.487,
+"id": "S4_03"
+},
+{
+"w": "químicos",
+"t": 255.487,
+"e": 255.847,
+"id": "S4_03"
+},
+{
+"w": "ni",
+"t": 255.847,
+"e": 256.247,
+"id": "S4_03"
+},
+{
+"w": "de",
+"t": 256.247,
+"e": 256.627,
+"id": "S4_03"
+},
+{
+"w": "cloro",
+"t": 256.627,
+"e": 256.727,
+"id": "S4_03"
+},
+{
+"w": "y",
+"t": 256.727,
+"e": 257.147,
+"id": "S4_04"
+},
+{
+"w": "la",
+"t": 257.147,
+"e": 257.507,
+"id": "S4_04"
+},
+{
+"w": "malla",
+"t": 257.507,
+"e": 257.507,
+"id": "S4_04"
+},
+{
+"w": "metálica",
+"t": 257.507,
+"e": 258.107,
+"id": "S4_04"
+},
+{
+"w": "va",
+"t": 258.107,
+"e": 258.767,
+"id": "S4_04"
+},
+{
+"w": "sólo",
+"t": 258.767,
+"e": 259.127,
+"id": "S4_04"
+},
+{
+"w": "por",
+"t": 259.127,
+"e": 259.407,
+"id": "S4_04"
+},
+{
+"w": "fuera",
+"t": 259.407,
+"e": 259.647,
+"id": "S4_04"
+},
+{
+"w": "adentro",
+"t": 260.327,
+"e": 260.447,
+"id": "S4_04"
+},
+{
+"w": "no",
+"t": 260.447,
+"e": 260.807,
+"id": "S4_04"
+},
+{
+"w": "va",
+"t": 260.807,
+"e": 261.027,
+"id": "S4_04"
+},
+{
+"w": "nada",
+"t": 261.027,
+"e": 261.227,
+"id": "S4_04"
+},
+{
+"w": "de",
+"t": 261.227,
+"e": 261.787,
+"id": "S4_04"
+},
+{
+"w": "metal",
+"t": 261.787,
+"e": 261.787,
+"id": "S4_04"
+},
+{
+"w": "me",
+"t": 262.167,
+"e": 262.327,
+"id": "S4_05"
+},
+{
+"w": "escribió",
+"t": 262.327,
+"e": 262.687,
+"id": "S4_05"
+},
+{
+"w": "Ramón",
+"t": 262.687,
+"e": 263.067,
+"id": "S4_05"
+},
+{
+"w": "de",
+"t": 263.067,
+"e": 263.407,
+"id": "S4_05"
+},
+{
+"w": "Barquisimeto",
+"t": 263.407,
+"e": 264.187,
+"id": "S4_05"
+},
+{
+"w": "en",
+"t": 264.187,
+"e": 264.567,
+"id": "S4_05"
+},
+{
+"w": "Venezuela",
+"t": 264.567,
+"e": 265.007,
+"id": "S4_05"
+},
+{
+"w": "le",
+"t": 265.447,
+"e": 265.567,
+"id": "S4_05"
+},
+{
+"w": "había",
+"t": 265.567,
+"e": 265.787,
+"id": "S4_05"
+},
+{
+"w": "puesto",
+"t": 265.787,
+"e": 266.067,
+"id": "S4_05"
+},
+{
+"w": "pegamento",
+"t": 266.067,
+"e": 266.607,
+"id": "S4_05"
+},
+{
+"w": "especial",
+"t": 266.607,
+"e": 267.227,
+"id": "S4_05"
+},
+{
+"w": "a",
+"t": 267.227,
+"e": 267.507,
+"id": "S4_05"
+},
+{
+"w": "su",
+"t": 267.507,
+"e": 267.747,
+"id": "S4_05"
+},
+{
+"w": "tanque",
+"t": 267.747,
+"e": 267.987,
+"id": "S4_05"
+},
+{
+"w": "tres",
+"t": 267.987,
+"e": 268.407,
+"id": "S4_05"
+},
+{
+"w": "veces",
+"t": 268.407,
+"e": 268.707,
+"id": "S4_05"
+},
+{
+"w": "tres",
+"t": 269.367,
+"e": 269.367,
+"id": "S4_06"
+},
+{
+"w": "veces",
+"t": 269.367,
+"e": 269.707,
+"id": "S4_06"
+},
+{
+"w": "goteo",
+"t": 269.707,
+"e": 270.347,
+"id": "S4_06"
+},
+{
+"w": "otra",
+"t": 270.347,
+"e": 270.667,
+"id": "S4_06"
+},
+{
+"w": "vez",
+"t": 270.667,
+"e": 271.067,
+"id": "S4_06"
+},
+{
+"w": "entonces",
+"t": 271.447,
+"e": 271.847,
+"id": "S4_06"
+},
+{
+"w": "se",
+"t": 271.847,
+"e": 272.447,
+"id": "S4_06"
+},
+{
+"w": "compró",
+"t": 272.447,
+"e": 272.527,
+"id": "S4_06"
+},
+{
+"w": "un",
+"t": 272.527,
+"e": 272.787,
+"id": "S4_06"
+},
+{
+"w": "cautín",
+"t": 272.787,
+"e": 273.167,
+"id": "S4_06"
+},
+{
+"w": "y",
+"t": 273.167,
+"e": 273.607,
+"id": "S4_06"
+},
+{
+"w": "lo",
+"t": 273.607,
+"e": 273.827,
+"id": "S4_06"
+},
+{
+"w": "soldó",
+"t": 273.827,
+"e": 274.067,
+"id": "S4_06"
+},
+{
+"w": "con",
+"t": 274.067,
+"e": 274.327,
+"id": "S4_06"
+},
+{
+"w": "tapitas",
+"t": 274.327,
+"e": 274.767,
+"id": "S4_06"
+},
+{
+"w": "aguantó",
+"t": 275.207,
+"e": 275.487,
+"id": "S4_07"
+},
+{
+"w": "dos",
+"t": 275.487,
+"e": 275.787,
+"id": "S4_07"
+},
+{
+"w": "semanas",
+"t": 275.787,
+"e": 276.107,
+"id": "S4_07"
+},
+{
+"w": "cuando",
+"t": 276.107,
+"e": 276.647,
+"id": "S4_07"
+},
+{
+"w": "le",
+"t": 276.647,
+"e": 276.907,
+"id": "S4_07"
+},
+{
+"w": "pregunté",
+"t": 276.907,
+"e": 277.287,
+"id": "S4_07"
+},
+{
+"w": "de",
+"t": 277.287,
+"e": 277.427,
+"id": "S4_07"
+},
+{
+"w": "qué",
+"t": 277.427,
+"e": 277.587,
+"id": "S4_07"
+},
+{
+"w": "eran",
+"t": 277.587,
+"e": 277.687,
+"id": "S4_07"
+},
+{
+"w": "las",
+"t": 277.687,
+"e": 277.927,
+"id": "S4_07"
+},
+{
+"w": "tapitas",
+"t": 277.927,
+"e": 278.347,
+"id": "S4_07"
+},
+{
+"w": "fue",
+"t": 278.347,
+"e": 278.807,
+"id": "S4_07"
+},
+{
+"w": "a",
+"t": 278.807,
+"e": 279.087,
+"id": "S4_07"
+},
+{
+"w": "mirar",
+"t": 279.087,
+"e": 279.387,
+"id": "S4_07"
+},
+{
+"w": "5",
+"t": 279.387,
+"e": 280.027,
+"id": "S4_07"
+},
+{
+"w": "polipropileno",
+"t": 280.567,
+"e": 281.187,
+"id": "S4_07"
+},
+{
+"w": "lo",
+"t": 281.547,
+"e": 281.687,
+"id": "S4_08"
+},
+{
+"w": "rehizo",
+"t": 281.687,
+"e": 282.047,
+"id": "S4_08"
+},
+{
+"w": "con",
+"t": 282.047,
+"e": 282.407,
+"id": "S4_08"
+},
+{
+"w": "tiras",
+"t": 282.407,
+"e": 282.647,
+"id": "S4_08"
+},
+{
+"w": "de",
+"t": 282.647,
+"e": 282.847,
+"id": "S4_08"
+},
+{
+"w": "un",
+"t": 282.847,
+"e": 283.107,
+"id": "S4_08"
+},
+{
+"w": "bidón",
+"t": 283.107,
+"e": 283.227,
+"id": "S4_08"
+},
+{
+"w": "de",
+"t": 283.227,
+"e": 283.727,
+"id": "S4_08"
+},
+{
+"w": "agua",
+"t": 283.727,
+"e": 283.727,
+"id": "S4_08"
+},
+{
+"w": "me",
+"t": 284.067,
+"e": 284.367,
+"id": "S4_08"
+},
+{
+"w": "mandó",
+"t": 284.367,
+"e": 284.427,
+"id": "S4_08"
+},
+{
+"w": "la",
+"t": 284.427,
+"e": 284.927,
+"id": "S4_08"
+},
+{
+"w": "foto",
+"t": 284.927,
+"e": 284.927,
+"id": "S4_08"
+},
+{
+"w": "un",
+"t": 284.927,
+"e": 285.447,
+"id": "S4_08"
+},
+{
+"w": "mes",
+"t": 285.447,
+"e": 285.447,
+"id": "S4_08"
+},
+{
+"w": "después",
+"t": 285.447,
+"e": 285.907,
+"id": "S4_08"
+},
+{
+"w": "seco",
+"t": 286.447,
+"e": 286.747,
+"id": "S4_08"
+},
+{
+"w": "no",
+"t": 286.947,
+"e": 287.087,
+"id": "S4_09"
+},
+{
+"w": "fue",
+"t": 287.087,
+"e": 287.247,
+"id": "S4_09"
+},
+{
+"w": "magia",
+"t": 287.247,
+"e": 287.667,
+"id": "S4_09"
+},
+{
+"w": "fue",
+"t": 287.987,
+"e": 288.087,
+"id": "S4_09"
+},
+{
+"w": "usar",
+"t": 288.087,
+"e": 288.287,
+"id": "S4_09"
+},
+{
+"w": "el",
+"t": 288.287,
+"e": 288.947,
+"id": "S4_09"
+},
+{
+"w": "plástico",
+"t": 288.947,
+"e": 288.947,
+"id": "S4_09"
+},
+{
+"w": "correcto",
+"t": 288.947,
+"e": 290.007,
+"id": "S4_09"
+},
+{
+"w": "Ahora",
+"t": 290.215,
+"e": 290.415,
+"id": "S5_01"
+},
+{
+"w": "la",
+"t": 290.415,
+"e": 291.015,
+"id": "S5_01"
+},
+{
+"w": "herramienta",
+"t": 291.015,
+"e": 291.875,
+"id": "S5_01"
+},
+{
+"w": "esto",
+"t": 292.095,
+"e": 292.195,
+"id": "S5_01"
+},
+{
+"w": "es",
+"t": 292.195,
+"e": 292.315,
+"id": "S5_01"
+},
+{
+"w": "un",
+"t": 292.315,
+"e": 292.575,
+"id": "S5_01"
+},
+{
+"w": "cautín",
+"t": 292.575,
+"e": 292.975,
+"id": "S5_01"
+},
+{
+"w": "un",
+"t": 292.975,
+"e": 293.575,
+"id": "S5_01"
+},
+{
+"w": "soldador",
+"t": 293.575,
+"e": 293.935,
+"id": "S5_01"
+},
+{
+"w": "de",
+"t": 293.935,
+"e": 294.215,
+"id": "S5_01"
+},
+{
+"w": "estaño",
+"t": 294.215,
+"e": 294.455,
+"id": "S5_01"
+},
+{
+"w": "común",
+"t": 294.455,
+"e": 294.815,
+"id": "S5_01"
+},
+{
+"w": "de",
+"t": 294.815,
+"e": 295.335,
+"id": "S5_01"
+},
+{
+"w": "60",
+"t": 295.335,
+"e": 295.875,
+"id": "S5_01"
+},
+{
+"w": "a",
+"t": 295.875,
+"e": 296.215,
+"id": "S5_01"
+},
+{
+"w": "100",
+"t": 296.215,
+"e": 296.555,
+"id": "S5_01"
+},
+{
+"w": "vatios",
+"t": 296.555,
+"e": 296.935,
+"id": "S5_01"
+},
+{
+"w": "le",
+"t": 297.155,
+"e": 297.375,
+"id": "S5_02"
+},
+{
+"w": "cambio",
+"t": 297.375,
+"e": 297.635,
+"id": "S5_02"
+},
+{
+"w": "la",
+"t": 297.635,
+"e": 298.155,
+"id": "S5_02"
+},
+{
+"w": "punta",
+"t": 298.155,
+"e": 298.175,
+"id": "S5_02"
+},
+{
+"w": "por",
+"t": 298.175,
+"e": 298.435,
+"id": "S5_02"
+},
+{
+"w": "una",
+"t": 298.435,
+"e": 298.635,
+"id": "S5_02"
+},
+{
+"w": "plana",
+"t": 298.635,
+"e": 299.255,
+"id": "S5_02"
+},
+{
+"w": "tipo",
+"t": 299.255,
+"e": 299.435,
+"id": "S5_02"
+},
+{
+"w": "paleta",
+"t": 299.435,
+"e": 299.855,
+"id": "S5_02"
+},
+{
+"w": "y",
+"t": 299.855,
+"e": 300.335,
+"id": "S5_02"
+},
+{
+"w": "esa",
+"t": 300.335,
+"e": 300.615,
+"id": "S5_02"
+},
+{
+"w": "punta",
+"t": 300.615,
+"e": 300.935,
+"id": "S5_02"
+},
+{
+"w": "queda",
+"t": 300.935,
+"e": 301.255,
+"id": "S5_02"
+},
+{
+"w": "sólo",
+"t": 301.255,
+"e": 301.515,
+"id": "S5_02"
+},
+{
+"w": "para",
+"t": 301.515,
+"e": 301.595,
+"id": "S5_02"
+},
+{
+"w": "plástico",
+"t": 301.625,
+"e": 302.385,
+"id": "S5_02"
+},
+{
+"w": "si",
+"t": 302.725,
+"e": 302.825,
+"id": "S5_03"
+},
+{
+"w": "no",
+"t": 302.825,
+"e": 303.025,
+"id": "S5_03"
+},
+{
+"w": "tienes",
+"t": 303.025,
+"e": 303.245,
+"id": "S5_03"
+},
+{
+"w": "cautín",
+"t": 303.245,
+"e": 303.685,
+"id": "S5_03"
+},
+{
+"w": "sirve",
+"t": 303.685,
+"e": 304.225,
+"id": "S5_03"
+},
+{
+"w": "una",
+"t": 304.225,
+"e": 304.505,
+"id": "S5_03"
+},
+{
+"w": "pistola",
+"t": 304.505,
+"e": 304.845,
+"id": "S5_03"
+},
+{
+"w": "de",
+"t": 304.845,
+"e": 305.385,
+"id": "S5_03"
+},
+{
+"w": "calor",
+"t": 305.385,
+"e": 305.385,
+"id": "S5_03"
+},
+{
+"w": "la",
+"t": 305.845,
+"e": 305.845,
+"id": "S5_03"
+},
+{
+"w": "de",
+"t": 305.845,
+"e": 306.045,
+"id": "S5_03"
+},
+{
+"w": "decapar",
+"t": 306.045,
+"e": 306.465,
+"id": "S5_03"
+},
+{
+"w": "es",
+"t": 306.845,
+"e": 307.085,
+"id": "S5_03"
+},
+{
+"w": "más",
+"t": 307.085,
+"e": 307.365,
+"id": "S5_03"
+},
+{
+"w": "lenta",
+"t": 307.365,
+"e": 307.585,
+"id": "S5_03"
+},
+{
+"w": "y",
+"t": 307.585,
+"e": 307.865,
+"id": "S5_03"
+},
+{
+"w": "calienta",
+"t": 307.865,
+"e": 308.345,
+"id": "S5_03"
+},
+{
+"w": "más",
+"t": 308.345,
+"e": 308.705,
+"id": "S5_03"
+},
+{
+"w": "alrededor",
+"t": 308.705,
+"e": 309.205,
+"id": "S5_03"
+},
+{
+"w": "con",
+"t": 309.665,
+"e": 309.725,
+"id": "S5_04"
+},
+{
+"w": "el",
+"t": 309.725,
+"e": 309.985,
+"id": "S5_04"
+},
+{
+"w": "cautín",
+"t": 309.985,
+"e": 310.285,
+"id": "S5_04"
+},
+{
+"w": "controlas",
+"t": 310.285,
+"e": 311.025,
+"id": "S5_04"
+},
+{
+"w": "mejor",
+"t": 311.025,
+"e": 311.305,
+"id": "S5_04"
+},
+{
+"w": "donde",
+"t": 311.305,
+"e": 311.765,
+"id": "S5_04"
+},
+{
+"w": "derrites",
+"t": 311.765,
+"e": 312.265,
+"id": "S5_04"
+},
+{
+"w": "por",
+"t": 312.705,
+"e": 312.845,
+"id": "S5_04"
+},
+{
+"w": "eso",
+"t": 312.845,
+"e": 312.945,
+"id": "S5_04"
+},
+{
+"w": "lo",
+"t": 312.945,
+"e": 313.265,
+"id": "S5_04"
+},
+{
+"w": "prefiero",
+"t": 313.265,
+"e": 313.525,
+"id": "S5_04"
+},
+{
+"w": "y",
+"t": 313.525,
+"e": 314.045,
+"id": "S5_05"
+},
+{
+"w": "los",
+"t": 314.045,
+"e": 314.265,
+"id": "S5_05"
+},
+{
+"w": "dos",
+"t": 314.265,
+"e": 314.565,
+"id": "S5_05"
+},
+{
+"w": "dólares",
+"t": 314.565,
+"e": 314.745,
+"id": "S5_05"
+},
+{
+"w": "son",
+"t": 314.745,
+"e": 315.125,
+"id": "S5_05"
+},
+{
+"w": "esto",
+"t": 315.125,
+"e": 315.465,
+"id": "S5_05"
+},
+{
+"w": "un",
+"t": 315.745,
+"e": 315.865,
+"id": "S5_05"
+},
+{
+"w": "retazo",
+"t": 315.865,
+"e": 316.225,
+"id": "S5_05"
+},
+{
+"w": "de",
+"t": 316.225,
+"e": 316.665,
+"id": "S5_05"
+},
+{
+"w": "malla",
+"t": 316.665,
+"e": 316.665,
+"id": "S5_05"
+},
+{
+"w": "un",
+"t": 317.205,
+"e": 317.445,
+"id": "S5_05"
+},
+{
+"w": "poco",
+"t": 317.445,
+"e": 317.445,
+"id": "S5_05"
+},
+{
+"w": "de",
+"t": 317.445,
+"e": 317.925,
+"id": "S5_05"
+},
+{
+"w": "alcohol",
+"t": 317.925,
+"e": 317.945,
+"id": "S5_05"
+},
+{
+"w": "y",
+"t": 317.945,
+"e": 318.385,
+"id": "S5_05"
+},
+{
+"w": "una",
+"t": 318.385,
+"e": 318.625,
+"id": "S5_05"
+},
+{
+"w": "broca",
+"t": 318.625,
+"e": 318.925,
+"id": "S5_05"
+},
+{
+"w": "fina",
+"t": 318.925,
+"e": 319.385,
+"id": "S5_05"
+},
+{
+"w": "el",
+"t": 319.585,
+"e": 320.205,
+"id": "S5_05"
+},
+{
+"w": "plástico",
+"t": 320.205,
+"e": 320.205,
+"id": "S5_05"
+},
+{
+"w": "sale",
+"t": 320.205,
+"e": 320.725,
+"id": "S5_05"
+},
+{
+"w": "gratis",
+"t": 320.725,
+"e": 321.165,
+"id": "S5_05"
+},
+{
+"w": "de",
+"t": 321.165,
+"e": 321.365,
+"id": "S5_05"
+},
+{
+"w": "un",
+"t": 321.365,
+"e": 321.645,
+"id": "S5_05"
+},
+{
+"w": "bidón",
+"t": 321.645,
+"e": 321.805,
+"id": "S5_05"
+},
+{
+"w": "viejo",
+"t": 321.805,
+"e": 322.145,
+"id": "S5_05"
+},
+{
+"w": "si",
+"t": 322.565,
+"e": 322.645,
+"id": "S5_06a"
+},
+{
+"w": "no",
+"t": 322.645,
+"e": 322.865,
+"id": "S5_06a"
+},
+{
+"w": "tienes",
+"t": 322.865,
+"e": 323.025,
+"id": "S5_06a"
+},
+{
+"w": "el",
+"t": 323.025,
+"e": 323.365,
+"id": "S5_06a"
+},
+{
+"w": "cautín",
+"t": 323.365,
+"e": 323.605,
+"id": "S5_06a"
+},
+{
+"w": "esa",
+"t": 323.605,
+"e": 324.205,
+"id": "S5_06a"
+},
+{
+"w": "es",
+"t": 324.205,
+"e": 324.305,
+"id": "S5_06a"
+},
+{
+"w": "la",
+"t": 324.305,
+"e": 324.825,
+"id": "S5_06a"
+},
+{
+"w": "única",
+"t": 324.825,
+"e": 324.825,
+"id": "S5_06a"
+},
+{
+"w": "compra",
+"t": 324.825,
+"e": 325.145,
+"id": "S5_06a"
+},
+{
+"w": "de",
+"t": 325.145,
+"e": 325.705,
+"id": "S5_06a"
+},
+{
+"w": "verdad",
+"t": 325.705,
+"e": 325.705,
+"id": "S5_06a"
+},
+{
+"w": "pero",
+"t": 326.085,
+"e": 326.185,
+"id": "S5_06a"
+},
+{
+"w": "te",
+"t": 326.185,
+"e": 326.465,
+"id": "S5_06a"
+},
+{
+"w": "queda",
+"t": 326.465,
+"e": 326.585,
+"id": "S5_06a"
+},
+{
+"w": "para",
+"t": 326.585,
+"e": 326.905,
+"id": "S5_06a"
+},
+{
+"w": "siempre",
+"t": 326.905,
+"e": 327.225,
+"id": "S5_06a"
+},
+{
+"w": "y",
+"t": 327.225,
+"e": 327.705,
+"id": "S5_06a"
+},
+{
+"w": "con",
+"t": 327.705,
+"e": 327.865,
+"id": "S5_06a"
+},
+{
+"w": "él",
+"t": 327.865,
+"e": 328.065,
+"id": "S5_06a"
+},
+{
+"w": "arreglas",
+"t": 328.065,
+"e": 328.705,
+"id": "S5_06a"
+},
+{
+"w": "baldes",
+"t": 328.705,
+"e": 329.185,
+"id": "S5_06a"
+},
+{
+"w": "sillas",
+"t": 329.845,
+"e": 329.845,
+"id": "S5_06b"
+},
+{
+"w": "y",
+"t": 329.845,
+"e": 330.325,
+"id": "S5_06b"
+},
+{
+"w": "cajones",
+"t": 330.325,
+"e": 330.605,
+"id": "S5_06b"
+},
+{
+"w": "de",
+"t": 330.605,
+"e": 331.325,
+"id": "S5_06b"
+},
+{
+"w": "plástico",
+"t": 331.325,
+"e": 331.545,
+"id": "S5_06b"
+},
+{
+"w": "si",
+"t": 331.805,
+"e": 331.845,
+"id": "S5_07"
+},
+{
+"w": "el",
+"t": 331.845,
+"e": 332.065,
+"id": "S5_07"
+},
+{
+"w": "tuyo",
+"t": 332.065,
+"e": 332.205,
+"id": "S5_07"
+},
+{
+"w": "tiene",
+"t": 332.205,
+"e": 332.525,
+"id": "S5_07"
+},
+{
+"w": "perilla",
+"t": 332.525,
+"e": 332.925,
+"id": "S5_07"
+},
+{
+"w": "de",
+"t": 332.925,
+"e": 333.245,
+"id": "S5_07"
+},
+{
+"w": "temperatura",
+"t": 333.925,
+"e": 333.925,
+"id": "S5_07"
+},
+{
+"w": "empieza",
+"t": 333.925,
+"e": 334.545,
+"id": "S5_07"
+},
+{
+"w": "abajo",
+"t": 334.545,
+"e": 334.985,
+"id": "S5_07"
+},
+{
+"w": "y",
+"t": 334.985,
+"e": 335.445,
+"id": "S5_07"
+},
+{
+"w": "ve",
+"t": 335.445,
+"e": 335.565,
+"id": "S5_07"
+},
+{
+"w": "subiendo",
+"t": 335.565,
+"e": 335.925,
+"id": "S5_07"
+},
+{
+"w": "de",
+"t": 335.925,
+"e": 336.165,
+"id": "S5_07"
+},
+{
+"w": "a",
+"t": 336.165,
+"e": 336.405,
+"id": "S5_07"
+},
+{
+"w": "poco",
+"t": 336.405,
+"e": 336.485,
+"id": "S5_07"
+},
+{
+"w": "hasta",
+"t": 336.485,
+"e": 337.025,
+"id": "S5_07"
+},
+{
+"w": "que",
+"t": 337.025,
+"e": 337.145,
+"id": "S5_07"
+},
+{
+"w": "el",
+"t": 337.145,
+"e": 337.745,
+"id": "S5_07"
+},
+{
+"w": "plástico",
+"t": 337.745,
+"e": 337.745,
+"id": "S5_07"
+},
+{
+"w": "brille",
+"t": 337.745,
+"e": 338.105,
+"id": "S5_07"
+},
+{
+"w": "sin",
+"t": 338.105,
+"e": 338.425,
+"id": "S5_07"
+},
+{
+"w": "humear",
+"t": 338.425,
+"e": 338.745,
+"id": "S5_07"
+},
+{
+"w": "y",
+"t": 338.745,
+"e": 339.205,
+"id": "S5_08a"
+},
+{
+"w": "con",
+"t": 339.205,
+"e": 339.385,
+"id": "S5_08a"
+},
+{
+"w": "un",
+"t": 339.385,
+"e": 339.645,
+"id": "S5_08a"
+},
+{
+"w": "encendedor",
+"t": 339.645,
+"e": 340.125,
+"id": "S5_08a"
+},
+{
+"w": "o",
+"t": 340.125,
+"e": 340.545,
+"id": "S5_08a"
+},
+{
+"w": "una",
+"t": 340.545,
+"e": 340.905,
+"id": "S5_08a"
+},
+{
+"w": "vela",
+"t": 340.905,
+"e": 341.105,
+"id": "S5_08a"
+},
+{
+"w": "no",
+"t": 341.105,
+"e": 341.725,
+"id": "S5_08a"
+},
+{
+"w": "el",
+"t": 342.145,
+"e": 342.585,
+"id": "S5_08a"
+},
+{
+"w": "plástico",
+"t": 342.585,
+"e": 342.585,
+"id": "S5_08a"
+},
+{
+"w": "se",
+"t": 342.585,
+"e": 343.025,
+"id": "S5_08a"
+},
+{
+"w": "quema",
+"t": 343.025,
+"e": 343.025,
+"id": "S5_08a"
+},
+{
+"w": "por",
+"t": 343.025,
+"e": 343.385,
+"id": "S5_08a"
+},
+{
+"w": "arriba",
+"t": 343.385,
+"e": 343.585,
+"id": "S5_08a"
+},
+{
+"w": "se",
+"t": 344.125,
+"e": 344.365,
+"id": "S5_08b"
+},
+{
+"w": "llena",
+"t": 344.365,
+"e": 344.425,
+"id": "S5_08b"
+},
+{
+"w": "de",
+"t": 344.425,
+"e": 344.765,
+"id": "S5_08b"
+},
+{
+"w": "hollín",
+"t": 344.765,
+"e": 344.945,
+"id": "S5_08b"
+},
+{
+"w": "y",
+"t": 344.945,
+"e": 345.425,
+"id": "S5_08b"
+},
+{
+"w": "queda",
+"t": 345.425,
+"e": 345.645,
+"id": "S5_08b"
+},
+{
+"w": "crudo",
+"t": 345.645,
+"e": 346.005,
+"id": "S5_08b"
+},
+{
+"w": "abajo",
+"t": 346.005,
+"e": 346.425,
+"id": "S5_08b"
+},
+{
+"w": "y",
+"t": 346.425,
+"e": 346.825,
+"id": "S5_08b"
+},
+{
+"w": "el",
+"t": 346.825,
+"e": 347.005,
+"id": "S5_08b"
+},
+{
+"w": "hollín",
+"t": 347.005,
+"e": 347.285,
+"id": "S5_08b"
+},
+{
+"w": "no",
+"t": 347.285,
+"e": 347.685,
+"id": "S5_08b"
+},
+{
+"w": "deja",
+"t": 347.685,
+"e": 347.865,
+"id": "S5_08b"
+},
+{
+"w": "que",
+"t": 347.865,
+"e": 348.065,
+"id": "S5_08b"
+},
+{
+"w": "se",
+"t": 348.065,
+"e": 348.365,
+"id": "S5_08b"
+},
+{
+"w": "mezcle",
+"t": 348.365,
+"e": 348.825,
+"id": "S5_08b"
+},
+{
+"w": "antes",
+"t": 349.165,
+"e": 349.165,
+"id": "S5_09"
+},
+{
+"w": "de",
+"t": 349.165,
+"e": 349.585,
+"id": "S5_09"
+},
+{
+"w": "tocar",
+"t": 349.585,
+"e": 349.585,
+"id": "S5_09"
+},
+{
+"w": "el",
+"t": 349.585,
+"e": 349.845,
+"id": "S5_09"
+},
+{
+"w": "tanque",
+"t": 349.845,
+"e": 350.165,
+"id": "S5_09"
+},
+{
+"w": "practica",
+"t": 350.165,
+"e": 350.945,
+"id": "S5_09"
+},
+{
+"w": "en",
+"t": 350.945,
+"e": 351.105,
+"id": "S5_09"
+},
+{
+"w": "un",
+"t": 351.105,
+"e": 351.365,
+"id": "S5_09"
+},
+{
+"w": "pedazo",
+"t": 351.365,
+"e": 351.625,
+"id": "S5_09"
+},
+{
+"w": "que",
+"t": 351.625,
+"e": 351.885,
+"id": "S5_09"
+},
+{
+"w": "no",
+"t": 351.885,
+"e": 352.045,
+"id": "S5_09"
+},
+{
+"w": "te",
+"t": 352.045,
+"e": 352.345,
+"id": "S5_09"
+},
+{
+"w": "importe",
+"t": 352.345,
+"e": 352.625,
+"id": "S5_09"
+},
+{
+"w": "si",
+"t": 352.745,
+"e": 352.805,
+"id": "S5_10"
+},
+{
+"w": "el",
+"t": 352.805,
+"e": 353.445,
+"id": "S5_10"
+},
+{
+"w": "plástico",
+"t": 353.445,
+"e": 353.445,
+"id": "S5_10"
+},
+{
+"w": "humea",
+"t": 353.445,
+"e": 353.865,
+"id": "S5_10"
+},
+{
+"w": "mucho",
+"t": 353.865,
+"e": 354.265,
+"id": "S5_10"
+},
+{
+"w": "o",
+"t": 354.265,
+"e": 354.745,
+"id": "S5_10"
+},
+{
+"w": "hace",
+"t": 354.745,
+"e": 355.065,
+"id": "S5_10"
+},
+{
+"w": "burbujas",
+"t": 355.065,
+"e": 355.625,
+"id": "S5_10"
+},
+{
+"w": "está",
+"t": 355.625,
+"e": 356.245,
+"id": "S5_10"
+},
+{
+"w": "demasiado",
+"t": 356.245,
+"e": 356.865,
+"id": "S5_10"
+},
+{
+"w": "caliente",
+"t": 356.865,
+"e": 357.365,
+"id": "S5_10"
+},
+{
+"w": "así",
+"t": 357.745,
+"e": 358.025,
+"id": "S5_10"
+},
+{
+"w": "se",
+"t": 358.025,
+"e": 358.385,
+"id": "S5_10"
+},
+{
+"w": "agujera",
+"t": 358.385,
+"e": 358.765,
+"id": "S5_10"
+},
+{
+"w": "tiene",
+"t": 359.285,
+"e": 359.325,
+"id": "S5_11"
+},
+{
+"w": "que",
+"t": 359.325,
+"e": 359.525,
+"id": "S5_11"
+},
+{
+"w": "ponerse",
+"t": 359.525,
+"e": 360.205,
+"id": "S5_11"
+},
+{
+"w": "brillante",
+"t": 360.205,
+"e": 360.605,
+"id": "S5_11"
+},
+{
+"w": "como",
+"t": 360.605,
+"e": 361.165,
+"id": "S5_11"
+},
+{
+"w": "mojado",
+"t": 361.165,
+"e": 361.685,
+"id": "S5_11"
+},
+{
+"w": "sin",
+"t": 361.685,
+"e": 362.185,
+"id": "S5_11"
+},
+{
+"w": "burbujas",
+"t": 362.185,
+"e": 362.785,
+"id": "S5_11"
+},
+{
+"w": "ese",
+"t": 363.105,
+"e": 363.325,
+"id": "S5_11"
+},
+{
+"w": "es",
+"t": 363.325,
+"e": 363.505,
+"id": "S5_11"
+},
+{
+"w": "el",
+"t": 363.505,
+"e": 363.845,
+"id": "S5_11"
+},
+{
+"w": "punto",
+"t": 363.845,
+"e": 363.925,
+"id": "S5_11"
+},
+{
+"w": "y",
+"t": 363.925,
+"e": 364.365,
+"id": "S5_12"
+},
+{
+"w": "el",
+"t": 364.365,
+"e": 364.605,
+"id": "S5_12"
+},
+{
+"w": "humo",
+"t": 364.605,
+"e": 364.725,
+"id": "S5_12"
+},
+{
+"w": "del",
+"t": 364.725,
+"e": 364.925,
+"id": "S5_12"
+},
+{
+"w": "plástico",
+"t": 364.925,
+"e": 365.345,
+"id": "S5_12"
+},
+{
+"w": "no",
+"t": 365.345,
+"e": 365.805,
+"id": "S5_12"
+},
+{
+"w": "se",
+"t": 365.805,
+"e": 366.205,
+"id": "S5_12"
+},
+{
+"w": "respira",
+"t": 366.205,
+"e": 366.445,
+"id": "S5_12"
+},
+{
+"w": "hazlo",
+"t": 367.085,
+"e": 367.225,
+"id": "S5_12"
+},
+{
+"w": "al",
+"t": 367.225,
+"e": 367.525,
+"id": "S5_12"
+},
+{
+"w": "aire",
+"t": 367.525,
+"e": 367.625,
+"id": "S5_12"
+},
+{
+"w": "libre",
+"t": 367.625,
+"e": 367.985,
+"id": "S5_12"
+},
+{
+"w": "o",
+"t": 367.985,
+"e": 368.305,
+"id": "S5_12"
+},
+{
+"w": "con",
+"t": 368.305,
+"e": 368.445,
+"id": "S5_12"
+},
+{
+"w": "la",
+"t": 368.445,
+"e": 368.885,
+"id": "S5_12"
+},
+{
+"w": "puerta",
+"t": 368.885,
+"e": 368.885,
+"id": "S5_12"
+},
+{
+"w": "abierta",
+"t": 368.885,
+"e": 369.385,
+"id": "S5_12"
+},
+{
+"w": "y",
+"t": 369.385,
+"e": 370.105,
+"id": "S5_12"
+},
+{
+"w": "aléjate",
+"t": 370.105,
+"e": 370.345,
+"id": "S5_12"
+},
+{
+"w": "de",
+"t": 370.345,
+"e": 370.485,
+"id": "S5_12"
+},
+{
+"w": "la",
+"t": 370.485,
+"e": 370.925,
+"id": "S5_12"
+},
+{
+"w": "cara",
+"t": 370.925,
+"e": 371.185,
+"id": "S5_12"
+},
+{
+"w": "si",
+"t": 371.305,
+"e": 371.485,
+"id": "S5_13"
+},
+{
+"w": "tu",
+"t": 371.485,
+"e": 371.705,
+"id": "S5_13"
+},
+{
+"w": "tanque",
+"t": 371.705,
+"e": 371.985,
+"id": "S5_13"
+},
+{
+"w": "está",
+"t": 371.985,
+"e": 372.305,
+"id": "S5_13"
+},
+{
+"w": "arriba",
+"t": 372.305,
+"e": 372.665,
+"id": "S5_13"
+},
+{
+"w": "en",
+"t": 372.665,
+"e": 373.205,
+"id": "S5_13"
+},
+{
+"w": "el",
+"t": 373.205,
+"e": 373.665,
+"id": "S5_13"
+},
+{
+"w": "techo",
+"t": 373.665,
+"e": 373.665,
+"id": "S5_13"
+},
+{
+"w": "lo",
+"t": 373.665,
+"e": 374.305,
+"id": "S5_13"
+},
+{
+"w": "vacías",
+"t": 374.305,
+"e": 374.885,
+"id": "S5_13"
+},
+{
+"w": "escalera",
+"t": 375.525,
+"e": 375.705,
+"id": "S5_13"
+},
+{
+"w": "firme",
+"t": 375.705,
+"e": 376.145,
+"id": "S5_13"
+},
+{
+"w": "y",
+"t": 376.145,
+"e": 376.685,
+"id": "S5_13"
+},
+{
+"w": "entre",
+"t": 376.685,
+"e": 376.865,
+"id": "S5_13"
+},
+{
+"w": "dos",
+"t": 376.865,
+"e": 377.245,
+"id": "S5_13"
+},
+{
+"w": "mejor",
+"t": 377.705,
+"e": 377.885,
+"id": "S5_13"
+},
+{
+"w": "bajarlo",
+"t": 377.885,
+"e": 378.525,
+"id": "S5_13"
+},
+{
+"w": "presta",
+"t": 379.015,
+"e": 379.155,
+"id": "S6_01"
+},
+{
+"w": "muchísima",
+"t": 379.155,
+"e": 379.895,
+"id": "S6_01"
+},
+{
+"w": "atención",
+"t": 379.895,
+"e": 380.195,
+"id": "S6_01"
+},
+{
+"w": "a",
+"t": 380.195,
+"e": 380.575,
+"id": "S6_01"
+},
+{
+"w": "esta",
+"t": 380.575,
+"e": 380.695,
+"id": "S6_01"
+},
+{
+"w": "imagen",
+"t": 380.695,
+"e": 381.055,
+"id": "S6_01"
+},
+{
+"w": "porque",
+"t": 381.055,
+"e": 381.695,
+"id": "S6_01"
+},
+{
+"w": "probablemente",
+"t": 381.695,
+"e": 382.595,
+"id": "S6_01"
+},
+{
+"w": "sea",
+"t": 382.595,
+"e": 382.835,
+"id": "S6_01"
+},
+{
+"w": "la",
+"t": 382.835,
+"e": 383.075,
+"id": "S6_01"
+},
+{
+"w": "parte",
+"t": 383.075,
+"e": 383.315,
+"id": "S6_01"
+},
+{
+"w": "más",
+"t": 383.315,
+"e": 383.895,
+"id": "S6_01"
+},
+{
+"w": "importante",
+"t": 383.895,
+"e": 384.355,
+"id": "S6_01"
+},
+{
+"w": "del",
+"t": 384.355,
+"e": 384.655,
+"id": "S6_01"
+},
+{
+"w": "vídeo",
+"t": 384.655,
+"e": 384.915,
+"id": "S6_01"
+},
+{
+"w": "aquí",
+"t": 385.362,
+"e": 385.522,
+"id": "S6_02a"
+},
+{
+"w": "tienes",
+"t": 385.522,
+"e": 385.862,
+"id": "S6_02a"
+},
+{
+"w": "el",
+"t": 385.862,
+"e": 386.262,
+"id": "S6_02a"
+},
+{
+"w": "arreglo",
+"t": 386.262,
+"e": 386.542,
+"id": "S6_02a"
+},
+{
+"w": "entero",
+"t": 386.542,
+"e": 386.962,
+"id": "S6_02a"
+},
+{
+"w": "en",
+"t": 386.962,
+"e": 387.282,
+"id": "S6_02a"
+},
+{
+"w": "una",
+"t": 387.282,
+"e": 387.742,
+"id": "S6_02a"
+},
+{
+"w": "hoja",
+"t": 387.742,
+"e": 388.082,
+"id": "S6_02a"
+},
+{
+"w": "arriba",
+"t": 388.502,
+"e": 388.822,
+"id": "S6_02a"
+},
+{
+"w": "antes",
+"t": 388.822,
+"e": 389.282,
+"id": "S6_02a"
+},
+{
+"w": "de",
+"t": 389.282,
+"e": 389.962,
+"id": "S6_02a"
+},
+{
+"w": "empezar",
+"t": 389.962,
+"e": 389.962,
+"id": "S6_02a"
+},
+{
+"w": "vaciar",
+"t": 390.482,
+"e": 390.742,
+"id": "S6_02a"
+},
+{
+"w": "por",
+"t": 390.742,
+"e": 391.042,
+"id": "S6_02a"
+},
+{
+"w": "debajo",
+"t": 391.042,
+"e": 391.282,
+"id": "S6_02a"
+},
+{
+"w": "de",
+"t": 391.282,
+"e": 391.442,
+"id": "S6_02a"
+},
+{
+"w": "la",
+"t": 391.442,
+"e": 391.882,
+"id": "S6_02a"
+},
+{
+"w": "grieta",
+"t": 391.882,
+"e": 391.922,
+"id": "S6_02a"
+},
+{
+"w": "secar",
+"t": 392.562,
+"e": 392.902,
+"id": "S6_02b"
+},
+{
+"w": "limpiar",
+"t": 393.422,
+"e": 393.582,
+"id": "S6_02b"
+},
+{
+"w": "con",
+"t": 393.582,
+"e": 393.802,
+"id": "S6_02b"
+},
+{
+"w": "alcohol",
+"t": 393.802,
+"e": 394.162,
+"id": "S6_02b"
+},
+{
+"w": "y",
+"t": 394.162,
+"e": 394.782,
+"id": "S6_02b"
+},
+{
+"w": "raspar",
+"t": 394.782,
+"e": 395.102,
+"id": "S6_02b"
+},
+{
+"w": "la",
+"t": 395.102,
+"e": 395.562,
+"id": "S6_02b"
+},
+{
+"w": "capa",
+"t": 395.562,
+"e": 395.702,
+"id": "S6_02b"
+},
+{
+"w": "quemada",
+"t": 395.702,
+"e": 396.062,
+"id": "S6_02b"
+},
+{
+"w": "por",
+"t": 396.062,
+"e": 396.262,
+"id": "S6_02b"
+},
+{
+"w": "el",
+"t": 396.262,
+"e": 396.602,
+"id": "S6_02b"
+},
+{
+"w": "sol",
+"t": 396.602,
+"e": 396.602,
+"id": "S6_02b"
+},
+{
+"w": "después",
+"t": 397.202,
+"e": 397.422,
+"id": "S6_03"
+},
+{
+"w": "los",
+"t": 397.422,
+"e": 398.002,
+"id": "S6_03"
+},
+{
+"w": "agujeritos",
+"t": 398.002,
+"e": 398.542,
+"id": "S6_03"
+},
+{
+"w": "de",
+"t": 398.542,
+"e": 398.822,
+"id": "S6_03"
+},
+{
+"w": "3",
+"t": 398.822,
+"e": 399.142,
+"id": "S6_03"
+},
+{
+"w": "milímetros",
+"t": 399.142,
+"e": 399.542,
+"id": "S6_03"
+},
+{
+"w": "en",
+"t": 399.542,
+"e": 399.942,
+"id": "S6_03"
+},
+{
+"w": "las",
+"t": 399.942,
+"e": 400.142,
+"id": "S6_03"
+},
+{
+"w": "dos",
+"t": 400.142,
+"e": 400.462,
+"id": "S6_03"
+},
+{
+"w": "puntas",
+"t": 400.462,
+"e": 400.802,
+"id": "S6_03"
+},
+{
+"w": "y",
+"t": 400.802,
+"e": 401.242,
+"id": "S6_03"
+},
+{
+"w": "la",
+"t": 401.242,
+"e": 401.722,
+"id": "S6_03"
+},
+{
+"w": "grieta",
+"t": 401.722,
+"e": 401.722,
+"id": "S6_03"
+},
+{
+"w": "abierta",
+"t": 401.722,
+"e": 402.162,
+"id": "S6_03"
+},
+{
+"w": "en",
+"t": 402.162,
+"e": 402.462,
+"id": "S6_03"
+},
+{
+"w": "V",
+"t": 402.462,
+"e": 402.562,
+"id": "S6_03"
+},
+{
+"w": "hasta",
+"t": 402.562,
+"e": 403.162,
+"id": "S6_03"
+},
+{
+"w": "la",
+"t": 403.162,
+"e": 403.542,
+"id": "S6_03"
+},
+{
+"w": "mitad",
+"t": 403.542,
+"e": 403.582,
+"id": "S6_03"
+},
+{
+"w": "del",
+"t": 403.582,
+"e": 403.922,
+"id": "S6_03"
+},
+{
+"w": "espesor",
+"t": 403.922,
+"e": 404.222,
+"id": "S6_03"
+},
+{
+"w": "de",
+"t": 404.222,
+"e": 404.382,
+"id": "S6_03"
+},
+{
+"w": "la",
+"t": 404.382,
+"e": 404.762,
+"id": "S6_03"
+},
+{
+"w": "pared",
+"t": 404.762,
+"e": 404.762,
+"id": "S6_03"
+},
+{
+"w": "la",
+"t": 405.042,
+"e": 405.662,
+"id": "S6_04a"
+},
+{
+"w": "malla",
+"t": 405.662,
+"e": 405.682,
+"id": "S6_04a"
+},
+{
+"w": "se",
+"t": 405.682,
+"e": 406.262,
+"id": "S6_04a"
+},
+{
+"w": "corta",
+"t": 406.262,
+"e": 406.442,
+"id": "S6_04a"
+},
+{
+"w": "2",
+"t": 406.442,
+"e": 406.842,
+"id": "S6_04a"
+},
+{
+"w": "centímetros",
+"t": 406.842,
+"e": 407.322,
+"id": "S6_04a"
+},
+{
+"w": "más",
+"t": 407.322,
+"e": 407.722,
+"id": "S6_04a"
+},
+{
+"w": "grande",
+"t": 407.722,
+"e": 407.942,
+"id": "S6_04a"
+},
+{
+"w": "que",
+"t": 407.942,
+"e": 408.142,
+"id": "S6_04a"
+},
+{
+"w": "la",
+"t": 408.142,
+"e": 408.402,
+"id": "S6_04a"
+},
+{
+"w": "grieta",
+"t": 408.402,
+"e": 408.682,
+"id": "S6_04a"
+},
+{
+"w": "por",
+"t": 408.682,
+"e": 409.242,
+"id": "S6_04a"
+},
+{
+"w": "cada",
+"t": 409.242,
+"e": 409.542,
+"id": "S6_04a"
+},
+{
+"w": "lado",
+"t": 409.542,
+"e": 409.762,
+"id": "S6_04a"
+},
+{
+"w": "se",
+"t": 410.222,
+"e": 410.562,
+"id": "S6_04b"
+},
+{
+"w": "hunde",
+"t": 410.562,
+"e": 410.562,
+"id": "S6_04b"
+},
+{
+"w": "con",
+"t": 410.562,
+"e": 411.002,
+"id": "S6_04b"
+},
+{
+"w": "calor",
+"t": 411.002,
+"e": 411.242,
+"id": "S6_04b"
+},
+{
+"w": "y",
+"t": 411.242,
+"e": 411.682,
+"id": "S6_04b"
+},
+{
+"w": "se",
+"t": 411.682,
+"e": 412.102,
+"id": "S6_04b"
+},
+{
+"w": "tapa",
+"t": 412.102,
+"e": 412.102,
+"id": "S6_04b"
+},
+{
+"w": "con",
+"t": 412.102,
+"e": 412.362,
+"id": "S6_04b"
+},
+{
+"w": "una",
+"t": 412.362,
+"e": 412.742,
+"id": "S6_04b"
+},
+{
+"w": "capa",
+"t": 412.742,
+"e": 412.802,
+"id": "S6_04b"
+},
+{
+"w": "de",
+"t": 412.802,
+"e": 413.462,
+"id": "S6_04b"
+},
+{
+"w": "plástico",
+"t": 413.462,
+"e": 413.462,
+"id": "S6_04b"
+},
+{
+"w": "del",
+"t": 413.462,
+"e": 413.982,
+"id": "S6_04b"
+},
+{
+"w": "mismo",
+"t": 413.982,
+"e": 414.382,
+"id": "S6_04b"
+},
+{
+"w": "número",
+"t": 414.382,
+"e": 414.702,
+"id": "S6_04b"
+},
+{
+"w": "por",
+"t": 414.842,
+"e": 415.042,
+"id": "S6_05"
+},
+{
+"w": "dentro",
+"t": 415.042,
+"e": 415.362,
+"id": "S6_05"
+},
+{
+"w": "una",
+"t": 415.362,
+"e": 416.042,
+"id": "S6_05"
+},
+{
+"w": "sola",
+"t": 416.042,
+"e": 416.722,
+"id": "S6_05"
+},
+{
+"w": "capa",
+"t": 416.722,
+"e": 416.802,
+"id": "S6_05"
+},
+{
+"w": "de",
+"t": 416.802,
+"e": 416.962,
+"id": "S6_05"
+},
+{
+"w": "plástico",
+"t": 416.962,
+"e": 417.442,
+"id": "S6_05"
+},
+{
+"w": "limpio",
+"t": 417.442,
+"e": 418.162,
+"id": "S6_05"
+},
+{
+"w": "sin",
+"t": 418.162,
+"e": 418.542,
+"id": "S6_05"
+},
+{
+"w": "malla",
+"t": 418.542,
+"e": 418.782,
+"id": "S6_05"
+},
+{
+"w": "y",
+"t": 418.782,
+"e": 419.222,
+"id": "S6_05"
+},
+{
+"w": "el",
+"t": 419.222,
+"e": 419.702,
+"id": "S6_05"
+},
+{
+"w": "tiempo",
+"t": 419.702,
+"e": 419.702,
+"id": "S6_05"
+},
+{
+"w": "de",
+"t": 419.702,
+"e": 420.002,
+"id": "S6_05"
+},
+{
+"w": "enfriado",
+"t": 420.002,
+"e": 420.402,
+"id": "S6_05"
+},
+{
+"w": "media",
+"t": 420.402,
+"e": 421.102,
+"id": "S6_05"
+},
+{
+"w": "hora",
+"t": 421.102,
+"e": 421.362,
+"id": "S6_05"
+},
+{
+"w": "sin",
+"t": 421.362,
+"e": 422.102,
+"id": "S6_05"
+},
+{
+"w": "agua",
+"t": 422.102,
+"e": 422.222,
+"id": "S6_05"
+},
+{
+"w": "y",
+"t": 422.222,
+"e": 422.802,
+"id": "S6_06"
+},
+{
+"w": "abajo",
+"t": 422.802,
+"e": 423.142,
+"id": "S6_06"
+},
+{
+"w": "los",
+"t": 423.142,
+"e": 423.842,
+"id": "S6_06"
+},
+{
+"w": "tres",
+"t": 423.842,
+"e": 424.202,
+"id": "S6_06"
+},
+{
+"w": "errores",
+"t": 424.202,
+"e": 424.502,
+"id": "S6_06"
+},
+{
+"w": "que",
+"t": 424.502,
+"e": 424.842,
+"id": "S6_06"
+},
+{
+"w": "arruinan",
+"t": 424.842,
+"e": 425.202,
+"id": "S6_06"
+},
+{
+"w": "el",
+"t": 425.202,
+"e": 425.522,
+"id": "S6_06"
+},
+{
+"w": "arreglo",
+"t": 425.522,
+"e": 425.782,
+"id": "S6_06"
+},
+{
+"w": "sácale",
+"t": 426.442,
+"e": 426.562,
+"id": "S6_06"
+},
+{
+"w": "una",
+"t": 426.562,
+"e": 426.842,
+"id": "S6_06"
+},
+{
+"w": "captura",
+"t": 426.842,
+"e": 427.242,
+"id": "S6_06"
+},
+{
+"w": "o",
+"t": 427.242,
+"e": 427.962,
+"id": "S6_06"
+},
+{
+"w": "pausa",
+"t": 427.962,
+"e": 427.962,
+"id": "S6_06"
+},
+{
+"w": "el",
+"t": 427.962,
+"e": 428.642,
+"id": "S6_06"
+},
+{
+"w": "vídeo",
+"t": 428.642,
+"e": 428.802,
+"id": "S6_06"
+},
+{
+"w": "y",
+"t": 428.802,
+"e": 429.202,
+"id": "S6_06"
+},
+{
+"w": "guárdala",
+"t": 429.202,
+"e": 429.682,
+"id": "S6_06"
+},
+{
+"w": "Esta",
+"t": 430.135,
+"e": 430.215,
+"id": "S6_07"
+},
+{
+"w": "hoja",
+"t": 430.215,
+"e": 430.415,
+"id": "S6_07"
+},
+{
+"w": "la",
+"t": 430.415,
+"e": 430.995,
+"id": "S6_07"
+},
+{
+"w": "armé",
+"t": 430.995,
+"e": 431.095,
+"id": "S6_07"
+},
+{
+"w": "con",
+"t": 431.095,
+"e": 431.555,
+"id": "S6_07"
+},
+{
+"w": "el",
+"t": 431.555,
+"e": 431.895,
+"id": "S6_07"
+},
+{
+"w": "mismo",
+"t": 431.895,
+"e": 432.055,
+"id": "S6_07"
+},
+{
+"w": "estilo",
+"t": 432.055,
+"e": 432.415,
+"id": "S6_07"
+},
+{
+"w": "que",
+"t": 432.415,
+"e": 432.595,
+"id": "S6_07"
+},
+{
+"w": "la",
+"t": 432.595,
+"e": 432.915,
+"id": "S6_07"
+},
+{
+"w": "guía",
+"t": 432.915,
+"e": 432.935,
+"id": "S6_07"
+},
+{
+"w": "del",
+"t": 432.935,
+"e": 433.255,
+"id": "S6_07"
+},
+{
+"w": "canal",
+"t": 433.255,
+"e": 433.475,
+"id": "S6_07"
+},
+{
+"w": "donde",
+"t": 433.755,
+"e": 434.055,
+"id": "S6_07"
+},
+{
+"w": "tengo",
+"t": 434.055,
+"e": 434.355,
+"id": "S6_07"
+},
+{
+"w": "ordenados",
+"t": 434.355,
+"e": 434.935,
+"id": "S6_07"
+},
+{
+"w": "otros",
+"t": 434.935,
+"e": 435.475,
+"id": "S6_07"
+},
+{
+"w": "arreglos",
+"t": 435.475,
+"e": 435.895,
+"id": "S6_07"
+},
+{
+"w": "de",
+"t": 435.895,
+"e": 436.155,
+"id": "S6_07"
+},
+{
+"w": "agua",
+"t": 436.155,
+"e": 436.295,
+"id": "S6_07"
+},
+{
+"w": "de",
+"t": 436.295,
+"e": 436.455,
+"id": "S6_07"
+},
+{
+"w": "la",
+"t": 436.455,
+"e": 436.795,
+"id": "S6_07"
+},
+{
+"w": "casa",
+"t": 436.795,
+"e": 436.855,
+"id": "S6_07"
+},
+{
+"w": "si",
+"t": 437.355,
+"e": 437.415,
+"id": "S6_08"
+},
+{
+"w": "estás",
+"t": 437.415,
+"e": 437.635,
+"id": "S6_08"
+},
+{
+"w": "en",
+"t": 437.635,
+"e": 437.755,
+"id": "S6_08"
+},
+{
+"w": "el",
+"t": 437.755,
+"e": 437.955,
+"id": "S6_08"
+},
+{
+"w": "televisor",
+"t": 437.955,
+"e": 438.375,
+"id": "S6_08"
+},
+{
+"w": "apunta",
+"t": 438.375,
+"e": 439.115,
+"id": "S6_08"
+},
+{
+"w": "la",
+"t": 439.115,
+"e": 439.615,
+"id": "S6_08"
+},
+{
+"w": "cámara",
+"t": 439.615,
+"e": 439.615,
+"id": "S6_08"
+},
+{
+"w": "de",
+"t": 439.615,
+"e": 439.795,
+"id": "S6_08"
+},
+{
+"w": "tu",
+"t": 439.795,
+"e": 440.075,
+"id": "S6_08"
+},
+{
+"w": "teléfono",
+"t": 440.075,
+"e": 440.355,
+"id": "S6_08"
+},
+{
+"w": "a",
+"t": 440.355,
+"e": 440.775,
+"id": "S6_08"
+},
+{
+"w": "este",
+"t": 440.775,
+"e": 440.975,
+"id": "S6_08"
+},
+{
+"w": "código",
+"t": 440.975,
+"e": 441.295,
+"id": "S6_08"
+},
+{
+"w": "si",
+"t": 441.755,
+"e": 441.835,
+"id": "S6_08"
+},
+{
+"w": "estás",
+"t": 441.835,
+"e": 442.075,
+"id": "S6_08"
+},
+{
+"w": "en",
+"t": 442.075,
+"e": 442.195,
+"id": "S6_08"
+},
+{
+"w": "el",
+"t": 442.195,
+"e": 442.515,
+"id": "S6_08"
+},
+{
+"w": "teléfono",
+"t": 442.515,
+"e": 442.755,
+"id": "S6_08"
+},
+{
+"w": "el",
+"t": 442.755,
+"e": 443.675,
+"id": "S6_08"
+},
+{
+"w": "enlace",
+"t": 443.675,
+"e": 443.675,
+"id": "S6_08"
+},
+{
+"w": "está",
+"t": 443.675,
+"e": 444.215,
+"id": "S6_08"
+},
+{
+"w": "abajo",
+"t": 444.215,
+"e": 444.595,
+"id": "S6_08"
+},
+{
+"w": "vamos",
+"t": 445.088,
+"e": 445.268,
+"id": "S7_01"
+},
+{
+"w": "al",
+"t": 445.268,
+"e": 445.528,
+"id": "S7_01"
+},
+{
+"w": "tanque",
+"t": 445.528,
+"e": 445.788,
+"id": "S7_01"
+},
+{
+"w": "y",
+"t": 445.788,
+"e": 446.508,
+"id": "S7_01"
+},
+{
+"w": "antes",
+"t": 446.508,
+"e": 446.748,
+"id": "S7_01"
+},
+{
+"w": "de",
+"t": 446.748,
+"e": 446.968,
+"id": "S7_01"
+},
+{
+"w": "vaciarlo",
+"t": 446.968,
+"e": 447.488,
+"id": "S7_01"
+},
+{
+"w": "un",
+"t": 447.488,
+"e": 448.028,
+"id": "S7_01"
+},
+{
+"w": "truco",
+"t": 448.028,
+"e": 448.248,
+"id": "S7_01"
+},
+{
+"w": "que",
+"t": 448.248,
+"e": 448.508,
+"id": "S7_01"
+},
+{
+"w": "te",
+"t": 448.508,
+"e": 448.848,
+"id": "S7_01"
+},
+{
+"w": "ahorra",
+"t": 448.848,
+"e": 448.988,
+"id": "S7_01"
+},
+{
+"w": "una",
+"t": 448.988,
+"e": 449.468,
+"id": "S7_01"
+},
+{
+"w": "segunda",
+"t": 449.468,
+"e": 449.868,
+"id": "S7_01"
+},
+{
+"w": "reparación",
+"t": 449.868,
+"e": 450.468,
+"id": "S7_01"
+},
+{
+"w": "con",
+"t": 451.008,
+"e": 451.068,
+"id": "S7_02"
+},
+{
+"w": "el",
+"t": 451.068,
+"e": 451.288,
+"id": "S7_02"
+},
+{
+"w": "tanque",
+"t": 451.288,
+"e": 451.528,
+"id": "S7_02"
+},
+{
+"w": "lleno",
+"t": 451.528,
+"e": 451.888,
+"id": "S7_02"
+},
+{
+"w": "marco",
+"t": 451.888,
+"e": 452.568,
+"id": "S7_02"
+},
+{
+"w": "con",
+"t": 452.568,
+"e": 452.768,
+"id": "S7_02"
+},
+{
+"w": "un",
+"t": 452.768,
+"e": 453.008,
+"id": "S7_02"
+},
+{
+"w": "marcador",
+"t": 453.008,
+"e": 453.388,
+"id": "S7_02"
+},
+{
+"w": "donde",
+"t": 453.388,
+"e": 454.008,
+"id": "S7_02"
+},
+{
+"w": "empieza",
+"t": 454.008,
+"e": 454.488,
+"id": "S7_02"
+},
+{
+"w": "y",
+"t": 454.488,
+"e": 454.848,
+"id": "S7_02"
+},
+{
+"w": "donde",
+"t": 454.848,
+"e": 455.128,
+"id": "S7_02"
+},
+{
+"w": "termina",
+"t": 455.128,
+"e": 455.448,
+"id": "S7_02"
+},
+{
+"w": "la",
+"t": 455.448,
+"e": 455.968,
+"id": "S7_02"
+},
+{
+"w": "grieta",
+"t": 455.968,
+"e": 455.968,
+"id": "S7_02"
+},
+{
+"w": "un",
+"t": 456.508,
+"e": 456.768,
+"id": "S7_02"
+},
+{
+"w": "poco",
+"t": 456.768,
+"e": 456.768,
+"id": "S7_02"
+},
+{
+"w": "más",
+"t": 456.768,
+"e": 457.068,
+"id": "S7_02"
+},
+{
+"w": "allá",
+"t": 457.068,
+"e": 457.288,
+"id": "S7_02"
+},
+{
+"w": "porque",
+"t": 457.288,
+"e": 457.828,
+"id": "S7_03"
+},
+{
+"w": "cuando",
+"t": 457.828,
+"e": 458.088,
+"id": "S7_03"
+},
+{
+"w": "lo",
+"t": 458.088,
+"e": 458.408,
+"id": "S7_03"
+},
+{
+"w": "vacías",
+"t": 458.408,
+"e": 458.708,
+"id": "S7_03"
+},
+{
+"w": "la",
+"t": 458.708,
+"e": 459.248,
+"id": "S7_03"
+},
+{
+"w": "presión",
+"t": 459.248,
+"e": 459.568,
+"id": "S7_03"
+},
+{
+"w": "se",
+"t": 459.568,
+"e": 459.868,
+"id": "S7_03"
+},
+{
+"w": "va",
+"t": 459.868,
+"e": 459.988,
+"id": "S7_03"
+},
+{
+"w": "la",
+"t": 460.468,
+"e": 460.668,
+"id": "S7_03"
+},
+{
+"w": "grieta",
+"t": 460.668,
+"e": 460.828,
+"id": "S7_03"
+},
+{
+"w": "se",
+"t": 460.828,
+"e": 461.308,
+"id": "S7_03"
+},
+{
+"w": "cierra",
+"t": 461.308,
+"e": 461.388,
+"id": "S7_03"
+},
+{
+"w": "y",
+"t": 461.388,
+"e": 461.908,
+"id": "S7_03"
+},
+{
+"w": "la",
+"t": 461.908,
+"e": 462.028,
+"id": "S7_03"
+},
+{
+"w": "mitad",
+"t": 462.028,
+"e": 462.448,
+"id": "S7_03"
+},
+{
+"w": "ya",
+"t": 462.448,
+"e": 462.808,
+"id": "S7_03"
+},
+{
+"w": "no",
+"t": 462.808,
+"e": 462.928,
+"id": "S7_03"
+},
+{
+"w": "la",
+"t": 462.928,
+"e": 463.228,
+"id": "S7_03"
+},
+{
+"w": "ves",
+"t": 463.228,
+"e": 463.648,
+"id": "S7_03"
+},
+{
+"w": "siempre",
+"t": 464.048,
+"e": 464.208,
+"id": "S7_03"
+},
+{
+"w": "es",
+"t": 464.208,
+"e": 464.508,
+"id": "S7_03"
+},
+{
+"w": "más",
+"t": 464.508,
+"e": 464.788,
+"id": "S7_03"
+},
+{
+"w": "larga",
+"t": 464.788,
+"e": 465.028,
+"id": "S7_03"
+},
+{
+"w": "de",
+"t": 465.028,
+"e": 465.208,
+"id": "S7_03"
+},
+{
+"w": "lo",
+"t": 465.208,
+"e": 465.288,
+"id": "S7_03"
+},
+{
+"w": "que",
+"t": 465.288,
+"e": 465.688,
+"id": "S7_03"
+},
+{
+"w": "parece",
+"t": 465.688,
+"e": 465.748,
+"id": "S7_03"
+},
+{
+"w": "ahora",
+"t": 466.305,
+"e": 466.425,
+"id": "S7B_01"
+},
+{
+"w": "sí",
+"t": 466.425,
+"e": 467.145,
+"id": "S7B_01"
+},
+{
+"w": "paso",
+"t": 467.145,
+"e": 467.325,
+"id": "S7B_01"
+},
+{
+"w": "1",
+"t": 467.325,
+"e": 467.845,
+"id": "S7B_01"
+},
+{
+"w": "vaciarlo",
+"t": 468.485,
+"e": 469.045,
+"id": "S7B_01"
+},
+{
+"w": "hasta",
+"t": 469.045,
+"e": 469.245,
+"id": "S7B_01"
+},
+{
+"w": "que",
+"t": 469.245,
+"e": 469.425,
+"id": "S7B_01"
+},
+{
+"w": "el",
+"t": 469.425,
+"e": 469.805,
+"id": "S7B_01"
+},
+{
+"w": "agua",
+"t": 469.805,
+"e": 469.805,
+"id": "S7B_01"
+},
+{
+"w": "quede",
+"t": 469.805,
+"e": 470.105,
+"id": "S7B_01"
+},
+{
+"w": "por",
+"t": 470.105,
+"e": 470.725,
+"id": "S7B_01"
+},
+{
+"w": "debajo",
+"t": 470.725,
+"e": 470.725,
+"id": "S7B_01"
+},
+{
+"w": "de",
+"t": 470.725,
+"e": 470.885,
+"id": "S7B_01"
+},
+{
+"w": "la",
+"t": 470.885,
+"e": 471.285,
+"id": "S7B_01"
+},
+{
+"w": "grieta",
+"t": 471.285,
+"e": 471.345,
+"id": "S7B_01"
+},
+{
+"w": "no",
+"t": 471.805,
+"e": 471.885,
+"id": "S7B_02"
+},
+{
+"w": "hace",
+"t": 471.885,
+"e": 472.165,
+"id": "S7B_02"
+},
+{
+"w": "falta",
+"t": 472.165,
+"e": 472.365,
+"id": "S7B_02"
+},
+{
+"w": "vaciarlo",
+"t": 472.365,
+"e": 473.125,
+"id": "S7B_02"
+},
+{
+"w": "entero",
+"t": 473.125,
+"e": 473.305,
+"id": "S7B_02"
+},
+{
+"w": "si",
+"t": 473.305,
+"e": 473.745,
+"id": "S7B_02"
+},
+{
+"w": "la",
+"t": 473.745,
+"e": 474.125,
+"id": "S7B_02"
+},
+{
+"w": "grieta",
+"t": 474.125,
+"e": 474.165,
+"id": "S7B_02"
+},
+{
+"w": "está",
+"t": 474.165,
+"e": 474.445,
+"id": "S7B_02"
+},
+{
+"w": "arriba",
+"t": 474.445,
+"e": 474.745,
+"id": "S7B_02"
+},
+{
+"w": "pero",
+"t": 474.905,
+"e": 475.125,
+"id": "S7B_02"
+},
+{
+"w": "tiene",
+"t": 475.125,
+"e": 475.345,
+"id": "S7B_02"
+},
+{
+"w": "que",
+"t": 475.345,
+"e": 475.545,
+"id": "S7B_02"
+},
+{
+"w": "quedar",
+"t": 475.545,
+"e": 475.765,
+"id": "S7B_02"
+},
+{
+"w": "seca",
+"t": 475.765,
+"e": 476.205,
+"id": "S7B_02"
+},
+{
+"w": "y",
+"t": 476.205,
+"e": 476.585,
+"id": "S7B_02"
+},
+{
+"w": "sin",
+"t": 476.585,
+"e": 476.725,
+"id": "S7B_02"
+},
+{
+"w": "presión",
+"t": 476.725,
+"e": 477.145,
+"id": "S7B_02"
+},
+{
+"w": "seco",
+"t": 477.825,
+"e": 477.945,
+"id": "S7B_03"
+},
+{
+"w": "con",
+"t": 477.945,
+"e": 478.105,
+"id": "S7B_03"
+},
+{
+"w": "un",
+"t": 478.105,
+"e": 478.525,
+"id": "S7B_03"
+},
+{
+"w": "trapo",
+"t": 478.525,
+"e": 478.605,
+"id": "S7B_03"
+},
+{
+"w": "y",
+"t": 478.605,
+"e": 479.005,
+"id": "S7B_03"
+},
+{
+"w": "le",
+"t": 479.005,
+"e": 479.325,
+"id": "S7B_03"
+},
+{
+"w": "doy",
+"t": 479.325,
+"e": 479.405,
+"id": "S7B_03"
+},
+{
+"w": "unos",
+"t": 479.405,
+"e": 479.825,
+"id": "S7B_03"
+},
+{
+"w": "minutos",
+"t": 479.825,
+"e": 480.185,
+"id": "S7B_03"
+},
+{
+"w": "al",
+"t": 480.185,
+"e": 480.465,
+"id": "S7B_03"
+},
+{
+"w": "sol",
+"t": 480.465,
+"e": 480.645,
+"id": "S7B_03"
+},
+{
+"w": "una",
+"t": 481.105,
+"e": 481.325,
+"id": "S7B_03"
+},
+{
+"w": "gota",
+"t": 481.325,
+"e": 481.585,
+"id": "S7B_03"
+},
+{
+"w": "atrapada",
+"t": 481.585,
+"e": 482.105,
+"id": "S7B_03"
+},
+{
+"w": "dentro",
+"t": 482.105,
+"e": 482.565,
+"id": "S7B_03"
+},
+{
+"w": "hierve",
+"t": 482.565,
+"e": 483.245,
+"id": "S7B_03"
+},
+{
+"w": "con",
+"t": 483.245,
+"e": 483.465,
+"id": "S7B_03"
+},
+{
+"w": "el",
+"t": 483.465,
+"e": 483.925,
+"id": "S7B_03"
+},
+{
+"w": "calor",
+"t": 483.925,
+"e": 483.925,
+"id": "S7B_03"
+},
+{
+"w": "y",
+"t": 483.925,
+"e": 484.305,
+"id": "S7B_03"
+},
+{
+"w": "te",
+"t": 484.305,
+"e": 484.525,
+"id": "S7B_03"
+},
+{
+"w": "deja",
+"t": 484.525,
+"e": 484.645,
+"id": "S7B_03"
+},
+{
+"w": "un",
+"t": 484.645,
+"e": 485.045,
+"id": "S7B_03"
+},
+{
+"w": "poro",
+"t": 485.045,
+"e": 485.285,
+"id": "S7B_03"
+},
+{
+"w": "limpio",
+"t": 485.765,
+"e": 485.945,
+"id": "S7B_04"
+},
+{
+"w": "con",
+"t": 485.945,
+"e": 486.165,
+"id": "S7B_04"
+},
+{
+"w": "alcohol",
+"t": 486.165,
+"e": 486.585,
+"id": "S7B_04"
+},
+{
+"w": "isopropílico",
+"t": 486.585,
+"e": 487.805,
+"id": "S7B_04"
+},
+{
+"w": "nada",
+"t": 488.085,
+"e": 488.205,
+"id": "S7B_04"
+},
+{
+"w": "de",
+"t": 488.205,
+"e": 488.525,
+"id": "S7B_04"
+},
+{
+"w": "detergente",
+"t": 488.525,
+"e": 489.045,
+"id": "S7B_04"
+},
+{
+"w": "que",
+"t": 489.045,
+"e": 489.445,
+"id": "S7B_04"
+},
+{
+"w": "deja",
+"t": 489.445,
+"e": 489.785,
+"id": "S7B_04"
+},
+{
+"w": "una",
+"t": 489.785,
+"e": 490.365,
+"id": "S7B_04"
+},
+{
+"w": "película",
+"t": 490.365,
+"e": 490.745,
+"id": "S7B_04"
+},
+{
+"w": "fíjate",
+"t": 491.245,
+"e": 491.445,
+"id": "S7B_05"
+},
+{
+"w": "en",
+"t": 491.445,
+"e": 491.685,
+"id": "S7B_05"
+},
+{
+"w": "este",
+"t": 491.685,
+"e": 491.865,
+"id": "S7B_05"
+},
+{
+"w": "color",
+"t": 491.865,
+"e": 492.185,
+"id": "S7B_05"
+},
+{
+"w": "gris",
+"t": 492.185,
+"e": 492.485,
+"id": "S7B_05"
+},
+{
+"w": "opaco",
+"t": 492.485,
+"e": 492.885,
+"id": "S7B_05"
+},
+{
+"w": "es",
+"t": 493.325,
+"e": 493.405,
+"id": "S7B_05"
+},
+{
+"w": "la",
+"t": 493.405,
+"e": 493.825,
+"id": "S7B_05"
+},
+{
+"w": "piel",
+"t": 493.825,
+"e": 493.825,
+"id": "S7B_05"
+},
+{
+"w": "que",
+"t": 493.825,
+"e": 494.045,
+"id": "S7B_05"
+},
+{
+"w": "quemó",
+"t": 494.045,
+"e": 494.265,
+"id": "S7B_05"
+},
+{
+"w": "el",
+"t": 494.265,
+"e": 494.705,
+"id": "S7B_05"
+},
+{
+"w": "sol",
+"t": 494.705,
+"e": 494.985,
+"id": "S7B_05"
+},
+{
+"w": "esa",
+"t": 495.165,
+"e": 495.385,
+"id": "S7B_05"
+},
+{
+"w": "capa",
+"t": 495.385,
+"e": 495.705,
+"id": "S7B_05"
+},
+{
+"w": "no",
+"t": 495.705,
+"e": 495.925,
+"id": "S7B_05"
+},
+{
+"w": "se",
+"t": 495.925,
+"e": 496.265,
+"id": "S7B_05"
+},
+{
+"w": "funde",
+"t": 496.265,
+"e": 496.405,
+"id": "S7B_05"
+},
+{
+"w": "bien",
+"t": 496.405,
+"e": 496.685,
+"id": "S7B_05"
+},
+{
+"w": "la",
+"t": 497.085,
+"e": 497.265,
+"id": "S7B_06"
+},
+{
+"w": "raspo",
+"t": 497.265,
+"e": 497.625,
+"id": "S7B_06"
+},
+{
+"w": "con",
+"t": 497.625,
+"e": 498.065,
+"id": "S7B_06"
+},
+{
+"w": "el",
+"t": 498.065,
+"e": 498.405,
+"id": "S7B_06"
+},
+{
+"w": "lomo",
+"t": 498.405,
+"e": 498.465,
+"id": "S7B_06"
+},
+{
+"w": "del",
+"t": 498.465,
+"e": 498.725,
+"id": "S7B_06"
+},
+{
+"w": "cúter",
+"t": 498.725,
+"e": 499.045,
+"id": "S7B_06"
+},
+{
+"w": "hasta",
+"t": 499.045,
+"e": 499.445,
+"id": "S7B_06"
+},
+{
+"w": "que",
+"t": 499.445,
+"e": 500.065,
+"id": "S7B_06"
+},
+{
+"w": "aparece",
+"t": 500.065,
+"e": 500.065,
+"id": "S7B_06"
+},
+{
+"w": "el",
+"t": 500.065,
+"e": 500.545,
+"id": "S7B_06"
+},
+{
+"w": "negro",
+"t": 500.545,
+"e": 500.725,
+"id": "S7B_06"
+},
+{
+"w": "sano",
+"t": 500.725,
+"e": 501.125,
+"id": "S7B_06"
+},
+{
+"w": "un",
+"t": 501.565,
+"e": 501.705,
+"id": "S7B_06"
+},
+{
+"w": "par",
+"t": 501.705,
+"e": 501.845,
+"id": "S7B_06"
+},
+{
+"w": "de",
+"t": 501.845,
+"e": 502.225,
+"id": "S7B_06"
+},
+{
+"w": "dedos",
+"t": 502.225,
+"e": 502.345,
+"id": "S7B_06"
+},
+{
+"w": "alrededor",
+"t": 502.345,
+"e": 502.945,
+"id": "S7B_06"
+},
+{
+"w": "de",
+"t": 502.945,
+"e": 503.165,
+"id": "S7B_06"
+},
+{
+"w": "la",
+"t": 503.165,
+"e": 503.545,
+"id": "S7B_06"
+},
+{
+"w": "grieta",
+"t": 503.545,
+"e": 503.585,
+"id": "S7B_06"
+},
+{
+"w": "ahora",
+"t": 504.065,
+"e": 504.325,
+"id": "S7B_07"
+},
+{
+"w": "lo",
+"t": 504.325,
+"e": 504.705,
+"id": "S7B_07"
+},
+{
+"w": "que",
+"t": 504.705,
+"e": 504.905,
+"id": "S7B_07"
+},
+{
+"w": "casi",
+"t": 504.905,
+"e": 505.225,
+"id": "S7B_07"
+},
+{
+"w": "nadie",
+"t": 505.225,
+"e": 505.445,
+"id": "S7B_07"
+},
+{
+"w": "hace",
+"t": 505.445,
+"e": 505.825,
+"id": "S7B_07"
+},
+{
+"w": "mira",
+"t": 506.305,
+"e": 506.345,
+"id": "S7B_07"
+},
+{
+"w": "la",
+"t": 506.345,
+"e": 506.845,
+"id": "S7B_07"
+},
+{
+"w": "punta",
+"t": 506.845,
+"e": 506.845,
+"id": "S7B_07"
+},
+{
+"w": "de",
+"t": 506.845,
+"e": 507.025,
+"id": "S7B_07"
+},
+{
+"w": "la",
+"t": 507.025,
+"e": 507.405,
+"id": "S7B_07"
+},
+{
+"w": "grieta",
+"t": 507.405,
+"e": 507.465,
+"id": "S7B_07"
+},
+{
+"w": "con",
+"t": 507.865,
+"e": 508.045,
+"id": "S7B_08"
+},
+{
+"w": "cada",
+"t": 508.045,
+"e": 508.265,
+"id": "S7B_08"
+},
+{
+"w": "llenado",
+"t": 508.265,
+"e": 508.725,
+"id": "S7B_08"
+},
+{
+"w": "el",
+"t": 508.725,
+"e": 509.345,
+"id": "S7B_08"
+},
+{
+"w": "peso",
+"t": 509.345,
+"e": 509.485,
+"id": "S7B_08"
+},
+{
+"w": "del",
+"t": 509.485,
+"e": 509.885,
+"id": "S7B_08"
+},
+{
+"w": "agua",
+"t": 509.885,
+"e": 509.885,
+"id": "S7B_08"
+},
+{
+"w": "empuja",
+"t": 509.885,
+"e": 510.345,
+"id": "S7B_08"
+},
+{
+"w": "y",
+"t": 510.345,
+"e": 510.725,
+"id": "S7B_08"
+},
+{
+"w": "la",
+"t": 510.725,
+"e": 511.285,
+"id": "S7B_08"
+},
+{
+"w": "grieta",
+"t": 511.285,
+"e": 511.285,
+"id": "S7B_08"
+},
+{
+"w": "sigue",
+"t": 511.285,
+"e": 511.685,
+"id": "S7B_08"
+},
+{
+"w": "avanzando",
+"t": 511.685,
+"e": 512.205,
+"id": "S7B_08"
+},
+{
+"w": "por",
+"t": 512.205,
+"e": 512.405,
+"id": "S7B_08"
+},
+{
+"w": "la",
+"t": 512.405,
+"e": 512.945,
+"id": "S7B_08"
+},
+{
+"w": "punta",
+"t": 512.945,
+"e": 513.125,
+"id": "S7B_08"
+},
+{
+"w": "por",
+"t": 513.365,
+"e": 513.565,
+"id": "S7B_09"
+},
+{
+"w": "eso",
+"t": 513.565,
+"e": 513.685,
+"id": "S7B_09"
+},
+{
+"w": "en",
+"t": 513.685,
+"e": 514.085,
+"id": "S7B_09"
+},
+{
+"w": "cada",
+"t": 514.085,
+"e": 514.265,
+"id": "S7B_09"
+},
+{
+"w": "punta",
+"t": 514.265,
+"e": 514.625,
+"id": "S7B_09"
+},
+{
+"w": "un",
+"t": 514.625,
+"e": 515.225,
+"id": "S7B_09"
+},
+{
+"w": "agujerito",
+"t": 515.225,
+"e": 515.685,
+"id": "S7B_09"
+},
+{
+"w": "de",
+"t": 515.685,
+"e": 518.905,
+"id": "S7B_09"
+},
+{
+"w": "de",
+"t": 515.745,
+"e": 515.865,
+"id": "S7B_09"
+},
+{
+"w": "tres",
+"t": 515.865,
+"e": 516.165,
+"id": "S7B_09"
+},
+{
+"w": "milímetros",
+"t": 516.165,
+"e": 516.745,
+"id": "S7B_09"
+},
+{
+"w": "con",
+"t": 516.745,
+"e": 517.165,
+"id": "S7B_10"
+},
+{
+"w": "el",
+"t": 517.165,
+"e": 517.365,
+"id": "S7B_10"
+},
+{
+"w": "taladro",
+"t": 517.365,
+"e": 517.745,
+"id": "S7B_10"
+},
+{
+"w": "despacio",
+"t": 517.745,
+"e": 518.324,
+"id": "S7B_10"
+},
+{
+"w": "y",
+"t": 518.324,
+"e": 518.625,
+"id": "S7B_10"
+},
+{
+"w": "sin",
+"t": 518.625,
+"e": 518.765,
+"id": "S7B_10"
+},
+{
+"w": "apretar",
+"t": 518.765,
+"e": 519.565,
+"id": "S7B_10"
+},
+{
+"w": "porque",
+"t": 518.985,
+"e": 519.765,
+"id": "S7B_10"
+},
+{
+"w": "la",
+"t": 519.765,
+"e": 520.045,
+"id": "S7B_10"
+},
+{
+"w": "broca",
+"t": 520.045,
+"e": 520.265,
+"id": "S7B_10"
+},
+{
+"w": "en",
+"t": 520.265,
+"e": 520.385,
+"id": "S7B_10"
+},
+{
+"w": "el",
+"t": 520.385,
+"e": 520.925,
+"id": "S7B_10"
+},
+{
+"w": "plástico",
+"t": 520.925,
+"e": 520.925,
+"id": "S7B_10"
+},
+{
+"w": "se",
+"t": 520.925,
+"e": 521.305,
+"id": "S7B_10"
+},
+{
+"w": "engancha",
+"t": 521.305,
+"e": 521.585,
+"id": "S7B_10"
+},
+{
+"w": "y",
+"t": 521.585,
+"e": 522.085,
+"id": "S7B_10"
+},
+{
+"w": "te",
+"t": 522.085,
+"e": 522.245,
+"id": "S7B_10"
+},
+{
+"w": "lo",
+"t": 522.245,
+"e": 522.425,
+"id": "S7B_10"
+},
+{
+"w": "raja",
+"t": 522.425,
+"e": 522.585,
+"id": "S7B_10"
+},
+{
+"w": "más",
+"t": 522.585,
+"e": 523.065,
+"id": "S7B_10"
+},
+{
+"w": "un",
+"t": 523.645,
+"e": 523.645,
+"id": "S7B_11"
+},
+{
+"w": "poquito",
+"t": 523.645,
+"e": 523.905,
+"id": "S7B_11"
+},
+{
+"w": "más",
+"t": 523.905,
+"e": 524.305,
+"id": "S7B_11"
+},
+{
+"w": "allá",
+"t": 524.305,
+"e": 524.445,
+"id": "S7B_11"
+},
+{
+"w": "de",
+"t": 524.445,
+"e": 524.725,
+"id": "S7B_11"
+},
+{
+"w": "donde",
+"t": 524.725,
+"e": 524.805,
+"id": "S7B_11"
+},
+{
+"w": "termina",
+"t": 524.805,
+"e": 525.325,
+"id": "S7B_11"
+},
+{
+"w": "para",
+"t": 525.325,
+"e": 525.805,
+"id": "S7B_11"
+},
+{
+"w": "agarrarla",
+"t": 525.805,
+"e": 526.305,
+"id": "S7B_11"
+},
+{
+"w": "entera",
+"t": 526.305,
+"e": 526.665,
+"id": "S7B_11"
+},
+{
+"w": "el",
+"t": 527.025,
+"e": 527.225,
+"id": "S7B_12"
+},
+{
+"w": "agujero",
+"t": 527.225,
+"e": 527.565,
+"id": "S7B_12"
+},
+{
+"w": "redondo",
+"t": 527.565,
+"e": 528.065,
+"id": "S7B_12"
+},
+{
+"w": "reparte",
+"t": 528.065,
+"e": 528.725,
+"id": "S7B_12"
+},
+{
+"w": "la",
+"t": 528.725,
+"e": 529.345,
+"id": "S7B_12"
+},
+{
+"w": "fuerza",
+"t": 529.345,
+"e": 529.345,
+"id": "S7B_12"
+},
+{
+"w": "y",
+"t": 529.345,
+"e": 529.765,
+"id": "S7B_12"
+},
+{
+"w": "la",
+"t": 529.765,
+"e": 530.145,
+"id": "S7B_12"
+},
+{
+"w": "grieta",
+"t": 530.145,
+"e": 530.145,
+"id": "S7B_12"
+},
+{
+"w": "se",
+"t": 530.145,
+"e": 530.645,
+"id": "S7B_12"
+},
+{
+"w": "frena",
+"t": 530.645,
+"e": 530.705,
+"id": "S7B_12"
+},
+{
+"w": "ahí",
+"t": 530.705,
+"e": 531.105,
+"id": "S7B_12"
+},
+{
+"w": "después",
+"t": 531.385,
+"e": 531.505,
+"id": "S7B_12"
+},
+{
+"w": "se",
+"t": 531.505,
+"e": 532.045,
+"id": "S7B_12"
+},
+{
+"w": "rellena",
+"t": 532.045,
+"e": 532.085,
+"id": "S7B_12"
+},
+{
+"w": "con",
+"t": 532.085,
+"e": 532.865,
+"id": "S7B_12"
+},
+{
+"w": "plástico",
+"t": 532.865,
+"e": 532.865,
+"id": "S7B_12"
+},
+{
+"w": "no",
+"t": 533.325,
+"e": 533.445,
+"id": "S7B_12"
+},
+{
+"w": "queda",
+"t": 533.445,
+"e": 533.685,
+"id": "S7B_12"
+},
+{
+"w": "abierto",
+"t": 533.685,
+"e": 534.145,
+"id": "S7B_12"
+},
+{
+"w": "paso",
+"t": 534.722,
+"e": 534.782,
+"id": "S8_01"
+},
+{
+"w": "2",
+"t": 534.782,
+"e": 535.142,
+"id": "S8_01"
+},
+{
+"w": "el",
+"t": 535.482,
+"e": 535.702,
+"id": "S8_01"
+},
+{
+"w": "cautín",
+"t": 535.702,
+"e": 536.082,
+"id": "S8_01"
+},
+{
+"w": "bien",
+"t": 536.082,
+"e": 536.502,
+"id": "S8_01"
+},
+{
+"w": "caliente",
+"t": 536.502,
+"e": 536.882,
+"id": "S8_01"
+},
+{
+"w": "unos",
+"t": 537.382,
+"e": 537.562,
+"id": "S8_01"
+},
+{
+"w": "minutos",
+"t": 537.562,
+"e": 537.982,
+"id": "S8_01"
+},
+{
+"w": "con",
+"t": 538.442,
+"e": 538.502,
+"id": "S8_02"
+},
+{
+"w": "la",
+"t": 538.502,
+"e": 539.022,
+"id": "S8_02"
+},
+{
+"w": "punta",
+"t": 539.022,
+"e": 539.102,
+"id": "S8_02"
+},
+{
+"w": "abro",
+"t": 539.102,
+"e": 539.702,
+"id": "S8_02"
+},
+{
+"w": "la",
+"t": 539.702,
+"e": 540.322,
+"id": "S8_02"
+},
+{
+"w": "grieta",
+"t": 540.322,
+"e": 540.322,
+"id": "S8_02"
+},
+{
+"w": "en",
+"t": 540.322,
+"e": 541.002,
+"id": "S8_02"
+},
+{
+"w": "V",
+"t": 541.002,
+"e": 541.082,
+"id": "S8_02"
+},
+{
+"w": "como",
+"t": 541.082,
+"e": 541.642,
+"id": "S8_02"
+},
+{
+"w": "una",
+"t": 541.642,
+"e": 542.002,
+"id": "S8_02"
+},
+{
+"w": "canaleta",
+"t": 542.002,
+"e": 542.582,
+"id": "S8_02"
+},
+{
+"w": "hasta",
+"t": 542.582,
+"e": 543.022,
+"id": "S8_02"
+},
+{
+"w": "la",
+"t": 543.022,
+"e": 543.462,
+"id": "S8_02"
+},
+{
+"w": "mitad",
+"t": 543.462,
+"e": 543.462,
+"id": "S8_02"
+},
+{
+"w": "del",
+"t": 543.462,
+"e": 543.802,
+"id": "S8_02"
+},
+{
+"w": "espesor",
+"t": 543.802,
+"e": 544.182,
+"id": "S8_02"
+},
+{
+"w": "¿por",
+"t": 544.782,
+"e": 544.802,
+"id": "S8_03"
+},
+{
+"w": "qué",
+"t": 544.802,
+"e": 544.862,
+"id": "S8_03"
+},
+{
+"w": "en",
+"t": 544.862,
+"e": 545.182,
+"id": "S8_03"
+},
+{
+"w": "V",
+"t": 545.182,
+"e": 545.282,
+"id": "S8_03"
+},
+{
+"w": "porque",
+"t": 545.362,
+"e": 545.822,
+"id": "S8_03"
+},
+{
+"w": "el",
+"t": 545.822,
+"e": 546.142,
+"id": "S8_03"
+},
+{
+"w": "relleno",
+"t": 546.142,
+"e": 546.422,
+"id": "S8_03"
+},
+{
+"w": "tiene",
+"t": 546.422,
+"e": 546.922,
+"id": "S8_03"
+},
+{
+"w": "que",
+"t": 546.922,
+"e": 547.362,
+"id": "S8_03"
+},
+{
+"w": "entrar",
+"t": 547.362,
+"e": 547.362,
+"id": "S8_03"
+},
+{
+"w": "hasta",
+"t": 547.362,
+"e": 547.602,
+"id": "S8_03"
+},
+{
+"w": "el",
+"t": 547.602,
+"e": 548.122,
+"id": "S8_03"
+},
+{
+"w": "fondo",
+"t": 548.122,
+"e": 548.122,
+"id": "S8_03"
+},
+{
+"w": "de",
+"t": 548.122,
+"e": 548.302,
+"id": "S8_03"
+},
+{
+"w": "la",
+"t": 548.302,
+"e": 548.482,
+"id": "S8_03"
+},
+{
+"w": "grieta",
+"t": 548.482,
+"e": 548.782,
+"id": "S8_03"
+},
+{
+"w": "no",
+"t": 549.242,
+"e": 549.362,
+"id": "S8_03"
+},
+{
+"w": "quedar",
+"t": 549.362,
+"e": 549.662,
+"id": "S8_03"
+},
+{
+"w": "arriba",
+"t": 549.662,
+"e": 550.102,
+"id": "S8_03"
+},
+{
+"w": "como",
+"t": 550.102,
+"e": 550.482,
+"id": "S8_03"
+},
+{
+"w": "una",
+"t": 550.482,
+"e": 550.862,
+"id": "S8_03"
+},
+{
+"w": "curita",
+"t": 550.862,
+"e": 551.482,
+"id": "S8_03"
+},
+{
+"w": "ahora",
+"t": 551.722,
+"e": 552.062,
+"id": "S8_04"
+},
+{
+"w": "apoyo",
+"t": 552.062,
+"e": 552.722,
+"id": "S8_04"
+},
+{
+"w": "la",
+"t": 552.722,
+"e": 553.302,
+"id": "S8_04"
+},
+{
+"w": "tira",
+"t": 553.302,
+"e": 553.302,
+"id": "S8_04"
+},
+{
+"w": "y",
+"t": 553.302,
+"e": 553.702,
+"id": "S8_04"
+},
+{
+"w": "la",
+"t": 553.702,
+"e": 554.022,
+"id": "S8_04"
+},
+{
+"w": "derrito",
+"t": 554.022,
+"e": 554.302,
+"id": "S8_04"
+},
+{
+"w": "junto",
+"t": 554.302,
+"e": 554.902,
+"id": "S8_04"
+},
+{
+"w": "con",
+"t": 554.902,
+"e": 555.142,
+"id": "S8_04"
+},
+{
+"w": "los",
+"t": 555.142,
+"e": 555.502,
+"id": "S8_04"
+},
+{
+"w": "bordes",
+"t": 555.502,
+"e": 555.642,
+"id": "S8_04"
+},
+{
+"w": "del",
+"t": 555.642,
+"e": 555.922,
+"id": "S8_04"
+},
+{
+"w": "tanque",
+"t": 555.922,
+"e": 556.222,
+"id": "S8_04"
+},
+{
+"w": "al",
+"t": 556.222,
+"e": 556.762,
+"id": "S8_04"
+},
+{
+"w": "mismo",
+"t": 556.762,
+"e": 557.042,
+"id": "S8_04"
+},
+{
+"w": "tiempo",
+"t": 557.042,
+"e": 557.402,
+"id": "S8_04"
+},
+{
+"w": "esto",
+"t": 557.842,
+"e": 558.042,
+"id": "S8_05"
+},
+{
+"w": "es",
+"t": 558.042,
+"e": 558.222,
+"id": "S8_05"
+},
+{
+"w": "lo",
+"t": 558.222,
+"e": 558.362,
+"id": "S8_05"
+},
+{
+"w": "más",
+"t": 558.362,
+"e": 558.642,
+"id": "S8_05"
+},
+{
+"w": "importante",
+"t": 558.642,
+"e": 559.122,
+"id": "S8_05"
+},
+{
+"w": "tienes",
+"t": 559.722,
+"e": 559.822,
+"id": "S8_05"
+},
+{
+"w": "que",
+"t": 559.822,
+"e": 560.042,
+"id": "S8_05"
+},
+{
+"w": "ver",
+"t": 560.042,
+"e": 560.162,
+"id": "S8_05"
+},
+{
+"w": "que",
+"t": 560.162,
+"e": 560.282,
+"id": "S8_05"
+},
+{
+"w": "el",
+"t": 560.282,
+"e": 560.502,
+"id": "S8_05"
+},
+{
+"w": "tanque",
+"t": 560.502,
+"e": 560.742,
+"id": "S8_05"
+},
+{
+"w": "también",
+"t": 560.742,
+"e": 561.242,
+"id": "S8_05"
+},
+{
+"w": "se",
+"t": 561.242,
+"e": 561.522,
+"id": "S8_05"
+},
+{
+"w": "derrite",
+"t": 561.522,
+"e": 561.802,
+"id": "S8_05"
+},
+{
+"w": "que",
+"t": 562.182,
+"e": 562.282,
+"id": "S8_05"
+},
+{
+"w": "se",
+"t": 562.282,
+"e": 562.602,
+"id": "S8_05"
+},
+{
+"w": "mezclen",
+"t": 562.602,
+"e": 562.802,
+"id": "S8_05"
+},
+{
+"w": "los",
+"t": 562.802,
+"e": 563.062,
+"id": "S8_05"
+},
+{
+"w": "dos",
+"t": 563.062,
+"e": 563.262,
+"id": "S8_05"
+},
+{
+"w": "si",
+"t": 563.642,
+"e": 563.782,
+"id": "S8_06"
+},
+{
+"w": "sólo",
+"t": 563.782,
+"e": 564.022,
+"id": "S8_06"
+},
+{
+"w": "derrites",
+"t": 564.022,
+"e": 564.462,
+"id": "S8_06"
+},
+{
+"w": "la",
+"t": 564.462,
+"e": 564.942,
+"id": "S8_06"
+},
+{
+"w": "tira",
+"t": 564.942,
+"e": 564.942,
+"id": "S8_06"
+},
+{
+"w": "encima",
+"t": 564.942,
+"e": 565.422,
+"id": "S8_06"
+},
+{
+"w": "se",
+"t": 565.422,
+"e": 566.022,
+"id": "S8_06"
+},
+{
+"w": "enfría",
+"t": 566.022,
+"e": 566.282,
+"id": "S8_06"
+},
+{
+"w": "arriba",
+"t": 566.282,
+"e": 566.622,
+"id": "S8_06"
+},
+{
+"w": "del",
+"t": 566.622,
+"e": 566.902,
+"id": "S8_06"
+},
+{
+"w": "tanque",
+"t": 566.902,
+"e": 567.262,
+"id": "S8_06"
+},
+{
+"w": "sin",
+"t": 567.262,
+"e": 567.762,
+"id": "S8_06"
+},
+{
+"w": "agarrarse",
+"t": 567.762,
+"e": 568.402,
+"id": "S8_06"
+},
+{
+"w": "es",
+"t": 568.722,
+"e": 569.002,
+"id": "S8_06"
+},
+{
+"w": "otro",
+"t": 569.002,
+"e": 569.302,
+"id": "S8_06"
+},
+{
+"w": "pegamento",
+"t": 569.302,
+"e": 569.902,
+"id": "S8_06"
+},
+{
+"w": "amaso",
+"t": 570.842,
+"e": 570.882,
+"id": "S8_07"
+},
+{
+"w": "con",
+"t": 570.882,
+"e": 571.082,
+"id": "S8_07"
+},
+{
+"w": "la",
+"t": 571.082,
+"e": 571.542,
+"id": "S8_07"
+},
+{
+"w": "punta",
+"t": 571.542,
+"e": 571.622,
+"id": "S8_07"
+},
+{
+"w": "como",
+"t": 571.622,
+"e": 572.062,
+"id": "S8_07"
+},
+{
+"w": "si",
+"t": 572.062,
+"e": 572.342,
+"id": "S8_07"
+},
+{
+"w": "mezclaras",
+"t": 572.342,
+"e": 572.782,
+"id": "S8_07"
+},
+{
+"w": "masa",
+"t": 572.782,
+"e": 573.322,
+"id": "S8_07"
+},
+{
+"w": "hasta",
+"t": 573.322,
+"e": 573.762,
+"id": "S8_07"
+},
+{
+"w": "llenar",
+"t": 573.762,
+"e": 574.202,
+"id": "S8_07"
+},
+{
+"w": "toda",
+"t": 574.202,
+"e": 574.502,
+"id": "S8_07"
+},
+{
+"w": "la",
+"t": 574.502,
+"e": 574.762,
+"id": "S8_07"
+},
+{
+"w": "canaleta",
+"t": 574.762,
+"e": 575.202,
+"id": "S8_07"
+},
+{
+"w": "y",
+"t": 575.202,
+"e": 575.582,
+"id": "S8_07"
+},
+{
+"w": "los",
+"t": 575.582,
+"e": 575.762,
+"id": "S8_07"
+},
+{
+"w": "dos",
+"t": 575.762,
+"e": 576.022,
+"id": "S8_07"
+},
+{
+"w": "agujeritos",
+"t": 576.022,
+"e": 576.642,
+"id": "S8_07"
+},
+{
+"w": "¿cómo",
+"t": 577.162,
+"e": 577.322,
+"id": "S8_08"
+},
+{
+"w": "sabes",
+"t": 577.322,
+"e": 577.602,
+"id": "S8_08"
+},
+{
+"w": "si",
+"t": 577.602,
+"e": 577.882,
+"id": "S8_08"
+},
+{
+"w": "quedó",
+"t": 577.882,
+"e": 578.062,
+"id": "S8_08"
+},
+{
+"w": "bien",
+"t": 578.062,
+"e": 578.342,
+"id": "S8_08"
+},
+{
+"w": "fundido",
+"t": 578.342,
+"e": 578.762,
+"id": "S8_08"
+},
+{
+"w": "cuando",
+"t": 579.142,
+"e": 579.382,
+"id": "S8_08"
+},
+{
+"w": "se",
+"t": 579.382,
+"e": 579.702,
+"id": "S8_08"
+},
+{
+"w": "enfría",
+"t": 579.702,
+"e": 580.002,
+"id": "S8_08"
+},
+{
+"w": "pásale",
+"t": 580.002,
+"e": 580.682,
+"id": "S8_08"
+},
+{
+"w": "la",
+"t": 580.682,
+"e": 581.162,
+"id": "S8_08"
+},
+{
+"w": "uña",
+"t": 581.162,
+"e": 581.162,
+"id": "S8_08"
+},
+{
+"w": "no",
+"t": 581.262,
+"e": 581.662,
+"id": "S8_08"
+},
+{
+"w": "tiene",
+"t": 581.662,
+"e": 581.882,
+"id": "S8_08"
+},
+{
+"w": "que",
+"t": 581.882,
+"e": 582.042,
+"id": "S8_08"
+},
+{
+"w": "haber",
+"t": 582.042,
+"e": 582.182,
+"id": "S8_08"
+},
+{
+"w": "una",
+"t": 582.182,
+"e": 582.722,
+"id": "S8_08"
+},
+{
+"w": "línea",
+"t": 582.722,
+"e": 582.722,
+"id": "S8_08"
+},
+{
+"w": "donde",
+"t": 582.722,
+"e": 583.022,
+"id": "S8_08"
+},
+{
+"w": "termina",
+"t": 583.022,
+"e": 583.442,
+"id": "S8_08"
+},
+{
+"w": "la",
+"t": 583.442,
+"e": 583.922,
+"id": "S8_08"
+},
+{
+"w": "tira",
+"t": 583.922,
+"e": 583.922,
+"id": "S8_08"
+},
+{
+"w": "y",
+"t": 583.922,
+"e": 584.402,
+"id": "S8_08"
+},
+{
+"w": "empieza",
+"t": 584.402,
+"e": 584.622,
+"id": "S8_08"
+},
+{
+"w": "el",
+"t": 584.622,
+"e": 584.842,
+"id": "S8_08"
+},
+{
+"w": "tanque",
+"t": 584.842,
+"e": 585.162,
+"id": "S8_08"
+},
+{
+"w": "si",
+"t": 585.682,
+"e": 585.802,
+"id": "S8_09"
+},
+{
+"w": "ves",
+"t": 585.802,
+"e": 585.942,
+"id": "S8_09"
+},
+{
+"w": "la",
+"t": 585.942,
+"e": 586.382,
+"id": "S8_09"
+},
+{
+"w": "tira",
+"t": 586.382,
+"e": 586.382,
+"id": "S8_09"
+},
+{
+"w": "como",
+"t": 586.382,
+"e": 586.642,
+"id": "S8_09"
+},
+{
+"w": "un",
+"t": 586.642,
+"e": 586.982,
+"id": "S8_09"
+},
+{
+"w": "cordoncito",
+"t": 586.982,
+"e": 587.562,
+"id": "S8_09"
+},
+{
+"w": "apoyado",
+"t": 587.562,
+"e": 588.082,
+"id": "S8_09"
+},
+{
+"w": "con",
+"t": 588.082,
+"e": 588.582,
+"id": "S8_09"
+},
+{
+"w": "bordes",
+"t": 588.582,
+"e": 588.922,
+"id": "S8_09"
+},
+{
+"w": "no",
+"t": 588.922,
+"e": 589.302,
+"id": "S8_09"
+},
+{
+"w": "se",
+"t": 589.302,
+"e": 589.682,
+"id": "S8_09"
+},
+{
+"w": "fundió",
+"t": 589.682,
+"e": 589.942,
+"id": "S8_09"
+},
+{
+"w": "vuelve",
+"t": 590.282,
+"e": 590.642,
+"id": "S8_09"
+},
+{
+"w": "a",
+"t": 590.642,
+"e": 590.962,
+"id": "S8_09"
+},
+{
+"w": "pasar",
+"t": 590.962,
+"e": 590.962,
+"id": "S8_09"
+},
+{
+"w": "la",
+"t": 590.962,
+"e": 591.702,
+"id": "S8_09"
+},
+{
+"w": "punta",
+"t": 591.702,
+"e": 591.702,
+"id": "S8_09"
+},
+{
+"w": "más",
+"t": 592.002,
+"e": 592.242,
+"id": "S8_09"
+},
+{
+"w": "lento",
+"t": 592.242,
+"e": 592.582,
+"id": "S8_09"
+},
+{
+"w": "primera",
+"t": 593.042,
+"e": 593.282,
+"id": "S8_10"
+},
+{
+"w": "capa",
+"t": 593.282,
+"e": 593.662,
+"id": "S8_10"
+},
+{
+"w": "lista",
+"t": 593.662,
+"e": 594.002,
+"id": "S8_10"
+},
+{
+"w": "ahora",
+"t": 594.382,
+"e": 594.622,
+"id": "S8_10"
+},
+{
+"w": "viene",
+"t": 594.622,
+"e": 594.882,
+"id": "S8_10"
+},
+{
+"w": "la",
+"t": 594.882,
+"e": 595.302,
+"id": "S8_10"
+},
+{
+"w": "que",
+"t": 595.302,
+"e": 595.362,
+"id": "S8_10"
+},
+{
+"w": "le",
+"t": 595.362,
+"e": 595.542,
+"id": "S8_10"
+},
+{
+"w": "da",
+"t": 595.542,
+"e": 595.562,
+"id": "S8_10"
+},
+{
+"w": "la",
+"t": 595.562,
+"e": 596.102,
+"id": "S8_10"
+},
+{
+"w": "fuerza",
+"t": 596.102,
+"e": 596.102,
+"id": "S8_10"
+},
+{
+"w": "la",
+"t": 596.392,
+"e": 596.732,
+"id": "S9_01"
+},
+{
+"w": "malla",
+"t": 596.732,
+"e": 596.932,
+"id": "S9_01"
+},
+{
+"w": "sirve",
+"t": 597.332,
+"e": 597.572,
+"id": "S9_01"
+},
+{
+"w": "la",
+"t": 597.572,
+"e": 597.932,
+"id": "S9_01"
+},
+{
+"w": "de",
+"t": 597.932,
+"e": 598.192,
+"id": "S9_01"
+},
+{
+"w": "mosquitero",
+"t": 598.192,
+"e": 598.592,
+"id": "S9_01"
+},
+{
+"w": "de",
+"t": 598.592,
+"e": 598.832,
+"id": "S9_01"
+},
+{
+"w": "aluminio",
+"t": 598.832,
+"e": 599.232,
+"id": "S9_01"
+},
+{
+"w": "o",
+"t": 599.232,
+"e": 599.592,
+"id": "S9_01"
+},
+{
+"w": "mejor",
+"t": 599.592,
+"e": 599.952,
+"id": "S9_01"
+},
+{
+"w": "de",
+"t": 599.952,
+"e": 600.192,
+"id": "S9_01"
+},
+{
+"w": "acero",
+"t": 600.192,
+"e": 600.412,
+"id": "S9_01"
+},
+{
+"w": "inoxidable",
+"t": 600.412,
+"e": 601.072,
+"id": "S9_01"
+},
+{
+"w": "aluminio",
+"t": 601.652,
+"e": 602.192,
+"id": "S9_02a"
+},
+{
+"w": "es",
+"t": 602.192,
+"e": 602.472,
+"id": "S9_02a"
+},
+{
+"w": "la",
+"t": 602.472,
+"e": 602.812,
+"id": "S9_02a"
+},
+{
+"w": "más",
+"t": 602.812,
+"e": 602.972,
+"id": "S9_02a"
+},
+{
+"w": "fácil",
+"t": 602.972,
+"e": 603.152,
+"id": "S9_02a"
+},
+{
+"w": "de",
+"t": 603.152,
+"e": 603.832,
+"id": "S9_02a"
+},
+{
+"w": "conseguir",
+"t": 603.832,
+"e": 603.832,
+"id": "S9_02a"
+},
+{
+"w": "y",
+"t": 603.832,
+"e": 604.292,
+"id": "S9_02a"
+},
+{
+"w": "como",
+"t": 604.292,
+"e": 604.532,
+"id": "S9_02a"
+},
+{
+"w": "va",
+"t": 604.532,
+"e": 604.792,
+"id": "S9_02a"
+},
+{
+"w": "afuera",
+"t": 604.792,
+"e": 605.112,
+"id": "S9_02a"
+},
+{
+"w": "y",
+"t": 605.112,
+"e": 605.532,
+"id": "S9_02a"
+},
+{
+"w": "queda",
+"t": 605.532,
+"e": 605.632,
+"id": "S9_02a"
+},
+{
+"w": "tapada",
+"t": 605.632,
+"e": 606.172,
+"id": "S9_02a"
+},
+{
+"w": "sirve",
+"t": 606.172,
+"e": 607.172,
+"id": "S9_02a"
+},
+{
+"w": "La",
+"t": 607.392,
+"e": 607.392,
+"id": "S9_02a"
+},
+{
+"w": "de",
+"t": 607.392,
+"e": 607.592,
+"id": "S9_02a"
+},
+{
+"w": "hierro",
+"t": 607.592,
+"e": 607.892,
+"id": "S9_02a"
+},
+{
+"w": "común",
+"t": 607.892,
+"e": 608.312,
+"id": "S9_02a"
+},
+{
+"w": "no",
+"t": 608.732,
+"e": 608.892,
+"id": "S9_02b"
+},
+{
+"w": "se",
+"t": 608.892,
+"e": 609.312,
+"id": "S9_02b"
+},
+{
+"w": "oxida",
+"t": 609.312,
+"e": 609.732,
+"id": "S9_02b"
+},
+{
+"w": "y",
+"t": 609.732,
+"e": 610.132,
+"id": "S9_02b"
+},
+{
+"w": "te",
+"t": 610.132,
+"e": 610.512,
+"id": "S9_02b"
+},
+{
+"w": "mancha",
+"t": 610.512,
+"e": 610.532,
+"id": "S9_02b"
+},
+{
+"w": "el",
+"t": 610.532,
+"e": 611.072,
+"id": "S9_02b"
+},
+{
+"w": "tanque",
+"t": 611.072,
+"e": 611.072,
+"id": "S9_02b"
+},
+{
+"w": "la",
+"t": 611.452,
+"e": 611.692,
+"id": "S9_03"
+},
+{
+"w": "corto",
+"t": 611.692,
+"e": 611.992,
+"id": "S9_03"
+},
+{
+"w": "dos",
+"t": 611.992,
+"e": 612.352,
+"id": "S9_03"
+},
+{
+"w": "centímetros",
+"t": 612.352,
+"e": 612.792,
+"id": "S9_03"
+},
+{
+"w": "más",
+"t": 612.792,
+"e": 613.212,
+"id": "S9_03"
+},
+{
+"w": "grande",
+"t": 613.212,
+"e": 613.412,
+"id": "S9_03"
+},
+{
+"w": "que",
+"t": 613.412,
+"e": 613.552,
+"id": "S9_03"
+},
+{
+"w": "la",
+"t": 613.552,
+"e": 613.992,
+"id": "S9_03"
+},
+{
+"w": "grieta",
+"t": 613.992,
+"e": 614.072,
+"id": "S9_03"
+},
+{
+"w": "por",
+"t": 614.072,
+"e": 614.672,
+"id": "S9_03"
+},
+{
+"w": "todos",
+"t": 614.672,
+"e": 614.952,
+"id": "S9_03"
+},
+{
+"w": "lados",
+"t": 614.952,
+"e": 615.312,
+"id": "S9_03"
+},
+{
+"w": "contando",
+"t": 615.312,
+"e": 616.052,
+"id": "S9_03"
+},
+{
+"w": "los",
+"t": 616.052,
+"e": 616.392,
+"id": "S9_03"
+},
+{
+"w": "agujeritos",
+"t": 616.392,
+"e": 616.932,
+"id": "S9_03"
+},
+{
+"w": "la",
+"t": 617.312,
+"e": 617.592,
+"id": "S9_04"
+},
+{
+"w": "curvo",
+"t": 617.592,
+"e": 617.792,
+"id": "S9_04"
+},
+{
+"w": "un",
+"t": 617.792,
+"e": 618.252,
+"id": "S9_04"
+},
+{
+"w": "poco",
+"t": 618.252,
+"e": 618.252,
+"id": "S9_04"
+},
+{
+"w": "con",
+"t": 618.252,
+"e": 618.432,
+"id": "S9_04"
+},
+{
+"w": "los",
+"t": 618.432,
+"e": 618.852,
+"id": "S9_04"
+},
+{
+"w": "dedos",
+"t": 618.852,
+"e": 618.932,
+"id": "S9_04"
+},
+{
+"w": "para",
+"t": 618.932,
+"e": 619.372,
+"id": "S9_04"
+},
+{
+"w": "que",
+"t": 619.372,
+"e": 619.752,
+"id": "S9_04"
+},
+{
+"w": "copie",
+"t": 619.752,
+"e": 619.852,
+"id": "S9_04"
+},
+{
+"w": "la",
+"t": 619.852,
+"e": 620.312,
+"id": "S9_04"
+},
+{
+"w": "forma",
+"t": 620.312,
+"e": 620.312,
+"id": "S9_04"
+},
+{
+"w": "del",
+"t": 620.312,
+"e": 620.552,
+"id": "S9_04"
+},
+{
+"w": "tanque",
+"t": 620.552,
+"e": 620.872,
+"id": "S9_04"
+},
+{
+"w": "apoyo",
+"t": 621.552,
+"e": 621.592,
+"id": "S9_05"
+},
+{
+"w": "la",
+"t": 621.592,
+"e": 622.032,
+"id": "S9_05"
+},
+{
+"w": "malla",
+"t": 622.032,
+"e": 622.032,
+"id": "S9_05"
+},
+{
+"w": "y",
+"t": 622.032,
+"e": 622.452,
+"id": "S9_05"
+},
+{
+"w": "la",
+"t": 622.452,
+"e": 622.852,
+"id": "S9_05"
+},
+{
+"w": "hundo",
+"t": 622.852,
+"e": 622.852,
+"id": "S9_05"
+},
+{
+"w": "con",
+"t": 622.852,
+"e": 623.052,
+"id": "S9_05"
+},
+{
+"w": "la",
+"t": 623.052,
+"e": 623.512,
+"id": "S9_05"
+},
+{
+"w": "punta",
+"t": 623.512,
+"e": 623.532,
+"id": "S9_05"
+},
+{
+"w": "caliente",
+"t": 623.532,
+"e": 624.032,
+"id": "S9_05"
+},
+{
+"w": "empezando",
+"t": 624.032,
+"e": 624.932,
+"id": "S9_05"
+},
+{
+"w": "por",
+"t": 624.932,
+"e": 625.152,
+"id": "S9_05"
+},
+{
+"w": "una",
+"t": 625.152,
+"e": 625.412,
+"id": "S9_05"
+},
+{
+"w": "esquina",
+"t": 625.412,
+"e": 625.732,
+"id": "S9_05"
+},
+{
+"w": "El",
+"t": 626.212,
+"e": 626.372,
+"id": "S9_06"
+},
+{
+"w": "plástico",
+"t": 626.372,
+"e": 626.752,
+"id": "S9_06"
+},
+{
+"w": "del",
+"t": 626.752,
+"e": 627.072,
+"id": "S9_06"
+},
+{
+"w": "tanque",
+"t": 627.072,
+"e": 627.392,
+"id": "S9_06"
+},
+{
+"w": "sube",
+"t": 627.392,
+"e": 627.892,
+"id": "S9_06"
+},
+{
+"w": "por",
+"t": 627.892,
+"e": 628.112,
+"id": "S9_06"
+},
+{
+"w": "los",
+"t": 628.112,
+"e": 628.292,
+"id": "S9_06"
+},
+{
+"w": "agujeritos",
+"t": 628.292,
+"e": 628.832,
+"id": "S9_06"
+},
+{
+"w": "de",
+"t": 628.832,
+"e": 629.032,
+"id": "S9_06"
+},
+{
+"w": "la",
+"t": 629.032,
+"e": 629.352,
+"id": "S9_06"
+},
+{
+"w": "malla",
+"t": 629.352,
+"e": 629.352,
+"id": "S9_06"
+},
+{
+"w": "y",
+"t": 629.352,
+"e": 629.872,
+"id": "S9_06"
+},
+{
+"w": "la",
+"t": 629.872,
+"e": 630.072,
+"id": "S9_06"
+},
+{
+"w": "abraza",
+"t": 630.072,
+"e": 630.412,
+"id": "S9_06"
+},
+{
+"w": "no",
+"t": 630.872,
+"e": 630.952,
+"id": "S9_07"
+},
+{
+"w": "la",
+"t": 630.952,
+"e": 631.212,
+"id": "S9_07"
+},
+{
+"w": "aprietes",
+"t": 631.212,
+"e": 631.512,
+"id": "S9_07"
+},
+{
+"w": "de",
+"t": 631.512,
+"e": 631.752,
+"id": "S9_07"
+},
+{
+"w": "más",
+"t": 631.752,
+"e": 631.932,
+"id": "S9_07"
+},
+{
+"w": "si",
+"t": 632.272,
+"e": 632.392,
+"id": "S9_07"
+},
+{
+"w": "la",
+"t": 632.392,
+"e": 632.732,
+"id": "S9_07"
+},
+{
+"w": "hundes",
+"t": 632.732,
+"e": 632.872,
+"id": "S9_07"
+},
+{
+"w": "hasta",
+"t": 632.872,
+"e": 633.052,
+"id": "S9_07"
+},
+{
+"w": "el",
+"t": 633.052,
+"e": 633.672,
+"id": "S9_07"
+},
+{
+"w": "fondo",
+"t": 633.672,
+"e": 633.672,
+"id": "S9_07"
+},
+{
+"w": "adelgazas",
+"t": 633.672,
+"e": 634.452,
+"id": "S9_07"
+},
+{
+"w": "la",
+"t": 634.452,
+"e": 634.752,
+"id": "S9_07"
+},
+{
+"w": "pared",
+"t": 634.752,
+"e": 634.812,
+"id": "S9_07"
+},
+{
+"w": "del",
+"t": 634.812,
+"e": 635.092,
+"id": "S9_07"
+},
+{
+"w": "tanque",
+"t": 635.092,
+"e": 635.372,
+"id": "S9_07"
+},
+{
+"w": "tiene",
+"t": 635.892,
+"e": 635.972,
+"id": "S9_07"
+},
+{
+"w": "que",
+"t": 635.972,
+"e": 636.392,
+"id": "S9_07"
+},
+{
+"w": "quedar",
+"t": 636.392,
+"e": 636.392,
+"id": "S9_07"
+},
+{
+"w": "a",
+"t": 636.392,
+"e": 636.792,
+"id": "S9_07"
+},
+{
+"w": "media",
+"t": 636.792,
+"e": 636.972,
+"id": "S9_07"
+},
+{
+"w": "altura",
+"t": 636.972,
+"e": 637.352,
+"id": "S9_07"
+},
+{
+"w": "y",
+"t": 637.352,
+"e": 637.852,
+"id": "S9_08"
+},
+{
+"w": "encima",
+"t": 637.852,
+"e": 638.272,
+"id": "S9_08"
+},
+{
+"w": "otra",
+"t": 638.272,
+"e": 638.912,
+"id": "S9_08"
+},
+{
+"w": "capa",
+"t": 638.912,
+"e": 639.192,
+"id": "S9_08"
+},
+{
+"w": "de",
+"t": 639.192,
+"e": 639.572,
+"id": "S9_08"
+},
+{
+"w": "tira",
+"t": 639.572,
+"e": 639.572,
+"id": "S9_08"
+},
+{
+"w": "derretida",
+"t": 639.572,
+"e": 640.172,
+"id": "S9_08"
+},
+{
+"w": "hasta",
+"t": 640.172,
+"e": 640.692,
+"id": "S9_08"
+},
+{
+"w": "que",
+"t": 640.692,
+"e": 640.872,
+"id": "S9_08"
+},
+{
+"w": "la",
+"t": 640.872,
+"e": 641.192,
+"id": "S9_08"
+},
+{
+"w": "malla",
+"t": 641.192,
+"e": 641.192,
+"id": "S9_08"
+},
+{
+"w": "no",
+"t": 641.192,
+"e": 641.452,
+"id": "S9_08"
+},
+{
+"w": "se",
+"t": 641.452,
+"e": 641.652,
+"id": "S9_08"
+},
+{
+"w": "vea",
+"t": 641.652,
+"e": 642.132,
+"id": "S9_08"
+},
+{
+"w": "Se",
+"t": 642.252,
+"e": 642.352,
+"id": "S9_09"
+},
+{
+"w": "alisa",
+"t": 642.352,
+"e": 642.712,
+"id": "S9_09"
+},
+{
+"w": "con",
+"t": 642.712,
+"e": 642.972,
+"id": "S9_09"
+},
+{
+"w": "la",
+"t": 642.972,
+"e": 643.412,
+"id": "S9_09"
+},
+{
+"w": "punta",
+"t": 643.412,
+"e": 643.492,
+"id": "S9_09"
+},
+{
+"w": "plana",
+"t": 643.532,
+"e": 644.192,
+"id": "S9_09"
+},
+{
+"w": "pasadas",
+"t": 644.312,
+"e": 644.712,
+"id": "S9_09"
+},
+{
+"w": "largas",
+"t": 644.712,
+"e": 645.392,
+"id": "S9_09"
+},
+{
+"w": "y",
+"t": 645.392,
+"e": 645.852,
+"id": "S9_09"
+},
+{
+"w": "lentas",
+"t": 645.852,
+"e": 646.232,
+"id": "S9_09"
+},
+{
+"w": "y",
+"t": 646.232,
+"e": 646.592,
+"id": "S9_10"
+},
+{
+"w": "los",
+"t": 646.592,
+"e": 647.012,
+"id": "S9_10"
+},
+{
+"w": "bordes",
+"t": 647.012,
+"e": 647.172,
+"id": "S9_10"
+},
+{
+"w": "en",
+"t": 647.172,
+"e": 647.792,
+"id": "S9_10"
+},
+{
+"w": "rampa",
+"t": 647.792,
+"e": 648.212,
+"id": "S9_10"
+},
+{
+"w": "sin",
+"t": 648.212,
+"e": 648.452,
+"id": "S9_10"
+},
+{
+"w": "escalón",
+"t": 648.452,
+"e": 648.852,
+"id": "S9_10"
+},
+{
+"w": "Un",
+"t": 649.072,
+"e": 649.252,
+"id": "S9_10"
+},
+{
+"w": "borde",
+"t": 649.252,
+"e": 649.412,
+"id": "S9_10"
+},
+{
+"w": "con",
+"t": 649.412,
+"e": 649.812,
+"id": "S9_10"
+},
+{
+"w": "escalón",
+"t": 649.812,
+"e": 650.212,
+"id": "S9_10"
+},
+{
+"w": "es",
+"t": 650.212,
+"e": 650.772,
+"id": "S9_10"
+},
+{
+"w": "donde",
+"t": 650.772,
+"e": 650.912,
+"id": "S9_10"
+},
+{
+"w": "se",
+"t": 650.912,
+"e": 651.272,
+"id": "S9_10"
+},
+{
+"w": "engancha",
+"t": 651.272,
+"e": 651.492,
+"id": "S9_10"
+},
+{
+"w": "el",
+"t": 651.492,
+"e": 651.852,
+"id": "S9_10"
+},
+{
+"w": "agua",
+"t": 651.852,
+"e": 651.852,
+"id": "S9_10"
+},
+{
+"w": "y",
+"t": 651.852,
+"e": 651.992,
+"id": "S9_10"
+},
+{
+"w": "la",
+"t": 651.992,
+"e": 652.432,
+"id": "S9_10"
+},
+{
+"w": "tierra",
+"t": 652.432,
+"e": 652.432,
+"id": "S9_10"
+},
+{
+"w": "la",
+"t": 652.872,
+"e": 653.232,
+"id": "S9_11"
+},
+{
+"w": "malla",
+"t": 653.232,
+"e": 653.332,
+"id": "S9_11"
+},
+{
+"w": "hace",
+"t": 653.332,
+"e": 653.612,
+"id": "S9_11"
+},
+{
+"w": "el",
+"t": 653.612,
+"e": 653.892,
+"id": "S9_11"
+},
+{
+"w": "trabajo",
+"t": 653.892,
+"e": 654.132,
+"id": "S9_11"
+},
+{
+"w": "del",
+"t": 654.132,
+"e": 654.462,
+"id": "S9_11"
+},
+{
+"w": "hierro",
+"t": 654.462,
+"e": 654.722,
+"id": "S9_11"
+},
+{
+"w": "en",
+"t": 654.722,
+"e": 655.022,
+"id": "S9_11"
+},
+{
+"w": "el",
+"t": 655.022,
+"e": 655.302,
+"id": "S9_11"
+},
+{
+"w": "cemento",
+"t": 655.302,
+"e": 655.762,
+"id": "S9_11"
+},
+{
+"w": "el",
+"t": 656.102,
+"e": 656.262,
+"id": "S9_11"
+},
+{
+"w": "plástico",
+"t": 656.262,
+"e": 656.682,
+"id": "S9_11"
+},
+{
+"w": "sólo",
+"t": 656.682,
+"e": 657.342,
+"id": "S9_11"
+},
+{
+"w": "se",
+"t": 657.342,
+"e": 657.622,
+"id": "S9_11"
+},
+{
+"w": "puede",
+"t": 657.622,
+"e": 657.822,
+"id": "S9_11"
+},
+{
+"w": "volver",
+"t": 657.822,
+"e": 658.142,
+"id": "S9_11"
+},
+{
+"w": "a",
+"t": 658.142,
+"e": 658.422,
+"id": "S9_11"
+},
+{
+"w": "rajar",
+"t": 658.422,
+"e": 658.702,
+"id": "S9_11"
+},
+{
+"w": "con",
+"t": 659.022,
+"e": 659.142,
+"id": "S9_11"
+},
+{
+"w": "la",
+"t": 659.142,
+"e": 659.522,
+"id": "S9_11"
+},
+{
+"w": "malla",
+"t": 659.522,
+"e": 659.522,
+"id": "S9_11"
+},
+{
+"w": "adentro",
+"t": 659.522,
+"e": 660.082,
+"id": "S9_11"
+},
+{
+"w": "no",
+"t": 660.082,
+"e": 660.542,
+"id": "S9_11"
+},
+{
+"w": "se",
+"t": 660.542,
+"e": 661.022,
+"id": "S9_11"
+},
+{
+"w": "abre",
+"t": 661.022,
+"e": 661.042,
+"id": "S9_11"
+},
+{
+"w": "ahora",
+"t": 661.468,
+"e": 661.788,
+"id": "S10_01"
+},
+{
+"w": "por",
+"t": 661.788,
+"e": 662.248,
+"id": "S10_01"
+},
+{
+"w": "dentro",
+"t": 662.248,
+"e": 662.568,
+"id": "S10_01"
+},
+{
+"w": "en",
+"t": 663.008,
+"e": 663.068,
+"id": "S10_01"
+},
+{
+"w": "los",
+"t": 663.068,
+"e": 663.568,
+"id": "S10_01"
+},
+{
+"w": "tanques",
+"t": 663.568,
+"e": 663.608,
+"id": "S10_01"
+},
+{
+"w": "con",
+"t": 663.608,
+"e": 663.968,
+"id": "S10_01"
+},
+{
+"w": "tapa",
+"t": 663.968,
+"e": 664.128,
+"id": "S10_01"
+},
+{
+"w": "grande",
+"t": 664.128,
+"e": 664.588,
+"id": "S10_01"
+},
+{
+"w": "llegas",
+"t": 664.588,
+"e": 665.228,
+"id": "S10_01"
+},
+{
+"w": "con",
+"t": 665.228,
+"e": 665.408,
+"id": "S10_01"
+},
+{
+"w": "el",
+"t": 665.408,
+"e": 665.848,
+"id": "S10_01"
+},
+{
+"w": "brazo",
+"t": 665.848,
+"e": 666.128,
+"id": "S10_01"
+},
+{
+"w": "del",
+"t": 666.408,
+"e": 666.648,
+"id": "S10_02"
+},
+{
+"w": "lado",
+"t": 666.648,
+"e": 666.748,
+"id": "S10_02"
+},
+{
+"w": "de",
+"t": 666.748,
+"e": 667.308,
+"id": "S10_02"
+},
+{
+"w": "adentro",
+"t": 667.308,
+"e": 667.308,
+"id": "S10_02"
+},
+{
+"w": "la",
+"t": 667.308,
+"e": 667.868,
+"id": "S10_02"
+},
+{
+"w": "misma",
+"t": 667.868,
+"e": 668.148,
+"id": "S10_02"
+},
+{
+"w": "limpieza",
+"t": 668.148,
+"e": 668.728,
+"id": "S10_02"
+},
+{
+"w": "y",
+"t": 668.728,
+"e": 669.268,
+"id": "S10_02"
+},
+{
+"w": "una",
+"t": 669.268,
+"e": 669.468,
+"id": "S10_02"
+},
+{
+"w": "sola",
+"t": 669.468,
+"e": 669.988,
+"id": "S10_02"
+},
+{
+"w": "capa",
+"t": 669.988,
+"e": 670.128,
+"id": "S10_02"
+},
+{
+"w": "de",
+"t": 670.128,
+"e": 670.348,
+"id": "S10_02"
+},
+{
+"w": "plástico",
+"t": 670.348,
+"e": 670.708,
+"id": "S10_02"
+},
+{
+"w": "limpio",
+"t": 670.708,
+"e": 671.288,
+"id": "S10_02"
+},
+{
+"w": "sin",
+"t": 671.548,
+"e": 671.828,
+"id": "S10_02"
+},
+{
+"w": "malla",
+"t": 671.828,
+"e": 672.068,
+"id": "S10_02"
+},
+{
+"w": "mira",
+"t": 672.588,
+"e": 672.688,
+"id": "S10_03a"
+},
+{
+"w": "el",
+"t": 672.688,
+"e": 673.108,
+"id": "S10_03a"
+},
+{
+"w": "color",
+"t": 673.108,
+"e": 673.108,
+"id": "S10_03a"
+},
+{
+"w": "de",
+"t": 673.108,
+"e": 673.808,
+"id": "S10_03a"
+},
+{
+"w": "adentro",
+"t": 673.808,
+"e": 673.808,
+"id": "S10_03a"
+},
+{
+"w": "blanco",
+"t": 674.108,
+"e": 674.468,
+"id": "S10_03a"
+},
+{
+"w": "muchos",
+"t": 675.188,
+"e": 675.248,
+"id": "S10_03b"
+},
+{
+"w": "tanques",
+"t": 675.248,
+"e": 675.648,
+"id": "S10_03b"
+},
+{
+"w": "negros",
+"t": 675.648,
+"e": 676.128,
+"id": "S10_03b"
+},
+{
+"w": "son",
+"t": 676.128,
+"e": 676.528,
+"id": "S10_03b"
+},
+{
+"w": "de",
+"t": 676.528,
+"e": 676.788,
+"id": "S10_03b"
+},
+{
+"w": "varias",
+"t": 676.788,
+"e": 677.008,
+"id": "S10_03b"
+},
+{
+"w": "capas",
+"t": 677.008,
+"e": 677.448,
+"id": "S10_03b"
+},
+{
+"w": "la",
+"t": 677.788,
+"e": 678.068,
+"id": "S10_03b"
+},
+{
+"w": "negra",
+"t": 678.068,
+"e": 678.268,
+"id": "S10_03b"
+},
+{
+"w": "de",
+"t": 678.268,
+"e": 678.848,
+"id": "S10_03b"
+},
+{
+"w": "afuera",
+"t": 678.848,
+"e": 678.848,
+"id": "S10_03b"
+},
+{
+"w": "aguanta",
+"t": 678.848,
+"e": 679.348,
+"id": "S10_03b"
+},
+{
+"w": "el",
+"t": 679.348,
+"e": 679.728,
+"id": "S10_03b"
+},
+{
+"w": "sol",
+"t": 679.728,
+"e": 679.808,
+"id": "S10_03b"
+},
+{
+"w": "la",
+"t": 680.188,
+"e": 680.308,
+"id": "S10_03b"
+},
+{
+"w": "de",
+"t": 680.308,
+"e": 680.488,
+"id": "S10_03b"
+},
+{
+"w": "adentro",
+"t": 680.488,
+"e": 680.808,
+"id": "S10_03b"
+},
+{
+"w": "es",
+"t": 680.808,
+"e": 681.168,
+"id": "S10_03b"
+},
+{
+"w": "la",
+"t": 681.168,
+"e": 681.288,
+"id": "S10_03b"
+},
+{
+"w": "que",
+"t": 681.288,
+"e": 681.608,
+"id": "S10_03b"
+},
+{
+"w": "el",
+"t": 681.608,
+"e": 681.828,
+"id": "S10_03b"
+},
+{
+"w": "agua",
+"t": 681.828,
+"e": 682.028,
+"id": "S10_03b"
+},
+{
+"w": "por",
+"t": 682.468,
+"e": 682.688,
+"id": "S10_04"
+},
+{
+"w": "eso",
+"t": 682.688,
+"e": 682.868,
+"id": "S10_04"
+},
+{
+"w": "adentro",
+"t": 682.868,
+"e": 683.408,
+"id": "S10_04"
+},
+{
+"w": "va",
+"t": 683.408,
+"e": 683.688,
+"id": "S10_04"
+},
+{
+"w": "plástico",
+"t": 683.688,
+"e": 684.188,
+"id": "S10_04"
+},
+{
+"w": "limpio",
+"t": 684.188,
+"e": 684.668,
+"id": "S10_04"
+},
+{
+"w": "y",
+"t": 684.668,
+"e": 685.168,
+"id": "S10_04"
+},
+{
+"w": "nada",
+"t": 685.168,
+"e": 685.368,
+"id": "S10_04"
+},
+{
+"w": "más",
+"t": 685.368,
+"e": 685.908,
+"id": "S10_04"
+},
+{
+"w": "y",
+"t": 685.908,
+"e": 686.368,
+"id": "S10_04"
+},
+{
+"w": "queda",
+"t": 686.368,
+"e": 686.548,
+"id": "S10_04"
+},
+{
+"w": "la",
+"t": 686.548,
+"e": 687.088,
+"id": "S10_04"
+},
+{
+"w": "grieta",
+"t": 687.088,
+"e": 687.088,
+"id": "S10_04"
+},
+{
+"w": "sellada",
+"t": 687.088,
+"e": 687.588,
+"id": "S10_04"
+},
+{
+"w": "de",
+"t": 687.588,
+"e": 687.768,
+"id": "S10_04"
+},
+{
+"w": "los",
+"t": 687.768,
+"e": 687.948,
+"id": "S10_04"
+},
+{
+"w": "dos",
+"t": 687.948,
+"e": 688.328,
+"id": "S10_04"
+},
+{
+"w": "lados",
+"t": 688.328,
+"e": 688.428,
+"id": "S10_04"
+},
+{
+"w": "como",
+"t": 688.628,
+"e": 689.008,
+"id": "S10_04"
+},
+{
+"w": "un",
+"t": 689.008,
+"e": 689.488,
+"id": "S10_04"
+},
+{
+"w": "sándwich",
+"t": 689.488,
+"e": 689.708,
+"id": "S10_04"
+},
+{
+"w": "si",
+"t": 690.088,
+"e": 690.248,
+"id": "S10_05"
+},
+{
+"w": "no",
+"t": 690.248,
+"e": 690.508,
+"id": "S10_05"
+},
+{
+"w": "llegas",
+"t": 690.508,
+"e": 690.768,
+"id": "S10_05"
+},
+{
+"w": "por",
+"t": 690.768,
+"e": 691.328,
+"id": "S10_05"
+},
+{
+"w": "dentro",
+"t": 691.328,
+"e": 691.328,
+"id": "S10_05"
+},
+{
+"w": "el",
+"t": 691.668,
+"e": 691.788,
+"id": "S10_05"
+},
+{
+"w": "de",
+"t": 691.788,
+"e": 692.168,
+"id": "S10_05"
+},
+{
+"w": "afuera",
+"t": 692.168,
+"e": 692.248,
+"id": "S10_05"
+},
+{
+"w": "sólo",
+"t": 692.248,
+"e": 692.808,
+"id": "S10_05"
+},
+{
+"w": "con",
+"t": 692.808,
+"e": 693.468,
+"id": "S10_05"
+},
+{
+"w": "malla",
+"t": 693.468,
+"e": 693.468,
+"id": "S10_05"
+},
+{
+"w": "aguanta",
+"t": 693.468,
+"e": 694.068,
+"id": "S10_05"
+},
+{
+"w": "igual",
+"t": 694.068,
+"e": 694.408,
+"id": "S10_05"
+},
+{
+"w": "en",
+"t": 694.408,
+"e": 694.808,
+"id": "S10_05"
+},
+{
+"w": "grietas",
+"t": 694.808,
+"e": 694.868,
+"id": "S10_05"
+},
+{
+"w": "chicas",
+"t": 694.868,
+"e": 695.388,
+"id": "S10_05"
+},
+{
+"w": "pero",
+"t": 695.728,
+"e": 695.868,
+"id": "S10_05"
+},
+{
+"w": "si",
+"t": 695.868,
+"e": 696.188,
+"id": "S10_05"
+},
+{
+"w": "llegas",
+"t": 696.188,
+"e": 696.508,
+"id": "S10_05"
+},
+{
+"w": "hazlo",
+"t": 696.508,
+"e": 697.108,
+"id": "S10_05"
+},
+{
+"w": "y",
+"t": 697.108,
+"e": 697.528,
+"id": "S10_06"
+},
+{
+"w": "ahora",
+"t": 697.528,
+"e": 697.848,
+"id": "S10_06"
+},
+{
+"w": "lo",
+"t": 697.848,
+"e": 698.268,
+"id": "S10_06"
+},
+{
+"w": "que",
+"t": 698.268,
+"e": 698.468,
+"id": "S10_06"
+},
+{
+"w": "arruina",
+"t": 698.468,
+"e": 698.688,
+"id": "S10_06"
+},
+{
+"w": "todo",
+"t": 698.688,
+"e": 699.128,
+"id": "S10_06"
+},
+{
+"w": "no",
+"t": 699.488,
+"e": 699.608,
+"id": "S10_06"
+},
+{
+"w": "lo",
+"t": 699.608,
+"e": 699.928,
+"id": "S10_06"
+},
+{
+"w": "enfríes",
+"t": 699.928,
+"e": 700.208,
+"id": "S10_06"
+},
+{
+"w": "con",
+"t": 700.208,
+"e": 700.608,
+"id": "S10_06"
+},
+{
+"w": "agua",
+"t": 700.608,
+"e": 700.648,
+"id": "S10_06"
+},
+{
+"w": "el",
+"t": 701.168,
+"e": 701.348,
+"id": "S10_07"
+},
+{
+"w": "plástico",
+"t": 701.348,
+"e": 701.748,
+"id": "S10_07"
+},
+{
+"w": "que",
+"t": 701.748,
+"e": 701.988,
+"id": "S10_07"
+},
+{
+"w": "se",
+"t": 701.988,
+"e": 702.288,
+"id": "S10_07"
+},
+{
+"w": "enfría",
+"t": 702.288,
+"e": 702.428,
+"id": "S10_07"
+},
+{
+"w": "de",
+"t": 702.428,
+"e": 702.888,
+"id": "S10_07"
+},
+{
+"w": "golpe",
+"t": 702.888,
+"e": 702.888,
+"id": "S10_07"
+},
+{
+"w": "se",
+"t": 702.888,
+"e": 703.468,
+"id": "S10_07"
+},
+{
+"w": "contrae",
+"t": 703.468,
+"e": 703.888,
+"id": "S10_07"
+},
+{
+"w": "desparejo",
+"t": 703.888,
+"e": 704.488,
+"id": "S10_07"
+},
+{
+"w": "y",
+"t": 704.488,
+"e": 704.908,
+"id": "S10_07"
+},
+{
+"w": "te",
+"t": 704.908,
+"e": 705.308,
+"id": "S10_07"
+},
+{
+"w": "hace",
+"t": 705.308,
+"e": 705.308,
+"id": "S10_07"
+},
+{
+"w": "grietitas",
+"t": 705.308,
+"e": 705.968,
+"id": "S10_07"
+},
+{
+"w": "nuevas",
+"t": 705.968,
+"e": 706.408,
+"id": "S10_07"
+},
+{
+"w": "alrededor",
+"t": 706.408,
+"e": 706.968,
+"id": "S10_07"
+},
+{
+"w": "del",
+"t": 706.968,
+"e": 707.288,
+"id": "S10_07"
+},
+{
+"w": "parche",
+"t": 707.288,
+"e": 707.608,
+"id": "S10_07"
+},
+{
+"w": "Media",
+"t": 707.608,
+"e": 708.228,
+"id": "S10_08"
+},
+{
+"w": "hora",
+"t": 708.228,
+"e": 708.508,
+"id": "S10_08"
+},
+{
+"w": "a",
+"t": 708.508,
+"e": 709.008,
+"id": "S10_08"
+},
+{
+"w": "la",
+"t": 709.008,
+"e": 709.528,
+"id": "S10_08"
+},
+{
+"w": "sombra",
+"t": 709.528,
+"e": 709.528,
+"id": "S10_08"
+},
+{
+"w": "que",
+"t": 709.528,
+"e": 709.928,
+"id": "S10_08"
+},
+{
+"w": "se",
+"t": 709.928,
+"e": 710.308,
+"id": "S10_08"
+},
+{
+"w": "enfríe",
+"t": 710.308,
+"e": 710.528,
+"id": "S10_08"
+},
+{
+"w": "solo",
+"t": 710.528,
+"e": 710.908,
+"id": "S10_08"
+},
+{
+"w": "y",
+"t": 711.163,
+"e": 711.703,
+"id": "S12_12"
+},
+{
+"w": "algo",
+"t": 711.703,
+"e": 711.863,
+"id": "S12_12"
+},
+{
+"w": "que",
+"t": 711.863,
+"e": 712.103,
+"id": "S12_12"
+},
+{
+"w": "aprendí",
+"t": 712.103,
+"e": 712.463,
+"id": "S12_12"
+},
+{
+"w": "con",
+"t": 712.463,
+"e": 712.623,
+"id": "S12_12"
+},
+{
+"w": "los",
+"t": 712.623,
+"e": 712.923,
+"id": "S12_12"
+},
+{
+"w": "años",
+"t": 712.923,
+"e": 713.103,
+"id": "S12_12"
+},
+{
+"w": "el",
+"t": 713.663,
+"e": 713.663,
+"id": "S12_12"
+},
+{
+"w": "tanque",
+"t": 713.663,
+"e": 714.043,
+"id": "S12_12"
+},
+{
+"w": "es",
+"t": 714.043,
+"e": 714.483,
+"id": "S12_12"
+},
+{
+"w": "lo",
+"t": 714.483,
+"e": 714.623,
+"id": "S12_12"
+},
+{
+"w": "que",
+"t": 714.623,
+"e": 714.783,
+"id": "S12_12"
+},
+{
+"w": "se",
+"t": 714.783,
+"e": 714.943,
+"id": "S12_12"
+},
+{
+"w": "ve",
+"t": 714.943,
+"e": 715.063,
+"id": "S12_12"
+},
+{
+"w": "el",
+"t": 715.523,
+"e": 715.683,
+"id": "S12_12"
+},
+{
+"w": "agua",
+"t": 715.683,
+"e": 715.823,
+"id": "S12_12"
+},
+{
+"w": "que",
+"t": 715.823,
+"e": 716.083,
+"id": "S12_12"
+},
+{
+"w": "más",
+"t": 716.083,
+"e": 716.283,
+"id": "S12_12"
+},
+{
+"w": "se",
+"t": 716.283,
+"e": 716.683,
+"id": "S12_12"
+},
+{
+"w": "pierde",
+"t": 716.683,
+"e": 716.743,
+"id": "S12_12"
+},
+{
+"w": "en",
+"t": 716.743,
+"e": 716.883,
+"id": "S12_12"
+},
+{
+"w": "una",
+"t": 716.883,
+"e": 717.123,
+"id": "S12_12"
+},
+{
+"w": "casa",
+"t": 717.123,
+"e": 717.363,
+"id": "S12_12"
+},
+{
+"w": "es",
+"t": 717.363,
+"e": 717.883,
+"id": "S12_12"
+},
+{
+"w": "la",
+"t": 717.883,
+"e": 718.023,
+"id": "S12_12"
+},
+{
+"w": "que",
+"t": 718.023,
+"e": 718.163,
+"id": "S12_12"
+},
+{
+"w": "no",
+"t": 718.163,
+"e": 718.283,
+"id": "S12_12"
+},
+{
+"w": "se",
+"t": 718.283,
+"e": 718.483,
+"id": "S12_12"
+},
+{
+"w": "ve",
+"t": 718.483,
+"e": 718.563,
+"id": "S12_12"
+},
+{
+"w": "una",
+"t": 719.023,
+"e": 719.183,
+"id": "S12_13a"
+},
+{
+"w": "llave",
+"t": 719.183,
+"e": 719.363,
+"id": "S12_13a"
+},
+{
+"w": "que",
+"t": 719.363,
+"e": 719.743,
+"id": "S12_13a"
+},
+{
+"w": "gotea",
+"t": 719.743,
+"e": 720.003,
+"id": "S12_13a"
+},
+{
+"w": "un",
+"t": 720.543,
+"e": 720.763,
+"id": "S12_13a"
+},
+{
+"w": "tubo",
+"t": 720.763,
+"e": 720.823,
+"id": "S12_13a"
+},
+{
+"w": "que",
+"t": 720.823,
+"e": 721.263,
+"id": "S12_13a"
+},
+{
+"w": "pierde",
+"t": 721.263,
+"e": 721.323,
+"id": "S12_13a"
+},
+{
+"w": "abajo",
+"t": 721.323,
+"e": 721.603,
+"id": "S12_13a"
+},
+{
+"w": "del",
+"t": 721.603,
+"e": 722.123,
+"id": "S12_13a"
+},
+{
+"w": "piso",
+"t": 722.123,
+"e": 722.123,
+"id": "S12_13a"
+},
+{
+"w": "eso",
+"t": 722.863,
+"e": 723.023,
+"id": "S12_13b"
+},
+{
+"w": "lo",
+"t": 723.023,
+"e": 723.423,
+"id": "S12_13b"
+},
+{
+"w": "tengo",
+"t": 723.423,
+"e": 723.583,
+"id": "S12_13b"
+},
+{
+"w": "en",
+"t": 723.583,
+"e": 723.723,
+"id": "S12_13b"
+},
+{
+"w": "la",
+"t": 723.723,
+"e": 724.003,
+"id": "S12_13b"
+},
+{
+"w": "guía",
+"t": 724.003,
+"e": 724.003,
+"id": "S12_13b"
+},
+{
+"w": "del",
+"t": 724.003,
+"e": 724.683,
+"id": "S12_13b"
+},
+{
+"w": "canal",
+"t": 724.683,
+"e": 724.683,
+"id": "S12_13b"
+},
+{
+"w": "junto",
+"t": 724.683,
+"e": 725.163,
+"id": "S12_13b"
+},
+{
+"w": "con",
+"t": 725.163,
+"e": 725.423,
+"id": "S12_13b"
+},
+{
+"w": "el",
+"t": 725.423,
+"e": 725.723,
+"id": "S12_13b"
+},
+{
+"w": "tubo",
+"t": 725.723,
+"e": 725.863,
+"id": "S12_13b"
+},
+{
+"w": "que",
+"t": 725.863,
+"e": 726.203,
+"id": "S12_13b"
+},
+{
+"w": "pierde",
+"t": 726.203,
+"e": 726.403,
+"id": "S12_13b"
+},
+{
+"w": "arreglado",
+"t": 726.543,
+"e": 727.103,
+"id": "S12_13b"
+},
+{
+"w": "sin",
+"t": 727.103,
+"e": 727.363,
+"id": "S12_13b"
+},
+{
+"w": "soldar",
+"t": 727.363,
+"e": 727.803,
+"id": "S12_13b"
+},
+{
+"w": "si",
+"t": 728.143,
+"e": 728.243,
+"id": "S12_14"
+},
+{
+"w": "te",
+"t": 728.243,
+"e": 728.643,
+"id": "S12_14"
+},
+{
+"w": "sirve",
+"t": 728.643,
+"e": 728.723,
+"id": "S12_14"
+},
+{
+"w": "el",
+"t": 728.723,
+"e": 729.383,
+"id": "S12_14"
+},
+{
+"w": "enlace",
+"t": 729.383,
+"e": 729.643,
+"id": "S12_14"
+},
+{
+"w": "está",
+"t": 729.643,
+"e": 730.183,
+"id": "S12_14"
+},
+{
+"w": "abajo",
+"t": 730.183,
+"e": 730.523,
+"id": "S12_14"
+},
+{
+"w": "y",
+"t": 730.523,
+"e": 730.923,
+"id": "S12_14"
+},
+{
+"w": "ahora",
+"t": 730.923,
+"e": 731.243,
+"id": "S12_14"
+},
+{
+"w": "lo",
+"t": 731.243,
+"e": 731.563,
+"id": "S12_14"
+},
+{
+"w": "que",
+"t": 731.563,
+"e": 731.643,
+"id": "S12_14"
+},
+{
+"w": "te",
+"t": 731.643,
+"e": 731.963,
+"id": "S12_14"
+},
+{
+"w": "prometí",
+"t": 731.963,
+"e": 732.283,
+"id": "S12_14"
+},
+{
+"w": "antes",
+"t": 731.085,
+"e": 731.085,
+"id": "S11_01a"
+},
+{
+"w": "de",
+"t": 731.085,
+"e": 731.445,
+"id": "S11_01a"
+},
+{
+"w": "pararlo",
+"t": 731.445,
+"e": 731.745,
+"id": "S11_01a"
+},
+{
+"w": "mira",
+"t": 731.745,
+"e": 732.285,
+"id": "S11_01a"
+},
+{
+"w": "la",
+"t": 732.285,
+"e": 732.765,
+"id": "S11_01a"
+},
+{
+"w": "base",
+"t": 732.765,
+"e": 732.765,
+"id": "S11_01a"
+},
+{
+"w": "por",
+"t": 733.205,
+"e": 733.405,
+"id": "S11_01a"
+},
+{
+"w": "qué",
+"t": 733.405,
+"e": 733.485,
+"id": "S11_01a"
+},
+{
+"w": "se",
+"t": 733.485,
+"e": 733.865,
+"id": "S11_01a"
+},
+{
+"w": "rajó",
+"t": 733.865,
+"e": 734.045,
+"id": "S11_01a"
+},
+{
+"w": "casi",
+"t": 734.525,
+"e": 734.745,
+"id": "S11_01b"
+},
+{
+"w": "siempre",
+"t": 734.745,
+"e": 735.205,
+"id": "S11_01b"
+},
+{
+"w": "es",
+"t": 735.205,
+"e": 735.605,
+"id": "S11_01b"
+},
+{
+"w": "una",
+"t": 735.605,
+"e": 735.825,
+"id": "S11_01b"
+},
+{
+"w": "de",
+"t": 735.825,
+"e": 736.345,
+"id": "S11_01b"
+},
+{
+"w": "tres",
+"t": 736.345,
+"e": 736.345,
+"id": "S11_01b"
+},
+{
+"w": "cosas",
+"t": 736.345,
+"e": 736.645,
+"id": "S11_01b"
+},
+{
+"w": "un",
+"t": 737.085,
+"e": 737.305,
+"id": "S11_01b"
+},
+{
+"w": "golpe",
+"t": 737.305,
+"e": 737.545,
+"id": "S11_01b"
+},
+{
+"w": "el",
+"t": 738.025,
+"e": 738.445,
+"id": "S11_01b"
+},
+{
+"w": "sol",
+"t": 738.445,
+"e": 738.445,
+"id": "S11_01b"
+},
+{
+"w": "o",
+"t": 738.445,
+"e": 738.965,
+"id": "S11_01b"
+},
+{
+"w": "una",
+"t": 738.965,
+"e": 739.385,
+"id": "S11_01b"
+},
+{
+"w": "base",
+"t": 739.385,
+"e": 739.565,
+"id": "S11_01b"
+},
+{
+"w": "despareja",
+"t": 739.565,
+"e": 740.205,
+"id": "S11_01b"
+},
+{
+"w": "una",
+"t": 740.665,
+"e": 740.845,
+"id": "S11_02"
+},
+{
+"w": "piedrita",
+"t": 740.845,
+"e": 741.225,
+"id": "S11_02"
+},
+{
+"w": "abajo",
+"t": 741.225,
+"e": 741.625,
+"id": "S11_02"
+},
+{
+"w": "y",
+"t": 741.625,
+"e": 742.165,
+"id": "S11_02"
+},
+{
+"w": "todo",
+"t": 742.165,
+"e": 742.385,
+"id": "S11_02"
+},
+{
+"w": "el",
+"t": 742.385,
+"e": 742.845,
+"id": "S11_02"
+},
+{
+"w": "peso",
+"t": 742.845,
+"e": 742.845,
+"id": "S11_02"
+},
+{
+"w": "del",
+"t": 742.845,
+"e": 743.305,
+"id": "S11_02"
+},
+{
+"w": "agua",
+"t": 743.305,
+"e": 743.305,
+"id": "S11_02"
+},
+{
+"w": "cargando",
+"t": 743.305,
+"e": 743.745,
+"id": "S11_02"
+},
+{
+"w": "en",
+"t": 743.745,
+"e": 743.885,
+"id": "S11_02"
+},
+{
+"w": "un",
+"t": 743.885,
+"e": 744.345,
+"id": "S11_02"
+},
+{
+"w": "punto",
+"t": 744.345,
+"e": 744.345,
+"id": "S11_02"
+},
+{
+"w": "si",
+"t": 744.805,
+"e": 744.885,
+"id": "S11_02"
+},
+{
+"w": "no",
+"t": 744.885,
+"e": 744.985,
+"id": "S11_02"
+},
+{
+"w": "la",
+"t": 744.985,
+"e": 745.225,
+"id": "S11_02"
+},
+{
+"w": "sacas",
+"t": 745.225,
+"e": 745.545,
+"id": "S11_02"
+},
+{
+"w": "se",
+"t": 745.545,
+"e": 745.985,
+"id": "S11_02"
+},
+{
+"w": "vuelve",
+"t": 745.985,
+"e": 746.245,
+"id": "S11_02"
+},
+{
+"w": "a",
+"t": 746.245,
+"e": 746.565,
+"id": "S11_02"
+},
+{
+"w": "rajar",
+"t": 746.565,
+"e": 746.745,
+"id": "S11_02"
+},
+{
+"w": "en",
+"t": 746.745,
+"e": 747.285,
+"id": "S11_02"
+},
+{
+"w": "otro",
+"t": 747.285,
+"e": 747.485,
+"id": "S11_02"
+},
+{
+"w": "lado",
+"t": 747.485,
+"e": 747.725,
+"id": "S11_02"
+},
+{
+"w": "la",
+"t": 748.265,
+"e": 748.745,
+"id": "S11_03"
+},
+{
+"w": "base",
+"t": 748.745,
+"e": 748.745,
+"id": "S11_03"
+},
+{
+"w": "tiene",
+"t": 748.745,
+"e": 749.105,
+"id": "S11_03"
+},
+{
+"w": "que",
+"t": 749.105,
+"e": 749.345,
+"id": "S11_03"
+},
+{
+"w": "ser",
+"t": 749.345,
+"e": 749.505,
+"id": "S11_03"
+},
+{
+"w": "pareja",
+"t": 749.505,
+"e": 749.925,
+"id": "S11_03"
+},
+{
+"w": "y",
+"t": 749.925,
+"e": 750.445,
+"id": "S11_03"
+},
+{
+"w": "más",
+"t": 750.445,
+"e": 750.665,
+"id": "S11_03"
+},
+{
+"w": "grande",
+"t": 750.665,
+"e": 750.885,
+"id": "S11_03"
+},
+{
+"w": "que",
+"t": 750.885,
+"e": 751.065,
+"id": "S11_03"
+},
+{
+"w": "el",
+"t": 751.065,
+"e": 751.405,
+"id": "S11_03"
+},
+{
+"w": "fondo",
+"t": 751.405,
+"e": 751.405,
+"id": "S11_03"
+},
+{
+"w": "del",
+"t": 751.405,
+"e": 751.685,
+"id": "S11_03"
+},
+{
+"w": "tanque",
+"t": 751.685,
+"e": 751.985,
+"id": "S11_03"
+},
+{
+"w": "que",
+"t": 752.305,
+"e": 752.505,
+"id": "S11_03"
+},
+{
+"w": "apoya",
+"t": 752.505,
+"e": 752.745,
+"id": "S11_03"
+},
+{
+"w": "entero",
+"t": 752.745,
+"e": 753.145,
+"id": "S11_03"
+},
+{
+"w": "lo",
+"t": 753.492,
+"e": 753.832,
+"id": "S11B_01"
+},
+{
+"w": "paro",
+"t": 753.832,
+"e": 753.912,
+"id": "S11B_01"
+},
+{
+"w": "en",
+"t": 753.912,
+"e": 754.032,
+"id": "S11B_01"
+},
+{
+"w": "su",
+"t": 754.032,
+"e": 754.312,
+"id": "S11B_01"
+},
+{
+"w": "lugar",
+"t": 754.312,
+"e": 754.472,
+"id": "S11B_01"
+},
+{
+"w": "y",
+"t": 754.472,
+"e": 754.952,
+"id": "S11B_01"
+},
+{
+"w": "ahora",
+"t": 754.952,
+"e": 755.272,
+"id": "S11B_01"
+},
+{
+"w": "la",
+"t": 755.272,
+"e": 755.612,
+"id": "S11B_01"
+},
+{
+"w": "prueba",
+"t": 755.612,
+"e": 755.952,
+"id": "S11B_01"
+},
+{
+"w": "que",
+"t": 755.952,
+"e": 756.192,
+"id": "S11B_01"
+},
+{
+"w": "no",
+"t": 756.192,
+"e": 756.372,
+"id": "S11B_01"
+},
+{
+"w": "se",
+"t": 756.372,
+"e": 756.572,
+"id": "S11B_01"
+},
+{
+"w": "saltea",
+"t": 756.572,
+"e": 757.012,
+"id": "S11B_01"
+},
+{
+"w": "un",
+"t": 757.412,
+"e": 757.672,
+"id": "S11B_02"
+},
+{
+"w": "papel",
+"t": 757.672,
+"e": 757.812,
+"id": "S11B_02"
+},
+{
+"w": "seco",
+"t": 757.812,
+"e": 758.232,
+"id": "S11B_02"
+},
+{
+"w": "pegado",
+"t": 758.232,
+"e": 758.632,
+"id": "S11B_02"
+},
+{
+"w": "justo",
+"t": 758.632,
+"e": 759.132,
+"id": "S11B_02"
+},
+{
+"w": "abajo",
+"t": 759.132,
+"e": 759.372,
+"id": "S11B_02"
+},
+{
+"w": "del",
+"t": 759.372,
+"e": 759.632,
+"id": "S11B_02"
+},
+{
+"w": "parche",
+"t": 759.632,
+"e": 759.952,
+"id": "S11B_02"
+},
+{
+"w": "lo",
+"t": 760.432,
+"e": 760.592,
+"id": "S11B_03"
+},
+{
+"w": "lleno",
+"t": 760.592,
+"e": 760.792,
+"id": "S11B_03"
+},
+{
+"w": "hasta",
+"t": 760.792,
+"e": 761.152,
+"id": "S11B_03"
+},
+{
+"w": "arriba",
+"t": 761.152,
+"e": 761.432,
+"id": "S11B_03"
+},
+{
+"w": "para",
+"t": 761.432,
+"e": 761.912,
+"id": "S11B_03"
+},
+{
+"w": "que",
+"t": 761.912,
+"e": 762.092,
+"id": "S11B_03"
+},
+{
+"w": "la",
+"t": 762.092,
+"e": 762.532,
+"id": "S11B_03"
+},
+{
+"w": "grieta",
+"t": 762.532,
+"e": 762.652,
+"id": "S11B_03"
+},
+{
+"w": "aguante",
+"t": 762.652,
+"e": 763.272,
+"id": "S11B_03"
+},
+{
+"w": "la",
+"t": 763.272,
+"e": 763.672,
+"id": "S11B_03"
+},
+{
+"w": "presión",
+"t": 763.672,
+"e": 763.792,
+"id": "S11B_03"
+},
+{
+"w": "más",
+"t": 763.792,
+"e": 764.252,
+"id": "S11B_03"
+},
+{
+"w": "alta",
+"t": 764.252,
+"e": 764.372,
+"id": "S11B_03"
+},
+{
+"w": "y",
+"t": 764.372,
+"e": 764.852,
+"id": "S11B_04"
+},
+{
+"w": "lo",
+"t": 764.852,
+"e": 765.172,
+"id": "S11B_04"
+},
+{
+"w": "dejo",
+"t": 765.172,
+"e": 765.252,
+"id": "S11B_04"
+},
+{
+"w": "24",
+"t": 765.252,
+"e": 766.092,
+"id": "S11B_04"
+},
+{
+"w": "horas",
+"t": 766.092,
+"e": 766.392,
+"id": "S11B_04"
+},
+{
+"w": "si",
+"t": 766.952,
+"e": 767.112,
+"id": "S11B_04"
+},
+{
+"w": "hay",
+"t": 767.112,
+"e": 767.272,
+"id": "S11B_04"
+},
+{
+"w": "una",
+"t": 767.272,
+"e": 767.732,
+"id": "S11B_04"
+},
+{
+"w": "pérdida",
+"t": 767.732,
+"e": 767.872,
+"id": "S11B_04"
+},
+{
+"w": "mínima",
+"t": 767.872,
+"e": 768.352,
+"id": "S11B_04"
+},
+{
+"w": "el",
+"t": 768.352,
+"e": 769.012,
+"id": "S11B_04"
+},
+{
+"w": "papel",
+"t": 769.012,
+"e": 769.052,
+"id": "S11B_04"
+},
+{
+"w": "te",
+"t": 769.052,
+"e": 769.332,
+"id": "S11B_04"
+},
+{
+"w": "la",
+"t": 769.332,
+"e": 769.772,
+"id": "S11B_04"
+},
+{
+"w": "marca",
+"t": 769.772,
+"e": 769.772,
+"id": "S11B_04"
+},
+{
+"w": "aunque",
+"t": 769.772,
+"e": 770.332,
+"id": "S11B_04"
+},
+{
+"w": "no",
+"t": 770.332,
+"e": 770.512,
+"id": "S11B_04"
+},
+{
+"w": "la",
+"t": 770.512,
+"e": 770.792,
+"id": "S11B_04"
+},
+{
+"w": "veas",
+"t": 770.792,
+"e": 771.032,
+"id": "S11B_04"
+},
+{
+"w": "para",
+"t": 771.332,
+"e": 771.452,
+"id": "S11B_06"
+},
+{
+"w": "que",
+"t": 771.452,
+"e": 771.792,
+"id": "S11B_06"
+},
+{
+"w": "mañana",
+"t": 771.792,
+"e": 772.012,
+"id": "S11B_06"
+},
+{
+"w": "no",
+"t": 772.012,
+"e": 772.372,
+"id": "S11B_06"
+},
+{
+"w": "me",
+"t": 772.372,
+"e": 772.712,
+"id": "S11B_06"
+},
+{
+"w": "digas",
+"t": 772.712,
+"e": 772.772,
+"id": "S11B_06"
+},
+{
+"w": "que",
+"t": 772.772,
+"e": 772.972,
+"id": "S11B_06"
+},
+{
+"w": "no",
+"t": 772.972,
+"e": 773.092,
+"id": "S11B_06"
+},
+{
+"w": "lo",
+"t": 773.092,
+"e": 773.432,
+"id": "S11B_06"
+},
+{
+"w": "viste",
+"t": 773.432,
+"e": 773.532,
+"id": "S11B_06"
+},
+{
+"w": "al",
+"t": 773.912,
+"e": 774.152,
+"id": "S11B_07"
+},
+{
+"w": "otro",
+"t": 774.152,
+"e": 774.312,
+"id": "S11B_07"
+},
+{
+"w": "día",
+"t": 774.312,
+"e": 774.672,
+"id": "S11B_07"
+},
+{
+"w": "papel",
+"t": 774.672,
+"e": 775.212,
+"id": "S11B_07"
+},
+{
+"w": "seco",
+"t": 775.212,
+"e": 775.712,
+"id": "S11B_07"
+},
+{
+"w": "ni",
+"t": 776.012,
+"e": 776.132,
+"id": "S11B_07"
+},
+{
+"w": "una",
+"t": 776.132,
+"e": 776.432,
+"id": "S11B_07"
+},
+{
+"w": "marca",
+"t": 776.432,
+"e": 776.672,
+"id": "S11B_07"
+},
+{
+"w": "el",
+"t": 777.072,
+"e": 777.312,
+"id": "S11B_09"
+},
+{
+"w": "verano",
+"t": 777.312,
+"e": 777.532,
+"id": "S11B_09"
+},
+{
+"w": "es",
+"t": 777.532,
+"e": 778.092,
+"id": "S11B_09"
+},
+{
+"w": "justo",
+"t": 778.092,
+"e": 778.352,
+"id": "S11B_09"
+},
+{
+"w": "lo",
+"t": 778.352,
+"e": 778.552,
+"id": "S11B_09"
+},
+{
+"w": "que",
+"t": 778.552,
+"e": 778.592,
+"id": "S11B_09"
+},
+{
+"w": "le",
+"t": 778.592,
+"e": 778.772,
+"id": "S11B_09"
+},
+{
+"w": "va",
+"t": 778.772,
+"e": 778.892,
+"id": "S11B_09"
+},
+{
+"w": "a",
+"t": 778.892,
+"e": 779.032,
+"id": "S11B_09"
+},
+{
+"w": "probar",
+"t": 779.032,
+"e": 779.312,
+"id": "S11B_09"
+},
+{
+"w": "te",
+"t": 779.552,
+"e": 779.972,
+"id": "S11B_09"
+},
+{
+"w": "aviso",
+"t": 779.972,
+"e": 779.992,
+"id": "S11B_09"
+},
+{
+"w": "aviso",
+"t": 779.972,
+"e": 779.992,
+"id": "S11B_10a"
+},
+{
+"w": "y",
+"t": 779.992,
+"e": 780.532,
+"id": "S11B_10a"
+},
+{
+"w": "si",
+"t": 780.532,
+"e": 780.632,
+"id": "S11B_10a"
+},
+{
+"w": "el",
+"t": 780.632,
+"e": 780.972,
+"id": "S11B_10a"
+},
+{
+"w": "papel",
+"t": 780.972,
+"e": 780.972,
+"id": "S11B_10a"
+},
+{
+"w": "te",
+"t": 780.972,
+"e": 781.492,
+"id": "S11B_10a"
+},
+{
+"w": "sale",
+"t": 781.492,
+"e": 781.492,
+"id": "S11B_10a"
+},
+{
+"w": "húmedo",
+"t": 781.492,
+"e": 781.992,
+"id": "S11B_10a"
+},
+{
+"w": "no",
+"t": 781.992,
+"e": 782.352,
+"id": "S11B_10a"
+},
+{
+"w": "es",
+"t": 782.352,
+"e": 782.512,
+"id": "S11B_10a"
+},
+{
+"w": "el",
+"t": 782.512,
+"e": 782.612,
+"id": "S11B_10a"
+},
+{
+"w": "fin",
+"t": 782.612,
+"e": 782.872,
+"id": "S11B_10a"
+},
+{
+"w": "vacías",
+"t": 783.652,
+"e": 784.092,
+"id": "S11B_10b"
+},
+{
+"w": "raspas",
+"t": 784.692,
+"e": 784.912,
+"id": "S11B_10b"
+},
+{
+"w": "ese",
+"t": 784.912,
+"e": 785.232,
+"id": "S11B_10b"
+},
+{
+"w": "punto",
+"t": 785.232,
+"e": 785.492,
+"id": "S11B_10b"
+},
+{
+"w": "y",
+"t": 785.492,
+"e": 785.952,
+"id": "S11B_10b"
+},
+{
+"w": "le",
+"t": 785.952,
+"e": 786.292,
+"id": "S11B_10b"
+},
+{
+"w": "das",
+"t": 786.292,
+"e": 786.292,
+"id": "S11B_10b"
+},
+{
+"w": "otra",
+"t": 786.292,
+"e": 786.772,
+"id": "S11B_10b"
+},
+{
+"w": "pasada",
+"t": 786.772,
+"e": 787.152,
+"id": "S11B_10b"
+},
+{
+"w": "de",
+"t": 787.152,
+"e": 787.812,
+"id": "S11B_10b"
+},
+{
+"w": "plástico",
+"t": 787.812,
+"e": 787.812,
+"id": "S11B_10b"
+},
+{
+"w": "casi",
+"t": 788.312,
+"e": 788.512,
+"id": "S11B_10b"
+},
+{
+"w": "siempre",
+"t": 788.512,
+"e": 788.952,
+"id": "S11B_10b"
+},
+{
+"w": "es",
+"t": 788.952,
+"e": 789.332,
+"id": "S11B_10b"
+},
+{
+"w": "un",
+"t": 789.332,
+"e": 789.612,
+"id": "S11B_10b"
+},
+{
+"w": "poro",
+"t": 789.612,
+"e": 789.872,
+"id": "S11B_10b"
+},
+{
+"w": "chiquito",
+"t": 789.872,
+"e": 790.292,
+"id": "S11B_10b"
+},
+{
+"w": "y",
+"t": 790.292,
+"e": 790.732,
+"id": "S11B_11"
+},
+{
+"w": "si",
+"t": 790.732,
+"e": 790.992,
+"id": "S11B_11"
+},
+{
+"w": "puedes",
+"t": 790.992,
+"e": 791.272,
+"id": "S11B_11"
+},
+{
+"w": "dale",
+"t": 791.272,
+"e": 791.772,
+"id": "S11B_11"
+},
+{
+"w": "sombra",
+"t": 791.772,
+"e": 792.172,
+"id": "S11B_11"
+},
+{
+"w": "un",
+"t": 792.612,
+"e": 792.752,
+"id": "S11B_11"
+},
+{
+"w": "techito",
+"t": 792.752,
+"e": 793.212,
+"id": "S11B_11"
+},
+{
+"w": "una",
+"t": 793.612,
+"e": 793.772,
+"id": "S11B_11"
+},
+{
+"w": "lona",
+"t": 793.772,
+"e": 794.072,
+"id": "S11B_11"
+},
+{
+"w": "el",
+"t": 794.472,
+"e": 794.832,
+"id": "S11B_11"
+},
+{
+"w": "sol",
+"t": 794.832,
+"e": 794.872,
+"id": "S11B_11"
+},
+{
+"w": "es",
+"t": 794.872,
+"e": 795.212,
+"id": "S11B_11"
+},
+{
+"w": "lo",
+"t": 795.212,
+"e": 795.352,
+"id": "S11B_11"
+},
+{
+"w": "que",
+"t": 795.352,
+"e": 795.592,
+"id": "S11B_11"
+},
+{
+"w": "más",
+"t": 795.592,
+"e": 795.832,
+"id": "S11B_11"
+},
+{
+"w": "envejece",
+"t": 795.832,
+"e": 796.352,
+"id": "S11B_11"
+},
+{
+"w": "estos",
+"t": 796.352,
+"e": 796.672,
+"id": "S11B_11"
+},
+{
+"w": "tanques",
+"t": 796.672,
+"e": 797.092,
+"id": "S11B_11"
+},
+{
+"w": "te",
+"t": 797.468,
+"e": 797.708,
+"id": "S12_01"
+},
+{
+"w": "resumo",
+"t": 797.708,
+"e": 797.928,
+"id": "S12_01"
+},
+{
+"w": "los",
+"t": 797.928,
+"e": 798.208,
+"id": "S12_01"
+},
+{
+"w": "tres",
+"t": 798.208,
+"e": 798.488,
+"id": "S12_01"
+},
+{
+"w": "errores",
+"t": 798.488,
+"e": 798.788,
+"id": "S12_01"
+},
+{
+"w": "que",
+"t": 798.788,
+"e": 799.308,
+"id": "S12_01"
+},
+{
+"w": "más",
+"t": 799.308,
+"e": 799.568,
+"id": "S12_01"
+},
+{
+"w": "arruinan",
+"t": 799.568,
+"e": 800.108,
+"id": "S12_01"
+},
+{
+"w": "este",
+"t": 800.108,
+"e": 800.508,
+"id": "S12_01"
+},
+{
+"w": "arreglo",
+"t": 800.508,
+"e": 800.908,
+"id": "S12_01"
+},
+{
+"w": "uno",
+"t": 801.392,
+"e": 801.612,
+"id": "S12_02"
+},
+{
+"w": "rellenar",
+"t": 801.612,
+"e": 802.492,
+"id": "S12_02"
+},
+{
+"w": "con",
+"t": 802.492,
+"e": 802.712,
+"id": "S12_02"
+},
+{
+"w": "otro",
+"t": 802.712,
+"e": 802.952,
+"id": "S12_02"
+},
+{
+"w": "plástico",
+"t": 802.952,
+"e": 803.392,
+"id": "S12_02"
+},
+{
+"w": "las",
+"t": 803.792,
+"e": 803.972,
+"id": "S12_02"
+},
+{
+"w": "tapitas",
+"t": 803.972,
+"e": 804.392,
+"id": "S12_02"
+},
+{
+"w": "que",
+"t": 804.392,
+"e": 804.672,
+"id": "S12_02"
+},
+{
+"w": "no",
+"t": 804.672,
+"e": 804.832,
+"id": "S12_02"
+},
+{
+"w": "son",
+"t": 804.832,
+"e": 804.992,
+"id": "S12_02"
+},
+{
+"w": "del",
+"t": 804.992,
+"e": 805.232,
+"id": "S12_02"
+},
+{
+"w": "mismo",
+"t": 805.232,
+"e": 805.432,
+"id": "S12_02"
+},
+{
+"w": "número",
+"t": 805.432,
+"e": 805.832,
+"id": "S12_02"
+},
+{
+"w": "parece",
+"t": 806.332,
+"e": 806.472,
+"id": "S12_02"
+},
+{
+"w": "pegado",
+"t": 806.472,
+"e": 807.012,
+"id": "S12_02"
+},
+{
+"w": "y",
+"t": 807.012,
+"e": 807.352,
+"id": "S12_02"
+},
+{
+"w": "se",
+"t": 807.352,
+"e": 807.632,
+"id": "S12_02"
+},
+{
+"w": "suelta",
+"t": 807.632,
+"e": 807.912,
+"id": "S12_02"
+},
+{
+"w": "dos",
+"t": 808.622,
+"e": 808.982,
+"id": "S12_03"
+},
+{
+"w": "no",
+"t": 808.982,
+"e": 809.382,
+"id": "S12_03"
+},
+{
+"w": "hacer",
+"t": 809.382,
+"e": 809.682,
+"id": "S12_03"
+},
+{
+"w": "los",
+"t": 809.682,
+"e": 810.062,
+"id": "S12_03"
+},
+{
+"w": "agujeritos",
+"t": 810.062,
+"e": 810.602,
+"id": "S12_03"
+},
+{
+"w": "el",
+"t": 810.882,
+"e": 811.182,
+"id": "S12_03"
+},
+{
+"w": "parche",
+"t": 811.182,
+"e": 811.442,
+"id": "S12_03"
+},
+{
+"w": "aguanta",
+"t": 811.442,
+"e": 811.882,
+"id": "S12_03"
+},
+{
+"w": "pero",
+"t": 811.882,
+"e": 812.342,
+"id": "S12_03"
+},
+{
+"w": "la",
+"t": 812.342,
+"e": 812.522,
+"id": "S12_03"
+},
+{
+"w": "grieta",
+"t": 812.522,
+"e": 812.922,
+"id": "S12_03"
+},
+{
+"w": "sigue",
+"t": 812.922,
+"e": 813.302,
+"id": "S12_03"
+},
+{
+"w": "caminando",
+"t": 813.302,
+"e": 813.782,
+"id": "S12_03"
+},
+{
+"w": "por",
+"t": 813.782,
+"e": 814.022,
+"id": "S12_03"
+},
+{
+"w": "el",
+"t": 814.022,
+"e": 814.202,
+"id": "S12_03"
+},
+{
+"w": "costado",
+"t": 814.202,
+"e": 814.582,
+"id": "S12_03"
+},
+{
+"w": "y",
+"t": 814.582,
+"e": 814.982,
+"id": "S12_03"
+},
+{
+"w": "a",
+"t": 814.982,
+"e": 815.122,
+"id": "S12_03"
+},
+{
+"w": "los",
+"t": 815.122,
+"e": 815.302,
+"id": "S12_03"
+},
+{
+"w": "meses",
+"t": 815.302,
+"e": 815.602,
+"id": "S12_03"
+},
+{
+"w": "gotea",
+"t": 815.602,
+"e": 816.162,
+"id": "S12_03"
+},
+{
+"w": "al",
+"t": 816.162,
+"e": 816.682,
+"id": "S12_03"
+},
+{
+"w": "lado",
+"t": 816.682,
+"e": 816.682,
+"id": "S12_03"
+},
+{
+"w": "tres",
+"t": 817.678,
+"e": 817.678,
+"id": "S12_04"
+},
+{
+"w": "derretir",
+"t": 817.678,
+"e": 818.138,
+"id": "S12_04"
+},
+{
+"w": "sólo",
+"t": 818.138,
+"e": 818.438,
+"id": "S12_04"
+},
+{
+"w": "la",
+"t": 818.438,
+"e": 819.118,
+"id": "S12_04"
+},
+{
+"w": "tira",
+"t": 819.118,
+"e": 819.118,
+"id": "S12_04"
+},
+{
+"w": "sin",
+"t": 819.118,
+"e": 819.458,
+"id": "S12_04"
+},
+{
+"w": "fundir",
+"t": 819.458,
+"e": 819.818,
+"id": "S12_04"
+},
+{
+"w": "el",
+"t": 819.818,
+"e": 820.378,
+"id": "S12_04"
+},
+{
+"w": "tanque",
+"t": 820.378,
+"e": 820.378,
+"id": "S12_04"
+},
+{
+"w": "queda",
+"t": 820.778,
+"e": 820.838,
+"id": "S12_04"
+},
+{
+"w": "una",
+"t": 820.838,
+"e": 821.158,
+"id": "S12_04"
+},
+{
+"w": "costra",
+"t": 821.158,
+"e": 821.558,
+"id": "S12_04"
+},
+{
+"w": "linda",
+"t": 821.558,
+"e": 821.858,
+"id": "S12_04"
+},
+{
+"w": "encima",
+"t": 821.858,
+"e": 822.298,
+"id": "S12_04"
+},
+{
+"w": "que",
+"t": 822.298,
+"e": 822.718,
+"id": "S12_04"
+},
+{
+"w": "no",
+"t": 822.718,
+"e": 822.918,
+"id": "S12_04"
+},
+{
+"w": "está",
+"t": 822.918,
+"e": 823.078,
+"id": "S12_04"
+},
+{
+"w": "agarrada",
+"t": 823.078,
+"e": 823.458,
+"id": "S12_04"
+},
+{
+"w": "a",
+"t": 823.458,
+"e": 823.938,
+"id": "S12_04"
+},
+{
+"w": "nada",
+"t": 824.333,
+"e": 824.333,
+"id": "S12_05"
+},
+{
+"w": "y",
+"t": 824.333,
+"e": 824.913,
+"id": "S12_05"
+},
+{
+"w": "ahora",
+"t": 824.913,
+"e": 825.093,
+"id": "S12_05"
+},
+{
+"w": "te",
+"t": 825.093,
+"e": 825.513,
+"id": "S12_05"
+},
+{
+"w": "digo",
+"t": 825.513,
+"e": 825.513,
+"id": "S12_05"
+},
+{
+"w": "cuándo",
+"t": 825.513,
+"e": 826.073,
+"id": "S12_05"
+},
+{
+"w": "no",
+"t": 826.073,
+"e": 826.393,
+"id": "S12_05"
+},
+{
+"w": "vale",
+"t": 826.393,
+"e": 826.413,
+"id": "S12_05"
+},
+{
+"w": "la",
+"t": 826.413,
+"e": 826.893,
+"id": "S12_05"
+},
+{
+"w": "pena",
+"t": 826.893,
+"e": 826.893,
+"id": "S12_05"
+},
+{
+"w": "porque",
+"t": 827.133,
+"e": 827.413,
+"id": "S12_05"
+},
+{
+"w": "no",
+"t": 827.413,
+"e": 827.793,
+"id": "S12_05"
+},
+{
+"w": "todo",
+"t": 827.793,
+"e": 827.953,
+"id": "S12_05"
+},
+{
+"w": "tanque",
+"t": 827.953,
+"e": 828.373,
+"id": "S12_05"
+},
+{
+"w": "se",
+"t": 828.373,
+"e": 828.773,
+"id": "S12_05"
+},
+{
+"w": "salva",
+"t": 828.773,
+"e": 828.913,
+"id": "S12_05"
+},
+{
+"w": "si",
+"t": 829.228,
+"e": 829.328,
+"id": "S12_06"
+},
+{
+"w": "la",
+"t": 829.328,
+"e": 829.728,
+"id": "S12_06"
+},
+{
+"w": "grieta",
+"t": 829.728,
+"e": 829.748,
+"id": "S12_06"
+},
+{
+"w": "es",
+"t": 829.748,
+"e": 829.988,
+"id": "S12_06"
+},
+{
+"w": "muy",
+"t": 829.988,
+"e": 830.268,
+"id": "S12_06"
+},
+{
+"w": "larga",
+"t": 830.268,
+"e": 830.528,
+"id": "S12_06"
+},
+{
+"w": "de",
+"t": 830.528,
+"e": 831.008,
+"id": "S12_06"
+},
+{
+"w": "más",
+"t": 831.008,
+"e": 831.168,
+"id": "S12_06"
+},
+{
+"w": "de",
+"t": 831.168,
+"e": 831.328,
+"id": "S12_06"
+},
+{
+"w": "un",
+"t": 831.328,
+"e": 831.548,
+"id": "S12_06"
+},
+{
+"w": "palmo",
+"t": 831.548,
+"e": 831.828,
+"id": "S12_06"
+},
+{
+"w": "o",
+"t": 831.828,
+"e": 832.268,
+"id": "S12_06"
+},
+{
+"w": "hay",
+"t": 832.268,
+"e": 832.468,
+"id": "S12_06"
+},
+{
+"w": "varias",
+"t": 832.468,
+"e": 832.788,
+"id": "S12_06"
+},
+{
+"w": "si",
+"t": 833.592,
+"e": 833.812,
+"id": "S12_07"
+},
+{
+"w": "está",
+"t": 833.812,
+"e": 833.932,
+"id": "S12_07"
+},
+{
+"w": "en",
+"t": 833.932,
+"e": 834.072,
+"id": "S12_07"
+},
+{
+"w": "la",
+"t": 834.072,
+"e": 834.532,
+"id": "S12_07"
+},
+{
+"w": "base",
+"t": 834.532,
+"e": 834.532,
+"id": "S12_07"
+},
+{
+"w": "donde",
+"t": 834.532,
+"e": 835.052,
+"id": "S12_07"
+},
+{
+"w": "apoya",
+"t": 835.052,
+"e": 835.412,
+"id": "S12_07"
+},
+{
+"w": "todo",
+"t": 835.412,
+"e": 835.712,
+"id": "S12_07"
+},
+{
+"w": "el",
+"t": 835.712,
+"e": 836.112,
+"id": "S12_07"
+},
+{
+"w": "peso",
+"t": 836.112,
+"e": 836.172,
+"id": "S12_07"
+},
+{
+"w": "o",
+"t": 836.172,
+"e": 836.692,
+"id": "S12_07"
+},
+{
+"w": "en",
+"t": 836.692,
+"e": 836.752,
+"id": "S12_07"
+},
+{
+"w": "la",
+"t": 836.752,
+"e": 837.012,
+"id": "S12_07"
+},
+{
+"w": "rosca",
+"t": 837.012,
+"e": 837.272,
+"id": "S12_07"
+},
+{
+"w": "de",
+"t": 837.272,
+"e": 837.452,
+"id": "S12_07"
+},
+{
+"w": "la",
+"t": 837.452,
+"e": 837.672,
+"id": "S12_07"
+},
+{
+"w": "salida",
+"t": 837.672,
+"e": 837.932,
+"id": "S12_07"
+},
+{
+"w": "y",
+"t": 838.133,
+"e": 838.673,
+"id": "S12_08"
+},
+{
+"w": "si",
+"t": 838.673,
+"e": 838.813,
+"id": "S12_08"
+},
+{
+"w": "el",
+"t": 838.813,
+"e": 838.993,
+"id": "S12_08"
+},
+{
+"w": "plástico",
+"t": 838.993,
+"e": 839.313,
+"id": "S12_08"
+},
+{
+"w": "se",
+"t": 839.313,
+"e": 839.633,
+"id": "S12_08"
+},
+{
+"w": "quiebra",
+"t": 839.633,
+"e": 839.953,
+"id": "S12_08"
+},
+{
+"w": "como",
+"t": 839.953,
+"e": 840.213,
+"id": "S12_08"
+},
+{
+"w": "una",
+"t": 840.213,
+"e": 840.613,
+"id": "S12_08"
+},
+{
+"w": "galleta",
+"t": 840.613,
+"e": 840.873,
+"id": "S12_08"
+},
+{
+"w": "cuando",
+"t": 840.873,
+"e": 841.173,
+"id": "S12_08"
+},
+{
+"w": "lo",
+"t": 841.173,
+"e": 841.453,
+"id": "S12_08"
+},
+{
+"w": "doblas",
+"t": 841.453,
+"e": 841.753,
+"id": "S12_08"
+},
+{
+"w": "está",
+"t": 841.753,
+"e": 842.373,
+"id": "S12_08"
+},
+{
+"w": "cristalizado",
+"t": 842.373,
+"e": 843.193,
+"id": "S12_08"
+},
+{
+"w": "por",
+"t": 843.193,
+"e": 843.433,
+"id": "S12_08"
+},
+{
+"w": "el",
+"t": 843.433,
+"e": 843.773,
+"id": "S12_08"
+},
+{
+"w": "sol",
+"t": 843.773,
+"e": 843.813,
+"id": "S12_08"
+},
+{
+"w": "ahí",
+"t": 844.333,
+"e": 844.473,
+"id": "S12_08"
+},
+{
+"w": "el",
+"t": 844.473,
+"e": 844.693,
+"id": "S12_08"
+},
+{
+"w": "cautín",
+"t": 844.693,
+"e": 845.113,
+"id": "S12_08"
+},
+{
+"w": "no",
+"t": 845.113,
+"e": 845.413,
+"id": "S12_08"
+},
+{
+"w": "lo",
+"t": 845.413,
+"e": 845.873,
+"id": "S12_08"
+},
+{
+"w": "salva",
+"t": 845.873,
+"e": 845.953,
+"id": "S12_08"
+},
+{
+"w": "cambia",
+"t": 846.473,
+"e": 846.573,
+"id": "S12_08"
+},
+{
+"w": "el",
+"t": 846.573,
+"e": 847.053,
+"id": "S12_08"
+},
+{
+"w": "tanque",
+"t": 847.067,
+"e": 847.067,
+"id": "S12_09"
+},
+{
+"w": "y",
+"t": 847.067,
+"e": 847.287,
+"id": "S12_09"
+},
+{
+"w": "no",
+"t": 847.287,
+"e": 847.447,
+"id": "S12_09"
+},
+{
+"w": "te",
+"t": 847.447,
+"e": 847.667,
+"id": "S12_09"
+},
+{
+"w": "voy",
+"t": 847.667,
+"e": 847.747,
+"id": "S12_09"
+},
+{
+"w": "a",
+"t": 847.747,
+"e": 848.187,
+"id": "S12_09"
+},
+{
+"w": "decir",
+"t": 848.187,
+"e": 848.187,
+"id": "S12_09"
+},
+{
+"w": "que",
+"t": 848.187,
+"e": 848.467,
+"id": "S12_09"
+},
+{
+"w": "dura",
+"t": 848.467,
+"e": 848.587,
+"id": "S12_09"
+},
+{
+"w": "para",
+"t": 848.587,
+"e": 848.927,
+"id": "S12_09"
+},
+{
+"w": "siempre",
+"t": 848.927,
+"e": 849.247,
+"id": "S12_09"
+},
+{
+"w": "un",
+"t": 849.687,
+"e": 849.907,
+"id": "S12_09"
+},
+{
+"w": "parche",
+"t": 849.907,
+"e": 850.207,
+"id": "S12_09"
+},
+{
+"w": "bien",
+"t": 850.207,
+"e": 850.647,
+"id": "S12_09"
+},
+{
+"w": "fundido",
+"t": 850.647,
+"e": 851.067,
+"id": "S12_09"
+},
+{
+"w": "es",
+"t": 851.067,
+"e": 851.567,
+"id": "S12_09"
+},
+{
+"w": "el",
+"t": 851.567,
+"e": 851.867,
+"id": "S12_09"
+},
+{
+"w": "mismo",
+"t": 851.867,
+"e": 852.047,
+"id": "S12_09"
+},
+{
+"w": "plástico",
+"t": 852.047,
+"e": 852.547,
+"id": "S12_09"
+},
+{
+"w": "que",
+"t": 852.547,
+"e": 852.767,
+"id": "S12_09"
+},
+{
+"w": "el",
+"t": 852.767,
+"e": 853.127,
+"id": "S12_09"
+},
+{
+"w": "tanque",
+"t": 853.127,
+"e": 853.247,
+"id": "S12_09"
+},
+{
+"w": "dura",
+"t": 853.907,
+"e": 853.927,
+"id": "S12_09"
+},
+{
+"w": "lo",
+"t": 853.927,
+"e": 854.287,
+"id": "S12_09"
+},
+{
+"w": "que",
+"t": 854.287,
+"e": 854.567,
+"id": "S12_09"
+},
+{
+"w": "dure",
+"t": 854.567,
+"e": 854.567,
+"id": "S12_09"
+},
+{
+"w": "el",
+"t": 854.567,
+"e": 855.107,
+"id": "S12_09"
+},
+{
+"w": "tanque",
+"t": 855.107,
+"e": 855.107,
+"id": "S12_09"
+},
+{
+"w": "alrededor",
+"t": 855.107,
+"e": 855.607,
+"id": "S12_09"
+},
+{
+"w": "y",
+"t": 855.6,
+"e": 856.06,
+"id": "S12_10a"
+},
+{
+"w": "hay",
+"t": 856.06,
+"e": 856.2,
+"id": "S12_10a"
+},
+{
+"w": "una",
+"t": 856.2,
+"e": 856.46,
+"id": "S12_10a"
+},
+{
+"w": "variante",
+"t": 856.46,
+"e": 856.76,
+"id": "S12_10a"
+},
+{
+"w": "de",
+"t": 856.76,
+"e": 857.32,
+"id": "S12_10a"
+},
+{
+"w": "esto",
+"t": 857.32,
+"e": 857.32,
+"id": "S12_10a"
+},
+{
+"w": "que",
+"t": 857.32,
+"e": 857.76,
+"id": "S12_10a"
+},
+{
+"w": "funciona",
+"t": 857.76,
+"e": 858.12,
+"id": "S12_10a"
+},
+{
+"w": "todavía",
+"t": 858.12,
+"e": 858.72,
+"id": "S12_10a"
+},
+{
+"w": "mejor",
+"t": 858.72,
+"e": 859.02,
+"id": "S12_10a"
+},
+{
+"w": "cuando",
+"t": 859.02,
+"e": 859.5,
+"id": "S12_10a"
+},
+{
+"w": "la",
+"t": 859.5,
+"e": 859.8,
+"id": "S12_10a"
+},
+{
+"w": "grieta",
+"t": 859.8,
+"e": 860.1,
+"id": "S12_10a"
+},
+{
+"w": "está",
+"t": 860.1,
+"e": 860.68,
+"id": "S12_10b"
+},
+{
+"w": "en",
+"t": 860.68,
+"e": 860.8,
+"id": "S12_10b"
+},
+{
+"w": "una",
+"t": 860.8,
+"e": 861.14,
+"id": "S12_10b"
+},
+{
+"w": "curva",
+"t": 861.14,
+"e": 861.38,
+"id": "S12_10b"
+},
+{
+"w": "o",
+"t": 861.38,
+"e": 861.78,
+"id": "S12_10b"
+},
+{
+"w": "en",
+"t": 861.78,
+"e": 861.82,
+"id": "S12_10b"
+},
+{
+"w": "una",
+"t": 861.82,
+"e": 862.14,
+"id": "S12_10b"
+},
+{
+"w": "esquina",
+"t": 862.14,
+"e": 862.44,
+"id": "S12_10b"
+},
+{
+"w": "donde",
+"t": 862.44,
+"e": 863.0,
+"id": "S12_10b"
+},
+{
+"w": "la",
+"t": 863.0,
+"e": 863.46,
+"id": "S12_10b"
+},
+{
+"w": "malla",
+"t": 863.46,
+"e": 863.46,
+"id": "S12_10b"
+},
+{
+"w": "no",
+"t": 863.46,
+"e": 863.84,
+"id": "S12_10b"
+},
+{
+"w": "se",
+"t": 863.84,
+"e": 864.12,
+"id": "S12_10b"
+},
+{
+"w": "acomoda",
+"t": 864.12,
+"e": 864.62,
+"id": "S12_10b"
+},
+{
+"w": "te",
+"t": 864.808,
+"e": 865.108,
+"id": "S12_11"
+},
+{
+"w": "dejé",
+"t": 865.108,
+"e": 865.208,
+"id": "S12_11"
+},
+{
+"w": "exactamente",
+"t": 865.208,
+"e": 865.948,
+"id": "S12_11"
+},
+{
+"w": "cómo",
+"t": 865.948,
+"e": 866.308,
+"id": "S12_11"
+},
+{
+"w": "hacerlo",
+"t": 866.308,
+"e": 866.668,
+"id": "S12_11"
+},
+{
+"w": "en",
+"t": 866.668,
+"e": 866.788,
+"id": "S12_11"
+},
+{
+"w": "la",
+"t": 866.788,
+"e": 867.088,
+"id": "S12_11"
+},
+{
+"w": "descripción",
+"t": 867.088,
+"e": 867.448,
+"id": "S12_11"
+},
+{
+"w": "con",
+"t": 867.448,
+"e": 867.988,
+"id": "S12_11"
+},
+{
+"w": "las",
+"t": 867.988,
+"e": 868.268,
+"id": "S12_11"
+},
+{
+"w": "medidas",
+"t": 868.268,
+"e": 868.548,
+"id": "S12_11"
+},
+{
+"w": "esto",
+"t": 868.698,
+"e": 868.818,
+"id": "S13_01"
+},
+{
+"w": "lo",
+"t": 868.818,
+"e": 869.118,
+"id": "S13_01"
+},
+{
+"w": "preparé",
+"t": 869.118,
+"e": 869.558,
+"id": "S13_01"
+},
+{
+"w": "hace",
+"t": 869.558,
+"e": 869.838,
+"id": "S13_01"
+},
+{
+"w": "tres",
+"t": 869.838,
+"e": 870.138,
+"id": "S13_01"
+},
+{
+"w": "días",
+"t": 870.138,
+"e": 870.418,
+"id": "S13_01"
+},
+{
+"w": "un",
+"t": 870.878,
+"e": 871.098,
+"id": "S13_01"
+},
+{
+"w": "pedazo",
+"t": 871.098,
+"e": 871.378,
+"id": "S13_01"
+},
+{
+"w": "del",
+"t": 871.378,
+"e": 871.638,
+"id": "S13_01"
+},
+{
+"w": "mismo",
+"t": 871.638,
+"e": 871.938,
+"id": "S13_01"
+},
+{
+"w": "tanque",
+"t": 871.938,
+"e": 872.338,
+"id": "S13_01"
+},
+{
+"w": "con",
+"t": 872.338,
+"e": 872.878,
+"id": "S13_01"
+},
+{
+"w": "silicona",
+"t": 872.878,
+"e": 873.418,
+"id": "S13_01"
+},
+{
+"w": "con",
+"t": 873.418,
+"e": 874.018,
+"id": "S13_01"
+},
+{
+"w": "epoxi",
+"t": 874.018,
+"e": 874.358,
+"id": "S13_01"
+},
+{
+"w": "y",
+"t": 874.358,
+"e": 874.698,
+"id": "S13_01"
+},
+{
+"w": "con",
+"t": 874.698,
+"e": 875.258,
+"id": "S13_01"
+},
+{
+"w": "cinta",
+"t": 875.258,
+"e": 875.258,
+"id": "S13_01"
+},
+{
+"w": "bien",
+"t": 875.738,
+"e": 875.958,
+"id": "S13_01"
+},
+{
+"w": "secos",
+"t": 875.958,
+"e": 876.378,
+"id": "S13_01"
+},
+{
+"w": "la",
+"t": 876.818,
+"e": 876.998,
+"id": "S13_02"
+},
+{
+"w": "silicona",
+"t": 876.998,
+"e": 877.438,
+"id": "S13_02"
+},
+{
+"w": "sale",
+"t": 877.438,
+"e": 877.738,
+"id": "S13_02"
+},
+{
+"w": "entera",
+"t": 877.738,
+"e": 878.118,
+"id": "S13_02"
+},
+{
+"w": "de",
+"t": 878.118,
+"e": 878.618,
+"id": "S13_02"
+},
+{
+"w": "una",
+"t": 878.618,
+"e": 878.878,
+"id": "S13_02"
+},
+{
+"w": "tira",
+"t": 878.878,
+"e": 879.118,
+"id": "S13_02"
+},
+{
+"w": "el",
+"t": 879.538,
+"e": 879.718,
+"id": "S13_03"
+},
+{
+"w": "epoxi",
+"t": 879.718,
+"e": 880.278,
+"id": "S13_03"
+},
+{
+"w": "salta",
+"t": 880.278,
+"e": 880.578,
+"id": "S13_03"
+},
+{
+"w": "de",
+"t": 880.578,
+"e": 880.758,
+"id": "S13_03"
+},
+{
+"w": "una",
+"t": 880.758,
+"e": 880.978,
+"id": "S13_03"
+},
+{
+"w": "pieza",
+"t": 880.978,
+"e": 881.278,
+"id": "S13_03"
+},
+{
+"w": "con",
+"t": 881.278,
+"e": 881.778,
+"id": "S13_03"
+},
+{
+"w": "un",
+"t": 881.778,
+"e": 881.958,
+"id": "S13_03"
+},
+{
+"w": "destornillador",
+"t": 881.958,
+"e": 882.658,
+"id": "S13_03"
+},
+{
+"w": "y",
+"t": 882.658,
+"e": 883.118,
+"id": "S13_04"
+},
+{
+"w": "la",
+"t": 883.118,
+"e": 883.698,
+"id": "S13_04"
+},
+{
+"w": "cinta",
+"t": 883.698,
+"e": 883.698,
+"id": "S13_04"
+},
+{
+"w": "ni",
+"t": 883.698,
+"e": 884.098,
+"id": "S13_04"
+},
+{
+"w": "hablar",
+"t": 884.098,
+"e": 884.418,
+"id": "S13_04"
+},
+{
+"w": "fíjate",
+"t": 884.878,
+"e": 884.958,
+"id": "S13_04"
+},
+{
+"w": "que",
+"t": 884.958,
+"e": 885.238,
+"id": "S13_04"
+},
+{
+"w": "abajo",
+"t": 885.238,
+"e": 885.498,
+"id": "S13_04"
+},
+{
+"w": "el",
+"t": 885.498,
+"e": 885.918,
+"id": "S13_04"
+},
+{
+"w": "plástico",
+"t": 885.918,
+"e": 886.358,
+"id": "S13_04"
+},
+{
+"w": "queda",
+"t": 886.358,
+"e": 886.738,
+"id": "S13_04"
+},
+{
+"w": "limpio",
+"t": 886.738,
+"e": 887.378,
+"id": "S13_04"
+},
+{
+"w": "nunca",
+"t": 887.898,
+"e": 887.938,
+"id": "S13_04"
+},
+{
+"w": "se",
+"t": 887.938,
+"e": 888.338,
+"id": "S13_04"
+},
+{
+"w": "agarraron",
+"t": 888.338,
+"e": 888.718,
+"id": "S13_04"
+},
+{
+"w": "y",
+"t": 888.718,
+"e": 889.218,
+"id": "S13_05"
+},
+{
+"w": "ahora",
+"t": 889.218,
+"e": 889.498,
+"id": "S13_05"
+},
+{
+"w": "lo",
+"t": 889.498,
+"e": 889.938,
+"id": "S13_05"
+},
+{
+"w": "que",
+"t": 889.938,
+"e": 889.998,
+"id": "S13_05"
+},
+{
+"w": "te",
+"t": 889.998,
+"e": 890.298,
+"id": "S13_05"
+},
+{
+"w": "prometí",
+"t": 890.298,
+"e": 890.718,
+"id": "S13_05"
+},
+{
+"w": "una",
+"t": 891.058,
+"e": 891.338,
+"id": "S13_05"
+},
+{
+"w": "gota",
+"t": 891.338,
+"e": 891.638,
+"id": "S13_05"
+},
+{
+"w": "de",
+"t": 891.638,
+"e": 892.078,
+"id": "S13_05"
+},
+{
+"w": "agua",
+"t": 892.078,
+"e": 892.078,
+"id": "S13_05"
+},
+{
+"w": "mira",
+"t": 892.618,
+"e": 892.718,
+"id": "S13_06"
+},
+{
+"w": "cómo",
+"t": 892.718,
+"e": 893.018,
+"id": "S13_06"
+},
+{
+"w": "queda",
+"t": 893.018,
+"e": 893.318,
+"id": "S13_06"
+},
+{
+"w": "no",
+"t": 893.798,
+"e": 893.878,
+"id": "S13_06"
+},
+{
+"w": "se",
+"t": 893.878,
+"e": 894.158,
+"id": "S13_06"
+},
+{
+"w": "desparrama",
+"t": 894.158,
+"e": 894.678,
+"id": "S13_06"
+},
+{
+"w": "queda",
+"t": 895.118,
+"e": 895.198,
+"id": "S13_06"
+},
+{
+"w": "hecha",
+"t": 895.198,
+"e": 895.558,
+"id": "S13_06"
+},
+{
+"w": "una",
+"t": 895.558,
+"e": 896.018,
+"id": "S13_06"
+},
+{
+"w": "bolita",
+"t": 896.018,
+"e": 896.578,
+"id": "S13_06"
+},
+{
+"w": "el",
+"t": 896.998,
+"e": 897.158,
+"id": "S13_07"
+},
+{
+"w": "agua",
+"t": 897.158,
+"e": 897.318,
+"id": "S13_07"
+},
+{
+"w": "ni",
+"t": 897.318,
+"e": 897.778,
+"id": "S13_07"
+},
+{
+"w": "siquiera",
+"t": 897.778,
+"e": 898.178,
+"id": "S13_07"
+},
+{
+"w": "lo",
+"t": 898.178,
+"e": 898.478,
+"id": "S13_07"
+},
+{
+"w": "moja",
+"t": 898.478,
+"e": 898.758,
+"id": "S13_07"
+},
+{
+"w": "si",
+"t": 899.098,
+"e": 899.178,
+"id": "S13_07"
+},
+{
+"w": "el",
+"t": 899.178,
+"e": 899.378,
+"id": "S13_07"
+},
+{
+"w": "agua",
+"t": 899.378,
+"e": 899.518,
+"id": "S13_07"
+},
+{
+"w": "no",
+"t": 899.518,
+"e": 899.718,
+"id": "S13_07"
+},
+{
+"w": "lo",
+"t": 899.718,
+"e": 899.918,
+"id": "S13_07"
+},
+{
+"w": "moja",
+"t": 899.918,
+"e": 900.218,
+"id": "S13_07"
+},
+{
+"w": "imagínate",
+"t": 900.218,
+"e": 900.938,
+"id": "S13_07"
+},
+{
+"w": "un",
+"t": 900.968,
+"e": 901.308,
+"id": "S13_07"
+},
+{
+"w": "pegamento",
+"t": 901.308,
+"e": 901.908,
+"id": "S13_07"
+},
+{
+"w": "en",
+"t": 902.308,
+"e": 902.488,
+"id": "S13_08"
+},
+{
+"w": "cambio",
+"t": 902.488,
+"e": 902.788,
+"id": "S13_08"
+},
+{
+"w": "esta",
+"t": 902.788,
+"e": 903.228,
+"id": "S13_08"
+},
+{
+"w": "es",
+"t": 903.228,
+"e": 903.348,
+"id": "S13_08"
+},
+{
+"w": "la",
+"t": 903.348,
+"e": 903.808,
+"id": "S13_08"
+},
+{
+"w": "pieza",
+"t": 903.808,
+"e": 903.808,
+"id": "S13_08"
+},
+{
+"w": "que",
+"t": 903.808,
+"e": 904.128,
+"id": "S13_08"
+},
+{
+"w": "solde",
+"t": 904.128,
+"e": 904.268,
+"id": "S13_08"
+},
+{
+"w": "practicando",
+"t": 904.268,
+"e": 905.208,
+"id": "S13_08"
+},
+{
+"w": "tiro",
+"t": 905.568,
+"e": 905.628,
+"id": "S13_08"
+},
+{
+"w": "con",
+"t": 905.628,
+"e": 906.088,
+"id": "S13_08"
+},
+{
+"w": "todo",
+"t": 906.088,
+"e": 906.248,
+"id": "S13_08"
+},
+{
+"w": "y",
+"t": 906.248,
+"e": 906.748,
+"id": "S13_09"
+},
+{
+"w": "se",
+"t": 906.748,
+"e": 907.268,
+"id": "S13_09"
+},
+{
+"w": "rompe",
+"t": 907.268,
+"e": 907.268,
+"id": "S13_09"
+},
+{
+"w": "el",
+"t": 907.268,
+"e": 907.888,
+"id": "S13_09"
+},
+{
+"w": "plástico",
+"t": 907.888,
+"e": 907.888,
+"id": "S13_09"
+},
+{
+"w": "al",
+"t": 907.888,
+"e": 908.248,
+"id": "S13_09"
+},
+{
+"w": "costado",
+"t": 908.248,
+"e": 908.508,
+"id": "S13_09"
+},
+{
+"w": "la",
+"t": 908.928,
+"e": 909.088,
+"id": "S13_09"
+},
+{
+"w": "costura",
+"t": 909.088,
+"e": 909.508,
+"id": "S13_09"
+},
+{
+"w": "aguanta",
+"t": 909.508,
+"e": 910.208,
+"id": "S13_09"
+},
+{
+"w": "por",
+"t": 910.588,
+"e": 910.848,
+"id": "S13_10"
+},
+{
+"w": "eso",
+"t": 910.848,
+"e": 910.968,
+"id": "S13_10"
+},
+{
+"w": "el",
+"t": 910.968,
+"e": 911.368,
+"id": "S13_10"
+},
+{
+"w": "pegamento",
+"t": 911.368,
+"e": 911.788,
+"id": "S13_10"
+},
+{
+"w": "falla",
+"t": 911.788,
+"e": 912.268,
+"id": "S13_10"
+},
+{
+"w": "y",
+"t": 912.268,
+"e": 912.628,
+"id": "S13_10"
+},
+{
+"w": "esto",
+"t": 912.628,
+"e": 912.888,
+"id": "S13_10"
+},
+{
+"w": "no",
+"t": 912.888,
+"e": 913.148,
+"id": "S13_10"
+},
+{
+"w": "esto",
+"t": 913.688,
+"e": 913.788,
+"id": "S13_10"
+},
+{
+"w": "no",
+"t": 913.788,
+"e": 914.108,
+"id": "S13_10"
+},
+{
+"w": "está",
+"t": 914.108,
+"e": 914.348,
+"id": "S13_10"
+},
+{
+"w": "pegado",
+"t": 914.348,
+"e": 914.768,
+"id": "S13_10"
+},
+{
+"w": "es",
+"t": 915.188,
+"e": 915.328,
+"id": "S13_10"
+},
+{
+"w": "el",
+"t": 915.328,
+"e": 915.688,
+"id": "S13_10"
+},
+{
+"w": "mismo",
+"t": 915.688,
+"e": 915.828,
+"id": "S13_10"
+},
+{
+"w": "plástico",
+"t": 915.828,
+"e": 916.348,
+"id": "S13_10"
+},
+{
+"w": "otra",
+"t": 916.848,
+"e": 917.088,
+"id": "S13_10"
+},
+{
+"w": "vez",
+"t": 917.088,
+"e": 917.288,
+"id": "S13_10"
+},
+{
+"w": "de",
+"t": 917.288,
+"e": 917.668,
+"id": "S13_10"
+},
+{
+"w": "una",
+"t": 917.668,
+"e": 917.848,
+"id": "S13_10"
+},
+{
+"w": "sola",
+"t": 917.848,
+"e": 918.388,
+"id": "S13_10"
+},
+{
+"w": "pieza",
+"t": 918.388,
+"e": 918.428,
+"id": "S13_10"
+},
+{
+"w": "así",
+"t": 919.008,
+"e": 919.128,
+"id": "S13_12"
+},
+{
+"w": "me",
+"t": 919.128,
+"e": 919.548,
+"id": "S13_12"
+},
+{
+"w": "gusta",
+"t": 919.548,
+"e": 919.608,
+"id": "S13_12"
+},
+{
+"w": "y",
+"t": 919.608,
+"e": 920.068,
+"id": "S13_12"
+},
+{
+"w": "tú",
+"t": 920.068,
+"e": 920.428,
+"id": "S13_12"
+},
+{
+"w": "si",
+"t": 920.428,
+"e": 920.808,
+"id": "S13_12"
+},
+{
+"w": "tienes",
+"t": 920.808,
+"e": 921.068,
+"id": "S13_12"
+},
+{
+"w": "el",
+"t": 921.068,
+"e": 921.428,
+"id": "S13_12"
+},
+{
+"w": "tanque",
+"t": 921.428,
+"e": 921.568,
+"id": "S13_12"
+},
+{
+"w": "rajado",
+"t": 921.568,
+"e": 922.068,
+"id": "S13_12"
+},
+{
+"w": "ya",
+"t": 922.068,
+"e": 922.528,
+"id": "S13_12"
+},
+{
+"w": "sabes",
+"t": 922.528,
+"e": 922.808,
+"id": "S13_12"
+},
+{
+"w": "mismo",
+"t": 923.268,
+"e": 923.508,
+"id": "S13_12"
+},
+{
+"w": "plástico",
+"t": 923.508,
+"e": 924.028,
+"id": "S13_12"
+},
+{
+"w": "agujeritos",
+"t": 924.628,
+"e": 925.188,
+"id": "S13_12"
+},
+{
+"w": "malla",
+"t": 925.708,
+"e": 925.708,
+"id": "S13_12"
+},
+{
+"w": "y",
+"t": 925.708,
+"e": 926.248,
+"id": "S13_12"
+},
+{
+"w": "paciencia",
+"t": 926.248,
+"e": 926.828,
+"id": "S13_12"
+},
+{
+"w": "la",
+"t": 927.568,
+"e": 927.648,
+"id": "S13_13a"
+},
+{
+"w": "hoja",
+"t": 927.648,
+"e": 927.808,
+"id": "S13_13a"
+},
+{
+"w": "y",
+"t": 927.808,
+"e": 928.148,
+"id": "S13_13a"
+},
+{
+"w": "la",
+"t": 928.148,
+"e": 928.448,
+"id": "S13_13a"
+},
+{
+"w": "guía",
+"t": 928.448,
+"e": 928.528,
+"id": "S13_13a"
+},
+{
+"w": "con",
+"t": 928.528,
+"e": 928.848,
+"id": "S13_13a"
+},
+{
+"w": "los",
+"t": 928.848,
+"e": 929.148,
+"id": "S13_13a"
+},
+{
+"w": "arreglos",
+"t": 929.148,
+"e": 929.448,
+"id": "S13_13a"
+},
+{
+"w": "del",
+"t": 929.448,
+"e": 929.728,
+"id": "S13_13a"
+},
+{
+"w": "agua",
+"t": 929.728,
+"e": 929.868,
+"id": "S13_13a"
+},
+{
+"w": "de",
+"t": 929.868,
+"e": 930.028,
+"id": "S13_13a"
+},
+{
+"w": "la",
+"t": 930.028,
+"e": 930.208,
+"id": "S13_13a"
+},
+{
+"w": "casa",
+"t": 930.208,
+"e": 930.448,
+"id": "S13_13a"
+},
+{
+"w": "en",
+"t": 930.448,
+"e": 930.948,
+"id": "S13_13a"
+},
+{
+"w": "el",
+"t": 930.948,
+"e": 931.228,
+"id": "S13_13a"
+},
+{
+"w": "enlace",
+"t": 931.228,
+"e": 931.428,
+"id": "S13_13a"
+},
+{
+"w": "de",
+"t": 931.428,
+"e": 931.728,
+"id": "S13_13a"
+},
+{
+"w": "abajo",
+"t": 931.728,
+"e": 931.928,
+"id": "S13_13a"
+},
+{
+"w": "cuéntame",
+"t": 932.568,
+"e": 932.748,
+"id": "S13_13b"
+},
+{
+"w": "en",
+"t": 932.748,
+"e": 932.928,
+"id": "S13_13b"
+},
+{
+"w": "los",
+"t": 932.928,
+"e": 933.128,
+"id": "S13_13b"
+},
+{
+"w": "comentarios",
+"t": 933.128,
+"e": 933.548,
+"id": "S13_13b"
+},
+{
+"w": "de",
+"t": 933.548,
+"e": 934.228,
+"id": "S13_13b"
+},
+{
+"w": "qué",
+"t": 934.228,
+"e": 934.348,
+"id": "S13_13b"
+},
+{
+"w": "es",
+"t": 934.348,
+"e": 934.548,
+"id": "S13_13b"
+},
+{
+"w": "tu",
+"t": 934.548,
+"e": 934.728,
+"id": "S13_13b"
+},
+{
+"w": "tanque",
+"t": 934.728,
+"e": 935.068,
+"id": "S13_13b"
+},
+{
+"w": "y",
+"t": 935.068,
+"e": 935.508,
+"id": "S13_13b"
+},
+{
+"w": "dónde",
+"t": 935.508,
+"e": 935.728,
+"id": "S13_13b"
+},
+{
+"w": "se",
+"t": 935.728,
+"e": 936.048,
+"id": "S13_13b"
+},
+{
+"w": "rajó",
+"t": 936.048,
+"e": 936.248,
+"id": "S13_13b"
+}
+]
+}
