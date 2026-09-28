@@ -1,0 +1,157 @@
+// cues_rkcard.gen.tsx — GENERADO por scripts/rksafe_build.mjs. NO editar a mano.
+import React from "react";
+import { BigStat } from "../rksafe/BigStat";
+import { BoltMorph } from "../rksafe/BoltMorph";
+import { CheckCard } from "../rksafe/CheckCard";
+import { DoorEdgeCount } from "../rksafe/DoorEdgeCount";
+import { FixLadder } from "../rksafe/FixLadder";
+import { GapScanTest } from "../rksafe/GapScanTest";
+import { HingeScrewPull } from "../rksafe/HingeScrewPull";
+import { LatchCutaway } from "../rksafe/LatchCutaway";
+import { LatchGuardInstall } from "../rksafe/LatchGuardInstall";
+import { MythTruth } from "../rksafe/MythTruth";
+import { ProcessChips } from "../rksafe/ProcessChips";
+import { PullQuote } from "../rksafe/PullQuote";
+import { RayChecklist } from "../rksafe/RayChecklist";
+import { RayCta } from "../rksafe/RayCta";
+import { RouteFlow } from "../rksafe/RouteFlow";
+import { ScrewHero } from "../rksafe/ScrewHero";
+import { SplitVs } from "../rksafe/SplitVs";
+import { WorstSpots } from "../rksafe/WorstSpots";
+import { Clip, Foto } from "../rksafe/RayStage";
+import { RayAvatarWin } from "../rksafe/RayAvatarWin";
+
+export type Cue = { key: string; start: number; dur: number; tr?: string; tail?: number; el: (d: number) => React.ReactNode };
+
+export const CUES: Cue[] = [
+  { key: "avatar_0", start: 0, dur: 7.5, tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w000.mp4" seed={0} durF={d} /> },
+  { key: "componente_7500", start: 7.5, dur: 5.6, tr: "iris", el: (d) => <BigStat durationInFrames={d} {...({"value":"1 card","unit":"is all it takes","tone":"danger","caption":"On a lot of front doors.","bed":"img/rkcard_s1_01_blur.jpg"} as any)} /> },
+  { key: "imagen_13100", start: 13.1, dur: 3.066666666666667, tail: 9, el: (d) => <Foto src="img/rkcard_s1_01.jpg" seed={393} durF={d} /> },
+  { key: "componente_16167", start: 16.166666666666668, dur: 5.9, tr: "slide", tail: 9, el: (d) => <MythTruth durationInFrames={d} {...({"kicker":"THIS VIDEO","myth":"How it is done","truth":"Why it works, and how to stop it","bed":"img/rkcard_s1_01_blur.jpg"} as any)} /> },
+  { key: "imagen_22067", start: 22.066666666666666, dur: 4.033333333333333, tr: "zoom", tail: 9, el: (d) => <Foto src="img/rkcard_s1_02.jpg" seed={662} durF={d} /> },
+  { key: "clip_26100", start: 26.1, dur: 8.033333333333333, tr: "wipe", tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r76.mp4" rate={1} /> },
+  { key: "clip_34133", start: 34.13333333333333, dur: 8.066666666666666, tr: "zoom", tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r03.mp4" rate={1} /> },
+  { key: "clip_42200", start: 42.2, dur: 8.1, tr: "wipe", el: (d) => <Clip src="broll/rkcard_real/rkcard_r06.mp4" rate={1} /> },
+  { key: "clip_50300", start: 50.3, dur: 4.266666666666667, el: (d) => <Clip src="broll/rkcard_real/rkcard_r05.mp4" rate={1} /> },
+  { key: "avatar_54567", start: 54.56666666666667, dur: 4.433333333333334, el: (d) => <RayAvatarWin src="broll/rkcard/av_w001.mp4" seed={1637} durF={d} bed="img/rkcard_s1_02_blur.jpg" /> },
+  { key: "clip_59000", start: 59, dur: 6.766666666666667, el: (d) => <Clip src="broll/rkcard_real/rkcard_r55.mp4" rate={1} /> },
+  { key: "componente_65767", start: 65.76666666666667, dur: 6.5, tail: 9, el: (d) => <DoorEdgeCount durationInFrames={d} {...({"mode":"anatomy","bed":"img/rkcard_s2_01_blur.jpg"} as any)} /> },
+  { key: "avatar_72267", start: 72.26666666666667, dur: 9.1, tr: "wipe", el: (d) => <RayAvatarWin src="broll/rkcard/av_w002.mp4" seed={2168} durF={d} bed="img/rkcard_s1_02_blur.jpg" /> },
+  { key: "componente_81367", start: 81.36666666666666, dur: 7.5, tail: 9, el: (d) => <LatchCutaway durationInFrames={d} {...({"mode":"close","bed":"img/rkcard_s2_01_blur.jpg"} as any)} /> },
+  { key: "avatar_88867", start: 88.86666666666666, dur: 10, tr: "wipe", el: (d) => <RayAvatarWin src="broll/rkcard/av_w003.mp4" seed={2666} durF={d} bed="img/rkcard_s1_02_blur.jpg" /> },
+  { key: "componente_98867", start: 98.86666666666666, dur: 6.6, el: (d) => <PullQuote durationInFrames={d} {...({"quote":"Built to keep a door closed. Never to keep it locked.","attrib":"— Ray Kessler","bed":"img/rkcard_s2_01_blur.jpg"} as any)} /> },
+  { key: "componente_105467", start: 105.46666666666667, dur: 7.5, el: (d) => <LatchCutaway durationInFrames={d} {...({"mode":"spring","bed":"img/rkcard_s3_01_blur.jpg"} as any)} /> },
+  { key: "clip_112967", start: 112.96666666666667, dur: 7.7, el: (d) => <Clip src="broll/rkcard_real/rkcard_r12.mp4" rate={1} /> },
+  { key: "clip_120667", start: 120.66666666666667, dur: 6.9, tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r52.mp4" rate={1} /> },
+  { key: "clip_127567", start: 127.56666666666666, dur: 5.866666666666666, tr: "zoom", el: (d) => <Clip src="broll/rkcard_real/rkcard_r09.mp4" rate={1} /> },
+  { key: "componente_133433", start: 133.43333333333334, dur: 6.133333333333334, tail: 9, el: (d) => <SplitVs durationInFrames={d} {...({"leftLabel":"Lock the knob","leftValue":"Knob stops","rightLabel":"The latch","rightValue":"Still moves","verdict":"A knob lock stops a hand.","bed":"img/rkcard_s3_01_blur.jpg"} as any)} /> },
+  { key: "clip_139567", start: 139.56666666666666, dur: 7.233333333333333, tr: "iris", el: (d) => <Clip src="broll/rkcard_real/rkcard_r26.mp4" rate={1} /> },
+  { key: "imagen_146800", start: 146.8, dur: 6.366666666666666, el: (d) => <Foto src="img/rkcard_s1_03.jpg" seed={4404} durF={d} /> },
+  { key: "avatar_153167", start: 153.16666666666666, dur: 2.9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w004.mp4" seed={4595} durF={d} bed="img/rkcard_s1_03_blur.jpg" /> },
+  { key: "clip_156067", start: 156.06666666666666, dur: 7.5, el: (d) => <Clip src="broll/rkcard_real/rkcard_r27.mp4" rate={1} /> },
+  { key: "clip_163567", start: 163.56666666666666, dur: 7.3, el: (d) => <Clip src="broll/rkcard_real/rkcard_r10.mp4" rate={1} /> },
+  { key: "componente_170867", start: 170.86666666666667, dur: 5.6, tail: 9, el: (d) => <MythTruth durationInFrames={d} {...({"kicker":"LIKE THE WATER BOTTLE","myth":"The trick is the problem","truth":"It finds the problem","bed":"img/rkcard_s4_01_blur.jpg"} as any)} /> },
+  { key: "clip_176467", start: 176.46666666666667, dur: 6.8, tr: "iris", el: (d) => <Clip src="broll/rkcard_real/rkcard_r13.mp4" rate={1} /> },
+  { key: "avatar_183267", start: 183.26666666666668, dur: 5.066666666666666, el: (d) => <RayAvatarWin src="broll/rkcard/av_w005.mp4" seed={5498} durF={d} bed="img/rkcard_s1_03_blur.jpg" /> },
+  { key: "componente_188333", start: 188.33333333333334, dur: 6.7, el: (d) => <CheckCard durationInFrames={d} {...({"kicker":"NOBODY HEARS IT","title":"No sign of forced entry","items":[{"text":"No broken glass"},{"text":"No splintered frame"},{"text":"Often no mark"}],"bed":"img/rkcard_s4_01_blur.jpg"} as any)} /> },
+  { key: "avatar_195033", start: 195.03333333333333, dur: 9.4, tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w006.mp4" seed={5851} durF={d} bed="img/rkcard_s1_03_blur.jpg" /> },
+  { key: "componente_204433", start: 204.43333333333334, dur: 5.333333333333333, tr: "zoom", el: (d) => <MythTruth durationInFrames={d} {...({"kicker":"REMEMBER THIS","myth":"Latched means locked","truth":"Latched is not locked","bed":"img/rkcard_s4_01_blur.jpg"} as any)} /> },
+  { key: "componente_209767", start: 209.76666666666668, dur: 7, tail: 9, el: (d) => <ProcessChips durationInFrames={d} {...({"kicker":"THE TEN SECOND TEST","title":"Door closed, stand inside","steps":[{"title":"Look at the edge"},{"title":"Count the metal"},{"title":"Find the plunger"}],"bed":"img/rkcard_s5_01_blur.jpg"} as any)} /> },
+  { key: "avatar_216767", start: 216.76666666666668, dur: 3.7666666666666666, tr: "wipe", el: (d) => <RayAvatarWin src="broll/rkcard/av_w007.mp4" seed={6503} durF={d} bed="img/rkcard_s1_03_blur.jpg" /> },
+  { key: "componente_220533", start: 220.53333333333333, dur: 6.5, el: (d) => <DoorEdgeCount durationInFrames={d} {...({"mode":"count","bed":"img/rkcard_s5_01_blur.jpg"} as any)} /> },
+  { key: "avatar_227033", start: 227.03333333333333, dur: 9.166666666666666, tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w008.mp4" seed={6811} durF={d} bed="img/rkcard_s1_03_blur.jpg" /> },
+  { key: "componente_236200", start: 236.2, dur: 6.5, tr: "iris", tail: 9, el: (d) => <DoorEdgeCount durationInFrames={d} {...({"mode":"plunger","bed":"img/rkcard_s5_01_blur.jpg"} as any)} /> },
+  { key: "imagen_242700", start: 242.7, dur: 8.066666666666666, tr: "iris", el: (d) => <Foto src="img/rkcard_s5_05.jpg" seed={7281} durF={d} /> },
+  { key: "imagen_250767", start: 250.76666666666668, dur: 1.4666666666666666, el: (d) => <Foto src="img/rkcard_s5_04.jpg" seed={7523} durF={d} /> },
+  { key: "componente_252233", start: 252.23333333333332, dur: 7.5, el: (d) => <LatchCutaway durationInFrames={d} {...({"mode":"deadlatch","bed":"img/rkcard_s5_01_blur.jpg"} as any)} /> },
+  { key: "avatar_259733", start: 259.73333333333335, dur: 5, el: (d) => <RayAvatarWin src="broll/rkcard/av_w009.mp4" seed={7792} durF={d} bed="img/rkcard_s5_04_blur.jpg" /> },
+  { key: "clip_264733", start: 264.73333333333335, dur: 6.833333333333333, tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r54.mp4" rate={1} /> },
+  { key: "componente_271567", start: 271.56666666666666, dur: 7.833333333333333, tr: "wipe", tail: 9, el: (d) => <CheckCard durationInFrames={d} {...({"kicker":"IT ONLY WORKS IF","title":"The plunger stays pressed","items":[{"text":"The door closes tight"},{"text":"It lands on the plate"},{"text":"Not in the hole"}],"bed":"img/rkcard_s6_01_blur.jpg"} as any)} /> },
+  { key: "clip_279400", start: 279.4, dur: 5.366666666666666, tr: "iris", el: (d) => <Clip src="broll/rkcard_real/rkcard_r81.mp4" rate={1} /> },
+  { key: "componente_284767", start: 284.76666666666665, dur: 7.866666666666666, el: (d) => <RouteFlow durationInFrames={d} {...({"kicker":"OVER THE YEARS","title":"How a door drifts","steps":[{"label":"The house settles"},{"label":"Hinge screws loosen"},{"label":"The door sags"},{"label":"An eighth of an inch"}],"bed":"img/rkcard_s6_01_blur.jpg"} as any)} /> },
+  { key: "clip_292633", start: 292.6333333333333, dur: 6.633333333333334, tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r19.mp4" rate={1} /> },
+  { key: "clip_299267", start: 299.26666666666665, dur: 2.7, tr: "slide", el: (d) => <Clip src="broll/rkcard_real/rkcard_r20.mp4" rate={1} /> },
+  { key: "componente_301967", start: 301.96666666666664, dur: 7.5, el: (d) => <LatchCutaway durationInFrames={d} {...({"mode":"slack","bed":"img/rkcard_s6_01_blur.jpg"} as any)} /> },
+  { key: "clip_309467", start: 309.46666666666664, dur: 7.1, el: (d) => <Clip src="broll/rkcard_real/rkcard_r80.mp4" rate={1} /> },
+  { key: "clip_316567", start: 316.56666666666666, dur: 4.733333333333333, el: (d) => <Clip src="broll/rkcard_real/rkcard_r37.mp4" rate={1} /> },
+  { key: "componente_321300", start: 321.3, dur: 7.5, el: (d) => <GapScanTest durationInFrames={d} {...({"mode":"loose","bed":"img/rkcard_s7_01_blur.jpg"} as any)} /> },
+  { key: "avatar_328800", start: 328.8, dur: 3.2, el: (d) => <RayAvatarWin src="broll/rkcard/av_w010.mp4" seed={9864} durF={d} bed="img/rkcard_s5_04_blur.jpg" /> },
+  { key: "clip_332000", start: 332, dur: 6.6, el: (d) => <Clip src="broll/rkcard_real/rkcard_r23.mp4" rate={1} /> },
+  { key: "componente_338600", start: 338.6, dur: 6.5, el: (d) => <GapScanTest durationInFrames={d} {...({"mode":"tight","bed":"img/rkcard_s7_01_blur.jpg"} as any)} /> },
+  { key: "clip_345100", start: 345.1, dur: 7.566666666666666, el: (d) => <Clip src="broll/rkcard_real/rkcard_r42.mp4" rate={1} /> },
+  { key: "clip_352667", start: 352.6666666666667, dur: 3.466666666666667, tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r24.mp4" rate={1} /> },
+  { key: "componente_356133", start: 356.1333333333333, dur: 8, tr: "slide", tail: 9, el: (d) => <FixLadder durationInFrames={d} {...({"highlight":2,"bed":"img/rkcard_s7_01_blur.jpg"} as any)} /> },
+  { key: "avatar_364133", start: 364.1333333333333, dur: 7.033333333333333, tr: "wipe", tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w011.mp4" seed={10924} durF={d} bed="img/rkcard_s5_04_blur.jpg" /> },
+  { key: "clip_371167", start: 371.1666666666667, dur: 6.8, tr: "wipe", el: (d) => <Clip src="broll/rkcard_real/rkcard_r46.mp4" rate={1} /> },
+  { key: "avatar_377967", start: 377.96666666666664, dur: 8.5, tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w012.mp4" seed={11339} durF={d} bed="img/rkcard_s5_04_blur.jpg" /> },
+  { key: "componente_386467", start: 386.46666666666664, dur: 5.866666666666666, tr: "slide", el: (d) => <MythTruth durationInFrames={d} {...({"kicker":"FIX 1 · COSTS NOTHING","myth":"The click means locked","truth":"The click is the latch","bed":"img/rkcard_s8_01_blur.jpg"} as any)} /> },
+  { key: "avatar_392333", start: 392.3333333333333, dur: 5.4, tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w013.mp4" seed={11770} durF={d} bed="img/rkcard_s5_04_blur.jpg" /> },
+  { key: "imagen_397733", start: 397.73333333333335, dur: 7.033333333333333, tr: "wipe", tail: 9, el: (d) => <Foto src="img/rkcard_s8_02.jpg" seed={11932} durF={d} /> },
+  { key: "componente_404767", start: 404.76666666666665, dur: 7.5, tr: "wipe", tail: 9, el: (d) => <BoltMorph durationInFrames={d} {...({"mode":"morph","bed":"img/rkcard_s8_01_blur.jpg"} as any)} /> },
+  { key: "avatar_412267", start: 412.26666666666665, dur: 7.666666666666667, tr: "iris", el: (d) => <RayAvatarWin src="broll/rkcard/av_w014.mp4" seed={12368} durF={d} bed="img/rkcard_s8_02_blur.jpg" /> },
+  { key: "componente_419933", start: 419.93333333333334, dur: 6.133333333333334, tail: 9, el: (d) => <RayChecklist durationInFrames={d} {...({"kicker":"FIX 1","title":"Throw the deadbolt","items":[{"text":"Every time you leave"},{"text":"Every night"},{"text":"Like checking the stove"}],"bed":"img/rkcard_s8_01_blur.jpg"} as any)} /> },
+  { key: "clip_426067", start: 426.06666666666666, dur: 7.666666666666667, tr: "iris", el: (d) => <Clip src="broll/rkcard_real/rkcard_r65.mp4" rate={1} /> },
+  { key: "clip_433733", start: 433.73333333333335, dur: 1.3, el: (d) => <Clip src="broll/rkcard_real/rkcard_r64.mp4" rate={1} /> },
+  { key: "avatar_435033", start: 435.03333333333336, dur: 3.2, el: (d) => <RayAvatarWin src="broll/rkcard/av_w015.mp4" seed={13051} durF={d} bed="img/rkcard_s8_02_blur.jpg" /> },
+  { key: "clip_438233", start: 438.23333333333335, dur: 1.7, tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r72.mp4" rate={1} /> },
+  { key: "componente_439933", start: 439.93333333333334, dur: 8, tr: "zoom", el: (d) => <HingeScrewPull durationInFrames={d} {...({"bed":"img/rkcard_s9_01_blur.jpg"} as any)} /> },
+  { key: "clip_447933", start: 447.93333333333334, dur: 6.233333333333333, tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r30.mp4" rate={1} /> },
+  { key: "componente_454167", start: 454.1666666666667, dur: 6, tr: "slide", tail: 9, el: (d) => <ScrewHero durationInFrames={d} {...({"kicker":"FIX 2 · ABOUT $3","title":"$3","sub":"One three-inch screw in the top hinge.","pieces":[{"kind":"stubby","x":22,"scale":0.86,"rot":-12},{"kind":"wood","x":50,"scale":1.08,"rot":-4,"hero":true},{"kind":"nail","x":78,"scale":0.84,"rot":16}],"bed":"img/rkcard_s9_01_blur.jpg"} as any)} /> },
+  { key: "clip_460167", start: 460.1666666666667, dur: 8.066666666666666, tr: "slide", el: (d) => <Clip src="broll/rkcard_real/rkcard_r31.mp4" rate={1} /> },
+  { key: "avatar_468233", start: 468.23333333333335, dur: 8.6, el: (d) => <RayAvatarWin src="broll/rkcard/av_w016.mp4" seed={14047} durF={d} bed="img/rkcard_s8_02_blur.jpg" /> },
+  { key: "componente_476833", start: 476.8333333333333, dur: 5.3, el: (d) => <SplitVs durationInFrames={d} {...({"leftLabel":"A sagging door","leftValue":"Misses","rightLabel":"After one screw","rightValue":"Lands","verdict":"The deadlatch works again.","bed":"img/rkcard_s9_01_blur.jpg"} as any)} /> },
+  { key: "avatar_482133", start: 482.1333333333333, dur: 6.466666666666667, tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w017.mp4" seed={14464} durF={d} bed="img/rkcard_s8_02_blur.jpg" /> },
+  { key: "componente_488600", start: 488.6, dur: 7, tr: "wipe", tail: 9, el: (d) => <ProcessChips durationInFrames={d} {...({"kicker":"FIX 3 · THE STRIKE","title":"Line up the plate","steps":[{"title":"A little up"},{"title":"A little down"},{"title":"Toward the stop"}],"bed":"img/rkcard_s10_01_blur.jpg"} as any)} /> },
+  { key: "avatar_495600", start: 495.6, dur: 3.2, tr: "wipe", el: (d) => <RayAvatarWin src="broll/rkcard/av_w018.mp4" seed={14868} durF={d} bed="img/rkcard_s8_02_blur.jpg" /> },
+  { key: "clip_498800", start: 498.8, dur: 6.8, el: (d) => <Clip src="broll/rkcard_real/rkcard_r41.mp4" rate={1} /> },
+  { key: "avatar_505600", start: 505.6, dur: 5.4, tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w019.mp4" seed={15168} durF={d} bed="img/rkcard_s8_02_blur.jpg" /> },
+  { key: "clip_511000", start: 511, dur: 8.066666666666666, tr: "wipe", tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r66.mp4" rate={1} /> },
+  { key: "avatar_519067", start: 519.0666666666667, dur: 2.7, tr: "wipe", tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w020.mp4" seed={15572} durF={d} bed="img/rkcard_s8_02_blur.jpg" /> },
+  { key: "componente_521767", start: 521.7666666666667, dur: 4.2, tr: "zoom", tail: 9, el: (d) => <BigStat durationInFrames={d} {...({"value":"$20–40","unit":"entry knob","tone":"brass","caption":"Same holes. A screwdriver.","bed":"img/rkcard_s11_02_blur.jpg"} as any)} /> },
+  { key: "clip_525967", start: 525.9666666666667, dur: 6.8, tr: "iris", tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r68.mp4" rate={1} /> },
+  { key: "avatar_532767", start: 532.7666666666667, dur: 11.533333333333333, tr: "wipe", tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w021.mp4" seed={15983} durF={d} bed="img/rkcard_s8_02_blur.jpg" /> },
+  { key: "componente_544300", start: 544.3, dur: 7.833333333333333, tr: "zoom", el: (d) => <RayChecklist durationInFrames={d} {...({"kicker":"AT THE STORE","title":"Turn the box over","items":[{"text":"A second little plunger"},{"text":"Grade 1 or grade 2"},{"text":"No plunger? Put it back"}],"bed":"img/rkcard_s11_02_blur.jpg"} as any)} /> },
+  { key: "avatar_552133", start: 552.1333333333333, dur: 10.933333333333334, el: (d) => <RayAvatarWin src="broll/rkcard/av_w022.mp4" seed={16564} durF={d} bed="img/rkcard_s8_02_blur.jpg" /> },
+  { key: "componente_563067", start: 563.0666666666667, dur: 8, el: (d) => <LatchGuardInstall durationInFrames={d} {...({"bed":"img/rkcard_s12_01_blur.jpg"} as any)} /> },
+  { key: "clip_571067", start: 571.0666666666667, dur: 6.366666666666666, tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r40.mp4" rate={1} /> },
+  { key: "componente_577433", start: 577.4333333333333, dur: 6.733333333333333, tr: "wipe", el: (d) => <CheckCard durationInFrames={d} {...({"kicker":"LATCH GUARDS","title":"Before you buy one","items":[{"text":"Around $15 to $30"},{"text":"Best on outswing doors"},{"text":"Renting? Ask first"}],"bed":"img/rkcard_s12_01_blur.jpg"} as any)} /> },
+  { key: "avatar_584167", start: 584.1666666666666, dur: 9.6, tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w023.mp4" seed={17525} durF={d} bed="img/rkcard_s8_02_blur.jpg" /> },
+  { key: "imagen_593767", start: 593.7666666666667, dur: 1.6666666666666667, tr: "iris", el: (d) => <Foto src="img/rkcard_s12_04.jpg" seed={17813} durF={d} /> },
+  { key: "imagen_595433", start: 595.4333333333333, dur: 4.033333333333333, tail: 9, el: (d) => <Foto src="img/rkcard_s12_03.jpg" seed={17863} durF={d} /> },
+  { key: "imagen_599467", start: 599.4666666666667, dur: 1.8, tr: "wipe", tail: 9, el: (d) => <Foto src="img/rkcard_s12_05.jpg" seed={17984} durF={d} /> },
+  { key: "clip_601267", start: 601.2666666666667, dur: 6.2, tr: "slide", el: (d) => <Clip src="broll/rkcard_real/rkcard_r43.mp4" rate={1} /> },
+  { key: "imagen_607467", start: 607.4666666666667, dur: 1.5, tail: 9, el: (d) => <Foto src="img/rkcard_s13_02.jpg" seed={18224} durF={d} /> },
+  { key: "componente_608967", start: 608.9666666666667, dur: 7.5, tr: "wipe", tail: 9, el: (d) => <BoltMorph durationInFrames={d} {...({"mode":"throw","bed":"img/rkcard_s13_01_blur.jpg"} as any)} /> },
+  { key: "clip_616467", start: 616.4666666666667, dur: 7, tr: "slide", el: (d) => <Clip src="broll/rkcard_real/rkcard_r63.mp4" rate={1} /> },
+  { key: "avatar_623467", start: 623.4666666666667, dur: 7.7, tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w024.mp4" seed={18704} durF={d} bed="img/rkcard_s13_02_blur.jpg" /> },
+  { key: "componente_631167", start: 631.1666666666666, dur: 5.9, tr: "zoom", tail: 9, el: (d) => <SplitVs durationInFrames={d} {...({"leftLabel":"Box screws","leftValue":"3/4 in","rightLabel":"Into the framing","rightValue":"3 in","verdict":"Next he tries his shoulder.","bed":"img/rkcard_s13_01_blur.jpg"} as any)} /> },
+  { key: "avatar_637067", start: 637.0666666666667, dur: 8.666666666666666, tr: "wipe", el: (d) => <RayAvatarWin src="broll/rkcard/av_w025.mp4" seed={19112} durF={d} bed="img/rkcard_s13_02_blur.jpg" /> },
+  { key: "componente_645733", start: 645.7333333333333, dur: 6.433333333333334, el: (d) => <SplitVs durationInFrames={d} {...({"leftLabel":"Brand name bar","leftValue":"$125","rightLabel":"Generic bar","rightValue":"$25","verdict":"It is a bar. It pushes on the floor.","bed":"img/rkcard_s13_01_blur.jpg"} as any)} /> },
+  { key: "avatar_652167", start: 652.1666666666666, dur: 10.066666666666666, el: (d) => <RayAvatarWin src="broll/rkcard/av_w026.mp4" seed={19565} durF={d} bed="img/rkcard_s13_02_blur.jpg" /> },
+  { key: "componente_662233", start: 662.2333333333333, dur: 9, el: (d) => <FixLadder durationInFrames={d} {...({"highlight":6,"bed":"img/rkcard_s14_01_blur.jpg"} as any)} /> },
+  { key: "clip_671233", start: 671.2333333333333, dur: 5.4, tail: 9, el: (d) => <Clip src="broll/rkcard_real/rkcard_r70.mp4" rate={1} /> },
+  { key: "imagen_676633", start: 676.6333333333333, dur: 1.4, tr: "iris", tail: 9, el: (d) => <Foto src="img/rkcard_s14_02.jpg" seed={20299} durF={d} /> },
+  { key: "avatar_678033", start: 678.0333333333333, dur: 9.1, tr: "wipe", el: (d) => <RayAvatarWin src="broll/rkcard/av_w027.mp4" seed={20341} durF={d} bed="img/rkcard_s14_02_blur.jpg" /> },
+  { key: "imagen_687133", start: 687.1333333333333, dur: 6.2, el: (d) => <Foto src="img/rkcard_s14_03.jpg" seed={20614} durF={d} /> },
+  { key: "imagen_693333", start: 693.3333333333334, dur: 1.4, el: (d) => <Foto src="img/rkcard_s14_04.jpg" seed={20800} durF={d} /> },
+  { key: "avatar_694733", start: 694.7333333333333, dur: 2.1666666666666665, tail: 9, el: (d) => <RayAvatarWin src="broll/rkcard/av_w028.mp4" seed={20842} durF={d} bed="img/rkcard_s14_04_blur.jpg" /> },
+  { key: "componente_696900", start: 696.9, dur: 7.566666666666666, tr: "slide", tail: 9, el: (d) => <WorstSpots durationInFrames={d} {...({"kicker":"NOT JUST THE FRONT","title":"The doors that worry me","spots":[{"label":"Garage into the house"},{"label":"Back door off the kitchen"},{"label":"Side doors"}],"bed":"img/rkcard_s14_01_blur.jpg"} as any)} /> },
+  { key: "avatar_704467", start: 704.4666666666667, dur: 10, tr: "wipe", el: (d) => <RayAvatarWin src="broll/rkcard/av_w029.mp4" seed={21134} durF={d} bed="img/rkcard_s14_04_blur.jpg" /> },
+  { key: "imagen_714467", start: 714.4666666666667, dur: 8.066666666666666, el: (d) => <Foto src="img/rkcard_s14_08.jpg" seed={21434} durF={d} /> },
+  { key: "imagen_722533", start: 722.5333333333333, dur: 5, el: (d) => <Foto src="img/rkcard_s14_05.jpg" seed={21676} durF={d} /> },
+  { key: "imagen_727533", start: 727.5333333333333, dur: 3.1, tail: 9, el: (d) => <Foto src="img/rkcard_s5_06.jpg" seed={21826} durF={d} /> },
+  { key: "imagen_730633", start: 730.6333333333333, dur: 4.033333333333333, tr: "wipe", tail: 9, el: (d) => <Foto src="img/rkcard_s14_06.jpg" seed={21919} durF={d} /> },
+  { key: "imagen_734667", start: 734.6666666666666, dur: 2.3, tr: "iris", tail: 9, el: (d) => <Foto src="img/rkcard_s14_02.jpg" seed={22040} durF={d} /> },
+  { key: "avatar_736967", start: 736.9666666666667, dur: 4.033333333333333, tr: "wipe", el: (d) => <RayAvatarWin src="broll/rkcard/av_w030.mp4" seed={22109} durF={d} bed="img/rkcard_s14_02_blur.jpg" /> },
+  { key: "imagen_741000", start: 741, dur: 5.8, el: (d) => <Foto src="img/rkcard_s15_02.jpg" seed={22230} durF={d} /> },
+  { key: "imagen_746800", start: 746.8, dur: 3.3, el: (d) => <Foto src="img/rkcard_s15_03.jpg" seed={22404} durF={d} /> },
+  { key: "imagen_750100", start: 750.1, dur: 7.6, tail: 9, el: (d) => <Foto src="img/rkcard_s15_05.jpg" seed={22503} durF={d} /> },
+  { key: "imagen_757700", start: 757.7, dur: 4.033333333333333, tr: "slide", el: (d) => <Foto src="img/rkcard_s15_04.jpg" seed={22731} durF={d} /> },
+  { key: "imagen_761733", start: 761.7333333333333, dur: 6.2, el: (d) => <Foto src="img/rkcard_s1_03.jpg" seed={22852} durF={d} /> },
+  { key: "avatar_767933", start: 767.9333333333333, dur: 17, el: (d) => <RayAvatarWin src="broll/rkcard/av_w031.mp4" seed={23038} durF={d} bed="img/rkcard_s1_03_blur.jpg" /> },
+  { key: "imagen_784933", start: 784.9333333333333, dur: 17.333333333333332, el: (d) => <Foto src="img/rkcard_s15_01.jpg" seed={23548} durF={d} /> },
+];
+
+export const OVERLAYS: Cue[] = [
+  { key: "componente_768255", start: 768.255, dur: 34, el: (d) => <RayCta durationInFrames={d} {...({"eyebrow":"THE WHOLE DOOR, IN ORDER","title":"The Thousand Dollar Afternoon","sub":"Three guides, $27. The One Afternoon Door, the phone call, 37 free fixes.","domain":"raykessler.vercel.app","qr":"img/rkcard_qr.png","showQr":true} as any)} /> },
+];

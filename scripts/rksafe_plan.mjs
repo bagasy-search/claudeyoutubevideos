@@ -16,7 +16,7 @@
 // TIEMPO DE LECTURA de los componentes: piso 2,8 s + 0,28 s por palabra más allá de 3 (techo 13 s).
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
+import { execFileSync as _execFileSync } from "node:child_process"; const execFileSync = (c, a, o) => Array.isArray(a) ? _execFileSync(c, a, { windowsHide: true, ...(o || {}) }) : _execFileSync(c, { windowsHide: true, ...(a || {}) }); // sin ventanas de consola (27-sep)
 
 const SLUG = process.argv[2];
 if (!SLUG) { console.error('uso: node scripts/rksafe_plan.mjs <slug>'); process.exit(1); }
@@ -25,7 +25,7 @@ const cfg = await import(path.resolve(raiz, `_v3/${SLUG}_cfg.mjs`).replace(/\\/g
 const { ITEMS } = await import(path.resolve(raiz, `_v3/${SLUG}_prompts.mjs`).replace(/\\/g, '/').replace(/^/, 'file:///'));
 
 const FPS = 30;
-const APERTURA_MIN = 3.0;
+const APERTURA_MIN = +(cfg.APERTURA_MIN ?? 3.0);   // opt-in por video (rkcard: 7,5 s de Ray antes del primer plano)
 const CAP_IMG = 9.5;                 // techo de foto: por debajo, la escalera larga se recorta y vuelve el metrónomo
 
 const tiempos = JSON.parse(fs.readFileSync(`_v3/${SLUG}_tiempos.json`, 'utf8'));
@@ -59,6 +59,16 @@ for (const id of realEnDisco) {
 }
 
 const esClip = (d) => Math.abs(d - 4.03) < 0.06 || Math.abs(d - 8.07) < 0.06;
+
+// ⛔⛔ CUANTO PESA EL METRAJE REAL EN UN EMPATE — Y POR QUE SUBIRLO ES EL ARREGLO EQUIVOCADO.
+//    Al entrar los clips de agnes, el stock bajaba de 26,1 % a 20,0 %. La tentacion es subir el
+//    bonus: con 1,2 el stock vuelve a 26,9 % pero los planos QUE PEGAN con la frase caen de 79 % a
+//    59 % — o sea se compra la vara de metraje real pagando con la regla de CONTEXTO, que es la que
+//    el creador nota. La causa verdadera era otra: los clips de stock traian como `prompt` la
+//    consulta de 2-3 palabras con que se bajaron, asi que puntuaban 0 contra cualquier frase.
+//    Con el vocabulario real de cada toma (ver _v3/<slug>_expand_real.mjs) el stock compite por
+//    MERITO y se consiguen las dos cosas: 26,1 % de metraje real Y 79 % de planos que pegan.
+const REAL_BONUS = +(process.env.REAL_BONUS || cfg.REAL_BONUS || 0.6);
 
 // ⛔⛔ EL ASSET SE ELIGE POR LA FRASE QUE SUENA EN ESE SEGUNDO, NO POR RONDA. Repartir el pool de la
 //    sección en round-robin da coherencia de TEMA y no de FRASE: la oración del felpudo agarra el
@@ -133,7 +143,7 @@ for (const sec of secciones) {
   const pool = poolPorSec[sec.sec] || [];
   cursorPool[sec.sec] = 0;
   const comps = cfg.COMPONENTES.filter((c) => c.p >= sec.p0 && c.p <= sec.p1)
-    .map((c) => ({ ...c, t: tPara(c.p), dur: lectura(c.props) }))
+    .map((c) => ({ ...c, t: tPara(c.p), dur: Math.max(lectura(c.props), +c.dur || 0) }))   // `dur` del cfg = piso para los que ANIMAN un mecanismo (rkcard)
     .sort((a, b) => a.t - b.t);
 
   // ⛔⛔ LOS COMPONENTES SE RESERVAN PRIMERO Y LOS PLANOS SE TEJEN ALREDEDOR. Buscarlos mientras
@@ -181,7 +191,9 @@ for (const sec of secciones) {
       // ⭐ El metraje REAL no está atado a las duraciones de agnes: el archivo dura 8,2 s enteros y
       //    se reproduce a 1×, así que puede llenar CUALQUIER slot de 4,5 s para arriba. Sin esto
       //    sólo entraba en los slots de 4,03/8,07 y el metraje real se quedaba en 9,3 %.
-      const admiteReal = dur >= 4.5 && dur <= 9.4;   // el tope real de cada archivo se aplica abajo
+      // ⛔ 4,5 s era demasiado conservador: un archivo de 8,2 s entra en CUALQUIER slot (se corta,
+      //    no se congela), y con el piso alto 14 de 36 clips reales no se montaban nunca -> 8,7 %.
+      const admiteReal = dur >= 3.4 && dur <= 9.4;   // el tope real de cada archivo se aplica abajo
       // ⛔⛔ EL CURSOR NO PUEDE COMERSE LOS PLANOS QUE SALTEA (rkfob: 7 de 13 planos del hook nunca
       //    se montaron). Se lleva un set de USADOS; los salteados quedan disponibles.
       usadosPool[sec.sec] ||= new Set();
@@ -200,7 +212,7 @@ for (const sec of secciones) {
         // ⭐ el metraje REAL gana los empates: es el 25 % que la vara del pipeline exige y es lo
         //    único del pool que no lo dibujó una máquina.
         const mejorDe = (cands) => cands
-          .map((c) => ({ c, s: puntaje(sust, c.tokens) + (c.real ? 0.6 : 0) }))
+          .map((c) => ({ c, s: puntaje(sust, c.tokens) + (c.real ? REAL_BONUS : 0) }))
           .sort((a, b) => b.s - a.s)[0]?.c;
         const libres2 = pool.filter((c) => !used.has(c.id) && !anterior.includes(c.id));
         // ⛔ un item REAL no tiene foto: sólo puede entrar en un slot de CLIP
@@ -220,7 +232,7 @@ for (const sec of secciones) {
           if (puntajeDe(g) > puntajeDe(elegido)) elegido = g;
         }
       }
-      if (!elegido) { used.clear(); elegido = soloFoto(pool)[0] || pool[0]; }
+      if (!elegido) { used.clear(); elegido = pool.filter((c) => !c.real)[0] || pool[0]; }   // (bug latente: soloFoto vivía en otro bloque = ReferenceError, rkcard 27-sep)
       if (!elegido) break;
       used.add(elegido.id);
 
@@ -233,6 +245,15 @@ for (const sec of secciones) {
       const rate = usaClip ? (esReal ? 1 : (Math.abs(dur - 8.07) < 0.06 ? 0.5 : 1)) : undefined;
       if (!usaClip) dur = Math.min(dur, CAP_IMG);
       else dur = Math.min(dur, esReal ? (durReal[elegido.id] || 0) : 4.033 / rate);   // nunca más allá del archivo
+      // ⭐ piso de duración del METRAJE REAL (opt-in `cfg.REAL_MIN_DUR`): un archivo de 8,2 s a 1x metido en un
+      //    slot de 3,4 s gasta la toma más escasa del pool. Medido en rkcard: 35 planos reales = 19,6 % con
+      //    el piso apagado; la vara pide 25 %. El piso no pasa el borde de la ventana libre (li1).
+      // `REAL_MIN_DUR` puede ser [lo, hi]: el piso se sortea por plano (un piso fijo vuelve el metrónomo: mediana = p75)
+      if (esReal && cfg.REAL_MIN_DUR) {
+        const [lo, hi] = [].concat(cfg.REAL_MIN_DUR).length > 1 ? cfg.REAL_MIN_DUR : [+cfg.REAL_MIN_DUR, +cfg.REAL_MIN_DUR];
+        const h = Math.abs(Math.sin(Math.round(t * 30) * 12.9898 + 78.233)) % 1;
+        dur = Math.max(dur, Math.min(lo + (hi - lo) * h, durReal[elegido.id] || 0));
+      }
       dur = Math.min(dur, li1 - t);
       if (dur < 1.2) break;
       beats.push({
@@ -249,19 +270,156 @@ for (const sec of secciones) {
 // ── VENTANAS DE AVATAR: sólo ANTES de AVATAR_END ──────────────────────────
 const OBJ_COB_T1 = 0.775;
 let quitados = 0;
-if (AVATAR_END > 1) {
-  const t1 = beats.filter((b) => b.t + b.dur <= AVATAR_END && b.kind !== 'componente');
+// ⛔⛔ VENTANAS CONGELADAS: si el avatar YA se pagó (existe _v3/<slug>_avwins_fijas.json), las ventanas
+//    NO se recalculan: re-planear después de que lleguen los clips movería las ventanas y el lipsync
+//    ya generado dejaría de corresponder al audio (rkcard, 27-sep). Ver el bloque FIJAS más abajo.
+const FIJAS_PATH = `_v3/${SLUG}_avwins_fijas.json`;
+const FIJAS = fs.existsSync(FIJAS_PATH) ? JSON.parse(fs.readFileSync(FIJAS_PATH, 'utf8')) : null;
+if (AVATAR_END > 1 && !FIJAS) {
+  // ⛔⛔ EN MODO VENTANAS LOS COMPONENTES TAMBIÉN TAPAN AL AVATAR. Medido acá: descontando sólo los
+  //    planos de b-roll contra el 77,5 % del total, los 30 componentes se comían el resto y el avatar
+  //    quedaba en 7,1 % (el objetivo era ~22 %). El sobrante se calcula contra TODO lo que no es
+  //    avatar, y el objetivo sale del cfg.
+  const modoVent = (cfg.AVATAR_MODO || 'fondo') === 'ventanas';
+  const objNoAvatar = modoVent ? (1 - (cfg.AVATAR_OBJ ?? 0.20)) : OBJ_COB_T1;
+  const t1 = beats.filter((b) => b.t + b.dur <= AVATAR_END && (modoVent || b.kind !== 'componente'));
   const durT1 = t1.reduce((a, b) => a + b.dur, 0);
-  let sobra = durT1 - AVATAR_END * OBJ_COB_T1;
+  let sobra = durT1 - AVATAR_END * objNoAvatar;
   const inicios = new Set(paras.map((p) => +tDeChar(p.s).toFixed(3)));
   const protegidos = new Set(Object.values(cfg.ORDEN_FORZADO).flat());
   const idDe = (a) => (a || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '');
-  const candidatos = t1.filter((b) => b.dur <= 6.5 && !(b.asset && protegidos.has(idDe(b.asset))))
+  // ⛔ un COMPONENTE nunca se quita para abrir ventana: el plan lo reservó primero y quitarlo lo
+  //    hace DESAPARECER sin avisar (en rkfob se perdieron 5 de 18, uno era el CTA del video).
+  // ⛔⛔ Y TAMPOCO SE QUITA UN PLANO DE METRAJE REAL. Medido acá: el abridor de ventanas borraba 14 de
+  //    los 36 clips de stock YA asignados (8,8 % de metraje real cuando había 21 % de material en
+  //    disco). El stock es lo más escaso del pool y lo único que no dibujó una máquina: la ventana de
+  //    avatar se abre sobre una FOTO, que sobra.
+  const candidatos = t1.filter((b) => b.kind !== 'componente' && !b.real && b.dur <= 6.5 && !(b.asset && protegidos.has(idDe(b.asset))))
     .sort((a, b) => (inicios.has(b.t) ? 1 : 0) - (inicios.has(a.t) ? 1 : 0));
   const paso = Math.max(1, Math.floor(candidatos.length / Math.max(1, Math.ceil(sobra / 4.5))));
   for (let i = 0; i < candidatos.length && sobra > 0; i += paso) { candidatos[i]._quitar = true; sobra -= candidatos[i].dur; quitados++; }
 }
-const finales = beats.filter((b) => !b._quitar);
+let finales = beats.filter((b) => !b._quitar);
+
+// ── MODO VENTANAS: el avatar NO es fondo, es un plano más de la capa base ──
+// ⛔⛔ En los videos donde el avatar lo genero YO (RunPod InfiniteTalk) no hay capa continua: fuera
+//    de las ventanas el fondo es NEGRO. Así que los huecos que abrió el paso anterior se convierten
+//    en beats `avatar` EXPLÍCITOS, y la cobertura pasa a exigirse al 100 %.
+//    El componente es `RayAvatarWin` (media pantalla, upscale 1,25x), NUNCA `RayAvatar`.
+const MODO = cfg.AVATAR_MODO || 'fondo';
+if (MODO === 'ventanas' && FIJAS) {
+  // ── MODO FIJAS: se recortan los planos contra las ventanas pagadas y los huecos que queden AFUERA
+  //    se cierran estirando el plano vecino (foto/componente) o con una foto del pool de la sección.
+  const OVv = new Set(cfg.OVERLAY);
+  const W = FIJAS.map((w) => ({ i: w.i, a: w.t, b: w.t + w.dur }));
+  const nuevos = [];
+  for (const b of finales) {
+    if (b.kind === 'componente' && OVv.has(b.comp)) { nuevos.push(b); continue; }
+    let segs = [[b.t, b.t + b.dur]];
+    for (const w of W) {
+      const sig = [];
+      for (const [x, y] of segs) {
+        if (y <= w.a + 0.001 || x >= w.b - 0.001) { sig.push([x, y]); continue; }
+        // el build alinea fronteras hasta 3 cuadros: un solape de componente < 0,25 s es esa alineación, se recorta
+        if (b.kind === 'componente' && Math.min(y, w.b) - Math.max(x, w.a) > 0.25) { console.error(`⛔ FIJAS: el componente ${b.comp} (${b.t.toFixed(2)}s) pisa la ventana ${w.i} — el cfg cambió después de pagar el avatar`); process.exit(5); }
+        if (x < w.a) sig.push([x, w.a]);
+        if (y > w.b) sig.push([w.b, y]);
+      }
+      segs = sig;
+    }
+    // un clip sólo conserva su PRIMER tramo (si se parte, el 2º repetiría el archivo)
+    if (b.kind === 'clip') segs = segs.slice(0, 1);
+    for (const [x, y] of segs) if (y - x >= 1.0) nuevos.push({ ...b, t: +x.toFixed(3), dur: +(y - x).toFixed(3) });
+  }
+  for (const w of FIJAS) nuevos.push({ t: +w.t.toFixed(3), dur: +w.dur.toFixed(3), sec: 'AV', kind: 'avatar', win: w.i, lugar: 'avatar' });
+  nuevos.sort((a, b) => a.t - b.t);
+  // cerrar huecos
+  const base = nuevos.filter((b) => !(b.kind === 'componente' && OVv.has(b.comp)));
+  let rellenos = 0, estirados = 0;
+  const secDe = (t0) => (secciones.find((s) => t0 >= s.t0 && t0 < s.t1) || secciones.at(-1)).sec;
+  const ultUso = {};
+  for (let i = 0; i <= base.length; i++) {
+    const fin = i ? base[i - 1].t + base[i - 1].dur : 0;
+    const ini = i < base.length ? base[i].t : TOTAL;
+    if (ini - fin <= 0.02) continue;
+    const prev = i ? base[i - 1] : null;
+    if (prev && (prev.kind === 'imagen' || prev.kind === 'componente')) { prev.dur = +(ini - prev.t).toFixed(3); estirados++; continue; }
+    const idR = (x) => (x.asset || '').replace(/^.*\//, '').replace(/\.mp4$/, '');
+    if (prev && prev.real && prev.t + (ini - prev.t) <= prev.t + (durReal[idR(prev)] || 0)) { prev.dur = +(ini - prev.t).toFixed(3); estirados++; continue; }
+    const sig = i < base.length ? base[i] : null;
+    if (sig && sig.real && sig.t + sig.dur - fin <= (durReal[idR(sig)] || 0)) { sig.dur = +(sig.t + sig.dur - fin).toFixed(3); sig.t = +fin.toFixed(3); estirados++; continue; }
+    if (sig && sig.kind === 'imagen' && ini - fin < 1.5) { sig.dur = +(sig.t + sig.dur - fin).toFixed(3); sig.t = +fin.toFixed(3); estirados++; continue; }
+    const sec = secDe(fin);
+    const fotos = (poolPorSec[sec] || []).filter((c) => !c.real);
+    const f = fotos.sort((x, y) => (ultUso[x.id] || -1) - (ultUso[y.id] || -1))[0];
+    if (!f) { console.error('⛔ FIJAS: hueco sin foto para rellenar en ' + fin.toFixed(2)); process.exit(5); }
+    ultUso[f.id] = fin;
+    nuevos.push({ t: +fin.toFixed(3), dur: +(ini - fin).toFixed(3), sec, lugar: f.lugar, kind: 'imagen', asset: `img/${f.id}.jpg` });
+    rellenos++;
+  }
+  nuevos.sort((a, b) => a.t - b.t);
+  finales = nuevos;
+  const segAv = FIJAS.reduce((a, w) => a + w.dur, 0);
+  console.log(`VENTANAS FIJAS (avatar ya pagado): ${FIJAS.length} · ${segAv.toFixed(1)} s = ${(segAv / TOTAL * 100).toFixed(1)}% · huecos cerrados: ${estirados} estirando vecino, ${rellenos} con foto del pool`);
+} else if (MODO === 'ventanas') {
+  const OVv = new Set(cfg.OVERLAY);
+  // ⛔⛔ UNA VENTANA DE AVATAR LARGUÍSIMA PASA TODAS LAS COMPUERTAS EN VERDE: cobertura 100 %, cero
+  //    huecos, pacing sano — porque técnicamente ahí HAY avatar. Y es un pozo. Medido acá: una de
+  //    25,1 s y cuatro por encima de 12 s en un video de 23 min. Pasa porque al quitar beats vecinos
+  //    para abrir ventana los huecos se FUSIONAN, y nadie mide el resultado de la fusión.
+  //    Arreglo: se DEVUELVEN al montaje los planos quitados que caen dentro de una ventana que pasa
+  //    el techo, empezando por el más cercano a su medio, hasta que ninguna supere AVATAR_WIN_MAX.
+  const MAXW = cfg.AVATAR_WIN_MAX ?? 9.0;
+  const quitadosLista = beats.filter((b) => b._quitar);
+  let devueltos = 0;
+  for (let vuelta = 0; vuelta < 60; vuelta++) {
+    const base0 = beats.filter((b) => !b._quitar && !(b.kind === 'componente' && OVv.has(b.comp)))
+      .sort((a, b) => a.t - b.t);
+    const gaps = [];
+    let cur = 0;
+    for (const b of base0) { if (b.t - cur > 0.02) gaps.push([cur, b.t]); cur = Math.max(cur, b.t + b.dur); }
+    if (TOTAL - cur > 0.02) gaps.push([cur, TOTAL]);
+    const largo = gaps.filter(([x, y]) => y - x > MAXW).sort((x, y) => (y[1] - y[0]) - (x[1] - x[0]))[0];
+    if (!largo) break;
+    const medio = (largo[0] + largo[1]) / 2;
+    const cand = quitadosLista
+      .filter((b) => b._quitar && b.t >= largo[0] - 0.01 && b.t + b.dur <= largo[1] + 0.01)
+      .sort((a, b) => Math.abs(a.t + a.dur / 2 - medio) - Math.abs(b.t + b.dur / 2 - medio))[0];
+    if (!cand) break;                       // no queda nada que devolver en ese tramo
+    delete cand._quitar; devueltos++;
+  }
+  // ⛔ `finales` ya se calculó arriba: los planos devueltos hay que REINSERTARLOS o el arreglo no
+  //    llega al montaje (la marca cambia y el array no).
+  for (const b of quitadosLista) if (!b._quitar && !finales.includes(b)) finales.push(b);
+  finales.sort((a, b) => a.t - b.t);
+  if (devueltos) console.log('techo de ventana ' + MAXW + 's: ' + devueltos + ' planos DEVUELTOS al montaje');
+  const base0 = finales.filter((b) => !(b.kind === 'componente' && OVv.has(b.comp))).sort((a, b) => a.t - b.t);
+  const MIN_WIN = cfg.AVATAR_WIN_MIN ?? 1.4;
+  const huecos = [];
+  let cur = 0;
+  for (const b of base0) { if (b.t - cur > 0.02) huecos.push([cur, b.t]); cur = Math.max(cur, b.t + b.dur); }
+  if (TOTAL - cur > 0.02) huecos.push([cur, TOTAL]);
+  let n = 0, cortos = 0;
+  for (const [h0, h1] of huecos) {
+    const d = h1 - h0;
+    if (d < MIN_WIN) {
+      // ⛔ una ventana de <1,4 s no se lee como "vuelve la cara", se lee como parpadeo: se la come
+      //    el plano ANTERIOR (o el siguiente si el hueco abre el video).
+      const prev = [...base0].reverse().find((b) => b.t + b.dur <= h0 + 0.02);
+      if (prev) prev.dur = +(h1 - prev.t).toFixed(3);
+      else { const sig = base0.find((b) => b.t >= h1 - 0.02); if (sig) { sig.dur = +(sig.t + sig.dur - h0).toFixed(3); sig.t = +h0.toFixed(3); } }
+      cortos++; continue;
+    }
+    finales.push({ t: +h0.toFixed(3), dur: +d.toFixed(3), sec: 'AV', kind: 'avatar', win: n, lugar: 'avatar' });
+    n++;
+  }
+  const segAv = finales.filter((b) => b.kind === 'avatar').reduce((a, b) => a + b.dur, 0);
+  console.log('VENTANAS DE AVATAR: ' + n + ' · ' + segAv.toFixed(1) + ' s = ' + (segAv / TOTAL * 100).toFixed(1) +
+    '% del video · ' + cortos + ' huecos <' + MIN_WIN + 's absorbidos por el plano vecino');
+  fs.writeFileSync(`_v3/${SLUG}_avwins.json`, JSON.stringify(
+    finales.filter((b) => b.kind === 'avatar').sort((a, b) => a.win - b.win)
+      .map((b) => ({ i: b.win, t: b.t, dur: b.dur })), null, 1));
+}
 
 // ── cerrar los huecos de la capa base DESPUÉS de AVATAR_END ───────────────
 // ⛔ El CTA es OVERLAY: va encima y NO cuenta como cobertura (rkfob: 8,12 s de avatar en bucle debajo).
@@ -279,7 +437,7 @@ const finales = beats.filter((b) => !b._quitar);
 }
 
 // ── MÉTRICAS ──────────────────────────────────────────────────────────────
-const durs = finales.filter((b) => b.kind !== 'componente').map((b) => b.dur).sort((a, b) => a - b);
+const durs = finales.filter((b) => b.kind !== 'componente' && b.kind !== 'avatar').map((b) => b.dur).sort((a, b) => a - b);
 const q = (p) => (durs.length ? durs[Math.min(durs.length - 1, Math.floor(durs.length * p))] : 0);
 const OV = new Set(cfg.OVERLAY);
 const base = finales.filter((b) => !(b.kind === 'componente' && OV.has(b.comp)));
@@ -293,7 +451,12 @@ console.log('ventanas de avatar abiertas en el tramo 1: ' + quitados);
 console.log('PACING  min ' + q(0).toFixed(2) + ' · p25 ' + q(0.25).toFixed(2) + ' · mediana ' + q(0.5).toFixed(2) +
   ' · p75 ' + q(0.75).toFixed(2) + ' · max ' + q(0.999).toFixed(2) + '  (dispersión p25↔p75 ' + (q(0.75) - q(0.25)).toFixed(2) + 's, buena ~1,8)');
 console.log('   ≥5s: ' + (durs.filter((d) => d >= 5).length / durs.length * 100).toFixed(0) + '% (objetivo ~40)');
-console.log('COBERTURA total ' + (cob(0, TOTAL) * 100).toFixed(1) + '%  (piso 90)');
+console.log('COBERTURA total ' + (cob(0, TOTAL) * 100).toFixed(1) + '%  (piso ' + (MODO === 'ventanas' ? '100, el fondo es NEGRO' : '90') + ')');
+if (MODO === 'ventanas') {
+  const bro = base.filter((b) => b.kind !== 'avatar');
+  const cobB = (a, b) => bro.filter((x) => x.t < b && x.t + x.dur > a).reduce((s2, x) => s2 + (Math.min(b, x.t + x.dur) - Math.max(a, x.t)), 0) / (b - a);
+  console.log('   de eso, B-ROLL/componentes ' + (cobB(0, TOTAL) * 100).toFixed(1) + '% · el resto lo cubre el avatar');
+}
 console.log('   tercio 1 ' + (cob(0, TOTAL / 3) * 100).toFixed(1) + '% · tercio 2 ' + (cob(TOTAL / 3, 2 * TOTAL / 3) * 100).toFixed(1) +
   '% · tercio 3 ' + (cob(2 * TOTAL / 3, TOTAL) * 100).toFixed(1) + '%');
 if (AVATAR_END < TOTAL - 1) {
@@ -309,7 +472,7 @@ if (AVATAR_END < TOTAL - 1) {
 }
 console.log('COMPONENTES: ' + new Set(compsUsados).size + ' distintos (piso 6) · ' + compsUsados.length + ' usos');
 console.log('   ' + [...new Set(compsUsados)].join(' · '));
-const primer = base.filter((b) => b.kind !== 'componente').sort((a, b) => a.t - b.t)[0];
+const primer = base.filter((b) => b.kind !== 'componente' && b.kind !== 'avatar').sort((a, b) => a.t - b.t)[0];
 console.log('APERTURA: primer b-roll en ' + primer.t.toFixed(2) + 's  (piso ' + APERTURA_MIN + ') ' + (primer.t >= APERTURA_MIN ? '✓' : '⛔'));
 
 const orden = [...base].sort((a, b) => a.t - b.t);

@@ -61,7 +61,10 @@ const sucios = [], sinProf = [], cortos = [];
 for (const it of items) {
   const p = (it.prompt || "").toLowerCase();
   // "nothing blurred out" es la CLÁUSULA DE PROFUNDIDAD obligatoria: se saca antes de buscar prohibidos
-  const hit = PROHIBIDOS.filter((w) => p.split("nothing blurred out").join("").includes(w));
+  // ⛔ la cláusula NEGATIVA de la vara "fotograma accidental" (brief del canal Ray, 27-sep) NOMBRA lo
+  //    prohibido para prohibirlo ("Avoid ... cinematic lighting ... excessive bokeh ..."): se corta desde
+  //    "avoid " hasta el final antes de buscar, o el gate rechaza justo el prompt que cumple la vara.
+  const hit = PROHIBIDOS.filter((w) => p.split("nothing blurred out").join("").replace(/avoid [\s\S]*$/, "").includes(w));
   if (hit.length) sucios.push(`${it.name} (${hit.join(", ")})`);
   // sin la cláusula el modelo pone su fondo cremoso de catálogo = "foto trucha de IA de stock"
   if (!p.includes("nothing blurred out")) sinProf.push(it.name);

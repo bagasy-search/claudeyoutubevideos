@@ -1,0 +1,1368 @@
+{
+ "total": 802.255,
+ "avatarEnd": 802.255,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0,
+   "dur": 7.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 7.5,
+   "dur": 5.6,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": "1 card",
+    "unit": "is all it takes",
+    "tone": "danger",
+    "caption": "On a lot of front doors."
+   },
+   "bed": "img/rkcard_s1_01_blur.jpg"
+  },
+  {
+   "t": 13.1,
+   "dur": 3.066666666666667,
+   "sec": "S1",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkcard_s1_01.jpg"
+  },
+  {
+   "t": 16.166666666666668,
+   "dur": 5.9,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "THIS VIDEO",
+    "myth": "How it is done",
+    "truth": "Why it works, and how to stop it"
+   },
+   "bed": "img/rkcard_s1_01_blur.jpg"
+  },
+  {
+   "t": 22.066666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S1",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkcard_s1_02.jpg"
+  },
+  {
+   "t": 26.1,
+   "dur": 8.033333333333333,
+   "sec": "S1",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r76.mp4",
+   "rate": 1
+  },
+  {
+   "t": 34.13333333333333,
+   "dur": 8.066666666666666,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r03.mp4",
+   "rate": 1
+  },
+  {
+   "t": 42.2,
+   "dur": 8.1,
+   "sec": "S1",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r06.mp4",
+   "rate": 1
+  },
+  {
+   "t": 50.3,
+   "dur": 4.266666666666667,
+   "sec": "S1",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r05.mp4",
+   "rate": 1
+  },
+  {
+   "t": 54.56666666666667,
+   "dur": 4.433333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 59,
+   "dur": 6.766666666666667,
+   "sec": "S2",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r55.mp4",
+   "rate": 1
+  },
+  {
+   "t": 65.76666666666667,
+   "dur": 6.5,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "DoorEdgeCount",
+   "props": {
+    "mode": "anatomy"
+   },
+   "bed": "img/rkcard_s2_01_blur.jpg"
+  },
+  {
+   "t": 72.26666666666667,
+   "dur": 9.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 81.36666666666666,
+   "dur": 7.5,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "LatchCutaway",
+   "props": {
+    "mode": "close"
+   },
+   "bed": "img/rkcard_s2_01_blur.jpg"
+  },
+  {
+   "t": 88.86666666666666,
+   "dur": 10,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 98.86666666666666,
+   "dur": 6.6,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Built to keep a door closed. Never to keep it locked.",
+    "attrib": "— Ray Kessler"
+   },
+   "bed": "img/rkcard_s2_01_blur.jpg"
+  },
+  {
+   "t": 105.46666666666667,
+   "dur": 7.5,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "LatchCutaway",
+   "props": {
+    "mode": "spring"
+   },
+   "bed": "img/rkcard_s3_01_blur.jpg"
+  },
+  {
+   "t": 112.96666666666667,
+   "dur": 7.7,
+   "sec": "S3",
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r12.mp4",
+   "rate": 1
+  },
+  {
+   "t": 120.66666666666667,
+   "dur": 6.9,
+   "sec": "S3",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r52.mp4",
+   "rate": 1
+  },
+  {
+   "t": 127.56666666666666,
+   "dur": 5.866666666666666,
+   "sec": "S3",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r09.mp4",
+   "rate": 1
+  },
+  {
+   "t": 133.43333333333334,
+   "dur": 6.133333333333334,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "Lock the knob",
+    "leftValue": "Knob stops",
+    "rightLabel": "The latch",
+    "rightValue": "Still moves",
+    "verdict": "A knob lock stops a hand."
+   },
+   "bed": "img/rkcard_s3_01_blur.jpg"
+  },
+  {
+   "t": 139.56666666666666,
+   "dur": 7.233333333333333,
+   "sec": "S3",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r26.mp4",
+   "rate": 1
+  },
+  {
+   "t": 146.8,
+   "dur": 6.366666666666666,
+   "sec": "S3",
+   "lugar": "hall",
+   "kind": "imagen",
+   "asset": "img/rkcard_s1_03.jpg"
+  },
+  {
+   "t": 153.16666666666666,
+   "dur": 2.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 156.06666666666666,
+   "dur": 7.5,
+   "sec": "S3",
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r27.mp4",
+   "rate": 1
+  },
+  {
+   "t": 163.56666666666666,
+   "dur": 7.3,
+   "sec": "S3",
+   "lugar": "street",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r10.mp4",
+   "rate": 1
+  },
+  {
+   "t": 170.86666666666667,
+   "dur": 5.6,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "LIKE THE WATER BOTTLE",
+    "myth": "The trick is the problem",
+    "truth": "It finds the problem"
+   },
+   "bed": "img/rkcard_s4_01_blur.jpg"
+  },
+  {
+   "t": 176.46666666666667,
+   "dur": 6.8,
+   "sec": "S4",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r13.mp4",
+   "rate": 1
+  },
+  {
+   "t": 183.26666666666668,
+   "dur": 5.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 188.33333333333334,
+   "dur": 6.7,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "NOBODY HEARS IT",
+    "title": "No sign of forced entry",
+    "items": [
+     {
+      "text": "No broken glass"
+     },
+     {
+      "text": "No splintered frame"
+     },
+     {
+      "text": "Often no mark"
+     }
+    ]
+   },
+   "bed": "img/rkcard_s4_01_blur.jpg"
+  },
+  {
+   "t": 195.03333333333333,
+   "dur": 9.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 204.43333333333334,
+   "dur": 5.333333333333333,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "REMEMBER THIS",
+    "myth": "Latched means locked",
+    "truth": "Latched is not locked"
+   },
+   "bed": "img/rkcard_s4_01_blur.jpg"
+  },
+  {
+   "t": 209.76666666666668,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ProcessChips",
+   "props": {
+    "kicker": "THE TEN SECOND TEST",
+    "title": "Door closed, stand inside",
+    "steps": [
+     {
+      "title": "Look at the edge"
+     },
+     {
+      "title": "Count the metal"
+     },
+     {
+      "title": "Find the plunger"
+     }
+    ]
+   },
+   "bed": "img/rkcard_s5_01_blur.jpg"
+  },
+  {
+   "t": 216.76666666666668,
+   "dur": 3.7666666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 220.53333333333333,
+   "dur": 6.5,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "DoorEdgeCount",
+   "props": {
+    "mode": "count"
+   },
+   "bed": "img/rkcard_s5_01_blur.jpg"
+  },
+  {
+   "t": 227.03333333333333,
+   "dur": 9.166666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 236.2,
+   "dur": 6.5,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "DoorEdgeCount",
+   "props": {
+    "mode": "plunger"
+   },
+   "bed": "img/rkcard_s5_01_blur.jpg"
+  },
+  {
+   "t": 242.7,
+   "dur": 8.066666666666666,
+   "sec": "S5",
+   "lugar": "hall",
+   "kind": "imagen",
+   "asset": "img/rkcard_s5_05.jpg"
+  },
+  {
+   "t": 250.76666666666668,
+   "dur": 1.4666666666666666,
+   "sec": "S5",
+   "lugar": "hall",
+   "kind": "imagen",
+   "asset": "img/rkcard_s5_04.jpg"
+  },
+  {
+   "t": 252.23333333333332,
+   "dur": 7.5,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "LatchCutaway",
+   "props": {
+    "mode": "deadlatch"
+   },
+   "bed": "img/rkcard_s5_01_blur.jpg"
+  },
+  {
+   "t": 259.73333333333335,
+   "dur": 5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 264.73333333333335,
+   "dur": 6.833333333333333,
+   "sec": "S5",
+   "lugar": "porch",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r54.mp4",
+   "rate": 1
+  },
+  {
+   "t": 271.56666666666666,
+   "dur": 7.833333333333333,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "IT ONLY WORKS IF",
+    "title": "The plunger stays pressed",
+    "items": [
+     {
+      "text": "The door closes tight"
+     },
+     {
+      "text": "It lands on the plate"
+     },
+     {
+      "text": "Not in the hole"
+     }
+    ]
+   },
+   "bed": "img/rkcard_s6_01_blur.jpg"
+  },
+  {
+   "t": 279.4,
+   "dur": 5.366666666666666,
+   "sec": "S6",
+   "lugar": "workshop",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r81.mp4",
+   "rate": 1
+  },
+  {
+   "t": 284.76666666666665,
+   "dur": 7.866666666666666,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "RouteFlow",
+   "props": {
+    "kicker": "OVER THE YEARS",
+    "title": "How a door drifts",
+    "steps": [
+     {
+      "label": "The house settles"
+     },
+     {
+      "label": "Hinge screws loosen"
+     },
+     {
+      "label": "The door sags"
+     },
+     {
+      "label": "An eighth of an inch"
+     }
+    ]
+   },
+   "bed": "img/rkcard_s6_01_blur.jpg"
+  },
+  {
+   "t": 292.6333333333333,
+   "dur": 6.633333333333334,
+   "sec": "S6",
+   "lugar": "exterior",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r19.mp4",
+   "rate": 1
+  },
+  {
+   "t": 299.26666666666665,
+   "dur": 2.7,
+   "sec": "S6",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r20.mp4",
+   "rate": 1
+  },
+  {
+   "t": 301.96666666666664,
+   "dur": 7.5,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "LatchCutaway",
+   "props": {
+    "mode": "slack"
+   },
+   "bed": "img/rkcard_s6_01_blur.jpg"
+  },
+  {
+   "t": 309.46666666666664,
+   "dur": 7.1,
+   "sec": "S6",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r80.mp4",
+   "rate": 1
+  },
+  {
+   "t": 316.56666666666666,
+   "dur": 4.733333333333333,
+   "sec": "S6",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r37.mp4",
+   "rate": 1
+  },
+  {
+   "t": 321.3,
+   "dur": 7.5,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "GapScanTest",
+   "props": {
+    "mode": "loose"
+   },
+   "bed": "img/rkcard_s7_01_blur.jpg"
+  },
+  {
+   "t": 328.8,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 332,
+   "dur": 6.6,
+   "sec": "S7",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r23.mp4",
+   "rate": 1
+  },
+  {
+   "t": 338.6,
+   "dur": 6.5,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "GapScanTest",
+   "props": {
+    "mode": "tight"
+   },
+   "bed": "img/rkcard_s7_01_blur.jpg"
+  },
+  {
+   "t": 345.1,
+   "dur": 7.566666666666666,
+   "sec": "S7",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r42.mp4",
+   "rate": 1
+  },
+  {
+   "t": 352.6666666666667,
+   "dur": 3.466666666666667,
+   "sec": "S7",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r24.mp4",
+   "rate": 1
+  },
+  {
+   "t": 356.1333333333333,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "FixLadder",
+   "props": {
+    "highlight": 2
+   },
+   "bed": "img/rkcard_s7_01_blur.jpg"
+  },
+  {
+   "t": 364.1333333333333,
+   "dur": 7.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 371.1666666666667,
+   "dur": 6.8,
+   "sec": "S7",
+   "lugar": "kitchen",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r46.mp4",
+   "rate": 1
+  },
+  {
+   "t": 377.96666666666664,
+   "dur": 8.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 386.46666666666664,
+   "dur": 5.866666666666666,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "FIX 1 · COSTS NOTHING",
+    "myth": "The click means locked",
+    "truth": "The click is the latch"
+   },
+   "bed": "img/rkcard_s8_01_blur.jpg"
+  },
+  {
+   "t": 392.3333333333333,
+   "dur": 5.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 397.73333333333335,
+   "dur": 7.033333333333333,
+   "sec": "S8",
+   "lugar": "hall",
+   "kind": "imagen",
+   "asset": "img/rkcard_s8_02.jpg"
+  },
+  {
+   "t": 404.76666666666665,
+   "dur": 7.5,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "BoltMorph",
+   "props": {
+    "mode": "morph"
+   },
+   "bed": "img/rkcard_s8_01_blur.jpg"
+  },
+  {
+   "t": 412.26666666666665,
+   "dur": 7.666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 419.93333333333334,
+   "dur": 6.133333333333334,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "FIX 1",
+    "title": "Throw the deadbolt",
+    "items": [
+     {
+      "text": "Every time you leave"
+     },
+     {
+      "text": "Every night"
+     },
+     {
+      "text": "Like checking the stove"
+     }
+    ]
+   },
+   "bed": "img/rkcard_s8_01_blur.jpg"
+  },
+  {
+   "t": 426.06666666666666,
+   "dur": 7.666666666666667,
+   "sec": "S8",
+   "lugar": "workshop",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r65.mp4",
+   "rate": 1
+  },
+  {
+   "t": 433.73333333333335,
+   "dur": 1.3,
+   "sec": "S8",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r64.mp4",
+   "rate": 1
+  },
+  {
+   "t": 435.03333333333336,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 438.23333333333335,
+   "dur": 1.7,
+   "sec": "S9",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r72.mp4",
+   "rate": 1
+  },
+  {
+   "t": 439.93333333333334,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "HingeScrewPull",
+   "props": {},
+   "bed": "img/rkcard_s9_01_blur.jpg"
+  },
+  {
+   "t": 447.93333333333334,
+   "dur": 6.233333333333333,
+   "sec": "S9",
+   "lugar": "workshop",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r30.mp4",
+   "rate": 1
+  },
+  {
+   "t": 454.1666666666667,
+   "dur": 6,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "ScrewHero",
+   "props": {
+    "kicker": "FIX 2 · ABOUT $3",
+    "title": "$3",
+    "sub": "One three-inch screw in the top hinge.",
+    "pieces": [
+     {
+      "kind": "stubby",
+      "x": 22,
+      "scale": 0.86,
+      "rot": -12
+     },
+     {
+      "kind": "wood",
+      "x": 50,
+      "scale": 1.08,
+      "rot": -4,
+      "hero": true
+     },
+     {
+      "kind": "nail",
+      "x": 78,
+      "scale": 0.84,
+      "rot": 16
+     }
+    ]
+   },
+   "bed": "img/rkcard_s9_01_blur.jpg"
+  },
+  {
+   "t": 460.1666666666667,
+   "dur": 8.066666666666666,
+   "sec": "S9",
+   "lugar": "hall",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r31.mp4",
+   "rate": 1
+  },
+  {
+   "t": 468.23333333333335,
+   "dur": 8.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 476.8333333333333,
+   "dur": 5.3,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "A sagging door",
+    "leftValue": "Misses",
+    "rightLabel": "After one screw",
+    "rightValue": "Lands",
+    "verdict": "The deadlatch works again."
+   },
+   "bed": "img/rkcard_s9_01_blur.jpg"
+  },
+  {
+   "t": 482.1333333333333,
+   "dur": 6.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 488.6,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "ProcessChips",
+   "props": {
+    "kicker": "FIX 3 · THE STRIKE",
+    "title": "Line up the plate",
+    "steps": [
+     {
+      "title": "A little up"
+     },
+     {
+      "title": "A little down"
+     },
+     {
+      "title": "Toward the stop"
+     }
+    ]
+   },
+   "bed": "img/rkcard_s10_01_blur.jpg"
+  },
+  {
+   "t": 495.6,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 498.8,
+   "dur": 6.8,
+   "sec": "S10",
+   "lugar": "garage",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r41.mp4",
+   "rate": 1
+  },
+  {
+   "t": 505.6,
+   "dur": 5.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 511,
+   "dur": 8.066666666666666,
+   "sec": "S10",
+   "lugar": "workshop",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r66.mp4",
+   "rate": 1
+  },
+  {
+   "t": 519.0666666666667,
+   "dur": 2.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 521.7666666666667,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "BigStat",
+   "props": {
+    "value": "$20–40",
+    "unit": "entry knob",
+    "tone": "brass",
+    "caption": "Same holes. A screwdriver."
+   },
+   "bed": "img/rkcard_s11_02_blur.jpg"
+  },
+  {
+   "t": 525.9666666666667,
+   "dur": 6.8,
+   "sec": "S11",
+   "lugar": "store",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r68.mp4",
+   "rate": 1
+  },
+  {
+   "t": 532.7666666666667,
+   "dur": 11.533333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 544.3,
+   "dur": 7.833333333333333,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "AT THE STORE",
+    "title": "Turn the box over",
+    "items": [
+     {
+      "text": "A second little plunger"
+     },
+     {
+      "text": "Grade 1 or grade 2"
+     },
+     {
+      "text": "No plunger? Put it back"
+     }
+    ]
+   },
+   "bed": "img/rkcard_s11_02_blur.jpg"
+  },
+  {
+   "t": 552.1333333333333,
+   "dur": 10.933333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 563.0666666666667,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "LatchGuardInstall",
+   "props": {},
+   "bed": "img/rkcard_s12_01_blur.jpg"
+  },
+  {
+   "t": 571.0666666666667,
+   "dur": 6.366666666666666,
+   "sec": "S12",
+   "lugar": "workshop",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r40.mp4",
+   "rate": 1
+  },
+  {
+   "t": 577.4333333333333,
+   "dur": 6.733333333333333,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "LATCH GUARDS",
+    "title": "Before you buy one",
+    "items": [
+     {
+      "text": "Around $15 to $30"
+     },
+     {
+      "text": "Best on outswing doors"
+     },
+     {
+      "text": "Renting? Ask first"
+     }
+    ]
+   },
+   "bed": "img/rkcard_s12_01_blur.jpg"
+  },
+  {
+   "t": 584.1666666666666,
+   "dur": 9.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 593.7666666666667,
+   "dur": 1.6666666666666667,
+   "sec": "S12",
+   "lugar": "backyard",
+   "kind": "imagen",
+   "asset": "img/rkcard_s12_04.jpg"
+  },
+  {
+   "t": 595.4333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S12",
+   "lugar": "garage",
+   "kind": "imagen",
+   "asset": "img/rkcard_s12_03.jpg"
+  },
+  {
+   "t": 599.4666666666667,
+   "dur": 1.8,
+   "sec": "S12",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkcard_s12_05.jpg"
+  },
+  {
+   "t": 601.2666666666667,
+   "dur": 6.2,
+   "sec": "S13",
+   "lugar": "workshop",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r43.mp4",
+   "rate": 1
+  },
+  {
+   "t": 607.4666666666667,
+   "dur": 1.5,
+   "sec": "S13",
+   "lugar": "hall",
+   "kind": "imagen",
+   "asset": "img/rkcard_s13_02.jpg"
+  },
+  {
+   "t": 608.9666666666667,
+   "dur": 7.5,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "BoltMorph",
+   "props": {
+    "mode": "throw"
+   },
+   "bed": "img/rkcard_s13_01_blur.jpg"
+  },
+  {
+   "t": 616.4666666666667,
+   "dur": 7,
+   "sec": "S13",
+   "lugar": "workshop",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r63.mp4",
+   "rate": 1
+  },
+  {
+   "t": 623.4666666666667,
+   "dur": 7.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 631.1666666666666,
+   "dur": 5.9,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "Box screws",
+    "leftValue": "3/4 in",
+    "rightLabel": "Into the framing",
+    "rightValue": "3 in",
+    "verdict": "Next he tries his shoulder."
+   },
+   "bed": "img/rkcard_s13_01_blur.jpg"
+  },
+  {
+   "t": 637.0666666666667,
+   "dur": 8.666666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 645.7333333333333,
+   "dur": 6.433333333333334,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "Brand name bar",
+    "leftValue": "$125",
+    "rightLabel": "Generic bar",
+    "rightValue": "$25",
+    "verdict": "It is a bar. It pushes on the floor."
+   },
+   "bed": "img/rkcard_s13_01_blur.jpg"
+  },
+  {
+   "t": 652.1666666666666,
+   "dur": 10.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 662.2333333333333,
+   "dur": 9,
+   "kind": "componente",
+   "sec": "S14",
+   "comp": "FixLadder",
+   "props": {
+    "highlight": 6
+   },
+   "bed": "img/rkcard_s14_01_blur.jpg"
+  },
+  {
+   "t": 671.2333333333333,
+   "dur": 5.4,
+   "sec": "S14",
+   "lugar": "exterior",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rkcard_real/rkcard_r70.mp4",
+   "rate": 1
+  },
+  {
+   "t": 676.6333333333333,
+   "dur": 1.4,
+   "sec": "S14",
+   "lugar": "garage",
+   "kind": "imagen",
+   "asset": "img/rkcard_s14_02.jpg"
+  },
+  {
+   "t": 678.0333333333333,
+   "dur": 9.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 687.1333333333333,
+   "dur": 6.2,
+   "sec": "S14",
+   "lugar": "garage",
+   "kind": "imagen",
+   "asset": "img/rkcard_s14_03.jpg"
+  },
+  {
+   "t": 693.3333333333334,
+   "dur": 1.4,
+   "sec": "S14",
+   "lugar": "backyard",
+   "kind": "imagen",
+   "asset": "img/rkcard_s14_04.jpg"
+  },
+  {
+   "t": 694.7333333333333,
+   "dur": 2.1666666666666665,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 696.9,
+   "dur": 7.566666666666666,
+   "kind": "componente",
+   "sec": "S14",
+   "comp": "WorstSpots",
+   "props": {
+    "kicker": "NOT JUST THE FRONT",
+    "title": "The doors that worry me",
+    "spots": [
+     {
+      "label": "Garage into the house"
+     },
+     {
+      "label": "Back door off the kitchen"
+     },
+     {
+      "label": "Side doors"
+     }
+    ]
+   },
+   "bed": "img/rkcard_s14_01_blur.jpg"
+  },
+  {
+   "t": 704.4666666666667,
+   "dur": 10,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 714.4666666666667,
+   "dur": 8.066666666666666,
+   "sec": "S14",
+   "lugar": "garage",
+   "kind": "imagen",
+   "asset": "img/rkcard_s14_08.jpg"
+  },
+  {
+   "t": 722.5333333333333,
+   "dur": 5,
+   "sec": "S14",
+   "lugar": "hall",
+   "kind": "imagen",
+   "asset": "img/rkcard_s14_05.jpg"
+  },
+  {
+   "t": 727.5333333333333,
+   "dur": 3.1,
+   "sec": "S14",
+   "lugar": "workshop",
+   "kind": "imagen",
+   "asset": "img/rkcard_s5_06.jpg"
+  },
+  {
+   "t": 730.6333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S14",
+   "lugar": "livingroom",
+   "kind": "imagen",
+   "asset": "img/rkcard_s14_06.jpg"
+  },
+  {
+   "t": 734.6666666666666,
+   "dur": 2.3,
+   "sec": "S14",
+   "lugar": "garage",
+   "kind": "imagen",
+   "asset": "img/rkcard_s14_02.jpg"
+  },
+  {
+   "t": 736.9666666666667,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 741,
+   "dur": 5.8,
+   "sec": "S15",
+   "lugar": "hall",
+   "kind": "imagen",
+   "asset": "img/rkcard_s15_02.jpg"
+  },
+  {
+   "t": 746.8,
+   "dur": 3.3,
+   "sec": "S15",
+   "lugar": "hall",
+   "kind": "imagen",
+   "asset": "img/rkcard_s15_03.jpg"
+  },
+  {
+   "t": 750.1,
+   "dur": 7.6,
+   "sec": "S15",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkcard_s15_05.jpg"
+  },
+  {
+   "t": 757.7,
+   "dur": 4.033333333333333,
+   "sec": "S15",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkcard_s15_04.jpg"
+  },
+  {
+   "t": 761.7333333333333,
+   "dur": 6.2,
+   "sec": "S15",
+   "lugar": "hall",
+   "kind": "imagen",
+   "asset": "img/rkcard_s1_03.jpg"
+  },
+  {
+   "t": 767.9333333333333,
+   "dur": 17,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 768.255,
+   "dur": 34,
+   "kind": "componente",
+   "sec": "S15",
+   "comp": "RayCta",
+   "props": {
+    "eyebrow": "THE WHOLE DOOR, IN ORDER",
+    "title": "The Thousand Dollar Afternoon",
+    "sub": "Three guides, $27. The One Afternoon Door, the phone call, 37 free fixes.",
+    "domain": "raykessler.vercel.app",
+    "qr": "img/rkcard_qr.png",
+    "showQr": true
+   },
+   "bed": "img/rkcard_s15_01_blur.jpg"
+  },
+  {
+   "t": 784.9333333333333,
+   "dur": 17.333333333333332,
+   "sec": "S15",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkcard_s15_01.jpg"
+  }
+ ]
+}

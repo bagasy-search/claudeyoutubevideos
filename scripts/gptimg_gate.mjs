@@ -62,7 +62,7 @@ function auditar(items, size, label) {
   for (const it of items) {
     // ⛔ "nothing blurred out" es la CLAUSULA DE PROFUNDIDAD OBLIGATORIA de la formula:
     // hay que sacarla ANTES de buscar prohibidos o la compuerta marca el 100% de los prompts.
-    const p = (it.prompt || "").toLowerCase().split("nothing blurred out").join("");
+    const p = (it.prompt || "").toLowerCase().split("nothing blurred out").join("").replace(/avoid [\s\S]*$/, "");   // la cláusula AVOID de la vara nombra lo prohibido para prohibirlo (27-sep)
     const hit = PROHIBIDOS.filter((w) => p.includes(w));
     if (hit.length) sucios.push(`${it.name}: ${hit.join(", ")}`);
   }

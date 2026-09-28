@@ -16,7 +16,7 @@
 // agnes sin ese sello (scripts/agnes_qc_gate.mjs).
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { execFileSync as _execFileSync } from "node:child_process"; const execFileSync = (c, a, o) => Array.isArray(a) ? _execFileSync(c, a, { windowsHide: true, ...(o || {}) }) : _execFileSync(c, { windowsHide: true, ...(a || {}) }); // sin ventanas de consola (27-sep)
 
 const [LIST, SLUG, IMGDIR0, OUT0] = process.argv.slice(2);
 if (!LIST || !SLUG) { console.error("uso: node scripts/agnes_i2v.mjs <lista.json> <slug> [imgDir] [outDir]"); process.exit(1); }

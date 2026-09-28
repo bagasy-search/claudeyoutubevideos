@@ -1,0 +1,412 @@
+{
+ "rkcard_r01": {
+  "sec": "S1",
+  "lugar": "kitchen",
+  "prompt": "plastic card hand real footage: plastic card held in hand card cards wallet"
+ },
+ "rkcard_r02": {
+  "sec": "S1",
+  "lugar": "kitchen",
+  "prompt": "kitchen drawer opening real footage: kitchen drawer open junk drawer cards"
+ },
+ "rkcard_r03": {
+  "sec": "S1",
+  "lugar": "porch",
+  "prompt": "suburban house front door real footage: front door house porch suburban door"
+ },
+ "rkcard_r04": {
+  "sec": "S1",
+  "lugar": "hall",
+  "prompt": "door knob close up real footage: doorknob knob door edge metal brass"
+ },
+ "rkcard_r05": {
+  "sec": "S2",
+  "lugar": "hall",
+  "prompt": "closing front door real footage: door closing shut pull door click frame"
+ },
+ "rkcard_r06": {
+  "sec": "S2",
+  "lugar": "hall",
+  "prompt": "door latch close up real footage: latch bolt door edge strike plate metal ramp spring"
+ },
+ "rkcard_r07": {
+  "sec": "S2",
+  "lugar": "porch",
+  "prompt": "door handle turning real footage: door handle knob turning opening door"
+ },
+ "rkcard_r08": {
+  "sec": "S2",
+  "lugar": "hall",
+  "prompt": "opening front door inside real footage: front door open hallway inside house"
+ },
+ "rkcard_r09": {
+  "sec": "S3",
+  "lugar": "hall",
+  "prompt": "locking door knob real footage: lock knob locking door button"
+ },
+ "rkcard_r10": {
+  "sec": "S3",
+  "lugar": "street",
+  "prompt": "suburban street houses real footage: street houses neighbourhood doors suburban"
+ },
+ "rkcard_r11": {
+  "sec": "S3",
+  "lugar": "workshop",
+  "prompt": "old locksmith tools real footage: locksmith tools old toolbox keys trade"
+ },
+ "rkcard_r12": {
+  "sec": "S3",
+  "lugar": "porch",
+  "prompt": "door frame trim real footage: door frame trim molding door stop gap"
+ },
+ "rkcard_r13": {
+  "sec": "S4",
+  "lugar": "kitchen",
+  "prompt": "plastic water bottle real footage: water bottle plastic bottle trick"
+ },
+ "rkcard_r14": {
+  "sec": "S4",
+  "lugar": "porch",
+  "prompt": "front door exterior real footage: door intact front door exterior no damage"
+ },
+ "rkcard_r15": {
+  "sec": "S4",
+  "lugar": "livingroom",
+  "prompt": "quiet living room real footage: living room quiet house home inside"
+ },
+ "rkcard_r16": {
+  "sec": "S5",
+  "lugar": "hall",
+  "prompt": "door edge lock real footage: door edge lock latch metal pieces frame"
+ },
+ "rkcard_r17": {
+  "sec": "S5",
+  "lugar": "hall",
+  "prompt": "door lock mechanism real footage: lock mechanism latch plunger bolt door"
+ },
+ "rkcard_r18": {
+  "sec": "S5",
+  "lugar": "hall",
+  "prompt": "hand closing door slowly real footage: closing door slowly door frame latch plate"
+ },
+ "rkcard_r19": {
+  "sec": "S6",
+  "lugar": "exterior",
+  "prompt": "old wooden house real footage: old house settle sag wooden house frame"
+ },
+ "rkcard_r20": {
+  "sec": "S6",
+  "lugar": "hall",
+  "prompt": "door hinge close up real footage: hinge screws door hinge top loose"
+ },
+ "rkcard_r21": {
+  "sec": "S6",
+  "lugar": "hall",
+  "prompt": "painting door frame real footage: paint frame painting door brush"
+ },
+ "rkcard_r22": {
+  "sec": "S6",
+  "lugar": "porch",
+  "prompt": "weatherstripping door real footage: weatherstripping seal door frame gap"
+ },
+ "rkcard_r23": {
+  "sec": "S7",
+  "lugar": "hall",
+  "prompt": "light under door real footage: daylight gap light door crack"
+ },
+ "rkcard_r24": {
+  "sec": "S7",
+  "lugar": "kitchen",
+  "prompt": "writing notes table real footage: writing notes guide pencil list table"
+ },
+ "rkcard_r25": {
+  "sec": "S7",
+  "lugar": "store",
+  "prompt": "hardware store aisle real footage: hardware store aisle shelves shopping list"
+ },
+ "rkcard_r26": {
+  "sec": "S8",
+  "lugar": "hall",
+  "prompt": "deadbolt lock door real footage: deadbolt lock thumb turn bolt door"
+ },
+ "rkcard_r27": {
+  "sec": "S8",
+  "lugar": "porch",
+  "prompt": "locking door with key real footage: key lock locking door leave house"
+ },
+ "rkcard_r28": {
+  "sec": "S8",
+  "lugar": "kitchen",
+  "prompt": "turning off stove real footage: stove knob night check habit kitchen"
+ },
+ "rkcard_r29": {
+  "sec": "S8",
+  "lugar": "hall",
+  "prompt": "keys in door lock real footage: keys lock door key ring"
+ },
+ "rkcard_r30": {
+  "sec": "S9",
+  "lugar": "workshop",
+  "prompt": "wood screws close up real footage: screws screw wood long screw three inch"
+ },
+ "rkcard_r31": {
+  "sec": "S9",
+  "lugar": "hall",
+  "prompt": "cordless drill screw real footage: drill driving screw hinge wood frame"
+ },
+ "rkcard_r32": {
+  "sec": "S9",
+  "lugar": "workshop",
+  "prompt": "screwdriver screw wood real footage: screwdriver screw top hinge tighten"
+ },
+ "rkcard_r33": {
+  "sec": "S10",
+  "lugar": "workshop",
+  "prompt": "metal file filing real footage: file filing metal plate strike opening"
+ },
+ "rkcard_r34": {
+  "sec": "S10",
+  "lugar": "workshop",
+  "prompt": "wood glue real footage: glue wood filling holes plug"
+ },
+ "rkcard_r35": {
+  "sec": "S10",
+  "lugar": "workshop",
+  "prompt": "carpenter pencil marking wood real footage: pencil marking plate line frame"
+ },
+ "rkcard_r36": {
+  "sec": "S11",
+  "lugar": "store",
+  "prompt": "hardware store shelf real footage: store shelf knobs packages hardware"
+ },
+ "rkcard_r37": {
+  "sec": "S11",
+  "lugar": "hall",
+  "prompt": "installing door knob real footage: installing knob screwdriver door holes"
+ },
+ "rkcard_r38": {
+  "sec": "S11",
+  "lugar": "store",
+  "prompt": "shopping hardware real footage: store package box buying hardware"
+ },
+ "rkcard_r39": {
+  "sec": "S12",
+  "lugar": "backyard",
+  "prompt": "side door house real footage: side door outward door exterior garage"
+ },
+ "rkcard_r40": {
+  "sec": "S12",
+  "lugar": "workshop",
+  "prompt": "measuring tape real footage: measure measuring tape trim fit"
+ },
+ "rkcard_r41": {
+  "sec": "S12",
+  "lugar": "garage",
+  "prompt": "garage side door real footage: garage door side door entry"
+ },
+ "rkcard_r42": {
+  "sec": "S13",
+  "lugar": "hall",
+  "prompt": "drilling hole wood door real footage: drill hole saw door deadbolt install"
+ },
+ "rkcard_r43": {
+  "sec": "S13",
+  "lugar": "workshop",
+  "prompt": "drilling wood real footage: drilling wood drill saturday install"
+ },
+ "rkcard_r44": {
+  "sec": "S13",
+  "lugar": "hall",
+  "prompt": "door lock installation real footage: deadbolt install lock bolt strike screws"
+ },
+ "rkcard_r45": {
+  "sec": "S13",
+  "lugar": "hall",
+  "prompt": "door security bar real footage: security bar door wedge knob floor"
+ },
+ "rkcard_r46": {
+  "sec": "S14",
+  "lugar": "kitchen",
+  "prompt": "writing list notebook real footage: list notebook order cheapest write"
+ },
+ "rkcard_r47": {
+  "sec": "S14",
+  "lugar": "garage",
+  "prompt": "garage interior real footage: garage door into house inside garage"
+ },
+ "rkcard_r48": {
+  "sec": "S14",
+  "lugar": "backyard",
+  "prompt": "back door house real footage: back door kitchen door yard"
+ },
+ "rkcard_r49": {
+  "sec": "S14",
+  "lugar": "exterior",
+  "prompt": "house exterior doors real footage: house doors outside exterior weekend"
+ },
+ "rkcard_r50": {
+  "sec": "S15",
+  "lugar": "hall",
+  "prompt": "front door evening real footage: front door evening tonight hallway"
+ },
+ "rkcard_r51": {
+  "sec": "S15",
+  "lugar": "porch",
+  "prompt": "porch light evening real footage: porch light dusk door house"
+ },
+ "rkcard_r52": {
+  "sec": "S15",
+  "lugar": "kitchen",
+  "prompt": "closing kitchen drawer real footage: drawer closing card kitchen"
+ },
+ "rkcard_r53": {
+  "sec": "S1",
+  "lugar": "hall",
+  "prompt": "door lock close up real footage: lock door latch knob edge"
+ },
+ "rkcard_r54": {
+  "sec": "S8",
+  "lugar": "porch",
+  "prompt": "key turning in door lock real footage: key lock turning locking door deadbolt"
+ },
+ "rkcard_r55": {
+  "sec": "S2",
+  "lugar": "hall",
+  "prompt": "door handle close up real footage: door handle knob latch"
+ },
+ "rkcard_r56": {
+  "sec": "S8",
+  "lugar": "hall",
+  "prompt": "deadbolt close up real footage: deadbolt bolt lock thumb turn"
+ },
+ "rkcard_r57": {
+  "sec": "S3",
+  "lugar": "porch",
+  "prompt": "brass door knob real footage: knob brass doorknob lock"
+ },
+ "rkcard_r58": {
+  "sec": "S1",
+  "lugar": "porch",
+  "prompt": "white front door real footage: front door white house door"
+ },
+ "rkcard_r59": {
+  "sec": "S2",
+  "lugar": "hall",
+  "prompt": "door opening slowly real footage: door open opening frame"
+ },
+ "rkcard_r60": {
+  "sec": "S5",
+  "lugar": "hall",
+  "prompt": "door closing slowly real footage: door closing shut frame latch"
+ },
+ "rkcard_r61": {
+  "sec": "S9",
+  "lugar": "workshop",
+  "prompt": "screw close up real footage: screw screws long wood"
+ },
+ "rkcard_r62": {
+  "sec": "S9",
+  "lugar": "workshop",
+  "prompt": "screwdriver close up real footage: screwdriver screw tighten"
+ },
+ "rkcard_r63": {
+  "sec": "S13",
+  "lugar": "workshop",
+  "prompt": "drill wood close up real footage: drill drilling wood hole"
+ },
+ "rkcard_r64": {
+  "sec": "S6",
+  "lugar": "hall",
+  "prompt": "hinge close up real footage: hinge door hinge screws"
+ },
+ "rkcard_r65": {
+  "sec": "S3",
+  "lugar": "workshop",
+  "prompt": "tools on workbench real footage: tools workbench toolbox trade"
+ },
+ "rkcard_r66": {
+  "sec": "S10",
+  "lugar": "workshop",
+  "prompt": "toolbox tools real footage: toolbox tools screwdriver file"
+ },
+ "rkcard_r67": {
+  "sec": "S15",
+  "lugar": "kitchen",
+  "prompt": "keys on table real footage: keys key ring table"
+ },
+ "rkcard_r68": {
+  "sec": "S11",
+  "lugar": "store",
+  "prompt": "screws hardware bin real footage: screws hardware store bins"
+ },
+ "rkcard_r69": {
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "house front porch real footage: porch front door house"
+ },
+ "rkcard_r70": {
+  "sec": "S14",
+  "lugar": "exterior",
+  "prompt": "suburban home exterior real footage: house home exterior doors"
+ },
+ "rkcard_r71": {
+  "sec": "S4",
+  "lugar": "porch",
+  "prompt": "doorbell front door real footage: door doorbell front porch"
+ },
+ "rkcard_r72": {
+  "sec": "S6",
+  "lugar": "hall",
+  "prompt": "wooden door texture real footage: door wood paint old"
+ },
+ "rkcard_r73": {
+  "sec": "S5",
+  "lugar": "hall",
+  "prompt": "door frame close up real footage: frame door frame strike gap"
+ },
+ "rkcard_r74": {
+  "sec": "S15",
+  "lugar": "hall",
+  "prompt": "hallway interior home real footage: hallway home inside door"
+ },
+ "rkcard_r75": {
+  "sec": "S1",
+  "lugar": "kitchen",
+  "prompt": "kitchen interior morning real footage: kitchen home morning drawer"
+ },
+ "rkcard_r76": {
+  "sec": "S14",
+  "lugar": "garage",
+  "prompt": "garage interior tools real footage: garage tools inside"
+ },
+ "rkcard_r77": {
+  "sec": "S12",
+  "lugar": "backyard",
+  "prompt": "back porch door real footage: back door porch yard outward"
+ },
+ "rkcard_r78": {
+  "sec": "S7",
+  "lugar": "hall",
+  "prompt": "sunlight through window home real footage: daylight light gap window"
+ },
+ "rkcard_r79": {
+  "sec": "S15",
+  "lugar": "exterior",
+  "prompt": "house exterior at night real footage: house night porch light tonight"
+ },
+ "rkcard_r80": {
+  "sec": "S13",
+  "lugar": "hall",
+  "prompt": "lock and key real footage: lock key bolt deadbolt"
+ },
+ "rkcard_r81": {
+  "sec": "S10",
+  "lugar": "workshop",
+  "prompt": "measuring wood pencil real footage: pencil marking measure wood plate"
+ },
+ "rkcard_r82": {
+  "sec": "S4",
+  "lugar": "livingroom",
+  "prompt": "cozy living room real footage: living room home quiet"
+ }
+}
