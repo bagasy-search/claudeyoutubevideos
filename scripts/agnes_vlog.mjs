@@ -344,7 +344,7 @@ async function slotGet(id) {
   for (;;) {
     const now = Date.now();
     for (const f of fs.readdirSync(SLOTS)) { try { if (now - fs.statSync(SLOTS + "/" + f).mtimeMs > 50 * 60e3) fs.unlinkSync(SLOTS + "/" + f); } catch {} }
-    let vmax = VMAX; try { vmax = Math.min(3, +fs.readFileSync(SLOTS + "/_max", "utf8") || VMAX); } catch {}   // _max: se sube a mano / por el sondeo
+    let vmax = VMAX; try { vmax = Math.min(3, +fs.readFileSync(SLOTS + "/_max_tope", "utf8") || VMAX); } catch {}   // _max: se sube a mano / por el sondeo
     for (let i = 0; i < vmax; i++) { const f = `${SLOTS}/slot${i}`; try { fs.writeFileSync(f, `${process.pid} ${id}`, { flag: "wx" }); return f; } catch {} }
     await sleep(20000 + Math.random() * 10000);
   }
