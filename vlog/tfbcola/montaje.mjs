@@ -9,7 +9,7 @@ const J = f => JSON.parse(fs.readFileSync(f, "utf8"));
 const FPS = 30, PUB = ROOT + "/public/", OUTP = "tfbcola/";
 const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a], { maxBuffer: 1 << 26 });
 const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
-const SCENES = ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S9m", "S9b", "S10", "S10b", "S11", "S12", "S13"];
+const SCENES = process.env.SCENES ? process.env.SCENES.split(",") : ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S9m", "S9b", "S10", "S10b", "S11", "S12", "S13"];
 const BJ = J(HERE + "/beats.json"), TR = J(HERE + "/tramos.json"), ASR = Object.values(J(HERE + "/asr.json"))[0];
 const trById = Object.fromEntries(TR.map(t => [t.id, t]));
 fs.mkdirSync(PUB + OUTP + "det", { recursive: true }); fs.mkdirSync(PUB + OUTP + "img", { recursive: true });
@@ -58,6 +58,13 @@ for (const S of SCENES) {
 fs.writeFileSync(TMP + "voz.txt", AUDS.map(a => `file '${a}'\n`).join(""));
 ff("-f", "concat", "-safe", "0", "-i", TMP + "voz.txt", "-c:a", "pcm_s16le", TMP + "voz.wav");
 ff("-i", TMP + "voz.wav", "-c:a", "aac", "-b:a", "192k", PUB + OUTP + "tfbcola_voz.m4a");
+// CAMA DEL GANCHO (0-62 s): retumbo de tensión 0-6 s + música desde el 5,5 s, COMPRIMIDA por la voz (sidechain): en las
+// pausas queda a ~-24 dBFS (0 silencios en el minuto 1) y bajo la voz se hunde ~15 dB. Sin música en los 3 s del golpe.
+ff("-i", TMP + "voz.wav", "-i", PUB + "sfx/music_federer.mp3", "-i", PUB + "sfx/rumble_const.mp3", "-filter_complex",
+  "[1:a]atrim=0:58,asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo,adelay=5500|5500,volume=0.35,afade=t=in:st=5.5:d=1,afade=t=out:st=59:d=4[m];" +
+  "[2:a]aresample=48000,aformat=channel_layouts=stereo,volume=0.22,afade=t=in:st=0:d=0.3,afade=t=out:st=5:d=2[r];[m][r]amix=inputs=2:normalize=0:duration=longest[bed];" +
+  "[0:a]atrim=0:64,asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo[v];[bed][v]sidechaincompress=threshold=0.015:ratio=10:attack=15:release=300[out]",
+  "-map", "[out]", "-t", "64", "-c:a", "aac", "-b:a", "160k", PUB + OUTP + "bed_hook.m4a");
 if (!fs.existsSync(PUB + OUTP + "img/lamina_tfbcola.jpg")) fs.copyFileSync(PUB + "img/tfbcola/lamina_tfbcola.jpg", PUB + OUTP + "img/lamina_tfbcola.jpg");
 for (const f of ["qr_tfbcola.png", "portada-coleccion.jpg"]) fs.copyFileSync(PUB + "img/tfbcola/" + f, PUB + OUTP + "img/" + f);
 const TOTAL = Math.round(t * FPS);
@@ -81,6 +88,7 @@ const CQ = J(HERE + "/cues.json");
 const CUES = [], CAM = [], SFX = [];
 const sfx = (fr, src, vol = 0.5, d = 60) => SFX.push({ key: `sfx${SFX.length}`, from: Math.max(0, fr), dur: d, src: "sfx/" + src, vol });
 for (const [i, q] of CQ.entries()) {
+  if (process.env.SCENES && !CLIPAT[q.at]) continue;
   const g = wordAt(q.at, q.w, q.nth) + (q.off || 0), fr = Math.round(g * FPS);
   const d = Math.round((q.dur || 3) * FPS);
   const props = JSON.parse(JSON.stringify(q.props || {}));
@@ -106,6 +114,13 @@ for (const [id, A] of Object.entries(CLIPAT)) {
   const fr = Math.round(A.vg * FPS); if (SFX.some(s => Math.abs(s.from - fr) < 12)) continue;
   if (A.c && A.c.cut) sfx(fr - 3, ["sfx_trans1.mp3", "sfx_trans2.mp3", "sfx_trans3.mp3", "sfx_trans4.mp3"][fr % 4], 0.22);
 }
+// minuto 1: ninguna toma > ~2,6 s → a mitad de cada plano hablado largo, CORTE a un encuadre más cerrado (jump-cut)
+for (const [id, A] of Object.entries(CLIPAT)) {
+  if (!A.c || A.lamina || A.vg > 60 || A.c.detail || A.c.vdur < 2.6) continue;
+  const n = Math.max(1, Math.floor(A.c.vdur / 2.0)); // cuántos saltos entran
+  for (let k = 1; k <= n; k++) { const f0 = Math.round((A.vg + (A.c.vdur * k) / (n + 1)) * FPS), f1 = k < n ? Math.round((A.vg + (A.c.vdur * (k + 1)) / (n + 1)) * FPS) : Math.round((A.vg + A.c.vdur) * FPS);
+    if (k % 2) CAM.push({ f: f0, kind: "crop", dur: f1 - f0, amt: 1, x: 50 + (k % 3 - 1) * 12, y: 34 }); }
+}
 // foley de los planos de detalle con voz encima (los X ya suenan en el audio de escena)
 for (const [id, A] of Object.entries(CLIPAT)) {
   if (!A.c || !A.c.detail || !A.c.file) continue; const T = TR.find(x => x.id === id); if (!T) continue; // sólo D (con voz)
@@ -115,8 +130,8 @@ for (const [id, A] of Object.entries(CLIPAT)) {
 // música: cama del gancho desde el seg 6 (≈ −22 dB bajo la voz), vuelve bajo la ficha y en el cierre
 const lam = SEGS.find(s => s.kind === "lamina");
 const MUSIC = [
-  { key: "m_hook", src: "sfx/music_federer.mp3", from: 6 * FPS, dur: 58 * FPS, vol: 0.075, fadeIn: 20, fadeOut: 45 },
-  { key: "m_lam", src: "sfx/music_federer.mp3", from: lam.from - 15, dur: lam.dur + 30, vol: 0.05, fadeIn: 30, fadeOut: 30, startFrom: 40 * FPS },
+  { key: "m_hook", src: OUTP + "bed_hook.m4a", from: 0, dur: 64 * FPS, vol: 1, fadeIn: 1, fadeOut: 20 },
+  ...(lam ? [{ key: "m_lam", src: "sfx/music_federer.mp3", from: lam.from - 15, dur: lam.dur + 30, vol: 0.05, fadeIn: 30, fadeOut: 30, startFrom: 40 * FPS }] : []),
   { key: "m_end", src: "sfx/music_federer.mp3", from: TOTAL - 45 * FPS, dur: 45 * FPS, vol: 0.07, fadeIn: 60, fadeOut: 60, startFrom: 70 * FPS },
 ];
 CAM.sort((a, b) => a.f - b.f); SFX.sort((a, b) => a.from - b.from); CUES.sort((a, b) => a.from - b.from);

@@ -3,6 +3,7 @@
 import sys, json, subprocess, numpy as np, os
 S = sys.argv[1]; D = f'out/vlog/{S}/clips/'
 XT = {'b000': 3.2, 'b001': 2.2, 'b147': 3.4}
+CUTS = {'b002': 'b002cut.mp4'}  # vecino con pausa muerta de 1,5 s en el medio: versión con la pausa sacada (a mano, ffmpeg)
 P = json.load(open(f'vlog/tfbcola/{S}.json', encoding='utf8'))
 st = json.load(open(D + 'state.json')) if os.path.exists(D + 'state.json') else {}
 sd = json.load(open(D + 'state_det.json')) if os.path.exists(D + 'state_det.json') else {}
@@ -11,6 +12,8 @@ def fin(f):
     x = np.frombuffer(b, np.int16).astype(float) / 32768; n = len(x) // 160
     e = 20 * np.log10(np.sqrt((x[:n * 160].reshape(n, 160) ** 2).mean(1)) + 1e-7); th = e.max() - 30
     idx = np.where(e > th)[0]; return (idx[-1] + 1) * 0.01 if len(idx) else None
+for k, f in CUTS.items():
+    if k in st and os.path.exists(D + f): st[k]['file'] = f
 for c in P['clips']:
     if c.get('line') and c['id'] in st:
         v = st[c['id']]; e = fin(D + v['file'])

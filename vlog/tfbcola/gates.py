@@ -33,4 +33,4 @@ for t in qrs:
     qr_ok.append((t, d))
 out['qr'] = qr_ok
 if not all(d.startswith('https://constructorlibre.com') for _, d in qr_ok): ok = False
-print(json.dumps(out, ensure_ascii=False, indent=1)); print('COMPUERTAS', 'OK' if ok else '⛔ FALLAN'); sys.exit(0 if ok else 1)
+print(json.dumps(out, ensure_ascii=False, indent=1)); print('COMPUERTAS', 'OK' if ok else 'FALLAN'); sys.exit(0 if ok else 1)

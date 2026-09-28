@@ -2,13 +2,14 @@
 //   punch  → zoom-punch seco (entra rápido, se asienta) para golpes y revelaciones
 //   push   → acercamiento lento sostenido (tensión) hacia un punto
 //   shake  → sacudón amortiguado en impactos (rotura, golpe de martillo)
+//   crop   → CORTE a un encuadre más cerrado (jump-cut de montaje, sin animación) durante `dur` cuadros
 //   whip   → barrido lateral con desenfoque de movimiento (transición entre escenas, centrado en el corte)
 // Todo determinista (el farm rinde en chunks). Los eventos se pasan ya ordenados o no: se suman.
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { clamp, easeInOut, easeOut } from "./theme";
 
-export type CamEvent = { f: number; kind: "punch" | "push" | "shake" | "whip"; dur?: number; amt?: number; x?: number; y?: number; dir?: 1 | -1 };
+export type CamEvent = { f: number; kind: "punch" | "push" | "shake" | "whip" | "crop"; dur?: number; amt?: number; x?: number; y?: number; dir?: 1 | -1 };
 export const TfbCamera: React.FC<{ events: CamEvent[]; children: React.ReactNode }> = ({ events, children }) => {
   const g = useCurrentFrame();
   let scale = 1, tx = 0, ty = 0, rot = 0, blur = 0, ox = 50, oy = 50;
@@ -18,7 +19,8 @@ export const TfbCamera: React.FC<{ events: CamEvent[]; children: React.ReactNode
     if (e.kind === "whip") { if (t < -d / 2 || t > d / 2) continue; }
     else if (t < 0 || t > d) continue;
     const a = e.amt ?? 1;
-    if (e.kind === "punch") {
+    if (e.kind === "crop") { scale *= 1 + 0.3 * a; ox = e.x ?? ox; oy = e.y ?? oy; }
+    else if (e.kind === "punch") {
       const k = t < 4 ? interpolate(t, [0, 4], [0, 1], { ...clamp, easing: easeOut }) : interpolate(t, [4, d], [1, 0.35], { ...clamp, easing: easeInOut });
       scale *= 1 + 0.12 * a * k; ox = e.x ?? ox; oy = e.y ?? oy;
     } else if (e.kind === "push") {
