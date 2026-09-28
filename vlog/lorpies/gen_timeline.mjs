@@ -36,7 +36,9 @@ shots.forEach((s, i) => {
     if (ex(p)) { c.src = p; c.sf = 0; if (ex(`vid/lorpies/${s.name}_foley.m4a`)) foley.push({ from: f0, dur: c.dur, src: `vid/lorpies/${s.name}_foley.m4a` }); }
     else { c.k = "img"; c.src = null; c.fallback = s.name; }
   } else if (s.kind === "bi" || s.kind === "lor") {
-    const clip = `broll/lorpies/${s.name}.mp4`, img = `img/lorpies/${s.name}.jpg`;
+    const st = `broll/lorpies_st30/${s.name}.mp4`; // stock REAL (Pexels, 30/1 CFR, mirado en hoja) manda sobre el clip agnes
+    const clip = ex(st) ? st : `broll/lorpies/${s.name}.mp4`, img = `img/lorpies/${s.name}.jpg`;
+    if (ex(st)) c.real = 1;
     c.img = ex(img) ? img : null;
     if (ex(clip)) { c.clip = clip; c.clipF = Math.floor(probeDur(clip) * FPS) - 1; }
     c.k = "img"; if (!c.img) warn.push(`falta imagen ${s.name}`);

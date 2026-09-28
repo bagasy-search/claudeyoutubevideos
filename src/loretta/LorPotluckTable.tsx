@@ -39,7 +39,7 @@ export const PieTop: React.FC<{ type: PieType; size: number; seed: number }> = (
 export const LorPotluckTable: React.FC<{ pies: { name: string; type: PieType }[]; fadeAt?: number; yearFrom?: number; yearTo?: number; sign?: string }> = ({ pies, fadeAt = 7, yearFrom = 1958, yearTo = 1974, sign = "Church Supper · Everyone Welcome" }) => {
   const f = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
-  const n = pies.length, gap = 380, tableW = n * gap + 400;
+  const n = pies.length, gap = 330, tableW = n * gap + 260;
   const appearEach = Math.min(0.55 * fps, (fadeAt * fps - 20) / Math.max(1, n));
   // cámara: recorre la mesa mientras aparecen, y al desvanecer se aleja para ver toda la mesa
   const panEnd = fadeAt * fps;
@@ -49,21 +49,21 @@ export const LorPotluckTable: React.FC<{ pies: { name: string; type: PieType }[]
   const year = Math.round(yearFrom + (yearTo - yearFrom) * yearP);
   return (
     <AbsoluteFill style={{ backgroundColor: "#6B4A2E", overflow: "hidden" }}>
-      <div style={{ position: "absolute", left: "50%", top: "50%", width: tableW, height: 760, translate: `${-960 + camX}px -380px`, scale: String(zoom), transformOrigin: `${960 - camX}px 380px` }}>
+      <div style={{ position: "absolute", left: "50%", top: "50%", width: tableW, height: 900, translate: `${-960 + camX}px -450px`, scale: String(zoom), transformOrigin: `${960 - camX}px 450px` }}>
         <div style={{ position: "absolute", inset: 0, borderRadius: 14, backgroundColor: "#FFFDF7", backgroundImage: `linear-gradient(90deg, rgba(200,50,58,0.5) 50%, transparent 50%), linear-gradient(rgba(200,50,58,0.5) 50%, transparent 50%)`, backgroundSize: "60px 60px", boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }} />
         {pies.map((p, i) => {
           const t0 = 10 + i * appearEach;
           const inP = interpolate(f, [t0, t0 + 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.2, 1.3, 0.4, 1) });
           const fadeStart = panEnd + 1.5 * fps + i * ((durationInFrames - panEnd - 2.7 * fps) / n);
           const out = interpolate(f, [fadeStart, fadeStart + 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-          const x = 200 + i * gap + gap / 2, y = 380 + (i % 2 ? 60 : -60);
+          const x = 130 + i * gap + gap / 2, y = 450 + (i % 2 ? 70 : -70);
           return (
             <div key={i} style={{ position: "absolute", left: x, top: y, translate: "-50% -50%", textAlign: "center" }}>
               <div style={{ position: "absolute", left: "50%", top: 130, translate: "-50% -50%", width: 250, height: 250, borderRadius: "50%", border: "3px dashed rgba(59,42,30,0.35)", opacity: out }} />
               <div style={{ scale: String(inP * (1 - out * 0.15)), opacity: inP * (1 - out), filter: `grayscale(${out})` }}>
-                <PieTop type={p.type} size={260} seed={i + 3} />
+                <PieTop type={p.type} size={300} seed={i + 3} />
               </div>
-              <div style={{ marginTop: 6, fontFamily: HAND, fontWeight: 700, fontSize: 46, color: LOR.ink, background: "rgba(255,253,247,0.92)", padding: "0 14px", borderRadius: 8, opacity: inP * (1 - out * 0.6), textDecoration: out > 0.5 ? "line-through" : "none" }}>{p.name}</div>
+              <div style={{ marginTop: 6, fontFamily: HAND, fontWeight: 700, fontSize: 54, color: LOR.ink, background: "rgba(255,253,247,0.92)", padding: "0 14px", borderRadius: 8, opacity: inP * (1 - out * 0.6), textDecoration: out > 0.5 ? "line-through" : "none" }}>{p.name}</div>
             </div>
           );
         })}

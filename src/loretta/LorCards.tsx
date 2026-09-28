@@ -116,7 +116,7 @@ export const LorPieCut: React.FC<{ cuts?: number; extra?: number; label?: string
         </div>
         <div style={{ background: "rgba(255,253,247,0.95)", padding: "40px 50px", borderRadius: 16, boxShadow: `0 20px 50px ${LOR.shadow}` }}>
           {label ? <div style={{ fontFamily: SERIF, fontWeight: 800, fontSize: 52, color: LOR.inkSoft }}>{label}</div> : null}
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 190, color: LOR.ink, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{n2 >= 1 ? Math.round(n2) : Math.round(n1)}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 190, color: LOR.ink, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{n2 > cuts ? Math.round(n2) : Math.round(n1)}</div>
           <div style={{ fontFamily: SERIF, fontWeight: 800, fontSize: 60, color: LOR.ink }}>pieces</div>
           {note ? <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 50, color: LOR.gingham, marginTop: 10, opacity: interpolate(f, [tExtra, tExtra + 10], [0, 1], cl) }}>{note}</div> : null}
         </div>
