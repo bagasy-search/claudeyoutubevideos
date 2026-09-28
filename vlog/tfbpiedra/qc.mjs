@@ -10,6 +10,7 @@ const QF = V + "qc.json", Q = fs.existsSync(QF) ? JSON.parse(fs.readFileSync(QF,
 const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
 const log = (...a) => fs.appendFileSync(V + "qc.log", new Date().toISOString().slice(11, 19) + " " + a.join(" ") + "\n");
 const alive = pid => { try { process.kill(pid, 0); return true; } catch { return false; } };
+const durOf = f => +spawnSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], { windowsHide: true, encoding: "utf8" }).stdout;
 const run = (args, logf) => spawnSync(process.execPath, ["scripts/agnes_vlog.mjs", ...args], { cwd: R, windowsHide: true, encoding: "utf8", maxBuffer: 1 << 26 }).stdout + "";
 for (;;) {
   let pend = 0;
@@ -29,14 +30,15 @@ for (;;) {
       if (/NO ES/.test(l)) log(id, "mirar a ojo (visión dice otra cara):", m[1]);
       // salto de pose en un DETALLE en el último 40 %: no se regenera (suele repetirse) → se usa hasta antes del salto, en cámara lenta
       const sj = l.match(/⛔ SALTO de pose en ([\d.]+)s/), det = /\(detalle\)/.test(l);
-      if (sj && det) { const tl = P.clips.find(c => c.id === m[1]), len = tl.audio ? Math.max(4, +(tl.len || 0)) : 4; const t = +sj[1];
-        const OF = P.dir + "/overrides.json", O = J(OF); if (t >= 3) { O[m[1]] = { ...(O[m[1]] || {}), trimTo: +(t - 0.15).toFixed(2) }; fs.writeFileSync(OF, JSON.stringify(O, null, 1)); log(id, m[1], "salto en", t, "→ trimTo", (t - 0.15).toFixed(2)); return null; } }
+      if (sj && det) { const tl = P.clips.find(c => c.id === m[1]), t = +sj[1], OF = P.dir + "/overrides.json", O = J(OF);
+        const len = tl.audio ? durOf(tl.audio) : (tl.secs || 4), prev = (O[m[1]] || {}).trimTo;
+        if (t >= 0.6 * len) { /* salto tarde: se usa hasta antes, en cámara lenta suave (≥0,6x); temprano → regenerar */ O[m[1]] = { ...(O[m[1]] || {}), trimTo: +(t - 0.15).toFixed(2) }; fs.writeFileSync(OF, JSON.stringify(O, null, 1)); log(id, m[1], "salto en", t, "→ trimTo", (t - 0.15).toFixed(2)); return null; } }
       const bad = (lab && lab[1] === "⛔") || (l.includes("⛔ SALTO") && !det) || (sj && det) || (/de más:|falta:/.test(l) && corr != null && corr < 0.9 && /⛔ REGENERAR/.test(l));
       return bad ? m[1] : null; }).filter(Boolean).filter(c => (q.regen[c] || 0) < 2);
     if (id === "T") { q.state = "revisado"; log("T check (se arma en mktimeline)", malos.join(" ")); if (!malos.length) { q.state = "armado"; } }
     const MAX = +(fs.existsSync(V + "max.txt") ? fs.readFileSync(V + "max.txt", "utf8").trim() : 3) || 3;
     const vuelo = new Set([...Object.values(J(V + "launched.json")).map(x => x.pid), ...Object.values(Q).map(x => x.pid)].filter(p => p && alive(p))).size;
-    if (malos.length && vuelo >= MAX) { log(id, `espero cupo (${vuelo}/${MAX} en vuelo) para regenerar`, malos.join(" ")); continue; }
+    if (malos.length && vuelo >= MAX + 2) { log(id, `espero cupo (${vuelo}/${MAX} en vuelo) para regenerar`, malos.join(" ")); continue; }
     if (malos.length) {
       malos.forEach(c => q.regen[c] = (q.regen[c] || 0) + 1);
       const o = fs.openSync(V + `clips_${id}.log`, "a");
