@@ -8,6 +8,6 @@ N=$(grep -oE "TOTAL_FRAMES_LORPIES = [0-9]+" src/lorpies/timeline_lorpies.gen.ts
 ffmpeg -v error -y -i "$IN" -i out/lorpies_mix.wav -map 0:v:0 -map 1:a:0 \
   -vf "setpts=N/(30*TB),scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p" \
   -fps_mode passthrough -frames:v $N -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
-  -c:v libx264 -preset faster -crf 20 -maxrate 8M -bufsize 12M -g 60 -keyint_min 60 -sc_threshold 0 -threads 8 \
+  -c:v libx264 -preset faster -crf 20 -bf 0 -maxrate 8M -bufsize 12M -g 60 -keyint_min 60 -sc_threshold 0 -threads 8 \
   -c:a aac -b:a 192k -ar 48000 -ac 2 -t $(python -c "print($N/30)") -movflags +faststart "$OUT"
 ffprobe -v error -count_packets -select_streams v -show_entries stream=nb_read_packets,pix_fmt,color_range,color_space -of csv=p=0 "$OUT"
