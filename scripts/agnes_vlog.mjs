@@ -500,7 +500,9 @@ if (fase === "check") {
         const fd = new FormData(); fd.append("model", "whisper-1"); fd.append("language", P.lang || "es"); fd.append("response_format", "text");
         fd.append("file", new Blob([fs.readFileSync(wav)], { type: "audio/wav" }), "a.wav");
         let txt = "(timeout)";
-        for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
+        // CHECK_ASR=local → faster-whisper en la GPU local (scripts/asr_local.py) cuando OpenAI/Modal no están (27-sep: billing_hard_limit)
+        if ((process.env.CHECK_ASR || env.CHECK_ASR) === "local") { try { txt = execFileSync("python", ["scripts/asr_local.py", wav, P.lang || "es"], { maxBuffer: 1 << 24 }).toString().trim() || "(vacío)"; } catch (e) { log("asr local falló", c.id, e.message.slice(0, 120)); } }
+        for (let t = 0; t < 3 && txt === "(timeout)" && (process.env.CHECK_ASR || env.CHECK_ASR) !== "local"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
         const esperadoTxt = c.text || c.line || "";
         const NUM = /^(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien)$/;
         const wa = norm(esperadoTxt).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));
