@@ -43,7 +43,7 @@ for c in G['clips']:
     if 0.5 < t < 62 and not any(abs(t - sg['f0'] / FPS) < 0.1 for sg in G['segs']): sfx(WH[int(t * 7) % len(WH)], t - 0.15, -18)
 
 # ═════════ MINUTO 1 — el tráiler (cero silencios, ≥20 cortes, ninguna toma > 4 s) ═════════
-c0 = clip('S0_01')                                   # el chorro: sacudida de la presión + círculo a marcador
+
 cam('shake', 0.0, 1.2, amt=0.8); cam('push', 1.2, 1.8, amt=0.06)
 over('mark', 0.9, 2.1, sfx=LINE, sdb=-14, items=[{'kind': 'circle', 'x': 57, 'y': 30, 'w': 14, 'h': 22, 'from': 0, 'seed': 3}])
 t = find('Un tanque nuevo sale una fortuna'); over('word', t + 0.3, 2.1, sfx=HIT[3], sdb=-10, text='una fortuna', variant='red', y=80, size=110)
@@ -65,7 +65,7 @@ t = find('ni una gota'); over('word', t, 1.8, sfx=CHIME, sdb=-10, text='ni una g
 t = find('Pero quédate hasta el final'); sfx(RISER, t - 0.2, -10)
 over('teaser', t + 0.2, 7.5, sfx=POP[0], sdb=-12, kicker='AL FINAL DEL VIDEO', text='Por qué el pegamento nunca funciona')
 t = find('la silicona y la cinta'); cam('frame', t, 2.2, amt=0.2, ox=50, oy=38)
-t = find('Con una sola gota de agua'); over('word', t, 1.8, sfx=HIT[0], text='1 gota de agua', variant='white', y=76, size=110)
+t = find('Con una sola gota de agua'); over('word', t, 2.3, sfx=HIT[0], text='1 gota de agua', variant='white', y=76, size=110)
 
 # ═════════ 1:00-2:00 — el arreglo completo de corrido, con contador de pasos ═════════
 steps = [('Vacío el tanque', 'Vaciar'), ('Seco bien', 'Secar y limpiar'), ('Raspo la capa de afuera', 'Raspar'), ('Un agujerito de tres milímetros', 'Agujeritos'),
@@ -134,7 +134,7 @@ over('cta', t + 2.0, (t2 - t) + 3.5, sfx=POP[1], sdb=-10, qr='img/tfbtanque/qr_t
 
 # ═════════ S7/S7B — marcar y FRENAR la grieta (WOW min 8: la grieta que avanza y se frena) ═════════
 t = find('marco con un marcador'); over('mark', t + 1.2, 3.5, sfx=LINE, sdb=-14, items=[{'kind': 'arrow', 'x': 30, 'y': 20, 'x2': 44, 'y2': 42, 'color': '#FFD21F', 'from': 0}, {'kind': 'label', 'x': 22, 'y': 14, 'text': 'un poco más allá', 'from': 8}])
-t = find('Siempre es más larga de lo que parece'); over('word', t, 2.4, sfx=HIT[3], sdb=-11, text='más larga de lo que parece', variant='white', y=80, size=86)
+t = find('Siempre es más larga de lo que parece'); over('word', t, 3.1, sfx=HIT[3], sdb=-11, text='más larga de lo que parece', variant='white', y=80, size=86)
 t = find('paso uno: vaciarlo'); over('step', t, 4.0, sfx=TICK, sdb=-12, n=1, total=6, label='Vaciar y secar')
 t = find('Una gota atrapada adentro hierve'); over('word', t + 0.5, 2.6, sfx=HIT[1], text='gota atrapada = poro', variant='red', y=80, size=90)
 t = find('Nada de detergente'); over('word', t, 2.0, sfx=HIT[3], sdb=-12, text='detergente: no', variant='white', y=80, size=100)
@@ -164,7 +164,7 @@ t = find('Y los bordes, en rampa'); sfx(POP[0], t, -12)
 # ═════════ S10 — por dentro, enfriar y CTA 2 (~65 %) ═════════
 t = find('Ahora, por dentro'); over('step', t, 3.2, sfx=TICK, sdb=-12, n=4, total=6, label='Por dentro')
 t = find('Mira el color de adentro: blanco'); over('word', t + 0.4, 2.0, sfx=POP[1], sdb=-12, text='blanco por dentro', variant='white', y=80, size=100)
-t = find('como un sándwich'); over('word', t, 1.8, sfx=HIT[3], sdb=-12, text='sellado de los dos lados', variant='yellow', y=80, size=86)
+t = find('como un sándwich'); over('word', t, 2.7, sfx=HIT[3], sdb=-12, text='sellado de los dos lados', variant='yellow', y=80, size=86)
 t = find('no lo enfríes con agua'); over('word', t, 2.4, sfx=HIT[0], text='agua fría', variant='white', strike=True, y=80, size=130); cam('punch', t, 0.5, amt=0.1)
 t = find('Media hora, a la sombra'); over('step', t, 3.0, sfx=TICK, sdb=-12, n=5, total=6, label='Enfriar 30 min')
 t = find('El agua que más se pierde en una casa'); over('word', t, 2.8, sfx=HIT[3], sdb=-11, text='el agua que no se ve', variant='yellow', y=80, size=100)

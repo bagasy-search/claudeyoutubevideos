@@ -1,0 +1,652 @@
+[
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 0.3,
+"db": -10
+},
+{
+"src": "sfx/line_draw.mp3",
+"t": 0.9,
+"db": -14
+},
+{
+"src": "sfx/impacto_hit.mp3",
+"t": 4.56,
+"db": -8
+},
+{
+"src": "sfx/text_slam.mp3",
+"t": 7.0,
+"db": -11
+},
+{
+"src": "sfx/number_slam.mp3",
+"t": 8.5,
+"db": -10
+},
+{
+"src": "sfx/sfx_pop.mp3",
+"t": 11.04,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 14.4,
+"db": -14
+},
+{
+"src": "sfx/deep-cinematic-impact-1.mp3",
+"t": 20.46,
+"db": -12
+},
+{
+"src": "sfx/stereogenicstudio-swish-swoosh-woosh-sfx-36-357175.mp3",
+"t": 26.18,
+"db": -9
+},
+{
+"src": "sfx/node_pop.mp3",
+"t": 26.48,
+"db": -12
+},
+{
+"src": "sfx/pin_plop.mp3",
+"t": 26.78,
+"db": -12
+},
+{
+"src": "sfx/chip_pop3d.mp3",
+"t": 27.08,
+"db": -12
+},
+{
+"src": "sfx/winner_chime.mp3",
+"t": 31.58,
+"db": -10
+},
+{
+"src": "sfx/cp_riser.wav",
+"t": 33.86,
+"db": -10
+},
+{
+"src": "sfx/sfx_pop.mp3",
+"t": 34.26,
+"db": -12
+},
+{
+"src": "sfx/impacto_hit.mp3",
+"t": 42.78,
+"db": -8
+},
+{
+"src": "sfx/sfx_whoosh_soft.mp3",
+"t": 44.317,
+"db": -12
+},
+{
+"src": "sfx/sfx_whoosh_soft.mp3",
+"t": 50.817,
+"db": -18
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 51.482,
+"db": -12
+},
+{
+"src": "sfx/freesound_community-whoosh-blow-flutter-shortwav-14678.mp3",
+"t": 54.017,
+"db": -18
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 54.542,
+"db": -12
+},
+{
+"src": "sfx/ksjsbwuil-whoosh3-481204.mp3",
+"t": 59.45,
+"db": -18
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 60.115,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 65.355,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 70.9,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 76.578,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 82.245,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 86.945,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 90.442,
+"db": -12
+},
+{
+"src": "sfx/winner_chime.mp3",
+"t": 91.533,
+"db": -10
+},
+{
+"src": "sfx/ksjsbwuil-whoosh3-481204.mp3",
+"t": 98.317,
+"db": -12
+},
+{
+"src": "sfx/text_slam.mp3",
+"t": 108.862,
+"db": -11
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 118.142,
+"db": -11
+},
+{
+"src": "sfx/number_slam.mp3",
+"t": 143.822,
+"db": -10
+},
+{
+"src": "sfx/stereogenicstudio-swish-swoosh-woosh-sfx-36-357175.mp3",
+"t": 146.85,
+"db": -12
+},
+{
+"src": "sfx/line_draw.mp3",
+"t": 154.162,
+"db": -14
+},
+{
+"src": "sfx/node_pop.mp3",
+"t": 160.608,
+"db": -10
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 170.98,
+"db": -11
+},
+{
+"src": "sfx/number_slam.mp3",
+"t": 197.395,
+"db": -12
+},
+{
+"src": "sfx/text_slam.mp3",
+"t": 208.853,
+"db": -8
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 214.618,
+"db": -11
+},
+{
+"src": "sfx/winner_chime.mp3",
+"t": 223.112,
+"db": -12
+},
+{
+"src": "sfx/freesound_community-whoosh-blow-flutter-shortwav-14678.mp3",
+"t": 241.717,
+"db": -12
+},
+{
+"src": "sfx/impacto_hit.mp3",
+"t": 243.247,
+"db": -8
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 257.447,
+"db": -11
+},
+{
+"src": "sfx/pin_plop.mp3",
+"t": 262.667,
+"db": -12
+},
+{
+"src": "sfx/text_slam.mp3",
+"t": 269.367,
+"db": -8
+},
+{
+"src": "sfx/impacto_hit.mp3",
+"t": 279.387,
+"db": -8
+},
+{
+"src": "sfx/ksjsbwuil-whoosh3-481204.mp3",
+"t": 281.547,
+"db": -10
+},
+{
+"src": "sfx/winner_chime.mp3",
+"t": 287.987,
+"db": -12
+},
+{
+"src": "sfx/whoosh.mp3",
+"t": 289.75,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 294.815,
+"db": -11
+},
+{
+"src": "sfx/chip_pop3d.mp3",
+"t": 297.555,
+"db": -11
+},
+{
+"src": "sfx/sfx_pop.mp3",
+"t": 313.525,
+"db": -12
+},
+{
+"src": "sfx/number_slam.mp3",
+"t": 342.145,
+"db": -11
+},
+{
+"src": "sfx/text_slam.mp3",
+"t": 353.045,
+"db": -8
+},
+{
+"src": "sfx/winner_chime.mp3",
+"t": 359.585,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 364.365,
+"db": -11
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 375.525,
+"db": -12
+},
+{
+"src": "sfx/sfx_whoosh_soft.mp3",
+"t": 378.55,
+"db": -12
+},
+{
+"src": "sfx/cp_riser.wav",
+"t": 382.215,
+"db": -9
+},
+{
+"src": "sfx/ksjsbwuil-whoosh3-481204.mp3",
+"t": 384.917,
+"db": -12
+},
+{
+"src": "sfx/deep-cinematic-impact-1.mp3",
+"t": 385.167,
+"db": -12
+},
+{
+"src": "sfx/sfx_whoosh_soft.mp3",
+"t": 388.302,
+"db": -16
+},
+{
+"src": "sfx/sfx_whoosh_soft.mp3",
+"t": 397.002,
+"db": -16
+},
+{
+"src": "sfx/sfx_whoosh_soft.mp3",
+"t": 404.842,
+"db": -16
+},
+{
+"src": "sfx/sfx_whoosh_soft.mp3",
+"t": 414.642,
+"db": -16
+},
+{
+"src": "sfx/sfx_whoosh_soft.mp3",
+"t": 422.022,
+"db": -16
+},
+{
+"src": "sfx/stereogenicstudio-swish-swoosh-woosh-sfx-36-357175.mp3",
+"t": 429.45,
+"db": -12
+},
+{
+"src": "sfx/node_pop.mp3",
+"t": 432.135,
+"db": -10
+},
+{
+"src": "sfx/freesound_community-whoosh-blow-flutter-shortwav-14678.mp3",
+"t": 444.683,
+"db": -12
+},
+{
+"src": "sfx/line_draw.mp3",
+"t": 453.088,
+"db": -14
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 464.048,
+"db": -11
+},
+{
+"src": "sfx/whoosh.mp3",
+"t": 465.85,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 467.145,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 488.085,
+"db": -12
+},
+{
+"src": "sfx/cp_riser.wav",
+"t": 507.865,
+"db": -12
+},
+{
+"src": "sfx/impacto_hit.mp3",
+"t": 514.165,
+"db": -9
+},
+{
+"src": "sfx/winner_chime.mp3",
+"t": 530.365,
+"db": -12
+},
+{
+"src": "sfx/sfx_whoosh_soft.mp3",
+"t": 534.217,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 534.722,
+"db": -12
+},
+{
+"src": "sfx/freesound_community-whoosh-blow-flutter-shortwav-14678.mp3",
+"t": 538.902,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 539.102,
+"db": -12
+},
+{
+"src": "sfx/impacto_hit.mp3",
+"t": 559.722,
+"db": -8
+},
+{
+"src": "sfx/number_slam.mp3",
+"t": 568.722,
+"db": -10
+},
+{
+"src": "sfx/pin_plop.mp3",
+"t": 580.002,
+"db": -12
+},
+{
+"src": "sfx/ksjsbwuil-whoosh3-481204.mp3",
+"t": 596.117,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 596.392,
+"db": -12
+},
+{
+"src": "sfx/text_slam.mp3",
+"t": 607.392,
+"db": -8
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 611.752,
+"db": -11
+},
+{
+"src": "sfx/chip_pop3d.mp3",
+"t": 626.212,
+"db": -11
+},
+{
+"src": "sfx/whoosh.mp3",
+"t": 630.872,
+"db": -12
+},
+{
+"src": "sfx/sfx_pop.mp3",
+"t": 646.232,
+"db": -12
+},
+{
+"src": "sfx/stereogenicstudio-swish-swoosh-woosh-sfx-36-357175.mp3",
+"t": 661.083,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 661.468,
+"db": -12
+},
+{
+"src": "sfx/node_pop.mp3",
+"t": 672.988,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 688.628,
+"db": -12
+},
+{
+"src": "sfx/impacto_hit.mp3",
+"t": 699.488,
+"db": -8
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 707.608,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 715.523,
+"db": -11
+},
+{
+"src": "sfx/node_pop.mp3",
+"t": 722.863,
+"db": -10
+},
+{
+"src": "sfx/freesound_community-whoosh-blow-flutter-shortwav-14678.mp3",
+"t": 730.55,
+"db": -12
+},
+{
+"src": "sfx/line_draw.mp3",
+"t": 741.065,
+"db": -14
+},
+{
+"src": "sfx/whoosh.mp3",
+"t": 753.217,
+"db": -12
+},
+{
+"src": "sfx/digit_tick.mp3",
+"t": 753.492,
+"db": -12
+},
+{
+"src": "sfx/cp_riser.wav",
+"t": 764.372,
+"db": -14
+},
+{
+"src": "sfx/winner_chime.mp3",
+"t": 773.912,
+"db": -10
+},
+{
+"src": "sfx/sfx_pop.mp3",
+"t": 788.312,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 791.272,
+"db": -12
+},
+{
+"src": "sfx/sfx_whoosh_soft.mp3",
+"t": 797.183,
+"db": -12
+},
+{
+"src": "sfx/text_slam.mp3",
+"t": 797.468,
+"db": -10
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 801.392,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 808.622,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 817.678,
+"db": -12
+},
+{
+"src": "sfx/impacto_hit.mp3",
+"t": 825.513,
+"db": -10
+},
+{
+"src": "sfx/pin_plop.mp3",
+"t": 829.228,
+"db": -12
+},
+{
+"src": "sfx/pin_plop.mp3",
+"t": 833.592,
+"db": -12
+},
+{
+"src": "sfx/pin_plop.mp3",
+"t": 839.313,
+"db": -12
+},
+{
+"src": "sfx/deep-cinematic-impact-1.mp3",
+"t": 840.513,
+"db": -12
+},
+{
+"src": "sfx/chip_pop3d.mp3",
+"t": 864.808,
+"db": -10
+},
+{
+"src": "sfx/ksjsbwuil-whoosh3-481204.mp3",
+"t": 868.283,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 877.418,
+"db": -12
+},
+{
+"src": "sfx/sfx_text_thud.mp3",
+"t": 880.038,
+"db": -12
+},
+{
+"src": "sfx/impacto_hit.mp3",
+"t": 887.898,
+"db": -8
+},
+{
+"src": "sfx/cp_riser.wav",
+"t": 888.998,
+"db": -10
+},
+{
+"src": "sfx/winner_chime.mp3",
+"t": 894.118,
+"db": -14
+},
+{
+"src": "sfx/impacto_hit.mp3",
+"t": 908.928,
+"db": -8
+},
+{
+"src": "sfx/number_slam.mp3",
+"t": 915.188,
+"db": -10
+},
+{
+"src": "sfx/sfx_pop.mp3",
+"t": 923.268,
+"db": -12
+},
+{
+"src": "sfx/node_pop.mp3",
+"t": 927.568,
+"db": -10
+}
+]
