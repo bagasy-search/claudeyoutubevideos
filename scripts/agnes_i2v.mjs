@@ -16,7 +16,7 @@
 // agnes sin ese sello (scripts/agnes_qc_gate.mjs).
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { execFileSync as _execFileSync } from "node:child_process"; const execFileSync = (c, a, o) => Array.isArray(a) ? _execFileSync(c, a, { windowsHide: true, ...(o || {}) }) : _execFileSync(c, { windowsHide: true, ...(a || {}) }); // sin ventanas de consola (27-sep)
 
 const [LIST, SLUG, IMGDIR0, OUT0] = process.argv.slice(2);
 if (!LIST || !SLUG) { console.error("uso: node scripts/agnes_i2v.mjs <lista.json> <slug> [imgDir] [outDir]"); process.exit(1); }
@@ -104,7 +104,7 @@ const submit = async (it, ki) => {
       throw new Error(msg.slice(0, 140));
     }
     free[ki] = Date.now() + COOLDOWN;
-    inflight.set(vid, { item: it, t0: Date.now() });
+    inflight.set(vid, { item: it, t0: Date.now(), ki });
     sent++;
     console.log(`  → ${it.nombre} (enviados ${sent}/${pend.length}, en vuelo ${inflight.size})`);
   } catch (e) {
@@ -117,7 +117,9 @@ const submit = async (it, ki) => {
 const poll = async (vid, st) => {
   try {
     const g = await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}`,
-      { headers: { Authorization: "Bearer " + KS[Math.floor(Math.random() * KS.length)] }, signal: AbortSignal.timeout(45_000) });
+      { headers: { Authorization: "Bearer " + KS[st.ki ?? Math.floor(Math.random() * KS.length)] }, signal: AbortSignal.timeout(45_000) });
+    // ⛔ (27-sep, rkhanger) LA CONSULTA VA CON LA MISMA CLAVE QUE CREÓ EL JOB: con una clave al azar la
+    //    API devolvió `404 task not found` en 43 de 43 (las claves ya no comparten los jobs de la cuenta).
     const s = await g.json().catch(() => ({}));
     if (s.url) {
       const v = await fetch(s.url, { signal: AbortSignal.timeout(300_000) });

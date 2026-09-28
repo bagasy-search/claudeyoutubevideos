@@ -10,7 +10,7 @@
 //    dos cosas para sortear sentido/velocidad y para atar el paneo a la escala.
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
+import { execFileSync as _execFileSync } from "node:child_process"; const execFileSync = (c, a, o) => Array.isArray(a) ? _execFileSync(c, a, { windowsHide: true, ...(o || {}) }) : _execFileSync(c, { windowsHide: true, ...(a || {}) }); // sin ventanas de consola (27-sep)
 
 const SLUG = process.argv[2];
 if (!SLUG) { console.error('uso: node scripts/rksafe_build.mjs <slug>'); process.exit(1); }
@@ -23,12 +23,24 @@ const FPS = plan.fps;
 const TOTAL_F = Math.round(plan.total * FPS);
 const AVATAR_F = Math.round(plan.avatarEnd * FPS);
 const OVERLAY = new Set(cfg.OVERLAY);
+// ⛔⛔ MODO VENTANAS: el avatar NO es una capa continua. Fuera de las ventanas el fondo es NEGRO,
+//    asi que cada ventana se monta como un plano mas de la capa base con `RayAvatarWin` (media
+//    a PANTALLA COMPLETA — regla dura del creador: o el avatar full, o la foto/video full; el PiP
+//    en panel se ve amateur y lo rechazo a la primera. El estiramiento de 2,31x se combate en el
+//    CONFORMADO del reel (lanczos + unsharp 0,95) y con una referencia nitida, no achicando la cara).
+const MODO = cfg.AVATAR_MODO || 'fondo';
+// ⛔ LA CONVENCION LA FIJA `scripts/rksafe_avatar.mjs`, que es quien las escribe:
+//    `public/broll/<slug>/av_wNNN.mp4` (960x540, 30/1 CFR). Si el build las busca en otro lado,
+//    el pre-vuelo del farm da 'faltan 51 assets' sobre archivos que estan en disco.
+const AVDIR = `broll/${SLUG}`;
 const CAM = cfg.CAM;
 const idDeAsset = (a) => (a || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '');
 
 // ⛔ UN CLIP NUNCA SE ESTIRA MÁS ALLÁ DE SU ARCHIVO. `Clip` no loopea (y `loop` no es una prop de
 //    OffthreadVideo: el clip se CONGELA en su último cuadro el resto del slot, el "plano muerto").
 //    Se mide cada archivo con ffprobe y se exige dur_slot * rate <= dur_archivo.
+let clipsCortos = 0;
+
 const durDe = (rel) => {
   try {
     const o = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration',
@@ -36,8 +48,6 @@ const durDe = (rel) => {
     const m = o.match(/[\d.]+/); return m ? +m[0] : 0;
   } catch { return 0; }
 };
-let clipsCortos = 0;
-
 // ⛔⛔ EL MAIN REDONDEA `from` Y `durationInFrames` POR SEPARADO. `F(53.94) + F(0.98)` no cae en
 //    `F(54.92)`: según el resto, el cue siguiente arranca un cuadro ANTES (solape: un plano tapa al
 //    otro) o un cuadro DESPUÉS (destello de 33 ms del fondo, que `blackdetect` no ve porque pide
@@ -46,7 +56,7 @@ let clipsCortos = 0;
 {
   const OVs = new Set(cfg.OVERLAY);
   const baseB = plan.beats.filter((b) => !(b.kind === 'componente' && OVs.has(b.comp))).sort((a, b) => a.t - b.t);
-  let pegados = 0;
+  let pegados = 0, recortados = 0;
   for (let i = 0; i < baseB.length; i++) {
     const f0 = Math.round(baseB[i].t * FPS);
     let f1 = f0 + Math.max(1, Math.round(baseB[i].dur * FPS));
@@ -56,18 +66,62 @@ let clipsCortos = 0;
       if (Math.abs(sf0 - f1) <= 3 && sf0 > f0) { f1 = sf0; pegados++; }
       else if (f1 > sf0) { f1 = Math.max(f0 + 1, sf0); pegados++; }
     }
+    // ⛔⛔ UN CLIP NO SE ESTIRA PARA CERRAR LA FRONTERA. `Clip` no loopea: pasado el ultimo cuadro
+    //    `OffthreadVideo` CONGELA, y `agnes_qc_gate` lo cuenta como repeticion. Medido aca: la
+    //    alineacion estiraba 3 clips 0,14-0,32 s sobre su archivo. Cuando el tope no da, el que se
+    //    mueve es el ARRANQUE DEL SIGUIENTE, no el final de este.
+    if (baseB[i].kind === 'clip') {
+      const df = durDe(baseB[i].asset);
+      const tope = f0 + Math.max(1, Math.floor((df - 0.02) / (baseB[i].rate ?? 1) * FPS));
+      if (f1 > tope) { f1 = tope; if (sig) sig.t = f1 / FPS; recortados++; }
+    }
     baseB[i].t = f0 / FPS;
     baseB[i].dur = Math.max(1, f1 - f0) / FPS;
   }
-  console.log('fronteras alineadas al cuadro: ' + pegados + ' de ' + baseB.length);
+  console.log('fronteras alineadas al cuadro: ' + pegados + ' de ' + baseB.length + ' · clips recortados a su archivo: ' + recortados);
+  // ⛔⛔ PASADA DE CIERRE: recortar un clip a su archivo deja un HUECO, y en modo VENTANAS un hueco
+  //    es NEGRO en pantalla. Medido aca: 4 huecos, 2,16 s, cobertura 99,8 %.
+  //    Quien cierra tiene que ser ESTIRABLE: una foto o un componente se estiran sin romper nada;
+  //    un CLIP se congelaria y una VENTANA DE AVATAR no se puede mover ni alargar (su audio se corto
+  //    en milisegundos exactos: correrla desincroniza el lipsync).
+  {
+    const ESTIRABLE = new Set(['imagen', 'componente']);
+    let cerrados = 0, sinCerrar = 0;
+    for (let i = 1; i < baseB.length; i++) {
+      const prev = baseB[i - 1];
+      const hueco = baseB[i].t - (prev.t + prev.dur);
+      if (hueco <= 0.011) continue;
+      if (ESTIRABLE.has(prev.kind)) { prev.dur = +(baseB[i].t - prev.t).toFixed(5); cerrados++; }
+      else if (ESTIRABLE.has(baseB[i].kind)) {
+        baseB[i].dur = +(baseB[i].dur + hueco).toFixed(5);
+        baseB[i].t = +(prev.t + prev.dur).toFixed(5);
+        cerrados++;
+      } else sinCerrar++;
+    }
+    console.log('huecos de recorte cerrados: ' + cerrados + (sinCerrar ? ' · ⛔ SIN CERRAR ' + sinCerrar : ' ✓'));
+  }
   // ⛔ y se PERSISTE el plan alineado: si el gate de timeline mide el plan CRUDO y el render usa
   //    el alineado, la compuerta está midiendo otra cosa que la que se ve. Orden: plan -> build -> gates.
   fs.writeFileSync(`_v3/${SLUG}_plan.json`, JSON.stringify(plan, null, 1));
+  // ⛔⛔ Y LAS VENTANAS DE AVATAR SE VUELVEN A EMITIR **DESPUES** DE ALINEAR. El plan las escribe
+  //    con los tiempos crudos y el build mueve cada frontera hasta 3 cuadros: si el reel de audio se
+  //    corta de la version cruda, cada ventana queda hasta 100 ms corrida contra su propio lipsync.
+  //    El reel SIEMPRE se corta de este archivo, no del que emitio el plan.
+  if (MODO === 'ventanas') {
+    const wins = plan.beats.filter((b) => b.kind === 'avatar').sort((a, b) => a.win - b.win)
+      .map((b) => ({ i: b.win, t: +b.t.toFixed(3), dur: +b.dur.toFixed(3) }));
+    fs.writeFileSync(`_v3/${SLUG}_avwins.json`, JSON.stringify(wins, null, 1));
+    console.log('ventanas de avatar reemitidas ya alineadas al cuadro: ' + wins.length);
+  }
 }
 
 const usados = new Set();
 const cues = [], overlays = [];
-let nCam = 0, nClip = 0;
+let nCam = 0, nClip = 0, nAv = 0;
+const TR_F = 8;
+let nTrans = 0, usaTrans = false;
+let ultimaFoto = null;
+const avBeds = new Set();
 
 for (const b of plan.beats) {
   const key = `${b.kind}_${Math.round(b.t * 1000)}`;
@@ -90,6 +144,14 @@ for (const b of plan.beats) {
     if (necesita > df + 0.02) { console.log(`  ⛔ ${b.asset}: el plano pide ${necesita.toFixed(2)}s de fuente y el archivo tiene ${df.toFixed(2)}s (se congelaría)`); clipsCortos++; }
     el = `(d) => <Clip src=${JSON.stringify(b.asset)} rate={${b.rate ?? 1}} />`;
     nClip++;
+  } else if (b.kind === 'avatar') {
+    const rel = `${AVDIR}/av_w${String(b.win).padStart(3, '0')}.mp4`;
+    // la CAMA de foto del plano anterior llena el resto del cuadro (el panel es 960x540, no full)
+    const bedRel = b.bed || ultimaFoto;
+    const bedProp = bedRel ? ` bed=${JSON.stringify(bedRel)}` : '';
+    el = `(d) => <RayAvatarWin src=${JSON.stringify(rel)} seed={${seed}} durF={d}${bedProp} />`;
+    if (bedRel) avBeds.add(bedRel);
+    nAv++;
   } else if (b.kind === 'imagen') {
     el = `(d) => <Foto src=${JSON.stringify(b.asset)} seed={${seed}} durF={d} />`;
   } else {
@@ -98,8 +160,30 @@ for (const b of plan.beats) {
     if (b.bed && !OVERLAY.has(b.comp)) props.bed = b.bed;   // los overlay no llevan cama de foto
     el = `(d) => <${b.comp} durationInFrames={d} {...(${JSON.stringify(props)} as any)} />`;
   }
-  const row = `  { key: ${JSON.stringify(key)}, start: ${b.t}, dur: ${b.dur}, el: ${el} },`;
-  (b.kind === 'componente' && OVERLAY.has(b.comp) ? overlays : cues).push(row);
+  // ⛔ LA CAMA DE FOTO DEL AVATAR SÓLO PUEDE SALIR DE UNA IMAGEN GENERADA. Un plano de METRAJE REAL
+  //    es un mp4 de stock: no tiene hermano `_blur.jpg` en `public/img/`, así que si se lo toma como
+  //    cama el chunk muere con 404 en el farm. Medido en rkspots: la ventana de avatar heredó
+  //    `img/rkspots_r129_blur.jpg`, que no existe ni puede existir.
+  if (camId && !b.real) ultimaFoto = 'img/' + camId + '_blur.jpg';
+  // ⭐ TRANSICIONES CON MOVIMIENTO (opt-in `cfg.TRANSICIONES`): fotos y componentes de la capa base
+  //    arrancan TR_F cuadros antes, SOLAPADOS sobre el plano anterior, y `RayTrans` los revela con
+  //    empuje / máscara / iris / zoom. ~45 % queda en corte seco (un video todo transición cansa).
+  //    Nunca clips (pedirían cuadros que el archivo no tiene) ni ventanas de avatar (lipsync al ms).
+  let st = b.t, du = b.dur;
+  const esBase = !(b.kind === 'componente' && OVERLAY.has(b.comp));
+  if (cfg.TRANSICIONES && esBase && (b.kind === 'imagen' || b.kind === 'componente') && b.t > 1) {
+    const r = ((seed * 2654435761) >>> 0) / 4294967296;
+    if (r > 0.45) {
+      const kinds = ['push', 'wipe', 'iris', 'zoom'];
+      const kind = kinds[Math.floor(((r - 0.45) / 0.55) * kinds.length) % kinds.length];
+      const dir = ((seed * 40503) >>> 3) % 2 ? 1 : -1;
+      st = +(b.t - TR_F / FPS).toFixed(4); du = +(b.dur + TR_F / FPS).toFixed(4);
+      el = `(d) => <RayTrans kind="${kind}" f={${TR_F}} dir={${dir}}>{(${el})(d)}</RayTrans>`;
+      nTrans++; usaTrans = true;
+    }
+  }
+  const row = `  { key: ${JSON.stringify(key)}, start: ${st}, dur: ${du}, el: ${el} },`;
+  (esBase ? cues : overlays).push({ st, row });
 }
 
 const compsNecesarios = [...usados].sort();
@@ -109,15 +193,17 @@ const cuesSrc = `// cues_${SLUG}.gen.tsx — GENERADO por scripts/rksafe_build.m
 import React from "react";
 ${compsNecesarios.map((c) => `import { ${c} } from "${cfg.IMPORTS[c]}";`).join('\n')}
 import { Clip, Foto } from "../rksafe/RayStage";
+${usaTrans ? 'import { RayTrans } from "../rksafe/RayTrans";' : ''}
+${MODO === 'ventanas' ? 'import { RayAvatarWin } from "../rksafe/RayAvatarWin";' : ''}
 
 export type Cue = { key: string; start: number; dur: number; el: (d: number) => React.ReactNode };
 
 export const CUES: Cue[] = [
-${cues.join('\n')}
+${cues.sort((a, b) => a.st - b.st).map((c) => c.row).join('\n')}
 ];
 
 export const OVERLAYS: Cue[] = [
-${overlays.join('\n')}
+${overlays.map((c) => c.row).join('\n')}
 ];
 `;
 
@@ -129,7 +215,7 @@ export const AVATAR_FRAMES_${UP} = ${AVATAR_F};
 const mainSrc = `// Main_${SLUG}.tsx — GENERADO por scripts/rksafe_build.mjs. NO editar a mano.
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
-import { RayAvatar } from "../rksafe/RayStage";
+${MODO === 'ventanas' ? '' : 'import { RayAvatar } from "../rksafe/RayStage";'}
 import { CUES, OVERLAYS } from "./cues_${SLUG}.gen";
 import { TOTAL_FRAMES_${UP}, AVATAR_FRAMES_${UP} } from "./avatar_${SLUG}.gen";
 
@@ -137,8 +223,9 @@ const F = (s: number) => Math.round(s * ${FPS});
 
 export const Main${Cap}: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#0A0A0C" }}>
-    {/* El avatar es el FONDO GARANTIZADO. */}
-    <RayAvatar src="${SLUG}_opt.mp4" loopFrames={AVATAR_FRAMES_${UP}} />
+${MODO === 'ventanas'
+    ? '{/* MODO VENTANAS: no hay avatar de fondo. El fondo es NEGRO y la cobertura tiene que dar 100 %. */}'
+    : '{/* El avatar es el FONDO GARANTIZADO. */}' + String.fromCharCode(10) + '    <RayAvatar src="' + SLUG + '_opt.mp4" loopFrames={AVATAR_FRAMES_' + UP + '} />'}
 
     {CUES.map((cue) => (
       <Sequence key={cue.key} from={F(cue.start)} durationInFrames={Math.max(1, F(cue.dur))} layout="none">
@@ -180,6 +267,8 @@ fs.writeFileSync(`src/index_${SLUG}.tsx`, entrySrc);
 console.log('═'.repeat(66));
 console.log('CUES     : ' + cues.length + '  ·  OVERLAYS: ' + overlays.length + '  ·  clips medidos con ffprobe: ' + nClip +
   '  ·  que se congelarían: ' + clipsCortos + (clipsCortos ? ' ⛔' : ' ✓'));
+if (MODO === 'ventanas') console.log('VENTANAS DE AVATAR: ' + nAv + ' planos RayAvatarWin a PANTALLA COMPLETA');
+console.log('TRANSICIONES con movimiento: ' + nTrans);
 console.log('CÁMARA DE VIGILANCIA: ' + nCam + ' planos ' + (nCam >= 8 ? '✓' : '⛔ el hook se va a ver como una foto quieta'));
 console.log('COMPONENTES importados: ' + compsNecesarios.length + ' → ' + compsNecesarios.join(' · '));
 console.log('TOTAL_FRAMES: ' + TOTAL_F + ' (' + plan.total.toFixed(2) + ' s)  ·  AVATAR_FRAMES: ' + AVATAR_F);
@@ -204,7 +293,13 @@ for (const a of [...assets]) if (a.endsWith('.jpg') && !a.endsWith('_blur.jpg'))
   assets.add(bl);
   if (!fs.existsSync('public/' + bl)) { console.log('  ⛔ falta public/' + bl + ' (hermano _blur, se pide en runtime)'); faltan++; }
 }
-for (const extra of [`${SLUG}_opt.mp4`, `${SLUG}.m4a`, `img/${SLUG}_qr.png`]) {
+for (const bd of avBeds) { chequeados++; assets.add(bd); if (!fs.existsSync('public/' + bd)) { console.log('  ⛔ falta public/' + bd + ' (cama del avatar)'); faltan++; } }
+for (const b of plan.beats) if (b.kind === 'avatar') {
+  const r = `${AVDIR}/av_w${String(b.win).padStart(3, '0')}.mp4`;
+  chequeados++; assets.add(r);
+  if (!fs.existsSync('public/' + r)) { console.log('  ⛔ falta public/' + r); faltan++; }
+}
+for (const extra of (MODO === 'ventanas' ? [`${SLUG}.m4a`, `img/${SLUG}_qr.png`] : [`${SLUG}_opt.mp4`, `${SLUG}.m4a`, `img/${SLUG}_qr.png`])) {
   assets.add(extra);
   const ok = fs.existsSync('public/' + extra);
   console.log('  ' + (ok ? '✓' : '⛔') + ' public/' + extra);
