@@ -90,6 +90,23 @@ const dirsOf = P => { const DIR = P.dir.replace(/\\/g, "/").replace(/\/?$/, "/")
 for (const P of PLANS) { const d = dirsOf(P); fs.mkdirSync(d.ANC, { recursive: true }); fs.mkdirSync(d.CL, { recursive: true }); }
 const P = PLANS[0], { DIR, ANC, CL } = dirsOf(P);
 let k = Math.floor(Math.random() * Math.max(1, KS.length)); const key = () => KS[(k++) % KS.length];
+
+// ⛔ (27-sep) la consulta de estado va con la MISMA CLAVE que creó el job: las claves ya no comparten jobs
+//    (con una clave al azar: 404 task not found → TIMEOUT a los 40 min → reenvío que quema cupo). kFor() busca
+//    una vez qué clave ve el job y la recuerda.
+const KMAP = new Map();
+async function kFor(vid) {
+  if (KMAP.has(vid)) return KMAP.get(vid);
+  for (const kx of KS) {
+    try {
+      const r = await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + kx }, signal: AbortSignal.timeout(30000) });
+      const t = await r.text();
+      if (r.ok && !/not.?found/i.test(t)) { KMAP.set(vid, kx); return kx; }
+    } catch {}
+  }
+  return key();
+}
+
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
 const mime = f => f.endsWith(".png") ? "image/png" : /\.(mp3)$/.test(f) ? "audio/mpeg" : /\.wav$/.test(f) ? "audio/wav" : "image/jpeg";
@@ -327,7 +344,8 @@ async function slotGet(id) {
   for (;;) {
     const now = Date.now();
     for (const f of fs.readdirSync(SLOTS)) { try { if (now - fs.statSync(SLOTS + "/" + f).mtimeMs > 50 * 60e3) fs.unlinkSync(SLOTS + "/" + f); } catch {} }
-    for (let i = 0; i < VMAX; i++) { const f = `${SLOTS}/slot${i}`; try { fs.writeFileSync(f, `${process.pid} ${id}`, { flag: "wx" }); return f; } catch {} }
+    let vmax = VMAX; try { vmax = Math.min(3, +fs.readFileSync(SLOTS + "/_max", "utf8") || VMAX); } catch {}   // _max: se sube a mano / por el sondeo
+    for (let i = 0; i < vmax; i++) { const f = `${SLOTS}/slot${i}`; try { fs.writeFileSync(f, `${process.pid} ${id}`, { flag: "wx" }); return f; } catch {} }
     await sleep(20000 + Math.random() * 10000);
   }
 }
@@ -339,7 +357,7 @@ async function poll(id, vid, slot) {
   const t0 = Date.now();
   while (Date.now() - t0 < 60 * 60e3) {
     await sleep(20000); if (slot) slotTouch(slot);
-    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + key() } })).json().catch(() => ({}));
+    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + (await kFor(vid)) } })).json().catch(() => ({}));
     if (g.status === "completed" && g.url) { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); pendSet(id, null); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
     if (/fail|error|cancel/i.test(g.status || "")) { pendSet(id, null); return log("FAIL", id, JSON.stringify(g).slice(0, 200)); }
   }
@@ -351,8 +369,10 @@ async function gen(id, body, meta = {}) {
     let vid;
     for (let t = 0; t < 400 && !vid; t++) {
       slotTouch(slot);
-      const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
+      const kk = key();
+      const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + kk, "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
       vid = j.video_id || j.id;
+      if (vid) { KMAP.set(vid, kk); meta.k = kk; }
       if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; }
         const lim = /free users|rate_limit|rate limit/i.test(m); if (lim && t % 3 === 0) log("límite de cuenta, espero", RWAIT / 1000, "s ·", id);
         await sleep(lim ? RWAIT : 30000 + Math.random() * 10000); }
@@ -373,7 +393,7 @@ const MUTE_LINE = " After saying that line they stop talking and keep the mouth 
 if (fase === "clips") {
   // primero RETOMAR lo que ya aceptó agnes en una corrida anterior (sólo sondeo, no gasta cupo)
   const pend = J(PENDF()), yaEnVuelo = new Set(Object.values(pend).map(v => v.cid));
-  await Promise.all(Object.entries(pend).map(async ([out, v]) => { log("retomo", out); await poll(out, v.vid, null);
+  await Promise.all(Object.entries(pend).map(async ([out, v]) => { log("retomo", out); if (v.k) KMAP.set(v.vid, v.k); await poll(out, v.vid, null);
     if (fs.existsSync(CL + out + ".mp4")) { const SF = CL + (v.detail ? "state_det.json" : "state.json"), s = J(SF); if (!s[v.cid] || soloIds.length) { s[v.cid] = { file: out + ".mp4", T: v.T, own: v.own }; fs.writeFileSync(SF, JSON.stringify(s, null, 1)); } } }));
   const hechos = { ...J(CL + "state.json"), ...J(CL + "state_det.json") };
   const sel = P.clips.filter(c => (!soloIds.length || soloIds.includes(c.id)) && !yaEnVuelo.has(c.id) && (soloIds.length || !hechos[c.id]));
