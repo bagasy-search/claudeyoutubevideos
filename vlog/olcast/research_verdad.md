@@ -1,0 +1,14 @@
+# research_verdad olcast — fuente de cada dato duro
+- Seasoning = polimerización del aceite calentado (moléculas se enlazan en una capa sólida). NOVA/PBS «What happens when you season a cast iron pan»; America's Test Kitchen «The science of seasoning». https://www.pbs.org/wgbh/nova/article/season-cast-iron-skillet-polymerization/
+- Capa fina; demasiado aceite → pegajoso/desprendible. Smithey Seasoning Guide; Tasting Table; coincide con el add-on de Ole (`upsell.json` «Seasoning: Thin Coats, Hot Oven», «Fixing Common Problems»).
+- Horno 450-500 °F boca abajo, 1 h, enfriar adentro: Lodge «How to Season» https://www.lodgecastiron.com/pages/how-to-season (= add-on).
+- Jabón suave OK; secar y aceite fino; simmer 3-5 min para lo pegado: Lodge «Cleaning & Care» https://www.lodgecastiron.com/pages/cleaning-care (= add-on).
+- Precalentar gradual, no pasar de medio, un par de minutos: Lodge Quick Start (misma página de care). Yoder video 9:30-10:30 (medium). 
+- Lodge y otras vienen «pre-seasoned» de fábrica: Lodge (varias páginas). El add-on: «that first layer is thin, so plan to add your own».
+- Puntos de humo APROXIMADOS (varían por marca/refinado): manteca ~350 °F, manteca de cerdo ~370, shortening 360-370, canola refinado ~400, aceite vegetal/soja refinado ~450; lino sin refinar ~225. Fuentes: CookingForEngineers «Smoke Points of Various Fats», Wikipedia «Smoke point». En pantalla siempre «about» + «varies by brand».
+- Vinagre 1:1 con agua, 30-60 min máx, revisar cada 15: add-on «Bringing Rust Back to Life». Óxido superficial inofensivo, picaduras profundas = descartar: add-on «Judging a Rusty Pan».
+- Prueba del campanazo (golpear el borde: sonido claro = sano; opaco = posible grieta): add-on «Buying Iron». Girar la sartén en el mostrador para detectar fondo alabeado: ídem.
+- Choque térmico: agua fría sobre hierro muy caliente puede agrietarlo/alabearlo (general; comentario de Yoder sobre sartén alabeada por fuego dejado). Fuente a citar en voz sólo como consejo de precaución, sin cifras.
+- Ciclo de auto-limpieza del horno puede alabear/agrietar el hierro: add-on.
+- Alimentos ácidos en sartén nueva: add-on «What Not to Cook at First».
+- Ole = personaje: los «mercados de pulgas», «campamento» son voz de personaje; ninguna fecha, empresa ni cifra histórica.

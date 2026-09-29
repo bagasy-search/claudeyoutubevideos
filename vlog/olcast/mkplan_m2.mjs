@@ -1,0 +1,19 @@
+// Planes agnes 2.5-flash de los hablados de demostración (m6-m9): cada uno es su propia "escena" con la foto base K1 (Ole en la mesa con la sartén),
+// así las anclas de los 4 salen en las MISMAS rondas de Batch. node vlog/olcast/mkplan_m2.mjs
+import fs from "node:fs";
+import { R, WHO, KIT, A, act, plan } from "./lib.mjs";
+const T = R + "vlog/olcast/tramos/";
+const base = R + "vlog/olcast/M1/anc/K1.png";
+const S = [
+  { dir: "m6", anchors: [A("K6", ["k0"], "Same cabin, same light, a little later: he stands at the black cast iron wood cookstove holding the clean skillet by its handle a hand's width above a warm burner plate, warming it, and looks over at the camera and talks, the stove's small fire glowing, the snowy window behind."), A("K7", ["K6"], "Same place a few seconds later: he sets the warm skillet on the stovetop and holds a small plain bottle of oil in his other hand, looking at the camera, mid-sentence, eyebrows raised.")], clip: { id: "m6", a: "K6", b: "K7", audio: T + "m6.wav", text: "Now here's the old camp cook's way. Step one, the pan has to be clean and bone dry. Warm it a little on the stove so the pores open up.", action: act("He holds the clean skillet over the warm stove and talks to the camera, then sets it on the stovetop holding a small bottle of oil.") } },
+  { dir: "m7", anchors: [A("K8", ["k0"], "Same table, a bit later: he sits with the skillet in front of him and holds a folded white paper towel in his right hand over the pan, talking to the camera, about to wipe."), A("K9", ["K8"], "Same place a few seconds later: he wipes the inside of the skillet firmly with the paper towel, the pan now looking almost dry, and glances up at the camera with a sly smile, mid-sentence.")], clip: { id: "m7", a: "K8", b: "K9", audio: T + "m7.wav", text: "Step three, and this is the whole trick. Take a clean paper towel and wipe it all off,", action: act("He talks over the skillet holding a paper towel, then wipes the pan firmly and looks up at the camera with a sly smile.") } },
+  { dir: "m8", anchors: [A("K10", ["k0"], "Same cabin, a bit later: he stands at the wood stove with a hot black skillet on the burner plate, his fingertips wet, about to flick water into the pan, and looks at the camera, talking."), A("K11", ["K10"], "Same place a few seconds later: he flicks water from his fingertips into the hot skillet and tiny water beads skate across the pan, his face lit with delight, looking at the pan, mid-sentence.")], clip: { id: "m8", a: "K10", b: "K11", audio: T + "m8.wav", text: "Want a test that costs nothing? Flick a few drops of water into the pan. If they sit there and sizzle away, it's not ready.", action: act("He talks to the camera with wet fingertips over the hot skillet, then flicks water into the pan and watches it, delighted.") } },
+  { dir: "m9", anchors: [A("K12", ["k0"], "Same cabin, evening light, a bit later: he stands at the wood stove with a black cast iron skillet on the burner plate and lays strips of raw bacon into the cold pan with a fork, looking at the camera, talking."), A("K13", ["K12"], "Same place a few seconds later: he leans toward the stove and turns a small knob on the stove front to medium, one eyebrow raised at the camera, the bacon lying in the pan, mid-sentence.")], clip: { id: "m9", a: "K12", b: "K13", audio: T + "m9.wav", text: "So here's your homework for tonight, friend. Put a few strips of bacon in a cold pan, then turn the heat to medium.", action: act("He lays bacon into the cold pan with a fork and talks to the camera, then turns the stove knob to medium with a raised eyebrow.") } },
+];
+for (const s of S) {
+  const p = plan("vlog/olcast/M2" + s.dir, s.anchors, [s.clip]);
+  p.k0_from = base;
+  fs.mkdirSync(R + "vlog/olcast/M2" + s.dir, { recursive: true });
+  fs.writeFileSync(R + "vlog/olcast/M2" + s.dir + "/plan.json", JSON.stringify(p, null, 1));
+}
+console.log("planes M2:", S.map((s) => "M2" + s.dir).join(" "));
