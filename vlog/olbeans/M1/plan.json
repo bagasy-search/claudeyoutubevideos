@@ -1,0 +1,205 @@
+{
+ "dir": "D:/Proyectos/video2-wt/olbeans/vlog/olbeans/M1",
+ "face": "D:/Proyectos/video2-wt/olbeans/public/ref_olbeans_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/olbeans/public/ref_olbeans.png",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld home video shot by his grandson with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered cabin background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed and bright enough, the side near the snowy window brighter and cooler, the corners by the stove a little warmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; white hair and beard with stray hairs; flannel and canvas apron with real creases, soot and grease marks. People are caught mid-action, unposed. Bright snowy daylight from the window on the left plus the warm glow of the wood stove.",
+ "look": "Ordinary handheld home video filmed by his grandson with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the cabin in focus, only the light the place really has, bright and correctly exposed, automatic white balance, mild sensor noise; real skin and natural old hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same cabin, same moment of the day. Ole, a 78-year-old man with thinning white hair, a short full white beard, a dark green and black plaid flannel shirt over a cream henley undershirt and a worn tan canvas apron, big old hands with age spots and veins stands at the black cast iron wood cookstove of the log cabin cook shack of an old north-woods logging camp: weathered log walls, a black cast iron wood cookstove with a stovepipe and a small glowing firebox door, a window with snow outside, a two-man crosscut saw and an axe hanging on the log wall, bunk beds with plaid wool blankets at the left, a rough plank table with a blue enamel mug. On the stovetop sits a big black cast iron Dutch oven with a heavy lid, a thin wisp of steam at the rim, and he holds the lid handle with a folded plaid rag, about to lift it, looking at the camera and talking. Medium shot from about one and a half meters, the pot, the stove and his upper body in frame, the snowy window behind."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same place: he has lifted the heavy lid and holds it up beside the pot, a big cloud of steam rising from the pot full of pinto beans in a thick brown broth, his face lit by the window, eyes on the camera, a proud little smile."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place a few seconds later: the lid now rests on the stovetop beside the pot, he looks straight at the camera with raised bushy white eyebrows and one finger raised, a long wooden spoon in his other hand, mid-sentence."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place: he shakes his head a little with a kind, knowing half smile, the wooden spoon lowered, his other hand open toward the camera as if saying it's not your fault."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place, a little closer: he leans over the open pot and pats its black iron side with the folded rag, the pinto beans whole and glossy in a thick broth, steam rising, looking at the camera, talking."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place a few seconds later: he lifts a long wooden spoon heaped with whole creamy pinto beans out of the pot toward the camera, steam curling off the spoon, still talking."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same cabin, same light. Ole, a 78-year-old man with thinning white hair, a short full white beard, a dark green and black plaid flannel shirt over a cream henley undershirt and a worn tan canvas apron, big old hands with age spots and veins sits at the rough plank table by the snowy window of the log cabin cook shack of an old north-woods logging camp: weathered log walls, a black cast iron wood cookstove with a stovepipe and a small glowing firebox door, a window with snow outside, a two-man crosscut saw and an axe hanging on the log wall, bunk beds with plaid wool blankets at the left, a rough plank table with a blue enamel mug, a blue enamel mug in front of him, both forearms on the table, talking to the camera like to a friend. Medium shot, the table edge at the bottom of the frame, the bunks and the stove behind."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place a few seconds later: he turns a little and opens one big hand toward the snowy window beside him, looking out at the white woods, remembering, mouth mid-word."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place: he leans toward the camera over the table, one finger raised beside his face, eyes narrowed with a sly, secretive grin, as if promising to tell something later."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place a few seconds later: he leans back in his chair with a short chuckle, arms folded over the apron, nodding once at the camera."
+  },
+  {
+   "id": "D1a",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Nobody in the frame, no person, no face. A different place: an ordinary home kitchen counter of today in soft morning light, a clear glass mixing bowl full of dried pinto beans sitting in cloudy grayish water, a few loose skins floating, a window above the sink, nobody in frame.",
+   "noface": true
+  },
+  {
+   "id": "D1b",
+   "from": [
+    "D1a"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, seen from above the shoulder: the man's head and face are completely outside the frame, no face visible anywhere. Same counter a few seconds later: an adult's hand tips the glass bowl over the stainless sink and the gray cloudy soaking water pours out into the drain, the beans held back with the other hand.",
+   "noface": true
+  },
+  {
+   "id": "D2a",
+   "from": [
+    "K5"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, seen from above the shoulder: the man's head and face are completely outside the frame, no face visible anywhere. Close view straight down into a big black cast iron Dutch oven with a heavy lid on the black wood cookstove: pinto beans whole and creamy in a thick glossy brown broth with chunks of salt pork, steam rising, an old man's hand holding a long wooden spoon about to go in. His plaid flannel sleeve enters from the right edge.",
+   "noface": true
+  },
+  {
+   "id": "D2b",
+   "from": [
+    "D2a"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, seen from above the shoulder: the man's head and face are completely outside the frame, no face visible anywhere. Same close view a few seconds later: the wooden spoon stands straight up by itself in the middle of the thick beans, the hand letting go of it, steam curling.",
+   "noface": true
+  },
+  {
+   "id": "D3a",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, seen from above the shoulder: the man's head and face are completely outside the frame, no face visible anywhere. Close view of a big black cast iron Dutch oven with a heavy lid on the wood cookstove, open, full of cold water with dry pinto beans at the bottom, a halved onion and a bay leaf floating, and an old man's hand holding a tablespoon heaped with coarse kosher salt right above the water. His plaid flannel sleeve enters from the top edge.",
+   "noface": true
+  },
+  {
+   "id": "D3b",
+   "from": [
+    "D3a"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, seen from above the shoulder: the man's head and face are completely outside the frame, no face visible anywhere. Same close view a few seconds later: the salt is tipped in and sinks into the water in a small white cloud, the spoon still above the pot.",
+   "noface": true
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/olbeans/vlog/olbeans/tramos/m1.wav",
+   "text": "There's a bowl of beans sitting on a kitchen counter somewhere right now. Been sitting there since last night, in water.",
+   "action": "He talks to his grandson behind the camera while he lifts the heavy lid off the cast iron pot and a big cloud of steam rises. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m2",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/olbeans/vlog/olbeans/tramos/m2.wav",
+   "text": "Well, now. It's not the beans. And it's not you. It's one old habit, and I quit it about sixty years ago in a cook shack full of hungry men.",
+   "action": "He sets the lid down, raises a finger and talks straight to the camera, then shakes his head with a kind half smile, opening his hand. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m3",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/olbeans/vlog/olbeans/tramos/m3.wav",
+   "text": "This pot right here never saw a soaking bowl. No overnight soak. Salt in at the start.",
+   "action": "He pats the side of the black pot with the rag, then lifts a wooden spoon of whole creamy beans toward the camera, talking. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m4",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/olbeans/vlog/olbeans/tramos/m4.wav",
+   "text": "My name's Ole. I'm seventy-eight. I cooked in the logging camps up in the north woods of Minnesota most of my life.",
+   "action": "Sitting at the plank table he introduces himself to the camera, then turns and opens a hand toward the snowy woods outside the window. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m5",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/olbeans/vlog/olbeans/tramos/m5.wav",
+   "text": "I'm keeping that one for last, because once you've seen it, the eight rules make sense.",
+   "action": "He leans toward the camera with a sly grin and a raised finger, then leans back chuckling with his arms folded. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "d_pour",
+   "prompt": "a hand tips the glass bowl and the gray cloudy soaking water pours out of it into the sink drain, the beans held back.",
+   "a": "D1a",
+   "b": "D1b",
+   "detail": true,
+   "secs": 5,
+   "d1": "a glass bowl of beans soaking in cloudy gray water on a counter",
+   "d2": "the gray water is poured into the sink drain",
+   "sound": "water pouring and gurgling down a sink drain"
+  },
+  {
+   "id": "d_spoon",
+   "prompt": "the wooden spoon is pushed into the thick creamy beans and let go, and it stays standing straight up by itself while steam curls. He stays silent, focused on his hands.",
+   "a": "D2a",
+   "b": "D2b",
+   "detail": true,
+   "secs": 5,
+   "d1": "a wooden spoon goes into a pot of thick creamy beans",
+   "d2": "the spoon stands up by itself in the beans",
+   "sound": "a thick stew bubbling softly and a wooden spoon against cast iron"
+  },
+  {
+   "id": "d_salt",
+   "prompt": "he tips the tablespoon of coarse salt into the water of the pot and it sinks in a small white cloud. He stays silent, focused on his hands.",
+   "a": "D3a",
+   "b": "D3b",
+   "detail": true,
+   "secs": 4,
+   "d1": "a tablespoon of salt above a pot of water and dry beans",
+   "d2": "the salt is tipped in and sinks",
+   "sound": "salt grains hitting water and a spoon tapping the iron rim"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/olbeans/vlog/olbeans/M1/out.mp4"
+}

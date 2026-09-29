@@ -1,0 +1,1 @@
+{ "extends": "./tsconfig.json", "include": [], "files": ["src/index_olbeans.tsx", "src/ole/three-shim.d.ts"], "exclude": [] }
