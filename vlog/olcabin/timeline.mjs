@@ -3,23 +3,22 @@
 import fs from "node:fs";
 import { SHOTS } from "./dir.mjs";
 const R = "D:/Proyectos/video2-wt/olcabin/";
-const P = JSON.parse(fs.readFileSync(R + "_v3/olcabin_paras.json", "utf8"));
 const W = JSON.parse(fs.readFileSync(R + "_v3/olcabin_wordms.json", "utf8"));
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9' ]/g, " ").split(/\s+/).filter(Boolean);
 const END = +process.env.MASTER_END || W[W.length - 1].e + 0.6;
 const shots = SHOTS.map((s) => ({ ...s }));
 const errs = [];
 const flat = W.map((w) => norm(w.w).join(""));
-export function findFrom(ph, i0) { const q = norm(ph); for (let i = i0; i + q.length <= flat.length; i++) if (q.every((t, k) => flat[i + k] === t)) return i; return -1; }
+export function findFrom(ph, i0) { const q = ph.split(/\s+/).map((x) => norm(x).join("")).filter(Boolean); for (let i = i0; i + q.length <= flat.length; i++) if (q.every((t, k) => flat[i + k] === t)) return i; return -1; }
+let cur = 0;
 for (const s of shots) {
-  const p = P[s.p];
-  if (!s.at) { s.start = p.s; s.w0 = p.w0; continue; }
-  const hit = findFrom(s.at, p.w0);
-  if (hit < 0 || hit >= p.w0 + p.nw) { errs.push(`p${s.p} no encuentro "${s.at}"`); s.start = p.s; continue; }
-  s.start = W[hit].s - 0.04; s.w0 = hit; // el corte cae 40 ms antes de la palabra
+  if (!s.at) { s.start = 0; s.w0 = 0; continue; }
+  const hit = findFrom(s.at, cur);
+  if (hit < 0) { errs.push(`no encuentro "${s.at}" (desde palabra ${cur}: "${W[cur]?.w}")`); continue; }
+  s.start = W[hit].s - 0.04; s.w0 = hit; cur = hit + 1;
 }
 if (errs.length) { console.error(errs.join("\n")); process.exit(1); }
-shots.sort((a, b) => a.start - b.start);
+
 shots.forEach((s, i) => { s.end = i + 1 < shots.length ? shots[i + 1].start : END; s.dur = +(s.end - s.start).toFixed(3); s.start = +s.start.toFixed(3); });
 if (shots[0].start > 0) shots[0].start = 0;
 const vl = {};

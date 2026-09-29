@@ -4,6 +4,8 @@ import { registerRoot, Composition } from "remotion";
 import { CabinCutaway3D } from "./olcabin/CabinCutaway3D";
 import { TinRecipeBox3D } from "./olcabin/TinRecipeBox3D";
 import { CabinRecipeBook3D } from "./olcabin/CabinRecipeBook3D";
+import { PorridgeBowl3D } from "./olcabin/PorridgeBowl3D";
+import { BooyahKettle3D } from "./olcabin/BooyahKettle3D";
 import { RecipeCountdown, GrandmaCard, OriginMap, WhyTheyStopped } from "./olcabin/CabinCards";
 
 const C = (id: string, component: React.FC, d = 300) => <Composition key={id} id={id} component={component} durationInFrames={d} fps={30} width={1920} height={1080} />;
@@ -15,6 +17,8 @@ const Root = () => (
     {C("KitCountdown", () => <div style={{ width: 1920, height: 1080, background: "#B98C5A" }}><RecipeCountdown n={18} name="Rice porridge" /></div>, 90)}
     {C("KitCard", () => <div style={{ width: 1920, height: 1080, background: "#B98C5A" }}><GrandmaCard title="Fattigmann" lines={["yolks, cream, sugar", "a splash of brandy", "fry at 350 F"]} /></div>, 90)}
     {C("KitMap", () => <OriginMap origins={[{ id: "norway", label: "NORWAY", dishes: ["lefse", "krumkake"], at: 0.3 }, { id: "sweden", label: "SWEDEN", dishes: ["meatballs"], at: 0.9 }, { id: "finland", label: "FINLAND", dishes: ["pannukakku"], at: 1.5 }, { id: "denmark", label: "DENMARK", at: 2.1 }, { id: "belgium", label: "BELGIUM", at: 2.5 }, { id: "cornwall", label: "CORNWALL", at: 2.9 }]} />, 150)}
+    {C("KitPorridge", () => <PorridgeBowl3D stages={[{ at: 0, stage: "cream" }, { at: 2, stage: "well" }, { at: 3.5, stage: "butter" }, { at: 6, stage: "cinnamon" }]} />, 300)}
+    {C("KitBooyah", () => <BooyahKettle3D />, 420)}
     {C("KitWhy", () => <WhyTheyStopped title="Why they faded" items={[{ kind: "iron", caption: "a special iron", offAt: 1 }, { kind: "kettle", caption: "a big kettle", offAt: 2 }, { kind: "table", caption: "a crew", offAt: 3 }]} />, 150)}
   </>
 );

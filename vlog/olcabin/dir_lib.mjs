@@ -12,3 +12,18 @@ export const CAMP = (scene) => `Inside ${KIT}. ${scene}` + TAIL;
 export const OLEP = (scene) => `${WHO}, in ${KIT}. ${scene} His face is the face of the reference image: same face, same age, same white beard, not younger.` + TAIL;
 // snapshot de época HECHO con IA (ilustrativo, nunca presentado como foto real de alguien): 1960s, color desvaído
 export const SNAP = (scene) => `A faded color snapshot photograph taken around 1963 at a logging camp in the snowy north woods of Minnesota with an ordinary family snapshot camera: ${scene} Faded warm colors of old print film, slightly soft print, casual snapshot of ordinary working men caught mid-action, nobody posing, someone cut by the edge of the frame, nothing blurred out. No text, no letters, no signs, no logos.`;
+// olcabin: helpers de sintaxis corta. X(at, kind, name, opts) · at = frase del guion (búsqueda monótona desde la toma anterior)
+export const X = (at, kind, name, o = {}) => ({ ...o, prompt: o.p, at, kind, name });
+const HANDS_PRE = "EXTREME CLOSE-UP of an old man's big hands and the food or object only, his head and face completely outside the frame, no face visible anywhere. His dark green and black plaid flannel sleeves and the edge of a worn tan canvas apron show. ";
+export const HANDS = (scene) => HANDS_PRE + scene + " Rustic log cabin kitchen behind: weathered log wall, cast iron wood stove glowing, plank table." + TAIL;
+export const V = (at, name) => X(at, "vl", name);
+export const AVA = (at, o = {}) => X(at, "av", "av", o);
+export const ST = (at, slot) => X(at, "st", slot);
+export const AR = (at, slot) => X(at, "ar", slot);
+export const H = (at, id, scene, anim) => X(at, "bi", "h_" + id, { p: HANDS(scene), anim, hands: true });
+export const B = (at, id, scene, anim) => X(at, "bi", "b_" + id, { p: BI(scene), anim });
+export const BC = (at, id, scene, anim) => X(at, "bi", "b_" + id, { p: CAMP(scene), anim });
+export const O = (at, id, scene, anim) => X(at, "ole", "o_" + id, { p: OLEP(scene), anim });
+export const C = (at, comp, props = {}, o = {}) => X(at, "c", comp, { props, ...o });
+// placa de cuenta regresiva como overlay (dura ovDur s desde el corte de la toma que la lleva)
+export const CD = (n, name, ovDur = 4.5) => ({ c: "RecipeCountdown", props: { n, name, word: "NUMBER" }, ovDur });

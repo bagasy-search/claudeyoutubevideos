@@ -12,9 +12,9 @@ const ex = (p) => fs.existsSync(PUB + p);
 const probeDur = (p) => { try { return +execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", PUB + p], { encoding: "utf8", windowsHide: true }).trim(); } catch { return 0; } };
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9' ]/g, " ").split(/\s+/).filter(Boolean);
 const flat = W.map((w) => norm(w.w).join(""));
-const findFrom = (ph, i0) => { const q = norm(ph); for (let i = i0; i + q.length <= flat.length; i++) if (q.every((t, k) => flat[i + k] === t)) return i; return -1; };
+const findFrom = (ph, i0) => { const q = ph.split(/\s+/).map((x) => norm(x).join("")).filter(Boolean); for (let i = i0; i + q.length <= flat.length; i++) if (q.every((t, k) => flat[i + k] === t)) return i; return -1; };
 // arranque del tramo de audio de cada clip hablado (el que se le dio a agnes: vlog/olcabin/tramos.py)
-const CLIP0 = { m1: 0.0, m2: 21.9, m3: 32.16, m4: 47.46, m5: 77.58, m6a: 285.14, m6b: 291.08, m7: 397.21, m8: 457.11, m9: 702.14 };
+const CLIP0 = JSON.parse(fs.readFileSync(R + "vlog/olcabin/tramos/_tramos.json", "utf8")); for (const k of Object.keys(CLIP0)) CLIP0[k] = CLIP0[k][0];
 // foley de respaldo para los detalles sin clip (sfx reales de la biblioteca)
 const KF_SFX = { d_pour: "px_gluglu.mp3", d_spoon: "px_bubble.mp3", d_salt: "px_fizz_alt1.mp3", d_sort: "px_wipe.mp3", d_skim: "px_bubble_alt1.mp3", d_lid: "px_capPop.mp3", d_kettle: "px_gluglu_alt2.mp3", d_soda: "px_fizz.mp3", d_liquor: "px_gluglu_alt1.mp3", d_layer: "px_wipe_alt1.mp3", d_liftpot: "Crackling_campfire_w_#1-1780924416643.mp3", d_lidoff: "px_bubble_alt2.mp3" };
 const AV = "avatar_clips/olcabin/reel30.mp4", AV_READY = ex(AV);
@@ -48,7 +48,7 @@ shots.forEach((s, i) => {
       if (KF_SFX[s.name]) foley.push({ from: f0, dur: c.dur, src: "sfx/" + KF_SFX[s.name], vol: 0.5 });
     }
   } else if (s.kind === "st") {
-    const p = `broll/olcabin_st30/${s.name}.mp4`;
+    const p = `broll/olcabin_st30/${s.name}.mp4`; // s.name = slot st_*
     c.k = "img"; c.real = 1; c.clip = ex(p) ? p : null; c.clipF = c.clip ? Math.floor(probeDur(p) * FPS) - 1 : 0; c.img = null;
     if (!c.clip) warn.push(`falta stock ${s.name}`); else lastBed = p;
   } else if (s.kind === "ar") {
@@ -62,37 +62,38 @@ shots.forEach((s, i) => {
     c.k = "comp"; c.name = s.name; c.props = resolve(s.props || {}, s);
   }
   if (c.k === "comp" && ["OleMythTrick", "OleHeatCurve", "OleSaltAcidTimeline", "OleRecapCard", "OleBeanSwell"].includes(c.name) && !c.props.bed && lastBed && !/\.mp4$/.test(lastBed)) c.props = { ...c.props, bed: lastBed };
-  if (s.ov) ovs.push({ from: f0, dur: c.dur, name: s.ov.c, props: resolve(s.ov.props || {}, s) });
+  if (s.ov) ovs.push({ from: f0, dur: s.ov.ovDur ? Math.min(F(s.ov.ovDur), TOTAL - f0) : c.dur, name: s.ov.c, props: resolve(s.ov.props || {}, s) });
   cues.push(c);
 });
 // ── SONIDO: whoosh en los cortes rápidos del minuto 1; foley de fogón/hervor bajo los 3D y el pozo; papel/lápiz en tarjetas
 const S = (at, file, vol, dur = 45) => sfx.push({ from: Math.max(0, F(at)), dur, src: "sfx/" + file, vol });
 cues.forEach((c, i) => {
-  const t = c.from / FPS, d = c.dur / FPS;
+  const t = c.from / FPS;
   if (t < 60 && i > 0 && c.k !== "av") S(t - 0.12, i % 2 ? "whoosh.mp3" : "sfx_whoosh_soft.mp3", 0.2, 20);
-  if (c.k === "comp" && c.name === "OleDutchOven3D") S(t, "px_gluglu_alt1.mp3", 0.35, Math.min(c.dur, 150));
-  if (c.k === "comp" && c.name === "OleBeanHole3D") S(t, "Crackling_campfire_w_#1-1780924416643.mp3", 0.3, c.dur);
-  if (c.k === "comp" && ["OleBookPage", "OleRecapCard", "OleMythTrick"].includes(c.name)) S(t + 0.1, "yc_page_flip.mp3", 0.3, 40);
-  if (c.k === "comp" && ["OleHeatCurve", "OleSaltAcidTimeline", "OleCampMap"].includes(c.name)) S(t + 0.3, "yc_pencil.mp3", 0.22, Math.min(c.dur, 90));
+  else if (c.k === "comp" && i > 0) S(t - 0.1, "sfx_whoosh_soft.mp3", 0.14, 20);
+  if (c.k === "comp" && ["OleBookPage", "CabinRecipeBook3D"].includes(c.name)) S(t + 0.1, "yc_page_flip.mp3", 0.3, 40);
+  if (c.k === "comp" && ["OriginMap", "GrandmaCard"].includes(c.name)) S(t + 0.3, "yc_pencil.mp3", 0.22, Math.min(c.dur, 90));
+  if (c.k === "comp" && c.name === "TinRecipeBox3D") S(t + 0.2, "soft_organic_wooden__#4-1780923840971.mp3", 0.3, 50);
+  if (c.k === "comp" && c.name === "CabinCutaway3D") S(t, "amb_fuego.mp3", 0.3, Math.min(c.dur, 200));
   if (c.k === "comp" && c.name === "OleCTA") S(t, "warm_rising_tonal_sw_#3-1780924218410.mp3", 0.25, 60);
+  if (c.k === "comp" && ["BooyahKettle3D", "PorridgeBowl3D"].includes(c.name)) S(t, "px_bubble.mp3", 0.3, Math.min(c.dur, 120));
   if (c.k === "arch") S(t + 0.1, "gentle_papercard_pop_#2-1780923860389.mp3", 0.22, 30);
-  if (c.real && c.k === "img" && /fire|ember|coal|stove/.test(JSON.stringify(shots[i].name))) {} // stock mudo
 });
 for (const o of ovs) {
   const t = o.from / FPS;
-  if (o.name === "OleStamp") S(t + (typeof o.props.at === "number" ? o.props.at : 0.5), "yc_stamp.mp3", 0.3, 30);
+  if (o.name === "RecipeCountdown") S(t + 0.05, "stinger_hit.mp3", 0.28, 40);
   else if (o.name === "OleRuleCard") S(t + 0.15, "yc_paper_tear.mp3", 0.18, 30);
   else S(t + 0.2, "floraphonic-minimal-pop-click-ui-1-198301.mp3", 0.22, 20);
 }
 // fuego/brasas REAL de stock: ambiente de fogón bajo esos planos (el stock viene mudo)
-cues.forEach((c, i) => { const n = shots[i].name; if (["st17", "st93", "st104", "st107", "st113", "st253", "st256", "st25", "st23"].includes(n)) foley.push({ from: c.from, dur: c.dur, src: "sfx/amb_fuego.mp3", vol: 0.35 }); });
-// ambiente continuo de estufa bajo el minuto 1 (compuerta: 0 silencios en el minuto 1; las pausas naturales de la voz quedaban mudas)
+cues.forEach((c, i) => { const n = shots[i].name; if (["st_woodstove_fire", "st_cast_iron_skillet", "st_big_kettle_outdoor"].includes(n)) foley.push({ from: c.from, dur: c.dur, src: "sfx/amb_fuego.mp3", vol: 0.35 }); });
+// ambiente continuo de estufa bajo el minuto 1 (compuerta: 0 silencios en el minuto 1)
 foley.push({ from: 0, dur: F(64), src: "sfx/olcabin_amb_m1.m4a", vol: 0.85 });
 // ── compuertas del build
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }
 const out = `// GENERADO por vlog/olcabin/gen_timeline.mjs — no editar a mano
-export const TOTAL_FRAMES_OLBEANS = ${TOTAL};
+export const TOTAL_FRAMES_OLCABIN = ${TOTAL};
 export const AV_READY = ${AV_READY};
 export const AUDIO = "olcabin.m4a";
 export const MUSIC = "sfx/olcabin_bed.m4a";
@@ -111,7 +112,7 @@ fs.writeFileSync(R + "_v3/olcabin_cues.json", JSON.stringify(qc, null, 1));
 fs.mkdirSync(R + "src/olcabin", { recursive: true });
 fs.writeFileSync(R + "src/olcabin/timeline_olcabin.gen.ts", out);
 // lista EXPLÍCITA de assets para el tar del farm
-const refs = new Set(["olcabin.m4a", "sfx/olcabin_bed.m4a", "ref_olcabin.png", "qr_ole.png", "img/ole/portada.png", "img/ole/pagina_metodo.png", "img/ole/pagina_frijoles.png"]);
+const refs = new Set(["olcabin.m4a", "sfx/olcabin_bed.m4a", "ref_olcabin.png", "qr_ole_olcabin.png", "img/ole/portada.png"]);
 const walk = (o) => { if (typeof o === "string") { if (/^(img|broll|vid|sfx|avatar_clips)\/.+\.(jpg|png|mp4|m4a|mp3|wav)$/.test(o)) refs.add(o); } else if (o && typeof o === "object") Object.values(o).forEach(walk); };
 walk(cues); walk(ovs); walk(sfx); walk(foley);
 for (const c of cues) if (c.clip && c.clipF < c.dur) refs.add(c.clip.replace(/\.mp4$/, "_last.jpg"));

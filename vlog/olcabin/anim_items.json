@@ -1,0 +1,480 @@
+[
+ {
+  "nombre": "b_coldcabin",
+  "motion": "very slow push in, dust floating in the window light"
+ },
+ {
+  "nombre": "h_lye",
+  "motion": "the hand pushes the fish under the cloudy water",
+  "gente": true
+ },
+ {
+  "nombre": "h_dough",
+  "motion": "the hand peels the sticky dough and it tears",
+  "gente": true
+ },
+ {
+  "nombre": "h_pourcoffee",
+  "motion": "coffee pours into the mug, steam curls",
+  "gente": true
+ },
+ {
+  "nombre": "b_eggcup",
+  "motion": "steam rises from the mug, very slow push in"
+ },
+ {
+  "nombre": "h_eggcrack",
+  "motion": "the yolk slides into the coffee grounds",
+  "gente": true
+ },
+ {
+  "nombre": "b_foam",
+  "motion": "the foam heaves and slowly settles"
+ },
+ {
+  "nombre": "h_coldwater",
+  "motion": "cold water pours into the pot",
+  "gente": true
+ },
+ {
+  "nombre": "b_sink",
+  "motion": "the grounds drift down"
+ },
+ {
+  "nombre": "b_fattig",
+  "motion": "a little powdered sugar sifts down onto the cookies"
+ },
+ {
+  "nombre": "h_yolks",
+  "motion": "the spoon whisks the yolks",
+  "gente": true
+ },
+ {
+  "nombre": "h_diamonds",
+  "motion": "the knife cuts a diamond",
+  "gente": true
+ },
+ {
+  "nombre": "h_twist",
+  "motion": "the end of the dough is pulled through the slit",
+  "gente": true
+ },
+ {
+  "nombre": "h_sugar",
+  "motion": "sugar snows down on the cookies",
+  "gente": true
+ },
+ {
+  "nombre": "b_fattig2",
+  "motion": "steam from the mug"
+ },
+ {
+  "nombre": "h_notebook",
+  "motion": "the pencil writes a line",
+  "gente": true
+ },
+ {
+  "nombre": "b_cards",
+  "motion": "slow push in"
+ },
+ {
+  "nombre": "h_underline",
+  "motion": "the pencil underlines the words",
+  "gente": true
+ },
+ {
+  "nombre": "b_herringjar",
+  "motion": "slow push in on the jar"
+ },
+ {
+  "nombre": "h_vinegar",
+  "motion": "vinegar pours into the pan",
+  "gente": true
+ },
+ {
+  "nombre": "h_spices",
+  "motion": "the spices fall into the brine",
+  "gente": true
+ },
+ {
+  "nombre": "b_coldshelf",
+  "motion": "slow push in, frost on the glass"
+ },
+ {
+  "nombre": "h_cracker",
+  "motion": "the sour cream dab is placed",
+  "gente": true
+ },
+ {
+  "nombre": "b_trial",
+  "motion": "the young man hesitates with the cracker"
+ },
+ {
+  "nombre": "h_driedfruit",
+  "motion": "the hand sets down the last cup",
+  "gente": true
+ },
+ {
+  "nombre": "h_glossy",
+  "motion": "the spoon lifts and syrup drips",
+  "gente": true
+ },
+ {
+  "nombre": "b_xmasbowl",
+  "motion": "candle flame flickers"
+ },
+ {
+  "nombre": "b_oldstove",
+  "motion": "slow push in on the stove"
+ },
+ {
+  "nombre": "b_lyebucket",
+  "motion": "the water in the bucket ripples slightly"
+ },
+ {
+  "nombre": "h_krumiron",
+  "motion": "the old hand lifts the iron a little",
+  "gente": true
+ },
+ {
+  "nombre": "h_krumbatter",
+  "motion": "the batter spreads on the iron",
+  "gente": true
+ },
+ {
+  "nombre": "h_krumroll",
+  "motion": "the hand rolls the cookie tight around the cone",
+  "gente": true
+ },
+ {
+  "nombre": "h_krumcream",
+  "motion": "cream fills the cookie",
+  "gente": true
+ },
+ {
+  "nombre": "b_estate",
+  "motion": "a hand reaches for the iron"
+ },
+ {
+  "nombre": "h_cheesebroil",
+  "motion": "the freckles darken on the cheese",
+  "gente": true
+ },
+ {
+  "nombre": "h_cheesejam",
+  "motion": "the jam drops on the cheese",
+  "gente": true
+ },
+ {
+  "nombre": "h_cardamom",
+  "motion": "the pestle crushes the pods",
+  "gente": true
+ },
+ {
+  "nombre": "h_braid",
+  "motion": "the hands cross a strand over",
+  "gente": true
+ },
+ {
+  "nombre": "h_slicebutter",
+  "motion": "the knife spreads the butter",
+  "gente": true
+ },
+ {
+  "nombre": "b_afternoon",
+  "motion": "steam rises from the mug"
+ },
+ {
+  "nombre": "b_marzipan",
+  "motion": "the child holds up the spoon in triumph"
+ },
+ {
+  "nombre": "h_ricemeasure",
+  "motion": "rice pours into the pot",
+  "gente": true
+ },
+ {
+  "nombre": "b_clock",
+  "motion": "slow push in on the pot"
+ },
+ {
+  "nombre": "h_loose",
+  "motion": "the porridge ribbons off the spoon",
+  "gente": true
+ },
+ {
+  "nombre": "b_cream",
+  "motion": "the spoon stirs slowly"
+ },
+ {
+  "nombre": "h_appleSack",
+  "motion": "the hand lifts out dried apple rings",
+  "gente": true
+ },
+ {
+  "nombre": "h_applesimmer",
+  "motion": "cider bubbles around the apples",
+  "gente": true
+ },
+ {
+  "nombre": "h_piecrust",
+  "motion": "the hands crimp the edge",
+  "gente": true
+ },
+ {
+  "nombre": "h_sausagemix",
+  "motion": "the hands fold the mixture",
+  "gente": true
+ },
+ {
+  "nombre": "b_xmasplate",
+  "motion": "slow push in on the plate"
+ },
+ {
+  "nombre": "b_shopline",
+  "motion": "the line shuffles forward"
+ },
+ {
+  "nombre": "h_bannockflour",
+  "motion": "the fork works the lard in",
+  "gente": true
+ },
+ {
+  "nombre": "h_bannockcover",
+  "motion": "the lid lowers onto the pan",
+  "gente": true
+ },
+ {
+  "nombre": "h_kringlefill",
+  "motion": "the filling line is laid down",
+  "gente": true
+ },
+ {
+  "nombre": "h_krautsausage",
+  "motion": "the fork turns a sausage",
+  "gente": true
+ },
+ {
+  "nombre": "h_krautapples",
+  "motion": "apple slices tumble into the pan",
+  "gente": true
+ },
+ {
+  "nombre": "h_krautpour",
+  "motion": "the kraut falls in and steams",
+  "gente": true
+ },
+ {
+  "nombre": "b_appletrick",
+  "motion": "steam rises past the apple"
+ },
+ {
+  "nombre": "b_ironrange",
+  "motion": "the two men gesture at the pots"
+ },
+ {
+  "nombre": "h_hotdishmix",
+  "motion": "the spoon folds the mixture",
+  "gente": true
+ },
+ {
+  "nombre": "h_meatballmix",
+  "motion": "the hands roll a meatball",
+  "gente": true
+ },
+ {
+  "nombre": "h_gravy",
+  "motion": "the spoon scrapes up the brown bits",
+  "gente": true
+ },
+ {
+  "nombre": "b_meatplate",
+  "motion": "steam rises"
+ },
+ {
+  "nombre": "h_mash",
+  "motion": "the masher presses the rutabaga",
+  "gente": true
+ },
+ {
+  "nombre": "b_ugly",
+  "motion": "slow push in"
+ },
+ {
+  "nombre": "b_christmasfin",
+  "motion": "candles flicker"
+ },
+ {
+  "nombre": "h_pannubutter",
+  "motion": "the butter melts and sizzles",
+  "gente": true
+ },
+ {
+  "nombre": "b_sinks",
+  "motion": "the middle sinks a little"
+ },
+ {
+  "nombre": "b_berrysquare",
+  "motion": "the hands take squares"
+ },
+ {
+  "nombre": "h_lutesoak",
+  "motion": "the fish slab swells slowly",
+  "gente": true
+ },
+ {
+  "nombre": "b_lutefans",
+  "motion": "the older man raises his thumb"
+ },
+ {
+  "nombre": "h_molasses",
+  "motion": "the molasses pours",
+  "gente": true
+ },
+ {
+  "nombre": "h_limpaspice",
+  "motion": "slow push in on the spoons",
+  "gente": true
+ },
+ {
+  "nombre": "b_cabinbaking",
+  "motion": "the steam curls from the loaf"
+ },
+ {
+  "nombre": "h_limpaslice",
+  "motion": "the knife slices",
+  "gente": true
+ },
+ {
+  "nombre": "b_limpaherring",
+  "motion": "slow push in"
+ },
+ {
+  "nombre": "h_chowderonion",
+  "motion": "the onion sizzles in the fat",
+  "gente": true
+ },
+ {
+  "nombre": "h_chowderfish",
+  "motion": "the fish settles on the potatoes",
+  "gente": true
+ },
+ {
+  "nombre": "h_rommerich",
+  "motion": "slow push in on the pot",
+  "gente": true
+ },
+ {
+  "nombre": "b_weddingtable",
+  "motion": "candles flicker"
+ },
+ {
+  "nombre": "h_rommesimmer",
+  "motion": "the cream bubbles",
+  "gente": true
+ },
+ {
+  "nombre": "h_rommeflour",
+  "motion": "the flour sifts into the pot",
+  "gente": true
+ },
+ {
+  "nombre": "h_rommeskim",
+  "motion": "the spoon skims the butter",
+  "gente": true
+ },
+ {
+  "nombre": "h_rommemilk",
+  "motion": "the milk pours into the pot",
+  "gente": true
+ },
+ {
+  "nombre": "b_pastydown",
+  "motion": "the lantern light flickers"
+ },
+ {
+  "nombre": "b_pastyfill",
+  "motion": "slow push in"
+ },
+ {
+  "nombre": "h_pastysteak",
+  "motion": "the knife cuts a chunk",
+  "gente": true
+ },
+ {
+  "nombre": "b_twotrays",
+  "motion": "slow push in"
+ },
+ {
+  "nombre": "h_pastycrust",
+  "motion": "the knives cut the lard",
+  "gente": true
+ },
+ {
+  "nombre": "h_pastyfold",
+  "motion": "the dough folds over the filling",
+  "gente": true
+ },
+ {
+  "nombre": "h_spicebag",
+  "motion": "the hand ties the twine",
+  "gente": true
+ },
+ {
+  "nombre": "h_boopot",
+  "motion": "the chicken sinks into the water",
+  "gente": true
+ },
+ {
+  "nombre": "h_boochop",
+  "motion": "the knife chops the meat",
+  "gente": true
+ },
+ {
+  "nombre": "h_boobowl",
+  "motion": "the ladle pours the stew",
+  "gente": true
+ },
+ {
+  "nombre": "b_lefse",
+  "motion": "steam rises from the stack"
+ },
+ {
+  "nombre": "h_ricer",
+  "motion": "the potato strands fall from the ricer",
+  "gente": true
+ },
+ {
+  "nombre": "h_warm",
+  "motion": "the dough sticks and tears",
+  "gente": true
+ },
+ {
+  "nombre": "b_cold",
+  "motion": "frost creeps on the glass"
+ },
+ {
+  "nombre": "h_lefseflour",
+  "motion": "the hand works the flour in",
+  "gente": true
+ },
+ {
+  "nombre": "h_lefsepin",
+  "motion": "the pin rolls the dough thin",
+  "gente": true
+ },
+ {
+  "nombre": "h_lefsestick",
+  "motion": "the stick lifts and flips the lefse",
+  "gente": true
+ },
+ {
+  "nombre": "h_lefsestack",
+  "motion": "the hand lays a lefse on the stack",
+  "gente": true
+ },
+ {
+  "nombre": "b_coffeeon",
+  "motion": "steam curls from the mug, very slow push in"
+ }
+]

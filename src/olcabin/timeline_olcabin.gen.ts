@@ -1,0 +1,1 @@
+export const TOTAL_FRAMES_OLCABIN = 34830; export const AV_READY = false; export const AUDIO = "olcabin.m4a"; export const MUSIC = "sfx/olcabin_bed.m4a"; export const TL: any[] = []; export const OV: any[] = []; export const SFX: any[] = []; export const FOLEY: any[] = [];

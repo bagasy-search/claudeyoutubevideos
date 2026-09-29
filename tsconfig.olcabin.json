@@ -1,1 +1,1 @@
-{ "extends": "./tsconfig.json", "include": [], "files": ["src/index_olcabin_kit.tsx", "src/olcabin/three-shim.d.ts"], "exclude": [] }
+{ "extends": "./tsconfig.json", "include": [], "files": ["src/index_olcabin_kit.tsx", "src/index_olcabin.tsx", "src/olcabin/three-shim.d.ts"], "exclude": [] }
