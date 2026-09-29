@@ -7,7 +7,7 @@ const LAYERS = [
   { key: "carpeta", label: "Carpeta 1 : 3", color: "#a39d91", h: 120, at: 52, grain: true },
   { key: "rayado", label: "Rayado de escoba", color: "#b3ada2", h: 12, at: 70, grooves: true, thin: true },
 ];
-export function direccion({ W, Lf, Le, TL, Tsrc, TOTAL, FPS }) {
+export function direccion({ W, Lf, Le, TL, Tsrc, TOTAL, FPS, still }) {
   const OV = [], SFX = [], INSERTS = [], CAM = [];
   const ov = (c, from, dur, props = {}, sfx) => { OV.push({ c, from, dur, props }); if (sfx) SFX.push({ src: sfx, from: Math.max(0, from - 1), vol: 0.55 }); };
   const base = f => { const c = TL.find(x => x.kind === "vid" && x.from <= f && f < x.from + x.dur); return c ? { src: c.src, startFrom: (c.startFrom || 0) + (f - c.from) } : null; };
@@ -40,7 +40,7 @@ export function direccion({ W, Lf, Le, TL, Tsrc, TOTAL, FPS }) {
   STEPS.forEach(([id, t], i) => { const f = Lf(id), e = i < STEPS.length - 1 ? Lf(STEPS[i + 1][0]) : Le(id); ov("TfbStepCounter", f, e - f, { step: i + 1, total: 8, label: t }, i ? "sfx/lib/tick_3.mp3" : POP); });
   // ===================== 2-4: el antes/después y las preguntas =====================
   // ★ la mitad nueva al lado de la vieja: lupa sobre el rayado
-  { const f = W("s3_01", "mano", 0, -0.2), b = base(f); if (b) ov("TfbZoomCircle", f, 110, { src: b.src, startFrom: b.startFrom, keys: [{ f: 0, x: 0.36, y: 0.8 }], zoom: 2.6, lens: { x: 0.75, y: 0.36 }, label: "áspero, no suelta nada" }, POP); }
+  { const f = W("s3_01", "mano", 0, -0.2), b = base(f); if (b) { const im = still(b, "s3_01"); ov("TfbFreeze", f, 110, { src: b.src, frame: b.startFrom }); ov("TfbZoomCircle", f, 110, { src: im, video: false, keys: [{ f: 0, x: 0.36, y: 0.8 }], zoom: 2.6, lens: { x: 0.75, y: 0.36 }, label: "áspero, no suelta nada" }, POP); } }
   ov("TfbCheckList", W("s3_04", "polvo", 0, -0.4), 95, { title: "SOLO CEMENTO Y AGUA", rows: [{ t: "Se hace polvo", ok: false, at: 4 }, { t: "Salta en placas", ok: false, at: 16 }], side: "right" }, POP);
   // ★ el corte de capas: lo que SÍ aguanta
   { const f = W("s3_05", "carpeta", 0, -0.4); ov("TfbLayerCut", f, Math.max(150, Le("s3_05") - f + 30), { layers: LAYERS, title: "Lo que sí aguanta" }, DEEP); }
@@ -68,7 +68,7 @@ export function direccion({ W, Lf, Le, TL, Tsrc, TOTAL, FPS }) {
   // ===================== 7-9: preparación en detalle =====================
   const P2 = [["s6_02", 1, "Picar"], ["s6_05", 2, "Barrer y lavar"], ["s6_08", 3, "Mojar"], ["s6_09", 4, "Guías y pendiente"], ["s7_01", 5, "Mezcla 1 : 3"], ["s7_08", 6, "Lechada"], ["s8_02", 7, "Lechada al piso"], ["s8_03", 8, "Carpeta"], ["s8_05", 9, "Regla"], ["s8_08", 10, "Fratás"], ["s9_04", 11, "Escoba"], ["s9_06", 12, "Juntas"], ["s10_01", 13, "Curado"]];
   P2.forEach(([id, n, t]) => ov("TfbStepCounter", Lf(id), 110, { step: n, total: 13, label: t, corner: "tl" }, "sfx/lib/tick_2.mp3"));
-  { const f = W("s6_03", "pedazo", 0, -0.2), b = base(f); if (b) ov("TfbZoomCircle", f, 100, { src: b.src, startFrom: b.startFrom, keys: [{ f: 0, x: 0.5, y: 0.62 }], zoom: 2.3, label: "suelto por abajo" }, POP); }
+  { const f = W("s6_03", "pedazo", 0, -0.2), b = base(f); if (b) { const im = still(b, "s6_03"); ov("TfbFreeze", f, 100, { src: b.src, frame: b.startFrom }); ov("TfbZoomCircle", f, 100, { src: im, video: false, keys: [{ f: 0, x: 0.5, y: 0.62 }], zoom: 2.3, label: "suelto por abajo" }, POP); } }
   ov("TfbScribble", W("s6_10", "desague", 0, -0.2), 85, { marks: [{ kind: "arrow", x: 0.35, y: 0.55, to: { x: 0.8, y: 0.85 }, at: 0, note: "hacia el desagüe", noteDy: -120 }] }, DRAW);
   ov("TfbTitleSlam", W("s6_08", "saltean", 0, -0.3), 75, { lines: [{ t: "EL PASO QUE", style: "white", size: 88 }, { t: "CASI TODOS SE SALTEAN", style: "yellowbox", size: 78 }], y: 76 }, "sfx/lib/riser_soft_2.mp3");
   // ===================== 9-11: mezclas + el error nº 2 =====================
@@ -101,9 +101,10 @@ export function direccion({ W, Lf, Le, TL, Tsrc, TOTAL, FPS }) {
   { const f = Lf("s11_05"); ov("TfbTitleSlam", f, Le("s11_05") - f + 10, { lines: [{ t: "PICAR · LAVAR · MOJAR", style: "white", size: 76 }, { t: "LECHADA · CARPETA", style: "white", size: 76 }, { t: "ESCOBA · AGUA", style: "yellowbox", size: 86 }], y: 34, stagger: 12 }, POP); }
     // MINUTO 1: ninguna toma quieta > ~3,5 s → salto de zoom (jump-cut de vlog) en los planos largos que no son del tráiler
   for (const c of TL.filter(x => x.kind === "vid" && !x.trl && x.from < 60 * FPS)) {
-    let k = 0; for (let f = c.from + 100; f < Math.min(c.from + c.dur - 20, 60 * FPS); f += 100, k++) {
-      if (CAM.some(q => Math.abs(q.at - f) < 45) || INSERTS.some(q => f >= q.from - 20 && f < q.from + q.dur + 20)) continue;
-      CAM.push({ at: f, punch: k % 2 ? 1 : 1.17, x: 0.5, y: 0.36 }); }
+    let k = 0; for (let f = c.from + 45; f < Math.min(c.from + c.dur - 15, 60 * FPS); f += 45, k++) {
+      if (CAM.some(q => Math.abs(q.at - f) < 25) || INSERTS.some(q => f >= q.from - 15 && f < q.from + q.dur + 15) || OV.some(o => o.c === "TfbWipeCompare" && f >= o.from && f < o.from + o.dur)) continue;
+      CAM.push({ at: f, punch: [1.22, 1, 1.35, 1.1][k % 4], x: 0.5, y: 0.34 });
+      if (k % 2 === 0) { OV.push({ c: "TfbFlash", from: f, dur: 4, props: { peak: 0.55 } }); SFX.push({ src: "sfx/lib/whoosh_soft_2.mp3", from: f - 2, vol: 0.25 }); } }
   }
   return { OV, SFX, INSERTS, CAM, LAM, MUSIC_FROM: 180, MUSIC_LOW: 0.07, MUSIC_HIGH: 0.3, AMB_DB: 10 };
 }

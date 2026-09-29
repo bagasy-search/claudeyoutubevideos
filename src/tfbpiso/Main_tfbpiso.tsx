@@ -6,7 +6,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, OffthreadVideo, Sequence, staticFile, interpolate } from "remotion";
 import { TL, OV, SFX, FOLEY, MUSIC, VOICE, TOTAL_FRAMES_TFBPISO } from "./timeline_tfbpiso.gen";
-import { TfbCam, TfbFreeze } from "../tfb/TfbCamera";
+import { TfbCam, TfbFreeze, TfbFlash } from "../tfb/TfbCamera";
 import { TfbLayerCut } from "../tfb/TfbLayerCut";
 import { TfbWipeCompare } from "../tfb/TfbWipeCompare";
 import { TfbBroomTexture } from "../tfb/TfbBroomTexture";
@@ -23,14 +23,14 @@ import { TfbTitleSlam } from "../tfb/TfbTitleSlam";
 
 export { TOTAL_FRAMES_TFBPISO };
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const COMPS: Record<string, React.FC<any>> = { TfbLayerCut, TfbWipeCompare, TfbBroomTexture, TfbZoomCircle, TfbScribble, TfbStepCounter, TfbCureCalendar, TfbRatio, TfbCheckList, TfbDropTest, TfbQrCard, TfbPageZoom, TfbTitleSlam, TfbFreeze };
+const COMPS: Record<string, React.FC<any>> = { TfbLayerCut, TfbWipeCompare, TfbBroomTexture, TfbZoomCircle, TfbScribble, TfbStepCounter, TfbCureCalendar, TfbRatio, TfbCheckList, TfbDropTest, TfbQrCard, TfbPageZoom, TfbTitleSlam, TfbFreeze, TfbFlash };
 
 export const MainTfbpiso: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
     {TL.map((c, i) => (
       <Sequence key={"v" + i} from={c.from} durationInFrames={c.dur} premountFor={30}>
         {c.kind === "vid" ? (
-          <TfbCam dur={c.dur} punch={c.punch} shakes={c.shakes} whipIn={c.whipIn} whipOut={c.whipOut} push={c.push}>
+          <TfbCam dur={c.dur} punch={c.punch} shakes={c.shakes} whipIn={c.whipIn} whipOut={c.whipOut} push={c.push} gamma={c.gamma}>
             <OffthreadVideo src={staticFile(c.src!)} startFrom={c.startFrom || 0} playbackRate={c.rate || 1} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </TfbCam>
         ) : (

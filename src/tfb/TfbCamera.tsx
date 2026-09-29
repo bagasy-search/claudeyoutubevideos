@@ -9,7 +9,7 @@ import { AbsoluteFill, Freeze, OffthreadVideo, interpolate, staticFile, useCurre
 import { CAVEAT, TFB, clamp, easeInOut, pop } from "./theme";
 
 export type Punch = { f: number; s: number; x?: number; y?: number };
-export const TfbCam: React.FC<{ dur: number; punch?: Punch[]; push?: number; shakes?: number[]; whipIn?: number; whipOut?: number; children: React.ReactNode }> = ({ dur, punch = [], push = 0, shakes = [], whipIn = 0, whipOut = 0, children }) => {
+export const TfbCam: React.FC<{ dur: number; punch?: Punch[]; push?: number; shakes?: number[]; whipIn?: number; whipOut?: number; gamma?: number; children: React.ReactNode }> = ({ dur, punch = [], push = 0, shakes = [], whipIn = 0, whipOut = 0, gamma = 1, children }) => {
   const f = useCurrentFrame();
   let s = 1, ox = 50, oy = 40;
   for (const p of punch) if (f >= p.f) { s = p.s; ox = (p.x ?? 0.5) * 100; oy = (p.y ?? 0.4) * 100; }
@@ -19,9 +19,14 @@ export const TfbCam: React.FC<{ dur: number; punch?: Punch[]; push?: number; sha
   let blur = 0;
   if (whipIn && f < whipIn) { const t = interpolate(f, [0, whipIn], [1, 0], { ...clamp, easing: easeInOut }); dx += t * 900; blur = t * 38; }
   if (whipOut && f > dur - whipOut) { const t = interpolate(f, [dur - whipOut, dur], [0, 1], { ...clamp, easing: easeInOut }); dx -= t * 900; blur = Math.max(blur, t * 38); }
+  // gamma > 1 aclara las sombras (clips más oscuros que sus anclas): filtro SVG feComponentTransfer, exponente 1/gamma
+  const gid = gamma !== 1 ? `tg${Math.round(gamma * 100)}` : "";
+  const filt = [gid ? `url(#${gid})` : "", blur ? `blur(${blur.toFixed(1)}px)` : ""].filter(Boolean).join(" ") || undefined;
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
-      <AbsoluteFill style={{ transform: `translate(${dx}px, ${dy}px) rotate(${rot}deg) scale(${s * (blur ? 1.05 : 1)})`, transformOrigin: `${ox}% ${oy}%`, filter: blur ? `blur(${blur.toFixed(1)}px)` : undefined }}>
+      {gid && <svg width={0} height={0} style={{ position: "absolute" }}><filter id={gid} colorInterpolationFilters="sRGB"><feComponentTransfer>
+        {(["R", "G", "B"] as const).map(c => React.createElement(`feFunc${c}`, { key: c, type: "gamma", amplitude: 1, exponent: 1 / gamma, offset: 0 }))}</feComponentTransfer></filter></svg>}
+      <AbsoluteFill style={{ transform: `translate(${dx}px, ${dy}px) rotate(${rot}deg) scale(${s * (blur ? 1.05 : 1)})`, transformOrigin: `${ox}% ${oy}%`, filter: filt }}>
         {children}
       </AbsoluteFill>
     </AbsoluteFill>
@@ -47,4 +52,10 @@ export const TfbFreeze: React.FC<{ dur: number; src: string; frame: number; note
       <AbsoluteFill style={{ backgroundColor: "#fff", opacity: flash }} />
     </AbsoluteFill>
   );
+};
+
+/** Destello: flash blanco de 1-2 cuadros que se apaga (acento en un corte). */
+export const TfbFlash: React.FC<{ dur: number; peak?: number }> = ({ dur, peak = 0.75 }) => {
+  const f = useCurrentFrame();
+  return <AbsoluteFill style={{ backgroundColor: "#fff", opacity: interpolate(f, [0, 1, Math.max(2, dur)], [peak, peak * 0.6, 0], clamp) }} />;
 };

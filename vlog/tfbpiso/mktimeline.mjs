@@ -28,6 +28,12 @@ for (const s of TXT) {
   const startF = {}, info1 = {}; tl.forEach(c => { startF[c.id] = Math.round(c.vstart * FPS); info1[c.id] = c; });
   info[S] = { src, nf, startF, tl: info1, aud: plan.dir + `/audio_vlog_${S}.wav`, plan };
 }
+// ---- gamma por escena: si el mp4 armado salió más oscuro que sus anclas, se aclara en el montaje (tope 1,45)
+const lum = f => { const b = execFileSync("ffmpeg", ["-v", "error", "-i", f, "-vf", (f.endsWith(".png") ? "" : "fps=0.5,") + "scale=64:36,format=gray", "-f", "rawvideo", "-"], { maxBuffer: 1 << 26 }); let t = 0; for (const v of b) t += v; return t / b.length; };
+for (const S of Object.keys(info)) { const anc = info[S].plan.anchors.filter(a => !a.noface).map(a => info[S].plan.dir + "/anc/" + a.id + ".png").filter(f => fs.existsSync(f));
+  const la = anc.reduce((t, f) => t + lum(f), 0) / anc.length, lv = lum(R + "public/" + info[S].src);
+  const g = Math.min(1.45, Math.max(1, Math.log(lv / 255) / Math.log(la / 255))); info[S].gamma = +g.toFixed(2);
+  console.log(`luma ${S}: anclas ${la.toFixed(0)} · video ${lv.toFixed(0)} → gamma ${info[S].gamma}`); }
 // ---- T (tráiler): keyframes 4 s → 30 fps 1920x1080 sin audio + su foley aparte
 const TP = J(V + "plan_T.json"), TS = fs.existsSync(V + "T/clips/state_det.json") ? J(V + "T/clips/state_det.json") : {};
 const Tsrc = {};
@@ -73,7 +79,7 @@ for (const [S, from, to] of SEG) {
   if (SKIP.includes(S)) continue;
   const I = info[S], f0 = from ? I.startF[from] : 0, f1 = to ? I.startF[to] : I.nf;
   if (f0 === undefined || f1 === undefined) throw new Error("segmento " + S + from + to);
-  TL.push({ kind: "vid", src: I.src, from: fr, dur: f1 - f0, startFrom: f0, scene: S, sceneFrom: f0 });
+  TL.push({ kind: "vid", src: I.src, from: fr, dur: f1 - f0, startFrom: f0, scene: S, sceneFrom: f0, ...(I.gamma > 1.03 ? { gamma: I.gamma } : {}) });
   for (const [id, c] of Object.entries(I.tl)) { const cf = Math.round(c.start * FPS); if (cf >= f0 && cf < f1) lineAt[id] = { f: fr + cf - f0, t0: TR[id] ? TR[id].s : null, S };
     if (detFoley[id] && cf >= f0 && cf < f1) FOLEY.push({ src: detFoley[id].a, from: fr + Math.round(c.vstart * FPS) - f0, dur: Math.round(c.vdur * FPS), startFrom: 0, vol: 0.3 }); }
   if (!from) chap.push([S, fr]);
@@ -95,7 +101,8 @@ const W = (id, word, n = 0, dt = 0) => { const L = lineAt[id]; if (!L) { if (SKI
 const Lf = id => { if (!lineAt[id]) { if (SKIP.length) return NOPE; throw new Error("línea sin ubicar " + id); } return lineAt[id].f; };
 const Le = id => lineAt[id] ? Lf(id) + Math.round((TR[id].e - TR[id].s) * FPS) : NOPE;
 // ---- dirección (overlays, inserts, cámara, sfx) — vive en director.mjs
-const D = direccion({ W, Lf, Le, TL, Tsrc, TOTAL, info, FPS });
+const still = (b, name) => { const o = `img/tfbpiso/fz_${name}.jpg`; ff("-ss", (b.startFrom / FPS).toFixed(3), "-i", R + "public/" + b.src, "-frames:v", "1", "-q:v", "3", R + "public/" + o); return o; };
+const D = direccion({ W, Lf, Le, TL, Tsrc, TOTAL, info, FPS, still });
 const ok = x => x && x.from >= 0 && x.from < TOTAL && (x.dur == null || x.dur > 0);
 const OV = D.OV.filter(ok).sort((a, b) => a.from - b.from), SFX = D.SFX.filter(ok);
 if (D.OV.length !== OV.length) console.log("⚠️ overlays descartados:", D.OV.length - OV.length, SKIP.length ? "(modo prueba)" : "⛔ revisar");
@@ -137,7 +144,7 @@ const clean = x => { const { trl, scene, sceneFrom, insert, lam: _l, foley, fole
 const ts = `// GENERADO por vlog/tfbpiso/mktimeline.mjs — no editar a mano
 export const TOTAL_FRAMES_TFBPISO = ${TOTAL};
 export const VOICE = "tfbpiso_voz.wav";
-export type Cue = { kind: "vid" | "lam"; src?: string; from: number; dur: number; startFrom?: number; rate?: number; punch?: { f: number; s: number; x?: number; y?: number }[]; shakes?: number[]; whipIn?: number; whipOut?: number; push?: number; keys?: [number, number, number, number][]; marks?: { from: number; to: number; x: number; y: number; w: number; h: number }[] };
+export type Cue = { kind: "vid" | "lam"; src?: string; from: number; dur: number; startFrom?: number; rate?: number; gamma?: number; punch?: { f: number; s: number; x?: number; y?: number }[]; shakes?: number[]; whipIn?: number; whipOut?: number; push?: number; keys?: [number, number, number, number][]; marks?: { from: number; to: number; x: number; y: number; w: number; h: number }[] };
 export type Ov = { c: string; from: number; dur: number; props: Record<string, unknown> };
 export type Snd = { src: string; from: number; dur: number; startFrom?: number; vol: number; fadeIn?: number; fadeOut?: number };
 export const TL: Cue[] = ${JSON.stringify(TL.map(clean))};
