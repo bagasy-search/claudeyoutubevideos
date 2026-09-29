@@ -68,7 +68,7 @@ const tok = (s) => new Set(String(s).toLowerCase().split(/[^a-z]+/).filter((w) =
 const STOP = new Set(["the", "and", "that", "this", "with", "from", "they", "their", "there", "then", "what", "when", "into", "over", "just", "like", "about", "were", "have", "has", "had", "was", "are", "for", "you", "your", "his", "her", "its", "but", "not", "all", "one", "two", "out", "get", "got", "who", "how", "more", "than", "some", "very", "been", "would", "could", "every", "each", "back", "down", "here", "where", "night", "people", "because", "thing", "things", "time", "only", "most", "around", "after", "before", "still", "long", "even", "know"]);
 const fname = (c) => (c.type === "photo" ? "p_" : "r_") + path.basename(c.file).replace(/[^A-Za-z0-9._-]/g, "");
 // fuera: agujas de ACERO (anacronismo), foto con lente de turista al borde, Tierra CG (no es metraje real)
-const EXCL = /px_6654775|px_4456102|px_6654782|px_1851190|wm_hadza_fire|px_30100854|px_30100897|px_33404877|px_16565510|px_31385059|px_39156853|px_16952132|px_30216880|px_37266588|px_37549649/; // + leones de zoo de día, búhos de día, pollos al spiedo
+const EXCL = /px_30024912|wm_bordercave.jpg|px_6654775|px_4456102|px_6654782|px_1851190|wm_hadza_fire|px_30100854|px_30100897|px_33404877|px_16565510|px_31385059|px_39156853|px_16952132|px_30216880|px_37266588|px_37549649/; // + leones de zoo de día, búhos de día, pollos al spiedo
 const usable = cat.filter((c) => fs.existsSync(c.file) && !oscuros.has(fname(c)) && !EXCL.test(c.file) && !/\b(sea|ocean|coast|coastline|waves|beach|palm|tropical)\b/i.test(c.desc));
 const usedFoot = new Set();
 const footSrc = (c) => {

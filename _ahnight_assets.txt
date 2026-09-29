@@ -41,8 +41,8 @@ broll/ahnight/ah_022_1.mp4
 ah/ahnight/ah_023_0.jpg
 broll/ahnight/ah_024_0.mp4
 ah/ahnight/r_px_7577203_4.mp4
-ah/ahnight/r_px_30024912_52.mp4
 ah/ahnight/p_wm_hyena_skeleton.jpg
+ah/ahnight/p_wm_hyena_skull.jpg
 ah/ahnight/ah_027_0.jpg
 broll/ahnight/ah_027_1.mp4
 broll/ahnight/ah_028_0.mp4
@@ -111,9 +111,9 @@ ah/ahnight/ah_078_0.jpg
 ah/ahnight/v2_v2_hunter_bedding.jpg
 ah/ahnight/ah_081_0.jpg
 broll/ahnight/ah_082_0.mp4
-ah/ahnight/p_wm_bordercave.jpg
 ah/ahnight/p_wm_bordercave00.jpg
 ah/ahnight/p_wm_sibudu_plan.jpg
+broll/ahnight/ah_084_0.mp4
 ah/ahnight/r_px_6214326_0.mp4
 ah/ahnight/ah_085_0.jpg
 ah/ahnight/r_px_5610291_21.mp4
@@ -158,7 +158,7 @@ ah/ahnight/ah_117_0.jpg
 ah/ahnight/p_wm_bushman_fire.jpg
 ah/ahnight/ah_118_0.jpg
 broll/ahnight/ah_119_0.mp4
-ah/ahnight/p_wm_hyena_skull.jpg
+ah/ahnight/p_wm_hyena_mhnt.jpg
 ah/ahnight/r_px_4108550_0.mp4
 ah/ahnight/r_px_33768117_6.mp4
 ah/ahnight/r_px_39188578_0.mp4
@@ -236,3 +236,10 @@ ah/ahnight/r_px_6093233_9.mp4
 ah/ahnight/v2_frost_1.jpg
 ah/ahnight/ah_141_0.jpg
 ah/ahnight/r_px_11320881_12.mp4
+ah/ahnight/tr_v2t1_clock1.mp4
+ah/ahnight/tr_v2t2_title.mp4
+ah/ahnight/tr_v2t3_ochre.mp4
+ah/ahnight/tr_v2t4_shadow.mp4
+ah/ahnight/tr_v2t5_campout.mp4
+ah/ahnight/tr_v2t7_campin.mp4
+ah/ahnight/tr_v2t8_fire.mp4

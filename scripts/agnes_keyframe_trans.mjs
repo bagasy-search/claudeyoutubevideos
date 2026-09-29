@@ -58,6 +58,7 @@ async function poll(j, vid, ki) {
     try {
       const s = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + KS[ki] }, signal: AbortSignal.timeout(45000) })).json();
       if (s.url) { const v = await fetch(s.url, { signal: AbortSignal.timeout(300000) }); fs.writeFileSync(path.join(OUT, "_raw", `${j.id}.mp4`), Buffer.from(await v.arrayBuffer())); log(j.id, "LISTO", Math.round((Date.now() - t0) / 1000) + "s"); return true; }
+      if (/429|too many|rate/i.test(JSON.stringify(s)) && s.status !== "failed") { await sleep(30000); continue; }  // 429 de CONSULTA: el job sigue vivo
       if (s.status === "failed" || s.error) { log(j.id, "FALLO", JSON.stringify(s).slice(0, 200)); return false; }
     } catch {}
     if (Date.now() - t0 > 40 * 60000) { log(j.id, "timeout"); return false; }
