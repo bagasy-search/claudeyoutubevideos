@@ -23,37 +23,18 @@ def add(x, at, gain=1.0, dur=None, fade=0.0):
     if e > i0: mix[i0:e] += x[: e - i0] * gain
 voice = load("olsup.wav", 1); add(np.repeat(voice, 2, 1), 0.0)
 
-# ── AMBIENTE DEL MINUTO 1 (sintetizado, determinista): cuarto de cabaña = ruido rosa grave + ráfagas de viento + crepitar de brasas.
-# Sube en los HUECOS de la voz (nadie habla → suena la cabaña) y baja bajo la voz: el minuto 1 no tiene silencios.
-AMB_T = 66.0
-rng = np.random.default_rng(5); n_amb = int(AMB_T * SR)
-def lp(x, fc):
-    a = np.exp(-2 * np.pi * fc / SR); y = np.zeros_like(x); acc = 0.0
-    for i in range(len(x)): acc = a * acc + (1 - a) * x[i]; y[i] = acc
-    return y
-w = rng.normal(0, 1, n_amb).astype(np.float64)
-room = lp(lp(w, 260), 260); room /= (np.abs(room).max() + 1e-9)
-t_ = np.arange(n_amb) / SR
-gust = 0.55 + 0.45 * np.sin(2 * np.pi * 0.11 * t_ + 1.3) * np.sin(2 * np.pi * 0.037 * t_ + 0.4)
-wind = lp(rng.normal(0, 1, n_amb), 900) * gust; wind /= (np.abs(wind).max() + 1e-9)
-crack = np.zeros(n_amb)
-for _ in range(int(AMB_T * 7)):
-    i0 = int(rng.random() * (n_amb - 2000)); L = int(rng.integers(60, 500)); crack[i0:i0 + L] += rng.normal(0, 1, L) * np.exp(-np.arange(L) / (L / 4)) * rng.random()
-crack = lp(crack, 5000); crack /= (np.abs(crack).max() + 1e-9)
-amb = 0.70 * room + 0.35 * wind + 0.30 * crack
-amb = np.stack([amb, np.roll(amb, 37)], 1).astype(np.float32)   # leve decorrelación estéreo
-amb /= np.sqrt((amb ** 2).mean()) + 1e-9                       # RMS = 1
-v0 = load("olsup.wav", 1)[: int(AMB_T * SR), 0]
+bed = load("sfx/olsup_bed.m4a")
+v0 = load("olsup.wav", 1)[: int(66 * SR), 0]
 hop = int(0.02 * SR); m = len(v0) // hop
 ve = np.sqrt((v0[: m * hop].reshape(m, hop) ** 2).mean(1))
-talk = (ve > 0.02).astype(np.float32)
-talk = np.convolve(talk, np.ones(15) / 15, "same")                 # 300 ms de suavizado
-gain_c = np.repeat(0.012 + (0.045 - 0.012) * (1 - talk), hop)[: len(amb)]
-gain_c = np.pad(gain_c, (0, len(amb) - len(gain_c)), constant_values=0.045)
-k = int(1.5 * SR); ramp = np.ones(len(amb), np.float32); ramp[:k] = np.linspace(0, 1, k); ramp[-k * 2:] = np.linspace(1, 0, k * 2)
-add(amb * (gain_c * ramp)[:, None].astype(np.float32), 0.0)
-bed = load("sfx/olsup_bed.m4a"); add(bed, 6.0, 1.0, fade=1.5)
-for a in FOLEY: add(load(a["src"]), a["from"] / FPS, a.get("vol", 1.0), a["dur"] / FPS, 0.15)
+talk = np.convolve((ve > 0.02).astype(np.float32), np.ones(25) / 25, "same")
+g1 = np.repeat(1.0 + 3.2 * (1 - talk), hop)                      # minuto 1: la música respira en las pausas (x4,2 ≈ +12 dB)
+g = np.ones(len(bed), np.float32); n1 = min(len(g1), len(g)); g[:n1] = g1[:n1]; g[n1:] = 1.0
+if n1 < len(g): g[n1:n1 + 2 * SR] = np.linspace(g[n1 - 1], 1.0, min(2 * SR, len(g) - n1))
+add(bed * (0.7 * g)[:, None].astype(np.float32), 0.0, 1.0, fade=1.5)
+for a in FOLEY:
+    if "winter_wind" in a["src"]: continue
+    add(load(a["src"]), a["from"] / FPS, a.get("vol", 1.0) * 0.6, a["dur"] / FPS, 0.15)
 cache = {}
 for a in SFX:
     if a["src"] not in cache: cache[a["src"]] = load(a["src"])
