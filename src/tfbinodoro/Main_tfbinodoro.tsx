@@ -42,6 +42,7 @@ const node = (s?: { src?: string; img?: string; startFrom?: number; rate?: numbe
 const FxView: React.FC<{ x: Fx }> = ({ x }) => {
   const p = x.p as any;
   switch (x.kind) {
+    case "cover": return <TfbCam push={p.push} dur={x.dur}>{node(x.foot)}</TfbCam>; // tapa de labios: detalle a pantalla completa
     case "zoom": return <TfbZoomCircle {...p}>{node(x.foot)}</TfbZoomCircle>;
     case "xray": return <TfbXRay {...p}>{node(x.foot)}</TfbXRay>;
     case "jets": return <TfbJetMap {...p}>{node(x.foot)}</TfbJetMap>;

@@ -49,7 +49,7 @@ export function buildFx({ wordF, lineStartF, endF, footAt, ancImg, TL, SFX, FPS 
 
   // ===== S8 · la mochila (CTA 2) =====
   { const f = wordF("s8_01", "raya"); add("stroke", f, endF("s8_01") - f, { kind: "underline", a: { x: 0.36, y: 0.52 }, b: { x: 0.38, y: 0.78 }, seed: 9, width: 14 }); sfx("draw", f); }
-  { const f = wordF("s8_04", "veinte"); add("words", f, Math.min(90, endF("s8_04") - f), { words: W("ESPERA", hl("20 MINUTOS")), perWord: 4, pos: "high" }); sfx("tick", f); }
+  { const f = wordF("s8_04", "20"); add("words", f, Math.min(90, endF("s8_04") - f), { words: W("ESPERA", hl("20 MINUTOS")), perWord: 4, pos: "high" }); sfx("tick", f); }
   { const f = wordF("s8_05c", "gas"); add("warn", f - 6, 70, { mode: "never", items: [{ icon: "cloro", label: "CLORO" }, { icon: "acido", label: "ÁCIDO" }] }); sfx("impact", f + 10); }
   { const f = lineStartF("s8_10"), e = endF("s8_10"); add("qr", f, e - f, { line1: "LA COLECCIÓN", line2: "El enlace está abajo" }); sfx("pop", f); }
 
@@ -66,5 +66,23 @@ export function buildFx({ wordF, lineStartF, endF, footAt, ancImg, TL, SFX, FPS 
   // ===== S9 · el escalón (se paga el loop) + cierre =====
   { const s = lineStartF("s9_05"), e = endF("s9_06"); add("xray", s, e - s, { crust0: 0.55, crustMax: 0.55, focus: "escalon", focusAt: 10, labels: { escalon: "EL ESCALÓN" }, title: "La curva de abajo", exitAt: e - s }, footAt("s9_05")); sfx("impact", s + 10); sfx("whoosh_big", s - 3); }
   { const f = lineStartF("s9_09"), e = endF("s9_09"); add("qr", f, e - f, { line1: "LA COLECCIÓN", line2: "El enlace está abajo" }); sfx("pop", f); }
-  return FX;
+  // ===== TAPAS de labios (29-sep): clips cuya boca dice OTRA frase (labios <0,8) → plano DETALLE a pantalla completa
+  // de lo que se está diciendo, así no se ve la boca. La voz (máster) sigue igual. Van DEBAJO de todo el resto de la capa.
+  // COVERS[id] = [{ foot, until? (palabra de corte), push }] · cada parte cubre hasta `until` (o el fin del clip).
+  const COVERS = {
+    s1_02: [{ foot: footAt("s1_02"), push: { s0: 2.0, s1: 2.1, ox: 56, oy: 92 } }],                       // las dos mitades cortadas
+    s7b_02: [{ foot: { img: ancImg("S7b", "K1") }, until: "tapalos", push: { s0: 2.0, s1: 2.15, ox: 11, oy: 90 } }, // bisagras del asiento
+             { foot: { img: ancImg("S7b", "K2") }, push: { s0: 2.0, s1: 2.15, ox: 11, oy: 88 } }],              // tapadas con la bolsa
+    s9_08: [{ foot: { img: ancImg("S3", "K11") }, until: "cloro", push: { s0: 1.0, s1: 1.12, ox: 45, oy: 55 } },
+            { foot: { img: ancImg("S3", "K12") }, push: { s0: 1.04, s1: 1.16, ox: 70, oy: 45 } }],
+  };
+  const COV = [];
+  for (const [id, parts] of Object.entries(COVERS)) {
+    const s0 = lineStartF(id), e0 = endF(id); let a = s0;
+    parts.forEach((pt, i) => { const b = i < parts.length - 1 ? wordF(id, pt.until) - 3 : e0; const d = b - a;
+      COV.push({ kind: "cover", from: Math.round(a), dur: Math.round(d), foot: pt.foot, p: { push: { from: 0, to: Math.round(d), ...pt.push } } });
+      sfx("whoosh", a - 3); a = b; });
+  }
+  { const f = wordF("s9_08", "diluido"); add("words", f - 2, endF("s9_08") - f > 150 ? 150 : endF("s9_08") - f, { words: W("SIEMPRE", hl("DILUIDO"), "Y", hl("SIN CLORO")), perWord: 5, pos: "high", tone: "warn" }); sfx("hit", f - 2); }
+  return [...COV, ...FX];
 }
