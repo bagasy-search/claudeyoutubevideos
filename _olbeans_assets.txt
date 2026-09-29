@@ -39,7 +39,7 @@ vid/olbeans/d_sort.mp4
 broll/olbeans_st30/st57.mp4
 broll/olbeans_st30/st210.mp4
 img/olbeans/ar/a_mn_camp_stereo.jpg
-broll/olbeans_st30/st179.mp4
+img/olbeans/b_rinse.png
 img/olbeans/b_coldwater.png
 broll/olbeans_st30/st45.mp4
 broll/olbeans_st30/st6.mp4
@@ -85,8 +85,9 @@ img/olbeans/ar/a_peaveys.jpg
 broll/olbeans_st30/st53.mp4
 img/olbeans/b_stonepit.png
 broll/olbeans_st30/st17.mp4
-broll/olbeans_st30/st37.mp4
+broll/olbeans_st30/st107.mp4
 broll/olbeans_st30/st93.mp4
+broll/olbeans_st30/st104.mp4
 img/olbeans/b_handheat.png
 img/olbeans/ar/a_hume_cookhouse.jpg
 broll/olbeans_st30/st213.mp4
@@ -95,9 +96,12 @@ img/olbeans/kf/d_layer.jpg
 img/olbeans/b_onion.png
 broll/olbeans_st30/st142.mp4
 img/olbeans/b_paste.png
-broll/olbeans_st30/st190.mp4
+broll/olbeans_st30/st16.mp4
+broll/olbeans_st30/st193.mp4
 broll/olbeans_st30/st192.mp4
+broll/olbeans_st30/st242.mp4
 broll/olbeans_st30/st146.mp4
+broll/olbeans_st30/st148.mp4
 broll/olbeans_st30/st113.mp4
 broll/olbeans_st30/st231.mp4
 img/olbeans/ar/a_connor_camp.jpg
@@ -106,7 +110,7 @@ broll/olbeans_st30/st55.mp4
 img/olbeans/kf/d_liftpot.jpg
 img/olbeans/kf/d_lidoff.jpg
 img/olbeans/b_scrapings.png
-broll/olbeans_st30/st245.mp4
+broll/olbeans_st30/st243.mp4
 broll/olbeans_st30/st14.mp4
 broll/olbeans_st30/st25.mp4
 img/olbeans/b_oven.png
