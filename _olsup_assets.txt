@@ -26,7 +26,6 @@ broll/olsup_st30/st_stove_fire.mp4
 img/olsup/anc_D4b.jpg
 broll/olsup_st30/st_coffee_pour.mp4
 img/olsup/b_horseshoe.jpg
-broll/olsup/b_horseshoe.mp4
 broll/olsup_st30/st_kettle.mp4
 img/olsup/b_grounds.jpg
 broll/olsup/b_grounds.mp4
@@ -99,7 +98,6 @@ img/olsup/arch_cookportrait.jpg
 img/olsup/st_rice_milk.jpg
 img/olsup/st_ricepudding.jpg
 img/olsup/b_teamster.jpg
-broll/olsup/b_teamster.mp4
 img/olsup/o_teeth.jpg
 img/olsup/st_nutmeg.jpg
 broll/olsup_st30/st_cornedbeef_chop.mp4
@@ -278,11 +276,9 @@ sfx/lor_wood.mp3
 sfx/px_gluglu.mp3
 sfx/px_bubble.mp3
 sfx/lor_sizzle.mp3
-broll/olsup/b_horseshoe_last.jpg
 broll/olsup/b_grounds_last.jpg
 broll/olsup/b_fatcrock_last.jpg
 broll/olsup/b_cookeepocket_last.jpg
-broll/olsup/b_teamster_last.jpg
 broll/olsup/b_shingle_last.jpg
 broll/olsup/b_cakebox_last.jpg
 broll/olsup/b_donutpocket_last.jpg
