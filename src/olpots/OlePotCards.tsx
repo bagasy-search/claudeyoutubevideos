@@ -138,7 +138,7 @@ export const OleChipMap: React.FC<{ chips: Chip[]; okLabel: string; noLabel: str
         {chips.map((c, i) => { const a = eo(ramp(t, beats?.[i] ?? 1.2 + i * 1.5, 0.5)); const inside = c.where === "inside"; const col = inside ? "#A32626" : "#2E6B3E";
           return <div key={i} style={{ position: "absolute", left: c.x, top: c.y, translate: "-50% -50%", opacity: a }}>
             <div style={{ width: 54, height: 54, borderRadius: "50%", background: "#3a3d42", border: `6px solid ${col}`, scale: String(0.6 + 0.4 * a), boxShadow: "0 0 0 8px rgba(255,255,255,0.4)" }} />
-            <div style={{ position: "absolute", left: 70, top: -6, whiteSpace: "nowrap", fontFamily: HAND, fontWeight: 700, fontSize: 44, color: col, textShadow: "0 2px 3px rgba(255,255,255,0.7)" }}>{inside ? noLabel : okLabel}</div>
+            <div style={{ position: "absolute", ...(inside ? { left: 70 } : { right: 70, textAlign: "right" }), top: -6, whiteSpace: "nowrap", fontFamily: HAND, fontWeight: 700, fontSize: 44, color: col, textShadow: "0 2px 3px rgba(255,255,255,0.7)" }}>{inside ? noLabel : okLabel}</div>
           </div>; })}
       </div>
     </AbsoluteFill>
@@ -161,7 +161,7 @@ export const OleTempLadder: React.FC<{ rungs: Rung[]; max?: number; unit?: strin
           return <div key={i} style={{ position: "absolute", left: 90, top: y(r.at) - 34, display: "flex", alignItems: "center", gap: 20, opacity: a, translate: `${(1 - a) * -40}px 0` }}>
             <div style={{ width: 70, height: 6, background: col }} />
             <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 60, color: col, minWidth: 190 }}>{r.at}{unit}</div>
-            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 48, color: OLE.paper, textShadow: "0 2px 5px rgba(0,0,0,0.7)", maxWidth: 760, lineHeight: 1.05 }}>{r.label}</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 48, color: OLE.paper, textShadow: "0 2px 5px rgba(0,0,0,0.7)", whiteSpace: "nowrap", lineHeight: 1.05 }}>{r.label}</div>
           </div>; })}
       </div>
       {source ? <div style={{ position: "absolute", bottom: 28, width: "100%", textAlign: "center", fontFamily: LABEL, fontSize: 22, letterSpacing: 3, color: hexA(OLE.kraftL, 0.9) }}>{source}</div> : null}

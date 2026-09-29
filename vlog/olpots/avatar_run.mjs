@@ -21,7 +21,7 @@ if (fase === "build") {
   // que gen_timeline: palabra más cercana al 45 % del tramo) → el reel no pasa el cap de ~600 s de RunPod
   const W = JSON.parse(fs.readFileSync(R + "_v3/olpots_wordms.json", "utf8"));
   const PUB = R + "public/", hasH = (n) => fs.existsSync(PUB + `broll/olpots/h_${n}.mp4`) || fs.existsSync(PUB + `img/olpots/h_${n}.jpg`);
-  const EXTRA = new Set([6, 8, 9, 13, 16, 19, 21, 30, 31, 32, 34]); // párrafos enteros de respaldo (1 solo /run)
+  const EXTRA = new Set([]); // párrafos enteros de respaldo (1 solo /run)
   const av = shots.filter((s) => s.kind === "av" || s.kind === "vl" || EXTRA.has(s.p)).map((s) => {
     if (s.kind === "av" || /^m\d/.test(s.name) || !hasH(s.name) || s.dur <= 4) return { s: s.start, e: s.end };
     const tgt = s.start + s.dur * 0.45; let cut = null;
