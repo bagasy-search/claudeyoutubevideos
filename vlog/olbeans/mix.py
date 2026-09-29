@@ -23,7 +23,7 @@ def add(x, at, gain=1.0, dur=None, fade=0.0):
     if e > i0: mix[i0:e] += x[: e - i0] * gain
 voice = load("olbeans.wav", 1); add(np.repeat(voice, 2, 1), 0.0)
 bed = load("sfx/olbeans_bed.m4a"); add(bed, 6.0, 1.0, fade=1.5)
-for a in FOLEY: add(load(a["src"]), a["from"] / FPS, a.get("vol", 1.0), a["dur"] / FPS, 0.15)
+for a in FOLEY: add(load(a["src"])[int(a.get("sf", 0) / FPS * SR):], a["from"] / FPS, a.get("vol", 1.0), a["dur"] / FPS, 0.15)
 cache = {}
 for a in SFX:
     if a["src"] not in cache: cache[a["src"]] = load(a["src"])

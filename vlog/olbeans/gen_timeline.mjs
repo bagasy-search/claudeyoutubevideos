@@ -15,6 +15,8 @@ const flat = W.map((w) => norm(w.w).join(""));
 const findFrom = (ph, i0) => { const q = norm(ph); for (let i = i0; i + q.length <= flat.length; i++) if (q.every((t, k) => flat[i + k] === t)) return i; return -1; };
 // arranque del tramo de audio de cada clip hablado (el que se le dio a agnes: vlog/olbeans/tramos.py)
 const CLIP0 = { m1: 0.0, m2: 21.9, m3: 32.16, m4: 47.46, m5: 77.58, m6a: 285.14, m6b: 291.08, m7: 397.21, m8: 457.11, m9: 702.14 };
+// foley de respaldo para los detalles sin clip (sfx reales de la biblioteca)
+const KF_SFX = { d_pour: "px_gluglu.mp3", d_spoon: "px_bubble.mp3", d_salt: "px_fizz_alt1.mp3", d_sort: "px_wipe.mp3", d_skim: "px_bubble_alt1.mp3", d_lid: "px_capPop.mp3", d_kettle: "px_gluglu_alt2.mp3", d_soda: "px_fizz.mp3", d_liquor: "px_gluglu_alt1.mp3", d_layer: "px_wipe_alt1.mp3", d_liftpot: "Crackling_campfire_w_#1-1780924416643.mp3", d_lidoff: "px_bubble_alt2.mp3" };
 const AV = "avatar_clips/olbeans/reel30.mp4", AV_READY = ex(AV);
 const TOTAL = F(END + 0.4);
 const cues = [], ovs = [], sfx = [], foley = [];
@@ -40,8 +42,11 @@ shots.forEach((s, i) => {
     else { const w = avAt(s.start); if (!w) warn.push(`vl ${s.name} sin ventana de avatar @${s.start}`); c.k = "av"; c.src = AV_READY ? AV : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0; c.fallback = s.name; }
   } else if (s.kind === "kf") {
     const p = `vid/olbeans/${s.name}.mp4`;
-    if (ex(p)) { c.src = p; c.sf = 0; c.clipF = Math.floor(probeDur(p) * FPS) - 1; if (ex(`vid/olbeans/${s.name}_foley.m4a`)) foley.push({ from: f0, dur: c.dur, src: `vid/olbeans/${s.name}_foley.m4a` }); }
-    else { c.k = "img"; c.img = null; c.fallback = s.name; }
+    if (ex(p)) { c.clipF = Math.floor(probeDur(p) * FPS) - 1; c.src = p; c.sf = Math.max(0, Math.min(F(s.sf || 0), c.clipF - c.dur)); c.clipF -= c.sf; if (ex(`vid/olbeans/${s.name}_foley.m4a`)) foley.push({ from: f0, dur: c.dur, src: `vid/olbeans/${s.name}_foley.m4a`, sf: c.sf }); }
+    else { // respaldo: el ancla "a" del detalle (foto gpt de manos) con Ken-Burns + foley de sfx
+      c.k = "img"; c.img = ex(`img/olbeans/kf/${s.name}.jpg`) ? `img/olbeans/kf/${s.name}.jpg` : null; c.fallback = s.name;
+      if (KF_SFX[s.name]) foley.push({ from: f0, dur: c.dur, src: "sfx/" + KF_SFX[s.name], vol: 0.5 });
+    }
   } else if (s.kind === "st") {
     const p = `broll/olbeans_st30/${s.name}.mp4`;
     c.k = "img"; c.real = 1; c.clip = ex(p) ? p : null; c.clipF = c.clip ? Math.floor(probeDur(p) * FPS) - 1 : 0; c.img = null;

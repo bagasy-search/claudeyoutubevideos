@@ -100,7 +100,7 @@ export const MainOlbeans: React.FC = () => (
     {OV.map((o, i) => { const C = OVC[o.name]; return C ? <Sequence key={"o" + i} from={o.from} durationInFrames={o.dur}><C {...o.props} /></Sequence> : null; })}
     <Audio src={staticFile(AUDIO)} />
     <Sequence from={180}><Audio src={staticFile(MUSIC)} volume={1} /></Sequence>
-    {FOLEY.map((a, i) => (<Sequence key={"f" + i} from={a.from} durationInFrames={a.dur}><Audio src={staticFile(a.src)} volume={(f) => (a.vol ?? 1) * interpolate(f, [0, 5, Math.max(6, a.dur - 5), Math.max(7, a.dur)], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} /></Sequence>))}
+    {FOLEY.map((a, i) => (<Sequence key={"f" + i} from={a.from} durationInFrames={a.dur}><Audio src={staticFile(a.src)} startFrom={a.sf || 0} volume={(f) => (a.vol ?? 1) * interpolate(f, [0, 5, Math.max(6, a.dur - 5), Math.max(7, a.dur)], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} /></Sequence>))}
     {SFX.map((a, i) => (<Sequence key={"s" + i} from={a.from} durationInFrames={a.dur}><Audio src={staticFile(a.src)} volume={a.vol} /></Sequence>))}
   </AbsoluteFill>
 );

@@ -13,7 +13,6 @@ for (const plan of ["M1", "COCINA"]) {
   for (const [id, v] of [...Object.entries(st), ...Object.entries(det)]) {
     const src = CL + v.file, dst = OUT + id + ".mp4";
     if (!fs.existsSync(src)) continue;
-    if (plan === "M1" && /^m\d/.test(id)) continue;
     if (fs.existsSync(dst) && fs.statSync(dst).mtimeMs > fs.statSync(src).mtimeMs) continue;
     ff("-i", src, "-an", "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,format=yuv420p", "-r", "30", "-c:v", "libx264", "-crf", "19", "-preset", "veryfast", dst);
     if (det[id]) {
