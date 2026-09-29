@@ -11,7 +11,7 @@ const avwin = JSON.parse(fs.readFileSync(R + "_v3/lorpies_avwin.json", "utf8")).
 const ex = (p) => fs.existsSync(PUB + p);
 const probeDur = (p) => { try { return +execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", PUB + p], { encoding: "utf8", windowsHide: true }).trim(); } catch { return 0; } };
 // arranque del audio de cada clip hablado (el tramo que se le dio a agnes)
-const CLIP0 = { m1: 0, m2: 6.80, m4: 38.62, m5: 46.42 };
+const CLIP0 = { m1: 0, m2: 8.01, m4: 44.01, m5: 52.67 }; // v3: tramos_v3 (voz nueva)
 for (const [k, v] of Object.entries(vl)) if (!(k in CLIP0)) CLIP0[k] = v.s - 0.03;
 const AV_READY = ex("avatar_clips/lorpies/reel30.mp4");
 // foley REAL de public/sfx debajo de los detalles de agnes v2.0 (mudos) — plan intermedio del creador (28-sep)
@@ -38,7 +38,8 @@ shots.forEach((s, i) => {
     const p = `vid/lorpies/${s.name}.mp4`;
     if (ex(p)) { c.src = p; c.sf = Math.max(0, F(s.start - CLIP0[s.name])); }
     else { // repuesto: el avatar cubre el tramo (el reel incluye las ventanas de los clips) + el detalle de manos (v2.0) de esa acción
-      const w = avwin.find((w) => s.start >= w.s - 0.06 && s.end <= w.e + 0.06);
+      const w = avwin.find((w) => s.start >= w.s - 0.06 && s.start < w.e);
+      if (!w) warn.push(`vl ${s.name} sin ventana de avatar @${s.start}`);
       c.k = "av"; c.src = AV_READY ? "avatar_clips/lorpies/reel30.mp4" : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0; c.fallback = s.name;
       const d = v2("h_" + s.name);
       if (d && s.dur > 4) { // corte en la palabra más cercana al 45 % del tramo
@@ -93,7 +94,7 @@ cues.forEach((c, i) => {
   if (c.k === "snap") S(t + 0.15, "lor_paper_pop.mp3", 0.3, 30);
 });
 for (const o of ovs) S(o.from / FPS + 0.2, "floraphonic-minimal-pop-click-ui-1-198301.mp3", 0.25, 20);
-S(44.2, "cp_riser.wav", 0.18, 70); // riser antes del loop abierto del minuto 1
+S(CLIP0.m5 - 2.2, "cp_riser.wav", 0.18, 70); // riser antes del loop abierto del minuto 1
 // ── compuertas del build
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }

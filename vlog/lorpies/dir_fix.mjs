@@ -39,4 +39,10 @@ export const SHOTS = [
   S(69, "so sour it makes", "av", ""),
   S(107, "That's for Sunday", "av", ""),
   S(16, "Like the top", "av", ""),
+  // v3 (voz nueva, más lenta): planos fijos que pasaron de 12 s → cierre a cámara
+  S(51, "was standing closest", "av", ""),
+  S(66, "tablespoons of sugar", "av", ""),
+  S(68, "anniversary he'd say", "av", ""),
+  S(79, "Take", "av", ""),
+  S(102, "When this is in", "av", ""),
 ];

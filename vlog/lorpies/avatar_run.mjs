@@ -17,7 +17,17 @@ const fase = process.argv[2];
 if (fase === "build") {
   const { shots } = JSON.parse(fs.readFileSync(R + "_v3/lorpies_shots.json", "utf8"));
   // vl = repuesto: si agnes no llega, el avatar cubre ese tramo
-  const av = shots.filter((s) => s.kind === "av" || s.kind === "vl").map((s) => ({ s: s.start, e: s.end }));
+  // los vl de los pies (c_*) sin clip agnes caen al avatar SÓLO hasta el corte al detalle de manos v2.0 (misma regla
+  // que gen_timeline: palabra más cercana al 45 % del tramo) → el reel no pasa el cap de ~600 s de RunPod
+  const W = JSON.parse(fs.readFileSync(R + "_v3/lorpies_wordms.json", "utf8"));
+  const PUB = R + "public/", hasH = (n) => fs.existsSync(PUB + `broll/lorpies/h_${n}.mp4`) || fs.existsSync(PUB + `img/lorpies/h_${n}.jpg`);
+  const av = shots.filter((s) => s.kind === "av" || s.kind === "vl").map((s) => {
+    if (s.kind === "av" || /^m\d/.test(s.name) || !hasH(s.name) || s.dur <= 4) return { s: s.start, e: s.end };
+    const tgt = s.start + s.dur * 0.45; let cut = null;
+    for (const x of W) if (x.s > s.start + 1.8 && x.s < s.end - 2.2 && (cut == null || Math.abs(x.s - tgt) < Math.abs(cut - tgt))) cut = x.s - 0.04;
+    return { s: s.start, e: cut ?? s.end };
+  });
+
   const win = [];
   for (const w of av) { const L = win[win.length - 1]; if (L && Math.abs(L.e - w.s) < 0.05) L.e = w.e; else win.push({ ...w }); }
   // margen: 0,12 s a cada lado (el corte de vuelta usa el offset exacto; el margen evita arrancar en la 1ª sílaba)
