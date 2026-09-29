@@ -23,7 +23,7 @@ export const SHOTS = [
   S(2, "with a broth", "kf", "d_spoon"),
   S(3, "", "vl", "m4", { ov: { c: "OleNameTag", props: { name: "Ole", sub: "78 · logging camp cook · Minnesota" } } }),
   S(3, "I cooked in the logging", "ar", "a_mn_pineries"),
-  S(3, "north woods of Minnesota", "st", "st199"),
+  S(3, "north woods of Minnesota", "st", "st201"),
   S(3, "Forty men,", "ar", "a_31_after_dinner"),
   S(3, "three meals a day", "ar", "a_mn1917_camp"),
   S(3, "and beans on that table", "c", "OleCookhouse", { props: { count: 40, label: "40 MEN", sub: "beans twice a day" } }),
@@ -32,7 +32,7 @@ export const SHOTS = [
   // ── HOJA DE RUTA + loop abierto
   S(4, "", "av", ""),
   S(4, "But then there's one more", "st", "st52"),
-  S(4, "in a hole in the ground", "c", "OleBeanHole3D", { props: { stages: [{ at: 0, stage: "coals" }, { at: 1.6, stage: "pot" }], camera: "static", labels: [] } }),
+  S(4, "in a hole in the ground", "c", "OleBeanHole3D", { props: { stages: [{ at: 0, stage: "pot" }], camera: "static", labels: [] } }),
   S(4, "and I haven't seen", "st", "st228"),
   S(4, "I'm keeping that one", "vl", "m5"),
   // ── CTA (frase literal del libro, UNA vez, ~15 s)
@@ -161,7 +161,7 @@ export const SHOTS = [
   S(29, "", "st", "st231"),
   S(29, "the only day off", "ar", "a_connor_camp"),
   S(29, "the men would come out", "bi", "b_longjohns", { p: SNAP("a dozen logging camp men in red long johns and wool socks with unlaced boots, holding tin plates, standing in a loose circle in the snow around a mound of fresh dirt behind a log cook shack, early morning, steam from their breath.") }),
-  S(29, "while I dug", "st", "st191"),
+  S(29, "while I dug", "st", "st55"),
   S(29, "You hook that pot", "kf", "d_liftpot"),
   S(29, "When that lid came off", "kf", "d_lidoff"),
   S(29, "with a dark sweet crust", "bi", "b_scrapings", { p: CAMP("Close view of a big iron spoon scraping the dark, sticky, caramelized crust of baked beans off the bottom of a black cast iron bean pot, a tin plate waiting beside it, steam.") }),

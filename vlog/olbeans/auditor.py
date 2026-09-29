@@ -8,7 +8,7 @@ import numpy as np
 R = "D:/Proyectos/video2-wt/olbeans/"
 MP4 = sys.argv[1]; FPS = 30
 res, nomidio = {}, []
-def run(a, **k): return subprocess.run(a, capture_output=True, text=True, **k)
+def run(a, **k): return subprocess.run(a, capture_output=True, **({"text": True} | k))
 ts = open(R + "src/olbeans/timeline_olbeans.gen.ts", encoding="utf8").read()
 TOTAL = int(re.search(r"TOTAL_FRAMES_OLBEANS = (\d+)", ts).group(1))
 TL = json.loads(re.search(r"export const TL: any\[\] = (.*);", ts).group(1))
@@ -25,7 +25,7 @@ o = run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-read_intervals", 
 if o: res["pts_eq_dts_30s"] = (sum(1 for l in o if l.split(",")[0] != l.split(",")[1]), sum(1 for l in o if l.split(",")[0] != l.split(",")[1]) == 0)
 else: nomidio.append("pts/dts")
 # 2) duraciones y loudness
-d = lambda sel: float(run(["ffprobe", "-v", "error", "-select_streams", sel, "-show_entries", "stream=duration", "-of", "csv=p=0", MP4]).stdout.strip() or 0)
+d = lambda sel: float(run(["ffprobe", "-v", "error", "-select_streams", sel, "-show_entries", "stream=duration", "-of", "csv=p=0", MP4]).stdout.strip().strip(",").split(",")[0] or 0)
 dv, da = d("v:0"), d("a:0")
 res["audio_vs_video"] = (round(dv, 3), round(da, 3), abs(dv - da) <= 0.05) if dv and da else nomidio.append("duraciones") or None
 o = run(["ffmpeg", "-hide_banner", "-nostats", "-i", MP4, "-vn", "-af", "ebur128=peak=true:framelog=quiet", "-f", "null", "-"]).stderr

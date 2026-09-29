@@ -22,7 +22,7 @@ img/olbeans/b_wholebeans.png
 img/olbeans/kf/d_spoon.jpg
 vid/olbeans/m4.mp4
 img/olbeans/ar/a_mn_pineries.jpg
-broll/olbeans_st30/st199.mp4
+broll/olbeans_st30/st201.mp4
 img/olbeans/ar/a_31_after_dinner.jpg
 img/olbeans/ar/a_mn1917_camp.jpg
 img/olbeans/ar/a_cook_kitchen.jpg
@@ -101,7 +101,7 @@ broll/olbeans_st30/st113.mp4
 broll/olbeans_st30/st231.mp4
 img/olbeans/ar/a_connor_camp.jpg
 img/olbeans/b_longjohns.png
-broll/olbeans_st30/st191.mp4
+broll/olbeans_st30/st55.mp4
 img/olbeans/kf/d_liftpot.jpg
 img/olbeans/kf/d_lidoff.jpg
 img/olbeans/b_scrapings.png
@@ -140,3 +140,4 @@ sfx/px_fizz.mp3
 sfx/px_wipe_alt1.mp3
 sfx/px_bubble_alt2.mp3
 sfx/amb_fuego.mp3
+sfx/olbeans_amb_m1.m4a
