@@ -1,0 +1,48 @@
+# research_verdad olstove — cada dato duro y su fuente (consultado 29-sep-2026)
+Ole es un PERSONAJE: no hay historia, cifras ni testimonios inventados presentados como hecho. Lo que Ole dice "de su vida" es color (frío, hábitos), sin fechas, personas ni marcas.
+
+| # | Dato dicho en voz | Fuente | Estado |
+|---|---|---|---|
+| 1 | La leña arde mejor a menos de 20 % de humedad | EPA Burn Wise "Best Wood-Burning Practices" (epa.gov/burnwise/best-wood-burning-practices), leído textual | verificado |
+| 2 | Medidor de humedad de dos clavijas, medir sobre una cara recién partida | EPA Burn Wise (recomienda medidor) + UMD Extension FS-1074 "Measuring Wood Moisture" (el detalle de la cara recién partida es práctica de esa hoja; NO abierta completa) | 1ª parte verificada; "cara recién partida" pendiente de leer la hoja |
+| 3 | Estacionar la leña mínimo 6 meses tras partirla; "algunas maderas duras piden más" | EPA: "Season wood for at least six months" (textual). Lo de las duras: el resumen de búsqueda de EPA dice 12 meses para duras, no leído textual | 6 meses verificado; duras = dicho como "algunas… más", sin número |
+| 4 | Apilar sobre el suelo, cubrir sólo la parte de arriba, costados abiertos | EPA Best Wood-Burning Practices, textual | verificado |
+| 5 | No usar gasolina, querosén ni líquido para carbón para encender | EPA Best Wood-Burning Practices (textual) y CPSC fuel-container safety | verificado |
+| 6 | "Build hot fires. A smoldering fire is not safe or efficient"; mantener las puertas cerradas salvo al cargar | EPA Best Wood-Burning Practices, textual | verificado |
+| 7 | Encendido top-down: leños grandes abajo, astillas arriba, humo pasa por las llamas, menos humo/emisiones | Método recomendado por CSIA (artículo "The top-down burn", csia.org; lo vi sólo como titular de búsqueda) + varias guías de fabricantes. EPA NO lo especifica (el texto de EPA no lo trae) | PARCIAL: leer el artículo de CSIA antes del render; en voz Ole dice "a lot of chimney sweeps teach it my way", no "EPA recomienda" |
+| 8 | Basura, cartón, plásticos, madera pintada/tratada, contrachapado o con pegamento: nunca | EPA Burn Wise (búsqueda restringida a epa.gov, listado explícito) | verificado |
+| 9 | Retirar cenizas a recipiente metálico con tapa, guardado afuera, lejos de la casa; nunca bolsa de papel/caja de cartón | EPA (recipiente metálico cubierto, afuera) + guías de bomberos estatales (10 pies / no papel). USFA card PDF no se pudo leer (binario) | verificado; NO se dice "10 pies" en voz |
+| 10 | Alarma de CO en cada piso y afuera de donde se duerme; probar una vez al mes; batería/respaldo en un apagón | Guías de bomberos/servicios (Seattle Fire, Hydro-Québec, NL Hydro) en búsqueda; EPA CO factsheet | verificado en varias fuentes, no NFPA 720 textual |
+| 11 | Síntomas CO: dolor de cabeza, mareo, debilidad; gas invisible e inodoro | EPA / CDC "Carbon Monoxide Poisoning Basics" | verificado |
+| 12 | Creosota: se forma cuando la leña arde lenta/húmeda, se condensa en el conducto frío | Resumen NFPA 211 / CSIA en búsqueda | verificado a nivel general |
+| 13 | Barrer cuando llega a ~1/8 de pulgada; inspección profesional al menos 1 vez al año (CSIA y NFPA) | Resumen de búsqueda de CSIA/NFPA; la NFPA 211 exige inspección anual | verificado en varias hojas; medir "1/8 in ≈ moneda de 5c + 10c apiladas" (1,95 + 1,35 mm = 3,3 mm vs 3,18 mm) OK |
+| 14 | Mirar el conducto con linterna cada mes o dos durante la temporada | NFPA 211 (resumen: cada 2 meses en temporada) | verificado a nivel resumen |
+| 15 | Etiqueta trasera del artefacto marca las distancias; sin etiqueta "tres pies es donde arrancan los códigos" | NFPA 211: 36 in para artefactos sin listado (resumen de búsqueda). CPSC exige rotular distancias en estufas. | PARCIAL: la cifra 36 in sale de un resumen; confirmar en tabla NFPA 211/IRC antes del render. En voz se dice como regla práctica |
+| 16 | Materiales inflamables a 3 pies mínimo de la estufa (toalla, abrigo, cesta de astillas) | Seattle Fire Dept "when the power goes out" / Hydro-Québec (3 pies) | verificado |
+| 17 | Tener a mano un extintor | EPA Best Wood-Burning Practices, textual | verificado |
+| 18 | Incendio de chimenea: rugido tipo tren, llamas por arriba -> cerrar aire, sacar a todos, llamar desde afuera | Consejo de bomberos ampliamente difundido; NO tiene una fuente abierta en esta sesión | PARCIAL: buscar USFA/NFPA "chimney fire signs" antes del render |
+| 19 | No echar agua a una estufa caliente (el hierro puede rajarse, el vapor quema) | Práctica general de fabricantes; sin fuente abierta | PARCIAL: fuente pendiente (manual de fabricante/USFA). Si no aparece, suavizar o quitar |
+| 20 | Masa térmica (hierro, ladrillo, piedra, agua) guarda y devuelve calor; aire caliente sube | Física básica, no cifra | ok |
+| 21 | Blandas encienden rápido (yesca), duras duran más | Conocimiento estándar de extensión/leña | ok, sin cifra |
+| 22 | Cuadro real: "cocina de campamento maderero" en MN, foto de 1900, cocinero + 2 ayudantes pelando papas, campamento Bovey & DeLaittre cerca de Aitkin | Minnesota Historical Society, negativo n.º 1799 (archive.mnhs.org/forestsfieldsfalls/lumbering) | ARCHIVO REAL por verificar la licencia/PD de esa imagen al descargar |
+NO se dicen: "energía gratis", "calor ilimitado", "sin electricidad" como magia; ninguna cifra de ahorro; ninguna marca. Chimney Safety Institute of America y E-P-A se nombran como instituciones (hechos verificables).
+Pendientes de lectura antes del render (no bloquean el guion): #2 detalle UMD, #7 CSIA top-down, #15 tabla 36 in, #18 y #19 fuente.
+
+
+## ACTUALIZACION tras OK de ⛳1 (29-sep) — datos cerrados con fuente primaria abierta
+| # | Dato | Fuente abierta y leída | Estado |
+|---|---|---|---|
+| 2 | Medir la humedad partiendo un trozo y midiendo el CENTRO; leña vendida "seca" a menudo no lo está; medir antes de descargar el camión; >30 % = no curada | UMD Extension FS-1074 (PDF leído con pymupdf, nov-2018) | VERIFICADO |
+| 3 | Curado 6-12 meses; partida llega a ~20 % en 6 meses, sin partir sigue >30 % al año (hickory, estudio UMD); robles y duras ~1 año | UMD FS-1074 + Penn State Extension "Heating with Wood: an Introduction" ("6-12 months… ~20 %"; roble rojo fresco 60-80 %) | VERIFICADO. En voz: "six months at the very least; dense hardwoods a year" |
+| 7 | Top-down | La página de CSIA (csia.org/top_down_burn.html) devolvió 404; EPA y Penn State no lo tratan. Sólo hay resúmenes de búsqueda que dicen que CSIA lo recomienda | NO CONFIRMADO en primaria -> en voz sólo "a lot of chimney sweeps teach it my way". Ole NO cita a CSIA ni a EPA para top-down |
+| 15 | Distancias | NO se dice 36 in. USFA "Fireplace and Wood Stove Safety" (PDF leído): "Keep anything that can burn at least 3 feet from your fireplace or wood stove". Etiqueta/manual del fabricante para la distancia de la estufa | VERIFICADO (USFA). Voz: "label and manual… and anything that can burn at least three feet" |
+| 9 | Ceniza: recipiente metálico con tapa, a 10 pies de la casa | USFA (mismo PDF, textual: "at least 10 feet from your home"). En voz NO se dice 10 pies | VERIFICADO |
+| 5' | USFA: chimenea inspeccionada y limpiada cada año por un profesional; puertas cerradas salvo al cargar/atizar; "no quemar papel"; apagar el fuego antes de dormir o salir | USFA card PDF | VERIFICADO. Voz: un solo giro de papel o pastilla natural (EPA: papel de diario/astillas/pastillas naturales), nunca una pila de papel |
+| 18 | Señales de incendio de chimenea: rugido tipo tren/avión, llamas/chispas y humo denso por arriba | Fire Engineering "Firefighter Operational Guide: Chimney Fires" (leído) + lista CSIA citada; acción: evacuar y llamar a bomberos; inspección certificada antes de volver a usar | VERIFICADO. Se quitó "cerrá el aire" del guion |
+| 19 | No echar agua en la estufa: "flood your house with smoke… steam could scald you"; bajar los controles de aire a "low" para apagar; no dejar apagarse sola sin atender salvo estufa diseñada para ello | HETAS (asociación británica de estufas) "How to put out a log burner" (leído) | VERIFICADO. Se quitó "el hierro se raja" (sólo foros) |
+| 23 | Cord = 128 pies cúbicos (4x4x8 apilado); "face cord" es una fracción y la unidad es ambigua | Extensiones universitarias en resultados (MU Extension G5450/G5452: G5452 dio 403, sólo resumen) | PARCIAL: definición de cord verificada en resumen de extensión; "rick/truckload = lo que el vendedor quiera" es consejo general de MU G5452 no leído -> suavizado en voz a "a fraction of a cord" |
+| 24 | Coníferas (pino) ensucian el tiro con alquitrán/creosota más que las duras | Penn State Extension (leído: "Conifers like pine… coat chimneys with tar, soot, and creosote") | VERIFICADO |
+| 25 | Chimenea: 3 pies sobre el techo y 2 pies más alta que lo que esté a 10 pies (regla 3-2-10) | Rockford Chimney Supply (fabricante, leído; ligado a instalación UL). NO es el código NFPA 211/IRC abierto | PARCIAL: es el mínimo estándar del oficio; Ole dice "the usual rule… your manual says more". Leer NFPA 211/IRC R1003.9 si se puede |
+| 26 | Sombrero: lluvia, animales, menos contraflujo por viento; la malla parachispas se puede tapar con creosota (bloqueo/incendio) | InspectApedia "Chimney Caps & crown" (leído) | VERIFICADO |
+| 27 | Tiraje: aire caliente sube, chimenea tibia jala; chimenea fría empuja humo de vuelta | Física básica + Guía CSIA/instaladores | ok, sin cifra |
+| 28 | 1/8 de pulgada de creosota -> barrer; inspección anual | USFA verifica la inspección anual (arriba). El 1/8 in sigue en fuentes secundarias (CSIA en resúmenes) | 1/8 PARCIAL (secundaria); anual VERIFICADO |
