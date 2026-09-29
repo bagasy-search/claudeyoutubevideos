@@ -19,17 +19,17 @@ function pageTex(p: BookPage | null, seed: number, mirror: boolean) {
   if (mirror) { c.translate(cw, 0); c.scale(-1, 1); }
   c.fillStyle = "#F7EFDC"; c.fillRect(0, 0, cw, ch);
   // manchas de uso (grasa, café) y bordes tostados
-  for (let i = 0; i < 5; i++) { const x = rnd(seed + i) * cw, y = rnd(seed + i + 50) * ch, r = 30 + rnd(seed + i + 90) * 90;
+  for (let i = 0; i < 9; i++) { const x = rnd(seed + i) * cw, y = rnd(seed + i + 50) * ch, r = 30 + rnd(seed + i + 90) * 90;
     const g = c.createRadialGradient(x, y, r * 0.2, x, y, r); g.addColorStop(0, "rgba(190,140,70,0.16)"); g.addColorStop(0.8, "rgba(190,140,70,0.10)"); g.addColorStop(1, "rgba(160,110,50,0)"); c.fillStyle = g; c.beginPath(); c.arc(x, y, r, 0, 7); c.fill(); }
   const e = c.createLinearGradient(0, 0, cw, 0); e.addColorStop(0, "rgba(150,110,60,0.18)"); e.addColorStop(0.08, "rgba(150,110,60,0)"); e.addColorStop(0.92, "rgba(150,110,60,0)"); e.addColorStop(1, "rgba(150,110,60,0.22)"); c.fillStyle = e; c.fillRect(0, 0, cw, ch);
   // renglones y margen rojo
   c.strokeStyle = "rgba(90,130,190,0.35)"; c.lineWidth = 2;
-  for (let y = 190; y < ch - 40; y += 52) { c.beginPath(); c.moveTo(40, y); c.lineTo(cw - 30, y); c.stroke(); }
+  for (let y = 170; y < ch - 40; y += 46) { c.beginPath(); c.moveTo(40, y); c.lineTo(cw - 30, y); c.stroke(); }
   c.strokeStyle = "rgba(200,60,60,0.45)"; c.beginPath(); c.moveTo(110, 0); c.lineTo(110, ch); c.stroke();
   if (p) {
     c.fillStyle = "#2E2118"; c.font = `700 64px ${SERIF}`; c.fillText(p.title, 124, 130, cw - 160);
-    c.fillStyle = "#2B3A6B"; c.font = `600 44px ${HAND}`;
-    p.lines.forEach((l, i) => c.fillText(l, 124, 180 + (i + 1) * 52 - 10, cw - 160));
+    c.fillStyle = "#2B3A6B"; c.font = `600 38px ${HAND}`;
+    p.lines.forEach((l, i) => c.fillText(l, 124, 170 + (i + 1) * 46 - 10, cw - 160));
     if (p.note) { c.fillStyle = "#B0303A"; c.font = `700 46px ${HAND}`; c.save(); c.translate(cw * 0.55, ch - 90); c.rotate(-0.06); c.fillText(p.note, 0, 0); c.restore(); }
   }
   const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; return t;
@@ -79,7 +79,7 @@ export const CabinRecipeBook3D: React.FC<{ pages: BookPage[]; flips?: number; fl
   const coverMat = useMemo(() => {
     if (!ready) return null;
     const cv = document.createElement("canvas"); cv.width = 512; cv.height = 512; const c = cv.getContext("2d")!;
-    c.fillStyle = "#3B2A1A"; c.fillRect(0, 0, 512, 512); for (let i = 0; i < 900; i++) { c.fillStyle = `rgba(255,255,255,${rnd(i) * 0.06})`; c.fillRect(rnd(i + 7) * 512, rnd(i + 13) * 512, 2, 2); }
+    c.fillStyle = "#6E2B24"; c.fillRect(0, 0, 512, 512); for (let y = 0; y < 512; y += 4) { c.fillStyle = `rgba(0,0,0,${0.08 + rnd(y) * 0.08})`; c.fillRect(0, y, 512, 1); } for (let x = 0; x < 512; x += 4) { c.fillStyle = `rgba(255,255,255,${0.03 + rnd(x + 400) * 0.05})`; c.fillRect(x, 0, 1, 512); } for (let i = 0; i < 1800; i++) { c.fillStyle = `rgba(255,255,255,${rnd(i) * 0.07})`; c.fillRect(rnd(i + 7) * 512, rnd(i + 13) * 512, 2, 2); } c.strokeStyle = "rgba(230,200,140,0.8)"; c.lineWidth = 6; c.strokeRect(36, 36, 440, 440);
     const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; return new THREE.MeshStandardMaterial({ map: t, roughness: 0.8 });
   }, [ready]);
   leaves.forEach((L, j) => {

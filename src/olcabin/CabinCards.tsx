@@ -62,7 +62,7 @@ export const GrandmaCard: React.FC<{
 // ── OriginMap ───────────────────────────────────────────────────────────────────────────────────────────────────
 type Origin = "norway" | "sweden" | "finland" | "denmark" | "belgium" | "cornwall";
 const PIN: Record<Origin, { x: number; y: number; c: string }> = {
-  norway: { x: 380, y: 250, c: "#2F5D8A" }, sweden: { x: 470, y: 330, c: "#D9A441" }, finland: { x: 620, y: 240, c: "#5C7FB0" },
+  norway: { x: 380, y: 215, c: "#2F5D8A" }, sweden: { x: 480, y: 385, c: "#D9A441" }, finland: { x: 640, y: 250, c: "#5C7FB0" },
   denmark: { x: 438, y: 540, c: "#8E2B2B" }, belgium: { x: 350, y: 640, c: "#1B1A18" }, cornwall: { x: 190, y: 650, c: "#3E6B45" },
 };
 const DEST = { x: 1180, y: 420 };
@@ -97,7 +97,7 @@ export const OriginMap: React.FC<{
         {/* rutas */}
         {origins.map((o, i) => {
           const p = PIN[o.id]; const at = (o.at ?? i * 0.6) * fps;
-          const mx = (p.x + DEST.x) / 2, my = Math.min(p.y, DEST.y) - 190 - i * 18;
+          const mx = (p.x + DEST.x) / 2, my = Math.min(p.y, DEST.y) - 120 - i * 46;
           const d = `M${p.x} ${p.y} Q${mx} ${my} ${DEST.x} ${DEST.y}`;
           const prog = interpolate(f, [at, at + 40], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
           const dim = focus && focus !== o.id ? 0.25 : 1;
@@ -106,9 +106,9 @@ export const OriginMap: React.FC<{
               <path d={d} fill="none" stroke={p.c} strokeWidth={6} strokeDasharray="14 10" pathLength={1} style={{ strokeDasharray: `${prog} 1`, strokeDashoffset: 0 }} strokeLinecap="round" opacity={0.9} />
               <g transform={`translate(${p.x} ${p.y})`}>
                 <circle r={interpolate(f, [at - 6, at + 6], [0, 20], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} fill={p.c} stroke="#fff" strokeWidth="4" />
-                {o.label ? <text y={-30} x={-10} textAnchor="end" fontFamily={LABEL} fontSize="28" letterSpacing="4" fill={OLE.iron} opacity={interpolate(f, [at, at + 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}>{o.label}</text> : null}
+                {o.label ? <text y={-30} x={0} textAnchor="middle" fontFamily={LABEL} fontSize="28" letterSpacing="4" fill={OLE.iron} opacity={interpolate(f, [at, at + 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}>{o.label}</text> : null}
                 {(o.dishes ?? []).map((dish, k) => (
-                  <text key={k} x={30} y={8 + k * 32} textAnchor="start" fontFamily={SERIF_ITALIC} fontSize="28" fill={OLE.pencil}
+                  <text key={k} x={30} y={-4 + k * 30} textAnchor="start" fontFamily={SERIF_ITALIC} fontSize="28" fill={OLE.pencil}
                     opacity={interpolate(f, [at + 14 + k * 5, at + 24 + k * 5], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}>{dish}</text>
                 ))}
               </g>

@@ -12,13 +12,13 @@ const Cam: React.FC<{ pos: [number, number, number]; target: [number, number, nu
 };
 
 function cardTex(lines: string[], seed: number) {
-  const cv = document.createElement("canvas"); cv.width = 640; cv.height = 400; const c = cv.getContext("2d")!;
-  c.fillStyle = "#F4EBD3"; c.fillRect(0, 0, 640, 400);
-  for (let i = 0; i < 4; i++) { const x = rnd(seed + i) * 640, y = rnd(seed + i + 9) * 400, r = 30 + rnd(seed + i + 3) * 60;
+  const cv = document.createElement("canvas"); cv.width = 1280; cv.height = 800; const c = cv.getContext("2d")!;
+  c.fillStyle = "#F4EBD3"; c.fillRect(0, 0, 1280, 800);
+  for (let i = 0; i < 4; i++) { const x = rnd(seed + i) * 1280, y = rnd(seed + i + 9) * 800, r = 60 + rnd(seed + i + 3) * 120;
     const g = c.createRadialGradient(x, y, 4, x, y, r); g.addColorStop(0, "rgba(180,130,60,0.16)"); g.addColorStop(1, "rgba(180,130,60,0)"); c.fillStyle = g; c.beginPath(); c.arc(x, y, r, 0, 7); c.fill(); }
-  c.strokeStyle = "rgba(190,60,60,0.55)"; c.lineWidth = 3; c.beginPath(); c.moveTo(0, 74); c.lineTo(640, 74); c.stroke();
-  c.strokeStyle = "rgba(90,130,190,0.35)"; c.lineWidth = 2; for (let y = 116; y < 400; y += 40) { c.beginPath(); c.moveTo(0, y); c.lineTo(640, y); c.stroke(); }
-  c.fillStyle = "#2B3A6B"; c.font = `700 40px ${HAND}`; lines.forEach((l, i) => c.fillText(l, 30, 54 + i * 40, 580));
+  c.strokeStyle = "rgba(190,60,60,0.55)"; c.lineWidth = 5; c.beginPath(); c.moveTo(0, 140); c.lineTo(1280, 140); c.stroke();
+  c.strokeStyle = "rgba(90,130,190,0.35)"; c.lineWidth = 2; for (let y = 210; y < 800; y += 78) { c.beginPath(); c.moveTo(0, y); c.lineTo(1280, y); c.stroke(); }
+  c.fillStyle = "#2B3A6B"; c.font = `700 84px ${HAND}`; lines.forEach((l, i) => c.fillText(l, 60, 104 + i * 78, 1160));
   const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; return t;
 }
 
@@ -34,7 +34,7 @@ export const TinRecipeBox3D: React.FC<{ cards?: string[][]; openAt?: number; lif
   const texes = useMemo(() => (ready ? cards.map((l, i) => cardTex(l, 40 + i)) : []), [ready, cards]);
   const lid = interpolate(t, [openAt, openAt + 0.9], [0, 1.95], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   const lift = interpolate(t, [liftAt, liftAt + 1.1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
-  const camPos: [number, number, number] = [0, 3.3 - lift * 0.5, 4.6 - lift * 0.4];
+  const camPos: [number, number, number] = [0, 3.3 - lift * 0.6, 4.6 - lift * 0.9];
   const N = 22;
   return (
     <AbsoluteFill style={{ backgroundColor: bg }}>
@@ -57,7 +57,7 @@ export const TinRecipeBox3D: React.FC<{ cards?: string[][]; openAt?: number; lif
             const tex = own && texes[0] ? texes[0] : texes[(i % Math.max(1, texes.length))];
             return (
               <mesh key={i} position={[own ? x * (1 - lift) : x, own ? 0.98 + lift * 0.75 : 0.9 + rnd(i) * 0.05, own ? lift * 0.35 : -0.1 + rnd(i + 3) * 0.1]}
-                rotation={[own ? -0.15 - lift * 0.45 : -0.12 + rnd(i + 6) * 0.05, 0, (rnd(i + 9) - 0.5) * 0.06 * (1 - (own ? lift : 0))]} castShadow>
+                rotation={[own ? -0.15 - lift * 0.9 : -0.12 + rnd(i + 6) * 0.05, 0, (rnd(i + 9) - 0.5) * 0.06 * (1 - (own ? lift : 0))]} castShadow>
                 <boxGeometry args={[own ? 1.6 + lift * 0.2 : 1.6, own ? 1.0 + lift * 0.12 : 1.0, 0.01]} />
                 <meshStandardMaterial map={tex} color={tex ? "#FFFFFF" : ["#F1E7CB", "#EADFBF", "#F6EDD6"][i % 3]} roughness={0.95} />
               </mesh>

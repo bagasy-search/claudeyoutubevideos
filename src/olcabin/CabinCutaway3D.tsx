@@ -40,8 +40,8 @@ export const CabinCutaway3D: React.FC<{
   // n(t) interpolado entre keyframes
   const n = interpolate(t, fill.map(f => f.at), fill.map(f => f.n), { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
   const ang = startAngle + t * orbit * 0.18;
-  const R = 8.2;
-  const camPos: [number, number, number] = [Math.sin(ang) * R, 3.7 - Math.min(0.5, t * 0.03), Math.cos(ang) * R];
+  const R = 8.6 - interpolate(t, [0, 12], [0, 2.6], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+  const camPos: [number, number, number] = [Math.sin(ang) * R, 3.9 - interpolate(t, [0, 12], [0, 1.1], { extrapolateRight: "clamp" }), Math.cos(ang) * R];
   const plates = useMemo(() => SLOTS.map((s, i) => ({ s, rank: ORDER.indexOf(i), c: FOOD[Math.floor(rnd(i + 21) * FOOD.length)], big: rnd(i + 5) > 0.55 })), []);
   const logsBack = Array.from({ length: 9 }).map((_, i) => 0.18 + i * 0.3);
   const flick = 1 + Math.sin(frame * 0.7) * 0.05 + Math.sin(frame * 0.23) * 0.05;
@@ -91,17 +91,49 @@ export const CabinCutaway3D: React.FC<{
         <mesh position={[0, 0.42, -0.95]}><boxGeometry args={[3.7, 0.08, 0.36]} /><meshStandardMaterial color="#8A6539" roughness={0.9} /></mesh>
         {/* lámpara de farol colgando */}
         <mesh position={[0.2, 2.75, 0.2]}><cylinderGeometry args={[0.09, 0.11, 0.26, 10]} /><meshStandardMaterial color="#D9A441" emissive="#FFC46B" emissiveIntensity={1.2} /></mesh>
-        {/* platos que se llenan */}
+        {/* platos que se llenan: comida reconocible */}
         {plates.map((p, i) => {
           const local = interpolate(n, [p.rank, p.rank + 1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.back(1.7)) });
           if (local <= 0.001) return null;
+          const k = i % 7, hot = k === 0 || k === 5;
           return (
-            <group key={i} position={p.s} scale={[local, local, local]}>
-              <mesh castShadow><cylinderGeometry args={[0.17, 0.14, 0.035, 16]} /><meshStandardMaterial color={i % 3 === 0 ? OLE.enamel : "#E9EEF3"} roughness={0.35} metalness={0.15} /></mesh>
-              <mesh position={[0, 0.05, 0]} scale={[1, p.big ? 0.7 : 0.45, 1]} castShadow><sphereGeometry args={[0.11, 12, 8]} /><meshStandardMaterial color={p.c} roughness={0.8} /></mesh>
+            <group key={i} position={p.s} scale={[local * 1.55, local * 1.55, local * 1.55]}>
+              <mesh castShadow><cylinderGeometry args={[0.18, 0.15, 0.035, 20]} /><meshStandardMaterial color={i % 3 === 0 ? OLE.enamel : "#E9EEF3"} roughness={0.35} metalness={0.15} /></mesh>
+              <mesh position={[0, 0.021, 0]} rotation={[Math.PI / 2, 0, 0]}><torusGeometry args={[0.165, 0.008, 6, 24]} /><meshStandardMaterial color={i % 3 === 0 ? "#E9EEF3" : OLE.enamel} /></mesh>
+              {k === 0 && (<>
+                <mesh position={[0, 0.03, 0]}><cylinderGeometry args={[0.13, 0.12, 0.03, 18]} /><meshStandardMaterial color="#8A4B2A" roughness={0.5} /></mesh>
+                {[[-0.04, 0.02], [0.05, -0.03], [0.02, 0.05]].map(([x, z], q) => <mesh key={q} position={[x, 0.05, z]}><sphereGeometry args={[0.026, 8, 6]} /><meshStandardMaterial color="#C9893F" /></mesh>)}</>)}
+              {k === 1 && (<>
+                {[0, 1, 2].map(q => <mesh key={q} position={[-0.06 + q * 0.06, 0.05, 0]} rotation={[0, 0, Math.PI / 2]}><cylinderGeometry args={[0.022, 0.022, 0.2, 10]} /><meshStandardMaterial color="#EFE3C4" roughness={0.9} /></mesh>)}</>)}
+              {k === 2 && (<>
+                <mesh position={[0, 0.07, 0]} scale={[1.6, 0.9, 1]}><sphereGeometry args={[0.08, 12, 8]} /><meshStandardMaterial color="#B5651D" roughness={0.85} /></mesh>
+                <mesh position={[0, 0.115, 0]} scale={[1.5, 0.3, 0.9]}><sphereGeometry args={[0.06, 10, 6]} /><meshStandardMaterial color="#D9A441" roughness={0.8} /></mesh></>)}
+              {k === 3 && (<>
+                <mesh position={[0, 0.045, 0]}><cylinderGeometry args={[0.13, 0.12, 0.05, 20]} /><meshStandardMaterial color="#D9A441" roughness={0.8} /></mesh>
+                <mesh position={[0, 0.075, 0]}><cylinderGeometry args={[0.1, 0.1, 0.012, 20]} /><meshStandardMaterial color="#8E2B2B" roughness={0.6} /></mesh></>)}
+              {k === 4 && (<>
+                <mesh position={[0, 0.05, 0]} scale={[2.3, 0.5, 1]}><sphereGeometry args={[0.06, 12, 8]} /><meshStandardMaterial color="#E7D9B0" roughness={0.7} /></mesh>
+                <mesh position={[0.15, 0.05, 0]} rotation={[0, 0, 0.7]}><coneGeometry args={[0.04, 0.07, 4]} /><meshStandardMaterial color="#E7D9B0" /></mesh></>)}
+              {k === 5 && (<>
+                {[[-0.05, 0], [0.05, 0.02], [0, -0.05], [0.0, 0.055], [-0.07, 0.05]].map(([x, z], q) => <mesh key={q} position={[x, 0.06, z]}><sphereGeometry args={[0.035, 10, 8]} /><meshStandardMaterial color="#6B3E22" roughness={0.75} /></mesh>)}</>)}
+              {k === 6 && (<>
+                {[[-0.07, 0], [0.06, 0.03], [0, -0.06]].map(([x, z], q) => <mesh key={q} position={[x, 0.045, z]}><torusGeometry args={[0.04, 0.014, 8, 14]} /><meshStandardMaterial color="#D9A441" roughness={0.8} /></mesh>)}</>)}
+              {hot && [0, 1, 2].map(q => {
+                const ph = ((t * 0.7 + q / 3 + i * 0.13) % 1);
+                return <mesh key={"st" + q} position={[Math.sin((ph + q) * 5) * 0.03, 0.12 + ph * 0.32, Math.cos((ph + q) * 4) * 0.03]} scale={[1 + ph, 1 + ph, 1 + ph]}><sphereGeometry args={[0.03, 8, 6]} /><meshBasicMaterial color="#FFFFFF" transparent opacity={0.28 * (1 - ph)} depthWrite={false} /></mesh>;
+              })}
             </group>
           );
         })}
+        <mesh position={[0, 0.822, 0.05]}><boxGeometry args={[3.5, 0.008, 0.2]} /><meshStandardMaterial color="#8E2B2B" roughness={1} /></mesh>
+        {[-1.2, 1.25].map((x, q) => <mesh key={"j" + q} position={[x, 0.93, 0.05]} castShadow><cylinderGeometry args={[0.07, 0.06, 0.2, 12]} /><meshStandardMaterial color={OLE.enamel} roughness={0.4} metalness={0.2} /></mesh>)}
+        <mesh position={[0.1, 0.93, 0.05]}><cylinderGeometry args={[0.025, 0.025, 0.18, 8]} /><meshStandardMaterial color="#F4EBD3" /></mesh>
+        <pointLight position={[0.1, 1.08, 0.05]} intensity={2.2 * flick} color="#FFB85A" distance={2.2} />
+        {[-1.4, -1.0, -0.6, 0.6, 0.95].map((x, q) => <mesh key={"f" + q} position={[x, 1.5, -2.15]}><cylinderGeometry args={[0.07, 0.07, 0.2 + (q % 2) * 0.06, 10]} /><meshStandardMaterial color={["#B5651D", "#7A8F4B", "#8E2B2B", "#D9A441", "#5B3A22"][q]} roughness={0.5} /></mesh>)}
+        <mesh position={[-2.4, 2.2, -2.3]} rotation={[0, 0, 0.5]}><boxGeometry args={[0.05, 0.9, 0.03]} /><meshStandardMaterial color="#5B3A22" /></mesh>
+        <mesh position={[-2.55, 2.55, -2.3]}><boxGeometry args={[0.28, 0.18, 0.03]} /><meshStandardMaterial color="#8A8F94" metalness={0.8} roughness={0.35} /></mesh>
+        <mesh position={[0.4, 2.3, -2.3]}><boxGeometry args={[2.0, 0.14, 0.01]} /><meshStandardMaterial color="#9AA0A5" metalness={0.8} roughness={0.35} /></mesh>
+        {[0, 1, 2, 3].map(q => { const ph = ((t * 0.25 + q / 4) % 1); return <mesh key={"sm" + q} position={[2.35 + ph * 0.25, 3.9 + ph * 1.2, -1.7]} scale={[1 + ph * 2, 1 + ph * 2, 1 + ph * 2]}><sphereGeometry args={[0.12, 8, 6]} /><meshBasicMaterial color="#CFC7BC" transparent opacity={0.25 * (1 - ph)} depthWrite={false} /></mesh>; })}
       </ThreeCanvas>
     </AbsoluteFill>
   );
