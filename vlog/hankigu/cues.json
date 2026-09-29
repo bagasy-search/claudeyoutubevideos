@@ -1,0 +1,775 @@
+[
+ {
+  "t": "card",
+  "comp": "GlobeDive3D",
+  "at": "Sunday, February first, 2026",
+  "until": "started letting go of the trees",
+  "pad": 0.3,
+  "props": {
+   "lat": 26.12,
+   "lon": -80.2,
+   "label": "SOUTH FLORIDA",
+   "sub": "FEB 1, 2026 · 35°F IN MIAMI",
+   "from": {
+    "lat": 20,
+    "lon": -60
+   },
+   "hires": false,
+   "endDist": 1.1
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "In forty-eight hours, Floridians hauled in",
+  "dur": 4.2,
+  "props": {
+   "to": 5195,
+   "label": "iguanas turned in · 48 hours",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": true
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "Palm Beach hit thirty degrees",
+  "dur": 4.0,
+  "props": {
+   "to": 30,
+   "label": "Palm Beach · 2 mornings in a row · first time since 1989",
+   "prefix": "",
+   "suffix": "°F",
+   "decimals": 0,
+   "sep": false
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "So first, why do they fall?",
+  "dur": 2.2,
+  "props": {
+   "n": 1,
+   "title": "WHY THEY FALL",
+   "bg": "@img:@near",
+   "progress": 0.098,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThermoDrop",
+  "at": "A green iguana is a tropical lizard",
+  "until": "and down they come",
+  "pad": 0.5,
+  "props": {
+   "photo": "@img:@near",
+   "kicker": "WHY THEY FALL",
+   "note": "Thresholds: FWC · USDA (approximate)"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "SpeciesFile",
+  "at": "And these are not small animals",
+  "until": "a tail that whips",
+  "pad": 0.3,
+  "props": {
+   "photo": "@arch:iguana:0",
+   "common": "Green iguana",
+   "latin": "Iguana iguana",
+   "facts": [
+    {
+     "k": "FROM",
+     "v": "Mexico to Brazil"
+    },
+    {
+     "k": "LENGTH",
+     "v": "5+ ft (males)"
+    },
+    {
+     "k": "WEIGHT",
+     "v": "up to 17 lb"
+    },
+    {
+     "k": "UNDERWATER",
+     "v": "up to 4 hours"
+    }
+   ],
+   "stamp": "INVASIVE",
+   "bed": "@arch:iguana:1"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Most of the ones that fall aren't dead",
+  "props": {
+   "text": "Most of them aren't dead. They wake up.",
+   "keys": [
+    "aren't",
+    "wake"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 120
+  },
+  "until": "they wake up",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "On Friday, January thirtieth",
+  "dur": 2.4,
+  "props": {
+   "n": 2,
+   "title": "THE ROUNDUP",
+   "bg": "@img:@near",
+   "progress": 0.222,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "DocHighlighter",
+  "at": "signed Executive Order twenty-six dash zero three",
+  "until": "Monday, eight to four",
+  "pad": 0.4,
+  "props": {
+   "source": "FLORIDA FISH AND WILDLIFE CONSERVATION COMMISSION — Executive Order 26-03, Jan 30, 2026",
+   "kicker": "THE ORDER",
+   "lines": [
+    "~",
+    "~",
+    "remove live, cold-stunned green iguanas",
+    "from the wild without a permit",
+    "~",
+    "~"
+   ],
+   "highlight": "remove live, cold-stunned green iguanas from the wild without a permit"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "FailedFixes",
+  "at": "There were rules.",
+  "until": "you've got a new passenger",
+  "pad": 0.4,
+  "props": {
+   "title": "THE RULES · EXECUTIVE ORDER 26-03",
+   "items": [
+    {
+     "text": "Gloves, long pants, long sleeves",
+     "ok": true
+    },
+    {
+     "text": "Cloth sacks only (tied shut)",
+     "ok": true
+    },
+    {
+     "text": "Locked box: \"Prohibited Reptiles\"",
+     "ok": true
+    },
+    {
+     "text": "Drive straight to FWC",
+     "ok": true
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "FloridaDropMap",
+  "at": "When the doors closed on Monday",
+  "until": "Fort Myers, twenty-three",
+  "pad": 1.6,
+  "props": {
+   "title": "WHERE THE ICED IGUANAS WENT",
+   "totalLabel": "IGUANAS TURNED IN · FEB 1-2, 2026",
+   "source": "Source: FWC, Feb 4, 2026",
+   "sites": [
+    {
+     "name": "SUNRISE",
+     "lon": -80.26,
+     "lat": 26.16,
+     "value": 3882,
+     "sub": "Broward"
+    },
+    {
+     "name": "TEQUESTA",
+     "lon": -80.09,
+     "lat": 26.96,
+     "value": 1075,
+     "sub": "Palm Beach"
+    },
+    {
+     "name": "MARATHON",
+     "lon": -81.09,
+     "lat": 24.71,
+     "value": 215,
+     "sub": "the Keys"
+    },
+    {
+     "name": "FORT MYERS",
+     "lon": -81.87,
+     "lat": 26.64,
+     "value": 23,
+     "sub": "Gulf coast"
+    },
+    {
+     "name": "LAKELAND",
+     "lon": -81.95,
+     "lat": 28.04,
+     "value": 0,
+     "sub": "none listed"
+    }
+   ]
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "The owner said they got about twenty-five hundred requests",
+  "dur": 3.4,
+  "props": {
+   "to": 2500,
+   "label": "requests for an iguana pizza",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": true
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "So how did Florida end up with this many iguanas",
+  "dur": 2.4,
+  "props": {
+   "n": 3,
+   "title": "HOW THEY GOT HERE",
+   "bg": "@img:@near",
+   "progress": 0.332,
+   "total": 7
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "VhsRewind",
+  "at": "The state says green iguanas were first reported",
+  "dur": 1.3,
+  "props": {
+   "label": "◀◀ REW",
+   "date": "1964"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "EvidenceBoard",
+  "at": "You might have heard that Hurricane Andrew",
+  "until": "for more than twenty-five years",
+  "pad": 0.5,
+  "props": {
+   "myths": [
+    "Hurricane Andrew blew them loose (1992)"
+   ],
+   "truths": [
+    {
+     "date": "1960s",
+     "text": "First reports: Hialeah, Coral Gables, Key Biscayne"
+    },
+    {
+     "date": "1964",
+     "text": "A pet dealer turns 300+ loose in Miami — on purpose"
+    },
+    {
+     "date": "",
+     "text": "Established by 1966 — 26 years before Andrew"
+    }
+   ],
+   "source": "Sources: FWC · UF/IFAS EDIS WEC440 · USDA/USFWS review (2025)",
+   "split": 0.35,
+   "mythTitle": "THE STORY YOU HEARD",
+   "truthTitle": "WHAT THE RECORDS SAY"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "iguana reports in twenty-nine more Florida counties",
+  "dur": 3.4,
+  "props": {
+   "to": 29,
+   "label": "more Florida counties with iguana reports",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": true
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "How many iguanas are there in Florida? Nobody knows.",
+  "props": {
+   "text": "How many are there? Nobody knows.",
+   "keys": [
+    "Nobody",
+    "knows."
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 130
+  },
+  "dur": 3.2
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "The state says iguana burrows erode",
+  "dur": 2.4,
+  "props": {
+   "n": 4,
+   "title": "WHAT THEY COST",
+   "bg": "@img:@near",
+   "progress": 0.459,
+   "total": 7
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "scientists have counted up to two thousand, eight hundred burrows",
+  "dur": 3.6,
+  "props": {
+   "to": 2800,
+   "label": "burrows on one hectare (up to)",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": true
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "The emergency repairs cost one point eight million dollars",
+  "dur": 3.6,
+  "props": {
+   "to": 1.8,
+   "label": "West Palm Beach weir · emergency repairs",
+   "prefix": "$",
+   "suffix": "M",
+   "decimals": 1,
+   "sep": false
+  }
+ },
+ {
+  "t": "card",
+  "comp": "SplitFlapBoard",
+  "at": "They're also the number one animal cause of power outages",
+  "until": "a million dollars to replace",
+  "pad": 0.5,
+  "props": {
+   "title": "FLORIDA POWER & LIGHT · IGUANA OUTAGES",
+   "headers": [
+    "",
+    "",
+    "COST"
+   ],
+   "rows": [
+    {
+     "cells": [
+      "OUTAGES A YEAR",
+      "15-20",
+      ""
+     ]
+    },
+    {
+     "cells": [
+      "EACH OUTAGE",
+      "",
+      "$50K-$100K"
+     ]
+    },
+    {
+     "cells": [
+      "A TRANSFORMER",
+      "",
+      "UP TO $1M"
+     ]
+    }
+   ],
+   "highlightRow": 2
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Her words: they took over.",
+  "props": {
+   "text": "\"They took over.\"",
+   "keys": [
+    "took",
+    "over.\""
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 150
+  },
+  "dur": 2.6
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "Miami Beach alone pays contractors seventy dollars per iguana",
+  "dur": 3.4,
+  "props": {
+   "to": 70,
+   "label": "per iguana · Miami Beach contractors",
+   "prefix": "$",
+   "suffix": "",
+   "decimals": 0,
+   "sep": false
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "In January of 2010",
+  "dur": 2.4,
+  "props": {
+   "n": 5,
+   "title": "THE ICE AGES",
+   "bg": "@img:@near",
+   "progress": 0.585,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "the distribution and abundance of green iguanas increased after the 2010 freeze",
+  "props": {
+   "text": "After the 2010 freeze, they spread even further.",
+   "keys": [
+    "further."
+   ],
+   "bed": "@img:@near"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "don't be surprised if you see iguanas falling from the trees tonight",
+  "props": {
+   "text": "\"Don't be surprised if you see iguanas falling from the trees tonight.\"",
+   "keys": [
+    "falling"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 100
+  },
+  "dur": 4.0
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "But the iguanas weren't in that study",
+  "props": {
+   "text": "The iguanas were too big for the machine.",
+   "keys": [
+    "too",
+    "big"
+   ],
+   "bed": "@img:@near"
+  },
+  "until": "too big to fit in the cooling machine",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "Which brings us back to those five thousand",
+  "dur": 2.4,
+  "props": {
+   "n": 6,
+   "title": "WHERE THEY WENT",
+   "bg": "@img:@near",
+   "progress": 0.675,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "FlowSplit",
+  "at": "According to Florida Today, about sixteen hundred",
+  "until": "how it decided which ones lived",
+  "pad": 0.8,
+  "props": {
+   "total": 5195,
+   "totalLabel": "IGUANAS TURNED IN",
+   "kicker": "WHERE THE 5,195 WENT",
+   "branches": [
+    {
+     "value": 1600,
+     "approx": true,
+     "label": "ALIVE, TO LICENSED SELLERS",
+     "sub": "incl. sale outside Florida",
+     "exit": "OUT OF STATE"
+    },
+    {
+     "value": 3580,
+     "approx": true,
+     "label": "PUT DOWN",
+     "color": "#8C9A96"
+    }
+   ],
+   "source": "Split: Florida Today, Feb 16, 2026 · FWC released no breakdown"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Timeline3D",
+  "at": "Back in 2021, Florida made green iguanas a prohibited species",
+  "until": "shut down by 2024",
+  "pad": 0.3,
+  "props": {
+   "kicker": "THE RULES KEEP CHANGING",
+   "events": [
+    {
+     "year": "2021",
+     "label": "Green iguanas become a prohibited species",
+     "src": "@img:@near"
+    },
+    {
+     "year": "JUNE 2024",
+     "label": "Commercial breeding in Florida ends",
+     "src": "@img:@near"
+    },
+    {
+     "year": "AUG 2025",
+     "label": "Anyone can apply to sell wild-caught iguanas out of state",
+     "src": "@img:@near",
+     "now": true
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "DocHighlighter",
+  "at": "There are no limits on how many",
+  "until": "from the wild.",
+  "pad": 0.5,
+  "props": {
+   "source": "FLORIDA FISH AND WILDLIFE CONSERVATION COMMISSION — green iguana rule change, effective Aug 20, 2025",
+   "kicker": "THE STATE'S OWN WORDS",
+   "lines": [
+    "~",
+    "~",
+    "There are no limits on the number of green",
+    "iguanas that can be collected, transferred,",
+    "or sold.",
+    "~"
+   ],
+   "highlight": "There are no limits on the number of green iguanas that can be collected, transferred, or sold."
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "We want them out of Florida. So we're getting them out of the state.",
+  "props": {
+   "text": "\"We want them out of Florida. So we're getting them out of the state.\"",
+   "keys": [
+    "out",
+    "state.\""
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 100
+  },
+  "dur": 4.4
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "So could Florida ever actually get rid of them?",
+  "dur": 2.6,
+  "props": {
+   "n": 7,
+   "title": "THE ISLAND THAT TRIED",
+   "bg": "@img:@near",
+   "progress": 0.796,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "GlobeDive3D",
+  "at": "In the Cayman Islands, green iguanas showed up",
+  "until": "By 2018, the government had had enough",
+  "pad": 0.2,
+  "props": {
+   "lat": 19.31,
+   "lon": -81.25,
+   "label": "GRAND CAYMAN",
+   "sub": "IGUANAS SINCE THE MID-1990s",
+   "from": {
+    "lat": 26,
+    "lon": -80.2
+   },
+   "hires": false,
+   "endDist": 1.12
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ReceiptPrinter",
+  "at": "By 2023, the government had paid out almost nine million",
+  "until": "had been culled",
+  "pad": 0.8,
+  "props": {
+   "title": "GRAND CAYMAN · GREEN IGUANA CULL",
+   "lines": [
+    {
+     "l": "BOUNTY, 2018",
+     "r": "CI$5 / iguana"
+    },
+    {
+     "l": "LATER, BY SIZE",
+     "r": "CI$5-10"
+    },
+    {
+     "l": "---",
+     "r": ""
+    },
+    {
+     "l": "CULLED BY 2025",
+     "r": "1.6 MILLION+"
+    }
+   ],
+   "totalLabel": "PAID BY 2023 ≈",
+   "total": "CI$9 MILLION"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "DamageChart",
+  "at": "The population crashed by about ninety percent",
+  "until": "It looked like they'd won",
+  "pad": 0.8,
+  "props": {
+   "title": "GRAND CAYMAN · GREEN IGUANAS (DoE 2025 MODEL)",
+   "unit": "IGUANAS",
+   "series": [
+    {
+     "year": 2016,
+     "v": 688122
+    },
+    {
+     "year": 2018,
+     "v": 640893
+    },
+    {
+     "year": 2020,
+     "v": 39895
+    },
+    {
+     "year": 2021,
+     "v": 50224
+    },
+    {
+     "year": 2022,
+     "v": 79394
+    },
+    {
+     "year": 2023,
+     "v": 178537
+    },
+    {
+     "year": 2024,
+     "v": 176384
+    },
+    {
+     "year": 2025,
+     "v": 143689
+    }
+   ],
+   "marks": [
+    {
+     "year": 2018,
+     "label": "CULL BEGINS"
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "these iguanas can literally double their numbers in a year",
+  "props": {
+   "text": "\"These iguanas can literally double their numbers in a year.\"",
+   "keys": [
+    "double"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 100
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "The government's latest report says eradication is not feasible",
+  "props": {
+   "text": "Eradication: not feasible.",
+   "keys": [
+    "not",
+    "feasible."
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 130
+  },
+  "until": "The cull has to go on forever",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Whatever reduction occurs is only going to be temporary",
+  "props": {
+   "text": "\"Whatever reduction occurs is only going to be temporary.\"",
+   "keys": [
+    "temporary.\""
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 100
+  },
+  "dur": 3.8
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "A female can lay up to about seventy eggs",
+  "dur": 3.4,
+  "props": {
+   "to": 70,
+   "label": "eggs at a time (up to about)",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": false
+  }
+ }
+]
