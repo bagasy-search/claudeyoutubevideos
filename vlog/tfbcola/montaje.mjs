@@ -122,10 +122,10 @@ for (const [id, A] of Object.entries(CLIPAT)) {
 }
 // minuto 1: ninguna toma > ~2,6 s → a mitad de cada plano hablado largo, CORTE a un encuadre más cerrado (jump-cut)
 for (const [id, A] of Object.entries(CLIPAT)) {
-  if (!A.c || A.lamina || A.vg > 60 || A.c.detail || A.c.vdur < 2.6) continue;
-  const n = Math.max(1, Math.floor(A.c.vdur / 2.0)); // cuántos saltos entran
+  if (!A.c || A.lamina || A.vg > 61 || A.c.detail || A.c.vdur < 2.2) continue;
+  const n = Math.max(1, Math.floor(A.c.vdur / 1.5)); // cuántos saltos entran
   for (let k = 1; k <= n; k++) { const f0 = Math.round((A.vg + (A.c.vdur * k) / (n + 1)) * FPS), f1 = k < n ? Math.round((A.vg + (A.c.vdur * (k + 1)) / (n + 1)) * FPS) : Math.round((A.vg + A.c.vdur) * FPS);
-    if (k % 2) CAM.push({ f: f0, kind: "crop", dur: f1 - f0, amt: 1, x: 50 + (k % 3 - 1) * 12, y: 34 }); }
+    if (k % 2) CAM.push({ f: f0, kind: "crop", dur: f1 - f0, amt: 1.4, x: 50 + (k % 3 - 1) * 8, y: 20 }); }
 }
 // foley de los planos de detalle con voz encima (los X ya suenan en el audio de escena)
 for (const [id, A] of Object.entries(CLIPAT)) {

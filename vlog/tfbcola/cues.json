@@ -1,5 +1,31 @@
 [
  {
+  "at": "b017",
+  "w": "error",
+  "kind": "TfbFlash",
+  "dur": 0.3,
+  "props": {
+   "streaks": false
+  }
+ },
+ {
+  "at": "b014",
+  "w": "pesa",
+  "kind": "TfbFlash",
+  "dur": 0.3,
+  "props": {
+   "streaks": true
+  }
+ },
+ {
+  "at": "b002",
+  "kind": "TfbFlash",
+  "dur": 0.3,
+  "props": {
+   "streaks": true
+  }
+ },
+ {
   "at": "b000",
   "off": 1.6,
   "cam": "shake",
