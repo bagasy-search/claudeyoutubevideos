@@ -13,9 +13,10 @@ img/olsup/arch_cookstaff.jpg
 img/olsup/b_range.jpg
 img/olsup/b_wetwool.jpg
 broll/olsup/b_wetwool.mp4
+img/olsup/st_wool_hook.jpg
 img/olsup/st_stove_wet.jpg
 img/olsup/arch_mess1.jpg
-img/olsup/arch_mess2.jpg
+img/olsup/b_twentymen.jpg
 img/olsup/b_benches.jpg
 broll/olsup/b_benches.mp4
 img/olsup/arch_silent.jpg

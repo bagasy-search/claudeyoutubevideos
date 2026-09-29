@@ -22,7 +22,7 @@ for n in range(30,0,-1):
     k=num(n)
     s=start.get(k)
     if s is None: print("sin tiempo",n,k); continue
-    chap.append((ts(s),f"{n}. {L[n]['t']}"))
+    chap.append((ts(s),f"{n}. "+L[n]['t'].replace(' + ',' with ').replace(' (coffee trick)','').replace(' (Maine 1923 menu)','')))
 end=next(p['s'] for p in P if p['text'].startswith('Now, there\'s one more thing'))
 chap.append((ts(end),"The cook and the empty plates"))
 bookpages=sorted({x['p'] for x in L.values() if x['p']}|{7})

@@ -22,9 +22,10 @@ export const SHOTS = [
   S(1, "His crew was", "ar", "ar_cookstaff", { arch: "cookstaff", cap: "A camp cook and his crew, ca 1920s", credit: "Public domain · Wikimedia Commons" }),
   S(1, "and a wood range", "bi", "b_range", { p: BI("A huge black cast iron wood range in a log cook shack, six burners covered with big pots and kettles with steam, a cook in a khaki apron seen from behind stirring a pot with a long paddle, split firewood stacked underneath, a young helper in the corner peeling potatoes, warm orange fire glow from the firebox door."), anim: "steam rises from the pots and the cook stirs slowly" }),
   S(1, "The men came in", "bi", "b_wetwool", { p: BI("Inside a log cookhouse, a row of wet wool coats, caps and mittens hanging on a rope line over a black wood stove, steam rising from the drying wool, wet boots on the plank floor below, a lantern hanging from a beam, men's backs at the edge of the frame."), anim: "steam rises from the wet wool over the stove" }),
+  S(1, "hung their wet wool", "st", "st_wool_hook", { q: "wool coat hanging on wooden wall hook rustic" }),
   S(1, "over the stove", "st", "st_stove_wet", { q: "wet wool mittens and socks drying near wood stove" }),
   S(1, "and sat down at long tables", "ar", "ar_mess1", { arch: "mess1", cap: "Mess hall interior, ca 1920", credit: "Kinsey / Wikimedia Commons · public domain" }),
-  S(1, "about twenty to a table", "ar", "ar_mess2", { arch: "mess2", cap: "Long tables, one bench each side", credit: "Kinsey / Wikimedia Commons · public domain" }),
+  S(1, "about twenty to a table", "bi", "b_twentymen", { p: BI("Twenty lumberjacks in wool shirts and suspenders sitting shoulder to shoulder on a backless plank bench at one long rough table in a log cookhouse, all heads down eating from tin plates in total silence, steam rising, lanterns overhead, seen from the far end of the table."), anim: "steam rises from the plates" }),
   S(1, "on benches with no backs", "bi", "b_benches", { p: BI("Low angle along a very long rough plank table in a log cookhouse, tin plates and tin cups set in a line, backless plank benches on both sides, a loaf of bread every few places, lantern light and steam, the far end of the table fading into the dim room, nobody seated yet."), anim: "a wisp of steam drifts along the table" }),
 
   // ── P2 · LA REGLA (53-76 s)
