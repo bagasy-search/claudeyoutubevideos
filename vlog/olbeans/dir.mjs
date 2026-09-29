@@ -31,7 +31,7 @@ export const SHOTS = [
   S(3, "waiting on one pot", "st", "st175"),
   // ── HOJA DE RUTA + loop abierto
   S(4, "", "av", ""),
-  S(4, "But then there's one more", "st", "st52"),
+  S(4, "But then there's one more", "bi", "b_mound", { p: BI("Early winter morning behind an old log cook shack in the north woods: a low mound of fresh dark dirt in the trampled snow with a long-handled shovel stuck in it, a thin wisp of steam rising out of the dirt into the cold air, pine woods and a stovepipe with smoke behind, nobody around."), anim: "the steam wisp rises slowly from the dirt" }),
   S(4, "in a hole in the ground", "c", "OleBeanHole3D", { props: { stages: [{ at: 0, stage: "pot" }], camera: "static", labels: [] } }),
   S(4, "and I haven't seen", "st", "st228"),
   S(4, "I'm keeping that one", "vl", "m5"),
@@ -43,7 +43,7 @@ export const SHOTS = [
   S(6, "", "av", "", { ov: { c: "OleSubscribe", props: { channel: "Ole's Camp Kitchen", initials: "OC" } } }),
   S(6, "My mother soaked beans", "bi", "b_mother", { p: BI("A faded 1950s color snapshot of a farmhouse kitchen: a woman's hands in a flowered apron covering a big crock bowl of dried beans in water with a clean dish towel for the night, a wood table, an oil lamp, a calendar on the wall.") }),
   S(6, "And the bag in your pantry", "bi", "b_pantrybag", { p: BI("A plain brown paper sack of dried pinto beans folded over at the top, sitting on a pantry shelf between flour and canned tomatoes, a few beans spilled on the shelf, no printing on the bag.") }),
-  S(6, "Here's what I found out", "av", ""),
+  S(6, "Here's what I found out", "ar", "a_cabin_sled"),
   S(6, "A bean has to drink", "c", "OleBeanSwell", { props: { mode: "split", beats: ["@A bean has", "@But it drinks", "@What takes all night", "@you pour right down"] } }),
   S(7, "That's money going", "ar", "a_cookhouse_crew"),
   S(7, "We couldn't afford", "ar", "a_effie_wash2"),
@@ -192,7 +192,8 @@ export const SHOTS = [
   S(34, "He used to say", "ar", "a_effie_wash1"),
   S(34, "It cares what order", "av", ""),
   S(34, "Salt first, boil", "av", ""),
-  S(34, "Same beans, same pot", "av", ""),
+  S(34, "Same beans, same pot", "st", "st23"),
+  S(34, "Just the right order", "av", ""),
   // ── CIERRE
   S(35, "", "av", "", { ov: { c: "OleCTA", props: { compact: true } } }),
   S(35, "And tell me something", "av", "", { ov: { c: "OleAsk", props: { text: "What did your mother say about salt and beans?", sub: "tell me in the comments" } } }),

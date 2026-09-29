@@ -27,11 +27,12 @@ img/olbeans/ar/a_31_after_dinner.jpg
 img/olbeans/ar/a_mn1917_camp.jpg
 img/olbeans/ar/a_cook_kitchen.jpg
 broll/olbeans_st30/st175.mp4
-broll/olbeans_st30/st52.mp4
+img/olbeans/b_mound.png
 broll/olbeans_st30/st228.mp4
 img/olbeans/o_writing.png
 img/olbeans/b_mother.png
 img/olbeans/b_pantrybag.png
+img/olbeans/ar/a_cabin_sled.jpg
 img/olbeans/ar/a_cookhouse_crew.jpg
 img/olbeans/ar/a_effie_wash2.jpg
 vid/olbeans/d_sort.mp4
@@ -51,7 +52,7 @@ img/olbeans/b_slowcooker.png
 broll/olbeans_st30/st12.mp4
 img/olbeans/kf/d_skim.jpg
 broll/olbeans_st30/st30.mp4
-img/olbeans/kf/d_lid.jpg
+vid/olbeans/d_lid.mp4
 img/olbeans/b_torn.png
 vid/olbeans/d_kettle.mp4
 img/olbeans/b_smash.png
@@ -118,6 +119,7 @@ img/olbeans/b_mushy.png
 img/olbeans/b_bland.png
 img/olbeans/ar/a_wolcott_horses.jpg
 img/olbeans/ar/a_effie_wash1.jpg
+broll/olbeans_st30/st23.mp4
 sfx/whoosh.mp3
 sfx/sfx_whoosh_soft.mp3
 sfx/gentle_papercard_pop_#2-1780923860389.mp3
@@ -134,7 +136,7 @@ vid/olbeans/d_salt_foley.m4a
 sfx/px_bubble.mp3
 vid/olbeans/d_sort_foley.m4a
 sfx/px_bubble_alt1.mp3
-sfx/px_capPop.mp3
+vid/olbeans/d_lid_foley.m4a
 vid/olbeans/d_kettle_foley.m4a
 sfx/px_fizz.mp3
 sfx/px_wipe_alt1.mp3
