@@ -17,7 +17,7 @@ else:
     v = vs[0]
     for k, want in [("width", 1920), ("height", 1080), ("r_frame_rate", "30/1"), ("color_range", "tv"), ("color_space", "bt709"), ("color_primaries", "bt709"), ("color_transfer", "bt709")]:
         if v.get(k) != want: fallas.append(f"{k}={v.get(k)} (quiero {want})")
-    n = sh(["ffprobe", "-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", mp4]).stdout.strip()
+    n = sh(["ffprobe", "-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", mp4]).stdout.strip().strip(",")
     if not n.isdigit(): nomide.append("no pude contar cuadros")
     elif int(n) != TOTAL: fallas.append(f"cuadros {n} != {TOTAL}")
     print("cuadros", n, "/", TOTAL)

@@ -67,7 +67,7 @@ function block(D, audio, cuts, id) {
 const punchCam = (D, at = 0.5, s = 1.3) => { // saltos de zoom fuertes (se leen como corte, scene>0,3): uno cada ~2,2 s, alternando 1 ↔ s
   const n = Math.max(1, Math.round(D / 2.2) - 1), k = [[0, 1, 0, 0]];
   for (let i = 1; i <= n; i++) { const f = F(D * (n === 1 ? at : i / (n + 1))), z = i % 2 ? [s, -70, 70] : [1, 0, 0], p = k[k.length - 1]; k.push([f, p[1], p[2], p[3]], [f + 1, ...z]); }
-  return { keys: k }; };
+  return { keys: k, flash: k.filter((q, i) => i > 0 && i % 2 === 0).map(q => q[0]) }; }; // destello corto en cada salto (sólo min 1: el corte mide scene>0,3 aun comprimido)
 
 // ================= TRÁILER =================
 { const a = tclip("t_agua"); // 0-4 s: el chorro destapa las piedras. A normal, B en cámara lenta (rampa), sin voz: foley real
@@ -99,7 +99,7 @@ block(TD("r_01"), D => tramoWav("r_01", D), [hclip("r_01", TD("r_01"))], "r_01")
 for (const id of ["r_02", "r_03", "r_04", "r_05", "r_06", "r_07", "r_08"]) {
   const D = TD(id), c = tclip(id), TRIM = { r_04: 7.15, r_07: 7.15 }; // salto de pose medido en 7,3 s → se usa hasta antes, apenas más lento
   const rate = TRIM[id] && TRIM[id] < D ? +(TRIM[id] / D).toFixed(3) : undefined;
-  block(D, D2 => tramoWav(id, D2), [{ src: c.rel, ss: 0, rate, tag: id, foley: 0.3, foleyFile: c.abs, whoosh: true, cam: fr / FPS < 64 && D > 4 ? { ...punchCam(D), flash: [0] } : { keys: [[0, 1, 0, 0], [F(D), 1.08, 0, 0]] } }], id);
+  block(D, D2 => tramoWav(id, D2), [{ src: c.rel, ss: 0, rate, tag: id, foley: 0.3, foleyFile: c.abs, whoosh: true, cam: fr / FPS < 64 && D > 4 ? { ...punchCam(D), flash: [0, ...punchCam(D).flash] } : { keys: [[0, 1, 0, 0], [F(D), 1.08, 0, 0]] } }], id);
 }
 function speechEnd(file, T) { // fin de la voz en el audio propio del clip (−35 dB bajo el pico)
   const b = execFileSync("ffmpeg", ["-v", "error", "-i", file, "-vn", "-ac", "1", "-ar", "16000", "-t", String(T), "-f", "s16le", "-"]);
