@@ -52,13 +52,24 @@ const usedClip = new Set();
 const aiSrc = (i, part = 0) => { const c = agnesClip(i, part); if (c && !usedClip.has(c)) { usedClip.add(c); return c; } return aiJpg(i, part); };
 const nearJpg = (i, part = 0) => { for (let d = 0; d < moments.length; d++) for (const k of [i + d, i - d]) { if (k < 0 || k >= moments.length) continue; const r = aiJpg(k, d ? 0 : part); if (r) return r; } return null; };
 
+// ─── imágenes v2 (gpt-image Batch o agnes-image sin personas) ─────────────────
+const v2Src = (n, allowClip = false) => {
+  const clip = `broll/${SLUG}/v2_${n}.mp4`;
+  if (allowClip && fs.existsSync(PUB + clip) && !redib.has("v2_" + n) && !rechaz.has("v2_" + n) && !usedClip.has(clip)) { usedClip.add(clip); return clip; }
+  const src = [R + `v2img/gpt/${n}.png`, R + `v2img/${n}.png`].find((f) => fs.existsSync(f));
+  if (!src) { report.missing.push("V2 " + n); return null; }
+  const out = `${AS}v2_${n}.jpg`;
+  if (!fs.existsSync(PUB + out)) run(["-y", "-loglevel", "error", "-i", src, "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080", "-q:v", "3", PUB + out]);
+  return out;
+};
+const BASE = J(REPO + "vlog/ahnight/base_v2.json", {});
 // ─── metraje real ──────────────────────────────────────────────────────────
 const tok = (s) => new Set(String(s).toLowerCase().split(/[^a-z]+/).filter((w) => w.length > 2));
 const STOP = new Set(["the", "and", "that", "this", "with", "from", "they", "their", "there", "then", "what", "when", "into", "over", "just", "like", "about", "were", "have", "has", "had", "was", "are", "for", "you", "your", "his", "her", "its", "but", "not", "all", "one", "two", "out", "get", "got", "who", "how", "more", "than", "some", "very", "been", "would", "could", "every", "each", "back", "down", "here", "where", "night", "people", "because", "thing", "things", "time", "only", "most", "around", "after", "before", "still", "long", "even", "know"]);
 const fname = (c) => (c.type === "photo" ? "p_" : "r_") + path.basename(c.file).replace(/[^A-Za-z0-9._-]/g, "");
 // fuera: agujas de ACERO (anacronismo), foto con lente de turista al borde, Tierra CG (no es metraje real)
 const EXCL = /px_6654775|px_4456102|px_6654782|px_1851190|wm_hadza_fire|px_30100854|px_30100897|px_33404877|px_16565510|px_31385059|px_39156853|px_16952132|px_30216880|px_37266588|px_37549649/; // + leones de zoo de día, búhos de día, pollos al spiedo
-const usable = cat.filter((c) => fs.existsSync(c.file) && !oscuros.has(fname(c)) && !EXCL.test(c.file));
+const usable = cat.filter((c) => fs.existsSync(c.file) && !oscuros.has(fname(c)) && !EXCL.test(c.file) && !/\b(sea|ocean|coast|coastline|waves|beach|palm|tropical)\b/i.test(c.desc));
 const usedFoot = new Set();
 const footSrc = (c) => {
   const n = fname(c);
@@ -109,6 +120,9 @@ const resolveRef = (ref, ctx) => {
   if (typeof ref !== "string" || !ref.startsWith("@")) return ref;
   const [kind, a] = ref.slice(1).split(":");
   const mi = ctx.moment.i;
+  if (kind === "v2") return v2Src(a, !ctx.comp || /^(Shot|MatchCut|FlashSeq)$/.test(ctx.comp));
+  if (kind === "dots") return J(R + a + ".json", []);
+  if (kind === "file") { const c = cat.find((x) => x.file.includes(a)); if (c) { usedFoot.add(c); return footSrc(c); } report.missing.push("FILE " + a); return nearJpg(mi); }
   if (kind === "jpg") { const [ii, pp] = a.split("_"); return aiJpg(+ii, +(pp || 0)) ?? nearJpg(+ii); }
   if (kind === "img") return nearJpg(mi + (ctx.k = (ctx.k ?? -1) + 1));
   if (kind === "foot") { const c = takeFoot(a + " " + ctx.moment.text, 0, { tag: a, chapter: ctx.moment.item }); if (c) return footSrc(c); report.missing.push("FOOT " + a); return nearJpg(mi); }
@@ -137,9 +151,10 @@ for (const c of cues) {
   else endMs = startMs + (c.dur ?? 3) * 1000;
   if (c.mindur) endMs = Math.max(endMs, startMs + c.mindur * 1000);
   // limpio > denso: ninguna tarjeta tapa el metraje más de lo que tarda en leerse
-  const MAXC = { SentinelRing: 9.5, MoonTally: 8.5, TalkBars: 8, SleepBars: 8.5, Globe3D: 9.5, Recap: 14 };
+  const MAXC = { SentinelRing: 9.5, MoonTally: 8.5, TalkBars: 8, SleepBars: 8.5, Globe3D: 9.5, Recap: 14, Shot: 4.5, Flash: 1 };
   if (c.t === "card") endMs = Math.min(endMs, startMs + (c.max ?? MAXC[c.comp] ?? 6.8) * 1000);
-  const cue = { from: Math.max(0, fr(startMs)), dur: Math.max(45, fr(endMs) - fr(startMs)), comp: c.comp, props: deep(c.props, { moment }) };
+  const minF = /^(Shot|Flash|FlashSeq)$/.test(c.comp) ? 8 : 45;
+  const cue = { from: Math.max(0, fr(startMs)), dur: Math.max(minF, fr(endMs) - fr(startMs)), comp: c.comp, props: deep(c.props, { moment, comp: c.comp }) };
   for (const [k, m] of Object.entries(c.marks ?? {})) {
     const h = findPhrase(m, a.i0);
     if (!h) { report.missing.push("MARK " + k + ": " + m); continue; }
@@ -166,7 +181,7 @@ for (let i = overlays.length - 1; i >= 0; i--) {
   if (nx) { o.dur = nx.from - o.from; if (o.dur < 45) { overlays.splice(i, 1); report.missing.push("overlay descartado (sin lugar): " + o.comp); } }
 }
 // brasas: transición firmada de cada capítulo del reloj
-for (const c of cards.filter((c) => c.comp === "NightClock")) overlays.push({ from: Math.max(0, c.from - 16), dur: 40, comp: "Embers", props: { peak: 0.9 } });
+if (CFG.v1) for (const c of cards.filter((c) => c.comp === "NightClock")) overlays.push({ from: Math.max(0, c.from - 16), dur: 40, comp: "Embers", props: { peak: 0.9 } });
 
 // ─── reloj chico de esquina: entre capítulos ───────────────────────────────
 const clocks = cards.filter((c) => c.comp === "NightClock");
@@ -174,7 +189,7 @@ const clock = [];
 const total = fr(AUDIO_MS);
 clocks.forEach((c, k) => {
   const from = c.from + c.dur, to = k + 1 < clocks.length ? clocks[k + 1].from : total;
-  if (to - from > 60) clock.push({ from, dur: to - from, time: c.props.time, label: c.props.title });
+  if (CFG.v1 && to - from > 60) clock.push({ from, dur: to - from, time: c.props.time, label: c.props.title });
 });
 
 // ─── base ──────────────────────────────────────────────────────────────────
@@ -200,13 +215,15 @@ for (const s of segs) {
   let src = null, rate, kb = kbs[(s.m.i + s.part) % 5], real = false;
   const ctx = s.m.text + " " + (p.subject || "");
   // metraje real: por contexto (>=2 palabras) o, si vamos cortos de proporción, con 1 palabra en planos sin elenco
-  if (!covered) {
+  const forced = BASE[`${s.m.i}_${s.part}`] ?? (s.part === 1 ? undefined : undefined);
+  if (forced) { src = resolveRef(forced, { moment: s.m }); real = /\/(r|p)_/.test(src || ""); }
+  if (!src && !covered) {
     const wantReal = realF / Math.max(1, allF) < (CFG.realRatio ?? 0.34);
     const castShot = (p.cast || []).length > 0;
     // el elenco es la identidad del canal: un plano con elenco sólo cede a metraje real si éste nombra 3+ cosas de la frase
-    const o = { modern: p.kind === "now", chapter: s.m.item };
+    const o = { modern: false, chapter: s.m.item };  // v2: nada de stock moderno genérico en la base
     // metraje MODERNO sólo cuando la frase le habla al espectador de hoy (no para "now" de laboratorio/excavación)
-    const hoy = /(you|your|phone|screen|grandpa|alarm|teenage|scroll|remote|today)/i.test(s.m.text);
+    const hoy = /\b(you|your|phone|screen|grandpa|alarm|teenage|scroll|remote|today)\b/i.test(s.m.text);
     const c = (o.modern && !hoy) ? null : (takeFoot(ctx, castShot ? 3 : 2, o) ?? (wantReal && !castShot ? takeFoot(ctx, 1, o) : null));
     if (c) {
       const need = dur / FPS, len = footLen(c);
@@ -214,6 +231,9 @@ for (const s of segs) {
       else usedFoot.delete(c);
     }
   }
+  // v2: las fotos IA "now" (laboratorios, cocinas, gente random) no van: el "YOU" es un solo personaje (base_v2)
+  if (!src && p.kind === "now") { const c = takeFoot(ctx, 1, { modern: false, chapter: s.m.item }); if (c) { src = footSrc(c); real = true; } }
+  if (!src && p.kind === "now") { for (let d = 1; d < 12 && !src; d++) for (const k of [s.m.i - d, s.m.i + d]) { const q = PR.find((x) => x.i === k && x.kind === "cast"); if (q && !src) src = aiJpg(k, q.part ?? 0); } }
   if (!src) src = aiSrc(s.m.i, s.part) ?? nearJpg(s.m.i);
   if (!covered) { allF += dur; if (real) realF += dur; }
   // noche ≠ negro: una foto/clip IA oscura se levanta (luma media medida del png original)
@@ -255,11 +275,12 @@ for (const c of cards) { cardF += c.dur; const s = JSON.stringify(c.props); if (
 for (const b of beats) delete b._real;
 
 // transiciones sin corte (agnes keyframe): D:/rtmp/ahnight/trans/montaje.json [{id, from, dur}] + trans/<id>.mp4 que pasaron la compuerta
-const TRM = J(R + "trans/montaje.json", []), TRR = J(R + "trans/_report.json", []);
+const TRD = CFG.transDir ?? "trans2";
+const TRM = J(R + TRD + "/montaje.json", []), TRR = J(R + TRD + "/_report.json", []);
 const trans = [];
 for (const t of TRM) {
   const ok = TRR.find((r) => r.id === t.id && r.ok) && !(t.rechazada);
-  const f = R + `trans/${t.id}.mp4`;
+  const f = R + `${TRD}/${t.id}.mp4`;
   if (!ok || !fs.existsSync(f)) { report.missing.push("TRANSICIÓN sin usar: " + t.id); continue; }
   const dst = `${AS}tr_${t.id}.mp4`; fs.copyFileSync(f, PUB + dst);
   const r = spawnSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", PUB + dst], { encoding: "utf8" }); lens[dst] = +parseFloat(r.stdout).toFixed(3);

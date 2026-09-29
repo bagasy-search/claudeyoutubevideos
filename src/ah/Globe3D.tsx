@@ -42,7 +42,7 @@ const Cam: React.FC<{ pos: THREE.Vector3; look: THREE.Vector3 }> = ({ pos, look 
 };
 
 const VS = `varying vec2 vUv; varying vec3 vN; void main(){ vUv = uv; vN = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }`;
-const FS = `uniform sampler2D day; uniform sampler2D night; uniform vec3 sun; uniform float lights; varying vec2 vUv; varying vec3 vN;
+const FS = `uniform sampler2D day; uniform sampler2D night; uniform vec3 sun; uniform float lights; uniform sampler2D ice; uniform float iceAmt; varying vec2 vUv; varying vec3 vN;
 void main(){
   float d = dot(normalize(vN), normalize(sun));
   float k = smoothstep(-0.08, 0.12, d);
@@ -51,8 +51,23 @@ void main(){
   vec3 moon = dc * vec3(0.62, 0.72, 0.95);
   vec3 nightCol = moon + nc * lights * 1.25;
   vec3 dusk = vec3(1.0, 0.45, 0.15) * max(0.0, 1.0 - abs(d + 0.02) * 40.0) * 0.09;
-  gl_FragColor = vec4(mix(nightCol, dc, k) + max(dusk, 0.0), 1.0);
+  vec3 col = mix(nightCol, dc, k) + max(dusk, 0.0);
+  float ia = texture2D(ice, vUv).a * iceAmt;
+  vec3 iceCol = mix(vec3(0.55, 0.66, 0.82), vec3(0.95, 0.97, 1.0), k);
+  gl_FragColor = vec4(mix(col, iceCol, ia * 0.85), 1.0);
 }`;
+
+const ICE: [number, number][][] = [
+  [[4, 60], [6, 62.5], [10, 65], [13, 68], [17, 70], [24, 71], [30, 70.5], [33, 68], [32, 65], [30, 62.5], [27, 61], [23, 60.3], [19, 59.2], [14, 58.4], [9, 58.6]],
+  [[-7.5, 56], [-6, 58.6], [-3.5, 58.7], [-2.2, 57.2], [-3.2, 55.6], [-5.5, 55.2]],
+  [[5.8, 45.6], [7.5, 46.9], [10, 47.4], [13.5, 47.3], [15.8, 46.8], [14, 46], [11, 45.9], [8, 45.3]],
+];
+const useIceTex = () => useMemo(() => {
+  const c = document.createElement("canvas"); c.width = 2048; c.height = 1024; const g = c.getContext("2d")!;
+  g.filter = "blur(10px)"; g.fillStyle = "#fff";
+  for (const poly of ICE) { g.beginPath(); poly.forEach(([lo, la], i) => { const x = (lo + 180) / 360 * 2048, y = (90 - la) / 180 * 1024; i ? g.lineTo(x, y) : g.moveTo(x, y); }); g.closePath(); g.fill(); }
+  const t = new THREE.CanvasTexture(c); return t;
+}, []);
 
 export const Globe3D: React.FC<{ from?: [number, number, number]; to?: [number, number, number]; label0?: string; label1?: string; pin?: string; pinAt?: [number, number]; sub?: string }> =
   ({ from = [28, 12, 3.4], to = [44.4, 4.4, 1.55], label0 = "EUROPE · TONIGHT", label1 = "EUROPE · 38,000 BC", pin = "THE ARDÈCHE VALLEY", pinAt = [44.39, 4.42], sub }) => {
@@ -62,6 +77,7 @@ export const Globe3D: React.FC<{ from?: [number, number, number]; to?: [number, 
   const day = useTex("ah/geo/bm4k.jpg");
   const night = useTex("ah/geo/night4k.jpg");
   useSettle(!!(day && night));
+  const iceTex = useIceTex();
   const tc = easeInOut(clamp((t - 0.05) / 0.85));
   const la = lerp(from[0], to[0], tc), lo = lerp(from[1], to[1], tc), dist = lerp(from[2], to[2], tc);
   const camPos = P(la, lo, dist);
@@ -71,11 +87,13 @@ export const Globe3D: React.FC<{ from?: [number, number, number]; to?: [number, 
   const sun = P(4, sunLon, 1);
   const lights = 1 - easeInOut(clamp((t - 0.38) / 0.2)); // las luces de hoy se apagan
   const ember = easeInOut(clamp((t - 0.55) / 0.15));
-  const mat = useMemo(() => new THREE.ShaderMaterial({ vertexShader: VS, fragmentShader: FS, uniforms: { day: { value: null }, night: { value: null }, sun: { value: new THREE.Vector3() }, lights: { value: 1 } } }), []);
+  const mat = useMemo(() => new THREE.ShaderMaterial({ vertexShader: VS, fragmentShader: FS, uniforms: { day: { value: null }, night: { value: null }, sun: { value: new THREE.Vector3() }, lights: { value: 1 }, ice: { value: null }, iceAmt: { value: 0 } } }), []);
   if (day && mat.uniforms.day.value !== day) { mat.uniforms.day.value = day; mat.needsUpdate = true; }
   if (night && mat.uniforms.night.value !== night) { mat.uniforms.night.value = night; mat.needsUpdate = true; }
   mat.uniforms.sun.value.copy(sun);
   mat.uniforms.lights.value = lights;
+  mat.uniforms.ice.value = iceTex;
+  mat.uniforms.iceAmt.value = easeInOut(clamp((t - 0.45) / 0.18));
   const embers = useMemo(() => {
     const out: [number, number, number][] = [];
     SITES.forEach(([a, b], i) => { for (let k = 0; k < 2; k++) out.push([a + (rnd(i * 7 + k) - 0.5) * 2.2, b + (rnd(i * 11 + k + 3) - 0.5) * 3, rnd(i + k * 5)]); });
@@ -111,7 +129,7 @@ export const Globe3D: React.FC<{ from?: [number, number, number]; to?: [number, 
           {sub ? <div style={{ fontFamily: MONO, fontSize: 22, color: AH.amber }}>{sub}</div> : null}
         </div>
       </div> : null}
-      {ember > 0 ? <div style={{ position: "absolute", left: 60, bottom: 40, fontFamily: MONO, fontSize: 18, color: AH.boneDim, opacity: ember * 0.8 }}>CAMPFIRES: ILLUSTRATION · EARTH: NASA BLUE MARBLE / BLACK MARBLE</div> : null}
+      {ember > 0 ? <div style={{ position: "absolute", left: 60, bottom: 40, fontFamily: MONO, fontSize: 18, color: AH.boneDim, opacity: ember * 0.8 }}>ICE AND CAMPFIRES: ILLUSTRATION</div> : null}
       {void BIG}
     </AbsoluteFill>
   );

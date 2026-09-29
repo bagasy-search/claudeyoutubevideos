@@ -1,13 +1,96 @@
 [
  {
   "t": "overlay",
-  "comp": "PlaceStamp",
-  "at": "You're standing in a river valley",
+  "comp": "TitleCard",
+  "at": "Imagine it's six forty-eight",
   "props": {
-   "place": "SOUTHERN FRANCE",
-   "when": "40,000 YEARS AGO · 6:48 PM"
+   "title": "6:48 PM",
+   "sub": "40,000 YEARS AGO",
+   "pos": "center",
+   "size": 230
   },
-  "dur": 4.5
+  "dur": 4.0,
+  "until": "Forty thousand years ago.",
+  "pad": 0.5
+ },
+ {
+  "t": "overlay",
+  "comp": "Nightfall",
+  "at": "and the sun just left.",
+  "props": {
+   "to": 0.75
+  },
+  "dur": 1.6
+ },
+ {
+  "t": "card",
+  "comp": "Shot",
+  "at": "No lights.",
+  "props": {
+   "src": "@file:px_33637800",
+   "kb": "out"
+  },
+  "until": "No lights.",
+  "pad": 0.15
+ },
+ {
+  "t": "card",
+  "comp": "Shot",
+  "at": "No phone.",
+  "props": {
+   "src": "@v2:v2_you_hook_phone_off",
+   "kb": "in"
+  },
+  "until": "No phone.",
+  "pad": 0.15
+ },
+ {
+  "t": "card",
+  "comp": "Shot",
+  "at": "No door to lock.",
+  "props": {
+   "src": "@v2:v2_you_door",
+   "kb": "in"
+  },
+  "until": "No door to lock.",
+  "pad": 0.3
+ },
+ {
+  "t": "card",
+  "comp": "Shot",
+  "at": "And somewhere up the valley,",
+  "props": {
+   "src": "@v2:v2_eyes",
+   "kb": "in",
+   "zoom": 1.25,
+   "filter": "brightness(1.5)"
+  },
+  "until": "very big teeth",
+  "pad": 0.1
+ },
+ {
+  "t": "card",
+  "comp": "FlashSeq",
+  "at": "is waking up.",
+  "props": {
+   "items": [
+    {
+     "src": "@v2:v2_camp_top",
+     "text": "18 MIN"
+    },
+    {
+     "src": "@file:wm_blanchard_plaque"
+    },
+    {
+     "src": "@file:wm_chauvet_lions_panel"
+    },
+    {
+     "src": "@jpg:051_0"
+    }
+   ]
+  },
+  "until": "is waking up.",
+  "pad": 0.35
  },
  {
   "t": "card",
@@ -16,694 +99,972 @@
   "props": {
    "label0": "EUROPE · TONIGHT",
    "label1": "EUROPE · 40,000 YEARS AGO",
-   "pin": "SOUTHERN FRANCE",
-   "sub": "OUR VALLEY"
+   "pin": "OUR VALLEY",
+   "sub": "SOUTHERN FRANCE",
+   "to": [
+    44.4,
+    4.4,
+    1.28
+   ]
   },
-  "until": "the people sitting around it.",
-  "pad": 0.4,
-  "mindur": 9.0
+  "until": "Twelve hours of dark,",
+  "pad": 0.2,
+  "max": 8.5
  },
  {
   "t": "card",
-  "comp": "Words",
+  "comp": "Shot",
+  "at": "with nothing to fill them but a fire",
+  "props": {
+   "src": "@v2:flint_1",
+   "kb": "in",
+   "zoom": 1.2
+  },
+  "until": "but a fire",
+  "pad": 0.1
+ },
+ {
+  "t": "card",
+  "comp": "Shot",
+  "at": "and the people sitting around it.",
+  "props": {
+   "src": "@v2:tinder_1",
+   "kb": "in",
+   "zoom": 1.15
+  },
+  "until": "sitting around it.",
+  "pad": 0.1
+ },
+ {
+  "t": "card",
+  "comp": "EmberType",
   "at": "So what did ancient humans actually do all night?",
   "props": {
-   "text": "WHAT DID THEY DO ALL NIGHT?",
-   "keys": [
-    "NIGHT?"
-   ],
-   "bed": "@img:@near"
+   "text": "WHAT DID THEY",
+   "sub": "DO ALL NIGHT?",
+   "size": 230,
+   "subSize": 190,
+   "bed": "@file:px_6900893",
+   "formAt": 30
   },
   "until": "actually do all night?",
-  "pad": 0.6
+  "pad": 0.9,
+  "max": 4.6
  },
  {
   "t": "card",
-  "comp": "Counter",
+  "comp": "CampWatch",
   "at": "We'll also get to eighteen minutes.",
   "props": {
-   "to": 18,
-   "suffix": " MIN",
-   "label": "EVERYONE ASLEEP AT ONCE",
-   "sub": "IN 20 NIGHTS · ONE HUNTER-GATHERER CAMP",
-   "bed": "@img:@near"
+   "bed": "@v2:v2_camp_top",
+   "sleepers": [
+    [
+     0.184,
+     0.253
+    ],
+    [
+     0.327,
+     0.21
+    ],
+    [
+     0.452,
+     0.13
+    ],
+    [
+     0.646,
+     0.185
+    ],
+    [
+     0.84,
+     0.315
+    ],
+    [
+     0.792,
+     0.562
+    ],
+    [
+     0.809,
+     0.815
+    ],
+    [
+     0.552,
+     0.901
+    ],
+    [
+     0.354,
+     0.864
+    ],
+    [
+     0.202,
+     0.821
+    ],
+    [
+     0.09,
+     0.593
+    ]
+   ],
+   "mode": "watch",
+   "counter": false,
+   "allAsleepAt": 0.5,
+   "lines": [
+    {
+     "text": "18 MINUTES",
+     "hot": true
+    },
+    {
+     "text": "IN 20 NIGHTS"
+    }
+   ]
   },
-  "until": "completely asleep at the same time.",
-  "pad": 0.3
- },
- {
-  "t": "card",
-  "comp": "YouThem",
-  "at": "we look at two things.",
-  "props": {
-   "you": {
-    "src": "@foot:flute",
-    "tag": "CLUE 1",
-    "line": "What the ground remembers"
-   },
-   "them": {
-    "src": "@foot:hadza",
-    "tag": "CLUE 2",
-    "line": "Hunter-gatherers today"
-   }
+  "until": "at the same time.",
+  "pad": 0.3,
+  "marks": {
+   "l0": "eighteen minutes.",
+   "l1": "in twenty whole nights"
   },
-  "until": "spend their nights today.",
-  "pad": 0.3
+  "max": 8.2
  },
  {
   "t": "overlay",
-  "comp": "PlaceStamp",
+  "comp": "TitleCard",
+  "at": "What the ground remembers.",
+  "props": {
+   "title": "What the ground remembers",
+   "sub": "CLUE 1 · ARCHAEOLOGY"
+  },
+  "dur": 4.0,
+  "until": "What the ground remembers.",
+  "pad": 0.8
+ },
+ {
+  "t": "overlay",
+  "comp": "TitleCard",
+  "at": "And how people who still live by hunting",
+  "props": {
+   "title": "Hunter-gatherers today",
+   "sub": "CLUE 2 · STUDIES OF LIVING PEOPLES"
+  },
+  "dur": 4.0,
+  "until": "spend their nights today.",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "TitleCard",
   "at": "You're a hunter, about thirty years old.",
   "props": {
-   "place": "YOU · THE HUNTER",
-   "when": "ABOUT 30 YEARS OLD"
+   "title": "The hunter",
+   "sub": "THAT'S YOU · ABOUT 30"
   },
-  "dur": 3.4
+  "dur": 2.8
  },
  {
   "t": "overlay",
-  "comp": "PlaceStamp",
+  "comp": "TitleCard",
   "at": "There's an old woman in your group",
   "props": {
-   "place": "THE STORYTELLER",
-   "when": "KNOWS EVERY STORY WORTH KNOWING"
+   "title": "The storyteller",
+   "sub": "KNOWS EVERY STORY"
   },
-  "dur": 3.6
+  "dur": 3.4
  },
  {
   "t": "overlay",
-  "comp": "PlaceStamp",
+  "comp": "TitleCard",
   "at": "And there's a kid, maybe ten,",
   "props": {
-   "place": "THE KID",
-   "when": "ABOUT 10 · TOO MANY QUESTIONS"
+   "title": "The kid",
+   "sub": "ABOUT 10 · TOO MANY QUESTIONS"
   },
-  "dur": 3.4
+  "dur": 3.2
  },
  {
   "t": "card",
-  "comp": "NightClock",
+  "comp": "SkyClock",
   "at": "Six forty-eight PM.",
   "props": {
    "time": "6:48 PM",
    "title": "THE SUN IS GONE",
-   "prev": "5:40 PM",
-   "n": 1,
-   "bed": "@img:@near"
+   "bed": "@file:px_857251",
+   "mode": "sky",
+   "big": true,
+   "moon": {
+    "x0": 260,
+    "x1": 420,
+    "phase": 0.12
+   },
+   "spin": 7
   },
   "until": "The sun is gone.",
-  "pad": 0.4,
-  "mindur": 4.2
+  "pad": 0.35,
+  "mindur": 1.8,
+  "max": 4.2
  },
  {
   "t": "card",
-  "comp": "NightClock",
+  "comp": "SkyClock",
   "at": "Seven twenty PM.",
   "props": {
    "time": "7:20 PM",
    "title": "THE FIRE WAKES UP",
-   "prev": "6:48 PM",
-   "n": 2,
-   "bed": "@img:@near"
+   "bed": "@v2:cliff_night_3",
+   "mode": "rock"
   },
   "until": "The fire wakes up.",
-  "pad": 0.4,
-  "mindur": 4.2
+  "pad": 0.35,
+  "mindur": 1.8,
+  "max": 3.0
  },
  {
   "t": "card",
-  "comp": "NightClock",
+  "comp": "SkyClock",
   "at": "Eight thirty PM.",
   "props": {
    "time": "8:30 PM",
    "title": "STORY TIME",
-   "prev": "7:20 PM",
-   "n": 3,
-   "bed": "@img:@near"
+   "bed": "@file:px_32063954",
+   "mode": "sky",
+   "align": "left",
+   "moon": {
+    "x0": 1500,
+    "x1": 1600,
+    "phase": 0.28
+   },
+   "spin": 10,
+   "pole": [
+    2100,
+    -250
+   ]
   },
   "until": "Story time.",
-  "pad": 0.4,
-  "mindur": 4.2
+  "pad": 0.35,
+  "mindur": 1.8,
+  "max": 2.8
  },
  {
   "t": "card",
-  "comp": "NightClock",
+  "comp": "SkyClock",
   "at": "Nine forty PM.",
   "props": {
    "time": "9:40 PM",
    "title": "HANDS STAY BUSY",
-   "prev": "8:30 PM",
-   "n": 4,
-   "bed": "@img:@near"
+   "bed": "@v2:wall_ochre_2",
+   "mode": "rock"
   },
   "until": "Hands stay busy.",
-  "pad": 0.4,
-  "mindur": 4.2
+  "pad": 0.35,
+  "mindur": 1.8,
+  "max": 2.2
  },
  {
   "t": "card",
-  "comp": "NightClock",
+  "comp": "SkyClock",
   "at": "Ten fifteen PM.",
   "props": {
    "time": "10:15 PM",
    "title": "THE BED",
-   "prev": "9:40 PM",
-   "n": 5,
-   "bed": "@img:@near"
+   "bed": "@v2:cliff_night_1",
+   "mode": "sky",
+   "align": "right",
+   "spin": 6,
+   "pole": [
+    300,
+    -500
+   ]
   },
   "until": "The bed.",
-  "pad": 0.4,
-  "mindur": 4.2
+  "pad": 0.35,
+  "mindur": 1.8,
+  "max": 2.8
  },
  {
   "t": "card",
-  "comp": "NightClock",
+  "comp": "SkyClock",
   "at": "Twelve forty AM.",
   "props": {
    "time": "12:40 AM",
    "title": "THE NIGHT SHIFT",
-   "prev": "10:15 PM",
-   "n": 6,
-   "bed": "@img:@near"
+   "bed": "@file:px_30262970",
+   "mode": "sky",
+   "moon": {
+    "x0": 900,
+    "x1": 1060,
+    "phase": 0.5
+   },
+   "spin": 12
   },
   "until": "The night shift.",
-  "pad": 0.4,
-  "mindur": 4.2
+  "pad": 0.35,
+  "mindur": 1.8,
+  "max": 3.0
  },
  {
   "t": "card",
-  "comp": "NightClock",
+  "comp": "SkyClock",
   "at": "Two forty AM.",
   "props": {
    "time": "2:40 AM",
    "title": "THE SECOND SLEEP?",
-   "prev": "12:40 AM",
-   "n": 7,
-   "bed": "@img:@near"
+   "bed": "@v2:cliff_night_2",
+   "mode": "rock"
   },
   "until": "The second sleep?",
-  "pad": 0.4,
-  "mindur": 4.2
+  "pad": 0.35,
+  "mindur": 1.8,
+  "max": 1.8
  },
  {
   "t": "card",
-  "comp": "NightClock",
+  "comp": "SkyClock",
   "at": "Three fourteen AM.",
   "props": {
    "time": "3:14 AM",
    "title": "THE HOUR OF THE HYENA",
-   "prev": "2:40 AM",
-   "n": 8,
-   "bed": "@img:@near"
+   "bed": "@v2:v2_eyes",
+   "mode": "sky",
+   "big": true,
+   "spin": 14,
+   "pole": [
+    960,
+    -900
+   ],
+   "moon": {
+    "x0": 1450,
+    "x1": 1650,
+    "phase": 0.58
+   }
   },
   "until": "The hour of the hyena.",
-  "pad": 0.4,
-  "mindur": 4.2
+  "pad": 0.35,
+  "mindur": 1.8,
+  "max": 4.2
  },
  {
   "t": "card",
-  "comp": "NightClock",
+  "comp": "SkyClock",
   "at": "Five ten AM.",
   "props": {
    "time": "5:10 AM",
    "title": "THE COLDEST HOUR",
-   "prev": "3:14 AM",
-   "n": 9,
-   "bed": "@img:@near"
+   "bed": "@v2:frost_1",
+   "mode": "rock"
   },
   "until": "The coldest hour.",
-  "pad": 0.4,
-  "mindur": 4.2
+  "pad": 0.35,
+  "mindur": 1.8,
+  "max": 2.4
  },
  {
   "t": "card",
-  "comp": "NightClock",
+  "comp": "SkyClock",
   "at": "Six thirty AM.",
   "props": {
    "time": "6:30 AM",
    "title": "DAWN",
-   "prev": "5:10 AM",
-   "n": 10,
-   "bed": "@img:@near"
+   "bed": "@file:px_11320881",
+   "mode": "rock"
   },
   "until": "Dawn.",
-  "pad": 0.4,
-  "mindur": 4.2
+  "pad": 0.35,
+  "mindur": 1.8,
+  "max": 3.0
  },
  {
   "t": "card",
-  "comp": "Counter",
+  "comp": "EmberType",
   "at": "Your eyes need twenty to thirty minutes",
   "props": {
-   "from": 0,
-   "to": 30,
-   "prefix": "20–",
-   "suffix": " MIN",
-   "label": "FOR YOUR EYES TO ADJUST TO THE DARK",
-   "sub": "ONE LOOK AT THE FIRE RESETS THE CLOCK",
-   "bed": "@img:@near"
-  },
-  "until": "to adjust to the dark.",
-  "pad": 0.8
- },
- {
-  "t": "card",
-  "comp": "Counter",
-  "at": "In one cave in Italy,",
-  "props": {
-   "to": 9,
-   "label": "NEANDERTHALS GNAWED BY HYENAS",
-   "sub": "GROTTA GUATTARI · ITALY",
-   "bed": "@foot:hyena"
-  },
-  "until": "gnawed and dragged inside.",
-  "pad": 0.4
- },
- {
-  "t": "card",
-  "comp": "Counter",
-  "at": "The earliest solid evidence,",
-  "props": {
-   "to": 1,
-   "suffix": " MILLION YEARS",
-   "label": "EARLIEST SOLID EVIDENCE OF FIRE",
-   "sub": "WONDERWERK CAVE · SOUTH AFRICA · BERNA ET AL. 2012",
+   "text": "20–30 MIN",
+   "sub": "TO SEE IN THE DARK",
+   "size": 280,
+   "subSize": 90,
    "bed": "@foot:fire"
   },
-  "until": "about a million years old.",
-  "pad": 0.4
+  "until": "to adjust to the dark.",
+  "pad": 0.8,
+  "max": 5.2
  },
  {
   "t": "card",
-  "comp": "Words",
-  "at": "It's the stove.",
+  "comp": "OchreWall",
+  "at": "In one cave in Italy,",
   "props": {
-   "text": "THE STOVE. THE HEATER. THE ONLY LIGHT FOR MILES.",
-   "keys": [
-    "LIGHT"
+   "lines": [
+    {
+     "text": "NEANDERTHALS",
+     "size": 150
+    },
+    {
+     "text": "DRAGGED IN BY HYENAS",
+     "size": 96
+    }
    ],
-   "bed": "@foot:fire",
-   "size": 100
+   "tally": 9,
+   "bed": "@v2:wall_ochre_1"
   },
-  "until": "the only light for miles.",
-  "pad": 0.5
+  "until": "gnawed and dragged inside.",
+  "pad": 0.5,
+  "max": 7.4
  },
  {
   "t": "card",
-  "comp": "StudyCard",
+  "comp": "EmberType",
+  "at": "The earliest solid evidence,",
+  "props": {
+   "text": "1,000,000",
+   "sub": "YEARS OF FIRE",
+   "size": 270,
+   "subSize": 100,
+   "bed": "@foot:embers"
+  },
+  "until": "a million years old.",
+  "pad": 0.5,
+  "max": 6.0
+ },
+ {
+  "t": "card",
+  "comp": "Shot",
+  "at": "And to anything else that happens to be watching.",
+  "props": {
+   "src": "@v2:eyes_2",
+   "kb": "in",
+   "zoom": 1.2,
+   "filter": "brightness(1.25)"
+  },
+  "until": "to be watching.",
+  "pad": 0.3
+ },
+ {
+  "t": "card",
+  "comp": "OchreWall",
   "at": "recorded one hundred and seventy-four conversations",
   "props": {
-   "kicker": "THE STUDY",
-   "quote": "174 conversations recorded around Kalahari campfires",
-   "source": "WIESSNER · PNAS · 2014",
-   "noQuote": true,
-   "bed": "@img:@near"
+   "lines": [
+    {
+     "text": "174",
+     "size": 300
+    },
+    {
+     "text": "CONVERSATIONS",
+     "size": 120
+    }
+   ],
+   "bed": "@v2:wall_ochre_2"
   },
-  "until": "hunter-gatherers in the Kalahari.",
-  "pad": 0.4
+  "until": "in the Kalahari.",
+  "pad": 0.4,
+  "max": 6.2
  },
  {
   "t": "card",
-  "comp": "TalkBars",
+  "comp": "ShadowWall",
   "at": "Thirty-one percent was about economic matters,",
   "props": {
-   "title": "BY DAY, WHAT DID THEY TALK ABOUT?",
-   "day": [
+   "bed": "@v2:wall_shadow_day",
+   "firelit": false,
+   "stats": [
     {
-     "label": "ECONOMIC",
-     "pct": 31
+     "value": "31%",
+     "label": "WORK"
     },
     {
-     "label": "COMPLAINTS & GOSSIP",
-     "pct": 34
+     "value": "34%",
+     "label": "GOSSIP"
     },
     {
-     "label": "JOKES",
-     "pct": 16
-    },
-    {
+     "value": "6%",
      "label": "STORIES",
-     "pct": 6,
      "hot": true
-    },
-    {
-     "label": "OTHER",
-     "pct": 13
     }
-   ],
-   "source": "WIESSNER · PNAS · 2014"
+   ]
   },
   "until": "Six percent.",
-  "pad": 0.5
+  "pad": 0.9,
+  "marks": {
+   "s0": "Thirty-one percent",
+   "s1": "Thirty-four percent",
+   "s2": "Six percent."
+  },
+  "max": 13
  },
  {
   "t": "card",
-  "comp": "TalkBars",
+  "comp": "Shot",
+  "at": "Basically, a group chat.",
+  "props": {
+   "src": "@v2:v2_you_chat",
+   "kb": "in"
+  },
+  "until": "a group chat.",
+  "pad": 0.3
+ },
+ {
+  "t": "card",
+  "comp": "ShadowWall",
   "at": "Eighty-one percent of night talk was stories.",
   "props": {
-   "title": "AFTER DARK, EVERYTHING FLIPPED",
-   "day": [
+   "bed": "@v2:wall_shadow_night",
+   "align": "big",
+   "stats": [
     {
-     "label": "ECONOMIC",
-     "pct": 31
-    },
-    {
-     "label": "COMPLAINTS & GOSSIP",
-     "pct": 34
-    },
-    {
-     "label": "JOKES",
-     "pct": 16
-    },
-    {
+     "value": "81%",
      "label": "STORIES",
-     "pct": 6,
      "hot": true
-    },
-    {
-     "label": "OTHER",
-     "pct": 13
     }
-   ],
-   "night": [
-    {
-     "label": "STORIES",
-     "pct": 81,
-     "hot": true
-    },
-    {
-     "label": "EVERYTHING ELSE",
-     "pct": 19
-    }
-   ],
-   "source": "WIESSNER · PNAS · 2014"
+   ]
   },
-  "dur": 4.8
+  "until": "sat together and listened.",
+  "pad": 0.4,
+  "marks": {
+   "s0": "Eighty-one percent"
+  },
+  "max": 6.4
  },
  {
   "t": "card",
-  "comp": "YouThem",
+  "comp": "MatchCut",
   "at": "Every night you sit in the glow of a screen",
   "props": {
-   "you": {
-    "src": "@now:screen",
-    "tag": "YOU · 2026",
-    "line": "Strangers on a screen"
+   "a": {
+    "src": "@v2:v2_you_tv",
+    "tag": "YOU · TONIGHT"
    },
-   "them": {
+   "b": {
     "src": "@jpg:051_0",
-    "tag": "THEM · 40,000 YEARS AGO",
-    "line": "Stories by the fire"
+    "tag": "THEM · 40,000 YEARS AGO"
    }
   },
-  "until": "your campfire has a remote.",
-  "pad": 0.5
+  "until": "has a remote.",
+  "pad": 0.5,
+  "marks": {
+   "cutAt": "The only difference"
+  },
+  "max": 8.5
  },
  {
   "t": "overlay",
-  "comp": "PlaceStamp",
-  "at": "the oldest eyed needles we know of,",
+  "comp": "TitleCard",
+  "at": "from Denisova Cave in Siberia,",
   "props": {
-   "place": "DENISOVA CAVE, SIBERIA",
-   "when": "EYED NEEDLES · ~40,000 YEARS OLD"
+   "title": "Denisova Cave",
+   "sub": "EYED NEEDLES · 40,000 YEARS OLD"
   },
-  "dur": 4.5
+  "dur": 4.0,
+  "until": "forty thousand years old.",
+  "pad": 0.4
  },
  {
   "t": "card",
-  "comp": "Counter",
+  "comp": "EmberType",
   "at": "it was eleven to fourteen degrees Celsius colder than today.",
   "props": {
-   "from": 0,
-   "to": 14,
-   "prefix": "11–",
-   "suffix": "°C",
-   "label": "COLDER THAN TODAY",
-   "sub": "BULGARIA · ~45,000 YEARS AGO · PEDERZANI ET AL. 2021",
-   "bed": "@img:@near"
+   "text": "−11 TO −14°C",
+   "sub": "COLDER THAN TODAY",
+   "size": 230,
+   "subSize": 100,
+   "bed": "@foot:frost",
+   "frost": true
   },
-  "until": "Think northern Scandinavia today.",
-  "pad": 0.4
+  "until": "northern Scandinavia today.",
+  "pad": 0.4,
+  "max": 7.0
  },
  {
   "t": "overlay",
-  "comp": "PlaceStamp",
+  "comp": "TitleCard",
   "at": "Today, we call it Chauvet.",
   "props": {
-   "place": "CHAUVET CAVE, FRANCE",
-   "when": "PAINTED ~36,000 YEARS AGO"
+   "title": "Chauvet Cave",
+   "sub": "PAINTED ~36,000 YEARS AGO"
   },
-  "dur": 4.0
+  "dur": 4.2
  },
  {
   "t": "overlay",
-  "comp": "PlaceStamp",
+  "comp": "TitleCard",
   "at": "Later, in the cave of Lascaux,",
   "props": {
-   "place": "LASCAUX, FRANCE",
-   "when": "100+ STONE LAMPS · ~21,000 YEARS AGO"
+   "title": "Lascaux",
+   "sub": "100+ STONE LAMPS · ~21,000 YEARS AGO"
   },
-  "dur": 4.5
+  "dur": 4.0,
+  "until": "more than a hundred lamps.",
+  "pad": 0.4
  },
  {
   "t": "card",
-  "comp": "YouThem",
+  "comp": "MatchCut",
   "at": "A torch lasted around forty minutes.",
   "props": {
-   "you": {
+   "a": {
     "src": "@jpg:077_0",
-    "tag": "TORCH",
-    "line": "About 40 minutes"
+    "tag": "TORCH · ~40 MIN"
    },
-   "them": {
-    "src": "@foot:lamp",
-    "tag": "FAT LAMP",
-    "line": "More than an hour"
-   },
-   "source": "MEDINA-ALCAIDE ET AL. · PLOS ONE · 2021"
+   "b": {
+    "src": "@jpg:075_0",
+    "tag": "FAT LAMP · 1 HOUR+"
+   }
   },
   "until": "steady enough to paint by.",
-  "pad": 0.4
+  "pad": 0.4,
+  "marks": {
+   "cutAt": "A fat lamp"
+  },
+  "max": 7.5
  },
  {
   "t": "overlay",
-  "comp": "PlaceStamp",
+  "comp": "TitleCard",
   "at": "In Border Cave, in South Africa,",
   "props": {
-   "place": "BORDER CAVE, SOUTH AFRICA",
-   "when": "GRASS BEDS ON ASH · 200,000+ YEARS"
+   "title": "Border Cave",
+   "sub": "GRASS BEDS ON ASH · 200,000+ YEARS"
   },
-  "dur": 4.5
+  "dur": 4.6
  },
  {
   "t": "overlay",
-  "comp": "PlaceStamp",
+  "comp": "TitleCard",
   "at": "And at Sibudu Cave,",
   "props": {
-   "place": "SIBUDU CAVE, SOUTH AFRICA",
-   "when": "INSECT-REPELLING LEAVES · ~77,000 YEARS"
+   "title": "Sibudu Cave",
+   "sub": "BUG-REPELLING LEAVES · 77,000 YEARS"
   },
-  "dur": 4.5
+  "dur": 4.6
  },
  {
   "t": "card",
-  "comp": "YouThem",
-  "at": "Compare that to your bed.",
+  "comp": "MatchCut",
+  "at": "A phone six inches from your face,",
   "props": {
-   "you": {
-    "src": "@now:phone",
-    "tag": "YOU · 2026",
-    "line": "A phone six inches away"
+   "a": {
+    "src": "@v2:v2_you_bed_phone",
+    "tag": "YOU · 11 PM"
    },
-   "them": {
-    "src": "@jpg:087_1",
-    "tag": "THEM · 40,000 YEARS AGO",
-    "line": "Furs, fire, and family"
+   "b": {
+    "src": "@v2:v2_hunter_bed_furs",
+    "tag": "THEM · 10 PM"
    }
   },
-  "until": "an alarm set for six fifteen.",
-  "pad": 0.4
+  "until": "the people you trust.",
+  "pad": 0.4,
+  "marks": {
+   "cutAt": "So you lie down"
+  },
+  "max": 11
  },
  {
   "t": "card",
-  "comp": "SleepBars",
+  "comp": "CampWatch",
   "at": "On average, they fall asleep three point three hours after it.",
   "props": {
-   "title": "WHEN DO THEY FALL ASLEEP?",
-   "rows": [
+   "bed": "@v2:v2_camp_top",
+   "sleepers": [
+    [
+     0.184,
+     0.253
+    ],
+    [
+     0.327,
+     0.21
+    ],
+    [
+     0.452,
+     0.13
+    ],
+    [
+     0.646,
+     0.185
+    ],
+    [
+     0.84,
+     0.315
+    ],
+    [
+     0.792,
+     0.562
+    ],
+    [
+     0.809,
+     0.815
+    ],
+    [
+     0.552,
+     0.901
+    ],
+    [
+     0.354,
+     0.864
+    ],
+    [
+     0.202,
+     0.821
+    ],
+    [
+     0.09,
+     0.593
+    ]
+   ],
+   "mode": "sleep",
+   "counter": false,
+   "lines": [
     {
-     "label": "THEM",
-     "from": 22.1,
-     "to": 5.6,
-     "note": "asleep ~3.3 h after sunset · 5.7–7.1 h of sleep"
+     "text": "3.3 H AFTER SUNSET",
+     "hot": true
     },
     {
-     "label": "YOU",
-     "from": 23.5,
-     "to": 7,
-     "you": true,
-     "note": "a typical modern night"
-    }
-   ],
-   "marks": [
-    {
-     "at": 18.8,
-     "label": "SUNSET"
+     "text": "5.7–7.1 H OF SLEEP"
     },
     {
-     "at": 6.5,
-     "label": "SUNRISE"
+     "text": "SAME AS YOU"
     }
-   ],
-   "source": "YETISH ET AL. · CURRENT BIOLOGY · 2015"
+   ]
   },
-  "until": "That's about the same as you.",
-  "pad": 0.5
+  "until": "about the same as you.",
+  "pad": 0.5,
+  "marks": {
+   "l0": "three point three hours",
+   "l1": "five point seven",
+   "l2": "That's about the same as you."
+  },
+  "max": 10
  },
  {
   "t": "card",
-  "comp": "Words",
+  "comp": "OchreWall",
   "at": "The San and the Tsimane don't even have a word for insomnia.",
   "props": {
-   "text": "NO WORD FOR INSOMNIA",
-   "keys": [
-    "INSOMNIA"
+   "lines": [
+    {
+     "text": "NO WORD FOR",
+     "size": 130
+    },
+    {
+     "text": "INSOMNIA",
+     "size": 230
+    }
    ],
-   "bed": "@img:@near"
+   "bed": "@v2:wall_ochre_3"
   },
   "until": "it doesn't exist.",
-  "pad": 0.5
+  "pad": 0.5,
+  "max": 6.5
  },
  {
   "t": "card",
-  "comp": "SentinelRing",
+  "comp": "CampWatch",
   "at": "And in all that time, how long was the whole camp asleep",
   "props": {
-   "n": 12,
-   "title": "SOMEONE IS ALWAYS AWAKE",
-   "stat": "18 MINUTES",
-   "statSub": "ALL ASLEEP AT ONCE · 20 NIGHTS · 33 ADULTS",
-   "source": "SAMSON ET AL. · PROC. R. SOC. B · 2017"
+   "bed": "@v2:v2_camp_top",
+   "sleepers": [
+    [
+     0.184,
+     0.253
+    ],
+    [
+     0.327,
+     0.21
+    ],
+    [
+     0.452,
+     0.13
+    ],
+    [
+     0.646,
+     0.185
+    ],
+    [
+     0.84,
+     0.315
+    ],
+    [
+     0.792,
+     0.562
+    ],
+    [
+     0.809,
+     0.815
+    ],
+    [
+     0.552,
+     0.901
+    ],
+    [
+     0.354,
+     0.864
+    ],
+    [
+     0.202,
+     0.821
+    ],
+    [
+     0.09,
+     0.593
+    ]
+   ],
+   "mode": "watch",
+   "allAsleepAt": 0.42,
+   "lines": [
+    {
+     "text": "18 MINUTES",
+     "hot": true
+    },
+    {
+     "text": "IN 20 NIGHTS"
+    },
+    {
+     "text": "8 AWAKE AT ANY TIME"
+    }
+   ]
   },
-  "until": "a median of eight people were awake.",
-  "pad": 0.5
+  "until": "people were awake.",
+  "pad": 0.5,
+  "marks": {
+   "l0": "Eighteen minutes.",
+   "l1": "In twenty nights.",
+   "l2": "a median of eight"
+  },
+  "max": 11
  },
  {
-  "t": "card",
-  "comp": "StudyCard",
+  "t": "overlay",
+  "comp": "TitleCard",
   "at": "The researchers call it the sentinel hypothesis.",
   "props": {
-   "kicker": "THE SENTINEL HYPOTHESIS",
-   "quote": "Different body clocks mean someone is always on watch.",
-   "source": "SAMSON ET AL. · PROC. R. SOC. B · 2017",
-   "noQuote": true,
-   "bed": "@img:@near"
+   "title": "The sentinel hypothesis",
+   "sub": "SAMSON ET AL. · 2017",
+   "pos": "center"
   },
-  "until": "without anybody having to take a turn.",
-  "pad": 0.4
+  "dur": 4.0,
+  "until": "the sentinel hypothesis.",
+  "pad": 1.0
  },
  {
   "t": "card",
-  "comp": "YouThem",
+  "comp": "MatchCut",
   "at": "So when your grandpa is up at five in the morning,",
   "props": {
-   "you": {
-    "src": "@now:elderly man awake early",
-    "tag": "GRANDPA · 5:00 AM",
-    "line": "Not broken"
+   "a": {
+    "src": "@v2:v2_grandpa_5am",
+    "tag": "GRANDPA · 5 AM"
    },
-   "them": {
-    "src": "@now:teenager phone awake",
-    "tag": "TEENAGER · 2:00 AM",
-    "line": "On watch"
+   "b": {
+    "src": "@v2:v2_teen_2am",
+    "tag": "TEENAGER · 2 AM"
    }
   },
-  "until": "the oldest security system on Earth.",
-  "pad": 0.5
+  "until": "they're not broken.",
+  "pad": 0.4,
+  "marks": {
+   "cutAt": "and your teenage son"
+  },
+  "max": 7
  },
  {
-  "t": "card",
-  "comp": "StudyCard",
-  "at": "That idea comes from the historian Roger Ekirch,",
+  "t": "overlay",
+  "comp": "TitleCard",
+  "at": "A first sleep,",
   "props": {
-   "kicker": "THE HISTORY",
-   "quote": "First sleep. Second sleep. In hundreds of old European texts.",
-   "source": "EKIRCH · AT DAY'S CLOSE · 2005",
-   "noQuote": true,
-   "bed": "@img:@near"
+   "title": "First sleep · Second sleep",
+   "sub": "PRE-INDUSTRIAL EUROPE",
+   "pos": "center"
   },
-  "until": "in old European writing.",
+  "dur": 4.0,
+  "until": "then a second sleep.",
   "pad": 0.4
  },
  {
   "t": "card",
-  "comp": "Words",
+  "comp": "EmberType",
   "at": "Honestly, we don't know.",
   "props": {
-   "text": "VERDICT: WE DON'T KNOW (YET)",
-   "keys": [
-    "KNOW"
-   ],
-   "bed": "@img:@near"
+   "text": "WE DON'T KNOW",
+   "sub": "STILL DEBATED",
+   "size": 230,
+   "subSize": 100,
+   "bed": "@foot:embers",
+   "formAt": 22
   },
-  "until": "It's still being debated.",
-  "pad": 0.5
+  "until": "still being debated.",
+  "pad": 0.6,
+  "max": 4.4
  },
  {
   "t": "overlay",
-  "comp": "PlaceStamp",
+  "comp": "TitleCard",
   "at": "The Hadza do most of their hunting from blinds",
   "props": {
-   "place": "WATERHOLE BLINDS · TANZANIA",
-   "when": "DRY SEASON · MOSTLY AT NIGHT"
+   "title": "Waterhole blinds",
+   "sub": "HADZA · DRY SEASON · AT NIGHT"
   },
-  "dur": 4.5
+  "dur": 4.0,
+  "until": "during the dry season.",
+  "pad": 0.3
  },
  {
   "t": "card",
-  "comp": "MoonTally",
+  "comp": "OchreWall",
   "at": "In southern Africa, archaeologists found a baboon bone",
   "props": {
-   "title": "THE FIRST CALENDAR?",
-   "caption": "29 notches · about 43,000 years old",
-   "source": "LEBOMBO BONE · D'ERRICO ET AL. · PNAS 2012 · DEBATED",
-   "bed": "@jpg:129_0"
+   "lines": [
+    {
+     "text": "29 NOTCHES",
+     "size": 170
+    },
+    {
+     "text": "43,000 YEARS OLD",
+     "size": 100
+    }
+   ],
+   "tally": 29,
+   "bed": "@v2:wall_ochre_3"
   },
-  "until": "Others think it's just a tally.",
-  "pad": 0.4
- },
- {
-  "t": "overlay",
-  "comp": "PlaceStamp",
-  "at": "In France, a little carved plate",
-  "props": {
-   "place": "ABRI BLANCHARD, FRANCE",
-   "when": "30,000+ YEARS OLD · A MOON RECORD? DEBATED"
-  },
-  "dur": 5.0
+  "until": "just a tally.",
+  "pad": 0.3,
+  "max": 9
  },
  {
   "t": "card",
-  "comp": "Words",
+  "comp": "DotTrail",
+  "at": "In France, a little carved plate",
+  "props": {
+   "bed": "@file:wm_blanchard_plaque",
+   "dots": "@dots:blanchard_chain",
+   "label": "ABRI BLANCHARD · 30,000+ YEARS",
+   "startAt": 30
+  },
+  "until": "a record of the Moon.",
+  "pad": 0.5,
+  "max": 12
+ },
+ {
+  "t": "card",
+  "comp": "MatchCut",
   "at": "Your ancestors didn't need a phone to wake up.",
   "props": {
-   "text": "THEIR ALARM CLOCK WAS THE COLD",
-   "keys": [
-    "COLD"
-   ],
-   "bed": "@img:@near"
+   "a": {
+    "src": "@v2:v2_you_alarm",
+    "tag": "YOUR ALARM"
+   },
+   "b": {
+    "src": "@jpg:141_0",
+    "tag": "THEIR ALARM: THE COLD"
+   }
   },
   "until": "They had the cold.",
-  "pad": 0.6
+  "pad": 0.7,
+  "marks": {
+   "cutAt": "They had the cold."
+  },
+  "max": 5
  },
  {
   "t": "overlay",
-  "comp": "Recap",
+  "comp": "EmberWords",
   "at": "They ate.",
   "props": {
-   "title": "ALL NIGHT, THEY...",
    "items": [
-    "ATE",
+    "THEY ATE",
     "FED THE FIRE",
     "MADE CLOTHES",
     "SLEPT ~7 HOURS",
@@ -712,6 +1073,7 @@
   },
   "dur": 4.0,
   "until": "told each other stories.",
+  "pad": 0.8,
   "marks": {
    "t0": "They ate.",
    "t1": "They fed the fire.",
@@ -722,21 +1084,34 @@
  },
  {
   "t": "card",
-  "comp": "YouThem",
-  "at": "are you the early bird on watch,",
+  "comp": "MatchCut",
+  "at": "Forty thousand years later, you still do all of that.",
   "props": {
-   "you": {
-    "src": "@now:elderly coffee morning",
-    "tag": "EARLY BIRD",
-    "line": "On watch at 5 AM"
+   "a": {
+    "src": "@jpg:153_0",
+    "tag": "40,000 YEARS AGO"
    },
-   "them": {
-    "src": "@now:teen phone night",
-    "tag": "NIGHT OWL",
-    "line": "Second shift at 2 AM"
+   "b": {
+    "src": "@v2:v2_you_friends",
+    "tag": "TONIGHT"
    }
   },
-  "until": "the night owl on the second shift?",
-  "pad": 1.2
+  "until": "you still do all of that.",
+  "pad": 0.3,
+  "marks": {
+   "cutAt": "you still do"
+  },
+  "max": 4
+ },
+ {
+  "t": "card",
+  "comp": "Shot",
+  "at": "You just do it with the lights on.",
+  "props": {
+   "src": "@v2:v2_you_switch",
+   "kb": "in"
+  },
+  "until": "with the lights on.",
+  "pad": 0.4
  }
 ]

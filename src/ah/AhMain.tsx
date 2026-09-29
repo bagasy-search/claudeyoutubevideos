@@ -11,6 +11,7 @@ import { Vignette, Grain } from "../yc/Grade";
 import { LightLeak } from "../yc/NumberCard3D";
 import { NightClock, ClockBug, YouThem, Counter, StudyCard, Callout, SleepBars, SentinelRing, MoonTally, Words, PlaceStamp, Embers, TalkBars, Recap } from "./Kit";
 import { Globe3D } from "./Globe3D";
+import { EmberType, OchreWall, ShadowWall, SkyClock, CampWatch, DotTrail, MatchCut, TitleCard, Flash, Nightfall, Shot, EmberWords, FlashSeq } from "./Cine";
 import { clamp } from "./theme";
 
 export type Beat = { from: number; dur: number; src: string; start?: number; rate?: number; kb?: KB; zoom?: number; filter?: string; pos?: string; tr?: "cut" | "dissolve" };
@@ -25,9 +26,10 @@ const Prerendered: React.FC<{ src: string }> = ({ src }) => {
 
 const COMPS: Record<string, React.FC<any>> = {
   NightClock, ClockBug, YouThem, Counter, StudyCard, Callout, SleepBars, SentinelRing, MoonTally, Words, PlaceStamp, Embers, TalkBars, Recap, LightLeak, Globe3D, Prerendered,
+  EmberType, OchreWall, ShadowWall, SkyClock, CampWatch, DotTrail, MatchCut, TitleCard, Flash, Nightfall, Shot, EmberWords, FlashSeq,
 };
 const XF = 14;
-const TOP = new Set(["Embers", "LightLeak"]);
+const TOP = new Set(["Embers", "LightLeak", "EmberWords"]);
 
 export const AhCard: React.FC<{ comp: string; props: any; lens?: Record<string, number>; dur?: number }> = ({ comp, props, lens }) => {
   setClipLens(lens ?? {});
