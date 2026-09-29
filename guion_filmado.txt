@@ -1,0 +1,51 @@
+GUION FILMADO olpots — qué se ve en cada párrafo (P## = párrafo de guiones/olpots.txt; tiempos = 14,6 car/s medidos, se reajustan con el ASR real)
+Leyenda: [AG] hablado de Ole (agnes 2.5-flash) · [AV] avatar InfiniteTalk · [ST] stock real Pexels · [AR] archivo real dominio público · [I2] mano/objeto SIN cara (agnes v2.0, 2 s, ralentí) · [3D] componente 3D · [C] componente 2D propio
+
+P01 0:00-0:13  [AG] Ole hablando a cámara junto a la repisa de la cabaña, las 5 ollas detrás ("Look at that shelf") · inserto [I2] mano de Ole señalando la repisa · [3D] la repisa de campamento (OlePotShelf3D) aparece como revelación en "Five pots" con las 5 ollas girando
+P02 0:13-0:24  [AG] plano cerrado Ole ("I'd bet the coffee on it") · [I2] taza esmaltada azul sobre la estufa · sombra/silueta de 3 ollas tachadas sobre la repisa (tinta) = promesa "los 3 que NO"
+P03 0:24-0:52  lista relámpago: cada nombre de olla = un plano: [ST] hierro fundido pesado en llama · [ST] sartén de hierro friendo · [C] enlozada moteada (foto/still) · [ST] olla inox hirviendo · [ST] cacerolita con tapa. Cierra en [AG] Ole "Now I'll tell you why" · [3D] la repisa gira y se ilumina olla por olla al nombrarla
+P04 0:52-1:01  [AG] Ole encogiéndose de hombros; [C] tarjeta madera con "brands change / material, base" (props)
+P05 1:01-1:21  [C] OleFourQuestions: 4 tarjetas de lata esmaltada aparecen por pregunta (heat / spread / fix / lid) sobre la mesa de madera · [I2] mano tocando el borde de una olla · [ST] set de 12 piezas en caja (para "not how many pieces") tachado
+P06 1:21-1:36  CTA: [AG] Ole a cámara "Quick word, friend" → [C] OleCTA (portada del libro + QR real) ~6 s con la estufa de fondo → vuelta a [AG] "back to the stove"
+P07 1:48-1:57  [3D] la repisa: el Dutch oven se adelanta a cámara (OlePotShelf3D, foco en la olla 1) · [AG] Ole levantando la tapa · sello VerdictStamp aún NO
+P08 1:57-2:21  [3D] OleHeatSpreadMap: corte de la base del Dutch oven, el calor entra por todos los lados (paredes gruesas) · [ST] estofado hirviendo suave con tapa · [I2] vapor bajo la tapa
+P09 2:21-2:50  [AR] foto/grabado de época: fundición de hierro / Coalbrookdale (Wikimedia PD, licencia verificada) · [C] OleTimeline "1707 patent — sand casting" (sólo dato verificado) · [3D] Dutch oven de campamento con patas y tapa con reborde (OleDutchOven3D copiado de olbeans) se explota mostrando patas y reborde
+P10 2:50-2:58  [AG] Ole con el dedo en alto ("one thing about those coals") — loop abierto
+P11 2:58-3:32  [I2] Ole (manos) golpeando el borde con el nudillo · [C] OleBuyChecklist: prueba del giro (mesa, olla que se balancea), anillo/golpe del nudillo, grietas/picaduras vs óxido superficial (palomita/cruz sobre madera) · [ST] manos comprando en mercado de pulgas
+P12 3:32-4:07  [3D] OleCoalMap: vista cenital del Dutch oven de 12 pulgadas con 24 briquetas: 16 arriba / 8 abajo, número 350 °F, giro de 1/4 cada 15 min (props) · [ST] brasas/briquetas · [I2] mano con guante girando la tapa
+P13 4:07-4:31  [AG] Ole con guantes de cuero levantando la tapa lejos de la cara · [C] OleBookPage p.10 "Cast Iron & Fire Safety" (mención rápida, sin zoom largo) · [ST] humo/fuego exterior
+P14 4:31-4:52  [AG] Ole mirando una olla nueva · [C] OleAcidNote (tomate/vinagre en olla nueva: "first weeks") — tarjeta de lata
+P15 4:52-5:14  [C] OleBookPage p.25 No-Knead Dutch Oven Bread con zoom punto por punto ("30 min preheat", "parchment") · [ST] pan sacándose de una olla de hierro · sello VerdictStamp BUY sobre esmalte
+P16 5:14-5:26  [AG] Ole con dos dedos ("two little habits") — loop abierto
+P17 5:26-5:49  [3D] repisa: sartén de 12" al frente, cuenta de peso "8 lb" en balanza de cocina (OlePotSpecCard) · [ST] huevos/papas friéndose · [AG] Ole revolviendo
+P18 5:49-5:57  [I2] sartén pasa del fogón al horno 450 °F (OleOvenDial: dial gira a 450)
+P19 5:57-6:25  [AG] Ole lavando la sartén tibia con cepillo y jabón suave · [I2] agua caliente sobre hierro · [C] OleMythCard "soap? — lye soap era" (cuerda de la vieja regla) · [I2] secando sobre el fogón, aceite fino
+P20 6:25-6:37  [C] dos íconos tachados sobre madera: fregadero (remojo) y lavavajillas · payoff del loop de P16
+P21 6:37-7:06  [C] OleSeasoningSteps: 1 gota de aceite, "wipe it off like you made a mistake", horno 450-500 °F boca abajo 1 h con papel de aluminio debajo (props que coinciden con el add-on) · [I2] mano limpiando con papel · [ST] horno con humo suave
+P22 7:06-7:17  [AG] Ole "give it five minutes on the fire" · [3D] HeatSpreadMap de la sartén (lento al calentar, lento al enfriar)
+P23 7:17-7:43  [AR]/[ST] mercado de pulgas, estantes con sartenes viejas (foto PD Library of Congress si hay; si no, stock) · [C] OleBuyChecklist 2 (fondo alabeado, grieta del borde = NO) · mención del add-on (voz sola, sin lámina)
+P24 7:43-7:56  [C] OleRecipeStrip: tres recetas del libro con esta sartén (cornbread p.22, loggers' skillet p.49, dried-apple pie p.59) como tarjetas de libreta · sello BUY
+P25 7:56-8:06  [AG] Ole con una olla enlozada moteada en la mano ("looks like it belongs in a museum") — loop abierto
+P26 8:06-8:26  [ST]/[AR] olla enlozada moteada en cocina de campamento (foto Wikimedia PD) · [3D] corte del enlozado: acero + capa de vidrio fundido (OlePotShelf3D, olla 3 gira, capas etiquetadas por props)
+P27 8:26-8:43  [I2] Ole levantando la olla enlozada con un dedo · [C] OleReactCheck: tomate, vinagre, chucrut no reaccionan (etiquetas)
+P28 8:43-8:56  [ST] olla grande de sopa/frijoles para mucha gente, mesa larga de campamento · [C] "12 qt+" en OlePotSpecCard
+P29 8:56-9:22  [I2] olla golpeando la canilla; esmalte que salta (v2.0) · [C] OleChipMap: astilla afuera (OK) vs adentro (retirar) sobre esmalte blanco · payoff de P25
+P30 9:22-9:42  [I2] llama sobre olla vacía = ✗; agua primero = ✓ · [AG] Ole pasando la mano por el interior liso
+P31 9:42-10:10  [C] OleBookPage p.12 "Ole's Camp Pot Beans" con zoom en "BIG CREW: x4 in a 16-qt stockpot" y en "10 minutes hard boil" · [ST] frijoles hirviendo · sello BUY
+P32 10:10-10:21  [AG] Ole "the metal in it is a bad conductor" — loop abierto
+P33 10:21-10:45  [3D] OleHeatSpreadMap comparativo (acero inox delgado vs base con núcleo): mapa de calor por props, hot-spot; valor "aluminio > 10x" con fuente en pie · [ST] sopa que se pega abajo
+P34 10:45-11:11  [3D] corte de la base "sandwich": inox / aluminio / inox (OlePotShelf3D olla 4) · [I2] mano dando vuelta la olla y mirando la base
+P35 11:11-11:32  [I2] estropajo de acero sobre inox; olla que sale de la hornalla al horno · [C] OleTough: "no chip / no rust like the others / acid OK"
+P36 11:32-11:56  [ST] caldo hirviendo suave 8 h (time-lapse) · [C] OleBookPage p.36 Camp Bone Broth (cita corta) · sello BUY con condición
+P37 11:56-12:03  [AG] Ole con la cacerolita en la mano — loop abierto
+P38 12:03-12:20  [ST] avena en cacerola, arroz, gravy, leche · [3D] la repisa: olla 5 al frente
+P39 12:20-12:41  [I2] leche que hierve y se derrama / se pega en cacerola fina vs gruesa · [C] OleBookPage p.50 oatmeal y p.60 rice pudding como tarjetas (no lámina completa)
+P40 12:41-12:58  [I2] probar la tapa: balancea/no ajusta vs ajusta · [C] OleLidTest ✓/✗
+P41 12:58-13:03  sello BUY · [C] PriceRange relativo $ (como el libro, no dólares)
+P42 13:03-13:15  [AG] Ole serio, deja la taza · [C] tres tachones de tinta sobre la repisa (los 3 NO)
+P43 13:14-13:15  corte a negro-madera / whip
+P44 13:15-14:02  [I2] sartén antiadherente rayada · [C] OleTempLadder: escala de temperatura, 500 °F PTFE marcado (props, fuente al pie) · [ST] hornalla al rojo con sartén vacía · pájaro en jaula NO se muestra (sólo mención de voz) · sello SKIP
+P45 14:02-14:39  [3D] OleHeatSpreadMap: olla de aluminio delgada con hot-spot sobre la llama + base alabeada que se balancea · [I2] olla que se balancea en la hornalla · sello SKIP
+P46 14:39-15:29  [AR]/[ST] cerámica esmaltada artesanal de mercadillo (naranja/rojo/amarillo) · [C] OleLeadCard: "handmade / flea market / bright orange-red-yellow / acidic food leaches more" con fuente FDA al pie · sello SKIP
+P47 15:29-15:49  [3D] la repisa completa vuelve: 5 sellos BUY en las 5 ollas, 3 SKIP en un rincón · [AG] Ole
+P48 15:49-16:09  [AV]/[AG] Ole cierre a cámara, pregunta para comentar · [C] OleCTA cierre (portada, "link in description") · fundido con la taza esmaltada
