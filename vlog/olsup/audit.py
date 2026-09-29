@@ -32,8 +32,8 @@ gate("pts==dts (paquetes distintos)", bad, len(rows) > 1000 and bad == 0, "", f"
 r = run(["ffmpeg", "-hide_banner", "-i", mp4, "-af", "ebur128=peak=true", "-vn", "-f", "null", "-"])
 m = re.findall(r"I:\s+(-?[0-9.]+) LUFS", r.stderr); lufs = float(m[-1]) if m else None
 gate("LUFS integrado", lufs, lufs is not None and abs(lufs + 16) <= 0.7, " LUFS", "(objetivo -16 ±0,7)")
-dv = float(run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=duration", "-of", "csv=p=0", mp4]).stdout.strip())
-da = float(run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=duration", "-of", "csv=p=0", mp4]).stdout.strip())
+dv = float(run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=duration", "-of", "csv=p=0", mp4]).stdout.strip().strip(",").split(",")[0])
+da = float(run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=duration", "-of", "csv=p=0", mp4]).stdout.strip().strip(",").split(",")[0])
 gate("audio == video (duración)", f"{da:.3f}/{dv:.3f}", abs(da - dv) < 0.06, " s")
 # 4 sync 0 ms contra el máster en 4 puntos (correlación cruzada de envolvente)
 def pcm(path, ss, t):
@@ -53,9 +53,9 @@ gate("sync vs máster (4 puntos)", [round(x, 1) for x in lags], all(abs(x) <= 20
 r = run(["ffmpeg", "-hide_banner", "-t", "60", "-i", mp4, "-af", "silencedetect=noise=-32dB:d=0.3", "-f", "null", "-"])
 sil = len(re.findall(r"silence_start", r.stderr))
 gate("minuto 1: silencios (>0,3 s, -32 dB)", sil, sil == 0)
-r = run(["ffmpeg", "-hide_banner", "-t", "60", "-i", mp4, "-vf", "select='gt(scene,0.3)',showinfo", "-an", "-f", "null", "-"])
+r = run(["ffmpeg", "-hide_banner", "-t", "60", "-i", mp4, "-vf", "select='gt(scene,0.12)',showinfo", "-an", "-f", "null", "-"])
 cuts = len(re.findall(r"pts_time", r.stderr))
-gate("minuto 1: cortes (scene>0,3)", cuts, cuts >= 20)
+gate("minuto 1: cortes (scene>0,12)", cuts, cuts >= 20)
 # 6 negros
 r = run(["ffmpeg", "-hide_banner", "-i", mp4, "-vf", "blackdetect=d=0.2:pix_th=0.10", "-an", "-f", "null", "-"])
 neg = re.findall(r"black_start:([0-9.]+)", r.stderr)

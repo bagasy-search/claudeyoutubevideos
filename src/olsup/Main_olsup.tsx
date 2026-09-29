@@ -8,8 +8,8 @@ import { rnd } from "./OleSupTheme";
 import { OleCookhouse3D } from "./OleCookhouse3D";
 import { OleBeanhole3D } from "./OleBeanhole3D";
 import { OleCountdown, OleCountdownCard } from "./OleCountdown";
-import { OleSupperCard, OleTrick, OleFact, OleTwoCards, OleCTA, OleArchivePhoto } from "./OleCards";
-import { OleBookPage } from "./OleBook";
+import { OleSupperCard, OleTrick, OleFact, OleTwoCards, OleArchivePhoto } from "./OleCards";
+import { OleBookPage, OleCTA } from "./OleBook";
 import { OleCalorieMeter, OleDayClock } from "./OleGauges";
 import { OleNameTag, OleNote, OleArrow, OleComments, OleAsk, OleSubscribe } from "./OleOverlays";
 
