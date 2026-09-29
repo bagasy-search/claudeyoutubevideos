@@ -89,8 +89,14 @@ const CUES = [], CAM = [], SFX = [];
 const sfx = (fr, src, vol = 0.5, d = 60) => SFX.push({ key: `sfx${SFX.length}`, from: Math.max(0, fr), dur: d, src: "sfx/" + src, vol });
 for (const [i, q] of CQ.entries()) {
   if (process.env.SCENES && !CLIPAT[q.at]) continue;
-  const g = wordAt(q.at, q.w, q.nth) + (q.off || 0), fr = Math.round(g * FPS);
-  const d = Math.round((q.dur || 3) * FPS);
+  const g = wordAt(q.at, q.w, q.nth) + (q.off || 0); let fr = Math.round(g * FPS);
+  let d = Math.round((q.dur || 3) * FPS);
+  // lo que AMPLÍA o CONGELA el video de abajo no puede pasarse al plano siguiente (se vería otra toma en la lupa)
+  const P0 = q.props || {}, A0 = CLIPAT[q.at];
+  if ((P0.src === "@base") && A0 && A0.c) {
+    const end = Math.round((A0.vg + A0.c.vdur) * FPS) - 2, ini = Math.round(A0.vg * FPS) + 2;
+    if (fr + d > end) { const want = Math.min(d, 75); d = Math.max(end - fr, 0); if (d < want) { fr = Math.max(ini, end - want); d = end - fr; } }
+  }
   const props = JSON.parse(JSON.stringify(q.props || {}));
   if (props.src === "@base" || (props.left && props.left.src === "@base")) { // cuadro exacto del video de abajo
     const s = segAt(fr); props.src = s.src; props.startFrom = s.startFrom + (fr - s.from); if (q.kind === "TfbFreeze") props.frame = props.startFrom + (props.freezeOff || 0) * FPS | 0;

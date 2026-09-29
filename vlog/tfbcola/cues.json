@@ -520,11 +520,11 @@
     {
      "f": 0,
      "x": 50,
-     "y": 60
+     "y": 62
     }
    ],
    "lensAt": {
-    "x": 76,
+    "x": 78,
     "y": 36
    },
    "zoom": 2.6,
@@ -796,31 +796,21 @@
  },
  {
   "at": "b055",
-  "w": "corta",
-  "kind": "TfbMagnifier",
-  "dur": 3.6,
+  "kind": "TfbScribble",
+  "dur": 3.0,
   "props": {
-   "src": "@base",
-   "path": [
-    {
-     "f": 0,
-     "x": 50,
-     "y": 56
-    },
-    {
-     "f": 100,
-     "x": 54,
-     "y": 52
-    }
-   ],
-   "lensAt": {
-    "x": 76,
-    "y": 38
+   "kind": "circle",
+   "center": {
+    "x": 55,
+    "y": 35
    },
-   "zoom": 2.2,
-   "r": 200,
+   "rx": 18,
+   "ry": 16,
    "label": "se corta",
-   "labelSide": "left"
+   "labelAt": {
+    "x": 55,
+    "y": 15
+   }
   }
  },
  {
@@ -908,13 +898,13 @@
    "path": [
     {
      "f": 0,
-     "x": 50,
-     "y": 55
+     "x": 52,
+     "y": 45
     }
    ],
    "lensAt": {
-    "x": 24,
-    "y": 40
+    "x": 20,
+    "y": 30
    },
    "zoom": 2.0,
    "r": 200,
@@ -970,25 +960,21 @@
  {
   "at": "b069",
   "w": "queso",
-  "kind": "TfbMagnifier",
+  "kind": "TfbScribble",
   "dur": 3.4,
   "props": {
-   "src": "@base",
-   "path": [
-    {
-     "f": 0,
-     "x": 52,
-     "y": 62
-    }
-   ],
-   "lensAt": {
-    "x": 78,
-    "y": 36
+   "kind": "circle",
+   "center": {
+    "x": 37,
+    "y": 55
    },
-   "zoom": 2.2,
-   "r": 200,
+   "rx": 14,
+   "ry": 15,
    "label": "se desgrana",
-   "labelSide": "left"
+   "labelAt": {
+    "x": 37,
+    "y": 34
+   }
   }
  },
  {
@@ -1075,30 +1061,21 @@
  {
   "at": "b087",
   "w": "lisa",
-  "kind": "TfbMagnifier",
+  "kind": "TfbScribble",
   "dur": 4.2,
   "props": {
-   "src": "@base",
-   "path": [
-    {
-     "f": 0,
-     "x": 55,
-     "y": 55
-    },
-    {
-     "f": 110,
-     "x": 55,
-     "y": 64
-    }
-   ],
-   "lensAt": {
-    "x": 24,
-    "y": 38
+   "kind": "circle",
+   "center": {
+    "x": 47,
+    "y": 40
    },
-   "zoom": 2.3,
-   "r": 210,
+   "rx": 8,
+   "ry": 20,
    "label": "como miel",
-   "labelSide": "right"
+   "labelAt": {
+    "x": 62,
+    "y": 20
+   }
   },
   "sfx": "camara_zoom,_sonido__#1-1780923760541.mp3",
   "vol": 0.35
@@ -1226,13 +1203,13 @@
    "path": [
     {
      "f": 0,
-     "x": 50,
-     "y": 56
+     "x": 40,
+     "y": 78
     }
    ],
    "lensAt": {
     "x": 78,
-    "y": 34
+    "y": 35
    },
    "zoom": 2.4,
    "r": 200,
@@ -1554,16 +1531,16 @@
     {
      "t": "PARA AFUERA:",
      "style": "white",
-     "size": 84
+     "size": 70
     },
     {
      "t": "LA DE FERRETERÍA",
      "style": "yellowbox",
-     "size": 84
+     "size": 70
     }
    ],
-   "x": 72,
-   "y": 20,
+   "x": 66,
+   "y": 26,
    "scrim": false
   }
  },
@@ -1650,25 +1627,21 @@
  {
   "at": "b148",
   "w": "rompió",
-  "kind": "TfbMagnifier",
+  "kind": "TfbScribble",
   "dur": 3.6,
   "props": {
-   "src": "@base",
-   "path": [
-    {
-     "f": 0,
-     "x": 50,
-     "y": 55
-    }
-   ],
-   "lensAt": {
-    "x": 76,
-    "y": 36
+   "kind": "circle",
+   "center": {
+    "x": 23,
+    "y": 38
    },
-   "zoom": 2.4,
-   "r": 210,
+   "rx": 10,
+   "ry": 17,
    "label": "¡al lado!",
-   "labelSide": "left"
+   "labelAt": {
+    "x": 23,
+    "y": 16
+   }
   }
  },
  {
@@ -1680,15 +1653,16 @@
     {
      "t": "SE ROMPIÓ LA MADERA",
      "style": "white",
-     "size": 96
+     "size": 88
     },
     {
      "t": "LA COLA NO",
      "style": "redbox",
-     "size": 104
+     "size": 88
     }
    ],
-   "y": 22
+   "y": 19,
+   "tilt": -1
   },
   "sfx": "winner_chime.mp3",
   "vol": 0.4
@@ -1703,15 +1677,16 @@
     {
      "t": "EL ERROR",
      "style": "white",
-     "size": 100
+     "size": 88
     },
     {
      "t": "DE LAS 24 HORAS",
      "style": "redbox",
-     "size": 94
+     "size": 88
     }
    ],
-   "y": 22
+   "y": 19,
+   "tilt": -1
   },
   "cam": "push",
   "camDur": 90,
@@ -1761,25 +1736,21 @@
  {
   "at": "b156",
   "w": "grasosa",
-  "kind": "TfbMagnifier",
+  "kind": "TfbScribble",
   "dur": 4.0,
   "props": {
-   "src": "@base",
-   "path": [
-    {
-     "f": 0,
-     "x": 50,
-     "y": 52
-    }
-   ],
-   "lensAt": {
-    "x": 24,
-    "y": 38
+   "kind": "circle",
+   "center": {
+    "x": 74,
+    "y": 60
    },
-   "zoom": 2.4,
-   "r": 210,
+   "rx": 12,
+   "ry": 24,
    "label": "grasosa, opaca",
-   "labelSide": "right"
+   "labelAt": {
+    "x": 74,
+    "y": 32
+   }
   }
  },
  {
@@ -1841,15 +1812,15 @@
   "props": {
    "kind": "circle",
    "center": {
-    "x": 50,
-    "y": 50
+    "x": 12,
+    "y": 45
    },
-   "rx": 16,
-   "ry": 12,
+   "rx": 9,
+   "ry": 14,
    "label": "grieta o agujero",
    "labelAt": {
-    "x": 50,
-    "y": 32
+    "x": 22,
+    "y": 24
    }
   }
  },
@@ -1948,5 +1919,40 @@
   "off": 2.15,
   "sfx": "impacto_hit.mp3",
   "vol": 0.5
+ },
+ {
+  "at": "b122",
+  "off": 0.3,
+  "kind": "TfbFreeze",
+  "dur": 7.0,
+  "props": {
+   "src": "@base",
+   "freezeOff": 0.0,
+   "tag": "ANTES DE BARNIZAR"
+  },
+  "sfx": "universfield-camera-shutter-199580.mp3",
+  "vol": 0.4
+ },
+ {
+  "at": "b122",
+  "off": 0.8,
+  "kind": "TfbScribble",
+  "dur": 6.4,
+  "props": {
+   "kind": "underline",
+   "from": {
+    "x": 30,
+    "y": 80
+   },
+   "to": {
+    "x": 70,
+    "y": 78
+   },
+   "label": "raspa y lija",
+   "labelAt": {
+    "x": 50,
+    "y": 74
+   }
+  }
  }
 ]

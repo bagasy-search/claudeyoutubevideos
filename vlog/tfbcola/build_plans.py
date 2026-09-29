@@ -94,6 +94,9 @@ for sc in BJ['scenes']:
                             'prompt': 'Same photo, same place, same framing, a few seconds later: ' + kp + '.' + KEEP + ((' ' + NB + ' The neighbour stays where he is, listening, silent.') if nb else '')})
             act = b['A'] + '.' + (' The neighbour (fourth reference image) stays where he is, listening, silent.' if nb else '')
             clips.append({'id': t['id'], 'a': f'K{n-1}', 'b': f'K{n}', 'audio': t['audio'], 'text': t['text'], 'action': act, **({'refs': ['W']} if nb else {})})
+    if sid == 'S3':  # b026 salió 3 veces con labios de otra frase (acción de 3 pasos): acción simple
+        for c in clips:
+            if c['id'] == 'b026': c['action'] = 'he talks to the lens with small natural gestures of his right hand holding the flat brush, the glued boards resting on the bench in front of him, a simple calm movement.'
     if sid == 'S7':  # la hoja que muestra = la FICHA real (se pasa como ref: se ve la página en su mano)
         for a in anchors:
             if a['id'] in ('K1', 'K2'):
