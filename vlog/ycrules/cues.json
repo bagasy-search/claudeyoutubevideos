@@ -1,0 +1,2338 @@
+[
+ {
+  "t": "card",
+  "comp": "PrintPush",
+  "at": "Picture a Monday morning in October, 1956.",
+  "props": {
+   "src": "@jpg:0",
+   "others": [
+    "@jpg:1",
+    "@jpg:2",
+    "@jpg:3"
+   ]
+  },
+  "until": "October, 1956.",
+  "pad": 0.2,
+  "after": "@jpg:0"
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "A nine-year-old boy runs",
+  "props": {
+   "place": "MONDAY, 8:32 A.M.",
+   "date": "OCTOBER 1956"
+  },
+  "dur": 3.4
+ },
+ {
+  "t": "card",
+  "comp": "PrincipalDoor3D",
+  "at": "And standing just inside them",
+  "props": {
+   "next": "@after",
+   "label": "PRINCIPAL"
+  },
+  "until": "He doesn't say a word.",
+  "pad": 0.2
+ },
+ {
+  "t": "card",
+  "comp": "PrintPush",
+  "at": "He's holding something flat and wooden",
+  "props": {
+   "src": "@jpg:3",
+   "others": [
+    "@jpg:11",
+    "@jpg:10"
+   ]
+  },
+  "until": "drilled through it.",
+  "pad": 0.2,
+  "after": "@jpg:3"
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "still legal in seventeen states",
+  "props": {
+   "text": "Still legal in 17 states. Right now.",
+   "keys": [
+    "17",
+    "now."
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 120
+  },
+  "until": "right now.",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "BellFlash",
+  "at": "So I went back to the real rule books",
+  "props": {},
+  "dur": 0.6,
+  "snap": "flash"
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "Illegal. Banned",
+  "props": {
+   "verdict": "ILLEGAL",
+   "bed": "@jpg:13",
+   "at": 4,
+   "rot": -6
+  },
+  "dur": 1.5
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "Banned in most states.",
+  "props": {
+   "verdict": "BANNED",
+   "bed": "@jpg:10",
+   "at": 4,
+   "rot": -6,
+   "line2": "IN MOST STATES"
+  },
+  "dur": 1.5
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "Against school policy.",
+  "props": {
+   "verdict": "POLICY",
+   "bed": "@jpg:12",
+   "at": 4,
+   "rot": -6
+  },
+  "dur": 1.5
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "Or just gone.",
+  "props": {
+   "verdict": "GONE",
+   "bed": "@jpg:9",
+   "at": 4,
+   "rot": -6
+  },
+  "dur": 1.5
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Let's open the book.",
+  "props": {
+   "n": 25,
+   "rule": "No chewing gum. Ever.",
+   "verdict": "GONE",
+   "verdictText": "MOSTLY",
+   "angle": 1,
+   "stamp": false,
+   "flips": 4,
+   "intro": true
+  },
+  "until": "Ever.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "No chewing gum.",
+   "typeTo": {
+    "p": "Ever.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "In 1952, the student handbook at the Montreat School",
+  "props": {
+   "place": "MONTREAT, NORTH CAROLINA",
+   "date": "1952"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "chewing gum is not to be used in classes.",
+  "props": {
+   "masthead": "THE MONTREAT SCHOOL",
+   "date": "STUDENT HANDBOOK · 1952-53",
+   "headline": "“Chewing gum is not to be used in classes.”",
+   "kind": "law",
+   "photo": "@img:@near"
+  },
+  "until": "not to be used in classes.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "The verdict: just gone, mostly.",
+  "props": {
+   "n": 25,
+   "rule": "No chewing gum. Ever.",
+   "verdict": "GONE",
+   "verdictText": "MOSTLY",
+   "angle": 3,
+   "typed": true
+  },
+  "until": "just gone, mostly.",
+  "pad": 0.5,
+  "marks": {
+   "stampAt": {
+    "p": "just",
+    "off": 4
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number twenty-four.",
+  "props": {
+   "n": 24,
+   "rule": "Walk in single file. Keep to the right. No talking.",
+   "verdict": "GONE",
+   "verdictText": "HALF GONE",
+   "angle": 0,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "don't say a word.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Walk in single file,",
+   "typeTo": {
+    "p": "don't say a word.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "At St. Petersburg High School in Florida,",
+  "props": {
+   "place": "ST. PETERSBURG, FLORIDA",
+   "date": "1950"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "the 1950 handbook wrote it like a traffic law:",
+  "props": {
+   "masthead": "ST. PETERSBURG HIGH SCHOOL",
+   "date": "STUDENT HANDBOOK · 1950-51",
+   "headline": "“Traffic must be single file to the right of these lines.”",
+   "kind": "law",
+   "photo": "@img:@near"
+  },
+  "until": "right of these lines.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: just gone, or at least half gone.",
+  "props": {
+   "verdict": "GONE",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": -8,
+   "line2": "HALF GONE"
+  },
+  "until": "at least half gone.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "just",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number twenty-three.",
+  "props": {
+   "n": 23,
+   "rule": "Boys use the boys' door. Girls use the girls' door.",
+   "verdict": "GONE",
+   "verdictText": "NEVER A LAW",
+   "angle": 3,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "Girls use the girls' door.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Boys use the boys' door.",
+   "typeTo": {
+    "p": "Girls use the girls' door.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "At the Elmwood School in East Bridgewater,",
+  "props": {
+   "place": "EAST BRIDGEWATER, MASS.",
+   "date": "CLASS OF 1954"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "overlay",
+  "comp": "BellFlash",
+  "at": "ringing a hand bell at the girls' door,",
+  "props": {},
+  "dur": 0.6,
+  "snap": "flash"
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: just gone. There was never a law to repeal.",
+  "props": {
+   "verdict": "GONE",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": 9,
+   "line2": "NEVER A LAW"
+  },
+  "until": "never a law to repeal.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "just",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "ChalkWipe",
+  "at": "Number twenty-two.",
+  "props": {},
+  "dur": 1.0,
+  "snap": "cut"
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number twenty-two.",
+  "props": {
+   "n": 22,
+   "rule": "Morning inspection: hands flat on the desk.",
+   "verdict": "GONE",
+   "verdictText": null,
+   "angle": 2,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "Hands flat on the desk.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Morning inspection.",
+   "typeTo": {
+    "p": "Hands flat on the desk.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "There's a famous photograph from 1917 by Lewis Hine,",
+  "props": {
+   "text": "“Daily inspection of teeth and finger nails.” Lewis Hine, 1917",
+   "keys": [
+    "daily",
+    "inspection",
+    "1917"
+   ],
+   "bed": "@img:@near",
+   "align": "left"
+  },
+  "until": "teeth and finger nails.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: just gone. No law forbids it,",
+  "props": {
+   "verdict": "GONE",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": -5
+  },
+  "until": "no teacher does it anymore.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "just",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number twenty-one.",
+  "props": {
+   "n": 21,
+   "rule": "No dungarees.",
+   "verdict": "GONE",
+   "verdictText": "DRESS CODES STILL LEGAL",
+   "angle": 1,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "Blue jeans were work clothes.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "No dungarees.",
+   "typeTo": {
+    "p": "Blue jeans were work clothes.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "As late as 1967, a New Hampshire high school handbook",
+  "props": {
+   "masthead": "TIMBERLANE REGIONAL HIGH SCHOOL",
+   "date": "PLAISTOW, N.H. · HANDBOOK · 1967",
+   "headline": "“Sport shirts may be worn, but fully buttoned.”",
+   "kind": "law",
+   "photo": "@img:@near"
+  },
+  "until": "but fully buttoned.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: just gone. Dress codes are still legal,",
+  "props": {
+   "verdict": "GONE",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": 6,
+   "line2": "DRESS CODES STILL LEGAL"
+  },
+  "until": "still ban jeans.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "just",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "But walk into almost any American classroom today",
+  "props": {
+   "then": {
+    "src": "@img:@near",
+    "year": "1956"
+   },
+   "now": {
+    "src": "@now:students jeans classroom",
+    "label": "TODAY"
+   },
+   "caption": "Count the dungarees."
+  },
+  "until": "Including the teacher.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "DetentionSlip",
+  "at": "Let's stop for a second",
+  "props": {
+   "reason": "Broke rules 25 through 21",
+   "hours": "5",
+   "date": "Oct. 8, 1956",
+   "count": "5 OF 25",
+   "note": "One week!",
+   "bed": "@img:@near"
+  },
+  "until": "a lot longer.",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "ChalkWipe",
+  "at": "Number twenty. Clean your plate.",
+  "props": {},
+  "dur": 1.0,
+  "snap": "cut"
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number twenty. Clean your plate.",
+  "props": {
+   "n": 20,
+   "rule": "Clean your plate.",
+   "verdict": "GONE",
+   "verdictText": "OFFER VS. SERVE · 1975",
+   "angle": 0,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "Clean your plate.",
+  "pad": 1.2,
+  "marks": {
+   "typeFrom": "Clean your plate.",
+   "typeTo": {
+    "p": "Clean your plate.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "and in 1947,",
+  "props": {
+   "place": "WASHINGTON, D.C.",
+   "date": "1947"
+  },
+  "dur": 3.2
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "Period. The verdict: just gone.",
+  "props": {
+   "verdict": "GONE",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": -8,
+   "line2": "OFFER VS. SERVE · 1975"
+  },
+  "until": "just gone.",
+  "pad": 0.9,
+  "marks": {
+   "at": {
+    "p": "just",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today, the rule is almost the reverse.",
+  "props": {
+   "then": {
+    "src": "@img:@near",
+    "year": "1955"
+   },
+   "now": {
+    "src": "@now:school cafeteria lunch tray",
+    "label": "TODAY"
+   },
+   "caption": "Take only what you'll eat."
+  },
+  "until": "Take only what you'll eat.",
+  "pad": 0.5
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number nineteen.",
+  "props": {
+   "n": 19,
+   "rule": "Practice your ovals. Every single day.",
+   "verdict": "GONE",
+   "verdictText": "CURSIVE IS BACK",
+   "angle": 3,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "Every single day.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Practice your ovals.",
+   "typeTo": {
+    "p": "Every single day.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: just gone, and then a twist.",
+  "props": {
+   "verdict": "GONE",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": 9,
+   "line2": "CURSIVE IS BACK"
+  },
+  "until": "and then a twist.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "just",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "About two dozen states require cursive again.",
+  "props": {
+   "text": "About two dozen states now require cursive again.",
+   "keys": [
+    "two",
+    "dozen",
+    "cursive"
+   ],
+   "bed": "@img:@near",
+   "align": "left"
+  },
+  "until": "require cursive again.",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "New Jersey signed its law",
+  "props": {
+   "place": "NEW JERSEY",
+   "date": "JANUARY 2026"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "overlay",
+  "comp": "ChalkWipe",
+  "at": "Number eighteen.",
+  "props": {},
+  "dur": 1.0,
+  "snap": "cut"
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number eighteen.",
+  "props": {
+   "n": 18,
+   "rule": "When you see the flash: duck and cover.",
+   "verdict": "GONE",
+   "verdictText": null,
+   "angle": 2,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "duck and cover.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "When you see the flash,",
+   "typeTo": {
+    "p": "duck and cover.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "overlay",
+  "comp": "BellFlash",
+  "at": "In January 1952, a cartoon turtle",
+  "props": {},
+  "dur": 0.6,
+  "snap": "flash"
+ },
+ {
+  "t": "card",
+  "comp": "Projector3D",
+  "at": "The government film Duck and Cover",
+  "props": {
+   "screen": "@arch:18:0",
+   "bed": "@img:@near",
+   "caption": "Duck and Cover · 1952"
+  },
+  "until": "backs of their necks.",
+  "pad": 0.3
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: just gone. The civil defense program",
+  "props": {
+   "verdict": "GONE",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": -5
+  },
+  "until": "atomic flashes today.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "just",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number seventeen.",
+  "props": {
+   "n": 17,
+   "rule": "Write with your right hand.",
+   "verdict": "GONE",
+   "verdictText": "NO LAW NEEDED",
+   "angle": 1,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "Write with your right hand.",
+  "pad": 1.0,
+  "marks": {
+   "typeFrom": "Write with your right hand.",
+   "typeTo": {
+    "p": "Write with your right hand.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChalkBars",
+  "at": "In America, the share of people who write left-handed",
+  "props": {
+   "title": "Americans who write left-handed",
+   "bars": [
+    {
+     "label": "BORN c. 1900",
+     "value": 3,
+     "display": "≈ 3%"
+    },
+    {
+     "label": "BORN c. 1950 AND LATER",
+     "value": 11,
+     "display": "≈ 11%",
+     "hot": true
+    }
+   ]
+  },
+  "until": "stopped fighting it.",
+  "pad": 0.3
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: just gone. No law was ever needed.",
+  "props": {
+   "verdict": "GONE",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": 6,
+   "line2": "NO LAW NEEDED"
+  },
+  "until": "No law was ever needed.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "just",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number sixteen.",
+  "props": {
+   "n": 16,
+   "rule": "Girls wear dresses. Slacks are not school clothes.",
+   "verdict": "ILLEGAL",
+   "verdictText": "IN 5 STATES · 2022",
+   "angle": 0,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "Slacks are not school clothes.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Girls wear dresses.",
+   "typeTo": {
+    "p": "Slacks are not school clothes.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "In March 1942, a sixteen-year-old in Brooklyn",
+  "props": {
+   "place": "BROOKLYN, NEW YORK",
+   "date": "MARCH 1942"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "A 1967 New Hampshire handbook",
+  "props": {
+   "masthead": "TIMBERLANE REGIONAL HIGH SCHOOL",
+   "date": "PLAISTOW, N.H. · HANDBOOK · 1967",
+   "headline": "“Slacks and shorts are not acceptable as regular school wear.”",
+   "kind": "law",
+   "photo": "@img:@near"
+  },
+  "until": "regular school wear.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "The verdict: illegal in five states,",
+  "props": {
+   "n": 16,
+   "rule": "Girls wear dresses. Slacks are not school clothes.",
+   "verdict": "ILLEGAL",
+   "verdictText": "IN 5 STATES · 2022",
+   "angle": 2,
+   "typed": true
+  },
+  "until": "everywhere else.",
+  "pad": 0.5,
+  "marks": {
+   "stampAt": {
+    "p": "illegal",
+    "off": 4
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "CourtRuling3D",
+  "at": "In 2022, a federal appeals court",
+  "props": {
+   "caseName": "Peltier v. Charter Day School",
+   "cite": "37 F.4th 104 (en banc)",
+   "year": "2022",
+   "lines": [
+    "Decided June 14, 2022.",
+    "Holding: the skirts requirement for girls violates the Equal Protection Clause.",
+    "Certiorari denied, June 26, 2023."
+   ],
+   "highlight": 1,
+   "angle": 1,
+   "court": "U.S. COURT OF APPEALS · FOURTH CIRCUIT"
+  },
+  "until": "let that ruling stand.",
+  "pad": 0.5,
+  "marks": {
+   "hitAt": {
+    "p": "In 2022,",
+    "off": 18
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number fifteen.",
+  "props": {
+   "n": 15,
+   "rule": "Boys: hair off the collar.",
+   "verdict": "GONE",
+   "verdictText": "NEVER ILLEGAL",
+   "angle": 3,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "off the collar.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Boys, keep your hair",
+   "typeTo": {
+    "p": "off the collar.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "In September 1966, three boys in Dallas,",
+  "props": {
+   "place": "DALLAS, TEXAS",
+   "date": "SEPTEMBER 1966"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "They sued. And they lost.",
+  "props": {
+   "text": "They sued. And they lost.",
+   "keys": [
+    "lost."
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 130
+  },
+  "until": "And they lost.",
+  "pad": 0.2
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: just gone. And here's the surprise.",
+  "props": {
+   "verdict": "GONE",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": 9,
+   "line2": "NEVER ILLEGAL"
+  },
+  "until": "here's the surprise.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "just",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number fourteen.",
+  "props": {
+   "n": 14,
+   "rule": "Talk out of turn: stand in the corner.",
+   "verdict": "POLICY",
+   "verdictText": "NEA CODE · 1975",
+   "angle": 2,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "face the wall.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Stand in the corner,",
+   "typeTo": {
+    "p": "face the wall.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "You'd be standing in that corner by nine fifteen,",
+  "props": {
+   "text": "You'd be standing in that corner by 9:15.",
+   "keys": [
+    "9:15."
+   ],
+   "bed": "@img:@near",
+   "align": "left"
+  },
+  "until": "do long division.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: against school policy. No law bans",
+  "props": {
+   "verdict": "POLICY",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": -5,
+   "line2": "NEA CODE · 1975"
+  },
+  "until": "short time-out.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "against",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "says an educator shall not intentionally",
+  "props": {
+   "masthead": "NEA CODE OF ETHICS OF THE EDUCATION PROFESSION",
+   "date": "ADOPTED 1975 · PRINCIPLE I",
+   "headline": "“…shall not intentionally expose the student to embarrassment or disparagement.”",
+   "kind": "law",
+   "photo": "@img:@near"
+  },
+  "until": "a student to embarrassment.",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "ChalkWipe",
+  "at": "Number thirteen.",
+  "props": {},
+  "dur": 1.0,
+  "snap": "cut"
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number thirteen.",
+  "props": {
+   "n": 13,
+   "rule": "Bad language: mouth washed out with soap.",
+   "verdict": "POLICY",
+   "verdictText": "TODAY IT CAN BE A CRIME",
+   "angle": 1,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "washed out with soap.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Say a bad word,",
+   "typeTo": {
+    "p": "washed out with soap.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: against school policy, and today, it can be a crime.",
+  "props": {
+   "verdict": "POLICY",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": 6,
+   "line2": "TODAY IT CAN BE A CRIME"
+  },
+  "until": "it can be a crime.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "against",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "In May 2023, at an elementary school in New Mexico,",
+  "props": {
+   "place": "NEW MEXICO",
+   "date": "MAY 2023"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "What was an ordinary punishment in 1956",
+  "props": {
+   "text": "An ordinary punishment in 1956. In front of a judge today.",
+   "keys": [
+    "1956.",
+    "judge",
+    "today."
+   ],
+   "bed": "@img:@near",
+   "align": "left"
+  },
+  "until": "in front of a judge today.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "DetentionSlip",
+  "at": "Time to check that detention slip again.",
+  "props": {
+   "reason": "Broke rules 25 through 13",
+   "hours": "15",
+   "date": "Nov. 2, 1956",
+   "count": "13 OF 25",
+   "note": "Parents notified",
+   "bed": "@img:@near"
+  },
+  "until": "gotten to the paddle.",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "BellFlash",
+  "at": "Number twelve.",
+  "props": {},
+  "dur": 0.6,
+  "snap": "flash"
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number twelve.",
+  "props": {
+   "n": 12,
+   "rule": "Every pupil stands and says the Pledge. No exceptions.",
+   "verdict": "ILLEGAL",
+   "verdictText": "SINCE 1943",
+   "angle": 0,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "No exceptions.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Stand up and say the Pledge.",
+   "typeTo": {
+    "p": "No exceptions.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "card",
+  "comp": "CourtRuling3D",
+  "at": "On Flag Day, 1943,",
+  "props": {
+   "caseName": "West Virginia v. Barnette",
+   "cite": "319 U.S. 624",
+   "year": "1943",
+   "lines": [
+    "Decided June 14, 1943.",
+    "No official, high or petty, can prescribe what shall be orthodox in politics, nationalism, religion, or other matters of opinion.",
+    "Affirmed."
+   ],
+   "highlight": 1,
+   "angle": 2
+  },
+  "until": "refusing to salute.",
+  "pad": 0.5,
+  "marks": {
+   "hitAt": {
+    "p": "On Flag",
+    "off": 18
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "The verdict: illegal, since 1943.",
+  "props": {
+   "n": 12,
+   "rule": "Every pupil stands and says the Pledge. No exceptions.",
+   "verdict": "ILLEGAL",
+   "verdictText": "SINCE 1943",
+   "angle": 2,
+   "typed": true
+  },
+  "until": "since 1943.",
+  "pad": 0.5,
+  "marks": {
+   "stampAt": {
+    "p": "illegal,",
+    "off": 4
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Schools can lead the Pledge.",
+  "props": {
+   "text": "Schools can lead the Pledge. They cannot make you say it.",
+   "keys": [
+    "cannot"
+   ],
+   "bed": "@img:@near",
+   "align": "left"
+  },
+  "until": "make you say it.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number eleven.",
+  "props": {
+   "n": 11,
+   "rule": "Boys take shop. Girls take home economics.",
+   "verdict": "ILLEGAL",
+   "verdictText": "TITLE IX · 1972",
+   "angle": 3,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "Girls take home economics.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Boys take shop.",
+   "typeTo": {
+    "p": "Girls take home economics.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: illegal. Title IX, passed in 1972,",
+  "props": {
+   "verdict": "ILLEGAL",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": 9,
+   "line2": "TITLE IX · 1972"
+  },
+  "until": "passed in 1972,",
+  "pad": 0.3,
+  "marks": {
+   "at": {
+    "p": "illegal.",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "CourtRuling3D",
+  "at": "and the rules that followed in 1975",
+  "props": {
+   "caseName": "Title IX",
+   "cite": "Education Amendments of 1972 · 20 U.S.C. § 1681",
+   "year": "1972",
+   "lines": [
+    "Signed June 23, 1972.",
+    "No person in the United States shall, on the basis of sex, be excluded from participation in any education program receiving Federal financial assistance.",
+    "Regulations issued 1975."
+   ],
+   "highlight": 1,
+   "angle": 0,
+   "court": "UNITED STATES CONGRESS"
+  },
+  "until": "a boy or a girl.",
+  "pad": 0.5,
+  "marks": {
+   "hitAt": {
+    "p": "and the",
+    "off": 18
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "Today, a boy can take cooking",
+  "props": {
+   "then": {
+    "src": "@img:@near",
+    "year": "1958"
+   },
+   "now": {
+    "src": "@now:teen boy cooking class",
+    "label": "TODAY"
+   }
+  },
+  "until": "nobody blinks.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number ten.",
+  "props": {
+   "n": 10,
+   "rule": "No buttons, no armbands, no protests.",
+   "verdict": "ILLEGAL",
+   "verdictText": "SINCE 1969",
+   "angle": 2,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "no protests.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "No buttons, no armbands,",
+   "typeTo": {
+    "p": "no protests.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "That changed because of a thirteen-year-old in Des Moines,",
+  "props": {
+   "place": "DES MOINES, IOWA",
+   "date": "DECEMBER 1965"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "CourtRuling3D",
+  "at": "with a line every law student learns:",
+  "props": {
+   "caseName": "Tinker v. Des Moines",
+   "cite": "393 U.S. 503",
+   "year": "1969",
+   "lines": [
+    "Decided February 24, 1969.",
+    "Students do not shed their constitutional rights to freedom of speech or expression at the schoolhouse gate.",
+    "Reversed and remanded."
+   ],
+   "highlight": 1,
+   "angle": 1
+  },
+  "until": "at the schoolhouse gate.",
+  "pad": 0.5,
+  "marks": {
+   "hitAt": {
+    "p": "with a",
+    "off": 18
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: illegal, since 1969.",
+  "props": {
+   "verdict": "ILLEGAL",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": -5,
+   "line2": "SINCE 1969"
+  },
+  "until": "since 1969.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "illegal,",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number nine.",
+  "props": {
+   "n": 9,
+   "rule": "The principal may search any pupil's pockets.",
+   "verdict": "ILLEGAL",
+   "verdictText": "WITHOUT A REASON · 1985",
+   "angle": 1,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "whenever he likes.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "The principal can go through your pockets",
+   "typeTo": {
+    "p": "whenever he likes.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: illegal, since 1985, at least without a reason.",
+  "props": {
+   "verdict": "ILLEGAL",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": 6,
+   "line2": "WITHOUT A REASON · 1985"
+  },
+  "until": "without a reason.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "illegal,",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "CourtRuling3D",
+  "at": "the Supreme Court ruled that the Fourth Amendment",
+  "props": {
+   "caseName": "New Jersey v. T.L.O.",
+   "cite": "469 U.S. 325",
+   "year": "1985",
+   "lines": [
+    "Decided January 15, 1985.",
+    "The Fourth Amendment's prohibition on unreasonable searches applies to searches conducted by public school officials.",
+    "Search justified by reasonable suspicion."
+   ],
+   "highlight": 1,
+   "angle": 2
+  },
+  "until": "a reasonable suspicion.",
+  "pad": 0.5,
+  "marks": {
+   "hitAt": {
+    "p": "the Supreme",
+    "off": 18
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "So a school can still search you today.",
+  "props": {
+   "text": "A school can still search you. It just needs a real reason first.",
+   "keys": [
+    "real",
+    "reason"
+   ],
+   "bed": "@img:@near",
+   "align": "left"
+  },
+  "until": "a real reason first.",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "ChalkWipe",
+  "at": "Number eight.",
+  "props": {},
+  "dur": 1.0,
+  "snap": "cut"
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number eight.",
+  "props": {
+   "n": 8,
+   "rule": "The principal may send any pupil home.",
+   "verdict": "ILLEGAL",
+   "verdictText": "SINCE 1975",
+   "angle": 0,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "No hearing.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "The principal can send you home.",
+   "typeTo": {
+    "p": "No hearing.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "In 1956, the student handbook at Lincoln High School",
+  "props": {
+   "masthead": "LINCOLN HIGH SCHOOL · MANITOWOC, WIS.",
+   "date": "STUDENT HANDBOOK · 1956",
+   "headline": "“…shall be subject to dismissal from school.”",
+   "kind": "law",
+   "photo": "@img:@near"
+  },
+  "until": "dismissal from school.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "PrincipalDoor3D",
+  "at": "Who decided what counted?",
+  "props": {
+   "next": "@after",
+   "label": "PRINCIPAL"
+  },
+  "until": "tell your side.",
+  "pad": 0.3
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: illegal, since 1975.",
+  "props": {
+   "verdict": "ILLEGAL",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": -8,
+   "line2": "SINCE 1975"
+  },
+  "until": "since 1975.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "illegal,",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "In early 1971, a student named Dwight Lopez",
+  "props": {
+   "place": "COLUMBUS, OHIO",
+   "date": "1971"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "CourtRuling3D",
+  "at": "The Supreme Court ruled in Goss versus Lopez",
+  "props": {
+   "caseName": "Goss v. Lopez",
+   "cite": "419 U.S. 565",
+   "year": "1975",
+   "lines": [
+    "Decided January 22, 1975.",
+    "The student must be given oral or written notice of the charges and an opportunity to present his side of the story.",
+    "Affirmed."
+   ],
+   "highlight": 1,
+   "angle": 0
+  },
+  "until": "a chance to explain.",
+  "pad": 0.5,
+  "marks": {
+   "hitAt": {
+    "p": "The Supreme",
+    "off": 18
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Suspensions are still legal.",
+  "props": {
+   "text": "Suspensions are still legal. The silence isn't.",
+   "keys": [
+    "silence"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 120
+  },
+  "until": "The silence isn't.",
+  "pad": 0.5
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number seven.",
+  "props": {
+   "n": 7,
+   "rule": "Talking back: the ruler, across the knuckles.",
+   "verdict": "BANNED",
+   "verdictText": "IN 30 STATES",
+   "angle": 3,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "on your knuckles.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Talk back, and the ruler",
+   "typeTo": {
+    "p": "on your knuckles.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "The verdict: banned in thirty states.",
+  "props": {
+   "n": 7,
+   "rule": "Talking back: the ruler, across the knuckles.",
+   "verdict": "BANNED",
+   "verdictText": "IN 30 STATES",
+   "angle": 1,
+   "typed": true
+  },
+  "until": "in thirty states.",
+  "pad": 0.5,
+  "marks": {
+   "stampAt": {
+    "p": "banned",
+    "off": 4
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "StateHexMap",
+  "at": "In private schools, only five states ban it.",
+  "props": {
+   "title": "Corporal punishment in PRIVATE schools",
+   "on": [
+    "NJ",
+    "IA",
+    "MD",
+    "NY",
+    "IL"
+   ],
+   "onLabel": "BANNED BY STATE LAW",
+   "offLabel": "NO STATE BAN",
+   "onColor": "#F2B705",
+   "countLabel": "STATES BAN IT",
+   "source": "NJ 1867 · IA 1989 · MD & NY 2023 · IL 2024",
+   "startAt": 12,
+   "spread": 45
+  },
+  "until": "until 2023.",
+  "pad": 0.6
+ },
+ {
+  "t": "overlay",
+  "comp": "BellFlash",
+  "at": "Number six.",
+  "props": {},
+  "dur": 0.6,
+  "snap": "flash"
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number six.",
+  "props": {
+   "n": 6,
+   "rule": "Married pupils: classroom work only.",
+   "verdict": "ILLEGAL",
+   "verdictText": "SINCE 1972",
+   "angle": 2,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "off the team.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Get married,",
+   "typeTo": {
+    "p": "off the team.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "In Garland, Texas, in the spring of 1959,",
+  "props": {
+   "place": "GARLAND, TEXAS",
+   "date": "SPRING 1959"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "The school board had already ruled",
+  "props": {
+   "masthead": "GARLAND INDEPENDENT SCHOOL DISTRICT",
+   "date": "SCHOOL BOARD RESOLUTION · 1959",
+   "headline": "Married students “restricted wholly to classroom work.”",
+   "kind": "law",
+   "photo": "@img:@near"
+  },
+  "until": "wholly to classroom work.",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "Up in Mesick, Michigan,",
+  "props": {
+   "place": "MESICK, MICHIGAN",
+   "date": "1958"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: illegal. In 1972, federal courts",
+  "props": {
+   "verdict": "ILLEGAL",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": -5,
+   "line2": "SINCE 1972"
+  },
+  "until": "illegal.",
+  "pad": 0.8,
+  "marks": {
+   "at": {
+    "p": "illegal.",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number five. The paddle.",
+  "props": {
+   "n": 5,
+   "rule": "Serious offenses: the paddle.",
+   "verdict": "BANNED",
+   "verdictText": "IN 30 STATES + D.C.",
+   "angle": 1,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "waiting at the door?",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "The paddle.",
+   "typeTo": {
+    "p": "waiting at the door?",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "On October sixth, 1970, at Drew Junior High",
+  "props": {
+   "place": "MIAMI, FLORIDA",
+   "date": "OCTOBER 6, 1970"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "CourtRuling3D",
+  "at": "His case went all the way to the Supreme Court, and in 1977,",
+  "props": {
+   "caseName": "Ingraham v. Wright",
+   "cite": "430 U.S. 651",
+   "year": "1977",
+   "lines": [
+    "Decided April 19, 1977.",
+    "The Cruel and Unusual Punishments Clause of the Eighth Amendment does not apply to disciplinary corporal punishment in public schools.",
+    "Affirmed."
+   ],
+   "highlight": 1,
+   "angle": 1
+  },
+  "until": "violate the Constitution.",
+  "pad": 0.5,
+  "marks": {
+   "hitAt": {
+    "p": "His case",
+    "off": 18
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "The verdict: banned in thirty states.",
+  "props": {
+   "n": 5,
+   "rule": "Serious offenses: the paddle.",
+   "verdict": "BANNED",
+   "verdictText": "IN 30 STATES + D.C.",
+   "angle": 3,
+   "typed": true
+  },
+  "until": "have banned it.",
+  "pad": 0.5,
+  "marks": {
+   "stampAt": {
+    "p": "banned",
+    "off": 4
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "StateHexMap",
+  "at": "But in seventeen states,",
+  "props": {
+   "title": "Paddling in public schools, 2026",
+   "on": [
+    "AL",
+    "AZ",
+    "AR",
+    "FL",
+    "GA",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "MS",
+    "MO",
+    "NC",
+    "OK",
+    "SC",
+    "TN",
+    "TX",
+    "WY"
+   ],
+   "onLabel": "NO STATE LAW AGAINST IT",
+   "offLabel": "BANNED OR RESTRICTED",
+   "countLabel": "STATES WITH NO STATE BAN",
+   "source": "Sources: NPR state tracker (Aug. 2026) · state statutes",
+   "startAt": 10,
+   "spread": 60
+  },
+  "until": "no state law against it.",
+  "pad": 0.6
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "In the 2021 school year,",
+  "props": {
+   "to": 32000,
+   "label": "REPORTED CASES · 2021-22",
+   "suffix": ""
+  },
+  "until": "In America.",
+  "pad": 0.3
+ },
+ {
+  "t": "overlay",
+  "comp": "BellFlash",
+  "at": "Number four.",
+  "props": {},
+  "dur": 0.6,
+  "snap": "flash"
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number four.",
+  "props": {
+   "n": 4,
+   "rule": "Every morning, the class prays together.",
+   "verdict": "ILLEGAL",
+   "verdictText": "SINCE 1962",
+   "angle": 0,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "prays together.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Every morning, the class prays together.",
+   "typeTo": {
+    "p": "prays together.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "It began, Almighty God,",
+  "props": {
+   "text": "“Almighty God, we acknowledge our dependence upon Thee…” — Regents' prayer, 1951",
+   "keys": [
+    "almighty",
+    "1951"
+   ],
+   "bed": "@img:@near",
+   "align": "left"
+  },
+  "until": "dependence upon Thee.",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "In 1958, the schools of New Hyde Park,",
+  "props": {
+   "place": "NEW HYDE PARK, NEW YORK",
+   "date": "1958"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "CourtRuling3D",
+  "at": "On June twenty-fifth, 1962,",
+  "props": {
+   "caseName": "Engel v. Vitale",
+   "cite": "370 U.S. 421",
+   "year": "1962",
+   "lines": [
+    "Decided June 25, 1962.",
+    "It is no part of the business of government to compose official prayers for any group of the American people to recite.",
+    "Reversed and remanded."
+   ],
+   "highlight": 1,
+   "angle": 0
+  },
+  "until": "a public classroom.",
+  "pad": 0.5,
+  "marks": {
+   "hitAt": {
+    "p": "On June",
+    "off": 18
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "The verdict: illegal, since 1962.",
+  "props": {
+   "n": 4,
+   "rule": "Every morning, the class prays together.",
+   "verdict": "ILLEGAL",
+   "verdictText": "SINCE 1962",
+   "angle": 2,
+   "typed": true
+  },
+  "until": "since 1962.",
+  "pad": 0.5,
+  "marks": {
+   "stampAt": {
+    "p": "illegal,",
+    "off": 4
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number three.",
+  "props": {
+   "n": 3,
+   "rule": "Ten verses of the Bible, every morning.",
+   "verdict": "ILLEGAL",
+   "verdictText": "SINCE 1963",
+   "angle": 3,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "required by law.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "Ten verses of the Bible,",
+   "typeTo": {
+    "p": "required by law.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "In Pennsylvania, the law said",
+  "props": {
+   "masthead": "COMMONWEALTH OF PENNSYLVANIA",
+   "date": "PUBLIC SCHOOL CODE · 1949",
+   "headline": "“At least ten verses from the Holy Bible shall be read…”",
+   "kind": "law",
+   "photo": "@img:@near"
+  },
+  "until": "opening of each school day.",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "A survey around 1960 found Bible reading",
+  "props": {
+   "to": 4,
+   "suffix": " IN 10",
+   "label": "SCHOOL SYSTEMS · c. 1960"
+  },
+  "until": "across the country.",
+  "pad": 0.3
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "In November 1956, at Abington Senior High",
+  "props": {
+   "place": "ABINGTON, PENNSYLVANIA",
+   "date": "NOVEMBER 1956"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: illegal, since 1963.",
+  "props": {
+   "verdict": "ILLEGAL",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": 9,
+   "line2": "SINCE 1963"
+  },
+  "until": "since 1963.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "illegal,",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "CourtRuling3D",
+  "at": "In an eight to one decision,",
+  "props": {
+   "caseName": "Abington School District v. Schempp",
+   "cite": "374 U.S. 203",
+   "year": "1963",
+   "lines": [
+    "Decided June 17, 1963.",
+    "We hold that the practices at issue and the laws requiring them are unconstitutional.",
+    "Decided 8 to 1."
+   ],
+   "highlight": 1,
+   "angle": 2
+  },
+  "until": "in public schools.",
+  "pad": 0.5,
+  "marks": {
+   "hitAt": {
+    "p": "In an",
+    "off": 18
+   }
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "ChalkWipe",
+  "at": "Number two.",
+  "props": {},
+  "dur": 1.0,
+  "snap": "cut"
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "Number two.",
+  "props": {
+   "n": 2,
+   "rule": "A pupil who becomes pregnant shall leave school.",
+   "verdict": "ILLEGAL",
+   "verdictText": "TITLE IX · 1972",
+   "angle": 2,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "Immediately.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "A girl who becomes pregnant",
+   "typeTo": {
+    "p": "Immediately.",
+    "end": true
+   }
+  },
+  "peel": true
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "At North Middlesex Regional High School",
+  "props": {
+   "place": "TOWNSEND, MASSACHUSETTS",
+   "date": "1971"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "Rule 821.",
+  "props": {
+   "masthead": "NORTH MIDDLESEX REGIONAL HIGH SCHOOL",
+   "date": "RULE 821",
+   "headline": "“…her membership in the school shall be immediately terminated.”",
+   "kind": "law",
+   "photo": "@img:@near"
+  },
+  "until": "immediately terminated.",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "VerdictStamp",
+  "at": "The verdict: illegal. Title IX, passed in 1972, and its rules forbid",
+  "props": {
+   "verdict": "ILLEGAL",
+   "bed": "@img:@near",
+   "at": 10,
+   "rot": -5,
+   "line2": "TITLE IX · 1972"
+  },
+  "until": "because of pregnancy.",
+  "pad": 0.4,
+  "marks": {
+   "at": {
+    "p": "illegal.",
+    "off": 3
+   }
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BellFlash",
+  "at": "And number one.",
+  "props": {},
+  "dur": 0.6,
+  "snap": "flash"
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "And number one.",
+  "props": {
+   "n": 1,
+   "rule": "Pupils unable to benefit may be refused.",
+   "verdict": "ILLEGAL",
+   "verdictText": "SINCE 1975",
+   "angle": 1,
+   "stamp": false,
+   "flips": 3
+  },
+  "until": "the schoolhouse door.",
+  "pad": 0.5,
+  "marks": {
+   "typeFrom": "The rule that shut",
+   "typeTo": {
+    "p": "the schoolhouse door.",
+    "end": true
+   }
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "In September 1950, in Minneapolis,",
+  "props": {
+   "place": "MINNEAPOLIS, MINNESOTA",
+   "date": "SEPTEMBER 1950"
+  },
+  "dur": 3.6
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "By 1970, American schools were educating only",
+  "props": {
+   "to": 1,
+   "suffix": " IN 5",
+   "label": "CHILDREN WITH DISABILITIES IN SCHOOL · 1970"
+  },
+  "until": "children with disabilities,",
+  "pad": 0.2
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "and Congress found that one million",
+  "props": {
+   "to": 1000000,
+   "label": "SHUT OUT OF SCHOOL ENTIRELY"
+  },
+  "until": "school entirely.",
+  "pad": 0.3
+ },
+ {
+  "t": "card",
+  "comp": "Rulebook3D",
+  "at": "The verdict: illegal, since 1975.",
+  "props": {
+   "n": 1,
+   "rule": "Pupils unable to benefit may be refused.",
+   "verdict": "ILLEGAL",
+   "verdictText": "SINCE 1975",
+   "angle": 3,
+   "typed": true
+  },
+  "until": "since 1975.",
+  "pad": 0.5,
+  "marks": {
+   "stampAt": {
+    "p": "illegal,",
+    "off": 4
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "CourtRuling3D",
+  "at": "On November twenty-ninth, 1975,",
+  "props": {
+   "caseName": "Public Law 94-142",
+   "cite": "Education for All Handicapped Children Act",
+   "year": "1975",
+   "lines": [
+    "Signed November 29, 1975.",
+    "To assure that all handicapped children have available to them a free appropriate public education.",
+    "Today: the Individuals with Disabilities Education Act."
+   ],
+   "highlight": 1,
+   "angle": 1,
+   "court": "UNITED STATES CONGRESS"
+  },
+  "until": "free public education.",
+  "pad": 0.5,
+  "marks": {
+   "hitAt": {
+    "p": "On November",
+    "off": 18
+   }
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Of all twenty-five rules,",
+  "props": {
+   "text": "Of all 25 rules, this is the one that changed the most lives.",
+   "keys": [
+    "most",
+    "lives."
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 110
+  },
+  "until": "changed the most lives.",
+  "pad": 0.6
+ },
+ {
+  "t": "overlay",
+  "comp": "ChalkWipe",
+  "at": "That's the list.",
+  "props": {},
+  "dur": 1.0,
+  "snap": "cut"
+ },
+ {
+  "t": "card",
+  "comp": "Timeline3D",
+  "at": "That's the list.",
+  "props": {
+   "kicker": "THE RULINGS THAT CHANGED SCHOOL",
+   "events": [
+    {
+     "year": "1943",
+     "label": "No forced Pledge",
+     "src": "@img:@near"
+    },
+    {
+     "year": "1962",
+     "label": "No school-led prayer",
+     "src": "@jpg:232"
+    },
+    {
+     "year": "1969",
+     "label": "Free speech at the schoolhouse gate",
+     "src": "@jpg:170"
+    },
+    {
+     "year": "1972",
+     "label": "Title IX",
+     "src": "@jpg:161"
+    },
+    {
+     "year": "1975",
+     "label": "Every child in school",
+     "src": "@jpg:271",
+     "now": true
+    }
+   ]
+  },
+  "until": "to the schoolhouse door.",
+  "pad": 0.3
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "So now it's your turn.",
+  "props": {
+   "text": "Which rule would you bring back? Which one did you break?",
+   "keys": [
+    "back?",
+    "break?"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 110
+  },
+  "until": "which one did you break?",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "PrincipalDoor3D",
+  "at": "If this took you back,",
+  "props": {
+   "next": "@after",
+   "label": "CLASS DISMISSED"
+  },
+  "until": "Class dismissed.",
+  "pad": 0.6
+ }
+]
