@@ -1,0 +1,222 @@
+{
+ "dir": "D:/Proyectos/video2-wt/olpots/vlog/olpots/M1",
+ "face": "D:/Proyectos/video2-wt/olpots/public/ref_olpots_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/olpots/public/ref_olpots.png",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld home video shot by his grandson with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered cabin background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed and bright enough, the side near the snowy window brighter and cooler, the corners by the stove a little warmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; white hair and beard with stray hairs; flannel and canvas apron with real creases, soot and grease marks. People are caught mid-action, unposed. Bright snowy daylight from the window on the left plus the warm glow of the wood stove.",
+ "look": "Ordinary handheld home video filmed by his grandson with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the cabin in focus, only the light the place really has, bright and correctly exposed, automatic white balance, mild sensor noise; real skin and natural old hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same cabin, same moment of the day. Ole, a 78-year-old man with thinning white hair, a short full white beard, a dark green and black plaid flannel shirt over a cream henley undershirt and a worn tan canvas apron, big old hands with age spots and veins sits at the rough plank table of the log cabin cook shack of an old north-woods logging camp: weathered log walls, a black cast iron wood cookstove with a stovepipe and a small glowing firebox door, a window with snow outside, a two-man crosscut saw and an axe hanging on the log wall, bunk beds with plaid wool blankets at the left, a rough plank table with a blue enamel mug, a navy blue speckled enamel mug beside his hand, talking to the camera; behind his right shoulder on the log wall is a rough plank shelf on the log wall behind his right shoulder holding five pots in a row: a black cast iron Dutch oven with a lid, a black cast iron skillet, a tall white speckled enamel stockpot with a blue rim, a shiny stainless steel stockpot with a lid, and a small stainless saucepan with a long black handle. He jerks his thumb over his shoulder toward the shelf, mouth mid-word. Medium shot from about one and a half meters, his upper body, the table edge, the shelf and the snowy window in frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A moment later, same place: he has turned his head and shoulders a little toward the shelf of pots behind him, one big hand open toward it, and then glances back at the camera with a fond half smile, mid-word."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place a few seconds later: he sits back in his chair holding the blue enamel mug in both hands, looking at the camera with a warm, sure little smile, nodding slowly, mid-word."
+  },
+  {
+   "id": "K2b",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place a moment later: a wider grin now, the mug lifted a little toward the camera as if to say cheers, one white eyebrow raised."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place: the mug set down, he leans a little toward the camera with a serious face, one index finger raised beside his face, eyes on the camera, mid-word."
+  },
+  {
+   "id": "K3b",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place a moment later: the finger lowered, he tilts his head with a dry knowing look and slightly raised eyebrows, hand open on the table, mid-word."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place: he holds up one open hand with the fingers spread as if counting to five, the other hand flat on the table, looking at the camera, mid-word."
+  },
+  {
+   "id": "K4b",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place a moment later: his open hand folds down one finger at a time, counting, a small nod, the shelf of pots visible behind him."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place: he leans forward over the plank table with his palm flat on the wood, earnest, eyes on the camera, mid-word."
+  },
+  {
+   "id": "K5b",
+   "from": [
+    "K5"
+   ],
+   "prompt": "Same place a moment later: he pats the table twice gently with his flat hand and gives a small firm nod, mouth mid-word."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place: he shakes his head slowly and waves one hand side to side as if saying no, a dry half smile, mouth mid-word."
+  },
+  {
+   "id": "K6b",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place a moment later: hand lowered, he shrugs one shoulder with a wry look, eyebrows raised."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place: he leans back with his arms folded over the apron and nods slowly at the camera, calm and sure, mouth mid-word."
+  },
+  {
+   "id": "K7b",
+   "from": [
+    "K7"
+   ],
+   "prompt": "Same place a moment later: he unfolds one hand and points a finger toward the camera as if starting to count, ready to begin, mid-word."
+  },
+  {
+   "id": "D1a",
+   "from": [
+    "k0"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, seen from above the shoulder: the man's head and face are completely outside the frame, no face visible anywhere. EXTREME CLOSE-UP of an old man's hand in a dark green and black plaid flannel sleeve resting a fingertip on the black iron lid of a cast iron Dutch oven at the left end of a rough plank shelf on a log wall, the other pots in a row to the right, snowy window light. No face anywhere in the frame.",
+   "noface": true
+  },
+  {
+   "id": "D1b",
+   "from": [
+    "D1a"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, seen from above the shoulder: the man's head and face are completely outside the frame, no face visible anywhere. Same close view a moment later: the hand has slid along the shelf and now rests flat on the white speckled enamel stockpot, the other pots beyond it.",
+   "noface": true
+  },
+  {
+   "id": "D2a",
+   "from": [
+    "k0"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, seen from above the shoulder: the man's head and face are completely outside the frame, no face visible anywhere. EXTREME CLOSE-UP on the rough plank table: an old man's hand in a plaid flannel sleeve pushes a navy blue speckled enamel mug across the wood toward the camera, a thin curl of steam from it, the cabin blurred behind. No face anywhere in the frame.",
+   "noface": true
+  },
+  {
+   "id": "D2b",
+   "from": [
+    "D2a"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and the object only, seen from above the shoulder: the man's head and face are completely outside the frame, no face visible anywhere. Same close view a moment later: the mug has slid closer to the camera edge, the hand lifting away from it, steam curling.",
+   "noface": true
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/olpots/vlog/olpots/tramos/m1.wav",
+   "text": "Well, now. Look at that shelf, friend.",
+   "action": "He talks to his grandson behind the camera, jerks his thumb toward the shelf of pots behind him, turns to it with an open hand, then looks back at the camera fondly. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m2",
+   "a": "K2",
+   "b": "K2b",
+   "audio": "D:/Proyectos/video2-wt/olpots/vlog/olpots/tramos/m2.wav",
+   "text": "And I'd buy every one of them again tomorrow.",
+   "action": "He sits back holding the enamel mug in both hands, nods slowly with a warm sure smile, then lifts the mug a little with a wider grin. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m3",
+   "a": "K3",
+   "b": "K3b",
+   "audio": "D:/Proyectos/video2-wt/olpots/vlog/olpots/tramos/m3.wav",
+   "text": "would never buy, not if you handed them to me.",
+   "action": "He sets the mug down, leans toward the camera with a raised finger and a serious face, then lowers the finger with a dry knowing look. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m4",
+   "a": "K4",
+   "b": "K4b",
+   "audio": "D:/Proyectos/video2-wt/olpots/vlog/olpots/tramos/m4.wav",
+   "text": "So here's the deal. I'll name all five, quick,",
+   "action": "He holds up one open hand counting to five and folds the fingers down one at a time, talking to the camera. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m5",
+   "a": "K5",
+   "b": "K5b",
+   "audio": "D:/Proyectos/video2-wt/olpots/vlog/olpots/tramos/m5.wav",
+   "text": "What matters is the why, so stay with me,",
+   "action": "He leans forward over the table with his palm flat on the wood, then pats the table twice and gives a small firm nod, talking. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m6",
+   "a": "K6",
+   "b": "K6b",
+   "audio": "D:/Proyectos/video2-wt/olpots/vlog/olpots/tramos/m6.wav",
+   "text": "I won't name a brand, either.",
+   "action": "He shakes his head slowly and waves a hand side to side no, with a dry half smile, then shrugs one shoulder. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m7",
+   "a": "K7",
+   "b": "K7b",
+   "audio": "D:/Proyectos/video2-wt/olpots/vlog/olpots/tramos/m7.wav",
+   "text": "that doesn't change. Here's how I judge a pot.",
+   "action": "He leans back with his arms folded and nods slowly at the camera, then unfolds a hand and points a finger toward the camera, about to start counting. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "d_shelf",
+   "prompt": "the hand slides slowly along the edge of the shelf, its fingers touching the lid of the Dutch oven and then the enamel stockpot. He stays silent, focused on the pots.",
+   "a": "D1a",
+   "b": "D1b",
+   "detail": true,
+   "secs": 4,
+   "d1": "a hand rests on a cast iron Dutch oven on a plank shelf",
+   "d2": "the hand slides along the shelf onto the enamel stockpot",
+   "sound": "fingertips sliding across cold iron and a light tap on an enamel pot"
+  },
+  {
+   "id": "d_mug",
+   "prompt": "the hand pushes the blue enamel mug across the plank table toward the camera and lets go, steam curling. He stays silent.",
+   "a": "D2a",
+   "b": "D2b",
+   "detail": true,
+   "secs": 4,
+   "d1": "a hand pushes a blue enamel mug across a wooden table",
+   "d2": "the mug slides toward the camera and stops",
+   "sound": "an enamel mug sliding on rough wood and a soft clunk"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/olpots/vlog/olpots/M1/out.mp4"
+}
