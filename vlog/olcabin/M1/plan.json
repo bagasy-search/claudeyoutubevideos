@@ -1,0 +1,146 @@
+{
+ "dir": "D:/Proyectos/video2-wt/olcabin/vlog/olcabin/M1",
+ "face": "D:/Proyectos/video2-wt/olcabin/public/ref_olcabin_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/olcabin/public/ref_olcabin.png",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld home video shot by his grandson with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered cabin background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed and bright enough, the side near the snowy window brighter and cooler, the corners by the stove a little warmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; white hair and beard with stray hairs; flannel and canvas apron with real creases, soot and grease marks. People are caught mid-action, unposed. Bright snowy daylight from the window on the left plus the warm glow of the wood stove.",
+ "look": "Ordinary handheld home video filmed by his grandson with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the cabin in focus, only the light the place really has, bright and correctly exposed, automatic white balance, mild sensor noise; real skin and natural old hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same cabin, same moment of the day. Ole, a 78-year-old man with thinning white hair, a short full white beard, a dark green and black plaid flannel shirt over a cream henley undershirt and a worn tan canvas apron, big old hands with age spots and veins sits at the rough plank table of the log cabin cook shack of an old north-woods logging camp: weathered log walls, a black cast iron wood cookstove with a stovepipe and a small glowing firebox door, a window with snow outside, a two-man crosscut saw and an axe hanging on the log wall, bunk beds with plaid wool blankets at the left, a rough plank table with a blue enamel mug. On the table in front of him sit a small old green-painted tin recipe box with a hinged lid, closed, and his blue enamel mug, and he looks straight at the camera with a welcoming half smile, one hand open toward the empty bench across the table as if inviting the viewer to sit, talking. Medium shot from about one and a half meters, the table edge at the bottom, the stove glowing behind him."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same place: he pats the bench beside him with one big hand, his other hand resting on the closed tin recipe box, eyebrows raised, warm and amused, mid-sentence."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same cabin, same light. He leans back a little and glances sideways at the tin recipe box on the shelf behind him on the log wall, then back at the camera with a knowing grin, mid-sentence."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place a few seconds later: he leans toward the camera over the table with one big finger raised beside his face and a sly narrowed-eyes look, as if about to confess something."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place a few seconds later: he leans back and taps his own chest with the raised finger, nodding, promising with a small grin."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place: he lifts a blue speckled enamel coffee pot from the stovetop beside the table and pours dark coffee into his blue enamel mug, steam rising, looking at the camera while he talks."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same cabin, same light. He stands at the black wood cookstove with a blue speckled enamel coffee pot on it, holding up one brown chicken egg between two fingers close to the camera, eyebrows high, a mock-serious look, mid-sentence."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place a few seconds later: he lowers the egg and shrugs with both palms up, a wry smile, the coffee pot steaming on the stove behind him."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place: he stands at the stove and points down with one finger toward the coffee pot, explaining, his other hand making a slow sinking motion, looking at the camera."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place a few seconds later: he pinches the air with two fingers as if lifting something small and drags it downward, chin tucked, eyes on the camera, mid-sentence."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same cabin, same light. He sits at the plank table holding the blue enamel mug with both hands close to his chest, steam rising, looking at the camera over the rim, about to sip."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K10"
+   ],
+   "prompt": "Same place a few seconds later: he lowers the mug, shakes his head slowly with a satisfied smile, one eyebrow up, saying he never tastes the egg."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/olcabin/vlog/olcabin/tramos/m1.wav",
+   "text": "Well, now. Come sit down, friend.",
+   "action": "He looks at the camera, welcomes the viewer with an open hand toward the bench, then pats the bench beside him. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m2",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/olcabin/vlog/olcabin/tramos/m2.wav",
+   "text": "One of them has been through a bath of lye. And number one is a bread I can ruin in exactly one way,",
+   "action": "He glances back at the tin box on the shelf, then leans toward the camera with a raised finger and a sly look. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m3",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/olcabin/vlog/olcabin/tramos/m3.wav",
+   "text": "and I'll show you that way before we're done. Pour yourself a cup of coffee, and let's start at the bottom of the box.",
+   "action": "He taps his chest, promising, then lifts the enamel coffee pot and pours himself a mug of coffee while talking. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m4",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/olcabin/vlog/olcabin/tramos/m4.wav",
+   "text": "Yes, an egg. In the coffee.",
+   "action": "He holds a brown egg up to the camera with a mock-serious look, then lowers it and shrugs. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m5",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/olcabin/vlog/olcabin/tramos/m5.wav",
+   "text": "The egg grabs the bitterness and hauls it down with the grounds.",
+   "action": "He points at the coffee pot, then makes a slow sinking motion with his hand, pinching and dragging something downward. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m6",
+   "a": "K10",
+   "b": "K11",
+   "audio": "D:/Proyectos/video2-wt/olcabin/vlog/olcabin/tramos/m6.wav",
+   "text": "and you never taste the egg. Not one bit.",
+   "action": "He holds the mug in both hands, looks over the rim, lowers it and shakes his head with a satisfied smile. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/olcabin/vlog/olcabin/M1/out.mp4"
+}
