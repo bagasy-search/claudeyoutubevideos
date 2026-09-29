@@ -1,0 +1,602 @@
+[
+ {
+  "t": "card",
+  "comp": "PrintPush",
+  "at": "It's a Tuesday morning in September",
+  "until": "September, 1962",
+  "props": {
+   "src": "@jpg:0",
+   "others": [
+    "@jpg:1",
+    "@jpg:2",
+    "@jpg:3"
+   ]
+  },
+  "after": "@jpg:0"
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "You're eleven years old",
+  "dur": 4.0,
+  "props": {
+   "place": "SIXTH GRADE",
+   "date": "SEPTEMBER 1962"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "This is not a made-up quiz",
+  "until": "word for word",
+  "pad": 0.4,
+  "props": {
+   "text": "Real 1950s and '60s textbooks. Many questions word for word.",
+   "keys": [
+    "real",
+    "word"
+   ],
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Here are the rules",
+  "until": "a 1962 teacher would",
+  "pad": 0.5,
+  "props": {
+   "text": "25 questions. 5 seconds each. Keep count.",
+   "keys": [
+    "25",
+    "5",
+    "count."
+   ],
+   "align": "center",
+   "size": 130,
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Question twenty-one comes straight out",
+  "until": "grown-ups cold",
+  "pad": 0.5,
+  "props": {
+   "text": "Question 21: straight out of a 1956 arithmetic book.",
+   "keys": [
+    "21:",
+    "1956"
+   ],
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Welcome to Yesterday's Classroom",
+  "until": "Let's begin",
+  "pad": 0.3,
+  "props": {
+   "text": "Yesterday's Classroom",
+   "keys": [
+    "classroom"
+   ],
+   "align": "center",
+   "size": 150,
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question one.",
+  "props": {
+   "n": 1
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "A letter cost three cents",
+  "dur": 3.4,
+  "props": {
+   "to": 3,
+   "suffix": "¢",
+   "label": "a first-class stamp, until 1958"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question two.",
+  "props": {
+   "n": 2
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "The forty-nine star flag flew for only one year",
+  "dur": 3.4,
+  "props": {
+   "text": "The 49-star flag flew for only one year.",
+   "keys": [
+    "49-star",
+    "one",
+    "year."
+   ],
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question three.",
+  "props": {
+   "n": 3
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question four.",
+  "props": {
+   "n": 4
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question five.",
+  "props": {
+   "n": 5
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question six.",
+  "props": {
+   "n": 6
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "gas really cost about thirty cents",
+  "dur": 3.4,
+  "props": {
+   "to": 31.2,
+   "decimals": 1,
+   "suffix": "¢",
+   "label": "a gallon, 1956"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question seven.",
+  "props": {
+   "n": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "President Eisenhower signed the change",
+  "until": "June fourteenth, 1954",
+  "pad": 0.4,
+  "props": {
+   "text": "\"one Nation under God, indivisible\"",
+   "keys": [
+    "under",
+    "god,"
+   ],
+   "align": "center",
+   "size": 110,
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question eight.",
+  "props": {
+   "n": 8
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ReportCard3D",
+  "at": "Time for a quick check",
+  "until": "get harder",
+  "pad": 0.4,
+  "props": {
+   "title": "REPORT CARD",
+   "rows": [
+    {
+     "label": "7 or 8 right",
+     "grade": "A+"
+    },
+    {
+     "label": "5 or 6 right",
+     "grade": "B"
+    },
+    {
+     "label": "fewer than 5",
+     "grade": "keep at it"
+    }
+   ],
+   "note": "Keep counting!",
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question nine.",
+  "props": {
+   "n": 9
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question ten.",
+  "props": {
+   "n": 10
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "Schools wheeled television sets",
+  "dur": 4.0,
+  "props": {
+   "place": "FRIENDSHIP 7",
+   "date": "FEBRUARY 20, 1962"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question eleven.",
+  "props": {
+   "n": 11
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question twelve.",
+  "props": {
+   "n": 12
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question thirteen.",
+  "props": {
+   "n": 13
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Two pints make a quart",
+  "until": "four pecks make a bushel",
+  "pad": 0.4,
+  "props": {
+   "text": "2 pints = 1 quart · 8 quarts = 1 peck · 4 pecks = 1 bushel",
+   "keys": [
+    "peck",
+    "bushel"
+   ],
+   "align": "center",
+   "size": 96,
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question fourteen.",
+  "props": {
+   "n": 14
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question fifteen.",
+  "props": {
+   "n": 15
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BanStamp",
+  "at": "Pluto was demoted to a dwarf planet",
+  "dur": 3.4,
+  "props": {
+   "top": "PLUTO",
+   "big": "DEMOTED",
+   "date": "2006"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question sixteen.",
+  "props": {
+   "n": 16
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "which is exactly one surveyor's chain",
+  "dur": 3.4,
+  "props": {
+   "to": 66,
+   "suffix": " FT",
+   "label": "= 4 rods = 1 surveyor's chain"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ReportCard3D",
+  "at": "Second report card",
+  "until": "separate the class",
+  "pad": 0.4,
+  "props": {
+   "title": "REPORT CARD",
+   "rows": [
+    {
+     "label": "13 – 16 right",
+     "grade": "A"
+    },
+    {
+     "label": "10 – 12 right",
+     "grade": "B"
+    },
+    {
+     "label": "under 10",
+     "grade": "C"
+    }
+   ],
+   "note": "Harder ones ahead!",
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question seventeen.",
+  "props": {
+   "n": 17
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "All three choices were on the same classroom map",
+  "until": "called Formosa",
+  "pad": 0.4,
+  "props": {
+   "text": "Ceylon → Sri Lanka · Burma → Myanmar · Formosa → Taiwan",
+   "keys": [
+    "sri",
+    "myanmar",
+    "taiwan"
+   ],
+   "align": "center",
+   "size": 92,
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question eighteen.",
+  "props": {
+   "n": 18
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question nineteen.",
+  "props": {
+   "n": 19
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Timeline3D",
+  "at": "The twenty-third amendment was ratified",
+  "until": "marked wrong in sixth",
+  "props": {
+   "kicker": "HOW MANY AMENDMENTS?",
+   "events": [
+    {
+     "year": "1951",
+     "label": "22 amendments",
+     "src": "@img:@near"
+    },
+    {
+     "year": "1961",
+     "label": "23 — the day John Glenn flew",
+     "src": "@arch:10:0"
+    },
+    {
+     "year": "1964",
+     "label": "24",
+     "src": "@arch:19:0"
+    },
+    {
+     "year": "TODAY",
+     "label": "27",
+     "src": "@arch:19:1",
+     "now": true
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question twenty.",
+  "props": {
+   "n": 20
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question twenty-one.",
+  "props": {
+   "n": 21
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Eighty times eighty is sixty-four hundred",
+  "until": "square rods in an acre",
+  "pad": 0.4,
+  "props": {
+   "text": "80 × 80 = 6,400 square rods ÷ 160 = 40 acres",
+   "keys": [
+    "40",
+    "acres"
+   ],
+   "align": "center",
+   "size": 100,
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question twenty-two.",
+  "props": {
+   "n": 22
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question twenty-three.",
+  "props": {
+   "n": 23
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Our seasons come from the tilt",
+  "dur": 3.2,
+  "props": {
+   "text": "Seasons come from the tilt, not the distance.",
+   "keys": [
+    "tilt,"
+   ],
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question twenty-four.",
+  "props": {
+   "n": 24
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ExamRoom3D",
+  "at": "Question twenty-five.",
+  "props": {
+   "n": 25
+  }
+ },
+ {
+  "t": "card",
+  "comp": "MapRoute",
+  "at": "Windsor, Ontario sits directly south",
+  "until": "across the river",
+  "pad": 0.6,
+  "props": {
+   "from": "DETROIT",
+   "to": "WINDSOR, CANADA",
+   "distance": "DUE SOUTH",
+   "title": "across the Detroit River"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ReportCard3D",
+  "at": "Pencils down",
+  "until": "a talk after class",
+  "pad": 0.6,
+  "props": {
+   "title": "FINAL GRADE",
+   "rows": [
+    {
+     "label": "23 – 25 right",
+     "grade": "A ★"
+    },
+    {
+     "label": "18 – 22 right",
+     "grade": "B"
+    },
+    {
+     "label": "12 – 17 right",
+     "grade": "C"
+    },
+    {
+     "label": "under 12",
+     "grade": "See me"
+    }
+   ],
+   "note": "Gold star!",
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "What was your score",
+  "until": "which question got you",
+  "pad": 0.6,
+  "props": {
+   "text": "What was your score?",
+   "keys": [
+    "score?"
+   ],
+   "align": "center",
+   "size": 140,
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "If you enjoyed this",
+  "until": "every week",
+  "pad": 2.0,
+  "props": {
+   "text": "Yesterday's Classroom · Class is back in session.",
+   "keys": [
+    "classroom"
+   ],
+   "align": "center",
+   "size": 110,
+   "bed": "@img:@near"
+  }
+ }
+]
