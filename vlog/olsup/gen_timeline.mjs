@@ -95,7 +95,7 @@ fs.writeFileSync(R + "src/olsup/timeline_olsup.gen.ts", out);
 const refs = new Set(["olsup.m4a", "sfx/olsup_bed.m4a", "ref_olsup.png"]);
 const walk = (o) => { if (typeof o === "string") { if (/^(img|broll|vid|sfx|avatar_clips)\/.+\.(jpg|png|mp4|m4a|mp3|wav)$/.test(o) || o === "qr_ole_suppers.png") refs.add(o); } else if (o && typeof o === "object") Object.values(o).forEach(walk); };
 walk(cues); walk(ovs); walk(sfx); walk(foley);
-for (const c of cues) if (c.clip && c.clipF < c.dur) refs.add(c.clip.replace(/\.mp4$/, "_last.jpg"));
+for (const c of cues) { if (c.clip && c.clipF < c.dur) refs.add(c.clip.replace(/\.mp4$/, "_last.jpg")); if (c.k === "st" && c.clipF < c.dur) refs.add(c.src.replace(/\.mp4$/, "_last.jpg")); }
 const faltan = [...refs].filter((r) => !ex(r));
 fs.writeFileSync(R + "_olsup_assets.txt", [...refs].filter((r) => ex(r)).join("\n") + "\n");
 console.log("assets al tar:", refs.size - faltan.length, faltan.length ? `· ⛔ FALTAN ${faltan.length}: ${faltan.slice(0, 6).join(" ")}` : "");

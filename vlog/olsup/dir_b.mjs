@@ -23,7 +23,6 @@ export const SHOTS = [
   S(7, "and then you'd stir flour", "st", "st_roux", { q: "stirring flour into hot fat roux pan whisk" }),
   S(7, "and pour in milk", "st", "st_milkgravy", { q: "pouring milk into skillet gravy" }),
   S(7, "Poured over boiled potatoes", "st", "st_potgravy", { q: "boiled potatoes covered with white cream gravy plate" }),
-  S(7, "That's a whole supper", "c", "OleFact", { props: { big: "2¢", unit: "a whole supper", text: "salt pork · potatoes · milk gravy", source: "Ole's rule of thumb" } }),
   S(7, "And there was a second job", "bi", "b_fatcrock", { p: BI("A brown stoneware crock of white rendered pork fat with a wooden spoon standing in it on a shelf beside a black wood stove, a cook's hand spooning hot fat from a skillet into it, jars and tin cups on the shelf."), anim: "hot fat drips into the crock" }),
   S(7, "In a camp kitchen", "ole", "o_fatbanker", { p: OLEP("He stands at the black wood stove pouring hot fat from an iron skillet into a stoneware crock, glancing at the camera with a proud stern expression, steam rising, his apron dusted with flour.") }),
 
@@ -107,7 +106,7 @@ export const SHOTS = [
   // ── #20 sauerkraut & sausage (p16)
   S(16, "", "av", "", CD(20, "Sauerkraut & sausage", "in a skillet", 43)),
   S(16, "Sauerkraut was cabbage", "st", "st_kraut_crock", { q: "fermenting sauerkraut in stoneware crock" }),
-  S(16, "vitamin C", "c", "OleFact", { props: { big: "Vitamin C", unit: "in the dead of winter", text: "kraut kept the men healthy", source: "fermented cabbage" } }),
+  S(16, "vitamin C", "c", "OleFact", { props: { big: "Vitamin C", unit: "in the dead of winter", text: "kraut kept the men healthy" } }),
   S(16, "Brown the sausage first", "st", "st_sausage_brown", { q: "browning sausages in cast iron skillet" }),
   S(16, "then let the kraut cook down", "st", "st_kraut_skillet", { q: "sauerkraut and sausage cooking skillet" }),
   S(16, "Some folks rinse the kraut", "av", ""),

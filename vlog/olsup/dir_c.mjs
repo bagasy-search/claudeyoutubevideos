@@ -103,7 +103,7 @@ export const SHOTS = [
 
   // ── #8 roast pork + turnips (p31)
   S(31, "", "av", "", CD(8, "Roast pork", "with mashed turnips", null)),
-  S(31, "A camp menu from Maine", "c", "OleFact", { props: { big: "1923", unit: "a Maine camp menu", text: "roast pork · turnips · peas · beans · bread", source: "documented lumber camp menu" } }),
+  S(31, "A camp menu from Maine", "c", "OleFact", { props: { big: "1923", unit: "a Maine camp menu", text: "roast pork · turnips · peas · beans · bread", source: "Maine lumber camp menu, 1923" } }),
   S(31, "Now that's a lot of plate", "st", "st_bigplate", { q: "heaping plate roast pork mashed potatoes vegetables" }),
   S(31, "Roast the pork with the fat side up", "st", "st_roastpork", { q: "roast pork loin fat cap in roasting pan" }),
   S(31, "and mash the turnips", "st", "st_mash_turnip", { q: "mashing turnips or rutabaga with butter" }),
@@ -160,7 +160,7 @@ export const SHOTS = [
   S(37, "Peas and beans were what", "bi", "b_stores", { p: BI("Wooden barrels and burlap sacks of dried peas, dry beans, flour, sugar and salt stacked in a log camp supply shed, a scoop and a scale, a lantern, a cook's hand tying off a sack, snowy light through the door."), anim: "dust drifts in the light" }),
   S(37, "Green peas simmered", "st", "st_peasoup_pot", { q: "split pea soup simmering in pot with ham bone" }),
   S(37, "thick enough to hold a spoon", "st", "st_peasoup_spoon", { q: "thick split pea soup spoon standing bowl" }),
-  S(37, "It's a cheap soup", "c", "OleFact", { props: { big: "Dried peas", unit: "cost next to nothing", text: "the ham bone gave it the taste", source: "camp stores: beans, peas, flour, sugar, salt" } }),
+  S(37, "It's a cheap soup", "c", "OleFact", { props: { big: "Dried peas", unit: "cost next to nothing", text: "the ham bone gave it the taste", source: "Minnesota Historical Society" } }),
   S(37, "You stir it now and then", "st", "st_stir_bottom", { q: "stirring thick soup bottom of pot wooden spoon" }),
 
   // ── #2 pot beans — casi héroe (p38)

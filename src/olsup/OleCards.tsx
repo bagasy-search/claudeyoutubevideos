@@ -113,7 +113,7 @@ export const OleTrick: React.FC<{ title: string; text: string; bed?: string }> =
 };
 
 /* ---------------------------------------------------------------- FACT */
-export const OleFact: React.FC<{ big: string; unit: string; text?: string; source: string; bed?: string }> = ({ big, unit, text, source, bed }) => {
+export const OleFact: React.FC<{ big: string; unit: string; text?: string; source?: string; bed?: string }> = ({ big, unit, text, source = "", bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames } = useVideoConfig();
   const p = pop(f, fps, 4, 12); const out = fadeOut(f, durationInFrames, 8);
   const gl = flicker(f, 3);
@@ -130,9 +130,9 @@ export const OleFact: React.FC<{ big: string; unit: string; text?: string; sourc
           {text ? <div style={{ fontFamily: SERIF, fontSize: 52, color: OLE.lanternSoft, marginTop: 18, opacity: s2, textShadow: "0 3px 0 rgba(0,0,0,0.5)" }}>{text}</div> : null}
         </div>
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 92, background: "rgba(14,9,5,0.72)", display: "flex", alignItems: "center", justifyContent: "center", opacity: s2 }}>
+      {source ? <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 92, background: "rgba(14,9,5,0.72)", display: "flex", alignItems: "center", justifyContent: "center", opacity: s2 }}>
         <div style={{ fontFamily: SERIF, fontSize: 34, color: OLE.paper, letterSpacing: 1 }}>{sourceLine(source)}</div>
-      </div>
+      </div> : null}
     </AbsoluteFill>
   );
 };
