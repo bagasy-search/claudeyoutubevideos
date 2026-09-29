@@ -16,6 +16,8 @@ export function direccion({ W, Lf, Le, TL, Tsrc, TOTAL, FPS, still }) {
   // 0-4 s: la escoba (foley puro) — whoosh + golpe al primer corte
   SFX.push({ src: WH, from: 62, vol: 0.45 });
   // "Una hora." ★ golpe tipográfico
+  // s1_01: 3 tomas con los labios de otra frase → se TAPA con un congelado de su primer cuadro (mirada a cámara) + el golpe
+  { const f = Lf("s1_01"), b = base(f); if (b) ov("TfbFreeze", f, Le("s1_01") - f + 2, { src: b.src, frame: b.startFrom + 2 }, "sfx/universfield-camera-shutter-199580.mp3"); }
   ov("TfbTitleSlam", W("s1_01", "hora", 0, -0.35), 60, { lines: [{ t: "1 HORA", style: "yellow", size: 190 }], y: 30 }, SLAM);
   CAM.push({ at: W("s1_01", "muestro"), punch: 1.2, x: 0.5, y: 0.35 });
   // cortes del tráiler: whoosh suave en cada uno

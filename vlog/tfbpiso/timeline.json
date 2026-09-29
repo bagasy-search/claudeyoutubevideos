@@ -1,0 +1,2258 @@
+{
+ "TOTAL": 30029,
+ "TL": [
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t01.mp4",
+   "from": 0,
+   "dur": 66,
+   "startFrom": 4,
+   "trl": "t01"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t02.mp4",
+   "from": 66,
+   "dur": 54,
+   "startFrom": 4,
+   "trl": "t02"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S1.mp4",
+   "from": 120,
+   "dur": 286,
+   "startFrom": 0,
+   "scene": "S1",
+   "sceneFrom": 0,
+   "gamma": 1.21,
+   "punch": [
+    {
+     "f": 45,
+     "s": 1.22,
+     "x": 0.5,
+     "y": 0.34
+    },
+    {
+     "f": 90,
+     "s": 1,
+     "x": 0.5,
+     "y": 0.34
+    },
+    {
+     "f": 135,
+     "s": 1.35,
+     "x": 0.5,
+     "y": 0.34
+    },
+    {
+     "f": 180,
+     "s": 1.1,
+     "x": 0.5,
+     "y": 0.34
+    },
+    {
+     "f": 226,
+     "s": 1.2,
+     "x": 0.5,
+     "y": 0.35
+    },
+    {
+     "f": 270,
+     "s": 1,
+     "x": 0.5,
+     "y": 0.34
+    }
+   ],
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t03.mp4",
+   "from": 406,
+   "dur": 57,
+   "startFrom": 12,
+   "trl": "t03"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t14.mp4",
+   "from": 463,
+   "dur": 58,
+   "startFrom": 12,
+   "trl": "t14"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t04.mp4",
+   "from": 521,
+   "dur": 57,
+   "startFrom": 12,
+   "trl": "t04"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t05.mp4",
+   "from": 578,
+   "dur": 57,
+   "startFrom": 12,
+   "trl": "t05"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t15.mp4",
+   "from": 635,
+   "dur": 53,
+   "startFrom": 12,
+   "trl": "t15"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t06.mp4",
+   "from": 688,
+   "dur": 53,
+   "startFrom": 12,
+   "trl": "t06"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t07.mp4",
+   "from": 741,
+   "dur": 53,
+   "startFrom": 12,
+   "trl": "t07"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t08.mp4",
+   "from": 794,
+   "dur": 53,
+   "startFrom": 12,
+   "trl": "t08"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t09.mp4",
+   "from": 847,
+   "dur": 53,
+   "startFrom": 12,
+   "trl": "t09"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t10.mp4",
+   "from": 900,
+   "dur": 88,
+   "startFrom": 12,
+   "trl": "t10"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/T_t11.mp4",
+   "from": 988,
+   "dur": 88,
+   "startFrom": 12,
+   "trl": "t11"
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S1.mp4",
+   "from": 1076,
+   "dur": 767,
+   "startFrom": 286,
+   "scene": "S1",
+   "sceneFrom": 286,
+   "gamma": 1.21,
+   "punch": [
+    {
+     "f": 45,
+     "s": 1.22,
+     "x": 0.5,
+     "y": 0.34
+    },
+    {
+     "f": 75,
+     "s": 1.18,
+     "x": 0.5,
+     "y": 0.35
+    },
+    {
+     "f": 135,
+     "s": 1.35,
+     "x": 0.5,
+     "y": 0.34
+    },
+    {
+     "f": 258,
+     "s": 1,
+     "x": 0.5,
+     "y": 0.4
+    },
+    {
+     "f": 315,
+     "s": 1.35,
+     "x": 0.5,
+     "y": 0.34
+    },
+    {
+     "f": 360,
+     "s": 1.1,
+     "x": 0.5,
+     "y": 0.34
+    },
+    {
+     "f": 482,
+     "s": 1.22,
+     "x": 0.5,
+     "y": 0.33
+    },
+    {
+     "f": 521,
+     "s": 1,
+     "x": 0.5,
+     "y": 0.4
+    },
+    {
+     "f": 585,
+     "s": 1.22,
+     "x": 0.5,
+     "y": 0.34
+    },
+    {
+     "f": 631,
+     "s": 1.25,
+     "x": 0.5,
+     "y": 0.32
+    },
+    {
+     "f": 693,
+     "s": 1.45,
+     "x": 0.52,
+     "y": 0.3
+    },
+    {
+     "f": 720,
+     "s": 1.1,
+     "x": 0.5,
+     "y": 0.34
+    }
+   ]
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S2.mp4",
+   "from": 1843,
+   "dur": 1715,
+   "startFrom": 0,
+   "scene": "S2",
+   "sceneFrom": 0,
+   "gamma": 1.21,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S3.mp4",
+   "from": 3558,
+   "dur": 2423,
+   "startFrom": 0,
+   "scene": "S3",
+   "sceneFrom": 0,
+   "gamma": 1.24,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S3B.mp4",
+   "from": 5981,
+   "dur": 2338,
+   "startFrom": 0,
+   "scene": "S3B",
+   "sceneFrom": 0,
+   "gamma": 1.15,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S4.mp4",
+   "from": 8319,
+   "dur": 2429,
+   "startFrom": 0,
+   "scene": "S4",
+   "sceneFrom": 0,
+   "gamma": 1.16,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S4B.mp4",
+   "from": 10748,
+   "dur": 1116,
+   "startFrom": 0,
+   "scene": "S4B",
+   "sceneFrom": 0,
+   "gamma": 1.17,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S5.mp4",
+   "from": 11864,
+   "dur": 349,
+   "startFrom": 0,
+   "scene": "S5",
+   "sceneFrom": 0,
+   "gamma": 1.19,
+   "whipIn": 7
+  },
+  {
+   "kind": "lam",
+   "src": "img/tfbpiso/lamina.jpg",
+   "from": 12213,
+   "dur": 1179,
+   "lam": true,
+   "keys": [
+    [
+     0,
+     0.5,
+     0.5,
+     1
+    ],
+    [
+     0.8833333333333333,
+     0.5,
+     0.36,
+     1.55
+    ],
+    [
+     11.816666666666668,
+     0.76,
+     0.66,
+     1.75
+    ],
+    [
+     22.55,
+     0.5,
+     0.9,
+     1.6
+    ],
+    [
+     36.583333333333336,
+     0.5,
+     0.5,
+     1
+    ]
+   ],
+   "marks": [
+    {
+     "from": 1.0833333333333335,
+     "to": 11.516666666666667,
+     "x": 0.02,
+     "y": 0.26,
+     "w": 0.96,
+     "h": 0.2
+    },
+    {
+     "from": 12.016666666666667,
+     "to": 22.25,
+     "x": 0.52,
+     "y": 0.49,
+     "w": 0.46,
+     "h": 0.34
+    },
+    {
+     "from": 22.75,
+     "to": 36.483333333333334,
+     "x": 0.03,
+     "y": 0.84,
+     "w": 0.94,
+     "h": 0.14
+    }
+   ]
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S5.mp4",
+   "from": 13392,
+   "dur": 778,
+   "startFrom": 349,
+   "scene": "S5",
+   "sceneFrom": 349,
+   "gamma": 1.19
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S6.mp4",
+   "from": 14170,
+   "dur": 2997,
+   "startFrom": 0,
+   "scene": "S6",
+   "sceneFrom": 0,
+   "gamma": 1.18,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S7.mp4",
+   "from": 17167,
+   "dur": 2722,
+   "startFrom": 0,
+   "scene": "S7",
+   "sceneFrom": 0,
+   "gamma": 1.23,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S8.mp4",
+   "from": 19889,
+   "dur": 2436,
+   "startFrom": 0,
+   "scene": "S8",
+   "sceneFrom": 0,
+   "gamma": 1.21,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S9.mp4",
+   "from": 22325,
+   "dur": 2061,
+   "startFrom": 0,
+   "scene": "S9",
+   "sceneFrom": 0,
+   "gamma": 1.21,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S9B.mp4",
+   "from": 24386,
+   "dur": 1423,
+   "startFrom": 0,
+   "scene": "S9B",
+   "sceneFrom": 0,
+   "gamma": 1.17,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S10.mp4",
+   "from": 25809,
+   "dur": 2514,
+   "startFrom": 0,
+   "scene": "S10",
+   "sceneFrom": 0,
+   "gamma": 1.21,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "src": "vid/tfbpiso/S11.mp4",
+   "from": 28323,
+   "dur": 1706,
+   "startFrom": 0,
+   "scene": "S11",
+   "sceneFrom": 0,
+   "gamma": 1.33,
+   "whipIn": 7
+  },
+  {
+   "kind": "vid",
+   "insert": true,
+   "src": "vid/tfbpiso/T_t12.mp4",
+   "from": 1292,
+   "dur": 64,
+   "startFrom": 20,
+   "rate": 0.6,
+   "foley": "vid/tfbpiso/T_t12.m4a",
+   "foleyVol": 0.45
+  },
+  {
+   "kind": "vid",
+   "insert": true,
+   "src": "vid/tfbpiso/T_t13.mp4",
+   "from": 1478,
+   "dur": 72,
+   "startFrom": 10,
+   "foley": null
+  }
+ ],
+ "OV": [
+  {
+   "c": "TfbFlash",
+   "from": 165,
+   "dur": 4,
+   "props": {
+    "peak": 0.55
+   }
+  },
+  {
+   "c": "TfbFlash",
+   "from": 255,
+   "dur": 4,
+   "props": {
+    "peak": 0.55
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 290,
+   "dur": 60,
+   "props": {
+    "lines": [
+     {
+      "t": "1 HORA",
+      "style": "yellow",
+      "size": 190
+     }
+    ],
+    "y": 30
+   }
+  },
+  {
+   "c": "TfbFreeze",
+   "from": 300,
+   "dur": 100,
+   "props": {
+    "src": "vid/tfbpiso/S1.mp4",
+    "frame": 182
+   }
+  },
+  {
+   "c": "TfbFlash",
+   "from": 1121,
+   "dur": 4,
+   "props": {
+    "peak": 0.55
+   }
+  },
+  {
+   "c": "TfbFlash",
+   "from": 1211,
+   "dur": 4,
+   "props": {
+    "peak": 0.55
+   }
+  },
+  {
+   "c": "TfbWipeCompare",
+   "from": 1239,
+   "dur": 78,
+   "props": {
+    "before": {
+     "src": "img/tfbpiso/antes.jpg"
+    },
+    "after": {
+     "src": "img/tfbpiso/despues.jpg"
+    },
+    "sweepFrom": 4,
+    "sweepFrames": 26,
+    "rest": 0.55
+   }
+  },
+  {
+   "c": "TfbFlash",
+   "from": 1391,
+   "dur": 4,
+   "props": {
+    "peak": 0.55
+   }
+  },
+  {
+   "c": "TfbFlash",
+   "from": 1661,
+   "dur": 4,
+   "props": {
+    "peak": 0.55
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 1772,
+   "dur": 91,
+   "props": {
+    "lines": [
+     {
+      "t": "AL PRINCIPIO",
+      "style": "yellowbox",
+      "size": 120
+     },
+     {
+      "t": "NO AL FINAL",
+      "style": "white",
+      "size": 96
+     }
+    ],
+    "y": 72,
+    "stagger": 7
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 2052,
+   "dur": 170,
+   "props": {
+    "step": 1,
+    "total": 8,
+    "label": "Picar"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 2222,
+   "dur": 171,
+   "props": {
+    "step": 2,
+    "total": 8,
+    "label": "Barrer y lavar"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 2393,
+   "dur": 179,
+   "props": {
+    "step": 3,
+    "total": 8,
+    "label": "Mojar"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 2572,
+   "dur": 246,
+   "props": {
+    "step": 4,
+    "total": 8,
+    "label": "Lechada"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 2818,
+   "dur": 183,
+   "props": {
+    "step": 5,
+    "total": 8,
+    "label": "Carpeta"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 3001,
+   "dur": 182,
+   "props": {
+    "step": 6,
+    "total": 8,
+    "label": "Fratás"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 3183,
+   "dur": 216,
+   "props": {
+    "step": 7,
+    "total": 8,
+    "label": "Escoba"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 3399,
+   "dur": 159,
+   "props": {
+    "step": 8,
+    "total": 8,
+    "label": "Juntas y agua"
+   }
+  },
+  {
+   "c": "TfbFreeze",
+   "from": 3724,
+   "dur": 110,
+   "props": {
+    "src": "vid/tfbpiso/S3.mp4",
+    "frame": 166
+   }
+  },
+  {
+   "c": "TfbZoomCircle",
+   "from": 3724,
+   "dur": 110,
+   "props": {
+    "src": "img/tfbpiso/fz_s3_01.jpg",
+    "video": false,
+    "keys": [
+     {
+      "f": 0,
+      "x": 0.36,
+      "y": 0.8
+     }
+    ],
+    "zoom": 2.6,
+    "lens": {
+     "x": 0.75,
+     "y": 0.36
+    },
+    "label": "áspero, no suelta nada"
+   }
+  },
+  {
+   "c": "TfbCheckList",
+   "from": 4349,
+   "dur": 95,
+   "props": {
+    "title": "SOLO CEMENTO Y AGUA",
+    "rows": [
+     {
+      "t": "Se hace polvo",
+      "ok": false,
+      "at": 4
+     },
+     {
+      "t": "Salta en placas",
+      "ok": false,
+      "at": 16
+     }
+    ],
+    "side": "right"
+   }
+  },
+  {
+   "c": "TfbLayerCut",
+   "from": 4444,
+   "dur": 225,
+   "props": {
+    "layers": [
+     {
+      "key": "viejo",
+      "label": "Piso viejo, mojado",
+      "color": "#8c8578",
+      "h": 170,
+      "at": 4,
+      "cracked": true
+     },
+     {
+      "key": "agua",
+      "label": "Húmedo, sin charcos",
+      "color": "#6d7f8f",
+      "h": 10,
+      "at": 20,
+      "wet": true,
+      "thin": true
+     },
+     {
+      "key": "puente",
+      "label": "Lechada con cola",
+      "color": "#5f5a52",
+      "h": 26,
+      "at": 36
+     },
+     {
+      "key": "carpeta",
+      "label": "Carpeta 1 : 3",
+      "color": "#a39d91",
+      "h": 120,
+      "at": 52,
+      "grain": true
+     },
+     {
+      "key": "rayado",
+      "label": "Rayado de escoba",
+      "color": "#b3ada2",
+      "h": 12,
+      "at": 70,
+      "grooves": true,
+      "thin": true
+     }
+    ],
+    "title": "Lo que sí aguanta"
+   }
+  },
+  {
+   "c": "TfbRatio",
+   "from": 5474,
+   "dur": 316,
+   "props": {
+    "a": {
+     "n": 1,
+     "label": "CEMENTO",
+     "color": "#8e8a84"
+    },
+    "b": {
+     "n": 3,
+     "label": "ARENA",
+     "color": "#d6b98a",
+     "speck": "#a88b5c"
+    },
+    "title": "La carpeta",
+    "footer": "Siempre el mismo balde"
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 5933,
+   "dur": 70,
+   "props": {
+    "lines": [
+     {
+      "t": "COMO TIERRA HÚMEDA",
+      "style": "white",
+      "size": 96
+     },
+     {
+      "t": "NO CHORREA",
+      "style": "yellowbox",
+      "size": 80
+     }
+    ],
+    "y": 78
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 6286,
+   "dur": 80,
+   "props": {
+    "lines": [
+     {
+      "t": "NO SE PISA",
+      "style": "redbox",
+      "size": 96
+     },
+     {
+      "t": "HASTA QUE ESTÉ DURO",
+      "style": "white",
+      "size": 84
+     }
+    ],
+    "y": 76
+   }
+  },
+  {
+   "c": "TfbBroomTexture",
+   "from": 6564,
+   "dur": 120,
+   "props": {
+    "passFrom": 6,
+    "passFrames": 70,
+    "note": "antideslizante",
+    "noteAt": 70
+   }
+  },
+  {
+   "c": "TfbCheckList",
+   "from": 7039,
+   "dur": 524,
+   "props": {
+    "title": "NO VA",
+    "rows": [
+     {
+      "t": "Con rodillo",
+      "ok": false,
+      "at": 2
+     },
+     {
+      "t": "Sobre tierra",
+      "ok": false,
+      "at": 253
+     }
+    ],
+    "side": "right"
+   }
+  },
+  {
+   "c": "TfbCheckList",
+   "from": 8554,
+   "dur": 446,
+   "props": {
+    "title": "NO SIRVE SI",
+    "rows": [
+     {
+      "t": "Humedad que sube",
+      "ok": false,
+      "at": 10
+     },
+     {
+      "t": "Grietas que se mueven",
+      "ok": false,
+      "at": 222
+     },
+     {
+      "t": "El piso se hunde",
+      "ok": false,
+      "at": 369
+     }
+    ]
+   }
+  },
+  {
+   "c": "TfbScribble",
+   "from": 9647,
+   "dur": 80,
+   "props": {
+    "marks": [
+     {
+      "kind": "circle",
+      "x": 0.5,
+      "y": 0.8,
+      "w": 0.22,
+      "h": 0.16,
+      "at": 0,
+      "note": "hueco = suelto",
+      "noteDy": -150
+     }
+    ]
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 10296,
+   "dur": 90,
+   "props": {
+    "lines": [
+     {
+      "t": "GUANTES",
+      "style": "white",
+      "size": 96
+     },
+     {
+      "t": "BOTAS",
+      "style": "white",
+      "size": 96
+     },
+     {
+      "t": "GAFAS",
+      "style": "yellowbox",
+      "size": 96
+     }
+    ],
+    "x": 80,
+    "y": 45,
+    "align": "right",
+    "stagger": 6
+   }
+  },
+  {
+   "c": "TfbCheckList",
+   "from": 10748,
+   "dur": 918,
+   "props": {
+    "title": "LO QUE NECESITAS",
+    "titleColor": "yellow",
+    "rows": [
+     {
+      "t": "Cemento y arena",
+      "ok": true,
+      "at": 8
+     },
+     {
+      "t": "Cola vinílica",
+      "ok": true,
+      "at": 224
+     },
+     {
+      "t": "Regla y fratás",
+      "ok": true,
+      "at": 481
+     },
+     {
+      "t": "Escoba de patio",
+      "ok": true,
+      "at": 692
+     }
+    ],
+    "side": "right"
+   }
+  },
+  {
+   "c": "TfbQrCard",
+   "from": 13523,
+   "dur": 662,
+   "props": {
+    "qr": "img/tfbpiso/qr_tfbpiso.png",
+    "cover": "img/tfbpiso/portada-coleccion.jpg",
+    "kicker": "Escanea con tu teléfono",
+    "line": "o el enlace en la descripción",
+    "url": "constructorlibre.com"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 14518,
+   "dur": 110,
+   "props": {
+    "step": 1,
+    "total": 13,
+    "label": "Picar",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbFreeze",
+   "from": 14757,
+   "dur": 100,
+   "props": {
+    "src": "vid/tfbpiso/S6.mp4",
+    "frame": 587
+   }
+  },
+  {
+   "c": "TfbZoomCircle",
+   "from": 14757,
+   "dur": 100,
+   "props": {
+    "src": "img/tfbpiso/fz_s6_03.jpg",
+    "video": false,
+    "keys": [
+     {
+      "f": 0,
+      "x": 0.5,
+      "y": 0.62
+     }
+    ],
+    "zoom": 2.3,
+    "label": "suelto por abajo"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 15226,
+   "dur": 110,
+   "props": {
+    "step": 2,
+    "total": 13,
+    "label": "Barrer y lavar",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 15907,
+   "dur": 110,
+   "props": {
+    "step": 3,
+    "total": 13,
+    "label": "Mojar",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 16118,
+   "dur": 75,
+   "props": {
+    "lines": [
+     {
+      "t": "EL PASO QUE",
+      "style": "white",
+      "size": 88
+     },
+     {
+      "t": "CASI TODOS SE SALTEAN",
+      "style": "yellowbox",
+      "size": 78
+     }
+    ],
+    "y": 76
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 16464,
+   "dur": 110,
+   "props": {
+    "step": 4,
+    "total": 13,
+    "label": "Guías y pendiente",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbScribble",
+   "from": 16827,
+   "dur": 85,
+   "props": {
+    "marks": [
+     {
+      "kind": "arrow",
+      "x": 0.35,
+      "y": 0.55,
+      "to": {
+       "x": 0.8,
+       "y": 0.85
+      },
+      "at": 0,
+      "note": "hacia el desagüe",
+      "noteDy": -120
+     }
+    ]
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 17167,
+   "dur": 110,
+   "props": {
+    "step": 5,
+    "total": 13,
+    "label": "Mezcla 1 : 3",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 17673,
+   "dur": 60,
+   "props": {
+    "lines": [
+     {
+      "t": "EL AGUA, DE A POCO",
+      "style": "white",
+      "size": 88
+     }
+    ],
+    "y": 80
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 18934,
+   "dur": 110,
+   "props": {
+    "step": 6,
+    "total": 13,
+    "label": "Lechada",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 19179,
+   "dur": 80,
+   "props": {
+    "lines": [
+     {
+      "t": "ERROR Nº 2",
+      "style": "redbox",
+      "size": 120
+     }
+    ],
+    "y": 30
+   }
+  },
+  {
+   "c": "TfbLayerCut",
+   "from": 19550,
+   "dur": 140,
+   "props": {
+    "layers": [
+     {
+      "key": "viejo",
+      "label": "Piso viejo, mojado",
+      "color": "#8c8578",
+      "h": 170,
+      "at": 4,
+      "cracked": true
+     },
+     {
+      "key": "agua",
+      "label": "Piso mojado",
+      "color": "#6d7f8f",
+      "h": 10,
+      "at": 20,
+      "wet": true,
+      "thin": true
+     },
+     {
+      "key": "puente",
+      "label": "Lechada YA SECA",
+      "color": "#5f5a52",
+      "h": 26,
+      "at": 36
+     },
+     {
+      "key": "carpeta",
+      "label": "Carpeta 1 : 3",
+      "color": "#a39d91",
+      "h": 120,
+      "at": 52,
+      "grain": true
+     }
+    ],
+    "mode": "absorb",
+    "absorbAt": 40,
+    "peelAt": 80,
+    "title": "Lechada seca = separa",
+    "badLabel": "no pega"
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 19828,
+   "dur": 70,
+   "props": {
+    "lines": [
+     {
+      "t": "FRESCA SOBRE FRESCA",
+      "style": "yellowbox",
+      "size": 104
+     }
+    ],
+    "y": 78
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 20122,
+   "dur": 110,
+   "props": {
+    "step": 7,
+    "total": 13,
+    "label": "Lechada al piso",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 20327,
+   "dur": 110,
+   "props": {
+    "step": 8,
+    "total": 13,
+    "label": "Carpeta",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 20593,
+   "dur": 80,
+   "props": {
+    "lines": [
+     {
+      "t": "MÍNIMO:",
+      "style": "white",
+      "size": 80
+     },
+     {
+      "t": "UN DEDO",
+      "style": "yellowbox",
+      "size": 130
+     }
+    ],
+    "x": 78,
+    "y": 40
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 20752,
+   "dur": 110,
+   "props": {
+    "step": 9,
+    "total": 13,
+    "label": "Regla",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 21369,
+   "dur": 110,
+   "props": {
+    "step": 10,
+    "total": 13,
+    "label": "Fratás",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 22220,
+   "dur": 70,
+   "props": {
+    "lines": [
+     {
+      "t": "LA HORA",
+      "style": "yellow",
+      "size": 140
+     },
+     {
+      "t": "QUE TE PROMETÍ",
+      "style": "white",
+      "size": 80
+     }
+    ],
+    "y": 30
+   }
+  },
+  {
+   "c": "TfbBroomTexture",
+   "from": 22667,
+   "dur": 160,
+   "props": {
+    "early": true,
+    "passFrom": 4,
+    "passFrames": 50,
+    "note": "muy pronto: arranca",
+    "noteAt": 50
+   }
+  },
+  {
+   "c": "TfbFreeze",
+   "from": 23002,
+   "dur": 66,
+   "props": {
+    "src": "vid/tfbpiso/S9.mp4",
+    "frame": 677,
+    "note": "ESE ES EL PUNTO",
+    "noteY": 0.12
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 23028,
+   "dur": 110,
+   "props": {
+    "step": 11,
+    "total": 13,
+    "label": "Escoba",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 23496,
+   "dur": 110,
+   "props": {
+    "step": 12,
+    "total": 13,
+    "label": "Juntas",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbScribble",
+   "from": 24333,
+   "dur": 75,
+   "props": {
+    "marks": [
+     {
+      "kind": "underline",
+      "x": 0.5,
+      "y": 0.7,
+      "w": 0.5,
+      "at": 0,
+      "note": "se raja acá adentro",
+      "noteDy": -110
+     }
+    ]
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 24477,
+   "dur": 80,
+   "props": {
+    "lines": [
+     {
+      "t": "MARTA",
+      "style": "yellow",
+      "size": 110
+     },
+     {
+      "t": "AREQUIPA, PERÚ",
+      "style": "white",
+      "size": 70
+     }
+    ],
+    "x": 22,
+    "y": 30,
+    "align": "left",
+    "tilt": -1
+   }
+  },
+  {
+   "c": "TfbStepCounter",
+   "from": 25809,
+   "dur": 110,
+   "props": {
+    "step": 13,
+    "total": 13,
+    "label": "Curado",
+    "corner": "tl"
+   }
+  },
+  {
+   "c": "TfbCureCalendar",
+   "from": 26219,
+   "dur": 263,
+   "props": {
+    "days": [
+     "DÍA 1",
+     "DÍA 2",
+     "DÍA 3",
+     "…"
+    ],
+    "title": "Húmedo varios días",
+    "meter": "GANA FUERZA"
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 26648,
+   "dur": 70,
+   "props": {
+    "lines": [
+     {
+      "t": "MOJAR EL PISO VIEJO",
+      "style": "yellowbox",
+      "size": 104
+     }
+    ],
+    "y": 30
+   }
+  },
+  {
+   "c": "TfbLayerCut",
+   "from": 26975,
+   "dur": 437,
+   "props": {
+    "layers": [
+     {
+      "key": "viejo",
+      "label": "Piso viejo SECO",
+      "color": "#8c8578",
+      "h": 170,
+      "at": 4,
+      "cracked": true
+     },
+     {
+      "key": "agua",
+      "label": "Sin agua",
+      "color": "#8c8578",
+      "h": 10,
+      "at": 20,
+      "wet": false,
+      "thin": true
+     },
+     {
+      "key": "puente",
+      "label": "Lechada con cola",
+      "color": "#5f5a52",
+      "h": 26,
+      "at": 36
+     },
+     {
+      "key": "carpeta",
+      "label": "Carpeta 1 : 3",
+      "color": "#a39d91",
+      "h": 120,
+      "at": 52,
+      "grain": true
+     }
+    ],
+    "mode": "absorb",
+    "absorbAt": 30,
+    "peelAt": 207,
+    "title": "Piso seco = esponja",
+    "badLabel": "¡se levanta en placas!"
+   }
+  },
+  {
+   "c": "TfbDropTest",
+   "from": 27592,
+   "dur": 484,
+   "props": {
+    "title": "La prueba de la gota",
+    "leftLabel": "TIENE SED: MOJA MÁS",
+    "rightLabel": "CERA O GRASA: NO PEGA"
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 28125,
+   "dur": 80,
+   "props": {
+    "lines": [
+     {
+      "t": "HÚMEDO",
+      "style": "white",
+      "size": 120
+     },
+     {
+      "t": "NO INUNDADO",
+      "style": "redbox",
+      "size": 90
+     }
+    ],
+    "y": 74
+   }
+  },
+  {
+   "c": "TfbWipeCompare",
+   "from": 29056,
+   "dur": 150,
+   "props": {
+    "before": {
+     "src": "img/tfbpiso/antes.jpg"
+    },
+    "after": {
+     "src": "img/tfbpiso/despues.jpg"
+    },
+    "sweepFrom": 3,
+    "sweepFrames": 30,
+    "rest": 1.25
+   }
+  },
+  {
+   "c": "TfbQrCard",
+   "from": 29535,
+   "dur": 258,
+   "props": {
+    "qr": "img/tfbpiso/qr_tfbpiso.png",
+    "cover": "img/tfbpiso/portada-coleccion.jpg",
+    "kicker": "La colección del canal",
+    "line": "o el enlace en la descripción",
+    "url": "constructorlibre.com"
+   }
+  },
+  {
+   "c": "TfbTitleSlam",
+   "from": 29773,
+   "dur": 266,
+   "props": {
+    "lines": [
+     {
+      "t": "PICAR · LAVAR · MOJAR",
+      "style": "white",
+      "size": 76
+     },
+     {
+      "t": "LECHADA · CARPETA",
+      "style": "white",
+      "size": 76
+     },
+     {
+      "t": "ESCOBA · AGUA",
+      "style": "yellowbox",
+      "size": 86
+     }
+    ],
+    "y": 34,
+    "stagger": 12
+   }
+  }
+ ],
+ "chap": [
+  [
+   "gancho",
+   0
+  ],
+  [
+   "S1",
+   120
+  ],
+  [
+   "S2",
+   1843
+  ],
+  [
+   "S3",
+   3558
+  ],
+  [
+   "S3B",
+   5981
+  ],
+  [
+   "S4",
+   8319
+  ],
+  [
+   "S4B",
+   10748
+  ],
+  [
+   "S5",
+   11864
+  ],
+  [
+   "LÁMINA",
+   12213
+  ],
+  [
+   "S6",
+   14170
+  ],
+  [
+   "S7",
+   17167
+  ],
+  [
+   "S8",
+   19889
+  ],
+  [
+   "S9",
+   22325
+  ],
+  [
+   "S9B",
+   24386
+  ],
+  [
+   "S10",
+   25809
+  ],
+  [
+   "S11",
+   28323
+  ]
+ ],
+ "lineAt": {
+  "s1_w1": {
+   "f": 120,
+   "t0": null,
+   "S": "S1"
+  },
+  "s1_01": {
+   "f": 300,
+   "t0": 0,
+   "S": "S1"
+  },
+  "s1_v1": {
+   "f": 406,
+   "t0": 3.255
+  },
+  "s1_v2": {
+   "f": 635,
+   "t0": 10.895
+  },
+  "s1_v3": {
+   "f": 900,
+   "t0": 19.715
+  },
+  "s1_02": {
+   "f": 1076,
+   "t0": 25.595,
+   "S": "S1"
+  },
+  "s1_03": {
+   "f": 1334,
+   "t0": 33.905,
+   "S": "S1"
+  },
+  "s1_04": {
+   "f": 1597,
+   "t0": 42.695,
+   "S": "S1"
+  },
+  "s2_01": {
+   "f": 1843,
+   "t0": 50.885,
+   "S": "S2"
+  },
+  "s2_02": {
+   "f": 2052,
+   "t0": 57.835,
+   "S": "S2"
+  },
+  "s2_03": {
+   "f": 2222,
+   "t0": 63.525,
+   "S": "S2"
+  },
+  "s2_04": {
+   "f": 2393,
+   "t0": 69.225,
+   "S": "S2"
+  },
+  "s2_05": {
+   "f": 2572,
+   "t0": 75.195,
+   "S": "S2"
+  },
+  "s2_06": {
+   "f": 2818,
+   "t0": 83.385,
+   "S": "S2"
+  },
+  "s2_07": {
+   "f": 3001,
+   "t0": 89.495,
+   "S": "S2"
+  },
+  "s2_08": {
+   "f": 3183,
+   "t0": 95.555,
+   "S": "S2"
+  },
+  "s2_09": {
+   "f": 3399,
+   "t0": 102.755,
+   "S": "S2"
+  },
+  "s3_01": {
+   "f": 3558,
+   "t0": 108.055,
+   "S": "S3"
+  },
+  "s3_02": {
+   "f": 3793,
+   "t0": 115.895,
+   "S": "S3"
+  },
+  "s3_03": {
+   "f": 3993,
+   "t0": 122.555,
+   "S": "S3"
+  },
+  "s3_04": {
+   "f": 4199,
+   "t0": 129.425,
+   "S": "S3"
+  },
+  "s3_05": {
+   "f": 4417,
+   "t0": 136.695,
+   "S": "S3"
+  },
+  "s3_w1": {
+   "f": 4639,
+   "t0": null,
+   "S": "S3"
+  },
+  "s3_06": {
+   "f": 4909,
+   "t0": 144.085,
+   "S": "S3"
+  },
+  "s3_07": {
+   "f": 5124,
+   "t0": 151.255,
+   "S": "S3"
+  },
+  "s3_08": {
+   "f": 5353,
+   "t0": 158.885,
+   "S": "S3"
+  },
+  "s3_09": {
+   "f": 5555,
+   "t0": 165.605,
+   "S": "S3"
+  },
+  "s3_10": {
+   "f": 5789,
+   "t0": 173.435,
+   "S": "S3"
+  },
+  "s3b_01": {
+   "f": 5981,
+   "t0": 179.815,
+   "S": "S3B"
+  },
+  "s3b_02": {
+   "f": 6216,
+   "t0": 187.635,
+   "S": "S3B"
+  },
+  "s3b_03": {
+   "f": 6480,
+   "t0": 196.455,
+   "S": "S3B"
+  },
+  "s3b_04": {
+   "f": 6764,
+   "t0": 205.565,
+   "S": "S3B"
+  },
+  "s3b_05": {
+   "f": 7025,
+   "t0": 214.275,
+   "S": "S3B"
+  },
+  "s3b_06": {
+   "f": 7292,
+   "t0": 223.155,
+   "S": "S3B"
+  },
+  "s3b_08": {
+   "f": 7562,
+   "t0": 232.175,
+   "S": "S3B"
+  },
+  "s3b_09": {
+   "f": 7793,
+   "t0": 239.645,
+   "S": "S3B"
+  },
+  "s3b_07": {
+   "f": 8051,
+   "t0": 248.255,
+   "S": "S3B"
+  },
+  "s4_01": {
+   "f": 8319,
+   "t0": 257.195,
+   "S": "S4"
+  },
+  "s4_02": {
+   "f": 8554,
+   "t0": 265.015,
+   "S": "S4"
+  },
+  "s4_03": {
+   "f": 8768,
+   "t0": 272.175,
+   "S": "S4"
+  },
+  "s4_04": {
+   "f": 9001,
+   "t0": 279.915,
+   "S": "S4"
+  },
+  "s4_05": {
+   "f": 9227,
+   "t0": 287.445,
+   "S": "S4"
+  },
+  "s4_06": {
+   "f": 9497,
+   "t0": 296.475,
+   "S": "S4"
+  },
+  "s4_07": {
+   "f": 9779,
+   "t0": 305.845,
+   "S": "S4"
+  },
+  "s4_08": {
+   "f": 9966,
+   "t0": 312.095,
+   "S": "S4"
+  },
+  "s4_09": {
+   "f": 10228,
+   "t0": 320.835,
+   "S": "S4"
+  },
+  "s4_10": {
+   "f": 10505,
+   "t0": 330.075,
+   "S": "S4"
+  },
+  "s4b_01": {
+   "f": 10748,
+   "t0": 338.155,
+   "S": "S4B"
+  },
+  "s4b_02": {
+   "f": 11026,
+   "t0": 347.405,
+   "S": "S4B"
+  },
+  "s4b_03": {
+   "f": 11229,
+   "t0": 354.175,
+   "S": "S4B"
+  },
+  "s4b_04": {
+   "f": 11420,
+   "t0": 360.555,
+   "S": "S4B"
+  },
+  "s4b_05": {
+   "f": 11675,
+   "t0": 368.755,
+   "S": "S4B"
+  },
+  "s5_01": {
+   "f": 11864,
+   "t0": 375.085,
+   "S": "S5"
+  },
+  "s5_02": {
+   "f": 12006,
+   "t0": 379.685,
+   "S": "S5"
+  },
+  "LAM": {
+   "f": 12221,
+   "t0": 386.595
+  },
+  "s5_02b": {
+   "f": 13392,
+   "t0": 425.505,
+   "S": "S5"
+  },
+  "s5_03": {
+   "f": 13523,
+   "t0": 429.855,
+   "S": "S5"
+  },
+  "s5_04": {
+   "f": 13743,
+   "t0": 437.195,
+   "S": "S5"
+  },
+  "s5_05": {
+   "f": 13936,
+   "t0": 443.625,
+   "S": "S5"
+  },
+  "s6_00": {
+   "f": 14170,
+   "t0": 451.415,
+   "S": "S6"
+  },
+  "s6_01": {
+   "f": 14366,
+   "t0": 457.635,
+   "S": "S6"
+  },
+  "s6_02": {
+   "f": 14518,
+   "t0": 462.695,
+   "S": "S6"
+  },
+  "s6_03": {
+   "f": 14742,
+   "t0": 470.165,
+   "S": "S6"
+  },
+  "s6_04": {
+   "f": 14998,
+   "t0": 478.715,
+   "S": "S6"
+  },
+  "s6_05": {
+   "f": 15226,
+   "t0": 486.295,
+   "S": "S6"
+  },
+  "s6_06": {
+   "f": 15422,
+   "t0": 492.855,
+   "S": "S6"
+  },
+  "s6_07": {
+   "f": 15711,
+   "t0": 502.235,
+   "S": "S6"
+  },
+  "s6_08": {
+   "f": 15907,
+   "t0": 508.745,
+   "S": "S6"
+  },
+  "s6_08b": {
+   "f": 16203,
+   "t0": 518.635,
+   "S": "S6"
+  },
+  "s6_09": {
+   "f": 16464,
+   "t0": 527.315,
+   "S": "S6"
+  },
+  "s6_10": {
+   "f": 16709,
+   "t0": 535.495,
+   "S": "S6"
+  },
+  "s6_11": {
+   "f": 16941,
+   "t0": 543.215,
+   "S": "S6"
+  },
+  "s7_01": {
+   "f": 17167,
+   "t0": 550.755,
+   "S": "S7"
+  },
+  "s7_02": {
+   "f": 17373,
+   "t0": 557.605,
+   "S": "S7"
+  },
+  "s7_03": {
+   "f": 17623,
+   "t0": 565.955,
+   "S": "S7"
+  },
+  "s7_04": {
+   "f": 17828,
+   "t0": 572.785,
+   "S": "S7"
+  },
+  "s7_05": {
+   "f": 18060,
+   "t0": 580.535,
+   "S": "S7"
+  },
+  "s7_w1": {
+   "f": 18263,
+   "t0": null,
+   "S": "S7"
+  },
+  "s7_06": {
+   "f": 18473,
+   "t0": 587.275,
+   "S": "S7"
+  },
+  "s7_07": {
+   "f": 18695,
+   "t0": 594.695,
+   "S": "S7"
+  },
+  "s7_08": {
+   "f": 18934,
+   "t0": 602.665,
+   "S": "S7"
+  },
+  "s7_09": {
+   "f": 19170,
+   "t0": 610.535,
+   "S": "S7"
+  },
+  "s7_10": {
+   "f": 19403,
+   "t0": 618.295,
+   "S": "S7"
+  },
+  "s7_11": {
+   "f": 19662,
+   "t0": 626.915,
+   "S": "S7"
+  },
+  "s8_01": {
+   "f": 19889,
+   "t0": 634.485,
+   "S": "S8"
+  },
+  "s8_02": {
+   "f": 20122,
+   "t0": 642.265,
+   "S": "S8"
+  },
+  "s8_03": {
+   "f": 20327,
+   "t0": 649.095,
+   "S": "S8"
+  },
+  "s8_04": {
+   "f": 20524,
+   "t0": 655.645,
+   "S": "S8"
+  },
+  "s8_05": {
+   "f": 20752,
+   "t0": 663.255,
+   "S": "S8"
+  },
+  "s8_06": {
+   "f": 20964,
+   "t0": 670.325,
+   "S": "S8"
+  },
+  "s8_07": {
+   "f": 21161,
+   "t0": 676.895,
+   "S": "S8"
+  },
+  "s8_08": {
+   "f": 21369,
+   "t0": 683.815,
+   "S": "S8"
+  },
+  "s8_08b": {
+   "f": 21613,
+   "t0": 691.945,
+   "S": "S8"
+  },
+  "s8_09": {
+   "f": 21896,
+   "t0": 701.385,
+   "S": "S8"
+  },
+  "s8_10": {
+   "f": 22129,
+   "t0": 709.135,
+   "S": "S8"
+  },
+  "s9_01": {
+   "f": 22325,
+   "t0": 715.675,
+   "S": "S9"
+  },
+  "s9_02": {
+   "f": 22552,
+   "t0": 723.255,
+   "S": "S9"
+  },
+  "s9_03": {
+   "f": 22817,
+   "t0": 732.085,
+   "S": "S9"
+  },
+  "s9_04": {
+   "f": 23028,
+   "t0": 739.095,
+   "S": "S9"
+  },
+  "s9_05": {
+   "f": 23261,
+   "t0": 746.875,
+   "S": "S9"
+  },
+  "s9_06": {
+   "f": 23496,
+   "t0": 754.695,
+   "S": "S9"
+  },
+  "s9_07": {
+   "f": 23723,
+   "t0": 762.265,
+   "S": "S9"
+  },
+  "s9_07b": {
+   "f": 23907,
+   "t0": 768.415,
+   "S": "S9"
+  },
+  "s9_08": {
+   "f": 24136,
+   "t0": 776.045,
+   "S": "S9"
+  },
+  "s9b_01": {
+   "f": 24386,
+   "t0": 784.365,
+   "S": "S9B"
+  },
+  "s9b_02": {
+   "f": 24659,
+   "t0": 793.475,
+   "S": "S9B"
+  },
+  "s9b_03": {
+   "f": 24920,
+   "t0": 802.155,
+   "S": "S9B"
+  },
+  "s9b_04": {
+   "f": 25144,
+   "t0": 809.615,
+   "S": "S9B"
+  },
+  "s9b_05": {
+   "f": 25334,
+   "t0": 815.975,
+   "S": "S9B"
+  },
+  "s9b_06": {
+   "f": 25572,
+   "t0": 823.905,
+   "S": "S9B"
+  },
+  "s10_01": {
+   "f": 25809,
+   "t0": 831.795,
+   "S": "S10"
+  },
+  "s10_02": {
+   "f": 26000,
+   "t0": 838.155,
+   "S": "S10"
+  },
+  "s10_03": {
+   "f": 26219,
+   "t0": 845.465,
+   "S": "S10"
+  },
+  "s10_04": {
+   "f": 26467,
+   "t0": 853.715,
+   "S": "S10"
+  },
+  "s10_05": {
+   "f": 26693,
+   "t0": 861.265,
+   "S": "S10"
+  },
+  "s10_06": {
+   "f": 26909,
+   "t0": 868.465,
+   "S": "S10"
+  },
+  "s10_07": {
+   "f": 27152,
+   "t0": 876.575,
+   "S": "S10"
+  },
+  "s10_08": {
+   "f": 27402,
+   "t0": 884.895,
+   "S": "S10"
+  },
+  "s10_09": {
+   "f": 27592,
+   "t0": 891.235,
+   "S": "S10"
+  },
+  "s10_10": {
+   "f": 27809,
+   "t0": 898.475,
+   "S": "S10"
+  },
+  "s10_11": {
+   "f": 28067,
+   "t0": 907.055,
+   "S": "S10"
+  },
+  "s11_01": {
+   "f": 28323,
+   "t0": 915.605,
+   "S": "S11"
+  },
+  "s11_w1": {
+   "f": 28486,
+   "t0": null,
+   "S": "S11"
+  },
+  "s11_k1": {
+   "f": 28696,
+   "t0": null,
+   "S": "S11"
+  },
+  "s11_w2": {
+   "f": 28846,
+   "t0": null,
+   "S": "S11"
+  },
+  "s11_02": {
+   "f": 29056,
+   "t0": 921.035,
+   "S": "S11"
+  },
+  "s11_03": {
+   "f": 29307,
+   "t0": 928.995,
+   "S": "S11"
+  },
+  "s11_04": {
+   "f": 29535,
+   "t0": 936.595,
+   "S": "S11"
+  },
+  "s11_05": {
+   "f": 29773,
+   "t0": 944.535,
+   "S": "S11"
+  }
+ }
+}

@@ -34,9 +34,9 @@ export const TfbWipeCompare: React.FC<{
         <line x1={xTop} y1={-10} x2={xBot} y2={H + 10} stroke={TFB.yellow} strokeWidth={22} opacity={0.55} filter="url(#wc-glow)" />
         <line x1={xTop} y1={-10} x2={xBot} y2={H + 10} stroke={TFB.white} strokeWidth={9} />
       </svg>
-      <div style={{ position: "absolute", left: Math.max(60, xBot - 520), bottom: 70, transform: `scale(${interpolate(pa, [0, 1], [1.8, 1])}) rotate(-3deg)`, opacity: pa,
+      <div style={{ position: "absolute", left: Math.min(W - 620, Math.max(60, xBot - 520)), bottom: 70, transform: `scale(${interpolate(pa, [0, 1], [1.8, 1])}) rotate(-3deg)`, opacity: pa,
         fontFamily: ANTON, fontSize: 96, color: TFB.white, ...strokeText(6) }}>{afterLabel}</div>
-      <div style={{ position: "absolute", right: 70, top: 60, transform: `scale(${interpolate(pb, [0, 1], [1.8, 1])}) rotate(3deg)`, opacity: pb }}>
+      <div style={{ position: "absolute", right: 70, top: 60, transform: `scale(${interpolate(pb, [0, 1], [1.8, 1])}) rotate(3deg)`, opacity: pb * interpolate(pos, [0.85, 1], [1, 0], clamp) }}>
         <span style={{ fontFamily: ANTON, fontSize: 70, color: TFB.white, background: TFB.red, padding: "2px 24px 6px", borderRadius: 12, boxShadow: "0 8px 0 rgba(0,0,0,0.35)" }}>{beforeLabel}</span>
       </div>
     </AbsoluteFill>
