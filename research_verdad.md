@@ -1,0 +1,38 @@
+# research_verdad.md — olcabin (fuente de cada dato duro; verificado por búsqueda 29-sep-2026)
+Ole es un PERSONAJE: sin familias/fechas propias inventadas. Lo folklórico va dicho como "the story goes / some say". Opiniones = opinión de Ole.
+
+| # | Dato duro en el guion | Fuente | Estado |
+|---|---|---|---|
+| 25 | Egg coffee: escandinavos en MN/Dakotas, huevo + grounds en agua hirviendo, 1/2 taza de agua fría hunde los grounds, café de iglesia luterana | atlasobscura.com/articles/midwest-swedish-egg-coffee ; perfectduluthday.com/2011/02/01/egg-coffee/ ; wbez.org/curious-city/2023/04/20/what-is-swedish-egg-coffee | OK |
+| 24 | Fattigmann = "poor man"; yemas, crema, azúcar, coñac/brandy; cardamomo; fritura 350 F ~1,5 min | scandinaviancookbook.com/norwegian-fattigmann-poor-mans-cookies/ ; christmas-cookies.com/recipes/recipe19.fattigmann.html | OK |
+| 23 | Arenque encurtido: vinagre, azúcar, allspice, pimienta, cebolla roja, limón; unos días; "trial by herring" en familias sueco-americanas | csmonitor.com/1985/1120/jswede.html ; tastingtable.com/1362960 | OK |
+| 22 | Fruktsoppa: frutas secas + tapioca, canela, limón; postre navideño; noruegos = fruta oscura, suecos = clara | en.wikipedia.org/wiki/Fruktsoppa ; scalar.usc.edu/works/tastes-of-scandinavian-heritage/fruit-soup-the-forgotten-strength-of-scandinavia | OK |
+| 21 | Krumkake = "curved cake"; hierro; se enrolla en cono caliente; relleno crema/fruta | wisc.pb.unizin.org/mthoreb/chapter/norwegian-wafer-krumkake-iron/ ; goodshepherddecorah.org/a-primer-on-krumkake | OK |
+| 20 | Leipäjuusto / juustoa en la UP; chirría; horneado hasta manchas doradas; leche de vaca recién parida; café con queso al pretendiente | upwordmichigan.com/juustoa8311/ ; falstaff.com/nordics/news/the-finnish-cheese-that-squeaks | OK (folklore dicho como "the story goes") |
+| 19 | Nisu: término antiguo finés en la UP, significaba "trigo"; cardamomo, trenza de 3, huevo y azúcar | en.wikipedia.org/wiki/Cardamom_bread ; bgindependentmedia.org/?p=16945 | OK |
+| 18 | Risgrøt/risgrynsgröt Nochebuena, almendra escondida, cerdito de mazapán, abre regalo primero | scandinaviancookbook.com/risgrot-norwegian-rice-porridge ; eatshistory.com julegrot | OK |
+| 18 | Receta de Ole (1/2 taza arroz, 4 tazas leche, 1/3 azúcar, 40-50 min, mantequilla-vainilla-canela al final) | LIBRO p.60 Rice Pudding (ch6.json) | OK |
+| 17 | Manzana seca, té y manteca = lujos en campamentos tempranos | uphamwoods.extension.wisc.edu (Life of a Logger) ; foresthistory.org/wp-content/uploads/2018/03/Conlin.pdf | OK |
+| 17 | Receta (8 oz, 2 tazas cider, 15 min, maicena, 400 F 35-40 min sartén de hierro) | LIBRO p.59 Dried-Apple Skillet Pie | OK |
+| 16 | Potato sausage: cerdo+vaca, papa hervida, cebolla, sal, pimienta, allspice; llegó al Medio Oeste en el s. XIX; la papa estira la carne | folklife.si.edu/magazine/folklife-swedish-potatis-korv-potato-sausage ; meatsandsausages.com | OK |
+| 16 | Tienda escandinava en East Lake St. Mpls desde 1921, cola en Navidad | kcur.org/2014-12-22/for-norwegian-americans-christmas-cheer-is-wrapped-up-in-lefse | OK (el nombre NO se dice) |
+| 15 | Bannock: ojibwe ba'wezhiganag; comerciantes escoceses; voyageurs | thecanadianencyclopedia.ca/en/article/bannock | OK |
+| 15 | Medidas de Ole | LIBRO p.23 Bannock | OK |
+| 14 | Kringle: panaderos daneses, Racine; se vendía en 1922; pastelería estatal de WI 30-jun-2013; 36 capas a mano en una panadería | wgpfoundation.org/historic-markers/danish-kringle/ ; upnorthnewswi.com ; shepherdexpress.com | OK |
+| 13 | Receta salchicha+chucrut | LIBRO p.43 Sausage & Sauerkraut Skillet | OK ("cada pueblo guardó repollo" = opinión) |
+| 12 | Mojakka: guiso finés-americano MN/WI/MI; lihamojakka (carne) / kalamojakka (pescado); etimología "more Jacob" | mprnews.org/story/2015/12/02/appetites-iron-range-recipes ; lakesuperior.com/lifestyle/food/301recipebox/ | Etimología = FOLKLORE (Ole: "I can't prove it") |
+| 11 | Arroz silvestre = manoomin (ojibwe); grano estatal de MN en 1977; primer "hot dish" impreso 1930, Grace Lutheran Ladies Aid, Mankato (hamburger, macaroni, canned peas) | sos.mn.gov/about-minnesota/state-symbols/state-grain-wild-rice/ ; mprnews.org/story/2016/03/12/mankato-cookbook-gets-credit-for-first-hot-dish-recipe (leído) | OK |
+| 10 | Cuenta oficial de Suecia (28-abr-2018): receta traída por Carlos XII de Turquía; historiadores discrepan | thelocal.se/20180502 ; thelocal.se/20180504 ; atlasobscura.com/articles/swedish-meatballs-turkey | OK (dicho como "plenty argue") |
+| 9 | Lanttulaatikko: colinabo, pan rallado, crema, huevo, mantequilla, nuez moscada, ~1 h | harmonyvalleyfarm.com/recipes/finnish-rutabaga-casserole-lanttulaatikko/ | OK |
+| 8 | Pannukakku: panqueque-flan al horno, parte de las "4 P" finlandesas-americanas (pannukakku, piirakka, pulla, pasty) | UW-Madison "Four P's" (vía búsqueda); mynorth.com/towns/finns-finding-solace-in-the-upper-peninsulas-familiar-landscape/ | OK |
+| 7 | Lutefisk: bacalao seco, remojo en lejía (ceniza de madera), luego agua fresca; leyenda vikinga; cena de Mount Olivet desde 1929, ~1.500 personas (2016) | npr.org/sections/thesalt/2016/12/15/505389094 ; mprnews.org/story/2017/12/11 | OK (leyenda dicha como "some folks say") |
+| 6 | Limpa: pan de centeno sueco, azúcar moreno + melaza, anís/alcaravea/hinojo/naranja, Navidad | en.wikipedia.org/wiki/Limpa ; cooksinfo.com/limpa-bread | OK |
+| 5 | Receta chowder | LIBRO p.34 Salt-Pork Fish Chowder | OK ("no escandinava" lo dice Ole) |
+| 4 | Rømmegrøt: rømme = crema agria; bodas, bautismos, cosechas; 500 ml crema, 200 ml harina, 500 ml leche, sal; la grasa se separa y se vuelve a verter; canela | visitnorway.com/things-to-do/food-and-drink/the-norwegian-cookbook/rommegrot/ ; skjalden.com/rommegrot/ | OK (2 tazas / 3/4 taza / 2 tazas = conversión) |
+| 3 | Pasty: mineros cornualleses a la Iron Range (muchos venían de la UP de Michigan); finlandeses añadieron rutabaga; carne, papa, cebolla; "D" crimpeada al costado; skirt steak; en la Range a menudo carne molida | startribune.com/article/504505452 (429 al leer; datos vía búsqueda) ; minnesotamonthly.com/lifestyle/of-times-pasty/ ; cornishpastyassociation.co.uk (PGI 2011) | OK; hornos 400->350 F = método de Ole (no dato histórico) |
+| 3 | Masa 2,5 tazas harina / 1 c/c sal / 1 taza manteca fría / 6-8 c/s agua helada | LIBRO p.59 (masa de pie) | OK |
+| 2 | Booyah: inmigrantes belgas valones, Green Bay/Door County; "bouillon"; pollo+res+cerdo; zanahoria, papa, apio, cebolla, arvejas, rutabaga; especias en bolsa de estopilla; hasta 2 días; calderos de >50 galones; picnics de iglesia | en.wikipedia.org/wiki/Booyah_(stew) (leído) ; wbay.com 2026/01/08 | OK; proporciones caseras = método de Ole |
+| 1 | Lefse: papa + harina + manteca + crema; palo de lefse, rodillo acanalado, plancha; Noruega medieval; papa llegó en 1700s; inmigrantes en 1800s; círculo de lefse en el sótano de la iglesia 2 semanas antes de Navidad; masa fría o se pega y rompe | farmersalmanac.com/lefse-norwegian-potato-flatbread ; lifeinnorway.net/norwegian-lefse/ ; wbur.org/npr/371941681 | OK |
+| 1 | Proporciones Sons of Norway: por 4 tazas de papa pisada: 1/2 taza manteca derretida, 1/2 taza half&half, 1 c/s azúcar, 1 c/c sal; 1 taza de harina por 4 tazas de mezcla al 2do día; 5 lb russets | daringgourmet.com/norwegian-potato-lefse/ ; farmersalmanac.com traditional-norwegian-lefse-recipe | OK |
+
+Pendiente para ⛳2/3: licencias de cada foto de ARCHIVO (van a CREDITOS_archivo.txt). Las búsquedas devolvieron resúmenes; las páginas primarias que no se pudieron abrir (429/timeout) quedan marcadas arriba y se re-verifican antes de ⛳3 si el creador lo pide.

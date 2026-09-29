@@ -1,0 +1,185 @@
+# guion_filmado.txt — qué se VE en cada frase (plano = lo dicho EN ESE SEGUNDO)
+# Claves: [OLE]=Ole hablando a cámara (agnes 2.5 hablado o avatar) · [OLE-H]=manos de Ole haciendo la receta (agnes v2.0 detalle / 2.5 kf) · [STOCK]=Pexels on-topic 30/1 · [ARCH]=archivo real dominio público (LoC / Minnesota HS / Wisconsin HS / Wikimedia PD, con licencia anotada) · [IA]=foto gpt-image-2 estilo "fotograma accidental" · [3D]=pieza three.js · [COMP]=componente propio (props, sin texto quemado)
+# Minutos calculados con 15,35 car/s medidos con la voz `ole` (bloque de prueba 1038 c = 67,6 s). Total 17.381 c ≈ 19,0 min.
+
+P00 (0:00-0:26) HOOK — la caja de lata sobre el estante es el objeto
+ "Well, now. Come sit down, friend."  [OLE] cabaña, estufa de leña, saluda al espectador, hablado 2.5 (corte 0)
+ "This old tin box on my shelf holds twenty-five dishes…"  [3D] LA CAJA se abre: tapa que levanta, fichas asoman; [COMP] recorrido de fichas manuscritas (sin texto legible impuesto)
+ "…that used to fill every cabin kitchen up here in the north woods"  [3D] CABAÑA EN CORTE, cocina vacía con mesa; [ARCH] cocina de cabaña/inmigrantes escandinavos, sepia
+ "and hardly anybody makes them now."  [ARCH] mesa larga vacía de salón de iglesia / [IA] cocina abandonada con la estufa fría
+ "One of them has been through a bath of lye."  [OLE-H] balde de madera con pescado blanco en agua (v2.0, 2 s) + [COMP] riser
+ "And number one is a bread I can ruin in exactly one way…"  [COMP] masa de papa pegándose y rompiéndose sobre el tablero (v2.0) — PAGO de la promesa = #1 min 17:01
+ "…and I'll show you that way before we're done."  [OLE] mirada directa, dedo en alto
+ "Pour yourself a cup of coffee, and let's start at the bottom of the box."  [OLE-H] Ole sirve café de la cafetera esmaltada azul en la taza; [COMP] RecipeCountdown 25 entra
+
+P01 #25 EGG COFFEE (0:26)
+ egg coffee / an egg in the coffee  [OLE-H] huevo crudo que se rompe en un bol con café molido (v2.0)
+ Scandinavians who settled Minnesota and the Dakotas  [COMP] OriginMap Noruega/Suecia→Minnesota (ruta) ; [ARCH] inmigrantes escandinavos, foto PD
+ raw egg mixed into grounds… boiling water… foam settled  [OLE-H] mezcla con cuchara; [STOCK] olla de peltre con café hirviendo
+ half cup cold water, grounds sink  [OLE-H] vertido de agua fría; [COMP] corte transversal de la cafetera (grounds cayendo) — mini-3D
+ church basement coffee  [ARCH] salón de iglesia luterana con urnas de café / [STOCK] tazas en fila
+P02 #24 FATTIGMANN (0:59)
+ poor man / name is a joke  [COMP] GrandmaCard manuscrita "poor man" (prop) con ingredientes que caen: yemas, crema, azúcar, brandy
+ cut long diamonds, slit, pull one end through  [OLE-H] manos cortando rombos y pasando la punta (v2.0)
+ hot fat 350 for a minute and a half  [STOCK] fritura dorándose en grasa; [COMP] termómetro de grasa + cronómetro de 1:30 dentro de la sartén
+ powdered sugar, coffee beside  [IA] plato con fattigmann espolvoreados junto a taza azul
+P03 CTA (1:29, ~25 s, UNA vez)
+ "Quick word, friend…"  [OLE] plano medio hablado 2.5
+ "…fifty old camp recipes"  [3D] LibroRecetario3D cierra y muestra portada → [COMP] OleCTA: portada + QR REAL (~8 s) mientras dice "point your phone at this code"
+ "Now, back to the stove."  [OLE] gira hacia la estufa; corte a la olla
+P04 #23 PICKLED HERRING (1:55)
+ I know, I know / hear me out  [OLE] cara de duda
+ vinegar, sugar, water, allspice, peppercorns  [OLE-H] vertido de vinagre en cacerola; [COMP] especias cayendo (allspice/peppercorns) a la olla
+ herring layered with onion and lemon in a jar  [STOCK] frasco de arenque en capas; [IA] frasco sobre repisa
+ a couple of days in the cold  [COMP] calendario de hojas (2 días) sobre la repisa fría
+ on a cracker with sour cream / trial by herring / finish the cracker  [OLE-H] cucharada de crema sobre galleta; [IA] suegra mirando al nuevo yerno con el arenque (situación rara legible)
+P05 #22 FRUIT SOUP (2:24)
+ prunes, apricots, raisins, dried apples  [COMP] ingredientes secos en tazas de peltre, uno por uno (props)
+ simmered with tapioca… glossy as stained glass  [OLE-H] olla con la sopa espesándose; [STOCK] fruta seca hirviendo
+ bowl, warm or cold, Christmas  [IA] mesa navideña rústica con tazón de sopa de fruta
+ Norwegians vs Swedes, dark vs pale fruit  [COMP] dos tazones lado a lado, claro vs oscuro (props sin texto)
+P06 RESPUESTA A COMENTARIOS + OPEN LOOP (2:54)
+ you still make these / good!  [OLE] sonríe, hablado
+ tell me in the comments  [COMP] pila de cartas de comentarios (sobres) sobre la mesa — sin texto legible
+ number seven has been through a lye bath  [COMP] riser + destello del balde de madera con pescado (reuso del plano del hook)
+P07 #21 KRUMKAKE (3:14)
+ curved cake  [3D] hierro de krumkake abierto (three.js, opcional) ; [STOCK] plancha con patrón
+ thin batter on a patterned iron / roll around wooden cone  [OLE-H] manos enrollando galleta caliente en cono de madera
+ whipped cream and fruit  [IA] krumkake rellenos en plato
+ old irons over the fire / estate sale  [ARCH] hierros de krumkake Mount Horeb (Wikimedia/UW PD) ; [IA] mesa de venta de patrimonio con hierro
+P08 #20 LEIPÄJUUSTO (3:42)
+ Finnish bread cheese / Upper Peninsula, juustoa, squeaks  [COMP] OriginMap Finlandia→Península Superior ; [OLE] muerde y se oye el chirrido (foley)
+ fresh cheese pressed flat, baked or broiled, brown freckles  [OLE-H] queso en sartén de hierro bajo el asador; [STOCK] queso dorándose
+ first milk of a cow that just calved  [STOCK] vaca lechera en establo / [ARCH] granja lechera Wisconsin PD
+ warm with coffee and jam  [IA] plato con cuña de queso y café azul
+ suitor story  [COMP] GrandmaCard: taza + queso ofrecidos sobre mesa de cocina de época [ARCH]
+P09 #19 NISU (4:14)
+ Upper Peninsula still use old word / meant wheat  [COMP] OriginMap; [STOCK] trigo maduro
+ cardamom seed crushed  [OLE-H] mortero con cardamomo (v2.0)
+ braided three strands, egg wash, sugar  [OLE-H] manos trenzando masa; [STOCK] pan trenzado horneado
+ sliced thick, buttered, coffee  [IA] rebanada gruesa con manteca junto a taza
+P10 #18 RICE PORRIDGE (4:40) — libro p.60
+ risgrøt / risgrynsgröt / almond in the pot  [COMP] tazón con almendra oculta (corte de sección del arroz) + marzipan pig prop
+ winner opens a present first  [IA] familia en Nochebuena mirando el tazón con la almendra
+ half cup rice, four cups milk, third cup sugar  [OLE-H] medidas volcadas en olla pesada; [COMP] OleRuleCard (medidas como fichas de lata)
+ bare simmer, stir every five minutes, 40-50 min  [OLE-H] revolviendo; [COMP] reloj de estufa de leña
+ "This is a page from the book, page sixty"  [COMP] OleBookPage p.60 REAL (zoom punto por punto: 1/2 cup rice, 4 cups milk, "Ole's trick")
+P11 #17 DRIED-APPLE PIE (5:23) — libro p.59
+ logging camp in February  [ARCH] campamento maderero invierno (LoC / Minnesota HS PD) ; [STOCK] nevada en bosque
+ sack of dried apples, luxuries in early camps  [ARCH] cocina de campamento con cocinero (PD) ; [OLE-H] saco de manzanas secas
+ 8 oz in 2 cups cider, brown sugar, cinnamon, 15 min  [OLE-H] cacerola; [COMP] OleRuleCard
+ thicken cornstarch; two lard crusts; cast-iron; 400 F 35-40 min  [OLE-H] armado de pie en sartén de hierro; [STOCK] pie horneándose
+ "in the book, page fifty-nine"  [COMP] OleBookPage p.59 corta (2 s)
+ teaser porridge  [COMP] riser breve
+P12 #16 POTATO SAUSAGE (6:05)
+ ground pork and beef, potatoes, onion, allspice  [OLE-H] mezcla en bol; [STOCK] embutido casero / relleno de tripa
+ came with the Swedes in the 1800s / stretched meat  [ARCH] familia sueca inmigrante PD ; [COMP] OriginMap Suecia→Minnesota
+ next to meatballs and lingonberries  [IA] plato navideño con salchicha, albóndigas y arándanos rojos
+ shop on East Lake Street since 1921, folks line up  [ARCH] Franklin/Lake St. Minneapolis histórica (MNHS PD) — SÓLO si se encuentra; si no, [IA] fila de gente en tienda escandinava sin rótulo legible
+P13 #15 BANNOCK (6:41) — libro p.23
+ flour, baking powder, salt, fat, water  [OLE-H] harina en bol
+ Ojibwe / Scottish fur traders / voyageurs  [ARCH] voyageurs en canoa (PD, grabado/pintura de época) ; [COMP] OriginMap
+ measures  [COMP] OleRuleCard
+ medium-low, 6-7 min a side, cover  [OLE-H] sartén con bannock; [STOCK] masa dorándose
+ "page twenty-three"  [COMP] OleBookPage p.23 (2 s)
+P14 #14 KRINGLE (7:17)
+ Danish bakers, Racine, selling it by 1922  [ARCH] panadería/Racine PD si existe ; [COMP] OriginMap Dinamarca→Racine
+ big flat oval, paper-thin layers, filling  [STOCK] kringle cortado en capas ; [IA] mostrador de panadería
+ 36 layers by hand  [COMP] pastel de capas 3D que se despliega (three.js opcional, contador 36)
+ state pastry 2013 / ask a young person  [OLE] ceja levantada
+P15 MAPA DE ORIGEN (7:49)
+ Norway… Sweden… Finland… Denmark… Belgium… Cornish  [COMP] OriginMap completo: rutas de Noruega/Suecia/Finlandia/Dinamarca/Bélgica/Cornualles→ Minnesota-Wisconsin, cada plato como chincheta (la pieza WOW del min 7:49)
+ same table  [3D] Cabaña en corte con mesa larga que se llena de platos (parte 1)
+ number one still waiting on that one mistake  [OLE] dedo en alto + [COMP] riser
+P16 #13 SAUSAGE & SAUERKRAUT (8:26) — libro p.43
+ cabbage through a hard winter  [ARCH] barril de chucrut / cocina; [STOCK] repollo rallado
+ brown 1.5 lb sausage 6-8 min  [OLE-H] salchicha dorándose en sartén de hierro
+ onion, two apples, brown sugar, caraway, kraut, cider  [OLE-H] cada ingrediente entra; [COMP] OleRuleCard
+ cover, low, 20 min; potatoes and mustard  [STOCK] papas hervidas + mostaza; [IA] plato servido
+ "This is a page from the book, page forty-three"  [COMP] OleBookPage p.43 (zoom sobre "Ole's Trick": apple)
+P17 #12 MOJAKKA (9:08)
+ Finnish-American stew  [COMP] OriginMap; [ARCH] mineros finlandeses Iron Range PD
+ beef or fish; Iron Range fight  [IA] dos hombres discutiendo sobre dos ollas (situación legible)
+ more Jacob story  [COMP] GrandmaCard con dibujo de cocinero y rumor (sin texto)
+ potatoes, onion, hot bowl  [STOCK] estofado humeante
+P18 #11 WILD RICE HOTDISH (9:37)
+ manoomin, Ojibwe, centuries  [STOCK] arroz silvestre en canoa / [ARCH] cosecha de arroz silvestre Ojibwe (MNHS PD)
+ state grain 1977  [COMP] insignia/lata "state grain" (prop sin texto)
+ hotdish first printed 1930, Grace Lutheran Ladies Aid, Mankato  [COMP] libro de recetas de iglesia de época pasando páginas (3D LibroRecetario) — página con "hamburger, macaroni, canned peas" manuscrita sólo si texto propio
+ brown meat, wild rice, soup, celery, onion, bake  [OLE-H] fuente de horno con hotdish; [STOCK] hotdish dorado
+P19 #10 SWEDISH MEATBALLS (10:13)
+ Sweden's account 2018 Charles XII  [ARCH] retrato Carlos XII (Wikimedia PD) ; [COMP] mapa Turquía→Suecia
+ ground beef and pork, onion, allspice, breadcrumbs in milk  [OLE-H] formando albóndigas
+ browned in butter, cream gravy  [STOCK] albóndigas en sartén; [OLE-H] salsa desglasada
+ potatoes and lingonberries  [IA] plato servido
+ number three miners  [ARCH] mineros con fiambrera PD + riser
+P20 #9 LANTTULAATIKKO (10:50)
+ rutabaga  [STOCK] rutabagas / [IA] rutabaga fea sobre tabla
+ boil, mash, cream, breadcrumbs, egg, butter, nutmeg, 1 hr  [OLE-H] pisado; [STOCK] fuente en horno
+ face / try it once  [OLE] hace la mueca y sonríe
+P21 #8 PANNUKAKKU (11:17)
+ thick creamy baked custard pancake  [STOCK] pannukakku inflado en sartén
+ butter in skillet in hot oven, batter, cardamom  [OLE-H] vierte la masa en sartén con manteca
+ puffs, sinks in middle  [STOCK] time-lapse de horneado (real) / [COMP] corte del pancake que se hunde
+ squares, berry, nobody talks  [IA] mesa de desayuno en silencio
+P22 POR QUÉ SE DEJARON DE HACER (11:47) — opinión de Ole
+ whole day / special iron / kettle and crew  [COMP] WhyTheyStopped: tres objetos (hierro, caldero, mesa) se apagan uno a uno; [ARCH] cocina de iglesia con equipo trabajando
+ supper alone in twenty minutes  [STOCK] microondas / persona sola cenando (contraste real)
+ church kitchen once a year / a Saturday and a helper  [ARCH] señoras de iglesia cocinando juntas PD ; [OLE] mira a cámara
+P23 #7 LUTEFISK (12:10)
+ dried cod soaked in lye solution, then fresh cold water  [COMP] barril/balde de madera + el pescado seco que se hincha (3D o v2.0)
+ Vikings fire and rainstorm  [COMP] GrandmaCard-ilustración de leyenda (sin texto)
+ jiggly, butter poured  [STOCK] pescado blanco al vapor + manteca derretida
+ church since 1929, ~1,500 people  [COMP] contador que sube a 1500 con siluetas de comensales (prop); [ARCH] cena de lutefisk PD si se halla
+ potatoes and lefse for the rest  [OLE] se encoge de hombros
+P24 #6 LIMPA (12:51)
+ soft Swedish rye, brown sugar, molasses  [OLE-H] melaza cayendo
+ anise, caraway, fennel, orange peel  [COMP] cuatro especias en cucharas de peltre
+ baked at Christmas, smell of the cabin  [STOCK] pan oscuro saliendo del horno
+ slice thin, butter thick, cheese or herring  [IA] tabla con limpa, queso y arenque
+P25 #5 FISH CHOWDER (13:19) — libro p.34
+ not Scandinavian / every lake cabin  [ARCH] cabaña junto a un lago frío PD ; [STOCK] lago con niebla
+ render 4 oz salt pork 8 min  [OLE-H] tocino salado en la olla
+ onion, 1.5 lb potatoes, 2 cups water  [OLE-H] entrada de ingredientes; [COMP] OleRuleCard
+ fish on top, milk and cream, do not boil  [OLE-H] pescado; [STOCK] chowder humeante
+ "in the book, page thirty-four"  [COMP] OleBookPage p.34 (2 s)
+P26 #4 RØMMEGRØT (13:53) HÉROE
+ sour cream porridge; weddings, baptisms, harvest  [3D] tazón con crema espesa (three.js, superficie de fluido simple) ; [COMP] tres velas de fiesta (props)
+ 2 cups sour cream simmered 5 min, fat separates  [OLE-H] crema hirviendo con manteca subiendo
+ 3/4 cup flour  [OLE-H] harina tamizada; batiendo
+ skim off the butter  [OLE-H] cuchara sacando la manteca; [COMP] frasco de manteca amarilla
+ 2 cups hot milk, salt, thick and glossy  [OLE-H] leche caliente
+ well in the middle, butter back, cinnamon sugar  [COMP] PLANO WOW: cámara cenital sobre el tazón, la manteca llena el pozo y cae canela (3D)
+ cabin went quiet  [OLE] sonrisa
+P27 #3 PASTY (14:50) HÉROE
+ Cornish miners to the Iron Range, Michigan first  [ARCH] mineros de Cornualles/Iron Range PD ; [COMP] OriginMap
+ hearty, portable, cheap; down a shaft  [3D] pasty D-shape que se abre a corte mostrando capas (three.js) ; [ARCH] mina de hierro Minnesota PD
+ Finns put rutabaga  [COMP] rutabaga entra al pasty en el corte
+ beef small chunks, potato, rutabaga, onion, salt, pepper  [OLE-H] cortando cubitos; [STOCK] verduras picadas
+ skirt steak / ground beef on the Range  [COMP] dos bandejas: cubos vs molida
+ crust: 2.5 cups flour, 1 tsp salt, 1 cup lard, 6-8 Tbsp ice water  [OLE-H] cortando manteca en harina; [COMP] OleRuleCard
+ plate-size rounds, half filling, fold, crimp D shape, slit  [OLE-H] armado y crimpeado del borde (v2.0)
+ 400 F 15 min then 350 F 45  [STOCK] horno; [COMP] dial de termostato con dos posiciones
+ ketchup or gravy  [OLE] duda cómica
+P28 #2 BOOYAH (15:57) HÉROE
+ Belgian immigrants, Green Bay & Door County; broth  [COMP] OriginMap Bélgica→Green Bay; [ARCH] inmigrantes belgas Door County PD
+ chicken, beef, pork; vegetables; cheesecloth spice bag  [OLE-H] bolsita de estopilla con especias ; [STOCK] verduras
+ 50-gallon kettle, two days, crew  [3D] CALDERO GIGANTE (three.js) con humo y sólo el borde; [ARCH] cocina de picnic de iglesia PD
+ at your house: stewing chicken, 2 lb beef shank, cold water, 3 hours  [OLE-H] olla de hierro con gallina
+ pull, chop, back with vegetables and spice bag last hour  [OLE-H] deshuesando la gallina
+ season at end; next day; town shows up  [3D] la cabaña se llena; [STOCK] mesa larga de picnic de iglesia llena de gente
+P29 #1 LEFSE (17:01) HÉROE — PAGO GRANDE del hook
+ Norwegian potato flatbread, medieval, wheat didn't grow  [ARCH] campo norte de Noruega / [COMP] OriginMap
+ potato arrived in the 1700s; immigrants  [COMP] papa cruzando el mapa
+ 5 lb russets, ricer  [OLE-H] pasapuré/ricer con papas (v2.0)
+ per 4 cups: half cup butter, half cup half and half, sugar, salt  [COMP] OleRuleCard animada (medidas sobre los cuatro tazones)
+ THE ONE WAY TO RUIN IT: roll it warm → sticks and tears  [OLE-H] masa tibia que se pega y rasga (plano del hook, ahora con explicación) ; [COMP] termómetro "frío/tibio"
+ chill overnight; next day 1 cup flour per 4 cups  [OLE-H] harina tamizada
+ ball, grooved pin, lefse stick, hot dry griddle  [OLE-H] rodillo acanalado; [3D] palo de lefse deslizando la lámina sobre la plancha (three.js)
+ freckles, 30 s, flip, stack in towels  [STOCK] lefse dorándose (real) ; [OLE-H] apilando entre paños
+ butter and sugar, roll  [OLE] come
+ two weekends before Christmas, church basement, rolling side by side  [ARCH] mujeres haciendo lefse (foto PD, Norwegian-American Historical Association si licencia OK) ; [3D] cabaña se llena de platos = las 25 recetas (parte 2, cierre del 3D)
+P30 CIERRE (18:27)
+ whole box, 25 dishes  [3D] la caja de lata se cierra; [OLE] plano final
+ my own dishes in my cookbook  [COMP] OleCTA: portada + 5 fichas (rice porridge, dried-apple pie, bannock, sausage & sauerkraut, fish chowder) salen del libro; link en la descripción
+ which did your family make? comments  [OLE] señalando abajo; [COMP] taza de café humeante, fundido
