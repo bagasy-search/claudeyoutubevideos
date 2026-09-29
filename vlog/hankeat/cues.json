@@ -1,0 +1,1243 @@
+[
+ {
+  "t": "card",
+  "comp": "GlobeDive3D",
+  "at": "Every winter, from November twentieth",
+  "until": "at the edge of the Louisiana marsh",
+  "pad": 0.2,
+  "props": {
+   "lat": 29.35,
+   "lon": -90.75,
+   "label": "COASTAL LOUISIANA",
+   "sub": "EVERY WINTER · NOV 20 – MAR 31"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "TailCounter",
+  "at": "Last season, one hunter",
+  "until": "sixty-three thousand, one hundred and eighteen of them",
+  "pad": 0.6,
+  "props": {
+   "to": 63118,
+   "label": "ONE HUNTER · ONE SEASON · $6 A TAIL",
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "CalendarRipper",
+  "at": "Louisiana has been paying for tails like this",
+  "dur": 3.9,
+  "props": {
+   "from": 2002,
+   "to": 2025,
+   "rates": [
+    {
+     "from": 2002,
+     "label": "$4"
+    },
+    {
+     "from": 2006,
+     "label": "$5"
+    },
+    {
+     "from": 2019,
+     "label": "$6"
+    }
+   ],
+   "caption": "23 YEARS OF PAYING FOR TAILS"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "TallyZoom",
+  "at": "More than seven million tails",
+  "until": "forty-two and a half million dollars",
+  "pad": 0.9,
+  "props": {
+   "total": 7082279,
+   "money": "≈ $42.5 MILLION",
+   "finalLabel": "TAILS PAID SINCE 2002"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "And here's the part that got me",
+  "props": {
+   "text": "It worked. And that's why it can never stop.",
+   "keys": [
+    "worked.",
+    "never"
+   ],
+   "bed": "@img:@near"
+  },
+  "until": "can never, ever stop",
+  "pad": 0.6
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "To understand how a state ends up paying",
+  "dur": 2.4,
+  "props": {
+   "n": 1,
+   "title": "MEET THE ANIMAL",
+   "bg": "yc/hankeat/i_020.jpg",
+   "progress": 0.082,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "SpeciesFile",
+  "at": "Its name is nutria",
+  "until": "through just about anything a marsh can grow",
+  "pad": 0.3,
+  "props": {
+   "photo": "@arch:nutria:0",
+   "common": "Nutria",
+   "latin": "Myocastor coypus",
+   "facts": [
+    {
+     "k": "FROM",
+     "v": "South America"
+    },
+    {
+     "k": "WEIGHT",
+     "v": "up to 20 lb"
+    },
+    {
+     "k": "TEETH",
+     "v": "bright orange"
+    },
+    {
+     "k": "LITTERS / YEAR",
+     "v": "up to 3"
+    }
+   ],
+   "stamp": "INVASIVE",
+   "bed": "@arch:marsh:0"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "EvidenceBoard",
+  "at": "If you grew up around here",
+  "until": "It's also not true",
+  "pad": 0.5,
+  "props": {
+   "myths": [
+    "Tabasco heir E.A. McIlhenny",
+    "Imported from Argentina",
+    "A 1940 hurricane smashed the pens"
+   ],
+   "truths": [
+    {
+     "date": "1933",
+     "text": "Abita Springs fur farm turns its nutria out"
+    },
+    {
+     "date": "MARCH 1938",
+     "text": "McIlhenny buys 20 nutria in St. Bernard Parish · $100"
+    },
+    {
+     "date": "JUNE 1, 1940",
+     "text": "21 released into the marsh — on purpose"
+    },
+    {
+     "date": "",
+     "text": "Two months BEFORE the hurricane"
+    }
+   ],
+   "source": "Source: Shane K. Bernard, Louisiana History (2002) · 64 Parishes",
+   "photo": "yc/hankeat/i_029.jpg",
+   "split": 0.78
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "So nobody lost them",
+  "props": {
+   "text": "Nobody lost them. People released them.",
+   "keys": [
+    "released"
+   ],
+   "bed": "@img:@near"
+  },
+  "until": "More than once",
+  "pad": 0.3
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "feral nutria live in at least seventeen states",
+  "dur": 3.6,
+  "props": {
+   "to": 17,
+   "label": "states with wild nutria today"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "Here's where the story gets strange",
+  "dur": 2.6,
+  "props": {
+   "n": 2,
+   "title": "THE FUR RUSH",
+   "bg": "yc/hankeat/i_131.jpg",
+   "progress": 0.222,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "PeltStacks",
+  "at": "By 1962, nutria had passed the muskrat",
+  "until": "fifteen point seven million dollars",
+  "pad": 0.5,
+  "props": {
+   "title": "THE FUR BOOM · NUTRIA PELTS PER SEASON",
+   "unit": "pelts",
+   "bars": [
+    {
+     "label": "1945-46",
+     "value": 8784
+    },
+    {
+     "label": "1962",
+     "value": 1000000,
+     "note": "OVER 1 MILLION"
+    },
+    {
+     "label": "1976",
+     "value": 1800000,
+     "note": "PEAK"
+    },
+    {
+     "label": "1999-2000",
+     "value": 20110
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "DocHighlighter",
+  "at": "there were no reports of marsh damage",
+  "until": "None.",
+  "pad": 0.8,
+  "over": true,
+  "props": {
+   "source": "LOUISIANA DEPT. OF WILDLIFE AND FISHERIES — 2024-25 Annual Report, p.5",
+   "kicker": "THE STATE'S OWN REPORT",
+   "lines": [
+    "~",
+    "~",
+    "~",
+    "there were no reports of wetland damage",
+    "caused by nutria.",
+    "~",
+    "~"
+   ],
+   "highlight": "there were no reports of wetland damage caused by nutria"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Then the dam broke",
+  "props": {
+   "text": "Then the dam broke.",
+   "keys": [
+    "broke."
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 150
+  },
+  "dur": 2.4
+ },
+ {
+  "t": "card",
+  "comp": "Timeline3D",
+  "at": "In the eighties, fur went out of style",
+  "until": "slapped a luxury tax on furs",
+  "props": {
+   "kicker": "THE FUR CRASH",
+   "events": [
+    {
+     "year": "1981",
+     "label": "$8.19 a pelt",
+     "src": "@img:@find:1981"
+    },
+    {
+     "year": "1987",
+     "label": "Stock market crash",
+     "src": "@img:@find:1987"
+    },
+    {
+     "year": "1991",
+     "label": "Federal luxury tax on furs",
+     "src": "@img:@find:tax"
+    },
+    {
+     "year": "1998",
+     "label": "The ruble collapses",
+     "src": "@img:@find:1998",
+     "now": true
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "FurTicker",
+  "at": "The price of a nutria pelt fell to four dollars",
+  "until": "the Russian economy collapsed too",
+  "pad": 0.4,
+  "props": {
+   "title": "NUTRIA PELT · LOUISIANA",
+   "unit": "$",
+   "crashAt": 1,
+   "points": [
+    {
+     "label": "1980-81",
+     "value": 8.19
+    },
+    {
+     "label": "1981-82",
+     "value": 4.36
+    },
+    {
+     "label": "1982-83",
+     "value": 2.64
+    },
+    {
+     "label": "1996-97",
+     "value": 4.13
+    },
+    {
+     "label": "1997-98",
+     "value": 5.17
+    },
+    {
+     "label": "1998-99",
+     "value": 2.69
+    },
+    {
+     "label": "2001-02",
+     "value": 1.75
+    }
+   ]
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "By the 1999-2000 season",
+  "dur": 3.6,
+  "props": {
+   "to": 20110,
+   "sep": true,
+   "label": "pelts in 1999-2000 · down from 1.8 million"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Timeline3D",
+  "at": "Back in 1958, when the fur was worthless",
+  "until": "made nutria a protected animal again",
+  "props": {
+   "kicker": "PROTECTED · PEST · PROTECTED",
+   "events": [
+    {
+     "year": "1946",
+     "label": "Protected furbearer",
+     "src": "@img:@find:1946"
+    },
+    {
+     "year": "1958",
+     "label": "Declared a pest: a 25¢ bounty nobody paid",
+     "src": "@img:@find:1958"
+    },
+    {
+     "year": "1965",
+     "label": "Protected again",
+     "src": "@img:@find:1965",
+     "now": true
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "Nutria eat about a quarter of their body weight",
+  "dur": 2.4,
+  "props": {
+   "n": 3,
+   "title": "THE EAT-OUT",
+   "bg": "yc/hankeat/i_142.jpg",
+   "progress": 0.369,
+   "total": 7
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "about a quarter of their body weight every day",
+  "dur": 3.4,
+  "props": {
+   "to": 25,
+   "suffix": "%",
+   "label": "of its body weight, every day"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "EatOutSection",
+  "at": "Once the roots are gone",
+  "until": "Permanently.",
+  "pad": 0.9,
+  "props": {
+   "photo": "yc/hankeat/i_077.jpg"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "BayouMap3D",
+  "at": "In the nineties, the state started flying helicopters",
+  "until": "counting the damage",
+  "pad": 0.4,
+  "props": {
+   "series": [
+    {
+     "year": 1993,
+     "acres": 60000
+    },
+    {
+     "year": 1996,
+     "acres": 77408
+    },
+    {
+     "year": 1999,
+     "acres": 102585
+    }
+   ],
+   "title": "COASTAL LOUISIANA · NASA MODIS",
+   "pins": [
+    {
+     "name": "TERREBONNE",
+     "lon": -90.75,
+     "lat": 29.35
+    },
+    {
+     "name": "PLAQUEMINES",
+     "lon": -89.65,
+     "lat": 29.45
+    },
+    {
+     "name": "CAMERON",
+     "lon": -93.3,
+     "lat": 29.85
+    }
+   ],
+   "maxAcres": 102585,
+   "cams": [
+    {
+     "t": 0,
+     "pos": [
+      0,
+      10.5,
+      6.2
+     ],
+     "look": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "t": 1,
+     "pos": [
+      0.6,
+      8.2,
+      6.0
+     ],
+     "look": [
+      0.4,
+      0,
+      1.4
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ScaleSquares",
+  "at": "In 1999, they estimated",
+  "until": "city of New Orleans",
+  "pad": 0.8,
+  "props": {
+   "a": {
+    "label": "NUTRIA DAMAGE · 1999",
+    "value": 102585
+   },
+   "b": {
+    "label": "ALL THE DRY LAND IN NEW ORLEANS",
+    "value": 108416,
+    "sub": "169.4 sq mi"
+   },
+   "unit": "acres",
+   "note": "Squares drawn to exact area scale."
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Coastal Louisiana has lost about two thousand square miles",
+  "props": {
+   "text": "A football field of land, every 100 minutes.",
+   "keys": [
+    "football",
+    "100"
+   ],
+   "bed": "@arch:landloss:0"
+  },
+  "until": "every hundred minutes",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "So the state tried everything",
+  "dur": 2.6,
+  "props": {
+   "n": 4,
+   "title": "EVERYTHING THEY TRIED",
+   "bg": "yc/hankeat/i_145.jpg",
+   "progress": 0.461,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "it looks like a rat",
+  "props": {
+   "text": "\"It looks like a rat. It's not a pretty animal.\"",
+   "keys": [
+    "rat."
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 110
+  },
+  "until": "not a pretty animal",
+  "pad": 0.4
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "A New Orleans designer started a line called Righteous Fur",
+  "until": "nutria-fur bikini",
+  "pad": 0.4,
+  "props": {
+   "masthead": "IN THE NEWS",
+   "date": "AS REPORTED BY NPR · DEC 2010",
+   "headline": "'Guilt-free fur': a New Orleans designer turns a marsh pest into fashion",
+   "photo": "@img:@near"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "sixty-two teams brought in",
+  "dur": 3.6,
+  "props": {
+   "to": 1934,
+   "sep": true,
+   "label": "nutria in one weekend · 2022"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "FailedFixes",
+  "at": "It was all very Louisiana",
+  "until": "zucchini of the animal world",
+  "pad": 0.4,
+  "props": {
+   "title": "HOW DO YOU GET RID OF A SWAMP RAT?",
+   "items": [
+    {
+     "text": "Eat them (1990s campaign)",
+     "ok": false
+    },
+    {
+     "text": "Wear them (Righteous Fur, 2010)",
+     "ok": false
+    },
+    {
+     "text": "Dog treats (Marsh Dog)",
+     "ok": false
+    },
+    {
+     "text": "Rodeos, snipers, cook-offs",
+     "ok": false
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "So in 2002, the state tried something",
+  "dur": 2.4,
+  "props": {
+   "n": 5,
+   "title": "BRING US THE TAIL",
+   "bg": "yc/hankeat/i_004.jpg",
+   "progress": 0.577,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Forget the meat. Forget the fur.",
+  "props": {
+   "text": "Forget the meat. Forget the fur. Just bring us the tail.",
+   "keys": [
+    "tail."
+   ],
+   "bed": "@img:@near"
+  },
+  "until": "Just bring us the tail",
+  "pad": 0.6
+ },
+ {
+  "t": "card",
+  "comp": "FieldNote",
+  "at": "You register, you get permission",
+  "until": "four hundred thousand nutria a year",
+  "pad": 0.4,
+  "props": {
+   "lines": [
+    "register + landowner OK",
+    "Nov 20 - Mar 31",
+    "bring the TAIL",
+    "$4 a tail (2002)",
+    "goal: 400,000 / yr"
+   ],
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "SpotlightHunt",
+  "at": "Most of the hunting happens at night",
+  "until": "trucked off to a disposal pit",
+  "pad": 0.3,
+  "props": {
+   "bg": "yc/hankeat/i_144.jpg",
+   "eyes": 3
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "hunters brought in three hundred and eight thousand tails",
+  "dur": 3.4,
+  "props": {
+   "to": 308160,
+   "sep": true,
+   "label": "tails in the first season"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "Then, in 2005, Hurricane Katrina hit",
+  "dur": 3.6,
+  "props": {
+   "place": "HURRICANE KATRINA",
+   "date": "AUGUST 2005"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Clipping",
+  "at": "In 2023, a man in Patterson was arrested",
+  "until": "keep breeding more tails",
+  "pad": 0.4,
+  "props": {
+   "masthead": "IN THE NEWS",
+   "date": "AS REPORTED BY LOUISIANA RADIO NETWORK · FEB 2023",
+   "headline": "Man accused of cheating nutria bounty, animal cruelty",
+   "photo": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "A bounty only works if you keep an eye on it",
+  "props": {
+   "text": "A bounty only works if you keep an eye on it.",
+   "keys": [
+    "eye"
+   ],
+   "bed": "@img:@near"
+  },
+  "dur": 3.2
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "Then the helicopters went back up",
+  "dur": 2.4,
+  "props": {
+   "n": 6,
+   "title": "DID IT WORK?",
+   "bg": "yc/hankeat/i_081.jpg",
+   "progress": 0.69,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "DamageChart",
+  "at": "Eighty-two thousand acres of damage in 2003",
+  "until": "From over a hundred thousand",
+  "pad": 0.6,
+  "props": {
+   "title": "MARSH DAMAGED BY NUTRIA",
+   "unit": "ACRES",
+   "series": [
+    {
+     "year": 1999,
+     "v": 102585
+    },
+    {
+     "year": 2000,
+     "v": 97271
+    },
+    {
+     "year": 2001,
+     "v": 83021
+    },
+    {
+     "year": 2002,
+     "v": 79444
+    },
+    {
+     "year": 2003,
+     "v": 82080
+    },
+    {
+     "year": 2004,
+     "v": 63398
+    },
+    {
+     "year": 2005,
+     "v": 53475
+    },
+    {
+     "year": 2006,
+     "v": 55755
+    },
+    {
+     "year": 2007,
+     "v": 34665
+    },
+    {
+     "year": 2008,
+     "v": 23141
+    },
+    {
+     "year": 2009,
+     "v": 20333
+    },
+    {
+     "year": 2010,
+     "v": 8475
+    },
+    {
+     "year": 2011,
+     "v": 6296
+    },
+    {
+     "year": 2012,
+     "v": 4233
+    },
+    {
+     "year": 2013,
+     "v": 4624
+    },
+    {
+     "year": 2014,
+     "v": 4181
+    }
+   ],
+   "marks": [
+    {
+     "year": 2002,
+     "label": "TAIL BOUNTY BEGINS"
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "much to our surprise, it worked very well",
+  "props": {
+   "text": "\"Much to our surprise, it worked very well.\"",
+   "keys": [
+    "surprise,"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 110
+  },
+  "dur": 3.0
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "People stopped showing up",
+  "props": {
+   "text": "People stopped showing up.",
+   "keys": [
+    "stopped"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 130
+  },
+  "dur": 2.6
+ },
+ {
+  "t": "card",
+  "comp": "DamageChart",
+  "at": "And the marsh answered almost overnight",
+  "until": "You can't pay a hunter to bring that back",
+  "pad": 0.5,
+  "props": {
+   "title": "THE RELAPSE",
+   "unit": "ACRES",
+   "series": [
+    {
+     "year": 2012,
+     "v": 4233
+    },
+    {
+     "year": 2013,
+     "v": 4624
+    },
+    {
+     "year": 2014,
+     "v": 4181
+    },
+    {
+     "year": 2015,
+     "v": 6008
+    },
+    {
+     "year": 2016,
+     "v": 6496
+    },
+    {
+     "year": 2017,
+     "v": 5866
+    },
+    {
+     "year": 2018,
+     "v": 16424
+    },
+    {
+     "year": 2019,
+     "v": 14652
+    }
+   ],
+   "marks": [
+    {
+     "year": 2018,
+     "label": "NEARLY 3X IN ONE YEAR"
+    }
+   ]
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BanStamp",
+  "at": "the state raised the bounty to six dollars a tail",
+  "dur": 3.0,
+  "props": {
+   "top": "JULY 2019",
+   "big": "$6",
+   "date": "PER TAIL"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "SplitFlapBoard",
+  "at": "That's three hundred seventy-eight thousand",
+  "until": "sure, but still",
+  "pad": 0.3,
+  "over": true,
+  "props": {
+   "title": "LOUISIANA NUTRIA PROGRAM · 2024-25",
+   "headers": [
+    "",
+    "TAILS",
+    "PAID"
+   ],
+   "rows": [
+    {
+     "cells": [
+      "BIGGEST HUNTER",
+      "63,118",
+      "$378,708"
+     ]
+    },
+    {
+     "cells": [
+      "SMALLEST",
+      "5",
+      "$30"
+     ]
+    },
+    {
+     "cells": [
+      "AVERAGE",
+      "1,587",
+      "$9,522"
+     ]
+    }
+   ],
+   "highlightRow": 0
+  }
+ },
+ {
+  "t": "card",
+  "comp": "TailCounter",
+  "at": "Hunters brought in four hundred and one thousand",
+  "until": "in one season",
+  "pad": 0.4,
+  "props": {
+   "to": 401312,
+   "label": "2023-24 · A RECORD SEASON",
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "BayouMap3D",
+  "at": "Most of the tails come from Plaquemines Parish",
+  "until": "where it's hard to get to",
+  "pad": 0.4,
+  "props": {
+   "series": [
+    {
+     "year": 2025,
+     "acres": 3854
+    },
+    {
+     "year": 2025,
+     "acres": 3854
+    }
+   ],
+   "title": "MOST TAILS: PLAQUEMINES · MOST DAMAGE: TERREBONNE",
+   "pins": [
+    {
+     "name": "PLAQUEMINES",
+     "lon": -89.65,
+     "lat": 29.45
+    },
+    {
+     "name": "TERREBONNE",
+     "lon": -90.75,
+     "lat": 29.35
+    }
+   ],
+   "showYear": false,
+   "maxAcres": 102585,
+   "cams": [
+    {
+     "t": 0,
+     "pos": [
+      3.4,
+      7.5,
+      6.0
+     ],
+     "look": [
+      3.4,
+      0,
+      1.6
+     ]
+    },
+    {
+     "t": 1,
+     "pos": [
+      3.8,
+      4.4,
+      5.4
+     ],
+     "look": [
+      3.6,
+      0,
+      2.0
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "BayouMap3D",
+  "at": "And in 2025, the helicopters counted",
+  "until": "from the peak",
+  "pad": 0.5,
+  "props": {
+   "series": [
+    {
+     "year": 1999,
+     "acres": 102585
+    },
+    {
+     "year": 2001,
+     "acres": 83021
+    },
+    {
+     "year": 2003,
+     "acres": 82080
+    },
+    {
+     "year": 2005,
+     "acres": 53475
+    },
+    {
+     "year": 2007,
+     "acres": 34665
+    },
+    {
+     "year": 2009,
+     "acres": 20333
+    },
+    {
+     "year": 2011,
+     "acres": 6296
+    },
+    {
+     "year": 2014,
+     "acres": 4181
+    },
+    {
+     "year": 2017,
+     "acres": 5866
+    },
+    {
+     "year": 2018,
+     "acres": 16424
+    },
+    {
+     "year": 2019,
+     "acres": 14652
+    },
+    {
+     "year": 2021,
+     "acres": 8436
+    },
+    {
+     "year": 2023,
+     "acres": 4737
+    },
+    {
+     "year": 2025,
+     "acres": 3854
+    }
+   ],
+   "title": "NUTRIA DAMAGE · 1999 - 2025",
+   "pins": [
+    {
+     "name": "TERREBONNE",
+     "lon": -90.75,
+     "lat": 29.35
+    }
+   ],
+   "maxAcres": 102585
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "So they won, right?",
+  "dur": 2.4,
+  "props": {
+   "n": 7,
+   "title": "THE TWIST",
+   "bg": "yc/hankeat/i_155.jpg",
+   "progress": 0.847,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Here's the twist. They didn't win. They can't.",
+  "props": {
+   "text": "They didn't win. They can't.",
+   "keys": [
+    "can't."
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 150
+  },
+  "dur": 4.0
+ },
+ {
+  "t": "card",
+  "comp": "GlobeDive3D",
+  "at": "Up in Maryland, at the Blackwater",
+  "until": "nutria were eating the marsh too",
+  "pad": 0.2,
+  "props": {
+   "lat": 38.44,
+   "lon": -76.12,
+   "label": "BLACKWATER REFUGE",
+   "sub": "MARYLAND",
+   "from": {
+    "lat": 29.5,
+    "lon": -90.5
+   },
+   "hires": false,
+   "endDist": 1.12
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ThenNow",
+  "at": "The last one was caught in May 2015",
+  "until": "Maryland declared itself nutria-free",
+  "props": {
+   "then": {
+    "src": "@img:@near",
+    "year": "MARYLAND"
+   },
+   "now": {
+    "src": "@arch:nutria:2",
+    "label": "LOUISIANA"
+   },
+   "caption": "Small enough to finish · Too big to finish"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "eradication would be nice, but it's really not possible",
+  "props": {
+   "text": "\"Eradication would be nice, but it's really not possible.\"",
+   "keys": [
+    "not",
+    "possible.\""
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 100
+  },
+  "dur": 3.4
+ },
+ {
+  "t": "card",
+  "comp": "ReceiptPrinter",
+  "at": "They're being held down. One tail at a time",
+  "until": "start climbing again",
+  "pad": 0.5,
+  "props": {
+   "title": "STATE OF LOUISIANA · NUTRIA TAILS",
+   "lines": [
+    {
+     "l": "2002-2006",
+     "r": "$4 / tail"
+    },
+    {
+     "l": "2006-2019",
+     "r": "$5 / tail"
+    },
+    {
+     "l": "2019-TODAY",
+     "r": "$6 / tail"
+    },
+    {
+     "l": "---",
+     "r": ""
+    },
+    {
+     "l": "SEASONS",
+     "r": "23"
+    },
+    {
+     "l": "TAILS PAID",
+     "r": "7,082,279"
+    }
+   ],
+   "totalLabel": "TOTAL ≈",
+   "total": "$42.5 MILLION"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "VhsRewind",
+  "at": "It's the same thing those fur trappers",
+  "dur": 1.3,
+  "props": {
+   "label": "◀◀ REW",
+   "date": "1976"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChalkBars",
+  "at": "Eight dollars and nineteen cents for a pelt in 1981",
+  "until": "Six dollars for a tail today",
+  "pad": 0.4,
+  "props": {
+   "title": "What a nutria was worth",
+   "bars": [
+    {
+     "label": "1981 · A PELT, PAID BY THE FUR TRADE",
+     "value": 8.19,
+     "display": "$8.19"
+    },
+    {
+     "label": "TODAY · A TAIL, PAID BY LOUISIANA",
+     "value": 6,
+     "display": "$6",
+     "hot": true
+    }
+   ]
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "On November twentieth, that little white trailer",
+  "props": {
+   "text": "The count starts over at zero.",
+   "keys": [
+    "zero."
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 130
+  },
+  "until": "never stopped counting",
+  "pad": 0.6
+ }
+]
