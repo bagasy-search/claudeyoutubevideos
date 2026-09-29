@@ -48,7 +48,7 @@ void main(){
   float k = smoothstep(-0.08, 0.12, d);
   vec3 dc = texture2D(day, vUv).rgb;
   vec3 nc = texture2D(night, vUv).rgb;
-  vec3 moon = dc * vec3(0.10, 0.13, 0.19);
+  vec3 moon = dc * vec3(0.62, 0.72, 0.95);
   vec3 nightCol = moon + nc * lights * 1.25;
   vec3 dusk = vec3(1.0, 0.45, 0.15) * max(0.0, 1.0 - abs(d + 0.02) * 40.0) * 0.09;
   gl_FragColor = vec4(mix(nightCol, dc, k) + max(dusk, 0.0), 1.0);
@@ -101,7 +101,7 @@ export const Globe3D: React.FC<{ from?: [number, number, number]; to?: [number, 
         const q = P(a, b, 1.002).project(cam); const x = (q.x * 0.5 + 0.5) * width, y = (-q.y * 0.5 + 0.5) * height;
         const facing = P(a, b, 1).dot(camPos.clone().normalize()) > 0.2;
         if (!facing) return null;
-        return <div key={i} style={{ position: "absolute", left: x - 8, top: y - 8, width: 16, height: 16, borderRadius: 8, background: "radial-gradient(circle, rgba(255,200,120,0.95), rgba(255,138,42,0.35) 40%, rgba(255,138,42,0) 70%)", opacity: ember * (0.6 + 0.4 * Math.sin(f / (3 + r * 4) + i)) }} />;
+        return <div key={i} style={{ position: "absolute", left: x - 11, top: y - 11, width: 22, height: 22, borderRadius: 11, background: "radial-gradient(circle, rgba(255,200,120,0.95), rgba(255,138,42,0.35) 40%, rgba(255,138,42,0) 70%)", opacity: ember * (0.6 + 0.4 * Math.sin(f / (3 + r * 4) + i)) }} />;
       }) : null}
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 90, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 12, color: t < 0.47 ? AH.moon : AH.flame, textShadow: TSH, opacity: labK }}>{lab}</div>
       {pinK > 0 ? <div style={{ position: "absolute", left: px, top: py, opacity: pinK }}>
