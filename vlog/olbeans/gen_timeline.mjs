@@ -85,7 +85,7 @@ for (const o of ovs) {
   else S(t + 0.2, "floraphonic-minimal-pop-click-ui-1-198301.mp3", 0.22, 20);
 }
 // fuego/brasas REAL de stock: ambiente de fogón bajo esos planos (el stock viene mudo)
-cues.forEach((c, i) => { const n = shots[i].name; if (["st17", "st37", "st93", "st113", "st253", "st256", "st25"].includes(n)) foley.push({ from: c.from, dur: c.dur, src: "sfx/amb_fuego.mp3", vol: 0.35 }); });
+cues.forEach((c, i) => { const n = shots[i].name; if (["st17", "st93", "st104", "st107", "st113", "st253", "st256", "st25", "st23"].includes(n)) foley.push({ from: c.from, dur: c.dur, src: "sfx/amb_fuego.mp3", vol: 0.35 }); });
 // ambiente continuo de estufa bajo el minuto 1 (compuerta: 0 silencios en el minuto 1; las pausas naturales de la voz quedaban mudas)
 foley.push({ from: 0, dur: F(64), src: "sfx/olbeans_amb_m1.m4a", vol: 0.85 });
 // ── compuertas del build
