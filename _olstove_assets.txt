@@ -7,9 +7,10 @@ img/olstove/pagina_36.png
 img/olstove/pagina_30.png
 vid/olstove/m1.mp4
 broll/olstove_st30/st_stove_1.mp4
-avatar_clips/olstove/reel30.mp4
+vid/olstove/m2.mp4
 img/olstove/ar/ar_camp_1.jpg
 broll/olstove_st30/st_cabin_1.mp4
+vid/olstove/m3.mp4
 img/olstove/d_stack.png
 broll/olstove/d_stack.mp4
 img/olstove/b_twologs.png
@@ -17,7 +18,10 @@ img/olstove/b_blackglass.png
 vid/olstove/m4.mp4
 img/olstove/d_damper.png
 broll/olstove/d_damper.mp4
+vid/olstove/m5.mp4
+vid/olstove/m6.mp4
 img/olstove/b_bunks.png
+vid/olstove/m7.mp4
 img/olstove/d_alarm.png
 broll/olstove/d_alarm.mp4
 img/olstove/b_can.png
@@ -28,7 +32,9 @@ broll/olstove/b_label.mp4
 img/olstove/b_ashpail.png
 broll/olstove/b_ashpail.mp4
 broll/olstove_st30/st_ash_1.mp4
+vid/olstove/m8.mp4
 img/olstove/o_writing.png
+avatar_clips/olstove/reel30.mp4
 broll/olstove_st30/st_woodpile_4.mp4
 img/olstove/d_aircontrol.png
 broll/olstove/d_aircontrol.mp4
@@ -79,6 +85,7 @@ img/olstove/b_trashbin.png
 img/olstove/b_paintboard.png
 img/olstove/d_doorair.png
 broll/olstove/d_doorair.mp4
+vid/olstove/m9.mp4
 broll/olstove_st30/st_fire_3.mp4
 broll/olstove/b_blackglass.mp4
 broll/olstove_st30/st_smoke_3.mp4
@@ -129,9 +136,10 @@ img/olstove/b_towelrail.png
 broll/olstove/b_towelrail.mp4
 broll/olstove_st30/st_cook_3.mp4
 img/olstove/ar/ar_cabin_2.jpg
+vid/olstove/m10.mp4
 sfx/whoosh.mp3
-sfx/gentle_papercard_pop_#2-1780923860389.mp3
 sfx/sfx_whoosh_soft.mp3
+sfx/gentle_papercard_pop_#2-1780923860389.mp3
 sfx/Crackling_campfire_w_#1-1780924416643.mp3
 sfx/soft_mechanical_odom_#3-1780923982906.mp3
 sfx/warm_rising_tonal_sw_#3-1780924218410.mp3

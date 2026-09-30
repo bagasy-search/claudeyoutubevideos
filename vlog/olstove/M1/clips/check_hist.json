@@ -10,7 +10,7 @@
    },
    "score": 0,
    "verd": "ok",
-   "line": "dice: \"Well now, friend, come on in and shut that door behind you.\" · cara ✓ (0.95) · luz ⛔ oscura · dim indoor lighting · labios ✓ corr 0.988 lag 0.03s",
+   "line": "dice: \"Well now, friend, come on in and shut that door behind you.\" · cara ✓ (0.98) · luz ⛔ oscura · interior lighting · labios ✓ corr 0.988 lag 0.03s",
    "swin": 3.9,
    "salto": {
     "t": 1.5,
@@ -24,20 +24,20 @@
   "m2.mp4": {
    "win": 4.9,
    "labios": {
-    "corr": 0.441,
-    "lag": -0.83,
-    "c0": 0.278,
-    "ok": false
+    "corr": 0.998,
+    "lag": 0,
+    "c0": 0.998,
+    "ok": true
    },
-   "score": 65,
-   "verd": "⛔ REGENERAR",
-   "line": "dice: \"Why, they'd never ask for a raise.\" · de más: why they d ask · falta: the stove s only thing in this camp kitchen that asks · cara ✓ (0.95) · luz ⛔ oscura · Indoor log cabin scene; interior is dim/low-light with warm tones, not bright daylight. · labios ⛔ corr 0.441 lag -0.83s",
+   "score": 2,
+   "verd": "ok",
+   "line": "dice: \"The stove's the only thing in this camp kitchen that never asked for a raise.\" · de más: asked · falta: asks · cara ✓ (1) · luz ⛔ oscura · Indoor lighting is dim and moody · labios ✓ corr 0.998 lag 0s",
    "swin": 4.9,
    "salto": {
-    "t": 2.97,
-    "peak": 3.5,
-    "base": 2.2,
-    "ratio": 1.6
+    "t": 3.1,
+    "peak": 2.7,
+    "base": 1.9,
+    "ratio": 1.4
    }
   }
  },
@@ -52,13 +52,160 @@
    },
    "score": 50,
    "verd": "⛔ REGENERAR",
-   "line": "dice: \"and one little handle on the pipe that people either never touch or turn the wrong way.\" · cara ✓ (0.95) · luz ⛔ oscura · Indoor scene; window shows daylight but interior is dim · labios ✓ corr 0.998 lag 0s",
+   "line": "dice: \"and one little handle on the pipe that people either never touch or turn the wrong way.\" · cara ✓ (0.95) · luz ⛔ oscura · indoor lighting · labios ✓ corr 0.998 lag 0s",
    "swin": 4.9,
    "salto": {
     "t": 4.67,
     "peak": 1.8,
     "base": 1.2,
     "ratio": 1.5
+   }
+  }
+ },
+ "m3": {
+  "m3.mp4": {
+   "win": 3.4,
+   "labios": {
+    "corr": 0.997,
+    "lag": 0,
+    "c0": 0.997,
+    "ok": true
+   },
+   "score": 0,
+   "verd": "ok",
+   "line": "dice: \"and I'm going to show you the trick. It's not magic.\" · cara ✓ (0.95) · luz ✓ · labios ✓ corr 0.997 lag 0s",
+   "swin": 3.4,
+   "salto": {
+    "t": 2.33,
+    "peak": 1.6,
+    "base": 1,
+    "ratio": 1.5
+   }
+  }
+ },
+ "m5": {
+  "m5.mp4": {
+   "win": 3.6,
+   "labios": {
+    "corr": 0.997,
+    "lag": 0,
+    "c0": 0.997,
+    "ok": true
+   },
+   "score": 0,
+   "verd": "ok",
+   "line": "dice: \"But before I strike a single match, four things.\" · cara ✓ (0.98) · luz ⛔ oscura · Indoor log cabin setting · labios ✓ corr 0.997 lag 0s",
+   "swin": 3.6,
+   "salto": {
+    "t": 2.27,
+    "peak": 2,
+    "base": 0.8,
+    "ratio": 2.5
+   }
+  }
+ },
+ "m6": {
+  "m6.mp4": {
+   "win": 3.3,
+   "labios": {
+    "corr": 0.997,
+    "lag": 0,
+    "c0": 0.997,
+    "ok": true
+   },
+   "score": 0,
+   "verd": "ok",
+   "line": "dice: \"Because a stove is a good friend only when you treat it right.\" · cara ✓ (0.95) · luz ⛔ oscura · dim interior · labios ✓ corr 0.997 lag 0s",
+   "swin": 3.3,
+   "salto": {
+    "t": 1.5,
+    "peak": 2.1,
+    "base": 1.5,
+    "ratio": 1.4
+   }
+  }
+ },
+ "m7": {
+  "m7.mp4": {
+   "win": 6.4,
+   "labios": {
+    "corr": 0.998,
+    "lag": 0,
+    "c0": 0.998,
+    "ok": true
+   },
+   "score": 0,
+   "verd": "ok",
+   "line": "dice: \"You can't see that gas or smell it and it gives you a headache and dizziness and you never figure out why.\" · cara ✓ (0.98) · luz ✓ · labios ✓ corr 0.998 lag 0s",
+   "swin": 6.4,
+   "salto": {
+    "t": 4.17,
+    "peak": 3.6,
+    "base": 2,
+    "ratio": 1.8
+   }
+  }
+ },
+ "m8": {
+  "m8.mp4": {
+   "win": 6.3,
+   "labios": {
+    "corr": 0.997,
+    "lag": 0,
+    "c0": 0.997,
+    "ok": true
+   },
+   "score": 0,
+   "verd": "ok",
+   "line": "dice: \"Quick word, friend, while I've got you. Everything I cook on this stove, I've been writing down.\" · cara ✓ (0.98) · luz ✓ · labios ✓ corr 0.997 lag 0s",
+   "swin": 6.3,
+   "salto": {
+    "t": 6,
+    "peak": 3,
+    "base": 1.5,
+    "ratio": 2.1
+   }
+  }
+ },
+ "m9": {
+  "m9.mp4": {
+   "win": 6.8,
+   "labios": {
+    "corr": 0.997,
+    "lag": 0,
+    "c0": 0.997,
+    "ok": true
+   },
+   "score": 2,
+   "verd": "⚠️ revisar",
+   "line": "dice: \"And here is the mistake I made when I was young, I closed it right down to make the wood last all night.\" · de más: and · 1 palabra(s) de más (¿repitió?) · cara ✓ (0.98) · luz ⛔ oscura · low indoor light · labios ✓ corr 0.997 lag 0s",
+   "swin": 6.8,
+   "salto": {
+    "t": 5.27,
+    "peak": 3.1,
+    "base": 1.4,
+    "ratio": 2.2
+   }
+  }
+ },
+ "m10": {
+  "m10.mp4": {
+   "win": 11.404,
+   "labios": {
+    "corr": 0.997,
+    "lag": 0,
+    "c0": 0.997,
+    "ok": true
+   },
+   "score": 50,
+   "verd": "⛔ REGENERAR",
+   "line": "dice: \"Tell me in the comments, what do you burn in your stove, and how do you know it's dry? I read every one. Now put another split on. Not too many, mind you. And I'll see you in the next one.\" · cara ✓ (0.98) · luz ⛔ oscura · labios ✓ corr 0.997 lag 0s",
+   "swin": 11.404,
+   "salto": {
+    "t": 10.1,
+    "peak": 1.2,
+    "base": 0.6,
+    "ratio": 2
    }
   }
  }
