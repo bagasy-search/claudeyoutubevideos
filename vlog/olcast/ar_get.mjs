@@ -10,10 +10,14 @@ const PICK = { // nombre de toma → título EXACTO del archivo en Commons
   a_skillets: "File:Castiron-skillets.jpg",
   a_campfire: "File:Cooking over a campfire in Jumbo Rocks Campground (50409379772).jpg",
   a_cookwait: "File:Cook and waitresses, Northwest Door Company, Oregon, ca 1914 (KINSEY 2452).jpeg",
+  a_crew1: "search:Logging crew and cook at Coal Creek Lumber Company camp KINSEY 42",
+  a_cookmess: "search:Cook and helpers, also known as flunkies, at railroad logging camp, Polson Logging Company KINSEY 568",
+  a_kitchen75: "search:Cooks and and kitchen help outside railroad logging camp buildings, Clemons Logging Company KINSEY 75",
   a_stove: null, // se resuelve por búsqueda: estufa de leña de cocina, New Ulm, Minnesota (Gary Truman, 1974)
 };
 const UA = { "User-Agent": "olcast-research/1.0 (bautielcrack4@gmail.com)" };
 const api = async (q) => (await (await fetch("https://commons.wikimedia.org/w/api.php?format=json&action=query&" + q, { headers: UA })).json()).query?.pages || {};
+for (const [k, v] of Object.entries(PICK)) if (typeof v === "string" && v.startsWith("search:")) { const pg = await api(`generator=search&gsrnamespace=6&gsrlimit=5&gsrsearch=${encodeURIComponent(v.slice(7))}`); PICK[k] = Object.values(pg)[0]?.title; console.log(k, "→", PICK[k]); }
 if (!PICK.a_stove) {
   const pg = await api(`generator=search&gsrnamespace=6&gsrlimit=8&gsrsearch=${encodeURIComponent("CLOSEUP OF THE WOOD BURNING STOVE USED FOR COOKING")}`);
   PICK.a_stove = Object.values(pg)[0]?.title;
