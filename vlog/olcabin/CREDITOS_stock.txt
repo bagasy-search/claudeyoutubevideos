@@ -69,3 +69,11 @@ st_sausage_mustard.mp4 | pexels 37210550 | Anh Nguyen | https://www.pexels.com/v
 st_apple_pie_oven.mp4 | pexels 5615187 | KATRIN  BOLOVTSOVA | https://www.pexels.com/video/apple-cake-on-table-top-view-5615187/ | "apple pie out of oven"
 st_flea_market_table.mp4 | pexels 4327242 | H.Espinosa Films | https://www.pexels.com/video/antique-chair-4327242/ | "antique cast iron pots market"
 st_bread_cooling_window.mp4 | pexels 10097614 | Sergio  Peña y Lillo | https://www.pexels.com/video/steam-above-fresh-bread-in-basket-10097614/ | "bread loaf windowsill"
+
+st_family_holiday_table.mp4 | pexels 6185030 | cottonbro studio | https://www.pexels.com/video/multiracial-family-having-dinner-together-6185030/ | "family eating christmas dinner"
+st_meatballs_cream_pan.mp4 | pexels 35224636 | Muhammad  Khawar Nazir | https://www.pexels.com/video/street-food-vendor-cooking-delicious-savory-patties-35224636/ | "browned meatballs skillet"
+st_fish_fillet_board.mp4 | pexels 8626279 | Kampus Production | https://www.pexels.com/video/a-person-removing-a-fish-meat-using-spoon-8626279/ | "raw fish fillet cutting board"
+st_bakery_display.mp4 | pexels 7405923 | K | https://www.pexels.com/video/rows-of-bread-on-a-rack-7405923/ | "bakery shelf bread pastries"
+st_log_cabin_snow.mp4 | pexels 10829472 | Olesia Antiushenia | https://www.pexels.com/video/wooden-houses-in-snow-10829472/ | "log cabin snow chimney smoke"
+st_dough_flour_hands.mp4 | pexels 10047236 | Ron Lach | https://www.pexels.com/video/a-person-mixing-ingredients-on-a-wooden-table-10047236/ | "flour dust hands dough"
+st_soup_pot_stir.mp4 | pexels 38103745 | SHOX ART | https://www.pexels.com/video/cooking-outdoors-over-open-fire-with-black-pots-38103745/ | "big pot stew stirring steam"

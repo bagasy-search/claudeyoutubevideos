@@ -32,7 +32,7 @@ export const C_ = [
   H("Ground beef and pork, a little onion", "meatballmix", "Two old hands rolling small round meatballs from a bowl of ground meat and breadcrumbs soaked in milk onto a floured board.", "the hands roll a meatball"),
   ST("browned slow in butter", "st_meatballs_pan"),
   H("then a cream gravy scraped up", "gravy", "An old hand stirring cream into the brown bits in a cast iron skillet with a wooden spoon, gravy thickening.", "the spoon scrapes up the brown bits"),
-  B("Serve them with potatoes and lingonberries", "meatplate", "A plate of Swedish meatballs with cream gravy, boiled potatoes and a spoon of red lingonberry sauce on a blue enamel plate.", "steam rises"),
+  ST("Serve them with potatoes and lingonberries", "st_meatballs_cream_pan"),
   AR("a whole dinner that miners carried", "ar_miners_lunch"),
   // ── #9 LANTTULAATIKKO (660.4)
   B("Number nine", "lanttu", "A baking dish of golden-brown Finnish rutabaga casserole, lanttulaatikko, with a spoon scooping out orange mash, Christmas candle beside it.", "steam rises from the scoop"),
@@ -43,7 +43,7 @@ export const C_ = [
   AVA("I get it"),
   BC("A rutabaga isn't a pretty vegetable", "ugly", "A lumpy waxy purple-yellow rutabaga on a plank table beside a knife, a bit of dirt still on its skin, harsh window light.", "slow push in"),
   ST("But that sweet, earthy mash", "st_orange_mash"),
-  B("Try it once before you decide", "christmasfin", "A Finnish Christmas table in a cabin with a casserole of orange rutabaga mash, candles, a loaf of bread and pine branches, snowy window.", "candles flicker"),
+  ST("Try it once before you decide", "st_family_holiday_table"),
   // ── #8 PANNUKAKKU (690.0)
   B("Number eight", "pannu", "A thick golden puffed baked pancake, pannukakku, in a black cast iron skillet with raised edges and a sunken middle, cut in squares with a berry on top.", "steam rises from the pancake"),
   H("Melt butter in a cast-iron skillet", "pannubutter", "A pat of butter melting and sizzling in a black cast iron skillet inside a hot open oven, an old hand with a mitt holding the skillet.", "the butter melts and sizzles"),
@@ -135,6 +135,7 @@ export const C_ = [
   H("covered with cold water", "boopot", "A whole stewing chicken and a beef shank lowered into a big black iron pot of cold water on the wood stove by an old hand.", "the chicken sinks into the water"),
   H("Pull the meat, chop it", "boochop", "An old hand pulling meat from a boiled chicken and chopping it on a wooden board beside a pot.", "the knife chops the meat"),
   H("Nobody eats one bowl", "boobowl", "A ladle pouring thick steaming booyah stew with carrots and potatoes into a tin bowl.", "the ladle pours the stew"),
+  ST("Season it at the end", "st_soup_pot_stir"),
   ST("Booyah is the reason a whole town shows up", "st_picnic_table_crowd"),
   ST("also the reason there are leftovers", "st_church_potluck"),
   // ── #1 LEFSE (1036.4) — PAGO GRANDE
@@ -150,7 +151,7 @@ export const C_ = [
   H("Now here's the one way to ruin it", "warm", "Warm sticky potato dough clinging to a rolling pin and torn on a floured board, an old hand pulling the ragged sheet away.", "the dough sticks and tears"),
   ST("So chill it overnight", "st_kneading_dough"),
   BC("cold all the way through", "cold", "A covered bowl of potato dough on a cold pantry shelf under a frosty window, a thermometer hanging beside it, night, lantern glow.", "frost creeps on the glass"),
-  H("The next day, work in a cup and a half of flour", "lefseflour", "An old hand working flour into cold potato dough in a wooden bowl, then rolling it into balls.", "the hand works the flour in"),
+  ST("The next day, work in a cup and a half of flour", "st_dough_flour_hands"),
   H("Roll each ball paper thin", "lefsepin", "A grooved wooden rolling pin rolling a ball of potato dough paper thin on a floured cloth-covered board.", "the pin rolls the dough thin"),
   ST("lay it on a hot dry griddle", "st_griddle_flatbread"),
   H("Little brown freckles", "lefsestick", "A long flat wooden lefse stick sliding under a thin round of lefse with brown freckles on a hot griddle.", "the stick lifts and flips the lefse"),

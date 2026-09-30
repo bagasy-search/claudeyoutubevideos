@@ -107,7 +107,7 @@ img/olcabin/h_applesimmer.jpg
 broll/olcabin/h_applesimmer.mp4
 img/olcabin/h_piecrust.jpg
 broll/olcabin/h_piecrust.mp4
-broll/olcabin_st30/st_apple_pie_bake.mp4
+broll/olcabin_st30/st_apple_pie_oven.mp4
 broll/olcabin_st30/st_pie_slice.mp4
 img/olcabin/book/p59.png
 img/olcabin/h_sausagemix.jpg
@@ -154,7 +154,7 @@ broll/olcabin/h_meatballmix.mp4
 broll/olcabin_st30/st_meatballs_pan.mp4
 img/olcabin/h_gravy.jpg
 broll/olcabin/h_gravy.mp4
-img/olcabin/b_meatplate.jpg
+broll/olcabin_st30/st_meatballs_cream_pan.mp4
 img/olcabin/ar/ar_miners_lunch.jpg
 broll/olcabin_st30/st_rutabaga.mp4
 img/olcabin/h_mash.jpg
@@ -162,8 +162,7 @@ broll/olcabin/h_mash.mp4
 broll/olcabin_st30/st_casserole_oven_open.mp4
 img/olcabin/b_ugly.jpg
 broll/olcabin_st30/st_orange_mash.mp4
-img/olcabin/b_christmasfin.jpg
-broll/olcabin/b_christmasfin.mp4
+broll/olcabin_st30/st_family_holiday_table.mp4
 img/olcabin/h_pannubutter.jpg
 broll/olcabin/h_pannubutter.mp4
 img/olcabin/b_pannupuff.jpg
@@ -224,7 +223,8 @@ broll/olcabin/h_pastycrust.mp4
 img/olcabin/h_pastyfold.jpg
 broll/olcabin/h_pastyfold.mp4
 broll/olcabin_st30/st_pastry_crimp.mp4
-broll/olcabin_st30/st_oven_dial.mp4
+img/olcabin/b_pastyoven.jpg
+broll/olcabin/b_pastyoven.mp4
 img/olcabin/b_doorfarm.jpg
 broll/olcabin/b_doorfarm.mp4
 img/olcabin/h_spicebag.jpg
@@ -236,6 +236,7 @@ img/olcabin/h_boopot.jpg
 broll/olcabin/h_boopot.mp4
 img/olcabin/h_boochop.jpg
 img/olcabin/h_boobowl.jpg
+broll/olcabin_st30/st_soup_pot_stir.mp4
 broll/olcabin_st30/st_picnic_table_crowd.mp4
 broll/olcabin_st30/st_church_potluck.mp4
 img/olcabin/b_lefse.jpg
@@ -248,8 +249,7 @@ broll/olcabin/h_ricer.mp4
 img/olcabin/h_warm.jpg
 broll/olcabin/h_warm.mp4
 broll/olcabin_st30/st_kneading_dough.mp4
-img/olcabin/h_lefseflour.jpg
-broll/olcabin/h_lefseflour.mp4
+broll/olcabin_st30/st_dough_flour_hands.mp4
 img/olcabin/h_lefsepin.jpg
 broll/olcabin/h_lefsepin.mp4
 broll/olcabin_st30/st_griddle_flatbread.mp4
@@ -298,10 +298,11 @@ broll/olcabin/h_chowderfish_last.jpg
 broll/olcabin/h_rommesimmer_last.jpg
 broll/olcabin/h_rommemilk_last.jpg
 broll/olcabin/b_twotrays_last.jpg
+broll/olcabin/b_pastyoven_last.jpg
+broll/olcabin_st30/st_soup_pot_stir_last.jpg
 broll/olcabin/b_lefse_last.jpg
 broll/olcabin/h_ricer_last.jpg
 broll/olcabin/h_warm_last.jpg
-broll/olcabin/h_lefseflour_last.jpg
 broll/olcabin/h_lefsepin_last.jpg
 broll/olcabin/h_lefsestack_last.jpg
 broll/olcabin/b_lefsewomen_last.jpg
