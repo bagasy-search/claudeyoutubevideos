@@ -1,0 +1,106 @@
+[
+ {
+  "nombre": "d_stack",
+  "motion": "an old hand lays a second dry split log beside the first one inside the stove firebox"
+ },
+ {
+  "nombre": "d_damper",
+  "motion": "an old hand turns the round iron damper handle a quarter turn on the stovepipe"
+ },
+ {
+  "nombre": "d_alarm",
+  "motion": "a finger presses the test button of the plain white alarm and its green light starts to flash"
+ },
+ {
+  "nombre": "b_label",
+  "motion": "the camera slowly moves closer to the metal plate on the back of the stove"
+ },
+ {
+  "nombre": "b_ashpail",
+  "motion": "thin wisps of grey ash dust drift up from the pail"
+ },
+ {
+  "nombre": "d_aircontrol",
+  "motion": "the old hand turns the small round air control wheel slowly a little"
+ },
+ {
+  "nombre": "d_sweepash",
+  "motion": "the small shovel scoops grey ash out of the firebox"
+ },
+ {
+  "nombre": "b_twist",
+  "motion": "the hand pushes the paper twist gently into the kindling"
+ },
+ {
+  "nombre": "b_pipehot",
+  "motion": "faint heat shimmer rises along the stovepipe"
+ },
+ {
+  "nombre": "b_wetinside",
+  "motion": "a bead of water slowly runs down the wet cut face of the log"
+ },
+ {
+  "nombre": "b_boilwater",
+  "motion": "steam hisses out of the wet log end and bubbles spit"
+ },
+ {
+  "nombre": "b_tarpipe",
+  "motion": "the flashlight beam moves slowly along the tar coated inside of the pipe"
+ },
+ {
+  "nombre": "b_dumped",
+  "motion": "a few split logs roll off the top of the heap"
+ },
+ {
+  "nombre": "d_doorair",
+  "motion": "the old hand turns the air control wheel a little to the left"
+ },
+ {
+  "nombre": "b_blackglass",
+  "motion": "a faint wisp of smoke curls behind the sooty glass"
+ },
+ {
+  "nombre": "d_openair",
+  "motion": "the gloved hand eases the stove door open a little and glowing coals brighten"
+ },
+ {
+  "nombre": "d_rake",
+  "motion": "the poker rakes the glowing coals forward"
+ },
+ {
+  "nombre": "b_birdnest",
+  "motion": "a few straws fall from the nest inside the pipe"
+ },
+ {
+  "nombre": "b_smokeback",
+  "motion": "a puff of grey smoke leans out of the open stove door into the room"
+ },
+ {
+  "nombre": "b_tarwall",
+  "motion": "a drop of dark tar slowly slides down the inside pipe wall"
+ },
+ {
+  "nombre": "b_creosote",
+  "motion": "black creosote flakes fall from the brush onto the white cloth"
+ },
+ {
+  "nombre": "b_thread",
+  "motion": "the thread leans and flutters in the warm draft"
+ },
+ {
+  "nombre": "d_towel",
+  "motion": "the hand pushes the rolled towel tight along the bottom of the door"
+ },
+ {
+  "nombre": "b_weather",
+  "motion": "the hand presses the weatherstrip along the frame"
+ },
+ {
+  "nombre": "d_batteries",
+  "motion": "the hand snaps the battery into the alarm"
+ },
+ {
+  "nombre": "b_towelrail",
+  "motion": "the hand lifts the dish towel away from the hot rail"
+ }
+]

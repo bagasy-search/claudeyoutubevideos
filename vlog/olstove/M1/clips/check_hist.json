@@ -1,0 +1,65 @@
+{
+ "m1": {
+  "m1.mp4": {
+   "win": 3.9,
+   "labios": {
+    "corr": 0.988,
+    "lag": 0.03,
+    "c0": 0.866,
+    "ok": true
+   },
+   "score": 0,
+   "verd": "ok",
+   "line": "dice: \"Well now, friend, come on in and shut that door behind you.\" · cara ✓ (0.95) · luz ⛔ oscura · dim indoor lighting · labios ✓ corr 0.988 lag 0.03s",
+   "swin": 3.9,
+   "salto": {
+    "t": 1.5,
+    "peak": 1.7,
+    "base": 1,
+    "ratio": 1.6
+   }
+  }
+ },
+ "m2": {
+  "m2.mp4": {
+   "win": 4.9,
+   "labios": {
+    "corr": 0.441,
+    "lag": -0.83,
+    "c0": 0.278,
+    "ok": false
+   },
+   "score": 65,
+   "verd": "⛔ REGENERAR",
+   "line": "dice: \"Why, they'd never ask for a raise.\" · de más: why they d ask · falta: the stove s only thing in this camp kitchen that asks · cara ✓ (0.95) · luz ⛔ oscura · Indoor log cabin scene; interior is dim/low-light with warm tones, not bright daylight. · labios ⛔ corr 0.441 lag -0.83s",
+   "swin": 4.9,
+   "salto": {
+    "t": 2.97,
+    "peak": 3.5,
+    "base": 2.2,
+    "ratio": 1.6
+   }
+  }
+ },
+ "m4": {
+  "m4.mp4": {
+   "win": 4.9,
+   "labios": {
+    "corr": 0.998,
+    "lag": 0,
+    "c0": 0.998,
+    "ok": true
+   },
+   "score": 50,
+   "verd": "⛔ REGENERAR",
+   "line": "dice: \"and one little handle on the pipe that people either never touch or turn the wrong way.\" · cara ✓ (0.95) · luz ⛔ oscura · Indoor scene; window shows daylight but interior is dim · labios ✓ corr 0.998 lag 0s",
+   "swin": 4.9,
+   "salto": {
+    "t": 4.67,
+    "peak": 1.8,
+    "base": 1.2,
+    "ratio": 1.5
+   }
+  }
+ }
+}

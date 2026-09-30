@@ -1,0 +1,22 @@
+{
+ "m1": {
+  "file": "m1.mp4",
+  "T": 5,
+  "own": false
+ },
+ "m2": {
+  "file": "m2.mp4",
+  "T": 4,
+  "own": false
+ },
+ "m4": {
+  "file": "m4.mp4",
+  "T": 6,
+  "own": false
+ },
+ "m5": {
+  "file": "m5.mp4",
+  "T": 4,
+  "own": false
+ }
+}
