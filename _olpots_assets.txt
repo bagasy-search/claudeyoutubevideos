@@ -22,11 +22,14 @@ img/olpots/b_enamel.jpg
 broll/olpots/b_enamel.mp4
 broll/olpots_st30/st114.mp4
 broll/olpots_st30/st85.mp4
-avatar_clips/olpots/reel30.mp4
+vid/olpots/m5.mp4
 broll/olpots_st30/st58.mp4
+vid/olpots/m6.mp4
 img/olpots/b_storeshelf.jpg
+vid/olpots/m7.mp4
 broll/olpots_st30/st113.mp4
 img/olpots/b_boxset.jpg
+avatar_clips/olpots/reel30.mp4
 img/olpots/o_writing.jpg
 broll/olpots_st30/st57.mp4
 broll/olpots_st30/st49.mp4

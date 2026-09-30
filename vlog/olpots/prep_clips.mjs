@@ -4,7 +4,7 @@ import fs from "node:fs";
 import { execFileSync, spawnSync } from "node:child_process";
 const R = "D:/Proyectos/video2-wt/olpots/", OUT = R + "public/vid/olpots/";
 fs.mkdirSync(OUT, { recursive: true });
-const LIFT = { m2: "eq=gamma=1.15:brightness=0.04," }; // m2 salió más oscuro que su ancla (visión: luz oscura) → levanta sombras
+const LIFT = { m2: "eq=gamma=1.15:brightness=0.04,", m5: "eq=gamma=1.15:brightness=0.04,", m6: "eq=gamma=1.15:brightness=0.04," }; // m2 salió más oscuro que su ancla (visión: luz oscura) → levanta sombras
 const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a], { windowsHide: true });
 const J = (f) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {});
 let n = 0;
