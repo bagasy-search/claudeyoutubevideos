@@ -15,4 +15,6 @@ const raw = [...A, ...B_, ...C_].map((s) => (NUM[s.at] ? { ...s, ov: CD(...NUM[s
   // el primer plano de cada receta (el número y el nombre) lo dice Ole a cámara: avatar con la placa encima
   .map((s) => (AV_INTRO.has(s.at) && s.kind === "bi" ? { at: s.at, kind: "av", name: "av", ov: s.ov } : s));
 // dos avatares seguidos = un solo plano continuo (sin re-zoom): se descarta el segundo
-export const SHOTS = raw.filter((s, i) => !(s.kind === "av" && !s.ov && raw[i - 1]?.kind === "av"));
+// planos que se funden con el real anterior (el archivo/stock se sostiene lo que dura la frase): sube el % de metraje REAL
+const DROP = new Set(["b_coldcabin", "b_foam", "b_clock", "h_appleSack", "b_limpaherring", "b_cold", "b_herringjar", "h_cheesejam"]);
+export const SHOTS = raw.filter((s, i) => !(s.kind === "av" && !s.ov && raw[i - 1]?.kind === "av")).filter((s) => !DROP.has(s.name));

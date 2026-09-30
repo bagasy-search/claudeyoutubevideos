@@ -88,7 +88,7 @@ for (const o of ovs) {
 // fuego/brasas REAL de stock: ambiente de fogón bajo esos planos (el stock viene mudo)
 cues.forEach((c, i) => { const n = shots[i].name; if (["st_woodstove_fire", "st_cast_iron_skillet", "st_big_kettle_outdoor"].includes(n)) foley.push({ from: c.from, dur: c.dur, src: "sfx/amb_fuego.mp3", vol: 0.35 }); });
 // ambiente continuo de estufa bajo el minuto 1 (compuerta: 0 silencios en el minuto 1)
-foley.push({ from: 0, dur: F(64), src: "sfx/olcabin_amb_m1.m4a", vol: 0.85 });
+foley.push({ from: 0, dur: F(64), src: "sfx/olcabin_amb_m1.m4a", vol: 1.0 });
 // ── compuertas del build
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }

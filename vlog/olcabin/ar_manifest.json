@@ -1,0 +1,146 @@
+{
+ "ar_lumberjack_meal": {
+  "file": "img/olcabin/ar/ar_lumberjack_meal.jpg",
+  "desc": "Lumberjacks eating in a crowded camp dining hall, northern Minnesota, c. 1917",
+  "w": 1377,
+  "h": 921
+ },
+ "ar_camp_cook": {
+  "file": "img/olcabin/ar/ar_camp_cook.jpg",
+  "desc": "Empty logging-camp mess hall with long tables and benches, Minnesota, 1937",
+  "w": 1302,
+  "h": 936
+ },
+ "ar_logging_camp_winter": {
+  "file": "img/olcabin/ar/ar_logging_camp_winter.jpg",
+  "desc": "Lumberjacks heading into a snowy logging camp cookhouse, Minnesota, c. 1930",
+  "w": 1600,
+  "h": 949
+ },
+ "ar_wildrice_harvest": {
+  "file": "img/olcabin/ar/ar_wildrice_harvest.jpg",
+  "desc": "Gathering wild rice from a boat among the reeds, Minnesota, 1934",
+  "w": 1600,
+  "h": 972
+ },
+ "ar_scand_family": {
+  "file": "img/olcabin/ar/ar_scand_family.jpg",
+  "desc": "Norwegian-American family group portrait, Mount Horeb, Wisconsin, c. 1890",
+  "w": 1600,
+  "h": 1230
+ },
+ "ar_norse_immigrants": {
+  "file": "img/olcabin/ar/ar_norse_immigrants.jpg",
+  "desc": "Norwegian family in traditional dress at a doorstep, woman about to leave for America",
+  "w": 1500,
+  "h": 1536
+ },
+ "ar_swede_family": {
+  "file": "img/olcabin/ar/ar_swede_family.jpg",
+  "desc": "Swedish immigrant family in front of a log cabin with a horse team, Rush City, Minnesota, c. 1887",
+  "w": 1600,
+  "h": 922
+ },
+ "ar_charles_xii": {
+  "file": "img/olcabin/ar/ar_charles_xii.jpg",
+  "desc": "Oval portrait painting of King Charles XII of Sweden in blue coat, after David von Krafft",
+  "w": 1269,
+  "h": 1600
+ },
+ "ar_voyageurs": {
+  "file": "img/olcabin/ar/ar_voyageurs.jpg",
+  "desc": "Painting of a large voyageur canoe with paddlers passing a waterfall, 1869",
+  "w": 985,
+  "h": 484
+ },
+ "ar_miners_lunch": {
+  "file": "img/olcabin/ar/ar_miners_lunch.jpg",
+  "desc": "Copper miners posing on a rock pile holding lunch pails, Tamarack mine, Michigan, 1905",
+  "w": 1600,
+  "h": 1266
+ },
+ "ar_iron_mine_mn": {
+  "file": "img/olcabin/ar/ar_iron_mine_mn.jpg",
+  "desc": "Miners and steam shovel working an open pit on the Mesabi Range, Minnesota, 1903",
+  "w": 1536,
+  "h": 1251
+ },
+ "ar_finnish_miners": {
+  "file": "img/olcabin/ar/ar_finnish_miners.jpg",
+  "desc": "Group of Finnish miners in helmets underground, South Porcupine, Ontario, 1928",
+  "w": 910,
+  "h": 1600
+ },
+ "ar_cabin_kitchen": {
+  "file": "img/olcabin/ar/ar_cabin_kitchen.jpg",
+  "desc": "Interior of a homesteader log cabin with stove pipe and curtained bed, northern Minnesota",
+  "w": 1600,
+  "h": 944
+ },
+ "ar_lake_cabin": {
+  "file": "img/olcabin/ar/ar_lake_cabin.jpg",
+  "desc": "Woman in front of a snowy log cabin in the northern Minnesota forest",
+  "w": 1600,
+  "h": 962
+ },
+ "ar_sod_farmhouse": {
+  "file": "img/olcabin/ar/ar_sod_farmhouse.jpg",
+  "desc": "Immigrant family posed in the dooryard of a sod house with a cow on the roof, 1886",
+  "w": 1600,
+  "h": 1195
+ },
+ "ar_dairy_farm": {
+  "file": "img/olcabin/ar/ar_dairy_farm.jpg",
+  "desc": "Dairy barn and silo on the Pratt farm, Blue Earth County, Minnesota, c. 1900",
+  "w": 1600,
+  "h": 896
+ },
+ "ar_potato_field": {
+  "file": "img/olcabin/ar/ar_potato_field.jpg",
+  "desc": "Workers loading bushel baskets of potatoes onto a horse-drawn wagon in a Minnesota field",
+  "w": 1600,
+  "h": 1196
+ },
+ "ar_wheat_harvest": {
+  "file": "img/olcabin/ar/ar_wheat_harvest.jpg",
+  "desc": "Steam-engine threshing crew at work, Blue Earth County, Minnesota, c. 1900",
+  "w": 1600,
+  "h": 1211
+ },
+ "ar_belgian_doorcounty": {
+  "file": "img/olcabin/ar/ar_belgian_doorcounty.jpg",
+  "desc": "Brussel House, brick hotel in Brussels, Door County, Wisconsin, 1914 postcard",
+  "w": 1193,
+  "h": 669
+ },
+ "ar_church_women_cooking": {
+  "file": "img/olcabin/ar/ar_church_women_cooking.jpg",
+  "desc": "Women and volunteers plating dessert in a busy mission kitchen, Minnesota, 1934-1948",
+  "w": 1600,
+  "h": 1309
+ },
+ "ar_kitchen_stove": {
+  "file": "img/olcabin/ar/ar_kitchen_stove.jpg",
+  "desc": "Women in aprons cooking at iron stoves in a domestic science kitchen",
+  "w": 1600,
+  "h": 1040
+ },
+ "ar_church_picnic_kitchen": {
+  "file": "img/olcabin/ar/ar_church_picnic_kitchen.jpg",
+  "desc": "Group picnic in the woods cooking fish over a fire with a large pot, Leech Lake, Minnesota",
+  "w": 1600,
+  "h": 1248
+ },
+ "ar_lutefisk_dinner": {
+  "file": "img/olcabin/ar/ar_lutefisk_dinner.jpg",
+  "desc": "Stockfish/klippfisk laid out to dry on rocks by a fjord, Norway",
+  "w": 1600,
+  "h": 1036
+ },
+ "ar_immigrant_table": {
+  "file": "img/olcabin/ar/ar_immigrant_table.jpg",
+  "desc": "Farm family eating dinner around a table in a log house, North Dakota, 1937",
+  "w": 1600,
+  "h": 1202
+ }
+}

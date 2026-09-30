@@ -1,0 +1,23 @@
+[
+ {
+  "nombre": "b_herringpack",
+  "motion": "the hand presses the fillets into the jar"
+ },
+ {
+  "nombre": "h_bannockpat",
+  "motion": "the hand pats the dough flat",
+  "gente": true
+ },
+ {
+  "nombre": "b_lanttubake",
+  "motion": "the top slowly browns"
+ },
+ {
+  "nombre": "b_pannupuff",
+  "motion": "the edges rise higher"
+ },
+ {
+  "nombre": "b_lefsewomen",
+  "motion": "the rollers roll in rhythm"
+ }
+]

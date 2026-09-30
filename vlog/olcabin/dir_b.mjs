@@ -3,7 +3,7 @@ import { X, V, AVA, ST, AR, H, B, BC, O, C, CD } from "./dir_lib.mjs";
 const BOOK = "img/ole/portada.png";
 const PG = (n, extra = {}) => ({ src: `img/olcabin/book/p${n}.png`, aspect: 1700 / 2200, label: "A PAGE FROM THE BOOK", ...extra });
 // llaves de cámara sobre la página (x,y = fracción de la página; s = zoom)
-const KEYS_RECIPE = (t0) => [[t0, 0.5, 0.5, 1], [t0 + 1.0, 0.27, 0.53, 2.6], [t0 + 2.8, 0.7, 0.53, 2.6], [t0 + 5.0, 0.5, 0.76, 2.4]];
+const KEYS_RECIPE = (t0) => [[t0, 0.5, 0.5, 1], [t0 + 1.0, 0.27, 0.53, 2.2], [t0 + 2.8, 0.7, 0.53, 2.2], [t0 + 5.0, 0.5, 0.76, 2.2]];
 export const B_ = [
   // ── #21 KRUMKAKE (195.1)
   B("Number twenty-one", "krum", "A plate of golden rolled krumkake cookies with a lacy pattern on a plank table, one filled with whipped cream and a strawberry, blue mug beside.", "slow push in"),
@@ -11,7 +11,7 @@ export const B_ = [
   H("A thin batter goes onto a patterned iron", "krumbatter", "A spoon dropping a round of thin pale batter onto the patterned surface of an open cast iron cookie iron.", "the batter spreads on the iron"),
   H("the second it comes off you roll it", "krumroll", "An old hand rolling a hot golden lacy cookie around a wooden cone on the plank table, steam rising, fingers protected by a cloth.", "the hand rolls the cookie tight around the cone"),
   H("Fill it with whipped cream and fruit", "krumcream", "A rolled krumkake cookie being filled with whipped cream from a spoon and topped with a red berry.", "cream fills the cookie"),
-  AR("Those old irons were made to sit over the fire", "ar_krumkake_iron"),
+  ST("Those old irons were made to sit over the fire", "st_rustic_kitchen"),
   B("If you find one at an estate sale", "estate", "An estate sale table in a farmhouse yard with a rusty cast iron krumkake iron, old spoons and a chipped enamel pot among household items, a person's hand about to pick the iron up.", "a hand reaches for the iron"),
   // ── #20 LEIPÄJUUSTO (222.8)
   B("Number twenty", "cheese", "A round flat golden-brown squeaky Finnish bread cheese with dark brown freckles, cut in wedges on a wooden board with a small bowl of cloudberry jam and a mug of coffee.", "steam from the coffee"),
@@ -37,9 +37,10 @@ export const B_ = [
   B("Number eighteen", "rice", "A bowl of creamy rice porridge with a pat of butter melting in the middle and cinnamon sprinkled on top, a spoon, on a plank table with a lantern glow.", "the butter melts slowly"),
   C("The Norwegians say", "GrandmaCard", { title: "Risgrøt · Risgrynsgröt", lines: ["one blanched almond", "hidden in the pot"], rot: -2, x: 50, y: 50 }),
   B("Whoever finds it in their bowl", "marzipan", "A family around a Christmas Eve table in a log cabin: a small child holding up a spoon with an almond, a marzipan pig on a plate, presents under a small tree, everyone laughing.", "the child holds up the spoon in triumph"),
+  ST("and gets to open a present first", "st_christmas_gift_child"),
   AVA("Mine's the plain version"),
   H("Half a cup of long-grain rice", "ricemeasure", "An old hand pouring long-grain white rice from a tin cup into a heavy black pot beside a jug of milk.", "rice pours into the pot"),
-  C("four cups of whole milk", "OleRuleCard", { n: 1, title: "Rice porridge", line: "1/2 cup rice · 4 cups milk · 1/3 cup sugar", placement: "center" }),
+  C("four cups of whole milk", "OleRuleCard", { n: 18, ruleWord: "NUMBER", title: "Rice porridge", line: "1/2 cup rice · 4 cups milk · 1/3 cup sugar", placement: "center" }),
   ST("Bare simmer", "st_rice_pudding"),
   BC("stir every five minutes", "clock", "A wooden wall clock and the wood stove in the cabin, a heavy pot simmering on the stove with a long wooden spoon leaning in it, the clock hands showing quarter past.", "slow push in on the pot"),
   H("pull it while it still looks a little loose", "loose", "A wooden spoon lifting slightly loose creamy rice porridge from a heavy pot, the porridge falling in a slow ribbon.", "the porridge ribbons off the spoon"),
@@ -48,14 +49,17 @@ export const B_ = [
   B("Stir it and it turns to cream", "cream", "Close view of a wooden spoon stirring thick white creamy rice porridge in a black iron pot, steam rising, the wood stove glowing.", "the spoon stirs slowly"),
   // ── #17 DRIED-APPLE PIE (326.2) — libro p.59
   B("Number seventeen", "applepie", "A dried-apple pie baked in a black cast iron skillet with a lattice-free lard crust, golden brown, a slice cut out, on a plank table.", "steam rises from the pie"),
-  ST("Think about a logging camp in February", "st_snow_forest"),
+  ST("Think about a logging camp in February", "st_wood_chop"),
+  ST("No fresh apples for months", "st_snow_forest"),
   AR("but the cook has a sack of dried ones", "ar_camp_cook"),
   H("a sack of dried ones", "appleSack", "An old hand reaching into a cloth sack full of dried apple rings on the plank table.", "the hand lifts out dried apple rings"),
   AR("The old records list dried apples", "ar_logging_camp_winter"),
+  AR("so that pie meant something", "ar_lumberjack_meal"),
   H("Simmer eight ounces of dried apples", "applesimmer", "A small saucepan of dried apple slices simmering in cider with a cinnamon stick on the wood stove.", "cider bubbles around the apples"),
-  C("thicken it with a spoon of cornstarch", "OleRuleCard", { n: 2, title: "Dried-apple pie", line: "8 oz apples · 2 cups cider · 400 F · 35-40 min", placement: "center" }),
+  C("thicken it with a spoon of cornstarch", "OleRuleCard", { n: 17, ruleWord: "NUMBER", title: "Dried-apple pie", line: "8 oz apples · 2 cups cider · 400 F · 35-40 min", placement: "center" }),
   H("between two lard crusts", "piecrust", "Two old hands laying a top crust of lard pastry over apple filling in a cast iron skillet, crimping the edge.", "the hands crimp the edge"),
   ST("in a cast-iron skillet at four hundred", "st_apple_pie_bake"),
+  ST("thirty-five to forty minutes", "st_pie_slice"),
   C("That one's in the book too", "OleBookPage", PG(59, { keys: [[0.2, 0.5, 0.5, 1], [0.9, 0.5, 0.78, 2.2]], sub: "Dried-apple pie · page 59" })),
   C("And wait till you see number four", "RecipeCountdown", { n: 4, name: "Rømmegrøt", word: "NUMBER", placement: "center", hero: true }),
   // ── #16 POTATO SAUSAGE (369.6)
@@ -69,16 +73,17 @@ export const B_ = [
   AVA("That tells you something"),
   // ── #15 BANNOCK (403.3) — libro p.23
   B("Number fifteen", "bannock", "A round golden bannock flatbread baked in a cast iron skillet with a pat of butter melting, a jar of jam, on a plank table.", "steam rises"),
-  H("Flour, baking powder, salt", "bannockflour", "An old hand mixing flour, baking powder and lard in a tin bowl with a fork.", "the fork works the lard in"),
+  ST("Flour, baking powder, salt", "st_flour_sift"),
+  H("patted into a skillet", "bannockpat", "An old hand patting a round of bannock dough flat in a black cast iron skillet on the wood stove, flour on the knuckles.", "the hand pats the dough flat"),
   AR("Scottish fur traders brought a version of it", "ar_voyageurs"),
-  C("Mine's two cups of flour", "OleRuleCard", { n: 3, title: "Bannock", line: "2 cups flour · 1 Tbsp baking powder · 2 Tbsp lard · 3/4 cup water", placement: "center" }),
+  C("Mine's two cups of flour", "OleRuleCard", { n: 15, ruleWord: "NUMBER", title: "Bannock", line: "2 cups flour · 1 Tbsp baking powder · 2 Tbsp lard · 3/4 cup water", placement: "center" }),
   ST("Medium-low heat, six or seven minutes", "st_cast_iron_skillet"),
   H("cover the pan for the first side", "bannockcover", "An old hand setting a heavy lid on a cast iron skillet with a bannock inside on the wood stove.", "the lid lowers onto the pan"),
-  C("Page twenty-three", "OleBookPage", PG(23, { keys: [[0.2, 0.5, 0.5, 1], [0.8, 0.27, 0.53, 2.3]], sub: "Bannock · page 23" })),
+  C("Page twenty-three", "OleBookPage", PG(23, { keys: [[0.2, 0.5, 0.5, 1], [0.8, 0.27, 0.53, 2.2]], sub: "Bannock · page 23" })),
   // ── #14 KRINGLE (443.9)
   B("Number fourteen", "kringle", "A big flat oval Danish kringle pastry with white icing and toasted pecans on a wooden board, cut slice showing paper-thin layers, coffee beside.", "steam from the coffee"),
   C("Danish bakers brought it to Racine", "OriginMap", { origins: [{ id: "denmark", label: "DENMARK", dishes: ["kringle"], at: 0.2 }], dest: "Racine, Wisconsin", focus: "denmark" }),
-  AR("and Racine bakeries were selling it", "ar_kringle_bakery"),
+  ST("and Racine bakeries were selling it", "st_bakery_counter"),
   ST("folded into paper-thin layers", "st_rolling_pin"),
   H("around a filling of pecan or almond or apple", "kringlefill", "An old hand spooning pecan filling in a line down the middle of a long strip of rolled pastry.", "the filling line is laid down"),
   AVA("Wisconsin made it the state pastry"),
@@ -91,12 +96,12 @@ export const B_ = [
   C("And number one is still waiting", "GrandmaCard", { title: "Number one", lines: ["still waiting on", "that one mistake"], rot: -2, x: 50, y: 50, from: "right" }),
   // ── #13 SAUSAGE & SAUERKRAUT (510.4) — libro p.43
   B("Number thirteen", "kraut", "A black cast iron skillet of smoked sausage and sauerkraut with apple slices and caraway, steam, a boiled potato and a spoon of mustard beside it on a plank table.", "steam rises from the skillet"),
-  AR("Every people that settled the north woods", "ar_kraut_barrel"),
+  AR("Every people that settled the north woods", "ar_sod_farmhouse"),
   ST("some way to carry cabbage through a hard winter", "st_cabbage_shred"),
   H("Brown a pound and a half of smoked sausage", "krautsausage", "Smoked sausage links browning in a black cast iron skillet, an old hand turning one with a fork.", "the fork turns a sausage"),
   H("Cook a sliced onion in the same pan", "krautapples", "An old hand adding sliced apples and caraway seeds to onions in the skillet.", "apple slices tumble into the pan"),
   H("stir in a pound of lightly drained kraut", "krautpour", "An old hand tipping pale sauerkraut into the skillet with the sausages and pouring cider from a tin cup.", "the kraut falls in and steams"),
   ST("Boiled potatoes and plenty of mustard", "st_potatoes_boiling"),
-  C("This is a page from the book, page forty-three", "OleBookPage", PG(43, { keys: [[0.2, 0.5, 0.5, 1], [0.9, 0.7, 0.53, 2.4], [3.0, 0.5, 0.78, 2.4]], sub: "Sausage & sauerkraut · page 43" })),
+  C("This is a page from the book, page forty-three", "OleBookPage", PG(43, { keys: [[0.2, 0.5, 0.5, 1], [0.9, 0.7, 0.53, 2.2], [3.0, 0.5, 0.78, 2.4]], sub: "Sausage & sauerkraut · page 43" })),
   B("The apple is the trick", "appletrick", "A halved red apple next to a skillet of sauerkraut on a plank table, a slice of apple held over the steaming kraut.", "steam rises past the apple"),
 ];

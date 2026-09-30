@@ -1,0 +1,292 @@
+{
+ "st_egg_coffee_grounds": {
+  "file": "broll/olcabin_st30/st_egg_coffee_grounds.mp4",
+  "desc": "Hands stir ground coffee in a small glass bowl with copper spoon.",
+  "dur": 7
+ },
+ "st_coffee_pot_boil": {
+  "file": "broll/olcabin_st30/st_coffee_pot_boil.mp4",
+  "desc": "Boiling coffee in a metal pot on a gas stove.",
+  "dur": 7
+ },
+ "st_coffee_cups_row": {
+  "file": "broll/olcabin_st30/st_coffee_cups_row.mp4",
+  "desc": "Several white coffee mugs sitting on a brown table.",
+  "dur": 7
+ },
+ "st_fry_dough": {
+  "file": "broll/olcabin_st30/st_fry_dough.mp4",
+  "desc": "Pierogi frying in bubbling hot oil in a dark pan.",
+  "dur": 7
+ },
+ "st_fruit_simmer": {
+  "file": "broll/olcabin_st30/st_fruit_simmer.mp4",
+  "desc": "Pot of simmering orange food on stovetop with spoon",
+  "dur": 6.97
+ },
+ "st_wheat_field": {
+  "file": "broll/olcabin_st30/st_wheat_field.mp4",
+  "desc": "Golden ripe wheat field with green trees in the background.",
+  "dur": 7
+ },
+ "st_braided_bread": {
+  "file": "broll/olcabin_st30/st_braided_bread.mp4",
+  "desc": "Baked braided bread loaf on a wooden table.",
+  "dur": 7
+ },
+ "st_rice_pudding": {
+  "file": "broll/olcabin_st30/st_rice_pudding.mp4",
+  "desc": "Milk and rice bubbling in a metal cooking pot.",
+  "dur": 7
+ },
+ "st_snow_forest": {
+  "file": "broll/olcabin_st30/st_snow_forest.mp4",
+  "desc": "Snowy pine forest winter landscape.",
+  "dur": 7
+ },
+ "st_apple_pie_bake": {
+  "file": "broll/olcabin_st30/st_apple_pie_bake.mp4",
+  "desc": "An apple pie baking inside a glowing oven.",
+  "dur": 7
+ },
+ "st_sausage_making": {
+  "file": "broll/olcabin_st30/st_sausage_making.mp4",
+  "desc": "Hands mixing ground meat and green onions in a yellow bowl.",
+  "dur": 7
+ },
+ "st_lake_fog": {
+  "file": "broll/olcabin_st30/st_lake_fog.mp4",
+  "desc": "Morning fog over lake with pine trees and cabin.",
+  "dur": 6.97
+ },
+ "st_cabbage_shred": {
+  "file": "broll/olcabin_st30/st_cabbage_shred.mp4",
+  "desc": "Hands using a knife to shred red cabbage on a wooden cutting board.",
+  "dur": 7
+ },
+ "st_potatoes_boiling": {
+  "file": "broll/olcabin_st30/st_potatoes_boiling.mp4",
+  "desc": "Potatoes boiling in bubbling water inside a metal pot.",
+  "dur": 7
+ },
+ "st_stew_steam": {
+  "file": "broll/olcabin_st30/st_stew_steam.mp4",
+  "desc": "Rustic cast-iron pot with steaming stew over open flames.",
+  "dur": 7
+ },
+ "st_wild_rice_lake": {
+  "file": "broll/olcabin_st30/st_wild_rice_lake.mp4",
+  "desc": "Canoe on lake with reeds in foreground.",
+  "dur": 6.97
+ },
+ "st_casserole_bake": {
+  "file": "broll/olcabin_st30/st_casserole_bake.mp4",
+  "desc": "Casserole baking in a dark, warm oven.",
+  "dur": 7
+ },
+ "st_meatballs_pan": {
+  "file": "broll/olcabin_st30/st_meatballs_pan.mp4",
+  "desc": "Meatballs simmering in a creamy sauce in a large frying pan.",
+  "dur": 7
+ },
+ "st_rutabaga": {
+  "file": "broll/olcabin_st30/st_rutabaga.mp4",
+  "desc": "Two wooden bowls containing chopped pale root vegetables on a rustic wooden cutting board.",
+  "dur": 7
+ },
+ "st_lone_dinner": {
+  "file": "broll/olcabin_st30/st_lone_dinner.mp4",
+  "desc": "An older woman eats dinner alone at a wooden table.",
+  "dur": 7
+ },
+ "st_salt_pork_render": {
+  "file": "broll/olcabin_st30/st_salt_pork_render.mp4",
+  "desc": "Bacon frying in a dark iron skillet with metal tongs.",
+  "dur": 6.9
+ },
+ "st_chowder_soup": {
+  "file": "broll/olcabin_st30/st_chowder_soup.mp4",
+  "desc": "Creamy mushroom chowder simmering in a metal pan on a stovetop.",
+  "dur": 7
+ },
+ "st_fish_steamed": {
+  "file": "broll/olcabin_st30/st_fish_steamed.mp4",
+  "desc": "Two fish fillets cooking in sizzling butter in red frying pan",
+  "dur": 7
+ },
+ "st_melted_butter": {
+  "file": "broll/olcabin_st30/st_melted_butter.mp4",
+  "desc": "Butter melting in a cast iron pan over a campfire.",
+  "dur": 7
+ },
+ "st_dark_bread_oven": {
+  "file": "broll/olcabin_st30/st_dark_bread_oven.mp4",
+  "desc": "Sliced dark bread loaf on a wooden cutting board.",
+  "dur": 7
+ },
+ "st_sour_cream_stir": {
+  "file": "broll/olcabin_st30/st_sour_cream_stir.mp4",
+  "desc": "Stirring thick cream porridge in a large pot.",
+  "dur": 7
+ },
+ "st_flour_sift": {
+  "file": "broll/olcabin_st30/st_flour_sift.mp4",
+  "desc": "White flour actively sifting through a metal strainer into a glass bowl.",
+  "dur": 7
+ },
+ "st_chop_veggies": {
+  "file": "broll/olcabin_st30/st_chop_veggies.mp4",
+  "desc": "A hand dicing peeled potatoes on a wooden board.",
+  "dur": 7
+ },
+ "st_pastry_crimp": {
+  "file": "broll/olcabin_st30/st_pastry_crimp.mp4",
+  "desc": "Hands folding pastry dough into small pies on wooden board.",
+  "dur": 7
+ },
+ "st_oven_dial": {
+  "file": "broll/olcabin_st30/st_oven_dial.mp4",
+  "desc": "Hand reaching for white oven with knobs in rustic kitchen.",
+  "dur": 7
+ },
+ "st_chicken_pot": {
+  "file": "broll/olcabin_st30/st_chicken_pot.mp4",
+  "desc": "Chicken boiling in a large metal pot.",
+  "dur": 7
+ },
+ "st_big_kettle_outdoor": {
+  "file": "broll/olcabin_st30/st_big_kettle_outdoor.mp4",
+  "desc": "Large steaming kettle over open outdoor campfire",
+  "dur": 7
+ },
+ "st_picnic_table_crowd": {
+  "file": "broll/olcabin_st30/st_picnic_table_crowd.mp4",
+  "desc": "Group sharing food at a long outdoor wooden table.",
+  "dur": 7
+ },
+ "st_griddle_flatbread": {
+  "file": "broll/olcabin_st30/st_griddle_flatbread.mp4",
+  "desc": "Flatbread on a primitive fire griddle with spatula, smoke, and logs.",
+  "dur": 6.3
+ },
+ "st_cheese_skillet": {
+  "file": "broll/olcabin_st30/st_cheese_skillet.mp4",
+  "desc": "Browning food in a cast iron skillet with a knife.",
+  "dur": 7
+ },
+ "st_cow_barn": {
+  "file": "broll/olcabin_st30/st_cow_barn.mp4",
+  "desc": "Dairy cows in a modern barn feeding area.",
+  "dur": 7
+ },
+ "st_cinnamon_sugar": {
+  "file": "broll/olcabin_st30/st_cinnamon_sugar.mp4",
+  "desc": "Sugar sprinkled on cookies by an open book.",
+  "dur": 7
+ },
+ "st_butter_toast": {
+  "file": "broll/olcabin_st30/st_butter_toast.mp4",
+  "desc": "Hands spreading butter on rustic bread slices on a wooden table.",
+  "dur": 7
+ },
+ "st_woodstove_fire": {
+  "file": "broll/olcabin_st30/st_woodstove_fire.mp4",
+  "desc": "Vibrant flames burning brightly inside a traditional cabin wood stove.",
+  "dur": 7
+ },
+ "st_cast_iron_skillet": {
+  "file": "broll/olcabin_st30/st_cast_iron_skillet.mp4",
+  "desc": "Cast iron skillet with vegetables cooking over open campfire flames.",
+  "dur": 4.3
+ },
+ "st_kneading_dough": {
+  "file": "broll/olcabin_st30/st_kneading_dough.mp4",
+  "desc": "Hands kneading a ball of dough.",
+  "dur": 7
+ },
+ "st_rolling_pin": {
+  "file": "broll/olcabin_st30/st_rolling_pin.mp4",
+  "desc": "Hands rolling a wooden pin over dough on a rustic table.",
+  "dur": 7
+ },
+ "st_pie_slice": {
+  "file": "broll/olcabin_st30/st_pie_slice.mp4",
+  "desc": "A crumb-topped slice of pie served on a black plate.",
+  "dur": 7
+ },
+ "st_church_potluck": {
+  "file": "broll/olcabin_st30/st_church_potluck.mp4",
+  "desc": "A long table filled with a large variety of shared dishes.",
+  "dur": 5.3
+ },
+ "st_rustic_kitchen": {
+  "file": "broll/olcabin_st30/st_rustic_kitchen.mp4",
+  "desc": "Rustic wood-fire cooking scene with hanging kettle and pots.",
+  "dur": 7
+ },
+ "st_spices_mortar": {
+  "file": "broll/olcabin_st30/st_spices_mortar.mp4",
+  "desc": "Stone mortar with pestle grinding mixed spices on white background.",
+  "dur": 7
+ },
+ "st_pickle_jars": {
+  "file": "broll/olcabin_st30/st_pickle_jars.mp4",
+  "desc": "Glass jar containing pickled red cabbage on a wooden table.",
+  "dur": 7
+ },
+ "st_cream_pour": {
+  "file": "broll/olcabin_st30/st_cream_pour.mp4",
+  "desc": "Wooden container pouring white liquid into rustic copper bowl.",
+  "dur": 7
+ },
+ "st_hot_bowl": {
+  "file": "broll/olcabin_st30/st_hot_bowl.mp4",
+  "desc": "Bowl of noodle soup with vegetables on a wooden table.",
+  "dur": 7
+ },
+ "st_christmas_table": {
+  "file": "broll/olcabin_st30/st_christmas_table.mp4",
+  "desc": "Rustic table set with lit candles, plates of food, and wine glasses.",
+  "dur": 6.97
+ },
+ "st_wood_chop": {
+  "file": "broll/olcabin_st30/st_wood_chop.mp4",
+  "desc": "Man holds axe over wood on snowy stump.",
+  "dur": 7
+ },
+ "st_candles_table": {
+  "file": "broll/olcabin_st30/st_candles_table.mp4",
+  "desc": "Lit candles and red flowers on a festive dining table.",
+  "dur": 7
+ },
+ "st_two_pots_stove": {
+  "file": "broll/olcabin_st30/st_two_pots_stove.mp4",
+  "desc": "Three rusty pots simmering over open fire in a rustic stone kitchen.",
+  "dur": 7
+ },
+ "st_women_baking": {
+  "file": "broll/olcabin_st30/st_women_baking.mp4",
+  "desc": "Hands of multiple women kneading dough on a wooden table.",
+  "dur": 7
+ },
+ "st_orange_mash": {
+  "file": "broll/olcabin_st30/st_orange_mash.mp4",
+  "desc": "Orange pumpkin puree in bowl with spoon and garnish.",
+  "dur": 6.03
+ },
+ "st_flatbread_stack": {
+  "file": "broll/olcabin_st30/st_flatbread_stack.mp4",
+  "desc": "Stack of thin crepes on rustic wooden plate.",
+  "dur": 7
+ },
+ "st_christmas_gift_child": {
+  "file": "broll/olcabin_st30/st_christmas_gift_child.mp4",
+  "desc": "Happy girl opens wrapped Christmas gift with smiling father nearby.",
+  "dur": 7
+ },
+ "st_bakery_counter": {
+  "file": "broll/olcabin_st30/st_bakery_counter.mp4",
+  "desc": "Baker wrapping box of pastries on counter.",
+  "dur": 7
+ }
+}

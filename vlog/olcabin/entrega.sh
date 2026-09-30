@@ -4,7 +4,7 @@
 # uso: bash vlog/olcabin/entrega.sh <farm.mp4> <salida.mp4>
 set -e
 IN=$1; OUT=$2; cd D:/Proyectos/video2-wt/olcabin
-N=$(grep -oE "TOTAL_FRAMES_OLBEANS = [0-9]+" src/olcabin/timeline_olcabin.gen.ts | grep -oE "[0-9]+$")
+N=$(grep -oE "TOTAL_FRAMES_OLCABIN = [0-9]+" src/olcabin/timeline_olcabin.gen.ts | grep -oE "[0-9]+$")
 ffmpeg -v error -y -i "$IN" -i out/olcabin_mix.wav -map 0:v:0 -map 1:a:0 \
   -vf "setpts=N/(30*TB),scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p" \
   -fps_mode passthrough -frames:v $N -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \

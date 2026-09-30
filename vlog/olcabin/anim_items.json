@@ -65,10 +65,6 @@
   "gente": true
  },
  {
-  "nombre": "b_fattig2",
-  "motion": "steam from the mug"
- },
- {
   "nombre": "h_notebook",
   "motion": "the pencil writes a line",
   "gente": true
@@ -97,8 +93,8 @@
   "gente": true
  },
  {
-  "nombre": "b_coldshelf",
-  "motion": "slow push in, frost on the glass"
+  "nombre": "b_herringpack",
+  "motion": "the hand presses the fillets into the jar"
  },
  {
   "nombre": "h_cracker",
@@ -118,10 +114,6 @@
   "nombre": "h_glossy",
   "motion": "the spoon lifts and syrup drips",
   "gente": true
- },
- {
-  "nombre": "b_xmasbowl",
-  "motion": "candle flame flickers"
  },
  {
   "nombre": "b_oldstove",
@@ -181,10 +173,6 @@
   "gente": true
  },
  {
-  "nombre": "b_afternoon",
-  "motion": "steam rises from the mug"
- },
- {
   "nombre": "b_marzipan",
   "motion": "the child holds up the spoon in triumph"
  },
@@ -235,8 +223,8 @@
   "motion": "the line shuffles forward"
  },
  {
-  "nombre": "h_bannockflour",
-  "motion": "the fork works the lard in",
+  "nombre": "h_bannockpat",
+  "motion": "the hand pats the dough flat",
   "gente": true
  },
  {
@@ -297,6 +285,10 @@
   "gente": true
  },
  {
+  "nombre": "b_lanttubake",
+  "motion": "the top slowly browns"
+ },
+ {
   "nombre": "b_ugly",
   "motion": "slow push in"
  },
@@ -310,6 +302,10 @@
   "gente": true
  },
  {
+  "nombre": "b_pannupuff",
+  "motion": "the edges rise higher"
+ },
+ {
   "nombre": "b_sinks",
   "motion": "the middle sinks a little"
  },
@@ -321,10 +317,6 @@
   "nombre": "h_lutesoak",
   "motion": "the fish slab swells slowly",
   "gente": true
- },
- {
-  "nombre": "b_lutefans",
-  "motion": "the older man raises his thumb"
  },
  {
   "nombre": "h_molasses",
@@ -472,6 +464,10 @@
   "nombre": "h_lefsestack",
   "motion": "the hand lays a lefse on the stack",
   "gente": true
+ },
+ {
+  "nombre": "b_lefsewomen",
+  "motion": "the rollers roll in rhythm"
  },
  {
   "nombre": "b_coffeeon",
