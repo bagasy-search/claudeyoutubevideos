@@ -1,142 +1,1570 @@
 {
- "music": { "src": "sfx/music_federer.mp3", "start": 6.0, "db": -22 },
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 6.0,
+  "db": -22
+ },
  "cam": [
-  { "id": "b001", "cam": { "push": [1.0, 1.12], "origin": [35, 50], "shakes": [{ "at": 2, "amp": 10, "len": 12 }] } },
-  { "id": "b003", "cam": { "punches": [{ "at": 1, "amount": 0.14 }] } },
-  { "id": "b004", "cam": { "push": [1.0, 1.08], "origin": [50, 35] } },
-  { "id": "b005", "cam": { "whipIn": 6 } },
-  { "id": "b006", "cam": { "punches": [{ "at": 2, "amount": 0.1 }] } },
-  { "id": "b007", "cam": { "whipIn": 6, "whipDir": -1 } },
-  { "id": "b008", "cam": { "push": [1.0, 1.15], "origin": [45, 35] } },
-  { "id": "b009", "cam": { "whipIn": 6 } },
-  { "id": "b010", "cam": { "whipIn": 6, "whipDir": -1 } },
-  { "id": "b012", "cam": { "push": [1.0, 1.06] } },
-  { "id": "b013", "cam": { "punches": [{ "at": 20, "amount": 0.12 }] } },
-  { "id": "b018", "cam": { "push": [1.0, 1.18], "origin": [50, 38] } },
-  { "id": "b019", "cam": { "whipIn": 7 } },
-  { "id": "b078", "cam": { "push": [1.0, 1.2], "origin": [50, 45] } },
-  { "id": "b086", "cam": { "whipIn": 7 } },
-  { "id": "b144", "cam": { "push": [1.0, 1.08] } },
-  { "id": "b148", "cam": { "push": [1.0, 1.1] }, "rate": 0.6 },
-  { "id": "b158", "cam": { "push": [1.0, 1.1], "origin": [50, 40] } }
+  {
+   "id": "b001",
+   "cam": {
+    "push": [
+     1.0,
+     1.12
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "shakes": [
+     {
+      "at": 2,
+      "amp": 10,
+      "len": 12
+     }
+    ]
+   }
+  },
+  {
+   "id": "b003",
+   "cam": {
+    "punches": [
+     {
+      "at": 1,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b004",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     50,
+     35
+    ]
+   }
+  },
+  {
+   "id": "b005",
+   "cam": {
+    "whipIn": 6
+   }
+  },
+  {
+   "id": "b006",
+   "cam": {
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.1
+     }
+    ]
+   }
+  },
+  {
+   "id": "b007",
+   "cam": {
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b008",
+   "cam": {
+    "push": [
+     1.0,
+     1.15
+    ],
+    "origin": [
+     45,
+     35
+    ]
+   }
+  },
+  {
+   "id": "b009",
+   "cam": {
+    "whipIn": 6
+   }
+  },
+  {
+   "id": "b010",
+   "cam": {
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b012",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ]
+   }
+  },
+  {
+   "id": "b013",
+   "cam": {
+    "punches": [
+     {
+      "at": 20,
+      "amount": 0.12
+     }
+    ]
+   }
+  },
+  {
+   "id": "b018",
+   "cam": {
+    "push": [
+     1.0,
+     1.18
+    ],
+    "origin": [
+     50,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b019",
+   "cam": {
+    "whipIn": 7
+   }
+  },
+  {
+   "id": "b078",
+   "cam": {
+    "push": [
+     1.0,
+     1.2
+    ],
+    "origin": [
+     50,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b086",
+   "cam": {
+    "whipIn": 7
+   }
+  },
+  {
+   "id": "b144",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ]
+   }
+  },
+  {
+   "id": "b148",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ]
+   },
+   "rate": 0.6
+  },
+  {
+   "id": "b158",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     50,
+     40
+    ]
+   }
+  }
  ],
  "overlays": [
-  { "kind": "TfbTitleSlam", "beat": "b004", "word": "loco", "off": -0.05, "until": "b004",
-    "props": { "pos": "top", "words": [ { "t": "¿LOCO", "beat": "b004", "word": "loco", "hl": "yellow" }, { "t": "O", "beat": "b004", "word": "o" }, { "t": "GENIO?", "beat": "b004", "word": "genio", "hl": "yellow" } ] },
-    "sfx": [ { "src": "sfx/text_slam.mp3", "db": -12 } ] },
-  { "kind": "TfbTitleSlam", "beat": "b004", "word": "cemento", "off": -0.05, "until": "b004", "until_off": 0.4,
-    "props": { "pos": "bottom", "size": 96, "words": [ { "t": "CEMENTO", "beat": "b004", "word": "cemento" }, { "t": "+ CAL", "beat": "b004", "word": "cal" }, { "t": "+ AGUA", "beat": "b004", "word": "agua" }, { "t": "NO SE CAE", "beat": "b004", "word": "cae", "hl": "red" } ] },
-    "sfx": [ { "src": "sfx/number_slam.mp3", "db": -14 } ] },
-  { "kind": "TfbLabel", "beat": "b005", "dur": 1.2, "props": { "text": "CAL HIDRATADA", "at": [50, 18] }, "sfx": [ { "src": "sfx/sfx_pop.mp3", "db": -16 } ] },
-  { "kind": "TfbLabel", "beat": "b006", "word": "cemento", "dur": 1.6, "props": { "text": "CEMENTO BLANCO", "sub": "poquito", "at": [50, 16] }, "sfx": [ { "src": "sfx/sfx_pop.mp3", "db": -16 } ] },
-  { "kind": "TfbLabel", "beat": "b007", "dur": 1.0, "props": { "text": "AGUA", "at": [50, 18] }, "sfx": [ { "src": "sfx/sfx_pop.mp3", "db": -16 } ] },
-  { "kind": "TfbZoomCircle", "beat": "b008", "word": "cuarto", "until": "b008", "props": { "track": [ { "f": 0, "x": 40, "y": 36, "r": 120 } ], "label": "¿EL 4º?", "labelSide": "right" }, "sfx": [ { "src": "sfx/cam_zoom_punch.mp3", "db": -14 } ] },
-  { "kind": "TfbLabel", "beat": "b011", "word": "primera", "dur": 1.8, "props": { "text": "1ª MANO", "sub": "transparente", "at": [72, 22] } },
-  { "kind": "TfbLabel", "beat": "b012", "word": "antes", "dur": 2.4, "props": { "text": "ANTES", "at": [75, 20], "tone": "white" } },
-  { "kind": "TfbLabel", "beat": "b012", "word": "después", "dur": 1.8, "props": { "text": "DESPUÉS", "at": [25, 20] }, "sfx": [ { "src": "sfx/sfx_pop.mp3", "db": -16 } ] },
-  { "kind": "TfbLabel", "beat": "b014", "word": "rinde", "dur": 2.2, "props": { "text": "RINDE MUCHÍSIMO", "at": [50, 16] } },
-  { "kind": "TfbWallSection", "beat": "b015", "word": "porque", "until": "b016", "until_off": -0.1,
-    "props": { "leftTitle": "Cal", "rightTitle": "Pintura plástica", "leftTag": "Se vuelve piedra", "rightTag": "Se ampolla y se cae", "airLabel": "AIRE (CO₂)" },
-    "sfx": [ { "src": "sfx/deep-cinematic-impact-1.mp3", "db": -14 }, { "src": "sfx/rumble_const.mp3", "db": -24, "off": 0.3 } ] },
-  { "kind": "TfbFlash", "beat": "b016", "dur": 0.2, "off": 0 },
-  { "kind": "TfbTitleSlam", "beat": "b018", "word": "cuarto", "until": "b018",
-    "props": { "pos": "top", "size": 104, "words": [ { "t": "EL 4º INGREDIENTE", "beat": "b018", "word": "cuarto", "hl": "yellow" }, { "t": "CASI NADIE", "beat": "b018", "word": "nadie" }, { "t": "LO PONE BIEN", "beat": "b018", "word": "bien", "hl": "red" } ] },
-    "sfx": [ { "src": "sfx/cp_riser.wav", "db": -16, "off": -2.2 }, { "src": "sfx/stinger_hit.mp3", "db": -12 } ] },
-
-  { "kind": "TfbBucketRecipe", "beat": "b021", "off": -0.2, "until": "b024", "until_off": 0.8,
-    "props": { "title": "La receta · todo con la misma jarra", "items": [
-      { "label": "Cal hidratada", "amount": 4, "unit": "jarras", "color": "#F4F2EC", "grain": true, "beat": "b021", "word": "cuatro" },
-      { "label": "Cemento blanco", "amount": 1, "unit": "jarra", "color": "#DCDAD3", "grain": true, "beat": "b022", "word": "una" },
-      { "label": "Sal gruesa disuelta", "amount": 1, "unit": "puñado", "color": "#BFD7E6", "beat": "b023", "word": "puñado" },
-      { "label": "Agua · hasta leche", "amount": 10, "unit": "jarras", "color": "#9BD2F0", "beat": "b024", "word": "agua" } ] },
-    "sfx": [ { "src": "sfx/bar_grow.mp3", "db": -18 } ] },
-  { "kind": "TfbStepCounter", "beat": "b026", "until": "b026", "props": { "step": 1, "total": 5, "title": "Remojar la noche anterior" } },
-  { "kind": "TfbStepCounter", "beat": "b027", "until": "b027", "props": { "step": 2, "total": 5, "title": "Colar" } },
-  { "kind": "TfbStepCounter", "beat": "b028", "until": "b028", "props": { "step": 3, "total": 5, "title": "Pared mineral y mojada" } },
-  { "kind": "TfbStepCounter", "beat": "b029", "until": "b029", "props": { "step": 4, "total": 5, "title": "3-4 manos finas" } },
-  { "kind": "TfbStepCounter", "beat": "b030", "until": "b030", "props": { "step": 5, "total": 5, "title": "Curar con rocío" } },
-
-  { "kind": "TfbLabel", "beat": "b032", "word": "guardar", "dur": 3.0, "props": { "text": "¿Se guarda para mañana?", "at": [50, 15], "tone": "white", "size": 58 }, "sfx": [ { "src": "sfx/sfx_pop.mp3", "db": -16 } ] },
-  { "kind": "TfbZoomCircle", "beat": "b033", "word": "grumos", "until": "b033", "props": { "track": [ { "f": 0, "x": 50, "y": 50, "r": 190 } ], "label": "Grumos", "labelSide": "right", "color": "#E32619" } },
-  { "kind": "TfbLabel", "beat": "b035", "word": "sólo", "dur": 3.2, "props": { "text": "Con cemento: sólo lo del día", "at": [50, 16], "size": 58 }, "sfx": [ { "src": "sfx/number_slam.mp3", "db": -16 } ] },
-  { "kind": "TfbLabel", "beat": "b037", "word": "kilos", "dur": 2.6, "props": { "text": "¿Kilos o jarras?", "at": [50, 15], "tone": "white", "size": 58 } },
-  { "kind": "TfbTitleSlam", "beat": "b039", "word": "cuatro", "until": "b039", "props": { "pos": "center", "size": 200, "words": [ { "t": "4", "beat": "b039", "word": "cuatro", "hl": "yellow" }, { "t": ":", "beat": "b039", "word": "cuatro" }, { "t": "1", "beat": "b039", "word": "una", "hl": "yellow" } ] }, "sfx": [ { "src": "sfx/number_slam.mp3", "db": -12 } ] },
-  { "kind": "TfbZoomCircle", "beat": "b043", "word": "mira", "until": "b043", "props": { "track": [ { "f": 0, "x": 50, "y": 45, "r": 150 } ], "label": "Se llevó todo", "labelSide": "left", "color": "#E32619" } },
-  { "kind": "TfbLabel", "beat": "b045", "word": "gota", "dur": 2.4, "props": { "text": "La prueba de la gota", "at": [50, 14], "size": 58 }, "sfx": [ { "src": "sfx/sfx_pop.mp3", "db": -16 } ] },
-  { "kind": "TfbLabel", "beat": "b045", "word": "plástico", "dur": 2.2, "props": { "text": "Resbala = plástico", "at": [50, 86], "tone": "red", "size": 54 } },
-  { "kind": "TfbLabel", "beat": "b046", "word": "mineral", "dur": 2.4, "props": { "text": "Se chupa = mineral", "at": [50, 86], "size": 54 } },
-  { "kind": "TfbWarning", "beat": "b048", "word": "yeso", "until": "b048", "props": { "text": "Sobre yeso pintado, no", "tone": "yellow", "icons": ["alert"] } },
-
-  { "kind": "TfbWarning", "beat": "b049", "word": "gafas", "until": "b049", "props": { "text": "Gafas y guantes", "tone": "yellow", "icons": ["goggles", "gloves"] }, "sfx": [ { "src": "sfx/sfx_text_thud.mp3", "db": -14 } ] },
-  { "kind": "TfbWarning", "beat": "b050", "word": "ojos", "until": "b050", "props": { "text": "Cal en los ojos: urgencia", "tone": "red", "icons": ["eye"] }, "sfx": [ { "src": "sfx/sfx_text_thud.mp3", "db": -14 } ] },
-  { "kind": "TfbLabel", "beat": "b053", "word": "agrícola", "dur": 2.6, "props": { "text": "Cal agrícola: no", "sub": "pide cal hidratada", "at": [50, 15], "tone": "red", "size": 60 } },
-  { "kind": "TfbLabel", "beat": "b055", "word": "afuera", "dur": 2.8, "props": { "text": "Afuera: + cemento blanco", "at": [50, 15], "size": 56 } },
-  { "kind": "TfbLabel", "beat": "b059", "word": "fracción", "dur": 2.6, "props": { "text": "Una fracción de una lata", "at": [50, 15], "size": 56 } },
-
-  { "kind": "TfbTimeSkip", "beat": "b060", "dur": 1.8, "props": { "text": "La noche anterior", "dir": -1 }, "sfx": [ { "src": "sfx/cam_travel.mp3", "db": -16 } ] },
-  { "kind": "TfbTimeSkip", "beat": "b065", "dur": 1.6, "props": { "text": "Al día siguiente" }, "sfx": [ { "src": "sfx/cam_travel.mp3", "db": -16 } ] },
-  { "kind": "TfbLabel", "beat": "b066", "word": "leche", "dur": 2.2, "props": { "text": "Fina, como leche", "at": [50, 15], "size": 58 } },
-  { "kind": "TfbLabel", "beat": "b069", "word": "disuelta", "dur": 2.4, "props": { "text": "Sal: siempre disuelta", "at": [50, 15], "size": 56 } },
-  { "kind": "TfbLabel", "beat": "b074", "word": "mosquitero", "dur": 2.4, "props": { "text": "Colar por mosquitero", "at": [50, 15], "size": 56 } },
-
-  { "kind": "TfbLamina", "beat": "b079", "off": -0.1, "until": "b083", "until_off": 0.1,
-    "props": { "src": "img/tfbpintura/lamina.jpg", "puntos": [
-      { "f": 0, "x": 50, "y": 50, "z": 1 }, { "beat": "b079", "word": "materiales", "x": 16, "y": 60, "z": 1.9 },
-      { "beat": "b080", "word": "paso", "x": 50, "y": 62, "z": 1.8 }, { "beat": "b081", "word": "tres", "x": 50, "y": 80, "z": 1.9 },
-      { "beat": "b082", "word": "errores", "x": 83, "y": 48, "z": 1.9 }, { "beat": "b083", "word": "hoja", "x": 50, "y": 50, "z": 1 } ],
-      "marks": [ { "beat": "b079", "word": "cuatro", "dur": 5, "x": 6.5, "y": 37.5, "w": 21, "h": 4.5 }, { "beat": "b082", "word": "pintar", "dur": 7, "x": 71, "y": 40, "w": 25, "h": 21 } ] },
-    "sfx": [ { "src": "sfx/sfx_paper_tick.mp3", "db": -12 }, { "src": "sfx/sfx_whoosh_soft.mp3", "db": -16 } ] },
-  { "kind": "TfbQrCard", "beat": "b084", "word": "televisor", "off": -0.3, "until": "b085", "until_off": -0.2,
-    "props": { "qr": "img/tfbpintura/qr_tfbpintura.png", "portada": "img/tfbpintura/portada-coleccion.jpg", "caption": "Apunta la cámara de tu teléfono" },
-    "sfx": [ { "src": "sfx/sfx_pop.mp3", "db": -14 } ] },
-
-  { "kind": "TfbStepCounter", "beat": "b087", "until": "b088", "props": { "step": 1, "total": 5, "word": "PARED", "title": "Raspar lo flojo" } },
-  { "kind": "TfbStepCounter", "beat": "b089", "until": "b089", "props": { "step": 2, "total": 5, "word": "PARED", "title": "Cepillar el polvo" } },
-  { "kind": "TfbWarning", "beat": "b090", "word": "humedad", "until": "b091", "props": { "text": "La pintura no arregla humedad", "tone": "yellow", "icons": ["alert"] } },
-  { "kind": "TfbStepCounter", "beat": "b092", "until": "b093", "props": { "step": 3, "total": 5, "word": "PARED", "title": "Tapar piso y ventanas" } },
-  { "kind": "TfbStepCounter", "beat": "b095", "until": "b097", "props": { "step": 4, "total": 5, "word": "PARED", "title": "Mojar la pared" } },
-  { "kind": "TfbWarning", "beat": "b098", "word": "mediodía", "until": "b098", "props": { "text": "Nunca con sol de mediodía", "tone": "red", "icons": ["alert"] } },
-  { "kind": "TfbStepCounter", "beat": "b099", "until": "b099", "props": { "step": 5, "total": 5, "word": "PARED", "title": "Mirar el pronóstico" } },
-
-  { "kind": "TfbLabel", "beat": "b100", "word": "ramiro", "dur": 3.2, "props": { "text": "Ramiro", "sub": "Cochabamba, Bolivia", "at": [24, 18], "tone": "white", "size": 58 } },
-  { "kind": "TfbLabel", "beat": "b102", "word": "mojaste", "dur": 1.6, "props": { "text": "Sin mojar", "at": [22, 22], "tone": "red", "size": 54 } },
-  { "kind": "TfbLabel", "beat": "b102", "word": "mediodía", "dur": 1.8, "props": { "text": "Al mediodía", "at": [50, 22], "tone": "red", "size": 54 } },
-  { "kind": "TfbLabel", "beat": "b102", "word": "gruesa", "dur": 2.4, "props": { "text": "Una mano gruesa", "at": [78, 22], "tone": "red", "size": 54 } },
-  { "kind": "TfbLabel", "beat": "b106", "word": "arriba", "dur": 2.6, "props": { "text": "De arriba hacia abajo", "at": [50, 15], "size": 56 } },
-  { "kind": "TfbLabel", "beat": "b112", "word": "cuatro", "dur": 2.6, "props": { "text": "4 a 6 horas", "sub": "entre mano y mano", "at": [50, 15], "size": 64 } },
-
-  { "kind": "TfbLabel", "beat": "b114", "word": "segunda", "dur": 2.0, "props": { "text": "2ª mano", "at": [22, 18], "size": 64 } },
-  { "kind": "TfbLabel", "beat": "b116", "word": "tercera", "dur": 2.0, "props": { "text": "3ª mano", "at": [22, 18], "size": 64 } },
-  { "kind": "TfbLabel", "beat": "b118", "word": "mate", "dur": 2.6, "props": { "text": "Acabado mate, tipo tiza", "at": [50, 15], "tone": "white", "size": 56 } },
-  { "kind": "TfbLabel", "beat": "b120", "word": "pigmentos", "dur": 2.8, "props": { "text": "Pigmentos minerales", "sub": "tonos suaves", "at": [50, 15], "size": 60 } },
-  { "kind": "TfbLabel", "beat": "b122", "word": "seco", "dur": 2.4, "props": { "text": "Seco = más claro", "at": [50, 15], "size": 58 } },
-
-  { "kind": "TfbQrCard", "beat": "b126", "word": "televisor", "off": -0.3, "until": "b126", "until_off": 0.3,
-    "props": { "qr": "img/tfbpintura/qr_tfbpintura.png", "portada": "img/tfbpintura/portada-coleccion.jpg", "caption": "Apunta la cámara de tu teléfono" },
-    "sfx": [ { "src": "sfx/sfx_pop.mp3", "db": -14 } ] },
-  { "kind": "TfbLabel", "beat": "b129", "word": "mañana", "dur": 3.0, "props": { "text": "Rocío: mañana y tarde", "sub": "2 o 3 días", "at": [50, 15], "size": 58 } },
-  { "kind": "TfbWarning", "beat": "b131", "word": "cañería", "until": "b131", "props": { "text": "No por la cañería", "tone": "yellow", "icons": ["alert"] } },
-
-  { "kind": "TfbLabel", "beat": "b133", "word": "adentro", "dur": 3.0, "props": { "text": "Adentro: cal sola", "sub": "sin cemento", "at": [50, 15], "size": 60 } },
-  { "kind": "TfbLabel", "beat": "b134", "word": "jarra", "dur": 3.0, "props": { "text": "1 de cal : 2-3 de agua", "at": [50, 15], "size": 60 } },
-  { "kind": "TfbWarning", "beat": "b140", "word": "lavable", "until": "b140", "props": { "text": "No es pintura lavable", "tone": "yellow", "icons": ["alert"] } },
-  { "kind": "TfbLabel", "beat": "b143", "word": "descripción", "off": -0.4, "dur": 2.4, "props": { "text": "Te lo dejé abajo ↓", "at": [50, 82], "size": 60 }, "sfx": [ { "src": "sfx/sfx_pop.mp3", "db": -16 } ] },
-
-  { "kind": "TfbTimeSkip", "beat": "b144", "dur": 1.8, "props": { "text": "Varios días después" }, "sfx": [ { "src": "sfx/cam_travel.mp3", "db": -16 } ] },
-  { "kind": "TfbLabel", "beat": "b145", "word": "limpia", "dur": 2.2, "props": { "text": "Casi limpia", "at": [50, 15], "size": 64 } },
-  { "kind": "TfbWaterTest", "beat": "b148", "dur": 4.0, "props": { "area": [5, 5, 55, 85], "drops": 30, "slowLabel": "Cámara lenta", "timer": true } },
-  { "kind": "TfbLabel", "beat": "b149", "word": "nada", "dur": 2.4, "props": { "text": "Ni se ablanda ni se va", "at": [50, 15], "size": 60 }, "sfx": [ { "src": "sfx/winner_chime.mp3", "db": -18 } ] },
-
-  { "kind": "TfbTitleSlam", "beat": "b153", "word": "puñado", "until": "b153", "props": { "pos": "top", "size": 110, "words": [ { "t": "UN PUÑADO.", "beat": "b153", "word": "puñado", "hl": "yellow" }, { "t": "UNO.", "beat": "b153", "word": "uno", "hl": "red" } ] }, "sfx": [ { "src": "sfx/text_slam.mp3", "db": -13 } ] },
-  { "kind": "TfbZoomCircle", "beat": "b154", "word": "manchas", "until": "b154", "props": { "track": [ { "f": 0, "x": 22, "y": 78, "r": 150 } ], "label": "Sal de más", "labelSide": "right", "color": "#E32619" } },
-  { "kind": "TfbBucketRecipe", "beat": "b159", "off": -0.2, "until": "b159", "until_off": 0.6,
-    "props": { "title": "Resumen", "items": [
-      { "label": "Cal hidratada", "amount": 4, "unit": "jarras", "color": "#F4F2EC", "grain": true, "beat": "b159", "word": "cuatro" },
-      { "label": "Cemento blanco", "amount": 1, "unit": "jarra", "color": "#DCDAD3", "grain": true, "beat": "b159", "word": "una" },
-      { "label": "Sal disuelta", "amount": 1, "unit": "puñado", "color": "#BFD7E6", "beat": "b159", "word": "puñado" },
-      { "label": "Agua · hasta leche", "amount": 10, "unit": "jarras", "color": "#9BD2F0", "beat": "b159", "word": "agua" } ] } },
-  { "kind": "TfbQrCard", "beat": "b162", "word": "código", "off": -0.4, "until": "b163", "until_off": -0.3,
-    "props": { "qr": "img/tfbpintura/qr_tfbpintura.png", "portada": "img/tfbpintura/portada-coleccion.jpg", "caption": "Apunta la cámara de tu teléfono" },
-    "sfx": [ { "src": "sfx/sfx_pop.mp3", "db": -14 } ] }
- ]
+  {
+   "kind": "TfbTitleSlam",
+   "beat": "b004",
+   "word": "loco",
+   "off": -0.05,
+   "until": "b004",
+   "props": {
+    "pos": "top",
+    "words": [
+     {
+      "t": "¿LOCO",
+      "beat": "b004",
+      "word": "loco",
+      "hl": "yellow"
+     },
+     {
+      "t": "O",
+      "beat": "b004",
+      "word": "o"
+     },
+     {
+      "t": "GENIO?",
+      "beat": "b004",
+      "word": "genio",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TfbTitleSlam",
+   "beat": "b004",
+   "word": "cemento",
+   "off": -0.05,
+   "until": "b004",
+   "until_off": 0.4,
+   "props": {
+    "pos": "bottom",
+    "size": 96,
+    "words": [
+     {
+      "t": "CEMENTO",
+      "beat": "b004",
+      "word": "cemento"
+     },
+     {
+      "t": "+ CAL",
+      "beat": "b004",
+      "word": "cal"
+     },
+     {
+      "t": "+ AGUA",
+      "beat": "b004",
+      "word": "agua"
+     },
+     {
+      "t": "NO SE CAE",
+      "beat": "b004",
+      "word": "cae",
+      "hl": "red"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/number_slam.mp3",
+     "db": -14
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b005",
+   "dur": 1.2,
+   "props": {
+    "text": "CAL HIDRATADA",
+    "at": [
+     50,
+     18
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b006",
+   "word": "cemento",
+   "dur": 1.6,
+   "props": {
+    "text": "CEMENTO BLANCO",
+    "sub": "poquito",
+    "at": [
+     50,
+     16
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b007",
+   "dur": 1.0,
+   "props": {
+    "text": "AGUA",
+    "at": [
+     50,
+     18
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbZoomCircle",
+   "beat": "b008",
+   "word": "cuarto",
+   "until": "b008",
+   "props": {
+    "track": [
+     {
+      "f": 0,
+      "x": 40,
+      "y": 36,
+      "r": 120
+     }
+    ],
+    "label": "¿EL 4º?",
+    "labelSide": "right"
+   },
+   "sfx": [
+    {
+     "src": "sfx/cam_zoom_punch.mp3",
+     "db": -14
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b011",
+   "word": "primera",
+   "dur": 1.8,
+   "props": {
+    "text": "1ª MANO",
+    "sub": "transparente",
+    "at": [
+     72,
+     22
+    ]
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b012",
+   "word": "antes",
+   "dur": 2.4,
+   "props": {
+    "text": "ANTES",
+    "at": [
+     75,
+     20
+    ],
+    "tone": "white"
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b012",
+   "word": "después",
+   "dur": 1.8,
+   "props": {
+    "text": "DESPUÉS",
+    "at": [
+     25,
+     20
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b014",
+   "word": "rinde",
+   "dur": 2.2,
+   "props": {
+    "text": "RINDE MUCHÍSIMO",
+    "at": [
+     50,
+     16
+    ]
+   }
+  },
+  {
+   "kind": "TfbWallSection",
+   "beat": "b015",
+   "word": "porque",
+   "props": {
+    "leftTitle": "Cal",
+    "rightTitle": "Pintura plástica",
+    "leftTag": "Se vuelve piedra",
+    "rightTag": "Se ampolla y se cae",
+    "airLabel": "AIRE (CO₂)"
+   },
+   "sfx": [
+    {
+     "src": "sfx/deep-cinematic-impact-1.mp3",
+     "db": -14
+    },
+    {
+     "src": "sfx/rumble_const.mp3",
+     "db": -24,
+     "off": 0.3
+    }
+   ],
+   "dur": 5.2
+  },
+  {
+   "kind": "TfbFlash",
+   "beat": "b016",
+   "dur": 0.2,
+   "off": 0
+  },
+  {
+   "kind": "TfbTitleSlam",
+   "beat": "b018",
+   "word": "cuarto",
+   "until": "b018",
+   "props": {
+    "pos": "top",
+    "size": 104,
+    "words": [
+     {
+      "t": "EL 4º INGREDIENTE",
+      "beat": "b018",
+      "word": "cuarto",
+      "hl": "yellow"
+     },
+     {
+      "t": "CASI NADIE",
+      "beat": "b018",
+      "word": "nadie"
+     },
+     {
+      "t": "LO PONE BIEN",
+      "beat": "b018",
+      "word": "bien",
+      "hl": "red"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/cp_riser.wav",
+     "db": -16,
+     "off": -2.2
+    },
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TfbBucketRecipe",
+   "beat": "b021",
+   "off": -0.2,
+   "until": "b024",
+   "until_off": 0.8,
+   "props": {
+    "title": "La receta · todo con la misma jarra",
+    "items": [
+     {
+      "label": "Cal hidratada",
+      "amount": 4,
+      "unit": "jarras",
+      "color": "#F4F2EC",
+      "grain": true,
+      "beat": "b021",
+      "word": "cuatro"
+     },
+     {
+      "label": "Cemento blanco",
+      "amount": 1,
+      "unit": "jarra",
+      "color": "#DCDAD3",
+      "grain": true,
+      "beat": "b022",
+      "word": "una"
+     },
+     {
+      "label": "Sal gruesa disuelta",
+      "amount": 1,
+      "unit": "puñado",
+      "color": "#BFD7E6",
+      "beat": "b023",
+      "word": "puñado"
+     },
+     {
+      "label": "Agua · hasta leche",
+      "amount": 10,
+      "unit": "jarras",
+      "color": "#9BD2F0",
+      "beat": "b024",
+      "word": "agua"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/bar_grow.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TfbStepCounter",
+   "beat": "b026",
+   "until": "b026",
+   "props": {
+    "step": 1,
+    "total": 5,
+    "title": "Remojar la noche anterior"
+   }
+  },
+  {
+   "kind": "TfbStepCounter",
+   "beat": "b027",
+   "until": "b027",
+   "props": {
+    "step": 2,
+    "total": 5,
+    "title": "Colar"
+   }
+  },
+  {
+   "kind": "TfbStepCounter",
+   "beat": "b028",
+   "until": "b028",
+   "props": {
+    "step": 3,
+    "total": 5,
+    "title": "Pared mineral y mojada"
+   }
+  },
+  {
+   "kind": "TfbStepCounter",
+   "beat": "b029",
+   "until": "b029",
+   "props": {
+    "step": 4,
+    "total": 5,
+    "title": "3-4 manos finas"
+   }
+  },
+  {
+   "kind": "TfbStepCounter",
+   "beat": "b030",
+   "until": "b030",
+   "props": {
+    "step": 5,
+    "total": 5,
+    "title": "Curar con rocío"
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b032",
+   "word": "guardar",
+   "dur": 3.0,
+   "props": {
+    "text": "¿Se guarda para mañana?",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 58
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbZoomCircle",
+   "beat": "b033",
+   "word": "grumos",
+   "until": "b033",
+   "props": {
+    "track": [
+     {
+      "f": 0,
+      "x": 50,
+      "y": 50,
+      "r": 190
+     }
+    ],
+    "label": "Grumos",
+    "labelSide": "right",
+    "color": "#E32619"
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b035",
+   "word": "sólo",
+   "dur": 3.2,
+   "props": {
+    "text": "Con cemento: sólo lo del día",
+    "at": [
+     50,
+     16
+    ],
+    "size": 58
+   },
+   "sfx": [
+    {
+     "src": "sfx/number_slam.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b037",
+   "word": "kilos",
+   "dur": 2.6,
+   "props": {
+    "text": "¿Kilos o jarras?",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 58
+   }
+  },
+  {
+   "kind": "TfbTitleSlam",
+   "beat": "b039",
+   "word": "cuatro",
+   "until": "b039",
+   "props": {
+    "pos": "center",
+    "size": 200,
+    "words": [
+     {
+      "t": "4",
+      "beat": "b039",
+      "word": "cuatro",
+      "hl": "yellow"
+     },
+     {
+      "t": ":",
+      "beat": "b039",
+      "word": "cuatro"
+     },
+     {
+      "t": "1",
+      "beat": "b039",
+      "word": "una",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/number_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TfbZoomCircle",
+   "beat": "b043",
+   "word": "mira",
+   "until": "b043",
+   "props": {
+    "track": [
+     {
+      "f": 0,
+      "x": 50,
+      "y": 45,
+      "r": 150
+     }
+    ],
+    "label": "Se llevó todo",
+    "labelSide": "left",
+    "color": "#E32619"
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b045",
+   "word": "gota",
+   "dur": 2.4,
+   "props": {
+    "text": "La prueba de la gota",
+    "at": [
+     50,
+     14
+    ],
+    "size": 58
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b045",
+   "word": "plástico",
+   "dur": 2.2,
+   "props": {
+    "text": "Resbala = plástico",
+    "at": [
+     50,
+     86
+    ],
+    "tone": "red",
+    "size": 54
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b046",
+   "word": "mineral",
+   "dur": 2.4,
+   "props": {
+    "text": "Se chupa = mineral",
+    "at": [
+     50,
+     86
+    ],
+    "size": 54
+   }
+  },
+  {
+   "kind": "TfbWarning",
+   "beat": "b048",
+   "word": "yeso",
+   "until": "b048",
+   "props": {
+    "text": "Sobre yeso pintado, no",
+    "tone": "yellow",
+    "icons": [
+     "alert"
+    ]
+   }
+  },
+  {
+   "kind": "TfbWarning",
+   "beat": "b049",
+   "word": "gafas",
+   "until": "b049",
+   "props": {
+    "text": "Gafas y guantes",
+    "tone": "yellow",
+    "icons": [
+     "goggles",
+     "gloves"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_text_thud.mp3",
+     "db": -14
+    }
+   ]
+  },
+  {
+   "kind": "TfbWarning",
+   "beat": "b050",
+   "word": "ojos",
+   "until": "b050",
+   "props": {
+    "text": "Cal en los ojos: urgencia",
+    "tone": "red",
+    "icons": [
+     "eye"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_text_thud.mp3",
+     "db": -14
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b053",
+   "word": "agrícola",
+   "dur": 2.6,
+   "props": {
+    "text": "Cal agrícola: no",
+    "sub": "pide cal hidratada",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 60
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b055",
+   "word": "afuera",
+   "dur": 2.8,
+   "props": {
+    "text": "Afuera: + cemento blanco",
+    "at": [
+     50,
+     15
+    ],
+    "size": 56
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b059",
+   "word": "fracción",
+   "dur": 2.6,
+   "props": {
+    "text": "Una fracción de una lata",
+    "at": [
+     50,
+     15
+    ],
+    "size": 56
+   }
+  },
+  {
+   "kind": "TfbTimeSkip",
+   "beat": "b060",
+   "dur": 1.8,
+   "props": {
+    "text": "La noche anterior",
+    "dir": -1
+   },
+   "sfx": [
+    {
+     "src": "sfx/cam_travel.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbTimeSkip",
+   "beat": "b065",
+   "dur": 1.6,
+   "props": {
+    "text": "Al día siguiente"
+   },
+   "sfx": [
+    {
+     "src": "sfx/cam_travel.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b066",
+   "word": "leche",
+   "dur": 2.2,
+   "props": {
+    "text": "Fina, como leche",
+    "at": [
+     50,
+     15
+    ],
+    "size": 58
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b069",
+   "word": "disuelta",
+   "dur": 2.4,
+   "props": {
+    "text": "Sal: siempre disuelta",
+    "at": [
+     50,
+     15
+    ],
+    "size": 56
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b074",
+   "word": "mosquitero",
+   "dur": 2.4,
+   "props": {
+    "text": "Colar por mosquitero",
+    "at": [
+     50,
+     15
+    ],
+    "size": 56
+   }
+  },
+  {
+   "kind": "TfbLamina",
+   "beat": "b079",
+   "off": -0.1,
+   "until": "b083",
+   "until_off": 0.1,
+   "props": {
+    "src": "img/tfbpintura/lamina.jpg",
+    "puntos": [
+     {
+      "f": 0,
+      "x": 50,
+      "y": 50,
+      "z": 1
+     },
+     {
+      "beat": "b079",
+      "word": "materiales",
+      "x": 16,
+      "y": 60,
+      "z": 1.9
+     },
+     {
+      "beat": "b080",
+      "word": "paso",
+      "x": 50,
+      "y": 62,
+      "z": 1.8
+     },
+     {
+      "beat": "b081",
+      "word": "tres",
+      "x": 50,
+      "y": 80,
+      "z": 1.9
+     },
+     {
+      "beat": "b082",
+      "word": "errores",
+      "x": 83,
+      "y": 48,
+      "z": 1.9
+     },
+     {
+      "beat": "b083",
+      "word": "hoja",
+      "x": 50,
+      "y": 50,
+      "z": 1
+     }
+    ],
+    "marks": [
+     {
+      "beat": "b079",
+      "word": "cuatro",
+      "dur": 5,
+      "x": 6.5,
+      "y": 37.5,
+      "w": 21,
+      "h": 4.5
+     },
+     {
+      "beat": "b082",
+      "word": "pintar",
+      "dur": 7,
+      "x": 71,
+      "y": 40,
+      "w": 25,
+      "h": 21
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_paper_tick.mp3",
+     "db": -12
+    },
+    {
+     "src": "sfx/sfx_whoosh_soft.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbQrCard",
+   "beat": "b084",
+   "word": "televisor",
+   "off": -0.3,
+   "until": "b085",
+   "until_off": -0.2,
+   "props": {
+    "qr": "img/tfbpintura/qr_tfbpintura.png",
+    "portada": "img/tfbpintura/portada-coleccion.jpg",
+    "caption": "Apunta la cámara de tu teléfono"
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -14
+    }
+   ]
+  },
+  {
+   "kind": "TfbStepCounter",
+   "beat": "b087",
+   "until": "b088",
+   "props": {
+    "step": 1,
+    "total": 5,
+    "word": "PARED",
+    "title": "Raspar lo flojo"
+   }
+  },
+  {
+   "kind": "TfbStepCounter",
+   "beat": "b089",
+   "until": "b089",
+   "props": {
+    "step": 2,
+    "total": 5,
+    "word": "PARED",
+    "title": "Cepillar el polvo"
+   }
+  },
+  {
+   "kind": "TfbWarning",
+   "beat": "b090",
+   "word": "humedad",
+   "until": "b091",
+   "props": {
+    "text": "La pintura no arregla humedad",
+    "tone": "yellow",
+    "icons": [
+     "alert"
+    ]
+   }
+  },
+  {
+   "kind": "TfbStepCounter",
+   "beat": "b092",
+   "until": "b093",
+   "props": {
+    "step": 3,
+    "total": 5,
+    "word": "PARED",
+    "title": "Tapar piso y ventanas"
+   }
+  },
+  {
+   "kind": "TfbStepCounter",
+   "beat": "b095",
+   "until": "b097",
+   "props": {
+    "step": 4,
+    "total": 5,
+    "word": "PARED",
+    "title": "Mojar la pared"
+   }
+  },
+  {
+   "kind": "TfbWarning",
+   "beat": "b098",
+   "word": "mediodía",
+   "until": "b098",
+   "props": {
+    "text": "Nunca con sol de mediodía",
+    "tone": "red",
+    "icons": [
+     "alert"
+    ]
+   }
+  },
+  {
+   "kind": "TfbStepCounter",
+   "beat": "b099",
+   "until": "b099",
+   "props": {
+    "step": 5,
+    "total": 5,
+    "word": "PARED",
+    "title": "Mirar el pronóstico"
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b100",
+   "word": "ramiro",
+   "dur": 3.2,
+   "props": {
+    "text": "Ramiro",
+    "sub": "Cochabamba, Bolivia",
+    "at": [
+     24,
+     18
+    ],
+    "tone": "white",
+    "size": 58
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b102",
+   "word": "mojaste",
+   "dur": 1.6,
+   "props": {
+    "text": "Sin mojar",
+    "at": [
+     22,
+     22
+    ],
+    "tone": "red",
+    "size": 54
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b102",
+   "word": "mediodía",
+   "dur": 1.8,
+   "props": {
+    "text": "Al mediodía",
+    "at": [
+     50,
+     22
+    ],
+    "tone": "red",
+    "size": 54
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b102",
+   "word": "gruesa",
+   "dur": 2.4,
+   "props": {
+    "text": "Una mano gruesa",
+    "at": [
+     78,
+     22
+    ],
+    "tone": "red",
+    "size": 54
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b106",
+   "word": "arriba",
+   "dur": 2.6,
+   "props": {
+    "text": "De arriba hacia abajo",
+    "at": [
+     50,
+     15
+    ],
+    "size": 56
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b112",
+   "word": "cuatro",
+   "dur": 2.6,
+   "props": {
+    "text": "4 a 6 horas",
+    "sub": "entre mano y mano",
+    "at": [
+     50,
+     15
+    ],
+    "size": 64
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b114",
+   "word": "segunda",
+   "dur": 2.0,
+   "props": {
+    "text": "2ª mano",
+    "at": [
+     22,
+     18
+    ],
+    "size": 64
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b116",
+   "word": "tercera",
+   "dur": 2.0,
+   "props": {
+    "text": "3ª mano",
+    "at": [
+     22,
+     18
+    ],
+    "size": 64
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b118",
+   "word": "mate",
+   "dur": 2.6,
+   "props": {
+    "text": "Acabado mate, tipo tiza",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 56
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b120",
+   "word": "pigmentos",
+   "dur": 2.8,
+   "props": {
+    "text": "Pigmentos minerales",
+    "sub": "tonos suaves",
+    "at": [
+     50,
+     15
+    ],
+    "size": 60
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b122",
+   "word": "seco",
+   "dur": 2.4,
+   "props": {
+    "text": "Seco = más claro",
+    "at": [
+     50,
+     15
+    ],
+    "size": 58
+   }
+  },
+  {
+   "kind": "TfbQrCard",
+   "beat": "b126",
+   "word": "televisor",
+   "off": -0.3,
+   "until": "b126",
+   "until_off": 0.3,
+   "props": {
+    "qr": "img/tfbpintura/qr_tfbpintura.png",
+    "portada": "img/tfbpintura/portada-coleccion.jpg",
+    "caption": "Apunta la cámara de tu teléfono"
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -14
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b129",
+   "word": "mañana",
+   "dur": 3.0,
+   "props": {
+    "text": "Rocío: mañana y tarde",
+    "sub": "2 o 3 días",
+    "at": [
+     50,
+     15
+    ],
+    "size": 58
+   }
+  },
+  {
+   "kind": "TfbWarning",
+   "beat": "b131",
+   "word": "cañería",
+   "until": "b131",
+   "props": {
+    "text": "No por la cañería",
+    "tone": "yellow",
+    "icons": [
+     "alert"
+    ]
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b133",
+   "word": "adentro",
+   "dur": 3.0,
+   "props": {
+    "text": "Adentro: cal sola",
+    "sub": "sin cemento",
+    "at": [
+     50,
+     15
+    ],
+    "size": 60
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b134",
+   "word": "jarra",
+   "dur": 3.0,
+   "props": {
+    "text": "1 de cal : 2-3 de agua",
+    "at": [
+     50,
+     15
+    ],
+    "size": 60
+   }
+  },
+  {
+   "kind": "TfbWarning",
+   "beat": "b140",
+   "word": "lavable",
+   "until": "b140",
+   "props": {
+    "text": "No es pintura lavable",
+    "tone": "yellow",
+    "icons": [
+     "alert"
+    ]
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b143",
+   "word": "descripción",
+   "off": -0.4,
+   "dur": 2.4,
+   "props": {
+    "text": "Te lo dejé abajo ↓",
+    "at": [
+     50,
+     82
+    ],
+    "size": 60
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbTimeSkip",
+   "beat": "b144",
+   "dur": 1.8,
+   "props": {
+    "text": "Varios días después"
+   },
+   "sfx": [
+    {
+     "src": "sfx/cam_travel.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b145",
+   "word": "limpia",
+   "dur": 2.2,
+   "props": {
+    "text": "Casi limpia",
+    "at": [
+     50,
+     15
+    ],
+    "size": 64
+   }
+  },
+  {
+   "kind": "TfbWaterTest",
+   "beat": "b148",
+   "dur": 4.0,
+   "props": {
+    "area": [
+     5,
+     5,
+     55,
+     85
+    ],
+    "drops": 30,
+    "slowLabel": "Cámara lenta",
+    "timer": true
+   }
+  },
+  {
+   "kind": "TfbLabel",
+   "beat": "b149",
+   "word": "nada",
+   "dur": 2.4,
+   "props": {
+    "text": "Ni se ablanda ni se va",
+    "at": [
+     50,
+     15
+    ],
+    "size": 60
+   },
+   "sfx": [
+    {
+     "src": "sfx/winner_chime.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TfbTitleSlam",
+   "beat": "b153",
+   "word": "puñado",
+   "until": "b153",
+   "props": {
+    "pos": "top",
+    "size": 110,
+    "words": [
+     {
+      "t": "UN PUÑADO.",
+      "beat": "b153",
+      "word": "puñado",
+      "hl": "yellow"
+     },
+     {
+      "t": "UNO.",
+      "beat": "b153",
+      "word": "uno",
+      "hl": "red"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -13
+    }
+   ]
+  },
+  {
+   "kind": "TfbZoomCircle",
+   "beat": "b154",
+   "word": "manchas",
+   "until": "b154",
+   "props": {
+    "track": [
+     {
+      "f": 0,
+      "x": 22,
+      "y": 78,
+      "r": 150
+     }
+    ],
+    "label": "Sal de más",
+    "labelSide": "right",
+    "color": "#E32619"
+   }
+  },
+  {
+   "kind": "TfbBucketRecipe",
+   "beat": "b159",
+   "off": -0.2,
+   "until": "b159",
+   "until_off": 0.6,
+   "props": {
+    "title": "Resumen",
+    "items": [
+     {
+      "label": "Cal hidratada",
+      "amount": 4,
+      "unit": "jarras",
+      "color": "#F4F2EC",
+      "grain": true,
+      "beat": "b159",
+      "word": "cuatro"
+     },
+     {
+      "label": "Cemento blanco",
+      "amount": 1,
+      "unit": "jarra",
+      "color": "#DCDAD3",
+      "grain": true,
+      "beat": "b159",
+      "word": "una"
+     },
+     {
+      "label": "Sal disuelta",
+      "amount": 1,
+      "unit": "puñado",
+      "color": "#BFD7E6",
+      "beat": "b159",
+      "word": "puñado"
+     },
+     {
+      "label": "Agua · hasta leche",
+      "amount": 10,
+      "unit": "jarras",
+      "color": "#9BD2F0",
+      "beat": "b159",
+      "word": "agua"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "TfbQrCard",
+   "beat": "b162",
+   "word": "código",
+   "off": -0.4,
+   "until": "b163",
+   "until_off": -0.3,
+   "props": {
+    "qr": "img/tfbpintura/qr_tfbpintura.png",
+    "portada": "img/tfbpintura/portada-coleccion.jpg",
+    "caption": "Apunta la cámara de tu teléfono"
+   },
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -14
+    }
+   ]
+  }
+ ],
+ "covers": {
+  "b004": [
+   "b165",
+   "b164"
+  ],
+  "b012": [
+   "b166"
+  ]
+ }
 }

@@ -1,0 +1,23 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/EP/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/E1/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, days earlier. The neighbour is not there. He stands in front of the old grey right half of the wall holding a wide steel putty knife and a wire brush, curling flakes of old paint on the wall, a garden pump sprayer and an empty bucket at his feet. Same clothes: faded olive-green work shirt with rolled sleeves and the worn brown leather apron."
+  }
+ ],
+ "clips": [],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/EP/vlog_EP.mp4"
+}

@@ -10,10 +10,11 @@ const pores = Array.from({ length: 11 }, (_, i) => ({ x: 40 + i * 62 + ((i * 17)
 export const TfbWallSection: React.FC<{ dur: number; leftTitle: string; rightTitle: string; leftTag?: string; rightTag?: string; airLabel?: string }> = ({ dur, leftTitle, rightTitle, leftTag, rightTag, airLabel }) => {
   const f = useCurrentFrame(), { fps } = useVideoConfig();
   const o = inOut(f, dur, 12, 12);
-  const pen = interpolate(f, [15, 70], [0, 1], { ...clamp, easing: ease });      // la cal entra en los poros
-  const co2 = interpolate(f, [55, 130], [0, 1], clamp);                           // aire que llega
-  const stone = interpolate(f, [90, 150], [0, 1], { ...clamp, easing: ease });   // cristaliza
-  const blister = interpolate(f, [40, 140], [0, 1], { ...clamp, easing: ease }); // plástica se ampolla
+  const sc = Math.min(1, (dur - 12) / 150), T = (x: number) => x * sc; // la animación se ajusta al largo del plano
+  const pen = interpolate(f, [T(15), T(70)], [0, 1], { ...clamp, easing: ease });      // la cal entra en los poros
+  const co2 = interpolate(f, [T(55), T(130)], [0, 1], clamp);                           // aire que llega
+  const stone = interpolate(f, [T(90), T(150)], [0, 1], { ...clamp, easing: ease });   // cristaliza
+  const blister = interpolate(f, [T(40), T(140)], [0, 1], { ...clamp, easing: ease }); // plástica se ampolla
   const Panel = (side: "L" | "R") => {
     const W = 780, H = 520;
     const plaster = <>
@@ -52,9 +53,9 @@ export const TfbWallSection: React.FC<{ dur: number; leftTitle: string; rightTit
             <div style={{ fontFamily: F_DISPLAY, fontSize: 64, color: s === "L" ? C.yellow : C.white, textShadow: TEXT_SHADOW, marginBottom: 16, letterSpacing: 1, textTransform: "uppercase" }}>{s === "L" ? leftTitle : rightTitle}</div>
             <div style={{ position: "relative" }}>
               {Panel(s)}
-              {s === "L" && airLabel && <div style={{ position: "absolute", top: 18, left: 24, fontFamily: F_UI, fontWeight: 800, fontSize: 30, color: "#2d6f9c", opacity: interpolate(f, [55, 70], [0, 1], clamp) * (1 - stone * 0.7) }}>{airLabel}</div>}
+              {s === "L" && airLabel && <div style={{ position: "absolute", top: 18, left: 24, fontFamily: F_UI, fontWeight: 800, fontSize: 30, color: "#2d6f9c", opacity: interpolate(f, [T(55), T(70)], [0, 1], clamp) * (1 - stone * 0.7) }}>{airLabel}</div>}
             </div>
-            {s === "L" ? tag(leftTag, C.yellow, 150) : tag(rightTag, "#ff6b5e", 130)}
+            {s === "L" ? tag(leftTag, C.yellow, T(110)) : tag(rightTag, "#ff6b5e", T(100))}
           </div>
         ))}
       </div>

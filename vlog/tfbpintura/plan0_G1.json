@@ -1,0 +1,23 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G1/",
+ "face": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura_face.png",
+ "k0_from": "D:/Proyectos/video2-wt/tfbpintura/public/ref_tfbpintura.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino.png",
+  "WF": "D:/Proyectos/video2-wt/tfbpintura/public/ref_vecino_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The place is a real, cluttered home garage-workshop in a working-class Latin American house: concrete floor with old stains and white dust, a sturdy wooden workbench with grey plastic twenty-litre buckets, a paper bag of hydrated lime and a smaller paper bag of white cement (plain paper bags), a clear plastic one-litre jug, a glass jar of coarse grey salt, a wooden stirring stick, rags, a pegboard with hanging tools on the back wall, metal shelves with old tins, a bicycle leaning on the wall. Light: the wide garage door on the left is open to a bright overcast day, plus one fluorescent tube on the ceiling; the side near the door is brighter and a little cooler, the back corners dimmer, everything correctly exposed. The presenter is a man of about 50 with black curly hair and a short salt-and-pepper beard (exactly the face of the last input image), wearing a faded olive-green work shirt with the sleeves rolled up to the elbows, stained with white paint and dust, a worn brown leather apron over it, and dark work trousers. He stands behind the workbench beside an empty grey bucket, holding the clear plastic one-litre jug, looking at the camera."
+  }
+ ],
+ "clips": [],
+ "out": "D:/Proyectos/video2-wt/tfbpintura/out/vlog/G1/vlog_G1.mp4"
+}

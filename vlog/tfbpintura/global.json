@@ -1,0 +1,2116 @@
+{
+ "G": [
+  {
+   "id": "b001",
+   "type": "DX",
+   "P": "E1",
+   "start": 0.0,
+   "d": 3.0,
+   "vstart": 0,
+   "file": "b001rj0b.mp4",
+   "own": true
+  },
+  {
+   "id": "b002",
+   "type": "V",
+   "P": "E1",
+   "start": 3.0,
+   "d": 5.87,
+   "vstart": 4,
+   "file": "b002rdpr.mp4",
+   "own": true
+  },
+  {
+   "id": "b003",
+   "type": "A",
+   "P": "E1",
+   "start": 8.870000000000001,
+   "d": 0.9333,
+   "vstart": 10,
+   "file": "b003rvlt.mp4",
+   "own": false
+  },
+  {
+   "id": "b004",
+   "type": "A",
+   "P": "E1",
+   "start": 9.8033,
+   "d": 6.0667,
+   "vstart": 10.9333,
+   "file": "b004r5dj.mp4",
+   "own": false
+  },
+  {
+   "id": "b005",
+   "type": "D",
+   "P": "G1",
+   "start": 15.870000000000001,
+   "d": 1.2,
+   "vstart": 0,
+   "file": "b005r71v.mp4",
+   "own": false
+  },
+  {
+   "id": "b006",
+   "type": "A",
+   "P": "G1",
+   "start": 17.07,
+   "d": 2.1667,
+   "vstart": 1.2,
+   "file": "b006rdr3.mp4",
+   "own": false
+  },
+  {
+   "id": "b007",
+   "type": "D",
+   "P": "G1",
+   "start": 19.2367,
+   "d": 0.3667,
+   "vstart": 3.3667,
+   "file": "b007rrna.mp4",
+   "own": false
+  },
+  {
+   "id": "b008",
+   "type": "A",
+   "P": "G1",
+   "start": 19.6034,
+   "d": 3.1667,
+   "vstart": 3.7333,
+   "file": "b008rmjs.mp4",
+   "own": false
+  },
+  {
+   "id": "b009",
+   "type": "D",
+   "P": "G1",
+   "start": 22.7701,
+   "d": 2.4667,
+   "vstart": 6.9,
+   "file": "b009r7nv.mp4",
+   "own": false
+  },
+  {
+   "id": "b010",
+   "type": "A",
+   "P": "E2",
+   "start": 25.2368,
+   "d": 3.8667,
+   "vstart": 0,
+   "file": "b010rj1u.mp4",
+   "own": false
+  },
+  {
+   "id": "b011",
+   "type": "D",
+   "P": "E2",
+   "start": 29.103499999999997,
+   "d": 2.8667,
+   "vstart": 3.8667,
+   "file": "b011r3s1.mp4",
+   "own": false
+  },
+  {
+   "id": "b012",
+   "type": "A",
+   "P": "E1",
+   "start": 31.9702,
+   "d": 3.2333,
+   "vstart": 17,
+   "file": "b012rrsq.mp4",
+   "own": false
+  },
+  {
+   "id": "b013",
+   "type": "A",
+   "P": "E1",
+   "start": 35.2035,
+   "d": 2.5667,
+   "vstart": 20.2333,
+   "file": "b013rqoe.mp4",
+   "own": false
+  },
+  {
+   "id": "b014",
+   "type": "A",
+   "P": "E1",
+   "start": 37.770199999999996,
+   "d": 6.7333,
+   "vstart": 22.8,
+   "file": "b014r6be.mp4",
+   "own": false
+  },
+  {
+   "id": "b015",
+   "type": "A",
+   "P": "E1",
+   "start": 44.503499999999995,
+   "d": 6.6333,
+   "vstart": 29.5333,
+   "file": "b015rd70.mp4",
+   "own": false
+  },
+  {
+   "id": "b016",
+   "type": "A",
+   "P": "E1",
+   "start": 51.136799999999994,
+   "d": 6.8333,
+   "vstart": 36.1667,
+   "file": "b016r5fw.mp4",
+   "own": false
+  },
+  {
+   "id": "b018",
+   "type": "A",
+   "P": "E1",
+   "start": 57.970099999999995,
+   "d": 7.8667,
+   "vstart": 43,
+   "file": "b018r5hm.mp4",
+   "own": false
+  },
+  {
+   "id": "b019",
+   "type": "A",
+   "P": "G1",
+   "start": 65.8368,
+   "d": 5.6667,
+   "vstart": 9.3667,
+   "file": "b019r7rp.mp4",
+   "own": false
+  },
+  {
+   "id": "b020",
+   "type": "A",
+   "P": "G1",
+   "start": 71.5035,
+   "d": 6.4,
+   "vstart": 15.0333,
+   "file": "b020r7u0.mp4",
+   "own": false
+  },
+  {
+   "id": "b021",
+   "type": "A",
+   "P": "G1",
+   "start": 77.90350000000001,
+   "d": 2.8333,
+   "vstart": 21.4333,
+   "file": "b021r81p.mp4",
+   "own": false
+  },
+  {
+   "id": "b022",
+   "type": "A",
+   "P": "G1",
+   "start": 80.7368,
+   "d": 3.5667,
+   "vstart": 24.2667,
+   "file": "b022r836.mp4",
+   "own": false
+  },
+  {
+   "id": "b023",
+   "type": "A",
+   "P": "G1",
+   "start": 84.3035,
+   "d": 4.8333,
+   "vstart": 27.8333,
+   "file": "b023r866.mp4",
+   "own": false
+  },
+  {
+   "id": "b024",
+   "type": "A",
+   "P": "G1",
+   "start": 89.1368,
+   "d": 6.2667,
+   "vstart": 32.6667,
+   "file": "b024r8b6.mp4",
+   "own": false
+  },
+  {
+   "id": "b026",
+   "type": "A",
+   "P": "G1",
+   "start": 95.4035,
+   "d": 6.7667,
+   "vstart": 38.9333,
+   "file": "b026rchg.mp4",
+   "own": false
+  },
+  {
+   "id": "b027",
+   "type": "D",
+   "P": "G1",
+   "start": 102.1702,
+   "d": 2.3,
+   "vstart": 45.7,
+   "file": "b027r8dz.mp4",
+   "own": false
+  },
+  {
+   "id": "b028",
+   "type": "A",
+   "P": "E2",
+   "start": 104.47019999999999,
+   "d": 4.7667,
+   "vstart": 6.7333,
+   "file": "b028rys1.mp4",
+   "own": false
+  },
+  {
+   "id": "b029",
+   "type": "A",
+   "P": "E2",
+   "start": 109.23689999999999,
+   "d": 3.7,
+   "vstart": 11.5,
+   "file": "b029rpj0.mp4",
+   "own": false
+  },
+  {
+   "id": "b030",
+   "type": "A",
+   "P": "E2",
+   "start": 112.9369,
+   "d": 5.5333,
+   "vstart": 15.2,
+   "file": "b030rrua.mp4",
+   "own": false
+  },
+  {
+   "id": "b031",
+   "type": "A",
+   "P": "E2",
+   "start": 118.47019999999999,
+   "d": 5.7667,
+   "vstart": 20.7333,
+   "file": "b031r0q9.mp4",
+   "own": false
+  },
+  {
+   "id": "b032",
+   "type": "A",
+   "P": "G2",
+   "start": 124.23689999999999,
+   "d": 5.6667,
+   "vstart": 0,
+   "file": "b032r8yw.mp4",
+   "own": false
+  },
+  {
+   "id": "b033",
+   "type": "D",
+   "P": "G2",
+   "start": 129.90359999999998,
+   "d": 6.1333,
+   "vstart": 5.6667,
+   "file": "b033r92y.mp4",
+   "own": false
+  },
+  {
+   "id": "b034",
+   "type": "A",
+   "P": "G2",
+   "start": 136.03689999999997,
+   "d": 5.8,
+   "vstart": 11.8,
+   "file": "b034r94u.mp4",
+   "own": false
+  },
+  {
+   "id": "b035",
+   "type": "A",
+   "P": "G2",
+   "start": 141.83689999999999,
+   "d": 5.7,
+   "vstart": 17.6,
+   "file": "b035r976.mp4",
+   "own": false
+  },
+  {
+   "id": "b036",
+   "type": "A",
+   "P": "G2",
+   "start": 147.53689999999997,
+   "d": 7.3333,
+   "vstart": 23.3,
+   "file": "b036r999.mp4",
+   "own": false
+  },
+  {
+   "id": "b037",
+   "type": "A",
+   "P": "G2",
+   "start": 154.87019999999998,
+   "d": 6.6667,
+   "vstart": 30.6333,
+   "file": "b037rbrn.mp4",
+   "own": false
+  },
+  {
+   "id": "b038",
+   "type": "A",
+   "P": "G2",
+   "start": 161.53689999999997,
+   "d": 6.6333,
+   "vstart": 37.3,
+   "file": "b038rlrs.mp4",
+   "own": false
+  },
+  {
+   "id": "b039",
+   "type": "A",
+   "P": "G2",
+   "start": 168.17019999999997,
+   "d": 6.7333,
+   "vstart": 43.9333,
+   "file": "b039ruoi.mp4",
+   "own": false
+  },
+  {
+   "id": "b042",
+   "type": "A",
+   "P": "I1",
+   "start": 174.90349999999995,
+   "d": 5.6667,
+   "vstart": 0,
+   "file": "b042rdri.mp4",
+   "own": false
+  },
+  {
+   "id": "b043",
+   "type": "A",
+   "P": "I1",
+   "start": 180.57019999999994,
+   "d": 6.4333,
+   "vstart": 5.6667,
+   "file": "b043r65n.mp4",
+   "own": false
+  },
+  {
+   "id": "b044",
+   "type": "A",
+   "P": "I1",
+   "start": 187.00349999999995,
+   "d": 7.7667,
+   "vstart": 12.1,
+   "file": "b044rgi2.mp4",
+   "own": false
+  },
+  {
+   "id": "b045",
+   "type": "A",
+   "P": "I1",
+   "start": 194.77019999999993,
+   "d": 8.0667,
+   "vstart": 19.8667,
+   "file": "b045rgio.mp4",
+   "own": false
+  },
+  {
+   "id": "b046",
+   "type": "A",
+   "P": "I1",
+   "start": 202.83689999999993,
+   "d": 5.5667,
+   "vstart": 27.9333,
+   "file": "b046rqlc.mp4",
+   "own": false
+  },
+  {
+   "id": "b047",
+   "type": "A",
+   "P": "I1",
+   "start": 208.40359999999993,
+   "d": 7.3,
+   "vstart": 33.5,
+   "file": "b047rqnk.mp4",
+   "own": false
+  },
+  {
+   "id": "b048",
+   "type": "A",
+   "P": "I1",
+   "start": 215.70359999999994,
+   "d": 6.9,
+   "vstart": 40.8,
+   "file": "b048rqns.mp4",
+   "own": false
+  },
+  {
+   "id": "b040",
+   "type": "A",
+   "P": "G2",
+   "start": 222.60359999999994,
+   "d": 7.5333,
+   "vstart": 50.6667,
+   "file": "b040r4yf.mp4",
+   "own": false
+  },
+  {
+   "id": "b041",
+   "type": "A",
+   "P": "G2",
+   "start": 230.13689999999994,
+   "d": 7.1333,
+   "vstart": 58.2,
+   "file": "b041r4yx.mp4",
+   "own": false
+  },
+  {
+   "id": "b049",
+   "type": "A",
+   "P": "G3",
+   "start": 237.27019999999993,
+   "d": 4.7,
+   "vstart": 0,
+   "file": "b049rpk3.mp4",
+   "own": false
+  },
+  {
+   "id": "b050",
+   "type": "A",
+   "P": "G3",
+   "start": 241.97019999999992,
+   "d": 11.1333,
+   "vstart": 4.7,
+   "file": "b050rpz3.mp4",
+   "own": false
+  },
+  {
+   "id": "b051",
+   "type": "A",
+   "P": "G3",
+   "start": 253.1034999999999,
+   "d": 7.5667,
+   "vstart": 15.8333,
+   "file": "b051rzvr.mp4",
+   "own": false
+  },
+  {
+   "id": "b052",
+   "type": "A",
+   "P": "G3",
+   "start": 260.6701999999999,
+   "d": 6.7333,
+   "vstart": 23.4,
+   "file": "b052ra6g.mp4",
+   "own": false
+  },
+  {
+   "id": "b053",
+   "type": "A",
+   "P": "G3",
+   "start": 267.4034999999999,
+   "d": 10.4667,
+   "vstart": 30.1333,
+   "file": "b053ra6x.mp4",
+   "own": false
+  },
+  {
+   "id": "b054",
+   "type": "A",
+   "P": "G3",
+   "start": 277.8701999999999,
+   "d": 7.8333,
+   "vstart": 40.6,
+   "file": "b054ra7g.mp4",
+   "own": false
+  },
+  {
+   "id": "b055",
+   "type": "A",
+   "P": "G3",
+   "start": 285.7034999999999,
+   "d": 8.8667,
+   "vstart": 48.4333,
+   "file": "b055ra8b.mp4",
+   "own": false
+  },
+  {
+   "id": "b056",
+   "type": "A",
+   "P": "G3",
+   "start": 294.5701999999999,
+   "d": 6.7,
+   "vstart": 57.3,
+   "file": "b056rkrq.mp4",
+   "own": false
+  },
+  {
+   "id": "b057",
+   "type": "A",
+   "P": "G3",
+   "start": 301.2701999999999,
+   "d": 10,
+   "vstart": 64,
+   "file": "b057rkme.mp4",
+   "own": false
+  },
+  {
+   "id": "b058",
+   "type": "A",
+   "P": "G3",
+   "start": 311.2701999999999,
+   "d": 9.4667,
+   "vstart": 74,
+   "file": "b058rkmd.mp4",
+   "own": false
+  },
+  {
+   "id": "b059",
+   "type": "A",
+   "P": "G3",
+   "start": 320.7368999999999,
+   "d": 9.0333,
+   "vstart": 83.4667,
+   "file": "b059rkmp.mp4",
+   "own": false
+  },
+  {
+   "id": "b060",
+   "type": "A",
+   "P": "G4",
+   "start": 329.7701999999999,
+   "d": 5.2,
+   "vstart": 0,
+   "file": "b060r53s.mp4",
+   "own": false
+  },
+  {
+   "id": "b061",
+   "type": "D",
+   "P": "G4",
+   "start": 334.97019999999986,
+   "d": 4.1333,
+   "vstart": 5.2,
+   "file": "b061rfiq.mp4",
+   "own": false
+  },
+  {
+   "id": "b062",
+   "type": "A",
+   "P": "G4",
+   "start": 339.1034999999999,
+   "d": 5.4667,
+   "vstart": 9.3333,
+   "file": "b062rpro.mp4",
+   "own": false
+  },
+  {
+   "id": "b063",
+   "type": "A",
+   "P": "G4",
+   "start": 344.5701999999999,
+   "d": 5.4333,
+   "vstart": 14.8,
+   "file": "b063rfc1.mp4",
+   "own": false
+  },
+  {
+   "id": "b064",
+   "type": "A",
+   "P": "G4",
+   "start": 350.00349999999986,
+   "d": 7.3,
+   "vstart": 20.2333,
+   "file": "b064rhp2.mp4",
+   "own": false
+  },
+  {
+   "id": "b065",
+   "type": "D",
+   "P": "G4",
+   "start": 357.3034999999999,
+   "d": 3.0667,
+   "vstart": 27.5333,
+   "file": "b065r5me.mp4",
+   "own": false
+  },
+  {
+   "id": "b066",
+   "type": "A",
+   "P": "G4",
+   "start": 360.3701999999999,
+   "d": 6.4333,
+   "vstart": 30.6,
+   "file": "b066rpzv.mp4",
+   "own": false
+  },
+  {
+   "id": "b067",
+   "type": "A",
+   "P": "G4",
+   "start": 366.8034999999999,
+   "d": 7.6667,
+   "vstart": 37.0333,
+   "file": "b067rq0f.mp4",
+   "own": false
+  },
+  {
+   "id": "b068",
+   "type": "A",
+   "P": "G5",
+   "start": 374.47019999999986,
+   "d": 7,
+   "vstart": 0,
+   "file": "b068r0aw.mp4",
+   "own": false
+  },
+  {
+   "id": "b069",
+   "type": "D",
+   "P": "G5",
+   "start": 381.47019999999986,
+   "d": 3.0667,
+   "vstart": 7,
+   "file": "b069raj8.mp4",
+   "own": false
+  },
+  {
+   "id": "b070",
+   "type": "A",
+   "P": "G5",
+   "start": 384.5368999999999,
+   "d": 2.9667,
+   "vstart": 10.0667,
+   "file": "b070rajo.mp4",
+   "own": false
+  },
+  {
+   "id": "b071",
+   "type": "A",
+   "P": "G5",
+   "start": 387.5035999999999,
+   "d": 6.3333,
+   "vstart": 13.0333,
+   "file": "b071rnqm.mp4",
+   "own": false
+  },
+  {
+   "id": "b072",
+   "type": "D",
+   "P": "G5",
+   "start": 393.8368999999999,
+   "d": 1.8,
+   "vstart": 19.3667,
+   "file": "b072rvq7.mp4",
+   "own": false
+  },
+  {
+   "id": "b073",
+   "type": "A",
+   "P": "G5",
+   "start": 395.6368999999999,
+   "d": 6.8333,
+   "vstart": 21.1667,
+   "file": "b073rvq7.mp4",
+   "own": false
+  },
+  {
+   "id": "b074",
+   "type": "A",
+   "P": "G5",
+   "start": 402.4701999999999,
+   "d": 6.3333,
+   "vstart": 28,
+   "file": "b074rfz2.mp4",
+   "own": false
+  },
+  {
+   "id": "b075",
+   "type": "A",
+   "P": "G5",
+   "start": 408.80349999999993,
+   "d": 8.3667,
+   "vstart": 34.3333,
+   "file": "b075rqh4.mp4",
+   "own": false
+  },
+  {
+   "id": "b076",
+   "type": "V",
+   "P": "G5",
+   "start": 417.1701999999999,
+   "d": 4,
+   "vstart": 42.7,
+   "file": "b076rscx.mp4",
+   "own": true
+  },
+  {
+   "id": "b077",
+   "type": "A",
+   "P": "G5",
+   "start": 421.1701999999999,
+   "d": 6.4333,
+   "vstart": 46.7,
+   "file": "b077rqff.mp4",
+   "own": false
+  },
+  {
+   "id": "b078",
+   "type": "A",
+   "P": "G5",
+   "start": 427.6034999999999,
+   "d": 7.4333,
+   "vstart": 53.1333,
+   "file": "b078r0m1.mp4",
+   "own": false
+  },
+  {
+   "id": "b079",
+   "type": "L",
+   "start": 435.03679999999986,
+   "d": 11.42
+  },
+  {
+   "id": "b080",
+   "type": "L",
+   "start": 446.4567999999999,
+   "d": 8.39
+  },
+  {
+   "id": "b081",
+   "type": "L",
+   "start": 454.84679999999986,
+   "d": 9.95
+  },
+  {
+   "id": "b082",
+   "type": "L",
+   "start": 464.79679999999985,
+   "d": 10.48
+  },
+  {
+   "id": "b083",
+   "type": "L",
+   "start": 475.27679999999987,
+   "d": 4.37
+  },
+  {
+   "id": "b084",
+   "type": "A",
+   "P": "G5",
+   "start": 479.64679999999987,
+   "d": 8.6333,
+   "vstart": 60.5667,
+   "file": "b084r0nk.mp4",
+   "own": false
+  },
+  {
+   "id": "b085",
+   "type": "A",
+   "P": "G5",
+   "start": 488.2800999999999,
+   "d": 6.1667,
+   "vstart": 69.2,
+   "file": "b085rlln.mp4",
+   "own": false
+  },
+  {
+   "id": "b086",
+   "type": "A",
+   "P": "EP",
+   "start": 494.4467999999999,
+   "d": 7.5667,
+   "vstart": 0,
+   "file": "b086rc17.mp4",
+   "own": false
+  },
+  {
+   "id": "b087",
+   "type": "A",
+   "P": "EP",
+   "start": 502.0134999999999,
+   "d": 5.5333,
+   "vstart": 7.5667,
+   "file": "b087recm.mp4",
+   "own": false
+  },
+  {
+   "id": "b088",
+   "type": "D",
+   "P": "EP",
+   "start": 507.5467999999999,
+   "d": 4.3667,
+   "vstart": 13.1,
+   "file": "b088rgo7.mp4",
+   "own": false
+  },
+  {
+   "id": "b089",
+   "type": "A",
+   "P": "EP",
+   "start": 511.9134999999999,
+   "d": 7.2333,
+   "vstart": 17.4667,
+   "file": "b089rwme.mp4",
+   "own": false
+  },
+  {
+   "id": "b090",
+   "type": "A",
+   "P": "EP",
+   "start": 519.1467999999999,
+   "d": 8.6,
+   "vstart": 24.7,
+   "file": "b090ryy1.mp4",
+   "own": false
+  },
+  {
+   "id": "b091",
+   "type": "A",
+   "P": "EP",
+   "start": 527.7467999999999,
+   "d": 8.6,
+   "vstart": 33.3,
+   "file": "b091rryr.mp4",
+   "own": false
+  },
+  {
+   "id": "b092",
+   "type": "A",
+   "P": "EP",
+   "start": 536.3467999999999,
+   "d": 8.8667,
+   "vstart": 41.9,
+   "file": "b092r1tl.mp4",
+   "own": false
+  },
+  {
+   "id": "b093",
+   "type": "A",
+   "P": "EP",
+   "start": 545.2135,
+   "d": 8.5,
+   "vstart": 50.7667,
+   "file": "b093r71g.mp4",
+   "own": false
+  },
+  {
+   "id": "b094",
+   "type": "A",
+   "P": "EP",
+   "start": 553.7135,
+   "d": 8.6,
+   "vstart": 59.2667,
+   "file": "b094r765.mp4",
+   "own": false
+  },
+  {
+   "id": "b095",
+   "type": "A",
+   "P": "EP",
+   "start": 562.3135,
+   "d": 5.1667,
+   "vstart": 67.8667,
+   "file": "b095r7aw.mp4",
+   "own": false
+  },
+  {
+   "id": "b096",
+   "type": "D",
+   "P": "EP",
+   "start": 567.4802,
+   "d": 1.7667,
+   "vstart": 73.0333,
+   "file": "b096r7c2.mp4",
+   "own": false
+  },
+  {
+   "id": "b097",
+   "type": "A",
+   "P": "EP",
+   "start": 569.2469,
+   "d": 7.9333,
+   "vstart": 74.8,
+   "file": "b097r7f6.mp4",
+   "own": false
+  },
+  {
+   "id": "b098",
+   "type": "A",
+   "P": "EP",
+   "start": 577.1802,
+   "d": 8.4667,
+   "vstart": 82.7333,
+   "file": "b098r7hq.mp4",
+   "own": false
+  },
+  {
+   "id": "b099",
+   "type": "A",
+   "P": "EP",
+   "start": 585.6469,
+   "d": 8.1667,
+   "vstart": 91.2,
+   "file": "b099r7hi.mp4",
+   "own": false
+  },
+  {
+   "id": "b100",
+   "type": "A",
+   "P": "E3",
+   "start": 593.8136,
+   "d": 6.7,
+   "vstart": 0,
+   "file": "b100rj2p.mp4",
+   "own": false
+  },
+  {
+   "id": "b101",
+   "type": "A",
+   "P": "E3",
+   "start": 600.5136,
+   "d": 6.6333,
+   "vstart": 6.7,
+   "file": "b101rpjn.mp4",
+   "own": false
+  },
+  {
+   "id": "b102",
+   "type": "A",
+   "P": "E3",
+   "start": 607.1469,
+   "d": 10.1667,
+   "vstart": 13.3333,
+   "file": "b102rrv4.mp4",
+   "own": false
+  },
+  {
+   "id": "b103",
+   "type": "A",
+   "P": "E3",
+   "start": 617.3136,
+   "d": 6.3333,
+   "vstart": 23.5,
+   "file": "b103ru6i.mp4",
+   "own": false
+  },
+  {
+   "id": "b104",
+   "type": "A",
+   "P": "E3",
+   "start": 623.6469,
+   "d": 5.3333,
+   "vstart": 29.8333,
+   "file": "b104rpjz.mp4",
+   "own": false
+  },
+  {
+   "id": "b105",
+   "type": "A",
+   "P": "E3",
+   "start": 628.9802,
+   "d": 4.8667,
+   "vstart": 35.1667,
+   "file": "b105rg61.mp4",
+   "own": false
+  },
+  {
+   "id": "b106",
+   "type": "A",
+   "P": "E3",
+   "start": 633.8469,
+   "d": 9.2,
+   "vstart": 40.0333,
+   "file": "b106r11d.mp4",
+   "own": false
+  },
+  {
+   "id": "b107",
+   "type": "D",
+   "P": "E3",
+   "start": 643.0469,
+   "d": 2.1333,
+   "vstart": 49.2333,
+   "file": "b107rqoo.mp4",
+   "own": false
+  },
+  {
+   "id": "b108",
+   "type": "A",
+   "P": "E3",
+   "start": 645.1802,
+   "d": 6.5333,
+   "vstart": 51.3667,
+   "file": "b108rvsb.mp4",
+   "own": false
+  },
+  {
+   "id": "b109",
+   "type": "V",
+   "P": "E3",
+   "start": 651.7135000000001,
+   "d": 4,
+   "vstart": 57.9,
+   "file": "b109rgma.mp4",
+   "own": true
+  },
+  {
+   "id": "b110",
+   "type": "A",
+   "P": "E3",
+   "start": 655.7135000000001,
+   "d": 7.1667,
+   "vstart": 61.9,
+   "file": "b110r6bt.mp4",
+   "own": false
+  },
+  {
+   "id": "b111",
+   "type": "D",
+   "P": "E3",
+   "start": 662.8802000000001,
+   "d": 0.6333,
+   "vstart": 69.0667,
+   "file": "b111fx.mp4",
+   "own": false
+  },
+  {
+   "id": "b112",
+   "type": "A",
+   "P": "E3",
+   "start": 663.5135,
+   "d": 7.6333,
+   "vstart": 69.7,
+   "file": "b112r5u0.mp4",
+   "own": false
+  },
+  {
+   "id": "b113",
+   "type": "A",
+   "P": "E3",
+   "start": 671.1468,
+   "d": 5.2333,
+   "vstart": 77.3333,
+   "file": "b113r5tf.mp4",
+   "own": false
+  },
+  {
+   "id": "b114",
+   "type": "A",
+   "P": "E4",
+   "start": 676.3801,
+   "d": 5.6,
+   "vstart": 0,
+   "file": "b114rj44.mp4",
+   "own": false
+  },
+  {
+   "id": "b115",
+   "type": "A",
+   "P": "E4",
+   "start": 681.9801,
+   "d": 6.5,
+   "vstart": 5.6,
+   "file": "b115rpkq.mp4",
+   "own": false
+  },
+  {
+   "id": "b116",
+   "type": "A",
+   "P": "E4",
+   "start": 688.4801,
+   "d": 2.9667,
+   "vstart": 12.1,
+   "file": "b116rrw0.mp4",
+   "own": false
+  },
+  {
+   "id": "b117",
+   "type": "D",
+   "P": "E4",
+   "start": 691.4467999999999,
+   "d": 5.9333,
+   "vstart": 15.0667,
+   "file": "b117ru7d.mp4",
+   "own": false
+  },
+  {
+   "id": "b118",
+   "type": "A",
+   "P": "E4",
+   "start": 697.3801,
+   "d": 7.4,
+   "vstart": 21,
+   "file": "b118r5ad.mp4",
+   "own": false
+  },
+  {
+   "id": "b119",
+   "type": "A",
+   "P": "E4",
+   "start": 704.7801,
+   "d": 9.4,
+   "vstart": 28.4,
+   "file": "b119r0o1.mp4",
+   "own": false
+  },
+  {
+   "id": "b120",
+   "type": "A",
+   "P": "E4",
+   "start": 714.1800999999999,
+   "d": 7.2,
+   "vstart": 37.8,
+   "file": "b120rg8g.mp4",
+   "own": false
+  },
+  {
+   "id": "b121",
+   "type": "D",
+   "P": "E4",
+   "start": 721.3801,
+   "d": 7.3,
+   "vstart": 45,
+   "file": "b121rvvr.mp4",
+   "own": false
+  },
+  {
+   "id": "b122",
+   "type": "A",
+   "P": "E4",
+   "start": 728.6800999999999,
+   "d": 5.8667,
+   "vstart": 52.3,
+   "file": "b122rbe1.mp4",
+   "own": false
+  },
+  {
+   "id": "b123",
+   "type": "A",
+   "P": "E7",
+   "start": 734.5468,
+   "d": 8.2333,
+   "vstart": 0,
+   "file": "b123rj7h.mp4",
+   "own": false
+  },
+  {
+   "id": "b124",
+   "type": "A",
+   "P": "E7",
+   "start": 742.7801,
+   "d": 5.8,
+   "vstart": 8.2333,
+   "file": "b124rl37.mp4",
+   "own": false
+  },
+  {
+   "id": "b125",
+   "type": "A",
+   "P": "E7",
+   "start": 748.5800999999999,
+   "d": 7.6667,
+   "vstart": 14.0333,
+   "file": "b125rnf3.mp4",
+   "own": false
+  },
+  {
+   "id": "b126",
+   "type": "A",
+   "P": "E7",
+   "start": 756.2467999999999,
+   "d": 7.1667,
+   "vstart": 21.7,
+   "file": "b126rgqv.mp4",
+   "own": false
+  },
+  {
+   "id": "b127",
+   "type": "A",
+   "P": "E7",
+   "start": 763.4134999999999,
+   "d": 5.7333,
+   "vstart": 28.8667,
+   "file": "b127rr1l.mp4",
+   "own": false
+  },
+  {
+   "id": "b128",
+   "type": "A",
+   "P": "E7",
+   "start": 769.1467999999999,
+   "d": 7.1,
+   "vstart": 34.6,
+   "file": "b128rtd5.mp4",
+   "own": false
+  },
+  {
+   "id": "b129",
+   "type": "A",
+   "P": "E7",
+   "start": 776.2467999999999,
+   "d": 7.1667,
+   "vstart": 41.7,
+   "file": "b129rlyf.mp4",
+   "own": false
+  },
+  {
+   "id": "b130",
+   "type": "A",
+   "P": "E7",
+   "start": 783.4134999999999,
+   "d": 6.1333,
+   "vstart": 48.8667,
+   "file": "b130roa6.mp4",
+   "own": false
+  },
+  {
+   "id": "b131",
+   "type": "A",
+   "P": "E7",
+   "start": 789.5467999999998,
+   "d": 9.5,
+   "vstart": 55,
+   "file": "b131rqlc.mp4",
+   "own": false
+  },
+  {
+   "id": "b132",
+   "type": "A",
+   "P": "E7",
+   "start": 799.0467999999998,
+   "d": 5.8,
+   "vstart": 64.5,
+   "file": "b132rw9f.mp4",
+   "own": false
+  },
+  {
+   "id": "b133",
+   "type": "A",
+   "P": "I2",
+   "start": 804.8467999999998,
+   "d": 7.6667,
+   "vstart": 0,
+   "file": "b133rbwf.mp4",
+   "own": false
+  },
+  {
+   "id": "b134",
+   "type": "A",
+   "P": "I2",
+   "start": 812.5134999999998,
+   "d": 6.4667,
+   "vstart": 7.6667,
+   "file": "b134rm2n.mp4",
+   "own": false
+  },
+  {
+   "id": "b135",
+   "type": "A",
+   "P": "I2",
+   "start": 818.9801999999997,
+   "d": 7.7,
+   "vstart": 14.1333,
+   "file": "b135rmab.mp4",
+   "own": false
+  },
+  {
+   "id": "b136",
+   "type": "A",
+   "P": "I2",
+   "start": 826.6801999999998,
+   "d": 7.5667,
+   "vstart": 21.8333,
+   "file": "b136rw9m.mp4",
+   "own": false
+  },
+  {
+   "id": "b137",
+   "type": "A",
+   "P": "I2",
+   "start": 834.2468999999998,
+   "d": 7.9667,
+   "vstart": 29.4,
+   "file": "b137r6vj.mp4",
+   "own": false
+  },
+  {
+   "id": "b138",
+   "type": "A",
+   "P": "I2",
+   "start": 842.2135999999997,
+   "d": 7.9667,
+   "vstart": 37.3667,
+   "file": "b138rhmm.mp4",
+   "own": false
+  },
+  {
+   "id": "b139",
+   "type": "A",
+   "P": "I2",
+   "start": 850.1802999999996,
+   "d": 7.8333,
+   "vstart": 45.3333,
+   "file": "b139rhz2.mp4",
+   "own": false
+  },
+  {
+   "id": "b140",
+   "type": "A",
+   "P": "I2",
+   "start": 858.0135999999997,
+   "d": 8.9333,
+   "vstart": 53.1667,
+   "file": "b140ri5y.mp4",
+   "own": false
+  },
+  {
+   "id": "b141",
+   "type": "A",
+   "P": "I2",
+   "start": 866.9468999999997,
+   "d": 7.4667,
+   "vstart": 62.1,
+   "file": "b141rqwm.mp4",
+   "own": false
+  },
+  {
+   "id": "b142",
+   "type": "A",
+   "P": "I2",
+   "start": 874.4135999999996,
+   "d": 7.5,
+   "vstart": 69.5667,
+   "file": "b142rqxu.mp4",
+   "own": false
+  },
+  {
+   "id": "b143",
+   "type": "A",
+   "P": "I2",
+   "start": 881.9135999999996,
+   "d": 3.4,
+   "vstart": 77.0667,
+   "file": "b143r227.mp4",
+   "own": false
+  },
+  {
+   "id": "b144",
+   "type": "A",
+   "P": "E5",
+   "start": 885.3135999999996,
+   "d": 5,
+   "vstart": 0,
+   "file": "b144r0lg.mp4",
+   "own": false
+  },
+  {
+   "id": "b145",
+   "type": "A",
+   "P": "E5",
+   "start": 890.3135999999996,
+   "d": 6.8667,
+   "vstart": 5,
+   "file": "b145rlaq.mp4",
+   "own": false
+  },
+  {
+   "id": "b146",
+   "type": "V",
+   "P": "E5",
+   "start": 897.1802999999996,
+   "d": 4,
+   "vstart": 11.8667,
+   "file": "b146rqk1.mp4",
+   "own": true
+  },
+  {
+   "id": "b147",
+   "type": "A",
+   "P": "E5",
+   "start": 901.1802999999996,
+   "d": 1,
+   "vstart": 15.8667,
+   "file": "b147r13a.mp4",
+   "own": false
+  },
+  {
+   "id": "b148",
+   "type": "DX",
+   "P": "E5",
+   "start": 902.1802999999996,
+   "d": 4,
+   "vstart": 16.8667,
+   "file": "b148rbe1.mp4",
+   "own": true
+  },
+  {
+   "id": "b149",
+   "type": "A",
+   "P": "E5",
+   "start": 906.1802999999996,
+   "d": 3.8333,
+   "vstart": 20.8667,
+   "file": "b149r5zp.mp4",
+   "own": false
+  },
+  {
+   "id": "b150",
+   "type": "A",
+   "P": "E5",
+   "start": 910.0135999999997,
+   "d": 6.6,
+   "vstart": 24.7,
+   "file": "b150rqx8.mp4",
+   "own": false
+  },
+  {
+   "id": "b151",
+   "type": "V",
+   "P": "E5",
+   "start": 916.6135999999997,
+   "d": 4,
+   "vstart": 31.3,
+   "file": "b151rbj7.mp4",
+   "own": true
+  },
+  {
+   "id": "b152",
+   "type": "A",
+   "P": "E5",
+   "start": 920.6135999999997,
+   "d": 5.8667,
+   "vstart": 35.3,
+   "file": "b152r60t.mp4",
+   "own": false
+  },
+  {
+   "id": "b153",
+   "type": "A",
+   "P": "E8",
+   "start": 926.4802999999997,
+   "d": 8,
+   "vstart": 0,
+   "file": "b153rr60.mp4",
+   "own": false
+  },
+  {
+   "id": "b154",
+   "type": "A",
+   "P": "E8",
+   "start": 934.4802999999997,
+   "d": 7.4667,
+   "vstart": 8,
+   "file": "b154rthl.mp4",
+   "own": false
+  },
+  {
+   "id": "b155",
+   "type": "A",
+   "P": "E8",
+   "start": 941.9469999999997,
+   "d": 7.6,
+   "vstart": 15.4667,
+   "file": "b155r6bo.mp4",
+   "own": false
+  },
+  {
+   "id": "b156",
+   "type": "A",
+   "P": "E8",
+   "start": 949.5469999999997,
+   "d": 4.7,
+   "vstart": 23.0667,
+   "file": "b156r6oc.mp4",
+   "own": false
+  },
+  {
+   "id": "b157",
+   "type": "A",
+   "P": "E8",
+   "start": 954.2469999999997,
+   "d": 4.6,
+   "vstart": 27.7667,
+   "file": "b157r6e8.mp4",
+   "own": false
+  },
+  {
+   "id": "b158",
+   "type": "A",
+   "P": "E8",
+   "start": 958.8469999999998,
+   "d": 8.5,
+   "vstart": 32.3667,
+   "file": "b158r6gk.mp4",
+   "own": false
+  },
+  {
+   "id": "b159",
+   "type": "A",
+   "P": "E8",
+   "start": 967.3469999999998,
+   "d": 9.9,
+   "vstart": 40.8667,
+   "file": "b159r6kf.mp4",
+   "own": false
+  },
+  {
+   "id": "b160",
+   "type": "A",
+   "P": "E8",
+   "start": 977.2469999999997,
+   "d": 6.3667,
+   "vstart": 50.7667,
+   "file": "b160r6mi.mp4",
+   "own": false
+  },
+  {
+   "id": "b161",
+   "type": "A",
+   "P": "E8",
+   "start": 983.6136999999998,
+   "d": 8.5667,
+   "vstart": 57.1333,
+   "file": "b161r6oa.mp4",
+   "own": false
+  },
+  {
+   "id": "b162",
+   "type": "A",
+   "P": "E8",
+   "start": 992.1803999999997,
+   "d": 7.5333,
+   "vstart": 65.7,
+   "file": "b162rqgg.mp4",
+   "own": false
+  },
+  {
+   "id": "b163",
+   "type": "A",
+   "P": "E8",
+   "start": 999.7136999999998,
+   "d": 5.5333,
+   "vstart": 73.2333,
+   "file": "b163r6v2.mp4",
+   "own": false
+  }
+ ],
+ "INS": [
+  {
+   "id": "b165",
+   "P": "E1",
+   "start": 9.8033,
+   "d": 3.0333500000000004,
+   "vstart": 55.2667,
+   "file": "b165rszr.mp4",
+   "host": "b004",
+   "cover": true
+  },
+  {
+   "id": "b164",
+   "P": "E1",
+   "start": 12.83665,
+   "d": 3.0333500000000004,
+   "vstart": 51.2667,
+   "file": "b164rvrv.mp4",
+   "host": "b004",
+   "cover": true
+  },
+  {
+   "id": "b166",
+   "P": "E1",
+   "start": 31.9702,
+   "d": 3.2333,
+   "vstart": 59.2667,
+   "file": "b166r8mx.mp4",
+   "host": "b012",
+   "cover": true
+  },
+  {
+   "id": "b167",
+   "P": "E1",
+   "start": 35.97351,
+   "d": 1.4,
+   "vstart": 63.2667,
+   "file": "b167r5kx.mp4",
+   "host": "b013"
+  },
+  {
+   "id": "b168",
+   "P": "E1",
+   "start": 39.790189999999996,
+   "d": 2.2,
+   "vstart": 67.2667,
+   "file": "b168r5lk.mp4",
+   "host": "b014"
+  },
+  {
+   "id": "b169",
+   "P": "E1",
+   "start": 46.493489999999994,
+   "d": 2.2,
+   "vstart": 71.2667,
+   "file": "b169r5ku.mp4",
+   "host": "b015"
+  },
+  {
+   "id": "b170",
+   "P": "E1",
+   "start": 53.186789999999995,
+   "d": 2.2,
+   "vstart": 75.2667,
+   "file": "b170r5n0.mp4",
+   "host": "b016"
+  },
+  {
+   "id": "b171",
+   "P": "G1",
+   "start": 60.33011,
+   "d": 2.2,
+   "vstart": 48.4,
+   "file": "b171r8k4.mp4",
+   "host": "b018"
+  },
+  {
+   "id": "b172",
+   "P": "G1",
+   "start": 78.75349000000001,
+   "d": 1.4,
+   "vstart": 52.4,
+   "file": "b172r8ob.mp4",
+   "host": "b021"
+  },
+  {
+   "id": "b173",
+   "P": "G2",
+   "start": 163.52688999999998,
+   "d": 2.2,
+   "vstart": 65.7333,
+   "file": "b173rf8k.mp4",
+   "host": "b038"
+  },
+  {
+   "id": "b174",
+   "P": "I1",
+   "start": 197.19020999999992,
+   "d": 2.2,
+   "vstart": 48.1,
+   "file": "b174r17p.mp4",
+   "host": "b045"
+  },
+  {
+   "id": "b175",
+   "P": "G3",
+   "start": 238.68019999999993,
+   "d": 2.115,
+   "vstart": 92.9,
+   "file": "b175ruui.mp4",
+   "host": "b049"
+  },
+  {
+   "id": "b176",
+   "P": "G4",
+   "start": 340.7435099999999,
+   "d": 2.2,
+   "vstart": 45.1,
+   "file": "b176r09e.mp4",
+   "host": "b062"
+  },
+  {
+   "id": "b177",
+   "P": "G5",
+   "start": 362.3001899999999,
+   "d": 2.2,
+   "vstart": 75.7667,
+   "file": "b177rlro.mp4",
+   "host": "b066"
+  },
+  {
+   "id": "b178",
+   "P": "EP",
+   "start": 514.0834899999999,
+   "d": 2.2,
+   "vstart": 99.7667,
+   "file": "b178r9d4.mp4",
+   "host": "b089"
+  },
+  {
+   "id": "b179",
+   "P": "EP",
+   "start": 571.62689,
+   "d": 2.2,
+   "vstart": 103.7667,
+   "file": "b179r7iu.mp4",
+   "host": "b097"
+  },
+  {
+   "id": "b180",
+   "P": "E3",
+   "start": 625.24689,
+   "d": 2.2,
+   "vstart": 82.9667,
+   "file": "b180r3cy.mp4",
+   "host": "b104"
+  },
+  {
+   "id": "b181",
+   "P": "E3",
+   "start": 636.6069,
+   "d": 2.2,
+   "vstart": 86.9667,
+   "file": "b181rba1.mp4",
+   "host": "b106"
+  },
+  {
+   "id": "b182",
+   "P": "E4",
+   "start": 678.0600999999999,
+   "d": 2.2,
+   "vstart": 58.5667,
+   "file": "b182rg93.mp4",
+   "host": "b114"
+  },
+  {
+   "id": "b183",
+   "P": "E4",
+   "start": 683.9301,
+   "d": 2.2,
+   "vstart": 62.5667,
+   "file": "b183ry7b.mp4",
+   "host": "b115"
+  },
+  {
+   "id": "b184",
+   "P": "E7",
+   "start": 778.3968099999998,
+   "d": 2.2,
+   "vstart": 70.7,
+   "file": "b184r6k4.mp4",
+   "host": "b129"
+  },
+  {
+   "id": "b185",
+   "P": "E7",
+   "start": 792.3967999999999,
+   "d": 2.2,
+   "vstart": 74.7,
+   "file": "b185r64s.mp4",
+   "host": "b131"
+  },
+  {
+   "id": "b186",
+   "P": "I2",
+   "start": 821.2901999999997,
+   "d": 2.2,
+   "vstart": 80.86670000000001,
+   "file": "b186rch1.mp4",
+   "host": "b135"
+  },
+  {
+   "id": "b187",
+   "P": "E5",
+   "start": 892.3736099999996,
+   "d": 2.2,
+   "vstart": 41.5667,
+   "file": "b187rdun.mp4",
+   "host": "b145"
+  },
+  {
+   "id": "b188",
+   "P": "E8",
+   "start": 936.7203099999997,
+   "d": 2.2,
+   "vstart": 79.1667,
+   "file": "b188rm7a.mp4",
+   "host": "b154"
+  },
+  {
+   "id": "b189",
+   "P": "E8",
+   "start": 944.2269999999996,
+   "d": 2.2,
+   "vstart": 83.1667,
+   "file": "b189rc0z.mp4",
+   "host": "b155"
+  }
+ ],
+ "TOTAL": 1005.2469999999998,
+ "sfx": [
+  {
+   "t": 9.8733,
+   "src": "sfx/text_slam.mp3",
+   "db": -12
+  },
+  {
+   "t": 12.4933,
+   "src": "sfx/number_slam.mp3",
+   "db": -14
+  },
+  {
+   "t": 15.870000000000001,
+   "src": "sfx/sfx_pop.mp3",
+   "db": -16
+  },
+  {
+   "t": 17.52,
+   "src": "sfx/sfx_pop.mp3",
+   "db": -16
+  },
+  {
+   "t": 19.2367,
+   "src": "sfx/sfx_pop.mp3",
+   "db": -16
+  },
+  {
+   "t": 20.453400000000002,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -14
+  },
+  {
+   "t": 33.5102,
+   "src": "sfx/sfx_pop.mp3",
+   "db": -16
+  },
+  {
+   "t": 45.6335,
+   "src": "sfx/deep-cinematic-impact-1.mp3",
+   "db": -14
+  },
+  {
+   "t": 45.933499999999995,
+   "src": "sfx/rumble_const.mp3",
+   "db": -24
+  },
+  {
+   "t": 56.88009999999999,
+   "src": "sfx/cp_riser.wav",
+   "db": -16
+  },
+  {
+   "t": 59.080099999999995,
+   "src": "sfx/stinger_hit.mp3",
+   "db": -12
+  },
+  {
+   "t": 77.7035,
+   "src": "sfx/bar_grow.mp3",
+   "db": -18
+  },
+  {
+   "t": 127.25689999999999,
+   "src": "sfx/sfx_pop.mp3",
+   "db": -16
+  },
+  {
+   "t": 145.09689999999998,
+   "src": "sfx/number_slam.mp3",
+   "db": -16
+  },
+  {
+   "t": 171.32019999999994,
+   "src": "sfx/number_slam.mp3",
+   "db": -12
+  },
+  {
+   "t": 197.89019999999994,
+   "src": "sfx/sfx_pop.mp3",
+   "db": -16
+  },
+  {
+   "t": 239.10019999999992,
+   "src": "sfx/sfx_text_thud.mp3",
+   "db": -14
+  },
+  {
+   "t": 247.77019999999993,
+   "src": "sfx/sfx_text_thud.mp3",
+   "db": -14
+  },
+  {
+   "t": 329.7701999999999,
+   "src": "sfx/cam_travel.mp3",
+   "db": -16
+  },
+  {
+   "t": 357.3034999999999,
+   "src": "sfx/cam_travel.mp3",
+   "db": -16
+  },
+  {
+   "t": 434.93679999999983,
+   "src": "sfx/sfx_paper_tick.mp3",
+   "db": -12
+  },
+  {
+   "t": 434.93679999999983,
+   "src": "sfx/sfx_whoosh_soft.mp3",
+   "db": -16
+  },
+  {
+   "t": 484.24679999999984,
+   "src": "sfx/sfx_pop.mp3",
+   "db": -14
+  },
+  {
+   "t": 756.7467999999999,
+   "src": "sfx/sfx_pop.mp3",
+   "db": -14
+  },
+  {
+   "t": 884.2135999999997,
+   "src": "sfx/sfx_pop.mp3",
+   "db": -16
+  },
+  {
+   "t": 885.3135999999996,
+   "src": "sfx/cam_travel.mp3",
+   "db": -16
+  },
+  {
+   "t": 907.9902999999996,
+   "src": "sfx/winner_chime.mp3",
+   "db": -18
+  },
+  {
+   "t": 931.9502999999997,
+   "src": "sfx/text_slam.mp3",
+   "db": -13
+  },
+  {
+   "t": 997.4503999999997,
+   "src": "sfx/sfx_pop.mp3",
+   "db": -14
+  },
+  {
+   "t": 2.95,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -20
+  },
+  {
+   "t": 8.816666666666666,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -20
+  },
+  {
+   "t": 9.75,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -20
+  },
+  {
+   "t": 12.783333333333333,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -20
+  },
+  {
+   "t": 17.016666666666666,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -20
+  },
+  {
+   "t": 19.183333333333334,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -20
+  },
+  {
+   "t": 19.55,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -20
+  },
+  {
+   "t": 22.716666666666665,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -20
+  },
+  {
+   "t": 29.05,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -20
+  },
+  {
+   "t": 35.150000000000006,
+   "src": "sfx/cam_zoom_punch.mp3",
+   "db": -20
+  },
+  {
+   "t": 2.88,
+   "src": "sfx/sfx_whoosh_soft.mp3",
+   "db": -17
+  },
+  {
+   "t": 15.750000000000002,
+   "src": "sfx/sfx_whoosh_soft.mp3",
+   "db": -17
+  },
+  {
+   "t": 16.95,
+   "src": "sfx/sfx_whoosh_soft.mp3",
+   "db": -17
+  },
+  {
+   "t": 19.116699999999998,
+   "src": "sfx/sfx_whoosh_soft.mp3",
+   "db": -17
+  },
+  {
+   "t": 19.4834,
+   "src": "sfx/sfx_whoosh_soft.mp3",
+   "db": -17
+  },
+  {
+   "t": 22.6501,
+   "src": "sfx/sfx_whoosh_soft.mp3",
+   "db": -17
+  },
+  {
+   "t": 25.116799999999998,
+   "src": "sfx/sfx_whoosh_soft.mp3",
+   "db": -17
+  },
+  {
+   "t": 28.983499999999996,
+   "src": "sfx/sfx_whoosh_soft.mp3",
+   "db": -17
+  },
+  {
+   "t": 31.850199999999997,
+   "src": "sfx/sfx_whoosh_soft.mp3",
+   "db": -17
+  },
+  {
+   "t": 9.7033,
+   "src": "sfx/whoosh.mp3",
+   "db": -20
+  },
+  {
+   "t": 12.736650000000001,
+   "src": "sfx/whoosh.mp3",
+   "db": -20
+  },
+  {
+   "t": 31.870199999999997,
+   "src": "sfx/whoosh.mp3",
+   "db": -20
+  },
+  {
+   "t": 35.873509999999996,
+   "src": "sfx/whoosh.mp3",
+   "db": -20
+  },
+  {
+   "t": 39.690189999999994,
+   "src": "sfx/whoosh.mp3",
+   "db": -20
+  },
+  {
+   "t": 46.39348999999999,
+   "src": "sfx/whoosh.mp3",
+   "db": -20
+  },
+  {
+   "t": 53.08678999999999,
+   "src": "sfx/whoosh.mp3",
+   "db": -20
+  },
+  {
+   "t": 60.230109999999996,
+   "src": "sfx/whoosh.mp3",
+   "db": -20
+  }
+ ]
+}

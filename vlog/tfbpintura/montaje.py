@@ -61,8 +61,19 @@ TOTAL = t
 gi = {g['id']: g for g in G}
 # insertos
 INS = []
+# covers: beats cuyo clip no da labios tras 3+ tomas -> se TAPAN enteros con insertos (la voz sigue)
+COV = DIR.get('covers', {}); USED = {i for v in COV.values() for i in v}
+for host, ids in COV.items():
+    h = gi[host]; t = h['start']; end = h['start'] + h['d']
+    for k, iid in enumerate(ids):
+        c = TL[iid]; room = c['vdur'] - 0.45; rest = end - t
+        d = rest if k == len(ids) - 1 else min(room, rest / (len(ids) - k))
+        d = min(d, room)
+        if d <= 0.3: break
+        INS.append({'id': iid, 'P': c['P'], 'start': t, 'd': d, 'vstart': c['vstart'] + 0.4, 'file': c['file'], 'host': host, 'cover': True}); t += d
+    if end - t > 0.05: print(f'⚠ cover {host}: quedan {end - t:.2f}s del clip original a la vista')
 for b in B:
-    if b['type'] != 'I' or b['id'] not in TL: continue
+    if b['type'] != 'I' or b['id'] not in TL or b['id'] in USED: continue
     h = gi.get(b['host'])
     if not h: continue
     c = TL[b['id']]; L = min(2.2, max(1.4, h['d'] * 0.45))
@@ -70,16 +81,18 @@ for b in B:
     INS.append({'id': b['id'], 'P': c['P'], 'start': s, 'd': L, 'vstart': c['vstart'] + 0.4, 'file': c['file'], 'host': b['host']})
 INS.sort(key=lambda x: x['start'])
 for a, b2 in zip(INS, INS[1:]):
+    if a.get('cover') and b2.get('cover'): continue
     if b2['start'] < a['start'] + a['d'] + 0.3: a['d'] = max(0.8, b2['start'] - a['start'] - 0.3)
 
 # ---------- palabras con tiempo GLOBAL (para anclar overlays) ----------
+NUM = {'1': 'uno', '2': 'dos', '3': 'tres', '4': 'cuatro', '5': 'cinco', '6': 'seis', '10': 'diez', 'una': 'uno', 'un': 'uno'}
 def word_time(bid, word=None, nth=0):
     g = gi[bid]
     if not word: return g['start']
     tr = TR[bid]; s0 = tr['start']; hits = []
     for w in ASR:
         ws = w['startMs'] / 1000
-        if s0 - 0.05 <= ws <= s0 + tr['len'] and norm(w['text']) == norm(word): hits.append(ws - s0)
+        if s0 - 0.05 <= ws <= s0 + tr['len'] and NUM.get(norm(w['text']), norm(w['text'])) == NUM.get(norm(word), norm(word)): hits.append(ws - s0)
     if len(hits) <= nth: print(f'⚠ palabra "{word}" no está en {bid}; uso el inicio'); return g['start']
     return g['start'] + max(0, hits[nth])
 
@@ -117,6 +130,16 @@ for i, o in enumerate(DIR['overlays']):
     fr0 = round(t0 * FPS); overlays.append({'key': f'o{i}', 'kind': o['kind'], 'from': fr0, 'dur': max(6, round(t1 * FPS) - fr0), 'props': props})
     for s in o.get('sfx', []): sfx.append({'t': t0 + s.get('off', 0), 'src': s['src'], 'db': s.get('db', -14)})
 TOTAL_FR = round(TOTAL * FPS)
+# minuto 1: toda frontera entre planos de la MISMA escena (toma continua = el detector no ve corte) lleva destello +
+# golpe de cámara, así el gancho tiene ≥20 cortes medidos y ritmo de jump-cut
+ss = sorted(segs, key=lambda x: x['from']); nfl = 0
+for a, b2 in zip(ss, ss[1:]):
+    if b2['from'] >= 62 * FPS: break
+    if a['src'] == b2['src'] and a['from'] + a['dur'] == b2['from']:
+        overlays.append({'key': f'fl{nfl}', 'kind': 'TfbFlash', 'from': b2['from'] - 1, 'dur': 5, 'props': {'peak': 0.8}}); nfl += 1
+        cam = dict(b2.get('cam') or {}); cam['punches'] = (cam.get('punches') or []) + [{'at': 0, 'amount': 0.14}]; b2['cam'] = cam
+        sfx.append({'t': b2['from'] / FPS - 0.05, 'src': 'sfx/cam_zoom_punch.mp3', 'db': -20})
+print('destellos de jump-cut en el minuto 1:', nfl)
 
 # ---------- SFX automáticos: whoosh en los cortes de escena del minuto 1, golpe en los insertos del gancho ----------
 for a, b2 in zip(G, G[1:]):
@@ -164,7 +187,13 @@ bed *= 10 ** ((VREF + DIR['music'].get('db', -22) - rms_db(mus)) / 20)
 env = np.ones(N, np.float32); ramp = int(SR * 1.5)
 env[:int(DIR['music'].get('start', 6.0) * SR)] = 0
 e_end = int((TOTAL - 1.0) * SR); env[e_end:] = 0; env[e_end - ramp * 2:e_end] = np.minimum(env[e_end - ramp * 2:e_end], np.linspace(1, 0, ramp * 2))
-mix = voz + fol + fx + bed * env
+# ambiente parejo del patio en el minuto 1 (compuerta: 0 silencios) — entra en 0, se va entre 60 y 64 s
+amb = load(PUB + 'sfx/ra_ambient_day.mp3'); ab = np.zeros(N, np.float32); pos = 0
+while pos < min(N, int(66 * SR)):
+    j = min(N, pos + len(amb)); ab[pos:j] += amb[:j - pos]; pos += len(amb)
+ab *= 10 ** ((VREF - 11 - rms_db(amb)) / 20)
+aenv = np.zeros(N, np.float32); a0, a1 = int(60 * SR), int(64 * SR); aenv[:a0] = 1; aenv[a0:a1] = np.linspace(1, 0, a1 - a0)
+mix = voz + fol + fx + bed * env + ab * aenv
 peak = np.abs(mix).max(); mix = mix / max(peak, 1e-6) * 0.89
 os.makedirs(PUB + 'tfbpintura', exist_ok=True)
 tmp = R + 'out/tfbpintura/mix_raw.wav'
@@ -175,7 +204,22 @@ sh('ffmpeg', '-v', 'error', '-y', '-i', tmp, '-af', 'loudnorm=I=-15:TP=-1.5:LRA=
 for P in sorted({g['P'] for g in G if g.get('P')} | {g['P'] for g in INS}):
     src, dst = OUTV + P + f'/vlog_{P}.mp4', PUB + f'tfbpintura/vlog_{P}.mp4'
     if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
-        sh('ffmpeg', '-v', 'error', '-y', '-i', src, '-an', '-c:v', 'libx264', '-crf', '21', '-preset', 'medium', '-g', '15', '-pix_fmt', 'yuv420p',
+        # los clips salen ~15-20 % más oscuros que sus anclas: gamma por escena para igualar el brillo medio a las anclas
+        def luma(f, ss=None):
+            a = ['ffmpeg', '-v', 'error'] + (['-ss', str(ss)] if ss is not None else []) + ['-i', f, '-frames:v', '1', '-vf', 'scale=160:90,format=gray', '-f', 'rawvideo', '-']
+            b = subprocess.run(a, capture_output=True).stdout
+            return np.frombuffer(b, np.uint8).mean() / 255 if b else None
+        import glob as _g
+        la = [luma(f) for f in sorted(_g.glob(OUTV + P + '/anc/K*.png')) if '_raw' not in f]
+        D0 = dur(src); lc = [luma(src, D0 * k / 9) for k in range(1, 9)]
+        la = [x for x in la if x]; lc = [x for x in lc if x]
+        gam = 1.0
+        if la and lc:
+            ma, mc = float(np.mean(la)), float(np.mean(lc))
+            tg = max(ma, 0.34)  # garaje: las anclas ya son oscuras -> piso de brillo
+            if mc < tg: gam = float(np.clip(np.log(mc) / np.log(tg), 1.0, 1.6))
+        print(f'{P}: luma anclas {np.mean(la):.3f} clips {np.mean(lc):.3f} -> gamma {gam:.2f}')
+        sh('ffmpeg', '-v', 'error', '-y', '-i', src, '-an', '-vf', f'eq=gamma={gam:.3f}', '-c:v', 'libx264', '-crf', '21', '-preset', 'medium', '-g', '15', '-pix_fmt', 'yuv420p',
            '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', dst)
 
 data = {'segs': segs, 'overlays': overlays, 'audio': 'tfbpintura_fish.wav'}

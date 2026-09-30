@@ -1,0 +1,163 @@
+b001 DX E1 
+b002 V E1 ¿Con cal y cemento? Con la primera lluvia se te lava todo, t
+b003 A E1 Mira.
+b004 A E1 Loco o genio: pinté la casa con cemento, cal y agua. Y no se
+b005 D G1 Cal hidratada.
+b006 A G1 Cemento blanco, poquito.
+b007 D G1 Agua.
+b008 A G1 Y un cuarto ingrediente, que casi nadie pone.
+b009 D G1 Se revuelve hasta que queda como leche.
+b010 A E2 Y con una brocha ancha, sobre el repello, manos finitas.
+b011 D E2 La primera mano parece que no tapa nada.
+b012 A E1 Pero mira el antes y el después, en la misma pared.
+b013 A E1 Froto, y no me deja la mano blanca.
+b014 A E1 Y va aguada, así que rinde muchísimo. Con un balde pinto tod
+b015 A E1 ¿Por qué no se cae? Porque no es una capa de plástico pegada
+b016 A E1 Y con el aire, poco a poco, se vuelve piedra otra vez. Por e
+b017 A E1 SKIP Mi vecino todavía no me cree. Ya le voy a mostrar.
+b018 A E1 Pero ojo: el cuarto ingrediente es el que hace que no se cai
+b019 A G1 Te doy la receta completa ya, con las medidas, y después te 
+b020 A G1 Todo se mide con el mismo recipiente. Yo uso esta jarra. No 
+b021 A G1 Cuatro jarras de cal hidratada.
+b022 A G1 Una jarra de cemento blanco. Cuatro a uno.
+b023 A G1 Un puñado de sal gruesa, disuelta antes en un poco de agua c
+b024 A G1 Y agua, más o menos el doble que de polvo, hasta que quede c
+b025 A G1 SKIP Y la pared tiene que ser mineral: repello, ladrillo o cement
+b026 A G1 La cal la dejo remojando desde la noche anterior. El cemento
+b027 D G1 Se cuela, para que no queden grumos.
+b028 A E2 La pared limpia, sin pintura plástica, y mojada antes de pin
+b029 A E2 Tres o cuatro manos finas, dejando secar entre una y otra.
+b030 A E2 Y los días siguientes, un rocío de agua para que cure despac
+b031 A E2 Ahora sí, vamos con las preguntas que más me hicieron, porqu
+b032 A G2 La primera, y la que más se repite: ¿se puede guardar para e
+b033 D G2 Esto lo preparé ayer con el cemento adentro. Grumos. Ya no p
+b034 A G2 ¿Por qué? Porque el cemento empieza a fraguar en cuanto le c
+b035 A G2 Entonces la regla es sencilla: el cemento se mezcla sólo con
+b036 A G2 La cal sola, en cambio, sí aguanta. Tapada, con un dedito de
+b037 A G2 Segunda pregunta: ¿kilos o botes? Un bote de cal no pesa lo 
+b038 A G2 La cal es mucho más liviana. Si mides la cal en kilos y el c
+b039 A G2 Por eso todo en jarras, con la misma jarra. Cuatro de cal, u
+b040 A G2 Cuarta pregunta: ¿cuánto dura? No te voy a inventar un númer
+b041 A G2 Lo bueno es que cuando se gasta no hay que raspar nada: se m
+b042 A I1 Y la tercera: ¿la puedo poner encima de la pintura que ya te
+b043 A I1 Sobre látex, esmalte o pintura plástica, se agarra mal. Mira
+b044 A I1 La cal necesita un fondo mineral para meterse: repello, ladr
+b045 A I1 ¿Cómo sabes si tu pared es mineral? La prueba de la gota. Le
+b046 A I1 Si se chupan y la pared se oscurece, es mineral. Ahí la cal 
+b047 A I1 Si tu pared tiene pintura vieja, hay que sacarla o, por lo m
+b048 A I1 Y sobre yeso pintado tampoco. Eso no te lo dicen en los vide
+b049 A G3 Antes de abrir la bolsa: gafas y guantes. No es exagerar.
+b050 A G3 La cal y el cemento son cáusticos: te queman la piel. Y la c
+b051 A G3 Esta es cal hidratada, la de construcción. Viene en polvo, e
+b052 A G3 No es yeso ni es cal viva. La viva es la que hierve con el a
+b053 A G3 Y cuidado en la ferretería: hay cal agrícola, que es piedra 
+b054 A G3 Así se pintaban las bardas de las escuelas, las casas del ca
+b055 A G3 ¿Y para qué el cemento blanco? La cal sola es de adentro. Af
+b056 A G3 Pero es poquito. Si le pones mucho cemento, queda más dura, 
+b057 A G3 Las herramientas: una brocha ancha, dos baldes, una jarra, u
+b058 A G3 La brocha, ancha y de cerda gruesa, porque carga mucha cal a
+b059 A G3 ¿Y cuánto gastas? Una bolsa de cal, una bolsa chica de cemen
+b060 A G4 La noche anterior: cuatro jarras de cal en el balde vacío. P
+b061 D G4 Después el agua, de a poco, y lo dejo que se empape solo.
+b062 A G4 Revuelvo hasta que no quede polvo seco. Queda una pasta espe
+b063 A G4 Le dejo un dedo de agua encima, tapo, y a dormir. Mínimo una
+b064 A G4 ¿Para qué el reposo? Para que la cal se hidrate bien. Si la 
+b065 D G4 Al día siguiente, mira qué cremosa quedó.
+b066 A G4 Ahora le agrego agua hasta que quede líquida. Tiene que chor
+b067 A G4 ¿Ves cómo chorrea? Si queda pastosa, pintas una capa gruesa,
+b068 A G5 Ahora la sal. Un puñado en un poco de agua caliente, y la re
+b069 D G5 Disuelta. Nunca en grano directo en el balde.
+b070 A G5 La echo al balde, y revuelvo bien.
+b071 A G5 Y el cemento, la jarra de cemento blanco, primero aparte con
+b072 D G5 Y ahora sí, todo junto.
+b073 A G5 Revuelvo un buen rato. Y lo voy revolviendo también mientras
+b074 A G5 Y lo último: la cuelo por un pedazo de mosquitero. Lo que qu
+b075 A G5 Con estas medidas me sale casi un balde lleno. Y lo que no u
+b076 V G5 ¿Y la sal? ¿Vas a pintar o vas a hacer un guiso?
+b077 A G5 ¡Ja! Eso mismo dicen todos. La sal es el truco de los viejos
+b078 A G5 Y ahora presta muchísima atención a esta imagen, porque prob
+b079 L LAM Aquí está todo en una sola hoja. Los materiales: cuatro jarr
+b080 L LAM El paso a paso: la cal remojada desde la noche anterior, col
+b081 L LAM Tres o cuatro manos finas con brocha ancha, cruzadas, dejand
+b082 L LAM Y abajo, los tres errores que la hacen caer: pintar encima d
+b083 L LAM Si te quedas con esta hoja, ya puedes pintar. Tómale captura
+b084 A G5 Esto lo tengo ordenado junto con otros arreglos en la guía d
+b085 A G5 Y si estás en el teléfono, el enlace está abajo. Seguimos, q
+b086 A EP Esta es la otra mitad de la pared. Repello de cemento, con r
+b087 A EP Todo lo que se levanta, afuera. Con la espátula, hasta que n
+b088 D EP Lo que está bien pegado, lo dejo; lo que suena hueco, lo sac
+b089 A EP Después, cepillo de alambre, para sacar el polvo y lo suelto
+b090 A EP Y ojo con esto: si la pared tiene humedad que sube del piso,
+b091 A EP Donde hay una mancha así, la cal sí deja respirar la pared m
+b092 A EP Antes de pintar, tapa el piso y las ventanas. La cal salpica
+b093 A EP Si te cae una gota, límpiala en el momento con un trapo moja
+b094 A EP ¿Y sobre ladrillo sin repellar? También agarra muy bien. El 
+b095 A EP Ahora la mojo. Esto es lo que casi todos se saltan, y es lo 
+b096 D EP Húmeda, no chorreando.
+b097 A EP ¿Por qué? Porque una pared seca le chupa el agua a la cal en
+b098 A EP Por eso tampoco se pinta con el sol del mediodía pegando de 
+b099 A EP Y mira el pronóstico: que no llueva en los dos días siguient
+b100 A E3 Te cuento algo. Me escribió Ramiro, de Cochabamba, en Bolivi
+b101 A E3 A los pocos meses pasaba la mano por la pared y le quedaba b
+b102 A E3 Le pregunté tres cosas. ¿La mojaste antes? No. ¿A qué hora p
+b103 A E3 Las tres cosas que la hacen fallar, juntas. No era la receta
+b104 A E3 Así que vamos a hacerlo bien. Brocha ancha, cargada pero sin
+b105 A E3 Pinceladas cruzadas, en todas direcciones, y metiendo la cal
+b106 A E3 Y un orden: de arriba hacia abajo, y un paño completo de esq
+b107 D E3 Se aprieta un poquito, para que entre.
+b108 A E3 Y aquí es donde la gente se asusta. Mira: se ve transparente
+b109 V E3 ¿Y eso es pintura? Se ve más gris que antes, hombre.
+b110 A E3 Espérate a que seque. La cal mojada se ve gris y transparent
+b111 D E3 Así.
+b112 A E3 Entre mano y mano, de cuatro a seis horas, según el calor. Q
+b113 A E3 Y antes de la segunda mano, un rocío otra vez. Siempre sobre
+b114 A E4 Segunda mano. Ahora sí empieza a tapar. Todavía se ven sombr
+b115 A E4 Cada tanto revuelvo el balde. Si no, el cemento se va al fon
+b116 A E4 Tercera mano. Esta es la que la deja pareja.
+b117 D E4 Si todavía ves transparencias, una cuarta. Nunca una gruesa:
+b118 A E4 El acabado es mate, tipo tiza. No brilla como la pintura de 
+b119 A E4 Si la pared tiene grietas finas, la cal las rellena un poco.
+b120 A E4 ¿Y con color? Sí, pero con pigmentos minerales, los óxidos e
+b121 D E4 Primero en un poco de agua, y después al balde. Salen tonos 
+b122 A E4 Y prueba siempre en un pedazo antes. Seco, queda mucho más c
+b123 A E7 Ah, y Ramiro. Volvió a pintar su barda así: mojada, temprano
+b124 A E7 Y esta vez, la mano limpia. Dijo que ya no le mancha la ropa
+b125 A E7 Por cosas como esa armé la guía del canal: los arreglos con 
+b126 A E7 Si estás en el televisor, el código está en pantalla. Si est
+b127 A E7 Terminaste de pintar. Pero la cal no terminó. Ahora empieza 
+b128 A E7 La cal se endurece tomando el aire. Es lento: semanas. Y par
+b129 A E7 Por eso, los dos o tres días siguientes, un rocío de agua a 
+b130 A E7 Y si le va a pegar sol fuerte o viento, la tapo con una tela
+b131 A E7 Cuando termines, lava la brocha y los baldes con agua, enseg
+b132 A E7 Y ahora, lo que te prometí al principio. Pero antes, te mues
+b133 A I2 Para adentro, en un cuarto, yo no le pongo cemento. Uso la r
+b134 A I2 Una jarra de cal por dos o tres de agua, hasta leche fina. L
+b135 A I2 Adentro no la lava la lluvia, y la cal sola respira mejor. E
+b136 A I2 Adentro, pinta con la ventana abierta, y ten a los niños y a
+b137 A I2 Además, la cal es alcalina. Al moho no le gusta nada. Por es
+b138 A I2 Ahora, los límites, porque no todo es perfecto. Recién pinta
+b139 A I2 Cuando cura bien, eso casi desaparece. Pero una cal mal hech
+b140 A I2 Y no es pintura lavable. Una mancha de grasa no se va con tr
+b141 A I2 Y cuesta una fracción de una lata de pintura. Por eso, si se
+b142 A I2 Ah, una cosa. Hay una variante de esto que funciona todavía 
+b143 A I2 Te dejé exactamente cómo hacerla en la descripción.
+b144 A E5 Pasaron varios días. La pared completa, las dos mitades, cur
+b145 A E5 Primero, la cinta, la misma prueba que hice adentro. La apri
+b146 V E5 A ver, genio. Dale con la manguera, que yo quiero ver.
+b147 A E5 Con gusto.
+b148 DX E5 
+b149 A E5 Froto la pared mojada, y nada. Ni se ablanda ni se va.
+b150 A E5 Y esto es con el chorro a presión, de cerca. La lluvia le pe
+b151 V E5 Bueno... me callo. Pero la receta me la pasas, ¿eh?
+b152 A E5 Te la paso, vecino. Y ahora sí, lo que te prometí: el error 
+b153 A E8 La sal ayuda a que la cal seque más despacio y agarre mejor.
+b154 A E8 Si te pasas de sal, la pared te la devuelve: salen estas man
+b155 A E8 Y siempre disuelta en agua caliente. En grano se queda en pu
+b156 A E8 Poca sal, bien disuelta, y la pared húmeda durante el curado
+b157 A E8 Eso es lo que casi nadie hace bien. Y es lo que hace que no 
+b158 A E8 Así que, ¿loco o genio? Ninguno de los dos. Esto es lo que h
+b159 A E8 Cuatro de cal, una de cemento, un puñado de sal disuelta, ag
+b160 A E8 Si lo haces así, tienes una pared que respira, que no se des
+b161 A E8 Y si te da miedo, pruébala primero en un pedazo chico, atrás
+b162 A E8 La hoja con todo, y los demás arreglos de la casa, están en 
+b163 A E8 Y cuéntame en los comentarios qué pared vas a pintar. Nos ve
