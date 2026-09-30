@@ -1,0 +1,23 @@
+{
+  "slug": "hlgenco",
+  "canal": "harlan-lineman",
+  "modo": "avatar",
+  "idioma": "en",
+  "guion": "D:/rtmp/factory/_guiones/GUION_hlgenco.txt",
+  "voz": {
+    "id": "harlan"
+  },
+  "cta": {
+    "head": "Subscribe for more from the line",
+    "ancla": "If you want more of what forty years"
+  },
+  "avatar": {
+    "face": "public/ref/harlan_full.png",
+    "ref": "public/ref/harlan_face128.png"
+  },
+  "bagasy": {
+    "channelKey": "draft:harlanlineman",
+    "cardId": "hrl2026092502"
+  },
+  "titulo": "The Generator Mistake That Kills Families Every Winter (A Lineman Explains)"
+}

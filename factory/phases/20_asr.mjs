@@ -26,7 +26,14 @@ export default {
     } catch (e) {
       log(`⚠️ Modal falló (${e.message.split("\n")[0].slice(0, 160)}) → respaldo OpenAI whisper-1`);
       motor = "openai";
-      await run("node", ["scripts/asr_openai.mjs", P.wav16k, path.join(P.work, "plan", "asr_openai.json"), "600", spec.idioma, slug], { timeoutMs: 90 * 60_000, cwd: ROOT });
+      const oaOut = path.join(P.work, "plan", "asr_openai.json");
+      await run("node", ["scripts/asr_openai.mjs", P.wav16k, oaOut, "600", spec.idioma, slug], { timeoutMs: 90 * 60_000, cwd: ROOT });
+      // asr_openai escribe {w,t,e} en segundos y NO toca public/captions_<slug>.json (medido 30-sep, hlgenco:
+      // el respaldo nunca se había ejercido y moría con ENOENT). Se convierte al formato de modal_whisper.
+      const oa = JSON.parse(fs.readFileSync(oaOut, "utf8"));
+      const caps = (oa.words || []).map((x) => ({ text: " " + x.w, startMs: Math.round(x.t * 1000), endMs: Math.round(x.e * 1000), timestampMs: Math.round(x.e * 1000), confidence: 1 }));
+      fs.writeFileSync(P.captions, JSON.stringify(caps));
+      log(`respaldo OpenAI: ${caps.length} palabras → ${P.captions}`);
     } finally { try { fs.unlinkSync(tmp16k); } catch { /* C: se libera */ } }
 
     const caps = JSON.parse(fs.readFileSync(P.captions, "utf8"));

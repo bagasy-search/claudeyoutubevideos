@@ -1,0 +1,30 @@
+{
+  "slug": "ctec4lav",
+  "canal": "claudio-tecnico",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_ctec4lav.txt",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200
+  },
+  "cta": {
+    "head": "Suscríbete al canal",
+    "ancla": "Si esto te sirvió",
+    "sub": "Un video nuevo cada semana"
+  },
+  "avatar": {
+    "face": "public/ref/claudio_tecnico_full.png",
+    "ref": "public/ref/claudio_tecnico_face128.png",
+    "lipLeadSec": 0.1
+  },
+  "bagasy": {
+    "channelKey": "draft:claudiotecnico",
+    "cardId": "ctec2026092501"
+  },
+  "titulo": "Reparé cientos de lavadoras: estas son las únicas 4 que compraría",
+  "overrides": {
+    "animadoMaxPct": 50,
+    "clipAudioVol": 0.4
+  }
+}

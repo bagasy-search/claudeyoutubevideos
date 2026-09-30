@@ -222,6 +222,79 @@
         "label": "string",
         "amount": "number"
       }
+    },
+    "TicketLine": {
+      "req": [
+        "text"
+      ],
+      "props": {
+        "text": "string",
+        "note": "string"
+      }
+    },
+    "SplitSide": {
+      "req": [
+        "image",
+        "label"
+      ],
+      "props": {
+        "image": "asset",
+        "label": "string",
+        "sub": "string"
+      }
+    },
+    "MenuRow": {
+      "req": [
+        "text"
+      ],
+      "props": {
+        "text": "string",
+        "image": "asset",
+        "mark": {
+          "val": [
+            "yes",
+            "no"
+          ]
+        }
+      }
+    },
+    "PolaroidEvent": {
+      "req": [
+        "year",
+        "label"
+      ],
+      "props": {
+        "year": "string",
+        "label": "string",
+        "image": "asset"
+      }
+    },
+    "FridgeItem": {
+      "req": [
+        "label",
+        "hours"
+      ],
+      "props": {
+        "label": "string",
+        "hours": "number"
+      }
+    },
+    "KillerItem": {
+      "req": [
+        "label"
+      ],
+      "props": {
+        "label": "string",
+        "icon": {
+          "val": [
+            "grill",
+            "oven",
+            "car",
+            "vent",
+            "gen"
+          ]
+        }
+      }
     }
   },
   "kinds": {
@@ -902,6 +975,752 @@
         },
         "currency": "string",
         "totalLabel": "string"
+      }
+    },
+    "OrderTicket": {
+      "file": "LouDiner.tsx",
+      "export": "OrderTicket",
+      "capa": "tapa",
+      "req": [
+        "lines"
+      ],
+      "props": {
+        "lines": {
+          "array": "TicketLine"
+        },
+        "title": "string",
+        "eyebrow": "string",
+        "footer": "string",
+        "image": "asset",
+        "table": "string"
+      }
+    },
+    "Stamp86": {
+      "file": "LouDiner.tsx",
+      "export": "Stamp86",
+      "capa": "tapa",
+      "req": [
+        "image",
+        "title"
+      ],
+      "props": {
+        "image": "asset",
+        "stamp": "string",
+        "title": "string",
+        "eyebrow": "string",
+        "sub": "string"
+      }
+    },
+    "PotatoXRay": {
+      "file": "LouDiner.tsx",
+      "export": "PotatoXRay",
+      "capa": "tapa",
+      "req": [
+        "mode",
+        "label"
+      ],
+      "props": {
+        "mode": {
+          "val": [
+            "water",
+            "glue",
+            "set",
+            "dry",
+            "firm"
+          ]
+        },
+        "label": "string",
+        "value": "number",
+        "number": "string",
+        "eyebrow": "string"
+      }
+    },
+    "CrustMeter": {
+      "file": "LouDiner.tsx",
+      "export": "CrustMeter",
+      "capa": "tapa",
+      "req": [
+        "image"
+      ],
+      "props": {
+        "image": "asset",
+        "label": "string",
+        "target": "number"
+      }
+    },
+    "SplitTest": {
+      "file": "LouDiner.tsx",
+      "export": "SplitTest",
+      "capa": "tapa",
+      "req": [
+        "left",
+        "right"
+      ],
+      "props": {
+        "left": {
+          "obj": "SplitSide"
+        },
+        "right": {
+          "obj": "SplitSide"
+        },
+        "winner": {
+          "val": [
+            "left",
+            "right"
+          ]
+        },
+        "timer": "bool",
+        "timerTo": "number",
+        "title": "string"
+      }
+    },
+    "MenuBoard": {
+      "file": "LouDiner.tsx",
+      "export": "MenuBoard",
+      "capa": "tapa",
+      "req": [
+        "rows"
+      ],
+      "props": {
+        "rows": {
+          "array": "MenuRow"
+        },
+        "title": "string"
+      }
+    },
+    "BurnedQuote": {
+      "file": "LouDiner.tsx",
+      "export": "BurnedQuote",
+      "capa": "tapa",
+      "req": [
+        "words"
+      ],
+      "props": {
+        "words": {
+          "array": "QuoteWord"
+        },
+        "cite": "string",
+        "image": "asset",
+        "eyebrow": "string"
+      }
+    },
+    "ReceiptTimeline": {
+      "file": "LouDiner.tsx",
+      "export": "ReceiptTimeline",
+      "capa": "tapa",
+      "req": [
+        "events"
+      ],
+      "props": {
+        "events": {
+          "array": "PolaroidEvent"
+        },
+        "title": "string",
+        "eyebrow": "string"
+      }
+    },
+    "KitchenTimer": {
+      "file": "LouDiner.tsx",
+      "export": "KitchenTimer",
+      "capa": "tapa",
+      "req": [
+        "value",
+        "label"
+      ],
+      "props": {
+        "value": "number",
+        "from": "number",
+        "unit": "string",
+        "label": "string",
+        "image": "asset",
+        "max": "number"
+      }
+    },
+    "FrostTimer": {
+      "file": "LouDiner.tsx",
+      "export": "FrostTimer",
+      "capa": "tapa",
+      "req": [
+        "value",
+        "label"
+      ],
+      "props": {
+        "value": "number",
+        "unit": "string",
+        "label": "string",
+        "image": "asset"
+      }
+    },
+    "NeonSign": {
+      "file": "LouDiner.tsx",
+      "export": "NeonSign",
+      "capa": "overlay",
+      "req": [
+        "text"
+      ],
+      "props": {
+        "text": "string",
+        "sub": "string",
+        "color": {
+          "val": [
+            "pink",
+            "teal",
+            "amber"
+          ],
+          "alias": {
+            "red": "pink",
+            "blue": "teal",
+            "accent": "pink"
+          }
+        }
+      }
+    },
+    "CashCounter": {
+      "file": "LouDiner.tsx",
+      "export": "CashCounter",
+      "capa": "tapa",
+      "req": [
+        "to",
+        "label"
+      ],
+      "props": {
+        "to": "number",
+        "label": "string",
+        "caption": "string",
+        "prefix": "string",
+        "image": "asset"
+      }
+    },
+    "GridDown": {
+      "file": "HarlanLine.tsx",
+      "export": "GridDown",
+      "capa": "tapa",
+      "_uso": "Pueblo de noche que se apaga en ola + contador. >=4 s.",
+      "req": [
+        "to",
+        "label"
+      ],
+      "props": {
+        "to": "number",
+        "label": "string",
+        "eyebrow": "string",
+        "image": "asset"
+      }
+    },
+    "BreakerPanel": {
+      "file": "HarlanLine.tsx",
+      "export": "BreakerPanel",
+      "capa": "tapa",
+      "_uso": "Tablero de térmicas: una queda en el medio y se baja/sube (mode reset) o la principal quedó disparada (mode main). >=4 s.",
+      "req": [
+        "title"
+      ],
+      "props": {
+        "title": "string",
+        "eyebrow": "string",
+        "tripped": "number",
+        "mode": {
+          "val": [
+            "reset",
+            "main"
+          ]
+        },
+        "image": "asset"
+      }
+    },
+    "DispatchBoard": {
+      "file": "HarlanLine.tsx",
+      "export": "DispatchBoard",
+      "capa": "tapa",
+      "_uso": "Pantalla verde del despachador: entran reportes de calles y señala el equipo que falló. >=5 s.",
+      "req": [],
+      "props": {
+        "title": "string",
+        "found": "string",
+        "lines": {
+          "array": "CheckItem"
+        }
+      }
+    },
+    "LoadSurge": {
+      "file": "HarlanLine.tsx",
+      "export": "LoadSurge",
+      "capa": "tapa",
+      "_uso": "Gráfico de corriente: spike = todo arranca junto y dispara; stagger = de a uno y queda abajo. >=4 s.",
+      "req": [
+        "mode"
+      ],
+      "props": {
+        "mode": {
+          "val": [
+            "spike",
+            "stagger"
+          ]
+        },
+        "title": "string",
+        "eyebrow": "string"
+      }
+    },
+    "FridgeClock": {
+      "file": "HarlanLine.tsx",
+      "export": "FridgeClock",
+      "capa": "tapa",
+      "_uso": "Heladera/freezer como relojes (horas) + cinta 'DON'T OPEN'. Hasta 3 items. >=4 s.",
+      "req": [],
+      "props": {
+        "items": {
+          "array": "FridgeItem"
+        },
+        "tape": "bool",
+        "image": "asset",
+        "eyebrow": "string"
+      }
+    },
+    "CoinCup": {
+      "file": "HarlanLine.tsx",
+      "export": "CoinCup",
+      "capa": "tapa",
+      "_uso": "Vaso de hielo con moneda: safe (arriba), thawed (se hunde) o both. >=4 s.",
+      "req": [],
+      "props": {
+        "mode": {
+          "val": [
+            "safe",
+            "thawed",
+            "both"
+          ]
+        },
+        "title": "string"
+      }
+    },
+    "GenDistance": {
+      "file": "HarlanLine.tsx",
+      "export": "GenDistance",
+      "capa": "tapa",
+      "_uso": "Plano de arriba: el generador sale del garaje hasta 20 ft, humo lejos. >=5 s.",
+      "req": [],
+      "props": {
+        "feet": "number",
+        "title": "string"
+      }
+    },
+    "COAlarm": {
+      "file": "HarlanLine.tsx",
+      "export": "COAlarm",
+      "capa": "tapa",
+      "_uso": "Detector de CO: ppm sube, luz roja, síntomas tipo gripe (hasta 4). >=4 s.",
+      "req": [],
+      "props": {
+        "to": "number",
+        "title": "string",
+        "symptoms": {
+          "array": "CheckItem"
+        },
+        "image": "asset"
+      }
+    },
+    "BackfeedFlow": {
+      "file": "HarlanLine.tsx",
+      "export": "BackfeedFlow",
+      "capa": "tapa",
+      "_uso": "Backfeed: generador→toma→tablero→acometida→transformador (240→7200 V)→línea→liniero. >=6 s.",
+      "req": [],
+      "props": {
+        "fromV": "number",
+        "toV": "number",
+        "title": "string"
+      }
+    },
+    "StepPotential": {
+      "file": "HarlanLine.tsx",
+      "export": "StepPotential",
+      "capa": "tapa",
+      "_uso": "Cable caído: anillos de voltaje, círculo de 35 ft, pies que se arrastran juntos. >=4 s.",
+      "req": [],
+      "props": {
+        "feet": "number",
+        "title": "string",
+        "image": "asset"
+      }
+    },
+    "RuleCard": {
+      "file": "HarlanLine.tsx",
+      "export": "RuleCard",
+      "capa": "tapa",
+      "_uso": "Capítulo: número en esténcil + cinta de peligro + título que se tipea. 2,5-4 s.",
+      "req": [
+        "number",
+        "title"
+      ],
+      "props": {
+        "number": "number",
+        "title": "string",
+        "sub": "string",
+        "total": "number",
+        "image": "asset",
+        "danger": "bool"
+      }
+    },
+    "HazardStamp": {
+      "file": "HarlanLine.tsx",
+      "export": "HazardStamp",
+      "capa": "tapa",
+      "_uso": "Foto que se congela a gris + sello de inspección (NEVER/DEAD?/SAFE). 2,5-4 s.",
+      "req": [
+        "image"
+      ],
+      "props": {
+        "image": "asset",
+        "stamp": "string",
+        "title": "string",
+        "eyebrow": "string",
+        "good": "bool"
+      }
+    },
+    "RoomHeat": {
+      "file": "HarlanLine.tsx",
+      "export": "RoomHeat",
+      "capa": "tapa",
+      "_uso": "Plano de la casa: todo se enfría a azul menos UNA pieza naranja. >=4 s.",
+      "req": [],
+      "props": {
+        "warm": "number",
+        "cold": "number",
+        "title": "string",
+        "room": "string"
+      }
+    },
+    "RecapClipboard": {
+      "file": "HarlanLine.tsx",
+      "export": "RecapClipboard",
+      "capa": "tapa",
+      "_uso": "Tablilla con cinta de peligro: las reglas se tildan (upto = cuántas tildadas). >=5 s.",
+      "req": [
+        "items"
+      ],
+      "props": {
+        "items": {
+          "array": "CheckItem"
+        },
+        "title": "string",
+        "upto": "number"
+      }
+    },
+    "CamStamp": {
+      "file": "HarlanLine.tsx",
+      "export": "CamStamp",
+      "capa": "overlay",
+      "_uso": "Sello REC + fecha de camcorder viejo (recuerdo). Sirve sobre avatar.",
+      "req": [
+        "text"
+      ],
+      "props": {
+        "text": "string",
+        "sub": "string"
+      }
+    },
+    "COHouseCutaway": {
+      "file": "HarlanGen.tsx",
+      "export": "COHouseCutaway",
+      "capa": "tapa",
+      "_uso": "Casa en corte de noche: generador en el garaje con la puerta a medio abrir; el CO sube, pasa bajo la puerta a la cocina y a los cuartos. >=7 s.",
+      "req": [],
+      "props": {
+        "title": "string",
+        "eyebrow": "string",
+        "door": "number"
+      }
+    },
+    "StackEffect": {
+      "file": "HarlanGen.tsx",
+      "export": "StackEffect",
+      "capa": "tapa",
+      "_uso": "Efecto chimenea: aire tibio sale arriba, la casa aspira abajo, desde el garaje. >=6 s.",
+      "req": [],
+      "props": {
+        "title": "string",
+        "eyebrow": "string",
+        "sub": "string"
+      }
+    },
+    "BloodGrab": {
+      "file": "HarlanGen.tsx",
+      "export": "BloodGrab",
+      "capa": "tapa",
+      "_uso": "Macro de glóbulos rojos: el CO desplaza al oxígeno y se queda agarrado (~200x). >=6 s.",
+      "req": [],
+      "props": {
+        "factor": "number",
+        "title": "string",
+        "eyebrow": "string"
+      }
+    },
+    "GenVsCars": {
+      "file": "HarlanGen.tsx",
+      "export": "GenVsCars",
+      "capa": "tapa",
+      "_uso": "Un generador = grilla de cientos de autos que se llena en ola. >=5 s.",
+      "req": [],
+      "props": {
+        "label": "string",
+        "eyebrow": "string",
+        "cars": "number"
+      }
+    },
+    "YardPlan": {
+      "file": "HarlanGen.tsx",
+      "export": "YardPlan",
+      "capa": "tapa",
+      "_uso": "Plano del patio en perspectiva: cinta a 20 ft desde la puerta, estaca, cable, viento y escape lejos. >=6 s.",
+      "req": [],
+      "props": {
+        "feet": "number",
+        "title": "string",
+        "windFrom": {
+          "val": [
+            "left",
+            "right",
+            "top"
+          ]
+        }
+      }
+    },
+    "HiddenKillers": {
+      "file": "HarlanGen.tsx",
+      "export": "HiddenKillers",
+      "capa": "tapa",
+      "_uso": "4 tarjetas en profundidad (parrilla, horno, auto, ventilación); active=índice 0-3 pasa al frente, sin active recorre las 4. >=4 s.",
+      "req": [],
+      "props": {
+        "items": {
+          "array": "KillerItem"
+        },
+        "active": "number",
+        "title": "string",
+        "eyebrow": "string"
+      }
+    },
+    "AlarmMap": {
+      "file": "HarlanGen.tsx",
+      "export": "AlarmMap",
+      "capa": "tapa",
+      "_uso": "Casa en corte: alarmas de CO caen en cada piso y afuera de cada cuarto + checklist. >=6 s.",
+      "req": [],
+      "props": {
+        "title": "string",
+        "eyebrow": "string",
+        "items": {
+          "array": "CheckItem"
+        }
+      }
+    },
+    "SameHeadache": {
+      "file": "HarlanGen.tsx",
+      "export": "SameHeadache",
+      "capa": "tapa",
+      "_uso": "Familia en fila (y el perro): el mismo dolor de cabeza late a la vez; título + sub. >=4 s.",
+      "req": [],
+      "props": {
+        "title": "string",
+        "sub": "string",
+        "eyebrow": "string"
+      }
+    },
+    "TwoAMDecision": {
+      "file": "HarlanGen.tsx",
+      "export": "TwoAMDecision",
+      "capa": "tapa",
+      "_uso": "Pantalla partida: 2 AM en la nieve (generador en el garaje, tachado) vs tarde de sol con la estaca a 20 ft. >=5 s.",
+      "req": [],
+      "props": {
+        "leftLabel": "string",
+        "rightLabel": "string",
+        "title": "string"
+      }
+    },
+    "BlackoutBox": {
+      "file": "HarlanBox.tsx",
+      "export": "BlackoutBox",
+      "capa": "tapa",
+      "_uso": "Caja de apagón vista de arriba: 12 compartimentos con cinta escrita a mano; se prenden hasta `upto`. Hasta 12 items de 1-2 palabras. >=5 s.",
+      "req": [],
+      "props": {
+        "items": {
+          "array": "CheckItem"
+        },
+        "upto": "number",
+        "title": "string",
+        "image": "asset"
+      }
+    },
+    "BoxItemCard": {
+      "file": "HarlanBox.tsx",
+      "export": "BoxItemCard",
+      "capa": "tapa",
+      "_uso": "Capítulo de cada ítem: número calado detrás, polaroid con la foto (image = la del plano), etiqueta de precio colgando ('$10'), título. 3-5 s.",
+      "req": [
+        "number",
+        "title",
+        "image"
+      ],
+      "props": {
+        "number": "number",
+        "title": "string",
+        "price": "string",
+        "sub": "string",
+        "image": "asset",
+        "total": "number"
+      }
+    },
+    "BatteryCold": {
+      "file": "HarlanBox.tsx",
+      "export": "BatteryCold",
+      "capa": "tapa",
+      "_uso": "Termómetro que baja + dos baterías: la alcalina se vacía, la de litio aguanta. >=4 s.",
+      "req": [],
+      "props": {
+        "fromF": "number",
+        "toF": "number",
+        "title": "string",
+        "left": "string",
+        "right": "string",
+        "image": "asset"
+      }
+    },
+    "CrankRadio": {
+      "file": "HarlanBox.tsx",
+      "export": "CrankRadio",
+      "capa": "tapa",
+      "_uso": "Radio a manivela: aguja a la banda WX (NOAA), manivela girando, celular cargando hasta phoneTo %. >=4 s.",
+      "req": [],
+      "props": {
+        "freq": "string",
+        "title": "string",
+        "phoneTo": "number",
+        "image": "asset"
+      }
+    },
+    "BedLayers": {
+      "file": "HarlanBox.tsx",
+      "export": "BedLayers",
+      "capa": "tapa",
+      "_uso": "Corte de la cama: el calor se escapa y las frazadas de lana (under abajo, over arriba) + gorro lo cortan. >=5 s.",
+      "req": [],
+      "props": {
+        "title": "string",
+        "under": "number",
+        "over": "number"
+      }
+    },
+    "WarmerMap": {
+      "file": "HarlanBox.tsx",
+      "export": "WarmerMap",
+      "capa": "tapa",
+      "_uso": "Silueta con los calentadores brillando donde van (hasta 4 spots: pecho, bolsillos, pies) + sello warn. >=5 s.",
+      "req": [],
+      "props": {
+        "spots": {
+          "array": "CheckItem"
+        },
+        "warn": "string",
+        "title": "string"
+      }
+    },
+    "WaterMath": {
+      "file": "HarlanBox.tsx",
+      "export": "WaterMath",
+      "capa": "tapa",
+      "_uso": "Cuenta del agua (perDay x people x days = total) + garrafas que aparecen y se llenan. >=5 s.",
+      "req": [],
+      "props": {
+        "perDay": "number",
+        "people": "number",
+        "days": "number",
+        "unit": "string",
+        "title": "string",
+        "image": "asset"
+      }
+    },
+    "FridgeThermo": {
+      "file": "HarlanBox.tsx",
+      "export": "FridgeThermo",
+      "capa": "tapa",
+      "_uso": "Termómetro de aguja de heladera: aguja a value, zona roja sobre limit, sello KEEP IT / TOSS IT, saved = $ ahorrados. >=4 s.",
+      "req": [
+        "value"
+      ],
+      "props": {
+        "value": "number",
+        "limit": "number",
+        "label": "string",
+        "saved": "number",
+        "image": "asset"
+      }
+    },
+    "FlowerPotMyth": {
+      "file": "HarlanBox.tsx",
+      "export": "FlowerPotMyth",
+      "capa": "tapa",
+      "_uso": "Maceta con velitas vs calefactor: barras de watts a escala real + sello MYTH. >=5 s.",
+      "req": [],
+      "props": {
+        "a": "number",
+        "b": "number",
+        "aLabel": "string",
+        "bLabel": "string",
+        "title": "string",
+        "stamp": "string"
+      }
+    },
+    "SafetyBox": {
+      "file": "HarlanBox.tsx",
+      "export": "SafetyBox",
+      "capa": "tapa",
+      "_uso": "Caja del calefactor: requisitos que se tildan (state todo = tachado) y sello BUY IT / PUT IT BACK. Hasta 4 items. >=5 s.",
+      "req": [
+        "items"
+      ],
+      "props": {
+        "items": {
+          "array": "CheckItem"
+        },
+        "title": "string",
+        "stamp": "string",
+        "image": "asset"
+      }
+    },
+    "FinePrint": {
+      "file": "HarlanBox.tsx",
+      "export": "FinePrint",
+      "capa": "tapa",
+      "_uso": "Etiqueta de advertencia (text) con una lupa que recorre la letra chica (fine) y la subraya. >=5 s.",
+      "req": [
+        "text",
+        "fine"
+      ],
+      "props": {
+        "text": "string",
+        "fine": "string",
+        "title": "string",
+        "image": "asset"
+      }
+    },
+    "BoxReceipt": {
+      "file": "HarlanBox.tsx",
+      "export": "BoxReceipt",
+      "capa": "tapa",
+      "_uso": "Ticket de ferretería que se imprime renglón por renglón (hasta 13 lines) con total y nota a mano (footer). >=6 s.",
+      "req": [
+        "lines"
+      ],
+      "props": {
+        "lines": {
+          "array": "CostLine"
+        },
+        "title": "string",
+        "totalLabel": "string",
+        "footer": "string",
+        "image": "asset"
       }
     }
   }

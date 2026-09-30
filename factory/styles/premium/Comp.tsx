@@ -29,6 +29,10 @@ import { CostTallyKit } from "../VideoEdit/kit/CostTallyKit";
 import { CampItemCard } from "../VideoEdit/scenes/CampItemCard";
 import { FoodTeaseCards } from "../VideoEdit/scenes/FoodTeaseCards";
 import { RevealCards } from "../VideoEdit/scenes/RevealCards";
+import { GridDown, BreakerPanel, DispatchBoard, LoadSurge, FridgeClock, CoinCup, GenDistance, COAlarm, BackfeedFlow, StepPotential, RuleCard, HazardStamp, RoomHeat, RecapClipboard, CamStamp } from "../VideoEdit/scenes/HarlanLine";
+import { COHouseCutaway, StackEffect, BloodGrab, GenVsCars, YardPlan, HiddenKillers, AlarmMap, SameHeadache, TwoAMDecision } from "../VideoEdit/scenes/HarlanGen";
+import { BlackoutBox, BoxItemCard, BatteryCold, CrankRadio, BedLayers, WarmerMap, WaterMath, FridgeThermo, FlowerPotMyth, SafetyBox, FinePrint, BoxReceipt } from "../VideoEdit/scenes/HarlanBox";
+import { OrderTicket, Stamp86, PotatoXRay, CrustMeter, SplitTest, MenuBoard, BurnedQuote, ReceiptTimeline, KitchenTimer, FrostTimer, NeonSign, CashCounter } from "../VideoEdit/scenes/LouDiner";
 
 const MAPA: Record<string, React.FC<any>> = {
   AvatarScrimText, BarCompare, Checklist, CrossSection, StatBig, FloatingInsert,
@@ -36,6 +40,10 @@ const MAPA: Record<string, React.FC<any>> = {
   SignaturePhrase, SizeScale, StepTracker, VsCard,
   CampItemCard, FoodTeaseCards, RevealCards,
   IngredientsCardKit, CostTallyKit,
+  OrderTicket, Stamp86, PotatoXRay, CrustMeter, SplitTest, MenuBoard, BurnedQuote, ReceiptTimeline, KitchenTimer, FrostTimer, NeonSign, CashCounter,
+  COHouseCutaway, StackEffect, BloodGrab, GenVsCars, YardPlan, HiddenKillers, AlarmMap, SameHeadache, TwoAMDecision,
+  BlackoutBox, BoxItemCard, BatteryCold, CrankRadio, BedLayers, WarmerMap, WaterMath, FridgeThermo, FlowerPotMyth, SafetyBox, FinePrint, BoxReceipt,
+  GridDown, BreakerPanel, DispatchBoard, LoadSurge, FridgeClock, CoinCup, GenDistance, COAlarm, BackfeedFlow, StepPotential, RuleCard, HazardStamp, RoomHeat, RecapClipboard, CamStamp,
 };
 
 export const Comp: React.FC<{ kind: string; props: Record<string, unknown> }> = ({ kind, props }) => {

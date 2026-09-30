@@ -77,8 +77,20 @@ async function runpodJob({ slug, parte, face, audio, prompt, jobsFile, outMp4, l
     }
   } finally { if (host) await host.borrar(); }
   if (st?.status !== "COMPLETED") { delete jobs[parte]; fs.writeFileSync(jobsFile, JSON.stringify(jobs, null, 1)); throw new Error(`RunPod ${parte}: ${st?.status} ${JSON.stringify(st?.error || "").slice(0, 200)}`); }
-  const mp4 = await fetch(st.output.result, { signal: AbortSignal.timeout(1_800_000) });
-  fs.writeFileSync(outMp4, Buffer.from(await mp4.arrayBuffer()));
+  // ⛔ Medido 30-sep-2026 (hlgenco): el job terminó COMPLETED, la descarga se colgó 30 min, la fase murió
+  //   por timeout y al rato RunPod devolvía 404: el resultado se perdió y hubo que pagar otro /run.
+  //   La URL se persiste ANTES de bajar y la descarga reintenta con timeouts cortos.
+  jobs[parte].result = st.output.result; fs.writeFileSync(jobsFile, JSON.stringify(jobs, null, 1));
+  let buf = null, ultErr = null;
+  for (let t = 0; t < 5 && !buf; t++) {
+    try {
+      const mp4 = await fetch(st.output.result, { signal: AbortSignal.timeout(600_000) });
+      if (!mp4.ok) throw new Error(`HTTP ${mp4.status}`);
+      buf = Buffer.from(await mp4.arrayBuffer());
+    } catch (e) { ultErr = e; log(`descarga ${parte} intento ${t + 1}: ${e.message}`); await sleep(10_000); }
+  }
+  if (!buf) throw new Error(`RunPod ${parte}: COMPLETED pero no bajó (${ultErr?.message}); URL en ${jobsFile}`);
+  fs.writeFileSync(outMp4, buf);
   jobs[parte].costo = st.output?.cost; jobs[parte].hecho = true;
   fs.writeFileSync(jobsFile, JSON.stringify(jobs, null, 1));
   return { costo: st.output?.cost };

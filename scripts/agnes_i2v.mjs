@@ -17,6 +17,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
+// ⛔ 30-sep-2026: TODO envío a agnes pasa por la reserva de claves compartida de la PC (límite = 1 video/min POR
+// CLAVE + ráfaga por PC, NO por IP). La librería pone el ritmo; acá no se lleva cuenta propia de claves.
+import { agnesSubmit, KEYS as POOL_KEYS } from "../factory/lib/agnes_pool.mjs";
 
 const [LIST, SLUG, IMGDIR0, OUT0] = process.argv.slice(2);
 if (!LIST || !SLUG) { console.error("uso: node scripts/agnes_i2v.mjs <lista.json> <slug> [imgDir] [outDir]"); process.exit(1); }
@@ -24,7 +27,7 @@ const IMGDIR = IMGDIR0 || `public/img/${SLUG}`;
 const OUT = OUT0 || `public/broll/${SLUG}`;
 const env = {};
 try { for (const l of fs.readFileSync(".env", "utf8").split(/\r?\n/)) { const m = l.match(/^([A-Z_0-9]+)\s*=\s*(.*)$/); if (m) env[m[1]] = m[2].replace(/^["']|["']$/g, ""); } } catch {}
-const KS = (process.env.AGNES_KEYS || env.AGNES_KEYS || env.AGNES_API_KEY || "").split(",").map((s) => s.trim()).filter(Boolean);
+const KS = POOL_KEYS;   // claves de ESTA PC (AGNES_KEYS menos AGNES_KEYS_OTRA_PC), repartidas por agnes_pool
 const B = process.env.AGNES_BASE_URL || env.AGNES_BASE_URL || "https://apihub.agnes-ai.com/v1";
 const ROOT = B.replace(/\/v1$/, "");
 if (!KS.length) { console.error("faltan AGNES_KEYS en .env"); process.exit(1); }
@@ -52,8 +55,8 @@ if (!FLASH && !process.env.AG_FORCE && (INFER_S > 2.2 || SLOW < 2)) {
   console.error(`   medido: FRAMES=${FRAMES} FPS=${FPS} SLOW=${SLOW}. Si de verdad lo querés, AG_FORCE=1.`);
   process.exit(1);
 }
-const COOLDOWN = 62_000, QUEUE_RETRY = 8_000, POLL_MS = 12_000, MAX_WAIT = 25 * 60_000;
-const MAX_INFLIGHT = Number(process.env.AGNES_INFLIGHT || 12);
+const POLL_MS = 12_000, MAX_WAIT = 25 * 60_000;
+const MAX_INFLIGHT = Number(process.env.AGNES_INFLIGHT || 40);   // el ritmo de envío lo pone agnes_pool
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const NEG = "identity drift, face morphing, different person, extra person, new person entering, crowd, " +
@@ -131,49 +134,34 @@ const hayVoz = async (mp4) => {
   return { voz: seg.length > 0, texto: seg.map((x) => x.text.trim()).join(" ").slice(0, 120) };
 };
 
-const free = KS.map(() => 0);
 const cola = [...pend];
 const inflight = new Map();
-let ok = 0, fail = 0, sent = 0, qfull = 0, rlim = 0;
-const pickKey = () => { const now = Date.now(); let b = -1, t = Infinity; for (let i = 0; i < KS.length; i++) if (free[i] < t) { t = free[i]; b = i; } return t <= now ? b : -1; };
+let ok = 0, fail = 0, sent = 0, enviando = 0;
 
-const submit = async (it, ki) => {
+const submit = async (it) => {
   try {
     const body = FLASH
       ? { model: MODEL, mode: "keyframe", first_frame: it._url || (it._url = await hostear(it.nombre, srcImg(it.nombre))), prompt: buildPrompt(it),
           seconds: String(it.secs ? Math.max(4, Math.min(12, Math.round(it.secs))) : (process.env.AG_SECS || "4")), size: process.env.AG_SIZE || "720P", aspect_ratio: "16:9" }
       : { model: MODEL, image: dataURI(srcImg(it.nombre)), prompt: buildPrompt(it),
           negative_prompt: NEG, width: 1280, height: 720, num_frames: FRAMES, frame_rate: FPS };
-    const r = await fetch(B + "/videos", {
-      method: "POST", signal: AbortSignal.timeout(90_000),
-      headers: { Authorization: "Bearer " + KS[ki], "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    });
-    const j = await r.json().catch(() => ({}));
-    const vid = j.video_id || j.id;
-    if (!vid) {
-      const msg = JSON.stringify(j);
-      const qf = /queue is full|queue_full/i.test(msg), rl = /rate limit|too many|rate_limit/i.test(msg);
-      if (qf || rl) { cola.unshift(it); free[ki] = Date.now() + (qf ? QUEUE_RETRY : COOLDOWN); qf ? qfull++ : rlim++; return; }
-      throw new Error(msg.slice(0, 140));
-    }
-    free[ki] = Date.now() + COOLDOWN;
-    inflight.set(vid, { item: it, t0: Date.now(), ki });
+    const { vid, key } = await agnesSubmit(body, { tag: `${SLUG} ${it.nombre}` });   // espera clave libre y reintenta rate/cola solo
+    inflight.set(vid, { item: it, t0: Date.now(), key });
     sent++;
     console.log(`  → ${it.nombre} (enviados ${sent}/${pend.length}, en vuelo ${inflight.size})`);
   } catch (e) {
     it._try = (it._try || 0) + 1;
     if (it._try < 3) { cola.push(it); return; }
     fail++; console.log(`  ✗ submit ${it.nombre}: ${String(e.message).slice(0, 110)}`);
-  }
+  } finally { enviando--; }
 };
 
 const poll = async (vid, st) => {
   try {
     const g = FLASH
-      ? await fetch(`${B}/videos/${encodeURIComponent(vid)}`, { headers: { Authorization: "Bearer " + KS[st.ki] }, signal: AbortSignal.timeout(45_000) })
+      ? await fetch(`${B}/videos/${encodeURIComponent(vid)}`, { headers: { Authorization: "Bearer " + st.key }, signal: AbortSignal.timeout(45_000) })
       : await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}`,
-      { headers: { Authorization: "Bearer " + KS[st.ki] }, signal: AbortSignal.timeout(45_000) });   // ⛔ sep-2026: la tarea sólo la ve la clave que la creó (con otra: 404 → 106/106 "fallidos")
+      { headers: { Authorization: "Bearer " + st.key }, signal: AbortSignal.timeout(45_000) });   // ⛔ sep-2026: la tarea sólo la ve la clave que la creó (con otra: 404 → 106/106 "fallidos")
     const s = await g.json().catch(() => ({}));
     const urlOut = s.url || s.metadata?.url;
     if (urlOut && (!FLASH || s.status === "completed")) {
@@ -206,12 +194,13 @@ const poll = async (vid, st) => {
 };
 
 let latido = 0;
-while (cola.length || inflight.size) {
-  while (cola.length && inflight.size < MAX_INFLIGHT) { const ki = pickKey(); if (ki < 0) break; await submit(cola.shift(), ki); }
+while (cola.length || inflight.size || enviando) {
+  // sin await: la librería espera la clave libre; acá sólo se limita cuántos hay en vuelo + enviándose
+  while (cola.length && inflight.size + enviando < MAX_INFLIGHT) { enviando++; submit(cola.shift()); }
   await sleep(POLL_MS);
   await Promise.all([...inflight].map(([vid, st]) => poll(vid, st)));
-  if (++latido % 10 === 0) console.log(`  · latido: cola ${cola.length} · en vuelo ${inflight.size} · ok ${ok} · fail ${fail} · rate-limit ${rlim}`);
+  if (++latido % 10 === 0) console.log(`  · latido: cola ${cola.length} · en vuelo ${inflight.size} · ok ${ok} · fail ${fail} · enviando ${enviando}`);
 }
-console.log(`\n=== LISTO · ok ${ok} · fail ${fail} · cola-llena ${qfull} · rate-limit ${rlim} ===`);
+console.log(`\n=== LISTO · ok ${ok} · fail ${fail} === (motivos de rechazo: node factory/lib/agnes_pool.mjs stats)`);
 console.log(`siguiente paso OBLIGATORIO: node scripts/agnes_qc.mjs ${SLUG} --fix`);
 process.exit(fail ? 1 : 0);

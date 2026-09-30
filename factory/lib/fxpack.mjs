@@ -57,6 +57,9 @@ export function aplicarFx({ slug, style, cues, ventanas, plan, words, audioDesde
   const planBy = new Map(plan.map((p) => [p.name, p]));
   const vintage = (style.vintage || "").slice(0, 28);
   const covFile = pub(`img/${slug}/px/_parallax_cov.json`);
+  // carpeta de sonidos y camas POR CANAL (default = los de Ole, así sus videos no cambian)
+  const SD = cfg.sfxDir || "sfx_ole";
+  const AMB_IN = cfg.ambIn || "amb_fuego", AMB_OUT = cfg.ambOut || "amb_viento";
   const cov = fs.existsSync(covFile) ? JSON.parse(fs.readFileSync(covFile, "utf8")) : {};
   const assets = new Set(), eventos = [], medido = {};
   const exterior = new Set(cfg.exterior || []);
@@ -113,9 +116,9 @@ export function aplicarFx({ slug, style, cues, ventanas, plan, words, audioDesde
       I.fx.entra = e; ultEntrada = c.start; ultKind = e; nEnt[e] = (nEnt[e] || 0) + 1; cambios.push(c.start);
       if (e === "burn") {
         ultBurn = c.start;
-        if (c.start - ultProy >= F(cfg.proyectorMinS ?? 40)) { eventos.push({ src: pub("sfx_ole/proyector.wav"), at: (c.start - audioDesdeF) / 30, dur: 1.4, vol: cfg.volProyector ?? 0.1, fi: 0.1, fo: 0.6 }); ultProy = c.start; nPr++; }
+        if (c.start - ultProy >= F(cfg.proyectorMinS ?? 40)) { eventos.push({ src: pub(`${SD}/${cfg.sfxProyector || "proyector"}.wav`), at: (c.start - audioDesdeF) / 30, dur: 1.4, vol: cfg.volProyector ?? 0.1, fi: 0.1, fo: 0.6 }); ultProy = c.start; nPr++; }
       } else if (e !== "zoom" && c.start - ultWhoosh >= F(cfg.whooshMinS ?? 14)) {
-        eventos.push({ src: pub(`sfx_ole/whoosh_${rnd(c.start, 5) < 0.5 ? "a" : "b"}.wav`), at: (c.start - audioDesdeF) / 30 - 0.18, dur: 1.2, vol: cfg.volWhoosh ?? 0.13, fi: 0.02, fo: 0.3 });
+        eventos.push({ src: pub(`${SD}/whoosh_${rnd(c.start, 5) < 0.5 ? "a" : "b"}.wav`), at: (c.start - audioDesdeF) / 30 - 0.18, dur: 1.2, vol: cfg.volWhoosh ?? 0.13, fi: 0.02, fo: 0.3 });
         ultWhoosh = c.start; nWh++;
       }
     }
@@ -177,7 +180,7 @@ export function aplicarFx({ slug, style, cues, ventanas, plan, words, audioDesde
     overs.push({ key: "fxriel", start: r0, dur: r1 - r0, capa: "over", kind: "fxover", fxkind: "riel", props: { marcas: cards.map((c) => c.start - r0), total: cfg.railTotal || cards.length, ocultar, label: cfg.railLabel || "No." } });
     medido.riel = cards.length;
     // triángulo de la cocina en cada ítem (suave: son ~25 en todo el video)
-    for (const c of cards) eventos.push({ src: pub("sfx_ole/triangulo.wav"), at: (c.start - audioDesdeF) / 30, dur: 3.0, vol: cfg.volTriangulo ?? 0.16, fi: 0, fo: 1.2 });
+    for (const c of cards) eventos.push({ src: pub(`${SD}/${cfg.sfxItem || "triangulo"}.wav`), at: (c.start - audioDesdeF) / 30, dur: 3.0, vol: cfg.volTriangulo ?? 0.16, fi: 0, fo: 1.2 });
     for (const c of cards) cambios.push(c.start);
   }
   for (const c of comps) cambios.push(c.start);
@@ -197,16 +200,35 @@ export function aplicarFx({ slug, style, cues, ventanas, plan, words, audioDesde
   for (let i = 1; i < segs.length; i++) if (segs[i].b - segs[i].a < F(4)) { segs[i - 1].b = segs[i].b; segs.splice(i, 1); i--; }
   for (let i = 1; i < segs.length; i++) if (segs[i].k === segs[i - 1].k) { segs[i - 1].b = segs[i].b; segs.splice(i, 1); i--; }
   for (const s of segs) {
-    eventos.push({ src: pub(s.k === "out" ? "sfx_ole/amb_viento.wav" : "sfx_ole/amb_fuego.wav"), at: (s.a - audioDesdeF) / 30, dur: (s.b - s.a) / 30, vol: s.k === "out" ? (cfg.volViento ?? 0.55) : (cfg.volFuego ?? 0.45), fi: 1.5, fo: 1.5, loop: true });
+    eventos.push({ src: pub(`${SD}/${s.k === "out" ? AMB_OUT : AMB_IN}.wav`), at: (s.a - audioDesdeF) / 30, dur: (s.b - s.a) / 30, vol: s.k === "out" ? (cfg.volViento ?? 0.55) : (cfg.volFuego ?? 0.45), fi: 1.5, fo: 1.5, loop: true });
   }
   let nSiz = 0;
   for (const c of base) {
     const I = info.get(c);
     if (!I.esFoto || !I.caliente || I.esV || c.dur < F(2) || !/fry|fried|frying|sizzl|lard|bacon fat|pork/i.test(planBy.get(I.nombre)?.prompt || "")) continue;
-    eventos.push({ src: pub("sfx_ole/sizzle.wav"), at: (c.start - audioDesdeF) / 30, dur: c.dur / 30, vol: cfg.volSizzle ?? 0.35, fi: 0.25, fo: 0.35 });
+    eventos.push({ src: pub(`${SD}/sizzle.wav`), at: (c.start - audioDesdeF) / 30, dur: c.dur / 30, vol: cfg.volSizzle ?? 0.35, fi: 0.25, fo: 0.35 });
     nSiz++;
   }
   medido.camas = segs.length; medido.chisporroteos = nSiz;
+  // ── 6.bis) SONIDO DE CADA COMPONENTE (style.fx.compSfx) ─────────────────────────────────────
+  //   { Kind: [[sfx, at, vol, dur?]] } — `at` en segundos desde el arranque del componente, o
+  //   "end-1.2" (relativo a su final). La entrega sale del máster de MEZCLA, así que el golpe del
+  //   componente (sello, campanita, ticket) tiene que vivir acá y no en un <Audio> de Remotion.
+  let nCompSfx = 0;
+  for (const c of comps) {
+    const lista = (cfg.compSfx || {})[c.comp];
+    if (!lista) continue;
+    for (const [sfx, at, vol, dur] of lista) {
+      const rel = typeof at === "string" && at.startsWith("end-") ? c.dur / 30 - Number(at.slice(4)) : Number(at);
+      if (!(rel >= 0)) continue;
+      const src = pub(`${SD}/${sfx}.wav`);
+      if (!fs.existsSync(src)) { log?.(`  ⚠ compSfx: falta ${SD}/${sfx}.wav`); continue; }
+      eventos.push({ src, at: (c.start - audioDesdeF) / 30 + rel, dur: dur ?? Math.min(4, c.dur / 30), vol: vol ?? 0.3, fi: 0.01, fo: 0.25 });
+      nCompSfx++;
+    }
+  }
+  medido.sonidosComponentes = nCompSfx;
+
   for (const e of eventos) assets.add(path.relative(pub(""), e.src).split(path.sep).join("/"));
 
   // ── 7) compuertas de oficio ─────────────────────────────────────────────────────────────────

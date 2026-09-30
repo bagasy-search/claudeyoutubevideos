@@ -6,6 +6,10 @@ import path from "node:path";
 import { run } from "../lib/exec.mjs";
 import { assertMeasured } from "../lib/gate.mjs";
 import { withLease, CAPACIDAD } from "../lib/lease.mjs";
+// 30-sep-2026: el ritmo de agnes lo pone factory/lib/agnes_pool.mjs (1 video/min POR CLAVE, repartido entre
+// TODOS los procesos de la PC). Pedir el cupo ENTERO dejaba a un video esperando horas a que otro terminara,
+// con claves ociosas. Ahora cada video pide 1 unidad; FACTORY_AGNES_UNITS lo vuelve a subir si hiciera falta.
+const agnesUnits = () => Math.min(CAPACIDAD.agnes(), Number(process.env.FACTORY_AGNES_UNITS || 1));
 import { NeedsError } from "../lib/phase.mjs";
 import { ROOT } from "../lib/env.mjs";
 
@@ -68,7 +72,7 @@ export default {
     //    Los de flash corren ANTES (en paralelo sería competir por la misma cuenta) y quedan en brollDir:
     //    la corrida v2.0 los saltea porque ya existen. La duración = la del momento (4-12 s).
     const flashSel = spec.overrides?.agnesFlash || {};
-    const flashNames = Object.keys(flashSel).filter((n) => i2v.some((x) => x.nombre === n));
+    const flashNames = Object.keys(flashSel).filter((n) => !removidos.has(n) && i2v.some((x) => x.nombre === n));
     if (!style.agnesModelo && flashNames.length) {
       const durDe = (n) => { try { const m = JSON.parse(fs.readFileSync(P.mom, "utf8")).find((mm) => mm.name === n.replace(/x$/, "")); return m ? (m.end - m.start || m.dur) : 6; } catch { return 6; } };
       const fl = i2v.filter((x) => flashNames.includes(x.nombre) && !fs.existsSync(path.join(P.brollDir, `${x.nombre}.mp4`)))
@@ -77,13 +81,13 @@ export default {
         const listaF = path.join(P.listas, "i2v_flash.json");
         fs.writeFileSync(listaF, JSON.stringify(fl, null, 1));
         log(`flash con sonido: ${fl.length} planos (${fl.map((x) => `${x.nombre}:${x.secs}s`).join(" ")})`);
-        const rF = await withLease("agnes", slug, CAPACIDAD.agnes(), () => run("node", ["scripts/agnes_i2v.mjs", listaF, slug, P.imgDir, P.brollDir],
+        const rF = await withLease("agnes", slug, agnesUnits(), () => run("node", ["scripts/agnes_i2v.mjs", listaF, slug, P.imgDir, P.brollDir],
           { cwd: ROOT, timeoutMs: 8 * 3600_000, allowFail: true, env: { AG_MODEL: "agnes-video-2.5-flash" }, onLine: (l) => /✗|⛔|error|429|listo|===|voz/i.test(l) && log(l.slice(0, 160)) }), { log });
         if (rF.code !== 0) log(`agnes flash salió con ${rF.code}: los que falten van por v2.0 (mudos)`);
       }
     }
     if (falta().length) {
-      const units = CAPACIDAD.agnes();
+      const units = agnesUnits();
       // `agnes_i2v.mjs` sale con 1 si falló ALGÚN clip, aunque hayan salido 305 de 307. Con el exit
       // mandando, la fase moría antes de llegar al QC y sin medir nada — cuando la que decide es la
       // compuerta `clipsHechosPct` (min 90), que cuenta archivos REALES en disco. El exit code es un

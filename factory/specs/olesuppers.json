@@ -1,0 +1,82 @@
+{
+  "slug": "olesuppers",
+  "canal": "ole-camp",
+  "modo": "avatar",
+  "idioma": "en",
+  "guion": "D:/rtmp/factory/_guiones/GUION_olesuppers.txt",
+  "voz": {
+    "id": "ole_camp",
+    "blockChars": 1200
+  },
+  "cta": {
+    "head": "Subscribe for the suppers",
+    "ancla": "If this brought back",
+    "sub": "New stories every week"
+  },
+  "avatar": {
+    "face": "public/ref/ole_full.png",
+    "ref": "public/ref/ole_face128.png"
+  },
+  "bagasy": {
+    "channelKey": "draft:olescamp",
+    "cardId": "ole2026092504"
+  },
+  "titulo": "30 Logging Camp Suppers Lumberjacks Ate After 14 Hours in the Woods",
+  "secciones": [
+    [
+      "GANCHO",
+      "At five thirty in the evening"
+    ],
+    [
+      "INTRO",
+      "My name is Ole"
+    ],
+    [
+      "MESA",
+      "Now before we start"
+    ],
+    [
+      "N01_05",
+      "Number one."
+    ],
+    [
+      "N06_10",
+      "Number six."
+    ],
+    [
+      "N11_15",
+      "Number eleven."
+    ],
+    [
+      "N16_20",
+      "Number sixteen."
+    ],
+    [
+      "N21_25",
+      "Number twenty-one."
+    ],
+    [
+      "N26_30",
+      "Number twenty-six."
+    ],
+    [
+      "CIERRE",
+      "My last winter in the woods"
+    ]
+  ],
+  "overrides": {
+    "agnesFlash": {
+      "p001": "boots crunching on snow, wind in the pine trees, a lantern handle creaking",
+      "p004": "loud clanging of a steel dinner triangle, wind",
+      "p013": "hot coffee pouring into an enamel mug, fire crackling in a wood stove",
+      "p039": "salt pork sizzling and popping in a cast-iron skillet",
+      "p048": "a stew simmering and bubbling slowly, wood fire crackling",
+      "p072": "fish frying and crackling in hot lard",
+      "p084": "beef searing and sizzling loudly in a hot iron pot",
+      "p095": "hash sizzling in bacon grease in a skillet",
+      "p107": "meatballs sizzling in foaming butter",
+      "p180": "pork chops sizzling in three big skillets",
+      "p239": "sleigh bells jingling, horses snorting, snow crunching"
+    }
+  }
+}

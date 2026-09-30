@@ -1,6 +1,7 @@
 // 60_build — UN build genérico por estilo. Emite src/<slug>/{Piezas,cues_<slug>.gen,Main_<slug>}.tsx,
 // src/index_<slug>.tsx y _<slug>_assets.txt. Con FACTORY_DRY=1 emite en <work>/dry_src (no toca src/).
 import fs from "node:fs";
+import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { run, durSec, frameCount } from "../lib/exec.mjs";
 import { assertMeasured, assertNoProblems } from "../lib/gate.mjs";
@@ -482,6 +483,18 @@ export default {
     // que ninguna entraba en la lista y el farm las servía 404 → EncodingError y chunk muerto.
     // planPremium las junta recorriendo el contrato (kit.json declara cuáles son de tipo `asset`).
     for (const a of r.compAssets || []) assets.add(a);
+    // ⛔ Y su `_blur.jpg`: los componentes (StatBig bg:image, el kit del diner…) piden el hermano
+    // blureado en RUNTIME. Si existe en disco viaja; si no, se hornea acá (mismo filtro que preblur.mjs).
+    // Sin esto murieron 4 chunks en louhash y 1 en cploerror con 404 del _blur (27-sep-2026).
+    for (const a of [...(r.compAssets || [])]) {
+      if (!/\.(jpe?g|png)$/i.test(a) || /_blur\.jpg$/i.test(a)) continue;
+      const b = a.replace(/\.(jpe?g|png)$/i, "_blur.jpg");
+      const abs = path.join(ROOT, "public", b);
+      if (!fs.existsSync(abs) && !dry) {
+        try { execFileSync("ffmpeg", ["-v", "error", "-y", "-i", path.join(ROOT, "public", a), "-vf", "scale=64:-1:flags=area,scale=1600:-1:flags=bilinear", "-q:v", "3", abs]); } catch { /* lo caza assetsEnDisco */ }
+      }
+      assets.add(b);
+    }
     for (const w of ventanas) { assets.add(w.src); if (w.fg) assets.add(w.fg); }
     for (const a of hookAssets) assets.add(a);
     for (const a of fxAssets) assets.add(a);

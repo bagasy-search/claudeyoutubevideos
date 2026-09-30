@@ -1,0 +1,41 @@
+{
+  "slug": "louhash",
+  "canal": "lou-diner",
+  "modo": "avatar",
+  "idioma": "en",
+  "guion": "D:/rtmp/factory/_guiones/GUION_louhash.txt",
+  "voz": {
+    "id": "lou_diner"
+  },
+  "cta": {
+    "head": "Subscribe for more diner secrets",
+    "ancla": "If you want more of these"
+  },
+  "avatar": {
+    "face": "public/ref/lou_full.png",
+    "ref": "public/ref/lou_face128.png",
+    "lipLeadSec": 0.13
+  },
+  "bagasy": {
+    "channelKey": "draft:lousdiner",
+    "cardId": "lou2026092501"
+  },
+  "titulo": "NEVER Make Hash Browns at Home Again — Try This Old Diner Cook's Trick",
+  "overrides": {
+    "agnesFlash": {
+      "p001": "spatula scraping under crispy potato, sizzling fat crackle",
+      "p022": "hot coffee pouring into a ceramic mug, quiet diner morning",
+      "p033": "loud hiss and spitting fat on a hot steel griddle",
+      "p055": "frying pan sizzle and steam hiss in a kitchen",
+      "p091": "rolling boil, water bubbling in a big pot",
+      "p136": "butter sizzling on hot steel",
+      "p139": "bacon sizzling loudly on a griddle",
+      "p159": "water drop hissing and skittering on hot iron",
+      "p183": "spatula scrape and sizzle as the potato is flipped",
+      "p187": "crisp crunch as a fork cracks a fried crust",
+      "p192": "wet sputtering and steam hissing in a pan",
+      "p196": "clean dry sizzle of potatoes in hot fat",
+      "p263": "onions sizzling on a hot griddle"
+    }
+  }
+}

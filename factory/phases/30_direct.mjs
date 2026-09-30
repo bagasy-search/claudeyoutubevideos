@@ -137,6 +137,7 @@ export default {
     for (const e of r.errores.slice(0, 20)) log("  ⛔ " + e);
     assertMeasured("direccionErrores", r.errores.length, { max: 0, allowZero: true, log });
     assertMeasured("momentosCubiertos", r.medido.cubiertos, { min: mom.length, total: mom.length, log });
+    if (r.sinX.length) log(`   sin segundo plano: ${r.sinX.join(", ")}`);
     assertMeasured("frasesLargasSinSegundoPlano", r.sinX.length, { max: 0, allowZero: true, log });
     if (spec.modo === "avatar") {
       const p0 = r.plan.find((p) => p.name === "p000");
