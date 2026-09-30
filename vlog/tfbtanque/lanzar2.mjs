@@ -1,7 +1,7 @@
 // lanzador genérico: node lanzar2.mjs <tag> "S7:S7_03" "S6:S6_01" …  (sin ids = escena entera)
 import { spawn } from "node:child_process"; import fs from "node:fs";
 const R = "D:/Proyectos/video2-wt/tfbtanque/"; process.chdir(R);
-const env = { ...process.env, VLOG_MAX: "60", VLOG_RATE_WAIT: "60" };
+const env = { ...process.env, VLOG_MAX: "60", VLOG_RATE_WAIT: process.env.VLOG_RATE_WAIT || "120" };
 const [tag, ...specs] = process.argv.slice(2); const log = fs.openSync(R + `out/logs/${tag}.log`, "a"); let vivos = 0;
 specs.forEach((sp, k) => setTimeout(() => {
   const [s, ids] = sp.split(":"); const idl = ids ? ids.split(",") : [];

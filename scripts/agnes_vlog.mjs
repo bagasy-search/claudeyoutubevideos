@@ -369,7 +369,7 @@ async function gen(id, body, meta = {}) {
   const slot = await slotGet(id);
   try {
     let vid;
-    for (let t = 0; t < 400 && !vid; t++) {
+    for (let t = 0; t < +(process.env.VLOG_TRIES || 5000) && !vid; t++) {
       slotTouch(slot);
       const kk = key();
       const j = await fetch(B + "/videos", { method: "POST", signal: AbortSignal.timeout(120000), headers: { Authorization: "Bearer " + kk, "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) }).then(r => r.json()).catch(e => ({ error: "rate/red: " + e.message }));   // corte de red = reintento, no caída
