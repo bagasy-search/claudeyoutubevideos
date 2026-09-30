@@ -357,11 +357,13 @@ async function poll(id, vid, slot) {
   const t0 = Date.now();
   while (Date.now() - t0 < 60 * 60e3) {
     await sleep(20000); if (slot) slotTouch(slot);
-    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + (await kFor(vid)) } })).json().catch(() => ({}));
-    if (g.status === "completed" && g.url) { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); pendSet(id, null); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
+    const g = await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { signal: AbortSignal.timeout(60000), headers: { Authorization: "Bearer " + (await kFor(vid)) } }).then(r => r.json()).catch(() => ({}));
+    if (g.status === "completed" && g.url) { let buf = null; for (let t = 0; t < 5 && !buf; t++) buf = await fetch(g.url, { signal: AbortSignal.timeout(300000) }).then(r => r.arrayBuffer()).catch(() => null);
+      if (!buf) { log("no pude bajar", id, "(reintento en el próximo sondeo)"); continue; }
+      fs.writeFileSync(CL + id + ".mp4", Buffer.from(buf)); pendSet(id, null); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
     if (/fail|error|cancel/i.test(g.status || "")) { pendSet(id, null); return log("FAIL", id, JSON.stringify(g).slice(0, 200)); }
   }
-  log("TIMEOUT", id);
+  pendSet(id, null); log("TIMEOUT", id);   // un pendiente vencido no puede bloquear la próxima corrida
 }
 async function gen(id, body, meta = {}) {
   const slot = await slotGet(id);
@@ -370,7 +372,7 @@ async function gen(id, body, meta = {}) {
     for (let t = 0; t < 400 && !vid; t++) {
       slotTouch(slot);
       const kk = key();
-      const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + kk, "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
+      const j = await fetch(B + "/videos", { method: "POST", signal: AbortSignal.timeout(120000), headers: { Authorization: "Bearer " + kk, "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) }).then(r => r.json()).catch(e => ({ error: "rate/red: " + e.message }));   // corte de red = reintento, no caída
       vid = j.video_id || j.id;
       if (vid) { KMAP.set(vid, kk); meta.k = kk; }
       if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; }
