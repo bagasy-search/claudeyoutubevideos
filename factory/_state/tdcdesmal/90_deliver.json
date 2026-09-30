@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-21T04:30:13.311Z",
+ "status": "done",
+ "inputsHash": "77ce760fc8b61106",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/tdcdesmal/tdcdesmal.mp4?v=2",
+  "version": 2,
+  "bytes": 473815961,
+  "durSec": 1043.7,
+  "saltosPts": 0,
+  "tramosNegros": 0,
+  "hoja": "D:\\rtmp\\factory\\tdcdesmal\\audit\\hoja.jpg",
+  "bagasy": "entregado (--no-youtube)"
+ },
+ "ms": 410194
+}

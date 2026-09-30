@@ -1,0 +1,42 @@
+{
+  "slug": "cmeodian",
+  "canal": "claudio-mendoza",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "GUION_cmeodian.txt",
+  "titulo": "Las Marcas de Generadores Solares Me Odian por Mostrarte Esto",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200
+  },
+  "avatar": {
+    "face": "public/ref/claudio_mendoza_full.png",
+    "ref": "public/ref/claudio_mendoza_face128.png"
+  },
+  "ctas": [
+    {
+      "ancla": "Esto que acabo de medir",
+      "head": "Las tablas están en el manual",
+      "sub": "Escanea el código",
+      "qr": "qr/cmeodian.png",
+      "durS": 10
+    },
+    {
+      "ancla": "Y si estás por gastar dinero",
+      "head": "Mídelo antes de pagarlo",
+      "sub": "Escanea el código",
+      "qr": "qr/cmeodian.png",
+      "durS": 10
+    }
+  ],
+  "cta": {
+    "head": "Suscríbete al canal",
+    "ancla": "Si esto te sirvió",
+    "sub": "Los 3 manuales, en el enlace de abajo",
+    "qr": "qr/cmeodian.png"
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
+    "cardId": "cmep202609086"
+  }
+}

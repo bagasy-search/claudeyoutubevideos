@@ -32,8 +32,20 @@ export default {
 
     const tree = importTree(P.entry, { root: ROOT });
     rep.check("importsArbol", () => assertNoProblems("importsArbol", tree.faltan, tree.archivos.length, q));
-    const fueraDelSlug = tree.archivos.filter((f) => !(f === `src/index_${slug}.tsx` || f.startsWith(`src/${slug}/`)));
-    rep.check("importsAutocontenidos", () => assertNoProblems("importsAutocontenidos", fueraDelSlug.map((f) => `importa fuera del slug (el commit de render no lo llevaría): ${f}`), tree.archivos.length, q));
+    // ⛔ Esta compuerta nació para vlog-crudo, donde el árbol vive entero en src/<slug>/. El montaje PREMIUM
+    // importa A PROPÓSITO el kit REAL (src/VideoEdit/scenes/*, components/*, lib/*): en tfbsilicona son 27 de
+    // 32 archivos, y marcarlos era un FALSO POSITIVO. Esos archivos SÍ viajan: 80_render hace el mismo
+    // importTree y commitea `tree.archivos` ENTERO (commitRender files), prepara el worktree con esa misma
+    // lista y se la pasa al farm en ARBOL_SRC. Lo que de verdad protege del 404 es `importsArbol` (arriba):
+    // un import que no resuelve en disco. Acá sólo se rechaza lo que quede FUERA de src/, que es lo único
+    // que el commit de render no sabe llevar. vlog-crudo se sigue midiendo igual de estricto que antes.
+    const premium = (style.montaje || "vlog-crudo") !== "vlog-crudo";
+    const fueraDelSlug = tree.archivos.filter((f) => {
+      if (f === `src/index_${slug}.tsx` || f.startsWith(`src/${slug}/`)) return false;
+      return premium ? !f.startsWith("src/") : true;
+    });
+    rep.check("importsAutocontenidos", () => assertNoProblems("importsAutocontenidos", fueraDelSlug.map((f) => `importa fuera de src/ (el commit de render no lo llevaría): ${f}`), tree.archivos.length, q));
+    if (premium) log(`  importsDelKit............... ${tree.archivos.length - fueraDelSlug.length - 1} archivos del kit real (viajan por ARBOL_SRC)`);
 
     // sello agnes: el farm lo exige igual; acá se ve antes. Primero se re-mide la repetición con los cues del build.
     try {

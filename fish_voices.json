@@ -262,5 +262,72 @@
     "wav": "fish_refs/puntofascia_avatar.wav",
     "text": "Todo para la cara, y nadie, nadie le había revisado lo único que de verdad importaba. Nadie le había tocado la mandíbula. Le dije, doña Remedios, abra y cierre la boca para mí, apriete los dientes, fuerte.",
     "language": "es"
+  },
+  "claudio_mendoza_s4": {
+    "language": "es",
+    "refs": [
+      {
+        "wav": "fish_refs/claudio_s4_a.wav",
+        "text": "Mira, hay algo que casi nadie revisa antes de empezar a cambiar piezas y lo peor es que muchas veces el problema está ahí, frente a tus ojos. Me pasó durante años, escuchaba un ruido extraño, asumía que era algo grave y terminaba desmontando medio coche."
+      },
+      {
+        "wav": "fish_refs/claudio_s4_b.wav",
+        "text": "¿Ves esta conexión de aquí? Si tiene apenas un poco de juego, puede provocar vibraciones, fallos e incluso hacerte pensar que el motor está por romperse. Y no, no necesitas una herramienta especial. Sólo paciencia y mirar bien. Parece una tontería, pero te sorprendería saber cuánta gente gasta cientos de dólares por no revisar esto primero."
+      }
+    ]
+  },
+  "ray_rkknock": {
+    "language": "en",
+    "backend": "s2.1-pro-free",
+    "nota": "Ray Kessler (EN/US). Clonada del wav REAL del creador public/rkfob.wav, 3 ventanas en FRONTERA DE ORACION con el texto EXACTO del guion viejo canales/rkfob_GUION.txt (NUNCA del ASR). Un bloque POR PARRAFO: con 1100 y 480 chars Fish saltea texto.",
+    "refs": [
+      {
+        "wav": "_v3/rkknock_refs/ref1.wav",
+        "text": "Don't let go of it. And while you're holding it, press the unlock button twice. Two taps. You'll see the little light on the fob blink at you — on most of them it blinks a couple of times and then holds for a second. That's it. That's the whole thing. Your key just went to sleep."
+      },
+      {
+        "wav": "_v3/rkknock_refs/ref2.wav",
+        "text": "You'll hear that a lot — that a thief scans your fob, downloads the code, burns it onto a blank, and drives off with a duplicate. That's not what's happening on your driveway. Your key doesn't send the same code twice. It rolls. Every press is a new number, and the old number is dead the second it's used, and your car keeps track."
+      },
+      {
+        "wav": "_v3/rkknock_refs/ref3.wav",
+        "text": "It was disarmed by your own key, by the relay, at the moment the door opened. The alarm did exactly what it was supposed to do — it recognized the owner. That's not an alarm failure. That's an alarm doing its job for the wrong person. The third one: I park in the garage. Good. That's real. That's a genuine layer and I'm glad you have it."
+      }
+    ]
+  },
+  "claudio_definitiva": {
+    "language": "es",
+    "refs": [
+      {
+        "wav": "fish_refs/taller_claudio_a.wav",
+        "text": "Si te falta cualquiera de las dos, tenés humo negro, hollín y olor a taller quemado. ¿Y qué tiene que ver el filtro con todo esto? Acá viene lo lindo. Un filtro de aceite, por dentro es justo la pieza que hace falta para darle aire a esa llama. Mira, por fuera es una lata de acero gruesa, que aguanta presión y aguanta calor. Abajo tiene una placa de acero con un agujero grande en el medio, con rosca y una ronda de agujeritos alrededor. Y adentro, en el centro, tiene un tubo de chapa lleno de agujeros, que es el que sostiene el papel del filtro. Ese tubo agujereado es el corazón del calentador."
+      },
+      {
+        "wav": "fish_refs/taller_claudio_b.wav",
+        "text": "El aceite usado, también gratis, casi siempre, mismo lubricentro, mismo motivo, lleva tu propio bidón, el bidón de pintura de 20 litros, gratis, cualquier obra o pinturería tiene vacíos, y la lata para el plato de abajo, gratis. Lo que si vas a comprar es poco, pero lo tienes que comprar bien, un metro y medio de caño de cobre finito de los de refrigeración, una llave de paso chiquita de las de aguja para regular el goteo, y un par de abrazaderas, eso es todo lo que sale de la ferretería."
+      }
+    ],
+    "nota": "VOZ REAL de @TallerClaudioMendoza, clonada el 20-sep-2026 del video ATIU8OUwdwg (130,9-170,4 s y 205,1-237,7 s, cortes en silencio). 15,2 cps, coincide con style.fish.cps=15. NO confundir con claudio_mendoza_s4 (row 207, otra persona, 11 cps)."
+  },
+  "ole_camp": {
+    "wav": "fish_refs/ole_camp.wav",
+    "text": "I was sixteen years old the first winter I peeled potatoes in that shack. I'm seventy-eight now. And I'm going to tell you the ten meals that kept every one of those men on his feet until the spring breakup, what each one cost, and the one trick behind every single one of them that nobody cooks with anymore.\n\nHere's how Emil did it. Saturday afternoon we'd dig a pit behind the cook shack, about three feet deep, lined with rocks. We'd build a hardwood fire in it, birch and maple, and let it burn down for three, four hours until it was nothing but a bed of glowing coals.",
+    "language": "en",
+    "backend": "s2.1-pro-free",
+    "nota": "Ole (Ole's Camp Kitchen, EN/US Upper Midwest, 78). Clon zero-shot de la voz publica de Fish 'Old man' 3d40669a01e045329ab4d6d7e25ce10e (deep raspy older, storytelling) generada con s2.1-pro-free sobre el guion de olewinter; ~13,3 c/s. 26-sep-2026."
+  },
+  "lou_diner": {
+    "wav": "fish_refs/lou_diner.wav",
+    "text": "Fifty years I stood behind that flat-top. Six in the morning, the truckers already lined up at the counter, and every single one of them ordered hash browns. Now here's the thing nobody at home ever figured out. It's not the potato and it's not the grease. It's the water. You get the water out, and I mean all of it, and that potato turns gold and crispy like a cracker. You leave it in, and you get a gray, soggy mess stuck to your pan. Let me show you how we did it.",
+    "language": "en",
+    "backend": "s2.1-pro-free",
+    "nota": "Lou (Lou's Diner Secrets, EN/US, 74, retired roadside-diner cook). Clon zero-shot de la voz PUBLICA de Fish 'Grandpa' 697a707402bf47e9940b95a5f85fbe94 (ganó juez ciego gpt-audio-1.5 en 2 órdenes: ~70, warm raspy, American). ASR whisper-1 = texto exacto. ~12,6 c/s. 26-sep-2026."
+  },
+  "harlan": {
+    "wav": "fish_refs/harlan.wav",
+    "text": "Forty years I climbed poles for the power company. Ice storms, tornadoes, the big blackout of oh-three. And I'm going to tell you something the utility will never put on a flyer. When the grid goes down, the first hour decides everything. Not the second day. The first hour. So listen close, because number three is the one that kills people every single winter.",
+    "language": "en",
+    "backend": "s2.1-pro-free",
+    "nota": "Harlan the Lineman (EN/US Ohio, 68, retired lineman). Clon zero-shot de la voz PUBLICA de Fish 'GRANDPA' e223051b34524a48940561e9a18a2203 (warm authoritative raspy); ganó juez ciego gpt-audio en 2 órdenes (9/9) contra 5. 27-sep-2026."
   }
 }

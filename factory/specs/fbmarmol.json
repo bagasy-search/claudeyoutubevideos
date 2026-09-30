@@ -1,0 +1,68 @@
+{
+  "slug": "fbmarmol",
+  "canal": "freebuilder",
+  "modo": "avatar",
+  "idioma": "es",
+  "voz": {
+    "id": "freebuilder",
+    "blockChars": 1200
+  },
+  "avatar": {
+    "face": "public/ref/freebuilder_full.png",
+    "ref": "public/ref/freebuilder_face128.png"
+  },
+  "guion": "GUION_fbmarmol.txt",
+  "titulo": "Mezclá CEMENTO con ACEITE y Mirá Cómo Queda: Parece MÁRMOL de $3",
+  "ctas": [
+    {
+      "ancla": "Y ya que estamos hablando de dinero",
+      "head": "Cuánto rinde cada material",
+      "sub": "Escanea el código",
+      "qr": "qr/fbmarmol.png",
+      "durS": 9
+    },
+    {
+      "ancla": "Y del error se aprende",
+      "head": "Las herramientas que sí hacen falta",
+      "sub": "Escanea el código",
+      "qr": "qr/fbmarmol.png",
+      "durS": 9
+    }
+  ],
+  "cta": {
+    "ancla": "Si esto te sirvió",
+    "head": "Suscríbete al canal",
+    "sub": "La colección, en el enlace de abajo",
+    "qr": "qr/fbmarmol.png"
+  },
+  "secciones": [
+    [
+      "GANCHO",
+      "Esto que estás viendo aquí no es mármol"
+    ],
+    [
+      "MITO",
+      "El truco que circula por todos lados"
+    ],
+    [
+      "FISICA",
+      "El cemento no se seca"
+    ],
+    [
+      "METODO",
+      "Ahora sí, el método completo"
+    ],
+    [
+      "ERROR",
+      "El error es pasarse de aceite"
+    ],
+    [
+      "CIERRE",
+      "Vamos al cierre"
+    ]
+  ],
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UC-Xn4lJ35qOcf2px1BkHvEQ",
+    "cardId": "fbv61789671785526-p13_marmol"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "cmeunabat",
+  "canal": "claudio-mendoza",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_cmeunabat.txt",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200
+  },
+  "cta": {
+    "head": "Suscríbete al canal",
+    "ancla": "Si esto te sirvi",
+    "sub": "Los 3 manuales, en el enlace de abajo",
+    "qr": "qr/cmeunabat.png"
+  },
+  "avatar": {
+    "face": "public/ref/claudio_mendoza_full.png",
+    "ref": "public/ref/claudio_mendoza_face128.png"
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
+    "cardId": "cmep2026092404"
+  },
+  "titulo": "Una Sola Batería Prende Toda la Casa SIN Paneles Solares (lo medí)",
+  "ctas": [
+    {
+      "ancla": "En los tres manuales tengo la cuenta",
+      "head": "Qué batería sale más barata por año",
+      "sub": "Escanea el código",
+      "qr": "qr/cmeunabat.png",
+      "durS": 10
+    },
+    {
+      "ancla": "En los manuales tengo la lista de las siete conexiones",
+      "head": "Las 7 conexiones que no se hacen",
+      "sub": "Escanea el código",
+      "qr": "qr/cmeunabat.png",
+      "durS": 10
+    }
+  ],
+  "overrides": {
+    "animadoMaxPct": 90
+  }
+}

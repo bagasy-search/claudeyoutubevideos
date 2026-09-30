@@ -1,0 +1,14 @@
+{
+ "fase": "40_images",
+ "ts": "2026-09-18T04:26:56.696Z",
+ "status": "done",
+ "inputsHash": "d5255c75b4ea4fba",
+ "medido": {
+  "planos": 324,
+  "conCara": 66,
+  "sinCara": 258,
+  "hechas": 324,
+  "usdEstimado": 0.57
+ },
+ "ms": 232
+}

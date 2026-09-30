@@ -1,0 +1,496 @@
+{
+  "nombre": "Harlan the Lineman",
+  "montaje": "premium",
+  "idioma": "en",
+  "fish": {
+    "voz": "harlan",
+    "blockChars": 1100,
+    "cps": 13.5
+  },
+  "frases": {
+    "cps": 13.5,
+    "minChars": 55,
+    "maxSec": 9,
+    "objetivoSec": 5.2
+  },
+  "ventanas": {
+    "padSec": 0.4,
+    "fusionarSec": 0.2
+  },
+  "vlog": {
+    "minPlanoS": 1.2,
+    "partirS": 7,
+    "colaFotoS": 2.5,
+    "maxAvatarTapadoS": 1,
+    "maxPlacaVistaS": 1.5
+  },
+  "avatar": {
+    "lipLeadSec": 0.12
+  },
+  "fondo": "#0A0C0E",
+  "placa": "img/{slug}/{slug}_placa_a.jpg",
+  "apertura": {
+    "miniatura": true,
+    "holdS": 1,
+    "glitchF": 12
+  },
+  "imagen": {
+    "size": "1088x608",
+    "quality": "low",
+    "motorConCara": "gpt",
+    "motorSinCara": "gptsin"
+  },
+  "presentador": "the same man from the reference image, 68 years old, white American retired electric utility lineman, a grey horseshoe mustache, short grey hair, a weathered square face with deep wrinkles and wind-burned cheeks, thick neck and broad shoulders, big rough hands, wearing a worn brown canvas work jacket over a grey hoodie",
+  "presentadorToken": "HARLAN",
+  "formula": "an ordinary frame pulled from a handheld consumer video camera, 28mm-35mm perspective at eye level, casually imperfect framing with something a little too close to the edge, moderate depth of field with the background still readable, slight focus imperfection, faint motion blur only on whatever is moving, mundane light that obeys the geometry of the room: cold grey daylight from the window mixed with weak warm bulbs, a few areas slightly overexposed near the window and darker corners, auto white balance, mild sensor noise and a little video compression, moderate contrast, natural skin texture, ordinary wrinkles in the clothes, nothing posed, staged, polished, commercial or cinematic, no studio lighting, no rim light, no plastic skin, no HDR, no color grading, no text, no letters, no labels, no signs",
+  "formulas": {
+    "noche": "an ordinary frame pulled from a handheld consumer video camera at night during a power outage, 28mm-35mm perspective at eye level, casually imperfect framing, the only light comes from what is really there: a battery lantern or a flashlight beam, falling off fast into dark corners, everything lit still readable, visible sensor noise in the shadows, a little video compression, auto white balance, moderate contrast, nothing posed, staged, polished, commercial or cinematic, no studio lighting, no rim light, no HDR, no color grading, no text, no letters, no labels, no signs",
+    "tormenta": "an ordinary frame pulled from a handheld consumer video camera outdoors in winter weather, 28mm-35mm perspective, casually imperfect framing, flat overcast daylight or the amber flashing work lights of a utility truck at dusk, sleet or snow in the air with faint motion blur, wet reflective surfaces, mild sensor noise, a little video compression, auto white balance, moderate contrast, nothing posed, staged, polished, commercial or cinematic, no studio lighting, no rim light, no HDR, no color grading, no text, no letters, no labels, no signs",
+    "macro": "an ordinary close frame from a handheld consumer video camera held a foot away, flat ordinary household light, the object and the hands around it sharp, the surroundings still readable, slight focus imperfection, mild sensor noise, a little video compression, auto white balance, moderate contrast, nothing staged or polished, no studio lighting, no HDR, no color grading, no text, no letters, no labels, no signs"
+  },
+  "vintage": "faded 1990s consumer camcorder frame, slightly soft, washed-out colors, visible tape noise, sharp enough to read every object, no text, no letters, no labels, no signs, no timestamp",
+  "lugares": {
+    "garage": "in his cold two-car garage in rural Ohio, in the background a pegboard with coiled orange and yellow extension cords, an old leather lineman's climbing belt and hooks hanging on the wall, a portable generator on the concrete floor, a kerosene heater, red gas cans and blue water jugs on a wooden shelf, the big garage door half open to a gravel driveway and bare trees",
+    "cocina": "in the kitchen of his farmhouse during a winter power outage, in the background a dark refrigerator, an old electric range, a window over the sink with frost in the corners and snow outside, a battery lantern on the counter, a wall calendar and a coffee maker that is off",
+    "mesa": "at the kitchen table of his farmhouse during a power outage, in the background a window with grey winter light, a battery lantern, a hand-crank radio, a thermos, a notepad and pencil, wool blankets over the chairs and a doorway into a dark living room",
+    "sotano": "in the unfinished basement of an Ohio house, in the background the grey metal breaker panel on a painted cinderblock wall, the furnace, a water heater, a chest freezer, a sump pump pit, a workbench with a flashlight and shelves of storage bins",
+    "living": "in the living room of an ordinary Ohio house during a winter blackout, in the background a couch covered with blankets, a small camping tent set up on the carpet, closed curtains with a blanket pinned over a window, a battery lantern on the coffee table and a dark television",
+    "jardin": "in the snowy backyard of an ordinary two-story house in Ohio, in the background the back of the house with windows and a dryer vent, a wooden fence, bare maple trees, a portable generator under a small generator tent on the snow and orange cords running across the snow",
+    "calle": "on a residential street in a small Ohio town after an ice storm, in the background houses with dark windows, wooden utility poles, sagging ice-covered power lines, broken tree limbs on the snow, parked pickup trucks and a stop sign",
+    "camion": "next to a utility bucket truck on a rural road at dusk in winter, in the background the extended boom and bucket at the top of a wooden pole, amber flashing lights on the truck, orange traffic cones, coils of wire and linemen in hard hats and hi-vis jackets",
+    "poste": "at the top of a wooden utility pole during an ice storm, in the background a pole-mounted transformer, crossarms with glass and porcelain insulators, ice-coated wires, bare treetops and the roofs of houses far below",
+    "centro": "inside a small town community center set up as a warming center, in the background folding cots with blankets, long tables with coffee urns, extension cords to phone chargers, older people in coats talking and a basketball hoop folded up against the wall",
+    "carro": "inside a pickup truck on a snowy road at night, in the background the dashboard glow, the wipers pushing sleet across the windshield and headlights on a road with a downed wire across it",
+    "linea1994": "on a rural Ohio road during the ice storm of 1994, in the background an old white 1990s utility bucket truck, ice-coated wooden poles and wires, linemen in old-style hard hats and canvas coats, snow-covered fields and a farmhouse",
+    "cocina_sub": "in the kitchen of an ordinary suburban Ohio house during a power outage, in the background oak cabinets, a white refrigerator covered in school photos and magnets, a microwave over the stove with a dark clock, a window over the sink with a snowy backyard and a dish rack",
+    "pasillo": "in the upstairs hallway of an ordinary Ohio house, in the background beige carpet, three closed bedroom doors, family photos in frames on the wall, a linen closet and the top of the staircase with a wooden railing",
+    "dormitorio": "in a small bedroom of an ordinary Ohio house in winter, in the background a bed with a quilt, a nightstand with a lamp, a dresser with a mirror, a window with frost and a closet door",
+    "porche": "on the back porch of a farmhouse in winter, in the background a wooden railing with snow on it, a screen door, a stack of firewood, a snow shovel and the white backyard beyond",
+    "ferreteria": "inside a small-town hardware store, in the background tall metal shelves with boxed hardware, extension cords hanging on pegs, a paint counter and a front window with snow outside",
+    "frente": "in the snowy front yard of an ordinary two-story house in Ohio, in the background the front porch and door, a mailbox at the curb, the street, a wooden utility pole and the neighbor's house",
+    "patio": "in the snowy side yard of an Ohio farmhouse next to an old red barn, in the background the barn wall with a sliding door, a split-rail fence, a woodpile under a tarp, a rusty wheelbarrow and bare apple trees",
+    "campo": "at the edge of open Ohio farm country in winter, in the background flat snowy fields, a line of bare trees along a creek, a far-off barn and silo and a row of wooden utility poles",
+    "escalera": "on the wooden basement stairs of an old Ohio farmhouse, in the background painted plank steps with worn centers, a wooden handrail bolted to a cinderblock wall, a bare bulb socket on the ceiling, coats and a broom hanging on nails at the top by the kitchen door",
+    "bano": "in the small upstairs bathroom of an ordinary Ohio house during a winter outage, in the background a white enamel bathtub with a shower curtain pushed aside, a toilet, a pedestal sink with a toothbrush cup, blue floor tile and a small frosted window",
+    "super": "inside a small-town Ohio grocery store before a winter storm, in the background long aisles with half-empty shelves, gallon water jugs stacked on pallets, canned soup on metal shelves, shopping carts and a front window with snow outside"
+  },
+  "movimiento": "camara",
+  "avatarPrompt": "An old man speaks seriously and naturally to the camera in his garage, explaining something important, natural head movement, expressive face, realistic lighting",
+  "dialecto": "AMERICAN ENGLISH, plain spoken, a retired Ohio lineman talking to the viewer: short sentences, 'you' addressed to the viewer, calm authority, dry humor. Numbers written as words.",
+  "cta": {
+    "regex": "^If you want more of what forty years",
+    "head": "Subscribe for more from the line"
+  },
+  "avatarMinPct": 10,
+  "rachaMaxLugar": 7,
+  "fx": {
+    "_": "Paquete de efectos (factory/lib/fxpack.mjs). Sonidos: public/sfx_harlan (armado de sfx_ole/sfx_lou CC0 + sintetizados; ver LICENCIAS.txt).",
+    "sfxDir": "sfx_harlan",
+    "ambIn": "amb_casa",
+    "ambOut": "amb_viento",
+    "sfxItem": "clack",
+    "sfxProyector": "paper",
+    "exterior": [
+      "jardin",
+      "calle",
+      "camion",
+      "poste",
+      "linea1994",
+      "carro"
+    ],
+    "railComp": "__ninguno__",
+    "unidades": {
+      "minutes": "minutes",
+      "hours": "hours",
+      "years": "years",
+      "feet": "feet",
+      "volts": "volts",
+      "degrees": "degrees",
+      "dollars": "dollars",
+      "million": "million",
+      "seconds": "seconds",
+      "days": "days",
+      "states": "states"
+    },
+    "entradaMinS": 3.5,
+    "burnMinS": 20,
+    "whooshMinS": 12,
+    "proyectorMinS": 60,
+    "numMinS": 14,
+    "zoomMinVentanaS": 5,
+    "zoomEscala": 1.14,
+    "volFuego": 0.14,
+    "volViento": 0.2,
+    "volSizzle": 0,
+    "volTriangulo": 0.2,
+    "volWhoosh": 0.18,
+    "volProyector": 0.12,
+    "maxHuecoS": 20,
+    "compSfx": {
+      "GridDown": [
+        [
+          "apagon",
+          0.3,
+          0.55,
+          1.1
+        ],
+        [
+          "hum",
+          0,
+          0.18,
+          0.5
+        ],
+        [
+          "boom",
+          0.35,
+          0.25,
+          2.5
+        ]
+      ],
+      "BreakerPanel": [
+        [
+          "clack",
+          1.2,
+          0.55,
+          0.6
+        ],
+        [
+          "clack",
+          1.87,
+          0.55,
+          0.6
+        ]
+      ],
+      "DispatchBoard": [
+        [
+          "beep",
+          0.3,
+          0.18,
+          0.25
+        ],
+        [
+          "beep",
+          1,
+          0.16,
+          0.25
+        ],
+        [
+          "beep",
+          1.7,
+          0.16,
+          0.25
+        ],
+        [
+          "beep",
+          "end-1.67",
+          0.3,
+          0.25
+        ]
+      ],
+      "LoadSurge": [
+        [
+          "hum",
+          0.2,
+          0.3,
+          1
+        ],
+        [
+          "zap",
+          1.07,
+          0.45,
+          1
+        ],
+        [
+          "boom",
+          1.07,
+          0.3,
+          2
+        ]
+      ],
+      "FridgeClock": [
+        [
+          "tick",
+          0.4,
+          0.22,
+          1.6
+        ],
+        [
+          "paper",
+          2,
+          0.4,
+          1.2
+        ]
+      ],
+      "CoinCup": [
+        [
+          "ice",
+          0.3,
+          0.35,
+          0.7
+        ],
+        [
+          "coin",
+          3.15,
+          0.35,
+          1.2
+        ]
+      ],
+      "GenDistance": [
+        [
+          "pop",
+          0.35,
+          0.35,
+          0.12
+        ],
+        [
+          "whoosh_b",
+          1,
+          0.25,
+          1.2
+        ]
+      ],
+      "COAlarm": [
+        [
+          "alarm",
+          1.67,
+          0.28,
+          2.4
+        ]
+      ],
+      "BackfeedFlow": [
+        [
+          "hum",
+          0.4,
+          0.25,
+          3
+        ],
+        [
+          "zap",
+          3.75,
+          0.5,
+          1.2
+        ],
+        [
+          "boom",
+          3.75,
+          0.3,
+          2.5
+        ]
+      ],
+      "StepPotential": [
+        [
+          "zap",
+          0.3,
+          0.25,
+          1
+        ]
+      ],
+      "RuleCard": [
+        [
+          "whoosh_a",
+          0,
+          0.25,
+          0.6
+        ],
+        [
+          "stamp",
+          0.22,
+          0.6,
+          1.1
+        ],
+        [
+          "boom",
+          0.22,
+          0.25,
+          2
+        ]
+      ],
+      "HazardStamp": [
+        [
+          "stamp",
+          0.3,
+          0.6,
+          1.1
+        ]
+      ],
+      "RoomHeat": [
+        [
+          "whoosh_b",
+          0,
+          0.2,
+          1
+        ]
+      ],
+      "RecapClipboard": [
+        [
+          "paper",
+          0.1,
+          0.35,
+          1.4
+        ]
+      ],
+      "AvatarScrimText": [
+        [
+          "whoosh_a",
+          0,
+          0.15,
+          0.6
+        ]
+      ],
+      "KineticQuote": [
+        [
+          "whoosh_b",
+          0,
+          0.18,
+          0.8
+        ]
+      ],
+      "StatBig": [
+        [
+          "tick",
+          0.2,
+          0.2,
+          1.6
+        ]
+      ],
+      "COHouseCutaway": [
+        [
+          "hum",
+          0,
+          0.22,
+          4
+        ],
+        [
+          "amb_viento",
+          0,
+          0.25,
+          5
+        ]
+      ],
+      "StackEffect": [
+        [
+          "amb_viento",
+          0,
+          0.25,
+          4
+        ],
+        [
+          "whoosh_a",
+          0.4,
+          0.35,
+          1
+        ]
+      ],
+      "BloodGrab": [
+        [
+          "hum",
+          0,
+          0.15,
+          3
+        ],
+        [
+          "pop",
+          1.5,
+          0.35,
+          0.4
+        ],
+        [
+          "pop",
+          2.1,
+          0.3,
+          0.4
+        ],
+        [
+          "pop",
+          2.7,
+          0.3,
+          0.4
+        ]
+      ],
+      "GenVsCars": [
+        [
+          "hum",
+          0,
+          0.3,
+          3
+        ],
+        [
+          "whoosh_b",
+          1,
+          0.35,
+          1
+        ]
+      ],
+      "YardPlan": [
+        [
+          "paper",
+          0.2,
+          0.45,
+          1
+        ],
+        [
+          "stamp",
+          3.3,
+          0.5,
+          0.6
+        ]
+      ],
+      "HiddenKillers": [
+        [
+          "whoosh_a",
+          0.2,
+          0.4,
+          0.8
+        ],
+        [
+          "whoosh_b",
+          0.5,
+          0.3,
+          0.8
+        ]
+      ],
+      "AlarmMap": [
+        [
+          "beep",
+          0.8,
+          0.35,
+          0.4
+        ],
+        [
+          "beep",
+          1.4,
+          0.3,
+          0.4
+        ],
+        [
+          "alarm",
+          2.5,
+          0.2,
+          1.2
+        ]
+      ],
+      "SameHeadache": [
+        [
+          "boom",
+          1.6,
+          0.35,
+          1.5
+        ]
+      ],
+      "TwoAMDecision": [
+        [
+          "whoosh_a",
+          0.1,
+          0.4,
+          0.8
+        ],
+        [
+          "clack",
+          2.6,
+          0.45,
+          0.5
+        ]
+      ]
+    }
+  }
+}

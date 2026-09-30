@@ -33,6 +33,10 @@ import { FARM_SLOTS, chunksPorVideo } from "./farm_slots.mjs";
 // arriba de 60 el arranque pesaría más que el render, así que es el techo útil, no sólo el del plan.
 // Si hay VARIOS videos rendeando a la vez, repartí: chunks ≈ 60 / videos_en_curso.
 const [slug, comp, total, chunksArg, pref] = process.argv.slice(2);
+// ⛔⛔ EL SLUG SE COMPARA POR LÍMITE DE PALABRA, NUNCA POR SUBSTRING. Medido en rkspots: el pre-vuelo
+//    escaneaba `src/_fed6/VideoEdit/darkspots_beats.ts` porque "da·rkspots·_beats" CONTIENE "rkspots",
+//    y abortaba el despacho exigiendo 9 imágenes de OTRO video que nunca van a existir.
+const esDelSlug = (f) => new RegExp(`(^|[^A-Za-z0-9])${slug}([^A-Za-z0-9]|$)`).test(String(f).replace(/^.*[\/]/, ''));
 let chunks = chunksArg || "60"; // puede BAJAR por auto-reparto (ver bloque de abajo)
 if (!slug || !comp || !total) {
   console.error("Uso: node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks] [prefijo]");
@@ -235,11 +239,28 @@ if (pref && pref.startsWith("@")) {
   // y el chequeo pasaría de largo justo el error que más caro salió. Se cuentan en src/ y son dos:
   // sfx (292 referencias) y med (21). Las dos rompieron renders. Se exigen enteras, siempre.
   const COMPARTIDAS = (process.env.ASSETS_COMPARTIDOS || "sfx,med").split(",").map((s) => s.trim()).filter(Boolean);
+  // Escanear TODO `src` da un FALSO BLOQUEO a los videos con arbol autocontenido: los archivos del
+  // kit Federer (src/Fed*.tsx) nombran `med/`, que en este repo no existe, asi que un vlog-crudo de 4
+  // archivos que no toca el kit quedaba bloqueado por un asset que no usa. Si el que llama pasa el
+  // arbol de imports del entry (ARBOL_SRC), el grep mira SOLO esos archivos. Sin ARBOL_SRC se mantiene
+  // el barrido completo (falso bloqueo < falso OK).
+  const ARBOL = (process.env.ARBOL_SRC || "").split(",").map((x) => x.trim()).filter(Boolean);
+  const donde = ARBOL.length ? ARBOL.map((f) => `"${f}"`).join(" ") : "src";
+  // ⛔⛔ Esto llevaba `2>/dev/null || true` dentro de un execSync: sintaxis de Unix que cmd.exe NO
+  // entiende, asi que el comando SIEMPRE tiraba excepcion y el catch devolvia `true`. Resultado: el
+  // pre-vuelo bloqueaba SIEMPRE, mirara lo que mirara. cmeodian tuvo que esquivarlo a mano con
+  // ASSETS_COMPARTIDOS=sfx. Ahora sin shell, y `git grep` sin coincidencias sale con 1, que NO es un
+  // error: es la respuesta "no la usa".
   const usa = (dir) => {
+    const pat = "/?(public/)?" + dir + "/[^\"'`]+\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)";
+    const args = ["grep", "-lE", pat, "--", ...(ARBOL.length ? ARBOL : ["src"])];
     try {
-      return execSync(`git grep -lE "/?(public/)?${dir}/[^\\"'\`]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src 2>/dev/null || true`,
-        { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim().length > 0;
-    } catch { return true; } // sin git no adivino: la doy por usada (falso bloqueo < falso OK)
+      return execFileSync("git", args, { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim().length > 0;
+    } catch (e) {
+      if (e.status === 1) return false;   // sin coincidencias: NO la usa
+      console.error(`  (pre-vuelo: no pude mirar ${dir} (estado ${e.status}); la doy por usada)`);
+      return true;                        // cualquier otra cosa: conservador
+    }
   };
   const rotas = COMPARTIDAS.filter((d) => usa(d) && !fs.existsSync(`public/${d}`));
   if (rotas.length) {
@@ -269,7 +290,7 @@ if (pref && pref.startsWith("@")) {
       // Resultado: "no pude listar" en TODOS los videos y med/ entero (882 MB) en CADA tarball,
       // en vez de los 21 archivos que src referencia de verdad. Sin "|| true" para poder
       // distinguir "sin coincidencias" (git grep sale 1) de "git falló" (sale >1).
-      const salida = execSync(`git grep -hoE "(public/)?${d}/[A-Za-z0-9_./-]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src`,
+      const salida = execSync(`git grep -hoE "(public/)?${d}/[A-Za-z0-9_./-]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- ${donde}`,
         { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"], maxBuffer: 32 * 1024 * 1024 });
       usados = [...new Set((salida.match(re) || []).map((r) => r.replace(/^public\//, "")))]
         .filter((r) => fs.existsSync(`public/${r}`));
@@ -317,7 +338,7 @@ if (pref && pref.startsWith("@")) {
   const datos = fs.existsSync("src/_fed6/VideoEdit") || fs.existsSync("src/VideoEdit")
     ? [...(fs.existsSync("src/_fed6/VideoEdit") ? fs.readdirSync("src/_fed6/VideoEdit").map((f) => `src/_fed6/VideoEdit/${f}`) : []),
        ...(fs.existsSync("src/VideoEdit") ? fs.readdirSync("src/VideoEdit").map((f) => `src/VideoEdit/${f}`) : [])]
-        .filter((f) => f.includes(slug) && /(beats|cues)[^/]*\.(ts|tsx)$/.test(f))
+        .filter((f) => esDelSlug(f) && /(beats|cues)[^/]*\.(ts|tsx)$/.test(f))
     : [];
   if (datos.length) {
     const refs = new Set();
@@ -475,7 +496,7 @@ for (const file of new Set([tar, ...uploadFiles])) fs.rmSync(file, {force:true})
 if (only) {
   const dirs = ["src/_fed6/VideoEdit", "src/VideoEdit"].filter((d) => fs.existsSync(d));
   const datos = dirs.flatMap((d) => fs.readdirSync(d).map((f) => `${d}/${f}`))
-    .filter((f) => f.includes(slug) && /(beats|cues)[^/]*\.(ts|tsx)$/.test(f));
+    .filter((f) => esDelSlug(f) && /(beats|cues)[^/]*\.(ts|tsx)$/.test(f));
   const refs = new Set();
   for (const f of datos) {
     for (const m of fs.readFileSync(f, "utf8").matchAll(/"(?:src|image|poster|clip|video|thumb|bg)":\s*"([^"]+)"/g)) {
@@ -512,7 +533,7 @@ if (only) {
   });
   if (usaBlur && fs.existsSync("public/img")) {
     const fotos = fs.readdirSync("public/img").filter((f) =>
-      /\.(png|jpe?g)$/i.test(f) && !/_blur\.jpg$/i.test(f) && !/^dg_/.test(f) && !/_avatar_ref/.test(f) && f.includes(slug));
+      /\.(png|jpe?g)$/i.test(f) && !/_blur\.jpg$/i.test(f) && !/^dg_/.test(f) && !/_avatar_ref/.test(f) && esDelSlug(f));
     const sin = fotos.filter((f) => !fs.existsSync(`public/img/${f.replace(/\.(png|jpe?g)$/i, "_blur.jpg")}`));
     if (sin.length) {
       console.error(`✗ PRE-VUELO BLUR: ${sin.length} de ${fotos.length} imágenes no tienen su hermano _blur.jpg.`);

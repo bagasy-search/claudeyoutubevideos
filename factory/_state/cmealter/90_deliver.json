@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-17T22:45:02.913Z",
+ "status": "done",
+ "inputsHash": "b93f09e5efccee5f",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/cmealter/cmealter.mp4?v=1",
+  "version": 1,
+  "bytes": 746630237,
+  "durSec": 1517.33,
+  "saltosPts": 0,
+  "tramosNegros": 0,
+  "hoja": "D:\\rtmp\\factory\\cmealter\\audit\\hoja.jpg",
+  "bagasy": "entregado (--no-youtube)"
+ },
+ "ms": 1201419
+}

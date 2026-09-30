@@ -1,0 +1,96 @@
+{
+  "slug": "olebeans",
+  "canal": "ole-camp",
+  "modo": "avatar",
+  "idioma": "en",
+  "guion": "D:/rtmp/factory/_guiones/GUION_olebeans.txt",
+  "voz": {
+    "id": "ole_camp"
+  },
+  "cta": {
+    "head": "Subscribe for more camp recipes",
+    "ancla": "If this brought back"
+  },
+  "avatar": {
+    "face": "public/ref/ole_full.png",
+    "ref": "public/ref/ole_face128.png",
+    "lipLeadSec": 0.13
+  },
+  "bagasy": {
+    "channelKey": "draft:olescamp",
+    "cardId": "ole2026092503"
+  },
+  "titulo": "NEVER Cook Beans Again Without This Old Logging Camp Trick",
+  "secciones": [
+    [
+      "GANCHO",
+      "Every Saturday night"
+    ],
+    [
+      "CONTEXTO",
+      "Now before I show you the trick"
+    ],
+    [
+      "SWEDE",
+      "I learned that the hard way"
+    ],
+    [
+      "S1_HOYO",
+      "The first secret is the hole"
+    ],
+    [
+      "S2_LENA",
+      "The second secret is the wood"
+    ],
+    [
+      "S3_REMOJO",
+      "The third secret is what you do"
+    ],
+    [
+      "S4_OLLA",
+      "The fourth secret is the pot"
+    ],
+    [
+      "S5_ARMADO",
+      "The fifth secret is how you build"
+    ],
+    [
+      "S6_ENTIERRO",
+      "The sixth secret is burying it"
+    ],
+    [
+      "S7_ESPERA",
+      "The seventh secret is the hardest"
+    ],
+    [
+      "DESENTIERRO",
+      "Now, the digging up"
+    ],
+    [
+      "ERRORES",
+      "Now let me tell you the mistakes"
+    ],
+    [
+      "CASA",
+      "Now, I know what you"
+    ],
+    [
+      "CIERRE",
+      "People ask me why the old ways"
+    ]
+  ],
+  "overrides": {
+    "agnesFlash": {
+      "p016x": "coffee pouring into an enamel mug",
+      "p043": "hardwood coals crackling and hissing in a pit",
+      "p070": "a hardwood fire crackling and popping",
+      "p132": "dry beans pattering into a heavy iron pot",
+      "p150": "boiling water splashing into an iron pot",
+      "p161": "steam hissing through wet burlap on hot coals",
+      "p163": "a shovelful of dirt landing with a soft thud",
+      "p197": "an iron lid scraping and steam rushing out",
+      "p230": "beans pouring into a stoneware crock like rain",
+      "p279x": "pork fat sizzling in a cast-iron skillet"
+    }
+  }
+}

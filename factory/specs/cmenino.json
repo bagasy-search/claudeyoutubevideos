@@ -1,0 +1,667 @@
+{
+  "slug": "cmenino",
+  "canal": "claudio-mendoza",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_cmenino.txt",
+  "titulo": "El Niño se Acerca: Prepara esta Luz de Emergencia que se Recarga Sola",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200
+  },
+  "avatar": {
+    "face": "public/ref/claudio_mendoza_full.png",
+    "ref": "public/ref/claudio_mendoza_face128.png"
+  },
+  "ctas": [
+    {
+      "ancla": "Ese número de las tres noches",
+      "head": "La cuenta hecha, en el manual",
+      "sub": "Escanea el código",
+      "qr": "qr/cmenino.png",
+      "durS": 10
+    },
+    {
+      "ancla": "Y si vas a armar la tuya",
+      "head": "Pruébala antes del temporal",
+      "sub": "Escanea el código",
+      "qr": "qr/cmenino.png",
+      "durS": 10
+    }
+  ],
+  "cta": {
+    "head": "Suscríbete al canal",
+    "ancla": "Si esto te sirvió",
+    "sub": "Los 3 manuales, en el enlace de abajo",
+    "qr": "qr/cmenino.png"
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
+    "cardId": "cmep2026092401"
+  },
+  "overrides": {
+    "animadoMaxPct": 90,
+    "agnesModelo": "agnes-video-2.5-flash",
+    "clipAudioVol": 0.28
+  },
+  "fx": {
+    "p000": {
+      "kind": "detras",
+      "at": 4.35,
+      "durS": 2.4,
+      "props": {
+        "texto": "8 horas",
+        "sub": "dice la caja",
+        "y": 0.3
+      }
+    },
+    "p093": {
+      "kind": "detras",
+      "at": 0.15,
+      "durS": 3.3,
+      "props": {
+        "texto": "7 de 10",
+        "sub": "vatios reales a pleno sol",
+        "y": 0.3
+      }
+    },
+    "p131": {
+      "kind": "detras",
+      "at": 0.0,
+      "durS": 4.6,
+      "props": {
+        "texto": "14×",
+        "sub": "más energía guardada",
+        "y": 0.3
+      }
+    },
+    "p157": {
+      "kind": "detras",
+      "at": 0.0,
+      "durS": 4.7,
+      "props": {
+        "texto": "3 noches",
+        "sub": "de lluvia seguidas",
+        "y": 0.3
+      }
+    },
+    "p167": {
+      "kind": "orbita",
+      "at": 0.8,
+      "durS": 4.7,
+      "props": {
+        "items": [
+          "Gastar menos",
+          "Más batería",
+          "Más panel"
+        ],
+        "cx": 0.52,
+        "cy": 0.24,
+        "rx": 0.19,
+        "ry": 0.06,
+        "tilt": -7,
+        "periodoS": 7
+      }
+    },
+    "p279": {
+      "kind": "detras",
+      "at": 0.0,
+      "durS": 4.95,
+      "props": {
+        "lineas": [
+          {
+            "t": "1 batería",
+            "at": 0.85
+          },
+          {
+            "t": "2 panel",
+            "at": 2.35
+          },
+          {
+            "t": "3 foco",
+            "at": 3.95
+          }
+        ],
+        "y": 0.36
+      }
+    }
+  },
+  "hook": {
+    "cortes": [
+      {
+        "desde": 12.1,
+        "hasta": 13.36,
+        "kind": "foto",
+        "props": {
+          "src": "img/cmenino/hk_panel.jpg",
+          "z": 1.0
+        }
+      },
+      {
+        "desde": 15.15,
+        "hasta": 17.0,
+        "kind": "foto",
+        "props": {
+          "src": "img/cmenino/hk_foco.jpg",
+          "z": 1.04,
+          "ox": 50,
+          "oy": 35
+        }
+      },
+      {
+        "desde": 17.0,
+        "hasta": 18.34,
+        "kind": "foto",
+        "props": {
+          "plano": "p004",
+          "z": 1.0
+        }
+      },
+      {
+        "desde": 18.34,
+        "hasta": 19.76,
+        "kind": "foto",
+        "props": {
+          "plano": "p004",
+          "z": 1.16,
+          "ox": 52,
+          "oy": 38
+        }
+      },
+      {
+        "desde": 19.76,
+        "hasta": 24.94,
+        "kind": "dianoche",
+        "props": {
+          "dia": "img/cmenino/hk_p005_dia.jpg",
+          "apagada": "img/cmenino/hk_p005_noche_off.jpg",
+          "noche": "img/cmenino/p005.jpg",
+          "tNoche": 0.3,
+          "tLuz": 1.64,
+          "tDia": 3.4,
+          "bx": 77.5,
+          "by": 27
+        }
+      },
+      {
+        "desde": 40.46,
+        "hasta": 41.82,
+        "kind": "foto",
+        "props": {
+          "src": "img/cmenino/hk_lluvia.jpg",
+          "z": 1.02
+        }
+      },
+      {
+        "desde": 41.82,
+        "hasta": 42.68,
+        "kind": "foto",
+        "props": {
+          "src": "img/cmenino/hk_tormenta.jpg",
+          "z": 1.06
+        }
+      },
+      {
+        "desde": 42.68,
+        "hasta": 43.96,
+        "kind": "foto",
+        "props": {
+          "plano": "p010",
+          "z": 1.03
+        }
+      },
+      {
+        "desde": 43.96,
+        "hasta": 45.22,
+        "kind": "foto",
+        "props": {
+          "src": "img/cmenino/hk_apagon.jpg",
+          "z": 1.02
+        }
+      },
+      {
+        "desde": 45.22,
+        "hasta": 47.76,
+        "kind": "foto",
+        "props": {
+          "plano": "p010x",
+          "z": 1.0
+        }
+      },
+      {
+        "desde": 55.66,
+        "hasta": 57.2,
+        "kind": "foto",
+        "props": {
+          "plano": "p012",
+          "z": 1.18,
+          "ox": 50,
+          "oy": 50
+        }
+      }
+    ],
+    "over": [
+      {
+        "desde": 27.9,
+        "hasta": 32.55,
+        "kind": "reloj",
+        "props": {
+          "desde": "19:00",
+          "hasta": "06:00",
+          "tFin": 2.75,
+          "remate": "11 horas",
+          "tRemate": 3.52
+        }
+      },
+      {
+        "desde": 41.82,
+        "hasta": 42.12,
+        "kind": "flash",
+        "props": {}
+      },
+      {
+        "desde": 55.12,
+        "hasta": 55.66,
+        "kind": "negro",
+        "props": {}
+      },
+      {
+        "desde": 60.7,
+        "hasta": 64.95,
+        "kind": "cascada",
+        "props": {
+          "items": [
+            {
+              "img": "img/cmenino/hk_c_panel.png",
+              "label": "Panel",
+              "precio": "$14",
+              "at": 0.04
+            },
+            {
+              "img": "img/cmenino/hk_c_bateria.png",
+              "label": "Batería",
+              "precio": "$18",
+              "at": 0.62
+            },
+            {
+              "img": "img/cmenino/hk_c_controlador.png",
+              "label": "Controlador",
+              "precio": "$11",
+              "at": 1.28
+            },
+            {
+              "img": "img/cmenino/hk_c_foco.png",
+              "label": "Foco",
+              "precio": "$6",
+              "at": 1.76
+            },
+            {
+              "img": "img/cmenino/hk_c_resto.png",
+              "label": "Cable y fusible",
+              "precio": "$9",
+              "at": 2.3
+            }
+          ],
+          "total": "58 dólares",
+          "tTotal": 2.62
+        }
+      }
+    ],
+    "sfx": [
+      {
+        "t": 4.5,
+        "src": "sfx_fab/boom.wav",
+        "vol": 0.35,
+        "durS": 2.0
+      },
+      {
+        "t": 6.4,
+        "src": "sfx_fab/led_buzz.wav",
+        "vol": 0.16,
+        "durS": 1.4
+      },
+      {
+        "t": 7.74,
+        "src": "sfx_fab/apagon.wav",
+        "vol": 0.55,
+        "durS": 1.1
+      },
+      {
+        "t": 8.78,
+        "src": "sfx_fab/whoosh.wav",
+        "vol": 0.28,
+        "durS": 0.55
+      },
+      {
+        "t": 12.08,
+        "src": "sfx_fab/hit.wav",
+        "vol": 0.32,
+        "durS": 1.2
+      },
+      {
+        "t": 13.5,
+        "src": "sfx_fab/hit.wav",
+        "vol": 0.28,
+        "durS": 1.2
+      },
+      {
+        "t": 15.13,
+        "src": "sfx_fab/hit.wav",
+        "vol": 0.32,
+        "durS": 1.2
+      },
+      {
+        "t": 16.96,
+        "src": "sfx_fab/whoosh.wav",
+        "vol": 0.25,
+        "durS": 0.55
+      },
+      {
+        "t": 18.3,
+        "src": "sfx_fab/whoosh.wav",
+        "vol": 0.3,
+        "durS": 0.55
+      },
+      {
+        "t": 21.4,
+        "src": "sfx_fab/click.wav",
+        "vol": 0.8,
+        "durS": 0.2
+      },
+      {
+        "t": 24.24,
+        "src": "sfx_fab/beep.wav",
+        "vol": 0.22,
+        "durS": 0.3
+      },
+      {
+        "t": 28.0,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 28.3,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 28.552,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 28.764,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 28.941,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.091,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.216,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.322,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.41,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.485,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.547,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.602,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.657,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.712,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.767,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.822,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.877,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.932,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 29.987,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.042,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.097,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.152,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.207,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.262,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.317,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.372,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.427,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.482,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.537,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 30.592,
+        "src": "sfx_fab/tic.wav",
+        "vol": 0.42,
+        "durS": 0.08
+      },
+      {
+        "t": 31.4,
+        "src": "sfx_fab/hit.wav",
+        "vol": 0.38,
+        "durS": 1.3
+      },
+      {
+        "t": 34.96,
+        "src": "sfx_fab/beep.wav",
+        "vol": 0.2,
+        "durS": 0.3
+      },
+      {
+        "t": 37.58,
+        "src": "sfx_fab/boom.wav",
+        "vol": 0.6,
+        "durS": 2.6
+      },
+      {
+        "t": 40.42,
+        "src": "sfx_fab/whoosh.wav",
+        "vol": 0.22,
+        "durS": 0.55
+      },
+      {
+        "t": 41.84,
+        "src": "sfx_fab/trueno.wav",
+        "vol": 0.7,
+        "durS": 4.0
+      },
+      {
+        "t": 42.64,
+        "src": "sfx_fab/whoosh.wav",
+        "vol": 0.2,
+        "durS": 0.55
+      },
+      {
+        "t": 43.98,
+        "src": "sfx_fab/apagon.wav",
+        "vol": 0.45,
+        "durS": 1.1
+      },
+      {
+        "t": 53.4,
+        "src": "sfx_fab/riser.wav",
+        "vol": 0.3,
+        "durS": 1.72
+      },
+      {
+        "t": 55.66,
+        "src": "sfx_fab/boom.wav",
+        "vol": 0.55,
+        "durS": 2.2
+      },
+      {
+        "t": 60.74,
+        "src": "sfx_fab/hit.wav",
+        "vol": 0.22,
+        "durS": 1.0
+      },
+      {
+        "t": 61.32,
+        "src": "sfx_fab/hit.wav",
+        "vol": 0.22,
+        "durS": 1.0
+      },
+      {
+        "t": 61.98,
+        "src": "sfx_fab/hit.wav",
+        "vol": 0.22,
+        "durS": 1.0
+      },
+      {
+        "t": 62.46,
+        "src": "sfx_fab/hit.wav",
+        "vol": 0.22,
+        "durS": 1.0
+      },
+      {
+        "t": 63.0,
+        "src": "sfx_fab/hit.wav",
+        "vol": 0.22,
+        "durS": 1.0
+      },
+      {
+        "t": 63.3,
+        "src": "sfx_fab/boom.wav",
+        "vol": 0.4,
+        "durS": 2.0
+      }
+    ],
+    "camas": [
+      {
+        "desde": 20.2,
+        "hasta": 23.3,
+        "src": "sfx_fab/grillos.wav",
+        "vol": 0.14,
+        "fadeIn": 0.6,
+        "fadeOut": 0.5
+      },
+      {
+        "desde": 38.4,
+        "hasta": 55.12,
+        "src": "sfx_fab/lluvia.wav",
+        "vol": 0.2,
+        "fadeIn": 2.0,
+        "fadeOut": 0.08
+      }
+    ]
+  }
+}

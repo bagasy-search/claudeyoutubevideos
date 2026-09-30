@@ -19,6 +19,14 @@ export function agnesGate(slug, assets = null) {
   if (fs.existsSync("_v3")) for (const f of fs.readdirSync("_v3").filter((f) => f.startsWith(`${slug}_i2v`) && f.endsWith(".json"))) {
     try { const a = JSON.parse(fs.readFileSync(`_v3/${f}`, "utf8").replace(/^﻿/, "")); if (Array.isArray(a)) a.forEach((it) => it?.nombre && info.add(it.nombre)); } catch {}
   }
+  // ⛔ Lo que en disco es METRAJE REAL no es un clip de agnes, aunque su nombre figure en el registro
+  //    de agnes (medido 18-sep-2026: agnes anima el plano y después 45_stock le pisa el mp4 con el de
+  //    Pexels — los 28 de fbtelgopor y los 33 de fbdeterg estaban en los dos lados). Sin esta resta el
+  //    pre-vuelo los reporta como "cambió después del control" y bloquea el farm para siempre.
+  let real = new Set();
+  try { real = new Set(Object.keys(JSON.parse(fs.readFileSync(`_v3/${slug}_stock.json`, "utf8")))); } catch {}
+  for (const n of real) info.delete(n);
+
   // clips de agnes que de verdad viajan en el render
   const enRender = [...info].map((n) => `broll/${slug}/${n}.mp4`).filter((r) => fs.existsSync(path.join("public", r)))
     .filter((r) => !assets || assets.some((a) => r === a || r.startsWith(a.replace(/\/*$/, "") + "/")));
@@ -42,7 +50,7 @@ export function agnesGate(slug, assets = null) {
     if (!rep) probs.push(`repetición NO medida: el build tiene que emitir _v3/${slug}_cues.json ([{key,src,start,dur}] de la capa base) y volver a correr agnes_qc`);
     else if (rep.loops || rep.dobles) probs.push(`repetición: ${rep.loops} planos más largos que su clip (el loop repite el movimiento) · ${rep.dobles} clips usados en más de un plano\n      ${(rep.ejemplos || []).slice(0, 8).join("\n      ")}`);
   }
-  if (!probs.length) return { ok: true, msg: `agnes QC ✓ (${enRender.length} clips controlados y sin cambios · repetición 0)` };
+  if (!probs.length) return { ok: true, msg: `agnes QC ✓ (${enRender.length} clips controlados y sin cambios · ${real.size} de metraje real fuera del control de agnes · repetición 0)` };
   if (process.env.AGNES_QC_OVERRIDE) return { ok: true, msg: `⚠️⚠️ agnes QC SALTEADO a mano (AGNES_QC_OVERRIDE="${process.env.AGNES_QC_OVERRIDE}"):\n    ${probs.join("\n    ")}` };
   return { ok: false, msg: `✗ PRE-VUELO AGNES QC:\n    ${probs.join("\n    ")}` };
 }

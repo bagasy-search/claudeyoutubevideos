@@ -58,6 +58,47 @@ out[-1]["end"] = ASR[-1][1] / 1000.0 + 0.6
 for m in out:
     m["dur"] = round(max(0.4, m["end"] - m["start"]), 3)
 
+# ---- reparto de tramos mal alineados -------------------------------------------------
+# A veces la alineacion le regala a UN momento el tiempo de sus vecinos: el tramo entero mide bien,
+# pero adentro queda uno larguisimo y los de al lado en 0,3 s. Los cortos no se llegan a ver (quedan
+# bajo minPlanoS) y el largo no se puede cubrir: el motor solo admite DOS planos por momento, asi que
+# el sobrante sale como cuadro congelado y `60_build` frena.
+# Medido 16-sep en los 5 de Claudio Mendoza: 7 momentos sobre ~1.600 (cmeodian 5, cmecaja 1,
+# cmeamazon 1; cmealter y cme150 ninguno). Ejemplo: p189 con 10,67 s mientras p190 y p191 —53 y 49
+# caracteres— quedaban en 0,34 y 0,25 s, o sea 133 caracteres por segundo cuando el canal habla a 14.
+# Se detecta por velocidad imposible y se reparte el tramo POR CARACTERES, que es la unica
+# informacion confiable que queda: el span total del grupo no se toca, solo su reparto interno.
+cps_all = sorted((len(m.get("texto") or "") / max(0.001, m["dur"])) for m in out)
+cps_med = cps_all[len(cps_all) // 2] if cps_all else 0.0
+repartidos = []
+if cps_med > 0:
+    veloz = [len(m.get("texto") or "") / max(0.001, m["dur"]) > 3 * cps_med for m in out]
+    k = 0
+    while k < len(out):
+        if not veloz[k]:
+            k += 1
+            continue
+        a = k
+        while k < len(out) and veloz[k]:
+            k += 1
+        b = k - 1
+        a = max(0, a - 1)                      # el vecino que se comio el tiempo
+        b = min(len(out) - 1, b + 1)
+        span = out[b]["end"] - out[a]["start"]
+        chars = [len(out[j].get("texto") or "") or 1 for j in range(a, b + 1)]
+        total = float(sum(chars))
+        if span > 0 and total > 0:
+            t = out[a]["start"]
+            for j in range(a, b + 1):
+                d = span * chars[j - a] / total
+                out[j]["start"] = round(t, 3)
+                out[j]["end"] = round(t + d, 3)
+                out[j]["dur"] = round(max(0.4, d), 3)
+                t += d
+            out[b]["end"] = round(out[a]["start"] + span, 3)
+            out[b]["dur"] = round(max(0.4, out[b]["end"] - out[b]["start"]), 3)
+            repartidos.append(f"{out[a]['name']}..{out[b]['name']}")
+
 pathlib.Path(out_p).write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 durs = sorted(m["dur"] for m in out)
 print(json.dumps({
@@ -65,4 +106,5 @@ print(json.dumps({
     "similitud": round(sm.ratio(), 4), "anclajeExactoPct": round(100 * exactos / max(1, len(GW)), 2),
     "duracionSec": round(out[-1]["end"], 2), "planoMedianaSec": durs[len(durs) // 2], "planoMaxSec": durs[-1],
     "desorden": sum(1 for k in range(len(out) - 1) if out[k + 1]["start"] < out[k]["start"]),
+    "tramosRepartidos": len(repartidos), "tramos": repartidos[:8],
 }))

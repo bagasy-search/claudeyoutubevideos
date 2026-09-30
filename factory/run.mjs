@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 // run.mjs — LA FÁBRICA. Un solo motor para todos los videos. Plan: factory/PLAN_FABRICA.md
 //
-//   node factory/run.mjs run <slug> [--from <fase>] [--only <fase>]   corre/reanuda el video
+//   node factory/run.mjs run <slug> [--from <fase>] [--only <fase>] [--hasta <fase>]   corre/reanuda el video
 //   node factory/run.mjs status [<slug>]                              estado por fase (medido)
 //   node factory/run.mjs new <slug> --canal <c> --modo avatar|narrador --guion <txt> --voz <id>
 //                            [--face <png>] [--idioma es] --cta-ancla "<frase>" --cta-head "<texto>"
+//                            [--card <cardId> --channel <clave>]   ← la tarjeta de Bagasy. Sin esto,
+//                            90_deliver entrega el mp4 pero NO engancha la tarjeta, y hay que agregar
+//                            el bloque `bagasy` al spec a mano y re-entregar (pasó en tdcfreno).
 //   node factory/run.mjs queue add <slug> | queue ls                  cola de videos
 //   node factory/run.mjs worker [--n 3]                               procesa la cola en paralelo
 //   node factory/run.mjs leases                                       uso de recursos compartidos
@@ -17,14 +20,17 @@ import path from "node:path";
 import { ROOT } from "./lib/env.mjs";
 import { State, hashInputs } from "./lib/state.mjs";
 import { slugPaths, STATE_ROOT, WORK_ROOT, insideSlug } from "./lib/paths.mjs";
+import { tomarCandado } from "./lib/candado.mjs";
+import { borrarSeguro } from "./lib/borrar.mjs";
 import { loadSpec, validateSpec } from "./lib/spec.mjs";
 import { logger, NeedsError, BlockedError } from "./lib/phase.mjs";
 import { usage, CAPACIDAD } from "./lib/lease.mjs";
 import { run as exec } from "./lib/exec.mjs";
+import { avisarProgreso } from "./lib/bagasy.mjs";
 
 process.chdir(ROOT);   // los scripts compartidos (agnes_qc, farm) usan rutas relativas a video2
 
-const PHASE_FILES = ["00_preflight", "10_voice", "15_frases", "20_asr", "30_direct", "40_images", "50_agnes", "55_avatar", "60_build", "70_gates", "80_render", "90_deliver"];
+const PHASE_FILES = ["00_preflight", "10_voice", "15_frases", "20_asr", "30_direct", "40_images", "45_stock", "50_agnes", "55_avatar", "60_build", "70_gates", "80_render", "90_deliver"];
 async function loadPhases() {
   const out = [];
   for (const f of PHASE_FILES) out.push((await import(`./phases/${f}.mjs`)).default);
@@ -35,11 +41,16 @@ const args = process.argv.slice(2);
 const flag = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : undefined; };
 const cmd = args[0];
 
-async function runSlug(slug, { from, only } = {}) {
+async function runSlug(slug, { from, only, hasta } = {}) {
+  const soltarCandado = tomarCandado(slug);   // ⛔ un solo orquestador por slug: ver lib/candado.mjs
   const spec = loadSpec(slug);
   const P = slugPaths(slug);
   const state = new State(slug);
-  const phases = await loadPhases();
+  // `--hasta <fase>`: corre en paralelo todo lo que falte HASTA esa fase inclusive y frena (p. ej. antes
+  // del render, para mirar la hoja de contactos del §4 AUDITOR sin gastar el farm).
+  const todas = await loadPhases();
+  if (hasta && !todas.some((p) => p.id === hasta)) throw new Error(`fase desconocida "${hasta}"`);
+  const phases = hasta ? todas.slice(0, todas.findIndex((p) => p.id === hasta) + 1) : todas;
   const ids = phases.map((p) => p.id);
   for (const x of [from, only].filter(Boolean)) if (!ids.includes(x)) throw new Error(`fase desconocida "${x}" (${ids.join(", ")})`);
   if (from) for (const p of phases.slice(ids.indexOf(from))) state.reset(p.id);
@@ -74,14 +85,25 @@ async function runSlug(slug, { from, only } = {}) {
         status.set(ph.id, "done"); ctx.log(`✓ confiada (${antesDeFrom ? `anterior a --from ${from}` : "importada del legado"})`); continue;
       }
       if (antesDeFrom) { status.set(ph.id, "failed"); state.set(ph.id, { ...(prev || {}), status: prev?.status || "failed", error: `--from ${from} exige que ${ph.id} ya esté hecha (está ${prev?.status || "sin estado"}): no se rehace sola` }); ctx.log(`✗ --from ${from} pero ${ph.id} no está hecha: no la rehago`); continue; }
-      if (state.isFresh(ph.id, h)) { status.set(ph.id, "done"); ctx.log(`✓ fresca (${JSON.stringify(state.get(ph.id).medido || {}).slice(0, 140)})`); continue; }
+      if (state.isFresh(ph.id, h)) {
+        // ⛔ El hash de INPUTS no ve el disco: si alguien borró las salidas para regenerarlas, la fase
+        // se salteaba con "✓ fresca" y su compuerta —que vive DENTRO de la fase— nunca llegaba a correr
+        // (medido en cmealter: 115 imágenes borradas, la fase no miró y el montaje se iba con las viejas).
+        // `verify` es opcional: sin él, el comportamiento es el de antes.
+        let falta = null;
+        if (ph.verify) { try { falta = await ph.verify(ctx); } catch (e) { falta = e.message; } }
+        if (!falta) { status.set(ph.id, "done"); ctx.log(`✓ fresca (${JSON.stringify(state.get(ph.id).medido || {}).slice(0, 140)})`); continue; }
+        ctx.log(`↻ estaba done pero sus salidas no están: ${falta} — la rehago`);
+      }
       ctx.log("▶ arranca");
       state.set(ph.id, { ...(state.get(ph.id) || {}), status: "running", inputsHash: h });
       const t = Date.now();
-      running.set(ph.id, ph.run(ctx).then((medido) => {
+      running.set(ph.id, ph.run(ctx).then(async (medido) => {
         state.set(ph.id, { status: "done", inputsHash: h, medido, ms: Date.now() - t });
         status.set(ph.id, "done");
         ctx.log(`✓ hecha en ${Math.round((Date.now() - t) / 1000)} s`);
+        // el panel de Bagasy muestra "generando" con el avance real, no un hueco durante 4 h
+        await avisarProgreso({ slug, spec, fase: ph.id, medido, log: ctx.log });
       }).catch((e) => {
         const st = e instanceof NeedsError ? "needs" : e instanceof BlockedError ? "blocked" : "failed";
         state.set(ph.id, { status: st, inputsHash: h, error: e.message, instrucciones: e.instrucciones, detalle: e.detail || e.detalle, ms: Date.now() - t, runId: state.get(ph.id)?.runId });
@@ -94,6 +116,7 @@ async function runSlug(slug, { from, only } = {}) {
     if (!running.size) break;
     await Promise.race(running.values());
   }
+  soltarCandado();   // el worker corre varios slugs en el MISMO proceso: no alcanza con soltarlo al salir
   const res = phases.map((p) => ({ fase: p.id, status: status.get(p.id) || "pending" }));
   console.log(`\n=== ${slug} · ${Math.round((Date.now() - t0) / 1000)} s ===`);
   for (const r of res) console.log(`  ${r.fase.padEnd(13)} ${r.status}`);
@@ -167,7 +190,9 @@ function gc(apply) {
       const size = fs.statSync(b).isDirectory() ? fs.readdirSync(b).reduce((a, f) => a + fs.statSync(path.join(b, f)).size, 0) : fs.statSync(b).size;
       total += size;
       console.log(`${apply ? "borro" : "borraría"} ${(size / 1048576).toFixed(0)} MB  ${b}`);
-      if (apply) fs.rmSync(b, { recursive: true, force: true });
+      // ⛔ nunca con rmSync pelado: si algún día un borrable contiene un junction, el borrado lo
+      //    atraviesa y se lleva el destino real (ver lib/borrar.mjs).
+      if (apply) borrarSeguro(b);
     }
   }
   console.log(`${apply ? "liberados" : "liberables"}: ${(total / 1073741824).toFixed(2)} GB (sólo videos con 90_deliver done; nunca img/broll/avatar pagos)`);
@@ -194,8 +219,26 @@ const HELP = fs.readFileSync(new URL(import.meta.url), "utf8").split("\n").slice
 
 try {
   if (!cmd || cmd === "help" || cmd === "--help") { console.log(HELP); console.log("fases: " + PHASE_FILES.join(" → ")); process.exit(0); }
-  if (cmd === "run") process.exit(await runSlug(args[1], { from: flag("--from"), only: flag("--only") }));
+  if (cmd === "run") process.exit(await runSlug(args[1], { from: flag("--from"), only: flag("--only"), hasta: flag("--hasta") }));
   if (cmd === "status") { printStatus(args[1]); process.exit(0); }
+  if (cmd === "reset") {
+    // Rehacer UNA fase sin arrastrar las de atrás. `--only` respeta el hash (no rehace nada) y
+    // `--from` resetea todo lo que viene después, que con el avatar corriendo en paralelo no sirve.
+    // Antes de esto había que borrar el json de estado a mano.
+    const [, slug, fase] = args;
+    if (!slug || !fase) { console.error("uso: node factory/run.mjs reset <slug> <fase> - fases: " + PHASE_FILES.join(" ")); process.exit(1); }
+    if (!PHASE_FILES.includes(fase)) { console.error(`fase desconocida "${fase}" - fases: ` + PHASE_FILES.join(" ")); process.exit(1); }
+    const st = new State(slug);
+    const prev = st.get(fase);
+    if (!prev) { console.log(`${slug}/${fase} ya estaba sin estado: nada que resetear`); process.exit(0); }
+    if (prev.status === "running" && !args.includes("--force")) {
+      console.error(`${slug}/${fase} está RUNNING: resetearla ahora deja dos corridas pisándose. Esperá a que termine, o --force si sabés que el proceso está muerto.`);
+      process.exit(1);
+    }
+    st.reset(fase);
+    console.log(`${slug}/${fase} reseteada (estaba ${prev.status}). Se rehace en la próxima corrida: node factory/run.mjs run ${slug}`);
+    process.exit(0);
+  }
   if (cmd === "new") { nuevo(args[1]); process.exit(0); }
   if (cmd === "queue") { if (args[1] === "add") qAdd(args[2]); else for (const q of qList()) console.log(`${q.slug.padEnd(20)} ${q.estado}`); process.exit(0); }
   if (cmd === "worker") { await worker(Number(flag("--n") || 3)); process.exit(0); }

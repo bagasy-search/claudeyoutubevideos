@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-18T17:56:23.825Z",
+ "status": "done",
+ "inputsHash": "47dbee29e378a53a",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fbmarmol/fbmarmol.mp4?v=1",
+  "version": 1,
+  "bytes": 647712632,
+  "durSec": 1395.8,
+  "saltosPts": 0,
+  "tramosNegros": 1,
+  "hoja": "D:\\rtmp\\factory\\fbmarmol\\audit\\hoja.jpg",
+  "bagasy": "no (sin spec.bagasy o FACTORY_DELIVER≠1)"
+ },
+ "ms": 2257658
+}

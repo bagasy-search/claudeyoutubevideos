@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-18T10:33:03.585Z",
+ "status": "done",
+ "inputsHash": "D:\\rtmp\\factory\\tfbazucar\\render\\tfbazucar.mp4,D:\\rtmp\\factory\\tfbazucar\\audio\\tfbazucar.wav,C:\\Users\\bauti\\Downloads\\video2\\public\\tfbazucar_meta.json,",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/tfbazucar/tfbazucar.mp4?v=1",
+  "version": 1,
+  "bytes": 806975719,
+  "durSec": 1481.07,
+  "saltosPts": 0,
+  "tramosNegros": 0,
+  "hoja": "D:\\rtmp\\factory\\tfbazucar\\audit\\hoja.jpg",
+  "bagasy": "no (sin spec.bagasy o FACTORY_DELIVER≠1)"
+ },
+ "ms": 1053276
+}

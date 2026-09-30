@@ -1,0 +1,78 @@
+{
+  "nombre": "Claudio el Técnico (premium)",
+  "montaje": "premium",
+  "idioma": "es",
+  "fish": {
+    "voz": "claudio_mendoza_s4",
+    "blockChars": 1200,
+    "cps": 14.2
+  },
+  "frases": {
+    "cps": 14.2,
+    "minChars": 55,
+    "maxSec": 9,
+    "objetivoSec": 5.5
+  },
+  "ventanas": {
+    "padSec": 0.4,
+    "fusionarSec": 0.2
+  },
+  "vlog": {
+    "minPlanoS": 1.2,
+    "partirS": 7,
+    "colaFotoS": 2.5,
+    "maxAvatarTapadoS": 1,
+    "maxPlacaVistaS": 1.5
+  },
+  "fondo": "#0A0B08",
+  "placa": "img/{slug}/{slug}_placa_a.jpg",
+  "imagen": {
+    "size": "1088x608",
+    "quality": "low",
+    "motorConCara": "gpt",
+    "motorSinCara": "gptsin"
+  },
+  "presentador": "the same man from the reference image, about 48, dark curly hair with volume, a short salt-and-pepper beard, olive skin, an appliance repair technician wearing a plain royal blue short-sleeved polo shirt with no logo and no text, dark grey work trousers, a black wristwatch, sometimes a small screwdriver or a multimeter probe in his hand",
+  "presentadorToken": "CLAUDIO",
+  "formula": "bright natural daylight, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+  "vintage": "faded 1970s colour photograph, real family snapshot, no text, no letters, no labels, no signs",
+  "lugares": {
+    "taller": "in his small appliance repair workshop, a white front-loading washing machine with its round glass door open, a second washing machine with its back panel removed showing the motor and the belt, a workbench with a multimeter, screwdrivers, a coil of grey drain hose and a cardboard box of spare parts, a blue pegboard wall full of tools, a fluorescent tube light on the ceiling",
+    "banco": "at his workbench in the repair workshop, a disassembled washing machine part lying on a folded rag, a multimeter with red and black probes, a magnetic tray of screws, a socket set, a roll of electrical tape, a notebook with a pencil, a tube light above and the pegboard of tools behind",
+    "lavadero_cliente": "in a customer small home laundry room, a white washing machine pulled out from the wall with its hoses visible, a deep white utility sink, a shelf with detergent bottles and a box of clothes pegs, a plastic laundry basket with towels, his red toolbox open on the tiled floor, a small window with daylight",
+    "cocina_cliente": "in a customer family kitchen where the washing machine sits under the counter, white cabinets, a dish rack with plates, a fruit bowl, a kettle, a wall calendar, his red toolbox on the floor next to the machine",
+    "tienda": "in a big appliance store aisle, long rows of new white and silver washing machines with their doors and lids open on display, bright ceiling lights, a shopping cart at the end of the aisle, price stands turned away from the camera, a few shoppers far down the aisle",
+    "repuestos": "in a small neighbourhood appliance spare parts shop, a wooden counter, shelves up to the ceiling full of drain pumps, rubber door seals, drive belts, motors and bagged parts in plastic bins, an old man behind the counter, a ceiling fan",
+    "camioneta": "at the open back doors of his small white work van parked in a residential street, shelves with plastic bins of washing machine parts, a hand truck strapped inside, a red toolbox, coiled hoses",
+    "casa": "in the laundry corner of his own modest home, his own white front-loading washing machine with a folded towel on top, a drying rack with clothes, a plastic basket, a shelf with a detergent bottle and a measuring cup, a window with a lemon tree outside",
+    "patio_chatarra": "in the back yard of his workshop, a row of old dead washing machines waiting for scrap, rusty panels, a stack of drums and motors on a wooden pallet, a wheelbarrow, a concrete wall with a garden hose",
+    "calle": "in a quiet residential street of one-storey houses with small front gardens, parked cars, a tree on the sidewalk and his white work van at the curb",
+    "mesa_demo": "at his workshop table set up for a demonstration, a cut-open washing machine drum bearing and a new bearing side by side, a sealed plastic tub half, a drive belt, a drain pump, a small carbon brush motor, a clean white cloth underneath"
+  },
+  "movimiento": "camara",
+  "avatarPrompt": "An appliance repair technician speaks warmly and naturally to the camera in his workshop, natural head movement, expressive face and hands, realistic lighting",
+  "dialecto": "ESPAÑOL NEUTRO LATINOAMERICANO — TÚ (mira, fíjate, tienes, pon, vas a ver). ⛔ NUNCA voseo (mirá, tenés, poné) y NUNCA vosotros. Es el dialecto de la voz clonada claudio_mendoza_s4. Vocabulario neutro: lavadora, carga superior, carga frontal, tambor, tina, rodamiento, agitador, impulsor, motor de transmisión directa, correa, bomba de desagüe, filtro, goma de la puerta, tarjeta electrónica, perillas, repuestos, encimera, refrigerador.",
+  "cta": {
+    "regex": "^Si esto te sirvi",
+    "head": "Suscríbete al canal"
+  },
+  "formulas": {
+    "noche": "at night with the electricity cut, the scene lit by the warm white light of the small bulb described, the light falling on the nearby walls and objects so the whole room stays readable, true-to-life colors, sharp focus, deep depth of field, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "gris": "flat grey overcast daylight from a cloudy sky, no shadows on the ground, wet surfaces, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "amanecer": "early morning sunlight low in the sky, long soft shadows, cool fresh air and a little dew on the surfaces, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "atardecer": "late afternoon golden light low in the sky, long warm shadows across the ground, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "nublado": "flat grey overcast daylight from a cloudy sky, soft even light with no hard shadows, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "lluvia": "during heavy rain under a dark grey sky, rain streaks in the air, wet shining surfaces and puddles, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "nochelux": "at night with the house lights on, warm lamp light filling the room and falling on the nearby walls and objects so the whole place stays readable, dark window behind, true-to-life colors, sharp focus, deep depth of field with the whole place in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs"
+  },
+  "apertura": {
+    "miniatura": true,
+    "holdS": 1,
+    "glitchF": 12
+  },
+  "avatar": {
+    "lipLeadSec": 0.13
+  },
+  "avatarMinPct": 10,
+  "rachaMaxLugar": 8
+}

@@ -1,0 +1,386 @@
+{
+  "nombre": "Lou's Diner Secrets",
+  "montaje": "premium",
+  "idioma": "en",
+  "fish": {
+    "voz": "lou_diner",
+    "blockChars": 1200,
+    "cps": 12.6
+  },
+  "frases": {
+    "cps": 12.6,
+    "minChars": 55,
+    "maxSec": 9,
+    "objetivoSec": 5.5
+  },
+  "ventanas": {
+    "padSec": 0.4,
+    "fusionarSec": 0.2
+  },
+  "vlog": {
+    "minPlanoS": 1.2,
+    "partirS": 7,
+    "colaFotoS": 2.5,
+    "maxAvatarTapadoS": 1,
+    "maxPlacaVistaS": 1.5
+  },
+  "avatar": {
+    "lipLeadSec": 0.13
+  },
+  "fondo": "#0C0A08",
+  "placa": "img/{slug}/{slug}_placa_a.jpg",
+  "apertura": {
+    "miniatura": true,
+    "holdS": 1,
+    "glitchF": 12
+  },
+  "imagen": {
+    "size": "1088x608",
+    "quality": "low",
+    "motorConCara": "gpt",
+    "motorSinCara": "gptsin"
+  },
+  "presentador": "the same old man from the reference image, 74 years old, white American retired diner cook, a big grey handlebar mustache, a bald head with a short white fringe of hair, deep lines around the eyes, heavy forearms with faded navy tattoos, big rough hands, wearing a white paper cook's cap, a white crew-neck T-shirt and a grease-stained white apron, a folded kitchen towel over one shoulder",
+  "presentadorToken": "LOU",
+  "formula": "flat fluorescent diner ceiling light mixed with morning daylight from the front windows, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background full of ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+  "formulas": {
+    "casa": "soft morning daylight from the kitchen window over the sink, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background full of ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "noche": "late evening after closing, the dining room dark beyond the pass-through, the kitchen lit by the warm hood lights and one fluorescent tube, everything still clearly visible, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+    "macro": "bright flat light from the hood lamps directly above, true-to-life colors, sharp focus across the whole cooking surface, the surrounding steel and utensils stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs"
+  },
+  "vintage": "faded early-1970s colour photograph from a family album, real amateur snapshot, slightly washed-out warm colours, sharp enough to read every object, no text, no letters, no labels, no signs",
+  "lugares": {
+    "plancha": "behind the long stainless-steel flat-top griddle of an old roadside diner, in the background a stainless exhaust hood with hanging spatulas and a bench scraper, an order-ticket rail with blank paper tickets clipped on it, a steel squeeze bottle of oil, a stack of white plates, a pass-through window to the dining room and a chrome milkshake mixer",
+    "mostrador": "at the long counter of an old roadside diner, in the background a row of red vinyl chrome stools, thick white coffee mugs, a glass sugar pourer and chrome napkin holders, a glass pie case with two pies under domes, a steel coffee maker with two glass pots and the big front windows onto a two-lane highway",
+    "prep": "at the stainless prep table in the back kitchen of an old diner, in the background a big steel stockpot on a low range, a tall box grater, a colander in a deep steel sink, a cutting board with a chef's knife, sacks of russet potatoes on a wooden pallet and white tiled walls",
+    "walkin": "inside the walk-in cooler of an old diner, in the background wire shelving with sheet pans, crates of eggs, blocks of butter, steel containers with lids, a hanging thermometer, frost on the metal door frame and a single caged bulb in the ceiling",
+    "fregadero": "at the dish station of an old diner kitchen, in the background a deep three-bay stainless sink full of soapy water, a spray hose hanging from a spring, racks of clean white plates and mugs, a mop bucket in the corner and a small window above the sink",
+    "comedor": "in the dining room of an old roadside diner, in the background booths with red vinyl seats along the windows, formica tables with chrome edges, salt and pepper shakers and ketchup bottles, a jukebox in the corner, a clock on the wall and pickup trucks parked outside on the gravel",
+    "cocina_casa": "in the kitchen of his modest house, in the background a white gas range with a black cast-iron skillet on the front burner, a window over the sink with a plant on the sill, a wooden spoon crock, a coffee maker, a plain painted wall with a hanging dish towel and a small wooden table with two chairs",
+    "mesa_casa": "at the small kitchen table of his house, in the background a window with white curtains, a bowl of fruit, two coffee mugs, a folded newspaper, a framed old photograph of a diner hung on the wall and a doorway to the living room",
+    "diner1969": "inside a small roadside diner in western Pennsylvania in 1969, in the background a four-foot black seasoned flat-top griddle under a steel hood, an order wheel with paper tickets, twelve chrome counter stools, a glass pie case, a big round wall clock and a Formica counter with thick white mugs",
+    "cocina1969": "in the back kitchen of a small roadside diner in 1969, in the background a big dented aluminum stockpot on a gas range, sheet pans of boiled potatoes cooling on a rack, a steel prep table, a door to the walk-in cooler, a mop and bucket and cream-painted walls with grease stains",
+    "mesada_casa": "at the kitchen counter of his modest house by the window, in the background a wooden cutting board, a bowl of brown eggs, a paper towel roll on a stand, a chrome toaster, a window with a bird feeder outside and a row of mason jars of flour and sugar",
+    "fregadero_casa": "at the kitchen sink of his modest house, in the background a white porcelain sink under a window with gingham curtains, a dish rack with plates, a plain bottle of dish soap, a potted herb on the sill and a hand towel hanging on the oven door",
+    "horno_casa": "in front of the white oven of his modest house, in the background the oven door with a glass window, a microwave on the counter, oven mitts hanging from a hook, a tile backsplash, a tea kettle on the back burner and a round clock on the wall",
+    "lavadero": "in the small utility room off his kitchen, in the background a white chest freezer, a washing machine, wooden shelves with canned goods and paper towels, a broom and a mop in the corner and a small window"
+  },
+  "movimiento": "camara",
+  "avatarPrompt": "An old man speaks warmly and naturally to the camera behind the griddle of his diner, telling a story, natural head movement, expressive face, realistic lighting",
+  "dialecto": "AMERICAN ENGLISH, plain spoken, an old diner cook from Pennsylvania talking to the viewer: short sentences, 'you' addressed to the viewer, dry humor, no regional slang from elsewhere. Numbers written as words.",
+  "cta": {
+    "regex": "^If you want more of these",
+    "head": "Subscribe for more diner secrets"
+  },
+  "avatarMinPct": 10,
+  "rachaMaxLugar": 8,
+  "fx": {
+    "_": "Paquete de efectos (factory/lib/fxpack.mjs). Sonidos: public/sfx_lou (CC0 de freesound + 2 sintetizados, ver LICENCIAS.txt). Sonido MARCADO (pedido del creador 27-sep).",
+    "sfxDir": "sfx_lou",
+    "ambIn": "amb_diner",
+    "ambOut": "amb_diner",
+    "sfxItem": "bell",
+    "sfxProyector": "paper",
+    "exterior": [],
+    "railComp": "__ninguno__",
+    "unidades": {
+      "minutes": "minutes",
+      "hours": "hours",
+      "years": "years",
+      "stools": "stools",
+      "booths": "booths",
+      "inches": "inches",
+      "inch": "inch",
+      "tablespoons": "tbsp",
+      "seconds": "seconds",
+      "feet": "feet",
+      "miles": "miles",
+      "cents": "cents",
+      "weeks": "weeks",
+      "months": "months",
+      "russets": "russets",
+      "potatoes": "potatoes",
+      "servings": "servings"
+    },
+    "entradaMinS": 3.5,
+    "burnMinS": 20,
+    "whooshMinS": 12,
+    "proyectorMinS": 60,
+    "numMinS": 14,
+    "zoomMinVentanaS": 5,
+    "zoomEscala": 1.14,
+    "volFuego": 0.16,
+    "volViento": 0.16,
+    "volSizzle": 0.32,
+    "volTriangulo": 0.2,
+    "volWhoosh": 0.2,
+    "volProyector": 0.15,
+    "maxHuecoS": 20,
+    "compSfx": {
+      "OrderTicket": [
+        [
+          "printer",
+          0.15,
+          0.4,
+          2.4
+        ],
+        [
+          "bell",
+          "end-1.3",
+          0.45,
+          2.5
+        ]
+      ],
+      "Stamp86": [
+        [
+          "whoosh_a",
+          0.05,
+          0.25,
+          0.6
+        ],
+        [
+          "stamp",
+          0.28,
+          0.65,
+          1.5
+        ],
+        [
+          "boom",
+          0.28,
+          0.22,
+          2.0
+        ]
+      ],
+      "PotatoXRay": [
+        [
+          "pop",
+          0.9,
+          0.35,
+          0.3
+        ],
+        [
+          "pop",
+          1.6,
+          0.3,
+          0.3
+        ],
+        [
+          "pop",
+          2.3,
+          0.28,
+          0.3
+        ]
+      ],
+      "CrustMeter": [
+        [
+          "sizzle",
+          0.1,
+          0.32,
+          3.5
+        ],
+        [
+          "bell",
+          "end-1.4",
+          0.4,
+          2.5
+        ]
+      ],
+      "SplitTest": [
+        [
+          "whoosh_b",
+          0.0,
+          0.3,
+          0.8
+        ],
+        [
+          "tick",
+          0.3,
+          0.25,
+          4.0
+        ],
+        [
+          "stamp",
+          "end-1.8",
+          0.55,
+          1.5
+        ]
+      ],
+      "MenuBoard": [
+        [
+          "clack",
+          0.3,
+          0.4,
+          0.6
+        ],
+        [
+          "clack",
+          0.8,
+          0.35,
+          0.6
+        ],
+        [
+          "clack",
+          1.3,
+          0.35,
+          0.6
+        ],
+        [
+          "clack",
+          1.9,
+          0.35,
+          0.6
+        ],
+        [
+          "clack",
+          2.6,
+          0.35,
+          0.6
+        ]
+      ],
+      "BurnedQuote": [
+        [
+          "sizzle",
+          0.15,
+          0.5,
+          4.0
+        ]
+      ],
+      "ReceiptTimeline": [
+        [
+          "paper",
+          0.25,
+          0.35,
+          1.5
+        ],
+        [
+          "register",
+          "end-1.6",
+          0.3,
+          2.5
+        ]
+      ],
+      "KitchenTimer": [
+        [
+          "timer_wind",
+          0.1,
+          0.45,
+          2.6
+        ],
+        [
+          "tick",
+          1.1,
+          0.28,
+          2.5
+        ],
+        [
+          "timer_ding",
+          "end-1.4",
+          0.4,
+          2.0
+        ]
+      ],
+      "FrostTimer": [
+        [
+          "ice",
+          0.2,
+          0.5,
+          1.5
+        ],
+        [
+          "ice",
+          1.2,
+          0.35,
+          1.5
+        ],
+        [
+          "timer_ding",
+          "end-1.4",
+          0.3,
+          2.0
+        ]
+      ],
+      "NeonSign": [
+        [
+          "neon",
+          0.0,
+          0.3,
+          1.8
+        ]
+      ],
+      "CashCounter": [
+        [
+          "tick",
+          0.2,
+          0.22,
+          2.0
+        ],
+        [
+          "register",
+          "end-1.7",
+          0.5,
+          2.8
+        ]
+      ],
+      "AvatarScrimText": [
+        [
+          "whoosh_a",
+          0.0,
+          0.15,
+          0.6
+        ]
+      ],
+      "RevealCards": [
+        [
+          "pop",
+          0.3,
+          0.28,
+          0.3
+        ],
+        [
+          "pop",
+          0.9,
+          0.25,
+          0.3
+        ],
+        [
+          "pop",
+          1.5,
+          0.25,
+          0.3
+        ]
+      ],
+      "StepTracker": [
+        [
+          "clack",
+          0.1,
+          0.3,
+          0.6
+        ]
+      ],
+      "KineticQuote": [
+        [
+          "whoosh_b",
+          0.0,
+          0.18,
+          0.8
+        ]
+      ],
+      "CrossSection": [
+        [
+          "whoosh_a",
+          0.0,
+          0.18,
+          0.6
+        ]
+      ],
+      "SizeScale": [
+        [
+          "whoosh_b",
+          0.0,
+          0.18,
+          0.8
+        ]
+      ]
+    }
+  }
+}

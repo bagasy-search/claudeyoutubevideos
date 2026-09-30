@@ -30,10 +30,12 @@ export function medirTimeline({ base, ventanas, total, fps = 30, bordeF = 12, pa
   }).filter((x) => x.tapadoSec > 0).sort((a, b) => b.tapadoSec - a.tapadoSec);
   const orden = [...base].sort((a, b) => a.start - b.start);
   let destellos = 0, repes = 0;
+  const paresRepe = [];   // qué par exactamente, para que la compuerta no diga sólo "1"
+
   for (let k = 1; k < orden.length; k++) {
     const g = orden[k].start - (orden[k - 1].start + orden[k - 1].dur);
     if (g > 0 && g <= 5 && !enVent[orden[k].start - 1]) destellos++;
-    if (orden[k].src && orden[k].src === orden[k - 1].src) repes++;
+    if (orden[k].src && orden[k].src === orden[k - 1].src) { repes++; paresRepe.push(`${orden[k - 1].key || "?"}→${orden[k].key || "?"} (${orden[k].src})`); }
   }
   const S = (n) => +((n * paso) / fps).toFixed(2);
   return {
@@ -41,7 +43,7 @@ export function medirTimeline({ base, ventanas, total, fps = 30, bordeF = 12, pa
     ventanaSec: S(ventF), avatarVistoSec: S(avatarVistoF), avatarTapadoSec: S(tapadoF), avatarTapadoInteriorSec: S(tapadoInteriorF),
     avatarTapadoPct: ventF ? +((100 * tapadoInteriorF) / ventF).toFixed(1) : 0,
     placaVistaSec: S(placaF), coberturaPct: +((100 * (cubiertoF + avatarVistoF)) / Math.ceil(total / paso)).toFixed(1),
-    destellos, repesConsecutivos: repes, peoresVentanas: peores.slice(0, 8),
+    destellos, repesConsecutivos: repes, paresRepe: paresRepe.slice(0, 8), peoresVentanas: peores.slice(0, 8),
   };
 }
 

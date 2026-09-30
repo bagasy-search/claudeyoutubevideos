@@ -1,0 +1,45 @@
+{
+  "slug": "cmecargador",
+  "canal": "claudio-mendoza",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_cmecargador.txt",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200
+  },
+  "cta": {
+    "head": "Suscríbete al canal",
+    "ancla": "Si esto te sirvi",
+    "sub": "Los 3 manuales, en el enlace de abajo",
+    "qr": "qr/cmecargador.png"
+  },
+  "avatar": {
+    "face": "public/ref/claudio_mendoza_full.png",
+    "ref": "public/ref/claudio_mendoza_face128.png"
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
+    "cardId": "cmep2026092402"
+  },
+  "titulo": "Carga la Batería del Auto con Cualquier Cargador de Laptop (¡Sí Funciona!)",
+  "ctas": [
+    {
+      "ancla": "Esas siete conexiones que no se hacen nunca",
+      "head": "Las 7 conexiones que no se hacen",
+      "sub": "Escanea el código",
+      "qr": "qr/cmecargador.png",
+      "durS": 10
+    },
+    {
+      "ancla": "La tabla de cable y fusible para cada corriente",
+      "head": "La tabla de cable y fusible",
+      "sub": "Escanea el código",
+      "qr": "qr/cmecargador.png",
+      "durS": 10
+    }
+  ],
+  "overrides": {
+    "animadoMaxPct": 50
+  }
+}

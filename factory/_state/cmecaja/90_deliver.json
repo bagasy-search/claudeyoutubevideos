@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-18T05:47:01.407Z",
+ "status": "done",
+ "inputsHash": "8f62452c9af23722",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/cmecaja/cmecaja.mp4?v=1",
+  "version": 1,
+  "bytes": 625140721,
+  "durSec": 1319.6,
+  "saltosPts": 0,
+  "tramosNegros": 0,
+  "hoja": "D:\\rtmp\\factory\\cmecaja\\audit\\hoja.jpg",
+  "bagasy": "entregado (--no-youtube)"
+ },
+ "ms": 721630
+}

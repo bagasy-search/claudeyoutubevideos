@@ -142,3 +142,47 @@ test("paths: aislamiento por slug", () => {
   assert.ok(!insideSlug("tcprueba", path.join(P.root, "public", "img", "otroslug", "p001.jpg")));
   assert.ok(!insideSlug("tcprueba", path.join(P.root, "public", "img", "tcprueba2", "x.jpg")), "prefijo parecido no cuenta");
 });
+
+// ── CANDADO POR SLUG (ítem B6) ───────────────────────────────────────────────────────────────────
+test("candado: un segundo orquestador VIVO sobre el mismo slug es rechazado, y el huérfano se pisa", async () => {
+  const { tomarCandado } = await import("../lib/candado.mjs");
+  const fs = await import("node:fs"); const os = await import("node:os"); const path = await import("node:path");
+  const { slugPaths } = await import("../lib/paths.mjs");
+  const slug = "zzcandado";
+  const f = path.join(slugPaths(slug).state, "orquestador.json");
+  fs.mkdirSync(path.dirname(f), { recursive: true });
+  // otro proceso VIVO (uso mi propio PID con otro número de proceso imposible de distinguir: uso el PID real)
+  fs.writeFileSync(f, JSON.stringify({ pid: process.pid + 0, host: os.hostname(), desde: "x", slug }));
+  // mismo PID = soy yo mismo reanudando: NO debe rechazar
+  assert.doesNotThrow(() => tomarCandado(slug, { log: () => {} }));
+  // un PID que NO existe = candado huérfano: se pisa sin quejarse
+  fs.writeFileSync(f, JSON.stringify({ pid: 999999, host: os.hostname(), desde: "x", slug }));
+  let dijo = "";
+  assert.doesNotThrow(() => tomarCandado(slug, { log: (m) => { dijo += m; } }));
+  assert.match(dijo, /huérfano/);
+  fs.rmSync(path.dirname(f), { recursive: true, force: true });
+});
+
+// ── BORRADO QUE NO ATRAVIESA ENLACES ─────────────────────────────────────────────────────────────
+test("borrarSeguro: se NIEGA si hay un junction adentro, y el destino real sobrevive", async () => {
+  const { borrarSeguro, enlacesDentro } = await import("../lib/borrar.mjs");
+  const fs = await import("node:fs"); const os = await import("node:os"); const path = await import("node:path");
+  const base = fs.mkdtempSync(path.join(os.tmpdir(), "junc-"));
+  const real = path.join(base, "tesoro"); fs.mkdirSync(real);
+  fs.writeFileSync(path.join(real, "claves.env"), "OPENAI_API_KEY=no-me-borres");
+  const wt = path.join(base, "wt"); fs.mkdirSync(wt);
+  let hayJunction = true;
+  try { fs.symlinkSync(real, path.join(wt, "public"), "junction"); } catch { hayJunction = false; }
+  if (hayJunction) {
+    assert.equal(enlacesDentro(wt).length, 1);
+    let dijo = "";
+    assert.equal(borrarSeguro(wt, { log: (m) => { dijo += m; } }), false, "no puede borrar un árbol con enlaces");
+    assert.match(dijo, /ATRAVIESA/);
+    assert.ok(fs.existsSync(path.join(real, "claves.env")), "el destino real tiene que sobrevivir");
+    fs.rmdirSync(path.join(wt, "public"));   // así se desarma: rmdir sobre el enlace
+  }
+  // sin enlaces, borra normal
+  assert.equal(borrarSeguro(wt, { log: () => {} }), true);
+  assert.ok(!fs.existsSync(wt));
+  fs.rmSync(base, { recursive: true, force: true });
+});

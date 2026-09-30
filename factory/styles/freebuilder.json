@@ -1,0 +1,102 @@
+{
+  "nombre": "The Free Builder / El Constructor Libre",
+  "montaje": "premium",
+  "idioma": "es",
+  "fish": {
+    "voz": "freebuilder",
+    "blockChars": 1200,
+    "cps": 14.8
+  },
+  "frases": {
+    "cps": 14.8,
+    "minChars": 55,
+    "maxSec": 9,
+    "objetivoSec": 5.5
+  },
+  "ventanas": {
+    "padSec": 0.4,
+    "fusionarSec": 0.2
+  },
+  "vlog": {
+    "minPlanoS": 1.2,
+    "partirS": 7,
+    "colaFotoS": 2.5,
+    "maxAvatarTapadoS": 1,
+    "maxPlacaVistaS": 1.5
+  },
+  "fondo": "#0A0B08",
+  "placa": "img/{slug}/{slug}_placa_a.jpg",
+  "imagen": {
+    "size": "1088x608",
+    "quality": "low",
+    "motorConCara": "gpt",
+    "motorSinCara": "gptsin"
+  },
+  "presentador": "the same man from the reference image, about 50, dark curly hair with volume going grey at the temples, a short salt-and-pepper beard, olive skin, wearing a washed charcoal-grey work shirt with the sleeves rolled to the forearm over a black t-shirt",
+  "presentadorToken": "TOMAS",
+  "formula": "bright natural daylight, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+  "vintage": "faded 1970s colour photograph, real family snapshot, no text, no letters, no labels, no signs",
+  "lugares": {
+    "taller_a": "in his own workshop garage with a bare concrete floor, in the background a red rolling tool chest with the drawers half open, a pegboard wall with pliers and spanners hanging in rows, a metal shelving unit loaded with spray cans, and the roller door open to the street letting daylight in",
+    "taller_b": "in the same workshop by the steel shelving, in the background stacked buckets of filler and sealant, coils of wire, a stepladder leaning against the wall, plastic bins of screws and fittings, and a bench vice bolted to a scarred wooden bench",
+    "banco": "at a rough wooden workbench, in the background a bench vice, a steel trowel and a notched float lying on the wood, a dusty mixing bucket, a bag of cement folded over at the top and a chipped mug holding pencils",
+    "mezcla": "on the concrete floor of the workshop beside a black mixing tub, in the background a bag of grey cement torn open, a shovel standing in the tub, a hose coiled by the drain, a scattering of dry cement dust on the floor and a stack of cleaned bricks",
+    "patio": "in a small back patio with worn floor tiles, in the background a bare brick wall, a coiled garden hose, potted plants on an upturned crate, a plastic chair with paint marks and a broom leaning in the corner",
+    "cocina": "in a modest home kitchen, in the background a refrigerator, white wall tiles, a dish rack with plates, a kettle on the counter and a checkered cloth over the table",
+    "bano": "in a small tiled bathroom, in the background a white basin with a chrome tap, a mirror with a spotted edge, a plastic tooth mug, folded towels on a rail and grout lines going grey between the tiles",
+    "living": "in a modest living room, in the background a worn brown sofa with a cushion, a low tv stand, a thin rug, a window with the curtain pushed aside and a plant in a pot",
+    "obra": "in a half-finished room with the plaster still bare, in the background a wall with a patch of fresh render drying darker than the rest, a plank on two trestles, a bucket of water and dust sheets bunched on the floor",
+    "ferreteria": "at the counter of a small neighbourhood hardware store, in the background wooden drawers of screws, stacked bags of cement and lime, tins of sealant on a shelf, brushes hanging on hooks and a roll of wire mesh against the wall",
+    "vereda": "on the pavement in front of the house in flat daylight, in the background the house wall with a stained lower strip, a metal gate, a parked pickup with the tailgate down and tools laid out on it",
+    "ducha": "in a small shower stall with square wall tiles, in the background a chrome shower arm with a limescaled head, a plastic bottle on a corner shelf, a rubber squeegee hanging on a hook, a drain grate set in the floor and grout lines gone dark between the tiles",
+    "horno": "beside a home-built brick wood oven in the back yard, in the background the oven dome of soot-darkened bricks, an iron door hanging open on the firebox, a stack of split firewood against the wall, a long-handled peel leaning on the oven and a galvanised bucket of ash on the ground",
+    "fuego": "at an outdoor work table against a bare block wall, in the background a scorched steel sheet on the table top, a blue gas blowtorch canister standing upright, a pair of welding gloves lying flat, a metal bucket of water and a broom leaning in the corner",
+    "techo": "up on a flat roof in flat daylight, in the background a parapet wall with flaking paint, a rusted water tank on a steel frame, a gutter running to a downpipe, a bucket of sealant with a brush laid across it and a ladder top resting against the edge",
+    "lavadero": "in a small home laundry room with a deep white utility sink, in the background a top-loading washing machine with a folded towel on the lid, a plastic basket of clothes on the floor, bottles of detergent and bleach lined up on a shelf, a wooden clothes peg bag hanging on a nail and a window with frosted glass",
+    "tendedero": "in a back yard under open sky, in the background a wire clothesline strung between two posts with white shirts pegged out, a plastic laundry basket on the grass, a brick wall with a water stain, a folded metal clothes horse leaning on the wall and a garden tap dripping into a bucket",
+    "entrada": "in the entrance hall of a modest home, in the background a wooden front door with a worn threshold, a coat hook with a jacket on it, a shoe rack with two pairs of shoes, a small radiator under a mirror and a doormat pushed out of place",
+    "dormitorio": "in a small bedroom, in the background a bed with a folded blanket, a bedside table with a lamp and a glass of water, a wardrobe door left ajar, a power socket low on the outside wall and a window with the shutter box above it",
+    "ventanal": "beside a large window in a cold room, in the background a metal window frame with water beaded on the glass, a wide sill holding a plant pot and a folded cloth, a curtain pushed to one side and a radiator under the sill"
+  },
+  "movimiento": "camara",
+  "avatarPrompt": "A man speaks warmly and naturally to the camera in his workshop, natural head movement, expressive face, realistic lighting",
+  "dialecto": "ESPAÑOL NEUTRO LATINOAMERICANO — TÚ (mezclas, mira, fíjate, tienes, pon, vas a ver). ⛔ NUNCA voseo (mezclá, mirá, tenés, poné) y NUNCA vosotros. Esto NO es una preferencia: es el dialecto de la VOZ CLONADA del canal, verificado el 17-sep-2026 transcribiendo tres videos ya publicados (tfbdesague, canelavinagre, entretecho): 'cuando tú echas', 'le pones encima', 'lo dejas ahí, después lo despegas y miras'. Si el guion va en otro dialecto que la referencia, el clon deriva y suena plano. ⚠️ Los TÍTULOS del tablero sí están en voseo ('Mezclá', 'Mirá'): eso es el empaque, no la narración — no lo tomes como el dialecto del guion. Evitar palabras fuertemente regionales; cuando el material no tiene nombre neutro, nombrarlo UNA vez con sus variantes (ej. 'telgopor, unicel o icopor, según dónde vivas') y después usar una sola. Usar: balde o cubeta, cemento, cal, arena, llana, cuchara de albañil, lija, detergente, azulejo, zócalo, mampostería.",
+  "cta": {
+    "regex": "^Si esto te sirvi",
+    "head": "Suscríbete al canal"
+  },
+  "guia": {
+    "nombre": "La Colección del Constructor Libre",
+    "landing": "https://constructorlibre.com",
+    "pago": "PAGO — pago único, acceso inmediato, garantía de 7 días. ⛔ NUNCA decir gratis, ni regalo, ni descarga libre, ni 'te la dejo'.",
+    "_verificado": "Índice leído de constructorlibre.com el 17-sep-2026 y re-verificado el 18-sep-2026 (página de venta, US$47 por Hotmart). Sólo se promete lo que está en esta lista.",
+    "volumenes": [
+      "Vol I · Manual de Reparaciones Caseras: 76 arreglos numerados en 8 módulos (madera, óxido, plagas, goteras y caños), con cantidades exactas y planos",
+      "Vol II · Guía Anti-Humedad, Moho y Goteras: los 4 caminos del agua, diagnóstico rápido en 20 minutos, condensación/filtración/humedad ascendente/caños uno por uno, moho de raíz, y el orden correcto de secado-preparación-reparación",
+      "Vol III · La Colección: los dos ebooks + Hoja de Compras Maestra + El Taller de $50 (guía de herramientas exclusiva, no se vende suelta) + Fichas de Emergencia + actualizaciones de por vida"
+    ],
+    "temas": [
+      "Los 76 arreglos numerados, con las cantidades exactas y los planos de cada uno",
+      "El líquido de $2 que sella la madera por 50 años",
+      "El bórax que mata la colonia de hormigas desde la reina",
+      "Faros del auto como nuevos por $1 y rayones que desaparecen",
+      "La sección de límites: qué NO tocar y cuándo conviene llamar a un profesional",
+      "Los 4 caminos por los que entra el agua y cómo saber cuál es el tuyo en 20 minutos",
+      "Moho: cómo limpiarlo con seguridad y matarlo de raíz en vez de taparlo",
+      "El orden correcto: secar, preparar y recién ahí reparar",
+      "La Hoja de Compras Maestra: qué comprar, cuánto rinde cada cosa y cuánto tendría que salir",
+      "El Taller de $50: con qué herramientas alcanza de verdad para arreglar toda la casa",
+      "Fichas de Emergencia: qué cortar primero cuando se rompe algo (agua, gas, luz)"
+    ],
+    "reglas": [
+      "⛔ EL MANUAL NO TIENE RECETAS DE CEMENTO. Sus 8 módulos son madera, óxido, plagas, goteras y caños. En un video de mezclas de cemento está PROHIBIDO decir o insinuar que las proporciones, la receta o el truco del video están en la guía: eso es la mentira que el creador prohibió expresamente.",
+      "El puente honesto desde un video de cemento es lo que la guía SÍ tiene: la Hoja de Compras (cuánto rinde y cuánto tendría que salir cada material antes de que te lo vendan caro), El Taller de $50 (con qué herramientas alcanza), la sección de límites (qué no tocar), y la Guía Anti-Humedad cuando el video toca paredes, revoque o agua.",
+      "Sólo se promete lo que está en `temas`. Si el guion menciona algo que NO está acá, no se vende como parte de la guía.",
+      "Es PAGA: prohibido decir gratis / te la regalo / descargala libre. Se dice que está en el link o en el QR, nada más.",
+      "NUNCA decir el precio ni deletrear el link en voz alta: el precio y el link van en la descripción y en el QR en pantalla.",
+      "Nunca decir el nombre personal del creador ni nada que revele que no es Tomás. En Hotmart el vendedor figura como 'Bagasy Studio'.",
+      "3 CTA por video, casuales, dentro del flujo de lo que está explicando — nunca un corte comercial. La 1ª nace de un dato que acaba de mostrar, la 2ª de un error que acaba de cometer o corregir, la 3ª al cierre.",
+      "El link de la descripción lleva `?v=<slug>` para saber qué video vende."
+    ]
+  }
+}

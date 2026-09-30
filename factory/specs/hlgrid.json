@@ -1,0 +1,40 @@
+{
+  "slug": "hlgrid",
+  "canal": "harlan-lineman",
+  "modo": "avatar",
+  "idioma": "en",
+  "guion": "D:/rtmp/factory/_guiones/GUION_hlgrid.txt",
+  "voz": {
+    "id": "harlan"
+  },
+  "cta": {
+    "head": "Subscribe for more from the line",
+    "ancla": "If you want more of what forty years"
+  },
+  "avatar": {
+    "face": "public/ref/harlan_full.png",
+    "ref": "public/ref/harlan_face128.png"
+  },
+  "bagasy": {
+    "channelKey": "draft:harlanlineman",
+    "cardId": "hrl2026092501"
+  },
+  "titulo": "I Restored Power for 40 Years — Do These 7 Things the Moment the Grid Goes Down",
+  "overrides": {
+    "agnesFlash": {
+      "p001": "dead silent house, faint ice pellets ticking on window glass, wind outside",
+      "p001x": "sleet ticking and tapping against a window pane, soft winter wind",
+      "p003": "sleet hissing, wind at the top of a pole, a diesel truck idling below",
+      "p008x": "gas burners hissing, soft whoosh of flame, quiet kitchen",
+      "p027": "small gas generator engine droning inside a garage",
+      "p128": "gas generator engine running loud, exhaust puttering",
+      "p144": "generator engine humming under falling snow, wind",
+      "p153": "pickup truck engine idling in a garage",
+      "p172x": "sharp electrical arc crackle and buzz, sleet",
+      "p204": "water dripping steadily into a steel sink, quiet house",
+      "p217": "electric sparks crackling and popping on wet asphalt",
+      "p244": "diesel truck idling, ratchet of the parking brake, wind",
+      "p271": "snowstorm wind, diesel engines idling, faint hydraulic whine"
+    }
+  }
+}
