@@ -73,7 +73,7 @@ import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
 import { Readable } from "node:stream";
-import { execFileSync } from "node:child_process";
+import { execFileSync as _efs } from "node:child_process"; const execFileSync = (c, a, o) => _efs(c, a, { windowsHide: true, ...(o || {}) }); // sin ventanas de consola (27-sep)
 
 const [, , planArg, fase, ...rest] = process.argv;
 const FL = Object.fromEntries(rest.filter(a => a.startsWith("--")).map(a => { const [k, v] = a.slice(2).split("="); return [k, v ?? true]; }));
@@ -90,19 +90,40 @@ const dirsOf = P => { const DIR = P.dir.replace(/\\/g, "/").replace(/\/?$/, "/")
 for (const P of PLANS) { const d = dirsOf(P); fs.mkdirSync(d.ANC, { recursive: true }); fs.mkdirSync(d.CL, { recursive: true }); }
 const P = PLANS[0], { DIR, ANC, CL } = dirsOf(P);
 let k = Math.floor(Math.random() * Math.max(1, KS.length)); const key = () => KS[(k++) % KS.length];
+
+// ⛔ (27-sep) la consulta de estado va con la MISMA CLAVE que creó el job: las claves ya no comparten jobs
+//    (con una clave al azar: 404 task not found → TIMEOUT a los 40 min → reenvío que quema cupo). kFor() busca
+//    una vez qué clave ve el job y la recuerda.
+const KMAP = new Map();
+async function kFor(vid) {
+  if (KMAP.has(vid)) return KMAP.get(vid);
+  for (const kx of KS) {
+    try {
+      const r = await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + kx }, signal: AbortSignal.timeout(30000) });
+      const t = await r.text();
+      if (r.ok && !/not.?found/i.test(t)) { KMAP.set(vid, kx); return kx; }
+    } catch {}
+  }
+  return key();
+}
+
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
 const mime = f => f.endsWith(".png") ? "image/png" : /\.(mp3)$/.test(f) ? "audio/mpeg" : /\.wav$/.test(f) ? "audio/wav" : "image/jpeg";
 const uri = f => `data:${mime(f)};base64,` + fs.readFileSync(f).toString("base64");
-const refPathOf = (P, n) => n === "k0" ? P.k0_from : /^K\d+$/.test(n) ? dirsOf(P).ANC + n + ".png" : (P.extra || {})[n] || n;
+// cualquier id de ancla del plan (K3, D_c12_1…) resuelve a anc/<id>.png; si no, `extra` o ruta literal
+const isAnc = (P, n) => /^K\d+$/.test(n) || (P.anchors || []).some(a => a.id === n);
+const refPathOf = (P, n) => n === "k0" ? P.k0_from : isAnc(P, n) ? dirsOf(P).ANC + n + ".png" : (P.extra || {})[n] || n;
 const refPath = n => refPathOf(P, n);
-const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a]);
-const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
-const wh = f => execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number);
+// reintento ante caídas de proceso de Windows (0xC0000142 = DLL init failed cuando hay cientos de procesos: 6 videos a la vez)
+const xsync = (cmd, args, o) => { for (let t = 0; ; t++) { try { return execFileSync(cmd, args, o); } catch (e) { if (t >= 4 || e.status === 1) throw e; Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 3000 * (t + 1)); } } };
+const ff = (...a) => xsync("ffmpeg", ["-v", "error", "-y", ...a]);
+const dur = f => Number(xsync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
+const wh = f => xsync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number);
 
-const LIGHT = " BRIGHT, correctly exposed photo, big soft DAYLIGHT from a window, white balance NEUTRAL, no amber cast, no grading, no vignette, no film grain, no dark moody look, lifted shadows; brightness from the room lighting, not post-production — do not raise saturation, no glow, no HDR. An ordinary photo, not a film still. Real skin with visible pores, fine lines and natural texture, not smooth, not plastic, not retouched.";
+const LIGHT = P.light != null ? " " + P.light : " BRIGHT, correctly exposed photo, big soft DAYLIGHT from a window, white balance NEUTRAL, no amber cast, no grading, no vignette, no film grain, no dark moody look, lifted shadows; brightness from the room lighting, not post-production — do not raise saturation, no glow, no HDR. An ordinary photo, not a film still. Real skin with visible pores, fine lines and natural texture, not smooth, not plastic, not retouched.";
 const IDENT = " IDENTITY: the presenter must have EXACTLY the face of the man/woman in the LAST input image (a close-up of the real face): same face shape, eyes, nose, eyebrows, hair and beard, same age — copy that face, do not let it drift, do not make them younger or more attractive. The last image is only for the face; the scene comes from the first image. Do NOT add objects that are not described.";
-const LOOK = " Ultra realistic casual home video, handheld phone footage with small natural shakes, BRIGHT correctly exposed image, big soft daylight from the window, neutral white balance, no grading, no vignette, no dark moody look; real skin with visible pores and fine lines, not smooth, not plastic; natural hands; nothing polished, no music.";
+const LOOK = P.look != null ? " " + P.look : " Ultra realistic casual home video, handheld phone footage with small natural shakes, BRIGHT correctly exposed image, big soft daylight from the window, neutral white balance, no grading, no vignette, no dark moody look; real skin with visible pores and fine lines, not smooth, not plastic; natural hands; nothing polished, no music.";
 const SE = "The video STARTS EXACTLY on the first reference image and ENDS EXACTLY on the second reference image: the very first frame is the first image and the very last frame is the second image — same place, same framing, same light, same objects in the same places; in between, one continuous take without cutting or changing angle. The third reference image is only the presenter's real face: keep exactly that face the whole time. ";
 
 // ---------- anclas ----------
@@ -129,12 +150,15 @@ const usd = (u, batch) => { const d = u.input_tokens_details || {}; const f = ba
 // lo ESPERADO con las palancas de default (1088x608, K/foto base en caja 256x144, cara 96 tok, extras como vengan) en el
 // modo elegido: si el real se pasa >15% es que algo se salteó (size grande, ref sin achicar, cara entera…) → aviso.
 const esperado = (it, batch) => usd({ input_tokens_details: { text_tokens: Math.ceil(it.prompt.length / 4),
-  image_tokens: 96 + it.a.from.reduce((s, n) => s + (n === "k0" || /^K\d+$/.test(n) ? 144 : tokIn(...wh(small(refPathOf(it.Pl, n), EXTRA_BOX, dirsOf(it.Pl).ANC)))), 0) },
+  image_tokens: 96 + it.a.from.reduce((s, n) => s + (n === "k0" || isAnc(it.Pl, n) ? 144 : tokIn(...wh(small(refPathOf(it.Pl, n), EXTRA_BOX, dirsOf(it.Pl).ANC)))), 0) },
   output_tokens: OUT_TOK[SIZE0] || 96 }, batch);
 
 // ref achicada (cacheada en anc/_ref/): cabe en la caja sin deformar
 function small(f, [bw, bh], ANCd) {
-  const o = ANCd + "_ref/" + path.basename(f).replace(/\.[^.]+$/, "") + `_${bw}x${bh}.png`;
+  // ⛔ el nombre lleva un hash de la RUTA completa: dos refs con el mismo basename (S1/anc/K0.png y S2/anc/K0.png como
+  //    `extra`) pisaban la misma copia chica y TODAS las anclas de la 2ª salían del set de la 1ª (tfbinodoro, 27-sep).
+  const hsh = [...path.resolve(f)].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7).toString(36);
+  const o = ANCd + "_ref/" + path.basename(f).replace(/\.[^.]+$/, "") + `_${hsh}_${bw}x${bh}.png`;
   if (!fs.existsSync(o) || fs.statSync(o).mtimeMs < fs.statSync(f).mtimeMs) {
     fs.mkdirSync(ANCd + "_ref", { recursive: true });
     const [w, h] = wh(f); if (w <= bw && h <= bh) fs.copyFileSync(f, o);
@@ -185,7 +209,7 @@ function construirItems() {
 }
 function prepararItem(it) { // arma inputs chicos recién cuando sus K previos existen
   const { Pl, a } = it, ANCd = dirsOf(Pl).ANC;
-  it.inputs = a.from.map(n => { const f = refPathOf(Pl, n); return small(f, n === "k0" || /^K\d+$/.test(n) ? prevOf(Pl) : EXTRA_BOX, ANCd); });
+  it.inputs = a.from.map(n => { const f = refPathOf(Pl, n); return small(f, n === "k0" || isAnc(Pl, n) ? prevOf(Pl) : EXTRA_BOX, ANCd); });
   it.size = sizeOf(Pl);
   it.inputs.push(face128(Pl));
   it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + IDENT + LIGHT;
@@ -193,6 +217,7 @@ function prepararItem(it) { // arma inputs chicos recién cuando sus K previos e
 }
 let gasto = 0, nimg = 0, avisos = 0;
 function guardar(it, b64, usage, batch) {
+  if (!it.prompt) { it.prompt = it.a.prompt; it.inputs = []; it.size = sizeOf(it.Pl); } // retomado de un batch viejo sin preparar
   const raw = it.out.replace(".png", "_raw.png"); fs.writeFileSync(raw, Buffer.from(b64, "base64")); to169(raw, it.out);
   const c = usd(usage || {}, batch), e = esperado(it, batch); gasto += c; nimg++;
   const d = usage?.input_tokens_details || {};
@@ -243,7 +268,7 @@ async function bajar(b, porKey) { // stremeado por línea (el JSONL con base64 r
 async function anclasBatch(items) {
   const porKey = Object.fromEntries(items.map(it => [it.key, it]));
   if (fs.existsSync(PEND)) { const pend = JSON.parse(fs.readFileSync(PEND, "utf8")); log("retomo batch pendiente", pend.join(" "));
-    items.filter(it => !fs.existsSync(it.out)).forEach(prepararItem); await esperarYBajar(pend, porKey); fs.unlinkSync(PEND); }
+    items.filter(it => !fs.existsSync(it.out) && it.deps.every(f => fs.existsSync(f))).forEach(prepararItem); await esperarYBajar(pend, porKey); fs.unlinkSync(PEND); }
   for (let ronda = 1; ; ronda++) {
     const pend = items.filter(it => !fs.existsSync(it.out));
     if (!pend.length) return;
@@ -309,32 +334,52 @@ function tramo(c) { // audio rellenado a segundo entero → mp3
 }
 async function gen(id, body) {
   let vid;
-  for (let t = 0; t < 200 && !vid; t++) {
-    const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
-    vid = j.video_id || j.id;
-    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(25000 + Math.random() * 10000); }
+  for (let t = 0; t < +(process.env.VLOG_TRIES || 200) && !vid; t++) {
+    let j = {};
+    const kPost = key(); try { j = await (await fetch(B + "/videos", { method: "POST", signal: AbortSignal.timeout(120000), headers: { Authorization: "Bearer " + kPost, "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json(); } catch (e) { j = { error: "red: " + e.message + " (queue retry)" }; }
+    vid = j.video_id || j.id; if (vid) KMAP.set(vid, kPost); // la clave que CREÓ el job es la que lo ve
+    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(+(process.env.VLOG_RETRY_MS || 25000) + Math.random() * 10000); }
   }
   if (!vid) return log("GAVE UP", id);
   log("en cola", id);
   const t0 = Date.now();
   while (Date.now() - t0 < 40 * 60e3) {
     await sleep(15000);
-    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + key() } })).json().catch(() => ({}));
-    if (g.status === "completed" && g.url) { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
+    let g = {};
+    try { g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { signal: AbortSignal.timeout(60000), headers: { Authorization: "Bearer " + (await kFor(vid)) } })).json(); } catch { continue; }
+    if (g.status === "completed" && g.url) {
+      for (let t = 0; t < 5; t++) try { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url, { signal: AbortSignal.timeout(300000) })).arrayBuffer())); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); } catch (e) { log("descarga falló, reintento", id, e.message); await sleep(10000); }
+      return log("FAIL descarga", id);
+    }
     if (/fail|error|cancel/i.test(g.status || "")) return log("FAIL", id, JSON.stringify(g).slice(0, 200));
   }
   log("TIMEOUT", id);
 }
+const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
+const stateDet = () => J(CL + "state_det.json");        // planos `detail` (keyframe d1→d2) van aparte
 const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSync(CL + "state.json", "utf8")) : {};
 const PRON = P.pronoun || "he";
+const min256 = f => { const [w, h] = wh(f); if (Math.min(w, h) >= 256) return f;
+  const k = 256 / Math.min(w, h), o = CL + "_min256_" + path.basename(f).replace(/\.[^.]+$/, "") + ".png";
+  if (!fs.existsSync(o)) ff("-i", f, "-vf", `scale=${Math.ceil(w * k)}:${Math.ceil(h * k)}:flags=lanczos`, o); return o; };
 const MUTE = ` When the reference audio ends ${PRON} stops talking and keeps the mouth closed.`;            // anti-balbuceo del relleno
 const MUTE_LINE = " After saying that line they stop talking and keep the mouth closed.";
 if (fase === "clips") {
   const sel = P.clips.filter(c => !soloIds.length || soloIds.includes(c.id));
   await Promise.all(sel.map((c, i) => sleep(i * 3000).then(async () => {
     const out = soloIds.length ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
-    const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(P.face), ...(c.refs || []).map(n => uri(refPath(n)))];
+    // ⛔ agnes rechaza lados <256 px ("input image side length must be between 256 and 5760"): la cara de gpt-image-2
+    //    viene en 128x192 (palanca de costo de las anclas) → para los clips va una copia agrandada (tfbinodoro, 27-sep).
+    const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(min256(P.face)), ...(c.refs || []).map(n => uri(min256(refPath(n))))];
     let body, T;
+    if (c.detail) { // plano detalle `keyframe`: first/last = anc/D_<id>_1/2.png, sin habla, trae su foley. Va a state_det.json
+      T = c.audio ? tramo(c).T : c.secs;
+      body = { mode: "keyframe", seconds: String(T), first_frame: uri(ANC + `D_${c.id}_1.png`), last_frame: uri(ANC + `D_${c.id}_2.png`),
+        prompt: `Close-up detail shot, one continuous take from the first frame to the last frame: ${c.d1}; it slowly becomes: ${c.d2}. Real hands and real materials, natural slow movement, physically plausible.` + LOOK + " No speech, only the real sound of the action and the quiet room." };
+      await gen(out, body);
+      if (fs.existsSync(CL + out + ".mp4")) { const s = stateDet(); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(CL + "state_det.json", JSON.stringify(s, null, 1)); }
+      return;
+    }
     if (c.audio) {
       const tr = tramo(c); T = tr.T;
       body = { mode: "reference", seconds: String(T), images: imgs, audios: [uri(tr.mp3)],
@@ -367,8 +412,6 @@ async function vision(frameJpg, facePng) {
 // la del plan (para probar/rearmar sin tocar el worktree de otro).
 const WORK = FL.out ? String(FL.out).replace(/\\/g, "/").replace(/\/?$/, "/") : CL;
 if (FL.out) fs.mkdirSync(WORK, { recursive: true });
-const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
-const stateDet = () => J(CL + "state_det.json");        // planos `detail` (keyframe d1→d2) van aparte
 const ffo = (...a) => execFileSync("ffmpeg", ["-v", "error", ...a], { maxBuffer: 1 << 28 });
 function pcm(f, T) { // mono 16 kHz float; con T: rellena/corta a T (como load() de sync.py)
   const a = ["-i", f, "-vn", "-ac", "1", "-ar", "16000"]; if (T) a.push("-af", `apad=whole_dur=${T}`, "-t", String(T));

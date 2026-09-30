@@ -1,0 +1,3557 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 6.0,
+  "db": -23
+ },
+ "cam": [
+  {
+   "id": "b001",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "shakes": [
+     {
+      "at": 2,
+      "amp": 12,
+      "len": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b002",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b003",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b004",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "shakes": [
+     {
+      "at": 1,
+      "amp": 12,
+      "len": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b005",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b006",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b007",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1,
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b008",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b009",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b010",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b011",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b012",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b013",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b014",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b015",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b016",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b017",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b018",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b019",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b020",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b021",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b022",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b023",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b024",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b025",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b026",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b027",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b028",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b029",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b030",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b031",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b032",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b033",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b034",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b035",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b036",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b037",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b038",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b039",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "shakes": [
+     {
+      "at": 0,
+      "amp": 12,
+      "len": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b040",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b041",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b042",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b043",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b044",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b045",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b046",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b047",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b048",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b049",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b050",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b051",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b052",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b053",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b054",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b055",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b056",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b057",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b058",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b059",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b060",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b061",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b062",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b063",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b064",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b065",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b066",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b067",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b068",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b069",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b070",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b071",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b072",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b073",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b074",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b075",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b076",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b077",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b078",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b079",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b080",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b081",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "shakes": [
+     {
+      "at": 1,
+      "amp": 12,
+      "len": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b082",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b083",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b084",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b085",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b086",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b087",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b088",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b089",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b090",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b091",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b092",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b093",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b094",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b095",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b096",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b097",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b098",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b099",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b100",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b101",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b102",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b103",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b104",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b105",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b106",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b107",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b108",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b109",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "shakes": [
+     {
+      "at": 3,
+      "amp": 12,
+      "len": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b110",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": -1,
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b111",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b112",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b113",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b114",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b115",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b116",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b117",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b118",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b119",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b120",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b121",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b122",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b123",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b124",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b125",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b126",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b127",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b128",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b129",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b130",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b131",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b132",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b133",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b134",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b135",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b136",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b137",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b138",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b139",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b140",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b141",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b142",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b143",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b144",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  }
+ ],
+ "overlays": [
+  {
+   "kind": "TdcStopwatch",
+   "beat": "b003",
+   "props": {
+    "to": 8,
+    "label": "HINCAPOSTES",
+    "at": [
+     80,
+     17
+    ],
+    "runFrames": 54
+   },
+   "word": "ocho",
+   "dur": 3.6,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/digit_tick.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b003",
+   "props": {
+    "text": "DE LA BASURA",
+    "at": [
+     30,
+     16
+    ],
+    "tone": "white"
+   },
+   "word": "basura",
+   "dur": 1.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b005",
+   "props": {
+    "name": "CAÑO",
+    "origin": "bastidor de cama",
+    "cost": "$0",
+    "at": [
+     18,
+     4
+    ]
+   },
+   "word": "caño",
+   "dur": 1.7,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b005",
+   "props": {
+    "name": "CHAPA",
+    "origin": "tapa de alcantarilla",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "chapa",
+   "dur": 1.7,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b005",
+   "props": {
+    "name": "MECHA ROTA",
+    "origin": "de mi banco",
+    "cost": "$0",
+    "at": [
+     82,
+     4
+    ]
+   },
+   "word": "mecha",
+   "dur": 1.7,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b007",
+   "props": {
+    "pos": "top",
+    "size": 104,
+    "words": [
+     {
+      "t": "SE ROMPIÓ",
+      "beat": "b007",
+      "word": "rompió",
+      "hl": "red"
+     },
+     {
+      "t": "DOS VECES",
+      "beat": "b007",
+      "word": "dos",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "rompió",
+   "until": "b007",
+   "off": -0.05,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b008",
+   "props": {
+    "text": "LO QUE NADIE CUENTA",
+    "at": [
+     50,
+     14
+    ],
+    "tone": "yellow",
+    "size": 58
+   },
+   "word": "casi",
+   "dur": 2.6,
+   "off": -1.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b010",
+   "props": {
+    "pos": "top",
+    "size": 100,
+    "words": [
+     {
+      "t": "100 ESTACAS",
+      "beat": "b010",
+      "word": "cien",
+      "hl": "yellow"
+     },
+     {
+      "t": "120 METROS",
+      "beat": "b010",
+      "word": "ciento"
+     }
+    ]
+   },
+   "word": "necesitaba",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/number_slam.mp3",
+     "db": -14
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b011",
+   "props": {
+    "text": "MAZA 5 KG",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "maza",
+   "dur": 1.8,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b012",
+   "props": {
+    "text": "2 TARDES",
+    "sub": "y la espalda",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "tardes",
+   "dur": 2.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b017",
+   "props": {
+    "pos": "top",
+    "size": 100,
+    "words": [
+     {
+      "t": "LA APUESTA",
+      "beat": "b017",
+      "word": "apuesta",
+      "hl": "yellow"
+     },
+     {
+      "t": "UN ASADO",
+      "beat": "b017",
+      "word": "asado",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "minuto",
+   "dur": 3.4,
+   "off": -1.0,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTimeSkip",
+   "beat": "b020",
+   "props": {
+    "text": "ESA SEMANA"
+   },
+   "word": "semana",
+   "dur": 1.2,
+   "off": -0.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_whoosh_soft.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b021",
+   "props": {
+    "name": "ROTOMARTILLO",
+    "origin": "del volquete",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "rotomartillo",
+   "dur": 2.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b027",
+   "props": {
+    "name": "CAÑO Ø76",
+    "origin": "bastidor de cama",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "caño",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b028",
+   "props": {
+    "name": "CHAPA 10 mm",
+    "origin": "tapa de alcantarilla",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "chapa",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b029",
+   "props": {
+    "name": "MECHA SDS-MAX",
+    "origin": "rota",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "cola",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcExploded",
+   "beat": "b030",
+   "props": {
+    "assemble": true,
+    "at": [
+     30,
+     52
+    ],
+    "scale": 0.8
+   },
+   "word": "todo",
+   "until": "b030",
+   "off": -0.3,
+   "until_off": 1.5,
+   "sfx": [
+    {
+     "src": "sfx/cam_travel.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b031",
+   "props": {
+    "text": "ESTACA 2×2 · 80 cm",
+    "sub": "40 enterrados",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "eucalipto",
+   "dur": 2.6,
+   "off": -0.3,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b038",
+   "props": {
+    "step": 1,
+    "total": 6,
+    "title": "EL ROTOMARTILLO"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b051",
+   "props": {
+    "step": 2,
+    "total": 6,
+    "title": "EL VÁSTAGO"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b055",
+   "props": {
+    "step": 3,
+    "total": 6,
+    "title": "EL CAÑO"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b062",
+   "props": {
+    "step": 4,
+    "total": 6,
+    "title": "LA TAPA"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b065",
+   "props": {
+    "step": 5,
+    "total": 6,
+    "title": "SOLDAR"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b072",
+   "props": {
+    "step": 6,
+    "total": 6,
+    "title": "LAS ESTACAS"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b042",
+   "props": {
+    "text": "OÍDOS · ANTEOJOS · GUANTES",
+    "icons": [
+     "goggles",
+     "gloves"
+    ],
+    "tone": "yellow"
+   },
+   "until": "b042",
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -20
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b044",
+   "props": {
+    "text": "SÓLO PERCUSIÓN · SIN ROTACIÓN",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "until": "b044",
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcExploded",
+   "beat": "b049",
+   "props": {
+    "assemble": true,
+    "at": [
+     30,
+     52
+    ],
+    "scale": 0.8
+   },
+   "word": "adaptador",
+   "until": "b050",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/cam_travel.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b052",
+   "props": {
+    "text": "ANTEOJOS SIEMPRE",
+    "icons": [
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "anteojos",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -20
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b053",
+   "props": {
+    "text": "ACERO TEMPLADO",
+    "sub": "acuérdate",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "templado",
+   "dur": 2.4,
+   "off": -0.3,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b055",
+   "props": {
+    "text": "10 cm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "centímetros",
+   "dur": 1.6,
+   "off": -0.5,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcCaliper",
+   "beat": "b060",
+   "props": {
+    "dims": [
+     {
+      "from": [
+       26,
+       62
+      ],
+      "to": [
+       74,
+       62
+      ],
+      "value": "Ø68 mm",
+      "tone": "yellow"
+     },
+     {
+      "from": [
+       26,
+       80
+      ],
+      "to": [
+       74,
+       80
+      ],
+      "value": "70 mm",
+      "tone": "red"
+     }
+    ],
+    "gap": 46
+   },
+   "word": "sesenta",
+   "until": "b060",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/marker_drive.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b062",
+   "props": {
+    "text": "TAPA 3 mm",
+    "sub": "la fina",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "fina",
+   "dur": 2.0,
+   "off": -0.3,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b065",
+   "props": {
+    "text": "CARETA ANTES DE ENCENDER",
+    "icons": [
+     "eye"
+    ],
+    "tone": "red"
+   },
+   "word": "careta",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -20
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b066",
+   "props": {
+    "text": "ELECTRODO 2,5 mm",
+    "sub": "bien seco",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "electrodo",
+   "dur": 2.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b078",
+   "props": {
+    "text": "NUNCA LA MANO CERCA DE LA ESTACA",
+    "icons": [
+     "alert",
+     "gloves"
+    ],
+    "tone": "red"
+   },
+   "word": "nunca",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b080",
+   "props": {
+    "pos": "top",
+    "size": 118,
+    "words": [
+     {
+      "t": "SE PARTIÓ",
+      "beat": "b080",
+      "word": "partió",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "partió",
+   "dur": 2.0,
+   "off": -0.05,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b082",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "TAPA ABOLLADA",
+      "beat": "b082",
+      "word": "tapa",
+      "hl": "yellow"
+     },
+     {
+      "t": "SOLDADURA AGRIETADA",
+      "beat": "b082",
+      "word": "soldadura",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "tapa",
+   "until": "b082",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b086",
+   "props": {
+    "text": "3 mm ES POCO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "tres",
+   "dur": 2.4,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b087",
+   "props": {
+    "text": "LAS ESQUINAS",
+    "sub": "lo más débil",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "esquinas",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcCaliper",
+   "beat": "b089",
+   "props": {
+    "dims": [
+     {
+      "from": [
+       26,
+       62
+      ],
+      "to": [
+       74,
+       62
+      ],
+      "value": "70 mm",
+      "tone": "red"
+     },
+     {
+      "from": [
+       26,
+       80
+      ],
+      "to": [
+       74,
+       80
+      ],
+      "value": "Ø68 mm",
+      "tone": "yellow"
+     }
+    ],
+    "gap": 40
+   },
+   "word": "setenta",
+   "until": "b089",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/marker_drive.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b092",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "CHAPA GRUESA",
+      "beat": "b092",
+      "word": "chapa",
+      "hl": "yellow"
+     },
+     {
+      "t": "PRECALENTAR",
+      "beat": "b092",
+      "word": "precalentar",
+      "hl": "yellow"
+     },
+     {
+      "t": "BISELAR",
+      "beat": "b092",
+      "word": "estaca",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "entendí",
+   "until": "b092",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b093",
+   "props": {
+    "text": "CHAPA 10 mm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "diez",
+   "dur": 2.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b096",
+   "props": {
+    "text": "ROJO OSCURO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "rojo",
+   "dur": 2.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b097",
+   "props": {
+    "text": "ENFRIAR LENTO · SIN AGUA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "yellow"
+   },
+   "word": "arena",
+   "dur": 3.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -20
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b102",
+   "props": {
+    "text": "BISEL 45°",
+    "sub": "las 4 esquinas",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "biselo",
+   "dur": 2.6,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b105",
+   "props": {
+    "pos": "top",
+    "size": 110,
+    "words": [
+     {
+      "t": "PRUEBA",
+      "beat": "b105",
+      "word": "vuelta",
+      "hl": "yellow"
+     },
+     {
+      "t": "DE FUEGO",
+      "beat": "b105",
+      "word": "estaca",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "segunda",
+   "dur": 2.4,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcStopwatch",
+   "beat": "b108",
+   "props": {
+    "to": 8,
+    "label": "HINCAPOSTES",
+    "at": [
+     82,
+     16
+    ],
+    "runFrames": 240
+   },
+   "word": "ahí",
+   "until": "b110",
+   "until_off": 1.3,
+   "sfx": [
+    {
+     "src": "sfx/digit_tick.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b112",
+   "props": {
+    "pos": "bottom",
+    "size": 92,
+    "words": [
+     {
+      "t": "9 s",
+      "beat": "b112",
+      "word": "nueve"
+     },
+     {
+      "t": "· 8 s",
+      "beat": "b112",
+      "word": "ocho"
+     },
+     {
+      "t": "· 7,5 s",
+      "beat": "b112",
+      "word": "siete",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "segunda",
+   "until": "b112",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/number_slam.mp3",
+     "db": -14
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b114",
+   "props": {
+    "text": "NIVEL PRIMERO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "nivel",
+   "dur": 2.4,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b115",
+   "props": {
+    "text": "GOLPES CORTOS",
+    "sub": "después, a fondo",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "cortitos",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b116",
+   "props": {
+    "text": "CODOS PEGADOS",
+    "sub": "rotomartillo vertical",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "codos",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b121",
+   "props": {
+    "pos": "bottom",
+    "size": 96,
+    "words": [
+     {
+      "t": "MAZA: 3 min 30 s",
+      "beat": "b121",
+      "word": "tres",
+      "hl": "red"
+     },
+     {
+      "t": "HINCAPOSTES: 8 s",
+      "beat": "b121",
+      "word": "ocho",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "tres",
+   "until": "b121",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/number_slam.mp3",
+     "db": -14
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b122",
+   "props": {
+    "text": "SIN BISELAR",
+    "sub": "a propósito",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "biselar",
+   "dur": 2.4,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b124",
+   "props": {
+    "text": "TIERRA BLANDA · SIN PIEDRAS",
+    "icons": [
+     "alert"
+    ],
+    "tone": "yellow"
+   },
+   "word": "blanda",
+   "dur": 3.0,
+   "off": -0.3,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -20
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b125",
+   "props": {
+    "text": "CON PIEDRA, REBOTA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "piedra",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -20
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b126",
+   "props": {
+    "text": "7–10 s CADA ESTACA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "diez",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b128",
+   "props": {
+    "text": "ALARGUE 30 m",
+    "sub": "más lejos: generador",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "alargue",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b129",
+   "props": {
+    "text": "CAÑOS Y CABLES ENTERRADOS",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "caños",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b130",
+   "props": {
+    "text": "SÓLO ESTACAS 2×2",
+    "sub": "poste de 4\": no probé",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "estacas",
+   "dur": 3.0,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTimeSkip",
+   "beat": "b131",
+   "props": {
+    "text": "UNA MAÑANA"
+   },
+   "word": "mañana",
+   "dur": 1.2,
+   "off": -0.9,
+   "sfx": [
+    {
+     "src": "sfx/sfx_whoosh_soft.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b132",
+   "props": {
+    "text": "PAUSA CADA 10",
+    "sub": "que respire",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "pausa",
+   "dur": 2.6,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b133",
+   "props": {
+    "text": "ESTACA 62: PIEDRA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "sesenta",
+   "dur": 2.4,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b134",
+   "props": {
+    "text": "ESQUINEROS: A PALA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "esquineros",
+   "dur": 2.6,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b138",
+   "props": {
+    "pos": "top",
+    "size": 92,
+    "words": [
+     {
+      "t": "2 ELECTRODOS",
+      "beat": "b138",
+      "word": "electrodos",
+      "hl": "yellow"
+     },
+     {
+      "t": "+ 1 DISCO",
+      "beat": "b138",
+      "word": "disco"
+     },
+     {
+      "t": "= LA MITAD DE UN DOMINGO",
+      "beat": "b138",
+      "word": "domingo",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "gastó",
+   "until": "b138",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b140",
+   "props": {
+    "text": "TUTORES DE TOMATE",
+    "sub": "mismo vástago, caño más chico",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "varillas",
+   "dur": 3.0,
+   "off": -0.3,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b141",
+   "props": {
+    "text": "ANTEOJOS · OÍDOS · GUANTES · SÓLO PERCUSIÓN",
+    "icons": [
+     "goggles",
+     "gloves",
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "seguridad",
+   "until": "b141",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b144",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b144",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "LA ROLADORA DE CAÑO",
+      "beat": "b144",
+      "word": "doblo",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b144",
+   "off": -0.1,
+   "until_off": 6.0,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "covers": {}
+}

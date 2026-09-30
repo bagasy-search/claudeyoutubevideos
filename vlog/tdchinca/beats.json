@@ -1,0 +1,1314 @@
+[
+ {
+  "id": "b001",
+  "type": "DX",
+  "scene": "H1",
+  "secs": 3,
+  "d1": "close view of a steel cup adapter fitted on the head of a square wooden stake pressed into hard grass by a heavy grey SDS hammer drill, soil starting to jump around the stake",
+  "d2": "the same stake sunk deep so the cup sits at ground level, loose soil and grass scattered around, the hammer drill still pressed down",
+  "text": "",
+  "P": "H1a"
+ },
+ {
+  "id": "b002",
+  "type": "V",
+  "scene": "H1",
+  "A": "the neighbour stands beside a row of short stakes in the grass with a five-kilo sledgehammer over his shoulder, sweaty, grumbling toward the presenter",
+  "K": "the neighbour with the sledgehammer resting on his shoulder and a sceptical frown, one hand on his hip, the presenter beside a finished stake holding a heavy hammer drill",
+  "line": "Yo con la maza tardé media hora en clavar cuatro.",
+  "text": "Yo con la maza tardé media hora en clavar cuatro.",
+  "P": "H1a"
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "H1",
+  "A": "he lifts the heavy hammer drill, glances at a small stopwatch in his other hand and turns to the camera with a small calm smile",
+  "K": "he holds the hammer drill hanging at his side and looks straight at the camera with a calm half smile, a driven stake behind him",
+  "text": "Ocho segundos. Con un rotomartillo que alguien tiró a la basura.",
+  "P": "H1a"
+ },
+ {
+  "id": "b004",
+  "type": "DX",
+  "scene": "H1",
+  "secs": 3,
+  "d1": "extreme close view of a steel pipe cup sitting on the head of a wooden stake, a hammer drill chisel shank welded on its flat top, the whole thing shaking hard from hammering",
+  "d2": "the stake now much lower, cup pressed to the ground, dust and small clods flying",
+  "text": "",
+  "P": "H1a"
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "G1",
+  "A": "he stands in the workshop and kicks the pile of scrap pipes and plates beside him with his boot, talking to the camera",
+  "K": "he stands with his boot on the scrap pile, one eyebrow raised, looking at the camera, the pile of pipes and plates shifted",
+  "text": "Loco, ¿no? Un caño, una chapa y la cola de una mecha rota. Todo salió de esa pila.",
+  "P": "G1a"
+ },
+ {
+  "id": "b006",
+  "type": "V",
+  "scene": "H1",
+  "A": "the neighbour has his arms crossed now, shaking his head slowly, looking at the presenter with a sceptical half smile",
+  "K": "the neighbour with crossed arms and tilted head, the presenter holding the hammer drill next to him, both beside the stakes",
+  "line": "Eso se rompe a la primera, ya vas a ver.",
+  "text": "Eso se rompe a la primera, ya vas a ver.",
+  "P": "H1b"
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "G1",
+  "A": "he holds up a cracked cup adapter in one hand and a split wooden stake in the other, looking at the camera with a rueful face",
+  "K": "he holds the cracked adapter and the split stake side by side at chest height, looking at the camera, lips pressed",
+  "text": "Y tenía razón. Se rompió. Dos veces. Y no fue por mala suerte.",
+  "P": "G1b"
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "G1",
+  "A": "he puts the split stake down on the workbench and points at it with a greasy finger, talking to the camera",
+  "K": "he leans on the workbench with both hands, looking at the camera, the split stake and the adapter in front of him",
+  "text": "Te voy a mostrar exactamente por qué, porque eso que falló es lo que casi nadie te cuenta.",
+  "P": "G1b"
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "PA",
+  "A": "he stands on a grass field beside a sagging old wire fence with rotten leaning stakes, gesturing along the line of the fence toward the far end",
+  "K": "he points down the length of the sagging fence with his arm extended, looking at the camera",
+  "text": "Todo empezó con un amigo, que tiene un campito con el alambrado tirado por la última tormenta.",
+  "P": "PAa"
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "PA",
+  "A": "he crouches at the base of a rotten stake and pulls it out of the soil easily with one hand, showing it",
+  "K": "he holds up a rotten stake eaten at the base, looking at the camera with a sad shrug",
+  "text": "Estacas podridas al ras, alambre en el pasto. Necesitaba cien estacas nuevas, en ciento veinte metros.",
+  "P": "PAa"
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "PA",
+  "A": "he swings a five-kilo sledgehammer down onto a stake head and it lands a little off centre, he winces",
+  "K": "he leans on the sledgehammer handle breathing hard, looking down at a stake that is only a hand deep in the ground",
+  "text": "Yo probé a maza, como todos. Con una maza de cinco kilos, la estaca se me clavó bien poquito.",
+  "P": "PAa"
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "PA",
+  "A": "he rubs the small of his back with one hand, looking at the row of stakes still to drive",
+  "K": "he stands with a hand on his lower back looking at a long row of stakes lying in the grass, tired",
+  "text": "Hice las cuentas: cien estacas, dos tardes enteras. Y la espalda hecha pedazos.",
+  "P": "PAa"
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "PA",
+  "A": "he holds a post-hole digger standing in the grass and shakes his head at it, looking at the camera",
+  "K": "he stands with a post-hole digger planted in the grass, shaking his head at the camera with a wry face",
+  "text": "Una hoyadora te hace el pozo, pero para estacas finas es matar una hormiga con un cañón: cien pozos, y encima hay que rellenar.",
+  "P": "PAb"
+ },
+ {
+  "id": "b014",
+  "type": "V",
+  "scene": "PA",
+  "A": "the neighbour leans on the old fence wire holding his sledgehammer, talking to the presenter with a lopsided smile",
+  "K": "the neighbour leaning on a stake with the sledgehammer at his feet, arms folded over the top of it",
+  "line": "Con la maza. Como toda la vida, sin inventos.",
+  "text": "Con la maza. Como toda la vida, sin inventos.",
+  "P": "PAb"
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "PA",
+  "A": "he taps the top of a stake with his knuckles, looking at it thoughtfully, then looks up at the sky",
+  "K": "he stands with a hand on his chin looking at a stake, deep in thought, sledgehammer lying in the grass",
+  "text": "Y ahí se me ocurrió: un rotomartillo golpea mucho más fuerte que yo, y no se cansa. ¿Y si lo uso para clavar?",
+  "P": "PAb"
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "PA",
+  "A": "he shrugs and walks a few steps with the sledgehammer over his shoulder, turning back to the camera",
+  "K": "he stands in the grass facing the camera, sledgehammer on his shoulder, chin raised in a half-smile",
+  "text": "Sin girar, solo el golpe. Lo único que me faltaba era un rotomartillo. Y no tenía uno.",
+  "P": "PAb"
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "PA",
+  "A": "he crosses his arms and looks at the neighbour with a mischievous half smile, chin up",
+  "K": "he stands with arms crossed facing the neighbour, a challenging half smile",
+  "text": "Y se lo dije al vecino: si clavo una estaca en menos de un minuto, el asado del domingo lo pones tú.",
+  "P": "PAc"
+ },
+ {
+  "id": "b018",
+  "type": "V",
+  "scene": "PA",
+  "A": "the neighbour uncrosses his arms and puts out a big rough hand to shake, laughing",
+  "K": "the neighbour with his hand held out over the fence wire, a big challenging grin",
+  "line": "Trato hecho. Y si pierdes, la carne la pones tú y la leña también.",
+  "text": "Trato hecho. Y si pierdes, la carne la pones tú y la leña también.",
+  "P": "PAc"
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "PA",
+  "A": "he shakes the neighbour's hand firmly and turns back to the camera, eyebrows raised",
+  "K": "he holds the shaken hand up, looking at the camera with a raised eyebrow and a half smile",
+  "text": "Ya no era solo por la espalda. Ahora había un asado en juego, y no pensaba perderlo.",
+  "P": "PAc"
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "VO",
+  "A": "he walks along a neighbourhood street beside a big yellow rubbish skip full of rubble, looking into it, talking to the camera",
+  "K": "he stands at the edge of the skip leaning in, one hand on the rim, pointing at something inside it with the other",
+  "text": "Justo esa semana, volviendo del taller, pasé al lado de una obra. Y en el volquete, entre los escombros, lo vi.",
+  "P": "VOa"
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "VO",
+  "A": "he pulls a dusty grey SDS-max hammer drill out of the rubble by its handle, cable trailing without a plug, and looks it over",
+  "K": "he holds the dusty hammer drill up in both hands with its cable hanging cut, looking at it with a pleased frown",
+  "text": "Un rotomartillo SDS-max, de los pesados. Sin ficha, con el cable pelado y lleno de polvo de cemento.",
+  "P": "VOa"
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "VO",
+  "A": "he presses the chisel end against his palm and rattles the tool next to his ear, listening",
+  "K": "he holds the hammer drill next to his ear, eyes on the ground, listening carefully",
+  "text": "Lo sacudí al lado de la oreja. Se oía entero por dentro. Nadie lo miraba, así que me lo llevé al hombro.",
+  "P": "VOa"
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "VO",
+  "A": "he walks away down the street with the heavy hammer drill on his shoulder, looking back at the camera with a mischievous smile",
+  "K": "he stops in the street with the hammer drill on his shoulder and turns his head to the camera, grinning slightly",
+  "text": "Ya sé lo que estás pensando: capaz que estaba roto. Por eso lo primero fue revisarlo.",
+  "P": "VOa"
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "VO",
+  "A": "he sits on the kerb next to the skip and turns the hammer drill over in his hands, looking at its worn end",
+  "K": "he sits on the kerb with the hammer drill across his knees, looking at it, a small smile",
+  "text": "Pesaba unos cinco kilos, de puro golpe. Nada de electrónica rara: un mecanismo simple y bruto.",
+  "P": "VOb"
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "VO",
+  "A": "he stands and sets off along the street with the tool on his shoulder, the skip behind him",
+  "K": "he walks away with the hammer drill on his shoulder, looking back over it at the camera",
+  "text": "De los que se arreglan con un destornillador. Justo lo que quería.",
+  "P": "VOb"
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "G1",
+  "A": "he sets the dusty hammer drill down on the wooden workbench of his workshop and wipes his hands on a rag, looking at it",
+  "K": "he stands behind the workbench with the hammer drill in front of him, the rag over his shoulder, looking at the tool",
+  "text": "Pero antes, el inventario. Lo que vas a necesitar es poco, y casi todo es chatarra.",
+  "P": "G1c"
+ },
+ {
+  "id": "b027",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of a rusty piece of thick round steel pipe about seven centimetres wide lying on the wooden bench beside a tape measure",
+  "d2": "the same pipe with a thumb pressing the tape measure to its open end, a chalk line on it",
+  "text": "Un caño de setenta y seis milímetros de diámetro, de una cama vieja. Diez centímetros de largo te alcanzan.",
+  "P": "G1c"
+ },
+ {
+  "id": "b028",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of a thick square plate of steel, rust on the edges, on the bench next to a caliper",
+  "d2": "the same plate with the caliper closed over its edge showing the thickness",
+  "text": "Una chapa de diez milímetros. La mía era la tapa de una alcantarilla que se había roto en la vereda.",
+  "P": "G1c"
+ },
+ {
+  "id": "b029",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of a broken hammer drill bit lying on the bench, its long shank ending in a splintered end",
+  "d2": "the same bit now held up between two fingers, the useful shank about ten centimetres long",
+  "text": "Y la cola de una mecha SDS-max rota. No hace falta gastar una buena: con diez centímetros de vástago alcanza.",
+  "P": "G1c"
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "G1",
+  "A": "he stands with the three pieces lined up on the bench in front of him, tapping each with a finger, talking to the camera",
+  "K": "he holds his arms open above the three pieces on the bench, shrugging with a half smile, looking at the camera",
+  "text": "Eso es todo lo que lleva el hincapostes. Un caño, una chapa y una mecha rota. Gasto en materiales: cero.",
+  "P": "G1c"
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "G1",
+  "A": "he takes a length of wooden two-by-two stake from a bundle leaning on the wall and holds it toward the camera",
+  "K": "he holds the wooden stake upright next to his face, tapping it, looking at the camera",
+  "text": "Las estacas: eucalipto de dos por dos pulgadas, ochenta centímetros. Cuarenta van enterrados, cuarenta afuera.",
+  "P": "G1c"
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "G1",
+  "A": "he opens a cardboard box on the bench and takes out a few welding electrodes and a spare cutting disc, showing them",
+  "K": "he holds three welding electrodes and a worn cutting disc in one hand, looking at the camera",
+  "text": "Y de consumibles: tres electrodos, un disco de corte, y arena seca para más adelante.",
+  "P": "G1c"
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "G1",
+  "A": "he taps his chest with a greasy hand and shrugs with a proud half smile",
+  "K": "he stands with his arms crossed and a proud half smile, looking at the camera, the scrap pile behind him",
+  "text": "Lo que te va a costar de verdad: unos electrodos y un rato. El resto, lo tiran otros.",
+  "P": "G1d"
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "G2",
+  "A": "he stands in front of a scratched blackboard that has tool outlines chalked on it and taps it with a piece of chalk while talking",
+  "K": "he holds the chalk against the blackboard, half turned to the camera, looking at it",
+  "text": "Para que lo veas entero antes de empezar: son seis pasos. Uno, dejar el rotomartillo andando.",
+  "P": "G2a"
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "G2",
+  "A": "he draws a short line on the blackboard with the chalk, glancing at the camera",
+  "K": "he holds the chalk near a drawn line on the blackboard, glancing at the camera",
+  "text": "Dos, sacar el vástago de la mecha rota. Tres, cortar el caño. Cuatro, hacer la tapa con un agujero justo.",
+  "P": "G2a"
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "G2",
+  "A": "he taps the blackboard with the chalk, one step at a time, nodding",
+  "K": "he stands with the chalk raised beside the board and a small smile, looking at the camera",
+  "text": "Cinco, soldar todo. Y ahí está el error que me costó dos estacas. Y seis, preparar las estacas.",
+  "P": "G2a"
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "G2",
+  "A": "he puts the chalk down on the shelf and wipes his palms on his trousers, turning to the camera",
+  "K": "he faces the camera with his greasy hands open at his sides, casual, half smile",
+  "text": "Si te gustan estos inventos con chatarra, quédate en el taller, que hay más. Vamos a empezar.",
+  "P": "G2a"
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "G3",
+  "A": "he holds the hammer drill upside down on the bench and unscrews its rear cover with a screwdriver, looking at the inside",
+  "K": "he lifts off the grey rear cover and looks into the tool at the carbon brushes, one thumb inside",
+  "text": "Paso uno. Antes de enchufar nada, abro el rotomartillo y miro las escobillas de carbón.",
+  "P": "G3a"
+ },
+ {
+  "id": "b039",
+  "type": "D",
+  "scene": "G3",
+  "d1": "close view of two small worn carbon brushes held with tweezers over the open motor of a hammer drill, black dust on the grey housing",
+  "d2": "the same two carbon brushes now blown clean and placed back in their holders, the housing wiped",
+  "text": "Están gastadas, pero todavía sirven. Las soplo, limpio el polvo negro y las vuelvo a poner.",
+  "P": "G3a"
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "G3",
+  "A": "he strips the cut cable with a knife on the bench and screws a new plug on it, looking down at his hands",
+  "K": "he presses the new black plug on the end of the cable with his thumb, looking down at it with a calm face",
+  "text": "Al cable pelado le pongo una ficha nueva. Ojo con la conexión a tierra: cable verde y amarillo al pin del medio.",
+  "P": "G3a"
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "G3",
+  "A": "he squeezes grease from a small tube into the front of the hammer drill, looking down",
+  "K": "he wipes the front of the hammer drill with a rag, looking down at it, a smear of grease on his thumb",
+  "text": "Un poco de grasa en el frente, donde entra el vástago. Y ahora sí, a enchufarlo.",
+  "P": "G3a"
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "G3",
+  "A": "he puts on ear defenders and safety glasses in front of the camera, touching each in turn",
+  "K": "he stands with ear defenders and safety glasses on, a thumb up toward the camera",
+  "text": "Protección de oídos, anteojos, guantes. Esto hace un ruido que te deja sordo si no te proteges.",
+  "P": "G3a"
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "G3",
+  "A": "he plugs the hammer drill into a wall socket and lifts it, pointing the chisel end at the floor",
+  "K": "he holds the hammer drill pointed at the floor with his finger near the switch and looks at the small mode dial on its side",
+  "text": "Y acá viene lo más importante de todo el video: el selector de modo.",
+  "P": "G3b"
+ },
+ {
+  "id": "b044",
+  "type": "D",
+  "scene": "G3",
+  "d1": "close view of a thumb turning the mode dial of a grey SDS-max hammer drill from the drilling symbol to the chisel-only symbol",
+  "d2": "the dial now clicked onto the chisel-only symbol, the thumb resting beside it",
+  "text": "Tiene que quedar en el martillo solo, el del cincel. Sin rotación. Si gira, te tuerce la estaca y te tuerce la muñeca.",
+  "P": "G3b"
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "G3",
+  "A": "he presses the trigger and the hammer drill thumps against a thick plank on the floor, he looks at it with satisfaction",
+  "K": "he holds the running hammer drill pointed at the plank with both hands, a faint grin, looking at it",
+  "text": "Prueba en un tablón. Funciona. Percusión pura, y con ganas. Del volquete a mi taller, sin un peso.",
+  "P": "G3b"
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "GT",
+  "A": "he sets an opened-up hammer drill mechanism on the bench and points into it with a screwdriver, talking",
+  "K": "he points with a screwdriver at the open mechanism of a hammer drill, looking at the camera",
+  "text": "¿Y por qué solo percusión? Porque adentro el rotomartillo tiene un pistón que empuja el aire.",
+  "P": "GTa"
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "GT",
+  "A": "he mimes a punch with his fist toward the camera, the open mechanism on the bench",
+  "K": "he holds his fist forward like a punch, looking at the camera, the open mechanism on the bench",
+  "text": "Ese aire empuja un percutor, y el percutor golpea la cola del cincel. Miles de golpes por minuto.",
+  "P": "GTa"
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "GT",
+  "A": "he holds the chisel end of the hammer drill toward the camera, shaking his head slightly",
+  "K": "he holds the chisel end of the hammer drill toward the camera, a small serious frown",
+  "text": "Esa energía es la que necesitamos. Pero no está hecho para clavar madera, y hay que dársela por la cola.",
+  "P": "GTa"
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "GT",
+  "A": "he gestures at the adapter parts on the bench with both hands",
+  "K": "he gestures with both hands open toward the adapter parts on the bench, looking at the camera",
+  "text": "Por eso el adaptador: la copa recibe el golpe del vástago y se lo pasa a la estaca sin romperla.",
+  "P": "GTa"
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "GT",
+  "A": "he sets a stake on the bench and lays a pipe ring on its top like a cap, pressing it down",
+  "K": "he presses the pipe ring down onto the head of a stake on the bench, looking at the camera",
+  "text": "Es como un dedal en la cabeza de la estaca. La copa la abraza, y el golpe baja derecho.",
+  "P": "GTb"
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "G4",
+  "A": "he clamps the broken drill bit in a vice on the workbench, wearing safety goggles, and marks a line with a marker",
+  "K": "he holds a marker at a line on the bit clamped in the vice, looking down at it through safety goggles",
+  "text": "Paso dos. Pongo la mecha rota en la morsa y marco diez centímetros de cola, contando desde la punta del vástago.",
+  "P": "G4a"
+ },
+ {
+  "id": "b052",
+  "type": "D",
+  "scene": "G4",
+  "d1": "close view of an angle grinder cutting the shank of a bit clamped in a vice, orange sparks flying to the right",
+  "d2": "the same cut nearly through, a thin orange glow at the cut and a heavy spray of sparks",
+  "text": "Amoladora, con anteojos puestos. Las chispas van derecho a los ojos, y un ojo no se compra en la ferretería.",
+  "P": "G4a"
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "G4",
+  "A": "he blows on the cut end of the shank and inspects it under the fluorescent light",
+  "K": "he holds the short cut shank up to the light between two fingers, looking at its end with a frown",
+  "text": "Esto es acero templado, muy duro. Acuérdate de este dato, porque más adelante me pasa factura.",
+  "P": "G4a"
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "G4",
+  "A": "he puts the cut shank into a small tin and shakes it, grinning at the camera",
+  "K": "he holds a small tin with the cut shank inside, shaking it lightly, grinning",
+  "text": "Y el resto de la mecha no se tira: lo guardo, que siempre sirve para un punzón o un pasador.",
+  "P": "G4a"
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "G5",
+  "A": "he clamps the thick steel pipe in the vice and marks a cut line ten centimetres from the end with a paint marker",
+  "K": "he holds the marker at the pipe line, looking down at it, tongue pressed against his cheek",
+  "text": "Paso tres. El caño. Mido diez centímetros, y marco todo alrededor con una hoja de papel enrollada como guía.",
+  "P": "G5a"
+ },
+ {
+  "id": "b056",
+  "type": "D",
+  "scene": "G5",
+  "d1": "close view of an angle grinder cutting through a rusty steel pipe clamped in a vice, sparks flying forward",
+  "d2": "the pipe cut through, the ring falling into his glove, sparks dying out",
+  "text": "Amoladora otra vez. Nunca apoyada: siempre entrando, con las dos manos, y las chispas lejos de las botellas.",
+  "P": "G5a"
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "G5",
+  "A": "he lays the cut pipe ring on a flat steel plate and checks it for squareness with a small square, frowning",
+  "K": "he holds the small square against the cut pipe ring showing a thin gap of light on one side, looking at it with a frown",
+  "text": "Me pasé, un milímetro torcido de un lado. Lo llevo al disco y lo escuadro, porque el golpe tiene que bajar parejo.",
+  "P": "G5a"
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "G5",
+  "A": "he files the sharp edge of the cut pipe on the bench, brushing off filings with his hand",
+  "K": "he runs his thumb over the smoothed edge of the pipe ring, looking down at it, satisfied",
+  "text": "Le saco el filo con la lima, que es la parte que va a abrazar la cabeza de la estaca.",
+  "P": "G5a"
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "G5",
+  "A": "he holds a hole saw core bit in one hand and the pipe ring in the other, comparing them, looking at the camera",
+  "K": "he holds up a metal core bit and the pipe ring side by side, looking at the camera with an evaluating frown",
+  "text": "Alguien me va a decir: usa una corona de perforar. Sirve, pero hay que gastar una buena. Un caño de chatarra no cuesta nada.",
+  "P": "G5a"
+ },
+ {
+  "id": "b060",
+  "type": "D",
+  "scene": "G5",
+  "d1": "close view of a caliper measuring the inside of the cut pipe ring, reading sixty-eight millimetres",
+  "d2": "the same caliper measuring across the diagonal of a square stake head, reading seventy millimetres",
+  "text": "Ojo con estos números. Por dentro el caño mide sesenta y ocho. La diagonal de una estaca de dos por dos, setenta.",
+  "P": "G5a"
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "G5",
+  "A": "he tries to press a square stake head into the pipe ring, it does not go in, he frowns at the camera",
+  "K": "he holds the stake head against the pipe ring, showing it does not enter, looking at the camera with a wry smile",
+  "text": "O sea que no entra. Todavía no lo sabía, pero ese centímetro me iba a dar dos problemas.",
+  "P": "G5b"
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "G5",
+  "A": "he lays a thin three-millimetre steel sheet on the bench and traces the pipe ring on it with a marker, talking",
+  "K": "he lifts the pipe ring away from a traced circle on a thin sheet, looking at it, a slightly unsure face",
+  "text": "Paso cuatro, la tapa. Y acá hice lo que hice la primera vez: agarré la chapa que tenía a mano. Fina, de tres milímetros.",
+  "P": "G5b"
+ },
+ {
+  "id": "b063",
+  "type": "D",
+  "scene": "G5",
+  "d1": "close view of an angle grinder cutting a rough circle out of a thin steel sheet, sparks flying",
+  "d2": "the circle cut out, a rough round disc sitting on the bench beside the sheet",
+  "text": "La corto, redonda. Me salió lindo, y fácil. Hasta ahí, un placer.",
+  "P": "G5b"
+ },
+ {
+  "id": "b064",
+  "type": "D",
+  "scene": "G5",
+  "d1": "close view of a hand drill making an eighteen millimetre hole in the centre of a steel disc, a thin curl of metal rising",
+  "d2": "the hole done, a bright drilled edge, the shank end poking through it",
+  "text": "Y el agujero de dieciocho milímetros en el medio, justo para que el vástago pase ajustado.",
+  "P": "G5b"
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "G6",
+  "A": "he pulls a welding helmet down at the workbench, the workshop dimming, and strikes an arc on a steel piece, blue glow on his face",
+  "K": "he holds the electrode holder over a steel piece, welding helmet down, a blue-white arc at the tip",
+  "text": "Paso cinco. Soldar. Careta bajada antes de encender el arco, siempre. La luz del arco te quema la vista.",
+  "P": "G6a"
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "G6",
+  "A": "he holds up a welding electrode toward the camera with the ground clamp visible on the bench",
+  "K": "he holds a welding electrode up toward the camera, the ground clamp clipped on the bench behind it, looking at it",
+  "text": "Electrodo de dos coma cinco, bien seco. Ropa de algodón o de cuero, nada sintético que se derrita, y con ventilación.",
+  "P": "G6a"
+ },
+ {
+  "id": "b067",
+  "type": "D",
+  "scene": "G6",
+  "d1": "close view of a welding electrode laying a bead around a short steel shank passing through a hole in a thin steel disc, bright blue-white arc, smoke",
+  "d2": "the bead finished all around the shank, a dark slag crust glowing dull red",
+  "text": "Le doy un cordón alrededor del vástago, por arriba y por abajo. Fuerte, o eso creía.",
+  "P": "G6a"
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "G6",
+  "A": "he lifts the helmet and taps the slag off the weld with a chipping hammer, looking closely at it",
+  "K": "he holds the welded disc up to the fluorescent light, looking at the weld with his glasses pushed up",
+  "text": "Le saco la escoria. Se ve bien, ¿no? Parece una soldadura de manual. Así me pareció a mí.",
+  "P": "G6a"
+ },
+ {
+  "id": "b069",
+  "type": "V",
+  "scene": "G6",
+  "A": "the neighbour appears at the open workshop door frame with a mug in his hand, peering in at the welding bench",
+  "K": "the neighbour leaning on the doorframe with his mug, the presenter at the bench with the welded disc in his hands",
+  "line": "¿Y eso qué es? ¿Un sombrero para las estacas?",
+  "text": "¿Y eso qué es? ¿Un sombrero para las estacas?",
+  "P": "G6a"
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "G6",
+  "A": "he looks at the neighbour over his glasses with a dry look, holding up the disc",
+  "K": "he lowers the disc and looks toward the doorway with a dry half smile",
+  "text": "Un sombrero, sí. Un sombrero de acero para estacas. Pasa y mira, pero con anteojos.",
+  "P": "G6b"
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "G6",
+  "A": "he places the disc on the pipe ring and tacks it in three points, helmet down",
+  "K": "he holds the assembled steel cup adapter in both hands, turning it slowly, looking at it with a pleased face",
+  "text": "Uno el disco al caño con tres puntos, y ahí está: mi primer hincapostes. Vamos a probarlo.",
+  "P": "G6b"
+ },
+ {
+  "id": "b072",
+  "type": "A",
+  "scene": "ES",
+  "A": "he cuts a long eucalyptus board into stake lengths with a handsaw on a sawhorse in the yard, sawdust flying",
+  "K": "he saws through an eighty-centimetre stake with the handsaw on the sawhorse, looking down at the cut",
+  "text": "Paso seis, las estacas. Las corto de ochenta, con serrucho, en el caballete. Cuarenta van enterrados.",
+  "P": "ESa"
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "ES",
+  "A": "he compares two wooden stakes, one dense eucalyptus and one soft pine, tapping them together, looking at the camera",
+  "K": "he holds a dense eucalyptus stake and a soft pine stake side by side toward the camera",
+  "text": "Un consejo con la madera: eucalipto, o algo duro. Con pino blando, la cabeza se aplasta antes de entrar.",
+  "P": "ESa"
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "ES",
+  "A": "he stands a stake on a chopping block and sharpens one end to a wedge point with a hatchet, chips flying",
+  "K": "he holds the stake with a freshly cut wedge point up to the light, looking at it",
+  "text": "Le hago punta en cuña con el hacha, así entra en la tierra sin trabarse.",
+  "P": "ESa"
+ },
+ {
+  "id": "b075",
+  "type": "D",
+  "scene": "ES",
+  "d1": "close view of a blowtorch flame charring the pointed end of a wooden stake, thin smoke and black crust forming",
+  "d2": "the same stake end fully charred black and glossy, the flame moving away",
+  "text": "Y quemo con el soplete la parte que va bajo tierra. Carbonizada, la madera se pudre más despacio.",
+  "P": "ESa"
+ },
+ {
+  "id": "b076",
+  "type": "A",
+  "scene": "ES",
+  "A": "he carries a bundle of stakes over his shoulder to the grass and looks at the camera with a doubtful smile",
+  "K": "he stands with a bundle of stakes on his shoulder, looking at the camera with a doubtful smile",
+  "text": "Y ya están las estacas listas, con las esquinas todavía sin biselar. ¿Ves por dónde va la cosa?",
+  "P": "ESa"
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "PB",
+  "A": "he stands in the grass with the hammer drill fitted with the new adapter, ear defenders around his neck, looking at a stake standing in the soil",
+  "K": "he fits the cup over the head of a square stake standing in the grass, holding the hammer drill with both hands, looking at the stake",
+  "text": "Estaca de dos por dos, tierra del patio, la misma de todo el video. Le apoyo la copa encima, aunque no baja del todo.",
+  "P": "PBa"
+ },
+ {
+  "id": "b078",
+  "type": "A",
+  "scene": "PB",
+  "A": "he pulls the ear defenders and safety glasses on, checks his stance and squeezes the trigger, hammering on the stake",
+  "K": "he leans on the running hammer drill pressing the cup on the stake, teeth clenched, the stake vibrating",
+  "text": "Anteojos, protección de oídos, guantes de cuero. Y nunca, nunca la mano cerca de la estaca.",
+  "P": "PBa"
+ },
+ {
+  "id": "b079",
+  "type": "V",
+  "scene": "PB",
+  "A": "the neighbour steps closer with his arms crossed, grinning with mocking eyes at the presenter",
+  "K": "the neighbour with crossed arms and a smug grin, the presenter looking down at something in the grass, the hammer drill on the ground",
+  "line": "¡Eh! ¿Y eso? Se rajó.",
+  "text": "¡Eh! ¿Y eso? Se rajó.",
+  "P": "PBa"
+ },
+ {
+  "id": "b080",
+  "type": "A",
+  "scene": "PB",
+  "A": "he picks up the split stake and holds it in the light, looking at its head crushed and cracked down the middle, frowning",
+  "K": "he holds the stake with its head split in two along the grain, looking at it with a grim little frown",
+  "text": "Se partió al medio, por la veta. La estaca número uno, para la leña.",
+  "P": "PBa"
+ },
+ {
+  "id": "b081",
+  "type": "DX",
+  "scene": "PB",
+  "secs": 4,
+  "d1": "close view of the cup adapter lying on the grass with its thin lid dented like a soft tin can and a hairline crack in the weld around the shank",
+  "d2": "the same view a moment later, a hand lifting the adapter, the crack in the weld now open",
+  "text": "",
+  "P": "PBa"
+ },
+ {
+  "id": "b082",
+  "type": "A",
+  "scene": "PB",
+  "A": "he lifts the cracked adapter and shows it to the camera with a resigned look, the neighbour laughing softly out of frame",
+  "K": "he holds up the dented adapter beside his face and looks at the camera, pressing his lips together",
+  "text": "Y la tapa, abollada como una lata. Y la soldadura, agrietada. Dos golpes, y todo el trabajo al suelo.",
+  "P": "PBb"
+ },
+ {
+  "id": "b083",
+  "type": "V",
+  "scene": "PB",
+  "A": "the neighbour claps a hand on the presenter's shoulder, shaking his head kindly but amused",
+  "K": "the neighbour with a hand on the presenter's shoulder, both looking at the cracked adapter in the grass",
+  "line": "Ya te lo dije. Con la maza no falla.",
+  "text": "Ya te lo dije. Con la maza no falla.",
+  "P": "PBb"
+ },
+ {
+  "id": "b084",
+  "type": "A",
+  "scene": "PB",
+  "A": "he pats the neighbour's hand off his shoulder with a tired smile and picks up the adapter, thinking",
+  "K": "he stands with the cracked adapter in one hand, looking at it thoughtfully, chin down",
+  "text": "Tenía razón esta vez. Pero yo quería saber por qué. Porque una cosa rota siempre dice por qué se rompió.",
+  "P": "PBb"
+ },
+ {
+  "id": "b085",
+  "type": "A",
+  "scene": "G7",
+  "A": "he sets the cracked adapter down on the bench under the fluorescent tube and leans over it with his hands flat on the wood",
+  "K": "he leans over the bench looking at the cracked adapter, both hands flat, thinking hard",
+  "text": "Dos problemas, y los dos tienen explicación. Primero, la tapa.",
+  "P": "G7a"
+ },
+ {
+  "id": "b086",
+  "type": "D",
+  "scene": "G7",
+  "d1": "close view of a thin three-millimetre steel lid on a pipe ring, a thumb pressing the dent in its centre",
+  "d2": "the same lid seen from the side, showing how much it has bowed inward",
+  "text": "Tres milímetros es poco. La tapa se dobla como una cuchara, y el golpe no baja parejo, se queda en el centro.",
+  "P": "G7a"
+ },
+ {
+  "id": "b087",
+  "type": "D",
+  "scene": "G7",
+  "d1": "close view of a wooden stake head in the palm of a hand, its sharp corners chipped and splintered along the grain",
+  "d2": "the same head turned, a long crack visible running down the side of the wood",
+  "text": "Segundo, las cuatro esquinas de la estaca. Son la parte más débil de la madera, y ahí se abre la veta.",
+  "P": "G7a"
+ },
+ {
+  "id": "b088",
+  "type": "A",
+  "scene": "G7",
+  "A": "he pushes the broken stake head against the inner wall of the pipe ring showing it does not fit evenly, looking at it",
+  "K": "he holds the pipe ring with the broken stake head jammed diagonally in it, looking at the gap on one side",
+  "text": "La estaca entra torcida, el golpe va de costado, y la madera se abre. Lo que la copa tiene que hacer es abrazarla.",
+  "P": "G7a"
+ },
+ {
+  "id": "b089",
+  "type": "D",
+  "scene": "G7",
+  "d1": "close view of a caliper across the diagonal of a square stake head reading seventy millimetres, then across the inside of a pipe ring reading sixty-eight",
+  "d2": "the same stake head with its corners planed, the caliper reading sixty across the diagonal",
+  "text": "La cuenta era esta: setenta de diagonal, sesenta y ocho de hueco. No entra. Con las esquinas biseladas, sesenta. Entra justo.",
+  "P": "G7a"
+ },
+ {
+  "id": "b090",
+  "type": "A",
+  "scene": "G7",
+  "A": "he taps the hardened steel shank on the bench with a small hammer and shows the crack at the weld, looking at the camera",
+  "K": "he holds the cracked shank and disc in his open palm toward the camera with a knowing look",
+  "text": "Y la soldadura. Te dije que la mecha es acero templado, y el acero templado no se suelda en frío.",
+  "P": "G7a"
+ },
+ {
+  "id": "b091",
+  "type": "A",
+  "scene": "G7",
+  "A": "he shrugs and shakes his head with a small laugh, tapping his temple",
+  "K": "he stands with his arms open in a small shrug, looking at the camera with an amused face",
+  "text": "Soldar acero templado sin precalentar es como pegar un vidrio con cinta: al primer golpe, se abre.",
+  "P": "G7a"
+ },
+ {
+  "id": "b092",
+  "type": "A",
+  "scene": "G7",
+  "A": "he takes off his cap and rubs his curly hair, looking at the scrap pile",
+  "K": "he stands with his cap in one hand and looks at the scrap pile with narrowed eyes, thinking",
+  "text": "Y ahí entendí que me faltaban tres cosas: chapa más gruesa, precalentar, y un poco de oficio con la estaca.",
+  "P": "G7b"
+ },
+ {
+  "id": "b093",
+  "type": "A",
+  "scene": "G8",
+  "A": "he lays a thick ten millimetre steel plate on the bench and traces the pipe ring on it with a marker",
+  "K": "he lifts the pipe ring away from a traced circle on a thick steel plate, nodding to himself",
+  "text": "La chapa de diez milímetros, la de la alcantarilla. Otra vez a marcar, y otra vez a cortar.",
+  "P": "G8a"
+ },
+ {
+  "id": "b094",
+  "type": "D",
+  "scene": "G8",
+  "d1": "close view of an angle grinder cutting a round disc out of a thick steel plate, a heavy spray of orange sparks",
+  "d2": "the thick disc cut out, glowing dull orange at the edge, smoke rising",
+  "text": "Con esta el disco sufre. Paciencia, sin apurar, que se gasta un disco entero.",
+  "P": "G8a"
+ },
+ {
+  "id": "b095",
+  "type": "D",
+  "scene": "G8",
+  "d1": "close view of a hand drill boring an eighteen millimetre hole in the centre of a thick steel disc with a bit of oil on it, curls of metal rising",
+  "d2": "the finished hole, bright and clean, oil shining around it",
+  "text": "Agujero de dieciocho, despacio y con un poco de aceite, para no quemar la broca.",
+  "P": "G8a"
+ },
+ {
+  "id": "b096",
+  "type": "A",
+  "scene": "G8",
+  "A": "he holds the short hardened shank with pliers over a small torch and heats it, the tip glowing dull red",
+  "K": "he holds the glowing dull-red shank in pliers over a bucket of sand, looking at it closely through his safety glasses",
+  "text": "Y ahora lo que me faltaba: precalentar la cola de la mecha, hasta que se ponga rojo oscuro.",
+  "P": "G8a"
+ },
+ {
+  "id": "b097",
+  "type": "A",
+  "scene": "G8",
+  "A": "he buries the glowing shank in a bucket of dry sand and looks at the camera",
+  "K": "he holds a scoop of sand over the shank buried in the bucket, looking at the camera, calm",
+  "text": "Y a enfriar lento, tapada con arena seca. Nada de agua: el agua la vuelve a endurecer y vuelve a romper.",
+  "P": "G8a"
+ },
+ {
+  "id": "b098",
+  "type": "A",
+  "scene": "G8",
+  "A": "he pulls his welding helmet down and welds the shank into the thick disc on the bench, the arc lighting his face blue",
+  "K": "he holds the electrode holder with his helmet down over the shank passing through the thick disc, bright blue-white arc, smoke",
+  "text": "Ahora sí: electrodo básico, dos pasadas, por los dos lados del disco. Sin apurarme.",
+  "P": "G8a"
+ },
+ {
+  "id": "b099",
+  "type": "A",
+  "scene": "G8",
+  "A": "he hits the finished weld hard several times with a hammer and listens, then shows it to the camera",
+  "K": "he holds the disc with its shank toward the camera after hammering, the weld intact, nodding",
+  "text": "La prueba del martillazo: le doy unos golpes fuertes a la soldadura. Si suena limpio y no salta nada, sirve.",
+  "P": "G8b"
+ },
+ {
+  "id": "b100",
+  "type": "A",
+  "scene": "G8",
+  "A": "he lifts the helmet and chips slag off the finished weld with a small hammer, looking closely",
+  "K": "he holds the finished disc with the shank up to the light, the weld a neat even bead, looking at it with a pleased face",
+  "text": "Un cordón parejo, sin poros. Y no lo pulo: lo dejo como salió, que cuanto más grueso, mejor.",
+  "P": "G8b"
+ },
+ {
+  "id": "b101",
+  "type": "A",
+  "scene": "G8",
+  "A": "he presses the finished cup onto a chamfered stake on the bench and wiggles it to test the fit",
+  "K": "he lifts the cup with the stake hanging inside it by friction, smiling at the camera",
+  "text": "Y pruebo el encaje en seco. Entra justo, con un poco de juego. La estaca cuelga sola, sin caerse.",
+  "P": "G8b"
+ },
+ {
+  "id": "b102",
+  "type": "A",
+  "scene": "G8",
+  "A": "he clamps a wooden stake in the vice and planes its four corners with a hand plane at forty-five degrees, wood shavings curling",
+  "K": "he holds the planed stake head up to the light, four bright chamfers visible on its corners, looking at it",
+  "text": "Y ahora el truco de las estacas: le biselo las cuatro esquinas de la cabeza, a cuarenta y cinco grados.",
+  "P": "G8b"
+ },
+ {
+  "id": "b103",
+  "type": "D",
+  "scene": "G8",
+  "d1": "close view of a wooden stake head with four planed chamfers being slid into a steel pipe ring, a snug fit",
+  "d2": "the same head fully seated, a small even gap around it",
+  "text": "Así entra derecha, sin trabarse, y la madera no se abre, porque el caño la abraza de todos lados.",
+  "P": "G8b"
+ },
+ {
+  "id": "b104",
+  "type": "A",
+  "scene": "G8",
+  "A": "he welds the thick disc onto the pipe ring on the bench, helmet down, sparks on the bench",
+  "K": "he lifts the helmet, holding the finished adapter, a fat weld ring visible around its top, looking at it",
+  "text": "Uno el disco al caño con un cordón alrededor. Y el hincapostes está terminado. Otra vez, a probar.",
+  "P": "G8c"
+ },
+ {
+  "id": "b105",
+  "type": "A",
+  "scene": "PC",
+  "A": "he stands in the grass in front of a fresh stake, safety glasses and ear defenders on, the adapter fitted on his hammer drill, the neighbour beside him with a stopwatch in hand",
+  "K": "he stands with the adapter on the stake head and both hands on the hammer drill, looking down at it, calm",
+  "text": "Segunda vuelta. Estaca nueva, con las cuatro esquinas biseladas, y el vecino ahora con el cronómetro.",
+  "P": "PCa"
+ },
+ {
+  "id": "b106",
+  "type": "V",
+  "scene": "PC",
+  "A": "the neighbour holds up a small stopwatch, thumb on the button, looking at the presenter with narrowed eyes",
+  "K": "the neighbour lowering the stopwatch with his thumb still on it, eyebrows raised",
+  "line": "A ver, a ver. Yo te tomo el tiempo.",
+  "text": "A ver, a ver. Yo te tomo el tiempo.",
+  "P": "PCa"
+ },
+ {
+  "id": "b107",
+  "type": "A",
+  "scene": "PC",
+  "A": "he takes a slow breath and looks at the stake, one hand raising three fingers",
+  "K": "he holds up three fingers slowly with the hammer drill in the other hand, looking at the camera, tense",
+  "text": "Respiro. Tres, dos, uno.",
+  "P": "PCa"
+ },
+ {
+  "id": "b108",
+  "type": "A",
+  "scene": "PC",
+  "A": "he braces his legs wide and squeezes the hammer drill trigger with the cup pressed on the stake, dust and soil rising",
+  "K": "he leans his weight on the hammering hammer drill, the stake half sunk, looking down at it with a calm concentrated face",
+  "text": "Sin empujar de más. El peso del rotomartillo hace el trabajo, yo solo lo dirijo. Y ahí va.",
+  "P": "PCa"
+ },
+ {
+  "id": "b109",
+  "type": "DX",
+  "scene": "PC",
+  "secs": 4,
+  "d1": "close view of the cup adapter riding down over a wooden stake as it sinks in the soil, soil jumping around it, the tool shaking",
+  "d2": "the stake sunk to the ground, the cup pressed against the grass, the hammering stopping, a puff of dust",
+  "text": "",
+  "P": "PCa"
+ },
+ {
+  "id": "b110",
+  "type": "A",
+  "scene": "PC",
+  "A": "he lifts the hammer drill off the sunk stake and looks at the neighbour, breathing out",
+  "K": "he lifts the hammer drill away from a stake sunk deep in the ground, looking at the neighbour with a half smile",
+  "text": "Ocho segundos. Cuarenta centímetros de estaca adentro, y sin una sola grieta.",
+  "P": "PCb"
+ },
+ {
+  "id": "b111",
+  "type": "V",
+  "scene": "PC",
+  "A": "the neighbour looks at the stopwatch, then at the stake, scratching his cap, mouth open a little",
+  "K": "the neighbour looking at the stopwatch in his palm with his cap pushed back, stunned",
+  "line": "Ocho… no puede ser. Bueno. Otra vez, que no te creo.",
+  "text": "Ocho… no puede ser. Bueno. Otra vez, que no te creo.",
+  "P": "PCb"
+ },
+ {
+  "id": "b112",
+  "type": "A",
+  "scene": "PC",
+  "A": "he moves to a second stake and drives it in again, the neighbour crouching beside him holding the stopwatch",
+  "K": "he lifts the hammer drill from the second sunk stake, the neighbour holding up the stopwatch to show the camera",
+  "text": "Segunda estaca: nueve segundos. La tercera, ocho. La cuarta, siete y medio, cuando agarras el ritmo.",
+  "P": "PCb"
+ },
+ {
+  "id": "b113",
+  "type": "A",
+  "scene": "PC",
+  "A": "he pulls the adapter off a driven stake and checks the lid and the weld with his thumb, looking closely",
+  "K": "he holds the adapter up to the light showing the thick lid and weld intact, looking at it with a smile",
+  "text": "Miro la tapa, miro la soldadura. Intactas. Ahora sí, eso es un hincapostes.",
+  "P": "PCb"
+ },
+ {
+  "id": "b114",
+  "type": "A",
+  "scene": "PT",
+  "A": "he sets a spirit level against a stake standing in the grass and checks that it is vertical, looking at the bubble",
+  "K": "he holds the spirit level against a stake, bending to look at the bubble, calm",
+  "text": "Un truco de oficio: primero el nivel. La estaca tiene que estar recta antes del primer golpe, porque después no la enderezas.",
+  "P": "PTa"
+ },
+ {
+  "id": "b115",
+  "type": "A",
+  "scene": "PT",
+  "A": "he pulses the trigger briefly so the hammer drill taps the stake and the stake seats itself in the soil",
+  "K": "he holds the hammer drill on the stake with light pressure, the stake seated a few centimetres, looking down at it",
+  "text": "Los primeros golpes, cortitos, para que la estaca agarre. Recién ahí, gatillo a fondo.",
+  "P": "PTa"
+ },
+ {
+  "id": "b116",
+  "type": "A",
+  "scene": "PT",
+  "A": "he stands with legs apart and elbows against his body, the hammer drill vertical over a stake",
+  "K": "he stands solidly with the hammer drill vertical over the stake, elbows tucked, looking at the top",
+  "text": "Los pies separados, los codos pegados al cuerpo, y el rotomartillo bien vertical. Que el peso vaya derecho.",
+  "P": "PTa"
+ },
+ {
+  "id": "b117",
+  "type": "A",
+  "scene": "PT",
+  "A": "he lifts the hammer drill off and the cup stays stuck on the stake, he taps it loose and tilts it to look inside",
+  "K": "he holds the cup adapter upside down looking at the inside, checking for wear",
+  "text": "Al terminar, a veces la copa queda pegada por la vibración. Un golpecito, y sale.",
+  "P": "PTa"
+ },
+ {
+  "id": "b118",
+  "type": "A",
+  "scene": "PT",
+  "A": "he pushes a stake sideways with both hands to test how firm it is in the ground",
+  "K": "he holds the top of a driven stake with both hands, shaking it to test it, looking at the camera with a satisfied nod",
+  "text": "Y pruebo si aguanta, empujándola para los costados. Firme, como si la hubiera clavado un tractor.",
+  "P": "PTb"
+ },
+ {
+  "id": "b119",
+  "type": "A",
+  "scene": "PE",
+  "A": "he hands the sledgehammer to the neighbour and points at a fresh stake, smiling",
+  "K": "the presenter holds out the sledgehammer and the neighbour takes it with a doubtful frown",
+  "text": "Ahora tú con la maza. La misma estaca, el mismo suelo, y yo con el cronómetro.",
+  "P": "PEa"
+ },
+ {
+  "id": "b120",
+  "type": "V",
+  "scene": "PE",
+  "A": "the neighbour swings the sledgehammer down on a stake head, grunting, the stake going in a little",
+  "K": "the neighbour leaning on the sledgehammer breathing hard, wiping his forehead with his forearm, the stake barely sunk",
+  "line": "Ya… ya… ya casi.",
+  "text": "Ya… ya… ya casi.",
+  "P": "PEa"
+ },
+ {
+  "id": "b121",
+  "type": "A",
+  "scene": "PE",
+  "A": "he looks at the stopwatch in his hand and turns to the camera, shaking his head slightly with respect",
+  "K": "he holds up the stopwatch toward the camera showing the numbers, looking at the neighbour with a small smile",
+  "text": "Tres minutos y medio con la maza. Contra ocho segundos con el hincapostes. Sin trampa, en el mismo suelo.",
+  "P": "PEa"
+ },
+ {
+  "id": "b122",
+  "type": "A",
+  "scene": "PE",
+  "A": "he fits the cup on an unchamfered stake on purpose and hammers a short burst, the stake head splitting",
+  "K": "he lifts the hammer drill off a stake whose head has split open along the grain, looking at the camera with a shrug",
+  "text": "Y para que no me creas solo a mí: le puse una estaca sin biselar, a propósito. Mira cómo se abre.",
+  "P": "PEa"
+ },
+ {
+  "id": "b123",
+  "type": "A",
+  "scene": "PE",
+  "A": "he holds the split stake next to a clean chamfered one, looking at the camera",
+  "K": "he holds the split stake and the clean chamfered stake side by side, looking at the camera, nodding",
+  "text": "Misma copa, misma tierra, mismo rotomartillo. La única diferencia son cuatro biseles de un minuto de trabajo.",
+  "P": "PEb"
+ },
+ {
+  "id": "b124",
+  "type": "A",
+  "scene": "PE",
+  "A": "he kneels beside the stakes and pats the ground with his palm, talking to the camera",
+  "K": "he crouches next to a driven stake pressing the soil beside it with his hand, looking at the camera, serious",
+  "text": "Ahora la parte honesta. Esto anda en tierra blanda, de patio o de campo, y sin piedras.",
+  "P": "PEb"
+ },
+ {
+  "id": "b125",
+  "type": "A",
+  "scene": "PE",
+  "A": "he digs a stone out of the soil with a screwdriver and looks at the camera",
+  "K": "he holds a stone dug out of the soil in his palm and shows it to the camera, shaking his head",
+  "text": "Si hay una piedra, la estaca rebota. Y en tierra seca y dura, moja el suelo antes: sin agua, me tardó veinte segundos.",
+  "P": "PEb"
+ },
+ {
+  "id": "b126",
+  "type": "A",
+  "scene": "PE",
+  "A": "he holds a small notebook with a pencil and writes numbers, looking at the camera",
+  "K": "he holds up a small notebook with a column of scribbled numbers toward the camera, tapping it with the pencil",
+  "text": "Anoté diez estacas seguidas: entre siete y diez segundos cada una. Cien estacas son unos quince minutos de golpe puro.",
+  "P": "PEb"
+ },
+ {
+  "id": "b127",
+  "type": "A",
+  "scene": "PE",
+  "A": "he shrugs, looking at the camera, and spreads his hands",
+  "K": "he stands with both hands open, shrugging, looking at the camera, honest face",
+  "text": "Después está mover el alargue, medir cada metro veinte, y descansar. Por eso me llevó una mañana, no quince minutos.",
+  "P": "PEc"
+ },
+ {
+  "id": "b128",
+  "type": "A",
+  "scene": "PE",
+  "A": "he holds up the plug end of the cable with a thumb, pointing to the long extension cord curling across the grass",
+  "K": "he stands holding the coil of a long orange extension cord, looking at the camera, one eyebrow raised",
+  "text": "Necesitas corriente. Yo usé un alargue de treinta metros. Más lejos, un generador. Y es un límite real, no te lo escondo.",
+  "P": "PEc"
+ },
+ {
+  "id": "b129",
+  "type": "A",
+  "scene": "PE",
+  "A": "he points at the ground with the toe of his boot and looks back at the camera, serious",
+  "K": "he stands over a stake with one boot beside a small patch of disturbed soil, looking at the camera with a serious face",
+  "text": "Y antes de clavar, fíjate por dónde pasan los caños y los cables enterrados. Una estaca no ve nada.",
+  "P": "PEc"
+ },
+ {
+  "id": "b130",
+  "type": "A",
+  "scene": "PE",
+  "A": "he holds up a thick round post next to a thin stake, shaking his head, looking at the camera",
+  "K": "he stands holding a thick round post and a thin stake side by side, looking at the camera with a small shrug",
+  "text": "¿Y para postes gruesos? No. Este funciona para estacas de dos por dos. Para un poste de cuatro pulgadas, no lo probé.",
+  "P": "PEc"
+ },
+ {
+  "id": "b131",
+  "type": "A",
+  "scene": "PD",
+  "A": "he walks along the row of stakes at the far end of the field with the hammer drill on his shoulder, the neighbour walking beside him carrying a coil of wire",
+  "K": "he stops beside a long row of driven stakes with the coil-carrying neighbour beside him, looking along the fence line",
+  "text": "Al final, las cien estacas no me llevaron dos tardes. Me llevaron una mañana.",
+  "P": "PDa"
+ },
+ {
+  "id": "b132",
+  "type": "A",
+  "scene": "PD",
+  "A": "he puts the hammer drill on the grass and rests the back of his hand on its housing, checking its temperature",
+  "K": "he holds the back of his hand against the hammer drill housing, his face frowning, looking at it",
+  "text": "Con una pausa cada diez estacas, porque el rotomartillo se calienta, y hay que dejarlo respirar.",
+  "P": "PDa"
+ },
+ {
+  "id": "b133",
+  "type": "A",
+  "scene": "PD",
+  "A": "he pulls out a stake that was driven crooked and re-drives it, looking at the base with a frown",
+  "K": "he stands beside a re-driven stake pressing it straight with his palm, looking at it with a slight frown",
+  "text": "A la número sesenta y dos apareció una piedra, y rebotó. La saqué con la barreta y seguí.",
+  "P": "PDa"
+ },
+ {
+  "id": "b134",
+  "type": "A",
+  "scene": "PD",
+  "A": "he points at a thick corner post set by hand at the end of the fence with a shovel leaning on it",
+  "K": "he stands beside a thick corner post with a shovel leaning on it, looking at the camera",
+  "text": "Los esquineros, en cambio, siguen yendo a pala: van más gruesos y más hondos, y esos no los clava esto.",
+  "P": "PDa"
+ },
+ {
+  "id": "b135",
+  "type": "V",
+  "scene": "PD",
+  "A": "the neighbour sits on a stake bucket with a mug in one hand and a sledgehammer on the grass, smiling and looking at the presenter",
+  "K": "the neighbour with the mug raised in a salute toward the presenter, smiling under his cap",
+  "line": "Bueno. Me callo. Pero me lo prestas el sábado.",
+  "text": "Bueno. Me callo. Pero me lo prestas el sábado.",
+  "P": "PDb"
+ },
+ {
+  "id": "b136",
+  "type": "A",
+  "scene": "PD",
+  "A": "he looks at the neighbour and raises an eyebrow, pointing at him",
+  "K": "he points at the neighbour with a raised eyebrow and a half smile",
+  "text": "Un momento: ¿y el asado de la apuesta?",
+  "P": "PDb"
+ },
+ {
+  "id": "b137",
+  "type": "V",
+  "scene": "PD",
+  "A": "the neighbour groans, lifting his palms in surrender, laughing",
+  "K": "the neighbour with both palms raised in surrender, laughing under his cap",
+  "line": "Está bien, está bien. El domingo. La carne la pongo yo.",
+  "text": "Está bien, está bien. El domingo. La carne la pongo yo.",
+  "P": "PDb"
+ },
+ {
+  "id": "b138",
+  "type": "A",
+  "scene": "PD",
+  "A": "he leans against a fence post and looks along the finished line, then at the camera",
+  "K": "he leans on a fence post beside the finished stakes, looking at the camera with a satisfied smile",
+  "text": "Lo que me gastó de verdad: dos electrodos, un disco y la mitad de un domingo. Lo demás, del volquete.",
+  "P": "PDb"
+ },
+ {
+  "id": "b139",
+  "type": "A",
+  "scene": "PD",
+  "A": "he laughs and shakes his head, looking at the camera, one hand on the hammer drill",
+  "K": "he stands beside the finished fence line, looking at the camera with a warm relaxed smile",
+  "text": "Y hay una última cosa que no te conté.",
+  "P": "PDc"
+ },
+ {
+  "id": "b140",
+  "type": "A",
+  "scene": "PD",
+  "A": "he holds a small pipe ring adapter over a thin steel rod pressed into vegetable garden soil, tapping it",
+  "K": "he holds a small adapter over the head of a steel rod standing in the vegetable garden, looking at the camera",
+  "text": "Con un caño más chico, el mismo vástago y la misma idea, clavo varillas para los tutores de los tomates.",
+  "P": "PDc"
+ },
+ {
+  "id": "b141",
+  "type": "A",
+  "scene": "PD",
+  "A": "he counts on his fingers, looking at the camera",
+  "K": "he holds up four fingers toward the camera, serious but warm",
+  "text": "Resumen de seguridad: anteojos, protección de oídos, guantes, y el rotomartillo siempre en martillo solo. Con eso te cuidas.",
+  "P": "PDc"
+ },
+ {
+  "id": "b142",
+  "type": "A",
+  "scene": "PD",
+  "A": "he holds up the three parts of the fix one by one, the thick disc, the planed stake and the sand bucket, looking at the camera",
+  "K": "he stands holding the thick disc in one hand and a planed stake in the other, nodding at the camera",
+  "text": "Y lo que aprendí a los golpes: chapa gruesa, precalentar la soldadura, y biselar las esquinas de la estaca. Tres cosas.",
+  "P": "PDc"
+ },
+ {
+  "id": "b143",
+  "type": "A",
+  "scene": "PD",
+  "A": "he stands in front of the camera with the sun low behind the fence, the hammer drill resting in the grass beside him",
+  "K": "he looks straight into the camera with a friendly half smile, arms relaxed",
+  "text": "Si tienes un rotomartillo viejo, no lo tires. Cuéntame qué harías tú con él, y lo pensamos juntos en los comentarios.",
+  "P": "PDd"
+ },
+ {
+  "id": "b144",
+  "type": "A",
+  "scene": "PD",
+  "A": "he points off to the side with his thumb toward the workshop as he talks to the camera",
+  "K": "he holds his thumb pointing over his shoulder toward the workshop, smiling at the camera, ending",
+  "text": "En el próximo, doblo un caño en un círculo perfecto con la chatarra que me sobró. Nos vemos en el taller.",
+  "P": "PDd"
+ }
+]
