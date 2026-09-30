@@ -328,5 +328,40 @@
   "file": "broll/olcabin_st30/st_bread_cooling_window.mp4",
   "desc": "Fresh baked bread rolls cooling in a rustic wicker basket.",
   "dur": 7
+ },
+ "st_family_holiday_table": {
+  "file": "broll/olcabin_st30/st_family_holiday_table.mp4",
+  "desc": "Family eating at a Christmas table, wide shot, no faces.",
+  "dur": 7
+ },
+ "st_meatballs_cream_pan": {
+  "file": "broll/olcabin_st30/st_meatballs_cream_pan.mp4",
+  "desc": "Steaming meatballs simmering in a creamy golden sauce inside a large cooking pan.",
+  "dur": 7
+ },
+ "st_fish_fillet_board": {
+  "file": "broll/olcabin_st30/st_fish_fillet_board.mp4",
+  "desc": "Hands filleting raw white fish on a blue cutting board.",
+  "dur": 7
+ },
+ "st_bakery_display": {
+  "file": "broll/olcabin_st30/st_bakery_display.mp4",
+  "desc": "Baked bread on racks with workers in background.",
+  "dur": 7
+ },
+ "st_log_cabin_snow": {
+  "file": "broll/olcabin_st30/st_log_cabin_snow.mp4",
+  "desc": "Log cabins with smoke rising in a snowy landscape.",
+  "dur": 4.3
+ },
+ "st_dough_flour_hands": {
+  "file": "broll/olcabin_st30/st_dough_flour_hands.mp4",
+  "desc": "Hands kneading dough in flour on rustic wooden surface.",
+  "dur": 7
+ },
+ "st_soup_pot_stir": {
+  "file": "broll/olcabin_st30/st_soup_pot_stir.mp4",
+  "desc": "Large cast-iron pot of simmering stew over campfire, stirred with wooden spoon.",
+  "dur": 7
  }
 }
