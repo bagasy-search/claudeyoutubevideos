@@ -1,0 +1,11 @@
+import { supaCreds } from "../../scripts/supa_creds.mjs";
+const { U, K } = supaCreds(); const H = { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json", Prefer: "return=representation" };
+const p = await fetch(`${U}/rest/v1/video_jobs?id=eq.592`, { method: "PATCH", headers: H, body: JSON.stringify({ provider: "claude-code" }) });
+console.log("patch", p.status);
+const j = (await (await fetch(`${U}/rest/v1/video_jobs?id=eq.592&select=id,provider,status,progress,mp4_url,title`, { headers: H })).json())[0];
+console.log(JSON.stringify(j));
+const r = await (await fetch(`${U}/rest/v1/tracked_channels?id=eq.244&select=plan`, { headers: H })).json();
+const arr = Array.isArray(r[0].plan) ? r[0].plan : (r[0].plan.items || r[0].plan.plan);
+console.log(arr.map((x) => [x.id.slice(-2), x.done, x.videoJobId].join(":")).join(" | "));
+const c = arr.find((x) => x.id === "ole2026092508"); console.log("card 08:", c.title === "I Cooked for Loggers for 40 Years — These Are the Only 5 Pots I'd Buy", "done", c.done, "job", c.videoJobId);
+const h = await fetch(j.mp4_url, { method: "HEAD", redirect: "follow" }); console.log("mp4_url HTTP", h.status, h.headers.get("content-length"));
