@@ -4,6 +4,7 @@ import fs from "node:fs";
 import { execFileSync, spawnSync } from "node:child_process";
 const R = "D:/Proyectos/video2-wt/olpots/", OUT = R + "public/vid/olpots/";
 fs.mkdirSync(OUT, { recursive: true });
+const LIFT = { m2: "eq=gamma=1.15:brightness=0.04," }; // m2 salió más oscuro que su ancla (visión: luz oscura) → levanta sombras
 const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a], { windowsHide: true });
 const J = (f) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {});
 let n = 0;
@@ -14,7 +15,7 @@ for (const plan of ["M1", "COCINA"]) {
     const src = CL + v.file, dst = OUT + id + ".mp4";
     if (!fs.existsSync(src)) continue;
     if (fs.existsSync(dst) && fs.statSync(dst).mtimeMs > fs.statSync(src).mtimeMs) continue;
-    ff("-i", src, "-an", "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,format=yuv420p", "-r", "30", "-c:v", "libx264", "-crf", "19", "-preset", "veryfast", dst);
+    ff("-i", src, "-an", "-vf", `${LIFT[id] || ""}scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,format=yuv420p`, "-r", "30", "-c:v", "libx264", "-crf", "19", "-preset", "veryfast", dst);
     if (det[id]) {
       const lufs = spawnSync("ffmpeg", ["-hide_banner", "-nostats", "-i", src, "-vn", "-af", "ebur128=framelog=quiet", "-f", "null", "-"], { encoding: "utf8", windowsHide: true }).stderr || "";
       const m = /I:\s+(-?[0-9.]+) LUFS/.exec(lufs); const I = m ? +m[1] : -30;

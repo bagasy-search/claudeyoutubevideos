@@ -6,12 +6,14 @@ img/ole/portada.png
 vid/olpots/m1.mp4
 img/olpots/ar/a_logging_cookhouse.jpg
 vid/olpots/d_shelf.mp4
-avatar_clips/olpots/reel30.mp4
+vid/olpots/m2.mp4
 img/olpots/b_threepots.jpg
 broll/olpots/b_threepots.mp4
+vid/olpots/m3.mp4
 img/olpots/b_pancabinet.jpg
 broll/olpots_st30/st61.mp4
 vid/olpots/d_mug.mp4
+vid/olpots/m4.mp4
 img/olpots/b_notebooklist.jpg
 broll/olpots/b_notebooklist.mp4
 broll/olpots_st30/st56.mp4
@@ -20,6 +22,7 @@ img/olpots/b_enamel.jpg
 broll/olpots/b_enamel.mp4
 broll/olpots_st30/st114.mp4
 broll/olpots_st30/st85.mp4
+avatar_clips/olpots/reel30.mp4
 broll/olpots_st30/st58.mp4
 img/olpots/b_storeshelf.jpg
 broll/olpots_st30/st113.mp4

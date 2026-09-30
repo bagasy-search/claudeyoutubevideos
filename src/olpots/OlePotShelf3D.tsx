@@ -284,7 +284,7 @@ export const OlePotShelf3D: React.FC<OlePotShelf3DProps> = (props) => {
         return <div key={i} style={{ position: "absolute", left: x, top: y, transform: "translate(-50%,-50%)", opacity: a, fontFamily: LABEL, fontWeight: 700, fontSize: potNow < 0 ? 44 : 56, color: OLE.kraftL, letterSpacing: 4, textShadow: "0 3px 6px rgba(0,0,0,0.7)" }}>{tg}</div>;
       })}
       {spec ? (() => { const [x] = scr(spec.pot, 1); const right = X[spec.pot] < 1; return <Sheet s={spec} p={specP} x={Math.min(width - 300, Math.max(300, x + (right ? 620 : -620)))} y={height * 0.13} />; })() : null}
-      {(props.stamps ?? []).map((s, k) => { const [x, y] = scr(s.pot, potNow < 0 ? 1.0 : 1.05); return <Verdict key={k} kind={s.kind} text={s.text} at={s.at} x={x} y={y} size={potNow < 0 ? 84 : 150} />; })}
+      {(props.stamps ?? []).map((s, k) => { const [x, y] = scr(s.pot, [0.85, 0.35, 1.05, 0.95, 0.6][s.pot] * (potNow < 0 ? 1.15 : 1)); return <Verdict key={k} kind={s.kind} text={s.text} at={s.at} x={x} y={y} size={potNow < 0 ? 84 : 150} />; })}
     </AbsoluteFill>
   );
 };
