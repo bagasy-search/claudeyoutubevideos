@@ -19,9 +19,11 @@ export default {
       change: "The scene stays exactly as it is. No cut, no new place, no camera move.", motion: p.motion }));
     const sinMotion = i2v.filter((x) => !x.motion).map((x) => x.nombre);
     assertMeasured("i2vSinMovimiento", sinMotion.length, { max: 0, allowZero: true, log });
+    const qcPre = path.join(ROOT, "_v3", `${slug}_agnes_qc.json`);
+    const aFotoPre = new Set(Object.entries(fs.existsSync(qcPre) ? JSON.parse(fs.readFileSync(qcPre, "utf8")).clips || {} : {}).filter(([, c]) => c?.removed).map(([n]) => n));
     fs.mkdirSync(P.listas, { recursive: true });
     const lista = path.join(P.listas, "i2v.json");
-    fs.writeFileSync(lista, JSON.stringify(i2v, null, 1));
+    fs.writeFileSync(lista, JSON.stringify(i2v.filter((x) => !aFotoPre.has(x.nombre)), null, 1));   // los que van con FOTO no se le piden a agnes
     // agnes_qc / agnes_qc_gate (compartidos) leen el registro de clips de acá
     fs.mkdirSync(path.join(ROOT, "_v3"), { recursive: true });
     fs.writeFileSync(path.join(ROOT, "_v3", `${slug}_i2v.json`), JSON.stringify(i2v, null, 1));
