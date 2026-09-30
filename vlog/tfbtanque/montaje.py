@@ -17,6 +17,15 @@ def find(ph, after=0.0, which='start'):
         if W[i][1] < after: continue
         if all(i + k < len(W) and _eq(W[i + k][0], toks[k]) for k in range(len(toks))):
             return W[i][1] if which == 'start' else W[i + len(toks) - 1][2]
+    import difflib   # respaldo difuso: el ASR a veces se come o cambia una palabra
+    best = (0, None)
+    for i in range(len(W)):
+        if W[i][1] < after: continue
+        seg = [w[0] for w in W[i:i + len(toks)]]
+        r = difflib.SequenceMatcher(None, toks, seg).ratio()
+        if r > best[0] and seg and _eq(seg[0], toks[0]) or (r > best[0] + 0.15): best = (r, i)
+    if best[1] is not None and best[0] >= 0.7:
+        i = best[1]; return W[i][1] if which == 'start' else W[min(len(W) - 1, i + len(toks) - 1)][2]
     if os.environ.get('PARCIAL') == '1': return 1e9
     raise SystemExit(f'⛔ no encuentro la frase: "{ph}" (después de {after:.1f}s)')
 F = lambda s: int(round(s * FPS))
@@ -84,7 +93,7 @@ t = find('casi siempre son de polietileno'); over('word', t + 0.6, 2.2, sfx=HIT[
 t = find('al que casi nada se le pega'); over('mark', t, 3.0, items=[{'kind': 'label', 'x': 70, 'y': 22, 'text': 'ceroso, resbaloso', 'from': 0}])
 t = find('El pegamento queda apoyado encima'); over('word', t + 0.4, 2.4, sfx=HIT[3], sdb=-11, text='apoyado, no agarrado', variant='red', y=80, size=90)
 t = find('y el plástico se mueve'); cam('shake', t, 1.0, amt=0.5)
-t = find('Hacemos que el propio tanque se cierre'); over('word', t, 2.4, sfx=HIT[0], text='el tanque se cierra solo', variant='yellow', y=80, size=90)
+t = find('Hacemos que el'); over('word', t, 2.4, sfx=HIT[0], text='el tanque se cierra solo', variant='yellow', y=80, size=90)
 t = find('tiene que ser el mismo plástico'); over('word', t, 2.6, sfx=HIT[2], sdb=-10, text='el mismo plástico', variant='white', y=78, size=110)
 
 # ═════════ S3 — qué plástico es (WOW min 3: el símbolo que se lee) ═════════

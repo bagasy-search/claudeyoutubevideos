@@ -1,21 +1,10 @@
 // GENERADO por vlog/tfbtanque/montaje.py — no editar a mano.
 /* eslint-disable */
-export const TOTAL_FRAMES_TFBTANQUE = 28091;
+export const TOTAL_FRAMES_TFBTANQUE = 29561;
 export const BASE = "tfbtanque_vlog.mp4";
 export const AUDIO = "tfbtanque.m4a";
-export const CAM: any[] = [{"f": 0, "dur": 36, "kind": "shake", "amt": 0.8}, {"f": 36, "dur": 54, "kind": "push", "amt": 0.06}, {"f": 137, "dur": 72, "kind": "frame", "amt": 0.22, "ox": 55, "oy": 35}, {"f": 252, "dur": 63, "kind": "frame", "amt": 0.12, "ox": 40, "oy": 40}, {"f": 432, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 588, "dur": 60, "kind": "push", "amt": 0.1}, {"f": 614, "dur": 14, "kind": "punch", "amt": 0.12}, {"f": 1150, "dur": 66, "kind": "frame", "amt": 0.2, "ox": 50, "oy": 38}, {"f": 1330, "dur": 14, "kind": "whip", "dir": 1}, {"f": 2950, "dur": 14, "kind": "whip", "dir": -1}, {"f": 3872, "dur": 30, "kind": "shake", "amt": 0.5}, {"f": 4406, "dur": 14, "kind": "whip", "dir": 1}, {"f": 7252, "dur": 14, "kind": "whip", "dir": -1}, {"f": 8382, "dur": 15, "kind": "punch", "amt": 0.12}, {"f": 8693, "dur": 14, "kind": "whip", "dir": 1}, {"f": 11357, "dur": 14, "kind": "whip", "dir": -1}, {"f": 11370, "dur": 165, "kind": "push", "amt": 0.12}, {"f": 11548, "dur": 14, "kind": "whip", "dir": 1}, {"f": 12884, "dur": 14, "kind": "whip", "dir": -1}, {"f": 13341, "dur": 14, "kind": "whip", "dir": 1}, {"f": 13976, "dur": 14, "kind": "whip", "dir": -1}, {"f": 16027, "dur": 14, "kind": "whip", "dir": 1}, {"f": 17884, "dur": 14, "kind": "whip", "dir": -1}, {"f": 19833, "dur": 14, "kind": "whip", "dir": 1}, {"f": 20985, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 21917, "dur": 14, "kind": "whip", "dir": -1}, {"f": 22597, "dur": 14, "kind": "whip", "dir": 1}, {"f": 23916, "dur": 14, "kind": "whip", "dir": -1}, {"f": 25215, "dur": 24, "kind": "shake", "amt": 0.8}, {"f": 26049, "dur": 14, "kind": "whip", "dir": 1}, {"f": 26323, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 26401, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 27250, "dur": 24, "kind": "shake", "amt": 0.7}];
+export const CAM: any[] = [{"f": 0, "dur": 36, "kind": "shake", "amt": 0.8}, {"f": 36, "dur": 54, "kind": "push", "amt": 0.06}, {"f": 90, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 246, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 324, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 382, "dur": 72, "kind": "frame", "amt": 0.22, "ox": 55, "oy": 35}, {"f": 497, "dur": 63, "kind": "frame", "amt": 0.12, "ox": 40, "oy": 40}, {"f": 556, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 644, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 677, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 778, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 833, "dur": 60, "kind": "push", "amt": 0.1}, {"f": 860, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 860, "dur": 14, "kind": "punch", "amt": 0.12}, {"f": 924, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1032, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1096, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1180, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1223, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1380, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1481, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1561, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1565, "dur": 66, "kind": "frame", "amt": 0.2, "ox": 50, "oy": 38}, {"f": 1746, "dur": 14, "kind": "whip", "dir": 1}, {"f": 3366, "dur": 14, "kind": "whip", "dir": -1}, {"f": 4508, "dur": 30, "kind": "shake", "amt": 0.5}, {"f": 5189, "dur": 14, "kind": "whip", "dir": 1}, {"f": 8046, "dur": 14, "kind": "whip", "dir": -1}, {"f": 9195, "dur": 15, "kind": "punch", "amt": 0.12}, {"f": 9514, "dur": 14, "kind": "whip", "dir": 1}, {"f": 12222, "dur": 14, "kind": "whip", "dir": -1}, {"f": 12235, "dur": 165, "kind": "push", "amt": 0.12}, {"f": 12413, "dur": 14, "kind": "whip", "dir": 1}, {"f": 13749, "dur": 14, "kind": "whip", "dir": -1}, {"f": 14206, "dur": 14, "kind": "whip", "dir": 1}, {"f": 14841, "dur": 14, "kind": "whip", "dir": -1}, {"f": 16892, "dur": 14, "kind": "whip", "dir": 1}, {"f": 18753, "dur": 14, "kind": "whip", "dir": -1}, {"f": 20741, "dur": 14, "kind": "whip", "dir": 1}, {"f": 21900, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 22839, "dur": 14, "kind": "whip", "dir": -1}, {"f": 23529, "dur": 14, "kind": "whip", "dir": 1}, {"f": 25228, "dur": 14, "kind": "whip", "dir": -1}, {"f": 26527, "dur": 24, "kind": "shake", "amt": 0.8}, {"f": 27361, "dur": 14, "kind": "whip", "dir": 1}, {"f": 27635, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 27714, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 28561, "dur": 24, "kind": "shake", "amt": 0.7}];
 export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
-{
-"kind": "word",
-"from": 9,
-"dur": 63,
-"props": {
-"text": "una fortuna",
-"variant": "red",
-"y": 80,
-"size": 110
-}
-},
 {
 "kind": "mark",
 "from": 27,
@@ -35,8 +24,46 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 }
 },
 {
+"kind": "flash",
+"from": 90,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
+"kind": "flash",
+"from": 246,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
 "kind": "word",
-"from": 137,
+"from": 255,
+"dur": 63,
+"props": {
+"text": "una fortuna",
+"variant": "red",
+"y": 80,
+"size": 110
+}
+},
+{
+"kind": "flash",
+"from": 324,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
+"kind": "word",
+"from": 382,
 "dur": 66,
 "props": {
 "text": "$2",
@@ -49,7 +76,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 210,
+"from": 455,
 "dur": 48,
 "props": {
 "text": "sin soldar",
@@ -60,7 +87,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 255,
+"from": 500,
 "dur": 60,
 "props": {
 "text": "pegamento",
@@ -71,8 +98,17 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 }
 },
 {
+"kind": "flash",
+"from": 556,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
 "kind": "mark",
-"from": 331,
+"from": 577,
 "dur": 69,
 "props": {
 "items": [
@@ -97,7 +133,34 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "flash",
-"from": 614,
+"from": 644,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
+"kind": "flash",
+"from": 778,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
+"kind": "flash",
+"from": 860,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
+"kind": "flash",
+"from": 860,
 "dur": 6,
 "props": {
 "color": "#FFD21F",
@@ -105,8 +168,17 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 }
 },
 {
+"kind": "flash",
+"from": 924,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
 "kind": "triptych",
-"from": 785,
+"from": 1031,
 "dur": 78,
 "props": {
 "panels": [
@@ -131,8 +203,35 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 }
 },
 {
+"kind": "flash",
+"from": 1032,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
+"kind": "flash",
+"from": 1096,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
+"kind": "flash",
+"from": 1180,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
 "kind": "word",
-"from": 947,
+"from": 1193,
 "dur": 54,
 "props": {
 "text": "ni una gota",
@@ -142,8 +241,26 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 }
 },
 {
+"kind": "flash",
+"from": 1223,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
+"kind": "flash",
+"from": 1380,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
 "kind": "teaser",
-"from": 1028,
+"from": 1431,
 "dur": 225,
 "props": {
 "kicker": "AL FINAL DEL VIDEO",
@@ -151,8 +268,26 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 }
 },
 {
+"kind": "flash",
+"from": 1481,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
+"kind": "flash",
+"from": 1561,
+"dur": 6,
+"props": {
+"color": "#FFFFFF",
+"peak": 0.55
+}
+},
+{
 "kind": "word",
-"from": 1283,
+"from": 1699,
 "dur": 69,
 "props": {
 "text": "1 gota de agua",
@@ -163,7 +298,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 1544,
+"from": 1960,
 "dur": 93,
 "props": {
 "n": 1,
@@ -173,7 +308,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 1636,
+"from": 2052,
 "dur": 169,
 "props": {
 "n": 2,
@@ -183,7 +318,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 1803,
+"from": 2219,
 "dur": 159,
 "props": {
 "n": 3,
@@ -193,8 +328,8 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 1961,
-"dur": 14214,
+"from": 2377,
+"dur": 360,
 "props": {
 "n": 4,
 "total": 10,
@@ -203,7 +338,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 2127,
+"from": 2543,
 "dur": 172,
 "props": {
 "n": 6,
@@ -213,7 +348,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 2297,
+"from": 2713,
 "dur": 172,
 "props": {
 "n": 7,
@@ -223,8 +358,8 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 2467,
-"dur": 142,
+"from": 2883,
+"dur": 143,
 "props": {
 "n": 8,
 "total": 10,
@@ -233,7 +368,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 2608,
+"from": 3024,
 "dur": 106,
 "props": {
 "n": 9,
@@ -243,7 +378,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 2713,
+"from": 3129,
 "dur": 34,
 "props": {
 "n": 10,
@@ -253,7 +388,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 2746,
+"from": 3162,
 "dur": 66,
 "props": {
 "text": "reparación completa",
@@ -264,7 +399,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 3266,
+"from": 3867,
 "dur": 66,
 "props": {
 "text": "polietileno",
@@ -275,7 +410,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "mark",
-"from": 3407,
+"from": 4021,
 "dur": 90,
 "props": {
 "items": [
@@ -291,7 +426,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 3544,
+"from": 4166,
 "dur": 72,
 "props": {
 "text": "apoyado, no agarrado",
@@ -302,7 +437,18 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 4315,
+"from": 4741,
+"dur": 72,
+"props": {
+"text": "el tanque se cierra solo",
+"variant": "yellow",
+"y": 80,
+"size": 90
+}
+},
+{
+"kind": "word",
+"from": 5097,
 "dur": 78,
 "props": {
 "text": "el mismo plástico",
@@ -313,7 +459,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "mark",
-"from": 4625,
+"from": 5408,
 "dur": 96,
 "props": {
 "items": [
@@ -331,7 +477,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "plastic",
-"from": 4818,
+"from": 5601,
 "dur": 1200,
 "props": {
 "title": "¿QUÉ PLÁSTICO ES?",
@@ -368,7 +514,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 5129,
+"from": 5912,
 "dur": 72,
 "props": {
 "text": "fibrocemento: se cambia",
@@ -379,7 +525,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 6266,
+"from": 7049,
 "dur": 54,
 "props": {
 "text": "5 = PP",
@@ -390,7 +536,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 6439,
+"from": 7222,
 "dur": 72,
 "props": {
 "text": "no se mezclan",
@@ -402,7 +548,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 6693,
+"from": 7487,
 "dur": 78,
 "props": {
 "text": "mismo número",
@@ -413,7 +559,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "mark",
-"from": 6943,
+"from": 7737,
 "dur": 84,
 "props": {
 "items": [
@@ -429,7 +575,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 7297,
+"from": 8091,
 "dur": 66,
 "props": {
 "text": "agua potable",
@@ -440,7 +586,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 7723,
+"from": 8538,
 "dur": 78,
 "props": {
 "text": "malla: solo afuera",
@@ -451,7 +597,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 7880,
+"from": 8694,
 "dur": 90,
 "props": {
 "text": "Ramón · Barquisimeto",
@@ -465,7 +611,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 8081,
+"from": 8895,
 "dur": 54,
 "props": {
 "text": "3 veces",
@@ -476,7 +622,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 8382,
+"from": 9195,
 "dur": 60,
 "props": {
 "text": "era PP",
@@ -487,7 +633,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "wipe",
-"from": 8446,
+"from": 9260,
 "dur": 126,
 "props": {
 "before": {
@@ -502,7 +648,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 8640,
+"from": 9460,
 "dur": 66,
 "props": {
 "text": "el plástico correcto",
@@ -513,7 +659,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 8844,
+"from": 9665,
 "dur": 72,
 "props": {
 "text": "60 a 100 W",
@@ -524,11 +670,11 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "zoom",
-"from": 8927,
+"from": 9748,
 "dur": 102,
 "props": {
 "src": "tfbtanque_vlog.mp4",
-"startFrom": 8927,
+"startFrom": 9748,
 "track": [
 {
 "f": 0,
@@ -544,7 +690,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "list",
-"from": 9406,
+"from": 10240,
 "dur": 272,
 "props": {
 "title": "LOS $2",
@@ -572,7 +718,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 10264,
+"from": 11130,
 "dur": 66,
 "props": {
 "text": "encendedor: no",
@@ -584,7 +730,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 10591,
+"from": 11457,
 "dur": 78,
 "props": {
 "text": "demasiado caliente",
@@ -595,7 +741,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 10788,
+"from": 11653,
 "dur": 84,
 "props": {
 "text": "brillante, sin burbujas",
@@ -606,7 +752,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 10931,
+"from": 11796,
 "dur": 78,
 "props": {
 "text": "al aire libre",
@@ -617,7 +763,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 11266,
+"from": 12131,
 "dur": 72,
 "props": {
 "text": "entre dos",
@@ -628,7 +774,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "lamina",
-"from": 11555,
+"from": 12420,
 "dur": 1336,
 "props": {
 "src": "img/tfbtanque/lamina_0.png",
@@ -710,8 +856,8 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "cta",
-"from": 12964,
-"dur": 484,
+"from": 13829,
+"dur": 483,
 "props": {
 "qr": "img/tfbtanque/qr_tfbtanque.png",
 "cover": "img/tfbtanque/portada-coleccion.jpg",
@@ -721,7 +867,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "mark",
-"from": 13593,
+"from": 14458,
 "dur": 105,
 "props": {
 "items": [
@@ -746,7 +892,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 13921,
+"from": 14787,
 "dur": 93,
 "props": {
 "text": "más larga de lo que parece",
@@ -757,7 +903,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 14014,
+"from": 14879,
 "dur": 120,
 "props": {
 "n": 1,
@@ -767,7 +913,18 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 14643,
+"from": 15313,
+"dur": 78,
+"props": {
+"text": "gota atrapada = poro",
+"variant": "red",
+"y": 80,
+"size": 90
+}
+},
+{
+"kind": "word",
+"from": 15508,
 "dur": 60,
 "props": {
 "text": "detergente: no",
@@ -778,7 +935,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "mark",
-"from": 14776,
+"from": 15641,
 "dur": 96,
 "props": {
 "items": [
@@ -795,7 +952,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "crack",
-"from": 15236,
+"from": 16101,
 "dur": 723,
 "props": {
 "holesAt": 189,
@@ -806,7 +963,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 16042,
+"from": 16907,
 "dur": 96,
 "props": {
 "n": 2,
@@ -816,8 +973,8 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "weld",
-"from": 16167,
-"dur": 1102,
+"from": 17032,
+"dur": 1103,
 "props": {
 "at": {
 "v": 24,
@@ -834,7 +991,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 16173,
+"from": 17038,
 "dur": 6,
 "props": {
 "n": 5,
@@ -844,7 +1001,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 16792,
+"from": 17657,
 "dur": 84,
 "props": {
 "text": "se derriten los dos",
@@ -855,7 +1012,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 17062,
+"from": 17927,
 "dur": 54,
 "props": {
 "text": "otro pegamento",
@@ -866,7 +1023,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 17400,
+"from": 18265,
 "dur": 72,
 "props": {
 "text": "la prueba de la uña",
@@ -877,7 +1034,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 17892,
+"from": 18761,
 "dur": 96,
 "props": {
 "n": 3,
@@ -887,7 +1044,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 18222,
+"from": 19091,
 "dur": 66,
 "props": {
 "text": "hierro: se oxida",
@@ -898,7 +1055,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 18353,
+"from": 19237,
 "dur": 84,
 "props": {
 "text": "+2 cm por lado",
@@ -909,11 +1066,11 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "zoom",
-"from": 18786,
+"from": 19683,
 "dur": 108,
 "props": {
 "src": "tfbtanque_vlog.mp4",
-"startFrom": 18786,
+"startFrom": 19683,
 "track": [
 {
 "f": 0,
@@ -929,8 +1086,8 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "weld",
-"from": 18926,
-"dur": 885,
+"from": 19823,
+"dur": 896,
 "props": {
 "at": {
 "v": 0,
@@ -948,7 +1105,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 19844,
+"from": 20752,
 "dur": 96,
 "props": {
 "n": 4,
@@ -958,7 +1115,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 20190,
+"from": 21106,
 "dur": 60,
 "props": {
 "text": "blanco por dentro",
@@ -969,7 +1126,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 20659,
+"from": 21575,
 "dur": 81,
 "props": {
 "text": "sellado de los dos lados",
@@ -980,7 +1137,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 20985,
+"from": 21900,
 "dur": 72,
 "props": {
 "text": "agua fría",
@@ -992,7 +1149,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 21228,
+"from": 22144,
 "dur": 90,
 "props": {
 "n": 5,
@@ -1002,7 +1159,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 21466,
+"from": 22387,
 "dur": 84,
 "props": {
 "text": "el agua que no se ve",
@@ -1013,7 +1170,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "cta",
-"from": 21686,
+"from": 22608,
 "dur": 284,
 "props": {
 "qr": "img/tfbtanque/qr_tfbtanque.png",
@@ -1024,7 +1181,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "mark",
-"from": 22232,
+"from": 23164,
 "dur": 90,
 "props": {
 "items": [
@@ -1041,7 +1198,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "step",
-"from": 22605,
+"from": 23537,
 "dur": 90,
 "props": {
 "n": 6,
@@ -1051,7 +1208,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "leak",
-"from": 22931,
+"from": 23863,
 "dur": 195,
 "props": {
 "hours": 24,
@@ -1062,7 +1219,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 23217,
+"from": 24341,
 "dur": 72,
 "props": {
 "text": "papel seco",
@@ -1073,7 +1230,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 23649,
+"from": 24962,
 "dur": 66,
 "props": {
 "text": "otra pasada y listo",
@@ -1084,7 +1241,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 23738,
+"from": 25050,
 "dur": 66,
 "props": {
 "text": "dale sombra",
@@ -1095,7 +1252,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "list",
-"from": 23924,
+"from": 25236,
 "dur": 816,
 "props": {
 "title": "LOS 3 ERRORES",
@@ -1117,7 +1274,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "list",
-"from": 24765,
+"from": 26077,
 "dur": 594,
 "props": {
 "title": "CAMBIA EL TANQUE SI…",
@@ -1144,7 +1301,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 25944,
+"from": 27256,
 "dur": 84,
 "props": {
 "text": "en la descripción",
@@ -1156,7 +1313,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 26637,
+"from": 27949,
 "dur": 60,
 "props": {
 "text": "nunca se agarraron",
@@ -1167,7 +1324,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "drop",
-"from": 26824,
+"from": 28135,
 "dur": 303,
 "props": {
 "leftLabel": "MADERA",
@@ -1179,7 +1336,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 27268,
+"from": 28579,
 "dur": 66,
 "props": {
 "text": "la costura aguanta",
@@ -1190,7 +1347,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "word",
-"from": 27456,
+"from": 28768,
 "dur": 90,
 "props": {
 "text": "una sola pieza",
@@ -1201,7 +1358,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "list",
-"from": 27698,
+"from": 29168,
 "dur": 165,
 "props": {
 "title": "EN RESUMEN",
@@ -1232,8 +1389,8 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 },
 {
 "kind": "cta",
-"from": 27827,
-"dur": 255,
+"from": 29298,
+"dur": 254,
 "props": {
 "qr": "img/tfbtanque/qr_tfbtanque.png",
 "cover": "img/tfbtanque/portada-coleccion.jpg",

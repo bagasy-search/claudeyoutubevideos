@@ -604,7 +604,8 @@ if (fase === "armar") {
   const TMP = WORK + "_armar/"; fs.mkdirSync(TMP, { recursive: true });
   // `own` (vecino con su línea / detalle sin tramo): se muestra `show` s si el plan lo fija; si es una línea hablada, hasta el
   // fin REAL de su voz + 0,25 s (el resto del clip es relleno mudo = silencio en el video); si no, T entero.
-  for (const c of C) { if (c.own || !c.audio) { c.own = true; const sh = c.show ?? (c.line ? Math.min(c.T, vozFin(CL + c.file).ve + 0.25) : c.T); c.len = sh; c.ve = sh; c.showLen = sh; } else { const v = vozFin(c.audio); c.len = v.len; c.ve = Math.min(v.ve + 0.04, v.len); } }
+  for (const c of C) { if (c.own || !c.audio) { c.own = true; let sk = 0; if (c.line && c.show == null) { const vf = vozFin(CL + c.file); sk = Math.max(0, vf.vs - 0.12); c.oskip = sk; }   // el personaje a veces arranca tarde: sin aire muerto al principio
+      const sh = c.show ?? (c.line ? Math.min(c.T, vozFin(CL + c.file).ve + 0.25) - sk : c.T); c.len = sh; c.ve = sh; c.showLen = sh; } else { const v = vozFin(c.audio); c.len = v.len; c.ve = Math.min(v.ve + 0.04, v.len); } }
   const S = costuras(C, CL);
   for (const [i, c] of C.entries()) {
     const o = O[c.id] || {}, s = S[i];
@@ -623,7 +624,7 @@ if (fase === "armar") {
     c.slow = (c.vd > c.d + 0.01 || c.src < c.vd) ? +(Math.min(c.src, c.vd) / c.vd).toFixed(3) : undefined; });
   // audio: tramo tal cual (+ la pausa mínima si acc); own = su audio a T
   const parts = C.map((c, i) => { const o = TMP + `aud${i}.wav`, D = c.d.toFixed(4);
-    ff("-i", c.own ? CL + c.file : c.audio, "-vn", "-af", `apad=whole_dur=${D}`, "-t", D, "-ac", "1", "-ar", "48000", o); return o; });
+    ff(...(c.oskip ? ["-ss", c.oskip.toFixed(3)] : []), "-i", c.own ? CL + c.file : c.audio, "-vn", "-af", `apad=whole_dur=${D}`, "-t", D, "-ac", "1", "-ar", "48000", o); return o; });
   fs.writeFileSync(TMP + "aud.txt", parts.map(p => `file '${path.basename(p)}'\n`).join(""));
   const AUD = OD + `audio_${base}.wav`; ff("-f", "concat", "-safe", "0", "-i", TMP + "aud.txt", "-c", "copy", AUD);
   // video
@@ -638,6 +639,8 @@ if (fase === "armar") {
         `[b${i}]trim=${(a / FPS).toFixed(4)}:${c.T},setpts=(PTS-STARTPTS)/${sp.toFixed(4)}[q${i}]`, `[p${i}][q${i}]concat=n=2:v=1:a=0,${post}`);
       c.speed = +sp.toFixed(3);
     } else if (c.slow) fl.push(`[${i}:v]trim=0:${c.src},setpts=(PTS-STARTPTS)/${c.slow},${post}`);
+    else if (c.oskip) fl.push(`[${i}:v]trim=start=${c.oskip.toFixed(3)},setpts=PTS-STARTPTS,${post}`);
+    else if ((O[c.id] || {}).skip) fl.push(`[${i}:v]trim=start=${(O[c.id]).skip},setpts=PTS-STARTPTS,${post}`);   // skip: labios corridos (lag medido) → saltear el arranque
     else fl.push(`[${i}:v]${post}`);
   });
   // corte limpio = xfade de 1 cuadro (sin fundido visible); fundido = 3 cuadros (0,1 s)

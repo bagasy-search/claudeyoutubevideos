@@ -32,6 +32,16 @@ for c in G['clips']:
     x = x / rms(x) * vr * db(-14)
     k = int(0.06 * SR); x[:k] *= np.linspace(0, 1, k); x[-k:] *= np.linspace(1, 0, k)
     put(x, c['gvstart'], 1.0); nf += 1
+# 1b) el chorro del gancho sigue sonando bajo el vecino (se ve el tanque perdiendo agua en su plano): sin aire muerto
+CL_ = {c['id']: c for c in G['clips']}
+for src, dst in [('S0_01', 'S0_02')]:
+    a, b = CL_.get(src), CL_.get(dst)
+    if a and b:
+        x = dec(a['dir'] + a['file']); d = int(b['dur'] * SR)
+        if len(x):
+            rep = np.tile(x, int(np.ceil(d / len(x))) + 1)[:d]; rep = rep / rms(rep) * vr * db(-12)
+            k = int(0.25 * SR); rep[:k] *= np.linspace(0, 1, k); rep[-k:] *= np.linspace(1, 0, k)
+            put(rep, b['gvstart'], 1.0)
 # 2) SFX del montaje
 ns = 0; cache = {}
 for s in SFX:
