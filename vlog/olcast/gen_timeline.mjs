@@ -118,11 +118,12 @@ export const SFX: any[] = ${JSON.stringify(sfx)};
 export const FOLEY: any[] = ${JSON.stringify(foley)};
 `;
 // cues de la capa base para la compuerta de repetición (agnes_qc)
-const qc = [];
+const qc = []; const vlSpan = {};
 for (const c of cues) {
-  if ((c.k === "vl" || c.k === "kf") && c.src) qc.push({ key: c.src + "@" + c.sf, src: c.src, start: c.from / FPS, dur: c.dur / FPS });
+  if ((c.k === "vl" || c.k === "kf") && c.src) { const v = (vlSpan[c.src] ||= { key: c.src, src: c.src, a: c.from, b: c.from + c.dur }); v.b = c.from + c.dur; } // un hablado partido por insertos = UNA toma continua (nunca repite cuadros)
   if (c.k === "img" && c.clip) qc.push({ key: c.clip, src: c.clip, start: c.from / FPS, dur: Math.min(c.dur, c.clipF) / FPS });
 }
+for (const v of Object.values(vlSpan)) qc.push({ key: v.key, src: v.src, start: v.a / FPS, dur: (v.b - v.a) / FPS });
 fs.writeFileSync(R + "_v3/olcast_cues.json", JSON.stringify(qc, null, 1));
 fs.mkdirSync(R + "src/olcast", { recursive: true });
 fs.writeFileSync(R + "src/olcast/timeline_olcast.gen.ts", out);
