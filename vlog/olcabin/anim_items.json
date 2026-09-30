@@ -1,9 +1,5 @@
 [
  {
-  "nombre": "b_coldcabin",
-  "motion": "very slow push in, dust floating in the window light"
- },
- {
   "nombre": "h_lye",
   "motion": "the hand pushes the fish under the cloudy water",
   "gente": true
@@ -26,10 +22,6 @@
   "nombre": "h_eggcrack",
   "motion": "the yolk slides into the coffee grounds",
   "gente": true
- },
- {
-  "nombre": "b_foam",
-  "motion": "the foam heaves and slowly settles"
  },
  {
   "nombre": "h_coldwater",
@@ -77,10 +69,6 @@
   "nombre": "h_underline",
   "motion": "the pencil underlines the words",
   "gente": true
- },
- {
-  "nombre": "b_herringjar",
-  "motion": "slow push in on the jar"
  },
  {
   "nombre": "h_vinegar",
@@ -153,11 +141,6 @@
   "gente": true
  },
  {
-  "nombre": "h_cheesejam",
-  "motion": "the jam drops on the cheese",
-  "gente": true
- },
- {
   "nombre": "h_cardamom",
   "motion": "the pestle crushes the pods",
   "gente": true
@@ -173,6 +156,10 @@
   "gente": true
  },
  {
+  "nombre": "b_afternoon",
+  "motion": "steam rises from the mug"
+ },
+ {
   "nombre": "b_marzipan",
   "motion": "the child holds up the spoon in triumph"
  },
@@ -182,10 +169,6 @@
   "gente": true
  },
  {
-  "nombre": "b_clock",
-  "motion": "slow push in on the pot"
- },
- {
   "nombre": "h_loose",
   "motion": "the porridge ribbons off the spoon",
   "gente": true
@@ -193,11 +176,6 @@
  {
   "nombre": "b_cream",
   "motion": "the spoon stirs slowly"
- },
- {
-  "nombre": "h_appleSack",
-  "motion": "the hand lifts out dried apple rings",
-  "gente": true
  },
  {
   "nombre": "h_applesimmer",
@@ -266,6 +244,10 @@
   "gente": true
  },
  {
+  "nombre": "b_swedekitchen",
+  "motion": "candle flames flicker, the cook rolls a meatball"
+ },
+ {
   "nombre": "h_meatballmix",
   "motion": "the hands roll a meatball",
   "gente": true
@@ -319,6 +301,10 @@
   "gente": true
  },
  {
+  "nombre": "b_lutefans",
+  "motion": "the older man raises his thumb"
+ },
+ {
   "nombre": "h_molasses",
   "motion": "the molasses pours",
   "gente": true
@@ -336,10 +322,6 @@
   "nombre": "h_limpaslice",
   "motion": "the knife slices",
   "gente": true
- },
- {
-  "nombre": "b_limpaherring",
-  "motion": "slow push in"
  },
  {
   "nombre": "h_chowderonion",
@@ -408,6 +390,10 @@
   "gente": true
  },
  {
+  "nombre": "b_doorfarm",
+  "motion": "smoke rises from the kettle fire"
+ },
+ {
   "nombre": "h_spicebag",
   "motion": "the hand ties the twine",
   "gente": true
@@ -440,10 +426,6 @@
   "nombre": "h_warm",
   "motion": "the dough sticks and tears",
   "gente": true
- },
- {
-  "nombre": "b_cold",
-  "motion": "frost creeps on the glass"
  },
  {
   "nombre": "h_lefseflour",

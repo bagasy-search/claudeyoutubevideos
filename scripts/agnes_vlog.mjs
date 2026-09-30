@@ -73,7 +73,7 @@ import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
 import { Readable } from "node:stream";
-import { execFileSync } from "node:child_process";
+import { execFileSync as _efs } from "node:child_process"; const execFileSync = (c, a, o) => _efs(c, a, { windowsHide: true, ...(o || {}) }); // sin ventanas de consola (27-sep)
 
 const [, , planArg, fase, ...rest] = process.argv;
 const FL = Object.fromEntries(rest.filter(a => a.startsWith("--")).map(a => { const [k, v] = a.slice(2).split("="); return [k, v ?? true]; }));
@@ -90,19 +90,39 @@ const dirsOf = P => { const DIR = P.dir.replace(/\\/g, "/").replace(/\/?$/, "/")
 for (const P of PLANS) { const d = dirsOf(P); fs.mkdirSync(d.ANC, { recursive: true }); fs.mkdirSync(d.CL, { recursive: true }); }
 const P = PLANS[0], { DIR, ANC, CL } = dirsOf(P);
 let k = Math.floor(Math.random() * Math.max(1, KS.length)); const key = () => KS[(k++) % KS.length];
+
+// ⛔ (27-sep) la consulta de estado va con la MISMA CLAVE que creó el job: las claves ya no comparten jobs
+//    (con una clave al azar: 404 task not found → TIMEOUT a los 40 min → reenvío que quema cupo). kFor() busca
+//    una vez qué clave ve el job y la recuerda.
+const KMAP = new Map();
+async function kFor(vid) {
+  if (KMAP.has(vid)) return KMAP.get(vid);
+  for (const kx of KS) {
+    try {
+      const r = await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + kx }, signal: AbortSignal.timeout(30000) });
+      const t = await r.text();
+      if (r.ok && !/not.?found/i.test(t)) { KMAP.set(vid, kx); return kx; }
+    } catch {}
+  }
+  return key();
+}
+
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
 const mime = f => f.endsWith(".png") ? "image/png" : /\.(mp3)$/.test(f) ? "audio/mpeg" : /\.wav$/.test(f) ? "audio/wav" : "image/jpeg";
 const uri = f => `data:${mime(f)};base64,` + fs.readFileSync(f).toString("base64");
-const refPathOf = (P, n) => n === "k0" ? P.k0_from : /^K\d+$/.test(n) ? dirsOf(P).ANC + n + ".png" : (P.extra || {})[n] || n;
+const isAnc = (P, n) => /^K\d+$/.test(n) || (P.anchors || []).some(a => a.id === n);   // cualquier id de ancla del plan (D1a, V2b, K3s…)
+const refPathOf = (P, n) => n === "k0" ? P.k0_from : isAnc(P, n) ? dirsOf(P).ANC + n + ".png" : (P.extra || {})[n] || n;
 const refPath = n => refPathOf(P, n);
-const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a]);
-const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
-const wh = f => execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number);
+// reintento ante caídas de proceso de Windows (0xC0000142 = DLL init failed cuando hay cientos de procesos: 6 videos a la vez)
+const xsync = (cmd, args, o) => { for (let t = 0; ; t++) { try { return execFileSync(cmd, args, o); } catch (e) { if (t >= 4 || e.status === 1) throw e; Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 3000 * (t + 1)); } } };
+const ff = (...a) => xsync("ffmpeg", ["-v", "error", "-y", ...a]);
+const dur = f => Number(xsync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
+const wh = f => xsync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number);
 
-const LIGHT = " BRIGHT, correctly exposed photo, big soft DAYLIGHT from a window, white balance NEUTRAL, no amber cast, no grading, no vignette, no film grain, no dark moody look, lifted shadows; brightness from the room lighting, not post-production — do not raise saturation, no glow, no HDR. An ordinary photo, not a film still. Real skin with visible pores, fine lines and natural texture, not smooth, not plastic, not retouched.";
+const LIGHT = P.light != null ? " " + P.light : " BRIGHT, correctly exposed photo, big soft DAYLIGHT from a window, white balance NEUTRAL, no amber cast, no grading, no vignette, no film grain, no dark moody look, lifted shadows; brightness from the room lighting, not post-production — do not raise saturation, no glow, no HDR. An ordinary photo, not a film still. Real skin with visible pores, fine lines and natural texture, not smooth, not plastic, not retouched.";
 const IDENT = " IDENTITY: the presenter must have EXACTLY the face of the man/woman in the LAST input image (a close-up of the real face): same face shape, eyes, nose, eyebrows, hair and beard, same age — copy that face, do not let it drift, do not make them younger or more attractive. The last image is only for the face; the scene comes from the first image. Do NOT add objects that are not described.";
-const LOOK = " Ultra realistic casual home video, handheld phone footage with small natural shakes, BRIGHT correctly exposed image, big soft daylight from the window, neutral white balance, no grading, no vignette, no dark moody look; real skin with visible pores and fine lines, not smooth, not plastic; natural hands; nothing polished, no music.";
+const LOOK = P.look != null ? " " + P.look : " Ultra realistic casual home video, handheld phone footage with small natural shakes, BRIGHT correctly exposed image, big soft daylight from the window, neutral white balance, no grading, no vignette, no dark moody look; real skin with visible pores and fine lines, not smooth, not plastic; natural hands; nothing polished, no music.";
 const SE = "The video STARTS EXACTLY on the first reference image and ENDS EXACTLY on the second reference image: the very first frame is the first image and the very last frame is the second image — same place, same framing, same light, same objects in the same places; in between, one continuous take without cutting or changing angle. The third reference image is only the presenter's real face: keep exactly that face the whole time. ";
 
 // ---------- anclas ----------
@@ -129,12 +149,15 @@ const usd = (u, batch) => { const d = u.input_tokens_details || {}; const f = ba
 // lo ESPERADO con las palancas de default (1088x608, K/foto base en caja 256x144, cara 96 tok, extras como vengan) en el
 // modo elegido: si el real se pasa >15% es que algo se salteó (size grande, ref sin achicar, cara entera…) → aviso.
 const esperado = (it, batch) => usd({ input_tokens_details: { text_tokens: Math.ceil(it.prompt.length / 4),
-  image_tokens: 96 + it.a.from.reduce((s, n) => s + (n === "k0" || /^K\d+$/.test(n) ? 144 : tokIn(...wh(small(refPathOf(it.Pl, n), EXTRA_BOX, dirsOf(it.Pl).ANC)))), 0) },
+  image_tokens: 96 + it.a.from.reduce((s, n) => s + (n === "k0" || isAnc(it.Pl, n) ? 144 : tokIn(...wh(small(refPathOf(it.Pl, n), EXTRA_BOX, dirsOf(it.Pl).ANC)))), 0) },
   output_tokens: OUT_TOK[SIZE0] || 96 }, batch);
 
 // ref achicada (cacheada en anc/_ref/): cabe en la caja sin deformar
 function small(f, [bw, bh], ANCd) {
-  const o = ANCd + "_ref/" + path.basename(f).replace(/\.[^.]+$/, "") + `_${bw}x${bh}.png`;
+  // ⛔ el nombre lleva un hash de la RUTA completa: dos refs con el mismo basename (S1/anc/K0.png y S2/anc/K0.png como
+  //    `extra`) pisaban la misma copia chica y TODAS las anclas de la 2ª salían del set de la 1ª (tfbinodoro, 27-sep).
+  const hsh = [...path.resolve(f)].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7).toString(36);
+  const o = ANCd + "_ref/" + path.basename(f).replace(/\.[^.]+$/, "") + `_${hsh}_${bw}x${bh}.png`;
   if (!fs.existsSync(o) || fs.statSync(o).mtimeMs < fs.statSync(f).mtimeMs) {
     fs.mkdirSync(ANCd + "_ref", { recursive: true });
     const [w, h] = wh(f); if (w <= bw && h <= bh) fs.copyFileSync(f, o);
@@ -143,8 +166,8 @@ function small(f, [bw, bh], ANCd) {
   return o;
 }
 // cara 128x192 (96 tok): crop 2:3 centrado (o `face_crop` del plan) y escala. Si ya es 128x192 se usa tal cual.
-function face128(Pl) {
-  const f = Pl.face, [w, h] = wh(f); if (w === 128 && h === 192) return f;
+function face128(Pl) { // `face_anc`: cara para las ANCLAS (128x192 ok); `face`: la de los CLIPS (agnes pide lados ≥ 256 px)
+  const f = Pl.face_anc || Pl.face, [w, h] = wh(f); if (w === 128 && h === 192) return f;
   const o = dirsOf(Pl).ANC + "_ref/_face128.png";
   if (!fs.existsSync(o) || fs.statSync(o).mtimeMs < fs.statSync(f).mtimeMs) {
     fs.mkdirSync(path.dirname(o), { recursive: true });
@@ -185,14 +208,15 @@ function construirItems() {
 }
 function prepararItem(it) { // arma inputs chicos recién cuando sus K previos existen
   const { Pl, a } = it, ANCd = dirsOf(Pl).ANC;
-  it.inputs = a.from.map(n => { const f = refPathOf(Pl, n); return small(f, n === "k0" || /^K\d+$/.test(n) ? prevOf(Pl) : EXTRA_BOX, ANCd); });
+  it.inputs = a.from.map(n => { const f = refPathOf(Pl, n); return small(f, n === "k0" || isAnc(Pl, n) ? prevOf(Pl) : EXTRA_BOX, ANCd); });
   it.size = sizeOf(Pl);
-  it.inputs.push(face128(Pl));
-  it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + IDENT + LIGHT;
+  if (!a.noface) it.inputs.push(face128(Pl));                       // `noface`: ancla de detalle (sólo manos/objeto)
+  it.prompt = a.prompt + (a.from.includes("k0") ? "" : " Everything else identical.") + (a.noface ? "" : IDENT) + LIGHT;
   return it;
 }
 let gasto = 0, nimg = 0, avisos = 0;
 function guardar(it, b64, usage, batch) {
+  if (!it.prompt) { it.prompt = it.a.prompt; it.inputs = []; it.size = sizeOf(it.Pl); } // retomado de un batch viejo sin preparar
   const raw = it.out.replace(".png", "_raw.png"); fs.writeFileSync(raw, Buffer.from(b64, "base64")); to169(raw, it.out);
   const c = usd(usage || {}, batch), e = esperado(it, batch); gasto += c; nimg++;
   const d = usage?.input_tokens_details || {};
@@ -243,7 +267,7 @@ async function bajar(b, porKey) { // stremeado por línea (el JSONL con base64 r
 async function anclasBatch(items) {
   const porKey = Object.fromEntries(items.map(it => [it.key, it]));
   if (fs.existsSync(PEND)) { const pend = JSON.parse(fs.readFileSync(PEND, "utf8")); log("retomo batch pendiente", pend.join(" "));
-    items.filter(it => !fs.existsSync(it.out)).forEach(prepararItem); await esperarYBajar(pend, porKey); fs.unlinkSync(PEND); }
+    items.filter(it => !fs.existsSync(it.out) && it.deps.every(f => fs.existsSync(f))).forEach(prepararItem); await esperarYBajar(pend, porKey); fs.unlinkSync(PEND); }
   for (let ronda = 1; ; ronda++) {
     const pend = items.filter(it => !fs.existsSync(it.out));
     if (!pend.length) return;
@@ -307,35 +331,84 @@ function tramo(c) { // audio rellenado a segundo entero → mp3
   const mp3 = CL + c.id + "_tramo.mp3"; ff("-i", c.audio, "-af", `apad=whole_dur=${T}`, "-t", String(T), "-ac", "1", "-ar", "44100", "-b:a", "160k", mp3);
   return { T, mp3 };
 }
-async function gen(id, body) {
-  let vid;
-  for (let t = 0; t < 200 && !vid; t++) {
-    const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
-    vid = j.video_id || j.id;
-    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(25000 + Math.random() * 10000); }
+// ── cola cortés (27-sep: se agotó el cupo gratis de TODA la cuenta y 60 procesos martillaban el límite) ──
+// · SLOTS: como mucho VLOG_MAX (default 1) clips EN VUELO por máquina entre todos los procesos, vía archivos-candado en
+//   VLOG_SLOTS_DIR (default D:/rtmp/agnes_slots). Un candado de más de 50 min se considera muerto y se recicla.
+// · "free users"/rate limit → espera VLOG_RATE_WAIT s (default 600) antes de reintentar; queue_full → 30 s.
+// · PENDIENTES: cada video_id aceptado se guarda en clips/_pend.json; si el proceso muere, `clips` lo RETOMA (sólo sondea)
+//   en vez de volver a gastar cupo.
+const SLOTS = (process.env.VLOG_SLOTS_DIR || env.VLOG_SLOTS_DIR || "D:/rtmp/agnes_slots").split("\\").join("/"), VMAX = +(process.env.VLOG_MAX || env.VLOG_MAX || 1);
+const RWAIT = +(process.env.VLOG_RATE_WAIT || 600) * 1000;
+fs.mkdirSync(SLOTS, { recursive: true });
+async function slotGet(id) {
+  for (;;) {
+    const now = Date.now();
+    for (const f of fs.readdirSync(SLOTS)) { try { if (now - fs.statSync(SLOTS + "/" + f).mtimeMs > 50 * 60e3) fs.unlinkSync(SLOTS + "/" + f); } catch {} }
+    let vmax = VMAX; try { vmax = Math.min(3, +fs.readFileSync(SLOTS + "/_max_tope", "utf8") || VMAX); } catch {}   // _max: se sube a mano / por el sondeo
+    for (let i = 0; i < vmax; i++) { const f = `${SLOTS}/slot${i}`; try { fs.writeFileSync(f, `${process.pid} ${id}`, { flag: "wx" }); return f; } catch {} }
+    await sleep(20000 + Math.random() * 10000);
   }
-  if (!vid) return log("GAVE UP", id);
-  log("en cola", id);
+}
+const slotTouch = f => { try { const t = new Date(); fs.utimesSync(f, t, t); } catch {} };
+const slotFree = f => { try { if (fs.readFileSync(f, "utf8").startsWith(String(process.pid))) fs.unlinkSync(f); } catch {} };
+const PENDF = () => CL + "_pend.json";
+const pendSet = (id, v) => { const p = J(PENDF()); if (v) p[id] = v; else delete p[id]; fs.writeFileSync(PENDF(), JSON.stringify(p, null, 1)); };
+async function poll(id, vid, slot) {
   const t0 = Date.now();
-  while (Date.now() - t0 < 40 * 60e3) {
-    await sleep(15000);
-    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + key() } })).json().catch(() => ({}));
-    if (g.status === "completed" && g.url) { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
-    if (/fail|error|cancel/i.test(g.status || "")) return log("FAIL", id, JSON.stringify(g).slice(0, 200));
+  while (Date.now() - t0 < 60 * 60e3) {
+    await sleep(20000); if (slot) slotTouch(slot);
+    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + (await kFor(vid)) } })).json().catch(() => ({}));
+    if (g.status === "completed" && g.url) { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); pendSet(id, null); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
+    if (/fail|error|cancel/i.test(g.status || "")) { pendSet(id, null); return log("FAIL", id, JSON.stringify(g).slice(0, 200)); }
   }
   log("TIMEOUT", id);
 }
+async function gen(id, body, meta = {}) {
+  const slot = await slotGet(id);
+  try {
+    let vid;
+    for (let t = 0; t < 400 && !vid; t++) {
+      slotTouch(slot);
+      const kk = key();
+      const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + kk, "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
+      vid = j.video_id || j.id;
+      if (vid) { KMAP.set(vid, kk); meta.k = kk; }
+      if (!vid) { const m = JSON.stringify(j); if (t % 10 === 0) log("espera", id, "try", t, m.slice(0, 160)); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; }
+        const lim = /free users|rate_limit|rate limit/i.test(m); if (lim && t % 3 === 0) log("límite de cuenta, espero", RWAIT / 1000, "s ·", id);
+        await sleep(lim ? RWAIT : 30000 + Math.random() * 10000); }
+    }
+    if (!vid) return log("GAVE UP", id);
+    pendSet(id, { vid, ...meta }); log("en cola", id);
+    await poll(id, vid, slot);
+  } finally { slotFree(slot); }
+}
 const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSync(CL + "state.json", "utf8")) : {};
+function J(f) { return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {}; }
 const PRON = P.pronoun || "he";
+const min256 = f => { const [w, h] = wh(f); if (Math.min(w, h) >= 256) return f;
+  const k = 256 / Math.min(w, h), o = CL + "_min256_" + path.basename(f).replace(/\.[^.]+$/, "") + ".png";
+  if (!fs.existsSync(o)) ff("-i", f, "-vf", `scale=${Math.ceil(w * k)}:${Math.ceil(h * k)}:flags=lanczos`, o); return o; };
 const MUTE = ` When the reference audio ends ${PRON} stops talking and keeps the mouth closed.`;            // anti-balbuceo del relleno
 const MUTE_LINE = " After saying that line they stop talking and keep the mouth closed.";
 if (fase === "clips") {
-  const sel = P.clips.filter(c => !soloIds.length || soloIds.includes(c.id));
+  // primero RETOMAR lo que ya aceptó agnes en una corrida anterior (sólo sondeo, no gasta cupo)
+  const pend = J(PENDF()), yaEnVuelo = new Set(Object.values(pend).map(v => v.cid));
+  await Promise.all(Object.entries(pend).map(async ([out, v]) => { log("retomo", out); if (v.k) KMAP.set(v.vid, v.k); await poll(out, v.vid, null);
+    if (fs.existsSync(CL + out + ".mp4")) { const SF = CL + (v.detail ? "state_det.json" : "state.json"), s = J(SF); if (!s[v.cid] || soloIds.length) { s[v.cid] = { file: out + ".mp4", T: v.T, own: v.own }; fs.writeFileSync(SF, JSON.stringify(s, null, 1)); } } }));
+  const hechos = { ...J(CL + "state.json"), ...J(CL + "state_det.json") };
+  const sel = P.clips.filter(c => (!soloIds.length || soloIds.includes(c.id)) && !yaEnVuelo.has(c.id) && (soloIds.length || !hechos[c.id]));
   await Promise.all(sel.map((c, i) => sleep(i * 3000).then(async () => {
     const out = soloIds.length ? c.id + "r" + Date.now().toString(36).slice(-3) : c.id;
-    const imgs = [uri(refPath(c.a)), uri(refPath(c.b)), uri(P.face), ...(c.refs || []).map(n => uri(refPath(n)))];
+    // ⛔ agnes rechaza lados <256 px ("input image side length must be between 256 and 5760"): la cara de gpt-image-2
+    //    viene en 128x192 (palanca de costo de las anclas) → para los clips va una copia agrandada (tfbinodoro, 27-sep).
+    const imgs = c.detail ? [] : [uri(refPath(c.a)), uri(refPath(c.b)), uri(min256(P.face)), ...(c.refs || []).map(n => uri(min256(refPath(n))))];
     let body, T;
-    if (c.audio) {
+    if (c.detail) { // plano detalle `keyframe` (primer y último cuadro clavados, SIN habla, CON foley real). Con `audio` dura lo
+      //               del tramo (suena el máster encima); sin `audio` dura `secs` y en el armado suena su propio foley.
+      T = c.audio ? tramo(c).T : Math.min(12, Math.max(4, c.secs || 4));
+      body = { mode: "keyframe", seconds: String(T), first_frame: uri(refPath(c.a)), last_frame: uri(refPath(c.b)),
+        prompt: c.prompt ? `One continuous take from the first frame to the last frame, same place, same framing, same light: ${c.prompt}` + LOOK + ` Nobody speaks, her mouth stays closed; the only sound is ${c.sound || "the real, quiet sound of the action itself"}.` : `Close-up detail shot, one continuous take from the first frame to the last frame: ${c.d1}; it slowly becomes: ${c.d2}. Real hands and real materials, natural physical movement, nothing appears or disappears by itself, no text, no faces, no cuts, no camera jumps.` + LOOK + ` No speech and no voices; the only sound is ${c.sound || "the real, quiet sound of the action itself"}.` };
+    } else if (c.audio) {
       const tr = tramo(c); T = tr.T;
       body = { mode: "reference", seconds: String(T), images: imgs, audios: [uri(tr.mp3)],
         prompt: SE + "The presenter is the one speaking: the voice and every word are exactly the reference audio, lips perfectly synced; do not add, repeat or change any word — the audio is the only speech. " + c.action + LOOK + " No other voices." + MUTE };
@@ -344,8 +417,8 @@ if (fase === "clips") {
       body = { mode: "reference", seconds: String(T), images: imgs,
         prompt: SE + `The person speaking is ${c.who || "the other person (last reference image is their face)"}, ${c.voice}, lips perfectly synced, saying exactly: "${c.line}" Nobody else speaks. ` + c.action + LOOK + MUTE_LINE };
     }
-    await gen(out, body);
-    if (fs.existsSync(CL + out + ".mp4")) { const s = state(); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(CL + "state.json", JSON.stringify(s, null, 1)); }
+    await gen(out, body, { cid: c.id, T, own: !c.audio, detail: !!c.detail });
+    if (fs.existsSync(CL + out + ".mp4")) { const SF = CL + (c.detail ? "state_det.json" : "state.json"), s = J(SF); s[c.id] = { file: out + ".mp4", T, own: !c.audio }; fs.writeFileSync(SF, JSON.stringify(s, null, 1)); }
   })));
   log("clips listos → corré `check`");
 }
@@ -367,7 +440,6 @@ async function vision(frameJpg, facePng) {
 // la del plan (para probar/rearmar sin tocar el worktree de otro).
 const WORK = FL.out ? String(FL.out).replace(/\\/g, "/").replace(/\/?$/, "/") : CL;
 if (FL.out) fs.mkdirSync(WORK, { recursive: true });
-const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
 const stateDet = () => J(CL + "state_det.json");        // planos `detail` (keyframe d1→d2) van aparte
 const ffo = (...a) => execFileSync("ffmpeg", ["-v", "error", ...a], { maxBuffer: 1 << 28 });
 function pcm(f, T) { // mono 16 kHz float; con T: rellena/corta a T (como load() de sync.py)
@@ -463,15 +535,20 @@ if (fase === "check") {
         fd.append("file", new Blob([fs.readFileSync(wav)], { type: "audio/wav" }), "a.wav");
         let txt = "(timeout)";
         for (let t = 0; t < 3 && txt === "(timeout)"; t++) try { txt = await (await fetch("https://api.openai.com/v1/audio/transcriptions", { method: "POST", headers: { Authorization: "Bearer " + env.OPENAI_API_KEY }, body: fd, signal: AbortSignal.timeout(45000) })).text(); } catch (e) { log("whisper timeout, reintento", c.id); }
+        // ⛔ si OpenAI contesta un ERROR (cuota agotada, 401…) eso NO es una transcripción: sin ASR, las palabras no se
+        //    puntúan y manda la compuerta de LABIOS (correlación con el tramo) + visión; h.noasr permite re-medir después.
+        if (/^\s*\{/.test(txt) && /"error"/.test(txt)) { log("whisper ERROR (sin ASR, mando labios):", txt.replace(/\s+/g, " ").slice(0, 90)); txt = ""; h.noasr = true; }
         const esperadoTxt = c.text || c.line || "";
         const NUM = /^(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien)$/;
-        const wa = norm(esperadoTxt).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));
+        const wa = h.noasr ? [] : norm(esperadoTxt).split(" ").filter(w => w && !NUM.test(w)), b = norm(txt).split(" ").filter(w => w && !NUM.test(w));
         const a = new Set(wa), extra = b.filter(w => !a.has(w)), faltan = [...a].filter(w => !b.includes(w));
         const rep = b.length - wa.length;
         const mid = WORK + c.id + "_mid.jpg"; ff("-ss", (win / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=768:-2", mid);
         const v = await vision(mid, P.face);
         const vis = !v ? " · visión: sin respuesta" : ` · cara ${v.same_person ? "✓" : "⛔ NO ES"} (${v.confidence}) · luz ${v.bright ? "✓" : "⛔ oscura"}${v.issues && !/^none/i.test(v.issues) ? " · " + v.issues : ""}`;
-        const malVis = v && (!v.same_person || !v.bright);
+        // luz: la visión da falsos "oscuro" en interiores bien expuestos → sólo cuenta si la luma real también es baja (<55)
+        const yav = +(ffo("-ss", (win / 2).toFixed(2), "-i", f, "-frames:v", "1", "-vf", "scale=160:90,format=gray", "-f", "rawvideo", "-").reduce((a, x) => a + x, 0) / 14400).toFixed(1);
+        const malVis = v && (!v.same_person || (!v.bright && yav < 45));
         const lb = c.audio && !c.own ? labios(f, c.audio, win) : null; h.labios = lb;
         const malLab = lb && !lb.ok;
         h.score = extra.length + faltan.length + Math.max(0, rep) + (malVis ? 50 : 0) + (malLab ? 50 : 0) + (txt === "(timeout)" ? 100 : 0);
@@ -523,11 +600,13 @@ if (fase === "armar") {
   const miss = C.filter(c => !c.file).map(c => c.id); if (miss.length) throw new Error("faltan clips: " + miss.join(" "));
   const base = path.basename(P.out).replace(/\.[^.]+$/, ""), OUT = FL.out ? WORK + path.basename(P.out) : P.out, OD = path.dirname(OUT).replace(/\\/g, "/") + "/";
   const TMP = WORK + "_armar/"; fs.mkdirSync(TMP, { recursive: true });
-  for (const c of C) { if (c.own || !c.audio) { c.own = true; c.len = c.T; c.ve = c.T; } else { const v = vozFin(c.audio); c.len = v.len; c.ve = Math.min(v.ve + 0.04, v.len); } }
+  // `own` (vecino con su línea / detalle sin tramo): se muestra `show` s si el plan lo fija; si es una línea hablada, hasta el
+  // fin REAL de su voz + 0,25 s (el resto del clip es relleno mudo = silencio en el video); si no, T entero.
+  for (const c of C) { if (c.own || !c.audio) { c.own = true; const sh = c.show ?? (c.line ? Math.min(c.T, vozFin(CL + c.file).ve + 0.25) : c.T); c.len = sh; c.ve = sh; c.showLen = sh; } else { const v = vozFin(c.audio); c.len = v.len; c.ve = Math.min(v.ve + 0.04, v.len); } }
   const S = costuras(C, CL);
   for (const [i, c] of C.entries()) {
     const o = O[c.id] || {}, s = S[i];
-    if (c.own) { c.mode = "own"; c.d = c.T; continue; }
+    if (c.own) { c.mode = "own"; c.d = c.showLen; continue; }
     let mode = o.mode || "trunc";
     if (!o.mode && !c.detail && s.trunc != null && s.orig != null && s.trunc > Math.max(s.orig + 4, 12) && !(C[i + 1] || {}).detail) mode = "acc";
     c.mode = mode;

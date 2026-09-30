@@ -39,7 +39,7 @@ export const A = [
   H("You roll it thin, cut long diamonds", "diamonds", "Thin rolled dough on a floured plank table, an old hand cutting long diamond shapes with a knife.", "the knife cuts a diamond"),
   H("slit the middle and pull one end through", "twist", "An old hand pulling one end of a dough diamond through a slit cut in its middle, making a knot.", "the end of the dough is pulled through the slit"),
   ST("then drop them in hot fat", "st_fry_dough"),
-  C("at about three-fifty", "OleCounter", { mode: "number", from: 200, to: 350, label: "Fat temperature", suffix: " F", start: 0.1, end: 1.2, bed: "img/olcabin/b_fattig2.png" }),
+  C("at about three-fifty", "OleCounter", { mode: "number", from: 200, to: 350, label: "Fat temperature", suffix: " F", start: 0.1, end: 1.2, bed: "img/olcabin/b_fattig2.jpg" }),
   ST("Cardamom, powdered sugar", "st_spices_mortar"),
   H("and a coffee beside it", "sugar", "Powdered sugar sifted through a small tin sieve over golden fried dough twists on a plate.", "sugar snows down on the cookies"),
   AVA("Poor man's cookie"),

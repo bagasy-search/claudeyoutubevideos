@@ -12,7 +12,7 @@ export const B_ = [
   H("the second it comes off you roll it", "krumroll", "An old hand rolling a hot golden lacy cookie around a wooden cone on the plank table, steam rising, fingers protected by a cloth.", "the hand rolls the cookie tight around the cone"),
   H("Fill it with whipped cream and fruit", "krumcream", "A rolled krumkake cookie being filled with whipped cream from a spoon and topped with a red berry.", "cream fills the cookie"),
   ST("Those old irons were made to sit over the fire", "st_rustic_kitchen"),
-  B("If you find one at an estate sale", "estate", "An estate sale table in a farmhouse yard with a rusty cast iron krumkake iron, old spoons and a chipped enamel pot among household items, a person's hand about to pick the iron up.", "a hand reaches for the iron"),
+  ST("If you find one at an estate sale", "st_flea_market_table"),
   // ── #20 LEIPÄJUUSTO (222.8)
   B("Number twenty", "cheese", "A round flat golden-brown squeaky Finnish bread cheese with dark brown freckles, cut in wedges on a wooden board with a small bowl of cloudberry jam and a mug of coffee.", "steam from the coffee"),
   C("Finnish bread cheese", "OriginMap", { origins: [{ id: "finland", label: "FINLAND", dishes: ["leipäjuusto"], at: 0.2 }], dest: "Upper Peninsula", focus: "finland" }),
@@ -67,7 +67,8 @@ export const B_ = [
   H("Ground pork and beef", "sausagemix", "Two old hands mixing ground pork, boiled diced potato, chopped onion and allspice in a big enamel bowl.", "the hands fold the mixture"),
   ST("stuffed into casings", "st_sausage_making"),
   AR("It came to the Midwest with the Swedes", "ar_swede_family"),
-  B("You serve it next to meatballs", "xmasplate", "A Christmas plate with potato sausage slices, Swedish meatballs and a spoon of red lingonberries with a dab of mustard, on a plank table.", "slow push in on the plate"),
+  ST("You serve it next to meatballs", "st_holiday_dinner_plate"),
+  ST("with a little mustard on the side", "st_sausage_mustard"),
 
   B("There's an old Scandinavian shop", "shopline", "Inside an old-fashioned Scandinavian butcher shop, a long line of people in winter coats waiting at the counter at Christmas time, a butcher wrapping sausage in paper, no readable signs.", "the line shuffles forward"),
   AVA("That tells you something"),
@@ -103,5 +104,5 @@ export const B_ = [
   H("stir in a pound of lightly drained kraut", "krautpour", "An old hand tipping pale sauerkraut into the skillet with the sausages and pouring cider from a tin cup.", "the kraut falls in and steams"),
   ST("Boiled potatoes and plenty of mustard", "st_potatoes_boiling"),
   C("This is a page from the book, page forty-three", "OleBookPage", PG(43, { keys: [[0.2, 0.5, 0.5, 1], [0.9, 0.7, 0.53, 2.2], [3.0, 0.5, 0.78, 2.4]], sub: "Sausage & sauerkraut · page 43" })),
-  B("The apple is the trick", "appletrick", "A halved red apple next to a skillet of sauerkraut on a plank table, a slice of apple held over the steaming kraut.", "steam rises past the apple"),
+  ST("The apple is the trick", "st_apple_skillet"),
 ];

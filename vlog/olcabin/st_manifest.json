@@ -288,5 +288,45 @@
   "file": "broll/olcabin_st30/st_bakery_counter.mp4",
   "desc": "Baker wrapping box of pastries on counter.",
   "dur": 7
+ },
+ "st_holiday_dinner_plate": {
+  "file": "broll/olcabin_st30/st_holiday_dinner_plate.mp4",
+  "desc": "Hands cutting food on plate with wine and candle.",
+  "dur": 7
+ },
+ "st_casserole_oven_open": {
+  "file": "broll/olcabin_st30/st_casserole_oven_open.mp4",
+  "desc": "Browned casserole in baking dish inside oven",
+  "dur": 5.3
+ },
+ "st_berry_pancake": {
+  "file": "broll/olcabin_st30/st_berry_pancake.mp4",
+  "desc": "Thick puffy pastry dusted with powder next to fresh red strawberries on a plate.",
+  "dur": 7
+ },
+ "st_apple_skillet": {
+  "file": "broll/olcabin_st30/st_apple_skillet.mp4",
+  "desc": "Onions and herbs sauteed in a cast iron skillet over fire.",
+  "dur": 6.3
+ },
+ "st_sausage_mustard": {
+  "file": "broll/olcabin_st30/st_sausage_mustard.mp4",
+  "desc": "Golden sausages on a platter with sauerkraut and a small blue ramekin of yellow mustard.",
+  "dur": 5.3
+ },
+ "st_apple_pie_oven": {
+  "file": "broll/olcabin_st30/st_apple_pie_oven.mp4",
+  "desc": "Hands holding a baked apple pie on a wooden board.",
+  "dur": 7
+ },
+ "st_flea_market_table": {
+  "file": "broll/olcabin_st30/st_flea_market_table.mp4",
+  "desc": "Antique iron objects and old chair on a display table.",
+  "dur": 7
+ },
+ "st_bread_cooling_window": {
+  "file": "broll/olcabin_st30/st_bread_cooling_window.mp4",
+  "desc": "Fresh baked bread rolls cooling in a rustic wicker basket.",
+  "dur": 7
  }
 }
