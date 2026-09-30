@@ -24,7 +24,11 @@ import { fileURLToPath } from "node:url";
 
 const ENVF = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../.env");
 const env = {};
-try { for (const l of fs.readFileSync(ENVF, "utf8").split(/\r?\n/)) { const i = l.indexOf("="); if (i > 0 && !l.startsWith("#")) env[l.slice(0, i).trim()] = l.slice(i + 1).trim().replace(/^["']|["']$/g, ""); } } catch {}
+// .env: el del repo/worktree, el del directorio actual, o el de la copia principal (los worktrees a veces no lo tienen)
+for (const f of [ENVF, path.resolve(".env"), "C:/Users/bauti/Downloads/video2/.env"]) {
+  try { for (const l of fs.readFileSync(f, "utf8").split(/\r?\n/)) { const i = l.indexOf("="); if (i > 0 && !l.startsWith("#")) env[l.slice(0, i).trim()] ??= l.slice(i + 1).trim().replace(/^["']|["']$/g, ""); } } catch {}
+  if (env.AGNES_KEYS) break;
+}
 const split = (v) => (v || "").split(",").map((s) => s.trim()).filter(Boolean);
 const RES = new Set(split(process.env.AGNES_KEYS_OTRA_PC || env.AGNES_KEYS_OTRA_PC));
 export const KEYS = split(process.env.AGNES_KEYS || env.AGNES_KEYS || env.AGNES_KEY).filter((k) => !RES.has(k));
@@ -84,7 +88,7 @@ export async function reportKey(key, res) {
     e[res] = (e[res] || 0) + 1; s.keys[hk(key)] = e;
   });
 }
-const clasificar = (m) => /free users/i.test(m) ? "rate" : /rate exceeds|too many|"code":429|\b429\b/i.test(m) ? "iprate" : /rate limit/i.test(m) ? "rate" :/queue|busy|capacity/i.test(m) ? "queue" : /fetch failed|timeout|ECONN|aborted|network|socket|\b5\d\d\b/i.test(m) ? "red" : "reject";   // \b: el request id de agnes trae "5xx" adentro (medido: rechazo leído como red → reintento infinito)
+const clasificar = (m) => /free users/i.test(m) ? "rate" : /rate exceeds|too many|"code":429|\b429\b/i.test(m) ? "iprate" : /rate limit/i.test(m) ? "rate" :/queue|busy|capacity/i.test(m) ? "queue" : /fetch failed|timeout|ECONN|aborted|network|socket|5\d\d/i.test(m) ? "red" : "reject";
 
 /** Envía un video. Devuelve { vid, key } o tira error si agnes lo rechaza por contenido/parámetros. */
 export async function agnesSubmit(body, { tag = "", maxTries = 2000 } = {}) {

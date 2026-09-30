@@ -71,6 +71,7 @@
 //   (`video_queue_full` con todas las claves) → reintento cada ~30 s.
 import fs from "node:fs";
 import path from "node:path";
+import { agnesSubmit, agnesWait, agnesDownload } from "../factory/lib/agnes_pool.mjs";
 import readline from "node:readline";
 import { Readable } from "node:stream";
 import { execFileSync } from "node:child_process";
@@ -308,22 +309,15 @@ function tramo(c) { // audio rellenado a segundo entero → mp3
   return { T, mp3 };
 }
 async function gen(id, body) {
-  let vid;
-  for (let t = 0; t < 200 && !vid; t++) {
-    const j = await (await fetch(B + "/videos", { method: "POST", headers: { Authorization: "Bearer " + key(), "Content-Type": "application/json" }, body: JSON.stringify({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }) })).json().catch(() => ({}));
-    vid = j.video_id || j.id;
-    if (!vid) { const m = JSON.stringify(j); if (!/queue|rate/i.test(m)) { log("REJECT", id, m.slice(0, 200)); return; } await sleep(25000 + Math.random() * 10000); }
-  }
-  if (!vid) return log("GAVE UP", id);
-  log("en cola", id);
-  const t0 = Date.now();
-  while (Date.now() - t0 < 40 * 60e3) {
-    await sleep(15000);
-    const g = await (await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}&model_name=${MODEL}`, { headers: { Authorization: "Bearer " + key() } })).json().catch(() => ({}));
-    if (g.status === "completed" && g.url) { fs.writeFileSync(CL + id + ".mp4", Buffer.from(await (await fetch(g.url)).arrayBuffer())); return log("OK", id, Math.round((Date.now() - t0) / 1000) + "s"); }
-    if (/fail|error|cancel/i.test(g.status || "")) return log("FAIL", id, JSON.stringify(g).slice(0, 200));
-  }
-  log("TIMEOUT", id);
+  // envío + espera con la RESERVA DE CLAVES COMPARTIDA (factory/lib/agnes_pool.mjs): 1 envío/min por clave entre TODOS los procesos
+  let r;
+  try { r = await agnesSubmit({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }, { tag: path.basename(DIR) + " " + id }); }
+  catch (e) { return log("REJECT", id, String(e.message).slice(0, 200)); }
+  log("en cola", id, `(tras ${r.tries} intentos)`);
+  const w = await agnesWait(r.vid, r.key, { model: MODEL, maxMs: 40 * 60e3 });
+  if (w.error) return log(w.error === "timeout" ? "TIMEOUT" : "FAIL", id, String(w.error).slice(0, 200));
+  if (!(await agnesDownload(w.url, CL + id + ".mp4"))) return log("FAIL descarga", id);
+  log("OK", id, w.secs + "s");
 }
 const state = () => fs.existsSync(CL + "state.json") ? JSON.parse(fs.readFileSync(CL + "state.json", "utf8")) : {};
 const PRON = P.pronoun || "he";
