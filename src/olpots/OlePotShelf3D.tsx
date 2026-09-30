@@ -211,7 +211,7 @@ const Set: React.FC<{ t: number; g: ReturnType<typeof useGeoms>; m: ReturnType<t
         <mesh geometry={g.lanternCap} material={m.iron} position={[0, 0.33, 0]} />
         <mesh position={[0, 1.0, 0]} material={m.iron}><cylinderGeometry args={[0.02, 0.02, 1.4, 6]} /></mesh>
       </group>
-      <spotLight position={[1.9, 4.9, 1.3]} target-position={[0, 0, 0]} intensity={360} angle={1.05} penumbra={0.85} color="#ffb765" distance={22} decay={1.7} castShadow shadow-mapSize={[2048, 2048]} shadow-bias={-0.0004} />
+      <spotLight position={[1.9, 4.9, 1.3]} target-position={[0, 0, 0]} intensity={360} angle={1.05} penumbra={0.85} color="#ffb765" distance={22} decay={1.7} castShadow shadow-mapSize={[1024, 1024]} shadow-bias={-0.0004} />
       <pointLight position={[1.9, 5.0, 1.0]} intensity={flick} color="#ff9a3c" distance={16} decay={1.8} />
       <pointLight position={[-7, 3.2, 5]} intensity={26} color="#dbe8ff" distance={22} decay={1.6} />
       <ambientLight intensity={0.35} color="#ffe2bd" />

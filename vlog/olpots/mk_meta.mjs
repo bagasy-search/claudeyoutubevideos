@@ -1,36 +1,55 @@
 // public/olpots_meta.json + guiones/olpots.txt listos para deliver_card. Capítulos con los tiempos REALES
 // (inicio de párrafo en el máster = inicio en el MP4: el video arranca en el cuadro 0 del máster).
+// NO hay links de afiliado (ver AFILIADOS_PENDIENTES.md): la descripción lleva sólo el link del libro.
 import fs from "node:fs";
 const R = "D:/Proyectos/video2-wt/olpots/";
 const P = JSON.parse(fs.readFileSync(R + "_v3/olpots_paras.json", "utf8"));
 const ts = (s) => { s = Math.max(0, Math.floor(s)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
-const CH = [[0, "The bowl on the counter"], [3, "Who I am"], [5, "The cookbook (page 7)"], [6, "The overnight soak myth"], [8, "What about the gas?"], [9, "Rule 1: No soak, just sort"], [11, "Rule 2: Hard boil 10 minutes (safety)"], [14, "Rule 3: Then a whisper"], [15, "How to tell they're done"], [16, "Rule 4: Salt from the start"], [17, "Rule 5: Fat in the pot"], [18, "Rule 6: Acid and sweet go in last"], [21, "Rule 7: Mind the age of your beans"], [22, "Rule 8: Save the pot liquor"], [23, "Bean-hole beans"], [29, "Sunday morning: digging up the pot"], [30, "The kitchen version"], [32, "The mistakes, quick"], [33, "The whole method on one card"]];
-const chapters = CH.map(([p, t]) => `${ts(p === 0 ? 0 : P[p].s)} ${t}`).join("\n");
-const description = `📖 Ole's Logging Camp Cookbook — 50 old camp recipes with exact measures, the trick and the common mistakes on every page (the bean method in this video is page 7): 👉 https://ole-camp-cookbook.vercel.app/?src=ole-beans
+const CH = [[0, "The shelf"], [2, "The five pots, named"], [4, "My four questions"], [6, "#1 Cast iron Dutch oven"], [16, "#2 The 12-inch cast iron skillet"], [25, "#3 The enamel stockpot"], [32, "#4 Stainless stockpot (thick bottom)"], [37, "#5 The heavy saucepan"], [41, "The 3 I would never buy"], [46, "The whole shelf"]];
+const chapters = CH.map(([p, t]) => `${ts(P[p].s)} ${t}`).join("\n");
+const description = `📖 Ole's Logging Camp Cookbook — 50 old camp recipes with exact measures, the trick and the common mistakes on every page (the Dutch oven bread in this video is page 25, the pot beans page 12): 👉 https://ole-camp-cookbook.vercel.app/?src=ole-olpots
 
-Come sit down, friend. Here is the whole bean method written out, so you can keep it.
+Come sit down, friend. Here is the whole shelf written out, so you can keep it.
 
-OLE'S CAMP BEAN METHOD (1 lb dried pinto or navy beans, serves 6-8)
-1. No overnight soak. Sort out stones and broken beans, rinse.
-2. Put beans, 8 cups cold water, 4 oz salt pork or thick bacon, 1 halved onion, 1 Tbsp kosher salt, 1/2 tsp pepper and a bay leaf in a heavy pot. Salt goes in now, not later.
-3. Bring to a hard rolling boil and hold it a full 10 minutes. This step is for safety, on every dried bean. Skim the foam.
-4. Drop the heat to a whisper: barely a bubble, lid cracked. Never a hard boil after this.
-5. Simmer 1 1/2 to 2 hours, adding hot water if the level drops. Tender means a bean mashes easily on your tongue.
-6. NOW add the acid: 1-2 Tbsp cider vinegar (tomato and molasses go in only when the beans are already tender). Acid early keeps beans hard.
-7. Rest 15 minutes. Never pour the broth down the drain.
-Old beans (over a year or two) may never soften: buy from a store that sells lots of beans, and add 1/8 tsp baking soda per pound. Never cook raw kidney beans in a slow cooker. Leftovers: cool within 2 hours, fridge up to 4 days, reheat to 165°F.
+THE 5 POTS I'D BUY (types, not brands)
+1. Cast iron Dutch oven, 5-6 qt. Thick walls, tight lid. Flat bottom and flat lid for the house; legs and a rimmed lid for a fire.
+2. 12-inch cast iron skillet (about 8 lb). Stove to a 450°F oven and back.
+3. Enamel stockpot, 12 qt or bigger. Steel with glass fused on: light, doesn't react with tomato or vinegar. Retire it if the chip is on the inside.
+4. Stainless steel stockpot with a thick "sandwich" bottom (aluminum or copper core). Stainless alone is a poor heat conductor.
+5. Heavy 2-3 qt saucepan with a lid that fits. Thick base so milk and oatmeal don't scorch.
 
-Tell me in the comments what your family said about salt and beans, and where you're cooking from.
+BUYING IRON (secondhand is fine)
+- Set it on the counter and spin it. If it rocks, put it back.
+- Tap the rim with a knuckle: a clear ring means sound iron; a dull thud can mean a crack.
+- Light rust, black crust and old grease come off. Cracks and deep pits don't.
+
+DUTCH OVEN COALS (rule of thumb, a starting point)
+Pot width in inches x 2 = briquettes. A 12-inch oven: about 24, two thirds on the lid and one third underneath, near 350°F. Quarter turn the pot every 15 minutes and the lid the other way. Gloves on, lid lifted away from your face, and never burn coals indoors, in a tent or in a garage (carbon monoxide).
+
+CAST IRON CARE
+- Mild dish soap is fine on a seasoned pan. Wash it while it's still warm.
+- Dry it on a burner over low heat, then rub in a thin film of oil and wipe off the extra.
+- Never soak it in the sink and never put it in the dishwasher.
+- Seasoning: a very thin coat of oil, wiped off as if you made a mistake, baked upside down at 450-500°F for one hour with foil on the rack below.
+
+THE 3 I WOULD NEVER BUY
+1. Cheap nonstick over a hot fire. The coating maker's own guidance puts the limit around 500°F and warns against heating the pan empty; the fumes from overheated coatings can make people sick and are dangerous to pet birds.
+2. Thin stamped aluminum stockpots. Hot spots, and they warp.
+3. Glazed pottery of unknown origin (handmade-looking, flea market, bright orange/red/yellow). The FDA warns that lead can be in the glaze, and acidic food pulls out more.
+
+Sources: coating maker's safety guidance (Teflon); U.S. FDA, "Questions and Answers on Lead-Glazed Traditional Pottery"; thermal conductivity of aluminum, iron and stainless steel from standard engineering tables; Dutch oven history: Abraham Darby's 1707 patent for casting iron in sand.
+
+Tell me in the comments: which pot in your kitchen is older than you are?
 
 CHAPTERS
 ${chapters}
 
 Ole's Camp Kitchen
-(Ole is the channel's cook-character; the recipes are traditional methods adapted and tested for home kitchens. Archival photos: public domain, Library of Congress / DPLA / NARA via Wikimedia Commons.)`;
+(Ole is the channel's cook-character; the recipes are traditional methods adapted and tested for home kitchens. Archival images: public domain via Wikimedia Commons / DPLA; stock footage: Pexels.)`;
 const meta = {
-  title: "NEVER Cook Beans Again Without This Old Logging Camp Trick",
+  title: "I Cooked for Loggers for 40 Years — These Are the Only 5 Pots I'd Buy",
   description,
-  pinned_comment: "The trick: no overnight soak, salt at the START, a hard boil for 10 full minutes, then down to a whisper with the lid cracked — and the vinegar, tomato and molasses only once the beans are tender. Everything I cook in this kitchen is written down in my cookbook, 50 recipes with every measure 💛 https://ole-camp-cookbook.vercel.app/?src=ole-beans",
+  pinned_comment: "The whole shelf: cast iron Dutch oven, 12-inch cast iron skillet, enamel stockpot, stainless stockpot with a thick bottom, and a heavy little saucepan with a lid that fits. Everything I cook in this kitchen is written down in my cookbook, 50 recipes with every measure 💛 https://ole-camp-cookbook.vercel.app/?src=ole-olpots — and tell me: which pot in your kitchen is older than you are?",
 };
 fs.writeFileSync(R + "public/olpots_meta.json", JSON.stringify(meta, null, 2));
 console.log(chapters);
