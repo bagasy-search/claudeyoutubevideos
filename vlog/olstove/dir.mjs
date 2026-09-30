@@ -16,7 +16,7 @@ export const SHOTS = [
   S(1, "and it's not free", "bi", "d_stack", { p: null, anim: "an old hand lays a second dry split log beside the first one inside the stove firebox", src: "D1b" }),
   S(1, "It's three habits", "c", "StvFireStack3D", { props: { mode: "topDown", igniteAt: 1.6, burnSecs: 5 } }),
   S(1, "Most folks", "c", "StvStove3D", { props: { mode: "bottomUp" } }),
-  S(2, "", "c", "StvMoistureMeter", { props: { reads: [{ at: 0.3, pct: 41 }, { at: 1.1, pct: 16 }] } }),
+  S(2, "", "c", "StvMoistureMeter", { props: { reads: [{ at: 0, pct: 41 }, { at: 0.75, pct: 16 }] } }),
   S(2, "A fire built", "c", "StvFireStack3D", { props: { mode: "topDown", t0: 1.2, igniteAt: 1.7, burnSecs: 6, orbit: 0.4 } }),
   S(2, "And one little handle", "c", "StvDamperDial", { props: { stops: [{ at: 0, deg: 90 }, { at: 1.2, deg: 45 }] } }),
   S(2, "that people either", "vl", "m4"),

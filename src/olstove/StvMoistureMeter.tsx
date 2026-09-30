@@ -32,7 +32,7 @@ export const StvMoistureMeter: React.FC<{ reads?: { at: number; pct: number }[];
   let val = 0, idx = 0;
   reads.forEach((r, i) => { if (t >= r.at) { idx = i; } });
   const cur = reads[idx], prev = reads[idx - 1];
-  const p = c01((t - cur.at) / 1.1);
+  const p = !prev && cur.at <= 0.05 ? 1 : c01((t - cur.at) / 1.1);
   val = interpolate(ease(p), [0, 1], [prev ? prev.pct : 0, cur.pct]);
   const wetNow = val > ready;
   const ang = -120 + (Math.min(val, max) / max) * 240;      // aguja de -120° a +120°
