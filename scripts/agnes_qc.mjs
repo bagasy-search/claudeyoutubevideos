@@ -165,9 +165,10 @@ if (pendientes.length && REV === null) {
     const ins = [baseOf(n) || path.join(TMP, `${n}_0.jpg`), path.join(TMP, `${n}_1.jpg`), path.join(TMP, `${n}_2.jpg`)];
     try {
       execFileSync("ffmpeg", ["-v", "error", "-y", ...ins.flatMap((f) => ["-i", f]), "-filter_complex",
+        // alturas PARES (136+134=270): con 135 impar el vstack de ffmpeg 6.1 aborta con malloc() corrupted (30-sep-2026)
         // el cuadro FINAL va grande (480 px): ahí aparecen los defectos tardíos, y a 256 px un zapato en el
         // borde (tcbriquetas p170) no se ve en la hoja
-        `[0]scale=240:135,format=yuvj420p[a];[1]scale=240:135,format=yuvj420p[b];[2]scale=480:270,format=yuvj420p[c];[a][b]vstack=2[ab];[ab][c]hstack=2,pad=720:292:0:22:black,drawtext=fontfile='${FONT}':text='${label}':x=4:y=3:fontsize=16:fontcolor=${doc.clips[n].hint || doc.clips[n].auto ? "yellow" : "white"}`,
+        `[0]scale=240:136,format=yuvj420p[a];[1]scale=240:134,format=yuvj420p[b];[2]scale=480:270,format=yuvj420p[c];[a][b]vstack=2[ab];[ab][c]hstack=2,pad=720:292:0:22:black,drawtext=fontfile='${FONT}':text='${label}':x=4:y=3:fontsize=16:fontcolor=${doc.clips[n].hint || doc.clips[n].auto ? "yellow" : "white"}`,
         "-frames:v", "1", "-q:v", "4", t]);
       tiles.push(t);
     } catch (e) { console.log(`  ⚠️ no pude armar la fila de ${n}: ${String(e.message).slice(0, 80)}`); }
