@@ -104,15 +104,15 @@ export const SHOTS = [
   S(21, "", "bi", "b_shockcrack", { p: BI(`Steam exploding upward as cold water is poured from a pitcher into a very hot cast iron skillet on a wood stove, a hairline crack visible on the pan's wall, the pitcher and a hand at the top edge of the frame.`), anim: "the water hits the pan and steam bursts up" }),
   S(21, "Pour cold water", "ole", "o_shock", { p: OLEP(`He winces and pulls back with his hand raised, looking at a steaming black cast iron skillet on the wood stove in front of him, a small pitcher of water beside it on the stove shelf, concerned expression.`), ov: { c: "OleStamp", props: { text: "NEVER", sub: "cold water on a hot pan", at: 0.6 } } }),
   S(21, "And don't ever put one", "bi", "b_selfclean", { p: BI(`The front of a modern wall oven with its digital display glowing and a heavy black cast iron skillet visible through the dark glass door, the door latch locked, kitchen counter in front, nobody in frame.`), anim: "the oven's display light blinks once" }),
-  S(21, "That cycle gets hot", "av", ""),
+  S(21, "That cycle gets hot", "st", "s_hotoven"),
   // ══ LIMPIEZA ══
-  S(22, "", "av", ""),
+  S(22, "", "st", "s_cleanintro"),
   S(22, "While the pan's still warm", "st", "s_washpan"),
   S(22, "A little mild dish soap", "bi", "b_soap", { p: BI(`Close view of a sponge with a drop of dish soap scrubbing the inside of a black seasoned cast iron skillet in a sink under running warm water, soapy bubbles, the seasoning staying deep black and intact.`), anim: "the sponge scrubs and bubbles form" }),
   S(22, "For stuck food", "bi", "b_simmer", { p: BI(`A cast iron skillet on a stove burner with half an inch of gently simmering water in it, bits of stuck food loosening from the bottom, a flat metal scraper resting on the rim.`), anim: "the water simmers with small bubbles" }),
   S(23, "", "av", ""),
   S(23, "Dry it completely", "st", "s_dryburner2"),
-  S(23, "Rub in a thin film", "st", "s_thinoil"),
+  S(23, "Rub in a thin film", "bi", "b_thinoil", { p: BI(`Close view of an old hand rubbing a thin film of oil into a warm just-dried black cast iron skillet with a paper towel, the surface turning satin, faint wisps of warmth.`), anim: "the paper towel rubs a thin film across the warm pan" }),
   S(23, "Never let it soak", "bi", "b_sinksoak", { p: BI(`A black cast iron skillet sitting in a sink full of gray dishwater with soapy dishes around it, the pan half submerged, rust-orange streaks beginning at the rim, nobody in frame.`), anim: "the dishwater ripples slightly", ov: { c: "OleStamp", props: { text: "NEVER", sub: "soak it", at: 0.4, x: 0.24, y: 0.26 } } }),
   S(23, "Never put it in the dishwasher", "bi", "b_dishwasher", { p: BI(`The open door of a dishwasher with a cast iron skillet on the lower rack among plates, with rusty orange marks on it, steam rising from the machine, kitchen counter beside it.`), anim: "steam drifts up out of the dishwasher", ov: { c: "OleStamp", props: { text: "NEVER", sub: "the dishwasher", at: 0.4, x: 0.24, y: 0.26 } } }),
   // ══ DUTCH OVEN Y BRASAS ══
