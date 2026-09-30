@@ -12,16 +12,19 @@ img/olstove/ar/ar_camp_1.jpg
 broll/olstove_st30/st_cabin_1.mp4
 img/olstove/d_stack.png
 broll/olstove/d_stack.mp4
+img/olstove/b_twologs.png
+img/olstove/b_blackglass.png
+vid/olstove/m4.mp4
 img/olstove/d_damper.png
 broll/olstove/d_damper.mp4
+img/olstove/b_bunks.png
 img/olstove/d_alarm.png
 broll/olstove/d_alarm.mp4
-img/olstove/b_bunks.png
 img/olstove/b_can.png
 broll/olstove_st30/st_kindling_1.mp4
+img/olstove/b_threefeet.png
 img/olstove/b_label.png
 broll/olstove/b_label.mp4
-img/olstove/b_threefeet.png
 img/olstove/b_ashpail.png
 broll/olstove/b_ashpail.mp4
 broll/olstove_st30/st_ash_1.mp4
@@ -61,6 +64,7 @@ broll/olstove_st30/st_woodpile_3.mp4
 broll/olstove_st30/st_woodpile_7.mp4
 broll/olstove_st30/st_woodpile_8.mp4
 img/olstove/ar/ar_wood_1.jpg
+img/olstove/b_tinroof.png
 broll/olstove_st30/st_measure_1.mp4
 broll/olstove_st30/st_chop_2.mp4
 img/olstove/b_dumped.png
@@ -76,7 +80,6 @@ img/olstove/b_paintboard.png
 img/olstove/d_doorair.png
 broll/olstove/d_doorair.mp4
 broll/olstove_st30/st_fire_3.mp4
-img/olstove/b_blackglass.png
 broll/olstove/b_blackglass.mp4
 broll/olstove_st30/st_smoke_3.mp4
 broll/olstove_st30/st_embers_1.mp4
@@ -88,6 +91,7 @@ broll/olstove_st30/st_fire_4.mp4
 broll/olstove_st30/st_embers_2.mp4
 broll/olstove_st30/st_fire_5.mp4
 broll/olstove_st30/st_smoke_4.mp4
+img/olstove/b_capscreen.png
 img/olstove/b_manual.png
 broll/olstove_st30/st_roof_1.mp4
 img/olstove/b_birdnest.png
