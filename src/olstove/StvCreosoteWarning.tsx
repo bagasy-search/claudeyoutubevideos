@@ -3,12 +3,13 @@
 // Props: stage labels y unidad por props (sin texto quemado). `fire`: al final el vidrio prende (chimney fire) para el aviso de emergencia.
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { StvBed } from "./StvBed";
 import { OLE, LABEL, HAND, woodBg, hexA, rnd } from "./OleTheme";
 
 const ease = Easing.bezier(0.33, 0, 0.2, 1);
 const c01 = (x: number) => Math.max(0, Math.min(1, x));
 
-export const StvCreosoteWarning: React.FC<{ stages?: string[]; limit?: string; fire?: boolean; coins?: boolean; coinsLabel?: string }> = ({ stages = ["SOOT", "FLAKY TAR", "BLACK GLAZE"], limit = "1/8 inch: sweep it", fire = false, coins = true, coinsLabel = "nickel + dime" }) => {
+export const StvCreosoteWarning: React.FC<{ bed?: string;  stages?: string[]; limit?: string; fire?: boolean; coins?: boolean; coinsLabel?: string }> = ({ bed, stages = ["SOOT", "FLAKY TAR", "BLACK GLAZE"], limit = "1/8 inch: sweep it", fire = false, coins = true, coinsLabel = "nickel + dime" }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const t = frame / fps, dur = durationInFrames / fps;
@@ -21,7 +22,8 @@ export const StvCreosoteWarning: React.FC<{ stages?: string[]; limit?: string; f
   const flakes = Array.from({ length: 34 }, (_, i) => ({ y: H0 + 60 + rnd(i * 3) * (H1 - H0 - 120), side: i % 2, w: 10 + rnd(i * 3 + 1) * 26, h: 8 + rnd(i * 3 + 2) * 18 }));
   const layerFill = stage === 0 ? "#4a4642" : stage === 1 ? "#26221f" : "#0b0a0a";
   return (
-    <AbsoluteFill style={woodBg("#B98C5A")}>
+    <AbsoluteFill style={bed ? undefined : woodBg("#B98C5A")}>
+      {bed ? <StvBed src={bed} /> : null}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 40% 45%, ${hexA("#FFF4DE", 0.55)}, transparent 62%)` }} />
       <svg viewBox="0 0 1920 1080" width="100%" height="100%" style={{ position: "absolute", inset: 0 }}>
         <defs><linearGradient id="gl" x1="0" x2="1"><stop offset="0" stopColor="#000" /><stop offset="0.4" stopColor="#3a3a3a" /><stop offset="0.5" stopColor="#111" /><stop offset="1" stopColor="#000" /></linearGradient></defs>

@@ -3,6 +3,7 @@
 // Props: reads = [{at (s), pct, note?}] (cada lectura mueve la aguja y cambia el tronco); ready = umbral (20). Sin texto quemado.
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { StvBed } from "./StvBed";
 import { OLE, LABEL, woodBg, hexA, rnd } from "./OleTheme";
 
 const ease = Easing.bezier(0.33, 0, 0.2, 1);
@@ -24,7 +25,7 @@ const LogEnd: React.FC<{ cx: number; cy: number; r: number; wet: number; seed: n
   );
 };
 
-export const StvMoistureMeter: React.FC<{ reads?: { at: number; pct: number }[]; ready?: number; max?: number; bed?: string }> = ({ reads = [{ at: 0.5, pct: 41 }, { at: 3.4, pct: 16 }], ready = 20, max = 40 }) => {
+export const StvMoistureMeter: React.FC<{ reads?: { at: number; pct: number }[]; ready?: number; max?: number; bed?: string }> = ({ bed, reads = [{ at: 0.5, pct: 41 }, { at: 3.4, pct: 16 }], ready = 20, max = 40 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -44,7 +45,8 @@ export const StvMoistureMeter: React.FC<{ reads?: { at: number; pct: number }[];
   const pin = interpolate(t, [Math.max(0, cur.at - 0.4), cur.at + 0.1], [prev ? 0.2 : 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease }); // clavijas se clavan cada lectura
   const enter = c01(t / 0.5);
   return (
-    <AbsoluteFill style={{ ...woodBg("#B98C5A"), opacity: 1 }}>
+    <AbsoluteFill style={bed ? undefined : woodBg("#B98C5A")}>
+      {bed ? <StvBed src={bed} /> : null}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 40% 38%, ${hexA("#FFF4DE", 0.5)}, transparent 62%)` }} />
       <svg viewBox="0 0 1920 1080" width="100%" height="100%" style={{ position: "absolute", inset: 0 }}>
         <ellipse cx="760" cy="830" rx="560" ry="46" fill="rgba(30,16,6,0.30)" />

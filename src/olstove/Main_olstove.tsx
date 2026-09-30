@@ -20,6 +20,8 @@ import { StvCreosoteWarning } from "./StvCreosoteWarning";
 import { StvCordStack } from "./StvCordStack";
 import { StvChimneyDraft } from "./StvChimneyDraft";
 import { StvSeasonCalendar } from "./StvSeasonCalendar";
+import { StvRuleSlate } from "./StvRuleSlate";
+import { StvRecapBoard } from "./StvRecapBoard";
 
 export { TOTAL_FRAMES_OLSTOVE };
 
@@ -82,7 +84,7 @@ const Placeholder: React.FC<{ avatar?: boolean }> = ({ avatar }) => (
 );
 
 const COMP: Record<string, React.FC<any>> = {
-  StvStove3D, StvFireStack3D, StvCabinHeat3D, StvMoistureMeter, StvDamperDial, StvCreosoteWarning, StvCordStack, StvChimneyDraft, StvSeasonCalendar,
+  StvStove3D, StvFireStack3D, StvCabinHeat3D, StvMoistureMeter, StvDamperDial, StvCreosoteWarning, StvCordStack, StvChimneyDraft, StvSeasonCalendar, StvRuleSlate, StvRecapBoard,
   OleRuleCard, OleRecapCard, OleBookPage, OleCTA,
 };
 const OVC: Record<string, React.FC<any>> = { OleNameTag, OleNote, OleArrow, OleComments, OleSubscribe, OleAsk, OleStamp, OleCounter, OleRuleCard, OleCTA };

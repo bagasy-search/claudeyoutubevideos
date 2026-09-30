@@ -3,12 +3,13 @@
 // if the glass blackens, open the air». Props: stops = [{at (s), deg}] (0° = todo cerrado, 90° = todo abierto).
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { StvBed } from "./StvBed";
 import { OLE, LABEL, woodBg, hexA } from "./OleTheme";
 
 const ease = Easing.bezier(0.33, 0, 0.2, 1);
 const c01 = (x: number) => Math.max(0, Math.min(1, x));
 
-export const StvDamperDial: React.FC<{ stops?: { at: number; deg: number }[]; sootWord?: string }> = ({ sootWord = "Open the air", stops = [{ at: 0, deg: 90 }, { at: 1.6, deg: 62 }, { at: 3.0, deg: 34 }, { at: 4.4, deg: 5 }] }) => {
+export const StvDamperDial: React.FC<{ bed?: string;  stops?: { at: number; deg: number }[]; sootWord?: string }> = ({ bed, sootWord = "Open the air", stops = [{ at: 0, deg: 90 }, { at: 1.6, deg: 62 }, { at: 3.0, deg: 34 }, { at: 4.4, deg: 5 }] }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -25,7 +26,8 @@ export const StvDamperDial: React.FC<{ stops?: { at: number; deg: number }[]; so
     return `M ${p0[0]} ${p0[1]} A ${r} ${r} 0 0 1 ${p1[0]} ${p1[1]}`;
   };
   return (
-    <AbsoluteFill style={woodBg("#B98C5A")}>
+    <AbsoluteFill style={bed ? undefined : woodBg("#B98C5A")}>
+      {bed ? <StvBed src={bed} /> : null}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 35% 40%, ${hexA("#FFF4DE", 0.5)}, transparent 60%)` }} />
       <svg viewBox="0 0 1920 1080" width="100%" height="100%" style={{ position: "absolute", inset: 0 }}>
         {/* caño con la manija */}

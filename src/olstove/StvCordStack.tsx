@@ -3,10 +3,11 @@
 // compara con un "face cord" (una fracción). Etiquetas por props (sin texto quemado).
 import React from "react";
 import { AbsoluteFill, Easing, useCurrentFrame, useVideoConfig } from "remotion";
+import { StvBed } from "./StvBed";
 import { OLE, LABEL, HAND, woodBg, hexA, rnd } from "./OleTheme";
 const ease = Easing.bezier(0.33, 0, 0.2, 1);
 const c01 = (x: number) => Math.max(0, Math.min(1, x));
-export const StvCordStack: React.FC<{ labels?: { h: string; d: string; l: string; total: string; face: string }; t0?: number }> = ({ t0 = 0, labels = { h: "4 ft", d: "4 ft", l: "8 ft", total: "128 cubic feet", face: "a face cord: a fraction" } }) => {
+export const StvCordStack: React.FC<{ bed?: string;  labels?: { h: string; d: string; l: string; total: string; face: string }; t0?: number }> = ({ bed, t0 = 0, labels = { h: "4 ft", d: "4 ft", l: "8 ft", total: "128 cubic feet", face: "a face cord: a fraction" } }) => {
   const frame = useCurrentFrame(); const { fps } = useVideoConfig(); const t = frame / fps + t0;
   const cols = 16, rows = 8, cw = 44, ch = 44;
   const ox = 420, oy = 780;
@@ -21,7 +22,8 @@ export const StvCordStack: React.FC<{ labels?: { h: string; d: string; l: string
   const m1 = c01((t - 2.6) / 0.7), m2 = c01((t - 3.5) / 0.7), m3 = c01((t - 4.4) / 0.7);
   const W = cols * cw, H = rows * ch;
   return (
-    <AbsoluteFill style={woodBg("#B98C5A")}>
+    <AbsoluteFill style={bed ? undefined : woodBg("#B98C5A")}>
+      {bed ? <StvBed src={bed} /> : null}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 40% 40%, ${hexA("#FFF4DE", 0.5)}, transparent 62%)` }} />
       <svg viewBox="0 0 1920 1080" width="100%" height="100%" style={{ position: "absolute", inset: 0 }}>
         <rect x={ox - 30} y={oy} width={W + 60} height="26" fill="#4a3826" /><rect x={ox - 30} y={oy + 26} width={W + 60} height="12" fill="rgba(0,0,0,0.25)" />

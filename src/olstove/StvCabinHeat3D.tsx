@@ -99,8 +99,8 @@ export const StvCabinHeat3D: React.FC<{ swapAt?: number; swapDur?: number; orbit
         {[[-1.85, 0.6], [-0.55, 0.6], [-1.85, 1.2], [-0.55, 1.2]].map(([lx, lz], i) => <mesh key={i} position={[lx, 0.25, lz]}><boxGeometry args={[0.07, 0.5, 0.07]} /><meshStandardMaterial color="#7A5636" /></mesh>)}
         {/* el mapa de calor: nubes blandas de color (sprites) */}
         {cells.map((c) => (
-          <sprite key={c.k} position={c.p} scale={[cs[0] * 2.5, cs[1] * 2.6, 1]}>
-            <spriteMaterial map={tex.soft} color={new THREE.Color(c.col[0], c.col[1], c.col[2])} transparent depthWrite={false} opacity={Math.min(0.5, c.a * 2.0)} />
+          <sprite key={c.k} position={c.p} scale={[cs[0] * 2.2, cs[1] * 2.3, 1]}>
+            <spriteMaterial map={tex.soft} color={new THREE.Color(c.col[0], c.col[1], c.col[2])} transparent depthWrite={false} opacity={Math.min(0.34, c.a * 1.35)} />
           </sprite>
         ))}
         <sprite renderOrder={20} position={[STOVE[0], 0.7, STOVE[1] + 0.35]} scale={[1.2, 1.2, 1]}><spriteMaterial map={tex.soft} color="#FF9A3A" transparent depthTest={false} depthWrite={false} opacity={0.5} blending={THREE.AdditiveBlending} /></sprite>

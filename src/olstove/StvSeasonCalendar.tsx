@@ -3,10 +3,11 @@
 // Props: months = [{name, items[], at}] — las tildes se marcan a lápiz una por una. Sin texto quemado.
 import React from "react";
 import { AbsoluteFill, Easing, useCurrentFrame, useVideoConfig } from "remotion";
+import { StvBed } from "./StvBed";
 import { OLE, LABEL, HAND, woodBg, notebookBg, hexA } from "./OleTheme";
 const ease = Easing.bezier(0.33, 0, 0.2, 1);
 const c01 = (x: number) => Math.max(0, Math.min(1, x));
-export const StvSeasonCalendar: React.FC<{ months?: { name: string; items: string[]; at: number }[] }> = ({ months = [
+export const StvSeasonCalendar: React.FC<{ bed?: string;  months?: { name: string; items: string[]; at: number }[] }> = ({ bed, months = [
   { name: "OCTOBER", items: ["Stack the wood", "Check it with the meter"], at: 0.5 },
   { name: "BEFORE THE COLD", items: ["Have the chimney inspected"], at: 2.4 },
   { name: "NOVEMBER", items: ["Test the alarms"], at: 3.8 },
@@ -14,7 +15,8 @@ export const StvSeasonCalendar: React.FC<{ months?: { name: string; items: strin
 ] }) => {
   const frame = useCurrentFrame(); const { fps } = useVideoConfig(); const t = frame / fps;
   return (
-    <AbsoluteFill style={woodBg("#8A6A44")}>
+    <AbsoluteFill style={bed ? undefined : woodBg("#8A6A44")}>
+      {bed ? <StvBed src={bed} /> : null}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 40%, ${hexA("#FFE8B8", 0.35)}, transparent 62%)` }} />
       <div style={{ position: "absolute", left: 300, top: 70, width: 1320, height: 940, transform: "rotate(-1.2deg)", boxShadow: "0 26px 60px rgba(20,10,4,0.5)", ...notebookBg(OLE.paper, 62) }}>
         <div style={{ position: "absolute", left: 130, top: 40, right: 60, fontFamily: HAND, fontSize: 60, color: OLE.pencil, fontWeight: 700 }}>

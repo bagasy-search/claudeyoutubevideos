@@ -2,16 +2,18 @@
 // el tiraje (el humo sube por el caño tibio) y el sombrero con su malla. PAGO: «at least three feet above the roof… a cap keeps the rain out».
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
+import { StvBed } from "./StvBed";
 import { OLE, HAND, woodBg, hexA, rnd } from "./OleTheme";
 const c01 = (x: number) => Math.max(0, Math.min(1, x));
-export const StvChimneyDraft: React.FC<{ labels?: { a: string; b: string; c: string; cap: string } }> = ({ labels = { a: "3 ft", b: "2 ft", c: "10 ft", cap: "cap + screen" } }) => {
+export const StvChimneyDraft: React.FC<{ bed?: string;  labels?: { a: string; b: string; c: string; cap: string } }> = ({ bed, labels = { a: "3 ft", b: "2 ft", c: "10 ft", cap: "cap + screen" } }) => {
   const frame = useCurrentFrame(); const { fps } = useVideoConfig(); const t = frame / fps;
   const m3 = c01((t - 0.8) / 0.8), m2 = c01((t - 1.9) / 0.8), m10 = c01((t - 3.0) / 0.8), cap = c01((t - 4.2) / 0.7);
   const px = 620, roofY = 700, ridgeX = 1400, ridgeY = 470, top = 210;
   const slopeY = (x: number) => roofY - ((x - 260) / (ridgeX - 260)) * (roofY - ridgeY);
   const ry = slopeY(px);
   return (
-    <AbsoluteFill style={woodBg("#B98C5A")}>
+    <AbsoluteFill style={bed ? undefined : woodBg("#B98C5A")}>
+      {bed ? <StvBed src={bed} /> : null}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 40% 40%, ${hexA("#FFF4DE", 0.5)}, transparent 62%)` }} />
       <svg viewBox="0 0 1920 1080" width="100%" height="100%" style={{ position: "absolute", inset: 0 }}>
         <polygon points={`260,${roofY + 300} 260,${roofY} ${ridgeX},${ridgeY} ${ridgeX + 620},${roofY + 60} ${ridgeX + 620},${roofY + 300}`} fill="#6B4A2E" />
