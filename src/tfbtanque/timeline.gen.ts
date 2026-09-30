@@ -3,7 +3,7 @@
 export const TOTAL_FRAMES_TFBTANQUE = 29561;
 export const BASE = "tfbtanque_vlog.mp4";
 export const AUDIO = "tfbtanque.m4a";
-export const CAM: any[] = [{"f": 0, "dur": 36, "kind": "shake", "amt": 0.8}, {"f": 36, "dur": 54, "kind": "push", "amt": 0.06}, {"f": 90, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 246, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 324, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 382, "dur": 72, "kind": "frame", "amt": 0.22, "ox": 55, "oy": 35}, {"f": 497, "dur": 63, "kind": "frame", "amt": 0.12, "ox": 40, "oy": 40}, {"f": 556, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 644, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 677, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 778, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 833, "dur": 60, "kind": "push", "amt": 0.1}, {"f": 860, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 860, "dur": 14, "kind": "punch", "amt": 0.12}, {"f": 924, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1032, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1096, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1180, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1223, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1380, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1481, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1561, "dur": 12, "kind": "punch", "amt": 0.07}, {"f": 1565, "dur": 66, "kind": "frame", "amt": 0.2, "ox": 50, "oy": 38}, {"f": 1746, "dur": 14, "kind": "whip", "dir": 1}, {"f": 3366, "dur": 14, "kind": "whip", "dir": -1}, {"f": 4508, "dur": 30, "kind": "shake", "amt": 0.5}, {"f": 5189, "dur": 14, "kind": "whip", "dir": 1}, {"f": 8046, "dur": 14, "kind": "whip", "dir": -1}, {"f": 9195, "dur": 15, "kind": "punch", "amt": 0.12}, {"f": 9514, "dur": 14, "kind": "whip", "dir": 1}, {"f": 12222, "dur": 14, "kind": "whip", "dir": -1}, {"f": 12235, "dur": 165, "kind": "push", "amt": 0.12}, {"f": 12413, "dur": 14, "kind": "whip", "dir": 1}, {"f": 13749, "dur": 14, "kind": "whip", "dir": -1}, {"f": 14206, "dur": 14, "kind": "whip", "dir": 1}, {"f": 14841, "dur": 14, "kind": "whip", "dir": -1}, {"f": 16892, "dur": 14, "kind": "whip", "dir": 1}, {"f": 18753, "dur": 14, "kind": "whip", "dir": -1}, {"f": 20741, "dur": 14, "kind": "whip", "dir": 1}, {"f": 21900, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 22839, "dur": 14, "kind": "whip", "dir": -1}, {"f": 23529, "dur": 14, "kind": "whip", "dir": 1}, {"f": 25228, "dur": 14, "kind": "whip", "dir": -1}, {"f": 26527, "dur": 24, "kind": "shake", "amt": 0.8}, {"f": 27361, "dur": 14, "kind": "whip", "dir": 1}, {"f": 27635, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 27714, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 28561, "dur": 24, "kind": "shake", "amt": 0.7}];
+export const CAM: any[] = [{"f": 0, "dur": 36, "kind": "shake", "amt": 0.8}, {"f": 36, "dur": 54, "kind": "push", "amt": 0.06}, {"f": 90, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 246, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 324, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 382, "dur": 72, "kind": "frame", "amt": 0.22, "ox": 55, "oy": 35}, {"f": 497, "dur": 63, "kind": "frame", "amt": 0.12, "ox": 40, "oy": 40}, {"f": 556, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 644, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 677, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 778, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 833, "dur": 60, "kind": "push", "amt": 0.1}, {"f": 860, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 860, "dur": 14, "kind": "punch", "amt": 0.12}, {"f": 924, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 1032, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 1096, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 1180, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 1223, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 1380, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 1481, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 1561, "dur": 12, "kind": "punch", "amt": 0.09}, {"f": 1565, "dur": 66, "kind": "frame", "amt": 0.2, "ox": 50, "oy": 38}, {"f": 1746, "dur": 14, "kind": "whip", "dir": 1}, {"f": 3366, "dur": 14, "kind": "whip", "dir": -1}, {"f": 4508, "dur": 30, "kind": "shake", "amt": 0.5}, {"f": 5189, "dur": 14, "kind": "whip", "dir": 1}, {"f": 8046, "dur": 14, "kind": "whip", "dir": -1}, {"f": 9195, "dur": 15, "kind": "punch", "amt": 0.12}, {"f": 9514, "dur": 14, "kind": "whip", "dir": 1}, {"f": 12222, "dur": 14, "kind": "whip", "dir": -1}, {"f": 12235, "dur": 165, "kind": "push", "amt": 0.12}, {"f": 12413, "dur": 14, "kind": "whip", "dir": 1}, {"f": 13749, "dur": 14, "kind": "whip", "dir": -1}, {"f": 14206, "dur": 14, "kind": "whip", "dir": 1}, {"f": 14841, "dur": 14, "kind": "whip", "dir": -1}, {"f": 16892, "dur": 14, "kind": "whip", "dir": 1}, {"f": 18753, "dur": 14, "kind": "whip", "dir": -1}, {"f": 20741, "dur": 14, "kind": "whip", "dir": 1}, {"f": 21900, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 22839, "dur": 14, "kind": "whip", "dir": -1}, {"f": 23529, "dur": 14, "kind": "whip", "dir": 1}, {"f": 25228, "dur": 14, "kind": "whip", "dir": -1}, {"f": 26527, "dur": 24, "kind": "shake", "amt": 0.8}, {"f": 27361, "dur": 14, "kind": "whip", "dir": 1}, {"f": 27635, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 27714, "dur": 15, "kind": "punch", "amt": 0.1}, {"f": 28561, "dur": 24, "kind": "shake", "amt": 0.7}];
 export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 {
 "kind": "mark",
@@ -29,7 +29,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -38,7 +38,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -58,7 +58,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -103,7 +103,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -137,7 +137,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -146,7 +146,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -155,7 +155,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -173,7 +173,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -208,7 +208,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -217,7 +217,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -226,7 +226,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -246,7 +246,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -255,7 +255,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -273,7 +273,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {
@@ -282,7 +282,7 @@ export const OVER: { kind: string; from: number; dur: number; props: any }[] = [
 "dur": 6,
 "props": {
 "color": "#FFFFFF",
-"peak": 0.55
+"peak": 0.92
 }
 },
 {

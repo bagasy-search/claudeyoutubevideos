@@ -52,7 +52,7 @@ for c in G['clips']:
     if 0.5 < t < 62 and not any(abs(t - sg['f0'] / FPS) < 0.1 for sg in G['segs']):
         sfx(WH[int(t * 7) % len(WH)], t - 0.15, -18)
         # minuto 1: cada frontera dentro de la escena lleva destello + punch (corte bien marcado, medido con scene>0.3)
-        over('flash', t, 0.17, color='#FFFFFF', peak=0.55); cam('punch', t, 0.4, amt=0.07)
+        over('flash', t, 0.1, color='#FFFFFF', peak=0.92); cam('punch', t, 0.4, amt=0.09)   # destello de 3 cuadros: corte que se nota (y se mide)
 
 # ═════════ MINUTO 1 — el tráiler (cero silencios, ≥20 cortes, ninguna toma > 4 s) ═════════
 
