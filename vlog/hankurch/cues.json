@@ -1,0 +1,722 @@
+[
+ {
+  "t": "card",
+  "comp": "TallyZoom",
+  "at": "All together, divers have killed an estimated",
+  "until": "sea urchins off California",
+  "pad": 0.9,
+  "props": {
+   "total": 7800000,
+   "unitLabel": "ONE URCHIN",
+   "perUnit": "",
+   "finalLabel": "URCHINS KILLED OFF CALIFORNIA · ESTIMATED",
+   "one": "URCHIN",
+   "many": "URCHINS"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "To understand this story",
+  "dur": 2.4,
+  "props": {
+   "n": 1,
+   "title": "THE FOREST THAT WAS",
+   "bg": "@img:@near",
+   "progress": 0.083,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "GlobeDive3D",
+  "at": "Along this coast, there was a forest",
+  "until": "spreading out on the water",
+  "pad": 0.3,
+  "props": {
+   "lat": 39.3,
+   "lon": -123.8,
+   "label": "MENDOCINO COAST",
+   "sub": "NORTHERN CALIFORNIA",
+   "from": {
+    "lat": 30,
+    "lon": -140
+   },
+   "hires": false,
+   "endDist": 1.1
+  }
+ },
+ {
+  "t": "card",
+  "comp": "SpeciesFile",
+  "at": "The sunflower sea star. The biggest sea star in the world",
+  "until": "Sea urchins.",
+  "pad": 0.3,
+  "props": {
+   "photo": "@img:@near",
+   "common": "Sunflower sea star",
+   "latin": "Pycnopodia helianthoides",
+   "facts": [
+    {
+     "k": "SIZE",
+     "v": "3+ ft across"
+    },
+    {
+     "k": "ARMS",
+     "v": "16 to 24"
+    },
+    {
+     "k": "SPEED",
+     "v": "~3 ft a minute"
+    },
+    {
+     "k": "EATS",
+     "v": "sea urchins"
+    }
+   ],
+   "stamp": "CRITICALLY ENDANGERED",
+   "bed": "@img:@near"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "More than five billion sunflower sea stars died",
+  "dur": 4.0,
+  "props": {
+   "to": 99,
+   "label": "of California's sunflower sea stars, gone",
+   "prefix": "",
+   "suffix": "%",
+   "decimals": 0,
+   "sep": false
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "In some spots, the ocean ran about seven degrees warmer",
+  "dur": 3.6,
+  "props": {
+   "to": 7,
+   "label": "warmer than normal (°F) · the Blob, 2014-16",
+   "prefix": "+",
+   "suffix": "°",
+   "decimals": 0,
+   "sep": false
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "went up about sixty times in a single year",
+  "dur": 3.6,
+  "props": {
+   "to": 60,
+   "label": "more purple urchins in one year (2015)",
+   "prefix": "",
+   "suffix": "×",
+   "decimals": 0,
+   "sep": false
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ScaleSquares",
+  "at": "Bull kelp along more than two hundred miles",
+  "until": "dropped by more than ninety percent",
+  "pad": 1.2,
+  "props": {
+   "a": {
+    "label": "BULL KELP CANOPY · AFTER 2014-16",
+    "value": 2,
+    "sub": "under 2 km²"
+   },
+   "b": {
+    "label": "HISTORIC MAXIMUM",
+    "value": 50,
+    "sub": "over 50 km²"
+   },
+   "unit": "km²",
+   "note": "Rogers-Bennett & Catton 2019 · squares drawn to scale."
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "this is basically the equivalent of losing the rainforest",
+  "props": {
+   "text": "\"The equivalent of losing the rainforest. Except we don't see it.\"",
+   "keys": [
+    "rainforest.",
+    "see"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 100
+  },
+  "until": "Except we don't see it",
+  "pad": 0.4
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "About three thousand of them",
+  "dur": 3.4,
+  "props": {
+   "to": 3000,
+   "label": "southern sea otters today (about)",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": true
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "They can last a long time without eating",
+  "props": {
+   "text": "Zombie urchins.",
+   "keys": [
+    "Zombie"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 150
+  },
+  "until": "they just live",
+  "pad": 0.5
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "When the kelp died, the red urchins",
+  "dur": 2.4,
+  "props": {
+   "n": 2,
+   "title": "THE BILL COMES DUE",
+   "bg": "@img:@near",
+   "progress": 0.303,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "SplitFlapBoard",
+  "at": "The red abalone went next",
+  "until": "all the way to 2036",
+  "pad": 0.4,
+  "props": {
+   "title": "WHAT THE NORTH COAST LOST",
+   "headers": [
+    "",
+    "",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "RED URCHIN FISHERY",
+      "",
+      "COLLAPSED 2015"
+     ]
+    },
+    {
+     "cells": [
+      "RED ABALONE",
+      "-80-85%",
+      "CLOSED 2018"
+     ]
+    },
+    {
+     "cells": [
+      "ABALONE DIVERS",
+      "~31,000",
+      "UNTIL 2036"
+     ]
+    }
+   ],
+   "highlightRow": 2
+  }
+ },
+ {
+  "t": "card",
+  "comp": "CalendarRipper",
+  "at": "An abalone needs about twelve years",
+  "until": "big enough to take",
+  "pad": 0.8,
+  "props": {
+   "from": 2018,
+   "to": 2036,
+   "rates": [
+    {
+     "from": 2018,
+     "label": "CLOSED"
+    }
+   ],
+   "caption": "RED ABALONE: CLOSED UNTIL 2036",
+   "rateTitle": "RED ABALONE FISHERY",
+   "pageLine": "ABALONE · {rate}"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "since this whole disaster, I'm hardly making a quarter",
+  "props": {
+   "text": "\"I'm hardly making a quarter of what I used to.\"",
+   "keys": [
+    "quarter"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 110
+  },
+  "dur": 3.4
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "In 2018, local donors and county fish commissions",
+  "dur": 2.4,
+  "props": {
+   "n": 3,
+   "title": "HIRING THE FISHERMEN",
+   "bg": "@img:@near",
+   "progress": 0.369,
+   "total": 7
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "pulled up about one point two million urchins that year",
+  "dur": 3.6,
+  "props": {
+   "to": 1.2,
+   "label": "urchins pulled up in 2018 (organizers' count)",
+   "prefix": "",
+   "suffix": "M",
+   "decimals": 1,
+   "sep": false
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ReceiptPrinter",
+  "at": "California's Ocean Protection Council paid about six hundred",
+  "until": "to clear the reefs",
+  "pad": 0.6,
+  "props": {
+   "title": "STATE OF CALIFORNIA · OCEAN PROTECTION COUNCIL",
+   "lines": [
+    {
+     "l": "VIA REEF CHECK",
+     "r": "2020-2021"
+    },
+    {
+     "l": "COMMERCIAL DIVERS",
+     "r": "16"
+    },
+    {
+     "l": "DIVER, PER DAY",
+     "r": "$500-700"
+    },
+    {
+     "l": "BOAT, PER DAY",
+     "r": "$600-925"
+    }
+   ],
+   "totalLabel": "TOTAL ≈",
+   "total": "$617,000"
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "they pulled out more than forty-five thousand pounds",
+  "dur": 3.6,
+  "props": {
+   "to": 45118,
+   "label": "pounds of urchins out of Noyo Bay",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": true
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "I'm at the site, and I'm driving over kelp",
+  "props": {
+   "text": "\"I'm driving over kelp.\"",
+   "keys": [
+    "kelp.\""
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 150
+  },
+  "dur": 3.0
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "they've trapped more than twenty-three thousand purple urchins",
+  "dur": 3.4,
+  "props": {
+   "to": 23000,
+   "label": "purple urchins trapped",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": true
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "PlaceTag",
+  "at": "at Albion Cove, divers kept clearing",
+  "dur": 3.4,
+  "props": {
+   "place": "ALBION COVE",
+   "date": "MENDOCINO COUNTY"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "In February 2020, the state made a special rule",
+  "dur": 2.2,
+  "props": {
+   "n": 4,
+   "title": "THE HAMMER",
+   "bg": "@img:@near",
+   "progress": 0.5,
+   "total": 7
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "smashed an estimated hundred and thirty thousand urchins",
+  "dur": 3.8,
+  "props": {
+   "to": 130758,
+   "label": "urchins smashed by volunteers at Caspar Cove (est.)",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": true
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "this is the most kelp I've seen here since 2014",
+  "props": {
+   "text": "\"The most kelp I've seen here since 2014.\"",
+   "keys": [
+    "2014.\""
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 110
+  },
+  "dur": 3.4
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "At a spot called Tanker Reef",
+  "dur": 2.2,
+  "props": {
+   "n": 5,
+   "title": "THE EXPERIMENT",
+   "bg": "@img:@near",
+   "progress": 0.572,
+   "total": 7
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "They crushed an estimated six hundred and thirty-three thousand urchins",
+  "dur": 3.6,
+  "props": {
+   "to": 633211,
+   "label": "urchins crushed at Tanker Reef (estimated)",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": true
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChalkBars",
+  "at": "In the cleared patch, urchins dropped",
+  "until": "less than two",
+  "pad": 0.5,
+  "props": {
+   "title": "Tanker Reef · urchins per square meter",
+   "bars": [
+    {
+     "label": "BEFORE CULLING (2021)",
+     "value": 6.8,
+     "display": "6.8"
+    },
+    {
+     "label": "AFTER (2022)",
+     "value": 1.8,
+     "display": "1.8",
+     "hot": true
+    }
+   ]
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "Giant kelp stalks went up about four times",
+  "dur": 3.4,
+  "props": {
+   "to": 4,
+   "label": "more giant kelp stalks (cleared patch)",
+   "prefix": "",
+   "suffix": "×",
+   "decimals": 0,
+   "sep": false
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "But the real millions happened somewhere else",
+  "dur": 2.4,
+  "props": {
+   "n": 6,
+   "title": "THE MILLIONS",
+   "bg": "@img:@near",
+   "progress": 0.641,
+   "total": 7
+  }
+ },
+ {
+  "t": "card",
+  "comp": "GlobeDive3D",
+  "at": "Down in Southern California, off the Palos Verdes peninsula",
+  "until": "since 2013",
+  "pad": 0.2,
+  "props": {
+   "lat": 33.76,
+   "lon": -118.4,
+   "label": "PALOS VERDES",
+   "sub": "LOS ANGELES COUNTY",
+   "from": {
+    "lat": 39.3,
+    "lon": -123.8
+   },
+   "hires": false,
+   "endDist": 1.1
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "they report about five point eight million urchins",
+  "dur": 3.6,
+  "props": {
+   "to": 5.8,
+   "label": "urchins crushed at Palos Verdes (reported)",
+   "prefix": "",
+   "suffix": "M",
+   "decimals": 1,
+   "sep": false
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "We were paying the fishermen to put back the forest",
+  "props": {
+   "text": "\"We were paying the fishermen to put back the forest.\"",
+   "keys": [
+    "put",
+    "back"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 100
+  },
+  "dur": 4.0
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "the kelp canopy at Big River was up more than nine hundred percent",
+  "dur": 3.6,
+  "props": {
+   "to": 900,
+   "label": "kelp canopy since the 2023 low",
+   "prefix": "+",
+   "suffix": "%",
+   "decimals": 0,
+   "sep": false
+  }
+ },
+ {
+  "t": "card",
+  "comp": "ChapterCard",
+  "at": "For twelve years, nobody knew",
+  "dur": 2.2,
+  "props": {
+   "n": 7,
+   "title": "THE KILLER",
+   "bg": "@img:@near",
+   "progress": 0.791,
+   "total": 7
+  }
+ },
+ {
+  "t": "overlay",
+  "comp": "VhsRewind",
+  "at": "In 2014, researchers blamed a virus",
+  "dur": 1.3,
+  "props": {
+   "label": "◀◀ REW",
+   "date": "2014"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "EvidenceBoard",
+  "at": "In 2014, researchers blamed a virus",
+  "until": "on the usual microscope slides",
+  "pad": 0.6,
+  "props": {
+   "myths": [
+    "2014: a virus did it"
+   ],
+   "truths": [
+    {
+     "date": "AUG 2025",
+     "text": "Vibrio pectenicida — a bacterium"
+    },
+    {
+     "date": "HOW",
+     "text": "Found in the body fluid, not on the slides"
+    },
+    {
+     "date": "",
+     "text": "12 years to find it"
+    }
+   ],
+   "source": "Prentice et al. 2025, Nature Ecology & Evolution",
+   "split": 0.3,
+   "mythTitle": "THE FIRST SUSPECT",
+   "truthTitle": "WHAT THE LAB FOUND"
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "we all had chills",
+  "props": {
+   "text": "\"We all had chills.\"",
+   "keys": [
+    "chills.\""
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 150
+  },
+  "dur": 2.8
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "Its name means scallop killer",
+  "props": {
+   "text": "Vibrio pectenicida = \"scallop killer\"",
+   "keys": [
+    "scallop",
+    "killer\""
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 100
+  },
+  "dur": 3.4
+ },
+ {
+  "t": "overlay",
+  "comp": "BigCount",
+  "at": "Forty-seven of them survived",
+  "dur": 3.6,
+  "props": {
+   "to": 47,
+   "label": "of 48 baby sunflower stars survived a month in the ocean",
+   "prefix": "",
+   "suffix": "",
+   "decimals": 0,
+   "sep": false
+  }
+ },
+ {
+  "t": "card",
+  "comp": "SplitFlapBoard",
+  "at": "As of 2025, the state says bull kelp",
+  "until": "ninety-one percent",
+  "pad": 0.6,
+  "props": {
+   "title": "BULL KELP vs 1984-2013 · CDFW 2025",
+   "headers": [
+    "",
+    "",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "SONOMA",
+      "",
+      "-96%"
+     ]
+    },
+    {
+     "cells": [
+      "MENDOCINO",
+      "",
+      "-91%"
+     ]
+    },
+    {
+     "cells": [
+      "DEL NORTE",
+      "",
+      "-48%"
+     ]
+    }
+   ],
+   "highlightRow": 0
+  }
+ },
+ {
+  "t": "card",
+  "comp": "Kinetic",
+  "at": "They didn't save the ocean. They proved it can be saved.",
+  "props": {
+   "text": "They didn't save the ocean. They proved it can be saved.",
+   "keys": [
+    "proved"
+   ],
+   "bed": "@img:@near",
+   "align": "center",
+   "size": 110
+  },
+  "dur": 4.0
+ }
+]
