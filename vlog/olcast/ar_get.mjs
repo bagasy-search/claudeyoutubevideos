@@ -8,6 +8,8 @@ const PICK = { // nombre de toma → título EXACTO del archivo en Commons
   a_kitchen: "File:Cooks in railroad camp kitchen, Polson Logging Company, ca 1930 (KINSEY 467).jpg",
   a_flea: "File:Flea Market in Pensacola, Florida, 2020.jpg",
   a_skillets: "File:Castiron-skillets.jpg",
+  a_campfire: "File:Cooking over a campfire in Jumbo Rocks Campground (50409379772).jpg",
+  a_cookwait: "File:Cook and waitresses, Northwest Door Company, Oregon, ca 1914 (KINSEY 2452).jpeg",
   a_stove: null, // se resuelve por búsqueda: estufa de leña de cocina, New Ulm, Minnesota (Gary Truman, 1974)
 };
 const UA = { "User-Agent": "olcast-research/1.0 (bautielcrack4@gmail.com)" };

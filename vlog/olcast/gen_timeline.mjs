@@ -94,12 +94,15 @@ for (const o of ovs) {
 // foley REAL bajo las tomas mudas (stock Pexels y clips v2.0): sfx de la biblioteca por nombre de toma
 const FOL = { b_oilpour: "px_gluglu.mp3", b_wipeback: "px_wipe.mp3", b_wipeoff: "px_wipe_alt1.mp3", b_rubpan: "px_wipe_alt2.mp3", b_dropsoil: "px_bubble.mp3", b_soap: "px_fizz.mp3", b_simmer: "px_bubble_alt1.mp3",
   b_thinoil: "px_wipe.mp3", b_stucksupper: "px_fizz_alt1.mp3", b_thickmess: "px_wipe_alt1.mp3", b_shockcrack: "px_fizz_alt2.mp3", b_vinegar: "px_bubble_alt2.mp3", b_eggslide: "px_gluglu_alt2.mp3", b_layerbuild: "px_bubble.mp3",
-  b_lidlifter: "px_capPop.mp3", b_gummy: "px_wipe_alt2.mp3", b_sticky: "px_wipe_alt2.mp3", b_tacky: "px_wipe_alt2.mp3", b_knuckle: "soft_organic_wooden__#4-1780923840971.mp3", s_bacon: "px_fizz_alt1.mp3", s_sausage: "px_fizz.mp3", s_hashbrowns: "px_fizz_alt2.mp3",
+  b_lidlifter: "px_capPop.mp3", b_gummy: "px_wipe_alt2.mp3", b_sticky: "px_wipe_alt2.mp3", b_tacky: "px_wipe_alt2.mp3", b_knuckle: "soft_organic_wooden__#4-1780923840971.mp3", s_rubpan: "px_wipe_alt2.mp3", s_thinoil: "px_wipe.mp3", s_bacon: "px_fizz_alt1.mp3", s_sausage: "px_fizz.mp3", s_hashbrowns: "px_fizz_alt2.mp3",
   s_baconcold: "px_fizz_alt1.mp3", s_oilpan: "px_gluglu_alt1.mp3", s_oilbottle: "px_gluglu.mp3", s_oilpour: "px_gluglu_alt2.mp3", s_scrub: "px_wipe.mp3", s_washpan: "px_bubble_alt2.mp3", s_vinegar: "px_gluglu_alt1.mp3", s_highburner: "amb_fuego.mp3", s_smokepan: "px_fizz_alt2.mp3",
   s_embers: "Crackling_campfire_w_#1-1780924416643.mp3", s_charcoalsmoke: "amb_fuego.mp3", s_cornbread: "Crackling_campfire_w_#1-1780924416643.mp3", s_dryburner: "amb_fuego.mp3", s_ovendoor: "soft_mechanical_odom_#3-1780923982906.mp3" };
 cues.forEach((c, i) => { const n = shots[i].name; if (FOL[n]) foley.push({ from: c.from, dur: Math.min(c.dur, 150), src: "sfx/" + FOL[n], vol: 0.55 }); });
+// pausas de la voz > 0,28 s en el minuto 1: un golpe corto de sfx en el medio (la compuerta exige 0 silencios de >0,3 s a -32 dB)
+{ const FX = ["whoosh.mp3", "sfx_thump.mp3", "cam_zoom_punch.mp3", "sfx_pop.mp3", "cam_travel.mp3"]; let k = 0;
+  for (let i = 1; i < W.length; i++) { const g0 = W[i - 1].e, g1 = W[i].s; if (g1 < 62 && g1 - g0 > 0.26) sfx.push({ from: F(g0 + 0.02), dur: Math.max(6, Math.min(F(0.55), F(g1 - g0 - 0.03))), src: "sfx/" + FX[k++ % FX.length], vol: 1.0 }); } }
 // ambiente continuo de estufa bajo el minuto 1 (compuerta: 0 silencios en el minuto 1; las pausas naturales de la voz quedaban mudas)
-foley.push({ from: 0, dur: F(64), src: "sfx/olcast_amb_m1.m4a", vol: 0.85 });
+foley.push({ from: 0, dur: F(64), src: "sfx/olcast_amb_m1.m4a", vol: 2.2 });
 // ── compuertas del build
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }

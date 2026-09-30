@@ -46,7 +46,7 @@ export const SHOTS = [
   // ══ EL TRUCO: UNA PASADA Y LIMPIAR ══
   S(7, "", "vl", "m6"),
   S(7, "Step two", "bi", "b_dropsoil", { p: BI(`Close view of a few drops of oil being dripped from a plain bottle onto a folded white paper towel held in an old hand over a cast iron skillet, only a few drops, the towel barely damp.`), anim: "three drops of oil fall onto the paper towel" }),
-  S(7, "and rub it over", "bi", "b_rubpan", { p: BI(`Close view of an old hand rubbing a paper towel over the outside bottom and the handle of a cast iron skillet, the pan turned over on a plank table, the rubbing leaving a thin even sheen.`), anim: "the hand rubs along the handle of the pan" }),
+  S(7, "and rub it over", "st", "s_rubpan"),
   S(7, "Step three", "vl", "m7"),
   S(7, "like you made a mistake", "bi", "b_wipeoff", { p: BI(`Close view of a clean dry paper towel wiping firmly across the inside of a cast iron skillet, taking almost all the oil off, the towel darkened with oil, the pan surface turning matte and nearly dry.`), anim: "the towel wipes hard across the pan, sheen disappears" }),
   S(7, "and you're hiding the evidence", "ole", "o_hiding", { p: OLEP(`He glances sideways over his shoulder toward the door with a sly little grin, holding a crumpled oily paper towel behind his back in one hand and a black cast iron skillet in the other, as if hiding evidence.`) }),
@@ -112,7 +112,7 @@ export const SHOTS = [
   S(22, "For stuck food", "bi", "b_simmer", { p: BI(`A cast iron skillet on a stove burner with half an inch of gently simmering water in it, bits of stuck food loosening from the bottom, a flat metal scraper resting on the rim.`), anim: "the water simmers with small bubbles" }),
   S(23, "", "av", ""),
   S(23, "Dry it completely", "st", "s_dryburner2"),
-  S(23, "Rub in a thin film", "bi", "b_thinoil", { p: BI(`Close view of an old hand rubbing a thin film of oil into a warm just-dried black cast iron skillet with a paper towel, the surface turning satin, faint wisps of warmth.`), anim: "the paper towel rubs a thin film across the warm pan" }),
+  S(23, "Rub in a thin film", "st", "s_thinoil"),
   S(23, "Never let it soak", "bi", "b_sinksoak", { p: BI(`A black cast iron skillet sitting in a sink full of gray dishwater with soapy dishes around it, the pan half submerged, rust-orange streaks beginning at the rim, nobody in frame.`), anim: "the dishwater ripples slightly", ov: { c: "OleStamp", props: { text: "NEVER", sub: "soak it", at: 0.4, x: 0.24, y: 0.26 } } }),
   S(23, "Never put it in the dishwasher", "bi", "b_dishwasher", { p: BI(`The open door of a dishwasher with a cast iron skillet on the lower rack among plates, with rusty orange marks on it, steam rising from the machine, kitchen counter beside it.`), anim: "steam drifts up out of the dishwasher", ov: { c: "OleStamp", props: { text: "NEVER", sub: "the dishwasher", at: 0.4, x: 0.24, y: 0.26 } } }),
   // ══ DUTCH OVEN Y BRASAS ══
@@ -123,6 +123,7 @@ export const SHOTS = [
   S(25, "It's a starting point", "av", ""),
   S(25, "Lift the lid", "bi", "b_lidlifter", { p: BI(`A gloved hand using a metal lid lifter to raise the lid of a black cast iron Dutch oven sitting on a bed of gray-white coals outdoors, the lid tilted away, the ash not falling in, food steaming inside.`), anim: "the lid lifts and tilts away, steam rising" }),
   S(26, "", "av", "", { ov: { c: "OleStamp", props: { text: "OUTDOORS ONLY", sub: "coals make carbon monoxide", at: 1.2 } } }),
+  S(26, "Cook outside", "ar", "a_campfire"),
   S(26, "Charcoal makes", "st", "s_charcoalsmoke"),
   S(26, "keep a bucket of water", "bi", "b_bucketwater", { p: BI(`Outdoors at a fire ring: a galvanized metal bucket of water and a shovel leaning beside a cast iron Dutch oven on coals, dirt ground, grass well away from the fire, dusk light.`), anim: "the bucket water ripples and the coals glow" }),
   S(26, "spread the coals", "st", "s_embers"),
@@ -140,6 +141,7 @@ export const SHOTS = [
   // ══ CIERRE ══
   S(30, "", "av", ""),
   S(30, "Thin coats", "c", "OlcRecap", { props: { } }),
+  S(30, "That's the whole thing", "ar", "a_cookwait"),
   S(30, "A pan you treat like that", "ar", "a_skillets"),
   S(31, "", "av", "", { ov: { c: "OleCTA", props: { compact: true, cover: "img/ole/portada.png", qr: "qr_ole_olcast.png", text: "The cookbook's link is in the description" } } }),
   S(31, "Now tell me", "av", "", { ov: { c: "OleAsk", props: { text: "What's the oldest pan in your kitchen?", sub: "and who did it come from? tell me in the comments" } } }),
