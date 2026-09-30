@@ -84,8 +84,8 @@ export const OleBookPage: React.FC<{
   // con zoom fuerte, la cámara no se sale de la página (nada de mesa vacía detrás del texto)
   if (ph > height + 40) { const m = (height / 2 + 10) / ph; y = Math.max(m, Math.min(1 - m, y)); }
   if (pw > width + 40) { const m = (width / 2 + 10) / pw; x = Math.max(m, Math.min(1 - m, x)); }
-  const left = cx - x * pw, top = cy - y * ph + (1 - inP) * 260;
-  const pageRot = rot * Math.max(0, Math.min(1, (2 - s) / 1)) + (1 - inP) * 7;
+  const left = cx - x * pw, top = cy - y * ph + (1 - inP) * 70;
+  const pageRot = rot * Math.max(0, Math.min(1, (2 - s) / 1)) + (1 - inP) * 2.5;
   const lift = 1 - Math.min(1, (s - 1) / 2) * 0.5;
 
   const labelIn = interpolate(f, [8, 22], [0, 1], { ...cl, easing: Easing.out(Easing.cubic) }) * interpolate(s, [1.25, 1.6], [1, 0], cl);
@@ -99,10 +99,10 @@ export const OleBookPage: React.FC<{
         </div>
       )}
       {/* hoja de abajo (otra página del libro, sin texto) */}
-      <div style={{ position: "absolute", left: left + pw * 0.03, top: top + ph * 0.012, width: pw, height: ph, rotate: `${pageRot + 2.6}deg`, opacity: inP,
+      <div style={{ position: "absolute", left: left + pw * 0.03, top: top + ph * 0.012, width: pw, height: ph, rotate: `${pageRot + 2.6}deg`, opacity: 1,
         background: "#EFE6D0", boxShadow: `0 ${10 * lift}px ${30 * lift}px rgba(60,35,15,0.28)` }} />
       {/* la página */}
-      <div style={{ position: "absolute", left, top, width: pw, height: ph, rotate: `${pageRot}deg`, opacity: Math.min(1, inP * 1.5),
+      <div style={{ position: "absolute", left, top, width: pw, height: ph, rotate: `${pageRot}deg`, opacity: 1,
         boxShadow: `0 ${18 * lift}px ${46 * lift}px rgba(55,32,12,0.36), 0 2px 4px rgba(55,32,12,0.25), ${14 * lift}px ${26 * lift}px ${30 * lift}px -12px rgba(55,32,12,0.35)` }}>
         <Img src={asset(src)} style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} />
         {/* curvatura del papel: sombra junto al lomo, brillo a la derecha, esquina levantada */}

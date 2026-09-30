@@ -21,11 +21,11 @@ const anchors = [
 ];
 const clips = [
   { id: "m1", a: "K0", b: "K1", audio: T + "m1.wav", text: "Well, now. Come sit down, friend.", action: act("He looks at the camera, welcomes the viewer with an open hand toward the bench, then pats the bench beside him.") },
-  { id: "m2", a: "K2", b: "K3", audio: T + "m2.wav", text: "One of them has been through a bath of lye. And number one is a bread I can ruin in exactly one way,", action: act("He glances back at the tin box on the shelf, then leans toward the camera with a raised finger and a sly look.") },
+  { id: "m2", a: "K2", b: "K3", audio: T + "m2.wav", text: "And hardly anybody makes them now. One of them has been through a bath of lye. And number one is a bread I can ruin in exactly one way,", action: act("He glances back at the tin box on the shelf, then leans toward the camera with a raised finger and a sly look.") },
   { id: "m3", a: "K4", b: "K5", audio: T + "m3.wav", text: "and I'll show you that way before we're done. Pour yourself a cup of coffee, and let's start at the bottom of the box.", action: act("He taps his chest, promising, then lifts the enamel coffee pot and pours himself a mug of coffee while talking.") },
-  { id: "m4", a: "K6", b: "K7", audio: T + "m4.wav", text: "Yes, an egg. In the coffee.", action: act("He holds a brown egg up to the camera with a mock-serious look, then lowers it and shrugs.") },
-  { id: "m5", a: "K8", b: "K9", audio: T + "m5.wav", text: "The egg grabs the bitterness and hauls it down with the grounds.", action: act("He points at the coffee pot, then makes a slow sinking motion with his hand, pinching and dragging something downward.") },
-  { id: "m6", a: "K10", b: "K11", audio: T + "m6.wav", text: "and you never taste the egg. Not one bit.", action: act("He holds the mug in both hands, looks over the rim, lowers it and shakes his head with a satisfied smile.") },
+  { id: "m4", a: "K6", b: "K7", audio: T + "m4.wav", text: "Yes, an egg. In the coffee. The Scandinavians who settled Minnesota and the Dakotas mixed a raw egg into the grounds with a splash of water,", action: act("He holds a brown egg up to the camera with a mock-serious look, then lowers it and shrugs.") },
+  { id: "m5", a: "K8", b: "K9", audio: T + "m5.wav", text: "Then a half cup of cold water, and every ground sinks to the bottom like a stone. The egg grabs the bitterness and hauls it down with the grounds.", action: act("He points at the coffee pot, then makes a slow sinking motion with his hand, pinching and dragging something downward.") },
+  { id: "m6", a: "K10", b: "K11", audio: T + "m6.wav", text: "It was church basement coffee, smooth as a creek stone, and you never taste the egg. Not one bit.", action: act("He holds the mug in both hands, looks over the rim, lowers it and shakes his head with a satisfied smile.") },
 ];
 fs.mkdirSync(R + "vlog/olcabin/M1", { recursive: true });
 fs.writeFileSync(R + "vlog/olcabin/M1/plan.json", JSON.stringify(plan("vlog/olcabin/M1", anchors, clips), null, 1));

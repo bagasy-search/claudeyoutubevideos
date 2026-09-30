@@ -58,7 +58,7 @@ export const B_ = [
   H("Simmer eight ounces of dried apples", "applesimmer", "A small saucepan of dried apple slices simmering in cider with a cinnamon stick on the wood stove.", "cider bubbles around the apples"),
   C("thicken it with a spoon of cornstarch", "OleRuleCard", { n: 17, ruleWord: "NUMBER", title: "Dried-apple pie", line: "8 oz apples · 2 cups cider · 400 F · 35-40 min", placement: "center" }),
   H("between two lard crusts", "piecrust", "Two old hands laying a top crust of lard pastry over apple filling in a cast iron skillet, crimping the edge.", "the hands crimp the edge"),
-  ST("in a cast-iron skillet at four hundred", "st_apple_pie_bake"),
+  ST("in a cast-iron skillet at four hundred", "st_apple_pie_oven"),
   ST("thirty-five to forty minutes", "st_pie_slice"),
   C("That one's in the book too", "OleBookPage", PG(59, { keys: [[0.2, 0.5, 0.5, 1], [0.9, 0.5, 0.78, 2.2]], sub: "Dried-apple pie · page 59" })),
   C("And wait till you see number four", "PorridgeBowl3D", { stages: [{ at: 0, stage: "butter" }, { at: 1.4, stage: "cinnamon" }] }, { ov: { c: "RecipeCountdown", props: { n: 4, name: "Rømmegrøt", word: "NUMBER" }, ovDur: 4 } }),

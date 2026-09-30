@@ -1,36 +1,79 @@
-// public/olcabin_meta.json + guiones/olcabin.txt listos para deliver_card. Capítulos con los tiempos REALES
-// (inicio de párrafo en el máster = inicio en el MP4: el video arranca en el cuadro 0 del máster).
+// public/olcabin_meta.json para deliver_card: título LITERAL de la tarjeta ole2026092507, guía ARRIBA, contenido útil,
+// capítulos con los tiempos REALES (el audio no cambia entre renders: mismo máster → mismos tiempos).
+// node vlog/olcabin/mk_meta.mjs
 import fs from "node:fs";
 const R = "D:/Proyectos/video2-wt/olcabin/";
-const P = JSON.parse(fs.readFileSync(R + "_v3/olcabin_paras.json", "utf8"));
+const { shots } = JSON.parse(fs.readFileSync(R + "_v3/olcabin_shots.json", "utf8"));
 const ts = (s) => { s = Math.max(0, Math.floor(s)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
-const CH = [[0, "The bowl on the counter"], [3, "Who I am"], [5, "The cookbook (page 7)"], [6, "The overnight soak myth"], [8, "What about the gas?"], [9, "Rule 1: No soak, just sort"], [11, "Rule 2: Hard boil 10 minutes (safety)"], [14, "Rule 3: Then a whisper"], [15, "How to tell they're done"], [16, "Rule 4: Salt from the start"], [17, "Rule 5: Fat in the pot"], [18, "Rule 6: Acid and sweet go in last"], [21, "Rule 7: Mind the age of your beans"], [22, "Rule 8: Save the pot liquor"], [23, "Bean-hole beans"], [29, "Sunday morning: digging up the pot"], [30, "The kitchen version"], [32, "The mistakes, quick"], [33, "The whole method on one card"]];
-const chapters = CH.map(([p, t]) => `${ts(p === 0 ? 0 : P[p].s)} ${t}`).join("\n");
-const description = `📖 Ole's Logging Camp Cookbook — 50 old camp recipes with exact measures, the trick and the common mistakes on every page (the bean method in this video is page 7): 👉 https://ole-camp-cookbook.vercel.app/?src=ole-beans
+const Wd = JSON.parse(fs.readFileSync(R + "_v3/olcabin_wordms.json", "utf8"));
+const nz = (x) => x.toLowerCase().replace(/[^a-z0-9']/g, "");
+const flat = Wd.map((w) => nz(w.w));
+let cursor = 0;
+const at = (phrase) => { const q = phrase.split(/\s+/).map(nz).filter(Boolean); for (let i = cursor; i + q.length <= flat.length; i++) if (q.every((t, k) => flat[i + k] === t)) { cursor = i + 1; return Wd[i].s; } throw new Error("sin frase " + phrase); };
+const W = JSON.parse(fs.readFileSync(R + "_v3/olcabin_wordms.json", "utf8"));
+const qi = W.findIndex((w, i) => /^quick$/i.test(w.w) && /^word/i.test(W[i + 1]?.w)); const quick = W[qi].s;
+const N = [
+  ["Number twenty-five", 25, "Egg coffee"], ["Number twenty-four", 24, "Fattigmann"], ["Number twenty-three", 23, "Pickled herring"], ["Number twenty-two", 22, "Fruit soup"],
+  ["Number twenty-one", 21, "Krumkake"], ["Number twenty", 20, "Leipäjuusto"], ["Number nineteen", 19, "Nisu"], ["Number eighteen", 18, "Rice porridge"],
+  ["Number seventeen", 17, "Dried-apple pie"], ["Number sixteen", 16, "Potato sausage"], ["Number fifteen", 15, "Bannock"], ["Number fourteen", 14, "Kringle"],
+  ["Number thirteen", 13, "Sausage and sauerkraut"], ["Number twelve", 12, "Mojakka"], ["Number eleven", 11, "Wild rice hotdish"], ["Number ten", 10, "Swedish meatballs"],
+  ["Number nine", 9, "Lanttulaatikko"], ["Number eight", 8, "Pannukakku"], ["Number seven", 7, "Lutefisk"], ["Number six", 6, "Limpa"], ["Number five", 5, "Salt-pork fish chowder"],
+  ["Number four", 4, "Rømmegrøt"], ["Number three", 3, "The pasty"], ["Number two", 2, "Booyah"], ["And now, number one", 1, "Lefse"],
+];
+const CH = [[0, "The tin box"], [quick, "A quick word about the cookbook"], ...N.map(([p, n, name]) => [at(p), `#${n} ${name}`])];
+cursor = 0; CH.push([at("That's the whole box, friend"), "The whole box"]);
+const chapters = CH.sort((a, b) => a[0] - b[0]).map(([t, n]) => `${ts(t)} ${n}`).join("
+");
+const description = `📖 Ole's Logging Camp Cookbook — 50 old camp recipes with exact measures, the trick and the common mistakes on every page (five of the dishes in this video are written out in it): 👉 https://ole-camp-cookbook.vercel.app/?src=ole-olcabin
 
-Come sit down, friend. Here is the whole bean method written out, so you can keep it.
+Come sit down, friend. Here's the whole tin box, and the recipe for number one written out so you can keep it.
 
-OLE'S CAMP BEAN METHOD (1 lb dried pinto or navy beans, serves 6-8)
-1. No overnight soak. Sort out stones and broken beans, rinse.
-2. Put beans, 8 cups cold water, 4 oz salt pork or thick bacon, 1 halved onion, 1 Tbsp kosher salt, 1/2 tsp pepper and a bay leaf in a heavy pot. Salt goes in now, not later.
-3. Bring to a hard rolling boil and hold it a full 10 minutes. This step is for safety, on every dried bean. Skim the foam.
-4. Drop the heat to a whisper: barely a bubble, lid cracked. Never a hard boil after this.
-5. Simmer 1 1/2 to 2 hours, adding hot water if the level drops. Tender means a bean mashes easily on your tongue.
-6. NOW add the acid: 1-2 Tbsp cider vinegar (tomato and molasses go in only when the beans are already tender). Acid early keeps beans hard.
-7. Rest 15 minutes. Never pour the broth down the drain.
-Old beans (over a year or two) may never soften: buy from a store that sells lots of beans, and add 1/8 tsp baking soda per pound. Never cook raw kidney beans in a slow cooker. Leftovers: cool within 2 hours, fridge up to 4 days, reheat to 165°F.
+THE 25, IN ORDER
+25 Egg coffee: a raw egg mixed into the grounds, boiled until the foam settles, then half a cup of cold water
+24 Fattigmann: egg yolks, cream, sugar and a splash of brandy, fried at about 350°F
+23 Pickled herring: vinegar, sugar, water, allspice and peppercorns over herring with red onion and lemon
+22 Fruit soup: prunes, dried apricots, raisins and dried apples with tapioca and cinnamon
+21 Krumkake: a thin batter on a patterned iron, rolled on a cone
+20 Leipäjuusto: Finnish bread cheese, baked or broiled until freckled
+19 Nisu: Finnish cardamom bread, braided
+18 Rice porridge (in the cookbook, page 60): 1/2 cup rice, 4 cups whole milk, 1/3 cup sugar
+17 Dried-apple pie (page 59): 8 oz dried apples in 2 cups cider, two lard crusts, 400°F
+16 Potato sausage: pork, beef, potatoes, onion and allspice
+15 Bannock (page 23): flour, baking powder, salt, lard and water in a skillet
+14 Kringle: Danish butter pastry from Racine, Wisconsin
+13 Sausage and sauerkraut (page 43): smoked sausage, onion, two apples, caraway and kraut
+12 Mojakka: Finnish-American beef or fish stew
+11 Wild rice hotdish
+10 Swedish meatballs with cream gravy
+9 Lanttulaatikko: Finnish rutabaga casserole
+8 Pannukakku: baked custard pancake
+7 Lutefisk
+6 Limpa: Swedish rye with molasses
+5 Salt-pork fish chowder (page 34): 4 oz salt pork, 1 1/2 lb potatoes, 1 1/2 lb white fish, 3 cups milk, 1 cup cream. Do not boil it.
+4 Rømmegrøt: sour cream porridge, crowned with its own butter
+3 The pasty: beef, potato, rutabaga and onion in a lard crust, 400°F for 15 minutes then 350°F for about 45
+2 Booyah: a stewing chicken and 2 lb of beef shank, simmered about 3 hours
+1 Lefse
 
-Tell me in the comments what your family said about salt and beans, and where you're cooking from.
+NUMBER ONE: LEFSE (Norwegian potato flatbread)
+1. Boil about 1 3/4 lb russet potatoes and push them through a ricer while still hot.
+2. Stir in 5 Tbsp butter, 1/4 cup heavy cream, 2 tsp sugar and 1 1/2 tsp salt.
+3. The one way to ruin it: rolling it before it's cold. Chill the dough overnight, cold all the way through.
+4. Next day, work in 1 1/2 cups flour, quickly. Roll each ball paper thin with a grooved lefse pin.
+5. Slide a lefse stick under it and lay it on a hot dry griddle, about a minute a side, until it has little brown freckles. Stack between clean towels so it stays soft.
+6. Butter and sugar, roll it up, and eat it right there.
+
+Tell me in the comments which of these your family made, and which one you'll try first.
 
 CHAPTERS
 ${chapters}
 
 Ole's Camp Kitchen
-(Ole is the channel's cook-character; the recipes are traditional methods adapted and tested for home kitchens. Archival photos: public domain, Library of Congress / DPLA / NARA via Wikimedia Commons.)`;
+(Ole is the channel's cook-character; the recipes are traditional methods adapted and tested for home kitchens. Archival photos: public domain via Wikimedia Commons; stock footage: Pexels.)`;
 const meta = {
-  title: "NEVER Cook Beans Again Without This Old Logging Camp Trick",
+  title: "25 Forgotten Northwoods Recipes From Grandma's Cabin",
   description,
-  pinned_comment: "The trick: no overnight soak, salt at the START, a hard boil for 10 full minutes, then down to a whisper with the lid cracked — and the vinegar, tomato and molasses only once the beans are tender. Everything I cook in this kitchen is written down in my cookbook, 50 recipes with every measure 💛 https://ole-camp-cookbook.vercel.app/?src=ole-beans",
+  pinned_comment: "Five of the dishes from my own kitchen that showed up on this list (rice porridge, dried-apple pie, bannock, sausage and sauerkraut, fish chowder) are written out in my cookbook, with every measure 💛 https://ole-camp-cookbook.vercel.app/?src=ole-olcabin — and tell me: which one did your family make?",
 };
 fs.writeFileSync(R + "public/olcabin_meta.json", JSON.stringify(meta, null, 2));
 console.log(chapters);

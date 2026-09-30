@@ -120,7 +120,7 @@ export const C_ = [
   C("a teaspoon of salt, a cup of cold lard", "OleRuleCard", { n: 3, ruleWord: "NUMBER", title: "Pasty crust", line: "2 1/2 cups flour · 1 tsp salt · 1 cup lard · 6-8 Tbsp ice water", placement: "center" }),
   H("pile the filling on half, fold it over", "pastyfold", "Two old hands folding a dinner-plate round of dough over a heap of raw filling.", "the dough folds over the filling"),
   ST("crimp the edge along the side", "st_pastry_crimp"),
-  ST("Bake it in a hot oven", "st_oven_dial"),
+  B("Bake it in a hot oven", "pastyoven", "Golden D-shaped pasties on a baking sheet inside the open oven of a black cast iron wood stove, an old hand in a thick mitt sliding the tray, warm glow.", "the tray slides out of the oven"),
   AVA("Eat it with your hands"),
   AVA("Ketchup, or gravy"),
   // ── #2 BOOYAH (973.8) HÉROE

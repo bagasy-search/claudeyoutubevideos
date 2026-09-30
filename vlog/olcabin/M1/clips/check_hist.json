@@ -40,5 +40,26 @@
     "ratio": 2.2
    }
   }
+ },
+ "m3": {
+  "m3.mp4": {
+   "win": 6.86,
+   "labios": {
+    "corr": 0.998,
+    "lag": 0,
+    "c0": 0.998,
+    "ok": true
+   },
+   "score": 50,
+   "verd": "⛔ REGENERAR",
+   "line": "dice: \"and I'll show you that way before we're done. Pour yourself a cup of coffee and let's start at the bottom of the box.\" · cara ✓ (1) · luz ⛔ oscura · Indoor lighting, dark background, fireplace flame present · labios ✓ corr 0.998 lag 0s",
+   "swin": 6.86,
+   "salto": {
+    "t": 3.6,
+    "peak": 3.2,
+    "base": 1.6,
+    "ratio": 2.1
+   }
+  }
  }
 }

@@ -132,10 +132,6 @@
   "gente": true
  },
  {
-  "nombre": "b_estate",
-  "motion": "a hand reaches for the iron"
- },
- {
   "nombre": "h_cheesebroil",
   "motion": "the freckles darken on the cheese",
   "gente": true
@@ -191,10 +187,6 @@
   "nombre": "h_sausagemix",
   "motion": "the hands fold the mixture",
   "gente": true
- },
- {
-  "nombre": "b_xmasplate",
-  "motion": "slow push in on the plate"
  },
  {
   "nombre": "b_shopline",
@@ -267,10 +259,6 @@
   "gente": true
  },
  {
-  "nombre": "b_lanttubake",
-  "motion": "the top slowly browns"
- },
- {
   "nombre": "b_ugly",
   "motion": "slow push in"
  },
@@ -292,10 +280,6 @@
   "motion": "the middle sinks a little"
  },
  {
-  "nombre": "b_berrysquare",
-  "motion": "the hands take squares"
- },
- {
   "nombre": "h_lutesoak",
   "motion": "the fish slab swells slowly",
   "gente": true
@@ -313,10 +297,6 @@
   "nombre": "h_limpaspice",
   "motion": "slow push in on the spoons",
   "gente": true
- },
- {
-  "nombre": "b_cabinbaking",
-  "motion": "the steam curls from the loaf"
  },
  {
   "nombre": "h_limpaslice",
@@ -388,6 +368,10 @@
   "nombre": "h_pastyfold",
   "motion": "the dough folds over the filling",
   "gente": true
+ },
+ {
+  "nombre": "b_pastyoven",
+  "motion": "the tray slides out of the oven"
  },
  {
   "nombre": "b_doorfarm",
