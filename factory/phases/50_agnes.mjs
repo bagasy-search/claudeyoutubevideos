@@ -27,13 +27,18 @@ export default {
     fs.writeFileSync(path.join(ROOT, "_v3", `${slug}_i2v.json`), JSON.stringify(i2v, null, 1));
     fs.mkdirSync(P.brollDir, { recursive: true });
 
-    const falta = () => i2v.filter((x) => !fs.existsSync(path.join(P.brollDir, `${x.nombre}.mp4`)));
+    // un clip que el control a ojo mandó a FOTO (`removed`: se rompe en cada regeneración) NO se vuelve a pedir:
+    // el build usa la foto del momento. Sin esto la fase lo regeneraba en cada corrida (tdccobre, 30-sep-2026).
+    const qcFile0 = path.join(ROOT, "_v3", `${slug}_agnes_qc.json`);
+    const aFoto = new Set(Object.entries(fs.existsSync(qcFile0) ? JSON.parse(fs.readFileSync(qcFile0, "utf8")).clips || {} : {}).filter(([, c]) => c?.removed).map(([n]) => n));
+    if (aFoto.size) log(`${aFoto.size} momentos van con FOTO por decisión del control a ojo: ${[...aFoto].join(" ")}`);
+    const falta = () => i2v.filter((x) => !aFoto.has(x.nombre) && !fs.existsSync(path.join(P.brollDir, `${x.nombre}.mp4`)));
     if (falta().length) {
       const units = CAPACIDAD.agnes();
       await withLease("agnes", slug, units, () => run("node", ["scripts/agnes_i2v.mjs", lista, slug, P.imgDir, P.brollDir],
         { cwd: ROOT, timeoutMs: 8 * 3600_000, onLine: (l) => /✗|⛔|error|429|listo|===/i.test(l) && log(l.slice(0, 160)) }), { log });
     }
-    const hechos = i2v.length - falta().length;
+    const hechos = i2v.length - aFoto.size - falta().length;
     log(`clips ${hechos}/${i2v.length} (throughput de referencia ≈7 clips/min)`);
     assertMeasured("clipsHechosPct", Math.round((100 * hechos) / i2v.length), { min: 90, log });
 
