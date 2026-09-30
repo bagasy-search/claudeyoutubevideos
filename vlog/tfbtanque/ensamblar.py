@@ -18,6 +18,23 @@ def load(f):
     return x
 vparts, apar, clips, words, segs = [], [], [], [], []
 F0 = 0
+GAM = {}
+def luma_img(f):
+    b = subprocess.run(['ffmpeg', '-v', 'error', '-i', f, '-vf', 'scale=160:90,format=gray', '-f', 'rawvideo', '-'], capture_output=True, creationflags=0x08000000).stdout
+    return np.frombuffer(b, dtype='uint8').astype('float32')
+def gamma_escena(o, mp4):
+    P = json.load(open(o['plan'], encoding='utf8')); anc = P['dir'] + 'anc/'
+    ref = [luma_img(anc + a['id'] + '.png') for a in P['anchors'] if a['id'].startswith('K') and os.path.exists(anc + a['id'] + '.png')]
+    d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', mp4], capture_output=True, text=True, creationflags=0x08000000).stdout)
+    vid = []
+    for k in range(12):
+        b = subprocess.run(['ffmpeg', '-v', 'error', '-ss', f'{d * (k + 0.5) / 12:.2f}', '-i', mp4, '-frames:v', '1', '-vf', 'scale=160:90,format=gray', '-f', 'rawvideo', '-'], capture_output=True, creationflags=0x08000000).stdout
+        if len(b) == 14400: vid.append(np.frombuffer(b, dtype='uint8').astype('float32'))
+    if not ref or not vid: return 1.0
+    mr, mv = np.mean([x.mean() for x in ref]) / 255, np.mean([x.mean() for x in vid]) / 255
+    g = float(np.clip(np.log(mv) / np.log(mr), 0.85, 1.35))  # out = in^(1/g) → media mv lleva a mr
+    print(f"  gamma {o['seg']}: anclas {mr * 255:.0f} · video {mv * 255:.0f} → gamma {g:.3f}")
+    return g
 PARCIAL = os.environ.get('PARCIAL') == '1'   # prueba: escenas sin armar van como hueco negro con su voz
 for o in order:
     if o['type'] == 'scene' and PARCIAL and not os.path.exists(o['out']):
@@ -26,6 +43,7 @@ for o in order:
     if o['type'] == 'scene':
         mp4 = o['out']; tl = json.load(open(os.path.dirname(mp4) + '/timeline_' + os.path.basename(mp4).replace('.mp4', '.json'), encoding='utf8'))
         nf = nframes(mp4); v = TMP + o['seg'] + '_v.mp4'; run('ffmpeg', '-v', 'error', '-y', '-i', mp4, '-an', '-c:v', 'copy', v)
+        GAM[o['seg']] = gamma_escena(o, mp4)
         a = load(os.path.dirname(mp4) + '/audio_' + os.path.basename(mp4).replace('.mp4', '.wav'))
         for c in tl:
             g = {**c, 'seg': o['seg'], 'gstart': F0 / FPS + c['start'], 'gvstart': F0 / FPS + c['vstart'], 'dir': os.path.dirname(mp4) + '/clips/'}
@@ -53,7 +71,8 @@ for o in order:
 OUTV = R + 'public/tfbtanque_vlog.mp4'
 # concat por FILTRO (el demuxer concat perdía ~5 % de cuadros al mezclar fuentes de encoders distintos)
 ins = sum([['-i', p] for p in vparts], [])
-graph = ''.join(f'[{i}:v]setpts=PTS-STARTPTS,fps=30[v{i}];' for i in range(len(vparts))) + ''.join(f'[v{i}]' for i in range(len(vparts))) + f'concat=n={len(vparts)}:v=1:a=0[out]'
+gams = [GAM.get(sg['seg'], 1.0) for sg in segs]
+graph = ''.join(f'[{i}:v]setpts=PTS-STARTPTS,fps=30' + (f',eq=gamma={gams[i]:.3f}' if abs(gams[i] - 1) > 0.02 else '') + f'[v{i}];' for i in range(len(vparts))) + ''.join(f'[v{i}]' for i in range(len(vparts))) + f'concat=n={len(vparts)}:v=1:a=0[out]'
 open(TMP + 'graph.txt', 'w').write(graph)
 run('ffmpeg', '-v', 'error', '-y', *ins, '-/filter_complex', TMP + 'graph.txt', '-map', '[out]', '-an', '-r', '30', '-fps_mode', 'cfr', '-c:v', 'libx264', '-crf', '20', '-preset', 'veryfast',
     '-pix_fmt', 'yuv420p', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-color_range', 'tv', '-g', '30', OUTV)

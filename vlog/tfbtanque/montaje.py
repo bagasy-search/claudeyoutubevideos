@@ -40,7 +40,10 @@ for k, sg in enumerate(G['segs'][1:], 1):
     cam('whip', t - 0.23, 0.46, dir=(1 if k % 2 else -1)); sfx(WH[k % len(WH)], t - 0.25, -12)
 for c in G['clips']:
     t = c['gvstart']
-    if 0.5 < t < 62 and not any(abs(t - sg['f0'] / FPS) < 0.1 for sg in G['segs']): sfx(WH[int(t * 7) % len(WH)], t - 0.15, -18)
+    if 0.5 < t < 62 and not any(abs(t - sg['f0'] / FPS) < 0.1 for sg in G['segs']):
+        sfx(WH[int(t * 7) % len(WH)], t - 0.15, -18)
+        # minuto 1: cada frontera dentro de la escena lleva destello + punch (corte bien marcado, medido con scene>0.3)
+        over('flash', t, 0.17, color='#FFFFFF', peak=0.55); cam('punch', t, 0.4, amt=0.07)
 
 # ═════════ MINUTO 1 — el tráiler (cero silencios, ≥20 cortes, ninguna toma > 4 s) ═════════
 

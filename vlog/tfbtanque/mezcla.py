@@ -54,6 +54,12 @@ for sg in G['segs']:
         a, b = int(sg['f0'] / FPS * SR), int((sg['f0'] + sg['nf']) / FPS * SR); bed[a:b] *= db(-4)
 fo = int(4 * SR); bed[-fo:] *= np.linspace(1, 0, fo)
 mix += bed
+# minuto 1: ambiente del patio en cama continua (cero silencios aunque la voz respire), −26 dB bajo la voz, se va a los 70 s
+am = dec(R + 'public/sfx/ra_ambient_day.mp3')
+if len(am):
+    am = am / rms(am) * vr * db(-26); L1 = int(70 * SR); amb = np.zeros(L1, dtype='float32'); i = 0
+    while i < L1: j = min(L1, i + len(am)); amb[i:j] += am[:j - i]; i += len(am) - int(0.5 * SR)
+    amb[-int(4 * SR):] *= np.linspace(1, 0, int(4 * SR)); mix[:L1] += amb[:min(L1, N)]
 peak = float(np.max(np.abs(mix))); mix = mix / max(1.0, peak / 0.97)
 tmp = R + 'out/tfbtanque/_mix_raw.wav'; sf.write(tmp, np.stack([mix, mix], 1), SR, subtype='FLOAT')
 # loudnorm 2 pasadas a −14 LUFS, TP −1
