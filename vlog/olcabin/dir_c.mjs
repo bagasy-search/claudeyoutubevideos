@@ -138,7 +138,7 @@ export const C_ = [
   ST("Booyah is the reason a whole town shows up", "st_picnic_table_crowd"),
   ST("also the reason there are leftovers", "st_church_potluck"),
   // ── #1 LEFSE (1036.4) — PAGO GRANDE
-  C("And now, number one", "RecipeCountdown", { n: 1, name: "Lefse", word: "NUMBER", placement: "center", hero: true }),
+  C("And now, number one", "TinRecipeBox3D", { cards: [["Number one", "Lefse", "the last card"]], openAt: 0.0, liftAt: 0.3 }, { ov: { c: "RecipeCountdown", props: { n: 1, name: "Lefse", word: "NUMBER", placement: "center", hero: true }, ovDur: 2.4 } }),
   B("Lefse. Norwegian potato flatbread", "lefse", "A stack of soft thin round lefse potato flatbread folded in a cloth on a plank table, one rolled with butter and sugar, a blue mug of coffee.", "steam rises from the stack"),
   ST("and cooked on a big flat griddle", "st_flatbread_stack"),
   AR("It goes back to medieval Norway", "ar_potato_field"),
@@ -163,7 +163,7 @@ export const C_ = [
   // ── CIERRE (1128.3)
   AVA("That's the whole box, friend"),
   C("Twenty-five dishes from a cabin kitchen", "CabinCutaway3D", { fill: [{ at: 0.0, n: 25 }, { at: 9, n: 25 }], startAngle: 0.2, orbit: 0.4 }),
-  C("The dishes from my own kitchen", "OleCTA", { cover: BOOK, qr: QR, point: "Point your phone at this code", line: "Rice porridge · Dried-apple pie · Bannock · Sausage & sauerkraut · Fish chowder", kicker: "ON THE LIST, IN THE COOKBOOK" }),
+  C("The dishes from my own kitchen", "OleCTA", { cover: BOOK, qr: QR, point: "Point your phone at this code", line: "5 of these 25 are in it", kicker: "ON THE LIST, IN THE COOKBOOK" }),
   AVA("Now tell me"),
   AVA("Which of these did your family make"),
   B("I read every one", "coffeeon", "The plank table in the log cabin at dusk with the green tin recipe box closed, a blue enamel coffee pot steaming on the wood stove behind and a fresh blue mug of coffee poured in the foreground, warm lantern glow, snow at the window.", "steam curls from the mug, very slow push in"),

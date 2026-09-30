@@ -121,7 +121,6 @@ broll/olcabin_st30/st_flour_sift.mp4
 img/olcabin/h_bannockpat.jpg
 broll/olcabin/h_bannockpat.mp4
 img/olcabin/ar/ar_voyageurs.jpg
-broll/olcabin_st30/st_cast_iron_skillet.mp4
 img/olcabin/h_bannockcover.jpg
 img/olcabin/book/p23.png
 broll/olcabin_st30/st_bakery_counter.mp4
@@ -136,7 +135,8 @@ img/olcabin/h_krautpour.jpg
 broll/olcabin/h_krautpour.mp4
 broll/olcabin_st30/st_potatoes_boiling.mp4
 img/olcabin/book/p43.png
-broll/olcabin_st30/st_apple_skillet.mp4
+img/olcabin/b_appletrick.jpg
+broll/olcabin/b_appletrick.mp4
 img/olcabin/ar/ar_finnish_miners.jpg
 img/olcabin/b_ironrange.jpg
 broll/olcabin/b_ironrange.mp4
@@ -284,6 +284,7 @@ broll/olcabin/h_sausagemix_last.jpg
 broll/olcabin/h_bannockpat_last.jpg
 broll/olcabin/h_krautsausage_last.jpg
 broll/olcabin/h_krautpour_last.jpg
+broll/olcabin/b_appletrick_last.jpg
 broll/olcabin/h_hotdishmix_last.jpg
 broll/olcabin/b_swedekitchen_last.jpg
 broll/olcabin/h_meatballmix_last.jpg

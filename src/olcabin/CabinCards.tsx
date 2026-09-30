@@ -43,7 +43,7 @@ export const GrandmaCard: React.FC<{
   const off = (1 - inn) * (from === "bottom" ? 260 : 380);
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
-      <div style={{ position: "absolute", left: `${x}%`, top: `${y}%`, width: w, transform: `translate(-50%, -50%) translate${from === "bottom" ? "Y" : "X"}(${off}px) rotate(${rot}deg)`, opacity: Math.min(1, f / 6) }}>
+      <div style={{ position: "absolute", left: `${x}%`, top: `${y}%`, width: w, transform: `translate(-50%, -50%) translate${from === "bottom" ? "Y" : "X"}(${off}px) rotate(${rot}deg) scale(1.45)`, opacity: Math.min(1, f / 6) }}>
         <div style={{ background: `linear-gradient(170deg, #FBF5E3, #F1E6C9)`, padding: "34px 44px 40px 96px", borderRadius: 4, boxShadow: `0 26px 50px ${OLE.shadow}, 0 3px 8px rgba(0,0,0,0.25)`, position: "relative",
           backgroundImage: `repeating-linear-gradient(0deg, transparent 0 51px, ${hexA("#5E86B0", 0.35)} 51px 53px), linear-gradient(90deg, transparent 78px, ${hexA(OLE.plaid, 0.5)} 78px 81px, transparent 81px)` }}>
           {stain ? <div style={{ position: "absolute", right: 46, bottom: 30, width: 120, height: 120, borderRadius: "50%", background: "radial-gradient(circle, rgba(170,110,40,0.28), rgba(170,110,40,0) 70%)" }} /> : null}

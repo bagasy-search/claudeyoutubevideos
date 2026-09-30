@@ -61,7 +61,7 @@ export const B_ = [
   ST("in a cast-iron skillet at four hundred", "st_apple_pie_bake"),
   ST("thirty-five to forty minutes", "st_pie_slice"),
   C("That one's in the book too", "OleBookPage", PG(59, { keys: [[0.2, 0.5, 0.5, 1], [0.9, 0.5, 0.78, 2.2]], sub: "Dried-apple pie · page 59" })),
-  C("And wait till you see number four", "RecipeCountdown", { n: 4, name: "Rømmegrøt", word: "NUMBER", placement: "center", hero: true }),
+  C("And wait till you see number four", "PorridgeBowl3D", { stages: [{ at: 0, stage: "butter" }, { at: 1.4, stage: "cinnamon" }] }, { ov: { c: "RecipeCountdown", props: { n: 4, name: "Rømmegrøt", word: "NUMBER" }, ovDur: 4 } }),
   // ── #16 POTATO SAUSAGE (369.6)
   B("Number sixteen", "potsausage", "A coil of home-made potato sausage in a black cast iron skillet with browned onion, a spoon of mustard on the side, plank table.", "steam rises from the sausage"),
   H("Ground pork and beef", "sausagemix", "Two old hands mixing ground pork, boiled diced potato, chopped onion and allspice in a big enamel bowl.", "the hands fold the mixture"),
@@ -78,7 +78,6 @@ export const B_ = [
   H("patted into a skillet", "bannockpat", "An old hand patting a round of bannock dough flat in a black cast iron skillet on the wood stove, flour on the knuckles.", "the hand pats the dough flat"),
   AR("Scottish fur traders brought a version of it", "ar_voyageurs"),
   C("Mine's two cups of flour", "OleRuleCard", { n: 15, ruleWord: "NUMBER", title: "Bannock", line: "2 cups flour · 1 Tbsp baking powder · 2 Tbsp lard · 3/4 cup water", placement: "center" }),
-  ST("Medium-low heat, six or seven minutes", "st_cast_iron_skillet"),
   H("cover the pan for the first side", "bannockcover", "An old hand setting a heavy lid on a cast iron skillet with a bannock inside on the wood stove.", "the lid lowers onto the pan"),
   C("Page twenty-three", "OleBookPage", PG(23, { keys: [[0.2, 0.5, 0.5, 1], [0.8, 0.27, 0.53, 2.2]], sub: "Bannock · page 23" })),
   // ── #14 KRINGLE (443.9)
@@ -104,5 +103,5 @@ export const B_ = [
   H("stir in a pound of lightly drained kraut", "krautpour", "An old hand tipping pale sauerkraut into the skillet with the sausages and pouring cider from a tin cup.", "the kraut falls in and steams"),
   ST("Boiled potatoes and plenty of mustard", "st_potatoes_boiling"),
   C("This is a page from the book, page forty-three", "OleBookPage", PG(43, { keys: [[0.2, 0.5, 0.5, 1], [0.9, 0.7, 0.53, 2.2], [3.0, 0.5, 0.78, 2.4]], sub: "Sausage & sauerkraut · page 43" })),
-  ST("The apple is the trick", "st_apple_skillet"),
+  B("The apple is the trick", "appletrick", "A halved red apple next to a skillet of sauerkraut on a plank table, a slice of apple held over the steaming kraut.", "steam rises past the apple"),
 ];
