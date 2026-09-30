@@ -3,8 +3,9 @@ sfx/olcabin_bed.m4a
 ref_olcabin.png
 qr_ole_olcabin.png
 img/ole/portada.png
-avatar_clips/olcabin/reel30.mp4
+vid/olcabin/m1.mp4
 img/olcabin/ar/ar_cabin_kitchen.jpg
+avatar_clips/olcabin/reel30.mp4
 img/olcabin/h_lye.jpg
 broll/olcabin/h_lye.mp4
 img/olcabin/h_dough.jpg
