@@ -262,5 +262,10 @@
     "wav": "fish_refs/puntofascia_avatar.wav",
     "text": "Todo para la cara, y nadie, nadie le había revisado lo único que de verdad importaba. Nadie le había tocado la mandíbula. Le dije, doña Remedios, abra y cierre la boca para mí, apriete los dientes, fuerte.",
     "language": "es"
+  },
+  "claudio_definitiva": {
+    "wav": "fish_refs/claudio_definitiva.wav",
+    "text": "Porque si lo paras en el medio de la llama, el aire entra por abajo, sube por el tubo, sale por todos esos agujeritos para los costados y se mezcla con el vapor del aceite justo donde se está quemando. Es lo mismo que hacen los quemadores de fábrica, con una pieza que cuesta plata. Acá la tenés tirada en una caja, ahora lo que prometí siempre en este taller.",
+    "language": "es"
   }
 }
