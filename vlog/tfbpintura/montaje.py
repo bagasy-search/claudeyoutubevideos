@@ -227,6 +227,6 @@ open(R + 'src/tfbpintura/timeline.gen.ts', 'w', encoding='utf8').write(
     '// GENERADO por vlog/tfbpintura/montaje.py — no editar\nimport type { VlogData } from "../tfb/TfbVlogMain";\n'
     f'export const TOTAL_FRAMES_TFBPINTURA = {TOTAL_FR};\nexport const DATA_TFBPINTURA: VlogData = {json.dumps(data, ensure_ascii=False)};\n')
 assets = sorted({s['src'] for s in segs} | {v for o in overlays for k, v in o['props'].items() if isinstance(v, str) and re.search(r'\.(png|jpg|mp4)$', v)})
-open(R + '@_tfbpintura_assets.txt', 'w', encoding='utf8').write('\n'.join(assets) + '\n')
+open(R + '_tfbpintura_assets.txt', 'w', encoding='utf8').write('\n'.join(assets) + '\n')
 json.dump([round((o['from'] + o['dur'] / 2) / FPS, 2) for o in overlays if o['kind'] == 'TfbQrCard'], open(V + 'cta_times.json', 'w'))
 print('OK · frames', TOTAL_FR, '· assets', len(assets))
