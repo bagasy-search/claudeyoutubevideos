@@ -627,21 +627,6 @@
       "railTotal": 12,
       "railLabel": "No."
     },
-    "agnesFlash": {
-      "p001": "a quiet dark house, a refrigerator that has gone silent, faint wind against the window",
-      "p026": "a quiet basement, a furnace that is off, a flashlight switch clicking",
-      "p080": "a heavy snowstorm, wind howling between houses",
-      "p086": "cold winter wind blowing across open fields",
-      "p109": "a draft of winter wind pressing on a window",
-      "p145": "tap water running into a plastic bottle",
-      "p148": "water running from a faucet into a bathtub, echo in a small bathroom",
-      "p171": "a freezer door seal unsticking, the faint hiss of cold air, a quiet kitchen",
-      "p200": "the soft steady hiss of a propane burner",
-      "p204x": "a kettle starting to whistle quietly on a propane burner outdoors, light wind",
-      "p205": "hot water pouring into a ceramic mug",
-      "p222": "cold wind whistling through a narrow window gap",
-      "p225": "liquid gurgling through a siphon hose, a quiet snowy porch",
-      "p291": "a diesel truck idling, snowy wind, faint hydraulic whine"
-    }
+    "agnesFlash": {}
   }
 }
