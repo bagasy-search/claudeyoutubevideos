@@ -10,7 +10,8 @@ import { env } from "./env.mjs";
 import { run } from "./exec.mjs";
 
 export async function diskFreeGB(letterOrPath) {
-  const p = letterOrPath.length === 1 ? `${letterOrPath}:/` : letterOrPath;
+  // fuera de Windows (sesión en la nube) no hay letras de unidad: se mide la raíz
+  const p = letterOrPath.length === 1 ? (process.platform === "win32" ? `${letterOrPath}:/` : "/") : letterOrPath;
   const st = await fs.promises.statfs(p);
   return (st.bavail * st.bsize) / 1024 ** 3;
 }

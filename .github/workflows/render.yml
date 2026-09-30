@@ -81,12 +81,26 @@ jobs:
         run: |
           # 20-24 runners bajan el MISMO tar a la vez; sin reintento, uno que rebota mata la corrida
           # ENTERA después de que los demás chunks ya pagaron minutos de render. Mismo criterio que npm ci.
+          # Sesiones en la nube (no pueden crear releases): el dispatcher deja el tar en partes de 45 MB en el
+          # bucket público de Supabase con un manifest.txt ("tar <parte> <bytes>"). Si está, se usa ESE.
+          S="${{ github.event.inputs.slug }}"
+          SBP="${{ secrets.SB_URL }}/storage/v1/object/public/thumbnails/farm_assets/$S"
+          if curl -sfL --retry 5 --retry-delay 5 "$SBP/manifest.txt" -o _manifest.txt && grep -q '^tar ' _manifest.txt; then
+            echo "assets por Supabase: $(grep -c '^tar ' _manifest.txt) partes"
+            : > "assets-$S.tar"
+            grep '^tar ' _manifest.txt | while read -r _k name size; do
+              curl -sfL --retry 8 --retry-delay 5 "$SBP/$name" -o "$name" || { echo "no pude bajar $name"; exit 1; }
+              [ "$(stat -c%s "$name")" = "$size" ] || { echo "parte $name incompleta"; exit 1; }
+              cat "$name" >> "assets-$S.tar"; rm -f "$name"
+            done || exit 1
+          else
           n=0
           until gh release download "assets-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" \
                   --pattern "assets-${{ github.event.inputs.slug }}.tar*" --dir . --clobber; do
             n=$((n+1)); [ "$n" -ge 4 ] && { echo "no pude bajar los assets tras $n intentos"; exit 1; }
             echo "reintento $n de la descarga de assets"; sleep $((10 * n))
           done
+          fi
           if [ ! -f "assets-${{ github.event.inputs.slug }}.tar" ]; then
             PARTS=(assets-${{ github.event.inputs.slug }}.tar.part*)
             [ -e "${PARTS[0]}" ] || { echo "no se encontró el tar ni sus partes"; exit 1; }
@@ -189,7 +203,19 @@ jobs:
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           mkdir -p public
+          S="${{ github.event.inputs.slug }}"
+          SBP="${{ secrets.SB_URL }}/storage/v1/object/public/thumbnails/farm_assets/$S"
+          if curl -sfL --retry 5 --retry-delay 5 "$SBP/manifest.txt" -o _manifest.txt && grep -q '^wav ' _manifest.txt; then
+            : > "public/$S.wav"
+            grep '^wav ' _manifest.txt | while read -r _k name size; do
+              curl -sfL --retry 8 --retry-delay 5 "$SBP/$name" -o "$name" || exit 1
+              [ "$(stat -c%s "$name")" = "$size" ] || { echo "parte $name incompleta"; exit 1; }
+              cat "$name" >> "public/$S.wav"; rm -f "$name"
+            done || rm -f "public/$S.wav"
+            echo "wav máster por Supabase: $(stat -c%s "public/$S.wav" 2>/dev/null || echo 0) bytes"
+          else
           gh release download "assets-${{ github.event.inputs.slug }}" -R "${{ github.repository }}"             --dir public --pattern "*.wav" --clobber || true
+          fi
           # el dispatcher a veces lo llama <slug>_fish.wav (cola generada con Fish): el `if` de más
           # abajo busca <slug>.wav exacto, así que si vino con otro nombre lo dejamos donde lo espera.
           S="${{ github.event.inputs.slug }}"
@@ -235,7 +261,22 @@ jobs:
           # Con stitch_raw se publica el concat crudo y el CFR/color/audio los pone el paso final.
           # ⛔ NO lo uses si el mp4 del farm se consume DIRECTO (reproductor de Bagasy, YouTube):
           # sin re-encodear quedan las costuras de chunk y el tiron.
-          if [ -n "${{ github.event.inputs.stitch_raw }}" ]; then
+          if [ "${{ github.event.inputs.stitch_raw }}" = "entrega" ]; then
+            # ── RE-ENCODE DE ENTREGA EN EL RUNNER (sesiones en la nube: no pueden re-subir el mp4) ──
+            # Mismo contrato que factory/phases/90_deliver.mjs: CFR por setpts=N/30 + passthrough (con
+            # -fps_mode cfr el relleno de las costuras se vuelve cuadros duplicados), rango pc→tv y matriz
+            # bt470bg→bt709, GOP 2 s, audio = WAV MÁSTER mono→estéreo, cortado al largo del máster.
+            [ -s "public/$SLUG.wav" ] || { echo "::error::entrega sin WAV máster: no se puede"; exit 1; }
+            WAVD=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "public/$SLUG.wav")
+            ffmpeg -y -v error -i "_cat_$SLUG.mp4" -i "public/$SLUG.wav" -map 0:v:0 -map 1:a:0 \
+              -vf "setpts=N/30/TB,scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p" -fps_mode passthrough \
+              -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
+              -c:v libx264 -preset faster -crf 21 -maxrate 6M -bufsize 12M -g 60 -keyint_min 60 -sc_threshold 0 -threads 0 \
+              -af "pan=stereo|c0=c0|c1=c0" -c:a aac -b:a 192k -ar 48000 -t "$WAVD" -movflags +faststart "$SLUG.mp4" \
+              || { echo "::error::falló el re-encode de entrega"; exit 1; }
+            echo "entrega: $(ffprobe -v error -select_streams v -show_entries stream=pix_fmt,color_range,color_space -of csv=p=0 "$SLUG.mp4") · $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$SLUG.mp4") s"
+            rm -f "_cat_$SLUG.mp4"
+          elif [ -n "${{ github.event.inputs.stitch_raw }}" ]; then
             echo "::warning::stitch_raw: publico el concat SIN re-encodear. HAY QUE re-encodearlo antes de entregar."
             mv -f "_cat_$SLUG.mp4" "$SLUG.mp4"
           else

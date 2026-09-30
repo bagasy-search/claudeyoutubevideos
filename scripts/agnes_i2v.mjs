@@ -104,7 +104,7 @@ const submit = async (it, ki) => {
       throw new Error(msg.slice(0, 140));
     }
     free[ki] = Date.now() + COOLDOWN;
-    inflight.set(vid, { item: it, t0: Date.now() });
+    inflight.set(vid, { item: it, t0: Date.now(), ki });
     sent++;
     console.log(`  → ${it.nombre} (enviados ${sent}/${pend.length}, en vuelo ${inflight.size})`);
   } catch (e) {
@@ -117,7 +117,8 @@ const submit = async (it, ki) => {
 const poll = async (vid, st) => {
   try {
     const g = await fetch(`${ROOT}/agnesapi?video_id=${encodeURIComponent(vid)}`,
-      { headers: { Authorization: "Bearer " + KS[Math.floor(Math.random() * KS.length)] }, signal: AbortSignal.timeout(45_000) });
+      // la tarea se consulta con la MISMA clave que la creó: con otra, agnes responde 404 "task not found" (30-sep-2026)
+      { headers: { Authorization: "Bearer " + KS[st.ki ?? Math.floor(Math.random() * KS.length)] }, signal: AbortSignal.timeout(45_000) });
     const s = await g.json().catch(() => ({}));
     if (s.url) {
       const v = await fetch(s.url, { signal: AbortSignal.timeout(300_000) });

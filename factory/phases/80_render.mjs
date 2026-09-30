@@ -61,7 +61,8 @@ export async function prepararWorktree({ slug, commit, files, wt, assetsList, ru
       if (!st.isSymbolicLink()) throw new Error(`${link} existe y NO es junction: no lo toco (revisar a mano)`);
       continue;
     }
-    await runner("cmd", ["/c", "mklink", "/J", link.replace(/\//g, "\\"), path.join(ROOT, d).replace(/\//g, "\\")], { timeoutMs: 30_000 });
+    if (process.platform === "win32") await runner("cmd", ["/c", "mklink", "/J", link.replace(/\//g, "\\"), path.join(ROOT, d).replace(/\//g, "\\")], { timeoutMs: 30_000 });
+    else fs.symlinkSync(path.join(ROOT, d), link, "dir");   // sesión en la nube (Linux): symlink
   }
   fs.copyFileSync(assetsList, path.join(wt, path.basename(assetsList)));
   const head = (await g(["rev-parse", "HEAD"], wt)).stdout.trim();
@@ -109,7 +110,9 @@ export default {
             const reuse = (reusarAssets || i > 0) && (await releaseAssetPublic(repo, `assets-${slug}`, `assets-${slug}.tar`)).existe;
             const r = await run("node", [path.join(ROOT, "scripts", "farm.mjs"), slug, P.comp, String(total), String(chunks), `@${path.basename(P.assetsList)}`], {
               cwd: wt, timeoutMs: 3 * 3600_000, expect: /WAIT_RUN:\s*\d+/,
-              env: { ENTRY: `src/index_${slug}.tsx`, FARM_REF: P.renderRef, AUDIO_FILE: `${slug}.m4a`, TAR_DIR: env("FACTORY_TAR_DIR") || "D:/", FARM_NOWAIT: "1", ...(reuse ? { REUSE_ASSETS: "1" } : {}) },
+              env: { ENTRY: `src/index_${slug}.tsx`, FARM_REF: P.renderRef, AUDIO_FILE: `${slug}.m4a`, TAR_DIR: env("FACTORY_TAR_DIR") || "D:/", FARM_NOWAIT: "1", ...(reuse ? { REUSE_ASSETS: "1" } : {}),
+                // nube: sin releases desde la sesión → assets por Supabase y el runner hace el re-encode de entrega
+                ...(env("FARM_ASSETS_SUPABASE") === "1" ? { FARM_ASSETS_SUPABASE: "1", FARM_MASTER_WAV: P.wav, STITCH_RAW: "entrega" } : {}) },
               onLine: (l) => /PRE-VUELO|✗|⛔|WAIT_RUN|release|chunks|agnes QC/i.test(l) && log(l.slice(0, 180)),
             });
             runId = r.out.match(/WAIT_RUN:\s*(\d+)/)[1];

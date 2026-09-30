@@ -1,0 +1,115 @@
+Este rollo de caño de cobre que tengo acá me costó menos que una garrafa. Y desde que lo instalé, en mi casa el agua caliente de la ducha dejó de salir de la garrafa. Sale de un lugar donde el calor ya estaba, y lo estábamos tirando por la chimenea todos los días.
+
+Hoy te voy a mostrar exactamente cómo lo hice, paso por paso, con las medidas, con los materiales y con las cuentas de verdad. Pero antes te pido una cosa: quedate hasta el final. Porque con este invento hay tres errores que parecen tonterías y no lo son. Uno de ellos te arruina la instalación en una semana. Y otro puede hacer explotar un caño adentro de tu estufa. No te lo digo para asustarte, te lo digo porque lo vi pasar.
+
+Arranquemos por lo que nadie te dice. ¿Sabés en qué se te va la garrafa? La mayoría piensa que se va en la cocina, en el mate, en los fideos. Y no. En una casa común, lo que más gas se come es el calefón o el termotanque. Calentar agua para bañarse, para lavar los platos, para lavar la ropa. Eso es lo que te vacía la garrafa.
+
+Yo lo medí en mi casa. Con el calefón andando, una garrafa de diez kilos nos duraba más o menos dos semanas. Cuando desconecté el calefón y dejé la garrafa sólo para la cocina, la misma garrafa nos duró casi dos meses. Fijate la diferencia. Más de las tres cuartas partes del gas se iban en calentar agua.
+
+Entonces la pregunta es simple: ¿de dónde saco agua caliente sin gas? Y la respuesta estaba en el living. En invierno, en mi casa, la estufa a leña está prendida desde la tarde hasta la noche. Esa estufa tira calor para todos lados, y por el caño de la chimenea se va una parte enorme de ese calor al cielo. Es calor que ya pagaste con la leña. El truco es robarle un poquito a ese fuego y mandarlo al agua.
+
+Y para eso sirve el cobre. El cobre es de los metales que mejor pasan el calor. Mucho mejor que el hierro y muchísimo mejor que el acero inoxidable. Si metés un caño de cobre con agua adentro del fuego, el agua se calienta en segundos. Eso es lo que se llama un serpentín: un caño enrollado que vive adentro de la estufa y por el que circula el agua.
+
+Ahora, acá viene la parte linda de este invento, la que me hizo decidirme. No necesita bomba. No necesita electricidad. No necesita ningún motor. El agua se mueve sola. ¿Cómo? Por algo que se llama termosifón.
+
+Te lo explico con algo que ya viste. Cuando ponés una olla con agua al fuego, el agua de abajo se calienta primero, se vuelve más liviana y sube. La de arriba, que está más fría y más pesada, baja a ocupar su lugar. Se arma una rueda, sola. Bueno, el termosifón es esa misma rueda, pero estirada con caños.
+
+Pongo el serpentín abajo, en el fuego. Pongo el tanque de agua arriba, más alto que la estufa. Del fondo del tanque baja un caño con agua fría que entra por la parte de abajo del serpentín. El agua se calienta adentro del fuego, se vuelve liviana, y sube sola por el otro caño hasta la parte de arriba del tanque. Y el agua fría del fondo del tanque baja a reemplazarla. Mientras la estufa esté prendida, esa rueda no para. Sin un solo cable.
+
+Pero ojo, que esto tiene una condición que no se negocia. El tanque tiene que estar más alto que el serpentín. Si está a la misma altura o más abajo, la rueda no arranca, el agua se queda quieta adentro del fuego y hierve. Y agua que hierve adentro de un caño es vapor, y el vapor empuja. Ya vamos a llegar a eso.
+
+Vamos a los materiales. Te los digo como los compré yo, en la ferretería del barrio.
+
+Primero, el caño de cobre. Yo usé un rollo de caño de cobre recocido de media pulgada, de seis metros. Recocido quiere decir que viene blando, en rollo, y que se puede doblar a mano sin que se quiebre. No compres el de barra dura, que ése no se dobla. Seis metros alcanzan para un serpentín de unas seis o siete vueltas y para llegar hasta la pared.
+
+Segundo, el tanque. Acá hice algo que te recomiendo muchísimo. En vez de comprar un tanque, usé un termotanque viejo que tenía tirado en el galpón. Era de gas, de ochenta litros, y se le había muerto el quemador. El tanque por dentro estaba sano. ¿Y por qué sirve tanto? Porque un termotanque ya está hecho para aguantar agua caliente, ya viene aislado con espuma para que no se enfríe, y ya trae las conexiones donde van: la entrada de agua fría abajo y la salida de agua caliente arriba. Si conseguís uno así, regalado o por monedas, tenés la mitad del trabajo hecho.
+
+Tercero, las conexiones. Unos acoples de bronce para pasar del cobre a la rosca del tanque, dos codos, una te, cinta de teflón y un rollo de estaño con plata para soldar. Y dos cosas que no son opcionales, que después te explico por qué: un caño de venteo, que es un caño que sale de la parte más alta del tanque y queda abierto, y una válvula de alivio de presión y temperatura, que es una valvulita de bronce que se abre sola si la cosa se pasa de rosca.
+
+Cuarto, herramientas. Un cortacaños de rueda, que corta el cobre derechito y sin rebaba. Un soplete chico de garrafita, sí, de garrafita, y el único gas que vas a usar en todo esto. Un resorte curvatubos de media pulgada. Una llave inglesa, un taladro, una mecha de copa para pasar la pared de la estufa si hace falta, guantes y anteojos.
+
+Y un termómetro. Aunque sea uno de cocina, de los de pinchar. Porque acá no vamos a hacer nada a ojo. Vamos a medir.
+
+Primer paso: dar forma al serpentín. Parece lo más fácil y es donde la mayoría arruina el caño. Si doblás el cobre a mano, así nomás, en la curva el caño se aplasta. Se hace una arruga, el caño queda como una manguera pisada, y por ahí el agua pasa con dificultad. Y en un termosifón, donde el agua se mueve sola y despacito, un estrangulamiento así te frena toda la rueda.
+
+Para que no se aplaste hay dos formas. La primera es este resorte. Se mete el caño adentro del resorte, justo en la parte donde vas a doblar, y el resorte sostiene las paredes del caño mientras lo curvás. La segunda forma, la de los viejos, es llenar el caño de arena fina y bien seca, taparlo en las dos puntas con cinta, doblarlo, y después sacar la arena soplando. Las dos funcionan.
+
+Yo lo enrollé alrededor de un tacho de pintura de veinte litros. Despacito, vuelta por vuelta, apoyando el caño contra el tacho y girando. Así me salieron vueltas parejas de unos treinta centímetros. Dejé las dos puntas largas y rectas, apuntando para el mismo lado, que son las que después salen de la estufa.
+
+Y acá hay un detalle que importa muchísimo. El serpentín tiene que quedar siempre subiendo. La punta de entrada, la del agua fría, va abajo. La de salida, la del agua caliente, va arriba. Y entre las dos, el caño tiene que ir siempre para arriba, aunque sea un poquito. Nunca puede tener un tramo que baje y vuelva a subir. ¿Por qué? Porque en cualquier parte que baje se te va a juntar una burbuja de aire, o de vapor, y esa burbuja corta la circulación.
+
+Segundo paso: dónde va el serpentín adentro de la estufa. No va en el medio de las llamas. Esto lo aprendí probando. Si lo ponés justo donde pega la llama, se calienta demasiado rápido, se llena de hollín en una semana y además le sacás tanto calor al fuego que la leña arde peor y hace más humo.
+
+El lugar bueno es contra las paredes del hogar, arriba, en la parte de atrás, donde el calor sube antes de irse por la chimenea. Ahí el caño recibe muchísimo calor, pero no está metido en la llama. En mi estufa quedó pegado contra la pared del fondo, a unos quince centímetros por encima de donde apoya la leña.
+
+Las dos puntas salen por la pared lateral de la estufa. Hice dos agujeros con la mecha de copa, del tamaño justo del caño, y los sellé por fuera con masilla refractaria, que es una pasta que aguanta la temperatura. Así no se escapa humo por el costado.
+
+Tercer paso: subir el tanque. Esta es la parte donde hay que ser prolijo. El tanque tiene que quedar más alto que la parte de arriba del serpentín. Te digo un número: como mínimo cuarenta centímetros más arriba, y mejor si son sesenta o un metro. Cuanto más diferencia de altura, más fuerte tira la rueda.
+
+Yo lo puse en una repisa de hierro amurada a la pared, al lado de la estufa, con la base del tanque a un metro del piso. Ojo con esto: ochenta litros de agua son ochenta kilos, más el peso del tanque. Esa repisa tiene que estar bien agarrada, con tacos y tornillos gruesos, a una pared de material. No a un durlock.
+
+Cuarto paso: las uniones. Del serpentín salen dos caños. El de abajo, el de entrada, lo conecto a la parte de abajo del tanque, donde el termotanque tenía el desagote. Por ahí baja el agua fría. El de arriba, el de salida, lo conecto a una entrada que está en la mitad de arriba del tanque. Por ahí vuelve el agua caliente.
+
+Y te repito la regla de oro: los dos caños, en todo su recorrido, sin bajadas y subidas. El de agua caliente sube siempre, desde la estufa hasta el tanque. El de agua fría baja siempre, desde el tanque hasta la estufa. Sin panzas, sin vueltas raras.
+
+Para soldar el cobre, se lija la punta del caño y el interior del acople hasta que quedan brillantes, se pone pasta decapante, se calienta con el soplete, y cuando el cobre está a temperatura se apoya el estaño y se chupa solo adentro de la unión. Una buena soldadura se ve como un anillito plateado, parejo, todo alrededor. Si se ve con gotas o con agujeritos, se rehace.
+
+Y un detalle que te va a salvar: los primeros cincuenta centímetros de caño que salen de la estufa, siempre de cobre. Nada de plástico ahí. Aunque el caño de termofusión aguante agua caliente, cerca de la estufa la temperatura del aire y de la chapa es otra cosa, y el plástico se ablanda. Del cobre recién pasás a otro material lejos del fuego.
+
+Quinto paso: la seguridad. Y acá es donde llegan los errores de los que te hablé al principio. Te los voy a contar uno por uno, porque el orden importa.
+
+Primer error: cerrar el circuito. Mucha gente, para que quede prolijo, le pone una llave de paso al caño que va del serpentín al tanque. Para cortar el agua si hay que arreglar algo. Parece lógico. Es lo más peligroso que podés hacer.
+
+Pensá lo que pasa. Un día alguien cierra esa llave, o la deja cerrada por olvido, y prende la estufa. El agua que queda adentro del serpentín no tiene para dónde ir. Se calienta, llega a cien grados, hierve, y el vapor ocupa más de mil veces el lugar que ocupaba el agua. Adentro de un caño cerrado, eso es una bomba. El caño revienta adentro de la estufa, con agua hirviendo y brasas volando para todos lados. Por eso: entre el serpentín y el tanque, ninguna llave. Nunca. Ninguna cosa que pueda aislar al serpentín del tanque.
+
+Y por eso mismo el tanque lleva el caño de venteo. Es un caño que sale de la parte más alta del tanque, sube por encima de todo y queda abierto arriba, con una curvita para que no entre tierra. Si en algún momento el agua llega a hervir, el vapor tiene por dónde salir sin romper nada. Es la válvula de seguridad que no se puede trabar, porque no tiene nada que se trabe. Y además la válvula de alivio de bronce, como segunda defensa. Las dos. No una o la otra.
+
+Segundo error: prender la estufa con el serpentín vacío. Esto pasa mucho la primera vez, o cuando vaciaste el tanque para limpiarlo. Prendés el fuego, el serpentín está seco, el cobre se pone al rojo. Y en algún momento alguien abre el agua. El agua fría entra de golpe a un caño que está a cientos de grados, se transforma en vapor al instante, y hace un estampido que te sacude la estufa. Además el cobre al rojo se debilita y la soldadura se derrite.
+
+La regla es sencilla: primero agua, después fuego. Siempre. Antes de encender, abrí la canilla de arriba del tanque y fijate que salga agua. Si sale agua, el circuito está lleno. Recién ahí va el fósforo.
+
+Tercer error: el tanque abajo o los caños con panza. Este es el que te arruina la instalación en una semana, y es el más común. Hacés todo, prendés la estufa, y escuchás un ruido raro. Como golpecitos, como una pava que tiembla, cloc, cloc, cloc. Eso es agua que hierve adentro del serpentín porque no circula. Se forman burbujas de vapor, suben, chocan contra el agua fría y colapsan, y cada colapso es un golpe.
+
+¿Por qué no circula? Casi siempre por una de dos cosas. O el tanque quedó muy bajo, sin la diferencia de altura que necesita la rueda. O algún caño tiene una panza donde se juntó una burbuja de aire. Si escuchás esos golpes, apagá, dejá enfriar y revisá las alturas con un nivel. No lo dejes así pensando que ya se va a acomodar. No se acomoda. El serpentín se llena de sarro por dentro en pocos días, porque el agua hirviendo deja todo el calcio pegado en el cobre, y el caño se va tapando.
+
+Y ya que estamos, un cuarto cuidado, que no es un error de instalación pero te puede lastimar. El agua de este sistema puede salir muy caliente. En mi casa la medí a sesenta y dos grados un día que la estufa estuvo prendida muchas horas. A esa temperatura te quemás la mano en pocos segundos. Por eso la salida del tanque no va directo a la ducha: va a una canilla mezcladora, para mezclar con agua fría. Y si en tu casa hay chicos o gente grande, más todavía.
+
+Sexto paso: llenar y purgar. Cerrás el desagote, abrís la entrada de agua fría del tanque y lo dejás llenar despacito, con la canilla de arriba abierta, para que salga el aire. Cuando por la canilla de arriba sale un chorro parejo, sin escupir, sin borbotones, el sistema está lleno y sin aire. Ahí revisás cada soldadura con un papel de cocina. Si el papel sale seco en todas, estás listo.
+
+Y ahora sí. El momento lindo. Prendí la estufa como todos los días, con la misma leña de siempre, sin agregar nada. A los diez minutos toqué el caño de salida, el de arriba, el que va al tanque. Tibio. A los veinte minutos, caliente. Y toqué el de abajo, el de entrada. Frío. Esa diferencia es la prueba de que la rueda está andando: el agua caliente sube por un lado y la fría baja por el otro.
+
+Te cuento lo que medí, con el termómetro. El agua del tanque arrancó a catorce grados, que es la temperatura a la que viene de la calle en invierno. Después de dos horas de estufa, en la canilla de arriba del tanque había cuarenta y un grados. Después de cuatro horas, cincuenta y cinco. Ochenta litros a cincuenta y cinco grados. Eso son dos duchas largas y los platos de la noche, y sobra.
+
+Y a la mañana, con la estufa apagada desde las once de la noche, el agua todavía estaba a cuarenta y tres grados. Por eso te insistí con el termotanque viejo: la espuma que trae alrededor es lo que hace que no pierdas el calor de un día para el otro.
+
+Hagamos las cuentas, porque yo no te quiero vender humo. Para llevar ochenta litros de catorce a cincuenta y cinco grados hacen falta más o menos cuatro kilovatios hora de calor. Una garrafa de diez kilos tiene adentro unos ciento veinte kilovatios hora, pero el calefón aprovecha, siendo generosos, un setenta por ciento. Entonces cada tanque de agua caliente que calienta la estufa es más o menos un cinco por ciento de una garrafa. Parece poco. Pero un tanque por día, durante un mes, es casi una garrafa y media. Justo lo que nosotros gastábamos de más con el calefón.
+
+Y esa energía no la pagué. Salió de la leña que igual iba a quemar para calefaccionar la casa. Lo único que noté es que la estufa, en el living, calienta un poquito menos. Algo así como un diez por ciento. Honestamente, ni se siente.
+
+Ahora, seguro me vas a decir: Claudio, ¿y en verano? En verano no prendés la estufa. Y tenés toda la razón. Acá viene la segunda vida de este mismo tubo.
+
+En verano, el serpentín sale de la estufa y se va al techo. Con los mismos seis metros de cobre armé una caja solar. Es muy simple: una caja de madera, poco profunda, de un metro por un metro. Adentro, una chapa pintada de negro mate. Sobre la chapa, el caño de cobre haciendo zigzag, también pintado de negro. Y arriba de todo, un vidrio, o un policarbonato, que deja entrar el sol y no deja salir el calor. Es el mismo efecto que un auto estacionado al sol con las ventanillas cerradas.
+
+Y la rueda del termosifón funciona igual. La caja abajo, inclinada mirando al norte, y el tanque arriba, más alto que la caja. El sol calienta el agua en el cobre, el agua sube sola al tanque, la fría baja sola a la caja. En enero, con una caja así, el agua del tanque me llegó a cincuenta grados a la tarde. Sin leña, sin gas, sin nada.
+
+Ahora, para ser completamente honesto con vos. Si en tu casa no tenés estufa a leña ni cocina a leña, la parte de invierno no te sirve. Y con sol solo, en los días nublados de invierno, la caja no alcanza. Por eso en mi casa el calefón sigue conectado, como respaldo. Pero la diferencia es que ahora casi nunca prende.
+
+Y la garrafa sigue estando para la cocina, eso sí. Con la cocina sola, una garrafa nos dura casi dos meses. Antes nos duraba dos semanas. O sea que de comprar dos garrafas por mes pasamos a comprar una cada dos meses. Si me preguntás, eso es lo más cerca de no comprar más garrafa que vas a estar sin cambiar de casa.
+
+Te dejo un par de cosas que aprendí después de usarlo todo un invierno, que no las vas a encontrar en ningún lado.
+
+Una. Una vez por año, cuando termina el invierno, vaciá el sistema y lavá el serpentín por dentro. Se llena con un poco de vinagre de alcohol, se deja un día entero, y se enjuaga. El vinagre disuelve el sarro que se pega en el cobre. En zonas de agua dura, como la mía, es la diferencia entre un serpentín que dura veinte años y uno que se tapa en tres.
+
+Dos. Por fuera, el serpentín se llena de hollín. No lo raspes con un cepillo de acero, porque le sacás cobre. Pasale un trapo o un cepillo de plástico cuando la estufa está fría, una vez por mes. El hollín es como una manta: si lo dejás crecer, el caño aprovecha cada vez menos calor.
+
+Tres. Forrá los caños que van de la estufa al tanque. Con esos tubos de espuma que venden para aislar cañerías, de los que aguantan temperatura. Parece un detalle, pero un caño pelado de un metro y medio pierde calor todo el día. Forrado, llega casi todo al tanque.
+
+Y cuatro, la más importante de todas. Cuando termine el invierno y dejes de prender la estufa, si el serpentín queda en la estufa, dejalo con agua y con el circuito abierto. Nunca vacío, nunca cerrado. Porque un día de fresco en abril alguien va a prender un fuego sin acordarse. Y ya sabés lo que pasa con un serpentín vacío al fuego.
+
+Te hago el resumen, para que te quede todo en un lugar. Un rollo de caño de cobre de media pulgada. Un termotanque viejo como tanque. El serpentín contra la pared del fondo de la estufa, arriba, siempre subiendo. El tanque por lo menos cuarenta centímetros más arriba que el serpentín. Ninguna llave entre el serpentín y el tanque. Caño de venteo abierto y válvula de alivio. Primero agua, después fuego. Y una canilla mezcladora en la salida.
+
+Con eso, en mi casa, el agua caliente del invierno sale de la leña que ya íbamos a quemar. Y la del verano, del sol. Y el calefón está ahí, de adorno la mayor parte del año.
+
+Y si me preguntás qué fue lo que más me gustó de todo esto, no es la plata que ahorramos. Es otra cosa. Es que la primera noche, cuando abrí la ducha y el agua salió caliente, pensé en todos los inviernos que ese calor se fue por la chimenea. Años enteros tirando calor al cielo, y pagando gas para calentar el agua al lado. Estaba todo ahí, a cincuenta centímetros.
+
+Si esto te sirvió, suscribite, que en este taller siempre hay algún invento que se hace con lo que tenés tirado. Contame en los comentarios si en tu casa tenés estufa a leña, cocina a leña o salamandra, y cómo es, que te ayudo a pensar dónde iría el serpentín. Y si ya hiciste algo parecido, contá cómo te fue, que de los comentarios de ustedes aprendo un montón. Nos vemos en el próximo video. Un abrazo grande.

@@ -1,0 +1,19 @@
+{
+  "slug": "tdccobre",
+  "canal": "taller-de-claudio",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "GUION_tdccobre.txt",
+  "voz": {
+    "id": "claudio_definitiva",
+    "blockChars": 900
+  },
+  "cta": {
+    "head": "Suscribite al taller",
+    "ancla": "Si esto te sirvió, suscribite"
+  },
+  "avatar": {
+    "face": "public/img/tdccobre/avatar_base.jpg",
+    "ref": "public/ref_tdccobre_face.png"
+  }
+}

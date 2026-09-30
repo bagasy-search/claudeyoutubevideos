@@ -385,7 +385,10 @@ fs.rmSync(listFile);
 // GitHub limita cada asset individual de un release a 2 GiB. Los videos con mucho stock superan
 // ese límite aunque el contenido total del release sea válido. Dividimos sólo el transporte; el
 // workflow recompone el mismo tar byte a byte antes de extraerlo.
-const releaseAssetLimit = 1_900_000_000;
+// FARM_ASSETS_SUPABASE=1 (sesiones en la nube: el proxy NO deja crear releases): el transporte va en
+// partes de 45 MB al bucket público de Supabase (tope medido: 45 MB entra, 200 MB da 413).
+const SUPA_ASSETS = process.env.FARM_ASSETS_SUPABASE === "1";
+const releaseAssetLimit = SUPA_ASSETS ? 45_000_000 : 1_900_000_000;
 const uploadFiles = [];
 if (fs.statSync(tar).size <= releaseAssetLimit) {
   uploadFiles.push(tar);
@@ -418,6 +421,47 @@ if (fs.statSync(tar).size <= releaseAssetLimit) {
 
 // 2) subir como release asset (reemplaza si ya existe)
 const relTag = `assets-${slug}`;
+if (SUPA_ASSETS) {
+  // ── transporte por Supabase: partes del tar + WAV máster (partido) + manifest.txt ─────────────
+  // render.yml (rama de render de la sesión en la nube) lee el manifest y recompone byte a byte.
+  const { supaCreds } = await import("./supa_creds.mjs");
+  const { U, K } = supaCreds();
+  const pref = `farm_assets/${slug}`;
+  const subir = async (local, nombre) => {
+    for (let intento = 1; intento <= 5; intento++) {
+      try {
+        const r = await fetch(`${U}/storage/v1/object/thumbnails/${pref}/${nombre}`, { method: "POST", headers: { apikey: K, Authorization: `Bearer ${K}`, "Content-Type": "application/octet-stream", "x-upsert": "true" }, body: fs.readFileSync(local), signal: AbortSignal.timeout(600_000) });
+        if (r.ok) return;
+        throw new Error(`HTTP ${r.status} ${(await r.text()).slice(0, 160)}`);
+      } catch (e) { console.error(`  subida ${nombre} intento ${intento}: ${e.message}`); await new Promise((res) => setTimeout(res, 5000 * intento)); }
+    }
+    console.error(`✗ no pude subir ${nombre} a Supabase`); process.exit(1);
+  };
+  const partir = (src, base) => {
+    const out = []; const fd = fs.openSync(src, "r"); const buf = Buffer.allocUnsafe(8 * 1024 * 1024);
+    let off = 0, n = 0; const size = fs.statSync(src).size;
+    try {
+      while (off < size) {
+        n++; const pp = path.join(os.tmpdir(), `${base}.part${String(n).padStart(3, "0")}`); const fo = fs.openSync(pp, "w"); let w = 0;
+        try { while (w < releaseAssetLimit && off < size) { const rd = fs.readSync(fd, buf, 0, Math.min(buf.length, releaseAssetLimit - w, size - off), off); if (!rd) break; fs.writeSync(fo, buf, 0, rd); w += rd; off += rd; } }
+        finally { fs.closeSync(fo); }
+        out.push(pp);
+      }
+    } finally { fs.closeSync(fd); }
+    return out;
+  };
+  const master = process.env.FARM_MASTER_WAV || wav;
+  const wavParts = partir(master, `${slug}.wav`);
+  const lineas = [];
+  let k = 0;
+  for (const f of uploadFiles) { await subir(f, path.basename(f)); lineas.push(`tar ${path.basename(f)} ${fs.statSync(f).size}`); console.log(`  Supabase ${++k}/${uploadFiles.length + wavParts.length} ${path.basename(f)}`); }
+  for (const f of wavParts) { await subir(f, path.basename(f)); lineas.push(`wav ${path.basename(f)} ${fs.statSync(f).size}`); console.log(`  Supabase ${++k}/${uploadFiles.length + wavParts.length} ${path.basename(f)}`); fs.rmSync(f, { force: true }); }
+  const man = path.join(os.tmpdir(), `manifest_${slug}.txt`);
+  fs.writeFileSync(man, lineas.join("\n") + "\n");
+  await subir(man, "manifest.txt");
+  console.log(`assets en Supabase ✓ ${uploadFiles.length} partes de tar + ${wavParts.length} de WAV máster (${path.basename(master)})`);
+  for (const file of new Set([tar, ...uploadFiles])) fs.rmSync(file, { force: true });
+} else {
 // Stitch downloads the continuous master WAV as a release asset (not from inside the tar), so
 // publish the exact same file alongside the tar parts. The tar still contains it for Remotion.
 //
@@ -462,6 +506,7 @@ if (!reusableRelease) {
   console.log(`release ${relTag} ya contiene exactamente las ${releaseFiles.length} parte(s), incluido el WAV máster; reutilizo la subida`);
 }
 for (const file of new Set([tar, ...uploadFiles])) fs.rmSync(file, {force:true});
+}
 }
 
 // ── EL MISMO CHEQUEO DE ASSETS, PERO PARA RE-RENDER PARCIAL ───────────────────────────────────
@@ -561,6 +606,7 @@ if (process.env.FARM_SERIALIZE) { // opt-in: viejo modo serial (cuenta Free/20).
 }
 
 // 3) disparar el workflow
+const SUPA_ASSETS_PRE = process.env.FARM_ASSETS_SUPABASE === "1";
 // El aviso de "disparando" va DESPUÉS de los guards de abajo: anunciarlo y después negarse deja un
 // log que se contradice, y quien lo lea (agente o vos) se queda con la primera línea.
 // ENTRY=src/index_<slug>.tsx → cada video rendea con SU entry y no comparte Root.tsx con los otros agentes
@@ -576,7 +622,15 @@ const entry = process.env.ENTRY || "";
 {
   const relTag = `assets-${slug}`;
   let ok = false, motivo = "";
-  try {
+  if (SUPA_ASSETS_PRE) {
+    try {
+      const { supaCreds } = await import("./supa_creds.mjs");
+      const { U } = supaCreds();
+      const r = await fetch(`${U}/storage/v1/object/public/thumbnails/farm_assets/${slug}/manifest.txt`, { signal: AbortSignal.timeout(60_000) });
+      const txt = r.ok ? await r.text() : "";
+      if (/^tar /m.test(txt) && /^wav /m.test(txt)) ok = true; else motivo = `manifest de Supabase ausente o incompleto (HTTP ${r.status})`;
+    } catch (e) { motivo = `no pude leer el manifest de Supabase: ${e.message}`; }
+  } else try {
     const j = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
     const tarAssets = (j.assets || []).filter((a) => /\.tar(?:\.part\d+)?$/i.test(a.name));
     const tarBytes = tarAssets.reduce((sum, asset) => sum + Number(asset.size || 0), 0);
@@ -627,7 +681,9 @@ console.log(only ? `disparando render.yml (PARCIAL, chunks ${only}) ...` : "disp
 //    cosa que la regla dura del pipeline prohíbe. Por eso el default correcto es 1, no vacío.
 // 🔧 Si una corrida ya salió sin el flag: `node scripts/stitch_local.mjs <run_id> <total_frames>`
 //    baja los chunks (quedan como artifacts) y los concatena acá en segundos.
-const stitchRaw = process.env.STITCH_RAW === "0" ? "" : " -f stitch_raw=1";
+// STITCH_RAW=entrega → el runner hace el re-encode de ENTREGA (CFR, tv/bt709, GOP 2 s, audio = WAV máster) y
+// publica ESE mp4 (lo usan las sesiones en la nube, que no pueden subir releases).
+const stitchRaw = process.env.STITCH_RAW === "0" ? "" : process.env.STITCH_RAW === "entrega" ? " -f stitch_raw=entrega" : " -f stitch_raw=1";
 sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}${stitchRaw}`);
 if (stitchRaw) console.log("stitch_raw=1 → el runner publica el concat CRUDO (segundos, no ~65 min). El CFR/color/audio los pone el re-encode de entrega.");
 
