@@ -22,8 +22,7 @@ const N = [
 ];
 const CH = [[0, "The tin box"], [quick, "A quick word about the cookbook"], ...N.map(([p, n, name]) => [at(p), `#${n} ${name}`])];
 cursor = 0; CH.push([at("That's the whole box, friend"), "The whole box"]);
-const chapters = CH.sort((a, b) => a[0] - b[0]).map(([t, n]) => `${ts(t)} ${n}`).join("
-");
+const chapters = CH.sort((a, b) => a[0] - b[0]).map(([t, n]) => `${ts(t)} ${n}`).join("\n");
 const description = `📖 Ole's Logging Camp Cookbook — 50 old camp recipes with exact measures, the trick and the common mistakes on every page (five of the dishes in this video are written out in it): 👉 https://ole-camp-cookbook.vercel.app/?src=ole-olcabin
 
 Come sit down, friend. Here's the whole tin box, and the recipe for number one written out so you can keep it.
