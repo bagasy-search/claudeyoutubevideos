@@ -7,7 +7,7 @@ echo "=== setup Videos $(date -u +%FT%TZ) · pwd=$(pwd) · HOME=$HOME"
 
 # 1) herramientas del sistema
 (apt-get update -qq && apt-get install -y -qq ffmpeg jq gh >/dev/null) || sudo apt-get install -y -qq ffmpeg jq gh >/dev/null || true
-pip install -q modal openai requests yt-dlp 2>/dev/null || true
+pip install -q modal openai requests yt-dlp "rembg[cpu]" opencv-python-headless 2>/dev/null || true   # rembg: respaldos 2.5D/matte sin Modal (Modal no pasa el proxy)
 
 # 2) cerebro desde claude-brain → ~/.video2-secrets, ~/.claude/skills, ~/.claude/memoria
 # Acceso a claude-brain, en orden:
@@ -30,6 +30,8 @@ cp "$B/secretos/"* "$S/"
 cp "$S/modal.toml" ~/.modal.toml
 cp -r "$B/skills/." ~/.claude/skills/
 cp -r "$B/memory/." ~/.claude/memoria/
+# assets por canal que el repo público no lleva (voz ref, cara, sfx) → se vuelcan sobre el repo en bootstrap
+[ -d "$B/canales" ] && { rm -rf "$S/canales"; cp -r "$B/canales" "$S/canales"; }
 rm -rf "$B"
 
 # 3) script que prepara el REPO (se puede correr en cualquier momento, desde cualquier lado)
@@ -44,6 +46,8 @@ if [ -z "$R" ] || [ ! -f "$R/scripts/farm.mjs" ]; then
 fi
 [ -z "$R" ] && { echo "bootstrap: todavía no encuentro el repo (scripts/farm.mjs)"; exit 1; }
 cp "$S/video2.env" "$R/.env"; cp "$S/video2.env.local" "$R/.env.local"
+# paquetes de canal (claude-brain/canales/<canal>/...) replican las rutas del repo
+for C in "$S"/canales/*/; do [ -d "$C" ] && cp -r "$C." "$R/"; done
 P=~/.claude/projects/$(echo "$R" | sed 's/[^A-Za-z0-9]/-/g')/memory
 mkdir -p "$P" && cp -r ~/.claude/memoria/. "$P/"
 [ -d "$R/node_modules" ] || (cd "$R" && (npm ci --no-audit --no-fund || npm install --no-audit --no-fund) && npx remotion browser ensure >/dev/null 2>&1)
@@ -55,6 +59,12 @@ chmod +x "$S/bootstrap_repo.sh"
 grep -q 'video2-secrets' ~/.bashrc 2>/dev/null || cat >> ~/.bashrc <<'RC'
 # video2-secrets
 set -a; . ~/.video2-secrets/video2.env 2>/dev/null; . ~/.video2-secrets/video2.env.local 2>/dev/null; set +a
+RC
+
+# 4a) la fábrica sin disco D: (paths.mjs / 80_render / agnes_pool leen estas variables)
+grep -q FACTORY_WORK ~/.bashrc || cat >> ~/.bashrc <<'RC'
+export FACTORY_WORK=$HOME/fwork FACTORY_FINALS=$HOME/finals FACTORY_TAR_DIR=$HOME/tar/ AGNES_POOL_DIR=$HOME/agnes_pool
+mkdir -p $HOME/fwork $HOME/finals $HOME/tar $HOME/agnes_pool
 RC
 
 # 4b) Remotion en la nube: Chrome headless_shell de Playwright + CAs del proxy en el NSS de Chrome
