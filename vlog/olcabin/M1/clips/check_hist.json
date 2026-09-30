@@ -22,22 +22,22 @@
  },
  "m2": {
   "m2.mp4": {
-   "win": 6.64,
+   "win": 9.2,
    "labios": {
-    "corr": 0.429,
-    "lag": 1.03,
-    "c0": 0.415,
-    "ok": false
+    "corr": 0.998,
+    "lag": 0,
+    "c0": 0.998,
+    "ok": true
    },
-   "score": 65,
-   "verd": "⛔ REGENERAR",
-   "line": "dice: \"One of them has been through a bath of lye. So what I can rue isn't an exact...\" · de más: so what rue isn t an exact · falta: and number is bread ruin in exactly way · cara ✓ (0.95) · luz ⛔ oscura · Similar clothing/appearance but lower confidence in exact identity match · labios ⛔ corr 0.429 lag 1.03s",
-   "swin": 6.64,
+   "score": 0,
+   "verd": "ok",
+   "line": "dice: \"and hardly anybody makes them now. One of them has been through a bath of lye. And number one is a bread I can ruin in exactly one way.\" · cara ✓ (0.95) · luz ⛔ oscura · Interior cabin scene with fire; not daylight · labios ✓ corr 0.998 lag 0s",
+   "swin": 9.2,
    "salto": {
-    "t": 5.27,
-    "peak": 5.8,
-    "base": 2.6,
-    "ratio": 2.2
+    "t": 7,
+    "peak": 4.6,
+    "base": 1.9,
+    "ratio": 2.4
    }
   }
  },
@@ -59,6 +59,69 @@
     "peak": 3.2,
     "base": 1.6,
     "ratio": 2.1
+   }
+  }
+ },
+ "m4": {
+  "m4.mp4": {
+   "win": 10.48,
+   "labios": {
+    "corr": 0.997,
+    "lag": 0,
+    "c0": 0.997,
+    "ok": true
+   },
+   "score": 51,
+   "verd": "⛔ REGENERAR",
+   "line": "dice: \"coffee. Yes, an egg in the coffee. The Scandinavians who settled Minnesota and the Dakotas mixed a raw egg into the grounds with a splash of water.\" · 1 palabra(s) de más (¿repitió?) · cara ✓ (0.99) · luz ⛔ oscura · Indoor log cabin, darker lighting. · labios ✓ corr 0.997 lag 0s",
+   "swin": 10.48,
+   "salto": {
+    "t": 8.8,
+    "peak": 3,
+    "base": 0.8,
+    "ratio": 3.9
+   }
+  }
+ },
+ "m5": {
+  "m5.mp4": {
+   "win": 9.1,
+   "labios": {
+    "corr": 0.901,
+    "lag": 0,
+    "c0": 0.901,
+    "ok": true
+   },
+   "score": 52,
+   "verd": "⛔ REGENERAR",
+   "line": "dice: \"then a half cup of cold water, and every ground sinks to the bottom like a stone. The egg grabs this and hauls it down with the grounds.\" · de más: this · falta: bitterness · cara ✓ (0.98) · luz ⛔ oscura · dim interior lighting · labios ✓ corr 0.901 lag 0s",
+   "swin": 9.1,
+   "salto": {
+    "t": 2.17,
+    "peak": 1.7,
+    "base": 1.1,
+    "ratio": 1.6
+   }
+  }
+ },
+ "m6": {
+  "m6.mp4": {
+   "win": 6.94,
+   "labios": {
+    "corr": 0.997,
+    "lag": 0,
+    "c0": 0.997,
+    "ok": true
+   },
+   "score": 50,
+   "verd": "⛔ REGENERAR",
+   "line": "dice: \"It was church basement coffee, smooth as a creek stone, and you never taste the egg, not one bit.\" · cara ✓ (0.95) · luz ⛔ oscura · Indoor lighting · labios ✓ corr 0.997 lag 0s",
+   "swin": 6.94,
+   "salto": {
+    "t": 6,
+    "peak": 2.3,
+    "base": 1.4,
+    "ratio": 1.6
    }
   }
  }
