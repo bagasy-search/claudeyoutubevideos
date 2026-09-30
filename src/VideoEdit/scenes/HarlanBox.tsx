@@ -678,24 +678,25 @@ export const BoxReceipt: React.FC<{ durationInFrames: number; lines: ({ label: s
   const D = Math.max(90, durationInFrames);
   const op = fadeIO(f, D);
   const L = (lines || []).slice(0, 13).map((x) => ({ l: (x as { label?: string }).label ?? txt(x), a: num((x as { amount?: number }).amount, 0) }));
-  const rowH = 52, hdr = 170, H = hdr + L.length * rowH + 190;
+  const slotY = 900;
+  // el ticket entero tiene que entrar en el cuadro: con 11+ renglones se achica el renglón (medido hl12cheap: la cabecera quedaba cortada arriba)
+  const rowH = Math.min(52, Math.floor((slotY - 60 - 170 - 190) / Math.max(1, L.length))), hdr = 170, H = hdr + L.length * rowH + 190;
   const per = Math.max(2, Math.min(9, (D * 0.62 - 10) / Math.max(1, L.length)));
   const shown = Math.min(L.length, Math.floor(Math.max(0, f - 10) / per));
   const fed = Math.min(H, hdr + shown * rowH + (shown >= L.length ? 190 : 0));
   const total = L.slice(0, shown).reduce((s, x) => s + x.a, 0);
-  const slotY = 900;
   return (
     <AbsoluteFill style={{ opacity: op }}>
       <Fondo src={image} dark={0.76} seed={17} warm />
       {/* ticket: crece hacia arriba desde la ranura */}
       <div style={{ position: "absolute", left: 960 - 290, top: slotY - fed, width: 580, height: fed, overflow: "hidden", filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.6))" }}>
-        <div style={{ position: "absolute", left: 0, bottom: 0, width: 580, height: H, background: "linear-gradient(90deg, #eeeae0, #fbfaf6 20%, #fbfaf6 80%, #e6e1d6)", padding: "30px 40px", boxSizing: "border-box", fontFamily: MONO, color: "#222",
+        <div style={{ position: "absolute", left: 0, top: 0, width: 580, height: H, background: "linear-gradient(90deg, #eeeae0, #fbfaf6 20%, #fbfaf6 80%, #e6e1d6)", padding: "30px 40px", boxSizing: "border-box", fontFamily: MONO, color: "#222",
           WebkitMaskImage: "linear-gradient(180deg, transparent 0, #000 14px)" }}>
           <div style={{ textAlign: "center", fontSize: 44 }}>{title}</div>
           <div style={{ textAlign: "center", fontSize: 26, color: "#666", marginBottom: 20 }}>MANSFIELD, OH · CASH</div>
           <div style={{ borderTop: "3px dashed #999", marginBottom: 12 }} />
           {L.map((x, i) => (
-            <div key={i} style={{ display: "flex", fontSize: 32, height: rowH, alignItems: "center", opacity: i < shown ? 1 : 0 }}>
+            <div key={i} style={{ display: "flex", fontSize: Math.min(32, rowH * 0.62), height: rowH, alignItems: "center", opacity: i < shown ? 1 : 0 }}>
               <span style={{ whiteSpace: "nowrap", overflow: "hidden" }}>{x.l.toUpperCase()}</span>
               <span style={{ flex: 1, borderBottom: "3px dotted #bbb", margin: "0 10px", transform: "translateY(8px)" }} />
               <span>{`$${money(x.a)}`}</span>
@@ -711,7 +712,7 @@ export const BoxReceipt: React.FC<{ durationInFrames: number; lines: ({ label: s
         <div style={{ position: "absolute", right: 40, top: 70, width: 22, height: 22, borderRadius: 11, background: shown < L.length ? C.green : "#2a4", boxShadow: shown < L.length && f % 8 < 4 ? `0 0 16px ${C.green}` : "none" }} />
       </div>
       {footer ? (
-        <div style={{ position: "absolute", left: 1320, top: 360, width: 520, fontFamily: HAND, fontSize: 72, color: C.glow, transform: "rotate(-5deg)", opacity: interpolate(f, [D * 0.72, D * 0.82], [0, 1], CL) }}>
+        <div style={{ position: "absolute", left: 1320, top: 360, width: 520, fontFamily: HAND, fontSize: 72, color: C.glow, transform: "rotate(-5deg)", opacity: interpolate(f, [D * 0.6, D * 0.7], [0, 1], CL) }}>
           {footer}
           <svg width="520" height="60"><path d="M10 40 Q260 5 510 38" stroke={C.glow} strokeWidth="5" fill="none" /></svg>
         </div>
