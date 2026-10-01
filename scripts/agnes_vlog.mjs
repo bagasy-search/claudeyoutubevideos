@@ -95,7 +95,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
 const mime = f => f.endsWith(".png") ? "image/png" : /\.(mp3)$/.test(f) ? "audio/mpeg" : /\.wav$/.test(f) ? "audio/wav" : "image/jpeg";
 const uri = f => `data:${mime(f)};base64,` + fs.readFileSync(f).toString("base64");
-const refPathOf = (P, n) => n === "k0" ? P.k0_from : /^K\d+$/.test(n) ? dirsOf(P).ANC + n + ".png" : (P.extra || {})[n] || n;
+const isAnc = (P, n) => /^K\d+$/.test(n) || (P.anchors || []).some(a => a.id === n);   // cualquier id de ancla del plan (D1a, V2b, K3s…)
+const refPathOf = (P, n) => n === "k0" ? P.k0_from : isAnc(P, n) ? dirsOf(P).ANC + n + ".png" : (P.extra || {})[n] || n;
 const refPath = n => refPathOf(P, n);
 const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a]);
 const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());

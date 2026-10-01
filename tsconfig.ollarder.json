@@ -1,0 +1,1 @@
+{ "extends": "./tsconfig.json", "compilerOptions": { "noUnusedLocals": false, "noUnusedParameters": false }, "include": [], "files": ["src/index_ollarder.tsx", "src/ollarder/three-shim.d.ts"], "exclude": [] }
