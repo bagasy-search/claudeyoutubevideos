@@ -21,7 +21,7 @@ export const LorTwoHourClock: React.FC<{ title?: string; hours?: number; hotNote
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, rgba(246,238,220,0.96) 0%, rgba(246,238,220,0.86) 70%, rgba(246,238,220,0.6) 100%)" }} />
       {title ? <div style={{ position: "absolute", top: 62, left: 0, right: 0, textAlign: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 90, color: LOR.ink, opacity: inn }}>{title}</div> : null}
       <svg viewBox="-960 -540 1920 1080" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
-        <g transform="translate(-420 50)" opacity={inn}>
+        <g transform="translate(-470 50)" opacity={inn}>
           <circle r="330" fill="#FFFDF7" stroke={LOR.ink} strokeWidth="14" />
           {Array.from({ length: 12 }, (_, i) => { const a = (i / 12) * Math.PI * 2; const [x0, y0] = pt(290, a), [x1, y1] = pt(318, a); const [tx, ty] = pt(250, a); return <g key={i}><line x1={x0} y1={y0} x2={x1} y2={y1} stroke={LOR.ink} strokeWidth="8" strokeLinecap="round" /><text x={tx} y={ty + 18} textAnchor="middle" fontFamily={SERIF} fontWeight={800} fontSize="52" fill={LOR.ink}>{i === 0 ? 12 : i}</text></g>; })}
           <path d={wedge(300, 0, sweep)} fill={col} opacity="0.55" />
@@ -29,7 +29,7 @@ export const LorTwoHourClock: React.FC<{ title?: string; hours?: number; hotNote
           <circle r="18" fill={LOR.ink} />
           <text y="420" textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize="120" fill={col === LOR.butter ? LOR.crustDark : col}>{hours} hours</text>
         </g>
-        <g transform="translate(120 20)" opacity={inn}>
+        <g transform="translate(200 20)" opacity={inn}>
           <rect x="-40" y="-330" width="80" height="560" rx="40" fill="#FFFDF7" stroke={LOR.ink} strokeWidth="10" />
           <circle cx="0" cy="250" r="78" fill="#FFFDF7" stroke={LOR.ink} strokeWidth="10" />
           <rect x="-24" y={-310 + (1 - therm) * 380} width="48" height={380 * therm + 180} rx="24" fill="#3E8FB0" />

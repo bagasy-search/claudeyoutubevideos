@@ -18,7 +18,7 @@ export function dots(c: CanvasRenderingContext2D, S: number, seed: number, n: nu
   c.globalAlpha = 1;
 }
 // perfil de un huevo (radio en función de la altura normalizada t∈[0,1], 0 = punta fina, 1 = base ancha)
-export const eggR = (t: number, a = 0.62) => a * Math.pow(Math.sin(Math.PI * t), 0.62) * (0.8 + 0.3 * t);
+export const eggR = (t: number, a = 0.62) => a * Math.pow(Math.sin(Math.PI * t), 0.52) * (0.82 + 0.26 * t);
 // puntos del contorno de la mitad derecha del huevo (para LatheGeometry y ShapeGeometry)
 export function eggProfile(n = 40, a = 0.62, h = 1.6): any[] {
   const pts: any[] = [];

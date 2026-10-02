@@ -81,8 +81,8 @@ export const LorEgg3D: React.FC<{ mode?: "halve" | "compare"; ring?: boolean; sh
     return new THREE.ShapeGeometry(sh);
   }, []);
 
-  const dist = interpolate(frame, [0, durationInFrames], [5.4, 4.3], { extrapolateRight: "clamp" });
-  const camPos: [number, number, number] = [0.5, 2.0, dist];
+  const dist = interpolate(frame, [0, durationInFrames], [6.8, 5.8], { extrapolateRight: "clamp" });
+  const camPos: [number, number, number] = [0.3, 1.9, dist];
   const titleIn = interpolate(frame, [10, 28], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.16, 1, 0.3, 1) });
   const labIn = interpolate(frame, [cutAt + 30, cutAt + 52], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const eggs = mode === "compare"

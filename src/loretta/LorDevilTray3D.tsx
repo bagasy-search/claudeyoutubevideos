@@ -9,15 +9,15 @@ import * as THREE from "three";
 import { LOR, SERIF, HAND } from "./LorTheme";
 import { canvasTex, dots } from "./lor3dutil";
 
-const PX = 0.56, PZ = 0.8; // paso entre mitades
+const PX = 0.78, PZ = 1.05; // paso entre mitades
 
 const Half: React.FC<{ x: number; z: number; p: number; pap: number; mats: any; geos: any; rot: number }> = ({ x, z, p, pap, mats, geos, rot }) => {
   const drop = (1 - p);
   return (
     <group position={[x, 0.3 + drop * 1.6, z]} rotation={[0, rot, 0]} scale={Math.max(0.001, p)}>
-      <mesh geometry={geos.bowl} material={mats.white} scale={[0.44, 0.3, 0.68]} position={[0, 0.04, 0]} />
-      <mesh geometry={geos.dome} material={mats.filling} scale={[0.27, 0.24 * (0.4 + 0.6 * Math.min(1, p * 1.4)), 0.46]} position={[0, 0.07, 0]} />
-      {pap > 0.01 ? <mesh geometry={geos.disc} material={mats.pap} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.07 + 0.24 * 0.6, 0]} scale={[0.22, 0.38, 1]} /> : null}
+      <mesh geometry={geos.bowl} material={mats.white} scale={[0.36, 0.26, 0.56]} position={[0, 0.04, 0]} />
+      <mesh geometry={geos.dome} material={mats.filling} scale={[0.22, 0.2 * (0.4 + 0.6 * Math.min(1, p * 1.4)), 0.4]} position={[0, 0.07, 0]} />
+      {pap > 0.01 ? <mesh geometry={geos.disc} material={mats.pap} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.07 + 0.2 * 0.6, 0]} scale={[0.18, 0.32, 1]} /> : null}
     </group>
   );
 };
@@ -50,7 +50,7 @@ export const LorDevilTray3D: React.FC<{ count?: number; cols?: number; startAt?:
   const W = cols * PX + 0.5, D = rows * PZ + 0.5;
   const t = frame / 30;
   const ang = 0.35 + t * 0.22;
-  const dist = interpolate(frame, [0, durationInFrames], [6.2, 5.0], { extrapolateRight: "clamp" });
+  const dist = interpolate(frame, [0, durationInFrames], [8.4, 6.8], { extrapolateRight: "clamp" });
   const elev = interpolate(frame, [0, durationInFrames], [0.95, 0.8], { extrapolateRight: "clamp" });
   const camPos: [number, number, number] = [Math.sin(ang) * dist * Math.cos(elev), dist * Math.sin(elev), Math.cos(ang) * dist * Math.cos(elev)];
   const done = Math.min(count, Math.max(0, Math.floor((frame - startAt) / every) + 1));
