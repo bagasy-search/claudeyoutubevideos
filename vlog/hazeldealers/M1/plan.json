@@ -1,6 +1,6 @@
 {
  "dir": "D:/Proyectos/video2-wt/hazeldealers/vlog/hazeldealers/M1",
- "face": "D:/Proyectos/video2-wt/hazeldealers/public/ref_hazeldealers_face.png",
+ "face": "D:/Proyectos/video2-wt/hazeldealers/public/ref_hazeldealers_facebig.png",
  "k0_from": "D:/Proyectos/video2-wt/hazeldealers/public/ref_hazeldealers.png",
  "pronoun": "she",
  "lang": "en",
@@ -128,28 +128,6 @@
    "audio": "D:/Proyectos/video2-wt/hazeldealers/vlog/hazeldealers/tramos/m3.wav",
    "text": "And that little pitcher? I'll tell you exactly what it sells for.",
    "action": "She sets the pitcher down on the table in front of the camera and leans in over it with a knowing half-smile, talking to the camera as if sharing a secret. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
-  },
-  {
-   "id": "d_rush",
-   "prompt": "the two men in work vests hurry in through the front door and stride straight across the living room to the china cabinet, the first one pulling its glass door open. Nobody speaks.",
-   "a": "D1a",
-   "b": "D1b",
-   "detail": true,
-   "secs": 4,
-   "d1": "two dealers hurry in through the open front door",
-   "d2": "the first one pulls open the glass door of the china cabinet",
-   "sound": "quick footsteps on a wooden floor and the creak of a cabinet door"
-  },
-  {
-   "id": "d_stamp",
-   "prompt": "her hands slowly tilt the upside-down silver cream pitcher under the magnifier lens until the stamped hallmark on its bottom fills the lens. She stays silent, focused on her hands.",
-   "a": "D3a",
-   "b": "D3b",
-   "detail": true,
-   "secs": 4,
-   "d1": "the pitcher upside down under the magnifier",
-   "d2": "the stamped hallmark fills the lens",
-   "sound": "a quiet metallic clink on the wooden table"
   }
  ],
  "out": "D:/Proyectos/video2-wt/hazeldealers/vlog/hazeldealers/M1/out.mp4"

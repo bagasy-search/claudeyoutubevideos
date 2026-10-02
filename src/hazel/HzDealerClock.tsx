@@ -8,7 +8,7 @@ import { HzBed, ease, useIn } from "./HzParts";
 
 const mins = (s: string) => { const [h, m] = s.split(":").map(Number); return h * 60 + m; };
 
-export const HzDealerClock: React.FC<{ bed?: string; from?: string; to?: string; label?: string; people?: number; caption?: string; seed?: number }> = ({ bed, from = "6:52", to = "7:00", label = "Saturday", people = 9, caption = "doors open at", seed = 31 }) => {
+export const HzDealerClock: React.FC<{ bed?: string; from?: string; to?: string; label?: string; people?: number; caption?: string; seed?: number }> = ({ bed, from = "6:52", to = "7:00", label = "Saturday", people = 0, caption = "doors open at", seed = 31 }) => {
   const f = useCurrentFrame(); const { durationInFrames } = useVideoConfig();
   const inn = useIn(0, 14, 120);
   const t = interpolate(f, [8, Math.max(20, durationInFrames - 20)], [mins(from), mins(to)], ease);

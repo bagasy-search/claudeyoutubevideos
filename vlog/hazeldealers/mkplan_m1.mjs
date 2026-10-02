@@ -1,5 +1,5 @@
-// Plan agnes-video-2.5-flash del MINUTO 1: 3 clips de Hazel hablando (ancla→ancla) + 4 detalles keyframe con foley.
-// node vlog/hazeldealers/mkplan_m1.mjs → vlog/hazeldealers/M1/plan.json
+﻿// Plan agnes-video-2.5-flash del MINUTO 1: 3 clips de Hazel hablando (anclaâ†’ancla) + 4 detalles keyframe con foley.
+// node vlog/hazeldealers/mkplan_m1.mjs â†’ vlog/hazeldealers/M1/plan.json
 import fs from "node:fs";
 import { WHO, SHOP } from "./dir_lib.mjs";
 const R = "D:/Proyectos/video2-wt/hazeldealers/";
@@ -31,9 +31,10 @@ const clips = [
   { id: "d_stamp", prompt: "her hands slowly tilt the upside-down silver cream pitcher under the magnifier lens until the stamped hallmark on its bottom fills the lens. She stays silent, focused on her hands.", a: "D3a", b: "D3b", detail: true, secs: 4, d1: "the pitcher upside down under the magnifier", d2: "the stamped hallmark fills the lens", sound: "a quiet metallic clink on the wooden table" },
   { id: "d_magnet", prompt: "the hand lowers the small red horseshoe magnet slowly toward the thin gold chain on the white cloth, and the chain stays perfectly still, not attracted at all. She stays silent, focused on her hand.", a: "D4a", b: "D4b", detail: true, secs: 4, d1: "a magnet above a gold chain", d2: "the magnet almost touches the chain, which does not move", sound: "a soft rustle of cloth" },
 ];
-const DROP = new Set(["d_sticker", "d_magnet", "d_rush", "d_stamp"]); // d_rush/d_stamp van por agnes_keyframe_trans (clips no genera `detail`) // con la ref de cara las anclas metían a Hazel: van por v2.0 sobre la foto base
-const plan = { dir: R + "vlog/hazeldealers/M1", face: R + "public/ref_hazeldealers_face.png", k0_from: R + "public/ref_hazeldealers.png", pronoun: "she", lang: "en", light: LIGHT, look: LOOK,
+const DROP = new Set(["d_sticker", "d_magnet", "d_rush", "d_stamp"]); // d_rush/d_stamp van por agnes_keyframe_trans (clips no genera `detail`) // con la ref de cara las anclas metÃ­an a Hazel: van por v2.0 sobre la foto base
+const plan = { dir: R + "vlog/hazeldealers/M1", face: R + "public/ref_hazeldealers_facebig.png", k0_from: R + "public/ref_hazeldealers.png", pronoun: "she", lang: "en", light: LIGHT, look: LOOK,
   extra: { XR: "D:/rtmp/hz_kfbase/kf_rush.png", XS: "D:/rtmp/hz_kfbase/kf_sticker.png", XT: "D:/rtmp/hz_kfbase/kf_stamp.png", XM: "D:/rtmp/hz_kfbase/kf_magnet.png", D1a: R + "vlog/hazeldealers/M1/anc/D1a.png", D2a: R + "vlog/hazeldealers/M1/anc/D2a.png", D3a: R + "vlog/hazeldealers/M1/anc/D3a.png", D4a: R + "vlog/hazeldealers/M1/anc/D4a.png", D1b: R + "vlog/hazeldealers/M1/anc/D1b.png", D3b: R + "vlog/hazeldealers/M1/anc/D3b.png" },
   anchors, clips: clips.filter((c) => !DROP.has(c.id)), out: R + "vlog/hazeldealers/M1/out.mp4" };
 fs.writeFileSync(R + "vlog/hazeldealers/M1/plan.json", JSON.stringify(plan, null, 1));
-console.log("anclas", anchors.length, "· clips", clips.length);
+console.log("anclas", anchors.length, "Â· clips", clips.length);
+
