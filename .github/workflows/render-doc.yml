@@ -5,24 +5,37 @@
 #   gh workflow run render-doc.yml -f plan='[{"s":"A7","i":0,"a":0,"b":10}]' -f sets='["A7"]'
 name: render-doc
 on:
-  workflow_dispatch:
-    inputs:
-      base:    { description: "URL pública base con <S>.html, render.cjs y mix_<S>.wav", required: true }
-      tag_out: { description: "release donde se publica <S>.mp4", required: false, default: "carruaje-out" }
-      plan:    { description: 'JSON [{"s":"A0","i":0,"a":0,"b":10},...] (a/b en segundos)', required: true }
-      sets:    { description: 'JSON ["A0","A1",...] conjuntos a unir', required: true }
-      final:   { description: 'orden JSON de los conjuntos a concatenar en <slug>.mp4 (vacío = no armar el final; todos deben estar en tag_out)', required: false, default: "" }
-      slug:    { description: "tag/nombre del video final", required: false, default: "carruaje" }
+  push:
+    branches: [ccr-ee37ab1c-ix86zj]
+    paths: ['render-doc/job.json']
+  workflow_dispatch: {}
 permissions:
   contents: write
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      plan: ${{ steps.j.outputs.plan }}
+      sets: ${{ steps.j.outputs.sets }}
+      final: ${{ steps.j.outputs.final }}
+      base: ${{ steps.j.outputs.base }}
+      slug: ${{ steps.j.outputs.slug }}
+      tag_out: ${{ steps.j.outputs.tag_out }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: j
+        run: |
+          for k in plan sets final base slug tag_out; do
+            echo "$k=$(node -e "const j=require('./render-doc/job.json');const v=j['$k'];console.log(typeof v==='string'?v:JSON.stringify(v??''))")" >> "$GITHUB_OUTPUT"
+          done
   render:
+    needs: prepare
     runs-on: ubuntu-latest
     timeout-minutes: 30
     strategy:
       fail-fast: false
       matrix:
-        job: ${{ fromJSON(github.event.inputs.plan) }}
+        job: ${{ fromJSON(needs.prepare.outputs.plan) }}
     steps:
       - uses: actions/setup-node@v4
         with: { node-version: "20" }
@@ -39,8 +52,8 @@ jobs:
           npx playwright install --with-deps chromium
       - name: bajar html + render.cjs
         run: |
-          curl -fsSL --retry 4 -o "${{ matrix.job.s }}.html" "${{ github.event.inputs.base }}/${{ matrix.job.s }}.html"
-          curl -fsSL --retry 4 -o render.cjs "${{ github.event.inputs.base }}/render.cjs"
+          curl -fsSL --retry 4 -o "${{ matrix.job.s }}.html" "${{ needs.prepare.outputs.base }}/${{ matrix.job.s }}.html"
+          curl -fsSL --retry 4 -o render.cjs "${{ needs.prepare.outputs.base }}/render.cjs"
           ls -la
       - name: render ${{ matrix.job.s }} ${{ matrix.job.a }}-${{ matrix.job.b }} s
         run: |
@@ -60,14 +73,14 @@ jobs:
           path: seg.mp4
           retention-days: 2
   stitch:
-    needs: render
+    needs: [prepare, render]
     if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     strategy:
       fail-fast: false
       matrix:
-        s: ${{ fromJSON(github.event.inputs.sets) }}
+        s: ${{ fromJSON(needs.prepare.outputs.sets) }}
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -76,16 +89,16 @@ jobs:
       - name: unir + audio
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          curl -fsSL --retry 4 -o "mix_${{ matrix.s }}.wav" "${{ github.event.inputs.base }}/mix_${{ matrix.s }}.wav"
+          curl -fsSL --retry 4 -o "mix_${{ matrix.s }}.wav" "${{ needs.prepare.outputs.base }}/mix_${{ matrix.s }}.wav"
           ls segs | sort -t- -k3 -n | while read d; do echo "file 'segs/$d/seg.mp4'"; done > lista.txt
           head -3 lista.txt
           ffmpeg -v error -y -f concat -safe 0 -i lista.txt -i "mix_${{ matrix.s }}.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -ar 48000 -af alimiter=limit=0.89 -shortest -movflags +faststart "${{ matrix.s }}.mp4"
           ls -la "${{ matrix.s }}.mp4"
-          gh release view "${{ github.event.inputs.tag_out }}" -R "${{ github.repository }}" >/dev/null 2>&1 || gh release create "${{ github.event.inputs.tag_out }}" -R "${{ github.repository }}" -t "${{ github.event.inputs.tag_out }}" -n "salidas del render-doc"
-          gh release upload "${{ github.event.inputs.tag_out }}" "${{ matrix.s }}.mp4" -R "${{ github.repository }}" --clobber
+          gh release view "${{ needs.prepare.outputs.tag_out }}" -R "${{ github.repository }}" >/dev/null 2>&1 || gh release create "${{ needs.prepare.outputs.tag_out }}" -R "${{ github.repository }}" -t "${{ needs.prepare.outputs.tag_out }}" -n "salidas del render-doc"
+          gh release upload "${{ needs.prepare.outputs.tag_out }}" "${{ matrix.s }}.mp4" -R "${{ github.repository }}" --clobber
   final:
-    needs: stitch
-    if: ${{ github.event.inputs.final != '' && !cancelled() }}
+    needs: [prepare, stitch]
+    if: ${{ needs.prepare.outputs.final != '' && !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -93,12 +106,12 @@ jobs:
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           : > lista.txt
-          for s in $(echo '${{ github.event.inputs.final }}' | tr -d '[]" ' | tr ',' ' '); do
-            gh release download "${{ github.event.inputs.tag_out }}" -R "${{ github.repository }}" -p "$s.mp4" -D sets
+          for s in $(echo '${{ needs.prepare.outputs.final }}' | tr -d '[]" ' | tr ',' ' '); do
+            gh release download "${{ needs.prepare.outputs.tag_out }}" -R "${{ github.repository }}" -p "$s.mp4" -D sets
             echo "file 'sets/$s.mp4'" >> lista.txt
           done
           cat lista.txt
-          ffmpeg -v error -y -f concat -safe 0 -i lista.txt -c copy -movflags +faststart "${{ github.event.inputs.slug }}.mp4"
-          ls -la "${{ github.event.inputs.slug }}.mp4"
-          gh release view "${{ github.event.inputs.slug }}" -R "${{ github.repository }}" >/dev/null 2>&1 || gh release create "${{ github.event.inputs.slug }}" -R "${{ github.repository }}" -t "${{ github.event.inputs.slug }}" -n "El carruaje sin caballos — documental animado"
-          gh release upload "${{ github.event.inputs.slug }}" "${{ github.event.inputs.slug }}.mp4" -R "${{ github.repository }}" --clobber
+          ffmpeg -v error -y -f concat -safe 0 -i lista.txt -c copy -movflags +faststart "${{ needs.prepare.outputs.slug }}.mp4"
+          ls -la "${{ needs.prepare.outputs.slug }}.mp4"
+          gh release view "${{ needs.prepare.outputs.slug }}" -R "${{ github.repository }}" >/dev/null 2>&1 || gh release create "${{ needs.prepare.outputs.slug }}" -R "${{ github.repository }}" -t "${{ needs.prepare.outputs.slug }}" -n "El carruaje sin caballos — documental animado"
+          gh release upload "${{ needs.prepare.outputs.slug }}" "${{ needs.prepare.outputs.slug }}.mp4" -R "${{ github.repository }}" --clobber
