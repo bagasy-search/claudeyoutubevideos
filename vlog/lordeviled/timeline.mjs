@@ -1,6 +1,7 @@
 // Arma la línea de tiempo desde el DIRECTOR (dir_a/b/c) anclada al ms real (difflib global) → _v3/lordeviled_shots.json
 // + reportes: tomas por tipo, % avatar, ventanas de los clips agnes (4-12 s), imágenes a generar, planos largos.
 import fs from "node:fs";
+import { execFileSync } from "node:child_process";
 import { SHOTS as A } from "./dir_a.mjs";
 import { SHOTS as B } from "./dir_b.mjs";
 import { SHOTS as C } from "./dir_c.mjs";
@@ -28,11 +29,14 @@ for (const s of shots) {
 const FZF = R + "_v3/lordeviled_av_frozen.json", WO = R + "_v3/lordeviled_wordms_old.json";
 let DELTA = 0, FROZEN = false;
 if (fs.existsSync(FZF) && fs.existsSync(WO) && !process.env.NOFREEZE) {
-  const Wo = JSON.parse(fs.readFileSync(WO, "utf8")), d = [];
-  for (let i = 600; i < W.length; i += 7) d.push(Wo[i].s - W[i].s);
-  d.sort((a, b) => a - b); DELTA = d[d.length >> 1]; FROZEN = true;
+  const dd = (f) => +execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], { encoding: "utf8", windowsHide: true }).trim();
+  DELTA = dd(R + "out/lordeviled_master_old.wav") - dd(R + "public/lordeviled.wav"); FROZEN = true; // Δ EXACTO por duración (todo lo comprimido está antes del seg 64)
   for (let i = shots.length - 1; i >= 0; i--) if (shots[i].kind === "av") shots.splice(i, 1);
-  for (const a of JSON.parse(fs.readFileSync(FZF, "utf8")).av) shots.push({ kind: "av", name: "", p: -1, at: "", start: +(a.s - DELTA).toFixed(3), frozen: 1 });
+  const fz = JSON.parse(fs.readFileSync(FZF, "utf8")).av.map((a) => ({ s: +(a.s - DELTA).toFixed(3), e: +(a.e - DELTA).toFixed(3) }));
+  for (const a of fz) shots.push({ kind: "av", name: "", p: -1, at: "", start: a.s, frozen: 1 });
+  // las tomas no-av que caen a ±0,45 s de una frontera del avatar (jitter del ASR entre corridas) se pegan a la frontera EXACTA del avatar congelado
+  for (const s of shots) { if (s.kind === "av") continue;
+    for (const a of fz) { if (Math.abs(s.start - a.e) < 0.8) { s.start = a.e; break; } if (s.start > a.s && s.start < a.e) { s.start = a.e; break; } } }
   console.log("avatar congelado: Δ", DELTA.toFixed(3), "s ·", shots.filter((s) => s.frozen).length, "tomas av");
 }
 shots.sort((a, b) => a.start - b.start);

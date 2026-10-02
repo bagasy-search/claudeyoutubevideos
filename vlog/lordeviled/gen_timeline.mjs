@@ -21,14 +21,15 @@ const KF_FALL = { d_fill: "b_perfect", d_mayo: "b_mayojar", d_gray: "b_grayring2
 const TOTAL = F(END + 0.4);
 const cues = [], ovs = [], sfx = [], foley = [], warn = [], fallback = [];
 let lastImg = null;
+const toOld = (t) => t + DELTA; // Δ exacto (duración del máster viejo − nuevo): todo lo comprimido está antes del seg 64
 const avFor = (s0, s1) => { // ventana del reel que contiene [s0,s1] (en tiempo del máster viejo)
-  const o0 = s0 + DELTA, o1 = s1 + DELTA;
-  return avwin.find((w) => o0 >= w.s - 0.06 && o1 <= w.e + 0.06);
+  const o0 = toOld(s0), o1 = toOld(s1);
+  return avwin.find((w) => o0 >= w.s - 0.15 && o1 <= w.e + 0.2);
 };
 const avCue = (c, s) => {
   const w = avFor(s.start, s.end);
   if (!w) warn.push(`av sin ventana @${s.start.toFixed(1)}`);
-  c.k = "av"; c.src = AV_READY ? AVSRC : null; c.sf = w ? F(s.start + DELTA - w.ms + w.off + (w.lag || 0)) : 0;
+  c.k = "av"; c.src = AV_READY ? AVSRC : null; c.sf = w ? F(toOld(s.start) - w.ms + w.off + (w.lag || 0)) : 0;
 };
 const imgOf = (name) => (ex(`img/lordeviled/${name}.jpg`) ? `img/lordeviled/${name}.jpg` : null);
 shots.forEach((s, i) => {
@@ -38,7 +39,7 @@ shots.forEach((s, i) => {
   else if (s.kind === "vl") {
     const p = `vid/lordeviled/${s.name}.mp4`;
     if (ex(p)) { c.src = p; c.sf = Math.max(0, F(s.start - CLIP0[s.name])); }
-    else if (s.start + DELTA > 62 && avFor(s.start, s.end)) { avCue(c, s); c.fallback = s.name; fallback.push(s.name); } // repuesto: el reel incluye las ventanas de los clips hablados
+    else if (toOld(s.start) > 62 && avFor(s.start, s.end)) { avCue(c, s); c.fallback = s.name; fallback.push(s.name); } // repuesto: el reel incluye las ventanas de los clips hablados
     else { c.k = "img"; c.img = null; c.fallback = s.name; fallback.push(s.name); }
   } else if (s.kind === "kf") {
     const p = `vid/lordeviled/${s.name}.mp4`;
