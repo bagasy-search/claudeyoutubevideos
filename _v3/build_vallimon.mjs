@@ -1,17 +1,17 @@
-// build_valavena.mjs — Doctora Valeria Alcázar · crema de avena de noche (valavena) · montaje kit Federer (FedKit)
-// Plan (§0 DIRECTOR) en _v3/valavena_plan.mjs → cues anclados al ms (alineación GLOBAL guion↔ASR).
-// Salidas: src/valavena/cues_valavena.gen.ts · _valavena_assets.txt · _work/valavena/av/{windows.json,w###.wav}
-//          _work/valavena/needs_{stock,gen}.json
-// Uso: node _v3/build_valavena.mjs [--plan]   (--plan = todavía faltan assets: no exige mp4/jpg)
+// build_vallimon.mjs — Doctora Valeria Alcázar · crema de avena de noche (vallimon) · montaje kit Federer (FedKit)
+// Plan (§0 DIRECTOR) en _v3/vallimon_plan.mjs → cues anclados al ms (alineación GLOBAL guion↔ASR).
+// Salidas: src/vallimon/cues_vallimon.gen.ts · _vallimon_assets.txt · _work/vallimon/av/{windows.json,w###.wav}
+//          _work/vallimon/needs_{stock,gen}.json
+// Uso: node _v3/build_vallimon.mjs [--plan]   (--plan = todavía faltan assets: no exige mp4/jpg)
 import fs from 'fs';
 import {execFileSync} from 'child_process';
-import {SECCIONES} from './valavena_plan.mjs';
+import {SECCIONES} from './vallimon_plan.mjs';
 
 const PLAN_MODE = process.argv.includes('--plan');
 const FPS = 30;
 const PUB = 'public';
-const W = '_work/valavena';
-const WAV = 'public/valavena.wav';
+const W = '_work/vallimon';
+const WAV = 'public/vallimon.wav';
 const dur = (f) => +execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]).toString().trim();
 const WAV_S = dur(WAV);
 const F = (s) => Math.round(s * FPS);
@@ -21,8 +21,8 @@ const FAIL = (m) => { console.log('⛔', m); fails++; };
 
 // ── anclaje ──
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
-const G = norm(fs.readFileSync('GUION_valavena.txt', 'utf8')).split(' ');
-const WMS = JSON.parse(fs.readFileSync('_v3/valavena_wordms.json', 'utf8'));
+const G = norm(fs.readFileSync('GUION_vallimon.txt', 'utf8')).split(' ');
+const WMS = JSON.parse(fs.readFileSync('_v3/vallimon_wordms.json', 'utf8'));
 if (WMS.length !== G.length) FAIL(`wordms ${WMS.length} != guion ${G.length}`);
 const find = (s, from) => { const t = norm(s).split(' '); for (let k = from; k <= G.length - t.length; k++) { let ok = true; for (let j = 0; j < t.length; j++) if (G[k + j] !== t[j]) { ok = false; break; } if (ok) return k; } return -1; };
 const M = [];
@@ -62,8 +62,8 @@ const ACC = {};
 let cursor = 0;
 const windows = [];
 const addWin = (s, e) => { const last = windows[windows.length - 1]; if (last && Math.abs(last.end - s) < 0.6) last.end = e; else windows.push({start: s, end: e}); };
-const genImg = (m) => `img/valavena/vn_${m.id}.jpg`;
-const genClip = (m) => `broll/valavena/vn_${m.id}.mp4`;
+const genImg = (m) => `img/vallimon/vn_${m.id}.jpg`;
+const genClip = (m) => `broll/vallimon/vn_${m.id}.mp4`;
 for (let i = 0; i < M.length; i++) {
   const m = M[i];
   const s = Math.max(m.start, cursor);
@@ -78,11 +78,11 @@ for (let i = 0; i < M.length; i++) {
   }
   if (m.t === 'V' || m.t === 'F') {
     const n = m.t === 'V' ? Math.max(1, Math.min(6, Math.ceil(span / 5))) : Math.max(1, Math.ceil(span / 3));
-    const names = Array.from({length: n}, (_, k) => (m.t === 'V' ? `broll/valavena_st/${m.id}_${k}.mp4` : `img/valavena/st_${m.id}_${k}.jpg`));
+    const names = Array.from({length: n}, (_, k) => (m.t === 'V' ? `broll/vallimon_st/${m.id}_${k}.mp4` : `img/vallimon/st_${m.id}_${k}.jpg`));
     names.forEach((f, k) => { if (!has(f)) NEEDS.push({id: m.id, k, kind: m.t === 'V' ? 'v' : 'p', q: m.q[k % m.q.length], alt: m.q, texto: m.d, dest: `${PUB}/${f}`}); });
-    const gslot = (k) => ({clip: `broll/valavena/g_${m.id}_${k}.mp4`, img: `img/valavena/g_${m.id}_${k}.jpg`});
+    const gslot = (k) => ({clip: `broll/vallimon/g_${m.id}_${k}.mp4`, img: `img/vallimon/g_${m.id}_${k}.jpg`});
     names.forEach((f, k) => { if (!has(f) && m.t === 'V') { const g = gslot(k); if (!has(g.img)) NEEDS_G.push({id: `${m.id}_${k}`, texto: m.d, q: m.q[k % m.q.length]}); } });
-    const slots = names.map((f, k) => (has(f) ? {kind: m.t === 'V' ? 'clip' : 'foto', real: 1, src: f} : m.t === 'V' && has(`img/valavena/stp_${m.id}_${k}.jpg`) ? {kind: 'foto', real: 1, src: `img/valavena/stp_${m.id}_${k}.jpg`} : m.t === 'V' && has(gslot(k).img) ? {kind: 'gen', src: has(gslot(k).clip) ? gslot(k).clip : null, still: gslot(k).img} : null)).filter(Boolean);
+    const slots = names.map((f, k) => (has(f) ? {kind: m.t === 'V' ? 'clip' : 'foto', real: 1, src: f} : m.t === 'V' && has(`img/vallimon/stp_${m.id}_${k}.jpg`) ? {kind: 'foto', real: 1, src: `img/vallimon/stp_${m.id}_${k}.jpg`} : m.t === 'V' && has(gslot(k).img) ? {kind: 'gen', src: has(gslot(k).clip) ? gslot(k).clip : null, still: gslot(k).img} : null)).filter(Boolean);
     const files = slots;
     if (!files.length && PLAN_MODE) { const d = span / n; names.forEach((f, k) => push({id: `${m.id}_${k}`, kind: m.t === 'V' ? 'clip' : 'foto', real: 1, src: f, start: s + d * k, dur: d, _pending: 1})); cursor = e; continue; }
     if (!files.length) { const pv = cues[cues.length - 1]; if (pv && !['avatar', 'talk'].includes(pv.kind) && pv.dur + span <= (['clip', 'foto', 'gen'].includes(pv.kind) ? 7.5 : 16)) { pv.dur += span; console.log(`  ⚠ sin stock ${m.id} → estira ${pv.id} a ${pv.dur.toFixed(1)} s`); } else FAIL(`sin asset ${m.id} (${m.q[0]}) y sin vecino estirable`); cursor = e; continue; }
@@ -99,13 +99,13 @@ for (let i = 0; i < M.length; i++) {
   }
   if (m.t === 'C') {
     const {iq, iqA, iqB, hits, gp, gpA, gpB, ...c} = m.c;
-    const im = (slot) => `img/valavena/${m.id}_${slot}.jpg`;
+    const im = (slot) => `img/vallimon/${m.id}_${slot}.jpg`;
     const props = {...c};
     for (const [slot, q] of [['iq', iq], ['iqA', iqA], ['iqB', iqB]]) if (q) { const key = slot === 'iq' ? 'image' : slot === 'iqA' ? 'imageA' : 'imageB'; props[key] = im(slot); if (!has(im(slot))) NEEDS.push({id: m.id, k: slot, kind: 'p', q, alt: [q], texto: m.d, dest: `${PUB}/${im(slot)}`}); }
     if (gp) { props.image = genImg(m); if (!has(genImg(m))) NEEDS_GEN.push({id: m.id, kind: 'G', p: gp}); }
-    for (const [g, key, suf] of [[gpA, 'imageA', 'A'], [gpB, 'imageB', 'B']]) if (g) { const pth = `img/valavena/vn_${m.id}_${suf}.jpg`; props[key] = pth; if (!has(pth)) NEEDS_GEN.push({id: `${m.id}_${suf}`, kind: 'G', p: g}); }
-    if (c.kind === 'lamina') props.image = 'img/valavena/lamina.jpg';
-    if (c.kind === 'qrcta') { props.qr = 'img/valavena/qr_valavena.png'; props.url = 'recetario-doctora.vercel.app'; props.cover = 'img/valavena/cover.jpg'; }
+    for (const [g, key, suf] of [[gpA, 'imageA', 'A'], [gpB, 'imageB', 'B']]) if (g) { const pth = `img/vallimon/vn_${m.id}_${suf}.jpg`; props[key] = pth; if (!has(pth)) NEEDS_GEN.push({id: `${m.id}_${suf}`, kind: 'G', p: g}); }
+    if (c.kind === 'lamina') props.image = 'img/vallimon/lamina.jpg';
+    if (c.kind === 'qrcta') { props.qr = 'img/vallimon/qr_vallimon.png'; props.url = 'recetario-doctora.vercel.app'; props.cover = 'img/vallimon/cover.jpg'; }
     if (props.accent) props.accent = ACC[props.accent] || props.accent;
     const lastHit = m.hitsS.length ? m.hitsS[m.hitsS.length - 1] - s : 0;
     const floor = Math.max(2.8 + 0.28 * Math.max(0, words(c) - 3) + (c.kind === 'chapter' ? 1.5 : 0), lastHit + 2.4, MIN[c.kind] || 0);
@@ -120,7 +120,7 @@ for (let i = 0; i < M.length; i++) {
     if (rest > 0.6) {
       if (bed && !['lamina', 'qrcta', 'board'].includes(c.kind)) {
         const bd = rest - 3.2 > 0.6 ? 3.2 : rest;
-        push({id: `${m.id}_bed`, kind: 'foto', src: bed, start: s + d, dur: bd, real: /^img\/valavena\/m\d+_iq/.test(bed) ? 1 : 0});
+        push({id: `${m.id}_bed`, kind: 'foto', src: bed, start: s + d, dur: bd, real: /^img\/vallimon\/m\d+_iq/.test(bed) ? 1 : 0});
         if (rest - bd > 0.6) addWin(s + d + bd, e);
       }
       else addWin(s + d, e);
@@ -129,7 +129,7 @@ for (let i = 0; i < M.length; i++) {
     continue;
   }
 }
-windows.forEach((w, k) => { w.name = `w${String(k + 1).padStart(3, '0')}`; push({id: `av_${w.name}`, kind: 'avatar', src: `avatar_clips/valavena/${w.name}.mp4`, start: w.start, dur: w.end - w.start}); });
+windows.forEach((w, k) => { w.name = `w${String(k + 1).padStart(3, '0')}`; push({id: `av_${w.name}`, kind: 'avatar', src: `avatar_clips/vallimon/${w.name}.mp4`, start: w.start, dur: w.end - w.start}); });
 
 // ── orden + alineación a cuadro (base contigua) ──
 const base = cues.filter((c) => c.kind !== 'talk').sort((a, b) => a.start - b.start);
@@ -140,7 +140,7 @@ for (let i = 0; i < base.length; i++) {
   c.start = f0 / FPS; c.dur = Math.max(1, f1 - f0) / FPS;
   if (['clip', 'foto', 'gen'].includes(c.kind)) c.seed = f0;
   if (c.kind === 'clip' && has(c.src)) c.frames = clipFrames(c.src);
-  if (c.kind === 'gen' && c.src) { c.frames = clipFrames(c.src); const l = c.src.replace('broll/valavena/', 'img/valavena/').replace('.mp4', '_last.jpg'); if (has(l)) c.last = l; else FAIL(`falta último cuadro ${l}`); }
+  if (c.kind === 'gen' && c.src) { c.frames = clipFrames(c.src); const l = c.src.replace('broll/vallimon/', 'img/vallimon/').replace('.mp4', '_last.jpg'); if (has(l)) c.last = l; else FAIL(`falta último cuadro ${l}`); }
 }
 for (const w of windows) { const c = base.find((b) => b.id === `av_${w.name}`); w.start = c.start; w.end = c.start + c.dur; }
 fs.mkdirSync(W, {recursive: true});
@@ -149,7 +149,7 @@ if (fs.existsSync(`${W}/av/windows_reel.json`)) { const RW = JSON.parse(fs.readF
   for (const c of base.filter((b) => b.kind === 'avatar')) {
     const rw = RW.find((r) => c.start >= r.start - 0.05 && c.start + c.dur <= r.end + 0.5);
     if (!rw) { console.log(`   avatar ${c.id} ${c.start.toFixed(2)}-${(c.start + c.dur).toFixed(2)} fuera de toda ventana generada`); bad++; continue; }
-    c.src = `avatar_clips/valavena/${rw.name}.mp4`; c.from = +Math.max(0, c.start - rw.start).toFixed(3);
+    c.src = `avatar_clips/vallimon/${rw.name}.mp4`; c.from = +Math.max(0, c.start - rw.start).toFixed(3);
   }
   console.log(`avatar: ${base.filter((b) => b.kind === 'avatar').length} planos dentro de ${RW.length} ventanas generadas · fuera ${bad}`); if (bad) FAIL('avatar fuera de las ventanas generadas'); } else if (!PLAN_MODE) FAIL('falta windows_reel.json (reel del avatar)');
 fs.writeFileSync(`${W}/clipframes.json`, JSON.stringify(frameCache));
@@ -186,17 +186,17 @@ if (realS / TOT < 0.25) FAIL('metraje real < 25 %');
   const lam = base.find((c) => c.kind === 'lamina'); console.log(`lámina: ${lam ? lam.dur.toFixed(1) : 0} s en ${lam ? (lam.start / 60).toFixed(2) : '-'} min`); if (!lam || lam.dur < 25 || lam.dur > 40) FAIL('lámina fuera de 25-40 s');
   base.filter((c) => c.kind === 'qrcta').forEach((c) => { console.log(`CTA ${c.id} @ ${(c.start / 60).toFixed(2)} min · ${c.dur.toFixed(1)} s`); if (c.dur < 5) FAIL('CTA < 5 s'); });
 }
-const assets = new Set(['med/valavena.m4a', ...fs.readdirSync(`${PUB}/sfx`).map((f) => `sfx/${f}`)]);
+const assets = new Set(['med/vallimon.m4a', ...fs.readdirSync(`${PUB}/sfx`).map((f) => `sfx/${f}`)]);
 for (const c of base) { for (const k of ['src', 'still', 'last', 'image', 'imageA', 'imageB', 'qr', 'cover']) if (c[k]) assets.add(c[k]); (c.pages || []).forEach((p) => assets.add(p)); }
 { let miss = 0; for (const a of assets) if (!has(a)) { if (!PLAN_MODE) console.log('   falta', a); miss++; } console.log(`assets: ${assets.size} · faltan ${miss}`); if (miss && !PLAN_MODE) FAIL('assets faltantes'); }
 { const bad = base.filter((c) => (c.kind === 'clip' || (c.kind === 'gen' && c.src)) && has(c.src) && !(c.frames > 1)); if (bad.length) FAIL(`${bad.length} clips sin cuadros medidos`); }
 
 // ── salidas ──
-fs.mkdirSync('src/valavena', {recursive: true});
+fs.mkdirSync('src/vallimon', {recursive: true});
 const out = [...base, ...talks].map(({_pending, real, ...c}) => c);
-fs.writeFileSync('src/valavena/cues_valavena.gen.ts', `// GENERADO por _v3/build_valavena.mjs — NO editar a mano.\nexport const TOTAL_FRAMES_VV = ${TOTAL_F};\nexport const BEATS: any[] = ${JSON.stringify(out)};\n`);
-fs.writeFileSync('_v3/valavena_cues.json', JSON.stringify(base.filter((c) => c.src && /\.mp4$/.test(c.src) && c.kind !== 'avatar').map((c) => ({key: c.id, src: c.src, start: c.start, dur: c.kind === 'gen' ? Math.min(c.dur, c.frames / FPS) : c.dur}))));
-fs.writeFileSync('_valavena_assets.txt', [...assets].join('\n') + '\n');
+fs.writeFileSync('src/vallimon/cues_vallimon.gen.ts', `// GENERADO por _v3/build_vallimon.mjs — NO editar a mano.\nexport const TOTAL_FRAMES_VV = ${TOTAL_F};\nexport const BEATS: any[] = ${JSON.stringify(out)};\n`);
+fs.writeFileSync('_v3/vallimon_cues.json', JSON.stringify(base.filter((c) => c.src && /\.mp4$/.test(c.src) && c.kind !== 'avatar').map((c) => ({key: c.id, src: c.src, start: c.start, dur: c.kind === 'gen' ? Math.min(c.dur, c.frames / FPS) : c.dur}))));
+fs.writeFileSync('_vallimon_assets.txt', [...assets].join('\n') + '\n');
 fs.writeFileSync(`${W}/needs_stock.json`, JSON.stringify(NEEDS, null, 1));
 fs.writeFileSync(`${W}/needs_gen.json`, JSON.stringify(NEEDS_GEN, null, 1));
 fs.writeFileSync(`${W}/needs_g.json`, JSON.stringify(NEEDS_G, null, 1));
