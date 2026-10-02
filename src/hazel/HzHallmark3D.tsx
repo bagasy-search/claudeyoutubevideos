@@ -23,7 +23,7 @@ function baseTex(stamp: string, sub: string) {
   const cv = document.createElement("canvas"); cv.width = 512; cv.height = 512; const c = cv.getContext("2d")!;
   const g = c.createRadialGradient(256, 256, 30, 256, 256, 256); g.addColorStop(0, "#d7d7d2"); g.addColorStop(1, "#9c9c96"); c.fillStyle = g; c.fillRect(0, 0, 512, 512);
   for (let i = 0; i < 160; i++) { c.strokeStyle = `rgba(80,80,80,${0.04 + (i % 7) * 0.01})`; c.beginPath(); c.arc(256, 256, 40 + i * 1.4, 0, 6.3); c.stroke(); }
-  c.fillStyle = "#3b3833"; c.textAlign = "center"; c.font = `700 70px ${LABEL}`; c.fillText(stamp, 256, 250);
+  c.fillStyle = "#3b3833"; c.textAlign = "center"; c.font = `700 ${stamp.length > 8 ? 62 : 78}px ${LABEL}`; c.fillText(stamp, 256, 250);
   c.font = `400 46px ${TYPE}`; c.fillText(sub, 256, 320);
   const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; return t;
 }
@@ -64,7 +64,7 @@ export const HzHallmark3D: React.FC<{ stamp?: string; sub?: string; verdict?: st
               <mesh geometry={mats.body} material={mats.metal} />
               <mesh geometry={mats.handle} material={mats.metal} position={[-0.6, 0.68, 0]} rotation={[0, 0, Math.PI * 0.42]} />
               <mesh geometry={mats.spout} material={mats.metal} position={[0.55, 1.28, 0]} rotation={[0, 0, -Math.PI * 0.62]} />
-              <mesh geometry={mats.disk} material={mats.base} position={[0, 0.002, 0]} rotation={[Math.PI / 2, 0, 0]} />
+              <mesh geometry={mats.disk} material={mats.base} position={[0, -0.004, 0]} rotation={[Math.PI / 2, 0, 0]} />
             </group>
           </group>
         </ThreeCanvas>

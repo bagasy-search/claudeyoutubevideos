@@ -27,12 +27,12 @@ export const HzLotVsPiece: React.FC<{ bed?: string; lotLabel: string; lotPrice: 
             const s = spring({ frame: f - (20 + i * every), fps, config: { damping: 12, stiffness: 150 } });
             return (
               <div key={i} style={{ transform: `translateY(${interpolate(s, [0, 1], [-80, 0])}px) rotate(${((i * 53) % 9) - 4}deg)`, opacity: s }}>
-                <Tag w={350} h={150}><div><div style={{ fontFamily: TYPE, fontSize: 28, color: HZ.inkSoft, lineHeight: 1.1 }}>{p.label}</div><div style={{ fontFamily: SERIF, fontSize: 60, color: HZ.ink, lineHeight: 1 }}>{p.price}</div></div></Tag>
+                <Tag w={350} h={128}><div><div style={{ fontFamily: TYPE, fontSize: 28, color: HZ.inkSoft, lineHeight: 1.1 }}>{p.label}</div><div style={{ fontFamily: SERIF, fontSize: 60, color: HZ.ink, lineHeight: 1 }}>{p.price}</div></div></Tag>
               </div>
             );
           })}
         </div>
-        <div style={{ marginTop: 40, textAlign: "center", opacity: interpolate(f, [totAt, totAt + 6], [0, 1], ease) }}>
+        <div style={{ marginTop: 70, textAlign: "center", opacity: interpolate(f, [totAt, totAt + 6], [0, 1], ease) }}>
           <Stamp text={total} at={totAt} size={92} color={HZ.green} rot={-4} style={{ background: "rgba(255,253,246,0.85)" }} />
         </div>
       </div>

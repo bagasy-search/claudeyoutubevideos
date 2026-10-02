@@ -37,7 +37,7 @@ export const HzDealerClock: React.FC<{ bed?: string; from?: string; to?: string;
         {Array.from({ length: people }).map((_, i) => {
           const a = 6 + i * 7; const op = interpolate(f, [a, a + 8], [0, 1], ease); const x = 1650 - i * 150; const s = 0.9 + ((i * 37) % 10) / 50;
           return (
-            <g key={i} transform={`translate(${x},${360 - 330 * s * 0 }) scale(${s})`} opacity={op}>
+            <g key={i} transform={`translate(${x},${360 - 360 * s}) scale(${s})`} opacity={op}>
               <circle cx="0" cy="70" r="34" fill="#2a2420" />
               <path d="M -52 360 L -48 150 Q -46 112 0 108 Q 46 112 48 150 L 52 360 Z" fill="#3b332c" />
               <path d="M -40 150 L -36 300 L 36 300 L 40 150 Q 0 132 -40 150 Z" fill={i % 2 ? "#5a4a3a" : "#2f3a44"} />

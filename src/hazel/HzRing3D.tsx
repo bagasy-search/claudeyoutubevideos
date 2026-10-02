@@ -22,8 +22,8 @@ function bandTex(mark: string, sub: string) {
   const cv = document.createElement("canvas"); cv.width = 1024; cv.height = 128; const c = cv.getContext("2d")!;
   c.fillStyle = "#c9a043"; c.fillRect(0, 0, 1024, 128);
   for (let i = 0; i < 60; i++) { c.strokeStyle = `rgba(90,60,10,${0.05 + (i % 5) * 0.02})`; c.beginPath(); c.moveTo(0, 10 + i * 2); c.lineTo(1024, 12 + i * 2); c.stroke(); }
-  c.fillStyle = "#5a3d0e"; c.font = `700 70px ${LABEL}`; c.textAlign = "center"; c.textBaseline = "middle";
-  c.save(); c.translate(512, 64); c.scale(-1, 1); c.fillText(`${mark}   ${sub}`, 0, 4); c.restore();
+  c.fillStyle = "#5a3d0e"; c.font = `700 92px ${LABEL}`; c.textAlign = "center"; c.textBaseline = "middle";
+  c.save(); c.translate(512, 64); c.scale(-1, 1); c.fillText(`${mark} · ${sub}`, 0, 4); c.restore();
   const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; t.wrapS = THREE.RepeatWrapping; return t;
 }
 
@@ -37,13 +37,13 @@ export const HzRing3D: React.FC<{ mark?: string; sub?: string; line1?: string; l
     const metal = new THREE.MeshStandardMaterial({ color: gold, metalness: 0.95, roughness: 0.2, envMap: env, envMapIntensity: 1.3 });
     const inner = new THREE.MeshStandardMaterial({ map: bandTex(mark, sub), metalness: 0.6, roughness: 0.35, envMap: env, envMapIntensity: 0.7, side: THREE.BackSide });
     const outer = new THREE.TorusGeometry(1.0, 0.17, 48, 160);
-    const band = new THREE.CylinderGeometry(0.86, 0.86, 0.3, 160, 1, true);
+    const band = new THREE.CylinderGeometry(0.835, 0.835, 0.3, 160, 1, true);
     return { metal, inner, outer, band };
   }, [ready, mark, sub, gold]);
   const e = Easing.inOut(Easing.cubic);
-  const tilt = interpolate(f, [10, 50], [0.25, 1.32], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
-  const spin = interpolate(f, [0, 60], [-2.4, -Math.PI / 2], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) }) + Math.sin(f / 40) * 0.05;
-  const cam: [number, number, number] = [0, 0.1, interpolate(f, [0, 60], [5.2, 3.4], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e })];
+  const tilt = interpolate(f, [10, 50], [0.15, 0.62], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
+  const spin = interpolate(f, [0, 60], [-2.4, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) }) + Math.sin(f / 40) * 0.05;
+  const cam: [number, number, number] = [0, 0.1, interpolate(f, [0, 60], [5.4, 3.1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e })];
   const txt = interpolate(f, [48, 58], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ ...paperBg(HZ.manila) }}>

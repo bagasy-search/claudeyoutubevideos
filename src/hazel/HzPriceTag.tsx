@@ -32,13 +32,13 @@ export const HzPriceTag: React.FC<{ bed?: string; front?: string; frontNote?: st
             <Tag w={620} h={400} hole="top" color={HZ.paper}>
               <div style={{ textAlign: "center" }}>
                 <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 34, letterSpacing: 6, color: HZ.red, textTransform: "uppercase" }}>{soldLabel}</div>
-                <div style={{ fontFamily: SERIF, fontSize: sold.length > 12 ? 104 : 128, color: HZ.ink, lineHeight: 1.05 }}>{sold}</div>
+                <div style={{ fontFamily: SERIF, fontSize: sold.length > 11 ? 84 : sold.length > 8 ? 100 : 128, color: HZ.ink, lineHeight: 1.05, whiteSpace: "nowrap" }}>{sold}</div>
                 <div style={{ fontFamily: TYPE, fontSize: 30, color: HZ.inkSoft }}>{item}</div>
               </div>
             </Tag>
           </div>
         </div>
-        {showBack ? <div style={{ position: "absolute", left: 360, top: 300 }}><Stamp text={stamp} at={flipAt + 16} size={64} rot={-12} /></div> : null}
+        {showBack ? <div style={{ position: "absolute", left: 400, top: 380 }}><Stamp text={stamp} at={flipAt + 16} size={64} rot={-12} /></div> : null}
       </div>
     </AbsoluteFill>
   );
