@@ -1,0 +1,49 @@
+// Plan agnes 2.5-flash del MINUTO 1 (anclas gpt-image-2 + clips reference/keyframe). node vlog/lordeviled/mkplan_m1.mjs
+// Los textos de los clips hablados salen de _v3/lordeviled_m1.json (tramos medidos con el ASR: vlog/lordeviled/m1_tramos.mjs).
+import fs from "node:fs";
+import { R, WHO, KIT, A, act, plan } from "./lib.mjs";
+const T = R + "vlog/lordeviled/tramos/";
+const M = JSON.parse(fs.readFileSync(R + "_v3/lordeviled_m1.json", "utf8")); // {m1:{text,s,e}, ...}
+const DISH = "a clear glass Pyrex dish holding two dozen finished deviled eggs, the white halves mounded with smooth pale-yellow filling and dusted with paprika";
+const anchors = [
+  A("K0", ["k0"], `Same kitchen, same moment of the day. ${WHO} sits at the floury wooden table of ${KIT}. In front of her on the table sits ${DISH}, and she holds a small spoon in one hand, looking at the camera and talking, delighted. Medium shot from about one and a half meters, the dish of eggs and her upper body in frame, the stove and the rooster behind her.`),
+  A("K1", ["K0"], "A few seconds later, same place: she leans a little toward the camera and points the spoon toward it, mid-sentence, bright eyes on her grandson behind the camera, the dish of deviled eggs in front of her."),
+  A("K2", ["K0"], "Same kitchen, same light, a little later: she lifts the whole glass dish of deviled eggs in both hands up toward the camera with eyebrows raised, a knowing, slightly skeptical look, mid-sentence, the floury table in front of her."),
+  A("K3", ["K2"], "Same place a few seconds later: she has set the dish down on the table and leans back in her chair with one hand open toward it, a warm confident little smile, looking at the camera."),
+  A("K4", ["K0"], "Same kitchen, same light: she sits at the floury table and holds up three fingers of one hand toward the camera, the other hand on the table beside the dish of deviled eggs, mouth open mid-sentence, eyebrows lifted."),
+  A("K5", ["K4"], "Same place a few seconds later: she wags one raised finger at the camera, lips pressed together in a firm little smile, the dish of deviled eggs and the worn spiral recipe book on the table in front of her."),
+  A("K6", ["K0"], "Same kitchen, same light: she leans toward the camera and lowers her head a little as if telling a secret, holding up between two fingers a small faded, yellowed, stained old index card written in pencil, the worn spiral recipe book open on the table in front of her."),
+  A("K7", ["K6"], "Same place a few seconds later: she slides the small faded index card back into the back pages of the open recipe book, looking at the camera with a small secretive smile, one eyebrow up."),
+  // detalles con foley (sin ella, sólo sus manos de 81 años entrando por el borde)
+  A("K101", ["k0"], "Close view on the floury wooden table of her kitchen: a glass Pyrex dish holding a row of white hard-boiled egg halves, and an old hand with age spots and a lilac cardigan sleeve holds a tablespoon of smooth pale-yellow filling just above one egg white half, a ribbon of filling starting to fall from the spoon."),
+  A("K102", ["K101"], "Same close view a moment later: the egg white half is filled with a perfect smooth mound of pale-yellow filling, the spoon pulling away, a last strand of filling dropping, her old hand and lilac sleeve at the edge."),
+  A("K201", ["k0"], "Close view on the floury wooden table: a glass mixing bowl of crumbly bright yellow cooked egg yolks, and an old hand with a lilac sleeve holds a big metal spoon heaped with a thick white glob of mayonnaise just above the bowl."),
+  A("K202", ["K201"], "Same close view a moment later: the big glob of mayonnaise has dropped onto the crumbly yellow yolks and sits there in a heap, a few yolk crumbs knocked aside, the spoon lifting away."),
+  A("K301", ["k0"], "Close view on the floury wooden table: a white plate with two hard-boiled eggs cut in half, side by side. The left yolk is dry and chalky with a gray-green ring around it, the right yolk is bright golden and smooth. An old hand with a lilac sleeve holds a fork above them."),
+  A("K302", ["K301"], "Same close view a moment later: the fork tip touches the gray-green ring of the left yolk, a dry crumb of yolk breaks off, the golden right half untouched beside it."),
+  A("K401", ["k0"], "Close view on the floury wooden table: a glass bowl of cooked yellow yolks and an old hand with a lilac sleeve pressing a fork down into them, the yolks crumbling into dry little pieces."),
+  A("K402", ["K401"], "Same close view a moment later: the yolks in the bowl are a lumpy crumbly mess with the fork tines pressed in, hard crumbs and lumps everywhere."),
+  A("K501", ["k0"], "Close view on the floury wooden table: an old hand with a lilac sleeve holds a spoon with a loose watery egg filling tipping off it, a long drip about to fall onto a white plate where a white egg half sits."),
+  A("K502", ["K501"], "Same close view a moment later: the watery filling has dripped off the spoon and left a small puddle of liquid on the white plate beside the egg half, the spoon still above."),
+  A("K601", ["k0"], "Close view on the floury wooden table: old hands with age spots and a lilac sleeve begin to peel a hard-boiled egg, the thumbnail catching the shell, small flakes of shell on the table."),
+  A("K602", ["K601"], "Same close view a moment later: the white of the egg has torn away in little ragged pieces under her thumb, leaving pits and craters in the egg, shell flakes scattered."),
+  A("K701", ["k0"], "Close view on the floury wooden table: a fine metal sieve held over a glass bowl, a heap of bright golden egg yolks sitting in the sieve, and the back of a big spoon pressing down on them."),
+  A("K702", ["K701"], "Same close view a moment later: fine yellow strands of yolk have pushed through the sieve and fall in a soft pile into the bowl below like fine yellow sand, the spoon still pressing."),
+];
+const txt = (k) => M[k].text;
+const clips = [
+  { id: "m1", a: "K0", b: "K1", audio: T + "m1.wav", text: txt("m1"), action: act("She talks to her grandson behind the camera while she smiles at the dish of deviled eggs in front of her and points her spoon toward the camera, delighted.") },
+  { id: "m2", a: "K2", b: "K3", audio: T + "m2.wav", text: txt("m2"), action: act("She lifts the dish of deviled eggs toward the camera, skeptical, talks, then sets it down and leans back with a confident smile.") },
+  { id: "m3", a: "K4", b: "K5", audio: T + "m3.wav", text: txt("m3"), action: act("She counts on her fingers toward the camera, talking, then wags one finger firmly.") },
+  { id: "m4", a: "K6", b: "K7", audio: T + "m4.wav", text: txt("m4"), action: act("She leans toward the camera holding the small faded recipe card, speaking lower as if telling a secret, then slides the card back into the book with a small smile.") },
+  { id: "d_fill", prompt: "she fills the egg white half with the smooth filling from the spoon and it slides in without a lump. She stays silent, focused on her hands.", a: "K101", b: "K102", detail: true, secs: 4, d1: "a spoon lets a ribbon of smooth yellow filling fall into an egg white half", d2: "the egg half is filled with a perfect smooth mound", sound: "the soft wet sound of filling sliding off a spoon and a spoon tapping the glass dish" },
+  { id: "d_mayo", prompt: "a big glob of mayonnaise drops from the spoon onto the crumbly yolks in the bowl. She stays silent, focused on her hands.", a: "K201", b: "K202", detail: true, secs: 4, d1: "a heaped spoon of mayonnaise held over a bowl of crumbly yolks", d2: "the glob of mayonnaise plops onto the yolks", sound: "a heavy wet plop of mayonnaise landing in the glass bowl" },
+  { id: "d_gray", prompt: "the fork tip touches the gray-green ring of the overcooked yolk and a dry crumb breaks off, next to the golden yolk. She stays silent, focused on her hands.", a: "K301", b: "K302", detail: true, secs: 4, d1: "a fork above two egg halves, one gray-ringed and chalky, one golden", d2: "the fork tip breaks a dry crumb off the gray-green ring", sound: "a small dry crumbling sound and a fork tapping a plate" },
+  { id: "d_lump", prompt: "the fork presses into the yolks and they crumble into dry lumps. She stays silent, focused on her hands.", a: "K401", b: "K402", detail: true, secs: 4, d1: "a fork presses down into a bowl of cooked yolks", d2: "the yolks crumble into a lumpy dry mess", sound: "a dry crumbly crunching of yolk under a fork in a glass bowl" },
+  { id: "d_wet", prompt: "the loose watery filling drips off the spoon and leaves a puddle on the plate. She stays silent, focused on her hands.", a: "K501", b: "K502", detail: true, secs: 4, d1: "watery filling tips off a spoon above a plate", d2: "a small puddle of liquid on the plate beside the egg half", sound: "a slow wet drip falling onto a ceramic plate" },
+  { id: "d_peel", prompt: "her thumb peels the egg and the white tears off in ragged pieces. She stays silent, focused on her hands.", a: "K601", b: "K602", detail: true, secs: 6, d1: "a thumbnail starts to peel a hard-boiled egg", d2: "the white tears away in ragged pieces leaving craters", sound: "the crackle of eggshell and the soft tearing of egg white" },
+  { id: "d_sieve", prompt: "the back of the spoon presses the yolks through the sieve and fine yellow strands fall into the bowl like sand. She stays silent, focused on her hands.", a: "K701", b: "K702", detail: true, secs: 6, d1: "a spoon presses golden yolks into a fine metal sieve", d2: "fine yellow strands fall through into the bowl below", sound: "a soft scraping of a spoon on metal mesh and fine crumbs dropping into a glass bowl" },
+];
+fs.mkdirSync(R + "vlog/lordeviled/M1", { recursive: true });
+fs.writeFileSync(R + "vlog/lordeviled/M1/plan.json", JSON.stringify(plan("vlog/lordeviled/M1", anchors, clips), null, 1));
+console.log("plan M1:", anchors.length, "anclas,", clips.length, "clips");
