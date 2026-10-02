@@ -23,7 +23,7 @@ for w in W["win"]:
     b = B[c0:c1]
     if len(b) < 50: w["lag"] = 0.0; continue
     best, bl = -1e9, 0
-    for L in range(-40, 41):  # ±0,4 s
+    for L in range(-120, 121):  # ±1,2 s
         a = A[c0 + L:c1 + L] if c0 + L >= 0 and c1 + L <= len(A) else None
         if a is None or len(a) != len(b): continue
         r = np.corrcoef(a, b)[0, 1]
