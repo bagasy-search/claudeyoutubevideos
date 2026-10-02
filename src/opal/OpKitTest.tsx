@@ -12,7 +12,7 @@ import { OpFeedSack3D } from "./OpFeedSack3D";
 import { OpEggFloat3D } from "./OpEggFloat3D";
 import { OpNameTag, OpAsk, OpSubscribe, OpViewerQ } from "./OpOverlays";
 
-const B = "img/opalnolay/b_floorfeathers.jpg", V = "broll/opalnolay_st/st_hens2_0.mp4";
+const B = "img/opalnolay/b_floorfeathers.jpg", V = "broll/opalnolay_st/st_hens2_1.mp4";
 const D = 150;
 const CH = [{ t: "Count your daylight", cost: "free" }, { t: "Look for the molt", cost: "free" }, { t: "Read the feed bag", cost: "$24" }, { t: "Are the eggs really gone?", cost: "free" }, { t: "Mites, at night", cost: "a flashlight" }, { t: "Stress & predators", cost: "free" }, { t: "How old is she?", cost: "free" }];
 const ITEMS: React.ReactNode[] = [
