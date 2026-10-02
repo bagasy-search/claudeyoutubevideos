@@ -109,8 +109,8 @@ export const LorEgg3D: React.FC<{ mode?: "halve" | "compare"; ring?: boolean; sh
       ) : null}
       {mode === "compare" ? (
         <>
-          {labelA ? <div style={{ position: "absolute", left: "13%", bottom: 70, opacity: labIn, fontFamily: HAND, fontWeight: 700, fontSize: 62, color: LOR.gingham, textAlign: "center", width: "26%", lineHeight: 1 }}>{labelA}</div> : null}
-          {labelB ? <div style={{ position: "absolute", left: "61%", bottom: 70, opacity: labIn, fontFamily: HAND, fontWeight: 700, fontSize: 62, color: LOR.greenDeep, textAlign: "center", width: "26%", lineHeight: 1 }}>{labelB}</div> : null}
+          {labelA ? <div style={{ position: "absolute", left: "13%", bottom: 70, opacity: labIn, fontFamily: HAND, fontWeight: 700, fontSize: 62, color: LOR.gingham, textAlign: "center", width: "26%", lineHeight: 1, background: "rgba(255,253,247,0.9)", borderRadius: 18, padding: "12px 10px", boxShadow: "0 6px 18px rgba(59,42,30,0.25)" }}>{labelA}</div> : null}
+          {labelB ? <div style={{ position: "absolute", left: "61%", bottom: 70, opacity: labIn, fontFamily: HAND, fontWeight: 700, fontSize: 62, color: LOR.greenDeep, textAlign: "center", width: "26%", lineHeight: 1, background: "rgba(255,253,247,0.9)", borderRadius: 18, padding: "12px 10px", boxShadow: "0 6px 18px rgba(59,42,30,0.25)" }}>{labelB}</div> : null}
         </>
       ) : null}
     </AbsoluteFill>

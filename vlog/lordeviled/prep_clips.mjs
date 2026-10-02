@@ -15,7 +15,7 @@ for (const plan of ["M1", "MV"]) {
     if (!fs.existsSync(src)) continue;
     if (fs.existsSync(dst) && fs.statSync(dst).mtimeMs > fs.statSync(src).mtimeMs) continue;
     ff("-i", src, "-an", "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,format=yuv420p", "-r", "30", "-c:v", "libx264", "-crf", "19", "-preset", "veryfast", dst);
-    if (det[id]) {
+    if (det[id] || /^d_/.test(id)) {
       const lufs = spawnSync("ffmpeg", ["-hide_banner", "-nostats", "-i", src, "-vn", "-af", "ebur128=framelog=quiet", "-f", "null", "-"], { encoding: "utf8", windowsHide: true }).stderr || "";
       const m = /I:\s+(-?[0-9.]+) LUFS/.exec(lufs); const I = m ? +m[1] : -30;
       if (I > -70) ff("-i", src, "-vn", "-af", `volume=${(-30 - I).toFixed(1)}dB,afade=t=in:d=0.15`, "-ar", "48000", "-c:a", "aac", "-b:a", "128k", OUT + id + "_foley.m4a");

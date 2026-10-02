@@ -4,7 +4,8 @@
 // Compuertas: el juez rechaza texto/logos/marca de agua, caras posando a cámara, looks de cine y tomas que no muestran la escena;
 // luma del arranque (YAVG mínimo de los primeros 0,7 s ≥ 40) sobre el clip final; imprime cuántos midió.
 import fs from "node:fs"; import path from "node:path"; import { execFileSync, spawnSync } from "node:child_process";
-import { Q } from "./dir_q.mjs";
+import { Q as Q1, Q2 } from "./dir_q.mjs";
+const Q = process.env.STOCK_ALT ? Q2 : Q1;
 const R = "D:/Proyectos/video2-wt/lordeviled/";
 const env = {}; for (const l of fs.readFileSync(R + ".env", "utf8").split(/\r?\n/)) { const m = l.match(/^([A-Z_0-9]+)\s*=\s*(.*)$/); if (m) env[m[1]] = m[2].replace(/^["']|["']$/g, ""); }
 const PEX = [env.PEXELS_API_KEY, env.PEXELS_API_KEY2].filter(Boolean);

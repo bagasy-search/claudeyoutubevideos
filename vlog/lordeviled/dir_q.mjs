@@ -37,3 +37,15 @@ export const Q = {
   b_fillingbag: "refrigerator shelf with food containers", b_eatthatday: "covering a plate with plastic wrap", b_leftoverplate: "egg salad sandwich on a plate",
   b_mixing: "two serving dishes on a table", b_eightcartons: "egg cartons stacked", b_peelEggs: "peeling eggs",
 };
+// 2ª pasada (STOCK_ALT=1): consultas más amplias para las tomas que no encontraron stock a la primera.
+export const Q2 = {
+  b_coldwater: "filling a pot with water from the faucet", b_timerring: "kitchen timer", b_ricer: "potato masher mashing", b_angeleggs: "deviled eggs", b_dampnapkin: "dish of food in a car",
+  b_grinder: "meat grinder", b_hamegg: "deviled eggs appetizer", b_flag: "appetizers on a party table", b_sixplates: "party food table", b_notebookerrors: "writing in a notebook at a kitchen table",
+  b_notebookclose: "closing a book", b_apart: "refrigerator shelf with containers", b_eatthatday: "wrapping food in plastic wrap", b_chopnstir: "chopping boiled eggs", b_stifffill: "mixing thick mixture in a bowl",
+  b_teaspoon: "adding an ingredient with a teaspoon to a bowl", b_lumpy2: "mashing egg yolks with a fork", b_sliding: "serving dish on a table", b_fillingbag: "food in a plastic bag", b_mixing: "serving dishes on a dinner table",
+  b_eightcartons: "stack of egg cartons", b_fridgedoor: "refrigerator door shelf with eggs", b_tapebottom: "church dinner tables", b_halfempty: "empty serving dish on a table", b_floorbuick: "car interior back seat",
+  b_takeone: "taking food from a platter at a party", b_sitsflat: "boiled eggs in a baking dish", b_hamcut: "sliced ham on a table", b_fullplate: "potluck dishes on a table", b_rows: "deviled eggs on a platter",
+  b_mayojar: "mayonnaise", b_sieveeggs: "eggs on a table", b_fridgethermo: "refrigerator shelf", b_nest: "bowl of ice", b_swapdish: "carrying a dish of food", b_threebowls: "mixing bowls on a counter",
+  b_grayring2: "hard boiled egg cut in half", b_tornwhite: "peeling a boiled egg", b_loosefill: "yellow sauce pouring from a spoon", b_softpeak: "whipped yellow cream in a bowl",
+  b_ladies: "elderly women cooking together", b_yolkdrink: "stirring a yellow mixture", b_mw: "spooning mayonnaise", b_romeegg: "stuffed eggs on a plate", b_bothright: "filling eggs with a spoon", b_whitesdry: "boiled eggs on paper towel",
+};

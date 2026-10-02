@@ -21,7 +21,12 @@ const KF_FALL = { d_fill: "b_perfect", d_mayo: "b_mayojar", d_gray: "b_grayring2
 const TOTAL = F(END + 0.4);
 const cues = [], ovs = [], sfx = [], foley = [], warn = [], fallback = [];
 let lastImg = null;
-const toOld = (t) => t + DELTA; // Δ exacto (duración del máster viejo − nuevo): todo lo comprimido está antes del seg 64
+const Wo = JSON.parse(fs.readFileSync(R + "_v3/lordeviled_wordms_old.json", "utf8"));
+const toOld = (t) => { // Δ exacto (duración del máster viejo − nuevo) después del seg 64; dentro del minuto 1 (pausas comprimidas) el desfase LOCAL de la palabra más cercana
+  if (t > 64) return t + DELTA;
+  let lo = 0, hi = 240; while (lo < hi) { const m = (lo + hi) >> 1; if (W[m].s < t) lo = m + 1; else hi = m; }
+  return t + (Wo[lo].s - W[lo].s);
+};
 const avFor = (s0, s1) => { // ventana del reel que contiene [s0,s1] (en tiempo del máster viejo)
   const o0 = toOld(s0), o1 = toOld(s1);
   return avwin.find((w) => o0 >= w.s - 0.15 && o1 <= w.e + 0.2);
@@ -39,7 +44,7 @@ shots.forEach((s, i) => {
   else if (s.kind === "vl") {
     const p = `vid/lordeviled/${s.name}.mp4`;
     if (ex(p)) { c.src = p; c.sf = Math.max(0, F(s.start - CLIP0[s.name])); }
-    else if (toOld(s.start) > 62 && avFor(s.start, s.end)) { avCue(c, s); c.fallback = s.name; fallback.push(s.name); } // repuesto: el reel incluye las ventanas de los clips hablados
+    else if (avFor(s.start, s.end)) { avCue(c, s); c.fallback = s.name; fallback.push(s.name); } // repuesto: el reel incluye las ventanas de los clips hablados
     else { c.k = "img"; c.img = null; c.fallback = s.name; fallback.push(s.name); }
   } else if (s.kind === "kf") {
     const p = `vid/lordeviled/${s.name}.mp4`;
