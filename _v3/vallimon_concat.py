@@ -1,6 +1,6 @@
 # concat local de los 120 chunks (artefactos del run) · audio con priming AAC fijo · verifica cuadros
 import subprocess, os
-D='D:/rtmp/vallimon_chunks'; OUT='D:/rtmp/vallimon_out'; TOTAL=23044; TRIM=0.043
+D='D:/rtmp/vallimon_chunks'; OUT='D:/rtmp/vallimon_out'; TOTAL=21967; TRIM=0.043
 os.makedirs(OUT, exist_ok=True)
 seq=[f'{D}/chunk-{i}/chunk_{i}.mp4' for i in range(120)]
 def frames(p): return int(subprocess.check_output(['ffprobe','-v','error','-select_streams','v','-count_packets','-show_entries','stream=nb_read_packets','-of','csv=p=0',p]).decode().strip().split(',')[0])
