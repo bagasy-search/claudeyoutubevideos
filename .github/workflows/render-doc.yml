@@ -66,7 +66,7 @@ jobs:
           ffmpeg -v error -y -framerate 24 -start_number "$F0" -i frames/f_%05d.jpg \
             -vf "scale=1280:720:in_range=full:out_range=limited:out_color_matrix=bt709:flags=lanczos,format=yuv420p" \
             -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
-            -c:v libx264 -preset medium -crf 17 -g 48 -keyint_min 48 -sc_threshold 0 -x264-params open-gop=0 seg.mp4
+            -c:v libx264 -preset medium -crf 21 -maxrate 3500k -bufsize 7000k -g 48 -keyint_min 48 -sc_threshold 0 -x264-params open-gop=0 seg.mp4
           ls -la seg.mp4
       - uses: actions/upload-artifact@v4
         with:
