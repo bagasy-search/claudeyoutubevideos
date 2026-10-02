@@ -1,5 +1,5 @@
 # Render distribuido del documental animado "El carruaje sin caballos" (motor canvas/WebGL en Chromium, NO Remotion).
-# El HTML de cada conjunto de escenas viaja como asset del release `tag_in` (junto con render.cjs y la mezcla de audio).
+# El HTML de cada conjunto de escenas, render.cjs y la mezcla de audio se bajan de una URL pública (`base`).
 # Cada job del matrix renderiza un rango de SEGUNDOS, lo codifica a un segmento mp4 (yuv420p, tv, bt709, GOP de 2 s)
 # y el job stitch une los segmentos de cada conjunto, le pone el audio (mix_<S>.wav) y lo publica en el release `tag_out`.
 #   gh workflow run render-doc.yml -f plan='[{"s":"A7","i":0,"a":0,"b":10}]' -f sets='["A7"]'
@@ -7,10 +7,12 @@ name: render-doc
 on:
   workflow_dispatch:
     inputs:
-      tag_in:  { description: "release con <S>.html, render.cjs y mix_<S>.wav", required: false, default: "carruaje-in" }
+      base:    { description: "URL pública base con <S>.html, render.cjs y mix_<S>.wav", required: true }
       tag_out: { description: "release donde se publica <S>.mp4", required: false, default: "carruaje-out" }
       plan:    { description: 'JSON [{"s":"A0","i":0,"a":0,"b":10},...] (a/b en segundos)', required: true }
       sets:    { description: 'JSON ["A0","A1",...] conjuntos a unir', required: true }
+      final:   { description: 'orden JSON de los conjuntos a concatenar en <slug>.mp4 (vacío = no armar el final; todos deben estar en tag_out)', required: false, default: "" }
+      slug:    { description: "tag/nombre del video final", required: false, default: "carruaje" }
 permissions:
   contents: write
 jobs:
@@ -36,8 +38,10 @@ jobs:
           [ -d node_modules/playwright ] || npm i --no-save playwright
           npx playwright install --with-deps chromium
       - name: bajar html + render.cjs
-        env: { GH_TOKEN: "${{ github.token }}" }
-        run: gh release download "${{ github.event.inputs.tag_in }}" -R "${{ github.repository }}" -p "${{ matrix.job.s }}.html" -p render.cjs -D .
+        run: |
+          curl -fsSL --retry 4 -o "${{ matrix.job.s }}.html" "${{ github.event.inputs.base }}/${{ matrix.job.s }}.html"
+          curl -fsSL --retry 4 -o render.cjs "${{ github.event.inputs.base }}/render.cjs"
+          ls -la
       - name: render ${{ matrix.job.s }} ${{ matrix.job.a }}-${{ matrix.job.b }} s
         run: |
           SCENE="$PWD/${{ matrix.job.s }}.html" RS=0.6667 FROM=${{ matrix.job.a }} TO=${{ matrix.job.b }} node render.cjs video frames 4 2>&1 | grep -v "ERR_FILE_NOT_FOUND" | tail -5
@@ -72,10 +76,29 @@ jobs:
       - name: unir + audio
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          gh release download "${{ github.event.inputs.tag_in }}" -R "${{ github.repository }}" -p "mix_${{ matrix.s }}.wav" -D .
+          curl -fsSL --retry 4 -o "mix_${{ matrix.s }}.wav" "${{ github.event.inputs.base }}/mix_${{ matrix.s }}.wav"
           ls segs | sort -t- -k3 -n | while read d; do echo "file 'segs/$d/seg.mp4'"; done > lista.txt
           head -3 lista.txt
           ffmpeg -v error -y -f concat -safe 0 -i lista.txt -i "mix_${{ matrix.s }}.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -ar 48000 -af alimiter=limit=0.89 -shortest -movflags +faststart "${{ matrix.s }}.mp4"
           ls -la "${{ matrix.s }}.mp4"
           gh release view "${{ github.event.inputs.tag_out }}" -R "${{ github.repository }}" >/dev/null 2>&1 || gh release create "${{ github.event.inputs.tag_out }}" -R "${{ github.repository }}" -t "${{ github.event.inputs.tag_out }}" -n "salidas del render-doc"
           gh release upload "${{ github.event.inputs.tag_out }}" "${{ matrix.s }}.mp4" -R "${{ github.repository }}" --clobber
+  final:
+    needs: stitch
+    if: ${{ github.event.inputs.final != '' && !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: concatenar conjuntos
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          : > lista.txt
+          for s in $(echo '${{ github.event.inputs.final }}' | tr -d '[]" ' | tr ',' ' '); do
+            gh release download "${{ github.event.inputs.tag_out }}" -R "${{ github.repository }}" -p "$s.mp4" -D sets
+            echo "file 'sets/$s.mp4'" >> lista.txt
+          done
+          cat lista.txt
+          ffmpeg -v error -y -f concat -safe 0 -i lista.txt -c copy -movflags +faststart "${{ github.event.inputs.slug }}.mp4"
+          ls -la "${{ github.event.inputs.slug }}.mp4"
+          gh release view "${{ github.event.inputs.slug }}" -R "${{ github.repository }}" >/dev/null 2>&1 || gh release create "${{ github.event.inputs.slug }}" -R "${{ github.repository }}" -t "${{ github.event.inputs.slug }}" -n "El carruaje sin caballos — documental animado"
+          gh release upload "${{ github.event.inputs.slug }}" "${{ github.event.inputs.slug }}.mp4" -R "${{ github.repository }}" --clobber
