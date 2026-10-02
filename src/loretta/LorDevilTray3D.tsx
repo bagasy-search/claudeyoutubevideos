@@ -15,9 +15,9 @@ const Half: React.FC<{ x: number; z: number; p: number; pap: number; mats: any; 
   const drop = (1 - p);
   return (
     <group position={[x, 0.3 + drop * 1.6, z]} rotation={[0, rot, 0]} scale={Math.max(0.001, p)}>
-      <mesh geometry={geos.bowl} material={mats.white} scale={[0.42, 0.34, 0.66]} position={[0, 0.02, 0]} />
-      <mesh geometry={geos.dome} material={mats.filling} scale={[0.34, 0.3 * (0.4 + 0.6 * Math.min(1, p * 1.4)), 0.56]} position={[0, 0.06, 0]} />
-      {pap > 0.01 ? <mesh geometry={geos.disc} material={mats.pap} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.06 + 0.3 * 0.62, 0]} scale={[0.5, 0.78, 1]} /> : null}
+      <mesh geometry={geos.bowl} material={mats.white} scale={[0.44, 0.3, 0.68]} position={[0, 0.04, 0]} />
+      <mesh geometry={geos.dome} material={mats.filling} scale={[0.27, 0.24 * (0.4 + 0.6 * Math.min(1, p * 1.4)), 0.46]} position={[0, 0.07, 0]} />
+      {pap > 0.01 ? <mesh geometry={geos.disc} material={mats.pap} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.07 + 0.24 * 0.6, 0]} scale={[0.22, 0.38, 1]} /> : null}
     </group>
   );
 };

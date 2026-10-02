@@ -12,18 +12,15 @@ import { canvasTex, dots, eggProfile, eggR, ease } from "./lor3dutil";
 
 const H = 1.6, A = 0.62;
 
-const EggHalf: React.FC<{ side: 1 | -1; open: number; ring: boolean; shell: string; x0: number; mats: any; faceGeo: any }> = ({ side, open, ring, shell, x0, mats, faceGeo }) => {
-  const sep = ease(open);
-  const rotY = side * (Math.PI / 2) * ease(Math.min(1, Math.max(0, (open - 0.35) / 0.65)));
-  const x = x0 + side * 0.95 * sep;
-  // yema: elipse centrada hacia el lado ancho; anillo (si recocida) apenas más grande
-  const yolkC: [number, number] = [0, -0.1];
+// mitad del huevo: la cáscara abulta hacia atrás (z<0) y el corte (clara + yema) mira a cámara (z>0)
+const EggHalf: React.FC<{ x: number; ring: boolean; shell: string; mats: any; faceGeo: any }> = ({ x, ring, shell, mats, faceGeo }) => {
+  const yc = -0.1;
   return (
-    <group position={[x, 0, 0]} rotation={[0, rotY, 0]}>
-      <mesh geometry={mats.halfGeo(side)} material={mats.shell(shell)} />
-      <mesh geometry={faceGeo} rotation={[0, -side * Math.PI / 2, 0]} material={mats.white} />
-      {ring ? <mesh position={[side * 0.002, yolkC[1], 0]} rotation={[0, -side * Math.PI / 2, 0]} scale={[0.43, 0.39, 1]} material={mats.ring}><circleGeometry args={[1, 40]} /></mesh> : null}
-      <mesh position={[side * 0.004, yolkC[1], 0]} rotation={[0, -side * Math.PI / 2, 0]} scale={[ring ? 0.38 : 0.4, ring ? 0.34 : 0.36, 1]} material={ring ? mats.yolkDry : mats.yolk}><circleGeometry args={[1, 40]} /></mesh>
+    <group position={[x, 0, 0]}>
+      <mesh geometry={mats.halfGeo} material={mats.shell(shell)} />
+      <mesh geometry={faceGeo} position={[0, 0, 0.002]} material={mats.white} />
+      {ring ? <mesh position={[0, yc, 0.004]} scale={[0.43, 0.39, 1]} material={mats.ring}><circleGeometry args={[1, 40]} /></mesh> : null}
+      <mesh position={[0, yc, 0.006]} scale={[ring ? 0.37 : 0.4, ring ? 0.33 : 0.36, 1]} material={ring ? mats.yolkDry : mats.yolk}><circleGeometry args={[1, 40]} /></mesh>
     </group>
   );
 };
@@ -31,17 +28,21 @@ const EggHalf: React.FC<{ side: 1 | -1; open: number; ring: boolean; shell: stri
 const Egg: React.FC<{ frame: number; fps: number; cutAt: number; ring: boolean; shell: string; x0: number; mats: any; faceGeo: any; spin: number }> = ({ frame, fps, cutAt, ring, shell, x0, mats, faceGeo, spin }) => {
   const intro = interpolate(frame, [0, 18], [0, 1], { extrapolateRight: "clamp", easing: Easing.bezier(0.16, 1, 0.3, 1) });
   const knifeY = interpolate(frame, [cutAt - 14, cutAt], [2.4, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
-  const open = interpolate(frame, [cutAt + 2, cutAt + 2 + 1.1 * fps], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const open = ease(interpolate(frame, [cutAt + 2, cutAt + 2 + 0.9 * fps], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
   const whole = frame < cutAt + 2;
-  const turn = whole ? (frame / fps) * spin : 0;
+  const turn = whole ? (frame / fps) * spin * 0.7 : 0;
   const knifeOp = interpolate(frame, [cutAt, cutAt + 6], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <group position={[x0, 0.8, 0]} scale={Math.max(0.001, intro)}>
-      <group rotation={[0, turn, 0]}>
-        <EggHalf side={1} open={open} ring={ring} shell={shell} x0={0} mats={mats} faceGeo={faceGeo} />
-        <EggHalf side={-1} open={open} ring={ring} shell={shell} x0={0} mats={mats} faceGeo={faceGeo} />
-      </group>
-      <mesh position={[0, knifeY + 0.2, 0]} visible={knifeOp > 0.02}>
+      {whole ? (
+        <group rotation={[0, turn, 0]}><mesh geometry={mats.fullGeo} material={mats.shell(shell)} /></group>
+      ) : (
+        <>
+          <EggHalf x={-0.1 - 0.62 * open} ring={ring} shell={shell} mats={mats} faceGeo={faceGeo} />
+          <EggHalf x={0.1 + 0.62 * open} ring={ring} shell={shell} mats={mats} faceGeo={faceGeo} />
+        </>
+      )}
+      <mesh position={[0, knifeY + 0.2, 0.2]} visible={knifeOp > 0.02}>
         <boxGeometry args={[0.02, 2.2, 1.5]} />
         <meshStandardMaterial color="#D8DDE2" metalness={0.8} roughness={0.25} transparent opacity={knifeOp} />
       </mesh>
@@ -55,12 +56,12 @@ export const LorEgg3D: React.FC<{ mode?: "halve" | "compare"; ring?: boolean; sh
   const shellCol = shell === "brown" ? "#C99A62" : "#F5EFE0";
   const mats = useMemo(() => {
     const prof = eggProfile(48, A, H);
-    const halfCache: Record<string, any> = {};
     const tex = canvasTex((c, S) => { c.fillStyle = "#FFFBF0"; c.fillRect(0, 0, S, S); dots(c, S, 3, 260, "#EADFC4", 1, 3, 0.5); }, 256, 1);
     const yolkTex = canvasTex((c, S) => { const g = c.createRadialGradient(S * 0.42, S * 0.4, S * 0.05, S / 2, S / 2, S * 0.55); g.addColorStop(0, "#FFD35A"); g.addColorStop(0.7, "#F0A91E"); g.addColorStop(1, "#D98A12"); c.fillStyle = g; c.fillRect(0, 0, S, S); dots(c, S, 8, 120, "#FFE08A", 1, 3, 0.5); }, 256, 1);
     const dryTex = canvasTex((c, S) => { c.fillStyle = "#EBCB6A"; c.fillRect(0, 0, S, S); dots(c, S, 12, 700, "#D9B24C", 1, 4, 0.7); dots(c, S, 22, 500, "#F6E3A0", 1, 3, 0.7); }, 256, 1);
     return {
-      halfGeo: (side: 1 | -1) => (halfCache[side] ||= new THREE.LatheGeometry(prof, 48, side === 1 ? 0 : Math.PI, Math.PI)),
+      halfGeo: new THREE.LatheGeometry(prof, 48, Math.PI / 2, Math.PI),
+      fullGeo: new THREE.LatheGeometry(prof, 48, 0, Math.PI * 2),
       shell: (col: string) => new THREE.MeshStandardMaterial({ color: col, roughness: 0.55, side: THREE.DoubleSide }),
       white: new THREE.MeshStandardMaterial({ map: tex, roughness: 0.6, side: THREE.DoubleSide }),
       yolk: new THREE.MeshStandardMaterial({ map: yolkTex, roughness: 0.45, side: THREE.DoubleSide }),
