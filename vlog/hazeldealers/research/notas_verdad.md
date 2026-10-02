@@ -1,0 +1,11 @@
+# Verificación de contenido (búsquedas web, 2-oct-2026)
+- Plata spot ~US$65/oz (fortune.com 3-sep-2026). Sterling 92,5 %. Cremera lisa 3-5 oz troy → >US$100 de metal. Compradores justos 70-85 % de melt (comentarios RK + práctica).
+- Oro spot ~US$4.300-4.440/oz (pricegold.net, sep-2026) → 24K ~US$140/g · 14K (58,5 %) ~US$80/g de metal. Compradores: pawn 50 % o menos; buenos 80-90 % (comentarios RK: "50-75% from a buyer or pawn shop", refinería). Descuentan piedras (comentario RK).
+- Bijou firmada: Trifari/Coro/Weiss típicos US$20-80; Haskell/Eisenberg US$100-300 (estimonia/lionandunicorn: "signed $50-800", Eisenberg típico $15-100). Usado prudente.
+- Pyrex: Butterprint suelto US$31-75 mediana 40 (underpricedai, 41 ventas eBay); juegos completos 300+; PYREX mayúsculas = Corning vintage, minúsculas = moderno; lavavajillas destruye valor.
+- Hamilton gold-filled no anda: US$55-150 vendidos (ebth/eBay).
+- RPPC Main Street/depot pueblo chico: US$40-200+ (playle.com, appraisily). Impresas comunes US$1-2.
+- Parker 51 sin restaurar US$40-100 prudente; restaurado US$150+ (unsharpen/rtlott).
+- Stanley No.4 Bailey US$20-110; Bed Rock 604/606/608 US$100-430 (handplane.com) → "100 a 300" prudente.
+- Porcelana completa, Hummel comunes, platos de colección: valor bajo (consenso; dicho como rango amplio).
+- Comentarios RK (hxthMM8xIJE, com_gold.txt): ¿qué % del spot paga el comprador? · descuento de piedras · gold-filled GF · "do one on silver" · foto del sello con el celular y zoom.
