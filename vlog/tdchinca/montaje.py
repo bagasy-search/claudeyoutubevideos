@@ -109,6 +109,21 @@ for g in INS:
 for cm in DIR.get('cam', []):
     for s in segs:
         if s['key'] == cm['id']: s['cam'] = cm['cam']; s.update({k: v for k, v in cm.items() if k in ('rate', 'freezeAt')})
+# minuto 1: toda toma de más de ~1,8 s se parte en tramos de ~1,4 s (el video sigue corrido) y los impares saltan a un encuadre más
+# cerrado (jump-cut); el destello + golpe de cada frontera los pone el bloque de "destellos" de más abajo
+_ORG = [[35, 50], [62, 45], [48, 38], [55, 60], [40, 42]]; _new = []
+for s in segs:
+    if s['from'] < 58 * FPS and s['dur'] > 54 and s.get('freezeAt') is None:
+        n = max(2, round(s['dur'] / 42)); L = s['dur'] // n
+        for k in range(n):
+            d = L if k < n - 1 else s['dur'] - L * (n - 1)
+            c = dict(s['cam']) if k == 0 and s.get('cam') else {}
+            if k > 0: c = {'push': [1.22 + 0.05 * (k % 2), 1.26 + 0.05 * (k % 2)], 'origin': _ORG[(k + len(_new)) % 5]}
+            else: c.pop('whipOut', None)
+            if k < n - 1: c.pop('whipOut', None)
+            _new.append({**s, 'key': s['key'] + (f'_{k}' if k else ''), 'from': s['from'] + k * L, 'dur': d, 'startFrom': s['startFrom'] + k * L, 'cam': c})
+    else: _new.append(s)
+segs = _new
 # cámara lenta de insertos marcados (se estira el clip; no pasa de su largo)
 overlays = []; sfx = []
 for i, o in enumerate(DIR['overlays']):
