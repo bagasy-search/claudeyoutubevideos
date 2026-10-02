@@ -16,7 +16,7 @@ export const OpBed: React.FC<{ src?: string; seed?: number; dim?: number }> = ({
   const st: React.CSSProperties = { position: "absolute", width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z.toFixed(4)})`, transformOrigin: `${(30 + 40 * r(3)).toFixed(1)}% ${(30 + 40 * r(4)).toFixed(1)}%` };
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: OP.kraft }}>
-      {/\.mp4$/.test(src) ? <OffthreadVideo src={staticFile(src)} muted style={st} /> : <Img src={staticFile(src)} style={st} />}
+      {/\.mp4$/.test(src) ? <OffthreadVideo src={staticFile(src)} muted playbackRate={Math.max(0.4, Math.min(1, 262 / Math.max(1, durationInFrames)))} style={st} /> : <Img src={staticFile(src)} style={st} />}
       {dim > 0 ? <AbsoluteFill style={{ backgroundColor: `rgba(44,42,40,${dim})` }} /> : null}
     </AbsoluteFill>
   );

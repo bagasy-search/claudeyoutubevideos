@@ -108,7 +108,7 @@ export const SHOTS = [
   S(22, "all at the same time", "st", "st_flock.2"),
   S(23, "", "bi", "b_storeaisle", { p: BI("The aisle of a small rural feed store: paper feed sacks of different kinds stacked on pallets with handwritten cardboard price signs, layer feed, all flock, scratch grains, a flatbed cart, fluorescent light."), anim: "the camera moves slowly down the aisle past the stacked sacks" }),
   S(23, "But in the molt, I switch", "c", "OpFeedSack3D", { props: { a: { name: "LAYER", pct: "16%", price: "$17", color: "#4F7A35" }, b: { name: "ALL-FLOCK", pct: "20%", price: "$24", color: "#A8322D" }, title: "Read the feed tag", diff: "+4% protein", moveAt: 40 } }),
-  S(24, "", "bi", "b_storecounter", { p: BI(`${STORE}: the worn wooden counter by the register with a 50 pound paper feed sack lying on it, an older woman's hands counting out folded dollar bills, a calendar and a coffee mug behind the counter.`), anim: "the hands lay down the dollar bills one by one on the counter" }),
-  S(24, "The twenty percent all-flock", "c", "OpLedger", { props: { title: "Feed store · this week", rows: [{ item: "Layer feed, 50 lb", price: "$17", note: "what I usually buy" }, { item: "All-flock 20%, 50 lb", price: "$24", note: "for the molt" }], total: "$24", totalLabel: "Spent", every: 30, bed: "b_storecounter" } }),
+  S(24, "", "st", "st_scratch.3"),
+  S(24, "The twenty percent all-flock", "c", "OpLedger", { props: { title: "Feed store · this week", rows: [{ item: "Layer feed, 50 lb", price: "$17", note: "what I usually buy" }, { item: "All-flock 20%, 50 lb", price: "$24", note: "for the molt" }], total: "$24", totalLabel: "Spent", every: 30, bed: "b_receipt" } }),
 ];
 // prompts que no deben ir con corrección: sin "blurred" nunca (el hook de gpt-image lo exige: nothing blurred out)
