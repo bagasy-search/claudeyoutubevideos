@@ -1,5 +1,5 @@
 /**
- * Main_valavena — Doctora Valeria Alcázar · "Clara de Huevo + 1 Cucharada de Maicena: Efecto Lifting en 20 Minutos"
+ * Main_valnacar — Doctora Valeria Alcázar · "Clara de Huevo + 1 Cucharada de Maicena: Efecto Lifting en 20 Minutos"
  * Motor de Valeria (cues anclados al ms, 100 % de cobertura) con el MONTAJE DE DR. FEDERER (kit FedKit:
  * papel clínico, Oswald/Inter, teal, sellos rojos, tarjetas 3D sobre cama de foto real).
  *   avatar = ventana InfiniteTalk · clip/foto = stock · gen = gpt-image→agnes · resto = componentes FedKit ·
@@ -9,7 +9,7 @@ import React from 'react';
 import {AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig} from 'remotion';
 import {Clip, Foto, AvatarWin, Gen} from './Piezas';
 import {C, FedTalk, FedChapter, BigNumber, RedFlags, CrossList, CheckList, StepsPaper, MythFlip, SplitCompare, FactorChips, QuoteCard, StoryCard, QuestionCards, LoopCards, DayTimeline, RemedyBoard, MethodsTrio, FedRecipe, FedFaceZones, FedLamina, GuideCTA} from './FedKit';
-import {BEATS, TOTAL_FRAMES_VV} from './cues_valavena.gen';
+import {BEATS, TOTAL_FRAMES_VV} from './cues_valnacar.gen';
 
 const CueScene: React.FC<{cue: any}> = ({cue}) => {
   const p = cue;
@@ -42,7 +42,7 @@ const CueScene: React.FC<{cue: any}> = ({cue}) => {
   }
 };
 
-export const MainValAvena: React.FC = () => {
+export const MainValNacar: React.FC = () => {
   const {fps} = useVideoConfig();
   const base = BEATS.filter((b: any) => b.kind !== 'talk');
   const talks = BEATS.filter((b: any) => b.kind === 'talk');
@@ -53,7 +53,7 @@ export const MainValAvena: React.FC = () => {
   );
   return (
     <AbsoluteFill style={{background: C.paper, overflow: 'hidden'}}>
-      <Audio src={staticFile('med/valavena.m4a')} />
+      <Audio src={staticFile('med/valnacar.m4a')} />
       {base.map((cue: any) => seq(cue, <CueScene cue={cue} />))}
       {talks.map((cue: any) => seq(cue, <FedTalk kicker={cue.kicker} title={cue.title} hot={cue.hot} stamp={cue.stamp} tone={cue.tone} />))}
     </AbsoluteFill>
@@ -61,4 +61,4 @@ export const MainValAvena: React.FC = () => {
 };
 
 export const TOTAL_FRAMES = TOTAL_FRAMES_VV;
-export default MainValAvena;
+export default MainValNacar;
