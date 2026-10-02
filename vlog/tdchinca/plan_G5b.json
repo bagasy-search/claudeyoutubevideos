@@ -1,0 +1,104 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G5b/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, same clothes. On the workbench: a rusty thick steel pipe, a marker, a caliper, an angle grinder and a thin steel sheet. He stands at the bench. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the stake head against the pipe ring, showing it does not enter, looking at the camera with a wry smile. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he lifts the pipe ring away from a traced circle on a thin sheet, looking at it, a slightly unsure face. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "D_b063_1",
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of an angle grinder cutting a rough circle out of a thin steel sheet, sparks flying."
+  },
+  {
+   "id": "D_b063_2",
+   "from": [
+    "D_b063_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the circle cut out, a rough round disc sitting on the bench beside the sheet."
+  },
+  {
+   "id": "D_b064_1",
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a hand drill making an eighteen millimetre hole in the centre of a steel disc, a thin curl of metal rising."
+  },
+  {
+   "id": "D_b064_2",
+   "from": [
+    "D_b064_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the hole done, a bright drilled edge, the shank end poking through it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b061",
+   "a": "K0",
+   "b": "K1",
+   "text": "O sea que no entra. Todavía no lo sabía, pero ese centímetro me iba a dar dos problemas.",
+   "action": "he tries to press a square stake head into the pipe ring, it does not go in, he frowns at the camera.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b061.wav"
+  },
+  {
+   "id": "b062",
+   "a": "K1",
+   "b": "K2",
+   "text": "Paso cuatro, la tapa. Y acá hice lo que hice la primera vez: agarré la chapa que tenía a mano. Fina, de tres milímetros.",
+   "action": "he lays a thin three-millimetre steel sheet on the bench and traces the pipe ring on it with a marker, talking.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b062.wav"
+  },
+  {
+   "id": "b063",
+   "a": "K2",
+   "b": "K2",
+   "detail": true,
+   "d1": "close view of an angle grinder cutting a rough circle out of a thin steel sheet, sparks flying",
+   "d2": "the circle cut out, a rough round disc sitting on the bench beside the sheet",
+   "text": "La corto, redonda. Me salió lindo, y fácil. Hasta ahí, un placer.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b063.wav"
+  },
+  {
+   "id": "b064",
+   "a": "K2",
+   "b": "K2",
+   "detail": true,
+   "d1": "close view of a hand drill making an eighteen millimetre hole in the centre of a steel disc, a thin curl of metal rising",
+   "d2": "the hole done, a bright drilled edge, the shank end poking through it",
+   "text": "Y el agujero de dieciocho milímetros en el medio, justo para que el vástago pase ajustado.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b064.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G5b/vlog_G5b.mp4"
+}

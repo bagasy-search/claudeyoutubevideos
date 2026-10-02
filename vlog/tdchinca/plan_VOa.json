@@ -1,0 +1,84 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/VOa/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The place is a neighbourhood street in a small Argentine town: cracked pavement, a big yellow rubbish skip full of building rubble (bricks, plaster, old pipes) parked beside a half-built house with a plastered wall. Light: bright overcast daylight, correctly exposed. The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up to the elbows, worn and stained with grease and dust, dark work trousers, hands with grease and grime. He stands beside the yellow skip looking into it. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands at the edge of the skip leaning in, one hand on the rim, pointing at something inside it with the other. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the dusty hammer drill up in both hands with its cable hanging cut, looking at it with a pleased frown. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the hammer drill next to his ear, eyes on the ground, listening carefully. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stops in the street with the hammer drill on his shoulder and turns his head to the camera, grinning slightly. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b020",
+   "a": "K0",
+   "b": "K1",
+   "text": "Justo esa semana, volviendo del taller, pasé al lado de una obra. Y en el volquete, entre los escombros, lo vi.",
+   "action": "he walks along a neighbourhood street beside a big yellow rubbish skip full of rubble, looking into it, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b020.wav"
+  },
+  {
+   "id": "b021",
+   "a": "K1",
+   "b": "K2",
+   "text": "Un rotomartillo SDS-max, de los pesados. Sin ficha, con el cable pelado y lleno de polvo de cemento.",
+   "action": "he pulls a dusty grey SDS-max hammer drill out of the rubble by its handle, cable trailing without a plug, and looks it over.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b021.wav"
+  },
+  {
+   "id": "b022",
+   "a": "K2",
+   "b": "K3",
+   "text": "Lo sacudí al lado de la oreja. Se oía entero por dentro. Nadie lo miraba, así que me lo llevé al hombro.",
+   "action": "he presses the chisel end against his palm and rattles the tool next to his ear, listening.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b022.wav"
+  },
+  {
+   "id": "b023",
+   "a": "K3",
+   "b": "K4",
+   "text": "Ya sé lo que estás pensando: capaz que estaba roto. Por eso lo primero fue revisarlo.",
+   "action": "he walks away down the street with the heavy hammer drill on his shoulder, looking back at the camera with a mischievous smile.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b023.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/VOa/vlog_VOa.mp4"
+}

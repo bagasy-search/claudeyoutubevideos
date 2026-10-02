@@ -2190,13 +2190,13 @@
      {
       "t": "100 ESTACAS",
       "beat": "b010",
-      "word": "cien",
+      "word": "100",
       "hl": "yellow"
      },
      {
       "t": "120 METROS",
       "beat": "b010",
-      "word": "ciento"
+      "word": "120"
      }
     ]
    },
@@ -2220,7 +2220,7 @@
     ],
     "tone": "white"
    },
-   "word": "maza",
+   "word": "cinco",
    "dur": 1.8,
    "sfx": [
     {
@@ -2261,7 +2261,7 @@
      {
       "t": "LA APUESTA",
       "beat": "b017",
-      "word": "apuesta",
+      "word": "vecino",
       "hl": "yellow"
      },
      {
@@ -2310,7 +2310,7 @@
      4
     ]
    },
-   "word": "rotomartillo",
+   "word": "roto",
    "dur": 2.4,
    "sfx": [
     {
@@ -2675,7 +2675,7 @@
     ],
     "gap": 46
    },
-   "word": "sesenta",
+   "word": "68",
    "until": "b060",
    "off": -0.2,
    "sfx": [
@@ -2900,7 +2900,7 @@
     ],
     "gap": 40
    },
-   "word": "setenta",
+   "word": "70",
    "until": "b089",
    "off": -0.1,
    "sfx": [
@@ -3019,7 +3019,7 @@
     ],
     "tone": "yellow"
    },
-   "word": "biselo",
+   "word": "cuarenta",
    "dur": 2.6,
    "off": -0.1,
    "sfx": [
@@ -3092,17 +3092,17 @@
      {
       "t": "9 s",
       "beat": "b112",
-      "word": "nueve"
+      "word": "9"
      },
      {
       "t": "· 8 s",
       "beat": "b112",
-      "word": "ocho"
+      "word": "8"
      },
      {
       "t": "· 7,5 s",
       "beat": "b112",
-      "word": "siete",
+      "word": "7",
       "hl": "yellow"
      }
     ]
@@ -3409,7 +3409,7 @@
     ],
     "tone": "red"
    },
-   "word": "sesenta",
+   "word": "62",
    "dur": 2.4,
    "off": -0.1,
    "sfx": [

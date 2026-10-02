@@ -1,0 +1,94 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G4a/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, same clothes. A broken SDS-max drill bit is clamped in the steel vice on the workbench, an angle grinder and safety goggles beside it. He stands at the bench. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a marker at a line on the bit clamped in the vice, looking down at it through safety goggles. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "D_b052_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of an angle grinder cutting the shank of a bit clamped in a vice, orange sparks flying to the right."
+  },
+  {
+   "id": "D_b052_2",
+   "from": [
+    "D_b052_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same cut nearly through, a thin orange glow at the cut and a heavy spray of sparks."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the short cut shank up to the light between two fingers, looking at its end with a frown. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a small tin with the cut shank inside, shaking it lightly, grinning. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b051",
+   "a": "K0",
+   "b": "K1",
+   "text": "Paso dos. Pongo la mecha rota en la morsa y marco diez centímetros de cola, contando desde la punta del vástago.",
+   "action": "he clamps the broken drill bit in a vice on the workbench, wearing safety goggles, and marks a line with a marker.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b051.wav"
+  },
+  {
+   "id": "b052",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of an angle grinder cutting the shank of a bit clamped in a vice, orange sparks flying to the right",
+   "d2": "the same cut nearly through, a thin orange glow at the cut and a heavy spray of sparks",
+   "text": "Amoladora, con anteojos puestos. Las chispas van derecho a los ojos, y un ojo no se compra en la ferretería.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b052.wav"
+  },
+  {
+   "id": "b053",
+   "a": "K1",
+   "b": "K2",
+   "text": "Esto es acero templado, muy duro. Acuérdate de este dato, porque más adelante me pasa factura.",
+   "action": "he blows on the cut end of the shank and inspects it under the fluorescent light.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b053.wav"
+  },
+  {
+   "id": "b054",
+   "a": "K2",
+   "b": "K3",
+   "text": "Y el resto de la mecha no se tira: lo guardo, que siempre sirve para un punzón o un pasador.",
+   "action": "he puts the cut shank into a small tin and shakes it, grinning at the camera.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b054.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G4a/vlog_G4a.mp4"
+}

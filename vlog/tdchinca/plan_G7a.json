@@ -1,0 +1,159 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G7a/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, same clothes. On the workbench lies a cracked adapter (a pipe ring with a dented thin lid and a cracked weld) and a split wooden stake head. He stands leaning on the bench. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he leans over the bench looking at the cracked adapter, both hands flat, thinking hard. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "D_b086_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a thin three-millimetre steel lid on a pipe ring, a thumb pressing the dent in its centre."
+  },
+  {
+   "id": "D_b086_2",
+   "from": [
+    "D_b086_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same lid seen from the side, showing how much it has bowed inward."
+  },
+  {
+   "id": "D_b087_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a wooden stake head in the palm of a hand, its sharp corners chipped and splintered along the grain."
+  },
+  {
+   "id": "D_b087_2",
+   "from": [
+    "D_b087_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same head turned, a long crack visible running down the side of the wood."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the pipe ring with the broken stake head jammed diagonally in it, looking at the gap on one side. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "D_b089_1",
+   "from": [
+    "K2"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a caliper across the diagonal of a square stake head reading seventy millimetres, then across the inside of a pipe ring reading sixty-eight."
+  },
+  {
+   "id": "D_b089_2",
+   "from": [
+    "D_b089_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same stake head with its corners planed, the caliper reading sixty across the diagonal."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the cracked shank and disc in his open palm toward the camera with a knowing look. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands with his arms open in a small shrug, looking at the camera with an amused face. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b085",
+   "a": "K0",
+   "b": "K1",
+   "text": "Dos problemas, y los dos tienen explicación. Primero, la tapa.",
+   "action": "he sets the cracked adapter down on the bench under the fluorescent tube and leans over it with his hands flat on the wood.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b085.wav"
+  },
+  {
+   "id": "b086",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of a thin three-millimetre steel lid on a pipe ring, a thumb pressing the dent in its centre",
+   "d2": "the same lid seen from the side, showing how much it has bowed inward",
+   "text": "Tres milímetros es poco. La tapa se dobla como una cuchara, y el golpe no baja parejo, se queda en el centro.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b086.wav"
+  },
+  {
+   "id": "b087",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of a wooden stake head in the palm of a hand, its sharp corners chipped and splintered along the grain",
+   "d2": "the same head turned, a long crack visible running down the side of the wood",
+   "text": "Segundo, las cuatro esquinas de la estaca. Son la parte más débil de la madera, y ahí se abre la veta.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b087.wav"
+  },
+  {
+   "id": "b088",
+   "a": "K1",
+   "b": "K2",
+   "text": "La estaca entra torcida, el golpe va de costado, y la madera se abre. Lo que la copa tiene que hacer es abrazarla.",
+   "action": "he pushes the broken stake head against the inner wall of the pipe ring showing it does not fit evenly, looking at it.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b088.wav"
+  },
+  {
+   "id": "b089",
+   "a": "K2",
+   "b": "K2",
+   "detail": true,
+   "d1": "close view of a caliper across the diagonal of a square stake head reading seventy millimetres, then across the inside of a pipe ring reading sixty-eight",
+   "d2": "the same stake head with its corners planed, the caliper reading sixty across the diagonal",
+   "text": "La cuenta era esta: setenta de diagonal, sesenta y ocho de hueco. No entra. Con las esquinas biseladas, sesenta. Entra justo.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b089.wav"
+  },
+  {
+   "id": "b090",
+   "a": "K2",
+   "b": "K3",
+   "text": "Y la soldadura. Te dije que la mecha es acero templado, y el acero templado no se suelda en frío.",
+   "action": "he taps the hardened steel shank on the bench with a small hammer and shows the crack at the weld, looking at the camera.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b090.wav"
+  },
+  {
+   "id": "b091",
+   "a": "K3",
+   "b": "K4",
+   "text": "Soldar acero templado sin precalentar es como pegar un vidrio con cinta: al primer golpe, se abre.",
+   "action": "he shrugs and shakes his head with a small laugh, tapping his temple.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b091.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G7a/vlog_G7a.mp4"
+}

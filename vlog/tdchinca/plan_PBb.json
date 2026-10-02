@@ -1,0 +1,85 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/PBb/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/H1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "W"
+   ],
+   "prompt": "Same place, same framing, same clothes. A row of short square eucalyptus stakes stands in the grass. He stands holding the hammer drill with the adapter in front of a stake, ear defenders around his neck. The neighbour stands a few steps away with crossed arms. The neighbour is exactly the man of the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds up the dented adapter beside his face and looks at the camera, pressing his lips together. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the neighbour with a hand on the presenter's shoulder, both looking at the cracked adapter in the grass. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands with the cracked adapter in one hand, looking at it thoughtfully, chin down. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b082",
+   "a": "K0",
+   "b": "K1",
+   "text": "Y la tapa, abollada como una lata. Y la soldadura, agrietada. Dos golpes, y todo el trabajo al suelo.",
+   "action": "he lifts the cracked adapter and shows it to the camera with a resigned look, the neighbour laughing softly out of frame. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b082.wav"
+  },
+  {
+   "id": "b083",
+   "a": "K1",
+   "b": "K2",
+   "secs": 4,
+   "line": "Ya te lo dije. Con la maza no falla.",
+   "who": "the neighbour, a thin wiry man of about 62 with a white moustache and a faded green cloth cap (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 62-year-old man",
+   "refs": [
+    "WF"
+   ],
+   "text": "Ya te lo dije. Con la maza no falla.",
+   "action": "the neighbour claps a hand on the presenter's shoulder, shaking his head kindly but amused. The presenter (third reference image face) listens and reacts silently, he does not speak."
+  },
+  {
+   "id": "b084",
+   "a": "K2",
+   "b": "K3",
+   "text": "Tenía razón esta vez. Pero yo quería saber por qué. Porque una cosa rota siempre dice por qué se rompió.",
+   "action": "he pats the neighbour's hand off his shoulder with a tired smile and picks up the adapter, thinking. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b084.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/PBb/vlog_PBb.mp4"
+}

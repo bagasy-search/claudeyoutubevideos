@@ -1,0 +1,159 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G1c/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "The place is his cluttered neighbourhood workshop shed in Argentina: concrete floor with old oil stains, a thick scarred wooden workbench along the back wall with a steel vice, an angle grinder, a stick welder with cables, a pile of scrap (pipes, flat bars, plates, bearings, plough discs, old gas cylinders) in the right corner, a pegboard of hand tools and a scratched blackboard on the wall, and the big sliding door on the left open to the yard. Light: daylight from the open door on the left plus one fluorescent tube on the ceiling; the side near the door brighter and a little cooler, the back corners dimmer, everything correctly exposed. The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up to the elbows, worn and stained with grease and dust, dark work trousers, hands with grease and grime. He stands beside the pile of scrap in the right corner of the workshop, one boot on a steel pipe, looking at the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands behind the workbench with the hammer drill in front of him, the rag over his shoulder, looking at the tool. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "D_b027_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a rusty piece of thick round steel pipe about seven centimetres wide lying on the wooden bench beside a tape measure."
+  },
+  {
+   "id": "D_b027_2",
+   "from": [
+    "D_b027_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same pipe with a thumb pressing the tape measure to its open end, a chalk line on it."
+  },
+  {
+   "id": "D_b028_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a thick square plate of steel, rust on the edges, on the bench next to a caliper."
+  },
+  {
+   "id": "D_b028_2",
+   "from": [
+    "D_b028_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same plate with the caliper closed over its edge showing the thickness."
+  },
+  {
+   "id": "D_b029_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a broken hammer drill bit lying on the bench, its long shank ending in a splintered end."
+  },
+  {
+   "id": "D_b029_2",
+   "from": [
+    "D_b029_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same bit now held up between two fingers, the useful shank about ten centimetres long."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds his arms open above the three pieces on the bench, shrugging with a half smile, looking at the camera. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the wooden stake upright next to his face, tapping it, looking at the camera. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds three welding electrodes and a worn cutting disc in one hand, looking at the camera. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b026",
+   "a": "K0",
+   "b": "K1",
+   "text": "Pero antes, el inventario. Lo que vas a necesitar es poco, y casi todo es chatarra.",
+   "action": "he sets the dusty hammer drill down on the wooden workbench of his workshop and wipes his hands on a rag, looking at it.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b026.wav"
+  },
+  {
+   "id": "b027",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of a rusty piece of thick round steel pipe about seven centimetres wide lying on the wooden bench beside a tape measure",
+   "d2": "the same pipe with a thumb pressing the tape measure to its open end, a chalk line on it",
+   "text": "Un caño de setenta y seis milímetros de diámetro, de una cama vieja. Diez centímetros de largo te alcanzan.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b027.wav"
+  },
+  {
+   "id": "b028",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of a thick square plate of steel, rust on the edges, on the bench next to a caliper",
+   "d2": "the same plate with the caliper closed over its edge showing the thickness",
+   "text": "Una chapa de diez milímetros. La mía era la tapa de una alcantarilla que se había roto en la vereda.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b028.wav"
+  },
+  {
+   "id": "b029",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of a broken hammer drill bit lying on the bench, its long shank ending in a splintered end",
+   "d2": "the same bit now held up between two fingers, the useful shank about ten centimetres long",
+   "text": "Y la cola de una mecha SDS-max rota. No hace falta gastar una buena: con diez centímetros de vástago alcanza.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b029.wav"
+  },
+  {
+   "id": "b030",
+   "a": "K1",
+   "b": "K2",
+   "text": "Eso es todo lo que lleva el hincapostes. Un caño, una chapa y una mecha rota. Gasto en materiales: cero.",
+   "action": "he stands with the three pieces lined up on the bench in front of him, tapping each with a finger, talking to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b030.wav"
+  },
+  {
+   "id": "b031",
+   "a": "K2",
+   "b": "K3",
+   "text": "Las estacas: eucalipto de dos por dos pulgadas, ochenta centímetros. Cuarenta van enterrados, cuarenta afuera.",
+   "action": "he takes a length of wooden two-by-two stake from a bundle leaning on the wall and holds it toward the camera.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b031.wav"
+  },
+  {
+   "id": "b032",
+   "a": "K3",
+   "b": "K4",
+   "text": "Y de consumibles: tres electrodos, un disco de corte, y arena seca para más adelante.",
+   "action": "he opens a cardboard box on the bench and takes out a few welding electrodes and a spare cutting disc, showing them.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b032.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G1c/vlog_G1c.mp4"
+}

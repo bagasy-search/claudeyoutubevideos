@@ -188,9 +188,9 @@ env = np.ones(N, np.float32); ramp = int(SR * 1.5)
 env[:int(DIR['music'].get('start', 6.0) * SR)] = 0
 e_end = int((TOTAL - 1.0) * SR); env[e_end:] = 0; env[e_end - ramp * 2:e_end] = np.minimum(env[e_end - ramp * 2:e_end], np.linspace(1, 0, ramp * 2))
 # ambiente parejo del patio en el minuto 1 (compuerta: 0 silencios) — entra en 0, se va entre 60 y 64 s
-amb = load(PUB + 'sfx/ra_ambient_day.mp3'); ab = np.zeros(N, np.float32); pos = 0
+amb = fade(load(PUB + 'sfx/amb_taller.mp3'), 0.25, 0.25); ab = np.zeros(N, np.float32); pos = 0
 while pos < min(N, int(66 * SR)):
-    j = min(N, pos + len(amb)); ab[pos:j] += amb[:j - pos]; pos += len(amb)
+    j = min(N, pos + len(amb)); ab[pos:j] += amb[:j - pos]; pos += len(amb) - int(0.25 * SR)
 ab *= 10 ** ((VREF - 11 - rms_db(amb)) / 20)
 aenv = np.zeros(N, np.float32); a0, a1 = int(60 * SR), int(64 * SR); aenv[:a0] = 1; aenv[a0:a1] = np.linspace(1, 0, a1 - a0)
 mix = voz + fol + fx + bed * env + ab * aenv
@@ -224,7 +224,7 @@ for P in sorted({g['P'] for g in G if g.get('P')} | {g['P'] for g in INS}):
 
 data = {'segs': segs, 'overlays': overlays, 'audio': 'tdchinca_fish.wav'}
 open(R + 'src/tdchinca/timeline.gen.ts', 'w', encoding='utf8').write(
-    '// GENERADO por vlog/tdchinca/montaje.py — no editar\nimport type { VlogData } from "../tfb/TdcVlogMain";\n'
+    '// GENERADO por vlog/tdchinca/montaje.py — no editar\nimport type { VlogData } from "../tdc/TdcVlogMain";\n'
     f'export const TOTAL_FRAMES_TDCHINCA = {TOTAL_FR};\nexport const DATA_TDCHINCA: VlogData = {json.dumps(data, ensure_ascii=False)};\n')
 assets = sorted({s['src'] for s in segs} | {v for o in overlays for k, v in o['props'].items() if isinstance(v, str) and re.search(r'\.(png|jpg|mp4)$', v)})
 open(R + '_tdchinca_assets.txt', 'w', encoding='utf8').write('\n'.join(assets) + '\n')

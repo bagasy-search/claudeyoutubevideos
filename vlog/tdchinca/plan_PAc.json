@@ -1,0 +1,80 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/PAc/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/H1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, same clothes. Earlier, before any work: the fence on the left is fallen and sagging with rotten stakes, no driven stakes, a pile of new eucalyptus stakes lies in the grass. The neighbour is not there. He stands in the middle of the grass looking along the fence, hands on his hips. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands with arms crossed facing the neighbour, a challenging half smile. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the neighbour with his hand held out over the fence wire, a big challenging grin. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the shaken hand up, looking at the camera with a raised eyebrow and a half smile. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b017",
+   "a": "K0",
+   "b": "K1",
+   "text": "Y se lo dije al vecino: si clavo una estaca en menos de un minuto, el asado del domingo lo pones tú.",
+   "action": "he crosses his arms and looks at the neighbour with a mischievous half smile, chin up.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b017.wav"
+  },
+  {
+   "id": "b018",
+   "a": "K1",
+   "b": "K2",
+   "secs": 5,
+   "line": "Trato hecho. Y si pierdes, la carne la pones tú y la leña también.",
+   "who": "the neighbour, a thin wiry man of about 62 with a white moustache and a faded green cloth cap (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 62-year-old man",
+   "refs": [
+    "WF"
+   ],
+   "text": "Trato hecho. Y si pierdes, la carne la pones tú y la leña también.",
+   "action": "the neighbour uncrosses his arms and puts out a big rough hand to shake, laughing. The presenter (third reference image face) listens and reacts silently, he does not speak."
+  },
+  {
+   "id": "b019",
+   "a": "K2",
+   "b": "K3",
+   "text": "Ya no era solo por la espalda. Ahora había un asado en juego, y no pensaba perderlo.",
+   "action": "he shakes the neighbour's hand firmly and turns back to the camera, eyebrows raised. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b019.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/PAc/vlog_PAc.mp4"
+}

@@ -1,0 +1,129 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/PBa/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/H1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "W"
+   ],
+   "prompt": "Same place, same framing, same clothes. A row of short square eucalyptus stakes stands in the grass. He stands holding the hammer drill with the adapter in front of a stake, ear defenders around his neck. The neighbour stands a few steps away with crossed arms. The neighbour is exactly the man of the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he fits the cup over the head of a square stake standing in the grass, holding the hammer drill with both hands, looking at the stake. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he leans on the running hammer drill pressing the cup on the stake, teeth clenched, the stake vibrating. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the neighbour with crossed arms and a smug grin, the presenter looking down at something in the grass, the hammer drill on the ground. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the stake with its head split in two along the grain, looking at it with a grim little frown. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "D_b081_1",
+   "from": [
+    "K4"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of the cup adapter lying on the grass with its thin lid dented like a soft tin can and a hairline crack in the weld around the shank."
+  },
+  {
+   "id": "D_b081_2",
+   "from": [
+    "D_b081_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same view a moment later, a hand lifting the adapter, the crack in the weld now open."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b077",
+   "a": "K0",
+   "b": "K1",
+   "text": "Estaca de dos por dos, tierra del patio, la misma de todo el video. Le apoyo la copa encima, aunque no baja del todo.",
+   "action": "he stands in the grass with the hammer drill fitted with the new adapter, ear defenders around his neck, looking at a stake standing in the soil. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b077.wav"
+  },
+  {
+   "id": "b078",
+   "a": "K1",
+   "b": "K2",
+   "text": "Anteojos, protección de oídos, guantes de cuero. Y nunca, nunca la mano cerca de la estaca.",
+   "action": "he pulls the ear defenders and safety glasses on, checks his stance and squeezes the trigger, hammering on the stake. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b078.wav"
+  },
+  {
+   "id": "b079",
+   "a": "K2",
+   "b": "K3",
+   "secs": 4,
+   "line": "¡Eh! ¿Y eso? Se rajó.",
+   "who": "the neighbour, a thin wiry man of about 62 with a white moustache and a faded green cloth cap (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 62-year-old man",
+   "refs": [
+    "WF"
+   ],
+   "text": "¡Eh! ¿Y eso? Se rajó.",
+   "action": "the neighbour steps closer with his arms crossed, grinning with mocking eyes at the presenter. The presenter (third reference image face) listens and reacts silently, he does not speak."
+  },
+  {
+   "id": "b080",
+   "a": "K3",
+   "b": "K4",
+   "text": "Se partió al medio, por la veta. La estaca número uno, para la leña.",
+   "action": "he picks up the split stake and holds it in the light, looking at its head crushed and cracked down the middle, frowning. The neighbour (fourth reference image face) stays where he is, listening silently.",
+   "refs": [
+    "WF"
+   ],
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b080.wav"
+  },
+  {
+   "id": "b081",
+   "a": "K4",
+   "b": "K4",
+   "detail": true,
+   "d1": "close view of the cup adapter lying on the grass with its thin lid dented like a soft tin can and a hairline crack in the weld around the shank",
+   "d2": "the same view a moment later, a hand lifting the adapter, the crack in the weld now open",
+   "text": "",
+   "action": "DETAIL",
+   "secs": 4
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/PBa/vlog_PBa.mp4"
+}

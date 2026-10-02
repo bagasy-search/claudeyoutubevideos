@@ -1,0 +1,109 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G3a/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, same clothes. On the workbench lies a dusty grey SDS-max hammer drill with a cut cable and a screwdriver beside it. He stands behind the bench. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he lifts off the grey rear cover and looks into the tool at the carbon brushes, one thumb inside. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "D_b039_1",
+   "from": [
+    "K1"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of two small worn carbon brushes held with tweezers over the open motor of a hammer drill, black dust on the grey housing."
+  },
+  {
+   "id": "D_b039_2",
+   "from": [
+    "D_b039_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same two carbon brushes now blown clean and placed back in their holders, the housing wiped."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he presses the new black plug on the end of the cable with his thumb, looking down at it with a calm face. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he wipes the front of the hammer drill with a rag, looking down at it, a smear of grease on his thumb. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands with ear defenders and safety glasses on, a thumb up toward the camera. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b038",
+   "a": "K0",
+   "b": "K1",
+   "text": "Paso uno. Antes de enchufar nada, abro el rotomartillo y miro las escobillas de carbón.",
+   "action": "he holds the hammer drill upside down on the bench and unscrews its rear cover with a screwdriver, looking at the inside.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b038.wav"
+  },
+  {
+   "id": "b039",
+   "a": "K1",
+   "b": "K1",
+   "detail": true,
+   "d1": "close view of two small worn carbon brushes held with tweezers over the open motor of a hammer drill, black dust on the grey housing",
+   "d2": "the same two carbon brushes now blown clean and placed back in their holders, the housing wiped",
+   "text": "Están gastadas, pero todavía sirven. Las soplo, limpio el polvo negro y las vuelvo a poner.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b039.wav"
+  },
+  {
+   "id": "b040",
+   "a": "K1",
+   "b": "K2",
+   "text": "Al cable pelado le pongo una ficha nueva. Ojo con la conexión a tierra: cable verde y amarillo al pin del medio.",
+   "action": "he strips the cut cable with a knife on the bench and screws a new plug on it, looking down at his hands.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b040.wav"
+  },
+  {
+   "id": "b041",
+   "a": "K2",
+   "b": "K3",
+   "text": "Un poco de grasa en el frente, donde entra el vástago. Y ahora sí, a enchufarlo.",
+   "action": "he squeezes grease from a small tube into the front of the hammer drill, looking down.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b041.wav"
+  },
+  {
+   "id": "b042",
+   "a": "K3",
+   "b": "K4",
+   "text": "Protección de oídos, anteojos, guantes. Esto hace un ruido que te deja sordo si no te proteges.",
+   "action": "he puts on ear defenders and safety glasses in front of the camera, touching each in turn.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b042.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G3a/vlog_G3a.mp4"
+}

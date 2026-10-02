@@ -1,0 +1,84 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G2a/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, same clothes. The scratched blackboard on the wall now has tool outlines and short lines chalked on it. He stands in front of the blackboard holding a piece of chalk. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the chalk against the blackboard, half turned to the camera, looking at it. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the chalk near a drawn line on the blackboard, glancing at the camera. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands with the chalk raised beside the board and a small smile, looking at the camera. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he faces the camera with his greasy hands open at his sides, casual, half smile. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b034",
+   "a": "K0",
+   "b": "K1",
+   "text": "Para que lo veas entero antes de empezar: son seis pasos. Uno, dejar el rotomartillo andando.",
+   "action": "he stands in front of a scratched blackboard that has tool outlines chalked on it and taps it with a piece of chalk while talking.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b034.wav"
+  },
+  {
+   "id": "b035",
+   "a": "K1",
+   "b": "K2",
+   "text": "Dos, sacar el vástago de la mecha rota. Tres, cortar el caño. Cuatro, hacer la tapa con un agujero justo.",
+   "action": "he draws a short line on the blackboard with the chalk, glancing at the camera.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b035.wav"
+  },
+  {
+   "id": "b036",
+   "a": "K2",
+   "b": "K3",
+   "text": "Cinco, soldar todo. Y ahí está el error que me costó dos estacas. Y seis, preparar las estacas.",
+   "action": "he taps the blackboard with the chalk, one step at a time, nodding.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b036.wav"
+  },
+  {
+   "id": "b037",
+   "a": "K3",
+   "b": "K4",
+   "text": "Si te gustan estos inventos con chatarra, quédate en el taller, que hay más. Vamos a empezar.",
+   "action": "he puts the chalk down on the shelf and wipes his palms on his trousers, turning to the camera.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b037.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/G2a/vlog_G2a.mp4"
+}

@@ -1,0 +1,109 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/ESa/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/H1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same place, same framing, same clothes. Near the workshop door there is a wooden sawhorse with a long eucalyptus board on it, a handsaw, a hatchet and a chopping block. The neighbour is not there. He stands beside the sawhorse. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he saws through an eighty-centimetre stake with the handsaw on the sawhorse, looking down at the cut. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds a dense eucalyptus stake and a soft pine stake side by side toward the camera. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he holds the stake with a freshly cut wedge point up to the light, looking at it. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "D_b075_1",
+   "from": [
+    "K3"
+   ],
+   "prompt": "EXTREME CLOSE-UP of the hands and materials only, same place and same light as the first input image, the face is not in the frame (ignore the last input image): close view of a blowtorch flame charring the pointed end of a wooden stake, thin smoke and black crust forming."
+  },
+  {
+   "id": "D_b075_2",
+   "from": [
+    "D_b075_1"
+   ],
+   "prompt": "Same extreme close-up, same framing, same light, a few seconds later: the same stake end fully charred black and glossy, the flame moving away."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: he stands with a bundle of stakes on his shoulder, looking at the camera with a doubtful smile. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b072",
+   "a": "K0",
+   "b": "K1",
+   "text": "Paso seis, las estacas. Las corto de ochenta, con serrucho, en el caballete. Cuarenta van enterrados.",
+   "action": "he cuts a long eucalyptus board into stake lengths with a handsaw on a sawhorse in the yard, sawdust flying.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b072.wav"
+  },
+  {
+   "id": "b073",
+   "a": "K1",
+   "b": "K2",
+   "text": "Un consejo con la madera: eucalipto, o algo duro. Con pino blando, la cabeza se aplasta antes de entrar.",
+   "action": "he compares two wooden stakes, one dense eucalyptus and one soft pine, tapping them together, looking at the camera.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b073.wav"
+  },
+  {
+   "id": "b074",
+   "a": "K2",
+   "b": "K3",
+   "text": "Le hago punta en cuña con el hacha, así entra en la tierra sin trabarse.",
+   "action": "he stands a stake on a chopping block and sharpens one end to a wedge point with a hatchet, chips flying.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b074.wav"
+  },
+  {
+   "id": "b075",
+   "a": "K3",
+   "b": "K3",
+   "detail": true,
+   "d1": "close view of a blowtorch flame charring the pointed end of a wooden stake, thin smoke and black crust forming",
+   "d2": "the same stake end fully charred black and glossy, the flame moving away",
+   "text": "Y quemo con el soplete la parte que va bajo tierra. Carbonizada, la madera se pudre más despacio.",
+   "action": "DETAIL",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b075.wav"
+  },
+  {
+   "id": "b076",
+   "a": "K3",
+   "b": "K4",
+   "text": "Y ya están las estacas listas, con las esquinas todavía sin biselar. ¿Ves por dónde va la cosa?",
+   "action": "he carries a bundle of stakes over his shoulder to the grass and looks at the camera with a doubtful smile.",
+   "audio": "D:/Proyectos/video2-wt/tdchinca/out/tdchinca/tramos/b076.wav"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/ESa/vlog_ESa.mp4"
+}

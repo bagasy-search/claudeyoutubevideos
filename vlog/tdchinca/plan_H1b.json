@@ -1,0 +1,47 @@
+{
+ "dir": "D:/Proyectos/video2-wt/tdchinca/out/vlog/H1b/",
+ "face": "D:/Proyectos/video2-wt/tdchinca/public/ref_tdchinca_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/tdchinca/out/vlog/H1a/anc/K0.png",
+ "extra": {
+  "W": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc.png",
+  "WF": "D:/Proyectos/video2-wt/tdchinca/public/ref_vecino_tdc_face.png"
+ },
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a friend with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, the side near the opening a little brighter and cooler, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, small blemishes and uneven tone; hair with stray strands; clothes with real creases, dust and wear. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld home video filmed by a friend with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands; people move naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "W"
+   ],
+   "prompt": "The place is the back yard field of a modest neighbourhood workshop in a small town in Argentina: flat patchy grass with bare soil spots, an old sagging wire fence with a few leaning stakes along the left, a rusty corrugated-iron shed wall at the back, some short square wooden eucalyptus stakes lying or standing in the grass, and a long orange extension cord across the grass. Light: bright overcast daylight from an open sky, soft, the whole scene well lit and correctly exposed. The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up to the elbows, worn and stained with grease and dust, dark work trousers, hands with grease and grime. He stands in the grass beside a freshly driven stake, holding a heavy grey SDS-max hammer drill (about five kilos, dusty, with a plugged black cable) and a home-made adapter: a ten-centimetre ring of thick steel pipe with a thick round steel lid welded on top and a short steel shank rising from the lid, hanging at his side. A row of driven stakes runs behind him along the sagging fence. On the right stands the neighbour with a five-kilo sledgehammer on his shoulder, watching with a sceptical frown. The neighbour is exactly the man of the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0",
+    "WF"
+   ],
+   "prompt": "Same photo, same place, same framing, a few seconds later: the neighbour with crossed arms and tilted head, the presenter holding the hammer drill next to him, both beside the stakes. He is still wearing the navy-blue button-up work shirt with the sleeves rolled up, exactly as in the first image. The neighbour is exactly the man whose face is the second input image: a thin wiry man of about 62, weathered tanned face with deep lines, white stubble and a short white moustache, a faded green cloth cap, a sweat-stained grey sleeveless undershirt, old work trousers and worn boots. The neighbour stays a few metres from him on the same side, standing on the grass, and does not come closer to the camera. In work shots he looks down at what his hands are doing with a calm concentrated working expression, mouth closed, not looking at the camera; he looks at the camera only when he is talking to it."
+  }
+ ],
+ "clips": [
+  {
+   "id": "b006",
+   "a": "K0",
+   "b": "K1",
+   "secs": 4,
+   "line": "Eso se rompe a la primera, ya vas a ver.",
+   "who": "the neighbour, a thin wiry man of about 62 with a white moustache and a faded green cloth cap (the fourth reference image is his face)",
+   "voice": "in Spanish with a neutral Latin American accent, the gruff, amused voice of a 62-year-old man",
+   "refs": [
+    "WF"
+   ],
+   "text": "Eso se rompe a la primera, ya vas a ver.",
+   "action": "the neighbour has his arms crossed now, shaking his head slowly, looking at the presenter with a sceptical half smile. The presenter (third reference image face) listens and reacts silently, he does not speak."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/tdchinca/out/vlog/H1b/vlog_H1b.mp4"
+}
