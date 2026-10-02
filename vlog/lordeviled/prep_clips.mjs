@@ -7,13 +7,12 @@ fs.mkdirSync(OUT, { recursive: true });
 const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a], { windowsHide: true });
 const J = (f) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {});
 let n = 0;
-for (const plan of ["M1", "PIES", "M1v3"]) { // v3: los hablados m* salen SÓLO de M1v3 (voz nueva)
+for (const plan of ["M1", "MV"]) {
   const CL = R + `vlog/lordeviled/${plan}/clips/`;
   const st = { ...J(CL + "state.json") }, det = J(CL + "state_det.json");
   for (const [id, v] of [...Object.entries(st), ...Object.entries(det)]) {
     const src = CL + v.file, dst = OUT + id + ".mp4";
     if (!fs.existsSync(src)) continue;
-    if (plan === "M1" && /^m\d/.test(id)) continue;
     if (fs.existsSync(dst) && fs.statSync(dst).mtimeMs > fs.statSync(src).mtimeMs) continue;
     ff("-i", src, "-an", "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,format=yuv420p", "-r", "30", "-c:v", "libx264", "-crf", "19", "-preset", "veryfast", dst);
     if (det[id]) {

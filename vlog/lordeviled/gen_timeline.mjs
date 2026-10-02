@@ -1,100 +1,82 @@
 // _v3/lordeviled_shots.json → src/lordeviled/timeline_lordeviled.gen.ts (cues en CUADROS exactos, fronteras pegadas),
-// resolviendo assets reales en disco (clip agnes > foto), sonido (sfx/foley/música) y compuertas del build.
+// resolviendo assets reales en disco (stock real > clip agnes v2.0 > foto gpt), sonido (sfx/foley/música) y compuertas del build.
+//   node vlog/lordeviled/gen_timeline.mjs [--final]     (--final: ningún placeholder ni repuesto sin asset: exit 1)
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 const R = "D:/Proyectos/video2-wt/lordeviled/", PUB = R + "public/";
 const FPS = 30, F = (s) => Math.round(s * FPS);
-const { END, shots, vl } = JSON.parse(fs.readFileSync(R + "_v3/lordeviled_shots.json", "utf8"));
+const FINAL = process.argv.includes("--final");
+const { END, DELTA = 0, shots, vl } = JSON.parse(fs.readFileSync(R + "_v3/lordeviled_shots.json", "utf8"));
 const W = JSON.parse(fs.readFileSync(R + "_v3/lordeviled_wordms.json", "utf8"));
 const P = JSON.parse(fs.readFileSync(R + "_v3/lordeviled_paras.json", "utf8"));
-const avwin = JSON.parse(fs.readFileSync(R + "_v3/lordeviled_avwin.json", "utf8")).win;
+const avwin = JSON.parse(fs.readFileSync(R + "_v3/lordeviled_avwin.json", "utf8")).win; // tiempos del máster VIEJO (el reel se cortó antes de comprimir el minuto 1)
 const ex = (p) => fs.existsSync(PUB + p);
 const probeDur = (p) => { try { return +execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", PUB + p], { encoding: "utf8", windowsHide: true }).trim(); } catch { return 0; } };
-// arranque del audio de cada clip hablado (el tramo que se le dio a agnes)
-const CLIP0 = { m1: 0, m2: 8.01, m4: 44.01, m5: 52.67 }; // v3: tramos_v3 (voz nueva)
-for (const [k, v] of Object.entries(vl)) if (!(k in CLIP0)) CLIP0[k] = v.s - 0.03;
+const CLIP0 = {}; for (const [k, v] of Object.entries(vl)) CLIP0[k] = Math.max(0, v.s - 0.03); // arranque del audio de cada clip hablado (el tramo que se le dio a agnes)
 const AV_READY = ex("avatar_clips/lordeviled/reel30.mp4");
-// foley REAL de public/sfx debajo de los detalles de agnes v2.0 (mudos) — plan intermedio del creador (28-sep)
-const FOL = { hd_chess: "lorf_lor_wood.mp3", hd_sugar: "lorf_px_wipe_alt1.mp3", hd_lemon: "lorf_px_wipe.mp3", hd_mock: "lorf_lor_wood.mp3", hd_book: "lorf_sfx_paper_tick.mp3",
-  h_c_chess1: "lorf_lor_wood.mp3", h_c_chess2: "lorf_px_wipe.mp3", h_c_chess3: "lorf_px_gluglu_alt1.mp3", h_c_crust: "lorf_px_bubble.mp3", h_c_sugar1: "lorf_px_gluglu_alt1.mp3",
-  h_c_sugar2: "lorf_px_wipe_alt1.mp3", h_c_sugar3: "lorf_lor_wood.mp3", h_c_shoo1: "lorf_px_wipe.mp3", h_c_shoo2: "lorf_px_fizz.mp3", h_c_bs1: "lorf_lor_sizzle.mp3",
-  h_c_bs2: "lorf_lor_sizzle.mp3", h_c_bs3: "lorf_lor_sizzle.mp3", h_c_lem1: "lorf_px_bubble.mp3", h_c_lem2: "lorf_px_wipe_alt1.mp3", h_c_lem3: "lorf_px_wipe.mp3",
-  h_c_rai1: "lorf_px_bubble.mp3", h_c_rai2: "lorf_px_bubble.mp3", h_c_mock1: "lorf_lor_wood.mp3", h_c_mock2: "lorf_px_bubble.mp3", h_c_mock3: "lorf_lor_wood.mp3" };
-const v2 = (name) => { const p = `broll/lordeviled/${name}.mp4`, im = `img/lordeviled/${name}.jpg`;
-  if (ex(p)) return { clip: p, clipF: Math.floor(probeDur(p) * FPS) - 1, img: ex(im) ? im : null };
-  return ex(im) ? { img: im } : null; }; // clip rechazado a ojo → la foto quieta con Ken-Burns
+const AVSRC = "avatar_clips/lordeviled/reel30.mp4";
+// toma que no llegó (clip kf): se muestra la foto de la misma acción (nunca placeholder en la entrega)
+const KF_FALL = { d_fill: "b_perfect", d_mayo: "b_mayojar", d_gray: "b_grayring2", d_lump: "b_lumpybowl", d_wet: "b_puddleplate", d_peel: "b_moonegg", d_sieve: "b_scrapesieve",
+  d_ice: "b_twobowls", d_cut: "b_popyolks", d_pipe: "b_startip", d_pap: "b_papdust" };
 const TOTAL = F(END + 0.4);
-const cues = [], ovs = [], sfx = [], foley = [];
-const warn = [];
+const cues = [], ovs = [], sfx = [], foley = [], warn = [], fallback = [];
 let lastImg = null;
+const avFor = (s0, s1) => { // ventana del reel que contiene [s0,s1] (en tiempo del máster viejo)
+  const o0 = s0 + DELTA, o1 = s1 + DELTA;
+  return avwin.find((w) => o0 >= w.s - 0.06 && o1 <= w.e + 0.06);
+};
+const avCue = (c, s) => {
+  const w = avFor(s.start, s.end);
+  if (!w) warn.push(`av sin ventana @${s.start.toFixed(1)}`);
+  c.k = "av"; c.src = AV_READY ? AVSRC : null; c.sf = w ? F(s.start + DELTA - w.ms + w.off + (w.lag || 0)) : 0;
+};
+const imgOf = (name) => (ex(`img/lordeviled/${name}.jpg`) ? `img/lordeviled/${name}.jpg` : null);
 shots.forEach((s, i) => {
   const f0 = F(s.start), f1 = i + 1 < shots.length ? F(shots[i + 1].start) : TOTAL;
   const c = { k: s.kind, from: f0, dur: Math.max(1, f1 - f0), seed: (f0 * 2654435761) >>> 0 };
-  if (s.kind === "av") {
-    const w = avwin.find((w) => s.start >= w.s - 0.06 && s.end <= w.e + 0.06);
-    if (!w) warn.push(`av sin ventana @${s.start}`);
-    c.src = AV_READY ? "avatar_clips/lordeviled/reel30.mp4" : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0;
-  } else if (s.kind === "vl") {
+  if (s.kind === "av") avCue(c, s);
+  else if (s.kind === "vl") {
     const p = `vid/lordeviled/${s.name}.mp4`;
     if (ex(p)) { c.src = p; c.sf = Math.max(0, F(s.start - CLIP0[s.name])); }
-    else { // repuesto: el avatar cubre el tramo (el reel incluye las ventanas de los clips) + el detalle de manos (v2.0) de esa acción
-      const w = avwin.find((w) => s.start >= w.s - 0.06 && s.start < w.e);
-      if (!w) warn.push(`vl ${s.name} sin ventana de avatar @${s.start}`);
-      c.k = "av"; c.src = AV_READY ? "avatar_clips/lordeviled/reel30.mp4" : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0; c.fallback = s.name;
-      const d = v2("h_" + s.name);
-      if (d && s.dur > 4) { // corte en la palabra más cercana al 45 % del tramo
-        const tgt = s.start + s.dur * 0.45; let cut = null;
-        for (const x of W) if (x.s > s.start + 1.8 && x.s < s.end - 2.2 && (cut == null || Math.abs(x.s - tgt) < Math.abs(cut - tgt))) cut = x.s - 0.04;
-        if (cut) { const fc = F(cut); const c2 = { k: "img", from: fc, dur: c.from + c.dur - fc, seed: (fc * 2654435761) >>> 0, ...d, detail: "h_" + s.name };
-          c.dur = fc - c.from; cues.push(c); foley.push({ from: fc, dur: c2.dur, src: "sfx/" + FOL["h_" + s.name] }); cues.push(c2); return; }
-      }
-    }
+    else if (s.start + DELTA > 62 && avFor(s.start, s.end)) { avCue(c, s); c.fallback = s.name; fallback.push(s.name); } // repuesto: el reel incluye las ventanas de los clips hablados
+    else { c.k = "img"; c.img = null; c.fallback = s.name; fallback.push(s.name); }
   } else if (s.kind === "kf") {
     const p = `vid/lordeviled/${s.name}.mp4`;
-    if (ex(p)) { c.src = p; c.sf = 0; if (ex(`vid/lordeviled/${s.name}_foley.m4a`)) foley.push({ from: f0, dur: c.dur, src: `vid/lordeviled/${s.name}_foley.m4a` }); }
-    else { const d = v2("hd_" + s.name.replace(/^d_/, ""));
-      if (d) { Object.assign(c, { k: "img" }, d); foley.push({ from: f0, dur: c.dur, src: "sfx/" + FOL["hd_" + s.name.replace(/^d_/, "")] }); }
-      else { c.k = "img"; c.src = null; c.fallback = s.name; } }
+    if (ex(p)) { c.src = p; c.sf = 0; const fo = `vid/lordeviled/${s.name}_foley.m4a`; if (ex(fo)) foley.push({ from: f0, dur: c.dur, src: fo }); }
+    else { c.k = "img"; c.img = imgOf(KF_FALL[s.name]); c.fallback = s.name; fallback.push(s.name); }
   } else if (s.kind === "bi" || s.kind === "lor") {
-    const st = `broll/lordeviled_st30/${s.name}.mp4`; // stock REAL (Pexels, 30/1 CFR, mirado en hoja) manda sobre el clip agnes
-    const clip = ex(st) ? st : `broll/lordeviled/${s.name}.mp4`, img = `img/lordeviled/${s.name}.jpg`;
+    const st = `broll/lordeviled_st/${s.name}.mp4`; // stock REAL (Pexels, 30/1 CFR, juzgado en hoja) manda sobre el clip agnes v2.0
+    const v2 = `broll/lordeviled/${s.name}.mp4`;
+    const clip = ex(st) ? st : ex(v2) ? v2 : null, img = imgOf(s.name);
     if (ex(st)) c.real = 1;
-    c.img = ex(img) ? img : null;
-    if (ex(clip)) { c.clip = clip; c.clipF = Math.floor(probeDur(clip) * FPS) - 1; }
-    c.k = "img"; if (!c.img) warn.push(`falta imagen ${s.name}`);
+    c.img = img;
+    if (clip) { c.clip = clip; c.clipF = Math.floor(probeDur(clip) * FPS) - 1; }
+    c.k = "img"; if (!c.img && !(c.clip && c.real)) warn.push(`falta imagen ${s.name}`);
   } else if (s.kind === "ei") {
-    c.k = "snap"; c.img = ex(`img/lordeviled/${s.name}.jpg`) ? `img/lordeviled/${s.name}.jpg` : null; if (!c.img) warn.push(`falta snapshot ${s.name}`);
+    c.k = "snap"; c.img = imgOf(s.name); if (!c.img) warn.push(`falta snapshot ${s.name}`);
   } else if (s.kind === "c") {
     c.k = "comp"; c.name = s.name; c.props = s.props || {};
-    if (s.name === "LorRecipeSheet") { // zoom al pie que se nombra en ese segundo
-      const p = P[s.p], ws = W.slice(p.w0, p.w0 + p.nw);
-      const at = (word) => { const x = ws.find((w) => w.w.toLowerCase().replace(/[^a-z]/g, "") === word); return x ? x.s - s.start : null; };
-      const cells = [["chess", 0.16, 0.34], ["sugar", 0.39, 0.34], ["shoofly", 0.62, 0.34], ["butterscotch", 0.85, 0.34], ["lemon", 0.16, 0.74], ["sour", 0.39, 0.74], ["mock", 0.62, 0.74]];
-      const keys = [[0, 0.5, 0.5, 1]];
-      for (const [wd, x, y] of cells) { const t = at(wd); if (t != null) keys.push([+(t + 0.3).toFixed(2), x, y, 2.05]); }
-      keys.push([+(s.dur - 1.2).toFixed(2), 0.5, 0.5, 1]);
-      c.props = { keys };
-    }
   }
   // cama de foto bajo TODO componente de tarjeta (regla 2.quater): la última foto del video antes de esta toma
-  if (c.k === "comp" && ["LorRecipeCard", "LorTwoCards", "LorTrick", "LorOvenDial", "LorSignUpSheet", "LorYear"].includes(c.name) && !c.props.bed && lastImg) c.props = { ...c.props, bed: lastImg };
+  if (c.k === "comp" && ["LorRecipeCard", "LorTwoCards", "LorTrick", "LorSignUpSheet", "LorYear"].includes(c.name) && !c.props.bed && lastImg) c.props = { ...c.props, bed: lastImg };
+  if (c.k === "comp" && c.props.bed && !ex(c.props.bed)) { warn.push(`cama inexistente ${c.props.bed}`); c.props = { ...c.props, bed: lastImg || undefined }; }
   if ((c.k === "img" || c.k === "snap") && c.img) lastImg = c.img;
   if (s.ov) ovs.push({ from: f0, dur: c.dur, name: s.ov.c, props: s.ov.props });
   cues.push(c);
 });
-// ── SONIDO: whoosh en los cortes rápidos del minuto 1, impacto en revelaciones, riser antes del loop, pops en overlays
+// ── SONIDO: whoosh en los cortes rápidos del minuto 1, impacto en revelaciones, riser antes del loop abierto, pops en overlays
 const S = (at, file, vol, dur = 45) => sfx.push({ from: Math.max(0, F(at)), dur, src: "sfx/" + file, vol });
 cues.forEach((c, i) => {
   const t = c.from / FPS;
   if (t < 60 && i > 0 && c.k !== "av") S(t - 0.12, i % 2 ? "whoosh.mp3" : "sfx_whoosh_soft.mp3", 0.22, 20);
-  if (c.k === "comp" && c.name === "LorPieCount") { S(t, "lor_whoosh_airy.mp3", 0.3, 40); S(t + 0.4, "lor_impact.mp3", 0.32, 60); }
+  if (c.k === "comp" && c.name === "LorStepCount") { S(t, "lor_whoosh_airy.mp3", 0.3, 40); S(t + 0.4, "lor_impact.mp3", 0.3, 60); }
   if (c.k === "comp" && ["LorYear", "LorTrick"].includes(c.name)) S(t + 0.2, "text_slam.mp3", 0.28, 40);
-  if (c.k === "comp" && c.name === "LorCookbook3D") S(t + 0.2, "lorf_sfx_paper_tick.mp3", 0.3, 40);
-  if (c.k === "comp" && ["LorPie3D", "LorPotluckTable", "LorEraTimeline"].includes(c.name)) S(t, "lor_swell.mp3", 0.22, 80);
+  if (c.k === "comp" && ["LorEgg3D", "LorDevilTray3D", "LorYolkCrossSection", "LorSieve"].includes(c.name)) S(t, "lor_swell.mp3", 0.22, 80);
+  if (c.k === "comp" && c.name === "LorEggTimer") S(t + 0.1, "digit_tick.mp3", 0.25, 40);
   if (c.k === "snap") S(t + 0.15, "lor_paper_pop.mp3", 0.3, 30);
 });
 for (const o of ovs) S(o.from / FPS + 0.2, "floraphonic-minimal-pop-click-ui-1-198301.mp3", 0.25, 20);
-S(CLIP0.m5 - 2.2, "cp_riser.wav", 0.18, 70); // riser antes del loop abierto del minuto 1
+S(P[3].s - 2.3, "cp_riser.wav", 0.18, 70); // riser antes del loop abierto del minuto 1
 // ── compuertas del build
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }
@@ -108,10 +90,8 @@ export const OV: any[] = ${JSON.stringify(ovs)};
 export const SFX: any[] = ${JSON.stringify(sfx)};
 export const FOLEY: any[] = ${JSON.stringify(foley)};
 `;
-// cues de la capa base para la compuerta de repetición de agnes_qc (un clip = un plano; los vl partidos por un
-// inserto son UNA toma continua: se emite su tramo entero, que nunca repite cuadros)
-const qc = [];
-const vlSpan = {};
+// cues de la capa base para la compuerta de repetición de agnes_qc (un clip = un plano; los vl partidos por un inserto son UNA toma continua)
+const qc = [], vlSpan = {};
 for (const c of cues) {
   if ((c.k === "vl" || c.k === "kf") && c.src) { const v = (vlSpan[c.src] ||= { key: c.src, src: c.src, a: c.from, b: c.from + c.dur, sf: c.sf }); v.b = c.from + c.dur; }
   if (c.k === "img" && c.clip) qc.push({ key: c.clip, src: c.clip, start: c.from / FPS, dur: Math.min(c.dur, c.clipF) / FPS });
@@ -130,5 +110,8 @@ fs.writeFileSync(R + "_lordeviled_assets.txt", [...refs].filter((r) => ex(r)).jo
 console.log("assets al tar:", refs.size - faltan.length, faltan.length ? `· ⛔ FALTAN ${faltan.length}: ${faltan.slice(0, 6).join(" ")}` : "");
 const cnt = {}; for (const c of cues) cnt[c.k] = (cnt[c.k] || 0) + 1;
 console.log("cues", cues.length, JSON.stringify(cnt), "· overlays", ovs.length, "· sfx", sfx.length, "· foley", foley.length, "· frames", TOTAL, "· avatar", AV_READY ? "LISTO" : "placeholder");
-const fb = cues.filter((c) => c.fallback); if (fb.length) console.log("⚠️ repuestos (asset aún no existe):", fb.length, fb.slice(0, 12).map((c) => c.fallback).join(" "));
+if (fallback.length) console.log("⚠️ repuestos (asset aún no existe):", fallback.length, fallback.slice(0, 14).join(" "));
 if (warn.length) console.log("⚠️", warn.length, "avisos:", warn.slice(0, 8).join(" · "));
+const real = cues.filter((c) => c.real).reduce((a, c) => a + Math.min(c.dur, c.clipF || c.dur), 0) + cues.filter((c) => (c.k === "vl" || c.k === "kf") && c.src && !c.fallback).reduce((a, c) => a + c.dur, 0) + cues.filter((c) => c.k === "snap").reduce((a, c) => a + c.dur, 0);
+console.log(`metraje REAL (stock + clips agnes de Loretta + fotos de época): ${(real / FPS).toFixed(0)} s = ${(100 * real / TOTAL).toFixed(1)} %`);
+if (FINAL && (faltan.length || warn.length || fallback.length || !AV_READY)) { console.error("⛔ --final: faltan assets/repuestos/avatar"); process.exit(1); }

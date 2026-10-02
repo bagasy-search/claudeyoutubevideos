@@ -1,7 +1,7 @@
 # Comprime las pausas >0,22 s del minuto 1 del máster a 0,20 s (compuerta "cero silencios" del minuto 1).
 import subprocess, re, sys, json
 src, dst, until = sys.argv[1], sys.argv[2], float(sys.argv[3])
-o = subprocess.run(["ffmpeg","-hide_banner","-t",str(until),"-i",src,"-af","silencedetect=noise=-38dB:d=0.22","-f","null","-"],capture_output=True,text=True).stderr
+o = subprocess.run(["ffmpeg","-hide_banner","-t",str(until),"-i",src,"-af","silencedetect=noise=-32dB:d=0.22","-f","null","-"],capture_output=True,text=True).stderr
 ss = [float(x) for x in re.findall(r"silence_start: ([0-9.]+)", o)]; se = [float(x) for x in re.findall(r"silence_end: ([0-9.]+)", o)]
 keep=[]; t=0.0; cut=0.0
 for a,b in zip(ss,se):

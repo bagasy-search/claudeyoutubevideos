@@ -23,13 +23,25 @@ for (const s of shots) {
   if (hit < 0) { errs.push(`p${s.p} no encuentro "${s.at}"`); s.start = p.s; continue; }
   s.start = W[p.w0 + hit].s - 0.04; // el corte cae 40 ms antes de la palabra
 }
+// ⛔ AVATAR CONGELADO: el reel de RunPod se cortó del máster ANTES de comprimir las pausas del minuto 1 (−Δ s). Las tomas `av` salen de
+// _v3/lordeviled_av_frozen.json (tiempos del máster viejo, desplazados Δ), no de la regla automática: así cada toma av cae dentro de su ventana del reel.
+const FZF = R + "_v3/lordeviled_av_frozen.json", WO = R + "_v3/lordeviled_wordms_old.json";
+let DELTA = 0, FROZEN = false;
+if (fs.existsSync(FZF) && fs.existsSync(WO) && !process.env.NOFREEZE) {
+  const Wo = JSON.parse(fs.readFileSync(WO, "utf8")), d = [];
+  for (let i = 600; i < W.length; i += 7) d.push(Wo[i].s - W[i].s);
+  d.sort((a, b) => a - b); DELTA = d[d.length >> 1]; FROZEN = true;
+  for (let i = shots.length - 1; i >= 0; i--) if (shots[i].kind === "av") shots.splice(i, 1);
+  for (const a of JSON.parse(fs.readFileSync(FZF, "utf8")).av) shots.push({ kind: "av", name: "", p: -1, at: "", start: +(a.s - DELTA).toFixed(3), frozen: 1 });
+  console.log("avatar congelado: Δ", DELTA.toFixed(3), "s ·", shots.filter((s) => s.frozen).length, "tomas av");
+}
 shots.sort((a, b) => a.start - b.start);
 // REGLA DEL DIRECTOR: plano fijo (foto/época/Loretta) ≤ 7,5 s y componente ≤ 11 s (salvo la tarjeta de receta y el cronograma):
 // pasado el límite se corta al avatar en la palabra más cercana (si lo que sigue ya es avatar, el avatar se adelanta: nunca dos av seguidos).
 const MAXFIX = { bi: 7.5, ei: 7.5, lor: 7.5, c: 11 }, KEEP = new Set(["LorRecipeCard", "LorSchedule"]);
 const wstarts = W.map((w) => w.s);
 const nearW = (x) => wstarts.reduce((b, v) => (Math.abs(v - x) < Math.abs(b - x) ? v : b), wstarts[0]);
-let budget = +process.env.AV_AUTO || 70; // segundos de avatar que la regla puede sumar (el reel de RunPod no pasa de ~590 s)
+let budget = FROZEN ? 0 : (+process.env.AV_AUTO || 70); // segundos de avatar que la regla puede sumar (el reel de RunPod no pasa de ~590 s)
 shots.sort((a, b) => a.start - b.start);
 const cand = [];
 for (let i = 0; i < shots.length; i++) {
@@ -64,5 +76,5 @@ const avLargos = shots.filter((s) => s.kind === "av" && s.dur > 14); if (avLargo
 if (bad.length) console.log("⛔ clips fuera de 3,2-11,8 s:", bad.map(([k, v]) => `${k} ${(v.e - v.s).toFixed(2)} (${v.s.toFixed(2)}-${v.e.toFixed(2)})`).join(" · "));
 const dups = {}; for (const s of shots.filter((s) => ["bi", "lor", "ei"].includes(s.kind))) dups[s.name] = (dups[s.name] || 0) + 1;
 const rep = Object.entries(dups).filter(([, n]) => n > 1); if (rep.length) console.log("⛔ imágenes repetidas:", rep.map(([k]) => k).join(" "));
-fs.writeFileSync(R + "_v3/lordeviled_shots.json", JSON.stringify({ END, shots, vl }, null, 1));
+fs.writeFileSync(R + "_v3/lordeviled_shots.json", JSON.stringify({ END, DELTA, shots, vl }, null, 1));
 console.log("clips vl:", Object.keys(vl).length, "· imágenes:", Object.keys(dups).length, "· componentes:", shots.filter((s) => s.kind === "c").length);
