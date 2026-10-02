@@ -61,6 +61,7 @@ jobs:
           ls frames | wc -l
       - name: codificar segmento
         run: |
+          command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
           F0=$(ls frames | head -1 | sed 's/f_0*\([0-9]\)/\1/; s/\.jpg//')
           ffmpeg -v error -y -framerate 24 -start_number "$F0" -i frames/f_%05d.jpg \
             -vf "scale=1280:720:in_range=full:out_range=limited:out_color_matrix=bt709:flags=lanczos,format=yuv420p" \
@@ -89,6 +90,7 @@ jobs:
       - name: unir + audio
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
+          command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
           curl -fsSL --retry 4 -o "mix_${{ matrix.s }}.wav" "${{ needs.prepare.outputs.base }}/mix_${{ matrix.s }}.wav"
           ls segs | sort -t- -k3 -n | while read d; do echo "file 'segs/$d/seg.mp4'"; done > lista.txt
           head -3 lista.txt
@@ -105,6 +107,7 @@ jobs:
       - name: concatenar conjuntos
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
+          command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
           : > lista.txt
           for s in $(echo '${{ needs.prepare.outputs.final }}' | tr -d '[]" ' | tr ',' ' '); do
             gh release download "${{ needs.prepare.outputs.tag_out }}" -R "${{ github.repository }}" -p "$s.mp4" -D sets
