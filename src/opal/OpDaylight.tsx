@@ -9,7 +9,7 @@ import { PencilCircle, ease, useIn } from "./OpParts";
 export const OpDaylight: React.FC<{ points: { m: string; h: number }[]; steady?: number; slow?: number; mark?: number; title?: string; unit?: string; seed?: number }> = ({ points, steady = 14, slow = 12, mark = -1, title = "Hours of daylight", unit = "h", seed = 9 }) => {
   const f = useCurrentFrame();
   const k = useIn(0, 14, 100);
-  const X0 = 260, X1 = 1700, Y0 = 860, Y1 = 230, HMIN = 8, HMAX = 16;
+  const X0 = 260, X1 = 1500, Y0 = 860, Y1 = 230, HMIN = 8, HMAX = 16;
   const x = (i: number) => X0 + ((X1 - X0) * i) / Math.max(1, points.length - 1);
   const y = (h: number) => Y0 - ((h - HMIN) / (HMAX - HMIN)) * (Y0 - Y1);
   const draw = interpolate(f, [10, 10 + points.length * 7], [0, 1], ease);
@@ -23,7 +23,7 @@ export const OpDaylight: React.FC<{ points: { m: string; h: number }[]; steady?:
     return (
       <g opacity={o}>
         <line x1={X0 - 20} x2={X1 + 20} y1={y(h)} y2={y(h)} stroke={color} strokeWidth={5} strokeDasharray="18 14" />
-        <text x={X1 + 30} y={y(h) + 14} fontFamily={HAND} fontWeight={700} fontSize={46} fill={color}>{label}</text>
+        <text x={X1 + 40} y={y(h) + 14} fontFamily={HAND} fontWeight={700} fontSize={44} fill={color}>{label}</text>
       </g>
     );
   };

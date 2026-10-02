@@ -19,7 +19,7 @@ export const OpCaseLog: React.FC<{ bed?: string; title?: string; rows: { day: st
   const f = useCurrentFrame();
   const k = useIn(0, 13, 110);
   const y = interpolate(k, [0, 1], [900, 0]);
-  const H = 190 + rows.length * 96;
+  const H = 250 + rows.length * 96;
   return (
     <AbsoluteFill>
       <OpBed src={bed} seed={seed} dim={0.2} />

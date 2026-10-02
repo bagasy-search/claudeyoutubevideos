@@ -9,8 +9,8 @@ import { NotePage, OpBed, Written, ease, useIn } from "./OpParts";
 export const OpChecklist: React.FC<{ bed?: string; title?: string; items: { t: string; cost: string }[]; active?: number; done?: number; every?: number; seed?: number }> = ({ bed, title = "What I check, cheapest first", items, active = -1, done = 0, every = 6, seed = 4 }) => {
   const f = useCurrentFrame();
   const k = useIn(0, 13, 110);
-  const rowH = Math.min(100, 760 / items.length);
-  const H = 170 + items.length * rowH;
+  const rowH = Math.min(100, 720 / items.length);
+  const H = 210 + items.length * rowH;
   return (
     <AbsoluteFill>
       <OpBed src={bed} seed={seed} dim={0.22} />

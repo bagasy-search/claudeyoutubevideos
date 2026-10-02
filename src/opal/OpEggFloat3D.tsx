@@ -61,7 +61,7 @@ export const OpEggFloat3D: React.FC<{ labels?: [string, string, string]; every?:
       {labels.map((l, i) => {
         const o = interpolate(f, [30 + i * every, 38 + i * every], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
         const col = i === 0 ? OP.green : i === 1 ? "#B7791F" : OP.red;
-        return <div key={i} style={{ position: "absolute", left: [470, 960, 1450][i], bottom: 110, transform: "translateX(-50%) rotate(-2deg)", opacity: o, fontFamily: HAND, fontWeight: 700, fontSize: 64, color: col, textAlign: "center", whiteSpace: "nowrap" }}>{l}</div>;
+        return <div key={i} style={{ position: "absolute", left: [470, 960, 1450][i], bottom: 60, transform: "translateX(-50%) rotate(-2deg)", opacity: o, fontFamily: HAND, fontWeight: 700, fontSize: 60, color: col, textAlign: "center", whiteSpace: "nowrap", background: OP.paper, padding: "4px 22px", boxShadow: `0 8px 18px ${OP.shadow}` }}>{l}</div>;
       })}
     </AbsoluteFill>
   );

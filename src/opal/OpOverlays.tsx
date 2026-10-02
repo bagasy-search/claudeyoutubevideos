@@ -56,9 +56,9 @@ export const OpViewerQ: React.FC<{ bed?: string; name: string; place: string; he
   return (
     <AbsoluteFill>
       <OpBed src={bed} seed={seed} dim={0.3} />
-      <div style={{ position: "absolute", left: "50%", top: 120, width: 1180, marginLeft: -590, transform: `translateY(${(1 - k) * 900}px) rotate(-1deg)` }}>
-        <div style={{ position: "relative", height: 820, background: "#E9DDBF", boxShadow: `0 30px 60px ${OP.shadow}` }}>
-          <div style={{ position: "absolute", left: 60, right: 60, top: 60 - 300 * open, height: 700, background: OP.paper, boxShadow: "0 6px 14px rgba(0,0,0,0.2)", padding: "50px 60px", opacity: open }}>
+      <div style={{ position: "absolute", left: "50%", top: 240, width: 1180, marginLeft: -590, transform: `translateY(${(1 - k) * 900}px) rotate(-1deg)` }}>
+        <div style={{ position: "relative", height: 780, background: "#E9DDBF", boxShadow: `0 30px 60px ${OP.shadow}` }}>
+          <div style={{ position: "absolute", left: 60, right: 60, top: 40 - 200 * open, height: 640, background: OP.paper, boxShadow: "0 6px 14px rgba(0,0,0,0.2)", padding: "50px 60px", opacity: open }}>
             <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 32, letterSpacing: 7, color: OP.red, textTransform: "uppercase" }}>question of the week</div>
             <Written text={`${name} · ${place}${hens ? ` · ${hens}` : ""}`} at={22} size={56} color={OP.pencilSoft} />
             <Written text={question} at={34} size={74} style={{ marginTop: 18 }} />

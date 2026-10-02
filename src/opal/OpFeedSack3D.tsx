@@ -60,14 +60,14 @@ export const OpFeedSack3D: React.FC<{ a: Sack; b: Sack; title?: string; diff?: s
   const e = Easing.inOut(Easing.cubic);
   const m = interpolate(f, [moveAt, moveAt + 30], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
   const intro = interpolate(f, [0, 30], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
-  const cam: [number, number, number] = [interpolate(m, [0, 1], [-0.75, 0.75]), 0.95, interpolate(intro, [0, 1], [5.2, 3.6]) - m * 0.4];
+  const cam: [number, number, number] = [interpolate(m, [0, 1], [-0.35, 0.35]), 1.15, interpolate(intro, [0, 1], [7.2, 5.6]) - m * 0.5];
   const bz = m * 0.5, brot = -m * 0.35;
   const op = (at: number) => interpolate(f, [at, at + 8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ ...kraftBg("#e8dcc2") }}>
       {mats ? (
         <ThreeCanvas width={width} height={height} camera={{ fov: 32, position: cam, near: 0.05, far: 40 }} gl={{ antialias: true, preserveDrawingBuffer: true }}>
-          <CamLook pos={cam} target={[cam[0] * 0.9, 0.7, 0]} />
+          <CamLook pos={cam} target={[cam[0] * 0.9, 0.62, 0]} />
           <hemisphereLight args={["#FFF6E6", "#7a5a30", 1.0]} />
           <directionalLight position={[2, 4, 4]} intensity={1.9} color="#FFF1D6" />
           <directionalLight position={[-3, 2, 1]} intensity={0.5} color="#DCE6FF" />
@@ -76,16 +76,16 @@ export const OpFeedSack3D: React.FC<{ a: Sack; b: Sack; title?: string; diff?: s
           <mesh material={mats.floor} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]}><planeGeometry args={[12, 8]} /></mesh>
         </ThreeCanvas>
       ) : null}
-      <div style={{ position: "absolute", top: 56, width: "100%", textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 42, letterSpacing: 9, color: OP.pencil, textTransform: "uppercase" }}>{title}</div>
-      <div style={{ position: "absolute", left: 120, bottom: 120, opacity: op(20) * (1 - m * 0.5) }}>
+      <div style={{ position: "absolute", top: 40, left: "50%", transform: "translateX(-50%)", background: OP.paper, padding: "8px 30px", boxShadow: `0 8px 18px ${OP.shadow}`, fontFamily: LABEL, fontWeight: 700, fontSize: 42, letterSpacing: 9, color: OP.pencil, textTransform: "uppercase" }}>{title}</div>
+      <div style={{ position: "absolute", left: 90, bottom: 60, background: OP.paper, padding: "10px 28px", boxShadow: `0 10px 24px ${OP.shadow}`, opacity: op(20) * (1 - m * 0.4) }}>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 64, color: OP.pencil }}>{a.name} · {a.pct}</div>
         <div style={{ fontFamily: SLAB, fontWeight: 700, fontSize: 90, color: OP.pencil }}>{a.price}</div>
       </div>
-      <div style={{ position: "absolute", right: 120, bottom: 120, textAlign: "right", opacity: op(moveAt + 24) }}>
+      <div style={{ position: "absolute", right: 90, bottom: 60, textAlign: "right", background: OP.paper, padding: "10px 28px", boxShadow: `0 10px 24px ${OP.shadow}`, opacity: op(moveAt + 24) }}>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 64, color: OP.red }}>{b.name} · {b.pct}</div>
         <div style={{ fontFamily: SLAB, fontWeight: 700, fontSize: 90, color: OP.red }}>{b.price}</div>
       </div>
-      <div style={{ position: "absolute", right: 140, top: 170 }}><Stamp text={diff} at={moveAt + 36} size={70} color={OP.green} rot={-6} style={{ background: "rgba(255,253,247,0.85)" }} /></div>
+      <div style={{ position: "absolute", right: 120, top: 150 }}><Stamp text={diff} at={moveAt + 36} size={70} color={OP.green} rot={-6} style={{ background: "rgba(255,253,247,0.85)" }} /></div>
     </AbsoluteFill>
   );
 };
