@@ -1,0 +1,81 @@
+# Render distribuido del documental animado "El carruaje sin caballos" (motor canvas/WebGL en Chromium, NO Remotion).
+# El HTML de cada conjunto de escenas viaja como asset del release `tag_in` (junto con render.cjs y la mezcla de audio).
+# Cada job del matrix renderiza un rango de SEGUNDOS, lo codifica a un segmento mp4 (yuv420p, tv, bt709, GOP de 2 s)
+# y el job stitch une los segmentos de cada conjunto, le pone el audio (mix_<S>.wav) y lo publica en el release `tag_out`.
+#   gh workflow run render-doc.yml -f plan='[{"s":"A7","i":0,"a":0,"b":10}]' -f sets='["A7"]'
+name: render-doc
+on:
+  workflow_dispatch:
+    inputs:
+      tag_in:  { description: "release con <S>.html, render.cjs y mix_<S>.wav", required: false, default: "carruaje-in" }
+      tag_out: { description: "release donde se publica <S>.mp4", required: false, default: "carruaje-out" }
+      plan:    { description: 'JSON [{"s":"A0","i":0,"a":0,"b":10},...] (a/b en segundos)', required: true }
+      sets:    { description: 'JSON ["A0","A1",...] conjuntos a unir', required: true }
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        job: ${{ fromJSON(github.event.inputs.plan) }}
+    steps:
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: cache playwright
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/ms-playwright
+            node_modules
+          key: pw-doc-${{ runner.os }}-v1
+      - name: deps (playwright + chromium)
+        run: |
+          [ -d node_modules/playwright ] || npm i --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: bajar html + render.cjs
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh release download "${{ github.event.inputs.tag_in }}" -R "${{ github.repository }}" -p "${{ matrix.job.s }}.html" -p render.cjs -D .
+      - name: render ${{ matrix.job.s }} ${{ matrix.job.a }}-${{ matrix.job.b }} s
+        run: |
+          SCENE="$PWD/${{ matrix.job.s }}.html" RS=0.6667 FROM=${{ matrix.job.a }} TO=${{ matrix.job.b }} node render.cjs video frames 4 2>&1 | grep -v "ERR_FILE_NOT_FOUND" | tail -5
+          ls frames | wc -l
+      - name: codificar segmento
+        run: |
+          F0=$(ls frames | head -1 | sed 's/f_0*\([0-9]\)/\1/; s/\.jpg//')
+          ffmpeg -v error -y -framerate 24 -start_number "$F0" -i frames/f_%05d.jpg \
+            -vf "scale=1280:720:in_range=full:out_range=limited:out_color_matrix=bt709:flags=lanczos,format=yuv420p" \
+            -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
+            -c:v libx264 -preset medium -crf 17 -g 48 -keyint_min 48 -sc_threshold 0 -x264-params open-gop=0 seg.mp4
+          ls -la seg.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seg-${{ matrix.job.s }}-${{ matrix.job.i }}
+          path: seg.mp4
+          retention-days: 2
+  stitch:
+    needs: render
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        s: ${{ fromJSON(github.event.inputs.sets) }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: seg-${{ matrix.s }}-*
+          path: segs
+      - name: unir + audio
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release download "${{ github.event.inputs.tag_in }}" -R "${{ github.repository }}" -p "mix_${{ matrix.s }}.wav" -D .
+          ls segs | sort -t- -k3 -n | while read d; do echo "file 'segs/$d/seg.mp4'"; done > lista.txt
+          head -3 lista.txt
+          ffmpeg -v error -y -f concat -safe 0 -i lista.txt -i "mix_${{ matrix.s }}.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -ar 48000 -af alimiter=limit=0.89 -shortest -movflags +faststart "${{ matrix.s }}.mp4"
+          ls -la "${{ matrix.s }}.mp4"
+          gh release view "${{ github.event.inputs.tag_out }}" -R "${{ github.repository }}" >/dev/null 2>&1 || gh release create "${{ github.event.inputs.tag_out }}" -R "${{ github.repository }}" -t "${{ github.event.inputs.tag_out }}" -n "salidas del render-doc"
+          gh release upload "${{ github.event.inputs.tag_out }}" "${{ matrix.s }}.mp4" -R "${{ github.repository }}" --clobber
