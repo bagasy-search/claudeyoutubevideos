@@ -43,7 +43,7 @@ export const HzRing3D: React.FC<{ mark?: string; sub?: string; line1?: string; l
   const e = Easing.inOut(Easing.cubic);
   const tilt = interpolate(f, [10, 50], [0.15, 0.62], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
   const spin = interpolate(f, [0, 60], [-2.4, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) }) + Math.sin(f / 40) * 0.05;
-  const cam: [number, number, number] = [0, 0.1, interpolate(f, [0, 60], [5.4, 3.1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e })];
+  const cam: [number, number, number] = [0, 0.1, interpolate(f, [0, 60], [5.6, 4.2], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e })];
   const txt = interpolate(f, [48, 58], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ ...paperBg(HZ.manila) }}>

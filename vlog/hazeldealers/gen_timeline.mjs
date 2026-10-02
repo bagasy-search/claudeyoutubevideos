@@ -43,7 +43,7 @@ shots.forEach((s, i) => {
   } else if (s.kind === "st") {
     const p = `broll/hazeldealers_st/${s.name}.mp4`;
     c.k = "clip"; c.src = ex(p) ? p : null; c.real = 1; if (!c.src) warn.push(`falta stock ${s.name}`);
-    if (c.src) { const n = nFrames(p); if (c.dur > n) warn.push(`stock ${s.name} corto: ${(n / 30).toFixed(1)}s < plano ${(c.dur / 30).toFixed(1)}s`); }
+    if (c.src) { const n = nFrames(p); if (c.dur > n) { if (c.dur - n > 75) warn.push(`stock ${s.name} corto: ${(n / 30).toFixed(1)}s < plano ${(c.dur / 30).toFixed(1)}s`); c.k = "img"; c.clip = p; c.clipF = n - 1; c.img = null; delete c.src; } }
   } else if (s.kind === "c") {
     c.k = "comp"; c.props = { ...(s.props || {}) };
     if (c.props.bed) { const b = c.props.bed; c.props.bed = media(b); if (!c.props.bed) warn.push(`cama ${b} no existe (${s.name})`); if (/^st_/.test(b)) { c.real = 1; const n = nFrames(c.props.bed || ""); if (n && c.dur > n) warn.push(`cama stock ${b} corta para ${s.name}`); } }
@@ -113,7 +113,7 @@ const faltan = [...refs].filter((r) => !ex(r));
 fs.writeFileSync(R + "_hazeldealers_assets.txt", [...refs].filter((r) => ex(r)).join(String.fromCharCode(10)) + String.fromCharCode(10));
 console.log("assets al tar:", refs.size - faltan.length, faltan.length ? `· FALTAN ${faltan.length}: ${faltan.slice(0, 8).join(" ")}` : "");
 const cnt = {}; for (const c of cues) cnt[c.k] = (cnt[c.k] || 0) + 1;
-const ph = cues.filter((c) => (c.k === "av" && !c.src) || (c.k === "img" && !c.img) || (c.k === "clip" && !c.src));
+const ph = cues.filter((c) => (c.k === "av" && !c.src) || (c.k === "img" && !c.img && !c.clip) || (c.k === "clip" && !c.src));
 console.log("cues", cues.length, JSON.stringify(cnt), "· overlays", ovs.length, "· sfx", sfx.length, "· foley", foley.length, "· frames", TOTAL, "· avatar", AV_READY ? "LISTO" : "placeholder", "· placeholders", ph.length);
 const fb = cues.filter((c) => c.fallback); if (fb.length) console.log("⚠️ repuestos:", fb.length, fb.map((c) => c.fallback).join(" "));
 if (warn.length) console.log("⚠️", warn.length, "avisos:", warn.slice(0, 12).join(" · "));
