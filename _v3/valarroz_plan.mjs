@@ -1,0 +1,152 @@
+// valarroz_plan.mjs — §0 DIRECTOR · Doctora Valeria Alcázar · MONTAJE DR. FEDERER (FedKit)
+// "Tiene 70 y Parece de 50: la CREMA de ARROZ Japonesa que se Hace en Casa"
+// t: A avatar (T = título {kicker,title,hot,tone} o sello {stamp,title}) · V stock video · F foto · H doctora · G generada · C componente FedKit
+// GLOSARIO: Rosa = 70, Lima → sólo stock de mayores / manos / objetos. Masako Mizutani = persona REAL: nunca una foto que la "represente".
+export const BOWL = 'a small white ceramic bowl';
+export const JAR = 'a small clean glass jar with a metal lid holding smooth glossy white homemade rice cream';
+export const HANDS = "an older woman's hands (about 65, natural wrinkles and a few age spots, short clean unpainted nails, no rings)";
+export const SECCIONES = [
+{ id: 'hook', m: [
+  { d: 'Un puñado de arroz, el agua en la que se cocina', t: 'A', T: { kicker: 'Arroz, agua y aceite', title: 'La crema japonesa de la heladera', hot: ['heladera'] } },
+  { d: 'Con eso, en Japón, generaciones de mujeres', t: 'V', q: ['cooked white rice bowl steam', 'rice field japan'] },
+  { d: 'que guardan en la heladera y se ponen de noche', t: 'G', p: `${JAR} with a tiny spoon beside it on a clean refrigerator shelf next to a carton of eggs and some vegetables, soft fridge light. EMPTY: nobody` },
+  { d: 'Y hoy hay señoras de setenta años', t: 'V', q: ['senior woman smiling mirror', 'elderly woman happy kitchen'] },
+  { d: 'Pero casi todas la preparan con leche', t: 'C', c: { kind: 'redflags', kicker: 'Casi todas', title: 'La preparan mal', hot: ['mal'], items: ['Con leche', 'La guardan semanas', 'Ya se echó a perder'], hits: ['la preparan con leche', 'la guardan semanas', 'que ya se echó a perder'], iq: 'milk pouring into blender' } },
+]},
+{ id: 'presenta', m: [
+  { d: 'Yo soy la doctora Valeria Alcázar', t: 'A', T: { kicker: 'Dra. Valeria Alcázar', title: 'Cinco minutos, y cuánto dura de verdad', hot: ['minutos,'] } },
+  { d: 'Busque papel y lápiz', t: 'V', q: ['notebook and pencil on kitchen table', 'writing in notebook pencil'] },
+]},
+{ id: 'receta', m: [
+  { d: 'Primero, lo que necesita', t: 'C', c: { kind: 'recipe', kicker: 'Paso 1 · Lo que necesita', title: 'Sin leche, nada más', hot: ['Sin'], ing: [{ q: '2 cdas', t: 'arroz blanco cocido, sin sal' }, { q: '3 cdas', t: 'agua de la cocción, tibia' }, { q: '1 cda', t: 'aceite de almendras o coco' }, { q: '1', t: 'cápsula de vitamina E' }], steps: ['Licuar o pisar', 'Colar con tela', 'Sumar el aceite', 'Frasco hervido, heladera'], hits: ['Dos cucharadas de arroz blanco', 'Tres cucharadas del agua', 'Una cucharada de aceite', 'una cápsula de vitamina E'], iq: 'cooked white rice bowl' } },
+  { d: 'Segundo, se licua o se pisa', t: 'G', p: `close-up on a kitchen counter in daylight: ${HANDS} mashing soft cooked white rice with a little cloudy cooking water using a fork in ${BOWL}, a small blender cup beside. EMPTY: hands only, no face`,
+    x: [{ at: 'hasta que no quede ningún grano entero', q: ['blender blending white liquid', 'mashing rice fork bowl'] }] },
+  { d: 'Tercero, se cuela', t: 'G', p: `close-up on a kitchen counter in daylight: ${HANDS} squeezing a clean white cotton cloth bundle over a small glass bowl, smooth white rice cream dripping through into the bowl. EMPTY: hands only, no face`,
+    x: [{ at: 'Lo que cae es una crema blanca', q: ['straining liquid through cheesecloth', 'cloth strainer bowl'] }] },
+  { d: 'Cuarto, se suma el aceite', t: 'V', q: ['pouring oil into bowl spoon', 'almond oil bottle pouring'] },
+  { d: 'Quinto, se guarda en frío', t: 'C', c: { kind: 'steps', kicker: 'Paso 5', title: 'Se guarda en frío', hot: ['frío'], steps: [{ title: 'Frasco hervido', sub: 'cinco minutos, y seco' }, { title: 'A la heladera', sub: 'nunca en el baño' }, { title: 'Cinco días', sub: 'ni uno más' }], hits: ['que antes hirvió cinco minutos', 'A la heladera', 'Y dura cinco días'], iq: 'glass jars on kitchen counter' } },
+  { d: 'Esa es la receta completa', t: 'A', T: { kicker: 'La receta completa', title: 'Cinco minutos, y menos de un dólar', hot: ['minutos,'] } },
+]},
+{ id: 'loops', m: [
+  { d: 'Ahora, por qué el arroz le hace bien', t: 'C', c: { kind: 'questions', kicker: 'Hoy le respondo', title: 'Lo que nadie le explica', questions: ['¿Por qué el arroz?', '¿Cerca de los ojos?', '¿Aclara manchas?', '¿Y las japonesas?'], hits: ['por qué el arroz le hace bien', 'alrededor de los ojos', 'Aclara las manchas', 'con las japonesas'], iq: 'rice bowl chopsticks table' } },
+  { d: 'Porque hay un error, uno solo', t: 'A', T: { stamp: 'UN ERROR', title: 'que le saca granitos' } },
+  { d: 'Se lo cuento en unos minutos', t: 'V', q: ['senior woman looking in bathroom mirror', 'elderly woman mirror reflection'] },
+]},
+{ id: 'historia', m: [
+  { d: 'Empecemos por la historia', t: 'A', T: { kicker: 'Primera parte', title: 'Una costumbre japonesa', hot: ['japonesa'] } },
+  { d: 'En Japón, desde hace siglos', t: 'V', q: ['washing rice in bowl water', 'rinsing rice hands water'] },
+  { d: 'La llaman togi yiru', t: 'A', T: { kicker: 'Togi-jiru', title: 'El agua de lavar el arroz', hot: ['arroz'] } },
+  { d: 'Y en las casas se usaban unas bolsitas', t: 'G', p: 'a small cotton cloth pouch tied with string, filled with rice bran, beside a wooden bath bucket and a folded white towel in a traditional japanese wooden bathroom, soft daylight. EMPTY: nobody' },
+  { d: 'Esa costumbre llegó hasta hoy', t: 'V', q: ['senior asian woman smiling', 'elderly japanese woman portrait'] },
+  { d: 'Y de ahí salió la crema de arroz', t: 'V', q: ['senior woman scrolling smartphone', 'elderly woman watching video phone'] },
+  { d: 'Es la misma idea', t: 'A' },
+]},
+{ id: 'ciencia', m: [
+  { d: 'Ahora, qué suelta el arroz', t: 'C', c: { kind: 'chapter', kicker: 'Segunda parte', index: '02', title: 'Qué hace en la piel', hot: ['piel'], sub: 'almidón y aceite', iq: 'rice water bowl milky' } },
+  { d: 'Ese líquido blanco y lechoso', t: 'V', q: ['milky rice water bowl', 'rice water pouring'] },
+  { d: 'Y el almidón en la piel hace dos cosas', t: 'C', c: { kind: 'trio', kicker: 'El almidón en la piel', title: 'Hace dos cosas', hot: ['dos'], methods: [{ name: 'Retiene', desc: 'una película que guarda el agua', icon: 'drop' }, { name: 'Calma', desc: 'la piel irritada o con picazón', icon: 'hand' }], hits: ['La primera, forma una película', 'La segunda, calma'], iq: 'cream texture close up' } },
+  { d: 'Por eso desde hace mucho se usan baños de almidón', t: 'V', q: ['bath water bathtub relaxing', 'bathtub water close up'] },
+  { d: 'El aceite hace el resto', t: 'V', q: ['almond oil bottle almonds', 'coconut oil jar'] },
+  { d: 'Así que el arroz calma y retiene', t: 'A', T: { kicker: 'En resumen', title: 'El arroz calma, el aceite sella', hot: ['calma,', 'sella'] } },
+  { d: 'Pero le voy a ser honesta', t: 'C', c: { kind: 'cross', kicker: 'Con honestidad', title: 'Lo que no hace', hot: ['no'], items: ['No blanquea la piel', 'No aclara las manchas', 'No borra arrugas profundas'], hits: ['No blanquea la piel', 'No aclara las manchas', 'No borra las arrugas profundas'], iq: 'senior woman face natural light window' } },
+  { d: 'Lo que sí hace es dejar una piel más suave', t: 'V', q: ['senior woman touching smooth face', 'elderly woman applying cream face'] },
+  { d: 'Y en una piel madura', t: 'A' },
+]},
+{ id: 'masako', m: [
+  { d: 'Le cuento algo de una mujer japonesa', t: 'C', c: { kind: 'story', kicker: 'La famosa de las redes', name: 'Masako Mizutani', age: 'pasados los 50', detail: 'Japón', iq: 'japanese green tea cup' } },
+  { d: 'Masako cuenta en las entrevistas', t: 'C', c: { kind: 'checklist', kicker: 'Lo que cuenta Masako', title: 'Su rutina', hot: ['rutina'], items: ['Se cuida desde los 21', 'Evita el sol', 'Pescado, verduras, frutos secos', 'Cinco horas por día'], hits: ['a los veintiún años', 'Que evita el sol', 'Que come pescado', 'unas cinco horas por día'], iq: 'japanese food fish vegetables' } },
+  { d: 'Y en los comentarios de ese video', t: 'A', T: { kicker: 'Una señora comentó', title: 'Así cualquiera, con cinco horas al día', hot: ['cinco'] } },
+  { d: 'Por eso hoy le traigo la versión de cinco minutos', t: 'C', c: { kind: 'split', title: 'La de Masako o la suya', left: { label: 'Masako', text: 'Cinco horas por día', tone: 'danger' }, right: { label: 'Usted', text: 'Cinco minutos', tone: 'green' }, verdict: 'Y no necesita más', hits: ['la versión de cinco minutos', 'ni las necesita'], iq: 'kitchen clock wall' } },
+]},
+{ id: 'rosa', m: [
+  { d: 'Ahora le cuento el caso de una señora', t: 'C', c: { kind: 'story', kicker: 'Un caso real', name: 'Rosa', age: '70 años', detail: 'Lima', iq: 'senior latin woman at home portrait' } },
+  { d: 'Rosa vio la receta en un video', t: 'V', q: ['milk pouring into blender', 'blender kitchen counter'] },
+  { d: 'Le salió un frasco grande', t: 'G', p: 'a large glass jar full of white homemade rice cream left on a bathroom sink counter next to a toothbrush cup and a bar of soap, warm bathroom light. EMPTY: nobody, no reflection of any person' },
+  { d: 'La primera semana estaba encantada', t: 'V', q: ['senior woman touching face smiling', 'elderly woman happy mirror'] },
+  { d: 'Pero a la tercera semana', t: 'G', p: 'close-up of an open glass jar of homemade white cream that has gone bad: slightly yellowish, separated with a watery layer on top and a few small grey-green spots of mold on the surface, on a bathroom counter. EMPTY: nobody' },
+  { d: 'A los pocos días tenía granitos', t: 'V', q: ['senior woman worried mirror skin', 'elderly woman touching chin mirror'] },
+  { d: 'Y me escribió: doctora', t: 'C', c: { kind: 'quote', quote: 'Doctora, ¿por qué una crema natural me hizo daño?', attrib: 'Rosa, 70 años', iq: 'senior woman reading smartphone' } },
+  { d: 'Le expliqué lo mismo que le explico a usted', t: 'A' },
+]},
+{ id: 'error', m: [
+  { d: 'Y ahora sí, el error del que le hablé', t: 'C', c: { kind: 'chapter', kicker: 'El error', index: '03', title: 'Creer que no se echa a perder', hot: ['perder'], sub: 'porque es natural', tone: 'danger', iq: 'open refrigerator food' } },
+  { d: 'Esta crema no tiene conservantes', t: 'A', T: { kicker: 'Sin conservantes', title: 'Es comida: se echa a perder', hot: ['perder'], tone: 'danger' } },
+  { d: 'Y como cualquier comida', t: 'C', c: { kind: 'split', title: 'Fuera o dentro de la heladera', left: { label: 'Fuera', text: 'En pocos días', tone: 'danger' }, right: { label: 'En la heladera', text: 'Cinco o seis días', tone: 'green' }, verdict: 'Con leche, menos todavía', hits: ['Y en la heladera', 'Y si encima lleva leche'], iq: 'refrigerator shelf jars' } },
+  { d: 'Por eso en mi receta no va leche', t: 'A', T: { stamp: 'SIN LECHE', title: 'en mi receta' } },
+  { d: 'Hay tres reglas que la protegen', t: 'C', c: { kind: 'checklist', kicker: 'Tres reglas', title: 'Para que no se eche a perder', hot: ['perder'], items: ['Frasco hervido y seco', 'Siempre en la heladera', 'Con cucharita limpia'], hits: ['el frasco, hervido y seco', 'siempre en la heladera', 'se saca con una cucharita limpia'], iq: 'clean glass jar spoon' } },
+  { d: 'porque los dedos meten gérmenes', t: 'V', q: ['spoon scooping cream jar', 'cosmetic spatula cream jar'] },
+  { d: 'Y una señal que no falla', t: 'C', c: { kind: 'redflags', kicker: 'Una señal que no falla', title: 'Si cambia, se tira', hot: ['tira'], items: ['El olor', 'El color', 'Algo como pelusa'], hits: ['si cambia el olor', 'el color', 'algo como pelusa'], iq: 'kitchen trash bin' } },
+  { d: 'Hay otros dos errores que veo mucho', t: 'A', T: { kicker: 'Otros dos', title: 'Errores que veo mucho', hot: ['mucho'] } },
+  { d: 'El primero, hacer mucha cantidad', t: 'A', T: { kicker: 'Error 1 · Mucha cantidad', title: 'Haga poquito, dos veces por semana', hot: ['poquito,'] } },
+  { d: 'El segundo, dejarla gruesa', t: 'C', c: { kind: 'cross', kicker: 'Error 2 · La capa gruesa', title: 'Capa finita, siempre', hot: ['finita,'], items: ['No penetra más', 'Mancha la almohada', 'Puede tapar los poros'], hits: ['no penetra más', 'mancha la almohada', 'puede tapar los poros'], iq: 'white pillow bed' } },
+]},
+{ id: 'lamina', m: [
+  { d: 'Preste mucha atención a esta imagen', t: 'C', c: { kind: 'lamina', regions: [{ x: 0.19, y: 0.38, s: 2.0 }, { x: 0.5, y: 0.5, s: 1.7 }, { x: 0.82, y: 0.42, s: 1.9 }, { x: 0.19, y: 0.72, s: 2.0 }, { x: 0.5, y: 0.9, s: 1.9 }], hits: ['Arriba a la izquierda tiene lo que necesita', 'En el centro, los cinco pasos', 'A la derecha, las tres reglas', 'En el recuadro rojo', 'Y abajo de todo'] } },
+  { d: 'Y dicho sea de paso', t: 'C', c: { kind: 'qrcta', kicker: 'El recetario de la doctora', title: 'Sesenta y siete recetas más', hot: ['más'], sub: 'cada una con sus medidas exactas' } },
+]},
+{ id: 'preguntas', m: [
+  { d: 'Ahora déjeme responder las preguntas', t: 'A', T: { kicker: 'Leí cientos de comentarios', title: 'Lo que nadie responde', hot: ['nadie'] },
+    x: [{ at: 'porque leí cientos de comentarios', q: ['senior woman reading tablet sofa', 'elderly woman reading laptop home'] }] },
+  { d: 'Primera pregunta', t: 'C', c: { kind: 'board', title: '¿Blanco o integral?', cards: [{ name: 'Arroz blanco', verdict: 'Mejor', tone: 'green' }, { name: 'Integral', verdict: 'Raspa', tone: 'amber' }], hits: ['Mejor el blanco', 'El integral deja partículas'], iqA: 'white rice grains bowl', iqB: 'brown rice grains bowl' } },
+  { d: 'Segunda pregunta', t: 'C', c: { kind: 'zones', kicker: 'Pregunta 2', title: '¿Alrededor de los ojos?', hot: ['ojos?'], zones: [{ label: 'Sobre el hueso', x: 64, y: 49 }, { label: 'Párpado', x: 36, y: 43, no: true }], note: 'Con el anular, a toquecitos', hits: ['sobre el hueso de abajo del ojo', 'Nunca en el párpado'], iq: 'senior woman eye close up' } },
+  { d: 'Tercera pregunta', t: 'A', T: { kicker: 'Pregunta 3', title: 'De noche. De día, protector solar', hot: ['noche.'] } },
+  { d: 'Cuarta pregunta', t: 'A', T: { kicker: 'Pregunta 4 · ¿Piel grasa?', title: 'Media cucharada de aceite, sólo en lo seco', hot: ['seco'] } },
+  { d: 'Quinta pregunta', t: 'C', c: { kind: 'myth', kicker: 'Pregunta 5', statement: '¿Aclara las manchas?', truth: 'No. Para las manchas, protector solar todos los días.', verdict: 'NO', hits: ['No Ninguna crema de arroz'], iq: 'sunscreen bottle beach' } },
+  { d: 'Para las manchas, lo único que funciona', t: 'V', q: ['applying sunscreen face', 'sunscreen tube hand'] },
+  { d: 'Sexta pregunta', t: 'V', q: ['senior woman washing hair', 'hair rinse water close up'] },
+  { d: 'Séptima pregunta', t: 'A', T: { kicker: 'Pregunta 7', title: 'Sí, todas las noches, si está fresca', hot: ['fresca'] } },
+  { d: 'Y una cosa que vale para todas', t: 'C', c: { kind: 'steps', kicker: 'La primera vez', title: 'Pruébela en el antebrazo', hot: ['antebrazo'], steps: [{ title: 'Un poquito', sub: 'en el antebrazo' }, { title: 'Toda la noche', sub: 'y a la mañana mire' }, { title: 'Sin ronchas', sub: 'ni picazón: a la cara' }], hits: ['pruébela en el antebrazo', 'déjela toda la noche', 'si a la mañana la piel está bien'], iq: 'senior woman forearm skin' } },
+]},
+{ id: 'tonico', m: [
+  { d: 'Ahora, la segunda receta', t: 'A', T: { kicker: 'Segunda receta', title: 'El agua de arroz, el tónico más fácil', hot: ['tónico'] } },
+  { d: 'Ponga media taza de arroz crudo', t: 'C', c: { kind: 'steps', kicker: 'Tónico de agua de arroz', title: 'Media taza de arroz, una de agua', hot: ['arroz,'], steps: [{ title: 'Lavar una vez', sub: 'y tirar esa agua' }, { title: 'Una taza de agua', sub: 'revolver un minuto' }, { title: 'Colar', sub: 'a una botellita limpia' }], hits: ['lávelo una vez con agua', 'agregue una taza de agua limpia', 'y cuele'], iq: 'rice in bowl water' } },
+  { d: 'Y se usa con un algodón', t: 'V', q: ['cotton pad toner face', 'applying toner cotton pad'] },
+]},
+{ id: 'esperar', m: [
+  { d: 'Ahora, qué puede esperar, noche a noche', t: 'A', T: { kicker: 'Noche a noche', title: 'Qué puede esperar', hot: ['esperar'] } },
+  { d: 'La primera mañana', t: 'C', c: { kind: 'timeline', kicker: 'Noche a noche', title: 'Qué puede esperar', days: [{ day: '1.ª mañana', text: 'Más suave, menos tirante' }, { day: '1 semana', text: 'Más descansada' }, { day: '3 semanas', text: 'Más pareja y cómoda' }], hits: ['La primera mañana', 'A la semana', 'A las tres semanas'], iq: 'bedroom morning light window' } },
+  { d: 'Y lo que no va a pasar', t: 'A', T: { stamp: 'NO ES MAGIA', title: 'No levanta, no borra, no aclara' } },
+]},
+{ id: 'cta2', m: [
+  { d: 'Le cuento algo que me pasa seguido', t: 'A' },
+  { d: 'Después de cada video, muchas de ustedes', t: 'V', q: ['senior woman writing notes watching tv', 'elderly woman writing in notebook at table'] },
+  { d: 'Por eso armé ese recetario', t: 'C', c: { kind: 'qrcta', kicker: 'El recetario de la doctora', title: 'Las recetas de la noche, por escrito', hot: ['escrito'], sub: 'cuánto usar y en qué orden' } },
+]},
+{ id: 'japonesas', m: [
+  { d: 'Ahora, por qué las japonesas parecen más jóvenes', t: 'C', c: { kind: 'chapter', kicker: 'Tercera parte', index: '05', title: 'El secreto de las japonesas', hot: ['secreto'], sub: 'y no es la crema', iq: 'japanese street umbrella' } },
+  { d: 'Lo primero es el sol', t: 'V', q: ['woman with parasol sunny street', 'umbrella sun shade walking'] },
+  { d: 'Lo segundo, la comida', t: 'V', q: ['japanese food fish rice soup', 'miso soup bowl'] },
+  { d: 'Lo tercero, la constancia', t: 'V', q: ['senior woman washing face night', 'elderly woman night skincare'] },
+  { d: 'La crema de arroz es parte de esa constancia', t: 'C', c: { kind: 'chips', title: 'El secreto de verdad', chips: ['El sol', 'El plato', 'Todos los días'], hits: ['es el sol', 'el plato', 'y el todos los días'], iq: 'rice bowl kitchen window' } },
+]},
+{ id: 'mitos', m: [
+  { d: 'Antes de seguir, quiero desarmar tres mitos', t: 'A', T: { kicker: 'Antes de seguir', title: 'Tres mitos que leo todo el tiempo', hot: ['mitos'] } },
+  { d: 'Primer mito', t: 'C', c: { kind: 'myth', kicker: 'Mito 1', statement: 'El arroz blanquea la piel', truth: 'La deja luminosa porque está hidratada', verdict: 'FALSO', hits: ['Falso'], iq: 'white rice grains close up' } },
+  { d: 'Segundo mito', t: 'A', T: { kicker: 'Mito 2', title: 'Natural y mal guardada: granitos', hot: ['granitos'] } },
+  { d: 'Tercer mito', t: 'C', c: { kind: 'myth', kicker: 'Mito 3', statement: 'Cuanto más espesa, mejor', truth: 'No penetra más: sólo mancha la almohada', verdict: 'FALSO', hits: ['Tampoco'], iq: 'pillow bedroom' } },
+]},
+{ id: 'cuidados', m: [
+  { d: 'Y ahora, cuidados importantes', t: 'A', T: { stamp: 'CUIDADOS', title: 'Lo que no se saltea' } },
+  { d: 'Si tiene alergia al arroz', t: 'C', c: { kind: 'redflags', kicker: 'Cuidados', title: 'No la use si…', hot: ['No'], items: ['Alergia al arroz o al aceite', 'Heridas o granitos abiertos', 'Arde, pica o se enrojece'], hits: ['Si tiene alergia al arroz', 'Nunca la ponga sobre heridas', 'si al ponérsela siente ardor'], iq: 'washing hands kitchen sink' } },
+]},
+{ id: 'rosa2', m: [
+  { d: 'Le quiero contar cómo terminó la historia de Rosa', t: 'V', q: ['senior woman cooking rice kitchen', 'elderly woman cooking kitchen'] },
+  { d: 'Rosa tiró el frasco grande', t: 'C', c: { kind: 'steps', kicker: 'Rosa, la segunda vez', title: 'Así lo hizo', hot: ['Así'], steps: [{ title: 'Una semana', sub: 'piel descansando' }, { title: 'Mi receta', sub: 'sin leche, frasquito chico' }, { title: 'En la heladera', sub: 'con su cucharita' }], hits: ['Dejó descansar la piel una semana', 'empezó con mi receta', 'en la heladera'], iq: 'small glass jar fridge' } },
+  { d: 'La hace los domingos y los jueves', t: 'V', q: ['senior woman applying night cream', 'elderly woman face cream bedtime'] },
+  { d: 'Y me mandó un mensaje hace poco', t: 'C', c: { kind: 'quote', quote: 'Doctora, mi nieta me preguntó qué me pongo.', attrib: 'Rosa, 70 años', iq: 'senior woman smiling phone' } },
+  { d: 'Eso, créame, es lo lindo', t: 'A', T: { kicker: 'Créame', title: 'Lo lindo de las recetas de siempre', hot: ['siempre'] } },
+]},
+{ id: 'repaso', m: [
+  { d: 'Hagamos un repaso rápido', t: 'V', q: ['writing checklist notebook pen', 'notebook list pen table'] },
+  { d: 'Dos cucharadas de arroz blanco cocido, tres cucharadas', t: 'C', c: { kind: 'recipe', kicker: 'Repaso rápido', title: 'Lo que se lleva', hot: ['lleva'], ing: [{ q: '2 cdas', t: 'arroz blanco cocido' }, { q: '3 cdas', t: 'su agua' }, { q: '1 cda', t: 'aceite de almendras o coco' }, { q: '1', t: 'cápsula de vitamina E' }], steps: ['Licuar y colar', 'Frasco hervido, heladera', 'Cinco días', 'De noche, capa finita'], hits: ['Dos cucharadas de arroz blanco cocido', 'tres cucharadas de su agua', 'una cucharada de aceite', 'una cápsula de vitamina E', 'Se licua', 'a la heladera', 'Dura cinco días', 'De noche, capa finita'], iq: 'cooked rice bowl wooden table' } },
+  { d: 'Si cambia el olor o el color, se tira', t: 'A', T: { kicker: 'Para recordar', title: 'Si cambia, se tira', hot: ['tira'] } },
+]},
+{ id: 'cierre', m: [
+  { d: 'Si este video le sirvió, guárdelo', t: 'A', T: { kicker: 'Compártalo', title: 'Con la amiga que siempre le pregunta', hot: ['amiga'] } },
+  { d: 'Y si quiere tener todas las recetas', t: 'C', c: { kind: 'qrcta', kicker: 'El recetario de la doctora', title: 'Todas las recetas por escrito', hot: ['escrito'], sub: 'con las medidas exactas' } },
+  { d: 'Las medidas de esta crema', t: 'V', q: ['senior woman reading phone screen', 'elderly woman using smartphone at home'] },
+  { d: 'Y suscríbase al canal', t: 'A', T: { kicker: 'Suscríbase', title: 'Un secreto de siempre, cada semana', hot: ['semana'] },
+    x: [{ at: 'explicados con honestidad', q: ['senior woman smiling kitchen', 'elderly woman happy home kitchen'] }] },
+  { d: 'Esta noche, cuando cocine arroz', t: 'A', T: { kicker: 'Esta noche', title: 'Tres cucharadas de su agua, y listo', hot: ['listo'] } },
+]},
+];
