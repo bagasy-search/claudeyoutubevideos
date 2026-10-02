@@ -97,9 +97,9 @@ const mime = f => f.endsWith(".png") ? "image/png" : /\.(mp3)$/.test(f) ? "audio
 const uri = f => `data:${mime(f)};base64,` + fs.readFileSync(f).toString("base64");
 const refPathOf = (P, n) => n === "k0" ? P.k0_from : /^K\d+$/.test(n) ? dirsOf(P).ANC + n + ".png" : (P.extra || {})[n] || n;
 const refPath = n => refPathOf(P, n);
-const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a]);
-const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
-const wh = f => execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).toString().trim().split(",").map(Number);
+const ff = (...a) => execFileSync("ffmpeg", ["-v", "error", "-y", ...a], { windowsHide: true });
+const dur = f => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], { windowsHide: true }).toString());
+const wh = f => execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f], { windowsHide: true }).toString().trim().split(",").map(Number);
 
 const LIGHT = " BRIGHT, correctly exposed photo, big soft DAYLIGHT from a window, white balance NEUTRAL, no amber cast, no grading, no vignette, no film grain, no dark moody look, lifted shadows; brightness from the room lighting, not post-production — do not raise saturation, no glow, no HDR. An ordinary photo, not a film still. Real skin with visible pores, fine lines and natural texture, not smooth, not plastic, not retouched.";
 const IDENT = " IDENTITY: the presenter must have EXACTLY the face of the man/woman in the LAST input image (a close-up of the real face): same face shape, eyes, nose, eyebrows, hair and beard, same age — copy that face, do not let it drift, do not make them younger or more attractive. The last image is only for the face; the scene comes from the first image. Do NOT add objects that are not described.";
@@ -363,7 +363,7 @@ const WORK = FL.out ? String(FL.out).replace(/\\/g, "/").replace(/\/?$/, "/") : 
 if (FL.out) fs.mkdirSync(WORK, { recursive: true });
 const J = f => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
 const stateDet = () => J(CL + "state_det.json");        // planos `detail` (keyframe d1→d2) van aparte
-const ffo = (...a) => execFileSync("ffmpeg", ["-v", "error", ...a], { maxBuffer: 1 << 28 });
+const ffo = (...a) => execFileSync("ffmpeg", ["-v", "error", ...a], { maxBuffer: 1 << 28, windowsHide: true });
 function pcm(f, T) { // mono 16 kHz float; con T: rellena/corta a T (como load() de sync.py)
   const a = ["-i", f, "-vn", "-ac", "1", "-ar", "16000"]; if (T) a.push("-af", `apad=whole_dur=${T}`, "-t", String(T));
   const b = ffo(...a, "-f", "s16le", "-"), x = new Float32Array(b.length >> 1);
@@ -563,7 +563,7 @@ if (fase === "armar") {
     "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", OUT);
   const tl = C.map((c, i) => ({ id: c.id, file: c.file, start: +c.start.toFixed(4), T: c.T, dur: +c.adur.toFixed(4), vstart: +(Bv[i] / FPS).toFixed(4), vdur: +(c.nf / FPS).toFixed(4), mode: c.mode, speed: c.speed, slow: c.slow, cut: c.cutNext || undefined, detail: c.detail || undefined, text: c.text }));
   fs.writeFileSync(OD + `timeline_${base}.json`, JSON.stringify(tl, null, 1));
-  const nfr = +execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", OUT]).toString().trim();
+  const nfr = +execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", OUT], { windowsHide: true }).toString().trim();
   const pad = C.filter(c => !c.own).reduce((a, c) => a + (c.d - c.len), 0);
   log(`OK ${OUT} ${dur(OUT).toFixed(2)}s · cuadros ${nfr}/${Bv.at(-1)}${nfr !== Bv.at(-1) ? " ⛔ NO COINCIDEN" : " ✓"} · audio ${dur(AUD).toFixed(2)}s · cortes limpios ${C.filter(c => c.cutNext).length}/${C.length - 1}`
     + ` · acc ${C.filter(c => c.mode === "acc").map(c => c.id + "@" + c.speed).join(" ") || "-"} · silencio agregado ${pad.toFixed(2)}s — hoja de contactos antes de usarlo`);

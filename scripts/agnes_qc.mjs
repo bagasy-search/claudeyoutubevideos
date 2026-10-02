@@ -22,7 +22,9 @@
 // NO es defecto: texto borroso, deriva lenta de cámara, fuego/humo/agua cambiando, brazos que entran por un borde.
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync, spawnSync } from "node:child_process";
+import * as __cp from "node:child_process";
+const execFileSync = (c, a, o = {}) => __cp.execFileSync(c, a, { windowsHide: true, ...o }); // sin ventanas de consola (pedido del creador, 2-oct-2026)
+const spawnSync = (c, a, o = {}) => __cp.spawnSync(c, a, { windowsHide: true, ...o });
 
 const [SLUG, ...args] = process.argv.slice(2);
 if (!SLUG) { console.error("uso: node scripts/agnes_qc.mjs <slug> [--revision \"ninguno|pNNN:motivo;...\"] [--fix]"); process.exit(1); }

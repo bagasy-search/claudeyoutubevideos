@@ -17,7 +17,10 @@
 //   - "@archivo.txt"  → lista EXPLÍCITA de entradas (rutas relativas a public/, una por línea)
 //   - "pref"          → solo img/<pref>* y vid/<pref>* + diagramas dg_*
 //   - sin pref        → empaqueta img/ y vid/ enteros.)
-import { execSync, execFileSync } from "node:child_process";
+import * as _cp from "node:child_process";
+// windowsHide por defecto: sin esto cada git/gh/tar abre una ventana de consola que parpadea y roba el foco.
+const execSync = (c, o = {}) => _cp.execSync(c, { windowsHide: true, ...o });
+const execFileSync = (f, a, o = {}) => _cp.execFileSync(f, a, { windowsHide: true, ...o });
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
