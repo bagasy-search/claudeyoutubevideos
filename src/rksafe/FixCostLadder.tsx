@@ -1,63 +1,77 @@
-// FixCostLadder.tsx — LOS 12 ARREGLOS EN UNA ESCALERA DE COSTO (canal Ray Kessler, rkkeyless).
+// FixCostLadder.tsx — LOS 12 ARREGLOS COMO CARRUSEL DE FOTOS (canal Ray Kessler, rkkeyless v2).
 //
-// Una columna de peldaños de abajo (gratis) hacia arriba (lo más caro). Los peldaños se construyen
-// uno a uno; el `active` (1-based) se enciende en latón y la cámara virtual sube hasta él.
-// Con `picks` (lista de índices) marca en verde "los tres de esta noche" para el repaso.
-// ⛔ Staggers como FRACCIÓN de la duración; ≤12 palabras visibles por peldaño.
+// v2 (3-oct, "componentes flojos"): cada arreglo es una TARJETA-FOTO real (`img`) en un carrusel 3D.
+// La activa (`active`, 1-based) viene al frente grande con su número, nombre y costo; las vecinas
+// quedan a los costados inclinadas y en sombra. Detrás, la misma foto desenfocada llena el cuadro.
+// Con `picks` (y active=0) muestra en abanico SÓLO los elegidos ("los tres de esta noche").
+// Con active=0 y sin picks: el carrusel gira de 1 a 12 (la promesa del video).
+// ⛔ Staggers en FRACCIÓN de la duración.
 import React from "react";
-import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { V, F_DISPLAY, F_BODY, rgba, clamp01, PhotoBed, Keyring } from "./RayStage";
+import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { V, F_DISPLAY, F_BODY, rgba, clamp01 } from "./RayStage";
+import { Tag } from "./WorldBed";
 
-const ease = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const, easing: Easing.out(Easing.cubic) };
+const ease = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const, easing: Easing.inOut(Easing.cubic) };
+type It = { label: string; cost: string; img?: string };
+
+const Tarjeta: React.FC<{ it: It; n: number; x: number; z: number; rot: number; on: boolean; a: number }> = ({ it, n, x, z, rot, on, a }) => (
+  <div style={{
+    position: "absolute", left: 960 + x - 330, top: 250, width: 660, height: 560, opacity: a,
+    transform: `perspective(1600px) translateZ(${z}px) rotateY(${rot}deg)`, borderRadius: 18, overflow: "hidden",
+    boxShadow: on ? "0 30px 80px rgba(0,0,0,.8), 0 0 0 4px #C8912F" : "0 20px 50px rgba(0,0,0,.7)", background: V.ink2,
+    filter: on ? "none" : "brightness(.55)",
+  }}>
+    {it.img ? <Img src={staticFile(it.img)} style={{ width: "100%", height: 400, objectFit: "cover" }} /> : <div style={{ height: 400, background: V.ink1 }} />}
+    <div style={{ height: 160, display: "flex", alignItems: "center", justifyContent: "space-between", padding: "0 30px", background: "linear-gradient(180deg,#1E1E22,#0A0A0C)" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+        <div style={{ fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 70, color: V.brassSoft, lineHeight: 1 }}>{n}</div>
+        <div style={{ fontFamily: F_BODY, fontWeight: 700, fontSize: 34, color: V.white, maxWidth: 330, lineHeight: 1.1 }}>{it.label}</div>
+      </div>
+      <div style={{ fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 36, whiteSpace: "nowrap", color: it.cost.toLowerCase() === "free" ? V.ok : V.brassSoft }}>{it.cost}</div>
+    </div>
+  </div>
+);
 
 export const FixCostLadder: React.FC<{
-  items?: { label: string; cost: string }[];
+  items?: It[];
   active?: number;
   picks?: number[];
   kicker?: string;
+  caption?: string;
   bed?: string;
   durationInFrames?: number;
-}> = ({ items = [], active = 0, picks = [], kicker = "TWELVE WAYS · CHEAPEST FIRST", bed, durationInFrames }) => {
+}> = ({ items = [], active = 0, picks = [], kicker = "TWELVE WAYS · CHEAPEST FIRST", caption = "About $30 and ten minutes", durationInFrames }) => {
   const frame = useCurrentFrame();
   const { durationInFrames: seqDur } = useVideoConfig();
   const D = Math.max(30, durationInFrames ?? seqDur);
   const t = frame / D;
   const n = Math.max(1, items.length);
-  const ROW = Math.min(84, Math.floor(840 / n));
-  const target = active ? active - 1 : n - 1;
-  // cámara: sube suave hasta el peldaño activo (o muestra todo si no hay activo)
-  const cam = interpolate(t, [0.25, 0.6], [0, 1], ease);
-  const centerY = 560;
-  const offY = 0 * cam * target; // los 12 peldaños entran enteros: sin cámara (antes se iban por arriba)
+  const tag = interpolate(t, [0, 0.07], [0, 1], ease);
+  // posición del carrusel (índice fraccionario que queda al frente)
+  let pos: number;
+  if (active) pos = interpolate(t, [0, 0.35], [Math.max(0, active - 3), active - 1], ease);
+  else if (picks.length) pos = 0;
+  else pos = interpolate(t, [0.05, 0.85], [0, n - 1], ease);
+  const front = picks.length && !active ? null : items[Math.round(pos)];
+  const lista = picks.length && !active ? picks.map((p) => ({ it: items[p - 1], n: p })) : items.map((it, i) => ({ it, n: i + 1 }));
   return (
-    <AbsoluteFill style={{ backgroundColor: V.ink0, overflow: "hidden" }}>
-      <PhotoBed src={bed} dim={0.88} />
-      <div style={{ position: "absolute", left: 96, top: 60, fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 28, letterSpacing: 3.4, color: V.brass, opacity: clamp01(t * 12) }}>{kicker}</div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 0, bottom: 0, transform: `translateY(${offY}px)` }}>
-        {items.map((it, i) => {
-          const a = clamp01((t - (0.03 + (i / n) * 0.3)) / 0.06);
-          const on = active === i + 1;
-          const pick = picks.includes(i + 1);
-          const y = centerY + 400 - (i + 1) * ROW;
-          const ancho = 760 + i * 30;
-          const col = on ? V.brassSoft : pick ? V.ok : V.bone;
-          return (
-            <div key={i} style={{
-              position: "absolute", left: (1920 - ancho) / 2, top: y, width: ancho, height: ROW - 12, opacity: a * (active && !on && !pick ? 0.55 : 1),
-              transform: `translateX(${(1 - a) * -40}px) scale(${on ? 1 + 0.04 * Math.sin(frame / 6) ** 2 : 1})`,
-              display: "flex", alignItems: "center", justifyContent: "space-between", padding: "0 28px",
-              background: on ? rgba(V.brass, 0.22) : rgba(V.ink2, 0.92), border: `3px solid ${rgba(col, on || pick ? 1 : 0.35)}`, borderRadius: 10,
-            }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
-                <div style={{ fontFamily: F_DISPLAY, fontWeight: 700, fontSize: Math.round(ROW * 0.46), color: col, width: 52 }}>{i + 1}</div>
-                <div style={{ fontFamily: F_BODY, fontWeight: 600, fontSize: Math.round(ROW * 0.42), color: V.white }}>{it.label}</div>
-              </div>
-              <div style={{ fontFamily: F_DISPLAY, fontWeight: 700, fontSize: Math.round(ROW * 0.44), color: it.cost.toLowerCase() === "free" ? V.ok : V.brassSoft }}>{it.cost}</div>
-            </div>
-          );
-        })}
-      </div>
-      <div style={{ position: "absolute", right: "4.5%", bottom: "4%", opacity: 0.85 }}><Keyring size={30} /></div>
+    <AbsoluteFill style={{ background: V.ink0, overflow: "hidden" }}>
+      {front?.img ? <Img src={staticFile(front.img)} style={{ position: "absolute", inset: -40, width: 2000, height: 1160, objectFit: "cover", filter: "blur(28px) brightness(.45)" }} /> : null}
+      {lista.map(({ it, n: num }, i) => {
+        if (!it) return null;
+        let d: number;
+        if (picks.length && !active) d = (i - (lista.length - 1) / 2) * 1.05;
+        else d = i - pos;
+        if (Math.abs(d) > 3.2) return null;
+        const on = picks.length && !active ? true : Math.abs(d) < 0.5;
+        const a = picks.length && !active ? clamp01((t - 0.08 - i * 0.12) / 0.1) : clamp01(1.4 - Math.abs(d) * 0.35);
+        return <Tarjeta key={num} it={it} n={num} x={d * 520} z={-Math.abs(d) * 260} rot={-d * 22} on={on} a={a} />;
+      })}
+      {picks.length && !active ? (
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 70, textAlign: "center", fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 56, color: V.white, opacity: clamp01((t - 0.5) * 6), textShadow: "0 6px 26px rgba(0,0,0,.95)" }}>{caption}</div>
+      ) : null}
+      <Tag kicker={kicker} a={tag} />
+      <div style={{ position: "absolute", right: 80, top: 86, fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 32, color: rgba(V.white, 0.85), opacity: tag }}>{active ? `${active} / ${n}` : `${n} WAYS`}</div>
     </AbsoluteFill>
   );
 };
