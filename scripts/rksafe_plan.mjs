@@ -234,7 +234,7 @@ for (const sec of secciones) {
           if (puntajeDe(g) > puntajeDe(elegido)) elegido = g;
         }
       }
-      if (!elegido) { used.clear(); elegido = soloFoto(pool)[0] || pool[0]; }
+      if (!elegido) { used.clear(); elegido = pool.filter((c) => !c.real)[0] || pool[0]; } // fix: soloFoto vivía en otro bloque
       if (!elegido) break;
       used.add(elegido.id);
 
