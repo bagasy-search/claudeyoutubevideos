@@ -18,7 +18,7 @@ export const SHOTS = [
   S(3, "Today I sell what the boats bring in", "st", "st_catch.1"),
   S(3, "But tonight, we're going out", "vl", "m3"),
   S(4, "", "bi", "b_oldphoto", { p: BI("An old faded 1960s color snapshot held in a weathered dark hand: a young Black boy about twelve in rubber boots standing on the deck of a shrimp boat next to his father, both squinting in the sun, a net behind them; behind the photo a wooden table in a seafood shed."), anim: "the hand tilts the old photo toward the light" }),
-  S(4, "picking shrimp in the summertime", "bi", "b_boypick", { p: BI(`${DECK.replace("at night", "on a hot summer afternoon in the 1960s")}: a boy of about twelve in a t-shirt and white rubber boots kneeling at a sorting table picking shrimp out of the catch beside a grown man.`), anim: "the boy picks shrimp out of the pile and tosses them into a basket" }),
+  S(4, "picking shrimp in the summertime", "bi", "b_boypick", { p: BI(`${DECK.replace("at night", "on a hot summer afternoon in the 1960s")}: a young African American boy of about twelve in a t-shirt and white rubber boots kneeling at a sorting table picking shrimp out of the catch beside his African American father.`), anim: "the boy picks shrimp out of the pile and tosses them into a basket" }),
   S(4, "By the time I had my own boat", "av", "av"),
   S(4, "He worked the boats out of Pascagoula", "st", "st_harbor.4"),
   // ── EL BARCO

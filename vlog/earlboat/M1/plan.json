@@ -1,0 +1,73 @@
+{
+ "dir": "D:/Proyectos/video2-wt/earlboat/vlog/earlboat/M1",
+ "face": "D:/Proyectos/video2-wt/earlboat/public/ref_earlboat_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/earlboat/public/ref_earlboat.png",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the shed, the coolers and the boats behind stay fully readable. The only light is what the place really has: overcast Gulf Coast daylight from the open side of the shed plus the fluorescent tubes; correctly exposed. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, deep lines and uneven tone; real creases in the denim shirt; wet concrete. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural older hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same man, same afternoon. Earl, a 70-year-old African American man with short white hair, a short white mustache and a few days of grey stubble, a faded light-blue denim work shirt worn open over a navy blue t-shirt, white rubber shrimper boots, weathered dark skin with deep lines stands on the weathered wooden dock right beside the stern of a white and blue shrimp trawler with tall outriggers, holding a thick mooring rope in both hands as if about to untie it from a piling, talking to the camera. Medium shot, the boat and the harbor behind him. He wears the same faded light-blue denim work shirt open over a navy t-shirt, short white hair and white mustache."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same place: he has lifted the rope off the piling and tosses it toward the boat's deck, glancing at the camera with a small smile. He wears the same faded light-blue denim work shirt open over a navy t-shirt, short white hair and white mustache."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place a few seconds later: he stands with his hands on his hips on the dock beside the boat, giving the camera a dry, knowing look, one eyebrow raised. He wears the same faded light-blue denim work shirt open over a navy t-shirt, short white hair and white mustache."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place a few seconds later: he steps one foot up onto the boat's rail, one hand on an outrigger cable, looking back at the camera with a grin as if inviting it aboard. He wears the same faded light-blue denim work shirt open over a navy t-shirt, short white hair and white mustache."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place a moment later: he is on the deck of the boat now, beckoning the camera with one hand, the dock behind him. He wears the same faded light-blue denim work shirt open over a navy t-shirt, short white hair and white mustache."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/earlboat/vlog/earlboat/tramos/m1.wav",
+   "text": "Three thirty in the afternoon. That's when we'd untie the Lady Beth from this dock.",
+   "action": "He talks to the camera holding the mooring rope, then lifts it off the piling and tosses it toward the boat. He wears the same faded light-blue denim work shirt open over a navy t-shirt, short white hair and white mustache."
+  },
+  {
+   "id": "m2",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/earlboat/vlog/earlboat/tramos/m2.wav",
+   "text": "so you know exactly how much of what you pay ever gets back to the man on the boat. It's less than you think.",
+   "action": "He talks to the camera on the dock, then puts his hands on his hips with a dry, knowing look. He wears the same faded light-blue denim work shirt open over a navy t-shirt, short white hair and white mustache."
+  },
+  {
+   "id": "m3",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/earlboat/vlog/earlboat/tramos/m3.wav",
+   "text": "But tonight, we're going out.",
+   "action": "He steps up onto the boat and beckons the camera aboard with a grin. He wears the same faded light-blue denim work shirt open over a navy t-shirt, short white hair and white mustache."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/earlboat/vlog/earlboat/M1/out.mp4"
+}
