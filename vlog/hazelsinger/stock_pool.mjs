@@ -3,7 +3,8 @@
 import fs from "node:fs";
 const J = JSON.parse(fs.readFileSync("_v3/hazelsinger_stock_judge.json", "utf8"));
 const ALIAS = { st_repair: ["st_repair", "st_repair2"], st_garagesale: ["st_garagesale", "st_garagesale2", "st_garagesale3"], st_sewingmachine: ["st_sewingmachine", "st_sewingmachine2", "st_sewingmachine3", "st_sewingmachine4", "st_sewingmachine5"], st_sewing: ["st_sewing", "st_sewing2", "st_thread", "st_sewingroom"], st_attic: ["st_attic", "st_oldhouse"] };
-const tiles = (b) => { const v = J[b]; if (!v) return []; const g = (v.good || []).filter(Number.isInteger); const o = (g.includes(v.best) ? [v.best] : []).concat(g.filter((x) => x !== v.best)); return o.map((i) => `${b}_${i}`); };
+const EXCLUDE = new Set(["st_sewingmachine_4", "st_sewingmachine_5", "st_garagesale2_5", "st_quilt_0", "st_repair_0", "st_repair_2", "st_repair_6", "st_repair2_3", "st_antique_7", "st_antique_6", "st_antique_5"]); // revisadas a ojo: fuera de tema
+const tiles = (b) => { const v = J[b]; if (!v) return []; const g = (v.good || []).filter(Number.isInteger); const o = (g.includes(v.best) ? [v.best] : []).concat(g.filter((x) => x !== v.best)); return o.map((i) => `${b}_${i}`).filter((t) => !EXCLUDE.has(t)); };
 const map = {}; const used = new Set(); const ids = new Set();
 const I = JSON.parse(fs.readFileSync("D:/rtmp/hs_stock_cand/_candidates.json", "utf8"));
 const vid = (t) => { const k = t.lastIndexOf("_"); return I[t.slice(0, k)]?.candidates?.find((c) => c.index === +t.slice(k + 1))?.id; };
