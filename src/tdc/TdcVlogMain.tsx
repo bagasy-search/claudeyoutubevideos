@@ -4,7 +4,7 @@
 // (voz máster + audio propio de los personajes + foley + cama + SFX, medida con las compuertas antes de rendear).
 // Los otros videos del canal lo reusan: sólo cambian los datos (timeline.gen.ts del slug).
 import React from "react";
-import { AbsoluteFill, Audio, Freeze, OffthreadVideo, Sequence, staticFile } from "remotion";
+import { AbsoluteFill, Audio, Freeze, Img, OffthreadVideo, Sequence, staticFile } from "remotion";
 import { TdcCamera } from "./TdcCamera";
 import { TdcZoomCircle } from "./TdcZoomCircle";
 import { TdcHandDraw } from "./TdcHandDraw";
@@ -41,7 +41,9 @@ export const TdcVlogMain: React.FC<{ data: VlogData }> = ({ data }) => (
     {data.segs.map((s) => (
       <Sequence key={s.key} from={s.from} durationInFrames={s.dur} layout="none">
         <TdcCamera dur={s.dur} {...(s.cam || {})}>
-          {s.freezeAt != null ? (
+          {/\.(jpe?g|png)$/i.test(s.src) ? (
+            <Img src={staticFile(s.src)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: s.filter }} />
+          ) : s.freezeAt != null ? (
             <Freeze frame={s.freezeAt}>
               <OffthreadVideo src={staticFile(s.src)} startFrom={s.startFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover", filter: s.filter }} />
             </Freeze>
