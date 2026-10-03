@@ -1,0 +1,1121 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Estás en la ducha, y el agua se acaba justo cuando te enjabonaste. Eso es un calentador mal elegido.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a hot shower running with steam rising in a bathroom and then the water turning cold suddenly",
+    "motion": "the steam thins and the water stream looks suddenly cold"
+   },
+   {
+    "k": "W",
+    "v": "cold shower surprise water heater"
+   },
+   {
+    "k": "W",
+    "v": "a hot shower running with steam rising in"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio, técnico. Te voy a decir qué tres tipos de calentador compraría yo este año, y por qué. Sin marcas y sin comisión.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio the technician standing in a utility room beside a water heater with a notepad and a flashlight, calm friendly look"
+   },
+   {
+    "k": "G",
+    "v": "a water heater in a utility room with a toolbox on the floor and a clipboard hanging on a hook"
+   },
+   {
+    "k": "W",
+    "v": "Claudio the technician standing in a utility room"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mucha gente compra el calentador por precio o por lo que le dijeron, y se arrepiente. Elegir bien depende de tres cosas: tu consumo, tu espacio y tu fuente de energía.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water heater installation wrong choice regret"
+   },
+   {
+    "k": "G",
+    "v": "a new water heater in a small apartment closet with a long pipe run and a tangle of fittings"
+   },
+   {
+    "k": "W",
+    "v": "water heater installation wrong choice regret"
+   },
+   {
+    "k": "W",
+    "v": "water heater installation wrong choice regret"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuántas personas son, qué energía tienes, gas, electricidad o sol, y cuánto espacio hay. Con eso te digo cuál conviene.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting three points on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three questions: how many people, what energy, how much space"
+   },
+   {
+    "k": "W",
+    "v": "Claudio counting three points on his fingers"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El agua caliente es de los mayores gastos de energía de una casa. Por eso vale la pena elegir con cabeza.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "energy bill water heating share of home"
+   },
+   {
+    "k": "G",
+    "v": "a pie chart sketch showing water heating as a large slice of household energy use on a whiteboard"
+   },
+   {
+    "k": "W",
+    "v": "energy bill water heating share of home"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un aviso: no existe el calentador perfecto. Cada tipo tiene su punto débil, y te lo voy a decir en cada caso.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera honestly"
+   },
+   {
+    "k": "W",
+    "v": "honest technician advice"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera honestly"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mis tres: un calentador de paso de buena calidad, un tanque bien aislado, y un calentador de bomba de calor, el que más ahorra.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "three water heater types comparison"
+   },
+   {
+    "k": "G",
+    "v": "three different water heaters side by side on a floor: a storage tank, a wall mounted tankless unit and a heat pump unit with a tank"
+   },
+   {
+    "k": "W",
+    "v": "three water heater types comparison"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada uno es para un caso. No son rivales: es cuestión de quién eres tú y cómo vives.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at each of the three drawings on a whiteboard"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three labelled sketches: on demand, storage and heat pump"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero: el calentador de paso, el que calienta solo cuando abres la llave. No guarda agua, y nunca se acaba.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "tankless gas water heater wall"
+   },
+   {
+    "k": "G",
+    "v": "a wall mounted gas on-demand water heater with a vent pipe going outside"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Al abrir el agua caliente, se enciende el quemador y el agua sale caliente en segundos. Cuando cierras, se apaga.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio opening a tap and showing the heater igniting with a small flame visible through a window"
+   },
+   {
+    "k": "A",
+    "v": "a hot water tap opened and a small blue flame lighting inside a wall mounted heater",
+    "motion": "the blue flame ignites and the hot water starts to flow"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ideal para familias que usan mucha agua o a distintas horas, porque nunca se agota el agua caliente.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "endless hot water family shower"
+   },
+   {
+    "k": "G",
+    "v": "a family bathroom with several people using hot water at the same time with a good flow"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero pide gas con buen caudal, y una ventilación bien hecha, hacia afuera. Sin tiraje, es un riesgo de monóxido de carbono.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a gas pipe with a regulator and a vent pipe going through a wall for a tankless water heater"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing the gas and vent connections with a flashlight"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Siempre con detector de monóxido cerca. No importa qué tan nuevo sea el equipo: la seguridad se instala, no se supone.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "carbon monoxide detector water heater"
+   },
+   {
+    "k": "G",
+    "v": "a carbon monoxide detector on a wall near a water heater in a utility room"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Su punto débil: la cal. En agua dura, el intercambiador se tapa, y el flujo baja. Se limpia cada año con un ácido suave.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio showing the heat exchanger covered with white mineral scale"
+   },
+   {
+    "k": "G",
+    "v": "a heat exchanger of a water heater coated with white limescale deposit"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el agua de tu zona es dura, considera un ablandador o un filtro. Con eso, el calentador de paso dura muchos años.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water softener hard water scale pipes"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at limescale in a pipe and shaking his head"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo: el tanque de almacenamiento, el clásico. Calienta una cantidad de agua y la mantiene lista. Simple, robusto y fácil de reparar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "storage tank water heater"
+   },
+   {
+    "k": "G",
+    "v": "a classic storage water heater tank in a utility room with its pipes and valve at the top"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por dentro tiene una resistencia o un quemador, un termostato, aislante y un ánodo de sacrificio que protege el tanque de la corrosión.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining the tank structure with a cutaway drawing"
+   },
+   {
+    "k": "G",
+    "v": "a cutaway drawing of a storage tank water heater showing the insulation, the heating element, the anode rod and the thermostat"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ese ánodo se gasta, y revisarlo cada dos o tres años alarga la vida del tanque a veces el doble. Es la mejor pieza que existe.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "anode rod replacement water heater"
+   },
+   {
+    "k": "G",
+    "v": "a corroded magnesium anode rod removed from a water heater lying next to a new one"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el sedimento: una vez al año se abre la llave de vaciado y se saca el barro del fondo. Mejora la eficiencia y evita ruidos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio opening the drain valve at the bottom of a tank and letting sediment-colored water run into a bucket, careful"
+   },
+   {
+    "k": "A",
+    "v": "dirty brown water flowing from a drain valve into a bucket",
+    "motion": "brown water streams out and clears slowly"
+   },
+   {
+    "k": "W",
+    "v": "Claudio opening the drain valve at the bottom"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tamaño: una persona, unos cincuenta litros. Una familia de cuatro, unos cien a ciento cincuenta. Mejor poco de más que poco de menos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "tank capacity litres family size"
+   },
+   {
+    "k": "G",
+    "v": "a table on a whiteboard matching household size to tank capacity in litres"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Elige uno con buen aislamiento: pierde menos calor, y esa pérdida se paga en la factura, aunque no uses el agua.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a measured expression"
+   },
+   {
+    "k": "G",
+    "v": "a tank with a thick layer of insulation foam visible in a cutaway on a table"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la temperatura: unos cincuenta a cincuenta y cinco grados es un buen equilibrio. Más caliente quema y gasta de más. Más fría, favorece bacterias.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water heater thermostat setting"
+   },
+   {
+    "k": "P",
+    "v": "Claudio setting a thermostat dial to a medium temperature and nodding"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercero: el calentador de bomba de calor, o híbrido. Usa un principio como el del aire acondicionado, pero al revés: saca calor del aire y lo pasa al agua.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "heat pump water heater"
+   },
+   {
+    "k": "G",
+    "v": "a hybrid heat pump water heater with a tank and a fan unit on top in a garage"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por eso gasta mucho menos electricidad que una resistencia común, y puede ahorrar bastante a lo largo de los años.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining the principle with a diagram of air entering at the top and cold air leaving"
+   },
+   {
+    "k": "G",
+    "v": "a diagram showing air flowing through a heat pump unit above a water tank with arrows"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No te voy a dar un porcentaje exacto, porque depende de tu clima y tu consumo. Pero la diferencia en la factura se nota, y bastante.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "energy saving heat pump efficiency"
+   },
+   {
+    "k": "G",
+    "v": "a comparison sketch of electricity used by a standard electric tank and a heat pump tank, the second bar much shorter"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Su condición: necesita espacio y aire alrededor, un lugar no muy frío, y una instalación eléctrica adecuada. No va en un clóset chico.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the unit with a flashlight and pointing at the air intake"
+   },
+   {
+    "k": "G",
+    "v": "a heat pump water heater in a spacious utility room with air space around it"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hace un ruido de ventilador, como un aire acondicionado pequeño. Conviene ubicarlo en cochera, patio cubierto o un cuarto de servicio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "heat pump water heater noise"
+   },
+   {
+    "k": "P",
+    "v": "Claudio listening to the unit with his hand cupped to his ear"
+   },
+   {
+    "k": "G",
+    "v": "a fan noise indicator showing moderate sound"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es más caro de entrada. Se paga con el tiempo, así que conviene si vas a quedarte varios años en la casa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a heat pump water heater price tag higher than a conventional one with a payback calendar next to it"
+   },
+   {
+    "k": "P",
+    "v": "Claudio weighing the price and the savings with his hands"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Cuál elijo? Familia grande y gas con buen caudal: el de paso. Casa con espacio y electricidad cara: la bomba de calor.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio presenting a decision table on a whiteboard"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard table with rows for family size, energy, space and budget and columns for the three types"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si es un departamento chico y quieres lo más simple y barato, el tanque. Y para una sola persona, un tanque eléctrico pequeño basta.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "small apartment water heater"
+   },
+   {
+    "k": "G",
+    "v": "a small apartment kitchen with a compact water heater under the sink"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un tanque demasiado grande para tu uso gasta calor de más. Calcula tu consumo real, y no compres a ojo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at an oversize tank in a small bathroom"
+   },
+   {
+    "k": "G",
+    "v": "a very large tank water heater squeezed in a tiny bathroom with pipes and a door barely closing"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las reglas de seguridad, para todos los tipos. Uno: válvula de seguridad de presión y temperatura, siempre instalada y probada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting safety rules on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a list of safety rules for water heaters on a whiteboard"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Dos: instalador calificado, con matrícula. Tres: ventilación correcta en los de gas, con detector de monóxido de carbono.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "pressure relief valve water heater"
+   },
+   {
+    "k": "G",
+    "v": "a temperature and pressure relief valve with a discharge pipe on the side of a tank"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuatro: temperatura de salida regulada, especialmente si hay niños o ancianos. El agua muy caliente quema en segundos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera seriously"
+   },
+   {
+    "k": "W",
+    "v": "water scalding hazard"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cinco: una bandeja con desagüe debajo del tanque, para que una fuga no inunde la casa. Es una pieza barata, y evita mucho daño.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a wall with a tidy utility corner including a drip tray under the tank and a drain"
+   },
+   {
+    "k": "W",
+    "v": "drip pan water heater"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El precio de compra es solo una parte. El costo real es la compra, más la energía de todos los años, más el mantenimiento.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining that the purchase price is only part of the cost, with a notepad"
+   },
+   {
+    "k": "G",
+    "v": "a notepad with three columns: purchase price, energy per year and maintenance"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un equipo barato que gasta mucho puede salir más caro en cinco años que uno más caro que gasta poco. Haz esa cuenta con tus tarifas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "calculator household budget"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing a simple sum with a calculator, concentrated"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pide al vendedor el consumo anual estimado, que debe figurar en la etiqueta, y multiplícalo por lo que pagas cada kilovatio o cada metro cúbico.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a sheet with two heaters compared over ten years of use with a total at the bottom"
+   },
+   {
+    "k": "W",
+    "v": "cost comparison table appliance"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No te prometo un ahorro exacto, porque depende de ti. Pero con la cuenta hecha, la decisión es tuya y está informada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with an honest expression"
+   },
+   {
+    "k": "W",
+    "v": "honest technician advice"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La instalación importa tanto como el equipo. Un buen calentador mal instalado falla antes o es inseguro.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "professional plumber installing water heater"
+   },
+   {
+    "k": "G",
+    "v": "a licensed installer checking the connections of a new water heater with a wrench in a utility room"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pide llaves de corte en la entrada, mangueras flexibles, y una válvula de alivio con descarga a un lugar seguro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at a flexible hose with a small valve beside a heater"
+   },
+   {
+    "k": "G",
+    "v": "a water heater inlet and outlet connections with shut-off valves and flexible connectors"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En los de gas, se prueba la hermeticidad con agua jabonosa en las uniones: si hay burbujas, hay fuga. Nunca con llama.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "gas leak check soapy water"
+   },
+   {
+    "k": "P",
+    "v": "Claudio spraying soapy water on a gas fitting to check for bubbles, careful"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En los eléctricos, el calibre del cable y la térmica tienen que ser los que indica el manual. Un cable fino se calienta, y es un riesgo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an electric panel with a dedicated breaker labelled water heater and a thick cable going to the unit"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the cable thickness and the breaker"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y guarda el comprobante de instalación y la garantía: sirven para reclamos, y para vender la casa algún día.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "permit inspection certificate installation"
+   },
+   {
+    "k": "G",
+    "v": "an installation certificate and a warranty card laid on a table beside a new water heater"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un mantenimiento anual: vaciar sedimentos, probar la válvula de alivio, revisar el ánodo y el termostato, y limpiar la ventilación.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio writing an annual maintenance list on a whiteboard"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with a yearly checklist for a water heater: drain, valve test, anode, thermostat, vents"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La válvula de alivio se prueba levantando su palanca: debe salir un chorro de agua, y volver a cerrar. Si gotea siempre, hay que cambiarla.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "safety valve test lever water heater"
+   },
+   {
+    "k": "A",
+    "v": "a hand lifting the test lever of a pressure relief valve and water spraying out into a bucket",
+    "motion": "water bursts out of the valve into a bucket and stops when released"
+   },
+   {
+    "k": "W",
+    "v": "safety valve test lever water heater"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el vaciado anual, el agua sale limpia al final. Si sale con arenilla, repítelo, y revisa si el agua de tu zona es muy dura.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a drain hose from a tank water heater running into a floor drain"
+   },
+   {
+    "k": "P",
+    "v": "Claudio flushing the tank and watching the water run clear"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y aísla los primeros metros de tubería caliente: con unos tubos de espuma, pierdes menos calor y esperas menos agua caliente.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "insulation blanket water heater pipes"
+   },
+   {
+    "k": "G",
+    "v": "foam insulation tubes fitted around hot water pipes beside a heater"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Algunos mitos. Primero: dejar el calentador prendido todo el día gasta más. Depende: en un tanque bien aislado, la pérdida es pequeña.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising an eyebrow while debunking a myth"
+   },
+   {
+    "k": "W",
+    "v": "myth technician explaining"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un temporizador puede ahorrar si tienes horarios fijos. Pero si lo programas mal, te quedas sin agua caliente cuando la necesitas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a water heater timer plugged into a socket with a small dial"
+   },
+   {
+    "k": "W",
+    "v": "timer switch water heater"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo mito: subir la temperatura al máximo da más agua caliente. Da más calor, pero te quema y desgasta el tanque. Mejor tamaño que temperatura.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a very hot water temperature setting"
+   },
+   {
+    "k": "G",
+    "v": "a thermostat set to its highest value with a flame icon"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y tercero: los solares no sirven. Sí sirven, y mucho, en zonas soleadas. Hay que verlos como un complemento de cualquiera de estos tres.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "solar water heater roof"
+   },
+   {
+    "k": "G",
+    "v": "a solar water heater on a rooftop with panels and a small storage tank in a sunny climate"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un calentador solar con respaldo de gas o electricidad puede bajar mucho tu consumo, pero requiere instalación y una inversión mayor. Merece su propio video.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio nodding thoughtfully"
+   },
+   {
+    "k": "W",
+    "v": "solar water heating sunny climate"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Señales de que un calentador se está muriendo: agua con color óxido, ruidos como de hervor, goteo en la base, agua tibia, o la térmica que salta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting warning signs on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with a list of signs: rusty water, rumbling noises, leaks at the base, lukewarm water, tripped breaker"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El agua marrón solo en la llave caliente apunta al tanque corroído. Si es en las dos llaves, son las tuberías.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "rusty water tap hot"
+   },
+   {
+    "k": "G",
+    "v": "a glass of hot water from a tap with brownish colour next to a clear glass"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una fuga en el tanque no tiene arreglo: se cambia. Una fuga en una conexión sí se repara, y a veces es solo apretar o cambiar un flexible.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a puddle at the base of a tank water heater with water droplets on the bottom edge"
+   },
+   {
+    "k": "P",
+    "v": "Claudio kneeling and looking at a leak with a flashlight, concerned"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No esperes a que reviente el tanque: cuando tienes más de diez a doce años y hay óxido, planifica el reemplazo antes de que llegue la inundación.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head with a regretful look"
+   },
+   {
+    "k": "W",
+    "v": "ruptured water heater tank"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pide al menos tres presupuestos, con el modelo exacto, la instalación incluida y la garantía por escrito. Compáralos línea por línea.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "several quotes comparison"
+   },
+   {
+    "k": "P",
+    "v": "Claudio laying three quotes side by side on a table and pointing at the equipment model"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Que el precio incluya conexiones, soportes, ventilación y retiro del equipo viejo. Los extras sorpresa cambian el total.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a quote with a line item for hidden extras like pipes and permits circled in red"
+   },
+   {
+    "k": "P",
+    "v": "Claudio circling an unclear line item with a pen"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la matrícula o el registro del instalador. Un trabajo con agua y gas no se deja en manos de cualquiera.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "honest installer references"
+   },
+   {
+    "k": "G",
+    "v": "a business card with a licence number of an installer on a table"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los tres: de paso, tanque y bomba de calor. Cada uno gana en un escenario, y ninguno es mejor para todo el mundo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the three types on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three types listed: on demand, storage, heat pump"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Elige según tu uso, cuida el equipo con un mantenimiento anual, y vas a tener agua caliente sin sustos por muchos años.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "relaxed family hot water home"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling in a warm utility room beside a working water heater"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quédate en el canal. En el próximo, la lavadora que puse en mi casa, y por qué. Y cuéntame cuál usas tú.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly technician advice"
+   }
+  ]
+ }
+]

@@ -1,0 +1,569 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b001.wav",
+  "start": 0.0,
+  "len": 6.71,
+  "text": "Estás en la ducha, y el agua se acaba justo cuando te enjabonaste. Eso es un calentador mal elegido."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b002.wav",
+  "start": 6.71,
+  "len": 8.99,
+  "text": "Soy Claudio, técnico. Te voy a decir qué tres tipos de calentador compraría yo este año, y por qué. Sin marcas y sin comisión."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b003.wav",
+  "start": 15.7,
+  "len": 12.04,
+  "text": "Mucha gente compra el calentador por precio o por lo que le dijeron, y se arrepiente. Elegir bien depende de tres cosas: tu consumo, tu espacio y tu fuente de energía."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b004.wav",
+  "start": 27.74,
+  "len": 8.38,
+  "text": "Cuántas personas son, qué energía tienes, gas, electricidad o sol, y cuánto espacio hay. Con eso te digo cuál conviene."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b005.wav",
+  "start": 36.12,
+  "len": 6.48,
+  "text": "El agua caliente es de los mayores gastos de energía de una casa. Por eso vale la pena elegir con cabeza."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b006.wav",
+  "start": 42.6,
+  "len": 7.9,
+  "text": "Y un aviso: no existe el calentador perfecto. Cada tipo tiene su punto débil, y te lo voy a decir en cada caso."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b007.wav",
+  "start": 50.5,
+  "len": 9.29,
+  "text": "Mis tres: un calentador de paso de buena calidad, un tanque bien aislado, y un calentador de bomba de calor, el que más ahorra."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b008.wav",
+  "start": 59.79,
+  "len": 6.25,
+  "text": "Cada uno es para un caso. No son rivales: es cuestión de quién eres tú y cómo vives."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b009.wav",
+  "start": 66.04,
+  "len": 7.99,
+  "text": "Primero: el calentador de paso, el que calienta solo cuando abres la llave. No guarda agua, y nunca se acaba."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b010.wav",
+  "start": 74.03,
+  "len": 7.04,
+  "text": "Al abrir el agua caliente, se enciende el quemador y el agua sale caliente en segundos. Cuando cierras, se apaga."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b011.wav",
+  "start": 81.07,
+  "len": 6.37,
+  "text": "Ideal para familias que usan mucha agua o a distintas horas, porque nunca se agota el agua caliente."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b012.wav",
+  "start": 87.44,
+  "len": 8.46,
+  "text": "Pero pide gas con buen caudal, y una ventilación bien hecha, hacia afuera. Sin tiraje, es un riesgo de monóxido de carbono."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b013.wav",
+  "start": 95.9,
+  "len": 8.18,
+  "text": "Siempre con detector de monóxido cerca. No importa qué tan nuevo sea el equipo: la seguridad se instala, no se supone."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b014.wav",
+  "start": 104.08,
+  "len": 8.78,
+  "text": "Su punto débil: la cal. En agua dura, el intercambiador se tapa, y el flujo baja. Se limpia cada año con un ácido suave."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b015.wav",
+  "start": 112.86,
+  "len": 8.5,
+  "text": "Si el agua de tu zona es dura, considera un ablandador o un filtro. Con eso, el calentador de paso dura muchos años."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b016.wav",
+  "start": 121.36,
+  "len": 10.25,
+  "text": "Segundo: el tanque de almacenamiento, el clásico. Calienta una cantidad de agua y la mantiene lista. Simple, robusto y fácil de reparar."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b017.wav",
+  "start": 131.61,
+  "len": 9.27,
+  "text": "Por dentro tiene una resistencia o un quemador, un termostato, aislante y un ánodo de sacrificio que protege el tanque de la corrosión."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b018.wav",
+  "start": 140.88,
+  "len": 9.43,
+  "text": "Ese ánodo se gasta, y revisarlo cada dos o tres años alarga la vida del tanque a veces el doble. Es la mejor pieza que existe."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b019.wav",
+  "start": 150.31,
+  "len": 8.49,
+  "text": "Y el sedimento: una vez al año se abre la llave de vaciado y se saca el barro del fondo. Mejora la eficiencia y evita ruidos."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b020.wav",
+  "start": 158.8,
+  "len": 9.67,
+  "text": "Tamaño: una persona, unos cincuenta litros. Una familia de cuatro, unos cien a ciento cincuenta. Mejor poco de más que poco de menos."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b021.wav",
+  "start": 168.47,
+  "len": 6.91,
+  "text": "Elige uno con buen aislamiento: pierde menos calor, y esa pérdida se paga en la factura, aunque no uses el agua."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b022.wav",
+  "start": 175.38,
+  "len": 10.7,
+  "text": "Y la temperatura: unos cincuenta a cincuenta y cinco grados es un buen equilibrio. Más caliente quema y gasta de más. Más fría, favorece bacterias."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b023.wav",
+  "start": 186.08,
+  "len": 10.45,
+  "text": "Tercero: el calentador de bomba de calor, o híbrido. Usa un principio como el del aire acondicionado, pero al revés: saca calor del aire y lo pasa al agua."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b024.wav",
+  "start": 196.53,
+  "len": 7.49,
+  "text": "Por eso gasta mucho menos electricidad que una resistencia común, y puede ahorrar bastante a lo largo de los años."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b025.wav",
+  "start": 204.02,
+  "len": 8.24,
+  "text": "No te voy a dar un porcentaje exacto, porque depende de tu clima y tu consumo. Pero la diferencia en la factura se nota, y bastante."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b026.wav",
+  "start": 212.26,
+  "len": 9.29,
+  "text": "Su condición: necesita espacio y aire alrededor, un lugar no muy frío, y una instalación eléctrica adecuada. No va en un clóset chico."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b027.wav",
+  "start": 221.55,
+  "len": 8.24,
+  "text": "Hace un ruido de ventilador, como un aire acondicionado pequeño. Conviene ubicarlo en cochera, patio cubierto o un cuarto de servicio."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b028.wav",
+  "start": 229.79,
+  "len": 7.26,
+  "text": "Es más caro de entrada. Se paga con el tiempo, así que conviene si vas a quedarte varios años en la casa."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b029.wav",
+  "start": 237.05,
+  "len": 8.16,
+  "text": "¿Cuál elijo? Familia grande y gas con buen caudal: el de paso. Casa con espacio y electricidad cara: la bomba de calor."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b030.wav",
+  "start": 245.21,
+  "len": 8.63,
+  "text": "Si es un departamento chico y quieres lo más simple y barato, el tanque. Y para una sola persona, un tanque eléctrico pequeño basta."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b031.wav",
+  "start": 253.84,
+  "len": 7.25,
+  "text": "Un tanque demasiado grande para tu uso gasta calor de más. Calcula tu consumo real, y no compres a ojo."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b032.wav",
+  "start": 261.09,
+  "len": 8.88,
+  "text": "Las reglas de seguridad, para todos los tipos. Uno: válvula de seguridad de presión y temperatura, siempre instalada y probada."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b033.wav",
+  "start": 269.97,
+  "len": 8.5,
+  "text": "Dos: instalador calificado, con matrícula. Tres: ventilación correcta en los de gas, con detector de monóxido de carbono."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b034.wav",
+  "start": 278.47,
+  "len": 8.62,
+  "text": "Cuatro: temperatura de salida regulada, especialmente si hay niños o ancianos. El agua muy caliente quema en segundos."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b035.wav",
+  "start": 287.09,
+  "len": 9.35,
+  "text": "Y cinco: una bandeja con desagüe debajo del tanque, para que una fuga no inunde la casa. Es una pieza barata, y evita mucho daño."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b036.wav",
+  "start": 296.44,
+  "len": 8.31,
+  "text": "El precio de compra es solo una parte. El costo real es la compra, más la energía de todos los años, más el mantenimiento."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b037.wav",
+  "start": 304.75,
+  "len": 8.85,
+  "text": "Un equipo barato que gasta mucho puede salir más caro en cinco años que uno más caro que gasta poco. Haz esa cuenta con tus tarifas."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b038.wav",
+  "start": 313.6,
+  "len": 9.76,
+  "text": "Pide al vendedor el consumo anual estimado, que debe figurar en la etiqueta, y multiplícalo por lo que pagas cada kilovatio o cada metro cúbico."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b039.wav",
+  "start": 323.36,
+  "len": 7.67,
+  "text": "No te prometo un ahorro exacto, porque depende de ti. Pero con la cuenta hecha, la decisión es tuya y está informada."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b040.wav",
+  "start": 331.03,
+  "len": 7.42,
+  "text": "La instalación importa tanto como el equipo. Un buen calentador mal instalado falla antes o es inseguro."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b041.wav",
+  "start": 338.45,
+  "len": 6.97,
+  "text": "Pide llaves de corte en la entrada, mangueras flexibles, y una válvula de alivio con descarga a un lugar seguro."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b042.wav",
+  "start": 345.42,
+  "len": 7.63,
+  "text": "En los de gas, se prueba la hermeticidad con agua jabonosa en las uniones: si hay burbujas, hay fuga. Nunca con llama."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b043.wav",
+  "start": 353.05,
+  "len": 9.23,
+  "text": "En los eléctricos, el calibre del cable y la térmica tienen que ser los que indica el manual. Un cable fino se calienta, y es un riesgo."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b044.wav",
+  "start": 362.28,
+  "len": 7.14,
+  "text": "Y guarda el comprobante de instalación y la garantía: sirven para reclamos, y para vender la casa algún día."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b045.wav",
+  "start": 369.42,
+  "len": 9.4,
+  "text": "Un mantenimiento anual: vaciar sedimentos, probar la válvula de alivio, revisar el ánodo y el termostato, y limpiar la ventilación."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b046.wav",
+  "start": 378.82,
+  "len": 8.92,
+  "text": "La válvula de alivio se prueba levantando su palanca: debe salir un chorro de agua, y volver a cerrar. Si gotea siempre, hay que cambiarla."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b047.wav",
+  "start": 387.74,
+  "len": 9.23,
+  "text": "Con el vaciado anual, el agua sale limpia al final. Si sale con arenilla, repítelo, y revisa si el agua de tu zona es muy dura."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b048.wav",
+  "start": 396.97,
+  "len": 8.1,
+  "text": "Y aísla los primeros metros de tubería caliente: con unos tubos de espuma, pierdes menos calor y esperas menos agua caliente."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b049.wav",
+  "start": 405.07,
+  "len": 10.54,
+  "text": "Algunos mitos. Primero: dejar el calentador prendido todo el día gasta más. Depende: en un tanque bien aislado, la pérdida es pequeña."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b050.wav",
+  "start": 415.61,
+  "len": 7.51,
+  "text": "Un temporizador puede ahorrar si tienes horarios fijos. Pero si lo programas mal, te quedas sin agua caliente cuando la necesitas."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b051.wav",
+  "start": 423.12,
+  "len": 10.49,
+  "text": "Segundo mito: subir la temperatura al máximo da más agua caliente. Da más calor, pero te quema y desgasta el tanque. Mejor tamaño que temperatura."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b052.wav",
+  "start": 433.61,
+  "len": 9.3,
+  "text": "Y tercero: los solares no sirven. Sí sirven, y mucho, en zonas soleadas. Hay que verlos como un complemento de cualquiera de estos tres."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b053.wav",
+  "start": 442.91,
+  "len": 10.8,
+  "text": "Un calentador solar con respaldo de gas o electricidad puede bajar mucho tu consumo, pero requiere instalación y una inversión mayor. Merece su propio video."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b054.wav",
+  "start": 453.71,
+  "len": 9.78,
+  "text": "Señales de que un calentador se está muriendo: agua con color óxido, ruidos como de hervor, goteo en la base, agua tibia, o la térmica que salta."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b055.wav",
+  "start": 463.49,
+  "len": 6.89,
+  "text": "El agua marrón solo en la llave caliente apunta al tanque corroído. Si es en las dos llaves, son las tuberías."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b056.wav",
+  "start": 470.38,
+  "len": 10.14,
+  "text": "Una fuga en el tanque no tiene arreglo: se cambia. Una fuga en una conexión sí se repara, y a veces es solo apretar o cambiar un flexible."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b057.wav",
+  "start": 480.52,
+  "len": 8.59,
+  "text": "No esperes a que reviente el tanque: cuando tienes más de diez a doce años y hay óxido, planifica el reemplazo antes de que llegue la inundación."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b058.wav",
+  "start": 489.11,
+  "len": 9.08,
+  "text": "Pide al menos tres presupuestos, con el modelo exacto, la instalación incluida y la garantía por escrito. Compáralos línea por línea."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b059.wav",
+  "start": 498.19,
+  "len": 7.95,
+  "text": "Que el precio incluya conexiones, soportes, ventilación y retiro del equipo viejo. Los extras sorpresa cambian el total."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b060.wav",
+  "start": 506.14,
+  "len": 7.05,
+  "text": "Y la matrícula o el registro del instalador. Un trabajo con agua y gas no se deja en manos de cualquiera."
+ },
+ {
+  "beat": "b061",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b061.wav",
+  "start": 513.19,
+  "len": 7.83,
+  "text": "Los tres: de paso, tanque y bomba de calor. Cada uno gana en un escenario, y ninguno es mejor para todo el mundo."
+ },
+ {
+  "beat": "b062",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b062.wav",
+  "start": 521.02,
+  "len": 8.03,
+  "text": "Elige según tu uso, cuida el equipo con un mantenimiento anual, y vas a tener agua caliente sin sustos por muchos años."
+ },
+ {
+  "beat": "b063",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcagua/out/tcagua/tramos/b063.wav",
+  "start": 529.05,
+  "len": 8.6,
+  "text": "Si te sirvió, quédate en el canal. En el próximo, la lavadora que puse en mi casa, y por qué. Y cuéntame cuál usas tú."
+ }
+]

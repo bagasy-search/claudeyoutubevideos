@@ -1,0 +1,1066 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "EL AGUA SE ACABA ENJABONADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "acaba",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "3 CALENTADORES QUE COMPRARÍA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "tres",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b004",
+   "props": {
+    "text": "PERSONAS · ENERGÍA · ESPACIO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "personas",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "EL AGUA CALIENTE: GRAN GASTO DE ENERGÍA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 50
+   },
+   "word": "gastos",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b006",
+   "props": {
+    "text": "NO EXISTE EL CALENTADOR PERFECTO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "perfecto",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b007",
+   "props": {
+    "pos": "top",
+    "size": 80,
+    "words": [
+     {
+      "t": "1 DE PASO",
+      "beat": "b007",
+      "word": "paso",
+      "hl": "yellow"
+     },
+     {
+      "t": "2 TANQUE AISLADO",
+      "beat": "b007",
+      "word": "tanque"
+     },
+     {
+      "t": "3 BOMBA DE CALOR",
+      "beat": "b007",
+      "word": "bomba",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "Mis",
+   "until": "b007",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b009",
+   "props": {
+    "step": 1,
+    "total": 3,
+    "title": "EL DE PASO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b010",
+   "props": {
+    "text": "CALIENTA SOLO CUANDO ABRÍS EL AGUA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "agua",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b013",
+   "props": {
+    "text": "SIEMPRE CON DETECTOR DE MONÓXIDO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "monóxido",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b014",
+   "props": {
+    "text": "SU PUNTO DÉBIL: LA CAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "cal",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b015",
+   "props": {
+    "text": "ABLANDADOR O FILTRO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "ablandador",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b016",
+   "props": {
+    "step": 2,
+    "total": 3,
+    "title": "EL TANQUE"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b018",
+   "props": {
+    "text": "EL ÁNODO: REVISALO CADA 2–3 AÑOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "ánodo",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b019",
+   "props": {
+    "text": "SEDIMENTO: 1 VEZ AL AÑO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "sedimento",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b020",
+   "props": {
+    "text": "1 PERSONA: ~50 L",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "50",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b022",
+   "props": {
+    "text": "50 – 55 °C",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "55",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b023",
+   "props": {
+    "step": 3,
+    "total": 3,
+    "title": "BOMBA DE CALOR"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b024",
+   "props": {
+    "text": "GASTA MUCHO MENOS ELECTRICIDAD",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "menos",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b025",
+   "props": {
+    "text": "SIN INVENTAR PORCENTAJES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "porcentaje",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b026",
+   "props": {
+    "text": "NECESITA ESPACIO Y AIRE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "espacio",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b028",
+   "props": {
+    "text": "MÁS CARO AL INICIO · SE PAGA CON EL TIEMPO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 50
+   },
+   "word": "caro",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b029",
+   "props": {
+    "text": "¿CUÁL ELIJO?",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cuál",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b031",
+   "props": {
+    "text": "TANQUE MUY GRANDE = CALOR DE MÁS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "grande",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b032",
+   "props": {
+    "pos": "top",
+    "size": 90,
+    "words": [
+     {
+      "t": "SEGURIDAD PARA TODOS",
+      "beat": "b032",
+      "word": "seguridad",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "seguridad",
+   "until": "b032",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b032",
+   "props": {
+    "text": "1 · VÁLVULA DE SEGURIDAD",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "válvula",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b033",
+   "props": {
+    "text": "2 · INSTALADOR CON MATRÍCULA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "matrícula",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b034",
+   "props": {
+    "text": "4 · TEMPERATURA DE SALIDA REGULADA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 50
+   },
+   "word": "temperatura",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b035",
+   "props": {
+    "text": "5 · BANDEJA CON DESAGÜE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "bandeja",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b036",
+   "props": {
+    "text": "EL COSTO REAL: COMPRA + CONSUMO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "costo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b038",
+   "props": {
+    "text": "PEDÍ EL CONSUMO ANUAL ESTIMADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "consumo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b040",
+   "props": {
+    "text": "LA INSTALACIÓN IMPORTA TANTO COMO EL EQUIPO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 48
+   },
+   "word": "instalación",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b041",
+   "props": {
+    "text": "LLAVES DE CORTE · MANGUERAS FLEXIBLES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "llaves",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b042",
+   "props": {
+    "text": "GAS: HERMETICIDAD CON AGUA JABONOSA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "jabonosa",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b043",
+   "props": {
+    "text": "ELÉCTRICO: CABLE Y TÉRMICA ADECUADOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 50
+   },
+   "word": "calibre",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b044",
+   "props": {
+    "text": "GUARDÁ EL COMPROBANTE Y LA GARANTÍA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "comprobante",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b046",
+   "props": {
+    "text": "VÁLVULA DE ALIVIO: LEVANTÁ LA PALANCA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "palanca",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b048",
+   "props": {
+    "text": "AISLÁ LOS PRIMEROS METROS DE TUBERÍA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "tubería",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b049",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "MITOS",
+      "beat": "b049",
+      "word": "mitos",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "mitos",
+   "until": "b049",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b049",
+   "props": {
+    "text": "MITO 1: DEJARLO PRENDIDO TODO EL DÍA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 52
+   },
+   "word": "prendido",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b051",
+   "props": {
+    "text": "MITO 2: TEMPERATURA AL MÁXIMO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "máximo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b052",
+   "props": {
+    "text": "MITO 3: LOS SOLARES NO SIRVEN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "solares",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b054",
+   "props": {
+    "text": "SEÑALES DE QUE SE ESTÁ MURIENDO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "señales",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b055",
+   "props": {
+    "text": "AGUA MARRÓN SOLO EN LA CALIENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "marrón",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b057",
+   "props": {
+    "text": "MÁS DE 10 AÑOS: PENSÁ EN CAMBIARLO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "años",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b058",
+   "props": {
+    "text": "PEDÍ AL MENOS 3 PRESUPUESTOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "presupuestos",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b060",
+   "props": {
+    "text": "MATRÍCULA O REGISTRO DEL INSTALADOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "matrícula",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b061",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "DE PASO",
+      "beat": "b061",
+      "word": "paso",
+      "hl": "yellow"
+     },
+     {
+      "t": "TANQUE",
+      "beat": "b061",
+      "word": "tanque"
+     },
+     {
+      "t": "BOMBA DE CALOR",
+      "beat": "b061",
+      "word": "bomba",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "tres",
+   "until": "b061",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b063",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b063",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "LA LAVADORA DE MI CASA",
+      "beat": "b063",
+      "word": "lavadora",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b063",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}
