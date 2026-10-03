@@ -1,0 +1,1888 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esta hacha estaba podrida de óxido, con el mango partido. Y así quedó después de un fin de semana de trabajo.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a restored hatchet with a bright polished steel head and a new light wooden handle leaning against a workbench in warm workshop light",
+    "motion": "a soft light glints along the polished edge"
+   },
+   {
+    "k": "G",
+    "v": "a rusty broken old hatchet with a cracked handle lying on a dirty concrete floor"
+   },
+   {
+    "k": "W",
+    "v": "restored polished hatchet"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mira la diferencia. El mismo acero, el mismo ojo, y casi la misma historia. Solo que ahora corta como si fuera nueva.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a rusty old hatchet in one hand and the restored shiny one in the other, comparing them to the camera in his workshop"
+   },
+   {
+    "k": "W",
+    "v": "rusty old axe"
+   },
+   {
+    "k": "W",
+    "v": "old rusty axe head close up"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tan afilada que saca virutas finas como un cepillo. Y la compré, pero en realidad no la compré: la encontré.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio slicing a thin shaving from a piece of pine wood with the sharp restored hatchet, concentrating"
+   },
+   {
+    "k": "G",
+    "v": "a thin curl of wood shaving falling off a sharp hatchet blade on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "wood shavings from a sharp blade"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Estaba en el fondo de un galpón, bajo un trapo húmedo, olvidada hace veinte años. Y casi la tiro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio crouching in a garden shed pulling a rusty hatchet out of a pile of junk, surprised"
+   },
+   {
+    "k": "G",
+    "v": "an old garden shed corner with rusty tools covered in cobwebs"
+   },
+   {
+    "k": "W",
+    "v": "old garden shed with tools"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Era de mi abuelo, o de alguien parecido. Una de esas herramientas que se usaban todos los días y nadie cuidaba.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old wooden shed interior dust"
+   },
+   {
+    "k": "P",
+    "v": "Claudio brushing cobwebs off an old tool box in a dusty shed, curious"
+   },
+   {
+    "k": "W",
+    "v": "blue overheated tempered steel"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero la primera vez que la afilé, la arruiné. Y te voy a mostrar cómo no se hace, que es lo que más cuesta aprender.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a serious expression, finger raised"
+   },
+   {
+    "k": "G",
+    "v": "a hatchet blade turned blue and dark from overheating on a grinder, workbench"
+   },
+   {
+    "k": "W",
+    "v": "axe head maker stamp steel"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y al final, el detalle que casi nadie nota: el acero tiene un sello viejo, y eso te dice si vale la pena restaurarla.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "antique axe collection wall"
+   },
+   {
+    "k": "G",
+    "v": "a hatchet head with a maker's stamp and a faint worn logo on the steel cheek in raking light"
+   },
+   {
+    "k": "W",
+    "v": "old farm property walking"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Siempre digo lo mismo: las mejores herramientas están olvidadas en el fondo de algún lugar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio walking through a rural property with a notebook looking for old tools, cloudy day"
+   },
+   {
+    "k": "W",
+    "v": "old farm shed"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una herramienta vieja no es chatarra: es acero que ya pasó por un buen tratamiento, y que hoy sería carísimo de comprar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old workshop hand tools wall"
+   },
+   {
+    "k": "G",
+    "v": "a rusty hand saw, a plane and a hammer hanging on a nail on an old wooden wall"
+   },
+   {
+    "k": "W",
+    "v": "old rusty tools in a wooden crate"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hachas, serruchos, martillos, palas. Todo oxidado, todo con mango podrido. Y casi todo se puede recuperar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a pile of old hand tools including axes, saws and hammers rusting in a wooden crate in a shed"
+   },
+   {
+    "k": "W",
+    "v": "old rusty tools"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una hacha vieja, forjada, suele tener mejor acero que una nueva de ferretería. Más pesada, más densa, más duradera.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio comparing a modern thin cheap axe head with an old thick forged one in his hands"
+   },
+   {
+    "k": "G",
+    "v": "a modern stamped axe head next to an old forged axe head side by side on a bench"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esta pesaba lo que tiene que pesar: tres cuartos de kilo, más o menos. Y el acero no tenía rajaduras.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio picking up the rusty hatchet and weighing it in his hand, studying it"
+   },
+   {
+    "k": "G",
+    "v": "a close view of a rusty hatchet head covered in orange rust and dirt with a worn eye"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de empezar, la reviso con cuidado. Busco rajaduras en el ojo, en el cuello y en el filo. Una rajadura es el final.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "magnifying glass inspecting metal"
+   },
+   {
+    "k": "P",
+    "v": "Claudio inspecting the hatchet head eye and edge with a flashlight and a magnifying glass"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la prueba del sonido: la golpeo suave con una moneda y escucho. Si suena claro, está sana. Si suena sordo, tiene una grieta.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hatchet head with a small hairline crack near the eye marked with a pencil, and a good head beside it"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping a hatchet head with a coin and listening for a clear ring"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si dudas, pasa un poco de aceite por el ojo y limpia con un trapo: una grieta chupa aceite y deja una línea oscura.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a thin steel crack line in a hatchet eye seen under a magnifying glass"
+   },
+   {
+    "k": "W",
+    "v": "cracked metal macro"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Sonó clarito. Esa hacha merecía una segunda vida. Pero primero, había que sacarle el mango roto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio nodding, satisfied with the clear ring of the hatchet head, smiling"
+   },
+   {
+    "k": "G",
+    "v": "the hatchet head hanging from a finger with a faint clean reflection at its edge"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de empezar, busqué cómo lo hacen otros. Y anoté lo que más se repite: no sobrecalentar el filo, buen mango, y cuidar la cabeza.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio reading comments on a laptop in his workshop, with a notebook"
+   },
+   {
+    "k": "W",
+    "v": "laptop on a workshop table"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo primero, no quemar el temple. Lo segundo, un mango de buena madera, en el sentido de la veta. Y lo tercero, una vaina para el filo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a notebook with three handwritten lines, a pencil beside it on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "person writing in a notebook"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El inventario. Casi todo es lo que ya tienes en la cocina y en el taller.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laying out restoration materials on his workbench, hands on hips"
+   },
+   {
+    "k": "G",
+    "v": "a workbench with a bucket, vinegar, a wire brush, files, a whetstone, linseed oil, sandpaper and a block of ash wood"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Vinagre blanco, dos litros, y un balde de plástico. Es lo que va a comerse el óxido, sin tocar el acero sano.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two litres of white vinegar and a plastic tub on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "white vinegar bottle"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y para la versión rápida, un cargador de baterías, soda para lavar y una varilla de hierro. Eso lo contamos más adelante.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a battery charger, a bucket, washing soda powder and a sacrificial steel rod on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "battery charger"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cepillo de alambre, lima plana, y lijas de grano grueso, medio y fino.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel wire brush, a flat file and several sheets of sandpaper in different grits on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "wire brush on steel"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un tarugo de fresno, de unos sesenta centímetros, para el mango nuevo. Y cuñas de madera y de acero.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a block of ash wood a metre long, a rasp, a saw, and wooden wedges on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "ash wood handle blank"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Aceite de lino cocido, para proteger la madera. Y una piedra de afilar, de grano doble.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a bottle of boiled linseed oil and a rag on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "linseed oil bottle"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y paciencia, que no se compra. Casi todo el trabajo de restaurar herramientas es esperar sin apurarse.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "whetstone water"
+   },
+   {
+    "k": "G",
+    "v": "a whetstone with two grit sides and a bottle of honing oil on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un trozo de cuero, para la vaina. Gasto: casi nada. Todo lo demás, paciencia.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with open hands beside the material, smiling"
+   },
+   {
+    "k": "G",
+    "v": "a leather scrap and a belt on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Siete pasos. Uno, sacar el mango roto. Dos, sacar el óxido.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in front of a blackboard with a chalk drawing of a hatchet, pointing"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard with a chalk drawing of a hatchet head and handle with arrows"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres, recuperar el filo, sin quemarlo. Cuatro, hacer el mango nuevo. Cinco, calzarlo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with chalk numbers three and four next to drawings of a bevel and a file"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping a blackboard with chalk looking at the camera"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Seis, las cuñas y el aceite. Y siete, la vaina. Si te gustan estos trabajos, quédate en el taller.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with chalk numbers six and seven next to drawings of a wedge and a leather sheath"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling at the camera in front of a blackboard"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso uno. El mango roto sigue adentro del ojo. Lo agarro en la morsa y taladro la madera, varias veces, sin tocar el acero.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a hatchet held in a vice with its broken handle stump being drilled out, wood chips flying",
+    "motion": "wood chips jump out of the drilled hole"
+   },
+   {
+    "k": "P",
+    "v": "Claudio clamping the hatchet head in a vice and drilling out the old broken handle stump with a drill bit, safety glasses"
+   },
+   {
+    "k": "G",
+    "v": "the broken stump of a wooden handle stuck inside the eye of a hatchet head clamped in a vice"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El acero va protegido con un trapo entre las mordazas, para no marcarlo. Y con la cabeza bien firme.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hatchet clamped in a vice with its handle pointing up and a drill bit ready, safety glasses beside it"
+   },
+   {
+    "k": "W",
+    "v": "vice clamp workshop"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un punzón y un martillo saco lo que queda. Si la madera está vieja, sale en trozos. Y si está hinchada, se remoja primero.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hatchet head with remains of wood in the eye after drilling, wood chips on the bench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio knocking out the remaining wood from the hatchet eye with a punch and a hammer"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un truco que me dijeron: quemar el resto del mango. No lo hago: el fuego calienta el acero y le saca el temple. Mejor con paciencia.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "burning wood in a fire"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at a fire pit with a hatchet head resting beside it, thinking"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El ojo quedó limpio. Por ahí va a pasar el mango nuevo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio blowing dust out of the clean empty eye of the hatchet head and looking through it at the light"
+   },
+   {
+    "k": "G",
+    "v": "the eye of a hatchet head seen from the side, empty and clean"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Limpio y vacío. Y así se ve mejor si el ojo está recto o torcido, que es algo que conviene saber antes.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking through the cleaned eye of the hatchet toward the light and smiling"
+   },
+   {
+    "k": "W",
+    "v": "light through a hole"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso dos, el óxido. El primer método: remojar en vinagre blanco, entre ocho y doce horas. Con tapa, y lejos de la comida.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a rusty hatchet head submerged in a plastic tub of white vinegar with small bubbles rising",
+    "motion": "tiny bubbles rise slowly from the metal"
+   },
+   {
+    "k": "G",
+    "v": "a plastic tub with a rusty hatchet head soaking in white vinegar on a workshop floor"
+   },
+   {
+    "k": "W",
+    "v": "vinegar rust removal soaking"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se nota cuando funciona: el vinagre se pone marrón, y se forman burbujitas finas sobre la pieza.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "vinegar bubbles reacting with rust"
+   },
+   {
+    "k": "G",
+    "v": "a hatchet head in a tub of vinegar with a faint brown colour in the liquid and a few bubbles"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El vinagre ataca el óxido, que es hierro oxidado, y deja el acero base casi sin tocar. Pero se pasa de tiempo y también lo pica.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "rust removal vinegar"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking the hatchet in the vinegar tub with a spoon, curious"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Sale gris oscuro, con una capa negra que sale con el cepillo. El acero aparece, con picaduras.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pulling the hatchet out of the vinegar and scrubbing it with a wire brush, black foam and rust dust coming off"
+   },
+   {
+    "k": "G",
+    "v": "a hatchet head scrubbed with a wire brush showing grey steel appearing under the rust"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esas picaduras profundas no se van, y no importa: es un hacha, no una joya. Lo importante es que el filo y el cuello estén sanos.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hatchet head partly cleaned showing deep rust pits on its cheeks"
+   },
+   {
+    "k": "W",
+    "v": "pitted rusty steel"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las marcas del tiempo. Si quisieras un espejo, tendrías que pulir una semana, y no vale la pena.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio running his thumb over the pitted surface of the cleaned hatchet, philosophical"
+   },
+   {
+    "k": "G",
+    "v": "a close view of the pitted surface of old steel after cleaning with a pattern of small dimples"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para la parte difícil, probé la electrólisis. Un balde con agua y soda para lavar, una varilla de hierro, y un cargador de baterías.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio setting up a plastic bucket with water and washing soda and a battery charger beside it, workshop"
+   },
+   {
+    "k": "G",
+    "v": "a plastic bucket with water, a steel rod standing in it and a battery charger with red and black clamps beside it"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La electrólisis es una técnica vieja: usa corriente para que el óxido se despegue solo, sin atacar el acero sano.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "rust removal electrolysis tank"
+   },
+   {
+    "k": "G",
+    "v": "a bucket with water and a clean rust-free steel tool hanging from a wire"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El hacha cuelga de un alambre, sumergida. La varilla, al otro lado. Pero acá, el cable rojo y el negro importan muchísimo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "red and black battery charger clamps hanging on the rim of a plastic bucket, a hatchet head hanging from a wire inside it"
+   },
+   {
+    "k": "W",
+    "v": "electrolysis rust removal"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mal conectado, la corriente come el hacha en lugar de la varilla. Y eso fue exactamente lo que hice la primera vez.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio connecting the clamps to the bucket carefully, concentrated, wearing gloves and glasses"
+   },
+   {
+    "k": "G",
+    "v": "a close view of a battery charger clamp attached to a steel rod over a bucket"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Conecté al revés. A los diez minutos el agua se puso marrón oscuro, y el hacha se cubrió de una película negra.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a bucket with bubbling water and a hatchet head submerged, dark foam on the surface",
+    "motion": "dense bubbles rise and the dark foam shifts slowly"
+   },
+   {
+    "k": "G",
+    "v": "a bucket with dark brown bubbling water and a hatchet head turning black"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La sacó con más picaduras que antes. Una hora más, y habría perdido metal del filo. Un error que se paga en acero.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pulling the hatchet out of the bucket and looking at its black pitted surface with a grim face"
+   },
+   {
+    "k": "G",
+    "v": "a hatchet head covered in black crud and fresh pits after reversed polarity electrolysis"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La regla: el positivo va a la varilla de sacrificio. El negativo, a la pieza que quieres limpiar. Siempre.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining with a small diagram of positive and negative on a notepad"
+   },
+   {
+    "k": "G",
+    "v": "a notepad with a sketch of a battery charger, a bucket, a rod and a tool with the plus and minus signs"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Corregido, y con ventilación abierta: la electrólisis larga libera hidrógeno, y no se hace en un cuarto cerrado.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a bucket with fizzing water, a rusty hatchet head hanging from a wire and a steel rod on the other side, small bubbles rising",
+    "motion": "fine bubbles rise steadily from the hatchet head"
+   },
+   {
+    "k": "W",
+    "v": "electrolysis tank bubbling"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La varilla se llena de óxido, y es normal: se sacrificó para que el hacha se salvara. Se limpia o se tira.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a rod of sacrificial steel covered with rust and black crud on one side after the process"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the sacrificial rod covered in rust that did the work instead of the hatchet"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Puerta abierta, sin chispas ni cigarrillos cerca. A las cuatro horas, el óxido empezó a salir en láminas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio wearing a respirator mask and opening the garage door to ventilate while the electrolysis bucket runs"
+   },
+   {
+    "k": "G",
+    "v": "a garage door open wide with a bucket on the floor and bubbles rising"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se enjuaga, se cepilla, y el acero aparece gris y parejo, con las picaduras viejas, pero sin óxido nuevo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hatchet head covered in loosening black rust flakes after electrolysis rinsed under water"
+   },
+   {
+    "k": "P",
+    "v": "Claudio rinsing the hatchet head under a tap and scrubbing with a brush, flakes washing off"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso tres, el filo. Estaba mellado, redondeado, y con una muesca. Un filo de cuchara.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laying the cleaned hatchet head on the bench and examining its dull edge with his finger carefully"
+   },
+   {
+    "k": "G",
+    "v": "a hatchet blade with a dull nicked edge under a workshop lamp"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La muesca grande, de dos milímetros, tuve que sacarla entera. Si no, el filo se parte por ahí.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old nicked axe blade"
+   },
+   {
+    "k": "G",
+    "v": "a nick in the edge of a hatchet blade marked with a pencil circle"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y acá el error clásico: la amoladora. El acero de un hacha tiene un temple, y si lo calientas, se pone azul y se ablanda.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining why heat matters, holding a file"
+   },
+   {
+    "k": "W",
+    "v": "steel tempering colours"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La amoladora es rápida y tentadora. Pero un hacha se afila con paciencia, no con velocidad.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "grinder sparks on steel"
+   },
+   {
+    "k": "G",
+    "v": "an angle grinder with a flap disc ready next to a hatchet blade clamped in a vice"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Eso me pasó. Apuré con la amoladora, y el filo se puso azul violáceo. Un filo azul ya no sostiene el corte.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hatchet edge with a blue-purple band of overheated steel after grinding"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the blue tint near the edge of the hatchet, disappointed"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El arreglo fue lento: con una lima, sacar el acero quemado hasta llegar al metal sano. Dos milímetros de filo perdidos.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the blue band of overheated steel being filed away revealing grey steel under it, workshop"
+   },
+   {
+    "k": "P",
+    "v": "Claudio filing the first millimetres of the edge to remove the overheated steel"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La lima: un lado, luego el otro, siempre en el sentido del filo. Y con la mano fría: si el acero quema el dedo, paras.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a hand with a flat file stroking a hatchet blade clamped in a vice, thin metal filings falling",
+    "motion": "the file moves forward and filings fall to the bench"
+   },
+   {
+    "k": "W",
+    "v": "filing metal in a vice"
+   },
+   {
+    "k": "W",
+    "v": "filing steel edge with a file"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el dedo cerca del filo, siempre. Si te quema, ya es tarde para el temple.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio resting a fingertip against the hatchet blade to check its temperature while filing"
+   },
+   {
+    "k": "G",
+    "v": "a hand touching the side of a hatchet blade to feel the warmth"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si usas la amoladora, una pasada y al agua. El acero nunca debe pasar de lo que aguantas con la mano.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio dipping the hatchet blade in a bucket of water every few strokes, steam rising a little"
+   },
+   {
+    "k": "G",
+    "v": "a bucket of water with a hatchet head being dipped, a wisp of steam"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El bisel tiene que ser parejo en los dos lados: un ángulo de unos veinte a veinticinco grados, para cortar madera sin astillarse.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a close view of the bevel of a hatchet blade with even file marks on both sides"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking the bevel evenness against the light"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el bisel es muy agudo, el filo se dobla. Si es muy ancho, la hacha rebota. Veinte, veinticinco grados es el término medio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "axe edge bevel diagram"
+   },
+   {
+    "k": "G",
+    "v": "a chalk drawing of a hatchet blade cross-section showing the bevel angle on a blackboard"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cuatro, el mango. Fresno, nogal o carpe. Con la veta recta y a lo largo del mango, sin nudos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio selecting a block of ash wood and looking along its grain, thoughtful"
+   },
+   {
+    "k": "G",
+    "v": "a block of ash wood with a straight grain on a workbench next to a hatchet head"
+   }
+  ]
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El fresno es el rey de los mangos: flexible, resistente a los golpes y que absorbe la vibración. Y se consigue en cualquier maderera.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "ash wood tree trunk"
+   },
+   {
+    "k": "G",
+    "v": "a straight grained ash wood plank leaning against a workshop wall"
+   }
+  ]
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La veta tiene que seguir el largo del mango. Si la veta cruza, el mango se parte al primer golpe fuerte.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wood grain close up"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing how the grain runs along the handle blank with his finger"
+   }
+  ]
+ },
+ {
+  "id": "b067",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con una escofina, doy forma. Más grueso en la punta, más fino en el medio, y un ensanche al final para que no resbale.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a hand rasp shaping a wooden handle blank clamped in a vice, wood shavings falling",
+    "motion": "the rasp strokes along the wood and shavings fall"
+   },
+   {
+    "k": "P",
+    "v": "Claudio shaping the handle with a rasp, concentrated"
+   },
+   {
+    "k": "W",
+    "v": "wood rasp shaping handle"
+   }
+  ]
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para copiar la forma uso el mango roto de molde, o un mango que me guste. Y marco con lápiz antes de cortar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a handle blank with a paper template of the original handle shape taped on it"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tracing the outline of an old handle on a new wooden blank with a pencil"
+   }
+  ]
+ },
+ {
+  "id": "b069",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pruebo el tarugo en el ojo, marco con lápiz donde roza, y saco un poco más. Hasta que entre justo, sin forzar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the end of a wooden handle shaped to match the eye of the hatchet head, being tried in the opening"
+   },
+   {
+    "k": "P",
+    "v": "Claudio testing the handle end in the hatchet eye and marking where it is too thick with a pencil"
+   }
+  ]
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un truco: tiza en el mango, y se ve exactamente dónde roza dentro del ojo. Se saca solo ahí, y no más.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the handle end covered with blue chalk showing contact points inside the hatchet eye"
+   },
+   {
+    "k": "W",
+    "v": "fitting wood in metal opening"
+   }
+  ]
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En la punta del mango, un corte de sierra de unos cuatro centímetros: ahí va la cuña, que lo abre y lo traba contra el ojo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio sawing a slot in the top end of the handle for a wedge with a handsaw, careful"
+   },
+   {
+    "k": "G",
+    "v": "a wooden handle top end with a straight saw cut slot in the middle"
+   }
+  ]
+ },
+ {
+  "id": "b072",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cinco. Meto el mango por el ojo, y lo golpeo de abajo contra el banco: la inercia hace que la cabeza baje y se asiente.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio inserting the handle into the hatchet eye and tapping its bottom on the workbench to seat it, concentrated"
+   },
+   {
+    "k": "A",
+    "v": "the handle being tapped on the workbench and the hatchet head sliding down onto it",
+    "motion": "the head moves down with each tap and settles tight"
+   },
+   {
+    "k": "W",
+    "v": "hammering wedge into axe handle"
+   }
+  ]
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La inercia hace todo el trabajo. No hay que martillar la cabeza: eso la deforma, y puede rajar el mango.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wood handle fitting hammer head"
+   },
+   {
+    "k": "G",
+    "v": "a hand holding a handle vertically above a bench with a hatchet head about to slide down the handle"
+   }
+  ]
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Debe quedar un par de milímetros de madera sobresaliendo arriba, que después se corta al ras, y se abre con la cuña.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the hatchet head fully seated on the wooden handle, a few millimetres of wood sticking out above the eye"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking the seat from above with one eye closed"
+   }
+  ]
+ },
+ {
+  "id": "b075",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La cuña de madera, con golpes secos y parejos. Se abre el mango dentro del ojo, y se traba para siempre.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio hammering a wooden wedge into the slot at the top of the handle, controlled strikes"
+   },
+   {
+    "k": "A",
+    "v": "a hammer striking a wooden wedge into a slot at the top of a handle seated in a hatchet eye",
+    "motion": "the hammer hits and the wedge sinks a few millimetres each time"
+   }
+  ]
+ },
+ {
+  "id": "b076",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuña de la misma madera o de una más dura, seca, y de punta fina. Se afina con cuchillo, y se pega con cola para madera.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a wooden wedge cut from dry hardwood with a slight taper on a workbench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio shaving a wooden wedge with a knife to make it taper"
+   }
+  ]
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y una cuña de acero, en diagonal, por seguridad: es el seguro que impide que la cabeza salga volando.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small steel wedge hammered diagonally across the wood wedge at the top of the handle"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping a small steel wedge into the handle top, careful"
+   }
+  ]
+ },
+ {
+  "id": "b078",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Corto al ras con la sierra, y lijo. Y el mango queda como si hubiera nacido ahí.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio sawing off the protruding wood flush with the top of the head, wearing glasses"
+   },
+   {
+    "k": "G",
+    "v": "the top of a hatchet head with the wood and wedges cut flush, workshop"
+   }
+  ]
+ },
+ {
+  "id": "b079",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba del mango: sacudo, golpeo, y compruebo que no baila. Si baila, se saca y se vuelve a calzar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking the hatchet head by the handle and tapping it on the bench to test it is tight"
+   },
+   {
+    "k": "G",
+    "v": "the hatchet resting on a bench with a clean tight joint between head and handle"
+   }
+  ]
+ },
+ {
+  "id": "b080",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lijo el mango, de grueso a fino, hasta que parece seda. Sin astillas, porque esa mano va a trabajar con guantes o sin ellos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio sanding the handle smooth with fine sandpaper, wood dust on his hands"
+   },
+   {
+    "k": "G",
+    "v": "a handle with a smooth sanded surface beside a pile of fine wood dust"
+   }
+  ]
+ },
+ {
+  "id": "b081",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Grano ochenta, ciento veinte y doscientos. Cada uno saca las rayas del anterior. Es la parte aburrida, y la que se nota.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "sandpaper sanding wood handle"
+   },
+   {
+    "k": "G",
+    "v": "sandpaper in three grits stacked on a workbench beside a smooth finished handle"
+   }
+  ]
+ },
+ {
+  "id": "b082",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Aceite de lino, en capas finas, con trapo: da protección y agarre, y el fresno queda dorado.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio wiping linseed oil on the handle with a rag, wood grain turning golden"
+   },
+   {
+    "k": "A",
+    "v": "a rag wiping boiled linseed oil onto a wooden handle, the wood darkening to gold",
+    "motion": "the rag strokes along the handle and the wood turns golden"
+   }
+  ]
+ },
+ {
+  "id": "b083",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y los trapos con aceite de lino, estirados y afuera: hechos un bollo, se calientan solos y pueden prenderse fuego.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "oily rag fire hazard"
+   },
+   {
+    "k": "P",
+    "v": "Claudio spreading the oily rags flat on a metal tray to dry outdoors, careful"
+   }
+  ]
+ },
+ {
+  "id": "b084",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Piedra de grano grueso primero, bien mojada. Con el hacha apoyada, y pasadas en círculos, a veinte grados.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a double-grit whetstone soaked in water on a wooden holder on a workbench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio setting a whetstone on a wet cloth on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b085",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La piedra, mojada y apoyada sobre un trapo húmedo, para que no se escape. Una piedra que patina es una mano cortada.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a bowl of water and a whetstone resting on a folded wet cloth to keep it from slipping"
+   },
+   {
+    "k": "W",
+    "v": "wet stone sharpening"
+   }
+  ]
+ },
+ {
+  "id": "b086",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hasta que aparece una rebaba fina en el otro lado del filo. Esa rebaba es la señal de que llegaste al filo.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a hatchet blade being sharpened on a wet whetstone in circular strokes, slurry appearing",
+    "motion": "the blade moves in circles on the stone and grey slurry builds up"
+   },
+   {
+    "k": "W",
+    "v": "sharpening axe whetstone"
+   }
+  ]
+ },
+ {
+  "id": "b087",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después, grano fino, con menos presión. Y al final, un asentado con cuero y una pasta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio switching to the fine side of the whetstone and sharpening gently"
+   },
+   {
+    "k": "G",
+    "v": "the fine side of the whetstone with a wet film and the hatchet blade on it"
+   }
+  ]
+ },
+ {
+  "id": "b088",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba: corto un pelo del antebrazo, sin presionar. Si lo saca, está afilada. Con cuidado, que es filo de verdad.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaving hair off his arm with the hatchet edge carefully, testing sharpness"
+   },
+   {
+    "k": "G",
+    "v": "a few arm hairs on a bench next to the razor sharp hatchet edge"
+   }
+  ]
+ },
+ {
+  "id": "b089",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "O, más seguro: un papel de diario sostenido en el aire. Si lo corta sin romperlo, el filo está listo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "sharp blade cutting paper"
+   },
+   {
+    "k": "P",
+    "v": "Claudio slicing a sheet of newspaper with the hatchet edge, clean cut"
+   }
+  ]
+ },
+ {
+  "id": "b090",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso siete, la vaina. Un cuero grueso, cortado con la forma del filo, y doblado sobre sí mismo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio cutting a piece of leather on a workbench with a utility knife along a template"
+   },
+   {
+    "k": "G",
+    "v": "a piece of brown leather with a hatchet outline and a template drawn on it"
+   }
+  ]
+ },
+ {
+  "id": "b091",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con una lezna, hilo encerado y dos remaches. Es una costura simple, pero fuerte, y se aprende en una tarde.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "leather craft tools"
+   },
+   {
+    "k": "G",
+    "v": "a leather punch, a stitching awl, waxed thread and rivets on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b092",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Costura a mano con hilo encerado, y dos remaches. Un filo sin vaina se mella en la caja de herramientas.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a needle with waxed thread stitching a leather sheath on a workbench, hands pulling the thread",
+    "motion": "the thread pulls tight with each stitch"
+   },
+   {
+    "k": "W",
+    "v": "leather stitching"
+   }
+  ]
+ },
+ {
+  "id": "b093",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y queda como si la hubieran hecho de fábrica. Una herramienta cuidada dura más que nosotros.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio sliding the hatchet into the finished leather sheath and snapping the strap closed"
+   },
+   {
+    "k": "G",
+    "v": "a hatchet in a leather sheath with a strap on a wooden bench"
+   }
+  ]
+ },
+ {
+  "id": "b094",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba de fuego. Un tronco de pino seco, sobre un tocón, con botas y anteojos, y nadie cerca.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in the yard setting up a log of dry pine on a chopping block, safety glasses and boots on"
+   },
+   {
+    "k": "G",
+    "v": "a pine log standing on a chopping block in a yard with a stack of kindling beside it"
+   }
+  ]
+ },
+ {
+  "id": "b095",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primer golpe: el filo entra, y el tronco se abre. Con la hacha vieja habría rebotado.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a person splitting a pine log with a hatchet, the log splitting open and wood chips flying",
+    "motion": "the hatchet comes down and the log splits open sending chips flying"
+   },
+   {
+    "k": "W",
+    "v": "splitting wood with hatchet"
+   }
+  ]
+ },
+ {
+  "id": "b096",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un solo golpe, a veces dos. Con el filo sano y el mango firme, la madera casi se parte sola.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio watching the split halves of the log fall apart with a satisfied look"
+   },
+   {
+    "k": "G",
+    "v": "two halves of a pine log lying on the grass next to a hatchet"
+   }
+  ]
+ },
+ {
+  "id": "b097",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ahora, astillas finas para el fuego. Con golpes cortos y precisos, que es para lo que sirve una hacha chica.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio splitting kindling carefully into thin sticks with controlled hits, steady rhythm"
+   },
+   {
+    "k": "G",
+    "v": "a neat pile of thin kindling sticks split from pine beside a chopping block"
+   }
+  ]
+ },
+ {
+  "id": "b098",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Reviso el filo después de cortar: sin una mella. El acero sano, bien afilado, aguanta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the hatchet edge after use, checking it for nicks with his thumb beside the blade"
+   },
+   {
+    "k": "G",
+    "v": "the hatchet edge close up after chopping, clean and sharp with no nick"
+   }
+  ]
+ },
+ {
+  "id": "b099",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y antes de guardarla, un trapo con aceite en el filo: la humedad de la caja de herramientas es lo que la oxidó la primera vez.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a fine mist of oil being wiped onto a hatchet blade with a rag"
+   },
+   {
+    "k": "P",
+    "v": "Claudio wiping the hatchet blade with a lightly oiled rag before putting it away"
+   }
+  ]
+ },
+ {
+  "id": "b100",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las reglas de seguridad. Uno, siempre anteojos y calzado cerrado. Dos, nunca golpees una hacha contra metal ni contra piedra.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting safety points on his fingers, serious"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard with a list of safety rules for the hatchet in chalk"
+   }
+  ]
+ },
+ {
+  "id": "b101",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres, espacio libre de dos metros alrededor, sin personas ni perros. Cuatro, cortar sobre un tocón, nunca en el suelo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with chalk points three and four next to a drawing of a clear safe area around a chopping block"
+   },
+   {
+    "k": "P",
+    "v": "Claudio drawing a circle of safe space on the floor with chalk"
+   }
+  ]
+ },
+ {
+  "id": "b102",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cinco, el filo siempre cubierto: sin vaina, el filo lastima a quien la guarda. Una hacha afilada es mucho más segura que una roma.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio showing how to carry a hatchet by the neck with the edge pointing away, walking carefully"
+   },
+   {
+    "k": "W",
+    "v": "safety tools hatchet carrying"
+   }
+  ]
+ },
+ {
+  "id": "b103",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la hacha se deja clavada en el tocón, o guardada en su vaina. Nunca tirada en el pasto, que es donde se pierde y lastima.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wood chopping block yard"
+   },
+   {
+    "k": "P",
+    "v": "Claudio leaving the hatchet stuck safely in a chopping block at the end of the day, pointing it out"
+   }
+  ]
+ },
+ {
+  "id": "b104",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una hacha olvidada por veinte años, con un fin de semana de trabajo, vinagre, una piedra y un mango de fresno.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing with the restored hatchet and its sheath resting on his shoulder, proud look, warm light"
+   },
+   {
+    "k": "A",
+    "v": "the restored hatchet in its leather sheath on a workbench in warm light",
+    "motion": "a soft glint moves along the steel"
+   }
+  ]
+ },
+ {
+  "id": "b105",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo que aprendí a los golpes: no quemar el filo, mirar la polaridad, y la veta del mango siempre a lo largo. Tres cosas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting three fingers looking at the camera, warm"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard with three lines: do not overheat, polarity right, handle grain along"
+   }
+  ]
+ },
+ {
+  "id": "b106",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tienes una hacha vieja en el fondo del galpón, no la tires. Cuéntame qué herramienta rescatarías tú.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with the hatchet on the bench behind him, friendly half smile"
+   },
+   {
+    "k": "W",
+    "v": "cozy workshop with tools"
+   }
+  ]
+ },
+ {
+  "id": "b107",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Nos vemos en el taller, con otra herramienta que no merece quedar en el olvido.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio waving goodbye with the hatchet resting behind him at the workshop door, warm light"
+   },
+   {
+    "k": "A",
+    "v": "the workshop doorway at dusk with warm light spilling out",
+    "motion": "the warm light flickers softly"
+   }
+  ]
+ }
+]

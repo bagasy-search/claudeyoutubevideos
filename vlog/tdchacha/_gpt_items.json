@@ -1,0 +1,804 @@
+[
+ {
+  "name": "b001_0",
+  "prompt": "a restored hatchet with a bright polished steel head and a new light wooden handle leaning against a workbench in warm workshop light. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b001_1",
+  "prompt": "a rusty broken old hatchet with a cracked handle lying on a dirty concrete floor. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b002_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio holding a rusty old hatchet in one hand and the restored shiny one in the other, comparing them to the camera in his workshop. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b003_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio slicing a thin shaving from a piece of pine wood with the sharp restored hatchet, concentrating. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b003_1",
+  "prompt": "a thin curl of wood shaving falling off a sharp hatchet blade on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b004_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio crouching in a garden shed pulling a rusty hatchet out of a pile of junk, surprised. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b004_1",
+  "prompt": "an old garden shed corner with rusty tools covered in cobwebs. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b005_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio brushing cobwebs off an old tool box in a dusty shed, curious. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b005_2",
+  "prompt": "blue overheated tempered steel. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b006_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at the camera with a serious expression, finger raised. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b006_1",
+  "prompt": "a hatchet blade turned blue and dark from overheating on a grinder, workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b006_2",
+  "prompt": "axe head maker stamp steel. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b007_1",
+  "prompt": "a hatchet head with a maker's stamp and a faint worn logo on the steel cheek in raking light. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b008_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio walking through a rural property with a notebook looking for old tools, cloudy day. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b009_1",
+  "prompt": "a rusty hand saw, a plane and a hammer hanging on a nail on an old wooden wall. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b010_0",
+  "prompt": "a pile of old hand tools including axes, saws and hammers rusting in a wooden crate in a shed. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b011_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio comparing a modern thin cheap axe head with an old thick forged one in his hands. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b011_1",
+  "prompt": "a modern stamped axe head next to an old forged axe head side by side on a bench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b012_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio picking up the rusty hatchet and weighing it in his hand, studying it. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b012_1",
+  "prompt": "a close view of a rusty hatchet head covered in orange rust and dirt with a worn eye. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b013_0",
+  "prompt": "magnifying glass inspecting metal. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b013_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio inspecting the hatchet head eye and edge with a flashlight and a magnifying glass. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b014_0",
+  "prompt": "a hatchet head with a small hairline crack near the eye marked with a pencil, and a good head beside it. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b014_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio tapping a hatchet head with a coin and listening for a clear ring. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b015_0",
+  "prompt": "a thin steel crack line in a hatchet eye seen under a magnifying glass. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b016_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio nodding, satisfied with the clear ring of the hatchet head, smiling. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b016_1",
+  "prompt": "the hatchet head hanging from a finger with a faint clean reflection at its edge. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b017_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio reading comments on a laptop in his workshop, with a notebook. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b018_0",
+  "prompt": "a notebook with three handwritten lines, a pencil beside it on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b019_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio laying out restoration materials on his workbench, hands on hips. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b019_1",
+  "prompt": "a workbench with a bucket, vinegar, a wire brush, files, a whetstone, linseed oil, sandpaper and a block of ash wood. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b020_0",
+  "prompt": "two litres of white vinegar and a plastic tub on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b020_1",
+  "prompt": "white vinegar bottle. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b021_0",
+  "prompt": "a battery charger, a bucket, washing soda powder and a sacrificial steel rod on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b022_0",
+  "prompt": "a steel wire brush, a flat file and several sheets of sandpaper in different grits on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b022_1",
+  "prompt": "wire brush on steel. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b023_0",
+  "prompt": "a block of ash wood a metre long, a rasp, a saw, and wooden wedges on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b023_1",
+  "prompt": "ash wood handle blank. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b024_0",
+  "prompt": "a bottle of boiled linseed oil and a rag on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b025_1",
+  "prompt": "a whetstone with two grit sides and a bottle of honing oil on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b026_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shrugging with open hands beside the material, smiling. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b026_1",
+  "prompt": "a leather scrap and a belt on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b027_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio in front of a blackboard with a chalk drawing of a hatchet, pointing. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b027_1",
+  "prompt": "a blackboard with a chalk drawing of a hatchet head and handle with arrows. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b028_0",
+  "prompt": "a blackboard with chalk numbers three and four next to drawings of a bevel and a file. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b028_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio tapping a blackboard with chalk looking at the camera. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b029_0",
+  "prompt": "a blackboard with chalk numbers six and seven next to drawings of a wedge and a leather sheath. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b029_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio smiling at the camera in front of a blackboard. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b030_0",
+  "prompt": "a hatchet held in a vice with its broken handle stump being drilled out, wood chips flying. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b030_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio clamping the hatchet head in a vice and drilling out the old broken handle stump with a drill bit, safety glasses. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b030_2",
+  "prompt": "the broken stump of a wooden handle stuck inside the eye of a hatchet head clamped in a vice. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b031_0",
+  "prompt": "a hatchet clamped in a vice with its handle pointing up and a drill bit ready, safety glasses beside it. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b032_0",
+  "prompt": "a hatchet head with remains of wood in the eye after drilling, wood chips on the bench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b032_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio knocking out the remaining wood from the hatchet eye with a punch and a hammer. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b033_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at a fire pit with a hatchet head resting beside it, thinking. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b034_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio blowing dust out of the clean empty eye of the hatchet head and looking through it at the light. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b034_1",
+  "prompt": "the eye of a hatchet head seen from the side, empty and clean. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b035_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking through the cleaned eye of the hatchet toward the light and smiling. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b036_0",
+  "prompt": "a rusty hatchet head submerged in a plastic tub of white vinegar with small bubbles rising. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b036_1",
+  "prompt": "a plastic tub with a rusty hatchet head soaking in white vinegar on a workshop floor. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b036_2",
+  "prompt": "vinegar rust removal soaking. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b037_1",
+  "prompt": "a hatchet head in a tub of vinegar with a faint brown colour in the liquid and a few bubbles. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b038_0",
+  "prompt": "rust removal vinegar. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b038_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio checking the hatchet in the vinegar tub with a spoon, curious. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b039_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio pulling the hatchet out of the vinegar and scrubbing it with a wire brush, black foam and rust dust coming off. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b039_1",
+  "prompt": "a hatchet head scrubbed with a wire brush showing grey steel appearing under the rust. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b040_0",
+  "prompt": "a hatchet head partly cleaned showing deep rust pits on its cheeks. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b041_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio running his thumb over the pitted surface of the cleaned hatchet, philosophical. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b041_1",
+  "prompt": "a close view of the pitted surface of old steel after cleaning with a pattern of small dimples. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b042_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio setting up a plastic bucket with water and washing soda and a battery charger beside it, workshop. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b042_1",
+  "prompt": "a plastic bucket with water, a steel rod standing in it and a battery charger with red and black clamps beside it. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b043_0",
+  "prompt": "rust removal electrolysis tank. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b043_1",
+  "prompt": "a bucket with water and a clean rust-free steel tool hanging from a wire. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b044_0",
+  "prompt": "red and black battery charger clamps hanging on the rim of a plastic bucket, a hatchet head hanging from a wire inside it. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b044_1",
+  "prompt": "electrolysis rust removal. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b045_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio connecting the clamps to the bucket carefully, concentrated, wearing gloves and glasses. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b045_1",
+  "prompt": "a close view of a battery charger clamp attached to a steel rod over a bucket. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b046_0",
+  "prompt": "a bucket with bubbling water and a hatchet head submerged, dark foam on the surface. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b046_1",
+  "prompt": "a bucket with dark brown bubbling water and a hatchet head turning black. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b047_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio pulling the hatchet out of the bucket and looking at its black pitted surface with a grim face. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b047_1",
+  "prompt": "a hatchet head covered in black crud and fresh pits after reversed polarity electrolysis. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b048_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio explaining with a small diagram of positive and negative on a notepad. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b048_1",
+  "prompt": "a notepad with a sketch of a battery charger, a bucket, a rod and a tool with the plus and minus signs. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b049_0",
+  "prompt": "a bucket with fizzing water, a rusty hatchet head hanging from a wire and a steel rod on the other side, small bubbles rising. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b050_0",
+  "prompt": "a rod of sacrificial steel covered with rust and black crud on one side after the process. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b050_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at the sacrificial rod covered in rust that did the work instead of the hatchet. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b051_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio wearing a respirator mask and opening the garage door to ventilate while the electrolysis bucket runs. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b051_1",
+  "prompt": "a garage door open wide with a bucket on the floor and bubbles rising. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b052_0",
+  "prompt": "a hatchet head covered in loosening black rust flakes after electrolysis rinsed under water. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b052_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio rinsing the hatchet head under a tap and scrubbing with a brush, flakes washing off. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b053_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio laying the cleaned hatchet head on the bench and examining its dull edge with his finger carefully. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b053_1",
+  "prompt": "a hatchet blade with a dull nicked edge under a workshop lamp. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b054_1",
+  "prompt": "a nick in the edge of a hatchet blade marked with a pencil circle. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b055_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio explaining why heat matters, holding a file. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b055_1",
+  "prompt": "steel tempering colours. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b056_1",
+  "prompt": "an angle grinder with a flap disc ready next to a hatchet blade clamped in a vice. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b057_0",
+  "prompt": "a hatchet edge with a blue-purple band of overheated steel after grinding. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b057_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at the blue tint near the edge of the hatchet, disappointed. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b058_0",
+  "prompt": "the blue band of overheated steel being filed away revealing grey steel under it, workshop. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b058_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio filing the first millimetres of the edge to remove the overheated steel. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b059_0",
+  "prompt": "a hand with a flat file stroking a hatchet blade clamped in a vice, thin metal filings falling. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b060_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio resting a fingertip against the hatchet blade to check its temperature while filing. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b060_1",
+  "prompt": "a hand touching the side of a hatchet blade to feel the warmth. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b061_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio dipping the hatchet blade in a bucket of water every few strokes, steam rising a little. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b061_1",
+  "prompt": "a bucket of water with a hatchet head being dipped, a wisp of steam. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b062_0",
+  "prompt": "a close view of the bevel of a hatchet blade with even file marks on both sides. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b062_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio checking the bevel evenness against the light. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b063_0",
+  "prompt": "axe edge bevel diagram. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b063_1",
+  "prompt": "a chalk drawing of a hatchet blade cross-section showing the bevel angle on a blackboard. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b064_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio selecting a block of ash wood and looking along its grain, thoughtful. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b064_1",
+  "prompt": "a block of ash wood with a straight grain on a workbench next to a hatchet head. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b065_1",
+  "prompt": "a straight grained ash wood plank leaning against a workshop wall. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b066_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio showing how the grain runs along the handle blank with his finger. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b067_0",
+  "prompt": "a hand rasp shaping a wooden handle blank clamped in a vice, wood shavings falling. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b067_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shaping the handle with a rasp, concentrated. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b068_0",
+  "prompt": "a handle blank with a paper template of the original handle shape taped on it. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b068_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio tracing the outline of an old handle on a new wooden blank with a pencil. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b069_0",
+  "prompt": "the end of a wooden handle shaped to match the eye of the hatchet head, being tried in the opening. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b069_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio testing the handle end in the hatchet eye and marking where it is too thick with a pencil. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b070_0",
+  "prompt": "the handle end covered with blue chalk showing contact points inside the hatchet eye. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b071_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio sawing a slot in the top end of the handle for a wedge with a handsaw, careful. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b071_1",
+  "prompt": "a wooden handle top end with a straight saw cut slot in the middle. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b072_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio inserting the handle into the hatchet eye and tapping its bottom on the workbench to seat it, concentrated. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b072_1",
+  "prompt": "the handle being tapped on the workbench and the hatchet head sliding down onto it. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b073_1",
+  "prompt": "a hand holding a handle vertically above a bench with a hatchet head about to slide down the handle. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b074_0",
+  "prompt": "the hatchet head fully seated on the wooden handle, a few millimetres of wood sticking out above the eye. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b074_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio checking the seat from above with one eye closed. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b075_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio hammering a wooden wedge into the slot at the top of the handle, controlled strikes. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b075_1",
+  "prompt": "a hammer striking a wooden wedge into a slot at the top of a handle seated in a hatchet eye. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b076_0",
+  "prompt": "a wooden wedge cut from dry hardwood with a slight taper on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b076_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shaving a wooden wedge with a knife to make it taper. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b077_0",
+  "prompt": "a small steel wedge hammered diagonally across the wood wedge at the top of the handle. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b077_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio tapping a small steel wedge into the handle top, careful. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b078_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio sawing off the protruding wood flush with the top of the head, wearing glasses. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b078_1",
+  "prompt": "the top of a hatchet head with the wood and wedges cut flush, workshop. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b079_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shaking the hatchet head by the handle and tapping it on the bench to test it is tight. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b079_1",
+  "prompt": "the hatchet resting on a bench with a clean tight joint between head and handle. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b080_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio sanding the handle smooth with fine sandpaper, wood dust on his hands. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b080_1",
+  "prompt": "a handle with a smooth sanded surface beside a pile of fine wood dust. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b081_1",
+  "prompt": "sandpaper in three grits stacked on a workbench beside a smooth finished handle. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b082_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio wiping linseed oil on the handle with a rag, wood grain turning golden. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b082_1",
+  "prompt": "a rag wiping boiled linseed oil onto a wooden handle, the wood darkening to gold. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b083_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio spreading the oily rags flat on a metal tray to dry outdoors, careful. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b084_0",
+  "prompt": "a double-grit whetstone soaked in water on a wooden holder on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b084_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio setting a whetstone on a wet cloth on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b085_0",
+  "prompt": "a bowl of water and a whetstone resting on a folded wet cloth to keep it from slipping. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b086_0",
+  "prompt": "a hatchet blade being sharpened on a wet whetstone in circular strokes, slurry appearing. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b087_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio switching to the fine side of the whetstone and sharpening gently. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b087_1",
+  "prompt": "the fine side of the whetstone with a wet film and the hatchet blade on it. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b088_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio holding a small hatchet up in front of him and looking carefully along its clean bright edge, concentrated, in his workshop. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b088_1",
+  "prompt": "a few arm hairs on a bench next to the razor sharp hatchet edge. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b089_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio slicing a sheet of newspaper with the hatchet edge, clean cut. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b090_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio cutting a piece of leather on a workbench with a utility knife along a template. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b090_1",
+  "prompt": "a piece of brown leather with a hatchet outline and a template drawn on it. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b091_1",
+  "prompt": "a leather punch, a stitching awl, waxed thread and rivets on a workbench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b092_0",
+  "prompt": "a needle with waxed thread stitching a leather sheath on a workbench, hands pulling the thread. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b093_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio sliding the hatchet into the finished leather sheath and snapping the strap closed. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b093_1",
+  "prompt": "a hatchet in a leather sheath with a strap on a wooden bench. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b094_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio in the yard setting up a log of dry pine on a chopping block, safety glasses and boots on. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b094_1",
+  "prompt": "a pine log standing on a chopping block in a yard with a stack of kindling beside it. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b095_0",
+  "prompt": "a person splitting a pine log with a hatchet, the log splitting open and wood chips flying. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b096_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio watching the split halves of the log fall apart with a satisfied look. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b096_1",
+  "prompt": "two halves of a pine log lying on the grass next to a hatchet. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b097_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio splitting kindling carefully into thin sticks with controlled hits, steady rhythm. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b097_1",
+  "prompt": "a neat pile of thin kindling sticks split from pine beside a chopping block. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b098_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at the hatchet edge after use, checking it for nicks with his thumb beside the blade. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b098_1",
+  "prompt": "the hatchet edge close up after chopping, clean and sharp with no nick. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b099_0",
+  "prompt": "a fine mist of oil being wiped onto a hatchet blade with a rag. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b099_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio wiping the hatchet blade with a lightly oiled rag before putting it away. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b100_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio counting safety points on his fingers, serious. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b100_1",
+  "prompt": "a blackboard with a list of safety rules for the hatchet in chalk. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b101_0",
+  "prompt": "a blackboard with chalk points three and four next to a drawing of a clear safe area around a chopping block. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b101_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio drawing a circle of safe space on the floor with chalk. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b102_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio showing how to carry a hatchet by the neck with the edge pointing away, walking carefully. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b103_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio leaving the hatchet stuck safely in a chopping block at the end of the day, pointing it out. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b104_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio standing with the restored hatchet and its sheath resting on his shoulder, proud look, warm light. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b104_1",
+  "prompt": "the restored hatchet in its leather sheath on a workbench in warm light. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b105_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio counting three fingers looking at the camera, warm. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b105_1",
+  "prompt": "a blackboard with three lines: do not overheat, polarity right, handle grain along. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b106_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking into the camera with the hatchet on the bench behind him, friendly half smile. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b107_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio waving goodbye with the hatchet resting behind him at the workshop door, warm light. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_tdchacha_face.png"
+ },
+ {
+  "name": "b107_1",
+  "prompt": "the workshop doorway at dusk with warm light spilling out. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ }
+]

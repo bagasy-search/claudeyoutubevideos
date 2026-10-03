@@ -1,0 +1,953 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "HACHA PODRIDA → COMO NUEVA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "óxido",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b003",
+   "props": {
+    "text": "SACA VIRUTAS FINAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "virutas",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b006",
+   "props": {
+    "text": "LA PRIMERA VEZ LA ARRUINÉ",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "arruiné",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b012",
+   "props": {
+    "text": "¾ KG DE ACERO FORJADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "cuartos",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b013",
+   "props": {
+    "text": "BUSCÁ RAJADURAS EN EL OJO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "rajaduras",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b014",
+   "props": {
+    "text": "PRUEBA DEL SONIDO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "moneda",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b018",
+   "props": {
+    "text": "1 · NO QUEMAR EL TEMPLE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "quemar",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b020",
+   "props": {
+    "name": "VINAGRE BLANCO 2 L",
+    "origin": "balde de plástico",
+    "cost": "$0",
+    "at": [
+     30,
+     4
+    ]
+   },
+   "word": "vinagre",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b022",
+   "props": {
+    "name": "LIJAS · LIMA",
+    "origin": "grano grueso a fino",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "lima",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b023",
+   "props": {
+    "name": "FRESNO 60 cm",
+    "origin": "el mango nuevo",
+    "cost": "$0",
+    "at": [
+     70,
+     4
+    ]
+   },
+   "word": "fresno",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b024",
+   "props": {
+    "name": "ACEITE DE LINO",
+    "origin": "protege la madera",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "aceite",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b026",
+   "props": {
+    "name": "CUERO",
+    "origin": "para la vaina",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "cuero",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b030",
+   "props": {
+    "step": 1,
+    "total": 7,
+    "title": "SACAR EL MANGO ROTO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b036",
+   "props": {
+    "step": 2,
+    "total": 7,
+    "title": "SACAR EL ÓXIDO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b053",
+   "props": {
+    "step": 3,
+    "total": 7,
+    "title": "RECUPERAR EL FILO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b064",
+   "props": {
+    "step": 4,
+    "total": 7,
+    "title": "EL MANGO NUEVO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b072",
+   "props": {
+    "step": 5,
+    "total": 7,
+    "title": "CALZARLO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b075",
+   "props": {
+    "step": 6,
+    "total": 7,
+    "title": "CUÑAS Y ACEITE"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b090",
+   "props": {
+    "step": 7,
+    "total": 7,
+    "title": "LA VAINA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b033",
+   "props": {
+    "text": "NO QUEMAR EL MANGO VIEJO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "quemar",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b036",
+   "props": {
+    "text": "VINAGRE: 8 A 12 HORAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "vinagre",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b041",
+   "props": {
+    "text": "LAS MARCAS DEL TIEMPO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "marcas",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b042",
+   "props": {
+    "text": "ELECTRÓLISIS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "varilla",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b046",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "CONECTÉ AL REVÉS",
+      "beat": "b046",
+      "word": "revés",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "revés",
+   "until": "b046",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b048",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "POSITIVO → VARILLA",
+      "beat": "b048",
+      "word": "positivo",
+      "hl": "yellow"
+     },
+     {
+      "t": "NEGATIVO → LA PIEZA",
+      "beat": "b048",
+      "word": "negativo",
+      "hl": "white"
+     }
+    ]
+   },
+   "word": "regla",
+   "until": "b048",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b049",
+   "props": {
+    "text": "VENTILACIÓN: SALE HIDRÓGENO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "hidrógeno",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b051",
+   "props": {
+    "text": "SIN CHISPAS NI CIGARRILLOS",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "chispas",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b055",
+   "props": {
+    "pos": "top",
+    "size": 82,
+    "words": [
+     {
+      "t": "AMOLADORA = TEMPLE QUEMADO",
+      "beat": "b055",
+      "word": "error",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "error",
+   "until": "b055",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b057",
+   "props": {
+    "text": "FILO AZUL = QUEMADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "azul",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b061",
+   "props": {
+    "text": "UNA PASADA Y AL AGUA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "agua",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b062",
+   "props": {
+    "text": "BISEL 20 – 25°",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "20",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b065",
+   "props": {
+    "text": "FRESNO: EL REY DE LOS MANGOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "fresno",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b066",
+   "props": {
+    "text": "LA VETA, A LO LARGO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cruza",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b070",
+   "props": {
+    "text": "TIZA: SE VE DÓNDE ROZA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "tiza",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b073",
+   "props": {
+    "text": "LA INERCIA HACE TODO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "inercia",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b077",
+   "props": {
+    "text": "CUÑA DE ACERO = SEGURO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "seguro",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b081",
+   "props": {
+    "text": "LIJA 80 · 120 · 200",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "80",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b083",
+   "props": {
+    "text": "TRAPOS CON ACEITE: ESTIRADOS",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "trapos",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b086",
+   "props": {
+    "text": "LA REBABA = LA SEÑAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "rebaba",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b088",
+   "props": {
+    "text": "PRUEBA: CORTA UN PELO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "pelo",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b092",
+   "props": {
+    "text": "COSTURA A MANO · 2 REMACHES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "remaches",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b095",
+   "props": {
+    "text": "PRIMER GOLPE: SE ABRE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "golpe",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b100",
+   "props": {
+    "pos": "top",
+    "size": 90,
+    "words": [
+     {
+      "t": "REGLAS DE SEGURIDAD",
+      "beat": "b100",
+      "word": "reglas",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "reglas",
+   "until": "b100",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b101",
+   "props": {
+    "text": "2 m LIBRES ALREDEDOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "dos",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b105",
+   "props": {
+    "pos": "top",
+    "size": 80,
+    "words": [
+     {
+      "t": "NO QUEMAR EL FILO",
+      "beat": "b105",
+      "word": "quemar",
+      "hl": "yellow"
+     },
+     {
+      "t": "MIRAR LA POLARIDAD",
+      "beat": "b105",
+      "word": "polaridad"
+     },
+     {
+      "t": "LA VETA DEL MANGO",
+      "beat": "b105",
+      "word": "mango",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "golpes",
+   "until": "b105",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}
