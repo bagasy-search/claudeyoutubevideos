@@ -1,0 +1,423 @@
+[
+ {
+  "name": "b001_0",
+  "prompt": "a person spraying a strong stream of water from a hose directly into the indoor unit of an air conditioner, water splashing on the wall. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b002_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio standing in a living room beside an air conditioner with a clamp meter and a soft brush, serious look. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b002_1",
+  "prompt": "a soft brush, a spray bottle and a clamp meter laid on a coffee table. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b003_1",
+  "prompt": "a repair bill for an air conditioner with a high total on a table. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b003_2",
+  "prompt": "expensive repair bill air conditioner. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b004_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio raising a hand to calm the viewer, friendly. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b005_0",
+  "prompt": "a clamp meter display comparing the current of a clean unit and a dirty unit, two readings side by side. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b005_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio showing the two readings. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b005_2",
+  "prompt": "a clamp meter display comparing the current of. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b006_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio pointing at the camera, serious. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b006_1",
+  "prompt": "a checklist of seven mistakes in marker on a whiteboard. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b007_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shaking his head at a hose nozzle held near an indoor unit. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b008_0",
+  "prompt": "the electronic board and motors inside an indoor unit behind the front panel. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b009_0",
+  "prompt": "bent aluminium fins of an evaporator coil damaged by a high pressure stream of water. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b009_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio showing damaged flattened fins with a pen. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b010_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio demonstrating a safe way with a spray bottle and a cloth, careful. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b010_1",
+  "prompt": "a gentle mist from a spray bottle landing on a cloth beside the coil. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b011_1",
+  "prompt": "a bottle of foaming coil cleaner next to an air conditioner indoor unit on a table. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b012_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio holding a bottle of bleach and shaking his head at the camera. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b013_0",
+  "prompt": "a copper pipe and aluminium coil corroded with white and green deposits. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b014_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio holding his nose and fanning the air, an unpleasant smell. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b015_0",
+  "prompt": "a bottle of diluted white vinegar next to a spray bottle and a cloth on a table. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b015_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio spraying a diluted vinegar solution on a cloth and wiping the plastic grille. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b016_1",
+  "prompt": "small black mold spots on the louvers of an air conditioner indoor unit. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b017_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at a drain hose and then at the camera. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b018_0",
+  "prompt": "green slime and dirt inside a transparent drain hose of an air conditioner. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b018_1",
+  "prompt": "slime in drain hose. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b019_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio blowing carefully through a drain hose and watching water flow out, concentrating. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b019_1",
+  "prompt": "water running out of the end of a clear hose onto a balcony floor. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b020_0",
+  "prompt": "a plastic cup of white vinegar being poured into the drain tray of an air conditioner. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b020_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio pouring a small amount of vinegar into the drain tray. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b021_1",
+  "prompt": "a dirty blower wheel of an indoor unit coated in black dust seen through the opening. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b022_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shining a flashlight on the blower wheel and grimacing at the black coating. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b022_1",
+  "prompt": "a close view of the fins of a blower wheel coated with grey dust. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b023_0",
+  "prompt": "technician cleaning blower wheel professional. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b023_1",
+  "prompt": "a technician with a canvas cover and a bucket washing an indoor unit coil and blower wheel. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b024_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shrugging honestly with a kind face. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b025_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio holding a wet filter with a hand and a slight grimace. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b026_0",
+  "prompt": "a clean filter being left to dry leaning against a bathroom wall in shade with drops of water falling. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b026_1",
+  "prompt": "a washed filter drying on a rack in a shaded balcony. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b027_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shaking the filter to remove the last drops and holding it up to the light to check, careful. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b027_1",
+  "prompt": "a filter held up to the light with no water droplets. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b028_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio holding a can of compressed air and shaking his head. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b029_0",
+  "prompt": "a soft brush attachment on a vacuum cleaner passing gently over an air conditioner filter. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b029_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio vacuuming the filter gently with a brush attachment, careful. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b030_1",
+  "prompt": "a small fin comb tool next to a coil with straightened aluminium fins. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b031_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at the camera very seriously, jaw tight. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b032_0",
+  "prompt": "an air conditioner indoor unit with its display lit while a person holds a damp cloth near the panel. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b033_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio turning off the breaker and pulling the plug before touching the unit, step by step. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b033_1",
+  "prompt": "a hand turning off a circuit breaker lever and a second hand pulling out a plug. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b034_1",
+  "prompt": "a warning label on an outdoor unit stating that capacitor stays charged. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b035_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio laying out the correct order on a whiteboard with numbers. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b035_1",
+  "prompt": "a whiteboard with six numbered steps for cleaning an air conditioner correctly. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b036_0",
+  "prompt": "cleaning schedule calendar monthly. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b036_1",
+  "prompt": "a calendar showing a monthly filter cleaning and a yearly professional cleaning. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b037_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at the clamp meter after cleaning, reading a lower current, satisfied. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b037_1",
+  "prompt": "a clamp meter display showing a lower current than before cleaning. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b038_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio preparing a before and after test with a dirty air conditioner and a clamp meter, notebook ready. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b038_1",
+  "prompt": "a dirty air conditioner indoor unit with a thick layer of dust on the filter and grille in a living room. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b039_0",
+  "prompt": "clamp meter measuring amperage. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b039_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio clamping the meter on the supply cable of the outdoor unit and reading the display after ten minutes of running. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b040_0",
+  "prompt": "an anemometer at a vent showing a low air speed on its display. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b040_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio noting the air speed in the notebook. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b041_0",
+  "prompt": "a dirty grey filter and a clean filter placed side by side with dust falling off the dirty one. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b042_0",
+  "prompt": "a clamp meter display showing a lower current than before and an anemometer showing a higher air speed. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b042_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio comparing the two notebook lines with a smile. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b043_0",
+  "prompt": "savings electricity bill smile. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b043_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shrugging with a half smile. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b043_2",
+  "prompt": "an electricity bill beside a calculator. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b044_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio counting signs on his fingers. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b044_1",
+  "prompt": "a whiteboard with a list of four signs that an air conditioner needs a deep cleaning. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b045_0",
+  "prompt": "water dripping from air conditioner indoor unit. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b045_1",
+  "prompt": "water droplets forming and dripping from the front of an indoor unit onto a wall. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b046_0",
+  "prompt": "black speckles blowing out of an air conditioner louver in a sunbeam. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b046_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at black specks coming out of the vent, disgusted. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b047_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio listening and shaking his head. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b048_1",
+  "prompt": "a technician covering an indoor unit with a plastic sheet and a bucket under it for a deep clean. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b049_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio explaining what a good service includes using his fingers. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b049_1",
+  "prompt": "a service checklist on a clipboard with items like filter, coil, blower, drain and electrical check. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b050_0",
+  "prompt": "service price list technician. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b050_1",
+  "prompt": "a printed price list for air conditioner services with simple prices. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b051_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shaking his head at a very low priced offer on a flyer. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b051_1",
+  "prompt": "a flyer offering an air conditioner cleaning at a suspiciously low price with a phone number. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b052_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio asking a technician to show the cleaned blower wheel and coil with a flashlight. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b053_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio answering questions on the sofa in a relaxed way. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b054_0",
+  "prompt": "a spray can of coil cleaner with a warning label next to an air conditioner. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b054_1",
+  "prompt": "coil cleaner spray product. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b055_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shaking his head at a box promising to clean the coil without effort. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b056_0",
+  "prompt": "a household air conditioner with its filter removed on a table while the unit runs, the coil visible. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b056_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio waving a finger to say no. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b057_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at the camera honestly. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b058_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio counting the seven mistakes with his fingers. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b058_1",
+  "prompt": "a whiteboard with seven crossed out items for the seven mistakes. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b059_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio relaxing in a living room with the air conditioner running quietly, smiling. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ },
+ {
+  "name": "b060_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking into the camera with a friendly smile. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzlimpia_face.png"
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "nombre": "b001_0",
+  "motion": "water sprays hard and splashes against the plastic grille",
+  "change": ""
+ },
+ {
+  "nombre": "b010_1",
+  "motion": "the mist spreads in a fine cloud",
+  "change": ""
+ },
+ {
+  "nombre": "b019_1",
+  "motion": "the water flows steadily out of the hose",
+  "change": ""
+ },
+ {
+  "nombre": "b026_0",
+  "motion": "drops of water fall from the bottom of the filter and the filter slowly dries",
+  "change": ""
+ },
+ {
+  "nombre": "b033_1",
+  "motion": "the breaker lever clicks down and the plug comes out",
+  "change": ""
+ },
+ {
+  "nombre": "b041_0",
+  "motion": "a puff of dust falls from the dirty filter",
+  "change": ""
+ }
+]

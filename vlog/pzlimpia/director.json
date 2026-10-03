@@ -1,0 +1,926 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "LIMPIÁS MAL TU AIRE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "mal",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "7 ERRORES AL LIMPIAR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "errores",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b003",
+   "props": {
+    "text": "PLACA · SERPENTÍN · COMPRESOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "placa",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "SUCIO: MÁS CORRIENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "sucio",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b007",
+   "props": {
+    "step": 1,
+    "total": 7,
+    "title": "AGUA A PRESIÓN"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b012",
+   "props": {
+    "step": 2,
+    "total": 7,
+    "title": "LAVANDINA Y CLORO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b017",
+   "props": {
+    "step": 3,
+    "total": 7,
+    "title": "OLVIDAR EL DESAGÜE"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b021",
+   "props": {
+    "step": 4,
+    "total": 7,
+    "title": "IGNORAR LA TURBINA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b025",
+   "props": {
+    "step": 5,
+    "total": 7,
+    "title": "FILTRO HÚMEDO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b028",
+   "props": {
+    "step": 6,
+    "total": 7,
+    "title": "AIRE COMPRIMIDO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b031",
+   "props": {
+    "step": 7,
+    "total": 7,
+    "title": "CON EL EQUIPO ENCHUFADO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b008",
+   "props": {
+    "text": "EL AGUA DAÑA PLACA Y MOTORES",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "placa",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b009",
+   "props": {
+    "text": "ALETAS APLASTADAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "aletas",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b010",
+   "props": {
+    "text": "PULVERIZADOR + JABÓN NEUTRO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "pulverizador",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b013",
+   "props": {
+    "text": "EL CLORO CORROE COBRE Y ALUMINIO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "cloro",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b015",
+   "props": {
+    "text": "MOHO: VINAGRE DILUIDO O ALCOHOL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "vinagre",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b018",
+   "props": {
+    "text": "ALGAS Y BARRO EN LA MANGUERA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "algas",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b020",
+   "props": {
+    "text": "UNA CUCHARADA DE VINAGRE POR TEMPORADA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 50
+   },
+   "word": "cucharada",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b021",
+   "props": {
+    "text": "LA TURBINA: EL CILINDRO OCULTO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "turbina",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b023",
+   "props": {
+    "text": "LONA · BALDE · CEPILLO ESPECIAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "lona",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b026",
+   "props": {
+    "text": "SECAR A LA SOMBRA, DE PIE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "sombra",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b027",
+   "props": {
+    "text": "MIRALO A CONTRALUZ",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "contraluz",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b029",
+   "props": {
+    "text": "ASPIRADORA: CEPILLO BLANDO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "blando",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b030",
+   "props": {
+    "text": "PEINE DE ALETAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "peine",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b031",
+   "props": {
+    "text": "ENCHUFADO + AGUA = CORTO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "enchufado",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b033",
+   "props": {
+    "text": "CONTROL → TÉRMICA → LA FICHA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "control",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b034",
+   "props": {
+    "text": "NO ABRAS LA UNIDAD EXTERIOR",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "exterior",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b036",
+   "props": {
+    "text": "FILTRO: 1 VEZ POR MES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "mes",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b037",
+   "props": {
+    "text": "DESPUÉS DE LIMPIAR, LA CORRIENTE BAJA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "corriente",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b039",
+   "props": {
+    "text": "PRUEBA 1: SUCIO, 10 MINUTOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "sucio",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b041",
+   "props": {
+    "text": "PRUEBA 2: LIMPIO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "limpié",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b043",
+   "props": {
+    "text": "SIN INVENTAR PORCENTAJES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "inventar",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b044",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "NO ALCANZA CON EL FILTRO SI…",
+      "beat": "b044",
+      "word": "alcanza",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "alcanza",
+   "until": "b044",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b044",
+   "props": {
+    "text": "1 · OLOR A HUMEDAD",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "humedad",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b045",
+   "props": {
+    "text": "2 · GOTEA AGUA POR ADELANTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "gotea",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b046",
+   "props": {
+    "text": "3 · PINTITAS NEGRAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "pintitas",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b047",
+   "props": {
+    "text": "4 · RUIDO O VIBRACIÓN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "ruido",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b049",
+   "props": {
+    "text": "UN BUEN SERVICE INCLUYE…",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "incluye",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b050",
+   "props": {
+    "text": "PRECIO Y QUÉ INCLUYE: ANTES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "precio",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b051",
+   "props": {
+    "text": "DESCONFIÁ DEL PRECIO MUY BAJO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "desconfiá",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b052",
+   "props": {
+    "text": "PEDÍ EL ANTES Y EL DESPUÉS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "después",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b056",
+   "props": {
+    "text": "NUNCA SIN FILTRO MIENTRAS SECA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "no",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b058",
+   "props": {
+    "pos": "top",
+    "size": 64,
+    "words": [
+     {
+      "t": "AGUA A PRESIÓN · LAVANDINA",
+      "beat": "b058",
+      "word": "agua",
+      "hl": "red"
+     },
+     {
+      "t": "DESAGÜE · TURBINA · FILTRO HÚMEDO",
+      "beat": "b058",
+      "word": "desagüe"
+     },
+     {
+      "t": "AIRE COMPRIMIDO · ENCHUFADO",
+      "beat": "b058",
+      "word": "errores",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "Siete",
+   "until": "b058",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b060",
+   "props": {
+    "pos": "top",
+    "size": 86,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b060",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "PUESTA A TIERRA EN 8 PASOS",
+      "beat": "b060",
+      "word": "tierra",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b060",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}

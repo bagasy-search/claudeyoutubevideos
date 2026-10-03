@@ -1,0 +1,542 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b001.wav",
+  "start": 0.0,
+  "len": 7.05,
+  "text": "Estás limpiando mal tu aire acondicionado. Y cada limpieza apresurada lo acerca un poco más al service caro."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b002.wav",
+  "start": 7.05,
+  "len": 9.3,
+  "text": "Soy Claudio. Hay siete errores comunes al limpiar un aire, y cada uno rompe algo distinto. Te muestro cuáles son y cómo se hace bien."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b003.wav",
+  "start": 16.35,
+  "len": 8.52,
+  "text": "Un error de limpieza puede costarte una placa electrónica, un serpentín, o un compresor. Y casi nunca la garantía lo cubre."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b004.wav",
+  "start": 24.87,
+  "len": 7.41,
+  "text": "Pero tranquilo: limpiar el aire es fácil y barato si sabés cómo. Y te hace ahorrar luz y respirar mejor."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b005.wav",
+  "start": 32.28,
+  "len": 7.55,
+  "text": "Con la pinza, un aire sucio gasta bastante más corriente que uno limpio. La limpieza correcta se paga sola."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b006.wav",
+  "start": 39.83,
+  "len": 6.26,
+  "text": "Vamos con los siete errores, en orden. Y el séptimo es el que más aires mata cada año."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b007.wav",
+  "start": 46.09,
+  "len": 6.65,
+  "text": "Error uno: limpiar con agua a presión, con manguera o con hidrolavadora, adentro de la unidad interior."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b008.wav",
+  "start": 52.74,
+  "len": 8.31,
+  "text": "Atrás de ese panel hay una placa electrónica y motores. El agua que entra por ahí los daña, y no tiene arreglo barato."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b009.wav",
+  "start": 61.05,
+  "len": 8.76,
+  "text": "Y la presión aplasta las aletas del serpentín, que son de aluminio finito. Aletas aplastadas significan menos aire y menos frío."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b010.wav",
+  "start": 69.81,
+  "len": 7.7,
+  "text": "La forma correcta: un pulverizador con agua y jabón neutro, un paño y un pincel. Sin chorros, sin presión."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b011.wav",
+  "start": 77.51,
+  "len": 8.86,
+  "text": "Si el serpentín está muy sucio, hay productos espumantes específicos. Se aplican según las instrucciones, y se enjuagan con poca agua."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b012.wav",
+  "start": 86.37,
+  "len": 5.66,
+  "text": "Error dos: usar lavandina, cloro o desinfectantes fuertes para matar el moho."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b013.wav",
+  "start": 92.03,
+  "len": 8.54,
+  "text": "El cloro corroe el cobre y el aluminio, y con el tiempo abre agujeros. Un agujero en el serpentín es una fuga de gas."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b014.wav",
+  "start": 100.57,
+  "len": 6.78,
+  "text": "Además, el olor a químicos queda en el ambiente, y lo respirás todo el verano. Peor que el moho que querías sacar."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b015.wav",
+  "start": 107.35,
+  "len": 8.46,
+  "text": "Para el moho en las piezas de plástico: vinagre diluido, o alcohol, con un paño. En el serpentín, un producto específico."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b016.wav",
+  "start": 115.81,
+  "len": 7.44,
+  "text": "Si el moho está adentro del equipo, en el serpentín o en la turbina, es un trabajo de técnico con lavado profesional."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b017.wav",
+  "start": 123.25,
+  "len": 8.04,
+  "text": "Error tres: limpiar el filtro y la rejilla, y olvidarse del desagüe. Es la parte que más se tapa y la que menos se mira."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b018.wav",
+  "start": 131.29,
+  "len": 6.91,
+  "text": "Adentro de la manguera se forman algas y barro. Y cuando se tapa, el agua rebalsa por adentro de la unidad."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b019.wav",
+  "start": 138.2,
+  "len": 7.24,
+  "text": "La prueba y limpieza: agua por la bandeja y desagüe libre. Si se tapa, un alambre fino o una pera de goma."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b020.wav",
+  "start": 145.44,
+  "len": 5.85,
+  "text": "Y una cucharada de vinagre en la bandeja, una vez por temporada, frena el crecimiento de algas."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b021.wav",
+  "start": 151.29,
+  "len": 8.27,
+  "text": "Error cuatro: limpiar solo lo que se ve, y no la turbina. Ese cilindro con paletas, adentro, se llena de polvo."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b022.wav",
+  "start": 159.56,
+  "len": 7.09,
+  "text": "Con la turbina sucia, el aire sale con menos fuerza, hace ruido, y sopla polvo y esporas a toda la habitación."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b023.wav",
+  "start": 166.65,
+  "len": 8.9,
+  "text": "Esa limpieza se hace con una lona, un balde y un cepillo especial. Es un trabajo para un técnico, una vez cada uno o dos años."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b024.wav",
+  "start": 175.55,
+  "len": 9.33,
+  "text": "Intentar hacerlo en casa con una aspiradora o un cepillo suele doblar las paletas. Mejor pagar un service completo que reponer la turbina."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b025.wav",
+  "start": 184.88,
+  "len": 7.45,
+  "text": "Error cinco: lavar el filtro y ponerlo húmedo, apurado. Ese filtro mojado es una invitación al moho."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b026.wav",
+  "start": 192.33,
+  "len": 7.96,
+  "text": "Se seca al aire, a la sombra, de pie, hasta que no tenga una gota. Con el sol directo, el plástico se deforma."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b027.wav",
+  "start": 200.29,
+  "len": 8.85,
+  "text": "Lo sacudís, lo mirás a contraluz, y recién ahí lo ponés. Si tenés dos juegos de filtros, mejor: uno puesto y otro seco."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b028.wav",
+  "start": 209.14,
+  "len": 8.58,
+  "text": "Error seis: soplar con aire comprimido o aspirar con un caño duro las aletas. Se dobla el aluminio, o se mete el polvo más adentro."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b029.wav",
+  "start": 217.72,
+  "len": 7.16,
+  "text": "Si querés usar aspiradora, que sea con cepillo blando, y solo sobre el filtro. Y siempre en el sentido de las aletas."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b030.wav",
+  "start": 224.88,
+  "len": 8.41,
+  "text": "Los técnicos usan un peine de aletas para enderezar las que se doblaron. Es una herramienta barata, pero requiere paciencia y pulso."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b031.wav",
+  "start": 233.29,
+  "len": 6.66,
+  "text": "Error siete, el más peligroso: limpiar con el equipo enchufado o con la térmica arriba."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b032.wav",
+  "start": 239.95,
+  "len": 8.81,
+  "text": "Agua, un paño mojado y una placa con corriente: es el camino al cortocircuito, a la rotura de la placa, o a un accidente."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b033.wav",
+  "start": 248.76,
+  "len": 8.92,
+  "text": "Primero se apaga con el control, después se baja la térmica, y se verifica que el display esté apagado. Recién ahí se toca."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b034.wav",
+  "start": 257.68,
+  "len": 7.83,
+  "text": "Y en la unidad exterior, el capacitor guarda carga. Por eso no se abre sin saber: lo que se limpia es por fuera."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b035.wav",
+  "start": 265.51,
+  "len": 11.38,
+  "text": "La rutina correcta: apagar y cortar la energía, sacar el filtro, lavarlo, limpiar rejilla y paletas con paño, revisar el desagüe, y secar todo."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b036.wav",
+  "start": 276.89,
+  "len": 9.73,
+  "text": "Filtro, una vez por mes en uso. Limpieza profunda de un técnico, una vez cada uno o dos años. Y la exterior, antes de cada temporada."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b037.wav",
+  "start": 286.62,
+  "len": 6.52,
+  "text": "Y la prueba: después de limpiar bien, la corriente baja. Eso es plata que dejás de gastar cada mes."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b038.wav",
+  "start": 293.14,
+  "len": 8.26,
+  "text": "Para que no me creas solo a mí, medí un aire sucio antes y después de limpiarlo bien. Un equipo de tres años, de una casa con mascotas."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b039.wav",
+  "start": 301.4,
+  "len": 8.28,
+  "text": "Primero, sucio: lo dejé funcionar diez minutos y medí. La corriente estaba alta, y el aire que salía era más débil de lo normal."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b040.wav",
+  "start": 309.68,
+  "len": 7.21,
+  "text": "Después, la velocidad del aire: floja. El ventilador luchaba contra el polvo que tapaba el filtro y el serpentín."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b041.wav",
+  "start": 316.89,
+  "len": 7.49,
+  "text": "Limpié filtro, rejilla y desagüe, sin tocar el serpentín. Y volví a medir en las mismas condiciones."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b042.wav",
+  "start": 324.38,
+  "len": 7.51,
+  "text": "La corriente bajó, y el aire salió con más fuerza. Y solo con el filtro, el desagüe y la rejilla: sin gastar un peso."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b043.wav",
+  "start": 331.89,
+  "len": 7.78,
+  "text": "No te voy a inventar un ahorro en porcentaje. Pero en verano, con el aire casi todo el día, ese cambio se nota en la factura."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b044.wav",
+  "start": 339.67,
+  "len": 7.08,
+  "text": "Cómo saber que no alcanza con limpiar el filtro. Uno: olor a humedad cuando prende, que no se va con el filtro limpio."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b045.wav",
+  "start": 346.75,
+  "len": 8.28,
+  "text": "Dos: gotea agua por adelante, aunque el desagüe esté libre. Es señal de serpentín muy sucio, que no deja pasar el aire."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b046.wav",
+  "start": 355.03,
+  "len": 8.15,
+  "text": "Tres: salen pintitas negras o polvo con el aire. Ahí la turbina o el serpentín tienen moho o suciedad acumulada."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b047.wav",
+  "start": 363.18,
+  "len": 7.7,
+  "text": "Y cuatro: hace ruido o vibra más que antes. Un tambor sucio se desbalancea, y es lo primero que se escucha."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b048.wav",
+  "start": 370.88,
+  "len": 7.64,
+  "text": "Con cualquiera de esas cuatro, no insistas en casa: pedí una limpieza profunda a un técnico, con lona y lavado completo."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b049.wav",
+  "start": 378.52,
+  "len": 9.31,
+  "text": "Un buen service incluye: limpieza de filtros, serpentín y turbina, desagüe, revisión de la parte eléctrica, y medición de la carga de gas."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b050.wav",
+  "start": 387.83,
+  "len": 9.33,
+  "text": "Pedí que te digan el precio antes, y qué incluye. Una limpieza completa se cobra por equipo, y suele ser mucho más barata que una reparación."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b051.wav",
+  "start": 397.16,
+  "len": 9.08,
+  "text": "Desconfiá del precio demasiado bajo: suele ser una pasada de aerosol, sin lavar nada. Y dejan el equipo sucio y mojado."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b052.wav",
+  "start": 406.24,
+  "len": 8.56,
+  "text": "Pedile que te muestre el antes y el después: la turbina limpia, el serpentín limpio. Un buen técnico no tiene problema en mostrarte."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b053.wav",
+  "start": 414.8,
+  "len": 9.03,
+  "text": "Algunas preguntas que me llegan. ¿Sirven los aerosoles limpiadores de serpentín? Algunos sí, usados como indica el envase y con poco agua."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b054.wav",
+  "start": 423.83,
+  "len": 8.21,
+  "text": "Pero ojo: si el serpentín está muy sucio, la espuma no alcanza. Y si cae adentro de la placa o los motores, los daña."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b055.wav",
+  "start": 432.04,
+  "len": 7.52,
+  "text": "¿Y los aparatos que prometen limpiar el aire por dentro, sin abrir? No los probé en serio, y no te los recomiendo sin pruebas."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b056.wav",
+  "start": 439.56,
+  "len": 8.02,
+  "text": "¿Se puede usar sin filtro mientras se seca? No: el polvo va directo al serpentín, y es peor que usarlo húmedo un día."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b057.wav",
+  "start": 447.58,
+  "len": 8.26,
+  "text": "¿Y si nunca lo limpié en años? Pedí una limpieza profunda, sin vueltas. No te asustes: casi siempre se recupera con un buen lavado."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b058.wav",
+  "start": 455.84,
+  "len": 10.48,
+  "text": "Siete errores: agua a presión, lavandina, olvidar el desagüe, ignorar la turbina, filtro húmedo, aire comprimido, y limpiar con energía."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b059.wav",
+  "start": 466.32,
+  "len": 8.76,
+  "text": "Con la limpieza bien hecha, el aire enfría más rápido, gasta menos, y respirás mejor. Es un cuidado barato, y lo notás en la factura."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzlimpia/out/pzlimpia/tramos/b060.wav",
+  "start": 475.08,
+  "len": 10.879,
+  "text": "Si te sirvió, quedate en el canal. En el próximo, cómo instalar una puesta a tierra en tu casa en ocho pasos. Y contame cuál de estos errores cometías."
+ }
+]
