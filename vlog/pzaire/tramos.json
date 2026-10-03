@@ -1,0 +1,740 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b001.wav",
+  "start": 0.0,
+  "len": 7.62,
+  "text": "Esto sale del aire cuando lo prendés por primera vez después de meses. Y lo respirás vos, toda la temporada."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b002.wav",
+  "start": 7.62,
+  "len": 8.13,
+  "text": "Hay ocho cosas que revisar antes del primer día de calor. Y si no las hacés, las pagás el primer día de calor de verdad."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b003.wav",
+  "start": 15.75,
+  "len": 7.62,
+  "text": "Porque cuando llega la ola de calor, todos prenden el aire el mismo día. Y los técnicos tardan semanas en llegar."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b004.wav",
+  "start": 23.37,
+  "len": 6.21,
+  "text": "Una visita en pleno enero puede salir cara y tardar. En una tarde de octubre, lo hacés vos mismo."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b005.wav",
+  "start": 29.58,
+  "len": 7.91,
+  "text": "Cada verano es igual: los técnicos tienen la agenda llena hasta febrero, y los que llegan a tiempo cobran urgencia."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b006.wav",
+  "start": 37.49,
+  "len": 6.87,
+  "text": "En octubre, en cambio, hay tiempo. Y un aire que arranca bien la primera vez rinde bien toda la temporada."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b007.wav",
+  "start": 44.36,
+  "len": 7.9,
+  "text": "No hace falta mucho: una pinza amperométrica, un cepillo suave, un destornillador y una tarde. Te muestro todo."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b008.wav",
+  "start": 52.26,
+  "len": 8.8,
+  "text": "Y una regla que repito en todos los videos: antes de tocar nada, el aire se apaga y se corta la térmica. Sin excepciones."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b009.wav",
+  "start": 61.06,
+  "len": 7.92,
+  "text": "Un aire usa corriente de red, y el compresor tiene un capacitor que guarda carga aunque lo cortes. Cuidado al tocar adentro."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b010.wav",
+  "start": 68.98,
+  "len": 6.89,
+  "text": "Un aire pasa cinco o seis meses sin usarse. En ese tiempo se llena de polvo, de bichos y de humedad."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b011.wav",
+  "start": 75.87,
+  "len": 7.41,
+  "text": "En la unidad de afuera he encontrado nidos de avispas, hormigueros, y hasta un nido de pájaro. Todo eso tapa el aire."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b012.wav",
+  "start": 83.28,
+  "len": 6.49,
+  "text": "Todo eso, cuando lo prendés, es lo que se mueve por tu casa. Y lo que obliga al equipo a trabajar de más."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b013.wav",
+  "start": 89.77,
+  "len": 7.77,
+  "text": "A veces hasta hay moho en la rejilla. Y ese olor a humedad, a cerrado, es la señal clara de que hay que limpiar."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b014.wav",
+  "start": 97.54,
+  "len": 6.43,
+  "text": "Si al prenderlo hay olor raro, no lo uses: primero limpiás, después prendés. No hay vuelta."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b015.wav",
+  "start": 103.97,
+  "len": 6.97,
+  "text": "Primero, la seguridad. Cortás la térmica del aire, y confirmás que el equipo no tiene luz, mirando el display."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b016.wav",
+  "start": 110.94,
+  "len": 9.25,
+  "text": "Sin luz en el display, sin sonidos, sin nada. Recién ahí abrís el equipo. Una unidad con electricidad adentro es peligrosa."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b017.wav",
+  "start": 120.19,
+  "len": 6.67,
+  "text": "Si el aire se enchufa, desenchufalo. Y si hay un disyuntor aparte en la pared de afuera, bajalo también."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b018.wav",
+  "start": 126.86,
+  "len": 7.51,
+  "text": "Paso uno, el filtro. Se levanta el panel frontal, se sacan los dos filtros hacia afuera, y se llevan al baño."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b019.wav",
+  "start": 134.37,
+  "len": 7.32,
+  "text": "Agua tibia y un poco de jabón neutro. Con cepillo suave. Nunca agua caliente, que deforma el plástico."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b020.wav",
+  "start": 141.69,
+  "len": 7.11,
+  "text": "Y se seca a la sombra, no al sol directo ni con secador. Y nunca lo vuelvas a poner húmedo: crece moho."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b021.wav",
+  "start": 148.8,
+  "len": 6.73,
+  "text": "La diferencia se ve. Con un filtro limpio pasa el doble de aire, y el equipo trabaja con menos esfuerzo."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b022.wav",
+  "start": 155.53,
+  "len": 8.2,
+  "text": "Revisá que el filtro no esté roto ni deformado. Si lo está, se cambia: son baratos y se consiguen del modelo de tu equipo."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b023.wav",
+  "start": 163.73,
+  "len": 8.18,
+  "text": "Paso dos, la rejilla y las paletas: con un paño húmedo, suave, sin presionar. Esas paletas se rompen fácil."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b024.wav",
+  "start": 171.91,
+  "len": 8.23,
+  "text": "Con una linterna, miro el serpentín de adentro. Si ves una capa gris, con un pincel suave, sin tocar las aletas finas."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b025.wav",
+  "start": 180.14,
+  "len": 9.02,
+  "text": "Una buena linterna es la herramienta más útil para una revisión: te muestra el polvo, el moho y las fugas que a simple vista no ves."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b026.wav",
+  "start": 189.16,
+  "len": 8.46,
+  "text": "Las aletas son de aluminio muy fino: si se doblan, se tapan los pasos de aire. Por eso, delicado, y sin agua a presión."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b027.wav",
+  "start": 197.62,
+  "len": 8.33,
+  "text": "Y no mojes la placa electrónica ni los motores. Si hay mucha suciedad adentro, eso es un trabajo de técnico con lona y bomba."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b028.wav",
+  "start": 205.95,
+  "len": 7.46,
+  "text": "La placa suele estar en un costado, con una tapa. Si la ves húmeda o con óxido, se llama al técnico antes de seguir."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b029.wav",
+  "start": 213.41,
+  "len": 7.49,
+  "text": "Paso tres, el desagüe. Toda esa agua que el aire saca del ambiente sale por una manguera. Y se puede tapar."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b030.wav",
+  "start": 220.9,
+  "len": 7.24,
+  "text": "Con el calor, esa manguera junta algas y mugre. Y un desagüe tapado hace que el agua gotee adentro de tu living."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b031.wav",
+  "start": 228.14,
+  "len": 7.3,
+  "text": "A veces la manguera está en el piso o con la punta tapada contra una pared. Hay que dejarla libre, a un desagüe real."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b032.wav",
+  "start": 235.44,
+  "len": 8.41,
+  "text": "La prueba: un poco de agua en la bandeja, y mirás que salga por la manguera. Si sale, está sana. Si se queda, hay tapón."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b033.wav",
+  "start": 243.85,
+  "len": 9.25,
+  "text": "Se destapa con un cable fino o una pera de goma, o soplando con cuidado. Y se revisa que la manguera baje siempre, sin tramos que suban."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b034.wav",
+  "start": 253.1,
+  "len": 8.03,
+  "text": "Y cada tanto, una cucharada de vinagre en la bandeja ayuda a evitar que se junten algas. No lavandina: vinagre."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b035.wav",
+  "start": 261.13,
+  "len": 7.88,
+  "text": "Paso cuatro, la unidad de afuera. Es la que más sufre: sol, lluvia, hojas y polvo de todo el año."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b036.wav",
+  "start": 269.01,
+  "len": 10.09,
+  "text": "Y cuanto peor orientada, peor: al sol de la tarde, la unidad trabaja más caliente, y gasta más. A veces conviene ponerle un techito."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b037.wav",
+  "start": 279.1,
+  "len": 8.13,
+  "text": "Sacá hojas, telarañas y nidos con la mano o un cepillo. Y despejá un metro alrededor, para que el aire circule."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b038.wav",
+  "start": 287.23,
+  "len": 7.82,
+  "text": "Nada de macetas ni cajas adelante. El aire caliente tiene que salir libre, o se recalienta y el equipo gasta de más."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b039.wav",
+  "start": 295.05,
+  "len": 7.48,
+  "text": "Las aletas de afuera se cepillan en sentido vertical, de arriba abajo, sin peinarlas de costado: se doblan."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b040.wav",
+  "start": 302.53,
+  "len": 7.72,
+  "text": "Una manguera con agua suave, desde adentro hacia afuera, sin presión. Y con el equipo sin energía, sí o sí."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b041.wav",
+  "start": 310.25,
+  "len": 9.05,
+  "text": "Y mirá la base y los soportes: si están oxidados, hay que cambiarlos. Un equipo mal apoyado vibra, y las cañerías se rompen."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b042.wav",
+  "start": 319.3,
+  "len": 7.71,
+  "text": "Probá empujándola: si se mueve, se ajustan los tornillos. Una vibración pequeña, con los años, rompe las cañerías."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b043.wav",
+  "start": 327.01,
+  "len": 7.88,
+  "text": "Paso cinco, las cañerías. La espuma negra que las cubre se reseca con el sol y se agrieta, y ahí condensa el agua."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b044.wav",
+  "start": 334.89,
+  "len": 8.39,
+  "text": "Con cinta aislante especial para cañerías, se tapa lo que está agrietado. Una cañería sin aislar pierde frío y transpira."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b045.wav",
+  "start": 343.28,
+  "len": 6.44,
+  "text": "Y si ves una mancha de aceite en una unión de cañerías, es una señal de fuga de gas. No es para hacerlo en casa."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b046.wav",
+  "start": 349.72,
+  "len": 7.6,
+  "text": "El aceite del compresor sale junto con el gas cuando hay fuga, y se ve como una mancha sucia que atrae el polvo."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b047.wav",
+  "start": 357.32,
+  "len": 7.48,
+  "text": "Una fuga de gas refrigerante se arregla con un técnico, con equipos y con manómetros. Eso no se improvisa."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b048.wav",
+  "start": 364.8,
+  "len": 8.24,
+  "text": "El técnico hace vacío, prueba con nitrógeno y recarga la cantidad justa. Eso lo hacen con equipos que valen más que el aire."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b049.wav",
+  "start": 373.04,
+  "len": 9.54,
+  "text": "Paso seis, la electricidad. Miro el cable, la ficha y el tomacorriente. Una ficha oscurecida o derretida es un riesgo."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b050.wav",
+  "start": 382.58,
+  "len": 7.38,
+  "text": "Con el aire andando un rato, la ficha puede estar tibia pero nunca caliente. Si quema, hay un falso contacto."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b051.wav",
+  "start": 389.96,
+  "len": 7.23,
+  "text": "Algunos técnicos usan una cámara térmica, pero con el dorso de la mano también se nota si algo calienta de más."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b052.wav",
+  "start": 397.19,
+  "len": 8.61,
+  "text": "Y la térmica tiene que ser la que indica el manual. Una térmica muy chica salta siempre, y una muy grande no protege el cable."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b053.wav",
+  "start": 405.8,
+  "len": 7.97,
+  "text": "En el manual hay una tabla con la térmica y el cable que necesita el equipo. Si la instalación es vieja, hay que revisarla."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b054.wav",
+  "start": 413.77,
+  "len": 6.28,
+  "text": "Con la pinza, vas a ver la corriente real del equipo en marcha, y la comparás con la que dice la etiqueta."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b055.wav",
+  "start": 420.05,
+  "len": 5.18,
+  "text": "Cuando todo está limpio y seco, volvés a prender. Y ahora, la prueba de quince minutos."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b056.wav",
+  "start": 425.23,
+  "len": 8.2,
+  "text": "Primero, el aire que sale tiene que estar bien frío, y en cantidad, a los cinco minutos. Una cinta liviana te lo muestra."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b057.wav",
+  "start": 433.43,
+  "len": 6.18,
+  "text": "Con la mano se nota: tiene que salir fresco, y con el ventilador a una velocidad fuerte y pareja."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b058.wav",
+  "start": 439.61,
+  "len": 7.6,
+  "text": "Escuchá ruidos: golpeteos, chillidos o vibraciones. Un zumbido parejo es normal. Un traqueteo, no."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b059.wav",
+  "start": 447.21,
+  "len": 9.42,
+  "text": "Un ruido metálico puede ser una hélice floja o una piedra adentro. Un chillido, un rodamiento. Y un golpeteo en el compresor, el final."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b060.wav",
+  "start": 456.63,
+  "len": 6.21,
+  "text": "Con la pinza, miro la corriente: tiene que estabilizarse y estar por debajo de la que indica la etiqueta."
+ },
+ {
+  "beat": "b061",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b061.wav",
+  "start": 462.84,
+  "len": 6.62,
+  "text": "Esa corriente cambia con el calor del día, pero siempre tiene que estar por debajo del valor máximo de la placa."
+ },
+ {
+  "beat": "b062",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b062.wav",
+  "start": 469.46,
+  "len": 8.03,
+  "text": "Y un termómetro en la salida del aire: si está unos ocho a doce grados más frío que el ambiente, el equipo está bien."
+ },
+ {
+  "beat": "b063",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b063.wav",
+  "start": 477.49,
+  "len": 7.5,
+  "text": "Anotá la diferencia: si un día es de diez grados, y a la semana es de cuatro, algo cambió, y es hora de llamar."
+ },
+ {
+  "beat": "b064",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b064.wav",
+  "start": 484.99,
+  "len": 8.24,
+  "text": "Y lo que no se hace. Uno, no usar agua a presión sobre el serpentín. Dos, no usar productos con cloro o lavandina adentro."
+ },
+ {
+  "beat": "b065",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b065.wav",
+  "start": 493.23,
+  "len": 8.41,
+  "text": "El cloro ataca el aluminio y el cobre, y te llena la casa de olor. Tres, no tapar la unidad exterior con una funda cuando funciona."
+ },
+ {
+  "beat": "b066",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b066.wav",
+  "start": 501.64,
+  "len": 7.52,
+  "text": "Y cuatro, no intentar cargar gas por tu cuenta, ni con latas ni con kits. Eso es del técnico, siempre."
+ },
+ {
+  "beat": "b067",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b067.wav",
+  "start": 509.16,
+  "len": 7.19,
+  "text": "Las latas con manguera que se venden prometen cargar el aire en cinco minutos. Y lo que hacen es romper el equipo."
+ },
+ {
+  "beat": "b068",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b068.wav",
+  "start": 516.35,
+  "len": 8.29,
+  "text": "Llamá al técnico si el aire no enfría, si hay hielo, si hay pérdidas de aceite o gas, o si salta la térmica al arrancar."
+ },
+ {
+  "beat": "b069",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b069.wav",
+  "start": 524.64,
+  "len": 9.66,
+  "text": "El hielo en las cañerías en pleno verano es una alarma: casi siempre es falta de gas o un filtro tapado. Y se arregla con un técnico."
+ },
+ {
+  "beat": "b070",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b070.wav",
+  "start": 534.3,
+  "len": 8.25,
+  "text": "Y una vez cada uno o dos años, un service completo: limpieza profunda, revisión de presión de gas y de electricidad."
+ },
+ {
+  "beat": "b071",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b071.wav",
+  "start": 542.55,
+  "len": 7.14,
+  "text": "Y pedí el presupuesto claro antes de que entre a tu casa. Un buen técnico te explica qué hace y por qué."
+ },
+ {
+  "beat": "b072",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b072.wav",
+  "start": 549.69,
+  "len": 8.56,
+  "text": "Algunas preguntas que me hacen siempre. ¿Cada cuánto limpio el filtro? En verano, una vez por mes. En uso continuo, cada dos semanas."
+ },
+ {
+  "beat": "b073",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b073.wav",
+  "start": 558.25,
+  "len": 10.18,
+  "text": "¿Puedo usar vinagre en la rejilla? Sí, diluido en agua, con un paño. En el serpentín, no: ahí se usa un producto específico, y mejor un técnico."
+ },
+ {
+  "beat": "b074",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b074.wav",
+  "start": 568.43,
+  "len": 8.95,
+  "text": "¿Y los aires de ventana? Se limpian igual: filtro, rejilla y desagüe. Pero muchos tienen la bandeja adentro, y hay que sacarla."
+ },
+ {
+  "beat": "b075",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b075.wav",
+  "start": 577.38,
+  "len": 8.91,
+  "text": "¿Cuánto dura un aire? Bien cuidado, entre diez y quince años. Si le faltan piezas o gasta el doble, ya no conviene repararlo."
+ },
+ {
+  "beat": "b076",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b076.wav",
+  "start": 586.29,
+  "len": 7.47,
+  "text": "Un buen criterio: si la reparación cuesta más de la mitad de uno nuevo, es mejor reemplazarlo, y buscar uno inverter."
+ },
+ {
+  "beat": "b077",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b077.wav",
+  "start": 593.76,
+  "len": 8.8,
+  "text": "Si alquilás, pedí al propietario el último service. Y si es tuyo, guardá las facturas: sirven para demostrar el mantenimiento."
+ },
+ {
+  "beat": "b078",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b078.wav",
+  "start": 602.56,
+  "len": 7.96,
+  "text": "Con esto hecho, el primer día de calor lo prendés y listo. Sin sorpresas, sin gotera y sin llamadas de urgencia."
+ },
+ {
+  "beat": "b079",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b079.wav",
+  "start": 610.52,
+  "len": 6.53,
+  "text": "Con una tarde de octubre, el aire está listo para diciembre. Y esa tarde es lo que más ahorra."
+ },
+ {
+  "beat": "b080",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b080.wav",
+  "start": 617.05,
+  "len": 7.77,
+  "text": "Poné una fecha en el calendario: el primer fin de semana de octubre, aire. Y repetilo cada año, como el service del auto."
+ },
+ {
+  "beat": "b081",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b081.wav",
+  "start": 624.82,
+  "len": 9.49,
+  "text": "Cortar la energía, filtro, rejilla, desagüe, unidad exterior, cañerías, electricidad y prueba. Ocho cosas, una tarde."
+ },
+ {
+  "beat": "b082",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzaire/out/pzaire/tramos/b082.wav",
+  "start": 634.31,
+  "len": 7.202,
+  "text": "Si te sirvió, quedate en el canal. En el próximo, el filtro que te rompe el aire. Y contame si pudiste hacer la revisión."
+ }
+]

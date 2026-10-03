@@ -1,0 +1,810 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "ESTO SALE DEL AIRE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "prendés",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "8 COSAS ANTES DEL CALOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cosas",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b004",
+   "props": {
+    "text": "OCTUBRE: HAY TIEMPO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "octubre",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "AGENDA LLENA HASTA FEBRERO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 54
+   },
+   "word": "febrero",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b008",
+   "props": {
+    "text": "ANTES DE TOCAR: APAGADO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "apaga",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b011",
+   "props": {
+    "text": "NIDOS EN LA UNIDAD EXTERIOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "nidos",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b013",
+   "props": {
+    "text": "MOHO EN LA REJILLA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "humedad",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b014",
+   "props": {
+    "text": "OLOR RARO: NO LO USES",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "olor",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b015",
+   "props": {
+    "text": "CORTÁ LA TÉRMICA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "térmica",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b018",
+   "props": {
+    "step": 1,
+    "total": 6,
+    "title": "EL FILTRO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b023",
+   "props": {
+    "step": 2,
+    "total": 6,
+    "title": "REJILLA Y PALETAS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b029",
+   "props": {
+    "step": 3,
+    "total": 6,
+    "title": "EL DESAGÜE"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b035",
+   "props": {
+    "step": 4,
+    "total": 6,
+    "title": "LA UNIDAD EXTERIOR"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b043",
+   "props": {
+    "step": 5,
+    "total": 6,
+    "title": "LAS CAÑERÍAS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b049",
+   "props": {
+    "step": 6,
+    "total": 6,
+    "title": "LA ELECTRICIDAD"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b019",
+   "props": {
+    "text": "NUNCA AGUA CALIENTE",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "nunca",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b021",
+   "props": {
+    "text": "FILTRO LIMPIO = EL DOBLE DE AIRE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "doble",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b024",
+   "props": {
+    "text": "LINTERNA: MIRÁ EL SERPENTÍN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "linterna",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b027",
+   "props": {
+    "text": "NO MOJES LA PLACA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "mojes",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b032",
+   "props": {
+    "text": "PRUEBA: AGUA EN LA BANDEJA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "bandeja",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b034",
+   "props": {
+    "text": "VINAGRE EN LA BANDEJA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "vinagre",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b037",
+   "props": {
+    "text": "1 m LIBRE ALREDEDOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "metro",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b039",
+   "props": {
+    "text": "ALETAS: DE ARRIBA A ABAJO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "vertical",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b044",
+   "props": {
+    "text": "CINTA ESPECIAL PARA CAÑERÍAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "cinta",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b045",
+   "props": {
+    "text": "MANCHA DE ACEITE = FUGA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "aceite",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b047",
+   "props": {
+    "text": "FUGA DE GAS: TÉCNICO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "técnico",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b050",
+   "props": {
+    "text": "FICHA TIBIA, NUNCA CALIENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "tibia",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b052",
+   "props": {
+    "text": "LA TÉRMICA DEL MANUAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "manual",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b056",
+   "props": {
+    "text": "PRUEBA: AIRE BIEN FRÍO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "frío",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b058",
+   "props": {
+    "text": "ESCUCHÁ RUIDOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "ruidos",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b062",
+   "props": {
+    "text": "8 A 12 °C DE DIFERENCIA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "8",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b064",
+   "props": {
+    "pos": "top",
+    "size": 92,
+    "words": [
+     {
+      "t": "LO QUE NO SE HACE",
+      "beat": "b064",
+      "word": "hace",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "hace",
+   "until": "b064",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b066",
+   "props": {
+    "text": "NO CARGUES GAS VOS",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "gas",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b069",
+   "props": {
+    "text": "HIELO EN VERANO = ALARMA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "hielo",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b070",
+   "props": {
+    "text": "SERVICE COMPLETO CADA 1 – 2 AÑOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "service",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b071",
+   "props": {
+    "text": "PRESUPUESTO CLARO ANTES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "presupuesto",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b076",
+   "props": {
+    "text": "REPARACIÓN > ½ DE UNO NUEVO = CAMBIAR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 50
+   },
+   "word": "mitad",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b080",
+   "props": {
+    "text": "PRIMER FIN DE SEMANA DE OCTUBRE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "octubre",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b082",
+   "props": {
+    "pos": "top",
+    "size": 86,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b082",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "EL FILTRO QUE ROMPE EL AIRE",
+      "beat": "b082",
+      "word": "filtro",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b082",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}

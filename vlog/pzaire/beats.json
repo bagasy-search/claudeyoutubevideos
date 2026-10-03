@@ -1,0 +1,1437 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esto sale del aire cuando lo prendés por primera vez después de meses. Y lo respirás vos, toda la temporada.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a dusty air conditioner indoor unit being switched on for the first time in the season with a puff of dust coming out of the vents",
+    "motion": "a thin cloud of grey dust puffs out of the vents and floats down"
+   },
+   {
+    "k": "W",
+    "v": "dusty air conditioner vent"
+   },
+   {
+    "k": "W",
+    "v": "a dusty air conditioner indoor unit being switched"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay ocho cosas que revisar antes del primer día de calor. Y si no las hacés, las pagás el primer día de calor de verdad.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in a living room holding a remote and a clamp meter, serious look, an air conditioner on the wall behind him"
+   },
+   {
+    "k": "G",
+    "v": "a clamp meter and a flashlight on a coffee table beside an air conditioner remote"
+   },
+   {
+    "k": "W",
+    "v": "Claudio standing in a living room holding a"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Porque cuando llega la ola de calor, todos prenden el aire el mismo día. Y los técnicos tardan semanas en llegar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "summer heat wave city"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at a thermometer showing hot weather outside through a window, worried"
+   },
+   {
+    "k": "W",
+    "v": "summer heat wave city"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una visita en pleno enero puede salir cara y tardar. En una tarde de octubre, lo hacés vos mismo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head with a half smile while looking at a calendar full of marks"
+   },
+   {
+    "k": "G",
+    "v": "a wall calendar with a technician's appointment note a month later than today"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada verano es igual: los técnicos tienen la agenda llena hasta febrero, y los que llegan a tiempo cobran urgencia.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician waiting list busy summer"
+   },
+   {
+    "k": "G",
+    "v": "a technician's phone ringing with a long list of pending jobs on a clipboard beside it"
+   },
+   {
+    "k": "W",
+    "v": "technician waiting list busy summer"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En octubre, en cambio, hay tiempo. Y un aire que arranca bien la primera vez rinde bien toda la temporada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio sitting at a table with a cup of coffee and a notebook planning, relaxed"
+   },
+   {
+    "k": "G",
+    "v": "a notebook with a checklist for the air conditioner season on a table in a living room"
+   },
+   {
+    "k": "W",
+    "v": "Claudio sitting at a table with a cup"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No hace falta mucho: una pinza amperométrica, un cepillo suave, un destornillador y una tarde. Te muestro todo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter, a soft brush, a spray bottle and a screwdriver laid on a table"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing the tools on the table to the camera"
+   },
+   {
+    "k": "W",
+    "v": "a clamp meter a soft brush a spray"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y una regla que repito en todos los videos: antes de tocar nada, el aire se apaga y se corta la térmica. Sin excepciones.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising a finger to the camera, serious, in a living room"
+   },
+   {
+    "k": "W",
+    "v": "warning electricity safety"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising a finger to the camera serious"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un aire usa corriente de red, y el compresor tiene un capacitor que guarda carga aunque lo cortes. Cuidado al tocar adentro.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a sticker on an air conditioner outdoor unit with a lightning bolt warning symbol"
+   },
+   {
+    "k": "W",
+    "v": "high voltage warning sign"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un aire pasa cinco o seis meses sin usarse. En ese tiempo se llena de polvo, de bichos y de humedad.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner unused for months dust"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner outdoor unit on a balcony covered in dust and dried leaves after winter"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En la unidad de afuera he encontrado nidos de avispas, hormigueros, y hasta un nido de pájaro. Todo eso tapa el aire.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "spider web on air conditioner outdoor unit"
+   },
+   {
+    "k": "G",
+    "v": "a small mud nest of an insect inside the outdoor unit grille of an air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Todo eso, cuando lo prendés, es lo que se mueve por tu casa. Y lo que obliga al equipo a trabajar de más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the filter covered in a grey layer of dust, grimacing"
+   },
+   {
+    "k": "G",
+    "v": "a thick layer of dust on an air conditioner filter held up to the camera"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces hasta hay moho en la rejilla. Y ese olor a humedad, a cerrado, es la señal clara de que hay que limpiar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "mold in air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "small dark spots of mold on the plastic grille of an air conditioner indoor unit"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si al prenderlo hay olor raro, no lo uses: primero limpiás, después prendés. No hay vuelta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio smelling the air near the vents and making a face"
+   },
+   {
+    "k": "G",
+    "v": "a hand waving air towards the nose near the vent of an air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, la seguridad. Cortás la térmica del aire, y confirmás que el equipo no tiene luz, mirando el display.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "circuit breaker panel"
+   },
+   {
+    "k": "P",
+    "v": "Claudio flipping the air conditioner breaker to off at the electrical panel, careful"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Sin luz en el display, sin sonidos, sin nada. Recién ahí abrís el equipo. Una unidad con electricidad adentro es peligrosa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an air conditioner indoor unit with its display completely dark"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping the dark display of the unit and nodding"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el aire se enchufa, desenchufalo. Y si hay un disyuntor aparte en la pared de afuera, bajalo también.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "remove plug from socket"
+   },
+   {
+    "k": "G",
+    "v": "a hand pulling the plug of an outdoor unit out of a socket with the cable visible"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso uno, el filtro. Se levanta el panel frontal, se sacan los dos filtros hacia afuera, y se llevan al baño.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio lifting the front panel of an air conditioner indoor unit with both hands, looking up"
+   },
+   {
+    "k": "G",
+    "v": "the front panel of an indoor air conditioner unit lifted open showing two dusty filters"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Agua tibia y un poco de jabón neutro. Con cepillo suave. Nunca agua caliente, que deforma el plástico.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a dusty plastic mesh filter being rinsed under a tap of lukewarm water in a bathroom sink",
+    "motion": "the grey dust washes off in swirls down the sink"
+   },
+   {
+    "k": "W",
+    "v": "washing air conditioner filter"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y se seca a la sombra, no al sol directo ni con secador. Y nunca lo vuelvas a poner húmedo: crece moho.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking a washed filter gently and leaning it against a wall to dry in shade, careful"
+   },
+   {
+    "k": "G",
+    "v": "a wet filter leaning on a bathroom wall to dry in shade"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La diferencia se ve. Con un filtro limpio pasa el doble de aire, y el equipo trabaja con menos esfuerzo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a grey filter compared with a clean white filter side by side on a table"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding both filters and pointing at the difference, satisfied"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Revisá que el filtro no esté roto ni deformado. Si lo está, se cambia: son baratos y se consiguen del modelo de tu equipo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio checking the filter edge for cracks or loose mesh and holding it up to the light"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner filter with a torn corner held up to the light"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso dos, la rejilla y las paletas: con un paño húmedo, suave, sin presionar. Esas paletas se rompen fácil.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio wiping the front grille and the louvers with a damp microfiber cloth, gentle"
+   },
+   {
+    "k": "G",
+    "v": "a cloth wiping the horizontal louver of an air conditioner showing dust coming off"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con una linterna, miro el serpentín de adentro. Si ves una capa gris, con un pincel suave, sin tocar las aletas finas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "soft brush cleaning vent"
+   },
+   {
+    "k": "G",
+    "v": "a soft paintbrush passing along the fins of the indoor unit evaporator while a flashlight shines on them"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una buena linterna es la herramienta más útil para una revisión: te muestra el polvo, el moho y las fugas que a simple vista no ves.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "flashlight inspecting machine"
+   },
+   {
+    "k": "G",
+    "v": "a flashlight beam lighting the inside of an indoor air conditioner unit showing a metal coil with a little dirt"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las aletas son de aluminio muy fino: si se doblan, se tapan los pasos de aire. Por eso, delicado, y sin agua a presión.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at the delicate metal fins with a pen, careful"
+   },
+   {
+    "k": "G",
+    "v": "close view of thin aluminium fins of an evaporator with a few bent ones"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y no mojes la placa electrónica ni los motores. Si hay mucha suciedad adentro, eso es un trabajo de técnico con lona y bomba.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician cleaning indoor unit spray"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding a spray bottle and deciding not to spray inside the unit, shaking his head"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La placa suele estar en un costado, con una tapa. Si la ves húmeda o con óxido, se llama al técnico antes de seguir.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the electronic control board of an air conditioner with a plastic cover behind the front panel"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pointing at the circuit board cover and shaking his head, careful"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso tres, el desagüe. Toda esa agua que el aire saca del ambiente sale por una manguera. Y se puede tapar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a plastic drain hose coming out of the back of an air conditioner into a drain on a balcony wall"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner condensate hose"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el calor, esa manguera junta algas y mugre. Y un desagüe tapado hace que el agua gotee adentro de tu living.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio blowing through a short drain hose or checking it for slime, grimacing"
+   },
+   {
+    "k": "G",
+    "v": "a drain hose with greenish slime inside held up against the light"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces la manguera está en el piso o con la punta tapada contra una pared. Hay que dejarla libre, a un desagüe real.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hand holding the end of a drain hose with water dripping slowly"
+   },
+   {
+    "k": "W",
+    "v": "water dripping hose"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba: un poco de agua en la bandeja, y mirás que salga por la manguera. Si sale, está sana. Si se queda, hay tapón.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pouring a small bottle of water into the drain tray and watching it flow out the hose"
+   },
+   {
+    "k": "A",
+    "v": "water poured into a drain tray flowing through a hose and dripping outside on a balcony",
+    "motion": "water runs out of the hose end and drips steadily"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pouring a small bottle of water into"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se destapa con un cable fino o una pera de goma, o soplando con cuidado. Y se revisa que la manguera baje siempre, sin tramos que suban.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a thin brush pushed into a drain hose to clear a blockage"
+   },
+   {
+    "k": "W",
+    "v": "unclogging drain hose"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cada tanto, una cucharada de vinagre en la bandeja ayuda a evitar que se junten algas. No lavandina: vinagre.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio gently pushing a thin wire into the end of a drain hose and pulling out some dirt, careful"
+   },
+   {
+    "k": "G",
+    "v": "a bit of green slime pulled out of a drain hose on the end of a thin wire"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cuatro, la unidad de afuera. Es la que más sufre: sol, lluvia, hojas y polvo de todo el año.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "outdoor air conditioner unit balcony"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the outdoor unit on a balcony with a flashlight, checking its surroundings"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cuanto peor orientada, peor: al sol de la tarde, la unidad trabaja más caliente, y gasta más. A veces conviene ponerle un techito.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "rain on air conditioner outdoor unit"
+   },
+   {
+    "k": "G",
+    "v": "an outdoor unit exposed to sun and rain on a rooftop with weathering stains"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Sacá hojas, telarañas y nidos con la mano o un cepillo. Y despejá un metro alrededor, para que el aire circule.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "dry leaves and spider webs stuck in the metal grille of an outdoor air conditioner unit"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pulling dried leaves and a spider web off an outdoor unit grille with his hand in a glove"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Nada de macetas ni cajas adelante. El aire caliente tiene que salir libre, o se recalienta y el equipo gasta de más.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an outdoor unit with a plant pot and a pile of boxes placed too close in front of it"
+   },
+   {
+    "k": "P",
+    "v": "Claudio moving the boxes away from the outdoor unit with both hands"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las aletas de afuera se cepillan en sentido vertical, de arriba abajo, sin peinarlas de costado: se doblan.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cleaning condenser coil with brush"
+   },
+   {
+    "k": "G",
+    "v": "a soft brush stroking the fins of an outdoor air conditioner condenser coil from top to bottom"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una manguera con agua suave, desde adentro hacia afuera, sin presión. Y con el equipo sin energía, sí o sí.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio spraying a gentle water stream with a garden hose at a distance onto the outdoor coil, careful"
+   },
+   {
+    "k": "A",
+    "v": "a gentle shower of water falling on the fins of an outdoor unit's coil and running down",
+    "motion": "water runs through the fins in streams"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y mirá la base y los soportes: si están oxidados, hay que cambiarlos. Un equipo mal apoyado vibra, y las cañerías se rompen.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a rusty base of an outdoor unit with corroded mounting brackets"
+   },
+   {
+    "k": "W",
+    "v": "rusty air conditioner bracket"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Probá empujándola: si se mueve, se ajustan los tornillos. Una vibración pequeña, con los años, rompe las cañerías.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pushing the outdoor unit with his hand to feel whether it shakes on its brackets"
+   },
+   {
+    "k": "G",
+    "v": "a bracket with rusty bolts and a loosened nut under an outdoor unit"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cinco, las cañerías. La espuma negra que las cubre se reseca con el sol y se agrieta, y ahí condensa el agua.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio inspecting the copper pipes of an air conditioner running along a wall, looking at the insulation"
+   },
+   {
+    "k": "G",
+    "v": "copper pipes wrapped in black foam insulation with a section cracked and peeling"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con cinta aislante especial para cañerías, se tapa lo que está agrietado. Una cañería sin aislar pierde frío y transpira.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a strip of new insulation tape being wrapped around exposed copper pipe"
+   },
+   {
+    "k": "W",
+    "v": "pipe insulation tape"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si ves una mancha de aceite en una unión de cañerías, es una señal de fuga de gas. No es para hacerlo en casa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking closely at a pipe joint with a flashlight for an oily stain, serious"
+   },
+   {
+    "k": "G",
+    "v": "a copper pipe flare joint with a dark oily stain and some dust sticking to it"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El aceite del compresor sale junto con el gas cuando hay fuga, y se ve como una mancha sucia que atrae el polvo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerant oil leak copper pipe"
+   },
+   {
+    "k": "G",
+    "v": "a close view of copper pipe connection with an oily dark smudge"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una fuga de gas refrigerante se arregla con un técnico, con equipos y con manómetros. Eso no se improvisa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerant leak technician"
+   },
+   {
+    "k": "P",
+    "v": "Claudio shaking his head and holding up a hand to stop the viewer, serious"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El técnico hace vacío, prueba con nitrógeno y recarga la cantidad justa. Eso lo hacen con equipos que valen más que el aire.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a technician's vacuum pump and gauges set on a balcony floor connected to an outdoor unit"
+   },
+   {
+    "k": "W",
+    "v": "vacuum pump air conditioning"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso seis, la electricidad. Miro el cable, la ficha y el tomacorriente. Una ficha oscurecida o derretida es un riesgo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "electrical plug socket burnt"
+   },
+   {
+    "k": "G",
+    "v": "a power plug with a slightly darkened and melted plastic around its pins"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el aire andando un rato, la ficha puede estar tibia pero nunca caliente. Si quema, hay un falso contacto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio touching the plug with the back of his hand to check if it is warm after running, careful"
+   },
+   {
+    "k": "G",
+    "v": "a hand held near a plug with a thermometer gun showing a normal temperature"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Algunos técnicos usan una cámara térmica, pero con el dorso de la mano también se nota si algo calienta de más.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "thermal imaging camera plug"
+   },
+   {
+    "k": "G",
+    "v": "a thermal image showing a warm plug and cable with colour scale"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la térmica tiene que ser la que indica el manual. Una térmica muy chica salta siempre, y una muy grande no protege el cable.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "circuit breaker rating"
+   },
+   {
+    "k": "G",
+    "v": "a breaker lever with sixteen amps printed on it in a panel"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En el manual hay una tabla con la térmica y el cable que necesita el equipo. Si la instalación es vieja, hay que revisarla.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a page of an air conditioner manual showing a table with the recommended breaker size and cable section"
+   },
+   {
+    "k": "P",
+    "v": "Claudio reading the manual page with his finger on the table"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la pinza, vas a ver la corriente real del equipo en marcha, y la comparás con la que dice la etiqueta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the air conditioner nameplate and comparing with the breaker rating, concentrated"
+   },
+   {
+    "k": "G",
+    "v": "a nameplate showing power in watts and current in amps next to a breaker panel"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuando todo está limpio y seco, volvés a prender. Y ahora, la prueba de quince minutos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio turning the breaker back on and picking up the remote, ready"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner indoor unit starting with its green light on"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, el aire que sale tiene que estar bien frío, y en cantidad, a los cinco minutos. Una cinta liviana te lo muestra.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "cold air blowing from an air conditioner louver with a faint mist and a ribbon fluttering in front of it",
+    "motion": "the thin ribbon flutters steadily in the cold air stream"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner blowing cold air"
+   },
+   {
+    "k": "W",
+    "v": "cold air blowing from an air conditioner louver"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la mano se nota: tiene que salir fresco, y con el ventilador a una velocidad fuerte y pareja.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hand feeling cold air vent"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding his hand in front of the louvers and feeling the air, nodding"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Escuchá ruidos: golpeteos, chillidos o vibraciones. Un zumbido parejo es normal. Un traqueteo, no.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio listening carefully with his hand cupped near the outdoor unit, serious"
+   },
+   {
+    "k": "W",
+    "v": "listening to machine noise"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un ruido metálico puede ser una hélice floja o una piedra adentro. Un chillido, un rodamiento. Y un golpeteo en el compresor, el final.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner strange noise"
+   },
+   {
+    "k": "G",
+    "v": "a person with a hand cupped around the ear next to an outdoor unit"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la pinza, miro la corriente: tiene que estabilizarse y estar por debajo de la que indica la etiqueta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio clamping the clamp meter around a single wire of the outdoor unit and reading the display"
+   },
+   {
+    "k": "G",
+    "v": "a clamp meter jaw around one wire of the power cable of an outdoor unit, reading a steady current"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esa corriente cambia con el calor del día, pero siempre tiene que estar por debajo del valor máximo de la placa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "electrician measuring amperage"
+   },
+   {
+    "k": "G",
+    "v": "a clamp meter display showing a steady current of a few amps with a label next to it"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un termómetro en la salida del aire: si está unos ocho a doce grados más frío que el ambiente, el equipo está bien.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a thermometer in the airflow of the indoor unit reading ten degrees colder than the room temperature"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking the thermometer at the vent and nodding"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Anotá la diferencia: si un día es de diez grados, y a la semana es de cuatro, algo cambió, y es hora de llamar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two thermometers, one in the room and one in the airflow at the vent, with readings noted on paper"
+   },
+   {
+    "k": "P",
+    "v": "Claudio writing the temperature difference on a paper pad"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y lo que no se hace. Uno, no usar agua a presión sobre el serpentín. Dos, no usar productos con cloro o lavandina adentro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting dont's on his fingers in a living room"
+   },
+   {
+    "k": "W",
+    "v": "warning do not"
+   }
+  ]
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El cloro ataca el aluminio y el cobre, y te llena la casa de olor. Tres, no tapar la unidad exterior con una funda cuando funciona.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a bottle of bleach with a red cross drawn over it next to an air conditioner"
+   },
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a bleach bottle"
+   }
+  ]
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cuatro, no intentar cargar gas por tu cuenta, ni con latas ni con kits. Eso es del técnico, siempre.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician checking pressure gauges"
+   },
+   {
+    "k": "P",
+    "v": "Claudio saying no with a gesture, holding a gauge in his hand"
+   }
+  ]
+ },
+ {
+  "id": "b067",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las latas con manguera que se venden prometen cargar el aire en cinco minutos. Y lo que hacen es romper el equipo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a refrigerant gas can with a hose kit on a shop shelf with a red warning label"
+   },
+   {
+    "k": "W",
+    "v": "warning do not recharge"
+   }
+  ]
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Llamá al técnico si el aire no enfría, si hay hielo, si hay pérdidas de aceite o gas, o si salta la térmica al arrancar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining with a notepad, listing signs"
+   },
+   {
+    "k": "G",
+    "v": "a notepad listing three signs: ice, bad smell, water dripping"
+   }
+  ]
+ },
+ {
+  "id": "b069",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El hielo en las cañerías en pleno verano es una alarma: casi siempre es falta de gas o un filtro tapado. Y se arregla con un técnico.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "ice on air conditioner pipe"
+   },
+   {
+    "k": "G",
+    "v": "an outdoor unit pipe valve covered with frost on a hot day"
+   }
+  ]
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y una vez cada uno o dos años, un service completo: limpieza profunda, revisión de presión de gas y de electricidad.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner technician working balcony"
+   },
+   {
+    "k": "G",
+    "v": "a technician in uniform working on an outdoor air conditioner unit on a balcony from behind"
+   }
+  ]
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y pedí el presupuesto claro antes de que entre a tu casa. Un buen técnico te explica qué hace y por qué.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera honestly with a hand on his chest"
+   },
+   {
+    "k": "G",
+    "v": "a handwritten note reading ask for a clear quote before the visit"
+   }
+  ]
+ },
+ {
+  "id": "b072",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Algunas preguntas que me hacen siempre. ¿Cada cuánto limpio el filtro? En verano, una vez por mes. En uso continuo, cada dos semanas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio answering questions to the camera in a relaxed way, sitting on the sofa"
+   },
+   {
+    "k": "W",
+    "v": "person answering questions"
+   }
+  ]
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Puedo usar vinagre en la rejilla? Sí, diluido en agua, con un paño. En el serpentín, no: ahí se usa un producto específico, y mejor un técnico.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "vinegar bottle cleaning"
+   },
+   {
+    "k": "G",
+    "v": "a bottle of white vinegar and a spray bottle on a kitchen counter"
+   }
+  ]
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Y los aires de ventana? Se limpian igual: filtro, rejilla y desagüe. Pero muchos tienen la bandeja adentro, y hay que sacarla.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an old window type air conditioner in a wall opening with a metal frame"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the old window unit with respect, running a hand along its side"
+   }
+  ]
+ },
+ {
+  "id": "b075",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Cuánto dura un aire? Bien cuidado, entre diez y quince años. Si le faltan piezas o gasta el doble, ya no conviene repararlo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "very old air conditioner twenty years"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner with a yellowed plastic body and old remote with worn buttons"
+   }
+  ]
+ },
+ {
+  "id": "b076",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un buen criterio: si la reparación cuesta más de la mitad de uno nuevo, es mejor reemplazarlo, y buscar uno inverter.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a quote paper with a skeptical face, doubting a repair price"
+   },
+   {
+    "k": "G",
+    "v": "a repair quote that costs almost as much as a new unit on a table"
+   }
+  ]
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si alquilás, pedí al propietario el último service. Y si es tuyo, guardá las facturas: sirven para demostrar el mantenimiento.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "renting apartment air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "a tenant and landlord signing a paper beside an air conditioner remote in a living room"
+   }
+  ]
+ },
+ {
+  "id": "b078",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con esto hecho, el primer día de calor lo prendés y listo. Sin sorpresas, sin gotera y sin llamadas de urgencia.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio ticking the checklist items in a notebook, satisfied"
+   },
+   {
+    "k": "G",
+    "v": "a checklist page with all items ticked for air conditioner before summer"
+   }
+  ]
+ },
+ {
+  "id": "b079",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con una tarde de octubre, el aire está listo para diciembre. Y esa tarde es lo que más ahorra.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in his living room with the air conditioner working, relaxed and proud"
+   },
+   {
+    "k": "W",
+    "v": "cool comfortable living room summer"
+   }
+  ]
+ },
+ {
+  "id": "b080",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Poné una fecha en el calendario: el primer fin de semana de octubre, aire. Y repetilo cada año, como el service del auto.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a calendar with an October date circled and the word air conditioner written in pencil"
+   },
+   {
+    "k": "P",
+    "v": "Claudio circling a date on a wall calendar with a marker"
+   }
+  ]
+ },
+ {
+  "id": "b081",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cortar la energía, filtro, rejilla, desagüe, unidad exterior, cañerías, electricidad y prueba. Ocho cosas, una tarde.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the eight steps on his fingers looking at the camera"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with a list of eight steps written in marker"
+   }
+  ]
+ },
+ {
+  "id": "b082",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quedate en el canal. En el próximo, el filtro que te rompe el aire. Y contame si pudiste hacer la revisión.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile, clamp meter in hand"
+   },
+   {
+    "k": "W",
+    "v": "summer cool home family"
+   }
+  ]
+ }
+]
