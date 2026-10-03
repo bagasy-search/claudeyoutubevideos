@@ -1,0 +1,801 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "EL FILTRO QUE ROMPE AIRES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "filtro",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "DEMASIADO BUENO PARA TU EQUIPO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "bueno",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b003",
+   "props": {
+    "text": "HIELO · AGUA · COMPRESOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "hielo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b004",
+   "props": {
+    "text": "PINZA + ANEMÓMETRO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "anemómetro",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b010",
+   "props": {
+    "text": "SI LO FRENÁS, NADA FUNCIONA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "frenás",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b013",
+   "props": {
+    "text": "EL SERPENTÍN: ESPONJA DE FRÍO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "esponja",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b016",
+   "props": {
+    "pos": "top",
+    "size": 86,
+    "words": [
+     {
+      "t": "MENOS AIRE",
+      "beat": "b016",
+      "word": "Menos",
+      "hl": "yellow"
+     },
+     {
+      "t": "= MÁS FRÍO DEL DEBIDO",
+      "beat": "b016",
+      "word": "frío",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "Menos",
+   "until": "b016",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b019",
+   "props": {
+    "text": "DE FÁBRICA: MALLA FINA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "malla",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b020",
+   "props": {
+    "text": "ESPUMA: MUCHO MÁS DENSA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "espuma",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b021",
+   "props": {
+    "text": "CARBÓN Y HEPA: AÚN MÁS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "carbón",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b024",
+   "props": {
+    "text": "PRUEBA: SOPLÁ CONTRA EL FILTRO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "soplá",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b027",
+   "props": {
+    "text": "PALABRAS QUE SUENAN TÉCNICAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "antibacteriano",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b028",
+   "props": {
+    "text": "MISMO AIRE · MISMA SALA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "termostato",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b031",
+   "props": {
+    "text": "1 · FILTRO ORIGINAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "original",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b033",
+   "props": {
+    "text": "2 · ESPUMA DENSA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "espuma",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b036",
+   "props": {
+    "text": "3 · PLISADO GRUESO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "grueso",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b038",
+   "props": {
+    "text": "ESCARCHA EN EL SERPENTÍN",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "escarcha",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b039",
+   "props": {
+    "text": "CON HIELO: SE APAGA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "apagué",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b043",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "GOLPE DE LÍQUIDO",
+      "beat": "b043",
+      "word": "golpe",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "golpe",
+   "until": "b043",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b044",
+   "props": {
+    "text": "COMPRESOR NUEVO = LO MÁS CARO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "reparación",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b046",
+   "props": {
+    "text": "SIN GARANTÍA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "garantía",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b047",
+   "props": {
+    "text": "FILTRO ORIGINAL Y LIMPIO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "original",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b049",
+   "props": {
+    "text": "LAVAR CADA MES EN VERANO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "mes",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b053",
+   "props": {
+    "text": "PURIFICADOR APARTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "purificador",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b055",
+   "props": {
+    "text": "EL AIRE ENFRÍA · EL PURIFICADOR FILTRA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "purificador",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b057",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "SEÑALES DE QUE SE ESTRANGULA",
+      "beat": "b057",
+      "word": "saber",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "saber",
+   "until": "b057",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b058",
+   "props": {
+    "text": "CINTA LIVIANA FRENTE A LA SALIDA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 54
+   },
+   "word": "cinta",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b061",
+   "props": {
+    "text": "UN CASO REAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "real",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b063",
+   "props": {
+    "text": "ERA EL FILTRO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "filtro",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b065",
+   "props": {
+    "pos": "top",
+    "size": 82,
+    "words": [
+     {
+      "t": "MENOS AIRE",
+      "beat": "b065",
+      "word": "aire",
+      "hl": "yellow"
+     },
+     {
+      "t": "= MÁS HIELO + MÁS CORRIENTE",
+      "beat": "b065",
+      "word": "hielo",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "recordás",
+   "until": "b065",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b071",
+   "props": {
+    "text": "CON MASCOTAS: CADA 2 SEMANAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "semanas",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b077",
+   "props": {
+    "text": "MIRÁ LA FLECHA DEL FILTRO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "flecha",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b080",
+   "props": {
+    "pos": "top",
+    "size": 78,
+    "words": [
+     {
+      "t": "1 FILTRO ORIGINAL",
+      "beat": "b080",
+      "word": "original",
+      "hl": "yellow"
+     },
+     {
+      "t": "2 LAVARLO CADA MES",
+      "beat": "b080",
+      "word": "mes"
+     },
+     {
+      "t": "3 NO AGREGAR FILTROS DENSOS",
+      "beat": "b080",
+      "word": "agregues",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "cosas",
+   "until": "b080",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b082",
+   "props": {
+    "text": "RECORDATORIO MENSUAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "recordatorio",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b085",
+   "props": {
+    "pos": "top",
+    "size": 86,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b085",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "LO QUE DICE EL VENDEDOR",
+      "beat": "b085",
+      "word": "vendedor",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b085",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}

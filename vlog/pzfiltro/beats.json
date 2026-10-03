@@ -1,0 +1,1483 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Este filtro cuesta casi nada. Y es el que más aires acondicionados rompe cada verano, sin que nadie lo sepa.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a cheap thick aftermarket foam filter being slid into an air conditioner indoor unit and the airflow from the vents weakening",
+    "motion": "a thin ribbon at the vent droops as the airflow weakens"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner filter replacement"
+   },
+   {
+    "k": "W",
+    "v": "a cheap thick aftermarket foam filter being slid"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No es que el filtro sea malo. Es que es demasiado bueno para tu equipo. Y te voy a mostrar qué le hace a la corriente.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding two different air conditioner filters in his hands, one original and one thick cheap one, with a serious look"
+   },
+   {
+    "k": "G",
+    "v": "two air conditioner filters side by side on a table, a thin original mesh and a thick dense aftermarket one"
+   },
+   {
+    "k": "W",
+    "v": "Claudio holding two different air conditioner filters in"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hielo en el serpentín, agua en el piso, compresor sufriendo. Todo empieza en un pedazo de espuma que prometía aire más limpio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "ice frozen air conditioner coil"
+   },
+   {
+    "k": "G",
+    "v": "a thick layer of frost on the evaporator coil of an air conditioner seen with a flashlight"
+   },
+   {
+    "k": "W",
+    "v": "ice frozen air conditioner coil"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con una pinza amperométrica y un anemómetro, medí qué pasa con cada filtro. Los resultados no son los que te cuentan.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in a living room with a clamp meter and an anemometer on a table, serious"
+   },
+   {
+    "k": "G",
+    "v": "a small handheld anemometer and a clamp meter next to an air conditioner remote"
+   },
+   {
+    "k": "W",
+    "v": "Claudio standing in a living room with a"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ojo: querer aire más limpio es válido. Mucha gente tiene alergia, y usa estos filtros por una buena razón.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "dust allergy air purifier family"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a sympathetic face, hands open"
+   },
+   {
+    "k": "W",
+    "v": "dust allergy air purifier family"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero hay una forma correcta de hacerlo. Y no es agregarle un filtro denso al equipo, que no fue diseñado para eso.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising a finger with a serious look"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner indoor unit with a small stream of air and a worried person's silhouette in the background"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising a finger with a serious look"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Este tema lo vi en decenas de casas. La visita termina igual: el cliente enojado, el aire roto, y un filtro comprado en una oferta.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician repair visit home"
+   },
+   {
+    "k": "G",
+    "v": "a technician's invoice on a table with a total for replacing an air conditioner compressor"
+   },
+   {
+    "k": "W",
+    "v": "technician repair visit home"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Nadie lo hace de mala fe. Todos quieren aire sano, y los vendedores lo saben, y lo venden como solución mágica.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging gently with a sad smile in a living room"
+   },
+   {
+    "k": "W",
+    "v": "customer sad repair"
+   },
+   {
+    "k": "W",
+    "v": "Claudio shrugging gently with a sad smile in"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un aire funciona moviendo aire: entra por arriba, pasa por el filtro, por el serpentín frío, y sale por abajo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air flow diagram air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "a diagram on a whiteboard showing air entering at the top, passing the filter and the coil, and exiting at the bottom of an indoor unit"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Todo el diseño depende de que ese aire pase fácil. Si lo frenás, nada de lo que viene después funciona bien.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio tracing the air path with his finger along an air conditioner indoor unit, explaining"
+   },
+   {
+    "k": "G",
+    "v": "an indoor unit with arrows drawn on a transparent overlay showing the air path"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El ventilador de adentro es un tambor con aletas, que mueve una cantidad de aire fija. No tiene fuerza para vencer una barrera.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "fan blower motor air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "the blower fan of an indoor air conditioner unit, a long cylindrical wheel of fins, held in two hands"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Podés sentirlo: pegás la mano a la entrada, y el aire te la tira. Esa succión es la que cuida al equipo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding the palm of his hand against the air intake and feeling the suction, curious"
+   },
+   {
+    "k": "G",
+    "v": "a hand held near the inlet grille of an air conditioner with a flowing arrow"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El serpentín trabaja como una esponja de frío: necesita mucho aire pasando por sus aletas para llevarse el calor del gas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "coil heat exchanger refrigeration"
+   },
+   {
+    "k": "G",
+    "v": "the evaporator coil of an air conditioner a dense block of thin aluminium fins and copper tubes"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con aire suficiente, el serpentín trabaja a unos pocos grados sobre cero. Con poco aire, baja de cero, y el agua que condensa se congela.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a thermometer clipped to the coil of an air conditioner showing a very low temperature"
+   },
+   {
+    "k": "W",
+    "v": "thermometer cold pipe"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es la misma física que forma hielo en una botella fría. El agua del aire se pega al metal helado y se congela capa sobre capa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining how water condenses on the cold coil and freezes with two small drawings on a whiteboard"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with a drawing of water drops on a coil turning into ice crystals"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Menos aire, y el serpentín se enfría demasiado. Más frío del que debe. Y ahí viene el hielo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a simple graph on a whiteboard showing airflow dropping and coil temperature falling when the filter blocks air"
+   },
+   {
+    "k": "P",
+    "v": "Claudio drawing the graph with a marker"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Estos son los tipos que te venden. El original de malla, el de espuma, el de tela, el de carbón y el plisado grueso.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laying out several filters on a table in a row, explaining"
+   },
+   {
+    "k": "G",
+    "v": "a row of filters on a table: original mesh, a foam one, a fabric one, a carbon one, and a thick pleated one"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los ves en ferreterías, en tiendas online y en cadenas de electrodomésticos. Todos prometen lo mismo: aire más limpio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "shop shelf air conditioner accessories"
+   },
+   {
+    "k": "G",
+    "v": "a hardware store shelf with packages of air conditioner filters of different brands and prices"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El de fábrica es una malla fina de plástico. Deja pasar casi todo el aire, y atrapa la pelusa y el polvo gordo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "original air conditioner filter mesh"
+   },
+   {
+    "k": "G",
+    "v": "an original thin plastic mesh filter held up to the light showing wide square holes"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La espuma de repuesto es mucho más densa. Si la mirás a contraluz, casi no pasa luz. Y si no pasa luz, tampoco pasa aire.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a thick foam filter with dense small pores held up to the light that barely lets any light through"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking through a foam filter toward a lamp, showing it blocks the light"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los de carbón y los plisados tipo HEPA son aún más densos, y están pensados para equipos con motores muy potentes, no para un split.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "activated carbon filter air"
+   },
+   {
+    "k": "G",
+    "v": "a black carbon impregnated filter sheet cut to size on a table"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un split casero no tiene la fuerza para empujar aire a través de eso. Es como querer respirar por un barbijo grueso al correr.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a thick pleated filter and shaking his head, honest"
+   },
+   {
+    "k": "G",
+    "v": "a pleated paper style filter on a table next to a small split air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los ventiladores de un split trabajan con una presión muy baja. Casi nada de resistencia ya los frena.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small label on an air conditioner indoor unit reading maximum static pressure very low"
+   },
+   {
+    "k": "W",
+    "v": "fan static pressure explanation"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hacé la prueba vos: soplá contra el filtro. Si te cuesta soplar, le va a costar al ventilador del aire.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio blowing air through a thick filter with his mouth to show the resistance, a funny face"
+   },
+   {
+    "k": "G",
+    "v": "a person's face blowing air against a dense foam filter held in front of the mouth"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si te animás con el filtro, hacelo con paciencia: es el mantenimiento más barato y más efectivo que existe para un aire.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cleaning air conditioner hands"
+   },
+   {
+    "k": "G",
+    "v": "a person holding a washed filter to dry in the sun on a balcony"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y los envases prometen muchísimo. Lo que no te dicen es cuánto aire dejan pasar y cómo cambia el trabajo del equipo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "marketing air purifier claims"
+   },
+   {
+    "k": "G",
+    "v": "a package of aftermarket air conditioner filters with a bold claim on the box with a small claim"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antibacteriano, antiviral, con iones, con carbón. Palabras que suenan técnicas, y que no te dicen cuánto aire dejan pasar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "antibacterial claim product box"
+   },
+   {
+    "k": "G",
+    "v": "a filter package with a percentage claim and a leaf icon on a shelf"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba: el mismo aire, la misma habitación, el mismo termostato. Cambio solo el filtro. Y mido dos cosas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio setting up the test: an anemometer in front of the vent and a clamp meter on the power cable, concentrated"
+   },
+   {
+    "k": "G",
+    "v": "a handheld anemometer held in front of the vent of an air conditioner with its display showing a wind speed"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para que sea justo, dejo el equipo prendido quince minutos con cada filtro antes de medir, así se estabiliza.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clean living room test setup with a thermometer on a stool, a clamp meter on the power cable and an anemometer on a tripod"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking the setup and nodding, ready to start"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una, la velocidad del aire que sale, con el anemómetro. Otra, la corriente del compresor, con la pinza.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wind speed anemometer measurement"
+   },
+   {
+    "k": "P",
+    "v": "Claudio reading the anemometer at the vent, writing the value in a notebook"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, con el filtro original, limpio. Ese es el valor de referencia: sin barreras, el aire sale parejo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a notebook table with columns for filter type, air speed and current, partially filled in with pencil"
+   },
+   {
+    "k": "P",
+    "v": "Claudio filling the table with the first row for the original filter"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es el valor de referencia: el aire sale parejo, y la pinza marca una corriente estable. Esto es lo que el fabricante diseñó.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "laboratory test measurement airflow"
+   },
+   {
+    "k": "G",
+    "v": "an anemometer display showing a steady wind speed of a few metres per second at a vent"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la espuma densa, la velocidad del aire que sale cae notablemente. Se siente en la mano: un chorro más flojo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio swapping in the foam filter and reading the anemometer, noticing a drop"
+   },
+   {
+    "k": "G",
+    "v": "an anemometer display showing a lower value than before beside a thick foam filter"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La diferencia no es enorme, pero está: el aire sale más flojo. Y con el tiempo, eso se acumula.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio comparing the two readings in the notebook with his pencil, noticing a ten percent difference"
+   },
+   {
+    "k": "G",
+    "v": "a notebook page with two numbers circled one lower than the other"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la corriente del compresor sube un poco, porque el equipo trabaja más para mantener la temperatura con menos aire.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter showing a slightly higher current than the reference value"
+   },
+   {
+    "k": "W",
+    "v": "electricity current measurement"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el filtro plisado grueso, el chorro de aire casi se corta. Y a los veinte minutos, empezó a formarse escarcha en el panel.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio inserting the thickest pleated filter and the unit struggling, he watches the display with a worried face"
+   },
+   {
+    "k": "G",
+    "v": "an anemometer showing a very low value and a clamp meter showing a higher current"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y se nota hasta en el sonido: el ventilador sube de tono, porque el motor se esfuerza más para mover el aire.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner struggling noise"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the unit with a concerned frown as it changes sound"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La escarcha avanza por el serpentín. Y un serpentín con hielo no enfría: bloquea el aire todavía más.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "frost slowly appearing on the front of an air conditioner coil seen through the open panel with a flashlight",
+    "motion": "the white frost creeps over the metal fins"
+   },
+   {
+    "k": "W",
+    "v": "frost forming on coil"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo apagué en ese momento. Un aire con hielo no se deja trabajando: se apaga, se descongela y se saca el filtro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio switching off the unit immediately and letting it defrost, looking at the camera honestly"
+   },
+   {
+    "k": "W",
+    "v": "switching off appliance"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El hielo se derrite, y el agua baja a la bandeja. Si el desagüe está tapado, rebalsa por el frente y gotea al piso.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "water droplets forming and dripping from the melting frost on the coil of an air conditioner",
+    "motion": "drops of water fall from the frost steadily"
+   },
+   {
+    "k": "G",
+    "v": "a drain tray filling with melted ice water under an air conditioner coil"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuando el serpentín se congela, el gas puede volver líquido al compresor. Y un compresor no está hecho para comprimir líquido.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "compressor liquid slugging refrigerant"
+   },
+   {
+    "k": "G",
+    "v": "a diagram of liquid refrigerant returning to a compressor with a warning icon"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El gas tiene que llegar al compresor como gas. Si llega mezclado con gotas líquidas, el compresor sufre un golpe en cada vuelta.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigeration cycle diagram"
+   },
+   {
+    "k": "G",
+    "v": "a diagram showing the refrigerant cycle with a note: gas should arrive as gas at the compressor"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Eso es lo que lo rompe: un golpe de líquido. Y no se ve hasta que un día el aire no arranca más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio tapping a diagram of the compressor on the wall and explaining"
+   },
+   {
+    "k": "G",
+    "v": "a simplified drawing of a compressor with liquid droplets labeled danger"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un compresor nuevo es la reparación más cara de un aire. A veces más cara que el equipo entero.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician replacing compressor expensive"
+   },
+   {
+    "k": "G",
+    "v": "a technician holding a heavy compressor removed from an outdoor unit beside a toolbox"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Todo por un filtro que prometía aire más limpio. Y que se pagó con el equipo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with an honest and slightly worried expression"
+   },
+   {
+    "k": "G",
+    "v": "a repair quote with the word compressor and a high number, on a table"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y lo peor es que no hay garantía que lo cubra: si el técnico ve el filtro modificado, la reparación es por cuenta tuya.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera calmly with a patient expression"
+   },
+   {
+    "k": "W",
+    "v": "honest repair technician"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La solución es simple: usar el filtro original, limpio. Y mantenerlo limpio, que es lo más importante.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio relaxed in a living room holding the original filter, reassuring"
+   },
+   {
+    "k": "G",
+    "v": "a clean original filter next to a bowl of soapy water on a bathroom counter"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si buscás un repuesto, llevá el modelo del equipo, o una foto de la etiqueta. Y comparalo con el que traés.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a filter packaging with the model number of the air conditioner printed and a barcode"
+   },
+   {
+    "k": "W",
+    "v": "spare parts original"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lavado con agua tibia y jabón cada mes en verano, y seco antes de ponerlo. Eso ya hace casi todo el trabajo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washing filter water"
+   },
+   {
+    "k": "A",
+    "v": "an original mesh filter being washed under water and the dust rinsing off",
+    "motion": "the water streams through the mesh and the dust washes away"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si se rompió, comprá el repuesto de tu modelo, con las mismas medidas y la misma malla. Un par de pesos, nada más.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a spare original filter set bought in a shop with the exact model number printed on the packaging"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing a replacement filter with the model number printed on it"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y entre lavados, en pleno verano, pasale un cepillo suave o una aspiradora: es lo que mantiene el aire fluyendo parejo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "soft brush dusting filter"
+   },
+   {
+    "k": "P",
+    "v": "Claudio dusting an original filter with a soft brush before washing it, patient"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Y si tenés alergia y querés aire más limpio? Hay mejores caminos que forzar el aire con un filtro denso.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with an understanding face, hands on a table"
+   },
+   {
+    "k": "W",
+    "v": "allergy sufferer home"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un purificador de aire aparte, con su propio ventilador, filtra el aire de la habitación sin pelear con el aire acondicionado.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small standalone air purifier on a living room floor in a corner"
+   },
+   {
+    "k": "W",
+    "v": "air purifier home"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay modelos con medidor de partículas, y con ellos ves si realmente mejora el aire. Es una inversión aparte, y no toca tu equipo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the display of an air purifier showing particles per cubic metre and a green status"
+   },
+   {
+    "k": "W",
+    "v": "room air quality monitor"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada uno hace lo suyo: el aire enfría, el purificador filtra. Y los dos respiran sin esfuerzo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at an air purifier and the air conditioner, showing they are separate devices"
+   },
+   {
+    "k": "G",
+    "v": "a living room with an air purifier and an air conditioner working at the same time in separate corners"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Además, aspirar seguido, limpiar las cortinas y los rincones, baja el polvo que llega al filtro desde antes.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "vacuum cleaner filter dust cleaning"
+   },
+   {
+    "k": "P",
+    "v": "Claudio vacuuming the floor and the filter area gently, cleaning routine"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cómo saber si tu filtro está estrangulando el aire. Uno, el chorro de aire que sale es más débil de lo que era.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting warning signs on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a list on a whiteboard of four warning signs of a restricted air filter"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pegá una cinta liviana frente a la salida: si apenas se mueve, hay restricción. Eso te lo mide cualquiera en casa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a thin ribbon hanging in front of a vent barely moving"
+   },
+   {
+    "k": "W",
+    "v": "weak air flow vent"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Dos, escarcha en las cañerías o en el panel, aunque no sea un día extremo. Tres, el equipo hace más ruido, o trabaja sin parar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "ice on pipe copper outdoor"
+   },
+   {
+    "k": "G",
+    "v": "a cold copper pipe sweating droplets and a patch of frost near the outdoor valve"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuatro, una factura de luz más alta de lo normal sin que hayas cambiado nada. Todas esas señales apuntan a falta de aire.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio listening near the air conditioner with a puzzled look"
+   },
+   {
+    "k": "W",
+    "v": "noisy air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Te cuento un caso real. Una señora me llamó porque el aire goteaba y no enfriaba. Había comprado un filtro de carbón por internet.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio recalling a client visit with a thoughtful expression, hands on a table"
+   },
+   {
+    "k": "W",
+    "v": "technician remembering client"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El piso mojado, el serpentín con hielo, y un filtro negro que casi no dejaba pasar luz. Lo saqué, y en media hora el aire volvió a funcionar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a living room with a puddle on the floor under an air conditioner and a bucket catching drops"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking up at a dripping air conditioner with a frown"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No hizo falta repuesto ni gas: era el filtro. Esa visita me pagó cuarenta minutos, y a ella le ahorró un compresor.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "happy customer thanks"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling at the camera with the old filter in his hand"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la pinza lo confirmás: si la corriente supera la de la etiqueta, el equipo está forzado, y algo lo está frenando.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter reading higher than the nameplate current in summer"
+   },
+   {
+    "k": "P",
+    "v": "Claudio comparing the clamp meter reading with the nameplate, serious"
+   }
+  ]
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si recordás una sola cosa: menos aire significa más hielo y más corriente. Todo lo demás son detalles.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a whiteboard with a simple formula: lower airflow equals more ice and more current"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping the whiteboard formula with a marker, serious"
+   }
+  ]
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La corriente nominal es la que está en la etiqueta del equipo. Con el aire estabilizado, la pinza tiene que marcar igual o menos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "electric current clamp meter reading"
+   },
+   {
+    "k": "G",
+    "v": "a nameplate showing the rated current of an air conditioner written in amperes"
+   }
+  ]
+ },
+ {
+  "id": "b067",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Algunas preguntas. ¿Y si mi filtro original está roto? Se cambia. Un filtro roto deja pasar pelusas, y esas ensucian el serpentín.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio answering questions to the camera on the sofa, relaxed"
+   },
+   {
+    "k": "W",
+    "v": "person answering questions living room"
+   }
+  ]
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una que me llegó por comentarios: ¿puedo lavar el filtro en el lavavajillas? No: el agua caliente y el detergente lo deforman.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "person typing question comments"
+   },
+   {
+    "k": "G",
+    "v": "a comment on a phone screen asking if the filter can be washed in a dishwasher with a thinking emoji"
+   }
+  ]
+ },
+ {
+  "id": "b069",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ya vi filtros alabeados que no encajan: dejan pasar aire por los costados y de nada sirve que estén limpios.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head with a smile while holding a filter"
+   },
+   {
+    "k": "G",
+    "v": "a deformed warped plastic filter next to a normal one on a table"
+   }
+  ]
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tenés mascotas, la pelusa y el pelo llegan al serpentín enseguida, y ahí el filtro tiene que ser aún más prolijo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a handful of lint and pet hair stuck on the coil fins of an indoor unit"
+   },
+   {
+    "k": "W",
+    "v": "pet hair air conditioner coil"
+   }
+  ]
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con perros o gatos, limpiá el filtro cada dos semanas. Es mucho más fácil que desarmar el equipo para limpiarlo por adentro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio petting a dog on the floor and looking at the air conditioner with a knowing smile"
+   },
+   {
+    "k": "W",
+    "v": "dog in living room"
+   }
+  ]
+ },
+ {
+  "id": "b072",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la malla rota, el polvo se mete en el serpentín, y esa suciedad es la que te obliga a una limpieza profunda cara.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a torn original filter with its mesh frayed at one side held up to the camera"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing the torn filter and shaking his head"
+   }
+  ]
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Se puede cortar espuma de filtro a medida? Sí, pero con una espuma abierta y fina, que deje pasar el aire casi sin esfuerzo. No densa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "diy cut filter foam sheet"
+   },
+   {
+    "k": "G",
+    "v": "a sheet of foam filter material cut with scissors on a table next to a ruler"
+   }
+  ]
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si no sabés, comparalo con el original: tiene que verse casi igual de abierto, o se queda afuera.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a roll of thick foam"
+   },
+   {
+    "k": "G",
+    "v": "a roll of thick dense foam with a red cross drawn over it"
+   }
+  ]
+ },
+ {
+  "id": "b075",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y en aires centrales por conductos, el problema es parecido: filtros muy densos aumentan la presión y gastan el motor.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "central air conditioning ducted filter"
+   },
+   {
+    "k": "G",
+    "v": "a large rectangular ducted air conditioner filter slot in a ceiling vent with a thin filter inside"
+   }
+  ]
+ },
+ {
+  "id": "b076",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En una casa con ductos, el filtro del retorno es el que manda. Cada tres meses, como mínimo, y el tamaño que indica el fabricante.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air duct return grille filter"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at a large return grille on a ceiling and removing its filter"
+   }
+  ]
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y fijate en la flecha del filtro: indica el sentido del aire. Puesto al revés, no filtra bien y se rompe antes.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a large rectangular filter being slid into a slot beside a duct showing arrows for the airflow direction"
+   },
+   {
+    "k": "W",
+    "v": "duct filter airflow arrow"
+   }
+  ]
+ },
+ {
+  "id": "b078",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada equipo tiene un límite. Y el manual lo dice, aunque casi nadie lo lee. Ahí está la información que importa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with an apologetic tone"
+   },
+   {
+    "k": "W",
+    "v": "technician advice"
+   }
+  ]
+ },
+ {
+  "id": "b079",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si tenés dudas, el manual del equipo trae una página sobre el filtro: qué tipo usar, cada cuánto limpiarlo, y cómo reemplazarlo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner manual page"
+   },
+   {
+    "k": "P",
+    "v": "Claudio flipping through a manual and finding the page about the filter"
+   }
+  ]
+ },
+ {
+  "id": "b080",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres cosas. Usá el filtro original. Lavalo una vez por mes. Y no agregues filtros densos nunca.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio showing the clean original filter and counting three points on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three lines: use the original filter, wash it monthly, never add dense filters"
+   }
+  ]
+ },
+ {
+  "id": "b081",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con eso, el aire respira, el compresor vive años, y la factura de luz se queda en su lugar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cool comfortable home air conditioner"
+   },
+   {
+    "k": "P",
+    "v": "Claudio relaxing in the living room with a calm smile, the air conditioner running quietly"
+   }
+  ]
+ },
+ {
+  "id": "b082",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Poné un recordatorio mensual en el celular durante el verano: limpiar filtro. Es el hábito que más vida le da a un aire.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a calendar marked every month in summer with a small filter icon"
+   },
+   {
+    "k": "P",
+    "v": "Claudio writing monthly reminders on a calendar with a marker"
+   }
+  ]
+ },
+ {
+  "id": "b083",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con una alarma, no depende de la memoria. Y ese minuto de trabajo se paga en confort y en plata.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "phone reminder alarm"
+   },
+   {
+    "k": "G",
+    "v": "a phone screen showing a reminder to clean the air conditioner filter on the first of the month"
+   }
+  ]
+ },
+ {
+  "id": "b084",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y hay un beneficio que se ve a fin de mes: un aire que respira bien consume menos, y la factura te lo agradece.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an electricity bill being checked next to a calculator and a smile"
+   },
+   {
+    "k": "W",
+    "v": "saving money electricity bill"
+   }
+  ]
+ },
+ {
+  "id": "b085",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quedate en el canal. En el próximo, las frases que usa el vendedor para encajarte un aire nuevo. Y contame qué filtro estabas usando.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner remote and a clamp meter side by side on a table"
+   }
+  ]
+ }
+]

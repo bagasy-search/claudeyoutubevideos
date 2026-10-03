@@ -1,0 +1,767 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b001.wav",
+  "start": 0.0,
+  "len": 7.5,
+  "text": "Este filtro cuesta casi nada. Y es el que más aires acondicionados rompe cada verano, sin que nadie lo sepa."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b002.wav",
+  "start": 7.5,
+  "len": 7.06,
+  "text": "No es que el filtro sea malo. Es que es demasiado bueno para tu equipo. Y te voy a mostrar qué le hace a la corriente."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b003.wav",
+  "start": 14.56,
+  "len": 8.77,
+  "text": "Hielo en el serpentín, agua en el piso, compresor sufriendo. Todo empieza en un pedazo de espuma que prometía aire más limpio."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b004.wav",
+  "start": 23.33,
+  "len": 7.68,
+  "text": "Con una pinza amperométrica y un anemómetro, medí qué pasa con cada filtro. Los resultados no son los que te cuentan."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b005.wav",
+  "start": 31.01,
+  "len": 7.12,
+  "text": "Ojo: querer aire más limpio es válido. Mucha gente tiene alergia, y usa estos filtros por una buena razón."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b006.wav",
+  "start": 38.13,
+  "len": 6.94,
+  "text": "Pero hay una forma correcta de hacerlo. Y no es agregarle un filtro denso al equipo, que no fue diseñado para eso."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b007.wav",
+  "start": 45.07,
+  "len": 8.44,
+  "text": "Este tema lo vi en decenas de casas. La visita termina igual: el cliente enojado, el aire roto, y un filtro comprado en una oferta."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b008.wav",
+  "start": 53.51,
+  "len": 7.71,
+  "text": "Nadie lo hace de mala fe. Todos quieren aire sano, y los vendedores lo saben, y lo venden como solución mágica."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b009.wav",
+  "start": 61.22,
+  "len": 7.79,
+  "text": "Un aire funciona moviendo aire: entra por arriba, pasa por el filtro, por el serpentín frío, y sale por abajo."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b010.wav",
+  "start": 69.01,
+  "len": 6.96,
+  "text": "Todo el diseño depende de que ese aire pase fácil. Si lo frenás, nada de lo que viene después funciona bien."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b011.wav",
+  "start": 75.97,
+  "len": 8.04,
+  "text": "El ventilador de adentro es un tambor con aletas, que mueve una cantidad de aire fija. No tiene fuerza para vencer una barrera."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b012.wav",
+  "start": 84.01,
+  "len": 6.88,
+  "text": "Podés sentirlo: pegás la mano a la entrada, y el aire te la tira. Esa succión es la que cuida al equipo."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b013.wav",
+  "start": 90.89,
+  "len": 7.91,
+  "text": "El serpentín trabaja como una esponja de frío: necesita mucho aire pasando por sus aletas para llevarse el calor del gas."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b014.wav",
+  "start": 98.8,
+  "len": 9.25,
+  "text": "Con aire suficiente, el serpentín trabaja a unos pocos grados sobre cero. Con poco aire, baja de cero, y el agua que condensa se congela."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b015.wav",
+  "start": 108.05,
+  "len": 8.36,
+  "text": "Es la misma física que forma hielo en una botella fría. El agua del aire se pega al metal helado y se congela capa sobre capa."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b016.wav",
+  "start": 116.41,
+  "len": 6.46,
+  "text": "Menos aire, y el serpentín se enfría demasiado. Más frío del que debe. Y ahí viene el hielo."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b017.wav",
+  "start": 122.87,
+  "len": 7.44,
+  "text": "Estos son los tipos que te venden. El original de malla, el de espuma, el de tela, el de carbón y el plisado grueso."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b018.wav",
+  "start": 130.31,
+  "len": 8.26,
+  "text": "Los ves en ferreterías, en tiendas online y en cadenas de electrodomésticos. Todos prometen lo mismo: aire más limpio."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b019.wav",
+  "start": 138.57,
+  "len": 7.54,
+  "text": "El de fábrica es una malla fina de plástico. Deja pasar casi todo el aire, y atrapa la pelusa y el polvo gordo."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b020.wav",
+  "start": 146.11,
+  "len": 8.6,
+  "text": "La espuma de repuesto es mucho más densa. Si la mirás a contraluz, casi no pasa luz. Y si no pasa luz, tampoco pasa aire."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b021.wav",
+  "start": 154.71,
+  "len": 8.74,
+  "text": "Los de carbón y los plisados tipo HEPA son aún más densos, y están pensados para equipos con motores muy potentes, no para un split."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b022.wav",
+  "start": 163.45,
+  "len": 7.83,
+  "text": "Un split casero no tiene la fuerza para empujar aire a través de eso. Es como querer respirar por un barbijo grueso al correr."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b023.wav",
+  "start": 171.28,
+  "len": 6.93,
+  "text": "Los ventiladores de un split trabajan con una presión muy baja. Casi nada de resistencia ya los frena."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b024.wav",
+  "start": 178.21,
+  "len": 6.51,
+  "text": "Hacé la prueba vos: soplá contra el filtro. Si te cuesta soplar, le va a costar al ventilador del aire."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b025.wav",
+  "start": 184.72,
+  "len": 7.66,
+  "text": "Y si te animás con el filtro, hacelo con paciencia: es el mantenimiento más barato y más efectivo que existe para un aire."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b026.wav",
+  "start": 192.38,
+  "len": 8.26,
+  "text": "Y los envases prometen muchísimo. Lo que no te dicen es cuánto aire dejan pasar y cómo cambia el trabajo del equipo."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b027.wav",
+  "start": 200.64,
+  "len": 8.57,
+  "text": "Antibacteriano, antiviral, con iones, con carbón. Palabras que suenan técnicas, y que no te dicen cuánto aire dejan pasar."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b028.wav",
+  "start": 209.21,
+  "len": 8.23,
+  "text": "La prueba: el mismo aire, la misma habitación, el mismo termostato. Cambio solo el filtro. Y mido dos cosas."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b029.wav",
+  "start": 217.44,
+  "len": 7.53,
+  "text": "Para que sea justo, dejo el equipo prendido quince minutos con cada filtro antes de medir, así se estabiliza."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b030.wav",
+  "start": 224.97,
+  "len": 7.04,
+  "text": "Una, la velocidad del aire que sale, con el anemómetro. Otra, la corriente del compresor, con la pinza."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b031.wav",
+  "start": 232.01,
+  "len": 7.27,
+  "text": "Primero, con el filtro original, limpio. Ese es el valor de referencia: sin barreras, el aire sale parejo."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b032.wav",
+  "start": 239.28,
+  "len": 7.95,
+  "text": "Es el valor de referencia: el aire sale parejo, y la pinza marca una corriente estable. Esto es lo que el fabricante diseñó."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b033.wav",
+  "start": 247.23,
+  "len": 7.48,
+  "text": "Con la espuma densa, la velocidad del aire que sale cae notablemente. Se siente en la mano: un chorro más flojo."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b034.wav",
+  "start": 254.71,
+  "len": 6.43,
+  "text": "La diferencia no es enorme, pero está: el aire sale más flojo. Y con el tiempo, eso se acumula."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b035.wav",
+  "start": 261.14,
+  "len": 7.33,
+  "text": "Y la corriente del compresor sube un poco, porque el equipo trabaja más para mantener la temperatura con menos aire."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b036.wav",
+  "start": 268.47,
+  "len": 7.63,
+  "text": "Con el filtro plisado grueso, el chorro de aire casi se corta. Y a los veinte minutos, empezó a formarse escarcha en el panel."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b037.wav",
+  "start": 276.1,
+  "len": 7.07,
+  "text": "Y se nota hasta en el sonido: el ventilador sube de tono, porque el motor se esfuerza más para mover el aire."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b038.wav",
+  "start": 283.17,
+  "len": 6.83,
+  "text": "La escarcha avanza por el serpentín. Y un serpentín con hielo no enfría: bloquea el aire todavía más."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b039.wav",
+  "start": 290.0,
+  "len": 8.34,
+  "text": "Lo apagué en ese momento. Un aire con hielo no se deja trabajando: se apaga, se descongela y se saca el filtro."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b040.wav",
+  "start": 298.34,
+  "len": 7.77,
+  "text": "El hielo se derrite, y el agua baja a la bandeja. Si el desagüe está tapado, rebalsa por el frente y gotea al piso."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b041.wav",
+  "start": 306.11,
+  "len": 8.28,
+  "text": "Cuando el serpentín se congela, el gas puede volver líquido al compresor. Y un compresor no está hecho para comprimir líquido."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b042.wav",
+  "start": 314.39,
+  "len": 7.74,
+  "text": "El gas tiene que llegar al compresor como gas. Si llega mezclado con gotas líquidas, el compresor sufre un golpe en cada vuelta."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b043.wav",
+  "start": 322.13,
+  "len": 6.78,
+  "text": "Eso es lo que lo rompe: un golpe de líquido. Y no se ve hasta que un día el aire no arranca más."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b044.wav",
+  "start": 328.91,
+  "len": 5.98,
+  "text": "Y un compresor nuevo es la reparación más cara de un aire. A veces más cara que el equipo entero."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b045.wav",
+  "start": 334.89,
+  "len": 5.05,
+  "text": "Todo por un filtro que prometía aire más limpio. Y que se pagó con el equipo."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b046.wav",
+  "start": 339.94,
+  "len": 7.82,
+  "text": "Y lo peor es que no hay garantía que lo cubra: si el técnico ve el filtro modificado, la reparación es por cuenta tuya."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b047.wav",
+  "start": 347.76,
+  "len": 7.33,
+  "text": "La solución es simple: usar el filtro original, limpio. Y mantenerlo limpio, que es lo más importante."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b048.wav",
+  "start": 355.09,
+  "len": 7.1,
+  "text": "Si buscás un repuesto, llevá el modelo del equipo, o una foto de la etiqueta. Y comparalo con el que traés."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b049.wav",
+  "start": 362.19,
+  "len": 7.76,
+  "text": "Lavado con agua tibia y jabón cada mes en verano, y seco antes de ponerlo. Eso ya hace casi todo el trabajo."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b050.wav",
+  "start": 369.95,
+  "len": 7.52,
+  "text": "Si se rompió, comprá el repuesto de tu modelo, con las mismas medidas y la misma malla. Un par de pesos, nada más."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b051.wav",
+  "start": 377.47,
+  "len": 7.46,
+  "text": "Y entre lavados, en pleno verano, pasale un cepillo suave o una aspiradora: es lo que mantiene el aire fluyendo parejo."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b052.wav",
+  "start": 384.93,
+  "len": 6.9,
+  "text": "¿Y si tenés alergia y querés aire más limpio? Hay mejores caminos que forzar el aire con un filtro denso."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b053.wav",
+  "start": 391.83,
+  "len": 7.87,
+  "text": "Un purificador de aire aparte, con su propio ventilador, filtra el aire de la habitación sin pelear con el aire acondicionado."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b054.wav",
+  "start": 399.7,
+  "len": 8.71,
+  "text": "Hay modelos con medidor de partículas, y con ellos ves si realmente mejora el aire. Es una inversión aparte, y no toca tu equipo."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b055.wav",
+  "start": 408.41,
+  "len": 6.42,
+  "text": "Cada uno hace lo suyo: el aire enfría, el purificador filtra. Y los dos respiran sin esfuerzo."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b056.wav",
+  "start": 414.83,
+  "len": 7.49,
+  "text": "Además, aspirar seguido, limpiar las cortinas y los rincones, baja el polvo que llega al filtro desde antes."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b057.wav",
+  "start": 422.32,
+  "len": 7.92,
+  "text": "Cómo saber si tu filtro está estrangulando el aire. Uno, el chorro de aire que sale es más débil de lo que era."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b058.wav",
+  "start": 430.24,
+  "len": 6.93,
+  "text": "Pegá una cinta liviana frente a la salida: si apenas se mueve, hay restricción. Eso te lo mide cualquiera en casa."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b059.wav",
+  "start": 437.17,
+  "len": 8.82,
+  "text": "Dos, escarcha en las cañerías o en el panel, aunque no sea un día extremo. Tres, el equipo hace más ruido, o trabaja sin parar."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b060.wav",
+  "start": 445.99,
+  "len": 7.82,
+  "text": "Cuatro, una factura de luz más alta de lo normal sin que hayas cambiado nada. Todas esas señales apuntan a falta de aire."
+ },
+ {
+  "beat": "b061",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b061.wav",
+  "start": 453.81,
+  "len": 8.35,
+  "text": "Te cuento un caso real. Una señora me llamó porque el aire goteaba y no enfriaba. Había comprado un filtro de carbón por internet."
+ },
+ {
+  "beat": "b062",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b062.wav",
+  "start": 462.16,
+  "len": 9.89,
+  "text": "El piso mojado, el serpentín con hielo, y un filtro negro que casi no dejaba pasar luz. Lo saqué, y en media hora el aire volvió a funcionar."
+ },
+ {
+  "beat": "b063",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b063.wav",
+  "start": 472.05,
+  "len": 8.12,
+  "text": "No hizo falta repuesto ni gas: era el filtro. Esa visita me pagó cuarenta minutos, y a ella le ahorró un compresor."
+ },
+ {
+  "beat": "b064",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b064.wav",
+  "start": 480.17,
+  "len": 7.84,
+  "text": "Con la pinza lo confirmás: si la corriente supera la de la etiqueta, el equipo está forzado, y algo lo está frenando."
+ },
+ {
+  "beat": "b065",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b065.wav",
+  "start": 488.01,
+  "len": 7.79,
+  "text": "Si recordás una sola cosa: menos aire significa más hielo y más corriente. Todo lo demás son detalles."
+ },
+ {
+  "beat": "b066",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b066.wav",
+  "start": 495.8,
+  "len": 8.11,
+  "text": "La corriente nominal es la que está en la etiqueta del equipo. Con el aire estabilizado, la pinza tiene que marcar igual o menos."
+ },
+ {
+  "beat": "b067",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b067.wav",
+  "start": 503.91,
+  "len": 9.62,
+  "text": "Algunas preguntas. ¿Y si mi filtro original está roto? Se cambia. Un filtro roto deja pasar pelusas, y esas ensucian el serpentín."
+ },
+ {
+  "beat": "b068",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b068.wav",
+  "start": 513.53,
+  "len": 8.62,
+  "text": "Una que me llegó por comentarios: ¿puedo lavar el filtro en el lavavajillas? No: el agua caliente y el detergente lo deforman."
+ },
+ {
+  "beat": "b069",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b069.wav",
+  "start": 522.15,
+  "len": 7.48,
+  "text": "Ya vi filtros alabeados que no encajan: dejan pasar aire por los costados y de nada sirve que estén limpios."
+ },
+ {
+  "beat": "b070",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b070.wav",
+  "start": 529.63,
+  "len": 8.38,
+  "text": "Si tenés mascotas, la pelusa y el pelo llegan al serpentín enseguida, y ahí el filtro tiene que ser aún más prolijo."
+ },
+ {
+  "beat": "b071",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b071.wav",
+  "start": 538.01,
+  "len": 8.42,
+  "text": "Con perros o gatos, limpiá el filtro cada dos semanas. Es mucho más fácil que desarmar el equipo para limpiarlo por adentro."
+ },
+ {
+  "beat": "b072",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b072.wav",
+  "start": 546.43,
+  "len": 7.59,
+  "text": "Con la malla rota, el polvo se mete en el serpentín, y esa suciedad es la que te obliga a una limpieza profunda cara."
+ },
+ {
+  "beat": "b073",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b073.wav",
+  "start": 554.02,
+  "len": 9.31,
+  "text": "¿Se puede cortar espuma de filtro a medida? Sí, pero con una espuma abierta y fina, que deje pasar el aire casi sin esfuerzo. No densa."
+ },
+ {
+  "beat": "b074",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b074.wav",
+  "start": 563.33,
+  "len": 6.14,
+  "text": "Si no sabés, comparalo con el original: tiene que verse casi igual de abierto, o se queda afuera."
+ },
+ {
+  "beat": "b075",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b075.wav",
+  "start": 569.47,
+  "len": 8.4,
+  "text": "Y en aires centrales por conductos, el problema es parecido: filtros muy densos aumentan la presión y gastan el motor."
+ },
+ {
+  "beat": "b076",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b076.wav",
+  "start": 577.87,
+  "len": 8.63,
+  "text": "En una casa con ductos, el filtro del retorno es el que manda. Cada tres meses, como mínimo, y el tamaño que indica el fabricante."
+ },
+ {
+  "beat": "b077",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b077.wav",
+  "start": 586.5,
+  "len": 7.99,
+  "text": "Y fijate en la flecha del filtro: indica el sentido del aire. Puesto al revés, no filtra bien y se rompe antes."
+ },
+ {
+  "beat": "b078",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b078.wav",
+  "start": 594.49,
+  "len": 7.02,
+  "text": "Cada equipo tiene un límite. Y el manual lo dice, aunque casi nadie lo lee. Ahí está la información que importa."
+ },
+ {
+  "beat": "b079",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b079.wav",
+  "start": 601.51,
+  "len": 9.08,
+  "text": "Y si tenés dudas, el manual del equipo trae una página sobre el filtro: qué tipo usar, cada cuánto limpiarlo, y cómo reemplazarlo."
+ },
+ {
+  "beat": "b080",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b080.wav",
+  "start": 610.59,
+  "len": 6.45,
+  "text": "Tres cosas. Usá el filtro original. Lavalo una vez por mes. Y no agregues filtros densos nunca."
+ },
+ {
+  "beat": "b081",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b081.wav",
+  "start": 617.04,
+  "len": 6.78,
+  "text": "Con eso, el aire respira, el compresor vive años, y la factura de luz se queda en su lugar."
+ },
+ {
+  "beat": "b082",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b082.wav",
+  "start": 623.82,
+  "len": 7.41,
+  "text": "Poné un recordatorio mensual en el celular durante el verano: limpiar filtro. Es el hábito que más vida le da a un aire."
+ },
+ {
+  "beat": "b083",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b083.wav",
+  "start": 631.23,
+  "len": 6.05,
+  "text": "Con una alarma, no depende de la memoria. Y ese minuto de trabajo se paga en confort y en plata."
+ },
+ {
+  "beat": "b084",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b084.wav",
+  "start": 637.28,
+  "len": 7.45,
+  "text": "Y hay un beneficio que se ve a fin de mes: un aire que respira bien consume menos, y la factura te lo agradece."
+ },
+ {
+  "beat": "b085",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzfiltro/out/pzfiltro/tramos/b085.wav",
+  "start": 644.73,
+  "len": 9.03,
+  "text": "Si te sirvió, quedate en el canal. En el próximo, las frases que usa el vendedor para encajarte un aire nuevo. Y contame qué filtro estabas usando."
+ }
+]
