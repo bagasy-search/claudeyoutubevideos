@@ -8,9 +8,9 @@ export const SHOTS = [
   // ── MINUTO 1
   S(0, "", "vl", "m1"),
   S(0, "A little black sewing machine on a card table", "bi", "b_cardtable", { p: BI(`In ${GARAGE.split(":")[0]}: ${MACHINE_CELERY} on a folding card table between a crock pot and a box of Christmas lights, a strip of masking tape on the case with $40 written in black marker.`), anim: "a breeze lifts the corner of the masking tape" }),
-  S(0, "sitting in a scuffed case", "st", "st_sewingmachine.5"),
+  S(0, "sitting in a scuffed case", "st", "st_antique.7"),
   S(0, "The lady running the sale said", "bi", "b_lady", { p: BI(`${LADY} sitting in a folding lawn chair at the entrance of ${GARAGE.split(":")[0]}, a cash box on her lap, smiling and pointing toward the card tables.`), anim: "the woman points toward the tables and smiles" }),
-  S(0, "Forty dollars and it's yours", "st", "st_garagesale.1"),
+  S(0, "Forty dollars and it's yours", "st", "st_antique.5"),
   S(1, "", "av", "av"),
   S(1, "I told her to take the tape off", "vl", "m2"),
   S(1, "and read the number stamped into the metal", "bi", "b_tilt", { p: BI(`Close view: an older woman's hands with a thin silver ring tipping ${MACHINE_CELERY.replace("sitting on the open base of its carrying case", "")} toward the morning light on a card table, the metal bed of the machine showing a stamped serial number.`), anim: "the hands tip the machine toward the light" }),
