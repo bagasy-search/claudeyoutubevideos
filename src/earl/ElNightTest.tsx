@@ -1,8 +1,8 @@
-// prueba local de ElNight (reloj, cascada, excluidor 3D)
+// prueba local de componentes nuevos de Earl
 import React from "react";
 import { AbsoluteFill, Sequence } from "remotion";
-import { ElNightClock, ElMoneyFall, ElTED3D } from "./ElNight";
+import { ElMercuryLadder } from "./ElMercury";
 const D = 150;
-const ITEMS = [<ElNightClock from="3:30 pm" to="7:00 am" label="headed home" />, <ElMoneyFall start={{ label: "1,200 lb at the dock", amount: 4200 }} minus={[{ label: "fuel", amount: 1050 }, { label: "ice", amount: 200 }, { label: "groceries, nets, repairs", amount: 250 }, { label: "two strikers' shares", amount: 1300 }]} every={15} />, <ElTED3D />];
+const ITEMS = [<ElMercuryLadder fish={[{ name: "shrimp", len: 0.02, drops: 1 }, { name: "flounder", len: 0.2, drops: 1 }, { name: "Spanish mackerel", len: 0.35, drops: 2 }, { name: "king mackerel", len: 0.6, drops: 5 }, { name: "shark", len: 0.85, drops: 6 }]} every={18} flagFrom={3} />];
 export const NIGHT_TEST_FRAMES = ITEMS.length * D;
 export const ElNightTest: React.FC = () => <AbsoluteFill>{ITEMS.map((el, i) => <Sequence key={i} from={i * D} durationInFrames={D}>{el}</Sequence>)}</AbsoluteFill>;
