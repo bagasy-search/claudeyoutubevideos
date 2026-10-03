@@ -1,56 +1,28 @@
-// DoorHandleTest.tsx — LA PRUEBA DE LA MANIJA (canal Ray Kessler, rkkeyless).
+// DoorHandleTest.tsx — LA PRUEBA DE LA MANIJA, SOBRE LAS FOTOS REALES (canal Ray Kessler, rkkeyless v2).
 //
-// La manija de la puerta del auto en primer plano. La llave entra en la bolsa/lata (se pliega la tapa),
-// la mano tira de la manija y el resultado se escribe:
-//   · result="pass" — la puerta NO se mueve, candado verde: "STAYS LOCKED".
-//   · result="fail" — la puerta se despega 1 cm y el candado se abre en rojo: "IT LEAKS".
-//   · result="both" — primero falla con la bolsa gastada y después pasa con la lata (comparación).
-// ⛔ Coreografía en FRACCIONES de la duración; ≤12 palabras de texto.
+// v2 (3-oct, "componentes flojos"): la foto real de la bolsa / la lata (`bgFail`, `bgPass`) llena el
+// cuadro con empuje de cámara; un anillo marca el objeto (`at`), una flecha de tirón late, y el
+// veredicto cae como SELLO de goma sobre la escena: IT LEAKS (rojo) / STAYS LOCKED (verde).
+//   · result="both" — pantalla partida que se abre como una puerta: izquierda falla, derecha pasa.
+// ⛔ Coreografía en FRACCIONES de la duración; ≤12 palabras.
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { V, F_DISPLAY, F_BODY, rgba, clamp01, PhotoBed, Keyring } from "./RayStage";
+import { V, F_DISPLAY, F_BODY, clamp01 } from "./RayStage";
+import { WorldBed, Pulse, Stamp, Tag } from "./WorldBed";
 
 const ease = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const, easing: Easing.inOut(Easing.cubic) };
 
-const Prueba: React.FC<{ t: number; ok: boolean; label: string; x: number; w: number }> = ({ t, ok, label, x, w }) => {
-  const enBolsa = interpolate(t, [0.05, 0.3], [0, 1], ease);   // la llave baja a la bolsa
-  const tapa = interpolate(t, [0.3, 0.42], [0, 1], ease);       // se cierra la tapa
-  const tiron = interpolate(t, [0.48, 0.62], [0, 1], ease);     // la mano tira
-  const veredicto = interpolate(t, [0.66, 0.78], [0, 1], ease);
-  const abre = !ok ? tiron * veredicto : 0;
-  const cx = x + w / 2;
+const Lado: React.FC<{ t: number; ok: boolean; bg?: string; at: [number, number]; label: string; D: number }> = ({ t, ok, bg, at, label, D }) => {
+  const ring = interpolate(t, [0.1, 0.25], [0, 1], ease);
+  const sello = clamp01((t - 0.55) / 0.12);
+  const col = ok ? V.ok : V.dangerSoft;
   return (
-    <>
-      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
-        {/* panel de la puerta */}
-        <rect x={x + 30} y={200} width={w - 60} height={520} rx={26} fill={V.ink2} stroke={V.bone} strokeWidth={4} transform={`translate(${abre * 26} 0)`} />
-        <line x1={x + 30} y1={200} x2={x + 30} y2={720} stroke={abre > 0.1 ? V.dangerSoft : rgba(V.bone, 0.4)} strokeWidth={abre > 0.1 ? 8 : 3} />
-        {/* manija */}
-        <g transform={`translate(${cx + abre * 26} 360)`}>
-          <rect x={-120} y={-26} width={240} height={52} rx={26} fill={V.steel} stroke={V.white} strokeWidth={3} />
-          <rect x={-110} y={-14 + tiron * 10} width={220} height={28} rx={14} fill="#B9B9C0" />
-        </g>
-        {/* bolsa/lata */}
-        <g transform={`translate(${cx} 560)`}>
-          <rect x={-90} y={-60} width={180} height={140} rx={ok ? 10 : 22} fill={ok ? "#9EA3A8" : "#3B3D44"} stroke={V.bone} strokeWidth={3} />
-          {!ok ? <path d="M -60 70 L -40 50 L -20 70" stroke={V.dangerSoft} strokeWidth={4} fill="none" /> : null}
-          <rect x={-94} y={-62 - (1 - tapa) * 40} width={188} height={20} rx={6} fill={ok ? "#B9BEC3" : "#4A4C54"} transform={`rotate(${(1 - tapa) * -18})`} />
-          {/* la llave bajando */}
-          <g transform={`translate(0 ${-200 + enBolsa * 190})`} opacity={1 - tapa * 0.85}>
-            <rect x={-20} y={-30} width={40} height={60} rx={12} fill="#2B2B30" stroke={V.brassSoft} strokeWidth={3} />
-          </g>
-        </g>
-        {/* candado del resultado */}
-        <g transform={`translate(${cx} 160)`} opacity={veredicto}>
-          <path d={ok ? "M -14 -6 L -14 -26 Q -14 -42 0 -42 Q 14 -42 14 -26 L 14 -6" : "M -14 -6 L -14 -30 Q -14 -46 2 -46 Q 18 -46 18 -36"} stroke={ok ? V.ok : V.dangerSoft} strokeWidth={6} fill="none" />
-          <rect x={-22} y={-8} width={44} height={34} rx={6} fill={ok ? V.ok : V.danger} />
-        </g>
-      </svg>
-      <div style={{ position: "absolute", left: x, width: w, top: 760, textAlign: "center", fontFamily: F_BODY, fontSize: 30, color: V.bone, opacity: clamp01(t * 6) }}>{label}</div>
-      <div style={{ position: "absolute", left: x, width: w, top: 820, textAlign: "center", opacity: veredicto, transform: `translateY(${(1 - veredicto) * 16}px)`, fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 56, letterSpacing: 2, color: ok ? V.ok : V.dangerSoft }}>
-        {ok ? "STAYS LOCKED" : "IT LEAKS"}
-      </div>
-    </>
+    <AbsoluteFill>
+      <WorldBed src={bg} push={0.16} fx={at[0]} fy={at[1]} dim={0.1} durationInFrames={D} />
+      <Pulse x={at[0]} y={at[1]} color={sello > 0 ? col : V.brassSoft} t={ring} r={170} on={ring} />
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 150, textAlign: "center", fontFamily: F_BODY, fontWeight: 700, fontSize: 40, color: V.white, opacity: ring, textShadow: "0 3px 16px rgba(0,0,0,.95)" }}>{label}</div>
+      <Stamp text={ok ? "STAYS LOCKED" : "IT LEAKS"} color={col} p={sello} x={50} y={72} size={96} rot={ok ? -6 : 7} />
+    </AbsoluteFill>
   );
 };
 
@@ -58,31 +30,40 @@ export const DoorHandleTest: React.FC<{
   result?: "pass" | "fail" | "both";
   kicker?: string;
   title?: string;
+  bgFail?: string;
+  bgPass?: string;
+  atFail?: [number, number];
+  atPass?: [number, number];
   bed?: string;
   durationInFrames?: number;
-}> = ({ result = "both", kicker = "THE ONLY TEST THAT MATTERS", title = "Pull the handle", bed, durationInFrames }) => {
+}> = ({ result = "both", kicker = "THE ONLY TEST THAT MATTERS", title = "Pull the handle", bgFail, bgPass, atFail = [47, 77], atPass = [63, 65], durationInFrames }) => {
   const frame = useCurrentFrame();
   const { durationInFrames: seqDur } = useVideoConfig();
   const D = Math.max(30, durationInFrames ?? seqDur);
   const t = frame / D;
-  const head = interpolate(t, [0, 0.06], [0, 1], ease);
+  const tag = interpolate(t, [0, 0.07], [0, 1], ease);
+  if (result !== "both") {
+    const ok = result === "pass";
+    return (
+      <AbsoluteFill>
+        <Lado t={t} ok={ok} bg={ok ? bgPass : bgFail} at={ok ? atPass : atFail} label={ok ? "Key in the tin" : "Key in a worn pouch"} D={D} />
+        <Tag kicker={kicker} title={title} a={tag} />
+      </AbsoluteFill>
+    );
+  }
+  // pantalla partida: el divisor entra barriendo y cada lado corre su prueba desfasada
+  const corte = interpolate(t, [0.02, 0.14], [100, 50], ease);
   return (
-    <AbsoluteFill style={{ backgroundColor: V.ink0, overflow: "hidden" }}>
-      <PhotoBed src={bed} dim={0.86} />
-      <div style={{ position: "absolute", left: 96, top: 60, opacity: head }}>
-        <div style={{ fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 28, letterSpacing: 3.4, color: V.brass }}>{kicker}</div>
-        <div style={{ fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 60, color: V.white, marginTop: 4 }}>{title}</div>
-      </div>
-      {result === "both" ? (
-        <>
-          <Prueba t={clamp01(t / 0.95)} ok={false} label="Worn-out pouch" x={160} w={760} />
-          <div style={{ position: "absolute", left: 958, top: 210, width: 4, height: 680, background: rgba(V.bone, 0.25) }} />
-          <Prueba t={clamp01((t - 0.04) / 0.95)} ok label="Old cookie tin" x={1000} w={760} />
-        </>
-      ) : (
-        <Prueba t={t} ok={result === "pass"} label={result === "pass" ? "Key in the tin" : "Key in the pouch"} x={560} w={800} />
-      )}
-      <div style={{ position: "absolute", right: "4.5%", bottom: "4%", opacity: 0.85 }}><Keyring size={30} /></div>
+    <AbsoluteFill>
+      <AbsoluteFill style={{ clipPath: `inset(0 ${100 - corte}% 0 0)` }}>
+        <AbsoluteFill style={{ transform: "translateX(-25%)" }}><Lado t={clamp01(t / 0.8)} ok={false} bg={bgFail} at={atFail} label="Worn-out pouch" D={D} /></AbsoluteFill>
+      </AbsoluteFill>
+      <AbsoluteFill style={{ clipPath: `inset(0 0 0 ${corte}%)` }}>
+        <AbsoluteFill style={{ transform: "translateX(25%)" }}><Lado t={clamp01((t - 0.18) / 0.8)} ok bg={bgPass} at={atPass} label="Old cookie tin" D={D} /></AbsoluteFill>
+      </AbsoluteFill>
+      <div style={{ position: "absolute", left: `${corte}%`, top: 0, bottom: 0, width: 6, marginLeft: -3, background: V.brass, boxShadow: "0 0 30px rgba(200,145,47,.7)" }} />
+      <Tag kicker={kicker} title={title} a={tag} />
+      <div style={{ position: "absolute", right: 70, top: 80, fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 30, letterSpacing: 3, color: V.white, opacity: tag, textShadow: "0 3px 14px rgba(0,0,0,.9)" }}>PULL · NOTHING · PASS</div>
     </AbsoluteFill>
   );
 };

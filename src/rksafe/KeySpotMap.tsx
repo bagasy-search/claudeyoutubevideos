@@ -1,14 +1,15 @@
-// KeySpotMap.tsx — DÓNDE DEJAR LA LLAVE EN LA CASA (canal Ray Kessler, rkkeyless).
+// KeySpotMap.tsx — DÓNDE DUERME LA LLAVE, EN LA CASA REAL (canal Ray Kessler, rkkeyless v2).
 //
-// Plano de la casa visto desde arriba, dibujado trazo a trazo. La llave aparece en un lugar y su
-// "alcance" (pocos pies) se expande:
-//   · spot="door"   — el bol junto a la puerta: el alcance SALE de la casa y toca el porche (rojo).
-//   · spot="center" — el medio de la casa / arriba: el alcance queda adentro (verde).
-//   · spot="move"   — empieza en la puerta y la llave se MUDA al centro (la comparación que se transforma).
+// v2 (3-oct, "componentes flojos"): en vez de un plano dibujado sobre negro, dos FOTOS reales.
+//   1) el bol junto a la puerta (`bgDoor`, llave en `atDoor`): su alcance late en ROJO y una lengua de
+//      luz sale por la puerta hacia afuera (`doorAt`) — "reach spills onto the porch".
+//   2) mode="move": la cámara barre (whip) a la mesa de luz del cuarto del medio (`bgSafe`, `atSafe`)
+//      y el alcance late en VERDE, contenido.
 // ⛔ Coreografía en FRACCIONES de la duración.
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { V, F_DISPLAY, F_BODY, rgba, clamp01, PhotoBed, Keyring } from "./RayStage";
+import { V, F_DISPLAY, F_BODY, rgba, clamp01 } from "./RayStage";
+import { WorldBed, Pulse, Stamp, Tag } from "./WorldBed";
 
 const ease = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const, easing: Easing.inOut(Easing.cubic) };
 
@@ -16,49 +17,49 @@ export const KeySpotMap: React.FC<{
   spot?: "door" | "center" | "move";
   kicker?: string;
   verdict?: string;
+  bgDoor?: string;
+  bgSafe?: string;
+  atDoor?: [number, number];
+  doorAt?: [number, number];
+  atSafe?: [number, number];
   bed?: string;
   durationInFrames?: number;
-}> = ({ spot = "move", kicker = "WHERE THE KEY SLEEPS", verdict = "", bed, durationInFrames }) => {
+}> = ({ spot = "move", kicker = "WHERE THE KEY SLEEPS", verdict = "", bgDoor, bgSafe, atDoor = [85, 72], doorAt = [25, 45], atSafe = [49, 52], durationInFrames }) => {
   const frame = useCurrentFrame();
   const { durationInFrames: seqDur } = useVideoConfig();
   const D = Math.max(30, durationInFrames ?? seqDur);
   const t = frame / D;
-  const dibujo = interpolate(t, [0.02, 0.3], [0, 1], ease);
-  const L = 3600; // largo aprox. de los trazos para el dash
-  const puerta = { x: 700, y: 820 }, centro = { x: 1080, y: 480 };
-  const mudanza = spot === "move" ? interpolate(t, [0.55, 0.72], [0, 1], ease) : spot === "center" ? 1 : 0;
-  const kx = puerta.x + (centro.x - puerta.x) * mudanza, ky = puerta.y + (centro.y - puerta.y) * mudanza;
-  const rA = interpolate(t, spot === "move" ? [0.3, 0.45] : [0.3, 0.5], [0, 1], ease);
-  const fuera = mudanza < 0.5;
-  const col = fuera ? V.danger : V.ok;
-  const vA = interpolate(t, [0.82, 0.9], [0, 1], ease);
+  const tag = interpolate(t, [0, 0.07], [0, 1], ease);
+  const whip = spot === "move" ? interpolate(t, [0.5, 0.6], [0, 1], ease) : spot === "center" ? 1 : 0;
+  const tDoor = clamp01(t / 0.5), tSafe = spot === "move" ? clamp01((t - 0.58) / 0.42) : t;
+  const fuga = interpolate(tDoor, [0.35, 0.8], [0, 1], ease);
+  const blurW = Math.sin(whip * Math.PI) * 18;
+  const vA = interpolate(t, [0.84, 0.92], [0, 1], ease);
   return (
-    <AbsoluteFill style={{ backgroundColor: V.ink0, overflow: "hidden" }}>
-      <PhotoBed src={bed} dim={0.88} />
-      <div style={{ position: "absolute", left: 96, top: 60, opacity: clamp01(t * 12), fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 28, letterSpacing: 3.4, color: V.brass }}>{kicker}</div>
-      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
-        {/* paredes exteriores e interiores (plano) */}
-        <path d="M 460 200 L 1460 200 L 1460 860 L 760 860 M 640 860 L 460 860 L 460 200 M 900 200 L 900 560 L 460 560 M 1180 560 L 1460 560 M 900 700 L 900 860"
-          stroke={V.bone} strokeWidth={8} fill="none" strokeDasharray={L} strokeDashoffset={L * (1 - dibujo)} strokeLinecap="square" />
-        {/* porche y vereda */}
-        <rect x={560} y={870} width={280} height={90} fill={rgba(V.bone, 0.08 * dibujo)} stroke={rgba(V.bone, 0.5 * dibujo)} strokeWidth={3} />
-        <text x={700} y={930} textAnchor="middle" fontFamily="Oswald, sans-serif" fontSize={28} fill={rgba(V.bone, dibujo)}>PORCH</text>
-        {/* alcance de la llave */}
-        <circle cx={kx} cy={ky} r={30 + 170 * rA} fill={rgba(col, 0.16 * rA)} stroke={rgba(col, 0.9 * rA)} strokeWidth={4} strokeDasharray="12 10" strokeDashoffset={-frame * 2} />
-        {/* la llave */}
-        <g transform={`translate(${kx} ${ky})`} opacity={clamp01((t - 0.24) * 10)}>
-          <rect x={-18} y={-28} width={36} height={56} rx={12} fill="#2B2B30" stroke={V.brassSoft} strokeWidth={3} />
-          <circle cx={0} cy={-8} r={6} fill={V.brassSoft} />
-        </g>
-      </svg>
-      <div style={{ position: "absolute", left: 1520, top: 380, width: 340, opacity: rA }}>
-        <div style={{ fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 46, color: fuera ? V.dangerSoft : V.ok }}>{fuera ? "BOWL BY THE DOOR" : "MIDDLE OF THE HOUSE"}</div>
-        <div style={{ fontFamily: F_BODY, fontSize: 30, color: V.bone, marginTop: 8 }}>{fuera ? "Reach spills onto the porch" : "Reach stays inside"}</div>
-      </div>
-      {verdict ? (
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 40, textAlign: "center", opacity: vA, fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 50, color: V.white, textShadow: "0 6px 26px rgba(0,0,0,.9)" }}>{verdict}</div>
+    <AbsoluteFill>
+      {whip < 1 ? (
+        <AbsoluteFill style={{ transform: `translateX(${-whip * 100}%)`, filter: `blur(${blurW}px)` }}>
+          <WorldBed src={bgDoor} push={0.12} fx={atDoor[0]} fy={atDoor[1]} dim={0.12} durationInFrames={D} />
+          <Pulse x={atDoor[0]} y={atDoor[1]} color={V.dangerSoft} t={tDoor} r={260} on={clamp01(tDoor * 4)} />
+          <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+            <path d={`M ${atDoor[0] * 19.2} ${atDoor[1] * 10.8} Q ${(atDoor[0] + doorAt[0]) * 9.6} ${(atDoor[1] - 6) * 10.8} ${atDoor[0] * 19.2 + (doorAt[0] - atDoor[0]) * 19.2 * fuga} ${atDoor[1] * 10.8 + (doorAt[1] - atDoor[1]) * 10.8 * fuga}`}
+              stroke={rgba(V.dangerSoft, 0.85)} strokeWidth={10} fill="none" strokeDasharray="22 14" strokeDashoffset={-frame * 5} strokeLinecap="round" />
+          </svg>
+          <div style={{ position: "absolute", left: doorAt[0] * 19.2 - 200, top: doorAt[1] * 10.8 - 120, width: 400, textAlign: "center", opacity: fuga, fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 44, color: V.dangerSoft, textShadow: "0 4px 18px rgba(0,0,0,.95)" }}>REACHES THE PORCH</div>
+          <Stamp text="WORST SPOT" color={V.dangerSoft} p={clamp01((tDoor - 0.6) / 0.15)} x={60} y={30} size={80} rot={-5} />
+        </AbsoluteFill>
       ) : null}
-      <div style={{ position: "absolute", right: "4.5%", bottom: "4%", opacity: 0.85 }}><Keyring size={30} /></div>
+      {whip > 0 ? (
+        <AbsoluteFill style={{ transform: `translateX(${(1 - whip) * 100}%)`, filter: `blur(${blurW}px)` }}>
+          <WorldBed src={bgSafe} push={0.12} fx={atSafe[0]} fy={atSafe[1]} dim={0.1} durationInFrames={D} />
+          <Pulse x={atSafe[0]} y={atSafe[1]} color={V.ok} t={tSafe} r={170} on={clamp01(tSafe * 4)} />
+          <div style={{ position: "absolute", left: atSafe[0] * 19.2 - 260, top: atSafe[1] * 10.8 + 140, width: 520, textAlign: "center", opacity: clamp01(tSafe * 3), fontFamily: F_BODY, fontWeight: 700, fontSize: 38, color: V.white, textShadow: "0 3px 16px rgba(0,0,0,.95)" }}>Middle of the house · reach stays inside</div>
+        </AbsoluteFill>
+      ) : null}
+      <Tag kicker={kicker} a={tag} />
+      {verdict ? (
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 50, textAlign: "center", opacity: vA, fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 56, color: V.white, textShadow: "0 6px 26px rgba(0,0,0,.95)" }}>{verdict}</div>
+      ) : null}
     </AbsoluteFill>
   );
 };
