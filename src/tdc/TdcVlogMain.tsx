@@ -30,7 +30,7 @@ import { TdcSparkWhip } from "./TdcSparkWhip";
 const REG: Record<string, React.FC<any>> = { TdcZoomCircle, TdcHandDraw, TdcBucketRecipe, TdcWallSection, TdcTitleSlam, TdcWipeCompare, TdcWaterTest,
   TdcStepCounter, TdcWarning, TdcTimeSkip, TdcLamina, TdcQrCard, TdcLabel, TdcFlash, TdcStopwatch, TdcScrapTag, TdcCaliper, TdcExploded, TdcSparkWhip };
 
-export type VlogSeg = { key: string; src: string; from: number; dur: number; startFrom: number; rate?: number; freezeAt?: number;
+export type VlogSeg = { key: string; src: string; from: number; dur: number; startFrom: number; rate?: number; freezeAt?: number; filter?: string;
   cam?: { push?: [number, number]; origin?: [number, number]; punches?: { at: number; amount?: number }[]; shakes?: { at: number; amp?: number; len?: number }[]; whipIn?: number; whipOut?: number; whipDir?: 1 | -1 } };
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type VlogOverlay = { key: string; kind: string; from: number; dur: number; props: Record<string, any> };
@@ -43,10 +43,10 @@ export const TdcVlogMain: React.FC<{ data: VlogData }> = ({ data }) => (
         <TdcCamera dur={s.dur} {...(s.cam || {})}>
           {s.freezeAt != null ? (
             <Freeze frame={s.freezeAt}>
-              <OffthreadVideo src={staticFile(s.src)} startFrom={s.startFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <OffthreadVideo src={staticFile(s.src)} startFrom={s.startFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover", filter: s.filter }} />
             </Freeze>
           ) : (
-            <OffthreadVideo src={staticFile(s.src)} startFrom={s.startFrom} playbackRate={s.rate ?? 1} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <OffthreadVideo src={staticFile(s.src)} startFrom={s.startFrom} playbackRate={s.rate ?? 1} muted style={{ width: "100%", height: "100%", objectFit: "cover", filter: s.filter }} />
           )}
         </TdcCamera>
       </Sequence>

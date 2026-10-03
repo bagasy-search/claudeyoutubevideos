@@ -118,10 +118,10 @@ for s in segs:
         for k in range(n):
             d = L if k < n - 1 else s['dur'] - L * (n - 1)
             c = dict(s['cam']) if k == 0 and s.get('cam') else {}
-            if k > 0: c = {'push': [1.22 + 0.05 * (k % 2), 1.26 + 0.05 * (k % 2)], 'origin': _ORG[(k + len(_new)) % 5]}
+            if k > 0: c = {'push': [1.62 + 0.08 * (k % 2), 1.66 + 0.08 * (k % 2)], 'origin': _ORG[(k + len(_new)) % 5]}
             else: c.pop('whipOut', None)
             if k < n - 1: c.pop('whipOut', None)
-            _new.append({**s, 'key': s['key'] + (f'_{k}' if k else ''), 'from': s['from'] + k * L, 'dur': d, 'startFrom': s['startFrom'] + k * L, 'cam': c})
+            _new.append({**s, 'key': s['key'] + (f'_{k}' if k else ''), 'from': s['from'] + k * L, 'dur': d, 'startFrom': s['startFrom'] + k * L, 'cam': c, **({'filter': 'brightness(0.88) contrast(1.12) saturate(1.1)'} if k % 2 else {})})
     else: _new.append(s)
 segs = _new
 # cámara lenta de insertos marcados (se estira el clip; no pasa de su largo)
@@ -151,9 +151,9 @@ ss = sorted(segs, key=lambda x: x['from']); nfl = 0
 for a, b2 in zip(ss, ss[1:]):
     if b2['from'] >= 62 * FPS: break
     if a['src'] == b2['src'] and a['from'] + a['dur'] == b2['from']:
-        overlays.append({'key': f'fl{nfl}', 'kind': 'TdcFlash', 'from': b2['from'] - 1, 'dur': 5, 'props': {'peak': 0.8}}); nfl += 1
-        cam = dict(b2.get('cam') or {}); cam['punches'] = (cam.get('punches') or []) + [{'at': 0, 'amount': 0.14}]; b2['cam'] = cam
-        sfx.append({'t': b2['from'] / FPS - 0.05, 'src': 'sfx/cam_zoom_punch.mp3', 'db': -20})
+        nfl += 1
+        cam = dict(b2.get('cam') or {}); cam['punches'] = []; b2['cam'] = cam
+        sfx.append({'t': b2['from'] / FPS - 0.03, 'src': 'sfx/sfx_thump.mp3', 'db': -32})
 print('destellos de jump-cut en el minuto 1:', nfl)
 
 # ---------- SFX automáticos: whoosh en los cortes de escena del minuto 1, golpe en los insertos del gancho ----------
