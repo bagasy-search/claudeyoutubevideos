@@ -1,0 +1,506 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b001.wav",
+  "start": 0.0,
+  "len": 8.49,
+  "text": "Reparo lavadoras todos los días. Y cuando llegó el momento de comprar una para mi propia casa, elegí algo que te va a sorprender."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b002.wav",
+  "start": 8.49,
+  "len": 7.63,
+  "text": "Soy Claudio. Esta es la que puse en mi casa. No es la más cara, ni la que tiene más funciones. Te explico por qué la elegí."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b003.wav",
+  "start": 16.12,
+  "len": 8.82,
+  "text": "Después de años abriendo lavadoras muertas, aprendí qué cosas las matan, y cuáles hacen que duren. Y eso se resume en cinco criterios."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b004.wav",
+  "start": 24.94,
+  "len": 10.08,
+  "text": "Electrónica simple, piezas accesibles, rodamientos sólidos, buena goma y repuestos disponibles. Si cumple los cinco, puedes dormir tranquilo."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b005.wav",
+  "start": 35.02,
+  "len": 9.99,
+  "text": "Y lo que evité: pantallas táctiles, wifi, vapor, inteligencia artificial. Cada función extra es una pieza más que puede romperse."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b006.wav",
+  "start": 45.01,
+  "len": 9.99,
+  "text": "Y un aviso: no te voy a decir marca ni modelo. Las marcas cambian, y lo que importa son los criterios. Con ellos puedes elegir cualquiera, de cualquier tienda."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b007.wav",
+  "start": 55.0,
+  "len": 9.71,
+  "text": "Primero: electrónica simple. Una perilla y pocos botones. Una placa sencilla falla menos y es más fácil de cambiar o reparar."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b008.wav",
+  "start": 64.71,
+  "len": 9.81,
+  "text": "Mira la diferencia: esta es la placa de una máquina simple, y esta la de una con muchas funciones. La segunda cuesta mucho más y falla más."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b009.wav",
+  "start": 74.52,
+  "len": 9.85,
+  "text": "Y la simple, muchas veces se repara con un par de componentes baratos. La compleja, casi siempre se cambia entera, y el repuesto es caro."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b010.wav",
+  "start": 84.37,
+  "len": 7.75,
+  "text": "Una pantalla táctil rota en una lavadora puede costar casi lo mismo que una lavadora nueva. Yo prefiero perillas."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b011.wav",
+  "start": 92.12,
+  "len": 7.8,
+  "text": "Segundo: piezas accesibles. En algunas lavadoras, para cambiar la bomba hay que desarmar la mitad de la máquina."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b012.wav",
+  "start": 99.92,
+  "len": 8.83,
+  "text": "Esta tiene el filtro de la bomba al frente, y por atrás se llega a todo con cuatro tornillos. Eso reduce el costo de cualquier reparación."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b013.wav",
+  "start": 108.75,
+  "len": 8.24,
+  "text": "Algunas tienen la cuba sellada, sin forma de abrirla. Si un rodamiento falla, hay que cambiar la cuba entera, y no conviene."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b014.wav",
+  "start": 116.99,
+  "len": 8.3,
+  "text": "Yo busco cuba atornillada: se abre, se cambia el rodamiento, y la máquina sigue. Con eso, la vida útil se duplica."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b015.wav",
+  "start": 125.29,
+  "len": 6.94,
+  "text": "Es un detalle que el vendedor no menciona, y se ve en los manuales de servicio, o preguntando a un técnico de confianza."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b016.wav",
+  "start": 132.23,
+  "len": 9.61,
+  "text": "Tercero: tambor y rodamientos. Tambor de acero inoxidable, con paredes firmes, y un eje grueso. Un eje delgado se dobla con el tiempo."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b017.wav",
+  "start": 141.84,
+  "len": 8.94,
+  "text": "Mira el grosor del eje: esta es robusta, y esta se dobla con una carga pesada. No se ve desde afuera, pero se nota en el peso del equipo."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b018.wav",
+  "start": 150.78,
+  "len": 8.97,
+  "text": "Un buen indicio: el peso. Las lavadoras con contrapesos grandes de hormigón vibran menos y duran más. Si pesa poco, desconfía."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b019.wav",
+  "start": 159.75,
+  "len": 8.6,
+  "text": "En la tienda, empuja una lavadora con la mano. Si se mueve mucho, es liviana. Una pesada y firme es más estable en el centrifugado."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b020.wav",
+  "start": 168.35,
+  "len": 7.95,
+  "text": "Cuarto: la goma de la puerta. Tiene que ser gruesa, de buen material, con un canal para que escurra el agua y no se junte moho."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b021.wav",
+  "start": 176.3,
+  "len": 7.47,
+  "text": "Las de pliegues profundos juntan agua y moho. Una goma de diseño simple se limpia fácil, y dura más."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b022.wav",
+  "start": 183.77,
+  "len": 8.15,
+  "text": "Y verifica que la goma sea un repuesto disponible y razonable. Es la pieza que más se cambia, y no debería ser un lujo."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b023.wav",
+  "start": 191.92,
+  "len": 8.26,
+  "text": "Quinto, el más importante: repuestos y servicio. Una lavadora sin repuestos es descartable, aunque sea de buena calidad."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b024.wav",
+  "start": 200.18,
+  "len": 8.36,
+  "text": "Antes de comprar, busca el modelo en tiendas de repuestos: si ves bombas, amortiguadores, gomas y placas, es buena señal."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b025.wav",
+  "start": 208.54,
+  "len": 7.54,
+  "text": "Y fíjate si hay un servicio técnico cerca de tu casa. Un equipo excelente sin servicio local es un dolor de cabeza."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b026.wav",
+  "start": 216.08,
+  "len": 9.43,
+  "text": "Pregunta cuánto tarda en llegar un repuesto. Si dicen tres meses, vete a otra tienda. Una lavadora parada tres meses es un problema real."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b027.wav",
+  "start": 225.51,
+  "len": 9.29,
+  "text": "La capacidad: para una pareja, unos siete kilos. Para una familia de cuatro, entre nueve y diez. Mejor un poco más grande que justa."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b028.wav",
+  "start": 234.8,
+  "len": 6.51,
+  "text": "Una lavadora que trabaja siempre al límite se desgasta mucho más rápido. La holgura es vida útil."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b029.wav",
+  "start": 241.31,
+  "len": 9.39,
+  "text": "Y los programas: con algodón, sintético, delicado y rápido, lavas todo. Una lavadora con cincuenta programas no lava mejor."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b030.wav",
+  "start": 250.7,
+  "len": 6.5,
+  "text": "La mía tiene siete programas, y llevo años sin tocar la mitad. Y nunca me hizo falta nada más."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b031.wav",
+  "start": 257.2,
+  "len": 7.47,
+  "text": "Y cómo la cuido: cada tres meses limpio el filtro de la bomba, y cada mes la goma de la puerta, con un paño."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b032.wav",
+  "start": 264.67,
+  "len": 7.21,
+  "text": "La tengo bien nivelada, no la sobrecargo, y la puerta queda abierta entre lavados. Eso casi es todo el secreto."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b033.wav",
+  "start": 271.88,
+  "len": 7.88,
+  "text": "Hasta anoto la fecha del último mantenimiento. Parece exagerado, pero es lo que hace que una lavadora llegue a quince años."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b034.wav",
+  "start": 279.76,
+  "len": 8.44,
+  "text": "Un error común: pensar que más caro significa que dura más. En reparación veo equipos caros muertos a los cinco años."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b035.wav",
+  "start": 288.2,
+  "len": 7.57,
+  "text": "Y equipos sencillos y baratos funcionando después de quince. Lo que dura es el diseño y el cuidado, no el precio."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b036.wav",
+  "start": 295.77,
+  "len": 7.91,
+  "text": "Si dos modelos cuestan parecido, elige el de menos funciones y mejor soporte. Casi siempre es la mejor compra."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b037.wav",
+  "start": 303.68,
+  "len": 8.46,
+  "text": "El agua dura es enemiga de las lavadoras. La cal se pega a la resistencia, al tambor, y a todo lo que tenga agua caliente."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b038.wav",
+  "start": 312.14,
+  "len": 9.3,
+  "text": "Esta resistencia está cubierta de cal: gasta más energía y se quema antes. Con un descalcificante cada pocos meses, se previene."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b039.wav",
+  "start": 321.44,
+  "len": 8.34,
+  "text": "Y el detergente: usa la cantidad correcta. El exceso deja residuos que ensucian sensores, tuberías y bombas."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b040.wav",
+  "start": 329.78,
+  "len": 7.83,
+  "text": "Si tu agua es dura, considera un ablandador para toda la casa. Alarga la vida de lavadora, calentador y cañerías."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b041.wav",
+  "start": 337.61,
+  "len": 9.47,
+  "text": "Una lavadora nueva trae tornillos de transporte atrás. Hay que sacarlos antes de usar, o los rodamientos se rompen en el primer centrifugado."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b042.wav",
+  "start": 347.08,
+  "len": 7.12,
+  "text": "Y guardarlos: se vuelven a poner cuando mueves la lavadora de lugar. Mucha gente los pierde, y después se arrepiente."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b043.wav",
+  "start": 354.2,
+  "len": 9.75,
+  "text": "Luego, nivelar bien con las patas, y trabar la tuerca. Una lavadora firme en el piso casi no vibra, y eso se nota en la vida útil."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b044.wav",
+  "start": 363.95,
+  "len": 8.38,
+  "text": "La manguera de desagüe en alto y con un arco, para que no se vacíe sola. Y las de entrada, bien ajustadas, con arandelas nuevas."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b045.wav",
+  "start": 372.33,
+  "len": 11.45,
+  "text": "Errores de compra que veo. Uno, comprar por promoción sin mirar repuestos. Dos, elegir un tamaño muy justo. Tres, dejarse llevar por funciones raras."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b046.wav",
+  "start": 383.78,
+  "len": 10.11,
+  "text": "Cuatro, comprar un modelo descontinuado barato: parece una ganga, pero sin repuestos es un problema. Y cinco, ignorar el servicio técnico de tu zona."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b047.wav",
+  "start": 393.89,
+  "len": 9.07,
+  "text": "Una buena compra se piensa un par de días, se compara en tres tiendas, y se confirma con alguien que repare. Yo estoy a un comentario de distancia."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b048.wav",
+  "start": 402.96,
+  "len": 8.66,
+  "text": "¿Y las lavasecadoras, que lavan y secan en la misma máquina? Son prácticas en espacios chicos, pero tienen más piezas y más desgaste."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b049.wav",
+  "start": 411.62,
+  "len": 9.86,
+  "text": "El secado usa una resistencia y ventilación extra. Si puedes, una lavadora y una secadora separadas duran más. Si no, úsala con cuidado."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b050.wav",
+  "start": 421.48,
+  "len": 9.35,
+  "text": "Y las secadoras: limpiar el filtro de pelusa en cada uso. Una secadora con el ducto tapado se sobrecalienta y es un riesgo de incendio."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b051.wav",
+  "start": 430.83,
+  "len": 8.91,
+  "text": "Y si ya tienes una que anda, no la cambies por cambiar. Una lavadora de diez años bien cuidada vale más que una nueva barata."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b052.wav",
+  "start": 439.74,
+  "len": 10.46,
+  "text": "Solo repara si el costo es razonable, pidiendo un presupuesto desglosado. Una bomba o una goma son reparaciones sencillas, y alargan la vida."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b053.wav",
+  "start": 450.2,
+  "len": 7.58,
+  "text": "Y si algo no te convence, pide una segunda opinión. Un buen técnico te explica qué falla, y no se ofende si preguntas."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b054.wav",
+  "start": 457.78,
+  "len": 9.95,
+  "text": "Los cinco criterios: electrónica simple, piezas accesibles, tambor y rodamientos sólidos, buena goma, y repuestos y servicio."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b055.wav",
+  "start": 467.73,
+  "len": 8.79,
+  "text": "Con esos cinco, aunque la marca sea desconocida, vas a elegir mejor que con cualquier publicidad. Y tu lavadora te va a durar años."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcmilavad/out/tcmilavad/tramos/b056.wav",
+  "start": 476.52,
+  "len": 9.68,
+  "text": "Si te sirvió, quédate en el canal. En el próximo, las lavadoras baratas que sí recomiendo. Y cuéntame qué criterio te parece más importante."
+ }
+]

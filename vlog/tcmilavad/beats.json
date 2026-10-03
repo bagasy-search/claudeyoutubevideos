@@ -1,0 +1,1010 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Reparo lavadoras todos los días. Y cuando llegó el momento de comprar una para mi propia casa, elegí algo que te va a sorprender.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a technician's hands tightening a final screw on a washing machine back panel in a tidy laundry room, a loaded washer starting a cycle quietly",
+    "motion": "the washer starts a smooth quiet spin cycle and the technician steps back"
+   },
+   {
+    "k": "W",
+    "v": "technician installing washing machine at home"
+   },
+   {
+    "k": "W",
+    "v": "a technician s hands tightening a final screw"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio. Esta es la que puse en mi casa. No es la más cara, ni la que tiene más funciones. Te explico por qué la elegí.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio the technician in his own laundry room standing beside a plain washing machine, arms crossed with a proud calm smile"
+   },
+   {
+    "k": "G",
+    "v": "a plain white front loading washing machine in a small laundry room with a dryer rack and a basket of clothes"
+   },
+   {
+    "k": "W",
+    "v": "Claudio the technician in his own laundry room"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después de años abriendo lavadoras muertas, aprendí qué cosas las matan, y cuáles hacen que duren. Y eso se resume en cinco criterios.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washing machine repair shop broken machines pile"
+   },
+   {
+    "k": "G",
+    "v": "a pile of discarded washing machines with rusted drums in a scrapyard"
+   },
+   {
+    "k": "W",
+    "v": "washing machine repair shop broken machines pile"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Electrónica simple, piezas accesibles, rodamientos sólidos, buena goma y repuestos disponibles. Si cumple los cinco, puedes dormir tranquilo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising five fingers at the camera"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with five criteria written: simple electronics, accessible parts, strong drum bearings, good gasket, spare parts availability"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising five fingers at the camera"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising five fingers at the camera"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y lo que evité: pantallas táctiles, wifi, vapor, inteligencia artificial. Cada función extra es una pieza más que puede romperse.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "expensive features washing machine marketing"
+   },
+   {
+    "k": "G",
+    "v": "a washing machine panel with icons for steam, wifi, and ai wash modes in a store"
+   },
+   {
+    "k": "W",
+    "v": "expensive features washing machine marketing"
+   },
+   {
+    "k": "W",
+    "v": "expensive features washing machine marketing"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un aviso: no te voy a decir marca ni modelo. Las marcas cambian, y lo que importa son los criterios. Con ellos puedes elegir cualquiera, de cualquier tienda.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera honestly"
+   },
+   {
+    "k": "W",
+    "v": "honest technician advice"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera honestly"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera honestly"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero: electrónica simple. Una perilla y pocos botones. Una placa sencilla falla menos y es más fácil de cambiar o reparar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washing machine control panel simple dial"
+   },
+   {
+    "k": "G",
+    "v": "a simple washing machine control panel with a dial and a few buttons and a small display"
+   },
+   {
+    "k": "W",
+    "v": "washing machine control panel simple dial"
+   },
+   {
+    "k": "W",
+    "v": "washing machine control panel simple dial"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mira la diferencia: esta es la placa de una máquina simple, y esta la de una con muchas funciones. La segunda cuesta mucho más y falla más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding two circuit boards, a small simple one and a big complex one"
+   },
+   {
+    "k": "G",
+    "v": "two washing machine control boards side by side on a workbench, one small and one crowded with components"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la simple, muchas veces se repara con un par de componentes baratos. La compleja, casi siempre se cambia entera, y el repuesto es caro.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "circuit board repair technician soldering"
+   },
+   {
+    "k": "G",
+    "v": "a technician soldering a component on a circuit board under a lamp"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una pantalla táctil rota en una lavadora puede costar casi lo mismo que una lavadora nueva. Yo prefiero perillas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a touch screen on a washer"
+   },
+   {
+    "k": "G",
+    "v": "a washing machine with a glossy touch screen cracked in one corner"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo: piezas accesibles. En algunas lavadoras, para cambiar la bomba hay que desarmar la mitad de la máquina.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washing machine back panel open easy access"
+   },
+   {
+    "k": "G",
+    "v": "the back of a washing machine with the panel removed showing the pump, belt and hoses clearly accessible"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esta tiene el filtro de la bomba al frente, y por atrás se llega a todo con cuatro tornillos. Eso reduce el costo de cualquier reparación.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at a pump easily reachable from the front access flap"
+   },
+   {
+    "k": "G",
+    "v": "a front access flap of a washing machine open showing the pump filter and a drain hose"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Algunas tienen la cuba sellada, sin forma de abrirla. Si un rodamiento falla, hay que cambiar la cuba entera, y no conviene.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "difficult repair washing machine sealed tub"
+   },
+   {
+    "k": "G",
+    "v": "a washing machine sealed plastic tub welded shut with no way to open it"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Yo busco cuba atornillada: se abre, se cambia el rodamiento, y la máquina sigue. Con eso, la vida útil se duplica.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a bolted tub with screws holding both halves together"
+   },
+   {
+    "k": "G",
+    "v": "a washing machine tub split in two halves held by bolts showing the bearing and drum shaft"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es un detalle que el vendedor no menciona, y se ve en los manuales de servicio, o preguntando a un técnico de confianza.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician working on washing machine repair"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling while holding a wrench"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercero: tambor y rodamientos. Tambor de acero inoxidable, con paredes firmes, y un eje grueso. Un eje delgado se dobla con el tiempo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a stainless steel drum with thick walls and large drum paddles"
+   },
+   {
+    "k": "W",
+    "v": "washing machine stainless drum"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mira el grosor del eje: esta es robusta, y esta se dobla con una carga pesada. No se ve desde afuera, pero se nota en el peso del equipo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding the drum shaft and showing its thickness with his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a thick steel drum shaft compared to a thin one on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un buen indicio: el peso. Las lavadoras con contrapesos grandes de hormigón vibran menos y duran más. Si pesa poco, desconfía.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "heavy washing machine counterweights"
+   },
+   {
+    "k": "G",
+    "v": "a washing machine with concrete counterweights visible on its top and bottom"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En la tienda, empuja una lavadora con la mano. Si se mueve mucho, es liviana. Una pesada y firme es más estable en el centrifugado.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pushing a washing machine in a store to feel how heavy and stable it is, serious"
+   },
+   {
+    "k": "A",
+    "v": "a hand pushing the side of a washing machine in a shop, the machine barely moves",
+    "motion": "the machine barely rocks when pushed"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pushing a washing machine in a store"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuarto: la goma de la puerta. Tiene que ser gruesa, de buen material, con un canal para que escurra el agua y no se junte moho.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washing machine door seal quality"
+   },
+   {
+    "k": "G",
+    "v": "a thick well-moulded rubber door gasket with a drain channel at the bottom on a washing machine"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las de pliegues profundos juntan agua y moho. Una goma de diseño simple se limpia fácil, y dura más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio running a finger inside the gasket and showing a smooth clean surface"
+   },
+   {
+    "k": "G",
+    "v": "a close view of the inside of a gasket with deep folds that trap water compared to a smoother one"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y verifica que la goma sea un repuesto disponible y razonable. Es la pieza que más se cambia, y no debería ser un lujo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "replacement gasket spare part cost"
+   },
+   {
+    "k": "G",
+    "v": "a new door gasket in its package next to a price tag on a shop counter"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Quinto, el más importante: repuestos y servicio. Una lavadora sin repuestos es descartable, aunque sea de buena calidad.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "spare parts shop appliances"
+   },
+   {
+    "k": "G",
+    "v": "a spare parts store with shelves of motors, pumps and boards for washing machines"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de comprar, busca el modelo en tiendas de repuestos: si ves bombas, amortiguadores, gomas y placas, es buena señal.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at his phone and searching for the model's spare parts online, nodding when he finds them"
+   },
+   {
+    "k": "G",
+    "v": "a phone screen showing spare parts listings for a washing machine model"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y fíjate si hay un servicio técnico cerca de tu casa. Un equipo excelente sin servicio local es un dolor de cabeza.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "authorized service center local"
+   },
+   {
+    "k": "G",
+    "v": "a sign for a local appliance service centre in a neighbourhood street"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pregunta cuánto tarda en llegar un repuesto. Si dicen tres meses, vete a otra tienda. Una lavadora parada tres meses es un problema real.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio speaking sincerely to the camera"
+   },
+   {
+    "k": "W",
+    "v": "honest technician advice"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La capacidad: para una pareja, unos siete kilos. Para una familia de cuatro, entre nueve y diez. Mejor un poco más grande que justa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washing machine capacity family size"
+   },
+   {
+    "k": "G",
+    "v": "a table on a whiteboard matching household size to washing machine capacity in kilograms"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una lavadora que trabaja siempre al límite se desgasta mucho más rápido. La holgura es vida útil.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining that a machine used at its limit wears faster"
+   },
+   {
+    "k": "G",
+    "v": "a washing machine drum stuffed to the top with clothes and the door barely closing"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y los programas: con algodón, sintético, delicado y rápido, lavas todo. Una lavadora con cincuenta programas no lava mejor.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "basic wash programs cotton synthetic quick"
+   },
+   {
+    "k": "G",
+    "v": "a control dial with simple programs: cotton, synthetic, delicate, quick and spin"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La mía tiene siete programas, y llevo años sin tocar la mitad. Y nunca me hizo falta nada más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with a half smile"
+   },
+   {
+    "k": "W",
+    "v": "simple appliance reliable"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cómo la cuido: cada tres meses limpio el filtro de la bomba, y cada mes la goma de la puerta, con un paño.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio doing his monthly maintenance on his washing machine, cleaning the pump filter with a towel and a tray"
+   },
+   {
+    "k": "A",
+    "v": "water draining from a pump filter into a tray and a technician removing lint",
+    "motion": "the water pours into the tray and he pulls out some lint"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La tengo bien nivelada, no la sobrecargo, y la puerta queda abierta entre lavados. Eso casi es todo el secreto.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "leveling washing machine feet"
+   },
+   {
+    "k": "G",
+    "v": "a spirit level on top of a washing machine showing a centred bubble"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hasta anoto la fecha del último mantenimiento. Parece exagerado, pero es lo que hace que una lavadora llegue a quince años.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small notebook next to the washing machine with a log of maintenance dates"
+   },
+   {
+    "k": "P",
+    "v": "Claudio writing the date of the last cleaning in the notebook"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un error común: pensar que más caro significa que dura más. En reparación veo equipos caros muertos a los cinco años.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining that price and lifespan do not go together, with two stacks of coins on a table"
+   },
+   {
+    "k": "G",
+    "v": "two stacks of coins labelled purchase price and repair costs over ten years next to a washing machine drawing"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y equipos sencillos y baratos funcionando después de quince. Lo que dura es el diseño y el cuidado, no el precio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "expensive washing machine broken early"
+   },
+   {
+    "k": "G",
+    "v": "a premium washing machine with a smart display showing an error code in a kitchen"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si dos modelos cuestan parecido, elige el de menos funciones y mejor soporte. Casi siempre es la mejor compra.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laying out three washing machine tickets on a table, shrugging"
+   },
+   {
+    "k": "G",
+    "v": "three washing machine invoices with different prices and a handwritten note about lifespan"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El agua dura es enemiga de las lavadoras. La cal se pega a la resistencia, al tambor, y a todo lo que tenga agua caliente.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hard water limescale washing machine"
+   },
+   {
+    "k": "G",
+    "v": "a heating element in a washing machine coated with thick white limescale"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esta resistencia está cubierta de cal: gasta más energía y se quema antes. Con un descalcificante cada pocos meses, se previene.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a limescale-coated heating element up to the light and shaking his head"
+   },
+   {
+    "k": "A",
+    "v": "a technician scraping white limescale off a heating element with a screwdriver",
+    "motion": "white flakes fall off the element"
+   },
+   {
+    "k": "W",
+    "v": "Claudio holding a limescale coated heating element up"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el detergente: usa la cantidad correcta. El exceso deja residuos que ensucian sensores, tuberías y bombas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "detergent dosage laundry"
+   },
+   {
+    "k": "G",
+    "v": "a measuring cup with detergent filled to the line and a washing machine nearby"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tu agua es dura, considera un ablandador para toda la casa. Alarga la vida de lavadora, calentador y cañerías.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera, relaxed"
+   },
+   {
+    "k": "W",
+    "v": "laundry room tidy"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una lavadora nueva trae tornillos de transporte atrás. Hay que sacarlos antes de usar, o los rodamientos se rompen en el primer centrifugado.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washing machine transport bolts removal"
+   },
+   {
+    "k": "G",
+    "v": "transport bolts on the back of a new washing machine with a wrench next to them"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y guardarlos: se vuelven a poner cuando mueves la lavadora de lugar. Mucha gente los pierde, y después se arrepiente.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio unscrewing the transport bolts and putting them in a labelled bag, careful"
+   },
+   {
+    "k": "G",
+    "v": "a small bag with four transport bolts labelled keep for moving"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Luego, nivelar bien con las patas, y trabar la tuerca. Una lavadora firme en el piso casi no vibra, y eso se nota en la vida útil.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washing machine level feet adjustment"
+   },
+   {
+    "k": "G",
+    "v": "an adjustable foot of a washing machine being turned with a wrench and a locking nut"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La manguera de desagüe en alto y con un arco, para que no se vacíe sola. Y las de entrada, bien ajustadas, con arandelas nuevas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio checking the hoses and the drain connection and tightening a clamp with a screwdriver"
+   },
+   {
+    "k": "G",
+    "v": "a drain hose fixed with a clamp to a wall standpipe with a loop at the top"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Errores de compra que veo. Uno, comprar por promoción sin mirar repuestos. Dos, elegir un tamaño muy justo. Tres, dejarse llevar por funciones raras.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting purchase mistakes on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with a list of buying mistakes"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuatro, comprar un modelo descontinuado barato: parece una ganga, pero sin repuestos es un problema. Y cinco, ignorar el servicio técnico de tu zona.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "impulse buying store display appliance"
+   },
+   {
+    "k": "G",
+    "v": "a store display of washing machines with a big discount sign and a salesperson"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una buena compra se piensa un par de días, se compara en tres tiendas, y se confirma con alguien que repare. Yo estoy a un comentario de distancia.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head with a gentle smile"
+   },
+   {
+    "k": "W",
+    "v": "wise consumer advice"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Y las lavasecadoras, que lavan y secan en la misma máquina? Son prácticas en espacios chicos, pero tienen más piezas y más desgaste.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washer dryer combo appliance"
+   },
+   {
+    "k": "G",
+    "v": "a combined washer dryer machine in a small apartment bathroom"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El secado usa una resistencia y ventilación extra. Si puedes, una lavadora y una secadora separadas duran más. Si no, úsala con cuidado.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining with a pair of drawings, honest"
+   },
+   {
+    "k": "G",
+    "v": "a drawing of a washer dryer combo with extra heating and ventilation components labelled"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y las secadoras: limpiar el filtro de pelusa en cada uso. Una secadora con el ducto tapado se sobrecalienta y es un riesgo de incendio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "dryer lint filter clean"
+   },
+   {
+    "k": "G",
+    "v": "a dryer lint filter loaded with lint being cleaned by hand"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si ya tienes una que anda, no la cambies por cambiar. Una lavadora de diez años bien cuidada vale más que una nueva barata.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a washing machine with a thoughtful expression"
+   },
+   {
+    "k": "G",
+    "v": "a washing machine ten years old with a few scratches but working well in a clean laundry room"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Solo repara si el costo es razonable, pidiendo un presupuesto desglosado. Una bomba o una goma son reparaciones sencillas, y alargan la vida.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "repair cost estimate technician"
+   },
+   {
+    "k": "G",
+    "v": "a technician writing a repair estimate on a clipboard beside a washing machine"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si algo no te convence, pide una segunda opinión. Un buen técnico te explica qué falla, y no se ofende si preguntas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio nodding to the camera with a kind expression"
+   },
+   {
+    "k": "W",
+    "v": "kind technician helpful advice"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los cinco criterios: electrónica simple, piezas accesibles, tambor y rodamientos sólidos, buena goma, y repuestos y servicio.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the five criteria on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with five criteria listed with check marks"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con esos cinco, aunque la marca sea desconocida, vas a elegir mejor que con cualquier publicidad. Y tu lavadora te va a durar años.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "smart choice appliance family"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling in his laundry room beside the quiet washing machine"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quédate en el canal. En el próximo, las lavadoras baratas que sí recomiendo. Y cuéntame qué criterio te parece más importante.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly technician advice"
+   }
+  ]
+ }
+]

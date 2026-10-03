@@ -1,0 +1,925 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "REPARO LAVADORAS TODOS LOS DÍAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "reparo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "LA QUE PUSE EN MI CASA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "casa",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b004",
+   "props": {
+    "text": "ELECTRÓNICA SIMPLE · PIEZAS ACCESIBLES…",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "electrónica",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "LO QUE EVITÉ: TÁCTIL · WIFI · VAPOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "evité",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b006",
+   "props": {
+    "text": "SIN MARCAS NI MODELOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "marca",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b007",
+   "props": {
+    "step": 1,
+    "total": 5,
+    "title": "ELECTRÓNICA SIMPLE"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b008",
+   "props": {
+    "text": "PLACA SIMPLE VS PLACA COMPLEJA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "placa",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b010",
+   "props": {
+    "text": "PANTALLA TÁCTIL ROTA = CASI UNA NUEVA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 52
+   },
+   "word": "táctil",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b011",
+   "props": {
+    "step": 2,
+    "total": 5,
+    "title": "PIEZAS ACCESIBLES"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b012",
+   "props": {
+    "text": "FILTRO DE LA BOMBA AL FRENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "filtro",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b013",
+   "props": {
+    "text": "CUBA SELLADA: NO SE ABRE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "sellada",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b014",
+   "props": {
+    "text": "CUBA ATORNILLADA: SE REPARA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cuba",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b016",
+   "props": {
+    "step": 3,
+    "total": 5,
+    "title": "TAMBOR Y RODAMIENTOS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b017",
+   "props": {
+    "text": "EL GROSOR DEL EJE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "eje",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b018",
+   "props": {
+    "text": "EL PESO: CONTRAPESOS GRANDES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "peso",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b019",
+   "props": {
+    "text": "EMPUJALA EN LA TIENDA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "empuja",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b020",
+   "props": {
+    "step": 4,
+    "total": 5,
+    "title": "LA GOMA DE LA PUERTA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b021",
+   "props": {
+    "text": "PLIEGUES PROFUNDOS = AGUA Y MOHO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "goma",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b023",
+   "props": {
+    "step": 5,
+    "total": 5,
+    "title": "REPUESTOS Y SERVICIO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b024",
+   "props": {
+    "text": "BUSCÁ EL MODELO EN TIENDAS DE REPUESTOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "repuestos",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b026",
+   "props": {
+    "text": "¿CUÁNTO TARDA UN REPUESTO?",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "tarda",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b027",
+   "props": {
+    "text": "PAREJA: ~7 kg",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "siete",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b030",
+   "props": {
+    "text": "7 PROGRAMAS · USO LA MITAD",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "programas",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b031",
+   "props": {
+    "text": "FILTRO DE LA BOMBA: CADA 3 MESES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "meses",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b033",
+   "props": {
+    "text": "ANOTO LA FECHA DEL MANTENIMIENTO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "fecha",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b034",
+   "props": {
+    "text": "¿MÁS CARO = DURA MÁS?",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "caro",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b036",
+   "props": {
+    "text": "MENOS FUNCIONES, MEJOR SERVICIO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "funciones",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b037",
+   "props": {
+    "text": "EL AGUA DURA: ENEMIGA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "dura",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b038",
+   "props": {
+    "text": "RESISTENCIA CUBIERTA DE CAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "cal",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b039",
+   "props": {
+    "text": "LA CANTIDAD CORRECTA DE DETERGENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "cantidad",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b041",
+   "props": {
+    "text": "TORNILLOS DE TRANSPORTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "tornillos",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b043",
+   "props": {
+    "text": "NIVELAR Y TRABAR LA TUERCA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "nivelar",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b044",
+   "props": {
+    "text": "DESAGÜE EN ALTO, CON ARCO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "arco",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b045",
+   "props": {
+    "pos": "top",
+    "size": 90,
+    "words": [
+     {
+      "t": "ERRORES DE COMPRA",
+      "beat": "b045",
+      "word": "errores",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "errores",
+   "until": "b045",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b046",
+   "props": {
+    "text": "DESCONTINUADO BARATO = SIN REPUESTOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 52
+   },
+   "word": "descontinuado",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b047",
+   "props": {
+    "text": "PENSALO 2 DÍAS · COMPARÁ EN 3 LUGARES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "tiendas",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b048",
+   "props": {
+    "text": "LAVASECADORAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "lavan",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b050",
+   "props": {
+    "text": "FILTRO DE PELUSA EN CADA USO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "pelusa",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b051",
+   "props": {
+    "text": "SI YA ANDA, NO LA CAMBIES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cambies",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b052",
+   "props": {
+    "text": "REPARÁ SOLO CON PRESUPUESTO DESGLOSADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "desglosado",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b053",
+   "props": {
+    "text": "UNA SEGUNDA OPINIÓN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "opinión",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b054",
+   "props": {
+    "pos": "top",
+    "size": 76,
+    "words": [
+     {
+      "t": "ELECTRÓNICA SIMPLE",
+      "beat": "b054",
+      "word": "electrónica",
+      "hl": "yellow"
+     },
+     {
+      "t": "PIEZAS ACCESIBLES",
+      "beat": "b054",
+      "word": "piezas"
+     },
+     {
+      "t": "TAMBOR · GOMA · REPUESTOS",
+      "beat": "b054",
+      "word": "tambor",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "criterios",
+   "until": "b054",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b056",
+   "props": {
+    "pos": "top",
+    "size": 72,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b056",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "LAS LAVADORAS BARATAS QUE SÍ RECOMIENDO",
+      "beat": "b056",
+      "word": "lavadoras",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b056",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}
