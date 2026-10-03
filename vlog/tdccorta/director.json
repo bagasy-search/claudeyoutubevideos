@@ -1,0 +1,943 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "AMOLADORA VIEJA = CORTADORA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "pasto",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b004",
+   "props": {
+    "text": "UNA CUCHILLA A 10.000 VUELTAS",
+    "icons": [
+     "alert",
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "cuchilla",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b005",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "EL DISCO ESTALLÓ",
+      "beat": "b005",
+      "word": "pedazos",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "pedazos",
+   "until": "b005",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b009",
+   "props": {
+    "text": "PATIO DE 30 m²",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "30",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b010",
+   "props": {
+    "text": "HILO CADA 10 MIN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "hilo",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b016",
+   "props": {
+    "text": "1 MANGO · 2 SEGURA · 3 RENDIR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "mango",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b020",
+   "props": {
+    "name": "AMOLADORA 115 mm",
+    "origin": "vieja",
+    "cost": "$0",
+    "at": [
+     30,
+     4
+    ]
+   },
+   "word": "amoladora",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b021",
+   "props": {
+    "name": "RUEDAS ×4",
+    "origin": "carrito de súper",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "ruedas",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b022",
+   "props": {
+    "name": "CHAPA 3 mm Ø35",
+    "origin": "plataforma",
+    "cost": "$0",
+    "at": [
+     70,
+     4
+    ]
+   },
+   "word": "chapa",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b024",
+   "props": {
+    "name": "PLANCHUELA 4×25",
+    "origin": "la cuchilla",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "planchuela",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b026",
+   "props": {
+    "name": "GOMA DE NEUMÁTICO",
+    "origin": "el faldón",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "goma",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b032",
+   "props": {
+    "step": 1,
+    "total": 6,
+    "title": "PLATAFORMA Y RUEDAS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b040",
+   "props": {
+    "step": 2,
+    "total": 6,
+    "title": "MONTAR LA AMOLADORA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b045",
+   "props": {
+    "step": 3,
+    "total": 6,
+    "title": "CUCHILLA Y BALANCEO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b059",
+   "props": {
+    "step": 4,
+    "total": 6,
+    "title": "CÚPULA Y FALDÓN"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b065",
+   "props": {
+    "step": 5,
+    "total": 6,
+    "title": "MANGO Y FRENO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b072",
+   "props": {
+    "step": 6,
+    "total": 6,
+    "title": "LA PRUEBA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b034",
+   "props": {
+    "text": "ANTEOJOS · GUANTES",
+    "icons": [
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "anteojos",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b035",
+   "props": {
+    "text": "AGUJERO DE 60 mm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "60",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b043",
+   "props": {
+    "text": "CERO JUEGO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "milímetro",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b049",
+   "props": {
+    "text": "BALANCEO: LA GRAVEDAD NO MIENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "balanceo",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b050",
+   "props": {
+    "text": "DESBALANCEADA = VIBRA Y ROMPE",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "desbalanceada",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b055",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "DISCO DE CORTE: NO",
+      "beat": "b055",
+      "word": "estalló",
+      "hl": "red"
+     },
+     {
+      "t": "CUCHILLA DE ACERO: SÍ",
+      "beat": "b055",
+      "word": "pedazos",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "estalló",
+   "until": "b055",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b057",
+   "props": {
+    "text": "EL DISCO NO AGUANTA PIEDRAS",
+    "icons": [
+     "alert",
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "piedras",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b063",
+   "props": {
+    "text": "FALDÓN A 1 cm DEL SUELO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "centímetro",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b067",
+   "props": {
+    "text": "MANIJA DE FRENO = GATILLO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "manija",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b069",
+   "props": {
+    "pos": "top",
+    "size": 88,
+    "words": [
+     {
+      "t": "SI LA SUELTAS, CORTA",
+      "beat": "b069",
+      "word": "sueltas",
+      "hl": "yellow"
+     },
+     {
+      "t": "HOMBRE MUERTO",
+      "beat": "b069",
+      "word": "caes",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "sueltas",
+   "until": "b070",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b071",
+   "props": {
+    "text": "NUNCA TRABADA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "nunca",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b072",
+   "props": {
+    "text": "ANTEOJOS · BOTAS · GUANTES · OÍDOS",
+    "icons": [
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "anteojos",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b073",
+   "props": {
+    "text": "BARRER EL TERRENO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "recorro",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b077",
+   "props": {
+    "text": "CORTE PAREJO A 4 cm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cuatro",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b080",
+   "props": {
+    "text": "SE SUELTA Y SE DESENCHUFA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "regla",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b081",
+   "props": {
+    "text": "CASQUILLO CORTO EN EL EJE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "casquillo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b086",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "DESMALEZADORA: 4 min 30",
+      "beat": "b086",
+      "word": "desmalezadora",
+      "hl": "white"
+     },
+     {
+      "t": "CORTADORA: MENOS",
+      "beat": "b086",
+      "word": "cortadora",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "desmalezadora",
+   "until": "b086",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b087",
+   "props": {
+    "text": "VENTAJA MODESTA · SIN TRAMPA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 54
+   },
+   "word": "modesta",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b089",
+   "props": {
+    "text": "HASTA 50 m²",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "50",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b092",
+   "props": {
+    "text": "PARQUE GRANDE: NO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "parque",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b094",
+   "props": {
+    "pos": "top",
+    "size": 90,
+    "words": [
+     {
+      "t": "7 REGLAS DE SEGURIDAD",
+      "beat": "b094",
+      "word": "reglas",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "reglas",
+   "until": "b094",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b096",
+   "props": {
+    "text": "NUNCA SIN CÚPULA NI FALDÓN",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "nunca",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b100",
+   "props": {
+    "text": "RUEDA TRASERA MÁS GRANDE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "rueda",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b102",
+   "props": {
+    "text": "ALTURA REGULABLE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "regulación",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b106",
+   "props": {
+    "pos": "top",
+    "size": 82,
+    "words": [
+     {
+      "t": "CUCHILLA, NO DISCO",
+      "beat": "b106",
+      "word": "cuchilla",
+      "hl": "yellow"
+     },
+     {
+      "t": "PROTECCIÓN COMPLETA",
+      "beat": "b106",
+      "word": "protección"
+     },
+     {
+      "t": "GATILLO SIN TRABAR",
+      "beat": "b106",
+      "word": "gatillo",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "cuchilla",
+   "until": "b106",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b108",
+   "props": {
+    "pos": "top",
+    "size": 88,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b108",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "HACHA OXIDADA COMO NUEVA",
+      "beat": "b108",
+      "word": "hacha",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b108",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}

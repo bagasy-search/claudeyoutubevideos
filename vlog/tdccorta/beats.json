@@ -1,0 +1,1888 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esto es una cortadora de pasto hecha con una amoladora vieja. Y corta una franja limpia, parada, sin agacharme.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a small home-made lawn mower with a long handle and a grinder motor on a steel plate cutting a strip of tall grass in a back yard, cut grass flying",
+    "motion": "the mower moves forward cutting a clean strip and green clippings fly sideways"
+   },
+   {
+    "k": "W",
+    "v": "cutting tall grass lawn mower"
+   },
+   {
+    "k": "W",
+    "v": "cutting grass with a mower"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una franja pareja, de ida y de vuelta, en el pasto que la desmalezadora dejaba en mechones.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio walking behind a small home-made mower made from an angle grinder, pushing it along a long handle on his yard grass"
+   },
+   {
+    "k": "G",
+    "v": "a neat cut stripe of short grass next to uncut tall grass in a back yard with clippings"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La amoladora: una de las que ya no tenía disco ni fuerza para cortar hierro. Pero el motor está entero.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding an old angle grinder in his hand and smiling toward the camera in his workshop"
+   },
+   {
+    "k": "G",
+    "v": "an old yellow angle grinder with a worn cord lying on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "old angle grinder tool"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero una cosa antes de seguir: esto es una cuchilla girando a diez mil vueltas. Te voy a mostrar cómo hacerla segura. Y cómo no.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a serious warning expression, one finger raised"
+   },
+   {
+    "k": "W",
+    "v": "warning sign sharp rotating blades"
+   },
+   {
+    "k": "W",
+    "v": "warning spinning blade danger sign"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el primer disco que probé se hizo pedazos. Te cuento por qué, porque es lo que casi nadie te explica.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio crouching beside a shattered abrasive disc and some fragments on a concrete floor, shaking his head"
+   },
+   {
+    "k": "G",
+    "v": "fragments of a broken abrasive cutting disc on a concrete floor next to a pair of safety glasses"
+   },
+   {
+    "k": "G",
+    "v": "a pair of safety glasses with a scratched lens next to a torn glove on a concrete floor"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Todo empezó un sábado de calor, con el pasto a la altura de las rodillas y ninguna ganas de agacharme.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "sunny back yard"
+   },
+   {
+    "k": "P",
+    "v": "Claudio standing in his sunny yard looking proudly at the strip of cut grass behind him, hands on hips"
+   },
+   {
+    "k": "W",
+    "v": "tall grass in a garden"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y al final, la comparación: la cortadora casera contra la desmalezadora eléctrica, el mismo pasto, el mismo tiempo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two identical square patches of grass in a yard, one trimmed with a cord trimmer and one with the home-made mower, a stopwatch in the middle"
+   },
+   {
+    "k": "P",
+    "v": "Claudio setting up a stopwatch between two patches of tall grass"
+   },
+   {
+    "k": "W",
+    "v": "stopwatch timer"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mi patio tiene un pasto que crece como si tuviera rencor. Y la desmalezadora eléctrica se cansaba antes que yo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in his overgrown yard on a sunny day holding an old electric string trimmer with a tangled cord, tired"
+   },
+   {
+    "k": "W",
+    "v": "overgrown grass in a yard"
+   },
+   {
+    "k": "G",
+    "v": "an electric trimmer tangled in tall grass in a back yard"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es un patio de treinta metros cuadrados, con un árbol, un banco de trabajo, y el pasto que crece en cualquier rincón.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a back yard with long grass, a clothesline and an old wheelbarrow on a sunny day"
+   },
+   {
+    "k": "W",
+    "v": "overgrown garden"
+   },
+   {
+    "k": "G",
+    "v": "a clothesline and a wooden bench in a small back yard with uneven grass"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El hilo se corta, se enreda y hay que cambiarlo cada diez minutos. Y la batería no dura una mitad del terreno.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an electric string trimmer with a frayed line and a motor hot to touch lying in the grass"
+   },
+   {
+    "k": "W",
+    "v": "string trimmer cutting weeds"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada recarga de hilo son cinco minutos. Y el pasto más duro lo muerde, lo desgasta y lo corta de nuevo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio replacing the line spool on a string trimmer with a frustrated look"
+   },
+   {
+    "k": "G",
+    "v": "a spool of trimmer line tangled and a trimmer head with grass wrapped around it"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una cortadora grande tampoco: el patio es chico, con rincones, canteros y un banco de trabajo en el medio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "man pushing a lawn mower"
+   },
+   {
+    "k": "G",
+    "v": "a heavy petrol lawn mower in a shed corner with a flat tyre and a dusty cover"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y en el taller, la amoladora vieja. Un motor que gira muy rápido y que ya no corta hierro. ¿Y si corta pasto?",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in his workshop picking up an old angle grinder and looking at it with raised eyebrows, idea forming"
+   },
+   {
+    "k": "G",
+    "v": "an old angle grinder with a worn disc on a workbench in a workshop"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una amoladora gira a diez mil vueltas, aproximadamente. Un motor que podría cortar el pasto más duro del barrio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "angle grinder disc spinning"
+   },
+   {
+    "k": "G",
+    "v": "a close view of the spindle and disc flange of an angle grinder on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Vi la idea en un video de un fabricante inglés. Y en los comentarios la gente pedía tres cosas, que anoté.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio reading comments on a laptop in his workshop beside a notebook"
+   },
+   {
+    "k": "W",
+    "v": "laptop on a workshop table"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Uno, un mango largo, para usarla parado. Dos, que sea segura. Y tres, que responda el porqué: ¿para qué sirve esto frente a una desmalezadora?",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a notebook with three handwritten lines and a pencil on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "person writing in a notebook"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Buena pregunta. Te la respondo al final, con una prueba y con los límites honestos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with open hands in his workshop, a half smile"
+   },
+   {
+    "k": "G",
+    "v": "the old angle grinder and a trimmer side by side on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El inventario. La mayoría de las piezas ya estaban en el taller, juntando polvo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laying out scrap parts on his workshop floor and looking at them, hands on hips"
+   },
+   {
+    "k": "G",
+    "v": "a steel plate, four small wheels, a steel tube and a bicycle brake lever laid on a concrete floor"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Como siempre, el criterio es el mismo: antes de comprar nada, buscar en el taller y en la basura de otros.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old tools workshop wall"
+   },
+   {
+    "k": "P",
+    "v": "Claudio digging through a drawer full of bolts and washers looking for parts"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La amoladora, de ciento quince milímetros. Funciona, pero con el cable arreglado y las escobillas nuevas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an old angle grinder with a hundred and fifteen millimetre capacity and a side handle, scratched yellow body"
+   },
+   {
+    "k": "W",
+    "v": "angle grinder tool"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuatro ruedas de carrito de supermercado. Giran suave y soportan el peso de la máquina sin deformarse.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "four small hard plastic wheels from a shopping trolley lying on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "shopping cart wheel"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una chapa de tres milímetros, redonda, de treinta y cinco centímetros: es la plataforma y a la vez la base de la protección.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a circular steel plate three millimetres thick about thirty-five centimetres wide with a hole cut in its centre on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "steel plate circle cut"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El tamaño de la plataforma lo definen dos cosas: el cuerpo de la amoladora y el largo de la cuchilla.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio measuring the plate width against the grinder body with a tape measure"
+   },
+   {
+    "k": "G",
+    "v": "a tape measure laid across a steel plate and the body of a grinder"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una planchuela de cuatro milímetros por veinticinco, de treinta centímetros: la cuchilla. Ya vas a ver por qué es de acero y no un disco.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel flat bar thirty centimetres long and four millimetres thick with a hole drilled in its middle on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "steel flat bar"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un caño de un metro veinte para el mango, y una manija de freno de bicicleta con su cable. Esa es la parte de seguridad.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a one point two metre long steel tube and a bicycle brake lever with its cable lying on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "bicycle brake lever"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un pedazo de goma de neumático, para el faldón que atrapa lo que sale despedido.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a flat strip of thick rubber cut from a car tyre and a few bolts on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "rubber car tyre strip"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Gasto: unos tornillos, electrodos y una tarde. El resto, de los cajones del taller.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging beside the pile of parts, smiling"
+   },
+   {
+    "k": "G",
+    "v": "welding electrodes, a drill and a file on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Todo el trabajo me llevó una tarde y media. Lo más largo es el balanceo de la cuchilla, que no se puede apurar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "coffee mug workshop bench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio drinking from a mug in his workshop, relaxed, looking at the parts on the bench"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Seis pasos. Uno, la plataforma y las ruedas. Dos, montar la amoladora, con el cuerpo hacia arriba.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in front of a blackboard with a chalk drawing of a mower seen from the side, pointing at it"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard with a chalk sketch of a mower with wheels, a grinder, a guard dome and a long handle"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres, la cuchilla de acero y el balanceo. Cuatro, la protección: la cúpula y el faldón de goma.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with chalk numbers three and four next to small drawings of a blade and a dome"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping a blackboard with chalk looking at the camera"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cinco, el mango y el freno de seguridad. Y seis, la prueba en pasto. Si te gustan estos inventos, quédate en el taller.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with chalk numbers five and six next to a drawing of a handle with a brake lever and a grass patch"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling at the camera in front of a blackboard"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso uno. Marco el círculo en la chapa con un hilo y un marcador, y le doy el corte con la amoladora.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio tracing a circle on a steel sheet with a marker using a string compass, concentrated"
+   },
+   {
+    "k": "G",
+    "v": "a steel sheet with a marked circle thirty-five centimetres wide on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con una clavo en el centro y un hilo de quince centímetros, hago un compás casero. Es más preciso que a mano alzada.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a string tied to a nail on a steel sheet and a marker drawing a circle around it, workshop"
+   },
+   {
+    "k": "W",
+    "v": "compass drawing circle"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Anteojos, guantes, y las chispas lejos de los trapos. Un círculo parejo se corta con paciencia, no con apuro.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a person cutting a circle out of a steel sheet with an angle grinder, orange sparks flying",
+    "motion": "sparks stream outward and the grinder follows the line"
+   },
+   {
+    "k": "W",
+    "v": "angle grinder cutting steel sparks"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En el medio, un agujero de sesenta milímetros: por ahí asoma el eje de la amoladora hacia abajo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio drilling a large hole in the centre of a steel circle with a hole saw, wearing safety glasses"
+   },
+   {
+    "k": "G",
+    "v": "a steel circular plate with a large round hole in its centre, bright cut edges"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con aceite de corte, para no quemar la sierra de copa. Si no tengo una, hago varios agujeros chicos y los uno con la lima.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the hole saw cutting steel with cutting oil and curls of metal around it"
+   },
+   {
+    "k": "W",
+    "v": "hole saw drilling steel"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las cuatro ruedas, atornilladas abajo con ménsulas cortas, para que la chapa quede a unos tres centímetros del suelo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "four small wheels bolted under a steel plate on short steel brackets, workshop"
+   },
+   {
+    "k": "P",
+    "v": "Claudio bolting a wheel bracket under the steel plate with a wrench"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pruebo que ruede recto. Y la altura: ahí se regula el corte del pasto. Más bajo, más corto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio placing the steel plate on the floor and rolling it forward with his foot to test the wheels, calm"
+   },
+   {
+    "k": "G",
+    "v": "a steel plate with wheels sitting on a concrete floor, a ruler measuring the gap to the ground"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tira para un lado, hay una rueda desalineada. Con una arandela de más, se corrige.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wheel rolling on concrete"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pushing the plate across the floor with his foot to see if it rolls straight, watching"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso dos. La amoladora va montada con el eje apuntando hacia abajo, atravesando el agujero.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an angle grinder held vertically with its spindle pointing down in a steel bracket made of two flat bars, workshop"
+   },
+   {
+    "k": "P",
+    "v": "Claudio clamping an angle grinder in a bracket upside down with its spindle pointing down"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un abrazadera de planchuela, soldada a la chapa, abraza el cuello de la amoladora, justo atrás del cabezal.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio welding a steel clamp bracket onto the plate around the grinder's neck, helmet on"
+   },
+   {
+    "k": "W",
+    "v": "welder welding steel sparks"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Dos bulones largos la aprietan. Tiene que quedar firme: una amoladora suelta, girando, es el peor accidente que puedes tener.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two bolts tightening a steel strap around the neck of an angle grinder, workshop"
+   },
+   {
+    "k": "W",
+    "v": "clamp bolts steel"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La sacudo con las dos manos: ni un milímetro de juego. Si se mueve, se aprieta de nuevo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking the mounted grinder with his hands to test its firmness, nodding"
+   },
+   {
+    "k": "G",
+    "v": "the grinder mounted vertically on the plate seen from the side with its spindle protruding below"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y le pongo una tuerca de seguridad, para que la vibración no la afloje. Las máquinas que vibran aflojan sus tornillos.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a close view of a grinder bracket with two long bolts and nuts tightened with a wrench"
+   },
+   {
+    "k": "W",
+    "v": "wrench tightening nut"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso tres. La cuchilla es una planchuela de acero, con un agujero justo en el centro, para el eje de la amoladora.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio showing a flat steel bar to the camera, explaining"
+   },
+   {
+    "k": "G",
+    "v": "a steel flat bar with a drilled hole in the middle and its ends ground into a slight bevel"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El centro tiene que estar exacto. Marco con un granete, y taladro despacio, primero chico y después del diámetro del eje.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "measuring centre of metal bar"
+   },
+   {
+    "k": "G",
+    "v": "a steel bar with a cross scribed at its centre with a scriber and a centre punch mark"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los extremos, con un bisel por un solo lado, para cortar con una arista. Y quedan algo romos: no es un cuchillo, es un golpe.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "an angle grinder sharpening the ends of a flat steel bar clamped in a vice, sparks flying",
+    "motion": "sparks fly and the ends of the bar glow slightly orange"
+   },
+   {
+    "k": "G",
+    "v": "a steel flat bar blade held in a vice with its ends being checked with a ruler"
+   },
+   {
+    "k": "W",
+    "v": "grinding steel bevel sparks"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pruebo con el lado del dedo, no con el filo. Tiene que cortar pasto, no la mano.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a bevelled end of a steel bar bright from the grinder on a workbench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio running his thumb carefully along the side of the bar, not the edge, to check the bevel"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ahora, el balanceo, que es lo más importante. Cuelgo la cuchilla de un clavo por el agujero: si un lado cae, está pesado.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a balancing test with the steel blade hung on a nail through its centre hole, one end slightly lower"
+   },
+   {
+    "k": "P",
+    "v": "Claudio hanging the steel bar on a nail through its centre hole and watching which side falls"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo limo hasta que quede horizontal, parada en el aire. Una cuchilla desbalanceada vibra, y esa vibración rompe todo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio filing the heavier end of the blade until it stays horizontal on the nail, careful"
+   },
+   {
+    "k": "G",
+    "v": "a steel bar hanging perfectly level on a nail by its centre hole"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es un truco viejo, de herreros: la gravedad no miente. Una pieza equilibrada queda quieta en cualquier posición.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "balance scale precision"
+   },
+   {
+    "k": "G",
+    "v": "a steel bar hanging on a nail perfectly level and a small file beside it"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de usar la cuchilla de acero, probé lo que hace el video del molde: un disco de corte, del común.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding an abrasive cutting disc over the mower, hesitating"
+   },
+   {
+    "k": "G",
+    "v": "an abrasive cutting disc a thin grey disc lying on the mounted grinder spindle"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Contra el pasto, y sobre todo contra la tierra, el disco levanta polvo gris y se desgasta rapidísimo.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a thin abrasive cutting disc spinning at high speed against grass and dirt, grey dust and green clippings flying",
+    "motion": "grey dust and green bits fly out sideways as the disc spins"
+   },
+   {
+    "k": "W",
+    "v": "spinning abrasive disc dust"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un disco de corte es arena pegada: se gasta cuando corta, y se rompe cuando lo golpean de costado.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a worn thin abrasive disc with its edge shrunken after cutting grass, on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "worn abrasive disc"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y a los cuatro minutos, tocó una piedra. El disco estalló en pedazos que salieron para todos lados.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "fragments of a shattered abrasive disc scattered on the dirt among grass and a stone"
+   },
+   {
+    "k": "P",
+    "v": "Claudio crouching next to broken disc pieces looking at them with a grim face"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Uno me pegó en la campera. Si no hubiera tenido anteojos y una campera gruesa, hoy te estaría contando otra cosa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio touching a tiny hole in his work jacket where a fragment hit, serious"
+   },
+   {
+    "k": "G",
+    "v": "a leather glove and a safety goggle with a scratched lens on a bench"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un disco abrasivo no está hecho para golpes laterales ni piedras. Ese es el error: usar un disco de corte donde se necesita una cuchilla.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera very seriously, jaw tight"
+   },
+   {
+    "k": "W",
+    "v": "safety goggles protective equipment"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La cuchilla de acero, en cambio, se dobla si pega, pero no estalla. Es la diferencia entre un susto y un accidente.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the steel blade on the bench and nodding with relief"
+   },
+   {
+    "k": "G",
+    "v": "the steel flat bar blade on a workbench next to broken abrasive disc pieces"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cuatro, la protección. Una cúpula de chapa, soldada a la plataforma, que cubre la cuchilla por arriba y por los costados.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel bowl cut in half and welded around the opening of the plate over the blade area, like a dome guard"
+   },
+   {
+    "k": "P",
+    "v": "Claudio welding a steel bowl dome over the blade area, helmet down"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cordón completo. Esta cúpula es lo que detiene los pedazos que salgan despedidos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "metal dome welding"
+   },
+   {
+    "k": "A",
+    "v": "a welder welding a steel dome to a plate, bright arc and smoke",
+    "motion": "the arc flickers and smoke rises slowly"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un hueco chico en la cúpula, para el soporte del mango. Y que no quede ningún borde filoso a la vista.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio cutting a small notch in the dome to clear the cable, with a file"
+   },
+   {
+    "k": "G",
+    "v": "a dome with a small notch on its edge for the handle bracket"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y abajo, un faldón de goma de neumático, que cuelga hasta casi el suelo y detiene las piedras y el pasto.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a strip of thick black rubber cut from a car tyre screwed around the base of the dome like a skirt"
+   },
+   {
+    "k": "P",
+    "v": "Claudio screwing a strip of black rubber to the bottom edge of the dome with bolts"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un centímetro del suelo. Que no arrastre, pero que no deje pasar nada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio checking the gap between the rubber skirt and the ground with a ruler"
+   },
+   {
+    "k": "G",
+    "v": "a rubber skirt hanging a centimetre above the grass beside a small wheel"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es el mismo principio que usan las cortadoras de verdad: un faldón de goma que ataja lo que sale disparado.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "lawn mower guard flap"
+   },
+   {
+    "k": "G",
+    "v": "a rubber flap on a mower deck hanging above short grass"
+   }
+  ]
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cinco, el mango. Un caño de un metro veinte, con una bisagra, para trabajar parado y regular el ángulo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a long steel tube welded to a small hinge bracket on the back of the plate, workshop"
+   },
+   {
+    "k": "P",
+    "v": "Claudio welding a long steel tube to a hinge bracket on the mower"
+   }
+  ]
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La bisagra deja que el mango suba y baje. Con el mango alto, uno trabaja parado; con el mango bajo, inclina la máquina para limpiar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hinge made of two steel tabs and a long bolt welded at the back of the mower plate"
+   },
+   {
+    "k": "P",
+    "v": "Claudio testing the hinge by raising and lowering the long handle with one hand"
+   }
+  ]
+ },
+ {
+  "id": "b067",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En la punta, la manija de freno de una bici, con su cable. Esa manija es el gatillo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a bicycle brake lever clamped on the handle top with a cable running down to the grinder"
+   },
+   {
+    "k": "P",
+    "v": "Claudio clamping a bicycle brake lever at the top of the long handle"
+   }
+  ]
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El cable va atado al gatillo de la amoladora. Sin trabarlo: la amoladora gira solo mientras aprietas la manija.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio tying the brake cable to the grinder's trigger paddle with a small clamp and checking its travel"
+   },
+   {
+    "k": "G",
+    "v": "a brake cable attached to the trigger paddle of an angle grinder with a metal clip"
+   }
+  ]
+ },
+ {
+  "id": "b069",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si lo sueltas, corta. Si te caes, corta. Si algo sale mal, corta. Es el seguro de todo el diseño.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a hand squeezing a bicycle brake lever and releasing it on a long handle",
+    "motion": "the lever moves in and out as the hand squeezes and releases"
+   },
+   {
+    "k": "W",
+    "v": "bicycle brake lever being squeezed"
+   }
+  ]
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ese tipo de mando se llama hombre muerto, y es el estándar de cualquier máquina de jardín profesional.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "safety dead man switch"
+   },
+   {
+    "k": "G",
+    "v": "a drawing on a blackboard of a dead man's switch showing the lever pressed and released"
+   }
+  ]
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la traba de encendido de la amoladora, tapada con cinta. Nunca debe quedar trabada en esta máquina.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "warning do not lock trigger"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pointing at the grinder's lock-on button with a sticker over it saying nothing, looking at the camera"
+   }
+  ]
+ },
+ {
+  "id": "b072",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segunda vuelta. Anteojos, botas, pantalón largo, guantes y protección de oídos. Y los chicos y los perros, adentro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in a yard with safety glasses, leather gloves, long trousers and boots, holding the mower handle"
+   },
+   {
+    "k": "G",
+    "v": "a back yard of tall grass with the home-made mower ready at one end"
+   }
+  ]
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, recorro el patio: piedras, ramas, alambres y juguetes, todo afuera. Una cuchilla no sabe qué es lo que toca.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "person checking safe distance dog child"
+   },
+   {
+    "k": "P",
+    "v": "Claudio walking the yard first, picking up stones and sticks and tossing them into a bucket"
+   }
+  ]
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un patio parece limpio, hasta que lo recorres: piedras del tamaño de una nuez, un alambre oxidado, un tornillo, una pelota.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wheelbarrow of stones garden"
+   },
+   {
+    "k": "G",
+    "v": "a bucket full of stones, twigs and a toy gathered from a lawn"
+   }
+  ]
+ },
+ {
+  "id": "b075",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Aprieto la manija. La cuchilla gira, y entro despacio en el pasto alto. El cuerpo, siempre atrás del mango.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "the mower's blade starting up under its dome and a green spray of cut grass flying out of the side",
+    "motion": "the blade spins up and green clippings fly out to the side"
+   },
+   {
+    "k": "P",
+    "v": "Claudio squeezing the brake lever while pushing the mower slowly into tall grass"
+   }
+  ]
+ },
+ {
+  "id": "b076",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y entro en el pasto sin empujar de más. La máquina corta mejor cuando avanza despacio, y no se ahoga.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "grass cut close up"
+   },
+   {
+    "k": "G",
+    "v": "the blade running under the dome seen from the side with a clear gap between blade and rubber skirt"
+   }
+  ]
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y corta. Un corte parejo, a unos cuatro centímetros del suelo, sin dejar mechones.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clean cut stripe of lawn behind a small home-made mower with grass clippings scattered, sunny yard"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking back at the clean stripe the mower has just cut, with a satisfied smile"
+   }
+  ]
+ },
+ {
+  "id": "b078",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero a los cinco metros, el motor empezó a sufrir. El pasto largo se había enrollado en el eje, debajo de la cúpula.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "long grass wrapped tightly around the spindle and nut under the dome of a mower"
+   },
+   {
+    "k": "P",
+    "v": "Claudio turning the mower on its side and pulling long grass wrapped around the spindle with pliers"
+   }
+  ]
+ },
+ {
+  "id": "b079",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El motor cambió de sonido: un zumbido más grave, como cuando alguien se carga demasiado. Ahí hay que parar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "long grass tangled around a rotating shaft"
+   },
+   {
+    "k": "P",
+    "v": "Claudio hearing the motor strain and tilting his head, a worried look"
+   }
+  ]
+ },
+ {
+  "id": "b080",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y esto es regla de oro: antes de tocar nada de abajo, se suelta la manija y se desenchufa. Sin excepción.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio releasing the brake lever and unplugging the cord before working under the mower, careful"
+   },
+   {
+    "k": "G",
+    "v": "a hand pulling the plug of an extension cord out of a socket on the grass"
+   }
+  ]
+ },
+ {
+  "id": "b081",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El arreglo: un casquillo corto sobre el eje, que impide que el pasto se enrolle. Y paso a pasadas más cortas, sin forzar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small steel collar welded above the spindle nut like a sleeve to keep grass away from the shaft"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing a small sleeve fitted over the spindle with his fingers"
+   }
+  ]
+ },
+ {
+  "id": "b082",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La comparación honesta. Dos cuadrados iguales de pasto, de dos por dos metros, y mismo largo de pasto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio marking two equal square patches of grass with string and sticks in his yard"
+   },
+   {
+    "k": "G",
+    "v": "two square patches of grass marked with string in a yard, the grass equally tall in both"
+   }
+  ]
+ },
+ {
+  "id": "b083",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la desmalezadora eléctrica, el hilo nuevo y la batería cargada. Y después, con la cortadora, el mismo cuadrado.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio starting a stopwatch next to the mower and the electric string trimmer"
+   },
+   {
+    "k": "W",
+    "v": "stopwatch"
+   }
+  ]
+ },
+ {
+  "id": "b084",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los cuadrados, con estacas y piolín: dos por dos, que son cuatro metros cuadrados. Medidos, no a ojo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a string and four wooden stakes marking a two metre square of tall grass"
+   },
+   {
+    "k": "W",
+    "v": "marking garden with string"
+   }
+  ]
+ },
+ {
+  "id": "b085",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La cortadora, de ida y de vuelta, en pasadas de cuarenta centímetros, que es el ancho de la cuchilla.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a person mowing a square of tall grass with a small home-made mower moving forward and back",
+    "motion": "the mower moves forward and back as clippings fly sideways"
+   },
+   {
+    "k": "W",
+    "v": "mowing grass lawn"
+   }
+  ]
+ },
+ {
+  "id": "b086",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la desmalezadora, cuatro minutos y medio, y quedaron mechones. Con la cortadora, tres minutos, y parejo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a notebook with two columns of times and cut quality written in pencil beside a stopwatch"
+   },
+   {
+    "k": "P",
+    "v": "Claudio writing the times in a notebook with a pencil"
+   }
+  ]
+ },
+ {
+  "id": "b087",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Honestamente: la ventaja es modesta. Un minuto y medio por cuadrado. Pero el resultado es mucho más parejo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a stopwatch showing three minutes and a smaller one showing four minutes thirty on a bench"
+   },
+   {
+    "k": "W",
+    "v": "timer stopwatch"
+   }
+  ]
+ },
+ {
+  "id": "b088",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No es magia: la cortadora cubre más superficie por pasada y corta a una altura fija. Pero tiene sus límites.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging honestly with open hands in the grass"
+   },
+   {
+    "k": "G",
+    "v": "the two patches of grass side by side after cutting, one uneven and one even"
+   }
+  ]
+ },
+ {
+  "id": "b089",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Para qué sirve? Para parches de pasto de hasta unos cincuenta metros cuadrados, con rincones donde no entra una cortadora grande.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio answering to the camera with a hand on the mower handle"
+   },
+   {
+    "k": "W",
+    "v": "small garden lawn"
+   }
+  ]
+ },
+ {
+  "id": "b090",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es buena para el pasto de los bordes y canteros, y para pasto alto que una cortadora de hélice no traga.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "grass around trees and fence posts cut cleanly next to the mower in a small garden"
+   },
+   {
+    "k": "P",
+    "v": "Claudio steering the mower around a tree trunk, careful"
+   }
+  ]
+ },
+ {
+  "id": "b091",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cerca de vallas y de paredes, se mueve cerca, sin tocar. Pero nunca contra una piedra ni un alambre.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "garden edge fence lawn"
+   },
+   {
+    "k": "P",
+    "v": "Claudio running the mower along a fence line where the grass is thick, careful with his feet"
+   }
+  ]
+ },
+ {
+  "id": "b092",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para un parque grande, no. Para pasto de más de veinte centímetros, hay que cortar en dos pasadas. Y con piedras, no.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head slightly while looking at a large field of grass in the distance"
+   },
+   {
+    "k": "W",
+    "v": "large grass field"
+   }
+  ]
+ },
+ {
+  "id": "b093",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la desmalezadora gana en rincones imposibles y en pendientes. Esta es otra herramienta, no un reemplazo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing to the electric string trimmer lying on the grass and nodding, honest face"
+   },
+   {
+    "k": "G",
+    "v": "the electric string trimmer lying on the grass next to the mower"
+   }
+  ]
+ },
+ {
+  "id": "b094",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las reglas de seguridad, para no olvidarlas. Uno, anteojos, botas, pantalón largo y guantes. Dos, nadie cerca: ni chicos ni mascotas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting safety rules on his fingers with a serious face"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard listing safety rules for the mower in chalk"
+   }
+  ]
+ },
+ {
+  "id": "b095",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El equipo completo: anteojos, protección de oídos, guantes, botas y pantalón largo. No es un exceso: es el mínimo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "protective equipment boots gloves goggles"
+   },
+   {
+    "k": "G",
+    "v": "a pair of boots, leather gloves, ear defenders and safety glasses laid on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b096",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres, nunca sin la cúpula ni el faldón. Cuatro, el gatillo nunca trabado: la manija de freno, siempre.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with chalk lines three and four next to a drawing of a brake lever and a dome guard"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping the board with chalk"
+   }
+  ]
+ },
+ {
+  "id": "b097",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cinco, antes de tocar abajo, se desenchufa. Seis, se barre el terreno antes de cortar, y se corta en seco, nunca con pasto mojado.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with chalk lines five and six next to a drawing of an unplugged cord and a stone"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera and nodding"
+   }
+  ]
+ },
+ {
+  "id": "b098",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y siete: si algo vibra, hace ruido raro o la cuchilla se dobla, se para todo. Una máquina que vibra es una máquina que va a fallar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera, serious but friendly"
+   },
+   {
+    "k": "W",
+    "v": "safety first sign"
+   }
+  ]
+ },
+ {
+  "id": "b099",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y después de cada uso, reviso la tuerca de la cuchilla y los bulones del soporte. Cinco minutos que valen una mano.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio checking the tightness of the blade nut with a wrench after use"
+   },
+   {
+    "k": "G",
+    "v": "a hand tightening the blade nut under the dome with a wrench, mower on its side"
+   }
+  ]
+ },
+ {
+  "id": "b100",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo que cambiaría. Primero, una rueda trasera más grande, para que ruede mejor en pasto alto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a notebook and a pencil, thinking about improvements"
+   },
+   {
+    "k": "W",
+    "v": "notebook pencil"
+   }
+  ]
+ },
+ {
+  "id": "b101",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con ruedas de veinte centímetros, la máquina no se hunde en el pasto, y se siente más liviana de empujar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a larger wheel on a steel bracket compared with the small trolley wheels on a workbench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding a bigger wheel next to the small ones"
+   }
+  ]
+ },
+ {
+  "id": "b102",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo, una regulación de altura con ranura y bulón, para subir o bajar la cuchilla sin desarmar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a metal bar with a height adjustment slot with a bolt on the side of a steel plate"
+   },
+   {
+    "k": "P",
+    "v": "Claudio drawing an adjustable height slot in a notebook"
+   }
+  ]
+ },
+ {
+  "id": "b103",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y pintura, primero imprimación, para que la chapa no se oxide con la humedad del pasto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio painting the finished mower with a brush in a workshop, black and yellow"
+   },
+   {
+    "k": "G",
+    "v": "the finished mower in black and yellow paint on a workshop floor beside a can of paint"
+   }
+  ]
+ },
+ {
+  "id": "b104",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el cable, con la ficha para exterior y el alargue revisados. Ni un empalme con cinta: el pasto mojado y la electricidad no se llevan.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a coil of electric cable and a weatherproof plug on a workbench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking the extension cord for cuts before plugging it in outdoors"
+   }
+  ]
+ },
+ {
+  "id": "b105",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una cortadora de pasto con una amoladora vieja, ruedas de carrito, y una manija de freno de bicicleta. Y un fin de semana de trabajo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing next to the finished mower with a hand on the handle, proud look"
+   },
+   {
+    "k": "A",
+    "v": "the finished mower beside a neatly cut strip of lawn in sunlight",
+    "motion": "a soft sunbeam moves across the cut lawn"
+   },
+   {
+    "k": "G",
+    "v": "the finished home-made mower beside neat lawn strips in evening sunlight"
+   }
+  ]
+ },
+ {
+  "id": "b106",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo que aprendí: cuchilla de acero y no disco, protección completa, y el gatillo sin traba. Tres cosas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting on his fingers looking at the camera, warm"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard with three lines: steel blade, guard dome, and brake lever"
+   }
+  ]
+ },
+ {
+  "id": "b107",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tienes una amoladora que ya no corta hierro, no la tires. Cuéntame qué harías tú con ella.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with the mower and the workshop behind him, friendly half smile"
+   },
+   {
+    "k": "W",
+    "v": "cozy workshop with tools"
+   }
+  ]
+ },
+ {
+  "id": "b108",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En el próximo, un hacha podrida de óxido que dejé como nueva. Nos vemos en el taller.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing his thumb over his shoulder toward the workshop door, smiling"
+   },
+   {
+    "k": "A",
+    "v": "the workshop doorway at dusk with warm light spilling out",
+    "motion": "the warm light flickers softly"
+   }
+  ]
+ }
+]

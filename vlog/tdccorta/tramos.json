@@ -1,0 +1,974 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b001.wav",
+  "start": 0.0,
+  "len": 8.27,
+  "text": "Esto es una cortadora de pasto hecha con una amoladora vieja. Y corta una franja limpia, parada, sin agacharme."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b002.wav",
+  "start": 8.27,
+  "len": 5.67,
+  "text": "Una franja pareja, de ida y de vuelta, en el pasto que la desmalezadora dejaba en mechones."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b003.wav",
+  "start": 13.94,
+  "len": 6.83,
+  "text": "La amoladora: una de las que ya no tenía disco ni fuerza para cortar hierro. Pero el motor está entero."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b004.wav",
+  "start": 20.77,
+  "len": 8.65,
+  "text": "Pero una cosa antes de seguir: esto es una cuchilla girando a diez mil vueltas. Te voy a mostrar cómo hacerla segura. Y cómo no."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b005.wav",
+  "start": 29.42,
+  "len": 6.91,
+  "text": "Y el primer disco que probé se hizo pedazos. Te cuento por qué, porque es lo que casi nadie te explica."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b006.wav",
+  "start": 36.33,
+  "len": 6.62,
+  "text": "Todo empezó un sábado de calor, con el pasto a la altura de las rodillas y ninguna ganas de agacharme."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b007.wav",
+  "start": 42.95,
+  "len": 7.98,
+  "text": "Y al final, la comparación: la cortadora casera contra la desmalezadora eléctrica, el mismo pasto, el mismo tiempo."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b008.wav",
+  "start": 50.93,
+  "len": 7.15,
+  "text": "Mi patio tiene un pasto que crece como si tuviera rencor. Y la desmalezadora eléctrica se cansaba antes que yo."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b009.wav",
+  "start": 58.08,
+  "len": 7.79,
+  "text": "Es un patio de treinta metros cuadrados, con un árbol, un banco de trabajo, y el pasto que crece en cualquier rincón."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b010.wav",
+  "start": 65.87,
+  "len": 7.11,
+  "text": "El hilo se corta, se enreda y hay que cambiarlo cada diez minutos. Y la batería no dura una mitad del terreno."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b011.wav",
+  "start": 72.98,
+  "len": 7.77,
+  "text": "Cada recarga de hilo son cinco minutos. Y el pasto más duro lo muerde, lo desgasta y lo corta de nuevo."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b012.wav",
+  "start": 80.75,
+  "len": 6.62,
+  "text": "Una cortadora grande tampoco: el patio es chico, con rincones, canteros y un banco de trabajo en el medio."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b013.wav",
+  "start": 87.37,
+  "len": 7.46,
+  "text": "Y en el taller, la amoladora vieja. Un motor que gira muy rápido y que ya no corta hierro. ¿Y si corta pasto?"
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b014.wav",
+  "start": 94.83,
+  "len": 8.2,
+  "text": "Una amoladora gira a diez mil vueltas, aproximadamente. Un motor que podría cortar el pasto más duro del barrio."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b015.wav",
+  "start": 103.03,
+  "len": 7.23,
+  "text": "Vi la idea en un video de un fabricante inglés. Y en los comentarios la gente pedía tres cosas, que anoté."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b016.wav",
+  "start": 110.26,
+  "len": 9.86,
+  "text": "Uno, un mango largo, para usarla parado. Dos, que sea segura. Y tres, que responda el porqué: ¿para qué sirve esto frente a una desmalezadora?"
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b017.wav",
+  "start": 120.12,
+  "len": 5.36,
+  "text": "Buena pregunta. Te la respondo al final, con una prueba y con los límites honestos."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b018.wav",
+  "start": 125.48,
+  "len": 5.13,
+  "text": "El inventario. La mayoría de las piezas ya estaban en el taller, juntando polvo."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b019.wav",
+  "start": 130.61,
+  "len": 6.89,
+  "text": "Como siempre, el criterio es el mismo: antes de comprar nada, buscar en el taller y en la basura de otros."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b020.wav",
+  "start": 137.5,
+  "len": 6.41,
+  "text": "La amoladora, de ciento quince milímetros. Funciona, pero con el cable arreglado y las escobillas nuevas."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b021.wav",
+  "start": 143.91,
+  "len": 6.86,
+  "text": "Cuatro ruedas de carrito de supermercado. Giran suave y soportan el peso de la máquina sin deformarse."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b022.wav",
+  "start": 150.77,
+  "len": 8.42,
+  "text": "Una chapa de tres milímetros, redonda, de treinta y cinco centímetros: es la plataforma y a la vez la base de la protección."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b023.wav",
+  "start": 159.19,
+  "len": 6.49,
+  "text": "El tamaño de la plataforma lo definen dos cosas: el cuerpo de la amoladora y el largo de la cuchilla."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b024.wav",
+  "start": 165.68,
+  "len": 9.39,
+  "text": "Una planchuela de cuatro milímetros por veinticinco, de treinta centímetros: la cuchilla. Ya vas a ver por qué es de acero y no un disco."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b025.wav",
+  "start": 175.07,
+  "len": 7.86,
+  "text": "Un caño de un metro veinte para el mango, y una manija de freno de bicicleta con su cable. Esa es la parte de seguridad."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b026.wav",
+  "start": 182.93,
+  "len": 4.89,
+  "text": "Y un pedazo de goma de neumático, para el faldón que atrapa lo que sale despedido."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b027.wav",
+  "start": 187.82,
+  "len": 6.9,
+  "text": "Gasto: unos tornillos, electrodos y una tarde. El resto, de los cajones del taller."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b028.wav",
+  "start": 194.72,
+  "len": 6.43,
+  "text": "Todo el trabajo me llevó una tarde y media. Lo más largo es el balanceo de la cuchilla, que no se puede apurar."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b029.wav",
+  "start": 201.15,
+  "len": 7.1,
+  "text": "Seis pasos. Uno, la plataforma y las ruedas. Dos, montar la amoladora, con el cuerpo hacia arriba."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b030.wav",
+  "start": 208.25,
+  "len": 7.13,
+  "text": "Tres, la cuchilla de acero y el balanceo. Cuatro, la protección: la cúpula y el faldón de goma."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b031.wav",
+  "start": 215.38,
+  "len": 8.16,
+  "text": "Cinco, el mango y el freno de seguridad. Y seis, la prueba en pasto. Si te gustan estos inventos, quédate en el taller."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b032.wav",
+  "start": 223.54,
+  "len": 6.51,
+  "text": "Paso uno. Marco el círculo en la chapa con un hilo y un marcador, y le doy el corte con la amoladora."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b033.wav",
+  "start": 230.05,
+  "len": 7.71,
+  "text": "Con una clavo en el centro y un hilo de quince centímetros, hago un compás casero. Es más preciso que a mano alzada."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b034.wav",
+  "start": 237.76,
+  "len": 7.56,
+  "text": "Anteojos, guantes, y las chispas lejos de los trapos. Un círculo parejo se corta con paciencia, no con apuro."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b035.wav",
+  "start": 245.32,
+  "len": 6.31,
+  "text": "En el medio, un agujero de sesenta milímetros: por ahí asoma el eje de la amoladora hacia abajo."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b036.wav",
+  "start": 251.63,
+  "len": 8.02,
+  "text": "Con aceite de corte, para no quemar la sierra de copa. Si no tengo una, hago varios agujeros chicos y los uno con la lima."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b037.wav",
+  "start": 259.65,
+  "len": 7.62,
+  "text": "Las cuatro ruedas, atornilladas abajo con ménsulas cortas, para que la chapa quede a unos tres centímetros del suelo."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b038.wav",
+  "start": 267.27,
+  "len": 6.58,
+  "text": "Pruebo que ruede recto. Y la altura: ahí se regula el corte del pasto. Más bajo, más corto."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b039.wav",
+  "start": 273.85,
+  "len": 5.58,
+  "text": "Si tira para un lado, hay una rueda desalineada. Con una arandela de más, se corrige."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b040.wav",
+  "start": 279.43,
+  "len": 6.06,
+  "text": "Paso dos. La amoladora va montada con el eje apuntando hacia abajo, atravesando el agujero."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b041.wav",
+  "start": 285.49,
+  "len": 6.88,
+  "text": "Un abrazadera de planchuela, soldada a la chapa, abraza el cuello de la amoladora, justo atrás del cabezal."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b042.wav",
+  "start": 292.37,
+  "len": 8.39,
+  "text": "Dos bulones largos la aprietan. Tiene que quedar firme: una amoladora suelta, girando, es el peor accidente que puedes tener."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b043.wav",
+  "start": 300.76,
+  "len": 5.71,
+  "text": "La sacudo con las dos manos: ni un milímetro de juego. Si se mueve, se aprieta de nuevo."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b044.wav",
+  "start": 306.47,
+  "len": 6.87,
+  "text": "Y le pongo una tuerca de seguridad, para que la vibración no la afloje. Las máquinas que vibran aflojan sus tornillos."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b045.wav",
+  "start": 313.34,
+  "len": 7.41,
+  "text": "Paso tres. La cuchilla es una planchuela de acero, con un agujero justo en el centro, para el eje de la amoladora."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b046.wav",
+  "start": 320.75,
+  "len": 8.43,
+  "text": "El centro tiene que estar exacto. Marco con un granete, y taladro despacio, primero chico y después del diámetro del eje."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b047.wav",
+  "start": 329.18,
+  "len": 8.08,
+  "text": "Los extremos, con un bisel por un solo lado, para cortar con una arista. Y quedan algo romos: no es un cuchillo, es un golpe."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b048.wav",
+  "start": 337.26,
+  "len": 4.87,
+  "text": "Pruebo con el lado del dedo, no con el filo. Tiene que cortar pasto, no la mano."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b049.wav",
+  "start": 342.13,
+  "len": 8.47,
+  "text": "Ahora, el balanceo, que es lo más importante. Cuelgo la cuchilla de un clavo por el agujero: si un lado cae, está pesado."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b050.wav",
+  "start": 350.6,
+  "len": 8.06,
+  "text": "Lo limo hasta que quede horizontal, parada en el aire. Una cuchilla desbalanceada vibra, y esa vibración rompe todo."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b051.wav",
+  "start": 358.66,
+  "len": 7.25,
+  "text": "Es un truco viejo, de herreros: la gravedad no miente. Una pieza equilibrada queda quieta en cualquier posición."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b052.wav",
+  "start": 365.91,
+  "len": 6.38,
+  "text": "Antes de usar la cuchilla de acero, probé lo que hace el video del molde: un disco de corte, del común."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b053.wav",
+  "start": 372.29,
+  "len": 7.04,
+  "text": "Contra el pasto, y sobre todo contra la tierra, el disco levanta polvo gris y se desgasta rapidísimo."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b054.wav",
+  "start": 379.33,
+  "len": 6.78,
+  "text": "Un disco de corte es arena pegada: se gasta cuando corta, y se rompe cuando lo golpean de costado."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b055.wav",
+  "start": 386.11,
+  "len": 6.15,
+  "text": "Y a los cuatro minutos, tocó una piedra. El disco estalló en pedazos que salieron para todos lados."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b056.wav",
+  "start": 392.26,
+  "len": 7.26,
+  "text": "Uno me pegó en la campera. Si no hubiera tenido anteojos y una campera gruesa, hoy te estaría contando otra cosa."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b057.wav",
+  "start": 399.52,
+  "len": 9.64,
+  "text": "Un disco abrasivo no está hecho para golpes laterales ni piedras. Ese es el error: usar un disco de corte donde se necesita una cuchilla."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b058.wav",
+  "start": 409.16,
+  "len": 7.2,
+  "text": "La cuchilla de acero, en cambio, se dobla si pega, pero no estalla. Es la diferencia entre un susto y un accidente."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b059.wav",
+  "start": 416.36,
+  "len": 8.75,
+  "text": "Paso cuatro, la protección. Una cúpula de chapa, soldada a la plataforma, que cubre la cuchilla por arriba y por los costados."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b060.wav",
+  "start": 425.11,
+  "len": 5.35,
+  "text": "Cordón completo. Esta cúpula es lo que detiene los pedazos que salgan despedidos."
+ },
+ {
+  "beat": "b061",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b061.wav",
+  "start": 430.46,
+  "len": 6.15,
+  "text": "Un hueco chico en la cúpula, para el soporte del mango. Y que no quede ningún borde filoso a la vista."
+ },
+ {
+  "beat": "b062",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b062.wav",
+  "start": 436.61,
+  "len": 7.29,
+  "text": "Y abajo, un faldón de goma de neumático, que cuelga hasta casi el suelo y detiene las piedras y el pasto."
+ },
+ {
+  "beat": "b063",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b063.wav",
+  "start": 443.9,
+  "len": 4.5,
+  "text": "Un centímetro del suelo. Que no arrastre, pero que no deje pasar nada."
+ },
+ {
+  "beat": "b064",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b064.wav",
+  "start": 448.4,
+  "len": 6.38,
+  "text": "Es el mismo principio que usan las cortadoras de verdad: un faldón de goma que ataja lo que sale disparado."
+ },
+ {
+  "beat": "b065",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b065.wav",
+  "start": 454.78,
+  "len": 7.9,
+  "text": "Paso cinco, el mango. Un caño de un metro veinte, con una bisagra, para trabajar parado y regular el ángulo."
+ },
+ {
+  "beat": "b066",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b066.wav",
+  "start": 462.68,
+  "len": 9.31,
+  "text": "La bisagra deja que el mango suba y baje. Con el mango alto, uno trabaja parado; con el mango bajo, inclina la máquina para limpiar."
+ },
+ {
+  "beat": "b067",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b067.wav",
+  "start": 471.99,
+  "len": 6.24,
+  "text": "En la punta, la manija de freno de una bici, con su cable. Esa manija es el gatillo."
+ },
+ {
+  "beat": "b068",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b068.wav",
+  "start": 478.23,
+  "len": 7.38,
+  "text": "El cable va atado al gatillo de la amoladora. Sin trabarlo: la amoladora gira solo mientras aprietas la manija."
+ },
+ {
+  "beat": "b069",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b069.wav",
+  "start": 485.61,
+  "len": 7.36,
+  "text": "Si lo sueltas, corta. Si te caes, corta. Si algo sale mal, corta. Es el seguro de todo el diseño."
+ },
+ {
+  "beat": "b070",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b070.wav",
+  "start": 492.97,
+  "len": 6.07,
+  "text": "Ese tipo de mando se llama hombre muerto, y es el estándar de cualquier máquina de jardín profesional."
+ },
+ {
+  "beat": "b071",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b071.wav",
+  "start": 499.04,
+  "len": 7.1,
+  "text": "Y la traba de encendido de la amoladora, tapada con cinta. Nunca debe quedar trabada en esta máquina."
+ },
+ {
+  "beat": "b072",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b072.wav",
+  "start": 506.14,
+  "len": 8.71,
+  "text": "Segunda vuelta. Anteojos, botas, pantalón largo, guantes y protección de oídos. Y los chicos y los perros, adentro."
+ },
+ {
+  "beat": "b073",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b073.wav",
+  "start": 514.85,
+  "len": 8.33,
+  "text": "Primero, recorro el patio: piedras, ramas, alambres y juguetes, todo afuera. Una cuchilla no sabe qué es lo que toca."
+ },
+ {
+  "beat": "b074",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b074.wav",
+  "start": 523.18,
+  "len": 7.98,
+  "text": "Un patio parece limpio, hasta que lo recorres: piedras del tamaño de una nuez, un alambre oxidado, un tornillo, una pelota."
+ },
+ {
+  "beat": "b075",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b075.wav",
+  "start": 531.16,
+  "len": 7.51,
+  "text": "Aprieto la manija. La cuchilla gira, y entro despacio en el pasto alto. El cuerpo, siempre atrás del mango."
+ },
+ {
+  "beat": "b076",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b076.wav",
+  "start": 538.67,
+  "len": 6.5,
+  "text": "Y entro en el pasto sin empujar de más. La máquina corta mejor cuando avanza despacio, y no se ahoga."
+ },
+ {
+  "beat": "b077",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b077.wav",
+  "start": 545.17,
+  "len": 5.73,
+  "text": "Y corta. Un corte parejo, a unos cuatro centímetros del suelo, sin dejar mechones."
+ },
+ {
+  "beat": "b078",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b078.wav",
+  "start": 550.9,
+  "len": 7.45,
+  "text": "Pero a los cinco metros, el motor empezó a sufrir. El pasto largo se había enrollado en el eje, debajo de la cúpula."
+ },
+ {
+  "beat": "b079",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b079.wav",
+  "start": 558.35,
+  "len": 6.5,
+  "text": "El motor cambió de sonido: un zumbido más grave, como cuando alguien se carga demasiado. Ahí hay que parar."
+ },
+ {
+  "beat": "b080",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b080.wav",
+  "start": 564.85,
+  "len": 7.86,
+  "text": "Y esto es regla de oro: antes de tocar nada de abajo, se suelta la manija y se desenchufa. Sin excepción."
+ },
+ {
+  "beat": "b081",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b081.wav",
+  "start": 572.71,
+  "len": 7.8,
+  "text": "El arreglo: un casquillo corto sobre el eje, que impide que el pasto se enrolle. Y paso a pasadas más cortas, sin forzar."
+ },
+ {
+  "beat": "b082",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b082.wav",
+  "start": 580.51,
+  "len": 7.21,
+  "text": "La comparación honesta. Dos cuadrados iguales de pasto, de dos por dos metros, y mismo largo de pasto."
+ },
+ {
+  "beat": "b083",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b083.wav",
+  "start": 587.72,
+  "len": 7.46,
+  "text": "Con la desmalezadora eléctrica, el hilo nuevo y la batería cargada. Y después, con la cortadora, el mismo cuadrado."
+ },
+ {
+  "beat": "b084",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b084.wav",
+  "start": 595.18,
+  "len": 7.7,
+  "text": "Los cuadrados, con estacas y piolín: dos por dos, que son cuatro metros cuadrados. Medidos, no a ojo."
+ },
+ {
+  "beat": "b085",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b085.wav",
+  "start": 602.88,
+  "len": 6.29,
+  "text": "La cortadora, de ida y de vuelta, en pasadas de cuarenta centímetros, que es el ancho de la cuchilla."
+ },
+ {
+  "beat": "b086",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b086.wav",
+  "start": 609.17,
+  "len": 7.44,
+  "text": "Con la desmalezadora, cuatro minutos y medio, y quedaron mechones. Con la cortadora, tres minutos, y parejo."
+ },
+ {
+  "beat": "b087",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b087.wav",
+  "start": 616.61,
+  "len": 7.74,
+  "text": "Honestamente: la ventaja es modesta. Un minuto y medio por cuadrado. Pero el resultado es mucho más parejo."
+ },
+ {
+  "beat": "b088",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b088.wav",
+  "start": 624.35,
+  "len": 7.18,
+  "text": "No es magia: la cortadora cubre más superficie por pasada y corta a una altura fija. Pero tiene sus límites."
+ },
+ {
+  "beat": "b089",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b089.wav",
+  "start": 631.53,
+  "len": 7.84,
+  "text": "¿Para qué sirve? Para parches de pasto de hasta unos cincuenta metros cuadrados, con rincones donde no entra una cortadora grande."
+ },
+ {
+  "beat": "b090",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b090.wav",
+  "start": 639.37,
+  "len": 6.36,
+  "text": "Es buena para el pasto de los bordes y canteros, y para pasto alto que una cortadora de hélice no traga."
+ },
+ {
+  "beat": "b091",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b091.wav",
+  "start": 645.73,
+  "len": 6.92,
+  "text": "Cerca de vallas y de paredes, se mueve cerca, sin tocar. Pero nunca contra una piedra ni un alambre."
+ },
+ {
+  "beat": "b092",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b092.wav",
+  "start": 652.65,
+  "len": 8.04,
+  "text": "Para un parque grande, no. Para pasto de más de veinte centímetros, hay que cortar en dos pasadas. Y con piedras, no."
+ },
+ {
+  "beat": "b093",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b093.wav",
+  "start": 660.69,
+  "len": 7.86,
+  "text": "Y la desmalezadora gana en rincones imposibles y en pendientes. Esta es otra herramienta, no un reemplazo."
+ },
+ {
+  "beat": "b094",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b094.wav",
+  "start": 668.55,
+  "len": 10.68,
+  "text": "Las reglas de seguridad, para no olvidarlas. Uno, anteojos, botas, pantalón largo y guantes. Dos, nadie cerca: ni chicos ni mascotas."
+ },
+ {
+  "beat": "b095",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b095.wav",
+  "start": 679.23,
+  "len": 8.24,
+  "text": "El equipo completo: anteojos, protección de oídos, guantes, botas y pantalón largo. No es un exceso: es el mínimo."
+ },
+ {
+  "beat": "b096",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b096.wav",
+  "start": 687.47,
+  "len": 8.0,
+  "text": "Tres, nunca sin la cúpula ni el faldón. Cuatro, el gatillo nunca trabado: la manija de freno, siempre."
+ },
+ {
+  "beat": "b097",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b097.wav",
+  "start": 695.47,
+  "len": 10.22,
+  "text": "Cinco, antes de tocar abajo, se desenchufa. Seis, se barre el terreno antes de cortar, y se corta en seco, nunca con pasto mojado."
+ },
+ {
+  "beat": "b098",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b098.wav",
+  "start": 705.69,
+  "len": 9.6,
+  "text": "Y siete: si algo vibra, hace ruido raro o la cuchilla se dobla, se para todo. Una máquina que vibra es una máquina que va a fallar."
+ },
+ {
+  "beat": "b099",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b099.wav",
+  "start": 715.29,
+  "len": 7.94,
+  "text": "Y después de cada uso, reviso la tuerca de la cuchilla y los bulones del soporte. Cinco minutos que valen una mano."
+ },
+ {
+  "beat": "b100",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b100.wav",
+  "start": 723.23,
+  "len": 6.21,
+  "text": "Lo que cambiaría. Primero, una rueda trasera más grande, para que ruede mejor en pasto alto."
+ },
+ {
+  "beat": "b101",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b101.wav",
+  "start": 729.44,
+  "len": 6.54,
+  "text": "Con ruedas de veinte centímetros, la máquina no se hunde en el pasto, y se siente más liviana de empujar."
+ },
+ {
+  "beat": "b102",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b102.wav",
+  "start": 735.98,
+  "len": 7.12,
+  "text": "Segundo, una regulación de altura con ranura y bulón, para subir o bajar la cuchilla sin desarmar."
+ },
+ {
+  "beat": "b103",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b103.wav",
+  "start": 743.1,
+  "len": 5.89,
+  "text": "Y pintura, primero imprimación, para que la chapa no se oxide con la humedad del pasto."
+ },
+ {
+  "beat": "b104",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b104.wav",
+  "start": 748.99,
+  "len": 9.06,
+  "text": "Y el cable, con la ficha para exterior y el alargue revisados. Ni un empalme con cinta: el pasto mojado y la electricidad no se llevan."
+ },
+ {
+  "beat": "b105",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b105.wav",
+  "start": 758.05,
+  "len": 8.35,
+  "text": "Una cortadora de pasto con una amoladora vieja, ruedas de carrito, y una manija de freno de bicicleta. Y un fin de semana de trabajo."
+ },
+ {
+  "beat": "b106",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b106.wav",
+  "start": 766.4,
+  "len": 7.15,
+  "text": "Lo que aprendí: cuchilla de acero y no disco, protección completa, y el gatillo sin traba. Tres cosas."
+ },
+ {
+  "beat": "b107",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b107.wav",
+  "start": 773.55,
+  "len": 5.94,
+  "text": "Si tienes una amoladora que ya no corta hierro, no la tires. Cuéntame qué harías tú con ella."
+ },
+ {
+  "beat": "b108",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tdccorta/out/tdccorta/tramos/b108.wav",
+  "start": 779.49,
+  "len": 6.247,
+  "text": "En el próximo, un hacha podrida de óxido que dejé como nueva. Nos vemos en el taller."
+ }
+]
