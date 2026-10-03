@@ -30,6 +30,7 @@ shots.forEach((s, i) => {
   else if (s.kind === "vl") {
     const p = `vid/earlshrimpbag/${s.name}.mp4`;
     if (ex(p)) { c.src = p; c.sf = Math.max(0, F(s.start - CLIP0[s.name])); }
+    else if (img(s.name + "_still")) { c.k = "img"; c.img = img(s.name + "_still"); c.fallback = s.name + "(still)"; }
     else { asAvatar(); c.fallback = s.name; }
   } else if (s.kind === "kf") {
     const p = `vid/earlshrimpbag/${s.name}.mp4`;
@@ -47,7 +48,7 @@ shots.forEach((s, i) => {
     if (c.src) { const n = nFrames(p); if (c.dur > n) { if (c.dur - n > 75) warn.push(`stock ${s.name} corto: ${(n / 30).toFixed(1)}s < plano ${(c.dur / 30).toFixed(1)}s`); c.k = "img"; c.clip = p; c.clipF = n - 1; c.img = null; delete c.src; } }
   } else if (s.kind === "c") {
     c.k = "comp"; c.props = { ...(s.props || {}) };
-    if (c.props.bed) { const b = c.props.bed; c.props.bed = media(b); if (!c.props.bed) warn.push(`cama ${b} no existe (${s.name})`); if (/^st_/.test(b)) { c.real = 1; const n = nFrames(c.props.bed || ""); if (n && c.dur > n) warn.push(`cama stock ${b} corta para ${s.name}`); } }
+    if (c.props.bed) { const b = c.props.bed; c.props.bed = media(b); if (!c.props.bed) warn.push(`cama ${b} no existe (${s.name})`); if (/^st_/.test(b)) { c.real = 1; const n = nFrames(c.props.bed || ""); if (n && c.dur > n / 0.4) warn.push(`cama stock ${b} corta para ${s.name}`); } }
     if (c.props.img) { const b = c.props.img; c.props.img = media(b); if (!c.props.img) warn.push(`img ${b} no existe (${s.name})`); }
   }
   if (s.ov) ovs.push({ from: f0, dur: c.dur, name: s.ov.c, props: s.ov.props });

@@ -1,0 +1,98 @@
+[
+ {
+  "key": "broll/earlshrimpbag/b_bagfront.mp4",
+  "src": "broll/earlshrimpbag/b_bagfront.mp4",
+  "start": 2.8333333333333335,
+  "dur": 2.9
+ },
+ {
+  "key": "broll/earlshrimpbag/b_cartgrab.mp4",
+  "src": "broll/earlshrimpbag/b_cartgrab.mp4",
+  "start": 17.633333333333333,
+  "dur": 1.7666666666666666
+ },
+ {
+  "key": "broll/earlshrimpbag/b_lab.mp4",
+  "src": "broll/earlshrimpbag/b_lab.mp4",
+  "start": 19.4,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "broll/earlshrimpbag/b_dockprice.mp4",
+  "src": "broll/earlshrimpbag/b_dockprice.mp4",
+  "start": 39.36666666666667,
+  "dur": 1.3666666666666667
+ },
+ {
+  "key": "broll/earlshrimpbag/b_iceshrimp.mp4",
+  "src": "broll/earlshrimpbag/b_iceshrimp.mp4",
+  "start": 109.5,
+  "dur": 4
+ },
+ {
+  "key": "broll/earlshrimpbag/b_lowboat.mp4",
+  "src": "broll/earlshrimpbag/b_lowboat.mp4",
+  "start": 136.86666666666667,
+  "dur": 4
+ },
+ {
+  "key": "broll/earlshrimpbag/b_sulfite.mp4",
+  "src": "broll/earlshrimpbag/b_sulfite.mp4",
+  "start": 334.1666666666667,
+  "dur": 3.5
+ },
+ {
+  "key": "broll/earlshrimpbag/b_blackspot.mp4",
+  "src": "broll/earlshrimpbag/b_blackspot.mp4",
+  "start": 342.53333333333336,
+  "dur": 4
+ },
+ {
+  "key": "broll/earlshrimpbag/b_twins.mp4",
+  "src": "broll/earlshrimpbag/b_twins.mp4",
+  "start": 376.6,
+  "dur": 2.5
+ },
+ {
+  "key": "broll/earlshrimpbag/b_offboat.mp4",
+  "src": "broll/earlshrimpbag/b_offboat.mp4",
+  "start": 398,
+  "dur": 4
+ },
+ {
+  "key": "broll/earlshrimpbag/b_menu.mp4",
+  "src": "broll/earlshrimpbag/b_menu.mp4",
+  "start": 493.26666666666665,
+  "dur": 4
+ },
+ {
+  "key": "broll/earlshrimpbag_st/st_freezer3_1.mp4",
+  "src": "broll/earlshrimpbag_st/st_freezer3_1.mp4",
+  "start": 517.3333333333334,
+  "dur": 7.033333333333333
+ },
+ {
+  "key": "broll/earlshrimpbag/b_heads.mp4",
+  "src": "broll/earlshrimpbag/b_heads.mp4",
+  "start": 528.6,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "broll/earlshrimpbag/b_frozenatsea.mp4",
+  "src": "broll/earlshrimpbag/b_frozenatsea.mp4",
+  "start": 597.7666666666667,
+  "dur": 4
+ },
+ {
+  "key": "vid/earlshrimpbag/m1.mp4",
+  "src": "vid/earlshrimpbag/m1.mp4",
+  "start": 0,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "vid/earlshrimpbag/m2.mp4",
+  "src": "vid/earlshrimpbag/m2.mp4",
+  "start": 12.766666666666667,
+  "dur": 2.066666666666667
+ }
+]
