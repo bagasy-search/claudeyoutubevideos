@@ -1,0 +1,693 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si al tocar la canilla o el termotanque sentís una patada eléctrica, no es mala suerte. Es una falla, y tiene arreglo.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a person's hand approaching the metal tap of a water heater in a bathroom and pulling back quickly",
+    "motion": "the hand pulls back sharply from the metal tap"
+   },
+   {
+    "k": "W",
+    "v": "electric shock tap water heater"
+   },
+   {
+    "k": "W",
+    "v": "a person s hand approaching the metal tap"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio. Te explico por qué un termotanque da corriente, cómo se mide con instrumentos, y qué se arregla en casa y qué no.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in a bathroom beside an electric water heater, holding a clamp meter and a multimeter, serious"
+   },
+   {
+    "k": "G",
+    "v": "a clamp meter, a multimeter and a non contact tester on a shelf beside a water heater"
+   },
+   {
+    "k": "W",
+    "v": "Claudio in a bathroom beside an electric water"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La causa más común es la resistencia interna que pierde aislación. El agua conduce, y la carcasa queda con tensión si no hay una tierra que lleve esa fuga.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "electric water heater anode element corrosion"
+   },
+   {
+    "k": "W",
+    "v": "electric water heater anode element corrosion"
+   },
+   {
+    "k": "W",
+    "v": "electric water heater anode element corrosion"
+   },
+   {
+    "k": "W",
+    "v": "electric water heater anode element corrosion"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y una advertencia: si sentís una patada, no sigas tocando. Desenchufá o cortá la térmica del termotanque, y después seguimos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising a hand to the viewer, calm"
+   },
+   {
+    "k": "W",
+    "v": "honest electrician advice"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising a hand to the viewer calm"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay tres causas principales: la resistencia que pierde, la falta de tierra, y una conexión mojada o húmeda. Y se descartan en ese orden.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a whiteboard with the three possible causes written: element leak, no ground, wet connection"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping the board"
+   },
+   {
+    "k": "W",
+    "v": "a whiteboard with the three possible causes written"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un termotanque eléctrico es un tanque con una resistencia sumergida, un termostato y un ánodo de magnesio. Todo eso trabaja con corriente y con agua juntas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "electric water heater diagram heating element thermostat"
+   },
+   {
+    "k": "G",
+    "v": "a cutaway diagram of an electric water heater showing the tank, heating element, thermostat and anode"
+   },
+   {
+    "k": "W",
+    "v": "electric water heater diagram heating element thermostat"
+   },
+   {
+    "k": "W",
+    "v": "electric water heater diagram heating element thermostat"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La resistencia es una barra metálica dentro de un tubo aislado. Con los años, el tubo se pica por el sarro, y el agua entra en contacto con el cable caliente.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at the heating element in a diagram with a pen"
+   },
+   {
+    "k": "A",
+    "v": "an arrow along the heating element in a cutaway diagram of a water heater",
+    "motion": "the arrow highlights the heating element"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pointing at the heating element in a"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pointing at the heating element in a"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una resistencia incrustada de sarro pierde aislación, calienta peor, y lleva corriente al agua. Y desde el agua, a todo el tanque y a las cañerías metálicas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a heating element covered in thick white limescale lying on a table"
+   },
+   {
+    "k": "W",
+    "v": "limescale heating element water heater"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por eso la tierra es obligatoria: el cable verde y amarillo lleva esa fuga al suelo, y el diferencial salta. Sin tierra, la fuga pasa por vos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining that the ground wire should carry this leakage to the earth, pointing at a green and yellow wire"
+   },
+   {
+    "k": "W",
+    "v": "ground wire water heater"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, verificar la tierra del enchufe o de la conexión del termotanque. Con un probador de tomas, y con el multímetro, como en el video de la puesta a tierra.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "test outlet ground water heater plug"
+   },
+   {
+    "k": "P",
+    "v": "Claudio plugging an outlet tester into the socket of the water heater, focused"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el probador indica tierra abierta, ahí está la causa. El termotanque tiene carcasa metálica, y sin tierra, cualquier fuga llega a la superficie.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an outlet tester with three small lights showing open ground pattern"
+   },
+   {
+    "k": "A",
+    "v": "the tester plugged into a socket with lights blinking in a warning pattern",
+    "motion": "the lights blink in a warning pattern"
+   },
+   {
+    "k": "W",
+    "v": "an outlet tester with three small lights showing"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el multímetro en tensión alterna, una punta a la carcasa y otra a una tierra segura: si marca más de unos pocos voltios, hay fuga hacia la carcasa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio measuring voltage between the metal body of the tank and the ground of the wall with a multimeter, careful"
+   },
+   {
+    "k": "W",
+    "v": "measure voltage between water heater body and ground"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una lectura alta, como ochenta o cien voltios, significa que la carcasa está viva. Y eso con una resistencia de contacto alta. Por eso aunque no sientas nada, pueden darte una patada.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a multimeter display showing a voltage reading of about eighty volts"
+   },
+   {
+    "k": "W",
+    "v": "multimeter voltage reading leakage"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y al medir: puntas aisladas, una sola mano, piso seco y zapatos de suela. Si la carcasa está viva, no la toques con la otra mano.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio keeping one hand behind his back while measuring, serious"
+   },
+   {
+    "k": "W",
+    "v": "one hand rule electrical measurement"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la pinza amperométrica, abrazando solo la fase, medís cuánta corriente consume. Un termotanque típico de dos mil watts, ronda los nueve amperes.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "clamp meter water heater current normal"
+   },
+   {
+    "k": "P",
+    "v": "Claudio clamping the clamp meter around the live wire of the water heater supply, focused"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si marca mucho menos, la resistencia está dañada o desconectada. Si marca mucho más, hay un corto parcial. Los dos casos se arreglan cambiando la resistencia.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter display showing a steady current of about nine amps"
+   },
+   {
+    "k": "A",
+    "v": "the display of the clamp meter rising to a steady number as the heater turns on",
+    "motion": "the number rises and settles at nine"
+   },
+   {
+    "k": "W",
+    "v": "a clamp meter display showing a steady current"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la prueba clave: la pinza abrazando solo el cable de tierra. Si hay corriente fluyendo por ahí, hay fuga: el cable de tierra está haciendo su trabajo, y hay que reparar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio clamping around the ground wire only and reading a small value, explaining"
+   },
+   {
+    "k": "W",
+    "v": "leakage current ground wire clamp"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para fugas chicas, hace falta una pinza de fuga sensible. Una pinza común mide amperes y no ve una fuga de miliamperios, aunque alcance para que sientas la patada.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a note card that says only a sensitive clamp reads small leakage currents"
+   },
+   {
+    "k": "W",
+    "v": "sensitive clamp milliamp leakage"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para cambiar la resistencia: cortá la térmica, comprobá sin tensión, cerrá el agua fría, y vaciá el tanque por la válvula de abajo hasta que baje el nivel.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "replace water heater heating element step by step"
+   },
+   {
+    "k": "P",
+    "v": "Claudio switching off the breaker and closing the cold water valve above the water heater, careful"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se saca la tapa, se anota o se fotografía dónde va cada cable, y se desconectan. Siempre con detector de tensión antes de tocar nada.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hand removing the cover plate of the heating element at the bottom of a tank, with the wires visible"
+   },
+   {
+    "k": "A",
+    "v": "a screwdriver removing a metal cover plate and exposing the wires of the element",
+    "motion": "the cover plate comes off showing the wires"
+   },
+   {
+    "k": "W",
+    "v": "a hand removing the cover plate of the"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se desenrosca la resistencia, o se aflojan las tuercas de la brida, y se saca. Si está llena de sarro o picada, ya sabés de dónde venía la fuga.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio unscrewing the old heating element with a large wrench, effort showing"
+   },
+   {
+    "k": "W",
+    "v": "unscrew heating element wrench"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se coloca la nueva con su junta de goma nueva, bien asentada. Una junta vieja gotea, y el agua en la conexión es otra causa de patadas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a new heating element next to the old one covered in scale on a table"
+   },
+   {
+    "k": "W",
+    "v": "new heating element installation gasket"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Importante: se llena el tanque por completo y se purga el aire abriendo una canilla de agua caliente, antes de dar corriente. Una resistencia en seco se quema en segundos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio refilling the tank and bleeding air by opening a hot tap, then checking the connection for dryness, careful"
+   },
+   {
+    "k": "W",
+    "v": "refill water heater bleed air before turning power on"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El ánodo de magnesio se consume para que el tanque no se oxide. Si ya no queda, el tanque se corroe, y el agua pasa a ser peor conductora de fugas y de corrientes parásitas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "anode rod water heater replace corrosion"
+   },
+   {
+    "k": "G",
+    "v": "a corroded magnesium anode rod next to a new one"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los uniones dieléctricas, en la entrada y la salida del agua, evitan que la corriente pase del tanque a la cañería de cobre. Si faltan o están rotas, la cañería puede cobrar tensión.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio checking the metal pipes connected to the water heater with a multimeter, focused"
+   },
+   {
+    "k": "W",
+    "v": "dielectric union water heater galvanic"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Son un detalle barato que cualquier plomero conoce. Con la unión en buen estado, la fuga no se propaga por todas las canillas de la casa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a brass dielectric union fitting with a plastic insulating ring visible"
+   },
+   {
+    "k": "W",
+    "v": "dielectric union fitting plumbing"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y en el baño, las partes metálicas grandes deben estar unidas a la tierra con un conductor, para que no haya diferencias de tensión entre las canillas y el termotanque.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "bonding equipotential metal pipes bathroom grounding"
+   },
+   {
+    "k": "W",
+    "v": "bonding equipotential metal pipes bathroom grounding"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un mito: poner una alfombra de goma y listo. Te aísla un poco al tocarlo, pero la fuga sigue ahí, y el próximo que lo toque descalzo se lleva la patada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a rubber mat on the floor of a bathroom"
+   },
+   {
+    "k": "G",
+    "v": "a rubber mat under a water heater with a red cross on it"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Otro error peligroso: sacar el cable de tierra para que la patada desaparezca. Parece que funciona, porque la fuga ya no llega a la carcasa de la misma forma, pero el riesgo real sube.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "disconnect ground wire to stop tingling wrong"
+   },
+   {
+    "k": "W",
+    "v": "disconnect ground wire to stop tingling wrong"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El cable de tierra nunca se quita ni se corta. Si molesta, lo que molesta es la falla, y la falla se arregla, no se esconde.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio crossing his arms, serious"
+   },
+   {
+    "k": "W",
+    "v": "never remove ground wire"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un diferencial en el tablero, probado una vez por mes, es lo que te salva si todo lo demás falla. Sin diferencial, una fuga puede ser mortal.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a residual current breaker with the test button highlighted"
+   },
+   {
+    "k": "A",
+    "v": "a finger pressing the test button of a residual current breaker and the lever dropping",
+    "motion": "the breaker lever drops with a click"
+   },
+   {
+    "k": "W",
+    "v": "a residual current breaker with the test button"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si no encontrás la causa, si el tablero tiene problemas, o si el termotanque tiene más de diez o doce años, llamá a un electricista matriculado y a un plomero. Muchas veces conviene cambiarlo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "call licensed electrician and plumber together"
+   },
+   {
+    "k": "W",
+    "v": "call licensed electrician and plumber together"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hacé la cuenta: resistencia más mano de obra, contra un termotanque nuevo. Si el tanque ya está oxidado, la resistencia nueva solo posterga lo inevitable.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio doing a quick calculation on a notepad, thoughtful"
+   },
+   {
+    "k": "G",
+    "v": "a notepad with the cost of a new element, the cost of a visit and the cost of a new water heater listed"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pedí que te digan qué midieron, con qué valores, y que te dejen anotado. Un técnico serio muestra la resistencia vieja y te explica la falla.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a written checklist of questions for a technician on a clipboard"
+   },
+   {
+    "k": "W",
+    "v": "ask technician measurements written"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las tres causas: la resistencia que pierde, la falta de tierra, y la conexión húmeda. Y siempre con medición, no con suposiciones.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting three causes with his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three causes: element leakage, missing ground, wet connection"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la tierra bien hecha, la resistencia en buen estado y un diferencial que funcione, el termotanque trabaja tranquilo y vos no te llevás más patadas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "safe bathroom evening calm water heater running quietly"
+   },
+   {
+    "k": "W",
+    "v": "safe bathroom evening calm water heater running quietly"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quedate en el canal. Y contame qué instrumento usaste vos para medir, y qué valor te dio. Nos vemos en el próximo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly electrician advice"
+   }
+  ]
+ }
+]

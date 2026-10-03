@@ -1,0 +1,335 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b001.wav",
+  "start": 0.0,
+  "len": 8.21,
+  "text": "Si al tocar la canilla o el termotanque sentís una patada eléctrica, no es mala suerte. Es una falla, y tiene arreglo."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b002.wav",
+  "start": 8.21,
+  "len": 7.31,
+  "text": "Soy Claudio. Te explico por qué un termotanque da corriente, cómo se mide con instrumentos, y qué se arregla en casa y qué no."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b003.wav",
+  "start": 15.52,
+  "len": 10.22,
+  "text": "La causa más común es la resistencia interna que pierde aislación. El agua conduce, y la carcasa queda con tensión si no hay una tierra que lleve esa fuga."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b004.wav",
+  "start": 25.74,
+  "len": 8.6,
+  "text": "Y una advertencia: si sentís una patada, no sigas tocando. Desenchufá o cortá la térmica del termotanque, y después seguimos."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b005.wav",
+  "start": 34.34,
+  "len": 9.22,
+  "text": "Hay tres causas principales: la resistencia que pierde, la falta de tierra, y una conexión mojada o húmeda. Y se descartan en ese orden."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b006.wav",
+  "start": 43.56,
+  "len": 10.24,
+  "text": "Un termotanque eléctrico es un tanque con una resistencia sumergida, un termostato y un ánodo de magnesio. Todo eso trabaja con corriente y con agua juntas."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b007.wav",
+  "start": 53.8,
+  "len": 10.5,
+  "text": "La resistencia es una barra metálica dentro de un tubo aislado. Con los años, el tubo se pica por el sarro, y el agua entra en contacto con el cable caliente."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b008.wav",
+  "start": 64.3,
+  "len": 9.53,
+  "text": "Una resistencia incrustada de sarro pierde aislación, calienta peor, y lleva corriente al agua. Y desde el agua, a todo el tanque y a las cañerías metálicas."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b009.wav",
+  "start": 73.83,
+  "len": 10.39,
+  "text": "Por eso la tierra es obligatoria: el cable verde y amarillo lleva esa fuga al suelo, y el diferencial salta. Sin tierra, la fuga pasa por vos."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b010.wav",
+  "start": 84.22,
+  "len": 9.96,
+  "text": "Primero, verificar la tierra del enchufe o de la conexión del termotanque. Con un probador de tomas, y con el multímetro, como en el video de la puesta a tierra."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b011.wav",
+  "start": 94.18,
+  "len": 8.94,
+  "text": "Si el probador indica tierra abierta, ahí está la causa. El termotanque tiene carcasa metálica, y sin tierra, cualquier fuga llega a la superficie."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b012.wav",
+  "start": 103.12,
+  "len": 9.73,
+  "text": "Con el multímetro en tensión alterna, una punta a la carcasa y otra a una tierra segura: si marca más de unos pocos voltios, hay fuga hacia la carcasa."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b013.wav",
+  "start": 112.85,
+  "len": 12.69,
+  "text": "Una lectura alta, como ochenta o cien voltios, significa que la carcasa está viva. Y eso con una resistencia de contacto alta. Por eso aunque no sientas nada, pueden darte una patada."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b014.wav",
+  "start": 125.54,
+  "len": 9.44,
+  "text": "Y al medir: puntas aisladas, una sola mano, piso seco y zapatos de suela. Si la carcasa está viva, no la toques con la otra mano."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b015.wav",
+  "start": 134.98,
+  "len": 9.71,
+  "text": "Con la pinza amperométrica, abrazando solo la fase, medís cuánta corriente consume. Un termotanque típico de dos mil watts, ronda los nueve amperes."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b016.wav",
+  "start": 144.69,
+  "len": 10.85,
+  "text": "Si marca mucho menos, la resistencia está dañada o desconectada. Si marca mucho más, hay un corto parcial. Los dos casos se arreglan cambiando la resistencia."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b017.wav",
+  "start": 155.54,
+  "len": 10.79,
+  "text": "Y la prueba clave: la pinza abrazando solo el cable de tierra. Si hay corriente fluyendo por ahí, hay fuga: el cable de tierra está haciendo su trabajo, y hay que reparar."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b018.wav",
+  "start": 166.33,
+  "len": 11.17,
+  "text": "Para fugas chicas, hace falta una pinza de fuga sensible. Una pinza común mide amperes y no ve una fuga de miliamperios, aunque alcance para que sientas la patada."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b019.wav",
+  "start": 177.5,
+  "len": 9.58,
+  "text": "Para cambiar la resistencia: cortá la térmica, comprobá sin tensión, cerrá el agua fría, y vaciá el tanque por la válvula de abajo hasta que baje el nivel."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b020.wav",
+  "start": 187.08,
+  "len": 9.7,
+  "text": "Se saca la tapa, se anota o se fotografía dónde va cada cable, y se desconectan. Siempre con detector de tensión antes de tocar nada."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b021.wav",
+  "start": 196.78,
+  "len": 8.84,
+  "text": "Se desenrosca la resistencia, o se aflojan las tuercas de la brida, y se saca. Si está llena de sarro o picada, ya sabés de dónde venía la fuga."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b022.wav",
+  "start": 205.62,
+  "len": 8.86,
+  "text": "Se coloca la nueva con su junta de goma nueva, bien asentada. Una junta vieja gotea, y el agua en la conexión es otra causa de patadas."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b023.wav",
+  "start": 214.48,
+  "len": 11.54,
+  "text": "Importante: se llena el tanque por completo y se purga el aire abriendo una canilla de agua caliente, antes de dar corriente. Una resistencia en seco se quema en segundos."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b024.wav",
+  "start": 226.02,
+  "len": 11.67,
+  "text": "El ánodo de magnesio se consume para que el tanque no se oxide. Si ya no queda, el tanque se corroe, y el agua pasa a ser peor conductora de fugas y de corrientes parásitas."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b025.wav",
+  "start": 237.69,
+  "len": 12.44,
+  "text": "Los uniones dieléctricas, en la entrada y la salida del agua, evitan que la corriente pase del tanque a la cañería de cobre. Si faltan o están rotas, la cañería puede cobrar tensión."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b026.wav",
+  "start": 250.13,
+  "len": 8.1,
+  "text": "Son un detalle barato que cualquier plomero conoce. Con la unión en buen estado, la fuga no se propaga por todas las canillas de la casa."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b027.wav",
+  "start": 258.23,
+  "len": 10.4,
+  "text": "Y en el baño, las partes metálicas grandes deben estar unidas a la tierra con un conductor, para que no haya diferencias de tensión entre las canillas y el termotanque."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b028.wav",
+  "start": 268.63,
+  "len": 10.91,
+  "text": "Un mito: poner una alfombra de goma y listo. Te aísla un poco al tocarlo, pero la fuga sigue ahí, y el próximo que lo toque descalzo se lleva la patada."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b029.wav",
+  "start": 279.54,
+  "len": 12.04,
+  "text": "Otro error peligroso: sacar el cable de tierra para que la patada desaparezca. Parece que funciona, porque la fuga ya no llega a la carcasa de la misma forma, pero el riesgo real sube."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b030.wav",
+  "start": 291.58,
+  "len": 8.43,
+  "text": "El cable de tierra nunca se quita ni se corta. Si molesta, lo que molesta es la falla, y la falla se arregla, no se esconde."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b031.wav",
+  "start": 300.01,
+  "len": 9.81,
+  "text": "Y un diferencial en el tablero, probado una vez por mes, es lo que te salva si todo lo demás falla. Sin diferencial, una fuga puede ser mortal."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b032.wav",
+  "start": 309.82,
+  "len": 12.1,
+  "text": "Si no encontrás la causa, si el tablero tiene problemas, o si el termotanque tiene más de diez o doce años, llamá a un electricista matriculado y a un plomero. Muchas veces conviene cambiarlo."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b033.wav",
+  "start": 321.92,
+  "len": 10.6,
+  "text": "Hacé la cuenta: resistencia más mano de obra, contra un termotanque nuevo. Si el tanque ya está oxidado, la resistencia nueva solo posterga lo inevitable."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b034.wav",
+  "start": 332.52,
+  "len": 9.18,
+  "text": "Pedí que te digan qué midieron, con qué valores, y que te dejen anotado. Un técnico serio muestra la resistencia vieja y te explica la falla."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b035.wav",
+  "start": 341.7,
+  "len": 9.52,
+  "text": "Las tres causas: la resistencia que pierde, la falta de tierra, y la conexión húmeda. Y siempre con medición, no con suposiciones."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b036.wav",
+  "start": 351.22,
+  "len": 9.31,
+  "text": "Con la tierra bien hecha, la resistencia en buen estado y un diferencial que funcione, el termotanque trabaja tranquilo y vos no te llevás más patadas."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pztanque/out/pztanque/tramos/b037.wav",
+  "start": 360.53,
+  "len": 8.725,
+  "text": "Si te sirvió, quedate en el canal. Y contame qué instrumento usaste vos para medir, y qué valor te dio. Nos vemos en el próximo."
+ }
+]

@@ -1,0 +1,655 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "UNA PATADA ELÉCTRICA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "patada",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b003",
+   "props": {
+    "text": "LA RESISTENCIA PIERDE AISLACIÓN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "resistencia",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b004",
+   "props": {
+    "text": "SI SENTÍS UNA PATADA: CORTÁ LA TÉRMICA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "patada",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b005",
+   "props": {
+    "pos": "top",
+    "size": 76,
+    "words": [
+     {
+      "t": "1 RESISTENCIA QUE PIERDE",
+      "beat": "b005",
+      "word": "resistencia",
+      "hl": "yellow"
+     },
+     {
+      "t": "2 FALTA DE TIERRA",
+      "beat": "b005",
+      "word": "tierra"
+     },
+     {
+      "t": "3 CONEXIÓN HÚMEDA",
+      "beat": "b005",
+      "word": "conexión",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "causas",
+   "until": "b005",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b006",
+   "props": {
+    "text": "RESISTENCIA · TERMOSTATO · ÁNODO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "ánodo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b008",
+   "props": {
+    "text": "SARRO: PIERDE AISLACIÓN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "incrustada",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b009",
+   "props": {
+    "text": "LA TIERRA LLEVA LA FUGA AL SUELO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "tierra",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b010",
+   "props": {
+    "step": 1,
+    "total": 3,
+    "title": "LA TIERRA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b011",
+   "props": {
+    "text": "TIERRA ABIERTA = LA CAUSA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "abierta",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b012",
+   "props": {
+    "text": "MULTÍMETRO: CARCASA ↔ TIERRA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "multímetro",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b013",
+   "props": {
+    "text": "80 – 100 V = CARCASA VIVA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "100",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b014",
+   "props": {
+    "text": "PUNTAS AISLADAS · UNA MANO · PISO SECO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "aisladas",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b015",
+   "props": {
+    "text": "LA PINZA: ≈ 9 A (2000 W)",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "9",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b017",
+   "props": {
+    "text": "PINZA EN EL CABLE DE TIERRA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "tierra",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b018",
+   "props": {
+    "text": "PARA FUGAS CHICAS: PINZA SENSIBLE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "sensible",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b019",
+   "props": {
+    "step": 2,
+    "total": 3,
+    "title": "CAMBIAR LA RESISTENCIA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b019",
+   "props": {
+    "text": "CORTÁ LA TÉRMICA · COMPROBÁ SIN TENSIÓN",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "térmica",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b020",
+   "props": {
+    "text": "FOTOGRAFIÁ DÓNDE VA CADA CABLE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "fotografía",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b022",
+   "props": {
+    "text": "JUNTA DE GOMA NUEVA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "junta",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b023",
+   "props": {
+    "text": "LLENÁ Y PURGÁ ANTES DE DAR CORRIENTE",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "purga",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b024",
+   "props": {
+    "step": 3,
+    "total": 3,
+    "title": "ÁNODO Y CAÑERÍAS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b025",
+   "props": {
+    "text": "UNIÓN DIELÉCTRICA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "uniones",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b027",
+   "props": {
+    "text": "PARTES METÁLICAS UNIDAS A TIERRA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "unidas",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b028",
+   "props": {
+    "text": "MITO: LA ALFOMBRA DE GOMA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "alfombra",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b029",
+   "props": {
+    "text": "NUNCA SAQUES EL CABLE DE TIERRA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "cable",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b031",
+   "props": {
+    "text": "DIFERENCIAL: PROBALO CADA MES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "diferencial",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b032",
+   "props": {
+    "text": "MÁS DE 10 AÑOS: CONVIENE CAMBIARLO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "años",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b033",
+   "props": {
+    "text": "RESISTENCIA + MANO DE OBRA VS NUEVO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "cuenta",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b034",
+   "props": {
+    "text": "PEDÍ QUÉ MIDIERON Y CON QUÉ VALORES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "midieron",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b035",
+   "props": {
+    "pos": "top",
+    "size": 80,
+    "words": [
+     {
+      "t": "RESISTENCIA",
+      "beat": "b035",
+      "word": "resistencia",
+      "hl": "yellow"
+     },
+     {
+      "t": "FALTA DE TIERRA",
+      "beat": "b035",
+      "word": "tierra"
+     },
+     {
+      "t": "CONEXIÓN HÚMEDA",
+      "beat": "b035",
+      "word": "conexión",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "causas",
+   "until": "b035",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}
