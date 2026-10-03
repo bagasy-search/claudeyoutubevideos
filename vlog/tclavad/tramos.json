@@ -1,0 +1,605 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b001.wav",
+  "start": 0.0,
+  "len": 7.05,
+  "text": "Esta lavadora tiene tres años. Y ya hace un ruido que sale carísimo. Te voy a contar por qué le pasa a tantas."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b002.wav",
+  "start": 7.05,
+  "len": 8.92,
+  "text": "Soy Claudio, y reparo lavadoras para vivir. En todos estos años, las fallas se repiten, y tienen más que ver con el diseño que con la marca."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b003.wav",
+  "start": 15.97,
+  "len": 8.27,
+  "text": "Por eso no te voy a nombrar marcas: te voy a contar qué tipos de lavadora y qué piezas fallan más. Con eso eliges mejor."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b004.wav",
+  "start": 24.24,
+  "len": 7.65,
+  "text": "Son cinco fallas que veo todas las semanas. Y dos de ellas se pueden evitar con hábitos que casi nadie tiene."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b005.wav",
+  "start": 31.89,
+  "len": 6.63,
+  "text": "Una de esas fallas cuesta casi lo mismo que una lavadora nueva. Y es la que más gente arruina sin saber."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b006.wav",
+  "start": 38.52,
+  "len": 7.81,
+  "text": "Mi criterio es simple: te digo lo que veo, sin vender nada. Si algo conviene reparar, lo digo. Y si no, también."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b007.wav",
+  "start": 46.33,
+  "len": 9.23,
+  "text": "Para entender las fallas, hay que saber qué hay adentro. Un tambor, un motor, una bomba, una placa electrónica y los amortiguadores."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b008.wav",
+  "start": 55.56,
+  "len": 9.36,
+  "text": "El tambor gira sobre rodamientos. Está dentro de otro tambor, la cuba, que no gira. Y todo cuelga de resortes y amortiguadores."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b009.wav",
+  "start": 64.92,
+  "len": 7.82,
+  "text": "En las de carga frontal, hay una goma alrededor de la puerta. Y en las de carga superior, el tambor gira de forma vertical."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b010.wav",
+  "start": 72.74,
+  "len": 7.15,
+  "text": "Los dos tipos tienen ventajas y fallas distintas. Las voy a mencionar en cada caso, para que sepas qué mirar."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b011.wav",
+  "start": 79.89,
+  "len": 8.66,
+  "text": "Falla uno, la más cara: los rodamientos del tambor. Es la pieza que hace girar el tambor, y se desgasta con el uso y la humedad."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b012.wav",
+  "start": 88.55,
+  "len": 8.64,
+  "text": "Cuando falla, se escucha un ruido como un rugido grave al centrifugar, que sube con la velocidad. Es inconfundible una vez que lo oyes."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b013.wav",
+  "start": 97.19,
+  "len": 8.18,
+  "text": "Casi siempre empieza por el sello, esa goma que protege el rodamiento. Si pasa agua, el rodamiento se oxida, y todo se arruina."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b014.wav",
+  "start": 105.37,
+  "len": 9.59,
+  "text": "La prueba: con la lavadora apagada, mueves el tambor de arriba hacia abajo. Si tiene juego o suena a golpes, el rodamiento está dañado."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b015.wav",
+  "start": 114.96,
+  "len": 8.77,
+  "text": "El problema: en muchos modelos, el rodamiento viene soldado a la cuba, y hay que cambiar todo. El costo se acerca a una máquina nueva."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b016.wav",
+  "start": 123.73,
+  "len": 9.08,
+  "text": "Si el equipo es viejo y la reparación pasa de la mitad del precio de uno nuevo, yo mismo te recomiendo cambiarlo. Y eso lo digo sin ganar nada."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b017.wav",
+  "start": 132.81,
+  "len": 9.47,
+  "text": "Cómo evitarlo: no sobrecargar el tambor, nivelar bien la lavadora, y no dejarla húmeda y cerrada días. La humedad es lo que más daña."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b018.wav",
+  "start": 142.28,
+  "len": 7.25,
+  "text": "Falla dos: los amortiguadores. Son esas varillas que sujetan la cuba, y absorben la vibración del centrifugado."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b019.wav",
+  "start": 149.53,
+  "len": 8.68,
+  "text": "La prueba: empujas la cuba hacia abajo y la sueltas. Si rebota más de una o dos veces, los amortiguadores están gastados."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b020.wav",
+  "start": 158.21,
+  "len": 8.65,
+  "text": "Los síntomas: la lavadora camina, golpea las paredes del hueco, y hace mucho ruido al centrifugar. A veces parece que va a explotar."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b021.wav",
+  "start": 166.86,
+  "len": 9.21,
+  "text": "Es una reparación barata y relativamente fácil: se cambian por pares, y la máquina vuelve a centrifugar suave. Si la atiendes a tiempo."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b022.wav",
+  "start": 176.07,
+  "len": 10.26,
+  "text": "Si la dejas con amortiguadores gastados, la vibración rompe otras piezas: el soporte, los rodamientos, y los cables. Y ahí ya sale caro."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b023.wav",
+  "start": 186.33,
+  "len": 9.5,
+  "text": "Falla tres: la bomba de desagüe. Es la que saca el agua, y casi siempre la rompe algo que se coló: monedas, ganchos, calcetines."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b024.wav",
+  "start": 195.83,
+  "len": 8.55,
+  "text": "Mira lo que saqué de una bomba: un alambre de sostén, una moneda y un calcetín. Todo esto frena el motor y rompe la hélice."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b025.wav",
+  "start": 204.38,
+  "len": 6.69,
+  "text": "Casi todas tienen un filtro de la bomba, atrás de una tapita abajo. Hay que limpiarlo cada dos o tres meses."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b026.wav",
+  "start": 211.07,
+  "len": 8.19,
+  "text": "Se pone una bandeja plana debajo, se afloja despacio, y sale el agua que quedó. Y el filtro limpio salva a la bomba."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b027.wav",
+  "start": 219.26,
+  "len": 7.9,
+  "text": "Cuando la bomba falla, la lavadora se queda con agua, no centrifuga, o muestra un código de error. Es un síntoma clásico."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b028.wav",
+  "start": 227.16,
+  "len": 8.3,
+  "text": "Falla cuatro: la placa electrónica. Controla todo el lavado, y falla por humedad, picos de tensión y desgaste de relés."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b029.wav",
+  "start": 235.46,
+  "len": 9.24,
+  "text": "Se nota por fallas raras: no prende, las luces parpadean, o hace cosas sin lógica. La causa suele ser humedad que corroe las conexiones."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b030.wav",
+  "start": 244.7,
+  "len": 6.89,
+  "text": "Un protector de picos de tensión ayuda mucho. Es una compra chica que cuida la parte más cara de la electrónica."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b031.wav",
+  "start": 251.59,
+  "len": 10.25,
+  "text": "A veces la placa se repara, con un técnico que sepa de electrónica. Otras veces se cambia, y el repuesto cuesta bastante. Pide siempre un presupuesto desglosado."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b032.wav",
+  "start": 261.84,
+  "len": 8.1,
+  "text": "Falla cinco: la goma de la puerta y las fugas. Es la más común, y la menos costosa. Pero se ignora hasta que hay un charco."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b033.wav",
+  "start": 269.94,
+  "len": 5.99,
+  "text": "En la goma se junta moho, pelusa y humedad. Con el tiempo se pudre y pierde agua por abajo."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b034.wav",
+  "start": 275.93,
+  "len": 8.91,
+  "text": "Limpiarla cada mes con un paño y vinagre diluido, y dejar la puerta entreabierta al terminar, alarga su vida y evita malos olores."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b035.wav",
+  "start": 284.84,
+  "len": 9.53,
+  "text": "Si hay un charco, mira de dónde sale: la goma, la manguera de entrada, la bomba o el depósito de detergente. Cada una tiene su solución."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b036.wav",
+  "start": 294.37,
+  "len": 7.27,
+  "text": "Entonces, ¿qué tipo conviene? Depende de tu uso. Y te lo explico sin vender marcas, que cambian todo el tiempo."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b037.wav",
+  "start": 301.64,
+  "len": 9.66,
+  "text": "Las de carga frontal lavan mejor y gastan menos agua, pero requieren más cuidado con la goma y la humedad. Y si sobrecargas, sufren los rodamientos."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b038.wav",
+  "start": 311.3,
+  "len": 9.85,
+  "text": "Las de carga superior son más simples y robustas, con menos piezas de desgaste. Lavan más ruidoso y gastan más agua, pero suelen durar sin drama."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b039.wav",
+  "start": 321.15,
+  "len": 8.52,
+  "text": "Y el motor: los de transmisión directa, sin correa, tienen menos desgaste. Los de correa son más simples y más baratos de reparar."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b040.wav",
+  "start": 329.67,
+  "len": 7.79,
+  "text": "Y el tamaño: elige una capacidad un poco mayor a lo que necesitas. Una lavadora al límite se desgasta mucho más rápido."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b041.wav",
+  "start": 337.46,
+  "len": 8.68,
+  "text": "Cinco hábitos que alargan la vida de una lavadora. Uno, no sobrecargarla. Dos, nivelarla bien, con las patas ajustables."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b042.wav",
+  "start": 346.14,
+  "len": 9.66,
+  "text": "Una lavadora desnivelada vibra más, y todo se desgasta antes. Con un nivel, se ajustan las patas hasta que la burbuja quede centrada."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b043.wav",
+  "start": 355.8,
+  "len": 8.57,
+  "text": "Tres, usar la cantidad correcta de detergente. Más jabón no lava mejor: deja residuos, espuma y daña los sensores."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b044.wav",
+  "start": 364.37,
+  "len": 8.31,
+  "text": "Cuatro, revisar los bolsillos y cerrar los cierres. Las monedas y los alambres rompen bombas y rayan tambores."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b045.wav",
+  "start": 372.68,
+  "len": 7.37,
+  "text": "Y cinco, al terminar, dejar la puerta entreabierta para que se seque. Con eso se evita el moho y el mal olor."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b046.wav",
+  "start": 380.05,
+  "len": 6.8,
+  "text": "Aprende a escuchar tu lavadora. Cada ruido dice algo, y detectarlo a tiempo ahorra mucho dinero."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b047.wav",
+  "start": 386.85,
+  "len": 9.31,
+  "text": "Un rugido grave que sube con la velocidad: rodamientos. Golpes fuertes al centrifugar: amortiguadores o carga mal repartida."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b048.wav",
+  "start": 396.16,
+  "len": 9.86,
+  "text": "Un zumbido sin que desagüe: la bomba. Y un chasquido repetido, o un olor a quemado: la placa o el motor. Ahí, apaga y desenchufa."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b049.wav",
+  "start": 406.02,
+  "len": 8.36,
+  "text": "El olor a quemado nunca se ignora. Desconecta la lavadora de inmediato, y no la vuelvas a usar hasta que la vea un técnico."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b050.wav",
+  "start": 414.38,
+  "len": 8.85,
+  "text": "El equilibrio de la carga importa. Una toalla grande sola o un edredón suelto desbalancean el tambor, y vibra a lo bestia."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b051.wav",
+  "start": 423.23,
+  "len": 8.12,
+  "text": "No necesitas pesar siempre, pero una regla útil: el tambor lleno hasta tres cuartos, con espacio para que la ropa se mueva."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b052.wav",
+  "start": 431.35,
+  "len": 9.4,
+  "text": "Una referencia sencilla: debe caber una mano abierta entre la ropa y la parte superior del tambor. Si no, estás pasando el límite."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b053.wav",
+  "start": 440.75,
+  "len": 8.57,
+  "text": "Una regla práctica: si la reparación cuesta más de la mitad de una lavadora nueva y el equipo tiene más de ocho años, conviene cambiarla."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b054.wav",
+  "start": 449.32,
+  "len": 7.86,
+  "text": "Pero depende: una lavadora de diez años con rodamientos nuevos puede durar otros diez. Todo depende del estado del resto."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b055.wav",
+  "start": 457.18,
+  "len": 7.51,
+  "text": "Mira el tambor por dentro: si está oxidado, con agujeros o con rayas profundas, no vale la pena invertir más."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b056.wav",
+  "start": 464.69,
+  "len": 8.92,
+  "text": "Y verifica que haya repuestos disponibles. Algunos modelos descontinuados ya no tienen piezas, y no tiene sentido empezar una reparación."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b057.wav",
+  "start": 473.61,
+  "len": 9.57,
+  "text": "Si vas a comprar, mi criterio como técnico: busca repuestos disponibles, diseño simple, capacidad adecuada, y un servicio técnico cercano."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b058.wav",
+  "start": 483.18,
+  "len": 8.55,
+  "text": "No te dejes llevar por las funciones raras: vapor, wifi, programas infinitos. Cada función es una pieza más que puede fallar."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b059.wav",
+  "start": 491.73,
+  "len": 10.59,
+  "text": "Los programas básicos, algodón, sintético, rápido y delicado, hacen todo lo necesario. Lo demás es marketing, la mayoría de las veces."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b060.wav",
+  "start": 502.32,
+  "len": 9.33,
+  "text": "Y mira la garantía: qué cubre, cuánto dura, y si incluye el motor, el tambor y los rodamientos. Ahí se ve la confianza del fabricante."
+ },
+ {
+  "beat": "b061",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b061.wav",
+  "start": 511.65,
+  "len": 9.04,
+  "text": "Un mantenimiento de cinco minutos al mes: limpiar el filtro de la bomba, la goma de la puerta, el cajón del detergente y revisar las mangueras."
+ },
+ {
+  "beat": "b062",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b062.wav",
+  "start": 520.69,
+  "len": 7.97,
+  "text": "Las mangueras de entrada se cambian cada pocos años: si se abomban o tienen grietas, una rotura te inunda la casa."
+ },
+ {
+  "beat": "b063",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b063.wav",
+  "start": 528.66,
+  "len": 9.25,
+  "text": "Y cada dos o tres meses, un ciclo en vacío con agua caliente y un limpiador específico, para arrastrar la grasa y el moho de adentro."
+ },
+ {
+  "beat": "b064",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b064.wav",
+  "start": 537.91,
+  "len": 8.61,
+  "text": "Con esos hábitos, la lavadora llega a los diez o quince años. Con descuido, apenas a los cinco. Es tu decisión, cada mes."
+ },
+ {
+  "beat": "b065",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b065.wav",
+  "start": 546.52,
+  "len": 9.23,
+  "text": "Las cinco: rodamientos, amortiguadores, bomba, placa y goma de la puerta. Cada una avisa antes, si sabes escuchar."
+ },
+ {
+  "beat": "b066",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b066.wav",
+  "start": 555.75,
+  "len": 7.74,
+  "text": "Con un poco de cuidado, una lavadora puede durar más de diez años. Y con descuido, muere a los tres. Esa es la diferencia."
+ },
+ {
+  "beat": "b067",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tclavad/out/tclavad/tramos/b067.wav",
+  "start": 563.49,
+  "len": 10.461,
+  "text": "Si te sirvió, quédate en el canal. En el próximo, los tres calentadores de agua que compraría en este año, sin venderte nada. Y cuéntame qué falla tuvo tu lavadora."
+ }
+]

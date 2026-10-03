@@ -1,0 +1,1112 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "TRES AÑOS Y YA HACE RUIDO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "ruido",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "REPARO LAVADORAS PARA VIVIR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "reparo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b003",
+   "props": {
+    "text": "SIN MARCAS: SOLO TIPOS DE FALLA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "marcas",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b004",
+   "props": {
+    "text": "5 FALLAS TODAS LAS SEMANAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cinco",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "UNA CUESTA CASI COMO UNA NUEVA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "nueva",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b007",
+   "props": {
+    "text": "QUÉ HAY ADENTRO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "adentro",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b008",
+   "props": {
+    "text": "RODAMIENTOS · CUBA · TAMBOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "rodamientos",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b011",
+   "props": {
+    "step": 1,
+    "total": 5,
+    "title": "LOS RODAMIENTOS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b012",
+   "props": {
+    "text": "RUIDO GRAVE AL CENTRIFUGAR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "rugido",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b013",
+   "props": {
+    "text": "EMPIEZA POR EL SELLO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "sello",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b014",
+   "props": {
+    "text": "PRUEBA: MOVÉ EL TAMBOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "prueba",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b015",
+   "props": {
+    "text": "RODAMIENTO SOLDADO A LA CUBA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "soldado",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b016",
+   "props": {
+    "text": "REPARACIÓN > ½ DEL PRECIO: PENSALO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "mitad",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b017",
+   "props": {
+    "text": "NO SOBRECARGAR · NIVELAR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "sobrecargar",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b018",
+   "props": {
+    "step": 2,
+    "total": 5,
+    "title": "LOS AMORTIGUADORES"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b019",
+   "props": {
+    "text": "PRUEBA: EMPUJÁ LA CUBA Y SOLTALA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "empujas",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b020",
+   "props": {
+    "text": "LA LAVADORA CAMINA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "camina",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b021",
+   "props": {
+    "text": "REPARACIÓN BARATA Y FÁCIL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "barata",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b023",
+   "props": {
+    "step": 3,
+    "total": 5,
+    "title": "LA BOMBA DE DESAGÜE"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b024",
+   "props": {
+    "text": "LO QUE SACAMOS DE UNA BOMBA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "saqué",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b025",
+   "props": {
+    "text": "EL FILTRO DE LA BOMBA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "filtro",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b026",
+   "props": {
+    "text": "BANDEJA DEBAJO · AFLOJÁ DESPACIO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "bandeja",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b028",
+   "props": {
+    "step": 4,
+    "total": 5,
+    "title": "LA PLACA ELECTRÓNICA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b029",
+   "props": {
+    "text": "FALLAS RARAS: NO PRENDE · LUCES PARPADEAN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 48
+   },
+   "word": "raras",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b030",
+   "props": {
+    "text": "PROTECTOR DE PICOS DE TENSIÓN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "protector",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b032",
+   "props": {
+    "step": 5,
+    "total": 5,
+    "title": "LA GOMA Y LAS FUGAS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b034",
+   "props": {
+    "text": "LIMPIALA CADA MES CON VINAGRE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "vinagre",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b035",
+   "props": {
+    "text": "¿DE DÓNDE SALE EL CHARCO?",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "charco",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b037",
+   "props": {
+    "text": "CARGA FRONTAL: LAVA MEJOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "frontal",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b038",
+   "props": {
+    "text": "CARGA SUPERIOR: MÁS SIMPLE Y ROBUSTA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "robustas",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b039",
+   "props": {
+    "text": "TRANSMISIÓN DIRECTA: SIN CORREA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "correa",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b041",
+   "props": {
+    "pos": "top",
+    "size": 80,
+    "words": [
+     {
+      "t": "5 HÁBITOS QUE ALARGAN SU VIDA",
+      "beat": "b041",
+      "word": "hábitos",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "hábitos",
+   "until": "b041",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b042",
+   "props": {
+    "text": "NIVELADA: VIBRA MENOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "desnivelada",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b043",
+   "props": {
+    "text": "LA CANTIDAD CORRECTA DE DETERGENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "cantidad",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b044",
+   "props": {
+    "text": "REVISÁ LOS BOLSILLOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "bolsillos",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b045",
+   "props": {
+    "text": "PUERTA ENTREABIERTA AL TERMINAR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "entreabierta",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b046",
+   "props": {
+    "text": "APRENDÉ A ESCUCHAR TU LAVADORA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "escuchar",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b047",
+   "props": {
+    "text": "RUGIDO GRAVE = RODAMIENTOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "rugido",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b048",
+   "props": {
+    "text": "ZUMBIDO SIN DESAGÜE = BOMBA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "bomba",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b049",
+   "props": {
+    "text": "OLOR A QUEMADO: DESCONECTÁ YA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "quemado",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b050",
+   "props": {
+    "text": "EL EQUILIBRIO DE LA CARGA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "equilibrio",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b052",
+   "props": {
+    "text": "UNA MANO ABIERTA ENTRE LA ROPA Y EL TAMBOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 48
+   },
+   "word": "mano",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b053",
+   "props": {
+    "text": "REPARACIÓN > ½ DE UNA NUEVA = CAMBIALA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 50
+   },
+   "word": "mitad",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b055",
+   "props": {
+    "text": "TAMBOR OXIDADO: ADIÓS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "oxidado",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b056",
+   "props": {
+    "text": "VERIFICÁ QUE HAYA REPUESTOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "repuestos",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b058",
+   "props": {
+    "text": "SIN FUNCIONES RARAS: VAPOR · WIFI",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "vapor",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b060",
+   "props": {
+    "text": "LA GARANTÍA: ¿CUBRE EL MOTOR?",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "garantía",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b061",
+   "props": {
+    "text": "MANTENIMIENTO: 5 MINUTOS AL MES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "minutos",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b062",
+   "props": {
+    "text": "MANGUERAS: CADA POCOS AÑOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "mangueras",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b063",
+   "props": {
+    "text": "CICLO EN VACÍO CON AGUA CALIENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "vacío",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b065",
+   "props": {
+    "pos": "top",
+    "size": 80,
+    "words": [
+     {
+      "t": "RODAMIENTOS",
+      "beat": "b065",
+      "word": "rodamientos",
+      "hl": "yellow"
+     },
+     {
+      "t": "AMORTIGUADORES · BOMBA",
+      "beat": "b065",
+      "word": "amortiguadores"
+     },
+     {
+      "t": "PLACA · GOMA",
+      "beat": "b065",
+      "word": "placa",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "cinco",
+   "until": "b065",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b067",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b067",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "LOS 3 CALENTADORES DE AGUA",
+      "beat": "b067",
+      "word": "calentadores",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b067",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}

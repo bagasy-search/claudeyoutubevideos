@@ -1,0 +1,32 @@
+[
+ {
+  "nombre": "b001_0",
+  "motion": "the washer shakes violently and moves a few centimetres across the floor",
+  "change": ""
+ },
+ {
+  "nombre": "b014_1",
+  "motion": "the drum shifts slightly with a clunking sound",
+  "change": ""
+ },
+ {
+  "nombre": "b019_1",
+  "motion": "the tub bounces with repeated wobbling and settles slowly",
+  "change": ""
+ },
+ {
+  "nombre": "b024_1",
+  "motion": "water pours slowly from the filter cap into a flat tray",
+  "change": ""
+ },
+ {
+  "nombre": "b033_1",
+  "motion": "the gasket peels back revealing dark mold",
+  "change": ""
+ },
+ {
+  "nombre": "b045_1",
+  "motion": "the curtain moves gently in a breeze",
+  "change": ""
+ }
+]
