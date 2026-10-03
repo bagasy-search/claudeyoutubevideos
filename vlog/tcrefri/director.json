@@ -1,0 +1,896 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "EL QUE TODOS QUIEREN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "quieren",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b004",
+   "props": {
+    "text": "MIS 3 CRITERIOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "tres",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "EL QUE NUNCA SE APAGA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "nunca",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b007",
+   "props": {
+    "text": "DOS PUERTAS + DISPENSADOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "dispensador",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b009",
+   "props": {
+    "text": "LAS FALLAS: EN LAS FUNCIONES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "fallas",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b010",
+   "props": {
+    "text": "FABRICADOR DE HIELO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "hielo",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b013",
+   "props": {
+    "text": "NO FROST = MÁS PIEZAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "piezas",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b016",
+   "props": {
+    "pos": "top",
+    "size": 82,
+    "words": [
+     {
+      "t": "EL QUE YO COMPRARÍA",
+      "beat": "b016",
+      "word": "compraría",
+      "hl": "yellow"
+     },
+     {
+      "t": "CLÁSICO · CONGELADOR ARRIBA",
+      "beat": "b016",
+      "word": "clásico"
+     }
+    ]
+   },
+   "word": "compraría",
+   "until": "b016",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b017",
+   "props": {
+    "text": "TERMOSTATO MECÁNICO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "termostato",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b018",
+   "props": {
+    "text": "COMPRESOR INVERTER",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "inverter",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b019",
+   "props": {
+    "text": "CONDENSADOR ACCESIBLE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "condensador",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b020",
+   "props": {
+    "text": "BURLETES FÁCILES DE CAMBIAR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "burletes",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b021",
+   "props": {
+    "text": "20 AÑOS FUNCIONANDO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "20",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b022",
+   "props": {
+    "text": "TAMAÑO: 200 – 250 L",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "persona",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b024",
+   "props": {
+    "text": "MEDÍ EL HUECO + VENTILACIÓN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "hueco",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b025",
+   "props": {
+    "text": "ETIQUETA DE EFICIENCIA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "etiqueta",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b028",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "PRUEBAS DE 2 MINUTOS",
+      "beat": "b028",
+      "word": "comprobar",
+      "hl": "yellow"
+     },
+     {
+      "t": "EN LA TIENDA",
+      "beat": "b028",
+      "word": "tienda"
+     }
+    ]
+   },
+   "word": "tienda",
+   "until": "b028",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b029",
+   "props": {
+    "text": "PUERTA: SUCCIÓN SUAVE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "succión",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b030",
+   "props": {
+    "text": "ESTANTES Y CAJONES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "estantes",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b033",
+   "props": {
+    "text": "PARADO UNAS HORAS ANTES DE ENCHUFAR",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "parado",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b036",
+   "props": {
+    "text": "MANTENIMIENTO: 10 MIN POR AÑO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "mantenimiento",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b037",
+   "props": {
+    "text": "FILTRO DE AGUA: CADA 6 MESES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "filtro",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b039",
+   "props": {
+    "pos": "top",
+    "size": 82,
+    "words": [
+     {
+      "t": "MITO 1: LLENO GASTA MÁS",
+      "beat": "b039",
+      "word": "lleno",
+      "hl": "red"
+     },
+     {
+      "t": "FALSO",
+      "beat": "b039",
+      "word": "contrario",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "mitos",
+   "until": "b039",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b040",
+   "props": {
+    "text": "MITO 2: DESENCHUFARLO DE NOCHE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 54
+   },
+   "word": "desenchufarlo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b041",
+   "props": {
+    "text": "MITO 3: BOTELLA CALIENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "botella",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b043",
+   "props": {
+    "text": "ESCUCHÁ EL COMPRESOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "compresor",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b044",
+   "props": {
+    "pos": "top",
+    "size": 86,
+    "words": [
+     {
+      "t": "FALLAS: DE BARATA A CARA",
+      "beat": "b044",
+      "word": "fallas",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "fallas",
+   "until": "b044",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b045",
+   "props": {
+    "text": "1 · BURLETE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "burlete",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b046",
+   "props": {
+    "text": "2 · VENTILADOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "ventilador",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b047",
+   "props": {
+    "text": "3 · RESISTENCIA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "resistencia",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b048",
+   "props": {
+    "text": "4 · TERMOSTATO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "termostato",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b049",
+   "props": {
+    "text": "5 · RELÉ",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "relé",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b050",
+   "props": {
+    "text": "6 · COMPRESOR: LA MÁS CARA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "compresor",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b051",
+   "props": {
+    "text": "REPARACIÓN > ½ DE UNO NUEVO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "mitad",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b054",
+   "props": {
+    "text": "DESCONFIÁ DE LA RECARGA DE GAS",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "desconfía",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b056",
+   "props": {
+    "text": "MUDANZA: PARADO Y ATADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "parado",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b059",
+   "props": {
+    "text": "LEJOS DEL HORNO Y DEL SOL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "horno",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b060",
+   "props": {
+    "text": "ABRÍ LA PUERTA LO JUSTO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "justo",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b062",
+   "props": {
+    "text": "JAMÁS CON HERRAMIENTAS FILOSAS",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "jamás",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b064",
+   "props": {
+    "pos": "top",
+    "size": 78,
+    "words": [
+     {
+      "t": "DISEÑO SIMPLE",
+      "beat": "b064",
+      "word": "simple",
+      "hl": "yellow"
+     },
+     {
+      "t": "TERMOSTATO CLARO",
+      "beat": "b064",
+      "word": "termostato"
+     },
+     {
+      "t": "CONDENSADOR ACCESIBLE",
+      "beat": "b064",
+      "word": "condensador",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "resumen",
+   "until": "b064",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}

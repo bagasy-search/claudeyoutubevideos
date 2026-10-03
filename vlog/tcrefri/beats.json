@@ -1,0 +1,1172 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Este es el refrigerador que casi todos quieren: grande, con dispensador, con pantalla. Y es el que más reparo.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a large side by side refrigerator in a modern kitchen with a water dispenser on the door and a technician's hand opening it to show a leak at the base",
+    "motion": "the door opens and a small puddle spreads at the bottom of the fridge"
+   },
+   {
+    "k": "W",
+    "v": "big side by side refrigerator kitchen"
+   },
+   {
+    "k": "W",
+    "v": "a large side by side refrigerator in a"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio. Después de años reparando refrigeradores, mi consejo para comprar uno es distinto de lo que dicen en las tiendas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio the technician in a customer's kitchen standing beside a big modern refrigerator, toolbox on the floor, honest friendly face"
+   },
+   {
+    "k": "G",
+    "v": "a toolbox and a flashlight on a kitchen floor next to a large refrigerator with an open door"
+   },
+   {
+    "k": "W",
+    "v": "Claudio the technician in a customer s kitchen"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En la tienda venden lo más lindo y lo más caro. Yo te cuento qué tipo compraría para mi casa, y por qué, sin marcas ni comisión.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "appliance store refrigerators showroom"
+   },
+   {
+    "k": "G",
+    "v": "a showroom with rows of refrigerators of different sizes and styles with price tags"
+   },
+   {
+    "k": "W",
+    "v": "appliance store refrigerators showroom"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Busco tres cosas: diseño simple, piezas que se puedan reparar, y un tamaño honesto para mi familia. Lo demás es marketing.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising three fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three criteria: simple design, accessible parts, honest size"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising three fingers"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un dato: el refrigerador es el electrodoméstico que nunca se apaga. Cada detalle de eficiencia se paga cada mes, durante años.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator electricity consumption label"
+   },
+   {
+    "k": "G",
+    "v": "an energy label on a refrigerator with a class and annual consumption"
+   },
+   {
+    "k": "W",
+    "v": "refrigerator electricity consumption label"
+   },
+   {
+    "k": "W",
+    "v": "refrigerator electricity consumption label"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si cuando termines el video piensas distinto a mí, está bien. Pero ya sabrás qué preguntar antes de pagar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera honestly"
+   },
+   {
+    "k": "W",
+    "v": "honest technician advice"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera honestly"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El que todos compran: el grande de dos puertas, con dispensador de agua y hielo, con pantalla táctil, y hasta con cámara.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "side by side refrigerator ice dispenser"
+   },
+   {
+    "k": "G",
+    "v": "a side by side refrigerator with a water and ice dispenser and a touch screen on its door"
+   },
+   {
+    "k": "W",
+    "v": "side by side refrigerator ice dispenser"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada función es una pieza más: la línea de agua, el filtro, la válvula, el sensor, la pantalla, el cableado en la puerta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting its parts on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a diagram of a refrigerator door showing water line, filter, dispenser, display and wiring"
+   },
+   {
+    "k": "W",
+    "v": "Claudio counting its parts on his fingers"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la mayoría de las fallas están justo en esas funciones: las fugas del agua, el hielo que se tapa, y la pantalla que se rompe.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator water leak dispenser"
+   },
+   {
+    "k": "G",
+    "v": "a puddle of water under a refrigerator caused by a leaking water line in a kitchen floor"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El fabricador de hielo es de lo que más llama: se congela la línea, se traba el motor, o sale hielo con gusto raro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head with a rueful smile"
+   },
+   {
+    "k": "G",
+    "v": "a tube of ice stuck together in an ice maker bin inside a freezer"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las reparaciones cuestan bastante, y si el equipo ya tiene varios años, la cuenta empieza a ser incómoda.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "big refrigerator expensive repair"
+   },
+   {
+    "k": "G",
+    "v": "a repair estimate for a refrigerator display board and water valve with a high total"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Otro tema es el no frost. Evita que se forme escarcha, usando un ventilador y una resistencia que descongela cada cierto tiempo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "no frost refrigerator fan"
+   },
+   {
+    "k": "G",
+    "v": "a no frost refrigerator cutaway with the evaporator behind the back panel and a fan"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es cómodo, pero tiene más piezas: ventilador, resistencia, sensores, y una placa que lo controla. Más piezas, más lugares donde fallar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining the extra parts in a no frost system with a drawing"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard drawing of the evaporator, defrost heater, fan, thermistor and control board in a no frost refrigerator"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los de escarcha tradicional, que se descongelan a mano, tienen menos piezas. Pero tienes que descongelarlos una o dos veces al año.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "frost refrigerator manual defrost"
+   },
+   {
+    "k": "G",
+    "v": "a simple refrigerator with a small ice layer on the freezer compartment and a plastic scraper beside it"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mi opinión honesta: el no frost es muy cómodo, y la mayoría de la gente lo prefiere, y está bien. Pero hay que saber que paga con complejidad.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging honestly"
+   },
+   {
+    "k": "W",
+    "v": "trade offs honest technician"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El que yo compraría: un refrigerador clásico, con el congelador arriba, termostato simple, sin dispensador, y de un tamaño que use de verdad.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "top freezer refrigerator simple"
+   },
+   {
+    "k": "G",
+    "v": "a simple top freezer refrigerator with two doors and a mechanical thermostat dial inside"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un termostato mecánico es una pieza barata, que casi no falla, y que cualquier técnico cambia en minutos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio opening the fridge and showing the mechanical dial inside, nodding"
+   },
+   {
+    "k": "A",
+    "v": "a hand turning a simple mechanical temperature dial inside a refrigerator",
+    "motion": "the dial clicks to a middle position"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si hay presupuesto, con compresor inverter, que gasta menos y suena menos. Pero con una electrónica sencilla y repuestos disponibles.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "compressor refrigerator inverter"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator compressor with a clear label showing inverter technology on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el condensador accesible, atrás o abajo, para poder limpiarlo cada año. Eso por sí solo alarga la vida del equipo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the back of a simple refrigerator with an easy to clean condenser and wide spacing"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing the condenser at the back that can be reached with a brush"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y con burletes fáciles de cambiar. En muchos equipos son una tira que se saca y se pone sin herramientas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "door seal gasket replacement refrigerator"
+   },
+   {
+    "k": "G",
+    "v": "a simple door gasket that can be pulled out and replaced by hand"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es un refrigerador sin lujos. Pero lo he visto funcionar veinte años, y por eso lo elegiría para mi casa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio smiling at the camera"
+   },
+   {
+    "k": "G",
+    "v": "a modest top freezer refrigerator in a small kitchen with a clean tidy interior"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El tamaño: una persona, unos doscientos litros. Una pareja, doscientos cincuenta a trescientos. Una familia de cuatro, trescientos cincuenta a cuatrocientos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator capacity litres family"
+   },
+   {
+    "k": "G",
+    "v": "a table on a whiteboard matching household size to refrigerator capacity in litres"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un refrigerador demasiado grande gasta más para enfriar aire. Y uno muy chico se atiborra, y no enfría parejo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a huge refrigerator with an almost empty interior"
+   },
+   {
+    "k": "G",
+    "v": "an enormous refrigerator with only a few items inside and plenty of empty space"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mide el hueco, y suma espacio de ventilación y apertura de la puerta. Un refrigerador sin aire alrededor trabaja forzado.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "measure kitchen space refrigerator"
+   },
+   {
+    "k": "P",
+    "v": "Claudio measuring the niche for the refrigerator with a tape measure, including the clearance"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La etiqueta de eficiencia energética te dice cuánto consume por año. Compara dos modelos y calcula la diferencia en plata.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an energy label of a refrigerator zoomed in on the annual consumption number"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pointing at the annual consumption on the label"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces uno más caro de compra se paga solo en cinco años con la luz que ahorra. Y a veces no: haz la cuenta antes de decidir.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "calculator electricity bill savings"
+   },
+   {
+    "k": "G",
+    "v": "a calculator and a notepad with a ten year energy cost comparison between two refrigerators"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No te pido que compres el más barato, ni el más caro. Te pido que compres con números, y con repuestos a la vista.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a measured expression"
+   },
+   {
+    "k": "W",
+    "v": "honest technician advice"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuando estés en la tienda, hay cosas que puedes comprobar en dos minutos. Y las que importan, no salen en el folleto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio walking along a row of refrigerators in a store with a notebook"
+   },
+   {
+    "k": "G",
+    "v": "a notebook with a checklist of things to check in the store in front of a refrigerator"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Abre y cierra la puerta: debe cerrar con una leve succión y sin resistencias raras. Un burlete bueno sella solo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator door opening close test"
+   },
+   {
+    "k": "A",
+    "v": "a customer opening and closing a refrigerator door in a store and listening to the seal",
+    "motion": "the door closes with a soft suction sound"
+   },
+   {
+    "k": "W",
+    "v": "refrigerator door opening close test"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Presiona los estantes y cajones: los de plástico débil se rompen enseguida, y a veces no se consigue repuesto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pressing the shelves and drawers to test their sturdiness, concentrated"
+   },
+   {
+    "k": "G",
+    "v": "a hand pressing a plastic shelf inside a refrigerator showing slight flex"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mira la iluminación y el orden interior. Un interior bien pensado se usa mejor, y se limpia más fácil.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator interior lighting led"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator interior with bright LED lighting and glass shelves"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si el vendedor te deja, mira atrás: el condensador, el cable y la bandeja de agua. Una instalación prolija indica un buen diseño.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the back of a floor model with a flashlight to see the condenser and the cable"
+   },
+   {
+    "k": "G",
+    "v": "the back of a refrigerator in a store showing a neat condenser and a thick power cable"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una regla de oro al llegar: déjalo parado unas horas antes de enchufarlo, sobre todo si lo transportaron inclinado. El aceite del compresor tiene que asentarse.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "new refrigerator delivery wait before plugging"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at a refrigerator just delivered and checking its position, calm"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Nivélalo bien, con una ligera inclinación hacia atrás para que la puerta cierre sola. Y deja el espacio de ventilación.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a refrigerator standing in a kitchen niche with a spirit level on top showing the bubble centred"
+   },
+   {
+    "k": "P",
+    "v": "Claudio adjusting the feet of the refrigerator with a spanner"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Enciéndelo, déjalo estabilizar uno o dos días antes de llenarlo, y verifica la temperatura con un termómetro. No cargues todo de golpe.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator temperature setting first day"
+   },
+   {
+    "k": "G",
+    "v": "a thermometer inside a refrigerator showing four degrees after settling"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un mantenimiento anual de diez minutos: aspirar el condensador, limpiar los burletes, revisar el desagüe de descongelamiento, y vaciar la bandeja.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio doing the annual maintenance on a refrigerator, vacuuming the condenser and wiping the gasket"
+   },
+   {
+    "k": "A",
+    "v": "a vacuum cleaner brush cleaning dust off a refrigerator condenser coil",
+    "motion": "dust lifts away from the coil as the brush moves"
+   },
+   {
+    "k": "W",
+    "v": "Claudio doing the annual maintenance on a refrigerator"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tiene filtro de agua, cámbialo cada seis meses o según el manual. Un filtro vencido es una fuente de bacterias y de malos sabores.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator water filter replacement"
+   },
+   {
+    "k": "G",
+    "v": "a water filter cartridge of a refrigerator being replaced by hand"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un recordatorio en el calendario hace que lo hagas. Es lo que separa a un refrigerador de quince años de uno que muere a los ocho.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a calendar with a yearly reminder to clean the refrigerator condenser"
+   },
+   {
+    "k": "P",
+    "v": "Claudio writing the reminder on the calendar with a marker"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Algunos mitos. Primero, que un refrigerador más lleno gasta más. Al contrario: lleno, mantiene mejor el frío. Pero sin tapar las salidas de aire.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising an eyebrow, skeptical"
+   },
+   {
+    "k": "W",
+    "v": "myth debunk technician"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo, que desenchufarlo por la noche ahorra. No: lo hace trabajar más después, y la comida sufre. Déjalo siempre prendido.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a refrigerator with food arranged leaving a gap for air at the back vents"
+   },
+   {
+    "k": "W",
+    "v": "fridge organization"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercero, que poner una botella con agua caliente adentro ayuda. No: calienta todo. Lo que ayuda es dejar enfriar la comida antes de guardarla.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cold water in bottle trick refrigerator myth"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling and shaking his head"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Y uno usado? Puede ser buena opción: si el compresor arranca bien, no hay óxido, los burletes cierran, y te dejan verlo funcionando varias horas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "used refrigerator sale"
+   },
+   {
+    "k": "G",
+    "v": "a used refrigerator in a garage with a handwritten for sale sign"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Escucha el compresor: un zumbido parejo es bueno. Un traqueteo, o que se apague y prenda cada pocos minutos, es mala señal.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio feeling the side wall of a used refrigerator for warmth and listening to the compressor"
+   },
+   {
+    "k": "G",
+    "v": "a used refrigerator running in a garage with a thermometer inside"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las fallas más comunes que reparo, de la más barata a la más cara: burlete, ventilador, resistencia de descongelamiento, termostato y relé del compresor.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the most frequent refrigerator failures on his fingers in a kitchen"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with a list of five refrigerator failures: gasket, fan, defrost heater, thermostat and compressor relay"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El burlete se cambia casi sin herramientas, y a veces resuelve que el equipo no enfríe. Es lo primero que reviso, siempre.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator door gasket replacement"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator door gasket being peeled from its groove by a technician's hands"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El ventilador del evaporador se traba con hielo, y el refrigerador de abajo queda tibio. Es una pieza barata y la reparación es rápida.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "evaporator fan motor refrigerator"
+   },
+   {
+    "k": "G",
+    "v": "a small evaporator fan with ice on its blades in a freezer compartment"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La resistencia de descongelamiento se quema con los años. Sin ella, el hielo cubre el evaporador, y el aire frío no circula.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio showing a defrost heater element, a thin glass tube, to the camera"
+   },
+   {
+    "k": "G",
+    "v": "a defrost heater element lying next to its wiring harness on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El termostato falla poco, pero cuando falla, el equipo no para o no arranca. En los modelos sencillos, se cambia en minutos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator thermostat part"
+   },
+   {
+    "k": "G",
+    "v": "a mechanical thermostat of a refrigerator with two thin wires and a capillary tube"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el relé del compresor: una pieza chica que se desgasta con los arranques. Un relé gastado hace que el compresor no arranque, aunque esté sano.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a small compressor relay in the palm of his hand"
+   },
+   {
+    "k": "G",
+    "v": "a start relay and an overload protector next to a compressor on a bench"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la más cara: el compresor. Si se quema, la reparación casi nunca conviene en un equipo con varios años. Pero es la menos frecuente.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "expensive repair refrigerator compressor replacement"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at a compressor on the bench with a serious face"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una regla práctica: si la reparación cuesta más de la mitad de uno nuevo y el equipo tiene más de diez años, es mejor cambiarlo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio writing a simple rule on a notepad"
+   },
+   {
+    "k": "G",
+    "v": "a notepad with a rule: if the repair costs more than half of a new one and the fridge is over ten years old, replace it"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero un refrigerador viejo, sencillo y bien cuidado, puede seguir muchos años. Con las piezas correctas, la reparación vale la pena.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old refrigerator still working decades"
+   },
+   {
+    "k": "G",
+    "v": "an old refrigerator in a kitchen from the nineties working perfectly with a few scratches"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuando un refrigerador pierde gas, enfría cada vez menos. Es una falla seria, y no se arregla con una recarga rápida: hay que encontrar la fuga.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerant leak refrigerator technician"
+   },
+   {
+    "k": "G",
+    "v": "a technician checking a refrigerator circuit with a small leak detector near the evaporator"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Desconfía de quien te dice que con una recarga está resuelto, sin buscar la causa. A los meses, vuelve a faltar gas, y pagaste dos veces.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at the camera"
+   },
+   {
+    "k": "W",
+    "v": "bad repair advice honest technician"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La etiqueta dice qué gas usa y cuánto lleva. Esa información sirve para saber si hay repuestos y compatibilidad.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a note on a refrigerator nameplate listing the type of refrigerant and the amount in grams"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pointing at the refrigerant information on the nameplate"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te mudas, transporta el refrigerador parado, y con las puertas atadas. Acostado, el aceite del compresor puede ir a donde no debe.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "moving a refrigerator upright dolly"
+   },
+   {
+    "k": "G",
+    "v": "two movers carrying a refrigerator upright strapped on a hand truck on a staircase"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y al llegar, déjalo parado unas horas antes de enchufarlo. Con eso evitas dañar el compresor, y la mayoría no lo sabe.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining to wait several hours after moving before plugging in, checking his watch"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator standing in a new apartment kitchen, not yet plugged in, with a note to wait"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En verano, el refrigerador sufre más. Cada grado de más en la cocina lo obliga a trabajar más tiempo, y a gastar más.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hot summer kitchen refrigerator working hard"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator in a hot kitchen with direct sun on its side and a thermometer showing high temperature"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ubícalo lejos del horno y de la ventana al sol. Y deja espacio libre a los lados. Con eso, gasta bastante menos, sin tocar nada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio moving a refrigerator away from a sunny window and a stove, strained"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator placed far from the oven in a cooler corner of a kitchen"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un hábito de la casa: abrir la puerta lo justo. Cada apertura prolongada es calor que entra, y energía que se va.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "fridge door open too long summer"
+   },
+   {
+    "k": "P",
+    "v": "Claudio closing the refrigerator door quickly with a finger over his lips, teasing"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Algunas preguntas que me hacen. ¿Cada cuánto se descongela un refrigerador común? Cuando el hielo supera medio centímetro, mejor hacerlo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio answering questions to the camera on a stool in a kitchen"
+   },
+   {
+    "k": "W",
+    "v": "person answering questions kitchen"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con paciencia, desenchufado, con toallas, y sin herramientas filosas. Jamás con cuchillos ni punzones: perforas el evaporador.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a refrigerator freezer compartment with a thin layer of frost and a plastic scraper on a towel"
+   },
+   {
+    "k": "W",
+    "v": "defrost refrigerator manual"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Y si hace ruido? Un zumbido suave es normal. Un golpeteo, un zumbido fuerte o un chasquido repetido merecen una revisión pronto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with a half smile"
+   },
+   {
+    "k": "W",
+    "v": "honest technician advice"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Resumen: diseño simple, termostato claro, condensador accesible, tamaño honesto y repuestos disponibles. Eso compraría yo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the buying criteria on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with criteria: simple design, mechanical thermostat, accessible condenser, honest size, spare parts"
+   }
+  ]
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un equipo así, y un buen mantenimiento, el refrigerador se vuelve un electrodoméstico del que te olvidas. Y eso es lo mejor que puede pasar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "happy family kitchen refrigerator"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling beside a modest working refrigerator in a warm kitchen"
+   }
+  ]
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quédate en el canal. Y cuéntame qué refrigerador tienes, y si te dio problemas. Me interesa tu experiencia.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly technician advice"
+   }
+  ]
+ }
+]

@@ -1,0 +1,22 @@
+[
+ {
+  "nombre": "b001_0",
+  "motion": "the door opens and a small puddle spreads at the bottom of the fridge",
+  "change": ""
+ },
+ {
+  "nombre": "b017_1",
+  "motion": "the dial clicks to a middle position",
+  "change": ""
+ },
+ {
+  "nombre": "b029_1",
+  "motion": "the door closes with a soft suction sound",
+  "change": ""
+ },
+ {
+  "nombre": "b036_1",
+  "motion": "dust lifts away from the coil as the brush moves",
+  "change": ""
+ }
+]
