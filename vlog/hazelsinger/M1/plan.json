@@ -1,0 +1,51 @@
+{
+ "dir": "D:/Proyectos/video2-wt/hazelsinger/vlog/hazelsinger/M1",
+ "face": "D:/Proyectos/video2-wt/hazelsinger/public/ref_hazelsinger_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/hazelsinger/public/ref_hazelsinger.png",
+ "pronoun": "she",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the workroom background stays fully readable. The only light is the daylight from the tall window on the left plus the ceiling light; correctly exposed. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; hair with stray strands; clothes with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural older hands; she moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same workroom, same moment of the day. Hazel, a 69-year-old woman with grey hair loosely pulled back with a few stray strands, thin wire-rimmed reading glasses, small silver drop earrings, a faded blue denim button-up shirt with the sleeves rolled up to the forearms, natural older skin with lines and age spots sits at the worn wooden worktable of her appraisal workroom: white painted board walls, a tall window on the left, a dark wood china cabinet and an old dresser, open shelves with silver teapots and old jewelry boxes behind her, a white magnifier lamp on a swing arm, a pair of white cotton gloves on the worn wooden worktable, holding up a strip of masking tape between two fingers toward the camera, with $40 written on it in black marker, one eyebrow raised. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same place: she crumples the strip of masking tape in her hand and gives the camera a firm, no-nonsense look. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place a few seconds later: she sits back with a small knowing smile, hands folded on the table. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/hazelsinger/vlog/hazelsinger/tramos/m1.wav",
+   "text": "Forty dollars. That's what the masking tape said.",
+   "action": "She holds up the strip of masking tape and talks to the camera, then starts to crumple it. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  },
+  {
+   "id": "m2",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/hazelsinger/vlog/hazelsinger/tramos/m2.wav",
+   "text": "I told her to take the tape off.",
+   "action": "She crumples the tape firmly while she talks, then sits back with a knowing smile. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/hazelsinger/vlog/hazelsinger/M1/out.mp4"
+}

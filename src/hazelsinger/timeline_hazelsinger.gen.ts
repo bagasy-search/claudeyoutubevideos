@@ -1,5 +1,5 @@
 // GENERADO por vlog/hazelsinger/gen_timeline.mjs — no editar a mano
-export const TOTAL_FRAMES_HAZELMOM = 33277;
+export const TOTAL_FRAMES_HAZELSINGER = 33277;
 export const AV_READY = true;
 export const AUDIO = "hazelsinger.m4a";
 export const MUSIC = "sfx/hazelsinger_bed.m4a";
