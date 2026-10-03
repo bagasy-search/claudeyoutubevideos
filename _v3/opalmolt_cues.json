@@ -1,0 +1,32 @@
+[
+ {
+  "key": "broll/opalmolt/b_roostpick.mp4",
+  "src": "broll/opalmolt/b_roostpick.mp4",
+  "start": 4.8,
+  "dur": 2.466666666666667
+ },
+ {
+  "key": "broll/opalmolt_st/st_tomato_5.mp4",
+  "src": "broll/opalmolt_st/st_tomato_5.mp4",
+  "start": 48.03333333333333,
+  "dur": 1.9333333333333333
+ },
+ {
+  "key": "broll/opalmolt/b_nits2.mp4",
+  "src": "broll/opalmolt/b_nits2.mp4",
+  "start": 244.2,
+  "dur": 3.7666666666666666
+ },
+ {
+  "key": "broll/opalmolt/b_redskin.mp4",
+  "src": "broll/opalmolt/b_redskin.mp4",
+  "start": 285.26666666666665,
+  "dur": 4
+ },
+ {
+  "key": "broll/opalmolt/b_saddle.mp4",
+  "src": "broll/opalmolt/b_saddle.mp4",
+  "start": 371.03333333333336,
+  "dur": 4
+ }
+]
