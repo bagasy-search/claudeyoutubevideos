@@ -963,5 +963,16 @@
     "language": "en",
     "text": "Now, let me tell you something most folks don't know. That shrimp you bought at the store last week? Yeah, that one. Pick one up. Go ahead. Rub it between your fingers. If it feels slick, almost slippery, like somebody rubbed a little soap on it, well, son, that's not a shrimp problem. That's a water problem. And here's the part nobody tells you. That shrimp didn't exactly come out of the ocean feeling that way. No, sir.",
     "wav": "fish_refs/earl2.wav"
+  },
+  "lznarr": {
+    "lang": "en",
+    "wav": "public/lznarr_ref.wav",
+    "text": "June 5th, 2009. It's a Friday, a little before seven in the morning. Nothing about it feels unusual. A man in a gray jacket walks into the station, nods at the desk, and asks for coffee. Black. No sugar. Twenty -three years earlier, a young woman had been found on her living room floor. Three shots. No witnesses. And a case file that sat in a box in a basement for most of her family's lives.",
+    "note": "ElevenLabs v4 Voice Design 3-oct-2026 - narrador true crime (Lazarus test)"
+  },
+  "harlan": {
+    "language": "en",
+    "text": "seen what a cold dark house does to people, and I've seen what gets them through it. Now everything I'm about to show you is sitting in one place in my house, a plastic tote on a shelf in the basement, right by the stairs. My wife calls it the blackout box. And that's the first lesson before we even get to the list. If you have to go looking for it in the dark, you don't have it. Number one, a headlamp.",
+    "wav": "fish_refs/harlan.wav"
   }
 }

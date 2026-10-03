@@ -1,0 +1,52 @@
+// DIRECTOR B — calor seguro (monóxido), luz, caños, auto, remedios/efectivo/comida, generador, backfeed (p13-30)
+import { S, BI, HZP, GARAGE, HOUSE, KITCH, STORM } from "./dir_lib.mjs";
+export const SHOTS = [
+  S(13, "", "av", "av"),
+  S(14, "", "c", "ElIngredients", { props: { title: "NEVER INDOORS:", items: ["grill", "camp stove", "charcoal", "gas oven for heat"], bad: -1, stamp: "carbon monoxide", bed: "b_grill" } }),
+  S(14, "Those things put out carbon monoxide", "bi", "b_grill", { p: BI("A charcoal grill and a propane camp stove sitting in a dark living room next to a couch, a big red X of tape on the floor in front of them, a window with ice on it."), anim: "faint smoke curls up from the grill" }),
+  S(14, "Every big ice storm, there are families", "av", "av"),
+  S(15, "", "av", "av"),
+  S(15, "check your carbon monoxide detector", "bi", "b_codetector", { p: BI("A hand pressing the test button of a white carbon monoxide detector plugged into a wall outlet in a hallway, its little red light blinking, a new 9-volt battery in the other hand."), anim: "the detector's red light blinks" }),
+  S(15, "it's the cheapest life insurance you'll ever buy", "av", "av"),
+  S(16, "", "c", "ElLabelLine", { props: { n: "5", line: "light", means: "put away the candles", good: false, bed: "b_candle" } }),
+  S(16, "fire departments get called to houses", "bi", "b_candle", { p: BI("A lit candle left on a nightstand next to a bed with a sleeping person, the flame close to a curtain, a dark bedroom during a power outage."), anim: "the candle flame flickers near the curtain" }),
+  S(16, "because the roads are covered in ice and trees", "st", "st_firetruck.1"),
+  S(17, "", "bi", "b_headlamps", { p: BI("A nightstand in a dark bedroom with a headlamp, a battery lantern and a pack of fresh AA batteries laid out ready, a glass of water."), anim: "a hand picks up the headlamp" }),
+  S(17, "your hands have jobs to do", "hz", "h_headlamp", { p: HZP("He switches on a headlamp strapped over his hard hat and the light shines toward the camera, both his hands free, smiling.") }),
+  S(17, "Put a headlamp and fresh batteries in every bedroom", "av", "av"),
+  // ── CAÑOS
+  S(18, "", "c", "ElLabelLine", { props: { n: "6", line: "your pipes", means: "frozen pipes burst", good: false, bed: "b_burst" } }),
+  S(18, "you've got water spraying in your walls", "bi", "b_burst", { p: BI("A burst copper water pipe spraying water inside an open wall in a cold basement, ice on the pipe, water pooling on the floor."), anim: "water sprays from the split pipe" }),
+  S(19, "", "bi", "b_cabinet", { p: BI("A kitchen sink cabinet with both doors open, the pipes and the cleaning supplies visible, a faucet above dripping a thin trickle of water."), anim: "the faucet drips a slow trickle" }),
+  S(19, "Moving water is a lot harder to freeze", "st", "st_faucet.1"),
+  S(20, "", "av", "av"),
+  S(20, "Go find it tonight, with a flashlight", "bi", "b_shutoff", { p: BI("A flashlight beam on the main water shutoff valve with a red handle on a pipe coming out of a basement wall, a hand reaching to turn it."), anim: "the hand turns the red valve handle" }),
+  S(20, "not thirty minutes while you hunt for it in the dark", "av", "av"),
+  // ── AUTO
+  S(21, "", "c", "ElLabelLine", { props: { n: "7", line: "the car", means: "fill the tank tonight", good: true, bed: "b_carkit" } }),
+  S(21, "Gas station pumps run on electricity too", "st", "st_gas.1"),
+  S(21, "the few that are open have lines down the road", "av", "av"),
+  S(22, "", "bi", "b_carlimb", { p: BI(`A sedan parked in a driveway of ${HOUSE.split(":")[0]} with a big ice-coated tree limb lying across its crushed roof, ice all over the car and the ground.`), anim: "ice drips from the limb" }),
+  S(22, "And put a blanket, a flashlight", "bi", "b_carkit", { p: BI("The open trunk of a car with a wool blanket, a flashlight, bottles of water, granola bars and an ice scraper packed in a plastic tote."), anim: "a hand sets the blanket into the tote" }),
+  // ── REMEDIOS / EFECTIVO / COMIDA
+  S(23, "", "c", "ElLabelLine", { props: { n: "8", line: "what you can't get later", means: "medicine · cash · can opener", good: true, bed: "b_pills" } }),
+  S(23, "Refill any medicines that are running low", "bi", "b_pills", { p: BI("Pill bottles and a weekly pill organizer on a kitchen table next to a pharmacy paper bag, a reading lamp."), anim: "a hand picks up a pill bottle" }),
+  S(23, "If somebody in your house uses oxygen", "av", "av"),
+  S(24, "", "st", "st_cash.1"),
+  S(24, "grab a manual can opener", "bi", "b_canopener", { p: BI("A hand-crank manual can opener opening a can of beans on a kitchen counter next to a few other cans, a battery lantern lighting it."), anim: "the hand turns the can opener crank" }),
+  S(25, "", "bi", "b_pantry", { p: BI("A kitchen counter with no-cook food laid out: a jar of peanut butter, crackers, a loaf of bread, canned fruit, granola bars and a jar of pickles, lit by a battery lantern."), anim: "a hand spreads peanut butter on a cracker" }),
+  S(25, "But no oven for heat, remember that", "av", "av"),
+  // ── GENERADOR
+  S(26, "", "c", "ElLabelLine", { props: { n: "9", line: "the generator", means: "now we're in my world", good: true, bed: "b_generator" } }),
+  S(27, "", "av", "av"),
+  S(27, "Outside, out in the open, at least twenty feet from the house", "bi", "b_generator", { p: BI(`A portable generator running in the snow out in the open yard, far from ${HOUSE.split(":")[0]}, its exhaust pointing away, an extension cord running across the snow toward the house.`), anim: "exhaust puffs from the generator" }),
+  S(27, "a garage fills up in minutes", "c", "ElCoolerBoard", { props: { title: "generator", rows: [{ item: "outside, in the open", price: "yes" }, { item: "20+ feet from the house", price: "yes" }, { item: "garage, door open", price: "NEVER", hi: true }], every: 30, bed: "b_generator" } }),
+  S(28, "", "hz", "h_serious", { p: HZP("He leans toward the camera at his workbench with a stern, serious look, one finger raised, a plug-in cord coiled in front of him.") }),
+  S(28, "That power doesn't just go into your house", "c", "HlBackfeed", { props: { title: "why backfeeding kills linemen", steps: ["generator", "dryer outlet", "your meter", "transformer"], volts: ["240 V", "thousands of volts"], warn: "the man on the pole thinks it's dead", bed: "b_lineman" } }),
+  S(29, "", "bi", "b_lineman", { p: BI(`${STORM}: a lineman in a bucket high up at the top of a utility pole at night working on an iced power line, his headlamp shining, snow falling in the beam.`), anim: "snow falls through the headlamp beam" }),
+  S(29, "A man who thought that line was dead", "av", "av"),
+  S(30, "", "av", "av"),
+  S(30, "have an electrician put in a transfer switch", "bi", "b_transfer", { p: BI("A gray generator transfer switch box mounted next to a home electrical panel in a basement, an electrician's hand tightening a screw, a tool bag on the floor."), anim: "the hand turns the screwdriver" }),
+  S(30, "The fridge, a lamp, a phone charger. That's it", "av", "av"),
+];
+export const BEDS = [];
