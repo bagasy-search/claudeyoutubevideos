@@ -1,0 +1,27 @@
+[
+ {
+  "nombre": "b001_0",
+  "motion": "the door swings open and a warm mist escapes while the thermometer needle rests high",
+  "change": ""
+ },
+ {
+  "nombre": "b010_1",
+  "motion": "the thermometer reading slowly settles",
+  "change": ""
+ },
+ {
+  "nombre": "b012_1",
+  "motion": "the paper slides out with no resistance",
+  "change": ""
+ },
+ {
+  "nombre": "b018_1",
+  "motion": "the refrigerator slides forward revealing a dusty back",
+  "change": ""
+ },
+ {
+  "nombre": "b025_1",
+  "motion": "the beam reveals frost crystals shimmering",
+  "change": ""
+ }
+]

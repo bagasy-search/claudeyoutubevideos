@@ -1,0 +1,1135 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Abres el refrigerador, y adentro está tibio. La leche, la carne, todo en peligro. Antes de entrar en pánico, revisa estas tres cosas.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a refrigerator door being opened to a warm interior with food starting to spoil and a thermometer showing a high temperature",
+    "motion": "the door swings open and a warm mist escapes while the thermometer needle rests high"
+   },
+   {
+    "k": "W",
+    "v": "refrigerator not cooling food spoiling"
+   },
+   {
+    "k": "W",
+    "v": "a refrigerator door being opened to a warm"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio, técnico de refrigeración. En la mayoría de las llamadas por refrigerador que no enfría, el problema se resuelve sin cambiar nada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio the technician standing in a kitchen beside a refrigerator with his toolbox on the floor, calm reassuring look"
+   },
+   {
+    "k": "G",
+    "v": "a technician's toolbox with a thermometer and a flashlight on a kitchen floor next to an open refrigerator"
+   },
+   {
+    "k": "W",
+    "v": "Claudio the technician standing in a kitchen beside"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cuesta lo mismo que una visita. Si tú mismo haces estas tres revisiones, a veces te ahorras la llamada completa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician service invoice kitchen"
+   },
+   {
+    "k": "G",
+    "v": "a service invoice on a kitchen counter with a visit fee and a refrigerator in the background"
+   },
+   {
+    "k": "W",
+    "v": "technician service invoice kitchen"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Uno: el control de temperatura y los sellos de la puerta. Dos: el aire alrededor del equipo y el polvo. Tres: el hielo en el interior.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising three fingers to the camera"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three items: temperature and door seal, airflow and dust, ice buildup"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising three fingers to the camera"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, un dato importante: la comida refrigerada se conserva segura por debajo de unos cinco grados. Por encima, hay que tirar lo sensible.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "food safety refrigerator temperature"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding a thermometer toward the camera"
+   },
+   {
+    "k": "W",
+    "v": "food safety refrigerator temperature"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el refrigerador estuvo tibio por muchas horas, no arriesgues: la carne, el pollo, los lácteos y las sobras se desechan. La salud no tiene reposición.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera seriously"
+   },
+   {
+    "k": "G",
+    "v": "a hand throwing spoiled chicken into a trash bin with a grimace"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera seriously"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera seriously"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, el control de temperatura. Parece obvio, pero muchas veces alguien lo movió sin querer al limpiar o al sacar algo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator temperature control dial"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator thermostat dial inside a fridge set to a low number"
+   },
+   {
+    "k": "W",
+    "v": "refrigerator temperature control dial"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ponlo en un valor medio o el que indica el manual. Un valor muy bajo no enfría más: solo lo hace trabajar de más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio turning the temperature dial to a middle position and checking the manual symbols, concentrating"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator dial with numbers from 1 to 7 and a recommended position marked"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En equipos digitales, deben marcar unos tres a cuatro grados en el refrigerador y menos dieciocho en el congelador, aproximadamente.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "digital refrigerator display set temperature"
+   },
+   {
+    "k": "G",
+    "v": "a digital panel of a refrigerator showing 3 degrees for the fridge and minus 18 for the freezer"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para saber la verdad, mide: un vaso con agua y un termómetro en el estante del medio. Déjalo unas horas y lee.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio placing a thermometer glass of water in the middle shelf, careful"
+   },
+   {
+    "k": "A",
+    "v": "a glass of water with a thermometer being placed on a refrigerator shelf",
+    "motion": "the thermometer reading slowly settles"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después, los sellos. Esa goma que rodea la puerta cierra el aire frío. Si está dura, rota o sucia, el aire se escapa y el equipo no da abasto.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "door seal gasket refrigerator"
+   },
+   {
+    "k": "G",
+    "v": "the rubber gasket of a refrigerator door with a crack and dirt on it"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba del papel: cierra la puerta sobre una hoja. Si sale con facilidad, el sello no cierra bien. Pruébalo en todo el contorno.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio sliding a sheet of paper between the door and the cabinet to test the seal"
+   },
+   {
+    "k": "A",
+    "v": "a paper sheet pulled out easily from between a refrigerator door and body",
+    "motion": "the paper slides out with no resistance"
+   },
+   {
+    "k": "W",
+    "v": "Claudio sliding a sheet of paper between the"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces solo hay suciedad que impide cerrar: límpialo con agua tibia y jabón, y sécalo bien.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hand wiping the door gasket with a damp cloth and a bit of soapy water"
+   },
+   {
+    "k": "W",
+    "v": "cleaning refrigerator gasket"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si está endurecido, con aire tibio de un secador se ablanda. Y si está roto o deformado, se cambia: es una pieza barata.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio softening a stiff gasket with a hair dryer on low heat, careful"
+   },
+   {
+    "k": "G",
+    "v": "a hair dryer held at a distance from a refrigerator door gasket"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y que nada impida cerrar la puerta: una botella, una bandeja torcida. Una puerta entreabierta es la causa más común.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "fridge door left open food packing"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking that nothing is blocking the door from closing, like a bottle sticking out"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segunda cosa: el calor que el refrigerador tiene que botar. Detrás o debajo, hay un condensador que lo expulsa al ambiente.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at the back and sides of a refrigerator with a flashlight"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator in a kitchen niche tightly surrounded by cabinets with no space at the sides"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si ese condensador está cubierto de polvo, no bota el calor, el compresor se calienta y el equipo no enfría bien.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator condenser coils dusty"
+   },
+   {
+    "k": "G",
+    "v": "the condenser coils at the back of a refrigerator covered in thick grey dust and pet hair"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para limpiarlo: primero, desenchufa. Luego, aleja el equipo de la pared con cuidado, sin forzar el cable ni la manguera de agua.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio unplugging the refrigerator and pulling it gently away from the wall, careful"
+   },
+   {
+    "k": "A",
+    "v": "a refrigerator being pulled slowly out of its place on a kitchen floor",
+    "motion": "the refrigerator slides forward revealing a dusty back"
+   },
+   {
+    "k": "W",
+    "v": "Claudio unplugging the refrigerator and pulling it gently"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un cepillo largo y una aspiradora, retira el polvo, de arriba hacia abajo. Con suavidad: las tuberías son delicadas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a vacuum cleaner with a brush attachment gently cleaning the dusty coils at the back of a refrigerator"
+   },
+   {
+    "k": "P",
+    "v": "Claudio vacuuming the coils gently with a brush attachment"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tu refrigerador tiene el condensador abajo, detrás de una rejilla frontal, límpiala también: es el lugar donde más pelusa se junta.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator compressor area cleaning"
+   },
+   {
+    "k": "G",
+    "v": "a clean condenser coil and the compressor area at the bottom of the refrigerator after cleaning"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y revisa el espacio: se necesita aire libre alrededor, de unos cinco centímetros a los lados y más atrás. Mucho ajuste lo asfixia.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio measuring the gap around the refrigerator with a tape measure"
+   },
+   {
+    "k": "G",
+    "v": "a tape measure showing about five centimetres between the side of a refrigerator and a wall"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "También influye el lugar: junto a un horno, al sol directo o en un cuarto muy caliente, trabaja con un esfuerzo enorme.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hot kitchen near stove refrigerator"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator placed directly next to a hot oven in a small kitchen"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la mano en el lateral: tibio es normal. Si quema, hay un problema de ventilación o un compresor forzado.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio feeling the side wall of the refrigerator with his hand and nodding, noticing warmth"
+   },
+   {
+    "k": "W",
+    "v": "hand touching refrigerator side"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercera cosa: el hielo. En refrigeradores no frost, el hielo donde no debe indica que algo falla en el descongelamiento.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "ice buildup freezer back panel"
+   },
+   {
+    "k": "G",
+    "v": "a freezer with a thick layer of ice covering the back wall and the shelves"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el panel trasero del congelador tiene una capa de hielo, el aire frío no circula, y el refrigerador de abajo queda tibio.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking inside the freezer with a flashlight and frowning at a sheet of ice"
+   },
+   {
+    "k": "A",
+    "v": "a flashlight beam passing over a back wall covered in frost inside a freezer",
+    "motion": "the beam reveals frost crystals shimmering"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces el desagüe del descongelamiento está tapado con hielo y restos, y el agua se congela en vez de salir.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "defrost drain refrigerator"
+   },
+   {
+    "k": "G",
+    "v": "the defrost drain hole at the bottom of a refrigerator compartment blocked with ice and food residue"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Solución sin costo: guarda la comida en una hielera, desenchufa, y deja la puerta abierta unas horas, con toallas en el piso.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio unplugging the refrigerator and emptying the food into a cooler with ice packs, organized"
+   },
+   {
+    "k": "G",
+    "v": "a cooler with ice packs holding frozen food on the kitchen floor beside an open fridge"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se acelera con un recipiente de agua tibia adentro. Nunca uses cuchillos ni punzones: perforas el evaporador y adiós refrigerador.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hair dryer defrosting freezer careful"
+   },
+   {
+    "k": "P",
+    "v": "Claudio defrosting with a bowl of warm water placed inside, not using sharp tools"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el hielo derretido, destapa el desagüe con agua tibia y una pajilla fina. Y seca todo antes de volver a enchufar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the drain hole being cleaned with a thin plastic straw and warm water from a syringe"
+   },
+   {
+    "k": "P",
+    "v": "Claudio cleaning the defrost drain hole with warm water, patient"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y no taponar las rejillas interiores con comida: por ahí circula el aire frío. Un refrigerador demasiado lleno no enfría parejo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "full refrigerator blocked vents"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator interior packed with boxes blocking the cold air vents at the back"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si hiciste las tres cosas y sigue tibio, ahí sí empiezan las causas que requieren un técnico: ventilador, sensor, resistencia de descongelamiento o relé.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing with arms crossed explaining"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with a list of remaining causes: fan motor, thermistor, defrost heater, compressor start relay"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un ventilador del evaporador trabado por el hielo es muy común. Si escuchas que no suena ese zumbido suave, es una pista.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician testing refrigerator fan motor"
+   },
+   {
+    "k": "G",
+    "v": "a small evaporator fan motor inside a freezer with frost on its blades"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el compresor: tiene que arrancar, trabajar un rato, y apagarse. Si arranca y para enseguida con un clic, es el relé o el compresor.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio putting his ear near the back of the refrigerator and listening"
+   },
+   {
+    "k": "W",
+    "v": "listening to compressor sound"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con una pinza amperimétrica veo si el compresor consume lo normal. Es la forma más rápida de saber si está vivo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician measuring refrigerator electrical"
+   },
+   {
+    "k": "G",
+    "v": "a clamp meter around the power cable of a refrigerator showing a current value"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuando llames al técnico, dile qué probaste, qué ruidos oyes y qué temperatura marca. Le ahorras tiempo y a ti, dinero.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking honestly into the camera"
+   },
+   {
+    "k": "G",
+    "v": "a notepad with the symptoms, noises and temperatures written down"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Se repara o se cambia? Depende de la edad, del gas, y de la pieza que falle. Si es un ventilador, un sensor o una resistencia, conviene reparar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old refrigerator repair or replace decision"
+   },
+   {
+    "k": "G",
+    "v": "an old white refrigerator in a kitchen with rust at its base and a worn gasket"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el compresor está quemado y el equipo tiene más de diez años, la reparación casi nunca conviene. Haz la cuenta con el presupuesto escrito.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting cost items on a notepad"
+   },
+   {
+    "k": "G",
+    "v": "a notepad with repair cost and replacement cost compared by a pencil"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un refrigerador nuevo, bien elegido, gasta menos luz. Pero eso lo vemos en otros videos, donde comparo tipos y criterios de compra.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "energy saving new refrigerator label"
+   },
+   {
+    "k": "G",
+    "v": "an energy label on a new refrigerator showing a high efficiency class"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Te cuento tres casos reales de mi trabajo. Un cliente me llamó desesperado: el refrigerador no enfriaba, y ya había pedido un equipo nuevo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio sitting on a kitchen stool recalling a case, hands together"
+   },
+   {
+    "k": "W",
+    "v": "technician recalling client story"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo moví, y detrás había una alfombra de polvo y pelo de gato. Aspiré el condensador y en dos horas estaba bajando la temperatura.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a refrigerator pulled slightly from its wall showing a thick carpet of dust and a pet hair ball on the condenser"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing the dust ball to the camera with a disbelieving face"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo caso: una puerta que no cerraba. El sello estaba pegado con restos de jugo seco, y dejaba una rendija. Agua tibia y jabón, y se resolvió.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerator door gasket mold"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator door gasket with black mold and a gap where it was stuck"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercer caso: el dial de temperatura estaba en el valor más alto. Un niño lo había movido jugando. Cobré la visita y me sentí mal de cobrar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laughing with a half smile"
+   },
+   {
+    "k": "W",
+    "v": "funny kitchen mishap"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por eso empiezo siempre por lo más simple. Es lo que menos cuesta y lo que más pasa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a dial of a refrigerator thermostat turned to the warmest setting with a small child's hand visible at the edge"
+   },
+   {
+    "k": "P",
+    "v": "Claudio turning it back to the middle position with one finger"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El termómetro en un vaso con agua refleja la temperatura real de los alimentos, y no la del aire, que cambia al abrir la puerta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining how to measure the temperature properly with a diagram"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard sketch of a refrigerator with a thermometer on the middle shelf in a glass of water"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay termómetros de aparato muy baratos, con una zona verde marcada. Es una compra que vale la pena, porque lo que no mides no lo controlas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "thermometer fridge freezer appliance"
+   },
+   {
+    "k": "G",
+    "v": "an appliance thermometer standing in a refrigerator showing a safe zone in green"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Anota la temperatura mañana, tarde y noche durante un día. Si varía mucho, el equipo tiene un problema, aunque parezca que enfría.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio recording the temperature three times a day in a small notebook, smiling"
+   },
+   {
+    "k": "G",
+    "v": "a notebook page with temperatures written morning noon and night for a refrigerator"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En el congelador, menos dieciocho es el valor ideal. Si marca menos de diez, la comida congelada se deteriora más rápido.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a freezer thermometer reading minus eighteen degrees on a shelf with frozen packages"
+   },
+   {
+    "k": "W",
+    "v": "freezer temperature check"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Algunos mitos que escucho. Primero: poner el termostato al máximo ahorra energía. No: hace que el equipo trabaje sin parar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising an eyebrow, skeptical, hands on hips"
+   },
+   {
+    "k": "W",
+    "v": "myth debunk technician"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo: meter comida caliente al refrigerador. Sube la temperatura de todo lo demás. Mejor deja enfriar un rato afuera, sin pasarte de dos horas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hot food refrigerator myth"
+   },
+   {
+    "k": "G",
+    "v": "a pot of hot soup being placed directly into a refrigerator with steam rising"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercero: forrar los estantes con plástico o cartón. Tapa el aire que circula y deja zonas tibias.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a cardboard sheet over the fridge shelves"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator shelf covered with a plastic sheet that blocks the airflow"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cuarto, el hábito: abrir la puerta y quedarte mirando. Cada apertura deja salir el frío, y el equipo tiene que reponerlo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "fridge door opening frequency"
+   },
+   {
+    "k": "G",
+    "v": "a child standing in front of an open refrigerator for a long time with a light on"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El refrigerador tiene zonas. Lo más frío está atrás y abajo. La puerta es lo más tibio, y ahí van las salsas y bebidas, no la leche.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio organizing a refrigerator while explaining the cold zones"
+   },
+   {
+    "k": "G",
+    "v": "a refrigerator with labels for the coldest zone at the back of the middle shelf and the door as the warmest"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El cajón de verduras tiene humedad más alta. Y las carnes, en el estante de abajo, bien envueltas, para que no goteen sobre otros alimentos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "drawer crisper vegetables fridge"
+   },
+   {
+    "k": "G",
+    "v": "the crisper drawer of a refrigerator filled with vegetables, humidity slider visible"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Deja un poco de espacio entre los alimentos, para que el aire circule. Un refrigerador ordenado enfría mejor y gasta menos.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a refrigerator interior with food stored loosely leaving gaps for airflow and labelled containers"
+   },
+   {
+    "k": "P",
+    "v": "Claudio leaving gaps between containers with a satisfied nod"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Y si se corta la luz? Mantén las puertas cerradas. Un refrigerador lleno aguanta unas cuatro horas fríos, y un congelador lleno, hasta uno o dos días.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "power outage kitchen candle"
+   },
+   {
+    "k": "P",
+    "v": "Claudio standing in a dark kitchen with a flashlight, calm"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si pasó más tiempo, revisa con termómetro: lo que esté por encima de cinco grados más de dos horas, sin dudar, se desecha.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a notepad with two time limits written for refrigerator and freezer without power"
+   },
+   {
+    "k": "W",
+    "v": "food safety power outage guidelines"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un truco: congela botellas de agua. En un corte, sirven de hielo y después las puedes beber.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio placing ice packs and frozen bottles inside the refrigerator to help during an outage"
+   },
+   {
+    "k": "G",
+    "v": "frozen water bottles lined up inside a refrigerator shelf"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cuando vuelve la luz, a veces hay picos. Un protector de voltaje para el refrigerador evita que la subida dañe el compresor.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "voltage surge protection refrigerator"
+   },
+   {
+    "k": "G",
+    "v": "a voltage protector device plugged into a socket with a refrigerator cable going into it"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Llama al técnico si hay olor a quemado, ruidos fuertes o clics repetidos, si el compresor caliente quema, o si aparece aceite en el piso.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting signs that need a technician with fingers"
+   },
+   {
+    "k": "G",
+    "v": "a list on a whiteboard: refrigerator hot to touch, loud clicking, ice and leak, burnt smell"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una mancha de aceite puede indicar fuga de gas. Eso requiere equipo especializado, y no se improvisa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerant leak oil stain"
+   },
+   {
+    "k": "G",
+    "v": "a small oily stain under the back of a refrigerator on the floor"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si algo no te convence, pide una segunda opinión. Un buen diagnóstico se explica de forma clara y se puede comprobar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking honestly at the camera, hand on his chest"
+   },
+   {
+    "k": "W",
+    "v": "honest technician advice"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las tres: temperatura y sellos, aire y polvo, e hielo. Con esas revisiones se resuelven muchos casos sin gastar ni un peso.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the three checks on his fingers in the kitchen"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three lines: temperature and seals, airflow and dust, ice"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cuando vuelve a enfriar, cuídalo: limpia el condensador una vez al año, revisa los sellos, y no lo llenes de más.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "happy family kitchen cold food"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling beside a working refrigerator with a cold glass of water, relieved"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quédate en el canal. En el próximo, las lavadoras que más veo fallar, con una lista honesta. Y cuéntame qué problema tenía tu refrigerador.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly technician advice kitchen"
+   }
+  ]
+ }
+]

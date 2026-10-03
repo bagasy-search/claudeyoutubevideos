@@ -1,0 +1,578 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b001.wav",
+  "start": 0.0,
+  "len": 9.31,
+  "text": "Abres el refrigerador, y adentro está tibio. La leche, la carne, todo en peligro. Antes de entrar en pánico, revisa estas tres cosas."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b002.wav",
+  "start": 9.31,
+  "len": 8.62,
+  "text": "Soy Claudio, técnico de refrigeración. En la mayoría de las llamadas por refrigerador que no enfría, el problema se resuelve sin cambiar nada."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b003.wav",
+  "start": 17.93,
+  "len": 7.27,
+  "text": "Y cuesta lo mismo que una visita. Si tú mismo haces estas tres revisiones, a veces te ahorras la llamada completa."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b004.wav",
+  "start": 25.2,
+  "len": 9.47,
+  "text": "Uno: el control de temperatura y los sellos de la puerta. Dos: el aire alrededor del equipo y el polvo. Tres: el hielo en el interior."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b005.wav",
+  "start": 34.67,
+  "len": 9.29,
+  "text": "Primero, un dato importante: la comida refrigerada se conserva segura por debajo de unos cinco grados. Por encima, hay que tirar lo sensible."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b006.wav",
+  "start": 43.96,
+  "len": 9.87,
+  "text": "Si el refrigerador estuvo tibio por muchas horas, no arriesgues: la carne, el pollo, los lácteos y las sobras se desechan. La salud no tiene reposición."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b007.wav",
+  "start": 53.83,
+  "len": 7.88,
+  "text": "Primero, el control de temperatura. Parece obvio, pero muchas veces alguien lo movió sin querer al limpiar o al sacar algo."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b008.wav",
+  "start": 61.71,
+  "len": 7.6,
+  "text": "Ponlo en un valor medio o el que indica el manual. Un valor muy bajo no enfría más: solo lo hace trabajar de más."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b009.wav",
+  "start": 69.31,
+  "len": 8.55,
+  "text": "En equipos digitales, deben marcar unos tres a cuatro grados en el refrigerador y menos dieciocho en el congelador, aproximadamente."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b010.wav",
+  "start": 77.86,
+  "len": 7.75,
+  "text": "Para saber la verdad, mide: un vaso con agua y un termómetro en el estante del medio. Déjalo unas horas y lee."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b011.wav",
+  "start": 85.61,
+  "len": 10.71,
+  "text": "Después, los sellos. Esa goma que rodea la puerta cierra el aire frío. Si está dura, rota o sucia, el aire se escapa y el equipo no da abasto."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b012.wav",
+  "start": 96.32,
+  "len": 8.09,
+  "text": "La prueba del papel: cierra la puerta sobre una hoja. Si sale con facilidad, el sello no cierra bien. Pruébalo en todo el contorno."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b013.wav",
+  "start": 104.41,
+  "len": 6.13,
+  "text": "A veces solo hay suciedad que impide cerrar: límpialo con agua tibia y jabón, y sécalo bien."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b014.wav",
+  "start": 110.54,
+  "len": 7.99,
+  "text": "Si está endurecido, con aire tibio de un secador se ablanda. Y si está roto o deformado, se cambia: es una pieza barata."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b015.wav",
+  "start": 118.53,
+  "len": 8.71,
+  "text": "Y que nada impida cerrar la puerta: una botella, una bandeja torcida. Una puerta entreabierta es la causa más común."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b016.wav",
+  "start": 127.24,
+  "len": 8.03,
+  "text": "Segunda cosa: el calor que el refrigerador tiene que botar. Detrás o debajo, hay un condensador que lo expulsa al ambiente."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b017.wav",
+  "start": 135.27,
+  "len": 7.86,
+  "text": "Si ese condensador está cubierto de polvo, no bota el calor, el compresor se calienta y el equipo no enfría bien."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b018.wav",
+  "start": 143.13,
+  "len": 9.18,
+  "text": "Para limpiarlo: primero, desenchufa. Luego, aleja el equipo de la pared con cuidado, sin forzar el cable ni la manguera de agua."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b019.wav",
+  "start": 152.31,
+  "len": 7.86,
+  "text": "Con un cepillo largo y una aspiradora, retira el polvo, de arriba hacia abajo. Con suavidad: las tuberías son delicadas."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b020.wav",
+  "start": 160.17,
+  "len": 9.85,
+  "text": "Si tu refrigerador tiene el condensador abajo, detrás de una rejilla frontal, límpiala también: es el lugar donde más pelusa se junta."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b021.wav",
+  "start": 170.02,
+  "len": 9.49,
+  "text": "Y revisa el espacio: se necesita aire libre alrededor, de unos cinco centímetros a los lados y más atrás. Mucho ajuste lo asfixia."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b022.wav",
+  "start": 179.51,
+  "len": 8.12,
+  "text": "También influye el lugar: junto a un horno, al sol directo o en un cuarto muy caliente, trabaja con un esfuerzo enorme."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b023.wav",
+  "start": 187.63,
+  "len": 7.65,
+  "text": "Con la mano en el lateral: tibio es normal. Si quema, hay un problema de ventilación o un compresor forzado."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b024.wav",
+  "start": 195.28,
+  "len": 8.19,
+  "text": "Tercera cosa: el hielo. En refrigeradores no frost, el hielo donde no debe indica que algo falla en el descongelamiento."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b025.wav",
+  "start": 203.47,
+  "len": 7.92,
+  "text": "Si el panel trasero del congelador tiene una capa de hielo, el aire frío no circula, y el refrigerador de abajo queda tibio."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b026.wav",
+  "start": 211.39,
+  "len": 7.33,
+  "text": "A veces el desagüe del descongelamiento está tapado con hielo y restos, y el agua se congela en vez de salir."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b027.wav",
+  "start": 218.72,
+  "len": 8.62,
+  "text": "Solución sin costo: guarda la comida en una hielera, desenchufa, y deja la puerta abierta unas horas, con toallas en el piso."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b028.wav",
+  "start": 227.34,
+  "len": 8.7,
+  "text": "Se acelera con un recipiente de agua tibia adentro. Nunca uses cuchillos ni punzones: perforas el evaporador y adiós refrigerador."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b029.wav",
+  "start": 236.04,
+  "len": 7.28,
+  "text": "Con el hielo derretido, destapa el desagüe con agua tibia y una pajilla fina. Y seca todo antes de volver a enchufar."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b030.wav",
+  "start": 243.32,
+  "len": 8.79,
+  "text": "Y no taponar las rejillas interiores con comida: por ahí circula el aire frío. Un refrigerador demasiado lleno no enfría parejo."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b031.wav",
+  "start": 252.11,
+  "len": 10.7,
+  "text": "Si hiciste las tres cosas y sigue tibio, ahí sí empiezan las causas que requieren un técnico: ventilador, sensor, resistencia de descongelamiento o relé."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b032.wav",
+  "start": 262.81,
+  "len": 7.92,
+  "text": "Un ventilador del evaporador trabado por el hielo es muy común. Si escuchas que no suena ese zumbido suave, es una pista."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b033.wav",
+  "start": 270.73,
+  "len": 9.42,
+  "text": "Y el compresor: tiene que arrancar, trabajar un rato, y apagarse. Si arranca y para enseguida con un clic, es el relé o el compresor."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b034.wav",
+  "start": 280.15,
+  "len": 6.86,
+  "text": "Con una pinza amperimétrica veo si el compresor consume lo normal. Es la forma más rápida de saber si está vivo."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b035.wav",
+  "start": 287.01,
+  "len": 8.4,
+  "text": "Cuando llames al técnico, dile qué probaste, qué ruidos oyes y qué temperatura marca. Le ahorras tiempo y a ti, dinero."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b036.wav",
+  "start": 295.41,
+  "len": 9.64,
+  "text": "¿Se repara o se cambia? Depende de la edad, del gas, y de la pieza que falle. Si es un ventilador, un sensor o una resistencia, conviene reparar."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b037.wav",
+  "start": 305.05,
+  "len": 8.44,
+  "text": "Si el compresor está quemado y el equipo tiene más de diez años, la reparación casi nunca conviene. Haz la cuenta con el presupuesto escrito."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b038.wav",
+  "start": 313.49,
+  "len": 8.61,
+  "text": "Un refrigerador nuevo, bien elegido, gasta menos luz. Pero eso lo vemos en otros videos, donde comparo tipos y criterios de compra."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b039.wav",
+  "start": 322.1,
+  "len": 9.02,
+  "text": "Te cuento tres casos reales de mi trabajo. Un cliente me llamó desesperado: el refrigerador no enfriaba, y ya había pedido un equipo nuevo."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b040.wav",
+  "start": 331.12,
+  "len": 7.73,
+  "text": "Lo moví, y detrás había una alfombra de polvo y pelo de gato. Aspiré el condensador y en dos horas estaba bajando la temperatura."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b041.wav",
+  "start": 338.85,
+  "len": 10.97,
+  "text": "Segundo caso: una puerta que no cerraba. El sello estaba pegado con restos de jugo seco, y dejaba una rendija. Agua tibia y jabón, y se resolvió."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b042.wav",
+  "start": 349.82,
+  "len": 10.01,
+  "text": "Tercer caso: el dial de temperatura estaba en el valor más alto. Un niño lo había movido jugando. Cobré la visita y me sentí mal de cobrar."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b043.wav",
+  "start": 359.83,
+  "len": 5.88,
+  "text": "Por eso empiezo siempre por lo más simple. Es lo que menos cuesta y lo que más pasa."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b044.wav",
+  "start": 365.71,
+  "len": 8.56,
+  "text": "El termómetro en un vaso con agua refleja la temperatura real de los alimentos, y no la del aire, que cambia al abrir la puerta."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b045.wav",
+  "start": 374.27,
+  "len": 9.17,
+  "text": "Hay termómetros de aparato muy baratos, con una zona verde marcada. Es una compra que vale la pena, porque lo que no mides no lo controlas."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b046.wav",
+  "start": 383.44,
+  "len": 8.63,
+  "text": "Anota la temperatura mañana, tarde y noche durante un día. Si varía mucho, el equipo tiene un problema, aunque parezca que enfría."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b047.wav",
+  "start": 392.07,
+  "len": 8.9,
+  "text": "En el congelador, menos dieciocho es el valor ideal. Si marca menos de diez, la comida congelada se deteriora más rápido."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b048.wav",
+  "start": 400.97,
+  "len": 9.28,
+  "text": "Algunos mitos que escucho. Primero: poner el termostato al máximo ahorra energía. No: hace que el equipo trabaje sin parar."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b049.wav",
+  "start": 410.25,
+  "len": 10.13,
+  "text": "Segundo: meter comida caliente al refrigerador. Sube la temperatura de todo lo demás. Mejor deja enfriar un rato afuera, sin pasarte de dos horas."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b050.wav",
+  "start": 420.38,
+  "len": 7.3,
+  "text": "Tercero: forrar los estantes con plástico o cartón. Tapa el aire que circula y deja zonas tibias."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b051.wav",
+  "start": 427.68,
+  "len": 8.79,
+  "text": "Y cuarto, el hábito: abrir la puerta y quedarte mirando. Cada apertura deja salir el frío, y el equipo tiene que reponerlo."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b052.wav",
+  "start": 436.47,
+  "len": 9.25,
+  "text": "El refrigerador tiene zonas. Lo más frío está atrás y abajo. La puerta es lo más tibio, y ahí van las salsas y bebidas, no la leche."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b053.wav",
+  "start": 445.72,
+  "len": 9.16,
+  "text": "El cajón de verduras tiene humedad más alta. Y las carnes, en el estante de abajo, bien envueltas, para que no goteen sobre otros alimentos."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b054.wav",
+  "start": 454.88,
+  "len": 8.1,
+  "text": "Deja un poco de espacio entre los alimentos, para que el aire circule. Un refrigerador ordenado enfría mejor y gasta menos."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b055.wav",
+  "start": 462.98,
+  "len": 9.88,
+  "text": "¿Y si se corta la luz? Mantén las puertas cerradas. Un refrigerador lleno aguanta unas cuatro horas fríos, y un congelador lleno, hasta uno o dos días."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b056.wav",
+  "start": 472.86,
+  "len": 8.11,
+  "text": "Si pasó más tiempo, revisa con termómetro: lo que esté por encima de cinco grados más de dos horas, sin dudar, se desecha."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b057.wav",
+  "start": 480.97,
+  "len": 5.76,
+  "text": "Un truco: congela botellas de agua. En un corte, sirven de hielo y después las puedes beber."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b058.wav",
+  "start": 486.73,
+  "len": 8.14,
+  "text": "Y cuando vuelve la luz, a veces hay picos. Un protector de voltaje para el refrigerador evita que la subida dañe el compresor."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b059.wav",
+  "start": 494.87,
+  "len": 9.42,
+  "text": "Llama al técnico si hay olor a quemado, ruidos fuertes o clics repetidos, si el compresor caliente quema, o si aparece aceite en el piso."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b060.wav",
+  "start": 504.29,
+  "len": 6.59,
+  "text": "Una mancha de aceite puede indicar fuga de gas. Eso requiere equipo especializado, y no se improvisa."
+ },
+ {
+  "beat": "b061",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b061.wav",
+  "start": 510.88,
+  "len": 7.19,
+  "text": "Y si algo no te convence, pide una segunda opinión. Un buen diagnóstico se explica de forma clara y se puede comprobar."
+ },
+ {
+  "beat": "b062",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b062.wav",
+  "start": 518.07,
+  "len": 8.72,
+  "text": "Las tres: temperatura y sellos, aire y polvo, e hielo. Con esas revisiones se resuelven muchos casos sin gastar ni un peso."
+ },
+ {
+  "beat": "b063",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b063.wav",
+  "start": 526.79,
+  "len": 7.82,
+  "text": "Y cuando vuelve a enfriar, cuídalo: limpia el condensador una vez al año, revisa los sellos, y no lo llenes de más."
+ },
+ {
+  "beat": "b064",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcfrio/out/tcfrio/tramos/b064.wav",
+  "start": 534.61,
+  "len": 10.315,
+  "text": "Si te sirvió, quédate en el canal. En el próximo, las lavadoras que más veo fallar, con una lista honesta. Y cuéntame qué problema tenía tu refrigerador."
+ }
+]
