@@ -1,0 +1,760 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "5 HÁBITOS QUE LO ROMPEN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "cinco",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "MIDE LA CORRIENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "abraza",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b008",
+   "props": {
+    "text": "AIRE = ½ FACTURA EN VERANO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "mitad",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b011",
+   "props": {
+    "text": "EL COMPRESOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "compresor",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b015",
+   "props": {
+    "text": "ARRANQUE = MUCHA CORRIENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 54
+   },
+   "word": "arranca",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b018",
+   "props": {
+    "text": "VELOCIDAD FIJA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "fija",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b019",
+   "props": {
+    "text": "INVERTER",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "inverter",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b021",
+   "props": {
+    "step": 1,
+    "total": 5,
+    "title": "16 °C NO ENFRÍA MÁS RÁPIDO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b024",
+   "props": {
+    "text": "CONFORT: 24 – 26 °C",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "24",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b026",
+   "props": {
+    "text": "EL SERPENTÍN SE CONGELA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "serpentín",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b029",
+   "props": {
+    "text": "USÁ 24 – 25 °C",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "24",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b030",
+   "props": {
+    "text": "PEGATINA EN EL CONTROL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "pegatina",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b033",
+   "props": {
+    "text": "LA PRUEBA: 2 TARDES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "prueba",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b034",
+   "props": {
+    "pos": "top",
+    "size": 88,
+    "words": [
+     {
+      "t": "TARDE 1: 16 °C",
+      "beat": "b034",
+      "word": "16",
+      "hl": "red"
+     },
+     {
+      "t": "TARDE 2: 24 °C",
+      "beat": "b034",
+      "word": "24",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "primera",
+   "until": "b034",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b038",
+   "props": {
+    "text": "SIN PORCENTAJES INVENTADOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 54
+   },
+   "word": "porcentaje",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b039",
+   "props": {
+    "step": 2,
+    "total": 5,
+    "title": "PRENDER Y APAGAR"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b041",
+   "props": {
+    "text": "CADA ARRANQUE = UN PICO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "pico",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b044",
+   "props": {
+    "text": "RETARDO DE 3 MINUTOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "retardo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b046",
+   "props": {
+    "text": "< 1 HORA: DEJALO PRENDIDO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "hora",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b050",
+   "props": {
+    "step": 3,
+    "total": 5,
+    "title": "PUERTAS ABIERTAS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b052",
+   "props": {
+    "text": "ENFRÍA LA CALLE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "calle",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b054",
+   "props": {
+    "text": "CERRÁ · CORTINAS · RECIÉN AHÍ",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "cortinas",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b057",
+   "props": {
+    "step": 4,
+    "total": 5,
+    "title": "TURBO TODO EL DÍA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b062",
+   "props": {
+    "text": "TURBO: 10 MIN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "diez",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b063",
+   "props": {
+    "text": "MODO DORMIR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "dormir",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b064",
+   "props": {
+    "step": 5,
+    "total": 5,
+    "title": "CORTAR DESDE LA LLAVE"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b066",
+   "props": {
+    "text": "CORTA CON EL COMPRESOR ANDANDO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "peor",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b070",
+   "props": {
+    "text": "CONTROL → VENTILADOR FRENA → LLAVE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "control",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b072",
+   "props": {
+    "pos": "top",
+    "size": 78,
+    "words": [
+     {
+      "t": "1 NO USAR 16 °C",
+      "beat": "b072",
+      "word": "16",
+      "hl": "yellow"
+     },
+     {
+      "t": "2 NO PRENDER Y APAGAR",
+      "beat": "b072",
+      "word": "apagar"
+     },
+     {
+      "t": "3 NO ABRIR VENTANAS",
+      "beat": "b072",
+      "word": "ventanas",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "cinco",
+   "until": "b072",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b074",
+   "props": {
+    "text": "NOTA AL LADO DEL AIRE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "nota",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b075",
+   "props": {
+    "text": "CONTROL EN LUGAR ALTO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "alto",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b077",
+   "props": {
+    "text": "VENTILADOR DE TECHO: +1 o 2 °C",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "ventilador",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b081",
+   "props": {
+    "text": "TEMPORIZADOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "temporizador",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b084",
+   "props": {
+    "text": "FILTRO: 1 VEZ POR MES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "mes",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b087",
+   "props": {
+    "pos": "top",
+    "size": 88,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b087",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "ANTES DE PRENDER EL AIRE",
+      "beat": "b087",
+      "word": "prender",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b087",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}

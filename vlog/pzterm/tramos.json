@@ -1,0 +1,785 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b001.wav",
+  "start": 0.0,
+  "len": 7.53,
+  "text": "Este aire acondicionado se está rompiendo de a poco. Y el que lo rompe no es el calor: es el control remoto."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b002.wav",
+  "start": 7.53,
+  "len": 6.83,
+  "text": "Hay cinco hábitos con la temperatura que casi todos tenemos. Y cada uno le acorta la vida al equipo."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b003.wav",
+  "start": 14.36,
+  "len": 5.34,
+  "text": "El primero parece sentido común. Y es justo el que más aires rompe en diciembre."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b004.wav",
+  "start": 19.7,
+  "len": 8.16,
+  "text": "Soy Claudio. Con una pinza amperométrica te voy a mostrar qué pasa adentro del cable cuando haces cada uno de esos errores."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b005.wav",
+  "start": 27.86,
+  "len": 9.73,
+  "text": "La pinza amperométrica es una herramienta de electricista: abraza un cable y mide cuánta corriente pasa, sin cortarlo ni tocar nada."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b006.wav",
+  "start": 37.59,
+  "len": 8.29,
+  "text": "Se usa en un solo conductor, no en el cable entero. Eso lo explico en otro video, porque si la usás mal, no mide nada."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b007.wav",
+  "start": 45.88,
+  "len": 5.33,
+  "text": "Porque no es solo el equipo: cada hábito se paga también en la factura de la luz."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b008.wav",
+  "start": 51.21,
+  "len": 7.15,
+  "text": "En verano, el aire puede ser la mitad de la factura de luz de una casa. Cualquier hábito chico se nota fin de mes."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b009.wav",
+  "start": 58.36,
+  "len": 7.56,
+  "text": "Y se nota todavía más en los meses de calor fuerte, cuando el equipo trabaja al límite durante horas seguidas."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b010.wav",
+  "start": 65.92,
+  "len": 6.67,
+  "text": "Y el quinto es el más contraintuitivo. Tanto, que muchos técnicos tampoco te lo cuentan."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b011.wav",
+  "start": 72.59,
+  "len": 7.31,
+  "text": "El corazón del aire es el compresor. Un motor que trabaja comprimiendo el gas. Es lo más caro del equipo."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b012.wav",
+  "start": 79.9,
+  "len": 8.15,
+  "text": "El aire funciona en circuito: el gas se comprime, se enfría afuera, se expande adentro y saca el calor de tu casa."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b013.wav",
+  "start": 88.05,
+  "len": 5.87,
+  "text": "No es magia: es el mismo principio de la heladera, pero con ventilador y a mayor escala."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b014.wav",
+  "start": 93.92,
+  "len": 7.34,
+  "text": "Todo lo que te voy a contar tiene un solo objetivo: que ese compresor trabaje menos y arranque menos."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b015.wav",
+  "start": 101.26,
+  "len": 6.68,
+  "text": "Cada vez que arranca el compresor, consume mucho más que cuando ya está funcionando. Eso se ve en la pinza."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b016.wav",
+  "start": 107.94,
+  "len": 8.79,
+  "text": "El arranque pide varias veces la corriente de régimen, durante un segundo o dos. Si arranca mil veces, se desgasta mil veces."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b017.wav",
+  "start": 116.73,
+  "len": 10.22,
+  "text": "Hay dos tipos de aires: los de velocidad fija, que prenden y apagan, y los inverter, que regulan su velocidad. Los hábitos cambian según cuál tengas."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b018.wav",
+  "start": 126.95,
+  "len": 8.05,
+  "text": "Los de velocidad fija son los clásicos: o están en máxima potencia, o están apagados. Y por eso prenden y apagan seguido."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b019.wav",
+  "start": 135.0,
+  "len": 8.98,
+  "text": "Los inverter cambian la velocidad del compresor: arrancan fuerte, y cuando llegan a la temperatura, bajan el ritmo y se quedan estables."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b020.wav",
+  "start": 143.98,
+  "len": 8.39,
+  "text": "El tuyo lo sabés mirando la etiqueta o el manual. Si dice inverter, trabaja a ritmo variable. Si no, es de velocidad fija."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b021.wav",
+  "start": 152.37,
+  "len": 6.51,
+  "text": "El primer hábito: poner el aire en dieciséis grados, para que enfríe más rápido. Es lo que hace todo el mundo."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b022.wav",
+  "start": 158.88,
+  "len": 8.47,
+  "text": "Pero un aire no enfría más rápido porque le pidas menos temperatura. Enfría a la misma velocidad: solo que no se detiene en el punto."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b023.wav",
+  "start": 167.35,
+  "len": 8.48,
+  "text": "Le pedís dieciséis, y el compresor no frena hasta llegar a dieciséis. Pasa por veinticuatro, por veintidós, y sigue."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b024.wav",
+  "start": 175.83,
+  "len": 7.65,
+  "text": "Acá hay un número útil: tu cuerpo se siente cómodo entre veinticuatro y veintiséis, con la humedad bien controlada."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b025.wav",
+  "start": 183.48,
+  "len": 8.41,
+  "text": "Si necesitás una manta con el aire prendido, algo falló: la temperatura estaba demasiado baja y estabas pagando por frío de sobra."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b026.wav",
+  "start": 191.89,
+  "len": 7.98,
+  "text": "Y ahí aparece el problema: el serpentín se pone tan frío que se congela. Una capa de hielo que bloquea el aire."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b027.wav",
+  "start": 199.87,
+  "len": 6.81,
+  "text": "El hielo aparece también en las cañerías de afuera, y puede llegar hasta el compresor si el equipo sigue funcionando así."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b028.wav",
+  "start": 206.68,
+  "len": 8.17,
+  "text": "Con hielo, el aire frío ya no sale: el equipo trabaja de más, enfría peor, y después gotea agua por toda la pared."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b029.wav",
+  "start": 214.85,
+  "len": 7.26,
+  "text": "La solución: veinticuatro, veinticinco grados. Se siente fresco, el equipo respira, y la factura baja."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b030.wav",
+  "start": 222.11,
+  "len": 6.51,
+  "text": "Una pegatina en el control con la temperatura de confort evita que la familia cambie el valor por costumbre."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b031.wav",
+  "start": 228.62,
+  "len": 6.8,
+  "text": "En mi casa lo hice, y es el mejor truco que tengo: todos se acostumbran, y nadie vuelve a poner dieciséis."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b032.wav",
+  "start": 235.42,
+  "len": 6.94,
+  "text": "Más de ocho o diez grados de diferencia con la calle es mucho. Tu cuerpo se acostumbra y el equipo también."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b033.wav",
+  "start": 242.36,
+  "len": 8.52,
+  "text": "Para que no me creas solo a mí, hice una prueba. Dos tardes, la misma sala, el mismo aire, el mismo sol de la tarde."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b034.wav",
+  "start": 250.88,
+  "len": 9.09,
+  "text": "Primera tarde: el control en dieciséis. Segunda tarde: en veinticuatro. Cada diez minutos, anoto la temperatura y la corriente."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b035.wav",
+  "start": 259.97,
+  "len": 8.2,
+  "text": "Con el control en dieciséis, a los treinta minutos la sala estaba en veintiséis, y el compresor seguía a pleno, sin descanso."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b036.wav",
+  "start": 268.17,
+  "len": 8.16,
+  "text": "Con veinticuatro, a los veinticinco minutos ya estaba en la temperatura, y la pinza bajó: el compresor empezó a descansar."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b037.wav",
+  "start": 276.33,
+  "len": 8.56,
+  "text": "Lo importante: en ambos casos la sala se sintió fresca, pero el equipo de dieciséis siguió trabajando casi una hora de más."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b038.wav",
+  "start": 284.89,
+  "len": 8.92,
+  "text": "Y no te voy a inventar un porcentaje de ahorro, porque depende del equipo, de la casa, y del calor de ese día. Lo que sí vi es la tendencia."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b039.wav",
+  "start": 293.81,
+  "len": 7.76,
+  "text": "El segundo hábito: prenderlo y apagarlo todo el tiempo. Apagarlo cuando te vas diez minutos, prenderlo cuando volvés."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b040.wav",
+  "start": 301.57,
+  "len": 7.07,
+  "text": "A veces lo dejamos prendido sin nadie, o lo apagamos y prendemos varias veces en la tarde, buscando ahorrar."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b041.wav",
+  "start": 308.64,
+  "len": 7.57,
+  "text": "En la pinza se ve clarísimo: cada arranque mete un pico grande de corriente, y el compresor sufre un golpe mecánico."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b042.wav",
+  "start": 316.21,
+  "len": 6.42,
+  "text": "Es como arrancar un auto cada cinco minutos: no es el motor andando lo que lo gasta, es el arranque."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b043.wav",
+  "start": 322.63,
+  "len": 7.03,
+  "text": "El mayor desgaste de un motor ocurre en los primeros segundos de arranque, cuando todavía no hay aceite que lo lubrique del todo."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b044.wav",
+  "start": 329.66,
+  "len": 8.94,
+  "text": "Los equipos tienen un retardo de tres minutos para protegerse: si lo apagás y prendés enseguida, no arranca, o peor, lo fuerza."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b045.wav",
+  "start": 338.6,
+  "len": 8.7,
+  "text": "Es una protección electrónica, y respetarla es parte del cuidado. Esperá tres minutos, y arranca con las presiones equilibradas."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b046.wav",
+  "start": 347.3,
+  "len": 5.62,
+  "text": "Si te vas por menos de una hora, mejor dejarlo prendido en veinticinco, o en modo ahorro."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b047.wav",
+  "start": 352.92,
+  "len": 8.66,
+  "text": "Para ausencias más largas, sí: apagalo. Para esperas cortas, dejalo estable. La regla es no tener arranques innecesarios."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b048.wav",
+  "start": 361.58,
+  "len": 8.15,
+  "text": "Con un inverter, la pinza marca bajito y parejo cuando ya llegó a la temperatura. Apagarlo tira esa ventaja por la ventana."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b049.wav",
+  "start": 369.73,
+  "len": 7.27,
+  "text": "Y eso se traduce en menos gasto: el inverter consume mucho menos cuando mantiene que cuando enfría desde cero."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b050.wav",
+  "start": 377.0,
+  "len": 6.43,
+  "text": "El tercer hábito: prender el aire con las puertas y ventanas abiertas \"un ratito\" para ventilar."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b051.wav",
+  "start": 383.43,
+  "len": 7.69,
+  "text": "A veces lo hacemos sin pensarlo, entrando y saliendo al balcón. Cada vez que abrís, entra aire caliente y la humedad."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b052.wav",
+  "start": 391.12,
+  "len": 7.28,
+  "text": "El aire está enfriando la calle. El compresor no para nunca, la pinza marca máximo y nunca llega a la temperatura."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b053.wav",
+  "start": 398.4,
+  "len": 7.62,
+  "text": "Y no es solo temperatura: la humedad que entra obliga al aire a condensar agua, y eso gasta aún más energía."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b054.wav",
+  "start": 406.02,
+  "len": 8.36,
+  "text": "Cerrá la casa, bajá las cortinas del lado del sol, y recién ahí prendé. Que el aire trabaje para el ambiente, no para el barrio."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b055.wav",
+  "start": 414.38,
+  "len": 7.9,
+  "text": "Una cortina o una persiana del lado del sol puede bajar varios grados la temperatura de una habitación, sin gastar nada."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b056.wav",
+  "start": 422.28,
+  "len": 7.22,
+  "text": "Tres cosas que ayudan a que el equipo trabaje menos: cortinas, puertas cerradas y ventilar antes, no durante."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b057.wav",
+  "start": 429.5,
+  "len": 8.3,
+  "text": "El cuarto hábito: dejar el modo turbo o potente todo el día. Ese botón está para casos puntuales, no para siempre."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b058.wav",
+  "start": 437.8,
+  "len": 6.92,
+  "text": "Turbo, potente, o fuerte, según la marca. Es el botón que apretamos cuando llegamos de la calle muertos de calor."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b059.wav",
+  "start": 444.72,
+  "len": 8.41,
+  "text": "Turbo hace girar todo al máximo: el ventilador, el compresor, y todo lo demás. Y eso sube el consumo y el desgaste."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b060.wav",
+  "start": 453.13,
+  "len": 8.45,
+  "text": "El ventilador exterior y el compresor a tope. En un equipo de velocidad fija, el turbo es casi lo mismo que su marcha normal."
+ },
+ {
+  "beat": "b061",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b061.wav",
+  "start": 461.58,
+  "len": 7.3,
+  "text": "En turbo, la pinza marca una barbaridad. Y si lo dejás horas, estás usando el aire como una estufa invertida."
+ },
+ {
+  "beat": "b062",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b062.wav",
+  "start": 468.88,
+  "len": 9.9,
+  "text": "Usalo diez minutos para bajar rápido, y después cambiá a modo normal o dormir. Dormir sube la temperatura de a poco, y ahorra bastante."
+ },
+ {
+  "beat": "b063",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b063.wav",
+  "start": 478.78,
+  "len": 7.08,
+  "text": "Modo dormir: sube uno o dos grados durante la noche, porque el cuerpo necesita menos frío cuando duerme."
+ },
+ {
+  "beat": "b064",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b064.wav",
+  "start": 485.86,
+  "len": 6.86,
+  "text": "Y el quinto, el que casi nadie conoce: cortar el aire desde la llave térmica mientras está funcionando."
+ },
+ {
+  "beat": "b065",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b065.wav",
+  "start": 492.72,
+  "len": 6.0,
+  "text": "Muchos cortan el aire desde el tablero cuando se van de casa, para estar seguros de que no queda prendido."
+ },
+ {
+  "beat": "b066",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b066.wav",
+  "start": 498.72,
+  "len": 7.36,
+  "text": "Es lo más rápido, y es lo peor: corta la energía con el compresor en marcha, sin que el equipo pueda cerrar sus válvulas."
+ },
+ {
+  "beat": "b067",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b067.wav",
+  "start": 506.08,
+  "len": 7.84,
+  "text": "Parece prolijo, pero es como cortar el motor de un auto andando: no pasa nada la primera vez, pero la costumbre lo gasta."
+ },
+ {
+  "beat": "b068",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b068.wav",
+  "start": 513.92,
+  "len": 7.44,
+  "text": "Adentro hay gas a presión. Si cortás de golpe, queda desequilibrado, y el arranque siguiente es más duro."
+ },
+ {
+  "beat": "b069",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b069.wav",
+  "start": 521.36,
+  "len": 8.72,
+  "text": "Los técnicos medimos esa presión con unos manómetros. Con corte brusco, las presiones tardan en igualarse y arrancar cuesta más."
+ },
+ {
+  "beat": "b070",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b070.wav",
+  "start": 530.08,
+  "len": 7.81,
+  "text": "Lo correcto: apagarlo con el control, dejar que el ventilador frene, y recién después cortar la térmica si hace falta."
+ },
+ {
+  "beat": "b071",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b071.wav",
+  "start": 537.89,
+  "len": 7.62,
+  "text": "Se cierra la paleta, se frena el ventilador, y el compresor se detiene de forma ordenada. Eso sí es apagar bien un aire."
+ },
+ {
+  "beat": "b072",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b072.wav",
+  "start": 545.51,
+  "len": 9.15,
+  "text": "Los cinco: no usar dieciséis, no prender y apagar, no abrir ventanas con el aire, no abusar del turbo, y no cortar desde la térmica."
+ },
+ {
+  "beat": "b073",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b073.wav",
+  "start": 554.66,
+  "len": 8.07,
+  "text": "Si hacés solo dos de estos cambios, el equipo lo agradece. Si hacés los cinco, vas a notar la diferencia en el siguiente verano."
+ },
+ {
+  "beat": "b074",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b074.wav",
+  "start": 562.73,
+  "len": 7.25,
+  "text": "Pegá una nota al lado del aire con los cinco hábitos. Suena exagerado, pero así lo recuerdan todos en la casa."
+ },
+ {
+  "beat": "b075",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b075.wav",
+  "start": 569.98,
+  "len": 6.3,
+  "text": "Y si hay chicos, el control en un lugar alto: les encanta jugar con el dieciséis y el turbo."
+ },
+ {
+  "beat": "b076",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b076.wav",
+  "start": 576.28,
+  "len": 6.98,
+  "text": "Con eso, el aire vive años más, la factura baja, y la casa se siente mejor. Sin gastar un peso."
+ },
+ {
+  "beat": "b077",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b077.wav",
+  "start": 583.26,
+  "len": 7.51,
+  "text": "Una pregunta que me hacen: ¿ayuda un ventilador de techo? Sí: mueve el aire, y sentís más fresco con un grado más."
+ },
+ {
+  "beat": "b078",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b078.wav",
+  "start": 590.77,
+  "len": 7.24,
+  "text": "Con ventilador, podés subir uno o dos grados la temperatura del aire, y sentir lo mismo. Eso es ahorro de verdad."
+ },
+ {
+  "beat": "b079",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b079.wav",
+  "start": 598.01,
+  "len": 7.34,
+  "text": "Otra: ¿conviene dejarlo prendido todo el día para que no gaste en el arranque? Depende de cuánto tiempo estés afuera."
+ },
+ {
+  "beat": "b080",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b080.wav",
+  "start": 605.35,
+  "len": 8.49,
+  "text": "Si te vas menos de una hora, dejalo. Si te vas varias horas, apagalo: mantener una casa fría vacía es pagar frío que no usás."
+ },
+ {
+  "beat": "b081",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b081.wav",
+  "start": 613.84,
+  "len": 8.29,
+  "text": "El temporizador es tu aliado: programá que se apague una hora antes de que te levantes, y que prenda un rato antes de volver."
+ },
+ {
+  "beat": "b082",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b082.wav",
+  "start": 622.13,
+  "len": 7.01,
+  "text": "Con el temporizador evitás el olvido, que es el hábito más caro de todos: el aire prendido en una casa vacía."
+ },
+ {
+  "beat": "b083",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b083.wav",
+  "start": 629.14,
+  "len": 9.0,
+  "text": "Y una cosa que no es de hábitos pero ayuda: el filtro. Un filtro sucio te hace subir el consumo y empeora todo lo que te conté."
+ },
+ {
+  "beat": "b084",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b084.wav",
+  "start": 638.14,
+  "len": 8.0,
+  "text": "De eso hablamos en otro video, pero apuntalo: una vez por mes en verano, con agua y jabón, y al sol a secar."
+ },
+ {
+  "beat": "b085",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b085.wav",
+  "start": 646.14,
+  "len": 6.4,
+  "text": "Conozco aires de veinte años que siguen andando, y es por una sola razón: nadie los maltrató."
+ },
+ {
+  "beat": "b086",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b086.wav",
+  "start": 652.54,
+  "len": 10.08,
+  "text": "Y ojo, que esto no es magia: un equipo mal instalado o con gas faltante igual tiene problemas. Pero los hábitos son lo que podés controlar vos."
+ },
+ {
+  "beat": "b087",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterm/out/pzterm/tramos/b087.wav",
+  "start": 662.62,
+  "len": 9.14,
+  "text": "Si te sirvió, quedate en el canal: el próximo es qué tenés que hacer antes de prender el aire este verano. Y contame cuál de estos hábitos tenías."
+ }
+]

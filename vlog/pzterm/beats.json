@@ -1,0 +1,1519 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Este aire acondicionado se está rompiendo de a poco. Y el que lo rompe no es el calor: es el control remoto.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "an air conditioner indoor unit on a living room wall with a thick layer of ice forming on its coil seen through the open panel",
+    "motion": "the ice crystals glint and a small drip falls"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner unit on wall"
+   },
+   {
+    "k": "W",
+    "v": "an air conditioner indoor unit on a living"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay cinco hábitos con la temperatura que casi todos tenemos. Y cada uno le acorta la vida al equipo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in a living room holding an air conditioner remote control and pointing at it with a worried face"
+   },
+   {
+    "k": "G",
+    "v": "a split air conditioner remote with the display showing sixteen degrees held in a hand"
+   },
+   {
+    "k": "W",
+    "v": "Claudio standing in a living room holding an"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El primero parece sentido común. Y es justo el que más aires rompe en diciembre.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hot summer sweating man living room"
+   },
+   {
+    "k": "P",
+    "v": "Claudio wiping his forehead on a hot summer afternoon in an apartment, fan on, annoyed"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio. Con una pinza amperométrica te voy a mostrar qué pasa adentro del cable cuando haces cada uno de esos errores.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera seriously with a clamp meter in his hand in a living room"
+   },
+   {
+    "k": "G",
+    "v": "a clamp meter measuring the current of an air conditioner cable at a wall socket"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera seriously with a"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La pinza amperométrica es una herramienta de electricista: abraza un cable y mide cuánta corriente pasa, sin cortarlo ni tocar nada.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter with its jaws open next to a single insulated cable on a table"
+   },
+   {
+    "k": "W",
+    "v": "clamp meter electrician"
+   },
+   {
+    "k": "W",
+    "v": "a clamp meter with its jaws open next"
+   },
+   {
+    "k": "W",
+    "v": "a clamp meter with its jaws open next"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se usa en un solo conductor, no en el cable entero. Eso lo explico en otro video, porque si la usás mal, no mide nada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining how the clamp meter works with both hands around the jaws, friendly"
+   },
+   {
+    "k": "G",
+    "v": "a clamp meter closed around one wire only of a power cord, not both"
+   },
+   {
+    "k": "W",
+    "v": "Claudio explaining how the clamp meter works with"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Porque no es solo el equipo: cada hábito se paga también en la factura de la luz.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "electricity bill high"
+   },
+   {
+    "k": "G",
+    "v": "an electricity bill with a high amount on a table next to an air conditioner remote and a calculator"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En verano, el aire puede ser la mitad de la factura de luz de una casa. Cualquier hábito chico se nota fin de mes.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a thick wad of folded bills in his hand and then at the air conditioner, resigned"
+   },
+   {
+    "k": "W",
+    "v": "money savings electricity"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at a thick wad of folded"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y se nota todavía más en los meses de calor fuerte, cuando el equipo trabaja al límite durante horas seguidas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an electricity meter in a stairwell with a spinning disc and a number display"
+   },
+   {
+    "k": "W",
+    "v": "electric meter reading"
+   },
+   {
+    "k": "W",
+    "v": "an electricity meter in a stairwell with a"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el quinto es el más contraintuitivo. Tanto, que muchos técnicos tampoco te lo cuentan.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising one finger at the camera with a serious look in a living room with an air conditioner behind him"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner repair technician"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El corazón del aire es el compresor. Un motor que trabaja comprimiendo el gas. Es lo más caro del equipo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner outdoor unit compressor"
+   },
+   {
+    "k": "G",
+    "v": "an outdoor air conditioner unit with its cover open showing the compressor and a fan on a balcony"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El aire funciona en circuito: el gas se comprime, se enfría afuera, se expande adentro y saca el calor de tu casa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a cutaway diagram of an air conditioner showing the cycle of compressor, condenser and evaporator with arrows"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner diagram"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No es magia: es el mismo principio de la heladera, pero con ventilador y a mayor escala.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio tracing the path of the gas with his finger on a diagram on the wall"
+   },
+   {
+    "k": "G",
+    "v": "a simple diagram on a wall with a loop of copper pipes connecting an outdoor and an indoor unit"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Todo lo que te voy a contar tiene un solo objetivo: que ese compresor trabaje menos y arranque menos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio crouching beside an outdoor air conditioner unit pointing at the compressor"
+   },
+   {
+    "k": "G",
+    "v": "a compressor of an air conditioner a black metal cylinder with copper pipes connected"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada vez que arranca el compresor, consume mucho más que cuando ya está funcionando. Eso se ve en la pinza.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "electric current clamp meter"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding the clamp meter jaws around the supply cable of an indoor air conditioner unit and reading the display"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El arranque pide varias veces la corriente de régimen, durante un segundo o dos. Si arranca mil veces, se desgasta mil veces.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter display showing a high current peak at start up then a lower steady value"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing the display of the clamp meter to the camera with raised eyebrows"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay dos tipos de aires: los de velocidad fija, que prenden y apagan, y los inverter, que regulan su velocidad. Los hábitos cambian según cuál tengas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner types inverter"
+   },
+   {
+    "k": "G",
+    "v": "a split air conditioner box label showing the word inverter on a shelf in a store"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los de velocidad fija son los clásicos: o están en máxima potencia, o están apagados. Y por eso prenden y apagan seguido.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old window air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "an old fixed speed split air conditioner on a wall with yellowed plastic"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los inverter cambian la velocidad del compresor: arrancan fuerte, y cuando llegan a la temperatura, bajan el ritmo y se quedan estables.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "inverter technology fan"
+   },
+   {
+    "k": "G",
+    "v": "a modern inverter split air conditioner with a green leaf logo on a wall"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El tuyo lo sabés mirando la etiqueta o el manual. Si dice inverter, trabaja a ritmo variable. Si no, es de velocidad fija.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio reading the label on an air conditioner side panel with his finger"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner nameplate with technical data in a small font"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El primer hábito: poner el aire en dieciséis grados, para que enfríe más rápido. Es lo que hace todo el mundo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "thermostat setting low temperature"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding the remote and setting the temperature to the lowest value while looking smug in a hot living room"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero un aire no enfría más rápido porque le pidas menos temperatura. Enfría a la misma velocidad: solo que no se detiene en el punto.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an air conditioner remote with sixteen degrees on its display next to a glass of cold water sweating on a table"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner remote control"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Le pedís dieciséis, y el compresor no frena hasta llegar a dieciséis. Pasa por veinticuatro, por veintidós, y sigue.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a drawing on a whiteboard of a room temperature line falling and a second line for the setpoint, showing the unit running until it reaches the set value"
+   },
+   {
+    "k": "P",
+    "v": "Claudio drawing two lines on a whiteboard to explain, concentrated"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Acá hay un número útil: tu cuerpo se siente cómodo entre veinticuatro y veintiséis, con la humedad bien controlada.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cold room temperature thermometer"
+   },
+   {
+    "k": "G",
+    "v": "a room thermostat thermometer reading twenty three degrees on a wall"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si necesitás una manta con el aire prendido, algo falló: la temperatura estaba demasiado baja y estabas pagando por frío de sobra.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio touching his arm and shivering a little in a too cold room, a blanket on the sofa"
+   },
+   {
+    "k": "G",
+    "v": "a woolen blanket on a sofa in a living room with an air conditioner running full"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y ahí aparece el problema: el serpentín se pone tan frío que se congela. Una capa de hielo que bloquea el aire.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "ice on air conditioner coil"
+   },
+   {
+    "k": "G",
+    "v": "a frozen evaporator coil covered in white frost behind an open panel of an air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El hielo aparece también en las cañerías de afuera, y puede llegar hasta el compresor si el equipo sigue funcionando así.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "frozen pipe ice buildup"
+   },
+   {
+    "k": "G",
+    "v": "white frost on copper pipes of an outdoor air conditioner unit"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con hielo, el aire frío ya no sale: el equipo trabaja de más, enfría peor, y después gotea agua por toda la pared.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "frost slowly melting and dripping from an air conditioner coil into a tray",
+    "motion": "drops of water fall from the melting frost"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the frosted coil with a flashlight, frowning"
+   },
+   {
+    "k": "W",
+    "v": "frost slowly melting and dripping from an air"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La solución: veinticuatro, veinticinco grados. Se siente fresco, el equipo respira, y la factura baja.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio setting the remote to twenty-four degrees and smiling, a comfortable living room around him"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner remote showing twenty-four degrees with a small snowflake icon"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una pegatina en el control con la temperatura de confort evita que la familia cambie el valor por costumbre.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a handwritten sticker on an air conditioner remote that says twenty-four degrees with a small tick"
+   },
+   {
+    "k": "W",
+    "v": "remote control"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En mi casa lo hice, y es el mejor truco que tengo: todos se acostumbran, y nadie vuelve a poner dieciséis.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio sticking a small label on the remote with the temperature written, smiling"
+   },
+   {
+    "k": "W",
+    "v": "family living room summer"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Más de ocho o diez grados de diferencia con la calle es mucho. Tu cuerpo se acostumbra y el equipo también.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hand holding remote cooling comfortable"
+   },
+   {
+    "k": "P",
+    "v": "Claudio feeling the air from the vents with his palm and nodding, relaxed"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para que no me creas solo a mí, hice una prueba. Dos tardes, la misma sala, el mismo aire, el mismo sol de la tarde.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio setting up a thermometer and a clamp meter in a living room before a test, notebook in hand"
+   },
+   {
+    "k": "G",
+    "v": "a notebook with a table for temperature and current readings on a coffee table next to a thermometer"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primera tarde: el control en dieciséis. Segunda tarde: en veinticuatro. Cada diez minutos, anoto la temperatura y la corriente.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "test measurement experiment notebook"
+   },
+   {
+    "k": "P",
+    "v": "Claudio writing the first readings in the notebook, looking at the thermometer on the wall"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el control en dieciséis, a los treinta minutos la sala estaba en veintiséis, y el compresor seguía a pleno, sin descanso.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter reading a high steady current while the thermometer in the room shows twenty seven degrees"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking the clamp meter reading with a hand on his hip"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con veinticuatro, a los veinticinco minutos ya estaba en la temperatura, y la pinza bajó: el compresor empezó a descansar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter reading a lower current after the unit reached the set temperature, thermometer reading twenty four"
+   },
+   {
+    "k": "P",
+    "v": "Claudio nodding and writing numbers"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo importante: en ambos casos la sala se sintió fresca, pero el equipo de dieciséis siguió trabajando casi una hora de más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio comparing the two notebook pages with a pencil, impressed"
+   },
+   {
+    "k": "G",
+    "v": "two notebook pages side by side with two temperature curves drawn, one flat and one falling"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y no te voy a inventar un porcentaje de ahorro, porque depende del equipo, de la casa, y del calor de ese día. Lo que sí vi es la tendencia.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "electricity consumption chart"
+   },
+   {
+    "k": "P",
+    "v": "Claudio shrugging with an honest expression in the living room"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El segundo hábito: prenderlo y apagarlo todo el tiempo. Apagarlo cuando te vas diez minutos, prenderlo cuando volvés.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "turning air conditioner on off switch"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pressing the power button of a remote repeatedly with an impatient face"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces lo dejamos prendido sin nadie, o lo apagamos y prendemos varias veces en la tarde, buscando ahorrar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an empty living room with an air conditioner switched on at midday and a closed door"
+   },
+   {
+    "k": "W",
+    "v": "empty room air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En la pinza se ve clarísimo: cada arranque mete un pico grande de corriente, y el compresor sufre un golpe mecánico.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter display with a big current peak every time the unit starts, a timeline sketch behind it"
+   },
+   {
+    "k": "W",
+    "v": "electric meter spinning"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es como arrancar un auto cada cinco minutos: no es el motor andando lo que lo gasta, es el arranque.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining with both hands, one fist for the compressor starting and another opening, in a living room"
+   },
+   {
+    "k": "G",
+    "v": "a diagram of a compressor starting and stopping repeatedly with arrows showing wear"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El mayor desgaste de un motor ocurre en los primeros segundos de arranque, cuando todavía no hay aceite que lo lubrique del todo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "car starter engine turning key"
+   },
+   {
+    "k": "G",
+    "v": "a car key in an ignition being turned in a garage"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los equipos tienen un retardo de tres minutos para protegerse: si lo apagás y prendés enseguida, no arranca, o peor, lo fuerza.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "compressor protection delay time"
+   },
+   {
+    "k": "G",
+    "v": "a note taped on an air conditioner outdoor unit reading wait three minutes after switching off"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es una protección electrónica, y respetarla es parte del cuidado. Esperá tres minutos, y arranca con las presiones equilibradas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small timer icon on the control board of an air conditioner showing a three minute countdown"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding a stopwatch and waiting beside an air conditioner that is off"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te vas por menos de una hora, mejor dejarlo prendido en veinticinco, o en modo ahorro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head with a half smile while looking at his watch next to the air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "a wristwatch on a wrist beside an air conditioner remote"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para ausencias más largas, sí: apagalo. Para esperas cortas, dejalo estable. La regla es no tener arranques innecesarios.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "eco energy saving mode button"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner remote with a leaf shaped eco button highlighted in green"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un inverter, la pinza marca bajito y parejo cuando ya llegó a la temperatura. Apagarlo tira esa ventaja por la ventana.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "inverter air conditioner efficient"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the clamp meter reading a low steady current on an inverter unit, impressed"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y eso se traduce en menos gasto: el inverter consume mucho menos cuando mantiene que cuando enfría desde cero.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter display showing a low steady current after the room reached the target temperature"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping the display with a finger and smiling"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El tercer hábito: prender el aire con las puertas y ventanas abiertas \"un ratito\" para ventilar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "open window with air conditioner running"
+   },
+   {
+    "k": "P",
+    "v": "Claudio standing in front of an open balcony door with an air conditioner running behind him, shaking his head"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces lo hacemos sin pensarlo, entrando y saliendo al balcón. Cada vez que abrís, entra aire caliente y la humedad.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "summer heat window sun"
+   },
+   {
+    "k": "G",
+    "v": "a hot sunny balcony door open in a living room with an air conditioner running"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El aire está enfriando la calle. El compresor no para nunca, la pinza marca máximo y nunca llega a la temperatura.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter display showing a sustained high current while the air conditioner struggles in a room with open doors"
+   },
+   {
+    "k": "W",
+    "v": "hot air entering room"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y no es solo temperatura: la humedad que entra obliga al aire a condensar agua, y eso gasta aún más energía.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "humidity room dehumidify"
+   },
+   {
+    "k": "G",
+    "v": "a hygrometer showing high humidity in a room with an air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cerrá la casa, bajá las cortinas del lado del sol, y recién ahí prendé. Que el aire trabaje para el ambiente, no para el barrio.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio closing the balcony door and curtains, then holding up three fingers to the camera"
+   },
+   {
+    "k": "G",
+    "v": "a curtain closed on a sunny window in a living room"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una cortina o una persiana del lado del sol puede bajar varios grados la temperatura de una habitación, sin gastar nada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio closing the shutters on a sunny window and nodding, living room shaded"
+   },
+   {
+    "k": "G",
+    "v": "closed blinds on a west facing window blocking afternoon sun"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres cosas que ayudan a que el equipo trabaje menos: cortinas, puertas cerradas y ventilar antes, no durante.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "sunny window curtains blocking heat"
+   },
+   {
+    "k": "G",
+    "v": "a closed blind on a west facing window with strong sunlight outside"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El cuarto hábito: dejar el modo turbo o potente todo el día. Ese botón está para casos puntuales, no para siempre.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "turbo mode air conditioner remote"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pressing the turbo or power button on a remote with a skeptical face"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Turbo, potente, o fuerte, según la marca. Es el botón que apretamos cuando llegamos de la calle muertos de calor.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a living room with a hot afternoon sunlight and a sweating man sitting near an air conditioner"
+   },
+   {
+    "k": "W",
+    "v": "sitting heat sweating"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Turbo hace girar todo al máximo: el ventilador, el compresor, y todo lo demás. Y eso sube el consumo y el desgaste.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an air conditioner remote with a turbo button highlighted by a red circle drawn on it"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner remote buttons"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El ventilador exterior y el compresor a tope. En un equipo de velocidad fija, el turbo es casi lo mismo que su marcha normal.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "fan speed turbo blades"
+   },
+   {
+    "k": "G",
+    "v": "fan blades spinning very fast on an air conditioner outdoor unit with a blur of motion"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En turbo, la pinza marca una barbaridad. Y si lo dejás horas, estás usando el aire como una estufa invertida.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the clamp meter with a concerned face while the unit runs in turbo mode"
+   },
+   {
+    "k": "G",
+    "v": "a clamp meter display showing a high current value and a red warning icon"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Usalo diez minutos para bajar rápido, y después cambiá a modo normal o dormir. Dormir sube la temperatura de a poco, y ahorra bastante.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "sleep mode air conditioner"
+   },
+   {
+    "k": "P",
+    "v": "Claudio selecting the sleep mode on the remote at night, calm"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Modo dormir: sube uno o dos grados durante la noche, porque el cuerpo necesita menos frío cuando duerme.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a sleeping person in bed with an air conditioner on the wall in sleep mode in a dim bedroom"
+   },
+   {
+    "k": "W",
+    "v": "bedroom sleep air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el quinto, el que casi nadie conoce: cortar el aire desde la llave térmica mientras está funcionando.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "power breaker switch panel"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pointing at a circuit breaker panel on a wall with a serious face"
+   }
+  ]
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Muchos cortan el aire desde el tablero cuando se van de casa, para estar seguros de que no queda prendido.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "fuse box switches electrical"
+   },
+   {
+    "k": "G",
+    "v": "a household electrical panel with several breaker switches and one labelled air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es lo más rápido, y es lo peor: corta la energía con el compresor en marcha, sin que el equipo pueda cerrar sus válvulas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hand turning off a circuit breaker lever while an air conditioner is running in the background"
+   },
+   {
+    "k": "W",
+    "v": "circuit breaker lever"
+   }
+  ]
+ },
+ {
+  "id": "b067",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Parece prolijo, pero es como cortar el motor de un auto andando: no pasa nada la primera vez, pero la costumbre lo gasta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at the breaker panel with a rueful smile"
+   },
+   {
+    "k": "G",
+    "v": "a hand on a breaker lever turning it off while the air conditioner indicator light is still on"
+   }
+  ]
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Adentro hay gas a presión. Si cortás de golpe, queda desequilibrado, y el arranque siguiente es más duro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining with a diagram on a whiteboard of pressure inside the compressor circuit"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard sketch of refrigerant lines with a high pressure and a low pressure side and arrows"
+   }
+  ]
+ },
+ {
+  "id": "b069",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los técnicos medimos esa presión con unos manómetros. Con corte brusco, las presiones tardan en igualarse y arrancar cuesta más.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerant gas cylinder pressure gauge"
+   },
+   {
+    "k": "G",
+    "v": "a manifold gauge set with a red and a blue gauge on a table next to copper pipes"
+   }
+  ]
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo correcto: apagarlo con el control, dejar que el ventilador frene, y recién después cortar la térmica si hace falta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pressing the off button on the remote and waiting while the fan slows down, nodding"
+   },
+   {
+    "k": "W",
+    "v": "remote control power off"
+   }
+  ]
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se cierra la paleta, se frena el ventilador, y el compresor se detiene de forma ordenada. Eso sí es apagar bien un aire.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an air conditioner indoor unit with its flap closing and a green standby light on"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner louver closing"
+   }
+  ]
+ },
+ {
+  "id": "b072",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los cinco: no usar dieciséis, no prender y apagar, no abrir ventanas con el aire, no abusar del turbo, y no cortar desde la térmica.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the five habits on his fingers in front of a whiteboard"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with five numbered lines listing the five habits written in marker"
+   }
+  ]
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si hacés solo dos de estos cambios, el equipo lo agradece. Si hacés los cinco, vas a notar la diferencia en el siguiente verano.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "checklist tick marks paper"
+   },
+   {
+    "k": "P",
+    "v": "Claudio ticking off a list on a whiteboard with a marker, satisfied"
+   }
+  ]
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pegá una nota al lado del aire con los cinco hábitos. Suena exagerado, pero así lo recuerdan todos en la casa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a calendar with a small mark each month for cleaning the filter next to an air conditioner"
+   },
+   {
+    "k": "P",
+    "v": "Claudio sticking a note on the wall near the air conditioner reminding to check the filter"
+   }
+  ]
+ },
+ {
+  "id": "b075",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si hay chicos, el control en un lugar alto: les encanta jugar con el dieciséis y el turbo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "children family summer home"
+   },
+   {
+    "k": "G",
+    "v": "a family of four in a living room not visible faces, with a remote control placed on a high shelf"
+   }
+  ]
+ },
+ {
+  "id": "b076",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con eso, el aire vive años más, la factura baja, y la casa se siente mejor. Sin gastar un peso.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "happy home comfortable cooling"
+   },
+   {
+    "k": "P",
+    "v": "Claudio relaxing on a sofa with the air conditioner running quietly behind him, a relaxed smile"
+   }
+  ]
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una pregunta que me hacen: ¿ayuda un ventilador de techo? Sí: mueve el aire, y sentís más fresco con un grado más.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a living room with a family relaxing under a ceiling fan and an air conditioner running quietly"
+   },
+   {
+    "k": "W",
+    "v": "ceiling fan family living room"
+   }
+  ]
+ },
+ {
+  "id": "b078",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con ventilador, podés subir uno o dos grados la temperatura del aire, y sentir lo mismo. Eso es ahorro de verdad.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing under a ceiling fan with the air conditioner running at twenty-five, nodding"
+   },
+   {
+    "k": "G",
+    "v": "a ceiling fan turning above a sofa in a cool living room"
+   }
+  ]
+ },
+ {
+  "id": "b079",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Otra: ¿conviene dejarlo prendido todo el día para que no gaste en el arranque? Depende de cuánto tiempo estés afuera.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "keeping air conditioner on all day myth"
+   },
+   {
+    "k": "P",
+    "v": "Claudio raising an eyebrow while holding the remote, skeptical"
+   }
+  ]
+ },
+ {
+  "id": "b080",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te vas menos de una hora, dejalo. Si te vas varias horas, apagalo: mantener una casa fría vacía es pagar frío que no usás.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a diagram on a whiteboard comparing a short absence and a long absence with a timeline"
+   },
+   {
+    "k": "P",
+    "v": "Claudio drawing the two timelines on a whiteboard"
+   }
+  ]
+ },
+ {
+  "id": "b081",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El temporizador es tu aliado: programá que se apague una hora antes de que te levantes, y que prenda un rato antes de volver.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "sleep mode air conditioner timer"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner remote with a timer icon and an hour set for off"
+   }
+  ]
+ },
+ {
+  "id": "b082",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el temporizador evitás el olvido, que es el hábito más caro de todos: el aire prendido en una casa vacía.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio programming the timer on a remote with his thumb, relaxed"
+   },
+   {
+    "k": "G",
+    "v": "a remote control display showing a timer set to forty five minutes"
+   }
+  ]
+ },
+ {
+  "id": "b083",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y una cosa que no es de hábitos pero ayuda: el filtro. Un filtro sucio te hace subir el consumo y empeora todo lo que te conté.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "dirty air filter"
+   },
+   {
+    "k": "G",
+    "v": "a dusty air conditioner filter being pulled out of an indoor unit"
+   }
+  ]
+ },
+ {
+  "id": "b084",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "De eso hablamos en otro video, pero apuntalo: una vez por mes en verano, con agua y jabón, y al sol a secar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a dusty filter toward the camera with a grimace"
+   },
+   {
+    "k": "G",
+    "v": "a grey dusty filter held up against the light showing blocked mesh"
+   }
+  ]
+ },
+ {
+  "id": "b085",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Conozco aires de veinte años que siguen andando, y es por una sola razón: nadie los maltrató.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an old air conditioner still working after many years, with its plastic slightly yellow, in an old apartment"
+   },
+   {
+    "k": "W",
+    "v": "old apartment air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b086",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y ojo, que esto no es magia: un equipo mal instalado o con gas faltante igual tiene problemas. Pero los hábitos son lo que podés controlar vos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with open hands, honest face, in a living room"
+   },
+   {
+    "k": "W",
+    "v": "technician repair honest advice"
+   }
+  ]
+ },
+ {
+  "id": "b087",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quedate en el canal: el próximo es qué tenés que hacer antes de prender el aire este verano. Y contame cuál de estos hábitos tenías.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly expression and the clamp meter in hand"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner remote and a clamp meter side by side on a table"
+   }
+  ]
+ }
+]
