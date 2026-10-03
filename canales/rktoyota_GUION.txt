@@ -1,0 +1,109 @@
+If you drive a Toyota with a push button start, your key is talking to the street all night long. Right now, sitting on the kitchen counter, it's sending out a little radio signal every few seconds, waiting for the car to answer. And the car is sitting in the driveway, listening.
+
+That's how the car knows you're close when you walk up and grab the handle. It's a nice feature. But anybody standing near your house with the right equipment can hear that conversation too. And there's a way to tell your key to stop talking. It's two buttons, in a certain order, and it takes about five seconds.
+
+Toyota built it into a lot of their smart keys, and most owners have never heard of it. Tonight I'm going to show you exactly how to do it, how to check that it worked, which keys have it, what to do if yours doesn't, and three more things every Toyota owner should know before bed.
+
+First, I want to say this clearly. This is not a Toyota problem. Every car with a keyless entry system works this way, from every brand. Toyota just happens to make some of the most popular cars in America, so a lot of you are driving one. And Toyota is one of the brands that gave owners a simple way to put the key to sleep. That's a good thing. They just didn't tell many people about it.
+
+Let me explain what's going on, because once you understand it, the fix makes sense.
+
+Your smart key doesn't just wait for you to press a button. It's always listening for the car. When you walk up to the car, the car sends out a short-range signal, and your key answers back with a code. The car checks the code, and if it matches, it lets you open the door and start the engine. You never take the key out of your pocket.
+
+The problem is that this conversation can be stretched. Thieves use a pair of radio devices, usually called a relay. One person stands near your house, as close to where the key is as they can get. The other stands next to your car. The device by the house picks up your key's answer and passes it along to the device by the car. The car thinks the key is right there, and it opens up. Sometimes it starts, too.
+
+I'm not going to go into how those devices work, and you shouldn't need to. What matters is that they need your key to answer. If your key is asleep, there's nothing to pass along. That's the whole trick.
+
+So here's how you put a Toyota smart key to sleep. Toyota calls it battery-saving mode. It was made to save the key's battery when you're not using the car for a while, but it does something else too. It turns off the part of the key that answers the car.
+
+Hold the key in your hand. Press and hold the lock button. While you're holding the lock button down, press the unlock button twice. Then let go.
+
+If it worked, the little light on the key will blink four times. That's the key telling you it's going to sleep.
+
+Now, while it's asleep, the key won't answer the car. If you walk up and grab the door handle, nothing happens. That's what you want overnight. In the morning, just press any button on the key, and it wakes right up. Lock, unlock, any one. Then it works like normal again.
+
+So the routine is simple. You come home, you walk in the door, you put the key to sleep. Lock, hold, unlock twice, four blinks. In the morning, press any button. That's it.
+
+Let me tell you why I started paying attention to this. A couple of years before I retired, I had a customer, a retired schoolteacher, who drove a nice newer SUV. She called me because somebody had gotten into it in her own driveway, at night, while she was asleep. No broken window. No damage at all. They took her purse and her garage door opener off the seat.
+
+She was sure she'd locked it. And she had. Her key was in a bowl on the kitchen counter, about twenty feet from the driveway, and on the other side of the wall. The police officer told her what had probably happened, and she looked at me and asked, can they do that? Yes, ma'am, they can. Then she asked what I'd do. And this is what I showed her.
+
+Now, how do you know if your key has this? Here's the honest answer. A lot of Toyota and Lexus smart keys from roughly the last ten to fifteen years have battery-saving mode. Not all of them. It depends on the model and the year, and Toyota has changed key designs over time.
+
+The easiest way to find out is to just try it. Lock, hold, unlock twice. If the light blinks four times, you've got it. If it doesn't, try once more, slowly, and make sure you're holding the lock button the whole time. If it still doesn't blink, your key may not have the feature, or it may work a little differently.
+
+The second way is your owner's manual. Look in the index under smart key, or battery-saving mode, or electronic key. If your key has it, the manual will show you exactly how. If you don't have the paper manual anymore, Toyota keeps the owner's manuals for most models on their website, for free. Look up your model and year.
+
+And the third way is to call your dealer's service department and ask. They hear this question a lot now. It's a two-minute phone call.
+
+Now let me show you how to test that it really worked, because I don't want you to trust the blinking light alone.
+
+Put the key to sleep. Walk out to the car with the key in your pocket. Grab the driver's door handle like you normally would. If the door doesn't unlock, good, the key is asleep. Now press any button on the key, wait a second, and grab the handle again. It should open. Do that test once, and you'll know it works on your key.
+
+Here's something important to remember. When the key is asleep, the push button start won't work either. That's on purpose. So if you put it to sleep and then forget, and you get in the car in the morning and it says key not detected, don't panic. Just press any button on the key and try again.
+
+And by the way, if your key battery ever dies completely, there's a way to start a push-button car with a dead key, and there's a real metal key hiding inside the fob. I made a whole video on that. If you've never seen it, it's worth ten minutes of your time before it happens to you in a dark parking lot.
+
+So what if your key doesn't have battery-saving mode? Then you still have good options, and they're cheap.
+
+The first is a signal-blocking pouch or box. They're sometimes called Faraday bags. You put the key inside, close it, and no signal gets in or out. You can buy a pouch for ten or fifteen dollars, or a little metal box with a lid for about the same. Keep it by the door where you drop your keys.
+
+But here's the thing. Some of them don't work. I've tested a few that let the signal right through. So test yours. Put the key in the pouch, close it all the way, walk out to the car, and grab the handle. If the door unlocks, your pouch is not doing its job. Get a different one.
+
+And here's a free trick you probably already have in the kitchen. An old cookie tin, the metal kind with a tight lid. Put the key inside, close it, and do the same test. A lot of times, that works just as well as anything you'd buy. Same goes for the microwave, but please don't keep your keys in the microwave. Somebody will turn it on.
+
+The second option is free too. Keep the key as far from the outside walls and the driveway as you can. Not in a bowl by the front door. Not on a hook by the garage. Put it in a drawer in the middle of the house, or upstairs. Distance makes a relay attack much harder. It doesn't make it impossible, but it helps.
+
+Now, three more things every Toyota owner should know, and they apply to most other cars too.
+
+Number one. A steering wheel lock. I know, it looks old-fashioned. But a thief doing a relay attack is counting on being in and out in under a minute, quietly. When he looks through the window and sees a big bright steering wheel lock, a lot of the time he just moves on to the next car. They cost thirty to fifty dollars. I'd put one on any car that sits outside overnight.
+
+Number two. Park smart. If you have a garage, use it, even if it means cleaning it out on a Saturday. A car in a closed garage is a lot harder to steal than a car in the driveway. And if you park in the driveway, try to park nose in, close to the house, with the light on. Thieves don't like light.
+
+Number three. Turn on any extra security your car already has. A lot of newer Toyotas have a connected app that can send you an alert if the car is moved, or let you see where it is. Some have an option for a security PIN or extra confirmation before starting. Look at your app, or ask your dealer what your car has. Most people never set any of it up.
+
+And one more, a locksmith habit. Your spare key. Where is it? If it's in a drawer by the front door, it's talking to the car too. Put the spare to sleep as well, or keep it in a metal box. A spare key in a bowl by the door is just as good to a thief as the one in your pocket.
+
+And since we're being honest, let me tell you what to do if you walk out one morning and the car is gone, because I've stood in a lot of driveways with people on that morning.
+
+First, make sure it was stolen and not towed. Call the non-emergency police line and ask. It happens more than you'd think, especially in apartment lots.
+
+Second, if your car has a connected app, open it. Some of them can still show where the car is. Don't go get it yourself. Give that location to the police and let them handle it. A car is not worth getting hurt over.
+
+Third, call the police and file the report, then call your insurance company the same day. Have your plate number, the vehicle identification number and the year and model ready. Write them down tonight and keep them in the house, not in the glove box. That's one more thing most people only think about after.
+
+And fourth, think about what was in the car. A garage door opener, a spare house key, mail with your address. If any of those were inside, change the garage code and rekey the door the same day. A stolen car with your house key and your address in it is an invitation.
+
+None of that is fun. But if you put the key to sleep tonight, there's a good chance you'll never need it.
+
+Now let me answer the questions I always get when I show people this, because you're probably thinking some of them right now.
+
+Will putting the key to sleep every night hurt it? No. It's a normal feature the key was built with. If anything, it helps, because the key stops sending signals all night and the battery lasts longer. Some folks find their key battery goes from two years to three.
+
+What if I forget to wake it up and I'm in a hurry in the morning? You'll grab the handle, nothing will happen, and you'll remember. Press any button. That's the whole fix. After a week, it's a habit, like taking your shoes off at the door.
+
+What if my wife or my husband uses the same car with their own key? Then each key has to be put to sleep. One key asleep doesn't help if the other one is chatting away in a purse by the front door. Show everybody in the house. It takes thirty seconds to teach.
+
+What about the phone as a key? Some newer cars let you use your phone instead of the fob. That's a different system, and it's a different video. For now, check your app's settings, and keep the phone's own lock screen on.
+
+And does wrapping the key in aluminum foil work? Sometimes. Loosely wrapped, usually not. Wrapped tight, several layers, sometimes. But you're going to tear it, and you're going to forget it, and it's messy. A metal tin with a lid does the same job every night, and you can test it.
+
+And the last question. If they want my car that badly, won't they just take it anyway? Maybe. A professional with time and tools can steal almost anything. But most car thieves aren't patient. They walk down a street at two in the morning, and they take the easiest car. Your job isn't to make your car impossible to steal. It's to make it harder than the one next door. Five seconds a night does a lot of that.
+
+So let me put it all in one place.
+
+When you come home, put the key to sleep. Lock, hold, press unlock twice, and wait for four blinks. Press any button in the morning to wake it up. Test it once, by grabbing the door handle with the key asleep in your pocket.
+
+If your key doesn't have that mode, use a signal-blocking pouch or a metal tin, and test it the same way. Keep the keys away from the outside walls. Put the spare key to sleep too. And if the car sits outside, a steering wheel lock and a porch light are cheap and they work.
+
+All of that costs you about five seconds a night, and maybe twenty dollars once.
+
+I put everything I know about keeping your house locked up into one walkthrough. Every door, every window, every lock, in the order I'd do it if it were my own house, plus the three dollar screw most homes are missing. The link is at the top of the description.
+
+And tell me in the comments. What do you drive, and what year? Did your key blink four times? I want to make one of these for every brand, Ford, Honda, Hyundai, all of them, and your comments tell me which one to do next.
+
+If this helped, subscribe, and send it to anybody you know who drives a Toyota. That's a lot of people.
+
+One last thing before I go. I spent thirty-five years showing up the morning after. The broken window, the empty driveway, the family standing in the kitchen in their bathrobes, asking how this happened when they did everything right. Most of the time, they had done almost everything right. They were missing one small habit. That's what this is. Not a gadget. Not a subscription. A habit that takes five seconds, like checking the stove before bed. If one person watching this puts their key to sleep tonight and their car is still in the driveway tomorrow morning, then this was worth making. And I'd bet it's more than one of you.
+
+Goodnight. And put your key to sleep.
