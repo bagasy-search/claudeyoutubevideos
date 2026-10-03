@@ -1,0 +1,1323 @@
+[
+ {
+  "id": "b001",
+  "type": "DX",
+  "scene": "H1",
+  "secs": 4,
+  "d1": "close view of a straight steel tube entering between three steel pulleys of a small home-made ring roller bender bolted to a wooden workbench, a hand turning the crank, the tube starting to curve as it comes out of the rollers",
+  "d2": "the same view a moment later, the tube coming out clearly curved in a smooth arc, the crank handle mid-turn",
+  "text": "",
+  "P": "H1a"
+ },
+ {
+  "id": "b002",
+  "type": "DX",
+  "scene": "H1",
+  "secs": 4,
+  "d1": "close view of the two ends of a steel tube ring meeting as the roller finishes the last pass, a perfect closed circle on the bench",
+  "d2": "the same ring now held up in two greasy hands, seen from above",
+  "text": "",
+  "P": "H1a"
+ },
+ {
+  "id": "b003",
+  "type": "V",
+  "scene": "H1",
+  "A": "the nephew stands beside the workbench with his arms crossed over a grey hooded sweatshirt, looking amazed at the ring roller and the ring",
+  "K": "the nephew with his mouth half open and eyebrows raised, pointing at the machine, the presenter beside him holding a steel tube ring",
+  "line": "¿Eso lo hiciste con qué?",
+  "text": "¿Eso lo hiciste con qué?",
+  "P": "H1a"
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "H1",
+  "A": "he kicks the pile of scrap in the corner of the workshop with his boot while holding the steel tube ring on his arm, looking at the nephew",
+  "K": "he stands with his boot on the scrap pile and the ring on his forearm, looking at the camera with a half smile",
+  "text": "Con esto. Rulemanes de lavarropas, vástagos de amortiguador y el gato de un auto.",
+  "P": "H1a"
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "H1",
+  "A": "he lays the steel tube ring on a chalk circle drawn on the concrete floor and it fits exactly, he looks at the camera",
+  "K": "he crouches beside the ring lying exactly inside the chalk circle on the floor, one hand on it, looking at the camera calmly",
+  "text": "Sesenta centímetros. Calza justo en la plantilla, sin ovalarse.",
+  "P": "H1a"
+ },
+ {
+  "id": "b006",
+  "type": "V",
+  "scene": "H1",
+  "A": "the nephew leans down to look at the ring inside the chalk circle, shaking his head with wide eyes",
+  "K": "the nephew crouching beside the ring on the floor, looking up at the presenter",
+  "line": "En la herrería me pedían un disparate por rolar un caño.",
+  "text": "En la herrería me pedían un disparate por rolar un caño.",
+  "P": "H1a"
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "G1",
+  "A": "he stands beside the roller bender on the bench and pats it like an old friend, looking at the camera",
+  "K": "he holds a hand on top of the ring roller on the bench, looking at the camera with a calm half smile",
+  "text": "Lo armé en un fin de semana, con chatarra. Y te muestro cada paso, con las medidas.",
+  "P": "G1a"
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "G1",
+  "A": "he raises a finger toward the camera with a serious look, the ring roller behind him",
+  "K": "he holds one finger up beside his face, serious, looking at the camera",
+  "text": "Pero hay un detalle en los rodillos que evita que el caño te quede ovalado. Y casi nadie lo hace.",
+  "P": "G1a"
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "PA",
+  "A": "he stands in a back yard beside a half-built iron gate frame with an empty arch space at the top, pointing at the arch",
+  "K": "he points up at the empty arch on top of the gate frame, looking at the camera",
+  "text": "Mi sobrino Nico tiene un portón con un arco arriba. Y a un arco hay que curvarle un caño.",
+  "P": "PAa"
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "PA",
+  "A": "he walks along the gate frame running a hand along its top bar, looking at it",
+  "K": "he stands by the gate frame resting a hand on its top bar, looking at the camera",
+  "text": "Es el portón de la casa de la abuela. Lo hizo el abuelo, de hierro, y se oxidó tanto que hubo que rehacerlo.",
+  "P": "PAa"
+ },
+ {
+  "id": "b011",
+  "type": "V",
+  "scene": "PA",
+  "A": "the nephew stands in front of the gate frame with his hands in the pockets of his grey hooded sweatshirt, shrugging",
+  "K": "the nephew with his shoulders raised in a shrug beside the gate frame, the presenter next to him",
+  "line": "Tío, es un solo caño. ¿Tanto lío?",
+  "text": "Tío, es un solo caño. ¿Tanto lío?",
+  "P": "PAa"
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "PA",
+  "A": "he rubs his chin looking at the gate arch and then turns to the camera",
+  "K": "he holds his chin with one hand looking at the camera, thoughtful",
+  "text": "Un caño, sí. Pero en las herrerías que fuimos, o no se ponían a rolar una sola pieza, o cobraban de más.",
+  "P": "PAa"
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "PA",
+  "A": "he bends a short piece of steel tube against his knee trying to curve it, the tube forming a kink, he winces",
+  "K": "he holds a kinked steel tube with a sharp elbow in the middle in both hands, looking at it with a grim half smile",
+  "text": "Yo probé doblarlo a mano. Con el pie, con la morsa. Sale un codo, no un arco.",
+  "P": "PAb"
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "PA",
+  "A": "he leans a long steel tube across a vice and pushes down on its free end with his body weight, the tube bowing unevenly",
+  "K": "he leans on the long tube in the vice with his whole weight, the tube bending unevenly with a flat spot, looking at it grimly",
+  "text": "Con la morsa y mi peso se dobla, pero por donde quiere: se achata en un punto y queda recto en otro.",
+  "P": "PAb"
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "PA",
+  "A": "he holds a kinked tube beside the empty arch to compare, shaking his head",
+  "K": "he holds the kinked tube against the gate arch showing it does not match, looking at the camera",
+  "text": "Y un arco tiene que ser parejo, sin arrugas ni aplastones, o el portón se ve torcido toda la vida.",
+  "P": "PAb"
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "PA",
+  "A": "he snaps his fingers looking at the camera as if an idea came",
+  "K": "he stands with a finger raised and a smile, looking at the camera",
+  "text": "Ahí se me ocurrió: una roladora. Tres rodillos, un tornillo y una manija.",
+  "P": "PAb"
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "PA",
+  "A": "he kneels and sketches three circles and an arrow on the concrete with chalk",
+  "K": "he kneels beside three chalk circles drawn on the concrete with an arrow, looking at the camera",
+  "text": "La idea es simple: dos rodillos abajo, uno arriba. El caño pasa por el medio, y el de arriba lo empuja.",
+  "P": "PAc"
+ },
+ {
+  "id": "b018",
+  "type": "V",
+  "scene": "PA",
+  "A": "the nephew raises one eyebrow with a lopsided smile, arms crossed",
+  "K": "the nephew with crossed arms and a sceptical half smile, looking at the presenter",
+  "line": "Eso se dice siempre antes de que algo salga mal.",
+  "text": "Eso se dice siempre antes de que algo salga mal.",
+  "P": "PAc"
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "PA",
+  "A": "he laughs and points at the nephew with his thumb, then turns to the camera",
+  "K": "he faces the camera with a half smile, thumb pointing at the nephew",
+  "text": "Tiene razón. Y ya vas a ver que salió mal. Dos veces.",
+  "P": "PAc"
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "PA",
+  "A": "he holds a small notebook with notes in one hand and looks at it, then at the camera",
+  "K": "he holds up a small notebook with four lines of scribbled notes toward the camera",
+  "text": "Antes de empezar, leí los comentarios de otras roladoras. La gente repite cuatro cosas, y las anoté.",
+  "P": "PAc"
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "PA",
+  "A": "he taps the notebook with a pencil, reading the first lines to the camera",
+  "K": "he holds the notebook up with the pencil pointing at its first line, looking at the camera",
+  "text": "Rodillos con ranura, una manija más grande, que el rodillo agarre y no patine, e imprimar antes de pintar.",
+  "P": "PAd"
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "G1",
+  "A": "he stands at the workbench of his workshop with the scrap pile behind him, wiping his hands on a rag",
+  "K": "he stands behind the workbench with the rag over his shoulder, looking at the camera",
+  "text": "El inventario. Todo lo que llevan los tres rodillos y el bastidor es chatarra.",
+  "P": "G1b"
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "G1",
+  "A": "he picks up a washing-machine drum bearing from a box of old parts, looking at it",
+  "K": "he holds an old washing-machine bearing up between two fingers, looking at the camera",
+  "text": "Los rulemanes salen de un lavarropas roto: en cualquier service hay tambores tirados, con los rulemanes adentro.",
+  "P": "G1b"
+ },
+ {
+  "id": "b024",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of three old washing-machine bearings lying on a wooden bench, steel rings with grey dust, a thumb spinning one",
+  "d2": "the same bearings lined up, one held up between two fingers to the camera",
+  "text": "Tres rulemanes de lavarropas. Giran suave y no valen nada: los sacas del motor viejo.",
+  "P": "G1b"
+ },
+ {
+  "id": "b025",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of two chrome car shock absorber rods lying on the bench next to a caliper",
+  "d2": "the same rods with the caliper closed on one showing twelve millimetres",
+  "text": "Dos vástagos cromados de amortiguador, de doce milímetros. Son los ejes: lisos, duros y derechos.",
+  "P": "G1b"
+ },
+ {
+  "id": "b026",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of a rusty car scissor jack lying on the bench with its screw spindle visible",
+  "d2": "the same screw spindle unscrewed from the jack, held in a hand",
+  "text": "Y el gato de un auto. De ahí sale el husillo, que es el tornillo que aprieta el rodillo de arriba.",
+  "P": "G1b"
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "G1",
+  "A": "he lays the jack spindle on the bench and rolls it with a finger, looking at its thread",
+  "K": "he holds the jack screw up close to the camera showing its thick square thread, looking at it",
+  "text": "¿Por qué el gato y no un tornillo común? Porque su rosca es gruesa y está hecha para levantar un auto: aguanta el esfuerzo.",
+  "P": "G1b"
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "G1",
+  "A": "he lays a short stack of old thick steel flat bars on the bench and taps them with a finger, talking",
+  "K": "he rests a hand on a stack of rusty flat bars on the bench, looking at the camera",
+  "text": "Planchuela de diez milímetros, de un portón viejo. Un perfil en C para la base, y tres poleas de acero.",
+  "P": "G1b"
+ },
+ {
+  "id": "b029",
+  "type": "D",
+  "scene": "G1",
+  "d1": "close view of three steel pulleys with V-grooves lying on a wooden workbench",
+  "d2": "the same pulleys stacked, one held up toward the camera",
+  "text": "Las poleas son de un motor viejo y de un compresor. Pero ya te cuento qué hay que cambiarles.",
+  "P": "G1b"
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "G1",
+  "A": "he raises both hands open above the pile of parts on the bench with a shrug and a smile",
+  "K": "he stands with open hands above all the parts laid out on the bench, shrugging with a half smile, looking at the camera",
+  "text": "Gasto de materiales: cero. Un par de electrodos, un disco de corte y un fin de semana.",
+  "P": "G1c"
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "G2",
+  "A": "he stands in front of the scratched blackboard with a roller machine outline chalked on it, tapping it with chalk",
+  "K": "he holds the chalk against the blackboard, half turned to the camera, looking at it",
+  "text": "Para que lo veas entero antes de empezar: son seis pasos. Uno, el bastidor, los dos laterales.",
+  "P": "G2a"
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "G2",
+  "A": "he draws a short line on the blackboard, glancing at the camera",
+  "K": "he holds the chalk near a line drawn on the blackboard, glancing at the camera",
+  "text": "Dos, los tres rodillos con sus rulemanes. Tres, el husillo del rodillo de arriba. Cuatro, la manija.",
+  "P": "G2a"
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "G2",
+  "A": "he taps the blackboard with the chalk, one step at a time, nodding",
+  "K": "he stands with the chalk raised beside the board and a small smile, looking at the camera",
+  "text": "Cinco, soldar y probar. Y ahí está el error que me ovaló el primer caño. Seis, base y pintura.",
+  "P": "G2a"
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "G2",
+  "A": "he puts the chalk down and wipes his palms on his trousers, turning to the camera",
+  "K": "he faces the camera with greasy open hands, casual, half smile",
+  "text": "Si te gustan estos inventos con chatarra, quédate en el taller, que hay más. Vamos a empezar.",
+  "P": "G2a"
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "GT",
+  "A": "he lays three steel pulleys on the workbench in a triangle, two low and one high, tapping each with a finger",
+  "K": "he points with a pencil at three pulleys arranged two low one high on the bench, looking at the camera",
+  "text": "Primero, cómo funciona. Dos rodillos abajo, separados. Y uno arriba, justo en el medio de los dos.",
+  "P": "GTa"
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "GT",
+  "A": "he lays a tube across the two lower pulleys and presses down on the top one with a finger",
+  "K": "he presses down on the top pulley with a finger over a tube resting on two lower pulleys, looking at the camera",
+  "text": "Cuando bajas el de arriba, el caño se dobla solo en ese punto, porque no tiene dónde apoyarse.",
+  "P": "GTa"
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "GT",
+  "A": "he slides the tube a few centimetres along and presses again, repeating the motion",
+  "K": "he slides the tube along the pulleys and presses the top one again, looking at the camera",
+  "text": "Lo haces avanzar, y se dobla el tramo siguiente. Y así, tramo a tramo, el caño termina cerrando un círculo.",
+  "P": "GTa"
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "GT",
+  "A": "he presses the top pulley lower with a finger and the curve on the tube gets tighter, showing it with his other hand",
+  "K": "he holds a more tightly curved tube against the pulleys, looking at the camera",
+  "text": "Cuanto más bajas el de arriba, más cerrada la curva. Por eso la ranura del bastidor: ahí corre ese rodillo.",
+  "P": "GTa"
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "GT",
+  "A": "he taps a chalk circle on the floor with a pencil, looking at the camera",
+  "K": "he taps a forty centimetre chalk circle on the floor with a pencil, looking at the camera calmly",
+  "text": "El círculo más chico que logré fue de cuarenta centímetros. Más cerrado, y el caño se arruga.",
+  "P": "GTb"
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "G3",
+  "A": "he lays a thick rusty flat bar on the bench and marks a long slot with a paint marker, looking down",
+  "K": "he holds the marker at the end of a drawn slot on the flat bar, looking down at it",
+  "text": "Paso uno. Los laterales. Dos planchuelas de ochenta por doscientos cincuenta, de diez de espesor.",
+  "P": "G3a"
+ },
+ {
+  "id": "b041",
+  "type": "D",
+  "scene": "G3",
+  "d1": "close view of a paint marker drawing a vertical line on a thick steel flat bar next to a tape measure",
+  "d2": "the same flat bar with two parallel drawn lines eighty millimetres long marking a slot",
+  "text": "En cada una marco una ranura vertical de ochenta milímetros. Por ahí sube y baja el rodillo de arriba.",
+  "P": "G3a"
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "G3",
+  "A": "he clamps the flat bar in the vice and drills a hole at the top of the slot with an electric drill, wearing safety glasses",
+  "K": "he holds the drill raised over the flat bar in the vice, looking down at the drilled hole through safety glasses",
+  "text": "Agujero en cada punta de la ranura con la taladradora, y después uno con el otro con la amoladora.",
+  "P": "G3a"
+ },
+ {
+  "id": "b043",
+  "type": "D",
+  "scene": "G3",
+  "d1": "close view of an angle grinder cutting between two drilled holes in a thick steel flat bar clamped in a vice, sparks flying to the side",
+  "d2": "the slot cut open between the holes, a clean long slot with glowing edges and smoke",
+  "text": "Sin apurar y con anteojos. Las chispas van a los ojos, y un ojo no se compra en la ferretería.",
+  "P": "G3a"
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "G3",
+  "A": "he files the edges of the slot, brushing off filings with his hand",
+  "K": "he runs a thumb along the filed slot edge checking it, looking down",
+  "text": "Le paso la lima: el eje del rodillo tiene que deslizarse sin trabarse, pero sin juego.",
+  "P": "G3a"
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "G3",
+  "A": "he holds the two cut side plates together to compare them, lining up the slots",
+  "K": "he holds the two side plates face to face showing the slots line up, looking at the camera",
+  "text": "Las dos iguales. Si una ranura queda más corrida, el rodillo de arriba se te tuerce, y el caño sale en hélice.",
+  "P": "G3a"
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "G3",
+  "A": "he lays both side plates together and drills the two shaft holes through both at once with a drill, looking down",
+  "K": "he holds the drilled stack of two plates up to the light, seeing light through both holes",
+  "text": "Los agujeros de abajo, los de los ejes fijos, los taladro con las dos planchuelas juntas. Así quedan alineados.",
+  "P": "G3b"
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "G4",
+  "A": "he holds a chrome shock absorber rod and a washing-machine bearing, fitting the bearing on the rod with his fingers",
+  "K": "he holds the rod with the bearing slid on it, looking down at it",
+  "text": "Paso dos. Cada rodillo es una polea de acero que gira sobre un rulemán, que va en un eje de amortiguador.",
+  "P": "G4a"
+ },
+ {
+  "id": "b048",
+  "type": "D",
+  "scene": "G4",
+  "d1": "close view of a steel pulley with a V-groove lying on the bench, a thumb inside the groove",
+  "d2": "the same pulley turned to show its V-shaped groove around the edge, shiny where the tube would rest",
+  "text": "Y acá está el detalle: la polea tiene un canal en V. Es el que va a abrazar el caño.",
+  "P": "G4a"
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "G4",
+  "A": "he holds a tube against the grooved pulley showing how it sits inside the groove, looking at the camera",
+  "K": "he presses a steel tube into the groove of a pulley, showing it sits snug, looking at the camera",
+  "text": "Un rodillo liso aprieta el caño de arriba y de abajo y lo aplasta. Con canal, lo sostiene por los costados.",
+  "P": "G4a"
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "G4",
+  "A": "he checks a pulley on a lathe-less bench by spinning it by hand, watching it wobble",
+  "K": "he holds a pulley spinning on a rod with one finger, watching it, a slight frown",
+  "text": "Pero acá hay un truco: el canal tiene que ser del diámetro del caño. Si no, se abre o se aplasta igual.",
+  "P": "G4a"
+ },
+ {
+  "id": "b051",
+  "type": "D",
+  "scene": "G4",
+  "d1": "close view of an angle grinder cutting a rough groove into the edge of a steel disc held in a vice, sparks flying",
+  "d2": "the disc rotated to show a smooth shallow groove cut around its rim",
+  "text": "Con una amoladora y paciencia le doy el canal a un disco. Después lo emparejo con la lima.",
+  "P": "G4a"
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "G4",
+  "A": "he presses a bearing into a pulley with a light tap of a hammer on a socket, looking down",
+  "K": "he holds the pulley with the bearing pressed in, turning it by hand, looking down at it calmly",
+  "text": "El rulemán entra a presión, con un golpe suave sobre un dado. Nunca a martillazos directos al rulemán.",
+  "P": "G4a"
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "G4",
+  "A": "he spins the finished roller on a shock rod with one finger and it turns smoothly, he smiles",
+  "K": "he holds the finished roller on its rod spinning, looking at it with a pleased smile",
+  "text": "Y gira suave como un reloj. Tres así, iguales: dos de abajo y uno de arriba.",
+  "P": "G4b"
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "G4",
+  "A": "he taps a centre punch at the middle of a steel disc held in a vice, looking down",
+  "K": "he holds a centre punch on the middle of a disc, looking down at it",
+  "text": "El centro de cada polea es la clave: si queda corrido un milímetro, el rodillo golpea y el caño sale ondulado.",
+  "P": "G4b"
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "G4",
+  "A": "he drops a bearing into a pulley bore and spins it, listening, looking at the camera",
+  "K": "he holds the pulley with the bearing inside next to his ear, looking at the camera with a smile",
+  "text": "¿Por qué rulemanes y no bujes? Porque la fricción se come la fuerza. Con rulemán, el rodillo gira con un dedo.",
+  "P": "G4b"
+ },
+ {
+  "id": "b056",
+  "type": "D",
+  "scene": "G4",
+  "d1": "close view of a scriber held fixed beside a spinning pulley on a shaft to check wobble",
+  "d2": "the same pulley turning with the scriber barely touching it, steady",
+  "text": "Lo compruebo con una punta fija al lado. Si la polea no se mueve de costado cuando gira, está centrada.",
+  "P": "G4b"
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "G5",
+  "A": "he places a rodillo top shaft between the two side plates on the bench and lines up the screw from the car jack above it",
+  "K": "he holds the jack screw spindle above the top roller shaft between the side plates, looking at it",
+  "text": "Paso tres. El rodillo de arriba sube y baja con el husillo del gato. Esa es toda la fuerza.",
+  "P": "G5a"
+ },
+ {
+  "id": "b058",
+  "type": "D",
+  "scene": "G5",
+  "d1": "close view of a welding electrode laying a bead joining a thick nut to a flat steel bridge piece, bright blue-white arc, smoke",
+  "d2": "the bead finished, a dark slag crust glowing dull red on the welded nut",
+  "text": "Primero suelto una tuerca gruesa en un puente de planchuela, sobre las dos ranuras.",
+  "P": "G5a"
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "G5",
+  "A": "he lifts the welding helmet and taps the slag off the weld, then threads the screw through the nut with his fingers",
+  "K": "he turns the screw through the welded nut with his fingers, looking down at it",
+  "text": "Le saco la escoria y roscó el husillo. Tiene que girar sin trabarse, a mano, de punta a punta.",
+  "P": "G5a"
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "G5",
+  "A": "he places a short thick plate at the bottom of the screw and welds a small cup, helmet down",
+  "K": "he lifts the helmet, holding the screw with a small steel cup welded on its end, looking at it",
+  "text": "En la punta del tornillo, una copita soldada, que empuja el eje del rodillo sin que el tornillo gire sobre él.",
+  "P": "G5a"
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "G5",
+  "A": "he tries sliding the top roller shaft up and down inside the slots by hand, checking the fit",
+  "K": "he holds the top shaft sliding in the slot between the side plates, looking at it with a nod",
+  "text": "Pruebo el recorrido: el eje sube y baja por la ranura, parejo de los dos lados.",
+  "P": "G5a"
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "G5",
+  "A": "he threads the screw through the nut all the way, counting turns on his fingers",
+  "K": "he holds the screw fully threaded through the nut and looks at the camera",
+  "text": "La tuerca la dejo larga, de cuatro vueltas de rosca, para que el esfuerzo se reparta y no se pele.",
+  "P": "G5b"
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "G5",
+  "A": "he greases the screw thread with a finger from a small tin, looking down",
+  "K": "he holds a greasy finger over the screw thread, looking down at it calmly",
+  "text": "Un poco de grasa en la rosca, y el husillo gira suave con una sola mano. Sin grasa se traba.",
+  "P": "G5b"
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "G5",
+  "A": "he wipes sweat from his forehead with his forearm, looking at the camera",
+  "K": "he holds a hand on the frame, looking at the camera, a half smile",
+  "text": "Hasta acá, tres horas de trabajo. Y la parte más divertida: soldar el bastidor.",
+  "P": "G5b"
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "G6",
+  "A": "he stands at the welding bench and pulls a welding helmet down, striking an arc on two side plates standing on a thick base channel",
+  "K": "he holds the electrode holder over a side plate on the channel base, helmet down, a blue-white arc at the tip",
+  "text": "Paso cuatro, la base. Los dos laterales van parados sobre un perfil en C, y los puntéo antes de soldar.",
+  "P": "G6a"
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "G6",
+  "A": "he squares a side plate to the base with a try square, frowning at a small gap",
+  "K": "he holds a small square between the side plate and the base channel showing a thin gap, looking at it",
+  "text": "Con escuadra, sí o sí. Si el lateral queda inclinado un grado, el caño sale en espiral.",
+  "P": "G6a"
+ },
+ {
+  "id": "b067",
+  "type": "D",
+  "scene": "G6",
+  "d1": "close view of a welding electrode laying a bead along the base of a thick steel side plate on a steel channel, bright arc and smoke",
+  "d2": "the finished weld, a neat even bead with dark slag glowing dull red",
+  "text": "Cordón completo, por los dos lados, parejo y sin apurarme. El bastidor tiene que ser duro.",
+  "P": "G6a"
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "G6",
+  "A": "he hands a long steel rod bent into a crank handle toward the camera and weighs it in his hand",
+  "K": "he holds the home-made crank, a long steel handle forty centimetres long welded to an arm, looking at it",
+  "text": "La manija. Un brazo de cuarenta centímetros, hecho con una llave de tubo vieja y una varilla.",
+  "P": "G6a"
+ },
+ {
+  "id": "b069",
+  "type": "A",
+  "scene": "G6",
+  "A": "he holds a short crank next to a long one, comparing, looking at the camera",
+  "K": "he holds a long crank handle toward the camera next to a short one, nodding",
+  "text": "Los comentarios decían: manija más larga, más palanca. Cuarenta centímetros: más, y se choca con el banco.",
+  "P": "G6a"
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "G6",
+  "A": "he pulls a washer onto a roller shaft and welds the crank arm onto it, helmet down",
+  "K": "he lifts the helmet, holding the roller with the crank arm welded on the shaft, looking at it",
+  "text": "Va soldada en el eje del rodillo de abajo, pero del lado de afuera, para poder sacar el caño.",
+  "P": "G6b"
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "G6",
+  "A": "he bolts the finished frame onto a heavy wooden workbench with four bolts, using a wrench",
+  "K": "he tightens the last bolt of the frame bolted to the bench with a wrench, looking down at it",
+  "text": "Y atornillada al banco con cuatro bulones. Una roladora suelta se te viene encima con el caño.",
+  "P": "G6b"
+ },
+ {
+  "id": "b072",
+  "type": "A",
+  "scene": "G6",
+  "A": "he turns the crank of the empty machine with one finger, the rollers turning smoothly",
+  "K": "he turns the empty roller crank with one finger, watching the rollers turn, looking pleased",
+  "text": "Antes de probar con caño, la hago girar vacía. Los tres rodillos tienen que girar libres, sin ruidos.",
+  "P": "G6b"
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "PB",
+  "A": "he stands beside the finished ring roller bolted to the bench with a straight steel tube in his hands, the nephew watching",
+  "K": "he feeds the end of a straight steel tube between the three rollers of the bender, looking down at it, the nephew watching",
+  "text": "Segunda vuelta: la prueba. Un caño de media pulgada, veintiún milímetros, con paredes finas.",
+  "P": "PBa"
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "PB",
+  "A": "he turns the crank with one hand and holds the tube with the other, the tube slipping in the rollers",
+  "K": "he turns the crank with his jaw tight, the tube sliding sideways in the rollers without moving, looking at it",
+  "text": "Giro la manija. Y el caño no avanza. Patina. Los rodillos giran, y él se queda quieto.",
+  "P": "PBa"
+ },
+ {
+  "id": "b075",
+  "type": "A",
+  "scene": "PB",
+  "A": "he applies more pressure on the screw and cranks again, the tube wrinkling on one side, looking at it",
+  "K": "he looks at the wrinkled side of the tube coming out of the rollers with a pained face, hand on the crank",
+  "text": "Lo intento otra vez, apretando más. Y empeora: el caño se arruga de un lado.",
+  "P": "PBa"
+ },
+ {
+  "id": "b076",
+  "type": "V",
+  "scene": "PB",
+  "A": "the nephew leans in to look at the slipping tube with a frown, then at the presenter",
+  "K": "the nephew with a frown looking at the tube stuck in the machine, the presenter turning the crank",
+  "line": "Se resbala. Dale más fuerte.",
+  "text": "Se resbala. Dale más fuerte.",
+  "P": "PBa"
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "PB",
+  "A": "he tightens the screw with a few turns and cranks again with both hands, the tube moving slowly",
+  "K": "he cranks hard with both hands, leaning his weight, the tube creeping forward through the rollers, looking down at it",
+  "text": "Aprieto el tornillo, giro con las dos manos. Y avanza. Un poquito, con esfuerzo.",
+  "P": "PBb"
+ },
+ {
+  "id": "b078",
+  "type": "DX",
+  "scene": "PB",
+  "secs": 4,
+  "d1": "close view of a steel tube coming out of the rollers of the ring roller, its cross-section visibly squashed into an oval at the bend",
+  "d2": "the same tube pulled out, its end clearly flattened into an oval shape held by a hand",
+  "text": "",
+  "P": "PBb"
+ },
+ {
+  "id": "b079",
+  "type": "A",
+  "scene": "PB",
+  "A": "he pulls the bent tube out of the machine and looks at its flattened end, then at the camera",
+  "K": "he holds the bent tube showing its flattened oval end to the camera, with a rueful look",
+  "text": "Salió curvo. Pero mira la sección: aplastada, ovalada. Un caño así no sirve para un arco.",
+  "P": "PBb"
+ },
+ {
+  "id": "b080",
+  "type": "V",
+  "scene": "PB",
+  "A": "the nephew squints at the oval end of the tube and whistles softly",
+  "K": "the nephew looking at the flattened tube end held up by the presenter, eyebrows high",
+  "line": "Ay, no. Eso es un óvalo.",
+  "text": "Ay, no. Eso es un óvalo.",
+  "P": "PBb"
+ },
+ {
+  "id": "b081",
+  "type": "A",
+  "scene": "PB",
+  "A": "he pulls the tube out and shows the wrinkled flattened side to the camera",
+  "K": "he holds the wrinkled tube toward the camera, shaking his head slowly",
+  "text": "Apretar más no arregla nada. El problema no es la fuerza. Y eso es lo que casi nadie te dice.",
+  "P": "PBb"
+ },
+ {
+  "id": "b082",
+  "type": "A",
+  "scene": "G7",
+  "A": "he sets the bent tube on the bench and leans over it with both hands flat, thinking",
+  "K": "he leans over the bench looking at the flattened oval tube, both hands flat, thinking",
+  "text": "Dos problemas, y los dos tienen explicación. Primero, el patinaje.",
+  "P": "G7a"
+ },
+ {
+  "id": "b083",
+  "type": "D",
+  "scene": "G7",
+  "d1": "close view of a smooth steel pulley turning against a steel tube with no grip, a thumb pointing at the contact line",
+  "d2": "the same contact line seen closer, a polished shiny strip on the tube showing it slid",
+  "text": "El rodillo de abajo es liso, y el caño también. Acero contra acero patina, aunque aprietes.",
+  "P": "G7a"
+ },
+ {
+  "id": "b084",
+  "type": "D",
+  "scene": "G7",
+  "d1": "close view of the first roller's smooth V-groove being much wider than the thin tube lying in it, the tube touching only at two small lines",
+  "d2": "the tube squeezed in the groove with its walls pressed in from the sides",
+  "text": "Y segundo, la ovalización. Mi canal era demasiado ancho: el caño apoyaba en dos puntos y se aplastaba.",
+  "P": "G7a"
+ },
+ {
+  "id": "b085",
+  "type": "A",
+  "scene": "G7",
+  "A": "he holds a tube against the groove of a pulley showing the gap on both sides",
+  "K": "he holds up the pulley and tube side by side, showing the wide groove and the thin tube, looking at the camera",
+  "text": "El canal tiene que abrazar el caño por casi toda la mitad de su contorno. Ahí no se aplasta.",
+  "P": "G7a"
+ },
+ {
+  "id": "b086",
+  "type": "A",
+  "scene": "G7",
+  "A": "he takes off his cap and rubs his curly hair, looking at the scrap pile",
+  "K": "he stands with his cap in one hand, looking at the scrap pile with narrowed eyes, thinking",
+  "text": "Y la tracción. Los comentarios decían: haz que el rodillo agarre. Tenían razón.",
+  "P": "G7a"
+ },
+ {
+  "id": "b087",
+  "type": "A",
+  "scene": "G7",
+  "A": "he places a bent tube on the bench and mimes the outer wall stretching and the inner wall compressing with his hands",
+  "K": "he holds both hands showing the outside of a curve stretching and the inside squeezing, looking at the camera",
+  "text": "Cuando curvas un caño, la pared de afuera se estira y la de adentro se comprime. Si no tiene apoyo, se achata.",
+  "P": "G7a"
+ },
+ {
+  "id": "b088",
+  "type": "A",
+  "scene": "G7",
+  "A": "he nods slowly at the camera, hands on the bench",
+  "K": "he stands with both hands flat on the bench looking at the camera, nodding slowly",
+  "text": "Cada vez que algo falla, pregúntate por qué. Dos preguntas, dos respuestas, y ninguna era más fuerza.",
+  "P": "G7b"
+ },
+ {
+  "id": "b089",
+  "type": "A",
+  "scene": "G8",
+  "A": "he clamps a grooved pulley in the vice and measures the tube diameter with a caliper against its groove",
+  "K": "he holds the caliper over the groove of the pulley, comparing it with the tube diameter, looking down at it",
+  "text": "El arreglo uno: el canal a medida. Mido el caño, veintiuno, y lo comparo con el canal del rodillo.",
+  "P": "G8a"
+ },
+ {
+  "id": "b090",
+  "type": "D",
+  "scene": "G8",
+  "d1": "close view of a round file working inside the V-groove of a steel pulley clamped in a vice, metal dust flying",
+  "d2": "the groove now rounded to a smooth half-circle channel, shiny steel",
+  "text": "Con una lima redonda le doy forma de media caña, del mismo diámetro del caño. Así lo abraza.",
+  "P": "G8a"
+ },
+ {
+  "id": "b091",
+  "type": "A",
+  "scene": "G8",
+  "A": "he presses a short piece of tube into the finished groove and it sits flush, tapping it",
+  "K": "he holds the short tube lying snug in the groove of the pulley, looking at it with a pleased face",
+  "text": "Entra justo, sin sobra. Eso es lo que casi nadie hace: el canal con la forma del caño.",
+  "P": "G8a"
+ },
+ {
+  "id": "b092",
+  "type": "A",
+  "scene": "G8",
+  "A": "he sets three roughly grooved rollers side by side on the bench and checks they match, looking at them",
+  "K": "he holds three finished grooved rollers lined up side by side on the bench, looking at them with a nod",
+  "text": "Hago los tres rodillos así, con el mismo canal. Así el caño no se escapa de ninguno.",
+  "P": "G8a"
+ },
+ {
+  "id": "b093",
+  "type": "A",
+  "scene": "G8",
+  "A": "he pulls on his welding helmet and lays a weld bead along the groove edge of the driving roller, bright arc",
+  "K": "he holds the electrode over the groove edge of the roller, helmet down, bright blue-white arc",
+  "text": "Arreglo dos: la tracción. Con soldadura, hago unos cordones cortos en el fondo del canal del rodillo de la manija.",
+  "P": "G8a"
+ },
+ {
+  "id": "b094",
+  "type": "D",
+  "scene": "G8",
+  "d1": "close view of a welding electrode making short beads across the bottom of a roller groove, bright arc",
+  "d2": "the groove now with a row of small rough beads across it like teeth, dark slag",
+  "text": "Quedan como dientes. Sirven para que el caño agarre, igual que una moleta.",
+  "P": "G8a"
+ },
+ {
+  "id": "b095",
+  "type": "A",
+  "scene": "G8",
+  "A": "he chips slag off the beads with a small hammer and passes a file lightly over the high points, looking closely",
+  "K": "he holds the roller up to the light showing the little ridges in the groove, looking at it",
+  "text": "Le saco la escoria, y bajo apenas las puntas con la lima, para que no rayen de más.",
+  "P": "G8b"
+ },
+ {
+  "id": "b096",
+  "type": "A",
+  "scene": "G8",
+  "A": "he holds a small thick plate against the side plate showing where an extra brace goes, looking at it",
+  "K": "he holds a triangular brace plate against the frame side, looking at the camera, nodding",
+  "text": "Y un refuerzo: una escuadra en cada lateral, porque con el esfuerzo, el bastidor se abría un milímetro.",
+  "P": "G8b"
+ },
+ {
+  "id": "b097",
+  "type": "A",
+  "scene": "G8",
+  "A": "he welds the brace to the frame side, helmet down, sparks on the bench",
+  "K": "he lifts the helmet, looking at the new triangular brace welded to the frame, satisfied",
+  "text": "Dos cordones y listo. Ahora el bastidor no se abre ni a golpes.",
+  "P": "G8b"
+ },
+ {
+  "id": "b098",
+  "type": "A",
+  "scene": "G8",
+  "A": "he brushes a thin coat of grey primer onto the steel frame, looking down, on the bench",
+  "K": "he holds a brush loaded with grey primer over the frame, looking down at it carefully",
+  "text": "Y, como decían los comentarios, imprimación antes de pintar: sin eso, la pintura se despega al primer golpe.",
+  "P": "G8b"
+ },
+ {
+  "id": "b099",
+  "type": "A",
+  "scene": "G8",
+  "A": "he paints the frame with matt black paint using a brush, leaving the crank handle with a red coat",
+  "K": "he holds the brush over the frame next to the handle painted red, looking at it with a smile",
+  "text": "Y pintura negra mate, con un toque de rojo en la manija, que es lo que vas a ver cuando la agarres.",
+  "P": "G8c"
+ },
+ {
+  "id": "b100",
+  "type": "A",
+  "scene": "PC",
+  "A": "he stands in front of the ring roller on the workbench holding a fresh straight steel tube, the nephew beside him with arms crossed",
+  "K": "he holds the fresh steel tube ready at the entrance of the rollers with both hands, looking at the camera calmly",
+  "text": "Tercera vuelta. Caño nuevo, del mismo diámetro: veintiuno por uno con seis.",
+  "P": "PCa"
+ },
+ {
+  "id": "b101",
+  "type": "V",
+  "scene": "PC",
+  "A": "the nephew leans on the workbench next to the machine with a sceptical smile, watching",
+  "K": "the nephew leaning with both elbows on the bench, looking at the machine with a half smile",
+  "line": "A ver si esta vez no lo ovalas.",
+  "text": "A ver si esta vez no lo ovalas.",
+  "P": "PCa"
+ },
+ {
+  "id": "b102",
+  "type": "A",
+  "scene": "PC",
+  "A": "he takes a deep breath and looks at the tube, then at the camera",
+  "K": "he holds the tube at the entrance of the rollers and looks at the camera, tense",
+  "text": "Cuento hasta tres. Si sale ovalado, volvemos al banco. Tres, dos, uno.",
+  "P": "PCa"
+ },
+ {
+  "id": "b103",
+  "type": "A",
+  "scene": "PC",
+  "A": "he sets the tube in the grooves and turns the screw a quarter turn, then takes the crank",
+  "K": "he sets one hand on the crank handle and the other on the tube, looking down at it, calm and concentrated",
+  "text": "Un cuarto de vuelta de tornillo por pasada. Nunca de golpe: si aprietas de más, aplastas.",
+  "P": "PCa"
+ },
+ {
+  "id": "b104",
+  "type": "DX",
+  "scene": "PC",
+  "secs": 4,
+  "d1": "close view of a steel tube riding smoothly in the grooved rollers of the ring roller as the crank turns, the tube advancing and curving gently",
+  "d2": "the same view a few turns later, the tube coming out in a smooth soft arc",
+  "text": "",
+  "P": "PCa"
+ },
+ {
+  "id": "b105",
+  "type": "A",
+  "scene": "PC",
+  "A": "he turns the crank steadily with one hand, the tube advancing and curving, he looks down at it",
+  "K": "he turns the crank in a steady rhythm, the tube forming a soft curve, looking at it with concentration",
+  "text": "Y avanza. Sin patinar, sin resbalar. Esa es la tracción de los cordones.",
+  "P": "PCb"
+ },
+ {
+  "id": "b106",
+  "type": "A",
+  "scene": "PC",
+  "A": "he turns the crank with one hand easily, showing the long handle, looking at the camera",
+  "K": "he turns the crank with just one hand, looking at the camera with a relaxed smile",
+  "text": "Con la manija de cuarenta centímetros, la giro con una sola mano. Con una de diez, imposible.",
+  "P": "PCb"
+ },
+ {
+  "id": "b107",
+  "type": "A",
+  "scene": "PC",
+  "A": "he stops and turns the screw another quarter turn, looking at the curve",
+  "K": "he turns the screw by a quarter turn with the tube in the machine, looking at the curve with a calm face",
+  "text": "Segunda pasada, otro cuarto de vuelta. Y la curva se cierra de a poco, pareja.",
+  "P": "PCb"
+ },
+ {
+  "id": "b108",
+  "type": "V",
+  "scene": "PC",
+  "A": "the nephew steps closer to look at the curving tube with his mouth open, whispering",
+  "K": "the nephew with wide eyes leaning toward the tube curving out of the machine, the presenter turning the crank",
+  "line": "Mirá cómo se cierra.",
+  "text": "Mirá cómo se cierra.",
+  "P": "PCb"
+ },
+ {
+  "id": "b109",
+  "type": "A",
+  "scene": "PC",
+  "A": "he does the last pass and the two ends of the tube meet forming a closed circle, he looks up with a relieved smile",
+  "K": "he holds the closed steel tube ring with both hands in front of him, looking at the camera with a relieved smile",
+  "text": "Tercera pasada. Y se cierra. Un círculo.",
+  "P": "PCc"
+ },
+ {
+  "id": "b110",
+  "type": "A",
+  "scene": "PC",
+  "A": "he lays the ring on the chalk circle on the floor, kneeling, and it fits all around",
+  "K": "he kneels with both hands on the ring lying exactly in the chalk circle, the nephew crouching next to him",
+  "text": "Lo apoyo en la plantilla de sesenta. Calza todo alrededor, sin un hueco.",
+  "P": "PCc"
+ },
+ {
+  "id": "b111",
+  "type": "A",
+  "scene": "PC",
+  "A": "he makes a second ring on the machine quickly and puts it next to the first, looking at the camera",
+  "K": "he holds two identical rings side by side toward the camera, looking at it with a smile",
+  "text": "Hago otro, para confirmar que no fue suerte. Mismo tiempo, mismo resultado: dos círculos iguales.",
+  "P": "PCc"
+ },
+ {
+  "id": "b112",
+  "type": "A",
+  "scene": "PC",
+  "A": "he wipes his hands on a rag and looks at the two rings, then at the camera",
+  "K": "he stands with the rag over his shoulder and the two rings on the bench, looking at the camera, satisfied",
+  "text": "Y no fue solo suerte: es el canal a medida. El canal a medida es el detalle que te dije al principio.",
+  "P": "PCc"
+ },
+ {
+  "id": "b113",
+  "type": "A",
+  "scene": "PE",
+  "A": "he measures the diameter of the ring with a tape measure across its middle, looking down",
+  "K": "he holds the tape across the ring showing sixty centimetres, looking at it",
+  "text": "Mido, para que no me creas solo a mí. En un sentido, sesenta centímetros.",
+  "P": "PEa"
+ },
+ {
+  "id": "b114",
+  "type": "A",
+  "scene": "PE",
+  "A": "he rotates the tape to measure the ring across the other direction, looking at the reading",
+  "K": "he holds the tape across the ring the other way, reading it, nodding slightly",
+  "text": "En el otro, sesenta y medio. Medio centímetro de diferencia. Eso es un círculo, para un portón.",
+  "P": "PEa"
+ },
+ {
+  "id": "b115",
+  "type": "A",
+  "scene": "PE",
+  "A": "he passes a caliper over the curved part of the ring and reads it, looking at the reading",
+  "K": "he holds the caliper on the curved tube, showing twenty-one millimetres, looking at it",
+  "text": "Y el diámetro del caño en la curva: veintiuno, igual que antes de rolarlo. No se aplastó.",
+  "P": "PEa"
+ },
+ {
+  "id": "b116",
+  "type": "V",
+  "scene": "PE",
+  "A": "the nephew crouches to touch the ring's cross-section with a finger and nods slowly, impressed",
+  "K": "the nephew running a finger along the ring's smooth tube wall, looking up at the presenter",
+  "line": "Ni una arruga. Ni una.",
+  "text": "Ni una arruga. Ni una.",
+  "P": "PEa"
+ },
+ {
+  "id": "b117",
+  "type": "A",
+  "scene": "PE",
+  "A": "he cuts a short piece off the ring's end with the grinder to show the section, holding it up",
+  "K": "he holds up a cut piece of the ring tube to the camera showing its round cross-section, looking at the camera",
+  "text": "Corto un pedazo y miro la sección: redonda. Con el canal a medida, no se aplasta.",
+  "P": "PEb"
+ },
+ {
+  "id": "b118",
+  "type": "A",
+  "scene": "PE",
+  "A": "he holds up a forty centimetre ring and puts it next to the sixty centimetre one, looking at the camera",
+  "K": "he holds two rings of different sizes side by side toward the camera, looking at it",
+  "text": "Y el más chico que hice: cuarenta centímetros. Más cerrado, el caño se empieza a arrugar por dentro.",
+  "P": "PEb"
+ },
+ {
+  "id": "b119",
+  "type": "A",
+  "scene": "PE",
+  "A": "he holds up a thin-walled tube and a thicker one side by side, shaking his head at the thin one",
+  "K": "he holds a thin-walled tube and a thick one side by side, looking at the camera, a small serious face",
+  "text": "Ahora la parte honesta. Esto sirve para caño de media o tres cuartos de pulgada, con pared fina.",
+  "P": "PEb"
+ },
+ {
+  "id": "b120",
+  "type": "A",
+  "scene": "PE",
+  "A": "he holds a large thick-walled tube and a square tube, shaking his head",
+  "K": "he holds a thick round tube and a square tube side by side, shaking his head slightly at the camera",
+  "text": "Más grueso o más grande, no: el bastidor se abre. Y para tubo cuadrado, esta no, hay que hacer rodillos planos.",
+  "P": "PEb"
+ },
+ {
+  "id": "b121",
+  "type": "A",
+  "scene": "PE",
+  "A": "he fills a thin tube with dry sand using a funnel and caps both ends with tape, looking down",
+  "K": "he holds a thin tube filled with sand with taped ends, looking at it, calm",
+  "text": "Y si la pared es muy fina, rellena el caño con arena seca y tápalo: así no se arruga en la curva.",
+  "P": "PEc"
+ },
+ {
+  "id": "b122",
+  "type": "A",
+  "scene": "PE",
+  "A": "he points to the roller gap with a pencil, keeping his fingers clearly away, looking at the camera, serious",
+  "K": "he points with a pencil at the gap between two rollers, his other hand held up flat, looking at the camera seriously",
+  "text": "Ojo con los atrapamientos: entre rodillos, dedos fuera. Nada de guantes sueltos ni mangas colgando.",
+  "P": "PEc"
+ },
+ {
+  "id": "b123",
+  "type": "A",
+  "scene": "PE",
+  "A": "he rolls up his sleeves tighter and tucks in his loose glove, looking at the camera",
+  "K": "he tucks a loose cuff into his tight glove with both hands, looking at the camera, serious",
+  "text": "Ropa ajustada, anteojos puestos, y la máquina atornillada al banco. Un caño largo barre todo.",
+  "P": "PEc"
+ },
+ {
+  "id": "b124",
+  "type": "A",
+  "scene": "PE",
+  "A": "he stands at the machine and clears the area around with a sweep of his arm, looking at the camera",
+  "K": "he holds an arm out toward the empty floor space around the machine, looking at the camera",
+  "text": "Y despeja el espacio alrededor: con un caño largo el otro extremo gira como un bate.",
+  "P": "PEc"
+ },
+ {
+  "id": "b125",
+  "type": "A",
+  "scene": "PE",
+  "A": "he shakes his head and shrugs with a small laugh, looking at the camera",
+  "K": "he stands with open hands, shrugging with an honest face, looking at the camera",
+  "text": "¿Y aluminio, o tubo cuadrado de una pulgada? No lo probé. No te lo prometo, y no voy a inventarte nada.",
+  "P": "PEd"
+ },
+ {
+  "id": "b126",
+  "type": "A",
+  "scene": "PE",
+  "A": "he points at the frame and the pulleys one by one with a pencil, looking at the camera",
+  "K": "he holds the pencil on the top roller, looking at the camera with a small frown",
+  "text": "Lo que cambiaría: una manija doble, una de cada lado, para poder sacar el caño sin desarmar nada.",
+  "P": "PEd"
+ },
+ {
+  "id": "b127",
+  "type": "A",
+  "scene": "PE",
+  "A": "he points to the top screw and holds a finger up, looking at the camera",
+  "K": "he points at the top screw with one finger, looking at the camera honestly",
+  "text": "Y algo que no resolví: la tuerca del husillo se calienta, si doblas mucho seguido. Hay que dejarla enfriar.",
+  "P": "PEd"
+ },
+ {
+  "id": "b128",
+  "type": "A",
+  "scene": "PE",
+  "A": "he lifts the machine's end plate lightly to show it is solid, looking at the camera",
+  "K": "he rests a hand on the side plate of the machine, looking at the camera calmly",
+  "text": "Esto es una máquina de taller, para una pieza o dos por semana. No es para producir cien arcos por día.",
+  "P": "PEd"
+ },
+ {
+  "id": "b129",
+  "type": "A",
+  "scene": "PD",
+  "A": "he and the nephew carry a long steel tube toward the bender in the workshop, the nephew holding the far end",
+  "K": "he and the nephew stand at the machine with a long steel tube, the nephew holding its far end, both looking at it",
+  "text": "Y ahora, para lo que lo construimos: el arco del portón. Caño de tres cuartos, dos metros y medio.",
+  "P": "PDa"
+ },
+ {
+  "id": "b130",
+  "type": "A",
+  "scene": "PD",
+  "A": "he turns the crank slowly while the nephew holds the long tube end up in the air, the tube curving",
+  "K": "he cranks slowly while the nephew supports the long curving tube with both hands, both concentrating",
+  "text": "Pasadas lentas. Nico sostiene la punta, que si no el peso te tuerce el arco.",
+  "P": "PDa"
+ },
+ {
+  "id": "b131",
+  "type": "V",
+  "scene": "PD",
+  "A": "the nephew supports the curving tube end, grunting a little, looking at the presenter",
+  "K": "the nephew holding up the curved tube end, face tense, looking at the presenter",
+  "line": "Pesa un montón. ¿Falta mucho?",
+  "text": "Pesa un montón. ¿Falta mucho?",
+  "P": "PDa"
+ },
+ {
+  "id": "b132",
+  "type": "A",
+  "scene": "PD",
+  "A": "he checks the curve against a cardboard arch template held up beside it, looking closely",
+  "K": "he holds the curved tube against the cardboard template, looking at the match with a squint",
+  "text": "Mido contra una plantilla de cartón que hice con el arco del portón. Una pasada más, y calza.",
+  "P": "PDa"
+ },
+ {
+  "id": "b133",
+  "type": "A",
+  "scene": "PG",
+  "A": "he lifts the finished arch tube against the gate frame, the nephew standing back looking",
+  "K": "he holds the finished steel tube arch up against the gate frame top, the nephew looking at it with both hands on his head",
+  "text": "Probamos contra el portón. Y calza. De punta a punta.",
+  "P": "PGa"
+ },
+ {
+  "id": "b134",
+  "type": "V",
+  "scene": "PG",
+  "A": "the nephew laughs with both hands on his head, stepping back to admire the arch",
+  "K": "the nephew with both hands on his head laughing, looking at the arch fitted on the gate",
+  "line": "Tío, es un arco perfecto. Me lo tienes que enseñar.",
+  "text": "Tío, es un arco perfecto. Me lo tienes que enseñar.",
+  "P": "PGa"
+ },
+ {
+  "id": "b135",
+  "type": "A",
+  "scene": "PG",
+  "A": "he claps the nephew on the shoulder and turns to the camera, smiling",
+  "K": "he stands with a hand on the nephew's shoulder, the gate with its arch behind them, looking at the camera warmly",
+  "text": "Tres horas de roladora, dos cuartos de vuelta de tornillo, y un arco que no cobra nadie.",
+  "P": "PGa"
+ },
+ {
+  "id": "b136",
+  "type": "A",
+  "scene": "PG",
+  "A": "he and the nephew weld the new arch onto the top of the gate frame, the nephew holding it steady while he tacks it, helmet down",
+  "K": "he lifts his welding helmet beside the nephew, the arch tack welded at the top of the gate frame, looking at it",
+  "text": "Primero puntos, con Nico sosteniendo el arco. Después cordón completo, y el portón vuelve a ser portón.",
+  "P": "PGa"
+ },
+ {
+  "id": "b137",
+  "type": "V",
+  "scene": "PG",
+  "A": "the nephew stands in front of the finished gate with arch, hands in the pockets of his grey hooded sweatshirt, looking up with a soft smile",
+  "K": "the nephew looking up at the black gate with its arch, a soft emotional smile",
+  "line": "Mi abuelo estaría orgulloso.",
+  "text": "Mi abuelo estaría orgulloso.",
+  "P": "PGb"
+ },
+ {
+  "id": "b138",
+  "type": "A",
+  "scene": "PG",
+  "A": "he stands beside the nephew in front of the gate looking at it, then turns to the camera",
+  "K": "he stands beside the nephew in front of the black gate with its arch, looking at the camera with a warm smile",
+  "text": "Un portón con arco, hecho con la chatarra de dos lavarropas, un gato y un fin de semana.",
+  "P": "PGb"
+ },
+ {
+  "id": "b139",
+  "type": "A",
+  "scene": "PG",
+  "A": "he draws on a piece of cardboard with a marker and a tape measure, looking down",
+  "K": "he holds the cardboard with a drawn arch and a tape measure on it, looking at the camera",
+  "text": "¿Y cómo sabes qué radio le tienes que dar al arco? Mides la luz del portón y la altura del arco.",
+  "P": "PGb"
+ },
+ {
+  "id": "b140",
+  "type": "A",
+  "scene": "PG",
+  "A": "he writes numbers on the cardboard with a marker, looking at it",
+  "K": "he holds up the cardboard with the numbers written on it, tapping them with the marker",
+  "text": "Mi portón: luz de un metro veinte, y arco de treinta centímetros de alto. Eso da un radio de setenta y cinco.",
+  "P": "PGb"
+ },
+ {
+  "id": "b141",
+  "type": "A",
+  "scene": "PG",
+  "A": "he leans toward the camera and lowers his voice, serious",
+  "K": "he leans slightly toward the camera with a serious look",
+  "text": "La cuenta es luz al cuadrado, dividida ocho veces la altura, más la mitad de la altura. Con eso no fallas.",
+  "P": "PGc"
+ },
+ {
+  "id": "b142",
+  "type": "A",
+  "scene": "PG",
+  "A": "he counts on his fingers looking at the camera",
+  "K": "he holds up three fingers toward the camera, serious but warm",
+  "text": "Lo que aprendí a los golpes: el canal a medida, tracción con cordones, y un refuerzo en el bastidor. Tres cosas.",
+  "P": "PGc"
+ },
+ {
+  "id": "b143",
+  "type": "A",
+  "scene": "PG",
+  "A": "he stands in front of the camera with the black gate and its arch behind him, looking at it affectionately",
+  "K": "he looks straight into the camera with a friendly half smile, a hand resting on the ring roller",
+  "text": "Si tienes chatarra de rulemanes y un gato viejo, no los tires. Cuéntame qué harías tú con una roladora.",
+  "P": "PGc"
+ },
+ {
+  "id": "b144",
+  "type": "A",
+  "scene": "PG",
+  "A": "he points off to the side with his thumb toward the workshop as he talks to the camera",
+  "K": "he holds his thumb pointing over his shoulder toward the workshop, smiling at the camera, ending",
+  "text": "En el próximo, algo para calentar el galpón con una garrafa vieja. Pero antes, el paso que nunca hay que saltarse.",
+  "P": "PGc"
+ },
+ {
+  "id": "b145",
+  "type": "A",
+  "scene": "PG",
+  "A": "he waves to the camera with the gate behind him and the nephew waving from the gate",
+  "K": "he stands waving with a warm smile, the nephew waving behind him at the gate, ending",
+  "text": "Nos vemos en el taller.",
+  "P": "PGd"
+ }
+]

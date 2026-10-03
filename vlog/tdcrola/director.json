@@ -1,0 +1,3434 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 6.0,
+  "db": -23
+ },
+ "cam": [
+  {
+   "id": "b001",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "shakes": [
+     {
+      "at": 2,
+      "amp": 12,
+      "len": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b002",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "shakes": [
+     {
+      "at": 1,
+      "amp": 12,
+      "len": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b003",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b004",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b005",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   },
+   "rate": 0.58
+  },
+  {
+   "id": "b006",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b007",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b008",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b009",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b010",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b011",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b012",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b013",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b014",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b015",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b016",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b017",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b018",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b019",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b020",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b021",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b022",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b023",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b024",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b025",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b026",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b027",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b028",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b029",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b030",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b031",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b032",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b033",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b034",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b035",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b036",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b037",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b038",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b039",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b040",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b041",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b042",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b043",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b044",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b045",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b046",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b047",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b048",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b049",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b050",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b051",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b052",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b053",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b054",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b055",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b056",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b057",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b058",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b059",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b060",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b061",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b062",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b063",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b064",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b065",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b066",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b067",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b068",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b069",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b070",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b071",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b072",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b073",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b074",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b075",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b076",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b077",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b078",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "shakes": [
+     {
+      "at": 1,
+      "amp": 12,
+      "len": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b079",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b080",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b081",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b082",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b083",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b084",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b085",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b086",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b087",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b088",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b089",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b090",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b091",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b092",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b093",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b094",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b095",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b096",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b097",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b098",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b099",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b100",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": -1
+   }
+  },
+  {
+   "id": "b101",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b102",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b103",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b104",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "shakes": [
+     {
+      "at": 3,
+      "amp": 12,
+      "len": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b105",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b106",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b107",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b108",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b109",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": 1,
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b110",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b111",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b112",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b113",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b114",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b115",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b116",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b117",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b118",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b119",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b120",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b121",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b122",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b123",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b124",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b125",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b126",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b127",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b128",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b129",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     55,
+     60
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b130",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b131",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b132",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b133",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     48,
+     38
+    ],
+    "whipIn": 6,
+    "whipDir": 1,
+    "punches": [
+     {
+      "at": 2,
+      "amount": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "id": "b134",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b135",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b136",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     35,
+     50
+    ]
+   }
+  },
+  {
+   "id": "b137",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     62,
+     45
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b138",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b139",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b140",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     40,
+     42
+    ]
+   }
+  },
+  {
+   "id": "b141",
+   "cam": {
+    "push": [
+     1.0,
+     1.1
+    ],
+    "origin": [
+     35,
+     50
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  },
+  {
+   "id": "b142",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     62,
+     45
+    ]
+   }
+  },
+  {
+   "id": "b143",
+   "cam": {
+    "push": [
+     1.0,
+     1.08
+    ],
+    "origin": [
+     48,
+     38
+    ]
+   }
+  },
+  {
+   "id": "b144",
+   "cam": {
+    "push": [
+     1.08,
+     1.0
+    ],
+    "origin": [
+     55,
+     60
+    ]
+   }
+  },
+  {
+   "id": "b145",
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ],
+    "origin": [
+     40,
+     42
+    ],
+    "whipIn": 6,
+    "whipDir": 1
+   }
+  }
+ ],
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "60 cm · CALZA JUSTO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "60",
+   "dur": 2.6,
+   "off": -0.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b004",
+   "props": {
+    "name": "RULEMANES",
+    "origin": "de lavarropas",
+    "cost": "$0",
+    "at": [
+     18,
+     4
+    ]
+   },
+   "word": "rulemanes",
+   "dur": 1.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b004",
+   "props": {
+    "name": "AMORTIGUADORES",
+    "origin": "vástagos de 12 mm",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "amortiguador",
+   "dur": 1.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b004",
+   "props": {
+    "name": "GATO DE AUTO",
+    "origin": "el husillo",
+    "cost": "$0",
+    "at": [
+     82,
+     4
+    ]
+   },
+   "word": "gato",
+   "dur": 1.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b008",
+   "props": {
+    "pos": "top",
+    "size": 100,
+    "words": [
+     {
+      "t": "EL DETALLE",
+      "beat": "b008",
+      "word": "detalle",
+      "hl": "yellow"
+     },
+     {
+      "t": "DE LOS RODILLOS",
+      "beat": "b008",
+      "word": "rodillos",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "detalle",
+   "until": "b008",
+   "off": -0.3,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b010",
+   "props": {
+    "text": "PORTÓN DE LA ABUELA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "sub": "arco nuevo"
+   },
+   "word": "abuela",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b016",
+   "props": {
+    "pos": "bottom",
+    "size": 92,
+    "words": [
+     {
+      "t": "3 RODILLOS",
+      "beat": "b016",
+      "word": "tres",
+      "hl": "yellow"
+     },
+     {
+      "t": "1 TORNILLO",
+      "beat": "b016",
+      "word": "tornillo"
+     },
+     {
+      "t": "1 MANIJA",
+      "beat": "b016",
+      "word": "manija",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "roladora",
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b021",
+   "props": {
+    "pos": "top",
+    "size": 88,
+    "words": [
+     {
+      "t": "1 RANURA",
+      "beat": "b021",
+      "word": "ranura",
+      "hl": "yellow"
+     },
+     {
+      "t": "2 MANIJA GRANDE",
+      "beat": "b021",
+      "word": "manija"
+     },
+     {
+      "t": "3 QUE AGARRE",
+      "beat": "b021",
+      "word": "agarre",
+      "hl": "yellow"
+     },
+     {
+      "t": "4 IMPRIMAR",
+      "beat": "b021",
+      "word": "imprimar",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "ranura",
+   "until": "b021",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b024",
+   "props": {
+    "name": "RULEMANES ×3",
+    "origin": "lavarropas roto",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "lavarropas",
+   "dur": 3.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b025",
+   "props": {
+    "name": "EJES Ø12",
+    "origin": "amortiguadores",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "amortiguador",
+   "dur": 3.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b026",
+   "props": {
+    "name": "HUSILLO",
+    "origin": "gato de auto",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "gato",
+   "dur": 3.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b028",
+   "props": {
+    "name": "PLANCHUELA 10 mm",
+    "origin": "portón viejo",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "portón",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b029",
+   "props": {
+    "name": "POLEAS",
+    "origin": "motor y compresor",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "poleas",
+   "dur": 3.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcExploded",
+   "beat": "b030",
+   "props": {
+    "assemble": true,
+    "at": [
+     30,
+     52
+    ],
+    "scale": 0.8,
+    "parts": [
+     {
+      "shape": "shank",
+      "name": "Ejes Ø12",
+      "origin": "amortiguadores"
+     },
+     {
+      "shape": "disc",
+      "name": "Poleas con canal",
+      "origin": "motor y compresor"
+     },
+     {
+      "shape": "pipe",
+      "name": "Rulemanes ×3",
+      "origin": "lavarropas"
+     },
+     {
+      "shape": "shank",
+      "name": "Husillo",
+      "origin": "gato de auto"
+     }
+    ]
+   },
+   "word": "materiales",
+   "until": "b030",
+   "off": -0.3,
+   "until_off": 1.5,
+   "sfx": [
+    {
+     "src": "sfx/cam_travel.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b040",
+   "props": {
+    "step": 1,
+    "total": 6,
+    "title": "LOS LATERALES"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b047",
+   "props": {
+    "step": 2,
+    "total": 6,
+    "title": "LOS RODILLOS"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b057",
+   "props": {
+    "step": 3,
+    "total": 6,
+    "title": "EL HUSILLO"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b065",
+   "props": {
+    "step": 4,
+    "total": 6,
+    "title": "BASE Y MANIJA"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b073",
+   "props": {
+    "step": 5,
+    "total": 6,
+    "title": "SOLDAR Y PROBAR"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b098",
+   "props": {
+    "step": 6,
+    "total": 6,
+    "title": "IMPRIMAR Y PINTAR"
+   },
+   "dur": 3.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b038",
+   "props": {
+    "text": "MÁS BAJO = MÁS CERRADA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cerrada",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b039",
+   "props": {
+    "text": "MÍNIMO: 40 cm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "40",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b043",
+   "props": {
+    "text": "ANTEOJOS SIEMPRE",
+    "icons": [
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "anteojos",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b045",
+   "props": {
+    "text": "RANURAS IGUALES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "iguales",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b048",
+   "props": {
+    "text": "CANAL EN V",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "canal",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b050",
+   "props": {
+    "text": "CANAL = DIÁMETRO DEL CAÑO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "diámetro",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b054",
+   "props": {
+    "text": "CENTRADA O NADA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "centro",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b066",
+   "props": {
+    "text": "ESCUADRA, SÍ O SÍ",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "escuadra",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b068",
+   "props": {
+    "text": "MANIJA 40 cm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "40",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b071",
+   "props": {
+    "text": "ATORNILLADA AL BANCO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "atornillada",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b074",
+   "props": {
+    "pos": "top",
+    "size": 118,
+    "words": [
+     {
+      "t": "PATINA",
+      "beat": "b074",
+      "word": "patina",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "patina",
+   "dur": 2.0,
+   "off": -0.05,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b079",
+   "props": {
+    "pos": "top",
+    "size": 108,
+    "words": [
+     {
+      "t": "CAÑO OVALADO",
+      "beat": "b079",
+      "word": "ovalada",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "aplastada",
+   "dur": 2.4,
+   "off": -0.3,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b081",
+   "props": {
+    "text": "NO ES LA FUERZA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "fuerza",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b083",
+   "props": {
+    "text": "ACERO CONTRA ACERO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "acero",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b084",
+   "props": {
+    "text": "CANAL MUY ANCHO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "ancho",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b087",
+   "props": {
+    "text": "AFUERA SE ESTIRA · ADENTRO SE COMPRIME",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "estira",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b090",
+   "props": {
+    "text": "MEDIA CAÑA Ø21",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "21",
+   "dur": 2.4,
+   "off": -0.5,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b091",
+   "props": {
+    "pos": "top",
+    "size": 110,
+    "words": [
+     {
+      "t": "CANAL",
+      "beat": "b091",
+      "word": "justo",
+      "hl": "yellow"
+     },
+     {
+      "t": "A MEDIDA",
+      "beat": "b091",
+      "word": "sobra",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "justo",
+   "until": "b091",
+   "off": -0.6,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b093",
+   "props": {
+    "text": "CORDONES = TRACCIÓN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "traccion",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b096",
+   "props": {
+    "text": "REFUERZO EN CADA LATERAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "escuadra",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b098",
+   "props": {
+    "text": "IMPRIMACIÓN PRIMERO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "imprimacion",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b100",
+   "props": {
+    "pos": "top",
+    "size": 110,
+    "words": [
+     {
+      "t": "PRUEBA",
+      "beat": "b100",
+      "word": "tercera",
+      "hl": "yellow"
+     },
+     {
+      "t": "DE FUEGO",
+      "beat": "b100",
+      "word": "vuelta",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "tercera",
+   "dur": 2.4,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b103",
+   "props": {
+    "text": "¼ DE VUELTA POR PASADA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cuarto",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b109",
+   "props": {
+    "pos": "top",
+    "size": 120,
+    "words": [
+     {
+      "t": "SE CIERRA",
+      "beat": "b109",
+      "word": "cierra",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "cierra",
+   "dur": 2.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcCaliper",
+   "beat": "b113",
+   "props": {
+    "dims": [
+     {
+      "from": [
+       24,
+       72
+      ],
+      "to": [
+       76,
+       72
+      ],
+      "value": "60 cm",
+      "tone": "yellow"
+     }
+    ],
+    "gap": 10
+   },
+   "word": "sesenta",
+   "dur": 3.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/marker_drive.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcCaliper",
+   "beat": "b114",
+   "props": {
+    "dims": [
+     {
+      "from": [
+       24,
+       72
+      ],
+      "to": [
+       76,
+       72
+      ],
+      "value": "60,5 cm",
+      "tone": "white"
+     }
+    ],
+    "gap": 10
+   },
+   "word": "sesenta",
+   "dur": 3.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/marker_drive.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b115",
+   "props": {
+    "text": "Ø21 → Ø21",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "veintiuno",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b118",
+   "props": {
+    "text": "MÍNIMO: 40 cm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "40",
+   "dur": 2.4,
+   "off": -0.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b119",
+   "props": {
+    "pos": "bottom",
+    "size": 96,
+    "words": [
+     {
+      "t": "½\" Y ¾\"",
+      "beat": "b119",
+      "word": "media",
+      "hl": "yellow"
+     },
+     {
+      "t": "PARED FINA",
+      "beat": "b119",
+      "word": "fina"
+     }
+    ]
+   },
+   "word": "media",
+   "dur": 3.2,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b120",
+   "props": {
+    "text": "TUBO CUADRADO: NO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "cuadrado",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b121",
+   "props": {
+    "text": "RELLENO DE ARENA SECA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "arena",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b122",
+   "props": {
+    "text": "ATRAPAMIENTO: DEDOS FUERA",
+    "icons": [
+     "alert",
+     "gloves"
+    ],
+    "tone": "red"
+   },
+   "word": "atrapamientos",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b123",
+   "props": {
+    "text": "ROPA AJUSTADA · ANTEOJOS",
+    "icons": [
+     "goggles",
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "ropa",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b125",
+   "props": {
+    "text": "ALUMINIO / CUADRADO: NO PROBÉ",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "aluminio",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b129",
+   "props": {
+    "pos": "top",
+    "size": 110,
+    "words": [
+     {
+      "t": "EL ARCO",
+      "beat": "b129",
+      "word": "arco",
+      "hl": "yellow"
+     },
+     {
+      "t": "DEL PORTÓN",
+      "beat": "b129",
+      "word": "portón",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "arco",
+   "dur": 2.6,
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b132",
+   "props": {
+    "text": "PLANTILLA DE CARTÓN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "plantilla",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b140",
+   "props": {
+    "pos": "top",
+    "size": 94,
+    "words": [
+     {
+      "t": "LUZ 1,20 m",
+      "beat": "b140",
+      "word": "metro",
+      "hl": "yellow"
+     },
+     {
+      "t": "ALTURA 30 cm",
+      "beat": "b140",
+      "word": "treinta"
+     },
+     {
+      "t": "RADIO 75 cm",
+      "beat": "b140",
+      "word": "75",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "luz",
+   "until": "b140",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b142",
+   "props": {
+    "pos": "top",
+    "size": 92,
+    "words": [
+     {
+      "t": "CANAL A MEDIDA",
+      "beat": "b142",
+      "word": "canal",
+      "hl": "yellow"
+     },
+     {
+      "t": "TRACCIÓN",
+      "beat": "b142",
+      "word": "traccion",
+      "hl": "yellow"
+     },
+     {
+      "t": "REFUERZO",
+      "beat": "b142",
+      "word": "refuerzo",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "aprendí",
+   "until": "b142",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b144",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b144",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "CALENTAR EL GALPÓN",
+      "beat": "b144",
+      "word": "calentar",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b145",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "covers": {}
+}
