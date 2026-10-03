@@ -17,7 +17,7 @@ export const HzBed: React.FC<{ src?: string; seed?: number; dim?: number; blur?:
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: HZ.manila2 }}>
       {/\.mp4$/.test(src)
-        ? <OffthreadVideo src={staticFile(src)} muted style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z.toFixed(4)})`, transformOrigin: `${(30 + 40 * r(3)).toFixed(1)}% ${(30 + 40 * r(4)).toFixed(1)}%`, filter: blur ? `blur(${blur}px)` : undefined }} />
+        ? <OffthreadVideo src={staticFile(src)} muted playbackRate={Math.max(0.4, Math.min(1, 262 / Math.max(1, durationInFrames)))} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z.toFixed(4)})`, transformOrigin: `${(30 + 40 * r(3)).toFixed(1)}% ${(30 + 40 * r(4)).toFixed(1)}%`, filter: blur ? `blur(${blur}px)` : undefined }} />
         : <Img src={staticFile(src)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z.toFixed(4)})`, transformOrigin: `${(30 + 40 * r(3)).toFixed(1)}% ${(30 + 40 * r(4)).toFixed(1)}%`, filter: blur ? `blur(${blur}px)` : undefined }} />}
       {dim > 0 ? <AbsoluteFill style={{ backgroundColor: `rgba(31,27,22,${dim})` }} /> : null}
     </AbsoluteFill>

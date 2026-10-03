@@ -1,0 +1,73 @@
+{
+ "dir": "D:/Proyectos/video2-wt/hazelmom/vlog/hazelmom/M1",
+ "face": "D:/Proyectos/video2-wt/hazelmom/public/ref_hazelmom_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/hazelmom/public/ref_hazelmom.png",
+ "pronoun": "she",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the workroom background stays fully readable. The only light is the daylight from the tall window on the left plus the ceiling light; correctly exposed. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; hair with stray strands; clothes with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural older hands; she moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same workroom, same moment of the day. Hazel, a 69-year-old woman with grey hair loosely pulled back with a few stray strands, thin wire-rimmed reading glasses, small silver drop earrings, a faded blue denim button-up shirt with the sleeves rolled up to the forearms, natural older skin with lines and age spots sits at the worn wooden worktable of her appraisal workroom: white painted board walls, a tall window on the left, a dark wood china cabinet and an old dresser, open shelves with silver teapots and old jewelry boxes behind her, a white magnifier lamp on a swing arm, a pair of white cotton gloves on the worn wooden worktable, leaning toward the camera with one hand raised flat, palm out, like saying stop, eyes wide behind her glasses, urgent. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same place: she lowers her hand and points at the camera with one finger, a firm, serious look. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place a few seconds later: she sits back with a small knowing smile and lifts her eyebrows, hands folded on the table. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place a few seconds later: she shakes her head slowly with a sad, rueful little smile, one hand on her chest. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same place a few seconds later: she looks at the camera warmly, both hands open on the table. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/hazelmom/vlog/hazelmom/tramos/m1.wav",
+   "text": "Stop. Put that box down.",
+   "action": "She raises her flat palm at the camera like saying stop, then lowers it and points, firm and urgent. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  },
+  {
+   "id": "m2",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/hazelmom/vlog/hazelmom/tramos/m2.wav",
+   "text": "And I'm going to tell you how that box turned out, because it surprised even me.",
+   "action": "She talks to the camera, then sits back with a small knowing smile and raised eyebrows. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  },
+  {
+   "id": "m3",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/hazelmom/vlog/hazelmom/tramos/m3.wav",
+   "text": "and I've watched more good things go in a dumpster than I like to think about.",
+   "action": "She shakes her head slowly with a rueful smile while she talks, then looks at the camera warmly. She wears the same faded blue denim shirt with rolled-up sleeves, the same thin wire-rimmed reading glasses and small silver drop earrings, grey hair loosely pulled back."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/hazelmom/vlog/hazelmom/M1/out.mp4"
+}
