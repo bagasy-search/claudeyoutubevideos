@@ -6,7 +6,7 @@ R = "D:/Proyectos/video2-wt/earlsoap/"
 SR = 48000; FPS = 30
 ts = open(R + "src/earlsoap/timeline_earlsoap.gen.ts", encoding="utf8").read()
 grab = lambda k: json.loads(re.search(rf"export const {k}: any\[\] = (.*);", ts).group(1))
-TOTAL = int(re.search(r"TOTAL_FRAMES_EARLWONT = (\d+)", ts).group(1))
+TOTAL = int(re.search(r"TOTAL_FRAMES_EARLSOAP = (\d+)", ts).group(1))
 SFX, FOLEY = grab("SFX"), grab("FOLEY")
 def load(f, ch=2):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", R + "public/" + f, "-ac", str(ch), "-ar", str(SR), "-f", "f32le", "-"], capture_output=True).stdout

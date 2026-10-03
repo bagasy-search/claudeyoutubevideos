@@ -84,7 +84,7 @@ if (cues[0].k !== "vl" && cues[0].k !== "av") { console.error("⛔ el video no a
 const used = new Map(); for (const c of cues) for (const p of [c.k === "clip" ? c.src : null, c.clip, c.k === "comp" && /\.mp4$/.test(c.props?.bed || "") ? c.props.bed : null].filter(Boolean)) used.set(p, (used.get(p) || 0) + 1);
 const dup = [...used].filter(([, n]) => n > 1); if (dup.length) { console.error("⛔ clip usado 2 veces:", dup.map(([p]) => p).join(" ")); process.exit(1); }
 const out = `// GENERADO por vlog/earlsoap/gen_timeline.mjs — no editar a mano
-export const TOTAL_FRAMES_EARLWONT = ${TOTAL};
+export const TOTAL_FRAMES_EARLSOAP = ${TOTAL};
 export const AV_READY = ${AV_READY};
 export const AUDIO = "earlsoap.m4a";
 export const MUSIC = "sfx/earlsoap_bed.m4a";

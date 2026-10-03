@@ -1,5 +1,5 @@
 // GENERADO por vlog/earlsoap/gen_timeline.mjs — no editar a mano
-export const TOTAL_FRAMES_EARLWONT = 27611;
+export const TOTAL_FRAMES_EARLSOAP = 27611;
 export const AV_READY = true;
 export const AUDIO = "earlsoap.m4a";
 export const MUSIC = "sfx/earlsoap_bed.m4a";
