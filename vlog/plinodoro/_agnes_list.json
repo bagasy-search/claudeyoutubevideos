@@ -1,0 +1,57 @@
+[
+ {
+  "nombre": "b001_0",
+  "motion": "the water in the bowl ripples constantly with a faint trickling sound",
+  "change": ""
+ },
+ {
+  "nombre": "b008_1",
+  "motion": "the flapper lifts and a rush of water pours into the bowl",
+  "change": ""
+ },
+ {
+  "nombre": "b012_0",
+  "motion": "the blue tint spreads in the tank and slowly appears in the bowl water",
+  "change": ""
+ },
+ {
+  "nombre": "b016_1",
+  "motion": "the water level in the tank drops to the bottom",
+  "change": ""
+ },
+ {
+  "nombre": "b019_1",
+  "motion": "the old flapper is lifted off and the new one clicks onto the pegs",
+  "change": ""
+ },
+ {
+  "nombre": "b024_1",
+  "motion": "the incoming water stops when the float is pushed down",
+  "change": ""
+ },
+ {
+  "nombre": "b026_1",
+  "motion": "the water rises and stops right at the mark",
+  "change": ""
+ },
+ {
+  "nombre": "b028_1",
+  "motion": "the nut turns and the valve comes out of the tank",
+  "change": ""
+ },
+ {
+  "nombre": "b033_1",
+  "motion": "a thin sheet of water spills over the rim of the tube",
+  "change": ""
+ },
+ {
+  "nombre": "b039_1",
+  "motion": "the handle returns to rest with a soft click",
+  "change": ""
+ },
+ {
+  "nombre": "b042_1",
+  "motion": "the water refills quietly and stops with no further sound",
+  "change": ""
+ }
+]

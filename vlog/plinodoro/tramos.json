@@ -1,0 +1,452 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b001.wav",
+  "start": 0.0,
+  "len": 8.73,
+  "text": "Ese ruido de agua que no para en tu baño cuesta plata, todos los días. Y casi siempre se arregla con una pieza de pocos pesos."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b002.wav",
+  "start": 8.73,
+  "len": 9.52,
+  "text": "Soy Claudio, plomero. Un inodoro que corre agua puede gastar cientos de litros por día. Y las causas son siempre tres. Te las muestro."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b003.wav",
+  "start": 18.25,
+  "len": 7.74,
+  "text": "Muchas veces ni lo notas hasta que llega la factura del agua. Un hilito casi silencioso, que se lleva el mes entero."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b004.wav",
+  "start": 25.99,
+  "len": 10.18,
+  "text": "Uno: el sapito, esa goma de abajo. Dos: la válvula de llenado. Tres: el nivel de agua y el tubo de rebose. Y se revisan en ese orden."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b005.wav",
+  "start": 36.17,
+  "len": 7.47,
+  "text": "Con una llave, un destornillador y un repuesto de pocos pesos, lo resuelves en media hora. Y sin llamar a nadie."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b006.wav",
+  "start": 43.64,
+  "len": 8.77,
+  "text": "Y te enseño la prueba que te dice cuál de las tres es la causa, antes de comprar nada. Con eso no gastas en repuestos que no necesitas."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b007.wav",
+  "start": 52.41,
+  "len": 9.12,
+  "text": "Primero, cómo funciona. Al tirar la cadena, la manija levanta el sapito, el agua del tanque cae a la taza, y arrastra todo."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b008.wav",
+  "start": 61.53,
+  "len": 7.63,
+  "text": "Después el sapito vuelve a cerrar, y la válvula de llenado vuelve a llenar el tanque, hasta que el flotador la corta."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b009.wav",
+  "start": 69.16,
+  "len": 8.26,
+  "text": "El agua debe subir hasta una marca, unos dos centímetros bajo el tubo de rebose, y ahí parar. Si no para, todo se escapa."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b010.wav",
+  "start": 77.42,
+  "len": 6.85,
+  "text": "Es un sistema simple, de pocas piezas. Y cuando entiendes la secuencia, el diagnóstico sale solo."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b011.wav",
+  "start": 84.27,
+  "len": 7.45,
+  "text": "La prueba clave: colorante. Unas gotas en el tanque, sin tirar la cadena, y esperas unos veinte minutos."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b012.wav",
+  "start": 91.72,
+  "len": 9.36,
+  "text": "Si el color aparece en la taza, el sapito pierde: el agua se escapa por abajo. Si no aparece, la fuga está en la válvula de llenado o el rebose."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b013.wav",
+  "start": 101.08,
+  "len": 6.79,
+  "text": "Es una prueba simple, y es la que hago en cada visita. No hace falta nada más para saber por dónde empezar."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b014.wav",
+  "start": 107.87,
+  "len": 9.21,
+  "text": "Y escucha: un silbido continuo suele ser la válvula de llenado. Un goteo periódico, que se activa cada tanto, suele ser el sapito."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b015.wav",
+  "start": 117.08,
+  "len": 9.84,
+  "text": "Razón uno, la más común: el sapito, o tapón de goma. Con los años se deforma, se endurece, o se cubre de sarro, y deja de sellar."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b016.wav",
+  "start": 126.92,
+  "len": 9.08,
+  "text": "Paso uno: cierra la llave de paso, detrás del inodoro, y tira la cadena para vaciar el tanque. Con el tanque vacío, trabajas seco."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b017.wav",
+  "start": 136.0,
+  "len": 8.41,
+  "text": "Mira el asiento donde apoya el sapito: si hay sarro o suciedad, límpialo con una esponja de cocina, para que selle bien."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b018.wav",
+  "start": 144.41,
+  "len": 6.92,
+  "text": "Con paciencia, hasta que quede liso. A veces solo con eso el goteo desaparece, sin cambiar nada."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b019.wav",
+  "start": 151.33,
+  "len": 7.97,
+  "text": "Si el sapito está deforme, se cambia. Se sacan los dos ganchos de los costados, se coloca el nuevo, y se engancha la cadena."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b020.wav",
+  "start": 159.3,
+  "len": 9.15,
+  "text": "La cadena, con un poco de holgura, de uno o dos centímetros. Si queda muy tirante, el sapito no cierra; si queda muy floja, no levanta."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b021.wav",
+  "start": 168.45,
+  "len": 8.91,
+  "text": "Hay sapitos de dos y de tres pulgadas, y de varias formas. Lleva el viejo a la ferretería, o mide el desagüe, para comprar el que corresponde."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b022.wav",
+  "start": 177.36,
+  "len": 7.85,
+  "text": "Un enemigo del sapito: las pastillas de cloro en el tanque. Atacan la goma, y se deforma en pocos meses. No las uses."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b023.wav",
+  "start": 185.21,
+  "len": 6.68,
+  "text": "Razón dos: la válvula de llenado. Es la que mete agua al tanque, y la que debe cerrar cuando llega al nivel."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b024.wav",
+  "start": 191.89,
+  "len": 7.68,
+  "text": "La prueba: sube el flotador con la mano. Si el agua deja de entrar, la válvula funciona, pero el nivel está mal ajustado."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b025.wav",
+  "start": 199.57,
+  "len": 7.22,
+  "text": "Se ajusta con un tornillo o con una pinza en la varilla, para que el agua pare unos dos centímetros debajo del rebose."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b026.wav",
+  "start": 206.79,
+  "len": 7.98,
+  "text": "Abres la llave de paso despacio, miras cómo sube el agua, y verificas que pare en la marca. Si lo hace, perfecto."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b027.wav",
+  "start": 214.77,
+  "len": 9.28,
+  "text": "Si el agua sigue entrando aunque subas el flotador, la válvula está dañada: la goma interior se endureció. Se cambia entera, y es fácil."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b028.wav",
+  "start": 224.05,
+  "len": 6.28,
+  "text": "Con el tanque vacío, se desenrosca la tuerca de abajo, y se saca la válvula vieja. El tanque queda libre."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b029.wav",
+  "start": 230.33,
+  "len": 7.39,
+  "text": "Se coloca la nueva, a la altura indicada en el envase, se aprieta la tuerca con la mano, y se conecta la manguera de entrada."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b030.wav",
+  "start": 237.72,
+  "len": 8.11,
+  "text": "Y el tubito chico del llenado va sujeto al rebose, sin meterse adentro. Así la taza se rellena después de cada descarga."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b031.wav",
+  "start": 245.83,
+  "len": 9.03,
+  "text": "Un error común: apretar de más la tuerca de plástico. Con la mano y un cuarto de vuelta basta. Si no, se raja o gotea."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b032.wav",
+  "start": 254.86,
+  "len": 9.48,
+  "text": "Razón tres: el nivel de agua demasiado alto. Si el agua llega al borde del tubo de rebose, se escurre por ahí hacia la taza, sin parar."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b033.wav",
+  "start": 264.34,
+  "len": 6.15,
+  "text": "Eso es lo que escuchas como un chorrito constante. Y se arregla bajando el flotador, como en la razón dos."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b034.wav",
+  "start": 270.49,
+  "len": 9.19,
+  "text": "A veces el propio tubo de rebose está rajado o desprendido en la base. Si pierde agua por ahí, hay que cambiar toda la válvula de descarga."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b035.wav",
+  "start": 279.68,
+  "len": 8.25,
+  "text": "Hay kits completos que traen sapito, tubo y cadena. Son más caros, pero resuelven fugas viejas, y duran muchos años."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b036.wav",
+  "start": 287.93,
+  "len": 8.95,
+  "text": "A veces el agua se escapa por otros lados: las juntas entre el tanque y la taza, o los tornillos del tanque. Mira si hay gotas abajo."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b037.wav",
+  "start": 296.88,
+  "len": 7.94,
+  "text": "Un papel seco pasado por las uniones te muestra dónde hay humedad. Las gomas de los tornillos se cambian en minutos."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b038.wav",
+  "start": 304.82,
+  "len": 8.66,
+  "text": "Y la manija: si queda pegada, mantiene la cadena tensa, y el sapito no cierra. Se limpia o se ajusta el vástago."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b039.wav",
+  "start": 313.48,
+  "len": 8.0,
+  "text": "Debe volver libremente a su posición. Si no, la tuerca de atrás está muy apretada o hay sarro, y se ajusta."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b040.wav",
+  "start": 321.48,
+  "len": 9.65,
+  "text": "El arreglo definitivo: si el inodoro tiene más de diez años, cambia el sapito y la válvula de llenado juntos. Las dos piezas se desgastan a la vez."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b041.wav",
+  "start": 331.13,
+  "len": 9.39,
+  "text": "Un kit universal cuesta poco, y se coloca en menos de una hora. Con eso, vuelves a tener un inodoro silencioso por muchos años."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b042.wav",
+  "start": 340.52,
+  "len": 8.48,
+  "text": "La prueba final: tiras la cadena, miras cómo llena el tanque, y escuchas. Si llega al nivel, para, y hay silencio, listo."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b043.wav",
+  "start": 349.0,
+  "len": 6.55,
+  "text": "Y si quieres confirmar, mira el medidor de agua: sin usar nada en casa, el indicador no debe moverse."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b044.wav",
+  "start": 355.55,
+  "len": 9.41,
+  "text": "Un inodoro con una fuga chica puede gastar unos cientos de litros por día. Con una fuga grande, más de mil. Y lo pagas tú, o el planeta."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b045.wav",
+  "start": 364.96,
+  "len": 7.75,
+  "text": "No te prometo una cifra exacta, porque depende de la fuga. Pero una pieza de pocos pesos suele pagarse en un mes de factura."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b046.wav",
+  "start": 372.71,
+  "len": 9.68,
+  "text": "Llama a un profesional si el tanque está rajado, si hay agua en la base del inodoro, si se mueve, o si hay olor a cloaca. Esas son otras fallas."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b047.wav",
+  "start": 382.39,
+  "len": 8.35,
+  "text": "Y no te preocupes si te trabas: una visita de un plomero por un inodoro cuesta lo que cuesta, y lo que importa es que se arregle bien."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b048.wav",
+  "start": 390.74,
+  "len": 8.76,
+  "text": "Las tres causas: el sapito, la válvula de llenado, y el nivel del agua. Con la prueba del colorante, sabes cuál es antes de comprar."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b049.wav",
+  "start": 399.5,
+  "len": 6.26,
+  "text": "Con eso, el baño vuelve al silencio, la factura baja, y aprendes un arreglo que sirve toda la vida."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plinodoro/out/plinodoro/tramos/b050.wav",
+  "start": 405.76,
+  "len": 7.724,
+  "text": "Si te sirvió, quédate en el canal. Y cuéntame cuál de las tres era la causa en tu casa. Me interesa saber si lo pudiste arreglar."
+ }
+]

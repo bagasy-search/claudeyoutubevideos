@@ -1,0 +1,907 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ese ruido de agua que no para en tu baño cuesta plata, todos los días. Y casi siempre se arregla con una pieza de pocos pesos.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a toilet tank with water trickling continuously into the bowl and a faint ripple on the water surface in the bowl, quiet bathroom",
+    "motion": "the water in the bowl ripples constantly with a faint trickling sound"
+   },
+   {
+    "k": "W",
+    "v": "running toilet water trickling"
+   },
+   {
+    "k": "W",
+    "v": "a toilet tank with water trickling continuously into"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio, plomero. Un inodoro que corre agua puede gastar cientos de litros por día. Y las causas son siempre tres. Te las muestro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio the plumber in a bathroom wearing a blue overall and headlamp, lifting the lid of a toilet tank and smiling, friendly"
+   },
+   {
+    "k": "G",
+    "v": "an open toilet tank with its parts visible and a few tools on the floor beside it"
+   },
+   {
+    "k": "W",
+    "v": "Claudio the plumber in a bathroom wearing a"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Muchas veces ni lo notas hasta que llega la factura del agua. Un hilito casi silencioso, que se lleva el mes entero.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water bill high toilet leak"
+   },
+   {
+    "k": "G",
+    "v": "a water bill with a high amount on a kitchen table next to a calculator"
+   },
+   {
+    "k": "W",
+    "v": "water bill high toilet leak"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Uno: el sapito, esa goma de abajo. Dos: la válvula de llenado. Tres: el nivel de agua y el tubo de rebose. Y se revisan en ese orden.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising three fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three numbered causes: flapper, fill valve and overflow tube"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising three fingers"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising three fingers"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con una llave, un destornillador y un repuesto de pocos pesos, lo resuelves en media hora. Y sin llamar a nadie.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "diy toilet repair tools basic"
+   },
+   {
+    "k": "G",
+    "v": "a small repair kit with a flapper, a fill valve, a screwdriver, a sponge and a pair of pliers on a bathroom floor"
+   },
+   {
+    "k": "W",
+    "v": "diy toilet repair tools basic"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y te enseño la prueba que te dice cuál de las tres es la causa, antes de comprar nada. Con eso no gastas en repuestos que no necesitas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera honestly"
+   },
+   {
+    "k": "W",
+    "v": "honest plumber advice"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera honestly"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, cómo funciona. Al tirar la cadena, la manija levanta el sapito, el agua del tanque cae a la taza, y arrastra todo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "toilet tank parts diagram"
+   },
+   {
+    "k": "G",
+    "v": "a cutaway diagram of a toilet tank showing the flapper, the chain, the fill valve, the float and the overflow tube labelled"
+   },
+   {
+    "k": "W",
+    "v": "toilet tank parts diagram"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después el sapito vuelve a cerrar, y la válvula de llenado vuelve a llenar el tanque, hasta que el flotador la corta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at each part with a screwdriver in the open tank"
+   },
+   {
+    "k": "A",
+    "v": "a flapper lifting and water rushing from a toilet tank into the bowl",
+    "motion": "the flapper lifts and a rush of water pours into the bowl"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El agua debe subir hasta una marca, unos dos centímetros bajo el tubo de rebose, y ahí parar. Si no para, todo se escapa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a diagram showing the water level in the tank two centimetres below the overflow tube with a mark on the tank wall"
+   },
+   {
+    "k": "W",
+    "v": "toilet tank water level line"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es un sistema simple, de pocas piezas. Y cuando entiendes la secuencia, el diagnóstico sale solo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding the lid and explaining that the tank is a simple system, calm smile"
+   },
+   {
+    "k": "W",
+    "v": "simple plumbing explained"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba clave: colorante. Unas gotas en el tanque, sin tirar la cadena, y esperas unos veinte minutos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "food colouring toilet tank test"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding a small bottle of food colouring and dropping a few drops into the tank"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el color aparece en la taza, el sapito pierde: el agua se escapa por abajo. Si no aparece, la fuga está en la válvula de llenado o el rebose.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "blue food colouring spreading in toilet tank water and later a faint blue tint appearing in the bowl",
+    "motion": "the blue tint spreads in the tank and slowly appears in the bowl water"
+   },
+   {
+    "k": "W",
+    "v": "blue food colouring spreading in toilet tank water"
+   },
+   {
+    "k": "W",
+    "v": "blue food colouring spreading in toilet tank water"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es una prueba simple, y es la que hago en cada visita. No hace falta nada más para saber por dónde empezar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a toilet bowl with a clear water and a toilet bowl with a faint blue tint side by side"
+   },
+   {
+    "k": "P",
+    "v": "Claudio comparing the two bowls with a gesture"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y escucha: un silbido continuo suele ser la válvula de llenado. Un goteo periódico, que se activa cada tanto, suele ser el sapito.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "listen to toilet hissing sound fill valve"
+   },
+   {
+    "k": "P",
+    "v": "Claudio listening near the tank with a hand cupped to his ear, a puzzled face"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Razón uno, la más común: el sapito, o tapón de goma. Con los años se deforma, se endurece, o se cubre de sarro, y deja de sellar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "toilet flapper worn rubber"
+   },
+   {
+    "k": "G",
+    "v": "a worn flapper with a warped edge and a mineral crust next to a new flapper on a bathroom floor"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso uno: cierra la llave de paso, detrás del inodoro, y tira la cadena para vaciar el tanque. Con el tanque vacío, trabajas seco.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio closing the water supply valve behind the toilet and flushing to empty the tank"
+   },
+   {
+    "k": "A",
+    "v": "a hand turning the supply valve behind a toilet clockwise and the tank emptying after a flush",
+    "motion": "the water level in the tank drops to the bottom"
+   },
+   {
+    "k": "W",
+    "v": "Claudio closing the water supply valve behind the"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mira el asiento donde apoya el sapito: si hay sarro o suciedad, límpialo con una esponja de cocina, para que selle bien.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a flapper seat inside a toilet tank with white mineral deposits around the opening"
+   },
+   {
+    "k": "W",
+    "v": "cleaning flapper seat mineral"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con paciencia, hasta que quede liso. A veces solo con eso el goteo desaparece, sin cambiar nada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio rubbing the seat clean with a green scouring pad, careful"
+   },
+   {
+    "k": "G",
+    "v": "a green scouring pad cleaning the rim of the flush valve opening"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el sapito está deforme, se cambia. Se sacan los dos ganchos de los costados, se coloca el nuevo, y se engancha la cadena.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "replacing toilet flapper unhook chain"
+   },
+   {
+    "k": "A",
+    "v": "hands unclipping the old flapper from its pegs and attaching the new one",
+    "motion": "the old flapper is lifted off and the new one clicks onto the pegs"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La cadena, con un poco de holgura, de uno o dos centímetros. Si queda muy tirante, el sapito no cierra; si queda muy floja, no levanta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio adjusting the chain length so that there is a little slack, showing with two fingers"
+   },
+   {
+    "k": "G",
+    "v": "a chain attached to the flush lever with about one centimetre of slack"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay sapitos de dos y de tres pulgadas, y de varias formas. Lleva el viejo a la ferretería, o mide el desagüe, para comprar el que corresponde.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "flapper universal types sizes"
+   },
+   {
+    "k": "G",
+    "v": "a few different flapper shapes and sizes on a table with labels two inch and three inch"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un enemigo del sapito: las pastillas de cloro en el tanque. Atacan la goma, y se deforma en pocos meses. No las uses.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a blue cleaning tablet in the tank"
+   },
+   {
+    "k": "G",
+    "v": "a blue chlorine tablet dissolving in a toilet tank next to a deformed flapper"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Razón dos: la válvula de llenado. Es la que mete agua al tanque, y la que debe cerrar cuando llega al nivel.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "toilet fill valve ballcock"
+   },
+   {
+    "k": "G",
+    "v": "a fill valve with a float cup attached to a vertical shaft inside a toilet tank"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba: sube el flotador con la mano. Si el agua deja de entrar, la válvula funciona, pero el nivel está mal ajustado.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pushing down the float arm of the fill valve and listening to the water stop"
+   },
+   {
+    "k": "A",
+    "v": "a hand pressing a toilet float cup downward and the water inflow stopping",
+    "motion": "the incoming water stops when the float is pushed down"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se ajusta con un tornillo o con una pinza en la varilla, para que el agua pare unos dos centímetros debajo del rebose.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an adjustment screw on the top of a fill valve being turned with a screwdriver"
+   },
+   {
+    "k": "W",
+    "v": "adjust toilet float water level"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Abres la llave de paso despacio, miras cómo sube el agua, y verificas que pare en la marca. Si lo hace, perfecto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio turning the water supply back on slowly and watching the level in the tank rise to the mark"
+   },
+   {
+    "k": "A",
+    "v": "water rising in a toilet tank to a mark and the fill valve closing with a click",
+    "motion": "the water rises and stops right at the mark"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el agua sigue entrando aunque subas el flotador, la válvula está dañada: la goma interior se endureció. Se cambia entera, y es fácil.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "toilet fill valve broken replace"
+   },
+   {
+    "k": "G",
+    "v": "a worn fill valve with a cracked diaphragm and mineral deposits next to a new one"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el tanque vacío, se desenrosca la tuerca de abajo, y se saca la válvula vieja. El tanque queda libre.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio unscrewing the nut under the tank to remove the old valve, a bucket and a sponge beside him"
+   },
+   {
+    "k": "A",
+    "v": "a hand unscrewing the large plastic nut under a toilet tank to remove the fill valve",
+    "motion": "the nut turns and the valve comes out of the tank"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se coloca la nueva, a la altura indicada en el envase, se aprieta la tuerca con la mano, y se conecta la manguera de entrada.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a new fill valve being inserted through the bottom hole of the tank and adjusted to the right height"
+   },
+   {
+    "k": "W",
+    "v": "installing toilet fill valve"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el tubito chico del llenado va sujeto al rebose, sin meterse adentro. Así la taza se rellena después de cada descarga.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio connecting the supply hose and clipping the refill tube onto the overflow tube, careful"
+   },
+   {
+    "k": "G",
+    "v": "a small refill tube clipped onto the top of the overflow tube inside the tank"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un error común: apretar de más la tuerca de plástico. Con la mano y un cuarto de vuelta basta. Si no, se raja o gotea.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "fill valve installation common mistake leak"
+   },
+   {
+    "k": "G",
+    "v": "a drip at the connection under the tank where a nut was overtightened"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Razón tres: el nivel de agua demasiado alto. Si el agua llega al borde del tubo de rebose, se escurre por ahí hacia la taza, sin parar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "overflow tube toilet water level too high"
+   },
+   {
+    "k": "G",
+    "v": "a toilet tank where the water level is above the top of the overflow tube and water trickles down the tube"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Eso es lo que escuchas como un chorrito constante. Y se arregla bajando el flotador, como en la razón dos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the tank and pointing at the tube with a screwdriver"
+   },
+   {
+    "k": "A",
+    "v": "water spilling gently over the top of a vertical overflow tube in a toilet tank",
+    "motion": "a thin sheet of water spills over the rim of the tube"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces el propio tubo de rebose está rajado o desprendido en la base. Si pierde agua por ahí, hay que cambiar toda la válvula de descarga.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a cracked overflow tube with a hairline split at its base inside the tank"
+   },
+   {
+    "k": "W",
+    "v": "cracked overflow tube toilet"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay kits completos que traen sapito, tubo y cadena. Son más caros, pero resuelven fugas viejas, y duran muchos años.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining that the flush valve kit includes both the flapper and the overflow tube, holding a kit"
+   },
+   {
+    "k": "G",
+    "v": "a complete toilet flush valve kit with a tube, flapper and chain in a package"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces el agua se escapa por otros lados: las juntas entre el tanque y la taza, o los tornillos del tanque. Mira si hay gotas abajo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "toilet tank bolt leak gasket"
+   },
+   {
+    "k": "G",
+    "v": "water dripping from the tank bolts at the back of a toilet onto the floor"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un papel seco pasado por las uniones te muestra dónde hay humedad. Las gomas de los tornillos se cambian en minutos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio running a dry paper towel around the base of the tank to find a leak"
+   },
+   {
+    "k": "G",
+    "v": "a paper towel with a wet spot at the tank bolt location"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la manija: si queda pegada, mantiene la cadena tensa, y el sapito no cierra. Se limpia o se ajusta el vástago.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "handle lever stuck toilet running"
+   },
+   {
+    "k": "G",
+    "v": "a toilet flush handle that sticks slightly down and keeps the chain tight"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Debe volver libremente a su posición. Si no, la tuerca de atrás está muy apretada o hay sarro, y se ajusta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio moving the handle gently and showing that it returns freely, nodding"
+   },
+   {
+    "k": "A",
+    "v": "a toilet handle being pressed and returning to its resting position smoothly",
+    "motion": "the handle returns to rest with a soft click"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El arreglo definitivo: si el inodoro tiene más de diez años, cambia el sapito y la válvula de llenado juntos. Las dos piezas se desgastan a la vez.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laying out a list of parts to replace together on a whiteboard"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard list with flapper, fill valve and gaskets marked as replace together"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un kit universal cuesta poco, y se coloca en menos de una hora. Con eso, vuelves a tener un inodoro silencioso por muchos años.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "toilet repair kit universal cheap"
+   },
+   {
+    "k": "G",
+    "v": "a universal toilet repair kit in its package with a price tag low"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba final: tiras la cadena, miras cómo llena el tanque, y escuchas. Si llega al nivel, para, y hay silencio, listo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio doing a final check, flushing and watching the water level, listening for any sound"
+   },
+   {
+    "k": "A",
+    "v": "a toilet being flushed and the tank refilling quietly then stopping",
+    "motion": "the water refills quietly and stops with no further sound"
+   },
+   {
+    "k": "W",
+    "v": "Claudio doing a final check flushing and watching"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si quieres confirmar, mira el medidor de agua: sin usar nada en casa, el indicador no debe moverse.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water meter test after fix"
+   },
+   {
+    "k": "G",
+    "v": "a water meter with all taps closed and its indicator not moving"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un inodoro con una fuga chica puede gastar unos cientos de litros por día. Con una fuga grande, más de mil. Y lo pagas tú, o el planeta.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water savings toilet leak liters per day"
+   },
+   {
+    "k": "G",
+    "v": "a chart on a whiteboard comparing small and large toilet leaks in litres per day"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No te prometo una cifra exacta, porque depende de la fuga. Pero una pieza de pocos pesos suele pagarse en un mes de factura.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with a half smile, holding the replaced parts in his hand"
+   },
+   {
+    "k": "W",
+    "v": "saving water money"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Llama a un profesional si el tanque está rajado, si hay agua en la base del inodoro, si se mueve, o si hay olor a cloaca. Esas son otras fallas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting signs that need a professional on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a list of signs: cracked tank, leaking base, loose bowl, sewer smell"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y no te preocupes si te trabas: una visita de un plomero por un inodoro cuesta lo que cuesta, y lo que importa es que se arregle bien.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "honest plumber advice professional"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera, sincere"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las tres causas: el sapito, la válvula de llenado, y el nivel del agua. Con la prueba del colorante, sabes cuál es antes de comprar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the three causes on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three causes: flapper, fill valve and water level"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con eso, el baño vuelve al silencio, la factura baja, y aprendes un arreglo que sirve toda la vida.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "quiet bathroom peaceful no running water"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling in a quiet bathroom beside a silent toilet"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quédate en el canal. Y cuéntame cuál de las tres era la causa en tu casa. Me interesa saber si lo pudiste arreglar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly plumber advice"
+   }
+  ]
+ }
+]

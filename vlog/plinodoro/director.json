@@ -1,0 +1,767 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "AGUA QUE NO PARA = PLATA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "plata",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "CIENTOS DE LITROS POR DÍA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cientos",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b003",
+   "props": {
+    "text": "LO NOTÁS EN LA FACTURA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "factura",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b004",
+   "props": {
+    "text": "1 · SAPITO  2 · VÁLVULA  3 · NIVEL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 50
+   },
+   "word": "Uno",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "MEDIA HORA · REPUESTO BARATO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "media",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b006",
+   "props": {
+    "text": "LA PRUEBA ANTES DE COMPRAR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "prueba",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b007",
+   "props": {
+    "text": "AL TIRAR LA CADENA…",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "cadena",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b009",
+   "props": {
+    "text": "EL AGUA PARA 2 cm BAJO EL REBOSE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "centímetros",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b011",
+   "props": {
+    "pos": "top",
+    "size": 74,
+    "words": [
+     {
+      "t": "PRUEBA DEL COLORANTE",
+      "beat": "b011",
+      "word": "colorante",
+      "hl": "yellow"
+     },
+     {
+      "t": "20 MINUTOS · SIN TIRAR LA CADENA",
+      "beat": "b011",
+      "word": "20"
+     }
+    ]
+   },
+   "word": "colorante",
+   "until": "b012",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b012",
+   "props": {
+    "text": "COLOR EN LA TAZA = EL SAPITO PIERDE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 52
+   },
+   "word": "taza",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b014",
+   "props": {
+    "text": "SILBIDO = VÁLVULA · GOTEO = SAPITO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "silbido",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b015",
+   "props": {
+    "step": 1,
+    "total": 3,
+    "title": "EL SAPITO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b016",
+   "props": {
+    "text": "CERRÁ LA LLAVE DE PASO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "llave",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b017",
+   "props": {
+    "text": "LIMPIÁ EL ASIENTO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "asiento",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b020",
+   "props": {
+    "text": "CADENA CON 1 – 2 cm DE HOLGURA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "holgura",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b021",
+   "props": {
+    "text": "2 O 3 PULGADAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "pulgadas",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b022",
+   "props": {
+    "text": "SIN PASTILLAS DE CLORO EN EL TANQUE",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "cloro",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b023",
+   "props": {
+    "step": 2,
+    "total": 3,
+    "title": "LA VÁLVULA DE LLENADO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b024",
+   "props": {
+    "text": "SUBÍ EL FLOTADOR CON LA MANO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "flotador",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b025",
+   "props": {
+    "text": "TORNILLO EN LA VARILLA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "tornillo",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b027",
+   "props": {
+    "text": "SIGUE ENTRANDO = VÁLVULA DAÑADA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "entrando",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b030",
+   "props": {
+    "text": "TUBITO AL REBOSE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "tubito",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b031",
+   "props": {
+    "text": "NO APRIETES DE MÁS",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "apretar",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b032",
+   "props": {
+    "step": 3,
+    "total": 3,
+    "title": "EL NIVEL DE AGUA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b034",
+   "props": {
+    "text": "REBOSE RAJADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "rajado",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b035",
+   "props": {
+    "text": "KIT COMPLETO: SAPITO + TUBO + CADENA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 50
+   },
+   "word": "kits",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b037",
+   "props": {
+    "text": "PAPEL SECO EN LAS UNIONES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "papel",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b038",
+   "props": {
+    "text": "LA MANIJA PEGADA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "manija",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b040",
+   "props": {
+    "pos": "top",
+    "size": 74,
+    "words": [
+     {
+      "t": "MÁS DE 10 AÑOS:",
+      "beat": "b040",
+      "word": "diez",
+      "hl": "yellow"
+     },
+     {
+      "t": "CAMBIÁ SAPITO Y VÁLVULA JUNTOS",
+      "beat": "b040",
+      "word": "juntos"
+     }
+    ]
+   },
+   "word": "definitivo",
+   "until": "b040",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b041",
+   "props": {
+    "text": "KIT UNIVERSAL: < 1 HORA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "hora",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b043",
+   "props": {
+    "text": "EL MEDIDOR NO DEBE MOVERSE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "medidor",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b044",
+   "props": {
+    "text": "FUGA CHICA: CIENTOS · GRANDE: MÁS DE 1000 L",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 48
+   },
+   "word": "cientos",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b045",
+   "props": {
+    "text": "UNA PIEZA SE PAGA EN 1 MES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "mes",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b046",
+   "props": {
+    "text": "TANQUE RAJADO · AGUA EN LA BASE · OLOR A CLOACA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "profesional",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b048",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "SAPITO",
+      "beat": "b048",
+      "word": "sapito",
+      "hl": "yellow"
+     },
+     {
+      "t": "VÁLVULA DE LLENADO",
+      "beat": "b048",
+      "word": "válvula"
+     },
+     {
+      "t": "NIVEL DEL AGUA",
+      "beat": "b048",
+      "word": "nivel",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "causas",
+   "until": "b048",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}
