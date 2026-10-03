@@ -1,0 +1,1 @@
+export const TOTAL_FRAMES_EARLWONT = 300; export const AV_READY = false; export const AUDIO = "earlwont.m4a"; export const MUSIC = "sfx/earlwont_bed.m4a"; export const TL: any[] = []; export const OV: any[] = []; export const SFX: any[] = []; export const FOLEY: any[] = [];
