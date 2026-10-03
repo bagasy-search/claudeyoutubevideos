@@ -1,0 +1,560 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b001.wav",
+  "start": 0.0,
+  "len": 8.19,
+  "text": "No toda lavadora barata es mala. Y no toda lavadora cara es buena. Te cuento cuáles baratas sí recomiendo, y por qué."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b002.wav",
+  "start": 8.19,
+  "len": 7.37,
+  "text": "Soy Claudio, técnico. En mis años de reparaciones, algunas lavadoras económicas me sorprendieron por lo que duran."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b003.wav",
+  "start": 15.56,
+  "len": 9.51,
+  "text": "Si tu presupuesto es ajustado, no estás condenado a comprar mal. Con criterio, una lavadora sencilla te da años sin dolores de cabeza."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b004.wav",
+  "start": 25.07,
+  "len": 10.02,
+  "text": "Cuatro cosas busco en una lavadora barata: diseño simple, motor robusto, repuestos fáciles y una capacidad honesta. Te explico cada una."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b005.wav",
+  "start": 35.09,
+  "len": 7.31,
+  "text": "Y un mito para empezar: que una barata siempre sale cara por reparaciones. No es cierto, si la elijes bien."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b006.wav",
+  "start": 42.4,
+  "len": 7.13,
+  "text": "No te voy a dar marcas. Las marcas y los modelos cambian cada año. Te voy a dar el criterio, que no cambia nunca."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b007.wav",
+  "start": 49.53,
+  "len": 9.0,
+  "text": "El primer tipo que recomiendo: la carga superior sencilla, con agitador y temporizador mecánico. Parecen de otra época, y por eso duran."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b008.wav",
+  "start": 58.53,
+  "len": 7.98,
+  "text": "El temporizador mecánico es un reloj que avanza por programas. Casi no falla, y si falla, cuesta muy poco cambiarlo."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b009.wav",
+  "start": 66.51,
+  "len": 7.5,
+  "text": "Tiene un motor con correa, que es una pieza barata y fácil de cambiar. Y no tiene placas electrónicas complicadas que se quemen."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b010.wav",
+  "start": 74.01,
+  "len": 7.79,
+  "text": "La bomba y las mangueras están a la vista. Cualquier técnico de barrio puede repararla, sin herramientas especiales."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b011.wav",
+  "start": 81.8,
+  "len": 9.54,
+  "text": "Su punto débil: gasta más agua que una de carga frontal, y lava con más movimiento, por lo que desgasta un poco más la ropa. Es el precio de la simplicidad."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b012.wav",
+  "start": 91.34,
+  "len": 9.47,
+  "text": "El segundo tipo: la lavadora de doble tina, o semiautomática. Una tina lava, y la otra centrifuga. La pasas de una a otra con la mano."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b013.wav",
+  "start": 100.81,
+  "len": 8.7,
+  "text": "Requiere un poco más de trabajo, pero es casi indestructible: dos motores simples, sin electrónica, y piezas baratas en cualquier tienda."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b014.wav",
+  "start": 109.51,
+  "len": 9.91,
+  "text": "Gasta poca electricidad y poca agua, y se puede usar donde la presión del agua es baja. Ideal para espacios chicos o zonas con red irregular."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b015.wav",
+  "start": 119.42,
+  "len": 8.62,
+  "text": "Un cuidado: la tina de centrifugado tiene un freno de seguridad. Nunca la abras mientras gira, y comprueba que el freno funcione."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b016.wav",
+  "start": 128.04,
+  "len": 7.6,
+  "text": "El tercer tipo: una carga frontal básica, sin vapor ni extras. Lava con menos agua, y trata mejor la ropa."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b017.wav",
+  "start": 135.64,
+  "len": 8.59,
+  "text": "Que tenga pocos botones y una perilla. Si la electrónica es simple, el riesgo es bajo, y la parte mecánica es la misma de las caras."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b018.wav",
+  "start": 144.23,
+  "len": 7.42,
+  "text": "Fíjate que el tambor sea de acero inoxidable y que tenga buena goma de puerta. Esos dos detalles marcan la vida útil."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b019.wav",
+  "start": 151.65,
+  "len": 9.25,
+  "text": "Una carga frontal básica cuesta más que una superior sencilla, pero ahorra agua y energía. Si el presupuesto da, es una gran compra."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b020.wav",
+  "start": 160.9,
+  "len": 7.91,
+  "text": "Dónde se puede ahorrar: en funciones, en pantalla, en programas, en estética. Todo eso no hace que la ropa quede más limpia."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b021.wav",
+  "start": 168.81,
+  "len": 7.89,
+  "text": "Dónde no se debe ahorrar: en el tambor, en los rodamientos, en la bomba y en los repuestos. Eso es lo que decide cuánto dura."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b022.wav",
+  "start": 176.7,
+  "len": 8.11,
+  "text": "Y desconfía de lo demasiado barato: suelen ser equipos sin servicio, sin repuestos, y a veces sin garantía real."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b023.wav",
+  "start": 184.81,
+  "len": 8.74,
+  "text": "Antes de comprar, comprueba que haya servicio técnico cerca, y que los repuestos se consigan. Esa es la clave de una barata que dura."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b024.wav",
+  "start": 193.55,
+  "len": 10.02,
+  "text": "Qué evitar en una barata: tinas de plástico muy finas, tapas con bisagras débiles, motores muy chicos para la capacidad, y modelos importados sin servicio."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b025.wav",
+  "start": 203.57,
+  "len": 8.42,
+  "text": "Una pieza de plástico fino se raja con el uso, y a veces no se consigue de repuesto. Mejor materiales más gruesos y simples."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b026.wav",
+  "start": 211.99,
+  "len": 7.59,
+  "text": "Fíjate en la potencia del motor y la capacidad. Un motor chico para un tambor grande se sobrecalienta, y dura poco."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b027.wav",
+  "start": 219.58,
+  "len": 8.61,
+  "text": "Una barata bien cuidada dura más que una cara descuidada. Nivélala, no la sobrecargues, limpia el filtro, y usa poco detergente."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b028.wav",
+  "start": 228.19,
+  "len": 7.73,
+  "text": "Una lavadora firme y nivelada vibra poco. Y una que vibra poco, se desgasta mucho menos y consume menos."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b029.wav",
+  "start": 235.92,
+  "len": 7.1,
+  "text": "Y deja la tapa abierta después de lavar. Un tambor seco no huele ni se pudre. Es gratis y funciona."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b030.wav",
+  "start": 243.02,
+  "len": 7.38,
+  "text": "Una opción para el bolsillo ajustado: una lavadora de segunda mano. Pero ahí la revisión es todo, y te enseño a hacerla."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b031.wav",
+  "start": 250.4,
+  "len": 9.14,
+  "text": "Pide verla funcionar con un lavado completo. Revisa el tambor, la goma, el filtro, y escucha el centrifugado sin carga y con carga."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b032.wav",
+  "start": 259.54,
+  "len": 8.42,
+  "text": "Con la máquina apagada, mueve el tambor: si tiene juego o suena a golpes, los rodamientos están gastados. Es un descarte inmediato."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b033.wav",
+  "start": 267.96,
+  "len": 8.82,
+  "text": "Mira abajo: óxido, restos de agua y manchas dicen si hubo pérdidas. Y huele el interior: el moho fuerte es mala señal."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b034.wav",
+  "start": 276.78,
+  "len": 7.52,
+  "text": "Con esas cinco revisiones, una de segunda mano bien elegida puede ser una gran compra. Y negocias el precio con argumentos."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b035.wav",
+  "start": 284.3,
+  "len": 10.37,
+  "text": "Para que tengas una idea: las reparaciones baratas son correa, goma y bomba. Las medias, amortiguadores. Las caras, placa y rodamientos."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b036.wav",
+  "start": 294.67,
+  "len": 7.47,
+  "text": "Una lavadora sencilla tiene casi todas sus fallas en el rango barato. Por eso un diseño simple protege tu bolsillo."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b037.wav",
+  "start": 302.14,
+  "len": 7.04,
+  "text": "Y siempre pide el presupuesto escrito, con los repuestos desglosados. No pagues sin saber qué cambiaron."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b038.wav",
+  "start": 309.18,
+  "len": 8.41,
+  "text": "El primer uso importa: saca los tornillos de transporte, nivela, conecta las mangueras sin torcerlas, y haz un lavado en vacío."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b039.wav",
+  "start": 317.59,
+  "len": 8.45,
+  "text": "Un lavado en vacío con poco detergente limpia residuos de fábrica, y te permite comprobar que no pierde agua ni hace ruidos raros."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b040.wav",
+  "start": 326.04,
+  "len": 7.42,
+  "text": "Y respeta la capacidad: una barata sobrecargada dura la mitad. Es el error que más veo, y el más fácil de evitar."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b041.wav",
+  "start": 333.46,
+  "len": 9.35,
+  "text": "Algunas preguntas. ¿Sirve una lavadora chica para una familia? Si lava con cuidado, sí, pero con más ciclos, y más desgaste a largo plazo."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b042.wav",
+  "start": 342.81,
+  "len": 8.69,
+  "text": "Las compactas sirven para una persona o una pareja, y para departamentos chicos, pero no esperes que resistan una familia grande."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b043.wav",
+  "start": 351.5,
+  "len": 8.46,
+  "text": "¿Y el agua fría o caliente? La mayoría de la ropa se lava bien en frío o tibio, y gastas mucho menos energía."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b044.wav",
+  "start": 359.96,
+  "len": 7.25,
+  "text": "Y separar la ropa por colores y por peso, también ayuda: la lavadora trabaja mejor y la ropa dura más."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b045.wav",
+  "start": 367.21,
+  "len": 10.68,
+  "text": "Te cuento dos casos reales. Una señora tenía una lavadora sencilla, de doble tina, con veintidós años. Funcionaba, con una correa nueva cada tanto."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b046.wav",
+  "start": 377.89,
+  "len": 9.09,
+  "text": "Nunca la cambió, porque cada reparación costaba muy poco. En esos veintidós años gastó menos que lo que cuesta una lavadora automática nueva."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b047.wav",
+  "start": 386.98,
+  "len": 11.06,
+  "text": "El otro caso: un cliente con una lavadora cara, con pantalla táctil y wifi. A los cuatro años, se rompió la placa, y el repuesto costaba casi lo de una nueva."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b048.wav",
+  "start": 398.04,
+  "len": 8.9,
+  "text": "No es que las caras sean malas. Es que cada función extra es una pieza más que puede fallar, y la barata, con menos piezas, falla menos."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b049.wav",
+  "start": 406.94,
+  "len": 10.22,
+  "text": "Si tuviera poco presupuesto, mi orden sería: primero, una carga superior sencilla; segundo, una de doble tina; tercero, una frontal básica."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b050.wav",
+  "start": 417.16,
+  "len": 7.58,
+  "text": "Y siempre con repuestos a la vista, y un servicio técnico cerca. Es lo que decide si una compra barata sale bien."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b051.wav",
+  "start": 424.74,
+  "len": 9.23,
+  "text": "Y si el dinero alcanza para una frontal básica con motor de transmisión directa, aún mejor. Pero sin sumar funciones que no necesitas."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b052.wav",
+  "start": 433.97,
+  "len": 7.74,
+  "text": "Preguntas para el vendedor: ¿dónde está el servicio técnico?, ¿hay repuestos?, ¿cuánto dura la garantía?, ¿qué cubre?, ¿y el motor?"
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b053.wav",
+  "start": 441.71,
+  "len": 8.16,
+  "text": "Un buen vendedor responde sin vueltas. Y si no sabe, que busque la información. Si te evade, es mejor irse a otra tienda."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b054.wav",
+  "start": 449.87,
+  "len": 6.92,
+  "text": "Y anota las respuestas. Comparar con papel y lápiz evita que decidas por la última frase que escuchaste."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b055.wav",
+  "start": 456.79,
+  "len": 10.22,
+  "text": "En una lavadora sencilla, el detergente en polvo suele ir bien, y el líquido también. Lo importante es la dosis: la que indica el envase, no más."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b056.wav",
+  "start": 467.01,
+  "len": 10.29,
+  "text": "Para poca ropa o poco sucia, media dosis alcanza. El exceso de jabón deja residuos, y obliga a la bomba y a los sensores a trabajar de más."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b057.wav",
+  "start": 477.3,
+  "len": 8.73,
+  "text": "Si tu agua es dura, un poco de ablandador mejora el lavado, y protege las resistencias. Es un gasto chico que alarga la vida de todo."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b058.wav",
+  "start": 486.03,
+  "len": 9.31,
+  "text": "Guarda la factura y la garantía en un lugar seguro. Muchas reparaciones se cubren si tienes el comprobante, y se pierden si no lo tienes."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b059.wav",
+  "start": 495.34,
+  "len": 9.49,
+  "text": "Un sobre con el nombre del electrodoméstico, y adentro, factura, garantía y manual. Parece poco, y a veces ahorra mucho dinero."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b060.wav",
+  "start": 504.83,
+  "len": 9.18,
+  "text": "Las tres: carga superior sencilla, doble tina y carga frontal básica. Cada una para un perfil, y todas con repuestos fáciles."
+ },
+ {
+  "beat": "b061",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b061.wav",
+  "start": 514.01,
+  "len": 8.45,
+  "text": "Con criterio, una barata es una gran compra. Y con cuidado, te acompaña muchos años, sin sustos ni facturas grandes."
+ },
+ {
+  "beat": "b062",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/tcbaratas/out/tcbaratas/tramos/b062.wav",
+  "start": 522.46,
+  "len": 9.205,
+  "text": "Si te sirvió, quédate en el canal. En el próximo, el refrigerador que todos compran y el que yo compraría en su lugar. Y cuéntame cuál tienes tú."
+ }
+]
