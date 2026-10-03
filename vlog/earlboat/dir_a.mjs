@@ -1,0 +1,56 @@
+// DIRECTOR A — minuto 1 (3:30 pm, soltamos amarras) + Earl + el barco y la tripulación + la salida + la red de prueba (p0-12)
+import { S, BI, HZP, SHED, HARBOR, DECK, STORE, KITCHEN } from "./dir_lib.mjs";
+export const SHOTS = [
+  // ── MINUTO 1
+  S(0, "", "vl", "m1"),
+  S(0, "And I wouldn't see this dock again", "st", "st_harbor.1"),
+  S(0, "Thirty-one years, five, six nights", "c", "ElNightClock", { props: { from: "3:30 pm", to: "7:00 am", label: "31 years · 5–6 nights a week" } }),
+  S(1, "", "bi", "b_storeshrimp", { p: BI(`In ${STORE}: a shopper's hand taking a bag of frozen shrimp from the freezer and dropping it in a cart without a second look.`), anim: "the hand drops the bag in the cart and the freezer door swings shut" }),
+  S(1, "So tonight I'm going to take you out", "st", "st_shrimpboat.1"),
+  S(1, "from the minute we leave the harbor", "bi", "b_leaveharbor", { p: BI(`${HARBOR} at 3:30 in the afternoon: a white and blue shrimp trawler with its outriggers raised pulling away from the dock into the channel, a crewman coiling a rope on the stern, pelicans on the pilings.`), anim: "the trawler pulls slowly away from the dock into the channel" }),
+  S(1, "to the minute I get paid", "st", "st_money.1"),
+  S(1, "Every bit of it, told straight", "av", "av"),
+  S(2, "", "hz", "h_netbag", { p: HZP("At sunrise on the back deck of a shrimp trawler, he holds up a heavy green mesh net bag stuffed with shrimp, blue crabs and fish high in one fist toward the camera, laughing with his mouth wide open, gulls flying behind, the sun low over the water.", DECK.replace("at night", "at sunrise")) }),
+  S(2, "And at the end, I'll do the math", "st", "st_shrimp.1"),
+  S(2, "so you know exactly how much", "vl", "m2"),
+  // ── EARL
+  S(3, "", "av", "av", { ov: { c: "ElNameTag", props: { name: "Earl", line: "captain of the Lady Beth · 31 years" } } }),
+  S(3, "Today I sell what the boats bring in", "st", "st_catch.1"),
+  S(3, "But tonight, we're going out", "vl", "m3"),
+  S(4, "", "bi", "b_oldphoto", { p: BI("An old faded 1960s color snapshot held in a weathered dark hand: a young Black boy about twelve in rubber boots standing on the deck of a shrimp boat next to his father, both squinting in the sun, a net behind them; behind the photo a wooden table in a seafood shed."), anim: "the hand tilts the old photo toward the light" }),
+  S(4, "picking shrimp in the summertime", "bi", "b_boypick", { p: BI(`${DECK.replace("at night", "on a hot summer afternoon in the 1960s")}: a boy of about twelve in a t-shirt and white rubber boots kneeling at a sorting table picking shrimp out of the catch beside a grown man.`), anim: "the boy picks shrimp out of the pile and tosses them into a basket" }),
+  S(4, "By the time I had my own boat", "av", "av"),
+  S(4, "He worked the boats out of Pascagoula", "st", "st_harbor.4"),
+  // ── EL BARCO
+  S(5, "", "st", "st_harbor.6"),
+  S(5, "Those big arms sticking up on each side", "bi", "b_outriggers", { p: BI(`${HARBOR}: close view from the dock of a shrimp trawler's tall outrigger booms raised up on both sides with green nets and chains hanging, rust streaks, a pelican on top of the mast.`), anim: "the hanging nets sway slightly in the wind" }),
+  S(5, "When we're working, they swing out wide", "st", "st_trawler.1"),
+  S(5, "Wood hull when I started", "st", "st_rope.1"),
+  S(6, "", "av", "av"),
+  S(6, "On the coast we call them strikers", "bi", "b_strikers", { p: BI(`${DECK.replace("at night", "in late afternoon light")}: two deckhands in white rubber boots and orange bib overalls, one young and one older, laughing while untangling a net on the deck.`), anim: "the two men pull the net straight between them" }),
+  S(6, "I had one man work with me", "av", "av"),
+  S(7, "", "bi", "b_iceblow", { p: BI(`${HARBOR}: a thick hose from a white ice house on the dock blowing crushed ice down into the open hold of a shrimp trawler, white ice spraying, a crewman guiding the hose.`), anim: "crushed ice blows out of the hose down into the hold" }),
+  S(7, "We fill the fuel tanks", "st", "st_fuel.1"),
+  S(7, "Coffee, mostly", "st", "st_coffee.1"),
+  // ── BENDICIÓN DE LA FLOTA
+  S(8, "", "bi", "b_blessing", { p: BI("A sunny spring morning on the Mississippi Gulf Coast: a parade of freshly painted shrimp boats decorated with colorful flags and streamers passing a crowded pier, people waving, a priest in white vestments standing on a platform at the end of the pier."), anim: "the decorated boats glide past the pier as people wave" }),
+  S(8, "My wife used to make me wear a clean shirt", "av", "av"),
+  S(8, "Then opening day comes", "st", "st_harbor.2"),
+  S(8, "and they parade past", "st", "st_harbor.5"),
+  // ── LA SALIDA
+  S(9, "", "c", "ElNightClock", { props: { from: "3:30 pm", to: "5:30 pm", label: "running out past the islands" } }),
+  S(9, "out into the Mississippi Sound", "st", "st_waves.1"),
+  S(9, "that run can take an hour", "av", "av"),
+  S(10, "", "av", "av"),
+  S(10, "Shrimp move", "st", "st_shrimp.2"),
+  S(10, "What was good last Tuesday", "hz", "h_wheelhouse", { p: HZP("He stands at the wooden wheel inside the small cluttered wheelhouse of a shrimp trawler at dusk, one hand on the wheel, looking out the window at the water, a radio handset and a depth sounder screen glowing beside him.", "the wheelhouse of his shrimp trawler") }),
+  // ── LA RED DE PRUEBA
+  S(11, "", "av", "av"),
+  S(11, "A try net", "bi", "b_trynet", { p: BI(`${DECK.replace("at night", "at dusk")}: a deckhand hauling a small try net up over the stern by hand, a few shrimp and small fish wriggling in its little bag.`), anim: "the deckhand lifts the dripping little net over the rail" }),
+  S(11, "If there's a handful of shrimp", "bi", "b_handful", { p: BI("Close view of a deckhand's wet gloved hands holding a handful of fresh grey Gulf shrimp from a try net, the boat's deck lights just coming on, dark water behind."), anim: "the shrimp flick in the gloved hands" }),
+  S(11, "If it's empty, you keep moving", "av", "av"),
+  S(12, "", "bi", "b_netsdown", { p: BI(`${DECK.replace("at night", "at dusk")}: the outrigger booms swung out wide on both sides and the big nets sliding down off the stern into the dark water, cables running out.`), anim: "the cables run out as the nets sink into the water" }),
+  S(12, "about walking speed", "st", "st_trawler.2"),
+  S(12, "A tow usually runs two, three, four hours", "c", "ElNightClock", { props: { from: "6:00 pm", to: "9:30 pm", label: "first tow" } }),
+  S(12, "They sink to the bottom", "st", "st_nets.2"),
+];

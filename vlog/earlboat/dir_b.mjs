@@ -1,0 +1,61 @@
+// DIRECTOR B — el excluidor de tortugas, el arrastre, levantar la red, lo que sale, seleccionar, la noche del tiburón,
+// las malas noches, el huracán, la veda, cocinar (p13-25)
+import { S, BI, HZP, SHED, HARBOR, DECK, STORE, KITCHEN } from "./dir_lib.mjs";
+export const SHOTS = [
+  S(13, "", "av", "av"),
+  S(13, "The first one is a turtle excluder", "c", "ElTED3D", { props: { title: "the turtle excluder", label: "the turtle slides out · the shrimp go on", enterAt: 20 } }),
+  S(13, "The law requires it", "st", "st_turtle.1"),
+  S(13, "but it works", "av", "av"),
+  S(14, "", "st", "st_nets.1"),
+  S(14, "Those two things are a big reason", "av", "av"),
+  S(14, "Fewer fish we didn't want", "st", "st_catch.4"),
+  S(15, "", "hz", "h_radio", { p: HZP("At night in the dim wheelhouse of his trawler, he talks into a radio handset with a cup of coffee in the other hand, the green glow of a depth sounder and radar screen lighting his face.", "the wheelhouse of his shrimp trawler at night") }),
+  S(15, "watching the other boats on the radio", "st", "st_radar.1"),
+  S(15, "And the strikers grab a little sleep", "bi", "b_bunks", { p: BI("A cramped bunk room below deck on a shrimp trawler at night: two narrow bunks with a deckhand asleep in rubber boots on top of the blanket, a dim red light, oilskins hanging on a hook."), anim: "the bunk room rocks gently with the boat" }),
+  // ── LEVANTAR LA RED
+  S(16, "", "bi", "b_winch", { p: BI(`${DECK}: a big steel winch drum turning and winding wet cable, the heavy net bags rising out of the black water at the stern under the bright work lights, spray flying.`), anim: "the winch turns and the dripping net bag rises out of the water" }),
+  S(16, "you pull the knot at the bottom", "bi", "b_dumpcatch", { p: BI(`${DECK}: a deckhand pulling the knot at the bottom of a hanging net bag and the whole catch pouring out onto the wet deck, shrimp, crabs and fish spilling around his white rubber boots.`), anim: "the catch pours out of the net bag onto the deck" }),
+  S(16, "Shrimp, crabs, fish, everything", "st", "st_catch.2"),
+  // ── LO QUE SALE EN LA RED
+  S(17, "", "av", "av"),
+  S(17, "Croakers", "bi", "b_croaker", { p: BI("Close view of a deckhand's gloved hand holding up a small silvery Atlantic croaker fish under the work lights of a shrimp boat at night, other fish and shrimp on the deck below."), anim: "the croaker flaps in the gloved hand" }),
+  S(17, "Blue crabs", "st", "st_crab.1"),
+  S(17, "Flounder flat on the deck", "bi", "b_flounder", { p: BI(`${DECK}: a flat brown flounder lying on the wet deck among shrimp and small crabs under the work lights, a rubber boot at the edge of the frame.`), anim: "the flounder flips once on the wet deck" }),
+  S(17, "Small sharks", "st", "st_shark.1"),
+  S(17, "Jellyfish", "st", "st_jellyfish.1"),
+  S(17, "Stingrays", "st", "st_stingray.1"),
+  S(18, "", "bi", "b_overside", { p: BI(`${DECK}: a deckhand shoveling the bycatch of small fish and crabs off the deck back over the side into the dark sea with a wide aluminum shovel, gulls swooping in the lights.`), anim: "the shovel tosses the fish back over the rail" }),
+  S(18, "Pelicans and gulls follow the boat", "st", "st_gulls.1"),
+  S(18, "You'll never see most of that in a store", "av", "av"),
+  // ── SELECCIONAR
+  S(19, "", "bi", "b_sorttable", { p: BI(`${DECK}: three men in rain gear bent over a steel sorting table under the bright lights at two in the morning, quickly picking grey shrimp into baskets, steam of breath in the cold air.`), anim: "the hands sort quickly through the pile on the table" }),
+  S(19, "Then the shrimp get rinsed", "st", "st_ice.1"),
+  S(19, "Or on the newer boats", "bi", "b_hold", { p: BI("Looking down into the open hold of a shrimp trawler at night: shrimp packed in layers of crushed ice in wooden bins, a crewman shoveling more ice on top, a work light hanging above."), anim: "the shovel spreads ice over the shrimp in the hold" }),
+  S(19, "It's wet, it's cold", "st", "st_waves.2"),
+  // ── LA NOCHE DEL TIBURÓN
+  S(20, "", "av", "av"),
+  S(20, "the bag came up so heavy", "bi", "b_heavybag", { p: BI(`${DECK}: an enormous bulging net bag swinging over the deck at two in the morning, dripping, the winch cable taut, two deckhands stepping back from it.`), anim: "the heavy net bag swings over the deck dripping water" }),
+  S(20, "there was a hammerhead shark", "bi", "b_hammerhead", { p: BI(`${DECK}: a long hammerhead shark lying across a pile of shrimp on the wet deck under the work lights, two men in rubber boots stepping back, one holding a rope.`), anim: "the shark thrashes its tail across the shrimp" }),
+  S(20, "We got a rope on his tail", "st", "st_shark.2"),
+  S(20, "Then we sorted the best shrimp", "av", "av"),
+  S(20, "My striker went one way", "av", "av"),
+  // ── MALAS NOCHES
+  S(21, "", "bi", "b_poornight", { p: BI(`${DECK} near dawn: a single plastic basket with only a few shrimp in the bottom on the wet deck, the empty nets hanging, a tired deckhand sitting on an overturned bucket.`), anim: "the boat rocks and the near-empty basket slides" }),
+  S(21, "Nights the fog came in so thick", "st", "st_fog.1"),
+  S(21, "and all you had was the radar", "st", "st_fog.2"),
+  S(22, "", "st", "st_storm.1"),
+  S(22, "I've seen grown men cry in a wheelhouse", "av", "av"),
+  S(22, "there were shrimp boats sitting in the middle of the highway", "c", "ElClipping", { props: { kicker: "BILOXI · 2005", headline: "After the hurricane, shrimp boats sat on the coast highway, miles from the water", sub: "Some crews never fished again.", bed: "st_hurricane.1" } }),
+  S(22, "Some of my friends never fished again", "av", "av"),
+  // ── LA VEDA
+  S(23, "", "st", "st_netmend.1"),
+  S(23, "You scrape and paint the hull", "bi", "b_painthull", { p: BI(`${HARBOR}: a shrimp boat hauled out on blocks in a boatyard, an older man on a ladder scraping and repainting the white hull with a roller, paint cans on the ground.`), anim: "the roller rolls fresh white paint along the hull" }),
+  S(23, "My wife used to say", "av", "av"),
+  // ── TODA LA NOCHE
+  S(24, "", "c", "ElNightClock", { props: { from: "10:00 pm", to: "5:00 am", label: "tow · pull · sort · ice" } }),
+  S(24, "Around five in the morning", "st", "st_sunrise.1"),
+  S(25, "", "av", "av"),
+  S(25, "A pot of red beans", "bi", "b_galley", { p: BI("The tiny galley of a shrimp trawler at three in the morning: a cast iron pan of shrimp sizzling in butter and hot sauce on a small gas stove, a pot of red beans, a coffee pot, the porthole black."), anim: "the shrimp sizzle and the butter bubbles in the pan" }),
+  S(25, "nothing in any restaurant ever tasted", "hz", "h_eatshrimp", { p: HZP("At night in the tiny galley of a shrimp trawler he eats a shrimp straight from a cast iron pan with his fingers, eyes closed, smiling with pleasure, a mug of coffee beside him.", "the galley of his shrimp trawler") }),
+  S(25, "or fried croaker right out of the net", "st", "st_cooking.1"),
+];
