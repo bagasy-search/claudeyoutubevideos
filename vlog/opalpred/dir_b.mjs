@@ -1,0 +1,51 @@
+// DIRECTOR B — mis tres gallinas: la deducción, el visón, el agujero, el alambre, el arreglo, la cuenta (p17-31)
+import { S, BI, HZP, COOP, YARD, BARN, KITCHEN, STORE, HENS } from "./dir_lib.mjs";
+import { SUSPECTS } from "./dir_a.mjs";
+export const SHOTS = [
+  S(17, "", "av", "av"),
+  S(17, "Three dead at once", "c", "OpCaseLog", { props: { title: "Tuesday morning", rows: [{ day: "dead", n: 3, note: "Pearl, June, Biscuit" }, { day: "eaten", n: 0, note: "barely" }, { day: "door", n: 0, note: "still latched" }], every: 40, max: 3, bed: "b_corner" } }),
+  S(17, "is either a dog, or something in the weasel family", "c", "OpSuspects", { props: { cards: SUSPECTS, culprit: 5, every: 2, strikeAt: 20, title: "who did it?" } }),
+  S(18, "", "bi", "b_latched", { p: BI("Close view of a red coop door in early morning with its two-step spring clip latch still fastened and closed, dew on the wood, untouched."), anim: "a drop of dew runs down the latch" }),
+  S(18, "So it wasn't a dog, a fox, or a coyote", "av", "av"),
+  S(19, "", "hz", "h_kneel", { p: HZP("She kneels in the straw of the coop in the early morning with a towel over her knees, gently looking at a still reddish-brown hen wrapped in an old towel, sad and focused, the face of the hen hidden by the towel.", COOP) }),
+  S(19, "And when I picked up June", "c", "OpLens", { props: { bed: "b_neckfeathers", from: { x: 1400, y: 300 }, to: { x: 960, y: 520 }, label: "two tiny punctures", sub: "at the back of the neck", ok: false } }),
+  S(19, "And the three of them piled in a corner", "bi", "b_corner2", { p: BI(`The back corner of ${COOP} with a pile of straw and loose reddish feathers heaped against the wall, an old towel folded over something on the floor, early light, nothing gory.`), anim: "the light from the door slowly brightens in the corner" }),
+  S(20, "", "av", "av"),
+  S(20, "We've got a creek at the bottom of our pasture", "bi", "b_creek", { p: BI("A small muddy creek at the bottom of an Indiana pasture in autumn, tangled roots and fallen leaves along the bank, a few small animal tracks in the mud, a wire fence in the distance."), anim: "the creek water flows slowly past the roots" }),
+  S(20, "and minks live along creeks", "st", "st_mink.1"),
+  S(20, "It can get through a hole about the size of a quarter", "c", "OpWire3D", { props: { title: "a mink needs an inch", coin: "about the size of a quarter" } }),
+  S(20, "They kill everything they can reach", "av", "av"),
+  S(20, "they go for the head and the neck", "av", "av"),
+  // ── EL AGUJERO
+  S(21, "", "hz", "h_search", { p: HZP("She crouches by the low side of the red coop with a flashlight, peering closely at a small vent near the door, one hand on the wall.") }),
+  S(21, "The corner of that wire had come loose", "c", "OpLens", { props: { bed: "b_vent", from: { x: 400, y: 300 }, to: { x: 960, y: 500 }, label: "a gap no bigger than my thumb", sub: "tiny five-toed tracks", ok: false } }),
+  S(21, "I'd walked past that vent a thousand times", "av", "av"),
+  S(21, "Down low by the coop door", "st", "st_coop.5"),
+  // ── EL ALAMBRE
+  S(22, "", "av", "av"),
+  S(22, "But chicken wire keeps chickens in", "st", "st_chickenwire.2"),
+  S(22, "A raccoon can tear it", "bi", "b_tornwire", { p: BI("A section of hexagonal chicken wire on a run torn open and pulled apart at the seam, the cut wire ends curled outward, feathers caught on the sharp ends, mud below."), anim: "the torn wire ends tremble in the wind" }),
+  S(22, "or pull it apart at the seams", "st", "st_chickenwire.3"),
+  S(23, "", "c", "OpSignCard", { props: { bed: "b_hardware", see: "small square openings, welded", means: "hardware cloth", ok: true } }),
+  S(23, "You can't reach through it", "av", "av"),
+  S(23, "It costs more", "av", "av"),
+  // ── EL ARREGLO
+  S(24, "", "hz", "h_fixing", { p: HZP("Wearing work gloves, she screws a square of half inch hardware cloth over the small vent on the side of the coop with a cordless drill, a box of screws with washers on an upturned bucket beside her.") }),
+  S(24, "Screwed down with washers, not stapled", "bi", "b_washers", { p: BI("Extreme close view of galvanized half inch hardware cloth screwed firmly to a red wooden coop wall with screws and wide metal washers every few inches, a cordless drill bit at the edge of the frame."), anim: "the drill drives another screw through a washer" }),
+  S(24, "The windows, the vents up high", "av", "av"),
+  S(25, "", "bi", "b_apron", { p: BI(`Along the bottom of a chicken run fence in ${YARD.split(":")[0]}: a shallow trench dug in the dirt with hardware cloth buried about a foot deep and bent outward like an apron, a spade stuck in the dirt pile.`), anim: "a spade pushes dirt back over the buried wire" }),
+  S(25, "Anything that digs at the fence", "st", "st_digging.1"),
+  S(26, "", "bi", "b_twostep", { p: BI("Close view of a red coop door with a galvanized barrel bolt and a spring snap clip through it, an older woman's fingers clipping it shut at dusk."), anim: "the fingers clip the spring hook through the bolt" }),
+  S(26, "And I made sure the little hen door gets closed", "bi", "b_hendoor", { p: BI(`Dusk at ${YARD.split(":")[0]}: the little sliding hen door of the red coop being pulled shut by a rope, the last hen just walking up the ramp inside, a warm light inside.`), anim: "the little door slides down as the last hen goes in" }),
+  S(26, "A raccoon can work a simple hook", "av", "av"),
+  S(27, "", "bi", "b_trailcam2", { p: BI("An older woman's hands in navy flowered sleeves strapping a small camouflage trail camera to a wooden fence post facing a red chicken coop, dusk."), anim: "the hands pull the strap tight around the post" }),
+  // ── LA CUENTA
+  S(28, "", "c", "OpLedger", { props: { title: "What I fixed", rows: [{ item: "1/2\" hardware cloth, roll", price: "$45" }, { item: "Screws & washers", price: "$8" }, { item: "Trail camera", price: "$40" }], total: "$93", totalLabel: "Total", every: 40, bed: "b_hardware" } }),
+  S(28, "All together", "av", "av"),
+  S(29, "", "av", "av"),
+  S(29, "a hundred dollars of wire is cheaper", "st", "st_hens.2"),
+  S(30, "", "c", "OpWontBuy", { props: { bed: "b_flashlight", n: "1", item: "Flashing predator lights", price: "$25", why: "they figure out it's just a light" } }),
+  S(30, "Maybe they bother a fox", "st", "st_fox.3"),
+  S(30, "A mink doesn't care", "av", "av"),
+  S(31, "", "c", "OpWontBuy", { props: { bed: "b_scent", n: "2", item: "Bottled predator scent", price: "$18", why: "the raccoons didn't read the label" } }),
+];
