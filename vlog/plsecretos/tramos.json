@@ -1,0 +1,767 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b001.wav",
+  "start": 0.0,
+  "len": 7.94,
+  "text": "Un caño roto a las tres de la mañana puede costarte miles. Y casi siempre se evita con algo que cuesta casi nada."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b002.wav",
+  "start": 7.94,
+  "len": 8.83,
+  "text": "Soy Claudio, plomero. En estos años aprendí quince secretos que todo dueño de casa debería conocer. Te los cuento en orden."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b003.wav",
+  "start": 16.77,
+  "len": 7.54,
+  "text": "Cada uno te puede ahorrar una llamada de emergencia, un arreglo caro, o un daño que no se ve hasta que es tarde."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b004.wav",
+  "start": 24.31,
+  "len": 7.61,
+  "text": "Quince en total. Algunos son tan simples que te vas a preguntar por qué nadie te los dijo. Otros, que casi nadie sabe."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b005.wav",
+  "start": 31.92,
+  "len": 5.73,
+  "text": "Y la mayoría se hace con herramientas que cuestan menos que una visita de plomero. Empecemos."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b006.wav",
+  "start": 37.65,
+  "len": 9.58,
+  "text": "Y un aviso: lo que te cuento es para mantenimiento y arreglos chicos. Si hay gas, electricidad o algo grave, llama a un profesional matriculado."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b007.wav",
+  "start": 47.23,
+  "len": 8.18,
+  "text": "Secreto uno: aprende dónde está la llave de paso general. Casi la mitad de la gente no la encuentra cuando hay una fuga."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b008.wav",
+  "start": 55.41,
+  "len": 8.98,
+  "text": "Búscala hoy, antes de la emergencia: suele estar junto al medidor. Pruébala: debe girar sin trabarse. Si está dura, se cambia."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b009.wav",
+  "start": 64.39,
+  "len": 9.62,
+  "text": "Ponle una etiqueta y avísales a todos en casa. En una fuga, cerrar el agua en diez segundos te ahorra el piso, las paredes, y los muebles."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b010.wav",
+  "start": 74.01,
+  "len": 8.65,
+  "text": "Y también las llaves de cada baño y cocina, debajo de los lavabos y detrás del inodoro. Con ellas, arreglas un lugar sin cortar toda la casa."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b011.wav",
+  "start": 82.66,
+  "len": 8.85,
+  "text": "Si la llave de paso es de las viejas, de compuerta, con volante, es mejor cambiarla por una de bola, de un cuarto de vuelta. Son más confiables."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b012.wav",
+  "start": 91.51,
+  "len": 8.39,
+  "text": "Una llave que no cierra el día de la fuga no sirve. Probarla una vez al año, abriendo y cerrando, evita que se agarrote."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b013.wav",
+  "start": 99.9,
+  "len": 7.94,
+  "text": "Cambiar la llave general sí es trabajo de plomero, porque hay que cortar el agua de la calle o del medidor. Pero lo que cuesta es poco."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b014.wav",
+  "start": 107.84,
+  "len": 8.71,
+  "text": "Secreto dos: al viajar, cierra la llave general. Una manguera que revienta mientras no estás puede inundar toda la casa."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b015.wav",
+  "start": 116.55,
+  "len": 7.62,
+  "text": "Es el origen de las inundaciones más caras que veo. Una mangueta de lavadora vieja, y días de agua corriendo sin nadie."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b016.wav",
+  "start": 124.17,
+  "len": 8.42,
+  "text": "Después de cerrar, abre una llave para vaciar la presión. Así las cañerías quedan sin carga, y no hay riesgo de fugas pequeñas."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b017.wav",
+  "start": 132.59,
+  "len": 9.48,
+  "text": "Hay sensores de agua de pocos pesos, que suenan si detectan humedad en el piso. Ponlos debajo del lavabo, junto al calentador y detrás de la lavadora."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b018.wav",
+  "start": 142.07,
+  "len": 6.92,
+  "text": "Son los que más rápido te avisan, y evitan que un goteo chico se vuelva una inundación. Una inversión mínima."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b019.wav",
+  "start": 148.99,
+  "len": 8.69,
+  "text": "Secreto tres: la cinta de teflón, bien usada. En roscas de tuberías que no son con goma, es lo que evita las goteras."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b020.wav",
+  "start": 157.68,
+  "len": 8.49,
+  "text": "Se enrolla en el sentido de las agujas del reloj, mirando la punta del caño, para que al apretar no se desenrolle. De tres a cinco vueltas."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b021.wav",
+  "start": 166.17,
+  "len": 9.75,
+  "text": "Demasiada cinta es un error: la rosca no encaja y se rompe el accesorio. Y muy poca, gotea. Con práctica, sale perfecto."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b022.wav",
+  "start": 175.92,
+  "len": 9.33,
+  "text": "En algunas roscas, sobre todo metálicas, se usa pasta selladora además de la cinta, o en lugar de ella. Es más difícil de equivocar."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b023.wav",
+  "start": 185.25,
+  "len": 8.73,
+  "text": "Y las conexiones con goma o con oliva se sellan solas: ahí la cinta de teflón sobra, y puede hasta impedir que cierren bien."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b024.wav",
+  "start": 193.98,
+  "len": 8.81,
+  "text": "Otro error: apretar de más. Un accesorio de plástico se raja con un tirón. Aprieta a mano, y un cuarto de vuelta con la llave."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b025.wav",
+  "start": 202.79,
+  "len": 9.22,
+  "text": "Secreto cuatro: una canilla que gotea casi siempre se arregla en diez minutos. Un goteo parece poco, pero se lleva litros por día."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b026.wav",
+  "start": 212.01,
+  "len": 8.22,
+  "text": "Se cierra la llave de paso, se desarma la manija, y se llega al vástago. Ahí está el empaque gastado, la goma que sella."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b027.wav",
+  "start": 220.23,
+  "len": 8.8,
+  "text": "Un empaque de pocos pesos cambia todo. En las monocomando, es un cartucho. Llévate el viejo a la ferretería para comprar el idéntico."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b028.wav",
+  "start": 229.03,
+  "len": 7.58,
+  "text": "Y compra un surtido de empaques de varios tamaños. Con una cajita así tienes casi cualquier reemplazo a mano."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b029.wav",
+  "start": 236.61,
+  "len": 9.18,
+  "text": "Si tu grifo tiene una sola manija, probablemente lleva cartucho de cerámica. Se cambia entero, y es tan fácil como el empaque."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b030.wav",
+  "start": 245.79,
+  "len": 8.42,
+  "text": "Después de reparar, abre y cierra la canilla, y mira unos minutos. Si ya no gotea, ahorraste litros y plata cada día."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b031.wav",
+  "start": 254.21,
+  "len": 10.58,
+  "text": "Secreto cinco: el sarro se saca con vinagre. En una canilla, una regadera o un grifo, una bolsa con vinagre atada una hora, y listo."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b032.wav",
+  "start": 264.79,
+  "len": 7.57,
+  "text": "Y el aireador, esa malla en la punta de la canilla: se desenrosca, se limpia, y el chorro vuelve a salir parejo."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b033.wav",
+  "start": 272.36,
+  "len": 8.84,
+  "text": "El mismo truco sirve para la caldera y el hervidor: vinagre caliente, un rato, y se desprende el sarro sin dañar nada."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b034.wav",
+  "start": 281.2,
+  "len": 9.64,
+  "text": "Evita los ácidos fuertes en griferías: queman el cromo, y dejan manchas que no salen. El vinagre blanco, suave y barato, alcanza."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b035.wav",
+  "start": 290.84,
+  "len": 9.71,
+  "text": "Secreto seis: un inodoro que corre agua tira cientos de litros por día. Casi siempre es el sapito, la goma de abajo, que ya no sella."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b036.wav",
+  "start": 300.55,
+  "len": 7.18,
+  "text": "La prueba: unas gotas de colorante en el tanque. Si aparece en la taza sin tirar la cadena, el sapito pierde."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b037.wav",
+  "start": 307.73,
+  "len": 7.24,
+  "text": "Se cambia en cinco minutos, con la llave cerrada y el tanque vacío. Un repuesto barato, y se acabó el goteo."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b038.wav",
+  "start": 314.97,
+  "len": 8.78,
+  "text": "Si el agua sigue corriendo, mira el flotador: puede estar muy alto, y el agua se escapa por el rebosadero. Se baja con un tornillo."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b039.wav",
+  "start": 323.75,
+  "len": 7.11,
+  "text": "El nivel debe quedar unos dos centímetros bajo el tubo de rebose. Con eso se acaba el ruido, y el despilfarro de agua."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b040.wav",
+  "start": 330.86,
+  "len": 9.89,
+  "text": "Y si la válvula de llenado está gastada, se cambia entera: una pieza de plástico, sin soldar, con una tuerca grande. Es un trabajo de quince minutos."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b041.wav",
+  "start": 340.75,
+  "len": 9.21,
+  "text": "Secreto siete: lo que tiras por el desagüe importa. Las toallitas húmedas no se disuelven, aunque diga \"desechables\". Forman tapones."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b042.wav",
+  "start": 349.96,
+  "len": 9.31,
+  "text": "Y el aceite de cocina, nunca por la pileta: se enfría, endurece como cera y tapa todo. Va en un frasco, y a la basura."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b043.wav",
+  "start": 359.27,
+  "len": 6.68,
+  "text": "Una rejilla en la pileta frena lo sólido. Y la basura, a la basura. Las cañerías no son un tacho."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b044.wav",
+  "start": 365.95,
+  "len": 9.64,
+  "text": "La grasa de cocina es el enemigo número uno: enfría dentro del caño, se endurece, y va estrechando el paso hasta que se tapa del todo."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b045.wav",
+  "start": 375.59,
+  "len": 8.9,
+  "text": "Un hábito simple: limpiar las ollas y sartenes con un papel antes de lavarlas. La grasa va a la basura, y no al desagüe."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b046.wav",
+  "start": 384.49,
+  "len": 8.41,
+  "text": "Y los residuos del café, las cáscaras de huevo, el arroz: se hinchan o se compactan en la trampa. Mejor al compost o a la basura."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b047.wav",
+  "start": 392.9,
+  "len": 9.14,
+  "text": "Secreto ocho: la presión del agua. Si es muy alta, castiga tuberías, mangueras y griferías, y se rompen antes de tiempo."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b048.wav",
+  "start": 402.04,
+  "len": 8.9,
+  "text": "Con un manómetro de pocos pesos se mide en una canilla exterior. Un valor razonable para una casa es de dos a cuatro bares, más o menos."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b049.wav",
+  "start": 410.94,
+  "len": 9.52,
+  "text": "Si pasa de ahí, un regulador de presión protege toda la instalación. Es una inversión chica contra roturas, y lo he visto salvar casas enteras."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b050.wav",
+  "start": 420.46,
+  "len": 10.49,
+  "text": "La presión muy alta también produce golpes de ariete: ese golpe seco en los caños al cerrar una llave. Con el tiempo, afloja y rompe uniones."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b051.wav",
+  "start": 430.95,
+  "len": 8.38,
+  "text": "Es como frenar de golpe un camión: la inercia del agua golpea el caño. Una cámara de aire, o un regulador, absorbe el golpe."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b052.wav",
+  "start": 439.33,
+  "len": 9.63,
+  "text": "Secreto nueve: el calentador de agua. Una vez al año, vacía el sedimento por la llave de abajo, y revisa el ánodo cada dos o tres años."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b053.wav",
+  "start": 448.96,
+  "len": 8.42,
+  "text": "Con eso se alarga la vida del tanque, mejora la eficiencia y evita ruidos de golpeteo. Es mantenimiento que casi nadie hace."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b054.wav",
+  "start": 457.38,
+  "len": 11.34,
+  "text": "Y la temperatura del termotanque: unos cincuenta a cincuenta y cinco grados es un buen equilibrio. Más alta quema y desgasta; más baja favorece bacterias."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b055.wav",
+  "start": 468.72,
+  "len": 9.77,
+  "text": "La válvula de seguridad se prueba una vez al año, levantando su palanca: debe salir agua, y volver a cerrar. Si gotea siempre, hay que cambiarla."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b056.wav",
+  "start": 478.49,
+  "len": 10.74,
+  "text": "Secreto diez: las mangueras flexibles, las de la lavadora y de los lavabos, se cambian cada cinco a ocho años. La goma se reseca y revienta."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b057.wav",
+  "start": 489.23,
+  "len": 9.71,
+  "text": "Si ves ampollas, óxido en las uniones o humedad, cámbiala ya. Una manguera trenzada de acero cuesta poco, y evita la inundación más típica."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b058.wav",
+  "start": 498.94,
+  "len": 9.92,
+  "text": "Al cambiar una manguera, usa arandelas nuevas, y aprieta a mano más un cuarto de vuelta. Un apriete excesivo corta la goma, y gotea."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b059.wav",
+  "start": 508.86,
+  "len": 8.4,
+  "text": "Un truco: anota con marcador la fecha de instalación en una cinta. Así sabes cuándo toca cambiarla, sin tener que acordarte."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b060.wav",
+  "start": 517.26,
+  "len": 8.8,
+  "text": "Secreto once: aísla las tuberías expuestas al frío. En zonas con heladas, un caño congelado puede reventar al deshelarse."
+ },
+ {
+  "beat": "b061",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b061.wav",
+  "start": 526.06,
+  "len": 8.51,
+  "text": "Y desconecta las mangueras de jardín en invierno, con la llave exterior vaciada. Una espuma de pocos pesos evita una rotura grande."
+ },
+ {
+  "beat": "b062",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b062.wav",
+  "start": 534.57,
+  "len": 9.87,
+  "text": "Los grifos de jardín, con la manguera puesta, son los primeros en romperse con una helada. Cierra la llave interior, y abre el grifo exterior para vaciarlo."
+ },
+ {
+  "beat": "b063",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b063.wav",
+  "start": 544.44,
+  "len": 8.29,
+  "text": "Hay cubiertas de espuma de pocos pesos. Con eso, el grifo exterior pasa el invierno sin dramas, y el caño de adentro también."
+ },
+ {
+  "beat": "b064",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b064.wav",
+  "start": 552.73,
+  "len": 9.48,
+  "text": "Secreto doce: cómo detectar una fuga oculta. Cierra todas las llaves, y mira el medidor: si el indicador sigue girando, hay una fuga."
+ },
+ {
+  "beat": "b065",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b065.wav",
+  "start": 562.21,
+  "len": 8.21,
+  "text": "Esa fuga puede estar en un caño enterrado, una pared, o el inodoro. Y se paga en la factura, mes a mes, sin que lo notes."
+ },
+ {
+  "beat": "b066",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b066.wav",
+  "start": 570.42,
+  "len": 7.05,
+  "text": "Otro truco: anota la lectura por la noche y por la mañana, sin usar agua. Si cambia, hay fuga."
+ },
+ {
+  "beat": "b067",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b067.wav",
+  "start": 577.47,
+  "len": 8.17,
+  "text": "Las fugas más comunes y silenciosas son las del inodoro. Por eso la prueba del colorante, antes de buscar otras causas más caras."
+ },
+ {
+  "beat": "b068",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b068.wav",
+  "start": 585.64,
+  "len": 8.35,
+  "text": "Un truco de plomeros: pegar el mango de un destornillador a la pared y apoyar la oreja. Se oye el sonido del agua corriendo por un caño."
+ },
+ {
+  "beat": "b069",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b069.wav",
+  "start": 593.99,
+  "len": 9.36,
+  "text": "Si la fuga sigue sin aparecer, un profesional con equipos de detección la ubica sin romper paredes. Es más barato que picar a ciegas."
+ },
+ {
+  "beat": "b070",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b070.wav",
+  "start": 603.35,
+  "len": 9.42,
+  "text": "Secreto trece: no uses destapacaños químicos. Una sonda manual de pocos pesos hace más, y no daña los caños ni te quema."
+ },
+ {
+  "beat": "b071",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b071.wav",
+  "start": 612.77,
+  "len": 7.72,
+  "text": "Se baja girando hasta sentir el tapón, se rota para engancharlo, y se saca. Un truco que lo aprende cualquiera."
+ },
+ {
+  "beat": "b072",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b072.wav",
+  "start": 620.49,
+  "len": 8.88,
+  "text": "Para tapones grandes o lejos, hay máquinas eléctricas de sonda que alquilan en ferreterías. Pero con la manual, la mayoría de los casos se resuelve."
+ },
+ {
+  "beat": "b073",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b073.wav",
+  "start": 629.37,
+  "len": 8.9,
+  "text": "Con guantes y anteojos siempre: lo que sale de un caño tapado salpica, y no es agradable. Y lávate bien las manos al terminar."
+ },
+ {
+  "beat": "b074",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b074.wav",
+  "start": 638.27,
+  "len": 9.23,
+  "text": "Secreto catorce: limpia las trampas, esos codos debajo de los lavabos. Una vez al año, se sacan, se vacían y se vuelven a armar."
+ },
+ {
+  "beat": "b075",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b075.wav",
+  "start": 647.5,
+  "len": 8.29,
+  "text": "Ahí se acumulan restos y olores. Con la trampa limpia, el desagüe corre mejor y desaparece el olor a cloaca de la cocina."
+ },
+ {
+  "beat": "b076",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b076.wav",
+  "start": 655.79,
+  "len": 9.2,
+  "text": "Una trampa que se seca deja pasar olores. En desagües de piso poco usados, basta echar un vaso de agua cada tanto para mantener el sello."
+ },
+ {
+  "beat": "b077",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b077.wav",
+  "start": 664.99,
+  "len": 7.82,
+  "text": "Un truco: una cucharada de aceite sobre el agua frena la evaporación. Y se acabó el olor en baños que casi no usas."
+ },
+ {
+  "beat": "b078",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b078.wav",
+  "start": 672.81,
+  "len": 10.68,
+  "text": "Secreto quince: tener un kit básico. Una llave ajustable, un alicate, el destapador, cinta de teflón, silicona, y un surtido de empaques."
+ },
+ {
+  "beat": "b079",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b079.wav",
+  "start": 683.49,
+  "len": 6.75,
+  "text": "Con unos veinte pesos de herramientas más, resuelves el ochenta por ciento de los problemas chicos. Y duermes más tranquilo."
+ },
+ {
+  "beat": "b080",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b080.wav",
+  "start": 690.24,
+  "len": 10.4,
+  "text": "Y si debes llamar a alguien, que sea matriculado, con presupuesto escrito, y con garantía. Un trabajo bien hecho dura décadas, y uno chapucero, meses."
+ },
+ {
+  "beat": "b081",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b081.wav",
+  "start": 700.64,
+  "len": 8.72,
+  "text": "Con estos quince secretos, tu casa pierde menos agua, gasta menos plata, y tú te ahorras sustos. Eso es lo que vale un buen mantenimiento."
+ },
+ {
+  "beat": "b082",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b082.wav",
+  "start": 709.36,
+  "len": 8.26,
+  "text": "Y reconoce tus límites: gas, instalaciones eléctricas, problemas grandes de cloaca o de presión, son para un matriculado."
+ },
+ {
+  "beat": "b083",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b083.wav",
+  "start": 717.62,
+  "len": 9.7,
+  "text": "Los quince: la llave general, cerrar al viajar, la cinta bien puesta, arreglar goteos, el vinagre, el sapito, qué no tirar, y la presión."
+ },
+ {
+  "beat": "b084",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b084.wav",
+  "start": 727.32,
+  "len": 11.19,
+  "text": "Y el calentador, las mangueras, el frío, las fugas ocultas, no usar químicos, limpiar trampas, y el kit básico. Ninguno cuesta mucho, y todos ahorran."
+ },
+ {
+  "beat": "b085",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plsecretos/out/plsecretos/tramos/b085.wav",
+  "start": 738.51,
+  "len": 10.307,
+  "text": "Si te sirvió, quédate en el canal. En el próximo, cómo usar bien un destapador de goma, que casi todos lo hacen mal. Y cuéntame cuál de estos no conocías."
+ }
+]

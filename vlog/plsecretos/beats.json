@@ -1,0 +1,1511 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un caño roto a las tres de la mañana puede costarte miles. Y casi siempre se evita con algo que cuesta casi nada.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a burst water pipe spraying water in a bathroom wall cavity while a hand tries to close a valve",
+    "motion": "water sprays hard from a pipe and a hand reaches for a handle"
+   },
+   {
+    "k": "W",
+    "v": "burst pipe flooding bathroom"
+   },
+   {
+    "k": "W",
+    "v": "a burst water pipe spraying water in a"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio, plomero. En estos años aprendí quince secretos que todo dueño de casa debería conocer. Te los cuento en orden.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio the plumber in a bathroom wearing a blue work overall and headlamp, sitting on the edge of the bathtub holding a pipe wrench and smiling, friendly"
+   },
+   {
+    "k": "G",
+    "v": "a plumber's bag with tools and a tape roll on a bathroom floor"
+   },
+   {
+    "k": "W",
+    "v": "Claudio the plumber in a bathroom wearing a"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada uno te puede ahorrar una llamada de emergencia, un arreglo caro, o un daño que no se ve hasta que es tarde.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "expensive plumber emergency call night"
+   },
+   {
+    "k": "G",
+    "v": "a plumber's emergency invoice with a night surcharge on a kitchen table"
+   },
+   {
+    "k": "W",
+    "v": "expensive plumber emergency call night"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Quince en total. Algunos son tan simples que te vas a preguntar por qué nadie te los dijo. Otros, que casi nadie sabe.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising fifteen fingers with two hands, laughing"
+   },
+   {
+    "k": "G",
+    "v": "a numbered list from one to fifteen on a whiteboard"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising fifteen fingers with two hands laughing"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la mayoría se hace con herramientas que cuestan menos que una visita de plomero. Empecemos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "diy plumbing tools basic"
+   },
+   {
+    "k": "G",
+    "v": "a basic home plumbing kit with a plunger, tape, wrench, silicone, spare washers and a flashlight on a table"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un aviso: lo que te cuento es para mantenimiento y arreglos chicos. Si hay gas, electricidad o algo grave, llama a un profesional matriculado.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera honestly"
+   },
+   {
+    "k": "W",
+    "v": "honest plumber advice"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera honestly"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto uno: aprende dónde está la llave de paso general. Casi la mitad de la gente no la encuentra cuando hay una fuga.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "main water shutoff valve house"
+   },
+   {
+    "k": "G",
+    "v": "a main water shutoff valve with a red handle on a wall near the water meter"
+   },
+   {
+    "k": "W",
+    "v": "main water shutoff valve house"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Búscala hoy, antes de la emergencia: suele estar junto al medidor. Pruébala: debe girar sin trabarse. Si está dura, se cambia.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at the main valve and turning it a quarter turn to test it, careful"
+   },
+   {
+    "k": "A",
+    "v": "a hand turning a red quarter turn valve closed",
+    "motion": "the red handle rotates and stops perpendicular to the pipe"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pointing at the main valve and turning"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ponle una etiqueta y avísales a todos en casa. En una fuga, cerrar el agua en diez segundos te ahorra el piso, las paredes, y los muebles.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small tag hanging on the valve with the words main water in marker"
+   },
+   {
+    "k": "W",
+    "v": "labelling shutoff valves home"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y también las llaves de cada baño y cocina, debajo de los lavabos y detrás del inodoro. Con ellas, arreglas un lugar sin cortar toda la casa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio tracing with a marker the individual shutoff valves under a sink and behind a toilet, labelling them"
+   },
+   {
+    "k": "G",
+    "v": "an angle stop valve under a bathroom sink with a label for hot and cold"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si la llave de paso es de las viejas, de compuerta, con volante, es mejor cambiarla por una de bola, de un cuarto de vuelta. Son más confiables.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "shutoff valve stuck old corroded"
+   },
+   {
+    "k": "G",
+    "v": "a corroded old gate valve with a stiff handle beside a modern quarter turn ball valve"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una llave que no cierra el día de la fuga no sirve. Probarla una vez al año, abriendo y cerrando, evita que se agarrote.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining that a stuck valve will not close in an emergency, with a concerned look"
+   },
+   {
+    "k": "G",
+    "v": "a stripped handle of an old valve that spins without closing"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cambiar la llave general sí es trabajo de plomero, porque hay que cortar el agua de la calle o del medidor. Pero lo que cuesta es poco.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plumber replacing main valve professional"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera and recommending a professional for the main valve replacement"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto dos: al viajar, cierra la llave general. Una manguera que revienta mientras no estás puede inundar toda la casa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "turn off water before vacation"
+   },
+   {
+    "k": "P",
+    "v": "Claudio closing the main valve before leaving on a trip, suitcase near the door"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es el origen de las inundaciones más caras que veo. Una mangueta de lavadora vieja, y días de agua corriendo sin nadie.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a flooded living room with a ruined wooden floor and a hose that burst under a sink"
+   },
+   {
+    "k": "W",
+    "v": "flood damage home"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después de cerrar, abre una llave para vaciar la presión. Así las cañerías quedan sin carga, y no hay riesgo de fugas pequeñas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio opening a tap to drain the remaining water after closing the main valve, patient"
+   },
+   {
+    "k": "A",
+    "v": "water running slowly from a tap after the main valve was closed and then stopping",
+    "motion": "the flow slows to a trickle and stops"
+   },
+   {
+    "k": "W",
+    "v": "Claudio opening a tap to drain the remaining"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay sensores de agua de pocos pesos, que suenan si detectan humedad en el piso. Ponlos debajo del lavabo, junto al calentador y detrás de la lavadora.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a smart water leak sensor placed on a bathroom floor beside the toilet with a small green light"
+   },
+   {
+    "k": "W",
+    "v": "water leak detector device"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Son los que más rápido te avisan, y evitan que un goteo chico se vuelva una inundación. Una inversión mínima.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio placing a sensor behind a washing machine and testing it with a drop of water, smiling"
+   },
+   {
+    "k": "A",
+    "v": "a leak sensor beeping and its light turning red when touched by a drop of water",
+    "motion": "the small light turns red and a tiny alarm icon flashes"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto tres: la cinta de teflón, bien usada. En roscas de tuberías que no son con goma, es lo que evita las goteras.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plumber tape ptfe thread seal"
+   },
+   {
+    "k": "G",
+    "v": "a roll of white thread seal tape next to a threaded pipe fitting"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se enrolla en el sentido de las agujas del reloj, mirando la punta del caño, para que al apretar no se desenrolle. De tres a cinco vueltas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio wrapping tape around a pipe thread in the correct direction, showing with a finger"
+   },
+   {
+    "k": "A",
+    "v": "white thread tape being wrapped clockwise around a pipe thread with the pipe end facing the camera",
+    "motion": "the tape winds around the thread in a spiral"
+   },
+   {
+    "k": "W",
+    "v": "Claudio wrapping tape around a pipe thread in"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Demasiada cinta es un error: la rosca no encaja y se rompe el accesorio. Y muy poca, gotea. Con práctica, sale perfecto.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a tape wrapped too thick on a thread with a plumber's hand shaking his head"
+   },
+   {
+    "k": "W",
+    "v": "too much thread tape mistake"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En algunas roscas, sobre todo metálicas, se usa pasta selladora además de la cinta, o en lugar de ella. Es más difícil de equivocar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "pipe sealant paste joint compound"
+   },
+   {
+    "k": "G",
+    "v": "a small tube of pipe thread sealant paste beside a roll of thread tape"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y las conexiones con goma o con oliva se sellan solas: ahí la cinta de teflón sobra, y puede hasta impedir que cierren bien.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining not to use thread tape on compression fittings, shaking his head"
+   },
+   {
+    "k": "G",
+    "v": "a compression fitting with a rubber olive ring that seals without tape"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Otro error: apretar de más. Un accesorio de plástico se raja con un tirón. Aprieta a mano, y un cuarto de vuelta con la llave.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "overtightening fitting crack"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing a cracked plastic fitting caused by overtightening"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto cuatro: una canilla que gotea casi siempre se arregla en diez minutos. Un goteo parece poco, pero se lleva litros por día.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "dripping faucet repair cartridge"
+   },
+   {
+    "k": "G",
+    "v": "a faucet dripping into a sink with a single drop falling and a puddle forming"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se cierra la llave de paso, se desarma la manija, y se llega al vástago. Ahí está el empaque gastado, la goma que sella.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio closing the shutoff valve under a sink and unscrewing the faucet handle with a small screwdriver"
+   },
+   {
+    "k": "A",
+    "v": "a faucet handle being removed with a screwdriver to reveal the stem and washer",
+    "motion": "the handle lifts off revealing a brass stem"
+   },
+   {
+    "k": "W",
+    "v": "Claudio closing the shutoff valve under a sink"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un empaque de pocos pesos cambia todo. En las monocomando, es un cartucho. Llévate el viejo a la ferretería para comprar el idéntico.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a worn rubber washer next to a new one on a workbench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding the worn washer and the new one side by side"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y compra un surtido de empaques de varios tamaños. Con una cajita así tienes casi cualquier reemplazo a mano.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hardware store plumbing washers assortment"
+   },
+   {
+    "k": "G",
+    "v": "an assortment box of rubber and fibre washers of different sizes on a hardware store counter"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tu grifo tiene una sola manija, probablemente lleva cartucho de cerámica. Se cambia entero, y es tan fácil como el empaque.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining that a cartridge faucet has a different part, holding a ceramic cartridge"
+   },
+   {
+    "k": "G",
+    "v": "a ceramic cartridge of a single lever faucet next to a washer type stem"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después de reparar, abre y cierra la canilla, y mira unos minutos. Si ya no gotea, ahorraste litros y plata cada día.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "tighten faucet after repair test drip"
+   },
+   {
+    "k": "P",
+    "v": "Claudio opening the tap after the repair and watching for any drop, smiling when it stays dry"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto cinco: el sarro se saca con vinagre. En una canilla, una regadera o un grifo, una bolsa con vinagre atada una hora, y listo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "limescale showerhead vinegar bag"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tying a plastic bag filled with vinegar around a showerhead with a rubber band, clever"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el aireador, esa malla en la punta de la canilla: se desenrosca, se limpia, y el chorro vuelve a salir parejo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a faucet aerator unscrewed and held up showing white mineral deposits"
+   },
+   {
+    "k": "P",
+    "v": "Claudio cleaning an aerator with an old toothbrush and vinegar"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El mismo truco sirve para la caldera y el hervidor: vinagre caliente, un rato, y se desprende el sarro sin dañar nada.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "limescale kettle vinegar descaling"
+   },
+   {
+    "k": "G",
+    "v": "a kettle and a glass of vinegar next to a limescale encrusted tap"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Evita los ácidos fuertes en griferías: queman el cromo, y dejan manchas que no salen. El vinagre blanco, suave y barato, alcanza.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a bottle of strong acid cleaner"
+   },
+   {
+    "k": "G",
+    "v": "a bottle of hydrochloric acid cleaner with a red cross on its label beside a chrome tap"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto seis: un inodoro que corre agua tira cientos de litros por día. Casi siempre es el sapito, la goma de abajo, que ya no sella.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "running toilet flapper repair"
+   },
+   {
+    "k": "G",
+    "v": "the inside of a toilet tank with a worn flapper letting water leak into the bowl"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba: unas gotas de colorante en el tanque. Si aparece en la taza sin tirar la cadena, el sapito pierde.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio dropping a few drops of food colouring into the toilet tank and waiting to see if the colour reaches the bowl"
+   },
+   {
+    "k": "A",
+    "v": "blue colouring spreading in a toilet tank and then appearing in the bowl",
+    "motion": "the blue tint seeps into the bowl water"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se cambia en cinco minutos, con la llave cerrada y el tanque vacío. Un repuesto barato, y se acabó el goteo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a new toilet flapper in its package next to the old cracked one"
+   },
+   {
+    "k": "W",
+    "v": "replacing toilet flapper easy"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el agua sigue corriendo, mira el flotador: puede estar muy alto, y el agua se escapa por el rebosadero. Se baja con un tornillo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the water level float and fill valve inside a toilet tank next to a screwdriver"
+   },
+   {
+    "k": "W",
+    "v": "toilet fill valve adjust"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El nivel debe quedar unos dos centímetros bajo el tubo de rebose. Con eso se acaba el ruido, y el despilfarro de agua.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio adjusting a float screw with a flat screwdriver and watching the water stop at the right level, satisfied"
+   },
+   {
+    "k": "A",
+    "v": "the water level rising in a toilet tank and stopping just below the overflow tube",
+    "motion": "the water rises and stops with a click"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si la válvula de llenado está gastada, se cambia entera: una pieza de plástico, sin soldar, con una tuerca grande. Es un trabajo de quince minutos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "toilet fill valve replacement cost cheap"
+   },
+   {
+    "k": "G",
+    "v": "a new toilet fill valve in its package on a bathroom counter"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto siete: lo que tiras por el desagüe importa. Las toallitas húmedas no se disuelven, aunque diga \"desechables\". Forman tapones.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "flushable wipes clog sewer"
+   },
+   {
+    "k": "G",
+    "v": "a clump of wet wipes and grease stuck in a sewer pipe cut open"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el aceite de cocina, nunca por la pileta: se enfría, endurece como cera y tapa todo. Va en un frasco, y a la basura.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pouring cooking oil into a container instead of the kitchen sink, careful"
+   },
+   {
+    "k": "G",
+    "v": "a jar of used cooking oil beside a kitchen sink with a funnel"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una rejilla en la pileta frena lo sólido. Y la basura, a la basura. Las cañerías no son un tacho.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "kitchen sink strainer food"
+   },
+   {
+    "k": "G",
+    "v": "a metal sink strainer with food scraps being emptied into a bin"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La grasa de cocina es el enemigo número uno: enfría dentro del caño, se endurece, y va estrechando el paso hasta que se tapa del todo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "grease trap kitchen drain pipe"
+   },
+   {
+    "k": "G",
+    "v": "a section of kitchen drain pipe coated inside with hardened white grease"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un hábito simple: limpiar las ollas y sartenes con un papel antes de lavarlas. La grasa va a la basura, y no al desagüe.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio wiping a greasy pan with a paper towel before washing it, a good habit"
+   },
+   {
+    "k": "G",
+    "v": "a paper towel with grease next to a pan at a kitchen sink"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y los residuos del café, las cáscaras de huevo, el arroz: se hinchan o se compactan en la trampa. Mejor al compost o a la basura.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "coffee grounds sink drain clog"
+   },
+   {
+    "k": "G",
+    "v": "coffee grounds and eggshells in a sink strainer"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto ocho: la presión del agua. Si es muy alta, castiga tuberías, mangueras y griferías, y se rompen antes de tiempo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water pressure regulator home"
+   },
+   {
+    "k": "G",
+    "v": "a pressure reducing valve installed on a pipe near the water meter"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un manómetro de pocos pesos se mide en una canilla exterior. Un valor razonable para una casa es de dos a cuatro bares, más o menos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio attaching a small pressure gauge to an outdoor tap and reading the value, concentrated"
+   },
+   {
+    "k": "G",
+    "v": "a pressure gauge on a garden tap with the needle in a safe green zone"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si pasa de ahí, un regulador de presión protege toda la instalación. Es una inversión chica contra roturas, y lo he visto salvar casas enteras.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "regulator valve plumber fix"
+   },
+   {
+    "k": "P",
+    "v": "Claudio explaining that a regulator can protect the whole house"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La presión muy alta también produce golpes de ariete: ese golpe seco en los caños al cerrar una llave. Con el tiempo, afloja y rompe uniones.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water hammer noise pipes"
+   },
+   {
+    "k": "G",
+    "v": "a plumber listening to banging noises coming from pipes behind a bathroom wall"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es como frenar de golpe un camión: la inercia del agua golpea el caño. Una cámara de aire, o un regulador, absorbe el golpe.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining water hammer with a drawing of a pipe and a sudden stop"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard sketch showing a fast water flow hitting a closed valve with a shock arrow"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto nueve: el calentador de agua. Una vez al año, vacía el sedimento por la llave de abajo, y revisa el ánodo cada dos o tres años.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water heater anode rod flush"
+   },
+   {
+    "k": "G",
+    "v": "a water heater drain valve connected to a garden hose draining sediment into a bucket"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con eso se alarga la vida del tanque, mejora la eficiencia y evita ruidos de golpeteo. Es mantenimiento que casi nadie hace.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio opening the drain valve and watching murky water flow, with a bucket and a hose"
+   },
+   {
+    "k": "A",
+    "v": "murky brown water flowing from a heater drain into a bucket and gradually clearing",
+    "motion": "the brown water thins and turns clear"
+   },
+   {
+    "k": "W",
+    "v": "Claudio opening the drain valve and watching murky"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la temperatura del termotanque: unos cincuenta a cincuenta y cinco grados es un buen equilibrio. Más alta quema y desgasta; más baja favorece bacterias.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water heater temperature setting"
+   },
+   {
+    "k": "P",
+    "v": "Claudio setting a heater thermostat to a medium level and nodding"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La válvula de seguridad se prueba una vez al año, levantando su palanca: debe salir agua, y volver a cerrar. Si gotea siempre, hay que cambiarla.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a pressure relief valve on top of a water heater with a small discharge pipe"
+   },
+   {
+    "k": "W",
+    "v": "test water heater safety valve"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto diez: las mangueras flexibles, las de la lavadora y de los lavabos, se cambian cada cinco a ocho años. La goma se reseca y revienta.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washing machine hose burst braided"
+   },
+   {
+    "k": "G",
+    "v": "a rubber washing machine hose with a bulge and cracks beside a new braided steel hose"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si ves ampollas, óxido en las uniones o humedad, cámbiala ya. Una manguera trenzada de acero cuesta poco, y evita la inundación más típica.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio running a finger along an old hose feeling for bulges, serious"
+   },
+   {
+    "k": "G",
+    "v": "an old hose with a bulge near the connector and a small leak"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Al cambiar una manguera, usa arandelas nuevas, y aprieta a mano más un cuarto de vuelta. Un apriete excesivo corta la goma, y gotea.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "washing machine hose connection tight check"
+   },
+   {
+    "k": "G",
+    "v": "the water inlet connection of a washing machine with a visible rubber washer and a hand tightening it"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un truco: anota con marcador la fecha de instalación en una cinta. Así sabes cuándo toca cambiarla, sin tener que acordarte.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio writing the installation date on a hose with a permanent marker, smiling"
+   },
+   {
+    "k": "G",
+    "v": "a braided hose with a date written on a piece of tape"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto once: aísla las tuberías expuestas al frío. En zonas con heladas, un caño congelado puede reventar al deshelarse.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "frozen pipes insulation winter"
+   },
+   {
+    "k": "G",
+    "v": "foam pipe insulation fitted around an exposed pipe near an outside wall"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y desconecta las mangueras de jardín en invierno, con la llave exterior vaciada. Una espuma de pocos pesos evita una rotura grande.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio fitting a foam tube around a pipe and sealing it with tape, careful"
+   },
+   {
+    "k": "A",
+    "v": "a foam pipe insulation tube being slid over a copper pipe",
+    "motion": "the foam tube slides along the pipe and covers it"
+   },
+   {
+    "k": "W",
+    "v": "Claudio fitting a foam tube around a pipe"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los grifos de jardín, con la manguera puesta, son los primeros en romperse con una helada. Cierra la llave interior, y abre el grifo exterior para vaciarlo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "outdoor tap winterize shutoff"
+   },
+   {
+    "k": "G",
+    "v": "an outdoor faucet with a hose still attached and frost on it"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay cubiertas de espuma de pocos pesos. Con eso, el grifo exterior pasa el invierno sin dramas, y el caño de adentro también.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio fitting a foam insulated cover over an outdoor faucet, careful"
+   },
+   {
+    "k": "G",
+    "v": "an insulated faucet cover on an outdoor tap"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto doce: cómo detectar una fuga oculta. Cierra todas las llaves, y mira el medidor: si el indicador sigue girando, hay una fuga.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water meter leak detection"
+   },
+   {
+    "k": "G",
+    "v": "a household water meter with a small triangle dial that spins slowly"
+   }
+  ]
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esa fuga puede estar en un caño enterrado, una pared, o el inodoro. Y se paga en la factura, mes a mes, sin que lo notes.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio crouching next to the meter with a flashlight and watching the leak indicator, serious"
+   },
+   {
+    "k": "A",
+    "v": "a small red indicator on a water meter spinning slowly even though all taps are closed",
+    "motion": "the small red dial turns slowly"
+   },
+   {
+    "k": "W",
+    "v": "Claudio crouching next to the meter with a"
+   }
+  ]
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Otro truco: anota la lectura por la noche y por la mañana, sin usar agua. Si cambia, hay fuga.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a notebook with the meter reading at night and in the morning showing a difference"
+   },
+   {
+    "k": "P",
+    "v": "Claudio writing the two readings and subtracting them"
+   }
+  ]
+ },
+ {
+  "id": "b067",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las fugas más comunes y silenciosas son las del inodoro. Por eso la prueba del colorante, antes de buscar otras causas más caras.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "toilet leak silent test"
+   },
+   {
+    "k": "G",
+    "v": "a toilet tank with a few drops of food colouring showing blue water in the bowl without flushing"
+   }
+  ]
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un truco de plomeros: pegar el mango de un destornillador a la pared y apoyar la oreja. Se oye el sonido del agua corriendo por un caño.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio listening along a wall with a screwdriver handle against his ear to hear a pipe leak"
+   },
+   {
+    "k": "G",
+    "v": "a screwdriver pressed against a wall with an ear to its handle in a quiet house"
+   }
+  ]
+ },
+ {
+  "id": "b069",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si la fuga sigue sin aparecer, un profesional con equipos de detección la ubica sin romper paredes. Es más barato que picar a ciegas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "professional leak detection equipment"
+   },
+   {
+    "k": "P",
+    "v": "Claudio explaining that when the leak is hidden a professional with a sensor can find it without breaking walls"
+   }
+  ]
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto trece: no uses destapacaños químicos. Una sonda manual de pocos pesos hace más, y no daña los caños ni te quema.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "drain snake tool plumber hand"
+   },
+   {
+    "k": "G",
+    "v": "a manual drain snake with a coil spring on a bathroom floor"
+   }
+  ]
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se baja girando hasta sentir el tapón, se rota para engancharlo, y se saca. Un truco que lo aprende cualquiera.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pushing a drain snake into a sink drain while rotating the handle, concentrated"
+   },
+   {
+    "k": "A",
+    "v": "a coil spring snake being pushed into a drain and rotated by hand",
+    "motion": "the snake advances with a turning motion"
+   }
+  ]
+ },
+ {
+  "id": "b072",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para tapones grandes o lejos, hay máquinas eléctricas de sonda que alquilan en ferreterías. Pero con la manual, la mayoría de los casos se resuelve.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cable drain machine electric plumber"
+   },
+   {
+    "k": "G",
+    "v": "an electric drain cleaning machine with a spinning cable on a bathroom floor"
+   }
+  ]
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con guantes y anteojos siempre: lo que sale de un caño tapado salpica, y no es agradable. Y lávate bien las manos al terminar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio wearing gloves and safety glasses while using a snake, careful"
+   },
+   {
+    "k": "W",
+    "v": "safety gloves goggles plumber"
+   }
+  ]
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto catorce: limpia las trampas, esos codos debajo de los lavabos. Una vez al año, se sacan, se vacían y se vuelven a armar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "p trap cleaning under sink"
+   },
+   {
+    "k": "G",
+    "v": "a P trap under a kitchen sink with a bucket below it and a slip nut being loosened"
+   }
+  ]
+ },
+ {
+  "id": "b075",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ahí se acumulan restos y olores. Con la trampa limpia, el desagüe corre mejor y desaparece el olor a cloaca de la cocina.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio unscrewing a trap by hand over a bucket and pouring out grey water, careful"
+   },
+   {
+    "k": "G",
+    "v": "the inside of a trap with sludge of grease and hair"
+   }
+  ]
+ },
+ {
+  "id": "b076",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una trampa que se seca deja pasar olores. En desagües de piso poco usados, basta echar un vaso de agua cada tanto para mantener el sello.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "dry trap sewer smell basement floor drain"
+   },
+   {
+    "k": "G",
+    "v": "a floor drain in a laundry area with a dry trap and a small stain on the grate"
+   }
+  ]
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un truco: una cucharada de aceite sobre el agua frena la evaporación. Y se acabó el olor en baños que casi no usas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pouring a cup of water into a floor drain and a spoon of oil on top to slow evaporation, clever"
+   },
+   {
+    "k": "G",
+    "v": "a floor drain with a thin film of oil on the water surface"
+   }
+  ]
+ },
+ {
+  "id": "b078",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Secreto quince: tener un kit básico. Una llave ajustable, un alicate, el destapador, cinta de teflón, silicona, y un surtido de empaques.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "basic plumbing toolkit home owner"
+   },
+   {
+    "k": "G",
+    "v": "a small box of basic plumbing tools: adjustable wrench, pliers, plunger, tape, silicone, washers"
+   }
+  ]
+ },
+ {
+  "id": "b079",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con unos veinte pesos de herramientas más, resuelves el ochenta por ciento de los problemas chicos. Y duermes más tranquilo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laying out the tools one by one on a towel and naming them, smiling"
+   },
+   {
+    "k": "G",
+    "v": "a neat toolbox with labelled compartments for washers and fittings"
+   }
+  ]
+ },
+ {
+  "id": "b080",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si debes llamar a alguien, que sea matriculado, con presupuesto escrito, y con garantía. Un trabajo bien hecho dura décadas, y uno chapucero, meses.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plumber licensed professional certificate"
+   },
+   {
+    "k": "G",
+    "v": "a plumber's licence card on a table next to a business card"
+   }
+  ]
+ },
+ {
+  "id": "b081",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con estos quince secretos, tu casa pierde menos agua, gasta menos plata, y tú te ahorras sustos. Eso es lo que vale un buen mantenimiento.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio nodding to the camera, sincere"
+   },
+   {
+    "k": "W",
+    "v": "honest plumber advice"
+   }
+  ]
+ },
+ {
+  "id": "b082",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y reconoce tus límites: gas, instalaciones eléctricas, problemas grandes de cloaca o de presión, son para un matriculado.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "call a licensed plumber when needed"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera seriously"
+   }
+  ]
+ },
+ {
+  "id": "b083",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los quince: la llave general, cerrar al viajar, la cinta bien puesta, arreglar goteos, el vinagre, el sapito, qué no tirar, y la presión.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the fifteen secrets quickly with his fingers, laughing"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with the fifteen tips listed in short phrases"
+   }
+  ]
+ },
+ {
+  "id": "b084",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el calentador, las mangueras, el frío, las fugas ocultas, no usar químicos, limpiar trampas, y el kit básico. Ninguno cuesta mucho, y todos ahorran.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "happy home dry no leaks"
+   },
+   {
+    "k": "G",
+    "v": "a dry tidy bathroom with a closed valve and tools stored neatly"
+   }
+  ]
+ },
+ {
+  "id": "b085",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quédate en el canal. En el próximo, cómo usar bien un destapador de goma, que casi todos lo hacen mal. Y cuéntame cuál de estos no conocías.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly plumber advice"
+   }
+  ]
+ }
+]
