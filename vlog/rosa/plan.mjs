@@ -108,7 +108,7 @@ fs.writeFileSync(REPO + `src/rosa/plans/${slug}.ts`, `// generado por vlog/rosa/
 const assets = new Set([AUDIO, "rosa/book.jpg"]);
 for (const b of beats) assets.add(b.src);
 for (const o of overlays) if (o.props.cover) assets.add(o.props.cover);
-fs.writeFileSync(REPO + `@_${slug}_assets.txt`, [...assets].join("\n") + "\n");
+fs.writeFileSync(REPO + `_${slug}_assets.txt`, [...assets].join("\n") + "\n");
 const rep = { beats: beats.length, overlays: overlays.length, comps: [...new Set(overlays.map((o) => o.comp))], used, kinds, total, min: +(total / FPS / 60).toFixed(2), cobertura: "100% por construcción" };
 fs.writeFileSync(R + "plan_report.json", JSON.stringify(rep, null, 1));
 console.log(JSON.stringify(rep));
