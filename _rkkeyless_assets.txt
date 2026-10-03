@@ -19,8 +19,6 @@ broll/rkkeyless/av_w017.mp4
 broll/rkkeyless/av_w018.mp4
 broll/rkkeyless/rkkeyless_s1_04.mp4
 broll/rkkeyless/rkkeyless_s3_01.mp4
-broll/rkkeyless/rkkeyless_s6_02.mp4
-broll/rkkeyless/rkkeyless_s8_01.mp4
 broll/rkkeyless/rkkeyless_s9_02.mp4
 broll/rkkeyless_real/rkkeyless_r04.mp4
 broll/rkkeyless_real/rkkeyless_r05.mp4
@@ -78,8 +76,10 @@ img/rkkeyless_s3_01_blur.jpg
 img/rkkeyless_s4_01_blur.jpg
 img/rkkeyless_s5_01_blur.jpg
 img/rkkeyless_s6_01_blur.jpg
-img/rkkeyless_s6_02_blur.jpg
+img/rkkeyless_s6_09.jpg
+img/rkkeyless_s6_09_blur.jpg
 img/rkkeyless_s7_01_blur.jpg
+img/rkkeyless_s8_01.jpg
 img/rkkeyless_s8_01_blur.jpg
 img/rkkeyless_s9_01_blur.jpg
 img/rkkeyless_s9_02_blur.jpg
