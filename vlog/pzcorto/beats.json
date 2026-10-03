@@ -1,0 +1,809 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Salta la térmica, la subís, y vuelve a saltar. Ese golpe seco es un cortocircuito, y hay que encontrarlo antes de seguir subiendo la llave.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a thermal switch in an electric panel dropping with a loud click and a dim hallway light turning off",
+    "motion": "the panel lever drops and the hallway light goes dark"
+   },
+   {
+    "k": "W",
+    "v": "circuit breaker trips short circuit"
+   },
+   {
+    "k": "W",
+    "v": "a thermal switch in an electric panel dropping"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio. Te muestro el método con el que encuentro un cortocircuito en una casa, paso a paso, y qué se hace y qué no.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in a hallway beside an open electric panel, holding a clamp meter and a flashlight, serious"
+   },
+   {
+    "k": "G",
+    "v": "a flashlight and a clamp meter on a small table next to an electric panel"
+   },
+   {
+    "k": "W",
+    "v": "Claudio in a hallway beside an open electric"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un cortocircuito mal buscado termina en un enchufe quemado, o peor, en un incendio. Por eso, la regla número uno: nunca fuerces la térmica.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "burnt outlet melted plastic short circuit house"
+   },
+   {
+    "k": "G",
+    "v": "a wall outlet with a dark burn mark around the holes and a melted edge"
+   },
+   {
+    "k": "W",
+    "v": "burnt outlet melted plastic short circuit house"
+   },
+   {
+    "k": "W",
+    "v": "burnt outlet melted plastic short circuit house"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si la térmica salta, es porque algo la hizo saltar. Subirla una y otra vez, o puentearla, es dejar que la falla siga ahí, calentando cables.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising a hand like a stop sign and shaking his head"
+   },
+   {
+    "k": "W",
+    "v": "do not force breaker reset"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising a hand like a stop sign"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising a hand like a stop sign"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El método tiene cuatro pasos: aislar el circuito, desconectar todo, medir, y ubicar la falla. Y se hace con la pinza, un probador y mucha paciencia.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a whiteboard with a four step list: isolate, disconnect, measure, locate"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping the whiteboard with a marker"
+   },
+   {
+    "k": "W",
+    "v": "a whiteboard with a four step list isolate"
+   },
+   {
+    "k": "W",
+    "v": "a whiteboard with a four step list isolate"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un cortocircuito pasa cuando fase y neutro, o fase y tierra, se tocan sin ninguna carga en el medio. La corriente se dispara, y calienta el cable en segundos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "short circuit explained wires touching diagram"
+   },
+   {
+    "k": "G",
+    "v": "a diagram of two wires touching with a lightning bolt and a large arrow of current"
+   },
+   {
+    "k": "W",
+    "v": "short circuit explained wires touching diagram"
+   },
+   {
+    "k": "W",
+    "v": "short circuit explained wires touching diagram"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En un circuito normal, la resistencia del aparato limita la corriente. En un corto, no hay nada que la limite, y la térmica es lo único que la corta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at a diagram of a normal circuit and a short circuit side by side"
+   },
+   {
+    "k": "A",
+    "v": "two animated arrows of different sizes on a whiteboard diagram",
+    "motion": "the arrow grows when the wires touch"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pointing at a diagram of a normal"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pointing at a diagram of a normal"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ojo con la diferencia: una sobrecarga es demasiados aparatos enchufados, y la térmica salta al rato. Un corto salta al instante, con un golpe seco.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "overload vs short circuit difference breaker"
+   },
+   {
+    "k": "W",
+    "v": "overload vs short circuit difference breaker"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esa diferencia ya te da una pista: salto instantáneo es corto, salto con demora es sobrecarga. Y se buscan distinto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining with two fingers of his hands showing slow and fast, calm"
+   },
+   {
+    "k": "G",
+    "v": "a breaker lever with a hand drawn clock next to it showing slow trip and fast trip"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso uno: aislar. Apagá la llave general, y después apagá todas las térmicas de los circuitos. Con todo apagado, vas a ir subiendo de a una.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "turn off main breaker electric panel safety"
+   },
+   {
+    "k": "P",
+    "v": "Claudio turning off the main switch of the panel with a firm movement, serious"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tu tablero no tiene etiquetas, es el momento de ponerlas: cocina, living, dormitorios, baños. Te va a ahorrar mil dolores de cabeza.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an electric panel with several breakers all in the down position"
+   },
+   {
+    "k": "W",
+    "v": "electric panel circuits labeled"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Subí la general, y después una térmica por vez. La que salta apenas la subís, es el circuito con el problema.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising the main switch and then the first breaker, watching"
+   },
+   {
+    "k": "A",
+    "v": "a hand raising the main switch and a breaker lever, with the lever staying up",
+    "motion": "the lever stays up and a small light turns on"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Anotá cuál es. A partir de ahora, solo ese circuito importa, y los demás se dejan funcionando mientras buscás.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "identify tripping circuit breaker which circuit"
+   },
+   {
+    "k": "W",
+    "v": "identify tripping circuit breaker which circuit"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso dos: con la térmica del circuito apagada, desenchufá todo lo que esté conectado en esos ambientes. Aparatos, cargadores, zapatillas, todo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio unplugging devices from outlets in a living room, one by one"
+   },
+   {
+    "k": "G",
+    "v": "a power strip and several plugs lying unplugged on a sofa"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Muchas veces el corto no está en la pared: está en un aparato con el cable pelado, un cargador viejo o una zapatilla quemada. Y es la falla más fácil de resolver.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "appliance causing short circuit faulty cord"
+   },
+   {
+    "k": "W",
+    "v": "appliance causing short circuit faulty cord"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Revisá los cables a la vista: pelados, aplastados por una puerta, mordidos por una mascota. Un cable así va a la basura, no a un parche de cinta.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a damaged power cord with exposed copper wires near the plug"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing the damaged cord with a pen, concerned"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después subí la térmica. Si ahora aguanta, el corto estaba en uno de los aparatos. Enchufalos de a uno, hasta que salte: ese es el culpable.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a hand turning the breaker on and the lever staying up with the lights coming on",
+    "motion": "the lever stays up and the lights come on"
+   },
+   {
+    "k": "W",
+    "v": "breaker holds after unplugging devices"
+   },
+   {
+    "k": "W",
+    "v": "a hand turning the breaker on and the"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso tres: si sigue saltando sin nada enchufado, el corto está en la instalación. Con el circuito sin tensión, se mide continuidad entre los cables.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a multimeter set to continuity next to the opened panel, careful"
+   },
+   {
+    "k": "W",
+    "v": "multimeter continuity test wires panel off"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Entre fase y neutro, con todo desconectado, tendría que dar infinito. Si marca casi cero, o suena el zumbador, hay un corto entre esos dos cables.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a multimeter display showing a continuity beep icon and a very low resistance value"
+   },
+   {
+    "k": "A",
+    "v": "the multimeter probes touching two wire ends and the display showing a low value",
+    "motion": "the display drops to near zero"
+   },
+   {
+    "k": "W",
+    "v": "a multimeter display showing a continuity beep icon"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un instrumento mejor es el megóhmetro, que mide el aislamiento aplicando tensión alta. Lo tiene el electricista, y encuentra fallas que el multímetro no ve.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "insulation resistance megohmmeter megger test"
+   },
+   {
+    "k": "P",
+    "v": "Claudio explaining that a megger gives a better result, pointing at a gray instrument"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y antes de tocar cualquier cable del tablero o de una caja: detector de tensión sin contacto, y comprobar que está sin tensión. Siempre. Aunque la térmica esté abajo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera, firm"
+   },
+   {
+    "k": "W",
+    "v": "electric safety verify no voltage before touching wires"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Probá primero el detector en un cable vivo conocido, para saber que funciona. Un detector con la pila gastada te miente, y te lo cobra caro.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a non contact voltage tester glowing red near a live wire and not glowing near a dead wire"
+   },
+   {
+    "k": "W",
+    "v": "non contact voltage tester"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cuatro: ubicar la falla por tramos. Abrís las cajas de paso en orden, y vas cortando el circuito en mitades. Del lado donde se mantiene el corto, sigue el problema.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "finding wiring fault by sections junction boxes"
+   },
+   {
+    "k": "G",
+    "v": "a junction box with several wires and a hand drawn plan of a house with rooms and boxes"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las fallas más comunes están en los puntos de unión: una caja de luz con un empalme flojo, un portalámparas con el cable contra el metal, un enchufe con un hilo de cobre suelto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio opening a ceiling light fixture with an insulated screwdriver, careful"
+   },
+   {
+    "k": "A",
+    "v": "a screwdriver loosening a ceiling light cover that falls into the hand",
+    "motion": "the cover comes off revealing the wires"
+   },
+   {
+    "k": "W",
+    "v": "Claudio opening a ceiling light fixture with an"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mirá los empalmes: plástico derretido, cobre ennegrecido, olor a quemado. Ahí es. Se corta la parte dañada, se pela de nuevo y se empalma con un conector nuevo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a burnt wire nut with melted insulation inside a junction box"
+   },
+   {
+    "k": "W",
+    "v": "burnt connector wires junction box"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un empalme con cinta aislante sola no es un empalme. Con el tiempo se afloja, calienta, y vuelve la falla. Conectores a rosca o con resorte, y dentro de una caja con tapa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a taped joint inside a box"
+   },
+   {
+    "k": "W",
+    "v": "electrical tape splice wrong"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Otra causa que se ve mucho: un clavo o un tornillo que perforó un cable al colgar un cuadro o un estante. El corto aparece justo después de la obra.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wall wiring nail screw damaged cable hidden short"
+   },
+   {
+    "k": "W",
+    "v": "wall wiring nail screw damaged cable hidden short"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si sospechás de un cable oculto, se sigue su recorrido con un detector de cables. Y si hay que abrir la pared, que lo haga un electricista, no un martillo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio running a hand along a wall without touching, explaining"
+   },
+   {
+    "k": "G",
+    "v": "a wall with a thin line drawn showing the path of a hidden wire from a switch to a ceiling box"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En el entretecho, o dentro del cielorraso, a veces los roedores muerden cables. Y no hace falta que se vea para que haya un corto adentro.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "rodents chewed wires attic short circuit"
+   },
+   {
+    "k": "W",
+    "v": "rodents chewed wires attic short circuit"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La pinza sirve para otra pista: la corriente. Con el circuito funcionando, abrazá un solo conductor, y fijate cuánta corriente pasa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio clamping the clamp meter around a single wire of a circuit and watching the display, focused"
+   },
+   {
+    "k": "W",
+    "v": "clamp meter measuring current single wire"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si la corriente está cerca de lo que aguanta la térmica sin tener casi nada conectado, hay una fuga o un consumo escondido. Algo está robando corriente.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter display showing a current close to the breaker rating"
+   },
+   {
+    "k": "A",
+    "v": "the display of the clamp meter rising slowly and stopping at a steady number",
+    "motion": "the number rises and settles"
+   },
+   {
+    "k": "W",
+    "v": "a clamp meter display showing a current close"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si salta el diferencial, no la térmica, no es un corto: es una fuga a tierra. Se busca distinto: se va apagando aparato por aparato, y el que lo hace saltar, tiene la falla.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "fuga a tierra differential trips ground fault vs short circuit"
+   },
+   {
+    "k": "W",
+    "v": "fuga a tierra differential trips ground fault vs"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Térmica que salta con golpe seco, corto o sobrecarga. Diferencial que salta, fuga a tierra. Entender cuál saltó ya te ahorra media búsqueda.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio comparing two breakers on the panel by pointing with two fingers"
+   },
+   {
+    "k": "G",
+    "v": "a residual current breaker and a thermal breaker with different labels"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo que nunca se hace: trabar la térmica, ponerle un alambre, o cambiarla por una de más amperes. Ese es el camino al incendio.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a thermal breaker with a big plastic screwdriver wedged into it to hold it up and a red warning cross"
+   },
+   {
+    "k": "P",
+    "v": "Claudio shaking his head strongly"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una térmica más grande no arregla nada: el cable que antes protegía se calienta sin que ella salte. Y el fuego empieza dentro de la pared, donde no lo ves.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wrong breaker size thicker amperage wire overheating"
+   },
+   {
+    "k": "W",
+    "v": "wrong breaker size thicker amperage wire overheating"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si después de aislar y desconectar el corto sigue, o está en el tablero, o dentro de la pared: llamá a un electricista matriculado. No es una derrota, es sentido común.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing back from the open panel with arms crossed, serious"
+   },
+   {
+    "k": "W",
+    "v": "call licensed electrician"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pedí que te explique dónde estaba la falla, qué cambió, y que te deje por escrito lo que hizo. Un buen electricista te muestra el cable dañado.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a short written note with three questions to ask an electrician"
+   },
+   {
+    "k": "W",
+    "v": "electrician quote written"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para que no vuelva: una revisión del tablero una vez al año, con la casa en uso. Ajustar los bornes, mirar si hay puntos calientes, y probar el diferencial con su botón.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "annual electrical inspection home tester"
+   },
+   {
+    "k": "W",
+    "v": "annual electrical inspection home tester"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un termómetro infrarrojo se ven bornes calientes: un borne flojo calienta antes de fallar, y se arregla con un destornillador antes de que sea corto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing a hand infrared thermometer at the breakers in a panel, curious"
+   },
+   {
+    "k": "A",
+    "v": "a handheld infrared thermometer pointed at a panel with a number showing on its display",
+    "motion": "the number on the display changes slightly"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pointing a hand infrared thermometer at the"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y los hábitos: nada de zapatillas en cadena, nada de alargues enrollados con equipos grandes, y cada aparato de potencia con su tomacorriente.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a power strip overloaded with many plugs and a hot looking plastic edge"
+   },
+   {
+    "k": "W",
+    "v": "overloaded power strip danger"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los cuatro pasos: aislar, desconectar todo, medir, y ubicar por tramos. Y la regla de oro: nunca forzar la térmica.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the four steps with his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with four steps: isolate, disconnect, measure, locate"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con eso, la mayoría de los cortocircuitos domésticos se encuentran, y los que no, los encuentra un profesional con las pistas que vos le llevás.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "safe quiet home evening lights on"
+   },
+   {
+    "k": "W",
+    "v": "safe quiet home evening lights on"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quedate en el canal. En el próximo, por qué el termotanque te da corriente, y cómo se arregla de verdad. Contame qué circuito te saltaba a vos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly electrician advice"
+   }
+  ]
+ }
+]

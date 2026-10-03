@@ -1,0 +1,389 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b001.wav",
+  "start": 0.0,
+  "len": 9.51,
+  "text": "Salta la térmica, la subís, y vuelve a saltar. Ese golpe seco es un cortocircuito, y hay que encontrarlo antes de seguir subiendo la llave."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b002.wav",
+  "start": 9.51,
+  "len": 8.02,
+  "text": "Soy Claudio. Te muestro el método con el que encuentro un cortocircuito en una casa, paso a paso, y qué se hace y qué no."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b003.wav",
+  "start": 17.53,
+  "len": 10.02,
+  "text": "Un cortocircuito mal buscado termina en un enchufe quemado, o peor, en un incendio. Por eso, la regla número uno: nunca fuerces la térmica."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b004.wav",
+  "start": 27.55,
+  "len": 9.68,
+  "text": "Si la térmica salta, es porque algo la hizo saltar. Subirla una y otra vez, o puentearla, es dejar que la falla siga ahí, calentando cables."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b005.wav",
+  "start": 37.23,
+  "len": 11.2,
+  "text": "El método tiene cuatro pasos: aislar el circuito, desconectar todo, medir, y ubicar la falla. Y se hace con la pinza, un probador y mucha paciencia."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b006.wav",
+  "start": 48.43,
+  "len": 11.43,
+  "text": "Un cortocircuito pasa cuando fase y neutro, o fase y tierra, se tocan sin ninguna carga en el medio. La corriente se dispara, y calienta el cable en segundos."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b007.wav",
+  "start": 59.86,
+  "len": 10.22,
+  "text": "En un circuito normal, la resistencia del aparato limita la corriente. En un corto, no hay nada que la limite, y la térmica es lo único que la corta."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b008.wav",
+  "start": 70.08,
+  "len": 10.83,
+  "text": "Ojo con la diferencia: una sobrecarga es demasiados aparatos enchufados, y la térmica salta al rato. Un corto salta al instante, con un golpe seco."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b009.wav",
+  "start": 80.91,
+  "len": 7.99,
+  "text": "Esa diferencia ya te da una pista: salto instantáneo es corto, salto con demora es sobrecarga. Y se buscan distinto."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b010.wav",
+  "start": 88.9,
+  "len": 10.06,
+  "text": "Paso uno: aislar. Apagá la llave general, y después apagá todas las térmicas de los circuitos. Con todo apagado, vas a ir subiendo de a una."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b011.wav",
+  "start": 98.96,
+  "len": 9.46,
+  "text": "Si tu tablero no tiene etiquetas, es el momento de ponerlas: cocina, living, dormitorios, baños. Te va a ahorrar mil dolores de cabeza."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b012.wav",
+  "start": 108.42,
+  "len": 7.17,
+  "text": "Subí la general, y después una térmica por vez. La que salta apenas la subís, es el circuito con el problema."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b013.wav",
+  "start": 115.59,
+  "len": 7.6,
+  "text": "Anotá cuál es. A partir de ahora, solo ese circuito importa, y los demás se dejan funcionando mientras buscás."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b014.wav",
+  "start": 123.19,
+  "len": 10.33,
+  "text": "Paso dos: con la térmica del circuito apagada, desenchufá todo lo que esté conectado en esos ambientes. Aparatos, cargadores, zapatillas, todo."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b015.wav",
+  "start": 133.52,
+  "len": 10.85,
+  "text": "Muchas veces el corto no está en la pared: está en un aparato con el cable pelado, un cargador viejo o una zapatilla quemada. Y es la falla más fácil de resolver."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b016.wav",
+  "start": 144.37,
+  "len": 10.01,
+  "text": "Revisá los cables a la vista: pelados, aplastados por una puerta, mordidos por una mascota. Un cable así va a la basura, no a un parche de cinta."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b017.wav",
+  "start": 154.38,
+  "len": 9.57,
+  "text": "Después subí la térmica. Si ahora aguanta, el corto estaba en uno de los aparatos. Enchufalos de a uno, hasta que salte: ese es el culpable."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b018.wav",
+  "start": 163.95,
+  "len": 9.94,
+  "text": "Paso tres: si sigue saltando sin nada enchufado, el corto está en la instalación. Con el circuito sin tensión, se mide continuidad entre los cables."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b019.wav",
+  "start": 173.89,
+  "len": 10.73,
+  "text": "Entre fase y neutro, con todo desconectado, tendría que dar infinito. Si marca casi cero, o suena el zumbador, hay un corto entre esos dos cables."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b020.wav",
+  "start": 184.62,
+  "len": 10.67,
+  "text": "Un instrumento mejor es el megóhmetro, que mide el aislamiento aplicando tensión alta. Lo tiene el electricista, y encuentra fallas que el multímetro no ve."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b021.wav",
+  "start": 195.29,
+  "len": 10.81,
+  "text": "Y antes de tocar cualquier cable del tablero o de una caja: detector de tensión sin contacto, y comprobar que está sin tensión. Siempre. Aunque la térmica esté abajo."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b022.wav",
+  "start": 206.1,
+  "len": 9.65,
+  "text": "Probá primero el detector en un cable vivo conocido, para saber que funciona. Un detector con la pila gastada te miente, y te lo cobra caro."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b023.wav",
+  "start": 215.75,
+  "len": 11.06,
+  "text": "Paso cuatro: ubicar la falla por tramos. Abrís las cajas de paso en orden, y vas cortando el circuito en mitades. Del lado donde se mantiene el corto, sigue el problema."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b024.wav",
+  "start": 226.81,
+  "len": 11.38,
+  "text": "Las fallas más comunes están en los puntos de unión: una caja de luz con un empalme flojo, un portalámparas con el cable contra el metal, un enchufe con un hilo de cobre suelto."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b025.wav",
+  "start": 238.19,
+  "len": 11.5,
+  "text": "Mirá los empalmes: plástico derretido, cobre ennegrecido, olor a quemado. Ahí es. Se corta la parte dañada, se pela de nuevo y se empalma con un conector nuevo."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b026.wav",
+  "start": 249.69,
+  "len": 11.82,
+  "text": "Un empalme con cinta aislante sola no es un empalme. Con el tiempo se afloja, calienta, y vuelve la falla. Conectores a rosca o con resorte, y dentro de una caja con tapa."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b027.wav",
+  "start": 261.51,
+  "len": 10.61,
+  "text": "Otra causa que se ve mucho: un clavo o un tornillo que perforó un cable al colgar un cuadro o un estante. El corto aparece justo después de la obra."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b028.wav",
+  "start": 272.12,
+  "len": 9.88,
+  "text": "Si sospechás de un cable oculto, se sigue su recorrido con un detector de cables. Y si hay que abrir la pared, que lo haga un electricista, no un martillo."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b029.wav",
+  "start": 282.0,
+  "len": 9.01,
+  "text": "En el entretecho, o dentro del cielorraso, a veces los roedores muerden cables. Y no hace falta que se vea para que haya un corto adentro."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b030.wav",
+  "start": 291.01,
+  "len": 9.53,
+  "text": "La pinza sirve para otra pista: la corriente. Con el circuito funcionando, abrazá un solo conductor, y fijate cuánta corriente pasa."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b031.wav",
+  "start": 300.54,
+  "len": 10.0,
+  "text": "Si la corriente está cerca de lo que aguanta la térmica sin tener casi nada conectado, hay una fuga o un consumo escondido. Algo está robando corriente."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b032.wav",
+  "start": 310.54,
+  "len": 12.26,
+  "text": "Y si salta el diferencial, no la térmica, no es un corto: es una fuga a tierra. Se busca distinto: se va apagando aparato por aparato, y el que lo hace saltar, tiene la falla."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b033.wav",
+  "start": 322.8,
+  "len": 9.83,
+  "text": "Térmica que salta con golpe seco, corto o sobrecarga. Diferencial que salta, fuga a tierra. Entender cuál saltó ya te ahorra media búsqueda."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b034.wav",
+  "start": 332.63,
+  "len": 8.38,
+  "text": "Lo que nunca se hace: trabar la térmica, ponerle un alambre, o cambiarla por una de más amperes. Ese es el camino al incendio."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b035.wav",
+  "start": 341.01,
+  "len": 10.38,
+  "text": "Una térmica más grande no arregla nada: el cable que antes protegía se calienta sin que ella salte. Y el fuego empieza dentro de la pared, donde no lo ves."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b036.wav",
+  "start": 351.39,
+  "len": 11.84,
+  "text": "Y si después de aislar y desconectar el corto sigue, o está en el tablero, o dentro de la pared: llamá a un electricista matriculado. No es una derrota, es sentido común."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b037.wav",
+  "start": 363.23,
+  "len": 8.78,
+  "text": "Pedí que te explique dónde estaba la falla, qué cambió, y que te deje por escrito lo que hizo. Un buen electricista te muestra el cable dañado."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b038.wav",
+  "start": 372.01,
+  "len": 11.35,
+  "text": "Para que no vuelva: una revisión del tablero una vez al año, con la casa en uso. Ajustar los bornes, mirar si hay puntos calientes, y probar el diferencial con su botón."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b039.wav",
+  "start": 383.36,
+  "len": 9.92,
+  "text": "Con un termómetro infrarrojo se ven bornes calientes: un borne flojo calienta antes de fallar, y se arregla con un destornillador antes de que sea corto."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b040.wav",
+  "start": 393.28,
+  "len": 9.1,
+  "text": "Y los hábitos: nada de zapatillas en cadena, nada de alargues enrollados con equipos grandes, y cada aparato de potencia con su tomacorriente."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b041.wav",
+  "start": 402.38,
+  "len": 8.71,
+  "text": "Los cuatro pasos: aislar, desconectar todo, medir, y ubicar por tramos. Y la regla de oro: nunca forzar la térmica."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b042.wav",
+  "start": 411.09,
+  "len": 9.37,
+  "text": "Con eso, la mayoría de los cortocircuitos domésticos se encuentran, y los que no, los encuentra un profesional con las pistas que vos le llevás."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzcorto/out/pzcorto/tramos/b043.wav",
+  "start": 420.46,
+  "len": 10.288,
+  "text": "Si te sirvió, quedate en el canal. En el próximo, por qué el termotanque te da corriente, y cómo se arregla de verdad. Contame qué circuito te saltaba a vos."
+ }
+]

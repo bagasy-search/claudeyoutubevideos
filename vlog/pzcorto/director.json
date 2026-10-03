@@ -1,0 +1,701 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "SALTA LA TÉRMICA… OTRA VEZ",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "saltar",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b004",
+   "props": {
+    "text": "NUNCA FUERCES LA TÉRMICA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "térmica",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "1 AISLAR · 2 DESCONECTAR · 3 MEDIR · 4 UBICAR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 46
+   },
+   "word": "cuatro",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b006",
+   "props": {
+    "text": "FASE Y NEUTRO SE TOCAN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "fase",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b008",
+   "props": {
+    "text": "CORTO = AL INSTANTE · SOBRECARGA = CON DEMORA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 46
+   },
+   "word": "instante",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b010",
+   "props": {
+    "step": 1,
+    "total": 4,
+    "title": "AISLAR EL CIRCUITO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b011",
+   "props": {
+    "text": "ETIQUETÁ EL TABLERO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "etiquetas",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b012",
+   "props": {
+    "text": "UNA TÉRMICA POR VEZ",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "vez",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b014",
+   "props": {
+    "step": 2,
+    "total": 4,
+    "title": "DESCONECTAR TODO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b015",
+   "props": {
+    "text": "A VECES ES UN APARATO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "aparato",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b016",
+   "props": {
+    "text": "CABLE PELADO: A LA BASURA, NO CON CINTA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "pelados",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b017",
+   "props": {
+    "text": "ENCHUFALOS DE A UNO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "aguanta",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b018",
+   "props": {
+    "step": 3,
+    "total": 4,
+    "title": "MEDIR"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b019",
+   "props": {
+    "text": "FASE–NEUTRO: INFINITO. CASI CERO = CORTO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 46
+   },
+   "word": "infinito",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b020",
+   "props": {
+    "text": "EL MEGÓHMETRO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "instrumento",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b021",
+   "props": {
+    "text": "DETECTOR DE TENSIÓN SIEMPRE",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "detector",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b022",
+   "props": {
+    "text": "PROBÁ EL DETECTOR EN UN CABLE VIVO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "vivo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b023",
+   "props": {
+    "step": 4,
+    "total": 4,
+    "title": "UBICAR POR TRAMOS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b025",
+   "props": {
+    "text": "PLÁSTICO DERRETIDO · COBRE NEGRO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "derretido",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b026",
+   "props": {
+    "text": "CINTA SOLA NO ES UN EMPALME",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "cinta",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b027",
+   "props": {
+    "text": "UN CLAVO PERFORÓ EL CABLE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "clavo",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b029",
+   "props": {
+    "text": "ROEDORES EN EL ENTRETECHO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "roedores",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b030",
+   "props": {
+    "text": "LA PINZA: LA CORRIENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "corriente",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b032",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "SALTA EL DIFERENCIAL",
+      "beat": "b032",
+      "word": "diferencial",
+      "hl": "yellow"
+     },
+     {
+      "t": "= FUGA A TIERRA",
+      "beat": "b032",
+      "word": "fuga",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "diferencial",
+   "until": "b032",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b034",
+   "props": {
+    "text": "NUNCA TRABES LA TÉRMICA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "trabar",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b035",
+   "props": {
+    "text": "UNA TÉRMICA MÁS GRANDE NO ARREGLA NADA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "grande",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b036",
+   "props": {
+    "text": "EN EL TABLERO O LA PARED: MATRICULADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 50
+   },
+   "word": "matriculado",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b038",
+   "props": {
+    "text": "REVISIÓN DEL TABLERO: 1 VEZ AL AÑO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "año",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b039",
+   "props": {
+    "text": "TERMÓMETRO INFRARROJO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "infrarrojo",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b040",
+   "props": {
+    "text": "NADA DE ZAPATILLAS EN CADENA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "cadena",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b041",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "AISLAR",
+      "beat": "b041",
+      "word": "aislar",
+      "hl": "yellow"
+     },
+     {
+      "t": "DESCONECTAR",
+      "beat": "b041",
+      "word": "desconectar"
+     },
+     {
+      "t": "MEDIR",
+      "beat": "b041",
+      "word": "medir",
+      "hl": "yellow"
+     },
+     {
+      "t": "UBICAR",
+      "beat": "b041",
+      "word": "ubicar"
+     }
+    ]
+   },
+   "word": "cuatro",
+   "until": "b041",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b043",
+   "props": {
+    "pos": "top",
+    "size": 76,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b043",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "POR QUÉ EL TERMOTANQUE DA CORRIENTE",
+      "beat": "b043",
+      "word": "próximo",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b043",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}

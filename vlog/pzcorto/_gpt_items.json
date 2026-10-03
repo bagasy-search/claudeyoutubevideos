@@ -1,0 +1,296 @@
+[
+ {
+  "name": "b001_0",
+  "prompt": "a thermal switch in an electric panel dropping with a loud click and a dim hallway light turning off. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b002_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio in a hallway beside an open electric panel, holding a clamp meter and a flashlight, serious. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b002_1",
+  "prompt": "a flashlight and a clamp meter on a small table next to an electric panel. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b003_1",
+  "prompt": "a wall outlet with a dark burn mark around the holes and a melted edge. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b004_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio raising a hand like a stop sign and shaking his head. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b004_2",
+  "prompt": "Claudio raising a hand like a stop sign. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b005_0",
+  "prompt": "a whiteboard with a four step list: isolate, disconnect, measure, locate. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b005_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio tapping the whiteboard with a marker. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b006_0",
+  "prompt": "short circuit explained wires touching diagram. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b006_1",
+  "prompt": "a diagram of two wires touching with a lightning bolt and a large arrow of current. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b006_2",
+  "prompt": "short circuit explained wires touching diagram. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b006_3",
+  "prompt": "short circuit explained wires touching diagram. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b007_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio pointing at a diagram of a normal circuit and a short circuit side by side. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b007_1",
+  "prompt": "two animated arrows of different sizes on a whiteboard diagram. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b008_0",
+  "prompt": "overload vs short circuit difference breaker. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b008_1",
+  "prompt": "overload vs short circuit difference breaker. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b009_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio explaining with two fingers of his hands showing slow and fast, calm. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b009_1",
+  "prompt": "a breaker lever with a hand drawn clock next to it showing slow trip and fast trip. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b010_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio turning off the main switch of the panel with a firm movement, serious. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b011_0",
+  "prompt": "an electric panel with several breakers all in the down position. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b012_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio raising the main switch and then the first breaker, watching. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b012_1",
+  "prompt": "a hand raising the main switch and a breaker lever, with the lever staying up. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b014_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio unplugging devices from outlets in a living room, one by one. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b014_1",
+  "prompt": "a power strip and several plugs lying unplugged on a sofa. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b015_1",
+  "prompt": "appliance causing short circuit faulty cord. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b016_0",
+  "prompt": "a damaged power cord with exposed copper wires near the plug. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b016_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio showing the damaged cord with a pen, concerned. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b017_0",
+  "prompt": "a hand turning the breaker on and the lever staying up with the lights coming on. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b018_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio holding a multimeter set to continuity next to the opened panel, careful. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b019_0",
+  "prompt": "a multimeter display showing a continuity beep icon and a very low resistance value. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b019_1",
+  "prompt": "the multimeter probes touching two wire ends and the display showing a low value. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b019_2",
+  "prompt": "a multimeter display showing a continuity beep icon. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b020_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio explaining that a megger gives a better result, pointing at a gray instrument. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b021_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at the camera, firm. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b022_0",
+  "prompt": "a non contact voltage tester glowing red near a live wire and not glowing near a dead wire. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b023_1",
+  "prompt": "a junction box with several wires and a hand drawn plan of a house with rooms and boxes. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b024_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio opening a ceiling light fixture with an insulated screwdriver, careful. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b024_1",
+  "prompt": "a screwdriver loosening a ceiling light cover that falls into the hand. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b025_0",
+  "prompt": "a burnt wire nut with melted insulation inside a junction box. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b026_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shaking his head at a taped joint inside a box. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b026_1",
+  "prompt": "electrical tape splice wrong. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b028_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio running a hand along a wall without touching, explaining. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b028_1",
+  "prompt": "a wall with a thin line drawn showing the path of a hidden wire from a switch to a ceiling box. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b029_0",
+  "prompt": "rodents chewed wires attic short circuit. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b029_1",
+  "prompt": "rodents chewed wires attic short circuit. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b030_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio clamping the clamp meter around a single wire of a circuit and watching the display, focused. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b030_1",
+  "prompt": "clamp meter measuring current single wire. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b031_0",
+  "prompt": "a clamp meter display showing a current close to the breaker rating. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b031_1",
+  "prompt": "the display of the clamp meter rising slowly and stopping at a steady number. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b031_2",
+  "prompt": "a clamp meter display showing a current close. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b032_1",
+  "prompt": "fuga a tierra differential trips ground fault vs. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b033_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio comparing two breakers on the panel by pointing with two fingers. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b033_1",
+  "prompt": "a residual current breaker and a thermal breaker with different labels. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b034_0",
+  "prompt": "a thermal breaker with a big plastic screwdriver wedged into it to hold it up and a red warning cross. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b034_1",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio shaking his head strongly. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b035_0",
+  "prompt": "wrong breaker size thicker amperage wire overheating. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b035_1",
+  "prompt": "wrong breaker size thicker amperage wire overheating. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b036_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio standing back from the open panel with arms crossed, serious. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b037_0",
+  "prompt": "a short written note with three questions to ask an electrician. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b037_1",
+  "prompt": "electrician quote written. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b038_0",
+  "prompt": "annual electrical inspection home tester. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b038_1",
+  "prompt": "annual electrical inspection home tester. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b039_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio pointing a hand infrared thermometer at the breakers in a panel, curious. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b039_1",
+  "prompt": "a handheld infrared thermometer pointed at a panel with a number showing on its display. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b040_0",
+  "prompt": "a power strip overloaded with many plugs and a hot looking plastic edge. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b041_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio counting the four steps with his fingers. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ },
+ {
+  "name": "b041_1",
+  "prompt": "a whiteboard with four steps: isolate, disconnect, measure, locate. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs."
+ },
+ {
+  "name": "b043_0",
+  "prompt": "The presenter is a man of about 45 with black curly hair with volume and a short salt-and-pepper beard (exactly the face of the last input image), olive skin, wearing a navy-blue button-up work shirt with the sleeves rolled up, worn and marked with grease and dust, hands with grime. Claudio looking at the camera with a friendly smile. Candid photo taken on a modern smartphone, casual slightly imperfect framing with something cut by the edge of the frame, the only light is what the place really has, arriving from off frame, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic candid everyday snapshot, no filter, no ai look, mild sensor noise, no text, no letters, no labels, no signs.",
+  "ref": "public/ref_pzcorto_face.png"
+ }
+]
