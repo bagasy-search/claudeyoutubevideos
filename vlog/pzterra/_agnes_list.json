@@ -1,0 +1,37 @@
+[
+ {
+  "nombre": "b001_0",
+  "motion": "the three small lights on the tester blink in a warning pattern",
+  "change": ""
+ },
+ {
+  "nombre": "b007_1",
+  "motion": "the hand moves along the green and yellow wire",
+  "change": ""
+ },
+ {
+  "nombre": "b011_1",
+  "motion": "a green light turns on on the small tester",
+  "change": ""
+ },
+ {
+  "nombre": "b024_1",
+  "motion": "the rod sinks a little with each blow of the mallet",
+  "change": ""
+ },
+ {
+  "nombre": "b031_1",
+  "motion": "a finger traces the green and yellow wire to the screw",
+  "change": ""
+ },
+ {
+  "nombre": "b033_1",
+  "motion": "the breaker lever drops with a click",
+  "change": ""
+ },
+ {
+  "nombre": "b041_1",
+  "motion": "the display settles on a small number",
+  "change": ""
+ }
+]

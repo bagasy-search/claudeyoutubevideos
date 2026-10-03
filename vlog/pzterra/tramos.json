@@ -1,0 +1,443 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b001.wav",
+  "start": 0.0,
+  "len": 9.22,
+  "text": "Este enchufe parece normal. Pero detrás de él no hay puesta a tierra. Y esa falta es la que convierte una falla chica en un accidente."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b002.wav",
+  "start": 9.22,
+  "len": 8.94,
+  "text": "Soy Claudio. En este video te explico qué es la puesta a tierra, cómo se verifica con instrumentos, y los ocho pasos de cómo se instala bien."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b003.wav",
+  "start": 18.16,
+  "len": 9.81,
+  "text": "Sin tierra, si un cable pela dentro de la lavadora o del termotanque, la carcasa queda con tensión. Y vos sos el camino más corto hacia el piso."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b004.wav",
+  "start": 27.97,
+  "len": 11.09,
+  "text": "Y una advertencia desde ya: la parte final, conectar al tablero, es de electricista matriculado. Te enseño todo para que entiendas, controles y no te vendan humo."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b005.wav",
+  "start": 39.06,
+  "len": 5.75,
+  "text": "Son ocho pasos. Y se te van a hacer simples cuando entiendas para qué sirve cada uno."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b006.wav",
+  "start": 44.81,
+  "len": 9.78,
+  "text": "La puesta a tierra es un camino fácil para la corriente de falla: un cable verde y amarillo que une las carcasas metálicas con una jabalina enterrada."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b007.wav",
+  "start": 54.59,
+  "len": 8.75,
+  "text": "Si hay una falla, la corriente prefiere ese camino de baja resistencia, y el disyuntor salta enseguida. En lugar de pasar por tu cuerpo."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b008.wav",
+  "start": 63.34,
+  "len": 8.59,
+  "text": "La tierra trabaja junto con el disyuntor diferencial: sin tierra, el diferencial no tiene por dónde detectar la fuga, y no te protege."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b009.wav",
+  "start": 71.93,
+  "len": 10.58,
+  "text": "Son dos cosas distintas: la térmica protege la instalación contra sobrecarga, y el diferencial te protege a vos contra la fuga. Los dos necesitan la tierra."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b010.wav",
+  "start": 82.51,
+  "len": 10.2,
+  "text": "En casas viejas, los enchufes de dos agujeros no tienen tierra. Y los adaptadores de tres a dos, no son una solución: solo te hacen creer que estás protegido."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b011.wav",
+  "start": 92.71,
+  "len": 9.21,
+  "text": "Primero, un probador de enchufes de pocos pesos: se enchufa, y las luces te dicen si hay tierra, si están invertidos los cables, o si falta algo."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b012.wav",
+  "start": 101.92,
+  "len": 7.98,
+  "text": "Cada combinación tiene su significado. Si el probador marca tierra abierta, ese tomacorriente no tiene conexión a tierra."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b013.wav",
+  "start": 109.9,
+  "len": 9.32,
+  "text": "Segundo, con un multímetro: entre fase y tierra, la tensión tiene que ser la misma que entre fase y neutro. Si da cero, no hay tierra."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b014.wav",
+  "start": 119.22,
+  "len": 8.6,
+  "text": "Con las puntas siempre por la parte aislada, de a una mano, y sin tocar nada metálico con la otra. Es una medición de tensión peligrosa."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b015.wav",
+  "start": 127.82,
+  "len": 11.48,
+  "text": "Y tercero, la prueba seria: un telurímetro, que mide la resistencia de la jabalina. Lo tiene el electricista, y es lo único que te dice cuánta protección tenés de verdad."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b016.wav",
+  "start": 139.3,
+  "len": 10.11,
+  "text": "Un valor bajo es bueno; el máximo lo fija la reglamentación local. Por eso medir antes y después de instalar no es un lujo: es la prueba."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b017.wav",
+  "start": 149.41,
+  "len": 9.91,
+  "text": "Los materiales: una jabalina de acero con cobre, de metro y medio como mínimo; cable verde y amarillo de sección adecuada; y un grampa de bronce para unirlos."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b018.wav",
+  "start": 159.32,
+  "len": 7.72,
+  "text": "La jabalina tiene que ser la correcta: no sirve un caño cualquiera, un hierro de obra, ni una barra de construcción oxidada."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b019.wav",
+  "start": 167.04,
+  "len": 8.99,
+  "text": "El cable verde y amarillo, de la sección que indique la normativa. Y de un solo tramo hasta la barra del tablero, sin empalmes en el medio."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b020.wav",
+  "start": 176.03,
+  "len": 9.58,
+  "text": "Una caja de inspección en el piso, con tapa, para poder ver y medir la jabalina cada tanto. Sin eso, una tierra enterrada nadie la vuelve a controlar."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b021.wav",
+  "start": 185.61,
+  "len": 9.67,
+  "text": "Y las herramientas: destornilladores aislados, un detector de tensión sin contacto, pelacables y una maza. Todo en buen estado."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b022.wav",
+  "start": 195.28,
+  "len": 9.47,
+  "text": "Paso uno: elegir el lugar. Cerca del tablero, en tierra húmeda y blanda, lejos de cañerías de gas y de agua, y de cables enterrados."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b023.wav",
+  "start": 204.75,
+  "len": 8.91,
+  "text": "Antes de cavar, averiguá por dónde van las cañerías. Un pico contra una cañería de gas es un problema mucho peor que el que querías resolver."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b024.wav",
+  "start": 213.66,
+  "len": 8.77,
+  "text": "Paso dos: clavar la jabalina, vertical, con una maza, hasta que quede un poco sobre el piso. Con gafas y guantes, que el metal rebota."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b025.wav",
+  "start": 222.43,
+  "len": 11.27,
+  "text": "Con un protector en la punta de arriba para no deformarla. Si el suelo es duro o hay roca, se profundiza con barras adicionales, o se arma una malla de varias jabalinas."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b026.wav",
+  "start": 233.7,
+  "len": 9.02,
+  "text": "Paso tres: la grampa de bronce, bien apretada, con el cable verde y amarillo bien sujeto. Una conexión floja es una tierra falsa."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b027.wav",
+  "start": 242.72,
+  "len": 10.49,
+  "text": "Paso cuatro: el recorrido del cable, protegido en un caño, lo más corto y derecho posible hasta el tablero. Sin curvas cerradas ni cruces con cables de fuerza."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b028.wav",
+  "start": 253.21,
+  "len": 10.17,
+  "text": "Paso cinco, y acá se acaba la parte de bricolaje: conectar al tablero. Corte general, comprobación de que no hay tensión, y electricista matriculado."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b029.wav",
+  "start": 263.38,
+  "len": 8.06,
+  "text": "Él verifica con instrumento que no hay tensión, y conecta el cable de tierra a la barra del tablero. No es un trabajo para improvisar."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b030.wav",
+  "start": 271.44,
+  "len": 9.69,
+  "text": "Paso seis: unir las carcasas. Desde la barra de tierra salen los conductores a cada tomacorriente, y a las partes metálicas importantes de la instalación."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b031.wav",
+  "start": 281.13,
+  "len": 10.36,
+  "text": "En el enchufe, el verde y amarillo va al borne de tierra, y nunca se deja suelto ni se une al neutro. Cada tomacorriente, con su tierra."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b032.wav",
+  "start": 291.49,
+  "len": 11.09,
+  "text": "Paso siete: el disyuntor diferencial. Sin él, la tierra sola no corta la corriente a tiempo. Con él, una fuga de unos treinta miliamperios abre el circuito."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b033.wav",
+  "start": 302.58,
+  "len": 10.16,
+  "text": "Y el botón de prueba, una vez por mes: si el diferencial no salta, está roto, y no estás protegido. Es el control más barato que existe."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b034.wav",
+  "start": 312.74,
+  "len": 11.16,
+  "text": "Paso ocho: medir. Con el telurímetro, el electricista mide la resistencia de la tierra, y la anota. Si da mal, se agrega otra jabalina, o se trata el suelo."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b035.wav",
+  "start": 323.9,
+  "len": 10.21,
+  "text": "Error uno: usar la cañería de agua como tierra. Puede dejar la cañería con tensión para quien la toque, y en muchas casas hay tramos de plástico que la cortan."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b036.wav",
+  "start": 334.11,
+  "len": 9.2,
+  "text": "Error dos: unir tierra con neutro en el enchufe, para hacer que el probador dé verde. Es peligroso: la carcasa queda con tensión de retorno."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b037.wav",
+  "start": 343.31,
+  "len": 10.86,
+  "text": "Error tres: cortarle la espiga de tierra a un enchufe para que entre en un tomacorriente de dos agujeros. Es sacarte la protección del aparato."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b038.wav",
+  "start": 354.17,
+  "len": 12.93,
+  "text": "Error cuatro: alargues y zapatillas sin tierra para aparatos grandes. El aire acondicionado, la heladera y el termotanque van a un tomacorriente propio con tierra, y sin alargue."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b039.wav",
+  "start": 367.1,
+  "len": 9.91,
+  "text": "Error cinco: una varilla de construcción clavada como jabalina. Se oxida en meses, la conexión se afloja, y la tierra desaparece sin avisar."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b040.wav",
+  "start": 377.01,
+  "len": 11.28,
+  "text": "Una medida que sí podés hacer con la pinza: la corriente de fuga. Con la pinza abrazando solo el cable de tierra, en un equipo funcionando, no debería haber casi corriente."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b041.wav",
+  "start": 388.29,
+  "len": 9.04,
+  "text": "Si la pinza marca un valor alto en el cable de tierra, el aparato tiene una fuga: se desconecta y se revisa antes de seguir usándolo."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b042.wav",
+  "start": 397.33,
+  "len": 10.68,
+  "text": "Ojo: para fugas chicas hace falta una pinza sensible, de miliamperios. Una pinza común mide amperes, y no ve una fuga de treinta miliamperios."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b043.wav",
+  "start": 408.01,
+  "len": 10.56,
+  "text": "Si al tocar la carcasa de un aparato sentís un cosquilleo, no esperes: desenchufalo, y que lo revise un técnico. Ese cosquilleo es una fuga de corriente real."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b044.wav",
+  "start": 418.57,
+  "len": 12.25,
+  "text": "Los materiales cuestan poco comparados con un accidente: la jabalina, el cable, la grampa, la caja y un diferencial. La mano de obra del electricista es la parte más grande."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b045.wav",
+  "start": 430.82,
+  "len": 11.19,
+  "text": "Pedí presupuesto por escrito a dos o tres matriculados, y que te digan qué valor de resistencia van a medir y entregar. Una tierra sin medición es una promesa."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b046.wav",
+  "start": 442.01,
+  "len": 7.48,
+  "text": "Una casa con tierra y diferencial es la mejor inversión eléctrica que podés hacer. No se nota hasta el día que salva a alguien."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b047.wav",
+  "start": 449.49,
+  "len": 10.69,
+  "text": "Los ocho: elegir el lugar, clavar la jabalina, la grampa, el recorrido del cable, el tablero, las carcasas, el diferencial, y la medición."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b048.wav",
+  "start": 460.18,
+  "len": 10.14,
+  "text": "Con eso, tus aparatos tienen un camino seguro para una falla, y vos dormís más tranquilo. Y recordá: tablero siempre con electricista matriculado."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzterra/out/pzterra/tramos/b049.wav",
+  "start": 470.32,
+  "len": 10.164,
+  "text": "Si te sirvió, quedate en el canal. En el próximo, cómo detectar un cortocircuito en tu casa, paso a paso y sin jugártela. Contame si tu casa tiene tierra."
+ }
+]

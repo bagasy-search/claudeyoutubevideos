@@ -1,0 +1,898 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Este enchufe parece normal. Pero detrás de él no hay puesta a tierra. Y esa falta es la que convierte una falla chica en un accidente.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a hand testing an electric outlet with a small three light socket tester that shows a warning pattern, bright kitchen",
+    "motion": "the three small lights on the tester blink in a warning pattern"
+   },
+   {
+    "k": "W",
+    "v": "electrical outlet tester no ground"
+   },
+   {
+    "k": "W",
+    "v": "a hand testing an electric outlet with a"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio. En este video te explico qué es la puesta a tierra, cómo se verifica con instrumentos, y los ocho pasos de cómo se instala bien.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in a kitchen holding a clamp meter and an outlet tester, serious look"
+   },
+   {
+    "k": "G",
+    "v": "an outlet tester plugged into a wall socket on a kitchen counter wall"
+   },
+   {
+    "k": "W",
+    "v": "Claudio in a kitchen holding a clamp meter"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Sin tierra, si un cable pela dentro de la lavadora o del termotanque, la carcasa queda con tensión. Y vos sos el camino más corto hacia el piso.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "electric shock appliance ground fault home"
+   },
+   {
+    "k": "G",
+    "v": "a washing machine metal case with a faint electric spark symbol drawn on a sticker in a laundry"
+   },
+   {
+    "k": "W",
+    "v": "electric shock appliance ground fault home"
+   },
+   {
+    "k": "W",
+    "v": "electric shock appliance ground fault home"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y una advertencia desde ya: la parte final, conectar al tablero, es de electricista matriculado. Te enseño todo para que entiendas, controles y no te vendan humo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising one finger and looking at the camera, honest"
+   },
+   {
+    "k": "W",
+    "v": "honest electrician advice"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising one finger and looking at the"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising one finger and looking at the"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Son ocho pasos. Y se te van a hacer simples cuando entiendas para qué sirve cada uno.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a whiteboard with the title eight steps and a numbered list in marker"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping the board with a pen"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La puesta a tierra es un camino fácil para la corriente de falla: un cable verde y amarillo que une las carcasas metálicas con una jabalina enterrada.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "grounding system diagram house electrical"
+   },
+   {
+    "k": "G",
+    "v": "a simple diagram of a house with a green and yellow cable going from the outlet to a metal rod in the ground"
+   },
+   {
+    "k": "W",
+    "v": "grounding system diagram house electrical"
+   },
+   {
+    "k": "W",
+    "v": "grounding system diagram house electrical"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si hay una falla, la corriente prefiere ese camino de baja resistencia, y el disyuntor salta enseguida. En lugar de pasar por tu cuerpo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at the green and yellow cable on a wall socket plate, calm"
+   },
+   {
+    "k": "A",
+    "v": "a green and yellow wire inside an open outlet box with a hand pointing at it",
+    "motion": "the hand moves along the green and yellow wire"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pointing at the green and yellow cable"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La tierra trabaja junto con el disyuntor diferencial: sin tierra, el diferencial no tiene por dónde detectar la fuga, y no te protege.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a residual current breaker and a thermal breaker side by side on a rail"
+   },
+   {
+    "k": "W",
+    "v": "differential switch breaker panel"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Son dos cosas distintas: la térmica protege la instalación contra sobrecarga, y el diferencial te protege a vos contra la fuga. Los dos necesitan la tierra.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio comparing two breakers with both hands, explaining"
+   },
+   {
+    "k": "W",
+    "v": "electric panel explained"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En casas viejas, los enchufes de dos agujeros no tienen tierra. Y los adaptadores de tres a dos, no son una solución: solo te hacen creer que estás protegido.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old house two prong outlets no ground"
+   },
+   {
+    "k": "G",
+    "v": "an old wall outlet with only two holes and cracked paint"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, un probador de enchufes de pocos pesos: se enchufa, y las luces te dicen si hay tierra, si están invertidos los cables, o si falta algo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio plugging an outlet tester into a wall socket and reading the lights, focused"
+   },
+   {
+    "k": "A",
+    "v": "an outlet tester plugged into a socket with three small lights, one lighting up green",
+    "motion": "a green light turns on on the small tester"
+   },
+   {
+    "k": "W",
+    "v": "Claudio plugging an outlet tester into a wall"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada combinación tiene su significado. Si el probador marca tierra abierta, ese tomacorriente no tiene conexión a tierra.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a table on a card that explains the light patterns of an outlet tester with three small icons"
+   },
+   {
+    "k": "W",
+    "v": "outlet tester light meaning"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo, con un multímetro: entre fase y tierra, la tensión tiene que ser la misma que entre fase y neutro. Si da cero, no hay tierra.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "multimeter measuring voltage outlet neutral ground"
+   },
+   {
+    "k": "P",
+    "v": "Claudio measuring with a multimeter between the live and ground slots, careful with insulated probes"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con las puntas siempre por la parte aislada, de a una mano, y sin tocar nada metálico con la otra. Es una medición de tensión peligrosa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio keeping the probes by their insulated handles and looking at the display, serious"
+   },
+   {
+    "k": "G",
+    "v": "a multimeter display showing a voltage reading near the nominal one"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y tercero, la prueba seria: un telurímetro, que mide la resistencia de la jabalina. Lo tiene el electricista, y es lo único que te dice cuánta protección tenés de verdad.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "ground resistance telurometer earth tester"
+   },
+   {
+    "k": "G",
+    "v": "a ground resistance tester with two stakes and cables laid on grass beside a house"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un valor bajo es bueno; el máximo lo fija la reglamentación local. Por eso medir antes y después de instalar no es un lujo: es la prueba.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining that the value should be low and measured, holding a card with a small number"
+   },
+   {
+    "k": "W",
+    "v": "ground resistance value ohms"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los materiales: una jabalina de acero con cobre, de metro y medio como mínimo; cable verde y amarillo de sección adecuada; y un grampa de bronce para unirlos.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a green and yellow cable coil, a copper clad rod and a clamp laid on a workshop floor"
+   },
+   {
+    "k": "W",
+    "v": "grounding rod copper electrode kit"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La jabalina tiene que ser la correcta: no sirve un caño cualquiera, un hierro de obra, ni una barra de construcción oxidada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a copper clad rod standing it on the ground, nodding"
+   },
+   {
+    "k": "G",
+    "v": "a copper clad grounding rod with a bronze clamp attached at the top"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El cable verde y amarillo, de la sección que indique la normativa. Y de un solo tramo hasta la barra del tablero, sin empalmes en el medio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "grounding cable section sizing house"
+   },
+   {
+    "k": "G",
+    "v": "a spool of green and yellow cable next to a tape measure"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una caja de inspección en el piso, con tapa, para poder ver y medir la jabalina cada tanto. Sin eso, una tierra enterrada nadie la vuelve a controlar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio showing a bronze clamp and a small box with a lid, explaining"
+   },
+   {
+    "k": "G",
+    "v": "a small inspection box with lid set into the soil beside a rod"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y las herramientas: destornilladores aislados, un detector de tensión sin contacto, pelacables y una maza. Todo en buen estado.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "electrician tools insulated screwdriver tester"
+   },
+   {
+    "k": "G",
+    "v": "a set of insulated screwdrivers, a non contact voltage tester and cutters on a bench"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso uno: elegir el lugar. Cerca del tablero, en tierra húmeda y blanda, lejos de cañerías de gas y de agua, y de cables enterrados.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in the garden next to a marked spot at the base of a wall, pointing at the ground"
+   },
+   {
+    "k": "W",
+    "v": "garden outside wall house"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de cavar, averiguá por dónde van las cañerías. Un pico contra una cañería de gas es un problema mucho peor que el que querías resolver.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small marked square on the ground with a hand drawn arrow showing the distance to the electric panel"
+   },
+   {
+    "k": "W",
+    "v": "buried pipes warning before digging"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso dos: clavar la jabalina, vertical, con una maza, hasta que quede un poco sobre el piso. Con gafas y guantes, que el metal rebota.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio driving a copper clad rod into the soil with a mallet, wearing gloves and safety glasses"
+   },
+   {
+    "k": "A",
+    "v": "a mallet striking the top of a copper clad rod that sinks slowly into the soil",
+    "motion": "the rod sinks a little with each blow of the mallet"
+   },
+   {
+    "k": "W",
+    "v": "Claudio driving a copper clad rod into the"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un protector en la punta de arriba para no deformarla. Si el suelo es duro o hay roca, se profundiza con barras adicionales, o se arma una malla de varias jabalinas.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "driving ground rod deep hard soil"
+   },
+   {
+    "k": "G",
+    "v": "a ground rod with a driving cap protecting the top while being struck"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso tres: la grampa de bronce, bien apretada, con el cable verde y amarillo bien sujeto. Una conexión floja es una tierra falsa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small bronze clamp tightened with a wrench on the top of the rod"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tightening the clamp with a wrench, concentrated"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cuatro: el recorrido del cable, protegido en un caño, lo más corto y derecho posible hasta el tablero. Sin curvas cerradas ni cruces con cables de fuerza.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "ground wire route outside wall conduit house"
+   },
+   {
+    "k": "G",
+    "v": "a green and yellow cable inside a flexible conduit running along a wall to a distribution board"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cinco, y acá se acaba la parte de bricolaje: conectar al tablero. Corte general, comprobación de que no hay tensión, y electricista matriculado.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a closed electrical panel with a serious face, hand raised like a stop sign"
+   },
+   {
+    "k": "W",
+    "v": "electric panel main switch off"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Él verifica con instrumento que no hay tensión, y conecta el cable de tierra a la barra del tablero. No es un trabajo para improvisar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an electrician with a non contact voltage tester checking the wires inside a panel with the cover off"
+   },
+   {
+    "k": "W",
+    "v": "licensed electrician working panel"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso seis: unir las carcasas. Desde la barra de tierra salen los conductores a cada tomacorriente, y a las partes metálicas importantes de la instalación.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "grounding bar electric panel house"
+   },
+   {
+    "k": "G",
+    "v": "a metal grounding bar with several green and yellow wires attached in a distribution board"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En el enchufe, el verde y amarillo va al borne de tierra, y nunca se deja suelto ni se une al neutro. Cada tomacorriente, con su tierra.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio opening the cover of an outlet to show the green and yellow wire connected to the ground terminal, careful"
+   },
+   {
+    "k": "A",
+    "v": "an outlet opened showing a green and yellow wire connected to a ground screw",
+    "motion": "a finger traces the green and yellow wire to the screw"
+   },
+   {
+    "k": "W",
+    "v": "Claudio opening the cover of an outlet to"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso siete: el disyuntor diferencial. Sin él, la tierra sola no corta la corriente a tiempo. Con él, una fuga de unos treinta miliamperios abre el circuito.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "install differential switch breaker panel house"
+   },
+   {
+    "k": "G",
+    "v": "a new residual current breaker mounted on a rail in a panel"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el botón de prueba, una vez por mes: si el diferencial no salta, está roto, y no estás protegido. Es el control más barato que existe.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pressing the test button of a residual current breaker with one finger, confident"
+   },
+   {
+    "k": "A",
+    "v": "a finger pressing the small test button on a residual current breaker and the lever dropping",
+    "motion": "the breaker lever drops with a click"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pressing the test button of a residual"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso ocho: medir. Con el telurímetro, el electricista mide la resistencia de la tierra, y la anota. Si da mal, se agrega otra jabalina, o se trata el suelo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "measure ground resistance after installation"
+   },
+   {
+    "k": "G",
+    "v": "a telurometer connected to the ground rod with a test lead on grass"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Error uno: usar la cañería de agua como tierra. Puede dejar la cañería con tensión para quien la toque, y en muchas casas hay tramos de plástico que la cortan.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a wrongly connected pipe clamp, serious"
+   },
+   {
+    "k": "G",
+    "v": "a water pipe with a clamp and a wire attached to it, rusty"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Error dos: unir tierra con neutro en el enchufe, para hacer que el probador dé verde. Es peligroso: la carcasa queda con tensión de retorno.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "neutral and ground connected together wrong"
+   },
+   {
+    "k": "G",
+    "v": "two wires connected together on a terminal strip in a messy panel"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Error tres: cortarle la espiga de tierra a un enchufe para que entre en un tomacorriente de dos agujeros. Es sacarte la protección del aparato.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a plug with the ground pin broken off, shaking his head"
+   },
+   {
+    "k": "G",
+    "v": "a plug with a broken ground pin lying on a table next to a cut off pin"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Error cuatro: alargues y zapatillas sin tierra para aparatos grandes. El aire acondicionado, la heladera y el termotanque van a un tomacorriente propio con tierra, y sin alargue.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cheap extension cord no ground"
+   },
+   {
+    "k": "W",
+    "v": "cheap extension cord no ground"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Error cinco: una varilla de construcción clavada como jabalina. Se oxida en meses, la conexión se afloja, y la tierra desaparece sin avisar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a cheap rod made from a piece of rebar, shaking head"
+   },
+   {
+    "k": "G",
+    "v": "a rusted piece of construction rebar planted in the ground with a wire wrapped around it"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una medida que sí podés hacer con la pinza: la corriente de fuga. Con la pinza abrazando solo el cable de tierra, en un equipo funcionando, no debería haber casi corriente.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "clamp meter leakage current measurement"
+   },
+   {
+    "k": "P",
+    "v": "Claudio clamping a clamp meter around the green and yellow ground wire at a panel, careful"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si la pinza marca un valor alto en el cable de tierra, el aparato tiene una fuga: se desconecta y se revisa antes de seguir usándolo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter display showing a very small current reading in milliamps"
+   },
+   {
+    "k": "A",
+    "v": "a clamp closing around a single green and yellow wire with the display showing a small number",
+    "motion": "the display settles on a small number"
+   },
+   {
+    "k": "W",
+    "v": "a clamp meter display showing a very small"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ojo: para fugas chicas hace falta una pinza sensible, de miliamperios. Una pinza común mide amperes, y no ve una fuga de treinta miliamperios.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining that this measure needs a clamp with leakage sensitivity, calm"
+   },
+   {
+    "k": "W",
+    "v": "leakage clamp meter sensitivity"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si al tocar la carcasa de un aparato sentís un cosquilleo, no esperes: desenchufalo, y que lo revise un técnico. Ese cosquilleo es una fuga de corriente real.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old appliance leaking current metal case tingling"
+   },
+   {
+    "k": "G",
+    "v": "a metal case of an old fridge with a hand tester close to it"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los materiales cuestan poco comparados con un accidente: la jabalina, el cable, la grampa, la caja y un diferencial. La mano de obra del electricista es la parte más grande.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio with a small notebook counting costs on his fingers, honest face"
+   },
+   {
+    "k": "W",
+    "v": "grounding installation cost materials"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pedí presupuesto por escrito a dos o tres matriculados, y que te digan qué valor de resistencia van a medir y entregar. Una tierra sin medición es una promesa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "three quotes written on a notepad with the lowest one circled"
+   },
+   {
+    "k": "W",
+    "v": "ask for written quote electrician"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una casa con tierra y diferencial es la mejor inversión eléctrica que podés hacer. No se nota hasta el día que salva a alguien.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio nodding to the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "safe home electrical"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los ocho: elegir el lugar, clavar la jabalina, la grampa, el recorrido del cable, el tablero, las carcasas, el diferencial, y la medición.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the eight steps listed on a whiteboard in short phrases"
+   },
+   {
+    "k": "P",
+    "v": "Claudio running a marker along the list"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con eso, tus aparatos tienen un camino seguro para una falla, y vos dormís más tranquilo. Y recordá: tablero siempre con electricista matriculado.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "smiling person plugging in appliance safely kitchen"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling in a kitchen"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quedate en el canal. En el próximo, cómo detectar un cortocircuito en tu casa, paso a paso y sin jugártela. Contame si tu casa tiene tierra.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly electrician advice"
+   }
+  ]
+ }
+]
