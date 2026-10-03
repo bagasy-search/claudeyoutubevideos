@@ -22,7 +22,7 @@
 // NO es defecto: texto borroso, deriva lenta de cámara, fuego/humo/agua cambiando, brazos que entran por un borde.
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync as _execFileSync, spawnSync as _spawnSync } from "node:child_process"; const execFileSync = (c, a, o) => Array.isArray(a) ? _execFileSync(c, a, { windowsHide: true, ...(o || {}) }) : _execFileSync(c, { windowsHide: true, ...(a || {}) }); const spawnSync = (c, a, o) => Array.isArray(a) ? _spawnSync(c, a, { windowsHide: true, ...(o || {}) }) : _spawnSync(c, { windowsHide: true, ...(a || {}) }); // sin ventanas de consola (27-sep)
+import { execFileSync, spawnSync } from "node:child_process";
 
 const [SLUG, ...args] = process.argv.slice(2);
 if (!SLUG) { console.error("uso: node scripts/agnes_qc.mjs <slug> [--revision \"ninguno|pNNN:motivo;...\"] [--fix]"); process.exit(1); }
@@ -56,12 +56,20 @@ for (const f of fs.readdirSync("_v3").filter((f) => f.startsWith(`${SLUG}_i2v`) 
     if (Array.isArray(arr)) for (const it of arr) if (it && it.nombre) info[it.nombre] = { ...info[it.nombre], ...it, person: !!(it.person || it.pres || it.gente) };
   } catch { /* no es lista de i2v */ }
 }
-const names = Object.keys(info).filter((n) => fs.existsSync(clipOf(n))).sort();
+// ⛔ El registro de agnes guarda TAMBIÉN los nombres que después pisó el METRAJE REAL de Pexels
+//    (medido en fbtelgopor/fbdeterg, 18-sep-2026: los 28/33 planos con `st` estaban en los dos lados).
+//    Si el QC los revisa como si fueran de agnes, un "rechazado" los manda a regenerar y el clip real
+//    desaparece. El registro de stock manda: lo que es metraje real NO lo revisa el QC de agnes.
+const REAL = (() => {
+  try { return new Set(Object.keys(JSON.parse(fs.readFileSync(`_v3/${SLUG}_stock.json`, "utf8")))); }
+  catch { return new Set(); }
+})();
+const names = Object.keys(info).filter((n) => !REAL.has(n) && fs.existsSync(clipOf(n))).sort();
 const doc = fs.existsSync(OUTJ) ? JSON.parse(fs.readFileSync(OUTJ, "utf8")) : {};
 doc.clips ||= {};
 const guardar = () => { doc.version = 2; doc.slug = SLUG; doc.at = new Date().toISOString(); fs.writeFileSync(OUTJ, JSON.stringify(doc, null, 1)); };
 const vigente = (n) => { const c = doc.clips[n], st = stamp(clipOf(n)); return c && c.size === st.size && c.mtime === st.mtime; };
-console.log(`agnes_qc · ${SLUG} · ${Object.keys(info).length} clips registrados · ${names.length} en disco`);
+console.log(`agnes_qc · ${SLUG} · ${Object.keys(info).length} clips registrados · ${REAL.size} son metraje REAL (no se revisan) · ${names.length} en disco a revisar`);
 
 // ---------- 2. registrar la revisión a ojo de las últimas hojas ----------
 if (REV !== null) {
@@ -124,7 +132,12 @@ List ONLY clear problems a viewer would notice: a person or feet/legs that were 
 Answer ONLY JSON: {"suspect": true|false, "hint": "<max 10 words, empty if none>"}`;
 
 async function medir(n) {
-  const clip = clipOf(n), it = info[n], st = stamp(clip);
+  const clip = clipOf(n), it = info[n];
+  // Una compuerta NO se cae: informa. Antes `stamp()` tiraba ENOENT en el primer clip que
+  // faltara y mataba la corrida entera, asi que en vez de "faltan 46" salia un stack de fs.statSync
+  // (medido en cmeamazon: 264 de 310 generados, se cayo en p083x).
+  if (!fs.existsSync(clip)) return { size: 0, mtime: 0, dur: 0, auto: "clip inexistente", hint: "" };
+  const st = stamp(clip);
   const r = { ...st, auto: null, hint: "" };
   let fps = "", dur = 0;
   try { fps = probe(["-select_streams", "v", "-show_entries", "stream=r_frame_rate", "-of", "csv=p=0", clip]); dur = +probe(["-show_entries", "format=duration", "-of", "csv=p=0", clip]); } catch {}
