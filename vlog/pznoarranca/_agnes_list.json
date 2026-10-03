@@ -1,0 +1,22 @@
+[
+ {
+  "nombre": "b001_0",
+  "motion": "the person presses the button repeatedly and the unit stays dark",
+  "change": ""
+ },
+ {
+  "nombre": "b011_1",
+  "motion": "the lever clicks down and then back up",
+  "change": ""
+ },
+ {
+  "nombre": "b024_1",
+  "motion": "the green light blinks and the louver starts to move",
+  "change": ""
+ },
+ {
+  "nombre": "b043_1",
+  "motion": "water gushes out of the hose end and then slows to a drip",
+  "change": ""
+ }
+]

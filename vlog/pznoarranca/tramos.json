@@ -1,0 +1,542 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b001.wav",
+  "start": 0.0,
+  "len": 7.38,
+  "text": "Prendés el aire en pleno calor, apretás el botón, y no pasa nada. Antes de llamar a un técnico, mirá esto."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b002.wav",
+  "start": 7.38,
+  "len": 7.49,
+  "text": "Una gran parte de las visitas por \"no arranca\" se resuelven en cinco minutos y sin repuestos. Y cuestan lo mismo que una cena."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b003.wav",
+  "start": 14.87,
+  "len": 7.74,
+  "text": "Yo mismo cobré visitas para apretar una ficha o cambiar pilas. Y me da algo de vergüenza, porque tendrías que saberlo vos."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b004.wav",
+  "start": 22.61,
+  "len": 7.97,
+  "text": "Una vez cobré una visita y el problema era una ficha floja. El cliente me lo agradeció, pero yo sentí que había cobrado de más."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b005.wav",
+  "start": 30.58,
+  "len": 9.0,
+  "text": "Son tres cosas: la alimentación, el control remoto y la protección del equipo. Revisándolas en orden, casi siempre aparece el problema."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b006.wav",
+  "start": 39.58,
+  "len": 7.19,
+  "text": "Y si no aparece, al menos le vas a decir al técnico exactamente qué probaste. Y eso le ahorra tiempo, y a vos plata."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b007.wav",
+  "start": 46.77,
+  "len": 9.19,
+  "text": "Una regla: sin abrir equipos ni tocar cableados internos. Todo lo que muestro se hace por fuera, con el aire desenchufado cuando haga falta."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b008.wav",
+  "start": 55.96,
+  "len": 9.82,
+  "text": "Para estas revisiones alcanza con una linterna, pilas nuevas, un destornillador y, si tenés, un multímetro. Nada de herramientas raras."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b009.wav",
+  "start": 65.78,
+  "len": 7.63,
+  "text": "Primera cosa: la energía. ¿Le llega electricidad al aire? Parece una pregunta tonta, y es la causa más común."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b010.wav",
+  "start": 73.41,
+  "len": 9.39,
+  "text": "La electricidad llega del medidor al tablero, después al circuito del aire, y de ahí al tomacorriente. Un corte en cualquier punto lo apaga."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b011.wav",
+  "start": 82.8,
+  "len": 8.33,
+  "text": "Mirá el tablero: si la térmica del aire está a medio camino, o abajo, saltó. Se baja del todo y se vuelve a subir."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b012.wav",
+  "start": 91.13,
+  "len": 10.13,
+  "text": "Y si hay un disyuntor diferencial, verificá que esté arriba. Si salta siempre al prender el aire, hay una falla de aislación, y se llama a un electricista."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b013.wav",
+  "start": 101.26,
+  "len": 9.97,
+  "text": "Cuando la térmica salta apenas arrancás, puede ser un cortocircuito, un motor trabado, o un cable dañado. Ahí es un trabajo de electricista."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b014.wav",
+  "start": 111.23,
+  "len": 7.34,
+  "text": "Si vuelve a saltar apenas arranca, no insistas: la térmica está protegiendo algo, y forzarla es peligroso."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b015.wav",
+  "start": 118.57,
+  "len": 8.87,
+  "text": "Si el aire se enchufa, fijate que la ficha entre firme y no esté tibia ni oscurecida. Un falso contacto hace que no arranque."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b016.wav",
+  "start": 127.44,
+  "len": 9.17,
+  "text": "Con un probador de tomacorriente de pocos pesos verificás que haya tensión y tierra. Un tomacorriente flojo es un riesgo de incendio."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b017.wav",
+  "start": 136.61,
+  "len": 8.53,
+  "text": "Con un multímetro, la tensión tiene que dar unos doscientos veinte. Si da mucho menos, el problema está en la instalación, no en el aire."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b018.wav",
+  "start": 145.14,
+  "len": 8.73,
+  "text": "Con tensión baja, por ejemplo menos de doscientos, el compresor no arranca, o lo hace con esfuerzo. Pasa en barrios con la red cargada."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b019.wav",
+  "start": 153.87,
+  "len": 8.53,
+  "text": "Hay protectores de tensión que desconectan el aire si la red está mal. Cuidan el equipo, pero también pueden ser la razón de que no arranque."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b020.wav",
+  "start": 162.4,
+  "len": 8.57,
+  "text": "Probá otro aparato en el mismo tomacorriente, o una lámpara en el mismo circuito. Si tampoco anda, es la línea la que falla."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b021.wav",
+  "start": 170.97,
+  "len": 7.41,
+  "text": "Y si todo el barrio está sin luz, ya tenés la respuesta. Parece gracioso, pero a veces es lo primero que hay que mirar."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b022.wav",
+  "start": 178.38,
+  "len": 8.29,
+  "text": "Segunda cosa: el control remoto. Las pilas descargadas son el motivo número uno de que un aire \"no responda\"."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b023.wav",
+  "start": 186.67,
+  "len": 8.75,
+  "text": "El control manda un rayo infrarrojo a la ventanita de la unidad, que es un receptor. Si algo tapa esa señal, no hay orden."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b024.wav",
+  "start": 195.42,
+  "len": 8.7,
+  "text": "Pilas nuevas, bien puestas. Y apuntá hacia la unidad: cuando recibe la señal, hace un pitido o parpadea una luz."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b025.wav",
+  "start": 204.12,
+  "len": 8.25,
+  "text": "Si ves polvo blanco en los contactos, limpialos con un hisopo con alcohol. La pila vieja que perdió líquido arruina el contacto."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b026.wav",
+  "start": 212.37,
+  "len": 8.24,
+  "text": "Truco: abrí la cámara del celular y apuntá el control. Si se ve una luz violeta cuando apretás, el control emite señal."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b027.wav",
+  "start": 220.61,
+  "len": 8.45,
+  "text": "Y mirá la ventanita receptora de la unidad: si está sucia o tapada con una pegatina, no recibe la señal. Limpiala con un paño seco."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b028.wav",
+  "start": 229.06,
+  "len": 8.15,
+  "text": "Revisá el modo: tiene que estar en frío, no en ventilador ni en seco. Y la temperatura, bien por debajo de la del ambiente."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b029.wav",
+  "start": 237.21,
+  "len": 8.31,
+  "text": "El modo seco, con la gotita, saca humedad pero casi no enfría. Mucha gente cree que el aire no funciona y está en modo seco."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b030.wav",
+  "start": 245.52,
+  "len": 7.04,
+  "text": "Hay un candado, el bloqueo, que deja el control sin respuesta. Si lo ves, se sale con la combinación del manual."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b031.wav",
+  "start": 252.56,
+  "len": 8.13,
+  "text": "Y el temporizador: a veces queda programado, y el aire se apaga o no prende cuando uno cree. Cancelalo y probá de nuevo."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b032.wav",
+  "start": 260.69,
+  "len": 8.46,
+  "text": "Casi todas las unidades tienen un botón de emergencia, atrás del panel o abajo. Con ese botón, prendés sin control."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b033.wav",
+  "start": 269.15,
+  "len": 8.34,
+  "text": "El botón de emergencia suele estar atrás del panel frontal, a un costado. Se mantiene apretado unos segundos y arranca en modo automático."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b034.wav",
+  "start": 277.49,
+  "len": 8.12,
+  "text": "Si arranca con ese botón, el aire está bien y el culpable es el control. Un repuesto de pocos pesos, y listo."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b035.wav",
+  "start": 285.61,
+  "len": 7.64,
+  "text": "Tercera cosa: las protecciones. El aire se protege solo, y si algo anda mal, no arranca y te avisa con luces."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b036.wav",
+  "start": 293.25,
+  "len": 6.82,
+  "text": "Es como las luces del tablero de un auto: el equipo te avisa que algo está mal, y se frena para no romperse."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b037.wav",
+  "start": 300.07,
+  "len": 7.6,
+  "text": "Cada marca tiene códigos: parpadeos o números en el display. El manual de tu modelo te dice qué significa cada uno."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b038.wav",
+  "start": 307.67,
+  "len": 8.71,
+  "text": "Si perdiste el manual, buscalo en internet con el modelo, que está en la etiqueta de la unidad. Casi todos los manuales están disponibles."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b039.wav",
+  "start": 316.38,
+  "len": 8.86,
+  "text": "Primero, la espera. Si lo acabás de apagar, no arranca por unos tres minutos: es la protección del compresor. Esperá y probá."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b040.wav",
+  "start": 325.24,
+  "len": 7.94,
+  "text": "Es normal que haya un retraso: el compresor necesita que las presiones se equilibren. Tomate un mate y volvé en tres minutos."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b041.wav",
+  "start": 333.18,
+  "len": 8.28,
+  "text": "Muchos equipos tienen un sensor de agua: si la bandeja se llena porque el desagüe está tapado, el equipo no arranca, para no inundar."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b042.wav",
+  "start": 341.46,
+  "len": 8.24,
+  "text": "Es un flotante, como el de una cisterna: cuando el agua sube, corta el arranque. Una protección contra la inundación de tu living."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b043.wav",
+  "start": 349.7,
+  "len": 7.73,
+  "text": "Si la bandeja tiene agua, se destapa el desagüe. Y apenas drena, el equipo vuelve a la vida. Lo vi una docena de veces."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b044.wav",
+  "start": 357.43,
+  "len": 9.26,
+  "text": "Otra protección es por hielo: si el serpentín está congelado, el equipo se detiene. Lo apagás, esperás que se derrita, y limpiás el filtro."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b045.wav",
+  "start": 366.69,
+  "len": 7.12,
+  "text": "Un sensor en el serpentín mide la temperatura: si baja demasiado, el equipo se detiene hasta que suba."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b046.wav",
+  "start": 373.81,
+  "len": 8.97,
+  "text": "El filtro sucio es la causa de casi todos los congelamientos. Lavalo, y si el problema se repite, llamá a un técnico: puede ser gas."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b047.wav",
+  "start": 382.78,
+  "len": 7.0,
+  "text": "Y en la unidad de afuera: si está tapada de hojas o con poca ventilación, se recalienta y se corta por protección."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b048.wav",
+  "start": 389.78,
+  "len": 7.86,
+  "text": "Una unidad exterior encerrada en un hueco chico no puede botar el calor, y se corta. Pasa más de lo que pensás."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b049.wav",
+  "start": 397.64,
+  "len": 8.02,
+  "text": "Despejala, que el aire circule, y dejá que se enfríe veinte minutos antes de probar. Muchas veces vuelve sola."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b050.wav",
+  "start": 405.66,
+  "len": 8.81,
+  "text": "Si hiciste las tres cosas y sigue igual, ya podés decirle al técnico: la energía está, el control probado, protecciones revisadas."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b051.wav",
+  "start": 414.47,
+  "len": 9.83,
+  "text": "Cuando llames, decile: modelo, qué luces ves, qué probaste y desde cuándo falla. Con eso el técnico ya llega con las piezas probables."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b052.wav",
+  "start": 424.3,
+  "len": 8.36,
+  "text": "Ahí entran las causas que sí necesitan un técnico: capacitor de arranque, contactor, placa, sensor, o el compresor mismo."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b053.wav",
+  "start": 432.66,
+  "len": 7.45,
+  "text": "El capacitor es el más común, y no es caro. El diagnóstico lo hace con un medidor, y lo cambia en minutos."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b054.wav",
+  "start": 440.11,
+  "len": 8.23,
+  "text": "El técnico lo mide: si da menos que lo que dice la etiqueta, se cambia. Es una pieza chica que cuesta poco, y salva todo el equipo."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b055.wav",
+  "start": 448.34,
+  "len": 8.11,
+  "text": "Pedí que te muestre la pieza fallada, y preguntá el precio del repuesto aparte de la mano de obra. Con eso no hay sorpresas."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b056.wav",
+  "start": 456.45,
+  "len": 8.41,
+  "text": "Y no abras la unidad exterior por tu cuenta: el capacitor guarda carga aunque esté desenchufado. Esa parte es del técnico."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b057.wav",
+  "start": 464.86,
+  "len": 8.02,
+  "text": "Las tres: alimentación, control remoto, protecciones. Veinte minutos de revisión que te pueden ahorrar una visita."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b058.wav",
+  "start": 472.88,
+  "len": 8.25,
+  "text": "Y cuando arranca, cuidalo: filtro limpio, desagüe libre, unidad exterior despejada. Así no vuelve a pasar."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b059.wav",
+  "start": 481.13,
+  "len": 8.29,
+  "text": "Anotá en el calendario una limpieza mensual en verano. Un aire que nunca falla es un aire al que se le dedicó cinco minutos al mes."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pznoarranca/out/pznoarranca/tramos/b060.wav",
+  "start": 489.42,
+  "len": 8.912,
+  "text": "Si te sirvió, quedate en el canal. En el próximo, cómo estás limpiando mal tu aire y te cuesta plata. Y contame cuál era tu problema."
+ }
+]

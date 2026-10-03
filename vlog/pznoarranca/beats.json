@@ -1,0 +1,1070 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Prendés el aire en pleno calor, apretás el botón, y no pasa nada. Antes de llamar a un técnico, mirá esto.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a person pressing the power button of an air conditioner remote pointing at a dark unit that does not respond, a hot sunny living room",
+    "motion": "the person presses the button repeatedly and the unit stays dark"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner not working remote"
+   },
+   {
+    "k": "W",
+    "v": "a person pressing the power button of an"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una gran parte de las visitas por \"no arranca\" se resuelven en cinco minutos y sin repuestos. Y cuestan lo mismo que una cena.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in a hot living room holding a remote and a clamp meter with a calm reassuring look"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner remote and a clamp meter on a coffee table in a living room"
+   },
+   {
+    "k": "W",
+    "v": "Claudio standing in a hot living room holding"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Yo mismo cobré visitas para apretar una ficha o cambiar pilas. Y me da algo de vergüenza, porque tendrías que saberlo vos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician visit invoice air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "an invoice for an air conditioner service visit with a high amount lying on a kitchen table"
+   },
+   {
+    "k": "W",
+    "v": "technician visit invoice air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una vez cobré una visita y el problema era una ficha floja. El cliente me lo agradeció, pero yo sentí que había cobrado de más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio smiling sheepishly at the camera in a living room"
+   },
+   {
+    "k": "W",
+    "v": "technician embarrassed"
+   },
+   {
+    "k": "W",
+    "v": "Claudio smiling sheepishly at the camera in a"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Son tres cosas: la alimentación, el control remoto y la protección del equipo. Revisándolas en orden, casi siempre aparece el problema.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising three fingers toward the camera"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three numbered items drawn: power, remote and drain"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising three fingers toward the camera"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si no aparece, al menos le vas a decir al técnico exactamente qué probaste. Y eso le ahorra tiempo, y a vos plata.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hot summer afternoon living room"
+   },
+   {
+    "k": "P",
+    "v": "Claudio wiping his forehead and looking at the unit with a smile"
+   },
+   {
+    "k": "W",
+    "v": "hot summer afternoon living room"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una regla: sin abrir equipos ni tocar cableados internos. Todo lo que muestro se hace por fuera, con el aire desenchufado cuando haga falta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at a power cable with a serious expression"
+   },
+   {
+    "k": "W",
+    "v": "electrical safety warning"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pointing at a power cable with a"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para estas revisiones alcanza con una linterna, pilas nuevas, un destornillador y, si tenés, un multímetro. Nada de herramientas raras.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "tools screwdriver multimeter"
+   },
+   {
+    "k": "G",
+    "v": "a basic toolkit on a table with a multimeter, a screwdriver, a flashlight and fresh batteries"
+   },
+   {
+    "k": "W",
+    "v": "tools screwdriver multimeter"
+   },
+   {
+    "k": "W",
+    "v": "tools screwdriver multimeter"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primera cosa: la energía. ¿Le llega electricidad al aire? Parece una pregunta tonta, y es la causa más común.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "circuit breaker panel home"
+   },
+   {
+    "k": "G",
+    "v": "a household panel with several breakers and one tripped halfway between on and off"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La electricidad llega del medidor al tablero, después al circuito del aire, y de ahí al tomacorriente. Un corte en cualquier punto lo apaga.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a diagram on a whiteboard showing the path of electricity from the street meter to the panel, the circuit and the outlet"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tracing the path of the electricity with a marker"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mirá el tablero: si la térmica del aire está a medio camino, o abajo, saltó. Se baja del todo y se vuelve a subir.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at a tripped breaker in the panel"
+   },
+   {
+    "k": "A",
+    "v": "a hand pushing a tripped breaker lever fully down and then up to reset it",
+    "motion": "the lever clicks down and then back up"
+   },
+   {
+    "k": "W",
+    "v": "Claudio pointing at a tripped breaker in the"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si hay un disyuntor diferencial, verificá que esté arriba. Si salta siempre al prender el aire, hay una falla de aislación, y se llama a un electricista.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a household panel with a differential switch with a test button"
+   },
+   {
+    "k": "W",
+    "v": "differential circuit breaker"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuando la térmica salta apenas arrancás, puede ser un cortocircuito, un motor trabado, o un cable dañado. Ahí es un trabajo de electricista.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "short circuit tripped breaker repeated"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding a flashlight and looking at the open panel with a frown"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si vuelve a saltar apenas arranca, no insistas: la térmica está protegiendo algo, y forzarla es peligroso.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio rearming a breaker carefully with one hand, other hand behind his back"
+   },
+   {
+    "k": "G",
+    "v": "a hand resetting a breaker lever with a label reading air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el aire se enchufa, fijate que la ficha entre firme y no esté tibia ni oscurecida. Un falso contacto hace que no arranque.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wall socket plug loose"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking the plug of an air conditioner and wiggling it gently, careful"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un probador de tomacorriente de pocos pesos verificás que haya tensión y tierra. Un tomacorriente flojo es un riesgo de incendio.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a socket tester with three lights showing correct wiring plugged into a wall outlet"
+   },
+   {
+    "k": "W",
+    "v": "socket tester"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un multímetro, la tensión tiene que dar unos doscientos veinte. Si da mucho menos, el problema está en la instalación, no en el aire.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a multimeter set to AC volts and probing a wall socket carefully"
+   },
+   {
+    "k": "G",
+    "v": "a multimeter display showing around two hundred twenty volts in a socket"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con tensión baja, por ejemplo menos de doscientos, el compresor no arranca, o lo hace con esfuerzo. Pasa en barrios con la red cargada.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a multimeter display showing a low voltage reading and a red warning note beside it"
+   },
+   {
+    "k": "P",
+    "v": "Claudio reading a low voltage and shaking his head"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay protectores de tensión que desconectan el aire si la red está mal. Cuidan el equipo, pero también pueden ser la razón de que no arranque.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "voltage stabilizer protector appliance"
+   },
+   {
+    "k": "G",
+    "v": "a voltage protector device plugged into a wall socket with a small display"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Probá otro aparato en el mismo tomacorriente, o una lámpara en el mismo circuito. Si tampoco anda, es la línea la que falla.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "power outage appliance"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking whether other devices in the room have power, pressing a light switch"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si todo el barrio está sin luz, ya tenés la respuesta. Parece gracioso, pero a veces es lo primero que hay que mirar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "power outage neighbourhood night"
+   },
+   {
+    "k": "G",
+    "v": "a street in a hot evening with several windows dark due to a power cut"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segunda cosa: el control remoto. Las pilas descargadas son el motivo número uno de que un aire \"no responda\".",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "remote control batteries"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner remote with its battery cover open and two old batteries beside it"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El control manda un rayo infrarrojo a la ventanita de la unidad, que es un receptor. Si algo tapa esa señal, no hay orden.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining how the infrared signal works with a small diagram"
+   },
+   {
+    "k": "G",
+    "v": "a diagram of an infrared beam from a remote to the receiver window of an indoor unit"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pilas nuevas, bien puestas. Y apuntá hacia la unidad: cuando recibe la señal, hace un pitido o parpadea una luz.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio inserting two fresh batteries into the remote and pressing a button, the unit beeps"
+   },
+   {
+    "k": "A",
+    "v": "an air conditioner indoor unit blinking its green light and beeping after a remote button is pressed",
+    "motion": "the green light blinks and the louver starts to move"
+   },
+   {
+    "k": "W",
+    "v": "Claudio inserting two fresh batteries into the remote"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si ves polvo blanco en los contactos, limpialos con un hisopo con alcohol. La pila vieja que perdió líquido arruina el contacto.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a remote with the battery contacts corroded with a white powder in the battery compartment"
+   },
+   {
+    "k": "P",
+    "v": "Claudio cleaning the battery contacts of a remote with a cotton swab"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Truco: abrí la cámara del celular y apuntá el control. Si se ve una luz violeta cuando apretás, el control emite señal.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "smartphone camera infrared remote"
+   },
+   {
+    "k": "G",
+    "v": "a phone screen showing a purple glow from the infrared LED of a remote when a button is pressed"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y mirá la ventanita receptora de la unidad: si está sucia o tapada con una pegatina, no recibe la señal. Limpiala con un paño seco.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "window receiver infrared sensor"
+   },
+   {
+    "k": "G",
+    "v": "the small receiver window of an indoor unit covered by a piece of tape or dirt"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Revisá el modo: tiene que estar en frío, no en ventilador ni en seco. Y la temperatura, bien por debajo de la del ambiente.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at the settings on the remote display and explaining each icon"
+   },
+   {
+    "k": "G",
+    "v": "a close view of a remote display showing cool mode, 24 degrees and a timer icon"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El modo seco, con la gotita, saca humedad pero casi no enfría. Mucha gente cree que el aire no funciona y está en modo seco.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "dry mode drop icon air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner remote with the dry mode water drop icon highlighted"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay un candado, el bloqueo, que deja el control sin respuesta. Si lo ves, se sale con la combinación del manual.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a remote display showing a padlock icon for child lock"
+   },
+   {
+    "k": "W",
+    "v": "child lock icon remote"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el temporizador: a veces queda programado, y el aire se apaga o no prende cuando uno cree. Cancelalo y probá de nuevo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "timer sleep icon air conditioner"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing a timer icon on the remote and canceling it with a button press"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Casi todas las unidades tienen un botón de emergencia, atrás del panel o abajo. Con ese botón, prendés sin control.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an air conditioner indoor unit with a small manual power button on its side panel"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pressing the emergency button of the indoor unit to test it"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El botón de emergencia suele estar atrás del panel frontal, a un costado. Se mantiene apretado unos segundos y arranca en modo automático.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hand opening the front panel of an indoor unit to reveal a small button labeled auto or test"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner emergency button location"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si arranca con ese botón, el aire está bien y el culpable es el control. Un repuesto de pocos pesos, y listo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining while the unit runs on emergency mode, smiling"
+   },
+   {
+    "k": "W",
+    "v": "emergency button air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercera cosa: las protecciones. El aire se protege solo, y si algo anda mal, no arranca y te avisa con luces.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner error code blinking light"
+   },
+   {
+    "k": "G",
+    "v": "an indoor unit with a red light blinking in a pattern"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es como las luces del tablero de un auto: el equipo te avisa que algo está mal, y se frena para no romperse.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "safety protection sensor electronic"
+   },
+   {
+    "k": "P",
+    "v": "Claudio explaining that the unit protects itself like a car dashboard warning"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada marca tiene códigos: parpadeos o números en el display. El manual de tu modelo te dice qué significa cada uno.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio reading the blinking pattern of the light and consulting the manual, concentrating"
+   },
+   {
+    "k": "G",
+    "v": "a manual page listing error codes with the number of blinks for each"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si perdiste el manual, buscalo en internet con el modelo, que está en la etiqueta de la unidad. Casi todos los manuales están disponibles.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "manual download phone pdf"
+   },
+   {
+    "k": "P",
+    "v": "Claudio searching the model number of the air conditioner on his phone to find the manual online"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, la espera. Si lo acabás de apagar, no arranca por unos tres minutos: es la protección del compresor. Esperá y probá.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "three minutes timer waiting"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at his watch after turning the unit off, patient"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es normal que haya un retraso: el compresor necesita que las presiones se equilibren. Tomate un mate y volvé en tres minutos.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small timer display showing a countdown on the control board of an air conditioner"
+   },
+   {
+    "k": "P",
+    "v": "Claudio waiting with his arms crossed and a mug of coffee, watching the unit"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Muchos equipos tienen un sensor de agua: si la bandeja se llena porque el desagüe está tapado, el equipo no arranca, para no inundar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water leak air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "a drain tray full of water inside an air conditioner indoor unit with a float switch"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es un flotante, como el de una cisterna: cuando el agua sube, corta el arranque. Una protección contra la inundación de tu living.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "float switch water tray sensor"
+   },
+   {
+    "k": "G",
+    "v": "a small float sensor inside the drain tray of an indoor unit lifted by water"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si la bandeja tiene agua, se destapa el desagüe. Y apenas drena, el equipo vuelve a la vida. Lo vi una docena de veces.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio checking the drain hose and the tray for water and unblocking it with a thin wire, careful"
+   },
+   {
+    "k": "A",
+    "v": "water draining out of a drain hose onto a balcony floor after being unblocked",
+    "motion": "water gushes out of the hose end and then slows to a drip"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Otra protección es por hielo: si el serpentín está congelado, el equipo se detiene. Lo apagás, esperás que se derrita, y limpiás el filtro.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "frozen coil protection"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner coil covered in a thin layer of frost seen with a flashlight"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un sensor en el serpentín mide la temperatura: si baja demasiado, el equipo se detiene hasta que suba.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an indoor unit with a small temperature sensor attached to the coil highlighted with a circle"
+   },
+   {
+    "k": "W",
+    "v": "temperature sensor coil air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El filtro sucio es la causa de casi todos los congelamientos. Lavalo, y si el problema se repite, llamá a un técnico: puede ser gas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head, holding a dirty filter"
+   },
+   {
+    "k": "G",
+    "v": "a dusty filter held up to the light"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y en la unidad de afuera: si está tapada de hojas o con poca ventilación, se recalienta y se corta por protección.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "high pressure protection outdoor unit"
+   },
+   {
+    "k": "G",
+    "v": "an outdoor unit with its fan blocked by leaves and debris"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una unidad exterior encerrada en un hueco chico no puede botar el calor, y se corta. Pasa más de lo que pensás.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "outdoor unit heat shade balcony"
+   },
+   {
+    "k": "G",
+    "v": "an outdoor unit crammed into a tiny balcony enclosure with no space around it"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Despejala, que el aire circule, y dejá que se enfríe veinte minutos antes de probar. Muchas veces vuelve sola.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio clearing leaves and debris from an outdoor unit's grille with gloves, careful"
+   },
+   {
+    "k": "G",
+    "v": "a clean outdoor unit with a metre of free space around it on a balcony"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si hiciste las tres cosas y sigue igual, ya podés decirle al técnico: la energía está, el control probado, protecciones revisadas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting steps on his fingers in front of a whiteboard"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with a flow chart from power to remote to protections"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuando llames, decile: modelo, qué luces ves, qué probaste y desde cuándo falla. Con eso el técnico ya llega con las piezas probables.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "phone call technician"
+   },
+   {
+    "k": "P",
+    "v": "Claudio demonstrating how to explain the problem on the phone with a notepad in hand"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ahí entran las causas que sí necesitan un técnico: capacitor de arranque, contactor, placa, sensor, o el compresor mismo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician working outdoor unit balcony"
+   },
+   {
+    "k": "G",
+    "v": "an outdoor unit with its service panel opened by a technician showing a capacitor and a contactor"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El capacitor es el más común, y no es caro. El diagnóstico lo hace con un medidor, y lo cambia en minutos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "capacitor air conditioner cheap"
+   },
+   {
+    "k": "G",
+    "v": "a round capacitor on a technician's palm beside a screwdriver"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El técnico lo mide: si da menos que lo que dice la etiqueta, se cambia. Es una pieza chica que cuesta poco, y salva todo el equipo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician measuring capacitance meter"
+   },
+   {
+    "k": "G",
+    "v": "a capacitance meter showing a value lower than the value printed on the capacitor label"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pedí que te muestre la pieza fallada, y preguntá el precio del repuesto aparte de la mano de obra. Con eso no hay sorpresas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera honestly"
+   },
+   {
+    "k": "W",
+    "v": "honest technician advice"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y no abras la unidad exterior por tu cuenta: el capacitor guarda carga aunque esté desenchufado. Esa parte es del técnico.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "safety warning electricity capacitor"
+   },
+   {
+    "k": "G",
+    "v": "a warning sticker on an outdoor unit reading danger high voltage"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las tres: alimentación, control remoto, protecciones. Veinte minutos de revisión que te pueden ahorrar una visita.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the three checks on his fingers in a living room"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three lines: power, remote, protections"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cuando arranca, cuidalo: filtro limpio, desagüe libre, unidad exterior despejada. Así no vuelve a pasar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "relieved person cool air conditioner working"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling next to the air conditioner running, relieved"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Anotá en el calendario una limpieza mensual en verano. Un aire que nunca falla es un aire al que se le dedicó cinco minutos al mes.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a calendar with a monthly reminder to clean the filter and check the outdoor unit"
+   },
+   {
+    "k": "W",
+    "v": "maintenance calendar reminder"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quedate en el canal. En el próximo, cómo estás limpiando mal tu aire y te cuesta plata. Y contame cuál era tu problema.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner remote and a clamp meter on a table"
+   }
+  ]
+ }
+]
