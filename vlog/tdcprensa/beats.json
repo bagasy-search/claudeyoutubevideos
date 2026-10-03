@@ -1,0 +1,2054 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una chapa de tres milímetros, doblada a escuadra, sin forzar nada. Con un gato de camioneta.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a thick flat sheet of grey steel being bent into a sharp right angle by a home-made press brake with a red bottle jack under it in a workshop",
+    "motion": "the sheet slowly folds upward as the jack rises"
+   },
+   {
+    "k": "W",
+    "v": "steel sheet being bent in a press brake"
+   },
+   {
+    "k": "W",
+    "v": "hydraulic press brake bending sheet metal"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un ángulo perfecto, a noventa grados, y repetible. Lo hice con una máquina que no existía en mi taller hace una semana.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a freshly bent steel sheet with a perfect ninety degree fold up to the camera in his workshop, proud"
+   },
+   {
+    "k": "G",
+    "v": "a steel bracket bent at a clean ninety degrees on a workbench next to a square tool showing a perfect right angle"
+   },
+   {
+    "k": "G",
+    "v": "a try square resting against a bent steel bracket on a workbench showing a right angle"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hasta ahora doblaba chapa a martillazos, con una morsa y un caño largo. Y quedaban curvas torcidas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hand bending a steel strip with a pipe lever in a vice leaving an uneven wavy bend"
+   },
+   {
+    "k": "W",
+    "v": "bending metal in a vice"
+   },
+   {
+    "k": "W",
+    "v": "hammering metal on a vise"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada doblez era una discusión. Esta máquina las termina.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a crooked bent piece of sheet metal with a disappointed face in his workshop"
+   },
+   {
+    "k": "G",
+    "v": "two pieces of bent steel sheet side by side, one crooked and uneven and one clean"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Llevo años haciendo soportes, ménsulas y marcos. Y cada uno me costaba más de lo que valía el hierro.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "metal workshop at night"
+   },
+   {
+    "k": "P",
+    "v": "Claudio sitting on an upturned bucket in his workshop with a cup of coffee looking at his bent pieces, tired smile"
+   },
+   {
+    "k": "W",
+    "v": "welding workshop scrap steel"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La chatarra me enseñó que casi todo lo que necesito ya existe, tirado. Solo falta la máquina para darle forma.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a pile of rusty scrap steel brackets and offcuts in a corner of a workshop"
+   },
+   {
+    "k": "W",
+    "v": "scrap metal pile"
+   },
+   {
+    "k": "W",
+    "v": "old hydraulic jack"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y está hecha de chatarra: perfiles, un resorte de auto, y el gato hidráulico que ya no levantaba una camioneta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio kicking the scrap pile with his boot, looking at the camera"
+   },
+   {
+    "k": "W",
+    "v": "scrap metal yard"
+   },
+   {
+    "k": "G",
+    "v": "two steel springs and steel profiles piled in a corner of a workshop"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero la primera prueba la hice mal, y la máquina casi me dobla a mí. Te cuento exactamente qué pasó.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising a finger toward the camera with a serious face in his workshop"
+   },
+   {
+    "k": "G",
+    "v": "a red hydraulic bottle jack on a workbench with a drip of oil under it"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Doblar chapa gruesa a mano es lo más tedioso del taller. De tres milímetros para arriba, no se deja.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in his workshop holding a piece of flat steel plate trying to bend it in a vice with a long pipe, straining"
+   },
+   {
+    "k": "G",
+    "v": "a steel plate clamped in a vice bent unevenly with a pipe slipped on its end"
+   },
+   {
+    "k": "G",
+    "v": "a steel plate clamped in a vise with a long pipe lever slipped over its end bending unevenly"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la morsa y el martillo, sale ondulado. Y cada pieza tiene un ángulo distinto del anterior.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "metal workshop vice"
+   },
+   {
+    "k": "G",
+    "v": "a vise with a bent steel plate showing a wavy curved edge and hammer marks beside it"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y se marca: cada martillazo deja un golpe, y después hay que lijar, rellenar y disimular.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel plate with hammer dents and wavy bend on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "hammer hitting metal"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La diferencia entre una pieza hecha a mano y una de fábrica es el doblez. Todo lo demás lo puedes igualar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio comparing a hand-bent piece and a commercial bracket side by side with a doubtful look"
+   },
+   {
+    "k": "G",
+    "v": "a perfectly bent factory bracket next to a hand-bent crooked bracket on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una plegadora de verdad cuesta lo que un auto usado, y ocupa un galpón entero. No es para un taller de barrio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hydraulic press brake machine in factory"
+   },
+   {
+    "k": "G",
+    "v": "a large industrial press brake machine in a metal fabrication shop with a worker feeding a sheet"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero hay algo que hace la misma fuerza: un gato hidráulico de botella. Seis, ocho, doce toneladas, en un cilindro de cuarenta centímetros.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a hydraulic bottle jack on his workbench and then at the camera with a smile, idea forming"
+   },
+   {
+    "k": "G",
+    "v": "a hydraulic bottle jack on a workbench next to a frame of steel channels, drawing on paper"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un gato de botella de doce toneladas empuja con la fuerza de doce mil kilos. Una plegadora chica necesita mucho menos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "car jack lifting vehicle"
+   },
+   {
+    "k": "G",
+    "v": "an old red bottle jack on a pile of tools in a corner of a workshop covered in dust"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la V de veinticuatro, doblar treinta centímetros de chapa de tres pide más o menos una tonelada. Sobra fuerza, y la sobra es tu margen.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio doing a quick calculation on a notepad with a pencil, smiling"
+   },
+   {
+    "k": "G",
+    "v": "a notepad with a small calculation and the number one point two tons circled"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el concepto es simple: el gato empuja una mesa con una ranura en V hacia arriba, contra una cuchilla fija. En el medio, la chapa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "person pumping a bottle jack"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pumping the handle of a red bottle jack under a steel beam in his workshop"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La V de la matriz hace de apoyo: la chapa se apoya en los dos hombros, y la cuchilla la empuja justo en el medio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "metal being pressed into a V shape"
+   },
+   {
+    "k": "G",
+    "v": "a drawing of a sheet pressed by a punch into a V shaped die forming a bend"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es la misma idea que partir un palito sobre dos piedras, pero con control, y sin romperlo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a small steel sheet over two angle irons placed with a gap between them, demonstrating the idea with his hands"
+   },
+   {
+    "k": "G",
+    "v": "a steel sheet lying across the shoulders of a V die, workshop"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Así dobla una plegadora de verdad: un punzón arriba, una V abajo, y la fuerza que viene de un lado solo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hand drawn diagram on a blackboard of a press brake: a fixed punch on top, a V-shaped die below, a jack under the die pushing up, a sheet of metal in between"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping the diagram on the blackboard with chalk"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay una regla que se usa en todos los talleres: la abertura de la V es ocho veces el espesor de la chapa. Para tres milímetros, veinticuatro.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with a chalk formula: V opening equals eight times the thickness"
+   },
+   {
+    "k": "P",
+    "v": "Claudio writing a formula on the blackboard, concentrating"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Muy abierta, el doblez sale redondo y flojo. Muy cerrada, hace falta mucha más fuerza y la chapa se marca.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head with a half smile while looking at a V that is too wide on a sketch"
+   },
+   {
+    "k": "G",
+    "v": "three sketches on a blackboard of V dies of different widths, with a note on the middle one"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de arrancar, miré cómo lo hace la gente, y anoté los errores que se repiten. Cuatro.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio reading comments on a laptop in his workshop, with a notebook"
+   },
+   {
+    "k": "W",
+    "v": "person writing notes"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Que la mesa se trabe en las guías. Que el gato se salga de lugar. Que el bastidor se abra. Y que la chapa resbale.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a notebook open on a workbench with four lines written by hand and a pencil"
+   },
+   {
+    "k": "W",
+    "v": "handwriting in a notebook"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El inventario. Casi todo es perfil de hierro de obra vieja.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in his workshop crouching beside an assortment of scrap steel profiles laid on the floor"
+   },
+   {
+    "k": "G",
+    "v": "steel channel beams and angle irons laid in a row on a concrete floor, rusty"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Dos perfiles en U de doce centímetros, de un metro, para las columnas del bastidor.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two steel channel profiles about twelve centimetres wide standing side by side on a workbench, rusty"
+   },
+   {
+    "k": "W",
+    "v": "steel channel beam"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los saqué de un galpón que estaban desarmando. Pesan lo suyo, y eso es bueno: una plegadora tiene que pesar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "industrial steel beams in a yard"
+   },
+   {
+    "k": "P",
+    "v": "Claudio hauling a steel channel on his shoulder in a scrap yard, tired but pleased"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una chapa de doce milímetros, para el travesaño de arriba, donde va la cuchilla.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a thick steel plate twelve millimetres thick lying on a workbench with a tape measure"
+   },
+   {
+    "k": "W",
+    "v": "steel plate"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El gato: de doce toneladas, rojo, con una pérdida de aceite. Le cambié el sello por ocho pesos y quedó como nuevo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a red twelve ton hydraulic bottle jack standing on a concrete floor with a worn handle"
+   },
+   {
+    "k": "A",
+    "v": "a red hydraulic bottle jack on a workbench with a small bead of oil on its side",
+    "motion": "the oil bead slowly runs down the red body"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo tenía de una camioneta que ya no tengo. Cuando algo ya no sirve para su trabajo, hay que preguntarse para qué otro sirve.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old tool shop shelf"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing a worn bottle jack to the camera with a rueful smile"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El gato perdía aceite por el sello. Lo desarmé, cambié la goma, rellené el aceite, y volvió a levantar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio disassembling a bottle jack on his workbench and replacing a rubber seal with a small tool"
+   },
+   {
+    "k": "G",
+    "v": "the internal parts of a hydraulic bottle jack laid out on a rag, a new rubber seal beside them"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Aceite hidráulico del correcto, no de motor. Y purgando el aire, bombeando con la válvula abierta, hasta que suba parejo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hydraulic oil bottle"
+   },
+   {
+    "k": "G",
+    "v": "a bottle of hydraulic oil next to the jack filler plug on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Dos ángulos de cincuenta milímetros para armar la matriz en V, y una planchuela gruesa para la cuchilla.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two angle irons placed face to face on a workbench with a gap between them forming a V shaped groove"
+   },
+   {
+    "k": "W",
+    "v": "angle iron profiles"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Dos resortes de auto, para que la mesa vuelva sola a su lugar cuando suelto el gato.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two strong coil springs from a car suspension lying on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "car coil spring"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Resortes de suspensión de auto, de los que se cambian al hacer el tren delantero. Duros, y no valen nada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio compressing a car spring in his hands to show its stiffness"
+   },
+   {
+    "k": "G",
+    "v": "two coil springs of different sizes on a workbench with a tape measure"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tubos y barras para las guías, con grasa, para que la mesa suba derecha y no se trabe.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two thick steel tubes and a smaller steel bar sliding inside, on a workbench with grease"
+   },
+   {
+    "k": "W",
+    "v": "steel tube bearing"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las barras son vástagos pulidos, de amortiguadores viejos: lisos, duros y parejos. No hay mejor eje en la chatarra.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a bar of polished steel from a hydraulic shock rod next to a tube on a workbench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio sliding a polished rod into a tube, looking at how smoothly it moves"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Gasto: electrodos, discos y pintura. El resto es lo que otros dejaron.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with open hands next to all the parts on a workbench, smiling"
+   },
+   {
+    "k": "G",
+    "v": "welding electrodes and cutting discs on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Son seis pasos. Uno, el bastidor: dos columnas y un travesaño. Dos, las guías de la mesa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in front of a scratched blackboard with a chalk drawing of a press brake, pointing"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard with a chalk drawing of a frame with two columns and a top beam"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un recordatorio: todo esto se hace con anteojos, guantes de cuero y careta para soldar. No negocies eso.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "safety first sign workshop"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with serious eyes holding his goggles"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres, la mesa con la matriz en V. Cuatro, la cuchilla fija de arriba. Cinco, el gato y los resortes.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with chalk drawings of a table with a V groove and a jack beneath it"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping a blackboard with chalk looking at the camera"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y seis, la prueba. Que es donde casi me equivoco. Si te gustan estos inventos con chatarra, quédate en el taller.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio smiling at the camera in front of the blackboard with chalk in hand"
+   },
+   {
+    "k": "W",
+    "v": "chalk on a blackboard"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso uno. Los dos perfiles en U, parados, enfrentados, y unidos arriba con la chapa de doce milímetros.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio marking two steel channel profiles with a paint marker on a workbench"
+   },
+   {
+    "k": "G",
+    "v": "two steel channels lying on a workbench with a chalk line drawn across them"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cordón entero, por los dos lados. Esta pieza aguanta toda la fuerza del gato, y no se puede abrir.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a welder wearing a helmet welding a thick steel plate across the top of two steel channels, sparks and bright arc",
+    "motion": "sparks fall from the weld and the arc flickers"
+   },
+   {
+    "k": "W",
+    "v": "welder welding steel"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con escuadra, siempre. Un bastidor torcido da un doblez torcido.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a try square held against the corner between a steel column and a top plate with a tiny gap"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking a corner of a welded frame with a try square, concentrated"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el bastidor está torcido un milímetro, el doblez sale torcido un grado. Por eso se mide antes de soldar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a drawing of a frame viewed from above with two small arrows showing a twist"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing with his hands how a twisted frame would twist the bend"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y los dos perfiles, paralelos entre sí: si se abren o se cierran, la mesa se traba a mitad de camino.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laying a long straight edge along the two columns of the frame checking they are parallel"
+   },
+   {
+    "k": "G",
+    "v": "two steel columns standing upright with a spirit level held across them"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Le paso la amoladora a los cordones del lado de adentro, para que nada trabe la mesa.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "an angle grinder smoothing a weld bead on a steel frame, sparks flying",
+    "motion": "sparks fly sideways and the grinder moves along the weld"
+   },
+   {
+    "k": "W",
+    "v": "grinding welds sparks"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso dos, las guías. Un tubo soldado en cada columna, por donde va a correr la mesa, con una barra adentro.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two steel tubes standing vertically inside the channel frame as guide sleeves, welded to the inside of the columns"
+   },
+   {
+    "k": "P",
+    "v": "Claudio welding a vertical tube onto the inside of a steel column wearing a helmet"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El juego entre barra y tubo: lo justo para que deslice con grasa, pero sin que baile.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel bar sliding inside a steel tube with a thin film of grease visible at the opening"
+   },
+   {
+    "k": "W",
+    "v": "grease on steel"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo pruebo con la mano: tiene que subir y bajar suave. Si baila, la mesa se tuerce.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio sliding a steel bar up and down inside a tube, checking for play with his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a hand sliding a steel bar inside a tube, steady, close"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y esto es lo que aprendí a las malas: la guía tiene que ser larga. Una guía corta se traba con la chapa de lado.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a long sleeve of eighteen centimetres on a guide compared to a short one of five centimetres on a workbench, the short one marked with a red cross"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing two tube sleeves, a long one and a short one, to the camera"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ese error me costó una tarde. Y se lo debo a que la primera vez quise ahorrar un poco de caño.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio nodding at the camera with a wry smile, hands in his pockets"
+   },
+   {
+    "k": "W",
+    "v": "old workshop wall tools"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso tres. La mesa lleva la matriz en V, hecha con dos ángulos, con una abertura de veinticuatro milímetros entre ellos.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a thick steel plate with a V shaped groove assembled from two angle irons welded face to face with a gap between them"
+   },
+   {
+    "k": "P",
+    "v": "Claudio laying two angle irons side by side with a spacer between them, measuring the gap with a caliper"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Veinticuatro, que es ocho veces el espesor de la chapa: la regla de la plegadora para chapa de tres.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "caliper measuring metal"
+   },
+   {
+    "k": "G",
+    "v": "a caliper measuring twenty four millimetres between two angle irons"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para chapa de dos, dieciséis. Para tres, veinticuatro. Para cuatro, treinta y dos. Es proporcional, y no falla.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a table showing the V die openings for different sheet thicknesses chalk written on a board"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping the numbers on the board with chalk"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los suelto con puntos primero. Si el ángulo se corre, la V sale torcida y doblo en diagonal.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two angle irons welded to a base plate leaving a V groove, one weld bead visible, a tape measure beside them"
+   },
+   {
+    "k": "A",
+    "v": "welding two angle irons onto a base plate with a visible bright arc",
+    "motion": "the arc flickers brightly and smoke rises"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y redondeo apenas los hombros de la V, para que no marquen ni rayen la chapa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio filing the top edges of the two angle irons to round the V's shoulders slightly"
+   },
+   {
+    "k": "G",
+    "v": "a hand with a file rounding the edges of an angle iron on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el hombro de la V queda vivo, marca la chapa con una línea oscura. Con el borde redondeado, el doblez sale limpio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "steel edge rounding"
+   },
+   {
+    "k": "G",
+    "v": "a close view of a V die showing its edge slightly rounded and bright where the file worked"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cuatro, la cuchilla. Una barra gruesa, con el borde redondeado en cuña, para que empuje la chapa dentro de la V.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a thick flat steel bar of twenty millimetres with one edge ground to a rounded wedge lying on a workbench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio grinding the edge of a thick steel bar into a rounded wedge with an angle grinder, sparks"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Redondeado, no filoso: si afilas la cuchilla, corta la chapa en lugar de doblarla.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "angle grinder sparks"
+   },
+   {
+    "k": "A",
+    "v": "an angle grinder rounding the edge of a thick steel bar held in a vice, orange sparks flying",
+    "motion": "sparks stream to the right and the grinder moves along the edge"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se suelda debajo del travesaño, justo en el centro de la V. Con plomada, porque si no coinciden, la chapa se dobla chueca.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the thick steel bar welded under the top plate of the frame, centred above the V groove of the table below"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking with a plumb line that the punch bar is centred above the V groove"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de soldar, la sujeto con dos prensas y le paso el nivel. Una vez soldada, ya no hay vuelta atrás.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio clamping the punch bar under the top plate before welding, checking it with a spirit level"
+   },
+   {
+    "k": "G",
+    "v": "a steel bar clamped under a steel plate with C clamps and a level on top"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cinco. El gato va parado, en la base, justo debajo del centro de la mesa. Con una chapita arriba, para que empuje parejo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio placing the red bottle jack upright on the base of the frame beneath the table"
+   },
+   {
+    "k": "G",
+    "v": "a red bottle jack standing on the steel base inside the frame, under the table with the V groove"
+   }
+  ]
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los dos resortes van enganchados entre la mesa y la base. Cuando suelto el gato, la mesa baja sola.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two coil springs hooked between the table and the base plate with steel hooks welded on, workshop"
+   },
+   {
+    "k": "A",
+    "v": "a pair of coil springs stretching as a steel table is lifted slightly on a press brake frame",
+    "motion": "the springs stretch slowly then relax"
+   }
+  ]
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Dos ganchos soldados, y listo. Sin resortes, hay que empujar la mesa a mano cada vez, y se cansa uno.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio welding two small steel hooks onto the base plate for the springs, concentrated"
+   },
+   {
+    "k": "W",
+    "v": "welding sparks close"
+   }
+  ]
+ },
+ {
+  "id": "b067",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con cuidado al enganchar los resortes: estirados, guardan energía, y si se sueltan, pegan.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a coil spring hooked between the table and a base plate, tension shown by straight lines"
+   },
+   {
+    "k": "P",
+    "v": "Claudio hooking a spring onto a steel hook with a screwdriver, careful"
+   }
+  ]
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segunda vuelta. Una tira de chapa de tres milímetros, de treinta centímetros de largo, sobre la V.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio placing a strip of three millimetre steel sheet on the V groove of the press, the nephew watching from the side"
+   },
+   {
+    "k": "G",
+    "v": "a steel strip thirty centimetres long lying across the V groove of the table under the punch bar"
+   }
+  ]
+ },
+ {
+  "id": "b069",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Anteojos, guantes de cuero, y las manos lejos de la zona de la cuchilla. Esta máquina aplasta lo que se le pone en medio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "person wearing safety glasses"
+   },
+   {
+    "k": "P",
+    "v": "Claudio putting on safety glasses and leather gloves, serious face in his workshop"
+   }
+  ]
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Marco con lápiz la línea del doblez, y la alineo con la cuchilla. A ojo no, con regla.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio adjusting the position of the strip against the stop bar with a ruler, calm"
+   },
+   {
+    "k": "G",
+    "v": "a steel strip with a pencil mark at the middle placed on the V groove"
+   }
+  ]
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Bombeo el gato, de a poco. La mesa sube, la chapa toca la cuchilla, y empieza a curvarse.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a hand pumping the handle of a bottle jack, the table rising slowly under a steel sheet",
+    "motion": "the handle moves up and down and the table rises slowly"
+   },
+   {
+    "k": "G",
+    "v": "a hand pumping the handle of a red bottle jack with a steel table above it"
+   }
+  ]
+ },
+ {
+  "id": "b072",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y ahí lo vi: se dobló torcida. Un lado más alto que el otro. Y la mesa, inclinada, apretada contra una guía.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel sheet bent crookedly with one side higher than the other pressed between the table and the punch bar"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the crooked bend with a frown, hands on hips"
+   }
+  ]
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se había trabado: la guía corta, la chapa cargada de un solo lado, y la mesa que giró. Por poco no explota el resorte.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a steel table on a press jammed at an angle against a vertical guide tube, a hand trying to push it down",
+    "motion": "the table creaks and shifts a few millimetres"
+   },
+   {
+    "k": "W",
+    "v": "crush hazard warning machine"
+   },
+   {
+    "k": "G",
+    "v": "a steel table on a press frame wedged at an angle against one vertical guide tube with a hand on it"
+   }
+  ]
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por eso, la primera regla: parado al costado, nunca de frente. Si algo se suelta, que no te agarre.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio stepping back with a worried face from the crooked press, one hand raised"
+   },
+   {
+    "k": "W",
+    "v": "warning sign hands crush hazard"
+   }
+  ]
+ },
+ {
+  "id": "b075",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres cosas. Primero, la guía corta: cinco centímetros no alcanzan para mantener la mesa derecha.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio crouching at the side of the press examining the guide tubes closely with a flashlight"
+   },
+   {
+    "k": "G",
+    "v": "close view of a short guide sleeve and a table slightly rotated showing a gap on one side"
+   }
+  ]
+ },
+ {
+  "id": "b076",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo, el gato empuja en el centro, pero yo puse la chapa corrida a un lado. Entonces la mesa se inclina.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a drawing on a blackboard showing a table pushed by a jack off centre and tilting"
+   },
+   {
+    "k": "P",
+    "v": "Claudio drawing arrows on a blackboard to show the jack pushing at the centre"
+   }
+  ]
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercero, no había un tope. Sin tope, cada chapa se pone donde cae, y el doblez sale distinto cada vez.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel sheet resting on a V groove with a stop bar welded behind it to align the sheet"
+   },
+   {
+    "k": "W",
+    "v": "measuring stop on metal"
+   }
+  ]
+ },
+ {
+  "id": "b078",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres problemas, tres soluciones. Y ninguna es más fuerza: es más precisión.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio nodding slowly looking at the three problems listed on a blackboard"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard with three chalk numbered lines on a press brake problems"
+   }
+  ]
+ },
+ {
+  "id": "b079",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Siempre es lo mismo con las máquinas: cuando algo falla, no es falta de fuerza. Es una pieza que juega.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "thinking man notebook"
+   },
+   {
+    "k": "P",
+    "v": "Claudio walking slowly around the press looking at it from all sides with his chin in his hand"
+   }
+  ]
+ },
+ {
+  "id": "b080",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Arreglo uno: guías de dieciocho centímetros, tres veces más largas. La mesa sube pegada a las columnas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two long steel sleeves eighteen centimetres long welded on the inside of the frame columns"
+   },
+   {
+    "k": "P",
+    "v": "Claudio welding a long sleeve onto a column, helmet down"
+   }
+  ]
+ },
+ {
+  "id": "b081",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la guía larga, la mesa no tiene de dónde inclinarse. Sube y baja como un pistón.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a thick steel bar sliding smoothly inside a long tube with grease, the bar rising",
+    "motion": "the bar rises smoothly with no wobble"
+   },
+   {
+    "k": "W",
+    "v": "grease on steel"
+   }
+  ]
+ },
+ {
+  "id": "b082",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La empujo de costado con la mano: no se mueve. Esa es la prueba de una buena guía.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pushing the loaded table sideways with his hand to test it, nodding when it doesn't move"
+   },
+   {
+    "k": "G",
+    "v": "a steel table on a press frame held centred by two long guides"
+   }
+  ]
+ },
+ {
+  "id": "b083",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Arreglo dos: un tope atrás de la matriz, a una distancia fija. La chapa siempre se apoya contra el tope.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel stop bar welded behind the V groove at a measured distance with a tape measure beside it"
+   },
+   {
+    "k": "P",
+    "v": "Claudio welding a stop bar behind the die and measuring the distance with a tape"
+   }
+  ]
+ },
+ {
+  "id": "b084",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Arreglo tres: una chapa gruesa entre el gato y la mesa, que reparte el empuje y centra la fuerza.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a table on a press brake with a thin steel plate placed under the jack to spread the load"
+   },
+   {
+    "k": "P",
+    "v": "Claudio placing a thick steel plate between the jack and the table, adjusting its position"
+   }
+  ]
+ },
+ {
+  "id": "b085",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el gato, con un cuenco soldado en la base: así no se sale de lugar cuando sube la presión.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a bottle jack with a steel plate on top being pumped slowly in a press brake frame",
+    "motion": "the plate rises evenly as the handle pumps"
+   },
+   {
+    "k": "W",
+    "v": "hydraulic jack close up"
+   }
+  ]
+ },
+ {
+  "id": "b086",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es un detalle chico, pero evita que el gato patine cuando la presión sube. Y bajo carga, un gato que patina es peligroso.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small steel cup welded on the base plate to hold the foot of the jack"
+   },
+   {
+    "k": "P",
+    "v": "Claudio dropping the bottle jack into the steel cup and checking it sits well"
+   }
+  ]
+ },
+ {
+  "id": "b087",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercera vuelta. Chapa de tres milímetros, apoyada contra el tope. Y parado al costado.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio placing a fresh strip of steel sheet against the stop bar on the V groove of the press, the nephew watching"
+   },
+   {
+    "k": "G",
+    "v": "a fresh steel strip lying against the stop bar on the table, workshop"
+   }
+  ]
+ },
+ {
+  "id": "b088",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Bombeo despacio. Veinte bombeadas, quizá treinta. El gato hace el trabajo, y yo miro el ángulo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pumping the jack handle with one hand and watching the bend from the side, serious"
+   },
+   {
+    "k": "W",
+    "v": "person pumping hydraulic jack"
+   }
+  ]
+ },
+ {
+  "id": "b089",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es un trabajo lento y tranquilo. Nada de apurarse con una máquina hidráulica.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hand on jack handle"
+   },
+   {
+    "k": "G",
+    "v": "a close view of the long handle of a bottle jack being worked up and down, a gloved hand"
+   }
+  ]
+ },
+ {
+  "id": "b090",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La chapa se dobla pareja, sin torcerse. Y a noventa grados, que es lo que importaba.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a steel sheet folding smoothly into a clean right angle between a V die and a punch bar as the table rises",
+    "motion": "the sheet slowly bends into a sharp fold"
+   },
+   {
+    "k": "G",
+    "v": "a freshly bent steel sheet seen from the side on the V die with a clean sharp fold line"
+   }
+  ]
+ },
+ {
+  "id": "b091",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mira esa línea: pareja de punta a punta. Ni una onda, ni una arruga, ni una marca.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "metal bracket close up"
+   },
+   {
+    "k": "G",
+    "v": "the bent sheet on the V die showing a sharp clean fold line, a thin bright line along the bend"
+   }
+  ]
+ },
+ {
+  "id": "b092",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Abro la válvula despacio. La mesa baja sola con los resortes, y la chapa ya está doblada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio releasing the jack valve slowly and the table lowering by the springs, looking at the piece"
+   },
+   {
+    "k": "G",
+    "v": "a hand turning the release valve of a bottle jack, the table lowering"
+   }
+  ]
+ },
+ {
+  "id": "b093",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pongo la escuadra: noventa. No es noventa y dos, ni ochenta y ocho. Noventa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a bent steel strip up to the light and measuring the angle with a square"
+   },
+   {
+    "k": "G",
+    "v": "a try square placed on a bent sheet showing a perfect right angle with no gap"
+   }
+  ]
+ },
+ {
+  "id": "b094",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y por afuera del doblez, ni una grieta. Con la V correcta, el acero se dobla sin quebrarse.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio running a thumb along the clean sharp outer edge of the bent piece, nodding"
+   },
+   {
+    "k": "G",
+    "v": "close view of the outside of a bent sheet showing a smooth rounded edge with no cracks"
+   }
+  ]
+ },
+ {
+  "id": "b095",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hago cinco más, para ver si es repetible. Cinco ángulos iguales, uno tras otro, con un minuto por pieza.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "five identical bent steel brackets in a row on a workbench, all at the same angle"
+   },
+   {
+    "k": "P",
+    "v": "Claudio lining up five bent brackets and tapping each with a finger"
+   }
+  ]
+ },
+ {
+  "id": "b096",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la máquina armada y el tope puesto, cada pieza me lleva menos de un minuto. Antes eran diez, y salían peor.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio timing himself with a watch while bending a sheet on the press"
+   },
+   {
+    "k": "G",
+    "v": "a stopwatch on a workbench next to the press showing a short time"
+   }
+  ]
+ },
+ {
+  "id": "b097",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y esos soportes son justo lo que más uso en el taller: ménsulas, marcos, estantes, bandejas, protecciones.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "stack of metal brackets"
+   },
+   {
+    "k": "G",
+    "v": "a stack of identical right angle steel brackets on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b098",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El truco: el acero tiene retorno elástico. Si quieres noventa, hay que pasarse unos tres o cuatro grados, y suelta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio bending a sheet slightly past ninety degrees and showing how it springs back, holding two pieces"
+   },
+   {
+    "k": "G",
+    "v": "two bent steel pieces side by side, one bent past ninety and one at ninety, a protractor between them"
+   }
+  ]
+ },
+ {
+  "id": "b099",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ahora, los límites. Chapa de tres milímetros hasta unos treinta centímetros de largo. Más largo, y el gato ya sufre.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio measuring the length of a steel sheet with a tape measure showing about thirty centimetres"
+   },
+   {
+    "k": "G",
+    "v": "a tape measure along a sheet of steel in a workshop"
+   }
+  ]
+ },
+ {
+  "id": "b100",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con chapa de aluminio, ni lo intenté: es otro material, y la V tiene que tener otro radio.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a thin aluminium sheet and a thick steel sheet side by side"
+   },
+   {
+    "k": "G",
+    "v": "a thin aluminium sheet and a thick steel sheet lying side by side on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b101",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y acero inoxidable tampoco: es más duro, se resiste más y vuelve más. Esta máquina es para acero común.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a sheet of stainless steel next to a sheet of mild steel on a bench with a note"
+   },
+   {
+    "k": "P",
+    "v": "Claudio shaking his head a little looking at the stainless sheet"
+   }
+  ]
+ },
+ {
+  "id": "b102",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Más grueso, de cinco o seis milímetros, no lo probé. Y no te lo prometo: depende del gato y del bastidor.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "strong steel thick plate"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding a thicker steel plate and shaking his head slightly at the camera"
+   }
+  ]
+ },
+ {
+  "id": "b103",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Nunca pases la capacidad del gato. Si dice doce toneladas, es el techo, no la meta.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a label on a red bottle jack showing twelve tons with a worn sticker"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pointing at the capacity label on the bottle jack, serious face"
+   }
+  ]
+ },
+ {
+  "id": "b104",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y revisa el bastidor cada tanto: si aparece una fisura en un cordón, se para todo y se vuelve a soldar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hydraulic jack capacity label"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the frame of the press closely for cracks with a flashlight, serious"
+   }
+  ]
+ },
+ {
+  "id": "b105",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y manos lejos siempre: entre la mesa y la cuchilla hay toneladas de fuerza, y no distingue entre chapa y dedos.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a close view of a hand held far from the punch bar and the table of a press brake, with a red line on the floor marking the safe zone"
+   },
+   {
+    "k": "P",
+    "v": "Claudio drawing a safety line on the floor beside the press with chalk"
+   }
+  ]
+ },
+ {
+  "id": "b106",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para piezas chicas, las empujo con una varilla, no con los dedos. Una pieza chica se puede mantener sin arriesgar la mano.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pushing the sheet with a long steel rod instead of his hand to keep fingers away, workshop"
+   },
+   {
+    "k": "G",
+    "v": "a long steel push rod holding a small steel piece in the die while the jack is operated"
+   }
+  ]
+ },
+ {
+  "id": "b107",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo que cambiaría. Primero, un manómetro en el gato, para saber cuánta presión estás usando.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a pencil and notebook, thinking"
+   },
+   {
+    "k": "W",
+    "v": "notebook and pencil"
+   }
+  ]
+ },
+ {
+  "id": "b108",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo, una escala graduada en el tope, para repetir medidas exactas sin cinta métrica.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a pressure gauge mounted on a hydraulic circuit on a workbench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding a small pressure gauge up next to the jack"
+   }
+  ]
+ },
+ {
+  "id": "b109",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un tornillo para trabarlo, y listo: sabes que la medida será la misma mañana, la semana que viene y el año que viene.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a pencil sketch on a notebook of a stop bar with a ruler scale and a locking bolt"
+   },
+   {
+    "k": "P",
+    "v": "Claudio drawing the improvement on a notebook with a pencil"
+   }
+  ]
+ },
+ {
+  "id": "b110",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercero, una cuchilla más larga, para chapa más ancha, que se puede cambiar con dos bulones.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel ruler welded on the side of the stop bar rail with engraved marks"
+   },
+   {
+    "k": "W",
+    "v": "measuring ruler on metal"
+   }
+  ]
+ },
+ {
+  "id": "b111",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con una cuchilla de cincuenta, y un bastidor más ancho, esta misma idea hace una plegadora más grande.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at a long steel bar of fifty centimetres and measuring it against the press"
+   },
+   {
+    "k": "G",
+    "v": "a long bar placed above the table with two bolts to fix it"
+   }
+  ]
+ },
+ {
+  "id": "b112",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y pintura: primero imprimación, que si no se descascara al primer golpe, y después negro mate.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio painting the finished press brake black with a brush and primer in his workshop"
+   },
+   {
+    "k": "G",
+    "v": "a primed steel frame drying next to a can of black paint"
+   }
+  ]
+ },
+ {
+  "id": "b113",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y grasa en las guías cada tanto, para que la mesa siga deslizando. Una máquina sin mantenimiento dura poco.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio greasing the guide bars and the jack screw with a brush from a tin of grease"
+   },
+   {
+    "k": "G",
+    "v": "a tin of grease and a brush on a workbench next to the press"
+   }
+  ]
+ },
+ {
+  "id": "b114",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una plegadora para un taller de barrio, con un gato de camioneta, perfiles de obra y un fin de semana de trabajo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing next to the finished black press brake with its red jack, hand resting on the frame, proud"
+   },
+   {
+    "k": "A",
+    "v": "the finished press brake in a workshop with a red jack under a black frame",
+    "motion": "a soft light moves slowly across the black frame"
+   }
+  ]
+ },
+ {
+  "id": "b115",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo que aprendí a los golpes: guías largas, un tope fijo, y una chapa que reparta la fuerza. Tres cosas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting on his fingers looking at the camera, serious but warm"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard with three lines listing guide length, stop bar and a load spreading plate"
+   }
+  ]
+ },
+ {
+  "id": "b116",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tienes un gato hidráulico que ya no levanta nada, no lo tires. Cuéntame qué harías tú con una plegadora en tu taller.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with the press behind him, friendly half smile"
+   },
+   {
+    "k": "W",
+    "v": "cozy metal workshop"
+   }
+  ]
+ },
+ {
+  "id": "b117",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y recuerda: hacer una herramienta es mejor que comprarla. No por el ahorro: por lo que aprendes en el camino.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cluttered workshop with tools"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a calm smile and the workshop behind him"
+   }
+  ]
+ },
+ {
+  "id": "b118",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En el próximo, una cortadora de pasto con una amoladora vieja. Nos vemos en el taller.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing his thumb over his shoulder toward the workshop, smiling"
+   },
+   {
+    "k": "A",
+    "v": "the workshop door at dusk with warm light spilling out",
+    "motion": "the warm light flickers softly"
+   }
+  ]
+ }
+]

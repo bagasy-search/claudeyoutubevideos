@@ -1,0 +1,1004 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "CHAPA DE 3 mm · A ESCUADRA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 56
+   },
+   "word": "escuadra",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "90° REPETIBLE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "perfecto",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b013",
+   "props": {
+    "text": "PLEGADORA = UN AUTO USADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 54
+   },
+   "word": "auto",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b014",
+   "props": {
+    "text": "GATO DE BOTELLA · 12 t",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "gato",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b018",
+   "props": {
+    "text": "LA V ES EL APOYO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "apoyo",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b021",
+   "props": {
+    "pos": "top",
+    "size": 86,
+    "words": [
+     {
+      "t": "V = 8 × ESPESOR",
+      "beat": "b021",
+      "word": "8",
+      "hl": "yellow"
+     },
+     {
+      "t": "3 mm → V DE 24",
+      "beat": "b021",
+      "word": "espesor"
+     }
+    ]
+   },
+   "word": "8",
+   "until": "b021",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b023",
+   "props": {
+    "text": "4 ERRORES QUE SE REPITEN",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "4",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b026",
+   "props": {
+    "name": "PERFILES U ×2",
+    "origin": "obra vieja",
+    "cost": "$0",
+    "at": [
+     30,
+     4
+    ]
+   },
+   "word": "perfiles",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b028",
+   "props": {
+    "name": "CHAPA 12 mm",
+    "origin": "travesaño",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "chapa",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b029",
+   "props": {
+    "name": "GATO 12 t",
+    "origin": "camioneta",
+    "cost": "$0",
+    "at": [
+     70,
+     4
+    ]
+   },
+   "word": "gato",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b034",
+   "props": {
+    "name": "RESORTES ×2",
+    "origin": "auto",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "resortes",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b037",
+   "props": {
+    "name": "BARRAS",
+    "origin": "amortiguadores",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "barras",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b043",
+   "props": {
+    "step": 1,
+    "total": 6,
+    "title": "EL BASTIDOR"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b049",
+   "props": {
+    "step": 2,
+    "total": 6,
+    "title": "LAS GUÍAS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b054",
+   "props": {
+    "step": 3,
+    "total": 6,
+    "title": "MESA Y MATRIZ V"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b060",
+   "props": {
+    "step": 4,
+    "total": 6,
+    "title": "LA CUCHILLA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b064",
+   "props": {
+    "step": 5,
+    "total": 6,
+    "title": "GATO Y RESORTES"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b068",
+   "props": {
+    "step": 6,
+    "total": 6,
+    "title": "LA PRUEBA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b040",
+   "props": {
+    "text": "ANTEOJOS · GUANTES · CARETA",
+    "icons": [
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "anteojos",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b045",
+   "props": {
+    "text": "SIEMPRE CON ESCUADRA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "escuadra",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b052",
+   "props": {
+    "text": "GUÍA LARGA = NO SE TRABA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "larga",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b056",
+   "props": {
+    "text": "2 → 16 · 3 → 24 · 4 → 32",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 54
+   },
+   "word": "16",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b061",
+   "props": {
+    "text": "CUCHILLA REDONDEADA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "redondeado",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b067",
+   "props": {
+    "text": "RESORTES ESTIRADOS: PEGAN",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "resortes",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b069",
+   "props": {
+    "text": "MANOS LEJOS DE LA CUCHILLA",
+    "icons": [
+     "alert",
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "manos",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b072",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "SE DOBLÓ TORCIDA",
+      "beat": "b072",
+      "word": "torcida",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "torcida",
+   "until": "b072",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b074",
+   "props": {
+    "text": "AL COSTADO · NUNCA DE FRENTE",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "costado",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b075",
+   "props": {
+    "text": "1 · GUÍA CORTA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "guía",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b076",
+   "props": {
+    "text": "2 · CHAPA CORRIDA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "corrida",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b077",
+   "props": {
+    "text": "3 · SIN TOPE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "tope",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b078",
+   "props": {
+    "text": "NO ERA FUERZA: ERA PRECISIÓN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 54
+   },
+   "word": "precisión",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b080",
+   "props": {
+    "text": "GUÍAS DE 18 cm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "18",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b083",
+   "props": {
+    "text": "TOPE ATRÁS DE LA MATRIZ",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "tope",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b085",
+   "props": {
+    "text": "CUENCO SOLDADO EN LA BASE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "cuenco",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b090",
+   "props": {
+    "text": "90° SIN TORCERSE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "noventa",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b093",
+   "props": {
+    "text": "ESCUADRA: 90°",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "noventa",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b096",
+   "props": {
+    "text": "< 1 MINUTO POR PIEZA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "minuto",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b098",
+   "props": {
+    "text": "RETORNO ELÁSTICO: +3° O 4°",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 54
+   },
+   "word": "retorno",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b099",
+   "props": {
+    "text": "LÍMITE: 3 mm · 30 cm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "límites",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b103",
+   "props": {
+    "text": "NUNCA PASES LA CAPACIDAD DEL GATO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "nunca",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b104",
+   "props": {
+    "text": "FISURA = SE PARA TODO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "fisura",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b105",
+   "props": {
+    "text": "MANOS LEJOS SIEMPRE",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "manos",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b107",
+   "props": {
+    "text": "MANÓMETRO EN EL GATO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "manómetro",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b108",
+   "props": {
+    "text": "ESCALA EN EL TOPE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "escala",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b112",
+   "props": {
+    "text": "IMPRIMACIÓN + NEGRO MATE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "imprimación",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b115",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "GUÍAS LARGAS",
+      "beat": "b115",
+      "word": "guías",
+      "hl": "yellow"
+     },
+     {
+      "t": "TOPE FIJO",
+      "beat": "b115",
+      "word": "tope"
+     },
+     {
+      "t": "CHAPA QUE REPARTE",
+      "beat": "b115",
+      "word": "reparta",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "guías",
+   "until": "b115",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b118",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b118",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "CORTADORA DE PASTO",
+      "beat": "b118",
+      "word": "cortadora",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b118",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}
