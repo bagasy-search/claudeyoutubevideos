@@ -1,0 +1,1003 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "LA ESCARCHA SE CORRE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "escarcha",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b005",
+   "props": {
+    "text": "EL PASO QUE NO SE SALTEA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "nunca",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b006",
+   "props": {
+    "text": "MISMO TERMÓMETRO · MISMO TIEMPO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 54
+   },
+   "word": "comparación",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b012",
+   "props": {
+    "text": "1 GARRAFA POR SEMANA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "garrafa",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b019",
+   "props": {
+    "pos": "top",
+    "size": 80,
+    "words": [
+     {
+      "t": "1 TUBOS INCLINADOS",
+      "beat": "b019",
+      "word": "inclinados",
+      "hl": "yellow"
+     },
+     {
+      "t": "2 MADERA SIN TRATAR",
+      "beat": "b019",
+      "word": "tratada"
+     },
+     {
+      "t": "3 CENICERO",
+      "beat": "b019",
+      "word": "cenicero",
+      "hl": "yellow"
+     },
+     {
+      "t": "4 FONDO SIN AGUJEROS",
+      "beat": "b019",
+      "word": "fondo"
+     }
+    ]
+   },
+   "word": "uno",
+   "until": "b019",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b022",
+   "props": {
+    "name": "GARRAFA 10 kg",
+    "origin": "vacía y pinchada",
+    "cost": "$0",
+    "at": [
+     30,
+     4
+    ]
+   },
+   "word": "garrafa",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b023",
+   "props": {
+    "name": "CAÑO Ø4\"",
+    "origin": "chimenea",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "caño",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b024",
+   "props": {
+    "name": "PLANCHUELA",
+    "origin": "portón viejo",
+    "cost": "$0",
+    "at": [
+     70,
+     4
+    ]
+   },
+   "word": "planchuela",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcScrapTag",
+   "beat": "b026",
+   "props": {
+    "name": "LADRILLOS",
+    "origin": "refractarios ×6",
+    "cost": "$0",
+    "at": [
+     50,
+     4
+    ]
+   },
+   "word": "ladrillos",
+   "dur": 3.0,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b034",
+   "props": {
+    "step": 1,
+    "total": 7,
+    "title": "PURGAR LA GARRAFA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b045",
+   "props": {
+    "step": 2,
+    "total": 7,
+    "title": "CORTAR LA PUERTA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b054",
+   "props": {
+    "step": 3,
+    "total": 7,
+    "title": "LAS PATAS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b059",
+   "props": {
+    "step": 4,
+    "total": 7,
+    "title": "LA CHIMENEA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b066",
+   "props": {
+    "step": 5,
+    "total": 7,
+    "title": "PUERTA Y AIRE"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b072",
+   "props": {
+    "step": 6,
+    "total": 7,
+    "title": "PISO Y CENICERO"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b085",
+   "props": {
+    "step": 7,
+    "total": 7,
+    "title": "PINTAR"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b034",
+   "props": {
+    "text": "QUEDA GAS ADENTRO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "gas",
+   "dur": 3.2,
+   "off": -0.3,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b037",
+   "props": {
+    "text": "AL AIRE LIBRE · SIN CHISPAS",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "aire",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b039",
+   "props": {
+    "text": "LLENAR DE AGUA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "agua",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b041",
+   "props": {
+    "text": "NUNCA AMOLADORA SIN PURGAR",
+    "icons": [
+     "alert",
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "nunca",
+   "until": "b041",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b042",
+   "props": {
+    "text": "DUDA = QUE LA GASIFIQUEN",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "gasifiquen",
+   "dur": 3.0,
+   "off": -0.5,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b045",
+   "props": {
+    "text": "PUERTA 20 × 15 cm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "20",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b048",
+   "props": {
+    "text": "ANTEOJOS · OÍDOS",
+    "icons": [
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "anteojos",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b054",
+   "props": {
+    "text": "4 PATAS · 40 cm",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "40",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b065",
+   "props": {
+    "text": "CAÑO Ø4\"",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cuatro",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b068",
+   "props": {
+    "text": "CHAPITA = REGULADOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "regulador",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b071",
+   "props": {
+    "text": "CENICERO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "cenicero",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b075",
+   "props": {
+    "text": "FONDO SIN AGUJEROS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "agujeros",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b080",
+   "props": {
+    "text": "NO TIRABA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "tiraba",
+   "dur": 2.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b083",
+   "props": {
+    "pos": "top",
+    "size": 100,
+    "words": [
+     {
+      "t": "CHIMENEA CORTA",
+      "beat": "b083",
+      "word": "poca",
+      "hl": "red"
+     },
+     {
+      "t": "= NO TIRA",
+      "beat": "b083",
+      "word": "tira",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "error",
+   "until": "b083",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b082",
+   "props": {
+    "text": "CHIMENEA: ~3 m",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "metros",
+   "dur": 2.6,
+   "off": -0.4,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b087",
+   "props": {
+    "text": "SECAR UN DÍA ENTERO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "día",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b089",
+   "props": {
+    "text": "3 ENCENDIDOS CHICOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "tres",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b093",
+   "props": {
+    "text": "AL MENOS 1 m DE LO INFLAMABLE",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "metro",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b096",
+   "props": {
+    "text": "DETECTOR DE MONÓXIDO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "detector",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b098",
+   "props": {
+    "text": "NO PARA DORMITORIOS",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "dormitorio",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b100",
+   "props": {
+    "text": "9 °C",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "9",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b103",
+   "props": {
+    "text": "16 °C → 20 °C",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "16",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b108",
+   "props": {
+    "pos": "bottom",
+    "size": 88,
+    "words": [
+     {
+      "t": "ESTUFA: +3 °C",
+      "beat": "b108",
+      "word": "tres",
+      "hl": "red"
+     },
+     {
+      "t": "SALAMANDRA: +10 °C",
+      "beat": "b108",
+      "word": "diez",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "estufa",
+   "until": "b108",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b112",
+   "props": {
+    "text": "CENIZA: BALDE METÁLICO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "balde",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b116",
+   "props": {
+    "text": "BOCA INCLINADA = LEÑA SOLA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "tiltas",
+   "dur": 3.0,
+   "off": -0.5,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b119",
+   "props": {
+    "text": "MADERA TRATADA: NO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "tratada",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b126",
+   "props": {
+    "text": "MATAFUEGO AL ALCANCE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "matafuego",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b127",
+   "props": {
+    "pos": "top",
+    "size": 88,
+    "words": [
+     {
+      "t": "1 PURGAR CON AGUA",
+      "beat": "b127",
+      "word": "purgar",
+      "hl": "yellow"
+     },
+     {
+      "t": "2 CHIMENEA ALTA",
+      "beat": "b127",
+      "word": "chimenea"
+     }
+    ]
+   },
+   "word": "uno",
+   "until": "b127",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b128",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "3 DETECTOR + MATAFUEGO",
+      "beat": "b128",
+      "word": "detector",
+      "hl": "yellow"
+     },
+     {
+      "t": "4 1 m · SIN DORMITORIO",
+      "beat": "b128",
+      "word": "metro",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "tres",
+   "until": "b128",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b130",
+   "props": {
+    "pos": "top",
+    "size": 96,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b130",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "PRENSA PLEGADORA",
+      "beat": "b130",
+      "word": "plegadora",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b130",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}

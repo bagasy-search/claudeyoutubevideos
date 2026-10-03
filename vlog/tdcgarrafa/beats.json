@@ -1,0 +1,2272 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Así queda un galpón helado cuando prendes esta salamandra, hecha con una garrafa que alguien tiró.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "the cast iron door of a home-made wood stove made from an old gas cylinder swinging open in a cold garage workshop, bright orange fire roaring inside the stove over burning logs",
+    "motion": "the fire flickers strongly and sparks rise, the door stays open"
+   },
+   {
+    "k": "W",
+    "v": "frost on a window glass in winter"
+   },
+   {
+    "k": "A",
+    "v": "the glass of a workshop window in a cold shed with thick frost, the frost starting to melt and drip near the stove side",
+    "motion": "a few drops of water slide down the glass"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La escarcha del vidrio se corre sola. Y el termómetro sube, como no subía con la estufa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio crouching in front of a black home-made stove made from an old gas cylinder in his workshop, holding the stove door open and warming his hands, a thermometer hanging on the wall"
+   },
+   {
+    "k": "G",
+    "v": "a round dial thermometer hanging on a wooden post in a workshop showing about twenty degrees, frosty window behind it"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Porque la estufa eléctrica del galpón, mal que mal, nunca le ganó al frío.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an electric two-bar heater glowing weakly on a concrete workshop floor beside a bucket, cold breath visible in the air"
+   },
+   {
+    "k": "W",
+    "v": "man rubbing cold hands near a small heater"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mi vecino me dijo: «Con una garrafa vas a volar por el aire.» Y tenía razón en una cosa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in his workshop with arms crossed looking amused at a neighbour in a green cap who is shaking his head, the gas cylinder stove behind them"
+   },
+   {
+    "k": "W",
+    "v": "old rusty gas cylinder lying on the ground"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por eso te voy a mostrar el paso que nunca, pero nunca, hay que saltearse.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio serious in his workshop pointing his finger toward the camera, a warning look, the stove behind him"
+   },
+   {
+    "k": "G",
+    "v": "a close view of a brass gas cylinder valve on an old cylinder with a wrench next to it on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y al final, la comparación honesta: la misma habitación, el mismo termómetro y el mismo tiempo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "thermometer showing temperature on a wall"
+   },
+   {
+    "k": "G",
+    "v": "a wooden workbench with two thermometers placed side by side, one next to a small electric heater and the other next to a black stove, notebook beside them"
+   },
+   {
+    "k": "W",
+    "v": "two thermometers side by side"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mi taller es un galpón de chapa. En invierno amanece a seis, siete grados, y las manos no responden.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in a cold garage workshop in winter wearing a jacket over his navy work shirt, breath visible, holding a mug"
+   },
+   {
+    "k": "W",
+    "v": "cold garage workshop in winter"
+   },
+   {
+    "k": "G",
+    "v": "a cold unheated steel shed workshop with tools covered in frost at dawn, pale light coming in from the door"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La chapa se congela de afuera, y adentro el frío te muerde los dedos de la soldadora.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel workshop shed from outside covered with frost on a winter morning, sliding door half open"
+   },
+   {
+    "k": "W",
+    "v": "frozen metal roof of a shed in winter"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A esa temperatura el aceite se espesa, los tornillos no giran, y todo lleva el doble de tiempo.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a person's gloved hands holding a cold steel tube in a cold workshop, breath fogging in the air",
+    "motion": "the fog of breath rises slowly and the hands tighten on the tube"
+   },
+   {
+    "k": "G",
+    "v": "frost on a steel vice and tools on a workbench in a cold shed"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y ahí, atrás del galpón, la garrafa vieja. La que se pinchó y quedó tirada tres años.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old gas cylinder rusty in a yard"
+   },
+   {
+    "k": "G",
+    "v": "a dented old household gas cylinder lying in the weeds behind a shed, with a rusted valve"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Probé de todo. Calefactores eléctricos que saltaban la térmica, y una estufa a gas que se llevaba una garrafa por semana.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small old electric fan heater and a gas heater with a half empty cylinder in a cold workshop corner"
+   },
+   {
+    "k": "W",
+    "v": "gas heater"
+   },
+   {
+    "k": "W",
+    "v": "electric heater in a cold room"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una garrafa por semana en invierno, y el galpón seguía frío. Algo no cerraba en esa cuenta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting coins on a workbench in a cold workshop with a worried face"
+   },
+   {
+    "k": "G",
+    "v": "a household gas cylinder weighed on a bathroom scale in a workshop"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un día la miré, miré la leña apilada, y pensé: ¿y si la garrafa fuera una estufa?",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio crouching beside an old rusty gas cylinder in his back yard, tapping it with a knuckle and looking at it thoughtfully"
+   },
+   {
+    "k": "G",
+    "v": "a pile of firewood stacked against a shed wall"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una estufa a leña es un tubo de chapa con puerta y chimenea. Una garrafa es exactamente eso.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wood burning stove in a rustic room"
+   },
+   {
+    "k": "G",
+    "v": "a classic black cast iron wood stove in a rural kitchen with a chimney pipe going up through the wall"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El secreto de una salamandra es la superficie: una chapa grande y caliente que irradia calor para todos lados.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "radiator heat waves above a metal stove"
+   },
+   {
+    "k": "G",
+    "v": "a drawing on a blackboard of a stove with arrows showing heat radiating from the metal surface into the room"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una garrafa tiene mucha chapa en poco espacio: es casi la forma ideal para calentar un galpón.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding his hand near a warm metal surface feeling the radiant heat, in a workshop"
+   },
+   {
+    "k": "G",
+    "v": "an old black wood stove glowing slightly in a dim room"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hice un dibujo en un papel arrugado. Una garrafa acostada, una puerta, cuatro patas y una chimenea.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laughing and shaking his head while looking at a notebook with a sketch of a stove, in his workshop"
+   },
+   {
+    "k": "G",
+    "v": "a sheet of paper with a pencil sketch of a horizontal gas cylinder with a door, legs and a chimney pipe on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de empezar, miré cómo lo hacen otros. Y en los comentarios, la gente repetía cuatro cosas, que anoté.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "person reading comments on a laptop"
+   },
+   {
+    "k": "G",
+    "v": "a laptop on a workbench showing a video of a home-made rocket stove made from a gas cylinder, notebook and pencil beside it"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Uno, que los tubos o la boca de carga estén inclinados. Dos, no quemar madera tratada. Tres, un cenicero. Cuatro, no hacerle agujeros al fondo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a notebook open on a workbench with four lines written by hand, a pencil on it, workshop lights above"
+   },
+   {
+    "k": "W",
+    "v": "hand writing notes in a notebook"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El inventario. Casi todo es chatarra, y casi todo lo tienes en el patio.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in his workshop beside the stove materials laid out on the floor, hands on hips, looking at them"
+   },
+   {
+    "k": "G",
+    "v": "old household gas cylinder lying on a concrete floor next to a stack of materials: a steel pipe, flat bars, a hinge, a sheet of steel"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Herramientas: soldadora, amoladora, taladro, escuadra y nivel. Y protección: anteojos, guantes de cuero y careta.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "welding helmet and gloves on a workbench"
+   },
+   {
+    "k": "G",
+    "v": "a pair of leather welding gloves, safety glasses and a welding helmet laid on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La garrafa, de las de diez kilos, de unos treinta centímetros de diámetro y sesenta de alto. Vacía, y pinchada.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an old household gas cylinder about thirty centimetres wide and sixty tall lying on a concrete floor, rusty and with a worn orange paint, valve on top"
+   },
+   {
+    "k": "A",
+    "v": "an old gas cylinder lying on a workshop floor with its valve on top",
+    "motion": "a thin sunbeam moves slowly across the rusty metal"
+   },
+   {
+    "k": "G",
+    "v": "the valve on top of an old gas cylinder with a short steel ring guard, rust and old orange paint"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un caño de cuatro pulgadas para la chimenea, con un codo y un metro y medio de largo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a four inch diameter steel chimney pipe with an elbow, lying on a workbench next to a tape measure"
+   },
+   {
+    "k": "W",
+    "v": "steel stove pipe"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Planchuela y perfil ángulo para las patas y los refuerzos, de lo que sobra de cualquier portón viejo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two thick steel flat bars and a piece of angle iron on a workbench, rusty at the edges"
+   },
+   {
+    "k": "W",
+    "v": "rusty steel profiles in a scrap yard"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Dos bisagras y un pestillo. Y una chapa de dos milímetros, para el regulador de aire y el cenicero.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two heavy door hinges and a steel latch on a workbench, rust spots"
+   },
+   {
+    "k": "W",
+    "v": "old door hinges"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Seis ladrillos refractarios para forrar el piso de la estufa. Los ladrillos comunes se rajan con el fuego.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "six red fire bricks stacked beside a bucket on a workshop floor"
+   },
+   {
+    "k": "W",
+    "v": "red fire bricks"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una lata de pintura para altas temperaturas, que es la única que aguanta el calor de una estufa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small can of black high temperature paint on a workbench with a brush"
+   },
+   {
+    "k": "W",
+    "v": "high temperature paint can"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Gasto: unos electrodos, discos de corte y la pintura. El resto salió de la basura de otros.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with open hands beside the pile of scrap materials, a half smile"
+   },
+   {
+    "k": "G",
+    "v": "welding electrodes and a cutting disc on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Son siete pasos. Uno, el paso que nunca hay que saltearse: purgar la garrafa. Dos, cortar la puerta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio in front of the scratched blackboard in his workshop where he has drawn a gas cylinder stove, pointing with chalk"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard with a chalk drawing of a horizontal cylinder stove with a chimney, door and legs"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres, las patas. Cuatro, el collar y la chimenea. Cinco, la puerta con bisagras y el regulador de aire.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with chalk numbers three and four next to small drawings of legs and a pipe collar"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping a blackboard with chalk looking at the camera"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Seis, el piso de ladrillo y el cenicero. Y siete, pintar, instalar y hacer la primera prueba.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a blackboard with chalk numbers six and seven next to a drawing of a brick floor and a thermometer"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling at the camera beside the blackboard"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te gustan estos inventos con chatarra, quédate en el taller, que hay más. Y ahora, lo importante.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio wiping his hands on a rag and facing the camera casually in his workshop"
+   },
+   {
+    "k": "W",
+    "v": "workshop tools on a wall"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Todo el trabajo me llevó un fin de semana, con las pausas para curar la pintura y para probar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a stopwatch and a notebook on a workbench with a pencil"
+   },
+   {
+    "k": "P",
+    "v": "Claudio checking his watch near the stove materials, time to start"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso uno. Una garrafa vacía no está vacía: queda gas adentro. Gas que no se ve, y que explota con una chispa.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "an old household gas cylinder standing outdoors on dirt in an open yard with no one near it, a wrench resting on top",
+    "motion": "the wind moves a few dry leaves on the ground around the cylinder"
+   },
+   {
+    "k": "W",
+    "v": "warning sign for flammable gas"
+   },
+   {
+    "k": "W",
+    "v": "person lifting gas cylinder"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El gas de las garrafas es más pesado que el aire. No se va para arriba: se junta abajo, en el piso y en los pozos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "gas flame blue"
+   },
+   {
+    "k": "G",
+    "v": "a diagram chalk drawn on a blackboard showing gas heavier than air pooling at the floor of a room beside a cylinder"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una garrafa vacía pesa lo que dice la tara. Si pesa de más, todavía tiene gas, y hay que esperar o llevarla a gasificar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio lifting an old gas cylinder with both hands and feeling its weight, outdoors"
+   },
+   {
+    "k": "G",
+    "v": "a gas cylinder placed on a bathroom scale outdoors on a wooden board"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por eso este paso se hace afuera, al aire libre, lejos de la casa, y sin ninguna chispa cerca.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "open air field with grass"
+   },
+   {
+    "k": "G",
+    "v": "a wide open yard with grass far from buildings, an old gas cylinder standing on the ground next to a bucket of water and a hose"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero abro la válvula, a fondo, y dejo que salga lo que tenga. Despacio, y sin nadie cerca.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio wearing safety glasses and leather gloves holding a large adjustable wrench on a gas cylinder valve outdoors, serious calm face"
+   },
+   {
+    "k": "G",
+    "v": "close view of a hand wearing a leather glove gripping a wrench on a brass cylinder valve"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después, con la llave, saco la válvula entera. Y lleno la garrafa de agua, hasta que rebalse.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a hose filling an old gas cylinder opening with water outdoors, water overflowing onto the dirt"
+   },
+   {
+    "k": "W",
+    "v": "water pouring from a garden hose"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El agua empuja el gas hacia afuera, y ocupa su lugar. Con la garrafa llena de agua, ya no hay dónde se junte el gas.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "water from a garden hose pouring into the open valve hole of an old gas cylinder standing outdoors, the water rising and overflowing",
+    "motion": "the water flows continuously and overflows over the edge of the hole"
+   },
+   {
+    "k": "G",
+    "v": "an old gas cylinder full of water standing in a yard with water dripping from the opening"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y esto es lo que te pido: nunca, nunca, amoladora ni soldadura sobre una garrafa que no purgaste.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera very seriously beside the water-filled cylinder outdoors, one finger raised"
+   },
+   {
+    "k": "W",
+    "v": "safety goggles and gloves on a workbench"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si no sabes si la tuya está bien vacía, no la toques: llévala al lugar donde la cargan, y que te la gasifiquen ellos.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a handwritten cardboard sign on a workbench that has no text, a pair of safety glasses and gloves beside it"
+   },
+   {
+    "k": "P",
+    "v": "Claudio with arms crossed outdoors in his yard, stern expression"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La dejo así, llena de agua, durante todo el trabajo de corte. El agua es la que me protege.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an old gas cylinder lying outdoors on a pair of wooden blocks, full of water, in a sunny yard"
+   },
+   {
+    "k": "W",
+    "v": "water drops falling"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mientras esté llena hasta arriba, no hay gas adentro, no hay mezcla, y no hay chispa que importe. Esa es la lógica.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an old gas cylinder lying on its side filled with water in a yard with a plastic cap on the valve hole"
+   },
+   {
+    "k": "A",
+    "v": "the surface of the water in the open hole of a cylinder reflecting the sky",
+    "motion": "a gentle ripple moves across the water surface"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso dos, la puerta. La marco en un extremo de la garrafa, de veinte por quince centímetros.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio marking a rectangle with a paint marker on the side of a horizontal gas cylinder lying on a workbench, wearing safety glasses"
+   },
+   {
+    "k": "G",
+    "v": "a rectangle drawn with paint marker on the curved side of an old gas cylinder"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de cortar, la trabo con dos tacos de madera y una prensa: una garrafa que rueda mientras cortas es un accidente.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "two wooden blocks and clamps holding a gas cylinder steady on a workbench so that it cannot roll"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tightening a clamp that holds a gas cylinder on blocks, looking at it carefully"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Que no sea muy grande: tiene que entrar la leña, pero no se te tiene que escapar el calor por todos lados.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a metal gas cylinder on two wooden blocks with a paint marker rectangle on its end and a tape measure laid on it"
+   },
+   {
+    "k": "W",
+    "v": "tape measure on metal"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Amoladora, anteojos y protección de oídos. Corto siguiendo la línea, con la garrafa todavía llena de agua.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a person wearing safety glasses cutting a steel cylinder with an angle grinder, orange sparks flying to the side outdoors",
+    "motion": "sparks fly to the right and the cutting disc moves along the marked line"
+   },
+   {
+    "k": "W",
+    "v": "angle grinder cutting steel sparks"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las chispas van lejos, y por eso se corta afuera. Dentro del galpón, hasta que haya olor a gas cero.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "sparks flying from angle grinder"
+   },
+   {
+    "k": "P",
+    "v": "Claudio cutting steel with an angle grinder on a cylinder, sparks flying, concentrated looking down at the cut"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Sale la tapa. Por el agujero veo el agua adentro, y ningún olor a gas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a rectangular door cutout piece of steel lying on the grass next to a gas cylinder, its cut edges bright"
+   },
+   {
+    "k": "A",
+    "v": "the rectangular opening cut into the side of a gas cylinder with bright cut edges and a little steam rising from the water inside",
+    "motion": "a little steam rises from the water inside the cylinder"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ahora sí, lo vacío. Y lo dejo secar al sol, con la puerta abierta.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a plastic bucket receiving water poured out of a gas cylinder tilted on a wooden block, outdoors"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tilting the cylinder to pour water into a drain, outdoors"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lima en los bordes, para que no corten las manos, ni se enganchen en la bisagra.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio filing the cut edges of a steel opening with a flat file, sparks none, looking down at his work"
+   },
+   {
+    "k": "W",
+    "v": "metal file on steel"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y paso la mano con guante por todo el borde. Una chapa cortada es una cuchilla.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "steel sheet edge deburring"
+   },
+   {
+    "k": "G",
+    "v": "a hand sliding along a freshly filed edge of a steel opening wearing a leather glove"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso tres, las patas. Cuatro planchuelas de cuarenta centímetros, iguales.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "three steel flat bars cut to equal length lying in a row on a workbench with a tape measure"
+   },
+   {
+    "k": "W",
+    "v": "cutting steel flat bar"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las suelto de a pares, con la garrafa acostada. Primero puntos, y recién después el cordón entero.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio welding a steel leg onto the side of a horizontal gas cylinder wearing a welding helmet, blue arc light, on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "welder welding steel sparks"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con nivel, sí o sí: si queda inclinada hacia la puerta, la ceniza se te cae afuera.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a try square held against a welded steel leg on the side of a cylinder, the gap visible"
+   },
+   {
+    "k": "A",
+    "v": "a small spirit level placed on top of a horizontal gas cylinder on a workbench with its bubble moving to the center",
+    "motion": "the bubble in the level slowly slides to the centre"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La sacudo con la mano: no tiene que bailar. Si baila, le pongo una chapita debajo de la pata que cojea.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking the stove by its upper edge to test its stability on four legs on the concrete floor"
+   },
+   {
+    "k": "G",
+    "v": "a gas cylinder on four steel legs standing on a concrete floor with a thin shim under one leg"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y listo: la garrafa parada en cuatro patas, a la altura justa para cargar la leña sin agacharse.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "welder wearing protective helmet"
+   },
+   {
+    "k": "G",
+    "v": "a gas cylinder standing on four steel legs on a concrete workshop floor, freshly welded, seen from the front"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cuatro, la chimenea. Marco un círculo del diámetro del caño, al fondo de la garrafa, del lado de atrás.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio tracing a circle with a marker on the top of the gas cylinder using a short piece of chimney pipe as a template, his face concentrated"
+   },
+   {
+    "k": "G",
+    "v": "a four inch steel pipe placed on top of a gas cylinder back end with a marker circle drawn around its base"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Corto el agujero con la amoladora, y le suelto un collar corto de caño para que el humo salga hacia arriba.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the back end of a horizontal gas cylinder with a drilled circular opening cut and a short steel collar tube welded around the hole"
+   },
+   {
+    "k": "A",
+    "v": "an angle grinder cutting a circular opening on top of a cylinder, orange sparks fly",
+    "motion": "sparks fly and the disc moves along the circle"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La soldadura tiene que cerrar todo el contorno: si queda un hueco, el humo se te mete en el galpón.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "welding sparks close up"
+   },
+   {
+    "k": "P",
+    "v": "Claudio welding a short steel collar onto the top rear of a gas cylinder, helmet on, blue arc"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después, el caño sube un tramo, y hace un codo para salir por la pared.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel chimney pipe with an elbow connected to the collar of a black gas cylinder stove on a workbench"
+   },
+   {
+    "k": "W",
+    "v": "stove pipe elbow"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Atención acá: la chimenea tiene que salir afuera. Todo el humo de la leña se va por ahí.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining with both hands showing the path of smoke going up and out through a wall, in his workshop"
+   },
+   {
+    "k": "G",
+    "v": "a diagram drawn with chalk on a blackboard showing a stove, a chimney going up and out through the wall to the outside"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "¿Por qué tira una chimenea? Porque el aire caliente sube, y al subir arrastra aire fresco por la puerta. Cuanto más alta, más fuerte.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hot air rising above a flame"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard drawing showing warm smoke rising in a tall chimney pulling air in through a lower door of a stove"
+   }
+  ]
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El diámetro: cuatro pulgadas me alcanzó para esta garrafa. Más grande, enfría el humo y tira peor.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a four inch and a six inch steel chimney pipe side by side on a workbench"
+   },
+   {
+    "k": "P",
+    "v": "Claudio measuring the diameter of a chimney pipe with a caliper"
+   }
+  ]
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cinco. La puerta que corté, la vuelvo a poner con dos bisagras soldadas del lado de arriba.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the rectangular door cut out of the gas cylinder laid flat on a workbench with two hinges placed along one edge"
+   },
+   {
+    "k": "W",
+    "v": "door hinge welding"
+   }
+  ]
+ },
+ {
+  "id": "b067",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Que la puerta abra hacia abajo o hacia el costado, pero que cierre ajustada.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "welding a hinge onto a steel stove door lying on a workbench, bright blue arc and smoke",
+    "motion": "a bright arc flickers and smoke rises slowly"
+   },
+   {
+    "k": "P",
+    "v": "Claudio welding with a helmet at a workbench, the stove door in front of him"
+   }
+  ]
+ },
+ {
+  "id": "b068",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un pestillo de planchuela, y abajo una ranura con una chapita deslizante: es el regulador de aire.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small steel latch welded on the edge of a stove door, an adjustable draft slot cut in the lower part of the door"
+   },
+   {
+    "k": "W",
+    "v": "stove door latch"
+   }
+  ]
+ },
+ {
+  "id": "b069",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la chapita abierta, el fuego se aviva. Cerrada, se apaga despacio. Así regulas el calor.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio showing with his finger the sliding air regulator plate on the stove door, looking at the camera"
+   },
+   {
+    "k": "G",
+    "v": "close view of a sliding steel plate over a slot in a stove door, workbench"
+   }
+  ]
+ },
+ {
+  "id": "b070",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Abierta del todo, la leña arde fuerte y rápido. Cerrada a medias, dura horas y calienta parejo. Es la mejor parte del diseño.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a fire inside a stove growing brighter as the air regulator slot is opened",
+    "motion": "the flames grow stronger and lean toward the slot"
+   },
+   {
+    "k": "W",
+    "v": "stove air control"
+   },
+   {
+    "k": "G",
+    "v": "a stove air regulator slot with a small sliding plate half open and an orange glow inside"
+   }
+  ]
+ },
+ {
+  "id": "b071",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuatro, el cenicero: una bandeja de chapa que desliza debajo, para sacar la ceniza sin apagar el fuego. Que lo pedían en los comentarios.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a heavy sheet of steel being cut into a rectangle on a workbench, a steel ash tray shape drawn on it"
+   },
+   {
+    "k": "W",
+    "v": "steel sheet cutting"
+   }
+  ]
+ },
+ {
+  "id": "b072",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso seis. Dentro, en el piso, una cama de ladrillos refractarios, de canto, apretados uno contra otro.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "red fire bricks being placed one by one on the steel floor of a horizontal gas cylinder stove through its door",
+    "motion": "a hand places a brick and presses it down gently"
+   },
+   {
+    "k": "P",
+    "v": "Claudio kneeling and placing fire bricks inside the stove through the open door, looking in"
+   }
+  ]
+ },
+ {
+  "id": "b073",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Protegen la chapa del calor directo, y guardan calor cuando el fuego baja.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the inside of a gas cylinder stove with a floor of fire bricks laid in rows and a small gap at the bottom for air"
+   },
+   {
+    "k": "W",
+    "v": "fire bricks in a fireplace"
+   }
+  ]
+ },
+ {
+  "id": "b074",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Sin cemento ni mezcla: los ladrillos van sueltos, así se mueven con la dilatación y no se rajan.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "gloved hands arranging a loose row of fire bricks on the floor of a stove, leaving small gaps"
+   },
+   {
+    "k": "W",
+    "v": "fire bricks stacked"
+   }
+  ]
+ },
+ {
+  "id": "b075",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y ojo con el fondo: sin agujeros, como decían los comentarios. El aire entra por la puerta y por la ranura, y nada más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking through the stove door at the bricks with a flashlight, serious and calm"
+   },
+   {
+    "k": "G",
+    "v": "close view of the interior of a black gas cylinder stove with bricks and welded tabs"
+   }
+  ]
+ },
+ {
+  "id": "b076",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La ceniza cae por la rejilla del frente al cenicero, que se saca por abajo. Y el fondo de la garrafa queda entero.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "ash falling from a fireplace"
+   },
+   {
+    "k": "G",
+    "v": "a steel ash tray sliding under a stove, the tray catching a little ash"
+   }
+  ]
+ },
+ {
+  "id": "b077",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Quedó una estufa. Todavía sin pintar. Y quise probarla en el patio, antes de meterla al galpón.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing outdoors in the yard beside the finished unpainted gas cylinder stove on its four legs with its chimney pipe pointing up, arms crossed, proud look"
+   },
+   {
+    "k": "G",
+    "v": "a bare steel stove made from a gas cylinder with legs and a chimney pipe standing on a concrete patio in daylight"
+   }
+  ]
+ },
+ {
+  "id": "b078",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Papel, ramitas finas, y la puerta entreabierta. Y al principio, humo. Un humo blanco, de aceite viejo y pintura vieja que se quema.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a small fire of newspaper and dry sticks burning inside the open door of a bare steel gas cylinder stove outdoors",
+    "motion": "the small flames flicker and thin smoke rises from the chimney"
+   },
+   {
+    "k": "W",
+    "v": "smoke rising from a metal chimney"
+   },
+   {
+    "k": "W",
+    "v": "smoke from a chimney outdoors"
+   }
+  ]
+ },
+ {
+  "id": "b079",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero había otro problema: el humo no subía por la chimenea. Se me salía por la puerta.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "thick grey smoke coming out of the stove door into a yard instead of going up the chimney, with a small flame inside"
+   },
+   {
+    "k": "P",
+    "v": "Claudio waving smoke away from his face next to the stove, coughing a little, eyes squinting"
+   }
+  ]
+ },
+ {
+  "id": "b080",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La estufa no tiraba. Lo pensé un rato, y no era la estufa: era la chimenea.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "smoke from a campfire"
+   },
+   {
+    "k": "P",
+    "v": "Claudio crouching to look into the stove door at the fire, frowning"
+   }
+  ]
+ },
+ {
+  "id": "b081",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Era muy corta. Una chimenea corta no tira, porque el tiro depende de la altura.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a very short stove pipe about forty centimetres tall on top of a gas cylinder stove outdoors, smoke hesitating"
+   },
+   {
+    "k": "W",
+    "v": "chimney pipe on a roof"
+   }
+  ]
+ },
+ {
+  "id": "b082",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Le agregué dos tramos más, hasta casi tres metros. Y ahí sí: el humo subió derecho, y la estufa empezó a rugir.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a taller chimney pipe made of three sections connected to a gas cylinder stove outdoors, smoke rising straight up"
+   },
+   {
+    "k": "A",
+    "v": "smoke rising straight out of a tall chimney pipe on a gas cylinder stove outdoors",
+    "motion": "the smoke climbs steadily upward"
+   }
+  ]
+ },
+ {
+  "id": "b083",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ese fue el error: una chimenea de poca altura. Con tres metros, tira como una locomotora.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio smiling widely beside the stove with its roaring fire visible through the door, orange light on his face"
+   },
+   {
+    "k": "G",
+    "v": "a bright orange fire roaring inside a gas cylinder stove, seen through the open door"
+   }
+  ]
+ },
+ {
+  "id": "b084",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y esto aplica a cualquier chimenea: si no tira, antes de tocar la estufa, mide la altura. Casi siempre es eso.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "steam locomotive smoke"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking up at the chimney outdoors with smoke rising straight, hands on hips, satisfied"
+   }
+  ]
+ },
+ {
+  "id": "b085",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso siete. Pintura negra para altas temperaturas, dos manos finas. Y sobre una chapa limpia, sin óxido.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio brushing black high temperature paint on a gas cylinder stove on its legs in his yard, concentrated"
+   },
+   {
+    "k": "G",
+    "v": "a gas cylinder stove half painted in matt black with a wide brush and an open paint can beside it"
+   }
+  ]
+ },
+ {
+  "id": "b086",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero lijo y paso el cepillo de alambre. La pintura sobre óxido se despega al primer calor.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a steel wire brush cleaning rust from a gas cylinder stove surface, rust dust"
+   },
+   {
+    "k": "W",
+    "v": "wire brush cleaning rust"
+   }
+  ]
+ },
+ {
+  "id": "b087",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la dejo secar un día entero, antes del primer fuego de verdad.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "black paint being brushed over bare steel on a stove, thin even coat",
+    "motion": "the brush moves slowly along the metal leaving a black coat"
+   },
+   {
+    "k": "W",
+    "v": "painting steel black"
+   }
+  ]
+ },
+ {
+  "id": "b088",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La pintura de alta temperatura se cura con calor: la primera vez que prendes, huele y larga humo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the sky and then at the painted stove drying in the sun in his yard"
+   },
+   {
+    "k": "W",
+    "v": "sun drying paint"
+   }
+  ]
+ },
+ {
+  "id": "b089",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por eso el primer encendido es chico, tres veces, con todo abierto, hasta que no huela más.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a workshop with its sliding door and window wide open and a stove burning a small fire with faint smoke"
+   },
+   {
+    "k": "P",
+    "v": "Claudio opening a window of the workshop while the new stove burns a small fire"
+   }
+  ]
+ },
+ {
+  "id": "b090",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y así queda: una salamandra negra, con una manija de varilla roja en la puerta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio showing the painted black stove to the camera, hand resting on its top, proud"
+   },
+   {
+    "k": "G",
+    "v": "a finished matt black stove made from a gas cylinder with a chimney pipe and a neat red handle on the door, in a workshop"
+   }
+  ]
+ },
+ {
+  "id": "b091",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La llevamos al galpón, sobre un piso que no se prende fuego: cemento, y debajo una chapa más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio and a neighbour carrying the black stove into the workshop on a wooden pallet"
+   },
+   {
+    "k": "G",
+    "v": "a black stove made from a gas cylinder placed on a concrete workshop floor on a layer of bricks near a wall"
+   }
+  ]
+ },
+ {
+  "id": "b092",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y debajo de la estufa, una chapa más, por si cae una brasa. Una brasa en un piso de madera es un incendio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "fireproof floor tile"
+   },
+   {
+    "k": "G",
+    "v": "a steel plate under a stove on a concrete floor, bricks around it in a workshop"
+   }
+  ]
+ },
+ {
+  "id": "b093",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Distancia: al menos un metro de cualquier cosa que se queme. Madera, trapos, nafta, pintura.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a measuring tape showing one metre between a stove and a wooden shelf in a workshop"
+   },
+   {
+    "k": "W",
+    "v": "tape measure"
+   }
+  ]
+ },
+ {
+  "id": "b094",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La chimenea sale por la pared de chapa con un manguito de metal alrededor, para que no caliente la madera.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a stove chimney pipe passing through a hole in the sheet metal wall of a workshop shed with a metal sleeve around it",
+    "motion": "a faint wisp of steam rises from the metal collar"
+   },
+   {
+    "k": "P",
+    "v": "Claudio fitting a metal sleeve around the chimney pipe at the wall of his shed with a screwdriver"
+   }
+  ]
+ },
+ {
+  "id": "b095",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Afuera, un sombrerito antilluvia, y por encima de la cumbrera del techo, para que no se te vuelque el humo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a chimney pipe with a rain cap at the top outside a shed roof, blue sky behind"
+   },
+   {
+    "k": "W",
+    "v": "chimney cap on roof"
+   }
+  ]
+ },
+ {
+  "id": "b096",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y esto, que no es opcional: un detector de monóxido de carbono. El monóxido no se ve ni se huele.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio fixing a carbon monoxide detector on the workshop wall with a drill and a screw, looking up at it"
+   },
+   {
+    "k": "G",
+    "v": "a small white carbon monoxide detector mounted on a shed wall with a green light on"
+   }
+  ]
+ },
+ {
+  "id": "b097",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo pruebo con el botón, y lo cambio cuando se cumple la fecha de vencimiento. Un detector vencido no detecta.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a smoke detector and a carbon monoxide detector installed side by side on a workshop wall"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pressing the test button on the carbon monoxide detector, the light blinking"
+   }
+  ]
+ },
+ {
+  "id": "b098",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Nada de usar esto en un ambiente cerrado sin tiraje, y menos en un dormitorio. Esto es para un galpón ventilado.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "carbon monoxide detector device"
+   },
+   {
+    "k": "P",
+    "v": "Claudio standing in front of the stove pointing to the detector on the wall and then to the chimney, looking at the camera"
+   }
+  ]
+ },
+ {
+  "id": "b099",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primera prueba de verdad. Ramitas secas, un poco de papel, y la puerta entreabierta para que agarre.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio crouching to light dry sticks inside the black stove in his workshop with a long match, frost on the window behind him"
+   },
+   {
+    "k": "A",
+    "v": "a long match being lit and held to a pile of dry sticks and paper inside a stove",
+    "motion": "the match flame touches the paper and the paper starts to burn"
+   }
+  ]
+ },
+ {
+  "id": "b100",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El termómetro marca nueve grados. Y la leña, de eucalipto bien seco, y sin tratar. Nada de maderas pintadas ni laminadas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a wall thermometer in a workshop showing nine degrees, frost visible on the window beside it"
+   },
+   {
+    "k": "W",
+    "v": "frozen window in winter"
+   }
+  ]
+ },
+ {
+  "id": "b101",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Agrego dos troncos, cierro la puerta casi del todo, y espero.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "logs being added to a burning stove through the open door, flames growing",
+    "motion": "the flames grow and flicker around the logs"
+   },
+   {
+    "k": "G",
+    "v": "a pile of dry eucalyptus logs next to the stove on a bit of sheet metal"
+   }
+  ]
+ },
+ {
+  "id": "b102",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A los diez minutos ya se siente el calor en la cara. A los veinte, hay que sacarse la campera.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wood burning in a stove with orange flames"
+   },
+   {
+    "k": "P",
+    "v": "Claudio sitting on an upturned bucket next to the stove with a mug, warming his hands, content face"
+   }
+  ]
+ },
+ {
+  "id": "b103",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Dieciséis grados, y la escarcha del vidrio empieza a correrse. A los cuarenta minutos, veinte.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a round thermometer in a workshop showing sixteen degrees with a little condensation on the glass"
+   },
+   {
+    "k": "A",
+    "v": "the window of a workshop with frost melting and dripping water down the glass",
+    "motion": "drops slide down the glass"
+   }
+  ]
+ },
+ {
+  "id": "b104",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un galpón que amanecía a seis, en una hora estaba como una cocina.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laughing with his jacket off beside the stove, sleeves rolled up, visibly warm"
+   },
+   {
+    "k": "W",
+    "v": "warm orange light from a stove in a dark room"
+   }
+  ]
+ },
+ {
+  "id": "b105",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y ese calor se queda: la chapa y los ladrillos guardan temperatura, y el galpón no se enfría de golpe cuando se apaga el fuego.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cozy warm room from a fire"
+   },
+   {
+    "k": "P",
+    "v": "Claudio leaning on his workbench near the stove, relaxed and warm, working with a pencil"
+   }
+  ]
+ },
+ {
+  "id": "b106",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ahora la comparación honesta. Un día prendí la estufa eléctrica de dos barras. Otro día, la salamandra.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a workshop with an electric two-bar heater on one side and a black gas cylinder stove on the other, a thermometer on a stool in the middle"
+   },
+   {
+    "k": "P",
+    "v": "Claudio setting a notebook and two thermometers on a bench, preparing a test"
+   }
+  ]
+ },
+ {
+  "id": "b107",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Misma habitación, mismo termómetro, y mismo horario. Arrancando los dos días cerca de los diez grados.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a workshop clock on a wall showing a time with a thermometer next to it"
+   },
+   {
+    "k": "W",
+    "v": "wall clock"
+   }
+  ]
+ },
+ {
+  "id": "b108",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la estufa eléctrica, después de una hora, subió unos tres grados. Con la salamandra, subió más de diez.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a notebook open with a hand-drawn table with two columns, numbers written in pencil, a pencil resting on it"
+   },
+   {
+    "k": "P",
+    "v": "Claudio writing the numbers in the notebook with a pencil, looking down"
+   }
+  ]
+ },
+ {
+  "id": "b109",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero ojo, que no es una comparación justa en todo. La estufa se enchufa y listo. La salamandra pide leña, ceniza y atención.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging honestly with open hands in his workshop"
+   },
+   {
+    "k": "G",
+    "v": "the electric heater and the black stove side by side on the concrete floor, both off"
+   }
+  ]
+ },
+ {
+  "id": "b110",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por el lado del costo, la leña me sale casi gratis, porque la junto de podas. La luz, en cambio, es una factura.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an electric bill and a pile of firewood side by side on a workbench with a calculator"
+   },
+   {
+    "k": "P",
+    "v": "Claudio weighing options with his hands like a balance, looking at the camera"
+   }
+  ]
+ },
+ {
+  "id": "b111",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay que cortar leña, cargarla cada tanto, y vaciar la ceniza. Es otro oficio. Pero el calor es otro mundo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "firewood stacked"
+   },
+   {
+    "k": "P",
+    "v": "Claudio carrying an armful of firewood toward the stove, steam from his breath"
+   }
+  ]
+ },
+ {
+  "id": "b112",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La ceniza se saca con el cenicero, con la estufa apagada y fría, y se guarda en un balde metálico. Nunca en plástico.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "the stove door open showing glowing coals and a small ash tray pulled halfway out beneath"
+   },
+   {
+    "k": "A",
+    "v": "an ash tray being slid out under a stove, grey ash and red embers",
+    "motion": "a gentle puff of ash rises"
+   },
+   {
+    "k": "G",
+    "v": "a pair of leather gloves resting on a metal bucket beside a stove"
+   }
+  ]
+ },
+ {
+  "id": "b113",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y mientras haya brasas, la estufa no se deja sola. Ni se va uno a dormir con fuego dentro de casa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a metal bucket with a lid holding grey ash beside a stove on a concrete floor"
+   },
+   {
+    "k": "W",
+    "v": "metal ash bucket"
+   }
+  ]
+ },
+ {
+  "id": "b114",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una vez por temporada, y con frecuencia si usas leña húmeda, limpio la chimenea. El hollín se acumula, y eso es lo que se prende fuego.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio sweeping the chimney with a long brush at the end of a rod, standing on a stool outdoors"
+   },
+   {
+    "k": "W",
+    "v": "chimney sweep brush"
+   }
+  ]
+ },
+ {
+  "id": "b115",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ahora, lo que la gente pedía en los comentarios. Primero, la inclinación.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a pencil, notebook in hand, explaining"
+   },
+   {
+    "k": "W",
+    "v": "person writing in notebook"
+   }
+  ]
+ },
+ {
+  "id": "b116",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tiltas la boca de carga hacia abajo, la leña se desliza sola a medida que se quema. Esto lo pedían con más fuerza.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a drawing on a blackboard of a stove with a loading tube tilted downward toward the fire so that logs slide in by gravity"
+   },
+   {
+    "k": "W",
+    "v": "wood logs sliding"
+   }
+  ]
+ },
+ {
+  "id": "b117",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En mi versión, por simpleza, la puerta es horizontal, y cargo a mano. Pero si haces otra, inclínala.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head with a half smile, pointing at the stove door"
+   },
+   {
+    "k": "G",
+    "v": "the black stove with a small hopper added above the door, drawn in chalk on the wall"
+   }
+  ]
+ },
+ {
+  "id": "b118",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "También puedes hacerla vertical, parada. Es más chica en el piso, pero la leña tiene que ser más corta.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a vertical gas cylinder stove with a small door at the bottom and a chimney on top compared with a horizontal one on a blackboard drawing"
+   },
+   {
+    "k": "P",
+    "v": "Claudio comparing two sketches of stoves with a pencil, thinking"
+   }
+  ]
+ },
+ {
+  "id": "b119",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Dos, la madera. Tratada, pintada, laminada o aglomerado: no. Al quemarse suelta químicos que te enferman.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "burning treated wood hazard"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing a piece of painted plywood and a piece of clean eucalyptus, shaking his head at the painted one"
+   }
+  ]
+ },
+ {
+  "id": "b120",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Leña seca, de monte, y nada más. Y la leña verde, no: humea, ensucia la chimenea y calienta poco.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a pile of clean dry eucalyptus firewood on the left and a pile of painted plywood scraps with a red cross drawn on the right"
+   },
+   {
+    "k": "W",
+    "v": "dry firewood logs"
+   }
+  ]
+ },
+ {
+  "id": "b121",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y limpia la chimenea cada tanto. El hollín se acumula, y con el tiempo se puede prender fuego.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio cleaning the inside of the chimney pipe with a wire brush on a long handle, soot on his gloves"
+   },
+   {
+    "k": "G",
+    "v": "soot black creosote inside a steel chimney pipe cross section"
+   }
+  ]
+ },
+ {
+  "id": "b122",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En total: un fin de semana, unos electrodos, discos y pintura. Y un galpón que dejó de ser un freezer.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking proudly at the finished stove in his workshop, tools resting on the bench"
+   },
+   {
+    "k": "G",
+    "v": "a clean tidy workshop with the black stove glowing in the corner and tools arranged on a pegboard"
+   }
+  ]
+ },
+ {
+  "id": "b123",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y encima, una sorpresa: la tapa de la salamandra es una cocina. Pongo una olla y hierve en diez minutos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio placing a steel pot on top of the black stove, steam rising from the pot, in his workshop"
+   },
+   {
+    "k": "A",
+    "v": "a pot of water steaming on top of a black stove, small bubbles rising",
+    "motion": "steam rises steadily from the pot and the water bubbles gently"
+   }
+  ]
+ },
+ {
+  "id": "b124",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un guiso en el taller, mientras trabajo. Con la misma leña que me calienta.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a pot of stew steaming on top of the black stove in a workshop, two plates on a bench beside it"
+   },
+   {
+    "k": "W",
+    "v": "cooking pot on a wood stove"
+   }
+  ]
+ },
+ {
+  "id": "b125",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El mismo fuego que calienta el galpón, me da el almuerzo. Y con una garrafa que estaba tirada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio eating a hot meal at his workbench next to the stove, relaxed, looking toward the camera"
+   },
+   {
+    "k": "G",
+    "v": "a plate of stew and bread on a wooden workbench near the glowing stove"
+   }
+  ]
+ },
+ {
+  "id": "b126",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un matafuego al alcance, siempre. Una estufa a leña es un fuego dentro de tu casa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio placing a metal bucket on the floor beside the stove and a fire extinguisher on the wall nearby"
+   },
+   {
+    "k": "G",
+    "v": "a red fire extinguisher mounted on a shed wall near a black stove"
+   }
+  ]
+ },
+ {
+  "id": "b127",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El resumen de seguridad. Uno, purgar la garrafa con agua, afuera, siempre. Dos, chimenea alta y hacia el exterior.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing beside the stove counting on his fingers, serious but warm"
+   },
+   {
+    "k": "G",
+    "v": "a blackboard with a list of four safety points drawn with chalk next to the stove"
+   }
+  ]
+ },
+ {
+  "id": "b128",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres, detector de monóxido y matafuego. Cuatro, un metro de distancia de lo que se quema, y nada de dormitorios.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a carbon monoxide detector and a fire extinguisher beside a stove on a shed wall"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pointing to the detector and the extinguisher with a smile"
+   }
+  ]
+ },
+ {
+  "id": "b129",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tienes una garrafa vieja, no la tires: pero tampoco la cortes sin purgarla. Cuéntame qué harías tú con ella.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with the stove glowing behind him, a friendly half smile"
+   },
+   {
+    "k": "W",
+    "v": "cozy workshop with a warm fire"
+   }
+  ]
+ },
+ {
+  "id": "b130",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En el próximo video, una prensa plegadora para doblar chapa de tres milímetros. Nos vemos en el taller.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "the door of the black stove glowing orange in a dark workshop at night, sparks flying",
+    "motion": "the fire flickers and a spark rises"
+   },
+   {
+    "k": "P",
+    "v": "Claudio waving goodbye to the camera next to the stove, warm light on his face"
+   }
+  ]
+ }
+]
