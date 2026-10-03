@@ -1,0 +1,605 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b001.wav",
+  "start": 0.0,
+  "len": 9.1,
+  "text": "Te duchas, y el agua se queda hasta los tobillos. Lo destapas, y a la semana, otra vez. Hay una causa que casi nadie te explica."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b002.wav",
+  "start": 9.1,
+  "len": 7.39,
+  "text": "Soy Claudio, plomero. Casi nunca el problema es el pelo que ves en la superficie. Es lo que hay más abajo."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b003.wav",
+  "start": 16.49,
+  "len": 7.65,
+  "text": "Y si usas destapacaños químico cada vez, es probable que estés empeorando el problema, y dañando tus tuberías."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b004.wav",
+  "start": 24.14,
+  "len": 8.56,
+  "text": "Te voy a mostrar tres cosas: qué se acumula, por qué se vuelve a tapar, y cómo destaparlo de verdad, sin químicos ni plomero."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b005.wav",
+  "start": 32.7,
+  "len": 9.27,
+  "text": "Un plomero a domicilio cobra bastante por una destapada, y a veces vuelve a tapar en pocos días. Con lo que te cuento, puedes evitarlo."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b006.wav",
+  "start": 41.97,
+  "len": 8.18,
+  "text": "Y si al final no funciona, te digo qué buscar para que un profesional no te cobre de más. Empecemos por entender qué hay ahí abajo."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b007.wav",
+  "start": 50.15,
+  "len": 8.56,
+  "text": "Debajo de la rejilla hay una trampa en forma de U, o de P. Siempre tiene un poco de agua, que impide que los olores suban."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b008.wav",
+  "start": 58.71,
+  "len": 7.26,
+  "text": "Ese codo es el lugar más estrecho, y donde todo se acumula: es un tobogán con una curva donde las cosas se quedan."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b009.wav",
+  "start": 65.97,
+  "len": 7.49,
+  "text": "Y hay un tubo de ventilación, que sube hasta el techo. Es el que deja entrar aire para que el agua baje sin gluglú."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b010.wav",
+  "start": 73.46,
+  "len": 8.66,
+  "text": "Sin aire, el agua baja lento, como una botella boca abajo con un solo agujero. Por eso a veces el problema no es un tapón."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b011.wav",
+  "start": 82.12,
+  "len": 10.3,
+  "text": "La causa real casi nunca es solo el pelo. Es el jabón en barra, que forma una masa pegajosa mezclada con el pelo. Una pasta que se pega a las paredes."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b012.wav",
+  "start": 92.42,
+  "len": 7.64,
+  "text": "Mira lo que saqué de un caño: hebras de pelo atrapadas en una pasta blanca y gris. Eso no se disuelve con un químico."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b013.wav",
+  "start": 100.06,
+  "len": 8.93,
+  "text": "Los champús y los acondicionadores dejan residuos, pero el jabón sólido, hecho con grasa, es lo que endurece como cera dentro del tubo."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b014.wav",
+  "start": 108.99,
+  "len": 9.0,
+  "text": "Con el agua fría, esa grasa se endurece. Y con el agua dura, se mezcla con el sarro y forma una costra que reduce el diámetro del tubo."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b015.wav",
+  "start": 117.99,
+  "len": 8.1,
+  "text": "El sarro es la otra mitad del problema: la cal de agua dura se acumula en capas, y cada capa atrapa más pelo y más grasa."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b016.wav",
+  "start": 126.09,
+  "len": 9.46,
+  "text": "Por eso se tapa una y otra vez: no limpiaste el tubo, solo hiciste un agujero en el tapón. La capa de grasa y sarro sigue ahí, esperando."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b017.wav",
+  "start": 135.55,
+  "len": 8.64,
+  "text": "Los destapacaños químicos fuertes no sirven para pelo y pasta de jabón. Y producen calor, que ablanda los tubos de plástico."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b018.wav",
+  "start": 144.19,
+  "len": 9.68,
+  "text": "Además son peligrosos: queman la piel y los ojos, y si salpican, pueden causar daños graves. Y si el plomero llega después, también corre riesgo."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b019.wav",
+  "start": 153.87,
+  "len": 7.41,
+  "text": "Nunca los mezcles con otros productos, como la lavandina. Se generan gases tóxicos que pueden mandarte al hospital."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b020.wav",
+  "start": 161.28,
+  "len": 9.46,
+  "text": "El truco casero de bicarbonato y vinagre hace espuma, y ayuda a limpiar un poco. Pero no destapa un tapón de pelo: es más espectáculo que solución."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b021.wav",
+  "start": 170.74,
+  "len": 9.12,
+  "text": "Lo que sí ayuda como mantenimiento son los limpiadores enzimáticos, que digieren los residuos orgánicos, lentamente, sin dañar los tubos."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b022.wav",
+  "start": 179.86,
+  "len": 8.39,
+  "text": "Para destapar de verdad, necesitas poco: un destapador con púas, de plástico, guantes, un destornillador y un balde."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b023.wav",
+  "start": 188.25,
+  "len": 7.44,
+  "text": "Paso uno: sacar la rejilla. Casi siempre se saca con un destornillador, o con la mano si es a presión."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b024.wav",
+  "start": 195.69,
+  "len": 7.8,
+  "text": "Paso dos: sacar a mano lo que se ve. Con guantes, o con un alambre doblado en gancho. Muchas veces ya con eso mejora."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b025.wav",
+  "start": 203.49,
+  "len": 11.42,
+  "text": "Paso tres: el destapador de púas. Lo bajas despacio, lo giras un poco, y lo sacas: sale cubierto de pelo y de pasta. Se repite hasta que salga limpio."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b026.wav",
+  "start": 214.91,
+  "len": 9.11,
+  "text": "Paso cuatro: agua bien caliente, pero no hirviendo si hay tubos de plástico, para arrastrar la grasa. En dos o tres tandas, con una pausa."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b027.wav",
+  "start": 224.02,
+  "len": 10.0,
+  "text": "Paso cinco: probar con el agua abierta. Si baja rápido, listo. Si sigue lenta, el tapón está más abajo, en la trampa o en el caño."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b028.wav",
+  "start": 234.02,
+  "len": 7.85,
+  "text": "Muchas ducha tienen una trampa accesible por abajo, en el piso inferior, o por un registro. Ahí se acumula todo."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b029.wav",
+  "start": 241.87,
+  "len": 8.22,
+  "text": "Con un balde debajo, se aflojan las tuercas a mano o con una llave, y sale el agua sucia. Tapón a la vista, casi siempre."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b030.wav",
+  "start": 250.09,
+  "len": 9.58,
+  "text": "Mira esto: una masa negra de pelo, jabón y arenilla. Se limpia con un cepillo y agua, y se vuelve a armar con las juntas bien puestas."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b031.wav",
+  "start": 259.67,
+  "len": 8.79,
+  "text": "Al montar, revisa las juntas de goma: si están gastadas, cámbialas. Y aprieta a mano y un cuarto de vuelta más, sin forzar."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b032.wav",
+  "start": 268.46,
+  "len": 9.44,
+  "text": "Cómo evitar que vuelva a tapar: lo primero, una rejilla atrapa pelos de silicona o metal, barata, y se limpia a diario. Es lo que más ayuda."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b033.wav",
+  "start": 277.9,
+  "len": 8.37,
+  "text": "Segundo, cambiar el jabón en barra por jabón líquido. Menos grasa sólida en los caños, y mucho menos acumulación de pasta."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b034.wav",
+  "start": 286.27,
+  "len": 8.07,
+  "text": "Tercero, un mantenimiento mensual con agua caliente y un limpiador enzimático, para disolver lo que se vaya pegando."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b035.wav",
+  "start": 294.34,
+  "len": 9.18,
+  "text": "Y cuarto, cepillar la rejilla cada tanto, para que el sarro no la cubra. Cinco minutos al mes que evitan una visita de emergencia."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b036.wav",
+  "start": 303.52,
+  "len": 8.72,
+  "text": "Llama a un profesional si varios desagües van lentos a la vez, si hay ruidos de gluglú, olor a cloaca, o agua que sube por otro lado."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b037.wav",
+  "start": 312.24,
+  "len": 8.87,
+  "text": "Eso indica un problema en la tubería principal, o en la ventilación, y requiere herramientas profesionales: sonda eléctrica o cámara."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b038.wav",
+  "start": 321.11,
+  "len": 7.67,
+  "text": "Y pide siempre un presupuesto antes. Un buen plomero te muestra lo que sacó del caño y te explica por qué se tapó."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b039.wav",
+  "start": 328.78,
+  "len": 8.96,
+  "text": "No todos los desagües son iguales. Hay rejilla de piso, tapón de tina de rosca, y tapón de palanca. Cada uno se limpia distinto."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b040.wav",
+  "start": 337.74,
+  "len": 8.46,
+  "text": "En el tapón de rosca, se desatornilla un tornillito y se saca: casi siempre está cubierto de pelo y jabón enroscado en el vástago."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b041.wav",
+  "start": 346.2,
+  "len": 9.99,
+  "text": "En el de palanca, hay un mecanismo detrás de la placa del rebosadero: se saca la varilla, se limpia, y se vuelve a poner. Ahí se atora mucha porquería."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b042.wav",
+  "start": 356.19,
+  "len": 8.45,
+  "text": "Con agua jabonosa y un cepillo, queda como nuevo. Y con eso, a veces el desagüe vuelve a la normalidad sin tocar nada más."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b043.wav",
+  "start": 364.64,
+  "len": 9.68,
+  "text": "A veces el problema no está en el desagüe sino en el techo: la ventilación obstruida por hojas o un nido. Sin aire, el agua baja lenta."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b044.wav",
+  "start": 374.32,
+  "len": 8.91,
+  "text": "El síntoma: gluglú en otros desagües cuando usas la ducha, o el agua que baja a golpes. Es el aire que busca por dónde entrar."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b045.wav",
+  "start": 383.23,
+  "len": 8.01,
+  "text": "Revisar la ventilación en el techo es peligroso: mejor llamar a un profesional que tenga arnés y escalera. No te subas por esto."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b046.wav",
+  "start": 391.24,
+  "len": 8.94,
+  "text": "El profesional la destapa con una sonda larga, y a veces con agua a presión desde arriba. Es un trabajo corto, y resuelve muchos casos."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b047.wav",
+  "start": 400.18,
+  "len": 8.68,
+  "text": "El destapador de goma, bien usado, es una herramienta excelente. Hay de copa, para desagües planos, y con reborde, para inodoros."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b048.wav",
+  "start": 408.86,
+  "len": 8.53,
+  "text": "Para una ducha: se tapa el rebosadero, se cubre el desagüe con agua hasta cubrir la copa, y se bombea firme, sin despegarla."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b049.wav",
+  "start": 417.39,
+  "len": 8.63,
+  "text": "Es clave tapar el rebosadero con un trapo mojado: si no, la presión se escapa por ahí. Y bombea unas quince veces."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b050.wav",
+  "start": 426.02,
+  "len": 7.25,
+  "text": "Y desinfecta el destapador después de usarlo, y guárdalo en un balde aparte. Es una herramienta que pasa por lugares sucios."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b051.wav",
+  "start": 433.27,
+  "len": 9.05,
+  "text": "Un truco que funciona mucho: una aspiradora de sólidos y líquidos. Se sella la boca del tubo contra el desagüe con un trapo, y aspiras el tapón."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b052.wav",
+  "start": 442.32,
+  "len": 8.03,
+  "text": "No siempre sale, pero cuando el tapón está cerca, casi siempre lo trae. Y limpias sin meter productos ni desarmar nada."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b053.wav",
+  "start": 450.35,
+  "len": 7.67,
+  "text": "Prueba primero con la herramienta más suave y sigue hacia la más fuerte. Y si no sale, no insistas: hay un problema más abajo."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b054.wav",
+  "start": 458.02,
+  "len": 9.02,
+  "text": "Si hablamos de la regadera, la que lanza el agua, esa se tapa por sarro. Los chorritos salen torcidos o ninguno, y baja la presión."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b055.wav",
+  "start": 467.04,
+  "len": 7.94,
+  "text": "Se desenrosca con la mano, o con una llave y un trapo para no rayar el acabado. Sin forzar, que la rosca es delicada."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b056.wav",
+  "start": 474.98,
+  "len": 7.74,
+  "text": "Se sumerge en vinagre blanco por una hora. El vinagre ataca el sarro, y los orificios se abren solos."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b057.wav",
+  "start": 482.72,
+  "len": 9.26,
+  "text": "Después, un cepillo viejo y un alfiler para destapar los orificios. Un buen enjuague, y la regadera vuelve a sacar chorros parejos."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b058.wav",
+  "start": 491.98,
+  "len": 10.31,
+  "text": "Muchas tienen un limitador de caudal, un disco chico que reduce el agua. Es normal, pero si está tapado, la presión cae mucho. Se limpia aparte."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b059.wav",
+  "start": 502.29,
+  "len": 8.0,
+  "text": "Si la presión baja en toda la casa, el problema no es la regadera. Con un manómetro chico, se mide y se confirma."
+ },
+ {
+  "beat": "b060",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b060.wav",
+  "start": 510.29,
+  "len": 9.42,
+  "text": "Causas: una llave de paso a medio abrir, un filtro tapado, una fuga o el suministro. Una por una, se descartan en minutos."
+ },
+ {
+  "beat": "b061",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b061.wav",
+  "start": 519.71,
+  "len": 8.59,
+  "text": "Y si solo falla en la ducha, puede ser el cartucho del grifo, lleno de sarro. Se cambia con una llave Allen y un repuesto de pocos pesos."
+ },
+ {
+  "beat": "b062",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b062.wav",
+  "start": 528.3,
+  "len": 9.73,
+  "text": "Hábitos que lo previenen todo: rejilla atrapa pelos, jabón líquido, agua caliente mensual, y limpiar la regadera dos veces al año."
+ },
+ {
+  "beat": "b063",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b063.wav",
+  "start": 538.03,
+  "len": 8.69,
+  "text": "Con niños, cuidado con los juguetes y las gomitas del pelo, que se van por el desagüe y forman un tapón sólido. Es más común de lo que parece."
+ },
+ {
+  "beat": "b064",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b064.wav",
+  "start": 546.72,
+  "len": 9.64,
+  "text": "Con estos hábitos, la ducha siempre drena bien, y no necesitas llamar a nadie. Es mantenimiento de cinco minutos, y se nota en el confort de cada día."
+ },
+ {
+  "beat": "b065",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b065.wav",
+  "start": 556.36,
+  "len": 9.52,
+  "text": "Resumen: la causa real es el jabón en barra con el pelo y el sarro. La solución, sacar a mano, usar el destapador y limpiar la trampa."
+ },
+ {
+  "beat": "b066",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b066.wav",
+  "start": 565.88,
+  "len": 8.68,
+  "text": "Con la rejilla atrapa pelos y mantenimiento mensual, el problema desaparece. Y no tienes que volver a comprar destapacaños químico."
+ },
+ {
+  "beat": "b067",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/plregadera/out/plregadera/tramos/b067.wav",
+  "start": 574.56,
+  "len": 8.979,
+  "text": "Si te sirvió, quédate en el canal. En el próximo, quince secretos de plomero que te ahorran miles. Y cuéntame cómo se tapaba tu regadera."
+ }
+]

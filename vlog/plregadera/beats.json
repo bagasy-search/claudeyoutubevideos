@@ -1,0 +1,1197 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Te duchas, y el agua se queda hasta los tobillos. Lo destapas, y a la semana, otra vez. Hay una causa que casi nadie te explica.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a shower drain in a bathroom floor with dirty water pooling around the feet of a person standing in the shower and draining very slowly",
+    "motion": "the water level rises slowly around the drain and barely goes down"
+   },
+   {
+    "k": "W",
+    "v": "slow draining shower water pooling"
+   },
+   {
+    "k": "W",
+    "v": "a shower drain in a bathroom floor with"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio, plomero. Casi nunca el problema es el pelo que ves en la superficie. Es lo que hay más abajo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio the plumber in a bathroom wearing a blue work overall and a headlamp, kneeling beside a shower drain with a toolbox open beside him, friendly confident look"
+   },
+   {
+    "k": "G",
+    "v": "a plumber's toolbox with a drain snake, a plunger and a flashlight on a bathroom floor"
+   },
+   {
+    "k": "W",
+    "v": "Claudio the plumber in a bathroom wearing a"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si usas destapacaños químico cada vez, es probable que estés empeorando el problema, y dañando tus tuberías.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "chemical drain cleaner bottle"
+   },
+   {
+    "k": "G",
+    "v": "a bottle of chemical drain cleaner with a warning label on a bathroom sink"
+   },
+   {
+    "k": "W",
+    "v": "chemical drain cleaner bottle"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Te voy a mostrar tres cosas: qué se acumula, por qué se vuelve a tapar, y cómo destaparlo de verdad, sin químicos ni plomero.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising a finger to the camera"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with the words hair, soap scum and trap written in marker"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising a finger to the camera"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un plomero a domicilio cobra bastante por una destapada, y a veces vuelve a tapar en pocos días. Con lo que te cuento, puedes evitarlo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plumber service call expensive"
+   },
+   {
+    "k": "G",
+    "v": "a plumber's invoice on a bathroom counter with an emergency fee highlighted"
+   },
+   {
+    "k": "W",
+    "v": "plumber service call expensive"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si al final no funciona, te digo qué buscar para que un profesional no te cobre de más. Empecemos por entender qué hay ahí abajo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with a reassuring smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly plumber advice"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera with a reassuring"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Debajo de la rejilla hay una trampa en forma de U, o de P. Siempre tiene un poco de agua, que impide que los olores suban.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "shower drain pipe diagram"
+   },
+   {
+    "k": "G",
+    "v": "a cutaway diagram of a shower drain with a strainer, a P trap and a vent pipe labelled on a whiteboard"
+   },
+   {
+    "k": "W",
+    "v": "shower drain pipe diagram"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Ese codo es el lugar más estrecho, y donde todo se acumula: es un tobogán con una curva donde las cosas se quedan.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio tracing the shape of the trap with his finger on the diagram"
+   },
+   {
+    "k": "G",
+    "v": "a transparent plastic P trap model showing water retained in the curve"
+   },
+   {
+    "k": "W",
+    "v": "Claudio tracing the shape of the trap with"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y hay un tubo de ventilación, que sube hasta el techo. Es el que deja entrar aire para que el agua baje sin gluglú.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "vent pipe plumbing roof"
+   },
+   {
+    "k": "G",
+    "v": "a plumbing vent pipe sticking out of a roof with a small cap"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Sin aire, el agua baja lento, como una botella boca abajo con un solo agujero. Por eso a veces el problema no es un tapón.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining with both hands the idea of water flowing like in a bottle"
+   },
+   {
+    "k": "G",
+    "v": "a plastic bottle with a hole turned upside down glugging water slowly"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La causa real casi nunca es solo el pelo. Es el jabón en barra, que forma una masa pegajosa mezclada con el pelo. Una pasta que se pega a las paredes.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "soap scum drain pipe buildup"
+   },
+   {
+    "k": "G",
+    "v": "the inside of a drain pipe coated with a thick layer of soap scum and hair"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mira lo que saqué de un caño: hebras de pelo atrapadas en una pasta blanca y gris. Eso no se disuelve con un químico.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a clump of hair and soap scum that he pulled from a drain, grimacing"
+   },
+   {
+    "k": "A",
+    "v": "a gloved hand pulling a long grey clump of hair and soap scum out of a drain pipe",
+    "motion": "the clump slides out slowly and drips"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los champús y los acondicionadores dejan residuos, pero el jabón sólido, hecho con grasa, es lo que endurece como cera dentro del tubo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "body oils shampoo conditioner residue"
+   },
+   {
+    "k": "G",
+    "v": "a shower shelf with shampoo conditioner and a bar of soap with residue running down"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el agua fría, esa grasa se endurece. Y con el agua dura, se mezcla con el sarro y forma una costra que reduce el diámetro del tubo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at a bar of soap"
+   },
+   {
+    "k": "G",
+    "v": "a bar of soap melting slowly in a soap dish with a milky film"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El sarro es la otra mitad del problema: la cal de agua dura se acumula en capas, y cada capa atrapa más pelo y más grasa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "limescale hard water pipe"
+   },
+   {
+    "k": "G",
+    "v": "a pipe cross section with a thick limescale ring narrowing the opening"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por eso se tapa una y otra vez: no limpiaste el tubo, solo hiciste un agujero en el tapón. La capa de grasa y sarro sigue ahí, esperando.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio nodding with a calm explanatory expression"
+   },
+   {
+    "k": "W",
+    "v": "plumber explaining cause"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los destapacaños químicos fuertes no sirven para pelo y pasta de jabón. Y producen calor, que ablanda los tubos de plástico.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "drain cleaner chemical damage pipes"
+   },
+   {
+    "k": "G",
+    "v": "a corroded old metal pipe with holes beside a bottle of strong drain cleaner"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Además son peligrosos: queman la piel y los ojos, y si salpican, pueden causar daños graves. Y si el plomero llega después, también corre riesgo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head, serious"
+   },
+   {
+    "k": "G",
+    "v": "a warning label on a drain cleaner bottle with hazard symbols"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Nunca los mezcles con otros productos, como la lavandina. Se generan gases tóxicos que pueden mandarte al hospital.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "never mix chemicals bathroom safety"
+   },
+   {
+    "k": "G",
+    "v": "a bottle of bleach and a bottle of drain cleaner side by side with a red cross between them"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El truco casero de bicarbonato y vinagre hace espuma, y ayuda a limpiar un poco. Pero no destapa un tapón de pelo: es más espectáculo que solución.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding a baking soda box and a vinegar bottle, hesitating"
+   },
+   {
+    "k": "G",
+    "v": "a glass of vinegar and a box of baking soda on a bathroom counter"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Lo que sí ayuda como mantenimiento son los limpiadores enzimáticos, que digieren los residuos orgánicos, lentamente, sin dañar los tubos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "enzyme drain cleaner natural"
+   },
+   {
+    "k": "G",
+    "v": "a bottle of enzymatic drain cleaner next to a small funnel on a bathroom sink"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para destapar de verdad, necesitas poco: un destapador con púas, de plástico, guantes, un destornillador y un balde.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laying out the tools on the bathroom floor, a hair snake, gloves, a screwdriver and a bucket"
+   },
+   {
+    "k": "G",
+    "v": "a plastic drain snake with barbs, rubber gloves, a screwdriver and a bucket arranged on a bathroom floor"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso uno: sacar la rejilla. Casi siempre se saca con un destornillador, o con la mano si es a presión.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "removing shower drain cover screw"
+   },
+   {
+    "k": "A",
+    "v": "a screwdriver unscrewing the cover of a shower drain and lifting it off",
+    "motion": "the screwdriver turns and the cover lifts revealing a dark opening"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso dos: sacar a mano lo que se ve. Con guantes, o con un alambre doblado en gancho. Muchas veces ya con eso mejora.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pulling out visible hair with a gloved hand and a bent wire from the open drain"
+   },
+   {
+    "k": "G",
+    "v": "a gloved hand pulling a mass of hair out of a shower drain opening"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso tres: el destapador de púas. Lo bajas despacio, lo giras un poco, y lo sacas: sale cubierto de pelo y de pasta. Se repite hasta que salga limpio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plastic drain snake tool zip it"
+   },
+   {
+    "k": "A",
+    "v": "a plastic barbed strip being pushed down a shower drain and pulled out with hair stuck on its barbs",
+    "motion": "the strip is pulled slowly out covered in grey hair"
+   },
+   {
+    "k": "W",
+    "v": "plastic drain snake tool zip it"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cuatro: agua bien caliente, pero no hirviendo si hay tubos de plástico, para arrastrar la grasa. En dos o tres tandas, con una pausa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pouring hot water slowly into the drain from a kettle, careful"
+   },
+   {
+    "k": "G",
+    "v": "a kettle pouring very hot water slowly into a shower drain with a little steam"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Paso cinco: probar con el agua abierta. Si baja rápido, listo. Si sigue lenta, el tapón está más abajo, en la trampa o en el caño.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "test drain flow shower water running"
+   },
+   {
+    "k": "G",
+    "v": "a shower floor with clean water draining quickly around the drain cover"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Muchas ducha tienen una trampa accesible por abajo, en el piso inferior, o por un registro. Ahí se acumula todo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio crouching to look at a P trap under a bathroom sink with a flashlight"
+   },
+   {
+    "k": "G",
+    "v": "a P trap under a basin with slip nut connectors and a bucket beneath"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un balde debajo, se aflojan las tuercas a mano o con una llave, y sale el agua sucia. Tapón a la vista, casi siempre.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "removing p trap with wrench bucket"
+   },
+   {
+    "k": "A",
+    "v": "hands unscrewing the slip nut of a P trap with a bucket underneath catching dirty water",
+    "motion": "the nut turns and dirty water pours into the bucket"
+   },
+   {
+    "k": "W",
+    "v": "removing p trap with wrench bucket"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mira esto: una masa negra de pelo, jabón y arenilla. Se limpia con un cepillo y agua, y se vuelve a armar con las juntas bien puestas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a P trap opened showing a black sludge of hair soap and grit"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing the sludge inside the trap to the camera"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Al montar, revisa las juntas de goma: si están gastadas, cámbialas. Y aprieta a mano y un cuarto de vuelta más, sin forzar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio refitting the trap carefully, checking the washers, calm"
+   },
+   {
+    "k": "W",
+    "v": "plumber reassembling pipe"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cómo evitar que vuelva a tapar: lo primero, una rejilla atrapa pelos de silicona o metal, barata, y se limpia a diario. Es lo que más ayuda.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "hair catcher shower drain"
+   },
+   {
+    "k": "G",
+    "v": "a silicone hair catcher placed over a shower drain with a few strands caught"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Segundo, cambiar el jabón en barra por jabón líquido. Menos grasa sólida en los caños, y mucho menos acumulación de pasta.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio switching from bar soap to liquid soap in the shower with a smile"
+   },
+   {
+    "k": "G",
+    "v": "a pump bottle of liquid soap placed on a shower shelf next to a bar of soap in the trash"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tercero, un mantenimiento mensual con agua caliente y un limpiador enzimático, para disolver lo que se vaya pegando.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "monthly drain maintenance hot water enzyme"
+   },
+   {
+    "k": "G",
+    "v": "a calendar with a monthly reminder for pouring enzyme cleaner into the shower drain"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cuarto, cepillar la rejilla cada tanto, para que el sarro no la cubra. Cinco minutos al mes que evitan una visita de emergencia.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio brushing the strainer clean with an old toothbrush, gentle"
+   },
+   {
+    "k": "G",
+    "v": "an old toothbrush cleaning the grooves of a shower drain strainer"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Llama a un profesional si varios desagües van lentos a la vez, si hay ruidos de gluglú, olor a cloaca, o agua que sube por otro lado.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting signs that need a professional on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with signs: several drains slow at the same time, gurgling noises, sewage smell, water coming up in another fixture"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Eso indica un problema en la tubería principal, o en la ventilación, y requiere herramientas profesionales: sonda eléctrica o cámara.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "main sewer line blockage roots"
+   },
+   {
+    "k": "G",
+    "v": "tree roots entering a clay sewer pipe seen from a camera inspection"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y pide siempre un presupuesto antes. Un buen plomero te muestra lo que sacó del caño y te explica por qué se tapó.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera honestly"
+   },
+   {
+    "k": "W",
+    "v": "honest plumber advice"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No todos los desagües son iguales. Hay rejilla de piso, tapón de tina de rosca, y tapón de palanca. Cada uno se limpia distinto.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "bathtub drain stopper types"
+   },
+   {
+    "k": "G",
+    "v": "three types of bathtub drain stoppers side by side on a bathroom floor: lift and turn, push pull and pop up"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En el tapón de rosca, se desatornilla un tornillito y se saca: casi siempre está cubierto de pelo y jabón enroscado en el vástago.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio unscrewing a lift-and-turn stopper from a tub drain with a small screwdriver, careful"
+   },
+   {
+    "k": "A",
+    "v": "a stopper being unscrewed from a tub drain and lifted out covered in hair",
+    "motion": "the stopper lifts out with a wad of hair wrapped around its stem"
+   },
+   {
+    "k": "W",
+    "v": "Claudio unscrewing a lift and turn stopper from"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En el de palanca, hay un mecanismo detrás de la placa del rebosadero: se saca la varilla, se limpia, y se vuelve a poner. Ahí se atora mucha porquería.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "pop up drain bathtub lever mechanism"
+   },
+   {
+    "k": "G",
+    "v": "the overflow plate of a bathtub with a lever mechanism opened showing a rod and spring covered in grime"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con agua jabonosa y un cepillo, queda como nuevo. Y con eso, a veces el desagüe vuelve a la normalidad sin tocar nada más.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio cleaning a rod with an old toothbrush and rinsing it in a sink, patient"
+   },
+   {
+    "k": "G",
+    "v": "a clean metal rod and spring next to a bowl of soapy water"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces el problema no está en el desagüe sino en el techo: la ventilación obstruida por hojas o un nido. Sin aire, el agua baja lenta.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plumbing vent blocked bird nest roof"
+   },
+   {
+    "k": "G",
+    "v": "a plumbing vent pipe on a roof blocked with leaves and a bird nest"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El síntoma: gluglú en otros desagües cuando usas la ducha, o el agua que baja a golpes. Es el aire que busca por dónde entrar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining the symptom pattern with a drawing of a pipe and a glugging noise"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard sketch showing a glug noise at the toilet when the shower drains"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Revisar la ventilación en el techo es peligroso: mejor llamar a un profesional que tenga arnés y escalera. No te subas por esto.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "roof safety ladder warning"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at a roof vent from the ground and shaking his head"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El profesional la destapa con una sonda larga, y a veces con agua a presión desde arriba. Es un trabajo corto, y resuelve muchos casos.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a plumber with a safety harness on a pitched roof clearing a vent pipe with a long flexible rod"
+   },
+   {
+    "k": "W",
+    "v": "plumber roof vent cleaning"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El destapador de goma, bien usado, es una herramienta excelente. Hay de copa, para desagües planos, y con reborde, para inodoros.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plunger correct use"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding a cup plunger and a flange plunger side by side, comparing"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Para una ducha: se tapa el rebosadero, se cubre el desagüe con agua hasta cubrir la copa, y se bombea firme, sin despegarla.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a cup plunger pressing over a shower drain with water covering the rim and being pumped up and down",
+    "motion": "the plunger compresses and releases and the water shakes"
+   },
+   {
+    "k": "W",
+    "v": "a cup plunger pressing over a shower drain"
+   },
+   {
+    "k": "W",
+    "v": "a cup plunger pressing over a shower drain"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es clave tapar el rebosadero con un trapo mojado: si no, la presión se escapa por ahí. Y bombea unas quince veces.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio blocking the overflow opening of a bathtub with a wet cloth to improve the plunger's effect, careful"
+   },
+   {
+    "k": "G",
+    "v": "a wet cloth pressed into a bathtub overflow opening"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y desinfecta el destapador después de usarlo, y guárdalo en un balde aparte. Es una herramienta que pasa por lugares sucios.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "clean plunger sanitize bucket bleach"
+   },
+   {
+    "k": "G",
+    "v": "a plunger being rinsed in a bucket of water with a little disinfectant"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un truco que funciona mucho: una aspiradora de sólidos y líquidos. Se sella la boca del tubo contra el desagüe con un trapo, y aspiras el tapón.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "wet dry vacuum drain clogged"
+   },
+   {
+    "k": "P",
+    "v": "Claudio holding the hose of a wet dry vacuum cleaner against a drain with a towel sealing it"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No siempre sale, pero cuando el tapón está cerca, casi siempre lo trae. Y limpias sin meter productos ni desarmar nada.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a wet dry vacuum with its hose sealed around a shower drain opening using a wet towel"
+   },
+   {
+    "k": "P",
+    "v": "Claudio turning on the vacuum and watching the drain"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Prueba primero con la herramienta más suave y sigue hacia la más fuerte. Y si no sale, no insistas: hay un problema más abajo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with a half smile"
+   },
+   {
+    "k": "W",
+    "v": "honest plumber advice"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si hablamos de la regadera, la que lanza el agua, esa se tapa por sarro. Los chorritos salen torcidos o ninguno, y baja la presión.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "showerhead clogged limescale holes"
+   },
+   {
+    "k": "G",
+    "v": "a showerhead with several nozzle holes blocked by white limescale deposits"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se desenrosca con la mano, o con una llave y un trapo para no rayar el acabado. Sin forzar, que la rosca es delicada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio unscrewing a showerhead from the arm with a wrench and a cloth to protect the finish, careful"
+   },
+   {
+    "k": "A",
+    "v": "a showerhead being unscrewed from a shower arm with a cloth around it",
+    "motion": "the head turns off the thread and lifts away"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se sumerge en vinagre blanco por una hora. El vinagre ataca el sarro, y los orificios se abren solos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "vinegar soak showerhead descaling"
+   },
+   {
+    "k": "G",
+    "v": "a showerhead submerged in a bowl of white vinegar with bubbles forming around the nozzles"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después, un cepillo viejo y un alfiler para destapar los orificios. Un buen enjuague, y la regadera vuelve a sacar chorros parejos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio brushing the nozzles of the showerhead with an old toothbrush and poking them with a pin, patient"
+   },
+   {
+    "k": "G",
+    "v": "a showerhead with nozzles being cleaned by a toothbrush, white scale flaking off"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Muchas tienen un limitador de caudal, un disco chico que reduce el agua. Es normal, pero si está tapado, la presión cae mucho. Se limpia aparte.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "flow restrictor shower head"
+   },
+   {
+    "k": "G",
+    "v": "a small plastic flow restrictor disc removed from a showerhead and held in fingertips"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si la presión baja en toda la casa, el problema no es la regadera. Con un manómetro chico, se mide y se confirma.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio checking the water pressure with a small gauge screwed to a tap"
+   },
+   {
+    "k": "G",
+    "v": "a pressure gauge connected to a garden tap showing a mid range value"
+   }
+  ]
+ },
+ {
+  "id": "b060",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Causas: una llave de paso a medio abrir, un filtro tapado, una fuga o el suministro. Una por una, se descartan en minutos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water pressure low house causes"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard list of causes for low pressure: partially closed valve, clogged filter, leak, municipal supply"
+   }
+  ]
+ },
+ {
+  "id": "b061",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si solo falla en la ducha, puede ser el cartucho del grifo, lleno de sarro. Se cambia con una llave Allen y un repuesto de pocos pesos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "shower mixing valve cartridge worn"
+   },
+   {
+    "k": "G",
+    "v": "a worn shower valve cartridge with mineral deposits and a broken seal beside a new one"
+   }
+  ]
+ },
+ {
+  "id": "b062",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hábitos que lo previenen todo: rejilla atrapa pelos, jabón líquido, agua caliente mensual, y limpiar la regadera dos veces al año.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting prevention habits on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with habits: hair catcher, liquid soap, hot water monthly, clean showerhead twice a year"
+   }
+  ]
+ },
+ {
+  "id": "b063",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con niños, cuidado con los juguetes y las gomitas del pelo, que se van por el desagüe y forman un tapón sólido. Es más común de lo que parece.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "children bath toys drain clog"
+   },
+   {
+    "k": "G",
+    "v": "small plastic toys and hair ties near a bathtub drain"
+   }
+  ]
+ },
+ {
+  "id": "b064",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con estos hábitos, la ducha siempre drena bien, y no necesitas llamar a nadie. Es mantenimiento de cinco minutos, y se nota en el confort de cada día.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera, relaxed and reassuring"
+   },
+   {
+    "k": "W",
+    "v": "friendly plumber advice home"
+   }
+  ]
+ },
+ {
+  "id": "b065",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Resumen: la causa real es el jabón en barra con el pelo y el sarro. La solución, sacar a mano, usar el destapador y limpiar la trampa.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the key points on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three lines: remove by hand, snake, clean the trap"
+   }
+  ]
+ },
+ {
+  "id": "b066",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la rejilla atrapa pelos y mantenimiento mensual, el problema desaparece. Y no tienes que volver a comprar destapacaños químico.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "clean bathroom shower happy"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling in a clean bathroom beside a quickly draining shower"
+   }
+  ]
+ },
+ {
+  "id": "b067",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quédate en el canal. En el próximo, quince secretos de plomero que te ahorran miles. Y cuéntame cómo se tapaba tu regadera.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly plumber advice"
+   }
+  ]
+ }
+]

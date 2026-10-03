@@ -1,0 +1,42 @@
+[
+ {
+  "nombre": "b001_0",
+  "motion": "the water level rises slowly around the drain and barely goes down",
+  "change": ""
+ },
+ {
+  "nombre": "b012_1",
+  "motion": "the clump slides out slowly and drips",
+  "change": ""
+ },
+ {
+  "nombre": "b023_1",
+  "motion": "the screwdriver turns and the cover lifts revealing a dark opening",
+  "change": ""
+ },
+ {
+  "nombre": "b025_1",
+  "motion": "the strip is pulled slowly out covered in grey hair",
+  "change": ""
+ },
+ {
+  "nombre": "b029_1",
+  "motion": "the nut turns and dirty water pours into the bucket",
+  "change": ""
+ },
+ {
+  "nombre": "b040_1",
+  "motion": "the stopper lifts out with a wad of hair wrapped around its stem",
+  "change": ""
+ },
+ {
+  "nombre": "b048_0",
+  "motion": "the plunger compresses and releases and the water shakes",
+  "change": ""
+ },
+ {
+  "nombre": "b055_1",
+  "motion": "the head turns off the thread and lifts away",
+  "change": ""
+ }
+]

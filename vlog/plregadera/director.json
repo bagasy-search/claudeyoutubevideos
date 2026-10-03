@@ -1,0 +1,962 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "AGUA HASTA LOS TOBILLOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "tobillos",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b003",
+   "props": {
+    "text": "EL QUÍMICO EMPEORA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "empeorando",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b004",
+   "props": {
+    "text": "QUÉ SE ACUMULA · POR QUÉ VUELVE · CÓMO ARREGLARLO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 46
+   },
+   "word": "cosas",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b007",
+   "props": {
+    "text": "LA TRAMPA EN U",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "trampa",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b008",
+   "props": {
+    "text": "EL CODO: EL LUGAR MÁS ESTRECHO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "codo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b009",
+   "props": {
+    "text": "EL TUBO DE VENTILACIÓN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "ventilación",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b011",
+   "props": {
+    "pos": "top",
+    "size": 88,
+    "words": [
+     {
+      "t": "LA CAUSA REAL",
+      "beat": "b011",
+      "word": "real",
+      "hl": "yellow"
+     },
+     {
+      "t": "EL JABÓN EN BARRA",
+      "beat": "b011",
+      "word": "jabón",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "real",
+   "until": "b011",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b012",
+   "props": {
+    "text": "PELO + PASTA BLANCA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "pelo",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b014",
+   "props": {
+    "text": "AGUA FRÍA: LA GRASA SE ENDURECE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "fría",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b015",
+   "props": {
+    "text": "SARRO: LA OTRA MITAD",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "otra",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b016",
+   "props": {
+    "text": "HICISTE UN AGUJERO, NO LIMPIASTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 52
+   },
+   "word": "agujero",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b018",
+   "props": {
+    "text": "LOS QUÍMICOS QUEMAN PIEL Y OJOS",
+    "icons": [
+     "alert",
+     "goggles"
+    ],
+    "tone": "red"
+   },
+   "word": "peligrosos",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b019",
+   "props": {
+    "text": "NUNCA MEZCLAR CON LAVANDINA",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "nunca",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b021",
+   "props": {
+    "text": "MANTENIMIENTO: ENZIMÁTICOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "mantenimiento",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b023",
+   "props": {
+    "step": 1,
+    "total": 5,
+    "title": "SACAR LA REJILLA"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b024",
+   "props": {
+    "step": 2,
+    "total": 5,
+    "title": "SACAR LO QUE SE VE"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b025",
+   "props": {
+    "step": 3,
+    "total": 5,
+    "title": "DESTAPADOR DE PÚAS"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b026",
+   "props": {
+    "step": 4,
+    "total": 5,
+    "title": "AGUA CALIENTE"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcStepCounter",
+   "beat": "b027",
+   "props": {
+    "step": 5,
+    "total": 5,
+    "title": "PROBAR"
+   },
+   "dur": 3.6,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -15
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b026",
+   "props": {
+    "text": "CALIENTE, NO HIRVIENDO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "caliente",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b028",
+   "props": {
+    "text": "LA TRAMPA, POR ABAJO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "trampa",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b030",
+   "props": {
+    "text": "PELO + JABÓN + ARENILLA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "masa",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b031",
+   "props": {
+    "text": "REVISÁ LAS JUNTAS DE GOMA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "juntas",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b032",
+   "props": {
+    "text": "1 · REJILLA ATRAPAPELOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "rejilla",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b033",
+   "props": {
+    "text": "2 · JABÓN LÍQUIDO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "líquido",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b034",
+   "props": {
+    "text": "3 · ENZIMÁTICO CADA MES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "mensual",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b035",
+   "props": {
+    "text": "4 · CEPILLAR LA REJILLA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "cepillar",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b036",
+   "props": {
+    "text": "LLAMÁ SI SON VARIOS DESAGÜES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "varios",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b038",
+   "props": {
+    "text": "PEDÍ PRESUPUESTO ANTES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "presupuesto",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b040",
+   "props": {
+    "text": "TAPÓN DE ROSCA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "rosca",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b041",
+   "props": {
+    "text": "TAPÓN DE PALANCA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "palanca",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b043",
+   "props": {
+    "text": "LA VENTILACIÓN DEL TECHO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "ventilación",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b044",
+   "props": {
+    "text": "GLUGLÚ EN OTROS DESAGÜES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "síntoma",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b045",
+   "props": {
+    "text": "EL TECHO ES PELIGROSO: LLAMÁ",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "peligroso",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcWarning",
+   "beat": "b049",
+   "props": {
+    "text": "TAPÁ EL REBOSADERO",
+    "icons": [
+     "alert"
+    ],
+    "tone": "red"
+   },
+   "word": "rebosadero",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/stinger_hit.mp3",
+     "db": -18
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b051",
+   "props": {
+    "text": "ASPIRADORA DE SÓLIDOS Y LÍQUIDOS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "aspiradora",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b053",
+   "props": {
+    "text": "DE LA HERRAMIENTA MÁS SUAVE A LA MÁS FUERTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 48
+   },
+   "word": "suave",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b054",
+   "props": {
+    "text": "LA REGADERA SE TAPA POR SARRO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "regadera",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b056",
+   "props": {
+    "text": "VINAGRE BLANCO: 1 HORA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "vinagre",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b057",
+   "props": {
+    "text": "CEPILLO VIEJO + ALFILER",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "alfiler",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b058",
+   "props": {
+    "text": "LIMITADOR DE CAUDAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "limitador",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b059",
+   "props": {
+    "text": "BAJA EN TODA LA CASA: NO ES LA REGADERA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red",
+    "size": 50
+   },
+   "word": "presión",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b061",
+   "props": {
+    "text": "EL CARTUCHO DEL GRIFO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "cartucho",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b065",
+   "props": {
+    "pos": "top",
+    "size": 70,
+    "words": [
+     {
+      "t": "JABÓN EN BARRA + PELO + SARRO",
+      "beat": "b065",
+      "word": "barra",
+      "hl": "red"
+     },
+     {
+      "t": "REJILLA + MANTENIMIENTO MENSUAL",
+      "beat": "b065",
+      "word": "sarro",
+      "hl": "yellow"
+     }
+    ]
+   },
+   "word": "Resumen",
+   "until": "b065",
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b067",
+   "props": {
+    "pos": "top",
+    "size": 88,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b067",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "15 SECRETOS DE PLOMERO",
+      "beat": "b067",
+      "word": "quince",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b067",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}
