@@ -1,0 +1,1042 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "«Ese aire ya no tiene arreglo, mejor llevate uno nuevo.» Si alguna vez escuchaste esa frase, este video es para vos.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a salesman in a light blue polo shirt pointing at a new air conditioner box in a store while a couple listens with doubtful faces",
+    "motion": "the salesman gestures and the couple glance at each other"
+   },
+   {
+    "k": "W",
+    "v": "salesman store air conditioner"
+   },
+   {
+    "k": "W",
+    "v": "a salesman in a light blue polo shirt"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay cinco frases que usan los vendedores para que cambies un aire que quizás todavía anda. Y cada una se puede desarmar con un dato.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in his workshop holding a clamp meter and a notebook with a list of five phrases, serious"
+   },
+   {
+    "k": "G",
+    "v": "a notebook page with five numbered phrases written in marker next to a clamp meter"
+   },
+   {
+    "k": "W",
+    "v": "Claudio standing in his workshop holding a clamp"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No todos los vendedores mienten. Muchos son honestos. Pero estas cinco frases te hacen decidir rápido, y eso es lo que conviene evitar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "couple worried about expensive purchase"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera with an understanding face, hands open"
+   },
+   {
+    "k": "W",
+    "v": "couple worried about expensive purchase"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio, y trabajo con aires desde hace años. Te muestro cómo comprobar cada frase antes de sacar la tarjeta.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "an air conditioner price tag with a big discount sticker and fine print"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner price tag store"
+   },
+   {
+    "k": "W",
+    "v": "an air conditioner price tag with a big"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La clave de todo: pedir las cosas por escrito, y comprobar con un medidor. Con esos dos hábitos, casi nadie te encaja nada.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising an index finger toward the camera"
+   },
+   {
+    "k": "G",
+    "v": "a hand holding a phone camera filming an air conditioner nameplate"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising an index finger toward the camera"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si de verdad tu aire no tiene arreglo, te lo voy a decir: hay casos en los que conviene cambiarlo. Te explico cuáles.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner broken summer heat"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at a dead air conditioner with a hand on his hip, thinking"
+   },
+   {
+    "k": "W",
+    "v": "air conditioner broken summer heat"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de empezar, aclaro: no estoy en contra de los vendedores. Muchos conocen su producto y te aconsejan bien. Pero son comisionistas, y hay que saberlo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "customer salesman agreement handshake"
+   },
+   {
+    "k": "G",
+    "v": "a salesperson's business card and a quote on a counter in an appliance store"
+   },
+   {
+    "k": "W",
+    "v": "customer salesman agreement handshake"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Su trabajo es vender. Tu trabajo es decidir bien. Y las dos cosas se pueden hacer a la vez si vos tenés la información.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging with a friendly tone, a gentle half smile"
+   },
+   {
+    "k": "W",
+    "v": "appliance store customer service"
+   },
+   {
+    "k": "W",
+    "v": "Claudio shrugging with a friendly tone a gentle"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Frase uno: «Ese equipo es muy viejo, no vale la pena arreglarlo.» La edad no es un diagnóstico. Hay aires de quince años andando perfecto.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "an air conditioner with yellowed plastic running perfectly cool in a living room"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un aire viejo con mantenimiento al día suele ser mejor que uno nuevo de baja calidad sin mantenimiento. La edad es un dato, no una sentencia.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner maintenance record"
+   },
+   {
+    "k": "G",
+    "v": "a maintenance logbook with dates and signatures lying beside an old air conditioner remote"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La pregunta es qué falló. Si es un capacitor, una placa, un sensor, o el gas, el costo y la conveniencia son totalmente distintos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head and tapping the side of an old air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "a fifteen year old air conditioner with its plastic yellowed and a recent maintenance sticker on it"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con la pinza se ve mucho: si el compresor consume lo que dice la etiqueta, está sano. Si consume de más, ahí hay un problema serio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician diagnosing air conditioner"
+   },
+   {
+    "k": "P",
+    "v": "Claudio measuring current on an old unit with a clamp meter and nodding"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si la corriente coincide con la etiqueta, el compresor está sano. Con eso ya sabés que el corazón del equipo todavía late bien.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a nameplate showing rated current of an air conditioner and a clamp meter beside it showing a similar value"
+   },
+   {
+    "k": "P",
+    "v": "Claudio comparing the nameplate current with the clamp meter reading, satisfied"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un técnico puede medir el capacitor, que es la pieza que más falla. Muchas veces es lo único que hay que cambiar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "capacitor test multimeter"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing a capacitor tester to the camera"
+   },
+   {
+    "k": "G",
+    "v": "a multimeter with a capacitor measurement mode"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pedí un presupuesto escrito, con cada repuesto y la mano de obra. Y compará: si arreglar cuesta menos de la mitad de uno nuevo, tiene sentido.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a repair quote on paper with several items listed and prices"
+   },
+   {
+    "k": "P",
+    "v": "Claudio reviewing a repair quote with a pencil, circling an item"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El presupuesto tiene que decir qué falló, qué pieza se cambia y cuánto cuesta cada cosa. Si es una frase vaga, desconfiá.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a handwritten quote with the diagnosis, parts and labour detailed line by line"
+   },
+   {
+    "k": "P",
+    "v": "Claudio pointing at the diagnosis line on a quote paper"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Muchas fallas son un capacitor de arranque, una pieza que cuesta poco. Y el vendedor te dice que el equipo está muerto.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "small electronic capacitor cheap replacement"
+   },
+   {
+    "k": "G",
+    "v": "a small cylindrical capacitor in the palm of a hand next to a coin"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Frase dos: «Ese equipo usa gas viejo y ya no se consigue, hay que cambiarlo.» Una media verdad que cuesta cara.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "refrigerant gas bottle old"
+   },
+   {
+    "k": "G",
+    "v": "an old refrigerant cylinder with R22 label on a shelf in a workshop"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, fijate qué gas dice la etiqueta del equipo: está al costado de la unidad exterior, con el modelo y la carga.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old fashioned appliances still working"
+   },
+   {
+    "k": "G",
+    "v": "an old household air conditioner nameplate listing the refrigerant type in small print"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay equipos con gas más viejo, y es cierto que su producción se fue reduciendo. Pero eso no significa que no se pueda mantener.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining with a diagram on a whiteboard of different refrigerant types"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with the names of refrigerant types written in a column"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un técnico con matrícula puede reparar la fuga y recargar con el gas correcto, o recuperar. No siempre hay que cambiar todo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician recharging air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "a technician holding a manifold gauge connected to an outdoor unit service port"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pedí que el técnico tenga la matrícula o certificación para manejar refrigerantes: es una exigencia, y es una garantía para vos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "technician license certificate"
+   },
+   {
+    "k": "G",
+    "v": "a technician's certificate on a wall in a repair shop"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La pregunta que tenés que hacer: ¿qué gas usa mi aire y cuánto cuesta reparar la fuga? Con esa respuesta decidís.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera, honest tone"
+   },
+   {
+    "k": "G",
+    "v": "a paper with the question what refrigerant does my air conditioner use written at the top"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si la reparación sale cerca del precio de uno nuevo, cambialo sin culpa. Pero que la decisión sea tuya, con números en la mesa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cost comparison choice"
+   },
+   {
+    "k": "G",
+    "v": "a table comparing cost of repair and cost of replacement on a notepad"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Frase tres: «Con este inverter vas a ahorrar la mitad de la luz.» Los porcentajes mágicos son la señal más clara de venta apurada.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "inverter promise saving"
+   },
+   {
+    "k": "G",
+    "v": "a store banner promising to save sixty percent on electricity with an inverter air conditioner"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los números de ahorro que escuchás vienen de pruebas de laboratorio, en condiciones ideales. En una casa real, la cosa cambia.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "salesman pointing at number on screen"
+   },
+   {
+    "k": "P",
+    "v": "Claudio miming a salesman's confident pitch with a chuckle, in his workshop"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Es cierto que un inverter gasta menos que uno de velocidad fija, sobre todo en uso prolongado. Pero cuánto, depende de tu casa y tu uso.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head and smiling, holding a clamp meter"
+   },
+   {
+    "k": "G",
+    "v": "a clamp meter display showing a steady low current on an inverter unit"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mirá la etiqueta de eficiencia energética: es un dato oficial, comparable entre marcas. No te fíes del cartel de la tienda.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "energy label A efficiency air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "an energy efficiency label on an air conditioner with classes from A to G"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Comparás el consumo anual de los dos equipos, el viejo y el nuevo. Y multiplicás la diferencia por el precio del kilovatio.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a table comparing annual consumption in kilowatt hours of two air conditioners from their labels"
+   },
+   {
+    "k": "P",
+    "v": "Claudio writing both numbers on a whiteboard to compare"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La etiqueta indica el consumo anual estimado. Con eso y el precio de tu kilovatio, sacás una cuenta real.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at an energy label and reading the efficiency class"
+   },
+   {
+    "k": "G",
+    "v": "a close view of an energy label showing annual consumption in kilowatt hours"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tu aire actual consume tanto al año, y el nuevo tanto, la diferencia en plata te dice en cuántos años se paga el cambio.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "calculator electricity cost"
+   },
+   {
+    "k": "P",
+    "v": "Claudio doing the sum on a calculator, concentrating"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces son tres años, a veces diez. Y si son diez, quizás no vale la pena cambiar un equipo que anda bien.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a notebook with a calculation showing payback in years"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing the result to the camera, shrugging"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Frase cuatro: «Tu aire es chico para este ambiente, necesitás más frigorías.» A veces es cierto, y a veces es una forma de venderte uno más caro.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "room size calculation air conditioner"
+   },
+   {
+    "k": "G",
+    "v": "a floor plan sketch of a living room with its square metres written and a sun symbol"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero se mide el ambiente: largo, ancho y alto. Eso da el volumen que el aire tiene que enfriar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "measuring room with tape"
+   },
+   {
+    "k": "P",
+    "v": "Claudio measuring the width of a living room with a tape measure, reading the number"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La potencia depende del tamaño del ambiente, pero también del sol, de las ventanas, de la aislación, de cuánta gente y de qué aparatos hay.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining how to size an air conditioner with a whiteboard sketch of a room"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with a room sketch and arrows for windows, sun, people and appliances"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una sala con ventanal al oeste necesita bastante más que un dormitorio interior. Por eso la regla de los metros cuadrados es solo una guía.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "sunny west facing window hot room"
+   },
+   {
+    "k": "G",
+    "v": "a living room with a large west facing window and strong afternoon sun"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un ventanal con cortina o con un árbol afuera cambia todo. A veces mejorar la sombra vale más que un equipo más potente.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a house with a shaded tree outside the window and a house with direct sun on a glass door, side by side sketch"
+   },
+   {
+    "k": "W",
+    "v": "sun heat window glass"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si tu aire actual enfría bien casi todo el día, no es chico. Si no llega nunca a la temperatura, el problema puede ser otro, como el filtro o el gas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio holding two air conditioner capacity labels, comparing them"
+   },
+   {
+    "k": "G",
+    "v": "two nameplates showing different capacity in frigories side by side"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un termómetro en la salida y otro en el ambiente medís la diferencia de temperatura. Si es de unos ocho a doce grados, el equipo anda bien.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clamp meter and a thermometer used to check that an air conditioner is cooling properly"
+   },
+   {
+    "k": "W",
+    "v": "technician measuring air temperature at vent"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de comprar uno más grande, pedí que mida tu ambiente, o que haga un cálculo escrito. Uno sobredimensionado también tiene problemas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera, honest"
+   },
+   {
+    "k": "W",
+    "v": "honest technician advice"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Frase cinco: «Es la última unidad, y la oferta termina hoy.» La urgencia es la herramienta más vieja de la venta.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "limited offer today only sale"
+   },
+   {
+    "k": "G",
+    "v": "a sign at a store that says last units available only today with a countdown"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una compra de este tamaño se piensa. Si el vendedor no te deja pensar, es una señal para irte.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "impulse buying pressure"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at a phone with an offer countdown and closing it, calm"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si la oferta es buena hoy, va a ser buena mañana. Y si es de verdad la última unidad, hay otras tiendas y otros modelos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head with a slight smile"
+   },
+   {
+    "k": "W",
+    "v": "salesman pressure customer"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Sacate una foto del modelo, buscá el precio en tres lugares, y comprobá que el modelo exacto sea el mismo. Una diferencia de letras puede ser otro equipo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a phone screen comparing prices of the same air conditioner model across three online stores"
+   },
+   {
+    "k": "W",
+    "v": "price comparison phone"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y la garantía por escrito: qué cubre, cuánto dura, quién la presta, y qué pasa si el equipo lo instala otro técnico.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio reading a warranty paper with a pen in hand, careful"
+   },
+   {
+    "k": "G",
+    "v": "a warranty paper with small print and a pen pointing at a clause"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Preguntá: ¿cuánto dura?, ¿quién la presta?, ¿cubre el compresor?, ¿y la mano de obra? Y que quede anotado en la factura.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a list of questions written on a notepad about warranty duration, who services it and where"
+   },
+   {
+    "k": "P",
+    "v": "Claudio reading the questions out loud to the camera"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La instalación suele tener extras: metros de cañería, soporte, desagüe, trabajos de albañilería. Pedí el costo total por escrito.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "installation cost hidden charges"
+   },
+   {
+    "k": "G",
+    "v": "a quote with a list of installation extras such as extra pipe metres, base and drain with prices"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La instalación incluye cañería, cable, desagüe, soporte y el vacío del circuito. Si algo de eso no está en el presupuesto, lo pagás después.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "air conditioner installation pipes"
+   },
+   {
+    "k": "G",
+    "v": "two installers working on the wall mounting of an indoor unit with a drill and a level"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con el total en la mano, comparás de verdad. Y no te dejes apurar: una buena compra se piensa una noche.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio nodding and underlining the total on the quote with a pen"
+   },
+   {
+    "k": "G",
+    "v": "a quote with the total price circled in red"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay casos en que cambiar es la mejor decisión. Cuando el compresor está quemado y el equipo es muy viejo, la reparación no conviene.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "old broken air conditioner scrap"
+   },
+   {
+    "k": "P",
+    "v": "Claudio looking at an old broken air conditioner with a compressor burnt out"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El compresor quemado se reconoce por el olor y por el diagnóstico con el megóhmetro. Ahí sí, casi siempre conviene cambiar el equipo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "compressor burnt out technician"
+   },
+   {
+    "k": "G",
+    "v": "a compressor opened by a technician showing burnt windings with a dark smell indicated by smoke wisp"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuando hay fugas repetidas, cuando ya no hay repuestos, o cuando el consumo es el doble que antes, también tiene sentido pensar en uno nuevo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a table of signs on a whiteboard listing compressor burnt, repeated leaks, and discontinued parts"
+   },
+   {
+    "k": "P",
+    "v": "Claudio tapping the whiteboard with a marker"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si lo cambiás, que sea con un inverter de buena etiqueta y bien instalado. La instalación es la mitad del rendimiento.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "eco friendly inverter home savings"
+   },
+   {
+    "k": "G",
+    "v": "a modern inverter split on a living room wall running quietly with a small leaf icon on its display"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Preguntale al instalador: qué cañería usa, cómo hace el vacío, qué soporte pone, y si te deja el equipo probado con las presiones medidas.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a small checklist of questions to ask an installer on a notepad"
+   },
+   {
+    "k": "P",
+    "v": "Claudio reading the checklist to the camera"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cañerías aisladas, base firme, desagüe prolijo, y vacío antes de abrir el gas. Eso diferencia a un buen instalador de uno que apura.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio showing a well made installation with neat pipes and a clean base on a balcony"
+   },
+   {
+    "k": "G",
+    "v": "a neat installation of an outdoor unit on a balcony with insulated pipes and a drain line"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Las cinco: es muy viejo, el gas ya no se consigue, vas a ahorrar la mitad, es chico, y es la última unidad. Todas se pueden comprobar.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the five phrases on his fingers in front of a whiteboard"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with five phrases crossed out in marker"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Con un presupuesto escrito, la etiqueta de eficiencia, una medición con la pinza y una noche para pensar, nadie te encaja nada.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "smart consumer decision calm home"
+   },
+   {
+    "k": "P",
+    "v": "Claudio relaxed in his living room, confident smile"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y una última regla: si algo no te cierra, preguntá. Un buen vendedor y un buen técnico no se enojan con las preguntas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio standing in a living room with his arms crossed and a friendly confident smile"
+   },
+   {
+    "k": "W",
+    "v": "confident consumer shopping"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quedate en el canal. En el próximo, las tres cosas que revisar cuando el aire no arranca. Y contame qué frase te dijeron a vos.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile, clamp meter in hand"
+   },
+   {
+    "k": "G",
+    "v": "a notebook and a clamp meter side by side on a table"
+   }
+  ]
+ }
+]

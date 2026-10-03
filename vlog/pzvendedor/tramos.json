@@ -1,0 +1,533 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b001.wav",
+  "start": 0.0,
+  "len": 7.99,
+  "text": "«Ese aire ya no tiene arreglo, mejor llevate uno nuevo.» Si alguna vez escuchaste esa frase, este video es para vos."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b002.wav",
+  "start": 7.99,
+  "len": 8.87,
+  "text": "Hay cinco frases que usan los vendedores para que cambies un aire que quizás todavía anda. Y cada una se puede desarmar con un dato."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b003.wav",
+  "start": 16.86,
+  "len": 9.16,
+  "text": "No todos los vendedores mienten. Muchos son honestos. Pero estas cinco frases te hacen decidir rápido, y eso es lo que conviene evitar."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b004.wav",
+  "start": 26.02,
+  "len": 7.48,
+  "text": "Soy Claudio, y trabajo con aires desde hace años. Te muestro cómo comprobar cada frase antes de sacar la tarjeta."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b005.wav",
+  "start": 33.5,
+  "len": 7.69,
+  "text": "La clave de todo: pedir las cosas por escrito, y comprobar con un medidor. Con esos dos hábitos, casi nadie te encaja nada."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b006.wav",
+  "start": 41.19,
+  "len": 7.39,
+  "text": "Y si de verdad tu aire no tiene arreglo, te lo voy a decir: hay casos en los que conviene cambiarlo. Te explico cuáles."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b007.wav",
+  "start": 48.58,
+  "len": 9.35,
+  "text": "Antes de empezar, aclaro: no estoy en contra de los vendedores. Muchos conocen su producto y te aconsejan bien. Pero son comisionistas, y hay que saberlo."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b008.wav",
+  "start": 57.93,
+  "len": 8.93,
+  "text": "Su trabajo es vender. Tu trabajo es decidir bien. Y las dos cosas se pueden hacer a la vez si vos tenés la información."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b009.wav",
+  "start": 66.86,
+  "len": 9.57,
+  "text": "Frase uno: «Ese equipo es muy viejo, no vale la pena arreglarlo.» La edad no es un diagnóstico. Hay aires de quince años andando perfecto."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b010.wav",
+  "start": 76.43,
+  "len": 9.39,
+  "text": "Un aire viejo con mantenimiento al día suele ser mejor que uno nuevo de baja calidad sin mantenimiento. La edad es un dato, no una sentencia."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b011.wav",
+  "start": 85.82,
+  "len": 9.91,
+  "text": "La pregunta es qué falló. Si es un capacitor, una placa, un sensor, o el gas, el costo y la conveniencia son totalmente distintos."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b012.wav",
+  "start": 95.73,
+  "len": 9.0,
+  "text": "Con la pinza se ve mucho: si el compresor consume lo que dice la etiqueta, está sano. Si consume de más, ahí hay un problema serio."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b013.wav",
+  "start": 104.73,
+  "len": 7.54,
+  "text": "Si la corriente coincide con la etiqueta, el compresor está sano. Con eso ya sabés que el corazón del equipo todavía late bien."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b014.wav",
+  "start": 112.27,
+  "len": 8.02,
+  "text": "Y un técnico puede medir el capacitor, que es la pieza que más falla. Muchas veces es lo único que hay que cambiar."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b015.wav",
+  "start": 120.29,
+  "len": 9.55,
+  "text": "Pedí un presupuesto escrito, con cada repuesto y la mano de obra. Y compará: si arreglar cuesta menos de la mitad de uno nuevo, tiene sentido."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b016.wav",
+  "start": 129.84,
+  "len": 8.22,
+  "text": "El presupuesto tiene que decir qué falló, qué pieza se cambia y cuánto cuesta cada cosa. Si es una frase vaga, desconfiá."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b017.wav",
+  "start": 138.06,
+  "len": 7.79,
+  "text": "Muchas fallas son un capacitor de arranque, una pieza que cuesta poco. Y el vendedor te dice que el equipo está muerto."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b018.wav",
+  "start": 145.85,
+  "len": 7.57,
+  "text": "Frase dos: «Ese equipo usa gas viejo y ya no se consigue, hay que cambiarlo.» Una media verdad que cuesta cara."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b019.wav",
+  "start": 153.42,
+  "len": 7.97,
+  "text": "Primero, fijate qué gas dice la etiqueta del equipo: está al costado de la unidad exterior, con el modelo y la carga."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b020.wav",
+  "start": 161.39,
+  "len": 7.78,
+  "text": "Hay equipos con gas más viejo, y es cierto que su producción se fue reduciendo. Pero eso no significa que no se pueda mantener."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b021.wav",
+  "start": 169.17,
+  "len": 8.87,
+  "text": "Un técnico con matrícula puede reparar la fuga y recargar con el gas correcto, o recuperar. No siempre hay que cambiar todo."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b022.wav",
+  "start": 178.04,
+  "len": 8.67,
+  "text": "Pedí que el técnico tenga la matrícula o certificación para manejar refrigerantes: es una exigencia, y es una garantía para vos."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b023.wav",
+  "start": 186.71,
+  "len": 7.16,
+  "text": "La pregunta que tenés que hacer: ¿qué gas usa mi aire y cuánto cuesta reparar la fuga? Con esa respuesta decidís."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b024.wav",
+  "start": 193.87,
+  "len": 8.45,
+  "text": "Y si la reparación sale cerca del precio de uno nuevo, cambialo sin culpa. Pero que la decisión sea tuya, con números en la mesa."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b025.wav",
+  "start": 202.32,
+  "len": 8.38,
+  "text": "Frase tres: «Con este inverter vas a ahorrar la mitad de la luz.» Los porcentajes mágicos son la señal más clara de venta apurada."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b026.wav",
+  "start": 210.7,
+  "len": 8.44,
+  "text": "Los números de ahorro que escuchás vienen de pruebas de laboratorio, en condiciones ideales. En una casa real, la cosa cambia."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b027.wav",
+  "start": 219.14,
+  "len": 9.58,
+  "text": "Es cierto que un inverter gasta menos que uno de velocidad fija, sobre todo en uso prolongado. Pero cuánto, depende de tu casa y tu uso."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b028.wav",
+  "start": 228.72,
+  "len": 7.9,
+  "text": "Mirá la etiqueta de eficiencia energética: es un dato oficial, comparable entre marcas. No te fíes del cartel de la tienda."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b029.wav",
+  "start": 236.62,
+  "len": 7.87,
+  "text": "Comparás el consumo anual de los dos equipos, el viejo y el nuevo. Y multiplicás la diferencia por el precio del kilovatio."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b030.wav",
+  "start": 244.49,
+  "len": 6.9,
+  "text": "La etiqueta indica el consumo anual estimado. Con eso y el precio de tu kilovatio, sacás una cuenta real."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b031.wav",
+  "start": 251.39,
+  "len": 8.28,
+  "text": "Si tu aire actual consume tanto al año, y el nuevo tanto, la diferencia en plata te dice en cuántos años se paga el cambio."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b032.wav",
+  "start": 259.67,
+  "len": 6.96,
+  "text": "A veces son tres años, a veces diez. Y si son diez, quizás no vale la pena cambiar un equipo que anda bien."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b033.wav",
+  "start": 266.63,
+  "len": 9.79,
+  "text": "Frase cuatro: «Tu aire es chico para este ambiente, necesitás más frigorías.» A veces es cierto, y a veces es una forma de venderte uno más caro."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b034.wav",
+  "start": 276.42,
+  "len": 6.62,
+  "text": "Primero se mide el ambiente: largo, ancho y alto. Eso da el volumen que el aire tiene que enfriar."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b035.wav",
+  "start": 283.04,
+  "len": 9.06,
+  "text": "La potencia depende del tamaño del ambiente, pero también del sol, de las ventanas, de la aislación, de cuánta gente y de qué aparatos hay."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b036.wav",
+  "start": 292.1,
+  "len": 9.69,
+  "text": "Una sala con ventanal al oeste necesita bastante más que un dormitorio interior. Por eso la regla de los metros cuadrados es solo una guía."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b037.wav",
+  "start": 301.79,
+  "len": 8.65,
+  "text": "Y un ventanal con cortina o con un árbol afuera cambia todo. A veces mejorar la sombra vale más que un equipo más potente."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b038.wav",
+  "start": 310.44,
+  "len": 10.29,
+  "text": "Si tu aire actual enfría bien casi todo el día, no es chico. Si no llega nunca a la temperatura, el problema puede ser otro, como el filtro o el gas."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b039.wav",
+  "start": 320.73,
+  "len": 8.79,
+  "text": "Con un termómetro en la salida y otro en el ambiente medís la diferencia de temperatura. Si es de unos ocho a doce grados, el equipo anda bien."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b040.wav",
+  "start": 329.52,
+  "len": 8.76,
+  "text": "Antes de comprar uno más grande, pedí que mida tu ambiente, o que haga un cálculo escrito. Uno sobredimensionado también tiene problemas."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b041.wav",
+  "start": 338.28,
+  "len": 7.9,
+  "text": "Frase cinco: «Es la última unidad, y la oferta termina hoy.» La urgencia es la herramienta más vieja de la venta."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b042.wav",
+  "start": 346.18,
+  "len": 6.32,
+  "text": "Una compra de este tamaño se piensa. Si el vendedor no te deja pensar, es una señal para irte."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b043.wav",
+  "start": 352.5,
+  "len": 7.94,
+  "text": "Si la oferta es buena hoy, va a ser buena mañana. Y si es de verdad la última unidad, hay otras tiendas y otros modelos."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b044.wav",
+  "start": 360.44,
+  "len": 9.45,
+  "text": "Sacate una foto del modelo, buscá el precio en tres lugares, y comprobá que el modelo exacto sea el mismo. Una diferencia de letras puede ser otro equipo."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b045.wav",
+  "start": 369.89,
+  "len": 8.02,
+  "text": "Y la garantía por escrito: qué cubre, cuánto dura, quién la presta, y qué pasa si el equipo lo instala otro técnico."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b046.wav",
+  "start": 377.91,
+  "len": 7.49,
+  "text": "Preguntá: ¿cuánto dura?, ¿quién la presta?, ¿cubre el compresor?, ¿y la mano de obra? Y que quede anotado en la factura."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b047.wav",
+  "start": 385.4,
+  "len": 8.91,
+  "text": "La instalación suele tener extras: metros de cañería, soporte, desagüe, trabajos de albañilería. Pedí el costo total por escrito."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b048.wav",
+  "start": 394.31,
+  "len": 9.75,
+  "text": "La instalación incluye cañería, cable, desagüe, soporte y el vacío del circuito. Si algo de eso no está en el presupuesto, lo pagás después."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b049.wav",
+  "start": 404.06,
+  "len": 7.91,
+  "text": "Con el total en la mano, comparás de verdad. Y no te dejes apurar: una buena compra se piensa una noche."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b050.wav",
+  "start": 411.97,
+  "len": 8.59,
+  "text": "Hay casos en que cambiar es la mejor decisión. Cuando el compresor está quemado y el equipo es muy viejo, la reparación no conviene."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b051.wav",
+  "start": 420.56,
+  "len": 8.89,
+  "text": "El compresor quemado se reconoce por el olor y por el diagnóstico con el megóhmetro. Ahí sí, casi siempre conviene cambiar el equipo."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b052.wav",
+  "start": 429.45,
+  "len": 8.1,
+  "text": "Cuando hay fugas repetidas, cuando ya no hay repuestos, o cuando el consumo es el doble que antes, también tiene sentido pensar en uno nuevo."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b053.wav",
+  "start": 437.55,
+  "len": 7.71,
+  "text": "Y si lo cambiás, que sea con un inverter de buena etiqueta y bien instalado. La instalación es la mitad del rendimiento."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b054.wav",
+  "start": 445.26,
+  "len": 8.64,
+  "text": "Preguntale al instalador: qué cañería usa, cómo hace el vacío, qué soporte pone, y si te deja el equipo probado con las presiones medidas."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b055.wav",
+  "start": 453.9,
+  "len": 9.65,
+  "text": "Cañerías aisladas, base firme, desagüe prolijo, y vacío antes de abrir el gas. Eso diferencia a un buen instalador de uno que apura."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b056.wav",
+  "start": 463.55,
+  "len": 9.77,
+  "text": "Las cinco: es muy viejo, el gas ya no se consigue, vas a ahorrar la mitad, es chico, y es la última unidad. Todas se pueden comprobar."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b057.wav",
+  "start": 473.32,
+  "len": 8.18,
+  "text": "Con un presupuesto escrito, la etiqueta de eficiencia, una medición con la pinza y una noche para pensar, nadie te encaja nada."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b058.wav",
+  "start": 481.5,
+  "len": 8.14,
+  "text": "Y una última regla: si algo no te cierra, preguntá. Un buen vendedor y un buen técnico no se enojan con las preguntas."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pzvendedor/out/pzvendedor/tramos/b059.wav",
+  "start": 489.64,
+  "len": 9.013,
+  "text": "Si te sirvió, quedate en el canal. En el próximo, las tres cosas que revisar cuando el aire no arranca. Y contame qué frase te dijeron a vos."
+ }
+]

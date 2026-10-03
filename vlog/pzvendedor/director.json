@@ -1,0 +1,825 @@
+{
+ "music": {
+  "src": "sfx/music_federer.mp3",
+  "start": 3.0,
+  "db": -23
+ },
+ "overlays": [
+  {
+   "kind": "TdcLabel",
+   "beat": "b001",
+   "props": {
+    "text": "«YA NO TIENE ARREGLO»",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "arreglo",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b002",
+   "props": {
+    "text": "5 FRASES DEL VENDEDOR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cinco",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b005",
+   "props": {
+    "text": "PEDÍ TODO POR ESCRITO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "escrito",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b008",
+   "props": {
+    "text": "SU TRABAJO: VENDER · EL TUYO: DECIDIR BIEN",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 50
+   },
+   "word": "vender",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b009",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "FRASE 1",
+      "beat": "b009",
+      "word": "Frase",
+      "hl": "yellow"
+     },
+     {
+      "t": "«MUY VIEJO, NO VALE LA PENA»",
+      "beat": "b009",
+      "word": "viejo",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "Frase",
+   "until": "b009",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b011",
+   "props": {
+    "text": "LA PREGUNTA: ¿QUÉ FALLÓ?",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "falló",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b012",
+   "props": {
+    "text": "LA PINZA: CONSUMO = ETIQUETA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "pinza",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b014",
+   "props": {
+    "text": "EL CAPACITOR: LA PIEZA QUE MÁS FALLA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 52
+   },
+   "word": "capacitor",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b015",
+   "props": {
+    "text": "PRESUPUESTO ESCRITO · REPUESTO + MANO DE OBRA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 48
+   },
+   "word": "presupuesto",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b018",
+   "props": {
+    "pos": "top",
+    "size": 78,
+    "words": [
+     {
+      "t": "FRASE 2",
+      "beat": "b018",
+      "word": "Frase",
+      "hl": "yellow"
+     },
+     {
+      "t": "«USA GAS VIEJO, HAY QUE CAMBIARLO»",
+      "beat": "b018",
+      "word": "gas",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "Frase",
+   "until": "b018",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b019",
+   "props": {
+    "text": "MIRÁ EL GAS EN LA ETIQUETA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "etiqueta",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b022",
+   "props": {
+    "text": "TÉCNICO CON MATRÍCULA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "matrícula",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b024",
+   "props": {
+    "text": "REPARACIÓN ≈ PRECIO DE UNO NUEVO: CAMBIALO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 48
+   },
+   "word": "cerca",
+   "dur": 3.2,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b025",
+   "props": {
+    "pos": "top",
+    "size": 76,
+    "words": [
+     {
+      "t": "FRASE 3",
+      "beat": "b025",
+      "word": "Frase",
+      "hl": "yellow"
+     },
+     {
+      "t": "«CON ESTE INVERTER AHORRÁS LA MITAD»",
+      "beat": "b025",
+      "word": "mitad",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "Frase",
+   "until": "b025",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b026",
+   "props": {
+    "text": "AHORROS DE LABORATORIO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "laboratorio",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b028",
+   "props": {
+    "text": "ETIQUETA DE EFICIENCIA: DATO OFICIAL",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 52
+   },
+   "word": "etiqueta",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b029",
+   "props": {
+    "text": "CONSUMO ANUAL: VIEJO VS NUEVO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "anual",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b032",
+   "props": {
+    "text": "¿CUÁNTOS AÑOS TARDA EN PAGARSE?",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "años",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b033",
+   "props": {
+    "pos": "top",
+    "size": 76,
+    "words": [
+     {
+      "t": "FRASE 4",
+      "beat": "b033",
+      "word": "Frase",
+      "hl": "yellow"
+     },
+     {
+      "t": "«TU AIRE ES CHICO PARA ESTE AMBIENTE»",
+      "beat": "b033",
+      "word": "chico",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "Frase",
+   "until": "b033",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b034",
+   "props": {
+    "text": "MEDÍ EL AMBIENTE: LARGO · ANCHO · ALTO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 50
+   },
+   "word": "ambiente",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b036",
+   "props": {
+    "text": "VENTANAL AL OESTE: MÁS POTENCIA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "ventanal",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b039",
+   "props": {
+    "text": "DOS TERMÓMETROS: SALIDA Y AMBIENTE",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 50
+   },
+   "word": "termómetro",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b041",
+   "props": {
+    "pos": "top",
+    "size": 70,
+    "words": [
+     {
+      "t": "FRASE 5",
+      "beat": "b041",
+      "word": "Frase",
+      "hl": "yellow"
+     },
+     {
+      "t": "«ES LA ÚLTIMA UNIDAD, LA OFERTA TERMINA HOY»",
+      "beat": "b041",
+      "word": "última",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "Frase",
+   "until": "b041",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b043",
+   "props": {
+    "text": "UNA BUENA OFERTA ES BUENA MAÑANA",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "mañana",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b044",
+   "props": {
+    "text": "COMPARÁ EL PRECIO EN 3 LUGARES",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "tres",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b045",
+   "props": {
+    "text": "GARANTÍA POR ESCRITO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "garantía",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b046",
+   "props": {
+    "text": "¿CUÁNTO DURA? ¿QUIÉN LA PRESTA? ¿CUBRE EL COMPRESOR?",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 46
+   },
+   "word": "compresor",
+   "dur": 3.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b047",
+   "props": {
+    "text": "LA INSTALACIÓN: LOS EXTRAS",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white"
+   },
+   "word": "extras",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b050",
+   "props": {
+    "text": "CUÁNDO SÍ CAMBIAR",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "cambiar",
+   "dur": 2.6,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b051",
+   "props": {
+    "text": "COMPRESOR QUEMADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "red"
+   },
+   "word": "compresor",
+   "dur": 2.4,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b053",
+   "props": {
+    "text": "INVERTER DE BUENA ETIQUETA, BIEN INSTALADO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow",
+    "size": 50
+   },
+   "word": "inverter",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b055",
+   "props": {
+    "text": "CAÑERÍAS AISLADAS · BASE FIRME · VACÍO",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "white",
+    "size": 50
+   },
+   "word": "vacío",
+   "dur": 3.0,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b056",
+   "props": {
+    "pos": "top",
+    "size": 84,
+    "words": [
+     {
+      "t": "LAS 5 FRASES",
+      "beat": "b056",
+      "word": "cinco",
+      "hl": "yellow"
+     },
+     {
+      "t": "PEDÍ TODO POR ESCRITO",
+      "beat": "b056",
+      "word": "cinco"
+     }
+    ]
+   },
+   "word": "cinco",
+   "until": "b056",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "kind": "TdcLabel",
+   "beat": "b058",
+   "props": {
+    "text": "SI ALGO NO TE CIERRA, PREGUNTÁ",
+    "at": [
+     50,
+     15
+    ],
+    "tone": "yellow"
+   },
+   "word": "preguntá",
+   "dur": 2.8,
+   "off": -0.2,
+   "sfx": [
+    {
+     "src": "sfx/sfx_pop.mp3",
+     "db": -16
+    }
+   ]
+  },
+  {
+   "kind": "TdcTitleSlam",
+   "beat": "b059",
+   "props": {
+    "pos": "top",
+    "size": 80,
+    "words": [
+     {
+      "t": "PRÓXIMO VIDEO",
+      "beat": "b059",
+      "word": "próximo",
+      "hl": "yellow"
+     },
+     {
+      "t": "3 COSAS ANTES DE PAGAR LA VISITA",
+      "beat": "b059",
+      "word": "cosas",
+      "hl": "red"
+     }
+    ]
+   },
+   "word": "próximo",
+   "until": "b059",
+   "off": -0.1,
+   "sfx": [
+    {
+     "src": "sfx/text_slam.mp3",
+     "db": -12
+    }
+   ]
+  }
+ ],
+ "amb": "sfx/amb_taller.mp3",
+ "tail": 0.0
+}
