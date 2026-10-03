@@ -48,6 +48,21 @@ export const GLOSS = [
   [/fregadero|platos sucios|lavar|enjuague/, "a clean empty kitchen sink with a single small pot drying on the rack", "empty kitchen sink"],
   [/radio|tejer|regar|plantas/, "a small kitchen windowsill with potted plants and an old radio", "kitchen windowsill plants radio"],
 ];
+GLOSS.push(
+  [/empanada/, "golden fried empanadas on a floured wooden table with a fork beside them", "fried empanadas"],
+  [/hamburguesa/, "a homemade hamburger patty frying on a flat griddle", "homemade hamburger"],
+  [/flan/, "a caramel flan on a plate with dripping caramel", "caramel flan"],
+  [/bunuelo/, "golden fried fritters being lifted from hot oil", "fried fritters"],
+  [/higado/, "a pan of liver steaks with golden onions", "liver and onions"],
+  [/(radio)/, "an old kitchen radio on a shelf next to a window", "old kitchen radio"],
+  [/(telefono|disco)/, "an old wall rotary telephone with a long curly cord in a kitchen", "rotary phone wall kitchen"],
+  [/(mantel|plastico)/, "a floral plastic tablecloth on a kitchen table with plates and glasses", "floral tablecloth kitchen table"],
+  [/olla de presion|silba/, "a pressure cooker on a gas stove with steam hissing from its valve", "pressure cooker steam"],
+  [/(nochebuena|navidad|pavo)/, "a long family dinner table with a roast turkey, potatoes and salads", "family christmas dinner table"],
+  [/(pizza)/, "a homemade pizza with tomato sauce and cheese in a black skillet", "homemade pizza skillet"],
+  [/gelatina/, "milk gelatin dessert set in glass cups", "milk gelatin dessert"],
+  [/chocolate/, "a cup of thick hot chocolate with bread beside it", "hot chocolate"],
+);
 // acciones de Rosa (la primera que coincide con el texto)
 export const ROSA_ACT = [
   [/revuel|cuchara/, "She stands at the stove stirring a small enamel pot with a wooden spoon, looking down at it with a calm, content expression."],

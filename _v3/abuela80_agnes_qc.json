@@ -1,0 +1,1994 @@
+{
+ "clips": {
+  "a_102": {
+   "size": 1422630,
+   "mtime": 1791052833210,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.949Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_107": {
+   "size": 822106,
+   "mtime": 1791052866484,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.949Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_1": {
+   "size": 1126166,
+   "mtime": 1791052458452,
+   "auto": null,
+   "hint": "Dough suddenly becomes much larger between frames 2 and 3",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.788Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_0": {
+   "size": 908311,
+   "mtime": 1791052474243,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.949Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_110": {
+   "size": 1335015,
+   "mtime": 1791052915926,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.950Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_100": {
+   "size": 1897725,
+   "mtime": 1791052975157,
+   "auto": null,
+   "hint": "Cut patty filling melts and changes shape",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.799Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_108": {
+   "size": 1426013,
+   "mtime": 1791052917035,
+   "auto": null,
+   "hint": "Missing arm on left, girl's pose changed, boy's shirt change",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.799Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_116": {
+   "size": 1303574,
+   "mtime": 1791052914785,
+   "auto": null,
+   "hint": "Image 1 contains a person.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.842Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_114": {
+   "size": 1221356,
+   "mtime": 1791053022992,
+   "auto": null,
+   "hint": "Object in hands changes from cloth to plate",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.826Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_12": {
+   "size": 1185274,
+   "mtime": 1791052420771,
+   "auto": null,
+   "hint": "Presenter's appearance changes in last frame; hair color and",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.847Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_120": {
+   "size": 722513,
+   "mtime": 1791052990624,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.950Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_10": {
+   "size": 1331756,
+   "mtime": 1791052387581,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.798Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_124": {
+   "size": 508306,
+   "mtime": 1791053147098,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.855Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_119": {
+   "size": 1316410,
+   "mtime": 1791053067566,
+   "auto": null,
+   "hint": "Cloth changes shape and hands look malformed.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.844Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_109": {
+   "size": 977897,
+   "mtime": 1791052913681,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.950Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_101": {
+   "size": 1210764,
+   "mtime": 1791052852165,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.949Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_13": {
+   "size": 1692330,
+   "mtime": 1791052690639,
+   "auto": null,
+   "hint": "Unwanted person in start frame; shelf replaced.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.856Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_132": {
+   "size": 1429438,
+   "mtime": 1791053006928,
+   "auto": null,
+   "hint": "Cabinet changes from one door to two doors",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.856Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_122": {
+   "size": 933552,
+   "mtime": 1791052974343,
+   "auto": null,
+   "hint": "Unwanted person in start photo; replaced by shelf and new ja",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.855Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_136": {
+   "size": 1870076,
+   "mtime": 1791053113258,
+   "auto": null,
+   "hint": "Person at table disappears between frames; ghostly blur repl",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.857Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_133": {
+   "size": 749685,
+   "mtime": 1791053068044,
+   "auto": null,
+   "hint": "Presenter's hands and apron melt and change shape in later f",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.857Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_126": {
+   "size": 921557,
+   "mtime": 1791052991145,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.953Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_11": {
+   "size": 1770791,
+   "mtime": 1791052406347,
+   "auto": null,
+   "hint": "Significant jump in framing and camera angle.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.825Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_138": {
+   "size": 721410,
+   "mtime": 1791053083568,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.858Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_144": {
+   "size": 1437919,
+   "mtime": 1791053098551,
+   "auto": null,
+   "hint": "Hand changes appearance, becomes distorted brown stubby thum",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.859Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_130": {
+   "size": 2178919,
+   "mtime": 1791052991930,
+   "auto": null,
+   "hint": "Person in starting photo",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.856Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_148": {
+   "size": 981259,
+   "mtime": 1791053164662,
+   "auto": null,
+   "hint": "Apron strings tie themselves at waist in later frames",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.859Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_146": {
+   "size": 795419,
+   "mtime": 1791053115140,
+   "auto": null,
+   "hint": "Person visible on the right side in the first frame.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.859Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_14": {
+   "size": 2505405,
+   "mtime": 1791052422219,
+   "auto": null,
+   "hint": "Woman's shirt changes color; child on right changes shirt.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.858Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_142": {
+   "size": 1817575,
+   "mtime": 1791053289242,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.858Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_140": {
+   "size": 1030707,
+   "mtime": 1791053337151,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.956Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_16": {
+   "size": 1359770,
+   "mtime": 1791052405315,
+   "auto": null,
+   "hint": "Presenter changes clothes and angle.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.860Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_128": {
+   "size": 1889820,
+   "mtime": 1791053037428,
+   "auto": null,
+   "hint": "Boy in blue shirt on far left disappears between frames",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.855Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_159": {
+   "size": 989557,
+   "mtime": 1791053220728,
+   "auto": null,
+   "hint": "The presenter becomes someone else.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.860Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_153": {
+   "size": 1223008,
+   "mtime": 1791053205081,
+   "auto": null,
+   "hint": "Presenter face changes/appears as different person in later ",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.860Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_15": {
+   "size": 1078317,
+   "mtime": 1791052599254,
+   "auto": null,
+   "hint": "Hands appear melted or fused in later frames.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.859Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_164": {
+   "size": 1033161,
+   "mtime": 1791053130327,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.957Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_166": {
+   "size": 2317735,
+   "mtime": 1791053149101,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.957Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_174": {
+   "size": 720549,
+   "mtime": 1791053359604,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.957Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_17": {
+   "size": 2168259,
+   "mtime": 1791052404392,
+   "auto": null,
+   "hint": "Woman missing; boy in white holds ladle; boy on left changed",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.861Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_162": {
+   "size": 1863428,
+   "mtime": 1791053185900,
+   "auto": null,
+   "hint": "Unwanted arm in start; person appears in background",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.860Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_160": {
+   "size": 1424552,
+   "mtime": 1791053146492,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.956Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_176": {
+   "size": 986522,
+   "mtime": 1791053165230,
+   "auto": null,
+   "hint": "Unwanted person present; soup bowl changes into a mug.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.861Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_154": {
+   "size": 1798047,
+   "mtime": 1791053131053,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.956Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_171": {
+   "size": 1110495,
+   "mtime": 1791053147622,
+   "auto": null,
+   "hint": "Bread changes shape unnaturally and stretches like melted ch",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.861Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_182": {
+   "size": 2040450,
+   "mtime": 1791053249869,
+   "auto": null,
+   "hint": "Unwanted person in starting image; background environment ch",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.861Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_188": {
+   "size": 1311720,
+   "mtime": 1791053269242,
+   "auto": null,
+   "hint": "Jump in framing; white object floats above head",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.862Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_196": {
+   "size": 2348596,
+   "mtime": 1791053456987,
+   "auto": null,
+   "hint": "Hands disappear between frames; pastry changes position unna",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.862Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_183": {
+   "size": 1198733,
+   "mtime": 1791053375311,
+   "auto": null,
+   "hint": "Presenter's face and hands distort in the middle frame.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.862Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_18": {
+   "size": 1090847,
+   "mtime": 1791052386833,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.958Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_19": {
+   "size": 1749383,
+   "mtime": 1791052614497,
+   "auto": null,
+   "hint": "Jump in framing; new objects and steam appeared.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.862Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_2": {
+   "size": 2137444,
+   "mtime": 1791052516771,
+   "auto": null,
+   "hint": "Woman's face changed, new children, legs and fruit bowl appe",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.864Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_203": {
+   "size": 1083340,
+   "mtime": 1791053360200,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.962Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_198": {
+   "size": 1166491,
+   "mtime": 1791053312394,
+   "auto": null,
+   "hint": "Unwanted person in Image 1; pastry changes shape.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.863Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_20": {
+   "size": 783648,
+   "mtime": 1791052547961,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.961Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_186": {
+   "size": 1348502,
+   "mtime": 1791053265340,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.959Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_206": {
+   "size": 728532,
+   "mtime": 1791053249036,
+   "auto": null,
+   "hint": "Person disappears and plant appears on table.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.864Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_208": {
+   "size": 924715,
+   "mtime": 1791053414541,
+   "auto": null,
+   "hint": "Image 1 contains a person eating at a table.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.864Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_134": {
+   "size": 848422,
+   "mtime": 1791053039727,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.956Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_178": {
+   "size": 983658,
+   "mtime": 1791053221474,
+   "auto": null,
+   "hint": "Presenter's face and hands melting in the final frame.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.861Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_21": {
+   "size": 1792702,
+   "mtime": 1791052835351,
+   "auto": null,
+   "hint": "Presenter becomes someone else; jump in framing.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.864Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_220": {
+   "size": 1342846,
+   "mtime": 1791053376427,
+   "auto": null,
+   "hint": "Person (woman in dress and purple slippers) is clearly visib",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.865Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_204": {
+   "size": 929472,
+   "mtime": 1791053413501,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.962Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_214": {
+   "size": 1196282,
+   "mtime": 1791053312983,
+   "auto": null,
+   "hint": "table objects replaced, person removed",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.865Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_222": {
+   "size": 522041,
+   "mtime": 1791053311874,
+   "auto": null,
+   "hint": "Unwanted person in the starting image",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.865Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_23": {
+   "size": 906913,
+   "mtime": 1791052599800,
+   "auto": null,
+   "hint": "Large smoke cloud and bowl appear on table; person position ",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.871Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_230": {
+   "size": 816115,
+   "mtime": 1791053451943,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.871Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_217": {
+   "size": 1857153,
+   "mtime": 1791053380190,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.962Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_231": {
+   "size": 998454,
+   "mtime": 1791053381213,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.964Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_22": {
+   "size": 1257228,
+   "mtime": 1791052659521,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.963Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_238": {
+   "size": 1335341,
+   "mtime": 1791053456125,
+   "auto": null,
+   "hint": "wooden spoon changes size and position",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.872Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_193": {
+   "size": 1133871,
+   "mtime": 1791053359037,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.959Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_24": {
+   "size": 1597767,
+   "mtime": 1791052725481,
+   "auto": null,
+   "hint": "Pose changes from holding apron to crossed arms",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.872Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_241": {
+   "size": 1376959,
+   "mtime": 1791053416071,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.964Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_25": {
+   "size": 1367336,
+   "mtime": 1791052643605,
+   "auto": null,
+   "hint": "Jump in framing between images 2 and 3",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.890Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_242": {
+   "size": 932600,
+   "mtime": 1791053489576,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.964Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_228": {
+   "size": 1263890,
+   "mtime": 1791053471986,
+   "auto": null,
+   "hint": "Person visible on right edge in starting photo",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.870Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_248": {
+   "size": 1656150,
+   "mtime": 1791053491000,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person/arm.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.890Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_210": {
+   "size": 1043144,
+   "mtime": 1791053397686,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.962Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_224": {
+   "size": 1382477,
+   "mtime": 1791053374270,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.963Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_26": {
+   "size": 814535,
+   "mtime": 1791052550068,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.965Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_244": {
+   "size": 781944,
+   "mtime": 1791053559441,
+   "auto": null,
+   "hint": "Unwanted person present in starting image",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.872Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_270": {
+   "size": 1074331,
+   "mtime": 1791053558898,
+   "auto": null,
+   "hint": "No presenter visible; only the elderly woman in frame",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.910Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_250": {
+   "size": 2197575,
+   "mtime": 1791053682131,
+   "auto": null,
+   "hint": "Pan changes from dark exterior to all silver/stainless steel",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.891Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_275": {
+   "size": 881106,
+   "mtime": 1791053817849,
+   "auto": null,
+   "hint": "Presenter face becomes warped/distorted across frames",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.910Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_274": {
+   "size": 1244169,
+   "mtime": 1791053666227,
+   "auto": null,
+   "hint": "Middle child morphs; dish rack becomes sink",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.910Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_27": {
+   "size": 726794,
+   "mtime": 1791052584830,
+   "auto": null,
+   "hint": "A faint reddish person appears behind the chair in the middl",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.909Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_232": {
+   "size": 1758182,
+   "mtime": 1791053436752,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.964Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_278": {
+   "size": 2621540,
+   "mtime": 1791053812703,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person; lemon bowl disappears.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.912Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_262": {
+   "size": 1534041,
+   "mtime": 1791053488509,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person (torso and arms).",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.891Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_254": {
+   "size": 1242215,
+   "mtime": 1791053871888,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.965Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_28": {
+   "size": 1154060,
+   "mtime": 1791052550839,
+   "auto": null,
+   "hint": "Presenter's face changes expression and features in last fra",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.912Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_284": {
+   "size": 2171156,
+   "mtime": 1791053830565,
+   "auto": null,
+   "hint": "Legs appeared under table, chair distorted, items vanished",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.915Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_282": {
+   "size": 827360,
+   "mtime": 1791053544261,
+   "auto": null,
+   "hint": "Copper pot appears on table, steam appears.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.912Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_286": {
+   "size": 1727699,
+   "mtime": 1791053577920,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.915Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_292": {
+   "size": 1180128,
+   "mtime": 1791053663046,
+   "auto": null,
+   "hint": "Pot lid disappears between frames; cutting board and cup app",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.916Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_259": {
+   "size": 1184071,
+   "mtime": 1791053820277,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.965Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_294": {
+   "size": 1352443,
+   "mtime": 1791053825446,
+   "auto": null,
+   "hint": "Jump in framing reveals shelves in last frame not visible be",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.916Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_276": {
+   "size": 1000658,
+   "mtime": 1791053562682,
+   "auto": null,
+   "hint": "Unwanted person in starting photo",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.910Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_3": {
+   "size": 1296515,
+   "mtime": 1791052475120,
+   "auto": null,
+   "hint": "Presenter face changed in last frame; stove handle vanished.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.917Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_300": {
+   "size": 1937200,
+   "mtime": 1791053621815,
+   "auto": null,
+   "hint": "Unwanted person visible in the starting image.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.917Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_306": {
+   "size": 1345889,
+   "mtime": 1791053851053,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.966Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_304": {
+   "size": 2154712,
+   "mtime": 1791053726509,
+   "auto": null,
+   "hint": "Bread roll morphs and loses slices; glass changes",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.918Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_308": {
+   "size": 810988,
+   "mtime": 1791053682915,
+   "auto": null,
+   "hint": "Image 1 contains unwanted person's legs/feet",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.919Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_302": {
+   "size": 1524201,
+   "mtime": 1791053822860,
+   "auto": null,
+   "hint": "Unwanted person in starting image",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.918Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_29": {
+   "size": 947648,
+   "mtime": 1791052532375,
+   "auto": null,
+   "hint": "Ghostly figure appears above the stove.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.916Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_310": {
+   "size": 847502,
+   "mtime": 1791053711688,
+   "auto": null,
+   "hint": "Image 1 has a person; background and burger replaced.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.919Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_30": {
+   "size": 994269,
+   "mtime": 1791052548661,
+   "auto": null,
+   "hint": "Presenter became someone else; hands melting.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.917Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_288": {
+   "size": 833292,
+   "mtime": 1791053727187,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.965Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_299": {
+   "size": 967353,
+   "mtime": 1791053680889,
+   "auto": null,
+   "hint": "Presenter's hands and fingers are melting in the final frame",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.917Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_324": {
+   "size": 1763207,
+   "mtime": 1791053848548,
+   "auto": null,
+   "hint": "Pot handle changed from black to metal on right side.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.922Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_314": {
+   "size": 1703247,
+   "mtime": 1791053814892,
+   "auto": null,
+   "hint": "Jump in framing; plate cropped in start photo.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.920Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_312": {
+   "size": 1094743,
+   "mtime": 1791053827939,
+   "auto": null,
+   "hint": "Presenter becomes someone else",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.920Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_331": {
+   "size": 1498840,
+   "mtime": 1791053974362,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.967Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_323": {
+   "size": 1006828,
+   "mtime": 1791053868775,
+   "auto": null,
+   "hint": "Hands disappeared and apron knot appeared",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.921Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_328": {
+   "size": 1672046,
+   "mtime": 1791053954714,
+   "auto": null,
+   "hint": "Background pot changes from stockpot to saucepan",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.922Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_317": {
+   "size": 1052677,
+   "mtime": 1791053930933,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.967Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_334": {
+   "size": 1441871,
+   "mtime": 1791054334125,
+   "auto": null,
+   "hint": "Image 1 has an unwanted person; egg yolk color changes.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.923Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_281": {
+   "size": 928009,
+   "mtime": 1791053592668,
+   "auto": null,
+   "hint": "bread stretches and changes shape",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.912Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_340": {
+   "size": 1115546,
+   "mtime": 1791054299882,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.967Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_318": {
+   "size": 929001,
+   "mtime": 1791053874351,
+   "auto": null,
+   "hint": "Background leg changed shape, eggs disappeared.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.921Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_336": {
+   "size": 1786623,
+   "mtime": 1791054055849,
+   "auto": null,
+   "hint": "Unwanted people in image 1, place and framing replaced",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.923Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_348": {
+   "size": 867612,
+   "mtime": 1791054017098,
+   "auto": null,
+   "hint": "Image 1 contains a large unwanted person in a pink dress",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.924Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_351": {
+   "size": 887271,
+   "mtime": 1791053990970,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.969Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_330": {
+   "size": 1761903,
+   "mtime": 1791054038985,
+   "auto": null,
+   "hint": "Presenter changes and the soup bowl is replaced.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.923Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_338": {
+   "size": 2826411,
+   "mtime": 1791054094670,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.924Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_350": {
+   "size": 657704,
+   "mtime": 1791053999415,
+   "auto": null,
+   "hint": "Person in starting photo",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.924Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_332": {
+   "size": 919667,
+   "mtime": 1791053935956,
+   "auto": null,
+   "hint": "Frying pan and spoon disappear from background.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.923Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_352": {
+   "size": 434242,
+   "mtime": 1791053994178,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.969Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_355": {
+   "size": 1183494,
+   "mtime": 1791054250228,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.969Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_354": {
+   "size": 874522,
+   "mtime": 1791053997088,
+   "auto": null,
+   "hint": "Unwanted person visible on the left in the first image.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.925Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_353": {
+   "size": 972356,
+   "mtime": 1791054202600,
+   "auto": null,
+   "hint": "Presenter's hands are melted and face changed in middle fram",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.924Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_358": {
+   "size": 1642469,
+   "mtime": 1791054113633,
+   "auto": null,
+   "hint": "Person partially present in images 1-3 but disappears by ima",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.925Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_356": {
+   "size": 2134809,
+   "mtime": 1791054153901,
+   "auto": null,
+   "hint": "people disappear, jump in framing",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.925Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_36": {
+   "size": 1343073,
+   "mtime": 1791052759657,
+   "auto": null,
+   "hint": "Entire scene and person replaced.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.926Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_349": {
+   "size": 1026516,
+   "mtime": 1791054019561,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.968Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_359": {
+   "size": 816803,
+   "mtime": 1791054088135,
+   "auto": null,
+   "hint": "Stove knobs changed from three to four",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.925Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_326": {
+   "size": 761466,
+   "mtime": 1791053810232,
+   "auto": null,
+   "hint": "Hand disappears; knife and bread appear not in original",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.922Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_362": {
+   "size": 1332867,
+   "mtime": 1791054159270,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.926Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_364": {
+   "size": 988450,
+   "mtime": 1791054119410,
+   "auto": null,
+   "hint": "image 1 contains an unwanted person",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.927Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_360": {
+   "size": 1277597,
+   "mtime": 1791054145693,
+   "auto": null,
+   "hint": "place or main object replaced",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.926Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_361": {
+   "size": 1092473,
+   "mtime": 1791054182326,
+   "auto": null,
+   "hint": "Hand distortion, spoon handle stretches, liquid changes colo",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.926Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_365": {
+   "size": 952285,
+   "mtime": 1791054254697,
+   "auto": null,
+   "hint": "The cloth in her hands changes shape and length in the last ",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.927Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_347": {
+   "size": 994868,
+   "mtime": 1791053957053,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.968Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_368": {
+   "size": 938179,
+   "mtime": 1791054277302,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.928Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_370": {
+   "size": 1408759,
+   "mtime": 1791054305094,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.931Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_367": {
+   "size": 840819,
+   "mtime": 1791054308266,
+   "auto": null,
+   "hint": "Presenter's face and hands change shape/melt in later frames",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.927Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_372": {
+   "size": 1080349,
+   "mtime": 1791054506517,
+   "auto": null,
+   "hint": "Person in first image and jump in framing",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.931Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_373": {
+   "size": 1308457,
+   "mtime": 1791054295685,
+   "auto": null,
+   "hint": "Presenter changes appearance in middle frame.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.932Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_374": {
+   "size": 1262772,
+   "mtime": 1791054392009,
+   "auto": null,
+   "hint": "Main object replaced; unwanted person in start image.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.932Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_376": {
+   "size": 2066786,
+   "mtime": 1791054327006,
+   "auto": null,
+   "hint": "Presenter changes outfit and appearance between frames",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.932Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_357": {
+   "size": 901503,
+   "mtime": 1791054138249,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.969Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_375": {
+   "size": 906235,
+   "mtime": 1791054329700,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.970Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_38": {
+   "size": 1703417,
+   "mtime": 1791052567324,
+   "auto": null,
+   "hint": "Silver kettle appears on counter; jump in framing at end.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.933Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_363": {
+   "size": 1088549,
+   "mtime": 1791054353706,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.970Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_369": {
+   "size": 1287585,
+   "mtime": 1791054272902,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.970Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_366": {
+   "size": 1246212,
+   "mtime": 1791054150054,
+   "auto": null,
+   "hint": "Stove, trash can, and broom handles appear melted or warped ",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.927Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_380": {
+   "size": 856922,
+   "mtime": 1791054388913,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.970Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_388": {
+   "size": 1010626,
+   "mtime": 1791054597901,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.971Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_378": {
+   "size": 1131729,
+   "mtime": 1791054396647,
+   "auto": null,
+   "hint": "Image 1 contains a person.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.932Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_390": {
+   "size": 1665296,
+   "mtime": 1791054446181,
+   "auto": null,
+   "hint": "The bread changes shape from ragged piece to smooth ball.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.933Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_382": {
+   "size": 1030660,
+   "mtime": 1791054550587,
+   "auto": null,
+   "hint": "hands and cloth melting or changing shape",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.933Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_398": {
+   "size": 1006065,
+   "mtime": 1791054469903,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.971Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_4": {
+   "size": 830623,
+   "mtime": 1791052402230,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.971Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_392": {
+   "size": 1178334,
+   "mtime": 1791054487941,
+   "auto": null,
+   "hint": "Pot contents change from shredded to smooth dough ball",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.933Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_384": {
+   "size": 1403536,
+   "mtime": 1791054778936,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.970Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_48": {
+   "size": 673516,
+   "mtime": 1791052786886,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.972Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_394": {
+   "size": 1001300,
+   "mtime": 1791055053635,
+   "auto": null,
+   "hint": "Bread changes from white torn pieces to a yellow block.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.934Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_42": {
+   "size": 1066149,
+   "mtime": 1791052642961,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.934Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_54": {
+   "size": 985734,
+   "mtime": 1791053145841,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.972Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_5": {
+   "size": 2148509,
+   "mtime": 1791052569344,
+   "auto": null,
+   "hint": "Two boys missing, background changed to oven",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.934Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_396": {
+   "size": 1129740,
+   "mtime": 1791054448753,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.971Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_58": {
+   "size": 2647314,
+   "mtime": 1791052788640,
+   "auto": null,
+   "hint": "Hands, person, and salad bowl in image 1 missing from later ",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.935Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_60": {
+   "size": 982221,
+   "mtime": 1791052691179,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.974Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_62": {
+   "size": 2173246,
+   "mtime": 1791052674871,
+   "auto": null,
+   "hint": "Person disappears between frames; towel floats alone",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.935Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_64": {
+   "size": 694438,
+   "mtime": 1791052707014,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.975Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_400": {
+   "size": 940099,
+   "mtime": 1791054427811,
+   "auto": null,
+   "hint": "Flame appears in middle frame not in starting photo",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.934Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_67": {
+   "size": 1115197,
+   "mtime": 1791052706113,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.975Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_68": {
+   "size": 1142980,
+   "mtime": 1791052710446,
+   "auto": null,
+   "hint": "Person visible in starting image",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.945Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_371": {
+   "size": 830244,
+   "mtime": 1791054371714,
+   "auto": null,
+   "hint": "Wooden chair back on the left disappears in video frames com",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.931Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_74": {
+   "size": 1141247,
+   "mtime": 1791052743430,
+   "auto": null,
+   "hint": "Presenter's face changes in the last frame",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_70": {
+   "size": 1925728,
+   "mtime": 1791052726820,
+   "auto": null,
+   "hint": "Unwanted person visible in starting image",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_7": {
+   "size": 1688538,
+   "mtime": 1791052425388,
+   "auto": null,
+   "hint": "Image 1 contains a person.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_80": {
+   "size": 1956445,
+   "mtime": 1791052898547,
+   "auto": null,
+   "hint": "Child on right replaced; extra chair appeared; shapes distor",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.947Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_6": {
+   "size": 939996,
+   "mtime": 1791052403189,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.973Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_76": {
+   "size": 905569,
+   "mtime": 1791053022046,
+   "auto": null,
+   "hint": "Presenter's face stretches and melts.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_81": {
+   "size": 1339761,
+   "mtime": 1791052868171,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.975Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_8": {
+   "size": 1583405,
+   "mtime": 1791052424523,
+   "auto": null,
+   "hint": "Man replaces girl on left; presenter becomes someone else",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.946Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_85": {
+   "size": 1354760,
+   "mtime": 1791052833768,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.976Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_52": {
+   "size": 1077578,
+   "mtime": 1791052675770,
+   "auto": null,
+   "hint": "Melting or distorted hands and cloth in the final frame",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.935Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_82": {
+   "size": 1358308,
+   "mtime": 1791052882867,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.975Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_95": {
+   "size": 1045011,
+   "mtime": 1791052834269,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.976Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_9": {
+   "size": 773536,
+   "mtime": 1791052423676,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.976Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_386": {
+   "size": 1314130,
+   "mtime": 1791054465347,
+   "auto": null,
+   "hint": "Melting artifacts in the middle frame.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.933Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_96": {
+   "size": 1508992,
+   "mtime": 1791052933133,
+   "auto": null,
+   "hint": "Place or main object replaced",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.947Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_93": {
+   "size": 789735,
+   "mtime": 1791052817694,
+   "auto": null,
+   "hint": "Pot loses flower, hands melt, face changes",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.947Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_46": {
+   "size": 680537,
+   "mtime": 1791052914172,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted arm/person.",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.934Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "a_86": {
+   "size": 702425,
+   "mtime": 1791052817184,
+   "auto": null,
+   "hint": "Presenter becomes someone else in middle frame",
+   "dur": 4.033,
+   "revisado": "2026-10-03T21:37:29.947Z",
+   "rechazado": null,
+   "ok": true
+  }
+ },
+ "hojas": null,
+ "version": 2,
+ "slug": "abuela80",
+ "at": "2026-10-03T21:41:23.251Z",
+ "repeticion": {
+  "planos": 205,
+  "loops": 0,
+  "dobles": 0,
+  "ejemplos": []
+ }
+}

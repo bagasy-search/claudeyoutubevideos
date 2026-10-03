@@ -62,7 +62,7 @@ for (const m of moments) {
     const act = ROSA_ACT.find((a) => a[0].test(t)) ?? ROSA_ACT[(m.i * 5) % (ROSA_ACT.length - 1)];
     prompt = `${WHO}, in ${KIT}. ${act[1]} Her face is the face of the reference image: same face, same age, not younger, not prettier.` + TAIL;
   } else if (kind === "old") {
-    const yr = 1962 + ((m.i * 3) % 14);
+    const era = cfg.era ?? [1962, 1975]; const yr = era[0] + ((m.i * 3) % (era[1] - era[0] + 1));
     prompt = `A faded color snapshot photograph taken around ${yr} in a small Latin American town kitchen: a family of children and a mother in an apron around a table, ${gl ? gl[1] : "a big pot of soup steaming on the table"}, children laughing and reaching with spoons, ${frame}.` + EITAIL;
   } else {
     prompt = `Candid phone snapshot of ${scene}, ${frame}.` + TAIL;

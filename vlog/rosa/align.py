@@ -16,6 +16,7 @@ def norm(w):
 
 NUMS = {n: i for i, n in enumerate("uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince dieciseis diecisiete dieciocho diecinueve veinte veintiuno veintidos veintitres veinticuatro veinticinco veintiseis veintisiete veintiocho veintinueve treinta treintaiuno treintaidos treintaitres treintaicuatro treintaicinco treintaiseis treintaisiete treintaiocho treintainueve cuarenta cuarentaiuno cuarentaidos cuarentaitres cuarentaicuatro cuarentaicinco".split(), 1)}
 
+for _u, _n in enumerate("uno dos tres cuatro cinco seis siete ocho nueve".split(), 1): NUMS["treintay" + _n] = 30 + _u; NUMS["cuarentay" + _n] = 40 + _u
 text = open(SCRIPT, encoding="utf8").read()
 paras = [p.strip() for p in text.split("\n\n") if p.strip()]
 sw = []
@@ -88,17 +89,30 @@ cur = "hook"
 for pi, p in enumerate(paras):
     head = p[:220]
     num = None
-    m2 = re.match(r"(?:Y ahora, atenci[oó]n, que viene |Y ya, la [uú]ltima\. La que te promet[ií]\. |Y ahora s[ií], )?[Ll]a n[uú]mero (\w+)", p)
+    m2 = re.match(r"(?:Y ahora, atenci[oó]n, que viene |Y ya, la [uú]ltima\. La que te promet[ií]\. |Y ya, el [uú]ltimo\. El que te promet[ií]\. |Y ahora s[ií], )?(?:[Ll]a n[uú]mero|[Ee]l truco n[uú]mero) (\w+(?: y \w+)?)", p)
     if m2 and norm(m2.group(1)) in NUMS and cur not in ("hook",): num = NUMS[norm(m2.group(1))]
     m3 = re.match(r"(?:Y ahora s[ií], )?la (\w+), la que te prometí", p)
     if m3 and norm(m3.group(1)) in NUMS and cur not in ("hook",): num = NUMS[norm(m3.group(1))]
     if re.match(r"Pasa, si[eé]ntate", p): cur = "intro"
+    elif p.startswith("Y aquí, a mitad de camino, déjame enseñarte los cinco") or re.match(r"(El primero: el pan|El segundo: espesar|El tercero: la papa|El cuarto: el huevo|Y el quinto, el más importante)", p): cur = "trucos"
+    elif p.startswith("Y antes de seguir, tengo que contarte de la tienda") or p.startswith("La tienda de don Ramiro") or p.startswith("Uno entraba, saludaba") or p.startswith("Ese viernes pagaba") or p.startswith("Cuando pienso en las cenas de los setenta"): cur = "tienda"
+    elif p.startswith("Y antes de empezar, quiero mostrarte esa despensa") or re.match(r"(La lata de atún\.|La maicena\.|El sobre de sopa\.|La leche en polvo\.|Y la libreta\.)", p): cur = "despensa"
+    elif p.startswith("Y antes de las últimas, déjame contarte cómo era una cocina compartida") or p.startswith("En mi cuadra éramos cinco") or p.startswith("Mientras se amasaba") or p.startswith("Y cuando una de nosotras") or p.startswith("Hoy casi nadie comparte la cocina"): cur = "cocina"
+    elif p.startswith("Y te voy a contar el día en que no hubo nada"): cur = "nada"
+    elif p.startswith("Hay una cosa más que quiero decirte, y es sobre los domingos") or p.startswith("Los domingos de los años setenta") or p.startswith("Y de noche, cuando ya todos") or p.startswith("Hoy, cuando cocino una de estas cenas para mí"): cur = "domingos"
+    elif p.startswith("Quiero contarte también algo de mi madre y su lata") or p.startswith("Mi madre guardaba las latas") or p.startswith("Cuando ella murió, encontré"): cur = "lata"
+    elif p.startswith("Y quiero añadir algo sobre la olla del barrio") or p.startswith("En mi cuadra había una olla comunitaria") or p.startswith("Aquella olla recorrió"): cur = "barrio"
+    elif p.startswith("Y antes, un momento para ponernos") or p.startswith("Las cocinas eran pequeñas") or p.startswith("Ahora sí. Vamos con la primera"): cur = "epoca" if not p.startswith("Ahora sí") else cur
+    elif p.startswith("Y antes de seguir, quiero que mires") or re.match(r"(Primero, la olla|Segundo, la radio|Tercero, el mantel|Cuarto, el teléfono|Y quinto, la ventana)", p): cur = "objetos"
+    elif p.startswith("Y aquí, a mitad de camino") or re.match(r"El (lunes|martes|miércoles|jueves|viernes|sábado) ", p) or p.startswith("Y el domingo, el día") or p.startswith("Así, sin planilla"): cur = "diasemana"
+    elif p.startswith("Y a estas alturas ya habrás notado") or p.startswith("Eso es lo que me gustaría que te llevaras") or p.startswith("Y si hoy cocinas para una o dos personas"): cur = "mirada"
+    elif p.startswith("Si no sabes por cuál empezar"): cur = "elegir"
     elif p.startswith("Antes de empezar con la lista") or p.startswith("La primera: usa") or p.startswith("La segunda:") or p.startswith("Y la tercera"): cur = "reglas"
     elif p.startswith("Antes de cocinar, una cosa") or p.startswith("Arroz. Lentejas") or p.startswith("¿Sabes por qué te lo digo"): cur = "despensa"
     elif p.startswith("Y aquí quiero detenerme") or p.startswith("¿Te acuerdas de la olla grande") or p.startswith("Esa misma tarde fui") or p.startswith("Eso es la olla pequeña"): cur = "interludio"
     elif p.startswith("Y ahora, a mitad de camino") or p.startswith("Mi sistema es muy simple") or p.startswith("Los frascos son") or p.startswith("Y la libreta") or p.startswith("Seguimos con la veintiuno"): cur = "semana"
     elif p.startswith("Ya sé lo que estás pensando") or re.match(r"El (primer|segundo|tercer|cuarto) error", p) or p.startswith("Y el quinto") or p.startswith("Si hoy comes solo, y esta noche"): cur = "errores"
-    elif p.startswith("Y ahora, déjame hablarte") or p.startswith("Comer solo no es lo mismo") or p.startswith("Yo empecé esta lista") or p.startswith("Por eso cada una"): cur = "corazon"
+    elif p.startswith("Te voy a contar algo que no le he contado") or p.startswith("Esa sopa fue su receta") or p.startswith("Por eso te digo que estas cenas") or p.startswith("Y ahora, déjame hablarte") or p.startswith("Comer solo no es lo mismo") or p.startswith("Yo empecé esta lista") or p.startswith("Por eso cada una"): cur = "corazon"
     elif p.startswith("Y si no sabes por cuál") or p.startswith("Si hoy") or p.startswith("Cualquiera de estas"): cur = "elegir"
     elif p.startswith("Hoy te di treinta") or p.startswith("Las medidas exactas") or p.startswith("Y ahora, repasemos") or p.startswith("En el próximo video") or p.startswith("Gracias por sentarte") or p.startswith("Aquí estaré"): cur = "cierre"
     elif num is not None: cur = f"i{num}"
