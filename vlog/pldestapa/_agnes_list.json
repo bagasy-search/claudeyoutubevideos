@@ -1,0 +1,42 @@
+[
+ {
+  "nombre": "b001_0",
+  "motion": "the plunger moves up and down and water splashes onto the tiles",
+  "change": ""
+ },
+ {
+  "nombre": "b012_1",
+  "motion": "the rubber rim compresses and seals against the surface",
+  "change": ""
+ },
+ {
+  "nombre": "b015_1",
+  "motion": "the plunger sits on the sink and water surrounds its rim",
+  "change": ""
+ },
+ {
+  "nombre": "b021_1",
+  "motion": "the rubber compresses and springs back",
+  "change": ""
+ },
+ {
+  "nombre": "b026_1",
+  "motion": "the plunger tilts in and settles flat over the opening",
+  "change": ""
+ },
+ {
+  "nombre": "b028_0",
+  "motion": "the plunger pumps in a steady rhythm and water pulses",
+  "change": ""
+ },
+ {
+  "nombre": "b041_1",
+  "motion": "the cable disappears into the drain as the handle turns",
+  "change": ""
+ },
+ {
+  "nombre": "b044_1",
+  "motion": "the plunger pumps over the drain and water ripples",
+  "change": ""
+ }
+]

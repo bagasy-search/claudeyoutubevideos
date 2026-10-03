@@ -1,0 +1,1061 @@
+[
+ {
+  "id": "b001",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Apuesto a que estás usando mal el destapacaños. Y por eso a veces funciona, y a veces el agua termina en el piso.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a person pumping a cup plunger weakly over a toilet bowl full of water that does not drain, water splashing out onto the floor",
+    "motion": "the plunger moves up and down and water splashes onto the tiles"
+   },
+   {
+    "k": "W",
+    "v": "person plunging toilet wrong"
+   },
+   {
+    "k": "W",
+    "v": "a person pumping a cup plunger weakly over"
+   }
+  ]
+ },
+ {
+  "id": "b002",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Soy Claudio, plomero. El destapacaños, bien usado, resuelve casi todos los tapones. Mal usado, solo lo empuja más lejos, o lo empeora.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio the plumber in a bathroom wearing a blue overall and headlamp, holding two different plungers, one in each hand, with a friendly challenging smile"
+   },
+   {
+    "k": "G",
+    "v": "a cup plunger and a flange plunger side by side on a bathroom floor"
+   },
+   {
+    "k": "W",
+    "v": "Claudio the plumber in a bathroom wearing a"
+   }
+  ]
+ },
+ {
+  "id": "b003",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y llamar a un plomero por un tapón simple sale caro. Con la herramienta correcta y la técnica adecuada, lo haces tú en cinco minutos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plumber emergency call toilet clogged"
+   },
+   {
+    "k": "G",
+    "v": "a toilet clogged with water level high and a hand hesitating over a plunger"
+   },
+   {
+    "k": "W",
+    "v": "plumber emergency call toilet clogged"
+   }
+  ]
+ },
+ {
+  "id": "b004",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Tres cosas: el destapador correcto, el nivel de agua correcto, y el movimiento correcto. Casi todos fallan en alguna de las tres.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio raising three fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with three words: the right plunger, the right water, the right push"
+   },
+   {
+    "k": "W",
+    "v": "Claudio raising three fingers"
+   }
+  ]
+ },
+ {
+  "id": "b005",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Hay tres tipos, y no son intercambiables. Te explico para qué sirve cada uno, y cuál compraría yo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plunger types buying guide"
+   },
+   {
+    "k": "G",
+    "v": "three types of plungers on a table: cup, flange and accordion style with labels"
+   },
+   {
+    "k": "W",
+    "v": "plunger types buying guide"
+   }
+  ]
+ },
+ {
+  "id": "b006",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "También el mango importa: uno largo, de unos sesenta centímetros, da más control y evita que te salpiques. Y que sea cómodo de agarrar.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a plunger with a long wooden handle and a plunger with a short plastic handle compared on a floor"
+   },
+   {
+    "k": "W",
+    "v": "plunger handle length"
+   },
+   {
+    "k": "W",
+    "v": "a plunger with a long wooden handle and"
+   }
+  ]
+ },
+ {
+  "id": "b007",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y te cuento por qué algunos destapadores que venden en los supermercados casi no sirven. Empecemos por entender cómo funciona uno.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera honestly"
+   },
+   {
+    "k": "W",
+    "v": "honest plumber advice"
+   },
+   {
+    "k": "W",
+    "v": "Claudio looking at the camera honestly"
+   }
+  ]
+ },
+ {
+  "id": "b008",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Te cuento por qué insisto con esto. En mis años de oficio, una de cada tres llamadas por tapón se resolvía con un destapador bien usado.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plumber fixing toilet at home customer"
+   },
+   {
+    "k": "G",
+    "v": "a plumber's van parked outside a house with a toolbox on the doorstep"
+   }
+  ]
+ },
+ {
+  "id": "b009",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una vez llegué, y el cliente me mostró el destapador: era de copa, y lo estaba usando en el inodoro, con muy poca agua. Con el correcto, lo resolví en un minuto.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio laughing and shaking his head, remembering"
+   },
+   {
+    "k": "W",
+    "v": "plumber funny story"
+   }
+  ]
+ },
+ {
+  "id": "b010",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un destapacaños no aspira: empuja y tira agua con presión, como un pistón. El agua es la que mueve el tapón, no el aire.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plunger pressure physics diagram"
+   },
+   {
+    "k": "G",
+    "v": "a diagram of a plunger on a drain showing pressure waves pushing and pulling the clog"
+   }
+  ]
+ },
+ {
+  "id": "b011",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cada empujón manda una onda de presión hacia el tapón, y cada tirón la devuelve. Ese vaivén lo afloja hasta que se rompe.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining with both hands one pushing and one pulling to show the water moving back and forth"
+   },
+   {
+    "k": "G",
+    "v": "a simple diagram of water moving forward and backward in a pipe with arrows on a whiteboard"
+   }
+  ]
+ },
+ {
+  "id": "b012",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Por eso el sello importa: si el borde de goma no cierra bien contra la superficie, la presión se escapa por el costado, y nada se mueve.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plunger seal drain rim"
+   },
+   {
+    "k": "A",
+    "v": "a plunger pressed onto a drain with water rising slightly around its rim and sealing",
+    "motion": "the rubber rim compresses and seals against the surface"
+   },
+   {
+    "k": "W",
+    "v": "plunger seal drain rim"
+   }
+  ]
+ },
+ {
+  "id": "b013",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Una goma dura o gastada no sella. Si el tuyo está rígido o agrietado, cámbialo: cuesta muy poco y marca la diferencia.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the rubber rim of a plunger and showing it must be flexible, pressing it with a thumb"
+   },
+   {
+    "k": "G",
+    "v": "a worn stiff plunger rim next to a soft new one"
+   }
+  ]
+ },
+ {
+  "id": "b014",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El de copa, el clásico de la goma redonda: sirve para superficies planas, como un lavabo, una ducha o una tina. No para inodoros.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "cup plunger flat drain sink"
+   },
+   {
+    "k": "G",
+    "v": "a cup plunger with a flat rim lying on a kitchen counter next to a sink"
+   }
+  ]
+ },
+ {
+  "id": "b015",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En una superficie plana, la copa cierra perfectamente. En el fondo curvo de un inodoro, no: queda un hueco, y el empuje se pierde.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio showing the flat rim of a cup plunger against the flat sink bottom, demonstrating the seal"
+   },
+   {
+    "k": "A",
+    "v": "a cup plunger placed over a sink drain with water covering its rim",
+    "motion": "the plunger sits on the sink and water surrounds its rim"
+   },
+   {
+    "k": "W",
+    "v": "Claudio showing the flat rim of a cup"
+   }
+  ]
+ },
+ {
+  "id": "b016",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El de reborde tiene una funda extra, que entra en el desagüe del inodoro y lo sella. Ese es el que necesitas para el baño.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "flange plunger toilet fits drain"
+   },
+   {
+    "k": "G",
+    "v": "a flange plunger with an extra rubber sleeve that fits into a toilet drain hole"
+   }
+  ]
+ },
+ {
+  "id": "b017",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Esa funda se dobla para adentro cuando lo usas en un lavabo, y sale para afuera en el inodoro. Muchos modelos sirven para las dos cosas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio pointing at the soft rubber flange that extends below the cup"
+   },
+   {
+    "k": "G",
+    "v": "a close view of a flange folded inside and extended outside of a plunger"
+   }
+  ]
+ },
+ {
+  "id": "b018",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y el de acordeón, ese de plástico duro: parece potente, pero es difícil de sellar, y puede rayar la porcelana. Yo no lo recomiendo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "accordion plunger toilet hard plastic"
+   },
+   {
+    "k": "G",
+    "v": "an accordion style plastic plunger with ridges on a bathroom floor"
+   }
+  ]
+ },
+ {
+  "id": "b019",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Mi consejo: uno de reborde para el inodoro, y uno de copa para lavabos y duchas. Dos herramientas, y resuelves casi todo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head with a smile and putting the accordion plunger aside"
+   },
+   {
+    "k": "W",
+    "v": "honest plumber advice"
+   }
+  ]
+ },
+ {
+  "id": "b020",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No necesitas gastar mucho: uno bueno cuesta poco. Mira la goma: gruesa, flexible, sin grietas, y con un reborde que se dobla fácil.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plunger buy cost cheap hardware store"
+   },
+   {
+    "k": "G",
+    "v": "two plungers on a hardware store shelf with small price tags"
+   }
+  ]
+ },
+ {
+  "id": "b021",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Apriétalo en la tienda: tiene que ceder y volver a su forma. Si está duro como una piedra, déjalo en el estante.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio squeezing the rubber of a plunger in a store to test it, nodding"
+   },
+   {
+    "k": "A",
+    "v": "a hand squeezing a plunger cup to check flexibility",
+    "motion": "the rubber compresses and springs back"
+   }
+  ]
+ },
+ {
+  "id": "b022",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Antes de empezar: prepárate. Toallas viejas en el piso, guantes de goma, y las ventanas abiertas. El agua que salpica no es agradable.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plunging toilet preparation towels"
+   },
+   {
+    "k": "G",
+    "v": "old towels spread on a bathroom floor around a toilet and a pair of rubber gloves"
+   }
+  ]
+ },
+ {
+  "id": "b023",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "El agua es clave. El destapador necesita agua para empujar. Si hay poca, agrega más con un balde, hasta cubrir la goma.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio checking the water level in the toilet bowl with a flashlight"
+   },
+   {
+    "k": "G",
+    "v": "a toilet bowl with the water level just covering the plunger's cup"
+   }
+  ]
+ },
+ {
+  "id": "b024",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pero si el agua está al borde, saca un poco con un vaso, para que no se desborde cuando metas el destapador. El nivel justo es cubrir la copa.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "too much water toilet bowl overflow risk"
+   },
+   {
+    "k": "G",
+    "v": "a toilet bowl filled to the brim with a hand holding a bucket stopping"
+   }
+  ]
+ },
+ {
+  "id": "b025",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En lavabos y tinas, tapa el rebosadero con un trapo mojado. Si no, la presión se escapa por ese agujero, y el destapador no trabaja.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio blocking the overflow opening of a sink with a wet cloth before plunging"
+   },
+   {
+    "k": "G",
+    "v": "a wet cloth pushed firmly into the overflow hole of a bathroom sink"
+   }
+  ]
+ },
+ {
+  "id": "b026",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Primero, mételo inclinado, para que escape el aire de adentro de la copa. Si queda aire atrapado, se amortigua el golpe.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio inserting the plunger at an angle into the toilet bowl to let air escape"
+   },
+   {
+    "k": "A",
+    "v": "a flange plunger being inserted at a slant into toilet water and then pressed flat over the drain",
+    "motion": "the plunger tilts in and settles flat over the opening"
+   }
+  ]
+ },
+ {
+  "id": "b027",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Apóyalo bien, centrado sobre el desagüe, con el borde sellado. Y el primer empujón, suave: es para expulsar el aire, no para saltar.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plunger first push gently technique"
+   },
+   {
+    "k": "G",
+    "v": "a close view of the plunger resting flat over the drain with the rim sealed"
+   }
+  ]
+ },
+ {
+  "id": "b028",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después, bombea con ritmo firme: empuja hacia abajo, y tira hacia arriba sin despegar el borde. De diez a quince veces seguidas.",
+  "visuals": [
+   {
+    "k": "A",
+    "v": "a plunger being pushed down and pulled up in steady strokes over a toilet drain, water pulsing gently",
+    "motion": "the plunger pumps in a steady rhythm and water pulses"
+   },
+   {
+    "k": "W",
+    "v": "a plunger being pushed down and pulled up"
+   },
+   {
+    "k": "W",
+    "v": "a plunger being pushed down and pulled up"
+   }
+  ]
+ },
+ {
+  "id": "b029",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y ojo: el tirón es tan importante como el empujón. Muchos solo empujan, y nunca aflojan el tapón. Es el vaivén lo que lo rompe.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio focusing on the pull stroke, holding the plunger handle with both hands"
+   },
+   {
+    "k": "G",
+    "v": "a hand pulling a plunger up firmly while the rim stays on the surface"
+   }
+  ]
+ },
+ {
+  "id": "b030",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cuando el tapón se va, escuchas un gorgoteo y el agua baja de golpe. Ahí paras, y haces una prueba con medio balde de agua.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "water draining quickly toilet after plunging"
+   },
+   {
+    "k": "G",
+    "v": "a toilet bowl water level dropping quickly with a swirl after successful plunging"
+   }
+  ]
+ },
+ {
+  "id": "b031",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La prueba final: tira la cadena con cuidado. Si el nivel sube mucho, cierra la llave de paso y repite. Si baja normal, todo está bien.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "test flush after unclogging"
+   },
+   {
+    "k": "P",
+    "v": "Claudio flushing the toilet carefully with a hand ready on the flapper, watching the water level"
+   }
+  ]
+ },
+ {
+  "id": "b032",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Los errores que veo. Uno: usar el de copa en un inodoro. Dos: poca agua. Tres: no sellar el rebosadero. Cuatro: empujar con violencia.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the common mistakes on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard list of five common plunger mistakes"
+   }
+  ]
+ },
+ {
+  "id": "b033",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Empujar con furia no ayuda: salpica, y puedes dañar el sello de cera del inodoro o la junta del piso. Más ritmo que fuerza.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "plunging too hard splashes mess"
+   },
+   {
+    "k": "G",
+    "v": "a bathroom floor with dirty water splashed all over after aggressive plunging"
+   }
+  ]
+ },
+ {
+  "id": "b034",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y cinco: parar muy pronto. Un tapón terco necesita muchas series, a veces cinco o seis tandas de quince, con pausas entre medio.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shaking his head at someone stopping after three pumps"
+   },
+   {
+    "k": "G",
+    "v": "a clock showing thirty seconds next to a plunger resting on a drain"
+   }
+  ]
+ },
+ {
+  "id": "b035",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y un mito: el bicarbonato con vinagre destapa. Hace espuma, pero un tapón de papel o de pelo no se disuelve así. No pierdas tiempo.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "bicarbonate vinegar myth drain"
+   },
+   {
+    "k": "G",
+    "v": "a glass of vinegar and a bowl of baking soda foaming on a bathroom counter"
+   }
+  ]
+ },
+ {
+  "id": "b036",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Sirve como limpieza suave de olores, pero no como destapador. Para un tapón de verdad, la herramienta correcta es la que te mostré.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio shrugging while looking at a foaming mixture, skeptical"
+   },
+   {
+    "k": "G",
+    "v": "foam rising from a bathroom sink drain after pouring baking soda and vinegar"
+   }
+  ]
+ },
+ {
+  "id": "b037",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un aviso de seguridad: si usaste un destapacaños químico antes, no uses el destapador. El agua tiene químicos, y salpica y quema.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "chemical drain cleaner then plunger danger splash"
+   },
+   {
+    "k": "P",
+    "v": "Claudio warning to not plunge after using chemical cleaners, holding up a hand"
+   }
+  ]
+ },
+ {
+  "id": "b038",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En ese caso, hay que esperar, enjuagar mucho con agua, o llamar a un profesional que sepa manejarlo.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a warning label on a bottle of drain cleaner saying do not plunge after use"
+   },
+   {
+    "k": "W",
+    "v": "safety warning chemical splash"
+   }
+  ]
+ },
+ {
+  "id": "b039",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si el destapador no funciona después de varias tandas, pasa a la sonda para inodoros: una varilla flexible con una manivela, y una funda que protege la porcelana.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "toilet auger closet snake"
+   },
+   {
+    "k": "G",
+    "v": "a toilet auger with a curved bend and a crank handle on a bathroom floor"
+   }
+  ]
+ },
+ {
+  "id": "b040",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Algo que debes saber: la sonda y el destapador funcionan en cualquier tubería, pero con cuidado en tubos viejos de hierro o de barro, que pueden estar frágiles.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "pipe material plastic pvc iron house"
+   },
+   {
+    "k": "G",
+    "v": "a cut section of a PVC drain pipe and a cast iron pipe side by side"
+   }
+  ]
+ },
+ {
+  "id": "b041",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Se mete despacio, se gira la manivela cuando sientes resistencia, y el cable engancha o rompe el tapón. Luego, se retira.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio inserting the auger into the toilet drain and turning the crank, concentrated"
+   },
+   {
+    "k": "A",
+    "v": "a toilet auger being fed into the toilet drain and its handle cranked",
+    "motion": "the cable disappears into the drain as the handle turns"
+   },
+   {
+    "k": "W",
+    "v": "Claudio inserting the auger into the toilet drain"
+   }
+  ]
+ },
+ {
+  "id": "b042",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "A veces sale un montón de papel, y otras, un juguete o un objeto que alguien tiró sin querer. Siempre es una sorpresa.",
+  "visuals": [
+   {
+    "k": "G",
+    "v": "a clump of toilet paper and a toy pulled out on the tip of an auger"
+   },
+   {
+    "k": "P",
+    "v": "Claudio showing what came out of the drain to the camera with a wry smile"
+   }
+  ]
+ },
+ {
+  "id": "b043",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "No uses un perchero doblado: raya la porcelana, y atasca más. La sonda de inodoro es barata, y es la herramienta correcta.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "dont use wire hanger toilet scratch"
+   },
+   {
+    "k": "P",
+    "v": "Claudio waving a finger at a bent coat hanger and shaking his head"
+   }
+  ]
+ },
+ {
+  "id": "b044",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En un lavabo o ducha, usa la copa, con el rebosadero tapado y el agua cubriendo el borde. La técnica es la misma: ritmo firme, empujando y tirando.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio switching to the cup plunger over a sink drain after blocking the overflow"
+   },
+   {
+    "k": "A",
+    "v": "a cup plunger over a sink drain with a wet cloth in the overflow opening, pumping",
+    "motion": "the plunger pumps over the drain and water ripples"
+   },
+   {
+    "k": "W",
+    "v": "Claudio switching to the cup plunger over a"
+   }
+  ]
+ },
+ {
+  "id": "b045",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "En una pileta de cocina doble, tapa el otro desagüe con un trapo mojado, para que la presión vaya al lado que estás destapando.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "kitchen sink double clogged drain"
+   },
+   {
+    "k": "G",
+    "v": "a double kitchen sink with both bowls full of grey water and a plunger beside it"
+   }
+  ]
+ },
+ {
+  "id": "b046",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un tapón de grasa es distinto de uno de pelo: la grasa se afloja con agua caliente, y el pelo con sonda. Elige según lo que sospechas.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio explaining that grease clogs behave differently from hair clogs"
+   },
+   {
+    "k": "G",
+    "v": "a pipe cut open showing a grease clog and a hair clog side by side"
+   }
+  ]
+ },
+ {
+  "id": "b047",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Después de usar el destapador, límpialo: se enjuaga en el inodoro con agua limpia, y se deja escurrir. Y se guarda en un balde, con un poco de desinfectante.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "disinfect plunger bleach bucket"
+   },
+   {
+    "k": "G",
+    "v": "a plunger standing in a bucket of water with a splash of disinfectant, rubber gloves beside it"
+   }
+  ]
+ },
+ {
+  "id": "b048",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y lávate las manos con jabón, aunque hayas usado guantes. Lo que sale de un tapón es sucio, y la higiene es parte del trabajo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio washing his hands thoroughly with soap after finishing, careful"
+   },
+   {
+    "k": "W",
+    "v": "hand washing hygiene"
+   }
+  ]
+ },
+ {
+  "id": "b049",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Cómo evitar que vuelva: menos papel higiénico por vez, nada de toallitas ni algodones, y rejillas en todos los desagües.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting prevention habits on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with prevention habits: less paper, no wipes, strainers and a monthly check"
+   }
+  ]
+ },
+ {
+  "id": "b050",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un papel muy grueso o mucho junto forma un tapón. Es mejor tirar la cadena dos veces en lugar de una, y evitar atascos.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "toilet paper flush thin clog"
+   },
+   {
+    "k": "G",
+    "v": "a thick wad of toilet paper in a toilet bowl next to a thin one"
+   }
+  ]
+ },
+ {
+  "id": "b051",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y con niños, enseñar que el inodoro no es una papelera: juguetes, algodones y toallitas son tapones seguros.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "children toilet toy clogged flush"
+   },
+   {
+    "k": "P",
+    "v": "Claudio talking to a child about not flushing toys, in a playful way"
+   }
+  ]
+ },
+ {
+  "id": "b052",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si varios desagües van lentos a la vez, o hay agua que sube por otros lados, el problema está en la línea principal, y requiere un profesional.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "main sewer line clogged multiple fixtures"
+   },
+   {
+    "k": "G",
+    "v": "several fixtures like a toilet, a sink and a shower all draining slowly at the same time in a bathroom"
+   }
+  ]
+ },
+ {
+  "id": "b053",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y si ya intentaste con destapador y sonda sin éxito, llama: no sigas forzando, que se puede dañar el sello o los caños. Un plomero con cámara encuentra el origen.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking at the camera seriously"
+   },
+   {
+    "k": "W",
+    "v": "call professional plumber"
+   }
+  ]
+ },
+ {
+  "id": "b054",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "La cámara de inspección muestra el tapón o la raíz que lo causa, y el profesional sabe exactamente dónde actuar. Es más caro que adivinar, pero ahorra rotura.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "camera inspection sewer plumber"
+   },
+   {
+    "k": "G",
+    "v": "a plumber watching a monitor connected to a camera snake inspecting a sewer line"
+   }
+  ]
+ },
+ {
+  "id": "b055",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Pide presupuesto por escrito, y que te muestren qué encontraron. Un buen plomero te enseña la pantalla y te explica con calma.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio asking the viewer to compare quotes with a pen in hand"
+   },
+   {
+    "k": "G",
+    "v": "a notepad with three quotes and the word camera written beside the cheapest"
+   }
+  ]
+ },
+ {
+  "id": "b056",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Resumen: el destapador correcto, el nivel de agua, el sello, el ritmo con empuje y tirón, y paciencia. Con eso, ganas casi siempre.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio counting the key points on his fingers"
+   },
+   {
+    "k": "G",
+    "v": "a whiteboard with the key points: right plunger, water level, seal, rhythm, patience"
+   }
+  ]
+ },
+ {
+  "id": "b057",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Un destapador bien usado vale más que una visita de plomero. Y mantiene tu baño en marcha sin gastar un peso.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "happy clean bathroom plumber"
+   },
+   {
+    "k": "P",
+    "v": "Claudio smiling in a clean bathroom, the plunger hanging neatly on a hook"
+   }
+  ]
+ },
+ {
+  "id": "b058",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Y déjalo siempre a mano, en un soporte junto al inodoro. Un tapón no avisa, y tener la herramienta lista evita un mal rato.",
+  "visuals": [
+   {
+    "k": "W",
+    "v": "family bathroom routine tidy"
+   },
+   {
+    "k": "G",
+    "v": "a family bathroom with a plunger kept neatly in its holder beside the toilet"
+   }
+  ]
+ },
+ {
+  "id": "b059",
+  "type": "A",
+  "scene": "N",
+  "P": "N",
+  "text": "Si te sirvió, quédate en el canal. En el próximo, tres razones por las que tu inodoro no deja de correr agua, y el arreglo definitivo. Y cuéntame si estabas usando mal el tuyo.",
+  "visuals": [
+   {
+    "k": "P",
+    "v": "Claudio looking into the camera with a friendly smile"
+   },
+   {
+    "k": "W",
+    "v": "friendly plumber advice"
+   }
+  ]
+ }
+]

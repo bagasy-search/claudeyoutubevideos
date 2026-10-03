@@ -1,0 +1,533 @@
+[
+ {
+  "beat": "b001",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b001.wav",
+  "start": 0.0,
+  "len": 7.91,
+  "text": "Apuesto a que estás usando mal el destapacaños. Y por eso a veces funciona, y a veces el agua termina en el piso."
+ },
+ {
+  "beat": "b002",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b002.wav",
+  "start": 7.91,
+  "len": 9.6,
+  "text": "Soy Claudio, plomero. El destapacaños, bien usado, resuelve casi todos los tapones. Mal usado, solo lo empuja más lejos, o lo empeora."
+ },
+ {
+  "beat": "b003",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b003.wav",
+  "start": 17.51,
+  "len": 9.41,
+  "text": "Y llamar a un plomero por un tapón simple sale caro. Con la herramienta correcta y la técnica adecuada, lo haces tú en cinco minutos."
+ },
+ {
+  "beat": "b004",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b004.wav",
+  "start": 26.92,
+  "len": 8.29,
+  "text": "Tres cosas: el destapador correcto, el nivel de agua correcto, y el movimiento correcto. Casi todos fallan en alguna de las tres."
+ },
+ {
+  "beat": "b005",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b005.wav",
+  "start": 35.21,
+  "len": 6.91,
+  "text": "Hay tres tipos, y no son intercambiables. Te explico para qué sirve cada uno, y cuál compraría yo."
+ },
+ {
+  "beat": "b006",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b006.wav",
+  "start": 42.12,
+  "len": 8.88,
+  "text": "También el mango importa: uno largo, de unos sesenta centímetros, da más control y evita que te salpiques. Y que sea cómodo de agarrar."
+ },
+ {
+  "beat": "b007",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b007.wav",
+  "start": 51.0,
+  "len": 9.03,
+  "text": "Y te cuento por qué algunos destapadores que venden en los supermercados casi no sirven. Empecemos por entender cómo funciona uno."
+ },
+ {
+  "beat": "b008",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b008.wav",
+  "start": 60.03,
+  "len": 8.58,
+  "text": "Te cuento por qué insisto con esto. En mis años de oficio, una de cada tres llamadas por tapón se resolvía con un destapador bien usado."
+ },
+ {
+  "beat": "b009",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b009.wav",
+  "start": 68.61,
+  "len": 10.99,
+  "text": "Una vez llegué, y el cliente me mostró el destapador: era de copa, y lo estaba usando en el inodoro, con muy poca agua. Con el correcto, lo resolví en un minuto."
+ },
+ {
+  "beat": "b010",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b010.wav",
+  "start": 79.6,
+  "len": 9.01,
+  "text": "Un destapacaños no aspira: empuja y tira agua con presión, como un pistón. El agua es la que mueve el tapón, no el aire."
+ },
+ {
+  "beat": "b011",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b011.wav",
+  "start": 88.61,
+  "len": 8.49,
+  "text": "Cada empujón manda una onda de presión hacia el tapón, y cada tirón la devuelve. Ese vaivén lo afloja hasta que se rompe."
+ },
+ {
+  "beat": "b012",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b012.wav",
+  "start": 97.1,
+  "len": 8.81,
+  "text": "Por eso el sello importa: si el borde de goma no cierra bien contra la superficie, la presión se escapa por el costado, y nada se mueve."
+ },
+ {
+  "beat": "b013",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b013.wav",
+  "start": 105.91,
+  "len": 8.97,
+  "text": "Una goma dura o gastada no sella. Si el tuyo está rígido o agrietado, cámbialo: cuesta muy poco y marca la diferencia."
+ },
+ {
+  "beat": "b014",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b014.wav",
+  "start": 114.88,
+  "len": 9.63,
+  "text": "El de copa, el clásico de la goma redonda: sirve para superficies planas, como un lavabo, una ducha o una tina. No para inodoros."
+ },
+ {
+  "beat": "b015",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b015.wav",
+  "start": 124.51,
+  "len": 9.29,
+  "text": "En una superficie plana, la copa cierra perfectamente. En el fondo curvo de un inodoro, no: queda un hueco, y el empuje se pierde."
+ },
+ {
+  "beat": "b016",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b016.wav",
+  "start": 133.8,
+  "len": 8.04,
+  "text": "El de reborde tiene una funda extra, que entra en el desagüe del inodoro y lo sella. Ese es el que necesitas para el baño."
+ },
+ {
+  "beat": "b017",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b017.wav",
+  "start": 141.84,
+  "len": 8.66,
+  "text": "Esa funda se dobla para adentro cuando lo usas en un lavabo, y sale para afuera en el inodoro. Muchos modelos sirven para las dos cosas."
+ },
+ {
+  "beat": "b018",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b018.wav",
+  "start": 150.5,
+  "len": 9.57,
+  "text": "Y el de acordeón, ese de plástico duro: parece potente, pero es difícil de sellar, y puede rayar la porcelana. Yo no lo recomiendo."
+ },
+ {
+  "beat": "b019",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b019.wav",
+  "start": 160.07,
+  "len": 8.15,
+  "text": "Mi consejo: uno de reborde para el inodoro, y uno de copa para lavabos y duchas. Dos herramientas, y resuelves casi todo."
+ },
+ {
+  "beat": "b020",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b020.wav",
+  "start": 168.22,
+  "len": 9.8,
+  "text": "No necesitas gastar mucho: uno bueno cuesta poco. Mira la goma: gruesa, flexible, sin grietas, y con un reborde que se dobla fácil."
+ },
+ {
+  "beat": "b021",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b021.wav",
+  "start": 178.02,
+  "len": 7.02,
+  "text": "Apriétalo en la tienda: tiene que ceder y volver a su forma. Si está duro como una piedra, déjalo en el estante."
+ },
+ {
+  "beat": "b022",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b022.wav",
+  "start": 185.04,
+  "len": 9.51,
+  "text": "Antes de empezar: prepárate. Toallas viejas en el piso, guantes de goma, y las ventanas abiertas. El agua que salpica no es agradable."
+ },
+ {
+  "beat": "b023",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b023.wav",
+  "start": 194.55,
+  "len": 7.98,
+  "text": "El agua es clave. El destapador necesita agua para empujar. Si hay poca, agrega más con un balde, hasta cubrir la goma."
+ },
+ {
+  "beat": "b024",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b024.wav",
+  "start": 202.53,
+  "len": 8.53,
+  "text": "Pero si el agua está al borde, saca un poco con un vaso, para que no se desborde cuando metas el destapador. El nivel justo es cubrir la copa."
+ },
+ {
+  "beat": "b025",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b025.wav",
+  "start": 211.06,
+  "len": 8.55,
+  "text": "En lavabos y tinas, tapa el rebosadero con un trapo mojado. Si no, la presión se escapa por ese agujero, y el destapador no trabaja."
+ },
+ {
+  "beat": "b026",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b026.wav",
+  "start": 219.61,
+  "len": 7.15,
+  "text": "Primero, mételo inclinado, para que escape el aire de adentro de la copa. Si queda aire atrapado, se amortigua el golpe."
+ },
+ {
+  "beat": "b027",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b027.wav",
+  "start": 226.76,
+  "len": 9.6,
+  "text": "Apóyalo bien, centrado sobre el desagüe, con el borde sellado. Y el primer empujón, suave: es para expulsar el aire, no para saltar."
+ },
+ {
+  "beat": "b028",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b028.wav",
+  "start": 236.36,
+  "len": 9.27,
+  "text": "Después, bombea con ritmo firme: empuja hacia abajo, y tira hacia arriba sin despegar el borde. De diez a quince veces seguidas."
+ },
+ {
+  "beat": "b029",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b029.wav",
+  "start": 245.63,
+  "len": 9.46,
+  "text": "Y ojo: el tirón es tan importante como el empujón. Muchos solo empujan, y nunca aflojan el tapón. Es el vaivén lo que lo rompe."
+ },
+ {
+  "beat": "b030",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b030.wav",
+  "start": 255.09,
+  "len": 8.25,
+  "text": "Cuando el tapón se va, escuchas un gorgoteo y el agua baja de golpe. Ahí paras, y haces una prueba con medio balde de agua."
+ },
+ {
+  "beat": "b031",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b031.wav",
+  "start": 263.34,
+  "len": 9.73,
+  "text": "La prueba final: tira la cadena con cuidado. Si el nivel sube mucho, cierra la llave de paso y repite. Si baja normal, todo está bien."
+ },
+ {
+  "beat": "b032",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b032.wav",
+  "start": 273.07,
+  "len": 10.57,
+  "text": "Los errores que veo. Uno: usar el de copa en un inodoro. Dos: poca agua. Tres: no sellar el rebosadero. Cuatro: empujar con violencia."
+ },
+ {
+  "beat": "b033",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b033.wav",
+  "start": 283.64,
+  "len": 8.75,
+  "text": "Empujar con furia no ayuda: salpica, y puedes dañar el sello de cera del inodoro o la junta del piso. Más ritmo que fuerza."
+ },
+ {
+  "beat": "b034",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b034.wav",
+  "start": 292.39,
+  "len": 10.07,
+  "text": "Y cinco: parar muy pronto. Un tapón terco necesita muchas series, a veces cinco o seis tandas de quince, con pausas entre medio."
+ },
+ {
+  "beat": "b035",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b035.wav",
+  "start": 302.46,
+  "len": 9.98,
+  "text": "Y un mito: el bicarbonato con vinagre destapa. Hace espuma, pero un tapón de papel o de pelo no se disuelve así. No pierdas tiempo."
+ },
+ {
+  "beat": "b036",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b036.wav",
+  "start": 312.44,
+  "len": 8.74,
+  "text": "Sirve como limpieza suave de olores, pero no como destapador. Para un tapón de verdad, la herramienta correcta es la que te mostré."
+ },
+ {
+  "beat": "b037",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b037.wav",
+  "start": 321.18,
+  "len": 8.96,
+  "text": "Un aviso de seguridad: si usaste un destapacaños químico antes, no uses el destapador. El agua tiene químicos, y salpica y quema."
+ },
+ {
+  "beat": "b038",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b038.wav",
+  "start": 330.14,
+  "len": 6.79,
+  "text": "En ese caso, hay que esperar, enjuagar mucho con agua, o llamar a un profesional que sepa manejarlo."
+ },
+ {
+  "beat": "b039",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b039.wav",
+  "start": 336.93,
+  "len": 10.05,
+  "text": "Si el destapador no funciona después de varias tandas, pasa a la sonda para inodoros: una varilla flexible con una manivela, y una funda que protege la porcelana."
+ },
+ {
+  "beat": "b040",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b040.wav",
+  "start": 346.98,
+  "len": 10.44,
+  "text": "Algo que debes saber: la sonda y el destapador funcionan en cualquier tubería, pero con cuidado en tubos viejos de hierro o de barro, que pueden estar frágiles."
+ },
+ {
+  "beat": "b041",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b041.wav",
+  "start": 357.42,
+  "len": 9.18,
+  "text": "Se mete despacio, se gira la manivela cuando sientes resistencia, y el cable engancha o rompe el tapón. Luego, se retira."
+ },
+ {
+  "beat": "b042",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b042.wav",
+  "start": 366.6,
+  "len": 8.14,
+  "text": "A veces sale un montón de papel, y otras, un juguete o un objeto que alguien tiró sin querer. Siempre es una sorpresa."
+ },
+ {
+  "beat": "b043",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b043.wav",
+  "start": 374.74,
+  "len": 8.41,
+  "text": "No uses un perchero doblado: raya la porcelana, y atasca más. La sonda de inodoro es barata, y es la herramienta correcta."
+ },
+ {
+  "beat": "b044",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b044.wav",
+  "start": 383.15,
+  "len": 11.24,
+  "text": "En un lavabo o ducha, usa la copa, con el rebosadero tapado y el agua cubriendo el borde. La técnica es la misma: ritmo firme, empujando y tirando."
+ },
+ {
+  "beat": "b045",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b045.wav",
+  "start": 394.39,
+  "len": 7.9,
+  "text": "En una pileta de cocina doble, tapa el otro desagüe con un trapo mojado, para que la presión vaya al lado que estás destapando."
+ },
+ {
+  "beat": "b046",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b046.wav",
+  "start": 402.29,
+  "len": 9.56,
+  "text": "Un tapón de grasa es distinto de uno de pelo: la grasa se afloja con agua caliente, y el pelo con sonda. Elige según lo que sospechas."
+ },
+ {
+  "beat": "b047",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b047.wav",
+  "start": 411.85,
+  "len": 9.92,
+  "text": "Después de usar el destapador, límpialo: se enjuaga en el inodoro con agua limpia, y se deja escurrir. Y se guarda en un balde, con un poco de desinfectante."
+ },
+ {
+  "beat": "b048",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b048.wav",
+  "start": 421.77,
+  "len": 8.48,
+  "text": "Y lávate las manos con jabón, aunque hayas usado guantes. Lo que sale de un tapón es sucio, y la higiene es parte del trabajo."
+ },
+ {
+  "beat": "b049",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b049.wav",
+  "start": 430.25,
+  "len": 7.57,
+  "text": "Cómo evitar que vuelva: menos papel higiénico por vez, nada de toallitas ni algodones, y rejillas en todos los desagües."
+ },
+ {
+  "beat": "b050",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b050.wav",
+  "start": 437.82,
+  "len": 8.46,
+  "text": "Un papel muy grueso o mucho junto forma un tapón. Es mejor tirar la cadena dos veces en lugar de una, y evitar atascos."
+ },
+ {
+  "beat": "b051",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b051.wav",
+  "start": 446.28,
+  "len": 7.51,
+  "text": "Y con niños, enseñar que el inodoro no es una papelera: juguetes, algodones y toallitas son tapones seguros."
+ },
+ {
+  "beat": "b052",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b052.wav",
+  "start": 453.79,
+  "len": 8.51,
+  "text": "Si varios desagües van lentos a la vez, o hay agua que sube por otros lados, el problema está en la línea principal, y requiere un profesional."
+ },
+ {
+  "beat": "b053",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b053.wav",
+  "start": 462.3,
+  "len": 12.36,
+  "text": "Y si ya intentaste con destapador y sonda sin éxito, llama: no sigas forzando, que se puede dañar el sello o los caños. Un plomero con cámara encuentra el origen."
+ },
+ {
+  "beat": "b054",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b054.wav",
+  "start": 474.66,
+  "len": 10.36,
+  "text": "La cámara de inspección muestra el tapón o la raíz que lo causa, y el profesional sabe exactamente dónde actuar. Es más caro que adivinar, pero ahorra rotura."
+ },
+ {
+  "beat": "b055",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b055.wav",
+  "start": 485.02,
+  "len": 8.44,
+  "text": "Pide presupuesto por escrito, y que te muestren qué encontraron. Un buen plomero te enseña la pantalla y te explica con calma."
+ },
+ {
+  "beat": "b056",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b056.wav",
+  "start": 493.46,
+  "len": 9.7,
+  "text": "Resumen: el destapador correcto, el nivel de agua, el sello, el ritmo con empuje y tirón, y paciencia. Con eso, ganas casi siempre."
+ },
+ {
+  "beat": "b057",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b057.wav",
+  "start": 503.16,
+  "len": 6.73,
+  "text": "Un destapador bien usado vale más que una visita de plomero. Y mantiene tu baño en marcha sin gastar un peso."
+ },
+ {
+  "beat": "b058",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b058.wav",
+  "start": 509.89,
+  "len": 8.44,
+  "text": "Y déjalo siempre a mano, en un soporte junto al inodoro. Un tapón no avisa, y tener la herramienta lista evita un mal rato."
+ },
+ {
+  "beat": "b059",
+  "scene": "N",
+  "type": "A",
+  "audio": "D:/Proyectos/video2-wt/pldestapa/out/pldestapa/tramos/b059.wav",
+  "start": 518.33,
+  "len": 11.431,
+  "text": "Si te sirvió, quédate en el canal. En el próximo, tres razones por las que tu inodoro no deja de correr agua, y el arreglo definitivo. Y cuéntame si estabas usando mal el tuyo."
+ }
+]
