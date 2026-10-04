@@ -10,7 +10,7 @@
 //      LLM_USD_IN / LLM_USD_OUT por millón (default 0,16 / 0,47, precio OpenRouter de qwen3.8-flash).
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
 import { env, ROOT } from "../lib/env.mjs";
 import { loadSpec } from "../lib/spec.mjs";
 import { slugPaths } from "../lib/paths.mjs";
@@ -21,41 +21,47 @@ const MODEL = env("LLM_MODEL") || "qwen3.8-flash";
 const USD_IN = Number(env("LLM_USD_IN") || 0.16), USD_OUT = Number(env("LLM_USD_OUT") || 0.47);
 const tot = { in: 0, out: 0, llamadas: 0, seg: 0 };
 
+// Va por `curl` y no por fetch: undici corta a los 300 s sin cabeceras/sin bytes, y un modelo que
+// razona puede pasar más tiempo callado. Sin límite de tiempo salvo LLM_TIMEOUT_S. La clave viaja por
+// variable de entorno (--expand-header), nunca en la línea de comandos.
+function curlStream(body, onLine) {
+  return new Promise((ok, mal) => {
+    const lim = Number(env("LLM_TIMEOUT_S") || 0);
+    const p = spawn("curl", ["-sS", "-N", "--fail-with-body", ...(lim ? ["--max-time", String(lim)] : []), "--variable", "%LLM_CURL_KEY",
+      "--expand-header", "Authorization: Bearer {{LLM_CURL_KEY}}", "-H", "content-type: application/json",
+      "--data-binary", "@-", `${BASE}/chat/completions`], { env: { ...process.env, LLM_CURL_KEY: KEY } });
+    let buf = "", err = "";
+    p.stdout.on("data", (d) => { buf += d; let nl; while ((nl = buf.indexOf("\n")) >= 0) { onLine(buf.slice(0, nl).trim()); buf = buf.slice(nl + 1); } });
+    p.stderr.on("data", (d) => { err += d; });
+    p.on("close", (code) => { if (buf.trim()) onLine(buf.trim()); code === 0 ? ok() : mal(new Error(`curl ${code}: ${err.trim().slice(0, 300)}`)); });
+    p.stdin.end(JSON.stringify(body));
+  });
+}
+
 async function chat(messages, { json = false, maxTokens = 32000 } = {}) {
   if (!KEY) throw new Error("falta LLM_KEY / AIHUBMIX_KEY en .env");
   const t0 = Date.now();
   for (let i = 0; i < 4; i++) {
-    const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), 600_000);
+    let txt = "", u = {}, razona = 0, ultimo = Date.now(), errApi = "";
     try {
-      // STREAM: los modelos que razonan tardan >300 s en mandar la 1ª cabecera y undici corta la espera.
-      const r = await fetch(`${BASE}/chat/completions`, {
-        method: "POST", signal: ctl.signal,
-        headers: { "content-type": "application/json", authorization: `Bearer ${KEY}` },
-        body: JSON.stringify({ model: MODEL, messages, max_tokens: maxTokens, temperature: 0.7, stream: true, stream_options: { include_usage: true }, ...(env("LLM_THINK") === "0" ? { enable_thinking: false } : {}), ...(json ? { response_format: { type: "json_object" } } : {}) }),
+      await curlStream({ model: MODEL, messages, max_tokens: maxTokens, temperature: 0.7, stream: true, stream_options: { include_usage: true },
+        ...(env("LLM_THINK") === "0" ? { enable_thinking: false } : {}), ...(json ? { response_format: { type: "json_object" } } : {}) }, (l) => {
+        if (l.startsWith("{")) { errApi += l; return; }   // error de la API (no SSE)
+        if (!l.startsWith("data:") || l === "data: [DONE]") return;
+        const j = JSON.parse(l.slice(5));
+        txt += j.choices?.[0]?.delta?.content || "";
+        razona += (j.choices?.[0]?.delta?.reasoning_content || "").length;
+        if (j.usage) u = j.usage;
+        if (Date.now() - ultimo > 60_000) { ultimo = Date.now(); console.log(`   … ${((Date.now() - t0) / 1000).toFixed(0)} s: razonó ${razona} car., respondió ${txt.length} car.`); }
       });
-      if (!r.ok) { const body = await r.text(); if (r.status >= 500 || r.status === 429) { await new Promise((s) => setTimeout(s, 2000 * 2 ** i)); continue; } throw new Error(`${r.status} ${body.slice(0, 400)}`); }
-      let txt = "", u = {}, buf = "", razona = 0, ultimo = Date.now();
-      const dec = new TextDecoder();
-      for await (const chunk of r.body) {
-        buf += dec.decode(chunk, { stream: true });
-        let nl;
-        while ((nl = buf.indexOf("\n")) >= 0) {
-          const l = buf.slice(0, nl).trim(); buf = buf.slice(nl + 1);
-          if (!l.startsWith("data:") || l === "data: [DONE]") continue;
-          const j = JSON.parse(l.slice(5));
-          txt += j.choices?.[0]?.delta?.content || "";
-          razona += (j.choices?.[0]?.delta?.reasoning_content || "").length;
-          if (Date.now() - ultimo > 60_000) { ultimo = Date.now(); console.log(`   … ${((Date.now() - t0) / 1000).toFixed(0)} s: razonó ${razona} car., respondió ${txt.length} car.`); }
-          if (j.usage) u = j.usage;
-        }
-      }
       tot.in += u.prompt_tokens || 0; tot.out += u.completion_tokens || 0; tot.llamadas++; tot.seg += (Date.now() - t0) / 1000;
       console.log(`   llm ${MODEL}: ${u.prompt_tokens} in / ${u.completion_tokens} out · ${((Date.now() - t0) / 1000).toFixed(0)} s`);
       return txt;
     } catch (e) {
-      if (i === 3 || /^\d{3} /.test(e.message)) throw e;
-      console.log(`   llm: ${e.cause?.code || e.message} → reintento`);
-    } finally { clearTimeout(to); }
+      if (/insufficient|invalid.*key|40[13]/i.test(errApi + e.message) || i === 3) throw new Error(`${e.message} ${errApi.slice(0, 300)}`);
+      console.log(`   llm: ${e.message} ${errApi.slice(0, 200)} → reintento`);
+      await new Promise((s) => setTimeout(s, 2000 * 2 ** i));
+    }
   }
   throw new Error("el modelo no respondió tras 4 intentos");
 }
