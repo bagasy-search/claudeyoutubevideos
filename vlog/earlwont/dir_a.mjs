@@ -4,12 +4,12 @@ export const SIX = [{ item: "1. cheap imported fillets", price: "→ US catfish"
 const SALES = "a salesman in his fifties in a navy polo shirt and a cap";
 export const SHOTS = [
   // ── MINUTO 1
-  S(0, "", "vl", "m1"),
+  S(0, "", "av", "av"),
   S(0, "He pulled up to my shed in a refrigerated truck", "bi", "b_truck", { p: BI(`${HARBOR}: a white refrigerated box truck with no logo parked by an open-sided seafood shed on the dock, its back door open, ${SALES} stepping down holding a white tray.`), anim: "the salesman steps down from the truck holding the tray" }),
   S(0, "and held out a tray of pretty pink fillets", "bi", "b_tray", { p: BI(`Close view of ${SALES} holding out a white styrofoam tray of pale pink boneless skinless fish fillets toward the camera in ${SHED.split(":")[0]}, a smile on his face, coolers behind.`), anim: "the salesman pushes the tray of fillets toward the camera" }),
   S(0, "No bones, no skin, no smell", "st", "st_fillets.1"),
   S(0, "He said, Earl, you could sell this", "c", "ElCoolerBoard", { props: { title: "the offer", rows: [{ item: "he pays", price: "$2.49/lb" }, { item: "I sell it for", price: "$6.99/lb", hi: true }], every: 30, bed: "b_tray" } }),
-  S(0, "And I said, no thank you", "vl", "m2"),
+  S(0, "And I said, no thank you", "av", "av"),
   S(0, "opened a box", "st", "st_fillets.3"),
   S(0, "than anything else in your cooler", "st", "st_market.5"),
   S(1, "", "av", "av"),
