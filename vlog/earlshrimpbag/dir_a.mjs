@@ -2,11 +2,11 @@
 import { S, BI, HZP, SHED, HARBOR, DECK, STORE, KITCHEN } from "./dir_lib.mjs";
 export const SHOTS = [
   // ── MINUTO 1 ─ ~23 cortes, ninguno >4 s. Abre Earl hablando (vl m1) con la bolsa en la mano.
-  S(0, "", "vl", "m1"),
+  S(0, "", "av", "av"),
   S(0, "And this bag right here", "bi", "b_bagfront", { p: BI(`Close view of a weathered dark-skinned older man's hands holding up a plastic bag of frozen peeled shrimp in ${SHED.split(":")[0]}: the bag front printed in big red and blue letters GULF STYLE SHRIMP with a drawing of a shrimp boat, a clear window showing pale frozen shrimp, crushed ice trays behind.`), anim: "the hands tilt the bag of frozen shrimp toward the camera, the plastic crinkles" }),
   S(0, "in big letters, with a picture", "st", "st_shrimpboat.1"),
   S(0, "Now turn it over", "c", "ElBag3D", { props: { title: "GULF STYLE", lines: ["Ingredients: shrimp, water, salt,", "sodium tripolyphosphate (to retain moisture).", "Contains: shellfish (shrimp).", "Packed for Coastal Catch, Gulfport, MS", "Product of India · Farm Raised"], hi: [4], zoom: "Product of India · Farm Raised", verdict: "not Gulf", flipAt: 8, caption: "turn it over" } }),
-  S(0, "Product of India", "vl", "m2"),
+  S(0, "Product of India", "av", "av"),
   S(1, "", "av", "av"),
   S(1, "and most folks never read it", "bi", "b_cartgrab", { p: BI(`In ${STORE}: a shopper's hand grabbing a bag of frozen shrimp out of the open freezer door and dropping it straight into a shopping cart without looking at it, other groceries in the cart.`), anim: "the hand drops the bag of shrimp into the cart and the freezer door swings closed" }),
   S(1, "A couple of years back", "bi", "b_lab", { p: BI("A small genetics lab bench: gloved hands using a pipette over a rack of small labeled sample tubes, each tube holding a tiny piece of pink cooked shrimp, a printed sample sheet with restaurant numbers, a centrifuge in the back."), anim: "the gloved hand presses the pipette and moves to the next tube" }),
@@ -18,7 +18,7 @@ export const SHOTS = [
   S(2, "and what each one really means", "st", "st_freezer.10"),
   S(2, "Where you can still buy real Gulf", "st", "st_dockmarket.1"),
   S(2, "and how much it should cost you", "bi", "b_dockprice", { p: BI(`A hand-painted plywood sign leaning on a cooler at a shrimp boat dock: FRESH GULF SHRIMP, prices per pound by size written in marker, heads on, a scale hanging beside it, boats behind, ${HARBOR.split(":")[0]}.`), anim: "the sign rocks slightly in the breeze off the water" }),
-  S(2, "And I'll show you the shrimp", "vl", "m3"),
+  S(2, "And I'll show you the shrimp", "av", "av"),
   S(3, "", "bi", "b_ingredclose", { p: BI("Close view of the back of a plastic shrimp bag under a fluorescent light, the printed ingredient line clearly readable: Shrimp, water, salt, sodium tripolyphosphate (to retain moisture)."), anim: "the bag tilts and the light glints across the printed ingredients" }),
   S(3, "that means you're paying shrimp prices", "bi", "b_skilletwater", { p: BI(`On an old gas stove in ${KITCHEN.split(":")[0]}: a black cast iron skillet full of small pale shrimp sitting in a puddle of milky white water instead of browning, steam rising, a wooden spoon resting on the edge.`), anim: "the milky water bubbles around the shrimp in the skillet" }),
   S(3, "I'll get to that one", "av", "av"),

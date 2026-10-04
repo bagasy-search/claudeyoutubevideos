@@ -1,0 +1,44 @@
+{
+ "m1": {
+  "m1.mp4": {
+   "win": 2.98,
+   "labios": {
+    "corr": 0.912,
+    "lag": 0,
+    "c0": 0.912,
+    "ok": true
+   },
+   "score": 5,
+   "verd": "⛔ REGENERAR",
+   "line": "dice: \"31 years I ran a shrimp boat and a Biloxi.\" · de más: and · falta: thirty one out of · cara ✓ (1) · luz ✓ · labios ✓ corr 0.912 lag 0s",
+   "swin": 2.98,
+   "salto": {
+    "t": 0.5,
+    "peak": 2.8,
+    "base": 2,
+    "ratio": 1.4
+   }
+  }
+ },
+ "m2": {
+  "m2.mp4": {
+   "win": 2.08,
+   "labios": {
+    "corr": 0.979,
+    "lag": 0,
+    "c0": 0.979,
+    "ok": true
+   },
+   "score": 4,
+   "verd": "⛔ REGENERAR",
+   "line": "dice: \"I left of India, farm raised.\" · de más: i left · falta: product · 1 palabra(s) de más (¿repitió?) · cara ✓ (1) · luz ✓ · labios ✓ corr 0.979 lag 0s",
+   "swin": 2.08,
+   "salto": {
+    "t": 0.27,
+    "peak": 1.2,
+    "base": 1.1,
+    "ratio": 1.2
+   }
+  }
+ }
+}

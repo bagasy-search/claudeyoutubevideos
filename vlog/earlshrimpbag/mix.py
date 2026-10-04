@@ -22,7 +22,8 @@ def add(x, at, gain=1.0, dur=None, fade=0.0):
     e = min(N, i0 + len(x))
     if e > i0: mix[i0:e] += x[: e - i0] * gain
 voice = load("earlshrimpbag.wav", 1); add(np.repeat(voice, 2, 1), 0.0)
-bed = load("sfx/earlshrimpbag_bed.m4a"); add(bed, 0.0, 1.0, fade=0.6)
+# sin música de fondo (creador 3-oct)
+# bed = load("sfx/earlshrimpbag_bed.m4a"); add(bed, 0.0, 1.0, fade=0.6)
 for a in FOLEY: add(load(a["src"]), a["from"] / FPS, 1.0, a["dur"] / FPS, 0.15)
 cache = {}
 for a in SFX:
