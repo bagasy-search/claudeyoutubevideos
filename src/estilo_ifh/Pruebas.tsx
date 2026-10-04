@@ -3,7 +3,7 @@ import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig, Easing } from "remotion";
 import { loadFont } from "@remotion/google-fonts/NanumPenScript";
 import { Personaje, TINTA } from "./Personaje";
-import { Acabado, FondoCalle, FondoCuarto, FondoDesierto, FondoEscondite } from "./Fondos";
+import { Acabado, CAM_CALLE, CAM_ESC, FondoCalle, FondoCuarto, FondoDesierto, FondoEscondite, enPiso } from "./Fondos";
 
 const { fontFamily: MANO } = loadFont();
 const W = 1920, H = 1080;
@@ -42,12 +42,14 @@ export const Prueba1Calle: React.FC = () => {
   const t = f - 66;
   const z = interpolate(t, [0, 234], [1.04, 1.1], { easing: ease });
   const px = interpolate(t, [0, 234], [30, -40], { easing: ease });
-  const caminaX = interpolate(t, [0, 120], [-120, 860], { ...clamp, easing: Easing.out(Easing.sin) });
+  const wx = interpolate(t, [0, 120], [1.0, 5.2], { ...clamp, easing: Easing.out(Easing.sin) });
   const camina = t < 112;
   const mira = t < 120 ? 0 : interpolate(t, [120, 140, 165, 185], [0, -1, -1, 1], clamp);
   const habla = t > 192 && t < 232;
   const saluda = t > 196;
-  const pajaros = Array.from({ length: 5 }).map((_, i) => ({ x: -100 + (t * (3.2 + i * 0.4)) + i * 90, y: 210 + i * 18 + Math.sin(t / 8 + i) * 8 }));
+  const pj = enPiso(CAM_CALLE, [wx, wx < 1.8 ? 0.15 : 0, 7.7]);
+  const sombraFin = enPiso(CAM_CALLE, [wx - 1.6, 0, 5.6]);
+  const pajaros = Array.from({ length: 5 }).map((_, i) => ({ x: 300 + (t * (2.4 + i * 0.3)) + i * 70, y: 250 + i * 14 + Math.sin(t / 8 + i) * 6 }));
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <Camara z={z} x={px}>
@@ -55,11 +57,11 @@ export const Prueba1Calle: React.FC = () => {
         <Capa>
           {pajaros.map((p, i) => {
             const a = Math.sin(t / 2.4 + i) * 8;
-            return <path key={i} d={`M${p.x - 14},${p.y - a} Q${p.x - 6},${p.y - 6} ${p.x},${p.y} Q${p.x + 6},${p.y - 6} ${p.x + 14},${p.y - a}`} fill="none" stroke="#4a3540" strokeWidth={3} strokeLinecap="round" />;
+            return <path key={i} d={`M${p.x - 14},${p.y - a} Q${p.x - 6},${p.y - 6} ${p.x},${p.y} Q${p.x + 6},${p.y - 6} ${p.x + 14},${p.y - a}`} fill="none" stroke="#4a3540" strokeWidth={2.2} strokeLinecap="round" />;
           })}
           {/* sombra larga del personaje (sol bajo a la derecha) */}
-          <ellipse cx={caminaX - 110} cy={752} rx={120} ry={9} fill="#3d2733" opacity={0.25} />
-          <Personaje x={caminaX} y={752} s={0.95} pelo={{ tipo: "gorro", color: "#d9762b", color2: "#b85c1b" }} campera="#3d5a73" camina={camina}
+          <path d={`M${pj.x},${pj.y} L${sombraFin.x},${sombraFin.y}`} stroke="#3b2550" strokeWidth={pj.s * 40} opacity={0.32} strokeLinecap="round" />
+          <Personaje x={pj.x} y={pj.y} s={pj.s} luzLado={1} tinte="#ffb46b" tinteK={0.12} pelo={{ tipo: "gorro", color: "#d9762b", color2: "#b85c1b" }} campera="#3d5a73" camina={camina}
             mira={mira} habla={habla} expr={t > 150 && t < 192 ? "sorpresa" : "neutral"} brazos={saluda ? "saludo" : "abajo"} seed={3} />
         </Capa>
       </Camara>
@@ -84,6 +86,8 @@ export const Prueba2Escondite: React.FC = () => {
   const luz = 0.85 + Math.sin(f / 3) * 0.04 + (f % 53 < 3 ? -0.35 : 0);
   const A = { pelo: { tipo: "melena" as const, color: "#2a2422" }, campera: "#4c6b3a", seed: 11 };
   const B = { pelo: { tipo: "rodete" as const, color: "#7b3f8e" }, campera: "#c18b2e", remera: "#3b3b3b", seed: 23 };
+  const pA = enPiso(CAM_ESC, [-0.6, 0, 2.2]), pB = enPiso(CAM_ESC, [1.0, 0, 2.6]);
+  const luzE = { luzLado: 1 as const, tinte: "#ffc277", tinteK: 0.18 };
   let escena: React.ReactNode;
   if (f < 110) {
     const z = interpolate(f, [0, 110], [1.0, 1.04]);
@@ -91,8 +95,8 @@ export const Prueba2Escondite: React.FC = () => {
       <Camara z={z}>
         <FondoEscondite luz={luz} />
         <Capa>
-          <Personaje x={760} y={860} s={0.95} {...A} habla={f > 8 && f < 100} brazos="gesto" expr="neutral" mira={0.7} />
-          <Personaje x={1180} y={860} s={0.95} {...B} mira={-0.8} brazos="abajo" expr="neutral" />
+          <Personaje x={pA.x} y={pA.y} s={pA.s} {...luzE} {...A} habla={f > 8 && f < 100} brazos="gesto" expr="neutral" mira={0.7} />
+          <Personaje x={pB.x} y={pB.y} s={pB.s} {...luzE} {...B} mira={-0.8} brazos="abajo" expr="neutral" />
         </Capa>
       </Camara>
     );
@@ -101,10 +105,10 @@ export const Prueba2Escondite: React.FC = () => {
     const z = interpolate(t, [0, 90], [1, 1.08], { easing: ease });
     escena = (
       <>
-        <Camara z={2.1} x={-200} y={240} blur={9}><FondoEscondite luz={luz} /></Camara>
+        <Camara z={2.2} x={-60} y={150} blur={10}><FondoEscondite luz={luz} /></Camara>
         <Camara z={z}>
           <Capa>
-            <Personaje x={960} y={1500} s={3.3} {...A} habla={t > 26 && t < 70} expr="picaro" mira={0.2} sinPiernas />
+            <Personaje x={960} y={1900} s={4.7} {...luzE} solapas linea={4} {...A} habla={t > 26 && t < 70} expr="picaro" mira={0.2} sinPiernas />
           </Capa>
         </Camara>
       </>
@@ -115,8 +119,8 @@ export const Prueba2Escondite: React.FC = () => {
       <Camara z={1.04}>
         <FondoEscondite luz={luz} />
         <Capa>
-          <Personaje x={760} y={860} s={0.95} {...A} expr="nervioso" mira={0.8} brazos="abajo" />
-          <Personaje x={1180} y={860} s={0.95} {...B} habla={t > 6 && t < 88} brazos="cruzados" expr="enojado" mira={-0.9} />
+          <Personaje x={pA.x} y={pA.y} s={pA.s} {...luzE} {...A} expr="nervioso" mira={0.8} brazos="abajo" />
+          <Personaje x={pB.x} y={pB.y} s={pB.s} {...luzE} {...B} habla={t > 6 && t < 88} brazos="cruzados" expr="enojado" mira={-0.9} />
         </Capa>
       </Camara>
     );
@@ -160,7 +164,7 @@ export const Prueba3Streamer: React.FC = () => {
         <FondoCuarto />
         <AbsoluteFill style={{ background: `rgba(60,255,120,${verde})`, mixBlendMode: "overlay" }} />
         <Capa>
-          <Personaje x={860} y={1300} s={2.25} pelo={{ tipo: "gorra", color: "#2f6fb3", color2: "#1f4f85" }} campera="#3a3d44" remera="#e9e6df"
+          <Personaje x={860} y={1580} s={3.4} luzLado={-1} tinte="#cfd9ff" tinteK={0.1} solapas linea={4} pelo={{ tipo: "gorra", color: "#2f6fb3", color2: "#1f4f85" }} campera="#3a3d44" remera="#e9e6df"
             auriculares habla={(f > 12 && f < 140) || (f > don + 44 && f < 290)} expr={expr} mira={f < don ? 0 : -0.4} brazos={f > don + 40 ? "gesto" : "manos"} sinPiernas seed={7} />
         </Capa>
       </Camara>
@@ -239,19 +243,19 @@ const Camioneta: React.FC<{ f: number; children: React.ReactNode }> = ({ f, chil
 
 export const Prueba4Ruta: React.FC = () => {
   const f = useCurrentFrame();
-  const t = f * 6;
+  const t = f * 0.9;
   const bump = Math.sin(f / 2.2) * 2.2 + (f % 70 < 6 ? Math.sin((f % 70) / 6 * Math.PI) * -12 : 0);
   const z = interpolate(f, [0, 300], [1.0, 1.06]);
   const habla1 = f > 10 && f < 130; // acompañante
   const habla2 = f > 150 && f < 270; // conductor
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
-      <Camara z={1.12} y={-40}><FondoDesierto t={t} /></Camara>
+      <Camara z={1.0}><FondoDesierto t={t} /></Camara>
       <Camara z={z} y={bump}>
         <Camioneta f={f}>
-          <Personaje x={1330} y={930} s={1.55} pelo={{ tipo: "rodete", color: "#7b3f8e" }} campera="#c18b2e" remera="#3b3b3b" habla={habla1}
+          <Personaje x={1330} y={960} s={1.85} luzLado={1} tinte="#fff0c8" tinteK={0.08} solapas linea={3} pelo={{ tipo: "rodete", color: "#7b3f8e" }} campera="#c18b2e" remera="#3b3b3b" habla={habla1}
             expr={habla1 ? "feliz" : "neutral"} mira={-0.8} brazos="gesto" sinPiernas seed={23} />
-          <Personaje x={610} y={930} s={1.55} pelo={{ tipo: "gorro", color: "#d9762b", color2: "#b85c1b" }} campera="#3d5a73" habla={habla2}
+          <Personaje x={610} y={960} s={1.85} luzLado={1} tinte="#fff0c8" tinteK={0.08} solapas linea={3} pelo={{ tipo: "gorro", color: "#d9762b", color2: "#b85c1b" }} campera="#3d5a73" habla={habla2}
             expr={habla2 ? "neutral" : "picaro"} mira={f > 140 ? 0.6 : 0} brazos="volante" sinPiernas seed={3} />
           {/* volante */}
           <g transform={`rotate(${Math.sin(f / 18) * 6} 610 640)`}>

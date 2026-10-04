@@ -1,341 +1,426 @@
-// Fondos "pintados" 100% SVG: tinta irregular + cel shading + degradés de aerógrafo.
+// Fondos v2 — pintados con el Motor3D: perspectiva real, luz direccional con cel shading,
+// sombras proyectadas, manchas de luz, bruma por distancia, mugre y temblor de línea.
 import React from "react";
-import { TINTA } from "./Personaje";
+import {
+  Ambiente, Arbol, Cam, Cara, Caja, CaraInfo, Filtros, H, LINEA, Mugre, Pasto, SombraCaja, V3, Ventanas, W,
+  add, alPiso, mix, mul, norm, proyectar, pts, quad, rnd,
+} from "./Motor3D";
 
-const W = 1920, H = 1080;
-// pseudo-azar determinista
-export const rnd = (i: number) => { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
-const L = { stroke: TINTA, strokeWidth: 3, strokeLinejoin: "round" as const, strokeLinecap: "round" as const };
+const ALTO_U = 1.75 / 344; // metros por unidad de Personaje
+export const enPiso = (cam: Cam, p: V3) => { const q = proyectar(cam, p); return { x: q.x, y: q.y, s: (cam.f * ALTO_U) / q.z }; };
 
 // Grano + viñeta comunes (encima de todo)
-export const Acabado: React.FC<{ vig?: number; id: string }> = ({ vig = 0.55, id }) => (
+export const Acabado: React.FC<{ vig?: number; id: string; tinte?: string; tinteOp?: number }> = ({ vig = 0.55, id, tinte, tinteOp = 0 }) => (
   <svg width={W} height={H} style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
     <defs>
       <radialGradient id={`vg${id}`} cx="50%" cy="48%" r="75%">
-        <stop offset="55%" stopColor="#000" stopOpacity={0} />
-        <stop offset="100%" stopColor="#120a06" stopOpacity={vig} />
+        <stop offset="50%" stopColor="#000" stopOpacity={0} />
+        <stop offset="100%" stopColor="#140a08" stopOpacity={vig} />
       </radialGradient>
-      <filter id={`gr${id}`}><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={4} /><feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0.09 0" /></filter>
+      <filter id={`gr${id}`}><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={4} /><feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0.07 0" /></filter>
     </defs>
+    {tinte && <rect width={W} height={H} fill={tinte} opacity={tinteOp} style={{ mixBlendMode: "soft-light" }} />}
     <rect width={W} height={H} filter={`url(#gr${id})`} />
     <rect width={W} height={H} fill={`url(#vg${id})`} />
   </svg>
 );
 
-// Ventanas en grilla
-const Ventanas: React.FC<{ x: number; y: number; cols: number; rows: number; w: number; h: number; gx: number; gy: number; luz?: string; seed?: number }> =
-  ({ x, y, cols, rows, w, h, gx, gy, luz = "#f6d58a", seed = 0 }) => (
-    <g>
-      {Array.from({ length: cols * rows }).map((_, i) => {
-        const c = i % cols, r = Math.floor(i / cols); const xx = x + c * (w + gx), yy = y + r * (h + gy);
-        const on = rnd(i + seed) > 0.72;
-        return (
-          <g key={i}>
-            <rect x={xx} y={yy} width={w} height={h} fill={on ? luz : "#3c4a57"} {...L} strokeWidth={2.4} />
-            {!on && <path d={`M${xx + 3},${yy + h - 4} L${xx + w * 0.6},${yy + 3}`} stroke="#9fb3c2" strokeWidth={5} opacity={0.35} />}
-            <path d={`M${xx + w / 2},${yy} V${yy + h} M${xx},${yy + h / 2} H${xx + w}`} stroke={TINTA} strokeWidth={1.6} opacity={0.7} />
-            <rect x={xx - 4} y={yy + h} width={w + 8} height={6} fill="#d9cdb8" {...L} strokeWidth={2} />
-          </g>
-        );
-      })}
-    </g>
-  );
+/* ═══════════════════════════ 1. CALLE AL ATARDECER ═══════════════════════════ */
+export const CAM_CALLE: Cam = { pos: [0, 1.6, 0], yaw: 0.3, pitch: -0.035, f: 1000 };
+const AMB_CALLE: Ambiente = {
+  luz: norm([0.6, 0.33, 0.75]), calido: "#ffb46b", frio: "#5b4a8a",
+  bruma: "#f0b99a", brumaDesde: 14, brumaHasta: 110, sombraCol: "#3b2550", sombraOp: 0.38,
+};
+const EDIF_IZQ = [
+  { z0: 1, z1: 9, h: 9.5, c: "#b8674c", t: "#7e3f2f" }, { z0: 9, z1: 16, h: 7, c: "#d8bb8f", t: "#a88a63" },
+  { z0: 16, z1: 25, h: 12, c: "#6f8c7d", t: "#4c665a" }, { z0: 25, z1: 33, h: 8.5, c: "#c98d5b", t: "#9a6539" },
+  { z0: 33, z1: 46, h: 14, c: "#a9a29e", t: "#7d7672" }, { z0: 46, z1: 60, h: 10, c: "#b8674c", t: "#7e3f2f" },
+  { z0: 60, z1: 80, h: 16, c: "#c7b49a", t: "#957f64" },
+];
+const EDIF_DER = [
+  { z0: 4, z1: 14, h: 8, c: "#7d8fa6", t: "#56677d" }, { z0: 14, z1: 22, h: 11, c: "#c79a6b", t: "#94693f" },
+  { z0: 22, z1: 34, h: 7.5, c: "#9c5a4a", t: "#6d3a2f" }, { z0: 34, z1: 48, h: 13, c: "#d7c6a8", t: "#a6937a" },
+  { z0: 48, z1: 70, h: 9, c: "#8a9a86", t: "#647361" },
+];
+const TOLDO = ["#3f7d6b", "#c4473a", "#e1b44c", "#3e5f93", "#7b4d7e", "#c4473a", "#3f7d6b"];
 
-/* ───────────────────────── CALLE AL AMANECER ───────────────────────── */
-export const FondoCalle: React.FC = () => {
-  const edif = [
-    { x: -20, w: 380, h: 470, c: "#b5664a", t: "#8e4a35" },
-    { x: 360, w: 300, h: 380, c: "#d7b98d", t: "#b4966b" },
-    { x: 660, w: 420, h: 430, c: "#6f8a7c", t: "#536c60" },
-    { x: 1080, w: 330, h: 500, c: "#c98c5a", t: "#a46c3f" },
-    { x: 1410, w: 530, h: 410, c: "#a7a3a0", t: "#85807c" },
-  ];
-  const base = 640;
+const Fachada: React.FC<{ cam: Cam; c: CaraInfo; e: (typeof EDIF_IZQ)[0]; i: number; lado: 1 | -1 }> = ({ cam, c, e, i, lado }) => {
+  if (c.nombre !== (lado === 1 ? "der" : "izq")) {
+    if (c.nombre === "frente") return <Ventanas cam={cam} c={c} cols={Math.max(1, Math.floor(c.ancho / 1.6))} filas={Math.floor((c.alto - 3.4) / 2.6)} mx={0.6} my={0.5} vw={0.9} vh={1.3} seed={i * 91} desdeY={3.4} />;
+    return null;
+  }
+  const n = Math.max(1, Math.floor(c.ancho / 1.7));
+  const pisoAlto = 3.4;
+  const toldo = TOLDO[i % TOLDO.length];
+  const P = (u: number, v: number, out = 0): V3 => add(add(add(c.o, mul(c.u, u)), mul(c.v, v)), mul(c.n, out));
   return (
-    <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute", inset: 0 }}>
-      <defs>
-        <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#7d93b8" /><stop offset="0.45" stopColor="#e9b4a2" /><stop offset="1" stopColor="#f7d7a4" />
-        </linearGradient>
-        <radialGradient id="sol" cx="78%" cy="38%" r="40%"><stop offset="0" stopColor="#fff3cf" stopOpacity={0.95} /><stop offset="1" stopColor="#ffd7a0" stopOpacity={0} /></radialGradient>
-        <linearGradient id="calz" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#5d5a5c" /><stop offset="1" stopColor="#3a3739" /></linearGradient>
-        <linearGradient id="sombraEdif" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stopColor="#2b1a2a" stopOpacity={0} /><stop offset="1" stopColor="#2b1a2a" stopOpacity={0.35} /></linearGradient>
-        <linearGradient id="bruma" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#f7d7a4" stopOpacity={0} /><stop offset="1" stopColor="#f7d7a4" stopOpacity={0.55} /></linearGradient>
-      </defs>
-      <rect width={W} height={H} fill="url(#cielo)" />
-      <rect width={W} height={H} fill="url(#sol)" />
-      {/* nubes */}
-      {[[260, 150, 1.2], [880, 110, 0.9], [1500, 190, 1.1]].map(([x, y, s], i) => (
-        <g key={i} transform={`translate(${x} ${y}) scale(${s})`} opacity={0.75}>
-          <path d="M-120,20 Q-110,-20 -60,-10 Q-40,-45 10,-25 Q50,-50 90,-15 Q140,-15 130,20 Z" fill="#fbe2cf" />
-          <path d="M-120,20 Q-20,30 130,20" stroke="#e1a49a" strokeWidth={6} opacity={0.6} fill="none" />
-        </g>
+    <g>
+      <Mugre cam={cam} c={c} n={30} seed={i * 17} col={mix(e.t, "#000000", 0.3)} />
+      {/* cornisa entre planta baja y pisos */}
+      <Cara cam={cam} p={[P(0, pisoAlto), P(c.ancho, pisoAlto), P(c.ancho, pisoAlto + 0.25, 0.15), P(0, pisoAlto + 0.25, 0.15)]} fill={mix(e.t, "#ffffff", 0.1)} trazo={1.6} />
+      <Ventanas cam={cam} c={c} cols={n} filas={Math.max(1, Math.floor((c.alto - pisoAlto - 0.8) / 2.6))} mx={0.6} my={0.6} vw={0.95} vh={1.35} seed={i * 53} desdeY={pisoAlto} />
+      {/* vidriera */}
+      <Cara cam={cam} p={quad(c.o, c.u, c.v, 0.5, c.ancho - 0.5, 0.25, 2.5)} fill={mix("#2e4352", c.color, 0.2)} trazo={1.8} />
+      {[0.3, 0.55].map((k, j) => <Cara key={j} cam={cam} p={[P(0.7 + k * c.ancho * 0.6, 0.3), P(1.3 + k * c.ancho * 0.6, 0.3), P(2.1 + k * c.ancho * 0.6, 2.4), P(1.5 + k * c.ancho * 0.6, 2.4)]} fill="#d6e6ee" op={0.18} trazo={0} />)}
+      <Cara cam={cam} p={quad(c.o, c.u, c.v, c.ancho * 0.45, c.ancho * 0.45 + 1, 0, 2.3)} fill="#5a3a2a" trazo={1.8} />
+      {/* toldo inclinado + rayas */}
+      <Cara cam={cam} p={[P(0.3, 2.85), P(c.ancho - 0.3, 2.85), P(c.ancho - 0.3, 2.45, 1.1), P(0.3, 2.45, 1.1)]} fill={mix(toldo, "#ffb46b", 0.15)} trazo={1.8} />
+      {Array.from({ length: Math.floor(c.ancho / 0.6) }).map((_, k) => k % 2 === 0 && (
+        <Cara key={k} cam={cam} p={[P(0.3 + k * 0.6, 2.85), P(0.6 + k * 0.6, 2.85), P(0.6 + k * 0.6, 2.45, 1.1), P(0.3 + k * 0.6, 2.45, 1.1)]} fill="#fff6e8" op={0.35} trazo={0} />
       ))}
-      {/* skyline lejano en bruma */}
-      <g fill="#c99a9a" opacity={0.55}>
-        {Array.from({ length: 18 }).map((_, i) => { const w = 70 + rnd(i) * 90, h = 120 + rnd(i + 9) * 260; return <rect key={i} x={i * 112 - 30} y={base - 230 - h} width={w} height={h + 240} />; })}
-      </g>
-      {/* grúa */}
-      <g stroke="#a77f86" strokeWidth={5} fill="none" opacity={0.7}>
-        <path d="M1620,90 V420 M1500,110 H1790 M1620,90 L1520,110 M1620,90 L1780,110" />
-        <path d="M1740,110 V170" strokeWidth={2} />
-      </g>
-      <rect y={200} width={W} height={base - 200} fill="url(#bruma)" />
-      {/* edificios */}
-      {edif.map((e, i) => {
-        const top = base - e.h;
-        return (
-          <g key={i}>
-            <rect x={e.x} y={top} width={e.w} height={e.h} fill={e.c} {...L} />
-            {/* ladrillos sugeridos */}
-            {Array.from({ length: 14 }).map((_, k) => <path key={k} d={`M${e.x + 20 + rnd(k + i * 20) * (e.w - 60)},${top + 30 + rnd(k * 3 + i) * (e.h - 160)} h${16 + rnd(k) * 20}`} stroke={e.t} strokeWidth={3} opacity={0.7} />)}
-            <rect x={e.x - 8} y={top - 16} width={e.w + 16} height={20} fill={e.t} {...L} />
-            <rect x={e.x} y={top} width={e.w} height={e.h} fill="url(#sombraEdif)" />
-            <Ventanas x={e.x + 34} y={top + 50} cols={Math.floor((e.w - 40) / 70)} rows={Math.max(1, Math.floor((e.h - 200) / 95))} w={46} h={60} gx={24} gy={35} seed={i * 50} />
-            {/* toldo + vidriera en planta baja */}
-            <path d={`M${e.x + 14},${base - 150} h${e.w - 28} l18,46 h${-(e.w + 8)} Z`} fill={["#3f7d6b", "#c4473a", "#e1b44c", "#3e5f93", "#7b4d7e"][i]} {...L} />
-            {Array.from({ length: Math.floor(e.w / 40) }).map((_, k) => <path key={k} d={`M${e.x + 14 + k * 40},${base - 150} l${10},46`} stroke="#fff" strokeWidth={9} opacity={0.25} />)}
-            <rect x={e.x + 30} y={base - 100} width={e.w - 60} height={100} fill="#2f4250" {...L} />
-            <path d={`M${e.x + 50},${base - 4} L${e.x + 120},${base - 96}`} stroke="#cfe3ea" strokeWidth={16} opacity={0.22} />
-            <rect x={e.x + e.w / 2 - 26} y={base - 92} width={52} height={92} fill="#5b3b2a" {...L} />
-          </g>
-        );
-      })}
-      {/* vereda */}
-      <rect y={base} width={W} height={130} fill="#cdb79c" {...L} />
-      {Array.from({ length: 16 }).map((_, i) => <path key={i} d={`M${i * 130 - 40},${base} L${i * 130 - 90},${base + 130}`} stroke="#a58f75" strokeWidth={2.4} />)}
-      <path d={`M0,${base + 30} H${W}`} stroke="#a58f75" strokeWidth={2} />
-      {/* cordón */}
-      <rect y={base + 130} width={W} height={22} fill="#e6dccb" {...L} />
-      {/* calzada */}
-      <rect y={base + 152} width={W} height={H - base - 152} fill="url(#calz)" />
-      {/* senda peatonal en perspectiva */}
-      {Array.from({ length: 9 }).map((_, i) => { const x0 = 980 + i * 70; return <path key={i} d={`M${x0},${base + 162} l40,0 l${70 + i * 18},${H - base - 162} l-70,0 Z`} fill="#eae6dc" opacity={0.92} />; })}
-      <path d={`M0,${base + 300} H900`} stroke="#e8c45d" strokeWidth={8} strokeDasharray="70 50" />
-      {/* faroles + sombras largas */}
-      {[180, 760, 1640].map((x, i) => (
-        <g key={i}>
-          <path d={`M${x},${base + 110} L${x - 420},${base + 132}`} stroke="#3d2733" strokeWidth={14} opacity={0.25} />
-          <path d={`M${x},${base + 110} V${base - 260}`} stroke="#2e3439" strokeWidth={10} />
-          <path d={`M${x},${base - 260} q0,-26 34,-26`} stroke="#2e3439" strokeWidth={7} fill="none" />
-          <path d={`M${x + 22},${base - 286} h34 l-6,18 h-22 Z`} fill="#3b434a" {...L} strokeWidth={2.4} />
-        </g>
-      ))}
-      {/* árboles jóvenes en maceteros */}
-      {[470, 1270].map((x, i) => (
-        <g key={i}>
-          <path d={`M${x - 330},${base + 110} Q${x - 160},${base + 125} ${x},${base + 112}`} stroke="#3d2733" strokeWidth={26} opacity={0.18} fill="none" />
-          <rect x={x - 34} y={base + 70} width={68} height={44} fill="#8b6a4e" {...L} />
-          <path d={`M${x},${base + 70} V${base - 110}`} stroke="#5b3e2a" strokeWidth={8} />
-          <ellipse cx={x} cy={base - 170} rx={70} ry={95} fill="#6e8b45" {...L} />
-          <ellipse cx={x + 22} cy={base - 140} rx={40} ry={55} fill="#56703a" opacity={0.9} />
-          <ellipse cx={x - 24} cy={base - 210} rx={26} ry={30} fill="#9ab565" opacity={0.85} />
-        </g>
-      ))}
-      {/* cables */}
-      <path d="M0,140 Q500,250 1000,170 T1920,210" stroke="#3a3138" strokeWidth={3} fill="none" />
-      <path d="M0,170 Q520,290 1000,205 T1920,250" stroke="#3a3138" strokeWidth={2.4} fill="none" />
-      {/* auto estacionado */}
-      <g transform={`translate(1500 ${base + 230})`}>
-        <path d="M-180,40 Q-185,-10 -150,-20 L-100,-70 Q-60,-90 40,-88 Q110,-86 140,-30 L185,-18 Q205,0 200,40 Z" fill="#9b3b32" {...L} />
-        <path d="M-90,-62 L-60,-20 H40 L40,-78 Q-40,-80 -90,-62 Z M58,-76 L60,-20 H125 Q105,-70 58,-76 Z" fill="#33505e" {...L} strokeWidth={2.4} />
-        <circle cx={-110} cy={42} r={30} fill="#1f1e20" {...L} /><circle cx={120} cy={42} r={30} fill="#1f1e20" {...L} />
-        <circle cx={-110} cy={42} r={11} fill="#8a8a8a" /><circle cx={120} cy={42} r={11} fill="#8a8a8a" />
-        <path d="M-160,0 H190" stroke="#ffb0a0" strokeWidth={5} opacity={0.45} />
-      </g>
-      {/* luz rasante cálida */}
-      <rect width={W} height={H} fill="#ffb978" opacity={0.08} />
-    </svg>
+      <Cara cam={cam} p={[P(0.3, 2.45, 1.1), P(c.ancho - 0.3, 2.45, 1.1), P(c.ancho - 0.3, 2.2, 1.1), P(0.3, 2.2, 1.1)]} fill={mix(toldo, "#000000", 0.25)} trazo={1.6} />
+      {/* cartel (sin texto legible) */}
+      {i % 2 === 0 && <Cara cam={cam} p={quad(c.o, c.u, c.v, 1, c.ancho - 1, 2.95, 3.3)} fill={mix("#efe6d2", c.color, 0.2)} trazo={1.4} />}
+    </g>
   );
 };
 
-/* ───────────────────────── ESCONDITE SUBTERRÁNEO ───────────────────────── */
-export const FondoEscondite: React.FC<{ luz: number }> = ({ luz }) => {
-  const piso = 690;
+export const FondoCalle: React.FC = () => {
+  const cam = CAM_CALLE, amb = AMB_CALLE;
+  const sol = proyectar(cam, add(cam.pos, mul(amb.luz, 1000)));
+  const postes = [6, 18, 30, 44, 60];
+  const arboles = [11.5, 27, 40];
   return (
     <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute", inset: 0 }}>
+      <Filtros id="calle" temblor={1.4} />
       <defs>
-        <radialGradient id="lamp" cx="45%" cy="22%" r="62%"><stop offset="0" stopColor="#ffd98a" stopOpacity={0.75 * luz} /><stop offset="0.5" stopColor="#e7a253" stopOpacity={0.18 * luz} /><stop offset="1" stopColor="#1a0e08" stopOpacity={0.55} /></radialGradient>
-        <linearGradient id="pisoG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#8d8573" /><stop offset="1" stopColor="#4c463d" /></linearGradient>
+        <linearGradient id="cieloC" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#8f9fd0" /><stop offset="0.35" stopColor="#c9a7c4" /><stop offset="0.62" stopColor="#f2b9a0" /><stop offset="1" stopColor="#f9d4a0" />
+        </linearGradient>
+        <radialGradient id="solC" cx={sol.x} cy={sol.y} r={900} gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#fff4d6" stopOpacity={0.95} /><stop offset="0.25" stopColor="#ffd39a" stopOpacity={0.5} /><stop offset="1" stopColor="#ffb07a" stopOpacity={0} />
+        </radialGradient>
+        <linearGradient id="asfalto" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stopColor="#4a4650" /><stop offset="1" stopColor="#9a8a8e" /></linearGradient>
       </defs>
-      {/* pared de tablas */}
-      <rect width={W} height={piso} fill="#7a4a36" />
-      {Array.from({ length: 24 }).map((_, i) => (
-        <g key={i}>
-          <rect x={i * 82} y={0} width={82} height={piso} fill={["#7f4c37", "#8a5440", "#6f4231", "#83503b"][i % 4]} {...L} strokeWidth={2.6} />
-          <path d={`M${i * 82 + 20 + rnd(i) * 40},${120 + rnd(i + 3) * 400} q8,6 0,14 q-8,-6 0,-14`} fill="#4b2c1f" opacity={0.8} />
-          <path d={`M${i * 82 + 14},${rnd(i * 5) * 200} v${80 + rnd(i) * 160}`} stroke="#a46a51" strokeWidth={2} opacity={0.5} />
-          <circle cx={i * 82 + 10} cy={30} r={3} fill="#2a1a12" /><circle cx={i * 82 + 72} cy={piso - 40} r={3} fill="#2a1a12" />
-        </g>
-      ))}
-      {/* zócalo */}
-      <rect y={piso - 40} width={W} height={40} fill="#4f3125" {...L} />
-      {/* caño vertical */}
-      <rect x={900} y={0} width={46} height={piso - 40} fill="#8f949a" {...L} />
-      <rect x={900} y={0} width={14} height={piso - 40} fill="#c8ccd0" opacity={0.6} />
-      {[140, 420].map((y) => <rect key={y} x={892} y={y} width={62} height={24} fill="#6d7278" {...L} />)}
-      {/* ventanuco con pinos */}
-      <g>
-        <rect x={420} y={150} width={260} height={150} fill="#1e3247" {...L} strokeWidth={5} />
-        {[460, 520, 590, 650].map((x, i) => <path key={i} d={`M${x},${300} l26,-${90 + i * 10} l26,${90 + i * 10} Z`} fill="#2f5c47" stroke="#16261d" strokeWidth={2} />)}
-        <path d="M420,225 H680 M550,150 V300" stroke={TINTA} strokeWidth={5} />
-      </g>
-      {/* placa con lámpara de emergencia */}
-      <rect x={250} y={180} width={70} height={100} rx={10} fill="#5a6470" {...L} />
-      <ellipse cx={285} cy={230} rx={18} ry={30} fill="#ffcf73" opacity={0.6 + 0.4 * luz} />
-      {/* pizarra con mapa, notas e hilos */}
-      <g>
-        <rect x={1100} y={120} width={720} height={430} fill="#e9dfc6" {...L} strokeWidth={5} />
-        <path d="M1150,200 Q1260,150 1340,230 T1520,260 Q1640,200 1700,300 T1760,470 Q1600,520 1460,470 T1220,500 Q1140,420 1190,330 Z" fill="#e6c34e" stroke="#9c7c1f" strokeWidth={3} />
-        <path d="M1260,260 Q1400,330 1500,300 M1380,400 Q1500,380 1620,430" stroke="#b7932c" strokeWidth={3} fill="none" />
-        {[[1170, 150, -4], [1310, 140, 3], [1660, 150, -2], [1720, 330, 4], [1150, 440, 2], [1560, 470, -3], [1430, 220, 5]].map(([x, y, r], i) => (
-          <g key={i} transform={`rotate(${r} ${x} ${y})`}>
-            <rect x={x} y={y} width={78} height={64} fill={i % 3 === 0 ? "#fdf6dd" : i % 3 === 1 ? "#cfe3ef" : "#f3d0c5"} {...L} strokeWidth={2} />
-            {[0, 1, 2].map((k) => <path key={k} d={`M${x + 10},${y + 18 + k * 14} h${40 + rnd(i + k) * 18}`} stroke="#6c6458" strokeWidth={2.4} />)}
-            <circle cx={x + 39} cy={y + 6} r={5} fill="#c0392b" stroke={TINTA} strokeWidth={1.4} />
+      <g filter="url(#manocalle)">
+        <rect width={W} height={H} fill="url(#cieloC)" />
+        {/* nubes pintadas */}
+        {[[300, 170, 1.3], [820, 95, 1], [1480, 230, 0.9], [1150, 140, 0.7]].map(([x, y, s], i) => (
+          <g key={i} transform={`translate(${x} ${y}) scale(${s})`}>
+            <path d="M-150,25 Q-140,-20 -80,-12 Q-60,-50 -5,-30 Q40,-60 90,-20 Q150,-25 150,25 Z" fill="#f9d9cc" opacity={0.85} />
+            <path d="M-150,25 Q-30,10 150,25 Q60,40 -150,25 Z" fill="#d9979c" opacity={0.6} />
           </g>
         ))}
-        <path d="M1209,156 L1470,226 L1599,476 M1349,146 L1759,336 M1699,156 L1470,226" stroke="#c0392b" strokeWidth={2.4} fill="none" />
+        {/* skyline lejano */}
+        {Array.from({ length: 16 }).map((_, i) => {
+          const z = 140 + rnd(i) * 80, x = -10 + i * 3.2, h = 15 + rnd(i + 5) * 30;
+          return <polygon key={i} points={pts(cam, [[x, 0, z], [x + 3, 0, z], [x + 3, h, z], [x, h, z]])} fill={mix("#b48aa0", "#f0b99a", 0.45)} />;
+        })}
+        {/* grúa lejana */}
+        <polyline points={pts(cam, [[22, 0, 120], [22, 38, 120], [8, 38, 120], [34, 38, 120]])} fill="none" stroke="#a37d92" strokeWidth={3} />
+        <rect width={W} height={H} fill="url(#solC)" />
+        {/* piso: calzada + veredas */}
+        <Cara cam={cam} p={[[1.8, 0, 0.8], [9.8, 0, 0.8], [9.8, 0, 300], [1.8, 0, 300]]} fill="url(#asfalto)" trazo={0} />
+        <Caja cam={cam} amb={amb} x0={-1.5} x1={1.8} y1={0.15} z0={0.5} z1={300} col="#cdb59a" trazo={1.6} />
+        <Caja cam={cam} amb={amb} x0={9.8} x1={13} y1={0.15} z0={0.5} z1={300} col="#cdb59a" trazo={1.6} />
+        {/* juntas de vereda */}
+        {Array.from({ length: 40 }).map((_, i) => <polyline key={i} points={pts(cam, [[-1.5, 0.151, 1.5 + i * 1.6], [1.8, 0.151, 1.5 + i * 1.6]])} stroke="#9d876d" strokeWidth={1.3} />)}
+        {Array.from({ length: 30 }).map((_, i) => <polyline key={`d${i}`} points={pts(cam, [[9.8, 0.151, 2 + i * 1.8], [13, 0.151, 2 + i * 1.8]])} stroke="#9d876d" strokeWidth={1.3} />)}
+        {/* grietas en asfalto */}
+        {Array.from({ length: 14 }).map((_, i) => { const z = 3 + rnd(i) * 30, x = 2.4 + rnd(i * 3) * 6.5; return <polyline key={i} points={pts(cam, [[x, 0.01, z], [x + 0.4, 0.01, z + 0.5], [x + 0.2, 0.01, z + 1.1], [x + 0.7, 0.01, z + 1.6]])} fill="none" stroke="#2d2a30" strokeWidth={1.2} opacity={0.6} />; })}
+        {/* líneas de carril */}
+        {Array.from({ length: 30 }).map((_, i) => <Cara key={i} cam={cam} p={[[5.72, 0.01, 2 + i * 4], [5.88, 0.01, 2 + i * 4], [5.88, 0.01, 4 + i * 4], [5.72, 0.01, 4 + i * 4]]} fill="#e8c35b" trazo={0} />)}
+        {/* senda peatonal */}
+        {Array.from({ length: 10 }).map((_, i) => <Cara key={i} cam={cam} p={[[2.1 + i * 0.78, 0.012, 6.5], [2.5 + i * 0.78, 0.012, 6.5], [2.5 + i * 0.78, 0.012, 9], [2.1 + i * 0.78, 0.012, 9]]} fill="#ece6da" op={0.9} trazo={0} />)}
+        {/* sombras proyectadas de edificios de la derecha sobre la calle */}
+        {EDIF_DER.map((e, i) => <SombraCaja key={i} cam={cam} amb={amb} x0={13} x1={19} y1={e.h} z0={e.z0} z1={e.z1} />)}
+        {/* sombras de postes/árboles */}
+        {postes.map((z, i) => <polygon key={i} points={pts(cam, [[1.3, 0.16, z], [1.45, 0.16, z], alPiso([1.45, 6, z], amb.luz, 0.16), alPiso([1.3, 6, z], amb.luz, 0.16)])} fill={amb.sombraCol} opacity={0.3} />)}
+        {/* edificios */}
+        {[...EDIF_DER].reverse().map((e, i) => (
+          <Caja key={`r${i}`} cam={cam} amb={amb} x0={13} x1={19} y1={e.h} z0={e.z0} z1={e.z1} col={e.c} techo={e.t}
+            deco={(c) => <Fachada cam={cam} c={c} e={e} i={i + 20} lado={-1} />} />
+        ))}
+        {[...EDIF_IZQ].reverse().map((e, i) => (
+          <Caja key={`l${i}`} cam={cam} amb={amb} x0={-8} x1={-1.5} y1={e.h} z0={e.z0} z1={e.z1} col={e.c} techo={e.t}
+            deco={(c) => <Fachada cam={cam} c={c} e={e} i={EDIF_IZQ.length - i} lado={1} />} />
+        ))}
+        {/* cornisas superiores */}
+        {EDIF_IZQ.map((e, i) => <Cara key={i} cam={cam} p={[[-1.5, e.h, e.z0], [-1.5, e.h, e.z1], [-1.1, e.h + 0.3, e.z1], [-1.1, e.h + 0.3, e.z0]]} fill={mix(e.t, "#ffb46b", 0.3)} trazo={1.6} />)}
+        {/* pasto crecido al pie de las fachadas (nadie corta nada) */}
+        <Pasto cam={cam} amb={amb} desde={[-1.35, 0.15, 3]} hasta={[-1.35, 0.15, 40]} n={260} alto={0.55} col="#8a8a3e" seed={3} ancho={0.35} />
+        <Pasto cam={cam} amb={amb} desde={[1.75, 0.15, 3]} hasta={[1.75, 0.15, 40]} n={160} alto={0.35} col="#7d8a3a" seed={9} ancho={0.12} />
+        <Pasto cam={cam} amb={amb} desde={[9.9, 0.15, 6]} hasta={[9.9, 0.15, 60]} n={120} alto={0.4} col="#7d8a3a" seed={19} ancho={0.15} />
+        {/* árboles en la vereda */}
+        {[...arboles].reverse().map((z, i) => (
+          <g key={i}>
+            <Caja cam={cam} amb={amb} x0={0.7} x1={1.5} y0={0.15} y1={0.6} z0={z - 0.4} z1={z + 0.4} col="#8b6a4e" trazo={1.4} />
+            <Arbol cam={cam} base={[1.1, 0.6, z]} alto={5.2} radio={1.6} col="#6f8b45" amb={amb} seed={i * 7 + 2} />
+          </g>
+        ))}
+        {/* faroles */}
+        {[...postes].reverse().map((z, i) => {
+          const b = proyectar(cam, [1.4, 0.15, z]), t = proyectar(cam, [1.4, 6, z]), a = proyectar(cam, [2.4, 6.1, z]);
+          const w = Math.max(2, 2600 / b.z / 10);
+          return (
+            <g key={i}>
+              <path d={`M${b.x},${b.y} L${t.x},${t.y} Q${(t.x + a.x) / 2},${t.y - w * 2} ${a.x},${a.y}`} stroke="#2c3236" strokeWidth={w} fill="none" />
+              <path d={`M${b.x + w * 0.25},${b.y} L${t.x + w * 0.25},${t.y}`} stroke="#ffcf99" strokeWidth={w * 0.25} opacity={0.6} />
+              <ellipse cx={a.x} cy={a.y + w} rx={w * 2.2} ry={w * 0.9} fill="#3a4248" stroke={LINEA} strokeWidth={1.2} />
+            </g>
+          );
+        })}
+        {/* cables */}
+        {[0, 1].map((k) => {
+          const a = proyectar(cam, [1.4, 5.6 - k * 0.4, 6]), b = proyectar(cam, [11.8, 7 - k * 0.4, 30]), c = proyectar(cam, [-1.5, 8, 1]);
+          return <path key={k} d={`M${c.x - 300},${c.y - 40} Q${(c.x + a.x) / 2},${a.y + 90} ${a.x},${a.y} Q${(a.x + b.x) / 2},${(a.y + b.y) / 2 + 60} ${b.x},${b.y}`} stroke="#3a2f38" strokeWidth={2.2 - k * 0.5} fill="none" />;
+        })}
+        {/* auto viejo estacionado */}
+        <Caja cam={cam} amb={amb} x0={8.1} x1={9.7} y0={0.3} y1={1.0} z0={16} z1={20.3} col="#9b3b32" trazo={1.6} />
+        <Caja cam={cam} amb={amb} x0={8.25} x1={9.55} y0={1.0} y1={1.5} z0={17} z1={19.4} col="#3c5865" trazo={1.6} />
+        {[16.8, 19.5].map((z, i) => { const q = proyectar(cam, [8.05, 0.32, z]); return <ellipse key={i} cx={q.x} cy={q.y} rx={1000 / q.z * 0.12} ry={1000 / q.z * 0.32} fill="#1d1c1f" />; })}
+        {/* hojas y papeles sueltos */}
+        {Array.from({ length: 22 }).map((_, i) => { const p = proyectar(cam, [2 + rnd(i) * 7.5, 0.02, 3 + rnd(i * 5) * 18]); const s = 1000 / p.z * 0.12; return <ellipse key={i} cx={p.x} cy={p.y} rx={s} ry={s * 0.4} fill={["#c58a3e", "#a85e33", "#e4d7b8"][i % 3]} opacity={0.85} />; })}
+        {/* resplandor del sol en el fondo de la calle + luz rasante */}
+        <rect width={W} height={H} fill="#ffb46b" opacity={0.07} />
       </g>
-      {/* lámpara colgante enjaulada */}
-      <path d="M760,0 V120" stroke={TINTA} strokeWidth={4} />
-      <g transform="translate(760 150)">
-        <ellipse cx={0} cy={0} rx={30} ry={38} fill="#ffe7a8" opacity={0.6 + 0.4 * luz} />
-        <path d="M-30,-20 Q0,-50 30,-20 V20 Q0,50 -30,20 Z M-30,0 H30 M0,-36 V44" fill="none" stroke={TINTA} strokeWidth={4} />
-      </g>
-      {/* piso de baldosas en perspectiva */}
-      <rect y={piso} width={W} height={H - piso} fill="url(#pisoG)" {...L} />
-      {Array.from({ length: 22 }).map((_, i) => <path key={i} d={`M${960 + (i - 11) * 120},${piso} L${960 + (i - 11) * 330},${H}`} stroke="#3e392f" strokeWidth={2.4} />)}
-      {[730, 790, 870, 970].map((y) => <path key={y} d={`M0,${y} H${W}`} stroke="#3e392f" strokeWidth={2.4} />)}
-      {/* papeles en el piso */}
-      {[[600, 900, 12], [1300, 960, -20], [1500, 820, 30]].map(([x, y, r], i) => <rect key={i} x={x} y={y} width={70} height={46} transform={`rotate(${r} ${x} ${y})`} fill="#efe8d5" {...L} strokeWidth={2} />)}
-      {/* cajones apilados izq */}
-      {[[40, 560, 230, 170], [70, 400, 190, 160], [270, 600, 170, 130]].map(([x, y, w, h], i) => (
-        <g key={i}>
-          <rect x={x} y={y} width={w} height={h} fill={["#a87b4f", "#b98a5b", "#9c7046"][i]} {...L} strokeWidth={3.4} />
-          <path d={`M${x},${y} L${x + w},${y + h} M${x + w},${y} L${x},${y + h}`} stroke="#6f4d2f" strokeWidth={6} />
-          <rect x={x} y={y} width={w} height={h} fill="none" {...L} strokeWidth={3.4} />
-        </g>
-      ))}
-      {/* banco de madera */}
-      <g>
-        <path d="M1240,740 L1640,740 L1600,800 L1200,800 Z" fill="#9c6c47" {...L} />
-        {[0, 1, 2, 3, 4].map((k) => <path key={k} d={`M${1228 + k * 84},${745} l-14,50`} stroke="#6a4630" strokeWidth={3} />)}
-        <path d="M1215,800 v70 M1590,800 v70" stroke={TINTA} strokeWidth={8} />
-      </g>
-      {/* luz y sombra de la lámpara */}
-      <rect width={W} height={H} fill="url(#lamp)" />
     </svg>
   );
 };
 
-/* ───────────────────────── CUARTO DEL STREAMER ───────────────────────── */
-export const FondoCuarto: React.FC = () => (
-  <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute", inset: 0 }}>
-    <defs>
-      <linearGradient id="pared" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#8b8f95" /><stop offset="1" stopColor="#686b70" /></linearGradient>
-      <radialGradient id="lampara" cx="74%" cy="40%" r="35%"><stop offset="0" stopColor="#ffd28a" stopOpacity={0.55} /><stop offset="1" stopColor="#ffd28a" stopOpacity={0} /></radialGradient>
-      <linearGradient id="haz" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#fff6dc" stopOpacity={0.5} /><stop offset="1" stopColor="#fff6dc" stopOpacity={0} /></linearGradient>
-    </defs>
-    <rect width={W} height={720} fill="url(#pared)" />
-    {/* esquina */}
-    <path d="M1250,0 V720" stroke="#55585d" strokeWidth={4} />
-    <rect x={1250} width={670} height={720} fill="#4f5257" />
-    {/* piso */}
-    <rect y={720} width={W} height={360} fill="#b9b3a7" {...L} />
-    {Array.from({ length: 16 }).map((_, i) => <path key={i} d={`M${i * 140 - 200},${720} L${i * 200 - 700},${H}`} stroke="#8e887d" strokeWidth={2.4} />)}
-    {[790, 890].map((y) => <path key={y} d={`M0,${y} H${W}`} stroke="#8e887d" strokeWidth={2.4} />)}
-    {/* haz de luz de ventana */}
-    <path d="M220,0 L620,0 L900,1080 L300,1080 Z" fill="url(#haz)" opacity={0.6} />
-    {/* puerta con póster */}
-    <rect x={720} y={150} width={300} height={570} fill="#a9aaa9" {...L} strokeWidth={4} />
-    <rect x={740} y={170} width={260} height={530} fill="none" stroke="#7f8180" strokeWidth={3} />
-    <circle cx={990} cy={450} r={9} fill="#3a3a3a" />
-    <rect x={790} y={230} width={160} height={110} fill="#2a2b2f" {...L} transform="rotate(-6 870 285)" />
-    <path d="M815,280 h110 M830,300 h80" stroke="#d5d5d5" strokeWidth={6} transform="rotate(-6 870 285)" />
-    {/* póster rojo + reloj */}
-    <rect x={250} y={90} width={150} height={200} fill="#9e2b28" {...L} transform="rotate(3 325 190)" />
-    <circle cx={325} cy={180} r={44} fill="#cf5a43" stroke={TINTA} strokeWidth={2.4} />
-    {/* perchero */}
-    <g stroke="#3a2c25" strokeWidth={8} fill="none" strokeLinecap="round">
-      <path d="M1140,700 V250 M1140,270 l-40,-40 M1140,290 l40,-46 M1140,330 l-34,-20 M1100,710 l40,-18 l40,18" />
-    </g>
-    <path d="M1170,300 q30,40 10,160 l-30,-6 q10,-90 20,-154 Z" fill="#4b5a3d" {...L} />
-    {/* mueble bajo con cajas */}
-    <rect x={60} y={430} width={540} height={290} fill="#c7a77c" {...L} strokeWidth={4} />
-    <rect x={60} y={420} width={560} height={26} fill="#a88a61" {...L} />
-    <rect x={90} y={470} width={220} height={220} fill="#8e7756" {...L} />
-    <rect x={340} y={470} width={230} height={220} fill="#b79669" {...L} />
-    <rect x={110} y={530} width={180} height={110} fill="#d8c19a" {...L} />
-    <path d="M110,560 H290" stroke="#a58c65" strokeWidth={3} />
-    <rect x={100} y={360} width={130} height={60} fill="#5d5f63" {...L} />
-    <rect x={260} y={390} width={170} height={30} fill="#efe9dc" {...L} strokeWidth={2} transform="rotate(-3 345 405)" />
-    {/* cama a la derecha */}
-    <path d="M1300,560 L1920,520 L1920,900 L1260,900 Z" fill="#3e4a46" {...L} strokeWidth={4} />
-    <path d="M1320,600 Q1500,540 1700,580 Q1850,610 1920,560 V720 Q1700,760 1500,700 Q1360,670 1300,700 Z" fill="#5f706a" {...L} />
-    <path d="M1400,640 q60,-30 120,0 M1600,660 q50,-26 110,8" stroke="#2f3a37" strokeWidth={3} fill="none" />
-    <rect x={1380} y={500} width={190} height={80} rx={30} fill="#d9d4c4" {...L} />
-    {/* velador */}
-    <path d="M1760,330 h120 l-24,-90 h-72 Z" fill="#d8b26a" {...L} />
-    <path d="M1820,330 V470 M1780,470 h80" stroke={TINTA} strokeWidth={6} />
-    <rect width={W} height={H} fill="url(#lampara)" />
-    {/* medias y envoltorio en el piso */}
-    <path d="M560,960 q40,-20 70,6 q-10,30 -60,20 Z" fill="#6f7a4d" {...L} />
-    <rect x={980} y={930} width={70} height={30} fill="#d8573a" {...L} strokeWidth={2} transform="rotate(14 1015 945)" />
-    <rect width={W} height={H} fill="#2d3540" opacity={0.12} />
-  </svg>
-);
+/* ═══════════════════════════ 2. ESCONDITE (interior 3/4) ═══════════════════════════ */
+export const CAM_ESC: Cam = { pos: [0.4, 1.55, -4.2], yaw: 0.2, pitch: -0.1, f: 1050 };
+const AMB_ESC: Ambiente = { luz: norm([-0.3, 0.9, -0.4]), calido: "#ffc277", frio: "#3d3058", bruma: "#2a1d18", brumaDesde: 30, brumaHasta: 60, sombraCol: "#1a0f14", sombraOp: 0.45 };
+export const LAMPARA: V3 = [0.6, 2.65, 2.6];
 
-/* ───────────────────────── DESIERTO (paneo infinito) ───────────────────────── */
-// tira de 1920 px que se repite; `off` = desplazamiento por capa
-const Colinas: React.FC<{ y: number; amp: number; color: string; seed: number; off: number; borde?: boolean }> = ({ y, amp, color, seed, off, borde = true }) => {
-  const tira = (dx: number) => {
-    let d = `M${dx},${H} L${dx},${y}`;
-    for (let i = 0; i <= 12; i++) {
-      const x = dx + i * 160, yy = y - (Math.sin(i * 1.3 + seed) * 0.5 + 0.5) * amp - rnd(i + seed) * amp * 0.3;
-      d += ` Q${x - 80},${yy - amp * 0.25} ${x},${yy}`;
-    }
-    return d + ` L${dx + 1920},${H} Z`;
-  };
-  const o = -(off % 1920);
+export const FondoEscondite: React.FC<{ luz: number }> = ({ luz }) => {
+  const cam = CAM_ESC, amb = AMB_ESC;
+  const X0 = -4, X1 = 4.5, Z1 = 5.5, Y1 = 3.1;
+  const lamp = proyectar(cam, LAMPARA);
+  // ventanuco alto en la pared izquierda: entra un haz de sol
+  const sol = norm([0.85, -0.55, 0.35]);
+  const ven: V3[] = [[X0, 2.85, 0.6], [X0, 2.85, 1.8], [X0, 2.35, 1.8], [X0, 2.35, 0.6]];
+  const parche = ven.map((p) => { const t = -p[1] / sol[1]; return add(p, mul(sol, t)) as V3; });
+  const tabla = (x: number, k: number) => ["#7f4c37", "#8b5641", "#704332", "#85503b"][k % 4];
   return (
-    <g>
-      <path d={tira(o)} fill={color} stroke={borde ? TINTA : "none"} strokeWidth={2.6} strokeLinejoin="round" />
-      <path d={tira(o + 1920)} fill={color} stroke={borde ? TINTA : "none"} strokeWidth={2.6} strokeLinejoin="round" />
-    </g>
+    <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute", inset: 0 }}>
+      <Filtros id="esc" temblor={1.3} />
+      <defs>
+        <radialGradient id="glowE" cx={lamp.x} cy={lamp.y + 120} r={1100} gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#ffd88f" stopOpacity={0.55 * luz} /><stop offset="0.35" stopColor="#e39a50" stopOpacity={0.18 * luz} /><stop offset="1" stopColor="#0d0608" stopOpacity={0.72} />
+        </radialGradient>
+        <linearGradient id="hazE" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#fff1c9" stopOpacity={0.5} /><stop offset="1" stopColor="#fff1c9" stopOpacity={0.04} /></linearGradient>
+      </defs>
+      <g filter="url(#manoesc)">
+        {/* pared del fondo: tablas */}
+        {Array.from({ length: 14 }).map((_, k) => { const x = X0 + k * 0.62; return <Cara key={k} cam={cam} p={[[x, 0, Z1], [x + 0.62, 0, Z1], [x + 0.62, Y1, Z1], [x, Y1, Z1]]} fill={tabla(x, k)} trazo={1.6} />; })}
+        {/* pared izquierda */}
+        {Array.from({ length: 16 }).map((_, k) => { const z = -4 + k * 0.62; return <Cara key={k} cam={cam} p={[[X0, 0, z], [X0, 0, z + 0.62], [X0, Y1, z + 0.62], [X0, Y1, z]]} fill={mix(tabla(z, k + 1), "#2b1a20", 0.3)} trazo={1.6} />; })}
+        {/* pared derecha */}
+        {Array.from({ length: 16 }).map((_, k) => { const z = -4 + k * 0.62; return <Cara key={`d${k}`} cam={cam} p={[[X1, 0, z + 0.62], [X1, 0, z], [X1, Y1, z], [X1, Y1, z + 0.62]]} fill={mix(tabla(z, k + 2), "#2b1a20", 0.45)} trazo={1.6} />; })}
+        {/* techo */}
+        <Cara cam={cam} p={[[X0, Y1, -4], [X1, Y1, -4], [X1, Y1, Z1], [X0, Y1, Z1]]} fill="#3b2620" trazo={1.6} />
+        {[-2, -0.5, 1, 2.5, 4].map((z) => <Cara key={z} cam={cam} p={[[X0, Y1 - 0.2, z], [X1, Y1 - 0.2, z], [X1, Y1, z + 0.25], [X0, Y1, z + 0.25]]} fill="#5a3a2b" trazo={1.4} />)}
+        {/* nudos, clavos, garabatos */}
+        {Array.from({ length: 40 }).map((_, i) => { const q = proyectar(cam, [X0 + 0.3 + rnd(i) * 8, 0.3 + rnd(i * 3) * 2.6, Z1 - 0.01]); return <ellipse key={i} cx={q.x} cy={q.y} rx={3 + rnd(i) * 4} ry={2} fill="#3d2318" opacity={0.6} />; })}
+        {/* marcas de conteo de días en la pared */}
+        <g stroke="#2b1812" strokeWidth={2} opacity={0.8}>
+          {Array.from({ length: 4 }).map((_, g) => { const o = proyectar(cam, [X0 + 0.5 + g * 0.35, 1.6, Z1 - 0.02]); return <path key={g} d={`M${o.x},${o.y} v24 m6,-24 v24 m6,-24 v24 m6,-24 v24 M${o.x - 3},${o.y + 18} l26,-12`} />; })}
+        </g>
+        {/* zócalo */}
+        <Cara cam={cam} p={[[X0, 0, Z1 - 0.01], [X1, 0, Z1 - 0.01], [X1, 0.3, Z1 - 0.01], [X0, 0.3, Z1 - 0.01]]} fill="#4a2c22" trazo={1.6} />
+        {/* ventanuco con pinos (pared del fondo) */}
+        <Cara cam={cam} p={[[-2.6, 1.3, Z1 - 0.02], [-0.9, 1.3, Z1 - 0.02], [-0.9, 2.3, Z1 - 0.02], [-2.6, 2.3, Z1 - 0.02]]} fill="#26405a" trazo={3} />
+        {[-2.4, -2.0, -1.6, -1.2].map((x, i) => <polygon key={i} points={pts(cam, [[x, 1.3, Z1 - 0.03], [x + 0.18, 1.85 + rnd(i) * 0.3, Z1 - 0.03], [x + 0.36, 1.3, Z1 - 0.03]])} fill="#2f5c47" stroke="#16261d" strokeWidth={1.2} />)}
+        <polyline points={pts(cam, [[-2.6, 1.8, Z1 - 0.04], [-0.9, 1.8, Z1 - 0.04]])} stroke={LINEA} strokeWidth={4} />
+        {/* lámpara de emergencia enjaulada en la pared */}
+        <Cara cam={cam} p={[[-3.3, 1.6, Z1 - 0.02], [-2.9, 1.6, Z1 - 0.02], [-2.9, 2.2, Z1 - 0.02], [-3.3, 2.2, Z1 - 0.02]]} fill="#58626e" trazo={1.8} />
+        {(() => { const q = proyectar(cam, [-3.1, 1.9, Z1 - 0.03]); return <ellipse cx={q.x} cy={q.y} rx={12} ry={20} fill="#ffcf73" opacity={0.6 + 0.4 * luz} />; })()}
+        {/* pizarra con mapa, notas e hilos */}
+        {(() => {
+          const o: V3 = [0.9, 0.9, Z1 - 0.03], u: V3 = [1, 0, 0], v: V3 = [0, 1, 0];
+          const P = (a: number, b: number) => add(add(o, mul(u, a)), mul(v, b));
+          const notas = [[0.2, 1.7], [0.9, 1.75], [2.6, 1.7], [3.1, 1.0], [0.15, 0.3], [2.2, 0.25], [1.5, 1.2]];
+          return (
+            <g>
+              <Cara cam={cam} p={quad(o, u, v, -0.08, 3.68, -0.08, 2.08)} fill="#5a3b28" trazo={2} />
+              <Cara cam={cam} p={quad(o, u, v, 0, 3.6, 0, 2)} fill="#e9dfc6" trazo={1.6} />
+              <polygon points={pts(cam, [P(0.3, 1.5), P(0.8, 1.75), P(1.4, 1.5), P(2.0, 1.7), P(2.7, 1.45), P(3.3, 1.2), P(3.2, 0.5), P(2.5, 0.3), P(1.7, 0.45), P(0.9, 0.3), P(0.35, 0.7)])} fill="#e3be4c" stroke="#9c7c1f" strokeWidth={2} />
+              <polyline points={pts(cam, [P(0.8, 1.1), P(1.5, 0.9), P(2.4, 1.0), P(3.0, 0.8)])} fill="none" stroke="#b08a2a" strokeWidth={2} />
+              {notas.map(([a, b], i) => <polygon key={i} points={pts(cam, quad(o, u, v, a, a + 0.42, b, b + 0.3))} fill={["#fdf6dd", "#cfe3ef", "#f3d0c5"][i % 3]} stroke={LINEA} strokeWidth={1.2} transform={`rotate(${(rnd(i) - 0.5) * 8} ${proyectar(cam, P(a + 0.2, b + 0.15)).x} ${proyectar(cam, P(a + 0.2, b + 0.15)).y})`} />)}
+              <polyline points={pts(cam, [P(0.41, 2.0), P(1.71, 1.5), P(3.31, 1.3), P(2.41, 0.55), P(0.36, 0.6)])} fill="none" stroke="#c0392b" strokeWidth={1.8} />
+              {notas.map(([a, b], i) => { const q = proyectar(cam, P(a + 0.21, b + 0.27)); return <circle key={i} cx={q.x} cy={q.y} r={4} fill="#c0392b" stroke={LINEA} strokeWidth={1} />; })}
+            </g>
+          );
+        })()}
+        {/* caño vertical en la esquina */}
+        <Caja cam={cam} amb={amb} x0={-0.4} x1={-0.15} y1={Y1} z0={Z1 - 0.35} z1={Z1 - 0.1} col="#8f949a" trazo={1.6} />
+        {/* piso de baldosas */}
+        <Cara cam={cam} p={[[X0, 0, -4], [X1, 0, -4], [X1, 0, Z1], [X0, 0, Z1]]} fill="#8a8170" trazo={0} />
+        {Array.from({ length: 12 }).map((_, i) => <polyline key={i} points={pts(cam, [[X0 + i * 0.75, 0, -4], [X0 + i * 0.75, 0, Z1]])} stroke="#4a4438" strokeWidth={1.5} />)}
+        {Array.from({ length: 14 }).map((_, i) => <polyline key={`z${i}`} points={pts(cam, [[X0, 0, -4 + i * 0.75], [X1, 0, -4 + i * 0.75]])} stroke="#4a4438" strokeWidth={1.5} />)}
+        {Array.from({ length: 10 }).map((_, i) => { const x = X0 + rnd(i) * 8, z = -2 + rnd(i * 4) * 7; return <polyline key={`g${i}`} points={pts(cam, [[x, 0.001, z], [x + 0.2, 0.001, z + 0.15], [x + 0.25, 0.001, z + 0.4]])} fill="none" stroke="#3a352c" strokeWidth={1.2} />; })}
+        {/* mancha de sol en el piso + haz volumétrico */}
+        <polygon points={pts(cam, [ven[0], ven[1], parche[1], parche[0]])} fill="url(#hazE)" opacity={0.35} />
+        <polygon points={pts(cam, [ven[3], ven[2], parche[2], parche[3]])} fill="url(#hazE)" opacity={0.25} />
+        <polygon points={pts(cam, parche)} fill="#ffe7b0" opacity={0.42} />
+        <Cara cam={cam} p={ven} fill="#fff1c9" trazo={2} />
+        {/* cajones apilados (con sombra) */}
+        <SombraCaja cam={cam} amb={amb} x0={-3.9} x1={-2.6} y1={1.6} z0={2.6} z1={3.9} />
+        <Caja cam={cam} amb={amb} x0={-3.9} x1={-2.6} y1={0.8} z0={2.6} z1={3.9} col="#a87b4f" deco={(c) => c.nombre !== "techo" ? <polyline points={pts(cam, [c.o, add(add(c.o, mul(c.u, c.ancho)), mul(c.v, c.alto))])} stroke="#6f4d2f" strokeWidth={5} /> : null} />
+        <Caja cam={cam} amb={amb} x0={-3.8} x1={-2.8} y0={0.8} y1={1.6} z0={2.8} z1={3.8} col="#b98a5b" deco={(c) => c.nombre !== "techo" ? <polyline points={pts(cam, [c.o, add(add(c.o, mul(c.u, c.ancho)), mul(c.v, c.alto))])} stroke="#6f4d2f" strokeWidth={4} /> : null} />
+        <Caja cam={cam} amb={amb} x0={-2.5} x1={-1.7} y1={0.6} z0={3.3} z1={4.1} col="#9c7046" />
+        {/* banco de madera y balde */}
+        <Caja cam={cam} amb={amb} x0={2.3} x1={4.1} y0={0.45} y1={0.55} z0={2.2} z1={2.8} col="#9c6c47" />
+        {[2.4, 4.0].map((x) => <Caja key={x} cam={cam} amb={amb} x0={x - 0.05} x1={x + 0.05} y1={0.45} z0={2.3} z1={2.4} col="#5a3a26" trazo={1.2} />)}
+        <Caja cam={cam} amb={amb} x0={3.2} x1={3.6} y1={0.4} z0={0.6} z1={1.0} col="#7a8a96" />
+        {/* papeles tirados */}
+        {Array.from({ length: 6 }).map((_, i) => { const x = -2 + rnd(i) * 5, z = -1.5 + rnd(i * 2) * 4; return <polygon key={i} points={pts(cam, [[x, 0.005, z], [x + 0.3, 0.005, z + 0.05], [x + 0.28, 0.005, z + 0.25], [x - 0.02, 0.005, z + 0.2]])} fill="#efe8d5" stroke={LINEA} strokeWidth={1} />; })}
+        {/* lámpara colgante */}
+        {(() => { const top = proyectar(cam, [LAMPARA[0], Y1, LAMPARA[2]]); return (
+          <g>
+            <path d={`M${top.x},${top.y} L${lamp.x},${lamp.y - 26}`} stroke={LINEA} strokeWidth={2.4} />
+            <ellipse cx={lamp.x} cy={lamp.y} rx={26} ry={32} fill="#ffe7a8" opacity={0.65 + 0.35 * luz} />
+            <path d={`M${lamp.x - 22},${lamp.y - 14} Q${lamp.x},${lamp.y - 40} ${lamp.x + 22},${lamp.y - 14} V${lamp.y + 14} Q${lamp.x},${lamp.y + 38} ${lamp.x - 22},${lamp.y + 14} Z M${lamp.x - 22},${lamp.y} H${lamp.x + 22} M${lamp.x},${lamp.y - 28} V${lamp.y + 34}`} fill="none" stroke={LINEA} strokeWidth={3} />
+          </g>
+        ); })()}
+      </g>
+      <rect width={W} height={H} fill="url(#glowE)" />
+    </svg>
   );
 };
 
-export const FondoDesierto: React.FC<{ t: number }> = ({ t }) => (
-  <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute", inset: 0 }}>
-    <defs>
-      <linearGradient id="cieloD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#5f9bd1" /><stop offset="0.7" stopColor="#bfe0ee" /><stop offset="1" stopColor="#f0e2c4" /></linearGradient>
-    </defs>
-    <rect width={W} height={H} fill="url(#cieloD)" />
-    <circle cx={1500} cy={170} r={38} fill="#fffbe9" />
-    <circle cx={1500} cy={170} r={90} fill="#fffbe9" opacity={0.25} />
-    {[[300, 180], [900, 130], [1300, 250]].map(([x, y], i) => (
-      <ellipse key={i} cx={((x - t * 0.15) % 2100 + 2100) % 2100 - 100} cy={y} rx={140} ry={26} fill="#fff" opacity={0.7} />
-    ))}
-    {/* mesetas lejanas */}
-    <Colinas y={560} amp={90} color="#d9c2a8" seed={2} off={t * 0.25} borde={false} />
-    <Colinas y={620} amp={110} color="#c8a27a" seed={5} off={t * 0.7} />
-    {/* postes de teléfono */}
-    {Array.from({ length: 4 }).map((_, i) => {
-      const x = ((i * 560 - t * 1.6) % 2240 + 2240) % 2240 - 160;
-      return (
-        <g key={i}>
-          <path d={`M${x},${700} V${330}`} stroke="#5b3f2b" strokeWidth={9} />
-          <path d={`M${x - 50},${360} H${x + 50}`} stroke="#5b3f2b" strokeWidth={7} />
-        </g>
-      );
-    })}
-    <Colinas y={720} amp={70} color="#b5875a" seed={9} off={t * 1.6} />
-    {/* matas secas */}
-    {Array.from({ length: 10 }).map((_, i) => {
-      const x = ((i * 230 - t * 2.6) % 2300 + 2300) % 2300 - 100;
-      return <path key={i} d={`M${x},790 l-18,-40 M${x},790 l0,-50 M${x},790 l20,-38 M${x},790 l-34,-20 M${x},790 l34,-22`} stroke="#6b5a2c" strokeWidth={4} strokeLinecap="round" />;
-    })}
-    <rect y={780} width={W} height={300} fill="#a17650" />
-  </svg>
-);
+/* ═══════════════════════════ 3. CUARTO DEL STREAMER ═══════════════════════════ */
+export const CAM_CUARTO: Cam = { pos: [0.2, 1.25, -1.2], yaw: -0.12, pitch: -0.05, f: 900 };
+const AMB_CUARTO: Ambiente = { luz: norm([-0.7, 0.4, -0.3]), calido: "#ffd9a0", frio: "#405070", bruma: "#5a6070", brumaDesde: 30, brumaHasta: 60, sombraCol: "#151a26", sombraOp: 0.4 };
+export const FondoCuarto: React.FC = () => {
+  const cam = CAM_CUARTO, amb = AMB_CUARTO;
+  const X0 = -2.6, X1 = 3.4, Z1 = 3.6, Y1 = 2.7;
+  const sol = norm([-0.75, -0.45, 0.2]);
+  const ven: V3[] = [[X1, 2.2, 1.0], [X1, 2.2, 2.6], [X1, 0.9, 2.6], [X1, 0.9, 1.0]];
+  const parche = ven.map((p) => { const t = -p[1] / sol[1]; return add(p, mul(sol, t)) as V3; });
+  return (
+    <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute", inset: 0 }}>
+      <Filtros id="cuarto" temblor={1.2} />
+      <defs>
+        <radialGradient id="velador" cx="80%" cy="38%" r="40%"><stop offset="0" stopColor="#ffcf86" stopOpacity={0.45} /><stop offset="1" stopColor="#ffcf86" stopOpacity={0} /></radialGradient>
+        <linearGradient id="hazC" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#f4f8ff" stopOpacity={0.4} /><stop offset="1" stopColor="#f4f8ff" stopOpacity={0.03} /></linearGradient>
+      </defs>
+      <g filter="url(#manocuarto)">
+        <Cara cam={cam} p={[[X0, 0, Z1], [X1, 0, Z1], [X1, Y1, Z1], [X0, Y1, Z1]]} fill="#868b92" trazo={1.8} />
+        <Cara cam={cam} p={[[X0, 0, -2], [X0, 0, Z1], [X0, Y1, Z1], [X0, Y1, -2]]} fill="#6d7179" trazo={1.8} />
+        <Cara cam={cam} p={[[X1, 0, Z1], [X1, 0, -2], [X1, Y1, -2], [X1, Y1, Z1]]} fill="#5c6068" trazo={1.8} />
+        <Cara cam={cam} p={[[X0, Y1, -2], [X1, Y1, -2], [X1, Y1, Z1], [X0, Y1, Z1]]} fill="#a3a7ad" trazo={1.8} />
+        {/* manchas de humedad y garabatos */}
+        <Mugre cam={cam} c={{ nombre: "frente", o: [X0, 0, Z1 - 0.01], u: [1, 0, 0], v: [0, 1, 0], ancho: X1 - X0, alto: Y1, color: "#868b92", n: [0, 0, -1] }} n={40} seed={8} />
+        {/* ventana derecha (luz fría) */}
+        <Cara cam={cam} p={ven} fill="#d9e6f2" trazo={3} />
+        <polyline points={pts(cam, [[X1 - 0.01, 2.2, 1.8], [X1 - 0.01, 0.9, 1.8]])} stroke={LINEA} strokeWidth={3} />
+        {/* piso */}
+        <Cara cam={cam} p={[[X0, 0, -2], [X1, 0, -2], [X1, 0, Z1], [X0, 0, Z1]]} fill="#b5ae9f" trazo={0} />
+        {Array.from({ length: 10 }).map((_, i) => <polyline key={i} points={pts(cam, [[X0 + i * 0.6, 0, -2], [X0 + i * 0.6, 0, Z1]])} stroke="#8a8476" strokeWidth={1.4} />)}
+        {Array.from({ length: 10 }).map((_, i) => <polyline key={`z${i}`} points={pts(cam, [[X0, 0, -2 + i * 0.6], [X1, 0, -2 + i * 0.6]])} stroke="#8a8476" strokeWidth={1.4} />)}
+        <polygon points={pts(cam, parche)} fill="#f2f6ff" opacity={0.35} />
+        <polygon points={pts(cam, [ven[0], ven[1], parche[1], parche[0]])} fill="url(#hazC)" opacity={0.3} />
+        {/* puerta con póster */}
+        <Cara cam={cam} p={[[-0.3, 0, Z1 - 0.02], [0.6, 0, Z1 - 0.02], [0.6, 2.05, Z1 - 0.02], [-0.3, 2.05, Z1 - 0.02]]} fill="#a7a8a6" trazo={2.2} />
+        <Cara cam={cam} p={[[-0.15, 1.2, Z1 - 0.03], [0.45, 1.2, Z1 - 0.03], [0.45, 1.75, Z1 - 0.03], [-0.15, 1.75, Z1 - 0.03]]} fill="#2b2c30" trazo={1.6} />
+        {(() => { const q = proyectar(cam, [0.5, 1.0, Z1 - 0.03]); return <circle cx={q.x} cy={q.y} r={5} fill="#333" />; })()}
+        {/* póster rojo en la pared izquierda del fondo */}
+        <Cara cam={cam} p={[[-2.2, 1.4, Z1 - 0.02], [-1.6, 1.4, Z1 - 0.02], [-1.6, 2.2, Z1 - 0.02], [-2.2, 2.2, Z1 - 0.02]]} fill="#9e2b28" trazo={1.8} />
+        {(() => { const q = proyectar(cam, [-1.9, 1.85, Z1 - 0.03]); return <circle cx={q.x} cy={q.y} r={26} fill="#cf5a43" stroke={LINEA} strokeWidth={1.4} />; })()}
+        {/* perchero con campera */}
+        {(() => { const b = proyectar(cam, [1.1, 0, Z1 - 0.3]), t = proyectar(cam, [1.1, 1.8, Z1 - 0.3]); return (
+          <g stroke="#3a2c25" strokeWidth={5} fill="none" strokeLinecap="round">
+            <path d={`M${b.x},${b.y} L${t.x},${t.y} M${t.x},${t.y + 10} l-26,-24 M${t.x},${t.y + 14} l26,-28 M${b.x - 26},${b.y + 6} L${b.x},${b.y - 10} L${b.x + 26},${b.y + 6}`} />
+            <path d={`M${t.x + 18},${t.y - 8} q22,30 8,120 l-22,-4 q6,-60 14,-116 Z`} fill="#4b5a3d" stroke={LINEA} strokeWidth={1.6} />
+          </g>
+        ); })()}
+        {/* mueble bajo con cajas */}
+        <SombraCaja cam={cam} amb={amb} x0={-2.55} x1={-0.8} y1={0.9} z0={2.6} z1={3.55} />
+        <Caja cam={cam} amb={amb} x0={-2.55} x1={-0.8} y1={0.85} z0={2.6} z1={3.55} col="#c7a77c" deco={(c) => c.nombre === "frente" ? (
+          <g>
+            <Cara cam={cam} p={quad(c.o, c.u, c.v, 0.1, 0.8, 0.1, 0.7)} fill={mix(c.color, "#000000", 0.25)} trazo={1.4} />
+            <Cara cam={cam} p={quad(c.o, c.u, c.v, 0.95, 1.65, 0.1, 0.7)} fill={mix(c.color, "#000000", 0.1)} trazo={1.4} />
+            <Cara cam={cam} p={quad(c.o, c.u, c.v, 0.15, 0.75, 0.15, 0.45)} fill="#d8c19a" trazo={1.2} />
+          </g>) : null} />
+        <Caja cam={cam} amb={amb} x0={-2.4} x1={-1.9} y0={0.85} y1={1.1} z0={2.9} z1={3.4} col="#5d5f63" />
+        <Caja cam={cam} amb={amb} x0={-1.7} x1={-1.1} y0={0.85} y1={0.88} z0={2.9} z1={3.3} col="#efe9dc" trazo={1.2} />
+        {/* cama a la derecha */}
+        <Caja cam={cam} amb={amb} x0={1.6} x1={3.4} y1={0.5} z0={0.6} z1={3.0} col="#3e4a46" />
+        <Caja cam={cam} amb={amb} x0={1.65} x1={3.35} y0={0.5} y1={0.62} z0={0.7} z1={2.9} col="#5f706a" trazo={1.6} />
+        <Caja cam={cam} amb={amb} x0={2.2} x1={3.2} y0={0.62} y1={0.78} z0={2.4} z1={2.85} col="#d9d4c4" trazo={1.6} />
+        {/* velador */}
+        <Caja cam={cam} amb={amb} x0={2.9} x1={3.35} y1={0.6} z0={3.05} z1={3.5} col="#7a5a3e" />
+        {(() => { const q = proyectar(cam, [3.1, 1.0, 3.25]); return <path d={`M${q.x - 30},${q.y} h60 l-14,-46 h-32 Z M${q.x},${q.y} v40`} fill="#d8b26a" stroke={LINEA} strokeWidth={1.8} />; })()}
+        {/* ropa y envoltorio en el piso */}
+        {(() => { const a = proyectar(cam, [-0.6, 0, 1.2]), b = proyectar(cam, [0.8, 0, 0.4]); return (
+          <g>
+            <path d={`M${a.x},${a.y} q30,-14 52,4 q-8,22 -46,14 Z`} fill="#6f7a4d" stroke={LINEA} strokeWidth={1.4} />
+            <rect x={b.x} y={b.y} width={46} height={20} fill="#d8573a" stroke={LINEA} strokeWidth={1.4} transform={`rotate(14 ${b.x} ${b.y})`} />
+          </g>
+        ); })()}
+      </g>
+      <rect width={W} height={H} fill="url(#velador)" />
+      <rect width={W} height={H} fill="#22293a" opacity={0.18} />
+    </svg>
+  );
+};
+
+/* ═══════════════════════════ 4. RUTA DEL DESIERTO (cámara que viaja) ═══════════════════════════ */
+const AMB_DES: Ambiente = { luz: norm([0.5, 0.8, 0.3]), calido: "#fff0c8", frio: "#7a6aa0", bruma: "#e6dccb", brumaDesde: 40, brumaHasta: 420, sombraCol: "#5a3a3a", sombraOp: 0.3 };
+export const FondoDesierto: React.FC<{ t: number }> = ({ t }) => {
+  // la camioneta va hacia la cámara: el mundo de atrás se aleja
+  const avance = t; // metros recorridos
+  const cam: Cam = { pos: [0, 2.6, -8], yaw: 0, pitch: -0.02, f: 1000 };
+  const Z = (z: number) => z + avance; // posición relativa a la cámara
+  const postes = Array.from({ length: 10 }).map((_, i) => i * 40 + 30 - (avance % 40));
+  return (
+    <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute", inset: 0 }}>
+      <Filtros id="des" temblor={1.2} />
+      <defs>
+        <linearGradient id="cieloD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#5c93cc" /><stop offset="0.55" stopColor="#b9dbea" /><stop offset="0.78" stopColor="#efe4cc" /></linearGradient>
+        <linearGradient id="arena" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#d9bb92" /><stop offset="1" stopColor="#a8784e" /></linearGradient>
+      </defs>
+      <g filter="url(#manodes)">
+        <rect width={W} height={H} fill="url(#cieloD)" />
+        <circle cx={1500} cy={170} r={34} fill="#fffbe9" /><circle cx={1500} cy={170} r={95} fill="#fffbe9" opacity={0.22} />
+        {[[260, 190, 1.2], [920, 120, 0.9], [1350, 260, 0.8]].map(([x, y, s], i) => (
+          <g key={i} transform={`translate(${x - avance * 0.4} ${y}) scale(${s})`}>
+            <path d="M-150,25 Q-140,-15 -80,-10 Q-60,-45 -5,-28 Q40,-55 90,-18 Q150,-22 150,25 Z" fill="#fff" opacity={0.75} />
+            <path d="M-150,25 Q0,12 150,25 Q60,38 -150,25 Z" fill="#c9d9e6" opacity={0.7} />
+          </g>
+        ))}
+        {/* mesetas lejanas (fijas: están al infinito) */}
+        <path d="M0,560 L120,520 L300,520 L340,470 L520,470 L560,530 L800,540 L900,500 L1040,500 L1080,545 L1320,540 L1380,480 L1600,480 L1650,535 L1920,530 L1920,620 L0,620 Z" fill="#cdb3a0" opacity={0.75} />
+        <path d="M0,600 Q300,560 600,590 T1200,580 T1920,600 L1920,640 L0,640 Z" fill="#c9a27a" stroke={LINEA} strokeWidth={1.4} />
+        {/* desierto */}
+        <rect y={proyectar(cam, [0, 0, 600]).y} width={W} height={H} fill="url(#arena)" />
+        {/* ruta que se aleja */}
+        <Cara cam={cam} p={[[-4, 0, -6], [4, 0, -6], [4, 0, 900], [-4, 0, 900]]} fill="#5d5658" trazo={0} />
+        <Cara cam={cam} p={[[-4.3, 0, -6], [-4, 0, -6], [-4, 0, 900], [-4.3, 0, 900]]} fill="#c9b79a" trazo={0} />
+        <Cara cam={cam} p={[[4, 0, -6], [4.3, 0, -6], [4.3, 0, 900], [4, 0, 900]]} fill="#c9b79a" trazo={0} />
+        {Array.from({ length: 50 }).map((_, i) => { const z = i * 12 - (avance % 12) - 6; return <Cara key={i} cam={cam} p={[[-0.12, 0.01, z], [0.12, 0.01, z], [0.12, 0.01, z + 5], [-0.12, 0.01, z + 5]]} fill="#efd06a" trazo={0} />; })}
+        {/* matas y piedras al costado */}
+        {Array.from({ length: 40 }).map((_, i) => {
+          const z = ((i * 17 + rnd(i) * 10 - avance) % 680 + 680) % 680 - 6, x = (rnd(i * 3) > 0.5 ? 1 : -1) * (6 + rnd(i * 7) * 30);
+          const q = proyectar(cam, [x, 0, z]); const s = 1000 / q.z;
+          if (q.z < 1) return null;
+          return <path key={i} d={`M${q.x},${q.y} l${-0.5 * s},${-0.8 * s} M${q.x},${q.y} l0,${-1 * s} M${q.x},${q.y} l${0.5 * s},${-0.75 * s} M${q.x},${q.y} l${-0.8 * s},${-0.35 * s} M${q.x},${q.y} l${0.8 * s},${-0.4 * s}`} stroke="#6b5a2c" strokeWidth={Math.max(1, s * 0.06)} strokeLinecap="round" />;
+        })}
+        {/* postes de teléfono a la derecha + cable */}
+        {(() => {
+          const top = postes.map((z) => proyectar(cam, [9, 8, z]));
+          return (
+            <g>
+              <path d={top.map((p, i) => `${i ? "L" : "M"}${p.x},${p.y + 10}`).join(" ")} stroke="#3a2c25" strokeWidth={1.6} fill="none" />
+              {postes.map((z, i) => {
+                const b = proyectar(cam, [9, 0, z]), t2 = top[i]; const w = Math.max(1.5, 1000 / b.z * 0.25);
+                if (b.z < 1) return null;
+                return (
+                  <g key={i}>
+                    <polygon points={pts(cam, [[9, 0, z], [9.2, 0, z], alPiso([9.2, 8, z], AMB_DES.luz), alPiso([9, 8, z], AMB_DES.luz)])} fill="#6a4a3a" opacity={0.25} />
+                    <path d={`M${b.x},${b.y} L${t2.x},${t2.y}`} stroke="#5b3f2b" strokeWidth={w} />
+                    <path d={`M${t2.x - w * 4},${t2.y + w * 2} H${t2.x + w * 4}`} stroke="#5b3f2b" strokeWidth={w * 0.8} />
+                  </g>
+                );
+              })}
+            </g>
+          );
+        })()}
+        {/* calor que sube del asfalto */}
+        <rect y={proyectar(cam, [0, 0, 300]).y - 6} width={W} height={14} fill="#f3e6cf" opacity={0.5} />
+      </g>
+    </svg>
+  );
+};
