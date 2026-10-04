@@ -1,8 +1,8 @@
-// DIRECTOR de hazelsold — helpers. Cada toma: S(p, frase, kind, name, opts)
-//   p = índice de párrafo (_v3/hazelsold_paras.json) · frase = palabras donde ARRANCA la toma dentro del párrafo ("" = inicio)
+// DIRECTOR de hazeljewel — helpers. Cada toma: S(p, frase, kind, name, opts)
+//   p = índice de párrafo (_v3/hazeljewel_paras.json) · frase = palabras donde ARRANCA la toma dentro del párrafo ("" = inicio)
 //   kind: av (avatar InfiniteTalk) · vl (clip agnes 2.5 hablado, minuto 1) · kf (detalle agnes 2.5 keyframe, minuto 1)
 //         hz (foto gpt CON Hazel, /edits; Ken-Burns, nunca v2.0 con su cara) · bi (foto gpt sin Hazel → clip agnes v2.0 `anim`)
-//         st (stock Pexels real, public/broll/hazelsold_st/<name>.mp4) · c (componente Hz*)
+//         st (stock Pexels real, public/broll/hazeljewel_st/<name>.mp4) · c (componente Hz*)
 //   opts: { p: prompt, anim: movimiento agnes v2.0, props, ov: overlay {c, props} }
 export const S = (p, at, kind, name, o = {}) => ({ ...o, prompt: o.p, p, at, kind, name });
 

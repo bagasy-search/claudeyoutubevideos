@@ -1,13 +1,12 @@
 # Guion de VOZ: tags moderados de Fish (voz `hazel`) antepuestos a frases elegidas; NO cambia palabras.
-# python vlog/hazelsold/tag_voz.py guiones/hazelsold.txt guiones/hazelsold_voz.txt
+# python vlog/hazeljewel/tag_voz.py guiones/hazeljewel.txt guiones/hazeljewel_voz.txt
 import re, sys
 src, dst = sys.argv[1], sys.argv[2]
 R = [
- ("[dryly]", r"(Somebody listed it for ten thousand dollars|use them to prop up a wobbly table|The certificate doesn't make it worth more)"),
- ("[sighs]", r"(Most of it was worth less than she paid|This one hurts|This is the one that breaks hearts)"),
- ("[lower, as if sharing a secret]", r"(But there was one thing in that house|Now let me tell you about the tenth thing|Here's a tip)"),
- ("[emphatically]", r"(The asking prices are just wishes|Look at the sold listings\. The market|Look before you let it go)"),
- ("[warmly]", r"(I'm Hazel|That's what she'd want|I read every one)"),
+ ("[softly]", r"(In memory of our dear Samuel|Tell little Mary I will bring her a ribbon when I come home|He never came home)"),
+ ("[warmly]", r"(I'm Hazel|She said her own little girl's name was Mary|I read every one)"),
+ ("[lower, as if sharing a secret]", r"(Now, here's where my heart started beating a little faster|Old ladies hid their best things)"),
+ ("[emphatically]", r"(Twenty dollars at an estate sale|But not all gold is gold)"),
 ]
 out, since, n = [], 9, {}
 for line in open(src, encoding="utf8").read().split("\n"):

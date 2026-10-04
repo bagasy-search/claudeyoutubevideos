@@ -1,8 +1,8 @@
-# Post del avatar RunPod: reel.mp4 → public/avatar_clips/hazelsold/reel30.mp4 (1920x1080, 30/1 CFR, mudo) y LAG por ventana
-# (correlación de la envolvente del audio que devolvió RunPod contra el reel.wav que se le mandó) → _v3/hazelsold_avwin.json.
+# Post del avatar RunPod: reel.mp4 → public/avatar_clips/hazeljewel/reel30.mp4 (1920x1080, 30/1 CFR, mudo) y LAG por ventana
+# (correlación de la envolvente del audio que devolvió RunPod contra el reel.wav que se le mandó) → _v3/hazeljewel_avwin.json.
 # Compuerta: dur(mp4) ≈ dur(reel.wav) (cap medido ~600 s); si viene corto, NO se asume nada: exit 2.
 import json, subprocess, sys, numpy as np, os
-R = "D:/Proyectos/video2-wt/hazelsold/"
+R = "D:/Proyectos/video2-wt/hazeljewel/"
 SRC, WAV = R + "out/avatar/reel.mp4", R + "out/avatar/reel.wav"
 dur = lambda f: float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], capture_output=True, text=True).stdout)
 dm, dw = dur(SRC), dur(WAV)
@@ -16,7 +16,7 @@ def env(f, sr=8000):
     n = len(x) // hop
     return np.sqrt((x[: n * hop].reshape(n, hop) ** 2).mean(1) + 1e-6)
 A, B = env(SRC), env(WAV)
-W = json.load(open(R + "_v3/hazelsold_avwin.json"))
+W = json.load(open(R + "_v3/hazeljewel_avwin.json"))
 lags = []
 for w in W["win"]:
     c0 = int(w["off"] * 100); c1 = int((w["off"] + (w["me"] - w["ms"])) * 100)
@@ -29,8 +29,8 @@ for w in W["win"]:
         r = np.corrcoef(a, b)[0, 1]
         if r > best: best, bl = r, L
     w["lag"] = bl / 100.0; w["corr"] = round(float(best), 3); lags.append(bl / 100.0)
-json.dump(W, open(R + "_v3/hazelsold_avwin.json", "w"), indent=1)
+json.dump(W, open(R + "_v3/hazeljewel_avwin.json", "w"), indent=1)
 print(f"lag por ventana (s): min {min(lags):+.2f} · max {max(lags):+.2f} · mediana {np.median(lags):+.2f} · {len(lags)} ventanas")
-os.makedirs(R + "public/avatar_clips/hazelsold", exist_ok=True)
-subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", SRC, "-an", "-vf", f"scale=1920:1080:flags=lanczos,fps=30,tpad=stop_mode=clone:stop_duration=2,format=yuv420p", "-t", f"{max(dm, dw) + 1:.3f}", "-r", "30", "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", "-g", "30", R + "public/avatar_clips/hazelsold/reel30.mp4"], check=True)
-print("OK public/avatar_clips/hazelsold/reel30.mp4", dur(R + "public/avatar_clips/hazelsold/reel30.mp4"))
+os.makedirs(R + "public/avatar_clips/hazeljewel", exist_ok=True)
+subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", SRC, "-an", "-vf", f"scale=1920:1080:flags=lanczos,fps=30,tpad=stop_mode=clone:stop_duration=2,format=yuv420p", "-t", f"{max(dm, dw) + 1:.3f}", "-r", "30", "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", "-g", "30", R + "public/avatar_clips/hazeljewel/reel30.mp4"], check=True)
+print("OK public/avatar_clips/hazeljewel/reel30.mp4", dur(R + "public/avatar_clips/hazeljewel/reel30.mp4"))
