@@ -1,6 +1,6 @@
 # Acorta los silencios de voz de los primeros 123 s del máster a 0,34 s (el 1er ítem tiene que cerrar antes de 2:00).
 import subprocess, re, numpy as np, sys
-SRC, DST, TMAX, KEEP = "out/hankwolf/master.wav", "public/hankwolf.wav", 123.0, 0.30
+SRC, DST, TMAX, KEEP = "out/hanklynx/master.wav", "public/hanklynx.wav", 123.0, 0.30
 o = subprocess.run(["ffmpeg", "-hide_banner", "-t", str(TMAX), "-i", SRC, "-af", "silencedetect=noise=-30dB:d=0.36", "-f", "null", "-"], capture_output=True, text=True).stderr
 st = [float(x) for x in re.findall(r"silence_start: ([0-9.]+)", o)]; en = [float(x) for x in re.findall(r"silence_end: ([0-9.]+)", o)]
 raw = subprocess.run(["ffmpeg", "-v", "error", "-i", SRC, "-f", "s16le", "-ac", "1", "-ar", "44100", "-"], capture_output=True).stdout
