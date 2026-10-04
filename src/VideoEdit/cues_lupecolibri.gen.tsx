@@ -1,0 +1,85 @@
+// cues_lupecolibri.gen.tsx — GENERADO por scripts/rksafe_build.mjs. NO editar a mano.
+import React from "react";
+import { PullQuote } from "../rksafe/PullQuote";
+import { SceneCallout } from "../rksafe/SceneCallout";
+import { Clip, Foto } from "../rksafe/RayStage";
+import type { TransKind } from "../rksafe/RayTrans";
+import { RayAvatarWin } from "../rksafe/RayAvatarWin";
+
+export type Cue = { key: string; start: number; dur: number; tin?: TransKind; tout?: TransKind; ov?: number; el: (d: number) => React.ReactNode };
+
+export const CUES: Cue[] = [
+  { key: "avatar_0", start: 0, dur: 5.033333333333333, tin: "cut", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w000.mp4" seed={0} durF={d} /> },
+  { key: "imagen_5033", start: 5.033333333333333, dur: 4.033333333333333, tin: "cut", tout: "cut", ov: 10, el: (d) => <Foto src="img/lupecolibri_s1_01.jpg" seed={151} durF={d} /> },
+  { key: "imagen_9067", start: 9.066666666666666, dur: 6.4, tin: "zoom", tout: "cut", ov: 10, el: (d) => <Foto src="img/lupecolibri_s1_02.jpg" seed={272} durF={d} /> },
+  { key: "clip_15467", start: 15.466666666666667, dur: 8.166666666666666, tin: "cut", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_r01.mp4" rate={1} /> },
+  { key: "componente_23633", start: 23.633333333333333, dur: 9.23333, tin: "cut", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s1_03.jpg","at":[45,55],"kicker":"SIN SABER POR QUÉ","label":"Pensaste en alguien","sub":"Tu madre. Tu esposo. Un hijo.","bed":"img/lupecolibri_s1_01_blur.jpg"} as any)} /> },
+  { key: "clip_32867", start: 32.86666666666667, dur: 5, tin: "cut", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_g15.mp4" rate={1} /> },
+  { key: "componente_37867", start: 37.86666666666667, dur: 10, tin: "iris", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s1_05.jpg","at":[55,45],"kicker":"LO QUE DECÍAN LOS VIEJOS","label":"Tres señales de una visita","steps":["Frente a tu cara","En un día que importa","Te deja paz"],"bed":"img/lupecolibri_s1_01_blur.jpg"} as any)} /> },
+  { key: "clip_47867", start: 47.86666666666667, dur: 4.033333333333333, tin: "zoom", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_r02.mp4" rate={1} /> },
+  { key: "avatar_51900", start: 51.9, dur: 2.6333333333333333, tin: "cut", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w001.mp4" seed={1557} durF={d} bed="img/lupecolibri_s1_02_blur.jpg" /> },
+  { key: "clip_54533", start: 54.53333333333333, dur: 5.6, tin: "iris", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_g09.mp4" rate={1} /> },
+  { key: "imagen_60133", start: 60.13333333333333, dur: 8.066666666666666, tin: "cut", tout: "cut", ov: 10, el: (d) => <Foto src="img/lupecolibri_s2_01.jpg" seed={1804} durF={d} /> },
+  { key: "avatar_68200", start: 68.2, dur: 4.6, tin: "cut", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w002.mp4" seed={2046} durF={d} bed="img/lupecolibri_s2_01_blur.jpg" /> },
+  { key: "clip_72800", start: 72.8, dur: 7.2, tin: "cut", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_r03.mp4" rate={1} /> },
+  { key: "componente_80000", start: 80, dur: 4.766666666666667, tin: "cut", tout: "push", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s2_03.jpg","at":[45,60],"kicker":"EL CUADERNITO","label":"Lo que me enseñó mi madre","color":"ok","bed":"img/lupecolibri_s2_01_blur.jpg"} as any)} /> },
+  { key: "avatar_84767", start: 84.76666666666667, dur: 11.166666666666666, tin: "push", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w003.mp4" seed={2543} durF={d} bed="img/lupecolibri_s2_01_blur.jpg" /> },
+  { key: "componente_95933", start: 95.93333333333334, dur: 9, tin: "cut", tout: "push", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s3_02.jpg","at":[50,50],"kicker":"EN MI PUEBLO","label":"Le decían el mensajero","sub":"Va y viene entre este mundo y el otro.","bed":"img/lupecolibri_s3_01_blur.jpg"} as any)} /> },
+  { key: "avatar_104933", start: 104.93333333333334, dur: 5.6, tin: "push", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w004.mp4" seed={3148} durF={d} bed="img/lupecolibri_s2_01_blur.jpg" /> },
+  { key: "clip_110533", start: 110.53333333333333, dur: 7.7, tin: "cut", tout: "push", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_r06.mp4" rate={1} /> },
+  { key: "componente_118233", start: 118.23333333333333, dur: 7, tin: "push", tout: "push", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s3_04.jpg","at":[50,45],"kicker":"NO TODAS LAS VECES","label":"A veces nada más viene a comer","bed":"img/lupecolibri_s3_01_blur.jpg"} as any)} /> },
+  { key: "clip_125233", start: 125.23333333333333, dur: 4.6, tin: "push", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_c18.mp4" rate={1} /> },
+  { key: "imagen_129833", start: 129.83333333333334, dur: 5.233333333333333, tin: "cut", tout: "cut", ov: 10, el: (d) => <Foto src="img/lupecolibri_s1_01.jpg" seed={3895} durF={d} /> },
+  { key: "componente_135067", start: 135.06666666666666, dur: 8, tin: "cut", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s4_02.jpg","at":[55,45],"kicker":"LA PRIMERA","label":"Frente a tu cara, no a la flor","bed":"img/lupecolibri_s4_01_blur.jpg"} as any)} /> },
+  { key: "clip_143067", start: 143.06666666666666, dur: 4.033333333333333, tin: "cut", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_r07.mp4" rate={1} /> },
+  { key: "clip_147100", start: 147.1, dur: 7.4, tin: "cut", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_c03.mp4" rate={1} /> },
+  { key: "avatar_154500", start: 154.5, dur: 3, tin: "cut", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w005.mp4" seed={4635} durF={d} bed="img/lupecolibri_s1_01_blur.jpg" /> },
+  { key: "componente_157500", start: 157.5, dur: 6.433333333333334, tin: "zoom", tout: "cut", ov: 10, el: (d) => <PullQuote durationInFrames={d} {...({"quote":"Cuando un colibrí te mira a los ojos, míralo tú también.","attrib":"— la madre de Lupe","bed":"img/lupecolibri_s4_01_blur.jpg"} as any)} /> },
+  { key: "avatar_163933", start: 163.93333333333334, dur: 10.966666666666667, tin: "iris", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w006.mp4" seed={4918} durF={d} bed="img/lupecolibri_s1_01_blur.jpg" /> },
+  { key: "componente_174900", start: 174.9, dur: 7, tin: "cut", tout: "push", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s5_01.jpg","at":[45,55],"kicker":"LA SEGUNDA","label":"Llega en un día que importa","bed":"img/lupecolibri_s5_01_blur.jpg"} as any)} /> },
+  { key: "clip_181900", start: 181.9, dur: 4.033333333333333, tin: "push", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_r10.mp4" rate={1} /> },
+  { key: "imagen_185933", start: 185.93333333333334, dur: 7.4, tin: "cut", tout: "cut", ov: 10, el: (d) => <Foto src="img/lupecolibri_s1_02.jpg" seed={5578} durF={d} /> },
+  { key: "clip_193333", start: 193.33333333333334, dur: 1.5, tin: "cut", tout: "push", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_c28.mp4" rate={1} /> },
+  { key: "componente_194833", start: 194.83333333333334, dur: 8, tin: "push", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s5_02.jpg","at":[55,55],"kicker":"MI HERMANITO JUANITO","label":"Mi madre lo lloró toda la vida","bed":"img/lupecolibri_s5_01_blur.jpg"} as any)} /> },
+  { key: "clip_202833", start: 202.83333333333334, dur: 8.166666666666666, tin: "cut", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_c31.mp4" rate={1} /> },
+  { key: "componente_211000", start: 211, dur: 9.43333, tin: "wipe", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s5_04.jpg","at":[35,45],"kicker":"EL DÍA DE SU SANTO","label":"Verde, con el pecho rojo","color":"ok","bed":"img/lupecolibri_s5_01_blur.jpg"} as any)} /> },
+  { key: "avatar_220433", start: 220.43333333333334, dur: 4.6, tin: "cut", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w007.mp4" seed={6613} durF={d} bed="img/lupecolibri_s1_02_blur.jpg" /> },
+  { key: "clip_225033", start: 225.03333333333333, dur: 7.8, tin: "cut", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_c25.mp4" rate={1} /> },
+  { key: "clip_232833", start: 232.83333333333334, dur: 6, tin: "wipe", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_p17.mp4" rate={1} /> },
+  { key: "clip_238833", start: 238.83333333333334, dur: 2.6333333333333333, tin: "cut", tout: "push", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_p21.mp4" rate={1} /> },
+  { key: "componente_241467", start: 241.46666666666667, dur: 9, tin: "push", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s5_07.jpg","at":[50,50],"kicker":"DESDE ESE AÑO","label":"Salía a esperarlo","sub":"Cuando venía, sonreía todo el día.","color":"ok","bed":"img/lupecolibri_s5_01_blur.jpg"} as any)} /> },
+  { key: "avatar_250467", start: 250.46666666666667, dur: 10.9, tin: "iris", tout: "push", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w008.mp4" seed={7514} durF={d} bed="img/lupecolibri_s1_02_blur.jpg" /> },
+  { key: "componente_261367", start: 261.3666666666667, dur: 8, tin: "push", tout: "push", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s6_01.jpg","at":[50,55],"kicker":"LA TERCERA","label":"Te deja una paz que no tenías","color":"ok","bed":"img/lupecolibri_s6_01_blur.jpg"} as any)} /> },
+  { key: "clip_269367", start: 269.3666666666667, dur: 4.033333333333333, tin: "push", tout: "push", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_c02.mp4" rate={1} /> },
+  { key: "avatar_273400", start: 273.4, dur: 7.4, tin: "push", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w009.mp4" seed={8202} durF={d} bed="img/lupecolibri_s1_02_blur.jpg" /> },
+  { key: "clip_280800", start: 280.8, dur: 6.233333333333333, tin: "cut", tout: "push", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_r11.mp4" rate={1} /> },
+  { key: "componente_287033", start: 287.03333333333336, dur: 5.6, tin: "push", tout: "cut", ov: 10, el: (d) => <PullQuote durationInFrames={d} {...({"quote":"Hay cosas que no se explican. Se agradecen.","attrib":"— la madre de Lupe","bed":"img/lupecolibri_s6_01_blur.jpg"} as any)} /> },
+  { key: "avatar_292633", start: 292.6333333333333, dur: 4.333333333333333, tin: "zoom", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w010.mp4" seed={8779} durF={d} bed="img/lupecolibri_s1_02_blur.jpg" /> },
+  { key: "componente_296967", start: 296.96666666666664, dur: 9, tin: "cut", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s6_04.jpg","at":[50,50],"kicker":"NUNCA HAY QUE TENERLE MIEDO","label":"Si te lo mandan, es para consolarte","color":"ok","bed":"img/lupecolibri_s6_01_blur.jpg"} as any)} /> },
+  { key: "clip_305967", start: 305.96666666666664, dur: 4.6, tin: "wipe", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_c24.mp4" rate={1} /> },
+  { key: "clip_310567", start: 310.56666666666666, dur: 7.8, tin: "cut", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_c26.mp4" rate={1} /> },
+  { key: "clip_318367", start: 318.3666666666667, dur: 3.6666666666666665, tin: "cut", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_p28.mp4" rate={1} /> },
+  { key: "componente_322033", start: 322.03333333333336, dur: 10, tin: "zoom", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s7_01.jpg","at":[50,50],"kicker":"PARA ESTA SEMANA","label":"Tres cositas","steps":["Siembra una flor roja","No saques el teléfono","Cuéntales a los nietos"],"bed":"img/lupecolibri_s7_01_blur.jpg"} as any)} /> },
+  { key: "componente_332033", start: 332.03333333333336, dur: 8, tin: "cut", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s7_02.jpg","at":[55,60],"kicker":"LA PRIMERA","label":"Una flor de trompetita","sub":"Mejor si era la de esa persona.","color":"ok","bed":"img/lupecolibri_s7_01_blur.jpg"} as any)} /> },
+  { key: "clip_340033", start: 340.03333333333336, dur: 5.2, tin: "cut", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_r14.mp4" rate={1} /> },
+  { key: "clip_345233", start: 345.23333333333335, dur: 7.233333333333333, tin: "cut", tout: "push", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_c27.mp4" rate={1} /> },
+  { key: "componente_352467", start: 352.46666666666664, dur: 8, tin: "push", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s7_04.jpg","at":[55,45],"kicker":"LA SEGUNDA","label":"Dile su nombre","sub":"Gracias por venir.","color":"ok","bed":"img/lupecolibri_s7_01_blur.jpg"} as any)} /> },
+  { key: "avatar_360467", start: 360.46666666666664, dur: 4.033333333333333, tin: "iris", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w011.mp4" seed={10814} durF={d} bed="img/lupecolibri_s1_02_blur.jpg" /> },
+  { key: "imagen_364500", start: 364.5, dur: 8.066666666666666, tin: "wipe", tout: "cut", ov: 10, el: (d) => <Foto src="img/lupecolibri_s7_04.jpg" seed={10935} durF={d} /> },
+  { key: "avatar_372567", start: 372.56666666666666, dur: 6, tin: "wipe", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w012.mp4" seed={11177} durF={d} bed="img/lupecolibri_s7_04_blur.jpg" /> },
+  { key: "clip_378567", start: 378.56666666666666, dur: 7.8, tin: "zoom", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_r16.mp4" rate={1} /> },
+  { key: "avatar_386367", start: 386.3666666666667, dur: 4.6, tin: "wipe", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w013.mp4" seed={11591} durF={d} bed="img/lupecolibri_s7_04_blur.jpg" /> },
+  { key: "imagen_390967", start: 390.96666666666664, dur: 4.7, tin: "cut", tout: "cut", ov: 10, el: (d) => <Foto src="img/lupecolibri_s1_01.jpg" seed={11729} durF={d} /> },
+  { key: "avatar_395667", start: 395.6666666666667, dur: 6.2, tin: "cut", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w014.mp4" seed={11870} durF={d} bed="img/lupecolibri_s1_01_blur.jpg" /> },
+  { key: "clip_401867", start: 401.8666666666667, dur: 5, tin: "wipe", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_c32.mp4" rate={1} /> },
+  { key: "componente_406867", start: 406.8666666666667, dur: 9, tin: "cut", tout: "cut", ov: 10, el: (d) => <SceneCallout durationInFrames={d} {...({"bg":"img/lupecolibri_s8_02.jpg","at":[50,55],"kicker":"CUÉNTAME","label":"¿A ti te ha visitado un colibrí?","sub":"¿En qué día, y en quién pensaste?","bed":"img/lupecolibri_s8_01_blur.jpg"} as any)} /> },
+  { key: "imagen_415867", start: 415.8666666666667, dur: 4.6, tin: "iris", tout: "push", ov: 10, el: (d) => <Foto src="img/lupecolibri_s1_02.jpg" seed={12476} durF={d} /> },
+  { key: "clip_420467", start: 420.46666666666664, dur: 7.6, tin: "push", tout: "cut", ov: 10, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_p04.mp4" rate={1} /> },
+  { key: "avatar_428067", start: 428.06666666666666, dur: 5.4, tin: "cut", tout: "cut", ov: 10, el: (d) => <RayAvatarWin src="broll/lupecolibri/av_w015.mp4" seed={12842} durF={d} bed="img/lupecolibri_s1_02_blur.jpg" /> },
+  { key: "imagen_433467", start: 433.46666666666664, dur: 8, tin: "cut", tout: "cut", ov: 10, el: (d) => <Foto src="img/lupecolibri_s8_03.jpg" seed={13004} durF={d} /> },
+  { key: "clip_441467", start: 441.46666666666664, dur: 2.6666666666666665, tin: "zoom", tout: "cut", ov: 0, el: (d) => <Clip src="broll/lupecolibri_real/lupecolibri_p05.mp4" rate={1} /> },
+];
+
+export const OVERLAYS: Cue[] = [
+
+];
