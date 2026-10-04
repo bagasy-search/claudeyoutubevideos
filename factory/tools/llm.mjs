@@ -27,18 +27,32 @@ async function chat(messages, { json = false, maxTokens = 16000 } = {}) {
   for (let i = 0; i < 4; i++) {
     const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), 600_000);
     try {
+      // STREAM: los modelos que razonan tardan >300 s en mandar la 1ª cabecera y undici corta la espera.
       const r = await fetch(`${BASE}/chat/completions`, {
         method: "POST", signal: ctl.signal,
         headers: { "content-type": "application/json", authorization: `Bearer ${KEY}` },
-        body: JSON.stringify({ model: MODEL, messages, max_tokens: maxTokens, temperature: 0.7, ...(json ? { response_format: { type: "json_object" } } : {}) }),
+        body: JSON.stringify({ model: MODEL, messages, max_tokens: maxTokens, temperature: 0.7, stream: true, stream_options: { include_usage: true }, ...(json ? { response_format: { type: "json_object" } } : {}) }),
       });
-      const body = await r.text();
-      if (!r.ok) { if (r.status >= 500 || r.status === 429) { await new Promise((s) => setTimeout(s, 2000 * 2 ** i)); continue; } throw new Error(`${r.status} ${body.slice(0, 400)}`); }
-      const j = JSON.parse(body);
-      const u = j.usage || {};
+      if (!r.ok) { const body = await r.text(); if (r.status >= 500 || r.status === 429) { await new Promise((s) => setTimeout(s, 2000 * 2 ** i)); continue; } throw new Error(`${r.status} ${body.slice(0, 400)}`); }
+      let txt = "", u = {}, buf = "";
+      const dec = new TextDecoder();
+      for await (const chunk of r.body) {
+        buf += dec.decode(chunk, { stream: true });
+        let nl;
+        while ((nl = buf.indexOf("\n")) >= 0) {
+          const l = buf.slice(0, nl).trim(); buf = buf.slice(nl + 1);
+          if (!l.startsWith("data:") || l === "data: [DONE]") continue;
+          const j = JSON.parse(l.slice(5));
+          txt += j.choices?.[0]?.delta?.content || "";
+          if (j.usage) u = j.usage;
+        }
+      }
       tot.in += u.prompt_tokens || 0; tot.out += u.completion_tokens || 0; tot.llamadas++; tot.seg += (Date.now() - t0) / 1000;
       console.log(`   llm ${MODEL}: ${u.prompt_tokens} in / ${u.completion_tokens} out · ${((Date.now() - t0) / 1000).toFixed(0)} s`);
-      return j.choices[0].message.content;
+      return txt;
+    } catch (e) {
+      if (i === 3 || /^\d{3} /.test(e.message)) throw e;
+      console.log(`   llm: ${e.cause?.code || e.message} → reintento`);
     } finally { clearTimeout(to); }
   }
   throw new Error("el modelo no respondió tras 4 intentos");

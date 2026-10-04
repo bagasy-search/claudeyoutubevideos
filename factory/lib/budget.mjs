@@ -10,7 +10,9 @@ import { env } from "./env.mjs";
 import { run } from "./exec.mjs";
 
 export async function diskFreeGB(letterOrPath) {
-  const p = letterOrPath.length === 1 ? `${letterOrPath}:/` : letterOrPath;
+  // Fuera de Windows (nube) no hay C:/D: → C = el repo, D = la carpeta de trabajo de la fábrica.
+  const nix = { C: env("FACTORY_ROOT_DISK") || process.cwd(), D: env("FACTORY_WORK") || process.cwd() };
+  const p = letterOrPath.length !== 1 ? letterOrPath : process.platform === "win32" ? `${letterOrPath}:/` : nix[letterOrPath.toUpperCase()] || "/";
   const st = await fs.promises.statfs(p);
   return (st.bavail * st.bsize) / 1024 ** 3;
 }
