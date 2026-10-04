@@ -142,7 +142,8 @@ async function direct(slug, { intentos, seguir = false }) {
     const r = correr30(slug);
     const errores = r.log.split("\n").filter((l) => /⛔|GATE|Error|falló|sin segundo plano/.test(l));
     console.log(`── 30_direct intento ${n}: exit ${r.code}\n${errores.slice(0, 25).join("\n")}`);
-    if (r.code === 0) { console.log(`✅ la dirección de ${MODEL} pasó TODAS las compuertas · ${costo()}`); return; }
+    // El exit es el del VIDEO entero (puede fallar 10_voice sin Fish): decide la línea de 30_direct.
+    if (/30_direct ✓ hecha/.test(r.log)) { console.log(`✅ la dirección de ${MODEL} pasó TODAS las compuertas · ${costo()}`); return; }
     if (n === intentos) break;
     // Devuelve a cada tramo sus errores (los que nombran sus pNNN) + los globales.
     const nombres = (k) => new Set(tramos[k].map((l) => l.split("|")[1].trim()));
