@@ -2,7 +2,7 @@
 import { S, BI, HZP, SHED, HARBOR, DECK, STORE, KITCHEN } from "./dir_lib.mjs";
 export const SHOTS = [
   // ── MINUTO 1
-  S(0, "", "vl", "m1"),
+  S(0, "", "av", "av"),
   S(0, "And I wouldn't see this dock again", "st", "st_harbor.1"),
   S(0, "Thirty-one years, five, six nights", "c", "ElNightClock", { props: { from: "3:30 pm", to: "7:00 am", label: "31 years · 5–6 nights a week" } }),
   S(1, "", "bi", "b_storeshrimp", { p: BI(`In ${STORE}: a shopper's hand taking a bag of frozen shrimp from the freezer and dropping it in a cart without a second look.`), anim: "the hand drops the bag in the cart and the freezer door swings shut" }),
@@ -12,11 +12,11 @@ export const SHOTS = [
   S(1, "Every bit of it, told straight", "av", "av"),
   S(2, "", "hz", "h_netbag", { p: HZP("At sunrise on the back deck of a shrimp trawler, he holds up a heavy green mesh net bag stuffed with shrimp, blue crabs and fish high in one fist toward the camera, laughing with his mouth wide open, gulls flying behind, the sun low over the water.", DECK.replace("at night", "at sunrise")) }),
   S(2, "And at the end, I'll do the math", "st", "st_shrimp.1"),
-  S(2, "so you know exactly how much", "vl", "m2"),
+  S(2, "so you know exactly how much", "av", "av"),
   // ── EARL
   S(3, "", "av", "av", { ov: { c: "ElNameTag", props: { name: "Earl", line: "captain of the Lady Beth · 31 years" } } }),
   S(3, "Today I sell what the boats bring in", "st", "st_catch.1"),
-  S(3, "But tonight, we're going out", "vl", "m3"),
+  S(3, "But tonight, we're going out", "av", "av"),
   S(4, "", "bi", "b_oldphoto", { p: BI("An old faded 1960s color snapshot held in a weathered dark hand: a young Black boy about twelve in rubber boots standing on the deck of a shrimp boat next to his father, both squinting in the sun, a net behind them; behind the photo a wooden table in a seafood shed."), anim: "the hand tilts the old photo toward the light" }),
   S(4, "picking shrimp in the summertime", "bi", "b_boypick", { p: BI(`${DECK.replace("at night", "on a hot summer afternoon in the 1960s")}: a young African American boy of about twelve in a t-shirt and white rubber boots kneeling at a sorting table picking shrimp out of the catch beside his African American father.`), anim: "the boy picks shrimp out of the pile and tosses them into a basket" }),
   S(4, "By the time I had my own boat", "av", "av"),
