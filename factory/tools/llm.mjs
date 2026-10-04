@@ -99,7 +99,24 @@ function correr30(slug) {
   return { code: r.status, log: (r.stdout || "") + (r.stderr || "") };
 }
 
-async function direct(slug, { intentos }) {
+// Un GATE crudo ("avatarPctMomentos: midió=3 (min 10)") no le dice al modelo QUÉ cambiar: medido con
+// deepseek-v4-pro, devolvió la MISMA dirección dos veces. Se traduce a una orden concreta.
+function traducir(e) {
+  const m = e.match(/GATE (\w+): midió=([\d.]+) \((?:min ([\d.]+))?(?: · )?(?:max ([\d.]+))?/);
+  if (!m) return e;
+  const [, g, v, min, max] = m;
+  const H = {
+    avatarPctMomentos: () => Number(v) < Number(min)
+      ? `El avatar (presentador hablando a cámara) aparece en ${v} % de los momentos y tiene que estar entre ${min} y ${max} %. Convertí más momentos en planos de avatar: {"n":"pNNN","t":"avatar","m":"..."} (sin s/mo/q/st/k que lo tape), REPARTIDOS a lo largo del video (no seguidos), sobre todo en frases de opinión, advertencia o consejo directo al espectador.`
+      : `El avatar aparece en ${v} % de los momentos (máximo ${max} %). Pasá algunos planos avatar a imagen.`,
+    animadoPct: () => `${v} % de los planos de imagen se animan (máximo ${max}). Poné "q":1 (foto quieta, sin mo) a más planos.`,
+    rachaMaxLugar: () => `Hay ${v} planos seguidos en el mismo lugar "l" (máximo ${max}). Alterná lugares.`,
+    frasesLargasSinSegundoPlano: () => `Hay ${v} frases de más de 7 s sin segundo plano "pNNNx". Agregales uno.`,
+  };
+  return H[g] ? `${H[g]()} (${e.trim()})` : e;
+}
+
+async function direct(slug, { intentos, seguir = false }) {
   const P = slugPaths(slug);
   const pf = path.join(P.dirDir, "DIRECTOR_PROMPT.md");
   if (!fs.existsSync(pf)) throw new Error(`no existe ${pf}: corré antes run ${slug} --hasta 30_direct`);
@@ -111,13 +128,15 @@ async function direct(slug, { intentos }) {
   const sys = { role: "system", content: "You are the film DIRECTOR of a YouTube video factory. You answer ONLY with a JSON object {\"planos\": [...]} following the rules and format exactly. No prose." };
   const pedir = (k, extra = []) => [sys, { role: "user", content: [cabeza, "## Momentos de ESTE tramo (escribí TODOS, en orden, con sus segundos planos `x` cuando correspondan)", "| n | sec | dur s | dice |", "|---|---|---|---|", ...tramos[k], "", ...extra].join("\n") }];
 
-  for (const f of fs.readdirSync(P.dirDir).filter((f) => /^dir_[A-Z]+\.json$/.test(f))) fs.unlinkSync(path.join(P.dirDir, f));
   const letra = (k) => String.fromCharCode(65 + k);
-  await Promise.all(tramos.map(async (_, k) => {
-    const planos = sacarJson(await chat(pedir(k), { json: true }));
-    fs.writeFileSync(path.join(P.dirDir, `dir_${letra(k)}.json`), JSON.stringify(planos, null, 1));
-    console.log(`   dir_${letra(k)}.json: ${planos.length} planos para ${tramos[k].length} momentos`);
-  }));
+  if (!seguir) {
+    for (const f of fs.readdirSync(P.dirDir).filter((f) => /^dir_[A-Z]+\.json$/.test(f))) fs.unlinkSync(path.join(P.dirDir, f));
+    await Promise.all(tramos.map(async (_, k) => {
+      const planos = sacarJson(await chat(pedir(k), { json: true }));
+      fs.writeFileSync(path.join(P.dirDir, `dir_${letra(k)}.json`), JSON.stringify(planos, null, 1));
+      console.log(`   dir_${letra(k)}.json: ${planos.length} planos para ${tramos[k].length} momentos`);
+    }));
+  }
 
   for (let n = 1; n <= intentos; n++) {
     const r = correr30(slug);
@@ -129,7 +148,7 @@ async function direct(slug, { intentos }) {
     const nombres = (k) => new Set(tramos[k].map((l) => l.split("|")[1].trim()));
     await Promise.all(tramos.map(async (_, k) => {
       const mios = errores.filter((e) => [...nombres(k)].some((nm) => e.includes(nm)));
-      const globales = errores.filter((e) => !/p\d{3}/.test(e));
+      const globales = errores.filter((e) => !/p\d{3}/.test(e)).map(traducir);
       if (!mios.length && !globales.length) return;
       const actual = fs.readFileSync(path.join(P.dirDir, `dir_${letra(k)}.json`), "utf8");
       const planos = sacarJson(await chat(pedir(k, ["## Tu versión anterior", "```json", actual, "```",
@@ -143,5 +162,5 @@ async function direct(slug, { intentos }) {
 const [cmd, slug, ...rest] = process.argv.slice(2);
 const opt = (k, d) => { const i = rest.indexOf(`--${k}`); return i >= 0 ? rest[i + 1] : d; };
 if (cmd === "guion") await guion(slug, { tema: opt("tema"), seg: Number(opt("seg", 180)) });
-else if (cmd === "direct") await direct(slug, { intentos: Number(opt("intentos", 3)) });
-else { console.log("uso: llm.mjs guion <slug> --tema \"…\" [--seg 180] | llm.mjs direct <slug> [--intentos 3]"); process.exitCode = 2; }
+else if (cmd === "direct") await direct(slug, { intentos: Number(opt("intentos", 3)), seguir: rest.includes("--seguir") });
+else { console.log("uso: llm.mjs guion <slug> --tema \"…\" [--seg 180] | llm.mjs direct <slug> [--intentos 3] [--seguir]"); process.exitCode = 2; }
