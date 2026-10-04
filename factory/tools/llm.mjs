@@ -21,7 +21,7 @@ const MODEL = env("LLM_MODEL") || "qwen3.8-flash";
 const USD_IN = Number(env("LLM_USD_IN") || 0.16), USD_OUT = Number(env("LLM_USD_OUT") || 0.47);
 const tot = { in: 0, out: 0, llamadas: 0, seg: 0 };
 
-async function chat(messages, { json = false, maxTokens = 16000 } = {}) {
+async function chat(messages, { json = false, maxTokens = 32000 } = {}) {
   if (!KEY) throw new Error("falta LLM_KEY / AIHUBMIX_KEY en .env");
   const t0 = Date.now();
   for (let i = 0; i < 4; i++) {
@@ -31,10 +31,10 @@ async function chat(messages, { json = false, maxTokens = 16000 } = {}) {
       const r = await fetch(`${BASE}/chat/completions`, {
         method: "POST", signal: ctl.signal,
         headers: { "content-type": "application/json", authorization: `Bearer ${KEY}` },
-        body: JSON.stringify({ model: MODEL, messages, max_tokens: maxTokens, temperature: 0.7, stream: true, stream_options: { include_usage: true }, ...(json ? { response_format: { type: "json_object" } } : {}) }),
+        body: JSON.stringify({ model: MODEL, messages, max_tokens: maxTokens, temperature: 0.7, stream: true, stream_options: { include_usage: true }, ...(env("LLM_THINK") === "0" ? { enable_thinking: false } : {}), ...(json ? { response_format: { type: "json_object" } } : {}) }),
       });
       if (!r.ok) { const body = await r.text(); if (r.status >= 500 || r.status === 429) { await new Promise((s) => setTimeout(s, 2000 * 2 ** i)); continue; } throw new Error(`${r.status} ${body.slice(0, 400)}`); }
-      let txt = "", u = {}, buf = "";
+      let txt = "", u = {}, buf = "", razona = 0, ultimo = Date.now();
       const dec = new TextDecoder();
       for await (const chunk of r.body) {
         buf += dec.decode(chunk, { stream: true });
@@ -44,6 +44,8 @@ async function chat(messages, { json = false, maxTokens = 16000 } = {}) {
           if (!l.startsWith("data:") || l === "data: [DONE]") continue;
           const j = JSON.parse(l.slice(5));
           txt += j.choices?.[0]?.delta?.content || "";
+          razona += (j.choices?.[0]?.delta?.reasoning_content || "").length;
+          if (Date.now() - ultimo > 60_000) { ultimo = Date.now(); console.log(`   … ${((Date.now() - t0) / 1000).toFixed(0)} s: razonó ${razona} car., respondió ${txt.length} car.`); }
           if (j.usage) u = j.usage;
         }
       }
