@@ -43,7 +43,7 @@ export const SHOTS = [
   S(12, "", "bi", "b_release", { p: BI(`A big gray wolf standing for a second in the open door of an aluminum transport crate on snow in ${FOREST.split(":")[0]}, seen from a distance.`), anim: "the wolf steps out and bounds away into the snow" }),
   S(12, "and then ran off into the snow", "st", "st_wolfsnow.1"),
   S(12, "Colorado had wolves again", "av", "av"),
-  S(13, "", "c", "ElCoolerBoard", { props: { title: "the releases", rows: [{ item: "Dec 2023 · 10 wolves from Oregon" }, { item: "Grand + Summit counties" }, { item: "early 2025 · 15 more from British Columbia", hi: true }], every: 30, bed: "b_crates" } }),
+  S(13, "", "c", "ElCoolerBoard", { props: { title: "the releases", rows: [{ item: "Dec 2023 · 10 wolves from Oregon" }, { item: "Grand + Summit counties" }, { item: "2025 · 15 more from Canada (B.C.)", hi: true }], every: 30, bed: "b_crates" } }),
   // ── COLLARES
   S(14, "", "c", "HkCollarTrack", { props: { title: "every wolf wears a GPS collar", release: "release site", note: "ranchers check the map like the weather", wanderer: "hundreds of miles" } }),
   S(14, "Ranchers check those maps", "bi", "b_phonemap", { p: BI(`A rancher's weathered hands holding a phone over the steering wheel of a pickup truck, the screen showing a simple map with shaded areas, a frosty pasture through the windshield.`), anim: "a thumb scrolls the map" }),
