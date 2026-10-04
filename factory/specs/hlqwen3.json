@@ -1,0 +1,11 @@
+{
+  "slug": "hlqwen3",
+  "canal": "harlan-lineman",
+  "modo": "avatar",
+  "idioma": "en",
+  "guion": "guiones/GUION_hlqwen3.txt",
+  "voz": { "id": "harlan" },
+  "cta": { "head": "Subscribe for more from the line", "ancla": "If you want more of what forty years" },
+  "avatar": { "face": "public/ref/harlan_full.png", "ref": "public/ref/harlan_face128.png" },
+  "titulo": "The 5 Outlets in Your House I'd Never Plug a Heater Into"
+}
