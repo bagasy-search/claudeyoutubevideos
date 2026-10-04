@@ -1,10 +1,10 @@
 // Avatar InfiniteTalk por el endpoint PÚBLICO de RunPod — UN solo /run con TODAS las ventanas visibles (reel continuo).
-//   node vlog/hlheater/avatar_run.mjs build → _v3/hlheater_avwin.json + out/avatar/reel.wav (tramos del máster)
-//   node vlog/hlheater/avatar_run.mjs run   → sube ref+reel a raw público (rama propia), /run (executionTimeout alto),
+//   node vlog/hlpower/avatar_run.mjs build → _v3/hlpower_avwin.json + out/avatar/reel.wav (tramos del máster)
+//   node vlog/hlpower/avatar_run.mjs run   → sube ref+reel a raw público (rama propia), /run (executionTimeout alto),
 //                                                 polea, guarda status_final.json apenas COMPLETED, baja el mp4 (DESACOPLADO)
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
-const R = "D:/Proyectos/video2-wt/hlheater/";
+const R = "D:/Proyectos/video2-wt/hlpower/";
 const OUT = R + "out/avatar/";
 fs.mkdirSync(OUT, { recursive: true });
 // la key NO va en el código (push protection): sale del env o del .env del worktree
@@ -15,7 +15,7 @@ const log = (...a) => { const l = new Date().toISOString().slice(11, 19) + " " +
 const fase = process.argv[2];
 
 if (fase === "build") {
-  const { shots } = JSON.parse(fs.readFileSync(R + "_v3/hlheater_shots.json", "utf8"));
+  const { shots } = JSON.parse(fs.readFileSync(R + "_v3/hlpower_shots.json", "utf8"));
   const av = shots.filter((s) => s.kind === "av" || s.kind === "vl").map((s) => ({ s: s.start, e: s.end }));
   const win = [];
   for (const w of av) { const L = win[win.length - 1]; if (L && Math.abs(L.e - w.s) < 0.05) L.e = w.e; else win.push({ ...w }); }
@@ -23,12 +23,12 @@ if (fase === "build") {
   let off = 0;
   for (const w of win) { w.ms = Math.max(0, w.s - 0.12); w.me = w.e + 0.12; w.off = off; off += w.me - w.ms; }
   let txt = "";
-  win.forEach((w, i) => { const f = OUT + `p${String(i).padStart(3, "0")}.wav`; sh("ffmpeg", ["-v", "error", "-y", "-ss", w.ms.toFixed(3), "-to", w.me.toFixed(3), "-i", R + "public/hlheater.wav", "-ac", "1", "-ar", "44100", f]); txt += `file '${f}'\n`; });
+  win.forEach((w, i) => { const f = OUT + `p${String(i).padStart(3, "0")}.wav`; sh("ffmpeg", ["-v", "error", "-y", "-ss", w.ms.toFixed(3), "-to", w.me.toFixed(3), "-i", R + "public/hlpower.wav", "-ac", "1", "-ar", "44100", f]); txt += `file '${f}'\n`; });
   fs.writeFileSync(OUT + "concat.txt", txt);
   sh("ffmpeg", ["-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", OUT + "concat.txt", "-c:a", "pcm_s16le", OUT + "reel.wav"]);
   for (let i = 0; i < win.length; i++) fs.rmSync(OUT + `p${String(i).padStart(3, "0")}.wav`, { force: true });
   const d = +sh("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", OUT + "reel.wav"]).trim();
-  fs.writeFileSync(R + "_v3/hlheater_avwin.json", JSON.stringify({ reel: d, win }, null, 1));
+  fs.writeFileSync(R + "_v3/hlpower_avwin.json", JSON.stringify({ reel: d, win }, null, 1));
   console.log(`ventanas ${win.length} · reel ${d.toFixed(1)} s (cap medido ~600 s) · suma ${off.toFixed(1)}`);
   if (d > 590) { console.error("⛔ el reel pasa el cap de ~600 s de un /run"); process.exit(2); }
   process.exit(0);
@@ -38,14 +38,14 @@ if (fase === "run") {
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const user = sh("gh", ["api", "user", "-q", ".login"]).trim();
   const tok = sh("gh", ["auth", "token"]).trim();
-  const repo = "rp-it-test", br = "hlheater-" + Date.now().toString(36);
+  const repo = "rp-it-test", br = "hlpower-" + Date.now().toString(36);
   const W = OUT + "_push/";
   fs.rmSync(W, { recursive: true, force: true }); fs.mkdirSync(W, { recursive: true });
-  fs.copyFileSync(R + "public/ref_hlheater.png", W + "face.png");
+  fs.copyFileSync(R + "public/ref_hlpower.png", W + "face.png");
   fs.copyFileSync(OUT + "reel.wav", W + "audio.wav");
   try { sh("gh", ["repo", "view", `${user}/${repo}`]); } catch { sh("gh", ["repo", "create", repo, "--public"]); }
   const g = (...a) => sh("git", ["-C", W, ...a]);
-  g("init", "-q"); g("add", "face.png", "audio.wav"); g("-c", "user.email=noreply@local", "-c", "user.name=rp", "commit", "-qm", "hlheater avatar inputs");
+  g("init", "-q"); g("add", "face.png", "audio.wav"); g("-c", "user.email=noreply@local", "-c", "user.name=rp", "commit", "-qm", "hlpower avatar inputs");
   g("branch", "-M", br); g("push", "-qf", `https://x-access-token:${tok}@github.com/${user}/${repo}.git`, `${br}:${br}`);
   const img = `https://raw.githubusercontent.com/${user}/${repo}/${br}/face.png`, aud = `https://raw.githubusercontent.com/${user}/${repo}/${br}/audio.wav`;
   for (const u of [img, aud]) { for (let t = 0; t < 20; t++) { const r = await fetch(u, { method: "HEAD" }); if (r.ok) break; await sleep(5000); } }

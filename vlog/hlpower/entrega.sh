@@ -1,11 +1,11 @@
 #!/bin/bash
 # Re-encode de ENTREGA (el mp4 del farm nunca va crudo): PTS rehechos (cuadros == TOTAL_FRAMES), yuv420p/tv/bt709,
 # g=60, faststart, techo de bitrate, audio = la mezcla final determinista (voz máster + cama + foley + sfx) -16 LUFS.
-# uso: bash vlog/hlheater/entrega.sh <farm.mp4> <salida.mp4>
+# uso: bash vlog/hlpower/entrega.sh <farm.mp4> <salida.mp4>
 set -e
-IN=$1; OUT=$2; cd D:/Proyectos/video2-wt/hlheater
-N=$(grep -oE "TOTAL_FRAMES_HLHEATER = [0-9]+" src/hlheater/timeline_hlheater.gen.ts | grep -oE "[0-9]+$")
-ffmpeg -v error -y -i "$IN" -i out/hlheater_mix.wav -map 0:v:0 -map 1:a:0 \
+IN=$1; OUT=$2; cd D:/Proyectos/video2-wt/hlpower
+N=$(grep -oE "TOTAL_FRAMES_HLPOWER = [0-9]+" src/hlpower/timeline_hlpower.gen.ts | grep -oE "[0-9]+$")
+ffmpeg -v error -y -i "$IN" -i out/hlpower_mix.wav -map 0:v:0 -map 1:a:0 \
   -vf "setpts=N/(30*TB),scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p" \
   -fps_mode passthrough -frames:v $N -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
   -c:v libx264 -preset faster -crf 20 -bf 0 -maxrate 8M -bufsize 12M -g 60 -keyint_min 60 -sc_threshold 0 -threads 8 \

@@ -1,4 +1,4 @@
-// DIRECTOR de hlheater — helpers. Cada toma: S(p, frase, kind, name, opts)
+// DIRECTOR de hlpower — helpers. Cada toma: S(p, frase, kind, name, opts)
 //   kind: av (avatar InfiniteTalk) · vl (clip agnes 2.5 hablado, minuto 1) · bi (foto gpt sin Earl → clip agnes v2.0)
 //         hz (foto gpt CON Earl, /edits con su cara; Ken-Burns) · st (stock Pexels "st_<base>.<n>") · c (componente El*)
 export const S = (p, at, kind, name, o = {}) => ({ ...o, prompt: o.p, p, at, kind, name });

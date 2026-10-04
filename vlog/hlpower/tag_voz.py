@@ -1,13 +1,12 @@
 # Guion de VOZ: tags moderados de Fish (voz `hazel`) antepuestos a frases elegidas; NO cambia palabras.
-# python vlog/hlheater/tag_voz.py guiones/hlheater.txt guiones/hlheater_voz.txt
+# python vlog/hlpower/tag_voz.py guiones/hlpower.txt guiones/hlpower_voz.txt
 import re, sys
 src, dst = sys.argv[1], sys.argv[2]
 R = [
- ("[dryly]", r"(these taste like soap|he stopped laughing|Sometimes the answer is water|wash my mouth out)"),
- ("[sighs]", r"(They think shrimp is supposed to taste like that|They boil in their own juice)"),
- ("[lower, as if sharing a secret]", r"(Here's the part that'll make you mad|Now here's the five second check|this is where the taste really comes from)"),
- ("[emphatically]", r"(put it back\. If you see sodium|Cold is the only thing|you'll never unsee it)"),
- ("[warmly]", r"(My name's Earl|Earl, you're right|I read every one|I'll see you on the dock)"),
+ ("[dryly]", r"(He didn't believe me|You're not getting power tonight)"),
+ ("[lower, as if sharing a secret]", r"(Let me tell you about the wire from the pole to your house|Here's what different damage usually means)"),
+ ("[emphatically]", r"(Treat every wire like it's live|never plug it into a wall outlet or your dryer outlet|Don't trust the first estimate after a big storm)"),
+ ("[warmly]", r"(My name's Harlan|I've never forgotten that pudding|I read every one)"),
 ]
 out, since, n = [], 9, {}
 for line in open(src, encoding="utf8").read().split("\n"):
