@@ -7,8 +7,6 @@ import { assertMeasured } from "../lib/gate.mjs";
 import { withLease } from "../lib/lease.mjs";
 import { submitBatch, pollBatch, fetchBatch } from "../lib/openai_batch.mjs";
 import { pool, sleep } from "../lib/phase.mjs";
-import { geminiImage } from "../lib/gemini_image.mjs";
-import { env } from "../lib/env.mjs";
 
 export default {
   id: "40_images",
@@ -45,18 +43,7 @@ export default {
     const faltaPagar = (it) => faltaJpg(it) && !fs.existsSync(path.join(P.pngDir, `${it.name}.png`));
     const size = style.imagen?.size || "1088x608", quality = style.imagen?.quality || "low";
 
-    // Motor de PRUEBA sin OpenAI (FACTORY_IMG_MOTOR=gemini): imagen por imagen, con la foto ENTERA del
-    // avatar como referencia (la cara 128x192 de gpt /edits es chica para Gemini). Mismos png → jpg.
-    if (env("FACTORY_IMG_MOTOR") === "gemini") {
-      log("⚠️ motor de imagen = GEMINI (prueba; el de la casa es gpt-image-2)");
-      const items = [...listas.edits.map((x) => ({ ...x, ref: spec.avatar?.face || ref })), ...listas.gens].filter(faltaPagar);
-      let fallas = 0;
-      await pool(items, 6, async (it) => {
-        const r = await geminiImage({ prompt: it.prompt, ref: it.ref || null, presentadorToken: style.presentadorToken, outPng: path.join(P.pngDir, `${it.name}.png`) });
-        if (!r.ok) { fallas++; log(`   ✗ ${it.name}: ${r.error}`); }
-      });
-      log(`gemini: ${items.length - fallas}/${items.length} imágenes`);
-    } else await withLease("openai_batch", slug, 1, async () => {
+    await withLease("openai_batch", slug, 1, async () => {
       for (const [k, items] of Object.entries(listas)) {
         const pend = items.filter(faltaPagar);
         if (!pend.length) continue;
