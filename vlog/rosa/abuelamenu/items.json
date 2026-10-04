@@ -1,0 +1,210 @@
+{
+ "stampSub": "Menú de 30 días",
+ "era": [
+  1962,
+  1975
+ ],
+ "items": {
+  "1": {
+   "title": "Lentejas con arroz y cebolla dorada",
+   "dish": "a plate of lentils with rice and golden fried onion beside a boiled egg",
+   "q": "lentils rice fried onion",
+   "truco": "Una olla, dos días."
+  },
+  "2": {
+   "title": "Hamburguesas de lentejas",
+   "dish": "golden lentil patties in a frying pan with a tomato salad",
+   "q": "lentil patties",
+   "truco": "Lo de ayer, convertido en hoy."
+  },
+  "3": {
+   "title": "Sopa de pan duro y huevo",
+   "dish": "a bowl of warm bread and egg soup beside a small salad",
+   "q": "bread egg soup",
+   "truco": "El pan duro no se tira."
+  },
+  "4": {
+   "title": "Arroz con salchicha y guisantes",
+   "dish": "a small pot of rice with sliced sausage and green peas",
+   "q": "rice sausage peas",
+   "truco": "Quince minutos de olla."
+  },
+  "5": {
+   "title": "Papa con huevo",
+   "dish": "boiled potatoes with sliced boiled egg and golden onion on a plate",
+   "q": "boiled potatoes egg onion",
+   "truco": "Viernes sencillo."
+  },
+  "6": {
+   "title": "El día de descanso",
+   "dish": "a plate with bread cheese an apple and a boiled egg with a cloth napkin and a candle",
+   "q": "bread cheese fruit plate",
+   "truco": "Un día sin cocinar."
+  },
+  "7": {
+   "title": "El puchero del domingo",
+   "dish": "a big pot of beef and vegetable stew simmering on the stove",
+   "q": "beef vegetable stew pot",
+   "truco": "De una olla, tres días."
+  },
+  "8": {
+   "title": "Sopa de puchero con fideos",
+   "dish": "a bowl of broth with thin noodles",
+   "q": "noodle soup bowl",
+   "truco": "El resto del domingo."
+  },
+  "9": {
+   "title": "Ropa vieja",
+   "dish": "shredded beef with onion and paprika beside white rice",
+   "q": "ropa vieja shredded beef rice",
+   "truco": "Reaprovechar es cocinar bien."
+  },
+  "10": {
+   "title": "Puré de verduras con huevo",
+   "dish": "mashed vegetables with a fried egg on top",
+   "q": "mashed vegetables fried egg",
+   "truco": "Aplastar con tenedor."
+  },
+  "11": {
+   "title": "Estofado de garbanzos con papa",
+   "dish": "a pot of chickpea and potato stew with paprika",
+   "q": "chickpea potato stew",
+   "truco": "Alcanza para dos días."
+  },
+  "12": {
+   "title": "Ensalada de garbanzos de ayer",
+   "dish": "a bowl of chickpea salad with tomato and onion",
+   "q": "chickpea salad tomato",
+   "truco": "Del estofado a la ensalada."
+  },
+  "13": {
+   "title": "El segundo día de descanso",
+   "dish": "toast with cream cheese and honey, a piece of fruit and a cup of tea",
+   "q": "cream cheese honey toast tea",
+   "truco": "Otro sábado sin fuego."
+  },
+  "14": {
+   "title": "Pollo con arroz de una sola olla",
+   "dish": "chicken thigh with rice and carrot cooked in one pot",
+   "q": "chicken rice one pot",
+   "truco": "Todo en una olla."
+  },
+  "15": {
+   "title": "Arroz caldoso de pollo",
+   "dish": "a bowl of brothy rice with shredded chicken",
+   "q": "brothy rice chicken",
+   "truco": "Lo del domingo, hecho sopa."
+  },
+  "16": {
+   "title": "Pasta con atún y tomate",
+   "dish": "pasta with tuna and tomato sauce on a plate",
+   "q": "pasta tuna tomato sauce",
+   "truco": "Veinte minutos, una olla."
+  },
+  "17": {
+   "title": "Sopa de verduras de las sobras",
+   "dish": "a pot of leftover vegetable soup",
+   "q": "vegetable soup leftovers",
+   "truco": "Cada semana distinta."
+  },
+  "18": {
+   "title": "Pescado con papas",
+   "dish": "a fish fillet with boiled potatoes and lemon on a plate",
+   "q": "fish fillet potatoes lemon",
+   "truco": "Ligero y sano."
+  },
+  "19": {
+   "title": "Tortilla de papas con ensalada",
+   "dish": "a potato omelette slice with a green salad",
+   "q": "spanish potato omelette",
+   "truco": "Sin prisa."
+  },
+  "20": {
+   "title": "El tercer día de descanso",
+   "dish": "a plate of cheese olives tomato boiled egg crackers and fruit",
+   "q": "snack plate cheese olives",
+   "truco": "Picoteo con ceremonia."
+  },
+  "21": {
+   "title": "Pollo entero al horno del capricho",
+   "dish": "a whole roast chicken with potatoes garlic and lemon in a blue enamel dish",
+   "q": "roast chicken potatoes",
+   "truco": "El capricho del mes."
+  },
+  "22": {
+   "title": "Sopa de pollo",
+   "dish": "chicken noodle soup in a bowl with vegetables",
+   "q": "chicken noodle soup",
+   "truco": "Con un chorrito de limón."
+  },
+  "23": {
+   "title": "Arroz con pollo de sobras",
+   "dish": "rice with shredded chicken tomato and onion in a pan",
+   "q": "rice shredded chicken",
+   "truco": "Una segunda oportunidad."
+  },
+  "24": {
+   "title": "Sopa de calabaza cremosa",
+   "dish": "a bowl of creamy pumpkin soup",
+   "q": "pumpkin soup bowl",
+   "truco": "Casi no cuesta."
+  },
+  "25": {
+   "title": "Frijoles refritos con huevo",
+   "dish": "refried beans with a fried egg and a tortilla",
+   "q": "refried beans egg tortilla",
+   "truco": "Poco dinero, mucho sabor."
+  },
+  "26": {
+   "title": "Migas con huevo frito",
+   "dish": "fried breadcrumbs migas with a fried egg",
+   "q": "migas fried egg",
+   "truco": "El pan duro de la semana."
+  },
+  "27": {
+   "title": "El cuarto día de descanso",
+   "dish": "an open fridge with a few simple ingredients and a sandwich on a plate",
+   "q": "egg tomato sandwich",
+   "truco": "Improvisar."
+  },
+  "28": {
+   "title": "La olla de los últimos días",
+   "dish": "a big pot of lentils rice potato and vegetables",
+   "q": "lentil rice potato stew pot",
+   "truco": "Una olla, tres días."
+  },
+  "29": {
+   "title": "La olla con huevo duro picado",
+   "dish": "a bowl of lentil stew topped with chopped boiled egg",
+   "q": "lentil stew egg",
+   "truco": "Un huevo cambia el día."
+  },
+  "30": {
+   "title": "La cena de la gratitud",
+   "dish": "a bowl of stew with toasted bread and a lemon wedge on a kitchen table at dusk",
+   "q": "stew toast lemon",
+   "truco": "Gracias por la mesa."
+  }
+ },
+ "chapters": {
+  "reglas": {
+   "text": "Las tres reglas del cuaderno"
+  },
+  "semana": {
+   "text": "Las cuatro semanas del menú"
+  },
+  "presupuesto": {
+   "text": "Cómo calcular el presupuesto"
+  },
+  "congelador": {
+   "text": "El congelador, aliado silencioso"
+  },
+  "corazon": {
+   "text": "Un menú es un mañana"
+  },
+  "elegir": {
+   "text": "¿Por dónde empiezo?"
+  }
+ },
+ "book": "El menú de 30 días"
+}

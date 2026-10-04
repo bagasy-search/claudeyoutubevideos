@@ -89,7 +89,7 @@ cur = "hook"
 for pi, p in enumerate(paras):
     head = p[:220]
     num = None
-    m2 = re.match(r"(?:Y ahora, atenci[oó]n, que viene |Y ya, la [uú]ltima\. La que te promet[ií]\. |Y ya, el [uú]ltimo\. El que te promet[ií]\. |Y ahora s[ií], |Y ahora, )?(?:[Ll]a n[uú]mero|[Ee]l truco n[uú]mero) (\w+(?: y \w+)?)", p)
+    m2 = re.match(r"(?:Y ahora, atenci[oó]n, que viene |Y ya, la [uú]ltima\. La que te promet[ií]\. |Y ya, el [uú]ltimo\. El que te promet[ií]\. |Y ya, el [uú]ltimo, el que te promet[ií]\. |Y ahora s[ií], |Y ahora, )?(?:[Ll]a n[uú]mero|[Ee]l truco n[uú]mero|[Ee]l d[ií]a n[uú]mero) (\w+(?: y \w+)?)", p)
     if m2 and norm(m2.group(1)) in NUMS and cur not in ("hook",): num = NUMS[norm(m2.group(1))]
     m3 = re.match(r"(?:Y ahora s[ií], )?la (\w+), la que te prometí", p)
     if m3 and norm(m3.group(1)) in NUMS and cur not in ("hook",): num = NUMS[norm(m3.group(1))]
@@ -131,6 +131,10 @@ for pi, p in enumerate(paras):
     elif p.startswith("Te voy a contar algo que no le he contado") or p.startswith("Esa sopa fue su receta") or p.startswith("Por eso te digo que estas cenas") or p.startswith("Y ahora, déjame hablarte") or p.startswith("Comer solo no es lo mismo") or p.startswith("Yo empecé esta lista") or p.startswith("Por eso cada una"): cur = "corazon"
     elif p.startswith("Y si no sabes por cuál") or p.startswith("Si hoy") or p.startswith("Cualquiera de estas"): cur = "elegir"
     elif p.startswith("Hoy te di treinta") or p.startswith("Las medidas exactas") or p.startswith("Y ahora, repasemos") or p.startswith("En el próximo video") or p.startswith("Gracias por sentarte") or p.startswith("Aquí estaré"): cur = "cierre"
+    elif p.startswith("Antes de empezar, una advertencia") or p.startswith("Y para planificar bien") or re.match(r"(La primera|La segunda|Y la tercera) regla", p) or p.startswith("Con esas tres reglas"): cur = "reglas"
+    elif re.match(r"Semana (uno|dos|tres|cuatro)\.", p): cur = "semana"
+    elif p.startswith("Y antes de seguir, déjame decirte cómo calculaba") or p.startswith("Todos los sábados, en la mesa") or p.startswith("Y cuando el dinero apretaba") or p.startswith("Y algo más, que Elvira"): cur = "presupuesto"
+    elif p.startswith("Y a mitad del mes, quiero hablarte del congelador"): cur = "congelador"
     elif num is not None: cur = f"i{num}"
     sec[pi] = cur
 for m in merged: m["item"] = sec[m["p"]]
