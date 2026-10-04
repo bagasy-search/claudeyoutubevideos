@@ -94,6 +94,14 @@ for pi, p in enumerate(paras):
     m3 = re.match(r"(?:Y ahora s[ií], )?la (\w+), la que te prometí", p)
     if m3 and norm(m3.group(1)) in NUMS and cur not in ("hook",): num = NUMS[norm(m3.group(1))]
     if re.match(r"Pasa, si[eé]ntate", p): cur = "intro"
+    elif p.startswith("Y antes de empezar, déjame explicarte por qué hoy hablo de esto") or re.match(r"(Cuando una persona queda sola|Yo pasé por eso|Desde entonces tengo una regla)", p): cur = "porque"
+    elif p.startswith("Y antes de seguir, quiero enseñarte las cinco cosas") or re.match(r"(Primero, pan\.|Segundo, queso\.|Tercero, huevos\.|Cuarto, tomates y fruta|Y quinto, latas|Con esas cinco cosas)", p): cur = "cinco"
+    elif p.startswith("Y a mitad de camino, déjame hablarte del cansancio que no se ve") or re.match(r"(Hay un cansancio de piernas|Yo lo conozco bien|Por eso estas comidas no son solo|Si hoy estás cansado de ese cansancio)", p): cur = "cansancio"
+    elif p.startswith("Una última cosa. Hay una hora"): cur = "hora"
+    elif p.startswith("Y antes de seguir, déjame hablarte de la carnicería") or re.match(r"(La carnicería de don Aurelio|Don Aurelio era un hombre|Mi madre y él tenían una sociedad|Y de ese mostrador salió)", p): cur = "carniceria"
+    elif p.startswith("Y aquí, a mitad de camino, quiero contarte cómo se cocinaba en el campo") or re.match(r"(En el campo no había nevera|Por eso nacieron tantos trucos|Y de esas cocinas de campo bajaron|Hoy, cuando guiso un trozo duro)", p): cur = "campo"
+    elif p.startswith("Y para entender estos trucos, primero hay que entender") or p.startswith("La carne tiene fibras"): cur = "fibras"
+    elif p.startswith("Te voy a contar una última historia") or re.match(r"(Esa noche lloré en la cocina|Al domingo siguiente, hice otro asado)", p): cur = "historia"
     elif p.startswith("Y para empezar bien, déjame explicarte cómo era el calendario") or re.match(r"(El día uno del mes|Y así, mes tras mes)", p): cur = "calendario"
     elif p.startswith("Y antes de seguir, déjame contarte cómo se ponía la mesa") or re.match(r"(El mantel siempre estaba limpio|Nadie se servía antes|Y al terminar, nadie dejaba|Mi madre me enseñó que la dignidad)", p): cur = "mesa"
     elif p.startswith("Y a mitad de camino, quiero decirte lo que me enseñó el fin de mes") or re.match(r"(Me enseñó a (planificar|compartir|no esconder)|Y me enseñó a agradecer|Ahora entiendo que no fuimos pobres)", p): cur = "ensenanza"
