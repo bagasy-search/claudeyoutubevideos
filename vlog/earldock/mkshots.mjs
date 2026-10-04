@@ -1,15 +1,15 @@
-// DIRECTOR → _v3/earlboil_shots.json: ancla cada toma a la palabra del guion (ms del ASR, alineación global) y
+// DIRECTOR → _v3/earldock_shots.json: ancla cada toma a la palabra del guion (ms del ASR, alineación global) y
 // mide la toma contra su tipo (compuertas: minuto 1 ≤4 s, foto+clip ≤6,5 s, stock ≤8,4 s, % avatar / real / comp).
 import fs from "node:fs";
 import { SHOTS as A } from "./dir_a.mjs";
 import { SHOTS as B } from "./dir_b.mjs";
 import { SHOTS as C } from "./dir_c.mjs";
-const R = "D:/Proyectos/video2-wt/earlboil/";
-const W = JSON.parse(fs.readFileSync(R + "_v3/earlboil_wordms.json", "utf8"));
-const P = JSON.parse(fs.readFileSync(R + "_v3/earlboil_paras.json", "utf8"));
+const R = "D:/Proyectos/video2-wt/earldock/";
+const W = JSON.parse(fs.readFileSync(R + "_v3/earldock_wordms.json", "utf8"));
+const P = JSON.parse(fs.readFileSync(R + "_v3/earldock_paras.json", "utf8"));
 const errs0 = [];
 const norm = (s) => s.replace(/-/g, "").toLowerCase().replace(/[^a-z0-9' ]/g, " ").split(/\s+/).filter(Boolean);
-const POOL = JSON.parse(fs.readFileSync(R + "_v3/earlboil_stock_pool.json", "utf8"));
+const POOL = JSON.parse(fs.readFileSync(R + "_v3/earldock_stock_pool.json", "utf8"));
 const rs = (n) => (n && POOL[n]) || n;
 const all = [...A, ...B, ...C].map((s) => ({ ...s, name: s.kind === "st" ? rs(s.name) : s.name, ...(s.props ? { props: { ...s.props, ...(s.props.bed ? { bed: rs(s.props.bed) } : {}) } } : {}) }));
 for (const s of all) if (/^st_\w+\.\d+$/.test(s.name) || /^st_\w+\.\d+$/.test(s.props?.bed || "")) errs0.push("stock sin resolver " + s.name);
@@ -46,7 +46,7 @@ const real = shots.filter((s) => s.kind === "st" || (s.kind === "c" && /^st_/.te
 const realN = shots.filter((s) => s.kind === "st" || (s.kind === "c" && /^st_/.test(s.props?.bed || ""))).length;
 const durs = shots.map((s) => s.dur).sort((a, b) => a - b), q = (x) => durs[Math.floor(durs.length * x)];
 const cuts1 = shots.filter((s) => s.start > 0 && s.start < 60).length;
-fs.writeFileSync(R + "_v3/earlboil_shots.json", JSON.stringify({ END, shots }, null, 1));
+fs.writeFileSync(R + "_v3/earldock_shots.json", JSON.stringify({ END, shots }, null, 1));
 console.log(`tomas ${shots.length} · fin ${END.toFixed(1)} s · cortes min1 ${cuts1}`);
 console.log(Object.entries(tot).map(([k, v]) => `${k} ${v.toFixed(0)}s (${((100 * v) / T).toFixed(1)}%)`).join(" · "));
 console.log(`REAL (stock + componentes sobre stock) ${real.toFixed(0)} s = ${((100 * real) / T).toFixed(1)}% · ${realN}/${shots.length} tomas`);

@@ -1,13 +1,13 @@
 # Guion de VOZ: tags moderados de Fish (voz `hazel`) antepuestos a frases elegidas; NO cambia palabras.
-# python vlog/earlboil/tag_voz.py guiones/earlboil.txt guiones/earlboil_voz.txt
+# python vlog/earldock/tag_voz.py guiones/earldock.txt guiones/earldock_voz.txt
 import re, sys
 src, dst = sys.argv[1], sys.argv[2]
 R = [
- ("[dryly]", r"(Those shrimp tasted like nothing|That's backwards|Forty two dollars\.|but my wife sure did)"),
- ("[sighs]", r"(I didn't have the heart to tell him|Rubbery and plain)"),
- ("[lower, as if sharing a secret]", r"(Here's the step the restaurant skipped|Now here's the order|here's how you know you've got enough salt)"),
- ("[emphatically]", r"(Not one minute more|Don't skip the ice|Hardest stuff first, shrimp last)"),
- ("[warmly]", r"(My name's Earl|Granddaddy, I get it now|I read every one|I'll see you on the dock)"),
+ ("[dryly]", r"(Are y'all getting rich off me\?|nobody on my dock is getting rich|Don't get me started)"),
+ ("[sighs]", r"(I've seen good men sell their boats|The price on the bag didn't change one penny)"),
+ ("[lower, as if sharing a secret]", r"(But here's where I'm going to be honest with you|And this is where you can get taken|Everybody in the middle just gets left out)"),
+ ("[emphatically]", r"(So that five dollars isn't profit|One ingredient\. Shrimp\.|read the bag)"),
+ ("[warmly]", r"(My name's Earl|her grandson started coming down with the same cooler|I read every one)"),
 ]
 out, since, n = [], 9, {}
 for line in open(src, encoding="utf8").read().split("\n"):

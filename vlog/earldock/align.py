@@ -1,9 +1,9 @@
 # Alineación GLOBAL guion↔ASR (difflib) → ms por palabra del guion + párrafos + reporte de huecos (frases comidas por Fish).
 import json, re, difflib
 norm = lambda w: re.sub(r"[^a-z0-9']", "", w.lower())
-script = open("guiones/earlboil.txt", encoding="utf8").read()
+script = open("guiones/earldock.txt", encoding="utf8").read()
 sw = re.findall(r"\S+", script)
-caps = json.load(open("public/captions_earlboil.json", encoding="utf8"))
+caps = json.load(open("public/captions_earldock.json", encoding="utf8"))
 asr = [{"word": c["text"].strip(), "start": c["startMs"] / 1000, "end": c["endMs"] / 1000} for c in caps]
 A = [norm(w["word"]) for w in asr]; S = [norm(w) for w in sw]
 sm = difflib.SequenceMatcher(None, S, A, autojunk=False)
@@ -22,13 +22,13 @@ for i in range(len(ms)):
     if ms[i][0] < last[0]: ms[i] = [last[0], max(last[0], ms[i][1])]
     last = ms[i]
 W = [{"w": sw[i], "s": round(ms[i][0], 3), "e": round(ms[i][1], 3)} for i in range(len(sw))]
-json.dump(W, open("_v3/earlboil_wordms.json", "w", encoding="utf8"))
+json.dump(W, open("_v3/earldock_wordms.json", "w", encoding="utf8"))
 # párrafos (una línea del guion = un párrafo)
 P = []; w0 = 0
 for line in script.split("\n"):
     n = len(re.findall(r"\S+", line))
     if n: P.append({"i": len(P), "w0": w0, "nw": n, "s": W[w0]["s"], "e": W[w0 + n - 1]["e"], "txt": line[:70]})
     w0 += n
-json.dump(P, open("_v3/earlboil_paras.json", "w", encoding="utf8"), indent=0)
+json.dump(P, open("_v3/earldock_paras.json", "w", encoding="utf8"), indent=0)
 print("ratio", round(sm.ratio(), 4), "palabras", len(S), "asr", len(A), "párrafos", len(P))
 for g in gaps: print(json.dumps(g, ensure_ascii=False)[:300])
