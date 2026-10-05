@@ -631,10 +631,6 @@
       "p010",
       "p023",
       "p029"
-    ],
-    "apertura": {
-      "miniatura": false,
-      "_": "piloto: sin motor de imagen pago para la miniatura"
-    }
+    ]
   }
 }

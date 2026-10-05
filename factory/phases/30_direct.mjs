@@ -30,7 +30,8 @@ export function directorPrompt({ slug, spec, style, mom, secs }) {
     "- Toda frase de más de 7 s lleva un SEGUNDO plano `<n>x` (si no, queda un plano clavado).",
     spec.modo === "avatar" ? "- `p000` es `{\"n\":\"p000\",\"t\":\"avatar\"}` (el video abre con el avatar hablando). Avatar visible ≈25-30 % de los momentos, repartido." : "- Modo narrador: sin planos avatar.",
     ...(Array.isArray(spec.overrides?.avatarFijo) ? [`- ⛔ AVATAR FIJO: los momentos de avatar son EXACTAMENTE ${spec.overrides.avatarFijo.join(", ")} (el avatar ya está grabado). Ni uno más ni uno menos.`] : []),
-    "- Un segundo plano `x` NUNCA es avatar: es siempre un plano de imagen.",
+    "- Un segundo plano `x` NUNCA es avatar ni lleva componente `k`: es siempre un plano de imagen.",
+    `- ⛔ IDIOMA: todo texto que se ve en pantalla (las props de \`k\`) va en ${({ en: "INGLÉS", es: "ESPAÑOL", pt: "PORTUGUÉS" })[spec.idioma] || spec.idioma}, el idioma del video, aunque estas instrucciones estén en castellano.`,
     "- Encuadres variados: close ≤20 %, wide ≥25 %. Racha máxima del mismo lugar ≤6.",
     "- ⛔ RITMO HUMANO, NO METRÓNOMO: la duración de cada plano la decide LO QUE SE DICE, no un reloj.",
     "  Momento rápido o que enumera → plano corto. Momento que explica o que merece mirarse → plano",
@@ -145,6 +146,16 @@ export default {
     //    ("el plano no es un momento (no se puede anclar)"). Los comps se anclan a la FRASE del momento.
     for (const x of tramos.filter((t) => /x$/.test(t.n || "") && t.k))
       r.errores.push(`${x.n}: un segundo plano (x) NO puede llevar componente "k" — se ancla a la frase del momento. Mové el "k" al plano principal ${x.n.replace(/x$/, "")} (si no es avatar) o sacalo`);
+    // ⛔ Medido 05-oct (piloto hlqwen3, qwen3.8-max): props de comps en ESPAÑOL en un canal EN ("margen
+    //    justo", "Resetear sin mirar"). El prompt del director está en castellano y el modelo lo copia.
+    if (spec.idioma === "en") {
+      const textos = (v, out = []) => { if (typeof v === "string") out.push(v); else if (v && typeof v === "object") for (const x of Object.values(v)) textos(x, out); return out; };
+      const ES = /[áéíóúñ¿¡]|(?<![\p{L}])(de|del|la|las|el|los|sin|con|para|que|una|por|más|muy|calentador|enchufe|cable)(?![\p{L}])/giu;
+      for (const t of tramos.filter((x) => x.k)) {
+        const malos = textos(t.k.props).filter((s) => (s.match(ES) || []).length >= (/[áéíóúñ¿¡]/.test(s) ? 1 : 2) || /^(de|la|el|sin|con|para)\s/i.test(s));
+        if (malos.length) r.errores.push(`${t.n}: el texto del componente está en ESPAÑOL (${malos.slice(0, 2).map((s) => `"${s}"`).join(", ")}) y el video es en INGLÉS: todo texto en pantalla va en inglés`);
+      }
+    }
     // Avatar FIJO (spec.overrides.avatarFijo): reusar un reel ya pagado. Cambiar el set de momentos de
     // avatar cambia las ventanas y obliga a otro /run de RunPod.
     const fijo = spec.overrides?.avatarFijo;
