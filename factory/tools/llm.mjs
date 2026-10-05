@@ -3,6 +3,7 @@
 //
 //   node factory/tools/llm.mjs guion  <slug> --tema "<tema>" [--seg 180]   → escribe el guion en spec.guion
 //   node factory/tools/llm.mjs direct <slug> [--intentos 3]                → DIRECTOR_PROMPT.md → dir_A.json…
+//   node factory/tools/llm.mjs meta   <slug>                               → public/<slug>_meta.json (90_deliver lo exige)
 //
 // `direct` corre 30_direct, y si la compuerta falla le devuelve los errores al modelo (sólo de su tramo).
 // Mide y loguea tokens y US$ de cada llamada: el número es lo que decide si esto sirve.
@@ -109,6 +110,26 @@ async function guion(slug, { tema, seg }) {
   console.log(`guion → ${spec.guion} (${txt.trim().length} car., objetivo ${chars}) · ${costo()}`);
 }
 
+// meta de YouTube para 90_deliver: el título es el de la tarjeta (spec.titulo); el modelo escribe descripción y tags.
+async function meta(slug) {
+  const spec = loadSpec(slug);
+  const g = fs.readFileSync(spec.guion, "utf8");
+  const txt = await chat([
+    { role: "system", content: `You write YouTube descriptions for the channel "${spec.style.nombre}". Dialect/voice rules: ${spec.style.dialecto}` },
+    { role: "user", content: [
+      `Video title: ${spec.titulo}`, "Full voice-over script:", g, "",
+      'Return ONLY a JSON object {"description": "...", "tags": ["..."]}.',
+      "description: 3 short paragraphs in the same voice as the script (hook, what the viewer learns, invite to subscribe). No links, no prices, never promise anything free, no hashtags spam (max 3 at the end).",
+      "tags: 10-15 search phrases, lowercase.",
+    ].join("\n") },
+  ], { json: true, maxTokens: 4000 });
+  const j = JSON.parse(txt.slice(txt.indexOf("{"), txt.lastIndexOf("}") + 1));
+  if (!j.description) throw new Error("el modelo no devolvió description");
+  const out = slugPaths(slug).meta;
+  fs.writeFileSync(out, JSON.stringify({ title: spec.titulo, description: j.description, tags: j.tags || [] }, null, 1));
+  console.log(`meta → ${out} · ${costo()}`);
+}
+
 function correr30(slug) {
   const r = spawnSync(process.execPath, [path.join(ROOT, "factory", "run.mjs"), "run", slug, "--from", "30_direct", "--hasta", "30_direct"], { encoding: "utf8", env: process.env });
   return { code: r.status, log: (r.stdout || "") + (r.stderr || "") };
@@ -180,5 +201,6 @@ async function direct(slug, { intentos, seguir = false, extra = [] }) {
 const [cmd, slug, ...rest] = process.argv.slice(2);
 const opt = (k, d) => { const i = rest.indexOf(`--${k}`); return i >= 0 ? rest[i + 1] : d; };
 if (cmd === "guion") await guion(slug, { tema: opt("tema"), seg: Number(opt("seg", 180)) });
+else if (cmd === "meta") await meta(slug);
 else if (cmd === "direct") await direct(slug, { intentos: Number(opt("intentos", 3)), seguir: rest.includes("--seguir"), extra: rest.filter((_, i) => rest[i - 1] === "--extra") });
-else { console.log("uso: llm.mjs guion <slug> --tema \"…\" [--seg 180] | llm.mjs direct <slug> [--intentos 3] [--seguir] [--extra \"error\"]…"); process.exitCode = 2; }
+else { console.log("uso: llm.mjs guion <slug> --tema \"…\" [--seg 180] | llm.mjs direct <slug> [--intentos 3] [--seguir] [--extra \"error\"]… | llm.mjs meta <slug>"); process.exitCode = 2; }
