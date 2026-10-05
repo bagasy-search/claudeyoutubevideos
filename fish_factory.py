@@ -1,4 +1,10 @@
 # fish_factory.py — voz clonada con Fish s2.1-pro-free. ES EL COMPARTIDO: lo llama
+import subprocess as _sp, os as _os
+if _os.name == "nt":  # sin ventanas de consola para ffmpeg/ffprobe (lanzado en segundo plano parpadeaba la terminal)
+    _P0 = _sp.Popen.__init__
+    def _p(self, *a, **k):
+        k.setdefault("creationflags", 0x08000000); _P0(self, *a, **k)
+    _sp.Popen.__init__ = _p
 # factory/phases/10_voice.mjs. Naci como copia de fish_factory_rkfob.py (multi-referencia) y
 # volvi a ser el generico el 16-sep-2026: acepta `--voice <id>` leyendo fish_voices.json,
 # escribe `status` en el manifest y arma `master.wav` (sin eso 10_voice muere con 0 bloques).
