@@ -1,0 +1,98 @@
+# CHAT CON EL AGENTE QWEN por issues de GitHub (el historial ES el hilo del issue; la app de GitHub avisa).
+# Escribí "@qwen …" al abrir un issue o en un comentario. Sólo responde al dueño/miembros del repo.
+# El agente (Qwen Code + la memoria clonada de Claude) trabaja en la rama qwen/issue-<n>, abre un PR con
+# los cambios, sube los videos de prueba a un release y te contesta en el issue. Para un VIDEO entero
+# dispara video.yml (no lo hace él a mano).
+name: agente
+
+on:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: qwen-issue-${{ github.event.issue.number }}
+
+jobs:
+  agente:
+    if: >-
+      !github.event.issue.pull_request &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association || github.event.issue.author_association) &&
+      contains(github.event.comment.body || github.event.issue.body, '@qwen')
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ github.token }}
+      N: ${{ github.event.issue.number }}
+      LLM_MODEL: qwen3.8-max
+    steps:
+      - uses: actions/checkout@v5
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v5
+        with: { node-version: "22" }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: avisar que arrancó
+        run: gh issue comment "$N" --body "🤖 Qwen está trabajando en esto… ([ver progreso](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}))"
+      - name: entorno (claves, assets y memoria desde claude-brain)
+        env: { BRAIN_TOKEN: "${{ secrets.BRAIN_TOKEN }}", GIT_TERMINAL_PROMPT: "0" }
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg jq >/dev/null
+          [ -n "$BRAIN_TOKEN" ] || { gh issue comment "$N" --body "⛔ Falta el secreto BRAIN_TOKEN (ver docs/QWEN_SIN_CLAUDE.md)"; exit 1; }
+          bash scripts/nube_setup.sh > /tmp/setup.log 2>&1 || true
+          [ -f .env ] || { gh issue comment "$N" --body "⛔ No pude traer las claves de claude-brain"; exit 1; }
+          bash scripts/ci_secretos.sh mask
+          pip install -q fish-audio-sdk faster-whisper "rembg[cpu]" opencv-python-headless >/dev/null 2>&1 || true
+          npm install -g @qwen-code/qwen-code >/dev/null 2>&1
+      - name: rama de trabajo del issue
+        run: |
+          git config user.name "fabrica-qwen"; git config user.email "fabrica-qwen@users.noreply.github.com"
+          if git ls-remote --exit-code origin "qwen/issue-$N" >/dev/null 2>&1; then git fetch -q origin "qwen/issue-$N" && git checkout -q "qwen/issue-$N"; else git checkout -q -b "qwen/issue-$N"; fi
+      - name: el agente trabaja
+        run: |
+          mkdir -p _work/qwen_out
+          gh issue view "$N" --comments > /tmp/hilo.txt
+          cat > /tmp/tarea.txt <<EOF
+          Sos el agente de la fábrica de videos del creador (repo video2). Te habla por el issue #$N de GitHub; abajo está la conversación COMPLETA. Respondé al ÚLTIMO mensaje que dice @qwen.
+          Reglas:
+          - Seguí QWEN.md y la memoria/skills de ~/.qwen. Español rioplatense.
+          - Si te piden un VIDEO ENTERO: NO lo armes a mano. Dispará el workflow:
+            gh workflow run video.yml -f canal=<estilo de factory/styles> -f titulo="<título>" -f tema="<tema>" -f minutos=<n> -f issue=$N
+            y contestá que arrancó (tarda 30-90 min y avisa en este mismo issue).
+          - Si te piden un COMPONENTE, un estilo o arreglar algo: hacelo en el repo, probalo (tsc + render de prueba con Remotion) y dejá los mp4 de prueba en _work/qwen_out/.
+          - No hagas git commit ni push (lo hace el workflow). No gastes en OpenAI ni RunPod salvo que te lo pidan.
+          - Al final escribí un resumen corto para el creador: qué hiciste, qué archivos, y qué tiene que mirar.
+          ── Conversación ──
+          $(cat /tmp/hilo.txt)
+          EOF
+          bash scripts/qwen_agente.sh "$(cat /tmp/tarea.txt)" --max 90m > /tmp/salida.txt 2>&1 || true
+          bash scripts/ci_secretos.sh tapar < /tmp/salida.txt | tail -c 60000 > /tmp/salida_tapada.txt
+          cat /tmp/salida_tapada.txt
+      - name: publicar resultados y contestar
+        if: always()
+        run: |
+          RESP="$(head -c 55000 /tmp/salida_tapada.txt 2>/dev/null || echo 'sin salida')"
+          EXTRA=""
+          if ls _work/qwen_out/*.mp4 >/dev/null 2>&1; then
+            gh release view "qwen-issue-$N" >/dev/null 2>&1 || gh release create "qwen-issue-$N" --title "Pruebas del issue #$N" --notes "Videos de prueba del agente Qwen" --prerelease
+            for f in _work/qwen_out/*.mp4; do gh release upload "qwen-issue-$N" "$f" --clobber; EXTRA="$EXTRA
+          🎬 https://github.com/${{ github.repository }}/releases/download/qwen-issue-$N/$(basename "$f")"; done
+          fi
+          git add -A -- . ':!_work' ':!public' ':!node_modules' ':!.env' ':!.env.local' 2>/dev/null
+          if ! git diff --cached --quiet; then
+            git commit -qm "qwen (issue #$N): $(gh issue view "$N" --json title -q .title | head -c 60)"
+            git push -q origin "qwen/issue-$N"
+            PR=$(gh pr list --head "qwen/issue-$N" --json url -q '.[0].url')
+            [ -n "$PR" ] || PR=$(gh pr create --head "qwen/issue-$N" --title "Qwen: $(gh issue view "$N" --json title -q .title)" --body "Cambios del agente Qwen para #$N. Revisá los videos de prueba en el issue antes de mergear.")
+            EXTRA="$EXTRA
+          🔀 Cambios en $PR (mergealo cuando te guste)"
+          fi
+          printf '%s\n%s\n' "$RESP" "$EXTRA" | bash scripts/ci_secretos.sh tapar > /tmp/comentario.md
+          gh issue comment "$N" --body-file /tmp/comentario.md

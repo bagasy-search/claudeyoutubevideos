@@ -88,7 +88,7 @@ async function guion(slug, { tema, seg }) {
       `Near the end include, word for word, a sentence that starts with "${spec.cta.ancla}" and invites to subscribe.`,
       "Do not mention prices of any product of the channel, links or anything free.",
     ].join("\n") },
-  ], { maxTokens: 4000 });
+  ], { maxTokens: Math.ceil(chars / 3) * 2 + 8000 });   // 20 min ≈ 16k car.: el tope fijo de 4000 lo cortaba
   fs.mkdirSync(path.dirname(spec.guion), { recursive: true });
   fs.writeFileSync(spec.guion, txt.trim() + "\n");
   console.log(`guion → ${spec.guion} (${txt.trim().length} car., objetivo ${chars}) · ${costo()}`);
