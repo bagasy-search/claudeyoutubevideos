@@ -145,7 +145,18 @@ function renderLocal() {
   const r = sh("npx", ["remotion", "render", `src/index_${slug}.tsx`, comp, out, "--concurrency", String(Math.max(1, (Number(sh("nproc", []).out) || 2))),
     ...(env("REMOTION_CHROME") ? ["--browser-executable", env("REMOTION_CHROME")] : [])]);
   if (r.code !== 0) fin(1, `render local falló: ${r.out.split("\n").filter((l) => /Error/.test(l))[0] || r.out.slice(-300)}`);
-  fin(0, `✅ VIDEO LISTO: ${out}`);
+  if (env("FACTORY_DELIVER") !== "1") fin(0, `✅ VIDEO LISTO: ${out}`);
+  accion(`✅ VIDEO LISTO: ${out} → entrega en la nube (meta + release + Bagasy)`);
+  if (!fs.existsSync(P.meta)) {
+    const m = sh(process.execPath, [path.join(ROOT, "factory", "tools", "llm.mjs"), "meta", slug], { LLM_MODEL: MODELO, LLM_USD_IN: String(USD_IN), LLM_USD_OUT: String(USD_OUT), LLM_THINK: "0" });
+    const c = m.out.match(/US\$ ([\d.]+)/);
+    if (c) { st.usd += Number(c[1]); guardar(); }
+    if (m.code !== 0) fin(1, `meta: ${m.out.slice(-300)}`);
+    accion(`meta escrita por ${MODELO}${c ? ` · US$ ${c[1]}` : ""}`);
+  }
+  const e = sh(process.execPath, [path.join(ROOT, "factory", "tools", "entrega_nube.mjs"), slug]);
+  if (e.code !== 0) fin(1, `entrega falló: ${(e.out.match(/⛔ entrega: .*/) || [e.out.slice(-300)])[0]}`);
+  fin(0, (e.out.match(/✅ ENTREGADO: .*/) || ["✅ ENTREGADO"])[0]);
 }
 
 // ── el bucle ─────────────────────────────────────────────────────────────────────────────────────
