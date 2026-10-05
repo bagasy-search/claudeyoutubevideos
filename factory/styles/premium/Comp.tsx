@@ -32,6 +32,7 @@ import { RevealCards } from "../VideoEdit/scenes/RevealCards";
 import { GridDown, BreakerPanel, DispatchBoard, LoadSurge, FridgeClock, CoinCup, GenDistance, COAlarm, BackfeedFlow, StepPotential, RuleCard, HazardStamp, RoomHeat, RecapClipboard, CamStamp } from "../VideoEdit/scenes/HarlanLine";
 import { COHouseCutaway, StackEffect, BloodGrab, GenVsCars, YardPlan, HiddenKillers, AlarmMap, SameHeadache, TwoAMDecision } from "../VideoEdit/scenes/HarlanGen";
 import { BlackoutBox, BoxItemCard, BatteryCold, CrankRadio, BedLayers, WarmerMap, WaterMath, FridgeThermo, FlowerPotMyth, SafetyBox, FinePrint, BoxReceipt } from "../VideoEdit/scenes/HarlanBox";
+import { OutletDangerBoard } from "../VideoEdit/scenes/HarlanHeat";
 import { OrderTicket, Stamp86, PotatoXRay, CrustMeter, SplitTest, MenuBoard, BurnedQuote, ReceiptTimeline, KitchenTimer, FrostTimer, NeonSign, CashCounter } from "../VideoEdit/scenes/LouDiner";
 
 const MAPA: Record<string, React.FC<any>> = {
@@ -43,6 +44,7 @@ const MAPA: Record<string, React.FC<any>> = {
   OrderTicket, Stamp86, PotatoXRay, CrustMeter, SplitTest, MenuBoard, BurnedQuote, ReceiptTimeline, KitchenTimer, FrostTimer, NeonSign, CashCounter,
   COHouseCutaway, StackEffect, BloodGrab, GenVsCars, YardPlan, HiddenKillers, AlarmMap, SameHeadache, TwoAMDecision,
   BlackoutBox, BoxItemCard, BatteryCold, CrankRadio, BedLayers, WarmerMap, WaterMath, FridgeThermo, FlowerPotMyth, SafetyBox, FinePrint, BoxReceipt,
+  OutletDangerBoard,
   GridDown, BreakerPanel, DispatchBoard, LoadSurge, FridgeClock, CoinCup, GenDistance, COAlarm, BackfeedFlow, StepPotential, RuleCard, HazardStamp, RoomHeat, RecapClipboard, CamStamp,
 };
 
