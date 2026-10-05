@@ -1,5 +1,5 @@
 # CHAT CON EL AGENTE QWEN por issues de GitHub (el historial ES el hilo del issue; la app de GitHub avisa).
-# Escribí "@qwen …" al abrir un issue o en un comentario. Sólo responde al dueño/miembros del repo.
+# Escribí "@deepseek …" (o "@qwen …") al abrir un issue o en un comentario. Sólo responde al dueño/miembros del repo.
 # El agente (Qwen Code + la memoria clonada de Claude) trabaja en la rama qwen/issue-<n>, abre un PR con
 # los cambios, sube los videos de prueba a un release y te contesta en el issue. Para un VIDEO entero
 # dispara video.yml (no lo hace él a mano).
@@ -25,13 +25,16 @@ jobs:
     if: >-
       !github.event.issue.pull_request &&
       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association || github.event.issue.author_association) &&
-      contains(github.event.comment.body || github.event.issue.body, '@qwen')
+      (contains(github.event.comment.body || github.event.issue.body, '@deepseek') ||
+       contains(github.event.comment.body || github.event.issue.body, '@qwen'))
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:
       GH_TOKEN: ${{ github.token }}
       N: ${{ github.event.issue.number }}
-      LLM_MODEL: qwen3.8-max
+      LLM_MODEL: deepseek-v4-pro   # el motor del agente sigue siendo Qwen Code (CLI); el MODELO es DeepSeek
+      LLM_USD_IN: "0.43"
+      LLM_USD_OUT: "0.87"
     steps:
       - uses: actions/checkout@v5
         with: { fetch-depth: 0 }
@@ -40,7 +43,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - name: avisar que arrancó
-        run: gh issue comment "$N" --body "🤖 Qwen está trabajando en esto… ([ver progreso](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}))"
+        run: gh issue comment "$N" --body "🤖 El agente (DeepSeek) está trabajando en esto… ([ver progreso](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}))"
       - name: entorno (claves, assets y memoria desde claude-brain)
         env: { BRAIN_TOKEN: "${{ secrets.BRAIN_TOKEN }}", GIT_TERMINAL_PROMPT: "0" }
         run: |
@@ -60,7 +63,7 @@ jobs:
           mkdir -p _work/qwen_out
           gh issue view "$N" --comments > /tmp/hilo.txt
           cat > /tmp/tarea.txt <<EOF
-          Sos el agente de la fábrica de videos del creador (repo video2). Te habla por el issue #$N de GitHub; abajo está la conversación COMPLETA. Respondé al ÚLTIMO mensaje que dice @qwen.
+          Sos el agente de la fábrica de videos del creador (repo video2). Te habla por el issue #$N de GitHub; abajo está la conversación COMPLETA. Respondé al ÚLTIMO mensaje que dice @deepseek o @qwen.
           Reglas:
           - Seguí QWEN.md y la memoria/skills de ~/.qwen. Español rioplatense.
           - Si te piden un VIDEO ENTERO: NO lo armes a mano. Dispará el workflow:

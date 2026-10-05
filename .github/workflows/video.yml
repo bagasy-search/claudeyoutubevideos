@@ -38,7 +38,9 @@ jobs:
     timeout-minutes: 340
     env:
       GH_TOKEN: ${{ github.token }}
-      LLM_MODEL: qwen3.8-max
+      LLM_MODEL: deepseek-v4-pro   # 05-oct: terminó hl20ds (15 min) por US$0,97; qwen descartado
+      LLM_USD_IN: "0.43"
+      LLM_USD_OUT: "0.87"
       LLM_THINK: "0"
       FACTORY_WORK: /tmp/fw
       FACTORY_STATE: /tmp/fw/_state
