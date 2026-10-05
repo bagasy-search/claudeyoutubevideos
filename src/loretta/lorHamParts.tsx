@@ -35,7 +35,7 @@ export const useHamMats = () => useMemo(() => {
     score: new THREE.MeshStandardMaterial({ map: score, transparent: true, opacity: 0, roughness: 0.6, depthWrite: false }),
     clove: new THREE.MeshStandardMaterial({ color: "#2A1A12", roughness: 0.5 }),
     alu: new THREE.MeshStandardMaterial({ color: "#C9CCD0", roughness: 0.38, metalness: 0.65, side: THREE.DoubleSide }),
-    juice: new THREE.MeshStandardMaterial({ color: "#C98A2A", roughness: 0.15, metalness: 0.05, transparent: true, opacity: 0.92 }),
+    juice: new THREE.MeshStandardMaterial({ color: "#B87A24", roughness: 0.12, metalness: 0.05, transparent: true, opacity: 0.85 }),
   };
 }, []);
 

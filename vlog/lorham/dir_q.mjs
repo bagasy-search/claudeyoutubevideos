@@ -1,0 +1,31 @@
+// Consultas de stock REAL (Pexels) por toma: nombre bi → query en inglés. El stock ELEGIDO (hoja de contactos + juez de visión)
+// va a public/broll/lorham_st/<nombre>.mp4 y manda sobre la foto gpt de esa toma (ver gen_timeline.mjs).
+export const Q = {
+  b_juice: "slicing a glazed ham with a knife", b_hamwhole: "glazed ham on a table steam", b_ovenopen: "taking a roasting pan out of the oven",
+  b_package: "unwrapping a ham from plastic", b_oven350: "oven temperature dial turning", b_glazedump: "pouring glaze over a ham",
+  b_secondhelp: "serving ham at a buffet", b_gravyboat: "pouring gravy over sliced meat", b_basementkitchen: "church volunteers cooking in a large kitchen",
+  b_iowachurch: "small white country church rural countryside", b_hamrows: "several hams in roasting pans", b_cups: "measuring cups and spoons on a kitchen table",
+  b_fridgeham: "taking food out of a refrigerator", b_glazepacket: "pouring syrup glaze over a ham", b_sugarburn: "burnt caramel in a pan smoke",
+  b_gravycover: "pouring gravy on a plate of sliced ham", b_threehams: "ham on a kitchen counter", b_spiralcut: "spiral sliced ham on a cutting board",
+  b_soakham: "ham soaking in water in a large pot", b_sidedishes: "buffet table with casseroles and side dishes", b_thermometer: "meat thermometer in a roast",
+  b_oventurn: "turning the oven dial", b_foilroll: "pulling aluminum foil from a roll", b_ovenshut: "putting a roasting pan in the oven",
+  b_settable: "setting the dining table with plates", b_potroast: "pot roast simmering in a dutch oven", b_sandwich: "ham sandwich on white bread",
+  b_glazebubble: "glaze bubbling in a saucepan", b_glazeready: "brushing glaze with a pastry brush", b_eatingpaper: "family eating dinner at a table",
+  b_pinkwet: "removing foil from a roasting pan steam", b_brushbetween: "brushing glaze on a ham", b_ovenback: "putting a ham back in the oven",
+  b_shine: "glazed ham close up", b_pullham: "taking a ham out of the oven", b_family: "family waiting for dinner in the kitchen",
+  b_puddle: "carving ham juice on cutting board", b_firstslice: "slice of ham on a plate", b_spiralslices: "slicing spiral ham",
+  b_carvedown: "carving a roast ham with a knife", b_knifebone: "carving ham along the bone", b_legalpad: "writing a list on a notepad with a pencil",
+  b_counterthaw: "ham in a roasting pan on a kitchen counter", b_ovenlies: "oven thermometer inside an oven", b_cloves: "pushing cloves into a ham",
+  b_slowcooker: "slow cooker with ham", b_broiler: "broiling in an oven glowing coil", b_frozenham: "frozen meat in a refrigerator",
+  b_coldwater: "thawing meat in a sink of cold water", b_boneless: "boneless ham on a cutting board", b_everybite: "empty plate with fork and knife",
+  b_fourhams: "church kitchen cooking for a large group", b_morningstart: "kitchen volunteers cooking in the morning", b_shingles: "slices of ham arranged on a platter",
+  b_warmthrough: "putting a covered dish in an oven", b_smallplatters: "serving food at a church buffet", b_deadoven: "looking into an oven",
+  b_laundrybasket: "carrying a covered dish in a car", b_fourbowls: "small bowls of sauces on a table", b_pineapplerings: "ham with pineapple rings",
+  b_colapour: "pouring cola into a saucepan", b_colaglaze: "dark sticky glaze on ham", b_maple: "pouring maple syrup into a saucepan",
+  b_apricot: "mixing apricot jam and mustard in a saucepan", b_ruinedham: "burnt food on a platter", b_ovenhot: "oven dial set to high temperature",
+  b_wrapham: "wrapping leftovers in foil putting in the refrigerator", b_hamsalad: "ham salad sandwich", b_soupbowl: "bowl of bean soup with ham",
+  b_scalloped: "scalloped potatoes casserole", b_panjuice: "pan drippings in a roasting pan", b_butter: "butter melting in a saucepan",
+  b_pourcup: "pouring juice into a roasting pan", b_platterhour: "buffet platter of sliced ham", b_finalham: "glazed ham on a platter on a table",
+  b_rescue: "pouring juice over sliced ham in a baking dish", b_settle: "foil covered roast resting on a counter",
+};
+export const Q2 = {};

@@ -17,18 +17,18 @@ export const LorHam3D: React.FC<{ stage?: "score" | "juice"; title?: string; sub
   const mats = useHamMats();
   const table = useMemo(() => new THREE.MeshStandardMaterial({ map: canvasTex((c, S) => { c.fillStyle = "#FFFDF7"; c.fillRect(0, 0, S, S); c.fillStyle = "rgba(200,50,58,0.5)"; const q = S / 8; for (let k = 0; k < 8; k += 2) { c.fillRect(k * q, 0, q, S); c.fillRect(0, k * q, S, q); } }, 512, 5), roughness: 0.9 }), []);
   const slice = useMemo(() => new THREE.SphereGeometry(1, 28, 18), []);
-  const slMat = useMemo(() => new THREE.MeshStandardMaterial({ color: "#E7A495", roughness: 0.85 }), []);
-  const sheen = useMemo(() => new THREE.MeshStandardMaterial({ color: "#D99A33", roughness: 0.12, metalness: 0.05, transparent: true, opacity: 0, depthWrite: false }), []);
+  const slMat = useMemo(() => new THREE.MeshStandardMaterial({ color: "#E58C84", roughness: 0.8 }), []);
+  const sheen = useMemo(() => new THREE.MeshStandardMaterial({ color: "#B8782E", roughness: 0.1, metalness: 0.05, transparent: true, opacity: 0, depthWrite: false }), []);
   const plate = useMemo(() => new THREE.MeshStandardMaterial({ color: "#FFFDF7", roughness: 0.3 }), []);
   const rim = useMemo(() => new THREE.MeshStandardMaterial({ color: "#E8C45A", roughness: 0.4, metalness: 0.2 }), []);
   const T = durationInFrames;
-  const ang = stage === "score" ? 0.25 + f * 0.014 : 0.1 + f * 0.007, dist = interpolate(f, [0, T], [8.6, 6.9], cl), elev = stage === "score" ? 0.55 : 0.78;
+  const ang = stage === "score" ? 0.25 + f * 0.014 : 0.1 + f * 0.007, dist = interpolate(f, [0, T], [11.6, 9.4], cl), elev = stage === "score" ? 0.55 : 0.78;
   const camPos: [number, number, number] = [Math.sin(ang) * dist * Math.cos(elev), dist * Math.sin(elev), Math.cos(ang) * dist * Math.cos(elev)];
   const titleIn = interpolate(f, [8, 26], [0, 1], { ...cl, easing: Easing.bezier(0.16, 1, 0.3, 1) });
   const scoreP = interpolate(f, [18, T * 0.48], [0, 1], { ...cl, easing: Easing.inOut(Easing.quad) });
   const clovesP = interpolate(f, [T * 0.5, T * 0.86], [0, 1], cl);
   const juiceP = interpolate(f, [30, T * 0.78], [0, 1], { ...cl, easing: Easing.inOut(Easing.quad) });
-  sheen.opacity = 0.62 * juiceP; slMat.color.set(juiceP > 0.5 ? "#E9A08F" : "#DDA192");
+  sheen.opacity = 0.3 * juiceP; slMat.color.set(juiceP > 0.5 ? "#E8918A" : "#D9A097");
   const spoonY = 2.4 - Math.min(1, interpolate(f, [8, 30], [0, 1], cl)) * 0.9;
   return (
     <AbsoluteFill style={{ backgroundColor: "#EFE3C8" }}>
@@ -48,9 +48,9 @@ export const LorHam3D: React.FC<{ stage?: "score" | "juice"; title?: string; sub
           <>
             <mesh material={plate} position={[0, 0.06, 0]}><cylinderGeometry args={[3.9, 3.6, 0.12, 64]} /></mesh>
             <mesh material={rim} position={[0, 0.125, 0]} rotation={[-Math.PI / 2, 0, 0]}><ringGeometry args={[3.55, 3.8, 64]} /></mesh>
-            {Array.from({ length: ROWS * COLS }).map((_, i) => { const r = Math.floor(i / COLS), c = i % COLS; const x = (c - (COLS - 1) / 2) * 1.0 + (r % 2 ? 0.2 : 0), z = (r - (ROWS - 1) / 2) * 1.05; const lift = 0.07 + c * 0.012; const appear = interpolate(f, [4 + i * 1.5, 12 + i * 1.5], [0, 1], cl); return (
+            {Array.from({ length: ROWS * COLS }).map((_, i) => { const r = Math.floor(i / COLS), c = i % COLS; const x = (c - (COLS - 1) / 2) * 1.0 + (r % 2 ? 0.2 : 0), z = (r - (ROWS - 1) / 2) * 1.25; const lift = 0.07 + c * 0.012; const appear = interpolate(f, [4 + i * 1.5, 12 + i * 1.5], [0, 1], cl); return (
               <group key={i} position={[x, 0.2 + lift, z]} rotation={[-0.2, 0, 0]} scale={appear}>
-                <mesh geometry={slice} material={slMat} scale={[0.62, 0.07, 0.5]} />
+                <mesh geometry={slice} material={slMat} scale={[0.6, 0.07, 0.48]} />
                 <mesh geometry={slice} material={sheen} scale={[0.64, 0.075, 0.52]} position={[0, 0.006, 0]} />
               </group>); })}
             <mesh material={mats.juice} position={[0.2, (spoonY + 0.3) / 2, 0.1]} scale={[1, juiceP > 0 && juiceP < 1 ? 1 : 0.001, 1]}><cylinderGeometry args={[0.06, 0.06, spoonY - 0.3, 12]} /></mesh>

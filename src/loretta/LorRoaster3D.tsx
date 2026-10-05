@@ -10,7 +10,7 @@ import { canvasTex } from "./lor3dutil";
 import { Cam, HamMesh, PanMesh, PAN, domeH, useHamMats } from "./lorHamParts";
 
 const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
-const FW = 4.9, FD = 3.8, SX = 36, SZ = 28;
+const FW = 4.9, FD = 3.8, SX = 70, SZ = 54;
 
 export const LorRoaster3D: React.FC<{ stage?: "juice" | "foil"; title?: string; sub?: string }> = ({ stage = "foil", title, sub }) => {
   const f = useCurrentFrame(); const { width, height, durationInFrames } = useVideoConfig();
@@ -36,10 +36,10 @@ export const LorRoaster3D: React.FC<{ stage?: "juice" | "foil"; title?: string; 
       const out = Math.max(ox, oz);
       let yEnd = Math.max(PAN.wall + 0.06, domeH(x, z) + PAN.thick + 0.05);
       if (out > 0) yEnd = PAN.wall + 0.02 - out * 1.1;
-      const rip = Math.sin(x * 2.3 + z * 1.7 + 1.3) * 0.18 * (1 - drop) + Math.sin(x * 5 + z * 4) * 0.05 * (1 - drop);
+      const rip = Math.sin(x * 2.3 + z * 1.7 + 1.3) * 0.12 * (1 - drop) + Math.sin(x * 5 + z * 4) * 0.03 * (1 - drop);
       const yStart = 2.6 + rip + Math.sin(x * 1.1) * 0.25;
       let y = yStart + (yEnd - yStart) * drop;
-      if (out > -0.25 && out < 0.5) y += Math.sin((Math.abs(x) > Math.abs(z) * (PAN.w / PAN.d) ? z : x) * 14) * 0.035 * crimp; // el crimpado
+      if (out > -0.25 && out < 0.5) y += Math.sin((Math.abs(x) > Math.abs(z) * (PAN.w / PAN.d) ? z : x) * 14) * 0.02 * crimp; // el crimpado
       pos.setXYZ(i, x, y, z);
     }
     pos.needsUpdate = true; foilGeo.computeVertexNormals();
