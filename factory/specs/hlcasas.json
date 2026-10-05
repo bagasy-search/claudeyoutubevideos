@@ -623,7 +623,11 @@
       "railTotal": 12,
       "railLabel": "No."
     },
-    "agnesFlash": {}
+    "agnesFlash": {},
+    "apertura": {
+      "miniatura": false,
+      "_": "piloto: sin motor de imagen pago para la miniatura"
+    }
   },
   "bagasy": {
     "channelKey": "draft:harlanlineman",
