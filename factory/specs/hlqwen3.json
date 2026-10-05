@@ -624,9 +624,13 @@
       "railLabel": "No."
     },
     "agnesFlash": {},
-    "apertura": {
-      "miniatura": false,
-      "_": "prueba hlqwen3 sin OpenAI: sin miniatura de apertura"
-    }
+    "avatarFijo": [
+      "p000",
+      "p003",
+      "p007",
+      "p010",
+      "p023",
+      "p029"
+    ]
   }
 }
