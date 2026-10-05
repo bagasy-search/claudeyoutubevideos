@@ -29,6 +29,8 @@ export function directorPrompt({ slug, spec, style, mom, secs }) {
     "- Mencionar un atributo en positivo invoca su cliché: describí objetos por GEOMETRÍA y usá claves de `glosario.json` para lo recurrente.",
     "- Toda frase de más de 7 s lleva un SEGUNDO plano `<n>x` (si no, queda un plano clavado).",
     spec.modo === "avatar" ? "- `p000` es `{\"n\":\"p000\",\"t\":\"avatar\"}` (el video abre con el avatar hablando). Avatar visible ≈25-30 % de los momentos, repartido." : "- Modo narrador: sin planos avatar.",
+    ...(Array.isArray(spec.overrides?.avatarFijo) ? [`- ⛔ AVATAR FIJO: los momentos de avatar son EXACTAMENTE ${spec.overrides.avatarFijo.join(", ")} (el avatar ya está grabado). Ni uno más ni uno menos.`] : []),
+    "- Un segundo plano `x` NUNCA es avatar: es siempre un plano de imagen.",
     "- Encuadres variados: close ≤20 %, wide ≥25 %. Racha máxima del mismo lugar ≤6.",
     "- ⛔ RITMO HUMANO, NO METRÓNOMO: la duración de cada plano la decide LO QUE SE DICE, no un reloj.",
     "  Momento rápido o que enumera → plano corto. Momento que explica o que merece mirarse → plano",
@@ -134,6 +136,25 @@ export default {
     const gf = path.join(P.dirDir, "glosario.json");
     const glosario = fs.existsSync(gf) ? JSON.parse(fs.readFileSync(gf, "utf8")) : {};
     const r = compose({ mom, tramos, style, glosario, secs });
+    // ⛔ Medido 04-oct (hlqwen3, qwen3.8-max): un segundo plano `x` de AVATAR pasaba esta fase y recién
+    //    reventaba en 60_build ("MISMO asset" — el build no usa avatar como segundo plano). Se caza acá,
+    //    donde el director todavía puede corregirlo gratis.
+    for (const x of tramos.filter((t) => /x$/.test(t.n || "") && t.t === "avatar"))
+      r.errores.push(`${x.n}: un segundo plano (x) NO puede ser avatar — el montaje no lo usa y repite la foto del principal. Hacelo un plano de IMAGEN (c, e, l, m, s, q/mo)`);
+    // Avatar FIJO (spec.overrides.avatarFijo): reusar un reel ya pagado. Cambiar el set de momentos de
+    // avatar cambia las ventanas y obliga a otro /run de RunPod.
+    const fijo = spec.overrides?.avatarFijo;
+    if (Array.isArray(fijo)) {
+      const av = new Set(tramos.filter((t) => t.t === "avatar" && !/x$/.test(t.n || "")).map((t) => t.n));
+      const faltan = fijo.filter((n) => !av.has(n)), sobran = [...av].filter((n) => !fijo.includes(n));
+      if (faltan.length || sobran.length) r.errores.push(`avatar FIJO: los momentos de avatar tienen que ser EXACTAMENTE ${fijo.join(", ")}${faltan.length ? ` · faltan ${faltan.join(", ")}` : ""}${sobran.length ? ` · sobran ${sobran.join(", ")} (hacelos planos de imagen)` : ""}`);
+    }
+    // Premium sin componentes = sólo fotos (medido 04-oct: deepseek-v4-pro dirigió 0 comps y pasó todo).
+    if ((style.montaje || "vlog-crudo") === "premium") {
+      const minComps = Number(spec.overrides?.compsMin ?? Math.ceil(mom.length / 10));
+      const nComps = tramos.filter((t) => t.k).length;
+      if (nComps < minComps) r.errores.push(`componentes: hay ${nComps} y el montaje premium pide al menos ${minComps} (~1 cada 8-10 momentos). Agregá "k": {"kind": …, "props": {…}} del kit en momentos que den un dato, una comparación o una lista`);
+    }
     for (const e of r.errores.slice(0, 20)) log("  ⛔ " + e);
     assertMeasured("direccionErrores", r.errores.length, { max: 0, allowZero: true, log });
     assertMeasured("momentosCubiertos", r.medido.cubiertos, { min: mom.length, total: mom.length, log });

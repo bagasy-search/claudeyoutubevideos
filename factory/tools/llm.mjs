@@ -116,7 +116,7 @@ function traducir(e) {
   return H[g] ? `${H[g]()} (${e.trim()})` : e;
 }
 
-async function direct(slug, { intentos, seguir = false }) {
+async function direct(slug, { intentos, seguir = false, extra = [] }) {
   const P = slugPaths(slug);
   const pf = path.join(P.dirDir, "DIRECTOR_PROMPT.md");
   if (!fs.existsSync(pf)) throw new Error(`no existe ${pf}: corré antes run ${slug} --hasta 30_direct`);
@@ -140,10 +140,12 @@ async function direct(slug, { intentos, seguir = false }) {
 
   for (let n = 1; n <= intentos; n++) {
     const r = correr30(slug);
-    const errores = r.log.split("\n").filter((l) => /⛔|GATE|Error|falló|sin segundo plano/.test(l));
+    // `extra`: errores de fases POSTERIORES (p. ej. 60_build) que el piloto automático le devuelve al
+    // director. Cuentan en la PRIMERA vuelta aunque 30_direct pase.
+    const errores = [...(n === 1 ? extra : []), ...r.log.split("\n").filter((l) => /⛔|GATE|Error|falló|sin segundo plano/.test(l))];
     console.log(`── 30_direct intento ${n}: exit ${r.code}\n${errores.slice(0, 25).join("\n")}`);
     // El exit es el del VIDEO entero (puede fallar 10_voice sin Fish): decide la línea de 30_direct.
-    if (/30_direct ✓ hecha/.test(r.log)) { console.log(`✅ la dirección de ${MODEL} pasó TODAS las compuertas · ${costo()}`); return; }
+    if (/30_direct ✓ hecha/.test(r.log) && !(n === 1 && extra.length)) { console.log(`✅ la dirección de ${MODEL} pasó TODAS las compuertas · ${costo()}`); return; }
     if (n === intentos) break;
     // Devuelve a cada tramo sus errores (los que nombran sus pNNN) + los globales.
     const nombres = (k) => new Set(tramos[k].map((l) => l.split("|")[1].trim()));
@@ -163,5 +165,5 @@ async function direct(slug, { intentos, seguir = false }) {
 const [cmd, slug, ...rest] = process.argv.slice(2);
 const opt = (k, d) => { const i = rest.indexOf(`--${k}`); return i >= 0 ? rest[i + 1] : d; };
 if (cmd === "guion") await guion(slug, { tema: opt("tema"), seg: Number(opt("seg", 180)) });
-else if (cmd === "direct") await direct(slug, { intentos: Number(opt("intentos", 3)), seguir: rest.includes("--seguir") });
-else { console.log("uso: llm.mjs guion <slug> --tema \"…\" [--seg 180] | llm.mjs direct <slug> [--intentos 3] [--seguir]"); process.exitCode = 2; }
+else if (cmd === "direct") await direct(slug, { intentos: Number(opt("intentos", 3)), seguir: rest.includes("--seguir"), extra: rest.filter((_, i) => rest[i - 1] === "--extra") });
+else { console.log("uso: llm.mjs guion <slug> --tema \"…\" [--seg 180] | llm.mjs direct <slug> [--intentos 3] [--seguir] [--extra \"error\"]…"); process.exitCode = 2; }

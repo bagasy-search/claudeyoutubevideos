@@ -52,6 +52,9 @@ async function runpodJob({ slug, parte, face, audio, prompt, jobsFile, outMp4, l
   const H = { Authorization: `Bearer ${env("RUNPOD_API_KEY", { required: true })}`, "Content-Type": "application/json" };
   let host = null;
   if (!jobs[parte]?.id) {
+    // Candado de gasto: con FACTORY_AVATAR_NO_PAGAR=1 (piloto automático reusando un reel ya pagado)
+    // un /run nuevo es un ERROR, nunca un gasto silencioso.
+    if (env("FACTORY_AVATAR_NO_PAGAR") === "1") throw new BlockedError(`RunPod ${parte}: haría falta un /run NUEVO (US$0,25) y FACTORY_AVATAR_NO_PAGAR=1 lo prohíbe — ¿cambiaron las ventanas de avatar?`, {});
     host = await hostear(slug, [[`face_${parte}.jpg`, face, "image/jpeg"], [`audio_${parte}.wav`, audio, "audio/wav"]], log);
     const body = { input: { prompt, image: host.urls[`face_${parte}.jpg`], audio: host.urls[`audio_${parte}.wav`], size: "480p" }, policy: { executionTimeout: 7_200_000 } };
     const r = await fetch("https://api.runpod.ai/v2/infinitetalk/run", { method: "POST", headers: H, body: JSON.stringify(body), signal: AbortSignal.timeout(60_000) });
