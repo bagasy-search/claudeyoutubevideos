@@ -158,7 +158,11 @@ function correr30(slug) {
 // Un GATE crudo ("avatarPctMomentos: midió=3 (min 10)") no le dice al modelo QUÉ cambiar: medido con
 // deepseek-v4-pro, devolvió la MISMA dirección dos veces. Se traduce a una orden concreta.
 function traducir(e) {
-  const m = e.match(/GATE (\w+): midió=([\d.]+) \((?:min ([\d.]+))?(?: · )?(?:max ([\d.]+))?/);
+  // ⛔ (05-oct, hlcasas) un 0 sale con OTRO formato ("<gate>: midió 0 — sin allowZero …") y llegaba crudo al
+  //    director, que no tenía cómo entenderlo: se quedó sin avatar y frenó la corrida. Mismos topes que 30_direct.
+  const cero = e.match(/(\w+): midió=?\s?0 (?:⛔ \(0 sin allowZero|— sin allowZero)/);
+  const m = cero ? [null, cero[1], "0", ...({ avatarPctMomentos: ["10", "45"] }[cero[1]] || ["?", "?"])]
+    : e.match(/GATE (\w+): midió=([\d.]+) \((?:min ([\d.]+))?(?: · )?(?:max ([\d.]+))?/);
   if (!m) return e;
   const [, g, v, min, max] = m;
   const H = {
@@ -198,7 +202,7 @@ async function direct(slug, { intentos, seguir = false, extra = [] }) {
     const r = correr30(slug);
     // `extra`: errores de fases POSTERIORES (p. ej. 60_build) que el piloto automático le devuelve al
     // director. Cuentan en la PRIMERA vuelta aunque 30_direct pase.
-    const errores = [...(n === 1 ? extra : []), ...r.log.split("\n").filter((l) => /⛔|GATE|Error|falló|sin segundo plano/.test(l))];
+    const errores = [...(n === 1 ? extra : []), ...r.log.split("\n").filter((l) => /⛔|GATE|Error|falló|sin segundo plano/.test(l) && !/✓\s*$/.test(l))];   // una compuerta que PASÓ no es un error
     console.log(`── 30_direct intento ${n}: exit ${r.code}\n${errores.slice(0, 25).join("\n")}`);
     // El exit es el del VIDEO entero (puede fallar 10_voice sin Fish): decide la línea de 30_direct.
     if (/30_direct ✓ hecha/.test(r.log) && !(n === 1 && extra.length)) { console.log(`✅ la dirección de ${MODEL} pasó TODAS las compuertas · ${costo()}`); return; }
