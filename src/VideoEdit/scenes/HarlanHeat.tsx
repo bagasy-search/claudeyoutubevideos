@@ -332,7 +332,7 @@ export const OutletDangerBoard: React.FC<{
                 opacity: rin, transform: `translateX(${(1 - rin) * -90}px) rotate(${(1 - rin) * -1.4}deg)` }}>
                 {/* fondo del renglón: se tiñe de rojo cuando lo cruza */}
                 <div style={{ position: "absolute", inset: 0, borderRadius: 12, background: cruzado ? "rgba(224,48,30,0.13)" : "rgba(255,255,255,0.035)",
-                  boxShadow: cruzado ? `inset 0 0 0 2px rgba(224,48,30,${0.35 + flash * 0.4})` : "inset 0 0 0 1px rgba(255,255,255,0.07)", transition: "none" }} />
+                  boxShadow: cruzado ? `inset 0 0 0 2px rgba(224,48,30,${0.35 + flash * 0.4})` : "inset 0 0 0 1px rgba(255,255,255,0.07)" }} />
                 {/* número de renglón */}
                 <div style={{ position: "absolute", left: 16, top: rowH / 2 - 26, width: 56, fontFamily: STENCIL, fontSize: 42, color: cruzado ? C.red : C.hivis, opacity: cruzado ? 0.9 : 0.75 }}>{String(i + 1).padStart(2, "0")}</div>
                 {/* ícono + cruz roja */}
