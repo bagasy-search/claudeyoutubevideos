@@ -46,11 +46,14 @@ const estados = (log) => Object.fromEntries([...log.matchAll(/^\s{2}(\d\d_\w+)\s
 const dirFiles = () => (fs.existsSync(P.dirDir) ? fs.readdirSync(P.dirDir).filter((f) => /^dir_[A-Z]+\.json$/.test(f)) : []);
 
 // El director (modelo) escribe o corrige la dirección. Devuelve true si pasó 30_direct.
+// LLM_THINK=0: el director arranca SIN razonamiento (medido 05-oct: qwen3.8-max 7× más barato, casi igual).
+// Si una ronda así falla, la siguiente ESCALA a razonamiento: el caro se paga sólo cuando hace falta.
 function director(extra = []) {
   const seguir = dirFiles().length > 0;
-  accion(`director ${MODELO}: ${seguir ? "corrige" : "escribe"} la dirección${extra.length ? ` (${extra.length} errores de fases posteriores)` : ""}`);
+  const razona = env("LLM_THINK") !== "0" || (st.directorFallas || 0) > 0;
+  accion(`director ${MODELO}${razona ? "" : " (sin razonar)"}: ${seguir ? "corrige" : "escribe"} la dirección${extra.length ? ` (${extra.length} errores de fases posteriores)` : ""}`);
   const r = sh(process.execPath, [path.join(ROOT, "factory", "tools", "llm.mjs"), "direct", slug, "--intentos", "4", ...(seguir ? ["--seguir"] : []), ...extra.flatMap((e) => ["--extra", e])],
-    { LLM_MODEL: MODELO, LLM_USD_IN: String(USD_IN), LLM_USD_OUT: String(USD_OUT) });
+    { LLM_MODEL: MODELO, LLM_USD_IN: String(USD_IN), LLM_USD_OUT: String(USD_OUT), LLM_THINK: razona ? "1" : "0" });
   const tk = [...r.out.matchAll(/(\d+) in \/ (\d+) out/g)].reduce((a, m) => [a[0] + +m[1], a[1] + +m[2]], [0, 0]);
   gastar((tk[0] * USD_IN + tk[1] * USD_OUT) / 1e6, `director (${tk[0]} in / ${tk[1]} out)`);
   const ok = /pasó TODAS las compuertas/.test(r.out);
