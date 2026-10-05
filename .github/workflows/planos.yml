@@ -29,7 +29,7 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/setup-python@v5
-        with: { python-version: "3.12", cache: "pip", cache-dependency-path: "" }
+        with: { python-version: "3.12" }
       - name: deps
         run: |
           pip install -q numpy opencv-python-headless pillow
