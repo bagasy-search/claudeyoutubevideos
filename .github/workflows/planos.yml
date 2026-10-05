@@ -34,11 +34,13 @@ jobs:
         run: |
           pip install -q numpy opencv-python-headless pillow
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - uses: actions/checkout@v4
       - name: assets
         run: |
           mkdir -p pkg
           for n in 1 2 3 4 5; do gh release download tgpfarm-assets -R ${{ github.repository }} -p tgpfarm_assets.tar -D . --clobber && break; sleep $((n*10)); done
           tar -xf tgpfarm_assets.tar -C pkg
+          cp plano.py pkg/mira/plano.py   # el script del commit pisa al del tar (arreglos sin re-subir 260 MB)
       - name: render ${{ matrix.job.id }}
         working-directory: pkg/mira
         run: |
