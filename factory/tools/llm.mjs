@@ -31,9 +31,10 @@ function curlStream(body, onLine) {
       "--expand-header", "Authorization: Bearer {{LLM_CURL_KEY}}", "-H", "content-type: application/json",
       "--data-binary", "@-", `${BASE}/chat/completions`], { env: { ...process.env, LLM_CURL_KEY: KEY } });
     let buf = "", err = "";
-    p.stdout.on("data", (d) => { buf += d; let nl; while ((nl = buf.indexOf("\n")) >= 0) { onLine(buf.slice(0, nl).trim()); buf = buf.slice(nl + 1); } });
+    let cortado = false;
+    p.stdout.on("data", (d) => { buf += d; let nl; while (!cortado && (nl = buf.indexOf("\n")) >= 0) { if (onLine(buf.slice(0, nl).trim()) === false) { cortado = true; p.kill(); } buf = buf.slice(nl + 1); } });
     p.stderr.on("data", (d) => { err += d; });
-    p.on("close", (code) => { if (buf.trim()) onLine(buf.trim()); code === 0 ? ok() : mal(new Error(`curl ${code}: ${err.trim().slice(0, 300)}`)); });
+    p.on("close", (code) => { if (cortado) return mal(new Error("TOPE_USD: llamada cortada para no pasar el presupuesto")); if (buf.trim()) onLine(buf.trim()); code === 0 ? ok() : mal(new Error(`curl ${code}: ${err.trim().slice(0, 300)}`)); });
     p.stdin.end(JSON.stringify(body));
   });
 }
@@ -41,8 +42,15 @@ function curlStream(body, onLine) {
 async function chat(messages, { json = false, maxTokens = 32000 } = {}) {
   if (!KEY) throw new Error("falta LLM_KEY / AIHUBMIX_KEY en .env");
   const t0 = Date.now();
+  // ⛔ Medido 05-oct (hl20qwen): el tope se miraba DESPUÉS de cada ronda y una sola ronda razonando
+  //    gastó US$ 2,57 sobre un tope de 2. Ahora se estima ANTES (entrada) y se corta DURANTE (salida).
+  const tope = Number(env("LLM_TOPE_USD") || 0);
+  const gastado = () => (tot.in * USD_IN + tot.out * USD_OUT) / 1e6;
+  const inEst = Math.ceil(JSON.stringify(messages).length / 3.5);
+  if (tope && gastado() + (inEst * USD_IN) / 1e6 > tope) throw new Error(`TOPE_USD: no alcanza el presupuesto (US$ ${tope}) ni para leer el pedido`);
   for (let i = 0; i < 4; i++) {
     let txt = "", u = {}, razona = 0, ultimo = Date.now(), errApi = "";
+    const caro = () => tope && gastado() + (inEst * USD_IN + ((txt.length + razona) / 3.5) * USD_OUT) / 1e6 > tope;
     try {
       await curlStream({ model: MODEL, messages, max_tokens: maxTokens, temperature: 0.7, stream: true, stream_options: { include_usage: true },
         ...(env("LLM_THINK") === "0" ? { enable_thinking: false } : {}), ...(json ? { response_format: { type: "json_object" } } : {}) }, (l) => {
@@ -52,12 +60,19 @@ async function chat(messages, { json = false, maxTokens = 32000 } = {}) {
         txt += j.choices?.[0]?.delta?.content || "";
         razona += (j.choices?.[0]?.delta?.reasoning_content || "").length;
         if (j.usage) u = j.usage;
+        if (caro()) return false;   // corta la llamada: lo que sigue ya no entra en el presupuesto
         if (Date.now() - ultimo > 60_000) { ultimo = Date.now(); console.log(`   … ${((Date.now() - t0) / 1000).toFixed(0)} s: razonó ${razona} car., respondió ${txt.length} car.`); }
       });
       tot.in += u.prompt_tokens || 0; tot.out += u.completion_tokens || 0; tot.llamadas++; tot.seg += (Date.now() - t0) / 1000;
       console.log(`   llm ${MODEL}: ${u.prompt_tokens} in / ${u.completion_tokens} out · ${((Date.now() - t0) / 1000).toFixed(0)} s`);
       return txt;
     } catch (e) {
+      if (/TOPE_USD/.test(e.message)) {
+        const outEst = Math.ceil((txt.length + razona) / 3.5);
+        tot.in += inEst; tot.out += outEst; tot.llamadas++;
+        console.log(`   llm ${MODEL}: ${inEst} in / ${outEst} out · cortada por TOPE_USD (estimado)`);
+        throw e;
+      }
       if (/insufficient|invalid.*key|40[13]/i.test(errApi + e.message) || i === 3) throw new Error(`${e.message} ${errApi.slice(0, 300)}`);
       console.log(`   llm: ${e.message} ${errApi.slice(0, 200)} → reintento`);
       await new Promise((s) => setTimeout(s, 2000 * 2 ** i));

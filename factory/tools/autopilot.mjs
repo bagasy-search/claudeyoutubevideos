@@ -50,12 +50,15 @@ const dirFiles = () => (fs.existsSync(P.dirDir) ? fs.readdirSync(P.dirDir).filte
 // Si una ronda así falla, la siguiente ESCALA a razonamiento: el caro se paga sólo cuando hace falta.
 function director(extra = []) {
   const seguir = dirFiles().length > 0;
-  const razona = env("LLM_THINK") !== "0" || (st.directorFallas || 0) > 0;
+  // Escalar a razonar SÓLO si se pide (LLM_ESCALAR=1): en un video de 15 min una ronda razonando costó
+  // US$ 2,57 (hl20qwen, 05-oct). Por defecto, el director sigue en el modo con el que arrancó.
+  const razona = env("LLM_THINK") !== "0" || (env("LLM_ESCALAR") === "1" && (st.directorFallas || 0) > 0);
   accion(`director ${MODELO}${razona ? "" : " (sin razonar)"}: ${seguir ? "corrige" : "escribe"} la dirección${extra.length ? ` (${extra.length} errores de fases posteriores)` : ""}`);
   const r = sh(process.execPath, [path.join(ROOT, "factory", "tools", "llm.mjs"), "direct", slug, "--intentos", "4", ...(seguir ? ["--seguir"] : []), ...extra.flatMap((e) => ["--extra", e])],
-    { LLM_MODEL: MODELO, LLM_USD_IN: String(USD_IN), LLM_USD_OUT: String(USD_OUT), LLM_THINK: razona ? "1" : "0" });
+    { LLM_MODEL: MODELO, LLM_USD_IN: String(USD_IN), LLM_USD_OUT: String(USD_OUT), LLM_THINK: razona ? "1" : "0", LLM_TOPE_USD: String(Math.max(0.0001, MAX_USD - st.usd).toFixed(4)) });
   const tk = [...r.out.matchAll(/(\d+) in \/ (\d+) out/g)].reduce((a, m) => [a[0] + +m[1], a[1] + +m[2]], [0, 0]);
   gastar((tk[0] * USD_IN + tk[1] * USD_OUT) / 1e6, `director (${tk[0]} in / ${tk[1]} out)`);
+  if (/TOPE_USD/.test(r.out)) fin(3, `el director se cortó para no pasar el tope de US$ ${MAX_USD} (gastado US$ ${st.usd.toFixed(3)})`);
   const ok = /pasó TODAS las compuertas/.test(r.out);
   accion(`director: ${ok ? "✅ pasó las compuertas" : "⛔ no pasó: " + (r.out.match(/⛔.*$/m) || [""])[0].slice(0, 200)}`);
   return ok;
@@ -189,8 +192,12 @@ for (let v = 1; v <= MAX_VUELTAS; v++) {
   }
   // Error del MONTAJE que nombra planos (pNNN): casi siempre es de dirección → se lo devuelve al director,
   // UNA vez por error distinto (si vuelve el mismo, no hay arreglo y se para).
-  const e = err(fase);
-  if (fase === "60_build" && /p\d{3}/.test(e)) {
+  const e0 = err(fase);
+  // Si el error nombra un ARCHIVO (assetsEnDisco), se busca qué plano lo usa para que el director sepa dónde.
+  const faltan = [...e0.matchAll(/no existe public\/([^\s,;]+)/g)].map((m) => m[1]);
+  const donde = faltan.map((a) => { for (const f of dirFiles()) { const arr = JSON.parse(fs.readFileSync(path.join(P.dirDir, f), "utf8")); const x = arr.find((y) => JSON.stringify(y.k || {}).includes(a)); if (x) return `${x.n} (componente ${x.k?.kind} con "${a}")`; } return null; }).filter(Boolean);
+  const e = donde.length ? `${e0} — lo usa: ${donde.join(", ")}` : e0;
+  if (fase === "60_build" && e) {
     st.errMontaje = st.errMontaje || [];
     if (st.errMontaje.includes(e)) fin(1, `el director no resolvió este error del montaje: ${e.slice(0, 300)}`);
     st.errMontaje.push(e); guardar();

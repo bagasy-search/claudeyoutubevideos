@@ -78,6 +78,7 @@ export function directorPrompt({ slug, spec, style, mom, secs }) {
       "  una palabra suelta ahí deja el texto NEGRO sobre el velo, sin error.",
       "- ⛔ No inventes props: las que no están en la firma se ignoran en silencio y el dato no se ve.",
       "- `startAt`/`stagger` NO los pongas: los calcula la fábrica según el hueco real.",
+      `- ⛔ Una prop de tipo asset (una foto: src, image…) NUNCA es un nombre inventado: es la imagen de un plano de imagen de ESTE video, "img/${slug}/pNNN.jpg" (la del mismo momento o la de un vecino).`,
       "- Un componente por momento (dos se pisan). Apuntá a que ~1 de cada 8-10 momentos lleve uno.", "",
       docKit(kit), "");
     L.push("## Metraje REAL de stock (`st`) — opcional por plano",
@@ -154,6 +155,26 @@ export default {
       for (const t of tramos.filter((x) => x.k)) {
         const malos = textos(t.k.props).filter((s) => (s.match(ES) || []).length >= (/[áéíóúñ¿¡]/.test(s) ? 1 : 2) || /^(de|la|el|sin|con|para)\s/i.test(s));
         if (malos.length) r.errores.push(`${t.n}: el texto del componente está en ESPAÑOL (${malos.slice(0, 2).map((s) => `"${s}"`).join(", ")}) y el video es en INGLÉS: todo texto en pantalla va en inglés`);
+      }
+    }
+    // ⛔ Medido 05-oct (piloto hl20ds, deepseek-v4-pro): una prop `asset` de comp con una foto INVENTADA
+    //    (FloatingInsert src:"window_insulation_kit_package") pasaba acá y reventaba en 60_build
+    //    (assetsEnDisco) sin que el piloto supiera a qué plano devolverlo. Una prop asset vale si el archivo
+    //    existe en public/ o si es la imagen de un plano de imagen de ESTE video: img/<slug>/<pNNN>.jpg.
+    if ((style.montaje || "vlog-crudo") === "premium") {
+      const kit = cargarKit(path.join(ROOT, "factory", "styles", "premium"));
+      const planosImg = new Set(tramos.filter((t) => t.t !== "avatar").map((t) => t.n));
+      const defDe = (kind) => kit.kinds?.[kind];
+      for (const t of tramos.filter((x) => x.k?.kind)) {
+        const def = defDe(t.k.kind);
+        for (const [p, tipo] of Object.entries(def?.props || {})) {
+          const v = t.k.props?.[p];
+          if (tipo !== "asset" || v == null || v === "") continue;
+          const s = String(v).replace(/^\/+/, "");
+          const m = s.match(/^img\/[^/]+\/(p\d{3}x?)\.jpg$/);
+          if (fs.existsSync(path.join(ROOT, "public", s)) || (m && planosImg.has(m[1]))) continue;
+          r.errores.push(`${t.n}: la prop "${p}" del componente ${t.k.kind} apunta a "${s}", que NO existe. Usá la imagen de un plano de imagen de este video: "img/${slug}/pNNN.jpg" (por ejemplo la de ${t.n}${planosImg.has(t.n) ? "" : " o la de un plano vecino"}), o sacá el componente`);
+        }
       }
     }
     // Avatar FIJO (spec.overrides.avatarFijo): reusar un reel ya pagado. Cambiar el set de momentos de
