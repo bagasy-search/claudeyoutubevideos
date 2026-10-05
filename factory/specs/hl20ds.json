@@ -627,6 +627,29 @@
     "apertura": {
       "miniatura": false,
       "_": "piloto: sin motor de imagen pago para la miniatura"
-    }
+    },
+    "avatarFijo": [
+      "p000",
+      "p003",
+      "p010",
+      "p027",
+      "p047",
+      "p050",
+      "p054",
+      "p058",
+      "p067",
+      "p079",
+      "p109",
+      "p110",
+      "p114",
+      "p121",
+      "p124",
+      "p133",
+      "p136",
+      "p140",
+      "p144",
+      "p145",
+      "p146"
+    ]
   }
 }
