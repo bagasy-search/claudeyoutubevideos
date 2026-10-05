@@ -295,6 +295,51 @@
           ]
         }
       }
+    },
+    "OutletItem": {
+      "req": [
+        "label"
+      ],
+      "props": {
+        "label": "string",
+        "note": "string",
+        "icon": {
+          "val": [
+            "strip",
+            "adapter",
+            "cord",
+            "outlet",
+            "kitchen",
+            "heater"
+          ],
+          "alias": {
+            "power_strip": "strip",
+            "powerstrip": "strip",
+            "surge_protector": "strip",
+            "three_prong": "adapter",
+            "3_prong": "adapter",
+            "cube_tap": "adapter",
+            "tap": "adapter",
+            "cheater_plug": "adapter",
+            "extension": "cord",
+            "extension_cord": "cord",
+            "thin_cord": "cord",
+            "light_cord": "cord",
+            "wall": "outlet",
+            "wall_outlet": "outlet",
+            "receptacle": "outlet",
+            "loose": "outlet",
+            "warm": "outlet",
+            "plug": "outlet",
+            "circuit": "kitchen",
+            "shared": "kitchen",
+            "kitchen_circuit": "kitchen",
+            "microwave": "kitchen",
+            "overload": "kitchen",
+            "space_heater": "heater"
+          }
+        }
+      }
     }
   },
   "kinds": {
@@ -1721,6 +1766,33 @@
         "totalLabel": "string",
         "footer": "string",
         "image": "asset"
+      }
+    },
+    "OutletDangerBoard": {
+      "file": "HarlanHeat.tsx",
+      "export": "OutletDangerBoard",
+      "capa": "tapa",
+      "_uso": "Tablero de taller colgado de dos clavos (Harlan the Lineman): los 5 lugares donde NUNCA se enchufa un calefactor — zapa/regleta, adaptador de 3 patas, alargue fino, tomacorriente flojo o caliente, circuito compartido de la cocina. Cada renglón entra con su ícono DIBUJADO (SVG, sin imagen) y después lo cruza una X roja con chip NO; al final cae el sello (stamp). Sin `items` usa los 5 del canal en INGLÉS. Texto en pantalla SIEMPRE en inglés (canal EN). >=7 s.",
+      "req": [],
+      "props": {
+        "items": {
+          "array": "OutletItem"
+        },
+        "title": "string",
+        "eyebrow": "string",
+        "sub": "string",
+        "stamp": "string",
+        "image": "asset",
+        "startAt": "number",
+        "stagger": "number"
+      },
+      "escalona": {
+        "lista": "items",
+        "inicio": "startAt",
+        "paso": "stagger",
+        "pasoMinS": 0.55,
+        "pasoMaxS": 1.1,
+        "colaS": 1.1
       }
     }
   }
