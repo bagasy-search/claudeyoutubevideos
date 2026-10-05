@@ -623,6 +623,10 @@
       "railTotal": 12,
       "railLabel": "No."
     },
-    "agnesFlash": {}
+    "agnesFlash": {},
+    "apertura": {
+      "miniatura": false,
+      "_": "prueba hlqwen3 sin OpenAI: sin miniatura de apertura"
+    }
   }
 }
