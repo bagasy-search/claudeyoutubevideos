@@ -198,7 +198,18 @@ async function direct(slug, { intentos, seguir = false, extra = [] }) {
     }));
   }
 
+  // ⛔ (05-oct, hlcasas) un tramo puede devolver planos de OTRO tramo (el B metió un "p000" por la regla de
+  //    apertura) y la compuerta lo rechaza como "repetido": cada tramo se queda sólo con SUS momentos (y sus x).
+  const nombres = (k) => new Set(tramos[k].map((l) => l.split("|")[1].trim()));
+  const sanear = () => tramos.forEach((_, k) => {
+    const f = path.join(P.dirDir, `dir_${letra(k)}.json`);
+    if (!fs.existsSync(f)) return;
+    const planos = JSON.parse(fs.readFileSync(f, "utf8")), mios = nombres(k);
+    const quedan = planos.filter((x) => mios.has(String(x.n || "").replace(/x+$/, "")));
+    if (quedan.length < planos.length) { console.log(`   dir_${letra(k)}: saco ${planos.length - quedan.length} planos de otro tramo (${planos.filter((x) => !quedan.includes(x)).map((x) => x.n).join(", ")})`); fs.writeFileSync(f, JSON.stringify(quedan, null, 1)); }
+  });
   for (let n = 1; n <= intentos; n++) {
+    sanear();
     const r = correr30(slug);
     // `extra`: errores de fases POSTERIORES (p. ej. 60_build) que el piloto automático le devuelve al
     // director. Cuentan en la PRIMERA vuelta aunque 30_direct pase.
@@ -208,7 +219,6 @@ async function direct(slug, { intentos, seguir = false, extra = [] }) {
     if (/30_direct ✓ hecha/.test(r.log) && !(n === 1 && extra.length)) { console.log(`✅ la dirección de ${MODEL} pasó TODAS las compuertas · ${costo()}`); return; }
     if (n === intentos) break;
     // Devuelve a cada tramo sus errores (los que nombran sus pNNN) + los globales.
-    const nombres = (k) => new Set(tramos[k].map((l) => l.split("|")[1].trim()));
     await Promise.all(tramos.map(async (_, k) => {
       const mios = errores.filter((e) => [...nombres(k)].some((nm) => e.includes(nm)));
       const globales = errores.filter((e) => !/p\d{3}/.test(e)).map(traducir);

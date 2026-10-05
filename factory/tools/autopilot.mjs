@@ -60,7 +60,7 @@ function director(extra = []) {
   gastar((tk[0] * USD_IN + tk[1] * USD_OUT) / 1e6, `director (${tk[0]} in / ${tk[1]} out)`);
   if (/TOPE_USD/.test(r.out)) fin(3, `el director se cortó para no pasar el tope de US$ ${MAX_USD} (gastado US$ ${st.usd.toFixed(3)})`);
   const ok = /pasó TODAS las compuertas/.test(r.out);
-  accion(`director: ${ok ? "✅ pasó las compuertas" : "⛔ no pasó: " + (r.out.match(/⛔.*$/m) || [""])[0].slice(0, 200)}`);
+  accion(`director: ${ok ? "✅ pasó las compuertas" : "⛔ no pasó: " + ((r.out.split("── 30_direct intento").pop().match(/⛔.*$/m) || [""])[0]).slice(0, 200)}`);
   return ok;
 }
 
