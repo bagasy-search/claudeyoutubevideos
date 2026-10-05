@@ -38,7 +38,9 @@ export const SHOTS = [
   S(30, "", "kf", "d_glazepot"),
   S(30, "and then you let it bubble", "bi", "b_glazebubble", { p: BI("A small saucepan on a white enamel stove with a thick brown glaze bubbling gently, a wooden spoon resting in it and a thread of glaze dripping off, steam rising, a yellow checked curtain beside the stove.") }),
   S(30, "Four ingredients", "bi", "b_glazeready", { p: BI("A glass measuring cup full of warm glossy amber glaze next to a pastry brush on a saucer, a roasting pan with a foil-covered ham waiting behind it, a floury table, a cloth napkin.") }),
-  S(31, "", "av", "", { ov: { c: "LorSubscribe", props: {} } }),
+  S(31, "", "bi", "b_whilewarming", { p: BI("A ham warming in the oven seen through the glass of the old enamel oven door, a hand with a lilac sleeve resting on the oven handle, a kitchen timer on top of the oven, the camera slightly low, the yellow checked curtain reflected faintly in the glass.") }),
+  S(31, "If this kitchen", "ei", "e_churchplate", { p: EI("1967", "a church supper line in a fellowship hall, a woman in a flowered dress holding a paper plate and a plastic fork, a long folding table with a red checked cloth and covered dishes in front of her, other people queued behind with their own plates.") }),
+  S(31, "me a favor", "av", "", { ov: { c: "LorSubscribe", props: {} } }), // Loretta en cámara pide suscribirse (ventana del reel 634,6-641)
   S(31, "and it tells me somebody", "bi", "b_eatingpaper", { q: "family eating dinner at table", p: BI("A big family around a farmhouse dinner table, plates piled with sliced ham and potatoes, a grandfather reaching for rolls, children laughing, a woman passing a bowl, warm ordinary indoor light.") }),
   S(32, "", "c", "LorThermometer", { props: { from: 70, stops: [{ temp: 120, label: "Glaze time" }, { temp: 140, label: "Done" }], title: "Probe in the thickest part", sub: "not touching the bone" } }),
   S(32, "You put the probe", "kf", "d_probe"),

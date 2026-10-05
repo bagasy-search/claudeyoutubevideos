@@ -4,9 +4,8 @@ import fs from "node:fs";
 const f = "D:/Proyectos/video2-wt/lorham/_v3/lorham_shots.json", D = JSON.parse(fs.readFileSync(f, "utf8"));
 const i = D.shots.findIndex((s) => s.kind === "av" && Math.abs(s.start - 618.86) < 0.01);
 if (i < 0) { console.log("ya aplicado"); process.exit(0); }
-const av = D.shots[i], AV0 = 634.5;
-const cut = [[618.86, 621.24, "b_warmthrough", "while that ham is warming"], [621.24, 625.88, "b_settable", "everybody at home"],
-  [625.88, 629.1, "e_grandma", "your grandmother's"], [629.1, AV0, "b_servingline", "church supper paper plate"]];
+const av = D.shots[i], AV0 = 634.62; // "me a favor" (634,66) − 40 ms = arranque de la ventana del reel
+const cut = [[618.86, 625.84, "b_whilewarming", ""], [625.84, AV0, "e_churchplate", "If this kitchen"]];
 const ins = cut.map(([s, e, name, at]) => ({ p: av.p, at, kind: name.startsWith("e_") ? "ei" : "bi", name, start: s, end: e, dur: +(e - s).toFixed(2) }));
 av.start = AV0; av.dur = +(av.end - AV0).toFixed(2);
 D.shots.splice(i, 0, ...ins);

@@ -121,4 +121,6 @@ if (fallback.length) console.log("⚠️ repuestos (asset aún no existe):", fal
 if (warn.length) console.log("⚠️", warn.length, "avisos:", warn.slice(0, 8).join(" · "));
 const real = cues.filter((c) => c.real).reduce((a, c) => a + Math.min(c.dur, c.clipF || c.dur), 0) + cues.filter((c) => (c.k === "vl" || c.k === "kf") && c.src && !c.fallback).reduce((a, c) => a + c.dur, 0) + cues.filter((c) => c.k === "snap").reduce((a, c) => a + c.dur, 0);
 console.log(`metraje REAL (stock + clips agnes de Loretta + fotos de época): ${(real / FPS).toFixed(0)} s = ${(100 * real / TOTAL).toFixed(1)} %`);
-if (FINAL && (faltan.length || warn.length || fallback.length || !AV_READY)) { console.error("⛔ --final: faltan assets/repuestos/avatar"); process.exit(1); }
+// clips LTX rechazados en QC (5-oct): van con su foto a propósito
+const ACEPTADOS = new Set(["d_dry", "d_foilpeel"]);
+if (FINAL && (faltan.length || warn.length || fallback.filter((n) => !ACEPTADOS.has(n)).length || !AV_READY)) { console.error("⛔ --final: faltan assets/repuestos/avatar"); process.exit(1); }

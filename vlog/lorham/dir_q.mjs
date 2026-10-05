@@ -28,4 +28,11 @@ export const Q = {
   b_pourcup: "pouring juice into a roasting pan", b_platterhour: "buffet platter of sliced ham", b_finalham: "glazed ham on a platter on a table",
   b_rescue: "pouring juice over sliced ham in a baking dish", b_settle: "foil covered roast resting on a counter",
 };
-export const Q2 = {};
+export const Q2 = {
+  b_basementkitchen: "senior women cooking together in a kitchen", b_cloves: "pressing cloves into a ham", b_hamrows: "roasted hams on a table", b_cups: "measuring cups and flour on wooden table",
+  b_eatingpaper: "family dinner table holiday meal", b_family: "family cooking together in a kitchen holiday", b_firstslice: "slicing a ham on a cutting board", b_glazebubble: "caramel sauce bubbling in a saucepan",
+  b_juice: "carving a roast with juices", b_knifebone: "carving a ham", b_morningstart: "woman cooking in a kitchen in the morning", b_package: "opening a package of meat in a kitchen",
+  b_panjuice: "roasting pan with drippings", b_pinkwet: "steam rising from a roasting pan", b_platterhour: "sliced ham on a platter holiday table", b_rescue: "pouring sauce over sliced meat",
+  b_sandwich: "making a ham sandwich", b_sidedishes: "thanksgiving dinner side dishes on a table", b_sugarburn: "caramelizing sugar in a pan", b_wrapham: "wrapping food in aluminum foil",
+  b_pourcup: "pouring juice into a roasting pan", b_ruinedham: "burnt meat in a pan", b_shingles: "slicing ham", b_oventurn: "turning an oven knob", b_ovenshut: "closing the oven door",
+};
