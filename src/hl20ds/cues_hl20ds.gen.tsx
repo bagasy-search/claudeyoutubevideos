@@ -28,7 +28,6 @@ export const CUES_HL20DS: Cue[] = [
   { key: "m018", start: 2831, dur: 114, capa: "base", el: (frame: number) => <Foto src="img/hl20ds/p018.jpg" seed={2831} fx={{"atm":"polvo","pf":"img/hl20ds/px/p018_pf.webp","pb":"img/hl20ds/px/p018_pb.jpg","entra":"zoom"} as any} /> },
   { key: "m019", start: 2945, dur: 122, capa: "base", el: (frame: number) => <Foto src="img/hl20ds/p019.jpg" seed={2945} fx={{"pf":"img/hl20ds/px/p019_pf.webp","pb":"img/hl20ds/px/p019_pb.jpg","entra":"whip-r"} as any} /> },
   { key: "m020", start: 3067, dur: 167, capa: "base", el: (frame: number) => <Foto src="img/hl20ds/p020.jpg" seed={3067} fx={{"atm":"polvo","entra":"zoom"} as any} /> },
-  { key: "k020", start: 3074, dur: 166, capa: "over", el: (frame: number) => <Comp kind="FloatingInsert" props={{"src":"window_insulation_kit_package","kicker":"A few bucks at any hardware store"} as any} /> },
   { key: "m021", start: 3234, dur: 144, capa: "base", el: (frame: number) => <Foto src="img/hl20ds/p021.jpg" seed={3234} fx={{"entra":"whip-l"} as any} /> },
   { key: "m022", start: 3378, dur: 89, capa: "base", el: (frame: number) => <Foto src="img/hl20ds/p022.jpg" seed={3378} fx={{"atm":"polvo","pf":"img/hl20ds/px/p022_pf.webp","pb":"img/hl20ds/px/p022_pb.jpg","entra":"zoom"} as any} /> },
   { key: "m023", start: 3467, dur: 109, capa: "base", el: (frame: number) => <Foto src="img/hl20ds/p023.jpg" seed={3467} /> },
