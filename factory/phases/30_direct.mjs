@@ -141,6 +141,10 @@ export default {
     //    donde el director todavía puede corregirlo gratis.
     for (const x of tramos.filter((t) => /x$/.test(t.n || "") && t.t === "avatar"))
       r.errores.push(`${x.n}: un segundo plano (x) NO puede ser avatar — el montaje no lo usa y repite la foto del principal. Hacelo un plano de IMAGEN (c, e, l, m, s, q/mo)`);
+    // ⛔ Medido 05-oct (piloto hlqwen3): un componente en un plano `x` pasaba acá y reventaba en 60_build
+    //    ("el plano no es un momento (no se puede anclar)"). Los comps se anclan a la FRASE del momento.
+    for (const x of tramos.filter((t) => /x$/.test(t.n || "") && t.k))
+      r.errores.push(`${x.n}: un segundo plano (x) NO puede llevar componente "k" — se ancla a la frase del momento. Mové el "k" al plano principal ${x.n.replace(/x$/, "")} (si no es avatar) o sacalo`);
     // Avatar FIJO (spec.overrides.avatarFijo): reusar un reel ya pagado. Cambiar el set de momentos de
     // avatar cambia las ventanas y obliga a otro /run de RunPod.
     const fijo = spec.overrides?.avatarFijo;

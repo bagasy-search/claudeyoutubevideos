@@ -184,6 +184,16 @@ for (let v = 1; v <= MAX_VUELTAS; v++) {
       from = "30_direct"; continue;
     }
   }
-  fin(1, `${fase}=${estado} sin arreglo automático conocido: ${err(fase).slice(0, 300) || "ver log"}`);
+  // Error del MONTAJE que nombra planos (pNNN): casi siempre es de dirección → se lo devuelve al director,
+  // UNA vez por error distinto (si vuelve el mismo, no hay arreglo y se para).
+  const e = err(fase);
+  if (fase === "60_build" && /p\d{3}/.test(e)) {
+    st.errMontaje = st.errMontaje || [];
+    if (st.errMontaje.includes(e)) fin(1, `el director no resolvió este error del montaje: ${e.slice(0, 300)}`);
+    st.errMontaje.push(e); guardar();
+    if (!director([`El MONTAJE rechazó la dirección: ${e}. Corregí esos planos.`])) fin(1, "el director no pudo corregir el error del montaje");
+    from = "30_direct"; continue;
+  }
+  fin(1, `${fase}=${estado} sin arreglo automático conocido: ${e.slice(0, 300) || "ver log"}`);
 }
 fin(1, `${MAX_VUELTAS} vueltas sin terminar`);
