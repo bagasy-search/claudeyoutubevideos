@@ -1,0 +1,50 @@
+# Render de planos en PYTHON (numpy + OpenCV + ffmpeg), un runner por plano. Se dispara con push a esta rama.
+name: planos-py
+on:
+  push:
+    branches: [planos-tgpildora]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: echo "matrix=$(python3 -c "import json;print(json.dumps(json.load(open('jobs.json'))))")" >> "$GITHUB_OUTPUT"
+  render:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 120
+      matrix:
+        job: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env:
+      TGP_M: ${{ github.workspace }}/pkg/mira
+      TGP_CINE: ${{ github.workspace }}/pkg/cine
+      PYTHONHASHSEED: "0"
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: "pip", cache-dependency-path: "" }
+      - name: deps
+        run: |
+          pip install -q numpy opencv-python-headless pillow
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: assets
+        run: |
+          mkdir -p pkg
+          for n in 1 2 3 4 5; do gh release download tgpfarm-assets -R ${{ github.repository }} -p tgpfarm_assets.tar -D . --clobber && break; sleep $((n*10)); done
+          tar -xf tgpfarm_assets.tar -C pkg
+      - name: render ${{ matrix.job.id }}
+        working-directory: pkg/mira
+        run: |
+          mkdir -p planos
+          python plano.py "${{ matrix.job.id }}" "${{ matrix.job.dur }}"
+          test -s "planos/${{ matrix.job.id }}.mp4"
+      - name: subir
+        run: |
+          for n in 1 2 3 4 5; do gh release upload tgpfarm-out "pkg/mira/planos/${{ matrix.job.id }}.mp4" -R ${{ github.repository }} --clobber && break; sleep $((n*7)); done
