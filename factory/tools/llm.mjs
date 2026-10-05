@@ -92,19 +92,39 @@ function sacarJson(txt) {
   return Array.isArray(v) ? v : v.planos || v.plans || v.shots || Object.values(v).find(Array.isArray) || [];
 }
 
+// ⛔ Medido 05-oct (hlcasas): deepseek-v4-pro escribe ~13k car. por llamada pida lo que se le pida (objetivo
+//    15,4k → 13,4k; objetivo 17k → 12,8k: MENOS). Un guion largo se escribe en PARTES de ≤ 7k car., cada una
+//    viendo lo anterior: la 1ª abre con el gancho, sólo la última cierra con la CTA.
 async function guion(slug, { tema, seg }) {
   const spec = loadSpec(slug);
   const chars = Math.round(seg * (spec.style.frases?.cps || 14));
-  const txt = await chat([
-    { role: "system", content: `You write YouTube voice-over scripts for the channel "${spec.style.nombre}". Dialect/voice rules: ${spec.style.dialecto}` },
-    { role: "user", content: [
-      `Write the full spoken script for a video about: ${tema}`,
-      `Length: about ${chars} characters (~${seg} seconds read aloud). Plain spoken text ONLY: no headings, no stage directions, no brackets, no emojis, no lists with symbols.`,
-      "Open with a strong hook in the first two sentences. Concrete, practical, specific details a viewer can act on today.",
-      `Near the end include, word for word, a sentence that starts with "${spec.cta.ancla}" and invites to subscribe.`,
-      "Do not mention prices of any product of the channel, links or anything free.",
-    ].join("\n") },
-  ], { maxTokens: Math.ceil(chars / 3) * 2 + 8000 });   // 20 min ≈ 16k car.: el tope fijo de 4000 lo cortaba
+  const n = Math.max(1, Math.ceil(chars / 7000)), porParte = Math.round(chars / n);
+  const sys = { role: "system", content: `You write YouTube voice-over scripts for the channel "${spec.style.nombre}". Dialect/voice rules: ${spec.style.dialecto}` };
+  const reglas = "Plain spoken text ONLY: no headings, no stage directions, no brackets, no emojis, no lists with symbols. Concrete, practical, specific details a viewer can act on today. Do not mention prices of any product of the channel, links or anything free.";
+  const cta = `Near the end include, word for word, a sentence that starts with "${spec.cta.ancla}" and invites to subscribe.`;
+  // ⛔ (05-oct, hlcasas) el largo por parte varía 1,3-2,2× lo pedido: se acepta [0,9-1,3]× el objetivo y si no,
+  //    se reescribe entero (≤ 4 intentos, ~US$0,007 c/u) quedándose con el más cercano.
+  let mejor = "";
+  for (let intento = 1; intento <= 4; intento++) {
+  let txt = "";
+  for (let i = 0; i < n; i++) {
+    const ultima = i === n - 1;
+    const pide = n === 1
+      ? [`Write the full spoken script for a video about: ${tema}`, `Length: about ${chars} characters (~${seg} seconds read aloud). ${reglas}`, "Open with a strong hook in the first two sentences.", cta]
+      : [`We are writing, in ${n} parts, the spoken script (~${chars} characters in total, ~${seg} seconds read aloud) for a video about: ${tema}`,
+        i === 0 ? "Write PART 1: open with a strong hook in the first two sentences." : `Here is everything written so far:\n"""\n${txt}\n"""\nWrite PART ${i + 1}: continue seamlessly right where it stops, with NEW material (never repeat a story, tip or sentence already told).`,
+        `This part: about ${porParte} characters. ${reglas}`,
+        ultima ? `This is the LAST part: wrap the video up. ${cta}` : "Do NOT wrap up, summarize, say goodbye or invite to subscribe in this part: the video goes on after it. Output only the text of this part."];
+    const parte = await chat([sys, { role: "user", content: pide.join("\n") }], { maxTokens: Math.ceil(porParte / 3) * 2 + 8000 });   // 20 min ≈ 16k car.: el tope fijo de 4000 lo cortaba
+    txt = (txt ? txt + "\n\n" : "") + parte.trim();
+    if (n > 1) console.log(`   parte ${i + 1}/${n}: ${parte.trim().length} car.`);
+  }
+  const r = txt.length / chars;
+  console.log(`   intento ${intento}: ${txt.length} car. (${(r * 100).toFixed(0)} % del objetivo)`);
+  if (!mejor || Math.abs(Math.log(txt.length / chars)) < Math.abs(Math.log(mejor.length / chars))) mejor = txt;
+  if (r >= 0.9 && r <= 1.3) break;
+  }
+  const txt = mejor;
   fs.mkdirSync(path.dirname(spec.guion), { recursive: true });
   fs.writeFileSync(spec.guion, txt.trim() + "\n");
   console.log(`guion → ${spec.guion} (${txt.trim().length} car., objetivo ${chars}) · ${costo()}`);
