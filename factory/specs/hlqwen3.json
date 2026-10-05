@@ -442,7 +442,7 @@
         "BoxItemCard": [
           [
             "whoosh_a",
-            0.0,
+            0,
             0.22,
             0.6
           ],
@@ -450,15 +450,15 @@
             "paper",
             0.4,
             0.35,
-            1.0
+            1
           ]
         ],
         "BatteryCold": [
           [
             "whoosh_b",
-            0.0,
+            0,
             0.18,
-            1.0
+            1
           ],
           [
             "tick",
@@ -500,13 +500,13 @@
             "stamp",
             "end-1.4",
             0.5,
-            1.0
+            1
           ]
         ],
         "WaterMath": [
           [
             "pop",
-            1.0,
+            1,
             0.3,
             0.15
           ],
@@ -528,7 +528,7 @@
             "stamp",
             "end-1.6",
             0.55,
-            1.0
+            1
           ]
         ],
         "FlowerPotMyth": [
@@ -550,7 +550,7 @@
             "stamp",
             "end-1.4",
             0.55,
-            1.0
+            1
           ]
         ],
         "FinePrint": [
@@ -558,13 +558,13 @@
             "whoosh_b",
             0.3,
             0.2,
-            1.0
+            1
           ],
           [
             "stamp",
             "end-1.4",
             0.45,
-            1.0
+            1
           ]
         ],
         "BoxReceipt": [
@@ -598,7 +598,7 @@
         "SagaTimeline": [
           [
             "whoosh_b",
-            0.0,
+            0,
             0.18,
             0.8
           ]
@@ -614,7 +614,7 @@
         "VsCard": [
           [
             "whoosh_a",
-            0.0,
+            0,
             0.2,
             0.6
           ]
@@ -631,6 +631,10 @@
       "p010",
       "p023",
       "p029"
-    ]
+    ],
+    "apertura": {
+      "miniatura": false,
+      "_": "piloto: sin motor de imagen pago para la miniatura"
+    }
   }
 }
