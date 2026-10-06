@@ -142,7 +142,9 @@ def find_card(img):
 def r_retrato(sh, sid, DUR, put):
     N = int(round(DUR * FPS)); path = f"{M}/img/{sh['src']}.png"
     img0 = load(path, size=(int(W * 1.08), int(H * 1.08))); d0 = depth_norm(path, img0.shape)
-    quad = find_card(img0); ph = Image.open(f"{M}/{sh['photo']}").convert("L")
+    # esquinas del cartón: medidas a mano (sh['card'] = 4 puntos en fracción, sentido horario desde arriba-izq) o detectadas
+    quad = np.float32([(x * img0.shape[1], y * img0.shape[0]) for x, y in sh['card']]) if sh.get('card') else find_card(img0)
+    ph = Image.open(f"{M}/{sh['photo']}").convert("L")
     qw = int(np.linalg.norm(quad[1] - quad[0])); qh = int(np.linalg.norm(quad[3] - quad[0]))
     pw_, ph_ = ph.size; r = qw / qh
     if pw_ / ph_ > r: nw = int(ph_ * r); ph = ph.crop(((pw_ - nw) // 2, 0, (pw_ - nw) // 2 + nw, ph_))
