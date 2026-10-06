@@ -40,7 +40,7 @@ export const RhCaulkSection3D: React.FC<{ mode?: Mode; labels?: Labels }> = ({ m
     tile: new THREE.MeshStandardMaterial({ color: "#FFFFFF", roughness: 0.08, emissive: "#F2F0EB", emissiveIntensity: 0.2 }),
     grout: new THREE.MeshStandardMaterial({ color: "#CFCAC0", roughness: 1 }),
     tub: new THREE.MeshStandardMaterial({ color: "#F2EEE6", roughness: 0.2 }),
-    bead: new THREE.MeshStandardMaterial({ color: "#EEF3F7", roughness: 0.18, emissive: "#DCE6EE", emissiveIntensity: 0.15, transparent: mode === "under", opacity: mode === "under" ? 0.62 : 1 }),
+    bead: new THREE.MeshStandardMaterial({ color: "#EEF3F7", roughness: 0.18, emissive: "#DCE6EE", emissiveIntensity: 0.15, transparent: mode === "under" || mode === "roots" || mode === "strips", opacity: mode === "under" ? 0.62 : mode === "roots" || mode === "strips" ? 0.7 : 1, depthWrite: !(mode === "under" || mode === "roots" || mode === "strips") }),
     newBead: new THREE.MeshStandardMaterial({ color: "#FFFFFF", roughness: 0.15 }),
     dot: new THREE.MeshStandardMaterial({ color: "#14120C", roughness: 0.7 }),
     root: new THREE.MeshStandardMaterial({ color: "#1A1710", roughness: 0.6 }),
@@ -81,7 +81,7 @@ export const RhCaulkSection3D: React.FC<{ mode?: Mode; labels?: Labels }> = ({ m
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 20% 22%, rgba(255,250,235,${0.9 - night * 0.6}), rgba(255,255,255,0.1) 55%, rgba(30,42,54,${0.1 + night * 0.35}) 100%)` }} />
       <ThreeCanvas width={width} height={height} camera={{ fov: 30, position: [camPos.x, camPos.y, camPos.z] }} gl={{ antialias: true }}>
         <Cam pos={camPos} target={target} />
-        <ambientLight intensity={0.8 - night * 0.35} />
+        <ambientLight intensity={1.0 - night * 0.4} />
         <directionalLight position={[-5, 6, 5]} intensity={1.3 - night * 0.7} color={night > 0.5 ? "#C8D4F0" : "#FFF4E0"} />
         <directionalLight position={[4, 2, 4]} intensity={0.35} color="#DCE9F5" />
         {/* pared de azulejo (z<0) con juntas, borde de bañera (y<0) */}
@@ -101,7 +101,7 @@ export const RhCaulkSection3D: React.FC<{ mode?: Mode; labels?: Labels }> = ({ m
         {showDots ? dots.map((d, i) => { const vis = 1 - fade * clamp01(1.2 - rnd(i) * 0.4); if (vis < 0.03) return null; const p = surf(d.x, d.a, BR + 0.008);
           return (<group key={i}>
             <mesh position={p} scale={vis} material={mats.dot}><sphereGeometry args={[0.035 + rnd(i * 11) * 0.02, 10, 8]} /></mesh>
-            {mode !== "spray" ? <mesh position={roots[i].p} quaternion={roots[i].q} scale={[vis, 1, vis]} material={mats.root}><cylinderGeometry args={[0.012, 0.006, roots[i].len, 6]} /></mesh> : null}
+            {mode !== "spray" ? <mesh position={roots[i].p} quaternion={roots[i].q} scale={[vis, 1, vis]} material={mats.root}><cylinderGeometry args={[0.02, 0.01, roots[i].len, 6]} /></mesh> : null}
           </group>); }) : null}
         {drops.map((d, i) => <mesh key={"d" + i} position={d.p} scale={d.s} material={mats.drop}><sphereGeometry args={[0.04, 8, 6]} /></mesh>)}
         {/* tira de papel empapada + film */}

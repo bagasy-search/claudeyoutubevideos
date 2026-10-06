@@ -373,5 +373,80 @@
   "name": "bd_garden3",
   "q": "garden flowers",
   "scene": "Flowers in a garden."
+ },
+ {
+  "name": "bd_c1",
+  "q": "bathroom cleaning",
+  "scene": "bathroom cleaning"
+ },
+ {
+  "name": "bd_c2",
+  "q": "white towels bathroom",
+  "scene": "white towels bathroom"
+ },
+ {
+  "name": "bd_c3",
+  "q": "bathroom sink morning",
+  "scene": "bathroom sink morning"
+ },
+ {
+  "name": "bd_c4",
+  "q": "bathtub interior",
+  "scene": "bathtub interior"
+ },
+ {
+  "name": "bd_c5",
+  "q": "kitchen morning light",
+  "scene": "kitchen morning light"
+ },
+ {
+  "name": "bd_c6",
+  "q": "home interior window",
+  "scene": "home interior window"
+ },
+ {
+  "name": "bd_c7",
+  "q": "cleaning supplies",
+  "scene": "cleaning supplies"
+ },
+ {
+  "name": "bd_c8",
+  "q": "folding laundry",
+  "scene": "folding laundry"
+ },
+ {
+  "name": "bd_c9",
+  "q": "wiping mirror",
+  "scene": "wiping mirror"
+ },
+ {
+  "name": "bd_c10",
+  "q": "bathroom plants",
+  "scene": "bathroom plants"
+ },
+ {
+  "name": "bd_c11",
+  "q": "hand washing",
+  "scene": "hand washing"
+ },
+ {
+  "name": "bd_c12",
+  "q": "tidy bedroom",
+  "scene": "tidy bedroom"
+ },
+ {
+  "name": "bd_c13",
+  "q": "house exterior porch",
+  "scene": "house exterior porch"
+ },
+ {
+  "name": "bd_c14",
+  "q": "living room sunlight",
+  "scene": "living room sunlight"
+ },
+ {
+  "name": "bd_c15",
+  "q": "rain window",
+  "scene": "rain window"
  }
 ]
