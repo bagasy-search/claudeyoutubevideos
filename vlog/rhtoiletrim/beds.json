@@ -1,0 +1,302 @@
+[
+ {
+  "name": "bd_bathclean",
+  "q": "clean white bathroom",
+  "scene": "A clean white home bathroom with a sink, a mirror and towels, ordinary daylight."
+ },
+ {
+  "name": "bd_faucet",
+  "q": "bathroom sink faucet water",
+  "scene": "Water running from a bathroom sink faucet in an ordinary home bathroom."
+ },
+ {
+  "name": "bd_bathday",
+  "q": "bathroom interior daylight",
+  "scene": "An ordinary home bathroom interior in daylight, tiles, a sink and a towel."
+ },
+ {
+  "name": "bd_bathwindow",
+  "q": "bathroom window light",
+  "scene": "Daylight coming through a bathroom window onto white tiles."
+ },
+ {
+  "name": "bd_towels",
+  "q": "bathroom shelf towels",
+  "scene": "Folded white towels on a bathroom shelf."
+ },
+ {
+  "name": "bd_wipesink",
+  "q": "cleaning bathroom sink",
+  "scene": "A gloved hand wiping a white bathroom sink with a sponge."
+ },
+ {
+  "name": "bd_wipemirror",
+  "q": "wiping bathroom mirror",
+  "scene": "A hand wiping a bathroom mirror with a cloth."
+ },
+ {
+  "name": "bd_counter",
+  "q": "bathroom counter bottles",
+  "scene": "A bathroom counter with soap bottles and a toothbrush cup."
+ },
+ {
+  "name": "bd_tiles",
+  "q": "cleaning bathroom tiles",
+  "scene": "A hand scrubbing white bathroom wall tiles with a brush."
+ },
+ {
+  "name": "bd_tub",
+  "q": "cleaning bathtub",
+  "scene": "A gloved hand scrubbing a white bathtub."
+ },
+ {
+  "name": "bd_spraycl",
+  "q": "spraying cleaner bathroom",
+  "scene": "A hand spraying cleaner on a bathroom surface."
+ },
+ {
+  "name": "bd_kitchen",
+  "q": "kitchen counter morning",
+  "scene": "An ordinary home kitchen counter in the morning light with a coffee mug."
+ },
+ {
+  "name": "bd_fold",
+  "q": "folding towels",
+  "scene": "Hands folding a clean towel on a bed."
+ },
+ {
+  "name": "bd_gloves",
+  "q": "rubber gloves cleaning",
+  "scene": "Hands in yellow rubber gloves cleaning at home."
+ },
+ {
+  "name": "bd_wipecounter",
+  "q": "wiping counter gloves",
+  "scene": "A gloved hand wiping a counter with a cloth."
+ },
+ {
+  "name": "bd_bucket",
+  "q": "bucket cleaning supplies",
+  "scene": "A plastic bucket with cleaning supplies and brushes on a floor."
+ },
+ {
+  "name": "bd_mop",
+  "q": "mopping floor",
+  "scene": "A mop cleaning a tiled floor in a home."
+ },
+ {
+  "name": "bd_curtain",
+  "q": "sunlight curtains window",
+  "scene": "Sunlight through white curtains on a home window."
+ },
+ {
+  "name": "bd_shower",
+  "q": "cleaning shower glass",
+  "scene": "A hand cleaning a shower glass door with a squeegee."
+ },
+ {
+  "name": "bd_drip",
+  "q": "faucet dripping",
+  "scene": "A faucet dripping water drops into a sink."
+ },
+ {
+  "name": "bd_cabinet",
+  "q": "bathroom cabinet",
+  "scene": "An open bathroom cabinet with toiletries."
+ },
+ {
+  "name": "bd_tp",
+  "q": "toilet paper roll",
+  "scene": "A roll of toilet paper on a holder in a bathroom."
+ },
+ {
+  "name": "bd_hall",
+  "q": "home interior hallway",
+  "scene": "An ordinary home hallway with daylight."
+ },
+ {
+  "name": "bd_cleanhome",
+  "q": "woman cleaning home",
+  "scene": "A woman cleaning her home, wiping a surface."
+ },
+ {
+  "name": "bd_sponge",
+  "q": "sponge foam cleaning",
+  "scene": "A sponge with soap foam being squeezed while cleaning."
+ },
+ {
+  "name": "bd_washhands",
+  "q": "washing hands sink",
+  "scene": "Hands washing under a bathroom sink faucet."
+ },
+ {
+  "name": "bd_porch",
+  "q": "house porch",
+  "scene": "The front porch of an ordinary American house."
+ },
+ {
+  "name": "bd_laundry",
+  "q": "laundry basket towels",
+  "scene": "A laundry basket full of towels on a floor."
+ },
+ {
+  "name": "bd2_scrubsink",
+  "q": "scrubbing sink brush",
+  "scene": "Ordinary home footage: scrubbing sink brush, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_bathroomlight",
+  "q": "bright bathroom morning",
+  "scene": "Ordinary home footage: bright bathroom morning, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_cleaningspray",
+  "q": "cleaning spray bottle",
+  "scene": "Ordinary home footage: cleaning spray bottle, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_wipetile",
+  "q": "wiping tiles cloth",
+  "scene": "Ordinary home footage: wiping tiles cloth, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_bathshelf",
+  "q": "bathroom shelf",
+  "scene": "Ordinary home footage: bathroom shelf, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_soapdispenser",
+  "q": "soap dispenser sink",
+  "scene": "Ordinary home footage: soap dispenser sink, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_towelrack",
+  "q": "towel rack bathroom",
+  "scene": "Ordinary home footage: towel rack bathroom, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_cleaninggloves",
+  "q": "cleaning gloves sink",
+  "scene": "Ordinary home footage: cleaning gloves sink, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_sinkdrain",
+  "q": "sink drain water",
+  "scene": "Ordinary home footage: sink drain water, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_waterglass",
+  "q": "glass of water pouring",
+  "scene": "Ordinary home footage: glass of water pouring, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_windowopen",
+  "q": "open window breeze",
+  "scene": "Ordinary home footage: open window breeze, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_curtains",
+  "q": "white curtains breeze",
+  "scene": "Ordinary home footage: white curtains breeze, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_homeplant",
+  "q": "house plant windowsill",
+  "scene": "Ordinary home footage: house plant windowsill, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_cleanfloor",
+  "q": "cleaning floor tiles",
+  "scene": "Ordinary home footage: cleaning floor tiles, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_dusting",
+  "q": "dusting shelf",
+  "scene": "Ordinary home footage: dusting shelf, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_wipetable",
+  "q": "wiping table cloth",
+  "scene": "Ordinary home footage: wiping table cloth, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_laundry",
+  "q": "washing machine laundry",
+  "scene": "Ordinary home footage: washing machine laundry, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_dishes",
+  "q": "washing dishes sink",
+  "scene": "Ordinary home footage: washing dishes sink, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_kitchensink",
+  "q": "kitchen sink faucet",
+  "scene": "Ordinary home footage: kitchen sink faucet, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_coffee",
+  "q": "pouring coffee mug",
+  "scene": "Ordinary home footage: pouring coffee mug, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_porchswing",
+  "q": "porch swing",
+  "scene": "Ordinary home footage: porch swing, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_suburb",
+  "q": "suburban neighborhood",
+  "scene": "Ordinary home footage: suburban neighborhood, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_garbage",
+  "q": "taking out trash",
+  "scene": "Ordinary home footage: taking out trash, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_bubbles",
+  "q": "soap bubbles",
+  "scene": "Ordinary home footage: soap bubbles, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_waterdrops",
+  "q": "water drops surface",
+  "scene": "Ordinary home footage: water drops surface, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_cleanbath",
+  "q": "bathroom cleaning",
+  "scene": "Ordinary home footage: bathroom cleaning, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_bucket",
+  "q": "cleaning bucket mop",
+  "scene": "Ordinary home footage: cleaning bucket mop, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_tilesgrout",
+  "q": "bathroom tiles",
+  "scene": "Ordinary home footage: bathroom tiles, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_mirror",
+  "q": "bathroom mirror",
+  "scene": "Ordinary home footage: bathroom mirror, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_bathtub",
+  "q": "bathtub filling water",
+  "scene": "Ordinary home footage: bathtub filling water, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_showerhead",
+  "q": "shower head water",
+  "scene": "Ordinary home footage: shower head water, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd2_cleancloth",
+  "q": "microfiber cloth cleaning",
+  "scene": "Ordinary home footage: microfiber cloth cleaning, real everyday look, no person looking at the camera."
+ }
+]

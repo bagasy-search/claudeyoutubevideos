@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","include":[],"files":["src/index_rhtoiletrim.tsx","src/rhonda/three-shim.d.ts"],"exclude":[]}

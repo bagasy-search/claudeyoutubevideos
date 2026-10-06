@@ -1,0 +1,106 @@
+// DIRECTOR B — rhtoiletrim: POR QUÉ VUELVE (agujeros, canal, tubo, húmedo, biofilm, agua dura = ancla, el cepillo no llega,
+// la señora de Maple Street) · EL MITO DE LA LEJÍA (blanquea, no saca; nunca con vinagre; la parejita) · LA PASTILLA AZUL ·
+// LEER EL COLOR EN EL ESPEJO (párrafos 15-39).
+import { S, BI, RHP, BATH, BOTTLE } from "../rhonda/lib.mjs";
+const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o });
+const RIM = "the underside of the rim of an ordinary white toilet, a row of small round flush holes along it";
+const HOUSE = "a spotless older living room with plastic covers on the lampshades, lace doilies, a china cabinet and a floral sofa";
+export const SHOTS = [
+  // ── 2:50 · POR QUÉ VUELVE
+  C(15, "", "RhChapter", { n: 2, title: "Why it keeps coming back", sub: "the part you never see" }),
+  S(15, "Because what you see in that mirror", "av", ""),
+  S(15, "Let me show you what's on the other side", "rh", "r_pointrim", { p: RHP(`She kneels by the toilet and points one gloved finger up under the rim at the holes, looking back at the camera over her shoulder with raised eyebrows, the small mirror in her other hand.`) }),
+  C(16, "", "RhRimJets", { mode: "dirty", label: "A ring of little holes" }),
+  S(16, "Some toilets have a dozen", "bi", "b_holesrow", { q: "toilet rim close up", p: BI(`Very low close view looking straight up at ${RIM} lit by a flashlight: a long curved row of evenly spaced holes disappearing around the bend of the bowl.`), anim: "the flashlight beam slides slowly along the row of holes" }),
+  S(16, "When you flush", "bi", "st_flushrim", { q: "toilet flush water close", p: BI("Close view of clean water rushing out from under the rim of a white toilet and sheeting down the sides of the bowl during a flush.") }),
+  S(16, "That's their whole job", "av", ""),
+  C(17, "", "RhToiletCutaway3D", { mode: "dirty", labels: { holes: "The doors", channel: "Hollow rim channel", tube: "Fed from the tank" }, orbit: 0.5 }),
+  S(17, "That's why we pour down the tube", "bi", "b_pourtube2", { p: BI(`Looking down into the open tank of a white toilet: a yellow-gloved hand slowly pouring clear liquid from ${BOTTLE} straight into the top of the tall overflow tube.`), anim: "a thin stream of clear liquid keeps pouring into the tube" }),
+  S(17, "It's the back door to the whole house", "av", ""),
+  // húmedo y oscuro
+  S(18, "", "bi", "b_darkchannel", { p: BI("A white toilet sawn clean in half lengthwise on a workshop table, showing the hollow channel inside the rim: a dark, damp tunnel lined with black slime and gray mineral crust, a flashlight lying beside it.") , anim: "the flashlight beam drifts slowly into the dark channel" }),
+  S(18, "it gets a little drink of water", "bi", "st_drip", { q: "water dripping close", p: BI("Close view of a single drop of water hanging from a toilet rim hole and falling.") }),
+  S(18, "and nobody has ever cleaned it", "av", ""),
+  S(18, "Not the plumber", "bi", "st_plumber", { q: "plumber working toilet", p: BI("A plumber in a work shirt kneeling at a toilet with a wrench, his toolbox open on the bathroom floor.") }),
+  S(18, "That is a perfect little home", "av", ""),
+  // biofilm
+  C(19, "", "RhRimJets", { mode: "grow", label: "Bacteria + mold, living together" }),
+  S(19, "and then it creeps out the front door", "bi", "b_creep", { p: BI(`Close view of ${RIM}: thick black slime oozing out of one hole and running down the white porcelain in a thin black streak, droplets of water on it.`), anim: "the black streak creeps slowly down the porcelain" }),
+  S(19, "you saw in the mirror", "bi", "b_mirror2", { q: "hand mirror", p: BI(`A small round hand mirror lying on the hexagon tile floor beside a white toilet, reflecting ${RIM} with black streaks.`) }),
+  // agua dura = ancla
+  S(20, "", "av", ""),
+  S(20, "Every flush leaves a thin crust", "bi", "b_crust", { q: "limescale close up", p: BI(`Extreme close view of ${RIM}: around each hole a rough ring of chalky white-gray mineral crust, black slime caught in the rough crust.`), anim: "a drop of water slowly runs over the crust; nothing else moves" }),
+  S(20, "like sandpaper", "bi", "st_sandpaper", { q: "sandpaper texture close", p: BI("Close view of a sheet of coarse sandpaper on a workbench.") }),
+  C(20, "and the slime grabs onto it", "RhToiletCutaway3D", { mode: "crust", labels: { holes: "The anchor: mineral crust" }, orbit: 0.3 }),
+  S(20, "The slime is the tenant", "av", ""),
+  // el cepillo no llega
+  S(21, "", "bi", "st_brushbowl", { q: "toilet brush cleaning bowl", p: BI("A toilet brush scrubbing around the inside of a white toilet bowl.") }),
+  S(21, "but it never goes up inside a hole", "bi", "b_brushmiss", { q: "toilet brush close up", p: BI(`Close view from below: the bristles of a toilet brush pressing against the underside of a toilet rim, sliding past ${RIM} without going into any of the holes, black gunk still inside them.`), anim: "the brush bristles slide slowly past the holes" }),
+  S(21, "So you scrub", "rh", "r_shrug", { p: RHP(`She stands beside the toilet holding a toilet brush up in one gloved hand and shrugs at the camera with a lopsided, knowing smile.`) }),
+  S(21, "three days later", "bi", "b_back3", { p: BI(`Close view of ${RIM}: black streaks under the holes again on an otherwise clean toilet, a cleaning spray bottle on the tank.`) }),
+  // Maple Street
+  S(22, "", "rh", "r_maple", { p: RHP(`She walks up the front porch steps of a neat white two-story house on a tree-lined street, carrying her gray cleaning caddy, a doormat and a porch swing behind her.`) }),
+  S(22, "kept that house like a museum", "bi", "b_museum", { q: "vintage living room interior", p: BI(`${HOUSE}, everything spotless and perfectly placed, afternoon light from lace curtains.`), anim: "the lace curtain moves a little in a breeze; nothing else moves" }),
+  S(22, "She scrubbed that toilet every single Saturday", "bi", "b_mapleold", { q: "elderly woman cleaning", p: BI("An older woman in her seventies with neat gray curls, a pastel housecoat and pink rubber gloves scrubbing her white toilet with a brush, a pastel pink bathroom with a fluffy bath rug.") , anim: "she keeps scrubbing slowly with the brush" }),
+  S(22, "every Thursday", "bi", "b_maplestreaks", { p: BI(`Close view of ${RIM} in a pastel pink bathroom: black streaks under the holes again.`) }),
+  S(22, "She called it her haunted toilet", "av", ""),
+  S(23, "", "bi", "b_maplepour", { p: BI(`Close view of a yellow-gloved hand pouring from ${BOTTLE} into the tall overflow tube of an open toilet tank in a pastel pink bathroom.`), anim: "the liquid keeps pouring into the tube" }),
+  S(23, "she watched those holes start to fizz", "bi", "b_maplefizz", { p: BI(`Close view of ${RIM}: white foam bubbling out of every hole over the black slime.`), anim: "the foam bubbles slowly grow" }),
+  S(23, "she sat right down on the edge", "bi", "b_maplesit", { q: "senior woman surprised", p: BI("An older woman in her seventies with neat gray curls and a pastel housecoat sitting down on the edge of a pink bathtub with one hand on her chest, mouth open in amazement, looking at her toilet.") , anim: "she slowly lowers her hand to her lap, still amazed" }),
+  S(23, "All those Saturdays", "av", ""),
+  // ── 5:03 · LA LEJÍA
+  C(24, "", "RhChapter", { n: 3, title: "The bleach myth", sub: "why it comes back so fast" }),
+  S(24, "Rhonda why not just pour bleach", "av", ""),
+  S(25, "", "bi", "st_bleach2", { q: "bleach cleaning bathroom", p: BI("A plain white jug of bleach with a blank label on a bathroom floor next to a toilet, a yellow glove on top of it.") }),
+  S(25, "So you pour it in", "bi", "b_bleachbowl", { q: "pouring cleaner toilet bowl", p: BI("A yellow-gloved hand pouring clear liquid from a plain white jug with a blank label into a white toilet bowl, the water splashing.") , anim: "the liquid keeps pouring into the bowl" }),
+  C(25, "the black turns gray", "RhBleachVsRoots", { phase: "bleach" }),
+  S(25, "But taking the color out", "av", ""),
+  C(26, "", "RhBleachVsRoots", { phase: "roots" }),
+  S(26, "Give it a week", "bi", "b_regrow", { q: "mold close up", p: BI(`Close view of ${RIM}: pale gray holes with fresh black creeping back out of them.`), anim: "the black slowly darkens around the holes" }),
+  S(27, "", "rh", "r_bleachagain", { p: RHP(`She holds up a plain white bleach jug with a blank label in one gloved hand and a calendar page in the other, eyebrows up, a tired, amused look at the camera.`) }),
+  S(27, "You're not cleaning it honey", "av", ""),
+  // peróxido distinto
+  S(28, "", "bi", "b_fizzmacro", { q: "foam bubbles close up", p: BI(`Extreme close view of black slime on white porcelain under a toilet rim covered with a thick layer of white fizzing bubbles lifting it up.`), anim: "the white bubbles slowly rise and lift the black slime" }),
+  C(28, "that fizz lifts it up", "RhRimJets", { mode: "fizz", label: "The fizz lifts it loose" }),
+  C(28, "And because we send it down the tube", "RhToiletCutaway3D", { mode: "flow", labels: { channel: "Where bleach never goes" }, orbit: 0.35 }),
+  // nunca lejía + vinagre
+  S(29, "", "av", ""),
+  C(29, "Never ever mix bleach and vinegar", "RhNeverMix", { a: "Bleach", b: "Vinegar", verdict: "Chlorine gas" }),
+  S(29, "If you used bleach in there", "bi", "st_rinse", { q: "rinsing bathroom water", p: BI("A yellow-gloved hand pressing the flush handle of a white toilet, the bathroom window wide open.") }),
+  S(29, "and you wait until the next day", "rh", "r_nextday", { p: RHP(`She hangs her yellow gloves over the edge of the cleaning caddy and switches off the bathroom light at the door, looking back at the toilet with a firm, no-nonsense look.`) }),
+  // la parejita
+  S(30, "", "bi", "b_couple", { q: "young couple moving boxes", p: BI("A young couple in their twenties standing in the doorway of a small first-home bathroom with moving boxes in the hallway behind them, he holds a jug of white vinegar with a blank label, she holds a plain white bleach jug with a blank label, both smiling proudly.") }),
+  S(30, "so he poured a whole jug in", "bi", "b_vinpour", { q: "pouring vinegar", p: BI("A young man pouring a jug of clear vinegar with a blank label into a white toilet bowl, bubbles forming in the water.") , anim: "the vinegar keeps pouring into the bowl" }),
+  S(30, "They called me coughing", "bi", "b_coughing", { q: "woman coughing", p: BI("A young couple coughing into their elbows in a narrow hallway outside a small bathroom, the young woman fanning the air with a magazine.") , anim: "the young woman fans the air with the magazine" }),
+  S(30, "We opened every window", "bi", "st_windows", { q: "opening window fresh air", p: BI("A hand pushing open a white window wide, curtains blowing in.") }),
+  S(30, "and sat out on the porch", "rh", "r_porch", { p: RHP(`She sits on the front porch steps of a small starter house beside a young couple in their twenties, all three looking a little shaken, the front door and every window wide open behind them.`) }),
+  S(30, "but I have never forgotten", "av", ""),
+  // ── 6:40 · LA PASTILLA AZUL
+  C(31, "", "RhChapter", { n: 4, title: "The blue tablet", sub: "and why it still comes back" }),
+  S(31, "I've got the blue tablet", "bi", "b_bluebowl", { q: "blue water toilet", p: BI("Looking down into a white toilet bowl full of bright blue water, the seat up, a fluffy bath mat on the floor.") }),
+  S(32, "", "av", ""),
+  C(32, "That tablet sits down in the tank", "RhToiletCutaway3D", { mode: "tablet", labels: { tank: "Tablet at the bottom", holes: "Slime stays" }, orbit: 0.4 }),
+  S(32, "A splash of colored water", "bi", "b_bluesplash", { p: BI(`Close view of ${RIM}: thin blue water trickling out of the holes over black slime that is still there underneath.`), anim: "the blue water trickles down over the black slime" }),
+  S(32, "It makes the bowl look nice", "av", ""),
+  S(33, "", "rh", "r_secret", { p: RHP(`She leans in close to the camera beside the open toilet tank, one gloved hand cupped at the side of her mouth as if telling a secret.`) }),
+  S(33, "the flapper and the seals", "bi", "b_flapper", { q: "toilet tank repair", p: BI("Close view inside an open toilet tank of the round rubber flapper at the bottom, the rubber swollen and warped at the edge, blue water around it.") }),
+  S(33, "the toilet starts running all night", "bi", "st_running", { q: "toilet tank water running", p: BI("Close view of water trickling constantly down the back of a white toilet bowl at night, a dim bathroom.") }),
+  S(33, "and your water bill goes up", "bi", "b_bill", { q: "paying bills kitchen table", p: BI("A water bill envelope lying open on a kitchen counter next to a coffee mug and reading glasses, the page face-down.") }),
+  S(34, "", "rh", "r_tabletout", { p: RHP(`She holds a soggy blue tablet up between two yellow-gloved fingers over the open toilet tank, wrinkling her nose at it.`) }),
+  S(34, "Half a cup down the tube every week", "bi", "b_weeklypour", { q: "measuring cup pouring water", p: BI(`A yellow-gloved hand pouring a half-full glass measuring cup of clear liquid into the overflow tube of an open toilet tank.`), anim: "the liquid keeps pouring into the tube" }),
+  S(34, "and at least you can see it working", "av", ""),
+  // ── 7:35 · LEER EL COLOR
+  C(35, "", "RhChapter", { n: 5, title: "Read the color", sub: "it tells you what you've got" }),
+  S(35, "because the color of what you see", "rh", "r_mirrorcolor", { p: RHP(`She kneels at the toilet holding the small round mirror under the rim and studies the reflection closely, head tilted, like a doctor reading an x-ray.`) }),
+  S(35, "like a weather report", "av", ""),
+  C(36, "", "RhColorCode", { pick: 0 }),
+  S(36, "That's the living stuff", "bi", "b_smear", { p: BI(`Extreme close view of ${RIM}: the tip of an old toothbrush smearing a streak of black slime across the white porcelain.`), anim: "the toothbrush tip drags the black slime a little further" }),
+  C(37, "", "RhColorCode", { pick: 1 }),
+  S(37, "around your shower drain", "bi", "b_pinkdrain", { q: "shower drain", p: BI("Close view of a white shower floor drain with a pink slimy ring around it.") }),
+  C(38, "", "RhColorCode", { pick: 2 }),
+  S(38, "That's usually iron in your water", "bi", "b_orange", { q: "rust stain", p: BI("Close view of a white toilet bowl with rusty orange-brown streaks running down from under the rim to the waterline, the stain smooth and set into the glaze.") }),
+  S(38, "I'm not going to pretend it will", "av", ""),
+  C(39, "", "RhColorCode", { pick: 3 }),
+  S(39, "That's the minerals", "bi", "b_whitecrust", { p: BI(`Extreme close view of ${RIM}: rough chalky white-gray mineral crust built up around the holes like hard little volcano rims.`) }),
+  S(39, "Which brings me to the one", "av", ""),
+];
