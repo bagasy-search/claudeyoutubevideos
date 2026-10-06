@@ -82,7 +82,7 @@ export const RhTwoNightRule: React.FC<{ a: string; b: string; verdict?: "saved" 
   return (
     <AbsoluteFill style={{ opacity: out }}>
       <Wall />
-      <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: 70, paddingBottom: 120 }}>
+      <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: 70, paddingBottom: 120, scale: String(1 + 0.07 * f / T) }}>
         <div style={{ position: "relative" }}><Tape x={220} y={-18} rot={-4} w={170} /><Pol src={a} label="Night 1" k={pa} rot={-3} /></div>
         <div style={{ position: "relative" }}><Tape x={220} y={-18} rot={4} w={170} /><Pol src={b} label="Night 2" k={pb} rot={3} /></div>
       </div>

@@ -9,7 +9,7 @@
 //   "redo"   sale el cordón viejo, la junta se seca (24 h) y entra uno nuevo blanco
 // Rótulos dentro del mundo: labels.{bead,roots,strip,under,water}.
 import React, { useMemo } from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig, Easing } from "remotion";
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
@@ -32,8 +32,8 @@ export const RhCaulkSection3D: React.FC<{ mode?: Mode; labels?: Labels }> = ({ m
   const f = useCurrentFrame();
   const { width, height, durationInFrames: T } = useVideoConfig();
   const t0 = 8, t1 = Math.max(t0 + 10, T * 0.78), u = clamp01((f - t0) / (t1 - t0)), ue = ease(u);
-  const a = interpolate(f, [0, T], [-0.5, 0.15], { easing: Easing.inOut(Easing.cubic) });
-  const dist = interpolate(f, [0, T], [3.6, 2.9], { easing: Easing.out(Easing.cubic) });
+  const a = interpolate(f, [0, T], [-0.5, 0.15]);
+  const dist = interpolate(f, [0, T], [3.6, 2.9]);
   const target = new THREE.Vector3(0, 0.15, 0.25);
   const camPos = new THREE.Vector3(Math.sin(a) * dist * 0.8, 1.15, 0.3 + Math.cos(a) * dist);
   const mats = useMemo(() => ({

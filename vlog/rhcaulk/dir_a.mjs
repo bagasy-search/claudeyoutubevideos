@@ -43,6 +43,7 @@ export const SHOTS = [
   // ── 3 loops
   S(4, "", "av", ""),
   C(4, "one reason your spray never worked", "RhCaulkSection3D", { mode: "spray", labels: { bead: "Slick and round" } }),
+  S(4, "once you see it", "rh", "r_seeit", { p: RHP(`She leans close to a bathtub caulk line, pointing at it with one yellow-gloved finger, eyebrows raised, in a bright bathroom.`) }),
   S(4, "you'll never spray caulk again", "rh", "r_spraydown", { p: RHP(`She sets a spray bottle down on the edge of the tub and shakes her head at the camera, done with it.`) }),
   C(4, "There's a two night rule", "RhTwoNightRule", { a: I("b_night1"), b: I("b_night2"), verdict: "saved" }),
   S(4, "", "bi", "b_night1", { p: BI(`Close view of ${CAULK} after one night of treatment: mostly white, a few faint gray shadows left.`), skip: true }),
@@ -50,11 +51,13 @@ export const SHOTS = [
   S(4, "or if it really has to go", "bi", "b_blackunder", { p: BI("Extreme close side view of a semi-clear silicone caulk bead along a tub with dark black mold visible UNDER the silicone, like through a dirty window."), anim: "the view creeps slowly along the caulk; nothing else moves" }),
   S(4, "And if it does have to go", "av", ""),
   S(4, "one step everybody skips", "bi", "b_hairdryer", { p: BI("A hand pointing a hair dryer at a bare, damp tub joint where the old caulk was removed, a new caulk tube waiting on the tub edge."), anim: "the hair dryer moves slowly along the joint; nothing else moves" }),
+  S(4, "everybody skips", "rh", "r_skip", { p: RHP(`She holds up a hair dryer in one yellow-gloved hand next to a bathtub, giving a knowing look to the camera.`) }),
   S(4, "turn black in a month", "bi", "b_newblack", { p: BI("Close view of a fresh-looking smooth white caulk bead along a tub already showing small black spots coming up from underneath."), anim: "the camera creeps slowly toward the black spots; nothing else moves" }),
   // ── quién soy
   S(5, "", "av", "", { ov: { c: "RhNameTag", props: { name: "Rhonda", sub: "34 years cleaning other people's houses" } } }),
   S(5, "houses in Ohio", "bi", "st_ohio3", { q: "ohio neighborhood houses", p: BI("A quiet Ohio neighborhood with houses and trees.") }),
   S(5, "and I've talked more people", "rh", "r_wrist", { p: RHP(`She gently holds the wrist of a middle-aged man who is holding a utility knife over the caulk of a bathtub, with an urgent "wait" face.`) }),
+  S(5, "ripping out caulk", "bi", "b_ripstrip", { p: BI("Close view of a hand ripping a long strip of old moldy caulk out of a bathtub joint."), anim: "the strip pulls away slowly; nothing else moves" }),
   S(5, "than I can count", "bi", "b_oldtubes", { p: BI("A bathroom trash can stuffed with old squeezed-out caulk tubes and long strips of ripped-out moldy caulk."), anim: "the light shifts slowly; nothing else moves" }),
   S(5, "So let me show you", "av", ""),
   // ── 1:01 · EL ARREGLO
