@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: bajar planos
         run: |
-          SLUG="${GITHUB_REF_NAME#encode-}"; echo "SLUG=$SLUG" >> "$GITHUB_ENV"
+          export SLUG="${GITHUB_REF_NAME#encode-}"; echo "SLUG=$SLUG" >> "$GITHUB_ENV"
           python3 -c "import json;c=[x for x in json.load(open('chunks.json')) if x['k']==${{ matrix.k }}][0];print('\n'.join(c['ids']))" > ids.txt
           mkdir -p p; cat ids.txt | xargs -P 8 -I{} sh -c 'for n in 1 2 3 4; do curl -sfL -o p/{}.mp4 "https://github.com/${{ github.repository }}/releases/download/$SLUG-farm-out/{}.mp4" && break; sleep $((n*5)); done'
           : > list.txt; while read i; do test -s "p/$i.mp4" || { echo "falta $i"; exit 1; }; echo "file 'p/$i.mp4'" >> list.txt; done < ids.txt
