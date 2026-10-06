@@ -10,10 +10,12 @@ import { RhBottle3D } from "./RhBottle3D";
 import { RhChapter, RhCheck, RhBookPage, RhQRCard, RhDoDont, RhPins, RhColorCode } from "./RhCards";
 import { RhMeasureCup, RhTimer30 } from "./RhGauges";
 import { RhRimJets, RhBleachVsRoots, RhNeverMix } from "./RhScience";
-import { RhNameTag, RhAsk } from "./RhOverlays";
+import { RhNameTag, RhAsk, RhPromise } from "./RhOverlays";
 import { RhGroutPore3D } from "./RhGroutPore3D";
 import { RhBowlSection3D } from "./RhBowlSection3D";
 import { RhCaulkSection3D } from "./RhCaulkSection3D";
+import { RhGasketFold3D } from "./RhGasketFold3D";
+import { RhPumpFilter, RhCycleThermo, RhDoorCrack, RhDrawerFlashlight } from "./RhWasher";
 import { RhKnifeStop, RhOvernight, RhTwoNightRule, RhTapeLine } from "./RhCaulk";
 import { RhPasteMix, RhWaterLevel, RhPumiceWetDry, RhHardWater, RhRingColors } from "./RhRing";
 import { RhMoldCalendar, RhSwabTest, RhWipeReveal, RhFogMirror, RhPatchMeter, RhWetMap, RhStrengthMeter, RhNextVideo } from "./RhMold";
@@ -67,8 +69,9 @@ const COMP: Record<string, React.FC<any>> = {
   RhGroutPore3D, RhMoldCalendar, RhSwabTest, RhWipeReveal, RhFogMirror, RhPatchMeter, RhWetMap, RhStrengthMeter,
   RhBowlSection3D, RhPasteMix, RhWaterLevel, RhPumiceWetDry, RhHardWater, RhRingColors,
   RhCaulkSection3D, RhKnifeStop, RhOvernight, RhTwoNightRule, RhTapeLine,
+  RhGasketFold3D, RhPumpFilter, RhCycleThermo, RhDoorCrack, RhDrawerFlashlight,
 };
-const OVC: Record<string, React.FC<any>> = { RhNameTag, RhAsk, RhNextVideo };
+const OVC: Record<string, React.FC<any>> = { RhNameTag, RhAsk, RhNextVideo, RhPromise };
 
 const Shot: React.FC<{ c: any }> = ({ c }) => {
   if (c.k === "av") return <Avatar c={c} />;

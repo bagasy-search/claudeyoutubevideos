@@ -1,0 +1,182 @@
+[
+ {
+  "name": "bd_w1",
+  "q": "laundry room",
+  "scene": "laundry room"
+ },
+ {
+  "name": "bd_w2",
+  "q": "folding towels",
+  "scene": "folding towels"
+ },
+ {
+  "name": "bd_w3",
+  "q": "washing machine",
+  "scene": "washing machine"
+ },
+ {
+  "name": "bd_w4",
+  "q": "laundry basket",
+  "scene": "laundry basket"
+ },
+ {
+  "name": "bd_w5",
+  "q": "white towels",
+  "scene": "white towels"
+ },
+ {
+  "name": "bd_w6",
+  "q": "clothes drying rack",
+  "scene": "clothes drying rack"
+ },
+ {
+  "name": "bd_w7",
+  "q": "home interior morning",
+  "scene": "home interior morning"
+ },
+ {
+  "name": "bd_w8",
+  "q": "kitchen sink window",
+  "scene": "kitchen sink window"
+ },
+ {
+  "name": "bd_w9",
+  "q": "living room sunlight",
+  "scene": "living room sunlight"
+ },
+ {
+  "name": "bd_w10",
+  "q": "house porch",
+  "scene": "house porch"
+ },
+ {
+  "name": "bd_w11",
+  "q": "detergent pouring",
+  "scene": "detergent pouring"
+ },
+ {
+  "name": "bd_w12",
+  "q": "ironing clothes",
+  "scene": "ironing clothes"
+ },
+ {
+  "name": "bd_w13",
+  "q": "linen closet",
+  "scene": "linen closet"
+ },
+ {
+  "name": "bd_w14",
+  "q": "rain window",
+  "scene": "rain window"
+ },
+ {
+  "name": "bd_w15",
+  "q": "garden flowers",
+  "scene": "garden flowers"
+ },
+ {
+  "name": "bd_w16",
+  "q": "bedroom bed sheets",
+  "scene": "bedroom bed sheets"
+ },
+ {
+  "name": "bd_w17",
+  "q": "hanging laundry outside",
+  "scene": "hanging laundry outside"
+ },
+ {
+  "name": "bd_w18",
+  "q": "coffee morning table",
+  "scene": "coffee morning table"
+ },
+ {
+  "name": "bd_w19",
+  "q": "cleaning counter",
+  "scene": "cleaning counter"
+ },
+ {
+  "name": "bd_w20",
+  "q": "dryer clothes",
+  "scene": "dryer clothes"
+ },
+ {
+  "name": "bd_w21",
+  "q": "sorting laundry",
+  "scene": "sorting laundry"
+ },
+ {
+  "name": "bd_w22",
+  "q": "fresh sheets",
+  "scene": "fresh sheets"
+ },
+ {
+  "name": "bd_w23",
+  "q": "bathroom towels",
+  "scene": "bathroom towels"
+ },
+ {
+  "name": "bd_w24",
+  "q": "folding shirts",
+  "scene": "folding shirts"
+ },
+ {
+  "name": "bd_w25",
+  "q": "washing hands",
+  "scene": "washing hands"
+ },
+ {
+  "name": "bd_w26",
+  "q": "quiet hallway",
+  "scene": "quiet hallway"
+ },
+ {
+  "name": "bd_w27",
+  "q": "window curtains",
+  "scene": "window curtains"
+ },
+ {
+  "name": "bd_w28",
+  "q": "house plants",
+  "scene": "house plants"
+ },
+ {
+  "name": "bd_w29",
+  "q": "clean kitchen",
+  "scene": "clean kitchen"
+ },
+ {
+  "name": "bd_w30",
+  "q": "spray bottle cleaning",
+  "scene": "spray bottle cleaning"
+ },
+ {
+  "name": "bd_w31",
+  "q": "laundromat",
+  "scene": "laundromat"
+ },
+ {
+  "name": "bd_w32",
+  "q": "towel stack",
+  "scene": "towel stack"
+ },
+ {
+  "name": "bd_w33",
+  "q": "laundry day",
+  "scene": "laundry day"
+ },
+ {
+  "name": "bd_w34",
+  "q": "sock pile",
+  "scene": "sock pile"
+ },
+ {
+  "name": "bd_w35",
+  "q": "washing machine door",
+  "scene": "washing machine door"
+ },
+ {
+  "name": "bd_w36",
+  "q": "basket clothes",
+  "scene": "basket clothes"
+ }
+]

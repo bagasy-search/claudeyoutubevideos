@@ -10,6 +10,7 @@ const has = (pub, p) => fs.existsSync(pub + LIB + p);
 
 // ── ambiente por escena (regex sobre nombre + prompt de la toma)
 const AMB = [
+  ["amb/amb_laundry_floor.flac", /washer|washing machine|laundry|drum|gasket|seal|detergent|drawer|filter|dryer/i],
   ["amb/amb_suburb_birds.flac", /ohio|street|porch|front door|steps|apartment building|suburb|house for sale|for-sale|backyard/i],
   ["amb/amb_house_birds_fridge.flac", /kitchen|coffee|table|phone|living room|sunroom|hallway|teapot|kettle|dishes|drugstore|pharmacy/i],
   ["amb/amb_laundry.flac", /laundry|washer|washing machine|dryer/i],
@@ -107,6 +108,16 @@ function compFx(n, c, durS) {
   if (n === "RhOvernight") { add("design/tick_clock_close.flac", 0.24, 0.2, durS * 0.7); add("amb/amb_suburb_birds.flac", 0.3, durS * 0.65, durS * 0.35); }
   if (n === "RhTwoNightRule") { add("design/camera_shutter.flac", 0.36, 0.05, 0.6); add("design/camera_shutter.flac", 0.36, 0.3, 0.6); add("design/stamp_rubber.flac", 0.42, durS * 0.52, 0.9); }
   if (n === "RhTapeLine") { add("foley/plastic_wrapper.flac", 0.32, 0.1, 1); add("foley/rubber_squeak.flac", 0.3, durS * 0.5, 0.9); add("foley/paper_crinkle.flac", 0.36, durS * 0.7, 1); }
+  if (n === "RhGasketFold3D") {
+    if (P.mode === "fold") { add("foley/rubber_stretch.flac", 0.45, 0.3, 1.5); add("design/impact_heartbeat.flac", 0.4, durS * 0.5, 2.2); }
+    if (P.mode === "clean") { add("foley/spray_trigger_a.flac", 0.42, 0.3, 1.2); add("foley/scrub_toothbrush.flac", 0.38, durS * 0.35, durS * 0.5); }
+    if (P.mode === "closed") { add("foley/washer_door_close.flac", 0.5, durS * 0.5, 1.2); add("design/texture_suspense.flac", 0.2, durS * 0.55, durS * 0.45); }
+    if (P.mode === "crack") { add("foley/washer_door_open.flac", 0.45, 0.1, 1); add("design/swell_wind.flac", 0.22, 0.4, durS - 0.5); }
+  }
+  if (n === "RhPumpFilter") { add("foley/cabinet_door_slide.flac", 0.4, 0.1, 0.8); add("foley/washer_drain_water.flac", 0.4, 0.4, durS * 0.4); for (let k = 0; k < 4; k++) add("design/pop_soap_bubble.flac", 0.3, durS * 0.45 + k * 0.25, 0.5); }
+  if (n === "RhCycleThermo") { add("design/click_slide.flac", 0.36, 0.3, 0.5); add("foley/washer_running.flac", 0.3, durS * 0.4, durS * 0.55); add("design/ding_oven.flac", 0.34, durS * 0.62, 1.4); }
+  if (n === "RhDoorCrack") { add("foley/washer_door_close.flac", 0.4, 0.2, 1); add("foley/washer_door_open.flac", 0.4, 0.8, 1); add("design/swell_wind.flac", 0.2, 1.2, durS - 1.5); }
+  if (n === "RhDrawerFlashlight") { add("design/click_interface.flac", 0.4, 0.1, 0.5); add("design/impact_heartbeat.flac", 0.42, durS * 0.6, 2.2); }
   if (n === "RhPins") add("design/pop_soap_bubble.flac", 0.36, 0.3, 0.6);
   if (n === "RhBottle3D") add("foley/cap_unscrew_jar.flac", 0.4, 0.2, 1.2);
   if (n === "RhMeasureCup") add("foley/water_pour_short.flac", 0.4, 0.3, 1.6);
