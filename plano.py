@@ -285,9 +285,11 @@ if __name__ == "__main__":
     if k == "graf":
         import graf; graf.render(sh, DUR, OUT, PREV)
     else:
-        if k in ("depth2", "corridor", "timelapse"):
-            import comp; p = writer()
-            {"depth2": comp.r_depth2, "corridor": comp.r_corridor, "timelapse": comp.r_timelapse}[k](sh, sid, DUR, lambda im: put(p, im))
+        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas"):
+            import comp, comp2; p = writer()
+            {"depth2": comp.r_depth2, "corridor": comp.r_corridor, "timelapse": comp.r_timelapse, "doc3d": comp2.r_doc3d, "mapamesa": comp2.r_mapamesa,
+             "retrato": comp2.r_retrato, "match": comp2.r_match, "rail": comp2.r_rail, "persiana": comp2.r_persiana, "periodico": comp2.r_periodico,
+             "balanza": comp2.r_balanza, "particulas": comp2.r_particulas}[k](sh, sid, DUR, lambda im: put(p, im))
             p.stdin.close(); p.wait()
         else:
             {"clip": r_clip, "still": r_still, "multi": r_multi, "depth": r_depth, "arch": r_arch, "open": r_open}[k]()

@@ -89,38 +89,41 @@
  {
   "at": "2.3",
   "id": "o02_mapa",
-  "kind": "depth2",
-  "bg": "No person. An old paper world map pinned on a dark wooden wall, faded colors, warm light.",
-  "fg": "A small round glass dish with a little white powder in it, resting on a dark wooden table edge. Behind it only a plain flat black wall, nothing else.",
-  "focus": "fg2bg",
   "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
-  "cam": "dolly",
-  "fgscale": 0.55,
-  "fgpos": [
-   -420,
-   260
-  ],
-  "src": "i_o02_mapa",
-  "strength": 20,
-  "focus_keys": [
+  "kind": "mapamesa",
+  "src": "c_mapa",
+  "pins": [
    [
-    0,
-    "p14"
+    0.51,
+    0.69
    ],
    [
-    0.3,
-    "p14"
+    0.65,
+    0.65
    ],
    [
-    0.75,
-    "p95"
+    0.745,
+    0.63
    ],
    [
-    1,
-    "p95"
+    0.36,
+    0.55
+   ],
+   [
+    0.43,
+    0.455
+   ],
+   [
+    0.52,
+    0.4
+   ],
+   [
+    0.606,
+    0.43
+   ],
+   [
+    0.677,
+    0.46
    ]
   ]
  },
@@ -152,11 +155,14 @@
  {
   "at": "2.5",
   "id": "a01_foto_real",
-  "kind": "arch",
-  "src": "C:/Users/bauti/Downloads/miramontes/archivo/miramontes_real.jpg",
   "w": 1.2,
-  "move": "push",
-  "label": "LUIS ERNESTO MIRAMONTES|1925 – 2004"
+  "kind": "retrato",
+  "src": "c_marco",
+  "photo": "archivo/miramontes_real.jpg",
+  "label": [
+   "Luis Ernesto Miramontes",
+   "TEPIC, 1925 · CIUDAD DE MÉXICO, 2004"
+  ]
  },
  {
   "at": "2.5",
@@ -263,9 +269,47 @@
  {
   "at": "5.3",
   "id": "g03_siete",
-  "kind": "graf",
-  "spec": "siete",
-  "w": 1.6
+  "w": 1.6,
+  "kind": "depth2",
+  "src": "x_siete",
+  "cam": "push",
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "focus_keys": [
+   [
+    0,
+    "p80"
+   ],
+   [
+    1,
+    "p80"
+   ]
+  ],
+  "strength": 14,
+  "fx": [],
+  "behind": {
+   "t": "1",
+   "count": {
+    "from": 1,
+    "to": 7,
+    "end": 0.55
+   },
+   "size": 420,
+   "xy": [
+    0.5,
+    0.3
+   ],
+   "td": "p45",
+   "in": 0.05,
+   "sub": "HIJOS POR MUJER · MÉXICO, 1960",
+   "subxy": [
+    0.5,
+    0.5
+   ],
+   "subsize": 44
+  }
  },
  {
   "at": "5.4",
@@ -506,9 +550,56 @@
  {
   "at": "7.6",
   "id": "g05_dolares",
-  "kind": "graf",
-  "spec": "dolares",
-  "w": 1.0
+  "w": 1.0,
+  "kind": "depth2",
+  "src": "i_o08_frasco",
+  "cam": "push",
+  "focal": [
+   0.45,
+   0.6
+  ],
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "strength": 18,
+  "fx": [
+   "glint"
+  ],
+  "behind": {
+   "t": "$0",
+   "count": {
+    "from": 0,
+    "to": 240000,
+    "step": 1000,
+    "fmt": "${:,}",
+    "end": 0.65
+   },
+   "size": 210,
+   "xy": [
+    0.5,
+    0.28
+   ],
+   "td": "mid",
+   "in": 0.05,
+   "color": [
+    245,
+    210,
+    120
+   ],
+   "sub": "DÓLARES DE 1944 · TRES KILOS",
+   "subxy": [
+    0.5,
+    0.42
+   ],
+   "subsize": 42
+  }
  },
  {
   "at": "7.7",
@@ -553,34 +644,12 @@
  {
   "at": "7.8",
   "id": "o09_balanza",
-  "kind": "depth2",
-  "bg": "No person. A dark 1940s laboratory office with shelves.",
-  "fg": "An antique brass balance scale holding on one side a shiny gold bar and on the other side a big knobby brown root, perfectly balanced. Behind it only a plain flat black wall, nothing else.",
-  "focus": "fg2bg",
   "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
-  "cam": "dolly",
+  "kind": "balanza",
   "src": "i_o09_balanza",
-  "strength": 20,
-  "focus_keys": [
-   [
-    0,
-    "p14"
-   ],
-   [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
+  "plates": [
+   0.33,
+   0.7
   ]
  },
  {
@@ -709,29 +778,9 @@
  {
   "at": "10.2",
   "id": "o12_columnas",
-  "kind": "depth2",
-  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. Dark, lit by a few lamps.",
-  "fg": "A tall glass distillation column with drops of clear liquid falling into a round flask, brass clamps, a tiny blue flame of a burner under it. Behind it only a plain flat black wall, nothing else.",
-  "focus": "bg2fg",
   "w": 1.0,
-  "fx": [],
-  "cam": "rise",
-  "src": "i_o12_columnas",
-  "strength": 20,
-  "focus_keys": [
-   [
-    0,
-    "p60"
-   ],
-   [
-    0.5,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ]
+  "kind": "particulas",
+  "src": "i_o12_columnas"
  },
  {
   "at": "10.3",
@@ -753,7 +802,7 @@
   "fx": [
    "bokeh"
   ],
-  "cam": "truck",
+  "cam": "push",
   "src": "i_o13_fallo",
   "strength": 20,
   "focus_keys": [
@@ -769,19 +818,30 @@
     1,
     "p40"
    ]
+  ],
+  "focal": [
+   0.45,
+   0.62
   ]
  },
  {
   "at": "11",
   "id": "d10_noche",
-  "kind": "depth",
-  "img": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. Late at night: a big round wall clock, rain on the tall window, one lamp glowing over a bench with a flask, deep shadows.",
   "w": 1.0,
-  "fx": [
-   "rain"
+  "kind": "match",
+  "from": "i_o13_fallo",
+  "to": "d10_noche",
+  "from_xy": [
+   0.297,
+   0.725,
+   0.22
   ],
-  "cam": "dolly",
-  "focus": 0.5
+  "to_xy": [
+   0.86,
+   0.085,
+   0.075
+  ],
+  "cut": 0.5
  },
  {
   "at": "11",
@@ -832,7 +892,8 @@
     1,
     "p14"
    ]
-  ]
+  ],
+  "pass_to": "p17_analizan"
  },
  {
   "at": "12.1",
@@ -862,16 +923,37 @@
  {
   "at": "12.3",
   "id": "o15_cuaderno",
-  "kind": "graf",
-  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. At night, a lamp.",
-  "fg": "An open old laboratory notebook with ruled pages and a fountain pen lying on it, on a dark wooden bench. Behind it only a plain flat black wall, nothing else.",
-  "focus": "fg2bg",
   "w": 1.0,
-  "fx": [
-   "handwriting"
+  "kind": "doc3d",
+  "page": "img/x_pagina.png",
+  "desk": "x_mesa",
+  "write": [
+   "15 de octubre de 1951",
+   "noretisterona",
+   "(19-nor-17-etinil-",
+   " testosterona)",
+   "¡activa por vía oral!"
   ],
-  "cam": "truck",
-  "spec": "cuaderno"
+  "scroll": [
+   [
+    0,
+    0.0
+   ],
+   [
+    1,
+    0.28
+   ]
+  ],
+  "focus_keys": [
+   [
+    0,
+    0.45
+   ],
+   [
+    1,
+    0.62
+   ]
+  ]
  },
  {
   "at": "12.4",
@@ -950,10 +1032,44 @@
  {
   "at": "14.1",
   "id": "a02_patente",
-  "kind": "arch",
-  "src": "C:/Users/bauti/Downloads/miramontes/archivo/patente_p1.png",
   "w": 1.6,
-  "move": "names"
+  "kind": "doc3d",
+  "page": "archivo/patente_p1.png",
+  "desk": "x_mesa",
+  "highlight": [
+   0.3,
+   0.312,
+   0.468,
+   0.352
+  ],
+  "scroll": [
+   [
+    0,
+    0.0
+   ],
+   [
+    0.5,
+    0.24
+   ],
+   [
+    1,
+    0.27
+   ]
+  ],
+  "focus_keys": [
+   [
+    0,
+    0.35
+   ],
+   [
+    0.5,
+    0.45
+   ],
+   [
+    1,
+    0.45
+   ]
+  ]
  },
  {
   "at": "14.2",
@@ -968,27 +1084,15 @@
  {
   "at": "14.3",
   "id": "o18_farmacia",
-  "kind": "depth2",
-  "bg": "No person. A 1960 American pharmacy counter with glass jars and shelves of boxes, bright.",
-  "fg": "A small round plastic pill dispenser case with a ring of tiny pills, on the glass counter. Behind it only a plain flat black wall, nothing else.",
-  "focus": "bg2fg",
   "w": 1.0,
-  "fx": [
-   "glint"
+  "kind": "periodico",
+  "src": "c_cafe",
+  "head": [
+   "APRUEBAN LA",
+   "PRIMERA PÍLDORA"
   ],
-  "cam": "push",
-  "src": "i_o18_farmacia",
-  "strength": 20,
-  "focus_keys": [
-   [
-    0,
-    "p94"
-   ],
-   [
-    1,
-    "p94"
-   ]
-  ]
+  "sub": "Estados Unidos autoriza el primer anticonceptivo oral",
+  "date": "1960"
  },
  {
   "at": "14.4",
@@ -1028,39 +1132,12 @@
  {
   "at": "14.5",
   "id": "o19_blister",
-  "kind": "depth2",
-  "bg": "No person. A sunny modern bathroom shelf with plants and a window.",
-  "fg": "A modern silver blister pack of small round pills lying on a white shelf. Behind it only a plain flat black wall, nothing else.",
-  "focus": "bg2fg",
   "w": 1.0,
-  "fx": [],
-  "cam": "rise",
-  "behind": {
-   "t": "HOY",
-   "size": 368,
-   "xy": [
-    0.5,
-    0.42
-   ],
-   "in": 0.15,
-   "td": "mid"
-  },
-  "src": "i_o19_blister",
-  "strength": 20,
-  "focus_keys": [
-   [
-    0,
-    "p60"
-   ],
-   [
-    0.5,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ]
+  "kind": "persiana",
+  "before": "c_cocina_1950",
+  "after": "c_cocina_hoy",
+  "lab_a": "1950",
+  "lab_b": "HOY"
  },
  {
   "at": "14.6",
@@ -1234,9 +1311,27 @@
  {
   "at": "17.2",
   "id": "g11_premio",
-  "kind": "graf",
-  "spec": "premio",
-  "w": 1.0
+  "w": 1.0,
+  "kind": "rail",
+  "src": "c_riel",
+  "stations": [
+   {
+    "year": "1964",
+    "label": "SALÓN DE INVENTORES"
+   },
+   {
+    "year": "1986",
+    "label": "PREMIO NACIONAL"
+   },
+   {
+    "year": "1992",
+    "label": "HOSPITAL EN TEPIC"
+   },
+   {
+    "year": "2005",
+    "label": "ACADEMIA MEXICANA"
+   }
+  ]
  },
  {
   "at": "17.3",
@@ -1422,33 +1517,11 @@
  {
   "at": "7.1",
   "id": "o27_boleto",
-  "kind": "depth2",
-  "bg": "No person. A small 1944 country bus stop in a tropical Mexican town with a wooden bench and banana trees, bright sun.",
-  "fg": "A worn leather briefcase and a small paper bus ticket lying on a weathered wooden bench. Behind it only a plain flat black wall, nothing else.",
-  "focus": "bg2fg",
   "w": 1.0,
-  "fx": [],
-  "cam": "push",
-  "src": "i_o27_boleto",
-  "strength": 20,
-  "focus_keys": [
-   [
-    0,
-    "p95"
-   ],
-   [
-    0.4,
-    "p95"
-   ],
-   [
-    0.82,
-    "p14"
-   ],
-   [
-    1,
-    "p14"
-   ]
-  ]
+  "kind": "clip",
+  "img": "",
+  "motion": "",
+  "pres": false
  },
  {
   "at": "7.3",

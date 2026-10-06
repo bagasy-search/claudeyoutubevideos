@@ -75,6 +75,12 @@ def r_depth2(sh, sid, DUR, put):
     T1 = text_rgba(img0.shape[1], img0.shape[0], beh["sub"], "SC", beh.get("subsize", 60), tuple(beh.get("subxy", (0.5, 0.75))), (240, 230, 210), 0.25) if beh and beh.get("sub") else None
     lum = img0.mean(-1); thr = np.percentile(lum, 98.5); lightmask = (lum > max(thr, 0.75)).astype(np.float32)
     ys, xs = np.nonzero(lightmask); src = (xs.mean(), ys.mean()) if len(xs) else (img0.shape[1] * 0.5, 0)
+    _cache = {}
+    if beh and beh.get("count"): T0 = text_rgba(img0.shape[1], img0.shape[0], "0", "AN", 10)
+    NXT = None
+    if sh.get("pass_to"):                                         # paso a través: la cámara entra al vidrio y sale en el plano siguiente
+        import comp2; NXT = comp2.frame0(f"{M}/clips/{sh['pass_to']}.mp4")
+        yy_, xx_ = np.mgrid[0:H, 0:W].astype(np.float32); rr = np.hypot((xx_ - W / 2) / (W / 2), (yy_ - H / 2) / (H / 2))
     for i in range(N):
         t = i / FPS; u = ease(t / DUR)
         if cam == "push":   sn, sf, dxn = 1 + 0.30 * u, 1 + 0.10 * u, 0
@@ -84,6 +90,11 @@ def r_depth2(sh, sid, DUR, put):
         else:                sn, sf, dxn = 1.02 + 0.03 * u, 1.01, (-110 * u) * S
         dyn = (40 - 80 * u) * S if cam == "rise" else 0
         im, dd = warp_depth(img0, d0, sn, sf, dx_near=dxn, dy_near=dyn, focal=fpt)
+        if beh and beh.get("count"):                              # contador DENTRO de la escena: el número cambia entre capas
+            c = beh["count"]; v = c["from"] + (c["to"] - c["from"]) * ease(ramp(t, DUR * beh.get("in", 0.15), DUR * c.get("end", 0.7)))
+            v = int(round(v / c.get("step", 1)) * c.get("step", 1)); txt = c.get("fmt", "{}").format(v).replace(",", ".")
+            if txt not in _cache: _cache[txt] = text_rgba(img0.shape[1], img0.shape[0], txt, beh.get("font", "AN"), beh.get("size", 300), tuple(beh.get("xy", (0.5, 0.5))), tuple(beh.get("color", (245, 238, 225))), beh.get("tracking", 0.0))
+            T0 = _cache[txt]
         if T0 is not None:
             td = pv(beh.get("td", "mid")); a = ramp(t, DUR * beh.get("in", 0.15), DUR * beh.get("in", 0.15) + 0.9)
             const = np.full(d0.shape, td, np.float32)
@@ -107,6 +118,15 @@ def r_depth2(sh, sid, DUR, put):
             band = np.exp(-((np.arange(W)[None, :] - x0 - (np.arange(H)[:, None] - H / 2) * 0.4) / (90 * S)) ** 2)
             im = im + (g * band * 2.2)[..., None] * np.array([1.0, 0.92, 0.7])
         if "tilt" in fx: im = tilt_shift(im)
+        if NXT is not None:
+            k = ramp(t, DUR - 0.9, DUR - 0.05)
+            if k > 0:                                                   # refracción de lente que crece + zoom, y aparece la escena siguiente
+                z = 1 + 1.6 * k ** 1.6; bar = 1 + 0.35 * k * rr ** 2
+                mx = W / 2 + (xx_ - W / 2) / (z * bar); my = H / 2 + (yy_ - H / 2) / (z * bar)
+                im = cv2.remap(im, mx, my, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+                im = cv2.GaussianBlur(im, (0, 0), 0.1 + 6 * k * S)
+                nb = cv2.GaussianBlur(NXT, (0, 0), 0.1 + 8 * (1 - k) * S)
+                mix = ease(ramp(t, DUR - 0.55, DUR - 0.05)); im = im * (1 - mix) + nb * mix
         put(film(im, t, i, "warm", halation=0.28))
 
 # ------------------------------------------------------------------ línea de tiempo 3D: pasillo de tarjetas

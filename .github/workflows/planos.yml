@@ -38,11 +38,11 @@ jobs:
       - name: assets
         run: |
           mkdir -p pkg
-          for f in tgpfarm_assets.tar tgpfarm_assets2.tar; do
+          for f in tgpfarm_assets.tar tgpfarm_assets2.tar tgpfarm_assets3.tar; do
             for n in 1 2 3 4 5; do gh release download tgpfarm-assets -R ${{ github.repository }} -p $f -D . --clobber && break; sleep $((n*10)); done
             tar -xf $f -C pkg
           done
-          cp plano.py comp.py shots.json pkg/mira/   # los scripts del commit pisan a los del tar
+          cp plano.py comp.py comp2.py graf.py shots.json pkg/mira/   # los scripts del commit pisan a los del tar
       - name: render ${{ matrix.job.id }}
         working-directory: pkg/mira
         run: |
