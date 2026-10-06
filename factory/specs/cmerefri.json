@@ -67,7 +67,7 @@
       },
       {
         "desde": 15.8,
-        "hasta": 18.2,
+        "hasta": 17.75,
         "kind": "foto",
         "props": {
           "plano": "p099",
@@ -75,7 +75,7 @@
         }
       },
       {
-        "desde": 23.2,
+        "desde": 23.65,
         "hasta": 28.02,
         "kind": "versus",
         "props": {

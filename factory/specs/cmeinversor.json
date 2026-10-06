@@ -48,7 +48,7 @@
   "hook": {
     "cortes": [
       {
-        "desde": 26.7,
+        "desde": 27.15,
         "hasta": 30.7,
         "kind": "versus",
         "props": {
@@ -64,13 +64,13 @@
             "valor": "1000 W",
             "color": "#FFFFFF"
           },
-          "tB": 0.8,
-          "tValores": 1.8
+          "tB": 0.6,
+          "tValores": 1.5
         }
       },
       {
         "desde": 33,
-        "hasta": 35.14,
+        "hasta": 34.7,
         "kind": "foto",
         "props": {
           "plano": "p126",
@@ -161,7 +161,7 @@
       },
       {
         "desde": 33,
-        "hasta": 35.1,
+        "hasta": 34.7,
         "kind": "adelanto",
         "props": {
           "texto": "más adelante",
@@ -195,19 +195,19 @@
         "durS": 2.5
       },
       {
-        "t": 26.7,
+        "t": 27.15,
         "src": "sfx/whoosh.mp3",
         "vol": 0.55,
         "durS": 2.5
       },
       {
-        "t": 27.5,
+        "t": 27.75,
         "src": "sfx/whoosh.mp3",
         "vol": 0.55,
         "durS": 2.5
       },
       {
-        "t": 28.6,
+        "t": 28.65,
         "src": "sfx/stinger_hit.mp3",
         "vol": 0.55,
         "durS": 2.5
