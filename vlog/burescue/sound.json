@@ -1,0 +1,25 @@
+{
+ "beds": {
+  "hook": ["1237.mp3", -30], "c0": ["1238.mp3", -31], "c1": ["2414.mp3", -32], "c2": ["1736.mp3", -30],
+  "c3": ["1736.mp3", -30], "c4": ["1330.mp3", -30], "c5": ["2407.mp3", -32], "c6": ["1237.mp3", -32],
+  "c7": ["1330.mp3", -31], "c8": ["1329.mp3", -32], "c9": ["2472.mp3", -32]
+ },
+ "hush": ["And it is not afraid of you.", "The relaxed ones mostly didn't leave any grandchildren.", "So do they come?", "But one of them doesn't wait.", "And bones remember.", "What they had was each other."],
+ "phr": [
+  ["something has started walking at exactly the same speed", "1222.mp3", -22, 4],
+  ["It's patient.", "498.mp3", -12, 3],
+  ["You hear it now.", "773.mp3", -14, 3],
+  ["And then another one, off to the left.", "1222.mp3", -20, 3],
+  ["So you speed up.", "1230.mp3", -20, 6],
+  ["You shout.", "2150.mp3", -12, 1],
+  ["Up at the camp, everyone stops", "498.mp3", -12, 4],
+  ["But she grabs a burning branch from the fire,", "1345.mp3", -12, 3],
+  ["your band comes pouring down the slope toward you.", "1343.mp3", -18, 4],
+  ["The biggest hyena lunges out of the grass", "2150.mp3", -8, 1],
+  ["You go down hard.", "2182.mp3", -10, 1],
+  ["Your band hits the hyenas like a wave.", "1344.mp3", -14, 4],
+  ["cackling and whooping.", "105.mp3", -20, 2],
+  ["Then one morning, you walk out with the hunters again.", "2472.mp3", -26, 10],
+  ["a wolf walks up to a human campfire,", "1330.mp3", -20, 6]
+ ]
+}

@@ -1,0 +1,220 @@
+# i|kind|cast|light|escena parte 0 [|| escena parte 1]   (override por parte: @cast=a,b · @obj · @scene · @now)
+0|cast|hunter|E|wide view of cold open hills of dead yellow grass and bare trees at dusk, the hunter alone walking along a ridge far away, small in the frame||@obj the wide cold winter valley at dusk, a pale sun almost gone behind the hills, a thin river below, bare trees
+1|cast|hunter|E|the hunter walking home through tall dead grass at dusk, tired but pleased, a spear in one hand||close on the hunter's tired face as he walks, breath steaming in the cold air, the hills behind him
+2|cast|hunter|E|the hunter carrying a whole deer back leg over his shoulder, the hoof hanging behind him, his hand gripping it
+3|scene||E|far behind on the hillside, a dark spotted hyena standing still in the tall dead grass, its head low, watching||@obj the trampled path the hunter left through the frosty grass, and far down it, two small dark shapes among the grass
+4|cast|hunter|E|the hunter stopping for a second and glancing back over his shoulder at the empty grass, uneasy||@cast=hunter,elder,boy far ahead, the glow of the band's fire under the limestone overhang at dusk, small figures moving around it
+5|cast|hunter,elder,boy|N|the band at their fire under the overhang at dusk, the old woman and the boy among them, everyone busy, nobody knowing yet||close on the old woman by the fire lifting her head as if she sensed something, listening
+6|cast|hunter|E|the hunter walking faster, gripping his spear, looking straight ahead
+7|scene||E|a spotted hyena slipping through the dead grass in the dusk, low and quiet, following a trail
+8|cast|hunter|E|the hunter pausing on the slope to catch his breath, the deer leg on his shoulder, the empty cold hills all around him
+9|obj||D|a huge empty winter landscape of rolling hills and a dark forest edge, a few big animals far away on a slope, nobody in sight
+10|cast|hunter|E|the hunter looking small and alone in a wide valley of dead grass, a herd of horses far away on the hillside
+11|scene||D|a giant cave lion with a pale thick winter coat walking slowly across a frosty meadow, much bigger than a man||a pack of grey wolves trotting in a line through the snow at the edge of a pine forest
+12|scene||D|a cave lion lying on a rock in the winter sun, huge paws, a scarred face, staring calmly
+13|scene||D|a huge cave bear standing up on its hind legs beside a fallen tree at the edge of a forest, taller than any man
+14|cast|hunter|E|the hunter's head turning sharply toward a sound in the grass, eyes wide
+15|scene||E|two cave hyenas standing in the dead grass at dusk, heavy shouldered and spotted, staring straight ahead
+16|scene||D|a cave hyena close up, thick spotted fur, heavy jaws, frost on its whiskers, cold breath steaming||a big cave hyena trotting across a snowy slope, its shoulders much higher than its hips
+17|scene||D|a cave hyena crunching an old horse leg bone between its jaws on a frosty rock, bone fragments around it
+18|scene||D|a clan of five cave hyenas resting together in a hollow of a hillside, watching the valley
+19|scene||E|a cave hyena staring straight at the viewer from the grass with calm unblinking eyes
+20|obj||X|a bone with deep gnaw marks lying on a black cloth under a lab lamp, a small scale bar beside it
+21|scene||X|archaeologists in hard hats working inside a low limestone cave near the Italian coast in 2021, work lamps, buckets and sieves
+22|obj||X|fossil bones and skull fragments laid out on a table in a museum lab, numbered tags beside them
+23|obj||X|a row of nine small labelled trays with fossil human bone fragments on a long lab table
+24|obj||X|close on a fossil bone covered in small parallel gnaw marks and tooth pits under a magnifying lamp
+25|scene||N|inside a dark cave long ago, hyenas dragging something heavy wrapped in fur into the back of their den, seen from far away||a hyena den at the back of a cave with scattered old bones on the floor, the hyenas lying near them
+26|cast|hunter|E|the hunter walking on, glancing sideways, the grass moving behind him
+27|scene||E|a hyena keeping pace at a distance in the grass, parallel to the path, not hurrying
+28|cast|hunter|E|close on the hunter's feet stepping over frosty stones on the path, one step slightly uneven, his worn hide boots
+29|scene||E|a hyena sitting down in the grass at a distance, patiently watching, licking its lips
+30|cast|hunter|E|the hunter hitching the heavy deer leg higher on his shoulder, sweat on his face despite the cold||close on the deer leg's fur and hoof bouncing on his shoulder as he walks
+31|scene||E|three hyenas spreading out in the grass at dusk, one ahead, two behind
+32|cast|hunter|E|the hunter looking over his shoulder again with a worried frown
+33|scene||D|a leopard crouched in the branches of a tree on the African savanna long ago, holding still, looking down
+34|obj||X|the entrance of Swartkrans cave in a rocky grassy hillside in South Africa, a fenced excavation pit in limestone rock
+35|obj||X|the fossil skull cap of a young early human on a museum stand, brown and cracked
+36|obj||X|close on two small round holes in the back of a fossil skull fragment, a ruler beside them under lab light
+37|scene||X|a nineteen seventies scientist with a beard sitting at a desk covered in fossil bones and papers, holding a skull fragment up to a lamp
+38|scene||X|the scientist holding a fossil leopard jaw next to the skull fragment, lining up the fangs with the holes
+39|obj||X|a fossil leopard lower jaw with two long fangs placed next to a fossil skull fragment with two holes, the fangs lined up with the holes
+40|obj||X|a leopard on a thick branch in a tree on the African savanna at dusk, its prey hanging over the branch beside it, seen from far away||the mouth of a dark cave on a hillside in Africa with a leopard walking into it at dusk
+41|obj||X|the small fossil skull of a young child with its face and jaw, a famous fossil, on a museum stand||a museum display case with a small fossil child's skull and a label card out of focus
+42|obj||X|close on the eye sockets of a small fossil skull, tiny marks and holes visible, under lab light||a large crowned eagle perched on a dead branch, huge talons gripping the wood
+43|obj||X|a crowned eagle swooping low over tall grass with its talons out in Africa
+44|now|hunter|I|the same modern man walking alone through a dark empty parking lot at night, glancing over his shoulder, keys in his hand
+45|scene||X|early humans long ago sitting on a rock at dusk on the African savanna, all of them looking around nervously
+46|scene||X|a relaxed early human long ago lying in the grass far from the others, half asleep, alone
+47|cast|hunter|E|the hunter freezing mid-step, listening, his eyes moving to the side
+48|scene||E|a second hyena appearing from the grass to the left in the dusk, then a third behind it||@cast=hunter the hunter turning to look left, his grip tightening on the spear
+49|cast|hunter|E|the sun gone, the sky deep blue, the hunter walking fast along the dark path, the grass grey around him
+50|cast|hunter|E|the hunter looking up at the darkening sky, the first star out
+51|obj||E|the cold valley almost dark, the grass going grey, the trees black against the last light
+52|cast|hunter|E|close on the hunter's eyes straining into the dark grass, seeing nothing
+53|scene||N|the shining eyes of a big cat reflecting light in the dark grass at night
+54|scene||N|a hyena with its nose to the ground following a trail through dark grass at night
+55|cast|hunter|N|the hunter in near darkness on the path, holding his spear out in front of him, unsure where to point it||@obj the dark path at night, the grass a grey blur, nothing visible beyond a few steps
+56|scene||X|a small village in rural Tanzania at dusk, mud brick houses with tin roofs, people walking home on a dirt path, maize fields
+57|scene||X|a lion biologist with a grey beard and a sun hat kneeling beside a sleeping collared lion in the Serengeti grass||field researchers in a dusty office in Tanzania with maps and stacks of paper reports on a table
+58|obj||X|a stack of old handwritten report sheets and a map of Tanzania with pins on a wooden desk
+59|obj||X|a big bright full moon rising over the African savanna at dusk||the waning moon low over dark savanna trees late at night
+60|obj||X|the African savanna at night after sunset, completely dark, only the black outline of trees against a starry sky
+61|obj||X|a dark village path at night in rural Tanzania, no moon, the houses black shapes
+62|scene||X|a lion walking slowly at the edge of a maize field at night, lit faintly by starlight||a man walking home alone on a dark rural path with a small torch at night
+63|scene||X|women carrying water on a dirt path near a village at dusk, a man walking cattle home
+64|cast|hunter|E|the hunter walking home in the dark, the exact same situation, alone on the path
+65|scene||X|an old woman in a village at night looking up at a full moon with a worried face||a full moon in a cloudy night sky over dark trees
+66|obj||X|a big full moon over dark hills, beautiful and bright
+67|obj||X|dark empty grass at night with no moonlight, almost black, a thin line of trees
+68|cast|hunter|N|the hunter breaking into a jog along the path, the deer leg bouncing on his shoulder||@scene the hyenas breaking into a trot in the dark grass behind him
+69|cast|hunter|N|the hunter coming over a rise and seeing the camp below: the limestone overhang and the orange fire beneath it
+70|cast|hunter|N|the hunter's face lit faintly orange by the distant fire, relief in his eyes||the camp fire under the overhang seen from the slope, small figures sitting around it
+71|cast|hunter|N|the hunter stopping, filling his lungs, cupping a hand to his mouth
+72|cast|hunter|N|the hunter shouting with all his strength toward the camp, his face strained, the spear raised
+73|cast|hunter|N|close on the hunter mid-shout, mouth wide open, veins on his neck||@cast=elder,boy up at the camp, the old woman and the boy turning their heads sharply toward the sound
+74|cast|hunter|N|the hunter shouting again, waving the spear above his head
+75|cast|boy|N|the boy at the camp jumping to his feet, staring into the dark
+76|obj||X|a troop of vervet monkeys sitting in an acacia tree in Kenya, one of them calling out with its mouth open||a vervet monkey on a branch looking around alertly
+77|scene||X|two field researchers in the late nineteen seventies crouching in dry grass in Kenya with a tape recorder and binoculars, watching monkeys||a woman researcher in a khaki shirt writing in a notebook under an acacia tree, monkeys in the background
+78|obj||X|a vervet monkey sitting upright in the grass calling out, its mouth open
+79|obj||X|a vervet monkey on the ground looking around at its troop, three paths of escape around it: tree, bush, open grass
+80|obj||X|a hidden loudspeaker wrapped in grass at the foot of an acacia tree, a vervet monkey nearby||vervet monkeys rushing up into the branches of an acacia tree
+81|obj||X|vervet monkeys looking up at the sky and diving into thick bushes
+82|obj||X|vervet monkeys standing up on their hind legs in tall grass, peering down around their feet
+83|obj||X|a vervet monkey calling out with its mouth open, the rest of the troop turning toward it
+84|cast|hunter,elder,boy|N|the band at the camp all on their feet, everyone staring into the dark slope
+85|cast|elder|N|the old woman cupping her ear toward the dark, understanding, her face hardening||close on the old woman's eyes narrowing as she listens
+86|cast|hunter,elder,boy|N|the whole band frozen around the fire, half lit, all heads turned the same way
+87|cast|hunter|N|the hunter standing in the dark grass, two hyenas now clearly visible not far behind him
+88|cast|elder|N|the old woman by the fire looking at the others one by one
+89|cast|hunter,elder,boy|N|the band looking at each other around the fire, unsure, a mother pulling her child close
+90|scene||N|several hyenas in the dark grass at night, their eyes catching the light of distant fire||close on a hyena's open jaws in the dark, big teeth
+91|obj||N|wooden spears leaning against the rock by the fire, flint points tied on, and a pile of firewood
+92|cast|hunter,elder,boy|N|a young man of the band hesitating, holding a spear, looking at his wife and baby
+93|cast|hunter,elder,boy|N|members of the band standing still by the fire, safe in the light, the dark slope in front of them||close on the warm fire and the circle of hands around it, safe
+94|cast|elder|N|the old woman staring into the dark, then at the fire
+95|cast|elder|N|the old woman getting up from her furs, slowly but firmly
+96|cast|elder|N|the old woman standing with a hand on the rock, her old legs unsteady
+97|cast|elder|N|the old woman pulling a burning branch from the fire and holding it high above her head||close on the old woman shouting at the top of her lungs, the burning branch above her, fierce
+98|cast|elder,boy|N|the faces around the old woman changing, the boy staring at her with his mouth open
+99|cast|hunter,elder,boy|N|men and women of the band grabbing spears and lighting torches from the fire
+100|cast|boy|N|the boy and two older kids grabbing rocks from the ground||the whole band running out of the camp together with torches held high, shouting
+101|cast|hunter,elder,boy|N|a wave of torches pouring down the dark slope toward the viewer, the band shouting
+102|obj||X|a flock of small birds diving at a hawk perched on a branch in daylight
+103|obj||X|small black birds mobbing a hawk in flight in the sky
+104|obj||X|a troop of baboons screaming and shaking branches at a leopard below a tree
+105|scene||N|a single hyena in the dark grass facing a line of twenty torches coming toward it||the hyenas backing off from the line of torches, ears flat
+106|scene||N|a hyena standing still and calculating in the dark, its head low
+107|scene||N|the line of torches and shouting people coming down the slope, seen from behind the hyenas
+108|scene||N|a hyena turning away toward the dark, looking back once
+109|cast|hunter|N|the hunter running the last stretch toward the torches, the deer leg still on his shoulder
+110|scene||N|the biggest hyena sprinting out of the dark grass toward the hunter's back
+111|cast|hunter|N|the big hyena lunging at the hunter's leg from behind as he runs, the hunter twisting, his spear flying||@cast=hunter the hunter falling hard onto the frozen ground in the dark grass
+112|cast|hunter|N|the hunter on the ground, the deer leg rolling away into the grass, the hyena right next to him
+113|cast|hunter|N|the hunter on the ground on his back in the dark grass, the hyena standing over him snarling||close on the hunter's face on the frozen ground, terror in his eyes
+114|cast|hunter|N|the hunter clutching his leg on the ground, alone in the dark
+115|cast|elder|N|the first burning torch arriving out of the dark, held by the old woman, rushing in
+116|cast|hunter,elder,boy|N|the band rushing in with torches and spears around the fallen hunter, shouting
+117|cast|hunter,elder,boy|N|chaos at night: torches swinging, spears jabbing toward hyenas, the boy throwing a rock
+118|scene||N|the big hyena jumping back from a torch, snarling, its ears flat
+119|scene||N|the hyenas circling in the dark beyond the torchlight, cackling with open mouths
+120|scene||N|the hyenas trotting away into the dark night one by one, their shapes disappearing
+121|scene||N|a single hyena stopping at the edge of the dark to look back at the torches
+122|cast|hunter,elder,boy|N|the band standing in a circle of torches around the hunter, breathing hard, the night quiet
+123|cast|hunter,elder,boy|N|a man of the band dragging the deer leg back up the hill behind the group with a satisfied grin
+124|cast|hunter|N|the hunter on the ground looking at the man with the deer leg and laughing weakly in disbelief
+125|cast|hunter|N|the hunter sitting up in the grass at night, holding his leg, the torches around him
+126|cast|hunter|E|the hunter standing on a rocky ridge at dusk with his spear, looking out over the valley, calm and strong
+127|cast|hunter|D|the hunter and three men of the band crouching behind rocks with spears, stalking something in the snow
+128|obj||X|a small town in southern Bavaria in winter with snowy fields and forested hills behind it
+129|obj||X|the skeleton of a big cave lion displayed in a museum, complete and mounted, lit by gallery lamps
+130|obj||X|close on a fossil lion rib with a small puncture hole in it under a lab lamp||a long sharpened wooden spear lying on a table next to a fossil rib
+131|obj||X|close on a fossil bone with thin straight cut marks from a stone tool under magnification
+132|scene||D|Neanderthal hunters with wooden spears crouching around a dead cave lion lying in the snow, one of them cutting with a stone blade
+133|scene||D|a group of Neanderthals with wooden spears standing over a fallen cave lion in a frosty meadow, exhausted
+134|scene||X|a group of hunters of the Hadza in Tanzania walking through dry bush with bows, wearing simple shorts and t-shirts
+135|scene||X|a lion and lioness feeding on a fresh antelope kill in dry grass in Tanzania||a small group of men approaching the lions carefully through the dry grass, bows in their hands
+136|scene||X|three men shouting and waving their arms and bows at a lion that is backing away from its kill in dry grass
+137|scene||X|the men cutting meat from the antelope carcass the lion left, one of them keeping watch
+138|scene||X|a man walking away carrying a big piece of meat over his shoulder, a lion watching from a distance under a tree
+139|cast|hunter|N|the hunter by the fire at night looking at the dark, thoughtful
+140|scene||D|a cave lion dragging away a reindeer in the snow||@cast=hunter Neanderthal-era hunters, the hunter among them, chasing hyenas away from a horse carcass in the snow
+141|cast|hunter,elder,boy|N|the band huddled around the fire, the hunter in the middle
+142|cast|hunter|E|the hunter standing alone on a dark hill at dusk, a long way from the fire
+143|cast|hunter,elder,boy|N|back at the camp under the overhang, the band laying the hunter down on furs by the fire
+144|cast|hunter|N|close on the hunter's leg wrapped in a torn fur, dark stains on it, the firelight on it
+145|cast|hunter|N|the hunter lying on the furs, sweating and shaking, his teeth clenched
+146|cast|hunter|N|the hunter lying back on the furs, pale, eyes half closed, in pain||close on the hunter's hand gripping the fur hard
+147|cast|hunter|N|the hunter trying to stand and falling back onto the furs, unable to walk||the empty dark slope beyond the camp where the hyenas went
+148|cast|elder,hunter|N|the old woman kneeling by the hunter's leg, pouring warm water from a hide bag over the wound||close on the old woman's wrinkled hands carefully cleaning the leg with a wet pad of fur
+149|cast|elder|N|the old woman pressing a pad of green moss and leaves onto the leg
+150|cast|elder,hunter|N|the old woman wrapping a strip of soft hide tightly around the hunter's leg
+151|cast|boy,hunter|N|the boy kneeling by the hunter, holding his hand with both hands, frightened||close on the boy's small hands holding the hunter's big hand
+152|cast|elder|N|the old woman sitting back on her heels by the fire, tired, looking at the hunter
+153|obj||N|a small pile of moss, leaves and a hide strip on a flat stone by the fire
+154|obj||X|old human bones laid out in order on a dark cloth in a museum lab, a long healed fracture visible on one
+155|cast|hunter|D|forty days later, the hunter sitting outside the camp in pale winter sun, his leg wrapped, carving a spear shaft
+156|obj||X|the huge mouth of Shanidar cave in the rocky mountains of Iraqi Kurdistan, a dry rocky slope below it
+157|scene||X|archaeologists in the nineteen fifties kneeling in a deep excavation trench inside a big cave, carefully exposing a skeleton
+158|obj||X|a Neanderthal skull and bones in a museum case, the skull with a damaged eye socket||close on a fossil Neanderthal arm bone thin and withered next to a normal one on a lab table
+159|scene||D|a Neanderthal man long ago with a badly scarred face and one damaged eye, sitting at a cave mouth||close on the scarred Neanderthal man's face, one eye clouded
+160|scene||D|the Neanderthal man with a withered right arm ending at the elbow, sitting by a fire
+161|scene||D|the Neanderthal man limping with a stick across a rocky slope, others of his group waiting for him
+162|scene||D|the Neanderthal man sitting while others talk around him, not hearing them, watching their faces
+163|scene||D|the scarred Neanderthal man smiling slightly by the fire, older, alive
+164|scene||D|the Neanderthal man in his forties with grey in his hair, sitting among the children of his group
+165|scene||D|a Neanderthal woman handing a piece of cooked meat to the scarred man
+166|scene||D|a Neanderthal group walking across a frozen valley, two of them helping the limping man
+167|scene||D|a Neanderthal man bringing food in a hide bundle to the injured man at the cave mouth
+168|scene||N|Neanderthals with spears standing guard at night in front of the injured man sleeping by the fire
+169|scene||D|the old injured Neanderthal man sitting in the winter sun at the cave mouth, peaceful
+170|obj||X|the rocky mountains and orange cliffs near Valencia in Spain with a cave mouth in the rock
+171|obj||X|the small mouth of a cave in a cliff above a river valley in Valencia, Spain
+172|obj||X|a tiny fossil fragment of a child's skull bone held in gloved fingers under a lab lamp||a computer screen showing a 3D scan of an inner ear bone in a modern lab
+173|scene||D|a small Neanderthal child sitting in the lap of an older woman by a fire, being fed, long ago
+174|scene||D|a Neanderthal mother holding her small child upright as it tries to walk, the child unsteady
+175|scene||D|a Neanderthal child about six sitting with other children by a fire, smiling
+176|scene||D|the Neanderthal child being carried on the back of an adult across a rocky slope
+177|scene||D|the Neanderthal group gathering food and hunting while the child sits safely with an elder
+178|scene||X|a researcher in a modern lab looking at a 3D model of a skull on a screen, thinking
+179|scene||D|a Neanderthal woman wrapping a fur around the small child with tenderness
+180|scene||N|a Neanderthal family by the fire at night, the child asleep in the middle of them
+181|cast|elder|N|the old woman by the fire looking at the sleeping hunter, thoughtful
+182|cast|elder|N|the old woman tapping two stones together absently by the fire, deep in thought
+183|cast|hunter,elder,boy|N|the band of about fifteen people counted around the fire, every one of them visible
+184|cast|hunter,elder,boy|N|the band around the fire with an empty space where someone usually sits
+185|cast|hunter,elder,boy|D|the band out on a hunt, a line of people with spears crossing a frosty valley
+186|cast|elder,hunter|N|the old woman bringing food to the hunter lying on the furs
+187|cast|elder,boy|N|the old woman with her arm around the boy by the fire, both watching the hunter sleep
+188|scene||N|a long line of torches of many generations of people running down dark hills, fading into the distance||a band of people long ago carrying an injured man on a stretcher of branches and hides across snow
+189|scene||D|a band of hunter-gatherers sharing food with a woman with a bandaged arm, long ago
+190|cast|elder,boy|N|the old woman teaching the boy how to wrap a hide strip around a stick, by the fire
+191|now|hunter|I|the same modern man on a city street kneeling to help a stranger who fell on the sidewalk
+192|now|hunter|I|the same modern man stopping on a busy street to look at someone in trouble
+193|scene||X|people on a city sidewalk rushing toward an old man who collapsed, kneeling around him
+194|scene||X|three adults kneeling around a kid who fell off a bike on a suburban street, helping him up
+195|scene||X|firefighters in uniform running toward a burning building at night
+196|now|hunter|I|the same modern man holding a door for an old woman with shopping bags
+197|cast|elder|N|the old woman by the fire smiling quietly, the same kindness in her face
+198|cast|hunter|M|pale winter morning at the camp, the hunter sitting on the furs with his leg bandaged, drinking from a bowl
+199|cast|hunter,elder|M|weeks later, the hunter limping around the camp with a stick, the old woman watching
+200|cast|hunter,elder,boy|D|the band bringing the hunter food, someone handing him a roasted root
+201|cast|hunter,elder,boy|N|the band laughing at the fire as the hunter tells the story with his hands
+202|cast|boy|N|the boy acting out the story by the fire, pretending to fight with a stick, the kids laughing
+203|cast|boy|N|the boy waving his arms dramatically by the fire, showing how big the hyenas were, the kids wide eyed||the hunter shaking his head and laughing at the boy's exaggerated story
+204|cast|hunter|M|one cold clear morning, the hunter walking out of the camp with the other hunters
+205|cast|hunter|M|the hunter walking slowly with a walking stick at the back of the group of hunters, smiling
+206|cast|hunter,elder,boy|D|the band on a ridge in the winter sun, together
+207|cast|elder|N|the old woman by the fire looking straight at the camera with quiet certainty
+208|scene||X|a quiet grave of piled stones on a hillside long ago, a fur cloak laid on top
+209|cast|hunter,elder,boy|N|the band around the fire, close together, faces warm
+210|cast|hunter|D|the hunter small on a hillside next to a huge cave lion in the far distance
+211|cast|hunter|N|the hunter peering into the dark night, seeing nothing
+212|cast|hunter,elder,boy|N|the band around the fire, all hands touching, the hunter in the middle
+213|now|hunter|I|the same modern man helping a stranger pick up spilled groceries on a sidewalk||@cast=elder the old woman holding the burning branch high on the dark slope, fierce
+214|cast|elder|N|the old woman running down the dark hill with the burning branch, the band behind her||the torches spreading out on the dark hillside seen from far away
+215|cast|hunter,elder,boy|N|the band's little fire under the overhang at night seen from far away
+216|scene||N|a grey wolf stepping out of the dark into the edge of firelight, cautious||a wolf and a young man looking at each other across a small fire at night
+217|scene||N|a wolf lying down at the edge of the firelight, watching the people
+218|cast|boy|N|the boy by the fire looking at the dark where the wolf is, curious, not afraid

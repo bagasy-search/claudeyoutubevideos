@@ -1,0 +1,10 @@
+{
+ "world": "a band of hunter-gatherers 40,000 years ago in the cold open hills and limestone valleys of southern France in early winter, dead yellow grass, bare trees, their camp under a limestone overhang above a small river",
+ "empty": "a wild place 40,000 years ago in the cold hills of southern France in early winter, completely empty of people, nobody anywhere in the frame, no modern objects, no paths, no fences, no clothing",
+ "light": {
+  "D": "only the light the place really has: low cold late afternoon winter daylight under a pale grey sky, frost on the dead grass",
+  "E": "only the light the place really has: the last cold blue light of a winter dusk, the sky still bright at the horizon, faces and grass still clearly readable",
+  "N": "only the light the place really has: the warm orange glow of a camp fire and torches from off frame lighting faces and hands, moonlight on the rock behind, exposure bright enough that faces, clothes and surroundings stay clearly readable",
+  "M": "only the light the place really has: pale cold morning winter light, frost, thin smoke from the fire"
+ }
+}
