@@ -113,15 +113,15 @@
  },
  {
   "id": "q12",
-  "kind": "depth2",
+  "kind": "reloj",
   "t0": 46.1,
   "dur": 3.6,
   "at": "2.5",
   "exacto": true
  },
  {
-  "id": "v_casa_lejos",
-  "kind": "depth2",
+  "id": "split1",
+  "kind": "split",
   "t0": 49.7,
   "dur": 4.86,
   "at": "4.0",
@@ -144,10 +144,18 @@
   "exacto": true
  },
  {
+  "id": "gota1",
+  "kind": "gota",
+  "t0": 60.06,
+  "dur": 1.858,
+  "at": "4.1",
+  "exacto": true
+ },
+ {
   "id": "o02_botella_tray",
   "kind": "depth2",
-  "t0": 60.06,
-  "dur": 4.18,
+  "t0": 61.918,
+  "dur": 2.322,
   "at": "4.1",
   "exacto": true
  },
@@ -233,17 +241,25 @@
  },
  {
   "id": "v_reloj_tic",
-  "kind": "depth2",
+  "kind": "reloj",
   "t0": 100.2,
   "dur": 4.329,
   "at": "6.0@y qu\u00e9date",
   "exacto": true
  },
  {
+  "id": "rev_cap1",
+  "kind": "revela",
+  "t0": 104.529,
+  "dur": 0.97,
+  "at": "7",
+  "exacto": true
+ },
+ {
   "id": "cap1",
   "kind": "capitulo",
-  "t0": 104.529,
-  "dur": 2.111,
+  "t0": 105.499,
+  "dur": 1.141,
   "at": "7",
   "exacto": true
  },
@@ -385,7 +401,7 @@
  },
  {
   "id": "q10",
-  "kind": "depth2",
+  "kind": "reloj",
   "t0": 168.169,
   "dur": 1.511,
   "at": "10",
@@ -448,10 +464,18 @@
   "exacto": true
  },
  {
+  "id": "rev_cap2",
+  "kind": "revela",
+  "t0": 191.493,
+  "dur": 0.821,
+  "at": "12",
+  "exacto": true
+ },
+ {
   "id": "cap2",
   "kind": "capitulo",
-  "t0": 191.493,
-  "dur": 1.787,
+  "t0": 192.314,
+  "dur": 0.966,
   "at": "12",
   "exacto": true
  },
@@ -592,10 +616,18 @@
   "exacto": true
  },
  {
+  "id": "rev_cap3",
+  "kind": "revela",
+  "t0": 254.164,
+  "dur": 1.011,
+  "at": "14",
+  "exacto": true
+ },
+ {
   "id": "cap3",
   "kind": "capitulo",
-  "t0": 254.164,
-  "dur": 2.2,
+  "t0": 255.175,
+  "dur": 1.189,
   "at": "14",
   "exacto": true
  },
@@ -696,10 +728,18 @@
   "exacto": true
  },
  {
+  "id": "rev_cap4",
+  "kind": "revela",
+  "t0": 294.785,
+  "dur": 1.011,
+  "at": "17",
+  "exacto": true
+ },
+ {
   "id": "cap4",
   "kind": "capitulo",
-  "t0": 294.785,
-  "dur": 2.2,
+  "t0": 295.796,
+  "dur": 1.189,
   "at": "17",
   "exacto": true
  },
@@ -782,8 +822,8 @@
   "exacto": true
  },
  {
-  "id": "mic_calcio",
-  "kind": "microscopio",
+  "id": "potencias",
+  "kind": "potencias",
   "t0": 331.82,
   "dur": 7.28,
   "at": "21.2",
@@ -830,8 +870,8 @@
   "exacto": true
  },
  {
-  "id": "q7",
-  "kind": "depth2",
+  "id": "q8",
+  "kind": "reloj",
   "t0": 368.456,
   "dur": 2.384,
   "at": "22",
@@ -870,8 +910,8 @@
   "exacto": true
  },
  {
-  "id": "o03_frasco_cb",
-  "kind": "depth2",
+  "id": "gota2",
+  "kind": "gota",
   "t0": 385.32,
   "dur": 2.76,
   "at": "23.2@del frasco de agote",
@@ -886,10 +926,18 @@
   "exacto": true
  },
  {
+  "id": "rev_cap5",
+  "kind": "revela",
+  "t0": 389.74,
+  "dur": 1.02,
+  "at": "24",
+  "exacto": true
+ },
+ {
   "id": "cap5",
   "kind": "capitulo",
-  "t0": 389.74,
-  "dur": 2.22,
+  "t0": 390.76,
+  "dur": 1.2,
   "at": "24",
   "exacto": true
  },
@@ -929,7 +977,7 @@
   "id": "lam_aparato",
   "kind": "lamina",
   "t0": 411.6,
-  "dur": 11.58,
+  "dur": 9.2,
   "at": "25.3",
   "exacto": true,
   "wk": [
@@ -950,10 +998,18 @@
     3
    ],
    [
-    10.24,
+    7.76,
     4
    ]
   ]
+ },
+ {
+  "id": "lam_real",
+  "kind": "lamina_ov",
+  "t0": 420.8,
+  "dur": 2.38,
+  "at": "25.3@todo sumergido",
+  "exacto": true
  },
  {
   "id": "p21_merlo",
@@ -964,11 +1020,19 @@
   "exacto": true
  },
  {
+  "id": "fotomaq",
+  "kind": "fotomaqueta",
+  "t0": 429.38,
+  "dur": 1.34,
+  "at": "25.5",
+  "exacto": true
+ },
+ {
   "id": "a03_fotolupa",
   "kind": "fotolupa",
-  "t0": 429.38,
-  "dur": 5.84,
-  "at": "25.5",
+  "t0": 430.72,
+  "dur": 4.5,
+  "at": "25.5@los m\u00e9dicos alrededor",
   "exacto": true
  },
  {
@@ -1060,10 +1124,18 @@
   "exacto": true
  },
  {
+  "id": "rev_cap6",
+  "kind": "revela",
+  "t0": 470.678,
+  "dur": 1.011,
+  "at": "28",
+  "exacto": true
+ },
+ {
   "id": "cap6",
   "kind": "capitulo",
-  "t0": 470.678,
-  "dur": 2.2,
+  "t0": 471.689,
+  "dur": 1.189,
   "at": "28",
   "exacto": true
  },
@@ -1084,16 +1156,16 @@
   "exacto": true
  },
  {
-  "id": "q5",
-  "kind": "depth2",
+  "id": "q7",
+  "kind": "reloj",
   "t0": 479.274,
   "dur": 1.886,
   "at": "31",
   "exacto": true
  },
  {
-  "id": "v_prensa_ext",
-  "kind": "depth2",
+  "id": "split2",
+  "kind": "split",
   "t0": 481.16,
   "dur": 3.58,
   "at": "32.0",
@@ -1108,8 +1180,8 @@
   "exacto": true
  },
  {
-  "id": "v_componedor",
-  "kind": "depth2",
+  "id": "tipos1",
+  "kind": "tipos",
   "t0": 492.3,
   "dur": 4.28,
   "at": "32.2",
@@ -1124,8 +1196,8 @@
   "exacto": true
  },
  {
-  "id": "v_prueba",
-  "kind": "depth2",
+  "id": "tipos2",
+  "kind": "tipos",
   "t0": 498.28,
   "dur": 3.24,
   "at": "32.3",
@@ -1188,8 +1260,8 @@
   "exacto": true
  },
  {
-  "id": "c11_mapa",
-  "kind": "mapamesa",
+  "id": "cables",
+  "kind": "cables",
   "t0": 520.74,
   "dur": 5.82,
   "at": "33.2",
@@ -1228,8 +1300,8 @@
   "exacto": true
  },
  {
-  "id": "q3",
-  "kind": "depth2",
+  "id": "q5",
+  "kind": "reloj",
   "t0": 537.81,
   "dur": 2.87,
   "at": "34",
@@ -1276,10 +1348,18 @@
   "exacto": true
  },
  {
+  "id": "rev_cap7",
+  "kind": "revela",
+  "t0": 555.895,
+  "dur": 0.986,
+  "at": "36",
+  "exacto": true
+ },
+ {
   "id": "cap7",
   "kind": "capitulo",
-  "t0": 555.895,
-  "dur": 2.145,
+  "t0": 556.881,
+  "dur": 1.159,
   "at": "36",
   "exacto": true
  },
@@ -1380,8 +1460,8 @@
   "exacto": true
  },
  {
-  "id": "q1",
-  "kind": "depth2",
+  "id": "q4",
+  "kind": "reloj",
   "t0": 617.655,
   "dur": 1.945,
   "at": "38",
@@ -1484,10 +1564,18 @@
   "exacto": true
  },
  {
+  "id": "q_amanecer",
+  "kind": "reloj",
+  "t0": 651.251,
+  "dur": 1.945,
+  "at": "40",
+  "exacto": true
+ },
+ {
   "id": "v_amanecer",
   "kind": "depth2",
-  "t0": 651.251,
-  "dur": 3.889,
+  "t0": 653.196,
+  "dur": 1.945,
   "at": "40",
   "exacto": true
  },
@@ -1508,16 +1596,24 @@
   "exacto": true
  },
  {
-  "id": "cap8",
-  "kind": "capitulo",
+  "id": "rev_cap8",
+  "kind": "revela",
   "t0": 661.179,
-  "dur": 2.2,
+  "dur": 1.011,
   "at": "42",
   "exacto": true
  },
  {
-  "id": "c15_luna_match",
-  "kind": "match",
+  "id": "cap8",
+  "kind": "capitulo",
+  "t0": 662.19,
+  "dur": 1.189,
+  "at": "42",
+  "exacto": true
+ },
+ {
+  "id": "gota3",
+  "kind": "gota",
   "t0": 663.379,
   "dur": 2.961,
   "at": "43",
@@ -1604,10 +1700,18 @@
   "exacto": true
  },
  {
+  "id": "rev_cap9",
+  "kind": "revela",
+  "t0": 700.249,
+  "dur": 1.011,
+  "at": "45",
+  "exacto": true
+ },
+ {
   "id": "cap9",
   "kind": "capitulo",
-  "t0": 700.249,
-  "dur": 2.2,
+  "t0": 701.26,
+  "dur": 1.189,
   "at": "45",
   "exacto": true
  },
@@ -1708,19 +1812,11 @@
   "exacto": true
  },
  {
-  "id": "p38_donante_hoy",
-  "kind": "clip",
+  "id": "eras",
+  "kind": "eras",
   "t0": 760.72,
-  "dur": 3.34,
+  "dur": 10.442,
   "at": "49.2",
-  "exacto": true
- },
- {
-  "id": "p36_cb",
-  "kind": "clip",
-  "t0": 764.06,
-  "dur": 7.102,
-  "at": "49.2@chicos madres soldados",
   "exacto": true
  },
  {
@@ -1788,10 +1884,18 @@
   "exacto": true
  },
  {
-  "id": "t04_tallador_repisa",
+  "id": "v_estante_manos",
   "kind": "clip",
   "t0": 798.84,
-  "dur": 3.92,
+  "dur": 1.96,
+  "at": "52",
+  "exacto": true
+ },
+ {
+  "id": "estante",
+  "kind": "depth2",
+  "t0": 800.8,
+  "dur": 1.96,
   "at": "52",
   "exacto": true
  },

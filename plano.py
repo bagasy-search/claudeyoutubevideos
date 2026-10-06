@@ -63,6 +63,22 @@ def overlays(img, t):
                 L[y0:y0 + ph, xs:xe] = P[:, xs - x0:xe - x0]
                 shd = cv2.GaussianBlur(L[..., 3], (0, 0), 10 * S); shd = np.roll(shd, (int(8 * S), int(6 * S)), (0, 1))
                 img = img * (1 - shd[..., None] * 0.55 * k); L[..., 3] *= k; img = over(img, L)
+    if sh.get("pulso"):                                         # esfigmógrafo de 1914: trazo blanco rayado sobre papel ahumado, el pulso de Tomás
+        bpm = sh["pulso"]; bh = int(86 * S); y0 = H - bh - int(26 * S); a_ = ramp(t, 0.15, 0.5)
+        if "pz" not in _OV:
+            g = np.random.default_rng(7); _OV["pz"] = (np.dstack([cv2.resize(fbm(200, 12, 5), (W, bh)) * 0.06 + 0.05] * 3) * np.array([1.0, 0.92, 0.8])).astype(np.float32)
+            _OV["amp"] = g.normal(1, 0.18 if bpm > 105 else 0.05, 400); _OV["jit"] = g.normal(0, 0.06 if bpm > 105 else 0.01, 400)
+        band = _OV["pz"].copy(); bp = 60.0 / bpm; pts = []
+        for x in range(0, W, max(1, int(3 * S))):
+            tt = t - (W - x) / (W * 0.33)                         # la tira corre: 3 s de pulso a lo ancho
+            kb = int(math.floor(tt / bp)); ph = (tt / bp) - kb + _OV["jit"][kb % 400]
+            ph %= 1.0; A_ = _OV["amp"][kb % 400]
+            v = A_ * (math.exp(-((ph - 0.08) / 0.03) ** 2) * 1.0 + 0.35 * math.exp(-((ph - 0.26) / 0.05) ** 2)) - 0.12 * ph
+            pts.append((x, int(bh * 0.78 - v * bh * 0.6)))
+        tr = np.zeros((bh, W), np.float32); cv2.polylines(tr, [np.int32(pts)], False, 1.0, max(1, int(2 * S)), cv2.LINE_AA)
+        band = band * (1 - tr[..., None]) + tr[..., None] * 0.92
+        img = img.copy(); img[y0:y0 + bh] = img[y0:y0 + bh] * (1 - 0.92 * a_) + band * 0.92 * a_
+        img = over(img, text_layer(["PULSO DE TOMÁS"], F_SC, 22, (40 * S, y0 - 30 * S), color=(235, 225, 205), alpha=0.8 * a_, shadow=True))
     if sh.get("tag"):
         if "tag" not in _OV: _OV["tag"] = text_layer([sh["tag"]], F_SC, 26, (W - 60 * S, 52 * S), color=(240, 232, 215), alpha=0.75, anchor="ra", shadow=True)
         img = over(img, _OV["tag"] * np.array([1, 1, 1, ramp(t, 0.2, 0.7)]))
@@ -351,12 +367,14 @@ if __name__ == "__main__":
     if k == "graf":
         import graf; graf.render(sh, DUR, OUT, PREV)
     else:
-        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas", "fotolupa", "flujo", "capitulo", "microscopio", "lamina", "carrera", "mapazoom"):
-            import comp, comp2, comp3, comp4; p = writer()
+        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas", "fotolupa", "flujo", "capitulo", "microscopio", "lamina", "carrera", "mapazoom", "reloj", "gota", "split", "tipos", "potencias", "cables", "fotomaqueta", "eras", "revela", "lamina_ov"):
+            import comp, comp2, comp3, comp4, comp5; p = writer()
             {"depth2": comp.r_depth2, "corridor": comp.r_corridor, "timelapse": comp.r_timelapse, "doc3d": comp2.r_doc3d, "mapamesa": comp2.r_mapamesa,
              "retrato": comp2.r_retrato, "match": comp2.r_match, "rail": comp2.r_rail, "persiana": comp2.r_persiana, "periodico": comp2.r_periodico,
              "balanza": comp2.r_balanza, "particulas": comp2.r_particulas, "fotolupa": comp3.r_fotolupa, "flujo": comp3.r_flujo, "capitulo": comp4.r_capitulo, "microscopio": comp4.r_microscopio,
-             "lamina": comp4.r_lamina, "carrera": comp4.r_carrera, "mapazoom": comp4.r_mapazoom}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
+             "lamina": comp4.r_lamina, "carrera": comp4.r_carrera, "mapazoom": comp4.r_mapazoom,
+             "reloj": comp5.r_reloj, "gota": comp5.r_gota, "split": comp5.r_split, "tipos": comp5.r_tipos, "potencias": comp5.r_potencias, "cables": comp5.r_cables,
+             "fotomaqueta": comp5.r_fotomaqueta, "eras": comp5.r_eras, "revela": comp5.r_revela, "lamina_ov": comp5.r_lamina_ov}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
             p.stdin.close(); p.wait()
         else:
             {"clip": r_clip, "still": r_still, "multi": r_multi, "depth": r_depth, "arch": r_arch, "open": r_open}[k]()

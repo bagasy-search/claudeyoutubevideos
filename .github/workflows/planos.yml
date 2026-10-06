@@ -43,7 +43,7 @@ jobs:
           mkdir -p pkg
           for n in 1 2 3 4 5; do gh release download "$SLUG-farm-assets" -R ${{ github.repository }} -p "${SLUG}_assets.tar" -D . --clobber && break; sleep $((n*10)); done
           tar -xf "${SLUG}_assets.tar" -C pkg
-          cp plano.py cine.py comp.py comp2.py comp3.py comp4.py graf.py shots.json planos.json pkg/vid/
+          cp plano.py cine.py comp.py comp2.py comp3.py comp4.py comp5.py graf.py shots.json planos.json pkg/vid/
       - name: render ${{ matrix.job.id }}
         working-directory: pkg/vid
         run: |
