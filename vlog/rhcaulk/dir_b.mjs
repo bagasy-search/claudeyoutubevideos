@@ -1,0 +1,88 @@
+// DIRECTOR B — rhcaulk: por qué el spray no sirve (paga loop 1) + la enfermera de Westlake + la regla de las 2 noches (loop 2)
+// + recambio bien hecho, con el paso que todos saltean (loop 3) + el hombre de los 3 recambios + nunca mezclar (p19-48).
+import { S, BI, RHP, BOTTLE } from "../rhonda/lib.mjs";
+import { TUB, CAULK } from "./dir_a.mjs";
+const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o });
+const MOLDY = "black mold spots and streaks all along the caulk bead";
+const I = (n) => `img/rhcaulk/${n}.jpg`;
+export const SHOTS = [
+  // ── 3:19 · por qué el spray no sirve
+  C(19, "", "RhChapter", { n: 2, title: "Why your spray never worked", sub: "look at the shape" }),
+  S(20, "", "bi", "b_beadmacro", { q: "silicone sealant bathtub", p: BI(`Extreme close side view of a smooth, round, shiny white silicone caulk bead in the corner between tile and tub, light gleaming on its curve.`), anim: "light glides slowly along the shiny bead; nothing else moves" }),
+  S(20, "so water runs off it", "kf", "k_runoff", { p: BI(`Close view of water drops landing on ${CAULK} and sliding straight off the round bead into the tub.`), d1: "drops land on the round caulk", d2: "the drops slide off into the tub", sound: "water drops trickling" }),
+  S(20, "And terrible for cleaning", "av", ""),
+  S(21, "", "bi", "st_showerwall", { q: "water running down tiles", p: BI("Water running down white shower tiles.") }),
+  C(21, "and it sits there", "RhWetMap", { img: I("b_tubwide") }),
+  S(21, "", "bi", "b_tubwide", { p: BI(`Wide straight-on view of ${TUB}, ${MOLDY} along the back of the tub.`), skip: true }),
+  S(21, "Mold goes where the water stays", "av", ""),
+  C(22, "", "RhCaulkSection3D", { mode: "spray", labels: { bead: "Runs right off" } }),
+  S(22, "That's not enough time to do anything", "av", ""),
+  S(23, "", "rh", "r_watch2", { p: RHP(`She taps her wristwatch and looks at the camera with raised eyebrows, kneeling beside a bathtub.`) }),
+  C(23, "That's what the strips are for", "RhCaulkSection3D", { mode: "strips", labels: { strip: "8 hours of contact" } }),
+  S(23, "Eight hours of contact instead of one minute", "av", ""),
+  S(24, "", "rh", "r_secret", { p: RHP(`She leans in close to the camera beside the tub, holding a soaked paper towel strip, like she is sharing a secret.`) }),
+  C(24, "and the mold sends little threads down into them", "RhCaulkSection3D", { mode: "roots", labels: { roots: "Roots inside", bead: "Soft caulk" } }),
+  S(24, "A quick spray never reaches them", "av", ""),
+  S(25, "", "bi", "b_bleachstrips", { p: BI("A plain white bleach jug with a blank label next to a bowl of paper towel strips on a bathroom counter."), anim: "the light shifts slowly; nothing else moves" }),
+  C(25, "and leaves those roots inside", "RhGroutPore3D", { mode: "bleach", labels: { top: "Bleach: color only", roots: "Roots: still there" } }),
+  S(25, "I've watched it happen", "av", ""),
+  S(26, "", "bi", "b_twocaulks", { p: BI("Two tubes of caulk side by side on a bathroom counter: one clear rubbery silicone with a blank label, one white latex caulk with a blank label."), anim: "the light shifts slowly; nothing else moves" }),
+  S(26, "The latex kind soaks up water", "kf", "k_spongecaulk", { p: BI("Extreme close view of a soft white latex caulk bead darkening as a drop of water soaks into it."), d1: "the water drop sits on the soft caulk", d2: "the caulk darkens as it soaks the water in", sound: "a soft wet soak" }),
+  S(26, "that's a good reason to switch to silicone", "av", ""),
+  // ── 5:22 · la enfermera de Westlake
+  S(27, "", "rh", "r_nurse", { p: RHP(`She stands in the small bathroom of a rental apartment with a young nurse in blue scrubs who looks stressed, both looking at a bathtub with black caulk, moving boxes in the hallway.`) }),
+  S(27, "Her deposit was on the line", "bi", "b_lease", { p: BI("A printed apartment lease with a pen and a set of keys on a kitchen counter next to a moving box."), anim: "the keys slide slightly; nothing else moves" }),
+  S(27, "She'd bought a caulk gun", "bi", "b_storebag", { p: BI("A hardware store bag spilling out a caulk gun, a razor scraper and three tubes of white caulk onto a bathroom floor."), anim: "the bag settles slightly; nothing else moves" }),
+  S(27, "on her knees", "bi", "st_kneeling", { q: "woman cleaning bathtub kneeling", p: BI("A woman kneeling to clean a bathtub.") }),
+  S(28, "", "rh", "r_friday", { p: RHP(`She presses soaked paper towel strips along the caulk of a rental bathtub while the young nurse in scrubs watches, Friday evening light.`) }),
+  S(28, "she sent me a picture", "bi", "b_phonepic", { p: BI("A hand holding a smartphone showing a photo of a bright white bathtub with clean white caulk."), anim: "the phone tilts slightly; nothing else moves" }),
+  S(28, "She got her whole deposit back", "bi", "b_check", { p: BI("A hand holding a refund check over a kitchen table, a moving box and car keys nearby."), anim: "the check waves slightly; nothing else moves" }),
+  S(28, "She returned the caulk gun", "av", ""),
+  // ── 5:55 · la regla de las 2 noches
+  C(29, "", "RhChapter", { n: 3, title: "The two night rule", sub: "can it be saved?" }),
+  C(30, "", "RhTwoNightRule", { a: I("b_night1"), b: I("b_night2"), verdict: "saved" }),
+  S(31, "", "bi", "b_phonecaulk", { p: BI(`A hand holding a smartphone up to take a picture of ${CAULK} covered in black spots.`), anim: "the phone steadies for the picture; nothing else moves" }),
+  S(31, "The pictures don't lie", "av", ""),
+  S(32, "", "bi", "b_savedcaulk", { p: BI(`Close view of ${CAULK}, clean and white, a dry towel folded on the tub edge.`), anim: "the light glints softly along the caulk; nothing else moves" }),
+  S(32, "Keep it dry", "av", ""),
+  C(33, "", "RhCaulkSection3D", { mode: "under", labels: { under: "Under the caulk", strip: "Can't reach" } }),
+  C(33, "That caulk has to come out", "RhTwoNightRule", { a: I("b_under1"), b: I("b_under2"), verdict: "replace" }),
+  S(33, "", "bi", "b_under1", { p: BI(`Close view of ${CAULK} after one night: the surface lighter but dark shadows still showing underneath the semi-clear silicone.`), skip: true }),
+  S(33, "", "bi", "b_under2", { p: BI(`Close view of the same caulk after two nights: still dark black shadows trapped under the silicone.`), skip: true }),
+  S(34, "", "kf", "k_thumb", { p: BI(`Close view of a yellow-gloved thumb pressing on ${CAULK}; the caulk peels away from the tub leaving a dark gap.`), d1: "the thumb presses on the caulk", d2: "the caulk lifts away from the tub edge", sound: "rubbery silicone peeling" }),
+  C(34, "water is getting behind it", "RhCaulkSection3D", { mode: "gap", labels: { water: "Water behind it" } }),
+  S(34, "black or not", "av", ""),
+  // ── CTA 2
+  C(35, "", "RhBookPage", { page: I("book_p12"), stamp: "Page 12" }),
+  C(35, "Fix number one is free on the page", "RhQRCard", { qr: I("qr"), cover: I("book_cover") }),
+  // ── 7:10 · recambio bien hecho (loop 3)
+  C(36, "", "RhChapter", { n: 4, title: "If it has to come out", sub: "the step everybody skips", alert: true }),
+  S(37, "", "kf", "k_cutout", { p: BI(`Close view of a utility knife cutting along both edges of an old black-spotted caulk bead at a white tub.`), d1: "the knife cuts along the edge of the old caulk", d2: "the knife reaches the end of the line", sound: "a blade cutting rubbery silicone" }),
+  S(37, "pull it out in a strip", "kf", "k_pullstrip", { p: BI("Close view of yellow-gloved fingers pulling a long strip of old black-spotted silicone caulk out of a tub joint."), d1: "the fingers grip the end of the old caulk", d2: "a long rubbery strip pulls free", sound: "rubbery silicone pulled loose" }),
+  S(37, "Old caulk under new caulk", "av", ""),
+  S(38, "", "bi", "b_plasticscraper", { p: BI("A white plastic scraper scraping leftover bits of old caulk off the edge of a white acrylic bathtub."), anim: "the scraper pushes slowly along the edge; nothing else moves" }),
+  S(38, "A fiberglass or acrylic tub scratches easily", "bi", "b_tubscratch", { p: BI("Extreme close view of fine scratches on the edge of a white acrylic bathtub next to an empty caulk joint."), anim: "light glints over the scratches; nothing else moves" }),
+  S(39, "", "rh", "r_cleanjoint", { p: RHP(`She sprays ${BOTTLE} with a trigger sprayer into the bare empty joint between tile and tub where the old caulk was removed.`) }),
+  C(39, "let it sit fifteen minutes", "RhTimer30", { minutes: 15, fast: true, label: "Then scrub and rinse" }),
+  S(40, "", "rh", "r_onefinger", { p: RHP(`She kneels beside the bathtub in ${TUB} holding up one finger toward the camera, very serious, an empty bare caulk joint behind her.`) }),
+  C(40, "Twenty four hours", "RhTimer30", { minutes: 24, unit: "hours", label: "No showers" }),
+  S(40, "Run a fan on it if you can", "bi", "b_boxfan", { p: BI("A small box fan on the bathroom floor blowing at an empty, bare tub joint, the shower curtain pulled back."), anim: "the fan blades spin; nothing else moves" }),
+  C(41, "", "RhCaulkSection3D", { mode: "redo", labels: {} }),
+  S(41, "and then the black comes up from underneath", "bi", "b_newblack2", { p: BI("Close view of a smooth new white caulk bead along a tub with gray-black spots showing up through it from underneath."), anim: "the camera creeps toward the spots; nothing else moves" }),
+  S(42, "", "av", ""),
+  S(42, "It doesn't fix the water", "bi", "b_wetcorner", { p: BI(`Close view of ${CAULK}, new and white but with a puddle of water sitting in the corner after a shower.`), anim: "a drop falls into the puddle; nothing else moves" }),
+  S(43, "", "bi", "st_caulking", { q: "applying silicone caulk", p: BI("Applying silicone caulk with a caulk gun.") }),
+  S(43, "smooth it with a wet finger", "kf", "k_smooth", { p: BI("Close view of a wet fingertip smoothing a fresh white silicone bead along a tub joint."), d1: "the wet fingertip runs along the fresh bead", d2: "the bead is left smooth and rounded", sound: "a finger smoothing soft silicone" }),
+  C(43, "and give it a full day to cure", "RhTimer30", { minutes: 24, unit: "hours", fast: true, label: "Before anyone showers" }),
+  C(44, "", "RhTapeLine", {}),
+  // ── 9:01 · el hombre de los 3 recambios
+  S(45, "", "rh", "r_threetimes", { p: RHP(`She stands in a bathroom with a frustrated man holding three empty caulk tubes, she raises three fingers to the camera.`) }),
+  S(45, "I dried it with a hair dryer", "bi", "b_hairdryer2", { p: BI("A man aiming a pink hair dryer at a bathtub caulk joint, a caulk gun ready in his other hand."), anim: "the hair dryer wobbles; nothing else moves" }),
+  S(45, "the whole problem was one day of waiting", "av", ""),
+  // ── nunca mezclar
+  C(46, "", "RhChapter", { n: 5, title: "Never mix", sub: "where people get hurt", alert: true }),
+  C(47, "", "RhNeverMix", { a: "Bleach", b: "Peroxide", verdict: "Not the same day" }),
+  S(47, "You rinse it well with plain water", "bi", "st_rinsetub2", { q: "rinsing tub water", p: BI("Rinsing a tub with water.") }),
+  C(48, "", "RhNeverMix", { a: "Bleach", b: "Vinegar", verdict: "Chlorine gas" }),
+  C(48, "And don't mix peroxide and vinegar", "RhNeverMix", { a: "Peroxide", b: "Vinegar", verdict: "Not in one bottle", soft: true }),
+];

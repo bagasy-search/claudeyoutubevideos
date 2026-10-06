@@ -25,7 +25,7 @@ const FOLEY = [
   [/fizz|foam|bubbl|root beer/i, ["foley/fizz_tablet_a.flac", "foley/fizz_hydrophone.flac", "foley/fizz_tablet_b.flac", "foley/fizz_gentle.flac"], 0.42, 4, 0.05],
   [/toothbrush|grout brush|scrub|brush/i, ["foley/scrub_toothbrush.flac", "foley/scrub_floor.flac", "foley/scrub_pad.flac"], 0.38, 3, 0.1],
   [/pumice/i, ["foley/pumice_griddle.flac", "foley/sand_paper_a.flac"], 0.4, 3, 0.1],
-  [/cutter|utility knife|box cutter/i, ["foley/cutter_extend.flac", "foley/cutter_cut.flac"], 0.45, 2, 0.1],
+  [/cutter|utility knife|box cutter|razor|knife/i, ["foley/cutter_extend.flac", "foley/cutter_cut.flac"], 0.45, 2, 0.1],
   [/paper towel|strip/i, ["foley/paper_towel_wet.flac", "foley/paper_towel_various.flac"], 0.4, 2.5, 0.1],
   [/plastic wrap|wrap/i, ["foley/plastic_wrapper.flac"], 0.35, 2, 0.1],
   [/glove/i, ["foley/glove_pull.flac", "foley/rubber_stretch.flac"], 0.4, 1.5, 0.1],
@@ -95,6 +95,18 @@ function compFx(n, c, durS) {
   if (n === "RhPumiceWetDry") { add("foley/pumice_griddle.flac", 0.38, 0.3, durS * 0.7); add("foley/sand_paper_b.flac", 0.4, 0.3, durS * 0.7); add("design/impact_blow.flac", 0.3, durS * 0.65, 0.8); }
   if (n === "RhHardWater") { for (let k = 0; k < 3; k++) add("design/camera_shutter.flac", 0.36, 0.15 + k * 0.27, 0.6); add("design/stamp_rubber.flac", 0.36, durS * 0.58, 0.9); }
   if (n === "RhRingColors") { add("design/paper_slide.flac", 0.34, 0.05, 0.9); if ((P.pick ?? -1) >= 0) add("design/click_interface.flac", 0.32, 0.35, 0.5); }
+  if (n === "RhCaulkSection3D") {
+    if (P.mode === "spray") { add("foley/spray_trigger_b.flac", 0.4, 0.15, 1.2); add("foley/drip_sink.flac", 0.3, 1.2, 2); add("design/tick_timer.flac", 0.22, 0.2, Math.max(0.6, durS - 0.6)); }
+    if (P.mode === "strips") { add("foley/paper_towel_wet.flac", 0.4, 0.3, 1.6); add("foley/plastic_wrapper.flac", 0.36, durS * 0.22, 1.4); add("design/swell_wind.flac", 0.2, durS * 0.4, durS * 0.5); }
+    if (P.mode === "under") add("design/impact_heartbeat.flac", 0.42, durS * 0.55, 2.2);
+    if (P.mode === "gap") add("foley/water_bubble.flac", 0.32, durS * 0.4, 1.5);
+    if (P.mode === "redo") { add("foley/cutter_cut.flac", 0.4, 0.2, 1.4); add("design/tick_clock_close.flac", 0.22, durS * 0.35, durS * 0.3); add("foley/rubber_squeak.flac", 0.3, durS * 0.7, 0.9); }
+    if (P.mode === "roots") add("design/texture_suspense.flac", 0.2, 0.2, durS - 0.3);
+  }
+  if (n === "RhKnifeStop") { add("foley/cutter_extend.flac", 0.45, 0, 1); add("design/stamp_traditional.flac", 0.5, 0.2, 1); add("design/impact_drum_deep.flac", 0.45, 0.22, 2); }
+  if (n === "RhOvernight") { add("design/tick_clock_close.flac", 0.24, 0.2, durS * 0.7); add("amb/amb_suburb_birds.flac", 0.3, durS * 0.65, durS * 0.35); }
+  if (n === "RhTwoNightRule") { add("design/camera_shutter.flac", 0.36, 0.05, 0.6); add("design/camera_shutter.flac", 0.36, 0.3, 0.6); add("design/stamp_rubber.flac", 0.42, durS * 0.52, 0.9); }
+  if (n === "RhTapeLine") { add("foley/plastic_wrapper.flac", 0.32, 0.1, 1); add("foley/rubber_squeak.flac", 0.3, durS * 0.5, 0.9); add("foley/paper_crinkle.flac", 0.36, durS * 0.7, 1); }
   if (n === "RhPins") add("design/pop_soap_bubble.flac", 0.36, 0.3, 0.6);
   if (n === "RhBottle3D") add("foley/cap_unscrew_jar.flac", 0.4, 0.2, 1.2);
   if (n === "RhMeasureCup") add("foley/water_pour_short.flac", 0.4, 0.3, 1.6);

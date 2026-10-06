@@ -1,25 +1,23 @@
 // Banco de prueba del kit Rhonda en el FARM (antes del render completo): cada componente 5 s con props y assets REALES del video en curso.
-// rhtoiletring: corte 3D de la taza (todos los modos) + pasta, nivel de agua, pómez mojada/seca, agua dura, colores del anillo.
+// rhcaulk: corte 3D del cordón de silicona (todos los modos) + cúter tachado, la noche, regla de 2 noches, cinta de pintor.
 import React from "react";
 import { AbsoluteFill, Sequence } from "remotion";
-import { RhBowlSection3D } from "./RhBowlSection3D";
-import { RhPasteMix, RhWaterLevel, RhPumiceWetDry, RhHardWater, RhRingColors } from "./RhRing";
+import { RhCaulkSection3D } from "./RhCaulkSection3D";
+import { RhKnifeStop, RhOvernight, RhTwoNightRule, RhTapeLine } from "./RhCaulk";
 
-const B = (n: string) => `broll/rhtoiletring_st/${n}.mp4#270`;
-const I = (n: string) => `img/rhtoiletring/${n}.jpg`;
+const I = (n: string) => `img/rhcaulk/${n}.jpg`;
 export const KIT: [React.FC<any>, any][] = [
-  [RhBowlSection3D, { mode: "grow", labels: { crust: "A layer a day", water: "Water line" } }],
-  [RhBowlSection3D, { mode: "layers", labels: { crust: "The anchor", film: "The tenant" } }],
-  [RhBowlSection3D, { mode: "paste", labels: { film: "The slime lifts" } }],
-  [RhBowlSection3D, { mode: "pumice", labels: { stone: "Wet stone", crust: "The rock" } }],
-  [RhBowlSection3D, { mode: "dry", labels: { glaze: "Glaze: scratched", stone: "Dry stone" } }],
-  [RhBowlSection3D, { mode: "glaze", labels: {} }],
-  [RhPasteMix, {}],
-  [RhWaterLevel, { img: I("b_bathwide") }],
-  [RhPumiceWetDry, {}],
-  [RhHardWater, { imgs: [I("b_hwfaucet"), I("b_hwglass"), I("b_hwkettle")], labels: ["crusty faucet", "spotty glasses", "kettle scale"] }],
-  [RhRingColors, { pick: -1 }],
-  [RhRingColors, { pick: 2, bed: B("bd_tilewall") }],
+  [RhCaulkSection3D, { mode: "spray", labels: { bead: "Runs right off" } }],
+  [RhCaulkSection3D, { mode: "strips", labels: { strip: "Wet all night", roots: "Roots fade" } }],
+  [RhCaulkSection3D, { mode: "roots", labels: { roots: "Roots inside", bead: "Soft caulk" } }],
+  [RhCaulkSection3D, { mode: "under", labels: { under: "Under the caulk", strip: "Can't reach" } }],
+  [RhCaulkSection3D, { mode: "gap", labels: { water: "Water behind it" } }],
+  [RhCaulkSection3D, { mode: "redo", labels: {} }],
+  [RhKnifeStop, { img: I("b_knife") }],
+  [RhOvernight, {}],
+  [RhTwoNightRule, { a: I("b_night1"), b: I("b_night2"), verdict: "saved" }],
+  [RhTwoNightRule, { a: I("b_under1"), b: I("b_under2"), verdict: "replace" }],
+  [RhTapeLine, {}],
 ];
 export const RhKitTest: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#fff" }}>
