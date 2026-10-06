@@ -62,7 +62,7 @@ console.log("minuto 1: cortes", m1.length - 1, "· toma máx", Math.max(...m1.ma
 const largos = shots.filter((s) => s.dur > 12 && !["c", "av"].includes(s.kind)); if (largos.length) console.log("⚠️ planos >12 s:", largos.map((s) => `${s.kind}:${s.name}@${s.start}(${s.dur})`).join(" "));
 const avL = shots.filter((s) => s.kind === "av" && s.dur > 16); if (avL.length) console.log("⚠️ avatar >16 s:", avL.map((s) => `@${s.start}(${s.dur})`).join(" "));
 if (bad.length) console.log("⛔ clips vl fuera de 3,2-11,8 s:", bad.map(([k, v]) => `${k} ${(v.e - v.s).toFixed(2)}`).join(" · "));
-const dups = {}; for (const s of shots.filter((s) => ["bi", "rh"].includes(s.kind))) dups[s.name] = (dups[s.name] || 0) + 1;
+const dups = {}; for (const s of shots.filter((s) => ["bi", "cl"].includes(s.kind))) dups[s.name] = (dups[s.name] || 0) + 1;
 const rep = Object.entries(dups).filter(([, n]) => n > 1); if (rep.length) console.log("⛔ imágenes repetidas:", rep.map(([k]) => k).join(" "));
 WR(V3 + "shots.json", { END, shots, vl });
 console.log("clips vl:", Object.keys(vl).length, "· kf:", new Set(shots.filter((s) => s.kind === "kf").map((s) => s.name)).size, "· imágenes:", Object.keys(dups).length, "· componentes:", shots.filter((s) => s.kind === "c").length);

@@ -1,0 +1,62 @@
+{
+ "dir": "D:/Proyectos/video2-wt/clborde/vlog/clborde/M1/",
+ "face": "D:/Proyectos/video2-wt/clborde/public/ref_clborde_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/clborde/public/img/clborde/b_hotelbath.jpg",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the bathroom background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, warm ceiling light and a little daylight from the hallway. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the jacket with real creases; the nitrile gloves a little shiny and wet. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the hotel bathroom in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural hands in blue nitrile gloves; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K1",
+   "name": "m1",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same bathroom, same light. Claudio, a 58-year-old Latin American hotel maintenance janitor with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered skin, wearing a navy-blue work jacket over a plain heather-gray t-shirt and blue nitrile gloves kneels on the tile floor beside the open white toilet in a mid-range hotel guest bathroom with beige-cream ceramic wall tiles, a white toilet, a white sink counter with a small amber soap bottle and folded white towels, a chrome towel bar, a wall mirror, a ceiling light and the door ajar to a carpeted hotel hallway, holding a small round hand mirror up near his face toward the camera, eyebrows drawn together, dead serious, the toilet seat up. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same navy-blue work jacket over a heather-gray t-shirt and the same blue nitrile gloves the whole time, same curly black-and-gray hair and short gray-black beard."
+  },
+  {
+   "id": "K2",
+   "name": "m1_fin",
+   "from": [
+    "K1"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he has leaned a little closer to the camera, the little mirror lowered to his chest, mouth closed, a grave look, eyebrows raised. He wears the same navy-blue work jacket over a heather-gray t-shirt and the same blue nitrile gloves the whole time, same curly black-and-gray hair and short gray-black beard."
+  },
+  {
+   "id": "K3",
+   "name": "m2",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same bathroom, same light. Claudio, a 58-year-old Latin American hotel maintenance janitor with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered skin, wearing a navy-blue work jacket over a plain heather-gray t-shirt and blue nitrile gloves kneels beside the white toilet in a mid-range hotel guest bathroom with beige-cream ceramic wall tiles, a white toilet, a white sink counter with a small amber soap bottle and folded white towels, a chrome towel bar, a wall mirror, a ceiling light and the door ajar to a carpeted hotel hallway holding the small round hand mirror under the rim, looking into it, his mouth open in delight. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same navy-blue work jacket over a heather-gray t-shirt and the same blue nitrile gloves the whole time, same curly black-and-gray hair and short gray-black beard."
+  },
+  {
+   "id": "K4",
+   "name": "m2_fin",
+   "from": [
+    "K3"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he is turned toward the camera, grinning and nodding, holding the little mirror up beside his face. He wears the same navy-blue work jacket over a heather-gray t-shirt and the same blue nitrile gloves the whole time, same curly black-and-gray hair and short gray-black beard."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/clborde/vlog/clborde/M1/aud/m1.wav",
+   "text": "Eso negro debajo del borde no es mugre. Está vivo.",
+   "action": "He holds the little mirror up toward the camera and says it low and serious, then leans a little closer to the camera and whispers the last two words. He wears the same navy-blue work jacket over a heather-gray t-shirt and the same blue nitrile gloves the whole time, same curly black-and-gray hair and short gray-black beard."
+  },
+  {
+   "id": "m2",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/clborde/vlog/clborde/M1/aud/m2.wav",
+   "text": "¡y mire eso! ¡Blanco! Pero si se queda ahí,",
+   "action": "He looks into the mirror, then turns to the camera beaming, eyes wide, laughing with surprise, holding the mirror up. He wears the same navy-blue work jacket over a heather-gray t-shirt and the same blue nitrile gloves the whole time, same curly black-and-gray hair and short gray-black beard."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/clborde/vlog/clborde/M1/out.mp4"
+}

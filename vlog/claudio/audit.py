@@ -4,12 +4,17 @@ import subprocess, sys, re, os
 A = "_v3/audit_" + os.environ.get("SLUG", "x")
 F = sys.argv[1]; HIDE = 0x08000000
 def run(a): return subprocess.run(a, capture_output=True, text=True, creationflags=HIDE)
-sil = run(["ffmpeg", "-hide_banner", "-t", "60", "-i", F, "-af", "silencedetect=noise=-32dB:d=0.3", "-f", "null", "-"]).stderr
+sil = run(["ffmpeg", "-hide_banner", "-t", "60", "-i", F, "-af", "silencedetect=noise=-32dB:d=0.4", "-f", "null", "-"]).stderr
 ns = len(re.findall("silence_start", sil))
 sc = run(["ffmpeg", "-hide_banner", "-t", "60", "-i", F, "-vf", "select='gt(scene,0.3)',showinfo", "-f", "null", "-"]).stderr
 nc = len(re.findall(r"pts_time:", sc))
-print(f"MINUTO 1 - silencios >=0,3 s a -32 dB: {ns} (exigido 0) - cortes scene>0,3: {nc} (exigido >=20)")
+print(f"MINUTO 1 - silencios >0,4 s a -32 dB: {ns} (exigido 0) - cortes scene>0,3: {nc} (exigido >=30)")
 os.makedirs(A, exist_ok=True)
+subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "1.0", "-i", F, "-frames:v", "1", "-q:v", "2", A + "/seg1.jpg"], creationflags=HIDE)
+bd = run(["ffmpeg", "-hide_banner", "-i", F, "-vf", "blackdetect=d=0.25:pix_th=0.08", "-an", "-f", "null", "-"]).stderr
+print("NEGRO (blackdetect >=0,25 s):", len(re.findall("black_start", bd)), re.findall(r"black_start:([0-9.]+)", bd)[:10])
+fz = run(["ffmpeg", "-hide_banner", "-i", F, "-vf", "freezedetect=n=0.003:d=2.5", "-an", "-f", "null", "-"]).stderr
+print("CUADROS MUERTOS (freeze >=2,5 s):", len(re.findall("freeze_start", fz)), re.findall(r"freeze_start: ([0-9.]+)", fz)[:20])
 def sheet(times, out, cols, w=320):
     inp = []; fl = []
     for i, t in enumerate(times):

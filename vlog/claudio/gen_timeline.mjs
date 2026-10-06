@@ -14,12 +14,12 @@ const CLIP0 = {}; for (const [k, v] of Object.entries(vl)) CLIP0[k] = Math.max(0
 const AVSRC = `avatar_clips/${SLUG}/reel30.mp4`, AV_READY = ex(AVSRC);
 const TOTAL = F(END + 0.4);
 const cues = [], ovs = [], sfx = [], foley = [], warn = [], fallback = [];
-let lastBed = null;
+let lastBed = null; const kfSfx = [];
 const avFor = (s0, s1) => avwin.find((w) => s0 >= w.s - 0.15 && s1 <= w.e + 0.2);
 const avCue = (c, s) => { const w = avFor(s.start, s.end); if (!w) warn.push(`av sin ventana @${s.start.toFixed(1)}`); c.k = "av"; c.src = AV_READY ? AVSRC : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0; };
 const imgOf = (n) => (ex(`img/${SLUG}/${n}.jpg`) ? `img/${SLUG}/${n}.jpg` : null);
 // camas de stock para componentes con fondo nítido (cada una se usa UNA vez)
-const BEDABLE = new Set(["ClCheck", "ClBookPage", "ClQRCard", "ClMeasureCup", "ClTimer30", "ClChapter", "ClColorCode", "ClNeverMix", "ClDoDont"]);
+const BEDABLE = new Set(["ClRimCutaway3D", "ClBottle3D", "ClCheck", "ClBookPage", "ClQRCard", "ClMeasureCup", "ClTimer30", "ClChapter", "ClColorCode", "ClNeverMix", "ClDoDont"]);
 const beds = (fs.existsSync(R + `vlog/${SLUG}/beds.json`) ? J(R + `vlog/${SLUG}/beds.json`) : []).map((b) => `broll/${SLUG}_st/${b.name}.mp4`).filter(ex);
 let bi = 0;
 shots.forEach((s, i) => {
@@ -33,9 +33,9 @@ shots.forEach((s, i) => {
     else { c.k = "img"; c.img = imgOf(s.name); fallback.push(s.name); }
   } else if (s.kind === "kf") {
     const p = `vid/${SLUG}/${s.name}.mp4`;
-    if (ex(p)) { c.src = p; c.sf = 0; c.clipF = nFr(p); const fo = `vid/${SLUG}/${s.name}_foley.m4a`; if (ex(fo)) foley.push({ from: f0, dur: Math.min(c.dur, c.clipF), src: fo }); }
+    if (ex(p)) { c.src = p; c.sf = 0; c.clipF = nFr(p); const fo = `vid/${SLUG}/${s.name}_foley.m4a`; if (ex(fo)) foley.push({ from: f0, dur: Math.min(c.dur, c.clipF), src: fo }); else kfSfx.push([s.name, f0 / FPS, c.dur]); }
     else { c.k = "img"; c.img = imgOf(s.name); c.fallback = s.name; if (!ACEPT.has(s.name)) fallback.push(s.name); if (!c.img) warn.push(`sin foto base ${s.name}`); }
-  } else if (s.kind === "bi" || s.kind === "rh") {
+  } else if (s.kind === "bi" || s.kind === "cl") {
     const st = `broll/${SLUG}_st/${s.name}.mp4`, ag = `broll/${SLUG}/${s.name}.mp4`;
     c.k = "img"; c.img = imgOf(s.name);
     if (ex(st)) { c.clip = st; c.clipF = nFr(st) - 1; c.real = 1; }
@@ -43,7 +43,7 @@ shots.forEach((s, i) => {
     if (!c.img && !c.clip) warn.push(`falta imagen ${s.name}`);
   } else if (s.kind === "c") {
     c.k = "comp"; c.props = { ...(s.props || {}) };
-    if (!c.props.bed && !/^(ClPins|ClBeforeAfter|ClSplit|ClRimJets)$/.test(s.name) && !/3D$/.test(s.name)) {
+    if (!c.props.bed && !/^(ClPins|ClBeforeAfter|ClSplit|ClRimJets|ClMicroscope3D|ClHallway3D)$/.test(s.name)) {
       if (BEDABLE.has(s.name) && bi < beds.length) { c.props.bed = beds[bi++]; c.bedReal = 1; }
       else if (lastBed) c.props.bed = lastBed;
     }
@@ -81,6 +81,8 @@ cues.forEach((c, i) => {
   if (n === "ClDoDont") S(t + 0.4, "impacto_hit.mp3", 0.22, 30);
   if (n === "ClBeforeAfter") { S(t + c.dur / FPS * 0.18, "smooth_airy_whoosh_m_#2-1780923688387.mp3", 0.3, 40); S(t + c.dur / FPS * 0.64, "impactful_clean_text_#3-1780924163909.mp3", 0.28, 40); }
 });
+// clips kf sin foley nativo (agnes v2.0): el sonido de la acción sale de los SFX del canal
+for (const [n, t, d] of kfSfx) { const fx = /glove/.test(n) ? ["rh_glove.mp3", 0.35] : /pour/.test(n) ? ["rh_pour.mp3", 0.32] : /spray/.test(n) ? ["px_spray.mp3", 0.32] : /fizz/.test(n) ? ["px_fizz.mp3", 0.3] : /lid/.test(n) ? ["pin_plop.mp3", 0.3] : null; if (fx) S(t + 0.05, fx[0], fx[1], Math.min(110, d)); }
 for (const o of ovs) { if (o.name === "ClStampOv") { S(o.from / FPS + 0.2, "yc_stamp.mp3", 0.42, 30); S(o.from / FPS + 0.18, "impacto_hit.mp3", 0.3, 30); } else S(o.from / FPS + 0.1, "floraphonic-minimal-pop-click-ui-1-198301.mp3", 0.25, 20); }
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }

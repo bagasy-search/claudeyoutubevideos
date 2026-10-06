@@ -60,7 +60,7 @@ export const ClRimCutaway3D: React.FC<{ mode?: Mode; labels?: Labels; orbit?: nu
 
   const a = interpolate(f, [0, T], [-orbit, orbit * 0.6], { easing: Easing.inOut(Easing.cubic) });
   const dist = interpolate(f, [0, T], [mode === "alive" ? 5.2 : 6.0, mode === "alive" ? 3.9 : 5.1]);
-  const target = new THREE.Vector3(0.05, mode === "alive" ? 1.0 : 1.15, mode === "alive" ? -0.55 : -0.75);
+  const target = new THREE.Vector3(0.05, mode === "alive" ? 1.15 : 1.35, mode === "alive" ? -0.55 : -0.75);
   const camPos = new THREE.Vector3(target.x + Math.sin(a) * dist, 3.1 - 0.25 * (f / T), target.z + Math.cos(a) * dist);
 
   const geo = useMemo(() => ({
@@ -106,7 +106,7 @@ export const ClRimCutaway3D: React.FC<{ mode?: Mode; labels?: Labels; orbit?: nu
     const q = v.clone().project(c); return { x: (q.x * 0.5 + 0.5) * width, y: (-q.y * 0.5 + 0.5) * height };
   };
   const L: { at: any; text: string; dx: number; dy: number; t0: number; alert?: boolean }[] = [];
-  if (labels.tube) L.push({ at: new THREE.Vector3(TUBE.x, TUBE_TOP, TUBE.z), text: labels.tube, dx: 170, dy: -110, t0: 6 });
+  if (labels.tube) L.push({ at: new THREE.Vector3(TUBE.x, TUBE_TOP, TUBE.z), text: labels.tube, dx: 200, dy: 40, t0: 6 });
   if (labels.channel) L.push({ at: ringPt(2.35, R0, YR + 0.05), text: labels.channel, dx: -260, dy: -150, t0: Math.round(T * (mode === "alive" ? 0.12 : 0.3)), alert: mode === "alive" || mode === "bleach" });
   if (labels.holes) L.push({ at: ringPt(0.55, 0.95, 0.9), text: labels.holes, dx: 220, dy: 120, t0: Math.round(T * (mode === "alive" ? 0.3 : 0.45)) });
   if (labels.tank) L.push({ at: new THREE.Vector3(-0.7, 2.0, -1.55), text: labels.tank, dx: -230, dy: -90, t0: 10, alert: mode === "tablet" });

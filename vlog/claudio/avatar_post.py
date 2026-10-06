@@ -32,5 +32,5 @@ for w in W["win"]:
 json.dump(W, open(R + f"_v3/{S}_avwin.json", "w"), indent=1)
 print(f"lag por ventana (s): min {min(lags):+.2f} · max {max(lags):+.2f} · mediana {np.median(lags):+.2f} · {len(lags)} ventanas")
 os.makedirs(R + f"public/avatar_clips/{S}", exist_ok=True)
-subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", SRC, "-an", "-vf", f"scale=1920:1080:flags=lanczos,fps=30,tpad=stop_mode=clone:stop_duration=2,format=yuv420p", "-t", f"{max(dm, dw) + 1:.3f}", "-r", "30", "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", "-g", "30", R + f"public/avatar_clips/{S}/reel30.mp4"], check=True)
+subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", SRC, "-an", "-vf", f"scale=1920:-2:flags=lanczos,crop=1920:1080:0:(ih-1080)*0.35,fps=30,tpad=stop_mode=clone:stop_duration=2,format=yuv420p", "-t", f"{max(dm, dw) + 1:.3f}", "-r", "30", "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", "-g", "30", R + f"public/avatar_clips/{S}/reel30.mp4"], check=True)
 print("OK public/avatar_clips/<slug>/reel30.mp4", dur(R + f"public/avatar_clips/{S}/reel30.mp4"))

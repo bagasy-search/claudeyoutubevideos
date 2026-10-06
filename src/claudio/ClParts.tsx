@@ -57,8 +57,8 @@ export const Stamp: React.FC<{ text: string; at?: number; color?: string; x?: nu
   const id = `ink${Math.round(size)}${text.length}`;
   return (
     <div style={{ position: "absolute", left: x, top: y, translate: "-50% -50%", rotate: `${rot}deg`, scale: String(s), opacity: Math.min(1, p * 1.6) }}>
-      <svg width={0} height={0} style={{ position: "absolute" }}><filter id={id}><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={3} /><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.2 1.6" /><feComposite in="SourceGraphic" operator="in" /></filter></svg>
-      <div style={{ filter: `url(#${id})`, border: `${Math.round(size / 7)}px solid ${color}`, borderRadius: 14, padding: `${size * 0.12}px ${size * 0.45}px`, color, fontFamily: LABEL, fontWeight: 700, fontSize: size, letterSpacing: size * 0.07, textTransform: "uppercase", whiteSpace: "nowrap", lineHeight: 1.05 }}>{text}</div>
+      <svg width={0} height={0} style={{ position: "absolute" }}><filter id={id}><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={3} /><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.9 1.75" /><feComposite in="SourceGraphic" operator="in" /></filter></svg>
+      <div style={{ filter: `url(#${id})`, border: `${Math.round(size / 7)}px solid ${color}`, borderRadius: 14, padding: `${size * 0.12}px ${size * 0.45}px`, color, background: "rgba(255,255,255,0.55)", fontFamily: LABEL, fontWeight: 700, fontSize: size, letterSpacing: size * 0.07, textTransform: "uppercase", whiteSpace: "nowrap", lineHeight: 1.05 }}>{text}</div>
     </div>
   );
 };
