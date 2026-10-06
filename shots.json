@@ -35,9 +35,9 @@
   "fx": [],
   "behind": {
    "t": "1914",
-   "size": 416,
+   "size": 264,
    "xy": [
-    0.5,
+    0.25,
     0.4
    ],
    "in": 0.05,
@@ -550,17 +550,17 @@
   "fg": "x_reja",
   "behind": {
    "t": "PABELLÓN MODELO",
-   "size": 120,
+   "size": 92,
    "xy": [
     0.5,
-    0.16
+    0.095
    ],
-   "td": 0.14,
+   "td": 0.1,
    "tracking": 0.08,
    "sub": "HOSPITAL RAWSON · LEY 8206",
    "subxy": [
     0.5,
-    0.25
+    0.165
    ]
   }
  },
@@ -656,13 +656,13 @@
   "fx": [],
   "behind": {
    "t": "INSTITUTO MODELO",
-   "size": 96,
+   "size": 76,
    "xy": [
-    0.5,
+    0.22,
     0.3
    ],
    "in": 0.1,
-   "tracking": 0.06,
+   "tracking": 0.04,
    "td": "mid"
   },
   "src": "i_o13_placa",
@@ -854,11 +854,12 @@
   "page": "img/x_pagina.png",
   "desk": "x_mesa",
   "write": [
-   "100 cc de sangre fresca",
-   "+ cristales de citrato neutro",
-   "  de sodio",
-   "guardar el frasco… y esperar"
+   "100 cc de sangre",
+   "+ citrato de sodio",
+   "guardar el frasco",
+   "…y esperar"
   ],
+  "x0": 190,
   "scroll": [
    [
     0,

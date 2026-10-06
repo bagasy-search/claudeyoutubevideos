@@ -63,7 +63,7 @@ def r_doc3d(sh, sid, DUR, put):
             im = Image.new("RGBA", (pw, ph), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
             for j, ln in enumerate(lines):
                 s_ = ln[:max(0, k - acc)]; acc += len(ln)
-                d.text((70, 120 + j * 92), s_, font=hf, fill=(22, 30, 85, 235))
+                d.text((sh.get("x0", 70), 120 + j * 92), s_, font=hf, fill=(22, 30, 85, 235))
             L = np.asarray(im).astype(np.float32) / 255; pg = pg * (1 - L[..., 3:]) + L[..., :3] * L[..., 3:]
         if hl:
             a = ramp(t, DUR * 0.55, DUR * 0.85)
