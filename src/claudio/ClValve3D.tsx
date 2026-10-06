@@ -21,13 +21,13 @@ export const ClValve3D: React.FC<{ label?: string; turns?: number; drain?: boole
   const ang = -2 * Math.PI * turns * ease(tTurn) + (tTurn >= 1 ? 0.03 * Math.sin((f - T * 0.45 - 14) * 0.9) * Math.exp(-(f - T * 0.45 - 14) * 0.15) : 0); // tope: pequeño rebote
   const stopped = tTurn >= 1;
   const a = interpolate(f, [0, T], [-0.32, 0.12], { easing: Easing.inOut(Easing.cubic) });
-  const dist = interpolate(f, [0, T], [3.4, 2.75]);
+  const dist = interpolate(f, [0, T], [5.2, 4.5]);
   const target = new THREE.Vector3(0.1, 0.05, 0.25);
   const camPos = new THREE.Vector3(target.x + Math.sin(a) * dist, 0.55, target.z + Math.cos(a) * dist);
   const mats = useMemo(() => ({
-    chrome: new THREE.MeshStandardMaterial({ color: "#DCE1E7", metalness: 0.75, roughness: 0.18 }),
-    chromeDark: new THREE.MeshStandardMaterial({ color: "#A9B0B9", metalness: 0.7, roughness: 0.28 }),
-    hose: new THREE.MeshStandardMaterial({ color: "#C9CDD2", metalness: 0.55, roughness: 0.42 }),
+    chrome: new THREE.MeshStandardMaterial({ color: "#F1F4F8", metalness: 0.35, roughness: 0.22, emissive: "#2A3038", emissiveIntensity: 0.25 }),
+    chromeDark: new THREE.MeshStandardMaterial({ color: "#C3CAD3", metalness: 0.35, roughness: 0.3 }),
+    hose: new THREE.MeshStandardMaterial({ color: "#D7DBE0", metalness: 0.3, roughness: 0.5 }),
     wall: new THREE.MeshStandardMaterial({ color: "#EFE8DC", roughness: 0.55, transparent: true, opacity: 0.0 }),
   }), []);
   const hoseGeo = useMemo(() => new THREE.TubeGeometry(new THREE.CatmullRomCurve3([new THREE.Vector3(0.0, 0.18, 0.62), new THREE.Vector3(0.0, 0.55, 0.66), new THREE.Vector3(0.05, 1.1, 0.55), new THREE.Vector3(0.12, 1.9, 0.45)]), 40, 0.045, 12, false), []);
@@ -52,7 +52,8 @@ export const ClValve3D: React.FC<{ label?: string; turns?: number; drain?: boole
       <Contact x={base.x} y={base.y} w={520} o={0.22} />
       <ThreeCanvas width={width} height={height} camera={{ fov: 30, position: [camPos.x, camPos.y, camPos.z] }} gl={{ antialias: true, alpha: true }}>
         <Cam pos={camPos} target={target} />
-        <ambientLight intensity={0.8} />
+        <ambientLight intensity={1.1} />
+        <hemisphereLight args={["#FFFFFF", "#C9B79C", 0.8]} />
         <directionalLight position={[-2, 4, 5]} intensity={1.3} color="#FFF1DA" />
         <directionalLight position={[3, 1, 2]} intensity={0.55} />
         <pointLight position={[0.6, 0.8, 1.8]} intensity={0.6} />

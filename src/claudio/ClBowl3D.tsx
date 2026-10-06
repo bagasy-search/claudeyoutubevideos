@@ -52,14 +52,14 @@ export const ClBowl3D: React.FC<{ mode?: Mode; labels?: Labels; days?: number; b
   const a = interpolate(f, [0, T], [-orbit, orbit * 0.5], { easing: Easing.inOut(Easing.cubic) });
   const dist = interpolate(f, [0, T], [4.3, 3.55]);
   const target = new THREE.Vector3(0, 0.05, -0.35);
-  const camPos = new THREE.Vector3(Math.sin(a) * dist, 1.55 - 0.15 * (f / T), -0.35 + Math.cos(a) * dist);
+  const camPos = new THREE.Vector3(Math.sin(a) * dist, 2.35 - 0.2 * (f / T), -0.35 + Math.cos(a) * dist);
 
   const geo = useMemo(() => ({
     bowl: bowlGeo(), outer: outerGeo(),
     rim: new THREE.TorusGeometry(1.27, 0.09, 12, 64, A1 - A0),
-    layers: Array.from({ length: NL }, (_, k) => bandGeo(0.012 + k * 0.011, YW - 0.07 - k * 0.004, YW + 0.06 + k * 0.004, k * 1.7)),
-    brown: bandGeo(0.012 + NL * 0.011 + 0.012, YW - 0.06, YW + 0.07, 9.1),
-    paste: bandGeo(0.012 + NL * 0.011 + 0.05, YW - 0.1, YW + 0.1, 3.3),
+    layers: Array.from({ length: NL }, (_, k) => bandGeo(0.016 + k * 0.013, YW - 0.1 - k * 0.006, YW + 0.09 + k * 0.006, k * 1.7)),
+    brown: bandGeo(0.016 + NL * 0.013 + 0.014, YW - 0.09, YW + 0.1, 9.1),
+    paste: bandGeo(0.016 + NL * 0.013 + 0.05, YW - 0.13, YW + 0.13, 3.3),
     cut: new THREE.PlaneGeometry(1, 1),
   }), []);
   const mats = useMemo(() => ({
@@ -67,9 +67,9 @@ export const ClBowl3D: React.FC<{ mode?: Mode; labels?: Labels; days?: number; b
     porcelainOut: new THREE.MeshStandardMaterial({ color: "#F3F1EC", roughness: 0.3, side: THREE.DoubleSide }),
     cutFace: new THREE.MeshStandardMaterial({ color: "#E9E4DA", roughness: 0.8, side: THREE.DoubleSide }),
     water: new THREE.MeshStandardMaterial({ color: "#BFDDF2", transparent: true, opacity: 0.45, roughness: 0.05, depthWrite: false, side: THREE.DoubleSide }),
-    stone: Array.from({ length: NL }, (_, k) => new THREE.MeshStandardMaterial({ color: new THREE.Color("#E4DDCB").lerp(new THREE.Color("#BDB39C"), k / NL), roughness: 0.97 })),
-    brown: new THREE.MeshStandardMaterial({ color: "#7B4A22", roughness: 0.85, transparent: true, opacity: 1 }),
-    paste: new THREE.MeshStandardMaterial({ color: "#FAFAF7", roughness: 0.95, transparent: true, opacity: 1 }),
+    stone: Array.from({ length: NL }, (_, k) => new THREE.MeshStandardMaterial({ color: new THREE.Color("#D9CFB6").lerp(new THREE.Color("#A89A7C"), k / NL), roughness: 0.97, side: THREE.DoubleSide })),
+    brown: new THREE.MeshStandardMaterial({ color: "#7B4A22", roughness: 0.85, transparent: true, opacity: 1, side: THREE.DoubleSide }),
+    paste: new THREE.MeshStandardMaterial({ color: "#FAFAF7", roughness: 0.95, transparent: true, opacity: 1, side: THREE.DoubleSide }),
     bubble: new THREE.MeshStandardMaterial({ color: "#FFFFFF", roughness: 0.2, transparent: true, opacity: 0.85 }),
     strip: new THREE.MeshStandardMaterial({ color: "#F4EFE2", roughness: 0.9, transparent: true, opacity: 0.92, side: THREE.DoubleSide }),
     brush: new THREE.MeshStandardMaterial({ color: "#2F6FD0", roughness: 0.5 }),
@@ -96,7 +96,7 @@ export const ClBowl3D: React.FC<{ mode?: Mode; labels?: Labels; days?: number; b
   const ringP = proj(ringPt(Math.PI * 0.32, YW, 0.06));
   const base = proj(new THREE.Vector3(0, -1.05, -0.4));
   const L: { at: any; text: string; dx: number; dy: number; t0: number; alert?: boolean }[] = [];
-  if (labels.ring) L.push({ at: ringPt(Math.PI * 0.68, YW, 0.05), text: labels.ring, dx: -300, dy: -170, t0: 10 });
+  if (labels.ring) L.push({ at: ringPt(Math.PI * 0.6, YW, 0.05), text: labels.ring, dx: -60, dy: 260, t0: 10 });
   if (labels.water) L.push({ at: new THREE.Vector3(-0.2, Math.max(-0.55, water), -0.45), text: labels.water, dx: -320, dy: 150, t0: Math.round(T * 0.35) });
   // día (modo layers) / reloj noche (modo vinagre)
   const day = Math.max(1, Math.round(days * ease(u)));
@@ -185,13 +185,13 @@ export const ClBowl3D: React.FC<{ mode?: Mode; labels?: Labels; days?: number; b
         return (<div key={i} style={{ position: "absolute", left: p.x + l.dx, top: p.y + l.dy, translate: `${l.dx < 0 ? "-100%" : "0%"} -50%`, opacity: k, scale: String(0.85 + 0.15 * k), background: l.alert ? CL.red : CL.navy, color: "#fff", fontFamily: LABEL, fontWeight: 600, fontSize: 42, letterSpacing: 2, padding: "8px 22px", borderRadius: 10, textTransform: "uppercase", whiteSpace: "nowrap", boxShadow: `0 10px 24px ${CL.shadow}`, borderBottom: `4px solid ${CL.yellow}` }}>{l.text}</div>);
       })}
       {mode === "layers" ? (
-        <div style={{ position: "absolute", left: 110, top: 96, opacity: lin(f, 4, 14), background: CL.white, borderRadius: 14, padding: "10px 30px 14px", boxShadow: `0 14px 30px ${CL.shadow}`, borderTop: `10px solid ${CL.navy}` }}>
+        <div style={{ position: "absolute", left: 110, bottom: 110, opacity: lin(f, 4, 14), background: CL.white, borderRadius: 14, padding: "10px 30px 14px", boxShadow: `0 14px 30px ${CL.shadow}`, borderTop: `10px solid ${CL.navy}` }}>
           <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 34, letterSpacing: 3, color: CL.inkSoft }}>DÍA</div>
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 96, color: CL.ink, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{day}</div>
         </div>
       ) : null}
       {mode === "vinegar" ? (
-        <div style={{ position: "absolute", left: 120, top: 100, width: 190, height: 190, borderRadius: "50%", opacity: lin(f, 4, 14), background: `radial-gradient(circle at 40% 40%, ${night < 0.75 ? "#F6F0D8" : "#FFE07A"}, ${night < 0.75 ? "#C9C2A6" : "#F2B330"})`, boxShadow: night < 0.75 ? `0 0 0 14px rgba(30,45,79,0.85), 0 0 60px rgba(30,45,79,0.6)` : "0 0 70px rgba(242,194,48,0.8)" }}>
+        <div style={{ position: "absolute", left: 120, bottom: 190, width: 190, height: 190, borderRadius: "50%", opacity: lin(f, 4, 14), background: `radial-gradient(circle at 40% 40%, ${night < 0.75 ? "#F6F0D8" : "#FFE07A"}, ${night < 0.75 ? "#C9C2A6" : "#F2B330"})`, boxShadow: night < 0.75 ? `0 0 0 14px rgba(30,45,79,0.85), 0 0 60px rgba(30,45,79,0.6)` : "0 0 70px rgba(242,194,48,0.8)" }}>
           {night < 0.75 ? <div style={{ position: "absolute", left: 70, top: -6, width: 150, height: 150, borderRadius: "50%", background: "rgba(30,45,79,0.95)" }} /> : null}
           <div style={{ position: "absolute", top: 210, left: -30, width: 250, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy }}>{night < 0.75 ? "toda la noche" : "a la mañana"}</div>
         </div>
