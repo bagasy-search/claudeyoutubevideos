@@ -1,0 +1,1685 @@
+[
+ {
+  "at": "0",
+  "id": "apertura",
+  "kind": "open",
+  "w": 0.62
+ },
+ {
+  "at": "1",
+  "id": "t01_tallador",
+  "kind": "clip",
+  "img": "Two real old human craftsman hands with wrinkles and a few small cuts, wearing a worn leather apron, carving with a small steel gouge the tiny wooden head of a young man with round glasses, curls of pale wood shavings on a worn workbench, a warm desk lamp, chisels in a leather roll, a dark workshop behind.",
+  "motion": "the gouge lifts away one thin curl of wood",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "2.1",
+  "id": "o01_matraz_noche",
+  "kind": "depth2",
+  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. At night: rain running down the tall window, the lights of Mexico City outside, a single desk lamp glowing on a far bench.",
+  "fg": "A glass Erlenmeyer flask with a thin layer of white powder at the bottom, standing on the dark polished edge of a wooden lab bench, lit by warm lamp light from the left. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [],
+  "cam": "push",
+  "behind": {
+   "t": "1951",
+   "size": 416,
+   "xy": [
+    0.5,
+    0.4
+   ],
+   "in": 0.05,
+   "td": "mid"
+  },
+  "src": "i_o01_matraz_noche",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
+   ],
+   [
+    1,
+    "p14"
+   ]
+  ]
+ },
+ {
+  "at": "2.0",
+  "id": "d01_cdmx1951",
+  "kind": "depth",
+  "img": "No person. A street of Mexico City at night in 1951 after the rain, art deco buildings with lit windows, a parked rounded black 1940s car, wet asphalt reflecting street lamps, a distant tram. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [
+   "rain",
+   "title:CIUDAD DE MÉXICO|15 DE OCTUBRE DE 1951"
+  ],
+  "cam": "dolly",
+  "focus": 0.5
+ },
+ {
+  "at": "0",
+  "id": "p01_mira_matraz",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 26, slim, neatly combed black hair with a side part, round wire-rimmed glasses, a gentle serious face, clean-shaven, wearing a white cotton lab coat over a white shirt and a thin dark tie. He stands at a dark wooden lab bench at night and holds a glass flask up toward a desk lamp, staring at the white powder at its bottom with deep concentration. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. ",
+  "motion": "his eyes move slightly as he tilts the flask a little toward the lamp",
+  "w": 0.38,
+  "pres": true
+ },
+ {
+  "at": "2.2",
+  "id": "p02_mujer60",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican woman of about 22 in 1965, short black hair, a light blue dress, carrying university books, walking with a confident smile down a sunny street of Mexico City with colonial buildings. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "she walks forward with two small steps, smiling",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "2.3",
+  "id": "o02_mapa",
+  "kind": "depth2",
+  "bg": "No person. An old paper world map pinned on a dark wooden wall, faded colors, warm light.",
+  "fg": "A small round glass dish with a little white powder in it, resting on a dark wooden table edge. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "bokeh"
+  ],
+  "cam": "dolly",
+  "fgscale": 0.55,
+  "fgpos": [
+   -420,
+   260
+  ],
+  "src": "i_o02_mapa",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ]
+ },
+ {
+  "at": "2.4",
+  "id": "o03_foto_olvidada",
+  "kind": "depth2",
+  "bg": "No person. Dusty wooden shelves in an old storage room with cardboard boxes and stacks of yellowed papers, a beam of grey daylight from the side.",
+  "fg": "An old silver picture frame lying face down covered in a thick layer of dust, on the edge of a dusty wooden shelf. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "tilt"
+  ],
+  "cam": "orbit",
+  "src": "i_o03_foto_olvidada",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ]
+ },
+ {
+  "at": "2.5",
+  "id": "a01_foto_real",
+  "kind": "arch",
+  "src": "C:/Users/bauti/Downloads/miramontes/archivo/miramontes_real.jpg",
+  "w": 1.2,
+  "move": "push",
+  "label": "LUIS ERNESTO MIRAMONTES|1925 – 2004"
+ },
+ {
+  "at": "2.5",
+  "id": "s01_mira_retrato",
+  "kind": "still",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 26, slim, neatly combed black hair with a side part, round wire-rimmed glasses, a gentle serious face, clean-shaven, wearing a white cotton lab coat over a white shirt and a thin dark tie. Portrait from the chest up, he looks calmly to one side, a dark laboratory behind him with glass bottles.",
+  "w": 0.8,
+  "move": "push"
+ },
+ {
+  "at": "2.6",
+  "id": "d02_selva",
+  "kind": "depth",
+  "img": "No person. A dense tropical jungle in Veracruz in the early morning, giant ferns, vines, mist between huge trees, sunbeams cutting through the canopy, a muddy path. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [
+   "rays",
+   "dust"
+  ],
+  "cam": "dolly",
+  "focus": 0.5
+ },
+ {
+  "at": "2.6",
+  "id": "p03_marker_costal",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A tall thin American man of about 42 with rimless glasses, a grey felt fedora and a rumpled light linen suit. On a muddy jungle path he swings a heavy burlap sack full of knobby roots over his shoulder, sweating, with a satisfied grin. Giant ferns around. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he settles the sack on his shoulder",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "3",
+  "id": "g01_sello",
+  "kind": "graf",
+  "spec": "sello",
+  "w": 1.0,
+  "year": "1951"
+ },
+ {
+  "at": "4.0",
+  "id": "t02_tallador_estante",
+  "kind": "clip",
+  "img": "Two real old human craftsman hands with wrinkles and a few small cuts, wearing a worn leather apron, placing a small finished carved wooden figure of a scientist on a wooden shelf full of other small carved figures of inventors, in a warm dusty workshop with tools on the wall.",
+  "motion": "the hands set the figure down gently and let go",
+  "w": 1.2,
+  "pres": false
+ },
+ {
+  "at": "4.0",
+  "id": "d03_estante",
+  "kind": "depth",
+  "img": "No person. A long wooden shelf in a craftsman's workshop crowded with small hand-carved wooden figures of old inventors and scientists, each different, wood shavings, a warm lamp, dust in the air.",
+  "w": 1.2,
+  "fx": [
+   "dust",
+   "rays"
+  ],
+  "cam": "dolly",
+  "focus": 0.5
+ },
+ {
+  "at": "5.0",
+  "id": "d04_mexico1950",
+  "kind": "depth",
+  "img": "No person. A sunny square in Mexico City in 1950 with a colonial church, a yellow tram, street vendors' empty carts with fruit, paper flags hanging across the street. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [],
+  "cam": "orbit",
+  "focus": 0.5
+ },
+ {
+  "at": "5.1",
+  "id": "o04_calendario",
+  "kind": "depth2",
+  "bg": "No person. A modest 1950 Mexican kitchen wall painted pale green with a hanging paper wall calendar and clay pots on a shelf.",
+  "fg": "A small wedding photograph of a young couple in a simple wooden frame, standing on a kitchen table edge next to a clay jug. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "glint"
+  ],
+  "cam": "push",
+  "src": "i_o04_calendario",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p94"
+   ],
+   [
+    1,
+    "p94"
+   ]
+  ]
+ },
+ {
+  "at": "5.2",
+  "id": "g02_zapatitos",
+  "kind": "graf",
+  "spec": "zapatitos",
+  "w": 1.3
+ },
+ {
+  "at": "5.3",
+  "id": "g03_siete",
+  "kind": "graf",
+  "spec": "siete",
+  "w": 1.6
+ },
+ {
+  "at": "5.4",
+  "id": "p04_cocina",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A tired Mexican mother of about 30 in 1950, black hair in a long braid, a flowered cotton dress and an apron. She stirs a big clay pot in a small crowded 1950 Mexican kitchen while six small puppet children play around her feet and on chairs; she looks exhausted. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "she stirs the pot slowly and closes her eyes for a moment",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "5.5",
+  "id": "d05_mundo",
+  "kind": "depth",
+  "img": "No person. A row of small houses in a 1950s European town with long laundry lines full of children's clothes drying between the houses, cobblestones, a grey sky. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [],
+  "cam": "truck",
+  "focus": 0.5
+ },
+ {
+  "at": "5.6",
+  "id": "o05_ampollas",
+  "kind": "depth2",
+  "bg": "No person. A 1940s pharmacy shelf with many brown glass bottles and wooden drawers, warm light.",
+  "fg": "A row of small glass ampoules with a clear golden liquid in an open wooden box lined with dark red velvet. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [],
+  "cam": "rise",
+  "src": "i_o05_ampollas",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ]
+ },
+ {
+  "at": "5.7",
+  "id": "o06_fortuna",
+  "kind": "depth2",
+  "bg": "No person. A dark wooden desk in a 1940s bank office with a brass lamp.",
+  "fg": "A tall stack of gold coins next to one tiny glass vial of golden liquid on a dark velvet cloth. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [
+   "glint"
+  ],
+  "cam": "push",
+  "src": "n_monedas",
+  "focal": [
+   0.36,
+   0.62
+  ],
+  "focus_keys": [
+   [
+    0,
+    0.08
+   ],
+   [
+    0.35,
+    0.08
+   ],
+   [
+    0.8,
+    0.66
+   ],
+   [
+    1,
+    0.66
+   ]
+  ],
+  "strength": 22
+ },
+ {
+  "at": "6",
+  "id": "g04_lupa",
+  "kind": "graf",
+  "spec": "lupa",
+  "w": 1.0
+ },
+ {
+  "at": "7.1",
+  "id": "d06_veracruz",
+  "kind": "depth2",
+  "img": "No person. A small tropical town in Veracruz in 1944: a dirt road between colourful houses with tiled roofs, banana trees, a volcano with snow far away in the haze. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [],
+  "cam": "orbit",
+  "focus": 0.5,
+  "behind": {
+   "t": "VERACRUZ",
+   "size": 185,
+   "xy": [
+    0.5,
+    0.36
+   ],
+   "td": 0.22,
+   "tracking": 0.08,
+   "sub": "FORTÍN DE LAS FLORES · 1944",
+   "subxy": [
+    0.5,
+    0.53
+   ],
+   "in": 0.12
+  },
+  "focus_keys": [
+   [
+    0,
+    0.5
+   ],
+   [
+    1,
+    0.4
+   ]
+  ],
+  "strength": 12
+ },
+ {
+  "at": "7.1",
+  "id": "p05_marker_bus",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A tall thin American man of about 42 with rimless glasses, a grey felt fedora and a rumpled light linen suit. He steps down from an old dusty 1940s country bus onto a dirt road in a tropical town, holding a leather briefcase, looking around curious. Banana trees. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he steps down onto the road and looks around",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "7.2",
+  "id": "p06_campesino_raiz",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Mexican farmer of about 40 from Veracruz in 1944, white cotton clothes, a woven palm-leaf hat, a red bandana, sandals. Standing at the edge of the jungle he holds up with both hands a huge ugly knobby brown root, as big as a pumpkin, showing it proudly. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he lifts the root a little higher",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "7.2",
+  "id": "o07_raiz",
+  "kind": "depth2",
+  "bg": "No person. The floor of a tropical jungle: wet dark soil, ferns, fallen leaves, a stream far behind in green shade.",
+  "fg": "A huge knobby brown yam root, as big as a pumpkin, half covered in damp soil, with thin hairy rootlets. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "bokeh"
+  ],
+  "cam": "truck",
+  "src": "i_o07_raiz",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ]
+ },
+ {
+  "at": "7.3",
+  "id": "p07_marker_lupa",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A tall thin American man of about 42 with rimless glasses, a grey felt fedora and a rumpled light linen suit. He sits at a rough wooden table in a village hut and studies a thin slice of the root through a brass magnifying glass, intrigued, a notebook beside him. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he moves the magnifying glass slightly closer",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "7.4",
+  "id": "p08_costales",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Several Mexican farmers in white cotton clothes and palm hats load many heavy burlap sacks full of roots onto an old wooden truck on a jungle road. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "one farmer lifts a sack onto the truck",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "7.5",
+  "id": "d07_secado",
+  "kind": "depth",
+  "img": "No person. Long wooden drying racks under the sun covered in thousands of thin sliced brown roots, steam rising from a fermenting barrel, tropical hills behind. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [
+   "steam",
+   "rays"
+  ],
+  "cam": "dolly",
+  "focus": 0.5
+ },
+ {
+  "at": "7.5",
+  "id": "o08_frasco",
+  "kind": "depth2",
+  "bg": "No person. A small 1944 chemistry workroom with a wooden shelf of reagent bottles, a window with tropical light.",
+  "fg": "A small glass jar full of fine white crystals standing on an old brass balance scale. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [],
+  "cam": "push",
+  "src": "i_o08_frasco",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
+   ],
+   [
+    1,
+    "p14"
+   ]
+  ]
+ },
+ {
+  "at": "7.6",
+  "id": "g05_dolares",
+  "kind": "graf",
+  "spec": "dolares",
+  "w": 1.0
+ },
+ {
+  "at": "7.7",
+  "id": "p09_socios",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Three men in 1940s suits shake hands across a desk in a small Mexico City office, one is a tall thin American with a grey fedora and rimless glasses; papers and a small glass jar of white crystals on the desk. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "the two men shake hands",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "7.8",
+  "id": "d08_fabrica",
+  "kind": "timelapse",
+  "img": "No person. A 1940s factory floor in Mexico City with huge steel vats, copper pipes, glass tanks with golden liquid, high windows with sunbeams, wooden crates. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [
+   "rays",
+   "steam"
+  ],
+  "cam": "dolly",
+  "focus": 0.5,
+  "clip": "timelapse",
+  "final": "n_obra_b2",
+  "fg": "n_cerca",
+  "behind": {
+   "t": "SYNTEX",
+   "size": 150,
+   "xy": [
+    0.44,
+    0.15
+   ],
+   "td": 0.14,
+   "tracking": 0.12,
+   "sub": "MÉXICO · 1944",
+   "subxy": [
+    0.44,
+    0.25
+   ]
+  }
+ },
+ {
+  "at": "7.8",
+  "id": "o09_balanza",
+  "kind": "depth2",
+  "bg": "No person. A dark 1940s laboratory office with shelves.",
+  "fg": "An antique brass balance scale holding on one side a shiny gold bar and on the other side a big knobby brown root, perfectly balanced. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "bokeh"
+  ],
+  "cam": "dolly",
+  "src": "i_o09_balanza",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ]
+ },
+ {
+  "at": "8",
+  "id": "d09_tren",
+  "kind": "depth",
+  "img": "No person. A 1940s railway station in Mexico City with a black steam locomotive arriving, clouds of white steam, iron columns, a big station clock. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [
+   "steam"
+  ],
+  "cam": "dolly",
+  "focus": 0.5
+ },
+ {
+  "at": "9.0",
+  "id": "p10_nino",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A curious Mexican boy of 10 in 1935 with round wire-rimmed glasses, short black hair, white shirt and short trousers, sits on a stone step of a colonial street in Tepic reading a big old chemistry book with drawings of flasks. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he turns his eyes up from the book with wonder",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "9.1",
+  "id": "s02_mira_nombre",
+  "kind": "still",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 26, slim, neatly combed black hair with a side part, round wire-rimmed glasses, a gentle serious face, clean-shaven, wearing a white cotton lab coat over a white shirt and a thin dark tie. Close portrait, he looks straight ahead with quiet determination, a blurry lab behind.",
+  "w": 1.0,
+  "move": "push"
+ },
+ {
+  "at": "9.2",
+  "id": "p11_maleta",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 18 with round wire-rimmed glasses and combed black hair, a cheap brown suit, holding a battered suitcase, arrives at a busy 1943 Mexico City street with trams and tall buildings, looking up amazed. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he looks up at the buildings",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "9.3",
+  "id": "p12_cuarto",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 22 with round wire-rimmed glasses studies late at night in a tiny rented room by the light of one candle, piles of books, a narrow bed, a cracked wall. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he turns one page",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "9.4",
+  "id": "p13_entra_lab",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 26, slim, neatly combed black hair with a side part, round wire-rimmed glasses, a gentle serious face, clean-shaven, wearing a white cotton lab coat over a white shirt and a thin dark tie. He walks into a big bright 1950 laboratory for the first time, holding his lab coat collar, looking at the rows of glassware with excitement. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. ",
+  "motion": "he takes one step forward looking around",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "9.5",
+  "id": "p14_djerassi",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young man of 27 with thick dark wavy hair, bushy dark eyebrows and a confident smile, white lab coat over a shirt and tie. He stands at a big blackboard covered with chalk drawings of hexagonal molecule rings and explains energetically to three young puppet chemists in lab coats, one of them with round glasses. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. ",
+  "motion": "he points at the drawing on the blackboard",
+  "w": 1.0,
+  "pres": false,
+  "maxs": 2.6
+ },
+ {
+  "at": "9.6",
+  "id": "o10_pastilla",
+  "kind": "depth2",
+  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. A blackboard with chalk drawings of hexagon molecule rings on the far wall.",
+  "fg": "One small round white tablet alone in the middle of a dark wooden bench top, lit by a lamp. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "tilt"
+  ],
+  "cam": "orbit",
+  "src": "i_o10_pastilla",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ]
+ },
+ {
+  "at": "10.0",
+  "id": "g06_molecula",
+  "kind": "graf",
+  "spec": "molecula_falla",
+  "w": 1.4
+ },
+ {
+  "at": "10.1",
+  "id": "o11_papeles",
+  "kind": "depth2",
+  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. At night, many flasks and bottles on the benches.",
+  "fg": "A metal waste bin overflowing with crumpled sheets of handwritten notes, some on the floor. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "glint"
+  ],
+  "cam": "push",
+  "src": "i_o11_papeles",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p94"
+   ],
+   [
+    1,
+    "p94"
+   ]
+  ]
+ },
+ {
+  "at": "10.2",
+  "id": "o12_columnas",
+  "kind": "depth2",
+  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. Dark, lit by a few lamps.",
+  "fg": "A tall glass distillation column with drops of clear liquid falling into a round flask, brass clamps, a tiny blue flame of a burner under it. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [],
+  "cam": "rise",
+  "src": "i_o12_columnas",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ]
+ },
+ {
+  "at": "10.3",
+  "id": "p15_gotero",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 26, slim, neatly combed black hair with a side part, round wire-rimmed glasses, a gentle serious face, clean-shaven, wearing a white cotton lab coat over a white shirt and a thin dark tie. Extreme close view: he leans over a round glass flask and, with a glass dropper, adds one single drop, holding his breath in total concentration. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. ",
+  "motion": "a single drop falls from the dropper",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "10.4",
+  "id": "o13_fallo",
+  "kind": "depth2",
+  "bg": "No person. A white ceramic laboratory sink with brass taps and tiled wall.",
+  "fg": "A glass flask full of a ruined cloudy brown liquid tilted in the sink. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "bokeh"
+  ],
+  "cam": "truck",
+  "src": "i_o13_fallo",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ]
+ },
+ {
+  "at": "11",
+  "id": "d10_noche",
+  "kind": "depth",
+  "img": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. Late at night: a big round wall clock, rain on the tall window, one lamp glowing over a bench with a flask, deep shadows.",
+  "w": 1.0,
+  "fx": [
+   "rain"
+  ],
+  "cam": "dolly",
+  "focus": 0.5
+ },
+ {
+  "at": "11",
+  "id": "p16_bureta",
+  "kind": "clip",
+  "img": "Extreme close view of a carved maple wood puppet hand with jointed fingers turning the glass tap of a burette, a single drop forming at the tip above a flask, dark laboratory behind.",
+  "motion": "the fingers turn the tap a little and one drop falls",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "12.0",
+  "id": "o14_polvo",
+  "kind": "depth2",
+  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. At night.",
+  "fg": "Extreme close view of the bottom of a glass flask with fine white crystalline powder settled in it, catching the lamp light. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [],
+  "cam": "push",
+  "behind": {
+   "t": "NORETISTERONA",
+   "size": 94,
+   "xy": [
+    0.73,
+    0.3
+   ],
+   "in": 0.25,
+   "tracking": 0.04,
+   "td": "mid"
+  },
+  "src": "i_o14_polvo",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
+   ],
+   [
+    1,
+    "p14"
+   ]
+  ]
+ },
+ {
+  "at": "12.1",
+  "id": "p17_analizan",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 26, slim, neatly combed black hair with a side part, round wire-rimmed glasses, a gentle serious face, clean-shaven, wearing a white cotton lab coat over a white shirt and a thin dark tie. He and another young puppet chemist with dark wavy hair lean together over a bench, looking closely at a small test tube with white powder held up between them. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. ",
+  "motion": "they lean a little closer to the tube",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "12.2",
+  "id": "g07_molecula_ok",
+  "kind": "graf",
+  "spec": "molecula_ok",
+  "w": 1.3
+ },
+ {
+  "at": "12.2",
+  "id": "p18_sonrisa",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 26, slim, neatly combed black hair with a side part, round wire-rimmed glasses, a gentle serious face, clean-shaven, wearing a white cotton lab coat over a white shirt and a thin dark tie. Close view: he takes off his round glasses and smiles in disbelief, eyes shining, a flask in his other hand. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. ",
+  "motion": "a slow smile spreads on his face",
+  "w": 0.8,
+  "pres": true
+ },
+ {
+  "at": "12.3",
+  "id": "o15_cuaderno",
+  "kind": "graf",
+  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. At night, a lamp.",
+  "fg": "An open old laboratory notebook with ruled pages and a fountain pen lying on it, on a dark wooden bench. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "handwriting"
+  ],
+  "cam": "truck",
+  "spec": "cuaderno"
+ },
+ {
+  "at": "12.4",
+  "id": "p19_palmada",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young man of 27 with thick dark wavy hair, bushy dark eyebrows and a confident smile, white lab coat over a shirt and tie. Laughing, he pats the shoulder of a young puppet chemist with round wire-rimmed glasses and a white lab coat, both happy, in a laboratory. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. ",
+  "motion": "he pats the shoulder",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "12.4",
+  "id": "g08_cita",
+  "kind": "graf",
+  "spec": "cita",
+  "w": 1.1
+ },
+ {
+  "at": "13",
+  "id": "o16_maquina",
+  "kind": "depth2",
+  "bg": "No person. A 1952 office with a window, filing cabinets, a desk lamp.",
+  "fg": "An old black typewriter with a sheet of paper in it on a wooden desk. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "bokeh"
+  ],
+  "cam": "dolly",
+  "src": "i_o16_maquina",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ]
+ },
+ {
+  "at": "14.0",
+  "id": "o17_caballos",
+  "kind": "depth2",
+  "bg": "No person. A dark wooden table in a study, a window with dusk light.",
+  "fg": "Two small hand-carved wooden toy horses side by side, as if racing, on the edge of a wooden table. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "tilt"
+  ],
+  "cam": "orbit",
+  "src": "i_o17_caballos",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ]
+ },
+ {
+  "at": "14.1",
+  "id": "a02_patente",
+  "kind": "arch",
+  "src": "C:/Users/bauti/Downloads/miramontes/archivo/patente_p1.png",
+  "w": 1.6,
+  "move": "names"
+ },
+ {
+  "at": "14.2",
+  "id": "d11_chicago",
+  "kind": "depth",
+  "img": "No person. A 1950s office window at dusk looking over the skyline of Chicago with tall brick and stone towers and the lake, a desk with papers in front. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [],
+  "cam": "dolly",
+  "focus": 0.5
+ },
+ {
+  "at": "14.3",
+  "id": "o18_farmacia",
+  "kind": "depth2",
+  "bg": "No person. A 1960 American pharmacy counter with glass jars and shelves of boxes, bright.",
+  "fg": "A small round plastic pill dispenser case with a ring of tiny pills, on the glass counter. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [
+   "glint"
+  ],
+  "cam": "push",
+  "src": "i_o18_farmacia",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p94"
+   ],
+   [
+    1,
+    "p94"
+   ]
+  ]
+ },
+ {
+  "at": "14.4",
+  "id": "g09_timeline",
+  "kind": "corridor",
+  "spec": "timeline",
+  "w": 1.4,
+  "cards": [
+   {
+    "img": "img/kf__p01_mira_matraz.png",
+    "year": "1951",
+    "label": "MIRAMONTES LA SINTETIZA"
+   },
+   {
+    "img": "archivo/patente_p1.png",
+    "year": "1956",
+    "label": "PATENTE EN EE. UU.",
+    "crop": [
+     0.0,
+     0.0,
+     1.0,
+     0.42
+    ]
+   },
+   {
+    "img": "img/o18_farmacia_bg.png",
+    "year": "1960",
+    "label": "LA PRIMERA PÍLDORA (OTRA)"
+   },
+   {
+    "img": "img/i_o19_blister.png",
+    "year": "1962",
+    "label": "SE APRUEBA LA SUYA"
+   }
+  ]
+ },
+ {
+  "at": "14.5",
+  "id": "o19_blister",
+  "kind": "depth2",
+  "bg": "No person. A sunny modern bathroom shelf with plants and a window.",
+  "fg": "A modern silver blister pack of small round pills lying on a white shelf. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [],
+  "cam": "rise",
+  "behind": {
+   "t": "HOY",
+   "size": 368,
+   "xy": [
+    0.5,
+    0.42
+   ],
+   "in": 0.15,
+   "td": "mid"
+  },
+  "src": "i_o19_blister",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ]
+ },
+ {
+  "at": "14.6",
+  "id": "p20_djerassi_flash",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young man of 27 with thick dark wavy hair, bushy dark eyebrows and a confident smile, white lab coat over a shirt and tie. Now 40, with grey at the temples, in a dark suit, he smiles at a podium while press photographers with old flash cameras take pictures, flash bulbs bursting. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "a flash bursts and he smiles",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "14.7",
+  "id": "p21_clase",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 26, slim, neatly combed black hair with a side part, round wire-rimmed glasses, a gentle serious face, clean-shaven, wearing a white cotton lab coat over a white shirt and a thin dark tie. He teaches a class at a 1958 university lecture hall, writing a molecule on the blackboard while young puppet students take notes. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he draws one line on the blackboard",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "15.0",
+  "id": "p22_pasillo",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican man of 26, slim, neatly combed black hair with a side part, round wire-rimmed glasses, a gentle serious face, clean-shaven, wearing a white cotton lab coat over a white shirt and a thin dark tie. He walks quickly down a sunny 1960 university corridor carrying a pile of books and papers, with a determined face. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he walks forward",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "15.1",
+  "id": "d12_instituto",
+  "kind": "depth",
+  "img": "No person. A brand new 1960 university chemistry laboratory with modern steel benches, big windows with sunlight, clean glassware. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [
+   "rays",
+   "dust"
+  ],
+  "cam": "dolly",
+  "focus": 0.5
+ },
+ {
+  "at": "15.2",
+  "id": "o20_catalizador",
+  "kind": "depth2",
+  "bg": "No person. A 1975 workshop with a red car, tools on the wall.",
+  "fg": "A car catalytic converter cut open showing its ceramic honeycomb inside, on a workbench. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "bokeh"
+  ],
+  "cam": "truck",
+  "src": "i_o20_catalizador",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ]
+ },
+ {
+  "at": "15.3",
+  "id": "p23_mira_mayor",
+  "kind": "still",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Mexican man of about 55 with grey combed hair, round wire-rimmed glasses, a grey suit and tie. He shows a glass flask to three young puppet students in a 1980 laboratory, smiling like a proud teacher. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he lifts the flask a little",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "15.4",
+  "id": "p24_calle",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Mexican street vendor of about 50 with a mustache, at his newspaper stand on a 1990 Mexico City street, shrugs his shoulders with a puzzled face. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he shrugs and tilts his head",
+  "w": 1.0,
+  "pres": false,
+  "maxs": 2.0
+ },
+ {
+  "at": "16",
+  "id": "o21_cabecita",
+  "kind": "depth2",
+  "bg": "No person. A craftsman's workshop at night, tools on the wall.",
+  "fg": "A tiny carved wooden head of a young man with round glasses standing on a workbench among wood shavings, a desk lamp beside it. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [],
+  "cam": "push",
+  "src": "i_o21_cabecita",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
+   ],
+   [
+    1,
+    "p14"
+   ]
+  ]
+ },
+ {
+  "at": "17.0",
+  "id": "o22_medalla",
+  "kind": "depth2",
+  "bg": "No person. A dark wood paneled room with a bookcase.",
+  "fg": "An open small blue velvet box with a round gold medal on a ribbon inside. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [
+   "bokeh"
+  ],
+  "cam": "dolly",
+  "behind": {
+   "t": "1986",
+   "size": 336,
+   "xy": [
+    0.5,
+    0.4
+   ],
+   "in": 0.1,
+   "td": "mid"
+  },
+  "src": "i_o22_medalla",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ]
+ },
+ {
+  "at": "17.1",
+  "id": "g10_placas",
+  "kind": "graf",
+  "spec": "placas",
+  "w": 1.6
+ },
+ {
+  "at": "17.2",
+  "id": "g11_premio",
+  "kind": "graf",
+  "spec": "premio",
+  "w": 1.0
+ },
+ {
+  "at": "17.3",
+  "id": "d13_hospital",
+  "kind": "depth",
+  "img": "No person. A sunny street in Tepic, Nayarit, with a white hospital building with arches, palm trees and green hills behind. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [],
+  "cam": "orbit",
+  "focus": 0.5
+ },
+ {
+  "at": "17.4",
+  "id": "o23_anteojos",
+  "kind": "depth2",
+  "bg": "No person. A quiet study with a window, late afternoon light, bookshelves.",
+  "fg": "A pair of round wire-rimmed glasses resting on an open old notebook on a wooden desk. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "tilt"
+  ],
+  "cam": "orbit",
+  "src": "i_o23_anteojos",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ]
+ },
+ {
+  "at": "17.5",
+  "id": "g12_academia",
+  "kind": "graf",
+  "spec": "academia",
+  "w": 1.6
+ },
+ {
+  "at": "18",
+  "id": "p25_mujeres",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican woman of about 25 in 1975 in a white lab coat working proudly at a microscope in a modern laboratory. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "she looks up from the microscope and smiles",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "18",
+  "id": "p26_graduada",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Mexican woman of about 23 in a graduation gown and cap holding a diploma, smiling, in a sunny university courtyard in 1990. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "she lifts the diploma a little",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "19.0",
+  "id": "o24_raiz2",
+  "kind": "depth2",
+  "bg": "No person. A craftsman's workbench at night.",
+  "fg": "A knobby brown yam root next to a small glass flask with white powder and a pair of round glasses. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "glint"
+  ],
+  "cam": "push",
+  "src": "i_o24_raiz2",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p94"
+   ],
+   [
+    1,
+    "p94"
+   ]
+  ]
+ },
+ {
+  "at": "19.1",
+  "id": "p27_horizonte",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican woman of about 25 in 1968 stands on a hill above Mexico City at sunset, the wind in her hair, looking at the horizon with a calm smile. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "her hair moves softly in the wind",
+  "w": 1.0,
+  "pres": true
+ },
+ {
+  "at": "19.2",
+  "id": "t03_tallador_final",
+  "kind": "clip",
+  "img": "Two real old human craftsman hands with wrinkles and a few small cuts, wearing a worn leather apron, giving the last touch with fine sandpaper to a small finished carved wooden figure of a young chemist with round glasses and a white lab coat, in a warm workshop.",
+  "motion": "the hands turn the figure slightly to look at it",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "19.3",
+  "id": "d14_estatua",
+  "kind": "depth",
+  "img": "No person. In a craftsman's workshop, a small finished carved wooden figure of a young chemist with round glasses and a white lab coat stands on a small stone pedestal like a monument, a beam of warm light falling on it, dust in the air.",
+  "w": 1.0,
+  "fx": [
+   "rays",
+   "dust"
+  ],
+  "cam": "dolly",
+  "focus": 0.5
+ },
+ {
+  "at": "20",
+  "id": "t04_tallador_repisa",
+  "kind": "clip",
+  "img": "Two real old human craftsman hands with wrinkles and a few small cuts, wearing a worn leather apron, placing the small carved figure of the young chemist with round glasses on a shelf next to other carved figures of inventors, in a warm workshop.",
+  "motion": "the hands set the figure down and pull away",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "21.0",
+  "id": "o25_agote",
+  "kind": "depth2",
+  "bg": "No person. A 1914 hospital room with tall windows and iron beds.",
+  "fg": "A glass bottle of dark red blood with a rubber tube on an old metal hospital tray. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [],
+  "cam": "rise",
+  "src": "i_o25_agote",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ]
+ },
+ {
+  "at": "4.0",
+  "id": "o26_herramientas",
+  "kind": "depth2",
+  "bg": "No person. A craftsman's workshop with a big window, tools hanging on a pegboard, warm afternoon light, wood dust in the air.",
+  "fg": "A worn leather tool roll unrolled on a workbench showing a row of old steel wood-carving gouges and chisels with wooden handles. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "bokeh"
+  ],
+  "cam": "truck",
+  "src": "i_o26_herramientas",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ]
+ },
+ {
+  "at": "7.1",
+  "id": "o27_boleto",
+  "kind": "depth2",
+  "bg": "No person. A small 1944 country bus stop in a tropical Mexican town with a wooden bench and banana trees, bright sun.",
+  "fg": "A worn leather briefcase and a small paper bus ticket lying on a weathered wooden bench. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [],
+  "cam": "push",
+  "src": "i_o27_boleto",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
+   ],
+   [
+    1,
+    "p14"
+   ]
+  ]
+ },
+ {
+  "at": "7.3",
+  "id": "o28_rodaja",
+  "kind": "depth2",
+  "bg": "No person. Inside a village hut with palm-leaf walls and a rough table, soft daylight.",
+  "fg": "A thin pale slice of a brown root lying under a brass magnifying glass on a rough wooden table, the magnified fibres visible through the lens. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "bokeh"
+  ],
+  "cam": "dolly",
+  "src": "i_o28_rodaja",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ]
+ },
+ {
+  "at": "9.0",
+  "id": "d15_tepic",
+  "kind": "depth2",
+  "img": "No person. A quiet colonial street in Tepic, Nayarit, in 1935: pastel houses with iron balconies, a cathedral with two white towers at the end, cobblestones, a donkey cart parked. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [],
+  "cam": "push",
+  "focus": 0.5,
+  "focal": [
+   0.5,
+   0.45
+  ],
+  "behind": {
+   "t": "TEPIC",
+   "size": 150,
+   "xy": [
+    0.5,
+    0.4
+   ],
+   "td": 0.2,
+   "tracking": 0.12,
+   "sub": "NAYARIT · 1925",
+   "subxy": [
+    0.5,
+    0.52
+   ],
+   "subsize": 40,
+   "in": 0.1
+  },
+  "focus_keys": [
+   [
+    0,
+    0.45
+   ],
+   [
+    1,
+    0.45
+   ]
+  ],
+  "strength": 10
+ },
+ {
+  "at": "9.2",
+  "id": "d16_unam",
+  "kind": "depth",
+  "img": "No person. The stone facade of an old 1940s Mexico City school of chemistry with tall windows and a wide entrance staircase, jacaranda trees with purple flowers, a vintage car parked. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [],
+  "cam": "truck",
+  "focus": 0.5
+ },
+ {
+  "at": "9.5",
+  "id": "o29_tiza",
+  "kind": "depth2",
+  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. A blackboard full of chalk molecule drawings on the far wall.",
+  "fg": "Pieces of white chalk and a felt eraser covered in chalk dust on the wooden ledge of a blackboard. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "tilt"
+  ],
+  "cam": "orbit",
+  "src": "i_o29_tiza",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ]
+ },
+ {
+  "at": "10.3",
+  "id": "o30_gota",
+  "kind": "depth2",
+  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. Dark, warm lamp far away.",
+  "fg": "Extreme close view of the tip of a glass dropper with one clear round drop hanging from it, about to fall. Behind it only a plain flat black wall, nothing else.",
+  "focus": "fg2bg",
+  "w": 1.0,
+  "fx": [
+   "glint"
+  ],
+  "cam": "push",
+  "src": "i_o30_gota",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p94"
+   ],
+   [
+    1,
+    "p94"
+   ]
+  ]
+ },
+ {
+  "at": "14.5",
+  "id": "p28_mujer_hoy",
+  "kind": "clip",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Mexican woman of about 28 today, in a bright modern apartment kitchen in the morning, smiling as she looks at her calendar on the fridge, a coffee cup in her hand. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "she lifts the cup slightly and smiles",
+  "w": 1.0,
+  "pres": false
+ },
+ {
+  "at": "15.2",
+  "id": "d17_trafico",
+  "kind": "depth",
+  "img": "No person. A wide avenue of Mexico City in 1975 jammed with old cars and buses, grey smog in the air, billboards without text, tall buildings in the haze. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [
+   "steam"
+  ],
+  "cam": "truck",
+  "focus": 0.5
+ },
+ {
+  "at": "17.5",
+  "id": "o31_libro",
+  "kind": "depth2",
+  "bg": "No person. A grand old library hall with tall wooden shelves and a reading lamp.",
+  "fg": "An open thick old science book on a lectern with a ribbon bookmark in the green, white and red colours of Mexico. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [],
+  "cam": "rise",
+  "src": "i_o31_libro",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ]
+ },
+ {
+  "at": "19.0",
+  "id": "s03_nino2",
+  "kind": "still",
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A curious Mexican boy of 10 in 1935 with round wire-rimmed glasses holds a small glass flask up to the sunlight on a stone step of a colonial street, amazed. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "move": "push"
+ },
+ {
+  "at": "19.0",
+  "id": "o32_matraz2",
+  "kind": "depth2",
+  "bg": "No person. A 1951 Mexico City chemistry laboratory built as a handmade miniature stop-motion set: white tiled walls, long dark wooden benches, glass flasks, distillation columns, brass clamps, a tall window. At night, a lamp.",
+  "fg": "A small glass flask with white powder at the bottom standing next to an open notebook on a dark bench. Behind it only a plain flat black wall, nothing else.",
+  "focus": "bg2fg",
+  "w": 1.0,
+  "fx": [
+   "bokeh"
+  ],
+  "cam": "truck",
+  "src": "i_o32_matraz2",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ]
+ },
+ {
+  "at": "21.0",
+  "id": "d18_buenosaires",
+  "kind": "depth",
+  "img": "No person. A street of Buenos Aires in 1914 with ornate stone buildings, a horse-drawn tram, gas lamps, a grey morning sky. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "w": 1.0,
+  "fx": [
+   "title:PRÓXIMO|LUIS AGOTE · BUENOS AIRES, 1914"
+  ],
+  "cam": "dolly",
+  "focus": 0.5
+ }
+]

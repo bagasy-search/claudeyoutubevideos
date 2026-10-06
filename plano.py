@@ -124,7 +124,12 @@ def r_multi():
     if P is not None: P[:, 2] **= 0.7
     a_ = fg[..., 3]; ys, xs = np.nonzero(a_ > 0.5)
     box = (xs.min(), ys.min(), xs.max(), ys.max()) if len(xs) else (0, 0, fg.shape[1], fg.shape[0])
-    p = writer(); mode = sh.get("focus", "fg2bg")
+    p = writer(); mode = sh.get("focus", "fg2bg"); move = sh.get("move", "rack")
+    BEH = sh.get("behind")
+    if BEH is not None:
+        import comp
+        TB = comp.text_rgba(int(W * 1.12), int(H * 1.12), BEH["t"], BEH.get("font", "AN"), BEH.get("size", 320), tuple(BEH.get("xy", (0.5, 0.42))),
+                            tuple(BEH.get("color", (245, 238, 225))), BEH.get("tracking", 0.06))
     hw_font = ImageFont.truetype(F_HAND, int(54 * S)) if "handwriting" in fx else None
     for i in range(N):
         t = i / FPS; u = ease(t / DUR)
@@ -132,7 +137,12 @@ def r_multi():
         if mode == "fg2bg": sF, sB = 14 * f, 11 * (1 - f) + 1
         elif mode == "bg2fg": sF, sB = 14 * (1 - f), 1 + 10 * f
         else: sF, sB = 0, 10
-        B = xform(bg, 1.03 + 0.02 * u, dx=30 - 60 * u)
+        if move in ("tilt", "sweep", "float"): sF, sB = 0, 9                  # objeto nítido todo el plano
+        if move == "snap":                                                    # entra con zoom rápido y todo borroso, y asienta nítido
+            k = ramp(t, 0.0, 0.45); sF, sB = 10 * (1 - k), 9 + 4 * (1 - k)
+        zsnap = 1 + 0.22 * (1 - ease(ramp(t, 0.0, 0.45))) if move == "snap" else 1
+        if move == "float": B = xform(bg, 1.03 + 0.06 * u, dx=0, dy=20 - 40 * u)
+        else: B = xform(bg, (1.03 + 0.02 * u) * zsnap, dx=30 - 60 * u)
         fsc = sh.get("fgscale", 1.0); fdx, fdy = sh.get("fgpos", (0, 0))
         Fg = xform(fg, fsc * (1.0 + 0.05 * u), dx=-90 * u + 30 + fdx, dy=fdy)
         # escritura a mano sobre la página del cuaderno (aparece letra por letra)
@@ -150,9 +160,23 @@ def r_multi():
         Bblur = blur(B, sB)
         amt = ease(min(max((sB - 1.5) / 7.0, 0.0), 1.0))          # el bokeh entra GRADUAL con el desenfoque (antes: de golpe en sB>2 y salto de radio en sB>4)
         Bb = Bblur + (bokeh(Bblur, 12 + 2.2 * sB, thresh=0.70) - Bblur) * amt if amt > 0 else Bblur
+        if BEH is not None:                                           # texto ENTRE el fondo y el objeto: va sobre el fondo, debajo del objeto
+            ab = ramp(t, DUR * BEH.get("in", 0.1), DUR * BEH.get("in", 0.1) + 0.8)
+            Tm = xform(TB, 1.0 + 0.03 * u, dx=30 - 60 * u * 0.6, dy=(1 - ab) * 30)
+            Tm = dof_rgba(Tm, sB * 0.55)
+            Tm[..., 3] *= ab
+            Bb = over(Bb, Tm)
         if "lampon" in fx: Bb = Bb * (0.25 + 0.75 * ramp(t, 0.5, 1.4))
         if "fade_light" in fx: Bb = Bb * (1 - 0.55 * ramp(t, DUR * 0.4, DUR))
+        if move == "snap": Fg = xform(Fg, zsnap ** 1.4)
+        if move == "float": Fg = xform(fg, fsc * (1.0 + 0.10 * u), dx=fdx, dy=fdy + 25 - 50 * u)
         img = over(Bb, dof_rgba(Fg, sF))
+        if move == "sweep":                                                   # barrido de luz especular sobre el objeto
+            x0 = (u * 1.7 - 0.35) * W
+            band = np.exp(-((np.arange(W)[None, :] - x0 - (np.arange(H)[:, None] - H / 2) * 0.45) / (70 * S)) ** 2)
+            img = img + (band * Fg[..., 3] * 0.55)[..., None] * np.array([1.0, 0.95, 0.85])
+        if move == "tilt":
+            import comp; img = comp.tilt_shift(img, center=0.58)
         if "lampon" in fx: img = img * (0.3 + 0.7 * ramp(t, 0.5, 1.4))
         if "fade_light" in fx: img = img * (1 - 0.35 * ramp(t, DUR * 0.4, DUR))
         if "glint" in fx:
@@ -261,5 +285,10 @@ if __name__ == "__main__":
     if k == "graf":
         import graf; graf.render(sh, DUR, OUT, PREV)
     else:
-        {"clip": r_clip, "still": r_still, "multi": r_multi, "depth": r_depth, "arch": r_arch, "open": r_open}[k]()
+        if k in ("depth2", "corridor", "timelapse"):
+            import comp; p = writer()
+            {"depth2": comp.r_depth2, "corridor": comp.r_corridor, "timelapse": comp.r_timelapse}[k](sh, sid, DUR, lambda im: put(p, im))
+            p.stdin.close(); p.wait()
+        else:
+            {"clip": r_clip, "still": r_still, "multi": r_multi, "depth": r_depth, "arch": r_arch, "open": r_open}[k]()
     print("ok", sid, k, N, "cuadros")
