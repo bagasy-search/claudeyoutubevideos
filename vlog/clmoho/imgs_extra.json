@@ -1,0 +1,7 @@
+[
+ {"name": "b_molddirty", "prompt": "Close view of the lower corner of a tiled hotel shower: beige-cream wall tiles with gray grout lines and a white silicone caulk line along the bottom where the tiles meet the white shower tray, heavily covered in black mold spots and speckles along the caulk and creeping up the grout, damp, lit by the bathroom ceiling light. Framed so the caulk line crosses the frame in the lower third."},
+ {"name": "b_shower", "prompt": "A hotel guest shower seen from the bathroom at eye level: beige-cream ceramic wall tiles, gray grout, a white shower tray, a chrome shower head and a folded white towel on a chrome bar, warm ceiling light. Nobody in the room."},
+ {"name": "b_showerwide", "prompt": "A small hotel bathroom seen from the doorway: a tiled shower on the left with a white plastic shower curtain half open, a white ceiling above, a folded white towel on a chrome bar on the right wall, a mirror and sink, warm ceiling light. Nobody in the room. The ceiling, the curtain and the towel all clearly visible."},
+ {"name": "b_grouttile", "prompt": "A flat straight-on view of a hotel shower wall of beige-cream square ceramic tiles with gray grout lines, filling the whole frame, evenly lit, a few very faint gray dots in some grout lines. Nobody in the room."},
+ {"name": "b_counter", "prompt": "A white marble-look hotel bathroom counter at eye level: a white sink with a chrome faucet, folded white hand towels, beige-cream wall tiles behind. Lots of empty counter space in the foreground. Nobody in the room."}
+]

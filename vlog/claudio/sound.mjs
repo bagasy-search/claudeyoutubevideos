@@ -85,6 +85,17 @@ function compFx(n, c, durS) {
   if (n === "ClFilterFind") { const k = (P.items || []).length || 5, per = Math.max(0.35, durS * 0.7 / k); for (let i = 0; i < k; i++) add(i === k - 1 ? "design/impact_drum_subtle.flac" : "foley/drip_sink.flac", i === k - 1 ? 0.4 : 0.3, 0.3 + i * per + 0.3, 1); add("design/pop_soap_bubble.flac", 0.3, 0.3 + (k - 1) * per + 0.45, 0.6); }
   if (n === "ClDoseCap") { add("foley/water_pour_short.flac", 0.36, 0.3, Math.min(2, durS * 0.3)); add("foley/water_pour_stream.flac", 0.34, durS * 0.45, Math.min(2, durS * 0.3)); add("design/impact_echo.flac", 0.26, durS * 0.62, 1.2); }
   if (n === "ClSmellTest") { const k = (P.spots || []).length || 3, per = Math.max(0.35, durS * 0.55 / k); for (let i = 0; i < k; i++) add("design/tick_single.flac", 0.3, 0.3 + i * per, 0.5); add("design/stamp_rubber.flac", 0.38, 0.3 + k * per + 0.15, 0.8); }
+  if (n === "ClPores3D") {
+    if (P.mode === "roots") add("design/texture_suspense.flac", 0.22, 0.2, durS - 0.3);
+    if (P.mode === "bleach") { add("foley/spray_trigger_b.flac", 0.4, 0.3, 1); add("design/impact_heartbeat.flac", 0.42, durS * 0.75, 2.2); }
+    if (P.mode === "peroxide") { add("foley/spray_trigger_c.flac", 0.4, 0.2, 1); add("foley/fizz_hydrophone.flac", 0.4, durS * 0.3, durS * 0.6); }
+    if (P.mode === "spores") { add("foley/scrub_floor.flac", 0.4, 0.3, Math.min(3, durS - 0.4)); add("design/swell_suspense.flac", 0.24, durS * 0.3, durS * 0.6); }
+  }
+  if (n === "ClSwab") { add("design/paper_slide.flac", 0.3, 0.1, 0.8); add("foley/fizz_gentle.flac", 0.38, 0.9, durS * 0.5); add("design/impact_echo.flac", 0.22, durS * 0.55, 1.2); }
+  if (n === "ClSpores") { add("foley/scrub_floor.flac", 0.36, 0.1, 1.6); add("design/swell_suspense.flac", 0.28, 0.4, durS - 0.6); add("design/stamp_rubber.flac", 0.34, durS * 0.5, 0.8); }
+  if (n === "ClFlashlight") { add("foley/light_pull_switch.flac", 0.42, 0.15, 0.8); add("design/whoosh_slow_sweep.flac", 0.24, 0.5, durS - 0.8); }
+  if (n === "ClWallLeak") { add("foley/drip_sink.flac", 0.36, 0.3, durS - 0.4); add("design/impact_heartbeat.flac", 0.36, durS * 0.6, 2); }
+  if (n === "ClHygrometer") { add("design/tick_clock_close.flac", 0.24, 0.2, durS * 0.5); add("foley/cabinet_door_slide.flac", 0.3, durS * 0.55, 1.2); }
   if (n === "ClTimer30") { add("design/tick_clock_close.flac", 0.26, 0.1, Math.max(0.6, durS - 0.9)); add(P.overnight ? "design/ding_oven.flac" : "design/ding_oven.flac", 0.4, Math.max(0.5, durS - (P.fast ? 0.2 : 0.65)), 1.6); }
   if (n === "ClNeverMix") { if (P.chart) add("design/page_turn_big.flac", 0.34, 0.1, 1); else if (P.soft) { add("design/pop_soap_bubble.flac", 0.34, durS * 0.4, 0.7); add("design/stamp_rubber.flac", 0.38, durS * 0.42, 0.8); } else { add("design/alarm_warning_buzzer.flac", P.short ? 0.12 : 0.18, durS * 0.38, 0.9); add("design/stamp_es.flac", 0.45, durS * 0.42, 1); } }
   if (n === "ClBookPage") { add("design/page_turn_big.flac", 0.34, 0.05, 1); add("design/stamp_rubber.flac", 0.42, 0.95, 0.9); }

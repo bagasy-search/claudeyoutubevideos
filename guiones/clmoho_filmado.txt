@@ -1,0 +1,67 @@
+[HOOK|blanco] ¿Ve cómo se pone blanco? Parece que lo mató. No lo mató.
+[HOOK|semana] En una semana vuelve, en el mismo lugar. Usted no lo limpió. Lo pintó.
+[HOOK|promesa] Hoy se lo saco de verdad. El frasco marrón, puro, diez minutos, un cepillo y una toalla seca. Así estaba. Así quedó.
+[HOOK|hotel] Treinta años fui conserje en un hotel. Y el techo de las duchas del personal lo pintamos con cloro tres veces en un año. Las tres veces volvió.
+[HOOK|rafaga] Mire. Agua sola primero. Rocío puro, hasta empapar. Diez minutos sin tocar. Cepillo en las juntas. Enjuague. Y la parte que nadie hace: secar...
+[HOOK|grito] ¡y mire eso! ¡Blanco, pero blanco de verdad!
+[HOOK|loops] Pero hay tres cosas que tiene que saber. Por qué el cloro le miente. El error que le desparrama el moho por todo el baño. Y lo que encontramos detrás de un azulejo de la habitación doscientos veinte, que explicó por qué ese moho no se iba con nada. Primero, el arreglo entero.
+[FIX|cadena] Si vio mi primer video, el del borde del inodoro, ya conoce esta mentira. El cloro le saca el color a la mugre y la deja viva. Con el moho de la ducha pasa exactamente lo mismo, y peor.
+[FIX|lista] Lo que necesita: el frasco marrón de agua oxigenada al tres por ciento, con el rociador enroscado directo en la botella. Un cepillo de juntas o un cepillo de dientes viejo. Una toalla seca o un secador de goma. Guantes, y la ventana abierta o el extractor prendido.
+[FIX|regla] Y una regla antes de empezar: si esta semana usó cloro en esa ducha, enjuague bien con agua sola y espere hasta mañana. Nunca cloro y agua oxigenada el mismo día.
+[FIX|agua] Primer paso: moje la zona con agua sola, con la ducha, y deje que escurra un minuto. Esto no es para limpiar. Es para que el moho no vuele. Ya le explico.
+[FIX|rocio] Segundo: rocíe el agua oxigenada pura, sin agua, directo del frasco, sobre las juntas y la silicona con manchas. Hasta que queden empapadas, brillando, que gotee un poquito.
+[FIX|espera] Tercero: espere diez minutos. Quince si está muy negro. Y no lo toque. Ése es el error de todos: rocían y frotan enseguida. El agua oxigenada trabaja en esos minutos quietos. Va a ver burbujitas chiquitas en lo negro. Eso es el trabajo.
+[FIX|cepillo] Cuarto: el cepillo. Frote las juntas a lo largo, como si las peinara, y la silicona suave, sin rayarla. Va a ver que lo negro se suelta y se pone gris.
+[FIX|enjuague] Quinto: enjuague todo con agua sola, de arriba hacia abajo.
+[FIX|secar] Y sexto, el que nadie hace: seque. Con la toalla o el secador de goma, las paredes, las juntas, los rincones. El moho necesita agua para volver. Secar es la mitad del arreglo.
+[FIX|resumen] Repaso: agua sola, rocío puro hasta empapar, diez minutos sin tocar, cepillo, enjuague, y secar.
+[CTA1|libro] Éste es el arreglo número cuatro de mi libro, El Frasco Marrón de Claudio, en la página doce. Y esa página entera, con las cantidades y lo que hace si a la segunda vez sigue negro, se la regalo. Apunte el celular a este código, o toque el link de la descripción.
+[CLORO|intro] Ahora, ¿por qué el cloro le miente? Porque las juntas y la silicona no son lisas como el azulejo. Son porosas. Como una esponja vista de cerca.
+[CLORO|raices] El moho no es una mancha que está encima. Es una planta chiquita. Lo negro que usted ve son las puntas, pero tiene como raíces finitas metidas adentro de esos poros.
+[CLORO|blanquea] El cloro es muy bueno para blanquear lo que toca. Toca las puntas negras, y les saca el color. Pero casi todo el cloro se queda arriba, y se evapora. A las raíces de adentro no llega. Entonces la mancha queda blanca, y el moho sigue vivo, abajo, tranquilo.
+[CLORO|vuelve] A la semana, o a las dos, las raíces vuelven a sacar puntitas negras. En el mismo lugar exacto. Y usted le echa cloro otra vez. Y así años.
+[VESTUARIO|techo] Eso es lo que nos pasó con el techo de las duchas del personal. Cloro, se ponía blanco, todos contentos. A las tres semanas, negro otra vez. Lo pintamos encima, y en un mes el moho atravesó la pintura. Tres veces en un año.
+[VESTUARIO|cuarta] La cuarta vez lo hice distinto. Moje primero, agua oxigenada pura, diez minutos, trapo, y secar. Y arreglamos el extractor, que estaba tapado de pelusa y no tiraba nada. Ese techo no volvió a ponerse negro mientras yo trabajé ahí. Ocho años.
+[CLORO|agua] El agua oxigenada hace otra cosa. Es líquida como el agua, se mete en el poro, y ahí adentro hace burbujas y rompe el moho. No sólo lo pinta. Por eso los que limpian de profesión casi dejaron de usar cloro para el moho de las juntas.
+[CLORO|honesto] Y le voy a ser honesto: el cloro no es malo. En el azulejo liso, que no tiene poros, funciona. El problema es la junta y la silicona, que es justo donde está el moho.
+[PRUEBA|hisopo] Y hay una prueba de treinta segundos para saber si lo que tiene está vivo o es sólo una mancha vieja. Moje un hisopo en agua oxigenada y apóyelo sobre lo negro. Si hace espumita, está vivo, y el arreglo lo va a sacar. Si no hace nada y la mancha sigue igual, es una mancha que quedó teñida en la junta, el moho ya está muerto, y eso se arregla distinto: con una lija fina o un marcador blanco para juntas.
+[ERROR|seco] Ahora el error que le prometí. El que le desparrama el moho por todo el baño: refregarlo en seco.
+[ERROR|esporas] El moho, cuando está seco y lo frota, larga un polvito finito al aire. No se ve. Son semillas. Y esas semillas caen en el techo, en la cortina, en la toalla, y cada una es una mancha nueva en un mes.
+[ERROR|hotel] En el hotel, un muchacho nuevo de limpieza agarró un cepillo seco y refregó el techo de una ducha con moho. Al mes, el techo de la habitación de al lado tenía manchas. Le juro.
+[ERROR|solucion] Por eso el primer paso es mojar con agua sola. Mojado, el moho no vuela. Y por eso nunca, jamás, un cepillo seco, ni la aspiradora, ni sacudir la cortina con moho dentro del baño.
+[CTA2|libro] El arreglo completo, con lo que hace si el moho está en el techo o en la cortina, está en la página doce de mi libro, y esa página se la regalo. El código está acá, o el link en la descripción.
+[TECHO|como] ¿Y el techo? Lo mismo, pero con cuidado de no rociarse la cara. Rocíe de costado, con los anteojos puestos o con antiparras, y la ventana abierta. Y en vez del cepillo, un trapo húmedo con un palo de escoba. Diez minutos, trapo, y secar.
+[CORTINA|como] ¿Y la cortina de plástico de la ducha? Ésa va al lavarropas, en agua tibia, con dos o tres toallas viejas para que la refrieguen. Y si tiene manchas negras abajo, antes, rocío y diez minutos. Si de verdad está muy negra, una cortina nueva sale menos que el tiempo que va a perder.
+[COLOR|lectura] Y el color le dice qué tiene. ¿Negro o verde oscuro, en puntitos? Es moho. ¿Rosado, babosito, en las esquinas de abajo? Es una bacteria, no un moho, y el mismo frasco marrón la saca. ¿Naranja, en la línea del agua? Puede ser óxido o sarro, y eso es otro arreglo, el del video del sarro.
+[LUGARES|intro] Y ya que tiene la botella en la mano, hay tres lugares del baño donde el moho se esconde y casi nadie mira. Los encontré en todas las habitaciones del hotel.
+[LUGARES|riel] Uno: el riel de arriba de la mampara, o la barra de la cortina. Junta agua, nunca se seca, y tiene una línea negra que gotea sobre usted cuando se baña.
+[LUGARES|frascos] Dos: abajo de los frascos de champú. Levante uno. ¿Ve ese anillo rosado o negro donde estaba apoyado? Ahí vive. Rocío, diez minutos, trapo. Y los frascos, mejor en un estante con agujeros, que escurran.
+[LUGARES|extractor] Y tres: la rejilla del extractor del techo. Si está gris de pelusa, el extractor no saca nada de humedad. Pruebe con una hoja de papel: si con el extractor prendido la hoja no se pega a la rejilla, no está tirando. Lávela, y si sigue sin tirar, ése es su problema de moho.
+[DOSVUELTAS|regla] Y si después de dos vueltas la silicona sigue negra, deje de rociar. El moho ya no está encima. Está debajo de la silicona, entre la silicona y el azulejo. Ahí no llega nada que se rocíe. Para eso hay un truco de una noche entera, que le voy a mostrar en un video que viene.
+[HABITACION|220] Y ahora lo de la habitación doscientos veinte, lo que le prometí. Esa ducha tenía moho en una sola esquina. Lo sacábamos, y a la semana volvía. Agua oxigenada, cepillo, secar, todo bien hecho. Y volvía igual. Durante meses.
+[HABITACION|azulejo] Un día apoyé la mano en ese azulejo, y estaba frío. Más frío que los demás. Y cuando lo golpeé con el mango del destornillador, sonó hueco.
+[HABITACION|caño] Llamamos al plomero, sacó dos azulejos, y atrás había un caño con una pérdida chiquita, de gota a gota, mojando la pared por dentro desde hacía años. El moho de la esquina era la punta de lo que había atrás.
+[HABITACION|leccion] Desde ese día, la regla es ésta: si usted hace todo bien, seca todos los días, y el moho vuelve siempre en el mismo lugar, el problema no es el moho. Es el agua. Algo moja esa pared desde adentro.
+[INSPECTOR|historia] Y le cuento otra, porque ésta me enseñó a mirar. Una vez vino un inspector de sanidad al hotel. No miró las camas, ni el baño entero. Agarró una linterna, la apoyó contra la pared de la ducha, de costado, y la luz rasante le mostró cada puntito de moho en las juntas, hasta los que no se veían. Desde ese día, yo reviso las duchas con la linterna de costado. Pruébelo esta noche en su baño.
+[HUMEDAD|ventana] Y una cosa más sobre el agua. Si sus ventanas amanecen mojadas por dentro en invierno, su casa tiene demasiada humedad, y el moho va a aparecer en el baño primero. Un medidor de humedad cuesta poco. Si marca más de sesenta por ciento, ventile más, abra un rato cada mañana, aunque haga frío.
+[PRO|cuando] Y le digo cuándo llamar a un profesional, porque esto es importante. Si la mancha es más grande que un metro cuadrado, más o menos como una puerta acostada a la mitad. Si está en la pared de yeso, no en el azulejo. Si la pared está blanda, hinchada o huele a humedad aunque esté seca. O si alguien en la casa tiene asma o se enferma seguido. Ahí no es un trabajo para el frasco marrón.
+[ERRORES|intro] Ahora, los errores que vi con el moho de la ducha. Cada uno lo trae de vuelta.
+[ERRORES|diluir] Uno: rebajar el agua oxigenada con agua. Ya viene suave, al tres por ciento. Si la rebaja, no le hace nada. Pura, directo del frasco.
+[ERRORES|botella] Dos: pasarla a un rociador transparente y dejarla en la ventana. La luz la cansa en semanas. Por eso viene en botella marrón. Enrosque el rociador directo en el frasco marrón.
+[ERRORES|mezcla] Tres: mezclarla con vinagre en la misma botella para que sea más fuerte. Ahí se hace un ácido agresivo que le lastima la piel y los ojos. Nunca juntos. Y nunca, jamás, cloro con vinagre.
+[ERRORES|bicarbonato] Cuatro: bicarbonato con vinagre, la espuma famosa. Se anulan entre ellos, y le queda agua con sal. Mucha espuma, ningún trabajo.
+[ERRORES|pintar] Y cinco: pintar arriba del moho. Con pintura común, en un mes atraviesa la pintura. Primero se saca, se seca bien, y recién ahí se pinta.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|olor] ¿Tiene olor fuerte? No. Casi no huele, nada que ver con el cloro.
+[QA|junta] ¿Me blanquea las juntas de color? Puede aclarar un poco las juntas de color oscuro. Pruebe en un rincón que no se vea.
+[QA|cuanto] ¿Cada cuánto? Una vez por semana un rocío en los rincones, sin frotar. Y el arreglo entero, sólo cuando aparece negro.
+[QA|tea] ¿Y el aceite de árbol de té, que dicen que sirve? Algo hace, pero es caro y huele fuerte. El frasco marrón le cuesta un dólar.
+[QA|vinagre] ¿Y el vinagre solo? Sirve para el moho también, pero otro día, nunca el mismo día que el agua oxigenada. Uno o el otro.
+[QA|placard] ¿Y el moho en el placard, en la ropa o en los zapatos? Mismo principio: es humedad. Saque todo, rocíe las paredes del placard, diez minutos, trapo, y deje la puerta abierta un día. La ropa, a lavar, y al sol.
+[RESET|habito] Y para que no vuelva nunca, los tres hábitos del hotel. El secador de goma por las paredes después de cada ducha, treinta segundos. El extractor prendido veinte minutos después de bañarse, o la ventana abierta. Y la toalla y la alfombrita, a secar afuera del baño.
+[RESET|alfombra] Y uno que nadie piensa: la alfombrita del baño. Si queda mojada en el piso, abajo crece moho, y el piso de abajo también. Cuélguela después de bañarse, y lávela cada semana con las toallas.
+[RECAP|todo] Así que, todo en treinta segundos. Guantes y ventana. Agua sola primero, para que no vuele. Agua oxigenada pura, hasta empapar. Diez minutos sin tocar. Cepillo a lo largo de las juntas. Enjuague y secar. Si a las dos vueltas sigue negra la silicona, está debajo. Y si vuelve siempre en el mismo lugar, busque el agua.
+[CTA3|libro] La página doce entera es suya, gratis. El código está acá, y el link en la descripción. Y si quiere los noventa y cuatro arreglos de la casa, con la tabla de lo que nunca se mezcla, el libro está en esa misma página.
+[NEXT|bandeja] Y en el próximo video salimos del baño y vamos a la cocina del hotel. A las bandejas del horno con esa costra marrón que no sale con nada. En el hotel las tirábamos. Hasta que un cocinero me enseñó una pasta que cambió todo.
+[CLOSE|pregunta] Y ahora cuénteme usted. ¿Dónde le vuelve el moho en su casa, siempre en el mismo lugar? Escríbamelo en los comentarios. Leo todos.
+[CLOSE|chau] Moje primero. Y después, seque. Nos vemos.

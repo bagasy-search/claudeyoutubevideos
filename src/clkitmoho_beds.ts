@@ -1,0 +1,1 @@
+export const BEDS: string[] = ["broll/clmoho_st/bd_bathroomcleaning4.mp4#270", "broll/clmoho_st/bd_bathroomdoor40.mp4#270", "broll/clmoho_st/bd_bathroomfloor33.mp4#270", "broll/clmoho_st/bd_bathroomgrout2.mp4#270", "broll/clmoho_st/bd_bathroomlight45.mp4#270", "broll/clmoho_st/bd_bathroomrenovati28.mp4#203"];
