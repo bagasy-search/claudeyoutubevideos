@@ -68,9 +68,9 @@ export const RhBowlSection3D: React.FC<{ mode?: Mode; labels?: Labels }> = ({ mo
   const a = interpolate(f, [0, T], [-0.42, 0.12], { easing: Easing.inOut(Easing.cubic) });
   const dist = interpolate(f, [0, T], [6.4, 5.3], { easing: Easing.out(Easing.cubic) });
   const target = new THREE.Vector3(mode === "glaze" ? 0 : 0, 0.1, 0.4);
-  const camPos = new THREE.Vector3(Math.sin(a) * dist, 1.6, Math.cos(a) * dist);
+  const camPos = new THREE.Vector3(Math.sin(a) * dist, mode === "glaze" ? 3.4 : 1.6, Math.cos(a) * dist);
   const mats = useMemo(() => ({
-    body: new THREE.MeshStandardMaterial({ color: "#C9B9A4", roughness: 0.95 }),
+    body: new THREE.MeshStandardMaterial({ color: "#B59C7E", roughness: 0.95 }),
     glaze: new THREE.MeshStandardMaterial({ color: "#FFFFFF", roughness: 0.04, metalness: 0.05, emissive: "#F3F1EC", emissiveIntensity: 0.2 }),
     crust: new THREE.MeshStandardMaterial({ color: "#E4DCCB", roughness: 1 }),
     crust2: new THREE.MeshStandardMaterial({ color: "#CFC3AA", roughness: 1 }),
@@ -107,7 +107,7 @@ export const RhBowlSection3D: React.FC<{ mode?: Mode; labels?: Labels }> = ({ mo
   if (mode === "paste") for (let i = 0; i < 46; i++) { const ph = (f * 0.03 + rnd(i * 7)) % 1, on = clamp01((u - 0.2) / 0.15) * (1 - clamp01((u - 0.9) / 0.1)); if (on > 0) parts.push({ p: new THREE.Vector3((rnd(i * 3) - 0.5) * W * 0.9, WL + (rnd(i * 5) - 0.5) * 0.2 + ph * 0.35, front + 0.22 + ph * 0.1), s: on * (0.5 + rnd(i) * 0.7) * (1 - ph * 0.4), m: mats.bubble }); }
   if (mode === "dry" && stoneX < W / 2) for (let i = 0; i < 18; i++) { const ph = (f * 0.09 + rnd(i * 9)) % 1; parts.push({ p: new THREE.Vector3(stoneX + 0.25 + ph * (0.5 + rnd(i) * 0.6), WL - 0.15 + ph * (rnd(i * 3) * 0.9), front + 0.1 + ph * 0.4), s: 1 - ph, m: mats.spark }); }
   if (mode === "pumice" && stoneX < W / 2) for (let i = 0; i < 14; i++) { const ph = (f * 0.05 + rnd(i * 9)) % 1; parts.push({ p: new THREE.Vector3(stoneX - 0.2 - rnd(i) * 0.3, WL + 0.1 - ph * 0.7, front + 0.12), s: (1 - ph) * 0.8, m: mats.water }); }
-  const slices = mode === "glaze" ? [{ x: -1.9, g: 0.16 }, { x: 1.9, g: 0.04 }] : [{ x: 0, g: 0.09 }];
+  const slices = mode === "glaze" ? [{ x: -1.75, g: 0.34 }, { x: 1.75, g: 0.05 }] : [{ x: 0, g: 0.09 }];
   return (
     <AbsoluteFill style={{ ...tileBg(200, 100), overflow: "hidden" }}>
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 20% 25%, rgba(255,250,235,0.9), rgba(255,255,255,0.12) 55%, rgba(30,42,54,0.10) 100%)" }} />

@@ -49,7 +49,7 @@ export const RhPasteMix: React.FC<{ bed?: string }> = ({ bed }) => {
           <Tape x={230} y={-30} rot={-3} w={170} />
           {[0, 1, 2, 3].map((i) => (
             <div key={i} style={{ display: "flex", alignItems: "center", gap: 18, opacity: 0.25 + 0.75 * drops[i], fontFamily: HAND, fontWeight: 700, fontSize: 56, color: i < 3 ? RH.ink : RH.blueDeep, lineHeight: 1.15 }}>
-              <span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: RH.yellow, background: RH.ink, borderRadius: 8, padding: "0 12px" }}>{i < 3 ? "3" : "1"}</span>{lab(i)}
+              <span style={{ width: 22, height: 22, borderRadius: "50%", background: i < 3 ? "#FFFFFF" : "#CFE7F7", border: `4px solid ${RH.ink}` }} />{lab(i)}
             </div>
           ))}
           <div style={{ marginTop: 14, fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: RH.ink, opacity: lin(f, T * 0.7, T * 0.8) }}>= like toothpaste</div>
@@ -167,7 +167,7 @@ export const RhRingColors: React.FC<{ pick?: number; bed?: string }> = ({ pick =
       {bed ? <Bed src={bed} seed={61} dim={0.3} /> : <Wall />}
       {/* tapa del tanque de porcelana en perspectiva */}
       <div style={{ position: "absolute", left: 160, right: 160, bottom: 60, height: 300, borderRadius: 40, background: "linear-gradient(180deg,#FFFFFF,#E9E6E0)", transform: "perspective(1000px) rotateX(48deg)", transformOrigin: "50% 100%", boxShadow: "0 30px 40px rgba(30,42,54,0.25)" }} />
-      <div style={{ position: "absolute", left: pick >= 0 ? 360 : 960, top: 840, transition: "none" }}>
+      <div style={{ position: "absolute", left: pick >= 0 ? 360 : 960, top: 900 }}>
         {RINGS.map((r, i) => {
           const isSel = i === pick, ang = (i - 2) * 14 * open;
           const lift = isSel ? sel : 0;
@@ -190,7 +190,7 @@ export const RhRingColors: React.FC<{ pick?: number; bed?: string }> = ({ pick =
           </Card>
         </div>
       ) : (
-        <div style={{ position: "absolute", left: "50%", top: 130, translate: "-50% 0", opacity: lin(f, 10, 22), fontFamily: SERIF, fontWeight: 900, fontSize: 84, color: RH.ink, background: "rgba(255,255,255,0.85)", padding: "8px 40px", borderRadius: 14 }}>Which ring is yours?</div>
+        <div style={{ position: "absolute", left: "50%", top: 60, translate: "-50% 0", opacity: lin(f, 10, 22), fontFamily: SERIF, fontWeight: 900, fontSize: 84, color: RH.ink, background: "rgba(255,255,255,0.85)", padding: "8px 40px", borderRadius: 14 }}>Which ring is yours?</div>
       )}
     </AbsoluteFill>
   );

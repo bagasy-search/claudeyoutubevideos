@@ -14,7 +14,7 @@ export const KIT: [React.FC<any>, any][] = [
   [RhBowlSection3D, { mode: "pumice", labels: { stone: "Wet stone", crust: "The rock" } }],
   [RhBowlSection3D, { mode: "dry", labels: { glaze: "Glaze: scratched", stone: "Dry stone" } }],
   [RhBowlSection3D, { mode: "glaze", labels: {} }],
-  [RhPasteMix, { bed: B("bd_showerclean") }],
+  [RhPasteMix, {}],
   [RhWaterLevel, { img: I("b_bathwide") }],
   [RhPumiceWetDry, {}],
   [RhHardWater, { imgs: [I("b_hwfaucet"), I("b_hwglass"), I("b_hwkettle")], labels: ["crusty faucet", "spotty glasses", "kettle scale"] }],
