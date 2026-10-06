@@ -12,7 +12,7 @@ export const SHOTS = [
   C(0, "It's rock", "RhWipeReveal", { before: I("b_ringbefore"), after: I("b_ringafter"), lb: "Before", la: "After" }),
   S(0, "", "bi", "b_ringbefore", { p: BI(`Looking straight down into ${RING}.`), skip: true }),
   S(0, "", "bi", "b_ringafter", { p: BI("Looking straight down into exactly the same white toilet bowl, the water lowered, the porcelain completely clean and bright white at the old water line, no ring at all."), skip: true }),
-  C(0, "with bacteria living on top", "RhBowlSection3D", { mode: "layers", labels: { crust: "Rock", film: "Bacteria" } }),
+  C(0, "with bacteria living on top", "RhBowlSection3D", { mode: "layers", labels: { crust: "Rock", film: "Bacteria" } }, { ov: { c: "RhPromise", dur: 9.3, props: { img: I("b_ringafter"), items: ["3 tbsp baking soda", "+ 1 tbsp peroxide", "20 minutes, wet stone", "Gone. No scratch."] } } }),
   S(0, "on top of it", "bi", "b_filmmacro", { p: BI("Extreme macro view of a slimy brown film glistening on top of a rough chalky mineral crust on white porcelain."), anim: "the slimy film glistens as the light moves; nothing else moves" }),
   // ── por qué el cepillo no lo saca
   S(1, "", "kf", "k_brushslide", { p: BI(`Close view of a toilet brush in a yellow-gloved hand scrubbing back and forth over a brown ring at the water line of a white toilet bowl, the ring staying exactly the same.`), d1: "the toilet brush scrubs over the brown ring", d2: "the brush lifts away and the ring is still there", sound: "a toilet brush scrubbing" }),
