@@ -7,7 +7,7 @@
 //   "crack"  la puerta queda entreabierta: entra aire (flechas), el agua del pliegue se evapora
 // Rótulos: labels.{fold,water,drum,door}.
 import React, { useMemo } from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig, Easing } from "remotion";
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
@@ -26,8 +26,8 @@ export const RhGasketFold3D: React.FC<{ mode?: Mode; labels?: Labels }> = ({ mod
   const f = useCurrentFrame();
   const { width, height, durationInFrames: T } = useVideoConfig();
   const t0 = 8, t1 = Math.max(t0 + 10, T * 0.78), u = clamp01((f - t0) / (t1 - t0)), ue = ease(u);
-  const a = interpolate(f, [0, T], [-0.25, 0.12], { easing: Easing.inOut(Easing.cubic) });
-  const dist = interpolate(f, [0, T], [5.2, 4.2], { easing: Easing.out(Easing.cubic) });
+  const a = interpolate(f, [0, T], [-0.25, 0.12]);
+  const dist = interpolate(f, [0, T], [5.2, 4.2]);
   const target = new THREE.Vector3(0, -0.45, 0);
   const camPos = new THREE.Vector3(Math.sin(a) * dist, 0.9, Math.cos(a) * dist);
   const mats = useMemo(() => ({

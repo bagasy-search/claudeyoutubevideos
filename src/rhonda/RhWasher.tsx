@@ -45,6 +45,7 @@ export const RhCycleThermo: React.FC<{ bed?: string }> = ({ bed }) => {
     <AbsoluteFill style={{ opacity: out }}>
       {bed ? <Img src={staticFile(bed)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", filter: "blur(4px) brightness(1.05)" }} /> : null}
       <AbsoluteFill style={{ background: "rgba(246,243,236,0.72)" }} />
+      <AbsoluteFill style={{ scale: String(1 + 0.06 * f / T) }}>
       {/* panel del lavarropas con la perilla */}
       <div style={{ position: "absolute", left: 140, top: 200, width: 760, height: 360, borderRadius: 30, background: "linear-gradient(180deg,#FFFFFF,#E8E8E5)", boxShadow: `0 30px 60px ${RH.shadow}` }}>
         <div style={{ position: "absolute", left: 260, top: 60, width: 240, height: 240, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%, #FFFFFF, #CFD3D6)", boxShadow: "0 10px 20px rgba(0,0,0,0.25)", rotate: `${knob}deg` }}>
@@ -66,6 +67,7 @@ export const RhCycleThermo: React.FC<{ bed?: string }> = ({ bed }) => {
         </Card>
         <div style={{ marginTop: 30, opacity: Math.min(1, cup * 1.4), scale: String(0.8 + 0.2 * cup), background: RH.yellow, padding: "14px 24px", borderRadius: 14, fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: RH.ink, boxShadow: `0 14px 30px ${RH.shadow}` }}>+ 1 cup peroxide, empty drum</div>
       </div>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -99,8 +101,8 @@ export const RhDoorCrack: React.FC<{}> = () => {
 
 export const RhDrawerFlashlight: React.FC<{ img: string }> = ({ img }) => {
   const f = useCurrentFrame(); const { durationInFrames: T } = useVideoConfig(); const out = useOut(6);
-  const x = interpolate(f, [6, T * 0.6], [20, 62], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
-  const y = interpolate(f, [6, T * 0.6], [70, 30], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
+  const x = interpolate(f, [6, T * 0.6], [20, 62], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) }) + 1.4 * Math.sin(f / 9);
+  const y = interpolate(f, [6, T * 0.6], [70, 30], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) }) + 1.0 * Math.cos(f / 11);
   const lab = lin(f, T * 0.6, T * 0.72);
   return (
     <AbsoluteFill style={{ opacity: out, background: "#0B0D10", overflow: "hidden" }}>
