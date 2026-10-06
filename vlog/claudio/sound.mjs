@@ -61,21 +61,21 @@ const WH = ["design/whoosh_air.flac", "design/whoosh_quick.flac", "design/whoosh
 function compFx(n, c, durS) {
   const P = c.props || {}, out = [];
   const add = (src, vol, at, dur) => out.push({ src, vol, at, dur });
-  if (n === "ClChapter") { add("design/whoosh_sweep_long.flac", 0.32, -0.15, 1.6); add("foley/keys_moving.flac", 0.34, 0.12, 1.2); add(P.alert ? "design/buzzer_wrong_bass.flac" : "design/impact_drum_subtle.flac", P.alert ? 0.2 : 0.4, 0.35, 1.8); }
+  if (n === "ClChapter") { add("design/whoosh_sweep_long.flac", 0.32, -0.15, 1.6); add("foley/keys_moving.flac", 0.34, 0.12, 1.2); add(P.alert ? "design/impact_echo.flac" : "design/impact_drum_subtle.flac", P.alert ? 0.2 : 0.4, 0.35, 1.8); }
   if (/3D$/.test(n)) add("design/swell_wind.flac", 0.24, 0, Math.min(durS, 5));
   if (n === "ClBowl3D") {
     if (P.mode === "layers") { const k = 6; for (let i = 0; i < k; i++) add("foley/drip_sink.flac", 0.26, 0.4 + i * (durS * 0.75) / k, 1.2); add("design/impact_heartbeat.flac", 0.36, durS * 0.72, 2.2); }
     if (P.mode === "brush") add("foley/scrub_toilet.flac", 0.4, 0.3, Math.min(3.5, durS - 0.4));
     if (P.mode === "lower") { add("foley/flush_bathroom.flac", 0.36, 0.2, 3.5); add("foley/water_tub_empty.flac", 0.26, 1.2, Math.min(3, durS - 1.3)); }
     if (P.mode === "paste") { add("foley/scrub_pad.flac", 0.32, 0.15, 1.2); add("foley/fizz_gentle.flac", 0.4, durS * 0.3, durS * 0.6); }
-    if (P.mode === "vinegar") { add("foley/paper_towel_wet.flac", 0.36, 0.15, 1.6); add("design/texture_suspense.flac", 0.2, 0.6, durS - 0.8); add("design/ding_cooking_bell.flac", 0.3, durS * 0.78, 1.5); }
+    if (P.mode === "vinegar") { add("foley/paper_towel_wet.flac", 0.36, 0.15, 1.6); add("design/texture_suspense.flac", 0.2, 0.6, durS - 0.8); add("design/ding_oven.flac", 0.3, durS * 0.78, 1.5); }
   }
   if (n === "ClValve3D") { add("foley/valve_squeak.flac", 0.45, 0.5, Math.min(2.6, durS * 0.45)); add("design/tick_single.flac", 0.4, durS * 0.47, 0.6); if (P.drain !== false) add("foley/flush_hard.flac", 0.36, durS * 0.62, 3); }
-  if (n === "ClPumiceTest") { if (P.only !== "wet") add("foley/sand_paper_b.flac", 0.42, 0.25, Math.min(3, durS - 0.4)); if (P.only !== "dry") add("foley/pumice_griddle.flac", 0.36, P.only === "wet" ? 0.25 : 0.6, Math.min(3, durS - 0.6)); add("design/buzzer_wrong_bass.flac", 0.16, durS * 0.4, 1); }
+  if (n === "ClPumiceTest") { if (P.only !== "wet") add("foley/sand_paper_b.flac", 0.42, 0.25, Math.min(3, durS - 0.4)); if (P.only !== "dry") add("foley/pumice_griddle.flac", 0.36, P.only === "wet" ? 0.25 : 0.6, Math.min(3, durS - 0.6)); add("design/impact_echo.flac", 0.16, durS * 0.4, 1); }
   if (n === "ClPasteRecipe") { const a = P.a || 3, b = P.b || 1, per = Math.max(0.35, durS * 0.42 / (a + b)); for (let i = 0; i < a; i++) add("foley/powder_pour.flac", 0.38, 0.35 + i * per + per * 0.5, 0.7); for (let i = 0; i < b; i++) add("foley/water_pour_short.flac", 0.36, 0.35 + (a + i) * per + per * 0.5, 0.8); add("foley/stir_ceramic.flac", 0.4, 0.35 + (a + b) * per, Math.min(2.5, durS * 0.3)); }
   if (n === "ClNotebook") { const k = (P.rows || []).length || 3; if (P.strike) { for (let i = 0; i < k; i++) add("design/pencil_strokes.flac", 0.4, 0.4 + i * durS * 0.5 / k, 0.9); add("design/impact_drum_subtle.flac", 0.36, durS * 0.62, 1.6); } else { add("design/page_stiff.flac", 0.3, 0.05, 0.8); for (let i = 0; i < k; i++) add("design/pencil_paper.flac", 0.4, 0.35 + i * durS * 0.65 / k, 1.1); } }
   if (n === "ClVideoRef") { add("design/camera_shutter.flac", 0.36, 0.1, 0.6); add("design/click_interface.flac", 0.32, 0.55, 0.5); if (P.next) add("design/riser_fast.flac", 0.26, durS - 1.6, 1.6); }
-  if (n === "ClTimer30") { add("design/tick_clock_close.flac", 0.26, 0.1, Math.max(0.6, durS - 0.9)); add(P.overnight ? "design/ding_cooking_bell.flac" : "design/ding_oven.flac", 0.4, Math.max(0.5, durS - (P.fast ? 0.2 : 0.65)), 1.6); }
+  if (n === "ClTimer30") { add("design/tick_clock_close.flac", 0.26, 0.1, Math.max(0.6, durS - 0.9)); add(P.overnight ? "design/ding_oven.flac" : "design/ding_oven.flac", 0.4, Math.max(0.5, durS - (P.fast ? 0.2 : 0.65)), 1.6); }
   if (n === "ClNeverMix") { if (P.chart) add("design/page_turn_big.flac", 0.34, 0.1, 1); else if (P.soft) { add("design/pop_soap_bubble.flac", 0.34, durS * 0.4, 0.7); add("design/stamp_rubber.flac", 0.38, durS * 0.42, 0.8); } else { add("design/alarm_warning_buzzer.flac", P.short ? 0.12 : 0.18, durS * 0.38, 0.9); add("design/stamp_es.flac", 0.45, durS * 0.42, 1); } }
   if (n === "ClBookPage") { add("design/page_turn_big.flac", 0.34, 0.05, 1); add("design/stamp_rubber.flac", 0.42, 0.95, 0.9); }
   if (n === "ClQRCard") { add("design/paper_slide.flac", 0.32, 0.1, 0.8); add("design/click_interface.flac", 0.3, 0.6, 0.5); }
