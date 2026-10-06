@@ -21,14 +21,14 @@ type Mode = "pores" | "roots" | "bleach" | "peroxide" | "dry" | "scratch" | "pai
 type Labels = { pore?: string; roots?: string; top?: string; dots?: string; tile?: string };
 const GW = 1.2, GH = 2.0, GD = 1.0;          // pastina: ancho, alto (profundidad de la junta), espesor
 const TOP = GH / 2;                           // superficie de la junta (y)
-const NP = 46, NR = 7;                        // poros, raíces
+const NP = 64, NR = 7;                        // poros, raíces
 
 const Cam: React.FC<{ pos: any; target: any }> = ({ pos, target }) => {
   const { camera } = useThree(); camera.position.copy(pos); camera.lookAt(target); camera.updateProjectionMatrix(); return null;
 };
 // poro i: en la cara de corte (z = +GD/2), distribuidos por todo el alto
 const poreAt = (i: number) => new THREE.Vector3((rnd(i * 3 + 1) - 0.5) * GW * 0.86, TOP - 0.15 - rnd(i * 5 + 2) * (GH - 0.3), GD / 2 - 0.02);
-const poreR = (i: number) => 0.035 + rnd(i * 7 + 3) * 0.06;
+const poreR = (i: number) => 0.022 + rnd(i * 7 + 3) * 0.04;
 // raíz r: arranca en un puntito de la superficie y baja zigzagueando de poro en poro
 function rootCurve(r: number) {
   const x0 = (r / (NR - 1) - 0.5) * GW * 0.78 + (rnd(r * 11) - 0.5) * 0.08;
@@ -46,19 +46,21 @@ export const RhGroutPore3D: React.FC<{ mode?: Mode; labels?: Labels; short?: boo
   const ue = ease(u);
   // cámara: empuje lento hacia la cara de corte + leve órbita (nunca quieta)
   const a = interpolate(f, [0, T], [-0.32, 0.18], { easing: Easing.inOut(Easing.cubic) });
-  const dist = interpolate(f, [0, T], [short ? 4.2 : 5.0, short ? 3.6 : 3.9], { easing: Easing.out(Easing.cubic) });
-  const target = new THREE.Vector3(0, 0.15, 0.2);
-  const camPos = new THREE.Vector3(Math.sin(a) * dist, 0.9 + 0.25 * (1 - f / T), Math.cos(a) * dist);
+  const dist = interpolate(f, [0, T], [short ? 5.4 : 6.2, short ? 4.8 : 5.0], { easing: Easing.out(Easing.cubic) });
+  const target = new THREE.Vector3(0, 0.25, 0.1);
+  const camPos = new THREE.Vector3(Math.sin(a) * dist, 2.35 + 0.3 * (1 - f / T), Math.cos(a) * dist);
 
   const roots = useMemo(() => Array.from({ length: NR }, (_, r) => rootCurve(r)), []);
   const mats = useMemo(() => ({
-    tile: new THREE.MeshStandardMaterial({ color: "#FFFFFF", roughness: 0.08, metalness: 0.0 }),
-    tileBody: new THREE.MeshStandardMaterial({ color: "#E9E3D8", roughness: 0.85 }),
-    grout: new THREE.MeshStandardMaterial({ color: "#B9B3A8", roughness: 0.98 }),
-    groutCut: new THREE.MeshStandardMaterial({ color: "#C8C2B6", roughness: 1 }),
-    pore: new THREE.MeshStandardMaterial({ color: "#5D574E", roughness: 1 }),
+    tile: new THREE.MeshStandardMaterial({ color: "#FFFFFF", roughness: 0.06, metalness: 0.0, emissive: "#F4F2EC", emissiveIntensity: 0.25 }),
+    tileBody: new THREE.MeshStandardMaterial({ color: "#F1EBDF", roughness: 0.8, emissive: "#E8E1D3", emissiveIntensity: 0.2 }),
+    grout: new THREE.MeshStandardMaterial({ color: "#A9A397", roughness: 0.98 }),
+    groutCut: new THREE.MeshStandardMaterial({ color: "#BDB6A8", roughness: 1 }),
+    sand: new THREE.MeshStandardMaterial({ color: "#D8D1C2", roughness: 1 }),
+    sand2: new THREE.MeshStandardMaterial({ color: "#8E877A", roughness: 1 }),
+    pore: new THREE.MeshStandardMaterial({ color: "#7E776B", roughness: 1 }),
     water: new THREE.MeshStandardMaterial({ color: "#9CCBEA", roughness: 0.05, transparent: true, opacity: 0.75 }),
-    root: new THREE.MeshStandardMaterial({ color: "#16140F", roughness: 0.6 }),
+    root: new THREE.MeshStandardMaterial({ color: "#0D0C08", roughness: 0.5 }),
     dot: new THREE.MeshStandardMaterial({ color: "#121009", roughness: 0.7 }),
     bleach: new THREE.MeshStandardMaterial({ color: "#FFFFFF", roughness: 0.5, transparent: true, opacity: 0.55, depthWrite: false }),
     perox: new THREE.MeshStandardMaterial({ color: "#D8ECF8", roughness: 0.05, transparent: true, opacity: 0.32, depthWrite: false }),
@@ -79,12 +81,12 @@ export const RhGroutPore3D: React.FC<{ mode?: Mode; labels?: Labels; short?: boo
   const dotsVis = mode === "pores" ? 0.6 : 1;
   const dotWhite = bleachK;                                                   // los puntitos se blanquean (por arriba)
   const bleachDepth = 0.28;                                                   // la lejía no pasa de acá
-  const rootGeo = useMemo(() => roots.map((c) => new THREE.TubeGeometry(c, 40, 0.022, 6, false)), [roots]);
+  const rootGeo = useMemo(() => roots.map((c) => new THREE.TubeGeometry(c, 40, 0.034, 7, false)), [roots]);
   // raíz parcial (crece): tubo hasta el % pedido
   const partial = (r: number, k: number) => {
     if (k >= 0.999) return rootGeo[r];
     const pts = roots[r].getSpacedPoints(40).slice(0, Math.max(2, Math.round(40 * k) + 1));
-    return new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), Math.max(2, pts.length * 2), 0.022, 6, false);
+    return new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), Math.max(2, pts.length * 2), 0.034, 7, false);
   };
 
   const proj = (v: any) => {
@@ -114,7 +116,7 @@ export const RhGroutPore3D: React.FC<{ mode?: Mode; labels?: Labels; short?: boo
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 22% 30%, rgba(255,250,235,0.85), rgba(255,255,255,0.15) 55%, rgba(30,42,54,0.10) 100%)" }} />
       <ThreeCanvas width={width} height={height} camera={{ fov: 30, position: [camPos.x, camPos.y, camPos.z] }} gl={{ antialias: true }}>
         <Cam pos={camPos} target={target} />
-        <ambientLight intensity={0.6} />
+        <ambientLight intensity={0.85} />
         <directionalLight position={[-5, 6, 4]} intensity={1.35} color="#FFF4E0" />
         <directionalLight position={[4, 2, 3]} intensity={0.3} color="#DCE9F5" />
         {/* azulejos a los lados: esmalte arriba, bizcocho en el corte */}
@@ -132,11 +134,12 @@ export const RhGroutPore3D: React.FC<{ mode?: Mode; labels?: Labels; short?: boo
           const wet = clamp01(waterK * 1.5 - rnd(i * 41) * 0.5) * (mode === "peroxide" ? 1 - peroxK * 0 : 1);
           return (
             <group key={i}>
-              <mesh position={p} material={mats.pore}><sphereGeometry args={[r, 10, 8]} /></mesh>
+              <mesh position={[p.x, p.y, p.z - r * 0.55]} scale={[1, 1, 0.45]} material={mats.pore}><sphereGeometry args={[r, 10, 8]} /></mesh>
               {wet > 0.02 ? <mesh position={[p.x, p.y, p.z + 0.012]} scale={wet} material={mats.water}><sphereGeometry args={[r * 0.8, 10, 8]} /></mesh> : null}
             </group>
           );
         })}
+        {Array.from({ length: 160 }, (_, i) => (<mesh key={"g" + i} position={[(rnd(i * 37 + 5) - 0.5) * GW * 0.96, TOP - rnd(i * 41 + 9) * GH * 0.98, GD / 2 + 0.004]} material={i % 3 ? mats.sand : mats.sand2}><circleGeometry args={[0.006 + rnd(i * 43) * 0.012, 6]} /></mesh>))}
         {/* lejía: capa blanca que baja sólo un poco */}
         {bleachK > 0.01 ? <mesh position={[0, TOP - (bleachDepth * bleachK) / 2, GD / 2 + 0.015]} material={mats.bleach}><boxGeometry args={[GW, bleachDepth * bleachK, 0.02]} /></mesh> : null}
         {/* agua oxigenada: baja hasta el fondo */}
@@ -149,7 +152,7 @@ export const RhGroutPore3D: React.FC<{ mode?: Mode; labels?: Labels; short?: boo
           return (
             <group key={r}>
               {k > 0.02 && vis > 0.02 ? <mesh geometry={partial(r, k)} material={mats.root} scale={[1, 1, 1]} /> : null}
-              {vis > 0.02 ? <mesh position={[top.x, TOP + 0.02, top.z]} scale={[1, 0.45, 1]} material={dotWhite > 0.5 ? mats.paint : mats.dot}><sphereGeometry args={[0.06 * dotsVis * (1 - 0.3 * dotWhite), 12, 8]} /></mesh> : null}
+              {vis > 0.02 ? [0, 1, 2, 3].map((q) => <mesh key={q} position={[top.x + (q ? (rnd(r * 7 + q) - 0.5) * 0.12 : 0), TOP + 0.02, top.z - (q ? rnd(r * 9 + q) * 0.25 : 0)]} scale={[1, 0.45, 1]} material={dotWhite > 0.5 ? mats.paint : mats.dot}><sphereGeometry args={[(q ? 0.035 : 0.065) * dotsVis * (1 - 0.3 * dotWhite), 12, 8]} /></mesh>) : null}
             </group>
           );
         })}
@@ -158,7 +161,7 @@ export const RhGroutPore3D: React.FC<{ mode?: Mode; labels?: Labels; short?: boo
         {paintK > 0.01 ? <mesh position={[0, TOP + 0.03, 0]} scale={[paintK, 1, 1]} material={mats.paint}><boxGeometry args={[GW, 0.05, GD]} /></mesh> : null}
         {poke > 0.01 ? roots.map((c, r) => { const tp = c.getPointAt(0); return <mesh key={"pk" + r} position={[tp.x, TOP + 0.06, tp.z]} scale={[poke, 0.4 * poke, poke]} material={mats.dot}><sphereGeometry args={[0.055, 10, 8]} /></mesh>; }) : null}
         {/* rayón: canaleta en V + poro nuevo con su puntito */}
-        {scratchK > 0.01 ? <mesh position={[0.15, TOP - 0.06, GD / 2 - 0.25]} rotation={[0, 0, Math.PI / 4]} scale={[scratchK, scratchK, 1]} material={mats.scratch}><boxGeometry args={[0.16, 0.16, GD * 0.9]} /></mesh> : null}
+        {scratchK > 0.01 ? <mesh position={[0.15, TOP + 0.004, GD / 2 - (GD * 0.9 * scratchK) / 2]} material={mats.scratch}><boxGeometry args={[0.11, 0.012, GD * 0.9 * scratchK]} /></mesh> : null}
         {newDot > 0.01 ? <mesh position={[0.15, TOP - 0.1, GD / 2 - 0.05]} scale={newDot} material={mats.dot}><sphereGeometry args={[0.06, 10, 8]} /></mesh> : null}
         {/* sombra de contacto bajo el bloque */}
         <mesh position={[0, -GH / 2 - 0.01, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[5, 2.4]} /><meshBasicMaterial color="#000000" transparent opacity={0.12} /></mesh>

@@ -228,5 +228,75 @@
   "name": "bd_cleanfloor",
   "q": "mopping tile floor",
   "scene": "Mopping a tile floor."
+ },
+ {
+  "name": "bd_lightswitch2",
+  "q": "switching on light",
+  "scene": "A hand switching on a light."
+ },
+ {
+  "name": "bd_towels2",
+  "q": "stack of towels",
+  "scene": "A stack of folded towels."
+ },
+ {
+  "name": "bd_bathroom2",
+  "q": "small bathroom interior",
+  "scene": "A small ordinary bathroom."
+ },
+ {
+  "name": "bd_tub2",
+  "q": "white bathtub",
+  "scene": "A white bathtub in a bathroom."
+ },
+ {
+  "name": "bd_shelf2",
+  "q": "bathroom shelf bottles",
+  "scene": "Bottles on a bathroom shelf."
+ },
+ {
+  "name": "bd_wipe2",
+  "q": "wiping table cloth",
+  "scene": "Wiping a surface with a cloth."
+ },
+ {
+  "name": "bd_window3",
+  "q": "window curtains daylight",
+  "scene": "Daylight through window curtains."
+ },
+ {
+  "name": "bd_laundry2",
+  "q": "laundry room",
+  "scene": "An ordinary laundry room."
+ },
+ {
+  "name": "bd_kitchen2",
+  "q": "kitchen counter morning",
+  "scene": "A kitchen counter in the morning."
+ },
+ {
+  "name": "bd_sink3",
+  "q": "washing sink",
+  "scene": "Washing a white sink."
+ },
+ {
+  "name": "bd_spray3",
+  "q": "spraying cleaner",
+  "scene": "Spraying cleaner on a surface."
+ },
+ {
+  "name": "bd_mop2",
+  "q": "mopping floor",
+  "scene": "Mopping a floor."
+ },
+ {
+  "name": "bd_flowers",
+  "q": "flowers vase window",
+  "scene": "Flowers in a vase by a window."
+ },
+ {
+  "name": "bd_house2",
+  "q": "house exterior suburb",
+  "scene": "A house in a quiet suburb."
  }
 ]

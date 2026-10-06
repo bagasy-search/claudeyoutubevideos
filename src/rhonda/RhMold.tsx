@@ -55,7 +55,7 @@ export const RhMoldCalendar: React.FC<{ mode?: "split" | "days" | "months" | "we
             <Tape x={230} y={-18} rot={5} w={170} />
             <Polaroid src={b!} label={lb} k={pb} tone={RH.red}>
               <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
-                <ellipse cx={50} cy={74} rx={40} ry={20} fill="none" stroke={RH.red} strokeWidth={1.6} strokeDasharray={260} strokeDashoffset={260 * (1 - ring)} transform="rotate(-4 50 74)" />
+                <ellipse cx={46} cy={50} rx={40} ry={17} fill="none" stroke={RH.red} strokeWidth={1.6} strokeDasharray={260} strokeDashoffset={260 * (1 - ring)} transform="rotate(-4 46 50)" />
               </svg>
             </Polaroid>
           </div>
@@ -171,10 +171,10 @@ export const RhSwabTest: React.FC<{ mode?: "tease" | "top" | "under"; bed?: stri
   return (
     <AbsoluteFill style={{ opacity: out }}>
       <Bed src={bed} seed={91} dim={0.3} blur={0} />
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(255,255,255,0) 40%, rgba(240,236,228,0.92) 58%, rgba(232,226,216,0.98) 100%)" }} />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(255,255,255,0) 42%, rgba(206,214,222,0.95) 56%, rgba(178,190,202,1) 100%)" }} />
       <div style={{ position: "absolute", inset: 0, translate: `0 ${(1 - p) * 120}px` }}>
-        <div style={{ opacity: focusL }}><Swab dirt={mode === "tease" ? 0.15 : left} x={170} y={560} rot={-8} s={1.2} /></div>
-        <div style={{ opacity: focusR }}><Swab dirt={0} x={1020} y={600} rot={6} s={1.2} /></div>
+        <div style={{ opacity: focusL }}><Swab dirt={mode === "tease" ? 0.15 : left} x={120} y={560} rot={-8} s={1.45} /></div>
+        <div style={{ opacity: focusR }}><Swab dirt={0} x={980} y={600} rot={6} s={1.45} /></div>
         {mode === "top" && k > 0.3 ? Array.from({ length: 14 }, (_, i) => { const ph = ((f * 0.04 + rnd(i * 9)) % 1); return <div key={i} style={{ position: "absolute", left: 230 + rnd(i * 3) * 120, top: 600 - ph * 160, width: 14 + rnd(i) * 14, height: 14 + rnd(i) * 14, borderRadius: "50%", border: "3px solid #fff", background: "rgba(255,255,255,0.4)", opacity: 1 - ph }} />; }) : null}
       </div>
       {mode === "tease" ? (
@@ -314,7 +314,7 @@ export const RhStrengthMeter: React.FC<{ full?: string; half?: string; bed?: str
   );
   return (
     <AbsoluteFill style={{ opacity: out }}>
-      <Bed src={bed} seed={97} dim={0.32} />
+      <Bed src={bed} seed={97} dim={0.5} />
       <div style={{ position: "absolute", inset: 0, translate: `0 ${(1 - p) * 100}px` }}>
         <Bottle brown x={170} power={1} title={full} c={RH.blueDeep} />
         <Bottle brown={false} x={1060} power={0.3} title={half} c={RH.red} />

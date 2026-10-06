@@ -68,18 +68,18 @@ function compFx(n, c, durS) {
     else if (P.mode === "months") { for (let k = 0; k < 4; k++) add("design/page_stiff.flac", 0.32, 0.15 + k * (durS - 0.5) / 4, 0.8); }
     else { add("design/pen_write.flac", 0.34, 0.4, 1.4); add("design/click_slide.flac", 0.3, 0.9, 0.5); }
   }
-  if (n === "RhSwabTest") { add("design/paper_slide.flac", 0.34, 0.05, 0.8); if (P.mode === "top") add("foley/fizz_gentle.flac", 0.36, 0.5, durS - 0.5); if (P.mode === "under") add("design/buzzer_wrong_bass.flac", 0.2, durS * 0.5, 0.8); add("design/stamp_rubber.flac", 0.4, durS * 0.5, 0.8); }
+  if (n === "RhSwabTest") { add("design/paper_slide.flac", 0.34, 0.05, 0.8); if (P.mode === "top") add("foley/fizz_gentle.flac", 0.36, 0.5, durS - 0.5); if (P.mode === "under") add("design/impact_blow.flac", 0.3, durS * 0.5, 0.8); add("design/stamp_rubber.flac", 0.4, durS * 0.5, 0.8); }
   if (n === "RhWipeReveal") { add("design/riser_fast.flac", 0.34, -1.3, 1.6); add("foley/squeegee_glass_a.flac", 0.55, 0.1, Math.min(2.6, durS)); add("design/impact_drum_deep.flac", 0.42, durS * 0.55, 2.2); }
   if (n === "RhFogMirror") { const L = (P.lines || []).length || 1; for (let k = 0; k < L; k++) add("foley/rubber_squeak.flac", 0.3, 0.2 + k * durS * 0.7 / L, 0.9); add("foley/drip_sink.flac", 0.28, durS * 0.6, 1.8); }
   if (n === "RhPatchMeter") { add("design/click_slide.flac", 0.3, 0.2, 0.5); add("foley/paper_crinkle.flac", 0.32, 0.3, 1.2); add("design/stamp_traditional.flac", 0.42, durS * 0.5, 1); }
   if (n === "RhWetMap") { add("foley/water_shower.flac", 0.26, 0, Math.min(durS * 0.6, 3)); add("foley/drip_sink.flac", 0.3, durS * 0.55, 2); }
-  if (n === "RhStrengthMeter") { add("foley/fizz_tablet_c.flac", 0.4, 0.4, durS - 0.5); add("design/buzzer_wrong_bass.flac", 0.18, durS * 0.65, 0.7); }
+  if (n === "RhStrengthMeter") { add("foley/fizz_tablet_c.flac", 0.4, 0.4, durS - 0.5); add("design/impact_blow.flac", 0.26, durS * 0.65, 0.7); }
   if (n === "RhTimer30") { add("design/tick_timer.flac", 0.26, 0.1, Math.max(0.6, durS - 0.9)); add("design/ding_oven.flac", 0.4, Math.max(0.5, durS - (P.fast ? 0.2 : 0.65)), 1.6); }
   if (n === "RhNeverMix") { if (P.chart) add("design/page_turn_big.flac", 0.34, 0.1, 1); else { add("design/alarm_warning_buzzer.flac", P.soft ? 0.12 : 0.18, durS * 0.38, 0.9); add("design/stamp_es.flac", 0.45, durS * 0.42, 1); } }
   if (n === "RhBookPage") { add("design/page_turn_big.flac", 0.34, 0.05, 1); add("design/stamp_rubber.flac", 0.42, 0.75, 0.9); }
   if (n === "RhQRCard") { add("design/paper_slide.flac", 0.32, 0.1, 0.8); add("design/click_interface.flac", 0.3, 0.6, 0.5); }
   if (n === "RhCheck") { const k2 = (P.items || []).length; for (let k = 0; k < k2; k++) add("design/pen_write.flac", 0.3, 0.55 + k * Math.max(0.27, Math.min(1.33, (durS - 1) / k2)), 0.6); }
-  if (n === "RhDoDont") { add("design/paper_slide.flac", 0.3, 0.1, 0.8); add("design/buzzer_wrong_bass.flac", 0.16, 1.0, 0.7); }
+  if (n === "RhDoDont") { add("design/paper_slide.flac", 0.3, 0.1, 0.8); add("design/click_slide.flac", 0.3, 1.0, 0.5); }
   if (n === "RhPins") add("design/pop_soap_bubble.flac", 0.36, 0.3, 0.6);
   if (n === "RhBottle3D") add("foley/cap_unscrew_jar.flac", 0.4, 0.2, 1.2);
   if (n === "RhMeasureCup") add("foley/water_pour_short.flac", 0.4, 0.3, 1.6);
