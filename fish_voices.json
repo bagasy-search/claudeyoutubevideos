@@ -296,18 +296,10 @@
   ]
  },
  "claudio_definitiva": {
+  "wav": "fish_refs/claudio_definitiva.wav",
+  "text": "Ese es el video Tres errores que te están inflando la factura de luz y ninguno de los tres es el cargador del teléfono Mi casa venía en 320 kilovatios hora por mes Hoy está en 2 doscientos diez y no dejé de usar nada no apagué la heladera no me bañé con agua fría no anduve a oscuras lo único que hice fue medir encontrar estos tres errores y corregirlos te los voy a mostrar los tres con el número de antes y el número de Es la idea de que los aparatos apagados te siguen chupando corriente y no es mentira es real Yo lo acabo de medir 20 vatios El problema no es que sea mentira el problema es lo que ese dato hace con vos 20 vatios las 24 horas del día son 0 48 kilovatios hora por día por mes 14 kilovatios hora y para ahorrarte esos 14 tenés que andar todas fuera del medio Vamos al segundo error que es donde está casi toda mi factura El segundo error es que miras la etiqueta y no miras el reloj Te lo muestro con la pava eléctrica que es el aparato más potente de mi cocina La pava dice 2000 vatios Con la pinza me da 9 1 amperios Es lo que más chupa de todo lo que hay acá arriba de la mesada Y cuando alguien ve ese número se asusta Ahora",
   "language": "es",
-  "refs": [
-   {
-    "wav": "fish_refs/taller_claudio_a.wav",
-    "text": "Si te falta cualquiera de las dos, tenés humo negro, hollín y olor a taller quemado. ¿Y qué tiene que ver el filtro con todo esto? Acá viene lo lindo. Un filtro de aceite, por dentro es justo la pieza que hace falta para darle aire a esa llama. Mira, por fuera es una lata de acero gruesa, que aguanta presión y aguanta calor. Abajo tiene una placa de acero con un agujero grande en el medio, con rosca y una ronda de agujeritos alrededor. Y adentro, en el centro, tiene un tubo de chapa lleno de agujeros, que es el que sostiene el papel del filtro. Ese tubo agujereado es el corazón del calentador."
-   },
-   {
-    "wav": "fish_refs/taller_claudio_b.wav",
-    "text": "El aceite usado, también gratis, casi siempre, mismo lubricentro, mismo motivo, lleva tu propio bidón, el bidón de pintura de 20 litros, gratis, cualquier obra o pinturería tiene vacíos, y la lata para el plato de abajo, gratis. Lo que si vas a comprar es poco, pero lo tienes que comprar bien, un metro y medio de caño de cobre finito de los de refrigeración, una llave de paso chiquita de las de aguja para regular el goteo, y un par de abrazaderas, eso es todo lo que sale de la ferretería."
-   }
-  ],
-  "nota": "VOZ REAL de @TallerClaudioMendoza, clonada el 20-sep-2026 del video ATIU8OUwdwg (130,9-170,4 s y 205,1-237,7 s, cortes en silencio). 15,2 cps, coincide con style.fish.cps=15. NO confundir con claudio_mendoza_s4 (row 207, otra persona, 11 cps)."
+  "nota": "VOZ CANONICA DE CLAUDIO — usar SIEMPRE esta, no re-clonar del audio de cada video. 87,6 s = 3 fragmentos del avatar real de pinluz (promesa / didactico / arranque enfatico), transcripcion EXACTA del ASR palabra por palabra. Validada en produccion: genero 12:51 de cola con 0 frases comidas y sin artefactos. Registrada 2026-09-10 a pedido del creador."
  },
  "ole_camp": {
   "wav": "fish_refs/ole_camp.wav",
