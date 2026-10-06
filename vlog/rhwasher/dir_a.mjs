@@ -18,10 +18,10 @@ export const SHOTS = [
   S(1, "and there it is", "bi", "b_flashseal", { p: BI(`A flashlight beam shining into the pulled-back bottom fold of a gray washer door seal in a dim laundry room, black gunk glistening.`), anim: "the flashlight beam moves slowly along the fold; nothing else moves" }),
   S(1, "Black gunk", "bi", "b_gunkmacro", { p: BI(`Extreme close view inside the fold of a washing machine rubber door seal: ${GUNK}.`), anim: "the view creeps slowly along the fold; nothing else moves" }),
   S(1, "gray water", "kf", "k_graywater", { p: BI(`Close view of a yellow-gloved fingertip touching gray murky water sitting in the bottom fold of a washer door seal, a ripple spreading.`), d1: "the fingertip touches the gray water", d2: "a ripple spreads across the dirty water", sound: "a small wet tap" }),
-  S(1, "hair, lint", "bi", "b_lint", { p: BI("A yellow-gloved hand holding up a clump of gray lint, hair and a hair tie pulled out of a washer door seal."), anim: "the clump dangles and sways slightly; nothing else moves" }),
+  S(1, "hair, lint", "bi", "b_lint", { q: "lint from washing machine", p: BI("A yellow-gloved hand holding up a clump of gray lint, hair and a hair tie pulled out of a washer door seal."), anim: "the clump dangles and sways slightly; nothing else moves" }),
   S(1, "It's been sitting in that fold", "av", ""),
   S(1, "every load you wash", "bi", "st_washerspin", { q: "washing machine spinning", p: BI("Clothes spinning inside a front-loading washing machine.") }),
-  S(1, "right past it", "bi", "b_drumtowels", { p: BI("Looking through the glass door of a front-loading washer at white towels tumbling past the gray rubber seal."), anim: "the towels tumble past the seal; nothing else moves" }),
+  S(1, "right past it", "bi", "b_drumtowels", { q: "towels in washing machine", p: BI("Looking through the glass door of a front-loading washer at white towels tumbling past the gray rubber seal."), anim: "the towels tumble past the seal; nothing else moves" }),
   // ── la promesa hablada
   C(2, "", "RhBottle3D", { title: "3% hydrogen peroxide", sub: "the regular drugstore kind", tag: "$1" }),
   S(2, "one old toothbrush", "bi", "b_toothbrush", { p: BI("An old worn toothbrush lying on top of a white front-loading washing machine next to a folded cloth."), anim: "the light shifts slowly; nothing else moves" }),

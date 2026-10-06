@@ -11,20 +11,16 @@ import { Card, lin, pop, useOut } from "./RhParts";
 
 export const RhPumpFilter: React.FC<{ img: string; finds: { img: string; label: string }[] }> = ({ img, finds }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(6);
-  const door = lin(f, 4, 14), pour = lin(f, 10, T * 0.45), pull = lin(f, T * 0.4, T * 0.55);
+  const pour = lin(f, 10, T * 0.45), pull = lin(f, T * 0.4, T * 0.55);
   const z = interpolate(f, [0, T], [1.03, 1.08]);
   return (
     <AbsoluteFill style={{ opacity: out, overflow: "hidden" }}>
       <Img src={staticFile(img)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", scale: String(z) }} />
       <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(251,248,242,0) 40%, rgba(251,248,242,0.75) 70%)" }} />
       {/* fuente con agua que sube */}
-      <div style={{ position: "absolute", left: 180, bottom: 70, width: 620, height: 120, borderRadius: "10px 10px 30px 30px", background: "linear-gradient(180deg,#C9CED2,#9AA3AA)", boxShadow: "0 18px 30px rgba(0,0,0,0.3)", overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: 520, bottom: 30, width: 560, height: 110, borderRadius: "10px 10px 30px 30px", background: "linear-gradient(180deg,#C9CED2,#9AA3AA)", boxShadow: "0 18px 30px rgba(0,0,0,0.3)", overflow: "hidden" }}>
         <div style={{ position: "absolute", left: 10, right: 10, bottom: 10, height: 90 * pour, borderRadius: 18, background: "rgba(140,150,130,0.9)" }} />
       </div>
-      {/* chorro de agua desde la tapita */}
-      {pour > 0 && pour < 1 ? <div style={{ position: "absolute", left: 470, top: 640, width: 22, height: 300, borderRadius: 12, background: "linear-gradient(180deg, rgba(150,160,140,0.9), rgba(150,160,140,0.4))" }} /> : null}
-      {/* la tapita que se abre */}
-      <div style={{ position: "absolute", left: 400, top: 560, width: 160, height: 90, background: "#F2F2F0", border: "4px solid #CFCFCB", borderRadius: 10, transformOrigin: "50% 100%", transform: `perspective(600px) rotateX(${-80 * door}deg)`, boxShadow: "0 6px 10px rgba(0,0,0,0.2)" }} />
       {/* lo que sale del filtro */}
       <div style={{ position: "absolute", right: 110, top: 110, width: 820, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 30 }}>
         {finds.map((d, i) => { const p = pop(f, fps, T * 0.45 + i * 7, 13);
@@ -42,8 +38,8 @@ export const RhPumpFilter: React.FC<{ img: string; finds: { img: string; label: 
 
 export const RhCycleThermo: React.FC<{ bed?: string }> = ({ bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(6);
-  const k = Easing.inOut(Easing.cubic)(lin(f, 8, T * 0.6)), hot = k > 0.55;
-  const deg = Math.round(60 + 85 * k), knob = -120 + 240 * k;
+  const k = Easing.inOut(Easing.cubic)(lin(f, 8, T * 0.6));
+  const deg = Math.round(60 + 85 * k), knob = -120 + 240 * k, hot = deg >= 140;
   const cup = pop(f, fps, T * 0.62, 12);
   return (
     <AbsoluteFill style={{ opacity: out }}>
