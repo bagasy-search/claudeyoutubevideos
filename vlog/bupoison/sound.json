@@ -1,0 +1,28 @@
+{
+ "beds": {
+  "hook": ["1213.mp3", -30], "c0": ["1237.mp3", -31], "c1": ["2450.mp3", -32], "c2": ["1330.mp3", -32],
+  "c3": ["1329.mp3", -31], "c4": ["2414.mp3", -31], "c5": ["1736.mp3", -30], "c6": ["1330.mp3", -31],
+  "c7": ["1238.mp3", -32], "c8": ["1237.mp3", -31], "c9": ["1329.mp3", -31]
+ },
+ "hush": ["It tasted good. The alarm never went off.", "The error is your death.", "And the boy wakes up sick.", "But he's alive.", "Some of them didn't survive."],
+ "phr": [
+  ["The leaves are brown, the river is loud,", "2458.mp3", -24, 6],
+  ["He takes a bite.", "1222.mp3", -22, 1.5],
+  ["It's the thing that waits.", "498.mp3", -10, 3],
+  ["Stop. Spit it out. Now.", "2150.mp3", -14, 1],
+  ["While the boy is walking back to camp", "1230.mp3", -24, 6],
+  ["Then there's fire.", "1349.mp3", -14, 3],
+  ["grabs a handful of a certain pale, smooth earth", "2450.mp3", -26, 5],
+  ["It's the middle of the night. The fire has burned low.", "2466.mp3", -26, 8],
+  ["And the boy wakes up sick. Very sick.", "498.mp3", -9, 6],
+  ["Cramps, vomiting, sweating,", "498.mp3", -12, 6],
+  ["Someone sitting next to you all night,", "1346.mp3", -20, 3],
+  ["By morning, he's grey, shaking and exhausted.", "2472.mp3", -28, 10],
+  ["Parrots in the Amazon gather in huge noisy flocks", "27.mp3", -24, 1],
+  ["She went to a shrub the local people call bitter leaf,", "2423.mp3", -26, 6],
+  ["and how to use it to bring down an animal faster.", "2150.mp3", -16, 1],
+  ["two explorers ran out of food", "2407.mp3", -24, 10],
+  ["a cave lion, or a pack of hyenas in the dark,", "773.mp3", -12, 3],
+  ["I'll see you there.", "1349.mp3", -18, 3]
+ ]
+}

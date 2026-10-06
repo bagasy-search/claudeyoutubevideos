@@ -1,0 +1,19 @@
+{
+ "people": {
+  "hunter": { "face": "D:/rtmp/beforeus_cast/face_hunter.png", "desc": "the hunter is a lean man of about 30 with long dark hair tied up in a loose topknot, a short dark beard and a necklace of animal teeth, wearing a pale sheepskin-lined hide parka; his face is the face of the man in the reference image" },
+  "elder": { "face": "D:/rtmp/beforeus_cast/face_elder.png", "desc": "the old woman is about 65, deeply wrinkled, with long grey braids, a thin red ochre stripe painted across her left cheek and layers of shell-bead necklaces, wearing a hide coat with a red fox-fur collar; her face is the face of the old woman in the reference image" },
+  "boy": { "face": "D:/rtmp/beforeus_cast/face_boy.png", "desc": "the boy is about 10, with messy curly brown hair and smudged cheeks, wearing a cream fleece-lined hide coat; his face is the face of the boy in the reference image" }
+ },
+ "now": { "desc": "he is a man of about 30 with dark hair and a short dark beard, in ordinary modern clothes; his face is the face of the man in the reference image" },
+ "world": "a band of hunter-gatherers 40,000 years ago in the wooded limestone hills of northern Spain in late autumn, their camp under a limestone overhang above a river",
+ "empty": "a wild place 40,000 years ago in the wooded limestone hills of northern Spain, completely empty of people, nobody anywhere in the frame, no modern objects, no paths, no clothing",
+ "wardrobe": "it is 40,000 years ago: everyone wears fully covering worn hand-stitched hide and fur clothing, nothing modern anywhere, no fabric jackets, no boots, no glasses",
+ "light": {
+  "D": "only the light the place really has: flat grey overcast afternoon daylight under the trees, brown and gold autumn leaves, damp ground",
+  "E": "only the light the place really has: the last blue daylight of dusk mixed with the warm orange glow of the camp fire from off frame, everything still clearly readable",
+  "N": "only the light the place really has: the warm orange glow of a camp fire from off frame lighting faces and hands, moonlight on the rock behind, exposure bright enough that faces, clothes and surroundings stay clearly readable",
+  "M": "only the light the place really has: cold grey dawn light and river mist, the fire burned down to smoking embers",
+  "I": "only the light the place really has: ordinary indoor lamps and a window off frame, everyday colors",
+  "X": "only the light the place really has, natural and ordinary for that place and time"
+ }
+}

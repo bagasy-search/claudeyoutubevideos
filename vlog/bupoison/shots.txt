@@ -1,0 +1,225 @@
+# i|kind|cast|light|escena parte 0 [|| escena parte 1]
+# kind: cast (elenco, con caras) · obj (sin gente) · scene (otra gente, sin ref) · now (el "vos" de hoy = la cara del cazador)
+# light: D tarde nublada en el bosque · E atardecer en el campamento · N noche con fuego bajo y luna · M alba gris · I interior moderno · X la describe la escena
+0|cast|hunter,boy|D|wide view down a steep valley of limestone crags and oak and beech woods turning brown, a loud grey river below; the hunter and the boy walk single file along a deer trail on the slope carrying a bundle of firewood and a spear||the boy lags behind the hunter and crouches at the foot of an old beech tree, peering at something on the forest floor among wet brown leaves
+1|cast|boy|D|the boy kneeling in a carpet of wet brown beech leaves, reaching toward a cluster of pale smooth greenish-white mushrooms growing at the base of a mossy oak, curious and delighted||close on the boy's grubby hands lifting a pale smooth mushroom with a white stem and a ragged white skirt on the stem, soil and leaf bits clinging to its base
+2|cast|boy|D|the boy holding the pale mushroom up to his nose and sniffing it with his eyes half closed, a pleased little smile, the oak trunk and leaf litter right behind him
+3|cast|boy|D|the boy sitting on a mossy log taking a bite out of the pale mushroom cap, chewing with an approving face, a few crumbs of white flesh on his lip
+4|cast|boy|D|the boy chewing a second bite, holding the half eaten pale cap in one hand, looking around casually, nothing wrong at all||the boy tossing the rest of the mushroom stem into the leaves and wiping his hands on his coat, jumping off the log to run after the others
+5|obj||D|the half eaten pale mushroom cap lying on wet brown leaves where the boy dropped it, teeth marks visible in the white flesh, a beetle crawling near it
+6|cast|hunter|D|the hunter on the slope above, turning back to look for the boy through bare trees, spear on his shoulder, unaware, the river valley behind him
+7|cast|boy|D|the boy running happily down the trail to catch up with the hunter, cheeks pink, leaves kicked up by his feet||a dramatic flash forward: the same boy at night curled up on furs beside a dying fire, sweating and pale, the old woman's hand on his forehead
+8|cast|elder|N|the old woman at night by the riverbank holding a handful of pale smooth wet clay in her palm, firelight from behind the camera on her face, looking at it with total certainty
+9|obj||X|a nineteen eighties university laboratory bench seen in daylight from a window off frame: glass test tubes in a rack holding cloudy beige clay suspensions, a pipette, handwritten notebook pages out of focus at the edge, a brown paper bag of dried earth||a gloved hand of a lab technician pouring pale clay powder into a beaker of murky liquid on the same cluttered nineteen eighties lab bench
+10|cast|hunter,elder,boy|N|the whole band of about a dozen people sitting around a big campfire under a limestone overhang at night, the hunter, the old woman and the boy in the middle of the group, faces lit warm by the fire||a pull back from the camp: the small glow of the fire under the dark cliff with the starry night sky and the black wooded hills around it
+11|obj||D|the pale greenish mushrooms still growing in a cluster at the base of the oak tree, one of them broken where it was picked, damp forest floor
+12|cast|boy|D|close side view of the boy biting into the pale mushroom cap, his teeth sinking into the white flesh, eyes on the trees
+13|now|hunter|I|the same man with a modern short haircut in a grey hoodie in his small apartment kitchen, reading the back of a cereal box under a ceiling light, a kettle and dishes on the counter
+14|now|hunter|I|the same modern man opening a fridge full of packaged food, sniffing a carton of milk and checking the date stamp with a doubtful frown
+15|now|hunter|I|the same modern man on his couch typing on his phone with a raised eyebrow, a plate of food on his knees, a lamp on in the evening||@cast=hunter back in the forest, the hunter in his hide parka touching the tip of his tongue to a wild root he just dug up, concentrating, other band members gathering roots behind him
+16|cast|hunter|D|close on the hunter touching the very tip of his tongue to a glossy dark green leaf he is holding, eyes narrowed in concentration||@cast=hunter the hunter scrunching up his face and spitting out a bitter green shoot onto the ground, the root bag at his feet
+17|cast|hunter|D|the hunter crouched at a thicket holding three different wild leaves, tasting each one carefully with the tip of his tongue, eyes narrowed
+18|obj||D|close on a wild plant with glossy dark berries and bitter looking leaves growing between rocks at the edge of the beech wood, insects chewed holes in some leaves
+19|cast|hunter,boy|D|the hunter showing the boy a bitter leaf, pretending to gag dramatically, the boy laughing
+20|cast|boy|D|the boy spitting out a bitter green berry with a disgusted face, tongue out, the hunter laughing beside him
+21|now|hunter|I|the same modern man in his kitchen taking his first sip of black coffee from a mug and grimacing hard, morning light from a window off frame||the same modern man biting into a grapefruit peel and recoiling, the fruit bowl on the counter
+22|now|hunter|I|close on the same modern man's face scrunched up in disgust after a sip of strong dark beer at a bar counter, friends laughing beside him
+23|cast|hunter|D|the hunter making the exact same scrunched disgusted face after tasting a bitter root in the forest, the same expression as the modern man||the hunter wiping his mouth with the back of his hand and tossing the bitter root away into the bushes
+24|scene||E|a toddler of the band about two years old in a little fur wrap sitting on a hide by the fire refusing a piece of food a young mother offers, turning his face away with a pout
+25|scene||E|a young mother of the band patiently holding a piece of cooked root to her stubborn toddler's closed lips at camp||the toddler pushing the woman's hand away and crying, other kids watching and giggling
+26|now|hunter|I|the same modern man as a dad at a kitchen table trying to feed a spoon of green vegetables to his toddler in a high chair who clamps his mouth shut
+27|now|hunter|I|the modern dad slumped at the table with the toddler throwing broccoli on the floor, peas everywhere, the dad laughing in defeat
+28|scene||D|a band toddler in a fur wrap wandering alone near a bush covered in red berries at the edge of the wood, an adult hand reaching to pull him back||the toddler sitting in leaves clutching a fistful of leaves and a mushroom, a young woman running toward him
+29|cast|hunter|E|the hunter as a grown man at the fire, pushing a piece of boiled bitter greens around with a stick, making a face, the old woman laughing at him
+30|cast|boy|D|the boy walking happily back to camp under the trees with his hands in his coat, humming, no sign of anything wrong||close on the boy's face, cheeks pink, perfectly healthy, a tiny white fleck of mushroom still on his lip
+31|obj||D|another cluster of the same smooth pale greenish-white mushrooms with white skirts on their stems, at the foot of a tree in the dripping beech wood
+32|cast|boy|D|the boy licking his lips with a satisfied face, the pale mushrooms visible in the leaves behind him
+33|cast|elder|E|the old woman at camp sorting a pile of gathered roots, leaves and mushrooms on a hide, picking each one up and looking at it closely, the overhang behind her
+34|cast|elder|E|the old woman holding two similar looking leaves side by side up to the light, comparing them with a sharp look
+35|obj||D|a clump of bitter yarrow with flat white flower heads and feathery leaves growing on a sunny rocky slope, bees on the flowers
+36|obj||D|a cluster of pale innocent looking white mushrooms glistening with rain at the foot of an oak, soft and inviting
+37|cast|elder,boy|E|the old woman showing the boy a flowering plant and a mushroom side by side on her palm, explaining seriously, the boy listening
+38|scene||D|the dark mouth of a limestone cave hidden in a steep wooded hillside in the hills of northern Spain, ferns and moss around the entrance, rain-darkened rock
+39|scene||X|archaeologists in a cramped cave gallery lit by work lamps, kneeling on a plastic sheet with brushes and trowels around fragments of old bones in reddish sediment, one taking notes
+40|obj||X|a close photo of a fossil human jaw with worn teeth under a lab lamp, a dark crust of hardened plaque on the teeth, a scale bar ruler beside it||a little bunch of yarrow and a little bunch of chamomile flowers lying side by side on a flat stone
+41|scene||D|a Neanderthal man with a heavy brow and a broad nose, in fur, chewing on a sprig of yarrow with a grimace, sitting at the mouth of a cave
+42|scene||D|the Neanderthal man spitting out yarrow leaves with a sour face and then putting another sprig in his mouth
+43|scene||D|a Neanderthal woman holding a bunch of chamomile flowers and yarrow to her nose by a small fire at a cave entrance, another Neanderthal lying sick on furs beside her||the Neanderthal woman crushing yarrow leaves between two stones into a green paste near the sick man
+44|scene||X|a scientist in a modern genetics laboratory holding a small tube up to the light, a DNA sequencer machine and racks of samples on the bench
+45|scene||D|the Neanderthal man chewing yarrow with eyes squeezed shut from the bitterness, holding his jaw
+46|scene||D|the Neanderthal man still chewing stubbornly, staring into the fire, accepting the bitter taste
+47|cast|hunter|E|the hunter at camp tasting a bitter root and nodding thoughtfully instead of spitting it out
+48|cast|elder|E|the old woman tapping her temple with one finger and pointing at a pile of plants on the hide, a knowing look
+49|cast|elder,boy|E|the old woman sorting plants into three small piles on a hide at camp, the boy watching, a few mushrooms set apart on a flat stone||the old woman pushing one small pile of roots aside into a basket of water to soak, the boy watching
+50|cast|hunter|E|the hunter sitting alone at the edge of camp looking at a strange root in his hand, unsure, the band moving around behind him||close on the hunter's worried eyes as he weighs the unknown root in his hand
+51|cast|hunter|D|the hunter cautiously nibbling a tiny corner of an unknown berry, holding it at arm's length afterwards, waiting
+52|cast|hunter|D|the hunter jerking his hand back from a stinging nettle patch, shaking his fingers with a wince||the hunter spitting out a burning hot leaf and fanning his mouth, eyes watering
+53|cast|hunter|D|the hunter spitting out a bad tasting leaf instantly with a disgusted face||@obj a dark wet patch of forest floor with deadly looking pale mushrooms and glossy black berries side by side, ominous
+54|obj||D|a lonely abandoned fur cloak and a gathering basket lying in the leaves of the forest, with a cluster of pale mushrooms growing beside them, no person||a few grey stones placed in a small low pile on the forest floor among roots and leaves, as a simple grave marker
+55|cast|elder|E|the old woman sitting on a hide at the camp under the overhang, wrapped in her fur coat, looking straight ahead with wise calm eyes, the fire lit beside her
+56|cast|hunter,boy|E|at camp the hunter and other band members bringing gathered plants and roots to the old woman for her to inspect
+57|cast|elder|E|close on the old woman's deeply wrinkled face and red ochre cheek stripe as she watches the camp, an entire lifetime in her eyes||the old woman holding a mushroom up to her nose and sniffing it, then tossing it away firmly
+58|scene||N|a remembered scene: a family of the band on a winter night lying sick on furs, a man vomiting at the edge of the camp in the snow, others holding their stomachs
+59|scene||D|a remembered scene: a grandmother slapping red berries out of a little girl's hand at the edge of a bush, the berries falling on the ground
+60|cast|elder,boy|E|the old woman and a ring of kids at camp, her holding up a root and the kids leaning in listening||the old woman telling a story with her hands raised, the kids wide eyed around her in the fire glow
+61|cast|boy|E|the boy and two other kids of the band crouched at the fire watching an adult eat a roasted root, mimicking the way she eats
+62|scene||E|a young woman of the band biting into a cooked root and then handing a piece to a little child who copies her exactly
+63|scene||E|the child chewing the root while staring at the woman's face, the woman nodding that it's fine||close on the little child's face mid chew, relaxed, food in both hands
+64|cast|hunter,boy|N|the boy sitting between the hunter and the old woman at the fire, eating the same strips of roasted meat they eat
+65|cast|hunter,elder,boy|N|the band eating together around the campfire, passing food hand to hand, the boy in the middle
+66|cast|boy|D|the boy alone in the empty beech wood, small among tall trees, pale mushrooms at his feet
+67|cast|elder|E|the old woman looking up at the camera with a quiet humble smile, holding a handful of leaves
+68|scene||X|a lush green mountain forest in Tanzania in the nineteen eighties, a young western researcher with binoculars and a notebook crouched on a trail beside a local herbalist in a shirt and cap||the researcher and the herbalist peering through thick leaves at chimpanzees in a clearing, the herbalist pointing
+69|scene||X|the herbalist kneeling in the forest showing the researcher a bitter shrub with long green leaves, both studying it
+70|scene||X|a wild adult female chimpanzee sitting alone on a forest path, hunched and tired looking, her eyes dull
+71|scene||X|the sick female chimpanzee lagging far behind her group on a forest trail, the others disappearing among the trees ahead
+72|scene||X|the chimpanzee reaching for a shrub with long green leaves and breaking off a young shoot in a green Tanzanian forest||the chimpanzee carefully peeling the outer bark off the shoot with her teeth, strips falling on the ground
+73|scene||X|close on the chimpanzee chewing the pale inner pith of the shoot and sucking the juice, a thoughtful face||the chimpanzee spitting out the chewed fibres and reaching for another shoot
+74|scene||X|the same female chimpanzee striding quickly along the forest trail the next day, alert and healthy, catching up with her group
+75|obj||X|a laboratory bench with a microscope, small glass dishes of chopped green plant pith and petri dishes, labelled with handwritten tape in a modest nineteen nineties lab||a microscope view of tiny round parasite worm eggs scattered on a slide, lit from below
+76|cast|elder|N|the old woman by the fire turning a small root over in her fingers, deep in thought
+77|cast|elder|N|the old woman scraping off the outer skin of a root with a flint blade, keeping only the pale inside
+78|obj||E|a bitter plant lying on a flat stone next to a small flint blade and a little pile of its peeled bark, nothing else
+79|cast|elder|E|the old woman pinching a tiny amount of crushed bitter leaves between two fingers and dropping it into a wooden bowl of water
+80|cast|hunter,elder|E|the camp at dusk: the hunter and the old woman working at the hearth, roots and leaves spread on hides, smoke rising, the sky deep blue
+81|cast|boy|E|the boy walking into camp at dusk, perfectly cheerful, waving to the others, the fire just lit||the band's women and men preparing food at the camp: peeling roots, laying out strips of meat, a skin bag of water hanging from a stick
+82|cast|elder|E|the old woman sniffing a cooking skin of boiling roots with a critical face
+83|obj||E|a rawhide cooking bag full of water and chopped roots hanging from sticks over the fire, hot stones dropped inside making it bubble
+84|cast|hunter|E|the hunter digging up a thick starchy root with a pointed digging stick at the muddy edge of the river at dusk||close on a thick, knobby, dirt covered wild root in the hunter's hands, the river behind
+85|scene||E|two women of the band peeling a pile of muddy roots with flint blades, the peels collecting on a hide
+86|obj||X|a wide grassy plain in Italy with low hills and a river at dawn, an excavation trench with string grids in the foreground||a snowy flat steppe landscape in Russia beside a big slow river, an excavation tent at the edge
+87|obj||X|an ancient flat grinding stone and a rounded handstone lying in an archaeological trench, dirt around them, a small scale bar
+88|obj||X|a microscope view of tiny glowing round grains of starch on a dark background, like little translucent pearls||a dense bed of cattail plants with brown spikes growing at the edge of a pond, ferns beside them
+89|scene||E|a woman of the band kneeling and grinding dried roots with a round stone on a flat stone slab, a pale powder building up, her shoulders working
+90|obj||E|a small heap of coarse pale root flour on a flat stone slab with a grinding stone resting beside it, firelight on it
+91|cast|elder|E|the old woman rubbing the pale root flour between her fingers, pleased
+92|scene||E|band members laying peeled sliced roots out on a rock to dry, and a basket of roots soaking in a calm side pool of the river||close on chopped roots soaking in clear river water held in by a ring of stones, the water slightly cloudy
+93|cast|hunter|N|the hunter blowing on embers until flames leap up in the camp hearth, sparks rising, his face lit
+94|cast|hunter|N|the hunter turning a wooden stick with strips of meat over the flames at the camp hearth||roots roasting in the hot ashes at the edge of the fire, blackened skins splitting open
+95|cast|hunter|N|the hunter laying his spear down on the ground and stepping toward the fire
+96|cast|hunter,elder,boy|N|the hearth at the centre of the camp at night, a ring of stones, everyone's hands stretched toward it
+97|cast|elder|N|the old woman noticing something and looking up from the fire, a flicker of worry
+98|obj||D|pale greenish white mushrooms in the forest at dusk, smooth caps and white skirts, menacing in their stillness
+99|obj||N|a pale mushroom dropped into a bubbling rawhide cooking bag over the fire, steam rising||pale mushroom slices drying on a flat rock by the fire, unchanged
+100|cast|boy|N|the boy at the fire eating his supper calmly, totally unaware, the old woman glancing at him
+101|cast|boy|N|close on the boy yawning by the fire, his face slightly pale, the flicker of the flames on his skin
+102|cast|elder|N|the old woman walking down to the river at night with a wooden bowl, moonlight on the water
+103|cast|elder|N|the old woman kneeling at the riverbank in the moonlight, digging her fingers into a pale vein of clay in the bank
+104|scene||X|a woman in a village in a hot dry country sitting on a doorstep, eating a piece of pale clay from her palm, a market basket beside her||a market stall with heaps of pale clay balls and baked clay tablets for eating, sold by a woman
+105|cast|elder|N|close on the old woman's hand holding a lump of smooth pale wet clay by the river, water dripping off it
+106|scene||X|a pregnant woman sitting under a tree in a rural village, nibbling on a small chunk of white clay, chickens around
+107|scene||X|a family in a stone house in the high Andes, an old woman mixing grey clay with water in a clay bowl beside a pot of boiled potatoes
+108|scene||X|a nineteen sixties scientist in a white coat frowning at a lump of clay on his desk among stacks of papers
+109|scene||X|a young bearded researcher in the nineteen eighties walking with a backpack through high Andes farmland, stone walls, a highland village of adobe houses behind||the researcher crouching beside a woman of the Andes, watching her prepare boiled small potatoes and a bowl of clay sauce
+110|obj||X|small knobbly wild potatoes freshly dug from dark Andean soil, purple and yellow, on a woven cloth
+111|obj||X|a wild potato cut in half showing greenish flesh under the skin, on a cutting board in a rustic kitchen||a woman in the Andes with a hand on her stomach, sitting on a doorstep looking ill
+112|obj||X|a small clay bowl of smooth grey clay dip next to boiled small potatoes on a woven cloth, one potato dipped in clay
+113|scene||X|the researcher in a modest university lab in the nineteen eighties pouring powdered clay into test tubes, notes and clay samples in paper bags around him||the researcher holding a test tube up to the window light, the clay settling at the bottom, a satisfied look
+114|obj||X|test tubes in a rack where cloudy clay has settled at the bottom and the liquid above has turned clear, on a lab bench||a horseshoe magnet surrounded by spiky clumps of iron filings on a sheet of paper
+115|obj||X|a glass of cloudy water with fine clay swirling in it on a wooden table, lit by daylight from off frame||a close of muddy riverbank clay with water seeping through it
+116|cast|elder|N|the old woman by the fire stirring a bowl of pale clay with water using her fingers, determined
+117|obj||I|an old fashioned glass bottle of chalky white anti diarrhea medicine and a measuring spoon on a pharmacy shelf in the nineteen seventies||a row of chalky white stomach remedy bottles on a small town drugstore shelf
+118|scene||I|a nineteen seventies drugstore counter with a pharmacist in a white coat handing a bottle of white stomach medicine to a customer
+119|scene||X|hundreds of red and green macaws clinging to a reddish clay cliff over an Amazon river, chewing on the clay, a noisy crowd of birds||close on two macaws biting chunks of orange clay out of the riverbank wall
+120|scene||X|a macaw cracking a hard seed with its beak on a branch in the rainforest
+121|cast|elder|N|the old woman at night looking at the clay in her bowl, then at the sleeping boy, thinking||the empty dark riverbank at night, only the sound of water, a few pale clay scrapes on the mud
+122|obj||X|an archaeological excavation of a cave floor showing layers of soil, a few stone tools, nothing more, under lamps||a gorilla in a misty forest licking reddish earth from a bank
+123|scene||X|a young chimpanzee eating a lump of reddish clay from a termite mound in a forest
+124|cast|elder|N|the old woman scooping a handful of pale smooth clay from the riverbank and squeezing it in her fist
+125|cast|elder,boy|N|the old woman holding a wooden bowl of clay water to the boy's lips by the fire as he drinks with a grimace
+126|cast|elder|N|the old woman's lined face in the firelight, calm, unhurried, as if she has done this many times
+127|cast|boy|N|the boy asleep on furs near the low fire at night, his face shiny with sweat, restless
+128|obj||N|the camp hearth burned down to red embers in the middle of the night, sleeping bodies under furs around it, the cliff dark above
+129|cast|boy|N|the boy jolting awake under his furs in the dark, clutching his stomach, eyes wide in fear
+130|cast|boy|N|the boy curled up on his side under the furs at night, pale and sweaty, his eyes squeezed shut, the low fire beside him||the boy sitting hunched with his arms around his knees in the dark, upset, the hunter waking up beside him
+131|cast|hunter,boy|N|the hunter kneeling by the sick boy and holding him up as he retches, alarmed
+132|obj||N|a burnt stick tracing a long line in the dust by the fire, with a small pale mushroom placed at one end, in the glow of the embers||the half-eaten mushroom cap in the forest leaves at dusk, beside it a long line of footprints walking away
+133|cast|boy|D|a memory of earlier in the day: the boy jumping across stones of the river, having fun, far from where he ate the mushroom
+134|cast|boy|D|a memory: the boy drinking from the river with cupped hands and chewing a strip of dried meat on the bank
+135|cast|hunter|N|the hunter at night looking at the boy and then around the camp at the food, the water bag, the meat, confused
+136|cast|boy|N|close on the boy's face in the dark, eyes squeezed shut, nauseous, a strong memory forming
+137|scene||X|a nineteen sixties psychology laboratory with rows of wire cages of white lab rats, a man in a white coat holding a clipboard||the psychologist in a lab coat holding a white rat in his hands and looking at it, a water bottle on the cage
+138|obj||X|a white lab rat sniffing a small dish of sweet flavored water in a clean wire cage
+139|obj||X|a white lab rat pushing a lever in a box beside a small light bulb in an old laboratory
+140|obj||X|a white lab rat turning away from the dish of flavored water and refusing to drink, ears back||a white lab rat backed into the corner of its cage, avoiding the dish
+141|obj||X|the untouched water dish in the rat cage with the rat sleeping far away from it
+142|now|hunter|I|the same modern man at a seafood restaurant table slurping a raw oyster, laughing with friends||the same modern man at a gas station counter at night holding a wrapped sandwich, a doubtful look
+143|now|hunter|I|the same modern man hunched over a toilet in a small bathroom in the middle of the night, miserable, a towel on the floor
+144|now|hunter|I|the same modern man years later at a party, a friend offering him a shot of tequila, his face going pale and he pushes it away
+145|now|hunter|I|the same modern man in his kitchen sniffing a takeout container and recoiling||back at the camp, the hunter turning away from a strange mushroom another man offers him, the same recoil
+146|cast|boy|N|the sick boy wrapped in furs, staring weakly into the embers with a haunted look
+147|cast|boy|D|the boy in another autumn, a few years older, walking past a cluster of pale mushrooms and stepping wide around them with a hard look||the boy kicking leaves over a cluster of pale mushrooms
+148|scene||N|the other kids of the band at night sitting up in their furs, watching the sick boy with frightened eyes
+149|cast|elder|N|the old woman kneeling over the boy by the fire in the middle of the night, sleeves pushed up, fully alert
+150|cast|elder,boy|N|the old woman pressing a hand on the boy's sweating forehead and the other on his stomach, reading him||close on the old woman's worried eyes in the firelight
+151|obj||N|a small leather pouch spilling dried leaves, bark strips and roots onto a hide by the fire, the remedies of a healer
+152|cast|elder|N|the old woman sorting her dried leaves and bark strips by firelight, choosing one
+153|scene||X|the dark mouth of a cave in a wooded hillside in northern Spain at dusk, rain-darkened stone and ferns
+154|scene||X|a modern ancient DNA clean room: a scientist in a full white suit, mask and gloves drilling a tiny sample from a fossil tooth under bright lamps||a computer screen in a genetics lab glowing with rows of DNA sequence letters, out of focus at the edge
+155|scene||N|a Neanderthal man with a swollen jaw sitting by a fire in a cave, holding his cheek in pain, another Neanderthal bringing him leaves||the sick Neanderthal man curled up on furs in the cave, holding his stomach
+156|scene||D|a Neanderthal woman stripping bark from a young poplar tree by a stream with a stone blade
+157|obj||D|close on strips of pale grey poplar bark and silver green poplar leaves on a flat stone||the sick Neanderthal chewing a strip of poplar bark slowly, his eyes closed
+158|obj||X|blue green fuzzy Penicillium mould growing on an old piece of bread, close up
+159|obj||X|a nineteen forties lab glass bottle and a small vial of penicillin on a wooden laboratory bench
+160|scene||N|the sick Neanderthal looking at a mouldy piece of food in his hand by the fire, uncertain
+161|scene||N|a group of Neanderthals by a cave fire, only the sick one chewing bark and leaves while the others eat meat||close on the sick Neanderthal's face as he chews bitter bark, eyes watering
+162|cast|elder|N|the old woman crushing poplar bark between two stones into shreds by the fire
+163|cast|elder|N|the old woman holding a strip of bark in one hand and a bunch of bitter yarrow in the other
+164|cast|hunter,elder,boy|N|the hunter holding the boy wrapped in furs close to the fire while the old woman feeds him clay water, warmth and care||the hunter staying awake all night next to the boy, adding branches to the fire
+165|cast|hunter,boy|N|the hunter sitting next to the sleeping boy with one hand on his back, exhausted but staying
+166|cast|hunter|N|the hunter feeding the fire with a branch while holding a skin of water to the boy's lips
+167|cast|boy|N|close on the boy, eyes half open, weak, holding the hunter's finger
+168|cast|boy|N|the boy bent forward at the edge of the fire looking unwell, the hunter steadying his shoulders with both hands
+169|scene||I|a modern hospital intensive care room at night with monitors glowing beside an empty bed, a nurse checking an IV drip||a modern doctor in scrubs looking at a liver scan on a monitor with a grave face
+170|cast|boy|N|the boy lying still on the furs, very pale, the old woman's hand on his chest, embers glowing low
+171|cast|boy|M|grey cold dawn at the camp, the boy sitting up wrapped in furs, grey-faced, shaking, exhausted
+172|cast|hunter,elder,boy|M|the old woman hugging the exhausted boy at dawn as the hunter puts a hand on his head, relieved, the river mist behind them||the old woman at dawn painting a small ochre mark on a rock: a little pale mushroom crossed out
+173|obj||X|a wide arid hilly landscape in southern Africa with rocky outcrops and dry bush in hard afternoon sunlight
+174|scene||X|a southern African hunter of long ago crouched in tall dry grass at dusk with a small bow and a thin arrow, watching an antelope||close on the hunter dipping the tip of a thin reed arrow into a dark sticky paste in a small shell
+175|obj||X|a sandstone rock shelter overhang at the edge of a green wooded valley in KwaZulu-Natal, South Africa, with an excavation grid under the overhang
+176|obj||X|a few tiny chipped quartz arrowheads lying on a black cloth under a lab lamp, a millimetre ruler beside them||close on one tiny white quartz arrowhead held in tweezers under a microscope
+177|cast|hunter|N|the hunter of your band at night by the fire far away in Europe, unaware, sharpening a flint
+178|scene||X|a researcher in a lab coat swabbing the edge of a tiny quartz point with a cotton tip under a magnifying lamp||a chemistry instrument with a glowing screen showing peaks of a chemical chart, out of focus at the edge
+179|obj||X|a big round brown bulb of the Boophone plant half buried in dry red sandy soil with a fan of grey green leaves on top, in the African sun||a woman's hands slicing open the bulb with a blade, the inner layers wet and pale
+180|scene||X|an old black and white style photo of a southern African hunter in the nineteenth century preparing arrows by a fire, quiver of arrows beside him
+181|obj||X|an antelope running across dry grassland and stumbling, a small thin arrow lodged in its side, hunters far away
+182|scene||X|a southern African hunter of sixty thousand years ago peeling a poisonous bulb and scraping the inner layers into a little shell bowl with a stone blade||the hunter mixing the scrapings into a dark paste over a small fire, very carefully, at arm's length
+183|scene||X|the hunter smearing the dark paste on the tiny quartz tip of an arrow and setting it to dry on a stone||the hunter drawing his bow in tall grass, an antelope in the distance
+184|cast|elder|N|the old woman holding a poisonous bulb in one hand and a medicinal leaf in the other by the fire, weighing them
+185|cast|elder|N|the old woman placing a small pile of dangerous plants apart from the food plants, on their own stone
+186|cast|hunter|N|the hunter holding a tiny stone arrow point up to the fire light with respect
+187|obj||X|a wide hot dry landscape near a huge jade green lake in northern Kenya, barren hills and rocks, harsh sunlight
+188|cast|elder,boy|N|the old woman and the boy at the fire, the boy wrapped up and looking at her, listening
+189|obj||X|a blank layer of sediment in an excavation trench, nothing in it, dusty, under hard light
+190|obj||X|sunlight on cracked dry ground with a few bone fragments emerging in an eroded gully in northern Kenya
+191|obj||X|the wind swept shore of Lake Turkana in Kenya with crumbling sediment hills||archaeologists kneeling in an eroded gully in Kenya brushing dirt off old brown fossil bones, sun hats, a measuring tape
+192|scene||X|an early human woman of 1.6 million years ago with a heavy brow ridge and a hide cloak, walking upright across dry grass plains near a big lake in Africa, seen from behind and the side
+193|obj||X|close up of a long fossil leg bone in a museum drawer, its surface covered in a thick rough bumpy crust of abnormal bone growth, a scale bar beside it
+194|scene||X|three scientists in the early nineteen eighties around a table covered with fossil bones and papers, one pointing at a bone, slide projector light
+195|scene||X|an early human woman with a heavy brow ridge and a hide cloak crouched on the dry plains of Africa, holding a dark red piece of meat from a hunt, two others of her group watching||a dark red piece of raw meat lying on a flat sunlit rock on the African plain, a stone flake beside it
+196|scene||X|the Homo erectus woman lying under a thorn tree, weak and in pain, others of her group sitting near her looking worried||the Homo erectus woman's hand on the dry earth, weak
+197|obj||X|a wild bees' nest in a hollow tree with combs of pale bee larvae, bees crawling||a hand pulling a dripping honeycomb full of larvae out of a tree hollow
+198|scene||X|the Homo erectus group walking away across the plain at sunset, one figure lying still behind them under the tree||the empty thorn tree on the plain at sunset, a few belongings of the group left behind under it
+199|cast|elder|N|the old woman at the fire raising one finger as if to warn, serious
+200|scene||X|two exhausted polar explorers in 1912 wool clothing and frost covered beards in a small tent on the Antarctic ice, a primus stove and a cooking pot, a husky outside||the explorers trudging across endless white ice hauling a sledge in a blizzard
+201|scene||X|a weak polar explorer in 1912 lying in his sleeping bag in a tent on the ice, pale and gaunt, his companion leaning over him||a lone cross of wooden sticks in the snow on the Antarctic ice under a grey sky
+202|scene||X|a lone gaunt polar explorer in 1912 clothing staggering across the Antarctic ice toward a distant hut, hauling a tiny sledge
+203|scene||X|an Inuit hunter in fur parka by an ice hole in the Arctic, a polar bear far away on the ice||an Inuit hunter in a fur parka kneeling on the sea ice beside his sled, pointing toward a polar bear far away
+204|scene||X|the two 1912 polar explorers sitting in their small tent on the ice, sharing a tin cup of hot broth, exhausted and thin
+205|cast|elder|N|the old woman at the fire, the kids around her, raising her open palms as she begins to speak
+206|cast|hunter,elder,boy|N|the whole band around the fire in the middle of the night, the boy wrapped in furs sitting up, everyone looking at the old woman||the hunter looking into the fire, thinking about everything that happened
+207|cast|elder|N|the old woman pointing at the boy and then at her own head, serious
+208|cast|hunter,elder,boy|N|the band huddled around the fire under the overhang, the stars above the cliff
+209|cast|elder|N|the old woman counting on her fingers in the firelight as she names each rule||the band's people peeling, soaking and grinding roots together by the fire, a shared work scene
+210|cast|elder|N|the old woman with her arms around two kids telling a story by the fire||the old woman painting ochre marks on the rock wall of the overhang by firelight: plants, mushrooms, marks
+211|now|hunter|I|the same modern man sitting down to a plate of food at his kitchen table, picking up a fork, warm light
+212|now|hunter|I|close on the same modern man's dinner plate with a baked potato, almonds, mushrooms on a slice of pizza, a mug of coffee||the same modern man taking a sip of black coffee and smiling this time
+213|cast|hunter,elder,boy|N|the band's faces around the fire, young and old, lit warm, generation after generation||the old woman passing a root to the boy who passes it to a smaller child
+214|obj||N|a small low pile of stones on a hill overlooking the dark valley at night under the stars
+215|cast|boy|N|the boy wrapped in furs by the fire sipping warm water from a wooden bowl, tired but alive||close on the boy's hands around the wooden bowl, steam rising
+216|cast|elder|N|the old woman telling a story with expressive hands by the fire, the shadow of her hands on the rock wall behind
+217|cast|boy|N|the kids of the band listening wide eyed by the fire, the boy among them nodding solemnly
+218|cast|hunter|N|the hunter on watch at the edge of the camp at night with his spear, looking out into the dark woods
+219|scene||N|the yellow eyes of a cave lion shining in the dark bushes beyond the firelight, and the shapes of hyenas moving between trees
+220|cast|hunter|N|the hunter raising a burning branch from the fire toward the darkness, ready, his face fierce
+221|cast|hunter,elder,boy|N|the band's little fire glowing under the dark cliff, seen from far away in the black valley, the stars above
