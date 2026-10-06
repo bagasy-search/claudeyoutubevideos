@@ -51,6 +51,7 @@ shots.forEach((s, i) => {
     }
     if (c.props.bed && /\.mp4$/.test(c.props.bed)) c.props.bed += "#" + nFr(c.props.bed);
   }
+  if (c.k === "img" && f0 > 0 && f0 < 60 * FPS) c.punch = 1;
   if (c.k === "img") lastBed = c.clip && c.real ? c.img || lastBed : c.img || lastBed;
   if (s.ov) ovs.push({ from: f0, dur: c.dur, name: s.ov.c, props: s.ov.props });
   cues.push(c);

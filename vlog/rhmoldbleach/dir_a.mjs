@@ -43,9 +43,11 @@ export const SHOTS = [
   S(4, "And there's the thirty seconds", "kf", "k_squeegee", { p: BI(`Close view of a yellow-gloved hand pulling a rubber squeegee down a wet white subway tile wall in ${SHOWER}, water streaming ahead of the blade.`), d1: "the squeegee blade pulls down the wet tile", d2: "the tile behind the blade is left clean and dry", sound: "a rubber squeegee squeaking down wet tile" }),
   S(4, "after every shower", "bi", "st_shower", { q: "shower head water running", q2: "shower water stream", p: BI("Water pouring from a chrome shower head in an ordinary home bathroom.") }),
   S(4, "so I haven't seen a black dot", "rh", "r_ownbath", { p: RHP(`She stands with her arms crossed beside a spotless white tub and shower in her own small cozy bathroom with a seashell soap dish and a yellow towel, proud and smiling.`) }),
+  C(4, "in eleven years", "RhFogMirror", { img: I("b_fogmirror"), lines: ["11 years", "not one dot"] }),
   // ── quién soy
   S(5, "", "av", "", { ov: { c: "RhNameTag", props: { name: "Rhonda", sub: "34 years cleaning other people's houses" } } }),
   S(5, "houses in Ohio", "bi", "st_ohiohouses", { q: "suburban houses street autumn", p: BI("A quiet small-town Ohio street in the fall: two-story wooden houses with porches, maple trees, a parked car.") }),
+  S(5, "for thirty four years", "rh", "r_caddy2", { p: RHP(`She walks up the front steps of a white two-story Ohio house with a porch, carrying her gray cleaning caddy full of brushes and spray bottles, autumn leaves on the steps.`) }),
   S(5, "I must have bleached", "bi", "b_bleachjugs", { p: BI("The open cabinet under a bathroom sink packed with a row of plain white bleach jugs with blank labels, a pair of yellow rubber gloves draped over one."), anim: "the cabinet door swings open a little wider; nothing else moves" }),
   S(5, "before I figured this out", "vl", "m3", { a: `stands in ${SHOWER} tugging the cuff of one yellow rubber glove tight over her wrist, a let's-get-to-work grin.`, act: "She snaps the glove cuff tight and talks to the camera, nodding toward the shower corner, warm and direct.", b: "she stands with both yellow-gloved hands on her hips by the tub, smiling at the camera, ready to work." }),
   // ── 0:56 · EL ARREGLO

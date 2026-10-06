@@ -64,10 +64,15 @@ const COMP: Record<string, React.FC<any>> = {
 };
 const OVC: Record<string, React.FC<any>> = { RhNameTag, RhAsk, RhNextVideo };
 
+// minuto 1: cada plano entra con un "punch-in" (zoom de golpe 1,2 → 1 en 6 cuadros): el corte se siente aunque los dos planos se parezcan
+const Punch: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const f = useCurrentFrame(); const s = interpolate(f, [0, 6], [1.2, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return <AbsoluteFill style={{ scale: String(s), transformOrigin: "50% 50%" }}>{children}</AbsoluteFill>;
+};
 const Shot: React.FC<{ c: any }> = ({ c }) => {
   if (c.k === "av") return <Avatar c={c} />;
   if (c.k === "vl" || c.k === "kf") return <Clip src={c.src} sf={c.sf} seed={c.seed} />;
-  if (c.k === "img") return <ImgShot c={c} />;
+  if (c.k === "img") return c.punch ? <Punch><ImgShot c={c} /></Punch> : <ImgShot c={c} />;
   if (c.k === "comp") { const C = COMP[c.name]; return C ? <C {...c.props} /> : <Placeholder />; }
   return <Placeholder />;
 };
