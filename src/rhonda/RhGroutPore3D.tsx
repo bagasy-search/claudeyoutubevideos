@@ -32,9 +32,9 @@ const poreR = (i: number) => 0.022 + rnd(i * 7 + 3) * 0.04;
 // raíz r: arranca en un puntito de la superficie y baja zigzagueando de poro en poro
 function rootCurve(r: number) {
   const x0 = (r / (NR - 1) - 0.5) * GW * 0.78 + (rnd(r * 11) - 0.5) * 0.08;
-  const P: any[] = [new THREE.Vector3(x0, TOP + 0.02, GD / 2 - 0.05)];
+  const P: any[] = [new THREE.Vector3(x0, TOP + 0.02, GD / 2 + 0.02)];
   const depth = 0.75 + rnd(r * 13) * 0.75;
-  for (let k = 1; k <= 6; k++) { const t = k / 6; P.push(new THREE.Vector3(x0 + (rnd(r * 17 + k) - 0.5) * 0.22, TOP - depth * t, GD / 2 - 0.05 - rnd(r * 19 + k) * 0.05)); }
+  for (let k = 1; k <= 6; k++) { const t = k / 6; P.push(new THREE.Vector3(x0 + (rnd(r * 17 + k) - 0.5) * 0.22, TOP - depth * t, GD / 2 + 0.02 + rnd(r * 19 + k) * 0.012)); }
   return new THREE.CatmullRomCurve3(P, false, "centripetal", 0.4);
 }
 
@@ -46,8 +46,8 @@ export const RhGroutPore3D: React.FC<{ mode?: Mode; labels?: Labels; short?: boo
   const ue = ease(u);
   // cámara: empuje lento hacia la cara de corte + leve órbita (nunca quieta)
   const a = interpolate(f, [0, T], [-0.32, 0.18], { easing: Easing.inOut(Easing.cubic) });
-  const dist = interpolate(f, [0, T], [short ? 5.4 : 6.2, short ? 4.8 : 5.0], { easing: Easing.out(Easing.cubic) });
-  const target = new THREE.Vector3(0, 0.25, 0.1);
+  const dist = interpolate(f, [0, T], [short ? 4.6 : 5.2, short ? 4.0 : 4.2], { easing: Easing.out(Easing.cubic) });
+  const target = new THREE.Vector3(0, 0.38, 0.15);
   const camPos = new THREE.Vector3(Math.sin(a) * dist, 2.35 + 0.3 * (1 - f / T), Math.cos(a) * dist);
 
   const roots = useMemo(() => Array.from({ length: NR }, (_, r) => rootCurve(r)), []);
@@ -152,7 +152,7 @@ export const RhGroutPore3D: React.FC<{ mode?: Mode; labels?: Labels; short?: boo
           return (
             <group key={r}>
               {k > 0.02 && vis > 0.02 ? <mesh geometry={partial(r, k)} material={mats.root} scale={[1, 1, 1]} /> : null}
-              {vis > 0.02 ? [0, 1, 2, 3].map((q) => <mesh key={q} position={[top.x + (q ? (rnd(r * 7 + q) - 0.5) * 0.12 : 0), TOP + 0.02, top.z - (q ? rnd(r * 9 + q) * 0.25 : 0)]} scale={[1, 0.45, 1]} material={dotWhite > 0.5 ? mats.paint : mats.dot}><sphereGeometry args={[(q ? 0.035 : 0.065) * dotsVis * (1 - 0.3 * dotWhite), 12, 8]} /></mesh>) : null}
+              {vis > 0.02 ? [0, 1, 2, 3].map((q) => <mesh key={q} position={[top.x + (q ? (rnd(r * 7 + q) - 0.5) * 0.12 : 0), TOP + 0.02, top.z - 0.04 - (q ? 0.05 + rnd(r * 9 + q) * 0.3 : 0)]} scale={[1, 0.45, 1]} material={dotWhite > 0.5 ? mats.paint : mats.dot}><sphereGeometry args={[(q ? 0.035 : 0.065) * dotsVis * (1 - 0.3 * dotWhite), 12, 8]} /></mesh>) : null}
             </group>
           );
         })}
