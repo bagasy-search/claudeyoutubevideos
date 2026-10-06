@@ -106,6 +106,15 @@ function compFx(n, c, durS) {
   if (n === "ClCoating") { add("foley/sand_paper_b.flac", 0.4, 0.25, Math.min(3, durS * 0.5)); add("foley/scrub_toothbrush.flac", 0.32, 0.6, Math.min(3, durS * 0.5)); }
   if (n === "ClTally") { add("design/pencil_strokes.flac", 0.34, 0.3, durS * 0.45); add("design/stamp_rubber.flac", 0.38, durS * 0.7, 0.8); }
   if (n === "ClReceipt") { add("design/paper_slide.flac", 0.34, 0.2, Math.min(3, durS * 0.5)); add("design/ding_oven.flac", 0.34, durS * 0.65, 1.4); }
+  if (n === "ClCaulk3D") {
+    if (P.mode === "inside") add("design/texture_suspense.flac", 0.22, 0.2, durS - 0.3);
+    if (P.mode === "spray") { add("foley/spray_trigger_a.flac", 0.42, 0.3, 1); add("foley/drip_sink.flac", 0.32, 1.2, durS - 1.4); }
+    if (P.mode === "strips" || P.mode === "under") { add("foley/paper_towel_wet.flac", 0.38, 0.15, 1.6); add("foley/plastic_wrapper.flac", 0.36, 1.0, 1.6); add("design/ding_oven.flac", 0.3, durS * 0.85, 1.4); }
+    if (P.mode === "seal") { add("foley/cutter_cut.flac", 0.36, 0.2, 1); add("design/impact_heartbeat.flac", 0.4, durS * 0.6, 2.2); }
+  }
+  if (n === "ClFilmWrap") { const k = P.n || 6, per = Math.max(0.2, durS * 0.45 / k); for (let i = 0; i < k; i++) add("foley/paper_towel_wet.flac", 0.3, 0.3 + i * per, 0.7); add("foley/plastic_wrapper.flac", 0.42, 0.3 + k * per, 1.8); }
+  if (n === "ClTubMap") { add("design/tick_clock_close.flac", 0.24, 0.3, durS * 0.6); add("design/ding_oven.flac", 0.36, durS * 0.72, 1.4); add("design/stamp_rubber.flac", 0.36, durS * 0.8, 0.8); }
+  if (n === "ClCaulkGun") { add("foley/tp_roll.flac", 0.32, 0.2, 1); add("foley/cap_open.flac", 0.3, durS * 0.22, 0.8); add("foley/scrub_pad.flac", 0.3, durS * 0.5, 1.2); add("foley/tp_tear_a.flac", 0.32, durS * 0.72, 0.9); }
   if (n === "ClTimer30") { add("design/tick_clock_close.flac", 0.26, 0.1, Math.max(0.6, durS - 0.9)); add(P.overnight ? "design/ding_oven.flac" : "design/ding_oven.flac", 0.4, Math.max(0.5, durS - (P.fast ? 0.2 : 0.65)), 1.6); }
   if (n === "ClNeverMix") { if (P.chart) add("design/page_turn_big.flac", 0.34, 0.1, 1); else if (P.soft) { add("design/pop_soap_bubble.flac", 0.34, durS * 0.4, 0.7); add("design/stamp_rubber.flac", 0.38, durS * 0.42, 0.8); } else { add("design/alarm_warning_buzzer.flac", P.short ? 0.12 : 0.18, durS * 0.38, 0.9); add("design/stamp_es.flac", 0.45, durS * 0.42, 1); } }
   if (n === "ClBookPage") { add("design/page_turn_big.flac", 0.34, 0.05, 1); add("design/stamp_rubber.flac", 0.42, 0.95, 0.9); }

@@ -1,0 +1,6 @@
+[
+ {"name": "b_caulkdirty", "prompt": "Close view along the edge of a white bathtub where it meets beige-cream wall tiles in a hotel bathroom: the white silicone caulk line has black mold showing through inside it along its whole length, gray grout lines above, lit by the bathroom ceiling light. Framed so the caulk line crosses the frame in the middle third, diagonal."},
+ {"name": "b_bathtub", "prompt": "A hotel bathroom bathtub against beige-cream wall tiles seen at eye level from the doorway, a folded white bath mat on its edge, a chrome faucet, warm ceiling light, nobody in the room, empty space in the middle of the frame."},
+ {"name": "b_bathtub2", "prompt": "The corner of a white bathtub against beige-cream wall tiles in a hotel bathroom, close at knee height, a small frosted window, warm light, nobody in the room."},
+ {"name": "b_counter", "prompt": "A white hotel bathroom counter at eye level with a roll of paper towels, a roll of cling film and a brown plastic bottle with a blank label at one end, lots of empty counter space, beige-cream tiles behind."}
+]

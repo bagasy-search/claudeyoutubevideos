@@ -13,7 +13,7 @@ import { CL, LABEL, SERIF, rnd, clamp01, ease } from "./ClTheme";
 import { Bed, Contact, RoomLight, lin } from "./ClParts";
 
 type Mode = "layers" | "detergent" | "paste" | "flake";
-const TW = 3.2, TD = 2.2, LIP = 0.16, NL = 8, LH = 0.028;
+const TW = 3.2, TD = 2.2, LIP = 0.16, NL = 8, LH = 0.04;
 const Cam: React.FC<{ pos: any; target: any }> = ({ pos, target }) => {
   const { camera } = useThree(); camera.position.copy(pos); camera.lookAt(target); camera.updateProjectionMatrix(); return null;
 };
@@ -23,9 +23,9 @@ export const ClTray3D: React.FC<{ mode?: Mode; labels?: { a?: string; b?: string
   const { width, height, durationInFrames: T } = useVideoConfig();
   const u = clamp01((f - 6) / Math.max(1, T * 0.8 - 6));
   const a = interpolate(f, [0, T], [-0.55, -0.2], { easing: Easing.inOut(Easing.cubic) });
-  const dist = interpolate(f, [0, T], [4.6, 3.6]);
-  const target = new THREE.Vector3(0.9, 0.05, 0.55);
-  const camPos = new THREE.Vector3(target.x + Math.sin(a) * dist, 2.0, target.z + Math.cos(a) * dist);
+  const dist = interpolate(f, [0, T], [6.4, 5.4]);
+  const target = new THREE.Vector3(0.35, 0.0, 0.3);
+  const camPos = new THREE.Vector3(target.x + Math.sin(a) * dist, 2.6, target.z + Math.cos(a) * dist);
   const nL = mode === "layers" ? Math.max(1, Math.round(NL * ease(u))) : NL;
   const pasteK = mode === "paste" ? lin(f, 4, 18) : 0;
   const under = mode === "paste" ? clamp01((u - 0.35) / 0.55) : 0;           // las burbujas se meten debajo
@@ -34,7 +34,7 @@ export const ClTray3D: React.FC<{ mode?: Mode; labels?: { a?: string; b?: string
   const mats = useMemo(() => ({
     metal: new THREE.MeshStandardMaterial({ color: "#C4C8CC", metalness: 0.55, roughness: 0.35 }),
     metalCut: new THREE.MeshStandardMaterial({ color: "#9EA3A8", metalness: 0.5, roughness: 0.4 }),
-    layers: Array.from({ length: NL }, (_, k) => new THREE.MeshStandardMaterial({ color: new THREE.Color("#C99A4C").lerp(new THREE.Color("#4E2A10"), k / (NL - 1)), roughness: 0.55, metalness: 0.05 })),
+    layers: Array.from({ length: NL }, (_, k) => new THREE.MeshStandardMaterial({ color: new THREE.Color(k % 2 ? "#D9A85A" : "#8A5424").lerp(new THREE.Color("#3E200C"), 0.6 * k / (NL - 1)), roughness: 0.55, metalness: 0.05 })),
     paste: new THREE.MeshStandardMaterial({ color: "#F7F6F1", roughness: 0.95 }),
     water: new THREE.MeshStandardMaterial({ color: "#D6EAF7", roughness: 0.05, transparent: true, opacity: 0.8 }),
     foam: new THREE.MeshStandardMaterial({ color: "#FFFFFF", roughness: 0.4, transparent: true, opacity: 0.9 }),
@@ -53,8 +53,8 @@ export const ClTray3D: React.FC<{ mode?: Mode; labels?: { a?: string; b?: string
   const base = proj(new THREE.Vector3(0, -0.1, 0));
   const edge = new THREE.Vector3(TW / 2 - 0.2, 0.05 + NL * LH * 0.5, TD / 2 - 0.2);
   const L: { at: any; text: string; dx: number; dy: number; t0: number }[] = [];
-  if (labels.a) L.push({ at: edge, text: labels.a, dx: 300, dy: -150, t0: 10 });
-  if (labels.b) L.push({ at: new THREE.Vector3(TW / 2 - 0.2, 0.04, TD / 2 - 0.2), text: labels.b, dx: 300, dy: 120, t0: Math.round(T * 0.4) });
+  if (labels.a) L.push({ at: edge, text: labels.a, dx: -120, dy: 230, t0: 10 });
+  if (labels.b) L.push({ at: new THREE.Vector3(TW / 2 - 0.2, 0.04, TD / 2 - 0.2), text: labels.b, dx: -120, dy: 330, t0: Math.round(T * 0.4) });
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Bed src={bed} seed={19} dim={0.36} />

@@ -1,0 +1,69 @@
+[HOOK|cuter] Antes de cortar esa silicona con el cúter, déme una noche.
+[HOOK|negra] Esa línea negra no está arriba de la silicona. Está adentro. Por eso el rociado no le hace nada.
+[HOOK|promesa] Hoy se la dejo blanca sin arrancarla. Papel de cocina, el frasco marrón, film plástico, y ocho horas de sueño. Así estaba. Así quedó.
+[HOOK|hotel] Treinta años fui conserje en un hotel. Y una vez, la noche antes de una inspección, tuve que dejar blancas cuarenta bañeras. El presupuesto para rehacerlas todas ya estaba en el escritorio del gerente.
+[HOOK|rafaga] Mire. Seco la silicona. Corto tiras de papel. Las empapo. Las aprieto sobre la línea negra. Film encima. Y me voy a dormir...
+[HOOK|grito] ¡y mire eso a la mañana! ¡Blanca!
+[HOOK|loops] Pero hay tres cosas que tiene que saber. Por qué el rociado nunca puede con la silicona. El error del cúter, que hace que la silicona nueva se ponga negra en un mes. Y lo que pasó con las cuarenta bañeras esa noche. Primero, el arreglo entero.
+[FIX|promesa] Si vio mi video del moho, ésta es la promesa que le hice. Le dije que si la silicona sigue negra después de dos vueltas de rocío, el moho está adentro, y que había un truco de una noche entera. Acá está.
+[FIX|lista] Lo que necesita: el frasco marrón de agua oxigenada al tres por ciento, papel de cocina o discos de algodón, film plástico de la cocina, guantes, y un cepillo de dientes viejo para la mañana.
+[FIX|frasco] Y antes de empezar, pruebe el frasco. Eche un chorrito en la pileta, sobre algo sucio, o en una herida vieja de la mesada. Si hace espuma, está bueno. Si no hace nada, está cansado: un frasco abierto hace meses, o pasado a una botella transparente, ya no sirve. Uno nuevo cuesta un dólar.
+[FIX|secar] Primer paso: limpie la silicona con agua y un poco de detergente, para sacar el jabón y la grasa de arriba, y séquela bien con una toalla. Seca de verdad. El papel tiene que pegarse.
+[FIX|tiras] Segundo: corte el papel de cocina en tiras de unos cinco centímetros de ancho, lo que tenga de largo el rollo. Para una bañera, ocho o diez tiras.
+[FIX|empapar] Tercero: empape cada tira en agua oxigenada, en un plato hondo, hasta que gotee. Más o menos una taza en total para una bañera.
+[FIX|apretar] Cuarto: apriete las tiras sobre la línea de silicona, una al lado de la otra, un poquito encimadas, que no quede nada negro a la vista. Apriete con los dedos para que queden planas y pegadas, sin burbujas de aire.
+[FIX|rincones] Y en los rincones, donde la silicona dobla, el papel se despega. Ahí use discos de algodón. Enróllelos como un cigarrito, empápelos, y métalos en el rincón. Se quedan en su lugar toda la noche.
+[FIX|film] Quinto: tape las tiras con film plástico, apretado. Eso es el secreto. El film no deja que el agua oxigenada se evapore ni que el papel se seque. Así queda mojando la silicona toda la noche.
+[FIX|noche] Sexto: váyase a dormir. Ocho horas, por lo menos. Y esa noche, ducha en otro baño, o en la mañana.
+[FIX|seguridad] Y una cosa de seguridad: esa noche, la puerta del baño cerrada si hay chicos o mascotas en la casa. Nadie tiene que tocar ni morder esas tiras. Y la ventana o el extractor, abiertos.
+[FIX|manana] Séptimo, a la mañana: saque el film y las tiras, a la basura. Frote suave con el cepillo de dientes, enjuague con agua, y seque.
+[FIX|resumen] Repaso: limpiar y secar, tiras de cinco centímetros, empapadas, apretadas sobre lo negro, film encima, toda la noche, cepillo y enjuague.
+[CTA1|libro] Éste es el arreglo número seis de mi libro, El Frasco Marrón de Claudio, en la página catorce. Y esa página entera, con las cantidades y lo que hace si a las dos noches sigue negra, se la regalo. Apunte el celular a este código, o toque el link de la descripción.
+[ROCIO|porque] Ahora, ¿por qué el rociado nunca puede? Porque la silicona es lisa y está en una pared. Usted rocía, y en un minuto el líquido ya chorreó al fondo de la bañera. El agua oxigenada necesita tiempo mojando, y en la silicona no se queda ni un minuto.
+[ROCIO|adentro] Y encima, el moho de la silicona no está arriba. La silicona es como una goma blanda. Con los años, el moho se le mete adentro, y desde afuera usted ve la mancha a través de la silicona, como a través de un vidrio sucio.
+[ROCIO|papel] El papel hace lo que el rociado no puede: mantiene el agua oxigenada apoyada, horas y horas, y la va empujando para adentro. Es la misma idea de las tiras con vinagre del video del sarro. La venda. Pero acá, con el frasco marrón.
+[ROCIO|prueba] ¿Y cómo sabe si el moho está arriba o adentro? Pase un hisopo con agua oxigenada sobre la mancha y espere un minuto. Si la mancha se aclara y el hisopo sale gris, estaba arriba, y el rocío del video del moho alcanza. Si el hisopo sale blanco y la mancha sigue igual, está adentro. Ahí van las tiras.
+[ROCIO|nunca] Y una cosa importante: ese papel lleva agua oxigenada sola. Nunca vinagre en la misma tira, nunca cloro. Si la semana pasada usó cloro en esa bañera, enjuague bien y espere un día.
+[CUTER|error] Ahora el error que le prometí. El del cúter. La gente ve la silicona negra, la corta, la arranca, y pone silicona nueva encima de la unión, el mismo día.
+[CUTER|porque] Y en un mes, la silicona nueva tiene puntitos negros otra vez. ¿Sabe por qué? Porque el moho no estaba sólo en la silicona vieja. Estaba en la unión, entre la bañera y el azulejo, y esa unión quedó mojada debajo de la silicona nueva. Le pusieron una tapa a la casa del moho.
+[CUTER|hotel] En el hotel, un contratista rehizo la silicona de diez bañeras así, en un día. Rápido, prolijo. Al mes y medio, las diez tenían puntitos negros. El gerente me llamó a mí. Y le tuve que explicar al contratista lo que le voy a explicar a usted.
+[REHACER|cuando] Si a las dos noches de papel la silicona sigue negra, ahí sí: el moho está debajo, y esa silicona hay que cambiarla. Pero se cambia bien.
+[REHACER|sacar] Primero, corte y saque toda la silicona vieja, con el cúter y una espátula de plástico, sin rayar el esmalte.
+[REHACER|limpiar] Después, limpie la unión con agua oxigenada, rocío y diez minutos, y frote con el cepillo. Saque cada restito.
+[REHACER|secar] Y después, el paso que el contratista no hizo: deje secar la unión un día entero. Veinticuatro horas, sin ducharse ahí. Con el extractor o la ventana abierta. Si pone silicona sobre una unión húmeda, encierra el moho.
+[REHACER|poner] Recién ahí, cinta de pintor a los dos lados, silicona para baño que diga antimoho, un cordón parejo, alíselo con el dedo mojado en agua con jabón, saque la cinta, y no la moje por un día más.
+[REHACER|cuentas] Y para que tenga una idea: rehacer la silicona de una bañera con alguien que lo haga, entre el trabajo y el día sin usar el baño, sale mucho más que un rollo de papel y un frasco marrón. Por eso siempre, primero, la noche de papel. Casi siempre le ahorra todo lo demás.
+[CTA2|libro] El arreglo completo, con cómo saber si el moho está debajo y cómo rehacer la silicona sin encerrarlo, está en la página catorce de mi libro, y esa página se la regalo. El código está acá, o el link en la descripción.
+[BANERAS|historia] Y ahora lo de las cuarenta bañeras, lo que le prometí. Era temporada baja, y al otro día venía una inspección de la cadena hotelera. Y el gerente, el de la libreta, ya tenía en el escritorio un presupuesto para rehacer la silicona de cuarenta bañeras. Mucha plata. Y no había tiempo.
+[BANERAS|noche] Yo le dije: déjeme probar algo esta noche. Agarré dos rollos de papel de cocina, cuatro frascos marrones, y tres rollos de film. A las diez de la noche empecé por el primer piso. A las tres de la mañana terminé la última bañera del cuarto piso.
+[BANERAS|rosa] Rosa me ayudó con los últimos dos pisos, la de la lavandería, la de la nariz de sabueso. Ella cortaba las tiras, yo las apretaba. A esa hora, en el hotel vacío, no se escuchaba más que el film estirándose.
+[BANERAS|manana] A las siete de la mañana empezamos a sacar el film, bañera por bañera. Y una por una, la silicona estaba blanca. Treinta y siete de cuarenta.
+[BANERAS|tres] Las tres que quedaron grises eran las de la pared que daba al patio, las que tenían humedad de atrás. Ésas se rehicieron, bien, con un día de secado. Las otras treinta y siete no se tocaron.
+[BANERAS|inspector] El inspector pasó, miró las bañeras con una linterna, y no anotó nada de la silicona. El gerente rompió el presupuesto delante mío. Y Rosa y yo nos fuimos a desayunar.
+[BANERAS|huesped] Y una semana después, una huésped de la suite del cuarto piso bajó a recepción a preguntar qué producto usábamos en las bañeras, porque la suya en su casa estaba negra hacía años. Le escribí en un papelito: papel de cocina, frasco marrón, film, una noche. Me miró como si le estuviera haciendo una broma. A los quince días mandó una carta al hotel, con una foto de su bañera.
+[MANTENER|habito] Y para que no vuelva, lo mismo que le dije en el video del moho: seque los rincones de la bañera después de bañarse, con la toalla. Treinta segundos. El moho no arranca sin agua. Y una vez por mes, un rocío de agua oxigenada en la silicona, sin frotar.
+[MANTENER|cortina] Y la cortina de la ducha, que no quede pegada contra la silicona, mojada. Ábrala después de bañarse para que se seque todo.
+[OTROS|intro] Y el mismo truco de las tiras sirve en otros tres lugares de la casa.
+[OTROS|bacha] Uno: la silicona alrededor de la bacha de la cocina, esa línea gris entre la mesada y la pileta. Mismas tiras, mismo film, una noche.
+[OTROS|ventana] Dos: los burletes de goma de las ventanas, donde se junta la condensación del invierno y aparecen puntitos negros. Tiras más finitas, una noche.
+[OTROS|lavadora] Y tres: los puntitos negros que quedan en la goma de la lavadora, los del video de la lavadora. Una tira empapada, metida en el pliegue, con la puerta abierta, una noche. Muchas veces se aclaran.
+[OTROS|mampara] Y la silicona de la mampara de la ducha, la del vidrio contra el azulejo. Ésa es la más difícil porque está parada. Ahí ayúdese con cinta de pintor por arriba del film, para que no se caiga. Y del vidrio de la mampara, que queda blanco y opaco, le hago un video aparte.
+[ERRORES|intro] Ahora, los errores que vi con la silicona. Cada uno le arruina el trabajo.
+[ERRORES|seco] Uno: poner las tiras sobre la silicona mojada o con jabón. No se pegan, se resbalan, y a la mañana están todas en el fondo de la bañera.
+[ERRORES|film] Dos: no ponerle film. Sin film, el papel se seca en dos horas, y el resto de la noche no trabaja.
+[ERRORES|poco] Tres: dejarlo una hora. La silicona con moho adentro necesita la noche entera. Ocho horas mínimo.
+[ERRORES|cloro] Cuatro: empapar las tiras en cloro. La silicona se pone blanca arriba, como le expliqué en el video del moho, y el moho de adentro sigue vivo. Y encima, el cloro la pone amarilla y la endurece con los años.
+[ERRORES|rehacer] Y cinco: rehacer la silicona sin secar la unión un día entero. Es el error del contratista. Encierra el moho.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|algodon] ¿Papel o discos de algodón? Los dos sirven. El algodón se pega mejor en los rincones curvos. El papel rinde más en una bañera larga.
+[QA|color] ¿Y si la silicona es transparente o de color? Funciona igual. En la de color, pruebe primero en un pedacito de atrás, por si aclara.
+[QA|olor] ¿Tiene olor fuerte? No. A la mañana, casi nada.
+[QA|cuantas] ¿Cuántas noches? En casi todas las bañeras, una. Si queda gris, una segunda noche. Si a la segunda sigue negra, está debajo: hay que rehacerla.
+[QA|alquiler] ¿Y si alquilo y no quiero arrancar nada? Por eso es el truco ideal. No rompe nada, no saca nada, y cuando se va, la bañera está mejor que cuando llegó.
+[QA|dia] ¿Puedo hacerlo de día, en vez de la noche? Sí, lo que importa son las ocho horas. Lo de la noche es porque es cuando nadie usa el baño.
+[QA|vinagre] ¿Y con vinagre en vez de agua oxigenada? El vinagre también le hace algo al moho, pero en la silicona funciona mejor el frasco marrón. Y nunca los dos en la misma tira, ni el mismo día.
+[RECAP|todo] Así que, todo en treinta segundos. Limpiar y secar la silicona. Tiras de papel de cinco centímetros, empapadas en agua oxigenada. Apretadas sobre lo negro, sin burbujas. Film plástico encima. Toda la noche. A la mañana, cepillo y enjuague. Si a las dos noches sigue negra, se rehace, y se deja secar la unión un día entero.
+[CTA3|libro] La página catorce entera es suya, gratis. El código está acá, y el link en la descripción. Y si quiere los noventa y cuatro arreglos de la casa, con la tabla de lo que nunca se mezcla, el libro está en esa misma página.
+[NEXT|mezcla] Y el próximo video es el más importante de todo el canal. Lo que nunca, nunca, tiene que mezclar debajo del fregadero. En treinta años vi dos accidentes, y los dos fueron con productos buenos, usados juntos. Ése no se lo pierda.
+[CLOSE|pregunta] Y ahora cuénteme usted. ¿Cuántos años tiene la silicona de su bañera? Escríbamelo en los comentarios. Leo todos.
+[CLOSE|chau] Corte las tiras. Y esta noche, a dormir. Nos vemos.
