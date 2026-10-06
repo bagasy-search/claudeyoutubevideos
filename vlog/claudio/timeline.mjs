@@ -24,7 +24,7 @@ shots[0].start = 0;
 // plano fijo largo → corte a avatar en la palabra más cercana (nunca dos av seguidos)
 const MAXFIX = { bi: 7.5, rh: 7.5, kf: 9.5, c: 9 }, KEEP = new Set([]);
 // tope POR COMPONENTE (el resto pasa al avatar): un separador no se queda 8 s, un 3D lleva su tiempo
-const CMAX = { ClChapter: 3.6, ClColorCode: 6.5, ClCheck: 10, ClBookPage: 9, ClQRCard: 9, ClNeverMix: 9, ClRimCutaway3D: 10.5, ClTimer30: 6, ClMeasureCup: 5.5, ClDoDont: 6.5, ClPins: 8, ClBottle3D: 6.5, ClRimJets: 7, ClSplit: 9, ClMicroscope3D: 11, ClHallway3D: 6, ClBeforeAfter: 5, ClBowl3D: 10.5, ClValve3D: 8.5, ClPumiceTest: 8, ClPasteRecipe: 8.5, ClNotebook: 8, ClVideoRef: 6 };
+const CMAX = { ClChapter: 3.6, ClColorCode: 6.5, ClCheck: 10, ClBookPage: 9, ClQRCard: 9, ClNeverMix: 9, ClRimCutaway3D: 10.5, ClTimer30: 6, ClMeasureCup: 5.5, ClDoDont: 6.5, ClPins: 8, ClBottle3D: 6.5, ClRimJets: 7, ClSplit: 9, ClMicroscope3D: 11, ClHallway3D: 6, ClBeforeAfter: 5, ClBowl3D: 10.5, ClValve3D: 8.5, ClPumiceTest: 8, ClPasteRecipe: 8.5, ClNotebook: 8, ClVideoRef: 6, ClWasher3D: 10, ClFilterFind: 8, ClDoseCap: 7, ClSmellTest: 8 };
 const capOf = (s) => (s.kind === "c" ? CMAX[s.name] || MAXFIX.c : MAXFIX[s.kind]);
 const ws = W.map((w) => w.s); const nearW = (x) => ws.reduce((b, v) => (Math.abs(v - x) < Math.abs(b - x) ? v : b), ws[0]);
 let budget = +process.env.AV_AUTO || 90; const cand = [];

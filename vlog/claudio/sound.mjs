@@ -75,6 +75,16 @@ function compFx(n, c, durS) {
   if (n === "ClPasteRecipe") { const a = P.a || 3, b = P.b || 1, per = Math.max(0.35, durS * 0.42 / (a + b)); for (let i = 0; i < a; i++) add("foley/powder_pour.flac", 0.38, 0.35 + i * per + per * 0.5, 0.7); for (let i = 0; i < b; i++) add("foley/water_pour_short.flac", 0.36, 0.35 + (a + i) * per + per * 0.5, 0.8); add("foley/stir_ceramic.flac", 0.4, 0.35 + (a + b) * per, Math.min(2.5, durS * 0.3)); }
   if (n === "ClNotebook") { const k = (P.rows || []).length || 3; if (P.strike) { for (let i = 0; i < k; i++) add("design/pencil_strokes.flac", 0.4, 0.4 + i * durS * 0.5 / k, 0.9); add("design/impact_drum_subtle.flac", 0.36, durS * 0.62, 1.6); } else { add("design/page_stiff.flac", 0.3, 0.05, 0.8); for (let i = 0; i < k; i++) add("design/pencil_paper.flac", 0.4, 0.35 + i * durS * 0.65 / k, 1.1); } }
   if (n === "ClVideoRef") { add("design/camera_shutter.flac", 0.36, 0.1, 0.6); add("design/click_interface.flac", 0.32, 0.55, 0.5); if (P.next) add("design/riser_fast.flac", 0.26, durS - 1.6, 1.6); }
+  if (n === "ClWasher3D") {
+    if (P.mode === "peel" || P.mode === "spray") { add("foley/rubber_stretch.flac", 0.42, 0.3, 1.5); add("foley/rubber_squeak.flac", 0.3, 0.9, 0.9); }
+    if (P.mode === "spray") { add("foley/spray_trigger_a.flac", 0.42, durS * 0.12, 1.2); add("foley/fizz_gentle.flac", 0.36, durS * 0.3, durS * 0.55); }
+    if (P.mode === "cycle") { add("foley/washer_door_close.flac", 0.4, 0.05, 1.2); add("foley/washer_running.flac", 0.38, 0.4, durS - 0.5); }
+    if (P.mode === "ajar") { add("foley/washer_door_open.flac", 0.4, 0.1, 1.4); add("design/whoosh_slow_sweep.flac", 0.22, durS * 0.3, 2); }
+    if (P.mode === "filter") { add("foley/cap_open.flac", 0.4, 0.4, 1); add("foley/washer_drain_water.flac", 0.38, durS * 0.35, durS * 0.55); }
+  }
+  if (n === "ClFilterFind") { const k = (P.items || []).length || 5, per = Math.max(0.35, durS * 0.7 / k); for (let i = 0; i < k; i++) add(i === k - 1 ? "design/impact_drum_subtle.flac" : "foley/drip_sink.flac", i === k - 1 ? 0.4 : 0.3, 0.3 + i * per + 0.3, 1); add("design/pop_soap_bubble.flac", 0.3, 0.3 + (k - 1) * per + 0.45, 0.6); }
+  if (n === "ClDoseCap") { add("foley/water_pour_short.flac", 0.36, 0.3, Math.min(2, durS * 0.3)); add("foley/water_pour_stream.flac", 0.34, durS * 0.45, Math.min(2, durS * 0.3)); add("design/impact_echo.flac", 0.26, durS * 0.62, 1.2); }
+  if (n === "ClSmellTest") { const k = (P.spots || []).length || 3, per = Math.max(0.35, durS * 0.55 / k); for (let i = 0; i < k; i++) add("design/tick_single.flac", 0.3, 0.3 + i * per, 0.5); add("design/stamp_rubber.flac", 0.38, 0.3 + k * per + 0.15, 0.8); }
   if (n === "ClTimer30") { add("design/tick_clock_close.flac", 0.26, 0.1, Math.max(0.6, durS - 0.9)); add(P.overnight ? "design/ding_oven.flac" : "design/ding_oven.flac", 0.4, Math.max(0.5, durS - (P.fast ? 0.2 : 0.65)), 1.6); }
   if (n === "ClNeverMix") { if (P.chart) add("design/page_turn_big.flac", 0.34, 0.1, 1); else if (P.soft) { add("design/pop_soap_bubble.flac", 0.34, durS * 0.4, 0.7); add("design/stamp_rubber.flac", 0.38, durS * 0.42, 0.8); } else { add("design/alarm_warning_buzzer.flac", P.short ? 0.12 : 0.18, durS * 0.38, 0.9); add("design/stamp_es.flac", 0.45, durS * 0.42, 1); } }
   if (n === "ClBookPage") { add("design/page_turn_big.flac", 0.34, 0.05, 1); add("design/stamp_rubber.flac", 0.42, 0.95, 0.9); }
