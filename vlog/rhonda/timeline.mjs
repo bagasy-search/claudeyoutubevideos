@@ -8,6 +8,8 @@ const norm = (s) => s.toLowerCase().replace(/[^a-z0-9' ]/g, " ").split(/\s+/).fi
 const END = W[W.length - 1].e + 0.6;
 let shots = [];
 for (const f of ["dir_a", "dir_b", "dir_c", "dir_d"]) { const p = R + `vlog/${SLUG}/${f}.mjs`; if (fs.existsSync(p)) shots.push(...(await import("file:///" + p)).SHOTS); }
+// fotos que SÓLO viven dentro de un componente (skip): se generan (mk_imgs) pero no son toma
+const extra = shots.filter((s) => s.skip); shots = shots.filter((s) => !s.skip);
 const errs = [];
 for (const s of shots) {
   const p = P[s.p]; if (!p) { errs.push(`párrafo ${s.p} no existe`); continue; }
@@ -64,5 +66,5 @@ const avL = shots.filter((s) => s.kind === "av" && s.dur > 16); if (avL.length) 
 if (bad.length) console.log("⛔ clips vl fuera de 3,2-11,8 s:", bad.map(([k, v]) => `${k} ${(v.e - v.s).toFixed(2)}`).join(" · "));
 const dups = {}; for (const s of shots.filter((s) => ["bi", "rh"].includes(s.kind))) dups[s.name] = (dups[s.name] || 0) + 1;
 const rep = Object.entries(dups).filter(([, n]) => n > 1); if (rep.length) console.log("⛔ imágenes repetidas:", rep.map(([k]) => k).join(" "));
-WR(V3 + "shots.json", { END, shots, vl });
+WR(V3 + "shots.json", { END, shots, vl, extra });
 console.log("clips vl:", Object.keys(vl).length, "· kf:", new Set(shots.filter((s) => s.kind === "kf").map((s) => s.name)).size, "· imágenes:", Object.keys(dups).length, "· componentes:", shots.filter((s) => s.kind === "c").length);

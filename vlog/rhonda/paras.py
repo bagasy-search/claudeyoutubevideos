@@ -1,4 +1,4 @@
-import os; S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/rhtoiletrim/"
+import os; S = os.environ["SLUG"]; R = os.environ.get("R", "D:/Proyectos/video2-wt/rhtoiletrim/")
 # Párrafos del guion filmado con su ms real → _v3/<slug>_paras.json. SLUG=x python vlog/rhonda/paras.py
 import json, re
 W = json.load(open(R + f"_v3/{S}_wordms.json", encoding="utf8"))

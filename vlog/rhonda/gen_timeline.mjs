@@ -4,6 +4,7 @@
 // SLUG=x node vlog/rhonda/gen_timeline.mjs [--final]     (--final = falla si falta avatar, un asset o queda un repuesto)
 import fs from "node:fs"; import { execFileSync } from "node:child_process";
 import { R, SLUG, V3, J } from "./env.mjs";
+import { design } from "./sound.mjs";
 const PUB = R + "public/", FPS = 30, F = (s) => Math.round(s * FPS), FINAL = process.argv.includes("--final");
 const { END, shots, vl } = J(V3 + "shots.json");
 const avwin = fs.existsSync(V3 + "avwin.json") ? J(V3 + "avwin.json").win : [];
@@ -19,12 +20,12 @@ const avFor = (s0, s1) => avwin.find((w) => s0 >= w.s - 0.15 && s1 <= w.e + 0.2)
 const avCue = (c, s) => { const w = avFor(s.start, s.end); if (!w) warn.push(`av sin ventana @${s.start.toFixed(1)}`); c.k = "av"; c.src = AV_READY ? AVSRC : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0; };
 const imgOf = (n) => (ex(`img/${SLUG}/${n}.jpg`) ? `img/${SLUG}/${n}.jpg` : null);
 // camas de stock para componentes con fondo nítido (cada una se usa UNA vez)
-const BEDABLE = new Set(["RhCheck", "RhBookPage", "RhQRCard", "RhMeasureCup", "RhTimer30", "RhChapter", "RhColorCode", "RhNeverMix", "RhDoDont", "RhBleachVsRoots"]);
+const BEDABLE = new Set(["RhSwabTest", "RhStrengthMeter", "RhCheck", "RhBookPage", "RhQRCard", "RhMeasureCup", "RhTimer30", "RhChapter", "RhColorCode", "RhNeverMix", "RhDoDont", "RhBleachVsRoots"]);
 const beds = (fs.existsSync(R + `vlog/${SLUG}/beds.json`) ? J(R + `vlog/${SLUG}/beds.json`) : []).map((b) => `broll/${SLUG}_st/${b.name}.mp4`).filter(ex);
 let bi = 0;
 shots.forEach((s, i) => {
   const f0 = F(s.start), f1 = i + 1 < shots.length ? F(shots[i + 1].start) : TOTAL;
-  const c = { k: s.kind, from: f0, dur: Math.max(1, f1 - f0), seed: (f0 * 2654435761) >>> 0, name: s.name || undefined };
+  const c = { k: s.kind, from: f0, dur: Math.max(1, f1 - f0), seed: (f0 * 2654435761) >>> 0, name: s.name || undefined, rev: s.rev || undefined };
   if (s.kind === "av") avCue(c, s);
   else if (s.kind === "vl") {
     const p = `vid/${SLUG}/${s.name}.mp4`;
@@ -33,7 +34,7 @@ shots.forEach((s, i) => {
     else { c.k = "img"; c.img = imgOf(s.name); fallback.push(s.name); }
   } else if (s.kind === "kf") {
     const p = `vid/${SLUG}/${s.name}.mp4`;
-    if (ex(p)) { c.src = p; c.sf = 0; c.clipF = nFr(p); const fo = `vid/${SLUG}/${s.name}_foley.m4a`; if (ex(fo)) foley.push({ from: f0, dur: Math.min(c.dur, c.clipF), src: fo }); }
+    if (ex(p)) { c.src = p; c.sf = 0; c.clipF = nFr(p);  }
     else { c.k = "img"; c.img = imgOf(s.name); c.fallback = s.name; if (!ACEPT.has(s.name)) fallback.push(s.name); if (!c.img) warn.push(`sin foto base ${s.name}`); }
   } else if (s.kind === "bi" || s.kind === "rh") {
     const st = `broll/${SLUG}_st/${s.name}.mp4`, ag = `broll/${SLUG}/${s.name}.mp4`;
@@ -53,31 +54,8 @@ shots.forEach((s, i) => {
   if (s.ov) ovs.push({ from: f0, dur: c.dur, name: s.ov.c, props: s.ov.props });
   cues.push(c);
 });
-// ── sonido (sin música: canal EN): whoosh en los cortes del minuto 1, golpe en cada revelación, ding del reloj, foley de producto
-const S = (at, file, vol, dur = 45) => { if (fs.existsSync(PUB + "sfx/" + file)) sfx.push({ from: Math.max(0, F(at)), dur, src: "sfx/" + file, vol }); else warn.push("sfx falta " + file); };
-cues.forEach((c, i) => {
-  const t = c.from / FPS, n = c.name || "";
-  if (t < 60 && i > 0 && c.k !== "av" && c.k !== "vl") S(t - 0.1, i % 2 ? "whoosh.mp3" : "sfx_whoosh_soft.mp3", 0.2, 20);
-  if (c.k === "img" && i > 0) { // foley de producto según lo que se VE en la toma (debajo de la voz)
-    const fx = /flush/.test(n) ? ["rh_flush.mp3", 0.3, 150] : /scrub|brush|toothbrush|recapbrush/.test(n) ? ["rh_scrub.mp3", 0.28, 100] : /pour|tube|tankwater/.test(n) ? ["rh_pour.mp3", 0.28, 110] : /spray/.test(n) ? ["px_spray.mp3", 0.28, 60] : /fizz|foam|soak/.test(n) ? ["px_fizz.mp3", 0.25, 110] : null;
-    if (fx) S(t + 0.05, fx[0], fx[1], Math.min(fx[2], c.dur));
-  }
-  if (c.k !== "comp") return;
-  if (n === "RhChapter") { S(t, "smooth_airy_whoosh_m_#2-1780923688387.mp3", 0.28, 40); S(t + 0.3, c.props.alert ? "stinger_hit.mp3" : "impactful_clean_text_#3-1780924163909.mp3", 0.26, 50); }
-  if (/3D$/.test(n)) S(t, "section_swell.mp3", 0.22, 90);
-  if (n === "RhToiletCutaway3D" && c.props.mode === "flow") { S(t + 0.4, "px_bubble.mp3", 0.3, 120); S(t + c.dur / FPS * 0.5, "px_fizz.mp3", 0.3, 120); }
-  if (n === "RhRimJets") S(t + 0.2, c.props.mode === "spray" ? "px_spray.mp3" : c.props.mode === "fizz" ? "px_fizz_alt1.mp3" : "pin_plop.mp3", 0.3, 90);
-  if (n === "RhTimer30") { S(t, "digit_tick.mp3", 0.25, 40); S(t + Math.max(0.5, c.dur / FPS - (c.props.fast ? 0.15 : 0.6)), "yc_bell_short.mp3", 0.32, 45); }
-  if (n === "RhMeasureCup") S(t + 0.3, "px_bubble_alt1.mp3", 0.28, 60);
-  if (n === "RhNeverMix") S(t + c.dur / FPS * 0.42, "yc_stamp.mp3", 0.34, 30);
-  if (n === "RhBookPage") { S(t + 0.15, "yc_paper_tear.mp3", 0.22, 25); S(t + 0.8, "yc_stamp.mp3", 0.3, 30); }
-  if (n === "RhQRCard" || n === "RhPins") S(t + 0.3, "floraphonic-minimal-pop-click-ui-1-198301.mp3", 0.28, 20);
-  if (n === "RhCheck") S(t + 0.5, "sfx_paper_tick.mp3", 0.25, 30);
-  if (n === "RhBleachVsRoots" || n === "RhColorCode") S(t + 0.2, "gentle_papercard_pop_#2-1780923860389.mp3", 0.28, 30);
-  if (n === "RhBottle3D") S(t + 0.2, "px_capPop.mp3", 0.28, 30);
-  if (n === "RhDoDont") S(t + 0.4, "impacto_hit.mp3", 0.22, 30);
-});
-for (const o of ovs) S(o.from / FPS + 0.2, "floraphonic-minimal-pop-click-ui-1-198301.mp3", 0.25, 20);
+// ── sonido: biblioteca sfx_pro (vlog/rhonda/sound.mjs) — ambiente por escena + foley de lo que se ve + diseño de componentes
+const snd = design(cues, shots, PUB); sfx.push(...snd.sfx); const AMBL = snd.amb; warn.push(...snd.warn);
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }
 fs.mkdirSync(R + `src/${SLUG}`, { recursive: true });
@@ -88,6 +66,7 @@ export const TL: any[] = ${JSON.stringify(cues)};
 export const OV: any[] = ${JSON.stringify(ovs)};
 export const SFX: any[] = ${JSON.stringify(sfx)};
 export const FOLEY: any[] = ${JSON.stringify(foley)};
+export const AMB: any[] = ${JSON.stringify(AMBL)};
 `);
 // cues para la compuerta de repetición de agnes_qc (los vl partidos son UNA toma continua)
 const qc = [], vlSpan = {};

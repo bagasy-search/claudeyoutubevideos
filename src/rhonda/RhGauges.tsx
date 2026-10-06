@@ -43,13 +43,13 @@ export const RhMeasureCup: React.FC<{ fill?: number; label?: string; where?: str
   );
 };
 
-export const RhTimer30: React.FC<{ minutes?: number; label?: string; fast?: boolean; overnight?: boolean; bed?: string }> = ({ minutes = 30, label, fast, overnight, bed }) => {
+export const RhTimer30: React.FC<{ minutes?: number; unit?: string; label?: string; fast?: boolean; overnight?: boolean; bed?: string }> = ({ minutes = 30, unit, label, fast, overnight, bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 0);
   const end = Math.max(12, durationInFrames - (fast ? 4 : 18));
   const k = interpolate(f, [fast ? 2 : 8, end], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
   const ding = f > end ? lin(f, end, end + 14) : 0;
-  const R = 230, cx = 300, cy = 300, a = (2 * Math.PI * minutes * k) / 60;
+  const R = 230, cx = 300, cy = 300, a = unit ? 2 * Math.PI * 0.999 * k : (2 * Math.PI * minutes * k) / 60;
   const arc = (ang: number) => { const x = cx + R * 0.82 * Math.sin(ang), y = cy - R * 0.82 * Math.cos(ang); return `M ${cx} ${cy} L ${cx} ${cy - R * 0.82} A ${R * 0.82} ${R * 0.82} 0 ${ang > Math.PI ? 1 : 0} 1 ${x} ${y} Z`; };
   const shake = ding > 0 && ding < 1 ? Math.sin(f * 2.2) * 3 : 0;
   return (
@@ -77,7 +77,7 @@ export const RhTimer30: React.FC<{ minutes?: number; label?: string; fast?: bool
         </svg>
       </div>
       <div style={{ position: "absolute", left: "50%", top: 760, translate: "-50% 0", opacity: out * lin(f, 6, 16), display: "flex", gap: 22, alignItems: "center" }}>
-        <div style={{ background: RH.yellow, color: RH.ink, fontFamily: SERIF, fontWeight: 900, fontSize: 84, padding: "4px 34px", borderRadius: 14, boxShadow: `0 14px 30px ${RH.shadow}` }}>{overnight ? "Overnight" : `${minutes} minutes`}</div>
+        <div style={{ background: RH.yellow, color: RH.ink, fontFamily: SERIF, fontWeight: 900, fontSize: 84, padding: "4px 34px", borderRadius: 14, boxShadow: `0 14px 30px ${RH.shadow}` }}>{overnight ? "Overnight" : `${minutes} ${unit || "minutes"}`}</div>
         {label && !overnight ? <div style={{ background: RH.white, color: RH.blueDeep, fontFamily: HAND, fontWeight: 700, fontSize: 60, padding: "4px 28px", borderRadius: 14, boxShadow: `0 14px 30px ${RH.shadow}` }}>{label}</div> : null}
       </div>
     </AbsoluteFill>
