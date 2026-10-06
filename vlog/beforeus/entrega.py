@@ -20,7 +20,7 @@ if not os.path.exists(OUT) or "--reencode" in sys.argv or "--restitch" in sys.ar
             "-r", "30", "-fps_mode", "cfr", "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
             "-c:v", "libx264", "-preset", "faster", "-crf", "20", "-maxrate", "8M", "-bufsize", "12M", "-bf", "0",
             "-g", "60", "-keyint_min", "60", "-sc_threshold", "0", "-threads", "6",
-            "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-shortest", "-movflags", "+faststart", OUT])
+            "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-af", "apad", "-frames:v", str(TOTAL), "-shortest", "-movflags", "+faststart", OUT])
     if r.returncode != 0: sys.exit("reencode falló: " + r.stderr[-600:])
 rep = {}; fail = []; nomide = []
 def gate(name, ok, measured, info):
