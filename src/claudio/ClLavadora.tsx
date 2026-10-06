@@ -21,13 +21,13 @@ const ItemSvg: React.FC<{ k: Item["k"]; f: number }> = ({ k, f }) => {
 export const ClFilterFind: React.FC<{ items?: Item[]; bed?: string }> = ({ items = [{ k: "lint", label: "pelusa" }, { k: "coin", label: "monedas" }, { k: "pin", label: "horquillas" }, { k: "sock", label: "una media" }, { k: "ring", label: "un anillo" }], bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(6);
   const per = Math.max(10, Math.round(T * 0.7 / items.length));
-  const pos = [[560, 640], [790, 690], [980, 640], [1200, 670], [1420, 650], [1600, 690]];
+  const pos = [[540, 680], [800, 700], [1040, 670], [1290, 700], [1560, 680], [1700, 700]];
   return (
     <AbsoluteFill style={{ opacity: out }}>
       <Bed src={bed} seed={71} dim={0.3} />
       <Contact x={1050} y={820} w={1500} o={0.35} />
       {/* bandeja baja de metal con agua gris */}
-      <div style={{ position: "absolute", left: 360, top: 560, width: 1420, height: 260, borderRadius: 28, background: "linear-gradient(180deg, #D7DBE0, #AEB4BB)", boxShadow: `0 30px 60px ${CL.shadow}, inset 0 6px 0 rgba(255,255,255,0.6)` }}>
+      <div style={{ position: "absolute", left: 300, top: 520, width: 1540, height: 360, borderRadius: 28, background: "linear-gradient(180deg, #D7DBE0, #AEB4BB)", boxShadow: `0 30px 60px ${CL.shadow}, inset 0 6px 0 rgba(255,255,255,0.6)` }}>
         <div style={{ position: "absolute", inset: 22, borderRadius: 18, background: "linear-gradient(180deg, rgba(120,128,120,0.75), rgba(90,96,88,0.85))" }} />
       </div>
       {items.map((it, i) => {
@@ -35,7 +35,7 @@ export const ClFilterFind: React.FC<{ items?: Item[]; bed?: string }> = ({ items
         const [x, y] = pos[i % pos.length]; const drop = interpolate(k, [0, 1], [-420, 0]); const bounce = k >= 1 ? 6 * Math.exp(-(f - t0 - 10) * 0.3) * Math.sin((f - t0) * 0.9) : 0;
         const isRing = it.k === "ring", p = isRing ? pop(f, fps, t0 + 10, 10) : 0;
         return (
-          <div key={i} style={{ position: "absolute", left: x, top: y + drop + bounce, translate: "-50% -50%", rotate: `${(rnd(i) - 0.5) * 40}deg`, scale: String(1 + 0.25 * p) }}>
+          <div key={i} style={{ position: "absolute", left: x, top: y + drop + bounce, translate: "-50% -50%", rotate: `${(rnd(i) - 0.5) * 40}deg`, scale: String(1.7 + 0.35 * p) }}>
             {isRing ? <div style={{ position: "absolute", left: "50%", top: "50%", width: 360, height: 360, translate: "-50% -50%", borderRadius: "50%", background: "radial-gradient(circle, rgba(255,226,140,0.55), rgba(255,226,140,0) 65%)", opacity: p }} /> : null}
             <ItemSvg k={it.k} f={f} />
             {it.label ? <div style={{ position: "absolute", left: "50%", top: -50, translate: "-50% 0", rotate: `${(0.5 - rnd(i)) * 40}deg`, whiteSpace: "nowrap", fontFamily: HAND, fontWeight: 700, fontSize: isRing ? 66 : 50, color: isRing ? CL.red : CL.navy, opacity: lin(f, t0 + 10, t0 + 16) }}>{it.label}</div> : null}

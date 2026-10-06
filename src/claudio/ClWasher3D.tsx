@@ -28,7 +28,7 @@ export const ClWasher3D: React.FC<{ mode?: Mode; labels?: { a?: string; b?: stri
   const u = clamp01((f - 6) / Math.max(1, T * 0.8 - 6));
   const close = mode === "peel" || mode === "spray";
   const a = interpolate(f, [0, T], close ? [-0.18, 0.08] : [-0.35, 0.2], { easing: Easing.inOut(Easing.cubic) });
-  const dist = interpolate(f, [0, T], close ? [2.6, 2.0] : mode === "filter" ? [3.4, 2.9] : [4.6, 4.0]);
+  const dist = interpolate(f, [0, T], close ? [3.3, 2.8] : mode === "filter" ? [3.4, 2.9] : [4.6, 4.0]);
   const target = close ? new THREE.Vector3(0, -0.28, 0.5) : mode === "filter" ? new THREE.Vector3(-0.35, -0.75, 0.5) : new THREE.Vector3(0, 0.05, 0.3);
   const camPos = new THREE.Vector3(target.x + Math.sin(a) * dist, target.y + (close ? 0.7 : mode === "filter" ? 0.35 : 0.9), target.z + Math.cos(a) * dist);
   const peelK = close ? ease(clamp01((f - 8) / Math.max(1, T * 0.35))) : mode === "ajar" ? 0 : 0;
@@ -41,7 +41,7 @@ export const ClWasher3D: React.FC<{ mode?: Mode; labels?: { a?: string; b?: stri
 
   const geo = useMemo(() => ({
     gasketTop: new THREE.TorusGeometry(RG, 0.085, 16, 64, Math.PI * 1.2),
-    gasketLip: new THREE.TorusGeometry(RG, 0.085, 16, 48, Math.PI * 0.8),
+    gasketLip: new THREE.TorusGeometry(RG, 0.085, 16, 48, Math.PI * 0.6),
     fold: new THREE.TorusGeometry(RG - 0.05, 0.06, 12, 48, Math.PI * 0.8),
     drum: new THREE.CylinderGeometry(0.56, 0.56, 0.8, 48, 1, true),
     door: new THREE.TorusGeometry(0.66, 0.1, 16, 64),
@@ -67,8 +67,8 @@ export const ClWasher3D: React.FC<{ mode?: Mode; labels?: { a?: string; b?: stri
   mats.mold.opacity = moldLeft; mats.mold.transparent = true;
 
   // el labio de abajo (de 200° a 340°) se dobla hacia afuera y abajo con el dedo
-  const lipRot = peelK * 0.9;
-  const fingerP = arcPt(-Math.PI / 2, RG + 0.05 + 0.15 * peelK, DOOR.z + 0.12 + 0.22 * peelK);
+  const lipRot = peelK * 0.7;
+  const fingerP = arcPt(-Math.PI * 0.62, RG + 0.12 + 0.12 * peelK, DOOR.z + 0.18 + 0.2 * peelK);
   const molds = Array.from({ length: 26 }, (_, i) => { const t = Math.PI * 1.12 + (i / 25) * Math.PI * 0.76 + (rnd(i) - 0.5) * 0.05; return { p: arcPt(t, RG - 0.05 - 0.02 * rnd(i + 3), DOOR.z - 0.02 + 0.03 * rnd(i + 5)), s: 0.018 + 0.03 * rnd(i + 7), i }; });
   const foams = Array.from({ length: 34 }, (_, i) => { const t = Math.PI * 1.15 + rnd(i * 3) * Math.PI * 0.7; const k = clamp01(foamK * 1.6 - rnd(i) * 0.6); return { p: arcPt(t, RG - 0.04, DOOR.z + 0.01 + 0.03 * rnd(i + 2)), s: k * (0.02 + 0.025 * rnd(i + 9)), i }; });
   const mist = mode === "spray" ? Array.from({ length: 40 }, (_, i) => { const t = ((f * 0.03 + rnd(i)) % 1); if (f > T * 0.45) return null; return { p: new THREE.Vector3(0.35 - 0.4 * t + (rnd(i + 1) - 0.5) * 0.2, 0.2 - 0.55 * t + (rnd(i + 2) - 0.5) * 0.15, 1.3 - 0.75 * t), i }; }).filter(Boolean) as any[] : [];
@@ -117,13 +117,15 @@ export const ClWasher3D: React.FC<{ mode?: Mode; labels?: { a?: string; b?: stri
         <mesh geometry={geo.gasketTop} material={mats.rubber} position={[DOOR.x, DOOR.y, DOOR.z]} rotation={[0, 0, -Math.PI * 0.1]} />
         <mesh geometry={geo.fold} material={mats.fold} position={[DOOR.x, DOOR.y, DOOR.z - 0.02]} rotation={[0, 0, Math.PI * 1.1]} />
         <group position={[DOOR.x, DOOR.y - RG, DOOR.z]} rotation={[lipRot, 0, 0]}>
-          <mesh geometry={geo.gasketLip} material={mats.rubber} position={[0, RG, 0]} rotation={[0, 0, Math.PI * 1.1]} />
+          <mesh geometry={geo.gasketLip} material={mats.rubber} position={[0, RG, 0]} rotation={[0, 0, Math.PI * 1.2]} />
+          <mesh material={mats.rubber} position={[0, RG, 0]} rotation={[0, 0, Math.PI * 1.1]}><torusGeometry args={[RG, 0.085, 16, 12, Math.PI * 0.1]} /></mesh>
+          <mesh material={mats.rubber} position={[0, RG, 0]} rotation={[0, 0, Math.PI * 1.8]}><torusGeometry args={[RG, 0.085, 16, 12, Math.PI * 0.1]} /></mesh>
         </group>
         {moldLeft > 0.02 ? molds.map((m) => <mesh key={m.i} position={m.p} scale={1 + 0.15 * Math.sin(f * 0.15 + m.i)} material={mats.mold}><sphereGeometry args={[m.s, 10, 8]} /></mesh>) : null}
         {foams.map((b) => (b.s > 0.003 ? <mesh key={b.i} position={b.p} scale={b.s * 30} material={mats.foam}><sphereGeometry args={[0.03, 8, 6]} /></mesh> : null))}
         {mist.map((m) => <mesh key={m.i} position={m.p} material={mats.drop}><sphereGeometry args={[0.012, 6, 4]} /></mesh>)}
         {drops.map((d) => (d.s > 0.002 ? <mesh key={d.i} position={d.p} material={mats.drop}><sphereGeometry args={[d.s, 8, 6]} /></mesh> : null))}
-        {close ? <group position={fingerP} rotation={[0.9, 0, 0]}><mesh material={mats.glove}><capsuleGeometry args={[0.07, 0.4, 6, 12]} /></mesh><mesh material={mats.glove} position={[0, 0.35, -0.12]} rotation={[0.6, 0, 0]}><capsuleGeometry args={[0.16, 0.25, 6, 12]} /></mesh></group> : null}
+        {close ? <group position={fingerP} rotation={[0.9, 0, -0.5]} scale={0.42}><mesh material={mats.glove}><capsuleGeometry args={[0.07, 0.4, 6, 12]} /></mesh><mesh material={mats.glove} position={[0, 0.35, -0.12]} rotation={[0.6, 0, 0]}><capsuleGeometry args={[0.16, 0.25, 6, 12]} /></mesh></group> : null}
         {/* puerta con bisagra a la izquierda */}
         <group position={[DOOR.x - 0.7, DOOR.y, DOOR.z + 0.08]} rotation={[0, doorAng, 0]}>
           <mesh geometry={geo.door} material={mats.door} position={[0.7, 0, 0]} />
