@@ -1,0 +1,74 @@
+[HOOK|piedra] Esa mancha marrón en su inodoro no es mugre. Es piedra.
+[HOOK|cepillo] Por eso el cepillo le pasa por arriba y no le hace nada.
+[HOOK|promesa] Hoy se la saco sin tallar. Veinte minutos de una pasta, una piedra mojada, y una noche de vinagre. Así estaba. Así quedó.
+[HOOK|hotel] Treinta años fui conserje de mantenimiento en un hotel. Ciento veinte inodoros. Y este anillo marrón es el que más plata le hizo gastar a la gente en cosas que no hacían falta.
+[HOOK|rafaga] Mire. Cierro el agua. Saco lo que queda. La pasta, gruesa, encima del anillo. Veinte minutos. La piedra pómez, siempre mojada, suave... Y lo que no sale, otro día, una noche de vinagre...
+[HOOK|grito] ¡y mire eso! ¡Como nuevo!
+[HOOK|loops] Pero antes de tocarlo hay tres cosas que tiene que saber. Por qué el cepillo nunca va a poder con eso. El error con la piedra que le raya el inodoro para siempre. Y lo que el gerente del hotel iba a hacer con tres inodoros, y cómo se los salvé con una sola noche. Primero, el arreglo entero.
+[FIX|otrodia] Si vio mi video del borde del inodoro, se acuerda de lo que le dije al final: si después de dos vueltas sigue oscuro, es mineral, y el mineral es trabajo del vinagre, otro día. Bueno. Hoy es ese otro día.
+[FIX|guantes] Guantes de goma y la ventana abierta. Y una regla antes de empezar: si esta semana usó cloro o un limpiador fuerte en ese inodoro, tire la cadena dos o tres veces y empiece mañana. Nunca dos productos juntos.
+[FIX|lista] Lo que necesita: el frasco marrón de agua oxigenada, bicarbonato, una piedra pómez para inodoros, un vaso descartable, un balde, y vinagre blanco para otro día. Todo junto, menos de lo que sale un limpiador de marca.
+[FIX|agua] Primer paso, y el que nadie hace: baje el agua. Atrás del inodoro, abajo, en la pared, hay una llavecita. Gírela hacia la derecha hasta que pare. Tire la cadena. La taza se vacía y el tanque ya no se vuelve a llenar.
+[FIX|vaso] Lo que queda en el fondo, sáquelo con un vaso descartable a un balde. No hace falta dejarla seca. Sólo que el anillo quede afuera del agua. Si el anillo está debajo del agua, todo lo que le eche se diluye y no trabaja.
+[FIX|pasta] Ahora la pasta. Tres cucharadas de bicarbonato y una cucharada de agua oxigenada, la del frasco marrón, al tres por ciento. Revuelva hasta que quede como pasta de dientes. Ni más líquida ni más seca: se tiene que quedar pegada a la pared sin chorrear.
+[FIX|untar] Con una esponja vieja, o con el dedo del guante, unte la pasta sobre todo el anillo, bien gruesa, y sobre cada mancha marrón. Y déjela veinte minutos. Va a ver burbujitas chiquitas. Es el agua oxigenada levantando la capa de arriba.
+[FIX|pomez] A los veinte minutos, la piedra pómez. La de inodoros, la que viene con mango, la consigue en el supermercado o en la ferretería. Mójela en el balde, bien mojada, y frote el anillo suave, como si borrara con una goma. Sin apretar. La piedra y la porcelana, mojadas todo el tiempo.
+[FIX|liso] Va a sentir que raspa algo duro, y de golpe se pone liso. Ése es el sarro que se va. La piedra es más blanda que el esmalte del inodoro, por eso mojada no lo raya. Pero seca, sí. Ya le cuento.
+[FIX|abrir] Abra la llave, tire la cadena, y mire.
+[FIX|nueve] En nueve de cada diez inodoros, ahí se terminó. Y si le queda una sombra dura, un anillo que no se fue, eso es sarro de años. Para eso es la noche de vinagre, y se la muestro en un ratito.
+[FIX|resumen] Repaso: agua abajo, la pasta de tres a uno, veinte minutos, la piedra mojada, y descarga.
+[CTA1|libro] Éste es el arreglo número dos de mi libro, El Frasco Marrón de Claudio, en la página diez. Y esa página entera, con las cantidades y lo que hace si no sale, se la regalo. Apunte el celular a este código, o toque el link de la descripción, y la tiene ahí mismo, sin pagar nada.
+[CAPAS|intro] Ahora, ¿por qué el cepillo nunca puede? Porque ese anillo no es una cosa. Son dos, una encima de la otra.
+[CAPAS|agua] Su agua trae piedra disuelta. Calcio, magnesio, a veces hierro. No se ve, pero está. Y en la línea del agua, donde el agua se queda quieta y se evapora un poquito todos los días, esa piedra se queda pegada a la porcelana. Una capa finita por día. Como la costra blanca de la pava.
+[CAPAS|marron] Y encima de esa piedra, que es áspera, se agarra todo lo demás: la mugre, las bacterias, el óxido del agua. Eso le da el color. Por eso la mancha es marrón y no blanca.
+[CAPAS|cepillo] El cepillo es blando. Pasa por encima de la piedra como pasa la mano por una pared. Saca un poquito de la capa de arriba, y la piedra queda. Y como la piedra queda, en una semana la mancha vuelve.
+[CAPAS|orden] Por eso el arreglo tiene dos partes. La pasta saca la capa de arriba, la que está viva. La piedra pómez y el vinagre sacan la de abajo, la que es piedra. Si saca una sola, vuelve.
+[CAPAS|dura] ¿Cómo sabe si su agua es dura? Mire la pava, o la flor de la ducha. Si tiene costra blanca, su agua es dura, y su inodoro va a hacer anillo siempre. No es que usted limpie mal. Es el agua.
+[COLOR|intro] Y el color del anillo le dice exactamente qué tiene. Después de ciento veinte inodoros, uno lo lee de un vistazo.
+[COLOR|blanco] ¿Blanco o gris, áspero, como una costra? Es la piedra sola, el calcio. Vinagre y piedra pómez.
+[COLOR|marron] ¿Marrón o naranja, que no sale con nada? Es la piedra teñida con el óxido del agua. Ése es el de hoy. Pasta, piedra, y si hace falta, la noche de vinagre.
+[COLOR|verde] ¿Verdoso, o azulado, justo debajo de donde cae el agua? Eso suele ser el cobre de los caños viejos. Sale igual, con el vinagre, pero es una señal de que los caños tienen años.
+[COLOR|negro] ¿Y negro, baboso, que se corre con el dedo? Eso no es piedra. Eso está vivo, y es otro arreglo, el del borde.
+[POMEZ|error] Ahora el error que le prometí. El que raya un inodoro para siempre: la piedra pómez seca.
+[POMEZ|hotel] En el hotel, mi primer año, un compañero nuevo agarró la piedra seca y le dio a un inodoro como si lijara una puerta. Quedó lleno de rayitas finas. Y en cada rayita, a la semana, mugre. Ese inodoro nunca más quedó blanco. Lo terminamos cambiando.
+[POMEZ|reglas] Así que tres reglas con la piedra. Siempre mojada, la piedra y el inodoro. Suave: que trabaje ella, no su brazo. Y sólo en la porcelana blanca de la taza. Nunca en un inodoro de color, ni en el asiento, ni en la tapa, ni en nada de plástico o de acrílico.
+[POMEZ|prueba] Si tiene dudas, pruébela primero en un lugarcito que no se vea, atrás, abajo, cerca del piso.
+[POMEZ|gris] Y una cosa que asusta a todo el mundo: la piedra deja unas líneas grises. No son rayas. Es la piedra misma, que se gasta y queda pegada. Pase un poco de pasta con la esponja y se van. Si con la uña no siente nada, no es una raya.
+[VISITAS|secreto] Y acá va lo que nadie le dice. ¿Sabe cuál es el inodoro con el peor anillo de toda la casa? No es el que más se usa. Es el del baño de visitas.
+[VISITAS|porque] Porque el agua se queda quieta días y días, se evapora de a poquito, y cada milímetro que baja deja su línea de piedra. En el hotel, las habitaciones que estaban cerradas en temporada baja tenían los peores anillos de todo el edificio. Así que si tiene un baño que casi no usa, tire la cadena una vez por semana. Nada más.
+[GERENTE|libreta] Y ahora, lo del gerente. Un año cambió la administración del hotel, y el gerente nuevo recorrió el tercer piso con una libreta. Entró a la trescientos doce, a la trescientos catorce y a la trescientos dieciocho, miró los inodoros con ese anillo marrón, y anotó: cambiar. Tres inodoros nuevos, con el plomero, era mucha plata.
+[GERENTE|noche] Yo le pedí una sola noche. Me miró como diciendo: este conserje está loco. Y me dio la noche.
+[GERENTE|tarde] Esa tarde bajé el agua de los tres, como le mostré. Y no usé nada más que vinagre blanco, del común, del más barato. Pero lo usé como casi nadie lo usa.
+[VINAGRE|tiras] Corté papel higiénico en tiras largas, las empapé en vinagre, y las pegué encima del anillo, una al lado de la otra, como una venda alrededor de toda la taza. Así el vinagre se queda apoyado en la piedra toda la noche, en vez de chorrear al fondo en un minuto.
+[VINAGRE|fondo] Y en el fondo, dos tazas de vinagre, para las manchas de abajo. La tapa bajada, y un cartel en la puerta: no usar.
+[VINAGRE|manana] A la mañana saqué las tiras, una pasada de piedra mojada, y la piedra se deshacía como si fuera tiza. Abrí el agua, descargué. Los tres, blancos.
+[GERENTE|tacho] El gerente entró a la trescientos doce, se agachó, miró, y tachó la palabra cambiar de su libreta. No me dijo nada. Pero al mes me dio la llave del depósito nuevo.
+[VINAGRE|porque] El vinagre es un ácido suave. Y la piedra del agua es justamente lo que un ácido disuelve. Despacio, por eso necesita la noche. Y tiene que estar apoyado: un chorrito que pasa no hace nada.
+[VINAGRE|nunca] Y lo digo otra vez porque importa: el vinagre va otro día que el agua oxigenada. Nunca juntos en la misma botella, nunca juntos en el inodoro el mismo día. Y nunca, jamás, vinagre donde hubo cloro. Ahí se hace un gas que lo puede mandar al hospital.
+[CTA2|libro] La noche de vinagre, con las cantidades para un anillo viejo, está en la página diez de mi libro, y esa página se la regalo. Apunte al código, o el link en la descripción. Y en la misma página está lo que hace si a la mañana todavía le queda algo.
+[ERRORES|intro] Ahora, los errores que vi en treinta años con el sarro. Cada uno le arruina el trabajo.
+[ERRORES|uno] Uno: tratarlo con el agua arriba. Todo lo que echa se diluye en dos litros de agua. Baje el agua siempre. Son dos minutos.
+[ERRORES|dos] Dos: el cloro. El cloro le saca el color a la mancha, pero a la piedra no la toca. Queda gris, y en una semana, marrón otra vez. Y encima, no se puede mezclar con lo que sí funciona.
+[ERRORES|tres] Tres: los limpiadores en gel fuertes para inodoro, los que dicen que quitan el sarro. Muchos son ácidos fuertes. Funcionan, pero si alguien en su casa echó cloro antes en ese inodoro, ahí se hace el gas. Si los usa, lea la etiqueta de atrás, y nunca el mismo día que otra cosa.
+[ERRORES|cuatro] Cuatro: la lana de acero, el destornillador, la espátula de metal. Rayan. Y cada raya en la porcelana es un lugar nuevo para que el sarro se agarre.
+[ERRORES|cinco] Y cinco: rendirse después de una sola vuelta. El sarro de diez años no sale en una noche. Sale en dos o tres. Cada noche saca una capa. No es que no funciona. Es que había mucho.
+[ERRORES|bicarb] Y ya que estamos, un mito: el bicarbonato con vinagre juntos. Hace mucha espuma, parece que trabaja, pero se anulan entre ellos y queda agua con sal. Es puro espectáculo. Cada uno sirve solo, y en su momento.
+[GASTADO|honesto] Y le voy a ser honesto, porque no le quiero vender humo. Si su inodoro tiene treinta o cuarenta años, a veces el esmalte de la taza ya está gastado. Se nota porque la porcelana se siente áspera aunque esté limpia, y la mancha vuelve en días, no en meses. Ahí ya no es sarro. Es la porcelana, y ése sí es un inodoro para cambiar. Pero ese caso es uno de cada veinte. Pruebe primero las dos noches.
+[LUGARES|intro] Y ya que tiene el agua cerrada, hay tres lugares del mismo inodoro donde el sarro se esconde.
+[LUGARES|borde] Uno: los agujeritos de debajo del borde. Si cuando descarga el agua sale torcida o débil, están tapados de sarro. Ése es mi video del borde, que ya está en el canal. Ahí le muestro el tubo del tanque que alimenta esos agujeros.
+[LUGARES|chorro] Dos: el agujero grande del fondo de la taza, el del chorro. Esa misma noche, con el agua baja, apriete ahí adentro una tira de papel con vinagre.
+[LUGARES|tanque] Y tres: adentro del tanque. Si el agua del tanque sigue corriendo después de cargar, muchas veces es sarro en la gomita del fondo, la que tapa el agujero. Con el agua cerrada, pásele un trapo con vinagre a esa gomita y a su asiento, y enjuague. Muchas veces no hace falta cambiarla.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|manzana] ¿Vinagre de manzana? Sirve, pero el blanco es más barato y no deja color.
+[QA|septico] ¿Y si tengo pozo séptico? Dos tazas de vinagre y un poco de bicarbonato no le hacen nada. En el hotel teníamos cabañas con pozo y lo hacíamos igual.
+[QA|gaseosa] ¿Y la gaseosa cola, que dicen que limpia el inodoro? Tiene un ácido, sí, pero mucho más débil, y deja azúcar pegada. El vinagre hace mejor el trabajo y cuesta menos.
+[QA|negro] ¿Y si la mancha es negra, debajo del borde, y se corre cuando la toca? Eso no es sarro. Eso está vivo. Es el video del borde, con la media taza por el tubo.
+[QA|cuanto] ¿Cada cuánto? Con agua dura, la pasta una vez al mes, y una noche de vinagre cada tres meses. Así el anillo no se vuelve a formar.
+[QA|lavamanos] ¿Y en el lavamanos y la bañera? La pasta sí, en todo lo blanco. El vinagre, en la grifería y la porcelana, sí. Pero la piedra pómez, sólo en la taza del inodoro. Y nunca vinagre sobre mármol ni piedra natural: lo come y le deja manchas opacas para siempre.
+[RESET|semana] Y para que no vuelva nunca: una vez por semana, pase el cepillo justo por la línea del agua y tire la cadena. Que la piedra no tenga tiempo de pegarse.
+[RESET|viaje] Y si se va de viaje, tape la taza con film plástico. El agua quieta de quince días que se evapora es lo que más anillo hace. Con el film no se evapora, y a la vuelta no tiene nada.
+[RECAP|todo] Así que, todo en treinta segundos. Cierre la llave, descargue, saque el agua con un vaso. La pasta: tres cucharadas de bicarbonato y una de agua oxigenada, veinte minutos. La piedra pómez, siempre mojada, suave. Descarga. ¿Queda una sombra? Otro día: tiras de papel con vinagre toda la noche, dos tazas en el fondo, y la piedra a la mañana. Nunca juntos, y nunca donde hubo cloro.
+[CTA3|libro] La página diez entera es suya, gratis. El código está acá, y el link en la descripción. Y si quiere los noventa y cuatro arreglos de la casa, con la tabla de lo que nunca se mezcla, el libro está en esa misma página.
+[NEXT|lavadora] Y el próximo video es del lugar más sucio de toda la casa, y no está en el baño. Está escondido en la goma de la puerta de su lavadora. Si sus toallas salen lavadas y huelen a sótano, ése es el que tiene que ver.
+[CLOSE|pregunta] Y ahora cuénteme usted. ¿Qué probó con el sarro que no le funcionó? Escríbamelo en los comentarios. Leo todos.
+[CLOSE|chau] Cierre la llave. Y esta noche, vinagre. Nos vemos.

@@ -14,6 +14,9 @@ import { ClMeasureCup, ClTimer30 } from "./ClGauges";
 import { ClRimJets, ClNeverMix } from "./ClScience";
 import { ClNameTag, ClStampOv, ClChip, ClAsk } from "./ClOverlays";
 import { tileBg } from "./ClParts";
+import { ClBowl3D } from "./ClBowl3D";
+import { ClValve3D } from "./ClValve3D";
+import { ClPumiceTest, ClPasteRecipe, ClNotebook, ClVideoRef } from "./ClSarro";
 
 // Ken-Burns al azar POR PLANO (regla 1.ter): sentido 50/50, amplitud 3-9 % fotos / 1,5-4 % clips, foco 28-72 %, paneo atado a la escala.
 const useKB = (seed: number, clip: boolean) => {
@@ -60,7 +63,7 @@ const Placeholder: React.FC<{ avatar?: boolean }> = ({ avatar }) => (
 );
 
 const COMP: Record<string, React.FC<any>> = {
-  ClRimCutaway3D, ClBottle3D, ClMicroscope3D, ClHallway3D, ClChapter, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit, ClMeasureCup, ClTimer30, ClRimJets, ClNeverMix,
+  ClRimCutaway3D, ClBottle3D, ClMicroscope3D, ClHallway3D, ClChapter, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit, ClMeasureCup, ClTimer30, ClRimJets, ClNeverMix, ClBowl3D, ClValve3D, ClPumiceTest, ClPasteRecipe, ClNotebook, ClVideoRef,
 };
 const OVC: Record<string, React.FC<any>> = { ClNameTag, ClStampOv, ClChip, ClAsk };
 
