@@ -20,7 +20,7 @@ const avFor = (s0, s1) => avwin.find((w) => s0 >= w.s - 0.15 && s1 <= w.e + 0.2)
 const avCue = (c, s) => { const w = avFor(s.start, s.end); if (!w) warn.push(`av sin ventana @${s.start.toFixed(1)}`); c.k = "av"; c.src = AV_READY ? AVSRC : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0; };
 const imgOf = (n) => (ex(`img/${SLUG}/${n}.jpg`) ? `img/${SLUG}/${n}.jpg` : null);
 // camas de stock para componentes con fondo nítido (cada una se usa UNA vez)
-const BEDABLE = new Set(["RhSwabTest", "RhStrengthMeter", "RhCheck", "RhBookPage", "RhQRCard", "RhMeasureCup", "RhTimer30", "RhChapter", "RhColorCode", "RhNeverMix", "RhDoDont", "RhBleachVsRoots"]);
+const BEDABLE = new Set(["RhRingColors", "RhPasteMix", "RhSwabTest", "RhStrengthMeter", "RhCheck", "RhBookPage", "RhQRCard", "RhMeasureCup", "RhTimer30", "RhChapter", "RhColorCode", "RhNeverMix", "RhDoDont", "RhBleachVsRoots"]);
 const beds = (fs.existsSync(R + `vlog/${SLUG}/beds.json`) ? J(R + `vlog/${SLUG}/beds.json`) : []).map((b) => `broll/${SLUG}_st/${b.name}.mp4`).filter(ex);
 let bi = 0;
 shots.forEach((s, i) => {

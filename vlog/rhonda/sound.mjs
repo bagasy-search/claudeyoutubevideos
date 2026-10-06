@@ -33,6 +33,8 @@ const FOLEY = [
   [/pour|glug|fills up/i, ["foley/water_pour_stream.flac", "foley/water_pour_short.flac"], 0.38, 3, 0.05],
   [/drip|drop|puddle|beaded/i, ["foley/drip_sink.flac", "foley/water_bubble.flac"], 0.32, 2.5, 0.2],
   [/towel|wipe|wiping|cloth|dry it|dries/i, ["foley/towel_wipe_hands.flac"], 0.4, 2, 0.1],
+  [/valve/i, ["foley/cap_unscrew_jar.flac"], 0.42, 1.2, 0.1],
+  [/plunger|scoop|bucket/i, ["foley/water_pour_short.flac", "foley/water_bubble.flac"], 0.38, 2, 0.05],
   [/switch|flips/i, ["foley/light_pull_switch.flac"], 0.45, 1, 0.15],
   [/washer|washing machine/i, ["foley/washer_running.flac", "foley/washer_spin_drain.flac"], 0.35, 4, 0],
   [/flush/i, ["foley/flush_bathroom.flac", "foley/flush_hard.flac"], 0.4, 4, 0.1],
@@ -80,6 +82,19 @@ function compFx(n, c, durS) {
   if (n === "RhQRCard") { add("design/paper_slide.flac", 0.32, 0.1, 0.8); add("design/click_interface.flac", 0.3, 0.6, 0.5); }
   if (n === "RhCheck") { const k2 = (P.items || []).length; for (let k = 0; k < k2; k++) add("design/pen_write.flac", 0.3, 0.55 + k * Math.max(0.27, Math.min(1.33, (durS - 1) / k2)), 0.6); }
   if (n === "RhDoDont") { add("design/paper_slide.flac", 0.3, 0.1, 0.8); add("design/click_slide.flac", 0.3, 1.0, 0.5); }
+  if (n === "RhBowlSection3D") {
+    if (P.mode === "grow") { for (let k = 0; k < 4; k++) add("foley/drip_sink.flac", 0.26, 0.4 + k * durS / 4.5, 1.2); add("design/texture_suspense.flac", 0.2, 0.2, durS - 0.3); }
+    if (P.mode === "paste") add("foley/fizz_tablet_a.flac", 0.4, durS * 0.25, durS * 0.65);
+    if (P.mode === "pumice") add("foley/pumice_griddle.flac", 0.42, durS * 0.15, durS * 0.7);
+    if (P.mode === "dry") { add("foley/sand_paper_a.flac", 0.45, durS * 0.15, durS * 0.7); add("design/impact_heartbeat.flac", 0.42, durS * 0.5, 2.2); }
+    if (P.mode === "layers") add("design/impact_drum_subtle.flac", 0.38, durS * 0.3, 1.8);
+    if (P.mode === "glaze") add("design/click_slide.flac", 0.3, 0.6, 0.5);
+  }
+  if (n === "RhPasteMix") { for (let k = 0; k < 4; k++) add(k < 3 ? "foley/paper_crinkle.flac" : "foley/water_pour_short.flac", 0.3, 0.25 + k * durS * 0.55 / 4, 0.8); add("foley/scrub_pad.flac", 0.3, durS * 0.62, durS * 0.3); }
+  if (n === "RhWaterLevel") { add("foley/cap_unscrew_jar.flac", 0.4, 0.1, 1); add("foley/flush_bathroom.flac", 0.38, durS * 0.25, 3); add("foley/water_pour_short.flac", 0.36, durS * 0.55, 1.5); }
+  if (n === "RhPumiceWetDry") { add("foley/pumice_griddle.flac", 0.38, 0.3, durS * 0.7); add("foley/sand_paper_b.flac", 0.4, 0.3, durS * 0.7); add("design/impact_blow.flac", 0.3, durS * 0.65, 0.8); }
+  if (n === "RhHardWater") { for (let k = 0; k < 3; k++) add("design/camera_shutter.flac", 0.36, 0.15 + k * 0.27, 0.6); add("design/stamp_rubber.flac", 0.36, durS * 0.58, 0.9); }
+  if (n === "RhRingColors") { add("design/paper_slide.flac", 0.34, 0.05, 0.9); if ((P.pick ?? -1) >= 0) add("design/click_interface.flac", 0.32, 0.35, 0.5); }
   if (n === "RhPins") add("design/pop_soap_bubble.flac", 0.36, 0.3, 0.6);
   if (n === "RhBottle3D") add("foley/cap_unscrew_jar.flac", 0.4, 0.2, 1.2);
   if (n === "RhMeasureCup") add("foley/water_pour_short.flac", 0.4, 0.3, 1.6);

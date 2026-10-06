@@ -12,6 +12,8 @@ import { RhMeasureCup, RhTimer30 } from "./RhGauges";
 import { RhRimJets, RhBleachVsRoots, RhNeverMix } from "./RhScience";
 import { RhNameTag, RhAsk } from "./RhOverlays";
 import { RhGroutPore3D } from "./RhGroutPore3D";
+import { RhBowlSection3D } from "./RhBowlSection3D";
+import { RhPasteMix, RhWaterLevel, RhPumiceWetDry, RhHardWater, RhRingColors } from "./RhRing";
 import { RhMoldCalendar, RhSwabTest, RhWipeReveal, RhFogMirror, RhPatchMeter, RhWetMap, RhStrengthMeter, RhNextVideo } from "./RhMold";
 
 // Ken-Burns al azar POR PLANO (regla 1.ter): sentido 50/50, amplitud 3-9 % fotos / 1,5-4 % clips, foco 28-72 %, paneo atado a la escala.
@@ -61,6 +63,7 @@ const Placeholder: React.FC<{ avatar?: boolean }> = ({ avatar }) => (
 const COMP: Record<string, React.FC<any>> = {
   RhToiletCutaway3D, RhBottle3D, RhChapter, RhCheck, RhBookPage, RhQRCard, RhDoDont, RhPins, RhColorCode, RhMeasureCup, RhTimer30, RhRimJets, RhBleachVsRoots, RhNeverMix,
   RhGroutPore3D, RhMoldCalendar, RhSwabTest, RhWipeReveal, RhFogMirror, RhPatchMeter, RhWetMap, RhStrengthMeter,
+  RhBowlSection3D, RhPasteMix, RhWaterLevel, RhPumiceWetDry, RhHardWater, RhRingColors,
 };
 const OVC: Record<string, React.FC<any>> = { RhNameTag, RhAsk, RhNextVideo };
 

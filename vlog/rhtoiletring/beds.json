@@ -1,0 +1,302 @@
+[
+ {
+  "name": "bd_showerclean",
+  "q": "clean white shower tiles",
+  "scene": "A clean white tiled shower in an ordinary home bathroom."
+ },
+ {
+  "name": "bd_tubside",
+  "q": "bathtub bathroom interior",
+  "scene": "An ordinary home bathroom with a white bathtub, daylight."
+ },
+ {
+  "name": "bd_sinkmorning",
+  "q": "bathroom sink morning light",
+  "scene": "A bathroom sink in morning daylight."
+ },
+ {
+  "name": "bd_towelrack",
+  "q": "bathroom towels rack",
+  "scene": "Folded towels on a rack in a home bathroom."
+ },
+ {
+  "name": "bd_steam",
+  "q": "steam shower bathroom",
+  "scene": "Steam rising in a home shower."
+ },
+ {
+  "name": "bd_drops",
+  "q": "water drops glass shower",
+  "scene": "Water drops on a glass shower door."
+ },
+ {
+  "name": "bd_showerhead",
+  "q": "shower head water",
+  "scene": "Water running from a shower head."
+ },
+ {
+  "name": "bd_spraybottle",
+  "q": "spray bottle cleaning bathroom",
+  "scene": "Cleaning a bathroom with a spray bottle."
+ },
+ {
+  "name": "bd_wipecounter",
+  "q": "wiping bathroom counter",
+  "scene": "Wiping a bathroom counter with a cloth."
+ },
+ {
+  "name": "bd_gloveshands",
+  "q": "rubber gloves cleaning",
+  "scene": "Hands in rubber gloves cleaning."
+ },
+ {
+  "name": "bd_bucketmop",
+  "q": "mop bucket floor cleaning",
+  "scene": "A mop and bucket cleaning a floor."
+ },
+ {
+  "name": "bd_window",
+  "q": "bathroom window daylight",
+  "scene": "Daylight through a small bathroom window."
+ },
+ {
+  "name": "bd_mirror",
+  "q": "bathroom mirror reflection",
+  "scene": "A bathroom mirror above a sink."
+ },
+ {
+  "name": "bd_faucetdrip",
+  "q": "faucet dripping water",
+  "scene": "A faucet dripping water."
+ },
+ {
+  "name": "bd_tilescrub",
+  "q": "scrubbing tiles brush",
+  "scene": "Scrubbing tiles with a brush."
+ },
+ {
+  "name": "bd_bubbles",
+  "q": "soap bubbles foam",
+  "scene": "Soap foam and bubbles close up."
+ },
+ {
+  "name": "bd_laundrybasket",
+  "q": "laundry basket towels",
+  "scene": "A laundry basket with towels."
+ },
+ {
+  "name": "bd_cabinet",
+  "q": "bathroom cabinet shelves",
+  "scene": "Shelves in a bathroom cabinet with toiletries."
+ },
+ {
+  "name": "bd_hallway",
+  "q": "house hallway interior",
+  "scene": "A quiet hallway inside a family home."
+ },
+ {
+  "name": "bd_kitchentable",
+  "q": "kitchen table coffee",
+  "scene": "A kitchen table with a coffee cup."
+ },
+ {
+  "name": "bd_porch",
+  "q": "house porch",
+  "scene": "A front porch of a house."
+ },
+ {
+  "name": "bd_curtain",
+  "q": "shower curtain bathroom",
+  "scene": "A shower curtain in a bathroom."
+ },
+ {
+  "name": "bd_tubfill",
+  "q": "filling bathtub water",
+  "scene": "Water filling a bathtub."
+ },
+ {
+  "name": "bd_drain",
+  "q": "shower drain water",
+  "scene": "Water flowing into a shower drain."
+ },
+ {
+  "name": "bd_squeegee",
+  "q": "squeegee window cleaning",
+  "scene": "Cleaning glass with a squeegee."
+ },
+ {
+  "name": "bd_folding",
+  "q": "folding towels",
+  "scene": "Hands folding a towel."
+ },
+ {
+  "name": "bd_sponge",
+  "q": "sponge squeeze water",
+  "scene": "Squeezing water from a sponge."
+ },
+ {
+  "name": "bd_cleaningcaddy",
+  "q": "cleaning supplies caddy",
+  "scene": "A caddy with cleaning supplies."
+ },
+ {
+  "name": "bd_plant",
+  "q": "houseplant windowsill",
+  "scene": "A houseplant on a windowsill."
+ },
+ {
+  "name": "bd_coffeepour",
+  "q": "pouring coffee mug",
+  "scene": "Pouring coffee into a mug."
+ },
+ {
+  "name": "bd_washhands2",
+  "q": "washing hands sink",
+  "scene": "Washing hands at a sink."
+ },
+ {
+  "name": "bd_bathmat",
+  "q": "bath mat floor",
+  "scene": "A bath mat on a bathroom floor."
+ },
+ {
+  "name": "bd_lightswitch",
+  "q": "light switch turning on",
+  "scene": "A hand turning on a light switch."
+ },
+ {
+  "name": "bd_tilewall",
+  "q": "white tile wall",
+  "scene": "A white tiled wall."
+ },
+ {
+  "name": "bd_sunroom",
+  "q": "sunlight living room",
+  "scene": "Sunlight in a cozy living room."
+ },
+ {
+  "name": "bd_rain",
+  "q": "rain on window",
+  "scene": "Rain drops running down a window."
+ },
+ {
+  "name": "bd_dusting",
+  "q": "dusting shelf cloth",
+  "scene": "Dusting a shelf with a cloth."
+ },
+ {
+  "name": "bd_vacuum",
+  "q": "vacuum cleaning floor",
+  "scene": "Vacuuming a floor."
+ },
+ {
+  "name": "bd_bedsheet",
+  "q": "making bed sheets",
+  "scene": "Making a bed with fresh sheets."
+ },
+ {
+  "name": "bd_dishes",
+  "q": "washing dishes sink",
+  "scene": "Washing dishes in a kitchen sink."
+ },
+ {
+  "name": "bd_glassclean",
+  "q": "cleaning glass door",
+  "scene": "Cleaning a glass door."
+ },
+ {
+  "name": "bd_fanceiling",
+  "q": "ceiling fan",
+  "scene": "A ceiling fan turning."
+ },
+ {
+  "name": "bd_teapot",
+  "q": "kettle steam kitchen",
+  "scene": "A kettle steaming in a kitchen."
+ },
+ {
+  "name": "bd_handtowel",
+  "q": "hand towel hook",
+  "scene": "A hand towel hanging on a hook."
+ },
+ {
+  "name": "bd_soapdispenser",
+  "q": "soap dispenser sink",
+  "scene": "A soap dispenser by a bathroom sink."
+ },
+ {
+  "name": "bd_cleanfloor",
+  "q": "mopping tile floor",
+  "scene": "Mopping a tile floor."
+ },
+ {
+  "name": "bd_lightswitch2",
+  "q": "switching on light",
+  "scene": "A hand switching on a light."
+ },
+ {
+  "name": "bd_towels2",
+  "q": "stack of towels",
+  "scene": "A stack of folded towels."
+ },
+ {
+  "name": "bd_bathroom2",
+  "q": "small bathroom interior",
+  "scene": "A small ordinary bathroom."
+ },
+ {
+  "name": "bd_tub2",
+  "q": "white bathtub",
+  "scene": "A white bathtub in a bathroom."
+ },
+ {
+  "name": "bd_shelf2",
+  "q": "bathroom shelf bottles",
+  "scene": "Bottles on a bathroom shelf."
+ },
+ {
+  "name": "bd_wipe2",
+  "q": "wiping table cloth",
+  "scene": "Wiping a surface with a cloth."
+ },
+ {
+  "name": "bd_window3",
+  "q": "window curtains daylight",
+  "scene": "Daylight through window curtains."
+ },
+ {
+  "name": "bd_laundry2",
+  "q": "laundry room",
+  "scene": "An ordinary laundry room."
+ },
+ {
+  "name": "bd_kitchen2",
+  "q": "kitchen counter morning",
+  "scene": "A kitchen counter in the morning."
+ },
+ {
+  "name": "bd_sink3",
+  "q": "washing sink",
+  "scene": "Washing a white sink."
+ },
+ {
+  "name": "bd_spray3",
+  "q": "spraying cleaner",
+  "scene": "Spraying cleaner on a surface."
+ },
+ {
+  "name": "bd_mop2",
+  "q": "mopping floor",
+  "scene": "Mopping a floor."
+ },
+ {
+  "name": "bd_flowers",
+  "q": "flowers vase window",
+  "scene": "Flowers in a vase by a window."
+ },
+ {
+  "name": "bd_house2",
+  "q": "house exterior suburb",
+  "scene": "A house in a quiet suburb."
+ }
+]
