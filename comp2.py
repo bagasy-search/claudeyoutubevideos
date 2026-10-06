@@ -48,7 +48,7 @@ def r_doc3d(sh, sid, DUR, put):
     if ph > 960: page = page.crop((0, 0, page.width, int(page.width * 960 / pw))); ph = 960
     page = np.asarray(page.resize((pw, ph), Image.LANCZOS)).astype(np.float32) / 255
     g = page.mean(-1, keepdims=True); page = np.clip(g * np.array([0.98, 0.95, 0.88]) + 0.02, 0, 1)   # papel envejecido
-    lines = sh.get("write", []); hf = font(f"{M}/fonts/Caveat.ttf", 64)
+    lines = sh.get("write", []); hf = font(f"{M}/fonts/CourierPrime.ttf", 44) if sh.get("font") == "mono" else font(f"{M}/fonts/Caveat.ttf", 64)
     px0, py0 = (1600 - pw) // 2, max(0, min(1000 - ph, (1000 - ph) // 2 + 20))
     hl = sh.get("highlight")                      # (x0,y0,x1,y1) fracción de la página
     for i in range(N):
@@ -63,7 +63,7 @@ def r_doc3d(sh, sid, DUR, put):
             im = Image.new("RGBA", (pw, ph), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
             for j, ln in enumerate(lines):
                 s_ = ln[:max(0, k - acc)]; acc += len(ln)
-                d.text((sh.get("x0", 70), 120 + j * 92), s_, font=hf, fill=(22, 30, 85, 235))
+                d.text((sh.get("x0", 70), sh.get("y0", 120) + j * 92), s_, font=hf, fill=(22, 30, 85, 235) if sh.get("font") != "mono" else (30, 26, 24, 240))
             L = np.asarray(im).astype(np.float32) / 255; pg = pg * (1 - L[..., 3:]) + L[..., :3] * L[..., 3:]
         if hl:
             a = ramp(t, DUR * 0.55, DUR * 0.85)

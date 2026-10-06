@@ -1,0 +1,1814 @@
+[
+ {
+  "id": "apertura",
+  "kind": "open",
+  "t0": 0.0,
+  "dur": 7.0,
+  "at": "0",
+  "exacto": true
+ },
+ {
+  "id": "t01_tallador",
+  "kind": "clip",
+  "t0": 7.0,
+  "dur": 3.58,
+  "at": "1",
+  "exacto": true
+ },
+ {
+  "id": "v_bsas_noche",
+  "kind": "depth",
+  "t0": 10.58,
+  "dur": 5.24,
+  "at": "2.0",
+  "exacto": true
+ },
+ {
+  "id": "v_casa_noche",
+  "kind": "depth2",
+  "t0": 15.82,
+  "dur": 1.48,
+  "at": "2.0@ocho de la noche",
+  "exacto": true
+ },
+ {
+  "id": "v_tomas_cama",
+  "kind": "clip",
+  "t0": 17.3,
+  "dur": 1.7,
+  "at": "2.1@tom\u00e1s tiene",
+  "exacto": true
+ },
+ {
+  "id": "v_pelota",
+  "kind": "depth2",
+  "t0": 19.0,
+  "dur": 2.24,
+  "at": "2.1@una pelota de trapo",
+  "exacto": true
+ },
+ {
+  "id": "v_hemofilia",
+  "kind": "depth2",
+  "t0": 21.24,
+  "dur": 3.28,
+  "at": "2.1@una enfermedad",
+  "exacto": true
+ },
+ {
+  "id": "v_gasa",
+  "kind": "depth2",
+  "t0": 24.52,
+  "dur": 2.94,
+  "at": "2.2@su sangre",
+  "exacto": false
+ },
+ {
+  "id": "v_herida",
+  "kind": "depth2",
+  "t0": 27.46,
+  "dur": 4.42,
+  "at": "2.2@una herida chiquita",
+  "exacto": true
+ },
+ {
+  "id": "v_diente",
+  "kind": "depth2",
+  "t0": 31.88,
+  "dur": 2.86,
+  "at": "2.3@le sacaron un diente",
+  "exacto": true
+ },
+ {
+  "id": "v_tomas_gasa",
+  "kind": "clip",
+  "t0": 34.74,
+  "dur": 1.98,
+  "at": "2.3@no para de sangrar",
+  "exacto": true
+ },
+ {
+  "id": "v_docf_gasa",
+  "kind": "clip",
+  "t0": 36.72,
+  "dur": 3.5,
+  "at": "2.4@el m\u00e9dico de la familia",
+  "exacto": true
+ },
+ {
+  "id": "v_docf_padre",
+  "kind": "clip",
+  "t0": 40.22,
+  "dur": 4.48,
+  "at": "2.4@mira al padre",
+  "exacto": true
+ },
+ {
+  "id": "v_mama_boca",
+  "kind": "clip",
+  "t0": 44.7,
+  "dur": 1.4,
+  "at": "2.4@no llega a la ma\u00f1ana",
+  "exacto": true
+ },
+ {
+  "id": "q12",
+  "kind": "depth2",
+  "t0": 46.1,
+  "dur": 3.6,
+  "at": "2.5",
+  "exacto": true
+ },
+ {
+  "id": "v_casa_lejos",
+  "kind": "depth2",
+  "t0": 49.7,
+  "dur": 4.86,
+  "at": "4.0",
+  "exacto": true
+ },
+ {
+  "id": "a_rawson",
+  "kind": "depth2",
+  "t0": 54.56,
+  "dur": 1.5,
+  "at": "4.0@en el hospital rawson",
+  "exacto": true
+ },
+ {
+  "id": "p02_agote_mira",
+  "kind": "clip",
+  "t0": 56.06,
+  "dur": 4.0,
+  "at": "4.0@un m\u00e9dico de bigote",
+  "exacto": true
+ },
+ {
+  "id": "o02_botella_tray",
+  "kind": "depth2",
+  "t0": 60.06,
+  "dur": 4.18,
+  "at": "4.1",
+  "exacto": true
+ },
+ {
+  "id": "o03_sangre_liquida",
+  "kind": "depth2",
+  "t0": 64.24,
+  "dur": 1.48,
+  "at": "4.1@no se coagul\u00f3",
+  "exacto": true
+ },
+ {
+  "id": "d02_coagulo",
+  "kind": "depth",
+  "t0": 65.72,
+  "dur": 6.36,
+  "at": "4.2",
+  "exacto": true
+ },
+ {
+  "id": "p04_cama_vacia",
+  "kind": "clip",
+  "t0": 72.08,
+  "dur": 3.18,
+  "at": "4.2@cuando alguien se desangraba",
+  "exacto": true
+ },
+ {
+  "id": "a01_retrato",
+  "kind": "retrato",
+  "t0": 75.26,
+  "dur": 4.22,
+  "at": "4.3@ese m\u00e9dico se llamaba",
+  "exacto": true
+ },
+ {
+  "id": "a_nara_transf",
+  "kind": "depth2",
+  "t0": 79.48,
+  "dur": 2.8,
+  "at": "4.3@a millones de personas",
+  "exacto": true
+ },
+ {
+  "id": "o04_monedas_no",
+  "kind": "depth2",
+  "t0": 82.28,
+  "dur": 1.86,
+  "at": "4.3@ni un solo peso",
+  "exacto": true
+ },
+ {
+  "id": "v_tomas_duerme",
+  "kind": "clip",
+  "t0": 84.14,
+  "dur": 5.531,
+  "at": "4.4",
+  "exacto": true
+ },
+ {
+  "id": "g01_sello",
+  "kind": "graf",
+  "t0": 89.671,
+  "dur": 2.169,
+  "at": "5",
+  "exacto": true
+ },
+ {
+  "id": "t02_tallador_estante",
+  "kind": "clip",
+  "t0": 91.84,
+  "dur": 5.98,
+  "at": "6.0",
+  "exacto": true
+ },
+ {
+  "id": "d04_estante",
+  "kind": "depth",
+  "t0": 97.82,
+  "dur": 2.38,
+  "at": "6.0@si te gustan",
+  "exacto": true
+ },
+ {
+  "id": "v_reloj_tic",
+  "kind": "depth2",
+  "t0": 100.2,
+  "dur": 4.329,
+  "at": "6.0@y qu\u00e9date",
+  "exacto": true
+ },
+ {
+  "id": "cap1",
+  "kind": "capitulo",
+  "t0": 104.529,
+  "dur": 2.111,
+  "at": "7",
+  "exacto": true
+ },
+ {
+  "id": "d05_hospital1900",
+  "kind": "depth",
+  "t0": 106.64,
+  "dur": 3.7,
+  "at": "8.0",
+  "exacto": true
+ },
+ {
+  "id": "p05_parto",
+  "kind": "clip",
+  "t0": 110.34,
+  "dur": 2.78,
+  "at": "8.1@una mujer acaba de dar a luz",
+  "exacto": true
+ },
+ {
+  "id": "p06_andamio",
+  "kind": "clip",
+  "t0": 113.12,
+  "dur": 2.6,
+  "at": "8.1@un obrero",
+  "exacto": true
+ },
+ {
+  "id": "v_soldado",
+  "kind": "clip",
+  "t0": 115.72,
+  "dur": 2.2,
+  "at": "8.1@un soldado",
+  "exacto": true
+ },
+ {
+  "id": "p07_medicos_impotentes",
+  "kind": "clip",
+  "t0": 117.92,
+  "dur": 5.84,
+  "at": "8.2",
+  "exacto": true
+ },
+ {
+  "id": "c01_timeline",
+  "kind": "corridor",
+  "t0": 123.76,
+  "dur": 7.92,
+  "at": "8.3",
+  "exacto": true
+ },
+ {
+  "id": "o05_jeringa",
+  "kind": "depth2",
+  "t0": 131.68,
+  "dur": 4.56,
+  "at": "8.4",
+  "exacto": true
+ },
+ {
+  "id": "o07_coagulo",
+  "kind": "depth2",
+  "t0": 136.24,
+  "dur": 2.8,
+  "at": "8.4@se espesa",
+  "exacto": true
+ },
+ {
+  "id": "d06_viena",
+  "kind": "depth",
+  "t0": 139.04,
+  "dur": 2.16,
+  "at": "8.5",
+  "exacto": true
+ },
+ {
+  "id": "a_landsteiner",
+  "kind": "depth2",
+  "t0": 141.2,
+  "dur": 3.08,
+  "at": "8.5@karl landsteiner",
+  "exacto": false
+ },
+ {
+  "id": "o06_tubos_grupos",
+  "kind": "depth2",
+  "t0": 144.28,
+  "dur": 2.96,
+  "at": "8.5@ya se sab\u00eda",
+  "exacto": true
+ },
+ {
+  "id": "o09_gelatina",
+  "kind": "depth2",
+  "t0": 147.24,
+  "dur": 1.94,
+  "at": "8.6",
+  "exacto": true
+ },
+ {
+  "id": "lam_brazo",
+  "kind": "lamina",
+  "t0": 149.18,
+  "dur": 6.04,
+  "at": "8.7",
+  "exacto": true
+ },
+ {
+  "id": "p08_cirugia_brazo",
+  "kind": "clip",
+  "t0": 155.22,
+  "dur": 3.7,
+  "at": "8.7@acostados lado a lado",
+  "exacto": true
+ },
+ {
+  "id": "o43_sutura",
+  "kind": "depth2",
+  "t0": 158.92,
+  "dur": 2.62,
+  "at": "8.8",
+  "exacto": true
+ },
+ {
+  "id": "o08_instrumentos",
+  "kind": "depth2",
+  "t0": 161.54,
+  "dur": 3.629,
+  "at": "8.8@nadie sab\u00eda cu\u00e1nta sangre",
+  "exacto": true
+ },
+ {
+  "id": "a_wellcome",
+  "kind": "depth2",
+  "t0": 165.169,
+  "dur": 3.0,
+  "at": "9",
+  "exacto": true
+ },
+ {
+  "id": "q10",
+  "kind": "depth2",
+  "t0": 168.169,
+  "dur": 1.511,
+  "at": "10",
+  "exacto": true
+ },
+ {
+  "id": "v_docf_hielo",
+  "kind": "clip",
+  "t0": 169.68,
+  "dur": 4.42,
+  "at": "11.0",
+  "exacto": true
+ },
+ {
+  "id": "v_hielo",
+  "kind": "depth2",
+  "t0": 174.1,
+  "dur": 2.94,
+  "at": "11.0@hielo",
+  "exacto": true
+ },
+ {
+  "id": "v_mama_pregunta",
+  "kind": "clip",
+  "t0": 177.04,
+  "dur": 2.96,
+  "at": "11.1",
+  "exacto": true
+ },
+ {
+  "id": "v_docf_baja",
+  "kind": "clip",
+  "t0": 180.0,
+  "dur": 1.46,
+  "at": "11.1@el m\u00e9dico baja la vista",
+  "exacto": true
+ },
+ {
+  "id": "lam_brazo2",
+  "kind": "lamina",
+  "t0": 181.46,
+  "dur": 4.48,
+  "at": "11.2",
+  "exacto": true
+ },
+ {
+  "id": "v_crucifijo",
+  "kind": "depth2",
+  "t0": 185.94,
+  "dur": 1.42,
+  "at": "11.2@y rezar",
+  "exacto": true
+ },
+ {
+  "id": "v_tomas_palido",
+  "kind": "clip",
+  "t0": 187.36,
+  "dur": 4.133,
+  "at": "11.2@a un chico de ocho a\u00f1os",
+  "exacto": true
+ },
+ {
+  "id": "cap2",
+  "kind": "capitulo",
+  "t0": 191.493,
+  "dur": 1.787,
+  "at": "12",
+  "exacto": true
+ },
+ {
+  "id": "a02_bib",
+  "kind": "depth2",
+  "t0": 193.28,
+  "dur": 2.8,
+  "at": "13.0",
+  "exacto": true
+ },
+ {
+  "id": "d07_bsas1868",
+  "kind": "depth",
+  "t0": 196.08,
+  "dur": 3.84,
+  "at": "13.0@veintid\u00f3s de septiembre",
+  "exacto": true
+ },
+ {
+  "id": "a_colegio",
+  "kind": "depth2",
+  "t0": 199.92,
+  "dur": 3.14,
+  "at": "13.1",
+  "exacto": true
+ },
+ {
+  "id": "p09_estudiante",
+  "kind": "clip",
+  "t0": 203.06,
+  "dur": 1.82,
+  "at": "13.1@se recibi\u00f3 de m\u00e9dico",
+  "exacto": true
+ },
+ {
+  "id": "o10_diploma",
+  "kind": "depth2",
+  "t0": 204.88,
+  "dur": 1.76,
+  "at": "13.1@universidad de buenos aires",
+  "exacto": true
+ },
+ {
+  "id": "map_mg",
+  "kind": "mapazoom",
+  "t0": 206.64,
+  "dur": 2.3,
+  "at": "13.2",
+  "exacto": true
+ },
+ {
+  "id": "d08_martingarcia",
+  "kind": "depth",
+  "t0": 208.94,
+  "dur": 4.78,
+  "at": "13.2@hospital de leprosos",
+  "exacto": true
+ },
+ {
+  "id": "a_rawson2",
+  "kind": "depth2",
+  "t0": 213.72,
+  "dur": 2.68,
+  "at": "13.3",
+  "exacto": true
+ },
+ {
+  "id": "doc_sala3",
+  "kind": "doc3d",
+  "t0": 216.4,
+  "dur": 3.3,
+  "at": "13.3@la sala tres",
+  "exacto": true
+ },
+ {
+  "id": "v_profesor",
+  "kind": "clip",
+  "t0": 219.7,
+  "dur": 0.96,
+  "at": "13.4",
+  "exacto": true
+ },
+ {
+  "id": "p10_diputado",
+  "kind": "clip",
+  "t0": 220.66,
+  "dur": 4.18,
+  "at": "13.4@fue legislador",
+  "exacto": true
+ },
+ {
+  "id": "c02_timelapse",
+  "kind": "timelapse",
+  "t0": 224.84,
+  "dur": 4.24,
+  "at": "13.4@una ley",
+  "exacto": true
+ },
+ {
+  "id": "o11_ladrillo",
+  "kind": "depth2",
+  "t0": 229.08,
+  "dur": 6.42,
+  "at": "13.5",
+  "exacto": true
+ },
+ {
+  "id": "p11_nino",
+  "kind": "clip",
+  "t0": 235.5,
+  "dur": 6.68,
+  "at": "13.6",
+  "exacto": true
+ },
+ {
+  "id": "o12_panuelo",
+  "kind": "depth2",
+  "t0": 242.18,
+  "dur": 1.52,
+  "at": "13.6@la nariz",
+  "exacto": true
+ },
+ {
+  "id": "p12_agote_nino",
+  "kind": "clip",
+  "t0": 243.7,
+  "dur": 6.82,
+  "at": "13.7",
+  "exacto": true
+ },
+ {
+  "id": "o44_reloj_bolsillo",
+  "kind": "depth2",
+  "t0": 250.52,
+  "dur": 3.644,
+  "at": "13.7@ning\u00fan m\u00e9dico del mundo",
+  "exacto": true
+ },
+ {
+  "id": "cap3",
+  "kind": "capitulo",
+  "t0": 254.164,
+  "dur": 2.2,
+  "at": "14",
+  "exacto": true
+ },
+ {
+  "id": "a_bsas1914",
+  "kind": "depth2",
+  "t0": 256.364,
+  "dur": 5.036,
+  "at": "15",
+  "exacto": true
+ },
+ {
+  "id": "o13_placa",
+  "kind": "depth2",
+  "t0": 261.4,
+  "dur": 2.94,
+  "at": "16.0@nombrado director",
+  "exacto": true
+ },
+ {
+  "id": "p13_imaz_agote",
+  "kind": "clip",
+  "t0": 264.34,
+  "dur": 3.68,
+  "at": "16.1",
+  "exacto": true
+ },
+ {
+  "id": "p22_imaz",
+  "kind": "clip",
+  "t0": 268.02,
+  "dur": 2.719,
+  "at": "16.1@lucio imaz",
+  "exacto": true
+ },
+ {
+  "id": "o45_cuaderno_fallos",
+  "kind": "depth2",
+  "t0": 270.739,
+  "dur": 2.161,
+  "at": "16.1@c\u00f3mo se le gana",
+  "exacto": true
+ },
+ {
+  "id": "o14_recipientes",
+  "kind": "depth2",
+  "t0": 272.9,
+  "dur": 3.12,
+  "at": "16.2",
+  "exacto": false
+ },
+ {
+  "id": "o15_termometro",
+  "kind": "depth2",
+  "t0": 276.02,
+  "dur": 1.78,
+  "at": "16.2@prueban temperaturas",
+  "exacto": true
+ },
+ {
+  "id": "o38_tubos",
+  "kind": "depth2",
+  "t0": 277.8,
+  "dur": 2.36,
+  "at": "16.3",
+  "exacto": true
+ },
+ {
+  "id": "p14_perro",
+  "kind": "clip",
+  "t0": 280.16,
+  "dur": 2.2,
+  "at": "16.3@en perros",
+  "exacto": true
+ },
+ {
+  "id": "o16_fallo",
+  "kind": "depth2",
+  "t0": 282.36,
+  "dur": 4.06,
+  "at": "16.4",
+  "exacto": true
+ },
+ {
+  "id": "c03_diario_guerra",
+  "kind": "periodico",
+  "t0": 286.42,
+  "dur": 5.86,
+  "at": "16.5",
+  "exacto": true
+ },
+ {
+  "id": "d09_trincheras",
+  "kind": "depth",
+  "t0": 292.28,
+  "dur": 2.505,
+  "at": "16.5@los heridos",
+  "exacto": true
+ },
+ {
+  "id": "cap4",
+  "kind": "capitulo",
+  "t0": 294.785,
+  "dur": 2.2,
+  "at": "17",
+  "exacto": true
+ },
+ {
+  "id": "p17_agote_espera",
+  "kind": "clip",
+  "t0": 296.985,
+  "dur": 2.595,
+  "at": "18",
+  "exacto": true
+ },
+ {
+  "id": "p16_agote_idea",
+  "kind": "clip",
+  "t0": 299.58,
+  "dur": 4.16,
+  "at": "19.0",
+  "exacto": true
+ },
+ {
+  "id": "o17_huevo",
+  "kind": "depth2",
+  "t0": 303.74,
+  "dur": 5.72,
+  "at": "19.1",
+  "exacto": true
+ },
+ {
+  "id": "c04_particulas",
+  "kind": "particulas",
+  "t0": 309.46,
+  "dur": 5.5,
+  "at": "19.2",
+  "exacto": true
+ },
+ {
+  "id": "c05_doc_receta",
+  "kind": "doc3d",
+  "t0": 314.96,
+  "dur": 2.86,
+  "at": "19.3",
+  "exacto": true
+ },
+ {
+  "id": "p15_cristales",
+  "kind": "clip",
+  "t0": 317.82,
+  "dur": 1.88,
+  "at": "19.3@le ech\u00f3 unos cristales",
+  "exacto": true
+ },
+ {
+  "id": "c06_calendario",
+  "kind": "depth2",
+  "t0": 319.7,
+  "dur": 8.82,
+  "at": "19.3@guard\u00f3 el frasco",
+  "exacto": true,
+  "wk": [
+   [
+    5.0,
+    1
+   ],
+   [
+    6.06,
+    7
+   ],
+   [
+    7.56,
+    15
+   ]
+  ]
+ },
+ {
+  "id": "p18_agote_inclina",
+  "kind": "clip",
+  "t0": 328.52,
+  "dur": 3.3,
+  "at": "21.1",
+  "exacto": true
+ },
+ {
+  "id": "mic_calcio",
+  "kind": "microscopio",
+  "t0": 331.82,
+  "dur": 7.28,
+  "at": "21.2",
+  "exacto": true
+ },
+ {
+  "id": "mic_fibrina",
+  "kind": "microscopio",
+  "t0": 339.1,
+  "dur": 9.34,
+  "at": "21.3",
+  "exacto": true
+ },
+ {
+  "id": "mic_citrato",
+  "kind": "microscopio",
+  "t0": 348.44,
+  "dur": 6.8,
+  "at": "21.4",
+  "exacto": true
+ },
+ {
+  "id": "o46_ampolla",
+  "kind": "depth2",
+  "t0": 355.24,
+  "dur": 6.9,
+  "at": "21.5",
+  "exacto": true
+ },
+ {
+  "id": "p19_inyeccion",
+  "kind": "clip",
+  "t0": 362.14,
+  "dur": 4.64,
+  "at": "21.5@se la inyect\u00f3",
+  "exacto": true
+ },
+ {
+  "id": "o20_jeringa_vacia",
+  "kind": "depth2",
+  "t0": 366.78,
+  "dur": 1.676,
+  "at": "21.6",
+  "exacto": true
+ },
+ {
+  "id": "q7",
+  "kind": "depth2",
+  "t0": 368.456,
+  "dur": 2.384,
+  "at": "22",
+  "exacto": true
+ },
+ {
+  "id": "v_tomas_labios",
+  "kind": "clip",
+  "t0": 370.84,
+  "dur": 4.16,
+  "at": "23.0",
+  "exacto": true
+ },
+ {
+  "id": "v_mama_pulso",
+  "kind": "clip",
+  "t0": 375.0,
+  "dur": 4.06,
+  "at": "23.1",
+  "exacto": true
+ },
+ {
+  "id": "v_reloj_pulso",
+  "kind": "depth2",
+  "t0": 379.06,
+  "dur": 2.98,
+  "at": "23.1@cada vez es m\u00e1s r\u00e1pido",
+  "exacto": true
+ },
+ {
+  "id": "v_gasa2",
+  "kind": "depth2",
+  "t0": 382.04,
+  "dur": 3.28,
+  "at": "23.2",
+  "exacto": true
+ },
+ {
+  "id": "o03_frasco_cb",
+  "kind": "depth2",
+  "t0": 385.32,
+  "dur": 2.76,
+  "at": "23.2@del frasco de agote",
+  "exacto": true
+ },
+ {
+  "id": "v_tomas_ojos",
+  "kind": "clip",
+  "t0": 388.08,
+  "dur": 1.66,
+  "at": "23.2@se est\u00e1 yendo",
+  "exacto": true
+ },
+ {
+  "id": "cap5",
+  "kind": "capitulo",
+  "t0": 389.74,
+  "dur": 2.22,
+  "at": "24",
+  "exacto": true
+ },
+ {
+  "id": "c07_bsas_letras",
+  "kind": "depth2",
+  "t0": 391.96,
+  "dur": 6.08,
+  "at": "25.0",
+  "exacto": true
+ },
+ {
+  "id": "p20_portero",
+  "kind": "clip",
+  "t0": 398.04,
+  "dur": 5.2,
+  "at": "25.1",
+  "exacto": true
+ },
+ {
+  "id": "c08_flujo",
+  "kind": "flujo",
+  "t0": 403.24,
+  "dur": 6.7,
+  "at": "25.2",
+  "exacto": true
+ },
+ {
+  "id": "o22_frasco_grad",
+  "kind": "depth2",
+  "t0": 409.94,
+  "dur": 1.66,
+  "at": "25.2@y queda l\u00edquida",
+  "exacto": true
+ },
+ {
+  "id": "lam_aparato",
+  "kind": "lamina",
+  "t0": 411.6,
+  "dur": 11.58,
+  "at": "25.3",
+  "exacto": true,
+  "wk": [
+   [
+    3.14,
+    0
+   ],
+   [
+    4.18,
+    1
+   ],
+   [
+    5.64,
+    2
+   ],
+   [
+    7.16,
+    3
+   ],
+   [
+    10.24,
+    4
+   ]
+  ]
+ },
+ {
+  "id": "p21_merlo",
+  "kind": "clip",
+  "t0": 423.18,
+  "dur": 6.2,
+  "at": "25.4",
+  "exacto": true
+ },
+ {
+  "id": "a03_fotolupa",
+  "kind": "fotolupa",
+  "t0": 429.38,
+  "dur": 5.84,
+  "at": "25.5",
+  "exacto": true
+ },
+ {
+  "id": "o23_portaobjetos",
+  "kind": "depth2",
+  "t0": 435.22,
+  "dur": 4.12,
+  "at": "25.6",
+  "exacto": true
+ },
+ {
+  "id": "v_microsc_ok",
+  "kind": "depth2",
+  "t0": 439.34,
+  "dur": 1.503,
+  "at": "25.6@todo est\u00e1 bien",
+  "exacto": true
+ },
+ {
+  "id": "p23_puerta_aula",
+  "kind": "still",
+  "t0": 440.843,
+  "dur": 1.957,
+  "at": "26",
+  "exacto": true
+ },
+ {
+  "id": "p24_agote_aula",
+  "kind": "clip",
+  "t0": 442.8,
+  "dur": 4.6,
+  "at": "27.0",
+  "exacto": true
+ },
+ {
+  "id": "d11_aula",
+  "kind": "depth",
+  "t0": 447.4,
+  "dur": 2.92,
+  "at": "27.1",
+  "exacto": true
+ },
+ {
+  "id": "p25_autoridades",
+  "kind": "clip",
+  "t0": 450.32,
+  "dur": 2.52,
+  "at": "27.1@eufemio uballes",
+  "exacto": true
+ },
+ {
+  "id": "v_guemes",
+  "kind": "still",
+  "t0": 452.84,
+  "dur": 2.74,
+  "at": "27.1@luis g\u00fcemes",
+  "exacto": true
+ },
+ {
+  "id": "v_palacio",
+  "kind": "still",
+  "t0": 455.58,
+  "dur": 2.64,
+  "at": "27.1@enrique palacio",
+  "exacto": true
+ },
+ {
+  "id": "p26_madre",
+  "kind": "clip",
+  "t0": 458.22,
+  "dur": 4.58,
+  "at": "27.2",
+  "exacto": true
+ },
+ {
+  "id": "c09_300cc",
+  "kind": "depth2",
+  "t0": 462.8,
+  "dur": 3.84,
+  "at": "27.3",
+  "exacto": true
+ },
+ {
+  "id": "p27_alta",
+  "kind": "clip",
+  "t0": 466.64,
+  "dur": 4.038,
+  "at": "27.4",
+  "exacto": true
+ },
+ {
+  "id": "cap6",
+  "kind": "capitulo",
+  "t0": 470.678,
+  "dur": 2.2,
+  "at": "28",
+  "exacto": true
+ },
+ {
+  "id": "p28_telegrafo",
+  "kind": "clip",
+  "t0": 472.878,
+  "dur": 2.002,
+  "at": "29",
+  "exacto": true
+ },
+ {
+  "id": "c10_laprensa",
+  "kind": "periodico",
+  "t0": 474.88,
+  "dur": 4.394,
+  "at": "30.0",
+  "exacto": true
+ },
+ {
+  "id": "q5",
+  "kind": "depth2",
+  "t0": 479.274,
+  "dur": 1.886,
+  "at": "31",
+  "exacto": true
+ },
+ {
+  "id": "v_prensa_ext",
+  "kind": "depth2",
+  "t0": 481.16,
+  "dur": 3.58,
+  "at": "32.0",
+  "exacto": true
+ },
+ {
+  "id": "v_julian_tipos",
+  "kind": "clip",
+  "t0": 484.74,
+  "dur": 7.56,
+  "at": "32.1",
+  "exacto": true
+ },
+ {
+  "id": "v_componedor",
+  "kind": "depth2",
+  "t0": 492.3,
+  "dur": 4.28,
+  "at": "32.2",
+  "exacto": true
+ },
+ {
+  "id": "v_julian_dedos",
+  "kind": "clip",
+  "t0": 496.58,
+  "dur": 1.7,
+  "at": "32.2@sus dedos se frenan",
+  "exacto": true
+ },
+ {
+  "id": "v_prueba",
+  "kind": "depth2",
+  "t0": 498.28,
+  "dur": 3.24,
+  "at": "32.3",
+  "exacto": true
+ },
+ {
+  "id": "v_julian_lee",
+  "kind": "clip",
+  "t0": 501.52,
+  "dur": 2.14,
+  "at": "32.4",
+  "exacto": true
+ },
+ {
+  "id": "v_delantal",
+  "kind": "depth2",
+  "t0": 503.66,
+  "dur": 1.98,
+  "at": "32.4@deja el delantal",
+  "exacto": true
+ },
+ {
+  "id": "v_julian_corre",
+  "kind": "clip",
+  "t0": 505.64,
+  "dur": 1.42,
+  "at": "32.4@sale corriendo",
+  "exacto": true
+ },
+ {
+  "id": "d12_nuevayork",
+  "kind": "depth",
+  "t0": 507.06,
+  "dur": 1.5,
+  "at": "33.0",
+  "exacto": true
+ },
+ {
+  "id": "c_herald14",
+  "kind": "periodico",
+  "t0": 508.56,
+  "dur": 4.14,
+  "at": "33.0@new york herald",
+  "exacto": true
+ },
+ {
+  "id": "p29_agote_carta",
+  "kind": "clip",
+  "t0": 512.7,
+  "dur": 4.74,
+  "at": "33.1",
+  "exacto": true
+ },
+ {
+  "id": "c_telegrama",
+  "kind": "doc3d",
+  "t0": 517.44,
+  "dur": 3.3,
+  "at": "33.1@por tel\u00e9grafo",
+  "exacto": true
+ },
+ {
+  "id": "c11_mapa",
+  "kind": "mapamesa",
+  "t0": 520.74,
+  "dur": 5.82,
+  "at": "33.2",
+  "exacto": true
+ },
+ {
+  "id": "a_embajada",
+  "kind": "depth2",
+  "t0": 526.56,
+  "dur": 1.3,
+  "at": "33.2@los dos bandos",
+  "exacto": true
+ },
+ {
+  "id": "o24_patente",
+  "kind": "depth2",
+  "t0": 527.86,
+  "dur": 1.66,
+  "at": "33.3",
+  "exacto": true
+ },
+ {
+  "id": "c12_balanza",
+  "kind": "balanza",
+  "t0": 529.52,
+  "dur": 5.72,
+  "at": "33.4",
+  "exacto": true
+ },
+ {
+  "id": "o40_monedas",
+  "kind": "depth2",
+  "t0": 535.24,
+  "dur": 2.57,
+  "at": "33.4@le pertenec\u00eda a la humanidad",
+  "exacto": true
+ },
+ {
+  "id": "q3",
+  "kind": "depth2",
+  "t0": 537.81,
+  "dur": 2.87,
+  "at": "34",
+  "exacto": true
+ },
+ {
+  "id": "v_julian_frazada",
+  "kind": "clip",
+  "t0": 540.68,
+  "dur": 4.32,
+  "at": "35.0",
+  "exacto": true
+ },
+ {
+  "id": "v_coche",
+  "kind": "clip",
+  "t0": 545.0,
+  "dur": 1.5,
+  "at": "35.0@coche de alquiler",
+  "exacto": true
+ },
+ {
+  "id": "v_caballo",
+  "kind": "clip",
+  "t0": 546.5,
+  "dur": 2.74,
+  "at": "35.1",
+  "exacto": true
+ },
+ {
+  "id": "v_coche_dentro",
+  "kind": "clip",
+  "t0": 549.24,
+  "dur": 1.8,
+  "at": "35.1@tom\u00e1s ya no abre",
+  "exacto": true
+ },
+ {
+  "id": "v_golpea",
+  "kind": "clip",
+  "t0": 551.04,
+  "dur": 4.855,
+  "at": "35.2",
+  "exacto": true
+ },
+ {
+  "id": "cap7",
+  "kind": "capitulo",
+  "t0": 555.895,
+  "dur": 2.145,
+  "at": "36",
+  "exacto": true
+ },
+ {
+  "id": "o26_caballos",
+  "kind": "depth2",
+  "t0": 558.04,
+  "dur": 4.1,
+  "at": "37.0",
+  "exacto": true
+ },
+ {
+  "id": "c13_herald",
+  "kind": "periodico",
+  "t0": 562.14,
+  "dur": 10.5,
+  "at": "37.1",
+  "exacto": true
+ },
+ {
+  "id": "p30_lewisohn",
+  "kind": "clip",
+  "t0": 572.64,
+  "dur": 4.76,
+  "at": "37.1@richard lewisohn",
+  "exacto": true
+ },
+ {
+  "id": "p31_weil",
+  "kind": "clip",
+  "t0": 577.4,
+  "dur": 6.04,
+  "at": "37.2@richard weil",
+  "exacto": true
+ },
+ {
+  "id": "o47_revista",
+  "kind": "depth2",
+  "t0": 583.44,
+  "dur": 2.1,
+  "at": "37.2@un mes despu\u00e9s",
+  "exacto": true
+ },
+ {
+  "id": "o27_balanza_dosis",
+  "kind": "depth2",
+  "t0": 585.54,
+  "dur": 3.76,
+  "at": "37.3",
+  "exacto": true
+ },
+ {
+  "id": "o48_cristales",
+  "kind": "depth2",
+  "t0": 589.3,
+  "dur": 3.96,
+  "at": "37.3@la dosis exacta",
+  "exacto": true
+ },
+ {
+  "id": "d13_bruselas",
+  "kind": "depth",
+  "t0": 593.26,
+  "dur": 2.66,
+  "at": "37.4",
+  "exacto": true
+ },
+ {
+  "id": "p32_hustin",
+  "kind": "still",
+  "t0": 595.92,
+  "dur": 7.94,
+  "at": "37.4@albert hustin",
+  "exacto": true
+ },
+ {
+  "id": "c_carrera",
+  "kind": "carrera",
+  "t0": 603.86,
+  "dur": 5.96,
+  "at": "37.5",
+  "exacto": true
+ },
+ {
+  "id": "p33_agote_firme",
+  "kind": "still",
+  "t0": 609.82,
+  "dur": 5.86,
+  "at": "37.6",
+  "exacto": true
+ },
+ {
+  "id": "o49_ventana",
+  "kind": "depth2",
+  "t0": 615.68,
+  "dur": 1.975,
+  "at": "37.6@lo regal\u00f3 a todos",
+  "exacto": true
+ },
+ {
+  "id": "q1",
+  "kind": "depth2",
+  "t0": 617.655,
+  "dur": 1.945,
+  "at": "38",
+  "exacto": true
+ },
+ {
+  "id": "v_joven_puerta",
+  "kind": "clip",
+  "t0": 619.6,
+  "dur": 3.32,
+  "at": "39.0",
+  "exacto": true
+ },
+ {
+  "id": "v_gasa3",
+  "kind": "depth2",
+  "t0": 622.92,
+  "dur": 2.38,
+  "at": "39.0@mira la gasa",
+  "exacto": true
+ },
+ {
+  "id": "o39_bandeja",
+  "kind": "depth2",
+  "t0": 625.3,
+  "dur": 1.98,
+  "at": "39.0@un frasco graduado",
+  "exacto": true
+ },
+ {
+  "id": "v_julian_ansioso",
+  "kind": "clip",
+  "t0": 627.28,
+  "dur": 4.6,
+  "at": "39.1",
+  "exacto": true
+ },
+ {
+  "id": "v_portaobj",
+  "kind": "depth2",
+  "t0": 631.88,
+  "dur": 1.78,
+  "at": "39.1@sirve para su hijo",
+  "exacto": true
+ },
+ {
+  "id": "v_mezcla",
+  "kind": "clip",
+  "t0": 633.66,
+  "dur": 2.62,
+  "at": "39.2",
+  "exacto": true
+ },
+ {
+  "id": "a_landsteiner2",
+  "kind": "depth2",
+  "t0": 636.28,
+  "dur": 2.44,
+  "at": "39.2@como ense\u00f1\u00f3 landsteiner",
+  "exacto": true
+ },
+ {
+  "id": "mic_grumos",
+  "kind": "microscopio",
+  "t0": 638.72,
+  "dur": 2.84,
+  "at": "39.2@si se forman grumos",
+  "exacto": true
+ },
+ {
+  "id": "mic_libre",
+  "kind": "microscopio",
+  "t0": 641.56,
+  "dur": 1.44,
+  "at": "39.3",
+  "exacto": true
+ },
+ {
+  "id": "v_julian_brazo",
+  "kind": "clip",
+  "t0": 643.0,
+  "dur": 1.54,
+  "at": "39.4",
+  "exacto": true
+ },
+ {
+  "id": "v_frasco_llena",
+  "kind": "clip",
+  "t0": 644.54,
+  "dur": 3.8,
+  "at": "39.4@su sangre cae en el frasco",
+  "exacto": true
+ },
+ {
+  "id": "v_gota_brazo",
+  "kind": "clip",
+  "t0": 648.34,
+  "dur": 2.911,
+  "at": "39.4@gota a gota",
+  "exacto": true
+ },
+ {
+  "id": "v_amanecer",
+  "kind": "depth2",
+  "t0": 651.251,
+  "dur": 3.889,
+  "at": "40",
+  "exacto": true
+ },
+ {
+  "id": "v_tomas_despierta",
+  "kind": "clip",
+  "t0": 655.14,
+  "dur": 4.28,
+  "at": "41.0",
+  "exacto": true
+ },
+ {
+  "id": "v_tomas_pelota",
+  "kind": "clip",
+  "t0": 659.42,
+  "dur": 1.759,
+  "at": "41.0@es su pelota",
+  "exacto": true
+ },
+ {
+  "id": "cap8",
+  "kind": "capitulo",
+  "t0": 661.179,
+  "dur": 2.2,
+  "at": "42",
+  "exacto": true
+ },
+ {
+  "id": "c15_luna_match",
+  "kind": "match",
+  "t0": 663.379,
+  "dur": 2.961,
+  "at": "43",
+  "exacto": true
+ },
+ {
+  "id": "d15_frente",
+  "kind": "depth",
+  "t0": 666.34,
+  "dur": 2.84,
+  "at": "44.0",
+  "exacto": true
+ },
+ {
+  "id": "a_nara_carpas",
+  "kind": "depth2",
+  "t0": 669.18,
+  "dur": 5.3,
+  "at": "44.1",
+  "exacto": true
+ },
+ {
+  "id": "p34_robertson",
+  "kind": "clip",
+  "t0": 674.48,
+  "dur": 3.72,
+  "at": "44.1@oswald robertson",
+  "exacto": true
+ },
+ {
+  "id": "p35_voluntario",
+  "kind": "clip",
+  "t0": 678.2,
+  "dur": 4.58,
+  "at": "44.2",
+  "exacto": true
+ },
+ {
+  "id": "o30_caja",
+  "kind": "depth2",
+  "t0": 682.78,
+  "dur": 2.72,
+  "at": "44.2@cajas de municiones",
+  "exacto": true
+ },
+ {
+  "id": "o41_botellas_hielo",
+  "kind": "depth2",
+  "t0": 685.5,
+  "dur": 2.48,
+  "at": "44.3",
+  "exacto": true
+ },
+ {
+  "id": "a_cambrai",
+  "kind": "depth2",
+  "t0": 687.98,
+  "dur": 4.48,
+  "at": "44.3@la batalla de cambrai",
+  "exacto": true
+ },
+ {
+  "id": "p36_soldado_salvado",
+  "kind": "clip",
+  "t0": 692.46,
+  "dur": 1.28,
+  "at": "44.3@habr\u00edan muerto",
+  "exacto": true
+ },
+ {
+  "id": "c16_rail",
+  "kind": "rail",
+  "t0": 693.74,
+  "dur": 4.24,
+  "at": "44.4",
+  "exacto": true
+ },
+ {
+  "id": "c17_persiana",
+  "kind": "persiana",
+  "t0": 697.98,
+  "dur": 2.269,
+  "at": "44.4@bancos de sangre",
+  "exacto": true
+ },
+ {
+  "id": "cap9",
+  "kind": "capitulo",
+  "t0": 700.249,
+  "dur": 2.2,
+  "at": "45",
+  "exacto": true
+ },
+ {
+  "id": "o31_cabecita",
+  "kind": "depth2",
+  "t0": 702.449,
+  "dur": 2.691,
+  "at": "46",
+  "exacto": true
+ },
+ {
+  "id": "p37_agote_clase",
+  "kind": "clip",
+  "t0": 705.14,
+  "dur": 5.16,
+  "at": "47.0",
+  "exacto": true
+ },
+ {
+  "id": "a04_viejo",
+  "kind": "depth2",
+  "t0": 710.3,
+  "dur": 4.92,
+  "at": "47.1",
+  "exacto": true
+ },
+ {
+  "id": "d16_hospital_agote",
+  "kind": "depth",
+  "t0": 715.22,
+  "dur": 3.06,
+  "at": "47.2",
+  "exacto": true
+ },
+ {
+  "id": "c18_9nov",
+  "kind": "depth2",
+  "t0": 718.28,
+  "dur": 7.08,
+  "at": "47.2@el nueve de noviembre",
+  "exacto": true
+ },
+ {
+  "id": "c19_120m",
+  "kind": "depth2",
+  "t0": 725.36,
+  "dur": 8.88,
+  "at": "47.3",
+  "exacto": true
+ },
+ {
+  "id": "o50_tubo",
+  "kind": "depth2",
+  "t0": 734.24,
+  "dur": 3.814,
+  "at": "47.3@un poco de citrato",
+  "exacto": true
+ },
+ {
+  "id": "v_pelota_vacia",
+  "kind": "depth2",
+  "t0": 738.054,
+  "dur": 2.926,
+  "at": "48",
+  "exacto": true
+ },
+ {
+  "id": "v_tallador_tomas",
+  "kind": "clip",
+  "t0": 740.98,
+  "dur": 3.6,
+  "at": "49.0",
+  "exacto": true
+ },
+ {
+  "id": "v_figura_tomas",
+  "kind": "depth2",
+  "t0": 744.58,
+  "dur": 5.76,
+  "at": "49.0@lo imaginamos",
+  "exacto": true
+ },
+ {
+  "id": "p27_alta_cb",
+  "kind": "clip",
+  "t0": 750.34,
+  "dur": 6.68,
+  "at": "49.1",
+  "exacto": true
+ },
+ {
+  "id": "p11_nino_cb",
+  "kind": "clip",
+  "t0": 757.02,
+  "dur": 3.7,
+  "at": "49.1@el ni\u00f1o hemof\u00edlico",
+  "exacto": true
+ },
+ {
+  "id": "p38_donante_hoy",
+  "kind": "clip",
+  "t0": 760.72,
+  "dur": 3.34,
+  "at": "49.2",
+  "exacto": true
+ },
+ {
+  "id": "p36_cb",
+  "kind": "clip",
+  "t0": 764.06,
+  "dur": 7.102,
+  "at": "49.2@chicos madres soldados",
+  "exacto": true
+ },
+ {
+  "id": "a_nara_transf2",
+  "kind": "depth2",
+  "t0": 771.162,
+  "dur": 3.118,
+  "at": "50",
+  "exacto": true
+ },
+ {
+  "id": "o34_cierre",
+  "kind": "depth2",
+  "t0": 774.28,
+  "dur": 1.12,
+  "at": "51.0",
+  "exacto": true
+ },
+ {
+  "id": "p11_cb2",
+  "kind": "clip",
+  "t0": 775.4,
+  "dur": 2.34,
+  "at": "51.0@un ni\u00f1o que sangraba",
+  "exacto": true
+ },
+ {
+  "id": "o17_cb",
+  "kind": "depth2",
+  "t0": 777.74,
+  "dur": 2.82,
+  "at": "51.0@una sal",
+  "exacto": true
+ },
+ {
+  "id": "p20_cb",
+  "kind": "clip",
+  "t0": 780.56,
+  "dur": 2.08,
+  "at": "51.0@un portero",
+  "exacto": true
+ },
+ {
+  "id": "p39_agote_ventana",
+  "kind": "clip",
+  "t0": 782.64,
+  "dur": 5.8,
+  "at": "51.1",
+  "exacto": true
+ },
+ {
+  "id": "t03_tallador_final",
+  "kind": "clip",
+  "t0": 788.44,
+  "dur": 6.2,
+  "at": "51.2",
+  "exacto": true
+ },
+ {
+  "id": "d17_estatua",
+  "kind": "depth",
+  "t0": 794.64,
+  "dur": 4.2,
+  "at": "51.3",
+  "exacto": true
+ },
+ {
+  "id": "t04_tallador_repisa",
+  "kind": "clip",
+  "t0": 798.84,
+  "dur": 3.92,
+  "at": "52",
+  "exacto": true
+ },
+ {
+  "id": "d18_getafe",
+  "kind": "depth",
+  "t0": 802.76,
+  "dur": 7.7,
+  "at": "53.0",
+  "exacto": true
+ },
+ {
+  "id": "d20_autogiro",
+  "kind": "depth",
+  "t0": 810.46,
+  "dur": 7.55,
+  "at": "53.0@harto de ver caer",
+  "exacto": true
+ }
+]

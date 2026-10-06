@@ -13,6 +13,9 @@ F_SC, F_PF, F_AN = f"{M}/fonts/CormorantSC.ttf", f"{M}/fonts/Playfair.ttf", f"{M
 F_HAND = f"{M}/fonts/Caveat.ttf"
 SHOTS = {s["id"]: s for s in json.load(open(f"{M}/shots.json", encoding="utf8"))}
 sid, DUR = sys.argv[1], float(sys.argv[2]); sh = SHOTS.get(sid, {"kind": "graf", "spec": sid})
+if os.path.exists(f"{M}/planos.json"):                     # marcas por palabra (wk) que resolvió timeline.py
+    for _p in json.load(open(f"{M}/planos.json")):
+        if _p["id"] == sid and _p.get("wk"): sh["wk"] = _p["wk"]
 N = max(1, int(round(DUR * FPS)))
 rng = np.random.default_rng(abs(hash(sid)) % 2**32)
 os.makedirs(f"{M}/planos", exist_ok=True)
@@ -21,7 +24,49 @@ OUT = f"{M}/planos/{sid}{'_prev' if PREV else ''}.mp4"
 def writer():
     return subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
                              "-c:v", "libx264", "-crf", "16" if not PREV else "23", "-preset", "medium", "-pix_fmt", "yuv420p", OUT], stdin=subprocess.PIPE)
-def put(p, img): p.stdin.write((np.clip(img, 0, 1) * 255).astype(np.uint8).tobytes())
+_FI = [0]
+def put(p, img):
+    img = overlays(img, _FI[0] / FPS); _FI[0] += 1
+    p.stdin.write((np.clip(img, 0, 1) * 255).astype(np.uint8).tobytes())
+
+# ---- superposiciones genéricas sobre cualquier plano (pasada 2):
+#   sh["rotulo"] = [nombre, rol]  placa de madera tallada abajo a la izquierda (personaje que se presenta)
+#   sh["tag"]    = "RECREACIÓN"   etiqueta discreta arriba a la derecha
+_OV = {}
+def _wood(w, h, seed=3):
+    g = np.random.default_rng(seed); yy = np.arange(h)[:, None] / h; xx = np.arange(w)[None, :] / w
+    n = cv2.resize(fbm(64, 16, seed, base=2), (w, h))
+    grain = 0.5 + 0.5 * np.sin((xx * 9 + n * 2.2 + yy * 0.6) * 6.28 * 3)
+    base = np.dstack([0.42 + 0.10 * grain, 0.27 + 0.07 * grain, 0.15 + 0.04 * grain])
+    base *= (0.85 + 0.15 * (1 - np.abs(yy - 0.5) * 2))[..., None]
+    return base.astype(np.float32)
+def _plaque(name, role):
+    w, h = int(760 * S), int(150 * S); im = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    fN = ImageFont.truetype(F_PF, int(50 * S)); fR = ImageFont.truetype(F_SC, int(30 * S))
+    tw = max(d.textlength(name, font=fN), d.textlength(role, font=fR)); w = int(tw + 90 * S)
+    wood = _wood(w, h); a = np.ones((h, w), np.float32)
+    txt = Image.new("L", (w, h), 0); dt = ImageDraw.Draw(txt)
+    dt.text((44 * S, 22 * S), name, font=fN, fill=255); dt.text((46 * S, 88 * S), role, font=fR, fill=255)
+    T = np.asarray(txt).astype(np.float32) / 255
+    sh_ = np.roll(T, (int(2 * S), int(2 * S)), (0, 1)); hi = np.roll(T, (-int(1 * S), -int(1 * S)), (0, 1))
+    rgb = wood * (1 - T[..., None] * 0.62) + (hi * (1 - T))[..., None] * 0.18 - (sh_ * (1 - T))[..., None] * 0.0
+    rgb[:int(3 * S)] *= 1.25; rgb[-int(4 * S):] *= 0.55; rgb[:, :int(3 * S)] *= 1.2; rgb[:, -int(4 * S):] *= 0.6        # canto biselado
+    return np.dstack([np.clip(rgb, 0, 1), a])
+def overlays(img, t):
+    if sh.get("rotulo"):
+        if "rot" not in _OV: _OV["rot"] = _plaque(*sh["rotulo"])
+        P = _OV["rot"]; ph, pw = P.shape[:2]; k = ramp(t, 0.35, 0.95) * (1 - ramp(t, DUR - 0.7, DUR - 0.15))
+        if k > 0:
+            x0 = int(70 * S - (1 - k) * (pw + 80 * S)); y0 = int(H - ph - 70 * S)
+            L = np.zeros((H, W, 4), np.float32); xs, xe = max(0, x0), min(W, x0 + pw)
+            if xe > xs:
+                L[y0:y0 + ph, xs:xe] = P[:, xs - x0:xe - x0]
+                shd = cv2.GaussianBlur(L[..., 3], (0, 0), 10 * S); shd = np.roll(shd, (int(8 * S), int(6 * S)), (0, 1))
+                img = img * (1 - shd[..., None] * 0.55 * k); L[..., 3] *= k; img = over(img, L)
+    if sh.get("tag"):
+        if "tag" not in _OV: _OV["tag"] = text_layer([sh["tag"]], F_SC, 26, (W - 60 * S, 52 * S), color=(240, 232, 215), alpha=0.75, anchor="ra", shadow=True)
+        img = over(img, _OV["tag"] * np.array([1, 1, 1, ramp(t, 0.2, 0.7)]))
+    return img
 
 def text_layer(lines, font, size, xy, color=(255, 255, 255), alpha=1.0, anchor="la", shadow=True, spacing=1.15):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
@@ -96,8 +141,8 @@ def apply_fx(img, t, i, u, fx, fgbox=None, P=None, rays=None):
 
 # ---------------------------------------------------------------- tipos
 def r_clip():
-    src = f"{M}/clips/{sid}.mp4"
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", src, "-vf", f"scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
+    src = f"{M}/clips/{sh.get('clipsrc', sid)}.mp4"
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(sh.get("ss", 0)), "-i", src, "-vf", f"scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
     fr = np.frombuffer(raw, np.uint8).reshape(-1, H, W, 3); n = len(fr); p = writer()
     for i in range(N):
         t = i / FPS
@@ -111,7 +156,7 @@ def r_clip():
     p.stdin.close(); p.wait()
 
 def r_still():
-    img0 = load(f"{M}/img/kf__{sid}.png", size=(int(W * 1.1), int(H * 1.1))); p = writer()
+    img0 = load(f"{M}/img/kf__{sh.get('imgsrc', sid)}.png", size=(int(W * 1.1), int(H * 1.1))); p = writer()
     for i in range(N):
         t = i / FPS; u = ease(t / DUR)
         put(p, film(xform(img0, 1.0 + 0.05 * u), t, i, "warm"))
@@ -306,11 +351,12 @@ if __name__ == "__main__":
     if k == "graf":
         import graf; graf.render(sh, DUR, OUT, PREV)
     else:
-        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas", "fotolupa", "flujo"):
-            import comp, comp2, comp3; p = writer()
+        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas", "fotolupa", "flujo", "capitulo", "microscopio", "lamina", "carrera", "mapazoom"):
+            import comp, comp2, comp3, comp4; p = writer()
             {"depth2": comp.r_depth2, "corridor": comp.r_corridor, "timelapse": comp.r_timelapse, "doc3d": comp2.r_doc3d, "mapamesa": comp2.r_mapamesa,
              "retrato": comp2.r_retrato, "match": comp2.r_match, "rail": comp2.r_rail, "persiana": comp2.r_persiana, "periodico": comp2.r_periodico,
-             "balanza": comp2.r_balanza, "particulas": comp2.r_particulas, "fotolupa": comp3.r_fotolupa, "flujo": comp3.r_flujo}[k](sh, sid, DUR, lambda im: put(p, im))
+             "balanza": comp2.r_balanza, "particulas": comp2.r_particulas, "fotolupa": comp3.r_fotolupa, "flujo": comp3.r_flujo, "capitulo": comp4.r_capitulo, "microscopio": comp4.r_microscopio,
+             "lamina": comp4.r_lamina, "carrera": comp4.r_carrera, "mapazoom": comp4.r_mapazoom}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
             p.stdin.close(); p.wait()
         else:
             {"clip": r_clip, "still": r_still, "multi": r_multi, "depth": r_depth, "arch": r_arch, "open": r_open}[k]()

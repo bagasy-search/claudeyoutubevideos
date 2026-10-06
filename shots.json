@@ -3,49 +3,39 @@
   "at": "0",
   "id": "apertura",
   "kind": "open",
+  "w": 1.0,
   "mode": "dissolve",
-  "clip": "p01_agote_botella",
-  "w": 1.0
+  "clip": "p01_agote_botella"
  },
  {
   "at": "1",
   "id": "t01_tallador",
   "kind": "clip",
-  "img": "Two real old human craftsman hands with wrinkles and a few small cuts, wearing a worn leather apron, carving with a small steel gouge the thick mustache of a tiny wooden head of a man with round glasses, curls of pale wood shavings on a worn workbench, a warm desk lamp, chisels in a leather roll, a dark workshop behind.",
-  "motion": "the gouge lifts away one thin curl of wood",
   "w": 1.0,
-  "pres": false
+  "img": null,
+  "motion": ""
  },
  {
   "at": "2.0",
-  "id": "d01_bsas1914",
+  "id": "v_bsas_noche",
   "kind": "depth",
-  "img": "No person. A street of Buenos Aires at dawn in 1914: ornate stone buildings with iron balconies, gas street lamps still lit, a horse-drawn carriage parked, wet cobblestones, a grey morning sky. The whole place is a handmade miniature stop-motion set built from real materials.",
   "w": 1.0,
+  "img": "No person. A street of Buenos Aires at night in November 1914: ornate stone houses with iron balconies, gas street lamps glowing, wet cobblestones after the rain, a few lit windows. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "cam": "dolly",
   "fx": [
-   "title:BUENOS AIRES|9 DE NOVIEMBRE DE 1914"
-  ],
-  "cam": "dolly"
+   "rain",
+   "title:BUENOS AIRES|14 DE NOVIEMBRE DE 1914"
+  ]
  },
  {
-  "at": "2.0",
-  "id": "o01_rawson",
+  "at": "2.0@ocho de la noche",
+  "id": "v_casa_noche",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [],
-  "behind": {
-   "t": "1914",
-   "size": 264,
-   "xy": [
-    0.25,
-    0.4
-   ],
-   "in": 0.05,
-   "td": "mid"
-  },
-  "src": "i_o01_rawson",
+  "src": "i_v_casa_noche",
+  "prompt": "No person. In the foreground, resting on a wet stone windowsill: a small clay flowerpot. Behind it, further away: the lit shuttered window of a modest 1914 Buenos Aires house at night, warm lamp light inside, rain on the glass.",
+  "tag": "RECREACIÓN",
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An old brass hospital door plate and a black iron gate latch on a stone pillar. Behind it, further away and softly out of focus: The stone facade of the old Hospital Rawson in Buenos Aires in 1914 with tall arched windows and an iron gate, early morning, a few lit windows. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "push",
   "focus_keys": [
    [
@@ -64,28 +54,31 @@
     1,
     "p14"
    ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "2.1@tomás tiene",
+  "id": "v_tomas_cama",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt. He sits in a narrow iron bed holding a small white cloth to his cheek, looking at the lamp with tired eyes. A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "he blinks slowly and presses the cloth to his cheek",
+  "tag": "RECREACIÓN",
+  "rotulo": [
+   "Tomás",
+   "8 años · Buenos Aires, 1914"
   ]
  },
  {
-  "at": "2.1",
-  "id": "p02_agote_mira",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, strong dark eyebrows, a long white cotton doctor's coat over a white shirt and a dark brown tie. Close view: he leans toward a glass bottle of dark red blood standing on a white metal hospital tray and stares at it with deep concentration through his round glasses. A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. ",
-  "motion": "he leans a little closer to the bottle",
-  "w": 1.0,
-  "pres": true
- },
- {
-  "at": "2.2",
-  "id": "o02_botella_tray",
+  "at": "2.1@una pelota de trapo",
+  "id": "v_pelota",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
-  "src": "i_o02_botella_tray",
+  "src": "i_v_pelota",
+  "prompt": "No person. In the foreground, resting on the wooden floor under an iron bed: a small handmade rag ball made of knotted colourful cloth. Behind it, further away and softly out of focus: a modest 1914 bedroom at night lit by an oil lamp.",
+  "tag": "RECREACIÓN",
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A glass bottle with graduated marks full of dark red blood with a rubber tube, on a white enamel hospital tray. Behind it, further away and softly out of focus: A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. Morning light from the tall windows. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "dolly",
   "focus_keys": [
    [
@@ -104,28 +97,30 @@
     1,
     "p95"
    ]
+  ],
+  "fx": [
+   "bokeh"
   ]
  },
  {
-  "at": "2.2",
-  "id": "p03_otro_brazo",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A sturdy Argentine porter of about 40 in 1914 with a bushy black mustache, a dark blue porter's jacket with brass buttons and a flat cap. He sits on a wooden chair in a hospital room with his shirt sleeve rolled up, holding his bare forearm out, a little nervous, a small cotton pad on his arm. A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. ",
-  "motion": "he looks down at his arm and back up",
-  "w": 1.0,
-  "pres": true
- },
- {
-  "at": "2.3",
-  "id": "o03_sangre_liquida",
+  "at": "2.1@una enfermedad",
+  "id": "v_hemofilia",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "tilt"
-  ],
-  "src": "i_o03_sangre_liquida",
+  "src": "i_v_hemofilia",
+  "prompt": "No person. In the foreground, resting on an empty dark wooden desk: an open old medical book from 1910 with an engraved illustration of a single drop of blood, a brass magnifying glass beside it. Behind it, further away and softly out of focus: an empty doctor's study at night with bookshelves and an oil lamp, nobody in the room.",
+  "behind": {
+   "t": "HEMOFILIA",
+   "size": 150,
+   "xy": [
+    0.5,
+    0.28
+   ],
+   "in": 0.1,
+   "tracking": 0.06,
+   "td": "mid"
+  },
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A glass bottle being gently tilted, the dark red blood inside still perfectly liquid and moving, catching the light, on a dark wooden bench. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. Soft light. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "orbit",
   "focus_keys": [
    [
@@ -136,31 +131,314 @@
     1,
     "p93"
    ]
+  ],
+  "fx": [
+   "tilt"
   ]
  },
  {
-  "at": "2.4",
-  "id": "d02_coagulo",
-  "kind": "depth",
-  "img": "No person. Extreme close view of a small glass dish on a dark laboratory bench with thick clotted dark red blood like jelly inside, a lamp far behind. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "at": "2.2@su sangre",
+  "id": "v_gasa",
+  "kind": "depth2",
   "w": 1.0,
-  "fx": [],
-  "cam": "push"
+  "src": "i_v_gasa",
+  "prompt": "No person. In the foreground, resting on a white enamel basin: a folded white gauze soaked with bright red blood, still wet and spreading. Behind it, further away and softly out of focus: a modest 1914 bedroom at night with an oil lamp.",
+  "sync_ok": true,
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p94"
+   ],
+   [
+    1,
+    "p94"
+   ]
+  ],
+  "fx": [
+   "glint"
+  ]
  },
  {
-  "at": "2.4",
-  "id": "p04_cama_vacia",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale wounded young man lies in a white iron hospital bed in 1914, eyes half closed, a nurse puppet in a white veil holding his wrist, worried. A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. ",
-  "motion": "the nurse looks up toward the door",
+  "at": "2.2@una herida chiquita",
+  "id": "v_herida",
+  "kind": "depth2",
   "w": 1.0,
-  "pres": false
+  "src": "i_v_herida",
+  "prompt": "No person. In the foreground, resting on a white linen sheet: a small carved wooden hand of a child puppet with jointed fingers and a tiny cut on one finger with a bright red drop of blood. Behind it, further away and softly out of focus: an oil lamp in a dim 1914 bedroom.",
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "2.3@le sacaron un diente",
+  "id": "v_diente",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_diente",
+  "prompt": "No person. In the foreground, resting on a white embroidered handkerchief on a wooden bedside table: one tiny baby tooth with a drop of red blood. Behind it, further away and softly out of focus: an oil lamp and an iron bed at night.",
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "2.3@no para de sangrar",
+  "id": "v_tomas_gasa",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt. He sits in bed pressing a white gauze to his mouth while his mother sits beside him holding a basin, worried. A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine mother of about 32 in 1914, dark hair in a low bun, a simple grey cotton dress with a small white collar and a knitted brown shawl.  A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "the mother leans closer and touches his hair",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "2.4@el médico de la familia",
+  "id": "v_docf_gasa",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An old Argentine family doctor of about 60 in 1914 with a short white beard and small spectacles, a black frock coat, a worn leather doctor's bag. He sits on the edge of the bed and carefully changes the bloody gauze in the mouth of a pale boy, with a serious face. A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "he lifts the old gauze and looks at it",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "2.4@mira al padre",
+  "id": "v_docf_padre",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An old Argentine family doctor of about 60 in 1914 with a short white beard and small spectacles, a black frock coat, a worn leather doctor's bag. He stands by the bed and turns to look gravely at a thin young father with a thin mustache standing in the doorway. A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a dark wool jacket, ink-stained fingers.  A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "the doctor slowly shakes his head",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "2.4@no llega a la mañana",
+  "id": "v_mama_boca",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine mother of about 32 in 1914, dark hair in a low bun, a simple grey cotton dress with a small white collar and a knitted brown shawl. She stands beside the bed and covers her mouth with her hand, eyes wet, looking at her pale sleeping son. A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "she closes her eyes and lowers her head",
+  "tag": "RECREACIÓN"
  },
  {
   "at": "2.5",
+  "id": "q12",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_q12",
+  "prompt": "No person. In the foreground, resting on a small wooden bedside table: an open brass pocket watch, an oil lamp burning bright, a white enamel basin with gauze stained with blood. Behind it, further away and softly out of focus: a modest 1914 bedroom at night with an iron bed and flowered wallpaper. Everything stands firmly on the table with its own shadow.",
+  "tag": "RECREACIÓN",
+  "cam": "push",
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "strength": 16,
+  "fx": [
+   "pulse"
+  ],
+  "bpm": 78,
+  "focus_keys": [
+   [
+    0,
+    "p85"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "behind": {
+   "t": "QUEDAN 12 HORAS",
+   "size": 160,
+   "xy": [
+    0.5,
+    0.19
+   ],
+   "td": "mid",
+   "in": 0.05,
+   "tracking": 0.05
+  }
+ },
+ {
+  "at": "4.0",
+  "id": "v_casa_lejos",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_casa_lejos",
+  "prompt": "No person. In the foreground, resting on a wet cobblestone street at night: the iron base of a street lamp. Behind it, further away: a row of modest 1914 Buenos Aires houses with one lit window, and far away the dark outline of a big hospital building with a few lit windows, rain.",
+  "strength": 20,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "4.0@en el hospital rawson",
+  "id": "a_rawson",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_rawson",
+  "archivo": true,
+  "rotulo": [
+   "Hospital Rawson",
+   "Buenos Aires · Archivo General de la Nación"
+  ],
+  "strength": 12,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p70"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "4.0@un médico de bigote",
+  "id": "p02_agote_mira",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "4.1",
+  "id": "o02_botella_tray",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o02_botella_tray",
+  "prompt": null,
+  "strength": 20,
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ],
+  "fx": [
+   "tilt"
+  ]
+ },
+ {
+  "at": "4.1@no se coaguló",
+  "id": "o03_sangre_liquida",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o03_sangre_liquida",
+  "prompt": null,
+  "behind": {
+   "t": "NO SE COAGULÓ",
+   "size": 150,
+   "xy": [
+    0.5,
+    0.25
+   ],
+   "in": 0.15,
+   "tracking": 0.05,
+   "td": "mid"
+  },
+  "strength": 20,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p94"
+   ],
+   [
+    1,
+    "p94"
+   ]
+  ],
+  "fx": [
+   "glint"
+  ]
+ },
+ {
+  "at": "4.2",
+  "id": "d02_coagulo",
+  "kind": "depth",
+  "w": 1.0,
+  "img": null,
+  "cam": "push",
+  "fx": []
+ },
+ {
+  "at": "4.2@cuando alguien se desangraba",
+  "id": "p04_cama_vacia",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "4.3@ese médico se llamaba",
   "id": "a01_retrato",
   "kind": "retrato",
-  "w": 1.3,
+  "w": 1.0,
   "src": "c_marco",
   "photo": "archivo/agote_retrato2.jpg",
   "label": [
@@ -187,111 +465,177 @@
   ]
  },
  {
-  "at": "2.5",
+  "at": "4.3@a millones de personas",
+  "id": "a_nara_transf",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_nara_transf",
+  "archivo": true,
+  "rotulo": [
+   "Estados Unidos, 1918",
+   "un soldado recibe un reloj por donar su sangre · NARA"
+  ],
+  "strength": 12,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p85"
+   ],
+   [
+    1,
+    "p60"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "4.3@ni un solo peso",
   "id": "o04_monedas_no",
   "kind": "depth2",
-  "w": 0.8,
-  "fx": [
-   "glint"
-  ],
+  "w": 1.0,
   "src": "i_o04_monedas_no",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A blank patent document with a red wax seal and a fountain pen lying unused next to an empty leather wallet. Behind it, further away and softly out of focus: A dark wooden desk in a 1914 doctor's office with a green lamp. The object stands firmly on the surface with its own shadow. No person.",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "4.4",
+  "id": "v_tomas_duerme",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt. He lies asleep, very pale, in the iron bed while his mother sits on a chair holding his small hand in both of hers. A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine mother of about 32 in 1914, dark hair in a low bun, a simple grey cotton dress with a small white collar and a knitted brown shawl.  A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "the mother squeezes his hand gently",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "5",
+  "id": "g01_sello",
+  "kind": "graf",
+  "w": 1.0,
+  "spec": "sello",
+  "year": "1914"
+ },
+ {
+  "at": "6.0",
+  "id": "t02_tallador_estante",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "6.0@si te gustan",
+  "id": "d04_estante",
+  "kind": "depth",
+  "w": 1.0,
+  "img": null,
+  "cam": "dolly",
+  "fx": [
+   "dust",
+   "rays"
+  ]
+ },
+ {
+  "at": "6.0@y quédate",
+  "id": "v_reloj_tic",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_q12",
+  "prompt": null,
+  "fx": [
+   "pulse"
+  ],
+  "bpm": 78,
   "cam": "push",
   "focus_keys": [
    [
     0,
-    "p94"
+    "p85"
    ],
    [
     1,
-    "p94"
+    "p85"
    ]
-  ]
- },
- {
-  "at": "2.6",
-  "id": "d03_pasado",
-  "kind": "depth",
-  "img": "No person. A long 1910 hospital corridor with tall windows, empty white iron beds in a row, morning light, dust in the air. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "w": 1.0,
-  "fx": [
-   "rays",
-   "dust"
   ],
-  "cam": "dolly"
+  "tag": "RECREACIÓN",
+  "strength": 20
  },
  {
-  "at": "3",
-  "id": "g01_sello",
-  "kind": "graf",
-  "spec": "sello",
+  "at": "7",
+  "id": "cap1",
+  "kind": "capitulo",
   "w": 1.0,
-  "year": "1914"
+  "num": "I",
+  "title": "EL MUNDO ANTES"
  },
  {
-  "at": "4.0",
-  "id": "t02_tallador_estante",
-  "kind": "clip",
-  "img": "Two real old human craftsman hands with wrinkles and a few small cuts, wearing a worn leather apron, placing a small finished carved wooden figure of a doctor with a big mustache and round glasses on a wooden shelf full of other small carved figures of inventors, in a warm dusty workshop.",
-  "motion": "the hands set the figure down gently and let go",
-  "w": 1.2,
-  "pres": false
- },
- {
-  "at": "4.0",
-  "id": "d04_estante",
-  "kind": "depth",
-  "img": "No person. A long wooden shelf in a craftsman's workshop crowded with small hand-carved wooden figures of old inventors and scientists, each different, wood shavings, a warm lamp, dust in the air.",
-  "w": 1.0,
-  "fx": [
-   "dust",
-   "rays"
-  ],
-  "cam": "dolly"
- },
- {
-  "at": "5.0",
+  "at": "8.0",
   "id": "d05_hospital1900",
   "kind": "depth",
-  "img": "No person. A big hospital ward of 1905 with two long rows of white iron beds, tall arched windows, a nurses' table with a lamp in the middle. The whole place is a handmade miniature stop-motion set built from real materials.",
   "w": 1.0,
-  "fx": [],
-  "cam": "orbit"
+  "img": null,
+  "cam": "orbit",
+  "fx": []
  },
  {
-  "at": "5.1",
+  "at": "8.1@una mujer acaba de dar a luz",
   "id": "p05_parto",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale young woman lies in a white iron hospital bed in 1910, exhausted, while an older midwife puppet in a grey dress and white apron presses towels and looks alarmed. A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. ",
-  "motion": "the midwife turns her head toward the door calling for help",
   "w": 1.0,
-  "pres": false
+  "img": null,
+  "motion": ""
  },
  {
-  "at": "5.1",
+  "at": "8.1@un obrero",
   "id": "p06_andamio",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet scene carved from maple wood. Two Argentine workers in 1910 flat caps, white shirts and suspenders carry a third injured worker lying on a wooden stretcher between them, walking past a brick building under construction with wooden scaffolding, piles of bricks, a dusty street. Every person is a wooden puppet with chisel facets and peg joints. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "they walk forward carrying the stretcher",
   "w": 1.0,
-  "pres": false,
+  "img": null,
+  "motion": "",
   "maxs": 1.6
  },
  {
-  "at": "5.2",
-  "id": "p07_medicos_impotentes",
+  "at": "8.1@un soldado",
+  "id": "v_soldado",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Two doctors in white coats stand at the foot of a hospital bed and look at each other helplessly, one shakes his head. A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. ",
-  "motion": "one doctor slowly shakes his head",
   "w": 1.0,
-  "pres": false
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A wounded young soldier in a 1914 grey uniform lies on a canvas army stretcher with a bloody white bandage on his chest, carried by two stretcher bearers, one at each end, into a hospital ward with white iron beds. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "the stretcher moves forward",
+  "gente": true,
+  "maxs": 1.4
  },
  {
-  "at": "5.3",
+  "at": "8.2",
+  "id": "p07_medicos_impotentes",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "8.3",
   "id": "c01_timeline",
   "kind": "corridor",
-  "w": 1.6,
+  "w": 1.0,
   "cards": [
    {
     "img": "img/x_card_1666.png",
@@ -316,52 +660,13 @@
   ]
  },
  {
-  "at": "5.4",
+  "at": "8.4",
   "id": "o05_jeringa",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [],
   "src": "i_o05_jeringa",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An old brass and glass syringe full of thick dark clotted blood lying on a white cloth. Behind it, further away and softly out of focus: A 1900 operating room with a white tiled wall and a brass lamp. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "rise",
-  "focus_keys": [
-   [
-    0,
-    "p60"
-   ],
-   [
-    0.5,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ]
- },
- {
-  "at": "5.5",
-  "id": "d06_viena",
-  "kind": "depth",
-  "img": "No person. A grand street of Vienna in 1901 with baroque stone buildings, a horse tram and gas lamps, light snow. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "w": 1.0,
-  "fx": [
-   "title:VIENA|1901"
-  ],
-  "cam": "truck"
- },
- {
-  "at": "5.5",
-  "id": "o06_tubos_grupos",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
-  "src": "i_o06_tubos_grupos",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A wooden rack with four glass test tubes of red blood, each with a small paper label A, B, AB and 0. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. . The object stands firmly on the surface with its own shadow. No person.",
   "cam": "truck",
   "focus_keys": [
    [
@@ -376,17 +681,30 @@
     1,
     "p40"
    ]
+  ],
+  "fx": [
+   "bokeh"
   ]
  },
  {
-  "at": "5.6",
+  "at": "8.4@se espesa",
   "id": "o07_coagulo",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [],
   "src": "i_o07_coagulo",
+  "prompt": null,
+  "behind": {
+   "t": "COÁGULO",
+   "size": 170,
+   "xy": [
+    0.5,
+    0.25
+   ],
+   "in": 0.1,
+   "tracking": 0.08,
+   "td": "mid"
+  },
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A glass test tube held in a brass clamp with dark red blood that has turned into a solid jelly clot. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. Dim. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "push",
   "focus_keys": [
    [
@@ -405,28 +723,56 @@
     1,
     "p14"
    ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "8.5",
+  "id": "d06_viena",
+  "kind": "depth",
+  "w": 1.0,
+  "img": null,
+  "cam": "truck",
+  "fx": [
+   "title:VIENA|1901"
   ]
  },
  {
-  "at": "5.7",
-  "id": "p08_cirugia_brazo",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Two men lie side by side on two operating tables in 1910, their arms joined by a short tube, while a surgeon in a white gown stitches carefully between them. A white tiled operating room with a big lamp. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "the surgeon makes one careful stitch",
-  "w": 1.3,
-  "pres": false
- },
- {
-  "at": "5.8",
-  "id": "o08_instrumentos",
+  "at": "8.5@karl landsteiner",
+  "id": "a_landsteiner",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "bokeh"
+  "src": "a_landsteiner",
+  "archivo": true,
+  "rotulo": [
+   "Karl Landsteiner",
+   "Viena · descubrió los grupos sanguíneos"
   ],
-  "src": "i_o08_instrumentos",
+  "sync_ok": true,
+  "strength": 12,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p50"
+   ],
+   [
+    1,
+    "p90"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "8.5@ya se sabía",
+  "id": "o06_tubos_grupos",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o06_tubos_grupos",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A tray of old steel surgical clamps, needles and silk thread, with a few drops of blood on the white cloth. Behind it, further away and softly out of focus: A 1910 operating room with white tiles. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "dolly",
   "focus_keys": [
    [
@@ -445,19 +791,19 @@
     1,
     "p95"
    ]
+  ],
+  "fx": [
+   "bokeh"
   ]
  },
  {
-  "at": "6",
+  "at": "8.6",
   "id": "o09_gelatina",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "tilt"
-  ],
   "src": "i_o09_gelatina",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A small glass jar of dark red blood under a lamp, its surface thickening into a dark jelly. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. At night under a single lamp. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "orbit",
   "focus_keys": [
    [
@@ -468,48 +814,34 @@
     1,
     "p93"
    ]
+  ],
+  "fx": [
+   "tilt"
   ]
  },
  {
-  "at": "7.0",
-  "id": "a02_biblioteca",
-  "kind": "arch",
-  "w": 1.2,
-  "src": "archivo/agote_biblioteca1908.png",
-  "move": "push",
-  "label": "LUIS AGOTE|EN SU BIBLIOTECA, 1908"
- },
- {
-  "at": "7.0",
-  "id": "d07_bsas1868",
-  "kind": "depth",
-  "img": "No person. A quiet street of Buenos Aires in 1868 with low colonial houses painted white, iron window grilles, a church dome, a horse cart, sunny. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "at": "8.7",
+  "id": "lam_brazo",
+  "kind": "lamina",
   "w": 1.0,
-  "fx": [
-   "title:BUENOS AIRES|22 DE SEPTIEMBRE DE 1868"
-  ],
-  "cam": "orbit"
+  "drawing": "brazo"
  },
  {
-  "at": "7.1",
-  "id": "p09_estudiante",
+  "at": "8.7@acostados lado a lado",
+  "id": "p08_cirugia_brazo",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Argentine medical student of about 22 in 1890 with a thin dark mustache and a black suit studies a human skeleton in an old anatomy classroom, writing in a notebook. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "he writes one line in the notebook and looks up at the skeleton",
   "w": 1.0,
-  "pres": true
+  "img": null,
+  "motion": ""
  },
  {
-  "at": "7.1",
-  "id": "o10_diploma",
+  "at": "8.8",
+  "id": "o43_sutura",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "glint"
-  ],
-  "src": "i_o10_diploma",
+  "src": "i_o43_sutura",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An old university diploma of 1893 with a red wax seal rolled half open on a desk, next to a doctor's leather bag. Behind it, further away and softly out of focus: A dark wooden study with bookshelves. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "push",
   "focus_keys": [
    [
@@ -520,31 +852,443 @@
     1,
     "p94"
    ]
+  ],
+  "fx": [
+   "glint"
   ]
  },
  {
-  "at": "7.2",
+  "at": "8.8@nadie sabía cuánta sangre",
+  "id": "o08_instrumentos",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o08_instrumentos",
+  "prompt": null,
+  "behind": {
+   "t": "¿CUÁNTA SANGRE?",
+   "size": 140,
+   "xy": [
+    0.5,
+    0.25
+   ],
+   "in": 0.1,
+   "td": "mid"
+  },
+  "strength": 20,
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "9",
+  "id": "a_wellcome",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_wellcome",
+  "archivo": true,
+  "rotulo": [
+   "Equipo de transfusión",
+   "Reino Unido · Wellcome Collection"
+  ],
+  "strength": 12,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p70"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "10",
+  "id": "q10",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_q10",
+  "prompt": "No person. In the foreground, resting on a small wooden bedside table: an open brass pocket watch, an oil lamp burning lower, a white enamel basin with gauze stained with blood. Behind it, further away and softly out of focus: a modest 1914 bedroom at night with an iron bed and flowered wallpaper. Everything stands firmly on the table with its own shadow.",
+  "tag": "RECREACIÓN",
+  "cam": "push",
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "strength": 16,
+  "fx": [
+   "pulse"
+  ],
+  "bpm": 90,
+  "focus_keys": [
+   [
+    0,
+    "p85"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "behind": {
+   "t": "QUEDAN 10 HORAS",
+   "size": 160,
+   "xy": [
+    0.5,
+    0.19
+   ],
+   "td": "mid",
+   "in": 0.05,
+   "tracking": 0.05
+  }
+ },
+ {
+  "at": "11.0",
+  "id": "v_docf_hielo",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An old Argentine family doctor of about 60 in 1914 with a short white beard and small spectacles, a black frock coat, a worn leather doctor's bag. He presses a small cloth with ice to the cheek of a pale boy lying in bed, concentrating, a bowl of ice on the bedside table. A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "he presses the cloth gently",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "11.0@hielo",
+  "id": "v_hielo",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_hielo",
+  "prompt": "No person. In the foreground, resting on a wooden bedside table: a white bowl with ice cubes, a roll of gauze and a small white stone of alum. Behind it, further away and softly out of focus: a modest 1914 bedroom at night with an iron bed.",
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "11.1",
+  "id": "v_mama_pregunta",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine mother of about 32 in 1914, dark hair in a low bun, a simple grey cotton dress with a small white collar and a knitted brown shawl. She grabs the sleeve of an old doctor with a white beard and asks him something desperately, beside her son's bed. A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An old Argentine family doctor of about 60 in 1914 with a short white beard and small spectacles, a black frock coat, a worn leather doctor's bag.  A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "she pulls his sleeve and speaks",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "11.1@el médico baja la vista",
+  "id": "v_docf_baja",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An old Argentine family doctor of about 60 in 1914 with a short white beard and small spectacles, a black frock coat, a worn leather doctor's bag. Close view: he lowers his eyes and takes off his small spectacles, defeated, in a dim bedroom at night. A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "he lowers his eyes and takes off his spectacles",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "11.2",
+  "id": "lam_brazo2",
+  "kind": "lamina",
+  "w": 1.0,
+  "drawing": "brazo",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "11.2@y rezar",
+  "id": "v_crucifijo",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_crucifijo",
+  "prompt": "No person. In the foreground, resting on a small wooden shelf: a burning candle and a rosary. Behind it, further away and softly out of focus: a wooden crucifix on a flowered wallpaper wall of a 1914 bedroom at night.",
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
+   ],
+   [
+    1,
+    "p14"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "11.2@a un chico de ocho años",
+  "id": "v_tomas_palido",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt. Close view: he lies on a white pillow with his eyes half closed, very pale, his lips white, breathing slowly. A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "his eyelids flutter slowly",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "12",
+  "id": "cap2",
+  "kind": "capitulo",
+  "w": 1.0,
+  "num": "II",
+  "title": "EL MÉDICO"
+ },
+ {
+  "at": "13.0",
+  "id": "a02_bib",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_biblioteca",
+  "archivo": true,
+  "rotulo": [
+   "Luis Agote",
+   "en su biblioteca, 1908"
+  ],
+  "strength": 12,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p85"
+   ],
+   [
+    1,
+    "p60"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "13.0@veintidós de septiembre",
+  "id": "d07_bsas1868",
+  "kind": "depth",
+  "w": 1.0,
+  "img": null,
+  "cam": "orbit",
+  "fx": [
+   "title:BUENOS AIRES|22 DE SEPTIEMBRE DE 1868"
+  ]
+ },
+ {
+  "at": "13.1",
+  "id": "a_colegio",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_colegio",
+  "archivo": true,
+  "rotulo": [
+   "Colegio Nacional de Buenos Aires",
+   "donde estudió Agote"
+  ],
+  "strength": 12,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p50"
+   ],
+   [
+    1,
+    "p90"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "13.1@se recibió de médico",
+  "id": "p09_estudiante",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "13.1@universidad de buenos aires",
+  "id": "o10_diploma",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o10_diploma",
+  "prompt": null,
+  "strength": 20,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "13.2",
+  "id": "map_mg",
+  "kind": "mapazoom",
+  "w": 1.0,
+  "src": "c_mapa",
+  "pin": [
+   0.392,
+   0.695
+  ],
+  "zoom": 2.6,
+  "label": "ISLA MARTÍN GARCÍA",
+  "sub": "RÍO DE LA PLATA · 1895"
+ },
+ {
+  "at": "13.2@hospital de leprosos",
   "id": "d08_martingarcia",
   "kind": "depth",
-  "img": "No person. A small rocky island in the brown water of the Río de la Plata in 1895 with a white lighthouse, a few old stone buildings among trees, a wooden pier, a cloudy sky. The whole place is a handmade miniature stop-motion set built from real materials.",
   "w": 1.0,
-  "fx": [],
-  "cam": "orbit"
+  "img": null,
+  "cam": "orbit",
+  "fx": []
  },
  {
-  "at": "7.3",
+  "at": "13.3",
+  "id": "a_rawson2",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_rawson",
+  "archivo": true,
+  "cam": "truck",
+  "strength": 12,
+  "focus_keys": [
+   [
+    0,
+    "p70"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "13.3@la sala tres",
+  "id": "doc_sala3",
+  "kind": "doc3d",
+  "w": 1.0,
+  "page": "archivo/sala3_portada.png",
+  "desk": "x_mesa",
+  "highlight": [
+   0.245,
+   0.655,
+   0.605,
+   0.698
+  ],
+  "scroll": [
+   [
+    0,
+    0.0
+   ],
+   [
+    0.55,
+    0.36
+   ],
+   [
+    1,
+    0.4
+   ]
+  ],
+  "focus_keys": [
+   [
+    0,
+    0.35
+   ],
+   [
+    0.6,
+    0.5
+   ],
+   [
+    1,
+    0.5
+   ]
+  ],
+  "rotulo": [
+   "Clínica Médica de la Sala III",
+   "libro de Luis Agote, 1903 · documento real"
+  ]
+ },
+ {
+  "at": "13.4",
+  "id": "v_profesor",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 42: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, a long white cotton doctor's coat over a black suit. He teaches a group of young puppet medical students in dark suits gathered around a patient's bed in a 1905 hospital ward, explaining with one raised finger. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he raises his finger and explains",
+  "gente": true
+ },
+ {
+  "at": "13.4@fue legislador",
   "id": "p10_diputado",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, a black three-piece suit with a white high stiff collar and a dark tie. He stands and speaks with conviction in a 1911 parliament hall with dark wooden benches, holding papers, other puppet legislators listening. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "he raises one hand while speaking",
   "w": 1.0,
-  "pres": true
+  "img": null,
+  "motion": ""
  },
  {
-  "at": "7.3",
+  "at": "13.4@una ley",
   "id": "c02_timelapse",
   "kind": "timelapse",
-  "w": 1.2,
+  "w": 1.0,
   "clip": "timelapse",
   "final": "x_pabellon_b",
   "fg": "x_reja",
@@ -565,14 +1309,75 @@
   }
  },
  {
-  "at": "7.4",
+  "at": "13.5",
   "id": "o11_ladrillo",
   "kind": "depth2",
-  "w": 0.8,
-  "fx": [],
+  "w": 1.0,
   "src": "i_o11_ladrillo",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A single new red brick with fresh mortar and a steel trowel on a wooden plank. Behind it, further away and softly out of focus: A building site in Buenos Aires in 1912 with wooden scaffolding. The object stands firmly on the surface with its own shadow. No person.",
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ],
+  "fx": [
+   "tilt"
+  ]
+ },
+ {
+  "at": "13.6",
+  "id": "p11_nino",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "13.6@la nariz",
+  "id": "o12_panuelo",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o12_panuelo",
+  "prompt": null,
+  "strength": 20,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p94"
+   ],
+   [
+    1,
+    "p94"
+   ]
+  ],
+  "fx": [
+   "glint"
+  ]
+ },
+ {
+  "at": "13.7",
+  "id": "p12_agote_nino",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "13.7@ningún médico del mundo",
+  "id": "o44_reloj_bolsillo",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o44_reloj_bolsillo",
+  "prompt": null,
+  "strength": 20,
   "cam": "rise",
   "focus_keys": [
    [
@@ -587,28 +1392,63 @@
     1,
     "p95"
    ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "14",
+  "id": "cap3",
+  "kind": "capitulo",
+  "w": 1.0,
+  "num": "III",
+  "title": "LA OBSESIÓN"
+ },
+ {
+  "at": "15",
+  "id": "a_bsas1914",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_bsas1914",
+  "archivo": true,
+  "rotulo": [
+   "Buenos Aires, 1914",
+   "Archivo General de la Nación"
+  ],
+  "strength": 12,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p85"
+   ],
+   [
+    1,
+    "p60"
+   ]
+  ],
+  "fx": [
+   "dust"
   ]
  },
  {
-  "at": "7.5",
-  "id": "p11_nino",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale small Argentine boy of about 8 in 1912 in a sailor suit sits on a velvet sofa holding a white handkerchief to his nose, his worried mother puppet beside him. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "he presses the handkerchief to his nose and looks up",
-  "w": 1.0,
-  "pres": true
- },
- {
-  "at": "7.5",
-  "id": "o12_panuelo",
+  "at": "16.0@nombrado director",
+  "id": "o13_placa",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
-  "src": "i_o12_panuelo",
+  "src": "i_o13_placa",
+  "prompt": null,
+  "behind": {
+   "t": "INSTITUTO MODELO",
+   "size": 76,
+   "xy": [
+    0.22,
+    0.3
+   ],
+   "in": 0.1,
+   "tracking": 0.04,
+   "td": "mid"
+  },
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A white embroidered handkerchief with small red blood stains folded on a small silver tray. Behind it, further away and softly out of focus: An elegant 1912 Buenos Aires living room with velvet curtains. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "truck",
   "focus_keys": [
    [
@@ -623,51 +1463,40 @@
     1,
     "p40"
    ]
+  ],
+  "fx": [
+   "bokeh"
   ]
  },
  {
-  "at": "7.6",
-  "id": "p12_agote_nino",
+  "at": "16.1",
+  "id": "p13_imaz_agote",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, a black three-piece suit with a white high stiff collar and a dark tie. He sits at the bedside of a pale small boy in a sailor suit lying in a carved wooden bed in a 1912 child's bedroom with flowered wallpaper, a window with lace curtains and a small toy boat on a shelf, and holds the boy's wrist checking his pulse with a worried face. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "he looks down at his pocket watch while holding the wrist",
   "w": 1.0,
-  "pres": true
+  "img": null,
+  "motion": ""
  },
  {
-  "at": "8",
-  "id": "c03_diario_guerra",
-  "kind": "periodico",
+  "at": "16.1@lucio imaz",
+  "id": "p22_imaz",
+  "kind": "clip",
   "w": 1.0,
-  "src": "c_cafe",
-  "masthead": "LA PRENSA",
-  "head": [
-   "ESTALLA LA",
-   "GUERRA EN EUROPA"
-  ],
-  "sub": "Austria-Hungría declara la guerra a Serbia",
-  "date": "29 DE JULIO DE 1914"
+  "img": null,
+  "motion": "",
+  "clipsrc": "p22_analisis",
+  "rotulo": [
+   "Lucio Imaz",
+   "médico de laboratorio · ayudante de Agote"
+  ]
  },
  {
-  "at": "9.0",
-  "id": "o13_placa",
+  "at": "16.1@cómo se le gana",
+  "id": "o45_cuaderno_fallos",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [],
-  "behind": {
-   "t": "INSTITUTO MODELO",
-   "size": 76,
-   "xy": [
-    0.22,
-    0.3
-   ],
-   "in": 0.1,
-   "tracking": 0.04,
-   "td": "mid"
-  },
-  "src": "i_o13_placa",
+  "src": "i_o45_cuaderno_fallos",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A polished brass door plate that reads nothing, mounted on a dark wooden door, next to a frosted glass window. Behind it, further away and softly out of focus: A 1914 hospital corridor with pale green tiles. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "push",
   "focus_keys": [
    [
@@ -686,28 +1515,17 @@
     1,
     "p14"
    ]
-  ]
+  ],
+  "fx": []
  },
  {
-  "at": "9.1",
-  "id": "p13_imaz_agote",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, strong dark eyebrows, a long white cotton doctor's coat over a white shirt and a dark brown tie. He and a young slim laboratory doctor with slicked-back black hair work side by side at a dark wooden lab bench full of glass jars, both looking at a test tube of blood. A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. ",
-  "motion": "they both lean toward the test tube",
-  "w": 1.0,
-  "pres": true
- },
- {
-  "at": "9.2",
+  "at": "16.2",
   "id": "o14_recipientes",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
   "src": "i_o14_recipientes",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A row of strangely shaped glass containers of different forms and sizes, some with rubber stoppers, lined up on a wooden bench. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. . The object stands firmly on the surface with its own shadow. No person.",
   "cam": "dolly",
   "focus_keys": [
    [
@@ -726,19 +1544,19 @@
     1,
     "p95"
    ]
+  ],
+  "fx": [
+   "bokeh"
   ]
  },
  {
-  "at": "9.2",
+  "at": "16.2@prueban temperaturas",
   "id": "o15_termometro",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "tilt"
-  ],
   "src": "i_o15_termometro",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A tall glass thermometer standing in a glass jar of red blood inside a copper basin of warm water with steam. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. . The object stands firmly on the surface with its own shadow. No person.",
   "cam": "orbit",
   "focus_keys": [
    [
@@ -749,29 +1567,19 @@
     1,
     "p93"
    ]
+  ],
+  "fx": [
+   "tilt"
   ]
  },
  {
-  "at": "9.3",
-  "id": "p14_perro",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Argentine laboratory doctor of about 30 in 1914, slim, clean-shaven, slicked-back black hair, a white lab coat with rolled sleeves. He kneels and gently pets a calm brown mongrel dog lying on a blanket in a laboratory, a bandage on the dog's leg. A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. ",
-  "motion": "the dog wags its tail and he pets it",
-  "w": 1.0,
-  "pres": true,
-  "maxs": 2.0
- },
- {
-  "at": "9.5",
-  "id": "o16_fallo",
+  "at": "16.3",
+  "id": "o38_tubos",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "glint"
-  ],
-  "src": "i_o16_fallo",
+  "src": "i_o38_tubos",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A glass flask with a ruined dark red clotted mass inside, tilted in the sink. Behind it, further away and softly out of focus: A white ceramic laboratory sink with brass taps and a tiled wall. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "push",
   "focus_keys": [
    [
@@ -782,46 +1590,39 @@
     1,
     "p94"
    ]
+  ],
+  "fx": [
+   "glint"
   ]
  },
  {
-  "at": "9.5",
-  "id": "d09_trincheras",
-  "kind": "depth",
-  "img": "No person. A muddy First World War trench at dusk in 1914 with wooden planks, sandbags, barbed wire and broken trees, distant smoke on the horizon. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "w": 1.0,
-  "fx": [
-   "dust"
-  ],
-  "cam": "truck"
- },
- {
-  "at": "10",
-  "id": "p15_cristales",
+  "at": "16.3@en perros",
+  "id": "p14_perro",
   "kind": "clip",
-  "img": "Extreme close view of a carved maple wood puppet hand with jointed fingers dropping a few white crystals from a small glass spoon into a glass jar of dark red blood, a dark laboratory behind.",
-  "motion": "the white crystals fall into the blood",
   "w": 1.0,
-  "pres": false
+  "img": null,
+  "motion": "",
+  "maxs": 2.0
  },
  {
-  "at": "11.0",
-  "id": "p16_agote_idea",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, strong dark eyebrows, a long white cotton doctor's coat over a white shirt and a dark brown tie. He stops in the middle of the laboratory with a sudden look of realization, slowly taking off his round glasses. A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. ",
-  "motion": "he lifts his eyebrows and takes off the glasses",
-  "w": 1.0,
-  "pres": true
- },
- {
-  "at": "11.1",
-  "id": "o17_huevo",
+  "at": "16.4",
+  "id": "o16_fallo",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [],
-  "src": "i_o17_huevo",
+  "src": "i_o16_fallo",
+  "prompt": null,
+  "behind": {
+   "t": "GELATINA",
+   "size": 150,
+   "xy": [
+    0.5,
+    0.25
+   ],
+   "in": 0.1,
+   "tracking": 0.08,
+   "td": "mid"
+  },
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A cracked egg in a white porcelain bowl with the clear raw egg white, next to a small glass jar of white crystals. Behind it, further away and softly out of focus: A 1914 kitchen with white tiles and a window. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "rise",
   "focus_keys": [
    [
@@ -836,18 +1637,106 @@
     1,
     "p95"
    ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "16.5",
+  "id": "c03_diario_guerra",
+  "kind": "periodico",
+  "w": 1.0,
+  "src": "c_cafe",
+  "masthead": "LA PRENSA",
+  "head": [
+   "ESTALLA LA",
+   "GUERRA EN EUROPA"
+  ],
+  "sub": "Austria-Hungría declara la guerra a Serbia",
+  "date": "29 DE JULIO DE 1914"
+ },
+ {
+  "at": "16.5@los heridos",
+  "id": "d09_trincheras",
+  "kind": "depth",
+  "w": 1.0,
+  "img": null,
+  "cam": "truck",
+  "fx": [
+   "dust"
   ]
  },
  {
-  "at": "11.2",
+  "at": "17",
+  "id": "cap4",
+  "kind": "capitulo",
+  "w": 1.0,
+  "num": "IV",
+  "title": "LA IDEA"
+ },
+ {
+  "at": "18",
+  "id": "p17_agote_espera",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "19.0",
+  "id": "p16_agote_idea",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "19.1",
+  "id": "o17_huevo",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o17_huevo",
+  "prompt": null,
+  "behind": {
+   "t": "CITRATO DE SODIO",
+   "size": 110,
+   "xy": [
+    0.5,
+    0.24
+   ],
+   "in": 0.12,
+   "tracking": 0.05,
+   "td": "mid"
+  },
+  "strength": 20,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "19.2",
   "id": "c04_particulas",
   "kind": "particulas",
-  "w": 1.2,
+  "w": 1.0,
   "src": "i_o18_albumina",
   "shape": "gota"
  },
  {
-  "at": "11.3",
+  "at": "19.3",
   "id": "c05_doc_receta",
   "kind": "doc3d",
   "w": 1.0,
@@ -882,11 +1771,20 @@
   ]
  },
  {
-  "at": "12",
+  "at": "19.3@le echó unos cristales",
+  "id": "p15_cristales",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "19.3@guardó el frasco",
   "id": "c06_calendario",
   "kind": "depth2",
   "w": 1.0,
   "src": "i_o19_calendario",
+  "prompt": null,
   "cam": "push",
   "focal": [
    0.5,
@@ -903,13 +1801,11 @@
    ]
   ],
   "strength": 14,
-  "fx": [],
   "behind": {
-   "t": "1",
+   "t": "0",
    "count": {
-    "from": 1,
+    "from": 0,
     "to": 15,
-    "end": 0.92,
     "fmt": "DÍA {}"
    },
    "size": 230,
@@ -925,47 +1821,281 @@
     0.42
    ],
    "subsize": 44
+  },
+  "wk": [
+   [
+    "21.0|un día",
+    1
+   ],
+   [
+    "21.0|una semana",
+    7
+   ],
+   [
+    "21.0|quince días",
+    15
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "21.1",
+  "id": "p18_agote_inclina",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "21.2",
+  "id": "mic_calcio",
+  "kind": "microscopio",
+  "w": 1.0,
+  "mode": "coagula",
+  "title": "LA SANGRE, VISTA AL MICROSCOPIO",
+  "labels": [
+   [
+    "GLÓBULOS ROJOS",
+    0.05,
+    0.36,
+    0.62
+   ],
+   [
+    "CALCIO",
+    0.45,
+    0.62,
+    0.36
+   ]
+  ]
+ },
+ {
+  "at": "21.3",
+  "id": "mic_fibrina",
+  "kind": "microscopio",
+  "w": 1.0,
+  "mode": "coagula",
+  "seed": 12,
+  "title": "SIN CITRATO",
+  "labels": [
+   [
+    "FIBRINA",
+    0.35,
+    0.45,
+    0.48
+   ],
+   [
+    "GLÓBULO ATRAPADO",
+    0.62,
+    0.62,
+    0.62
+   ]
+  ]
+ },
+ {
+  "at": "21.4",
+  "id": "mic_citrato",
+  "kind": "microscopio",
+  "w": 1.0,
+  "mode": "citrato",
+  "seed": 13,
+  "title": "CON CITRATO DE SODIO",
+  "labels": [
+   [
+    "CITRATO",
+    0.22,
+    0.36,
+    0.42
+   ],
+   [
+    "CALCIO ATRAPADO",
+    0.5,
+    0.62,
+    0.4
+   ]
+  ]
+ },
+ {
+  "at": "21.5",
+  "id": "o46_ampolla",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o46_ampolla",
+  "prompt": null,
+  "strength": 20,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "21.5@se la inyectó",
+  "id": "p19_inyeccion",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "21.6",
+  "id": "o20_jeringa_vacia",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o20_jeringa_vacia",
+  "prompt": null,
+  "strength": 20,
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ],
+  "fx": [
+   "tilt"
+  ]
+ },
+ {
+  "at": "22",
+  "id": "q7",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_q7",
+  "prompt": "No person. In the foreground, resting on a small wooden bedside table: an open brass pocket watch, an oil lamp almost burned out, very dim, a white enamel basin with gauze stained with blood. Behind it, further away and softly out of focus: a modest 1914 bedroom at night with an iron bed and flowered wallpaper. Everything stands firmly on the table with its own shadow.",
+  "tag": "RECREACIÓN",
+  "cam": "push",
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "strength": 16,
+  "fx": [
+   "pulse"
+  ],
+  "bpm": 104,
+  "focus_keys": [
+   [
+    0,
+    "p85"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "behind": {
+   "t": "QUEDAN 7 HORAS",
+   "size": 160,
+   "xy": [
+    0.5,
+    0.19
+   ],
+   "td": "mid",
+   "in": 0.05,
+   "tracking": 0.05
   }
  },
  {
-  "at": "13.0",
-  "id": "p17_agote_espera",
+  "at": "23.0",
+  "id": "v_tomas_labios",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, strong dark eyebrows, a long white cotton doctor's coat over a white shirt and a dark brown tie. At night he sits alone at a laboratory bench, chin on his hand, staring at a glass jar of dark red blood under a lamp. A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. ",
-  "motion": "he blinks slowly, staring at the jar",
   "w": 1.0,
-  "pres": true
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt. Close view: he lies very pale with white lips, a little bloody gauze at the corner of his mouth, his eyes half open, the oil lamp very dim. A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "he slowly turns his head on the pillow",
+  "tag": "RECREACIÓN",
+  "maxs": 1.5
  },
  {
-  "at": "13.1",
-  "id": "p18_agote_inclina",
+  "at": "23.1",
+  "id": "v_mama_pulso",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, strong dark eyebrows, a long white cotton doctor's coat over a white shirt and a dark brown tie. He picks up a glass jar of dark red blood and tilts it, and the blood flows freely like water; he smiles with amazement. A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. ",
-  "motion": "he tilts the jar and the blood moves inside, he smiles",
   "w": 1.0,
-  "pres": true
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine mother of about 32 in 1914, dark hair in a low bun, a simple grey cotton dress with a small white collar and a knitted brown shawl. She sits on the bed and holds her son's thin wrist with two fingers, counting his pulse with her lips moving, frightened. A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt.  A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "her lips move as she counts",
+  "tag": "RECREACIÓN",
+  "gente": true
  },
  {
-  "at": "13.2",
-  "id": "p19_inyeccion",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, strong dark eyebrows, a long white cotton doctor's coat over a white shirt and a dark brown tie. He sits at a lab bench with his sleeve rolled up and injects himself in the forearm with an old glass syringe, calm and serious, his young assistant watching worried. A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. ",
-  "motion": "he slowly pushes the syringe plunger",
-  "w": 1.0,
-  "pres": true
- },
- {
-  "at": "13.3",
-  "id": "o20_jeringa_vacia",
+  "at": "23.1@cada vez es más rápido",
+  "id": "v_reloj_pulso",
   "kind": "depth2",
-  "w": 0.8,
-  "fx": [
-   "bokeh"
+  "w": 1.0,
+  "src": "i_v_q7",
+  "prompt": null,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p88"
+   ],
+   [
+    1,
+    "p88"
+   ]
   ],
-  "src": "i_o20_jeringa_vacia",
+  "fx": [
+   "pulse"
+  ],
+  "bpm": 124,
+  "tag": "RECREACIÓN",
+  "strength": 20
+ },
+ {
+  "at": "23.2",
+  "id": "v_gasa2",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_gasa",
+  "prompt": null,
+  "cam": "dolly",
+  "tag": "RECREACIÓN",
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An empty old glass syringe and a small vial of clear liquid lying on a white cloth next to a pocket watch. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. Evening light. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "23.2@del frasco de agote",
+  "id": "o03_frasco_cb",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o03_sangre_liquida",
+  "prompt": null,
+  "cam": "push",
+  "strength": 20,
   "focus_keys": [
    [
     0,
@@ -979,14 +2109,35 @@
     1,
     "p40"
    ]
+  ],
+  "fx": [
+   "bokeh"
   ]
  },
  {
-  "at": "14.0",
+  "at": "23.2@se está yendo",
+  "id": "v_tomas_ojos",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt. Extreme close view of his pale face on the pillow, his eyes slowly closing, the dim orange light of a lamp on his cheek. A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "his eyes slowly close",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "24",
+  "id": "cap5",
+  "kind": "capitulo",
+  "w": 1.0,
+  "num": "V",
+  "title": "EL DÍA"
+ },
+ {
+  "at": "25.0",
   "id": "c07_bsas_letras",
   "kind": "depth2",
   "w": 1.0,
   "src": "d10_rawson_patio",
+  "prompt": null,
   "cam": "orbit",
   "behind": {
    "t": "HOSPITAL RAWSON",
@@ -1015,23 +2166,25 @@
    ]
   ],
   "strength": 12,
-  "fx": [],
-  "img": "No person. The inner courtyard of an old 1914 hospital in Buenos Aires: two-storey white arcades with arches, palm trees and a stone fountain in the middle, morning sun. The whole place is a handmade miniature stop-motion set built from real materials."
+  "fx": []
  },
  {
-  "at": "14.1",
+  "at": "25.1",
   "id": "p20_portero",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A sturdy Argentine porter of about 40 in 1914 with a bushy black mustache, a dark blue porter's jacket with brass buttons and a flat cap. He rolls up the sleeve of his shirt and offers his bare forearm, sitting on a wooden chair next to a doctor's table in a hospital room. A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. ",
-  "motion": "he rolls the sleeve up a bit more and holds the arm out",
   "w": 1.0,
-  "pres": true
+  "img": null,
+  "motion": "",
+  "rotulo": [
+   "Mosquera",
+   "portero del Instituto Modelo · el donante"
+  ]
  },
  {
-  "at": "14.2",
+  "at": "25.2",
   "id": "c08_flujo",
   "kind": "flujo",
-  "w": 1.3,
+  "w": 1.0,
   "src": "i_o21_flujo",
   "path": [
    [
@@ -1081,14 +2234,13 @@
   ]
  },
  {
-  "at": "14.2",
+  "at": "25.2@y queda líquida",
   "id": "o22_frasco_grad",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [],
   "src": "i_o22_frasco_grad",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A graduated glass bottle with two glass tubes in its rubber stopper, half full of dark red blood, standing in a glass basin of warm water. Behind it, further away and softly out of focus: A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. . The object stands firmly on the surface with its own shadow. No person.",
   "cam": "push",
   "focus_keys": [
    [
@@ -1107,22 +2259,55 @@
     1,
     "p14"
    ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "25.3",
+  "id": "lam_aparato",
+  "kind": "lamina",
+  "w": 1.0,
+  "drawing": "aparato",
+  "wk": [
+   [
+    "frasco graduado",
+    0
+   ],
+   [
+    "doble tubuladura",
+    1
+   ],
+   [
+    "aguja de platino",
+    2
+   ],
+   [
+    "pera de aire",
+    3
+   ],
+   [
+    "agua caliente",
+    4
+   ]
   ]
  },
  {
-  "at": "14.3",
+  "at": "25.4",
   "id": "p21_merlo",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 35 with a short trimmed black beard and a white doctor's coat. He carefully guides a thin rubber tube to the arm of a pale man lying in a white iron hospital bed, while a doctor with a big mustache and round glasses watches closely. A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. ",
-  "motion": "he adjusts the tube gently on the patient's arm",
   "w": 1.0,
-  "pres": false
+  "img": null,
+  "motion": "",
+  "rotulo": [
+   "Ernesto Merlo",
+   "médico · hizo la transfusión"
+  ]
  },
  {
-  "at": "14.4",
+  "at": "25.5",
   "id": "a03_fotolupa",
   "kind": "fotolupa",
-  "w": 1.6,
+  "w": 1.0,
   "photo": "archivo/agote_transfusion1914.jpg",
   "target": [
    0.7,
@@ -1134,25 +2319,13 @@
   ]
  },
  {
-  "at": "14.5",
-  "id": "p22_analisis",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Argentine laboratory doctor of about 30 in 1914, slim, clean-shaven, slicked-back black hair, a white lab coat with rolled sleeves. He looks through a brass microscope at a glass slide with a drop of blood, then writes a number in a notebook. A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. ",
-  "motion": "he looks up from the microscope and writes",
-  "w": 1.0,
-  "pres": true
- },
- {
-  "at": "14.5",
+  "at": "25.6",
   "id": "o23_portaobjetos",
   "kind": "depth2",
-  "w": 0.8,
-  "fx": [
-   "bokeh"
-  ],
+  "w": 1.0,
   "src": "i_o23_portaobjetos",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: Several glass microscope slides with small red blood smears lined up on a dark wooden bench next to a brass microscope. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. . The object stands firmly on the surface with its own shadow. No person.",
   "cam": "dolly",
   "focus_keys": [
    [
@@ -1171,63 +2344,121 @@
     1,
     "p95"
    ]
+  ],
+  "fx": [
+   "bokeh"
   ]
  },
  {
-  "at": "15",
+  "at": "25.6@todo está bien",
+  "id": "v_microsc_ok",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o23_portaobjetos",
+  "prompt": null,
+  "cam": "truck",
+  "behind": {
+   "t": "TODO BIEN",
+   "size": 150,
+   "xy": [
+    0.5,
+    0.25
+   ],
+   "in": 0.1,
+   "td": "mid"
+  },
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ],
+  "fx": [
+   "tilt"
+  ]
+ },
+ {
+  "at": "26",
   "id": "p23_puerta_aula",
   "kind": "still",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Seen from inside a dark corridor, two tall wooden double doors with brass handles slowly open into a bright 1914 university lecture hall full of puppet doctors in dark suits. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "the double doors open slowly",
   "w": 1.0,
-  "pres": false
+  "img": null
  },
  {
-  "at": "16.0",
+  "at": "27.0",
   "id": "p24_agote_aula",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, strong dark eyebrows, a long white cotton doctor's coat over a white shirt and a dark brown tie. He stands in the centre of a steep lecture hall next to a hospital bed and addresses the audience with calm confidence, holding a graduated glass bottle. A 1914 university lecture hall in Buenos Aires built as a handmade miniature stop-motion set: steep wooden benches in a half circle full of small puppet doctors in dark suits, a hospital bed in the centre under a big skylight. ",
-  "motion": "he lifts the bottle slightly and looks at the audience",
   "w": 1.0,
-  "pres": true
+  "img": null,
+  "motion": ""
  },
  {
-  "at": "16.1",
+  "at": "27.1",
   "id": "d11_aula",
   "kind": "depth",
-  "img": "No person. A 1914 university lecture hall in Buenos Aires built as a handmade miniature stop-motion set: steep wooden benches in a half circle empty, a hospital bed in the centre under a big skylight.  Morning light from the skylight, dust in the air.",
   "w": 1.0,
+  "img": null,
+  "cam": "rise",
   "fx": [
    "rays",
    "dust"
-  ],
-  "cam": "rise"
+  ]
  },
  {
-  "at": "16.1",
+  "at": "27.1@eufemio uballes",
   "id": "p25_autoridades",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. In the front row of a 1914 lecture hall, four important older men in black frock coats, top hats on their knees, watch attentively; one with a white beard leans forward. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "the man with the white beard leans forward",
   "w": 1.0,
-  "pres": false,
-  "maxs": 2.0
+  "img": null,
+  "motion": "",
+  "maxs": 2.0,
+  "rotulo": [
+   "Eufemio Uballes",
+   "rector de la Universidad de Buenos Aires"
+  ]
  },
  {
-  "at": "16.2",
+  "at": "27.1@luis güemes",
+  "id": "v_guemes",
+  "kind": "still",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A distinguished Argentine man of about 58 in 1914 with a grey beard, a black frock coat and a white collar, sitting in the front row of a lecture hall, attentive. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "rotulo": [
+   "Luis Güemes",
+   "decano de la Facultad de Medicina"
+  ]
+ },
+ {
+  "at": "27.1@enrique palacio",
+  "id": "v_palacio",
+  "kind": "still",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine man of about 55 in 1914 with a white mustache, a dark morning coat and a top hat on his knees, sitting in a lecture hall, serious. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "rotulo": [
+   "Enrique Palacio",
+   "intendente de Buenos Aires"
+  ]
+ },
+ {
+  "at": "27.2",
   "id": "p26_madre",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale young Argentine woman of about 25 in 1914 lies in a white iron hospital bed in the middle of a lecture hall, dark hair spread on the pillow, eyes half closed, very weak. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "she slowly turns her head on the pillow",
   "w": 1.0,
-  "pres": false
+  "img": null,
+  "motion": ""
  },
  {
-  "at": "16.3",
+  "at": "27.3",
   "id": "c09_300cc",
   "kind": "depth2",
   "w": 1.0,
   "src": "i_o22_frasco_grad",
+  "prompt": null,
   "cam": "push",
   "focal": [
    0.5,
@@ -1277,25 +2508,31 @@
   }
  },
  {
-  "at": "16.4",
+  "at": "27.4",
   "id": "p27_alta",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Argentine woman of about 25 in 1914 with long dark hair in a bun, a long dark green dress down to her ankles and a small hat with a ribbon, walks out of an iron hospital gate onto a sunny Buenos Aires street with stone buildings, holding her newborn baby wrapped in a white blanket, smiling softly. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "she walks forward two steps holding the baby",
   "w": 1.0,
-  "pres": true
+  "img": null,
+  "motion": ""
  },
  {
-  "at": "17",
+  "at": "28",
+  "id": "cap6",
+  "kind": "capitulo",
+  "w": 1.0,
+  "num": "VI",
+  "title": "EL REGALO"
+ },
+ {
+  "at": "29",
   "id": "p28_telegrafo",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A telegraph operator puppet in a 1914 telegraph office with a green visor taps a brass telegraph key quickly, paper tape coming out of a machine beside him. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "his finger taps the telegraph key",
   "w": 1.0,
-  "pres": false
+  "img": null,
+  "motion": ""
  },
  {
-  "at": "18.0",
+  "at": "30.0",
   "id": "c10_laprensa",
   "kind": "periodico",
   "w": 1.0,
@@ -1310,30 +2547,289 @@
   "date": "NOVIEMBRE DE 1914"
  },
  {
-  "at": "18.1",
+  "at": "31",
+  "id": "q5",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_q5",
+  "prompt": "No person. In the foreground, resting on a slanted wooden type case: a brass composing stick half full of small lead letters. Behind it, further away and softly out of focus: a 1914 newspaper composing room at night with hanging green-shaded bulbs and a big iron printing press.",
+  "tag": "RECREACIÓN",
+  "cam": "push",
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "strength": 16,
+  "fx": [
+   "pulse"
+  ],
+  "bpm": 112,
+  "focus_keys": [
+   [
+    0,
+    "p85"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "behind": {
+   "t": "QUEDAN 5 HORAS",
+   "size": 160,
+   "xy": [
+    0.5,
+    0.19
+   ],
+   "td": "mid",
+   "in": 0.05,
+   "tracking": 0.05
+  }
+ },
+ {
+  "at": "32.0",
+  "id": "v_prensa_ext",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_prensa_ext",
+  "prompt": "No person. In the foreground, resting on a wet stone sidewalk at night: an iron bollard. Behind it, further away: the ornate stone facade of a big 1914 Buenos Aires newspaper building with a tall dome and a few lit windows, gas lamps, rain.",
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "32.1",
+  "id": "v_julian_tipos",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a canvas apron, ink-stained fingers. He stands at a slanted wooden type case and quickly picks small lead letters one by one with his fingers into a brass composing stick. A 1914 newspaper composing room at night built as a handmade miniature stop-motion set: tall wooden type cases full of small lead letters, hanging bulbs with green shades, stacks of paper, a big iron printing press in the back.",
+  "motion": "his fingers pick a letter and place it",
+  "tag": "RECREACIÓN",
+  "rotulo": [
+   "Julián",
+   "tipógrafo de La Prensa · el padre de Tomás"
+  ]
+ },
+ {
+  "at": "32.2",
+  "id": "v_componedor",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_q5",
+  "prompt": null,
+  "cam": "truck",
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "32.2@sus dedos se frenan",
+  "id": "v_julian_dedos",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a canvas apron, ink-stained fingers. Close view from the side: he holds a small brass composing stick with lead letters in one hand and freezes, his other hand stopped in the air, staring at the letters. A 1914 newspaper composing room at night built as a handmade miniature stop-motion set: tall wooden type cases full of small lead letters, hanging bulbs with green shades, stacks of paper, a big iron printing press in the back.",
+  "motion": "the fingers stop and stay still",
+  "tag": "RECREACIÓN",
+  "maxs": 1.4
+ },
+ {
+  "at": "32.3",
+  "id": "v_prueba",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_prueba",
+  "prompt": "No person. In the foreground, resting on a slanted iron proof table: a freshly printed narrow strip of newspaper proof paper with blurred grey lines of text. Behind it, further away and softly out of focus: a 1914 newspaper composing room at night with hanging bulbs.",
+  "behind": {
+   "t": "NUEVO PROCEDIMIENTO PARA LA TRANSFUSIÓN DE LA SANGRE",
+   "size": 64,
+   "xy": [
+    0.5,
+    0.22
+   ],
+   "in": 0.05,
+   "tracking": 0.02,
+   "td": "mid"
+  },
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
+   ],
+   [
+    1,
+    "p14"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "32.4",
+  "id": "v_julian_lee",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a canvas apron, ink-stained fingers. He holds a strip of printed proof paper close to a hanging bulb and reads it with wide eyes, shocked. A 1914 newspaper composing room at night built as a handmade miniature stop-motion set: tall wooden type cases full of small lead letters, hanging bulbs with green shades, stacks of paper, a big iron printing press in the back.",
+  "motion": "his eyes widen as he reads",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "32.4@deja el delantal",
+  "id": "v_delantal",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_delantal",
+  "prompt": "No person. In the foreground, resting on the iron frame of a 1914 printing press: a crumpled canvas apron stained with black ink. Behind it, further away and softly out of focus: an empty composing room at night, a door left open.",
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "32.4@sale corriendo",
+  "id": "v_julian_corre",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a dark wool jacket, ink-stained fingers. He runs out of the door of a newspaper building into a rainy Buenos Aires street at night, holding his cap. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he runs forward into the rain",
+  "tag": "RECREACIÓN",
+  "maxs": 1.6
+ },
+ {
+  "at": "33.0",
   "id": "d12_nuevayork",
   "kind": "depth",
-  "img": "No person. A busy street of New York in 1914 with tall stone buildings, an elevated train, newsstands with stacks of newspapers, horse carts and early cars. The whole place is a handmade miniature stop-motion set built from real materials.",
   "w": 1.0,
+  "img": null,
+  "cam": "truck",
   "fx": [
    "title:NUEVA YORK|NOVIEMBRE DE 1914"
-  ],
-  "cam": "truck"
+  ]
  },
  {
-  "at": "18.2",
+  "at": "33.0@new york herald",
+  "id": "c_herald14",
+  "kind": "periodico",
+  "w": 1.0,
+  "src": "c_cafe",
+  "masthead": "NEW YORK HERALD",
+  "head": [
+   "BUENOS AIRES DOCTOR",
+   "KEEPS BLOOD LIQUID"
+  ],
+  "sub": "Citrate method of Dr. Luis Agote (recreación)",
+  "date": "NOVEMBER 1914"
+ },
+ {
+  "at": "33.1",
   "id": "p29_agote_carta",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, a black three-piece suit with a white high stiff collar and a dark tie. He sits at a desk in a 1914 dark wood office with tall bookshelves full of leather books, a green glass lamp on the desk, a window with heavy curtains, and signs a letter with a fountain pen, then hands it to a young assistant. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "he signs the letter and lifts it",
   "w": 1.0,
-  "pres": true
+  "img": null,
+  "motion": ""
  },
  {
-  "at": "18.3",
+  "at": "33.1@por telégrafo",
+  "id": "c_telegrama",
+  "kind": "doc3d",
+  "w": 1.0,
+  "page": "img/x_telegrama.png",
+  "desk": "x_mesa",
+  "write": [
+   "MÉTODO AGOTE",
+   "CITRATO DE SODIO",
+   "1 GR POR 100 CC",
+   "SANGRE INCOAGULABLE"
+  ],
+  "x0": 230,
+  "y0": 150,
+  "font": "mono",
+  "scroll": [
+   [
+    0,
+    0.05
+   ],
+   [
+    1,
+    0.25
+   ]
+  ],
+  "focus_keys": [
+   [
+    0,
+    0.45
+   ],
+   [
+    1,
+    0.6
+   ]
+  ]
+ },
+ {
+  "at": "33.2",
   "id": "c11_mapa",
   "kind": "mapamesa",
-  "w": 1.6,
+  "w": 1.0,
   "src": "c_mapa",
   "pins": [
    [
@@ -1398,13 +2894,39 @@
   ]
  },
  {
-  "at": "18.4",
+  "at": "33.2@los dos bandos",
+  "id": "a_embajada",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_embajada",
+  "archivo": true,
+  "rotulo": [
+   "Embajada de Austria-Hungría",
+   "Buenos Aires"
+  ],
+  "strength": 12,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p50"
+   ],
+   [
+    1,
+    "p90"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "33.3",
   "id": "o24_patente",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "tilt"
-  ],
+  "src": "i_o24_patente",
+  "prompt": null,
   "behind": {
    "t": "SIN PATENTE",
    "size": 120,
@@ -1416,9 +2938,7 @@
    "tracking": 0.06,
    "td": "mid"
   },
-  "src": "i_o24_patente",
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A blank patent application form with an empty space for the signature and a fountain pen with its cap on, untouched. Behind it, further away and softly out of focus: A dark wooden desk in a 1914 office with a green lamp. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "orbit",
   "focus_keys": [
    [
@@ -1429,10 +2949,13 @@
     1,
     "p93"
    ]
+  ],
+  "fx": [
+   "tilt"
   ]
  },
  {
-  "at": "18.5",
+  "at": "33.4",
   "id": "c12_balanza",
   "kind": "balanza",
   "w": 1.0,
@@ -1443,16 +2966,13 @@
   ]
  },
  {
-  "at": "19.0",
-  "id": "o26_caballos",
+  "at": "33.4@le pertenecía a la humanidad",
+  "id": "o40_monedas",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "glint"
-  ],
-  "src": "i_o26_caballos",
+  "src": "i_o40_monedas",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: Three small hand-carved wooden toy horses side by side as if racing, on the edge of the wooden table. Behind it, further away and softly out of focus: A dark wooden table in a study, dusk light from a window. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "push",
   "focus_keys": [
    [
@@ -1463,49 +2983,115 @@
     1,
     "p94"
    ]
+  ],
+  "fx": [
+   "glint"
   ]
  },
  {
-  "at": "19.1",
-  "id": "c13_herald",
-  "kind": "periodico",
-  "w": 1.0,
-  "src": "c_cafe",
-  "masthead": "NEW YORK HERALD",
-  "head": [
-   "CITRATED BLOOD",
-   "TRANSFUSION"
-  ],
-  "sub": "Mount Sinai Hospital, New York",
-  "date": "JANUARY 24, 1915"
- },
- {
-  "at": "19.1",
-  "id": "p30_lewisohn",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A surgeon of about 39 in New York in 1914, balding with dark hair at the sides, a thin mustache, a white surgical gown. He stands in a 1915 New York operating room and holds up a glass bottle of blood for two photographers with old flash cameras. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "a camera flash bursts and he holds the bottle",
-  "w": 1.0,
-  "pres": false
- },
- {
-  "at": "19.2",
-  "id": "p31_weil",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young doctor of about 30 in a dark suit with round tortoise glasses presents papers to a room of older doctors in a 1914 New York academy hall with dark wood walls. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "he turns a page and points at it",
-  "w": 1.0,
-  "pres": false
- },
- {
-  "at": "19.3",
-  "id": "o27_balanza_dosis",
+  "at": "34",
+  "id": "q3",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [],
-  "src": "i_o27_balanza_dosis",
+  "src": "i_v_q3",
+  "prompt": "No person. In the foreground, resting on wet cobblestones at night: a puddle reflecting a gas lamp and a fallen wooden wheel spoke. Behind it, further away and softly out of focus: a dark 1914 Buenos Aires street in heavy rain, a horse-drawn cab waiting.",
+  "tag": "RECREACIÓN",
+  "cam": "push",
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "strength": 16,
+  "fx": [
+   "pulse"
+  ],
+  "bpm": 120,
+  "focus_keys": [
+   [
+    0,
+    "p85"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "behind": {
+   "t": "QUEDAN 3 HORAS",
+   "size": 160,
+   "xy": [
+    0.5,
+    0.19
+   ],
+   "td": "mid",
+   "in": 0.05,
+   "tracking": 0.05
+  }
+ },
+ {
+  "at": "35.0",
+  "id": "v_julian_frazada",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a dark wool jacket, ink-stained fingers. He wraps his pale sleeping son in a thick wool blanket and lifts him into his arms beside the iron bed. A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt.  A modest 1914 Buenos Aires bedroom at night built as a handmade miniature stop-motion set: a narrow iron bed with a white quilt, faded flowered wallpaper, a small wooden bedside table with an oil lamp, a basin and towels, a crucifix on the wall, a small shuttered window.",
+  "motion": "he lifts the boy into his arms",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "35.0@coche de alquiler",
+  "id": "v_coche",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion scene: a black 1914 horse-drawn cab with a carved wooden puppet driver in a cape drives fast down a dark cobblestone street of Buenos Aires in heavy rain, gas lamps. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "the cab moves forward through the rain",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "35.1",
+  "id": "v_caballo",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion scene: close view of the legs of a dark horse pulling a cab, its hooves slipping on wet shining cobblestones at night in the rain. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "a hoof slips on the wet stones",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "35.1@tomás ya no abre",
+  "id": "v_coche_dentro",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a dark wool jacket, ink-stained fingers. Inside a dark 1914 horse-drawn cab he holds his pale son wrapped in a blanket on his lap, rain on the small window, desperate. A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt.  The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he holds the boy tighter",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "35.2",
+  "id": "v_golpea",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a dark wool jacket, ink-stained fingers. Alone at night in the rain, holding his son wrapped in a blanket with one arm, he raises his other fist against a tall dark wooden hospital door under a small lantern. He is the only adult in the scene. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he knocks on the door with his fist",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "36",
+  "id": "cap7",
+  "kind": "capitulo",
+  "w": 1.0,
+  "num": "VII",
+  "title": "LA CARRERA"
+ },
+ {
+  "at": "37.0",
+  "id": "o26_caballos",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o26_caballos",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A small brass laboratory balance weighing a tiny pile of white crystals on one plate against a small brass weight. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. . The object stands firmly on the surface with its own shadow. No person.",
   "cam": "rise",
   "focus_keys": [
    [
@@ -1520,58 +3106,522 @@
     1,
     "p95"
    ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "37.1",
+  "id": "c13_herald",
+  "kind": "periodico",
+  "w": 1.0,
+  "src": "c_cafe",
+  "masthead": "NEW YORK HERALD",
+  "head": [
+   "CITRATED BLOOD",
+   "TRANSFUSION"
+  ],
+  "sub": "Mount Sinai Hospital, New York (recreación)",
+  "date": "JANUARY 24, 1915"
+ },
+ {
+  "at": "37.1@richard lewisohn",
+  "id": "p30_lewisohn",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": "",
+  "rotulo": [
+   "Richard Lewisohn",
+   "cirujano · Hospital Monte Sinaí, Nueva York"
   ]
  },
  {
-  "at": "19.4",
+  "at": "37.2@richard weil",
+  "id": "p31_weil",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": "",
+  "rotulo": [
+   "Richard Weil",
+   "médico · Hospital Monte Sinaí"
+  ]
+ },
+ {
+  "at": "37.2@un mes después",
+  "id": "o47_revista",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o47_revista",
+  "prompt": null,
+  "strength": 20,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "37.3",
+  "id": "o27_balanza_dosis",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o27_balanza_dosis",
+  "prompt": null,
+  "strength": 20,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
+   ],
+   [
+    1,
+    "p14"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "37.3@la dosis exacta",
+  "id": "o48_cristales",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o48_cristales",
+  "prompt": null,
+  "strength": 20,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "37.4",
   "id": "d13_bruselas",
   "kind": "depth",
-  "img": "No person. The Grand-Place of Brussels in 1914 with ornate golden guild houses, wet cobblestones, a grey morning. The whole place is a handmade miniature stop-motion set built from real materials.",
   "w": 1.0,
+  "img": null,
+  "cam": "orbit",
   "fx": [
    "title:BRUSELAS|27 DE MARZO DE 1914"
-  ],
-  "cam": "orbit"
+  ]
  },
  {
-  "at": "19.4",
+  "at": "37.4@albert hustin",
   "id": "p32_hustin",
   "kind": "still",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Belgian doctor of about 32 in 1914, round face, a small dark mustache, a white doctor's coat. He holds a glass bottle of blood with a rubber tube at the bedside of a patient in a 1914 Brussels hospital ward with tall windows. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "he adjusts the tube and looks at the patient",
   "w": 1.0,
-  "pres": false
+  "img": null,
+  "rotulo": [
+   "Albert Hustin",
+   "médico · Bruselas"
+  ]
  },
  {
-  "at": "19.5",
-  "id": "c14_match",
-  "kind": "match",
+  "at": "37.5",
+  "id": "c_carrera",
+  "kind": "carrera",
   "w": 1.0,
-  "from": "i_o28_reloj_a",
-  "to": "i_o28_reloj_b",
-  "from_xy": [
-   0.5,
-   0.5,
-   0.28
-  ],
-  "to_xy": [
-   0.5,
-   0.5,
-   0.28
-  ],
-  "cut": 0.5
+  "title": "NINGUNO SABÍA DEL OTRO",
+  "events": [
+   [
+    0,
+    0.85,
+    "HUSTIN · CITRATO + GLUCOSA",
+    "27 MAR"
+   ],
+   [
+    1,
+    8.25,
+    "AGOTE · 1ª TRANSFUSIÓN",
+    "9 NOV",
+    "up"
+   ],
+   [
+    1,
+    8.45,
+    "DEMOSTRACIÓN PÚBLICA",
+    "14 NOV",
+    "down"
+   ],
+   [
+    2,
+    9.4,
+    "WEIL · ENSAYOS",
+    "DIC",
+    "down"
+   ],
+   [
+    2,
+    10.75,
+    "HERALD: LEWISOHN",
+    "24 ENE",
+    "up"
+   ]
+  ]
  },
  {
-  "at": "19.6",
+  "at": "37.6",
   "id": "p33_agote_firme",
   "kind": "still",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, strong dark eyebrows, a long white cotton doctor's coat over a white shirt and a dark brown tie. Portrait: he stands in front of a window of a hospital ward and looks calmly straight ahead with quiet dignity, hands behind his back. A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. ",
-  "motion": "he lifts his chin slightly",
   "w": 1.0,
-  "pres": true
+  "img": null
  },
  {
-  "at": "20",
+  "at": "37.6@lo regaló a todos",
+  "id": "o49_ventana",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o49_ventana",
+  "prompt": null,
+  "strength": 20,
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ],
+  "fx": [
+   "tilt"
+  ]
+ },
+ {
+  "at": "38",
+  "id": "q1",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_q1",
+  "prompt": "No person. In the foreground, resting on a stone step at night: a small lantern with a flickering flame. Behind it, further away and softly out of focus: the tall dark wooden door of an old 1914 hospital, rain.",
+  "tag": "RECREACIÓN",
+  "cam": "push",
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "strength": 16,
+  "fx": [
+   "pulse"
+  ],
+  "bpm": 132,
+  "focus_keys": [
+   [
+    0,
+    "p85"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "behind": {
+   "t": "QUEDA 1 HORA",
+   "size": 160,
+   "xy": [
+    0.5,
+    0.19
+   ],
+   "td": "mid",
+   "in": 0.05,
+   "tracking": 0.05
+  }
+ },
+ {
+  "at": "39.0",
+  "id": "v_joven_puerta",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Argentine doctor of about 28 in 1914, clean-shaven, neat black hair, a white doctor's coat over a vest. He opens a tall wooden hospital door at night holding a lantern, and looks at a soaked desperate father holding a sick boy wrapped in a blanket in the rain. A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a dark wool jacket, ink-stained fingers.  The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he lifts the lantern and looks",
+  "tag": "RECREACIÓN",
+  "gente": true,
+  "maxs": 1.5
+ },
+ {
+  "at": "39.0@mira la gasa",
+  "id": "v_gasa3",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_gasa",
+  "prompt": null,
+  "cam": "push",
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "39.0@un frasco graduado",
+  "id": "o39_bandeja",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o39_bandeja",
+  "prompt": null,
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
+   ],
+   [
+    1,
+    "p40"
+   ]
+  ],
+  "fx": [
+   "bokeh"
+  ]
+ },
+ {
+  "at": "39.1",
+  "id": "v_julian_ansioso",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a dark wool jacket, ink-stained fingers. Close view: soaked with rain, he stares with fear and hope at something off screen, in a dim hospital room with white tiles. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he swallows and holds his breath",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "39.1@sirve para su hijo",
+  "id": "v_portaobj",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_portaobj",
+  "prompt": "No person. In the foreground, resting on a white enamel tray: a glass microscope slide with two separate small drops of dark red blood. Behind it, further away and softly out of focus: a 1914 hospital laboratory at night with a lamp.",
+  "behind": {
+   "t": "¿COMPATIBLE?",
+   "size": 150,
+   "xy": [
+    0.5,
+    0.25
+   ],
+   "in": 0.1,
+   "td": "mid"
+  },
+  "tag": "RECREACIÓN",
+  "strength": 20,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
+   ],
+   [
+    1,
+    "p14"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "39.2",
+  "id": "v_mezcla",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Argentine doctor of about 28 in 1914, clean-shaven, neat black hair, a white doctor's coat over a vest. He mixes two small drops of blood on a glass slide with a thin glass rod, concentrating, under a lamp in a hospital laboratory at night. A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window.",
+  "motion": "he stirs the drops with the glass rod",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "39.2@como enseñó landsteiner",
+  "id": "a_landsteiner2",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_landsteiner",
+  "archivo": true,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p70"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ],
+  "strength": 12
+ },
+ {
+  "at": "39.2@si se forman grumos",
+  "id": "mic_grumos",
+  "kind": "microscopio",
+  "w": 1.0,
+  "mode": "grumos",
+  "title": "SI NO FUERA COMPATIBLE…",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "39.3",
+  "id": "mic_libre",
+  "kind": "microscopio",
+  "w": 1.0,
+  "mode": "libre",
+  "seed": 21,
+  "title": "COMPATIBLE",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "39.4",
+  "id": "v_julian_brazo",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a dark wool jacket, ink-stained fingers. He lies on a hospital bed with his sleeve rolled up, a thin rubber tube in his arm, looking at his pale son lying on the next bed. A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt.  The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he turns his head toward his son",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "39.4@su sangre cae en el frasco",
+  "id": "v_frasco_llena",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No person. Close view of a graduated glass bottle on a white hospital table slowly filling with dark red blood falling from a thin rubber tube, a small pile of white crystals dissolving at the bottom. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "the blood falls and the level slowly rises",
+  "tag": "RECREACIÓN"
+ },
+ {
+  "at": "39.4@gota a gota",
+  "id": "v_gota_brazo",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Extreme close view of a thin rubber tube with a small glass drip piece where a drop of red blood falls, connected to the thin pale wooden arm of a puppet boy lying on a white sheet. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "one red drop falls in the glass piece",
+  "tag": "RECREACIÓN",
+  "maxs": 2.5
+ },
+ {
+  "at": "40",
+  "id": "v_amanecer",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_amanecer",
+  "prompt": "No person. In the foreground, resting on a white hospital windowsill: an empty graduated glass bottle with a red stain at the bottom. Behind it, further away: the first light of dawn rising over the roofs of 1914 Buenos Aires through the window, golden sun rays.",
+  "cam": "rise",
+  "fx": [
+   "pulse"
+  ],
+  "bpm": 64,
+  "tag": "RECREACIÓN",
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "strength": 20
+ },
+ {
+  "at": "41.0",
+  "id": "v_tomas_despierta",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt. He lies in a white hospital bed in the soft golden light of dawn and slowly opens his eyes, some colour back in his cheeks, his father asleep on a chair beside him. The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "he slowly opens his eyes and looks around",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "41.0@es su pelota",
+  "id": "v_tomas_pelota",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A pale thin Argentine boy of 8 in 1914 with short messy dark brown hair and big dark eyes, wearing a white cotton nightshirt. He sits up in a white hospital bed in the morning light holding a small handmade rag ball, smiling, while his father laughs and cries beside him. A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine typesetter of about 35 in 1914, thin face, short black hair, a thin black mustache, a white shirt with rolled sleeves, a black vest and a dark wool jacket, ink-stained fingers.  The whole place is a handmade miniature stop-motion set built from real materials.",
+  "motion": "the boy smiles and the father hugs him",
+  "tag": "RECREACIÓN",
+  "gente": true
+ },
+ {
+  "at": "42",
+  "id": "cap8",
+  "kind": "capitulo",
+  "w": 1.0,
+  "num": "VIII",
+  "title": "LA GUERRA"
+ },
+ {
+  "at": "43",
   "id": "c15_luna_match",
   "kind": "match",
   "w": 1.0,
@@ -1589,66 +3639,157 @@
   "cut": 0.45
  },
  {
-  "at": "21.0",
+  "at": "44.0",
   "id": "d15_frente",
   "kind": "depth",
-  "img": "No person. A First World War battlefield in France at night in 1917 with craters full of water, broken trees, barbed wire, flares lighting the sky in the distance. The whole place is a handmade miniature stop-motion set built from real materials.",
   "w": 1.0,
+  "img": null,
+  "cam": "dolly",
   "fx": [
    "dust"
-  ],
-  "cam": "dolly"
+  ]
  },
  {
-  "at": "21.1",
-  "id": "p34_robertson",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An American army doctor of about 31 in 1917, lean, clean-shaven, short light brown hair, a khaki First World War uniform with a red cross armband. He walks through a muddy First World War field hospital tent with rows of cots, carrying a glass bottle of blood, serious and determined. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "he walks forward carrying the bottle",
-  "w": 1.0,
-  "pres": true
- },
- {
-  "at": "21.2",
-  "id": "p35_voluntario",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young American soldier in a khaki uniform sits on a wooden box with his sleeve rolled up giving blood into a glass bottle, a doctor beside him, in a field hospital tent in 1917. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "the soldier clenches his fist slowly",
-  "w": 1.0,
-  "pres": false
- },
- {
-  "at": "21.2",
-  "id": "o30_caja",
+  "at": "44.1",
+  "id": "a_nara_carpas",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "bokeh"
+  "src": "a_nara_carpas",
+  "archivo": true,
+  "rotulo": [
+   "Francia, 1918",
+   "hospital de campaña · NARA"
   ],
-  "src": "i_o30_caja",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An open wooden ammunition box packed with sawdust and ice, holding four glass bottles of dark red blood. Behind it, further away and softly out of focus: A First World War field hospital tent with lanterns. The object stands firmly on the surface with its own shadow. No person.",
+  "strength": 12,
   "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p85"
    ],
    [
-    0.55,
+    1,
+    "p60"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "44.1@oswald robertson",
+  "id": "p34_robertson",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": "",
+  "rotulo": [
+   "Oswald H. Robertson",
+   "médico del ejército de EE. UU."
+  ]
+ },
+ {
+  "at": "44.2",
+  "id": "p35_voluntario",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "44.2@cajas de municiones",
+  "id": "o30_caja",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o30_caja",
+  "prompt": null,
+  "strength": 20,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
     "p95"
    ],
    [
     1,
-    "p40"
+    "p95"
    ]
+  ],
+  "fx": [
+   "bokeh"
   ]
  },
  {
-  "at": "21.3",
+  "at": "44.3",
+  "id": "o41_botellas_hielo",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o41_botellas_hielo",
+  "prompt": null,
+  "strength": 20,
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p93"
+   ],
+   [
+    1,
+    "p93"
+   ]
+  ],
+  "fx": [
+   "tilt"
+  ]
+ },
+ {
+  "at": "44.3@la batalla de cambrai",
+  "id": "a_cambrai",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_cambrai",
+  "archivo": true,
+  "rotulo": [
+   "Cambrai, noviembre de 1917",
+   "Imperial War Museum"
+  ],
+  "strength": 12,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p50"
+   ],
+   [
+    1,
+    "p90"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "44.3@habrían muerto",
+  "id": "p36_soldado_salvado",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "44.4",
   "id": "c16_rail",
   "kind": "rail",
-  "w": 1.4,
+  "w": 1.0,
   "src": "c_riel",
   "stations": [
    {
@@ -1670,16 +3811,7 @@
   ]
  },
  {
-  "at": "21.3",
-  "id": "p36_soldado_salvado",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A wounded young soldier on a stretcher in a field hospital tent opens his eyes and slowly looks up, a nurse holding a glass bottle of blood above him. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "he slowly opens his eyes",
-  "w": 1.0,
-  "pres": false
- },
- {
-  "at": "21.4",
+  "at": "44.4@bancos de sangre",
   "id": "c17_persiana",
   "kind": "persiana",
   "w": 1.0,
@@ -1689,69 +3821,87 @@
   "lab_b": "HOY"
  },
  {
-  "at": "22",
+  "at": "45",
+  "id": "cap9",
+  "kind": "capitulo",
+  "w": 1.0,
+  "num": "IX",
+  "title": "EL NOMBRE"
+ },
+ {
+  "at": "46",
   "id": "o31_cabecita",
   "kind": "depth2",
   "w": 1.0,
+  "src": "i_o31_cabecita",
+  "prompt": null,
   "fx": [
    "lampon"
   ],
-  "src": "i_o31_cabecita",
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A tiny carved wooden head of a man with a big mustache and round glasses standing on a workbench among wood shavings, a desk lamp beside it. Behind it, further away and softly out of focus: A craftsman's workshop at night, tools on the wall. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "push",
   "focus_keys": [
    [
     0,
-    "p95"
-   ],
-   [
-    0.4,
-    "p95"
-   ],
-   [
-    0.82,
-    "p14"
+    "p94"
    ],
    [
     1,
-    "p14"
+    "p94"
    ]
   ]
  },
  {
-  "at": "23.0",
+  "at": "47.0",
   "id": "p37_agote_clase",
   "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 65 with white hair, a thick white mustache, thin round wire-rimmed glasses and a white doctor's coat. He teaches young puppet medical students gathered around a patient's bed in a 1930 hospital ward, explaining with one raised finger. A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. ",
-  "motion": "he raises one finger while explaining",
   "w": 1.0,
-  "pres": false
+  "img": null,
+  "motion": ""
  },
  {
-  "at": "23.1",
+  "at": "47.1",
   "id": "a04_viejo",
-  "kind": "arch",
+  "kind": "depth2",
   "w": 1.0,
-  "src": "archivo/agote_retrato.jpg",
-  "move": "push",
-  "label": "LUIS AGOTE|1868 – 1954"
+  "src": "a_viejo",
+  "archivo": true,
+  "rotulo": [
+   "Luis Agote",
+   "1868 – 1954"
+  ],
+  "strength": 12,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p70"
+   ],
+   [
+    1,
+    "p85"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
  },
  {
-  "at": "23.2",
+  "at": "47.2",
   "id": "d16_hospital_agote",
   "kind": "depth",
-  "img": "No person. A modern hospital building in Argentina today, white and glass, with trees in front and a blue sky. The whole place is a handmade miniature stop-motion set built from real materials.",
   "w": 1.0,
-  "fx": [],
-  "cam": "truck"
+  "img": null,
+  "cam": "truck",
+  "fx": []
  },
  {
-  "at": "23.2",
+  "at": "47.2@el nueve de noviembre",
   "id": "c18_9nov",
   "kind": "depth2",
   "w": 1.0,
   "src": "i_o32_almanaque",
+  "prompt": null,
   "cam": "push",
   "focal": [
    0.5,
@@ -1768,7 +3918,6 @@
    ]
   ],
   "strength": 16,
-  "fx": [],
   "behind": {
    "t": "9 DE NOVIEMBRE",
    "size": 140,
@@ -1784,14 +3933,16 @@
     0.38
    ],
    "subsize": 34
-  }
+  },
+  "fx": []
  },
  {
-  "at": "23.3",
+  "at": "47.3",
   "id": "c19_120m",
   "kind": "depth2",
-  "w": 1.3,
+  "w": 1.0,
   "src": "i_o33_bolsas",
+  "prompt": null,
   "cam": "dolly",
   "focal": [
    0.5,
@@ -1835,11 +3986,6 @@
    ],
    "td": "mid",
    "in": 0.05,
-   "color": [
-    245,
-    238,
-    225
-   ],
    "sub": "DE DONACIONES DE SANGRE CADA AÑO · OMS",
    "subxy": [
     0.5,
@@ -1849,502 +3995,71 @@
   }
  },
  {
-  "at": "24",
-  "id": "p38_donante_hoy",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A smiling young woman of about 30 today in a bright modern blood donation room sits in a donor chair giving blood into a plastic bag, a nurse beside her. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "she squeezes a small ball in her hand and smiles",
-  "w": 1.0,
-  "pres": false
- },
- {
-  "at": "25.0",
-  "id": "o34_cierre",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
-  "src": "i_o34_cierre",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A white handkerchief with small red stains, a small glass jar of white crystals and an old glass bottle of dark red blood standing together. Behind it, further away and softly out of focus: A craftsman's workbench at night. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "dolly",
-  "focus_keys": [
-   [
-    0,
-    "p14"
-   ],
-   [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ]
- },
- {
-  "at": "25.1",
-  "id": "p39_agote_ventana",
-  "kind": "clip",
-  "img": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An Argentine doctor of about 46: short dark brown hair swept to one side, a thick dark handlebar mustache, thin round wire-rimmed glasses, strong dark eyebrows, a long white cotton doctor's coat over a white shirt and a dark brown tie. He stands at a tall hospital window at sunset and looks out over the roofs of Buenos Aires, holding his round glasses in his hand. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "motion": "he lowers his glasses and looks at the horizon",
-  "w": 1.0,
-  "pres": true
- },
- {
-  "at": "25.2",
-  "id": "t03_tallador_final",
-  "kind": "clip",
-  "img": "Two real old human craftsman hands with wrinkles and a few small cuts, wearing a worn leather apron, giving the last touch with fine sandpaper to a small finished carved wooden figure of a doctor with a big mustache, round glasses and a white coat, in a warm workshop.",
-  "motion": "the hands turn the figure slightly to look at it",
-  "w": 1.0,
-  "pres": false
- },
- {
-  "at": "25.3",
-  "id": "d17_estatua",
-  "kind": "depth",
-  "img": "No person. In a craftsman's workshop, a small finished carved wooden figure of a doctor with a big mustache, round glasses and a white coat holding a tiny glass bottle stands on a small stone pedestal like a monument, a beam of warm light falling on it, dust in the air.",
-  "w": 1.0,
-  "fx": [
-   "rays",
-   "dust"
-  ],
-  "cam": "dolly"
- },
- {
-  "at": "26",
-  "id": "t04_tallador_repisa",
-  "kind": "clip",
-  "img": "Two real old human craftsman hands with wrinkles and a few small cuts, wearing a worn leather apron, placing the small carved figure of the doctor with a big mustache on a shelf next to a carved figure of a young chemist with round glasses and other carved inventors, in a warm workshop.",
-  "motion": "the hands set the figure down and pull away",
-  "w": 1.0,
-  "pres": false
- },
- {
-  "at": "27.0",
-  "id": "d18_getafe",
-  "kind": "depth",
-  "img": "No person. A grassy airfield near Madrid in 1923 with a wooden hangar and a strange early aircraft with a big windmill rotor on top instead of wings, morning mist. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "w": 1.0,
-  "fx": [
-   "title:PRÓXIMO|JUAN DE LA CIERVA · MADRID, 1923"
-  ],
-  "cam": "dolly"
- },
- {
-  "at": "2.6",
-  "id": "o35_reloj",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "tilt"
-  ],
-  "src": "i_o35_reloj",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An old round wall clock with Roman numerals and a brass pendulum on a pale green tiled wall. Behind it, further away and softly out of focus: A 1914 hospital corridor at dawn. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "orbit",
-  "focus_keys": [
-   [
-    0,
-    "p93"
-   ],
-   [
-    1,
-    "p93"
-   ]
-  ]
- },
- {
-  "at": "5.0",
-  "id": "o36_lampara",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "glint"
-  ],
-  "src": "i_o36_lampara",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An oil lamp glowing on a small nurse's table with a medical chart and a glass of water. Behind it, further away and softly out of focus: A 1914 Buenos Aires hospital ward built as a handmade miniature stop-motion set: tall windows with wooden shutters, white iron beds, pale green tiled walls, a glass cabinet with instruments, black and white floor tiles. Night. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p94"
-   ],
-   [
-    1,
-    "p94"
-   ]
-  ]
- },
- {
-  "at": "7.2",
-  "id": "o37_bote",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [],
-  "src": "i_o37_bote",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An old wooden rowing boat with a doctor's leather bag in it, tied to a wooden pier post. Behind it, further away and softly out of focus: The muddy brown water of a wide river at dusk with an island far away. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "rise",
-  "focus_keys": [
-   [
-    0,
-    "p60"
-   ],
-   [
-    0.5,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ]
- },
- {
-  "at": "9.3",
-  "id": "o38_tubos",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
-  "src": "i_o38_tubos",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A wooden rack of glass test tubes with blood in different states, some liquid and some clotted, labelled with paper tags. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. . The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "truck",
-  "focus_keys": [
-   [
-    0,
-    "p95"
-   ],
-   [
-    0.55,
-    "p95"
-   ],
-   [
-    1,
-    "p40"
-   ]
-  ]
- },
- {
-  "at": "16.0",
-  "id": "o39_bandeja",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [],
-  "src": "i_o39_bandeja",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A white enamel tray with a graduated glass bottle, a coil of rubber tube and a platinum needle on a white cloth. Behind it, further away and softly out of focus: A 1914 university lecture hall in Buenos Aires built as a handmade miniature stop-motion set: steep wooden benches in a half circle empty, a hospital bed in the centre under a big skylight. . The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p95"
-   ],
-   [
-    0.4,
-    "p95"
-   ],
-   [
-    0.82,
-    "p14"
-   ],
-   [
-    1,
-    "p14"
-   ]
-  ]
- },
- {
-  "at": "18.5",
-  "id": "o40_monedas",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
-  "src": "i_o40_monedas",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A tall stack of gold coins next to a glass bottle of dark red blood on a dark velvet cloth. Behind it, further away and softly out of focus: A dark wooden desk in a 1914 bank office with a brass lamp. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "dolly",
-  "focus_keys": [
-   [
-    0,
-    "p14"
-   ],
-   [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ]
- },
- {
-  "at": "21.4",
-  "id": "o41_botellas_hielo",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "tilt"
-  ],
-  "src": "i_o41_botellas_hielo",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: Rows of glass bottles of dark red blood standing in crushed ice on a wooden shelf. Behind it, further away and softly out of focus: A cold storage room in 1917 with wooden shelves and frost. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "orbit",
-  "focus_keys": [
-   [
-    0,
-    "p93"
-   ],
-   [
-    1,
-    "p93"
-   ]
-  ]
- },
- {
-  "at": "4.0",
-  "id": "o42_herramientas",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "glint"
-  ],
-  "src": "i_o42_herramientas",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A worn leather tool roll unrolled on a workbench showing a row of old steel wood-carving gouges with wooden handles. Behind it, further away and softly out of focus: A craftsman's workshop with a big window, tools hanging on a pegboard, warm afternoon light, wood dust in the air. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p94"
-   ],
-   [
-    1,
-    "p94"
-   ]
-  ]
- },
- {
-  "at": "5.7",
-  "id": "o43_sutura",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [],
-  "src": "i_o43_sutura",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A curved surgical needle with silk thread and two small silver clamps lying on a folded white cloth stained with a little blood. Behind it, further away and softly out of focus: A 1910 operating room with white tiles and a big lamp. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "rise",
-  "focus_keys": [
-   [
-    0,
-    "p60"
-   ],
-   [
-    0.5,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ]
- },
- {
-  "at": "7.6",
-  "id": "o44_reloj_bolsillo",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
-  "src": "i_o44_reloj_bolsillo",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An open gold pocket watch lying on a small wooden bedside table next to a glass of water and a folded handkerchief. Behind it, further away and softly out of focus: A 1912 child's bedroom with flowered wallpaper, soft light. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "truck",
-  "focus_keys": [
-   [
-    0,
-    "p95"
-   ],
-   [
-    0.55,
-    "p95"
-   ],
-   [
-    1,
-    "p40"
-   ]
-  ]
- },
- {
-  "at": "9.1",
-  "id": "o45_cuaderno_fallos",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [],
-  "src": "i_o45_cuaderno_fallos",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An open laboratory notebook with many handwritten lines crossed out and a fountain pen, next to a test tube of clotted blood. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. . The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p95"
-   ],
-   [
-    0.4,
-    "p95"
-   ],
-   [
-    0.82,
-    "p14"
-   ],
-   [
-    1,
-    "p14"
-   ]
-  ]
- },
- {
-  "at": "13.2",
-  "id": "o46_ampolla",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
-  "src": "i_o46_ampolla",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A small glass ampoule of clear liquid and a rolled white bandage on a white enamel tray. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. Evening light. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "dolly",
-  "focus_keys": [
-   [
-    0,
-    "p14"
-   ],
-   [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ]
- },
- {
-  "at": "19.2",
-  "id": "o47_revista",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "tilt"
-  ],
-  "src": "i_o47_revista",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A stack of thin medical journals from 1915 with plain paper covers and a pair of reading glasses on top, on a desk. Behind it, further away and softly out of focus: A 1915 New York doctor's office with dark wood walls. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "orbit",
-  "focus_keys": [
-   [
-    0,
-    "p93"
-   ],
-   [
-    1,
-    "p93"
-   ]
-  ]
- },
- {
-  "at": "19.3",
-  "id": "o48_cristales",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [
-   "glint"
-  ],
-  "src": "i_o48_cristales",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A small glass dish of white crystals with a tiny brass spoon, next to a glass bottle of dark red blood. Behind it, further away and softly out of focus: A 1914 Buenos Aires medical laboratory built as a handmade miniature stop-motion set: dark wooden benches, glass jars and test tubes in wooden racks, a brass microscope, a tall window with cool morning light. . The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p94"
-   ],
-   [
-    1,
-    "p94"
-   ]
-  ]
- },
- {
-  "at": "19.6",
-  "id": "o49_ventana",
-  "kind": "depth2",
-  "w": 1.0,
-  "fx": [],
-  "src": "i_o49_ventana",
-  "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A pair of thin round wire-rimmed glasses resting on a closed leather notebook on a windowsill. Behind it, further away and softly out of focus: A 1914 hospital ward at sunset, white iron beds. The object stands firmly on the surface with its own shadow. No person.",
-  "cam": "rise",
-  "focus_keys": [
-   [
-    0,
-    "p60"
-   ],
-   [
-    0.5,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ]
- },
- {
-  "at": "21.1",
-  "id": "d19_carpa",
-  "kind": "depth",
-  "img": "No person. A First World War field hospital in France in 1917: rows of canvas tents with red crosses in a muddy field, an ambulance cart, grey sky, lanterns. The whole place is a handmade miniature stop-motion set built from real materials.",
-  "w": 1.0,
-  "fx": [],
-  "cam": "truck"
- },
- {
-  "at": "23.3",
+  "at": "47.3@un poco de citrato",
   "id": "o50_tubo",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [
-   "bokeh"
-  ],
   "src": "i_o50_tubo",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: A coiled transparent tube with a little red blood and a blood bag clamp on a white tray. Behind it, further away and softly out of focus: A modern bright blood donation room today. The object stands firmly on the surface with its own shadow. No person.",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "48",
+  "id": "v_pelota_vacia",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_pelota_vacia",
+  "prompt": "No person. In the foreground, resting on the wooden floor of a sunny bedroom: a small handmade rag ball made of knotted colourful cloth, in a beam of morning sunlight. Behind it, further away and softly out of focus: an empty neatly made iron bed with a white quilt.",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "strength": 20,
+  "fx": []
+ },
+ {
+  "at": "49.0",
+  "id": "v_tallador_tomas",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Two real old human craftsman hands with wrinkles and a few small cuts, wearing a worn leather apron, gently placing a small finished carved wooden figure of a thin boy in a white nightshirt holding a tiny rag ball on a workbench among wood shavings, in a warm workshop.",
+  "motion": "the hands set the small figure down and pull away"
+ },
+ {
+  "at": "49.0@lo imaginamos",
+  "id": "v_figura_tomas",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_v_figura_tomas",
+  "prompt": "No person. In the foreground, resting on a craftsman's workbench among pale wood shavings: a small finished carved wooden figure of a thin boy in a white nightshirt holding a tiny rag ball. Behind it, further away and softly out of focus: a warm workshop with chisels on the wall and a desk lamp.",
+  "strength": 20,
   "cam": "truck",
   "focus_keys": [
    [
@@ -2359,17 +4074,77 @@
     1,
     "p40"
    ]
+  ],
+  "fx": [
+   "bokeh"
   ]
  },
  {
-  "at": "25.0",
-  "id": "o51_frasco_final",
+  "at": "49.1",
+  "id": "p27_alta_cb",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": "",
+  "clipsrc": "p27_alta"
+ },
+ {
+  "at": "49.1@el niño hemofílico",
+  "id": "p11_nino_cb",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": "",
+  "clipsrc": "p11_nino"
+ },
+ {
+  "at": "49.2",
+  "id": "p38_donante_hoy",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "49.2@chicos madres soldados",
+  "id": "p36_cb",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": "",
+  "clipsrc": "p36_soldado_salvado"
+ },
+ {
+  "at": "50",
+  "id": "a_nara_transf2",
   "kind": "depth2",
   "w": 1.0,
-  "fx": [],
-  "src": "i_o51_frasco_final",
+  "src": "a_nara_transf",
+  "archivo": true,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p85"
+   ],
+   [
+    1,
+    "p60"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ],
+  "strength": 12
+ },
+ {
+  "at": "51.0",
+  "id": "o34_cierre",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o34_cierre",
+  "prompt": null,
   "strength": 20,
-  "prompt": "In the foreground, resting on its surface: An old glass bottle of dark red blood with a tiny paper label standing next to a small carved wooden figure of a doctor with a big mustache. Behind it, further away and softly out of focus: An empty craftsman workbench at night against a dark wooden wall with hanging chisels, a single lamp, nobody in the room. The object stands firmly on the surface with its own shadow. No person.",
   "cam": "push",
   "focus_keys": [
    [
@@ -2388,17 +4163,115 @@
     1,
     "p14"
    ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "51.0@un niño que sangraba",
+  "id": "p11_cb2",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": "",
+  "clipsrc": "p11_nino",
+  "ss": 1.0
+ },
+ {
+  "at": "51.0@una sal",
+  "id": "o17_cb",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "i_o17_huevo",
+  "prompt": null,
+  "cam": "push",
+  "strength": 20,
+  "focus_keys": [
+   [
+    0,
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
+   ],
+   [
+    1,
+    "p95"
+   ]
+  ],
+  "fx": [
+   "bokeh"
   ]
  },
  {
-  "at": "27.0",
+  "at": "51.0@un portero",
+  "id": "p20_cb",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": "",
+  "clipsrc": "p20_portero"
+ },
+ {
+  "at": "51.1",
+  "id": "p39_agote_ventana",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "51.2",
+  "id": "t03_tallador_final",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "51.3",
+  "id": "d17_estatua",
+  "kind": "depth",
+  "w": 1.0,
+  "img": null,
+  "cam": "dolly",
+  "fx": [
+   "rays",
+   "dust"
+  ]
+ },
+ {
+  "at": "52",
+  "id": "t04_tallador_repisa",
+  "kind": "clip",
+  "w": 1.0,
+  "img": null,
+  "motion": ""
+ },
+ {
+  "at": "53.0",
+  "id": "d18_getafe",
+  "kind": "depth",
+  "w": 1.0,
+  "img": null,
+  "cam": "dolly",
+  "fx": [
+   "title:PRÓXIMO|JUAN DE LA CIERVA · MADRID, 1923"
+  ]
+ },
+ {
+  "at": "53.0@harto de ver caer",
   "id": "d20_autogiro",
   "kind": "depth",
-  "img": "No person. In a craftsman's workshop, a small carved wooden model of a 1923 aircraft with a big windmill rotor on top instead of wings stands on a workbench among wood shavings, warm lamp light.",
   "w": 1.0,
+  "img": null,
+  "cam": "dolly",
   "fx": [
    "dust"
-  ],
-  "cam": "dolly"
+  ]
  }
 ]

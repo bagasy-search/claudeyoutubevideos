@@ -91,7 +91,9 @@ def r_depth2(sh, sid, DUR, put):
         dyn = (40 - 80 * u) * S if cam == "rise" else 0
         im, dd = warp_depth(img0, d0, sn, sf, dx_near=dxn, dy_near=dyn, focal=fpt)
         if beh and beh.get("count"):                              # contador DENTRO de la escena: el número cambia entre capas
-            c = beh["count"]; v = c["from"] + (c["to"] - c["from"]) * ease(ramp(t, DUR * beh.get("in", 0.15), DUR * c.get("end", 0.7)))
+            c = beh["count"]
+            if sh.get("wk"): v = max([c["from"]] + [val for tt, val in sh["wk"] if t >= tt])     # salta justo en la palabra
+            else: v = c["from"] + (c["to"] - c["from"]) * ease(ramp(t, DUR * beh.get("in", 0.15), DUR * c.get("end", 0.7)))
             v = int(round(v / c.get("step", 1)) * c.get("step", 1)); txt = c.get("fmt", "{}").format(v).replace(",", ".")
             if txt not in _cache: _cache[txt] = text_rgba(img0.shape[1], img0.shape[0], txt, beh.get("font", "AN"), beh.get("size", 300), tuple(beh.get("xy", (0.5, 0.5))), tuple(beh.get("color", (245, 238, 225))), beh.get("tracking", 0.0))
             T0 = _cache[txt]
@@ -118,6 +120,12 @@ def r_depth2(sh, sid, DUR, put):
             band = np.exp(-((np.arange(W)[None, :] - x0 - (np.arange(H)[:, None] - H / 2) * 0.4) / (90 * S)) ** 2)
             im = im + (g * band * 2.2)[..., None] * np.array([1.0, 0.92, 0.7])
         if "tilt" in fx: im = tilt_shift(im)
+        if "pulse" in fx:                                                    # latido: lub-dub a ~70 lpm (o sh["bpm"]), leve zoom + viñeta roja
+            bp = 60.0 / sh.get("bpm", 70); ph_ = (t % bp) / bp
+            k_ = math.exp(-((ph_ - 0.05) / 0.035) ** 2) + 0.6 * math.exp(-((ph_ - 0.22) / 0.035) ** 2)
+            im = cv2.warpAffine(im, cv2.getRotationMatrix2D((W / 2, H / 2), 0, 1 + 0.008 * k_), (W, H), borderMode=cv2.BORDER_REFLECT)
+            yy_, xx_ = np.mgrid[0:H, 0:W]; v_ = (((xx_ - W / 2) / (W / 2)) ** 2 + ((yy_ - H / 2) / (H / 2)) ** 2) / 2
+            im = im * (1 - 0.18 * k_ * v_[..., None] * np.array([0.2, 1.0, 1.0]))
         if NXT is not None:
             k = ramp(t, DUR - 0.9, DUR - 0.05)
             if k > 0:                                                   # refracción de lente que crece + zoom, y aparece la escena siguiente
