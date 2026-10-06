@@ -37,9 +37,17 @@ jobs:
       - name: codificar tramo
         run: |
           MAXR=$(python3 -c "import json;print(json.load(open('chunks.json'))[0]['maxr'])")
-          ffmpeg -v error -y -f concat -safe 0 -i list.txt -an -vf "fps=24,scale=2560:1440:flags=lanczos,format=yuv420p" -r 24 \
-            -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
-            -c:v libx264 -preset slow -crf 16 -maxrate ${MAXR}M -bufsize $((MAXR*16/10))M -g 48 -threads 0 tramo_${{ matrix.k }}.mp4
+          # cada plano exactamente con 'fr' cuadros (trim o clonar el último): el corte cae en el cuadro del plan, sin deriva acumulada
+          python3 - <<'PY'
+          import json
+          c=[x for x in json.load(open('chunks.json')) if x['k']==${{ matrix.k }}][0]
+          ins=' '.join(f'-i p/{i}.mp4' for i in c['ids']); fc=[]
+          for n,(i,f) in enumerate(zip(c['ids'],c['fr'])):
+              fc.append(f'[{n}:v]fps=24,tpad=stop_mode=clone:stop=2,trim=end_frame={f},setpts=PTS-STARTPTS[v{n}]')
+          fc.append(''.join(f'[v{n}]' for n in range(len(c['ids'])))+f'concat=n={len(c["ids"])}:v=1:a=0,scale=2560:1440:flags=lanczos,format=yuv420p[out]')
+          open('fc.txt','w').write(';'.join(fc)); open('ins.txt','w').write(ins); print(sum(c['fr']),'cuadros')
+          PY
+          ffmpeg -v error -y $(cat ins.txt) -filter_complex_script fc.txt -map "[out]" -an -r 24             -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709             -c:v libx264 -preset slow -crf 16 -maxrate ${MAXR}M -bufsize $((MAXR*16/10))M -g 48 -threads 0 tramo_${{ matrix.k }}.mp4
           for n in 1 2 3 4 5; do gh release upload "$SLUG-farm-out" tramo_${{ matrix.k }}.mp4 -R ${{ github.repository }} --clobber && break; sleep $((n*7)); done
   unir:
     needs: tramo
