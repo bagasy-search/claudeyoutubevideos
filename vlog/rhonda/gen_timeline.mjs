@@ -34,7 +34,8 @@ shots.forEach((s, i) => {
     else { c.k = "img"; c.img = imgOf(s.name); fallback.push(s.name); }
   } else if (s.kind === "kf") {
     const p = `vid/${SLUG}/${s.name}.mp4`;
-    if (ex(p)) { c.src = p; c.sf = 0; c.clipF = nFr(p);  }
+    // detalle agnes (v2.0 ralentí, 4 s): el clip mientras dure y después su último cuadro quieto (nunca congelado ni en bucle)
+    if (ex(p)) { c.k = "img"; c.img = imgOf(s.name); c.clip = p; c.clipF = nFr(p) - 1; }
     else { c.k = "img"; c.img = imgOf(s.name); c.fallback = s.name; if (!ACEPT.has(s.name)) fallback.push(s.name); if (!c.img) warn.push(`sin foto base ${s.name}`); }
   } else if (s.kind === "bi" || s.kind === "rh") {
     const st = `broll/${SLUG}_st/${s.name}.mp4`, ag = `broll/${SLUG}/${s.name}.mp4`;
