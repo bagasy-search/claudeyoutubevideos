@@ -9,6 +9,8 @@
 import React from "react";
 import { AbsoluteFill, Audio, Easing, Img, Loop, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { loadFont as loadAnton } from "@remotion/google-fonts/Anton";
+import { loadFont as loadShareTech } from "@remotion/google-fonts/ShareTechMono";
+import { loadFont as loadOrbitron } from "@remotion/google-fonts/Orbitron";
 
 const INK = "#0A0B08";
 
@@ -322,9 +324,206 @@ const Cascada: React.FC<{ items: { img: string; label: string; precio: string; a
   );
 };
 
+
+// ─── PIEZAS DEL PRIMER MINUTO (oct-2026): instrumentos DENTRO del cuadro, nunca placas sobre negro ───
+// [[feedback_componentes_dentro_del_mundo_no_powerpoint]]: el número vive en un aparato (pinza, batería,
+// recibo) que flota sobre la escena real; entra con golpe, se mueve con el dato y se va.
+const { fontFamily: MONO } = loadShareTech();
+const { fontFamily: ORBI } = loadOrbitron();
+const sacude = (f: number, desde: number, durF: number, amp = 10) => {
+  if (f < desde || f > desde + durF) return "translate(0px,0px)";
+  const k = 1 - (f - desde) / durF;
+  return `translate(${(Math.sin(f * 2.7) * amp * k).toFixed(1)}px,${(Math.cos(f * 3.3) * amp * 0.7 * k).toFixed(1)}px)`;
+};
+const fmtNum = (v: number, dec = 0) => {
+  const s = Math.abs(v).toFixed(dec);
+  const [ent, frac] = s.split(".");
+  const conMiles = ent.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  return (v < 0 ? "-" : "") + conMiles + (frac ? "," + frac : "");
+};
+const fmtTiempo = (s: number) => { const t = Math.max(0, Math.round(s)); const h = Math.floor(t / 3600), m = Math.floor((t % 3600) / 60), x = t % 60; return `${h}:${String(m).padStart(2, "0")}:${String(x).padStart(2, "0")}`; };
+
+/** PINZA / MEDIDOR LCD flotando en la escena: el número corre hasta el dato; `pico` lo dispara en rojo
+ *  con sacudida (el golpe de arranque) y `alerta` cuelga un cartel debajo. */
+const Lcd: React.FC<{ de?: number; a: number; unidad?: string; label?: string; x?: number; y?: number; escala?: number; tCuenta?: number; decimales?: number; formato?: "num" | "tiempo"; pico?: { valor: number; t: number; dur?: number }; alerta?: { t: number; texto: string }; dur: number }> =
+  ({ de = 0, a, unidad = "W", label, x = 0.74, y = 0.56, escala = 1, tCuenta = 1.2, decimales = 0, formato = "num", pico, alerta, dur }) => {
+  const f = useCurrentFrame();
+  const entra = ease(interpolate(f, [0, 12], [0, 1], clamp));
+  const sale = interpolate(f, [dur - 8, dur], [1, 0], clamp);
+  const k = interpolate(f, [6, Math.max(8, S(tCuenta))], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  let v = de + (a - de) * k;
+  const enPico = pico ? f >= S(pico.t) && f < S(pico.t) + S(pico.dur ?? 0.6) : false;
+  if (enPico && pico) v = pico.valor;
+  const txt = formato === "tiempo" ? fmtTiempo(v) : fmtNum(v, decimales);
+  const al = alerta ? ease(interpolate(f, [S(alerta.t), S(alerta.t) + 8], [0, 1], clamp)) : 0;
+  const W = 560 * escala;
+  const lcdBg = enPico ? "linear-gradient(180deg,#F3B0A4,#E0705E)" : "linear-gradient(180deg,#C9D3B4,#A9B693)";
+  return (
+    <AbsoluteFill style={{ opacity: entra * sale }}>
+      <div style={{ position: "absolute", left: `${x * 100}%`, top: `${y * 100}%`, minWidth: W, transform: `translate(-50%,-50%) translateY(${((1 - entra) * 80).toFixed(1)}px) rotate(${(-3 + (1 - entra) * 8).toFixed(2)}deg) ${pico ? sacude(f, S(pico.t), 14, 14) : ""}` }}>
+        {label ? <div style={{ display: "inline-block", marginBottom: 10 * escala, fontFamily: ANTON, fontSize: 40 * escala, letterSpacing: 2, color: "#fff", background: "rgba(10,11,8,0.85)", padding: `${4 * escala}px ${18 * escala}px`, borderLeft: `${8 * escala}px solid #F2C230` }}>{label.toUpperCase()}</div> : null}
+        <div style={{ background: "linear-gradient(160deg,#FFD84A 0%,#F2B233 55%,#C98A12 100%)", borderRadius: 40 * escala, padding: 22 * escala, boxShadow: "0 30px 60px rgba(0,0,0,0.6), inset 0 3px 0 rgba(255,255,255,0.5), inset 0 -6px 0 rgba(0,0,0,0.25)" }}>
+          <div style={{ background: "#16171A", borderRadius: 24 * escala, padding: 18 * escala }}>
+            <div style={{ background: lcdBg, borderRadius: 12 * escala, padding: `${10 * escala}px ${22 * escala}px`, display: "flex", alignItems: "baseline", justifyContent: "flex-end", boxShadow: "inset 0 4px 10px rgba(0,0,0,0.45)" }}>
+              {enPico ? <span style={{ fontFamily: MONO, fontSize: 34 * escala, color: "#5A0C05", marginRight: "auto", opacity: f % 6 < 3 ? 1 : 0.2 }}>PICO</span> : null}
+              <span style={{ fontFamily: MONO, fontSize: (formato === "tiempo" ? 112 : 132) * escala, lineHeight: 1, color: "#1D2414", letterSpacing: -2, whiteSpace: "nowrap" }}>{txt}</span>
+              <span style={{ fontFamily: MONO, fontSize: 46 * escala, color: "#1D2414", marginLeft: 10 * escala }}>{unidad}</span>
+            </div>
+          </div>
+        </div>
+        {alerta ? <div style={{ marginTop: 14 * escala, textAlign: "center", opacity: al, transform: `scale(${(1.3 - 0.3 * al).toFixed(3)}) rotate(2deg)` }}>
+          <span style={{ fontFamily: ANTON, fontSize: 62 * escala, color: "#fff", background: ROJO, padding: `${4 * escala}px ${24 * escala}px`, boxShadow: SOMBRA, whiteSpace: "nowrap" }}>{alerta.texto.toUpperCase()}</span>
+        </div> : null}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** BATERÍA que se vacía contra un RELOJ: el porcentaje y la hora corren juntos; verde→ámbar→rojo,
+ *  parpadea abajo del 20 % y, si `apagon`, el cuadro se cae a negro con el remate estampado. */
+const Bateria: React.FC<{ de?: number; a: number; hDesde: string; hHasta: string; tFin: number; remate?: string; tRemate?: number; apagon?: boolean; misterio?: boolean; x?: number; y?: number; dur: number }> =
+  ({ de = 100, a, hDesde, hHasta, tFin, remate, tRemate, apagon, misterio, x = 0.5, y = 0.5, dur }) => {
+  const f = useCurrentFrame();
+  const entra = ease(interpolate(f, [0, 12], [0, 1], clamp));
+  const sale = interpolate(f, [dur - 8, dur], [1, 0], clamp);
+  const k = interpolate(f, [8, S(tFin)], [0, 1], { ...clamp, easing: Easing.inOut(Easing.quad) });
+  const pct = de + (a - de) * k;
+  const aMin = (s: string) => { const [h, m] = s.split(":").map(Number); return h * 60 + m; };
+  const m0 = aMin(hDesde); let m1 = aMin(hHasta); if (m1 <= m0) m1 += 1440;
+  const mm = Math.round(m0 + (m1 - m0) * k) % 1440, hh = Math.floor(mm / 60);
+  const h12 = ((hh + 11) % 12) + 1, momento = hh < 12 ? "DE LA MAÑANA" : hh < 19 ? "DE LA TARDE" : "DE LA NOCHE";
+  const col = pct > 50 ? "#3DDC84" : pct > 20 ? "#F2B233" : "#FF3B2F";
+  const parpadea = pct <= 20 && f % 14 < 7 ? 0.45 : 1;
+  const r = tRemate != null ? ease(interpolate(f, [S(tRemate), S(tRemate) + 9], [0, 1], clamp)) : 0;
+  const negro = apagon && tRemate != null ? interpolate(f, [S(tRemate) - 2, S(tRemate)], [0, 0.72], clamp) : 0;
+  const BW = 640, BH = 250;
+  return (
+    <AbsoluteFill style={{ opacity: sale }}>
+      <AbsoluteFill style={{ backgroundColor: "#000", opacity: negro }} />
+      <div style={{ position: "absolute", left: `${x * 100}%`, top: `${y * 100}%`, transform: `translate(-50%,-50%) scale(${(0.85 + 0.15 * entra).toFixed(3)}) ${tRemate != null ? sacude(f, S(tRemate), 16, 16) : ""}`, opacity: entra, textAlign: "center" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div style={{ position: "relative", width: BW, height: BH, border: "12px solid #F4F4F0", borderRadius: 34, background: "rgba(10,11,8,0.55)", boxShadow: "0 30px 70px rgba(0,0,0,0.65)" }}>
+            <div style={{ position: "absolute", left: 10, top: 10, bottom: 10, width: `${Math.max(0, ((BW - 44) * pct) / 100).toFixed(1)}px`, borderRadius: 18, background: `linear-gradient(180deg, ${col}, ${col}CC)`, opacity: parpadea, boxShadow: `0 0 40px ${col}88` }} />
+            <div style={{ position: "absolute", inset: 10, borderRadius: 18, backgroundImage: "repeating-linear-gradient(90deg, rgba(0,0,0,0) 0 88px, rgba(10,11,8,0.55) 88px 96px)" }} />
+            <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: ORBI, fontWeight: 900, fontSize: 132, color: "#fff", textShadow: SOMBRA }}>{misterio && k > 0.72 ? "??" : Math.round(pct)}%</div>
+          </div>
+          <div style={{ width: 30, height: 100, background: "#F4F4F0", borderRadius: "0 14px 14px 0" }} />
+        </div>
+        <div style={{ marginTop: 22, display: "inline-flex", alignItems: "baseline", gap: 18, background: "rgba(10,11,8,0.78)", padding: "8px 30px", borderRadius: 12 }}>
+          <span style={{ fontFamily: ORBI, fontWeight: 700, fontSize: 84, color: "#fff" }}>{h12}:{String(mm % 60).padStart(2, "0")}</span>
+          <span style={{ fontFamily: ANTON, fontSize: 40, color: "#F2C230", letterSpacing: 2 }}>{momento}</span>
+        </div>
+        {remate ? <div style={{ marginTop: 24, opacity: r, transform: `scale(${(1.4 - 0.4 * r).toFixed(3)}) rotate(-4deg)` }}>
+          <span style={{ fontFamily: ANTON, fontSize: 110, color: "#fff", background: ROJO, padding: "6px 40px", letterSpacing: 3, boxShadow: SOMBRA }}>{remate.toUpperCase()}</span>
+        </div> : null}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** VERSUS: pantalla partida con dos escenas reales; cada mitad entra por su lado, la línea del medio
+ *  brilla y abajo los dos números corren hasta su valor (rojo el malo, verde el bueno). Es BASE. */
+const Mitad: React.FC<{ src: string; izq: boolean; k: number }> = ({ src, izq, k }) => {
+  const f = useCurrentFrame();
+  const st: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover", transform: `scale(${(1.12 + 0.0006 * f).toFixed(4)})` };
+  const off = (1 - k) * (izq ? -100 : 100);
+  return (
+    <div style={{ position: "absolute", top: 0, bottom: 0, left: izq ? 0 : "50%", width: "50%", overflow: "hidden", transform: `translateX(${off.toFixed(2)}%)` }}>
+      {src.endsWith(".mp4") ? <OffthreadVideo src={staticFile(src)} muted style={st} /> : <Img src={staticFile(src)} style={st} />}
+    </div>
+  );
+};
+type LadoVs = { src: string; label: string; valor: string; color?: string };
+const Versus: React.FC<{ a: LadoVs; b: LadoVs; tB?: number; tValores?: number }> = ({ a, b, tB = 0.5, tValores = 1.0 }) => {
+  const f = useCurrentFrame();
+  const ka = ease(interpolate(f, [0, 10], [0, 1], clamp)), kb = ease(interpolate(f, [S(tB), S(tB) + 10], [0, 1], clamp));
+  const kv = interpolate(f, [S(tValores), S(tValores) + 24], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const num = (s: string) => { const m = s.match(/^([^\d]*)([\d.,]+)(.*)$/); if (!m) return s; const n = parseFloat(m[2].replace(/\./g, "").replace(",", ".")); return `${m[1]}${fmtNum(n * kv, 0)}${m[3]}`; };
+  const linea = interpolate(f, [S(tB), S(tB) + 8], [0, 1], clamp);
+  const lado = (x: LadoVs, k: number, izq: boolean, defCol: string) => (
+    <div style={{ position: "absolute", top: 0, bottom: 0, left: izq ? 0 : "50%", width: "50%", opacity: k }}>
+      <div style={{ position: "absolute", top: 70, left: 0, right: 0, textAlign: "center" }}>
+        <span style={{ fontFamily: ANTON, fontSize: 64, letterSpacing: 3, color: "#fff", background: "rgba(10,11,8,0.82)", padding: "6px 30px" }}>{x.label.toUpperCase()}</span>
+      </div>
+      <div style={{ position: "absolute", bottom: 80, left: 0, right: 0, textAlign: "center", opacity: kv, transform: `scale(${(1.25 - 0.25 * kv).toFixed(3)})` }}>
+        <span style={{ fontFamily: ORBI, fontWeight: 900, fontSize: 150, color: x.color || defCol, textShadow: "0 8px 30px rgba(0,0,0,0.9)" }}>{num(x.valor)}</span>
+      </div>
+    </div>
+  );
+  return (
+    <AbsoluteFill style={{ backgroundColor: INK, overflow: "hidden" }}>
+      <Mitad src={a.src} izq k={ka} />
+      <Mitad src={b.src} izq={false} k={kb} />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(10,11,8,0.45) 0%, rgba(10,11,8,0) 30%, rgba(10,11,8,0) 60%, rgba(10,11,8,0.7) 100%)" }} />
+      <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: 10, marginLeft: -5, background: "#fff", transform: `scaleY(${linea.toFixed(3)})`, boxShadow: "0 0 30px rgba(255,255,255,0.9), 0 0 80px rgba(242,178,51,0.7)" }} />
+      {lado(a, ka, true, "#FF3B2F")}
+      {lado(b, kb, false, "#3DDC84")}
+    </AbsoluteFill>
+  );
+};
+
+/** RECIBO que se imprime sobre la escena: cada pieza sale con su precio en su segundo y al final el
+ *  TOTAL con sello. Papel térmico, letra de caja, levemente torcido. */
+const Recibo: React.FC<{ items: { t: number; label: string; precio: string }[]; total?: string; tTotal?: number; titulo?: string; x?: number; dur: number }> = ({ items, total, tTotal, titulo = "LO QUE PAGUÉ", x = 0.76, dur }) => {
+  const f = useCurrentFrame();
+  const entra = ease(interpolate(f, [0, 12], [0, 1], clamp));
+  const sale = interpolate(f, [dur - 8, dur], [1, 0], clamp);
+  const visibles = items.filter((it) => f >= S(it.t)).length;
+  const kt = tTotal != null ? ease(interpolate(f, [S(tTotal), S(tTotal) + 9], [0, 1], clamp)) : 0;
+  const alto = 130 + visibles * 74 + (kt > 0 ? 150 : 0);
+  return (
+    <AbsoluteFill style={{ opacity: sale }}>
+      <div style={{ position: "absolute", left: `${x * 100}%`, top: 60, width: 600, transform: `translateX(-50%) translateY(${((1 - entra) * -120).toFixed(1)}px) rotate(2.2deg)`, opacity: entra, filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.55))" }}>
+        <div style={{ background: "#F7F3E8", height: alto, overflow: "hidden", padding: "26px 34px", backgroundImage: "repeating-linear-gradient(0deg, rgba(0,0,0,0.025) 0 2px, rgba(0,0,0,0) 2px 6px)" }}>
+          <div style={{ fontFamily: MONO, fontSize: 40, color: "#222", textAlign: "center", letterSpacing: 4, borderBottom: "3px dashed #999", paddingBottom: 12, marginBottom: 12 }}>{titulo}</div>
+          {items.slice(0, visibles).map((it, i) => {
+            const ki = ease(interpolate(f, [S(it.t), S(it.t) + 6], [0, 1], clamp));
+            return (
+              <div key={i} style={{ display: "flex", justifyContent: "space-between", fontFamily: MONO, fontSize: 44, color: "#1A1A1A", height: 74, alignItems: "center", opacity: ki, transform: `translateX(${((1 - ki) * 20).toFixed(1)}px)` }}>
+                <span>{it.label.toUpperCase()}</span><span style={{ fontWeight: 700 }}>{it.precio}</span>
+              </div>
+            );
+          })}
+          {total && kt > 0 ? <div style={{ borderTop: "3px dashed #999", marginTop: 10, paddingTop: 14, display: "flex", justifyContent: "space-between", alignItems: "center", opacity: kt }}>
+            <span style={{ fontFamily: ANTON, fontSize: 64, color: "#111", letterSpacing: 2 }}>TOTAL</span>
+            <span style={{ fontFamily: ANTON, fontSize: 84, color: "#fff", background: ROJO, padding: "0 20px", transform: `scale(${(1.4 - 0.4 * kt).toFixed(3)}) rotate(-4deg)` }}>{total}</span>
+          </div> : null}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** ADELANTO (flash-forward): sobre una escena de más adelante, grano + viñeta + rótulo "MÁS ADELANTE"
+ *  con la hora. Promete sin contar: el espectador se queda para llegar ahí. */
+const Adelanto: React.FC<{ texto?: string; hora?: string; dur: number }> = ({ texto = "MÁS ADELANTE", hora, dur }) => {
+  const f = useCurrentFrame();
+  const entra = interpolate(f, [0, 4], [0, 1], clamp);
+  const sale = interpolate(f, [dur - 5, dur], [1, 0], clamp);
+  return (
+    <AbsoluteFill style={{ opacity: Math.min(entra, sale) }}>
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.75) 100%)" }} />
+      <AbsoluteFill style={{ backgroundImage: "repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0 1px, rgba(0,0,0,0) 1px 4px)", opacity: 0.8 }} />
+      <AbsoluteFill style={{ backgroundColor: "#fff", opacity: f < 3 ? 0.55 - f * 0.18 : 0.015 + 0.01 * Math.abs(Math.sin(f * 7.1)) }} />
+      <div style={{ position: "absolute", left: 80, top: 80, display: "flex", alignItems: "center", gap: 16 }}>
+        <div style={{ width: 26, height: 26, borderRadius: 13, background: ROJO, opacity: f % 20 < 12 ? 1 : 0.2 }} />
+        <span style={{ fontFamily: ANTON, fontSize: 58, letterSpacing: 4, color: "#fff", textShadow: SOMBRA }}>{texto.toUpperCase()}</span>
+        {hora ? <span style={{ fontFamily: MONO, fontSize: 54, color: "#F2C230", textShadow: SOMBRA, marginLeft: 10 }}>{hora}</span> : null}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** GOLPE DE ZOOM: destello de borde en 8 cuadros (acompaña un corte a un plano más cerrado). */
+const Punch: React.FC = () => {
+  const f = useCurrentFrame();
+  const op = interpolate(f, [0, 2, 8], [0.5, 0.25, 0], clamp);
+  return <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 100%)", opacity: op }} />;
+};
+
 /** MAPA de piezas del hook (el build emite `<Hook kind=... />`). Un kind desconocido no dibuja nada y
  *  el build ya lo frenó antes (compuerta hookKinds). */
-export const HOOK_KINDS = ["foto", "clip", "dianoche", "reloj", "flash", "negro", "cascada"];
+export const HOOK_KINDS = ["foto", "clip", "dianoche", "reloj", "flash", "negro", "cascada", "lcd", "bateria", "versus", "recibo", "adelanto", "punch"];
 export const Hook: React.FC<{ kind: string; props: any; dur: number }> = ({ kind, props, dur }) => {
   if (kind === "foto") return <HookFoto {...props} />;
   if (kind === "clip") return <HookFoto {...props} clip />;
@@ -333,6 +532,12 @@ export const Hook: React.FC<{ kind: string; props: any; dur: number }> = ({ kind
   if (kind === "flash") return <Flash />;
   if (kind === "negro") return <Negro />;
   if (kind === "cascada") return <Cascada {...props} dur={dur} />;
+  if (kind === "lcd") return <Lcd {...props} dur={dur} />;
+  if (kind === "bateria") return <Bateria {...props} dur={dur} />;
+  if (kind === "versus") return <Versus {...props} />;
+  if (kind === "recibo") return <Recibo {...props} dur={dur} />;
+  if (kind === "adelanto") return <Adelanto {...props} dur={dur} />;
+  if (kind === "punch") return <Punch />;
   return null;
 };
 

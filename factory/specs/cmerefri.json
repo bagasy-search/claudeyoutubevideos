@@ -1,0 +1,311 @@
+{
+  "slug": "cmerefri",
+  "canal": "claudio-mendoza",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_cmerefri.txt",
+  "titulo": "La Forma Más Barata de Tener el Refrigerador Prendido en un Apagón (lo medí)",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200,
+    "speed": 0.88
+  },
+  "avatar": {
+    "face": "public/ref/claudio_mendoza_full.png",
+    "ref": "public/ref/claudio_mendoza_face128.png"
+  },
+  "ctas": [
+    {
+      "ancla": "La lista que pegué en la puerta",
+      "head": "La lista del refrigerador",
+      "sub": "60 aparatos medidos · escanea",
+      "qr": "qr/cmerefri.png",
+      "durS": 10,
+      "compacto": true
+    }
+  ],
+  "cta": {
+    "head": "Los 3 manuales",
+    "ancla": "Si esto te sirvió",
+    "sub": "Escanea el código",
+    "qr": "qr/cmerefri.png",
+    "compacto": true
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
+    "cardId": "plan-own-1791246576955-2"
+  },
+  "overrides": {
+    "animadoMaxPct": 90,
+    "apertura": {
+      "miniatura": true,
+      "holdS": 1,
+      "glitchF": 12,
+      "clip": "broll/{slug}/{slug}_apertura.mp4",
+      "foto": "img/{slug}/{slug}_thumb.jpg"
+    }
+  },
+  "hook": {
+    "cortes": [
+      {
+        "desde": 11.24,
+        "hasta": 13.5,
+        "kind": "foto",
+        "props": {
+          "plano": "p005",
+          "z": 1
+        }
+      },
+      {
+        "desde": 13.5,
+        "hasta": 15.8,
+        "kind": "foto",
+        "props": {
+          "plano": "p072",
+          "z": 1.06
+        }
+      },
+      {
+        "desde": 15.8,
+        "hasta": 18.2,
+        "kind": "foto",
+        "props": {
+          "plano": "p099",
+          "z": 1.12
+        }
+      },
+      {
+        "desde": 23.2,
+        "hasta": 28.02,
+        "kind": "versus",
+        "props": {
+          "a": {
+            "src": "img/cmerefri/p005.jpg",
+            "label": "parece gratis",
+            "valor": "$0"
+          },
+          "b": {
+            "src": "img/cmerefri/p068.jpg",
+            "label": "te deja a pie",
+            "valor": "$110"
+          },
+          "tB": 1.2,
+          "tValores": 2.4
+        }
+      }
+    ],
+    "over": [
+      {
+        "desde": 3.1,
+        "hasta": 7.1,
+        "kind": "lcd",
+        "props": {
+          "label": "cronómetro",
+          "de": 0,
+          "a": 79800,
+          "formato": "tiempo",
+          "unidad": "",
+          "tCuenta": 3.6,
+          "x": 0.74,
+          "y": 0.42
+        }
+      },
+      {
+        "desde": 11.3,
+        "hasta": 18.2,
+        "kind": "recibo",
+        "props": {
+          "titulo": "LAS 3 BATERÍAS",
+          "x": 0.77,
+          "items": [
+            {
+              "t": 0.3,
+              "label": "la del auto",
+              "precio": "$0"
+            },
+            {
+              "t": 2.3,
+              "label": "ciclo profundo",
+              "precio": "$165"
+            },
+            {
+              "t": 4.6,
+              "label": "litio",
+              "precio": "$229"
+            }
+          ]
+        }
+      },
+      {
+        "desde": 28.1,
+        "hasta": 32.2,
+        "kind": "lcd",
+        "props": {
+          "label": "cronómetro",
+          "de": 13140,
+          "a": 13200,
+          "formato": "tiempo",
+          "unidad": "",
+          "tCuenta": 2,
+          "x": 0.72,
+          "y": 0.6
+        }
+      },
+      {
+        "desde": 32.3,
+        "hasta": 35.4,
+        "kind": "lcd",
+        "props": {
+          "label": "la pinza",
+          "de": 0,
+          "a": 380,
+          "unidad": "W",
+          "tCuenta": 0.9,
+          "x": 0.73,
+          "y": 0.5,
+          "alerta": {
+            "t": 1.4,
+            "texto": "con el motor apagado"
+          }
+        }
+      },
+      {
+        "desde": 58.6,
+        "hasta": 62.7,
+        "kind": "reloj",
+        "props": {
+          "desde": "21:00",
+          "hasta": "11:00",
+          "tFin": 2.6,
+          "remate": "14 horas",
+          "tRemate": 2.8
+        }
+      },
+      {
+        "desde": 67.9,
+        "hasta": 72.2,
+        "kind": "recibo",
+        "props": {
+          "titulo": "LO QUE TIRAMOS",
+          "x": 0.76,
+          "items": [
+            {
+              "t": 0.3,
+              "label": "carne",
+              "precio": "$60"
+            },
+            {
+              "t": 0.9,
+              "label": "pollo",
+              "precio": "$35"
+            },
+            {
+              "t": 1.5,
+              "label": "leche y queso",
+              "precio": "$40"
+            },
+            {
+              "t": 2.1,
+              "label": "congelador",
+              "precio": "$45"
+            }
+          ],
+          "total": "$180",
+          "tTotal": 3
+        }
+      }
+    ],
+    "sfx": [
+      {
+        "t": 3.1,
+        "src": "sfx/number_roll.mp3",
+        "vol": 0.5,
+        "durS": 3.6
+      },
+      {
+        "t": 11.3,
+        "src": "sfx/whoosh.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 11.6,
+        "src": "sfx/yc_typewriter.mp3",
+        "vol": 0.35,
+        "durS": 1.2
+      },
+      {
+        "t": 13.5,
+        "src": "sfx/whoosh.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 13.6,
+        "src": "sfx/yc_typewriter.mp3",
+        "vol": 0.35,
+        "durS": 1.2
+      },
+      {
+        "t": 15.8,
+        "src": "sfx/whoosh.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 15.9,
+        "src": "sfx/yc_typewriter.mp3",
+        "vol": 0.35,
+        "durS": 1.2
+      },
+      {
+        "t": 23.2,
+        "src": "sfx/whoosh.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 25.6,
+        "src": "sfx/stinger_hit.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 28.1,
+        "src": "sfx/digit_tick.mp3",
+        "vol": 0.5,
+        "durS": 2
+      },
+      {
+        "t": 32.3,
+        "src": "sfx/counter_up.mp3",
+        "vol": 0.5,
+        "durS": 2.5
+      },
+      {
+        "t": 33.7,
+        "src": "sfx/number_slam.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 61.4,
+        "src": "sfx/deep-cinematic-impact-1.mp3",
+        "vol": 0.6,
+        "durS": 3
+      },
+      {
+        "t": 68.2,
+        "src": "sfx/yc_typewriter.mp3",
+        "vol": 0.35,
+        "durS": 2.4
+      },
+      {
+        "t": 70.9,
+        "src": "sfx/number_slam.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      }
+    ]
+  }
+}

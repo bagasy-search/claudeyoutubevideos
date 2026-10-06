@@ -1,0 +1,188 @@
+{
+  "slug": "cmeniseentera",
+  "canal": "claudio-mendoza",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_cmeniseentera.txt",
+  "titulo": "Se Va la Luz y Mi Casa NI SE ENTERA (sistema automático casero)",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200,
+    "speed": 0.88
+  },
+  "avatar": {
+    "face": "public/ref/claudio_mendoza_full.png",
+    "ref": "public/ref/claudio_mendoza_face128.png"
+  },
+  "ctas": [
+    {
+      "ancla": "La tabla que le pegué a Don Beto",
+      "head": "La tabla de Don Beto",
+      "sub": "Cable, fusible y horas · escanea",
+      "qr": "qr/cmeniseentera.png",
+      "durS": 10,
+      "compacto": true
+    }
+  ],
+  "cta": {
+    "head": "Los 3 manuales",
+    "ancla": "Si esto te sirvió",
+    "sub": "Escanea el código",
+    "qr": "qr/cmeniseentera.png",
+    "compacto": true
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
+    "cardId": "plan-own-1791246576955-3"
+  },
+  "overrides": {
+    "animadoMaxPct": 90,
+    "apertura": {
+      "miniatura": true,
+      "holdS": 1,
+      "glitchF": 12,
+      "clip": "broll/{slug}/{slug}_apertura.mp4",
+      "foto": "img/{slug}/{slug}_thumb.jpg"
+    }
+  },
+  "hook": {
+    "cortes": [],
+    "over": [
+      {
+        "desde": 4.25,
+        "hasta": 8.9,
+        "kind": "reloj",
+        "props": {
+          "desde": "20:39",
+          "hasta": "20:40",
+          "tFin": 0.8,
+          "remate": "apagón",
+          "tRemate": 1
+        }
+      },
+      {
+        "desde": 19.85,
+        "hasta": 28.3,
+        "kind": "recibo",
+        "props": {
+          "titulo": "EN CASA DE DON BETO",
+          "x": 0.76,
+          "items": [
+            {
+              "t": 0.2,
+              "label": "la tele",
+              "precio": "PRENDIDA"
+            },
+            {
+              "t": 1.2,
+              "label": "refrigerador",
+              "precio": "PRENDIDO"
+            },
+            {
+              "t": 2.3,
+              "label": "ventilador",
+              "precio": "PRENDIDO"
+            },
+            {
+              "t": 3.6,
+              "label": "router",
+              "precio": "PRENDIDO"
+            }
+          ]
+        }
+      },
+      {
+        "desde": 39.15,
+        "hasta": 42.75,
+        "kind": "lcd",
+        "props": {
+          "label": "lo que tarda en cambiar",
+          "de": 0,
+          "a": 20,
+          "unidad": "ms",
+          "tCuenta": 1.4,
+          "x": 0.72,
+          "y": 0.55
+        }
+      },
+      {
+        "desde": 42.85,
+        "hasta": 46,
+        "kind": "recibo",
+        "props": {
+          "titulo": "LA CAJITA",
+          "x": 0.76,
+          "items": [
+            {
+              "t": 0.3,
+              "label": "transferencia",
+              "precio": "$42"
+            }
+          ]
+        }
+      },
+      {
+        "desde": 65.45,
+        "hasta": 69.9,
+        "kind": "lcd",
+        "props": {
+          "label": "después del corte",
+          "de": 0,
+          "a": 40,
+          "unidad": "s",
+          "tCuenta": 2.6,
+          "x": 0.72,
+          "y": 0.5,
+          "alerta": {
+            "t": 3,
+            "texto": "se apagó la casa entera"
+          }
+        }
+      }
+    ],
+    "sfx": [
+      {
+        "t": 4.25,
+        "src": "sfx/deep-cinematic-impact-1.mp3",
+        "vol": 0.6,
+        "durS": 3
+      },
+      {
+        "t": 5.3,
+        "src": "sfx/number_slam.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 19.9,
+        "src": "sfx/yc_typewriter.mp3",
+        "vol": 0.35,
+        "durS": 4.2
+      },
+      {
+        "t": 39.15,
+        "src": "sfx/counter_up.mp3",
+        "vol": 0.5,
+        "durS": 2.5
+      },
+      {
+        "t": 42.9,
+        "src": "sfx/yc_typewriter.mp3",
+        "vol": 0.35,
+        "durS": 1.2
+      },
+      {
+        "t": 65.5,
+        "src": "sfx/digit_tick.mp3",
+        "vol": 0.5,
+        "durS": 3
+      },
+      {
+        "t": 68.45,
+        "src": "sfx/deep-cinematic-impact-1.mp3",
+        "vol": 0.6,
+        "durS": 3
+      }
+    ]
+  }
+}

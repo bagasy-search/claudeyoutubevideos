@@ -1,0 +1,223 @@
+{
+  "slug": "cmeinversor",
+  "canal": "claudio-mendoza",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_cmeinversor.txt",
+  "titulo": "Todo lo que Prende un Inversor de 1000W (lo probé aparato por aparato)",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200,
+    "speed": 0.88
+  },
+  "avatar": {
+    "face": "public/ref/claudio_mendoza_full.png",
+    "ref": "public/ref/claudio_mendoza_face128.png"
+  },
+  "ctas": [
+    {
+      "ancla": "La lista que le dejé a Julián",
+      "head": "La lista de Julián",
+      "sub": "60 aparatos medidos · escanea",
+      "qr": "qr/cmeinversor.png",
+      "durS": 10,
+      "compacto": true
+    }
+  ],
+  "cta": {
+    "head": "Los 3 manuales",
+    "ancla": "Si esto te sirvió",
+    "sub": "Escanea el código",
+    "qr": "qr/cmeinversor.png",
+    "compacto": true
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
+    "cardId": "plan-own-1791246576955-4"
+  },
+  "overrides": {
+    "animadoMaxPct": 90,
+    "apertura": {
+      "miniatura": true,
+      "holdS": 1,
+      "glitchF": 12,
+      "clip": "broll/{slug}/{slug}_apertura.mp4",
+      "foto": "img/{slug}/{slug}_thumb.jpg"
+    }
+  },
+  "hook": {
+    "cortes": [
+      {
+        "desde": 26.7,
+        "hasta": 30.7,
+        "kind": "versus",
+        "props": {
+          "a": {
+            "src": "img/cmeinversor/p037.jpg",
+            "label": "el de $35",
+            "valor": "1000 W",
+            "color": "#FFFFFF"
+          },
+          "b": {
+            "src": "img/cmeinversor/p038.jpg",
+            "label": "el de $95",
+            "valor": "1000 W",
+            "color": "#FFFFFF"
+          },
+          "tB": 0.8,
+          "tValores": 1.8
+        }
+      },
+      {
+        "desde": 33,
+        "hasta": 35.14,
+        "kind": "foto",
+        "props": {
+          "plano": "p126",
+          "z": 1.04
+        }
+      }
+    ],
+    "over": [
+      {
+        "desde": 0.3,
+        "hasta": 2.6,
+        "kind": "lcd",
+        "props": {
+          "label": "la caja dice",
+          "de": 0,
+          "a": 1000,
+          "unidad": "W",
+          "tCuenta": 1.2,
+          "x": 0.8,
+          "y": 0.55,
+          "escala": 0.85
+        }
+      },
+      {
+        "desde": 6.35,
+        "hasta": 12.15,
+        "kind": "recibo",
+        "props": {
+          "titulo": "16 APARATOS",
+          "x": 0.77,
+          "items": [
+            {
+              "t": 0.2,
+              "label": "1. foco",
+              "precio": "?"
+            },
+            {
+              "t": 0.8,
+              "label": "2. laptop",
+              "precio": "?"
+            },
+            {
+              "t": 1.4,
+              "label": "3. tele",
+              "precio": "?"
+            },
+            {
+              "t": 2,
+              "label": "4. ventilador",
+              "precio": "?"
+            },
+            {
+              "t": 2.6,
+              "label": "5. refrigerador",
+              "precio": "?"
+            },
+            {
+              "t": 3.2,
+              "label": "6. licuadora",
+              "precio": "?"
+            },
+            {
+              "t": 3.8,
+              "label": "7. ???",
+              "precio": "?"
+            }
+          ]
+        }
+      },
+      {
+        "desde": 16,
+        "hasta": 22.4,
+        "kind": "lcd",
+        "props": {
+          "label": "la etiqueta dice",
+          "de": 0,
+          "a": 700,
+          "unidad": "W",
+          "tCuenta": 1.4,
+          "x": 0.8,
+          "y": 0.5,
+          "escala": 0.85,
+          "alerta": {
+            "t": 5.6,
+            "texto": "y no pudo"
+          }
+        }
+      },
+      {
+        "desde": 33,
+        "hasta": 35.1,
+        "kind": "adelanto",
+        "props": {
+          "texto": "más adelante",
+          "hora": "820 W"
+        }
+      }
+    ],
+    "sfx": [
+      {
+        "t": 0.3,
+        "src": "sfx/counter_up.mp3",
+        "vol": 0.5,
+        "durS": 2.5
+      },
+      {
+        "t": 6.4,
+        "src": "sfx/yc_typewriter.mp3",
+        "vol": 0.35,
+        "durS": 4.5
+      },
+      {
+        "t": 16,
+        "src": "sfx/counter_up.mp3",
+        "vol": 0.45,
+        "durS": 2.5
+      },
+      {
+        "t": 21.6,
+        "src": "sfx/number_slam.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 26.7,
+        "src": "sfx/whoosh.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 27.5,
+        "src": "sfx/whoosh.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 28.6,
+        "src": "sfx/stinger_hit.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 33,
+        "src": "sfx/whoosh.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      }
+    ]
+  }
+}

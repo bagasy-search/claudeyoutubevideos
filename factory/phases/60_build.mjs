@@ -337,7 +337,7 @@ export default {
     const audios = [], hookAssets = new Set();
     const H = spec.hook;
     if (H) {
-      const { HOOK_KINDS } = { HOOK_KINDS: ["foto", "clip", "dianoche", "reloj", "flash", "negro", "cascada"] };
+      const { HOOK_KINDS } = { HOOK_KINDS: ["foto", "clip", "dianoche", "reloj", "flash", "negro", "cascada", "lcd", "bateria", "versus", "recibo", "adelanto", "punch"] };
       const F = (s) => Math.round(s * 30), probH = [];
       const juntar = (v) => { if (typeof v === "string" && /^(img|broll|sfx_fab)\//.test(v)) hookAssets.add(v); else if (v && typeof v === "object") Object.values(v).forEach(juntar); };
       for (const [i, c] of (H.cortes || []).entries()) {

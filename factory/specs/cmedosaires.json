@@ -1,0 +1,247 @@
+{
+  "slug": "cmedosaires",
+  "canal": "claudio-mendoza",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_cmedosaires.txt",
+  "titulo": "Una Sola Batería Prende 2 Aires Acondicionados y Toda la Casa",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200,
+    "speed": 0.88
+  },
+  "avatar": {
+    "face": "public/ref/claudio_mendoza_full.png",
+    "ref": "public/ref/claudio_mendoza_face128.png"
+  },
+  "ctas": [
+    {
+      "ancla": "La tabla que le pegué a Lucía",
+      "head": "La tabla de Lucía",
+      "sub": "60 aparatos medidos · escanea",
+      "qr": "qr/cmedosaires.png",
+      "durS": 10,
+      "compacto": true
+    }
+  ],
+  "cta": {
+    "head": "Los 3 manuales",
+    "ancla": "Si esto te sirvió",
+    "sub": "Escanea el código",
+    "qr": "qr/cmedosaires.png",
+    "compacto": true
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
+    "cardId": "plan-own-1791246576955-1"
+  },
+  "overrides": {
+    "animadoMaxPct": 90,
+    "apertura": {
+      "miniatura": true,
+      "holdS": 1,
+      "glitchF": 12,
+      "clip": "broll/{slug}/{slug}_apertura.mp4",
+      "foto": "img/{slug}/{slug}_thumb.jpg"
+    }
+  },
+  "hook": {
+    "cortes": [],
+    "over": [
+      {
+        "desde": 13.7,
+        "hasta": 22,
+        "kind": "recibo",
+        "props": {
+          "titulo": "ME ESCRIBIERON DESDE",
+          "x": 0.76,
+          "items": [
+            {
+              "t": 0.2,
+              "label": "Monterrey",
+              "precio": "MX"
+            },
+            {
+              "t": 1.4,
+              "label": "Mexicali",
+              "precio": "MX"
+            },
+            {
+              "t": 2.7,
+              "label": "Santo Domingo",
+              "precio": "RD"
+            },
+            {
+              "t": 4.1,
+              "label": "Maracaibo",
+              "precio": "VE"
+            }
+          ]
+        }
+      },
+      {
+        "desde": 22.2,
+        "hasta": 26.7,
+        "kind": "lcd",
+        "props": {
+          "label": "a medianoche",
+          "de": 24,
+          "a": 35,
+          "unidad": "°C",
+          "tCuenta": 2.4,
+          "x": 0.72,
+          "y": 0.55,
+          "alerta": {
+            "t": 2.8,
+            "texto": "y sin luz"
+          }
+        }
+      },
+      {
+        "desde": 34.95,
+        "hasta": 39.7,
+        "kind": "recibo",
+        "props": {
+          "titulo": "TODA LA NOCHE",
+          "x": 0.76,
+          "items": [
+            {
+              "t": 0.2,
+              "label": "2 aires",
+              "precio": "SÍ"
+            },
+            {
+              "t": 1,
+              "label": "refrigerador",
+              "precio": "SÍ"
+            },
+            {
+              "t": 1.8,
+              "label": "luces",
+              "precio": "SÍ"
+            },
+            {
+              "t": 2.6,
+              "label": "ventiladores",
+              "precio": "SÍ"
+            },
+            {
+              "t": 3.4,
+              "label": "wifi",
+              "precio": "SÍ"
+            }
+          ]
+        }
+      },
+      {
+        "desde": 43.15,
+        "hasta": 46.75,
+        "kind": "bateria",
+        "props": {
+          "de": 100,
+          "a": 41,
+          "hDesde": "19:00",
+          "hHasta": "06:00",
+          "tFin": 3,
+          "misterio": true,
+          "y": 0.46
+        }
+      },
+      {
+        "desde": 49.4,
+        "hasta": 53.15,
+        "kind": "lcd",
+        "props": {
+          "label": "un aire inverter",
+          "de": 180,
+          "a": 1150,
+          "unidad": "W",
+          "tCuenta": 2.6,
+          "x": 0.72,
+          "y": 0.55
+        }
+      },
+      {
+        "desde": 64.1,
+        "hasta": 66.3,
+        "kind": "adelanto",
+        "props": {
+          "texto": "la primera noche",
+          "hora": "4:10"
+        }
+      },
+      {
+        "desde": 69.05,
+        "hasta": 74.95,
+        "kind": "bateria",
+        "props": {
+          "de": 100,
+          "a": 10,
+          "hDesde": "19:00",
+          "hHasta": "04:10",
+          "tFin": 3.2,
+          "remate": "se apagó todo",
+          "tRemate": 3.5,
+          "apagon": true,
+          "y": 0.45
+        }
+      }
+    ],
+    "sfx": [
+      {
+        "t": 13.7,
+        "src": "sfx/yc_typewriter.mp3",
+        "vol": 0.35,
+        "durS": 4.5
+      },
+      {
+        "t": 22.2,
+        "src": "sfx/counter_up.mp3",
+        "vol": 0.5,
+        "durS": 2.5
+      },
+      {
+        "t": 25,
+        "src": "sfx/number_slam.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 35,
+        "src": "sfx/yc_typewriter.mp3",
+        "vol": 0.35,
+        "durS": 3.8
+      },
+      {
+        "t": 43.15,
+        "src": "sfx/cp_riser.wav",
+        "vol": 0.45,
+        "durS": 3.5
+      },
+      {
+        "t": 49.4,
+        "src": "sfx/counter_up.mp3",
+        "vol": 0.5,
+        "durS": 2.8
+      },
+      {
+        "t": 64.1,
+        "src": "sfx/whoosh.mp3",
+        "vol": 0.55,
+        "durS": 2.5
+      },
+      {
+        "t": 69.1,
+        "src": "sfx/cp_riser.wav",
+        "vol": 0.45,
+        "durS": 3.4
+      },
+      {
+        "t": 72.55,
+        "src": "sfx/deep-cinematic-impact-1.mp3",
+        "vol": 0.7,
+        "durS": 3
+      }
+    ]
+  }
+}
