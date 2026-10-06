@@ -29,7 +29,9 @@ for a in SFX:
     if a["src"] not in cache: cache[a["src"]] = load(a["src"])
     add(cache[a["src"]], a["from"] / FPS, a["vol"], a["dur"] / FPS, 0.02)
 # minuto 1 sin aire muerto (compuerta: 0 silencios >=0,3 s a -32 dB): ambiente de campo bajo en cada pausa >=0,25 s de la voz
-amb = load("sfx/amb_campo.mp3"); amb = amb / (np.sqrt((amb ** 2).mean()) + 1e-9) * 10 ** (-27 / 20)
+amb = load("sfx/rh_roomtone.mp3"); amb = amb / (np.sqrt((amb ** 2).mean()) + 1e-9) * 10 ** (-27 / 20)
+# tono de baño continuo y bajísimo bajo todo el video (nunca silencio digital entre frases)
+bed = amb * 10 ** (-14 / 20); reps = int(np.ceil(N / len(bed))) + 1; mix += np.tile(bed, (reps, 1))[:N]
 env = np.sqrt(np.convolve(voice[:, 0] ** 2, np.ones(480) / 480, mode="same")); quiet = env < 10 ** (-40 / 20)
 i, n1, filled = 0, int(60 * SR), 0
 while i < n1:
@@ -42,7 +44,7 @@ while i < n1:
             mix[a:b] += seg; filled += 1
         i = j
     else: i += 1
-print("pausas del minuto 1 rellenadas con ambiente:", filled)
+print("pausas del minuto 1 rellenadas con tono de baño:", filled)
 peak = np.abs(mix).max(); print("pico", round(float(20 * np.log10(peak + 1e-9)), 2), "dBFS")
 raw = (np.clip(mix, -1, 1)).astype(np.float32).tobytes()
 p = subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-", "-af", "loudnorm=I=-16:TP=-1.5:LRA=11:linear=true", "-ar", str(SR), "-c:a", "pcm_s16le", R + f"out/{S}_mix.wav"], input=raw)

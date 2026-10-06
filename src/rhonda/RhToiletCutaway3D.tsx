@@ -167,7 +167,8 @@ export const RhToiletCutaway3D: React.FC<{ mode?: Mode; labels?: Labels; orbit?:
           </g>); })}
       </svg>
       {L.map((l, i) => { const p = proj(l.at), k = lin(f, l.t0 + 6, l.t0 + 18); if (k <= 0) return null;
-        return (<div key={i} style={{ position: "absolute", left: p.x + l.dx, top: p.y + l.dy, translate: `${l.dx < 0 ? "-100%" : "0%"} -50%`, opacity: k, scale: String(0.85 + 0.15 * k), background: l.alert ? RH.red : RH.blueDeep, color: "#fff", fontFamily: LABEL, fontWeight: 600, fontSize: 40, letterSpacing: 2, padding: "8px 22px", borderRadius: 10, textTransform: "uppercase", whiteSpace: "nowrap", boxShadow: `0 10px 24px ${RH.shadow}` }}>{l.text}</div>);
+        const room = l.dx < 0 ? p.x + l.dx : width - (p.x + l.dx), est = l.text.length * 24 + 50, flip = room < est;
+        return (<div key={i} style={{ position: "absolute", left: flip ? Math.max(20, Math.min(width - est - 20, p.x + l.dx - (l.dx < 0 ? -est : est))) : p.x + l.dx, top: p.y + l.dy, translate: `${!flip && l.dx < 0 ? "-100%" : "0%"} -50%`, opacity: k, scale: String(0.85 + 0.15 * k), background: l.alert ? RH.red : RH.blueDeep, color: "#fff", fontFamily: LABEL, fontWeight: 600, fontSize: 40, letterSpacing: 2, padding: "8px 22px", borderRadius: 10, textTransform: "uppercase", whiteSpace: "nowrap", boxShadow: `0 10px 24px ${RH.shadow}` }}>{l.text}</div>);
       })}
       {labels.amount ? (
         <div style={{ position: "absolute", left: 110, top: 90, opacity: lin(f, 4, 16), translate: `0 ${(1 - lin(f, 4, 16)) * 30}px`, background: RH.yellow, color: RH.ink, fontFamily: LABEL, fontWeight: 700, fontSize: 64, padding: "10px 30px", borderRadius: 12, boxShadow: `0 14px 30px ${RH.shadow}` }}>{labels.amount}</div>

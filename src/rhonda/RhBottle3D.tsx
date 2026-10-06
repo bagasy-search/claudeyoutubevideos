@@ -23,10 +23,10 @@ function bottleGeo() {
 const Bottle: React.FC<{ x: number; rotY: number; clear?: boolean; sprayer?: boolean; flat?: number }> = ({ x, rotY, clear, sprayer = true, flat = 0 }) => {
   const g = useMemo(() => bottleGeo(), []);
   const m = useMemo(() => ({
-    body: new THREE.MeshPhysicalMaterial(clear ? { color: "#F2F7FA", roughness: 0.05, transparent: true, opacity: 0.35, clearcoat: 1 } : { color: "#4A2810", roughness: 0.16, clearcoat: 0.8, transparent: true, opacity: 0.94 }),
+    body: new THREE.MeshPhysicalMaterial(clear ? { color: "#EAF3F8", roughness: 0.05, transparent: true, opacity: 0.22, clearcoat: 1, depthWrite: false } : { color: "#4A2810", roughness: 0.16, clearcoat: 0.8, transparent: true, opacity: 0.94 }),
     label: new THREE.MeshStandardMaterial({ color: "#FAFAF7", roughness: 0.7, side: THREE.DoubleSide }),
     white: new THREE.MeshStandardMaterial({ color: "#F4F4F2", roughness: 0.4 }),
-    liquid: new THREE.MeshStandardMaterial({ color: "#EAF6FF", transparent: true, opacity: 0.5 }),
+    liquid: new THREE.MeshStandardMaterial({ color: "#CFE8F7", transparent: true, opacity: 0.35, depthWrite: false }),
     bub: new THREE.MeshStandardMaterial({ color: "#FFFFFF", transparent: true, opacity: 0.85 }),
   }), [clear]);
   return (
@@ -54,7 +54,7 @@ export const RhBottle3D: React.FC<{ title?: string; sub?: string; tag?: string; 
   const T = durationInFrames;
   const rot = interpolate(f, [0, T], [-0.5, 0.55]);
   const dist = interpolate(f, [0, T], [5.6, 4.7], { easing: Easing.out(Easing.quad) });
-  const target = new THREE.Vector3(compare ? 0 : 0.35, 1.05, 0);
+  const target = new THREE.Vector3(compare ? 0 : -0.75, 1.05, 0);
   const pos = new THREE.Vector3(Math.sin(-0.18) * dist + target.x, 1.9, Math.cos(-0.18) * dist);
   const sun = compare ? clamp01(f / (T * 0.7)) : 0;
   const p1 = pop(f, fps, 8), p2 = lin(f, 18, 34);
@@ -82,7 +82,7 @@ export const RhBottle3D: React.FC<{ title?: string; sub?: string; tag?: string; 
         </>
       ) : (
         <div style={{ position: "absolute", left: 140, top: 250, opacity: p1, translate: `${(1 - p1) * -60}px 0` }}>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 92, color: RH.ink, lineHeight: 1, maxWidth: 760 }}>{title}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 84, color: RH.ink, lineHeight: 1.02, maxWidth: 640 }}>{title}</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 60, color: RH.blueDeep, marginTop: 14, clipPath: `inset(0 ${100 - p2 * 100}% 0 0)` }}>{sub}</div>
           {tag ? <div style={{ display: "inline-block", marginTop: 30, rotate: "-4deg", background: RH.yellow, color: RH.ink, fontFamily: LABEL, fontWeight: 700, fontSize: 56, padding: "6px 26px", borderRadius: 10, opacity: lin(f, 30, 40), boxShadow: `0 12px 26px ${RH.shadow}` }}>{tag}</div> : null}
         </div>

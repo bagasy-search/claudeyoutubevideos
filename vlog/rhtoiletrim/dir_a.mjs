@@ -15,7 +15,7 @@ export const SHOTS = [
   S(1, "", "bi", "b_homeowner", { p: BI(`In the open doorway of ${BATH}, a middle-aged homeowner woman in a beige cardigan and jeans stands frozen with both hands covering her mouth in horror, eyes wide, looking down at the toilet; in the foreground the toilet seat is up and a yellow rubber glove rests on the rim.`), anim: "she presses both hands tighter over her mouth and leans back a little; nothing else moves" }),
   S(1, "and it's right back by Thursday", "bi", "b_thursday", { p: BI(`Close view of ${RIM} seen from a low angle with a flashlight: thin black streaks are starting again under three of the holes, the rest of the rim still white.`), anim: "the flashlight beam drifts slowly along the rim; nothing else moves" }),
   // ── la promesa
-  S(2, "", "av", ""),
+  S(2, "", "av", "", { ov: { c: "RhNameTag", props: { name: "Rhonda", sub: "34 years cleaning other people's houses" } } }),
   S(2, "other people's bathrooms", "rh", "r_caddy", { p: RHP(`She walks into a stranger's small blue-tiled bathroom carrying a gray cleaning caddy full of brushes and spray bottles, glancing at the toilet with a knowing look, a bath mat and a shampoo bottle on the tub edge.`) }),
   S(2, "in Ohio", "bi", "st_ohio", { q: "suburban street houses autumn", p: BI("A quiet suburban street in small-town Ohio in the fall: two-story wooden houses with porches, maple trees with orange leaves, a parked minivan, a mailbox at the curb.") }),
   S(2, "and the bleach never once", "bi", "st_bleach", { q: "pouring bleach toilet", p: BI("A gloved hand pouring clear liquid from a plain white plastic jug with a blank label into a white toilet bowl, a splash in the water.") }),

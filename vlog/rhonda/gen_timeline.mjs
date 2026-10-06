@@ -58,6 +58,10 @@ const S = (at, file, vol, dur = 45) => { if (fs.existsSync(PUB + "sfx/" + file))
 cues.forEach((c, i) => {
   const t = c.from / FPS, n = c.name || "";
   if (t < 60 && i > 0 && c.k !== "av" && c.k !== "vl") S(t - 0.1, i % 2 ? "whoosh.mp3" : "sfx_whoosh_soft.mp3", 0.2, 20);
+  if (c.k === "img" && i > 0) { // foley de producto según lo que se VE en la toma (debajo de la voz)
+    const fx = /flush/.test(n) ? ["rh_flush.mp3", 0.3, 150] : /scrub|brush|toothbrush|recapbrush/.test(n) ? ["rh_scrub.mp3", 0.28, 100] : /pour|tube|tankwater/.test(n) ? ["rh_pour.mp3", 0.28, 110] : /spray/.test(n) ? ["px_spray.mp3", 0.28, 60] : /fizz|foam|soak/.test(n) ? ["px_fizz.mp3", 0.25, 110] : null;
+    if (fx) S(t + 0.05, fx[0], fx[1], Math.min(fx[2], c.dur));
+  }
   if (c.k !== "comp") return;
   if (n === "RhChapter") { S(t, "smooth_airy_whoosh_m_#2-1780923688387.mp3", 0.28, 40); S(t + 0.3, c.props.alert ? "stinger_hit.mp3" : "impactful_clean_text_#3-1780924163909.mp3", 0.26, 50); }
   if (/3D$/.test(n)) S(t, "section_swell.mp3", 0.22, 90);
@@ -85,6 +89,14 @@ export const OV: any[] = ${JSON.stringify(ovs)};
 export const SFX: any[] = ${JSON.stringify(sfx)};
 export const FOLEY: any[] = ${JSON.stringify(foley)};
 `);
+// cues para la compuerta de repetición de agnes_qc (los vl partidos son UNA toma continua)
+const qc = [], vlSpan = {};
+for (const c of cues) {
+  if ((c.k === "vl" || c.k === "kf") && c.src) { const v = (vlSpan[c.src] ||= { key: c.src, src: c.src, a: c.from, b: c.from + c.dur }); v.b = c.from + c.dur; }
+  if (c.k === "img" && c.clip) qc.push({ key: c.clip, src: c.clip, start: c.from / FPS, dur: Math.min(c.dur, c.clipF) / FPS });
+}
+for (const v of Object.values(vlSpan)) qc.push({ key: v.key, src: v.src, start: v.a / FPS, dur: (v.b - v.a) / FPS });
+fs.writeFileSync(V3 + "cues.json", JSON.stringify(qc, null, 1));
 const refs = new Set([`${SLUG}.m4a`, `ref_${SLUG}.png`]);
 const walk = (o) => { if (typeof o === "string") { o = o.replace(/#\d+$/, ""); if (/^(img|broll|vid|sfx|avatar_clips)\/.+\.(jpg|png|mp4|m4a|mp3|wav)$/.test(o)) refs.add(o); } else if (o && typeof o === "object") Object.values(o).forEach(walk); };
 walk(cues); walk(ovs); walk(sfx); walk(foley);
