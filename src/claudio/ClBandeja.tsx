@@ -4,13 +4,13 @@
 //   ClTally       el pizarrón de Don Ramiro: 30 bandejas rescatadas, se tachan 2, quedan 28 con tilde
 //   ClReceipt     el ticket que se imprime: 40 bandejas/año × 10 años = 400 vs bicarbonato + frascos; total ahorrado subrayado
 import React from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { CL, LABEL, SERIF, HAND, rnd, clamp01, ease } from "./ClTheme";
-import { Bed, Card, Contact, RoomLight, lin, pop, useOut } from "./ClParts";
+import { Bed, Contact, RoomLight, lin, pop, useOut } from "./ClParts";
 
 // ───────────────── ClPasteCheck
 const Mound: React.FC<{ kind: "runny" | "ok" | "dry"; t0: number; x: number }> = ({ kind, t0, x }) => {
-  const f = useCurrentFrame(); const { durationInFrames: T } = useVideoConfig();
+  const f = useCurrentFrame();
   const k = lin(f, t0 - 8, t0), swipe = ease(clamp01((f - t0) / 16));
   const ok = kind === "ok";
   const label = kind === "runny" ? "chorrea" : kind === "dry" ? "se desarma" : "¡perfecta!";
