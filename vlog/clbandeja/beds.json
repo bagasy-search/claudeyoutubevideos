@@ -1,0 +1,252 @@
+[
+ {
+  "name": "bd_hotelkitchen0",
+  "q": "hotel kitchen",
+  "scene": "Ordinary real footage: hotel kitchen, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_commercialkitche1",
+  "q": "commercial kitchen",
+  "scene": "Ordinary real footage: commercial kitchen, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_chefcooking2",
+  "q": "chef cooking",
+  "scene": "Ordinary real footage: chef cooking, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bakingtray3",
+  "q": "baking tray",
+  "scene": "Ordinary real footage: baking tray, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_ovenbaking4",
+  "q": "oven baking",
+  "scene": "Ordinary real footage: oven baking, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchencounterst5",
+  "q": "kitchen counter stainless",
+  "scene": "Ordinary real footage: kitchen counter stainless, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_washingdishes6",
+  "q": "washing dishes",
+  "scene": "Ordinary real footage: washing dishes, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchensink7",
+  "q": "kitchen sink",
+  "scene": "Ordinary real footage: kitchen sink, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cleaningkitchen8",
+  "q": "cleaning kitchen",
+  "scene": "Ordinary real footage: cleaning kitchen, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_spongescrubbing9",
+  "q": "sponge scrubbing",
+  "scene": "Ordinary real footage: sponge scrubbing, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bakingcookies10",
+  "q": "baking cookies",
+  "scene": "Ordinary real footage: baking cookies, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchenatnight11",
+  "q": "kitchen at night",
+  "scene": "Ordinary real footage: kitchen at night, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hotelrestaurant12",
+  "q": "hotel restaurant",
+  "scene": "Ordinary real footage: hotel restaurant, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bakery13",
+  "q": "bakery",
+  "scene": "Ordinary real footage: bakery, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_doughrolling14",
+  "q": "dough rolling",
+  "scene": "Ordinary real footage: dough rolling, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchensteam15",
+  "q": "kitchen steam",
+  "scene": "Ordinary real footage: kitchen steam, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_ovendoor16",
+  "q": "oven door",
+  "scene": "Ordinary real footage: oven door, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchentowel17",
+  "q": "kitchen towel",
+  "scene": "Ordinary real footage: kitchen towel, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_potsandpans18",
+  "q": "pots and pans",
+  "scene": "Ordinary real footage: pots and pans, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cookingpotstove19",
+  "q": "cooking pot stove",
+  "scene": "Ordinary real footage: cooking pot stove, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_breakfastbuffet20",
+  "q": "breakfast buffet",
+  "scene": "Ordinary real footage: breakfast buffet, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hotelcorridor21",
+  "q": "hotel corridor",
+  "scene": "Ordinary real footage: hotel corridor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchenhood22",
+  "q": "kitchen hood",
+  "scene": "Ordinary real footage: kitchen hood, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cleaningoven23",
+  "q": "cleaning oven",
+  "scene": "Ordinary real footage: cleaning oven, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_rubbergloves24",
+  "q": "rubber gloves",
+  "scene": "Ordinary real footage: rubber gloves, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_dishsoap25",
+  "q": "dish soap",
+  "scene": "Ordinary real footage: dish soap, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hotwatertap26",
+  "q": "hot water tap",
+  "scene": "Ordinary real footage: hot water tap, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_parchmentpaper27",
+  "q": "parchment paper",
+  "scene": "Ordinary real footage: parchment paper, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchenshelf28",
+  "q": "kitchen shelf",
+  "scene": "Ordinary real footage: kitchen shelf, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cuttingboard29",
+  "q": "cutting board",
+  "scene": "Ordinary real footage: cutting board, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_pastrychef30",
+  "q": "pastry chef",
+  "scene": "Ordinary real footage: pastry chef, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_restaurantstaff31",
+  "q": "restaurant staff",
+  "scene": "Ordinary real footage: restaurant staff, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_coffeecup32",
+  "q": "coffee cup",
+  "scene": "Ordinary real footage: coffee cup, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hotelstaff33",
+  "q": "hotel staff",
+  "scene": "Ordinary real footage: hotel staff, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchenlights34",
+  "q": "kitchen lights",
+  "scene": "Ordinary real footage: kitchen lights, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cleaningsupplies35",
+  "q": "cleaning supplies",
+  "scene": "Ordinary real footage: cleaning supplies, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_stainlesssteel36",
+  "q": "stainless steel",
+  "scene": "Ordinary real footage: stainless steel, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_roastingvegetabl37",
+  "q": "roasting vegetables",
+  "scene": "Ordinary real footage: roasting vegetables, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_breadoven38",
+  "q": "bread oven",
+  "scene": "Ordinary real footage: bread oven, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchenwindow39",
+  "q": "kitchen window",
+  "scene": "Ordinary real footage: kitchen window, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_dishrack40",
+  "q": "dish rack",
+  "scene": "Ordinary real footage: dish rack, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchenfloor41",
+  "q": "kitchen floor",
+  "scene": "Ordinary real footage: kitchen floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bakingsoda42",
+  "q": "baking soda",
+  "scene": "Ordinary real footage: baking soda, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_measuringcups43",
+  "q": "measuring cups",
+  "scene": "Ordinary real footage: measuring cups, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchenutensils44",
+  "q": "kitchen utensils",
+  "scene": "Ordinary real footage: kitchen utensils, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_chefhands45",
+  "q": "chef hands",
+  "scene": "Ordinary real footage: chef hands, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_weddingcake46",
+  "q": "wedding cake",
+  "scene": "Ordinary real footage: wedding cake, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_banquethall47",
+  "q": "banquet hall",
+  "scene": "Ordinary real footage: banquet hall, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_grillbarbecue48",
+  "q": "grill barbecue",
+  "scene": "Ordinary real footage: grill barbecue, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_nightpatio49",
+  "q": "night patio",
+  "scene": "Ordinary real footage: night patio, real everyday look, no person looking at the camera."
+ }
+]

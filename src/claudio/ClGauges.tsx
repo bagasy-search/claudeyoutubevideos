@@ -43,7 +43,7 @@ export const ClMeasureCup: React.FC<{ fill?: number; label?: string; where?: str
   );
 };
 
-export const ClTimer30: React.FC<{ minutes?: number; label?: string; fast?: boolean; overnight?: boolean; bed?: string }> = ({ minutes = 30, label, fast, overnight, bed }) => {
+export const ClTimer30: React.FC<{ minutes?: number; label?: string; fast?: boolean; overnight?: boolean; text?: string; bed?: string }> = ({ minutes = 30, label, fast, overnight, text, bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 0);
   const end = Math.max(12, durationInFrames - (fast ? 4 : 18));
@@ -77,7 +77,7 @@ export const ClTimer30: React.FC<{ minutes?: number; label?: string; fast?: bool
         </svg>
       </div>
       <div style={{ position: "absolute", left: "50%", top: 760, translate: "-50% 0", opacity: out * lin(f, 6, 16), display: "flex", gap: 22, alignItems: "center" }}>
-        <div style={{ background: CL.yellow, color: CL.ink, fontFamily: SERIF, fontWeight: 900, fontSize: 84, padding: "4px 34px", borderRadius: 14, boxShadow: `0 14px 30px ${CL.shadow}` }}>{overnight ? "Toda la noche" : `${minutes} minutos`}</div>
+        <div style={{ background: CL.yellow, color: CL.ink, fontFamily: SERIF, fontWeight: 900, fontSize: 84, padding: "4px 34px", borderRadius: 14, boxShadow: `0 14px 30px ${CL.shadow}` }}>{text || (overnight ? "Toda la noche" : `${minutes} minutos`)}</div>
         {label && !overnight ? <div style={{ background: CL.white, color: CL.navy, fontFamily: HAND, fontWeight: 700, fontSize: 60, padding: "4px 28px", borderRadius: 14, boxShadow: `0 14px 30px ${CL.shadow}` }}>{label}</div> : null}
       </div>
     </AbsoluteFill>

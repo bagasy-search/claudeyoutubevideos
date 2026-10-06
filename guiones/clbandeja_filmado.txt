@@ -1,0 +1,66 @@
+[HOOK|costra] ¿Ve esta costra marrón? No es mugre. Es aceite que se volvió barniz.
+[HOOK|tirar] En el hotel tirábamos bandejas así. Cuarenta por año, al contenedor.
+[HOOK|promesa] Hoy se la saco sin rasquetear. Media taza de bicarbonato, un chorro del frasco marrón, dos horas, y una esponja que no raya. Mire esta mitad. Y mire esta otra.
+[HOOK|hotel] Treinta años fui conserje en un hotel. Y el que me enseñó esto no fue un conserje. Fue Don Ramiro, el cocinero de la noche, que no soportaba ver una bandeja en la basura.
+[HOOK|rafaga] Mire. Bicarbonato, una capa gruesa. El agua oxigenada, despacito por encima, hasta hacer pasta. Otro poco de bicarbonato arriba. Dos horas. Esponja en circulitos...
+[HOOK|grito] ¡y mire cómo se levanta! ¡Como nueva!
+[HOOK|loops] Pero hay tres cosas que tiene que saber. Por qué el detergente nunca va a poder con esa costra. El error que le arruina una bandeja antiadherente para siempre. Y lo que hizo Don Ramiro con las bandejas que el hotel tiraba, que todavía hoy están en esa cocina. Primero, el arreglo entero.
+[FIX|cadena] Si vio mi video del sarro del inodoro, esta pasta ya la conoce. Bicarbonato y agua oxigenada. Pero acá va al revés: mucho más bicarbonato, mucho más gruesa, y mucho más tiempo. Porque esta costra es más dura que el sarro.
+[FIX|lista] Lo que necesita: bicarbonato, el frasco marrón de agua oxigenada al tres por ciento, una esponja que no raye, y guantes. Nada más. Nada de químicos de horno.
+[FIX|etiqueta] Y ojo con la etiqueta del agua oxigenada. En muchos países dice tres por ciento, y en otros dice diez volúmenes. Es la misma, la de la farmacia. La de veinte, treinta o cuarenta volúmenes es de peluquería, es mucho más fuerte, y no la quiere cerca de su cocina.
+[FIX|seca] Primer paso: la bandeja fría y seca. Nunca caliente, nunca mojada. Si la bandeja tiene grasa suelta arriba, pásele un papel de cocina primero.
+[FIX|polvo] Segundo: espolvoree una capa gruesa de bicarbonato sobre toda la costra. Gruesa de verdad, que no se vea el metal. Para una bandeja común, más o menos media taza.
+[FIX|liquido] Tercero: eche el agua oxigenada despacito por encima, en chorritos, hasta que el bicarbonato se moje y quede una pasta húmeda. Más o menos un cuarto de taza. No la inunde. Tiene que quedar como arena mojada.
+[FIX|punto] ¿Cómo sabe que la pasta está bien? Pase el dedo del guante. Si deja un surco que no se cierra, está perfecta. Si chorrea, le falta bicarbonato. Si se desarma como polvo, le falta un chorrito.
+[FIX|tapa] Cuarto: espolvoree otro poco de bicarbonato seco por arriba. Eso hace una costrita que no deja que la pasta se seque.
+[FIX|espera] Quinto: déjela dos horas. Si la costra es de años, toda la noche. Y no la toque. Va a ver que la pasta se pone marrón. Ése es el aceite viejo que se está soltando.
+[FIX|esponja] Sexto: con la esponja que no raya, un poquito mojada, frote en circulitos. Sin fuerza. La costra empieza a levantarse en escamas, como pintura vieja.
+[FIX|lavar] Y séptimo: enjuague, lave con detergente común, y séquela bien.
+[FIX|resumen] Repaso: bandeja fría y seca, capa gruesa de bicarbonato, agua oxigenada hasta hacer pasta, más bicarbonato arriba, dos horas o la noche, circulitos sin fuerza, lavar y secar.
+[CTA1|libro] Éste es el arreglo número cinco de mi libro, El Frasco Marrón de Claudio, en la página trece. Y esa página entera, con las cantidades y lo que hace con la costra de diez años, se la regalo. Apunte el celular a este código, o toque el link de la descripción, y la tiene gratis.
+[POR|intro] Ahora, ¿por qué el detergente nunca puede? Porque esa costra no es grasa. Era grasa. Ya no.
+[POR|barniz] Cada vez que usted hornea, una capita finita de aceite queda en la bandeja. Con el calor del horno, ese aceite se cocina y se endurece. Se vuelve como un barniz, como el de un mueble. Y la próxima vez, otra capa encima. Después de cien horneadas, tiene cien capas de barniz pegadas al metal.
+[POR|detergente] El detergente es bueno para la grasa fresca, la blanda. Pero esto ya es plástico, prácticamente. El detergente le pasa por encima, como el agua por un paraguas.
+[POR|pasta] La pasta hace otra cosa. El bicarbonato ablanda ese barniz, de a poquito, y el agua oxigenada hace burbujitas que se meten entre la costra y el metal. Por eso necesita tiempo. No es la fuerza: es la espera.
+[POR|negro] Y una aclaración, porque me lo preguntan siempre. Hay gente que tiene la bandeja negra, pareja, lisa, y la cuida así a propósito. Ésa es otra cosa. Si está lisa y no se pega nada, déjela. Lo que hay que sacar es la costra marrón, pegajosa, con relieve, la que huele a quemado cuando calienta.
+[POR|humo] ¿Y sabe por qué su horno larga humo y olor a quemado cuando lo prende, aunque esté limpio? Muchas veces es la costra de la bandeja. Cada vez que calienta, las capas de arriba se queman un poquito más. Saque la costra, y el humo se va con ella.
+[ANTI|error] Ahora el error que le prometí. El que arruina una bandeja antiadherente para siempre: la lana de acero, o la esponja verde de un lado.
+[ANTI|rayas] La bandeja antiadherente tiene una capita que es la que hace que no se pegue. La lana de acero se la raya. Y en cada raya, la comida se pega más, y la costra vuelve más rápido, y usted frota más fuerte. Y así, en un año, la bandeja está muerta.
+[ANTI|regla] Así que en las antiadherentes: sólo la esponja suave, la pasta un rato más corto, una hora, y nada de remojos de toda la noche. Y si la capita ya está pelada y se ven manchas de metal, esa bandeja ya cumplió.
+[ANTI|aluminio] ¿Y el aluminio común, el de las bandejas de panadería? Ahí no hay problema. La pasta y la espera, y si la costra es dura, toda la noche. Puede quedar un poquito más opaca. No le hace nada.
+[TIRAR|cuando] Y le digo cuándo sí tirarla, para ser honesto. Si está torcida y baila sobre la mesada, cocina desparejo. Si tiene óxido que atraviesa el metal. O si es antiadherente y la capita está pelada en manchas. Ahí sí, al reciclaje. Todo lo demás, se salva.
+[MITAD|chiste] Y le cuento algo que me hizo reír. En los comentarios de otro canal, alguien dijo que limpió su bandeja con un truco, y le quedó la mitad limpia. Y preguntaba qué hacía con la otra mitad. Bueno: la otra mitad lleva otra vuelta de pasta. La costra vieja casi nunca sale de una sola vez.
+[CTA2|libro] El arreglo completo de las bandejas, con lo que hace con las antiadherentes y con la costra de diez años, está en la página trece de mi libro, y esa página se la regalo. El código está acá, o el link en la descripción.
+[RAMIRO|historia] Y ahora lo de Don Ramiro, lo que le prometí. Don Ramiro cocinaba de noche, cuando el hotel dormía. El desayuno de doscientas personas salía de sus manos. Y cada mes, veía cómo los de la mañana tiraban bandejas marrones al contenedor del patio.
+[RAMIRO|contenedor] Una noche, me pidió que lo ayudara. Salimos al patio a las dos de la mañana, con una linterna, y sacamos del contenedor treinta bandejas. Yo pensé que estaba loco. Me miró y me dijo: Claudio, una bandeja gruesa cocina mejor que una nueva y finita. Las nuevas se tuercen en el horno.
+[RAMIRO|noche] Esa noche llenamos la mesa de acero de la cocina con bandejas, todas con la pasta encima, en fila, como soldados. Y nos fuimos a tomar un café.
+[RAMIRO|manana] A la mañana, Don Ramiro agarró la esponja y empezó. La costra salía en escamas, como cáscara de huevo. Algunas necesitaron otra noche. Pero de las treinta, se salvaron veintiocho.
+[RAMIRO|final] Esas bandejas siguen en esa cocina. Gruesas, pesadas, con treinta años encima. Y el hotel nunca más compró bandejas por costra. Lo que sí compró, por consejo de Don Ramiro, fue papel para hornear.
+[RAMIRO|cuentas] Y hagamos la cuenta que hizo el gerente después. Cuarenta bandejas por año, a precio de bandeja de cocina profesional. En diez años, cuatrocientas bandejas. Contra unas cajas de bicarbonato y unos frascos marrones. Ese año, el gerente nos invitó un asado a Don Ramiro y a mí.
+[TORTA|historia] Y le cuento por qué Don Ramiro era tan fanático. Un sábado, en una boda en el salón del hotel, la torta de los novios se pegó a la bandeja. La base se quedó pegada a la costra vieja, y se partió en dos delante de todos. Don Ramiro no durmió esa noche. Al otro día empezó con las bandejas. Nunca más se le pegó nada.
+[PAPEL|prevencion] Y ése es el secreto para que no vuelva: el papel para hornear. Forre la bandeja, y la costra no tiene dónde formarse. Y lávela el mismo día, con agua caliente y detergente, mientras la grasa todavía es blanda.
+[OTROS|intro] Y la misma pasta sirve para otras tres cosas de la cocina que casi nadie limpia.
+[OTROS|rejilla] Uno: la rejilla del horno. Ésa es grande, no entra en la pileta. Póngala adentro de una bolsa de residuos grande, con la pasta encima, cierre la bolsa, y déjela toda la noche en el patio o en la bañera. A la mañana, esponja.
+[OTROS|vidrio] Dos: el vidrio de la puerta del horno, por dentro, ese que está marrón y no deja ver la comida. Pasta fina, una hora, y un trapo húmedo. Nunca un cuchillo ni una espátula de metal en el vidrio.
+[OTROS|ollas] Y tres: el fondo de afuera de las ollas y sartenes, esa costra negra de la hornalla. Misma pasta, dos horas, esponja. En las ollas de acero inoxidable, perfecto.
+[OTROS|horno] Y el horno por dentro, el piso y las paredes. La misma pasta, con el horno apagado y frío, una capa sobre lo marrón, toda la noche con la puerta cerrada. A la mañana, esponja húmeda y un trapo. Pero nunca pasta sobre la resistencia, ni en los agujeritos del gas, ni sobre el ventilador de atrás. Ahí, sólo un trapo húmedo.
+[OTROS|micro] Y de regalo, el microondas, que es el más rápido de todos. Un bol con agua y el jugo de medio limón, tres minutos a máxima potencia, y no abra la puerta por cinco minutos más. El vapor ablanda todo, y sale con un trapo. Sin frotar.
+[OTROS|campana] Y si me permite uno más: el filtro de metal de la campana de la cocina. Es como el filtro de la lavadora del video anterior, el que nadie limpia. Ése está lleno de la misma grasa cocinada. Sáquelo, agua bien caliente con detergente en la pileta, quince minutos, y la pasta en los rincones. Cuando vuelve a brillar, la campana vuelve a tirar.
+[ERRORES|intro] Ahora, los errores que vi en la cocina del hotel. Cada uno le complica la vida.
+[ERRORES|caliente] Uno: echar agua fría en una bandeja caliente para que se ablande. La bandeja se tuerce, y ya no apoya derecha nunca más.
+[ERRORES|limpiahornos] Dos: el limpiador de horno fuerte, en aerosol, en las bandejas de aluminio. Muchos son tan fuertes que manchan el aluminio de blanco para siempre, y le llenan la cocina de olor. La pasta tarda más, pero no le arruina nada.
+[ERRORES|lavavajillas] Tres: meterla al lavavajillas con la costra. No la saca, y el aluminio sale opaco y manchado.
+[ERRORES|mezcla] Y cuatro, que lo digo en todos los videos: el agua oxigenada nunca con vinagre en la misma botella, y nunca cloro con vinagre. En la cocina también.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|toxico] ¿Es seguro para donde se cocina? Sí. Bicarbonato y agua oxigenada. Después de lavar con detergente y enjuagar, no queda nada.
+[QA|cuanto] ¿Cuánta pasta para una bandeja grande de horno? Una taza de bicarbonato y media taza de agua oxigenada. Siempre el doble de polvo que de líquido.
+[QA|vidrio] ¿Sirve para las fuentes de vidrio? Sí, y ahí funciona muy bien. Sin esponja de acero, que raya el vidrio.
+[QA|hierro] ¿Y la sartén de hierro? No. El hierro se cuida distinto, con aceite, y la pasta le saca la capa protectora.
+[QA|sin] ¿Y si no tengo agua oxigenada? El bicarbonato con un poco de agua también sirve, pero tarda más, y la costra vieja casi siempre necesita la noche entera.
+[QA|pomez] ¿Y la piedra pómez del video del sarro? En las bandejas, no. Raya el metal y le saca la capa antiadherente. La piedra es sólo para la porcelana del inodoro.
+[RESET|habito] Así que, para que no vuelva: papel para hornear siempre, lavar el mismo día, y una vuelta de pasta cada tanto, antes de que la costra tenga cien capas.
+[RECAP|todo] Todo en treinta segundos. Bandeja fría y seca. Media taza de bicarbonato, capa gruesa. Un cuarto de taza de agua oxigenada, despacito, hasta pasta. Más bicarbonato arriba. Dos horas, o toda la noche. Esponja suave en circulitos. Lavar y secar. En las antiadherentes, nada de acero. Y de ahora en más, papel para hornear.
+[CTA3|libro] La página trece entera es suya, gratis. El código está acá, y el link en la descripción. Y si quiere los noventa y cuatro arreglos de la casa, el libro está en esa misma página.
+[NEXT|silicona] Y en el próximo video vuelvo al baño, a cumplir una promesa. En el video del moho le dije que si la silicona de la ducha sigue negra después de dos vueltas, el moho está debajo, y que había un truco de una noche entera. El próximo es ése. Antes de arrancar la silicona con el cúter, mírelo.
+[CLOSE|pregunta] Y ahora cuénteme usted. ¿Cuántos años tiene la bandeja más vieja de su cocina? Escríbamelo en los comentarios. Leo todos.
+[CLOSE|chau] No tire esa bandeja. Nos vemos.

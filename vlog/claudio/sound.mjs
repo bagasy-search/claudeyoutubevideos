@@ -96,6 +96,16 @@ function compFx(n, c, durS) {
   if (n === "ClFlashlight") { add("foley/light_pull_switch.flac", 0.42, 0.15, 0.8); add("design/whoosh_slow_sweep.flac", 0.24, 0.5, durS - 0.8); }
   if (n === "ClWallLeak") { add("foley/drip_sink.flac", 0.36, 0.3, durS - 0.4); add("design/impact_heartbeat.flac", 0.36, durS * 0.6, 2); }
   if (n === "ClHygrometer") { add("design/tick_clock_close.flac", 0.24, 0.2, durS * 0.5); add("foley/cabinet_door_slide.flac", 0.3, durS * 0.55, 1.2); }
+  if (n === "ClTray3D") {
+    if (P.mode === "layers") { const k = 7; for (let i = 0; i < k; i++) add("design/tick_single.flac", 0.26, 0.4 + i * (durS * 0.75) / k, 0.5); add("foley/ding_oven.flac".replace("foley", "design"), 0.32, durS * 0.8, 1.4); }
+    if (P.mode === "detergent") { add("foley/water_sink_run.flac", 0.3, 0.2, durS - 0.4); add("foley/drip_sink.flac", 0.3, durS * 0.5, 1.5); }
+    if (P.mode === "paste") { add("foley/powder_pour.flac", 0.36, 0.15, 1.4); add("foley/fizz_gentle.flac", 0.38, durS * 0.35, durS * 0.55); }
+    if (P.mode === "flake") { add("foley/scrub_pad.flac", 0.4, 0.2, durS * 0.6); add("foley/paper_crinkle.flac", 0.34, durS * 0.35, durS * 0.5); }
+  }
+  if (n === "ClPasteCheck") { add("foley/scrub_pad.flac", 0.3, 0.35, 0.8); add("foley/scrub_pad.flac", 0.3, 1.0, 0.8); add("design/impact_drum_subtle.flac", 0.34, 1.6, 1.2); add("foley/scrub_pad.flac", 0.3, 1.7, 0.8); }
+  if (n === "ClCoating") { add("foley/sand_paper_b.flac", 0.4, 0.25, Math.min(3, durS * 0.5)); add("foley/scrub_toothbrush.flac", 0.32, 0.6, Math.min(3, durS * 0.5)); }
+  if (n === "ClTally") { add("design/pencil_strokes.flac", 0.34, 0.3, durS * 0.45); add("design/stamp_rubber.flac", 0.38, durS * 0.7, 0.8); }
+  if (n === "ClReceipt") { add("design/paper_slide.flac", 0.34, 0.2, Math.min(3, durS * 0.5)); add("design/ding_oven.flac", 0.34, durS * 0.65, 1.4); }
   if (n === "ClTimer30") { add("design/tick_clock_close.flac", 0.26, 0.1, Math.max(0.6, durS - 0.9)); add(P.overnight ? "design/ding_oven.flac" : "design/ding_oven.flac", 0.4, Math.max(0.5, durS - (P.fast ? 0.2 : 0.65)), 1.6); }
   if (n === "ClNeverMix") { if (P.chart) add("design/page_turn_big.flac", 0.34, 0.1, 1); else if (P.soft) { add("design/pop_soap_bubble.flac", 0.34, durS * 0.4, 0.7); add("design/stamp_rubber.flac", 0.38, durS * 0.42, 0.8); } else { add("design/alarm_warning_buzzer.flac", P.short ? 0.12 : 0.18, durS * 0.38, 0.9); add("design/stamp_es.flac", 0.45, durS * 0.42, 1); } }
   if (n === "ClBookPage") { add("design/page_turn_big.flac", 0.34, 0.05, 1); add("design/stamp_rubber.flac", 0.42, 0.95, 0.9); }
