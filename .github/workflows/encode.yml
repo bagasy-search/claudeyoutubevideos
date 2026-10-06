@@ -1,0 +1,58 @@
+# Codificación del FINAL en paralelo (rama encode-<slug>): cada runner codifica un tramo de planos en 2K x264 slow CRF16,
+# el job "unir" concatena sin recodificar, suma la mezcla y sube <slug>.mp4 al release <slug>.
+name: encode-final
+on:
+  push:
+    branches: ['encode-*']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: echo "matrix=$(python3 -c "import json;print(json.dumps([c['k'] for c in json.load(open('chunks.json'))]))")" >> "$GITHUB_OUTPUT"
+  tramo:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 64
+      matrix:
+        k: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: bajar planos
+        run: |
+          SLUG="${GITHUB_REF_NAME#encode-}"; echo "SLUG=$SLUG" >> "$GITHUB_ENV"
+          python3 -c "import json;c=[x for x in json.load(open('chunks.json')) if x['k']==${{ matrix.k }}][0];print('\n'.join(c['ids']))" > ids.txt
+          mkdir -p p; cat ids.txt | xargs -P 8 -I{} sh -c 'for n in 1 2 3 4; do curl -sfL -o p/{}.mp4 "https://github.com/${{ github.repository }}/releases/download/$SLUG-farm-out/{}.mp4" && break; sleep $((n*5)); done'
+          : > list.txt; while read i; do test -s "p/$i.mp4" || { echo "falta $i"; exit 1; }; echo "file 'p/$i.mp4'" >> list.txt; done < ids.txt
+      - name: codificar tramo
+        run: |
+          MAXR=$(python3 -c "import json;print(json.load(open('chunks.json'))[0]['maxr'])")
+          ffmpeg -v error -y -f concat -safe 0 -i list.txt -an -vf "fps=24,scale=2560:1440:flags=lanczos,format=yuv420p" -r 24 \
+            -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
+            -c:v libx264 -preset slow -crf 16 -maxrate ${MAXR}M -bufsize $((MAXR*16/10))M -g 48 -threads 0 tramo_${{ matrix.k }}.mp4
+          for n in 1 2 3 4 5; do gh release upload "$SLUG-farm-out" tramo_${{ matrix.k }}.mp4 -R ${{ github.repository }} --clobber && break; sleep $((n*7)); done
+  unir:
+    needs: tramo
+    runs-on: ubuntu-latest
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: unir + mezcla + subir
+        run: |
+          SLUG="${GITHUB_REF_NAME#encode-}"
+          N=$(python3 -c "import json;print(len(json.load(open('chunks.json'))))")
+          : > list.txt
+          for k in $(seq 0 $((N-1))); do curl -sfL -o tramo_$k.mp4 "https://github.com/${{ github.repository }}/releases/download/$SLUG-farm-out/tramo_$k.mp4"; echo "file 'tramo_$k.mp4'" >> list.txt; done
+          curl -sfL -o mezcla.wav "https://github.com/${{ github.repository }}/releases/download/$SLUG-farm-assets/mezcla.wav"
+          ffmpeg -v error -y -f concat -safe 0 -i list.txt -i mezcla.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -ar 48000 -shortest -movflags +faststart $SLUG.mp4
+          ls -la $SLUG.mp4; ffprobe -v error -show_entries format=duration -of csv=p=0 $SLUG.mp4
+          gh release view "$SLUG" -R ${{ github.repository }} >/dev/null 2>&1 || gh release create "$SLUG" -R ${{ github.repository }} --title "$SLUG" --notes "$SLUG"
+          for n in 1 2 3 4 5; do gh release upload "$SLUG" $SLUG.mp4 -R ${{ github.repository }} --clobber && break; sleep $((n*10)); done
