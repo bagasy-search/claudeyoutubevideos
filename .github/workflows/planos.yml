@@ -1,0 +1,55 @@
+# Render de planos en PYTHON (numpy + OpenCV + ffmpeg), un runner por plano. Se dispara con push a una rama planos-<slug>.
+# Assets: release <slug>-farm-assets con <slug>_assets.tar (carpeta vid/: img con profundidades PRECALCULADAS, clips, archivo, fonts, miniatura).
+# Salida: release <slug>-farm-out. Los scripts del commit pisan a los del tar.
+name: planos-py
+on:
+  push:
+    branches: ['planos-*']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: echo "matrix=$(python3 -c "import json;print(json.dumps(json.load(open('jobs.json'))))")" >> "$GITHUB_OUTPUT"
+  render:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 200
+      matrix:
+        job: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env:
+      TGP_M: ${{ github.workspace }}/pkg/vid
+      TGP_CINE: ${{ github.workspace }}/pkg/vid
+      PYTHONHASHSEED: "0"
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: deps
+        run: |
+          pip install -q --no-cache-dir numpy opencv-python-headless pillow
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - uses: actions/checkout@v4
+      - name: assets
+        run: |
+          SLUG="${GITHUB_REF_NAME#planos-}"; SLUG="${SLUG%%--*}"; echo "SLUG=$SLUG" >> "$GITHUB_ENV"
+          mkdir -p pkg
+          for n in 1 2 3 4 5; do gh release download "$SLUG-farm-assets" -R ${{ github.repository }} -p "${SLUG}_assets.tar" -D . --clobber && break; sleep $((n*10)); done
+          tar -xf "${SLUG}_assets.tar" -C pkg
+          cp plano.py cine.py comp.py comp2.py comp3.py comp4.py comp5.py comp6.py graf.py shots.json planos.json pkg/vid/
+      - name: render ${{ matrix.job.id }}
+        working-directory: pkg/vid
+        run: |
+          mkdir -p planos
+          python plano.py "${{ matrix.job.id }}" "${{ matrix.job.dur }}"
+          test -s "planos/${{ matrix.job.id }}.mp4"
+      - name: subir
+        run: |
+          for n in 1 2 3 4 5; do gh release upload "$SLUG-farm-out" "pkg/vid/planos/${{ matrix.job.id }}.mp4" -R ${{ github.repository }} --clobber && break; sleep $((n*7)); done
