@@ -14,7 +14,7 @@ import unicodedata
 for _s in (sys.stdout, sys.stderr):
     try: _s.reconfigure(encoding="utf-8", errors="replace")
     except Exception: pass
-ap = argparse.ArgumentParser(); ap.add_argument("--only", default=""); ap.add_argument("--voice", default="claudio_mendoza_s4"); ap.add_argument("--speed", type=float, default=1.0); ap.add_argument("--lang", default="es"); ap.add_argument("--cps", type=float, default=14.0)
+ap = argparse.ArgumentParser(); ap.add_argument("--only", default=""); ap.add_argument("--voice", default="claudio_definitiva"); ap.add_argument("--speed", type=float, default=1.0); ap.add_argument("--lang", default="es"); ap.add_argument("--cps", type=float, default=14.0)
 ap.add_argument("--block-chars", type=int, default=900); ap.add_argument("--temperature", type=float, default=0.72); ap.add_argument("--top-p", type=float, default=0.70)
 ap.add_argument("--max-try", type=int, default=5); a = ap.parse_args()
 CPS = a.cps
