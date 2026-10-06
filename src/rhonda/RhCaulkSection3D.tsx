@@ -25,7 +25,7 @@ const Cam: React.FC<{ pos: any; target: any }> = ({ pos, target }) => {
   const { camera } = useThree(); camera.position.copy(pos); camera.lookAt(target); camera.updateProjectionMatrix(); return null;
 };
 // geometría del cordón: cuarto de cilindro en el rincón (eje X), centrado en (0,0,0); la pared en z<0, la bañera en y<0
-function beadGeo(r: number) { return new THREE.CylinderGeometry(r, r, L, 32, 1, false, Math.PI, Math.PI / 2); }
+function beadGeo(r: number) { return new THREE.CylinderGeometry(r, r, L, 40, 1, false); }  // cilindro entero en el rincón: pared y bañera tapan 3/4
 const surf = (x: number, a: number, r = BR) => new THREE.Vector3(x, Math.sin(a) * r * 1.0, Math.cos(a) * r); // a∈[0,π/2]: punto sobre el cordón
 
 export const RhCaulkSection3D: React.FC<{ mode?: Mode; labels?: Labels }> = ({ mode = "roots", labels = {} }) => {
@@ -33,14 +33,14 @@ export const RhCaulkSection3D: React.FC<{ mode?: Mode; labels?: Labels }> = ({ m
   const { width, height, durationInFrames: T } = useVideoConfig();
   const t0 = 8, t1 = Math.max(t0 + 10, T * 0.78), u = clamp01((f - t0) / (t1 - t0)), ue = ease(u);
   const a = interpolate(f, [0, T], [-0.5, 0.15], { easing: Easing.inOut(Easing.cubic) });
-  const dist = interpolate(f, [0, T], [4.6, 3.8], { easing: Easing.out(Easing.cubic) });
+  const dist = interpolate(f, [0, T], [3.6, 2.9], { easing: Easing.out(Easing.cubic) });
   const target = new THREE.Vector3(0, 0.15, 0.25);
-  const camPos = new THREE.Vector3(Math.sin(a) * dist, 1.5, 1.2 + Math.cos(a) * dist);
+  const camPos = new THREE.Vector3(Math.sin(a) * dist * 0.8, 1.15, 0.3 + Math.cos(a) * dist);
   const mats = useMemo(() => ({
     tile: new THREE.MeshStandardMaterial({ color: "#FFFFFF", roughness: 0.08, emissive: "#F2F0EB", emissiveIntensity: 0.2 }),
     grout: new THREE.MeshStandardMaterial({ color: "#CFCAC0", roughness: 1 }),
-    tub: new THREE.MeshStandardMaterial({ color: "#FAFAF8", roughness: 0.12, emissive: "#EFEFEA", emissiveIntensity: 0.15 }),
-    bead: new THREE.MeshStandardMaterial({ color: "#F4F4F0", roughness: 0.25, transparent: mode === "under", opacity: mode === "under" ? 0.62 : 1 }),
+    tub: new THREE.MeshStandardMaterial({ color: "#F2EEE6", roughness: 0.2 }),
+    bead: new THREE.MeshStandardMaterial({ color: "#EEF3F7", roughness: 0.18, emissive: "#DCE6EE", emissiveIntensity: 0.15, transparent: mode === "under", opacity: mode === "under" ? 0.62 : 1 }),
     newBead: new THREE.MeshStandardMaterial({ color: "#FFFFFF", roughness: 0.15 }),
     dot: new THREE.MeshStandardMaterial({ color: "#14120C", roughness: 0.7 }),
     root: new THREE.MeshStandardMaterial({ color: "#1A1710", roughness: 0.6 }),
