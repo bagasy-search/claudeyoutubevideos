@@ -24,14 +24,14 @@ export const ClCaulk3D: React.FC<{ mode?: Mode; labels?: { a?: string; b?: strin
   const { width, height, durationInFrames: T } = useVideoConfig();
   const u = clamp01((f - 6) / Math.max(1, T * 0.8 - 6));
   const a = interpolate(f, [0, T], [0.55, 0.25], { easing: Easing.inOut(Easing.cubic) });
-  const dist = interpolate(f, [0, T], [4.6, 3.9]);
-  const target = new THREE.Vector3(0.2, 0.2, 0);
-  const camPos = new THREE.Vector3(target.x + Math.sin(a) * dist, 1.7, target.z + Math.cos(a) * dist);
+  const dist = interpolate(f, [0, T], [3.2, 2.6]);
+  const target = new THREE.Vector3(0.1, 0.18, 0.12);
+  const camPos = new THREE.Vector3(target.x + Math.sin(a) * dist, 0.95, target.z + Math.cos(a) * dist);
   // hilitos de moho: dentro del cordón (inside/spray/strips) o en la unión (under/seal)
   const hyph = useMemo(() => Array.from({ length: 34 }, (_, i) => {
     const x = -LEN / 2 + 0.15 + rnd(i) * (LEN - 0.3), r0 = 0.05 + rnd(i + 3) * 0.2, th = Math.PI * (0.08 + 0.3 * rnd(i + 5));
     const P = Array.from({ length: 5 }, (_, k) => { const t = k / 4, rr = r0 * (1 - 0.5 * t); return new THREE.Vector3(x + 0.05 * Math.sin(t * 6 + i), rr * Math.sin(th + 0.2 * t), rr * Math.cos(th + 0.2 * t)); });
-    return new THREE.TubeGeometry(new THREE.CatmullRomCurve3(P), 10, 0.012, 5, false);
+    return new THREE.TubeGeometry(new THREE.CatmullRomCurve3(P), 10, 0.018, 5, false);
   }), []);
   const deep = mode === "under" || mode === "seal";
   const nightK = mode === "strips" || mode === "under" ? clamp01((u - 0.2) / 0.65) : 0;
@@ -43,7 +43,7 @@ export const ClCaulk3D: React.FC<{ mode?: Mode; labels?: { a?: string; b?: strin
     tile: new THREE.MeshStandardMaterial({ color: "#EFE8DC", roughness: 0.15 }),
     grout: new THREE.MeshStandardMaterial({ color: "#CFC6B6", roughness: 0.9 }),
     tub: new THREE.MeshStandardMaterial({ color: "#FAFAF8", roughness: 0.12 }),
-    caulk: new THREE.MeshStandardMaterial({ color: "#F3F3EE", roughness: 0.35, transparent: true, opacity: 0.55, depthWrite: false, side: THREE.DoubleSide }),
+    caulk: new THREE.MeshStandardMaterial({ color: "#E9EEF2", roughness: 0.25, transparent: true, opacity: 0.5, depthWrite: false, side: THREE.DoubleSide }),
     hypha: new THREE.MeshStandardMaterial({ color: "#16170F", roughness: 0.5, transparent: true, opacity: 1 }),
     wet: new THREE.MeshStandardMaterial({ color: "#8EC3E6", transparent: true, opacity: 0.35, depthWrite: false, side: THREE.DoubleSide }),
     strip: new THREE.MeshStandardMaterial({ color: "#F4EFE2", roughness: 0.95, transparent: true, opacity: 0.9, side: THREE.DoubleSide }),
