@@ -17,7 +17,7 @@ export const SHOTS = [
   S(0, "", "bi", "b_caulkbefore", { p: BI(`Straight-on close view of ${CAULK}, ${MOLDY}, the tile above clean.`), skip: true }),
   S(0, "", "bi", "b_caulkafter", { p: BI(`Straight-on close view of exactly the same ${CAULK}, now clean and bright white, no black at all, nothing replaced.`), skip: true }),
   // ── "I know"
-  S(1, "", "rh", "r_sympathy", { p: RHP(`She kneels beside a white bathtub with black-spotted caulk, holding a scrub brush, giving the camera a sympathetic, knowing look.`) }),
+  S(1, "", "rh", "r_sympathy", { ov: { c: "RhPromise", dur: 9.0, props: { img: I("b_caulkafter"), items: ["Strips + 1 brown bottle", "Plastic wrap on top", "8 hours of sleep", "White again. No knife."] } }, p: RHP(`She kneels beside a white bathtub with black-spotted caulk, holding a scrub brush, giving the camera a sympathetic, knowing look.`) }),
   S(1, "It's black, it's ugly", "kf", "k_blackcaulk", { p: BI(`Extreme close view of ${CAULK} with ${MOLDY}, a yellow-gloved fingertip pointing at the worst spot.`), d1: "the gloved fingertip points at the black caulk", d2: "the finger runs along the black streaks", sound: "a faint drip in a quiet bathroom" }),
   S(1, "and you've scrubbed it", "bi", "b_scrubtired", { q: "scrubbing bathtub", p: BI(`A tired woman in a gray sweatshirt kneeling at a white bathtub scrubbing the black caulk line with a brush, her other hand on her lower back.`), anim: "she scrubs and then stops to rub her arm; nothing else moves" }),
   S(1, "So you figure", "av", ""),
