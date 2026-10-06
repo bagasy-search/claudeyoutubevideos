@@ -1,0 +1,52 @@
+{
+  "slug": "fboxidoropa",
+  "canal": "freebuilder",
+  "modo": "avatar",
+  "idioma": "es",
+  "voz": {
+    "id": "freebuilder",
+    "blockChars": 1200
+  },
+  "avatar": {
+    "face": "public/ref/freebuilder_full.png",
+    "ref": "public/ref/freebuilder_face128.png"
+  },
+  "guion": "GUION_fboxidoropa.txt",
+  "titulo": "Cómo Sacar las Manchas de ÓXIDO de la ROPA (Sin Lavandina)",
+  "ctas": [
+    {
+      "ancla": "Y aquí va algo que aprendí pagando de más",
+      "head": "Cuánto rinde cada producto",
+      "sub": "Escanea el código",
+      "qr": "qr/fboxidoropa.png",
+      "durS": 9
+    },
+    {
+      "ancla": "Ese error me costó una camiseta",
+      "head": "Qué no conviene tocar",
+      "sub": "Escanea el código",
+      "qr": "qr/fboxidoropa.png",
+      "durS": 9
+    }
+  ],
+  "cta": {
+    "ancla": "Si esto te sirvió",
+    "head": "Suscríbete al canal",
+    "sub": "La colección, en el enlace de abajo",
+    "qr": "qr/fboxidoropa.png"
+  },
+  "secciones": [
+    ["GANCHO", "Estas dos camisetas tenían la misma mancha"],
+    ["QUEES", "Empecemos por lo que de verdad es una mancha de óxido"],
+    ["MECANISMO", "Ahora sí, la parte que casi nadie explica"],
+    ["DOSIS", "Vamos a las recetas, que es lo que viniste a buscar"],
+    ["USOS", "Y ahora la pregunta importante"],
+    ["COSTO", "Ahora hablemos de lo que cuesta"],
+    ["ERROR", "Y vamos al error. El mío"],
+    ["CIERRE", "Antes de cerrar, una cosa más"]
+  ],
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UC-Xn4lJ35qOcf2px1BkHvEQ",
+    "cardId": "fbv71789673092521-p21_oxido_ropa"
+  }
+}

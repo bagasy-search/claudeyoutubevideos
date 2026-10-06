@@ -1,0 +1,12 @@
+{
+  "_comment": "Temas YA HECHOS o encolados por Crónicas Perdidas (para el DEDUP). Reconstruido de la memoria del canal. Cada uno: slug, título ES, y keywords EN/ES para el match semántico multilingüe. Actualizar cuando se hace un video nuevo. Idealmente sincronizar con cronicas_queue.json cuando esté disponible.",
+  "done": [
+    { "slug": "barcos", "title": "7 Barcos Antiguos Que la Ciencia No Puede Explicar", "keywords": ["ships", "boats", "shipwreck", "vessels", "barcos", "naves", "корабл"] },
+    { "slug": "construcciones", "title": "7 Construcciones Antiguas Que la Ciencia No Puede Explicar (megalitos)", "keywords": ["megalith", "megalithic", "megalitos", "gobekli", "göbekli", "sacsayhuaman", "baalbek", "puma punku"] },
+    { "slug": "ciudades", "title": "7 Ciudades Sumergidas Que la Ciencia No Puede Explicar", "keywords": ["submerged cities", "underwater city", "sunken city", "ciudades sumergidas", "затоплен", "подводн"] },
+    { "slug": "antartida", "title": "7 Estructuras Bajo el Hielo de la Antártida", "keywords": ["antarctica", "under the ice", "antarctic", "antartida", "hielo", "антаркт", "льд"] },
+    { "slug": "tuneles", "title": "7 Túneles Antiguos Que la Ciencia No Puede Explicar", "keywords": ["tunnels", "underground tunnels", "tuneles", "туннел", "подземн"] },
+    { "slug": "puertas", "title": "6/7 Puertas Selladas Que No Se Deben Abrir", "keywords": ["sealed doors", "forbidden doors", "doors forbidden to open", "puertas selladas", "запечатанны", "двер"] },
+    { "slug": "mapas", "title": "7 Mapas Antiguos Que No Deberían Existir", "keywords": ["ancient maps", "impossible maps", "mapas antiguos", "карт"] }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cme_v2_s11_config",
+    "ms": 872100,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "La configuracion correcta queda asi",
+    "nombre": "cms_s11_rejilla_contraluz_mano",
+    "_manual": true,
+    "_sec": "S11_VENTILACION",
+    "_anchor": {
+      "startWord": 2089,
+      "endWord": 2093,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s11_open",
+    "ms": 874520,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "El generador completamente al aire libre",
+    "nombre": "cms_s13_espaldas_ventana_vecino",
+    "_manual": true,
+    "_sec": "S11_VENTILACION",
+    "_anchor": {
+      "startWord": 2094,
+      "endWord": 2099,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s11_manual",
+    "ms": 893020,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "El manual del fabricante manda",
+    "nombre": "cms_s11_lapiz_escuadra_rectangulo",
+    "_manual": true,
+    "_sec": "S11_VENTILACION",
+    "_anchor": {
+      "startWord": 2140,
+      "endWord": 2144,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s11_check",
+    "ms": 912960,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Antes de dejarla funcionando",
+    "nombre": "cms_s12_termometro_en_mano",
+    "_manual": true,
+    "_sec": "S11_VENTILACION",
+    "_anchor": {
+      "startWord": 2186,
+      "endWord": 2189,
+      "coverage": 1
+    }
+  }
+]

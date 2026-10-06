@@ -1,4 +1,13 @@
 import "./index.css";
+import { MainCondensa, TOTAL_FRAMES_CONDENSA } from "./VideoEdit/Main_condensa";
+import { MainFedguante, TOTAL_FRAMES_FEDGUANTE } from "./_fed6/VideoEdit/Main_fedguante";
+import { MainExpensivecream, TOTAL_FRAMES_EXPENSIVECREAM } from "./_fed6/VideoEdit/Main_expensivecream";
+import { MainMohotecho, TOTAL_FRAMES_MOHOTECHO } from "./VideoEdit/Main_mohotecho";
+import { MainVinagremoho, TOTAL_FRAMES_VINAGREMOHO } from "./VideoEdit/Main_vinagremoho";
+import { MainRomerovinagre, TOTAL_FRAMES_ROMEROVINAGRE } from "./VideoEdit/Main_romerovinagre";
+import { MainRksafe, TOTAL_FRAMES_RKSAFE } from "./VideoEdit/Main_rksafe";
+import { MainRaydoor1, TOTAL_FRAMES_RAYDOOR1 } from "./VideoEdit/Main_raydoor1";
+import { MainCmesilencio, TOTAL_FRAMES_CMESILENCIO } from "./cmesilencio/Main_cmesilencio";
 import { Composition } from "remotion";
 import { RosemaryHero } from "./valeria/RosemaryHero";
 import { MainCollageDemo, TOTAL_FRAMES_COLLAGE } from "./VideoEdit/RemedioCollage";
@@ -150,6 +159,10 @@ import { MainMadera, TOTAL_FRAMES_MADERA } from "./VideoEdit/Main_madera";
 import { MainSotanoseco, TOTAL_FRAMES_SOTANOSECO } from "./VideoEdit/Main_sotanoseco";
 import { MainCemento, TOTAL_FRAMES_CEMENTO } from "./VideoEdit/Main_cemento";
 import { MainSalitre, TOTAL_FRAMES_SALITRE } from "./VideoEdit/Main_salitre";
+import { MainSalitre3, TOTAL_FRAMES_SALITRE3 } from "./VideoEdit/Main_salitre3";
+import { MainSotanorico, TOTAL_FRAMES_SOTANORICO } from "./VideoEdit/Main_sotanorico";
+import { MainEntretecho, TOTAL_FRAMES_ENTRETECHO } from "./VideoEdit/Main_entretecho";
+import { MainDeshumidificador, TOTAL_FRAMES_DESHUMIDIFICADOR } from "./VideoEdit/Main_deshumidificador";
 import { MainAcauto, TOTAL_FRAMES_ACAUTO } from "./VideoEdit/Main_acauto";
 import { MainRayones, TOTAL_FRAMES_RAYONES } from "./VideoEdit/Main_rayones";
 import { MainVentilador, TOTAL_FRAMES_VENTILADOR } from "./VideoEdit/Main_ventilador";
@@ -185,6 +198,7 @@ import { ValKitReel, VAL_REEL_F } from "./valeria/ValeriaKit";
 import { MainGrvaseline, TOTAL_FRAMES_GRVASELINE } from "./_fed6/VideoEdit/Main_grvaseline";
 import { MainFcsvarices, TOTAL_FRAMES_FCSVARICES } from "./_fed6/VideoEdit/Main_fcsvarices";
 import { MainFcsaguapiel, TOTAL_FRAMES_FCSAGUAPIEL } from "./_fed6/VideoEdit/Main_fcsaguapiel";
+import { MainFedagua60, TOTAL_FRAMES_FEDAGUA60 } from "./_fed6/VideoEdit/Main_fedagua60";
 import { MainFcsdeterioro, TOTAL_FRAMES_FCSDETERIORO } from "./_fed6/VideoEdit/Main_fcsdeterioro";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
@@ -202,6 +216,7 @@ export const RemotionRoot: React.FC = () => {
       {/* CLAUDIO YODER · dos metales baratos contra ratones (EN) · avatar 11:01 en bucle + kit MouseKit */}
       <Composition id="Fcsvarices" component={MainFcsvarices} durationInFrames={TOTAL_FRAMES_FCSVARICES} fps={30} width={1920} height={1080} />
       <Composition id="Fcsaguapiel" component={MainFcsaguapiel} durationInFrames={TOTAL_FRAMES_FCSAGUAPIEL} fps={30} width={1920} height={1080} />
+      <Composition id="Fedagua60" component={MainFedagua60} durationInFrames={TOTAL_FRAMES_FEDAGUA60} fps={30} width={1920} height={1080} />
       <Composition id="Cymouse" component={MainCymouse} durationInFrames={TOTAL_FRAMES_CYMOUSE} fps={30} width={1920} height={1080} />
       <Composition id="Warmpart5" component={MainWarmpart5} durationInFrames={TOTAL_FRAMES_WARMPART5} fps={30} width={1920} height={1080} />
       {/* CLAUDIO YODER · Amish oil lamp / power outage (EN) · avatar + 72 imgs gpt-image-2 + 28 stock + kit premium */}
@@ -691,6 +706,11 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Cemento" component={MainCemento} durationInFrames={TOTAL_FRAMES_CEMENTO} fps={30} width={1920} height={1080} />
       {/* Humedad/salitre en la pared — "La Humedad Que Sube NUNCA Vuelve" · AVATAR Tomás · clips-first */}
       <Composition id="Salitre" component={MainSalitre} durationInFrames={TOTAL_FRAMES_SALITRE} fps={30} width={1920} height={1080} />
+      {/* POLVO BLANCO — "¿Por Qué ESTE POLVO BLANCO Vuelve Siempre y Cómo Frenarlo?" · AVATAR Tomás parcial+bucle+Fish */}
+      <Composition id="Salitre3" component={MainSalitre3} durationInFrames={TOTAL_FRAMES_SALITRE3} fps={30} width={1920} height={1080} />
+      <Composition id="Sotanorico" component={MainSotanorico} durationInFrames={TOTAL_FRAMES_SOTANORICO} fps={30} width={1920} height={1080} />
+      <Composition id="Entretecho" component={MainEntretecho} durationInFrames={TOTAL_FRAMES_ENTRETECHO} fps={30} width={1920} height={1080} />
+      <Composition id="Deshumidificador" component={MainDeshumidificador} durationInFrames={TOTAL_FRAMES_DESHUMIDIFICADOR} fps={30} width={1920} height={1080} />
       <Composition id="E7h" component={MainE7h} durationInFrames={TOTAL_FRAMES_E7H} fps={30} width={1920} height={1080} />
       {/* AC del auto — "El Aire De Tu Auto Enfría Como Nuevo Con Esto De $10" · AVATAR Tomás · clips-first */}
       <Composition id="Acauto" component={MainAcauto} durationInFrames={TOTAL_FRAMES_ACAUTO} fps={30} width={1920} height={1080} />
@@ -746,6 +766,21 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="GrBanana" component={MainGrbanana} durationInFrames={TOTAL_FRAMES_GRBANANA} fps={30} width={1920} height={1080} />
       <Composition id="GrVaseline" component={MainGrvaseline} durationInFrames={TOTAL_FRAMES_GRVASELINE} fps={30} width={1920} height={1080} />
       <Composition id="Fcsdeterioro" component={MainFcsdeterioro} durationInFrames={TOTAL_FRAMES_FCSDETERIORO} fps={30} width={1920} height={1080} />
-    </>
+        <Composition id="Condensa" component={MainCondensa} durationInFrames={TOTAL_FRAMES_CONDENSA} fps={30} width={1920} height={1080} />
+        <Composition id="Cmesilencio" component={MainCmesilencio} durationInFrames={TOTAL_FRAMES_CMESILENCIO} fps={30} width={1920} height={1080} />
+        {/* Federer Archivos — "Truco del GUANTE de Romero" · avatar PARCIAL 18:49 + BUCLE
+            + cola de Fish · master 55:42 · b-roll agnes (i2v, animacion leve de la foto) */}
+        <Composition id="Fedguante" component={MainFedguante} durationInFrames={TOTAL_FRAMES_FEDGUANTE} fps={30} width={1920} height={1080} />
+        <Composition id="Expensivecream" component={MainExpensivecream} durationInFrames={TOTAL_FRAMES_EXPENSIVECREAM} fps={30} width={1920} height={1080} />
+        <Composition id="Mohotecho" component={MainMohotecho} durationInFrames={TOTAL_FRAMES_MOHOTECHO} fps={30} width={1920} height={1080} />
+        <Composition id="Vinagremoho" component={MainVinagremoho} durationInFrames={TOTAL_FRAMES_VINAGREMOHO} fps={30} width={1920} height={1080} />
+        <Composition id="Romerovinagre" component={MainRomerovinagre} durationInFrames={TOTAL_FRAMES_ROMEROVINAGRE} fps={30} width={1920} height={1080} />
+        {/* Ray Kessler (EN/US, retired locksmith) — "Where to Hide a Safe" · kit rksafe negro/brass ·
+            AVATAR PARCIAL 11:25 + BUCLE muteado · master 22:00 · b-roll i2v (Ray demostrando) */}
+        <Composition id="Rksafe" component={MainRksafe} durationInFrames={TOTAL_FRAMES_RKSAFE} fps={30} width={1920} height={1080} />
+        {/* Ray Kessler — "The $1 Fix That Doubles Your Front Door" · kit rksafe reusado (negro/brass) ·
+            AVATAR PARCIAL 11:00 + BUCLE muteado · master 20:12 · b-roll i2v (Ray demostrando el fix) */}
+        <Composition id="Raydoor1" component={MainRaydoor1} durationInFrames={TOTAL_FRAMES_RAYDOOR1} fps={30} width={1920} height={1080} />
+</>
   );
 };

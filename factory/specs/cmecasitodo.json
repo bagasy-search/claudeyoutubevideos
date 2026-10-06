@@ -1,0 +1,48 @@
+{
+  "slug": "cmecasitodo",
+  "canal": "claudio-mendoza",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "D:/rtmp/factory/_guiones/GUION_cmecasitodo.txt",
+  "titulo": "Kit Solar BARATO que Prende Casi TODO en tu Casa ($250)",
+  "voz": {
+    "id": "claudio_mendoza_s4",
+    "blockChars": 1200,
+    "speed": 0.88
+  },
+  "avatar": {
+    "face": "public/ref/claudio_mendoza_full.png",
+    "ref": "public/ref/claudio_mendoza_face128.png"
+  },
+  "ctas": [
+    {
+      "ancla": "La hoja que le dejé pegada",
+      "head": "La hoja de Doña Carmen",
+      "sub": "60 aparatos medidos · escanea",
+      "qr": "qr/cmecasitodo.png",
+      "durS": 10,
+      "compacto": true
+    }
+  ],
+  "cta": {
+    "head": "Los 3 manuales",
+    "ancla": "Si esto te sirvió",
+    "sub": "Escanea el código",
+    "qr": "qr/cmecasitodo.png",
+    "compacto": true
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
+    "cardId": "plan-own-1791246576955-0"
+  },
+  "overrides": {
+    "animadoMaxPct": 90,
+    "apertura": {
+      "miniatura": true,
+      "holdS": 1,
+      "glitchF": 12,
+      "clip": "broll/{slug}/{slug}_apertura.mp4",
+      "foto": "img/{slug}/{slug}_thumb.jpg"
+    }
+  }
+}

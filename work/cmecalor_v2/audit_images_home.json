@@ -1,0 +1,114 @@
+{
+  "range_ms": [1054620, 1318420],
+  "reference_image": "claudio_ref.png",
+  "identity_policy": "La referencia se usó solo como guía general de apariencia y vestuario; se admite variación facial moderada.",
+  "audit_policy": [
+    "literalidad de frase, sustantivos y acción",
+    "manos, dedos y puntos de contacto",
+    "topología física de cables, enchufes y equipos",
+    "ausencia de texto editorial o falso importante",
+    "seguridad eléctrica, térmica y doméstica"
+  ],
+  "approved_count": 5,
+  "rejected_count": 2,
+  "images": [
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_home_001.png",
+      "reason": "Los dos cables aparecen completos, separados y desenchufados, con sus cuatro extremos físicamente visibles; el cable amarillo es más grueso y el gabinete del equipo del fondo está cerrado.",
+      "candidate": {
+        "start_ms": 1054620,
+        "end_ms": 1060920,
+        "caption_exact": "Un cable demasiado fino puede perder tensión, calentarse y hacer que el motor arranque mal.",
+        "nouns": ["cable fino", "extensión exterior gruesa", "motor"],
+        "action": "Claudio señala y compara dos extensiones completas de distinto grosor, ambas separadas y desenchufadas.",
+        "safety": "Los cuatro extremos están desconectados y descansan en la mesa; no hay conductores sueltos ni equipo abierto.",
+        "agnes_motion_es": "Claudio alterna suavemente la mirada entre ambos cables y baja cada índice unos centímetros para señalarlos. Mantener invariables los cuatro extremos, el grosor, las bobinas y el gabinete cerrado; cámara fija."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_home_002.png",
+      "reason": "La extensión completa, la cinta métrica, el medidor enchufable cerrado y el ventilador como carga muestran longitud y consumo sin tabla ni frase editorial.",
+      "candidate": {
+        "start_ms": 1061300,
+        "end_ms": 1067220,
+        "caption_exact": "No te voy a leer una medida universal porque cambia con la tensión, la longitud y el consumo.",
+        "nouns": ["medida", "tensión", "longitud", "consumo", "extensión", "cinta métrica", "medidor", "carga"],
+        "action": "Claudio mide una extensión con cinta y señala el medidor cerrado y la carga colocados a su lado.",
+        "safety": "Cable intacto y enchufe visible sin manipulación de conductores; medidor y ventilador cerrados.",
+        "agnes_motion_es": "Claudio desliza apenas un dedo sobre la cinta y después señala una vez el medidor y el ventilador. Mantener inmóviles la extensión, la escala, los enchufes y la geometría de los equipos; cámara casi fija."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_home_003.png",
+      "reason": "Claudio abre las cortinas y entra luz solar real, con una mancha de sol sobre el piso y sin calefactores ni objetos calientes próximos a la tela.",
+      "candidate": {
+        "start_ms": 1156680,
+        "end_ms": 1159960,
+        "caption_exact": "aprovecha la radiación solar durante el día si aparece.",
+        "nouns": ["radiación solar", "día", "cortinas", "habitación"],
+        "action": "Claudio abre las cortinas de una sala para dejar entrar la radiación solar del día.",
+        "safety": "No hay calefactor, llama, vela, cable ni objeto caliente junto a la tela.",
+        "agnes_motion_es": "Claudio termina de correr suavemente ambas cortinas y la tela se mueve apenas con la mano. Mantener intactos manos, ventana y muebles; preservar la luz solar natural sin destellos ni cámara dinámica."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_home_004.png",
+      "reason": "El calefactor es físicamente pequeño, está apagado y desenchufado, y Claudio señala la placa real del aparato cuyo único dato prominente es 1500 W.",
+      "candidate": {
+        "start_ms": 1225540,
+        "end_ms": 1228880,
+        "caption_exact": "El tamaño físico no dice nada, mira los vatios",
+        "nouns": ["tamaño físico", "vatios", "calefactor", "placa de potencia", "1500 W"],
+        "action": "Claudio señala la placa física de 1500 W de un calefactor portátil pequeño.",
+        "safety": "El calefactor está apagado, con el enchufe claramente apoyado y desconectado; no toca telas.",
+        "agnes_motion_es": "Claudio acerca apenas el índice a la placa de 1500 W y asiente una vez. Mantener exactos la placa, el valor, el enchufe desconectado, la mano y el calefactor; cámara fija."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_home_005.png",
+      "reason": "El bolso, abrigo, linterna, agua y mapa de ruta dominan la imagen y Claudio señala el plan; el tomacorriente suelto queda pequeño, lateral y sin cables.",
+      "candidate": {
+        "start_ms": 1316760,
+        "end_ms": 1318420,
+        "caption_exact": "No reemplaza un plan familiar.",
+        "nouns": ["plan familiar", "bolso", "abrigo", "linterna", "ruta", "tomacorriente"],
+        "action": "Claudio señala el mapa y los elementos del plan familiar mientras el tomacorriente desconectado queda a un lado.",
+        "safety": "El tomacorriente no tiene cables ni energía; no hay partes eléctricas manipuladas ni riesgo doméstico.",
+        "agnes_motion_es": "Claudio recorre lentamente con el índice la ruta dibujada y luego señala el bolso. Mantener estables mapa, linterna, agua, abrigo, bolso y tomacorriente desconectado; cámara casi fija."
+      }
+    },
+    {
+      "status": "rejected",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058b0-cb91-7482-9c3e-5587416531cf/exec-76911582-5b52-43bb-a0ba-5675279b2b80.png",
+      "reason": "Solo se ve un extremo de cada cable, por lo que no puede verificarse que ambos sean extensiones completas y totalmente desconectadas. No se copió al proyecto.",
+      "candidate": {
+        "start_ms": 1054620,
+        "end_ms": 1060920,
+        "caption_exact": "Un cable demasiado fino puede perder tensión, calentarse y hacer que el motor arranque mal.",
+        "nouns": ["cable fino", "extensión exterior gruesa", "motor"],
+        "action": "Claudio compara los grosores de dos cables.",
+        "safety": "Debían verse ambos cables completos y desenchufados.",
+        "agnes_motion_es": "No animar: imagen rechazada por topología incompleta."
+      }
+    },
+    {
+      "status": "rejected",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058b0-cb91-7482-9c3e-5587416531cf/exec-04942918-7385-4cf9-8df3-208dc5c3635d.png",
+      "reason": "Aunque se ven los cuatro extremos, Claudio parece unir físicamente ambos cables en el centro y el equipo del fondo tiene el motor y conductores expuestos. No se copió al proyecto.",
+      "candidate": {
+        "start_ms": 1054620,
+        "end_ms": 1060920,
+        "caption_exact": "Un cable demasiado fino puede perder tensión, calentarse y hacer que el motor arranque mal.",
+        "nouns": ["cable fino", "extensión exterior gruesa", "motor"],
+        "action": "Claudio compara dos extensiones con sus extremos visibles.",
+        "safety": "Los cables debían permanecer separados y el motor completamente encerrado.",
+        "agnes_motion_es": "No animar: imagen rechazada por contacto ambiguo entre cables y equipo abierto."
+      }
+    }
+  ]
+}

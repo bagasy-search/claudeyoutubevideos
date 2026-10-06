@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-18T05:42:23.128Z",
+ "status": "done",
+ "inputsHash": "f163cf4d786b2b64",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/cme150/cme150.mp4?v=1",
+  "version": 1,
+  "bytes": 715479242,
+  "durSec": 1507.27,
+  "saltosPts": 0,
+  "tramosNegros": 0,
+  "hoja": "D:\\rtmp\\factory\\cme150\\audit\\hoja.jpg",
+  "bagasy": "entregado (--no-youtube)"
+ },
+ "ms": 2288611
+}

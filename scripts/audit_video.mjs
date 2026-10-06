@@ -89,10 +89,22 @@ if (VIDEO) {
     const dest = path.join(OUT, `f_${String(Math.round(t)).padStart(4, "0")}.jpg`);
     const ENTRY = opt("entry", null);
     const stillArgs = ENTRY ? ["remotion", "still", ENTRY, COMP, dest] : ["remotion", "still", COMP, dest];
+    // --public-dir: el public global pesa ~42 GB y Remotion lo COPIA al bundle por render
+    // (ENOSPC). Con el public curado del video el bundle queda en ~200 MB.
+    const PUBDIR = opt("public-dir", null);
+    if (PUBDIR) stillArgs.push(`--public-dir=${PUBDIR}`);
     const r = spawnSync("npx", [...stillArgs, `--frame=${Math.round(t * fps)}`, "--jpeg-quality=70", "--scale=0.5", "--log=error"],
       { encoding: "utf8", shell: true, timeout: 180000, env: { ...process.env, TMP: process.env.TMP || "D:\\rtmp\\tmp", TEMP: process.env.TEMP || "D:\\rtmp\\tmp" } });
     if (r.status === 0 && fs.existsSync(dest)) { frameFiles.push(dest); process.stdout.write("."); }
-    else process.stdout.write("x");
+    else {
+      process.stdout.write("x");
+      // ⛔ un fallo MUDO se lee igual que "está trabajando": el primero imprime su error real
+      if (!globalThis.__primerErr) {
+        globalThis.__primerErr = 1;
+        const err = String(r.stderr || r.error || "").split(/\r?\n/).filter(Boolean).slice(-3).join(" | ");
+        console.error("\n  primer fallo:", err.slice(0, 300));
+      }
+    }
   }
   console.log("");
 } else { console.error("Pasá --video o --comp"); process.exit(1); }

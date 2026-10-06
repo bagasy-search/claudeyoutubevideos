@@ -1,0 +1,367 @@
+[
+  {
+    "id": "cme_v2_s2_box",
+    "ms": 115560,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Una caja silenciadora segura",
+    "nombre": "cms_s2_gira_caja_banco",
+    "_manual": true,
+    "_sec": "S2_PORQUE_SUENA",
+    "_anchor": {
+      "startWord": 270,
+      "endWord": 273,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e10",
+    "ms": 127960,
+    "dur": 3.4,
+    "tipo": "ICONO",
+    "dice": "el sonido",
+    "muestra": "Un ícono de onda se apoya sobre el mismo cuadrado de luz, en verde-voltio, pisando al del aire.",
+    "porque": "Que los dos rótulos ocupen el mismo lugar del cuadro es el argumento entero de la frase: no son dos caminos, es uno solo.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_onda.png",
+    "texto": "SONIDO",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 298,
+      "endWord": 299,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e8",
+    "ms": 131560,
+    "dur": 3.4,
+    "tipo": "ICONO",
+    "dice": "el aire",
+    "muestra": "Un ícono de flujo de aire se apoya sobre la boca de entrada de la caja, en frío.",
+    "porque": "Las dos cosas que comparten el agujero necesitan cada una su marca. El aire entra primero y en frío, para que después el sonido pueda entrar en voltio y chocar contra él.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_aire.png",
+    "texto": "AIRE",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 307,
+      "endWord": 308,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s2_sources",
+    "ms": 140060,
+    "dur": 50.1,
+    "tipo": "ESCENA",
+    "dice": "Y hay un motivo por el que un generador suena tanto",
+    "mov": "MovTercios",
+    "escena": "MovTercios",
+    "_manual": true,
+    "_sec": "S2_PORQUE_SUENA",
+    "_anchor": {
+      "startWord": 325,
+      "endWord": 335,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e17",
+    "ms": 148340,
+    "dur": 4.4,
+    "tipo": "ICONO",
+    "dice": "todos señalan el escape",
+    "muestra": "Un ícono de escape se clava sobre el caño corto del generador, en voltio, mientras los anillos todavía saturan el cuadro.",
+    "porque": "El único sospechoso tiene que quedar nombrado en pantalla antes de ser absuelto, o el desmentido de la frase siguiente no tiene contra qué chocar.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_escape.png",
+    "texto": "TODOS SEÑALAN EL ESCAPE",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 351,
+      "endWord": 354,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e21",
+    "ms": 167480,
+    "dur": 4.6,
+    "tipo": "TEXTO",
+    "dice": "Los otros dos tercios salen de otro lado",
+    "muestra": "Rótulo grande atravesando las dos tajadas todavía vacías.",
+    "porque": "Es la pregunta que sostiene el resto de la sección. Puesta encima de los dos huecos abiertos, el texto y la imagen dicen exactamente lo mismo.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "LOS OTROS 2/3",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 395,
+      "endWord": 402,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e22",
+    "ms": 170360,
+    "dur": 5.6,
+    "tipo": "ICONO",
+    "dice": "Uno es el motor mismo",
+    "muestra": "Un ícono de motor se apoya dentro de la segunda tajada, sobre el bloque de aluminio que empezó a pulsar.",
+    "porque": "El segundo tercio recibe su nombre en el mismo instante en que el bloque se enciende, para que el rótulo se lea como una etiqueta del objeto y no como un cartel suelto.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_motor.png",
+    "texto": "2/3 · EL BLOQUE DEL MOTOR",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 403,
+      "endWord": 407,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e24",
+    "ms": 172780,
+    "dur": 4,
+    "tipo": "TEXTO",
+    "dice": "el pistón golpeando, las válvulas, el cigüeñal",
+    "muestra": "Tres palabras que aparecen una por golpe del pistón, alineadas contra las aletas del bloque.",
+    "porque": "Son tres fuentes distintas dentro de la misma pieza y el espectador no las distingue de oído. Que cada una entre con su golpe las vuelve rítmicas en vez de una enumeración.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "PISTÓN · VÁLVULAS · CIGÜEÑAL",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 408,
+      "endWord": 414,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e25",
+    "ms": 183680,
+    "dur": 3.4,
+    "tipo": "TEXTO",
+    "dice": "igual que suena un martillo",
+    "muestra": "Rótulo corto que entra con el martillazo y tiembla junto con los anillos.",
+    "porque": "La comparación del guion es la única forma de entender un ruido sin tubo. El texto entra con el golpe para que se lea como parte del impacto.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "NO SALE POR NINGÚN TUBO",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 431,
+      "endWord": 435,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e27",
+    "ms": 186460,
+    "dur": 5.8,
+    "tipo": "ICONO",
+    "dice": "el que nadie mira, es el ventilador de refrigeración",
+    "muestra": "Un ícono de ventilador se apoya sobre la rejilla y la tercera tajada se rotula con él.",
+    "porque": "Es el hallazgo de la sección. Necesita el rótulo más largo en pantalla de los tres tercios porque es el único que el espectador no tenía en su lista.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_ventilador.png",
+    "texto": "3/3 · EL VENTILADOR DE REFRIGERACIÓN",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 439,
+      "endWord": 447,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e28",
+    "ms": 191160,
+    "dur": 4.2,
+    "tipo": "TEXTO",
+    "dice": "Da miles de vueltas por minuto y mueve un río de aire",
+    "muestra": "Rótulo apoyado sobre la banda de aire que cruza el patio, siguiéndola en su recorrido.",
+    "porque": "El caudal es el dato que después vuelve como el segundo de los tres números. Sembrarlo acá, pegado a la banda, ahorra explicarlo dos veces.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "MILES DE VUELTAS · UN RÍO DE AIRE",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 448,
+      "endWord": 459,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e29",
+    "ms": 198720,
+    "dur": 4.6,
+    "tipo": "TEXTO",
+    "dice": "el que se te mete en la casa aunque cierres la ventana",
+    "muestra": "Rótulo en ámbar apoyado sobre la ventana amarilla del vecino, justo cuando la banda grave entra por ella.",
+    "porque": "Es el momento en que el problema técnico vuelve a ser el problema del vecino. El ámbar del rótulo hereda el color de la ventana y no del resto del acto.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "GRAVE · ATRAVIESA LA VENTANA CERRADA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 469,
+      "endWord": 480,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e31",
+    "ms": 204840,
+    "dur": 4.6,
+    "tipo": "ICONO",
+    "dice": "Toda tapa de lámina fina vibrando es un parlante",
+    "muestra": "Un ícono de lámina se apoya sobre la chapa que vibra, con la frase como etiqueta del material.",
+    "porque": "Es la regla que el espectador puede aplicar a cualquier máquina de su casa. Escrita sobre la chapa temblando, se lee como una propiedad del material y no como una opinión.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_lamina.png",
+    "texto": "LÁMINA FINA = PARLANTE",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 484,
+      "endWord": 492,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e35",
+    "ms": 206820,
+    "dur": 3.2,
+    "tipo": "ICONO",
+    "dice": "es un parlante",
+    "muestra": "Un ícono de onda late sobre la chapa al ritmo del tamborileo.",
+    "porque": "Cierra el ejercicio con el diagnóstico: si suena a tambor, vibra, y lo que vibra suena. Es la conclusión de la prueba en dos palabras.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_onda.png",
+    "texto": "SI SUENA A TAMBOR, VIBRA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 490,
+      "endWord": 492,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e32",
+    "ms": 209000,
+    "dur": 5.3,
+    "tipo": "CLIP",
+    "dice": "Golpea con el nudillo la carcasa de tu generador apagado",
+    "muestra": "Claudio en el patio golpeando con el nudillo la tapa de lámina gris del generador apagado y quedándose quieto con la cabeza inclinada, escuchando lo que devuelve.",
+    "porque": "El movimiento salió en macro sobre la lámina y este plano la devuelve al mundo real con una mano encima: es la tarea que el espectador puede hacer hoy en su patio. La escucha inclinada es todo el gesto, sin manos abiertas.",
+    "nombre": "cms_s2_nudillo_golpea_tapa",
+    "foto_change": "he is standing beside the switched off open frame generator in the backyard, rapping the grey sheet metal cover once with the knuckle of his index finger, his head tilted down and to the side as if listening to the metal, cool blue grey late afternoon light, medium close shot from the side, he fills the right of the frame and the generator the left, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same switched off generator with its red tube frame and grey sheet metal covers, same low concrete block wall behind, nothing behind him changes or moves.",
+      "action": "Action: he taps the sheet metal cover once with his knuckle and then holds completely still with his head tilted, listening, his lips stay closed, one single continuous action, his knuckle stays near the metal.",
+      "camera": "Camera: the framing never changes, medium close shot from the side, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "dos golpes de nudillo en la chapa + resonancia hueca",
+    "escena": null,
+    "_anchor": {
+      "startWord": 493,
+      "endWord": 502,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e33",
+    "ms": 209000,
+    "dur": 3.8,
+    "tipo": "TEXTO",
+    "dice": "Golpea con el nudillo la carcasa de tu generador apagado",
+    "muestra": "Rótulo de tarea apoyado sobre la chapa, al lado del nudillo.",
+    "porque": "Es la única instrucción accionable del bloque y conviene que quede escrita: el espectador la puede hacer en la pausa.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "HAZLO AHORA: GOLPEA CON EL NUDILLO",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 493,
+      "endWord": 502,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s2_e34",
+    "ms": 210200,
+    "dur": 3.7,
+    "tipo": "T2V",
+    "dice": "la carcasa de tu generador",
+    "muestra": "Macro de la lámina gris devolviendo el golpe: un tamborileo visible, el polvo saltando y el reflejo de la tarde deformándose sobre el metal.",
+    "porque": "El golpe se oyó en el plano anterior; acá se ve. El reflejo que se deforma sobre la chapa es la prueba visual de que la tapa es una membrana.",
+    "nombre": "cms_s2_chapa_tamborilea_polvo",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "extreme macro of a grey sheet metal panel on a generator ringing after a knock, the panel visibly drumming, dust jumping off its surface and the reflection of the overcast sky warping across the metal, cool light, very shallow depth of field, no people, no hands, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "resonancia metálica que se apaga",
+    "escena": null,
+    "_anchor": {
+      "startWord": 497,
+      "endWord": 501,
+      "coverage": 1
+    }
+  }
+]

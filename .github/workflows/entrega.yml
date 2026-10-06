@@ -1,0 +1,36 @@
+# entrega.yml — publica como release un MP4 YA codificado para entrega que llegó en partes a una rama temporal.
+# Para las sesiones en la NUBE: su proxy no deja crear releases, una Action sí. La rama trae <slug>.mp4.000…
+# (partes de <100 MB, hechas con `split -b 28M -d -a 2 <slug>.mp4 <slug>.mp4.0`); se unen, se verifica el
+# sha256, se publica el release <slug> con <slug>.mp4 y se BORRA la rama (el video no queda en el historial).
+# Después: MP4_SUFIJO="?v=1" node scripts/deliver_card.mjs <channelKey> <cardId> <slug> --no-youtube
+name: entrega
+on:
+  workflow_dispatch:
+    inputs:
+      slug: { description: "slug del video (tag del release y nombre del mp4)", required: true }
+      rama: { description: "rama temporal con las partes", required: true }
+      sha256: { description: "sha256 del mp4 unido", required: true }
+permissions:
+  contents: write
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      S: ${{ inputs.slug }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: "${{ inputs.rama }}" }
+      - name: unir y verificar
+        run: |
+          ls -la
+          cat "$S".mp4.0* > "/tmp/$S.mp4"
+          echo "${{ inputs.sha256 }}  /tmp/$S.mp4" | sha256sum -c -
+      - name: release
+        run: |
+          gh release view "$S" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$S" -R "$GITHUB_REPOSITORY" --title "$S" --notes "entrega de la fábrica"
+          gh release upload "$S" "/tmp/$S.mp4" -R "$GITHUB_REPOSITORY" --clobber
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$S" --jq '.assets[] | "\(.name) \(.size)"'
+      - name: borrar la rama temporal
+        if: always()
+        run: git push origin --delete "${{ inputs.rama }}"

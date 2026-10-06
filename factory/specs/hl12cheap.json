@@ -1,0 +1,632 @@
+{
+  "slug": "hl12cheap",
+  "canal": "harlan-lineman",
+  "modo": "avatar",
+  "idioma": "en",
+  "guion": "D:/rtmp/factory/_guiones/GUION_hl12cheap.txt",
+  "voz": {
+    "id": "harlan"
+  },
+  "cta": {
+    "head": "Subscribe for more from the line",
+    "ancla": "If you want more of what forty years"
+  },
+  "avatar": {
+    "face": "public/ref/harlan_full.png",
+    "ref": "public/ref/harlan_face128.png"
+  },
+  "bagasy": {
+    "channelKey": "draft:harlanlineman",
+    "cardId": "hrl2026092503"
+  },
+  "titulo": "12 Cheap Things I Keep for Winter Blackouts — A Retired Lineman's List",
+  "overrides": {
+    "fx": {
+      "_": "Paquete de efectos (factory/lib/fxpack.mjs). Sonidos: public/sfx_harlan (armado de sfx_ole/sfx_lou CC0 + sintetizados; ver LICENCIAS.txt).",
+      "sfxDir": "sfx_harlan",
+      "ambIn": "amb_casa",
+      "ambOut": "amb_viento",
+      "sfxItem": "clack",
+      "sfxProyector": "paper",
+      "exterior": [
+        "jardin",
+        "calle",
+        "camion",
+        "poste",
+        "linea1994",
+        "carro"
+      ],
+      "railComp": "BoxItemCard",
+      "unidades": {
+        "minutes": "minutes",
+        "hours": "hours",
+        "years": "years",
+        "feet": "feet",
+        "volts": "volts",
+        "degrees": "degrees",
+        "dollars": "dollars",
+        "million": "million",
+        "seconds": "seconds",
+        "days": "days",
+        "states": "states"
+      },
+      "entradaMinS": 3.5,
+      "burnMinS": 20,
+      "whooshMinS": 12,
+      "proyectorMinS": 60,
+      "numMinS": 14,
+      "zoomMinVentanaS": 5,
+      "zoomEscala": 1.14,
+      "volFuego": 0.14,
+      "volViento": 0.2,
+      "volSizzle": 0,
+      "volTriangulo": 0.2,
+      "volWhoosh": 0.18,
+      "volProyector": 0.12,
+      "maxHuecoS": 20,
+      "compSfx": {
+        "GridDown": [
+          [
+            "apagon",
+            0.3,
+            0.55,
+            1.1
+          ],
+          [
+            "hum",
+            0,
+            0.18,
+            0.5
+          ],
+          [
+            "boom",
+            0.35,
+            0.25,
+            2.5
+          ]
+        ],
+        "BreakerPanel": [
+          [
+            "clack",
+            1.2,
+            0.55,
+            0.6
+          ],
+          [
+            "clack",
+            1.87,
+            0.55,
+            0.6
+          ]
+        ],
+        "DispatchBoard": [
+          [
+            "beep",
+            0.3,
+            0.18,
+            0.25
+          ],
+          [
+            "beep",
+            1,
+            0.16,
+            0.25
+          ],
+          [
+            "beep",
+            1.7,
+            0.16,
+            0.25
+          ],
+          [
+            "beep",
+            "end-1.67",
+            0.3,
+            0.25
+          ]
+        ],
+        "LoadSurge": [
+          [
+            "hum",
+            0.2,
+            0.3,
+            1
+          ],
+          [
+            "zap",
+            1.07,
+            0.45,
+            1
+          ],
+          [
+            "boom",
+            1.07,
+            0.3,
+            2
+          ]
+        ],
+        "FridgeClock": [
+          [
+            "tick",
+            0.4,
+            0.22,
+            1.6
+          ],
+          [
+            "paper",
+            2,
+            0.4,
+            1.2
+          ]
+        ],
+        "CoinCup": [
+          [
+            "ice",
+            0.3,
+            0.35,
+            0.7
+          ],
+          [
+            "coin",
+            3.15,
+            0.35,
+            1.2
+          ]
+        ],
+        "GenDistance": [
+          [
+            "pop",
+            0.35,
+            0.35,
+            0.12
+          ],
+          [
+            "whoosh_b",
+            1,
+            0.25,
+            1.2
+          ]
+        ],
+        "COAlarm": [
+          [
+            "alarm",
+            1.67,
+            0.28,
+            2.4
+          ]
+        ],
+        "BackfeedFlow": [
+          [
+            "hum",
+            0.4,
+            0.25,
+            3
+          ],
+          [
+            "zap",
+            3.75,
+            0.5,
+            1.2
+          ],
+          [
+            "boom",
+            3.75,
+            0.3,
+            2.5
+          ]
+        ],
+        "StepPotential": [
+          [
+            "zap",
+            0.3,
+            0.25,
+            1
+          ]
+        ],
+        "RuleCard": [
+          [
+            "whoosh_a",
+            0,
+            0.25,
+            0.6
+          ],
+          [
+            "stamp",
+            0.22,
+            0.6,
+            1.1
+          ],
+          [
+            "boom",
+            0.22,
+            0.25,
+            2
+          ]
+        ],
+        "HazardStamp": [
+          [
+            "stamp",
+            0.3,
+            0.6,
+            1.1
+          ]
+        ],
+        "RoomHeat": [
+          [
+            "whoosh_b",
+            0,
+            0.2,
+            1
+          ]
+        ],
+        "RecapClipboard": [
+          [
+            "paper",
+            0.1,
+            0.35,
+            1.4
+          ]
+        ],
+        "AvatarScrimText": [
+          [
+            "whoosh_a",
+            0,
+            0.15,
+            0.6
+          ]
+        ],
+        "KineticQuote": [
+          [
+            "whoosh_b",
+            0,
+            0.18,
+            0.8
+          ]
+        ],
+        "StatBig": [
+          [
+            "tick",
+            0.2,
+            0.2,
+            1.6
+          ]
+        ],
+        "COHouseCutaway": [
+          [
+            "hum",
+            0,
+            0.22,
+            4
+          ],
+          [
+            "amb_viento",
+            0,
+            0.25,
+            5
+          ]
+        ],
+        "StackEffect": [
+          [
+            "amb_viento",
+            0,
+            0.25,
+            4
+          ],
+          [
+            "whoosh_a",
+            0.4,
+            0.35,
+            1
+          ]
+        ],
+        "BloodGrab": [
+          [
+            "hum",
+            0,
+            0.15,
+            3
+          ],
+          [
+            "pop",
+            1.5,
+            0.35,
+            0.4
+          ],
+          [
+            "pop",
+            2.1,
+            0.3,
+            0.4
+          ],
+          [
+            "pop",
+            2.7,
+            0.3,
+            0.4
+          ]
+        ],
+        "GenVsCars": [
+          [
+            "hum",
+            0,
+            0.3,
+            3
+          ],
+          [
+            "whoosh_b",
+            1,
+            0.35,
+            1
+          ]
+        ],
+        "YardPlan": [
+          [
+            "paper",
+            0.2,
+            0.45,
+            1
+          ],
+          [
+            "stamp",
+            3.3,
+            0.5,
+            0.6
+          ]
+        ],
+        "HiddenKillers": [
+          [
+            "whoosh_a",
+            0.2,
+            0.4,
+            0.8
+          ],
+          [
+            "whoosh_b",
+            0.5,
+            0.3,
+            0.8
+          ]
+        ],
+        "AlarmMap": [
+          [
+            "beep",
+            0.8,
+            0.35,
+            0.4
+          ],
+          [
+            "beep",
+            1.4,
+            0.3,
+            0.4
+          ],
+          [
+            "alarm",
+            2.5,
+            0.2,
+            1.2
+          ]
+        ],
+        "SameHeadache": [
+          [
+            "boom",
+            1.6,
+            0.35,
+            1.5
+          ]
+        ],
+        "TwoAMDecision": [
+          [
+            "whoosh_a",
+            0.1,
+            0.4,
+            0.8
+          ],
+          [
+            "clack",
+            2.6,
+            0.45,
+            0.5
+          ]
+        ],
+        "BlackoutBox": [
+          [
+            "clack",
+            0.2,
+            0.45,
+            0.6
+          ],
+          [
+            "paper",
+            0.7,
+            0.3,
+            1.2
+          ]
+        ],
+        "BoxItemCard": [
+          [
+            "whoosh_a",
+            0.0,
+            0.22,
+            0.6
+          ],
+          [
+            "paper",
+            0.4,
+            0.35,
+            1.0
+          ]
+        ],
+        "BatteryCold": [
+          [
+            "whoosh_b",
+            0.0,
+            0.18,
+            1.0
+          ],
+          [
+            "tick",
+            0.3,
+            0.18,
+            1.6
+          ]
+        ],
+        "CrankRadio": [
+          [
+            "tick",
+            0.2,
+            0.25,
+            1.2
+          ],
+          [
+            "beep",
+            1.4,
+            0.2,
+            0.3
+          ]
+        ],
+        "BedLayers": [
+          [
+            "paper",
+            0.45,
+            0.3,
+            1.2
+          ]
+        ],
+        "WarmerMap": [
+          [
+            "pop",
+            0.5,
+            0.3,
+            0.15
+          ],
+          [
+            "stamp",
+            "end-1.4",
+            0.5,
+            1.0
+          ]
+        ],
+        "WaterMath": [
+          [
+            "pop",
+            1.0,
+            0.3,
+            0.15
+          ],
+          [
+            "pop",
+            1.5,
+            0.25,
+            0.15
+          ]
+        ],
+        "FridgeThermo": [
+          [
+            "tick",
+            0.3,
+            0.2,
+            1.2
+          ],
+          [
+            "stamp",
+            "end-1.6",
+            0.55,
+            1.0
+          ]
+        ],
+        "FlowerPotMyth": [
+          [
+            "stamp",
+            "end-1.6",
+            0.6,
+            1.1
+          ]
+        ],
+        "SafetyBox": [
+          [
+            "clack",
+            0.6,
+            0.35,
+            0.6
+          ],
+          [
+            "stamp",
+            "end-1.4",
+            0.55,
+            1.0
+          ]
+        ],
+        "FinePrint": [
+          [
+            "whoosh_b",
+            0.3,
+            0.2,
+            1.0
+          ],
+          [
+            "stamp",
+            "end-1.4",
+            0.45,
+            1.0
+          ]
+        ],
+        "BoxReceipt": [
+          [
+            "tick",
+            0.4,
+            0.25,
+            2.5
+          ],
+          [
+            "coin",
+            "end-1.8",
+            0.35,
+            1.2
+          ]
+        ],
+        "CashCounter": [
+          [
+            "tick",
+            0.2,
+            0.2,
+            1.6
+          ],
+          [
+            "coin",
+            1.4,
+            0.35,
+            1.2
+          ]
+        ],
+        "SagaTimeline": [
+          [
+            "whoosh_b",
+            0.0,
+            0.18,
+            0.8
+          ]
+        ],
+        "Checklist": [
+          [
+            "clack",
+            0.4,
+            0.3,
+            0.6
+          ]
+        ],
+        "VsCard": [
+          [
+            "whoosh_a",
+            0.0,
+            0.2,
+            0.6
+          ]
+        ]
+      },
+      "railTotal": 12,
+      "railLabel": "No."
+    },
+    "agnesFlash": {}
+  }
+}

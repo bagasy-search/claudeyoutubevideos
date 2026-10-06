@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-18T13:06:41.035Z",
+ "status": "done",
+ "inputsHash": "fba18e18c6f8ab32",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/tfbduchapelo/tfbduchapelo.mp4?v=1",
+  "version": 1,
+  "bytes": 779035776,
+  "durSec": 1476.3,
+  "saltosPts": 0,
+  "tramosNegros": 0,
+  "hoja": "D:\\rtmp\\factory\\tfbduchapelo\\audit\\hoja.jpg",
+  "bagasy": "no (sin spec.bagasy o FACTORY_DELIVER≠1)"
+ },
+ "ms": 1449442
+}

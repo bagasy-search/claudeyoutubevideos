@@ -1,0 +1,307 @@
+{
+ "video": "bake",
+ "clipsfirst": true,
+ "beats": [
+  {
+   "id": "rule325",
+   "start": 2.07,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "03",
+   "title": "El pájaro de Saqqara",
+   "label": "Saqqara, Egipto",
+   "hue": "amber"
+  },
+  {
+   "id": "o013",
+   "start": 6.27,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "El pájaro de Saqqara",
+   "sub": "Saqqara, Egipto",
+   "accent": "amber"
+  },
+  {
+   "id": "o014",
+   "start": 6.27,
+   "dur": 130.16,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 3,
+   "name": "El pájaro de Saqqara",
+   "accent": "amber"
+  },
+  {
+   "id": "c173",
+   "start": 6.27,
+   "dur": 0.67,
+   "kind": "raw",
+   "src": "broll/w177.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c174",
+   "start": 6.94,
+   "dur": 2.62,
+   "kind": "raw",
+   "src": "broll/w178.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c175",
+   "start": 9.56,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/w179.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c176",
+   "start": 13.12,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/w180.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c177",
+   "start": 16.82,
+   "dur": 4.11,
+   "kind": "raw",
+   "src": "broll/w181.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c178",
+   "start": 20.93,
+   "dur": 6.63,
+   "kind": "raw",
+   "src": "broll/w182.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c179",
+   "start": 27.56,
+   "dur": 6.63,
+   "kind": "raw",
+   "src": "broll/w185.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c180",
+   "start": 34.2,
+   "dur": 5.7,
+   "kind": "raw",
+   "src": "broll/w185.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c181",
+   "start": 39.9,
+   "dur": 4.68,
+   "kind": "raw",
+   "src": "broll/w186.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c182",
+   "start": 44.58,
+   "dur": 2.34,
+   "kind": "raw",
+   "src": "broll/w187.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus326",
+   "start": 46.92,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/sq_bird.jpg",
+   "meters": 2200,
+   "unit": "años",
+   "eyebrow": "El pájaro de Saqqara",
+   "label": "una cola vertical como la de un avión",
+   "accent": "amber"
+  },
+  {
+   "id": "o015",
+   "start": 47.12,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "≈ 2.200 años",
+   "label": "El pájaro de Saqqara",
+   "accent": "amber"
+  },
+  {
+   "id": "c183",
+   "start": 52.92,
+   "dur": 3.05,
+   "kind": "raw",
+   "src": "broll/w189.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c184",
+   "start": 55.97,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/w190.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c185",
+   "start": 60.18,
+   "dur": 3.3,
+   "kind": "raw",
+   "src": "broll/w191.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c186",
+   "start": 63.48,
+   "dur": 2.25,
+   "kind": "raw",
+   "src": "broll/w192.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "annotated327",
+   "start": 65.73,
+   "dur": 6.5,
+   "kind": "annotated",
+   "image": "real/sq_bird.jpg",
+   "eyebrow": "No es un pájaro cualquiera",
+   "caption": "Pájaro de Saqqara · la cola vertical solo existe en los aviones",
+   "hue": "amber",
+   "annotations": [
+    {
+     "kind": "arrow",
+     "x": 0.5,
+     "y": 0.35,
+     "fromX": 0.75,
+     "fromY": 0.2,
+     "label": "Cola vertical = estabilizador de vuelo"
+    }
+   ]
+  },
+  {
+   "id": "c187",
+   "start": 72.23,
+   "dur": 2.27,
+   "kind": "raw",
+   "src": "broll/w194.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c188",
+   "start": 74.5,
+   "dur": 2.68,
+   "kind": "raw",
+   "src": "broll/w195.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c189",
+   "start": 77.18,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/w196.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c190",
+   "start": 80.86,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/w197.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c191",
+   "start": 84.8,
+   "dur": 5.54,
+   "kind": "raw",
+   "src": "broll/w198.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c192",
+   "start": 90.34,
+   "dur": 1.44,
+   "kind": "raw",
+   "src": "broll/w199.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat328",
+   "start": 91.78,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 1,
+   "suffix": " cola vertical",
+   "label": "aerodinámica dentro de una tumba",
+   "eyebrow": "¿Un planeador egipcio?",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "c193",
+   "start": 96.98,
+   "dur": 2.9,
+   "kind": "raw",
+   "src": "broll/w199.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c194",
+   "start": 99.88,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/w201.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c195",
+   "start": 103.73,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/w203.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c196",
+   "start": 107.58,
+   "dur": 2.94,
+   "kind": "raw",
+   "src": "broll/w203.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c197",
+   "start": 110.52,
+   "dur": 4.24,
+   "kind": "raw",
+   "src": "broll/w204.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c198",
+   "start": 114.76,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/w205.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c199",
+   "start": 119.16,
+   "dur": 6.64,
+   "kind": "raw",
+   "src": "broll/w206.mp4",
+   "hue": "amber"
+  }
+ ]
+}

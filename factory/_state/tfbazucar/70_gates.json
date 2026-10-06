@@ -1,0 +1,12 @@
+{
+ "fase": "70_gates",
+ "ts": "2026-09-18T09:26:59.046Z",
+ "status": "done",
+ "inputsHash": "C:\\Users\\bauti\\Downloads\\video2\\src\\index_tfbazucar.tsx,C:\\Users\\bauti\\Downloads\\video2\\src\\tfbazucar,C:\\Users\\bauti\\Downloads\\video2\\_tfbazucar_assets.txt,C:\\Users\\bauti\\Downloads\\video2\\public\\tfbazucar.m4a,D:\\rtmp\\factory\\tfbazucar\\audio\\tfbazucar.wav",
+ "medido": {
+  "compuertas": 11,
+  "archivosRender": 32,
+  "assets": 466
+ },
+ "ms": 20569
+}

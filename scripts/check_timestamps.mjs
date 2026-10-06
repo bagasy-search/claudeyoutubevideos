@@ -7,7 +7,9 @@
 //
 //   node scripts/check_timestamps.mjs <final.mp4> [fps=30]     · exit 1 = NO entregar
 import { execFileSync } from "node:child_process";
-const FFPROBE = "C:/Users/bauti/AppData/Local/Microsoft/WinGet/Links/ffprobe.exe";
+import { existsSync } from "node:fs";
+const WG_PROBE = "C:/Users/bauti/AppData/Local/Microsoft/WinGet/Links/ffprobe.exe";
+const FFPROBE = process.env.FFPROBE || (existsSync(WG_PROBE) ? WG_PROBE : "ffprobe");
 const [mp4, fpsArg] = process.argv.slice(2);
 if (!mp4) { console.error("uso: node scripts/check_timestamps.mjs <final.mp4> [fps]"); process.exit(2); }
 const FPS = Number(fpsArg || 30), DT = 1 / FPS;
@@ -23,6 +25,8 @@ console.log(`declarado ${r} (${val(r).toFixed(3)}) · real ${avg} (${val(avg).to
 // 2) la medición que manda: cada delta entre cuadros tiene que ser 1/fps
 const pts = pr(["-select_streams", "v", "-show_entries", "frame=pts_time", "-of", "csv=p=0"])
   .split("\n").map((s) => parseFloat(s)).filter(Number.isFinite).sort((a, b) => a - b);
+// ⛔ fail-closed (fábrica, 15-sep-2026): con 0 cuadros el bucle no corría y daba "✓ timestamps perfectos"
+if (pts.length < FPS) { console.error(`⛔ NO MIDIÓ: ${pts.length} cuadros leídos (mínimo ${FPS}) — no se puede dar verde`); process.exit(2); }
 const malos = [];
 let muerto = 0;
 for (let i = 1; i < pts.length; i++) {

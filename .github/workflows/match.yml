@@ -34,8 +34,8 @@ jobs:
           echo "matrix=$LIST" >> "$GITHUB_OUTPUT"
       # PREFETCH del modelo CLIP UNA sola vez (los 20 shards lo bajaban a la vez de HF
       # → rate-limit → fallaban). Acá se baja 1 vez y se cachea; los shards lo restauran.
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: "20"
       - name: cache node_modules
@@ -65,8 +65,8 @@ jobs:
       matrix:
         idx: ${{ fromJSON(needs.prepare.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: "20"
       # CACHE node_modules (incluye el binario de onnxruntime-node) → evita el npm ci
@@ -139,10 +139,13 @@ jobs:
       # match_runner corre "sin cookies" cuando cookies/ tiene SOLO proxies.txt.
       - name: match shard
         env:
-          MATCH_CANDS: "2"
+          MATCH_CANDS: "5"
           MATCH_MAXSPAN: "90"
           MATCH_COARSE: "22"
-          MATCH_POOL: "10"
+          MATCH_POOL: "12"
+          MATCH_PAR: "4"        # conceptos procesados en paralelo por shard (async)
+          MATCH_NET_MAX: "8"    # tope de descargas/búsquedas yt-dlp concurrentes (protege el proxy)
+          MATCH_SHARD_MAX_MIN: "16"  # deadline por shard → un shard rate-limiteado no arrastra el run
         run: node scripts/match_runner.mjs "${{ github.event.inputs.slug }}" ${{ matrix.idx }} ${{ github.event.inputs.chunks }} "match_${{ github.event.inputs.slug }}.json"
       - uses: actions/upload-artifact@v4
         with:
@@ -155,7 +158,7 @@ jobs:
     if: ${{ always() }}   # mergea lo que haya, aunque algún shard falle (no perder todo)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/download-artifact@v4
         with:
           path: parts

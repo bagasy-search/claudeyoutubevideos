@@ -59,9 +59,9 @@ const snapSent = (t) => snapNear(t, sentEnd, 0.75) ?? snapWord(t);
 
 // ── POOL de clips por sección (los 64 i2v de Mike haciendo CADA microacción del guion) ───────
 const P = {
-  hook:      ["h01_handle", "h02_sbend", "h03_gurgle", "h04_rimfinger"],
+  hook:      ["h01_handle", "h02_sbend", "h04_rimfinger"],   // ⛔ h03_gurgle descartado: el i2v lo duplica en dos personas
   rim:       ["h04_rimfinger", "h05_mirror", "h06_scrubwrong", "h07_pointbowl"],
-  give:      ["h08_valve", "h09_drain", "h10_bottle", "h11_squirtrim", "h12_paperring", "h13_soakpaper", "h14_tanklid", "h15_pourtank", "h16_wait", "h17_brushring"],
+  give:      ["h08_valve", "h09_drain", "h10_bottle", "h11_squirtrim", "h12_paperring", "h13_soakpaper", "h14_tanklid", "h16_wait", "h17_brushring"],   // ⛔ sin h15_pourtank (el interior del tanque muta)
   biointro:  ["h18_pointring", "h20_wipecolor", "h19_twobottles"],
   bioperox:  ["h21_breakfilm", "h22_calendar", "h19_twobottles", "h10_bottle", "h18_pointring"],
   tankstory: ["h23_tubedge", "h24_pumice", "h25_phonecall", "h26_liftlid", "h27_blackfinger", "h28_flapper", "h29_invoice"],
@@ -69,7 +69,7 @@ const P = {
   ordvalve:  ["h08_valve", "h30_valveweep", "h31_newvalve", "h09_drain"],
   ordrim:    ["h11_squirtrim", "h32_phonerim", "h33_phonelook", "h05_mirror", "h04_rimfinger"],
   ordring:   ["h12_paperring", "h13_soakpaper", "h34_walkout", "h17_brushring"],
-  ordtank:   ["h14_tanklid", "h15_pourtank", "h35_brushtank", "h28_flapper", "h36_newflapper", "h37_bluetablet", "h38_sticker"],
+  ordtank:   ["h14_tanklid", "h35_brushtank", "h28_flapper", "h36_newflapper", "h37_bluetablet", "h38_sticker"],
   jets2:     ["h40_wirejet", "h41_goodswirl", "h39_vinegar"],
   ordnobody: ["h42_hingecap", "h43_toothbrushbolt", "h44_handle", "h45_baseseam"],
   ordbrush:  ["h46_caddy", "h47_rinsebrush", "h48_wedgebrush", "h49_pourcaddy"],

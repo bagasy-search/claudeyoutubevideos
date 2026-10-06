@@ -120,14 +120,27 @@ let placed = 0, segs = 0;
 // ── DINAMISMO PAREJO (lección barcos): ningún clip se sostiene > MAXHOLD. Si un hueco (ventanas
 //    sin clip) obliga a estirar, se CORTA en trozos alternando clips vecinos (leve reuso > toma estática). ──
 const MAXHOLD = +(process.env.MAX_HOLD || 7);
+// ── anti-LOOP: nunca repetir el mismo clip dentro de una ventana. Al rellenar un
+//    hueco largo, en vez de alternar SOLO los vecinos inmediatos (que hacía que 2-3
+//    clips se repitieran visiblemente), se toma el clip disponible MÁS CERCANO que
+//    NO se haya usado en los últimos RECENT trozos → variedad real, sin loops. ──
+const RECENT = +(process.env.NO_REPEAT || 6);
+const recentUsed = [];
+const pickDistinct = (i) => {
+  // candidatos ordenados por cercanía al hueco (i), saltando los usados recién
+  const order = avail.map((c, j) => [j, Math.abs(j - i)]).sort((x, y) => x[1] - y[1]);
+  for (const [j] of order) if (!recentUsed.includes(avail[j].name)) { recentUsed.push(avail[j].name); if (recentUsed.length > RECENT) recentUsed.shift(); return avail[j].name; }
+  return avail[Math.min(avail.length - 1, Math.max(0, i))].name; // fallback (pool chico)
+};
 const emitRaw = (a, b, i) => {
   const span = +(b - a).toFixed(2);
   if (span <= 0.1) return;
   const n = Math.max(1, Math.ceil(span / MAXHOLD));
   const piece = span / n;
   for (let k = 0; k < n; k++) {
-    const off = n === 1 ? 0 : ([0, 1, -1, 2, -2, 3, -3][k % 7]); // alterna vecinos en huecos largos
-    const src = avail[Math.min(avail.length - 1, Math.max(0, i + off))].name;
+    // el 1er trozo usa el clip propio del cue (i); los siguientes, clips DISTINTOS del pool
+    const src = k === 0 ? avail[Math.min(avail.length - 1, Math.max(0, i))].name : pickDistinct(i + k);
+    if (k === 0 && !recentUsed.includes(src)) { recentUsed.push(src); if (recentUsed.length > RECENT) recentUsed.shift(); }
     B.push({ id: nid("c"), start: +(a + k * piece).toFixed(2), dur: +piece.toFixed(2), kind: "raw", src: "broll/" + src + ".mp4", hue: hue4(a) });
     segs++;
   }
@@ -151,6 +164,29 @@ for (const c of comps) C(c.start, c.dur, c);
 for (const cc of coldCuts) B.push({ id: nid("c"), start: cc.start, dur: cc.dur, kind: "raw", src: "broll/" + cc.name + ".mp4", hue: "cold" });
 
 B.sort((x, y) => x.start - y.start);
+// ── PASE FINAL ANTI-LOOP: recorre los beats en orden; si un clip crudo queda
+//    VISUALMENTE pegado a otra aparición del MISMO clip (mismo src, sin componente
+//    full-screen entre medio), reemplaza el segundo por el clip disponible más
+//    cercano que no se usó en los últimos DEDUP beats. Mata el "clip que reinicia". ──
+{
+  const DEDUP = +(process.env.NO_REPEAT || 6);
+  const pool = avail.map((c) => "broll/" + c.name + ".mp4");
+  const recent = [];
+  let dedup = 0;
+  for (const b of B) {
+    if (b.overlay) continue;
+    if (b.kind !== "raw") { recent.length = 0; continue; } // componente full-screen corta la continuidad
+    if (recent.includes(b.src)) {
+      // buscar el más cercano en el pool que NO esté en recent
+      let best = null, bestD = Infinity;
+      const cur = pool.indexOf(b.src);
+      for (let j = 0; j < pool.length; j++) if (!recent.includes(pool[j])) { const d = Math.abs(j - (cur < 0 ? 0 : cur)); if (d < bestD) { bestD = d; best = pool[j]; } }
+      if (best) { b.src = best; dedup++; }
+    }
+    recent.push(b.src); if (recent.length > DEDUP) recent.shift();
+  }
+  if (dedup) console.log(`anti-loop: ${dedup} clips re-asignados (adyacencias iguales eliminadas)`);
+}
 fs.mkdirSync("beatsheet", { recursive: true });
 fs.writeFileSync(`beatsheet/${slug}.json`, JSON.stringify({ video: slug, clipsfirst: true, beats: B }, null, 1));
 fs.writeFileSync(`public/real/bing_${slug}.json`, JSON.stringify(I, null, 1));

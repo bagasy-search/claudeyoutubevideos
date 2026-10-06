@@ -514,13 +514,19 @@ export const BottleHero: React.FC<{
    4) CHAPTER TRAIL CARD — tarjeta "#N Título" que se dibuja sobre una estela
       de luz neón (ref V3, la del "#10"). Para los 9 capítulos/trucos.
    ══════════════════════════════════════════════════════════════════════ */
+// ⛔ `bed` (opcional, ago 2026): la choreografía de esta tarjeta ARRANCA de una cápsula fina
+// sobre negro, así que su primer segundo es una pantalla casi muerta. Medido en `mddrain`: los 4
+// capítulos dispararon `blackdetect` ~1 s cada uno. Pasándole la foto `_blur.jpg` de la sección,
+// ese segundo tiene MATERIA debajo (regla 2.quater de video-pipeline: cama de foto bajo todo
+// componente). Sin `bed` se comporta EXACTAMENTE como antes — los videos ya entregados no cambian.
 export const ChapterTrailCard: React.FC<{
   durationInFrames: number;
   number: string; // "#1"
   title: string;
   sub?: string;
+  bed?: string; // "img/mddrain_h07_wettowel_blur.jpg"
   sfx?: boolean;
-}> = ({durationInFrames, number, title, sub, sfx = true}) => {
+}> = ({durationInFrames, number, title, sub, bed, sfx = true}) => {
   const frame = useCurrentFrame();
   const D = durationInFrames;
   const prog = frame / D;
@@ -572,7 +578,20 @@ export const ChapterTrailCard: React.FC<{
   const curve2Path = 'M 1200 340 C 1420 300, 1620 300, 1860 210';
 
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(130% 130% at 50% 40%, #101318 0%, #060708 55%, #000 100%)'}}>
+    <AbsoluteFill style={{background: bed ? '#0A0A0C' : 'radial-gradient(130% 130% at 50% 40%, #101318 0%, #060708 55%, #000 100%)'}}>
+      {/* cama de foto: sólo si el beat la pasó. El `_blur.jpg` ya viene horneado (blur 0 acá). */}
+      {bed ? (
+        <>
+          <AbsoluteFill style={{overflow: 'hidden'}}>
+            <img
+              src={staticFile(bed)}
+              style={{width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.34) saturate(0.62)', transform: 'scale(1.14)'}}
+            />
+          </AbsoluteFill>
+          <AbsoluteFill style={{background: 'radial-gradient(130% 130% at 50% 40%, rgba(16,19,24,0.70) 0%, rgba(6,7,8,0.86) 55%, rgba(0,0,0,0.93) 100%)'}} />
+        </>
+      ) : null}
+
       {/* "#N" gigante fantasma */}
       <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', opacity: layO}}>
         <div style={{fontFamily: F_INTER, fontWeight: 900, fontSize: 640, color: 'rgba(210,225,255,0.035)', letterSpacing: -12}}>{'#' + nTarget}</div>

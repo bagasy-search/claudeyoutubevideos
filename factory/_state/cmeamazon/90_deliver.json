@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-17T22:42:11.811Z",
+ "status": "done",
+ "inputsHash": "f14eb41c2ec1a87b",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/cmeamazon/cmeamazon.mp4?v=1",
+  "version": 1,
+  "bytes": 629120897,
+  "durSec": 1401.6,
+  "saltosPts": 0,
+  "tramosNegros": 0,
+  "hoja": "D:\\rtmp\\factory\\cmeamazon\\audit\\hoja.jpg",
+  "bagasy": "entregado (--no-youtube)"
+ },
+ "ms": 1041238
+}

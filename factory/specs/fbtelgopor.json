@@ -1,0 +1,72 @@
+{
+  "slug": "fbtelgopor",
+  "canal": "freebuilder",
+  "modo": "avatar",
+  "idioma": "es",
+  "voz": {
+    "id": "freebuilder",
+    "blockChars": 1200
+  },
+  "avatar": {
+    "face": "public/ref/freebuilder_full.png",
+    "ref": "public/ref/freebuilder_face128.png"
+  },
+  "guion": "GUION_fbtelgopor.txt",
+  "titulo": "Mezclá CEMENTO con TELGOPOR y Mirá lo Que Pasa (Pesa la Mitad)",
+  "ctas": [
+    {
+      "ancla": "Y aquí va algo que aprendí gastando dinero de más",
+      "head": "Cuánto rinde cada material",
+      "sub": "Escanea el código",
+      "qr": "qr/fbtelgopor.png",
+      "durS": 9
+    },
+    {
+      "ancla": "Ese error me costó una pieza entera",
+      "head": "Qué no conviene tocar",
+      "sub": "Escanea el código",
+      "qr": "qr/fbtelgopor.png",
+      "durS": 9
+    }
+  ],
+  "cta": {
+    "ancla": "Si esto te sirvió",
+    "head": "Suscríbete al canal",
+    "sub": "La colección, en el enlace de abajo",
+    "qr": "qr/fbtelgopor.png"
+  },
+  "secciones": [
+    [
+      "GANCHO",
+      "Esto que estoy levantando con un dedo"
+    ],
+    [
+      "QUEES",
+      "Empecemos por entender qué estás haciendo"
+    ],
+    [
+      "FISICA",
+      "Ahora, la parte que nadie te dice"
+    ],
+    [
+      "METODO",
+      "Bueno. Vamos a la mezcla"
+    ],
+    [
+      "SINO",
+      "Ahora vamos a la parte que te va a ahorrar"
+    ],
+    [
+      "ERROR",
+      "Vamos al error"
+    ],
+    [
+      "CIERRE",
+      "Antes de cerrar, dos cosas cortas"
+    ]
+  ],
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UC-Xn4lJ35qOcf2px1BkHvEQ",
+    "cardId": "fbv61789671785526-p16_telgopor"
+  }
+}

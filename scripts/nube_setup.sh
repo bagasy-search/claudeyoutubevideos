@@ -1,0 +1,116 @@
+#!/bin/bash
+# Entorno "Videos" — corre al iniciar cada sesión. NO depende de la carpeta en la que arranque.
+# Sin variables: claude-brain se conecta a la sesión como 2º repo (o BRAIN_TOKEN=ghp_... como respaldo). Claves, skills y memoria salen del repo PRIVADO claude-brain.
+LOG=~/setup_videos.log
+exec > >(tee -a "$LOG") 2>&1
+echo "=== setup Videos $(date -u +%FT%TZ) · pwd=$(pwd) · HOME=$HOME"
+
+# 1) herramientas del sistema
+(apt-get update -qq && apt-get install -y -qq ffmpeg jq gh >/dev/null) || sudo apt-get install -y -qq ffmpeg jq gh >/dev/null || true
+pip install -q modal openai requests yt-dlp "rembg[cpu]" opencv-python-headless 2>/dev/null || true   # rembg: respaldos 2.5D/matte sin Modal (Modal no pasa el proxy)
+
+npm install -g @qwen-code/qwen-code >/dev/null 2>&1 || true   # agente Qwen (trabajador barato, ver CLAUDE.md global)
+pip install -q faster-whisper 2>/dev/null || true             # ASR local: 3er respaldo de 20_asr (sin Modal ni OpenAI)
+
+# 2) cerebro desde claude-brain → ~/.video2-secrets, ~/.claude/skills, ~/.claude/memoria
+# Acceso a claude-brain, en orden:
+#  1) proxy de GitHub de la nube (claude-brain conectado a la sesión como 2º repo) — sin token
+#  2) BRAIN_TOKEN (token real, si lo cargaste en el entorno; GH_TOKEN lo pisa la nube)
+#  3) GH_TOKEN sólo si es un token real (ghp_ / github_pat_)
+B=/tmp/claude-brain; rm -rf "$B"; OK=
+git clone -q --depth 1 https://github.com/bautielcrack4-web/claude-brain.git "$B" 2>/dev/null && OK=proxy
+if [ -z "$OK" ]; then
+  for T in "${BRAIN_TOKEN:-}" "${GH_TOKEN:-}"; do
+    case "$T" in ghp_*|github_pat_*) rm -rf "$B"; git clone -q --depth 1 "https://x-access-token:${T}@github.com/bautielcrack4-web/claude-brain.git" "$B" 2>/dev/null && { OK=token; break; } ;; esac
+  done
+fi
+if [ -z "$OK" ]; then
+  echo "!! no pude clonar claude-brain: conectá bautielcrack4-web/claude-brain a la sesión (botón + junto al repo) o cargá BRAIN_TOKEN=ghp_... en el entorno"; exit 0
+fi
+echo "claude-brain clonado vía $OK"
+S=~/.video2-secrets; mkdir -p "$S" ~/.claude/skills ~/.claude/memoria
+cp "$B/secretos/"* "$S/"
+cp "$S/modal.toml" ~/.modal.toml
+cp -r "$B/skills/." ~/.claude/skills/
+cp -r "$B/memory/." ~/.claude/memoria/
+# assets por canal que el repo público no lleva (voz ref, cara, sfx) → se vuelcan sobre el repo en bootstrap
+[ -d "$B/canales" ] && { rm -rf "$S/canales"; cp -r "$B/canales" "$S/canales"; }
+rm -rf "$B"
+
+# 3) script que prepara el REPO (se puede correr en cualquier momento, desde cualquier lado)
+cat > "$S/bootstrap_repo.sh" <<'BOOT'
+#!/bin/bash
+# Prepara el repo de videos: .env, .env.local, memoria del proyecto y node_modules.
+S=~/.video2-secrets
+R="${1:-}"
+[ -z "$R" ] && R=$(git rev-parse --show-toplevel 2>/dev/null)
+if [ -z "$R" ] || [ ! -f "$R/scripts/farm.mjs" ]; then
+  R=$(find "$HOME" /home /workspace /workspaces /code /root /srv /mnt /tmp -maxdepth 5 -path '*/scripts/farm.mjs' -not -path '*/node_modules/*' 2>/dev/null | head -1 | xargs -r dirname | xargs -r dirname)
+fi
+[ -z "$R" ] && { echo "bootstrap: todavía no encuentro el repo (scripts/farm.mjs)"; exit 1; }
+cp "$S/video2.env" "$R/.env"; cp "$S/video2.env.local" "$R/.env.local"
+# paquetes de canal (claude-brain/canales/<canal>/...) replican las rutas del repo
+for C in "$S"/canales/*/; do [ -d "$C" ] && cp -r "$C." "$R/"; done
+P=~/.claude/projects/$(echo "$R" | sed 's/[^A-Za-z0-9]/-/g')/memory
+mkdir -p "$P" && cp -r ~/.claude/memoria/. "$P/"
+[ -d "$R/node_modules" ] || (cd "$R" && (npm ci --no-audit --no-fund || npm install --no-audit --no-fund) && npx remotion browser ensure >/dev/null 2>&1)
+[ -f "$R/scripts/brain_to_qwen.sh" ] && bash "$R/scripts/brain_to_qwen.sh" >/dev/null 2>&1 || true   # memoria de Claude → agente Qwen
+echo "bootstrap OK → $R (.env $(grep -c = "$R/.env") claves)"
+BOOT
+chmod +x "$S/bootstrap_repo.sh"
+
+# 4) claves como variables para cada shell
+grep -q 'video2-secrets' ~/.bashrc 2>/dev/null || cat >> ~/.bashrc <<'RC'
+# video2-secrets
+set -a; . ~/.video2-secrets/video2.env 2>/dev/null; . ~/.video2-secrets/video2.env.local 2>/dev/null; set +a
+RC
+
+# 4a) la fábrica sin disco D: (paths.mjs / 80_render / agnes_pool leen estas variables)
+grep -q FACTORY_WORK ~/.bashrc || cat >> ~/.bashrc <<'RC'
+export FACTORY_WORK=$HOME/fwork FACTORY_FINALS=$HOME/finals FACTORY_TAR_DIR=$HOME/tar/ AGNES_POOL_DIR=$HOME/agnes_pool
+mkdir -p $HOME/fwork $HOME/finals $HOME/tar $HOME/agnes_pool
+RC
+
+# 4b) Remotion en la nube: Chrome headless_shell de Playwright + CAs del proxy en el NSS de Chrome
+CHROME=$(ls /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell 2>/dev/null | head -1)
+if [ -n "$CHROME" ]; then
+  grep -q REMOTION_CHROME ~/.bashrc || echo "export REMOTION_CHROME=$CHROME" >> ~/.bashrc
+fi
+if [ -f /root/.ccr/ca-bundle.crt ] && command -v certutil >/dev/null || apt-get install -y -qq libnss3-tools >/dev/null 2>&1; then
+  mkdir -p ~/.pki/nssdb; [ -f ~/.pki/nssdb/cert9.db ] || certutil -N -d sql:$HOME/.pki/nssdb --empty-password
+  D=$(mktemp -d); (cd "$D" && csplit -s -z -f c- /root/.ccr/ca-bundle.crt '/-----BEGIN CERTIFICATE-----/' '{*}' 2>/dev/null)
+  for c in "$D"/c-*; do subj=$(openssl x509 -noout -subject -in "$c" 2>/dev/null); case "$subj" in *Anthropic*) certutil -A -d sql:$HOME/.pki/nssdb -t "C,," -n "$(echo "$subj" | sed 's/.*CN *= *//')" -i "$c" 2>/dev/null;; esac; done; rm -rf "$D"
+fi
+cp ~/.bashrc ~/.bash_profile 2>/dev/null || true
+
+# 5) instrucciones para Claude en TODAS las sesiones
+if ! grep -q 'video2-secrets' ~/.claude/CLAUDE.md 2>/dev/null; then
+  cat >> ~/.claude/CLAUDE.md <<'MD'
+# Sesión en la NUBE — entorno "Videos"
+- PRIMER PASO de cada sesión: `bash ~/.video2-secrets/bootstrap_repo.sh` (pone .env/.env.local en el repo, la memoria del proyecto y node_modules). Si no existe, el setup falló: leé `~/setup_videos.log`.
+- Claves: `set -a; . ~/.video2-secrets/video2.env; . ~/.video2-secrets/video2.env.local; set +a`. No imprimirlas ni commitearlas: el repo es PÚBLICO.
+- Memoria del creador: @~/.claude/memoria/MEMORY.md — leé el .md de cada tema antes de actuar.
+- Skills del creador en ~/.claude/skills. Rama de trabajo: `nube`. Sin disco D:, GPU local, ComfyUI ni Chrome.
+- Remotion local (stills/pruebas): `npx remotion still ... --browser-executable="$REMOTION_CHROME"`. Los renders de verdad van al FARM (`node scripts/farm.mjs`).
+- ⛔ MODAL NO ANDA en la nube (usa gRPC y el proxy no lo soporta): el ASR va por el respaldo `whisper-1` de OpenAI.
+- `public/` viene casi vacío (los assets no están en git): se generan en la sesión y el farm los empaqueta desde este disco.
+- Español rioplatense.
+MD
+fi
+
+if ! grep -q 'Qwen como trabajador' ~/.claude/CLAUDE.md 2>/dev/null; then
+  cat >> ~/.claude/CLAUDE.md <<'MD'
+# Qwen como trabajador barato (decisión del creador, 05-oct-2026)
+Claude ORQUESTA; Qwen (AIHubMix, clave AIHUBMIX_KEY) hace el trabajo pesado y lo cobra por API a centavos.
+- "Hacé el video X" → piloto automático: `LLM_MODEL=qwen3.8-max LLM_THINK=0 FACTORY_AVATAR_NO_PAGAR=<1 si se reusa avatar> node factory/tools/autopilot.mjs <slug> --max-usd 2 [--render-local]` (si OpenAI está caída: `FACTORY_IMG_MOTOR=agnes`). Medido: US$0,185 un video de 3 min, ≈US$1,6–1,9 uno de 20.
+- "Creá un componente / estilo / arreglá algo nuevo" → `bash scripts/qwen_agente.sh "<tarea>"` (agente Qwen Code con la memoria clonada; `--razonar` sólo si falla sin razonar). Revisá el resultado (render + cuadros) antes de dárselo por bueno al creador.
+- Claude sólo interviene en lo que estos dos no resuelven, y lo convierte en regla del piloto/compuerta para que no vuelva a pasar.
+MD
+fi
+
+git config --global user.name "BagasyStudio"
+git config --global user.email "bautielcrack4@gmail.com"
+
+# 6) si el repo ya está clonado, lo dejo listo ya
+"$S/bootstrap_repo.sh" || echo "(el repo todavía no está: Claude corre el bootstrap al arrancar)"
+echo "=== setup Videos OK"

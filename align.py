@@ -7,6 +7,7 @@
 #   escribe public/captions_<slug>_aligned.json  ({text,startMs,endMs,timestampMs,confidence})
 import sys, os, json, wave
 import numpy as np
+import torch
 import stable_whisper
 
 slug = sys.argv[1]
@@ -26,8 +27,9 @@ def load_wav16(path):
     raw = wf.readframes(wf.getnframes()); wf.close()
     return np.frombuffer(raw, np.int16).astype(np.float32) / 32768.0
 
-print(f"cargando whisper {model_name} (GPU)…")
-model = stable_whisper.load_model(model_name)
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"cargando whisper {model_name} ({device})…")
+model = stable_whisper.load_model(model_name, device=device)
 print(f"alineando {wav} con el guion ({len(text)} chars)…")
 audio = load_wav16(wav)
 result = model.align(audio, text, language=lang)

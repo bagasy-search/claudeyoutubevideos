@@ -1,0 +1,2454 @@
+{
+ "video": "drymouth60",
+ "avatar": "drymouth60_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "dm_hero_wake_dry",
+   "start": 2.56,
+   "dur": 1.44,
+   "cov": 1.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_wake_dry.mp4"
+  },
+  {
+   "id": "dm_ins_drylips_macro",
+   "start": 4,
+   "dur": 1.76,
+   "cov": 1.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_drylips_macro.jpg"
+  },
+  {
+   "id": "dm_ins_dry_throat",
+   "start": 5.76,
+   "dur": 1.2,
+   "cov": 1.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_dry_throat.jpg"
+  },
+  {
+   "id": "dm_ins_drylips_macro",
+   "start": 6.96,
+   "dur": 1.92,
+   "cov": 1.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_drylips_macro.jpg"
+  },
+  {
+   "id": "dm_ins_water_nightstand",
+   "start": 8.88,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_water_nightstand.jpg"
+  },
+  {
+   "id": "dm_ins_empty_glass_2am",
+   "start": 12.56,
+   "dur": 6.4,
+   "cov": 6.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_empty_glass_2am.jpg"
+  },
+  {
+   "id": "cmp_0_frasecinetica",
+   "start": 12.56,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "NOT"
+    },
+    {
+     "t": "AGE."
+    },
+    {
+     "t": "A"
+    },
+    {
+     "t": "WARNING.",
+     "hl": true
+    }
+   ],
+   "perWord": 11,
+   "tone": "teal"
+  },
+  {
+   "id": "dm_hero_explain",
+   "start": 20.64,
+   "dur": 1.92,
+   "cov": 1.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_explain.mp4"
+  },
+  {
+   "id": "dm_ins_bakingsoda_jar",
+   "start": 22.56,
+   "dur": 4,
+   "cov": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bakingsoda_jar.jpg"
+  },
+  {
+   "id": "dm_ins_car_oil_light",
+   "start": 34.24,
+   "dur": 3.5,
+   "cov": 3.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_car_oil_light.jpg"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 38.8,
+   "dur": 2.72,
+   "cov": 2.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 41.52,
+   "dur": 3.12,
+   "cov": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "dm_ins_sleep_mouthopen",
+   "start": 44.64,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_sleep_mouthopen.jpg"
+  },
+  {
+   "id": "dm_ins_teeth_enamel",
+   "start": 61.36,
+   "dur": 3.8,
+   "cov": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_teeth_enamel.jpg"
+  },
+  {
+   "id": "dm_ins_teeth_enamel",
+   "start": 67.52,
+   "dur": 5.64,
+   "cov": 5.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_teeth_enamel.jpg"
+  },
+  {
+   "id": "dm_ins_gumline",
+   "start": 78.32,
+   "dur": 3.6,
+   "cov": 3.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_gumline.jpg"
+  },
+  {
+   "id": "dm_ins_tongue_dry",
+   "start": 81.92,
+   "dur": 2.88,
+   "cov": 2.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_tongue_dry.jpg"
+  },
+  {
+   "id": "dm_hero_explain",
+   "start": 84.8,
+   "dur": 7.76,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_explain.mp4"
+  },
+  {
+   "id": "cmp_3_freezezoom",
+   "start": 84.8,
+   "dur": 5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/dm_diagram_nightguard.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 1.05,
+   "label": "Your mouth's night guard"
+  },
+  {
+   "id": "dm_ins_sleep_mouthopen",
+   "start": 92.56,
+   "dur": 5.2,
+   "cov": 5.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_sleep_mouthopen.jpg"
+  },
+  {
+   "id": "cmp_4_freezezoom",
+   "start": 92.56,
+   "dur": 5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/dm_diagram_nightguard.jpg",
+   "x": 0.72,
+   "y": 0.5,
+   "zoom": 1.6,
+   "label": "Guard off while you sleep"
+  },
+  {
+   "id": "dm_stk_clock_night",
+   "start": 106.88,
+   "dur": 4.96,
+   "cov": 4.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_stk_clock_night.mp4"
+  },
+  {
+   "id": "dm_ins_gumline",
+   "start": 111.84,
+   "dur": 3.36,
+   "cov": 3.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_gumline.jpg"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 115.2,
+   "dur": 4.16,
+   "cov": 4.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_stk_bedroom_dark",
+   "start": 119.36,
+   "dur": 1.6,
+   "cov": 1.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_stk_bedroom_dark.mp4"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 120.96,
+   "dur": 6.96,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "dm_stk_person_sleeping",
+   "start": 127.92,
+   "dur": 3.76,
+   "cov": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_stk_person_sleeping.mp4"
+  },
+  {
+   "id": "dm_ins_side_sleeping",
+   "start": 131.68,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_side_sleeping.jpg"
+  },
+  {
+   "id": "dm_hero_explain",
+   "start": 136.4,
+   "dur": 2.56,
+   "cov": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_explain.mp4"
+  },
+  {
+   "id": "dm_hero_explain",
+   "start": 138.96,
+   "dur": 1.68,
+   "cov": 1.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_explain.jpg"
+  },
+  {
+   "id": "dm_ins_water_nightstand",
+   "start": 140.64,
+   "dur": 4,
+   "cov": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_water_nightstand.jpg"
+  },
+  {
+   "id": "dm_ins_water_nightstand",
+   "start": 148.24,
+   "dur": 2.08,
+   "cov": 2.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_water_nightstand.jpg"
+  },
+  {
+   "id": "cmp_1_mitoverdad",
+   "start": 148.24,
+   "dur": 7,
+   "key": "s",
+   "kind": "mitoverdad",
+   "myth": "It's just age — drink more water",
+   "truth": "It's usually your meds, your breathing and your room — and it's fixable",
+   "image": "img/dm_ins_water_nightstand.jpg",
+   "flipAt": 88
+  },
+  {
+   "id": "dm_ins_water_pour",
+   "start": 150.32,
+   "dur": 3.28,
+   "cov": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_water_pour.jpg"
+  },
+  {
+   "id": "dm_ins_empty_glass_2am",
+   "start": 153.6,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_empty_glass_2am.jpg"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 158.8,
+   "dur": 3.04,
+   "cov": 3.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "dm_ins_pill_bottles",
+   "start": 161.84,
+   "dur": 7.52,
+   "cov": 7.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_pill_bottles.jpg"
+  },
+  {
+   "id": "cmp_6_datoimpacto",
+   "start": 165.68,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "datoimpacto",
+   "figure": "80%",
+   "eyebrow": "ONE CAUSE DOES MOST OF IT",
+   "label": "in most people over 60, medications are the biggest driver",
+   "image": "img/dm_ins_pill_bottles.jpg",
+   "tone": "gold"
+  },
+  {
+   "id": "dm_hero_medicine_cabinet",
+   "start": 169.36,
+   "dur": 5.04,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_medicine_cabinet.mp4"
+  },
+  {
+   "id": "cmp_2_errorstinger",
+   "start": 169.36,
+   "dur": 2.6,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "1",
+   "title": "THE CAUSE HIDING IN YOUR CABINET",
+   "eyebrow": "revealed in a minute",
+   "tone": "warn"
+  },
+  {
+   "id": "dm_hero_desk_consult",
+   "start": 174.4,
+   "dur": 5.84,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_desk_consult.mp4"
+  },
+  {
+   "id": "dm_hero_desk_consult_t0",
+   "start": 179.4,
+   "dur": 0.84,
+   "cov": 0.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_desk_consult.jpg"
+  },
+  {
+   "id": "dm_ins_walter_hands",
+   "start": 180.24,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_walter_hands.jpg"
+  },
+  {
+   "id": "dm_hero_wake_dry",
+   "start": 190.08,
+   "dur": 1.12,
+   "cov": 1.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_wake_dry.jpg"
+  },
+  {
+   "id": "dm_ins_drylips_macro",
+   "start": 191.2,
+   "dur": 2.8,
+   "cov": 2.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_drylips_macro.jpg"
+  },
+  {
+   "id": "dm_ins_bad_breath_morning",
+   "start": 194,
+   "dur": 3.5,
+   "cov": 3.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bad_breath_morning.jpg"
+  },
+  {
+   "id": "dm_ins_gumline",
+   "start": 204.8,
+   "dur": 4.96,
+   "cov": 4.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_gumline.jpg"
+  },
+  {
+   "id": "dm_ins_teeth_enamel",
+   "start": 209.76,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_teeth_enamel.jpg"
+  },
+  {
+   "id": "dm_hero_desk_consult",
+   "start": 222.96,
+   "dur": 10.4,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_desk_consult.mp4"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 233.36,
+   "dur": 17.52,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "cmp_5_checklist",
+   "start": 239.52,
+   "dur": 9,
+   "key": "s",
+   "kind": "checklist",
+   "title": "Six night-time causes",
+   "eyebrow": "NOT AGE",
+   "tone": "warn",
+   "items": [
+    {
+     "text": "Your medications — over 400 dry the mouth.",
+     "state": "warn"
+    },
+    {
+     "text": "Mouth-breathing at night (often with snoring).",
+     "state": "warn"
+    },
+    {
+     "text": "Dry bedroom air — heating, AC, a fan.",
+     "state": "warn"
+    },
+    {
+     "text": "Alcohol mouthwash — it dries you more.",
+     "state": "warn"
+    },
+    {
+     "text": "Evening coffee, wine and salt.",
+     "state": "warn"
+    },
+    {
+     "text": "A warning sign of something bigger.",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "dm_hero_medicine_cabinet",
+   "start": 250.88,
+   "dur": 3.28,
+   "cov": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_medicine_cabinet.mp4"
+  },
+  {
+   "id": "dm_ins_pill_bottles",
+   "start": 254.16,
+   "dur": 3.8,
+   "cov": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_pill_bottles.jpg"
+  },
+  {
+   "id": "cmp_7_datoimpacto",
+   "start": 254.16,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "datoimpacto",
+   "figure": "400+",
+   "eyebrow": "COMMON MEDS THAT DRY THE MOUTH",
+   "label": "blood-pressure, water pills, allergy, antidepressants, bladder",
+   "image": "img/dm_ins_pill_bottles.jpg",
+   "tone": "teal"
+  },
+  {
+   "id": "dm_hero_medicine_cabinet",
+   "start": 263.92,
+   "dur": 1.84,
+   "cov": 1.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_medicine_cabinet.jpg"
+  },
+  {
+   "id": "dm_ins_bp_cuff",
+   "start": 265.76,
+   "dur": 1.36,
+   "cov": 1.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bp_cuff.jpg"
+  },
+  {
+   "id": "dm_ins_diuretic",
+   "start": 267.12,
+   "dur": 4.48,
+   "cov": 4.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_diuretic.jpg"
+  },
+  {
+   "id": "dm_ins_pill_bottles",
+   "start": 271.6,
+   "dur": 3.44,
+   "cov": 3.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_pill_bottles.jpg"
+  },
+  {
+   "id": "dm_ins_nightstand_pills",
+   "start": 275.04,
+   "dur": 3.5,
+   "cov": 3.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_nightstand_pills.jpg"
+  },
+  {
+   "id": "dm_ins_nightstand_pills",
+   "start": 280.4,
+   "dur": 2.32,
+   "cov": 2.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_nightstand_pills.jpg"
+  },
+  {
+   "id": "dm_ins_pill_palm",
+   "start": 282.72,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_pill_palm.jpg"
+  },
+  {
+   "id": "dm_hero_hold_pills",
+   "start": 289.04,
+   "dur": 4.24,
+   "cov": 4.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_hold_pills.mp4"
+  },
+  {
+   "id": "dm_stk_pills_bottle",
+   "start": 293.28,
+   "dur": 2.96,
+   "cov": 2.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_stk_pills_bottle.mp4"
+  },
+  {
+   "id": "dm_hero_hold_pills",
+   "start": 296.24,
+   "dur": 1.12,
+   "cov": 1.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_hold_pills.jpg"
+  },
+  {
+   "id": "dm_ins_water_nightstand",
+   "start": 297.36,
+   "dur": 2.4,
+   "cov": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_water_nightstand.jpg"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 299.76,
+   "dur": 7.04,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "cmp_11_checklist",
+   "start": 299.76,
+   "dur": 9,
+   "key": "s",
+   "kind": "checklist",
+   "title": "Please — before you change anything",
+   "eyebrow": "HONEST",
+   "tone": "warn",
+   "items": [
+    {
+     "text": "Never stop a medication on your own.",
+     "state": "warn"
+    },
+    {
+     "text": "Ask your doctor about a gentler swap or the timing.",
+     "state": "done"
+    },
+    {
+     "text": "Still dry after 2-3 weeks? A1c + a full medication review.",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "dm_hero_explain",
+   "start": 306.8,
+   "dur": 6.88,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_explain.mp4"
+  },
+  {
+   "id": "dm_ins_pill_bottles",
+   "start": 313.68,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_pill_bottles.jpg"
+  },
+  {
+   "id": "dm_ins_pill_bottles",
+   "start": 324,
+   "dur": 6.4,
+   "cov": 6.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_pill_bottles.jpg"
+  },
+  {
+   "id": "dm_ins_sleep_mouthopen",
+   "start": 333.76,
+   "dur": 4,
+   "cov": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_sleep_mouthopen.jpg"
+  },
+  {
+   "id": "dm_ins_saline_bottle",
+   "start": 338.8,
+   "dur": 8.4,
+   "cov": 8.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_saline_bottle.jpg"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 347.2,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_ins_bread_drying",
+   "start": 350.88,
+   "dur": 5.12,
+   "cov": 5.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bread_drying.jpg"
+  },
+  {
+   "id": "dm_ins_sleep_mouthopen",
+   "start": 356,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_sleep_mouthopen.jpg"
+  },
+  {
+   "id": "dm_ins_car_oil_light",
+   "start": 361.92,
+   "dur": 3.12,
+   "cov": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_car_oil_light.jpg"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 365.04,
+   "dur": 4,
+   "cov": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_ins_ceiling_fan",
+   "start": 369.04,
+   "dur": 2.24,
+   "cov": 2.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_ins_ceiling_fan.mp4"
+  },
+  {
+   "id": "dm_ins_ac_vent",
+   "start": 371.28,
+   "dur": 3.5,
+   "cov": 3.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_ac_vent.jpg"
+  },
+  {
+   "id": "dm_stk_water_pour",
+   "start": 378.08,
+   "dur": 2.56,
+   "cov": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_stk_water_pour.mp4"
+  },
+  {
+   "id": "dm_ins_ac_vent",
+   "start": 380.64,
+   "dur": 8.64,
+   "cov": 6.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_ins_ac_vent.mp4"
+  },
+  {
+   "id": "cmp_25_lowerthird",
+   "start": 380.64,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Dry bedroom air pulls the moisture out of you",
+   "kicker": "heating, AC, a fan",
+   "desc": "a humidifier or a bowl of water by the vent",
+   "tone": "warn"
+  },
+  {
+   "id": "dm_ins_mouthwash_bottle",
+   "start": 389.28,
+   "dur": 5.2,
+   "cov": 5.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_mouthwash_bottle.jpg"
+  },
+  {
+   "id": "cmp_8_mitoverdad",
+   "start": 389.28,
+   "dur": 7,
+   "key": "s",
+   "kind": "mitoverdad",
+   "myth": "Mouthwash fixes dry-mouth breath",
+   "truth": "Alcohol mouthwash DRIES you more — swap it for a baking-soda rinse",
+   "image": "img/dm_ins_mouthwash_bottle.jpg",
+   "flipAt": 88
+  },
+  {
+   "id": "dm_ins_bad_breath_morning",
+   "start": 394.64,
+   "dur": 1.12,
+   "cov": 1.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bad_breath_morning.jpg"
+  },
+  {
+   "id": "dm_ins_mouthwash_pour",
+   "start": 395.76,
+   "dur": 3.8,
+   "cov": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_mouthwash_pour.jpg"
+  },
+  {
+   "id": "dm_ins_drylips_macro",
+   "start": 400.56,
+   "dur": 5.6,
+   "cov": 5.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_drylips_macro.jpg"
+  },
+  {
+   "id": "dm_ins_mouthwash_pour",
+   "start": 409.92,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_mouthwash_pour.jpg"
+  },
+  {
+   "id": "dm_ins_mouthwash_bottle",
+   "start": 414.48,
+   "dur": 3.52,
+   "cov": 3.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_mouthwash_bottle.jpg"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 418,
+   "dur": 2.32,
+   "cov": 2.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "dm_ins_wine_night",
+   "start": 420.32,
+   "dur": 2.4,
+   "cov": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_wine_night.jpg"
+  },
+  {
+   "id": "dm_stk_wine_pour",
+   "start": 422.72,
+   "dur": 2.88,
+   "cov": 2.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_stk_wine_pour.mp4"
+  },
+  {
+   "id": "dm_ins_coffee_evening",
+   "start": 425.6,
+   "dur": 1.12,
+   "cov": 1.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_coffee_evening.jpg"
+  },
+  {
+   "id": "dm_ins_tea_evening",
+   "start": 426.72,
+   "dur": 1.36,
+   "cov": 1.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_tea_evening.jpg"
+  },
+  {
+   "id": "dm_stk_coffee_steam",
+   "start": 428.08,
+   "dur": 3.76,
+   "cov": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_stk_coffee_steam.mp4"
+  },
+  {
+   "id": "dm_ins_salty_dinner",
+   "start": 431.84,
+   "dur": 1.2,
+   "cov": 1.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_salty_dinner.jpg"
+  },
+  {
+   "id": "dm_ins_wine_pour",
+   "start": 433.04,
+   "dur": 2.16,
+   "cov": 2.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_wine_pour.jpg"
+  },
+  {
+   "id": "dm_ins_salt_shaker",
+   "start": 435.2,
+   "dur": 5.6,
+   "cov": 5.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_salt_shaker.jpg"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 441.44,
+   "dur": 2.96,
+   "cov": 2.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_ins_coffee_evening",
+   "start": 444.4,
+   "dur": 3.52,
+   "cov": 3.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_coffee_evening.jpg"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 447.92,
+   "dur": 1.76,
+   "cov": 1.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 449.68,
+   "dur": 4,
+   "cov": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_leanin.jpg"
+  },
+  {
+   "id": "dm_ins_a1c_form",
+   "start": 460.24,
+   "dur": 1.92,
+   "cov": 1.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_a1c_form.jpg"
+  },
+  {
+   "id": "dm_ins_glucometer",
+   "start": 462.16,
+   "dur": 2.88,
+   "cov": 2.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_glucometer.jpg"
+  },
+  {
+   "id": "dm_ins_drylips_macro",
+   "start": 465.04,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_drylips_macro.jpg"
+  },
+  {
+   "id": "dm_ins_glucometer",
+   "start": 468.88,
+   "dur": 3.8,
+   "cov": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_glucometer.jpg"
+  },
+  {
+   "id": "dm_ins_dry_eyes",
+   "start": 474.96,
+   "dur": 7,
+   "cov": 7,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_dry_eyes.jpg"
+  },
+  {
+   "id": "dm_ins_empty_glass_2am",
+   "start": 488.56,
+   "dur": 4.24,
+   "cov": 4.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_empty_glass_2am.jpg"
+  },
+  {
+   "id": "dm_stk_glass_water",
+   "start": 492.8,
+   "dur": 5.04,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_stk_glass_water.mp4"
+  },
+  {
+   "id": "dm_ins_glucose_test",
+   "start": 497.84,
+   "dur": 1.36,
+   "cov": 1.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_glucose_test.jpg"
+  },
+  {
+   "id": "dm_hero_notepad_a1c",
+   "start": 499.2,
+   "dur": 1.84,
+   "cov": 1.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_notepad_a1c.mp4"
+  },
+  {
+   "id": "cmp_9_datoimpacto",
+   "start": 499.2,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "datoimpacto",
+   "figure": "A1C",
+   "eyebrow": "THE TEST TO ASK FOR",
+   "label": "still dry after 2-3 weeks? ask for an A1c and a medication review",
+   "image": "img/dm_ins_a1c_form.jpg",
+   "tone": "teal"
+  },
+  {
+   "id": "dm_ins_pill_bottles",
+   "start": 501.04,
+   "dur": 2.64,
+   "cov": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_pill_bottles.jpg"
+  },
+  {
+   "id": "dm_ins_a1c_form",
+   "start": 503.68,
+   "dur": 5.04,
+   "cov": 5.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_a1c_form.jpg"
+  },
+  {
+   "id": "cmp_27_frasecinetica",
+   "start": 503.68,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "ASK"
+    },
+    {
+     "t": "FOR:"
+    },
+    {
+     "t": "A1C"
+    },
+    {
+     "t": "+"
+    },
+    {
+     "t": "MED"
+    },
+    {
+     "t": "REVIEW.",
+     "hl": true
+    }
+   ],
+   "perWord": 10,
+   "tone": "teal"
+  },
+  {
+   "id": "dm_ins_car_oil_light",
+   "start": 508.72,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_car_oil_light.jpg"
+  },
+  {
+   "id": "dm_hero_explain",
+   "start": 513.76,
+   "dur": 5.28,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_explain.mp4"
+  },
+  {
+   "id": "dm_hero_explain_t1",
+   "start": 518.76,
+   "dur": 0.28,
+   "cov": 0.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_explain.jpg"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 519.04,
+   "dur": 2,
+   "cov": 2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "dm_hero_kitchen_talk",
+   "start": 521.04,
+   "dur": 1.12,
+   "cov": 1.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_kitchen_talk.jpg"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 522.16,
+   "dur": 7.2,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 529.36,
+   "dur": 2.64,
+   "cov": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_hero_explain",
+   "start": 532,
+   "dur": 7.92,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_explain.mp4"
+  },
+  {
+   "id": "dm_ins_sleep_mouthopen",
+   "start": 539.92,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_sleep_mouthopen.jpg"
+  },
+  {
+   "id": "dm_ins_teeth_enamel",
+   "start": 545.92,
+   "dur": 6.4,
+   "cov": 6.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_teeth_enamel.jpg"
+  },
+  {
+   "id": "dm_ins_side_sleeping",
+   "start": 555.44,
+   "dur": 2.16,
+   "cov": 2.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_side_sleeping.jpg"
+  },
+  {
+   "id": "dm_hero_push_drinks",
+   "start": 557.6,
+   "dur": 6.24,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_push_drinks.mp4"
+  },
+  {
+   "id": "cmp_10_hourdial",
+   "start": 557.6,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "hourdial",
+   "hour": 2,
+   "big": "2 HRS",
+   "unit": "BEFORE BED",
+   "label": "no coffee, no tea, no alcohol, easy on the salt",
+   "tone": "gold"
+  },
+  {
+   "id": "dm_hero_push_drinks_t2",
+   "start": 562.6,
+   "dur": 1.24,
+   "cov": 1.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_push_drinks.jpg"
+  },
+  {
+   "id": "dm_ins_coffee_evening",
+   "start": 563.84,
+   "dur": 2.96,
+   "cov": 2.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_coffee_evening.jpg"
+  },
+  {
+   "id": "dm_hero_push_drinks",
+   "start": 566.8,
+   "dur": 5.2,
+   "cov": 5.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_push_drinks.jpg"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 572,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_ins_mouthwash_bottle",
+   "start": 579.6,
+   "dur": 2.8,
+   "cov": 2.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_mouthwash_bottle.jpg"
+  },
+  {
+   "id": "dm_ins_mouthwash_pour",
+   "start": 582.4,
+   "dur": 5.6,
+   "cov": 5.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_mouthwash_pour.jpg"
+  },
+  {
+   "id": "dm_hero_mix_bakingsoda",
+   "start": 588.16,
+   "dur": 1.76,
+   "cov": 1.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_mix_bakingsoda.mp4"
+  },
+  {
+   "id": "cmp_23_lowerthird",
+   "start": 588.16,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Baking-soda rinse: ½ tsp in 1 cup warm water",
+   "kicker": "swish 30 seconds, then spit",
+   "desc": "no alcohol — it neutralizes the acid instead of drying you",
+   "tone": "teal"
+  },
+  {
+   "id": "dm_hero_show_bakingsoda",
+   "start": 589.92,
+   "dur": 1.84,
+   "cov": 1.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_show_bakingsoda.jpg"
+  },
+  {
+   "id": "dm_ins_warm_water_cup",
+   "start": 591.76,
+   "dur": 1.52,
+   "cov": 1.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_warm_water_cup.jpg"
+  },
+  {
+   "id": "dm_hero_stir_cup",
+   "start": 593.28,
+   "dur": 1.44,
+   "cov": 1.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_stir_cup.mp4"
+  },
+  {
+   "id": "dm_hero_swish",
+   "start": 594.88,
+   "dur": 5.04,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_swish.mp4"
+  },
+  {
+   "id": "dm_ins_bakingsoda_spoon",
+   "start": 599.92,
+   "dur": 5.18,
+   "cov": 5.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bakingsoda_spoon.jpg"
+  },
+  {
+   "id": "dm_ins_bad_breath_morning",
+   "start": 606.08,
+   "dur": 3.28,
+   "cov": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bad_breath_morning.jpg"
+  },
+  {
+   "id": "dm_ins_warm_water_cup",
+   "start": 609.36,
+   "dur": 2.8,
+   "cov": 2.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_warm_water_cup.jpg"
+  },
+  {
+   "id": "dm_ins_bakingsoda_jar",
+   "start": 612.16,
+   "dur": 2.96,
+   "cov": 2.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bakingsoda_jar.jpg"
+  },
+  {
+   "id": "dm_hero_hold_xylitol",
+   "start": 615.12,
+   "dur": 7.6,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_hold_xylitol.mp4"
+  },
+  {
+   "id": "cmp_24_lowerthird",
+   "start": 615.12,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "One xylitol lozenge at bedtime",
+   "kicker": "let it dissolve — don't chew",
+   "desc": "it draws out saliva and starves the cavity bacteria",
+   "tone": "teal"
+  },
+  {
+   "id": "dm_ins_xylitol_spoon",
+   "start": 622.72,
+   "dur": 2.24,
+   "cov": 2.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_xylitol_spoon.jpg"
+  },
+  {
+   "id": "dm_ins_xylitol_dish",
+   "start": 624.96,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_xylitol_dish.jpg"
+  },
+  {
+   "id": "dm_ins_teeth_enamel",
+   "start": 632.4,
+   "dur": 3.04,
+   "cov": 3.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_teeth_enamel.jpg"
+  },
+  {
+   "id": "dm_ins_gumline",
+   "start": 635.44,
+   "dur": 6.16,
+   "cov": 6.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_gumline.jpg"
+  },
+  {
+   "id": "dm_ins_xylitol_dish",
+   "start": 641.6,
+   "dur": 3.04,
+   "cov": 3.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_xylitol_dish.jpg"
+  },
+  {
+   "id": "dm_hero_hold_xylitol",
+   "start": 644.64,
+   "dur": 2.16,
+   "cov": 2.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_hold_xylitol.jpg"
+  },
+  {
+   "id": "dm_ins_lozenge_macro",
+   "start": 646.8,
+   "dur": 0.96,
+   "cov": 0.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_lozenge_macro.jpg"
+  },
+  {
+   "id": "dm_ins_teeth_enamel",
+   "start": 647.76,
+   "dur": 5.28,
+   "cov": 5.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_teeth_enamel.jpg"
+  },
+  {
+   "id": "dm_ins_gumline",
+   "start": 653.04,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_gumline.jpg"
+  },
+  {
+   "id": "dm_ins_teeth_enamel",
+   "start": 669.92,
+   "dur": 6.4,
+   "cov": 6.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_teeth_enamel.jpg"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 685.36,
+   "dur": 3.84,
+   "cov": 3.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "dm_hero_saline",
+   "start": 689.2,
+   "dur": 3.36,
+   "cov": 3.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_saline.mp4"
+  },
+  {
+   "id": "dm_ins_saline_bottle",
+   "start": 692.56,
+   "dur": 2.24,
+   "cov": 2.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_saline_bottle.jpg"
+  },
+  {
+   "id": "dm_stk_nasal_spray",
+   "start": 694.8,
+   "dur": 1.44,
+   "cov": 1.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_stk_nasal_spray.mp4"
+  },
+  {
+   "id": "dm_ins_saline_bottle",
+   "start": 696.24,
+   "dur": 1.04,
+   "cov": 1.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_saline_bottle.jpg"
+  },
+  {
+   "id": "dm_hero_saline",
+   "start": 697.28,
+   "dur": 0.48,
+   "cov": 0.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_saline.jpg"
+  },
+  {
+   "id": "dm_ins_sleep_mouthopen",
+   "start": 697.76,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_sleep_mouthopen.jpg"
+  },
+  {
+   "id": "dm_ins_side_sleeping",
+   "start": 702,
+   "dur": 2.48,
+   "cov": 2.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_side_sleeping.jpg"
+  },
+  {
+   "id": "dm_ins_sleep_mouthopen",
+   "start": 704.48,
+   "dur": 5.6,
+   "cov": 5.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_sleep_mouthopen.jpg"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 711.2,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_hero_saline",
+   "start": 714.88,
+   "dur": 2.32,
+   "cov": 2.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_saline.mp4"
+  },
+  {
+   "id": "dm_hero_humidifier",
+   "start": 717.2,
+   "dur": 2.4,
+   "cov": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_humidifier.mp4"
+  },
+  {
+   "id": "dm_ins_humidifier",
+   "start": 719.6,
+   "dur": 2.56,
+   "cov": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_humidifier.jpg"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 722.16,
+   "dur": 3.28,
+   "cov": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_hero_bowl_vent",
+   "start": 725.44,
+   "dur": 2.48,
+   "cov": 2.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_bowl_vent.mp4"
+  },
+  {
+   "id": "dm_ins_bowl_vent",
+   "start": 727.92,
+   "dur": 1.68,
+   "cov": 1.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bowl_vent.jpg"
+  },
+  {
+   "id": "dm_ins_ac_vent",
+   "start": 729.6,
+   "dur": 4.48,
+   "cov": 4.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_ac_vent.jpg"
+  },
+  {
+   "id": "dm_hero_coconut",
+   "start": 734.08,
+   "dur": 4.16,
+   "cov": 4.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_coconut.mp4"
+  },
+  {
+   "id": "dm_ins_drylips_macro",
+   "start": 738.24,
+   "dur": 2,
+   "cov": 2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_drylips_macro.jpg"
+  },
+  {
+   "id": "dm_ins_coconut_jar",
+   "start": 740.24,
+   "dur": 6.64,
+   "cov": 6.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_coconut_jar.jpg"
+  },
+  {
+   "id": "dm_hero_coconut",
+   "start": 746.88,
+   "dur": 2.08,
+   "cov": 2.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_coconut.jpg"
+  },
+  {
+   "id": "dm_ins_toothbrush_sink",
+   "start": 748.96,
+   "dur": 5.68,
+   "cov": 5.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_toothbrush_sink.jpg"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 754.64,
+   "dur": 3.68,
+   "cov": 3.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_lamina_protocol",
+   "start": 758.32,
+   "dur": 35.68,
+   "cov": 35.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_lamina_protocol.jpg"
+  },
+  {
+   "id": "cmp_13_freezezoom",
+   "start": 758.32,
+   "dur": 5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/dm_lamina_protocol.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 1.05,
+   "label": "The Nightly Dry-Mouth Protocol"
+  },
+  {
+   "id": "cmp_14_freezezoom",
+   "start": 768.8,
+   "dur": 5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/dm_lamina_protocol.jpg",
+   "x": 0.28,
+   "y": 0.4,
+   "zoom": 1.7,
+   "label": "Two-hour rule + baking soda"
+  },
+  {
+   "id": "cmp_15_freezezoom",
+   "start": 773.28,
+   "dur": 5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/dm_lamina_protocol.jpg",
+   "x": 0.28,
+   "y": 0.58,
+   "zoom": 1.7,
+   "label": "One xylitol lozenge"
+  },
+  {
+   "id": "cmp_16_freezezoom",
+   "start": 775.2,
+   "dur": 5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/dm_lamina_protocol.jpg",
+   "x": 0.28,
+   "y": 0.72,
+   "zoom": 1.7,
+   "label": "Nose + side sleeping"
+  },
+  {
+   "id": "cmp_17_freezezoom",
+   "start": 783.44,
+   "dur": 5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/dm_lamina_protocol.jpg",
+   "x": 0.5,
+   "y": 0.9,
+   "zoom": 1.8,
+   "label": "Still dry? Ask for this"
+  },
+  {
+   "id": "dm_hero_hold_guide",
+   "start": 794,
+   "dur": 6.56,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_hold_guide.mp4"
+  },
+  {
+   "id": "cmp_18_guidecta",
+   "start": 794,
+   "dur": 11,
+   "key": "s",
+   "kind": "guidecta",
+   "cover": "img/drymouth60_libro.jpg",
+   "qr": "med/drymouth60_qr.png",
+   "domain": "docfederer.com",
+   "kicker": "The complete guide",
+   "title": "Complete Health After 60",
+   "desc": "The full night-time protocol, the exact amounts, and every warning sign — in plain words.",
+   "scanTitle": "Get the free guide",
+   "scanSub": "scan the code or tap the description"
+  },
+  {
+   "id": "dm_hero_hold_guide_t18",
+   "start": 799,
+   "dur": 1.56,
+   "cov": 1.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_hold_guide.jpg"
+  },
+  {
+   "id": "dm_ins_guide_in_hands",
+   "start": 800.56,
+   "dur": 6.8,
+   "cov": 6.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_guide_in_hands.jpg"
+  },
+  {
+   "id": "dm_hero_hold_guide",
+   "start": 807.36,
+   "dur": 3.04,
+   "cov": 3.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_hold_guide.jpg"
+  },
+  {
+   "id": "dm_ins_guide_in_hands",
+   "start": 810.4,
+   "dur": 2.4,
+   "cov": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_guide_in_hands.jpg"
+  },
+  {
+   "id": "dm_lamina_protocol",
+   "start": 812.8,
+   "dur": 3.2,
+   "cov": 3.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_lamina_protocol.jpg"
+  },
+  {
+   "id": "cmp_19_lowerthird",
+   "start": 812.8,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Full guide + exact amounts in the description",
+   "kicker": "free",
+   "desc": "The Nightly Dry-Mouth Protocol",
+   "tone": "teal"
+  },
+  {
+   "id": "dm_ins_phone_scan",
+   "start": 816,
+   "dur": 2.16,
+   "cov": 2.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_ins_phone_scan.mp4"
+  },
+  {
+   "id": "dm_ins_phone_scan",
+   "start": 818.16,
+   "dur": 2.56,
+   "cov": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_phone_scan.jpg"
+  },
+  {
+   "id": "dm_hero_mirror_page",
+   "start": 820.72,
+   "dur": 0.56,
+   "cov": 0.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_mirror_page.jpg"
+  },
+  {
+   "id": "dm_ins_bathroom_mirror_page",
+   "start": 821.28,
+   "dur": 0.88,
+   "cov": 0.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bathroom_mirror_page.jpg"
+  },
+  {
+   "id": "dm_hero_mirror_page",
+   "start": 822.16,
+   "dur": 4.56,
+   "cov": 4.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_mirror_page.mp4"
+  },
+  {
+   "id": "cmp_26_lowerthird",
+   "start": 822.16,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Print the page — stick it on the mirror",
+   "kicker": "so you actually do it tonight",
+   "desc": "the whole protocol on one page",
+   "tone": "teal"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 826.72,
+   "dur": 4.96,
+   "cov": 4.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "dm_ins_pill_bottles",
+   "start": 831.68,
+   "dur": 6.64,
+   "cov": 6.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_pill_bottles.jpg"
+  },
+  {
+   "id": "dm_ins_nightstand_pills",
+   "start": 838.32,
+   "dur": 3.6,
+   "cov": 3.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_nightstand_pills.jpg"
+  },
+  {
+   "id": "dm_hero_hold_pills",
+   "start": 841.92,
+   "dur": 3.36,
+   "cov": 3.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_hold_pills.mp4"
+  },
+  {
+   "id": "dm_ins_a1c_form",
+   "start": 845.28,
+   "dur": 3.92,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_a1c_form.jpg"
+  },
+  {
+   "id": "dm_hero_notepad_a1c",
+   "start": 849.2,
+   "dur": 1.92,
+   "cov": 1.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_notepad_a1c.jpg"
+  },
+  {
+   "id": "dm_ins_a1c_form",
+   "start": 851.12,
+   "dur": 4.08,
+   "cov": 4.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_a1c_form.jpg"
+  },
+  {
+   "id": "dm_ins_phone_scan",
+   "start": 855.2,
+   "dur": 5.6,
+   "cov": 5.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_phone_scan.jpg"
+  },
+  {
+   "id": "cmp_21_lowerthird",
+   "start": 855.2,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "The medication-timing trick → in the description",
+   "kicker": "for anyone on several pills",
+   "desc": "exactly what to ask your doctor — I wrote it out below",
+   "tone": "teal"
+  },
+  {
+   "id": "dm_ins_phone_scan_p33",
+   "start": 860.8,
+   "dur": 1.04,
+   "cov": 1.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_a1c_form.jpg"
+  },
+  {
+   "id": "dm_ins_pill_bottles",
+   "start": 861.84,
+   "dur": 8.24,
+   "cov": 8.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_pill_bottles.jpg"
+  },
+  {
+   "id": "dm_hero_desk_consult",
+   "start": 870.08,
+   "dur": 4.64,
+   "cov": 4.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_desk_consult.mp4"
+  },
+  {
+   "id": "dm_ins_walter_hands",
+   "start": 874.72,
+   "dur": 6,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_walter_hands.jpg"
+  },
+  {
+   "id": "dm_ins_walter_hands_p37",
+   "start": 880.72,
+   "dur": 0.56,
+   "cov": 0.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_desk_consult.jpg"
+  },
+  {
+   "id": "dm_ins_mouthwash_bottle",
+   "start": 881.28,
+   "dur": 1.44,
+   "cov": 1.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_mouthwash_bottle.jpg"
+  },
+  {
+   "id": "dm_ins_bakingsoda_jar",
+   "start": 882.72,
+   "dur": 2.56,
+   "cov": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bakingsoda_jar.jpg"
+  },
+  {
+   "id": "dm_ins_bowl_vent",
+   "start": 885.28,
+   "dur": 1.92,
+   "cov": 1.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bowl_vent.jpg"
+  },
+  {
+   "id": "dm_stk_humidifier_mist",
+   "start": 887.2,
+   "dur": 2.88,
+   "cov": 2.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_stk_humidifier_mist.mp4"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 890.08,
+   "dur": 3.84,
+   "cov": 3.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "cmp_20_lineatiempo",
+   "start": 890.08,
+   "dur": 11,
+   "key": "s",
+   "kind": "lineatiempo",
+   "title": "What happened for Walter",
+   "tone": "teal",
+   "marks": [
+    {
+     "label": "Nights 4-5",
+     "sub": "He stopped waking at 2am to sip water"
+    },
+    {
+     "label": "2 weeks",
+     "sub": "The metallic taste and morning breath were gone"
+    },
+    {
+     "label": "3 weeks",
+     "sub": "An A1c caught pre-diabetes — early enough to reverse"
+    }
+   ]
+  },
+  {
+   "id": "dm_ins_empty_glass_2am",
+   "start": 893.92,
+   "dur": 6,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_empty_glass_2am.jpg"
+  },
+  {
+   "id": "dm_ins_empty_glass_2am_p43",
+   "start": 899.92,
+   "dur": 6.56,
+   "cov": 6.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_ins_walter_hands",
+   "start": 906.48,
+   "dur": 8.2,
+   "cov": 8.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_walter_hands.jpg"
+  },
+  {
+   "id": "dm_ins_walter_hands_p46",
+   "start": 914.68,
+   "dur": 1.16,
+   "cov": 1.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_ins_drylips_macro",
+   "start": 915.84,
+   "dur": 4.64,
+   "cov": 4.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_drylips_macro.jpg"
+  },
+  {
+   "id": "dm_ins_bad_breath_morning",
+   "start": 920.48,
+   "dur": 3.36,
+   "cov": 3.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bad_breath_morning.jpg"
+  },
+  {
+   "id": "dm_ins_walter_hands",
+   "start": 923.84,
+   "dur": 5.12,
+   "cov": 5.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_walter_hands.jpg"
+  },
+  {
+   "id": "dm_hero_desk_consult",
+   "start": 928.96,
+   "dur": 8.88,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_desk_consult.mp4"
+  },
+  {
+   "id": "dm_hero_desk_consult_t50",
+   "start": 933.96,
+   "dur": 3.88,
+   "cov": 3.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_desk_consult.jpg"
+  },
+  {
+   "id": "dm_hero_notepad_a1c",
+   "start": 937.84,
+   "dur": 1.44,
+   "cov": 1.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_notepad_a1c.mp4"
+  },
+  {
+   "id": "dm_ins_glucometer",
+   "start": 939.28,
+   "dur": 3.92,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_glucometer.jpg"
+  },
+  {
+   "id": "dm_ins_a1c_form",
+   "start": 943.2,
+   "dur": 1.52,
+   "cov": 1.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_a1c_form.jpg"
+  },
+  {
+   "id": "dm_ins_humidifier_mist",
+   "start": 944.72,
+   "dur": 3.36,
+   "cov": 3.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_humidifier_mist.jpg"
+  },
+  {
+   "id": "dm_ins_glucometer",
+   "start": 948.08,
+   "dur": 6,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_glucometer.jpg"
+  },
+  {
+   "id": "dm_ins_glucometer_p55",
+   "start": 954.08,
+   "dur": 1.68,
+   "cov": 1.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_humidifier_mist.jpg"
+  },
+  {
+   "id": "dm_ins_car_oil_light",
+   "start": 955.76,
+   "dur": 1.76,
+   "cov": 1.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_car_oil_light.jpg"
+  },
+  {
+   "id": "dm_ins_a1c_form",
+   "start": 957.52,
+   "dur": 3.12,
+   "cov": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_a1c_form.jpg"
+  },
+  {
+   "id": "dm_hero_leanin",
+   "start": 960.64,
+   "dur": 9.04,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_leanin.mp4"
+  },
+  {
+   "id": "cmp_22_frasecinetica",
+   "start": 965.28,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "NOT"
+    },
+    {
+     "t": "A"
+    },
+    {
+     "t": "PUNISHMENT."
+    },
+    {
+     "t": "A"
+    },
+    {
+     "t": "MESSAGE.",
+     "hl": true
+    }
+   ],
+   "perWord": 11,
+   "tone": "teal"
+  },
+  {
+   "id": "dm_hero_leanin_t58",
+   "start": 965.64,
+   "dur": 4.04,
+   "cov": 4.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_leanin.jpg"
+  },
+  {
+   "id": "dm_ins_car_oil_light",
+   "start": 969.68,
+   "dur": 4.88,
+   "cov": 4.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_car_oil_light.jpg"
+  },
+  {
+   "id": "dm_ins_gumline",
+   "start": 974.56,
+   "dur": 2.16,
+   "cov": 2.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_gumline.jpg"
+  },
+  {
+   "id": "dm_hero_wake_dry",
+   "start": 976.72,
+   "dur": 4.16,
+   "cov": 4.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_wake_dry.mp4"
+  },
+  {
+   "id": "dm_hero_mix_bakingsoda",
+   "start": 980.88,
+   "dur": 3.12,
+   "cov": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_mix_bakingsoda.mp4"
+  },
+  {
+   "id": "dm_ins_bakingsoda_jar",
+   "start": 984,
+   "dur": 1.76,
+   "cov": 1.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bakingsoda_jar.jpg"
+  },
+  {
+   "id": "cmp_12_datoimpacto",
+   "start": 984,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "datoimpacto",
+   "figure": "~$0",
+   "eyebrow": "THE WHOLE PROTOCOL",
+   "label": "baking soda, xylitol, coconut oil, a bowl of water — things you own",
+   "image": "img/dm_ins_bakingsoda_jar.jpg",
+   "tone": "gold"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 985.76,
+   "dur": 1.76,
+   "cov": 1.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_ins_phone_scan",
+   "start": 987.52,
+   "dur": 4,
+   "cov": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_ins_phone_scan.mp4"
+  },
+  {
+   "id": "dm_ins_pill_bottles",
+   "start": 991.52,
+   "dur": 3.52,
+   "cov": 3.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_pill_bottles.jpg"
+  },
+  {
+   "id": "dm_ins_bedroom_night",
+   "start": 995.04,
+   "dur": 1.52,
+   "cov": 1.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_bedroom_night.jpg"
+  },
+  {
+   "id": "dm_hero_point_screen",
+   "start": 996.56,
+   "dur": 2.8,
+   "cov": 2.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_hero_point_screen.jpg"
+  },
+  {
+   "id": "dm_ins_empty_glass_2am",
+   "start": 999.36,
+   "dur": 2.64,
+   "cov": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_empty_glass_2am.jpg"
+  },
+  {
+   "id": "dm_ins_clock_3am",
+   "start": 1002,
+   "dur": 3.12,
+   "cov": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/dm_ins_clock_3am.jpg"
+  },
+  {
+   "id": "dm_hero_explain",
+   "start": 1005.12,
+   "dur": 2.43,
+   "cov": 2.43,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/drymouth60/dm_hero_explain.mp4"
+  }
+ ]
+}

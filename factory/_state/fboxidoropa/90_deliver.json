@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-18T22:18:00.159Z",
+ "status": "done",
+ "inputsHash": "c1fd6be0e90d9aca",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fboxidoropa/fboxidoropa.mp4?v=1",
+  "version": 1,
+  "bytes": 379553411,
+  "durSec": 887.67,
+  "saltosPts": 0,
+  "tramosNegros": 1,
+  "hoja": "D:\\rtmp\\factory\\fboxidoropa\\audit\\hoja.jpg",
+  "bagasy": "no (sin spec.bagasy o FACTORY_DELIVER≠1)"
+ },
+ "ms": 2054317
+}

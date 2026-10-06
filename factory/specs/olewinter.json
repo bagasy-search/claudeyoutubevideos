@@ -1,0 +1,40 @@
+{
+  "slug": "olewinter",
+  "canal": "ole-camp",
+  "modo": "avatar",
+  "idioma": "en",
+  "guion": "D:/rtmp/factory/_guiones/GUION_olewinter.txt",
+  "voz": {
+    "id": "ole_camp"
+  },
+  "cta": {
+    "head": "Subscribe for more camp recipes",
+    "ancla": "If you want more of these"
+  },
+  "avatar": {
+    "face": "public/ref/ole_full.png",
+    "lipLeadSec": 0.13
+  },
+  "bagasy": {
+    "channelKey": "draft:olescamp",
+    "cardId": "ole2026092502"
+  },
+  "overrides": {
+    "agnesFlash": {
+      "p049": "oven door creak, iron lid clank, bubbling",
+      "p061": "wooden spoon scraping the pot, soft simmering bubbles, crackling fire",
+      "p093": "cloth rustle, quiet morning, faint fire crackle",
+      "p101": "sizzling batter on a hot griddle",
+      "p116": "loud sizzling fat, spatula scraping iron",
+      "p135": "meat sizzling in hot fat, tongs clinking",
+      "p143": "coffee pouring, stew bubbling, ladle on iron",
+      "p161": "sizzling frying in bacon grease",
+      "p185": "boiling water, splash, bubbling",
+      "p226": "oven door creak, metal baking sheet on iron",
+      "p241": "soft thuds of dough on wood, quiet cabin",
+      "p247": "whisk on cast iron, bubbling gravy",
+      "p281": "oven door, winter wind outside, fire crackle",
+      "p288": "fire crackling, iron firebox door"
+    }
+  }
+}

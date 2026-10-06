@@ -115,7 +115,12 @@ export const CalloutMark: React.FC<{
             <div
               style={{
                 fontFamily: FIG_FONT,
-                fontSize: 280,
+                // ⛔ `fontSize: 280` fijo se diseñó para un año ("1903"): con una figure de 12+
+                //    caracteres el texto SE SALE DEL CUADRO y sale cortado a los dos lados
+                //    ("UN CHARQUITO" -> "N CHARQUIT", "POCO VOLUMEN" -> "POCO VOLUI").
+                //    Ninguna compuerta lo ve (la prop existe y el componente "se ve lleno").
+                fontSize: Math.max(88, Math.min(280, Math.floor(1280 / (0.66 * Math.max(1, String(figure).length))))),
+                whiteSpace: "nowrap",
                 fontWeight: 700,
                 color: "#FFFFFF",
                 lineHeight: 1,

@@ -2,6 +2,19 @@ node_modules
 dist
 .DS_Store
 .env
+# ⛔ el repo es PUBLICO: cualquier variante de .env queda fuera.
+#    `.env` solo NO cubre `.env.local`, que es donde viven las creds de Supabase
+#    (NEXT_PUBLIC_SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY) que lee scripts/supa_creds.mjs.
+.env.*
+!.env.example
+
+# ⛔ SECRETOS DE YOUTUBE — el repo es PUBLICO y estos NO estaban cubiertos.
+#    Descubierto el 12-sep-2026: un `git stash -u` se los llevo del disco, lo que probo
+#    que git los veia como "untracked" (o sea, commiteables), no como ignorados.
+youtube/client_secret.json
+youtube/tokens/
+cookies/
+*.enc
 
 # Ignore the output video from Git but not videos you import into src/.
 out
@@ -49,3 +62,10 @@ _v3probe/
 
 .flowprofile/
 .flowaccounts.json
+.render_accounts.json
+
+# fábrica: backups de .env (tienen claves) y estado local
+.env.*
+factory/_state/
+factory/_dry/
+.pubprune/

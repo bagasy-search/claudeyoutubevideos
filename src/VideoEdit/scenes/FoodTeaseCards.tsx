@@ -1,4 +1,4 @@
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring, Img, staticFile, Video, Easing } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring, Img, staticFile, OffthreadVideo, Easing } from "remotion";
 import { COLORS, FONT_STACK } from "../theme";
 
 // Apertura CINEMATOGRÁFICA (oner): la cámara VUELA sin cortes por una hilera de
@@ -68,7 +68,7 @@ export const FoodTeaseCards: React.FC<{
                 opacity: enter, zIndex: Math.round(focused * 100),
               }}>
                 {isVid(c.src) ? (
-                  <Video src={staticFile(c.src)} muted playbackRate={0.55} style={{ width: "100%", height: "100%", objectFit: "cover", filter: `blur(${blur}px) saturate(${0.65 + focused * 0.5}) brightness(${0.8 + focused * 0.35})` }} />
+                  <OffthreadVideo src={staticFile(c.src)} muted playbackRate={0.55} style={{ width: "100%", height: "100%", objectFit: "cover", filter: `blur(${blur}px) saturate(${0.65 + focused * 0.5}) brightness(${0.8 + focused * 0.35})` }} />
                 ) : (
                   <Img src={staticFile(c.src)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: `blur(${blur}px) saturate(${0.65 + focused * 0.5}) brightness(${0.8 + focused * 0.35})` }} />
                 )}

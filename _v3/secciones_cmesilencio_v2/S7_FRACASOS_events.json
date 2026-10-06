@@ -1,0 +1,370 @@
+[
+  {
+    "id": "s7_e1",
+    "ms": 683440,
+    "dur": 4.7,
+    "tipo": "CLIP",
+    "dice": "Antes de la lista de materiales, déjame ahorrarte los intentos que ya fracasaron.",
+    "muestra": "Claudio en cuclillas sobre el concreto del patio, entre una lona azul arrugada y un bote de basura de plástico gris volcado, agarra el borde de la lona y la arrastra hacia sí.",
+    "porque": "S6 cerró con las dos cosas que funcionan en las manos y el 66 en el concreto; acá las manos agarran lo contrario, los dos fracasos, en el mismo suelo y sin cambiar de sitio.",
+    "nombre": "cms_s7_agarra_lona_arrugada",
+    "foto_change": "he is squatting on the stained concrete of his back yard between a crumpled blue plastic tarp and a tipped over grey plastic wheelie bin, gripping the edge of the tarp and dragging it toward himself, the half built plywood box and the red framed generator behind him, the low block wall with the neighbour's lit yellow window further back, warm amber late light from the right, medium shot from low, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the back yard stays exactly the same for the whole shot, same crumpled blue tarp, same tipped over grey plastic bin, same half built plywood box, same red framed generator, same low block wall with the lit yellow window, nothing behind him changes or moves.",
+      "action": "Action: he pulls the edge of the blue tarp toward himself across the concrete and the fabric slides and folds, his lips stay closed, one single continuous action, his hand stays gripping the tarp the whole time.",
+      "camera": "Camera: the framing never changes, medium shot from low, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "lona plástica arrastrada sobre concreto",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1632,
+      "endWord": 1644,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e2",
+    "ms": 685580,
+    "dur": 3.2,
+    "tipo": "TEXTO",
+    "dice": "déjame ahorrarte los intentos que ya fracasaron.",
+    "muestra": "Rótulo LOS 3 INTENTOS QUE FRACASAN entrando sobre la lona que se arrastra.",
+    "porque": "Anuncia que vienen tres y no uno: el espectador acepta mejor tres fracasos seguidos si sabe de entrada que son un bloque cerrado.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "LOS 3 INTENTOS QUE FRACASAN",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1638,
+      "endWord": 1644,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e3",
+    "ms": 688660,
+    "dur": 5.9,
+    "tipo": "CLIP",
+    "dice": "Los vi todos y algunos son peligrosos.",
+    "muestra": "Claudio de pie levanta la lona azul con las dos manos por encima del generador rojo y la deja caer sobre el marco de tubo.",
+    "porque": "El primer fracaso empieza como un gesto razonable: tapar. Hay que verlo hecho por él, en su patio, para que el espectador se reconozca antes de que le digan que está mal.",
+    "nombre": "cms_s7_deja_caer_lona",
+    "foto_change": "he is standing in his back yard holding a scorched blue plastic tarp up with both hands over the open frame red generator and letting it fall onto the tube frame, the stained concrete under his boots, the low block wall with the neighbour's lit yellow window behind him, warm amber late light from the right, medium wide shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the back yard stays exactly the same for the whole shot, same open frame red generator, same stained concrete, same low block wall with the lit yellow window, same half built plywood box at the side, nothing behind him changes or moves.",
+      "action": "Action: he opens both hands and the blue tarp drops and settles over the generator frame, his lips stay closed, one single continuous action, his hands stay above the tarp as it falls.",
+      "camera": "Camera: the framing never changes, medium wide shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "lona pesada que cae sobre tubo metálico",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1645,
+      "endWord": 1651,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e4",
+    "ms": 688660,
+    "dur": 3.4,
+    "tipo": "ICONO",
+    "dice": "Los vi todos y algunos son peligrosos.",
+    "muestra": "Un triángulo de peligro en PNG sin fondo apoyado sobre el tanque de gasolina negro, con el rótulo ALGUNOS SON PELIGROSOS.",
+    "porque": "El aviso se apoya sobre el tanque, que es exactamente lo que va a arder tres planos más adelante: el ícono siembra el peligro donde va a pasar.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_peligro.png",
+    "texto": "ALGUNOS SON PELIGROSOS",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1645,
+      "endWord": 1651,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e6",
+    "ms": 698640,
+    "dur": 5,
+    "tipo": "TEXTO",
+    "dice": "es de las peores cosas posibles. Tapas las entradas de aire",
+    "muestra": "Rótulo TAPAS LAS ENTRADAS DE AIRE clavado en la rejilla que la lona acaba de sellar.",
+    "porque": "Es la primera de las tres consecuencias encadenadas de la lona y la única que no se ve ardiendo: necesita el rótulo y necesita quedarse mientras se sellan las últimas ranuras.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "TAPAS LAS ENTRADAS DE AIRE",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1673,
+      "endWord": 1683,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e12",
+    "ms": 709540,
+    "dur": 3,
+    "tipo": "TEXTO",
+    "dice": "al lado del tanque de gasolina.",
+    "muestra": "Rótulo UNA FOGATA AL LADO DEL TANQUE con una flecha corta que apunta a la tapa roscada.",
+    "porque": "La flecha señala la tapa y no la llama: el peligro no es el fuego, es dónde está el fuego, que es justo lo que dice la frase.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "UNA FOGATA AL LADO DEL TANQUE",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1699,
+      "endWord": 1704,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e13",
+    "ms": 712240,
+    "dur": 6.3,
+    "tipo": "CLIP",
+    "dice": "Meterlo dentro de un bote de basura de plástico es la peor combinación de los 3 números.",
+    "muestra": "Claudio pone de pie el bote de basura de plástico gris en el patio y empuja la pared curva con las dos manos hasta que se comba hacia adentro.",
+    "porque": "El segundo fracaso se refuta con la mano: la pared del bote cede sola bajo la presión y ahí queda demostrada la falta de masa antes de que se diga la palabra.",
+    "nombre": "cms_s7_empuja_bote_plastico",
+    "foto_change": "he is standing in his back yard having just righted a large grey plastic wheelie bin on the stained concrete, pressing the curved side wall inward with both hands so the plastic bows in under his palms, the red framed generator and the half built plywood box behind him, the low block wall with the neighbour's lit yellow window further back, dim blue evening light with a warm patch from the window, medium shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the back yard stays exactly the same for the whole shot, same grey plastic bin, same stained concrete, same red framed generator, same half built plywood box, same low block wall with the lit yellow window, nothing behind him changes or moves.",
+      "action": "Action: he presses both hands into the curved side of the plastic bin and the wall bows inward and springs back once, his lips stay closed, one single continuous action, both hands stay in contact with the plastic.",
+      "camera": "Camera: the framing never changes, medium shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "plástico grueso que se comba y vuelve",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1705,
+      "endWord": 1721,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e14",
+    "ms": 714960,
+    "dur": 3.4,
+    "tipo": "TEXTO",
+    "dice": "es la peor combinación de los 3 números.",
+    "muestra": "Rótulo PIERDE EN LOS 3 NÚMEROS con tres casillas que se marcan en rojo una tras otra sobre la pared del bote.",
+    "porque": "Los tres números son el esqueleto del video entero; el bote es el único objeto que los falla todos y hay que verlo perder los tres seguidos.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "PIERDE EN LOS 3 NÚMEROS",
+    "sfx": "tres marcas secas",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1714,
+      "endWord": 1721,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e15",
+    "ms": 718240,
+    "dur": 4.2,
+    "tipo": "T2V",
+    "dice": "El plástico no tiene masa, así que no detiene el ruido.",
+    "muestra": "Macro de la pared del bote de plástico vista desde adentro: los anillos de sonido la atraviesan enteros y la superficie ondula como una membrana de tambor.",
+    "porque": "Es la idea 1 de S5 aplicada al fracaso: la pared sin masa deja pasar todo. El plano repite deliberadamente el gesto de la espuma para que el espectador ate los cabos solo.",
+    "nombre": "cms_s7_pared_bote_membrana",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "extreme macro shot of the inside face of a thin grey plastic bin wall lit from below, the surface rippling and flexing like a drum membrane under pressure, faint concentric shockwaves passing straight through the plastic and out the other side, dark interior, cold green rim light along the ripples, shallow depth of field, slow push in, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "membrana de plástico retumbando",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1722,
+      "endWord": 1732,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e16",
+    "ms": 718240,
+    "dur": 3.2,
+    "tipo": "ICONO",
+    "dice": "El plástico no tiene masa, así que no detiene el ruido.",
+    "muestra": "Una pesa de hierro en PNG sin fondo tachada sobre la pared del bote, con el rótulo SIN MASA: NO DETIENE NADA.",
+    "porque": "Es el mismo ícono de pesa que en S5 empujó el contrachapado, ahora tachado: el kit cierra el argumento reusando su propio símbolo en vez de inventar uno nuevo.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_pesa.png",
+    "texto": "SIN MASA: NO DETIENE NADA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1722,
+      "endWord": 1732,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e17",
+    "ms": 722260,
+    "dur": 5.6,
+    "tipo": "T2V",
+    "dice": "Vibra, así que agrega ruido propio y el calor del escape lo deforma.",
+    "muestra": "La pared del bote vibrando y emitiendo sus propios anillos, y al mismo tiempo el borde superior combándose y colgando hacia adentro, ablandado por el calor.",
+    "porque": "La frase encadena dos fallas en un solo aliento y el plano las muestra a la vez sobre el mismo pedazo de plástico: vibra y se deforma sin cortar, porque en la realidad tampoco pasa una después de la otra.",
+    "nombre": "cms_s7_bote_vibra_deforma",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "close shot of a grey plastic bin wall shivering with vibration while its upper rim slowly softens, sags and folds inward under heat, the plastic glossy and stretching, thin heat shimmer rising in front of it, dark evening surroundings, low orange glow from below and cold blue from above, slow continuous deformation, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "zumbido de plástico + crujido de material que cede",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1733,
+      "endWord": 1745,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e18",
+    "ms": 723280,
+    "dur": 3,
+    "tipo": "TEXTO",
+    "dice": "agrega ruido propio y el calor del escape lo deforma.",
+    "muestra": "Rótulo VIBRA · AGREGA RUIDO · SE DEFORMA con las tres palabras entrando pegadas al borde que se derrite.",
+    "porque": "Las tres fallas del bote quedan escritas juntas para que se lean como un veredicto, y no vuelven a mencionarse en todo el video.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "VIBRA · AGREGA RUIDO · SE DEFORMA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1736,
+      "endWord": 1745,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e21",
+    "ms": 733660,
+    "dur": 5.6,
+    "tipo": "T2V",
+    "dice": "No hay entrada de aire de verdad y el monóxido se queda dando vueltas ahí adentro.",
+    "muestra": "Dentro del pozo, a la altura del motor: el aire quieto, sin corriente, y una ondulación transparente de gas caliente girando en espiral contra las paredes de tierra, atrapada.",
+    "porque": "El monóxido no se ve, así que hay que darle un cuerpo — la ondulación que gira y no encuentra salida — y filmarlo desde dentro del pozo, que es donde va a meter la cabeza en el plano siguiente.",
+    "nombre": "cms_s7_gas_atrapado_pozo",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "shot from inside a narrow earth pit at engine height, still dead air with no draught, a transparent heat shimmer of exhaust gas curling and turning in a slow spiral against the crumbling soil walls with nowhere to escape, dust hanging motionless, very low cold green light from above, claustrophobic framing, slow drift, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "silencio hueco + zumbido sordo confinado",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1762,
+      "endWord": 1777,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e22",
+    "ms": 736040,
+    "dur": 3.6,
+    "tipo": "TEXTO",
+    "dice": "el monóxido se queda dando vueltas ahí adentro.",
+    "muestra": "Rótulo MONÓXIDO · SIN SALIDA girando despacio con la espiral de gas.",
+    "porque": "El rótulo gira con el gas para que la palabra y el movimiento sean la misma cosa; quieto se leería como cartel de seguridad y perdería el encierro.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "MONÓXIDO · SIN SALIDA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 1770,
+      "endWord": 1777,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e23",
+    "ms": 739360,
+    "dur": 5.1,
+    "tipo": "CLIP",
+    "dice": "Cuando te agachas a apagar el generador, metes la cabeza justo en la peor parte.",
+    "muestra": "Claudio arrodillado en el borde del pozo, bajando el hombro y la mano hacia el interruptor del generador, con la cabeza entrando en el hueco.",
+    "porque": "Es el remate del bloque de fracasos y sólo funciona con el cuerpo de Claudio dentro del peligro que acaba de describir; el gas que gira ya está en cuadro del plano anterior.",
+    "nombre": "cms_s7_cabeza_dentro_pozo",
+    "foto_change": "he is kneeling at the muddy edge of a rectangular pit dug in his back yard with the red framed generator standing down inside it, leaning his shoulder and one arm down into the pit reaching for the engine switch, his head entering the opening, wet soil under his knee, the low block wall with the neighbour's lit yellow window behind him, dim cold blue evening light, medium shot from the side, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the back yard stays exactly the same for the whole shot, same rectangular earth pit, same red framed generator standing inside it, same wet crumbling soil edge, same low block wall with the lit yellow window behind him, nothing behind him changes or moves.",
+      "action": "Action: he leans further down into the pit and his hand reaches toward the engine switch on the generator, his head lowering into the opening, his lips stay closed, one single continuous action, his other hand stays braced on the soil edge.",
+      "camera": "Camera: the framing never changes, medium shot from the side, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "tierra húmeda que cede bajo la rodilla",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1778,
+      "endWord": 1792,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s7_e24",
+    "ms": 741940,
+    "dur": 2.76,
+    "tipo": "ICONO",
+    "dice": "metes la cabeza justo en la peor parte.",
+    "muestra": "El triángulo de peligro en PNG sin fondo sobre el hueco del pozo, justo donde entra la cabeza, con el rótulo LA PEOR PARTE.",
+    "porque": "Es el mismo triángulo que se apoyó en el tanque al principio de la sección: el bloque de fracasos abre y cierra con el mismo símbolo y queda sellado.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_peligro.png",
+    "texto": "LA PEOR PARTE",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1785,
+      "endWord": 1792,
+      "coverage": 1
+    }
+  }
+]

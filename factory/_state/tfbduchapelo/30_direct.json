@@ -1,0 +1,20 @@
+{
+ "fase": "30_direct",
+ "ts": "2026-09-18T11:25:24.833Z",
+ "status": "done",
+ "inputsHash": "58bf4a37a71b5761",
+ "medido": {
+  "archivosDireccion": 6,
+  "momentos": 351,
+  "cubiertos": 351,
+  "planosImagen": 328,
+  "planosAvatar": 88,
+  "avatarPctMomentos": 25,
+  "presentadorPct": 28,
+  "closePct": 20,
+  "mediumPct": 47,
+  "widePct": 34,
+  "rachaMaxLugar": 8
+ },
+ "ms": 29
+}

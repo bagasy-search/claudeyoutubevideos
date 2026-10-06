@@ -1,0 +1,52 @@
+{
+  "slug": "tfbazucar",
+  "canal": "freebuilder",
+  "modo": "avatar",
+  "idioma": "es",
+  "voz": {
+    "id": "freebuilder",
+    "blockChars": 1200
+  },
+  "avatar": {
+    "face": "public/ref/freebuilder_full.png",
+    "ref": "public/ref/freebuilder_face128.png"
+  },
+  "guion": "GUION_tfbazucar.txt",
+  "titulo": "Mezclá CEMENTO con AZÚCAR y Mirá lo Que Pasa (Tarda el Doble en Fraguar)",
+  "ctas": [
+    {
+      "ancla": "Y aquí va algo que aprendí pagando de más",
+      "head": "Cuánto rinde cada material",
+      "sub": "Escanea el código",
+      "qr": "qr/tfbazucar.png",
+      "durS": 9
+    },
+    {
+      "ancla": "Ese error me costó una tarde entera",
+      "head": "Qué no conviene tocar",
+      "sub": "Escanea el código",
+      "qr": "qr/tfbazucar.png",
+      "durS": 9
+    }
+  ],
+  "cta": {
+    "ancla": "Si esto te sirvió",
+    "head": "Suscríbete al canal",
+    "sub": "La colección, en el enlace de abajo",
+    "qr": "qr/tfbazucar.png"
+  },
+  "secciones": [
+    ["GANCHO", "Estas dos piezas salieron del mismo balde"],
+    ["QUEES", "Empecemos por lo que de verdad pasa cuando mezclas cemento"],
+    ["MECANISMO", "Ahora sí, la parte que casi nadie explica"],
+    ["DOSIS", "Vamos a los números, que es lo que viniste a buscar"],
+    ["USOS", "Y ahora la pregunta importante"],
+    ["COSTO", "Ahora la otra mitad. Lo que el azúcar te cuesta"],
+    ["ERROR", "Y vamos al error. El mío"],
+    ["CIERRE", "Antes de cerrar, una cosa más"]
+  ],
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UC-Xn4lJ35qOcf2px1BkHvEQ",
+    "cardId": "fbv71789673092521-p18_azucar"
+  }
+}

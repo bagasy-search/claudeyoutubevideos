@@ -1,0 +1,14 @@
+{
+ "fase": "10_voice",
+ "ts": "2026-09-18T04:30:12.242Z",
+ "status": "done",
+ "inputsHash": "33e07748bbf5e947",
+ "medido": {
+  "blockChars": 1200,
+  "bloques": 19,
+  "fishSec": 1507.26,
+  "wavSec": 1507.26,
+  "lufs": -14.18
+ },
+ "ms": 195858
+}

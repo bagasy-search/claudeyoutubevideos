@@ -29,7 +29,12 @@ const lum = (f) => {
 
 const files = readdirSync(DIR).filter((f) => /\.(jpg|jpeg|png)$/i.test(f)).sort();
 const rows = [];
-for (const f of files) { const v = lum(join(DIR, f)); if (v !== null) rows.push([f, v]); }
+const sinMedir = [];
+for (const f of files) { const v = lum(join(DIR, f)); if (v !== null) rows.push([f, v]); else sinMedir.push(f); }
+// ⛔ fail-closed (fábrica, 15-sep-2026): una carpeta de clips (0 jpg) o archivos que ffmpeg no leyó
+// daban "✅ sin frames negros" sin haber medido nada.
+if (!files.length) { console.log(`⛔ NO MIDIÓ: 0 imágenes .jpg/.png en ${DIR} (¿carpeta de clips? pasale la carpeta de stills)`); process.exit(2); }
+if (sinMedir.length) { console.log(`⛔ NO MIDIÓ ${sinMedir.length}/${files.length}: ${sinMedir.slice(0, 6).join(", ")}`); process.exit(2); }
 rows.sort((a, b) => a[1] - b[1]);
 
 const negros = rows.filter(([, v]) => v <= UMBRAL);

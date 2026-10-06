@@ -1,0 +1,143 @@
+Haz una caja de veinte dólares que silencia un generador —y sí, de verdad funciona—, pero no la cierres alrededor del motor. Puedes convertir un problema de ruido en un incendio o en monóxido de carbono. La caja que funciona no encierra el generador. Le corta el camino al sonido y le deja el camino libre al aire.
+
+En una prueba controlada, el generador marcó setenta y ocho decibeles a siete metros, con la misma carga y el mismo punto de medición. Después, una pantalla acústica abierta, hecha con madera, material absorbente protegido y una tarde de trabajo, bajó la lectura a sesenta y seis. Doce decibeles menos. No significa que el tuyo vaya a marcar exactamente lo mismo: significa que el método se puede medir y que no tienes que creerle a una caja de comentarios.
+
+Lo sorprendente no fue el número final. Fue descubrir que la madera no hizo todo el trabajo. Dos detalles baratos, la orientación y el control de la vibración, aportaron más de lo que parece. Te los voy a mostrar, y también te voy a explicar cuándo no debes construir nada alrededor de un generador.
+
+Quédate hasta el final, porque hay un problema que aparece después de la primera noche. La pantalla puede funcionar muy bien al principio y perder eficacia unas semanas después, aunque no se haya roto ni aflojado. No es magia. Es humedad, polvo, aceite y una fibra absorbente puesta en el lugar equivocado. Ese es el error que casi nadie revisa.
+
+Primero, aclaremos qué estamos construyendo. Porque la mayoría de la gente que intenta silenciar un generador termina haciendo una caja que no entiende.
+
+Una caja silenciadora segura no es un mueble para esconder el generador. En este video la palabra caja significa una barrera acústica abierta: varias caras pesadas que bloquean el sonido, mientras el motor sigue al aire libre. El aire no atraviesa un túnel improvisado. Entra y sale alrededor del generador como lo pide su diseño.
+
+Y hay un motivo por el que un generador suena tanto, y no es el que la gente cree. Cuando preguntas de dónde sale el ruido, todos señalan el escape. Y sí, hace ruido, pero no es la única fuente. En un generador abierto, el motor y el ventilador también emiten directamente hacia el patio. Por eso tapar sólo el escape rara vez resuelve el problema y puede ser peligroso.
+
+Los otros dos tercios salen de otro lado. Uno es el motor mismo: el pistón golpeando, las válvulas, el cigüeñal. Ese ruido no sale por ningún tubo, sale por todas partes desde el bloque del motor, igual que suena un martillo. Y el otro, el que nadie mira, es el ventilador de refrigeración. Da miles de vueltas por minuto y mueve un río de aire, y ese río hace un rugido grave y constante: el que se te mete en la casa aunque cierres la ventana.
+
+Súmale la lámina. Toda tapa de lámina fina vibrando es un parlante. Golpea con el nudillo la carcasa de tu generador apagado: si suena a tambor, ese pedazo está cantando cada vez que lo enciendes.
+
+Por eso los generadores silenciosos de fábrica cuestan mucho más. La carcasa, el aislamiento, el control de vibración y el flujo de aire están calculados para un modelo concreto. Nosotros sólo vamos a usar una barrera abierta y medible; no vamos a copiar una carcasa industrial con tablas.
+
+Ahora, el trato de siempre. Yo no te vendo nada, yo mido. Y te digo de entrada lo que esta barrera no hace, porque si no te lo digo sería un vendedor y no un tipo con un medidor en la mano.
+
+Esta pantalla no deja el generador en silencio. Nadie lo deja en silencio. Lo que hace es bajarlo de "no puedo dormir" a "ruido de fondo".
+
+Tampoco arregla un escape roto: si tu generador ya venía con un golpeteo metálico o un silbido, eso es una falla mecánica, y la pantalla te la va a esconder hasta que se convierta en algo caro.
+
+Y esta es la importante. Si por caja imaginas un gabinete cerrado alrededor del motor, no lo construyas con este video. Los generadores portátiles están diseñados para trabajar al aire libre. La pantalla acústica no cambia esa regla: debe quedar separada del generador, abierta por arriba y por los lados, y sin bloquear las entradas de aire ni la salida del escape.
+
+La regla de seguridad es más importante que cualquier decibel. Usa el generador afuera, lejos de puertas, ventanas y respiraderos. Como referencia, los organismos de seguridad recomiendan al menos veinte pies, unos seis metros, y siempre manda el manual de tu modelo y la norma de tu localidad. No lo metas en el garaje aunque la puerta esté abierta. No lo metas en un cobertizo. No lo tapes con una lona. No le pongas una tapa para que "no se escape el ruido".
+
+Un generador quema gasolina y produce monóxido de carbono. Ese gas no tiene olor ni color y puede dejarte inconsciente antes de que entiendas qué pasa. Instala alarmas de monóxido dentro de la casa y fuera de las zonas donde se duerme. Si suena una alarma o alguien siente dolor de cabeza, mareo, debilidad, náusea o confusión, salgan al aire libre y pidan ayuda de emergencia.
+
+Una precisión: aquí no alargamos el escape, perforamos el silenciador ni metemos el tubo en un conducto. El escape queda como lo diseñó el fabricante y la pantalla se mantiene lejos. Si necesitas un gabinete completo, compra uno diseñado para tu modelo o pide el cálculo a un técnico. Aquí sólo hacemos una barrera abierta; no una habitación para el motor. Si piensas encerrarlo, apaga el video.
+
+Y antes de seguir con el ruido, una pregunta: ¿qué necesitas mantener encendido cuando se va la luz? “Cuando se va la luz”, una guía de Todo Medido, reúne tablas de aparatos, tres sistemas de respaldo y el orden de las primeras horas del apagón. No para comprar por impulso: para saber qué necesitas. Guárdate el nombre.
+
+Bien. Los números. En este canal trabajamos con tres: esta vez, los del ruido.
+
+El primero es la lectura de ruido a una distancia fija, por ejemplo siete metros. Una aplicación del teléfono no es un instrumento certificado, pero puede servir para comparar antes y después si mantienes la misma posición, la misma carga y el mismo clima.
+
+El segundo es cuánto aire necesita para enfriarse, y este lo ignora todo el mundo. Un generador no usa el aire solamente para quemar gasolina: usa muchísimo más para sacar calor. Si una barrera hace que el aire caliente regrese a la máquina, deja de ser una ayuda acústica y se convierte en una falla.
+
+Y el tercero es si la temperatura y el funcionamiento siguen dentro de lo que permite el manual. Si una pantalla crea una bolsa de aire caliente, no es una solución: es un horno con un motor al lado.
+
+Y los tres pelean entre ellos. Si tapas para bajar el primero, arruinas el segundo y disparas el tercero. Por eso muchas cajas que ves en internet son peligrosas: bajan el ruido porque tapan, y tapar es lo único que no puedes hacerle a un motor de gasolina.
+
+Vamos a lo que sí funciona. Son tres ideas, y con ellas juzgas cualquier pantalla.
+
+Idea uno: el ruido lo detiene el peso, no la esponja. Lo que detiene el sonido es la masa. Una hoja de madera contrachapada de doce milímetros, la que en tu país le dicen triplay o terciada, detiene más ruido que diez centímetros de espuma. Por eso, cuando alguien me dice que forró la caja entera de espuma y no bajó nada, ya sé lo que pasó: puso toallas donde tenía que poner pared.
+
+Idea dos: el absorbente no es la pared, es la lana mineral protegida. ¿Entonces para qué sirve dentro de la pantalla? Para que el ruido no rebote. En una barrera rígida y desnuda, parte del sonido rebota hacia el patio. La lana absorbe esos rebotes. La masa impide que el sonido atraviese la pared; el absorbente suaviza el sonido que llega a la barrera. La lana debe quedar encapsulada o cubierta, estable y lejos del escape. No uses espuma de colchón ni material suelto junto a un motor caliente.
+
+Idea tres, y esta decide si tu pantalla sirve o no: manda la rendija. El sonido se comporta como el agua. Puedes tener un panel pesado, pero si tiene una abertura grande, el sonido encuentra el camino. Una barrera con juntas mal cerradas puede rendir mucho menos de lo esperado.
+
+Y aquí está la mitad de la historia de este video. ¿Te acuerdas de que la madera no dio todos los decibeles? Un detalle barato es el sellador en las juntas de la pantalla. Tres dólares de sellador adecuado, aplicado donde se unen los paneles, evitan que queden rendijas grandes que conviertan la barrera en un marco. No es una garantía de tres decibeles para todos los patios: es una forma de que la pantalla se comporte como una superficie continua.
+
+El otro detalle es la vibración. El motor puede hacer que el soporte y las tablas actúen como un parlante. Usa una base antivibración estable y compatible con tu generador sólo si el fabricante la permite. Nunca pongas la máquina sobre una goma blanda que la deje inestable, tape el flujo de aire, acerque el combustible al calor o cambie la nivelación. La meta es separar la vibración del soporte, no improvisar una pata peligrosa.
+
+En mi medición, el conjunto de barrera, juntas cerradas, orientación y soporte redujo doce decibeles. En tu patio, el reparto puede ser distinto. La prueba honesta es repetir la lectura en las mismas condiciones, no copiar mi número como si fuera una promesa.
+
+Antes de la lista de materiales, déjame ahorrarte los intentos que ya fracasaron. Los vi todos, y algunos son peligrosos.
+
+Echarle una manta o una lona encima es lo que hace casi todo el mundo cuando el vecino se queja, y es de las peores cosas posibles. Tapas las entradas de aire, el motor se recalienta, y una tela cerca del escape caliente puede convertirse en fuego al lado del tanque de gasolina.
+
+Meterlo dentro de un bote de basura de plástico es la peor combinación de los tres números: el plástico no tiene masa, así que no detiene el ruido; vibra, así que agrega ruido propio; y el calor del escape lo deforma.
+
+Enterrarlo en un pozo suena lógico. Pero el pozo se llena de agua a la primera lluvia, no hay entrada de aire de verdad, y el monóxido se queda dando vueltas ahí adentro. Cuando te agachas a apagar el generador, metes la cabeza justo en la peor parte.
+
+Bien, la lista. Con parte de la madera disponible, el material llegó a veinte dólares. Si compras absolutamente todo nuevo, calcula más. Sigue siendo mucho menos que una carcasa acústica diseñada para un equipo específico, pero el precio no autoriza a saltarse la seguridad.
+
+Dos o tres paneles de contrachapado de doce a quince milímetros para formar la pantalla: seis dólares. Lana mineral o de roca, completamente cubierta y fijada detrás de los paneles: cinco. Un cartucho de sellador compatible: tres. Tornillos, listones y una base antivibración aprobada completan el resto. No uses espuma de colchón, espuma de embalaje ni manta: la espuma arde y la manta tapa el aire.
+
+La medida de la pantalla no se calcula para abrazar el generador. Primero colocas el generador en la posición segura que indica su manual, al aire libre y lejos de la casa. Luego pones la barrera del lado que quieres proteger, dejando el paso de aire y el acceso a los controles completamente libres. No lleva techo. No lleva puerta. No toca la máquina. No tapa el tanque, las ventilas ni el escape.
+
+La parte que hace que la pantalla funcione es la línea de vista. El sonido viaja directo desde el motor hasta el oído. Si una superficie pesada y continua queda entre ambos, el sonido tiene que rodearla y pierde energía. Puedes usar tres paneles en forma de U abierta, o dos paneles en ángulo. El lado absorbente mira hacia la fuente, pero queda protegido de la lluvia, del polvo y de cualquier parte caliente.
+
+No fabriques un túnel cerrado para que el aire "doble". Un laberinto acústico alrededor de un generador portátil necesita cálculos de ventilación, temperatura y escape específicos del modelo. Esa es una solución de ingeniería, no una receta universal.
+
+La configuración correcta queda así: el generador completamente al aire libre, la barrera cortando la línea directa hacia el vecino, el material absorbente encapsulado y el escape sin rodear ni modificar. El aire sale libre por arriba y por los costados, y la distancia de seguridad a la casa se conserva.
+
+El manual del fabricante manda. La guía del canal ayuda a ordenar las medidas del patio y comparar ruido, pero la holgura, la lluvia, la puesta a tierra y cualquier conexión eléctrica se revisan con el instructivo de tu modelo y, cuando corresponda, con un profesional.
+
+Antes de dejarla funcionando, confirma los tres números: una lectura de ruido comparable, el espacio libre que necesita para enfriarse y que la temperatura y el funcionamiento siguen dentro del manual. No copies una cifra universal de ventilación: los vatios, el tipo de motor, el ventilador y la carga cambian de un modelo a otro.
+
+La primera versión se veía muy bien en una foto, pero quedó demasiado cerca de la descarga caliente y el aire regresó hacia el motor. La temperatura subió, apareció una advertencia y hubo que apagar. No agrandes un hueco a ojo ni cambies la dirección del escape como si fuera un extractor. Retira la barrera y vuelve a empezar siguiendo el manual.
+
+La prueba antes de dejar el generador funcionando es simple, pero no reemplaza la especificación del fabricante: haz una prueba corta con la carga prevista, vigila cualquier alarma o cambio de funcionamiento, confirma que el escape está libre y que el aire caliente no vuelve hacia la máquina. Si algo se calienta de más, huele a combustible, pierde fuerza o se apaga, apaga todo y elimina la pantalla. No sigas probando por orgullo.
+
+Y el escape queda exactamente como viene. No se perfora el silenciador. No se le agrega una manguera flexible improvisada. No se pasa por la madera. No se acerca la lana al tubo. Mantén el generador y la barrera secos, estables y accesibles para apagarlo rápido.
+
+Ahora sí, la medición. Mira los números: ahí está la historia.
+
+Generador de tres mil quinientos vatios, abierto, de marco de tubo. Punto de medición, siete metros, en el mismo lugar en cada prueba. Cargado igual: refrigerador, congelador, seis luces y un calentador chico. Estos números son de esta prueba; no son una promesa para todos los modelos.
+
+Sin barrera, sobre el piso de concreto, apuntando hacia la casa del vecino: setenta y ocho decibeles.
+
+Con la pantalla abierta, puesta entre la fuente y el punto de medición, sin tocar el generador y sin cambiar la carga: setenta y dos. Seis decibeles.
+
+Mismo día, mismo punto: cierro las juntas entre los paneles, dejo que el sellador cure y mido de nuevo. Sesenta y nueve. Tres decibeles más en este montaje, no tres decibeles garantizados para el tuyo.
+
+Después giro el generador para que el escape y el ventilador no apunten hacia la casa. Si el manual y el espacio del patio lo permiten, una base antivibración estable evita que el soporte se convierta en parlante. La lectura final de esta prueba queda en sesenta y seis.
+
+Setenta y ocho a sesenta y seis. Y hagamos que ese número signifique algo, porque los decibeles son tramposos. Como regla práctica, una reducción de diez decibeles suele sentirse aproximadamente como la mitad de fuerte, aunque la sensación cambia según el tono y el lugar. Doce decibeles pueden ser la diferencia entre un ruido que te obliga a subir la televisión y un ruido que está ahí pero no manda en la casa.
+
+Pero hay otra prueba de ese mismo día que conviene recordar aunque nunca construyas la pantalla. Combinó tres cambios sin comprar otro equipo.
+
+Primero, se giró el generador. Un generador abierto no tira el ruido igual para todos lados: tira más por el lado del escape y por el del ventilador. El escape estaba mirando a la casa del vecino porque ahí quedaba cómodo. Se giró ciento ochenta grados, sin moverlo de lugar. Bajó dos decibeles. Girarlo, nada más.
+
+Segundo, le rompí la línea de vista. Si desde el punto de escucha se ve el generador, parte del ruido llega directo; si en el medio hay algo sólido y pesado que tape la vista, el sonido tiene que rodearlo y pierde energía. No construí nada: coloqué la pantalla detrás del muro bajo que ya divide el patio. Tres decibeles más.
+
+Y tercero, el más grande, y el que la gente no usa porque le da pereza: la distancia. Cada vez que duplicas la distancia entre la fuente y el oído, al aire libre, pierdes seis decibeles. Seis. El generador estaba a siete metros de la pared del vecino; con veinte metros de cable de calibre grueso se llevó al fondo del terreno, a catorce metros. Seis decibeles por caminar veinte pasos.
+
+No los sumes como si fueran una promesa automática: las condiciones se pisan entre sí. En esa segunda configuración, la lectura final fue de sesenta, dieciocho decibeles menos que al principio. Tu oído puede percibirlo como muchísimo menos intenso, pero la sensación depende del espectro, del viento, de las paredes y del punto exacto donde escuchas.
+
+Y fíjate en el orden, porque es lo importante: una parte enorme salió de mover cosas de lugar y cerrar rendijas. Antes de construir nada, orienta el generador según el manual, pon una barrera sólida entre la fuente y el punto de escucha y aumenta la distancia sin acercarlo a la casa. Usa extensiones aptas para exterior y con capacidad suficiente; nunca alargues el escape ni la línea de combustible. Puede ser que con eso ya te alcance y te ahorres la tarde entera.
+
+Eso sí, si vas a alejarlo con un cable largo, el calibre importa. Un cable fino y largo se calienta, te come voltaje y puede arruinar el aparato del otro extremo. Y si al alejar el generador comparas cables, baterías o paneles, no confíes en el número grande de la caja. “Promete 100 W. Entrega 43 W.” reúne la prueba de diez minutos y mediciones de veintisiete equipos. Es la diferencia entre comprar un número y comprar lo que entrega. Anota el nombre.
+
+Y ahora sí, lo que te prometí al principio: por qué la pantalla te da doce decibeles la primera noche y a las tres semanas te da seis, sin que hayas tocado nada.
+
+No es la madera. No son los tornillos. Es el material absorbente y el lugar donde lo pusiste.
+
+En una pantalla exterior pasan tres cosas que ninguna foto bonita te cuenta. La humedad entra por la lluvia y por la condensación. El polvo se mete entre las fibras. Y el viento puede mover una cubierta mal fijada hasta dejar la lana desnuda. Si la lana se moja, se apelmaza o se llena de polvo, pierde capacidad de absorber. La barrera sigue ahí, pero el rebote vuelve a hacer ruido.
+
+Y hay una consecuencia peor que el ruido. Una fibra suelta o una tela mal puesta puede acercarse a una parte caliente, retener aceite o convertirse en un riesgo de incendio. La lana mineral no arde como una espuma común, pero eso no vuelve seguro cualquier montaje a su alrededor. El material absorbente tiene que estar encapsulado, fijado, protegido del agua y fuera de la zona de calor.
+
+La solución son tres revisiones baratas. Uno: la lana nunca va desnuda; queda detrás de una cubierta o malla que la mantenga en su sitio, sin tocar el escape ni las ventilas. Dos: la pantalla se mantiene estable y drenada. Tres: cada cierto tiempo, con el generador apagado y frío, revisas la fibra. Si está húmeda, aceitosa, aplastada o suelta, la cambias. No la seques junto al motor ni la sacudas sobre la entrada de aire. Cinco dólares y quince minutos pueden ahorrarte un problema mucho más caro.
+
+Y ya que estamos con el fuego, tres cosas más que convierten una pantalla en un problema serio: recargar gasolina con el generador encendido o caliente; usar espuma, lona o material suelto cerca del motor; y dejar la estructura sobre pasto seco, hojas o combustible derramado. Apaga el equipo, deja que se enfríe y sigue el manual antes de cargar combustible. La lista completa de errores la tengo ordenada en la guía del canal.
+
+Ahora te digo cuándo no hacer esta pantalla, porque a veces la respuesta es no. Si tu generador es un inversor cerrado moderno y ya trabaja cerca de sesenta decibeles según su manual, quizá no ganes casi nada y sí arriesgues la ventilación. Aléjalo y pon algo sólido entre la fuente y el punto de escucha, si el lugar permite conservar la distancia de seguridad. Y si queda debajo de una ventana o pegado a la pared de un dormitorio, ninguna pantalla arregla el problema: parte del ruido viaja por la estructura. Muévelo.
+
+Y si lo que necesitas es que funcione de noche mientras duermes, con la casa cerrada, detente un segundo y piensa si lo que necesitas es un generador. Un respaldo de batería no tiene escape ni monóxido y hace mucho menos ruido. Para cargas esenciales puede ser una opción más segura y silenciosa. Pero tampoco compres a ciegas: calcula los vatios y la capacidad que realmente necesitas.
+
+Cerremos. Setenta y ocho decibeles al principio, sesenta al final en una prueba concreta. Veinte dólares en materiales, con parte de la madera disponible, y una tarde de trabajo. Una parte importante de la reducción salió de girar el generador, aumentar la distancia, poner un muro en el medio y cerrar las juntas. Eso ya te sirve, incluso si decides no construir la pantalla.
+
+El esquema de la pantalla abierta, las distancias de seguridad, la lista de materiales y la forma de comprobar que no estás bloqueando el aire están ordenados junto con el resto de la guía. No hay una medida universal para encerrar un generador: el modelo, el manual y el lugar donde lo instalas mandan.
+
+Y si ya viste que el ruido, el consumo y el respaldo se resuelven con números, “Todo Medido” reúne las dos guías, la guía exclusiva de compras y los cuatro anexos. Es el mapa para buscar el dato antes de abrir la billetera y no comprar dos veces. Si te sirve tenerlo a mano, guárdate el nombre.
+
+Y cuéntame una cosa en los comentarios, porque tengo curiosidad: ¿a cuántos metros está tu generador de la ventana de tu vecino? Si son menos de siete, haz la prueba de la distancia antes que nada, y dime cuánto te bajó.
+
+Si esto te sirvió, suscríbete, porque el que viene lo grabo con el medidor puesto durante un apagón entero, de punta a punta, para que veas cada número en vivo. Nos vemos en el próximo. Cuídate, y mide antes de comprar.

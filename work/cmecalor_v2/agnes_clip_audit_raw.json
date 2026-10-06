@@ -1,0 +1,2197 @@
+[
+ {
+  "name": "cmec_v2_0_002",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 9,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man with matching curly dark hair and salt-and-pepper beard, wearing identical dark grey shirt over black tee, holding a power meter in a utility room.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, consistent clothing and features."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, same curly hair, beard, dark shirt. Side profile face visible; minor softness on power meter cord."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man with matching curly dark hair and salt-and-pepper beard, wearing identical dark grey shirt over black tee, holding a power meter in a utility room."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man: dark curly hair, grey-streaked beard, identical dark grey shirt over black tee. Both show natural human hands with correct finger count, realistic skin pores/wrinkles, and normal crouching anatomy. Slight lighting differences but same face, hairline, and facial structure."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_0_003",
+  "verdict": "ok",
+  "worst": {
+   "identity": 8,
+   "hands": 9,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same person, similar clothing. Face visible in profile. Hands and anatomy appear natural. Minor detail accuracy.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man with dark curly hair and beard, shown in profile interacting with equipment; natural pose and realistic details."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, same clothing and beard, working on generator"
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man with curly hair and beard, wearing identical clothing, interacting with a generator in a utility area."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same person, similar clothing. Face visible in profile. Hands and anatomy appear natural. Minor detail accuracy."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_0_005",
+  "verdict": "ok",
+  "worst": {
+   "identity": 8,
+   "hands": 6,
+   "anatomy": 8,
+   "objects": 6,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Strong identity match with reference. Hands show minor finger distortion. Manual has illegible text and tools appear slightly fused.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 6,
+    "anatomy": 9,
+    "objects": 6,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Strong identity match with reference. Hands show minor finger distortion. Manual has illegible text and tools appear slightly fused."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 7,
+    "anatomy": 8,
+    "objects": 9,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same man with dark curly hair and grey-streaked beard, crouching and reading a manual next to a wall heater; hands and anatomy are natural."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, consistent clothing and features, natural pose and lighting."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man; profile view shows matching curly hair, facial structure, and stubble consistent with reference."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_0_006",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 10,
+   "anatomy": 10,
+   "objects": 10,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man with identical curly hair and beard seen in profile, wearing the same shirt, pointing at a switch.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man with identical curly hair and beard seen in profile, wearing the same shirt, pointing at a switch."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man with matching facial features, hair, and beard; realistic skin and anatomy."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": null,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, natural skin texture, no obvious artifacts."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man with matching curly hair, grey-flecked beard, and identical grey shirt."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_0_007",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 5,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man, matching hair, beard, and clothing.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, consistent features and clothing, natural pose."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man with matching curly hair and beard, working on an electrical box. Natural anatomy and realistic objects."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man — curly dark hair, grey-flecked beard, and identical dark grey shirt over black tee. Face visible in profile; hands operating lockout device look natural and plausible; scene coherent."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 5,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man, matching hair, beard, and clothing."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_0_010",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 7,
+   "anatomy": 9,
+   "objects": 8,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Identity is the same man. Left hand fingers appear slightly fused and thick.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 7,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Identity is the same man. Left hand fingers appear slightly fused and thick."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, face visible in profile, natural appearance consistent with reference"
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 8,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man: curly dark hair, grey beard, same grey shirt over black tee; side profile shows clear facial match; hands holding orange cord look normal; no corruption."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "The person in the video is the same man as in the reference photo, identifiable by his dark curly hair and beard. His hands are normal, holding the orange extension cord realistically, and there are no anatomical or object distortions."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_0_012",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man, same grey shirt. Face clearly visible, holding a black conduit pipe. Hands and anatomy look natural. Skin slightly smoothed but recognizable.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, holding a black cable with realistic hands and natural anatomy."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man with matching curly hair, beard, facial features, and clothing. Scene coherent with natural skin texture and plausible object handling."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same man, same grey shirt. Face clearly visible, holding a black conduit pipe. Hands and anatomy look natural. Skin slightly smoothed but recognizable."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, consistent features and clothing"
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_10_001",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 7,
+   "anatomy": 10,
+   "objects": 10,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same curly-haired man with beard, similar clothes, squatting pose handling generator cord.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man, same grey beard and dark curly hair, same grey shirt outfit, realistic hands and objects."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, consistent features and clothing."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man in similar clothes, crouching by a generator."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 7,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same curly-haired man with beard, similar clothes, squatting pose handling generator cord."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_10_002",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 9,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man, curly hair, beard, grey shirt. Holding multimeter on generator. Realistic hands and objects.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, curly hair, beard, grey shirt. Holding multimeter on generator. Realistic hands and objects."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man in identical clothing (grey shirt, black undershirt) with matching curly hair and beard. Face is visible in profile."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, matching hair, beard, and clothing; natural skin and anatomy."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "High-quality footage; same man with consistent curly hair and beard. Hands and generator look natural."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_10_003",
+  "verdict": "redo",
+  "worst": {
+   "identity": 5,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": true,
+   "motion_severity": 9,
+   "motion_what": "The open window with a city view is instantly replaced by closed curtains while the man stands with his arms at his sides, which is physically impossible in 1.5 seconds."
+  },
+  "reasons": [
+   "identidad 5",
+   "movimiento imposible (9)"
+  ],
+  "why": "Profile view and low light obscure facial details like beard, but hair and build match reference.",
+  "motion_what": "The open window with a city view is instantly replaced by closed curtains while the man stands with his arms at his sides, which is physically impossible in 1.5 seconds.",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 10,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Profile view and low light obscure facial details like beard, but hair and build match reference."
+   },
+   {
+    "t": 2.05,
+    "face_visible": false,
+    "identity": null,
+    "hands": 8,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Side profile view, face not visible enough for identification."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 5,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Similar build and curly dark hair but no grey beard visible; face in profile limits confident ID"
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man with curly dark hair and beard, standing in a living room looking at curtains."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_10_004",
+  "verdict": "ok",
+  "worst": {
+   "identity": 8,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man (curly hair, beard, grey shirt), normal anatomy and objects.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man with curly hair and similar facial features."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same curly hair, grey-dusting beard, and grey shirt as Image 1; profile view limits face detail but features match."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man (curly hair, beard, grey shirt), normal anatomy and objects."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man (curly hair, beard) seen in profile."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_10_005",
+  "verdict": "redo",
+  "worst": {
+   "identity": 9,
+   "hands": 0,
+   "anatomy": 0,
+   "objects": 9,
+   "skin_texture": 0,
+   "broken": false,
+   "impossible_change": true,
+   "motion_severity": 7,
+   "motion_what": "New objects (pots) appear on the patio between frames — a brown pot on the left near the fence and a grey pot on the right were not present in the first frame"
+  },
+  "reasons": [
+   "manos 0",
+   "anatomía 0"
+  ],
+  "why": "The person is barely visible as a blurry sliver on the far left edge; face and body are not shown.",
+  "motion_what": "New objects (pots) appear on the patio between frames — a brown pot on the left near the fence and a grey pot on the right were not present in the first frame",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, consistent features and clothing."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man, same grey shirt outfit, natural hands and face visible."
+   },
+   {
+    "t": 3.5,
+    "face_visible": false,
+    "identity": null,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Face is turned away and partially obscured, preventing definitive identity comparison; general appearance (curly hair, clothing) matches reference."
+   },
+   {
+    "t": 4.94,
+    "face_visible": false,
+    "identity": null,
+    "hands": 0,
+    "anatomy": 0,
+    "objects": 10,
+    "skin_texture": 0,
+    "broken": false,
+    "why": "The person is barely visible as a blurry sliver on the far left edge; face and body are not shown."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_10_006",
+  "verdict": "ok",
+  "worst": {
+   "identity": 8,
+   "hands": 8,
+   "anatomy": 10,
+   "objects": 9,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": true,
+   "motion_severity": 7,
+   "motion_what": "The candle on the table changes from a tall white lit pillar to a small grey unlit object (like a tea light or cup)."
+  },
+  "reasons": [],
+  "why": "Same man, curly dark hair, grey beard, matching grey shirt over black tee; hands slightly soft but plausible; clean frame overall.",
+  "motion_what": "The candle on the table changes from a tall white lit pillar to a small grey unlit object (like a tea light or cup).",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "same man, same face/hair/beard, natural skin, coherent scene"
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 10,
+    "objects": 9,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same man, curly dark hair, grey beard, matching grey shirt over black tee; hands slightly soft but plausible; clean frame overall."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, face clearly visible, holding thin stick with natural fingers, consistent lighting and skin detail."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, same hair, beard, and clothing."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_10_007",
+  "verdict": "ok",
+  "worst": {
+   "identity": 10,
+   "hands": 9,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man, coherent scene.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, same facial features and clothing, holding a card near a pipe valve."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, consistent clothing and features; slight stylization on fingers but structurally sound."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Identical man with same curly hair, beard, and clothing. Hands and anatomy are natural. Objects are realistic."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, coherent scene."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_5_002",
+  "verdict": "ok",
+  "worst": {
+   "identity": 8,
+   "hands": 6,
+   "anatomy": 9,
+   "objects": 8,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man, slight hand stiffness holding device.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 6,
+    "anatomy": 9,
+    "objects": 8,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same man, slight hand stiffness holding device."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, side view, holding thermal camera."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man with curly hair and beard, holding plausible objects with normal hands."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man with curly hair and beard wearing identical clothing, holding a multimeter and notebook."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_5_004",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 6,
+   "anatomy": 9,
+   "objects": 6,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man with matching beard and hair in similar outfit. Profile view makes identity judgment confident. Hands are a bit blurry interacting with paper. Heater and paper text look artificial.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 6,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same man with curly hair and beard; hands holding paper are slightly indistinct/fused but functional."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 9,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, similar outfit, natural pose and expressions."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "High-fidelity match; same curly hair, beard, and grey shirt. Hands and anatomy are natural."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 7,
+    "anatomy": 9,
+    "objects": 6,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man with matching beard and hair in similar outfit. Profile view makes identity judgment confident. Hands are a bit blurry interacting with paper. Heater and paper text look artificial."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_5_005",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man, grey beard, curly dark hair, same grey shirt; hands holding paper slightly less clear",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man in identical clothing; consistent pose and environment."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, natural pose in workshop setting."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, grey beard, curly dark hair, same grey shirt; hands holding paper slightly less clear"
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man with matching hair, beard, and clothing in a similar crouching pose."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_5_006",
+  "verdict": "redo",
+  "worst": {
+   "identity": 1,
+   "hands": 9,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [
+   "identidad 1"
+  ],
+  "why": "Different man; shorter hair under cap, different facial structure",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 1,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Different man wearing a cap; the reference man is visible on the far left edge."
+   },
+   {
+    "t": 2.05,
+    "face_visible": false,
+    "identity": null,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Person from Image 1 only partially visible on far left edge; face cut off by frame."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 2,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Different man; shorter hair under cap, different facial structure"
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Partial profile visible on left edge matches reference subject's dark curly hair and beard; main subject wearing cap is a different person."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_5_008",
+  "verdict": "ok",
+  "worst": {
+   "identity": 8,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man, clothing matches, face and beard consistent.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man, same clothes, natural pose."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, different angle; face partially visible showing matching curly hair and profile"
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same man, clothing matches, face and beard consistent."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same man, minor facial differences likely due to lighting/angle; overall coherent footage."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_5_009",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 9,
+   "anatomy": 10,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man, same curly dark hair and grey beard, similar dark grey shirt; face and body anatomically correct, objects solid and consistent.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man with matching dark curly hair, beard style, and facial features wearing identical clothing"
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, same curly dark hair and grey beard, similar dark grey shirt; face and body anatomically correct, objects solid and consistent."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, same clothes, natural pose."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, matching grey shirt and beard; face clearly visible pointing at generator."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_auto_002",
+  "verdict": "ok",
+  "worst": {
+   "identity": 8,
+   "hands": 7,
+   "anatomy": 8,
+   "objects": 8,
+   "skin_texture": 6,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man with dark curly hair and grey beard; minor AI-smoothing on hands and skin.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man with matching curly hair and beard; holding a thermometer device plausibly."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man — dark curly hair, grey beard, facial features match. Face clearly visible. Hands look natural (right fingers on device, left on surface). Clothing different (puffer jacket vs shirt) but identity judged on face only."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 7,
+    "anatomy": 8,
+    "objects": 8,
+    "skin_texture": 6,
+    "broken": false,
+    "why": "Same man with dark curly hair and grey beard; minor AI-smoothing on hands and skin."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man, face and features match across both frames"
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_auto_003",
+  "verdict": "ok",
+  "worst": {
+   "identity": 8,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 8,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man, face visible in profile; minor softness/smoothing on skin and slight AI-style rendering quality.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, side profile view; slight identity uncertainty due to angle but consistent features, hair, and beard."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man with matching curly hair and beard style; natural anatomy and objects."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man with curly hair and beard, wearing similar clothing. Hands and objects are realistic and anatomically correct."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 8,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same man, face visible in profile; minor softness/smoothing on skin and slight AI-style rendering quality."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_auto_006",
+  "verdict": "redo",
+  "worst": {
+   "identity": 7,
+   "hands": 4,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [
+   "manos 4"
+  ],
+  "why": "Right hand shows significant distortion with fused/blurred fingers when pointing at the power station; otherwise consistent with reference",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, same clothing, consistent appearance; minor AI smoothing on skin."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man, clear face, natural pose, realistic skin and objects."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 7,
+    "hands": 4,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Right hand shows significant distortion with fused/blurred fingers when pointing at the power station; otherwise consistent with reference"
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, same grey shirt and black undershirt, natural squatting pose, realistic hands pointing at a portable power station."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_fuel_001",
+  "verdict": "redo",
+  "worst": {
+   "identity": 4,
+   "hands": 9,
+   "anatomy": 10,
+   "objects": 10,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [
+   "identidad 4"
+  ],
+  "why": "Face visible but identity uncertain due to different beard color and appearance; hands and objects normal.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 4,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Face visible but identity uncertain due to different beard color and appearance; hands and objects normal."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, consistent features and clothing"
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, consistent appearance and clothing across both frames."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man in matching outfit squatting next to generator; realistic anatomy and skin texture."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_fuel_005",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man with curly hair and beard in matching clothing",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, same curly dark hair, grey beard, same dark grey shirt over black tee; lighting varies but facial features and hairline match clearly"
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same man with curly hair and beard in matching clothing"
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, same clothes, clear face and hands."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, clear face and hands, natural anatomy and objects."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_fuel_006",
+  "verdict": "ok",
+  "worst": {
+   "identity": 6,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Profile view limits identity assessment; other elements appear natural and consistent.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man with curly dark hair and grey beard; natural pose plugging in power station; minor profile angle limits exact identity certainty."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Same man in profile view; slight motion blur on hand."
+   },
+   {
+    "t": 3.5,
+    "face_visible": false,
+    "identity": null,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Profile view limits identity assessment; other elements appear natural and consistent."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 6,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Profile view; same curly hair and beard but limited frontal detail"
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_heat_002",
+  "verdict": "ok",
+  "worst": {
+   "identity": 8,
+   "hands": 6,
+   "anatomy": 9,
+   "objects": 10,
+   "skin_texture": 9,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man with curly hair and beard, hands slightly off",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 6,
+    "anatomy": 9,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man with curly hair and beard, hands slightly off"
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man with curly hair and beard, holding paper naturally near wall heater."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man with matching curly hair and beard. Hands and objects look natural and solid."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, similar features and clothing; clear profile view of face"
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_heat_004",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 7,
+   "anatomy": 9,
+   "objects": 8,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Profile view matches reference man (hair, beard). Hand on doorknob is slightly stiff/indistinct but plausible.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man — curly dark hair, stubble, grey shirt. Side profile clearly recognizable. Natural pose, solid objects, realistic skin."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 7,
+    "anatomy": 9,
+    "objects": 8,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Profile view matches reference man (hair, beard). Hand on doorknob is slightly stiff/indistinct but plausible."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, same clothes, clear face visibility."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, consistent features and clothing across different settings."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_heat_005",
+  "verdict": "redo",
+  "worst": {
+   "identity": 7,
+   "hands": 3,
+   "anatomy": 8,
+   "objects": 6,
+   "skin_texture": 5,
+   "broken": false,
+   "impossible_change": true,
+   "motion_severity": 9,
+   "motion_what": "The notebook changes from closed to open, and a pencil appears in the man's hand as he begins writing."
+  },
+  "reasons": [
+   "manos 3",
+   "movimiento imposible (9)"
+  ],
+  "why": "Same general appearance (dark curly hair, beard, similar build) but lower hand/anatomy scores due to suspiciously smooth rendering and slightly uncanny finger detail on the pointing hand.",
+  "motion_what": "The notebook changes from closed to open, and a pencil appears in the man's hand as he begins writing.",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, consistent appearance and clothing across both images; minor AI smoothness in skin and slight object rendering imperfections."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 7,
+    "hands": 3,
+    "anatomy": 8,
+    "objects": 6,
+    "skin_texture": 5,
+    "broken": false,
+    "why": "Same general appearance (dark curly hair, beard, similar build) but lower hand/anatomy scores due to suspiciously smooth rendering and slightly uncanny finger detail on the pointing hand."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, face visible in profile, minor hand blur from motion"
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, consistent appearance; minor AI softness on hands and pencil grip"
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_heat_006",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 10,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Face not visible in frame; person matches reference via matching grey shirt and build.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Lower face and beard match reference perfectly; upper face cropped out."
+   },
+   {
+    "t": 2.05,
+    "face_visible": false,
+    "identity": null,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Face not visible (head cut off); grey shirt matches reference."
+   },
+   {
+    "t": 3.5,
+    "face_visible": false,
+    "identity": null,
+    "hands": 10,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 10,
+    "broken": false,
+    "why": "Face not visible in this frame showing only torso and hand."
+   },
+   {
+    "t": 4.94,
+    "face_visible": false,
+    "identity": null,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 10,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Face not visible in frame; person matches reference via matching grey shirt and build."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_root_001",
+  "verdict": "redo",
+  "worst": {
+   "identity": 9,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": true,
+   "motion_severity": 8,
+   "motion_what": "Image 1 and Image 2 appear identical - no movement detected in 1.5 seconds, which is physically impossible for a living person in a continuous shot"
+  },
+  "reasons": [
+   "movimiento imposible (8)"
+  ],
+  "why": "Same man, consistent identity. Minor AI smoothing on skin.",
+  "motion_what": "Image 1 and Image 2 appear identical - no movement detected in 1.5 seconds, which is physically impossible for a living person in a continuous shot",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, consistent identity. Minor AI smoothing on skin."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, different setting."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Clear likeness match, same hair and beard. Hands are anatomically correct holding the object plausibly."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, similar clothes, holding object clearly."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_root_006",
+  "verdict": "redo",
+  "worst": {
+   "identity": 3,
+   "hands": 9,
+   "anatomy": 9,
+   "objects": 10,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [
+   "identidad 3"
+  ],
+  "why": "Same curly dark hair and build, but reference has grey beard, Image 2 subject has little/no beard; clothing similar but likely different person.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 3,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same curly dark hair and build, but reference has grey beard, Image 2 subject has little/no beard; clothing similar but likely different person."
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same curly dark hair, facial structure, beard, grey shirt outfit, and build as reference; side-profile face visible enough for strong match"
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 8,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, curly dark hair, consistent clothing. Face is in profile but identifiable. Hands and anatomy are natural."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man in matching outfit; natural crouching pose and realistic hands holding the manual."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_root_007",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 8,
+   "anatomy": 9,
+   "objects": 9,
+   "skin_texture": 8,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man with curly dark hair and grey-streaked beard, natural crouching pose pointing at furnace, consistent clothing and setting",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 10,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man with curly dark hair and grey-streaked beard, natural crouching pose pointing at furnace, consistent clothing and setting"
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man with curly hair and beard, pointing at furnace in matching outfit."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same person with curly hair and beard; natural hands and realistic furnace object."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 8,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 9,
+    "broken": false,
+    "why": "Same man, clear profile view, realistic textures, no major artifacts."
+   }
+  ]
+ },
+ {
+  "name": "cmec_v2_root_008",
+  "verdict": "ok",
+  "worst": {
+   "identity": 9,
+   "hands": 6,
+   "anatomy": 8,
+   "objects": 9,
+   "skin_texture": 7,
+   "broken": false,
+   "impossible_change": false,
+   "motion_severity": 0,
+   "motion_what": "nothing"
+  },
+  "reasons": [],
+  "why": "Same man in identical clothing; beard appears darker due to lighting. Hands show minor fusion/unnatural shaping. Scene is coherent.",
+  "motion_what": "nothing",
+  "frames": [
+   {
+    "t": 0.61,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 9,
+    "objects": 9,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, consistent grey beard and curly dark hair across both images; natural squatting pose and real-world setting"
+   },
+   {
+    "t": 2.05,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 6,
+    "anatomy": 8,
+    "objects": 9,
+    "skin_texture": 7,
+    "broken": false,
+    "why": "Same man in identical clothing; beard appears darker due to lighting. Hands show minor fusion/unnatural shaping. Scene is coherent."
+   },
+   {
+    "t": 3.5,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, consistent features and clothing across frames; minor graininess affects skin texture score."
+   },
+   {
+    "t": 4.94,
+    "face_visible": true,
+    "identity": 9,
+    "hands": 9,
+    "anatomy": 10,
+    "objects": 10,
+    "skin_texture": 8,
+    "broken": false,
+    "why": "Same man, same clothes, clear profile view."
+   }
+  ]
+ }
+]

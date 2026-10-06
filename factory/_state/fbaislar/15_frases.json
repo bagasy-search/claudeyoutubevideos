@@ -1,0 +1,19 @@
+{
+ "fase": "15_frases",
+ "ts": "2026-09-18T15:36:50.181Z",
+ "status": "done",
+ "inputsHash": "7015a15faf4d217c",
+ "medido": {
+  "momentos": 190,
+  "secciones": 8,
+  "estimadoMin": 15.8,
+  "planoMedianaSec": 4.86,
+  "palabrasMedidas": 2715,
+  "dialectoNeutro": true,
+  "voseoVerbo": 0,
+  "voseoImperativo": 0,
+  "regionalismos": 0,
+  "sinTilde": 0
+ },
+ "ms": 16
+}

@@ -1,0 +1,12 @@
+{
+ "fase": "50_agnes",
+ "ts": "2026-09-18T20:30:17.588Z",
+ "status": "done",
+ "inputsHash": "7fc26b51c8b7a340",
+ "medido": {
+  "planos": 34,
+  "clips": 34,
+  "aprobados": 34
+ },
+ "ms": 22
+}

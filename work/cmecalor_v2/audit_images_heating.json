@@ -1,0 +1,95 @@
+{
+  "identity_policy": "relaxed_general_likeness",
+  "images": [
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_heat_001.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-886e-7263-97dd-5a72aa93650a/exec-84024828-e64b-461f-a042-2d5adcd3febd.png",
+      "reason": "La línea de gas, la caja de control cerrada y la bomba circuladora externa aparecen juntas, intactas y con mecánica plausible; manos correctas, sin texto editorial ni riesgo.",
+      "candidate": {
+        "start_ms": 1321120,
+        "end_ms": 1331240,
+        "caption_exact": "Si tu calefacción produce calor con gas y solo necesita electricidad para control, ventilador o bomba, puede ser una carga excelente para respaldo.",
+        "nouns": ["calefacción a gas", "línea de gas", "control eléctrico", "ventilador", "bomba circuladora", "respaldo"],
+        "action": "Claudio señala la línea de gas, la caja de control cerrada y la bomba circuladora externa de una caldera cerrada.",
+        "safety": "Caldera y cajas cerradas; sin cables expuestos, llama, terminales ni desarme.",
+        "agnes_motion_es": "Movimiento mínimo de cámara de celular; Claudio alterna suavemente el dedo entre la caja de control y la bomba, sin cambiar tuberías ni conexiones."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_heat_002.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-886e-7263-97dd-5a72aa93650a/exec-28c8bac7-d745-4baf-a285-29ad0868243d.png",
+      "reason": "Claudio lee un manual junto a una estufa mural íntegra, sin cable ni piezas añadidas; manos naturales y texto del papel pequeño y no editorial.",
+      "candidate": {
+        "start_ms": 1343300,
+        "end_ms": 1349400,
+        "caption_exact": "Si el equipo ya funciona sin electricidad, confirma el manual y no agregues piezas innecesarias.",
+        "nouns": ["equipo sin electricidad", "manual", "estufa mural", "piezas innecesarias"],
+        "action": "Claudio consulta el manual frente a una estufa mural cerrada que no tiene cable eléctrico ni modificaciones.",
+        "safety": "Equipo completamente cerrado; no se instala, abre ni manipula ninguna pieza.",
+        "agnes_motion_es": "Claudio baja apenas la mirada por la página y mueve una hoja; la estufa permanece totalmente inmóvil y cerrada."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_heat_003.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-886e-7263-97dd-5a72aa93650a/exec-c5ae98f7-61a2-4818-850e-4fcc48488395.png",
+      "reason": "La estación pequeña tiene pantalla negra y puertos vacíos; el calefactor está desenchufado y el compresor grande cerrado, mientras Claudio indica capacidad insuficiente.",
+      "candidate": {
+        "start_ms": 1349880,
+        "end_ms": 1356820,
+        "caption_exact": "Si la calefacción es eléctrica o depende de un compresor grande, una estación pequeña no es la respuesta.",
+        "nouns": ["calefacción eléctrica", "compresor grande", "estación pequeña"],
+        "action": "Claudio compara una estación pequeña apagada con un calefactor eléctrico desenchufado y un compresor exterior grande, haciendo gesto de capacidad insuficiente.",
+        "safety": "Todo apagado, cerrado y desconectado; sin chispas, cables activos ni contacto con partes internas.",
+        "agnes_motion_es": "Leve pulso de cámara; Claudio abre un poco más las palmas en gesto de 'no alcanza'; equipos y enchufes no cambian."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_heat_004.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-886e-7263-97dd-5a72aa93650a/exec-d66d1241-5171-4294-9aa6-6788e24e5d67.png",
+      "reason": "La acción de cerrar la puerta para aislar una sola habitación es inequívoca; el radiador mural está instalado, despejado y sin riesgo.",
+      "candidate": {
+        "start_ms": 1357220,
+        "end_ms": 1360240,
+        "caption_exact": "Necesitas reducir el área que intentas calentar,",
+        "nouns": ["área calentada", "puerta interior", "una habitación", "radiador mural"],
+        "action": "Claudio cierra una puerta interior y deja aislada una única habitación con un radiador mural seguro y visible.",
+        "safety": "Calefactor fijo, cerrado y sin obstrucciones; no hay telas, cableado expuesto ni llama.",
+        "agnes_motion_es": "Claudio gira suavemente el picaporte y acerca la puerta unos centímetros al marco; el radiador permanece intacto."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_heat_005.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-886e-7263-97dd-5a72aa93650a/exec-f4002c23-02da-417a-96b0-25d4229e1522.png",
+      "reason": "Aparecen exactamente dos teléfonos y un radio, cada uno con un cable completo a uno de tres puertos, mientras Claudio anota consumos; manos y conectores plausibles.",
+      "candidate": {
+        "start_ms": 1286200,
+        "end_ms": 1290460,
+        "caption_exact": "cualquier teléfono que alguien conecte se comen esa precisión.",
+        "nouns": ["dos teléfonos", "radio", "batería portátil", "consumos", "precisión"],
+        "action": "Claudio carga dos teléfonos y un radio desde tres puertos de una batería mientras anota sus consumos en un cuaderno.",
+        "safety": "Tres cables USB normales y completos; sin adaptadores falsos, cables sueltos ni conexiones expuestas.",
+        "agnes_motion_es": "Claudio escribe un trazo corto y luego apunta a la fila de dispositivos; cables, puertos y números de la pantalla permanecen estables."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_heat_006.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-886e-7263-97dd-5a72aa93650a/exec-a2dabbc9-eabe-4b66-a473-45e73d933e50.png",
+      "reason": "Llaves, abrigo, linterna y un único papel con ruta simple aparecen junto a la puerta en una escena práctica; manos correctas y sin dramatización.",
+      "candidate": {
+        "start_ms": 1293100,
+        "end_ms": 1294540,
+        "caption_exact": "Y prepara un plan de salida.",
+        "nouns": ["plan de salida", "llaves", "abrigo", "linterna", "ruta", "puerta"],
+        "action": "Claudio reúne llaves, abrigo, linterna y un papel con una ruta simple dibujada junto a la puerta.",
+        "safety": "Preparación calmada en interior; puerta cerrada, sin fuego, obstáculos ni peligro simulado.",
+        "agnes_motion_es": "Claudio desliza suavemente las llaves junto al papel y la linterna; el abrigo y la ruta dibujada no se deforman."
+      }
+    }
+  ]
+}

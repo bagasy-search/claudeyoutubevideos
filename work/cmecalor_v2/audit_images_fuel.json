@@ -1,0 +1,136 @@
+{
+  "range_ms": [1089860, 1478680],
+  "reference_image": "C:/Users/bauti/Downloads/video2/claudio_ref.png",
+  "identity_policy": "La referencia guía el parecido general, el cabello, la barba y la ropa de Claudio; por pedido del usuario no se aplica control estricto de identidad facial.",
+  "audit_policy": [
+    "literalidad de la frase, sus sustantivos y su acción",
+    "manos, conectores y continuidad mecánica",
+    "gabinetes cerrados y ausencia de conductores expuestos",
+    "sin texto grande, subtítulos ni gráficos superpuestos",
+    "seguridad eléctrica, de combustible y de combustión"
+  ],
+  "approved_count": 6,
+  "rejected_count": 2,
+  "items": [
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_fuel_001.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0589f-e334-7b51-bb12-70c2d86d268c/exec-7eb6f594-6114-49a7-bc9f-29ca481290a1.png",
+      "reason": "Muestra literalmente el riesgo sin representarlo en curso: bidón homologado cerrado, vertical y separado; generador apagado y sin humo; Claudio hace STOP. No hay derrame, llama, cable ni panel abierto.",
+      "candidate": {
+        "start_ms": 1089860,
+        "end_ms": 1096560,
+        "caption_exact": "Derramar gasolina sobre un motor caliente es una forma muy rápida de convertir un apagón en un incendio.",
+        "nouns": ["gasolina", "motor caliente", "apagón", "incendio"],
+        "action": "Claudio mantiene el bidón de gasolina cerrado y lejos del generador apagado y frío mientras hace una señal clara de STOP.",
+        "safety": "Bidón cerrado, cero derrames, generador apagado y frío, sin repostar ni tocar el motor.",
+        "agnes_motion_es": "Claudio sostiene la palma en STOP y niega una sola vez con la cabeza. Mantener el bidón cerrado y totalmente inmóvil, el generador apagado y sin humo; cámara de celular casi fija, sin agregar combustible, fuego ni cables."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_fuel_002.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0589f-e334-7b51-bb12-70c2d86d268c/exec-4de71cc7-3bed-4d79-b499-d5082ef97c93.png",
+      "reason": "La batería muestra un indicador de carga casi vacía y el generador separado está apagado y cubierto de escarcha. Claudio sólo los inspecciona; ambas carcasas están cerradas y no hay combustible ni cables sueltos.",
+      "candidate": {
+        "start_ms": 1294940,
+        "end_ms": 1301300,
+        "caption_exact": "Si la temperatura sigue bajando, si la batería llega al límite que definiste, si el generador falla",
+        "nouns": ["temperatura baja", "batería", "límite", "generador"],
+        "action": "Claudio revisa visualmente una estación de energía con batería casi agotada y un generador apagado cubierto de escarcha, claramente separados.",
+        "safety": "Ambos dispositivos permanecen cerrados; no se intenta arrancar el generador ni se manipulan combustible, enchufes o conductores.",
+        "agnes_motion_es": "Claudio mira primero el indicador bajo de la batería y después el generador escarchado, sin tocar ninguno. Mantener carcasas, escarcha, indicador y separación idénticos; generador siempre apagado, sin humo ni cables nuevos."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_fuel_003.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0589f-e334-7b51-bb12-70c2d86d268c/exec-c049be65-ddc5-41fc-81ea-8e41d375ae60.png",
+      "reason": "Conmutador de un circuito y fuente compatible aparecen juntos, cerrados y con instalación limpia; Claudio señala el único selector físico sin accionarlo. No hay cobre, cables sueltos ni retroalimentación visible.",
+      "candidate": {
+        "start_ms": 1335980,
+        "end_ms": 1342760,
+        "caption_exact": "Después instala una forma aprobada de aislarla de la red y alimentarla desde una fuente compatible.",
+        "nouns": ["aislamiento de red", "conmutador de un circuito", "fuente compatible"],
+        "action": "Claudio señala el selector de un conmutador cerrado de circuito único instalado junto a una estación de energía compatible.",
+        "safety": "Envolventes cerradas, instalación fija ordenada, sin conductores expuestos ni conexiones improvisadas.",
+        "agnes_motion_es": "Claudio desplaza apenas el índice hacia el selector y asiente, sin tocarlo ni moverlo. Mantener conmutador, palanca, canalización, estación, enchufe y calefacción con geometría idéntica; no abrir paneles ni añadir cables."
+      }
+    },
+    {
+      "status": "rejected",
+      "file": null,
+      "source": "C:/Users/bauti/.codex/generated_images/01a0589f-e334-7b51-bb12-70c2d86d268c/exec-0fa30a29-26eb-4c51-94e1-e501a285794e.png",
+      "reason": "El gabinete estaba cerrado y la acción era segura, pero la punta del detector apareció tocando la tapa. No representa con precisión la comprobación sin contacto desde distancia y no se copió al proyecto.",
+      "candidate": {
+        "start_ms": 1376600,
+        "end_ms": 1385180,
+        "caption_exact": "El problema no es que sea una solución poco elegante, es que puede dejar tensión en lugares donde una persona espera encontrar cero.",
+        "nouns": ["tensión", "cero voltios", "probador sin contacto", "gabinete cerrado"],
+        "action": "Claudio usa un detector sin contacto a distancia de un gabinete cerrado y reacciona al hallar tensión.",
+        "safety": "Detector fuera del gabinete, distancia visible, sin abrir envolventes ni tocar conductores.",
+        "agnes_motion_es": "Claudio mantiene el detector separado del gabinete y levanta la mano en alarma. Conservar un hueco de aire visible, tapa cerrada y luz del detector estable; sin arcos, contacto ni apertura."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_fuel_004.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0589f-e334-7b51-bb12-70c2d86d268c/exec-ac1c5d0b-cbcb-49db-adb7-7e82150fcd42.png",
+      "reason": "La regeneración deja un hueco de aire inequívoco entre la punta luminosa del detector y el gabinete completamente cerrado. Claudio mantiene la otra mano lejos y expresa alarma sin manipular nada.",
+      "candidate": {
+        "start_ms": 1376600,
+        "end_ms": 1385180,
+        "caption_exact": "El problema no es que sea una solución poco elegante, es que puede dejar tensión en lugares donde una persona espera encontrar cero.",
+        "nouns": ["tensión", "cero voltios", "probador sin contacto", "gabinete cerrado"],
+        "action": "Claudio sostiene un detector sin contacto a unos centímetros de un gabinete cerrado y hace un gesto de alarma al detectar tensión.",
+        "safety": "Gabinete cerrado, detector separado por aire, manos fuera de la envolvente y cero conductor expuesto.",
+        "agnes_motion_es": "Claudio eleva muy poco el detector sin reducir el hueco de aire y sostiene la palma de alarma. Mantener la tapa cerrada, la luz del detector y la distancia constantes; no crear arcos, cables ni contacto."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_fuel_005.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0589f-e334-7b51-bb12-70c2d86d268c/exec-f2f6eae2-02a4-44d3-bad2-1031baa78fd4.png",
+      "reason": "Claudio sostiene una sola pieza real, desconectada y sin cables, dentro de una caja superficial intacta; la calefacción permanece cerrada y su gesto es aclaratorio, no milagroso.",
+      "candidate": {
+        "start_ms": 1420280,
+        "end_ms": 1423920,
+        "caption_exact": "La pieza del título no hace milagros, hace algo mejor.",
+        "nouns": ["pieza del título", "tomacorriente con tierra", "calefacción"],
+        "action": "Claudio sostiene el tomacorriente desconectado junto a una calefacción cerrada y hace un gesto explicativo que descarta cualquier milagro.",
+        "safety": "Pieza totalmente desconectada y sin conductores; calefacción cerrada; no hay herramientas ni manipulación interna.",
+        "agnes_motion_es": "Claudio inclina apenas la caja del tomacorriente y mueve una vez la palma explicativa. Mantener ranuras, tornillos, dedos y calefacción perfectamente estables; no agregar cables, energía, brillo ni texto."
+      }
+    },
+    {
+      "status": "rejected",
+      "file": null,
+      "source": "C:/Users/bauti/.codex/generated_images/01a0589f-e334-7b51-bb12-70c2d86d268c/exec-8a35cba7-7ec5-4785-ae0b-17854708e1f1.png",
+      "reason": "La lámpara estaba encendida, pero la estación mostró una segunda conexión además del enchufe que Claudio sostenía. Viola la regla de una sola carga y no se copió al proyecto.",
+      "candidate": {
+        "start_ms": 1468760,
+        "end_ms": 1478680,
+        "caption_exact": "En el próximo vídeo voy a medir cuánto dura una estación de energía con las cargas que de verdad importan durante un apagón, una por una hasta que se apague.",
+        "nouns": ["estación de energía", "cargas importantes", "medición", "apagón", "una por una"],
+        "action": "Claudio conecta una sola lámpara de prueba a la estación mientras el resto de los aparatos permanece desenchufado y apartado.",
+        "safety": "Una sola carga y un solo enchufe normal; estación cerrada; sin adaptadores, regletas, cables sueltos ni conductores expuestos.",
+        "agnes_motion_es": "Claudio termina de insertar un único enchufe y aparta la mano; la lámpara se mantiene encendida y todos los otros aparatos siguen desconectados. No añadir, duplicar ni mover cables o tomas."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_fuel_006.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0589f-e334-7b51-bb12-70c2d86d268c/exec-ee62740b-371c-4384-b5d7-9807ccacea90.png",
+      "reason": "La nueva toma muestra una sola conexión: un enchufe normal y un único cable continuo hacia la lámpara encendida. Ventilador, cargador y radio están apartados, desenchufados y con sus cables recogidos.",
+      "candidate": {
+        "start_ms": 1468760,
+        "end_ms": 1478680,
+        "caption_exact": "En el próximo vídeo voy a medir cuánto dura una estación de energía con las cargas que de verdad importan durante un apagón, una por una hasta que se apague.",
+        "nouns": ["estación de energía", "cargas importantes", "medición", "apagón", "una por una"],
+        "action": "Claudio conecta únicamente una lámpara de prueba a la estación; el ventilador, el cargador y la radio permanecen desenchufados y apartados.",
+        "safety": "Exactamente una carga conectada, un enchufe normal y una estación cerrada; aparatos restantes desenchufados, sin adaptadores ni conductores expuestos.",
+        "agnes_motion_es": "Claudio completa muy despacio la inserción del único enchufe y retira la mano; la lámpara conserva un brillo estable. Mantener un solo cable continuo, una sola toma ocupada y los otros aparatos desenchufados e inmóviles; no crear conexiones nuevas."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1820 @@
+{
+ "slug": "condensa",
+ "comp": "Condensa",
+ "canal": "The Free Builder / El Constructor Libre",
+ "titulo_trabajo": "FÁCIL — Cómo Frenar la CONDENSACIÓN en la VENTANA y el Moho Negro",
+ "guion": "constructor_libre_scripts/guion_condensa.txt",
+ "narracion_fish": "fish_out/condensa/master.wav",
+ "avatar": "PARCIAL (primera mitad, con su propio audio) + COLA Fish + AVATAR EN BUCLE en el tramo 2",
+ "heroe_honesto": "CÁMARA DE AIRE QUIETO sobre el vidrio (plástico de burbujas pegado con agua) + COMPRESA con film para el moho enraizado en la silicona",
+ "error_del_titulo": "sellar la casa (burletes en todo + tapar las rejillas): el agua no puede salir, la ventana chorrea el doble y el moho se muda a la pared",
+ "reservado_a_descripcion": [
+  "receta exacta de la trampa de cloruro de calcio (proporciones + bote de dos pisos)",
+  "cómo cortar el puente térmico del marco de aluminio en 20 minutos"
+ ],
+ "glosario": {
+  "TOMÁS": "El mismo hombre de la referencia: latino de unos 42 años, pelo oscuro rizado, barba corta oscura con canas, camisa de trabajo verde oliva con mangas arremangadas, delantal de cuero marrón, taller rústico con pizarrón",
+  "LA VENTANA": "ventana modesta latinoamericana de marco pintado, vidrio simple, empañada y chorreando por DENTRO",
+  "EL PLÁSTICO": "plástico de burbujas de embalar, transparente, burbujas chicas — se pega al vidrio SOLO con agua, burbujas contra el vidrio",
+  "LA SILICONA": "cordón de silicona blanca en el borde inferior del vidrio, con línea negra de moho",
+  "LA COMPRESA": "tira de papel de cocina empapada apretada sobre la silicona y tapada con film de cocina"
+ },
+ "pace": {
+  "mediana_seg": 4.2,
+  "p75_seg": 5.6,
+  "pct_mayor_5s": 0.4,
+  "techo_seg": 12
+ },
+ "fuentes": {
+  "imagenes_ia": 181,
+  "lamina": 1,
+  "clips_stock": 36,
+  "componentes": 26
+ },
+ "secciones": [
+  {
+   "id": "S1",
+   "titulo": "HOOK — la ventana que llora",
+   "objetivo": "Enganchar en 3 segundos con el vidrio chorreando y rematar con el zoom a los puntos negros.",
+   "componentes": [
+    {
+     "kind": "hookcaption",
+     "at": "Son las siete de la mañana",
+     "nota": "words boxed: CONDENSACIÓN / MOHO NEGRO; sub corto"
+    }
+   ],
+   "imagenes": [
+    "condensa_s01_01",
+    "condensa_s01_02",
+    "condensa_s01_03",
+    "condensa_s01_04",
+    "condensa_s01_05",
+    "condensa_s01_06",
+    "condensa_s01_07",
+    "condensa_s01_08",
+    "condensa_s01_09",
+    "condensa_s01_10"
+   ],
+   "clips": [
+    "cond_amanecer_cuarto",
+    "cond_cortina",
+    "cond_cortina2",
+    "cond_dormitorio",
+    "cond_gota_vidrio",
+    "cond_gotas_ventana",
+    "cond_lluvia_vidrio",
+    "cond_vaho_vidrio"
+   ],
+   "avatar": "FULL los primeros 2s obligatorios, después alterna con macro del vidrio",
+   "momentos": [
+    {
+     "dice": "Son las siete de la mañana",
+     "muestra": "macro del vidrio empañado chorreando, gotas gordas bajando",
+     "tipo": "imagen",
+     "seg": 4,
+     "porque": "el problema entero en un solo plano, sin explicar nada"
+    },
+    {
+     "dice": "Un charquito acumulado abajo",
+     "muestra": "charco en el alféizar con la pintura levantada",
+     "tipo": "imagen",
+     "seg": 4,
+     "porque": "el daño material, no sólo la molestia"
+    },
+    {
+     "dice": "vas a ver los puntitos. Negros",
+     "muestra": "macro de moho negro salpicado en la silicona",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "reveal del segundo enemigo del título"
+    }
+   ]
+  },
+  {
+   "id": "S2",
+   "titulo": "El trapo inútil",
+   "objetivo": "Espejo del ritual diario para que se reconozca.",
+   "componentes": [],
+   "imagenes": [
+    "condensa_s02_01",
+    "condensa_s02_02",
+    "condensa_s02_03",
+    "condensa_s02_04",
+    "condensa_s02_05",
+    "condensa_s02_06",
+    "condensa_s02_07",
+    "condensa_s02_08"
+   ],
+   "clips": [
+    "cond_cortina",
+    "cond_limpiar_vidrio",
+    "cond_limpieza_bano"
+   ],
+   "avatar": "full en las frases de complicidad",
+   "momentos": [
+    {
+     "dice": "Vas a buscar un trapo",
+     "muestra": "mano secando el vidrio y dejando una franja limpia",
+     "tipo": "imagen",
+     "seg": 4,
+     "porque": "la acción exacta que hace el espectador"
+    },
+    {
+     "dice": "Y mañana a las siete va a estar exactamente igual",
+     "muestra": "la misma ventana mojada tres mañanas seguidas",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "la repetición es el dolor"
+    }
+   ]
+  },
+  {
+   "id": "S3",
+   "titulo": "La promesa (dos dólares, se pega con agua)",
+   "objetivo": "Prometer sin revelar; descartar las tres salidas caras.",
+   "componentes": [
+    {
+     "kind": "bulletcascade",
+     "at": "no se arregla cambiando la ventana",
+     "nota": "3 bullets: NO cambiar la ventana · NO un aparato caro · NO secarla mejor"
+    }
+   ],
+   "imagenes": [
+    "condensa_s03_01",
+    "condensa_s03_02",
+    "condensa_s03_03",
+    "condensa_s03_04",
+    "condensa_s03_05",
+    "condensa_s03_06"
+   ],
+   "clips": [
+    "cond_burbujas",
+    "cond_deshumidificador",
+    "cond_spray_agua",
+    "cond_tijera_corte"
+   ],
+   "avatar": "full sosteniendo el rollo de burbujas",
+   "momentos": [
+    {
+     "dice": "un truco que cuesta menos de dos dólares",
+     "muestra": "Tomás sostiene el rollo de plástico de burbujas en su taller",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "identidad del canal + el héroe entra sin nombrarse del todo"
+    },
+    {
+     "dice": "mañana esa ventana amanece seca",
+     "muestra": "vidrio seco y transparente al amanecer",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "la imagen del resultado prometido"
+    }
+   ]
+  },
+  {
+   "id": "S4",
+   "titulo": "Lo que ya probaste",
+   "objetivo": "Validar sus intentos y reencuadrarlos como 'atacan el final de la historia'.",
+   "componentes": [
+    {
+     "kind": "photocarousel",
+     "at": "Y no es que no lo hayas intentado",
+     "nota": "3 polaroids: el trapo · la ventana entreabierta · el cloro en la silicona"
+    }
+   ],
+   "imagenes": [
+    "condensa_s04_01",
+    "condensa_s04_02",
+    "condensa_s04_03",
+    "condensa_s04_04",
+    "condensa_s04_05",
+    "condensa_s04_06",
+    "condensa_s04_07",
+    "condensa_s04_08"
+   ],
+   "clips": [
+    "cond_cepillo",
+    "cond_papel_absorbe",
+    "cond_silicona"
+   ],
+   "avatar": "hidden detrás del carrusel, full en el remate",
+   "momentos": [
+    {
+     "dice": "los puntitos volvieron en el mismo lugar exacto",
+     "muestra": "la misma silicona limpia y después con el moho de vuelta",
+     "tipo": "imagen",
+     "seg": 6,
+     "porque": "planta el loop del moho que se paga en S13"
+    },
+    {
+     "dice": "Es como secar el piso mientras la canilla sigue abierta",
+     "muestra": "canilla goteando en macro",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "la metáfora que sostiene todo el video"
+    }
+   ]
+  },
+  {
+   "id": "S5",
+   "titulo": "La historia de Tomás — el agua se MUDÓ",
+   "objetivo": "Autoridad por error propio caro; plantar que tapar el síntoma empeora.",
+   "componentes": [
+    {
+     "kind": "beforeafter",
+     "at": "Llegó el invierno y sí",
+     "nota": "beforeImage=ventana vieja chorreando · afterImage=mancha negra detrás del ropero · caption: 'el agua no se fue: se mudó'"
+    }
+   ],
+   "imagenes": [
+    "condensa_s05_01",
+    "condensa_s05_02",
+    "condensa_s05_03",
+    "condensa_s05_04",
+    "condensa_s05_05",
+    "condensa_s05_06",
+    "condensa_s05_07",
+    "condensa_s05_08",
+    "condensa_s05_09",
+    "condensa_s05_10",
+    "condensa_s05_11",
+    "condensa_s05_12"
+   ],
+   "clips": [
+    "cond_ferreteria",
+    "cond_invierno_calle",
+    "cond_madera_podrida",
+    "cond_moho_pared",
+    "cond_pintura_descascarada",
+    "cond_ropero"
+   ],
+   "avatar": "full en el relato personal (es lo que da identidad)",
+   "momentos": [
+    {
+     "dice": "la cambié entera",
+     "muestra": "instaladores colocando la ventana nueva de PVC",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "la inversión que falló"
+    },
+    {
+     "dice": "había una mancha negra del tamaño de un plato",
+     "muestra": "ropero corrido y la mancha negra en la pared",
+     "tipo": "imagen",
+     "seg": 7,
+     "porque": "el golpe de la historia, se sostiene"
+    },
+    {
+     "dice": "lo único que hice fue mudarla de lugar",
+     "muestra": "BeforeAfter ventana vieja → mancha en la pared",
+     "tipo": "componente",
+     "seg": 8,
+     "porque": "cristaliza la tesis del video"
+    }
+   ]
+  },
+  {
+   "id": "S6",
+   "titulo": "El open loop — el error",
+   "objetivo": "Abrir el loop más fuerte y decir que probablemente lo está cometiendo AHORA.",
+   "componentes": [
+    {
+     "kind": "highlightsweep",
+     "at": "te voy a contar un error",
+     "nota": "pre='Un error que' highlight='estás cometiendo ahora mismo' post='' note='Te lo digo al final'"
+    }
+   ],
+   "imagenes": [
+    "condensa_s06_01",
+    "condensa_s06_02",
+    "condensa_s06_03",
+    "condensa_s06_04",
+    "condensa_s06_05"
+   ],
+   "clips": [
+    "cond_termostato"
+   ],
+   "avatar": "FULL — es una promesa a cámara",
+   "momentos": [
+    {
+     "dice": "Tapa la rejilla de ventilación",
+     "muestra": "rejilla tapada con cartón y cinta",
+     "tipo": "imagen",
+     "seg": 4,
+     "porque": "muestra el error sin nombrarlo (teaser visual)"
+    }
+   ]
+  },
+  {
+   "id": "S7",
+   "titulo": "El agua sale de adentro — un balde por día",
+   "objetivo": "Volar la creencia de que es una filtración. Dato duro y físico.",
+   "componentes": [
+    {
+     "kind": "rankbars",
+     "at": "Una persona, solo por estar viva",
+     "nota": "litros/día: ropa tendida 3.0 · 4 personas respirando 4.0 · cocinar 0.6 · ducha 0.5 · plantas 0.3"
+    },
+    {
+     "kind": "bigstatreveal",
+     "at": "quince litros por día",
+     "nota": "value=15 suffix=' litros por día' support='Un balde entero de agua, todos los días, dentro de tu casa' source='' (⛔ vaciar el default ENARGAS)"
+    }
+   ],
+   "imagenes": [
+    "condensa_s07_01",
+    "condensa_s07_02",
+    "condensa_s07_03",
+    "condensa_s07_04",
+    "condensa_s07_05",
+    "condensa_s07_06",
+    "condensa_s07_07",
+    "condensa_s07_08",
+    "condensa_s07_09",
+    "condensa_s07_10",
+    "condensa_s07_11",
+    "condensa_s07_12",
+    "condensa_s07_13",
+    "condensa_s07_14"
+   ],
+   "clips": [
+    "cond_bano_azulejo",
+    "cond_ducha_vapor",
+    "cond_espejo_vaho",
+    "cond_pava",
+    "cond_ropa_interior",
+    "cond_vapor_olla",
+    "cond_vapor_taza"
+   ],
+   "avatar": "hidden durante la enumeración, full en el remate del balde",
+   "momentos": [
+    {
+     "dice": "el vidrio está mojado del lado de adentro",
+     "muestra": "dedo dibujando en el vaho por dentro",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "prueba física que el espectador puede repetir"
+    },
+    {
+     "dice": "Un balde entero de agua",
+     "muestra": "fila de cuatro baldes llenos en el piso",
+     "tipo": "imagen",
+     "seg": 6,
+     "porque": "hace visible un gas invisible"
+    }
+   ]
+  },
+  {
+   "id": "S8",
+   "titulo": "El mecanismo — punto de rocío (el vaso helado)",
+   "objetivo": "Que entienda la física con una analogía que ya vivió. Es el corazón.",
+   "componentes": [
+    {
+     "kind": "cutawaycallouts",
+     "at": "Piensa en el vaso de gaseosa helada",
+     "nota": "image=vaso sudando; callouts: 'el vaso no tiene fisura' · 'el agua ya estaba en el aire' · 'la pared fría la condensó'"
+    },
+    {
+     "kind": "flowsteps",
+     "at": "El aire tibio puede sostener mucha agua",
+     "nota": "4 nodos: aire tibio cargado → toca el vidrio helado → la esponja se achica → suelta gotas"
+    },
+    {
+     "kind": "cycleloop",
+     "at": "Estás reciclando tu propia humedad",
+     "nota": "center='el bucle'; nodos: secás el vidrio → el trapo se seca adentro → el vapor vuelve al aire → amanece mojado"
+    }
+   ],
+   "imagenes": [
+    "condensa_s08_01",
+    "condensa_s08_02",
+    "condensa_s08_03",
+    "condensa_s08_04",
+    "condensa_s08_05",
+    "condensa_s08_06",
+    "condensa_s08_07",
+    "condensa_s08_08",
+    "condensa_s08_09",
+    "condensa_s08_10",
+    "condensa_s08_11",
+    "condensa_s08_12",
+    "condensa_s08_13",
+    "condensa_s08_14"
+   ],
+   "clips": [
+    "cond_esponja",
+    "cond_gota_vidrio",
+    "cond_gotas_ventana",
+    "cond_hielo_vaso",
+    "cond_lluvia_vidrio",
+    "cond_vapor_taza",
+    "cond_vaso_frio"
+   ],
+   "avatar": "full explicando el vaso en la mano; hidden bajo los componentes",
+   "momentos": [
+    {
+     "dice": "el vaso de gaseosa helada",
+     "muestra": "macro del vaso sudando con el aro de agua en la madera",
+     "tipo": "imagen",
+     "seg": 7,
+     "porque": "la analogía tiene que RESPIRAR, es el momento clave"
+    },
+    {
+     "dice": "el punto de rocío",
+     "muestra": "FlowSteps del mecanismo",
+     "tipo": "componente",
+     "seg": 9,
+     "porque": "mecanismo → componente (regla 9), se sostiene mientras se lee"
+    }
+   ]
+  },
+  {
+   "id": "S9",
+   "titulo": "El vidrio es el TERMÓMETRO, no el culpable",
+   "objetivo": "El reframe que cambia cómo mira su ventana + adónde se muda el agua.",
+   "componentes": [
+    {
+     "kind": "vsduel",
+     "at": "Una pared de ladrillo tiene veinte",
+     "nota": "left=PARED 25 cm 'guarda calor' (good) · right=VIDRIO 4 mm 'copia la calle'; con imagen real por lado"
+    },
+    {
+     "kind": "mythtruth",
+     "at": "Tu ventana no es la culpable",
+     "nota": "myth='La ventana está fallando' truth='La ventana es el termómetro'"
+    },
+    {
+     "kind": "bulletcascade",
+     "at": "el agua se condensa en el que quede segundo",
+     "nota": "3 escondites: esquina del techo · detrás del ropero · fondo del placar"
+    }
+   ],
+   "imagenes": [
+    "condensa_s09_01",
+    "condensa_s09_02",
+    "condensa_s09_03",
+    "condensa_s09_04",
+    "condensa_s09_05",
+    "condensa_s09_06",
+    "condensa_s09_07",
+    "condensa_s09_08",
+    "condensa_s09_09",
+    "condensa_s09_10",
+    "condensa_s09_11",
+    "condensa_s09_12"
+   ],
+   "clips": [
+    "cond_madera_podrida",
+    "cond_moho_macro",
+    "cond_moho_pared",
+    "cond_pared_ladrillo",
+    "cond_placard",
+    "cond_ropero"
+   ],
+   "avatar": "full en el reframe (frase de autor)",
+   "momentos": [
+    {
+     "dice": "El vidrio tiene cuatro milímetros",
+     "muestra": "macro del canto del vidrio con luz atravesándolo",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "el dato se ve, no se dice nomás"
+    },
+    {
+     "dice": "es el termómetro",
+     "muestra": "MythTruth",
+     "tipo": "componente",
+     "seg": 7,
+     "porque": "mito→verdad es exactamente este beat"
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "titulo": "Las dos únicas palancas",
+   "objetivo": "Ordenar todo lo que viene en dos casillas. Bisagra del video.",
+   "componentes": [
+    {
+     "kind": "duelcolumns",
+     "at": "solo existen dos palancas",
+     "nota": "leftName='Bajar el agua del aire' rightName='Subir la temperatura del vidrio'"
+    }
+   ],
+   "imagenes": [
+    "condensa_s10_01",
+    "condensa_s10_02",
+    "condensa_s10_03",
+    "condensa_s10_04",
+    "condensa_s10_05"
+   ],
+   "clips": [
+    "cond_burbujas",
+    "cond_cortina_viento",
+    "cond_ventana_abierta",
+    "cond_ventana_abierta2"
+   ],
+   "avatar": "full mostrando dos dedos",
+   "momentos": [
+    {
+     "dice": "solo existen dos palancas",
+     "muestra": "DuelColumns con las dos palancas",
+     "tipo": "componente",
+     "seg": 8,
+     "porque": "mapa mental antes de la solución"
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "titulo": "EL HÉROE — la cámara de aire quieto",
+   "objetivo": "Revelar el mecanismo del truco de dos dólares. Momento de mayor valor percibido.",
+   "componentes": [
+    {
+     "kind": "cutawaycallouts",
+     "at": "así funciona el doble vidrio",
+     "nota": "image=canto del DVH; callout: 'no aísla el vidrio, aísla el AIRE QUIETO entre los dos'"
+    },
+    {
+     "kind": "floatingcutout",
+     "at": "con plástico de burbujas",
+     "nota": "image=rollo de burbujas; label='PLÁSTICO DE BURBUJAS' sub='menos de dos dólares'"
+    },
+    {
+     "kind": "layerstack",
+     "at": "Cada burbuja es una celdita",
+     "nota": "capas: cuarto tibio / lado liso / celdas de aire quieto / película de agua / vidrio / calle"
+    }
+   ],
+   "imagenes": [
+    "condensa_s11_01",
+    "condensa_s11_02",
+    "condensa_s11_03",
+    "condensa_s11_04",
+    "condensa_s11_05",
+    "condensa_s11_06",
+    "condensa_s11_07",
+    "condensa_s11_08",
+    "condensa_s11_09",
+    "condensa_s11_10",
+    "condensa_s11_11",
+    "condensa_s11_12"
+   ],
+   "clips": [
+    "cond_burbujas",
+    "cond_burbujas_manos",
+    "cond_calefaccion",
+    "cond_estufa",
+    "cond_manos_trabajo",
+    "cond_secador_pelo"
+   ],
+   "avatar": "full sosteniendo el plástico a contraluz",
+   "momentos": [
+    {
+     "dice": "el aire quieto",
+     "muestra": "macro del plástico a contraluz con las celdas",
+     "tipo": "imagen",
+     "seg": 6,
+     "porque": "el héroe se ve por dentro"
+    },
+    {
+     "dice": "se comporta como una mucho más gruesa",
+     "muestra": "LayerStack de la cámara de aire",
+     "tipo": "componente",
+     "seg": 9,
+     "porque": "capa sobre capa = exactamente este componente"
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "titulo": "El paso a paso (5 pasos)",
+   "objetivo": "Que pueda hacerlo hoy. Aquí van las fotos hero del presentador.",
+   "componentes": [
+    {
+     "kind": "numberedsteps",
+     "at": "Se hace así",
+     "nota": "5 pasos CON imagen cada uno: limpiar · cortar a medida · rociar agua · burbujas contra el vidrio · pasar la mano"
+    },
+    {
+     "kind": "stampbadge",
+     "at": "Al revés, las burbujas no atrapan",
+     "nota": "text='ASÍ NO' color rojo — overlay sobre la foto del lado liso"
+    }
+   ],
+   "imagenes": [
+    "condensa_s12_01",
+    "condensa_s12_02",
+    "condensa_s12_03",
+    "condensa_s12_04",
+    "condensa_s12_05",
+    "condensa_s12_06",
+    "condensa_s12_07",
+    "condensa_s12_08",
+    "condensa_s12_09",
+    "condensa_s12_10",
+    "condensa_s12_11",
+    "condensa_s12_12",
+    "condensa_s12_13",
+    "condensa_s12_14"
+   ],
+   "clips": [
+    "cond_burbujas_manos",
+    "cond_limpiar_vidrio",
+    "cond_manos_trabajo",
+    "cond_secador_pelo",
+    "cond_spray_agua",
+    "cond_tijera_corte"
+   ],
+   "avatar": "hidden durante los pasos (manda la demostración), full al cerrar",
+   "momentos": [
+    {
+     "dice": "las burbujas van contra el vidrio",
+     "muestra": "macro del lado de las burbujas contra el vidrio mojado",
+     "tipo": "imagen",
+     "seg": 6,
+     "porque": "es EL error que arruina el truco; se sostiene"
+    },
+    {
+     "dice": "No queda pegamento, no queda marca",
+     "muestra": "mano despegando el plástico, vidrio limpio detrás",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "mata la objeción del alquiler/marcas"
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "titulo": "El moho — tres lugares, tres problemas",
+   "objetivo": "Pagar el loop de 'vuelve al mismo lugar' con el micelio y el material.",
+   "componentes": [
+    {
+     "kind": "cutawaycallouts",
+     "at": "son tres problemas distintos",
+     "nota": "image=ventana completa; 3 callouts: vidrio / silicona / marco"
+    },
+    {
+     "kind": "layerstack",
+     "at": "El micelio se metió adentro",
+     "nota": "capas: flor negra (lo que ves) / superficie de la silicona / microporos / raíz viva"
+    },
+    {
+     "kind": "mythtruth",
+     "at": "cuando pasas el trapo con cloro",
+     "nota": "myth='El cloro lo mata' truth='El cloro sólo borra la flor'"
+    }
+   ],
+   "imagenes": [
+    "condensa_s13_01",
+    "condensa_s13_02",
+    "condensa_s13_03",
+    "condensa_s13_04",
+    "condensa_s13_05",
+    "condensa_s13_06",
+    "condensa_s13_07",
+    "condensa_s13_08",
+    "condensa_s13_09",
+    "condensa_s13_10",
+    "condensa_s13_11",
+    "condensa_s13_12",
+    "condensa_s13_13",
+    "condensa_s13_14"
+   ],
+   "clips": [
+    "cond_bano_azulejo",
+    "cond_limpieza_bano",
+    "cond_moho_macro",
+    "cond_pintura_descascarada",
+    "cond_silicona"
+   ],
+   "avatar": "full en la explicación del hongo",
+   "momentos": [
+    {
+     "dice": "echó raíz adentro del material",
+     "muestra": "macro de micelio blanco extendido",
+     "tipo": "imagen",
+     "seg": 6,
+     "porque": "hace visible por qué vuelve"
+    },
+    {
+     "dice": "Borras la flor",
+     "muestra": "MythTruth cloro",
+     "tipo": "componente",
+     "seg": 7,
+     "porque": "mito→verdad"
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "titulo": "LA COMPRESA — el tiempo de contacto",
+   "objetivo": "Dar el método (no el producto). Segundo bloque de fotos hero.",
+   "componentes": [
+    {
+     "kind": "vsduel",
+     "at": "en treinta segundos ya no queda nada",
+     "nota": "left=TRAPO CON CLORO '30 segundos de contacto' · right=COMPRESA CON FILM '3 a 4 horas' (good)"
+    },
+    {
+     "kind": "numberedsteps",
+     "at": "Cortas una tira de papel de cocina",
+     "nota": "pasos con imagen: cortar · empapar · apoyar · TAPAR CON FILM · esperar 3-4 h · cepillo"
+    }
+   ],
+   "imagenes": [
+    "condensa_s14_01",
+    "condensa_s14_02",
+    "condensa_s14_03",
+    "condensa_s14_04",
+    "condensa_s14_05",
+    "condensa_s14_06",
+    "condensa_s14_07",
+    "condensa_s14_08",
+    "condensa_s14_09",
+    "condensa_s14_10",
+    "condensa_s14_11",
+    "condensa_s14_12"
+   ],
+   "clips": [
+    "cond_cepillo",
+    "cond_film_cocina",
+    "cond_limpieza_bano",
+    "cond_papel_absorbe",
+    "cond_papel_cocina",
+    "cond_papel_toalla",
+    "cond_vinagre"
+   ],
+   "avatar": "hidden en los pasos, full en 'hay silicona que ya no se salva' (honestidad = confianza)",
+   "momentos": [
+    {
+     "dice": "le pones encima film de cocina",
+     "muestra": "film transparente sellando la compresa sobre la silicona",
+     "tipo": "imagen",
+     "seg": 6,
+     "porque": "es el paso que nadie hace, se sostiene"
+    },
+    {
+     "dice": "si la aprietas con la uña y se hunde",
+     "muestra": "uña hundiéndose en la silicona vieja",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "criterio de decisión accionable"
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "titulo": "LA LÁMINA + la guía (CTA)",
+   "objetivo": "ARMA DE CONVERSIÓN #1. Dar valor completo y recién después revelar que es una página de la guía.",
+   "componentes": [
+    {
+     "kind": "framedphoto",
+     "at": "prestes muchísima atención a esta imagen",
+     "nota": "image=img/condensa_lamina.png SOSTENIDA full-screen mientras se explica (tabla → corte → 3 lugares)"
+    },
+    {
+     "kind": "float",
+     "at": "apunta la cámara de tu teléfono",
+     "nota": "⛔ FloatingInsert QR AL LADO del avatar hablando, NUNCA full-screen. src=img/condensa_qr_land.png side=right kicker='Escaneá con tu celular' — y despejar b-roll de esa ventana"
+    },
+    {
+     "kind": "ctacard",
+     "at": "la guía completa que armé",
+     "nota": "image=img/condensa_portada.png · price:0 · sin URL en voz"
+    }
+   ],
+   "imagenes": [
+    "condensa_s15_01",
+    "condensa_s15_02",
+    "condensa_s15_03",
+    "condensa_s15_04",
+    "condensa_s15_05",
+    "condensa_s15_06"
+   ],
+   "clips": [
+    "cond_higrometro",
+    "cond_termostato"
+   ],
+   "avatar": "FULL detrás del QR flotante (obligatorio por regla 12 del nicho)",
+   "momentos": [
+    {
+     "dice": "la tabla del vidrio seco",
+     "muestra": "lámina full-screen, zoom a la tabla",
+     "tipo": "imagen",
+     "seg": 11,
+     "porque": "tiene texto que se está leyendo — techo de 12s permitido"
+    },
+    {
+     "dice": "Abajo a la izquierda tienes el corte",
+     "muestra": "lámina, zoom al corte comparativo",
+     "tipo": "imagen",
+     "seg": 9,
+     "porque": "se explica en pantalla"
+    },
+    {
+     "dice": "esta es una de las páginas de la guía",
+     "muestra": "portada + QR flotante junto al avatar",
+     "tipo": "componente",
+     "seg": 10,
+     "porque": "la venta ocurre DESPUÉS del valor demostrado"
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "titulo": "Ventilación de choque (palanca 1)",
+   "objetivo": "Contraintuitivo verificable: corta y violenta, no larga y tibia.",
+   "componentes": [
+    {
+     "kind": "vsduel",
+     "at": "deja la ventana entreabierta",
+     "nota": "left=RENDIJA TODO EL DÍA 'enfría las paredes' · right=5 MINUTOS DE PAR EN PAR 'cambia el aire, no el muro' (good)"
+    },
+    {
+     "kind": "checklistreveal",
+     "at": "cosas chiquitas que sumadas valen",
+     "nota": "items: tapar las ollas · el minuto de oro del baño · puerta del baño cerrada · ropa afuera · muebles separados de la pared exterior; stamp='HECHO'"
+    }
+   ],
+   "imagenes": [
+    "condensa_s16_01",
+    "condensa_s16_02",
+    "condensa_s16_03",
+    "condensa_s16_04",
+    "condensa_s16_05",
+    "condensa_s16_06",
+    "condensa_s16_07",
+    "condensa_s16_08",
+    "condensa_s16_09",
+    "condensa_s16_10",
+    "condensa_s16_11",
+    "condensa_s16_12"
+   ],
+   "clips": [
+    "cond_cortina_viento",
+    "cond_ducha_vapor",
+    "cond_estufa",
+    "cond_invierno_calle",
+    "cond_ropa_patio",
+    "cond_vapor_olla",
+    "cond_ventana_abierta",
+    "cond_ventana_abierta2"
+   ],
+   "avatar": "full en el contraintuitivo",
+   "momentos": [
+    {
+     "dice": "Es corta y violenta",
+     "muestra": "ventana de par en par con la cortina volando",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "la acción correcta, clara"
+    },
+    {
+     "dice": "Por la inercia térmica",
+     "muestra": "pared de ladrillo y muebles macizos",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "explica por qué no se enfría la casa"
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "titulo": "EL ERROR — sellar la casa (pago del loop)",
+   "objetivo": "Pagar el open loop con información NUEVA y contraintuitiva, no con un repaso.",
+   "componentes": [
+    {
+     "kind": "stampbadge",
+     "at": "El error es sellar la casa",
+     "nota": "text='EL ERROR' sub='sellar la casa' color rojo"
+    },
+    {
+     "kind": "flowsteps",
+     "at": "esa agua se queda adentro",
+     "nota": "sellás todo → el agua no sale → sube la humedad → se condensa donde no la ves"
+    },
+    {
+     "kind": "beforeafter",
+     "at": "es una mancha negra en el revoque",
+     "nota": "before=rejilla tapada con cartón · after=mancha negra en el revoque"
+    }
+   ],
+   "imagenes": [
+    "condensa_s17_01",
+    "condensa_s17_02",
+    "condensa_s17_03",
+    "condensa_s17_04",
+    "condensa_s17_05",
+    "condensa_s17_06",
+    "condensa_s17_07",
+    "condensa_s17_08",
+    "condensa_s17_09",
+    "condensa_s17_10",
+    "condensa_s17_11"
+   ],
+   "clips": [
+    "cond_dormitorio",
+    "cond_moho_pared",
+    "cond_pintura_descascarada",
+    "cond_placard",
+    "cond_ventana_invierno"
+   ],
+   "avatar": "FULL — el remate es a cámara",
+   "momentos": [
+    {
+     "dice": "Tapa la rejilla de ventilación del baño",
+     "muestra": "rejilla tapada con cartón y cinta",
+     "tipo": "imagen",
+     "seg": 5,
+     "porque": "se reconoce haciéndolo"
+    },
+    {
+     "dice": "Aislar sin ventilar es fabricar una cueva",
+     "muestra": "cueva húmeda con gotas y musgo",
+     "tipo": "imagen",
+     "seg": 6,
+     "porque": "la imagen que se le queda pegada"
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "titulo": "Regla de oro, aluminio y cierre",
+   "objetivo": "Dejar una sola frase memorizable, empujar la descripción y cerrar con el resultado.",
+   "componentes": [
+    {
+     "kind": "highlightsweep",
+     "at": "aísla el vidrio, ventila el aire",
+     "nota": "pre='' highlight='Aísla el VIDRIO, ventila el AIRE' post='Nunca al revés'"
+    },
+    {
+     "kind": "checklistreveal",
+     "at": "Repasemos, corto",
+     "nota": "resumen en 4 ítems; stamp='LISTO'"
+    },
+    {
+     "kind": "ctacard",
+     "at": "te la dejé escrita en la descripción",
+     "nota": "cierre del embudo, price:0, image=portada"
+    }
+   ],
+   "imagenes": [
+    "condensa_s18_01",
+    "condensa_s18_02",
+    "condensa_s18_03",
+    "condensa_s18_04",
+    "condensa_s18_05",
+    "condensa_s18_06",
+    "condensa_s17_10",
+    "condensa_s17_11"
+   ],
+   "clips": [
+    "cond_amanecer_cuarto",
+    "cond_cortina2",
+    "cond_dormitorio",
+    "cond_lluvia_vidrio",
+    "cond_taller"
+   ],
+   "avatar": "FULL en el cierre",
+   "momentos": [
+    {
+     "dice": "ese vidrio va a estar seco",
+     "muestra": "cortina corriéndose sobre una ventana perfectamente seca",
+     "tipo": "imagen",
+     "seg": 6,
+     "porque": "cierra el círculo con el plano del hook, invertido"
+    }
+   ]
+  }
+ ],
+ "compuertas_pendientes": [
+  "beatsheet anclado al ms — REQUIERE Whisper del audio real (avatar + cola Fish)",
+  "check_props.mjs + check_defaults.mjs antes de farmear",
+  "density_gate por tramo (la cola no puede morir)",
+  "auditor de visión sobre contact-sheets de las 181 PNG",
+  "re-encode de clips a 720p y du < 1.5GB antes del farm"
+ ],
+ "overlays": [
+  {
+   "componente": "HookCaption",
+   "props": {
+    "words": [
+     {
+      "text": "LA VENTANA"
+     },
+     {
+      "text": "LLORA",
+      "boxed": true
+     },
+     {
+      "text": "Y SALE EL"
+     },
+     {
+      "text": "MOHO NEGRO",
+      "boxed": true
+     }
+    ],
+    "sub": "No es una filtración. Sale de tu propio aire."
+   },
+   "ms_in": 18500
+  },
+  {
+   "componente": "BulletCascade",
+   "props": {
+    "eyebrow": "LO QUE NO ES",
+    "bullets": [
+     {
+      "pre": "No es ",
+      "key": "cambiar la ventana",
+      "post": ""
+     },
+     {
+      "pre": "No es ",
+      "key": "un aparato caro",
+      "post": ""
+     },
+     {
+      "pre": "No es ",
+      "key": "secarla mejor",
+      "post": ""
+     }
+    ]
+   },
+   "ms_in": 51760
+  },
+  {
+   "componente": "PhotoCarousel",
+   "props": {
+    "title": "Lo que ya probaste",
+    "items": [
+     {
+      "image": "img/condensa_s02_01.png",
+      "label": "El trapo"
+     },
+     {
+      "image": "img/condensa_s04_05.png",
+      "label": "La rendija"
+     },
+     {
+      "image": "img/condensa_s04_01.png",
+      "label": "El cloro"
+     }
+    ]
+   },
+   "ms_in": 89980
+  },
+  {
+   "componente": "BeforeAfter",
+   "props": {
+    "eyebrow": "CAMBIÉ LA VENTANA",
+    "beforeLabel": "El vidrio",
+    "afterLabel": "La pared",
+    "beforeImage": "img/condensa_s05_03.png",
+    "afterImage": "img/condensa_s05_09.png",
+    "caption": "El agua no se fue: se mudó a donde no la ves."
+   },
+   "ms_in": 155440
+  },
+  {
+   "componente": "HighlightSweep",
+   "props": {
+    "pre": "Hay un error que ",
+    "highlight": "estás cometiendo ahora mismo",
+    "post": " sin saberlo.",
+    "note": "Te lo digo al final del video"
+   },
+   "ms_in": 193500
+  },
+  {
+   "componente": "RankBars",
+   "props": {
+    "title": "De dónde sale el agua de tu ventana",
+    "unit": "litros por día",
+    "rows": [
+     {
+      "label": "Respirar (4 personas)",
+      "value": 4
+     },
+     {
+      "label": "Ropa tendida adentro",
+      "value": 3,
+      "accent": true
+     },
+     {
+      "label": "Cocinar sin tapa",
+      "value": 0.6
+     },
+     {
+      "label": "Una ducha caliente",
+      "value": 0.5
+     },
+     {
+      "label": "Plantas de interior",
+      "value": 0.3
+     }
+    ]
+   },
+   "ms_in": 225900
+  },
+  {
+   "componente": "BigStatReveal",
+   "props": {
+    "eyebrow": "CADA DÍA, DENTRO DE TU CASA",
+    "value": 15,
+    "prefix": "",
+    "suffix": " litros",
+    "support": "Un balde entero de agua liberada como vapor invisible",
+    "source": ""
+   },
+   "ms_in": 261120
+  },
+  {
+   "componente": "CutawayCallouts",
+   "props": {
+    "eyebrow": "EL VASO QUE SUDA",
+    "title": "El vaso no tiene ninguna fisura",
+    "image": "img/condensa_s08_01.png",
+    "callouts": [
+     {
+      "text": "El aire de la cocina",
+      "sub": "lleva agua invisible",
+      "tx": 0.2,
+      "ty": 0.25,
+      "side": "left"
+     },
+     {
+      "text": "La pared fría del vaso",
+      "sub": "la enfría de golpe",
+      "tx": 0.55,
+      "ty": 0.5,
+      "side": "right"
+     },
+     {
+      "text": "El agua aparece afuera",
+      "sub": "nunca salió de adentro",
+      "tx": 0.45,
+      "ty": 0.82,
+      "side": "right"
+     }
+    ]
+   },
+   "ms_in": 269040
+  },
+  {
+   "componente": "FlowSteps",
+   "props": {
+    "title": "El punto de rocío, paso a paso",
+    "nodes": [
+     {
+      "label": "Aire tibio",
+      "sub": "esponja grande"
+     },
+     {
+      "label": "Toca el vidrio",
+      "sub": "helado, 4 mm"
+     },
+     {
+      "label": "Se enfría",
+      "sub": "la esponja se achica"
+     },
+     {
+      "label": "Suelta el agua",
+      "sub": "gotas en el cristal"
+     }
+    ],
+    "kicker": "EL MECANISMO"
+   },
+   "ms_in": 278120
+  },
+  {
+   "componente": "CycleLoop",
+   "props": {
+    "title": "El bucle del trapo",
+    "center": "La misma agua",
+    "nodes": [
+     {
+      "label": "Secas el vidrio",
+      "sub": "a las siete"
+     },
+     {
+      "label": "Cuelgas el trapo",
+      "sub": "adentro"
+     },
+     {
+      "label": "El agua se evapora",
+      "sub": "vuelve al aire"
+     },
+     {
+      "label": "Amanece mojado",
+      "sub": "otra vez"
+     }
+    ]
+   },
+   "ms_in": 307020
+  },
+  {
+   "componente": "VsDuel",
+   "props": {
+    "eyebrow": "QUIÉN SE ENFRÍA PRIMERO",
+    "title": "Pared contra vidrio",
+    "left": {
+     "label": "LA PARED",
+     "sub": "guarda calor, se enfría despacio",
+     "image": "img/condensa_s09_01.png",
+     "value": 25,
+     "unit": "cm",
+     "good": true
+    },
+    "right": {
+     "label": "EL VIDRIO",
+     "sub": "copia la calle al instante",
+     "image": "img/condensa_s09_02.png",
+     "value": 4,
+     "unit": "mm"
+    }
+   },
+   "ms_in": 369980
+  },
+  {
+   "componente": "MythTruth",
+   "props": {
+    "myth": "La ventana está fallando",
+    "truth": "La ventana es el termómetro de tu casa"
+   },
+   "ms_in": 384020
+  },
+  {
+   "componente": "BulletCascade",
+   "props": {
+    "eyebrow": "DONDE SE ESCONDE DESPUÉS",
+    "bullets": [
+     {
+      "pre": "La ",
+      "key": "esquina de arriba",
+      "post": " contra la pared exterior"
+     },
+     {
+      "pre": "La pared ",
+      "key": "detrás del ropero",
+      "post": ""
+     },
+     {
+      "pre": "El ",
+      "key": "fondo del placar",
+      "post": ""
+     }
+    ]
+   },
+   "ms_in": 404340
+  },
+  {
+   "componente": "DuelColumns",
+   "props": {
+    "title": "Las dos únicas palancas",
+    "leftName": "Bajar el agua del aire",
+    "rightName": "Subir la temperatura del vidrio",
+    "rows": [
+     {
+      "attr": "Actúa esta misma noche",
+      "leftWins": false
+     },
+     {
+      "attr": "Cuesta menos de dos dólares",
+      "leftWins": false
+     },
+     {
+      "attr": "Protege también las paredes",
+      "leftWins": true
+     },
+     {
+      "attr": "Hay que hacerlo todos los días",
+      "leftWins": true
+     }
+    ]
+   },
+   "ms_in": 428100
+  },
+  {
+   "componente": "CutawayCallouts",
+   "props": {
+    "eyebrow": "EL SECRETO QUE TE VENDEN CARO",
+    "title": "No aísla el vidrio: aísla el aire quieto",
+    "image": "img/condensa_s11_03.png",
+    "callouts": [
+     {
+      "text": "Vidrio de afuera",
+      "sub": "frío de la calle",
+      "tx": 0.28,
+      "ty": 0.3,
+      "side": "left"
+     },
+     {
+      "text": "Cámara de aire quieto",
+      "sub": "el aislante real",
+      "tx": 0.5,
+      "ty": 0.55,
+      "side": "right"
+     },
+     {
+      "text": "Vidrio de adentro",
+      "sub": "se mantiene tibio",
+      "tx": 0.72,
+      "ty": 0.3,
+      "side": "right"
+     }
+    ]
+   },
+   "ms_in": 468720
+  },
+  {
+   "componente": "FloatingCutout",
+   "props": {
+    "image": "img/condensa_s11_05.png",
+    "label": "PLÁSTICO DE BURBUJAS",
+    "sub": "menos de dos dólares el rollo"
+   },
+   "ms_in": 542120
+  },
+  {
+   "componente": "LayerStack",
+   "props": {
+    "title": "Lo que queda entre tu cuarto y la calle",
+    "layers": [
+     {
+      "label": "Tu cuarto, tibio"
+     },
+     {
+      "label": "Lado liso del plástico"
+     },
+     {
+      "label": "Celdas de aire quieto"
+     },
+     {
+      "label": "Película de agua"
+     },
+     {
+      "label": "El vidrio"
+     },
+     {
+      "label": "La calle, helada"
+     }
+    ]
+   },
+   "ms_in": 555020
+  },
+  {
+   "componente": "NumberedSteps",
+   "props": {
+    "eyebrow": "EL TRUCO DE DOS DÓLARES",
+    "title": "Cinco pasos, media hora",
+    "steps": [
+     {
+      "title": "Limpia el vidrio",
+      "sub": "sin grasa ni polvo",
+      "image": "img/condensa_s12_01.png"
+     },
+     {
+      "title": "Corta a medida",
+      "sub": "del vidrio, no del marco",
+      "image": "img/condensa_s12_03.png"
+     },
+     {
+      "title": "Rocía agua",
+      "sub": "película pareja",
+      "image": "img/condensa_s12_05.png"
+     },
+     {
+      "title": "Burbujas al vidrio",
+      "sub": "lado liso al cuarto",
+      "image": "img/condensa_s12_07.png"
+     },
+     {
+      "title": "Pasa la mano",
+      "sub": "del centro a los bordes",
+      "image": "img/condensa_s12_10.png"
+     }
+    ]
+   },
+   "ms_in": 561200
+  },
+  {
+   "componente": "StampBadge",
+   "props": {
+    "text": "ASÍ NO",
+    "sub": "el lado liso nunca va contra el vidrio",
+    "color": "red",
+    "x": 0.7,
+    "y": 0.28
+   },
+   "ms_in": 603980
+  },
+  {
+   "componente": "CutawayCallouts",
+   "props": {
+    "eyebrow": "EL MOHO DE UNA VENTANA",
+    "title": "Tres lugares, tres tratamientos",
+    "image": "img/condensa_s13_01.png",
+    "callouts": [
+     {
+      "text": "Sobre el vidrio",
+      "sub": "sale con un trapo",
+      "tx": 0.32,
+      "ty": 0.28,
+      "side": "left"
+     },
+     {
+      "text": "En la silicona",
+      "sub": "la raíz está adentro",
+      "tx": 0.5,
+      "ty": 0.68,
+      "side": "right"
+     },
+     {
+      "text": "En el marco",
+      "sub": "el agua entró en la madera",
+      "tx": 0.78,
+      "ty": 0.8,
+      "side": "right"
+     }
+    ]
+   },
+   "ms_in": 632660
+  },
+  {
+   "componente": "LayerStack",
+   "props": {
+    "title": "Por qué vuelve al mismo lugar",
+    "layers": [
+     {
+      "label": "La flor negra (lo que ves)"
+     },
+     {
+      "label": "Superficie de la silicona"
+     },
+     {
+      "label": "Microporos del material"
+     },
+     {
+      "label": "La raíz viva: el micelio"
+     }
+    ]
+   },
+   "ms_in": 727760
+  },
+  {
+   "componente": "MythTruth",
+   "props": {
+    "myth": "El cloro mata el moho",
+    "truth": "El cloro sólo borra la flor: la raíz sigue viva"
+   },
+   "ms_in": 731480
+  },
+  {
+   "componente": "VsDuel",
+   "props": {
+    "eyebrow": "LO ÚNICO QUE DECIDE",
+    "title": "Tiempo de contacto",
+    "left": {
+     "label": "TRAPO CON CLORO",
+     "sub": "se escurre y se seca",
+     "image": "img/condensa_s04_01.png",
+     "value": 30,
+     "unit": "segundos"
+    },
+    "right": {
+     "label": "COMPRESA CON FILM",
+     "sub": "empapando sin secarse",
+     "image": "img/condensa_s14_08.png",
+     "value": 4,
+     "unit": "horas",
+     "good": true
+    }
+   },
+   "ms_in": 787160
+  },
+  {
+   "componente": "NumberedSteps",
+   "props": {
+    "eyebrow": "LA COMPRESA",
+    "title": "Así se mata la raíz",
+    "steps": [
+     {
+      "title": "Corta el papel",
+      "sub": "del ancho de la silicona",
+      "image": "img/condensa_s14_02.png"
+     },
+     {
+      "title": "Empápalo",
+      "sub": "vinagre o agua oxigenada",
+      "image": "img/condensa_s14_03.png"
+     },
+     {
+      "title": "Apóyalo",
+      "sub": "que copie la forma",
+      "image": "img/condensa_s14_05.png"
+     },
+     {
+      "title": "Tápalo con film",
+      "sub": "para que no se seque",
+      "image": "img/condensa_s14_08.png"
+     },
+     {
+      "title": "Tres o cuatro horas",
+      "sub": "después, cepillo viejo",
+      "image": "img/condensa_s14_10.png"
+     }
+    ]
+   },
+   "ms_in": 789340
+  },
+  {
+   "componente": "FramedPhoto",
+   "props": {
+    "image": "img/condensa_lamina.png",
+    "caption": "La tabla del vidrio seco",
+    "sub": "Página de la guía completa",
+    "kenburns": 0.12
+   },
+   "ms_in": 815420
+  },
+  {
+   "componente": "VsDuel",
+   "props": {
+    "eyebrow": "CÓMO SE VENTILA DE VERDAD",
+    "title": "Rendija contra choque",
+    "left": {
+     "label": "RENDIJA TODO EL DÍA",
+     "sub": "enfría paredes y muebles",
+     "image": "img/condensa_s16_03.png",
+     "value": 8,
+     "unit": "horas"
+    },
+    "right": {
+     "label": "DE PAR EN PAR",
+     "sub": "cambia el aire, no el muro",
+     "image": "img/condensa_s16_01.png",
+     "value": 5,
+     "unit": "minutos",
+     "good": true
+    }
+   },
+   "ms_in": 846420
+  },
+  {
+   "componente": "ChecklistReveal",
+   "props": {
+    "title": "Los hábitos que sacan el agua",
+    "items": [
+     "Tapa las ollas cuando cocinas",
+     "Ventana del baño de par en par al salir de la ducha",
+     "Puerta del baño cerrada hasta que se despeje",
+     "La ropa se seca afuera",
+     "Muebles separados de la pared que da a la calle"
+    ],
+    "stamp": "HECHO",
+    "kicker": "LA PALANCA DEL AIRE"
+   },
+   "ms_in": 881000
+  },
+  {
+   "componente": "StampBadge",
+   "props": {
+    "text": "EL ERROR",
+    "sub": "sellar la casa entera",
+    "color": "red",
+    "x": 0.5,
+    "y": 0.3
+   },
+   "ms_in": 908820
+  },
+  {
+   "componente": "FlowSteps",
+   "props": {
+    "title": "Lo que pasa cuando tapas todo",
+    "nodes": [
+     {
+      "label": "Sellas todo",
+      "sub": "burletes y rejillas"
+     },
+     {
+      "label": "El agua no sale",
+      "sub": "quince litros por día"
+     },
+     {
+      "label": "Sube la humedad",
+      "sub": "día tras día"
+     },
+     {
+      "label": "Se muda a la pared",
+      "sub": "donde no la ves"
+     }
+    ],
+    "kicker": "EL ERROR, PASO A PASO"
+   },
+   "ms_in": 941560
+  },
+  {
+   "componente": "BeforeAfter",
+   "props": {
+    "eyebrow": "TRES MESES DESPUÉS",
+    "beforeLabel": "La rejilla tapada",
+    "afterLabel": "El revoque",
+    "beforeImage": "img/condensa_s17_03.png",
+    "afterImage": "img/condensa_s17_07.png",
+    "caption": "Aislar sin ventilar es fabricar una cueva."
+   },
+   "ms_in": 973600
+  },
+  {
+   "componente": "HighlightSweep",
+   "props": {
+    "pre": "La regla: ",
+    "highlight": "aísla el VIDRIO, ventila el AIRE",
+    "post": ". Nunca al revés.",
+    "note": "Si haces sólo una, mudas el problema"
+   },
+   "ms_in": 976160
+  },
+  {
+   "componente": "ChecklistReveal",
+   "props": {
+    "title": "Lo que te llevas",
+    "items": [
+     "El agua la produces tú adentro: un balde por día",
+     "El vidrio no es el culpable, es el termómetro",
+     "Plástico de burbujas pegado con agua, burbujas al vidrio",
+     "Ventilación de choque: cinco minutos, dos veces al día",
+     "El moho no se limpia, se mata: compresa tapada con film"
+    ],
+    "stamp": "LISTO",
+    "kicker": "RESUMEN"
+   },
+   "ms_in": 1013080
+  },
+  {
+   "componente": "CtaCard",
+   "props": {
+    "eyebrow": "LA GUÍA COMPLETA",
+    "title": "Reparaciones de la casa sin llamar a nadie",
+    "bullet": "Las tablas y los cortes, hechos como la lámina que viste",
+    "price": 0,
+    "cta": "Enlace en la descripción",
+    "image": "img/condensa_portada.png"
+   },
+   "ms_in": 1109120
+  },
+  {
+   "componente": "HighlightSweep",
+   "props": {
+    "pre": "El vapor de agua ",
+    "highlight": "no se ve, no pesa y no gotea",
+    "post": " — hasta que toca algo frío.",
+    "note": "Por eso vives dentro sin enterarte"
+   },
+   "ms_in": 1124080
+  },
+  {
+   "componente": "SplitPanel",
+   "props": {
+    "eyebrow": "EL FÁCIL",
+    "title": "Sobre el vidrio",
+    "image": "img/condensa_s13_04.png",
+    "bullets": [
+     "El vidrio no es poroso",
+     "El moho está sólo apoyado arriba",
+     "Sale con un trapo con vinagre",
+     "Vuelve únicamente si vuelve el agua"
+    ]
+   },
+   "ms_in": 1182360
+  },
+  {
+   "componente": "HighlightSweep",
+   "props": {
+    "pre": "Lo que mata la raíz no es el líquido: es el ",
+    "highlight": "tiempo de contacto",
+    "post": ".",
+    "note": "Tres o cuatro horas, sin que se seque"
+   },
+   "ms_in": 1244780
+  },
+  {
+   "componente": "BulletCascade",
+   "props": {
+    "eyebrow": "CUÁNDO YA NO SE SALVA",
+    "bullets": [
+     {
+      "pre": "Sigue ",
+      "key": "gris por dentro",
+      "post": " después de la compresa"
+     },
+     {
+      "pre": "Está ",
+      "key": "agrietada o despegada",
+      "post": " del vidrio"
+     },
+     {
+      "pre": "Se ",
+      "key": "hunde con la uña",
+      "post": ", blanda como goma vieja"
+     }
+    ]
+   },
+   "ms_in": 1290620
+  },
+  {
+   "componente": "ChecklistReveal",
+   "props": {
+    "kicker": "EL MARCO",
+    "title": "Las señales de que el agua ya entró",
+    "items": [
+     "La madera se hunde con la uña",
+     "El marco está hinchado",
+     "El laminado se abrió en capas",
+     "La esquina de abajo está más oscura"
+    ],
+    "stamp": "REVISAR"
+   },
+   "ms_in": 1332500
+  },
+  {
+   "componente": "CornerEyebrow",
+   "props": {
+    "eyebrow": "EL CONSTRUCTOR LIBRE",
+    "text": "LÁMINA DE LA GUÍA",
+    "corner": "tr"
+   },
+   "ms_in": 1348600
+  },
+  {
+   "componente": "FloatingCutout",
+   "props": {
+    "image": "img/condensa_s15_03.png",
+    "label": "HIGRÓMETRO DE MESA",
+    "sub": "deja de adivinar: mira el número"
+   },
+   "ms_in": 1372920
+  },
+  {
+   "componente": "FlowSteps",
+   "props": {
+    "kicker": "POR QUÉ LA RENDIJA ES LO PEOR",
+    "title": "Ocho horas de rendija",
+    "nodes": [
+     {
+      "label": "Entra frío",
+      "sub": "despacio y constante"
+     },
+     {
+      "label": "Se enfrían muros",
+      "sub": "y los muebles"
+     },
+     {
+      "label": "Nuevos puntos fríos",
+      "sub": "donde no los ves"
+     },
+     {
+      "label": "Condensa la pared",
+      "sub": "y pagas calefacción"
+     }
+    ]
+   },
+   "ms_in": 1393380
+  },
+  {
+   "componente": "CutawayCallouts",
+   "props": {
+    "eyebrow": "EL MARCO DE ALUMINIO",
+    "title": "Un puente directo a la calle",
+    "image": "img/condensa_s17_11.png",
+    "callouts": [
+     {
+      "text": "Perfil de aluminio",
+      "sub": "conduce el frío",
+      "tx": 0.35,
+      "ty": 0.35,
+      "side": "left"
+     },
+     {
+      "text": "Sin corte térmico",
+      "sub": "calle y cuarto tocándose",
+      "tx": 0.62,
+      "ty": 0.62,
+      "side": "right"
+     }
+    ]
+   },
+   "ms_in": 1425340
+  },
+  {
+   "componente": "HighlightSweep",
+   "props": {
+    "pre": "Mañana a las siete, ",
+    "highlight": "ese vidrio va a estar seco",
+    "post": ".",
+    "note": "Media hora de trabajo, esta semana"
+   },
+   "ms_in": 1428280
+  }
+ ]
+}

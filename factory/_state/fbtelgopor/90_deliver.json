@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-18T22:39:55.667Z",
+ "status": "done",
+ "inputsHash": "ad379abca6e1419d",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fbtelgopor/fbtelgopor.mp4?v=1",
+  "version": 1,
+  "bytes": 566100631,
+  "durSec": 1237.83,
+  "saltosPts": 0,
+  "tramosNegros": 0,
+  "hoja": "D:\\rtmp\\factory\\fbtelgopor\\audit\\hoja.jpg",
+  "bagasy": "no (sin spec.bagasy o FACTORY_DELIVER≠1)"
+ },
+ "ms": 2529902
+}

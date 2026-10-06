@@ -1,0 +1,135 @@
+[
+  {
+    "id": "cme_v2_s1_safety",
+    "ms": 13300,
+    "dur": 5.2,
+    "tipo": "CLIP",
+    "dice": "monoxido de carbono",
+    "nombre": "cms_s1_ventana_vecino_muro",
+    "_manual": true,
+    "_sec": "S1_HOOK",
+    "_anchor": {
+      "startWord": 33,
+      "endWord": 35,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s1_open_screen",
+    "ms": 23240,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "En una prueba controlada",
+    "nombre": "cms_s1_patio_noche_medidor",
+    "_manual": true,
+    "_sec": "S1_HOOK",
+    "_anchor": {
+      "startWord": 58,
+      "endWord": 61,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s1_e2",
+    "ms": 26860,
+    "dur": 3.4,
+    "tipo": "TEXTO",
+    "dice": "78 decibeles",
+    "muestra": "El 78 dB entra en verde-voltio pegado al teléfono, con la leyenda del punto de medición debajo.",
+    "porque": "El número tiene que estar en pantalla antes del primer segundo: es el título real del video y lo único que el espectador tiene que retener de estos 5 segundos.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "78 dB · A 7 METROS",
+    "sfx": "tick seco",
+    "escena": null,
+    "_anchor": {
+      "startWord": 65,
+      "endWord": 66,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s1_lamina",
+    "ms": 35340,
+    "dur": 5,
+    "tipo": "CLIP",
+    "dice": "una pantalla acustica abierta",
+    "nombre": "cms_s1_lamina_vibra_noche",
+    "_manual": true,
+    "_sec": "S1_HOOK",
+    "_anchor": {
+      "startWord": 81,
+      "endWord": 84,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s1_e14",
+    "ms": 43880,
+    "dur": 5.5,
+    "tipo": "T2V",
+    "dice": "66, 12 decibeles menos",
+    "muestra": "La caja de contrachapado cerrada sobre el generador en el patio, la tarde gris-azulada, sólo el tubo flexible metálico saliendo por un costado y un hilo de aire caliente ondulando encima.",
+    "porque": "El segundo número necesita su objeto. Es el mismo cuadro del plano de apertura pero con la caja puesta y sin rugido: la diferencia se ve antes de que se diga.",
+    "nombre": "cms_s1_caja_cerrada_tarde",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "a raw honey coloured plywood box the size of a small generator sitting on stained grey concrete in a backyard, a flexible metal duct coming out of one side and pointing away, hot air shimmering above the box, a low concrete block wall behind, cool blue grey late afternoon light, slow push in, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "zumbido grave y contenido",
+    "escena": null,
+    "_anchor": {
+      "startWord": 100,
+      "endWord": 103,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s1_e15",
+    "ms": 43880,
+    "dur": 5,
+    "tipo": "ICONO",
+    "dice": "66, 12 decibeles menos",
+    "muestra": "El 66 dB entra en verde-voltio junto a la caja, con los anillos de sonido ya raleados alrededor.",
+    "porque": "78 y 66 son el único par de números que sostiene el video. El segundo aparece con el mismo tratamiento que el primero para que el espectador los reste solo.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_onda.png",
+    "texto": "66 dB · MISMO PUNTO",
+    "sfx": "tick seco",
+    "escena": null,
+    "_anchor": {
+      "startWord": 100,
+      "endWord": 103,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s1_e17",
+    "ms": 45240,
+    "dur": 4,
+    "tipo": "TEXTO",
+    "dice": "12 decibeles menos",
+    "muestra": "La resta entra grande y sola en verde-voltio, sobre el codo de entrada.",
+    "porque": "Es la promesa del título en un renglón. Los dos números ya se vieron; ahora se muestra el resultado de restarlos para que quede como la cifra que el espectador repite.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "−12 dB",
+    "sfx": "golpe grave corto",
+    "escena": null,
+    "_anchor": {
+      "startWord": 101,
+      "endWord": 103,
+      "coverage": 1
+    }
+  }
+]

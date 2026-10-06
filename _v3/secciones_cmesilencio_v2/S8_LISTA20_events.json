@@ -1,0 +1,165 @@
+[
+  {
+    "id": "s8_e1",
+    "ms": 744700,
+    "dur": 1.5,
+    "tipo": "FOTO",
+    "dice": "Bien, la lista.",
+    "muestra": "Claudio de pie frente al banco del patio, la mano cerrada sobre un puñado de tornillos justo antes de soltarlos en la lata.",
+    "porque": "S7 terminó con la cabeza dentro del pozo y aire viciado; el corte a una foto quieta del banco limpio corta el peligro en seco y abre la sección con un solo golpe de aire.",
+    "nombre": "cms_s8_punado_tornillos_lata",
+    "foto_change": "he is standing at a wooden workbench in his back yard, one hand closed around a fistful of screws held just above an open tin can, the raw plywood sheet leaning against the low block wall beside the bench, a roll of mineral wool and two galvanised sheet metal elbows already on the bench, the neighbour's lit yellow window over the wall, cold blue evening light with a warm patch from the window, medium shot, no text",
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "tornillos que caen en lata",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1793,
+      "endWord": 1795,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s8_budget",
+    "ms": 748660,
+    "dur": 5.2,
+    "tipo": "CLIP",
+    "dice": "el material llego a 20 dolares",
+    "nombre": "cms_s8_billete_sobre_contrachapado",
+    "_manual": true,
+    "_sec": "S8_LISTA20",
+    "_anchor": {
+      "startWord": 1802,
+      "endWord": 1807,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s8_panels",
+    "ms": 763780,
+    "dur": 5.6,
+    "tipo": "CLIP",
+    "dice": "Dos o tres paneles de contrachapado de 12 a 15 milimetros",
+    "nombre": "cms_s8_canto_contrachapado_cinta",
+    "_manual": true,
+    "_sec": "S8_LISTA20",
+    "_anchor": {
+      "startWord": 1837,
+      "endWord": 1847,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s8_e11",
+    "ms": 771260,
+    "dur": 2.8,
+    "tipo": "ICONO",
+    "dice": "6 dólares.",
+    "muestra": "Un billete en PNG sin fondo apoyado en el marco inferior de la tarjeta del contrachapado, con el rótulo $6.",
+    "porque": "Los precios de la lista tienen que entrar todos con el mismo ícono y en el mismo lugar de la tarjeta; la repetición es lo que hace que la suma se pueda seguir sin escribirla.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_dolar.png",
+    "texto": "$6 · CONTRACHAPADO",
+    "sfx": "tick de precio",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1852,
+      "endWord": 1853,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s8_wool",
+    "ms": 772580,
+    "dur": 5.2,
+    "tipo": "CLIP",
+    "dice": "Lana mineral o de roca",
+    "nombre": "cms_s8_lana_mineral_espesor",
+    "_manual": true,
+    "_sec": "S8_LISTA20",
+    "_anchor": {
+      "startWord": 1854,
+      "endWord": 1858,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s8_sealant",
+    "ms": 779340,
+    "dur": 4.2,
+    "tipo": "CLIP",
+    "dice": "Un cartucho de sellador compatible",
+    "nombre": "cms_s8_cartucho_gota_punta",
+    "_manual": true,
+    "_sec": "S8_LISTA20",
+    "_anchor": {
+      "startWord": 1868,
+      "endWord": 1872,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s8_e25",
+    "ms": 779340,
+    "dur": 3,
+    "tipo": "T2V",
+    "dice": "Un cartucho de sellador, 3 dólares.",
+    "muestra": "Macro del cartucho cargado en la pistola sobre el banco, la punta cortada en diagonal con una gota gorda de sellador colgando y cayendo.",
+    "porque": "Es el mismo cartucho que en S6 pagó tres decibeles por tres dólares; vuelve en macro y con la gota cayendo para que el espectador lo reconozca sin que haga falta recordárselo.",
+    "nombre": "cms_s8_cartucho_gota_punta",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "extreme macro shot of a sealant cartridge loaded in a metal caulking gun resting on a wooden workbench, the nozzle cut at a diagonal with a fat glossy bead of sealant swelling at the tip and dropping, sawdust and screws on the bench, cold blue evening light with a warm rim from the right, very shallow depth of field, slow push in, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "gota espesa que cae sobre madera",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1868,
+      "endWord": 1873,
+      "coverage": 0.833
+    }
+  },
+  {
+    "id": "s8_e26",
+    "ms": 779340,
+    "dur": 2.6,
+    "tipo": "ICONO",
+    "dice": "Un cartucho de sellador, 3 dólares.",
+    "muestra": "El cartucho en PNG sin fondo junto a la punta real, con el rótulo $3.",
+    "porque": "Cuarto precio de la lista con el mismo formato que los tres anteriores: la suma tiene que poder hacerse sola mientras Claudio sigue hablando.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_cartucho.png",
+    "texto": "$3 · SELLADOR",
+    "sfx": "tick de precio",
+    "escena": null,
+    "_anchor": {
+      "startWord": 1868,
+      "endWord": 1873,
+      "coverage": 0.833
+    }
+  },
+  {
+    "id": "cme_v2_s8_foam",
+    "ms": 793140,
+    "dur": 3.64,
+    "tipo": "CLIP",
+    "dice": "La espuma arde y la manta tapa el aire",
+    "nombre": "cms_s8_espuma_humo_negro",
+    "_manual": true,
+    "_sec": "S8_LISTA20",
+    "_anchor": {
+      "startWord": 1895,
+      "endWord": 1903,
+      "coverage": 1
+    }
+  }
+]
