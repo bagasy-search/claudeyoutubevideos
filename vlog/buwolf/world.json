@@ -1,0 +1,10 @@
+{
+ "world": "a band of hunter-gatherers in the Ice Age in a snowy river valley with dark pine woods and a camp under a rock overhang, deep winter",
+ "empty": "a wild snowy place in the Ice Age, completely empty of people, nobody anywhere in the frame, no modern objects, no paths, no fences, no clothing",
+ "light": {
+  "D": "only the light the place really has: flat white overcast winter daylight on snow, cold blue shadows",
+  "E": "only the light the place really has: the last cold blue light of a winter dusk on the snow, faces still clearly readable",
+  "N": "only the light the place really has: the warm orange glow of a camp fire from off frame lighting faces, fur and hands, bluish moonlight on the snow behind, exposure bright enough that everything stays clearly readable",
+  "M": "only the light the place really has: pale grey winter morning light, frost and thin smoke"
+ }
+}

@@ -1,0 +1,209 @@
+# i|kind|cast|light|escena parte 0 [|| escena parte 1]   (override por parte: @cast=a,b · @obj · @scene · @now)
+0|obj||D|a wide snowy river valley in deep winter with dark pine woods on the slopes, a frozen river, and a thin line of smoke rising from under a rock overhang far away||@cast=hunter,elder,boy the camp under the rock overhang in the snow, a small fire, the band moving around, seen from the slope
+1|cast|elder|N|the old woman by the fire holding a small sick grey puppy wrapped in a fur on her lap, the puppy shivering, snow outside the overhang
+2|obj||N|close on a thin sick grey puppy curled in a fur by the fire, eyes half closed, its nose dry, a bowl of water beside it
+3|cast|hunter|N|the hunter by the fire looking down at the sick puppy with a doubtful, tired face, his spear leaning on the rock
+4|cast|elder|N|the old woman pushing a tiny piece of chewed meat into the sick puppy's mouth with her fingers, patient and gentle||close on the old woman's wrinkled fingers holding a scrap of meat to the puppy's muzzle
+5|obj||X|the fossil skull and bones of a small young dog laid out on a dark cloth in a museum lab under a lamp, a scale bar beside them
+6|obj||X|an old stone age grave in a quarry excavation, two human skeletons lying side by side with red ochre stains, and the small bones of a dog beside them
+7|obj||D|a grey wolf standing in deep snow at the edge of a pine forest, staring, its breath steaming
+8|obj||N|a large grey wolf at the very edge of the firelight in the snow at night, its eyes catching the light, the dark woods behind
+9|now|hunter|I|the same modern man on his couch at home with a medium sized brown dog lying across his lap, both relaxed, a lamp on||close on the dog's face on the couch looking up with raised inner eyebrows, big sad eyes
+10|cast|boy|N|the boy by the fire reaching out slowly toward the sick puppy, the puppy lifting its head to sniff his hand
+11|obj||N|the camp fire under the rock overhang at night in the snow, embers rising into the dark, nobody visible
+12|cast|elder|N|the old woman by the fire looking into the flames, remembering, the puppy sleeping in her lap
+13|obj||D|a vast frozen grassland under a pale sky with glaciers on the far horizon during the last ice age, wind blowing snow over the grass, completely empty
+14|obj||D|an enormous wall of glacier ice at the edge of a frozen plain, crevasses and blue ice, under a grey sky
+15|obj||D|a few stunted larch trees on a frozen steppe, and a herd of reindeer crossing the snow far away||a pack of grey wolves trotting in a line across the frozen steppe after the reindeer
+16|obj||X|a pack of five grey wolves standing on a snowy rise looking down at the plain||@cast=hunter the hunter crouched behind a rock on the frozen steppe with his spear, watching the same herd
+17|obj||X|a wolf family resting together in the snow, adults and two half grown pups curled close
+18|obj||X|wolves chasing a bison through deep snow, spreading out around it
+19|obj||X|an adult wolf bringing a piece of meat to its pups at a den in the snow||@cast=elder,boy the old woman handing a strip of meat to the boy by the fire
+20|cast|hunter|D|the hunter and a wolf seen far apart on the same frozen plain, both looking toward the same herd
+21|obj||D|a herd of reindeer running across the frozen tundra||wild horses with thick winter coats standing in the snow, and a bison behind them
+22|cast|hunter|D|the hunter in the snow glaring at a wolf feeding on a reindeer carcass that his band had been hunting
+23|obj||D|a wolf snarling over a carcass in the snow, teeth bared, staring at the camera
+24|obj||D|a cave lion, a hyena and a brown bear seen far apart across a snowy valley, three dangerous animals
+25|scene||X|a female archaeologist in a modern genetics laboratory holding a small ancient bone fragment in gloved hands, sample tubes around
+26|obj||X|a computer screen in a lab showing two branching family trees side by side, out of focus at the edges, a coffee cup beside it
+27|obj||D|a snowy landscape in Siberia with low hills and a frozen river, a few larches, under a heavy grey sky
+28|obj||D|a small sheltered valley in the frozen north, with a stream still flowing and a few trees, surrounded by a huge white wasteland
+29|cast|hunter,elder,boy|E|a small camp of hide tents and a fire in a snowy valley, the band huddled around it at dusk
+30|obj||E|a small pack of wolves lying in the snow on the far side of the same valley, watching the smoke of the camp
+31|cast|hunter|E|the hunter looking across the valley at the wolves, the wolves looking back, a blizzard closing in
+32|cast|hunter|N|the hunter by the fire at night tossing a scrap of meat toward the darkness
+33|cast|hunter|N|the hunter holding a strip of lean meat over the fire, thinking, a wolf's eyes shining in the dark beyond
+34|cast|elder|N|the old woman shaking her head at the hunter, half amused, half disapproving
+35|cast|hunter|N|the hunter cracking open a bone to get the marrow, eating it hungrily by the fire
+36|obj||N|a pile of dark red lean meat strips on a hide by the fire, no fat on them
+37|cast|hunter|N|the hunter sitting by the fire looking thin and tired, pushing away a piece of lean meat with a sick face
+38|scene||X|an old black and white photograph style scene of a fur trapper in the far north in the 1800s with a sled and a frozen cabin
+39|scene||X|a thin exhausted trapper in a fur hat sitting in a snowy cabin in the 1800s, eating meat from a pan, gaunt||close on a rabbit carcass hanging from the cabin wall
+40|obj||D|a skinny reindeer in deep snow, its ribs showing under its winter coat
+41|cast|hunter,elder|N|the band at the fire eating marrow and fat from cracked bones and organs, the most precious parts
+42|obj||N|a big pile of leftover lean meat strips on a hide at the edge of the camp, more than anyone can eat
+43|obj||D|a grey wolf eating a large piece of lean meat in the snow, content
+44|obj||D|a wolf lying in the snow licking its lips, well fed
+45|scene||X|a female scientist in a Finnish university office in winter with snow outside the window, looking at charts on a screen
+46|cast|hunter|N|the hunter by the fire with a pile of lean meat, counting with his eyes, then looking at the darkness
+47|cast|hunter|N|the hunter throwing a big piece of lean meat out beyond the firelight into the snow
+48|cast|hunter|N|the hunter shrugging, wiping his hands, unconcerned, as the meat lies in the snow
+49|obj||N|a piece of meat lying in the snow at the edge of the firelight, and a wolf's nose appearing out of the dark toward it
+50|obj||N|a wolf creeping out of the dark woods toward the camp at night, low and careful, the fire glowing far ahead
+51|obj||N|the wolf grabbing the meat in the snow and turning away fast
+52|cast|hunter|N|the hunter standing with his spear by the fire, watching a wolf at the edge of the light
+53|obj||N|one bold wolf sitting calmly in the snow at the edge of the firelight while two others hang back in the dark
+54|obj||N|a calm wolf lying down in the snow near the camp, ears relaxed, while another wolf in the background snarls||close on a snarling wolf with bared teeth in the dark, ears flat
+55|obj||N|the calm wolf eating a piece of meat at the edge of the firelight, the camp behind it||a thin hungry wolf in the dark woods far away, alone
+56|obj||M|in spring, a wolf mother with four fluffy pups at a den under tree roots, snow melting
+57|obj||X|a rusty sign-less fence around a large fur farm in Siberia in the 1950s, rows of wire fox cages in the snow
+58|obj||X|a silver fox in a wire cage looking at the camera warily
+59|obj||X|rows of wire cages with silver foxes on a snowy farm in Siberia
+60|scene||X|a Soviet scientist in the late 1950s with dark hair and a lab coat over a sweater standing among fox cages in the snow with a notebook
+61|obj||X|a Siberian city in the 1950s in winter, wooden houses and snow, smoke from chimneys
+62|scene||X|a woman in a 1960s fur farm reaching her hand toward a fox in a cage, the fox calm and sniffing her hand
+63|scene||X|a farm worker in the 1960s writing notes on a clipboard next to a cage with a calm fox
+64|obj||X|a calm silver fox lying relaxed in its cage, next to a cage with a fox pressed against the back wall, scared
+65|scene||X|a silver fox wagging its tail and jumping up against the wire of its cage as a woman walks past
+66|scene||X|a woman in a 1970s farm holding a tame silver fox in her arms, the fox licking her chin
+67|obj||X|a tame fox lying on its back in the straw of its cage, belly up
+68|obj||X|a fox with floppy ears and a curled tail sitting in a cage, very dog-like
+69|obj||X|a fox with a black and white piebald coat with big white patches, standing in the snow
+70|obj||X|close on the face of a tame fox with a short rounded muzzle, looking up
+71|obj||X|three tame foxes in a pen, one with floppy ears, one with a curly tail, one with white spots, looking like puppies
+72|obj||X|a row of old black and white photos pinned to a wall: foxes, dogs, pigs and cattle
+73|obj||X|a tame fox and a wild fox side by side in neighbouring cages, the tame one relaxed, the wild one wary
+74|obj||X|a puppy with floppy ears and a spotted coat sitting next to a young wolf, the difference obvious
+75|obj||X|a researcher's desk with a stack of books about genetics and a skull of a fox and a skull of a dog
+76|obj||X|a spotted pig, a spotted cow and a spotted dog in a farmyard
+77|cast|hunter,elder,boy|E|back at the ice age camp in the snowy valley at dusk, the band around the fire, a few wolves resting at a distance
+78|cast|boy|E|the boy throwing a stone to chase away a snarling wolf near the camp, while a calm wolf watches from the side||@cast=hunter the hunter tossing a scrap to the calm wolf
+79|cast|hunter|E|the hunter crouching and offering meat on his open hand to a calm wolf that cautiously approaches
+80|obj||E|a calm wolf taking meat gently from a man's hand at the edge of the camp
+81|cast|hunter,elder,boy|N|the camp at night, generations later, three wolves lying near the fire like members of the band
+82|obj||N|wolves with slightly shorter snouts lying close to a camp fire in the snow, relaxed
+83|cast|hunter,elder,boy|D|the band walking through deep snow in a line, carrying their things, two wolves trotting alongside
+84|obj||N|a wolf asleep curled up in the snow very close to the fire, its tail over its nose
+85|obj||N|a wolf at the camp lifting its head sharply, ears pricked, staring into the dark woods
+86|scene||N|a cave lion's shape moving in the dark trees beyond the firelight, eyes shining
+87|obj||N|two wolves at the camp standing up and growling toward the dark woods, hackles raised
+88|cast|hunter,elder,boy|N|the band waking up at the fire, alert, looking where the wolves are growling
+89|cast|hunter|N|the hunter standing up with a burning branch, a wolf growling beside him, both facing the dark
+90|obj||D|a wolf with its nose to the snow following a track through the pine forest
+91|obj||D|a wolf chasing a limping deer through the snow||@cast=hunter the hunter running far behind with his spear
+92|cast|hunter|D|the hunter kneeling by a dead deer in the snow, cutting it, and tossing a piece to two wolves waiting nearby
+93|obj||X|a modern museum display of an ancient spear and wolf skull, softly lit
+94|cast|hunter|D|the hunter and two wolves walking together through the snowy forest, side by side
+95|cast|hunter|N|the hunter by the fire looking down and noticing a wolf looking right at his face
+96|obj||N|a wild wolf in the dark watching the camp with a guarded, wary look
+97|cast|hunter|N|close on the hunter's face lit by the fire, meeting the gaze of a wolf||close on a wolf's amber eyes looking up at a human face, calm
+98|obj||D|three wolves sitting in the snow on a ridge above the valley, watching
+99|cast|hunter,elder,boy|D|the band on a snowy ridge looking down at a valley full of animals: lions, hyenas, bears in the distance
+100|scene||D|a cave lion walking through the snow||a cave hyena on a snowy rock, and a cave bear at the edge of the woods
+101|obj||D|a red fox hunting mice in the snow, jumping head first
+102|obj||D|a wolf pack walking together in the snow, close to each other
+103|obj||D|a wolf family at a den in spring: the breeding pair, two older young wolves and small pups
+104|obj||D|two wolves greeting each other, nose to nose, tails wagging, ears back||a young wolf following an older wolf through the snow
+105|obj||D|a wolf pack sharing a carcass in the snow calmly
+106|cast|hunter,elder,boy|N|the band around the fire with a wolf lying among them, part of the group
+107|scene||D|a huge cave lion crouched in tall frozen grass, ready to ambush
+108|scene||D|a cave hyena clan fighting over a carcass, a big female biting a smaller one
+109|scene||D|a big brown cave bear alone in a snowy forest, turning over a log||@cast=hunter the hunter by the fire with a wolf lying calmly at his feet
+110|cast|elder|N|the old woman by the fire shaking her head slowly, thoughtful
+111|obj||X|the dark entrance of a cave in a wooded limestone hillside in Belgium, moss and rocks, nobody in the frame, no people at all
+112|obj||X|an ancient canid skull with a short wide snout in a museum case under soft light||a wolf skull and a dog skull side by side on a table, the dog's snout shorter
+113|obj||X|close on an ancient canid skull from the side, teeth worn, under a lab lamp
+114|scene||X|two researchers in a museum lab arguing over a skull on a table, one pointing, the other shaking his head
+115|obj||X|a canid skull and calipers on a lab table, measurement notes beside it
+116|cast|hunter|N|the hunter by the fire twenty thousand years ago with a strange half wolf, half dog animal lying beside him
+117|obj||N|a canid at the edge of the firelight that looks almost like a wolf but with a slightly shorter face and softer ears
+118|obj||M|a litter of fluffy pups born at the edge of a human camp, one with a white patch on its chest
+119|cast|boy|N|the boy by the fire face to face with a young canid, both staring into each other's eyes
+120|obj||D|two wild wolves staring each other down in the snow, tense, ears forward
+121|now|hunter|I|the same modern man kneeling in his living room as his dog runs to him
+122|now|hunter|I|the same modern man and his dog looking into each other's eyes on the kitchen floor, warm
+123|scene||X|a Japanese research lab with a woman scientist holding a small sample tube, and a dog sitting with its owner nearby
+124|scene||X|a dog and its owner sitting on the floor of a plain research room, looking at each other, a researcher with a clipboard in the corner
+125|now|hunter|I|the same modern man smiling as his dog gazes up at him, his hand on the dog's head
+126|now|hunter|I|the same modern man scratching his dog behind the ears and talking to it, the dog wagging its tail
+127|scene||X|a mother holding her newborn baby and gazing at it, in a sunny bedroom
+128|scene||X|a young wolf raised by people in a sanctuary sitting next to a keeper but looking away from her face
+129|scene||X|a female psychologist in a modern British university office looking at a dog skull model, papers on the desk
+130|obj||X|an anatomy drawing style close up of a dog's face showing the small muscles around its eyes, on a desk with a pen
+131|obj||X|close on a dog's eyes and eyebrows from the front, the inner eyebrows raised
+132|obj||X|a dog raising its inner eyebrows and making big sad eyes at the camera
+133|obj||X|a puppy with huge sad eyes looking up, inner eyebrows raised
+134|obj||X|a grey wolf's face from the front with a flat, steady brow, no eyebrow movement
+135|obj||X|a dog lifting its eyebrows again and again at someone off frame, begging
+136|obj||X|a sad looking dog sitting by a kitchen table looking up
+137|scene||X|a researcher in a lab coat holding a dog's head gently and looking at its eyes
+138|obj||X|a dog's big round eyes looking up, very baby-like
+139|scene||X|a sad young woman with raised inner eyebrows next to a dog making the same face
+140|cast|elder,boy|N|the old woman by the fire looking down at a young canid making big sad eyes at her, and giving it a scrap of meat, smiling||the boy sharing his food with a pup by the fire
+141|obj||M|a mother dog and her pups at the edge of a camp, the pups with the same soft eyes
+142|now|hunter|I|the same modern man at his kitchen table holding a sandwich while his dog sits beside him making huge sad eyes
+143|now|hunter|I|the same modern man laughing and giving his dog a piece of the sandwich
+144|now|hunter|I|the same modern man pointing at a ball in the garden and his dog looking exactly where he points
+145|scene||X|a chimpanzee in a research enclosure looking at a researcher's hand instead of where she points
+146|scene||X|a young American researcher in the early two thousands kneeling in a field station, pointing at one of two upturned cups while a dog watches||a wolf in a research enclosure ignoring a researcher pointing at a cup
+147|cast|hunter|D|the hunter pointing toward a deer in the snowy woods and a dog-like wolf looking exactly where he points
+148|cast|hunter|D|the hunter and the canid looking at each other, a silent understanding
+149|cast|elder|N|the old woman by the fire with the sick puppy in her lap, fifteen thousand years ago
+150|cast|elder|N|the old woman stroking the puppy by the fire
+151|cast|elder,boy|N|the old woman and the boy by the fire with the sick puppy, the snowy valley dark outside
+152|scene||X|workers in 1914 clothing in a basalt quarry in Germany, one of them holding up an old bone, black and white photo style
+153|obj||X|the skull of a man and the skull of a woman from the stone age on a museum shelf, and a small dog jaw beside them
+154|obj||X|a museum display case in Bonn with stone age bones and red ochre, a soft light
+155|obj||X|close on the small fossil jaw of a young dog with its teeth, under a lab lamp
+156|scene||X|an early 1900s museum curator with a moustache writing a label for the dog bones
+157|scene||X|a veterinarian researcher in a modern lab looking through a magnifier at a small fossil dog jaw
+158|obj||X|extreme close up of a fossil dog tooth with thin bands of damaged enamel
+159|obj||X|a puppy about six months old, thin and long legged, lying on a fur
+160|obj||X|close on a fossil puppy tooth with a ring of damaged enamel, a millimetre scale
+161|obj||N|the sick puppy curled up by the fire, shaking with fever, a fur over it
+162|obj||N|a very sick puppy lying alone in the snow, no one around
+163|cast|elder|N|the old woman sitting up at night by the fire with the sick puppy, awake while everyone sleeps
+164|cast|elder|N|the old woman wrapping the puppy in a warm fur||the old woman giving the puppy water from her cupped hand
+165|cast|elder|N|the old woman gently wiping the puppy's face with a soft piece of fur
+166|cast|hunter|N|the hunter watching the old woman nurse the puppy, puzzled
+167|obj||N|the sick puppy lying on a fur, too weak to lift its head
+168|cast|elder,boy|N|the old woman and the boy sitting with the puppy night after night||a grave in the snow at dawn with a fur laid over it, red ochre on the stones
+169|obj||D|a wolf eating leftover meat in the snow
+170|obj||N|a calm wolf near the fire||close on a dog's raised inner eyebrows
+171|obj||X|the puppy's small fossil bones laid out with care in a museum drawer
+172|cast|boy|N|the boy hugging the sick puppy by the fire, his face against its fur
+173|cast|hunter,elder,boy|D|the band walking across a snowy plain with dogs trotting beside them
+174|scene||X|hunter-gatherers with dogs walking along a frozen coastline
+175|scene||X|people in furs crossing a vast snowy land bridge with their dogs, mountains far away
+176|scene||X|a family of early Americans with two dogs at a camp beside a river in a new land
+177|scene||X|people pulling a dugout canoe onto a beach with a dog jumping out||a dog walking with a man through a desert
+178|scene||X|a village of hunters by a lake with dogs everywhere among the children
+179|scene||X|an early farming village with fields of wheat, a woman grinding grain and a dog eating bread crumbs at her feet
+180|scene||X|a modern genetics lab with a researcher looking at a chart of gene copies on a screen
+181|now|hunter|I|the same modern man tearing off a piece of bread crust and giving it to his dog
+182|obj||X|a dog eating a crust of bread on a wooden floor
+183|obj||D|a lone grey wolf walking across a snowy mountain slope, wild and rare
+184|obj||D|a small wolf pack crossing a frozen lake far away, tiny figures in the vastness
+185|scene||X|a busy city park full of people walking many different kinds of dogs
+186|scene||X|dogs with their people in many places: a snowy village, a desert town and a tropical island beach
+187|scene||X|a guide dog leading a blind man across a street||a team of sled dogs pulling a sled across snow
+188|now|hunter|I|the same modern man asleep in bed with his dog stretched across the duvet
+189|obj||D|a wolf howling on a snowy hill at dusk
+190|cast|hunter,elder,boy|N|the band by the fire at night with dogs curled among them
+191|obj||D|the frozen ice age steppe with glaciers, empty and harsh
+192|obj||D|a wolf pack and a human band seen far apart in the same frozen valley
+193|obj||N|a pile of lean meat on a hide in the snow
+194|obj||N|a calm wolf at the edge of the firelight
+195|obj||N|generations of wolves at a camp, each one a little more dog-like
+196|obj||M|three pups with floppy ears and spotted coats tumbling in the snow by a camp
+197|obj||X|close on a dog's raised inner eyebrows and soft eyes||@now=hunter the same modern man gazing at his dog on the couch
+198|cast|elder|N|the old woman holding the sick puppy close by the fire
+199|obj||N|the puppy asleep on a fur by the fire, wrapped up, peaceful
+200|cast|boy|N|the boy lying next to the sleeping puppy by the fire, one hand on its side
+201|obj||N|a wild wolf howling on a snowy ridge under the moon, far from the camp
+202|obj||N|close on the puppy's ear twitching as it sleeps by the fire, not getting up
+203|cast|hunter,elder,boy|N|the camp under the overhang at night in the snow, the fire glowing, the band and the puppy asleep together
+204|cast|elder|N|the old woman by the fire looking at the sleeping band, old and thoughtful
+205|cast|elder,boy|N|the old woman and the boy by the fire, the boy looking at her lined face with curiosity
+206|cast|elder|N|close on the old woman's deeply lined face in the firelight
+207|obj||N|the camp fire glowing small under the overhang in the snowy valley at night, seen from far away
