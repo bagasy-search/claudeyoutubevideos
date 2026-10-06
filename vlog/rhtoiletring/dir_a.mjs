@@ -19,6 +19,7 @@ export const SHOTS = [
   S(1, "the brush slides right over it", "bi", "b_slideover", { p: BI("Extreme close view of white toilet brush bristles sliding over a rough brown ring on white porcelain, the ring untouched."), anim: "the bristles slide slowly over the ring; nothing else moves" }),
   S(1, "and the next morning", "bi", "b_morningring", { q: "bathroom morning light", p: BI(`Early morning light through a bathroom window falling into a white toilet bowl, a brown ring sitting right at the water line.`), anim: "the morning light slowly brightens; nothing else moves" }),
   S(1, "the brown line is still sitting there", "av", ""),
+  C(1, "sitting there at the water", "RhBowlSection3D", { mode: "grow", labels: { crust: "A layer a day" } }),
   // ── la promesa con números (13,6 s)
   C(2, "", "RhPasteMix", {}),
   S(2, "one spoon of peroxide", "bi", "b_spoonperox", { p: BI(`A tablespoon held over a small white bowl of baking soda on a bathroom counter, ${BOTTLE} standing beside it, the spoon full of clear liquid.`) }),
@@ -35,6 +36,7 @@ export const SHOTS = [
   S(3, "nice and easy", "bi", "b_gentle", { p: BI(`Close view of a yellow-gloved hand holding a wet gray pumice stone lightly with two fingers against a white toilet bowl, barely pressing.`), anim: "the stone moves gently a little; nothing else moves" }),
   S(3, "and look at that bowl", "vl", "m2", { a: `kneels beside the white toilet in ${TBATH}, looking down into the bowl with her mouth open in delight, both yellow-gloved hands on the rim.`, act: "She looks into the bowl, turns to the camera laughing with delight, then leans in close and lowers her voice like she is telling a secret.", b: "she is leaning in close to the camera, eyebrows raised, one finger to her lips, mouth closed." }),
   // ── 3 loops abiertos
+  C(4, "one mistake with that stone", "RhPumiceWetDry", {}),
   S(4, "that scratches your toilet for good", "bi", "b_scratches", { q: "scratched porcelain", p: BI("Extreme close view of the glaze of a white toilet bowl with fine gray scratch lines scuffed into it, under bright light."), anim: "the light glints slowly over the scratches; nothing else moves" }),
   S(4, "There's a color test", "bi", "b_colors", { q: "color swatches", p: BI("Four small white saucers on a bathroom counter in a row, each with a little smear of a different stain: brown, chalky white, rusty orange and black, an old toothbrush beside them."), anim: "the view slides slowly along the four saucers; nothing else moves" }),
   S(4, "which ring you've got", "c", "RhRingColors", { props: { pick: -1 } }),
