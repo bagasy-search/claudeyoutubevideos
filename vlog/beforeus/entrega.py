@@ -34,7 +34,7 @@ gate("1 streams", len(v) == 1 and len(a) == 1, bool(p["streams"]), f"video {len(
 vs = v[0] if v else {}
 gate("2 color", (vs.get("pix_fmt"), vs.get("color_range"), vs.get("color_space")) == ("yuv420p", "tv", "bt709"), bool(vs), f'{vs.get("pix_fmt")},{vs.get("color_range")},{vs.get("color_space")}')
 gate("3 cadencia", vs.get("r_frame_rate") == vs.get("avg_frame_rate") == "30/1", bool(vs), f'{vs.get("r_frame_rate")} / {vs.get("avg_frame_rate")}')
-nb = int(sh(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v:0", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", OUT]).stdout.strip() or 0)
+nb = int(sh(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v:0", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", OUT]).stdout.strip().strip(",") or 0)
 gate("4 cuadros == total", nb == TOTAL, nb > 0, f"{nb} vs {TOTAL}")
 dur = float(p["format"]["duration"]); wd = float(sh(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", WAV]).stdout.strip() or 0)
 gate("5 deriva vs máster", abs(dur - min(wd, TOTAL / 30)) < 0.7, wd > 0, f"mp4 {dur:.2f} s · máster {wd:.2f} s · comp {TOTAL/30:.2f} s")

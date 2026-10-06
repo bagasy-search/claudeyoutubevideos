@@ -43,7 +43,7 @@
 {"t":"card","comp":"EmberType","at":"And yet Tina lived to at least six years old.","props":{"text":"6 YEARS","sub":"SHE NEEDED EVERYONE","size":260,"bed":"@jpg:175_0"},"until":"six years old.","pad":0.6,"mindur":3.4,"max":4.6},
 {"t":"card","comp":"OchreWall","at":"Help given with no hope of anything in return.","props":{"lines":[{"text":"HELP","size":170},{"text":"WITH NOTHING BACK","size":100}],"bed":"@v2:wall_ochre_3"},"until":"anything in return.","pad":0.6,"mindur":3,"max":6},
 {"t":"card","comp":"MatchCut","at":"When someone collapses on a street,","props":{"a":{"src":"@jpg:193_0","tag":"TODAY"},"b":{"src":"@jpg:101_0","tag":"40,000 YEARS AGO"}},"until":"the people in uniform run in.","pad":0.3,"marks":{"cutAt":"When there's a fire"},"max":9},
-{"t":"card","comp":"EmberType","at":"But it might be one of the oldest things about us.","props":{"text":"THE OLDEST","sub":"THING ABOUT US","size":260},"until":"oldest things about us.","pad":0.8,"mindur":3.2},
+{"t":"card","comp":"EmberType","at":"But it might be one of the oldest things about us.","props":{"text":"THE OLDEST","sub":"THING ABOUT US","size":260,"bed":"@v2:wall_ochre_1"},"until":"oldest things about us.","pad":0.8,"mindur":3.2},
 {"t":"card","comp":"EmberWords","at":"What they had was each other.","props":{"items":["WHAT THEY HAD","WAS EACH OTHER"],"size":160},"until":"turned out to be enough.","pad":0.6,"marks":{"t1":"was each other."},"mindur":3.6},
 {"t":"overlay","comp":"TitleCard","at":"Fifteen thousand years ago, a wolf walks up","props":{"title":"Next","sub":"HOW THE FIRST WOLF BECAME A DOG"},"dur":4.4}
 ]
