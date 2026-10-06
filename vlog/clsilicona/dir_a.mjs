@@ -30,9 +30,10 @@ export const SHOTS = [
   // ── 0:16 · el hotel: 40 bañeras, la inspección
   S(3, "", "cl", "c_corridornight", { p: CLP("He walks down a dim hotel corridor at night carrying a box with paper towel rolls, brown bottles and rolls of cling film, glancing at the camera."), anim: "he walks slowly down the corridor", ov: { c: "ClNameTag", props: { name: "Claudio", sub: "30 años de conserje de hotel" } } }),
   S(3, "la noche antes de una inspección", "bi", "b_inspectionletter", { p: BI(`${MANAGER} at a hotel office desk at night reading a printed letter with a worried frown, a desk lamp on.`) }),
+  S(3, "tuve que dejar blancas", "bi", "b_fortytubs", { p: BI("A long hotel corridor at night seen from above a housekeeping cart loaded with rolls of paper towels, brown bottles with blank labels and rolls of cling film.") }),
   S(3, "cuarenta bañeras", "bi", "b_tubsrow", { p: BI("A hotel corridor at night seen from one end, a row of guest room doors all open, light from each bathroom spilling into the corridor.") }),
   S(3, "El presupuesto para rehacerlas todas", "bi", "b_quote", { p: BI("A printed contractor's quote on a hotel office desk next to a calculator and a pen, a long list of line items, the total circled in red pen.") }),
-  S(3, "ya estaba en el escritorio del gerente", "bi", "b_quotedesk", { p: BI(`${MANAGER} sliding a thick printed contractor's quote across his desk toward the camera, tapping the total with one finger.`) }),
+  C(3, "ya estaba en el escritorio del gerente", "ClReceipt", { lines: [["Silicona nueva", "40 bañeras"], ["Mano de obra", "2 días"], ["Baños cerrados", "40"]], total: ["Presupuesto", "mucha plata"] }),
   // ── 0:28 · ráfaga
   S(4, "", "av", ""),
   S(4, "Seco la silicona", "bi", "b_drycaulk", { p: BI(`${G} drying ${CAULK} with a folded white towel.`), anim: "the towel wipes along the silicone" }),

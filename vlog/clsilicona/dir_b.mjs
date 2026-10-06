@@ -12,6 +12,7 @@ const CONTRACTOR = "a contractor in his thirties in a gray work shirt with a cau
 export const SHOTS = [
   // ── 4:05 · por qué el rociado no puede
   C(21, "", "ClChapter", { n: 2, title: "Por qué el rociado no puede", sub: "chorrea en un minuto" }),
+  S(21, "Porque la silicona es lisa", "bi", "b_caulkwall", { p: BI(`Close view of a glossy white silicone caulk line running up the vertical corner between two beige wall tiles in a shower, water droplets sliding down it.`), anim: "a water drop slides down the silicone" }),
   C(21, "Usted rocía", "ClCaulk3D", { mode: "spray", labels: { a: "Chorrea", b: "El moho, igual" } }),
   S(21, "El agua oxigenada necesita tiempo mojando", "av", ""),
   C(22, "", "ClCaulk3D", { mode: "inside", labels: { a: "Como a través de un vidrio" } }),
