@@ -1,5 +1,177 @@
 [
  {
+  "cluster": "h_idea_viejo_oficio",
+  "canales": 63,
+  "nuevos": 17,
+  "ganadores": 8,
+  "tasa": 0.47,
+  "mediana": 6901,
+  "pct100k": 0.12,
+  "viejosHit": 11,
+  "top": [
+   {
+    "handle": "@MakerWoodMaster",
+    "joined": "Jul 7, 2026",
+    "age": 93,
+    "subs": 5010,
+    "nv": 37,
+    "best": {
+     "id": "ED4Z6gk8RXU",
+     "t": "A 60-Year-Old Carpenter\u2019s Brilliant Pallet Wood Idea Amazed Professors! | Homemade Woodworking Tool",
+     "v": 1130571,
+     "d": 13,
+     "len": "40:03"
+    },
+    "b14": {
+     "id": "ED4Z6gk8RXU",
+     "t": "A 60-Year-Old Carpenter\u2019s Brilliant Pallet Wood Idea Amazed Professors! | Homemade Woodworking Tool",
+     "v": 1130571,
+     "d": 13
+    }
+   },
+   {
+    "handle": "@CleverDIYPro-QH",
+    "joined": "Jul 7, 2026",
+    "age": 93,
+    "subs": 4530,
+    "nv": 49,
+    "best": {
+     "id": "6SjO5Whb5VM",
+     "t": "Just Put an Egg into a Condom Mold for an Amazing Discovery!  Millions of people don't know this! \ud83d\ude31",
+     "v": 1200000,
+     "d": 21,
+     "len": "6:32"
+    },
+    "b14": {
+     "id": "UPRWK6U2MKE",
+     "t": "Just Put Vaseline into a Condom Mold for an Amazing Discovery! Millions of people don't know this! \ud83d\ude31",
+     "v": 549000,
+     "d": 12
+    }
+   },
+   {
+    "handle": "@ConstructionTips-v1",
+    "joined": "Apr 19, 2026",
+    "age": 172,
+    "subs": 21200,
+    "nv": 105,
+    "best": {
+     "id": "xKRVY0pI7a0",
+     "t": "Very Few Know This Secret! 60-Year-Old Builder Turns Light Bulbs into a Billion-Dollar Masterpiece",
+     "v": 384000,
+     "d": 4,
+     "len": "14:44"
+    },
+    "b14": {
+     "id": "xKRVY0pI7a0",
+     "t": "Very Few Know This Secret! 60-Year-Old Builder Turns Light Bulbs into a Billion-Dollar Masterpiece",
+     "v": 384000,
+     "d": 4
+    }
+   },
+   {
+    "handle": "@BubbleNO1LoveDrama",
+    "joined": "May 18, 2026",
+    "age": 143,
+    "subs": 33000,
+    "nv": 139,
+    "best": {
+     "id": "IuGMWxYIsDw",
+     "t": "A Peach Blossom Spirit Stumbled into Heaven\u2014The Cold Emperor Fell for Her Scent and Spoiled Her!",
+     "v": 221000,
+     "d": 13,
+     "len": "2:12:24"
+    },
+    "b14": {
+     "id": "IuGMWxYIsDw",
+     "t": "A Peach Blossom Spirit Stumbled into Heaven\u2014The Cold Emperor Fell for Her Scent and Spoiled Her!",
+     "v": 221000,
+     "d": 13
+    }
+   },
+   {
+    "handle": "@WoodCreation-m1u",
+    "joined": "Jun 30, 2026",
+    "age": 100,
+    "subs": 1590,
+    "nv": 43,
+    "best": {
+     "id": "yZ2qoqmWN24",
+     "t": "5 Wood Corner Joinery Secrets from a 60-Year-Old Master Carpenter That Few People Know",
+     "v": 776000,
+     "d": 28,
+     "len": "4:28"
+    },
+    "b14": {
+     "id": "_C2p1VglEOw",
+     "t": "Wood Corner Joinery Technique So Strong It Amazed Millions \u2013 From a 60-Year-Old Carpenter",
+     "v": 43000,
+     "d": 10
+    }
+   },
+   {
+    "handle": "@WELDDTN",
+    "joined": "Apr 20, 2026",
+    "age": 171,
+    "subs": 2530,
+    "nv": 63,
+    "best": {
+     "id": "Kg7IRTaIip0",
+     "t": "A welder's crazy idea! Turning a broken bearing into a tool every household needs | Weld DTN",
+     "v": 2050211,
+     "d": 30,
+     "len": "5:48"
+    },
+    "b14": {
+     "id": "RnAh6FADKvM",
+     "t": "2 Crazy Ideas Using Engine Valves! This Simple Invention Could Change Everything | weld DTN",
+     "v": 34000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@DIYFurniture-m7x",
+    "joined": "May 5, 2026",
+    "age": 156,
+    "subs": 5680,
+    "nv": 108,
+    "best": {
+     "id": "TIJTDMhGGzE",
+     "t": "Don't Throw Away That Old Table \u2014 Here's How to Restore It",
+     "v": 644000,
+     "d": 30,
+     "len": "8:12"
+    },
+    "b14": {
+     "id": "Bd_W2Uddqso",
+     "t": "Genius Wood Repair Hack \u2013 The Secret Every Carpenter Is Hiding From You.",
+     "v": 12000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@DIYTOOLMASTER",
+    "joined": "Aug 11, 2026",
+    "age": 58,
+    "subs": 527,
+    "nv": 25,
+    "best": {
+     "id": "ZS_-OFYZ4wY",
+     "t": "A unique invention by a 65-year-old welder! Transforming an ordinary hoe into a multi-purpose tool.",
+     "v": 784000,
+     "d": 30,
+     "len": "8:55"
+    },
+    "b14": {
+     "id": "amopTx_Csak",
+     "t": "Billions of Welders Don\u2019t Know This Secret! Turn Old Bearings and Nuts Into a Million-Dollar Tool",
+     "v": 6800,
+     "d": 4
+    }
+   }
+  ]
+ },
+ {
   "cluster": "hollywood_then_now",
   "canales": 122,
   "nuevos": 36,
@@ -2744,6 +2916,73 @@
   ]
  },
  {
+  "cluster": "h_dollar_tree_invierno",
+  "canales": 80,
+  "nuevos": 24,
+  "ganadores": 3,
+  "tasa": 0.12,
+  "mediana": 3222,
+  "pct100k": 0.13,
+  "viejosHit": 10,
+  "top": [
+   {
+    "handle": "@HackTheMexicanWay",
+    "joined": "Aug 18, 2026",
+    "age": 51,
+    "subs": 107000,
+    "nv": 44,
+    "best": {
+     "id": "9sw0ZOR-LvA",
+     "t": "11 Pantry Staples Mexican Households Buy in Bulk, All Under $5 at Walmart",
+     "v": 679000,
+     "d": 21,
+     "len": "15:48"
+    },
+    "b14": {
+     "id": "jaFXsjsLkA4",
+     "t": "10 Dollar Tree Items Mexican Households Buy Before Winter (And 5 They Never Touch)",
+     "v": 338720,
+     "d": 10
+    }
+   },
+   {
+    "handle": "@FrugalJapan",
+    "joined": "Jun 13, 2026",
+    "age": 117,
+    "subs": 31200,
+    "nv": 55,
+    "best": {
+     "id": "nq4ExyQnddU",
+     "t": "15 Pantry Staples The Japanese Buy in BULK \u2014 All UNDER $5 at Walmart",
+     "v": 326000,
+     "d": 28,
+     "len": "27:07"
+    },
+    "b14": {
+     "id": "DhTwKZJeMMI",
+     "t": "13 Dollar Tree Items Japanese Households Buy Before Winter (And 5 They AVOID)",
+     "v": 18215,
+     "d": 8
+    }
+   },
+   {
+    "handle": "@SurvivalBlueprint-m6d",
+    "joined": "Aug 12, 2026",
+    "age": 57,
+    "subs": 9120,
+    "nv": 14,
+    "best": {
+     "id": "QQDzD6oSPic",
+     "t": "11 Dollar Tree Heating Items That'll Be WORTH GOLD in Winter Emergencies",
+     "v": 285291,
+     "d": 21,
+     "len": "31:40"
+    },
+    "b14": null
+   }
+  ]
+ },
+ {
   "cluster": "roma_vida_soldados",
   "canales": 70,
   "nuevos": 45,
@@ -4390,6 +4629,78 @@
   ]
  },
  {
+  "cluster": "h_truco_invierno",
+  "canales": 99,
+  "nuevos": 49,
+  "ganadores": 3,
+  "tasa": 0.06,
+  "mediana": 262,
+  "pct100k": 0.03,
+  "viejosHit": 2,
+  "top": [
+   {
+    "handle": "@JhonConstruction",
+    "joined": "Aug 6, 2026",
+    "age": 63,
+    "subs": 18300,
+    "nv": 49,
+    "best": {
+     "id": "fX4qYS3lQqY",
+     "t": "Why Don't Seniors Try This $10 Bucket of Salt That Heats a Room All Winter With No Power?",
+     "v": 547737,
+     "d": 14,
+     "len": "26:38"
+    },
+    "b14": {
+     "id": "fX4qYS3lQqY",
+     "t": "Why Don't Seniors Try This $10 Bucket of Salt That Heats a Room All Winter With No Power?",
+     "v": 547737,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@EarlKnowsHow00",
+    "joined": "Jun 12, 2026",
+    "age": 118,
+    "subs": 42000,
+    "nv": 134,
+    "best": {
+     "id": "AQZLwcBnX1I",
+     "t": "This Cheap Window Trick Keeps Heat Inside All Winter",
+     "v": 482090,
+     "d": 14,
+     "len": "21:30"
+    },
+    "b14": {
+     "id": "AQZLwcBnX1I",
+     "t": "This Cheap Window Trick Keeps Heat Inside All Winter",
+     "v": 482090,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@ForgottenHomeEngineering",
+    "joined": "Aug 3, 2026",
+    "age": 66,
+    "subs": 9360,
+    "nv": 34,
+    "best": {
+     "id": "ZHZrpI5VzI4",
+     "t": "25 Forgotten Heating Tricks That Kept Homes Warm With Almost No Fuel",
+     "v": 122000,
+     "d": 30,
+     "len": "28:43"
+    },
+    "b14": {
+     "id": "nqnDGYSHvME",
+     "t": "20 Old-House Draft-Proofing Tricks Modern Builders Quietly Abandoned",
+     "v": 1300,
+     "d": 12
+    }
+   }
+  ]
+ },
+ {
   "cluster": "amish_offgrid",
   "canales": 79,
   "nuevos": 38,
@@ -4588,6 +4899,90 @@
      "t": "11 Things Japanese Households Buy at Costco (And 5 They AVOID)",
      "v": 90323,
      "d": 9
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "h_sin_x",
+  "canales": 68,
+  "nuevos": 39,
+  "ganadores": 2,
+  "tasa": 0.05,
+  "mediana": 354,
+  "pct100k": 0.03,
+  "viejosHit": 1,
+  "top": [
+   {
+    "handle": "@zeno-us",
+    "joined": "Aug 17, 2026",
+    "age": 52,
+    "subs": 1410,
+    "nv": 13,
+    "best": {
+     "id": "0tSwA12rEtk",
+     "t": "How Did ANCIENT INUIT Igloos Stay Warm at -50\u00b0C With NO Electricity?",
+     "v": 2251176,
+     "d": 21,
+     "len": "6:14"
+    },
+    "b14": {
+     "id": "CCXtuD7vLNg",
+     "t": "How Did ANCIENT CHINESE HOUSES Stay Warm at -40\u00b0C With NO Electricity?",
+     "v": 2700,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@TheSenseisGarden",
+    "joined": "Jun 15, 2026",
+    "age": 115,
+    "subs": 6410,
+    "nv": 48,
+    "best": {
+     "id": "aRNRf56rNtI",
+     "t": "No Electrician Needed: The Japanese Plug-In Solar Setup",
+     "v": 237000,
+     "d": 30,
+     "len": "21:10"
+    },
+    "b14": {
+     "id": "l8h-j4qcgvE",
+     "t": "No Electrician, No Battery: The Japanese Balcony Solar Setup That Runs Your Fridge",
+     "v": 2200,
+     "d": 3
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "h_no_quieren_saber",
+  "canales": 44,
+  "nuevos": 21,
+  "ganadores": 1,
+  "tasa": 0.05,
+  "mediana": 175,
+  "pct100k": 0.03,
+  "viejosHit": 2,
+  "top": [
+   {
+    "handle": "@TheAffordableFix",
+    "joined": "Sep 1, 2026",
+    "age": 37,
+    "subs": 7550,
+    "nv": 16,
+    "best": {
+     "id": "btWfRDDE9X4",
+     "t": "11 Things Landscapers Don't Want You to Know About Baking Soda (#5 Saves $400)",
+     "v": 1900000,
+     "d": 21,
+     "len": "12:03"
+    },
+    "b14": {
+     "id": "jLxxjCAa-FQ",
+     "t": "9 Things Jewelers Don't Want You to Know About Baking Soda",
+     "v": 89000,
+     "d": 14
     }
    }
   ]
@@ -4822,6 +5217,39 @@
   "ganadores": 0,
   "tasa": 0.0,
   "mediana": 86,
+  "pct100k": 0.0,
+  "viejosHit": 0,
+  "top": []
+ },
+ {
+  "cluster": "h_formas_baratas",
+  "canales": 14,
+  "nuevos": 4,
+  "ganadores": 0,
+  "tasa": 0.0,
+  "mediana": 421,
+  "pct100k": 0.0,
+  "viejosHit": 0,
+  "top": []
+ },
+ {
+  "cluster": "h_casa_vieja",
+  "canales": 46,
+  "nuevos": 17,
+  "ganadores": 0,
+  "tasa": 0.0,
+  "mediana": 978,
+  "pct100k": 0.05,
+  "viejosHit": 3,
+  "top": []
+ },
+ {
+  "cluster": "h_tuberias_congeladas",
+  "canales": 26,
+  "nuevos": 13,
+  "ganadores": 0,
+  "tasa": 0.0,
+  "mediana": 285,
   "pct100k": 0.0,
   "viejosHit": 0,
   "top": []

@@ -1089,6 +1089,90 @@
     "grandpa garden trick tomatoes"
    ],
    "rx": "bug|roach|ant|mice|spider|pest|garden|weed|tomato|fly"
+  },
+  "h_sin_x": {
+   "desc": "casa: h_sin_x",
+   "q": [
+    "how we heat our house without a furnace",
+    "how we cool our house without ac",
+    "heat your house without electricity",
+    "stay warm all winter without heat",
+    "keep house warm without power"
+   ],
+   "rx": "without (a )?(furnace|ac|a\\.c|air condition|electric|power|heat)|no (furnace|ac|electric)"
+  },
+  "h_truco_invierno": {
+   "desc": "casa: h_truco_invierno",
+   "q": [
+    "cheap window trick keeps heat inside",
+    "trick keeps heat inside all winter",
+    "drafty windows cheap trick",
+    "lower heating bill old trick",
+    "keep your house warm cheap trick"
+   ],
+   "rx": "heat|warm|winter|draft|cold|heating bill|insulat"
+  },
+  "h_dollar_tree_invierno": {
+   "desc": "casa: h_dollar_tree_invierno",
+   "q": [
+    "dollar tree heating items winter blackout",
+    "dollar tree items for winter",
+    "harbor freight items every homeowner",
+    "home depot items worth gold"
+   ],
+   "rx": "dollar tree|walmart|harbor freight|tractor supply|home depot|lowe"
+  },
+  "h_formas_baratas": {
+   "desc": "casa: h_formas_baratas",
+   "q": [
+    "fastest cheapest ways to remove tree stump",
+    "cheapest way to unclog drain",
+    "cheapest ways to fix foundation crack",
+    "easiest way to fix leaking"
+   ],
+   "rx": "cheapest|fastest|easiest|ways to"
+  },
+  "h_no_quieren_saber": {
+   "desc": "casa: h_no_quieren_saber",
+   "q": [
+    "things plumbers don't want you to know",
+    "things hvac techs don't want you to know",
+    "things roofers don't want you to know",
+    "things electricians don't want you to know",
+    "contractors won't tell you"
+   ],
+   "rx": "don.?t want you to know|hate this|won.?t tell you|never tell"
+  },
+  "h_idea_viejo_oficio": {
+   "desc": "casa: h_idea_viejo_oficio",
+   "q": [
+    "welder's crazy idea household tool",
+    "old carpenter brilliant idea",
+    "60 year old craftsman genius idea",
+    "old man invention every household needs"
+   ],
+   "rx": "old|year.old|welder|carpenter|craftsman|grandpa|genius|idea|invention"
+  },
+  "h_casa_vieja": {
+   "desc": "casa: h_casa_vieja",
+   "q": [
+    "old house problems",
+    "signs your old house is",
+    "buying an old house mistakes",
+    "old house secrets builders",
+    "things in old houses"
+   ],
+   "rx": "old house|older home|old home|house built|century home|farmhouse|before 19"
+  },
+  "h_tuberias_congeladas": {
+   "desc": "casa: h_tuberias_congeladas",
+   "q": [
+    "prevent frozen pipes trick",
+    "frozen pipes old trick",
+    "water heater trick save money",
+    "well pump winter trick"
+   ],
+   "rx": "pipe|freez|frozen|water heater|well"
   }
  }
 }
