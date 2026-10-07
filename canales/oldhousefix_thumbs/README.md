@@ -1,4 +1,4 @@
-# Miniaturas + tarjetas Old House Fix — tanda invierno (7-oct-2026) · PENDIENTE: OpenAI desactivada
+# Miniaturas + tarjetas Old House Fix — tanda invierno (7-oct-2026) · ✅ ENTREGADO: 10 tarjetas en tracked_channels 147 (prepend, 20→30)
 
 Moldes = JOYAS (≥2 años, siguen trayendo tráfico, nadie las re-empaquetó), sacadas con
 `node analizador/gemas.mjs ...` → `gemas_invierno.json`. Los outliers de Jhon/Earl/Ramón NO se clonan:
@@ -19,7 +19,7 @@ cada uno ya tiene 5–8 copias de granjas con views en caída (molde quemado). D
 
 Estilo (Jhon/Earl/Ramón): foto hiperreal, presentador en un tercio lateral mirando a cámara serio, objeto
 héroe grande al centro, 2–4 palabras arriba-izq blanco+amarillo con contorno negro, flecha curva al objeto.
-Cara = foto REAL "hombre 70´" de la librería de avatares de Bagasy (afeitado, pelo gris hacia atrás) — NO la
+Presentador = Claudio: afeitado, pelo plateado hacia atrás, camisa cruda arremangada + tiradores negros de cuero (memoria project_video_ohfflies). Cara = foto REAL "hombre 70´" de la librería de avatares de Bagasy (afeitado, pelo gris hacia atrás) — NO la
 foto de perfil barbuda (esa es la cara vieja Amish) ni la entrada "the-old-house-fix" de la librería (sombrero de paja).
 
 ## Para generar cuando haya clave de OpenAI
@@ -29,3 +29,8 @@ foto de perfil barbuda (esa es la cara vieja Amish) ni la entrada "the-old-house
    carpeta donde existan molds/ y ref/), `poll`, `fetch`. QC visual de cada una (cara, manos, texto).
 3. Subir a `thumbnails/<user_id>/plan-oldhousefix-<ts>-<i>.png` (path CON el canal), HEAD 200, y PREPEND de 10 tarjetas
    en `tracked_channels` id 147 (backup del plan antes; `done:false`).
+
+## Entregado 7-oct-2026
+- Prompts finales: `list2.json` (refs: molde achicado a 768x432 + cara 128x192), gpt-image-2 /edits **low 1792x1008 por Batch**
+  (batch_6ac667aec…, 10/10; reintento de la 03 por una placa de texto repetida, 1/1). Hoja de contacto: `tanda_invierno_contactsheet.jpg`.
+- Bucket: `thumbnails/<user>/plan-oldhousefix-1791387991754-<i>.png` (HEAD 200). Backup del plan previo en el scratchpad de la sesión.
