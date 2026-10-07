@@ -1,0 +1,14 @@
+[
+ {
+  "name": "b_twoparts",
+  "prompt": "Top view of a workbench: on the left a silicone cartridge and a caulking gun with a white bead of silicone, on the right a small bag of gray cement with a mound of powder, a clear plastic cup and a putty knife between them."
+ },
+ {
+  "name": "b_vsection",
+  "prompt": "Close side view of a cut chunk of plastered brick wall showing a crack opened into a V-shaped groove at the surface, filled with gray putty gripping both sides, a ruler beside it."
+ },
+ {
+  "name": "b_wallmove",
+  "prompt": "A cream-colored plastered house wall with a single thin crack in the middle, sunny side on the left and shaded cool side on the right."
+ }
+]
