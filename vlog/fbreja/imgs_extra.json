@@ -1,0 +1,14 @@
+[
+ {
+  "name": "b_order",
+  "prompt": "Top view of a patio workbench: on the left a spray can of penetrating oil with a plain blank label and a wire brush, on the right a bottle of alcohol with a rag, a small tin of gray primer and a tin of black enamel, an arrow-like gap between the two groups."
+ },
+ {
+  "name": "b_layers",
+  "prompt": "Close side view of a cut square iron bar showing a thin matte gray primer layer gripping the bare metal and a glossy black enamel layer on top, a ruler beside it."
+ },
+ {
+  "name": "b_section",
+  "prompt": "Close side view of the cut end of a painted square iron bar showing three thin stacked layers: gray primer on the metal, then two thin glossy black enamel coats, on a workbench."
+ }
+]
