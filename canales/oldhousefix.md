@@ -68,13 +68,13 @@ Mejores propios: "Build This Amish Water Pump That Runs Forever on No Power ($40
 - La de siempre del avatar (Fish clonada de él). Inglés americano, directo, sin vender miedo. Trato: "you".
 
 ## 4. LOOK
-- **Hank = el hombre de la foto de perfil del canal** (yt3.googleusercontent.com/fVTK7QUEJ3_…): barba gris larga,
-  pelo gris largo, ojos celestes, camisa escocesa de franela gastada, sótano/taller de bloques con caños.
-  Problema detectado 2026-10-07: las miniaturas mostraban hombres distintos (Amish con sombrero de paja y
-  tiradores; otro afeitado en la de termitas). Desde ahora, la MISMA cara en avatar y en TODAS las miniaturas;
-  nada de sombrero de paja ni tiradores (eso es el marco Amish).
-- El avatar de siempre. Se mantienen nombre y handle "The Old House Fix"; la descripción actual sirve, sumando
-  la presentación de Hank. Los videos Amish quedan públicos (los de la bomba traen vistas); solo deja de usarse ese marco.
+- **Cara correcta (corregido 2026-10-07):** hombre de ~70, AFEITADO, pelo gris peinado hacia atrás, franela a
+  cuadros, sin sombrero (memoria `project_the_old_house_fix_embudo`; es el de la miniatura de termitas).
+  Foto real de referencia: persona **"hombre 70´"** de la librería de avatares de Bagasy.
+  ⛔ NO usar la foto de perfil barbuda ni la entrada "the-old-house-fix" de la librería (sombrero de paja): son la
+  cara vieja de "Claudio Yoder Amish". Hay que actualizar esa entrada de la librería y la foto de perfil del canal.
+- Misma cara en avatar y en TODAS las miniaturas. Nada de sombrero de paja ni tiradores.
+- Se mantienen nombre y handle "The Old House Fix". Los videos Amish quedan públicos (los de la bomba traen vistas).
 
 ## 5. REGLAS DE PRODUCCIÓN
 - Por `factory/run.mjs` con spec.json (prohibido build_<slug>.mjs).
@@ -86,6 +86,7 @@ Mejores propios: "Build This Amish Water Pump That Runs Forever on No Power ($40
 ## 6. APRENDIZAJES (append-only)
 - 2026-10-07: el creador pidió reconfigurar este canal (no abrir uno nuevo) con un subnicho distinto al Amish.
 - 2026-10-07: el creador pidió MANTENER la identidad del avatar y abrir subnichos con el mismo avatar (modelo Bertha).
+- 2026-10-07: tanda de invierno armada desde JOYAS (no outliers quemados): ver `canales/oldhousefix_thumbs/README.md`. Miniaturas pendientes: OpenAI desactivada.
 - 2026-10-07: corrección del creador: NO meter cocina ni otros rubros en este canal; quedarse en el nicho y copiar lo más
   parecido que funcione hoy. La cocina va a "Claudio Cocina" (español, avatar de Claudio Mendoza / Constructor Libre),
   clonando virales en inglés del formato "NEVER ___ Again — Try This Old ___ Trick" — pendiente, más adelante.
