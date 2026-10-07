@@ -1,0 +1,5288 @@
+[
+ {
+  "at": "0",
+  "id": "apertura",
+  "kind": "open",
+  "w": 1.0,
+  "mode": "dissolve",
+  "clip": "c_ext_nubes",
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "1.0",
+  "id": "c_ext_nubes",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Wide view of a Boeing 737 MAX 8 airliner with split-tip winglets, scalloped engine nacelles and a row of small windows in level flight high above a sea of soft fluffy cotton wool clouds, seen from slightly above and behind its left wing. Warm low golden morning sunlight streams in from the left, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion model built from real materials: an airliner carved from maple wood and painted glossy white, clouds made of real fluffy cotton wool, fine visible wood grain, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere. Only the airliner model and the cotton wool clouds and sky fill the frame, nothing else: no seats, no furniture, no table, no interior, no window frame.",
+  "motion": "the clouds drift slowly backward under the airliner, the camera slowly pushes in",
+  "tag": "RECONSTRUCCIÓN",
+  "lugar": [
+   "Norte de Arabia Saudita",
+   "30 sep 2026 · 08:21 hora saudí"
+  ],
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "1.0@vuelo mil setenta",
+  "id": "g_mapa_open",
+  "kind": "mapamad",
+  "w": 1.0,
+  "cam": [
+   [
+    0,
+    46.0,
+    28.6,
+    25.0
+   ],
+   [
+    3.5,
+    44.0,
+    28.8,
+    22.0
+   ]
+  ],
+  "draw": [
+   "03:05",
+   "05:21"
+  ],
+  "dashed": true,
+  "t_end": 3.2,
+  "cities": [
+   "DUBÁI",
+   "TEL AVIV",
+   "TABUK"
+  ],
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "1.1",
+  "id": "g_174_open",
+  "kind": "numero",
+  "w": 1.0,
+  "n": "174",
+  "count": true,
+  "sub": "pasajeros · según autoridades saudíes",
+  "sello": [
+   "EN DISPUTA",
+   "saudíes 174 · fiscalía EAU 172"
+  ],
+  "wk": [
+   [
+    "ciento setenta y cuatro",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "1.1@la mayoría",
+  "id": "c_cabina_calma",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows, looking forward down the aisle toward the closed cockpit door at the far end, puppet passengers seated calmly, some leaning on the window. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the passengers sit still, one puppet slowly turns its head toward the window, the camera slowly drifts to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_cabin"
+ },
+ {
+  "at": "1.2@un vuelo tranquilo",
+  "id": "c_duermen",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Close view of two puppet passengers asleep in their seats in the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows, heads tilted against each other, a small blanket over their knees, a closed window shade. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the sleeping puppets breathe very slightly, nothing else moves, the camera slowly cranes up a little",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": null
+ },
+ {
+  "at": "1.2@una madre espera",
+  "id": "c_madre_bano",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. In the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left, a single puppet woman wearing a bright orange knitted sweater stands waiting beside the closed lavatory door, her hand resting on the wall. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the orange puppet shifts her weight from one foot to the other, the camera slowly pulls back",
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Tali Manes",
+   "pasajera · espera junto al baño"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_galley"
+ },
+ {
+  "at": "1.3@la línea del avión",
+  "id": "g_perfil_open",
+  "kind": "perfilmad",
+  "w": 1.0,
+  "win": [
+   "05:16:00",
+   "05:24:00"
+  ],
+  "draw": [
+   "05:14:00",
+   "05:24:30"
+  ],
+  "t_in": 0.3,
+  "hl": [
+   "05:21:00",
+   "05:21:34",
+   "−17.400 FT EN ~30 S"
+  ],
+  "wk": [
+   [
+    "cuatro mil metros",
+    0
+   ],
+   [
+    "empieza a temblar",
+    "__sello"
+   ]
+  ],
+  "sello": [
+   "CONFIRMADO",
+   "Flightradar24 · ADS-B"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "keys": [
+   [
+    0,
+    "05:17:00"
+   ],
+   [
+    2.2,
+    "05:21:00"
+   ],
+   [
+    3.8,
+    "05:21:14"
+   ],
+   [
+    6.5,
+    "05:21:20"
+   ],
+   [
+    8.0,
+    "05:21:34"
+   ],
+   [
+    10.6,
+    "05:22:05"
+   ]
+  ]
+ },
+ {
+  "at": "1.4",
+  "id": "c_caen_piso",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows seen from the aisle, the floor tilted steeply nose-down: two standing puppets have fallen to the aisle floor, several overhead bins hang open. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the open overhead bin doors swing slowly, a small bag slides down the aisle, the camera slowly drifts to the left",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_cabin"
+ },
+ {
+  "at": "1.5",
+  "id": "o_puerta_frente",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. The closed reinforced cockpit door of an airliner seen straight on from the passenger side at standing eye level, a small keypad beside it, soft light, the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": "K_galley",
+  "src": "kf__o_puerta_frente",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "1.6",
+  "id": "c_cmd_piso",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, the captain's seat is empty and a puppet lies on the cockpit floor between the seat and the door, the captain puppet (in a deep teal blue pilot uniform). People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": "K_ckpt",
+  "src": "kf__c_cmd_piso",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "1.7",
+  "id": "r_cmd_cama",
+  "kind": "clip",
+  "w": 1.0,
+  "clipsrc": "r_pmo_a",
+  "real": true,
+  "ss": 0,
+  "rotulo": [
+   "Smit Machchhar",
+   "comandante · video oficial PMO India (CC BY 4.0)"
+  ],
+  "fuente": "Video: Prime Minister's Office, India · Wikimedia Commons · CC BY 4.0",
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "1.7@un último empujón",
+  "id": "g_cita_push",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "Tenía una última pelea adentro… y fui por la puerta.",
+  "who": "Comandante Smit Machchhar",
+  "src": "relato en llamada con Netanyahu · vía Ynet",
+  "et": "AFIRMADO",
+  "big": true,
+  "v8": true,
+  "act": "dawn",
+  "bg": "kf__c_cmd_piso"
+ },
+ {
+  "at": "1.8",
+  "id": "o_puerta_blind",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. A close detail of a heavy reinforced airliner cockpit door: thick edges, a recessed handle, deadbolt housings at the frame, the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "src": "kf__o_puerta_blind",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "1.8@el peligro ya estaba adentro",
+  "id": "c_ckpt_dos",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, seen from just behind and between the two seats: two puppet pilots seated side by side, the captain puppet (in a deep teal blue pilot uniform), and the first officer puppet (dressed all in dark charcoal grey). People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the puppets move very slightly, the camera slowly pushes in",
+  "maxs": 2.0
+ },
+ {
+  "at": "1.9",
+  "id": "o_ped_llave",
+  "kind": "depth2",
+  "w": 1.0,
+  "serie": "pedestales",
+  "lugar": [
+   "Un plomero",
+   "aprendió qué hacer mirando televisión"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. A small painted wood pedestal on a pale studio table holding a single plumber's wrench lying flat, nothing else around. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_ped_llave",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "1.9@un dentista",
+  "id": "o_ped_espejo",
+  "kind": "depth2",
+  "w": 1.0,
+  "serie": "pedestales",
+  "lugar": [
+   "Un dentista",
+   "el único médico a bordo"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. A small painted wood pedestal on a pale studio table holding a single dentist's mouth mirror lying flat, nothing else around. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_ped_espejo",
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "1.9@de dos pilotos",
+  "id": "o_ped_gorras",
+  "kind": "depth2",
+  "w": 1.0,
+  "serie": "pedestales",
+  "lugar": [
+   "Dos pilotos de reserva",
+   "viajaban como pasajeros, por si acaso"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. A small painted wood pedestal on a pale studio table holding two pilot caps placed side by side, nothing else around. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_ped_gorras",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "1.9@y de dos columnas",
+  "id": "c_yokes_vacios",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, both pilot seats are completely empty, the two control columns with their yokes stand alone in front of the empty seats. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "both yokes move slowly forward by themselves at the same time, the camera slowly orbits a little to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_ckpt"
+ },
+ {
+  "at": "1.10",
+  "id": "g_cabina_pregunta",
+  "kind": "cabina",
+  "w": 1.0,
+  "figs": [
+   "cmd",
+   "fo"
+  ],
+  "steps": [
+   {
+    "t": 1.6,
+    "hit": "fo"
+   }
+  ],
+  "hl": "yokes",
+  "cam": [
+   [
+    0,
+    1.2,
+    0.33,
+    0.5
+   ],
+   [
+    6,
+    1.45,
+    0.25,
+    0.5
+   ]
+  ],
+  "title": "¿Qué pasó en esa cabina?",
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "1.11",
+  "id": "g_fuentes",
+  "kind": "lista",
+  "w": 1.0,
+  "title": "Con qué está hecha esta reconstrucción",
+  "items": [
+   [
+    "Comunicados oficiales",
+    "Fiscalía de EAU · GCAA · flydubai · Arabia Saudita · Israel",
+    null,
+    0
+   ],
+   [
+    "Datos de seguimiento",
+    "Flightradar24 · ADS-B público · AP",
+    null,
+    1
+   ],
+   [
+    "Relatos de primera mano",
+    "el comandante y los pasajeros, en sus palabras publicadas",
+    null,
+    2
+   ]
+  ],
+  "wk": [
+   [
+    "comunicados oficiales",
+    0
+   ],
+   [
+    "datos públicos",
+    1
+   ],
+   [
+    "las palabras",
+    2
+   ]
+  ],
+  "src": "Las escenas 3D son reconstrucciones: posiciones y algunos detalles son ilustrativos",
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "1.11@cada dato lleva",
+  "id": "g_sellos",
+  "kind": "registro",
+  "w": 1.0,
+  "title": "CADA DATO, CON SU ETIQUETA",
+  "items": [
+   [
+    "Lo dice la autoridad o lo muestran los datos",
+    "Confirmado",
+    "CONFIRMADO",
+    0
+   ],
+   [
+    "Lo publicó un medio, a veces con fuentes sin nombre",
+    "Reportado",
+    "REPORTADO",
+    1
+   ],
+   [
+    "Lo dice una persona sobre lo que vivió",
+    "Afirmado",
+    "AFIRMADO",
+    2
+   ],
+   [
+    "Las fuentes no coinciden",
+    "En disputa",
+    "EN DISPUTA",
+    3
+   ]
+  ],
+  "wk": [
+   [
+    "confirmado",
+    0
+   ],
+   [
+    "reportado",
+    1
+   ],
+   [
+    "afirmado",
+    2
+   ],
+   [
+    "en disputa",
+    3
+   ]
+  ],
+  "rows": [
+   [
+    "—",
+    "AUTORIDAD O DATOS",
+    "Lo dice la autoridad o lo muestran los datos",
+    "CONFIRMADO",
+    0
+   ],
+   [
+    "—",
+    "UN MEDIO",
+    "Lo publicó un medio, a veces con fuentes sin nombre",
+    "REPORTADO",
+    1
+   ],
+   [
+    "—",
+    "UNA PERSONA",
+    "Lo dice alguien sobre lo que vivió",
+    "AFIRMADO",
+    2
+   ],
+   [
+    "—",
+    "VARIAS FUENTES",
+    "Las fuentes no coinciden",
+    "EN DISPUTA",
+    3
+   ]
+  ],
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "1.12",
+  "id": "o_caja_naranja",
+  "kind": "depth2",
+  "w": 1.0,
+  "lugar": [
+   "Caja Naranja",
+   "las cajas negras son naranjas: para encontrarlas"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. A vivid saturated orange (#FF5F1F) aircraft flight recorder box, painted bright orange and clearly orange, the only colored object in a painted wood world, with white reflective stripes resting on a pale studio table, the only colored object, a small underwater locator beacon cylinder on its front. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_caja_naranja",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "2",
+  "id": "cap1",
+  "kind": "capitulo7",
+  "w": 1.0,
+  "num": 1,
+  "title": "El vuelo de la mañana",
+  "sub": "Dubái · 07:05 hora local · 03:05 UTC",
+  "v8": true,
+  "act": "dawn",
+  "bg": "kf__c_ext_lado"
+ },
+ {
+  "at": "3.0",
+  "id": "a_dxb",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_dxb",
+  "archivo": true,
+  "rotulo": [
+   "Aeropuerto Internacional de Dubái",
+   "foto: Pulkit Sangal · CC BY 3.0"
+  ],
+  "lugar": [
+   "Dubái",
+   "miércoles 30 sep 2026 · 07:05 hora local"
+  ],
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "3.0@despega el vuelo",
+  "id": "g_mapa_despega",
+  "kind": "mapamad",
+  "w": 1.0,
+  "cam": [
+   [
+    0,
+    54.0,
+    25.6,
+    9.0
+   ],
+   [
+    5,
+    50.5,
+    26.4,
+    14.0
+   ]
+  ],
+  "draw": [
+   "03:05",
+   "03:40"
+  ],
+  "t_end": 4.5,
+  "cities": [
+   "DUBÁI",
+   "ABU DABI"
+  ],
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "3.1",
+  "id": "a_fkf",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_fkf",
+  "archivo": true,
+  "rotulo": [
+   "A6-FKF",
+   "el avión del vuelo 1073 · foto: UB-TY144 · CC BY-SA 4.0"
+  ],
+  "sello": [
+   "CONFIRMADO",
+   "Flightradar24 · matrícula A6-FKF"
+  ],
+  "wk": [
+   [
+    "matrícula",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "3.1@entró en servicio",
+  "id": "c_ext_lado",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Side view of a Boeing 737 MAX 8 airliner with split-tip winglets, scalloped engine nacelles and a row of small windows flying high in the sky above a sea of soft cotton wool clouds, far above them, the ground not visible, the whole aircraft visible from nose to tail. Warm low golden morning sunlight streams in from the left, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion model built from real materials: an airliner carved from maple wood and painted glossy white, clouds made of real fluffy cotton wool, fine visible wood grain, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere. Only the airliner model and the cotton wool clouds and sky fill the frame, nothing else: no seats, no furniture, no table, no interior, no window frame.",
+  "motion": "the airliner moves slowly forward across the clouds, the camera slowly drifts to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "3.2@las autoridades saudíes",
+  "id": "g_num_disputa",
+  "kind": "numero",
+  "w": 1.0,
+  "n": "174",
+  "sub": "pasajeros · autoridades saudíes",
+  "alt": [
+   "172",
+   "pasajeros y tripulación · fiscalía de EAU",
+   0
+  ],
+  "wk": [
+   [
+    "ciento setenta y dos",
+    0
+   ]
+  ],
+  "src": "Fuentes: Anadolu (autoridades saudíes) · The National (fiscalía de EAU, 3 oct)",
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "3.3",
+  "id": "c_reserva",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows, two puppets wearing a pale sky blue pilot shirt sit side by side among puppet passengers in plain beige clothes in a middle row, both looking forward. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the two pale blue puppets sit still, one turns its head slightly, the camera slowly cranes up a little",
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Dos pilotos de flydubai",
+   "viajan como pasajeros · flydubai no los nombró"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_cabin",
+  "maxs": 2.4
+ },
+ {
+  "at": "3.3@para hacerse cargo",
+  "id": "o_gorras_asiento",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. Two pilot caps resting on an empty airliner seat in the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows, seen close. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_gorras_asiento",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "3.5",
+  "id": "g_cab_layout",
+  "kind": "cabina",
+  "w": 1.0,
+  "figs": [
+   "cmd",
+   "fo"
+  ],
+  "hl": "yokes",
+  "cam": [
+   [
+    0,
+    1.0,
+    0.45,
+    0.5
+   ],
+   [
+    6,
+    1.4,
+    0.24,
+    0.5
+   ]
+  ],
+  "labels": true,
+  "title": "Cabina de mando · Boeing 737",
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "3.5@si mueves una",
+  "id": "c_yokes_juntos",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Close view inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds of the two control columns with yokes, side by side, both seats completely empty. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "both yokes tilt back slowly together at exactly the same time, the camera slowly drifts to the left",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": null
+ },
+ {
+  "at": "3.6",
+  "id": "o_puerta_atras",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. Seen from inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds looking backward past the empty seats: the closed reinforced cockpit door at the back of the small cockpit. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the puppets move very slightly, the camera slowly pushes in",
+  "maxs": 2.0
+ },
+ {
+  "at": "3.7",
+  "id": "o_cerrojo",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "sello": [
+   "CONFIRMADO",
+   "OACI · Anexo 6 / Anexo 17"
+  ],
+  "wk": [
+   [
+    "blindada",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. A close detail of the edge of a reinforced airliner cockpit door: a thick steel deadbolt and an electric strike in the door frame. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_cerrojo",
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "3.8",
+  "id": "o_cajafuerte",
+  "kind": "depth2",
+  "w": 1.0,
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. A heavy carved wood bank vault door standing alone on a pale studio table with a single handle on only one side, the other side completely smooth. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_cajafuerte",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "3.8@hay un código",
+  "id": "o_teclado",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures, no humans anywhere in the image. A close detail of a small numeric keypad with blank keys mounted on the wall right beside the edge of a closed reinforced airliner cockpit door, in the forward galley of a Boeing 737. Warm low golden morning sunlight streams in from the left, long soft shadows. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the puppets move very slightly, the camera slowly pushes in"
+ },
+ {
+  "at": "3.9",
+  "id": "c_manija",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Close view from inside the cockpit of a puppet hand turning the handle of the reinforced cockpit door and pushing it, the door swinging outward toward the galley. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the hand turns the handle and the door swings slowly outward, the camera slowly pulls back",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": null,
+  "maxs": 2.4
+ },
+ {
+  "at": "3.10",
+  "id": "o_hacha",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. Close detail of the back wall of an airliner cockpit behind the captain's seat: a small emergency crash axe with a short handle held in two clips on the wall panel, next to a folded jump seat. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_hacha",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "3.10@sirve para abrir",
+  "id": "g_cab_hacha",
+  "kind": "cabina",
+  "w": 1.0,
+  "figs": [
+   "cmd",
+   "fo"
+  ],
+  "hl": "axe",
+  "cam": [
+   [
+    0,
+    1.4,
+    0.25,
+    0.42
+   ],
+   [
+    5,
+    1.7,
+    0.22,
+    0.3
+   ]
+  ],
+  "title": "Pared de atrás de la cabina de mando",
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "3.11",
+  "id": "o_hacha_luz",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. The same small emergency crash axe in its two wall clips in an airliner cockpit, seen very close, a thin line of light across the blade. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_hacha_luz",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "3.12",
+  "id": "c_cmd_izq",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, seen from the side: the puppet pilot sitting in the LEFT seat (on the left side of the image, the right seat is empty), the captain puppet (in a deep teal blue pilot uniform), hands resting on his knees, looking forward through the windshield. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the blue puppet slowly turns its head toward the windshield, the camera slowly pushes in",
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Smit Machchhar",
+   "comandante · India · 17 años de piloto"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_ckpt"
+ },
+ {
+  "at": "3.12@se formó en nueva",
+  "id": "g_cmd_ficha",
+  "kind": "lista",
+  "w": 1.0,
+  "title": "El comandante",
+  "items": [
+   [
+    "Formación",
+    "Nueva Zelanda (Mainland Air, Dunedin)",
+    "REPORTADO",
+    0
+   ],
+   [
+    "Antes",
+    "11 años en otra aerolínea",
+    "REPORTADO",
+    1
+   ],
+   [
+    "flydubai",
+    "desde 2022",
+    "REPORTADO",
+    2
+   ]
+  ],
+  "wk": [
+   [
+    "nueva zelanda",
+    0
+   ],
+   [
+    "once años",
+    1
+   ],
+   [
+    "dos mil veintidós",
+    2
+   ]
+  ],
+  "src": "Fuentes: Wikipedia (WSJ, Hindustan Times) · el comandante en sus palabras",
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "3.13",
+  "id": "c_fo_der",
+  "kind": "depth2",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, seen from the side: the puppet pilot sitting in the RIGHT seat (on the right side of the image, the left seat is empty), the first officer puppet (dressed all in dark charcoal grey), hands on his knees, looking forward. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Primer oficial",
+   "omaní · 29 años · nombre no publicado"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_ckpt",
+  "src": "kf__c_fo_der",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "3.13@no publicó su nombre",
+  "id": "g_cita_nombre",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "La fiscalía que investiga no publicó su nombre. Nosotros tampoco lo vamos a decir.",
+  "who": "Caja Naranja",
+  "src": "presunción de inocencia",
+  "et": null,
+  "big": true,
+  "v8": true,
+  "act": "dawn",
+  "bg": "kf__c_fo_der"
+ },
+ {
+  "at": "3.14",
+  "id": "c_pasajeros_nom",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows, seen from the front row looking back: several puppet passengers wearing a bright orange knitted sweater scattered among puppets in plain beige clothes in different rows. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the passengers sit still, one orange puppet adjusts in its seat, the camera slowly cranes up a little",
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Yaniv Hayun · Shota Musayev · Tzvika y Tali Manes",
+   "pasajeros · nombres publicados por ellos mismos"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_cabin",
+  "maxs": 2.6
+ },
+ {
+  "at": "3.14@tzvika va sentado",
+  "id": "c_primera_fila",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the first row of the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows right behind the galley: a puppet wearing a bright orange knitted sweater sitting in the aisle seat of the very first row facing the galley and the closed cockpit door. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the orange puppet looks up toward the cockpit door, the camera slowly pulls back",
+  "tag": "RECONSTRUCCIÓN",
+  "sync_ok": true,
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_galley"
+ },
+ {
+  "at": "3.15",
+  "id": "g_mapa_crucero",
+  "kind": "mapamad",
+  "w": 1.0,
+  "cam": [
+   [
+    0,
+    46.0,
+    28.0,
+    18.0
+   ],
+   [
+    7,
+    40.5,
+    29.4,
+    11.0
+   ]
+  ],
+  "draw": [
+   "04:20",
+   "05:15"
+  ],
+  "t_end": 6.5,
+  "cities": [
+   "TABUK",
+   "RIAD",
+   "AMÁN"
+  ],
+  "countries": [
+   "ARABIA SAUDITA",
+   "JORDANIA",
+   "IRAK",
+   "ISRAEL",
+   "EGIPTO"
+  ],
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "4",
+  "id": "cap2",
+  "kind": "capitulo7",
+  "w": 1.0,
+  "num": 2,
+  "title": "Detrás de la puerta",
+  "sub": "05:21 UTC · 34.000 ft",
+  "v8": true,
+  "act": "alert",
+  "bg": "kf__c_fo_atras"
+ },
+ {
+  "at": "5.0",
+  "id": "g_sin_grab",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "No se publicó ninguna grabación de la cabina.",
+  "who": "Lo que sigue: hallazgos de la fiscalía, datos de seguimiento y el relato del comandante",
+  "src": "",
+  "et": null,
+  "big": true,
+  "v8": true,
+  "act": "alert",
+  "bg": "kf__c_primera_fila"
+ },
+ {
+  "at": "5.0@los hallazgos",
+  "id": "g_fuentes2",
+  "kind": "registro",
+  "w": 1.0,
+  "title": "LA RECONSTRUCCIÓN SE ARMA CON",
+  "rows": [
+   [
+    "03 OCT",
+    "FISCALÍA EAU",
+    "Hallazgos oficiales de la investigación",
+    "CONFIRMADO",
+    0
+   ],
+   [
+    "30 SEP",
+    "FR24 · ADS-B",
+    "Altitud y velocidad, segundo a segundo",
+    "CONFIRMADO",
+    1
+   ],
+   [
+    "2-4 OCT",
+    "COMANDANTE",
+    "Su relato publicado",
+    "AFIRMADO",
+    2
+   ]
+  ],
+  "wk": [
+   [
+    "los hallazgos",
+    0
+   ],
+   [
+    "los datos de seguimiento",
+    1
+   ],
+   [
+    "el relato",
+    2
+   ]
+  ],
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "5.1",
+  "id": "c_fo_atras",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, seen from the front: the right seat is empty and the first officer puppet (dressed all in dark charcoal grey) kneels on the cockpit floor behind the seats near the back wall, head bowed; the captain puppet sits in the left seat facing forward, the captain puppet (in a deep teal blue pilot uniform). People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the kneeling grey puppet bows its head slowly, the camera slowly drifts to the left",
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:15:00",
+   1.0
+  ],
+  "sello": [
+   "AFIRMADO",
+   "relato del comandante · Ynet"
+  ],
+  "wk": [
+   [
+    "quiere rezar",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": "K_ckpt"
+ },
+ {
+  "at": "5.1@no es raro",
+  "id": "g_cab_rezo",
+  "kind": "cabina",
+  "w": 1.0,
+  "figs": [
+   "cmd",
+   "fo"
+  ],
+  "steps": [
+   {
+    "t": 0.6,
+    "fig": {
+     "fo": [
+      0.235,
+      0.62,
+      180,
+      0
+     ]
+    }
+   }
+  ],
+  "cam": [
+   [
+    0,
+    1.6,
+    0.22,
+    0.5
+   ],
+   [
+    6,
+    1.75,
+    0.22,
+    0.5
+   ]
+  ],
+  "hl": "axe",
+  "title": "Según el comandante: el primer oficial se levanta a rezar",
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "5.2",
+  "id": "c_cmd_mira",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Close view inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds of the back of the head and shoulders of the captain puppet in the left seat, the captain puppet (in a deep teal blue pilot uniform), looking straight ahead through the windshield at the cotton wool clouds. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the clouds drift slowly past the windshield, the puppet does not move, the camera slowly orbits a little to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:16:30",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": null,
+  "maxs": 2.6
+ },
+ {
+  "at": "5.3",
+  "id": "o_hacha_vacia",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:20:40",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "img": "No people, no puppets, no figures anywhere in the image. Close detail of the back wall of an airliner cockpit: two empty wall clips where a small emergency axe used to hang, the clips open, nothing in them. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_hacha_vacia",
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "5.3@un golpe enorme",
+  "id": "g_cab_golpe",
+  "kind": "cabina",
+  "w": 1.0,
+  "figs": [
+   "cmd",
+   "fo"
+  ],
+  "steps": [
+   {
+    "t": 0.2,
+    "fig": {
+     "fo": [
+      0.2,
+      0.47,
+      200,
+      0
+     ]
+    },
+    "hit": "cmd"
+   }
+  ],
+  "cam": [
+   [
+    0,
+    1.75,
+    0.22,
+    0.48
+   ],
+   [
+    4,
+    1.85,
+    0.21,
+    0.45
+   ]
+  ],
+  "title": "Golpe en la nuca · según el relato del comandante",
+  "reloj": [
+   "05:20:50",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:20:50",
+   1.0
+  ]
+ },
+ {
+  "at": "5.4",
+  "id": "c_ext_tiembla",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Close view of the nose and cockpit windows of a Boeing 737 MAX 8 airliner with split-tip winglets, scalloped engine nacelles and a row of small windows in flight among cotton wool clouds, the nose pitched slightly down. Dramatic low sun with deep grey shadows across the clouds, a dark heavy sky, tense. A photograph of a handmade miniature stop-motion model built from real materials: an airliner carved from maple wood and painted glossy white, clouds made of real fluffy cotton wool, fine visible wood grain, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere. Only the airliner model and the cotton wool clouds and sky fill the frame, nothing else: no seats, no furniture, no table, no interior, no window frame.",
+  "motion": "the airliner shakes slightly and its nose dips, the camera slowly drifts to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:21:00",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:21:00",
+   1.0
+  ],
+  "maxs": 2.6
+ },
+ {
+  "at": "5.4@y ahí entiende",
+  "id": "g_cab_entiende",
+  "kind": "cabina",
+  "w": 1.0,
+  "figs": [
+   "cmd",
+   "fo"
+  ],
+  "steps": [
+   {
+    "t": 0.3,
+    "fig": {
+     "cmd": [
+      0.21,
+      0.4,
+      40,
+      0.5
+     ]
+    },
+    "hit": "cmd"
+   }
+  ],
+  "cam": [
+   [
+    0,
+    1.8,
+    0.21,
+    0.45
+   ]
+  ],
+  "title": "«No es el avión: es el otro hombre»",
+  "reloj": [
+   "05:21:05",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:21:05",
+   1.0
+  ]
+ },
+ {
+  "at": "5.5",
+  "id": "g_cita_fiscal",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "El primer oficial atacó al comandante con el hacha de emergencia de la cabina e intentó tomar el control del avión.",
+  "who": "Hamad Saif Al Shamsi · fiscal general de EAU",
+  "src": "3 oct 2026 · vía The National / WAM",
+  "et": "CONFIRMADO",
+  "v8": true,
+  "act": "alert",
+  "bg": "kf__c_ext_tiembla"
+ },
+ {
+  "at": "5.6",
+  "id": "o_hacha_pared",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:21:08",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. The back wall of an airliner cockpit seen from the floor: the small emergency crash axe in its clips, the folded jump seat, a coiled oxygen hose, seen from low. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": "K_ckpt",
+  "alti": [
+   "05:21:08",
+   1.0
+  ],
+  "src": "kf__o_hacha_pared",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "5.7@un minuto después",
+  "id": "g_perfil_cae",
+  "kind": "perfilmad",
+  "w": 1.0,
+  "win": [
+   "05:19:00",
+   "05:27:00"
+  ],
+  "draw": [
+   "05:20:30",
+   "05:21:45"
+  ],
+  "tick": 60,
+  "t_in": 0.5,
+  "marks": [
+   [
+    "05:21:00",
+    "08:21 HORA SAUDÍ",
+    0
+   ]
+  ],
+  "wk": [
+   [
+    "cinco y veintiuno",
+    0
+   ],
+   [
+    "se desploma",
+    "__sello"
+   ]
+  ],
+  "sello": [
+   "CONFIRMADO",
+   "Flightradar24 · ADS-B"
+  ],
+  "hl": [
+   "05:21:00",
+   "05:21:34",
+   "−17.400 FT EN ~30 S"
+  ],
+  "hl_wk": false,
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "5.8@trece torres eiffel",
+  "id": "o_eiffel",
+  "kind": "depth2",
+  "w": 1.0,
+  "v8": true,
+  "act": "alert",
+  "img": "No people, no puppets, no figures anywhere in the image. A single very tall thin column made of thirteen identical small painted wood Eiffel Tower models stacked vertically one on top of another like a totem, reaching high on a pale studio table, a tiny carved wood airliner at the very top. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_eiffel",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "5.9",
+  "id": "c_picada",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Side view of a Boeing 737 MAX 8 airliner with split-tip winglets, scalloped engine nacelles and a row of small windows diving steeply nose-down through soft cotton wool clouds. Dramatic low sun with deep grey shadows across the clouds, a dark heavy sky, tense. A photograph of a handmade miniature stop-motion model built from real materials: an airliner carved from maple wood and painted glossy white, clouds made of real fluffy cotton wool, fine visible wood grain, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere. Only the airliner model and the cotton wool clouds and sky fill the frame, nothing else: no seats, no furniture, no table, no interior, no window frame.",
+  "motion": "the airliner dives down through the clouds, the camera slowly drifts to the left",
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:21:20",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:21:20",
+   1.0
+  ]
+ },
+ {
+  "at": "5.9@a este avión le falta",
+  "id": "g_timon",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "Falta casi todo el timón de dirección: la aleta móvil de la cola.",
+  "who": "Fotos tomadas en Tabuk tras el aterrizaje",
+  "src": "vía Aerocorner / Wikipedia",
+  "et": "REPORTADO",
+  "big": false,
+  "v8": true,
+  "act": "alert",
+  "bg": "kf__c_picada"
+ },
+ {
+  "at": "5.9@la aleta vertical",
+  "id": "o_cola_rota",
+  "kind": "still",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "src": "kf__o_cola_rota",
+  "focus": [
+   0.62,
+   0.4
+  ],
+  "dash": [
+   [
+    0.674,
+    0.095
+   ],
+   [
+    0.742,
+    0.095
+   ],
+   [
+    0.652,
+    0.781
+   ],
+   [
+    0.561,
+    0.781
+   ]
+  ],
+  "dash_lbl": "TIMÓN DE DIRECCIÓN · FALTA CASI TODO",
+  "img": "No people, no puppets, no figures anywhere. Close view of the tall vertical tail fin of a handmade wooden scale model Boeing 737 MAX airliner painted glossy white with a thin dark blue stripe, seen from the side, the paint slightly worn showing wood grain. The damage must be obvious: the whole rear movable rudder section of the fin is missing, a big rectangular chunk is broken off the back edge of the fin, leaving a jagged splintered wooden edge with exposed internal wooden ribs. Behind it, soft cotton wool clouds. Dramatic low sun with deep grey shadows, tense. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere."
+ },
+ {
+  "at": "5.10@la respuesta",
+  "id": "g_mont_intro",
+  "kind": "montana",
+  "w": 1.0,
+  "mode": "carro",
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "5.12@pero las fuerzas",
+  "id": "g_mont_avion",
+  "kind": "montana",
+  "w": 1.0,
+  "mode": "avion",
+  "wk": [],
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "5.12",
+  "id": "c_bins",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Plain white puppet passengers only, no brightly colored clothes. Close view of a row of overhead bins in the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows hanging open, a few soft bags half out of them, the cabin tilted. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "an open bin door swings slowly, a bag slides a little, the camera slowly pushes in",
+  "tag": "RECONSTRUCCIÓN",
+  "sello": [
+   "AFIRMADO",
+   "relatos de pasajeros"
+  ],
+  "wk": [
+   [
+    "encajan con lo segundo",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": null
+ },
+ {
+  "at": "5.13",
+  "id": "c_tali_oye",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. In the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left, the puppet woman wearing a bright orange knitted sweater beside the lavatory door turns her head sharply toward the closed cockpit door. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the orange puppet turns her head toward the cockpit door, the camera slowly drifts to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Tali Manes",
+   "la primera en dar la alarma"
+  ],
+  "reloj": [
+   "05:21:30",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": "K_galley",
+  "alti": [
+   "05:21:30",
+   1.0
+  ]
+ },
+ {
+  "at": "6",
+  "id": "cap3",
+  "kind": "capitulo7",
+  "w": 1.0,
+  "num": 3,
+  "title": "La puerta",
+  "sub": "05:21 UTC · cayendo",
+  "v8": true,
+  "act": "alert",
+  "bg": "kf__o_puerta_cerrada"
+ },
+ {
+  "at": "7.0",
+  "id": "c_tali_avisa",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:21:40",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:21:40",
+   1.0
+  ],
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. In the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left near the first row, the puppet woman wearing a bright orange knitted sweater leans toward a seated puppet man wearing a bright orange knitted sweater in the first row, one hand on his shoulder, pointing at the cockpit door. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the puppets move very slightly, the camera slowly pushes in"
+ },
+ {
+  "at": "7.0@y a uno de los dos",
+  "id": "g_cab_alarma",
+  "kind": "cabina",
+  "w": 1.0,
+  "figs": [
+   "cmd",
+   "fo",
+   "tali",
+   "tz",
+   "res1"
+  ],
+  "steps": [
+   {
+    "t": 0.2,
+    "fig": {
+     "cmd": [
+      0.21,
+      0.4,
+      40,
+      0.6
+     ],
+     "fo": [
+      0.18,
+      0.6,
+      0,
+      0
+     ],
+     "tali": [
+      0.5,
+      0.32,
+      180,
+      0
+     ]
+    },
+    "arrows": [
+     [
+      "tali",
+      0.7,
+      0.22
+     ]
+    ]
+   },
+   {
+    "t": 1.6,
+    "fig": {
+     "tz": [
+      0.55,
+      0.2,
+      180,
+      0
+     ],
+     "res1": [
+      0.66,
+      0.52,
+      180,
+      0
+     ]
+    }
+   }
+  ],
+  "cam": [
+   [
+    0,
+    1.0,
+    0.45,
+    0.5
+   ]
+  ],
+  "title": "La alarma · según los pasajeros",
+  "reloj": [
+   "05:21:45",
+   1.0
+  ],
+  "sync_ok": true,
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:21:45",
+   1.0
+  ]
+ },
+ {
+  "at": "7.1",
+  "id": "o_puerta_cerrada",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:21:50",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. The closed reinforced cockpit door seen from the galley at a low angle, a puppet hand flat against it, the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": "K_galley",
+  "alti": [
+   "05:21:50",
+   1.0
+  ],
+  "src": "kf__o_puerta_cerrada",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "7.2",
+  "id": "c_cmd_piso2",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds seen from the cockpit door: the captain puppet lies on the cockpit floor reaching toward the door, the captain puppet (in a deep teal blue pilot uniform); behind him the first officer puppet (dressed all in dark charcoal grey) stands at the controls. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the blue puppet slowly drags itself a little toward the door, the camera slowly drifts to the left",
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:21:55",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": "K_ckpt",
+  "alti": [
+   "05:21:55",
+   1.0
+  ]
+ },
+ {
+  "at": "7.3",
+  "id": "g_cab_puerta1",
+  "kind": "cabina",
+  "w": 1.0,
+  "figs": [
+   "cmd",
+   "fo"
+  ],
+  "steps": [
+   {
+    "t": 0.2,
+    "fig": {
+     "cmd": [
+      0.24,
+      0.48,
+      10,
+      0.7
+     ],
+     "fo": [
+      0.17,
+      0.62,
+      0,
+      0
+     ]
+    }
+   },
+   {
+    "wk": 0,
+    "door": 0.8
+   },
+   {
+    "wk": 1,
+    "door": 0.0,
+    "fig": {
+     "fo": [
+      0.25,
+      0.56,
+      200,
+      0
+     ]
+    }
+   }
+  ],
+  "wk": [
+   [
+    "abrir la puerta",
+    0
+   ],
+   [
+    "la vuelve a cerrar",
+    1
+   ],
+   [
+    "una vez",
+    "__sello"
+   ]
+  ],
+  "cam": [
+   [
+    0,
+    1.6,
+    0.27,
+    0.5
+   ]
+  ],
+  "title": "La puerta se abre… y se vuelve a cerrar",
+  "reloj": [
+   "05:22:00",
+   1.0
+  ],
+  "sello": [
+   "AFIRMADO",
+   "relato del comandante · Ynet"
+  ],
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:22:00",
+   1.0
+  ]
+ },
+ {
+  "at": "7.4",
+  "id": "o_puerta_rendija",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:22:10",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. The reinforced cockpit door seen from the galley, just slammed shut, a thin line of light at its edge, the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": "K_galley",
+  "alti": [
+   "05:22:10",
+   1.0
+  ],
+  "src": "kf__o_puerta_rendija",
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "7.5",
+  "id": "g_perfil_rebote",
+  "kind": "perfilmad",
+  "w": 1.0,
+  "win": [
+   "05:19:00",
+   "05:28:00"
+  ],
+  "draw": [
+   "05:21:30",
+   "05:24:40"
+  ],
+  "tick": 60,
+  "t_in": 0.2,
+  "marks": [
+   [
+    "05:22:31",
+    "21.800 FT",
+    0
+   ]
+  ],
+  "wk": [
+   [
+    "veintiún mil setecientos",
+    0
+   ],
+   [
+    "sube un poco",
+    "__sello"
+   ]
+  ],
+  "sello": [
+   "CONFIRMADO",
+   "ADS-B · traza en Commons"
+  ],
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "7.6",
+  "id": "c_cmd_suelo_mano",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Very close view on the cockpit floor: the hand of the captain puppet, the captain puppet (in a deep teal blue pilot uniform), stretched flat on the floor toward the bottom of the closed door. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the blue fingers slowly stretch toward the door, the camera slowly pushes in",
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:22:40",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": null,
+  "alti": [
+   "05:22:40",
+   1.0
+  ]
+ },
+ {
+  "at": "7.6@que la puerta está ahí",
+  "id": "g_cita_push2",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "Tenía una última pelea adentro. Lo di todo… y fui directo a la puerta.",
+  "who": "Comandante Smit Machchhar",
+  "src": "en llamada con Netanyahu · vía Ynet",
+  "et": "AFIRMADO",
+  "big": true,
+  "v8": true,
+  "act": "alert",
+  "bg": "kf__c_cmd_suelo_mano"
+ },
+ {
+  "at": "7.7",
+  "id": "c_mano_manija",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:22:55",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "img": "Very close view of the hand of the captain puppet, the captain puppet (in a deep teal blue pilot uniform), reaching up from the floor and grabbing the simple lever handle of a plain flat airliner cockpit door (no wheel, no vault). People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "motion": "the blue hand pulls the handle down slowly, the camera slowly drifts to the left",
+  "alti": [
+   "05:22:55",
+   1.0
+  ],
+  "maxs": 2.0
+ },
+ {
+  "at": "8",
+  "id": "c_puerta_abre",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:23:00",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:23:00",
+   1.0
+  ],
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. From inside the dim cockpit of a Boeing 737 looking back at the plain flat reinforced cockpit door (a normal aircraft door with a lever handle, not a vault) as it swings open outward into the bright galley, light pouring in across the cockpit floor. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the puppets move very slightly, the camera slowly pushes in",
+  "maxs": 1.8
+ },
+ {
+  "at": "9.0",
+  "id": "c_esperan",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Seen from inside the cockpit through the open door: three puppets wearing a bright orange knitted sweater standing in the bright galley right outside the doorway, leaning forward. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the three orange puppets start to move forward through the door, the camera slowly cranes up a little",
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:23:02",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": "K_ckpt",
+  "alti": [
+   "05:23:02",
+   1.0
+  ]
+ },
+ {
+  "at": "10",
+  "id": "cap4",
+  "kind": "capitulo7",
+  "w": 1.0,
+  "num": 4,
+  "title": "Dos columnas sin nadie",
+  "sub": "05:23 UTC · ~21.000 ft",
+  "v8": true,
+  "act": "alert",
+  "bg": "kf__c_yokes_solos"
+ },
+ {
+  "at": "11.0",
+  "id": "g_cab_entran",
+  "kind": "cabina",
+  "w": 1.0,
+  "figs": [
+   "cmd",
+   "fo",
+   "hay",
+   "tz",
+   "asaf"
+  ],
+  "steps": [
+   {
+    "t": 0.1,
+    "door": 1.0,
+    "fig": {
+     "cmd": [
+      0.26,
+      0.52,
+      10,
+      0.8
+     ],
+     "fo": [
+      0.22,
+      0.5,
+      200,
+      0
+     ],
+     "hay": [
+      0.36,
+      0.45,
+      180,
+      0
+     ],
+     "tz": [
+      0.4,
+      0.3,
+      180,
+      0
+     ],
+     "asaf": [
+      0.42,
+      0.62,
+      180,
+      0
+     ]
+    }
+   }
+  ],
+  "cam": [
+   [
+    0,
+    1.3,
+    0.32,
+    0.5
+   ]
+  ],
+  "title": "Lo primero que ven",
+  "reloj": [
+   "05:23:05",
+   1.0
+  ],
+  "sello": [
+   "AFIRMADO",
+   "Tzvika Manes · pasajero"
+  ],
+  "wk": [
+   [
+    "según contó",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:23:05",
+   1.0
+  ]
+ },
+ {
+  "at": "11.1",
+  "id": "c_yokes_solos",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, both pilot seats completely empty, the two control columns with their yokes moving by themselves, seen from behind the seats. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "both yokes move forward slowly by themselves, the camera slowly pulls back",
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:23:08",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": "K_ckpt",
+  "alti": [
+   "05:23:08",
+   1.0
+  ]
+ },
+ {
+  "at": "11.2",
+  "id": "c_hayun_saca",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Yaniv Hayun",
+   "plomero · pasajero"
+  ],
+  "reloj": [
+   "05:23:10",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:23:10",
+   1.0
+  ],
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, a puppet wearing a bright orange knitted sweater pulls the first officer puppet (dressed all in dark charcoal grey) backward out of the right seat toward the door. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the puppets move very slightly, the camera slowly pushes in",
+  "maxs": 1.6
+ },
+ {
+  "at": "11.2@el dentista",
+  "id": "g_cab_reducen",
+  "kind": "cabina",
+  "w": 1.0,
+  "figs": [
+   "cmd",
+   "fo",
+   "hay",
+   "tz",
+   "asaf",
+   "den"
+  ],
+  "steps": [
+   {
+    "t": 0.1,
+    "door": 1.0,
+    "fig": {
+     "cmd": [
+      0.26,
+      0.52,
+      10,
+      0.8
+     ],
+     "fo": [
+      0.47,
+      0.5,
+      90,
+      0.9
+     ],
+     "hay": [
+      0.44,
+      0.4,
+      160,
+      0
+     ],
+     "tz": [
+      0.52,
+      0.4,
+      200,
+      0
+     ],
+     "asaf": [
+      0.5,
+      0.62,
+      120,
+      0
+     ],
+     "den": [
+      0.55,
+      0.55,
+      200,
+      0
+     ]
+    }
+   }
+  ],
+  "cam": [
+   [
+    0,
+    1.25,
+    0.4,
+    0.5
+   ]
+  ],
+  "title": "Lo sacan de la cabina de mando y lo sujetan",
+  "reloj": [
+   "05:23:15",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "alti": [
+   "05:23:15",
+   1.0
+  ]
+ },
+ {
+  "at": "11.3",
+  "id": "o_cables",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "sello": [
+   "REPORTADO",
+   "pasajeros · Khaleej Times"
+  ],
+  "wk": [
+   [
+    "cables de auriculares",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "alert",
+  "img": "No people, no puppets, no figures anywhere in the image. A tangle of thin white headphone cables and two plastic zip ties lying on the carpet of an airliner galley floor, seen close. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_cables",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "11.4",
+  "id": "g_cita_matenme",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "Mátenme.",
+  "who": "Lo que repetía en el piso, según varios pasajeros",
+  "src": "vía Ynet · Wikipedia",
+  "et": "REPORTADO",
+  "big": true,
+  "v8": true,
+  "act": "alert",
+  "bg": "kf__o_cables"
+ },
+ {
+  "at": "11.5",
+  "id": "g_perfil_sigue",
+  "kind": "perfilmad",
+  "w": 1.0,
+  "win": [
+   "05:19:00",
+   "05:30:00"
+  ],
+  "draw": [
+   "05:23:20",
+   "05:25:20"
+  ],
+  "tick": 60,
+  "t_in": 0.1,
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "11.6",
+  "id": "c_hayun_mandos",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, a puppet wearing a bright orange knitted sweater sits in the left pilot seat and grips the yoke with both hands, seen from behind and to the side. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the orange puppet pulls the yoke back slowly, the camera slowly pushes in",
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Yaniv Hayun",
+   "un plomero en los mandos de un 737"
+  ],
+  "reloj": [
+   "05:24:00",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": "K_ckpt",
+  "alti": [
+   "05:24:00",
+   1.0
+  ]
+ },
+ {
+  "at": "11.7",
+  "id": "c_yoke_atras",
+  "kind": "depth2",
+  "w": 1.0,
+  "img": "Very close view of two puppet hands wearing a bright orange knitted sweater gripping the yoke of a Boeing 737 control column and pulling it gently back. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "tag": "RECONSTRUCCIÓN",
+  "reloj": [
+   "05:24:10",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": null,
+  "alti": [
+   "05:24:10",
+   1.0
+  ],
+  "src": "kf__c_yoke_atras",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18,
+  "maxs": 1.2
+ },
+ {
+  "at": "11.7@mirando mayday",
+  "id": "o_tele",
+  "kind": "depth2",
+  "w": 1.0,
+  "v8": true,
+  "act": "alert",
+  "img": "No people, no puppets, no figures anywhere in the image. An old living room television set made of painted wood on a low cabinet, its screen showing a tiny painted wood airliner, a remote control beside it. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_tele",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "11.8",
+  "id": "g_cinco_seg",
+  "kind": "numero",
+  "w": 1.0,
+  "n": "~5 s",
+  "sub": "margen estimado para recuperar el avión",
+  "src": "Estimación de Sally Leivesley, experta en seguridad aérea · no es un dato oficial",
+  "sello": [
+   "AFIRMADO",
+   "estimación de una experta"
+  ],
+  "wk": [
+   [
+    "estimó",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "11.9",
+  "id": "c_reserva_toma",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, a puppet wearing a pale sky blue pilot shirt sits in the left pilot seat with hands on the yoke, a second pale sky blue puppet stepping in through the open door behind. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the second pale blue puppet steps in and leans toward the right seat, the camera slowly pulls back",
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Piloto de reserva",
+   "flydubai no lo nombró"
+  ],
+  "reloj": [
+   "05:24:30",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": "K_ckpt",
+  "alti": [
+   "05:24:30",
+   1.0
+  ]
+ },
+ {
+  "at": "11.10",
+  "id": "o_gorras_vacias",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "img": "No people, no puppets, no figures anywhere in the image. Two pilot caps left on two empty airliner seats in a middle row of the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows, seen close. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_gorras_vacias",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "11.11@hacia las cinco",
+  "id": "g_perfil_nivel",
+  "kind": "perfilmad",
+  "w": 1.0,
+  "win": [
+   "05:15:00",
+   "05:40:00"
+  ],
+  "draw": [
+   "05:20:00",
+   "05:33:00"
+  ],
+  "tick": 300,
+  "t_in": 0.2,
+  "marks": [
+   [
+    "05:33:00",
+    "~15.000 FT · NIVELADO",
+    0
+   ]
+  ],
+  "wk": [
+   [
+    "quince mil pies",
+    0
+   ],
+   [
+    "la fiscalía confirma",
+    "__sello"
+   ]
+  ],
+  "sello": [
+   "CONFIRMADO",
+   "fiscalía EAU · ADS-B"
+  ],
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "11.12",
+  "id": "c_dentista",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. In the galley of an airliner, a puppet wearing a bright orange knitted sweater kneels beside a puppet lying on the floor the captain puppet (in a deep teal blue pilot uniform), pressing a folded white towel against the lying figure's head. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the kneeling orange puppet presses the towel gently, the camera slowly orbits a little to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Shota Musayev",
+   "dentista · el único médico a bordo"
+  ],
+  "reloj": [
+   "05:33:00",
+   1.0
+  ],
+  "v8": true,
+  "act": "alert",
+  "ref": "K_galley"
+ },
+ {
+  "at": "12",
+  "id": "cap5",
+  "kind": "capitulo7",
+  "w": 1.0,
+  "num": 5,
+  "title": "Siete cinco cero cero",
+  "sub": "05:28 – 05:38 UTC",
+  "v8": true,
+  "act": "day",
+  "bg": "kf__o_transp"
+ },
+ {
+  "at": "13.0",
+  "id": "o_transp",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "img": "No people, no puppets, no figures anywhere in the image. A close detail of the radio and transponder control panel on the center pedestal of a Boeing 737 cockpit: knobs and a small four-digit display window, seen from above. Bright hard morning daylight, crisp clean shadows, clear and sharp. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_transp",
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "13.0@un código de cuatro",
+  "id": "g_squawk_vacio",
+  "kind": "squawk",
+  "w": 1.0,
+  "seq": [
+   [
+    "1000",
+    null,
+    "ink",
+    0
+   ]
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "13.1@siete seis cero cero",
+  "id": "g_tabla",
+  "kind": "squawk",
+  "w": 1.0,
+  "mode": "tabla",
+  "rows": [
+   [
+    "7600",
+    "Se perdió la radio",
+    0
+   ],
+   [
+    "7700",
+    "Emergencia general",
+    1
+   ],
+   [
+    "7500",
+    "Interferencia ilícita · secuestro",
+    2
+   ]
+  ],
+  "wk": [
+   [
+    "siete seis cero cero",
+    0
+   ],
+   [
+    "siete siete cero cero",
+    1
+   ],
+   [
+    "y siete cinco cero cero",
+    2
+   ]
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "13.2@primero siete siete",
+  "id": "g_squawk_cambio",
+  "kind": "squawk",
+  "w": 1.0,
+  "seq": [
+   [
+    "1000",
+    null,
+    "ink",
+    0
+   ],
+   [
+    "7700",
+    "EMERGENCIA GENERAL",
+    "orange",
+    0,
+    "primero"
+   ],
+   [
+    "7500",
+    "INTERFERENCIA ILÍCITA",
+    "red",
+    1,
+    "minutos después"
+   ]
+  ],
+  "wk": [
+   [
+    "siete siete cero cero",
+    0
+   ],
+   [
+    "siete cinco cero cero",
+    1
+   ]
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "13.3",
+  "id": "g_reg_codigos",
+  "kind": "registro",
+  "w": 1.0,
+  "title": "LOS CÓDIGOS · HORA UTC SEGÚN CADA FUENTE",
+  "rows": [
+   [
+    "05:28",
+    "AL JAZEERA · ANADOLU",
+    "7700 · emergencia general",
+    "EN DISPUTA",
+    0
+   ],
+   [
+    "05:31",
+    "FLIGHTRADAR24",
+    "7700 · emergencia general",
+    "EN DISPUTA",
+    1
+   ]
+  ],
+  "wk": [
+   [
+    "cinco y veintiocho",
+    0
+   ],
+   [
+    "cinco y treinta y uno",
+    1
+   ]
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "13.4",
+  "id": "g_quien",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "¿Quién marcó los códigos? Oficialmente, no se publicó.",
+  "who": "",
+  "src": "",
+  "et": null,
+  "big": true,
+  "v8": true,
+  "act": "day",
+  "bg": "kf__o_transp"
+ },
+ {
+  "at": "13.5",
+  "id": "c_radar",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. A dim air traffic control room built as a painted wood model: a single round radar screen glowing softly on a console, an empty chair in front of it. Bright hard morning daylight, crisp clean shadows, clear and sharp. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the radar sweep line rotates slowly on the screen, the camera slowly drifts to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "ref": null
+ },
+ {
+  "at": "13.5@y el código dice",
+  "id": "g_squawk_7500",
+  "kind": "squawk",
+  "w": 1.0,
+  "seq": [
+   [
+    "7500",
+    "SECUESTRO",
+    "red",
+    0,
+    "lo único que se ve desde tierra"
+   ]
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "13.6",
+  "id": "a_f35",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_f35",
+  "archivo": true,
+  "rotulo": [
+   "Fuerza Aérea de Israel",
+   "F-35I · foto: Mayor Ofer, IAF · CC BY 4.0"
+  ],
+  "sello": [
+   "CONFIRMADO",
+   "Fuerzas de Defensa de Israel"
+  ],
+  "wk": [
+   [
+    "despegar cazas",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "13.6@según el diario",
+  "id": "g_escenarios",
+  "kind": "lista",
+  "w": 1.0,
+  "title": "Escenarios preparados por el ejército israelí",
+  "numbered": true,
+  "dark_last": true,
+  "items": [
+   [
+    "escenario",
+    "Un accidente en Jordania o Arabia Saudita",
+    "REPORTADO",
+    0
+   ],
+   [
+    "escenario",
+    "Un secuestro con rehenes",
+    "REPORTADO",
+    1
+   ],
+   [
+    "el peor",
+    "Derribar el avión para evitar un ataque como el 11-S",
+    "REPORTADO",
+    2
+   ]
+  ],
+  "wk": [
+   [
+    "los escenarios",
+    0
+   ],
+   [
+    "estaba el peor",
+    1
+   ],
+   [
+    "derribar el avión",
+    2
+   ]
+  ],
+  "src": "Fuente: Ynet (fuentes militares sin nombre)",
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "13.7",
+  "id": "c_ext_secuestrado",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "img": "No people, no puppets, no figures anywhere in the image. Wide view of a Boeing 737 MAX 8 airliner with split-tip winglets, scalloped engine nacelles and a row of small windows flying level and alone above a vast flat sea of cotton wool clouds, very small in the frame, nothing else in the scene. Bright hard morning daylight, crisp clean shadows, clear and sharp. A photograph of a handmade miniature stop-motion model built from real materials: an airliner carved from maple wood and painted glossy white, clouds made of real fluffy cotton wool, fine visible wood grain, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere. Only the airliner model and the cotton wool clouds and sky fill the frame, nothing else: no seats, no furniture, no table, no interior, no window frame.",
+  "motion": "the airliner moves very slowly across the clouds, the camera slowly orbits a little to the right",
+  "maxs": 2.5
+ },
+ {
+  "at": "13.8",
+  "id": "g_mapa_jordania",
+  "kind": "mapamad",
+  "w": 1.0,
+  "cam": [
+   [
+    0,
+    38.0,
+    30.1,
+    4.5
+   ],
+   [
+    6,
+    37.5,
+    30.0,
+    3.6
+   ]
+  ],
+  "draw": [
+   "05:24",
+   "05:46"
+  ],
+  "t_in": 0.2,
+  "t_end": 5.5,
+  "cities": [
+   "TABUK",
+   "AMÁN"
+  ],
+  "countries": [
+   "ARABIA SAUDITA",
+   "JORDANIA"
+  ],
+  "labels": {
+   "JORDANIA": [
+    37.2,
+    30.75
+   ],
+   "ARABIA SAUDITA": [
+    38.3,
+    29.45
+   ]
+  },
+  "v8": true,
+  "act": "day",
+  "fuente": "Mapa: Natural Earth · ruta aproximada · el giro hacia Jordania no fue explicado"
+ },
+ {
+  "at": "13.9@recibe un pedido",
+  "id": "g_mapa_tabuk",
+  "kind": "mapamad",
+  "w": 1.0,
+  "cam": [
+   [
+    0,
+    37.4,
+    29.8,
+    4.8
+   ],
+   [
+    6,
+    36.9,
+    29.0,
+    4.0
+   ]
+  ],
+  "draw": [
+   "05:44",
+   "06:20"
+  ],
+  "t_in": 0.3,
+  "t_end": 6.0,
+  "cities": [
+   "TABUK"
+  ],
+  "countries": [
+   "ARABIA SAUDITA",
+   "JORDANIA"
+  ],
+  "sello": [
+   "CONFIRMADO",
+   "Anadolu · Al Jazeera"
+  ],
+  "wk": [
+   [
+    "pedido de aterrizaje",
+    "__sello"
+   ]
+  ],
+  "labels": {
+   "JORDANIA": [
+    36.6,
+    30.6
+   ],
+   "ARABIA SAUDITA": [
+    37.6,
+    28.9
+   ]
+  },
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "13.9@el transpondedor vuelve",
+  "id": "g_squawk_vuelve",
+  "kind": "squawk",
+  "w": 1.0,
+  "seq": [
+   [
+    "7500",
+    "INTERFERENCIA ILÍCITA",
+    "red",
+    0
+   ],
+   [
+    "7700",
+    "EMERGENCIA GENERAL",
+    "orange",
+    0.5,
+    "al acercarse a Tabuk"
+   ]
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "14",
+  "id": "cap6",
+  "kind": "capitulo7",
+  "w": 1.0,
+  "num": 6,
+  "title": "Tabuk",
+  "sub": "06:45 UTC · 09:45 hora saudí",
+  "v8": true,
+  "act": "day",
+  "bg": "kf__c_aterriza"
+ },
+ {
+  "at": "15.0",
+  "id": "g_mapa_relaciones",
+  "kind": "mapamad",
+  "w": 1.0,
+  "cam": [
+   [
+    0,
+    39.0,
+    29.5,
+    16.0
+   ],
+   [
+    6,
+    37.5,
+    29.6,
+    12.0
+   ]
+  ],
+  "draw": [
+   "06:20",
+   "06:20"
+  ],
+  "cities": [
+   "TEL AVIV",
+   "TABUK",
+   "AMÁN",
+   "RIAD"
+  ],
+  "countries": [
+   "ARABIA SAUDITA",
+   "JORDANIA",
+   "ISRAEL",
+   "EGIPTO",
+   "IRAK"
+  ],
+  "v8": true,
+  "act": "day",
+  "fuente": "Arabia Saudita e Israel no tienen relaciones diplomáticas"
+ },
+ {
+  "at": "15.1",
+  "id": "a_tabuk",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_tabuk",
+  "archivo": true,
+  "rotulo": [
+   "Aeropuerto de Tabuk",
+   "Príncipe Sultán bin Abdulaziz · foto: CC BY-SA 4.0"
+  ],
+  "lugar": [
+   "Tabuk",
+   "09:45 hora saudí · 06:45 UTC"
+  ],
+  "sello": [
+   "CONFIRMADO",
+   "Al Jazeera · Anadolu"
+  ],
+  "wk": [
+   [
+    "aterriza",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "15.1@príncipe sultán",
+  "id": "c_aterriza",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Side view of a Boeing 737 MAX 8 airliner with split-tip winglets, scalloped engine nacelles and a row of small windows touching down on a long pale carved wood runway in a flat desert of smooth carved wood, small puffs of dust at the main wheels. Bright hard morning daylight, crisp clean shadows, clear and sharp. A photograph of a handmade miniature stop-motion model built from real materials: an airliner carved from maple wood and painted glossy white, clouds made of real fluffy cotton wool, fine visible wood grain, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere. Only the airliner model and the cotton wool clouds and sky fill the frame, nothing else: no seats, no furniture, no table, no interior, no window frame.",
+  "motion": "the airliner rolls forward along the runway slowing down, the camera slowly cranes up a little",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "maxs": 2.0
+ },
+ {
+  "at": "15.2",
+  "id": "g_nadie",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "No murió nadie.",
+  "who": "",
+  "src": "",
+  "et": null,
+  "big": true,
+  "v8": true,
+  "act": "day",
+  "bg": "kf__c_aterriza"
+ },
+ {
+  "at": "15.3",
+  "id": "c_aplausos",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows, puppet passengers standing in the aisle and between the seats with their arms raised, some hands together as if clapping. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Bright hard morning daylight, crisp clean shadows, clear and sharp. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the puppets clap their hands slowly, the camera slowly pulls back",
+  "tag": "RECONSTRUCCIÓN",
+  "sello": [
+   "CONFIRMADO",
+   "videos de pasajeros"
+  ],
+  "wk": [
+   [
+    "aplausos",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "day",
+  "ref": "K_cabin"
+ },
+ {
+  "at": "15.4",
+  "id": "c_ambulancias",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Two small painted wood ambulances with a single thin orange stripe parked beside a Boeing 737 MAX 8 airliner with split-tip winglets, scalloped engine nacelles and a row of small windows on a carved wood apron, the forward door open with stairs. Bright hard morning daylight, crisp clean shadows, clear and sharp. A photograph of a handmade miniature stop-motion model built from real materials: an airliner carved from maple wood and painted glossy white, clouds made of real fluffy cotton wool, fine visible wood grain, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere. Only the airliner model and the cotton wool clouds and sky fill the frame, nothing else: no seats, no furniture, no table, no interior, no window frame.",
+  "motion": "the ambulance doors open slowly, the camera slowly drifts to the left",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "15.5",
+  "id": "o_cola_tabuk",
+  "kind": "still",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "sello": [
+   "REPORTADO",
+   "fotos en Tabuk · Netanyahu"
+  ],
+  "wk": [
+   [
+    "falta casi todo",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "day",
+  "src": "kf__o_cola_tabuk",
+  "focus": [
+   0.62,
+   0.4
+  ],
+  "dash": [
+   [
+    0.7,
+    0.082
+   ],
+   [
+    0.749,
+    0.082
+   ],
+   [
+    0.659,
+    0.636
+   ],
+   [
+    0.561,
+    0.636
+   ]
+  ],
+  "dash_lbl": "TIMÓN DE DIRECCIÓN · FALTA CASI TODO",
+  "img": "No people, no puppets, no figures anywhere. Close view of the tall vertical tail fin of a handmade wooden scale model Boeing 737 MAX airliner painted glossy white with a thin dark blue stripe, seen from the side, the paint slightly worn showing wood grain. The damage must be obvious: the whole rear movable rudder section of the fin is missing, a big rectangular chunk is broken off the back edge of the fin, leaving a jagged splintered wooden edge with exposed internal wooden ribs. The airliner stands parked on a sunny desert airport apron made of real sand-colored painted wood. Bright hard daylight. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere."
+ },
+ {
+  "at": "15.6",
+  "id": "g_reg_tabuk",
+  "kind": "registro",
+  "w": 1.0,
+  "title": "DESPUÉS DEL ATERRIZAJE · HORA UTC",
+  "rows": [
+   [
+    "06:45",
+    "TABUK",
+    "Aterriza el vuelo 1073",
+    "CONFIRMADO",
+    0
+   ],
+   [
+    "—",
+    "ARABIA SAUDITA",
+    "No permite aviones militares israelíes",
+    "REPORTADO",
+    1
+   ],
+   [
+    "—",
+    "FLYDUBAI",
+    "Manda dos aviones de reemplazo",
+    "CONFIRMADO",
+    2
+   ],
+   [
+    "15:34",
+    "BEN GURIÓN",
+    "Llegan los pasajeros · más de 10 h tarde",
+    "CONFIRMADO",
+    3
+   ]
+  ],
+  "wk": [
+   [
+    "no permite",
+    1
+   ],
+   [
+    "dos aviones de reemplazo",
+    2
+   ],
+   [
+    "llegan a tel aviv",
+    3
+   ]
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "15.6@llegan a tel aviv",
+  "id": "a_tlv",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_tlv",
+  "archivo": true,
+  "rotulo": [
+   "Aeropuerto Ben Gurión",
+   "foto: Ralf Roletschek · GFDL"
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "15.7",
+  "id": "c_abrazo",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "In a carved wood airport arrivals hall, two puppets embracing, one wearing a bright orange knitted sweater, the other plain white in a suit-like shape, other puppets around them. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Bright hard morning daylight, crisp clean shadows, clear and sharp. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the two puppets hold the embrace, the others turn toward them, the camera slowly pushes in",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "ref": null
+ },
+ {
+  "at": "15.8",
+  "id": "c_asiento_der",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, seen from the left seat: the empty right pilot seat (no people at all, nobody in the image) in the bright light, the yoke in front of it. Bright hard morning daylight, crisp clean shadows, clear and sharp. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": "K_ckpt",
+  "motion": "the light slowly dims across the empty right seat, the camera slowly pushes in"
+ },
+ {
+  "at": "16",
+  "id": "cap7",
+  "kind": "capitulo7",
+  "w": 1.0,
+  "num": 7,
+  "title": "La bandera roja",
+  "sub": "30 sep – 6 oct",
+  "v8": true,
+  "act": "dusk",
+  "bg": "kf__o_hacha_mesa"
+ },
+ {
+  "at": "17.0@flydubai habla",
+  "id": "g_palabras",
+  "kind": "lista",
+  "w": 1.0,
+  "title": "Las primeras palabras oficiales",
+  "items": [
+   [
+    "flydubai · 30 sep",
+    "«un altercado en la cabina de mando»",
+    "CONFIRMADO",
+    0
+   ],
+   [
+    "GCAA · autoridad de aviación de EAU",
+    "«un incidente de seguridad»",
+    "CONFIRMADO",
+    1
+   ]
+  ],
+  "wk": [
+   [
+    "un altercado",
+    0
+   ],
+   [
+    "un incidente de seguridad",
+    1
+   ]
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "17.1",
+  "id": "g_israel",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "Un atentado.",
+  "who": "Gobierno de Israel · desde el primer día",
+  "src": "Netanyahu · ministro de Defensa Israel Katz",
+  "et": "AFIRMADO",
+  "big": true,
+  "v8": true,
+  "act": "dusk",
+  "bg": "kf__c_asiento_der"
+ },
+ {
+  "at": "17.2@anwar gargash",
+  "id": "g_gargash",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "Un acto de terrorismo.",
+  "who": "Anwar Gargash · asesor del presidente de EAU",
+  "src": "2 oct 2026 · primer funcionario emiratí en decirlo",
+  "et": "CONFIRMADO",
+  "v8": true,
+  "act": "dusk",
+  "bg": "kf__c_asiento_der"
+ },
+ {
+  "at": "17.3",
+  "id": "g_fiscal",
+  "kind": "registro",
+  "w": 1.0,
+  "q": "Intentó llevar a cabo un acto terrorista.",
+  "who": "Hamad Saif Al Shamsi · fiscal general de EAU",
+  "src": "3 oct 2026 · vía WAM / The National",
+  "et": "CONFIRMADO",
+  "title": "LA CONCLUSIÓN DE LA FISCALÍA, HASTA AHORA",
+  "rows": [
+   [
+    "03 OCT",
+    "FISCAL GENERAL EAU",
+    "«Intentó llevar a cabo un acto terrorista»",
+    "CONFIRMADO",
+    null
+   ]
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "17.3@y nombra el arma",
+  "id": "o_hacha_mesa",
+  "kind": "depth2",
+  "w": 1.0,
+  "v8": true,
+  "act": "dusk",
+  "img": "No people, no puppets, no figures anywhere in the image. A small emergency crash axe lying flat on a pale grey evidence table under a soft overhead light, a small blank white tag tied to its handle with string. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_hacha_mesa",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "17.4",
+  "id": "g_ojo",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "Lo que sigue lo publicaron medios que citan a funcionarios sin nombre.",
+  "who": "",
+  "src": "",
+  "et": "REPORTADO",
+  "big": false,
+  "v8": true,
+  "act": "dusk",
+  "bg": "kf__o_hacha_mesa"
+ },
+ {
+  "at": "17.5@según the wall",
+  "id": "g_oman",
+  "kind": "lista",
+  "w": 1.0,
+  "title": "Lo que se reportó sobre el primer oficial",
+  "items": [
+   [
+    "antes de flydubai",
+    "Piloto de Oman Air",
+    "REPORTADO",
+    0
+   ],
+   [
+    "2024 · según WSJ, AP, ABC News",
+    "Lo sacan de vuelo por ideas radicales",
+    "REPORTADO",
+    1
+   ],
+   [
+    "2024 · según ABC News",
+    "Le encuentran material extremista",
+    "REPORTADO",
+    2
+   ]
+  ],
+  "wk": [
+   [
+    "oman air",
+    0
+   ],
+   [
+    "sacado de vuelo",
+    1
+   ],
+   [
+    "material extremista",
+    2
+   ]
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "17.6",
+  "id": "g_contrata",
+  "kind": "registro",
+  "w": 1.0,
+  "title": "CÓMO LO CONTRATÓ FLYDUBAI · SEGÚN THE WALL STREET JOURNAL",
+  "items": [
+   [
+    "revisó",
+    "Antecedentes penales",
+    "REPORTADO",
+    0
+   ],
+   [
+    "no revisó",
+    "Por qué Omán lo había sacado de vuelo",
+    "REPORTADO",
+    1
+   ]
+  ],
+  "wk": [
+   [
+    "antecedentes penales",
+    0
+   ],
+   [
+    "no consultó",
+    1
+   ]
+  ],
+  "rows": [
+   [
+    "REVISÓ",
+    "FLYDUBAI",
+    "Sus antecedentes penales",
+    "REPORTADO",
+    0
+   ],
+   [
+    "NO REVISÓ",
+    "FLYDUBAI",
+    "Por qué Omán lo había sacado de vuelo",
+    "REPORTADO",
+    1
+   ]
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "17.7@israel prohíbe",
+  "id": "g_mapa_27",
+  "kind": "mapamad",
+  "w": 1.0,
+  "cam": [
+   [
+    0,
+    44.0,
+    27.5,
+    26.0
+   ],
+   [
+    6,
+    42.0,
+    28.0,
+    24.0
+   ]
+  ],
+  "draw": [
+   "06:20",
+   "06:20"
+  ],
+  "clock": false,
+  "cities": [
+   "TEL AVIV",
+   "DUBÁI"
+  ],
+  "countries": [
+   "ISRAEL",
+   "OMÁN",
+   "IRÁN",
+   "IRAK",
+   "EMIRATOS",
+   "ARABIA SAUDITA"
+  ],
+  "sello": [
+   "REPORTADO",
+   "Times of Israel"
+  ],
+  "wk": [
+   [
+    "casi no se controlaba",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "dusk",
+  "fuente": "Regla israelí: tripulantes de 27 países sin relaciones (Omán, Irán, Irak…) · Times of Israel"
+ },
+ {
+  "at": "17.8@el cuatro de octubre",
+  "id": "g_medidas",
+  "kind": "registro",
+  "w": 1.0,
+  "title": "LO QUE PASÓ DESPUÉS",
+  "rows": [
+   [
+    "30 SEP",
+    "ISRAEL",
+    "Suspende los vuelos de flydubai 6 días",
+    "CONFIRMADO",
+    0
+   ],
+   [
+    "04 OCT",
+    "NETANYAHU",
+    "Ordena revisar la seguridad de vuelos extranjeros",
+    "CONFIRMADO",
+    1
+   ],
+   [
+    "04 OCT",
+    "POLICÍA FEDERAL AUS",
+    "Investiga si se radicalizó en Australia",
+    "CONFIRMADO",
+    2
+   ]
+  ],
+  "wk": [
+   [
+    "seis días",
+    0
+   ],
+   [
+    "ordenó revisar",
+    1
+   ],
+   [
+    "policía federal",
+    2
+   ]
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "17.9",
+  "id": "g_canal12",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "Su objetivo era estrellar el avión contra el aeropuerto Ben Gurión.",
+  "who": "Canal 12 de Israel",
+  "src": "fuentes sin nombre · ninguna autoridad lo confirmó",
+  "et": "REPORTADO",
+  "v8": true,
+  "act": "dusk",
+  "bg": "kf__o_hacha_mesa"
+ },
+ {
+  "at": "17.10",
+  "id": "g_estado",
+  "kind": "lista",
+  "w": 1.0,
+  "title": "Al 6 de octubre de 2026",
+  "items": [
+   [
+    "cargos",
+    "Ningún cargo formal anunciado",
+    "CONFIRMADO",
+    0
+   ],
+   [
+    "nombre",
+    "La fiscalía que investiga no lo publicó",
+    "CONFIRMADO",
+    1
+   ],
+   [
+    "investigación",
+    "Motivos y vínculos: en curso",
+    "CONFIRMADO",
+    2
+   ],
+   [
+    "presunción de inocencia",
+    "Es inocente hasta que un tribunal decida",
+    null,
+    3
+   ]
+  ],
+  "wk": [
+   [
+    "ningún cargo",
+    0
+   ],
+   [
+    "no publicó su nombre",
+    1
+   ],
+   [
+    "sigue investigando",
+    2
+   ],
+   [
+    "es inocente",
+    3
+   ]
+  ],
+  "dark_last": true,
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "17.11",
+  "id": "o_puerta_25",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. The reinforced cockpit door of an airliner seen from the galley side in soft light, closed, a single small shadow at its base. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": "K_galley",
+  "src": "kf__o_puerta_25",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "17.11@el peligro ya estaba",
+  "id": "c_hacha_dentro",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds seen from the floor looking up at the back wall: the small emergency crash axe in its two clips above the folded jump seat. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "a thin line of light moves slowly across the axe, the camera slowly pulls back",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "ref": "K_ckpt"
+ },
+ {
+  "at": "17.12",
+  "id": "c_pasaje_luz",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Seen from inside the cockpit looking out through the open reinforced door: the bright galley and the first rows of the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows with puppet passengers, light pouring in. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the bright light from the cabin slowly spreads across the cockpit floor, the camera slowly drifts to the left",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "ref": "K_ckpt",
+  "maxs": 1.6
+ },
+ {
+  "at": "18",
+  "id": "cap8",
+  "kind": "capitulo7",
+  "w": 1.0,
+  "num": 8,
+  "title": "La caja naranja",
+  "sub": "lo que todavía no habló",
+  "v8": true,
+  "act": "dusk",
+  "bg": "kf__s_caja"
+ },
+ {
+  "at": "19.0",
+  "id": "o_camara_no",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. The ceiling corner of an airliner cockpit built as a painted wood model, plain panels and a small reading light, no camera anywhere, seen from below. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the puppets move very slightly, the camera slowly pushes in"
+ },
+ {
+  "at": "19.1",
+  "id": "g_cajas",
+  "kind": "cajas",
+  "w": 1.0,
+  "wk": [
+   [
+    "una graba",
+    0
+   ],
+   [
+    "la otra graba",
+    1
+   ]
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "19.1@la otra graba",
+  "id": "a_cvr",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_cvr_atlas",
+  "archivo": true,
+  "rotulo": [
+   "Grabador de voz (CVR)",
+   "foto: NTSB · dominio público"
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "19.2",
+  "id": "g_25h",
+  "kind": "numero",
+  "w": 1.0,
+  "n": "25 h",
+  "sub": "de audio que debe guardar el grabador de voz",
+  "src": "OACI Anexo 6 · aviones con certificado individual desde el 1-ene-2021 · A6-FKF: servicio desde dic-2022",
+  "sello": [
+   "CONFIRMADO",
+   "OACI · Anexo 6"
+  ],
+  "wk": [
+   [
+    "veinticinco horas",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "19.3@las autoridades saudíes",
+  "id": "a_ntsb_lab",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_ntsb_lab",
+  "archivo": true,
+  "rotulo": [
+   "Laboratorio de grabadores",
+   "foto: NTSB · dominio público · ilustrativa"
+  ],
+  "sello": [
+   "CONFIRMADO",
+   "Anadolu · análisis pendiente"
+  ],
+  "wk": [
+   [
+    "está pendiente",
+    "__sello"
+   ]
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "19.3@cuando se publique",
+  "id": "g_pendiente",
+  "kind": "lista",
+  "w": 1.0,
+  "title": "Lo que van a responder los grabadores",
+  "items": [
+   [
+    "voz",
+    "Qué se dijo en la cabina",
+    null,
+    0
+   ],
+   [
+    "datos",
+    "Quién movió cada mando y cuándo",
+    null,
+    1
+   ],
+   [
+    "datos",
+    "Las fuerzas reales de la picada",
+    null,
+    2
+   ]
+  ],
+  "wk": [
+   [
+    "qué se dijo",
+    0
+   ],
+   [
+    "quién movió",
+    1
+   ]
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "19.4@los sindicatos",
+  "id": "g_camaras",
+  "kind": "registro",
+  "w": 1.0,
+  "title": "CÁMARAS EN LA CABINA",
+  "rows": [
+   [
+    "2000",
+    "NTSB · EE. UU.",
+    "Recomienda grabar imagen en la cabina",
+    "CONFIRMADO",
+    0
+   ],
+   [
+    "HOY",
+    "SINDICATOS DE PILOTOS",
+    "Se oponen: privacidad y filtraciones",
+    "CONFIRMADO",
+    1
+   ],
+   [
+    "OCT 2026",
+    "TRAS EL VUELO 1073",
+    "La discusión vuelve a abrirse",
+    "REPORTADO",
+    2
+   ]
+  ],
+  "wk": [
+   [
+    "desde el año",
+    0
+   ],
+   [
+    "los sindicatos",
+    1
+   ],
+   [
+    "volvió a abrirse",
+    2
+   ]
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "20",
+  "id": "cap9",
+  "kind": "capitulo7",
+  "w": 1.0,
+  "num": 9,
+  "title": "Un último empujón",
+  "sub": "2 de octubre · hospital en EAU",
+  "v8": true,
+  "act": "dusk",
+  "bg": "kf__c_cmd_final"
+ },
+ {
+  "at": "21.0",
+  "id": "r_cmd_llamada",
+  "kind": "clip",
+  "w": 1.0,
+  "clipsrc": "r_pmo_b",
+  "real": true,
+  "ss": 0,
+  "rotulo": [
+   "Smit Machchhar",
+   "videollamada · PMO India (CC BY 4.0)"
+  ],
+  "fuente": "Video: Prime Minister's Office, India · Wikimedia Commons · CC BY 4.0",
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "21.0@en una videollamada",
+  "id": "r_modi",
+  "kind": "clip",
+  "w": 1.0,
+  "clipsrc": "r_pmo_modi",
+  "real": true,
+  "ss": 0,
+  "rotulo": [
+   "Narendra Modi",
+   "primer ministro de India · PMO India (CC BY 4.0)"
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "21.1",
+  "id": "g_cita_salvar",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "No podía dejar que todos los demás murieran. Trataba de salvarme, pero sabía que no podía dejar morir a nadie.",
+  "who": "Comandante Smit Machchhar",
+  "src": "2 oct 2026 · vía CNN",
+  "et": "AFIRMADO",
+  "v8": true,
+  "act": "dusk",
+  "bg": "kf__c_pasaje_luz"
+ },
+ {
+  "at": "21.2@yaniv hayun",
+  "id": "g_herzog",
+  "kind": "lista",
+  "w": 1.0,
+  "title": "Recomendados por el presidente de Israel para el premio al heroísmo civil",
+  "items": [
+   [
+    "entró y estabilizó los mandos",
+    "Yaniv Hayun",
+    "CONFIRMADO",
+    0
+   ],
+   [
+    "entró y redujo al atacante",
+    "Tzvika Manes",
+    "CONFIRMADO",
+    1
+   ],
+   [
+    "entró y redujo al atacante",
+    "Asaf Rajuan",
+    "CONFIRMADO",
+    2
+   ],
+   [
+    "atendió al comandante",
+    "Dr. Shota Musayev",
+    "CONFIRMADO",
+    3
+   ]
+  ],
+  "wk": [
+   [
+    "yaniv hayun",
+    0
+   ],
+   [
+    "tzvika manes",
+    1
+   ],
+   [
+    "asaf rajuan",
+    2
+   ],
+   [
+    "shota musayev",
+    3
+   ]
+  ],
+  "src": "Fuente: Times of Israel, 1 oct 2026 · destacó también a Tali Manes y al comandante",
+  "sync_ok": true,
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "21.4",
+  "id": "c_cmd_final",
+  "kind": "depth2",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds seen from the doorway: the captain puppet lying on the cockpit floor with one arm stretched toward the open door, the captain puppet (in a deep teal blue pilot uniform), soft light from the cabin falling on him. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "ref": "K_ckpt",
+  "src": "kf__c_cmd_final",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "21.5",
+  "id": "g_perfil_final",
+  "kind": "perfilmad",
+  "w": 1.0,
+  "win": [
+   "03:00:00",
+   "07:00:00"
+  ],
+  "draw": [
+   "03:05:00",
+   "06:45:00"
+  ],
+  "tick": 1800,
+  "t_in": 0.2,
+  "t_end": 6.0,
+  "hl": [
+   "05:21:00",
+   "05:21:34",
+   "LA CAÍDA"
+  ],
+  "marks": [
+   [
+    "06:45:00",
+    "TABUK",
+    null
+   ]
+  ],
+  "title": "Vuelo FZ1073 · completo",
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "21.6",
+  "id": "r_cmd_final",
+  "kind": "clip",
+  "w": 1.0,
+  "clipsrc": "r_pmo_c",
+  "real": true,
+  "ss": 0,
+  "rotulo": [
+   "Smit Machchhar",
+   "PMO India (CC BY 4.0)"
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "21.6@y dos cajas naranjas",
+  "id": "g_cajas2",
+  "kind": "cajas",
+  "w": 1.0,
+  "wk": [
+   [
+    "dos cajas",
+    0
+   ],
+   [
+    "todavía no hablaron",
+    1
+   ]
+  ],
+  "title": "TODAVÍA NO HABLARON",
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "21.7",
+  "id": "g_seguimiento",
+  "kind": "lista",
+  "w": 1.0,
+  "title": "Esta historia no terminó",
+  "items": [
+   [
+    "cuando se publique",
+    "Los grabadores de voz y de datos",
+    null,
+    0
+   ],
+   [
+    "cuando se anuncien",
+    "Los cargos",
+    null,
+    1
+   ],
+   [
+    "cuando salga",
+    "El informe oficial",
+    null,
+    2
+   ],
+   [
+    "seguimiento gratis por correo",
+    "El enlace está en la descripción",
+    null,
+    3
+   ]
+  ],
+  "wk": [
+   [
+    "los grabadores",
+    0
+   ],
+   [
+    "los cargos",
+    1
+   ],
+   [
+    "el informe",
+    2
+   ],
+   [
+    "seguimiento gratis",
+    3
+   ]
+  ],
+  "dark_last": true,
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "21.8",
+  "id": "g_error",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "Si ves un error, dínoslo en los comentarios. Lo corregimos en pantalla.",
+  "who": "Caja Naranja",
+  "src": "",
+  "et": null,
+  "big": true,
+  "v8": true,
+  "act": "dusk",
+  "bg": "kf__c_cmd_final"
+ },
+ {
+  "at": "22",
+  "id": "o_puerta_fin",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. The closed reinforced cockpit door of an airliner seen straight on from the galley in very soft dim light, silent, nothing else. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": "K_galley",
+  "src": "kf__o_puerta_fin",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "1.1@que vuelven a casa",
+  "id": "c_ventanilla",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. View through a small oval airliner window: far below, a flat desert of real sand with soft dunes and a thin line of a road, the edge of the white wing. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the desert below drifts slowly past the window, the camera slowly cranes up a little",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": null
+ },
+ {
+  "at": "1.3",
+  "id": "c_ext_inclina",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Close view of the nose of a Boeing 737 MAX 8 airliner with split-tip winglets, scalloped engine nacelles and a row of small windows among soft cotton wool clouds, the nose starting to dip down. Warm low golden morning sunlight streams in from the left, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion model built from real materials: an airliner carved from maple wood and painted glossy white, clouds made of real fluffy cotton wool, fine visible wood grain, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere. Only the airliner model and the cotton wool clouds and sky fill the frame, nothing else: no seats, no furniture, no table, no interior, no window frame.",
+  "motion": "the airliner's nose dips down slowly, the camera slowly pulls back",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "maxs": 2.4
+ },
+ {
+  "at": "1.6@según su propio relato",
+  "id": "s_cmd_mano1",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "copyimg": "kf__c_cmd_suelo_mano",
+  "motion": "nothing in the scene moves, the camera slowly drifts to the left"
+ },
+ {
+  "at": "1.10@y cómo llegó",
+  "id": "c_asiento_der0",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, a close view of the empty right pilot seat, a pilot cap resting on it, soft light. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the light dims slowly over the empty seat, the camera slowly orbits a little to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": null
+ },
+ {
+  "at": "3.3@no están trabajando",
+  "id": "c_reserva2",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Close view of two puppets wearing a pale sky blue pilot shirt sitting side by side in airliner seats, each holding a folded boarding pass on its lap, the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "one pale blue puppet turns the boarding pass over, the camera slowly pushes in",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": null
+ },
+ {
+  "at": "3.4",
+  "id": "c_reserva_mira",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Two puppets wearing a pale sky blue pilot shirt seated in a middle row of the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows, seen from the aisle, both looking forward toward the cockpit. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the two pale blue puppets slowly look up toward the front, the camera slowly drifts to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_cabin"
+ },
+ {
+  "at": "3.8@desde la cabina de pasajeros",
+  "id": "c_puerta_empuja",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. In the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left, a puppet in plain beige clothes pushes with both hands against the closed reinforced cockpit door, which does not move. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the puppet pushes against the door, the door does not move, the camera slowly cranes up a little",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_galley"
+ },
+ {
+  "at": "3.7@cerrada con traba",
+  "id": "o_traba",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "img": "No people, no puppets, no figures anywhere in the image. Close detail of the edge of a closed reinforced airliner cockpit door and its frame: a small indicator light on the frame glowing red, a heavy steel latch engaged. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_traba",
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "3.14@hay un dentista",
+  "id": "c_dentista_asiento",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. A puppet wearing a bright orange knitted sweater sitting in a window seat of the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows reading a small book, puppets in plain beige clothes around. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Warm low golden morning sunlight streams in from the left through the windows, casting long soft shadows across the wood, gentle amber glow. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the orange puppet turns a page slowly, the camera slowly drifts to the left",
+  "tag": "RECONSTRUCCIÓN",
+  "rotulo": [
+   "Shota Musayev",
+   "dentista · pasajero"
+  ],
+  "v8": true,
+  "act": "dawn",
+  "ref": "K_cabin"
+ },
+ {
+  "at": "5.5@e intentó tomar",
+  "id": "c_fo_mandos",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, seen from behind: the first officer puppet (dressed all in dark charcoal grey) leans over the empty left seat reaching for the captain's yoke with one hand. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the grey puppet's hand moves toward the yoke, the camera slowly orbits a little to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "ref": "K_ckpt"
+ },
+ {
+  "at": "5.9@en una picada así",
+  "id": "o_aguja",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "img": "No people, no puppets, no figures anywhere in the image. Close detail of a round carved wood airspeed dial on an airliner instrument panel: the needle pushed past a red and white striped band at the top of the scale. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_aguja",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "5.10",
+  "id": "o_techo",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. Inside the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows looking straight up at the ceiling: closed overhead bins, reading lights and small oxygen mask compartments, all shut. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": "K_cabin",
+  "src": "kf__o_techo",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "5.11",
+  "id": "c_montana",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. A painted wood roller coaster car with empty seats right at the top of a very steep drop on a painted wood track, the long track plunging down in front of it. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the car tips over the top and starts down the drop, the camera slowly cranes up a little",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "ref": null
+ },
+ {
+  "at": "5.11@si la bajada acelera",
+  "id": "g_mont_flota",
+  "kind": "montana",
+  "w": 1.0,
+  "mode": "carro",
+  "t_in": 0.0,
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "5.13@y escucha algo",
+  "id": "c_puerta_oye",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Very close view of the bottom of a closed reinforced airliner cockpit door seen from the galley floor, a thin line of light under it. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the thin line of light under the door flickers, the camera slowly pulls back",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "ref": null
+ },
+ {
+  "at": "7.2@sangra",
+  "id": "s_cmd_mano2",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "copyimg": "kf__c_cmd_piso2",
+  "motion": "nothing in the scene moves, the camera slowly drifts to the left",
+  "maxs": 2.0
+ },
+ {
+  "at": "11.1@moviéndose",
+  "id": "c_yokes_mueven2",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Very close view of one empty control column yoke of a Boeing 737, tilted forward by itself, the empty seat cushion behind it. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the yoke tilts forward slowly by itself, the camera slowly orbits a little to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "ref": null
+ },
+ {
+  "at": "11.2@tzvika manes y otro",
+  "id": "c_reducen",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. On the floor of the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left, three puppets wearing a bright orange knitted sweater kneel holding down a puppet dressed all in dark charcoal grey lying face down. People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the orange puppets hold still, pressing down, the camera slowly pushes in",
+  "tag": "RECONSTRUCCIÓN",
+  "sync_ok": true,
+  "v8": true,
+  "act": "alert",
+  "ref": "K_galley"
+ },
+ {
+  "at": "11.8@es una estimación",
+  "id": "c_ext_recupera",
+  "kind": "depth2",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. Side view of a Boeing 737 MAX 8 airliner with split-tip winglets, scalloped engine nacelles and a row of small windows pulling its nose up out of a steep dive just above a sea of soft cotton wool clouds. Dramatic low sun with deep grey shadows across the clouds, a dark heavy sky, tense. A photograph of a handmade miniature stop-motion model built from real materials: an airliner carved from maple wood and painted glossy white, clouds made of real fluffy cotton wool, fine visible wood grain, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere. Only the airliner model and the cotton wool clouds and sky fill the frame, nothing else: no seats, no furniture, no table, no interior, no window frame.",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "src": "kf__c_ext_recupera",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "11.11",
+  "id": "s_reserva",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "copyimg": "kf__c_ext_recupera",
+  "motion": "nothing in the scene moves, the camera slowly cranes up a little",
+  "maxs": 2.0
+ },
+ {
+  "at": "11.12@la presión",
+  "id": "c_toalla",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "img": "Very close view of two orange puppet hands pressing a folded white towel against the side of the head of a puppet lying on the floor the captain puppet (in a deep teal blue pilot uniform). People are real handmade stop-motion puppets carved from maple wood with simple generic carved faces that do not resemble any real person, visible chisel facets and fine wood grain, small peg joints at the wrists and elbows, real tailored miniature fabric clothes in plain beige and grey unless another color is described. Dramatic tense lighting: the lights are dimmed, a hard cold white light rakes in from one side and a red warning light glows on the wooden surfaces, deep shadows, high contrast. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the puppets move very slightly, the camera slowly pushes in"
+ },
+ {
+  "at": "11.12@musayev contó",
+  "id": "g_cita_musayev",
+  "kind": "cita",
+  "w": 1.0,
+  "q": "Rezaba todo el tiempo. Tenía miedo de que de verdad lo perdiéramos.",
+  "who": "Dr. Shota Musayev · dentista, pasajero",
+  "src": "vía AP · 1 oct 2026",
+  "et": "AFIRMADO",
+  "v8": true,
+  "act": "alert",
+  "bg": "kf__s_reserva"
+ },
+ {
+  "at": "13.1",
+  "id": "o_radar_blip",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "img": "No people, no puppets, no figures anywhere in the image. A round carved wood radar screen on a console seen close: a single small glowing dot with a short trail, concentric range rings, no text. Bright hard morning daylight, crisp clean shadows, clear and sharp. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_radar_blip",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "13.3@cinco y treinta y cinco",
+  "id": "g_reg_codigos2",
+  "kind": "registro",
+  "w": 1.0,
+  "title": "LOS CÓDIGOS · HORA UTC SEGÚN CADA FUENTE",
+  "rows": [
+   [
+    "05:35",
+    "AL JAZEERA · ANADOLU",
+    "7500 · interferencia ilícita",
+    "EN DISPUTA",
+    0
+   ],
+   [
+    "05:38",
+    "FLIGHTRADAR24",
+    "7500 · interferencia ilícita",
+    "EN DISPUTA",
+    1
+   ]
+  ],
+  "wk": [
+   [
+    "cinco y treinta y cinco",
+    0
+   ],
+   [
+    "cinco y treinta y ocho",
+    1
+   ]
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "15.8@quién era",
+  "id": "c_gorra_der",
+  "kind": "clip",
+  "w": 1.0,
+  "img": "No people, no puppets, no figures anywhere in the image. A pilot cap left alone on the empty right pilot seat of the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft cotton wool clouds, seen close. Bright hard morning daylight, crisp clean shadows, clear and sharp. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "motion": "the soft light slowly fades on the cap, the camera slowly orbits a little to the right",
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "ref": null
+ },
+ {
+  "at": "17.0",
+  "id": "o_podio",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "img": "No people, no puppets, no figures anywhere in the image. An empty painted wood press podium with a cluster of microphones on it, in front of a plain wall, a single water glass on the podium. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_podio",
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "17.5",
+  "id": "o_hangar",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "img": "No people, no puppets, no figures anywhere in the image. A painted wood airline hangar with a parked narrow-body airliner, and in the foreground an open pilot locker with an empty hanger and a cap on its shelf. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_hangar",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "17.7",
+  "id": "o_credencial",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "img": "No people, no puppets, no faces anywhere. On a wooden desk: a pilot's navy blue lanyard with a small plain blank white plastic card, and a pair of folded pilot's wings badge in brass beside it. Quiet cool blue-grey late afternoon light. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_credencial",
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "17.7@y él había volado",
+  "id": "s_fo_der",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "copyimg": "kf__c_fo_der",
+  "motion": "nothing in the scene moves, the camera slowly pulls back"
+ },
+ {
+  "at": "17.8",
+  "id": "a_fz_dxb",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_fz_dxb",
+  "archivo": true,
+  "rotulo": [
+   "flydubai",
+   "Boeing 737 en Dubái · foto: N82khan · CC BY-SA 4.0"
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "17.9@es un reporte",
+  "id": "o_torre",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "img": "No people, no puppets, no figures anywhere in the image. A painted wood model of an airport control tower standing on a flat carved wood apron at dusk, a small airliner model parked far behind it. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_torre",
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "17.11@y si el peligro",
+  "id": "s_cabina_calma",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "copyimg": "kf__c_cabina_calma",
+  "motion": "nothing in the scene moves, the camera slowly orbits a little to the right",
+  "maxs": 2.4
+ },
+ {
+  "at": "19.2@este avión entró",
+  "id": "a_fkf2",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_fkf",
+  "archivo": true,
+  "rotulo": [
+   "A6-FKF",
+   "en servicio desde dic-2022 · foto: UB-TY144 · CC BY-SA 4.0"
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "19.4",
+  "id": "a_cockpit_max",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_cockpit_max",
+  "archivo": true,
+  "rotulo": [
+   "Cabina de un 737 MAX",
+   "foto: GeoMancer448 · CC BY 4.0 · ilustrativa"
+  ],
+  "v8": true,
+  "act": "dusk"
+ },
+ {
+  "at": "21.2",
+  "id": "o_medalla",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "img": "No people, no puppets, no figures anywhere in the image. A painted wood medal with a ribbon lying in an open presentation box on a pale table, the medal blank with no text or symbols. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": null,
+  "src": "kf__o_medalla",
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p96"
+   ],
+   [
+    0.35,
+    "p96"
+   ],
+   [
+    0.8,
+    "p25"
+   ],
+   [
+    1,
+    "p25"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "21.3",
+  "id": "s_ped_llave",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "copyimg": "kf__o_ped_llave",
+  "motion": "nothing in the scene moves, the camera slowly drifts to the right"
+ },
+ {
+  "at": "21.3@un dentista",
+  "id": "s_ped_espejo",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "copyimg": "kf__o_ped_espejo",
+  "motion": "nothing in the scene moves, the camera slowly cranes up a little",
+  "maxs": 2.0
+ },
+ {
+  "at": "21.3@una madre",
+  "id": "s_madre",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "copyimg": "kf__c_madre_bano",
+  "motion": "nothing in the scene moves, the camera slowly pulls back",
+  "maxs": 2.0
+ },
+ {
+  "at": "21.3@dos pilotos",
+  "id": "s_ped_gorras",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "copyimg": "kf__o_ped_gorras",
+  "motion": "nothing in the scene moves, the camera slowly drifts to the left"
+ },
+ {
+  "at": "21.5@lo que no puede",
+  "id": "o_piso",
+  "kind": "depth2",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "img": "Use the reference image as the exact same set: the same layout, the same seats, the same panels and the same windows; only the camera angle, the lighting and the figures described change. No people, no puppets, no figures anywhere in the image. The empty floor of an airliner cockpit seen low, between the two empty pilot seats, soft light from the open door behind falling across it. Quiet cool blue-grey late afternoon light, soft long shadows, calm and still. A photograph of a handmade miniature stop-motion set built from real materials: carved and varnished maple and walnut wood, painted wood, real fabric upholstery, brass fittings and cotton wool clouds, fine visible wood grain and chisel marks, shot on a real camera with a macro lens, rich tactile textures, everything in sharp focus. No text, no letters, no numbers, no logos anywhere.",
+  "ref": "K_ckpt",
+  "src": "kf__o_piso",
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p25"
+   ],
+   [
+    0.35,
+    "p25"
+   ],
+   [
+    0.8,
+    "p96"
+   ],
+   [
+    1,
+    "p96"
+   ]
+  ],
+  "strength": 18
+ },
+ {
+  "at": "3.13@omaní",
+  "id": "s_credencial",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "sync_ok": true,
+  "v8": true,
+  "act": "dawn",
+  "copyimg": "kf__o_credencial",
+  "motion": "nothing in the scene moves, the camera slowly pushes in"
+ },
+ {
+  "at": "3.1@tiene menos de cuatro",
+  "id": "a_fz_dxb0",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_fz_dxb",
+  "archivo": true,
+  "rotulo": [
+   "flydubai",
+   "un 737 de la flota en Dubái · foto: N82khan · CC BY-SA 4.0"
+  ],
+  "v8": true,
+  "act": "dawn"
+ },
+ {
+  "at": "3.12@diecisiete años",
+  "id": "s_ckpt_dos",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dawn",
+  "copyimg": "kf__c_ckpt_dos",
+  "motion": "nothing in the scene moves, the camera slowly drifts to the right"
+ },
+ {
+  "at": "5.11@cuanto más brusca",
+  "id": "s_caen",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "clipsrc": "c_caen_piso",
+  "ss": 1.6,
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "15.4@el primer oficial",
+  "id": "a_tabuk2",
+  "kind": "foto",
+  "w": 1.0,
+  "src": "a_tabuk",
+  "archivo": true,
+  "rotulo": [
+   "Tabuk",
+   "Arabia Saudita · foto: CC BY-SA 4.0"
+  ],
+  "v8": true,
+  "act": "day"
+ },
+ {
+  "at": "13.2",
+  "id": "s_transp",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "copyimg": "kf__o_transp",
+  "motion": "nothing in the scene moves, the camera slowly cranes up a little",
+  "maxs": 2.0
+ },
+ {
+  "at": "13.3@lo mismo pasa",
+  "id": "s_radar2",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "copyimg": "kf__o_radar_blip",
+  "motion": "nothing in the scene moves, the camera slowly pulls back"
+ },
+ {
+  "at": "13.9",
+  "id": "s_ventanilla",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "copyimg": "kf__c_ventanilla",
+  "motion": "nothing in the scene moves, the camera slowly drifts to the left",
+  "maxs": 2.4
+ },
+ {
+  "at": "17.2",
+  "id": "s_podio",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "copyimg": "kf__o_podio",
+  "motion": "nothing in the scene moves, the camera slowly orbits a little to the right"
+ },
+ {
+  "at": "19.3",
+  "id": "s_caja",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "dusk",
+  "copyimg": "kf__o_caja_naranja",
+  "motion": "nothing in the scene moves, the camera slowly pushes in"
+ },
+ {
+  "at": "13.0@es como la patente",
+  "id": "s_radar_sala",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "day",
+  "copyimg": "kf__c_radar",
+  "motion": "nothing in the scene moves, the camera slowly drifts to the right",
+  "maxs": 2.0
+ },
+ {
+  "at": "5.12@y se abrieron",
+  "id": "s_techo",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "v8": true,
+  "act": "alert",
+  "copyimg": "kf__o_techo",
+  "motion": "nothing in the scene moves, the camera slowly cranes up a little"
+ },
+ {
+  "at": "5.7@la altitud del avión",
+  "id": "s_ext_tiembla",
+  "kind": "clip",
+  "w": 1.0,
+  "tag": "RECONSTRUCCIÓN",
+  "clipsrc": "c_ext_tiembla",
+  "ss": 1.6,
+  "v8": true,
+  "act": "alert"
+ },
+ {
+  "at": "21.1@que trataba",
+  "id": "r_cmd_salvar",
+  "kind": "clip",
+  "w": 1.0,
+  "clipsrc": "r_pmo_d",
+  "real": true,
+  "ss": 0,
+  "rotulo": [
+   "Smit Machchhar",
+   "PMO India (CC BY 4.0)"
+  ],
+  "v8": true,
+  "act": "dusk"
+ }
+]
