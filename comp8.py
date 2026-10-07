@@ -393,7 +393,7 @@ def r_cabina8(sh, sid, DUR, put):
             ax, ay = d2p(ax, ay); p0 = Pp(*pos[fid][:2]); p1 = Pp(ax, ay); k = ramp(t, k1[0], k1[0] + 0.5)
             cv.line([p0, (lerp(p0[0], p1[0], k), lerp(p0[1], p1[1], k))], ORANGE, 6, 0.95)
         ttl = sh.get("title", "Cabina de mando · vista desde arriba")
-        tag(cv, 0.040, 0.075, ttl.upper(), 24, "black", a=1, anchor="l")
+        tag(cv, 0.040, 0.215 if sh.get("reloj") else 0.075, ttl.upper(), 24, "black", a=1, anchor="l")   # con reloj: debajo del reloj
         footer(cv, sh.get("src", "Posiciones ilustrativas · relato del comandante (Ynet), pasajeros y fiscalía de EAU"))
         put(grade(cv.out(), t, i))
 
