@@ -27,7 +27,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: ffmpeg
-        run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+        timeout-minutes: 8
+        run: |
+          which ffmpeg && exit 0
+          timeout 240 sh -c 'sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg' && exit 0
+          curl -sfL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | tar -xJ && sudo cp ffmpeg-*-static/ffmpeg ffmpeg-*-static/ffprobe /usr/local/bin/
       - name: bajar planos
         run: |
           export SLUG="${GITHUB_REF_NAME#encode-}"; echo "SLUG=$SLUG" >> "$GITHUB_ENV"
@@ -58,7 +62,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: ffmpeg
-        run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+        timeout-minutes: 8
+        run: |
+          which ffmpeg && exit 0
+          timeout 240 sh -c 'sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg' && exit 0
+          curl -sfL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | tar -xJ && sudo cp ffmpeg-*-static/ffmpeg ffmpeg-*-static/ffprobe /usr/local/bin/
       - name: unir + mezcla + subir
         run: |
           SLUG="${GITHUB_REF_NAME#encode-}"
