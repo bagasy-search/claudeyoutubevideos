@@ -1,0 +1,8 @@
+[
+ {"name": "b_moldempty", "prompt": "Top view of an empty rectangular mold made of four wooden battens screwed onto an old plywood board, lined inside with brown packing tape, on a wooden workbench in a bright backyard workshop, a tape measure lying across it."},
+ {"name": "b_runny", "prompt": "Close view of a mason's trowel lifting watery gray cement and stone-chip mix that drips and runs off the blade back into a black bucket."},
+ {"name": "b_halfsanded", "prompt": "Top view of a cement slab on a workbench: the left half dull plain gray cement skin, the right half wet-sanded showing the cut faces of black, white and gray stone chips like granite, a sanding block on the line between them."},
+ {"name": "b_steelwool", "prompt": "A steel wool scouring pad and a bottle of bleach next to a glossy granite-looking cement countertop with fine scratches and a dull patch."},
+ {"name": "b_whitesand", "prompt": "A small pile of very white fine sand on a dark board in daylight, a trowel beside it."},
+ {"name": "b_yellowsand", "prompt": "A small pile of yellowish-orange river sand on a dark board in daylight, a trowel beside it."}
+]

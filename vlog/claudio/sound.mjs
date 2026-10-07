@@ -14,12 +14,13 @@ const AMB = [
   ["amb/amb_hotel_lobby.flac", /lobby|reception|checking in/i],
   ["amb/amb_hotel_hallway.flac", /corridor|hallway|cart|storeroom|guest-room door|room numbers|door numbered|service hallway/i],
   ["amb/amb_indoor_generic.flac", /office|desk|calendar|notebook|printed/i],
-  ["amb/amb_suburb_backyard.flac", /backyard|lawn|septic|cabins|resort/i],
+  ["amb/amb_suburb_backyard.flac", /backyard|lawn|septic|cabins|resort|patio|workshop|workbench|yard|fence|barbecue|grill/i],
+  ["amb/amb_bath_tile.flac", /bathroom|shower|tiles/i],
   ["amb/amb_laundry.flac", /laundry|washer|washing machine|dryer/i],
   ["amb/amb_house_birds_fridge.flac", /kitchen|kettle|soda|cola|supermarket|store shelf|cider|glass at a kitchen/i],
   ["amb/amb_bath_fan.flac", /shower head|steam|fan/i],
 ];
-const AMB_BATH = "amb/amb_bath_tile.flac", AMB_SHOP = "amb/amb_indoor_generic.flac";
+const AMB_BATH = "amb/amb_suburb_backyard.flac", AMB_SHOP = "amb/amb_indoor_generic.flac";
 export function ambOf(c, prompt = "") { const t = (c.name || "") + " " + prompt; for (const [f, re] of AMB) if (re.test(t)) return f; return AMB_BATH; }
 
 // ── foley por lo que se ve (primera coincidencia gana): [regex, archivos, vol, dur máx s, offset s]
