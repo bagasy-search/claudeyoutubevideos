@@ -31,10 +31,12 @@ jobs:
       - name: bajar planos
         run: |
           export SLUG="${GITHUB_REF_NAME#encode-}"; echo "SLUG=$SLUG" >> "$GITHUB_ENV"
+          if curl -sfIL -o /dev/null "https://github.com/${{ github.repository }}/releases/download/$SLUG-farm-out/tramo_${{ matrix.k }}.mp4"; then echo "SKIP=1" >> "$GITHUB_ENV"; echo "tramo ya codificado"; exit 0; fi
           python3 -c "import json;c=[x for x in json.load(open('chunks.json')) if x['k']==${{ matrix.k }}][0];print('\n'.join(c['ids']))" > ids.txt
           mkdir -p p; cat ids.txt | xargs -P 8 -I{} sh -c 'for n in 1 2 3 4; do curl -sfL -o p/{}.mp4 "https://github.com/${{ github.repository }}/releases/download/$SLUG-farm-out/{}.mp4" && break; sleep $((n*5)); done'
           : > list.txt; while read i; do test -s "p/$i.mp4" || { echo "falta $i"; exit 1; }; echo "file 'p/$i.mp4'" >> list.txt; done < ids.txt
       - name: codificar tramo
+        if: env.SKIP != '1'
         run: |
           MAXR=$(python3 -c "import json;print(json.load(open('chunks.json'))[0]['maxr'])")
           # cada plano exactamente con 'fr' cuadros (trim o clonar el último): el corte cae en el cuadro del plan, sin deriva acumulada
