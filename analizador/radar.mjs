@@ -50,6 +50,16 @@ export function parseAgo(s) {
     : u.startsWith("h") ? 1 / 24 : 0; // segundos/minutos → 0
   return Math.max(0.5, n * per);
 }
+// lockup: content "1.2M" + label "1.2 million views" → toma el label (más preciso)
+const viewsOf = (parts) => {
+  const p = parts.find((x) => /view/i.test(x));
+  if (!p) return 0;
+  const m = p.match(/([\d,.]+)\s*(thousand|million|billion)?\s*views/i);
+  if (m) return Math.round(parseFloat(m[1].replace(/,/g, "")) * ({ thousand: 1e3, million: 1e6, billion: 1e9 }[(m[2] || "").toLowerCase()] || 1));
+  return parseCount(p);
+};
+// mercado objetivo = inglés: descarta títulos con escrituras no latinas
+export const isEnglishish = (t) => !/[\u0900-\u0DFF\u0600-\u06FF\u0400-\u04FF\u3040-\u30FF\u4E00-\u9FFF\uAC00-\uD7AF\u0E00-\u0E7F]/.test(t || "");
 const jsonAfter = (h, key) => {
   const i = h.indexOf(key);
   if (i < 0) return null;
@@ -171,19 +181,23 @@ async function channelInfo(id) {
     description: (pick(/"channelMetadataRenderer":\{[^]*?"description":"((?:[^"\\]|\\.)*)"/) || "").slice(0, 300),
   };
   info.ageDays = info.joined ? Math.round((NOW - Date.parse(info.joined)) / 864e5) : null;
-  const hv = await get(`https://www.youtube.com/channel/${id}/videos`);
+  // canales viejos (>1 año) solo cuentan como oferta/competencia: no hace falta su lista de videos
   const vids = [];
+  info.videos = vids;
+  info.fetchedAt = NOW;
+  if ((info.ageDays ?? 0) > 365 && process.env.FULL !== "1") return info;
+  const hv = await get(`https://www.youtube.com/channel/${id}/videos`);
   if (hv) {
     walk(jsonAfter(hv, "var ytInitialData = "), (n) => {
       if (n.lockupViewModel?.contentId) {
         const l = n.lockupViewModel, md = l.metadata?.lockupMetadataViewModel;
         const parts = [];
-        walk(md?.metadata, (m) => { if (m.metadataParts) { for (const p of m.metadataParts) parts.push(p.text?.content || ""); return false; } });
+        walk(md?.metadata, (m) => { if (m.metadataParts) { for (const p of m.metadataParts) parts.push(`${p.text?.content || ""} ${p.accessibilityLabel || ""}`); return false; } });
         let len = "";
         walk(l.contentImage, (m) => { if (m.thumbnailBadgeViewModel?.text) { len = m.thumbnailBadgeViewModel.text; return false; } });
         vids.push({
           id: l.contentId, title: md?.title?.content || "",
-          views: parseCount(parts.find((p) => /view/i.test(p))), ageDays: parseAgo(parts.find((p) => /ago/i.test(p))), len,
+          views: viewsOf(parts), ageDays: parseAgo(parts.find((p) => /ago/i.test(p))), len,
         });
         return false;
       }
@@ -203,7 +217,7 @@ async function cmdChannels() {
   const chans = readJ("channels.json", {});
   // canal candidato = tiene al menos un video ≥ HIT/3 en la ventana (los hits fuertes sobran; los medianos sirven para saturación)
   const want = new Map();
-  for (const v of vids) if (v.channelId && v.views >= HIT / 3) want.set(v.channelId, true);
+  for (const v of vids) if (v.channelId && v.views >= HIT / 3 && isEnglishish(v.title)) want.set(v.channelId, true);
   const todo = [...want.keys()].filter((id) => !chans[id] || NOW - chans[id].fetchedAt > 864e5);
   console.error(`channels: ${want.size} candidatos, ${todo.length} a bajar`);
   let k = 0;
@@ -245,8 +259,8 @@ async function cmdSnapshot() {
     walk(jsonAfter(hv, "var ytInitialData = "), (n) => {
       if (n.lockupViewModel?.contentId) {
         const parts = [];
-        walk(n.lockupViewModel.metadata, (m) => { if (m.metadataParts) { for (const p of m.metadataParts) parts.push(p.text?.content || ""); return false; } });
-        snap[n.lockupViewModel.contentId] = parseCount(parts.find((p) => /view/i.test(p)));
+        walk(n.lockupViewModel.metadata, (m) => { if (m.metadataParts) { for (const p of m.metadataParts) parts.push(`${p.text?.content || ""} ${p.accessibilityLabel || ""}`); return false; } });
+        snap[n.lockupViewModel.contentId] = viewsOf(parts);
         return false;
       }
     });
