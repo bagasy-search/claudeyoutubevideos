@@ -457,9 +457,11 @@ if (path.resolve(wav) !== path.resolve(wavEsperadoPorStitch)) {
 const releaseFiles = [...uploadFiles, wav, ...(path.resolve(wav) !== path.resolve(wavEsperadoPorStitch) ? [wavEsperadoPorStitch] : [])];
 let reusableRelease = false;
 try {
-  const release = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
+  // REST y no `gh release view`: ése va por GraphQL, que el proxy de las sesiones en la nube bloquea.
+  // En la nube el release lo publica una Action (entrega.yml con `tag`) y acá sólo se reutiliza.
+  const release = JSON.parse(out(`gh api "repos/{owner}/{repo}/releases/tags/${relTag}"`));
   const remote = new Map((release.assets || []).map((asset) => [asset.name, Number(asset.size || 0)]));
-  reusableRelease = !release.isDraft && releaseFiles.every((file) => remote.get(path.basename(file)) === fs.statSync(file).size);
+  reusableRelease = !release.draft && releaseFiles.every((file) => remote.get(path.basename(file)) === fs.statSync(file).size);
 } catch { /* no existe o está incompleto */ }
 // `gh release create` puede dejar un draft huérfano si la subida grande se corta. Ese draft no
 // siempre aparece en `gh release view <tag>` y el reintento falla para siempre con HTTP 422. La API
@@ -598,7 +600,8 @@ const entry = process.env.ENTRY || "";
   const relTag = `assets-${slug}`;
   let ok = false, motivo = "";
   try {
-    const j = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
+    const r = JSON.parse(out(`gh api "repos/{owner}/{repo}/releases/tags/${relTag}"`));   // REST (la nube bloquea GraphQL)
+    const j = { isDraft: r.draft, assets: r.assets };
     const tarAssets = (j.assets || []).filter((a) => /\.tar(?:\.part\d+)?$/i.test(a.name));
     const tarBytes = tarAssets.reduce((sum, asset) => sum + Number(asset.size || 0), 0);
     if (j.isDraft) motivo = "el release quedó en DRAFT (la subida no terminó) — los runners no pueden bajarlo";

@@ -61,6 +61,8 @@ export async function prepararWorktree({ slug, commit, files, wt, assetsList, ru
       if (!st.isSymbolicLink()) throw new Error(`${link} existe y NO es junction: no lo toco (revisar a mano)`);
       continue;
     }
+    // Linux (sesiones en la nube): symlink de directorio, mismo papel que el junction de Windows.
+    if (process.platform !== "win32") { fs.mkdirSync(path.join(ROOT, d), { recursive: true }); fs.symlinkSync(path.join(ROOT, d), link, "dir"); continue; }
     await runner("cmd", ["/c", "mklink", "/J", link.replace(/\//g, "\\"), path.join(ROOT, d).replace(/\//g, "\\")], { timeoutMs: 30_000 });
   }
   fs.copyFileSync(assetsList, path.join(wt, path.basename(assetsList)));
