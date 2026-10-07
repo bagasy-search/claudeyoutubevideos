@@ -61,7 +61,7 @@ export const ClHeatSides: React.FC<{ mode?: "three" | "glass" | "roof" | "night"
       <Tag x={1270} y={470} text="1 · El vidrio" color={HOT} o={kg} />
       <Tag x={760} y={190} text="2 · La losa" color={HOT} o={kr} />
       <Tag x={430} y={330} text="3 · El aire de noche" color={HOT} o={kn} />
-      <div style={{ position: "absolute", left: 760, top: 330, fontFamily: HAND, fontWeight: 700, fontSize: 54, color: CL.ink, opacity: lin(f, 6, 14) }}>el cuarto de arriba</div>
+      <div style={{ position: "absolute", left: 780, top: 395, fontFamily: HAND, fontWeight: 700, fontSize: 54, color: CL.ink, opacity: lin(f, 6, 14) }}>el cuarto de arriba</div>
       <RoomLight k={0.35} />
     </AbsoluteFill>
   );
