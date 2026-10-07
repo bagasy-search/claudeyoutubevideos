@@ -2679,6 +2679,7 @@
   "kind": "mapamad",
   "w": 1.0,
   "v8": true,
+  "cities": [],
   "cam": [
    [
     0,
@@ -6314,7 +6315,13 @@
   "alt": [
    "-10.000",
    "pies por minuto",
-   null
+   0
+  ],
+  "wk": [
+   [
+    "diez mil pies",
+    0
+   ]
   ],
   "act": "alerta",
   "src": "BEA · informe final (2012)",
@@ -10082,6 +10089,7 @@
   "kind": "mapamad",
   "w": 1.0,
   "v8": true,
+  "cities": [],
   "cam": [
    [
     0,
@@ -11310,7 +11318,13 @@
   "alt": [
    "30",
    "días en 2009",
-   null
+   0
+  ],
+  "wk": [
+   [
+    "no treinta",
+    0
+   ]
   ],
   "act": "lab"
  },
