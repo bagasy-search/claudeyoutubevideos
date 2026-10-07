@@ -6,7 +6,7 @@ const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o
 const I = "img/algotera/";
 export const SHOTS = [
   S(44, "", "bi", "st_autumn", { q: "autumn leaves falling", p: BI("Autumn leaves falling in a backyard.") }),
-  S(44, "Diez minutos con un balde y guantes", "bi", "b_cleandrain", { p: BI(`Close view of a gloved hand lifting leaves out of a gutter of an old house into a bucket.`) }),
+  S(44, "Diez minutos con un balde y guantes", "bi", "b_cleandrain", { q: "cleaning gutter leaves", p: BI(`Close view of a gloved hand lifting leaves out of a gutter of an old house into a bucket.`) }),
   S(45, "", "bi", "b_oldmembrane", { p: BI("An old white roof membrane with small cracks and a few soft bubbles, ready to be recoated.") }),
   S(46, "", "bi", "b_sagging", { p: BI("A white kitchen ceiling sagging and bulging down in one spot with a brown stain, looking heavy with water.") , ov: { c: "ClChip", props: { text: "Llame a un profesional", alert: true } } }),
   S(46, "Eso es peligroso", "av", ""),
@@ -17,11 +17,11 @@ export const SHOTS = [
   S(51, "", "bi", "b_bathsilicone", { p: BI("A cracked yellowed strip of bathroom silicone peeling off a concrete roof crack in the sun.") , ov: { c: "ClChip", props: { text: "Error 4", alert: true } } }),
   S(52, "", "bi", "b_drainstill", { p: BI("A sealed crack on a flat roof next to a drain funnel still clogged with leaves and a puddle around it.") , ov: { c: "ClChip", props: { text: "Error 5", alert: true } } }),
   C(53, "", "ClChapter", { n: 5, title: "Lo que siempre me preguntan", sub: "rapidito" }),
-  S(54, "", "bi", "b_tarcrack", { p: BI("Old black tar on a roof cracked into a web of lines by the sun.") }),
+  S(54, "", "bi", "b_tarcrack", { q: "cracked asphalt surface", p: BI("Old black tar on a roof cracked into a web of lines by the sun.") }),
   S(55, "", "bi", "st_rainroof", { q: "rain on roof puddles", p: BI("Rain falling on a flat roof with puddles.") }),
   S(56, "", "bi", "b_whitemembrane", { p: BI("A flat concrete roof fully coated with bright white membrane gleaming in the sun, the small upstairs room beside it.") }),
   S(57, "", "bi", "st_salvage", { q: "old roof tiles stack", p: BI("A stack of old clay roof tiles in a salvage yard.") }),
-  S(58, "", "bi", "b_aptceiling", { p: BI("A water stain on the ceiling of an apartment bathroom under the neighbor's floor, a phone taking a photo of it.") }),
+  S(58, "", "bi", "b_aptceiling", { q: "ceiling water leak", p: BI("A water stain on the ceiling of an apartment bathroom under the neighbor's floor, a phone taking a photo of it.") }),
   S(59, "", "bi", "b_supplies4", { p: BI("A gray sealant cartridge, a caulking gun, a bucket of liquid membrane and a roll of white fabric lined up on a concrete roof.") }),
   S(60, "", "bi", "b_roofyear", { p: BI(`${H} running a palm over a white roof membrane checking for cracks, a small notebook on the roof beside it.`) }),
   S(61, "", "bi", "b_belowwatch", { p: BI(`Someone standing in ${KITCHEN} looking up at the ceiling holding a phone to their ear, a hose's water sound implied from above.`) }),
