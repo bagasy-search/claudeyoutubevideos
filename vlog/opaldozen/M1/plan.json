@@ -1,0 +1,80 @@
+{
+ "dir": "D:/Proyectos/video2-wt/opaldozen/vlog/opaldozen/M1",
+ "face": "D:/Proyectos/video2-wt/opaldozen/public/ref_opaldozen_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/opaldozen/public/ref_opaldozen.png",
+ "pronoun": "she",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen background stays fully readable. The only light is what the place really has: morning daylight through the kitchen window; correctly exposed. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; hair with stray strands; clothes with real creases; feathers with real texture. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural older hands; she moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same woman, a bright Sunday morning in an old Indiana farmhouse kitchen. Opal, a 68-year-old farm woman with grey hair pulled back in a loose low bun with stray strands, a navy blue long-sleeved cotton dress with a tiny pink and white flower print and small buttons, a grey and white pinstriped cotton pinafore apron over it, natural older skin with lines and age spots, no jewelry sits at a worn wooden farmhouse kitchen table with a checked oilcloth covered in a big messy pile of crumpled receipts, an old adding machine with a paper tape and a carton of brown eggs, holding up one brown egg in her fingers toward the camera, eyebrows raised, a wry knowing face. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same kitchen table: she lowers the egg and taps the adding machine tape with one finger, looking at the camera, dry and amused. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same morning, same kitchen: she stands at the table tipping an old shoebox upside down, crumpled receipts pouring out onto the table, looking at the camera. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "A few seconds later: she sits down at the table among the spilled receipts and picks up a pencil, glancing at the camera. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same table a while later: she sits back in her chair with her arms crossed and one eyebrow raised, a dry little smile, looking at the camera as if someone just asked her something silly. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "A few seconds later, same place: she tilts her head and shrugs one shoulder with a patient smile at the camera. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/opaldozen/vlog/opaldozen/tramos/m1.wav",
+   "text": "Four dollars and thirty-seven cents.",
+   "action": "She holds up the egg and says the number to the camera, then taps the paper tape. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "m2",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/opaldozen/vlog/opaldozen/tramos/m2.wav",
+   "text": "and on Sunday I dumped it out on the kitchen table",
+   "action": "She tips the shoebox and the receipts pour out onto the table, then sits down. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "m3",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/opaldozen/vlog/opaldozen/tramos/m3.wav",
+   "text": "so why don't you just buy eggs?",
+   "action": "Arms crossed, she repeats her grandson's question to the camera with a dry smile and a little shrug. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/opaldozen/vlog/opaldozen/M1/out.mp4"
+}

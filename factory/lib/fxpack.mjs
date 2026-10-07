@@ -203,7 +203,10 @@ export function aplicarFx({ slug, style, cues, ventanas, plan, words, audioDesde
     eventos.push({ src: pub(`${SD}/${s.k === "out" ? AMB_OUT : AMB_IN}.wav`), at: (s.a - audioDesdeF) / 30, dur: (s.b - s.a) / 30, vol: s.k === "out" ? (cfg.volViento ?? 0.55) : (cfg.volFuego ?? 0.45), fi: 1.5, fo: 1.5, loop: true });
   }
   let nSiz = 0;
-  for (const c of base) {
+  // ⛔ (05-oct, hlcasas) el chisporroteo es del kit de Lou (diner): en un canal sin `sizzle.wav` (Harlan) una foto
+  //    con "frying/pork" en el prompt rompía 60_build con un faltante que el director no puede arreglar.
+  const haySizzle = fs.existsSync(pub(`${SD}/sizzle.wav`));
+  for (const c of haySizzle ? base : []) {
     const I = info.get(c);
     if (!I.esFoto || !I.caliente || I.esV || c.dur < F(2) || !/fry|fried|frying|sizzl|lard|bacon fat|pork/i.test(planBy.get(I.nombre)?.prompt || "")) continue;
     eventos.push({ src: pub(`${SD}/sizzle.wav`), at: (c.start - audioDesdeF) / 30, dur: c.dur / 30, vol: cfg.volSizzle ?? 0.35, fi: 0.25, fo: 0.35 });

@@ -1,0 +1,314 @@
+[
+ {
+  "key": "broll/opaldozen/b_shoebox.mp4",
+  "src": "broll/opaldozen/b_shoebox.mp4",
+  "start": 8.766666666666667,
+  "dur": 2.6
+ },
+ {
+  "key": "broll/opaldozen/b_adding.mp4",
+  "src": "broll/opaldozen/b_adding.mp4",
+  "start": 14.166666666666666,
+  "dur": 1.6
+ },
+ {
+  "key": "broll/opaldozen/b_pricetag.mp4",
+  "src": "broll/opaldozen/b_pricetag.mp4",
+  "start": 18.833333333333332,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_bottompage.mp4",
+  "src": "broll/opaldozen/b_bottompage.mp4",
+  "start": 47.43333333333333,
+  "dur": 2.066666666666667
+ },
+ {
+  "key": "broll/opaldozen/b_caleb.mp4",
+  "src": "broll/opaldozen/b_caleb.mp4",
+  "start": 49.5,
+  "dur": 1.6333333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_paleegg.mp4",
+  "src": "broll/opaldozen/b_paleegg.mp4",
+  "start": 55.96666666666667,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_mabel.mp4",
+  "src": "broll/opaldozen/b_mabel.mp4",
+  "start": 60,
+  "dur": 1.6333333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_threeold.mp4",
+  "src": "broll/opaldozen/b_threeold.mp4",
+  "start": 77.33333333333333,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "broll/opaldozen/b_receipts.mp4",
+  "src": "broll/opaldozen/b_receipts.mp4",
+  "start": 103.26666666666667,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_calendar.mp4",
+  "src": "broll/opaldozen/b_calendar.mp4",
+  "start": 115.1,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_wireroll.mp4",
+  "src": "broll/opaldozen/b_wireroll.mp4",
+  "start": 148.43333333333334,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_feedbags.mp4",
+  "src": "broll/opaldozen/b_feedbags.mp4",
+  "start": 156.63333333333333,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_can.mp4",
+  "src": "broll/opaldozen/b_can.mp4",
+  "start": 241.96666666666667,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_shavingsbales.mp4",
+  "src": "broll/opaldozen/b_shavingsbales.mp4",
+  "start": 247.13333333333333,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_deeplitter.mp4",
+  "src": "broll/opaldozen/b_deeplitter.mp4",
+  "start": 265.3333333333333,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_springclean.mp4",
+  "src": "broll/opaldozen/b_springclean.mp4",
+  "start": 270.43333333333334,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_oyster.mp4",
+  "src": "broll/opaldozen/b_oyster.mp4",
+  "start": 283.8,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_heatedbase.mp4",
+  "src": "broll/opaldozen/b_heatedbase.mp4",
+  "start": 299.8333333333333,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_deadbase.mp4",
+  "src": "broll/opaldozen/b_deadbase.mp4",
+  "start": 306.06666666666666,
+  "dur": 3.433333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_hardware.mp4",
+  "src": "broll/opaldozen/b_hardware.mp4",
+  "start": 324.1666666666667,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "broll/opaldozen/b_trailcam.mp4",
+  "src": "broll/opaldozen/b_trailcam.mp4",
+  "start": 327.43333333333334,
+  "dur": 2.2
+ },
+ {
+  "key": "broll/opaldozen/b_eggbaskets.mp4",
+  "src": "broll/opaldozen/b_eggbaskets.mp4",
+  "start": 360.96666666666664,
+  "dur": 3.4
+ },
+ {
+  "key": "broll/opaldozen/b_church.mp4",
+  "src": "broll/opaldozen/b_church.mp4",
+  "start": 377.5,
+  "dur": 1.5333333333333334
+ },
+ {
+  "key": "broll/opaldozen/b_cracked.mp4",
+  "src": "broll/opaldozen/b_cracked.mp4",
+  "start": 379.03333333333336,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_scrambled.mp4",
+  "src": "broll/opaldozen/b_scrambled.mp4",
+  "start": 383.6,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_shoebox2.mp4",
+  "src": "broll/opaldozen/b_shoebox2.mp4",
+  "start": 401.3666666666667,
+  "dur": 3.433333333333333
+ },
+ {
+  "key": "broll/opaldozen_st/st_eggs_4.mp4",
+  "src": "broll/opaldozen_st/st_eggs_4.mp4",
+  "start": 479.06666666666666,
+  "dur": 1.8333333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_onetime.mp4",
+  "src": "broll/opaldozen/b_onetime.mp4",
+  "start": 495.6333333333333,
+  "dur": 3.1333333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_threeeggs.mp4",
+  "src": "broll/opaldozen/b_threeeggs.mp4",
+  "start": 548.6333333333333,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_speckled.mp4",
+  "src": "broll/opaldozen/b_speckled.mp4",
+  "start": 553.2666666666667,
+  "dur": 2.1333333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_dottiemolt.mp4",
+  "src": "broll/opaldozen/b_dottiemolt.mp4",
+  "start": 555.4,
+  "dur": 3.3333333333333335
+ },
+ {
+  "key": "broll/opaldozen/b_pinfeathers.mp4",
+  "src": "broll/opaldozen/b_pinfeathers.mp4",
+  "start": 567.4666666666667,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "broll/opaldozen/b_oldhens.mp4",
+  "src": "broll/opaldozen/b_oldhens.mp4",
+  "start": 579.9333333333333,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_friedegg.mp4",
+  "src": "broll/opaldozen/b_friedegg.mp4",
+  "start": 629.5333333333333,
+  "dur": 3.6
+ },
+ {
+  "key": "broll/opaldozen/b_cleaningday.mp4",
+  "src": "broll/opaldozen/b_cleaningday.mp4",
+  "start": 651.9,
+  "dur": 1.8666666666666667
+ },
+ {
+  "key": "broll/opaldozen/b_coop1994.mp4",
+  "src": "broll/opaldozen/b_coop1994.mp4",
+  "start": 664.8333333333334,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_coopstand.mp4",
+  "src": "broll/opaldozen/b_coopstand.mp4",
+  "start": 671.2666666666667,
+  "dur": 1.5
+ },
+ {
+  "key": "broll/opaldozen/b_compostbags.mp4",
+  "src": "broll/opaldozen/b_compostbags.mp4",
+  "start": 686.6666666666666,
+  "dur": 3.7666666666666666
+ },
+ {
+  "key": "broll/opaldozen/b_cartonstack.mp4",
+  "src": "broll/opaldozen/b_cartonstack.mp4",
+  "start": 702.2333333333333,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_oldfeeder.mp4",
+  "src": "broll/opaldozen/b_oldfeeder.mp4",
+  "start": 745.9333333333333,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_hungfeeder.mp4",
+  "src": "broll/opaldozen/b_hungfeeder.mp4",
+  "start": 765.0666666666667,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_ring.mp4",
+  "src": "broll/opaldozen/b_ring.mp4",
+  "start": 776.9333333333333,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_garden.mp4",
+  "src": "broll/opaldozen/b_garden.mp4",
+  "start": 799.9666666666667,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_cooler.mp4",
+  "src": "broll/opaldozen/b_cooler.mp4",
+  "start": 817.5666666666667,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_labels.mp4",
+  "src": "broll/opaldozen/b_labels.mp4",
+  "start": 832.8,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_fridgeeggs.mp4",
+  "src": "broll/opaldozen/b_fridgeeggs.mp4",
+  "start": 840.1333333333333,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_calebeggs.mp4",
+  "src": "broll/opaldozen/b_calebeggs.mp4",
+  "start": 865.4666666666667,
+  "dur": 4
+ },
+ {
+  "key": "broll/opaldozen/b_smallcoop.mp4",
+  "src": "broll/opaldozen/b_smallcoop.mp4",
+  "start": 893.9333333333333,
+  "dur": 2.7333333333333334
+ },
+ {
+  "key": "broll/opaldozen/b_closing.mp4",
+  "src": "broll/opaldozen/b_closing.mp4",
+  "start": 969.0666666666667,
+  "dur": 3.2
+ },
+ {
+  "key": "vid/opaldozen/m1.mp4",
+  "src": "vid/opaldozen/m1.mp4",
+  "start": 0,
+  "dur": 2.2
+ },
+ {
+  "key": "vid/opaldozen/m2.mp4",
+  "src": "vid/opaldozen/m2.mp4",
+  "start": 11.366666666666667,
+  "dur": 2.8
+ },
+ {
+  "key": "vid/opaldozen/m3.mp4",
+  "src": "vid/opaldozen/m3.mp4",
+  "start": 51.13333333333333,
+  "dur": 1.8333333333333333
+ }
+]
