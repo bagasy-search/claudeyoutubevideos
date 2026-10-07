@@ -1,0 +1,85 @@
+[HOOK|error] Si vas a hervir cemento para hacer piedras, que no hierva. Ése es el error del video que viste: a borbotones, se te rajan por dentro.
+[HOOK|cantero] Mira este cantero. El borde era de ladrillos rotos, desparejos, que se iban cayendo para el pasto. Y una piedra de río de verdad, en el vivero, te la cobran como si fuera de joyería.
+[HOOK|promesa] Y mira ahora. Piedras grises, redondas, lisas, con brillo de mojadas. Parecen sacadas del río. Las hice yo, con cemento, arena y globos. Un dólar de cemento por una docena.
+[HOOK|vecino] Mi vecino agarró una, la dio vuelta en la mano y me dijo que eso era del vivero. Le dije que la partiera, si podía.
+[HOOK|rafaga] Mira. Cemento y arena, bien espeso. Embudo. Al globo. Un día sobre la arena. Corto el globo. Al agua caliente, que humee. Lija al agua. Cera.
+[HOOK|grito] ¡Y le tiro agua, y mira cómo brilla, como recién sacada del río!
+[HOOK|loops] Pero hay tres cosas que tienes que saber. Por qué el hervor fuerte las raja por dentro. Por qué el agua caliente las endurece en horas y no en semanas. Y lo que pasó cuando el vecino las hirvió a borbotones. Primero, la receta.
+[RECETA|lista] Lo que necesitas: cemento gris y arena fina. Globos, o huevos de plástico de los que se abren, como molde. Un embudo, una olla vieja que no uses para cocinar, un balde con arena, una lija al agua y cera de piso.
+[RECETA|truco] Y acá está el truco de todo el video. El cemento se endurece con agua. Y con agua caliente, se endurece mucho más rápido. Pero caliente no es hirviendo. Ésa es toda la diferencia entre una piedra y un montón de pedazos.
+[RECETA|mezcla] La mezcla. Una parte de cemento y dos de arena fina, en volumen. Un vaso de cemento, dos vasos de arena. La mezclo en seco, primero, hasta que quede de un gris parejo.
+[RECETA|agua] Después el agua, de a poco, revolviendo. Tiene que quedar espesa, como un puré. Si la aprietas en la mano, mantiene la forma y no chorrea. Si te pasas de agua, la piedra queda floja y se te desarma.
+[RECETA|globo] Ahora el globo. Le meto el embudo en la boca, y voy empujando la mezcla con un palito. Despacio, golpeando el globo contra la mesa para que baje y no queden huecos de aire.
+[RECETA|tamano] El tamaño lo eliges tú. Un globo a medio llenar te da una piedra como un huevo grande. Más lleno, como un puño. Y si quieres formas distintas, no las llenes todas igual.
+[RECETA|atar] Le hago un nudo, bien cerca de la mezcla, para que no quede aire adentro. Y con las manos, le doy un poco de forma: la aplasto de un lado, la estiro del otro. Las piedras de río no son pelotas.
+[RECETA|arena] Las acomodo sobre una cama de arena, en el balde o en una caja. La arena las sostiene y les deja una base un poco plana, como una piedra apoyada en el río. Y las dejo veinticuatro horas, a la sombra.
+[RECETA|cortar] Al otro día, corto el globo con una tijera y lo pelo. Mira. Ya es una piedra, pero todavía está blanda por dentro. Si la golpeas ahora, se rompe.
+[RECETA|calentar] Ahora el baño. Pongo agua en la olla vieja y la caliento hasta que humee bien, pero sin que hierva. Que no salgan burbujas del fondo. Si tienes un termómetro, entre sesenta y setenta grados.
+[RECETA|meter] Meto las piedras despacio, con una cuchara grande, para que no golpeen el fondo. Y las dejo dos o tres horas, con el fuego al mínimo, cuidando que el agua siga humeando y no hierva.
+[RECETA|mirar] Cada tanto miro. Si empieza a burbujear, bajo el fuego, o le echo un poco de agua fría por el costado, lejos de las piedras. Sin apuro.
+[RECETA|enfriar] Apago y las dejo enfriar adentro del agua. Nada de sacarlas calientes al aire frío: el cambio de golpe también las puede rajar.
+[RECETA|lija] Ya frías, la lija al agua. Le saco la rebaba del nudo y las marcas del globo. La lija mojada, en círculos, y la piedra se pone suave como una de río. Si quieres, una lija más fina al final.
+[RECETA|cera] Y al final, la cera de piso, con un trapo. Una mano finita, y cuando se seca, la lustro. Eso le da el brillo de piedra mojada.
+[RECETA|final] Y mira esto. Grises, lisas, con brillo. Las pongo en el borde del cantero, y nadie te dice que son de cemento.
+[RECETA|resumen] Repaso rápido: una de cemento y dos de arena fina, espeso como puré, al globo con el embudo, un día sobre la arena, cortas el globo, dos o tres horas en agua que humea pero no hierve, enfrías en el agua, lija al agua y cera.
+[COSTO|intro] Y antes de seguir, la cuenta, porque te dije un dólar y quiero que veas de dónde sale.
+[COSTO|cemento] Un kilo de cemento, más o menos un dólar, depende de dónde vivas. La arena, dos kilos, centavos, o de la que sobró de alguna obra. Con eso salen unas doce piedras medianas.
+[COSTO|globos] Los globos, un paquete de cumpleaños. La cera, un chorrito de la lata que ya tienes. Y el gas de tres horas de olla a fuego mínimo.
+[COSTO|comparar] Una bolsa de piedras decorativas de río, en el vivero, sale varias veces más. Y las grandes, las que lucen en un cantero, te las cobran por unidad. Acá, una docena te sale lo que un café.
+[CTA1|hoja] Y una cosa. Las medidas exactas de esto, y las de las otras mezclas que fuimos probando en el canal, las tengo escritas paso a paso, cada una con el error que la arruina. La del cemento que parece granito, la de la silicona con cemento para la grieta, la del gel para el óxido.
+[CTA1|qr] Te las dejé en una página, gratis, sin registrarte ni nada. Si me estás viendo en el televisor, apunta la cámara de tu teléfono a este código y se te abre. Si estás en el teléfono, el enlace está abajo, en la primera línea de la descripción. Guárdala, que con las manos llenas de cemento no vas a querer buscar el video.
+[POR_QUE|intro] Ahora, ¿por qué el hervor fuerte las raja? Porque es lo que muestra el video viral: la olla a borbotones, las piedras saltando adentro, y parece que cuanto más hierve, mejor.
+[POR_QUE|poros] El cemento recién hecho está lleno de poros chiquitos, con agua adentro. Cuando el agua de afuera hierve, el agua de adentro de la piedra también quiere hervir. Se hace vapor, y el vapor empuja desde adentro. Por fuera no se ve nada, pero adentro quedan rajaduras finitas.
+[POR_QUE|golpes] Y además, a borbotones, las piedras saltan y se golpean contra el fondo y entre ellas, justo cuando todavía están tiernas.
+[POR_QUE|rajada] Lo hice para mostrarte. Mira. Ésta la herví fuerte, como en el video. Por fuera se ve bien. Pero la golpeo contra otra, y se parte al medio. Y adentro, mira: una rajadura de lado a lado.
+[POR_QUE|tarde] Y lo peor es que no te das cuenta en el momento. Salen de la olla lindas, enteras. La rajadura aparece a la semana, con el primer golpe o la primera helada.
+[POR_QUE|regla] Así que la regla es simple: que humee, que no hierva. Lo mismo que con la cola blanca, ¿te acuerdas? Lo que parecía impermeable no lo era. Acá, lo que parece más rápido, el hervor, es lo que las rompe.
+[CALOR|intro] Y la segunda cosa que te prometí. Por qué el agua caliente las endurece en horas y no en semanas.
+[CALOR|reaccion] El cemento no se seca, se endurece. Es distinto. Es una reacción con el agua, y como casi todas las reacciones, con calor va más rápido.
+[CALOR|semanas] Al aire libre, una piedra de cemento tarda semanas en llegar a su dureza. En agua caliente, que humea, en unas horas ya está dura para lijarla y usarla.
+[CALOR|caliente] Por eso el agua tiene que estar caliente las tres horas. Si se enfría a la mitad, la piedra sigue endureciendo, pero vuelve al ritmo lento.
+[CALOR|fabricas] Es lo mismo que hacen en las fábricas de bloques y de postes: los curan con vapor o con agua caliente, para no esperar un mes. Nosotros lo hacemos en una olla vieja.
+[ERRORES|intro] Ahora los errores que te arruinan las piedras, de mayor a menor.
+[ERRORES|hervor] Uno: hervirlas a borbotones. Es el del vecino, ya te voy a contar.
+[ERRORES|aguada] Dos: la mezcla aguada. Se ve más fácil de meter en el globo, pero la piedra queda floja, con agujeros, y se desgrana.
+[ERRORES|apuro] Tres: cortar el globo antes del día. Por fuera parece firme, y adentro todavía es barro. Se te deforma en la mano.
+[ERRORES|frio] Cuatro: sacarlas calientes y ponerlas en agua fría o al viento. El cambio de golpe las raja, igual que el hervor.
+[ERRORES|puro] Y cinco: hacerlas con cemento solo, sin arena. Se contraen más al endurecer, y se rajan solas en unos días.
+[VECINO|historia] Y ahora lo del vecino, que te prometí al principio.
+[VECINO|olla] Él había visto el video. Y como es de los que no preguntan dos veces, hizo veinte globos de cemento, los peló al otro día, y los metió en la olla grande, a fuego fuerte, a borbotones, una hora.
+[VECINO|lindas] Salieron lindas. Grises, redondas. Armó el borde del cantero de su señora, y la invitó a verlo.
+[VECINO|resultado] A la semana me tocó el timbre con media piedra en cada mano. Había pasado la cortadora de pasto cerca, una piedra le pegó a la otra, y las dos se partieron al medio. Y cuando fue a mirar, había otras tres rajadas solas.
+[VECINO|segunda] La segunda la hicimos juntos. Mezcla espesa, un día en la arena, y el agua humeando, sin una burbuja, tres horas. Él sentado al lado de la olla, mirando el fondo como si fuera la tele. Cada vez que veía una burbuja, me llamaba.
+[VECINO|cierre] Ya pasó un año. Y ahora el que le explica a todo el barrio que el cemento se calienta y no se hierve es él.
+[PRUEBA|intro] Pero el vecino no se iba a quedar tranquilo con verlas lindas. Quiso probarlas de verdad.
+[PRUEBA|caida] Primero, las dejó caer desde la cintura, una por una, sobre el piso del patio. Ni una se partió. Una se peló un poquito en la punta, nada más.
+[PRUEBA|choque] Después agarró dos y las chocó, fuerte, como para partir nueces. Sonaron a piedra, un ruido seco. Y enteras.
+[PRUEBA|helada] Y al final, las dejó en el cantero un invierno entero, con lluvia y heladas. En la primavera, las levantó una por una. Ninguna rajada. Y las que tenían cera, con el mismo brillo del primer día.
+[PRUEBA|cierre] Se agachó, le tiró agua a una para verle el brillo, y me dijo: "Bueno, me callo". Que en el idioma del vecino es lo más parecido a un aplauso.
+[CTA2|coleccion] Esto me pasa todo el tiempo, que alguien se arruina un trabajo por un detalle que nadie le dijo. Por eso fui juntando en la colección del canal todos estos arreglos de la casa, setenta y seis, con los materiales, las medidas y el error de cada uno, en el mismo orden en que se hacen. Cemento, madera, humedad, óxido, pisos, paredes.
+[CTA2|donde] Ahí tienes más trabajos con cemento para el patio: la piedra lavada, los pisos y los bordes, con las medidas exactas. Si ya abriste la página de las mezclas, al final te muestro qué trae. No te apuro: mira primero si las mezclas te sirven.
+[LIMITE|intro] Ahora, lo que esto no arregla. Porque no quiero que gastes un fin de semana en algo que no sirve.
+[LIMITE|carga] Son decorativas. Para el borde de un cantero, una maceta o un camino de jardín. No para levantar un muro, ni para nada que cargue peso. Sirven para decorar, no para sostener.
+[LIMITE|fuego] Y nunca alrededor del fuego, ni en la parrilla, ni en un fogón. El cemento con calor fuerte puede saltar en pedazos, y eso es peligroso.
+[LIMITE|grandes] Y si las quieres muy grandes, como una sandía, esto no es para eso. Las grandes tardan mucho más en curar por dentro, y se rajan más fácil. Del tamaño de un puño, como mucho.
+[VARIANTES|intro] Ahora, esto no es sólo para el cantero. Te muestro dónde más sirve.
+[VARIANTES|maceta] Alrededor de una maceta grande, tapando la tierra. Queda prolijo, y la tierra no se seca tan rápido.
+[VARIANTES|camino] Un camino de piedras planas en el pasto, para no pisar el barro. Ésas las haces con el globo bien aplastado, como un pan. Y abajo, una cama de arena, para que no se hundan.
+[VARIANTES|color] De colores. Le agregas a la mezcla seca un poquito de colorante para cemento, el polvo de ferretería. Rojizas, ocres, negras. Y mezclas varias en el cantero. Prueba primero con una, porque el color se aclara al secar.
+[VARIANTES|regalo] Y una chiquita, con la cera bien lustrada, como pisapapeles o sujetalibros. Es el regalo que más me piden.
+[MANTENER|intro] Y para que te duren años, tres costumbres.
+[MANTENER|cera] Una mano de cera una vez por año, para que no pierdan el brillo de mojadas. Diez minutos, con un trapo.
+[MANTENER|lavar] Si se ensucian de tierra, agua y un cepillo suave. Nada de lavandina, que les deja manchas blancas.
+[MANTENER|cortadora] Y cuidado con la cortadora de pasto. Ya viste lo que le pasó al vecino. Un borde de pasto sin cortar alrededor del cantero, y listo.
+[QA|intro] Ahora las preguntas que siempre me hacen con esto.
+[QA|blanco] ¿Con cemento blanco? Sí. Salen piedras claras, como de playa. La misma receta. Quedan lindas al lado de las grises.
+[QA|arena] ¿Y sin arena? No. El cemento solo se contrae más y se raja. La arena le da cuerpo.
+[QA|olla] ¿En la olla de la cocina? No. Una olla vieja, que quede para la obra. El cemento deja la olla áspera.
+[QA|tiempo] ¿Y si no tengo cómo calentar agua? Funciona igual, pero lento: en un balde de agua, a la sombra, un par de semanas. El calor sólo lo acelera.
+[QA|pecera] ¿Sirven para la pecera? No. El cemento suelta cal al agua y les hace mal a los peces. Para el jardín, sí.
+[QA|termometro] ¿Y si no tengo termómetro? Mira el fondo de la olla. Si humea y no ves burbujas que suben, está bien. Si suben burbujas, está hirviendo.
+[RECAP|todo] Así que ya lo sabes. Una de cemento y dos de arena fina, espeso como puré. Al globo con el embudo, un día sobre la arena. Cortas el globo, y dos o tres horas en agua que humea pero no hierve. Enfrías en el agua, lija al agua y cera. Que humee, que no hierva.
+[CTA3|qr] Y la receta escrita, con las medidas, está en la página de las mezclas, con las otras nueve. Apunta la cámara a este código, o el enlace está abajo. Es gratis.
+[NEXT|granito] Y con éste se terminan las diez mezclas. Si te perdiste la primera, la del cemento con barniz que parece granito, te la dejo acá. Es la que más me preguntan, y tiene su truco, como todas.
+[CLOSE|pregunta] Y cuéntame en los comentarios cuál de las diez vas a hacer primero. El vecino ya eligió: quiere las piedras rojizas.
+[CLOSE|chau] Ahora sí. A buscar los globos del último cumpleaños. Nos vemos.

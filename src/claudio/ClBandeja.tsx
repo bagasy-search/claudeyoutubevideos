@@ -108,7 +108,7 @@ export const ClTally: React.FC<{ total?: number; lost?: number; title?: string; 
 };
 
 // ───────────────── ClReceipt
-export const ClReceipt: React.FC<{ lines?: [string, string][]; total?: [string, string]; bed?: string }> = ({ lines = [["Bandejas tiradas por año", "40"], ["Años", "× 10"], ["Bandejas en 10 años", "400"], ["Bicarbonato y frascos marrones", "unas cajas"]], total = ["Bandejas que se salvaron", "casi todas"], bed }) => {
+export const ClReceipt: React.FC<{ lines?: [string, string][]; total?: [string, string]; bed?: string; head?: string }> = ({ head = "COCINA · HOTEL", lines = [["Bandejas tiradas por año", "40"], ["Años", "× 10"], ["Bandejas en 10 años", "400"], ["Bicarbonato y frascos marrones", "unas cajas"]], total = ["Bandejas que se salvaron", "casi todas"], bed }) => {
   const f = useCurrentFrame(); const { durationInFrames: T } = useVideoConfig(); const out = useOut(6);
   const printed = ease(clamp01((f - 6) / (T * 0.55)));
   const H = 760;
@@ -118,7 +118,7 @@ export const ClReceipt: React.FC<{ lines?: [string, string][]; total?: [string, 
       <Contact x={960} y={980} w={700} o={0.35} />
       <div style={{ position: "absolute", left: 960 - 330, top: 980 - H * printed, width: 660, height: H * printed, overflow: "hidden", rotate: "-2deg" }}>
         <div style={{ position: "absolute", left: 0, bottom: 0, width: 660, height: H, background: "#FFFEF8", boxShadow: `0 30px 60px ${CL.shadow}`, padding: "50px 54px", boxSizing: "border-box", backgroundImage: "linear-gradient(transparent 96%, rgba(0,0,0,0.04) 96%)", backgroundSize: "100% 30px" }}>
-          <div style={{ textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 6, color: CL.ink }}>COCINA · HOTEL</div>
+          <div style={{ textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 6, color: CL.ink }}>{head}</div>
           <div style={{ textAlign: "center", fontFamily: LABEL, fontSize: 28, color: CL.inkSoft, marginBottom: 26 }}>- - - - - - - - - - - - - - - - - - - -</div>
           {lines.map(([a, b], i) => <div key={i} style={{ display: "flex", justifyContent: "space-between", fontFamily: LABEL, fontWeight: 500, fontSize: 36, color: CL.ink, margin: "16px 0" }}><span>{a}</span><b>{b}</b></div>)}
           <div style={{ textAlign: "center", fontFamily: LABEL, fontSize: 28, color: CL.inkSoft, margin: "20px 0" }}>- - - - - - - - - - - - - - - - - - - -</div>
