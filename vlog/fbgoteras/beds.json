@@ -1,0 +1,152 @@
+[
+ {
+  "name": "bd_flatroof0",
+  "q": "flat roof",
+  "scene": "Ordinary real footage: flat roof, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_concreteroof1",
+  "q": "concrete roof",
+  "scene": "Ordinary real footage: concrete roof, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_roofleak2",
+  "q": "roof leak",
+  "scene": "Ordinary real footage: roof leak, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_waterdripping3",
+  "q": "water dripping",
+  "scene": "Ordinary real footage: water dripping, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_rainonroof4",
+  "q": "rain on roof",
+  "scene": "Ordinary real footage: rain on roof, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_rooftopterrace5",
+  "q": "rooftop terrace",
+  "scene": "Ordinary real footage: rooftop terrace, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_sealingcrack6",
+  "q": "sealing crack",
+  "scene": "Ordinary real footage: sealing crack, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_caulkinggun7",
+  "q": "caulking gun",
+  "scene": "Ordinary real footage: caulking gun, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_siliconesealant8",
+  "q": "silicone sealant",
+  "scene": "Ordinary real footage: silicone sealant, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_paintbrush9",
+  "q": "paint brush",
+  "scene": "Ordinary real footage: paint brush, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bucketofwater10",
+  "q": "bucket of water",
+  "scene": "Ordinary real footage: bucket of water, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_gardenhose11",
+  "q": "garden hose",
+  "scene": "Ordinary real footage: garden hose, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_rainstorm12",
+  "q": "rain storm",
+  "scene": "Ordinary real footage: rain storm, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_ceilingstain13",
+  "q": "ceiling stain",
+  "scene": "Ordinary real footage: ceiling stain, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_dampwall14",
+  "q": "damp wall",
+  "scene": "Ordinary real footage: damp wall, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_ladderroof15",
+  "q": "ladder roof",
+  "scene": "Ordinary real footage: ladder roof, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_rooftopcity16",
+  "q": "rooftop city",
+  "scene": "Ordinary real footage: rooftop city, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_suncloudssky17",
+  "q": "sun clouds sky",
+  "scene": "Ordinary real footage: sun clouds sky, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_houseexterior18",
+  "q": "house exterior",
+  "scene": "Ordinary real footage: house exterior, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_raingutter19",
+  "q": "rain gutter",
+  "scene": "Ordinary real footage: rain gutter, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_windowframe20",
+  "q": "window frame",
+  "scene": "Ordinary real footage: window frame, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_watertankroof21",
+  "q": "water tank roof",
+  "scene": "Ordinary real footage: water tank roof, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hardwarestore22",
+  "q": "hardware store",
+  "scene": "Ordinary real footage: hardware store, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_workbenchtools23",
+  "q": "workbench tools",
+  "scene": "Ordinary real footage: workbench tools, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_balconyplants24",
+  "q": "balcony plants",
+  "scene": "Ordinary real footage: balcony plants, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_puddle25",
+  "q": "puddle",
+  "scene": "Ordinary real footage: puddle, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_roofdrain26",
+  "q": "roof drain",
+  "scene": "Ordinary real footage: roof drain, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_neighborfencetalk27",
+  "q": "neighbor fence talk",
+  "scene": "Ordinary real footage: neighbor fence talk, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_sweepingconcrete28",
+  "q": "sweeping concrete",
+  "scene": "Ordinary real footage: sweeping concrete, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_crackinconcrete29",
+  "q": "crack in concrete",
+  "scene": "Ordinary real footage: crack in concrete, real everyday look, no person looking at the camera."
+ }
+]
