@@ -861,6 +861,234 @@
     "daily life in medieval",
     "what life was really like in"
    ]
+  },
+  "p_mexicano": {
+   "desc": "persona/herencia: mexican",
+   "q": [
+    "mexican mothers swear by",
+    "old mexican trick house",
+    "the mexican way cleaning",
+    "mexican households buy"
+   ],
+   "rx": "mexican"
+  },
+  "p_italiano": {
+   "desc": "persona/herencia: italian|nonna|nonno",
+   "q": [
+    "italian grandma trick",
+    "italian nonna secret house",
+    "italian grandfather trick",
+    "the italian way cleaning"
+   ],
+   "rx": "italian|nonna|nonno"
+  },
+  "p_sovietico": {
+   "desc": "persona/herencia: soviet|russian|ussr",
+   "q": [
+    "soviet trick house",
+    "russian grandpa trick",
+    "soviet hack that still works",
+    "ussr life hacks"
+   ],
+   "rx": "soviet|russian|ussr"
+  },
+  "p_cubano": {
+   "desc": "persona/herencia: cuba",
+   "q": [
+    "cuban mechanic trick",
+    "cuban way to fix",
+    "cuban grandpa trick",
+    "how cubans keep old cars running"
+   ],
+   "rx": "cuba"
+  },
+  "p_depresion": {
+   "desc": "persona/herencia: depression|1930s|grandpa|grandfather",
+   "q": [
+    "great depression trick grandpa",
+    "depression era hacks",
+    "my grandfather survived the great depression trick",
+    "1930s tricks that still work"
+   ],
+   "rx": "depression|1930s|grandpa|grandfather"
+  },
+  "p_granjero": {
+   "desc": "persona/herencia: farmer|farm",
+   "q": [
+    "old farmer trick",
+    "old farmers never",
+    "farmer trick nobody knows",
+    "old farmer secret garden"
+   ],
+   "rx": "farmer|farm"
+  },
+  "p_mecanico": {
+   "desc": "persona/herencia: mechanic",
+   "q": [
+    "old mechanic trick",
+    "mechanics don't want you to know",
+    "old mechanic secret car",
+    "retired mechanic reveals"
+   ],
+   "rx": "mechanic"
+  },
+  "p_oficio_viejo": {
+   "desc": "persona/herencia: plumber|carpenter|electrician|handyman|contractor",
+   "q": [
+    "old plumber trick",
+    "old carpenter trick",
+    "retired electrician reveals",
+    "old handyman trick"
+   ],
+   "rx": "plumber|carpenter|electrician|handyman|contractor"
+  },
+  "p_sureno": {
+   "desc": "persona/herencia: southern|appalach|grandma|granny",
+   "q": [
+    "southern grandma trick",
+    "old southern trick house",
+    "appalachian granny trick",
+    "old southern remedy"
+   ],
+   "rx": "southern|appalach|grandma|granny"
+  },
+  "p_filipino": {
+   "desc": "persona/herencia: filipino|lola|philippine",
+   "q": [
+    "filipino lola trick",
+    "filipino trick house",
+    "filipino way cleaning"
+   ],
+   "rx": "filipino|lola|philippine"
+  },
+  "p_aleman": {
+   "desc": "persona/herencia: german|swiss|dutch",
+   "q": [
+    "german grandma trick",
+    "german way cleaning",
+    "german households never",
+    "dutch trick house"
+   ],
+   "rx": "german|swiss|dutch"
+  },
+  "p_coreano": {
+   "desc": "persona/herencia: korean",
+   "q": [
+    "korean grandma trick",
+    "korean way cleaning",
+    "korean households never"
+   ],
+   "rx": "korean"
+  },
+  "p_irlandes": {
+   "desc": "persona/herencia: irish|scottish",
+   "q": [
+    "irish grandma trick",
+    "old irish remedy",
+    "irish way"
+   ],
+   "rx": "irish|scottish"
+  },
+  "p_militar": {
+   "desc": "persona/herencia: navy|army|military|veteran|soldier|marine",
+   "q": [
+    "navy veteran trick",
+    "military trick house",
+    "army trick that works",
+    "veteran reveals trick"
+   ],
+   "rx": "navy|army|military|veteran|soldier|marine"
+  },
+  "p_menonita": {
+   "desc": "persona/herencia: mennonite|hutterite|quaker",
+   "q": [
+    "mennonite trick",
+    "mennonite way",
+    "hutterite secret"
+   ],
+   "rx": "mennonite|hutterite|quaker"
+  },
+  "p_griego": {
+   "desc": "persona/herencia: greek|yiayia|mediterranean",
+   "q": [
+    "greek grandma trick",
+    "greek yiayia secret",
+    "mediterranean grandma trick"
+   ],
+   "rx": "greek|yiayia|mediterranean"
+  },
+  "v_cocina_never_old_trick": {
+   "desc": "vertical para avatar: v_cocina_never_old_trick",
+   "q": [
+    "never fry your pork chops again try this old",
+    "never boil your beans again try this old trick",
+    "never boil potatoes again old trick",
+    "never grill your ribs again old trick",
+    "old farm trick cooking"
+   ],
+   "rx": "never .* again|old .* trick|the old .* way"
+  },
+  "v_feria_vale_fortuna": {
+   "desc": "vertical para avatar: v_feria_vale_fortuna",
+   "q": [
+    "never pass these at a flea market worth a fortune",
+    "old items in grandma's closet worth thousands",
+    "rusty tools in your barn worth",
+    "things in your garage worth money"
+   ],
+   "rx": "worth|fortune|flea market|valuable|thousands"
+  },
+  "v_casa_arreglos_persona": {
+   "desc": "vertical para avatar: v_casa_arreglos_persona",
+   "q": [
+    "how we cool our house without ac",
+    "old contractor trick house",
+    "plumbers hate this trick",
+    "old handyman trick house repair",
+    "the old way to fix house"
+   ],
+   "rx": "house|home|ac\\b|pipe|drain|roof|attic|basement|furnace|water heater|leak|fix|repair"
+  },
+  "v_auto_mecanico": {
+   "desc": "vertical para avatar: v_auto_mecanico",
+   "q": [
+    "vinegar trick engine",
+    "wd-40 tricks dealers don't want you to know",
+    "cut your fuel bill in half",
+    "old mechanic trick car",
+    "never do this after an oil change"
+   ],
+   "rx": "engine|car|fuel|oil|mechanic|truck|wd-40|windshield|tire"
+  },
+  "v_compras_walmart_dollartree": {
+   "desc": "vertical para avatar: v_compras_walmart_dollartree",
+   "q": [
+    "dollar tree items buy before winter",
+    "things households buy at costco",
+    "pantry staples under $5 walmart",
+    "aldi items seniors should buy"
+   ],
+   "rx": "dollar tree|walmart|costco|aldi|sam's club"
+  },
+  "v_put_x_watch": {
+   "desc": "vertical para avatar: v_put_x_watch",
+   "q": [
+    "put hydrogen peroxide on your feet watch what happens",
+    "put aluminum foil in your toilet",
+    "pour vinegar in your washing machine",
+    "rub vaseline on your"
+   ],
+   "rx": "watch what happens|put .* on|pour .* in"
+  },
+  "v_jardin_plagas_viejo": {
+   "desc": "vertical para avatar: v_jardin_plagas_viejo",
+   "q": [
+    "never had a bug in my house in 40 years",
+    "hydrogen peroxide kills roaches",
+    "old trick garden pests",
+    "grandpa garden trick tomatoes"
+   ],
+   "rx": "bug|roach|ant|mice|spider|pest|garden|weed|tomato|fly"
   }
  }
 }

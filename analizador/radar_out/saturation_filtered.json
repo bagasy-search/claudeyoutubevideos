@@ -648,6 +648,178 @@
   ]
  },
  {
+  "cluster": "v_cocina_never_old_trick",
+  "canales": 101,
+  "nuevos": 53,
+  "ganadores": 10,
+  "tasa": 0.19,
+  "mediana": 339,
+  "pct100k": 0.04,
+  "viejosHit": 0,
+  "top": [
+   {
+    "handle": "@aldobellinii",
+    "joined": "Apr 22, 2026",
+    "age": 169,
+    "subs": 22400,
+    "nv": 28,
+    "best": {
+     "id": "N-4ex-g7f_o",
+     "t": "NEVER Boil Your Beans Again \u2014 Try This Old Italian Trick Instead",
+     "v": 609999,
+     "d": 11,
+     "len": "19:03"
+    },
+    "b14": {
+     "id": "N-4ex-g7f_o",
+     "t": "NEVER Boil Your Beans Again \u2014 Try This Old Italian Trick Instead",
+     "v": 609999,
+     "d": 11
+    }
+   },
+   {
+    "handle": "@ruthiedupree",
+    "joined": "Aug 8, 2026",
+    "age": 61,
+    "subs": 5080,
+    "nv": 20,
+    "best": {
+     "id": "Xq8VYgRSHBc",
+     "t": "NEVER Cook Your Candied Yams in Water Again \u2014 Try This Old Mississippi Soul Food Trick",
+     "v": 408000,
+     "d": 9,
+     "len": "25:12"
+    },
+    "b14": {
+     "id": "Xq8VYgRSHBc",
+     "t": "NEVER Cook Your Candied Yams in Water Again \u2014 Try This Old Mississippi Soul Food Trick",
+     "v": 408000,
+     "d": 9
+    }
+   },
+   {
+    "handle": "@mamapearline",
+    "joined": "Aug 6, 2026",
+    "age": 63,
+    "subs": 20200,
+    "nv": 51,
+    "best": {
+     "id": "gye5F3xFnMw",
+     "t": "Never Make Biscuits This Way Again. Try This Old Mississippi Soul Food Trick Instead",
+     "v": 168000,
+     "d": 14,
+     "len": "22:03"
+    },
+    "b14": {
+     "id": "gye5F3xFnMw",
+     "t": "Never Make Biscuits This Way Again. Try This Old Mississippi Soul Food Trick Instead",
+     "v": 168000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@EdnaJacksonCooking",
+    "joined": "Aug 24, 2026",
+    "age": 45,
+    "subs": 15200,
+    "nv": 20,
+    "best": {
+     "id": "LesqdtkB0mI",
+     "t": "NEVER Cook Your Cabbage in Water Again \u2014 Try This Old BIG MAMA Trick",
+     "v": 392000,
+     "d": 21,
+     "len": "16:09"
+    },
+    "b14": {
+     "id": "nA_25hp1Py4",
+     "t": "NEVER Buy Ground Beef Again \u2014 This Old BIG MAMA Trick",
+     "v": 150000,
+     "d": 13
+    }
+   },
+   {
+    "handle": "@AshaSharmaCooking",
+    "joined": "Sep 2, 2026",
+    "age": 36,
+    "subs": 934,
+    "nv": 26,
+    "best": {
+     "id": "-EUgRqxGx0Y",
+     "t": "NEVER Brew Your Masala Chai in Water Again \u2014 Try This Old Indian Trick",
+     "v": 117000,
+     "d": 5,
+     "len": "12:49"
+    },
+    "b14": {
+     "id": "-EUgRqxGx0Y",
+     "t": "NEVER Brew Your Masala Chai in Water Again \u2014 Try This Old Indian Trick",
+     "v": 117000,
+     "d": 5
+    }
+   },
+   {
+    "handle": "@OtisGrangerKitchen",
+    "joined": "Aug 15, 2026",
+    "age": 54,
+    "subs": 41000,
+    "nv": 38,
+    "best": {
+     "id": "r5cw3juqudw",
+     "t": "NEVER Fry Your Pork Chops Again \u2014 Try This Old FARM Trick",
+     "v": 1100000,
+     "d": 30,
+     "len": "15:57"
+    },
+    "b14": {
+     "id": "W8vSctlMmKU",
+     "t": "NEVER Fry Your Eggs in Oil Again \u2014 Try This Old FARM Trick",
+     "v": 108000,
+     "d": 10
+    }
+   },
+   {
+    "handle": "@EarlHargrove1942",
+    "joined": "Sep 10, 2026",
+    "age": 28,
+    "subs": 3420,
+    "nv": 22,
+    "best": {
+     "id": "4E3_Vn4RikQ",
+     "t": "NEVER Soak Your Beans Overnight Again \u2014 Try This Old TEXAS FARM Trick",
+     "v": 209804,
+     "d": 21,
+     "len": "17:55"
+    },
+    "b14": {
+     "id": "B_eCmVsoo6s",
+     "t": "NEVER Bake Your Potatoes Again \u2014 Try This Old TEXAS FARM Trick",
+     "v": 32877,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@hanayoshida-yt",
+    "joined": "Aug 14, 2026",
+    "age": 55,
+    "subs": 57200,
+    "nv": 46,
+    "best": {
+     "id": "C0x5rHlspDg",
+     "t": "Stop frying eggs the old way! Here's a simple Japanese egg-frying trick that not everyone knows!",
+     "v": 610000,
+     "d": 21,
+     "len": "16:50"
+    },
+    "b14": {
+     "id": "ehLTCVLuoVs",
+     "t": "Bananas Stay Fresh for a Whole Month with This Japanese Old Farmer's Trick!",
+     "v": 32000,
+     "d": 6
+    }
+   }
+  ]
+ },
+ {
   "cluster": "hoa_venganza",
   "canales": 67,
   "nuevos": 50,
@@ -1164,6 +1336,210 @@
   ]
  },
  {
+  "cluster": "v_feria_vale_fortuna",
+  "canales": 31,
+  "nuevos": 18,
+  "ganadores": 3,
+  "tasa": 0.17,
+  "mediana": 661,
+  "pct100k": 0.0,
+  "viejosHit": 0,
+  "top": [
+   {
+    "handle": "@beyondshelfs",
+    "joined": "May 3, 2026",
+    "age": 158,
+    "subs": 1590,
+    "nv": 40,
+    "best": {
+     "id": "iV2dTro2zeY",
+     "t": "16 Vintage Treasures That Are Now Worthless (SELL IT NOW)",
+     "v": 148000,
+     "d": 14,
+     "len": "20:03"
+    },
+    "b14": {
+     "id": "iV2dTro2zeY",
+     "t": "16 Vintage Treasures That Are Now Worthless (SELL IT NOW)",
+     "v": 148000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@BeSafe-o1z",
+    "joined": "Aug 26, 2026",
+    "age": 43,
+    "subs": 2240,
+    "nv": 37,
+    "best": {
+     "id": "Hnb8j2KmhyM",
+     "t": "How to Tell If Your Old Craftsman Tools Are Actually Worth Money",
+     "v": 536000,
+     "d": 21,
+     "len": "10:25"
+    },
+    "b14": {
+     "id": "BIhjQmLsLEI",
+     "t": "5 Old Craftsman Tools Most People Don\u2019t Realize Are Valuable",
+     "v": 10444,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@TheCollectorsGuide01",
+    "joined": "Jul 2, 2026",
+    "age": 98,
+    "subs": 1670,
+    "nv": 34,
+    "best": {
+     "id": "porqOG7yyFw",
+     "t": "15 Rare Vintage Garage Tools Worth Serious Money In 2026 (Check For This)",
+     "v": 193000,
+     "d": 30,
+     "len": "15:31"
+    },
+    "b14": {
+     "id": "9QcFIb4zyXs",
+     "t": "Never Pass These 7 Garage Tools at a Flea Market (They're Worth a Fortune)",
+     "v": 1598,
+     "d": 14
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "v_casa_arreglos_persona",
+  "canales": 91,
+  "nuevos": 35,
+  "ganadores": 6,
+  "tasa": 0.17,
+  "mediana": 1325,
+  "pct100k": 0.11,
+  "viejosHit": 12,
+  "top": [
+   {
+    "handle": "@MaiHang99",
+    "joined": "Sep 4, 2026",
+    "age": 34,
+    "subs": 2330,
+    "nv": 6,
+    "best": {
+     "id": "ssYIOQTZrk4",
+     "t": "Left Homeless With 2 Kids, a Single Mom Receives a Life-Changing Miracle From a Grandma",
+     "v": 269000,
+     "d": 13,
+     "len": "57:53"
+    },
+    "b14": {
+     "id": "ssYIOQTZrk4",
+     "t": "Left Homeless With 2 Kids, a Single Mom Receives a Life-Changing Miracle From a Grandma",
+     "v": 269000,
+     "d": 13
+    }
+   },
+   {
+    "handle": "@HoangKim91TT",
+    "joined": "Jul 18, 2026",
+    "age": 82,
+    "subs": 2680,
+    "nv": 7,
+    "best": {
+     "id": "NJMGHVpoD1M",
+     "t": "Veteran Returns Home After 5 Years to a Devastating Truth: Abandoned home!",
+     "v": 166000,
+     "d": 14,
+     "len": "1:29:06"
+    },
+    "b14": {
+     "id": "NJMGHVpoD1M",
+     "t": "Veteran Returns Home After 5 Years to a Devastating Truth: Abandoned home!",
+     "v": 166000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@EarlKnowsHow00",
+    "joined": "Jun 12, 2026",
+    "age": 118,
+    "subs": 42000,
+    "nv": 134,
+    "best": {
+     "id": "_m3dY47QT8s",
+     "t": "This $5 Steel Can Box Hits 140\u00b0F for Free \u2014 Why Doesn't Every House Have One?",
+     "v": 109000,
+     "d": 14,
+     "len": "20:00"
+    },
+    "b14": {
+     "id": "_m3dY47QT8s",
+     "t": "This $5 Steel Can Box Hits 140\u00b0F for Free \u2014 Why Doesn't Every House Have One?",
+     "v": 109000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@TheOldHouseProject",
+    "joined": "Aug 23, 2026",
+    "age": 46,
+    "subs": 735,
+    "nv": 4,
+    "best": {
+     "id": "Oxro5OhIw7c",
+     "t": "Rejected Because Of His Old House, A Young Engineer Renovated It And Changed His Life",
+     "v": 115000,
+     "d": 30,
+     "len": "34:32"
+    },
+    "b14": {
+     "id": "B_fLrKPyvb0",
+     "t": "He Tricked A Homeless Man Into Fixing His House For FREE!",
+     "v": 80914,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@TheSenseisGarden",
+    "joined": "Jun 15, 2026",
+    "age": 115,
+    "subs": 6410,
+    "nv": 48,
+    "best": {
+     "id": "7mZa4nlB1jg",
+     "t": "If The Grid Fails Tomorrow, Every Japanese Home Already Has These 7 Things",
+     "v": 355000,
+     "d": 30,
+     "len": "20:10"
+    },
+    "b14": {
+     "id": "VlKpYcAZhok",
+     "t": "If The Grid Goes Down for 3 Days, Japanese Homes Already Have These 9 Things",
+     "v": 40000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@ForgottenHomeEngineering",
+    "joined": "Aug 3, 2026",
+    "age": 66,
+    "subs": 9360,
+    "nv": 34,
+    "best": {
+     "id": "cugCxxDuRaQ",
+     "t": "20 Old-House Crawlspace Tricks Modern Builders Quietly Abandoned",
+     "v": 224928,
+     "d": 28,
+     "len": "27:23"
+    },
+    "b14": {
+     "id": "75wZ4nzQ2bU",
+     "t": "20 Forgotten Sill-Plate Details That Kept Wooden Houses From Rotting at the Foundation",
+     "v": 24000,
+     "d": 3
+    }
+   }
+  ]
+ },
+ {
   "cluster": "senior_cocina_slowcooker",
   "canales": 68,
   "nuevos": 25,
@@ -1250,6 +1626,138 @@
      "id": "WzIjvBVYDPc",
      "t": "30 Japanese Cooking Hacks for Seniors Living Alone \u2014 Effortless Cooking for One",
      "v": 103484,
+     "d": 3
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "p_granjero",
+  "canales": 82,
+  "nuevos": 37,
+  "ganadores": 6,
+  "tasa": 0.16,
+  "mediana": 215,
+  "pct100k": 0.03,
+  "viejosHit": 2,
+  "top": [
+   {
+    "handle": "@FarnnTales",
+    "joined": "Sep 7, 2026",
+    "age": 31,
+    "subs": 1580,
+    "nv": 16,
+    "best": {
+     "id": "WCPWpHy-hG8",
+     "t": "A Wealthy Woman Posed as a Poor Farmer at Auction\u2014Then She Saw an Old Man Selling His Last Tractor.",
+     "v": 391727,
+     "d": 14,
+     "len": "28:07"
+    },
+    "b14": {
+     "id": "WCPWpHy-hG8",
+     "t": "A Wealthy Woman Posed as a Poor Farmer at Auction\u2014Then She Saw an Old Man Selling His Last Tractor.",
+     "v": 391727,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@OtisGrangerKitchen",
+    "joined": "Aug 15, 2026",
+    "age": 54,
+    "subs": 41000,
+    "nv": 38,
+    "best": {
+     "id": "r5cw3juqudw",
+     "t": "NEVER Fry Your Pork Chops Again \u2014 Try This Old FARM Trick",
+     "v": 1100000,
+     "d": 30,
+     "len": "15:57"
+    },
+    "b14": {
+     "id": "W8vSctlMmKU",
+     "t": "NEVER Fry Your Eggs in Oil Again \u2014 Try This Old FARM Trick",
+     "v": 108000,
+     "d": 10
+    }
+   },
+   {
+    "handle": "@EarlHargrove1942",
+    "joined": "Sep 10, 2026",
+    "age": 28,
+    "subs": 3420,
+    "nv": 22,
+    "best": {
+     "id": "4E3_Vn4RikQ",
+     "t": "NEVER Soak Your Beans Overnight Again \u2014 Try This Old TEXAS FARM Trick",
+     "v": 209794,
+     "d": 21,
+     "len": "17:55"
+    },
+    "b14": {
+     "id": "B_eCmVsoo6s",
+     "t": "NEVER Bake Your Potatoes Again \u2014 Try This Old TEXAS FARM Trick",
+     "v": 32000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@coffeebeforecolortv",
+    "joined": "Jul 23, 2026",
+    "age": 77,
+    "subs": 674,
+    "nv": 34,
+    "best": {
+     "id": "9BRw7XE4UPw",
+     "t": "82-Year-Old Millionaire Went to a Farm Auction \u2014 Then He Saw a Widow Selling Her Last Tractor",
+     "v": 265000,
+     "d": 30,
+     "len": "26:34"
+    },
+    "b14": {
+     "id": "0ffRM316zwg",
+     "t": "He Bought 40 Broken Combines Nobody Wanted \u2014 Weeks Later, Farmers Were Lined Up at His Gate",
+     "v": 10000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@HankMercer-yt",
+    "joined": "Sep 6, 2026",
+    "age": 32,
+    "subs": 3530,
+    "nv": 25,
+    "best": {
+     "id": "mpw3pkwh1EM",
+     "t": "John Deere Is Losing the Farmers (Here's Why)!",
+     "v": 269000,
+     "d": 21,
+     "len": "36:27"
+    },
+    "b14": {
+     "id": "_zX4LbCDmT8",
+     "t": "John Deere s 180k Nightmare Death Of The Farm Mechanic 3,000 Empty Bay",
+     "v": 6500,
+     "d": 12
+    }
+   },
+   {
+    "handle": "@EpicTips02",
+    "joined": "Jul 9, 2026",
+    "age": 91,
+    "subs": 2410,
+    "nv": 70,
+    "best": {
+     "id": "ptkiZ64uxf0",
+     "t": "Carrots Stay Fresh for a Whole Month with This Old Farmer\u2019s Trick! | Epic Tips",
+     "v": 225000,
+     "d": 30,
+     "len": "8:08"
+    },
+    "b14": {
+     "id": "XKAdFCZqEP4",
+     "t": "Bananas Stay Fresh for a Whole Month with This Old Farmer\u2019s Trick! | Epic Tips",
+     "v": 1138,
      "d": 3
     }
    }
@@ -1423,6 +1931,78 @@
      "t": "7 Things German Prisoners Found Strange About American POW Camps",
      "v": 91716,
      "d": 14
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "p_oficio_viejo",
+  "canales": 53,
+  "nuevos": 20,
+  "ganadores": 3,
+  "tasa": 0.15,
+  "mediana": 2672,
+  "pct100k": 0.13,
+  "viejosHit": 5,
+  "top": [
+   {
+    "handle": "@MakerWoodMaster",
+    "joined": "Jul 7, 2026",
+    "age": 93,
+    "subs": 5010,
+    "nv": 37,
+    "best": {
+     "id": "ED4Z6gk8RXU",
+     "t": "A 60-Year-Old Carpenter\u2019s Brilliant Pallet Wood Idea Amazed Professors! | Homemade Woodworking Tool",
+     "v": 1100000,
+     "d": 13,
+     "len": "40:03"
+    },
+    "b14": {
+     "id": "ED4Z6gk8RXU",
+     "t": "A 60-Year-Old Carpenter\u2019s Brilliant Pallet Wood Idea Amazed Professors! | Homemade Woodworking Tool",
+     "v": 1100000,
+     "d": 13
+    }
+   },
+   {
+    "handle": "@WoodCreation-m1u",
+    "joined": "Jun 30, 2026",
+    "age": 100,
+    "subs": 1590,
+    "nv": 43,
+    "best": {
+     "id": "yZ2qoqmWN24",
+     "t": "5 Wood Corner Joinery Secrets from a 60-Year-Old Master Carpenter That Few People Know",
+     "v": 776000,
+     "d": 28,
+     "len": "4:28"
+    },
+    "b14": {
+     "id": "_C2p1VglEOw",
+     "t": "Wood Corner Joinery Technique So Strong It Amazed Millions \u2013 From a 60-Year-Old Carpenter",
+     "v": 43000,
+     "d": 10
+    }
+   },
+   {
+    "handle": "@TopWoodTips",
+    "joined": "May 26, 2026",
+    "age": 135,
+    "subs": 11800,
+    "nv": 133,
+    "best": {
+     "id": "EzIllWUrx0E",
+     "t": "Most Carpenters Never Think of These 5 Simple but Strong Wood Corner Joint Techniques!",
+     "v": 323000,
+     "d": 21,
+     "len": "13:43"
+    },
+    "b14": {
+     "id": "kjXpzuarU2o",
+     "t": "5 Amazing Wood Corner Joint Ideas from a 65-Year-Old Carpenter That Most People Never Think Of!",
+     "v": 35000,
+     "d": 7
     }
    }
   ]
@@ -1712,6 +2292,110 @@
   ]
  },
  {
+  "cluster": "p_irlandes",
+  "canales": 29,
+  "nuevos": 7,
+  "ganadores": 1,
+  "tasa": 0.14,
+  "mediana": 911,
+  "pct100k": 0.06,
+  "viejosHit": 2,
+  "top": [
+   {
+    "handle": "@Irish-Made",
+    "joined": "Apr 11, 2026",
+    "age": 180,
+    "subs": 2110,
+    "nv": 21,
+    "best": {
+     "id": "vkgDZk41yk8",
+     "t": "The Killers \u2013 Mr. Brightside (Irish Folk Version)",
+     "v": 116000,
+     "d": 30,
+     "len": "3:55"
+    },
+    "b14": {
+     "id": "EeUL9hbzunc",
+     "t": "Michael Jackson \u2013 Smooth Criminal (Irish Folk Version)",
+     "v": 4200,
+     "d": 14
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "p_militar",
+  "canales": 60,
+  "nuevos": 21,
+  "ganadores": 3,
+  "tasa": 0.14,
+  "mediana": 1111,
+  "pct100k": 0.03,
+  "viejosHit": 1,
+  "top": [
+   {
+    "handle": "@TrieuNhiArmy",
+    "joined": "Jun 23, 2026",
+    "age": 107,
+    "subs": 1590,
+    "nv": 41,
+    "best": {
+     "id": "qj5IS1kDd2o",
+     "t": "A Young Woman Returns After Years of Military Service\u2014and a Heartbreaking Endingfull 1 video",
+     "v": 176872,
+     "d": 7,
+     "len": "2:58:33"
+    },
+    "b14": {
+     "id": "qj5IS1kDd2o",
+     "t": "A Young Woman Returns After Years of Military Service\u2014and a Heartbreaking Endingfull 1 video",
+     "v": 176872,
+     "d": 7
+    }
+   },
+   {
+    "handle": "@katesullivansaferliving",
+    "joined": "Aug 25, 2026",
+    "age": 44,
+    "subs": 2190,
+    "nv": 18,
+    "best": {
+     "id": "ttUvgdhevwY",
+     "t": "15 Things Navy SEALs Teach Women Living Alone to Keep Burglars Away at Night",
+     "v": 173000,
+     "d": 3,
+     "len": "18:18"
+    },
+    "b14": {
+     "id": "ttUvgdhevwY",
+     "t": "15 Things Navy SEALs Teach Women Living Alone to Keep Burglars Away at Night",
+     "v": 173000,
+     "d": 3
+    }
+   },
+   {
+    "handle": "@SergeantDaleWhitfield",
+    "joined": "May 19, 2026",
+    "age": 142,
+    "subs": 10300,
+    "nv": 41,
+    "best": {
+     "id": "HZB4onhGOqU",
+     "t": "The 3 Fastest and Cheapest Ways To Remove a Tree Stump ( Military Method)",
+     "v": 872000,
+     "d": 30,
+     "len": "14:08"
+    },
+    "b14": {
+     "id": "yb6PnGVlZgU",
+     "t": "10 Things Army Supply Never Throw Away Americans Toss Them Every Week",
+     "v": 14000,
+     "d": 14
+    }
+   }
+  ]
+ },
+ {
   "cluster": "western_ficcion_cowboy",
   "canales": 143,
   "nuevos": 99,
@@ -1951,6 +2635,110 @@
      "t": "The Tomato That Paid Off a House in Six Years. Appalachian Grandpas Knew Why Yours Is All Leaves.",
      "v": 7700,
      "d": 9
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "p_italiano",
+  "canales": 32,
+  "nuevos": 17,
+  "ganadores": 2,
+  "tasa": 0.12,
+  "mediana": 197,
+  "pct100k": 0.03,
+  "viejosHit": 0,
+  "top": [
+   {
+    "handle": "@aldobellinii",
+    "joined": "Apr 22, 2026",
+    "age": 169,
+    "subs": 22400,
+    "nv": 28,
+    "best": {
+     "id": "N-4ex-g7f_o",
+     "t": "NEVER Boil Your Beans Again \u2014 Try This Old Italian Trick Instead",
+     "v": 609000,
+     "d": 11,
+     "len": "19:03"
+    },
+    "b14": {
+     "id": "N-4ex-g7f_o",
+     "t": "NEVER Boil Your Beans Again \u2014 Try This Old Italian Trick Instead",
+     "v": 609000,
+     "d": 11
+    }
+   },
+   {
+    "handle": "@SegredosdaNonna-n1s",
+    "joined": "Sep 14, 2026",
+    "age": 24,
+    "subs": 7380,
+    "nv": 16,
+    "best": {
+     "id": "Z93dIGMOt6M",
+     "t": "NEVER Buy Bread Again! Do THIS With 3 Ingredients (400-Year-Old Italian Recipe)",
+     "v": 227393,
+     "d": 11,
+     "len": "20:34"
+    },
+    "b14": {
+     "id": "Z93dIGMOt6M",
+     "t": "NEVER Buy Bread Again! Do THIS With 3 Ingredients (400-Year-Old Italian Recipe)",
+     "v": 227393,
+     "d": 11
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "p_sovietico",
+  "canales": 39,
+  "nuevos": 16,
+  "ganadores": 2,
+  "tasa": 0.12,
+  "mediana": 1147,
+  "pct100k": 0.02,
+  "viejosHit": 2,
+  "top": [
+   {
+    "handle": "@%D0%98%D0%BD%D0%B4%D1%83%D1%81%D1%82%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%D0%90%D1%80%D1%85%D0%B8%D0%B2",
+    "joined": "Jun 20, 2026",
+    "age": 110,
+    "subs": 1070,
+    "nv": 26,
+    "best": {
+     "id": "lQdZ-zev9-o",
+     "t": "Everyone Bought These Soviet Inventions\u2014But No One Ever Used Them",
+     "v": 110000,
+     "d": 30,
+     "len": "15:09"
+    },
+    "b14": {
+     "id": "1A8_ROf2hZ8",
+     "t": "7 Soviet Life Hacks for Upgrading Appliances",
+     "v": 90731,
+     "d": 12
+    }
+   },
+   {
+    "handle": "@chtopochemvsssr",
+    "joined": "Aug 2, 2026",
+    "age": 67,
+    "subs": 1450,
+    "nv": 51,
+    "best": {
+     "id": "xfYLwB7Yo9s",
+     "t": "Soviet Northern Wages: Wealth or a Price Paid in Health?",
+     "v": 242000,
+     "d": 28,
+     "len": "15:04"
+    },
+    "b14": {
+     "id": "jklER8P8Pzs",
+     "t": "Soviet Taxi Drivers: Thousands of Rubles in Earnings, Illegal Schemes, and Side Hustles",
+     "v": 62000,
+     "d": 14
     }
    }
   ]
@@ -2782,6 +3570,150 @@
   ]
  },
  {
+  "cluster": "p_mexicano",
+  "canales": 66,
+  "nuevos": 43,
+  "ganadores": 4,
+  "tasa": 0.09,
+  "mediana": 224,
+  "pct100k": 0.09,
+  "viejosHit": 5,
+  "top": [
+   {
+    "handle": "@CarlosHerreraYT",
+    "joined": "Aug 24, 2026",
+    "age": 45,
+    "subs": 21800,
+    "nv": 34,
+    "best": {
+     "id": "xtfXR_kO6N8",
+     "t": "METHOD That Cuts Your Fuel Bill in HALF (Gas Stations Hate This) \u2014 The Mexican Way",
+     "v": 643000,
+     "d": 14,
+     "len": "26:53"
+    },
+    "b14": {
+     "id": "xtfXR_kO6N8",
+     "t": "METHOD That Cuts Your Fuel Bill in HALF (Gas Stations Hate This) \u2014 The Mexican Way",
+     "v": 643000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@HackTheMexicanWay",
+    "joined": "Aug 18, 2026",
+    "age": 51,
+    "subs": 107000,
+    "nv": 44,
+    "best": {
+     "id": "V1aw8fsHYQI",
+     "t": "Put Hydrogen Peroxide on Your Feet and Watch What Happens (6 Uses Mexican Mothers Swear By)",
+     "v": 6100000,
+     "d": 21,
+     "len": "16:41"
+    },
+    "b14": {
+     "id": "jaFXsjsLkA4",
+     "t": "10 Dollar Tree Items Mexican Households Buy Before Winter (And 5 They Never Touch)",
+     "v": 338632,
+     "d": 10
+    }
+   },
+   {
+    "handle": "@NanaRosaKitchen",
+    "joined": "Jul 6, 2026",
+    "age": 94,
+    "subs": 10700,
+    "nv": 23,
+    "best": {
+     "id": "pNmmSESfjqw",
+     "t": "NEVER Boil Your Potatoes Again \u2014 Try This Old Mexican Trick",
+     "v": 380000,
+     "d": 28,
+     "len": "17:03"
+    },
+    "b14": {
+     "id": "axDK_Y797uI",
+     "t": "NEVER Boil Your Pasta Again \u2014 Old Mexican Trick For Perfect Taste",
+     "v": 11000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@FixTheMexicanWay",
+    "joined": "Aug 15, 2026",
+    "age": 54,
+    "subs": 32000,
+    "nv": 26,
+    "best": {
+     "id": "k1HGyewDZ_k",
+     "t": "This Is How We Cool Our House Without AC (The Mexican Way)",
+     "v": 927000,
+     "d": 30,
+     "len": "23:12"
+    },
+    "b14": {
+     "id": "4hZVafVufjc",
+     "t": "Your Dishwasher Stinks Because of This Hidden Filter (The Mexican Way)",
+     "v": 1399,
+     "d": 14
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "p_sureno",
+  "canales": 33,
+  "nuevos": 22,
+  "ganadores": 2,
+  "tasa": 0.09,
+  "mediana": 172,
+  "pct100k": 0.0,
+  "viejosHit": 0,
+  "top": [
+   {
+    "handle": "@OpalRowe1945",
+    "joined": "Jul 20, 2026",
+    "age": 80,
+    "subs": 31700,
+    "nv": 61,
+    "best": {
+     "id": "hrWnKEPD9RI",
+     "t": "You've Been Making Biscuits WRONG Your Whole Life \u2014 Try These 45 Appalachian Tricks",
+     "v": 125000,
+     "d": 13,
+     "len": "48:05"
+    },
+    "b14": {
+     "id": "hrWnKEPD9RI",
+     "t": "You've Been Making Biscuits WRONG Your Whole Life \u2014 Try These 45 Appalachian Tricks",
+     "v": 125000,
+     "d": 13
+    }
+   },
+   {
+    "handle": "@BurlSizemoreGarden",
+    "joined": "Aug 11, 2026",
+    "age": 58,
+    "subs": 1210,
+    "nv": 33,
+    "best": {
+     "id": "S4UvH__Y7lU",
+     "t": "The Tree That Fed Every Appalachian Family. Four Billion Gone by 1940. What Happened?",
+     "v": 121000,
+     "d": 21,
+     "len": "24:26"
+    },
+    "b14": {
+     "id": "v_kiBA28-eU",
+     "t": "The Tomato That Paid Off a House in Six Years. Appalachian Grandpas Knew Why Yours Is All Leaves.",
+     "v": 7700,
+     "d": 9
+    }
+   }
+  ]
+ },
+ {
   "cluster": "senior_viajes_aerolineas",
   "canales": 89,
   "nuevos": 38,
@@ -2961,6 +3893,90 @@
      "t": "IOWA 1971 Cold Case Solved After 50 Years \u2014 He Kept Asking Police About Her Murder",
      "v": 15929,
      "d": 10
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "p_aleman",
+  "canales": 61,
+  "nuevos": 26,
+  "ganadores": 2,
+  "tasa": 0.08,
+  "mediana": 237,
+  "pct100k": 0.02,
+  "viejosHit": 2,
+  "top": [
+   {
+    "handle": "@NamedElsewhere",
+    "joined": "Aug 19, 2026",
+    "age": 50,
+    "subs": 1710,
+    "nv": 23,
+    "best": {
+     "id": "1j20okhsVXI",
+     "t": "If You Have One of These 15 \"German\" Surnames, Your Family Was Actually Jewish",
+     "v": 187000,
+     "d": 30,
+     "len": "16:38"
+    },
+    "b14": {
+     "id": "Kllo3wB1nWs",
+     "t": "Scientists Found the Most German DNA in Europe \u2014 And It Isn't Germany",
+     "v": 35000,
+     "d": 13
+    }
+   },
+   {
+    "handle": "@vanDutchNL",
+    "joined": "Aug 28, 2026",
+    "age": 41,
+    "subs": 2030,
+    "nv": 21,
+    "best": {
+     "id": "deasn83rF6s",
+     "t": "Benassi Bros - Illusion (van Dutch 2026 Remix)",
+     "v": 226000,
+     "d": 30,
+     "len": "4:43"
+    },
+    "b14": {
+     "id": "AZVH1lGkm88",
+     "t": "David Guetta ft. Sia - Titanium (van Dutch 2026 Remix)",
+     "v": 30000,
+     "d": 14
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "p_coreano",
+  "canales": 36,
+  "nuevos": 13,
+  "ganadores": 1,
+  "tasa": 0.08,
+  "mediana": 324,
+  "pct100k": 0.0,
+  "viejosHit": 0,
+  "top": [
+   {
+    "handle": "@JihansSeoulOvertime",
+    "joined": "Aug 30, 2026",
+    "age": 39,
+    "subs": 11600,
+    "nv": 6,
+    "best": {
+     "id": "tLX5UnLIfNM",
+     "t": "Low-Salary Payday in Korea \ud83c\uddf0\ud83c\uddf7 | A 34-Year-Old Man\u2019s Quiet Life | Korean Convenience Store Mukbang",
+     "v": 250000,
+     "d": 21,
+     "len": "13:09"
+    },
+    "b14": {
+     "id": "iCX5_hnIgZ8",
+     "t": "A Realistic Korean Holiday at 34 | Single & Living Alone \ud83c\uddf0\ud83c\uddf7",
+     "v": 72323,
+     "d": 2
     }
    }
   ]
@@ -3426,6 +4442,157 @@
   ]
  },
  {
+  "cluster": "p_mecanico",
+  "canales": 80,
+  "nuevos": 42,
+  "ganadores": 2,
+  "tasa": 0.05,
+  "mediana": 577,
+  "pct100k": 0.05,
+  "viejosHit": 2,
+  "top": [
+   {
+    "handle": "@AsterStories-h5d",
+    "joined": "Sep 17, 2026",
+    "age": 21,
+    "subs": 520,
+    "nv": 13,
+    "best": {
+     "id": "z_spKOcPjaQ",
+     "t": "A Millionaire Woman Posed as a Broke Traveler \u2014 Then She Saw an Old Mechanic Losing His Garage",
+     "v": 126961,
+     "d": 7,
+     "len": "15:08"
+    },
+    "b14": {
+     "id": "z_spKOcPjaQ",
+     "t": "A Millionaire Woman Posed as a Broke Traveler \u2014 Then She Saw an Old Mechanic Losing His Garage",
+     "v": 126961,
+     "d": 7
+    }
+   },
+   {
+    "handle": "@FFOCUSDrama",
+    "joined": "May 15, 2026",
+    "age": 146,
+    "subs": 40600,
+    "nv": 353,
+    "best": {
+     "id": "AcjyinRxmLY",
+     "t": "\u3010ENG DUB\u3011A general hid as a mechanic. When his daughter was hurt, the whole town paid.",
+     "v": 184416,
+     "d": 28,
+     "len": "1:11:13"
+    },
+    "b14": null
+   }
+  ]
+ },
+ {
+  "cluster": "v_auto_mecanico",
+  "canales": 132,
+  "nuevos": 44,
+  "ganadores": 2,
+  "tasa": 0.05,
+  "mediana": 866,
+  "pct100k": 0.04,
+  "viejosHit": 10,
+  "top": [
+   {
+    "handle": "@CarlosHerreraYT",
+    "joined": "Aug 24, 2026",
+    "age": 45,
+    "subs": 21800,
+    "nv": 34,
+    "best": {
+     "id": "xtfXR_kO6N8",
+     "t": "METHOD That Cuts Your Fuel Bill in HALF (Gas Stations Hate This) \u2014 The Mexican Way",
+     "v": 643000,
+     "d": 14,
+     "len": "26:53"
+    },
+    "b14": {
+     "id": "xtfXR_kO6N8",
+     "t": "METHOD That Cuts Your Fuel Bill in HALF (Gas Stations Hate This) \u2014 The Mexican Way",
+     "v": 643000,
+     "d": 14
+    }
+   },
+   {
+    "handle": "@CleverDIYHacks",
+    "joined": "Jun 25, 2026",
+    "age": 105,
+    "subs": 4410,
+    "nv": 50,
+    "best": {
+     "id": "Q64b-fUOe3s",
+     "t": "A Simple Way to Remove Car Scratches! Easy to Do at Home",
+     "v": 1400000,
+     "d": 21,
+     "len": "10:12"
+    },
+    "b14": {
+     "id": "MLlwy72j8Zc",
+     "t": "A Professional Mechanic Taught Me the Secret to Removing Car Scratches \u2013 Easy to Do at Home!",
+     "v": 164000,
+     "d": 14
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "v_compras_walmart_dollartree",
+  "canales": 103,
+  "nuevos": 38,
+  "ganadores": 2,
+  "tasa": 0.05,
+  "mediana": 1194,
+  "pct100k": 0.12,
+  "viejosHit": 12,
+  "top": [
+   {
+    "handle": "@HackTheMexicanWay",
+    "joined": "Aug 18, 2026",
+    "age": 51,
+    "subs": 107000,
+    "nv": 44,
+    "best": {
+     "id": "9sw0ZOR-LvA",
+     "t": "11 Pantry Staples Mexican Households Buy in Bulk, All Under $5 at Walmart",
+     "v": 679000,
+     "d": 21,
+     "len": "15:48"
+    },
+    "b14": {
+     "id": "jaFXsjsLkA4",
+     "t": "10 Dollar Tree Items Mexican Households Buy Before Winter (And 5 They Never Touch)",
+     "v": 338639,
+     "d": 10
+    }
+   },
+   {
+    "handle": "@FrugalJapan",
+    "joined": "Jun 13, 2026",
+    "age": 117,
+    "subs": 31200,
+    "nv": 55,
+    "best": {
+     "id": "nq4ExyQnddU",
+     "t": "15 Pantry Staples The Japanese Buy in BULK \u2014 All UNDER $5 at Walmart",
+     "v": 326000,
+     "d": 28,
+     "len": "27:07"
+    },
+    "b14": {
+     "id": "Ib_QqlQGUXg",
+     "t": "11 Things Japanese Households Buy at Costco (And 5 They AVOID)",
+     "v": 90323,
+     "d": 9
+    }
+   }
+  ]
+ },
+ {
   "cluster": "objetos_viejos_valor",
   "canales": 91,
   "nuevos": 47,
@@ -3530,6 +4697,70 @@
   ]
  },
  {
+  "cluster": "v_put_x_watch",
+  "canales": 54,
+  "nuevos": 31,
+  "ganadores": 1,
+  "tasa": 0.03,
+  "mediana": 261,
+  "pct100k": 0.05,
+  "viejosHit": 2,
+  "top": [
+   {
+    "handle": "@HackTheMexicanWay",
+    "joined": "Aug 18, 2026",
+    "age": 51,
+    "subs": 107000,
+    "nv": 44,
+    "best": {
+     "id": "V1aw8fsHYQI",
+     "t": "Put Hydrogen Peroxide on Your Feet and Watch What Happens (6 Uses Mexican Mothers Swear By)",
+     "v": 6100000,
+     "d": 21,
+     "len": "16:41"
+    },
+    "b14": {
+     "id": "Zk9jtqPUqXU",
+     "t": "Pour Hydrogen Peroxide in Your Toilet and Watch What Happens (6 Uses Mexican Mothers Swear By)",
+     "v": 77675,
+     "d": 14
+    }
+   }
+  ]
+ },
+ {
+  "cluster": "v_jardin_plagas_viejo",
+  "canales": 96,
+  "nuevos": 42,
+  "ganadores": 1,
+  "tasa": 0.02,
+  "mediana": 96,
+  "pct100k": 0.03,
+  "viejosHit": 2,
+  "top": [
+   {
+    "handle": "@LePotagerdePapyFernand",
+    "joined": "Aug 1, 2026",
+    "age": 68,
+    "subs": 38000,
+    "nv": 68,
+    "best": {
+     "id": "mYL93_UFEQw",
+     "t": "A Single Leaf of This Plant Is Worth Its Weight in Gold (You Need to Have It at Home)",
+     "v": 203000,
+     "d": 10,
+     "len": "25:01"
+    },
+    "b14": {
+     "id": "mYL93_UFEQw",
+     "t": "A Single Leaf of This Plant Is Worth Its Weight in Gold (You Need to Have It at Home)",
+     "v": 203000,
+     "d": 10
+    }
+   }
+  ]
+ },
+ {
   "cluster": "ww2_home_front",
   "canales": 134,
   "nuevos": 56,
@@ -3538,6 +4769,61 @@
   "mediana": 243,
   "pct100k": 0.01,
   "viejosHit": 4,
+  "top": []
+ },
+ {
+  "cluster": "p_cubano",
+  "canales": 30,
+  "nuevos": 8,
+  "ganadores": 0,
+  "tasa": 0.0,
+  "mediana": 244,
+  "pct100k": 0.12,
+  "viejosHit": 4,
+  "top": []
+ },
+ {
+  "cluster": "p_depresion",
+  "canales": 19,
+  "nuevos": 8,
+  "ganadores": 0,
+  "tasa": 0.0,
+  "mediana": 112,
+  "pct100k": 0.0,
+  "viejosHit": 0,
+  "top": []
+ },
+ {
+  "cluster": "p_filipino",
+  "canales": 20,
+  "nuevos": 7,
+  "ganadores": 0,
+  "tasa": 0.0,
+  "mediana": 121,
+  "pct100k": 0.02,
+  "viejosHit": 1,
+  "top": []
+ },
+ {
+  "cluster": "p_menonita",
+  "canales": 13,
+  "nuevos": 4,
+  "ganadores": 0,
+  "tasa": 0.0,
+  "mediana": 19,
+  "pct100k": 0.0,
+  "viejosHit": 0,
+  "top": []
+ },
+ {
+  "cluster": "p_griego",
+  "canales": 3,
+  "nuevos": 2,
+  "ganadores": 0,
+  "tasa": 0.0,
+  "mediana": 86,
+  "pct100k": 0.0,
+  "viejosHit": 0,
   "top": []
  }
 ]

@@ -34,9 +34,11 @@ M={
  "ww2_home_front":r"home front|ration|194\d|ww ?2|wwii|world war",
  "vida_cotidiana_epoca":r"sucked|daily life|all day|life was|really like",
 }
+CF=json.load(open('analizador/radar_nichos.json'))['clusters']
 rep=[]
 for k,vs in S.items():
-    rx=re.compile(M[k],re.I)
+    if k not in M and 'rx' not in CF.get(k,{}): continue
+    rx=re.compile(M.get(k) or CF[k]['rx'],re.I)
     vids=[v for v in vs.values() if v.get('ageDays') is not None and v['ageDays']<=31 and rx.search(v['title'])]
     if not vids: continue
     by={}

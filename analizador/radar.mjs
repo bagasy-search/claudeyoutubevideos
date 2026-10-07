@@ -444,7 +444,33 @@ async function cmdVerify() {
   }
 }
 
+// ── ficha: ficha completa de canales puntuales (ids UC… o @handles), con sus últimos ~30 videos.
+// Guarda en fichas.json; útil para estudiar redes de avatares (mismo personaje en varios canales).
+async function cmdFicha(ids) {
+  process.env.FULL = "1";
+  const db = readJ("fichas.json", {});
+  await pool(ids, async (raw) => {
+    let id = raw;
+    if (raw.startsWith("@")) {
+      const h = await get(`https://www.youtube.com/${raw}`);
+      id = h?.match(/"externalId":"(UC[\w-]{22})"/)?.[1] || h?.match(/"channelId":"(UC[\w-]{22})"/)?.[1];
+      if (!id) return console.error(`sin id: ${raw}`);
+    }
+    const c = await channelInfo(id);
+    if (c) db[id] = JSON.parse(JSON.stringify(c));
+  }, 3);
+  writeJ("fichas.json", db);
+  for (const id of Object.keys(db)) {
+    const c = db[id];
+    if (!ids.includes(id) && !ids.includes(c.handle)) continue;
+    const vs = c.videos.filter((v) => v.ageDays != null);
+    const med = median(vs.map((v) => v.views));
+    console.log(`\n${c.handle} | ${c.name} | creado ${c.joined} (${c.ageDays}d) | ${c.subs} subs | ${c.nVideos} videos | ${c.totalViews} vistas | mediana últimos ${vs.length}: ${med}`);
+    for (const v of [...vs].sort((a, b) => b.views - a.views).slice(0, 6)) console.log(`   ${String(v.views).padStart(9)} ${String(Math.round(v.ageDays)).padStart(4)}d ${v.len.padStart(8)} ${v.title.slice(0, 90)}`);
+  }
+}
+
 const [cmd, ...rest] = process.argv.slice(2);
-const cmds = { verify: cmdVerify, saturation: () => cmdSaturation(rest), search: () => cmdSearch(rest), channels: cmdChannels, snowball: cmdSnowball, snapshot: cmdSnapshot, score: cmdScore };
+const cmds = { ficha: () => cmdFicha(rest), verify: cmdVerify, saturation: () => cmdSaturation(rest), search: () => cmdSearch(rest), channels: cmdChannels, snowball: cmdSnowball, snapshot: cmdSnapshot, score: cmdScore };
 if (!cmds[cmd]) { console.error("uso: node analizador/radar.mjs search|channels|snowball|snapshot|score"); process.exit(1); }
 await cmds[cmd]();
