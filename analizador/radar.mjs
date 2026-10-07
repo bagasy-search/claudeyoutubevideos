@@ -223,7 +223,8 @@ async function cmdChannels() {
   let k = 0;
   await pool(todo, async (id) => {
     const c = await channelInfo(id);
-    if (c) chans[id] = c;
+    // JSON round-trip: los substrings de V8 retienen el HTML entero (~1MB) → OOM a los ~3000 canales
+    if (c) chans[id] = JSON.parse(JSON.stringify(c));
     if (++k % 50 === 0) writeJ("channels.json", chans);
   });
   writeJ("channels.json", chans);
