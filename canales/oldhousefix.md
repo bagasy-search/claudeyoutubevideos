@@ -90,3 +90,4 @@ Mejores propios: "Build This Amish Water Pump That Runs Forever on No Power ($40
 - 2026-10-07: corrección del creador: NO meter cocina ni otros rubros en este canal; quedarse en el nicho y copiar lo más
   parecido que funcione hoy. La cocina va a "Claudio Cocina" (español, avatar de Claudio Mendoza / Constructor Libre),
   clonando virales en inglés del formato "NEVER ___ Again — Try This Old ___ Trick" — pendiente, más adelante.
+- 2026-10-07 · Serie "The first cold week" #1 `ohfflame` (Furnace Keeps Cycling On and Off?) · gancho: cold open "Two fourteen in the morning. The furnace clicks…" (6-7 s y la llama muere) → macro del sensor con la película → loop abierto "lo que todos hacen justo después de limpiarlo" (cerrado: tocar la varilla con los dedos) · cliffhanger al #2 ("¿la dejo prendida siempre?"). Entregado job 767, ?v=1.
