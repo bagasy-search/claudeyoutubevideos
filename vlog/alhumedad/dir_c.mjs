@@ -7,14 +7,14 @@ const I = "img/alhumedad/";
 export const SHOTS = [
   // ── la barrera
   S(49, "", "av", ""),
-  S(49, "Una fila de agujeros a quince centímetros del piso", "bi", "b_holes", { p: BI("A row of small drilled holes about fifteen centimeters above the floor along the bottom of a brick wall, evenly spaced, a drill lying on the floor.") }),
+  S(49, "Una fila de agujeros a quince centímetros del piso", "bi", "b_holes", { q: "drill holes brick wall", p: BI("A row of small drilled holes about fifteen centimeters above the floor along the bottom of a brick wall, evenly spaced, a drill lying on the floor.") }),
   S(49, "se inyecta una crema contra la humedad", "kf", "k_inject", { p: BI(`Close view of ${H} squeezing white damp-proofing cream from a caulking gun into a drilled hole at the bottom of a brick wall.`), d1: "the nozzle goes into the hole", d2: "the white cream fills the hole to the brim", sound: "a caulking gun clicking" }),
   S(50, "", "bi", "st_drill", { q: "drilling wall drill", p: BI("A drill making a hole in a brick wall, dust coming out.") }),
   S(50, "saque la tierra primero", "bi", "b_soilaway", { p: BI("A small pile of dark soil in a wheelbarrow in a patio next to an emptied brick planter against a house wall.") }),
   // ── errores
   C(51, "", "ClChapter", { n: 5, title: "Los 5 errores", sub: "cada uno la infla otra vez", alert: true }),
-  S(52, "", "bi", "b_glossyroll", { p: BI("A roller loaded with shiny waterproof paint rolling over a damp stained wall bottom.") , ov: { c: "ClChip", props: { text: "Error 1", alert: true } } }),
-  S(53, "", "bi", "b_wash", { p: BI("A hand washing a salty white wall bottom with a wet sponge, water dripping down the wall.") , ov: { c: "ClChip", props: { text: "Error 2", alert: true } } }),
+  S(52, "", "bi", "b_glossyroll", { q: "painting wall roller", p: BI("A roller loaded with shiny waterproof paint rolling over a damp stained wall bottom.") , ov: { c: "ClChip", props: { text: "Error 1", alert: true } } }),
+  S(53, "", "bi", "b_wash", { q: "washing wall sponge", p: BI("A hand washing a salty white wall bottom with a wet sponge, water dripping down the wall.") , ov: { c: "ClChip", props: { text: "Error 2", alert: true } } }),
   S(54, "", "bi", "b_smallpatch", { p: BI("A small neat patch of fresh render only over a stain at the bottom of a wall, with new white salt already appearing just above the patch.") , ov: { c: "ClChip", props: { text: "Error 3", alert: true } } }),
   S(55, "", "bi", "b_wetrender", { p: BI("A roller painting over a still dark, wet-looking fresh cement render at the bottom of a wall.") , ov: { c: "ClChip", props: { text: "Error 4", alert: true } } }),
   S(56, "", "bi", "b_planterfull", { p: BI("A brick planter full of wet soil and flowers pressed against the outside wall of a house, the wall above it dark with damp.") , ov: { c: "ClChip", props: { text: "Error 5", alert: true } } }),
@@ -25,7 +25,7 @@ export const SHOTS = [
   S(60, "", "bi", "b_woodskirting", { p: BI("A wooden skirting board on a wall bottom, rotten and black at its lower edge, the wall above it stained higher with damp.") }),
   S(61, "", "bi", "st_newhouse", { q: "new house construction", p: BI("A new small house under construction with fresh brick walls.") }),
   S(62, "", "bi", "st_landlord", { q: "landlord tenant talking", p: BI("Two people talking at the door of a house.") }),
-  S(63, "", "bi", "b_supplies", { p: BI("A bag of cement, a bag of fine sand, a plastic jug with a plain blank label and a wire brush lined up on a patio floor.") }),
+  S(63, "", "bi", "b_supplies", { q: "construction materials bags", p: BI("A bag of cement, a bag of fine sand, a plastic jug with a plain blank label and a wire brush lined up on a patio floor.") }),
   S(64, "", "bi", "st_calendar", { q: "calendar wall month", p: BI("A paper wall calendar with days crossed out with a pen.") }),
   // ── la prueba de $0
   S(65, "", "av", ""),

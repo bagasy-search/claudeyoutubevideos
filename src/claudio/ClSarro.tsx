@@ -62,7 +62,7 @@ export const ClPumiceTest: React.FC<{ only?: "dry" | "wet"; bed?: string }> = ({
 };
 
 // ───────────────── ClPasteRecipe
-export const ClPasteRecipe: React.FC<{ a?: number; b?: number; aLabel?: string; bLabel?: string; note?: string; bed?: string }> = ({ a = 3, b = 1, aLabel = "bicarbonato", bLabel = "agua oxigenada", note = "como pasta de dientes", bed }) => {
+export const ClPasteRecipe: React.FC<{ a?: number; b?: number; aLabel?: string; bLabel?: string; uA?: string; uB?: string; note?: string; bed?: string }> = ({ a = 3, b = 1, aLabel = "bicarbonato", bLabel = "agua oxigenada", uA = "cucharadas de", uB = "cucharada de", note = "como pasta de dientes", bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(6);
   const per = Math.max(10, Math.round(T * 0.42 / (a + b)));
   const spoonAt = (i: number) => 10 + i * per;
@@ -98,16 +98,16 @@ export const ClPasteRecipe: React.FC<{ a?: number; b?: number; aLabel?: string; 
         <Card style={{ padding: "34px 44px", width: 560 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
             <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 120, color: CL.ink, lineHeight: 1 }}>{Math.max(nA, 0)}<span style={{ color: CL.inkSoft, fontSize: 70 }}>/{a}</span></div>
-            <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 40, color: CL.ink, lineHeight: 1.05 }}>cucharadas de<br />{aLabel}</div>
+            <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 40, color: CL.ink, lineHeight: 1.05 }}>{uA}<br />{aLabel}</div>
           </div>
           <div style={{ height: 3, background: CL.grout, margin: "18px 0" }} />
           <div style={{ display: "flex", alignItems: "center", gap: 18, opacity: nA >= a ? 1 : 0.35 }}>
             <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 120, color: CL.brown, lineHeight: 1 }}>{nB}<span style={{ color: CL.inkSoft, fontSize: 70 }}>/{b}</span></div>
-            <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 40, color: CL.ink, lineHeight: 1.05 }}>cucharada de<br />{bLabel}</div>
+            <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 40, color: CL.ink, lineHeight: 1.05 }}>{uB}<br />{bLabel}</div>
           </div>
         </Card>
         <div style={{ marginTop: 26, display: "flex", gap: 22, alignItems: "center", opacity: lin(f, spoonAt(a + b), spoonAt(a + b) + 10), scale: String(0.8 + 0.2 * pop(f, fps, spoonAt(a + b))) }}>
-          <div style={{ background: CL.yellow, color: CL.ink, fontFamily: SERIF, fontWeight: 900, fontSize: 92, padding: "0 30px", borderRadius: 14, boxShadow: `0 14px 30px ${CL.shadow}` }}>{a} : {b}</div>
+          <div style={{ background: CL.yellow, color: CL.ink, fontFamily: SERIF, fontWeight: 900, fontSize: 92, padding: "0 30px", borderRadius: 14, whiteSpace: "nowrap", boxShadow: `0 14px 30px ${CL.shadow}` }}>{a} : {b}</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 56, color: CL.navy, lineHeight: 1 }}>{note}</div>
         </div>
       </div>
