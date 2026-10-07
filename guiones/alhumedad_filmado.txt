@@ -1,0 +1,74 @@
+[HOOK|nopinte] No pinte esa pared. Si la pinta, en tres meses está otra vez inflada.
+[HOOK|nudillo] Escuche. Esto suena hueco. Y este polvito blanco no es pintura vieja: es sal. Sal que subió del suelo por adentro del ladrillo.
+[HOOK|marta] Es la pared de la sala de Doña Marta. El mismo pintor se la pintó dos veces el año pasado. Las dos veces, a los tres meses, la pintura otra vez inflada, como ampollas.
+[HOOK|loop] Y lo que encontré del otro lado de esa pared, en el patio, eso no lo esperaba.
+[HOOK|promesa] Hoy le muestro cómo se arregla de verdad. Un cepillo de alambre, una bolsa de cemento y un líquido que se le pone al agua de la mezcla. Así estaba la pared. Y así va a quedar.
+[HOOK|cred] Soy Claudio. Treinta años de albañil, miles de paredes. Y al final le doy la prueba de cero dólares que hago antes de tocar cualquier pared con humedad. Cinco segundos, con un lápiz.
+[HOOK|cap] Primero, cómo saber si su humedad es de ésta.
+[REF|calor] Si no vio cuando bajamos siete grados el cuarto de arriba de esta misma casa, se lo dejo acá. Esa noche, cuando bajé a abrir la ventana de la sala, encontré esta pared.
+[SALA|como] La sala de Doña Marta es la habitación más linda de la casa. Las fotos de la familia, el sillón de Don Ernesto, su marido, la vitrina con las tazas de porcelana. Y la pared del lado del patio, de abajo, toda inflada.
+[SALA|pintor] Doña Marta me contó la historia. La primera vez, el pintor raspó lo que se caía, le pasó una mano de pintura impermeable, de esa brillante, y le dijo que con eso no entraba más el agua. A los tres meses, las ampollas.
+[SALA|segunda] La segunda vez fue peor. Le puso un sellador, otra vez impermeable, y encima dos manos de esmalte, porque según él, el esmalte no deja pasar nada. A los tres meses, las ampollas eran más grandes, y la pintura se caía en pedazos con el polvito blanco.
+[SALA|marta] Ella me dijo: Claudio, yo ya no sé si es la pared o el pintor. Le dije: un poco de cada cosa. Pero la pared tiene arreglo.
+[TIPO|intro] Mire, hay tres humedades distintas en una casa, y cada una se arregla distinto. Si se equivoca de humedad, se equivoca de arreglo, y tira el dinero.
+[TIPO|condensa] La primera es la del aire: la condensación. Es la del moho del dormitorio, la del primer video. Aparece arriba, en las esquinas, detrás de los muebles.
+[TIPO|lluvia] La segunda es la filtración: el agua de la lluvia que entra por una grieta o por el techo. Ésa aparece cuando llueve, y se mueve con la lluvia.
+[TIPO|sube] Y la tercera es ésta: la humedad que sube del piso. Se llama capilaridad. Y tiene tres señas que no fallan.
+[TIPO|senas] Una: la mancha empieza en el zócalo y sube hasta más o menos un metro, nunca más. Dos: la pintura se infla en ampollas. Y tres: aparece ese polvito blanco que parece sal. Si su pared tiene las tres, es ésta.
+[TIPO|azucar] ¿Cómo sube el agua por una pared? Igual que sube el café por un terrón de azúcar cuando usted le moja la puntita. El ladrillo y el cemento están llenos de canalitos finitos, y el agua del suelo sube por ellos, sola, sin que nadie la empuje.
+[TIPO|sal] Y esa agua trae sales de la tierra. Cuando llega a la superficie de la pared, el agua se evapora y la sal se queda. Ese polvito blanco se llama salitre. Y la sal, cuando se seca, crece en cristales que empujan la pintura desde atrás. Por eso las ampollas.
+[ERROR|pintor] Ahora entiende el error del pintor. La pintura impermeable y el esmalte no dejan salir el agua. El agua sigue subiendo, se junta detrás de la pintura, la empuja, y la infla más rápido. Cuanto más impermeable la pintura, peor.
+[ERROR|regla] La regla es ésta: una pared con humedad que sube tiene que respirar. Hay que dejarle salida al agua, no encerrarla. Por eso, en la ferretería, nunca pida algo para la humedad: le van a dar justo el impermeable. En el Manual le dejé la frase exacta para pedir lo que sí sirve, así no le venden lo que no sirve. Es la página once.
+[PATIO|loop] Y ahora sí, lo que encontré del otro lado. Salí al patio, y del lado de afuera de esa pared, pegado al muro, había una jardinera de ladrillos llena de tierra, con rosales. La tierra de la jardinera estaba más alta que el piso de adentro de la sala.
+[PATIO|rosas] Esos rosales los había plantado Don Ernesto, el marido de Doña Marta, hace más de treinta años. Ella los regaba todas las tardes. Y cada tarde, sin saberlo, le estaba dando de tomar a la pared de la sala.
+[PATIO|ernesto] Doña Marta me contó que Ernesto hizo esa jardinera el año que se mudaron, con los ladrillos que sobraron de la casa. Quería que ella viera las rosas desde el sillón de la sala. Y las veía, por la ventana, todas las tardes.
+[PATIO|canaleta] Y había algo más. El caño de bajada de la canaleta del techo descargaba justo ahí, al pie del muro. Cada lluvia, todo el agua del techo, contra esa pared.
+[PATIO|marta] Cuando se lo mostré, Doña Marta se tapó la boca con la mano. Y me dijo: Claudio, ¿y los rosales de Ernesto? Le dije: los rosales se quedan. Pero se mudan.
+[LISTA|intro] Así que el arreglo tiene dos partes. Afuera, cortarle el agua a la pared. Y adentro, sacar lo podrido y hacer un repello nuevo que aguante la humedad y deje respirar al muro.
+[LISTA|cosas] Lo que necesita: martillo y cincel, o una espátula de punta. Cepillo de alambre y una escoba. Cemento, arena fina, y un hidrófugo para mortero, que es un líquido que se mezcla con el agua de la mezcla y le cierra el paso al agua. Un balde, una cuchara de albañil y una llana de madera.
+[LISTA|mostrador] En la ferretería, pídalo exactamente así: Necesito una bolsa de cemento, arena fina, un litro de hidrófugo para mortero, y un cepillo de alambre. Anótela tal cual.
+[PASOS|salitre] Primer paso: con el cepillo de alambre, saque en seco todo el polvo blanco. En seco. Nunca lo lave con agua. El agua disuelve la sal y la mete otra vez en la pared, y a la semana la tiene de vuelta.
+[PASOS|golpear] Segundo: golpee la pared con el mango del martillo, de a poquito, de abajo hacia arriba. Donde suena hueco, el repello está suelto. Ésa es la parte podrida.
+[PASOS|picar] Tercero: pique todo lo flojo hasta llegar al ladrillo. Y siga treinta centímetros más arriba de donde llega la mancha, aunque ahí la pared parezca sana. La sal siempre llega más arriba de lo que se ve.
+[PASOS|secar] Cuarto: deje el ladrillo al aire una semana, con la ventana abierta, para que se seque todo lo posible. Ésta es la parte que nadie tiene paciencia de hacer, y es la que más importa.
+[PASOS|mezcla] Quinto: la mezcla. Un balde de cemento y tres baldes de arena. Y el hidrófugo va en el agua, en la medida que dice el envase. Primero mezcla el hidrófugo con el agua, y con esa agua hace la mezcla.
+[PASOS|capas] Y se aplica en dos capas, de un centímetro y medio a dos en total. La primera, tirada fuerte con la cuchara contra el ladrillo, para que se agarre. La segunda, alisada con la llana de madera.
+[PASOS|espera] Sexto: espere. Tres semanas como mínimo, mejor cuatro. El repello nuevo tiene que secarse por dentro antes de pintar.
+[PASOS|pintura] Y séptimo: pinte con pintura que respire. Pintura al agua, de la que se usa para exteriores o para frentes. Nunca esmalte, nunca pintura impermeable. Esas atrapan el agua y le vuelven a inflar la pared.
+[PASOS|manual] Las medidas exactas, los treinta centímetros de más, la mezcla de uno a tres, el espesor y las semanas de secado, están en la página once del Manual del Albañil de Claudio. El link está abajo.
+[PASOS|resumen] Repaso: cepillo en seco, golpear y picar hasta el ladrillo, treinta centímetros más arriba, una semana al aire, repello con hidrófugo en dos capas, cuatro semanas, y pintura que respire.
+[AFUERA|cantero] Pero nada de eso sirve si no corta el agua de afuera. En la casa de Doña Marta, lo primero fue la jardinera. Entre la sobrina, Tomás y yo pasamos los rosales de Don Ernesto a tres macetones grandes, al otro lado del patio, donde les da más sol.
+[AFUERA|tomas] Tomás cavaba alrededor de cada rosal con una palita, despacito, para no cortar las raíces, y Doña Marta, sentada en una silla del patio, le iba diciendo cuál había plantado el abuelo primero. Fue la tarde más linda de todo el arreglo.
+[AFUERA|tierra] Después sacamos la tierra de la jardinera, la que estaba pegada a la pared, hasta dejarla más baja que el piso de adentro. Sólo con eso, en dos semanas, la mancha de adentro dejó de crecer. La mitad del problema era esa jardinera.
+[AFUERA|canaleta] Y al caño de la canaleta le pusimos un codo y un tramo de caño que lleva el agua de la lluvia un metro y medio lejos de la pared, hacia la rejilla del patio.
+[AFUERA|regla] Así que revise su casa por afuera: que el agua del patio o de la acera no corra hacia esa pared, que la canaleta no descargue al pie del muro, y que no haya tierra apoyada contra la pared más alta que el piso de adentro.
+[MARTA|picar] Adentro, pasé el cepillo de alambre en seco y saqué casi un balde de salitre de esa pared. Después golpeé con el mango del martillo: sonaba hueco hasta casi un metro. Piqué hasta el ladrillo, y treinta centímetros más.
+[MARTA|ladrillo] El ladrillo estaba oscuro de mojado. Lo dejamos al aire una semana, con la ventana de la sala abierta. Doña Marta, que no se pierde nada, me mandaba todos los días una foto del ladrillo, para que viera cómo se iba aclarando.
+[MARTA|repello] Al octavo día hice el repello, con el hidrófugo en el agua, en dos capas. Y después, cuatro semanas sin tocarla. Lo más difícil fue convencerla de no colgar los cuadros.
+[MARTA|cuadros] Doña Marta tenía todos los cuadros apilados arriba de la mesa, con una sábana encima, y cada vez que pasaba los miraba con cara de pena. A la tercera semana me llamó para preguntarme si podía colgar aunque sea uno. Le dije que no. Me dijo que yo era más estricto que el médico.
+[MARTA|resultado] A las cuatro semanas pinté con pintura al agua para exteriores, color crema, el mismo que tenía. Hoy, dos meses después, ni una ampolla, ni un grano de sal. Y los rosales de Don Ernesto, en sus macetones, están más floridos que nunca.
+[BARRERA|cuando] Ahora, una cosa honesta. Si después de unos meses la humedad pasa por encima del repello nuevo, ese muro necesita una barrera. Una fila de agujeros a quince centímetros del piso, cada diez o doce centímetros, y por los agujeros se inyecta una crema contra la humedad, que se mete en el ladrillo y hace de corte.
+[BARRERA|envase] Se compra en la ferretería con su taladro y su mecha. Siga el envase al pie de la letra. Y si su casa tiene la tierra apoyada del otro lado, como la de Doña Marta, saque la tierra primero: muchas veces con eso ya no hace falta la barrera.
+[ERRORES|intro] Ahora, los errores que más veo con esta humedad. Cada uno le infla la pared otra vez.
+[ERRORES|impermeable] Uno: pintar con pintura impermeable o esmalte. Encierra el agua y la pared se infla más rápido.
+[ERRORES|lavar] Dos: lavar el salitre con agua. Lo disuelve y lo mete otra vez adentro.
+[ERRORES|poco] Tres: picar sólo la mancha. La sal ya está treinta centímetros más arriba de lo que se ve.
+[ERRORES|apuro] Cuatro: pintar el repello nuevo a la semana. Tiene que secar tres o cuatro semanas.
+[ERRORES|afuera] Y cinco: arreglar adentro sin mirar afuera. Si la jardinera, la canaleta o la acera le siguen mandando agua, vuelve.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|yeso] ¿Puedo rellenar con yeso o con masilla? No. El yeso chupa el agua y se deshace. Con esta humedad, sólo cemento con hidrófugo.
+[QA|deshumi] ¿Un deshumidificador lo arregla? No. Esa humedad viene del suelo, no del aire. El aparato saca agua del aire, pero la pared sigue chupando del piso.
+[QA|zocalo] ¿Y si pongo un zócalo de madera o de cerámica para taparlo? Lo tapa, pero el agua sube más arriba buscando por dónde salir. Y la madera se pudre.
+[QA|nueva] ¿Le puede pasar a una casa nueva? Sí. Si se construyó sin la capa aislante debajo de las paredes, o si alguien hizo una jardinera o una acera pegada después. Pasa más de lo que se cree.
+[QA|alquiler] ¿Y si alquilo? Muéstrele al dueño las tres señas y lo de la jardinera o la canaleta. Eso es de la casa, no suyo.
+[QA|costo] ¿Cuánto cuesta el arreglo? Una bolsa de cemento, arena, un litro de hidrófugo y un cepillo. Mucho menos que dos manos de esmalte cada tres meses, como venía pagando Doña Marta.
+[QA|tiempo] ¿Cuánto tarda todo? Un fin de semana de trabajo, repartido en un mes. Lo que lleva tiempo es esperar que seque, no el trabajo. Y esa espera es la que el pintor nunca respetó.
+[PRUEBA|cero] Y ahora, la prueba de cero dólares que le prometí. La que hago antes de tocar cualquier pared con humedad. Con un lápiz, marque una rayita en el borde de arriba de la mancha y escriba la fecha al lado. Cinco segundos.
+[PRUEBA|leer] Mírela después de una semana de lluvia. Si la mancha subió por encima de la raya, el agua le está llegando de afuera, del patio, de la canaleta o de la acera: arregle eso primero. Si la mancha está quieta en la raya, llueva o no llueva, es la humedad que sube del suelo, y va el arreglo del repello.
+[PRUEBA|marta] En la casa de Doña Marta marqué la raya el primer día. Con la primera lluvia, la mancha subió cuatro dedos. Cinco segundos con un lápiz, y ya sabía que antes de tocar la pared había que ir al patio.
+[RECAP|todo] Así que, todo en treinta segundos. Si la mancha empieza en el zócalo, infla la pintura y larga sal, es humedad que sube. Nunca pintura impermeable. Primero corte el agua de afuera. Adentro, cepillo en seco, picar hasta el ladrillo y treinta centímetros más, una semana al aire, repello con hidrófugo, cuatro semanas, y pintura que respire.
+[CTA3|regalo] Y antes de pintar cualquier pared, haga las tres pruebas que hago yo: la del aluminio, la de la moneda y la de la cinta. Se las dejé anotadas en una hoja que se llama Antes de Pintar. Es gratis. Apunte el celular a este código, o toque el link de la descripción. Y si quiere los sesenta y seis arreglos de la casa, el Manual del Albañil está en esa misma página, a veintisiete dólares.
+[NEXT|gotera] Ah, y una cosa más. A la tercera semana de secado, una noche de tormenta, me llamó la sobrina. Doña Marta estaba en la cocina con un balde en el piso. Caía una gota del techo, cada dos segundos. Y arriba, en el techo de la cocina, una mancha marrón que crecía.
+[NEXT|gancho] Al otro día subí al techo. Y lo que encontré arriba no estaba ni cerca de la mancha de abajo. La semana que viene le muestro dónde estaba el agujero de verdad, y cómo cortamos esa gotera.
+[CLOSE|pregunta] Y ahora cuénteme usted. ¿Su pared tiene las tres señas? ¿Mancha desde el zócalo, ampollas y polvito blanco? Escríbamelo en los comentarios, y si me dice qué hay del otro lado de esa pared, mejor. Leo todos.
+[CLOSE|chau] La pared tiene que respirar. Nos vemos la semana que viene.
