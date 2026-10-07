@@ -1,0 +1,86 @@
+[HOOK|error] Si vas a hacer lo de la gaseosa cola con la pasta de dientes, primero fíjate de qué es tu olla. En el video que viste lo hacen en una de teflón, y ése es el error.
+[HOOK|olla] Mira esta olla. Se me quemó un guiso, de esos que te olvidas en el fuego. El fondo quedó negro, con una costra dura que no salía ni con la esponja de alambre.
+[HOOK|promesa] Y mírala ahora. El fondo brilla, me veo la cara. Media botella de gaseosa cola y una cucharada de pasta de dientes. Menos de un dólar.
+[HOOK|vecino] Mi vecino me dijo que esa olla ya era para tirar, que lo quemado no sale nunca. Le dije que me la dejara una tarde.
+[HOOK|rafaga] Mira. Gaseosa hasta tapar lo negro. Diez minutos a fuego bajo. Que se enfríe. Tiro el líquido. Pasta de dientes. Esponja, en círculos.
+[HOOK|grito] ¡Y mira cómo se despega la costra entera!
+[HOOK|loops] Pero hay tres cosas que tienes que saber. En qué ollas sí y en cuáles te la arruina. Por qué hay que esperar que se enfríe antes de frotar. Y lo que pasó cuando el vecino lo probó en su sartén. Primero, la receta.
+[RECETA|lista] Lo que necesitas: gaseosa cola común, de la que tengas, no la light. Pasta de dientes blanca, de la de siempre, no la de gel. Una esponja con el lado verde. Y un poco de bicarbonato, por si la mancha es vieja.
+[RECETA|truco] Y acá está el truco de todo el video. No es una mezcla, es un orden. Primero la gaseosa, que ablanda. Después la pasta, que pule. Si las pones juntas en la olla, ninguna hace bien su trabajo.
+[RECETA|mirar] Primero, mira la olla. Que sea de acero inoxidable o de aluminio. Si es de teflón, o enlozada, de esas lisitas de colores, para acá. Ya te explico por qué.
+[RECETA|raspar] Le saco con una cuchara de madera lo que esté suelto arriba, los pedazos de comida quemada. Sin raspar fuerte. Si raspas con algo de metal, rayas la olla antes de empezar. Lo que está pegado lo dejo.
+[RECETA|cubrir] Ahora la gaseosa. La echo hasta que tape bien todo lo negro, un dedo por arriba. En esta olla fue media botella chica.
+[RECETA|hervir] La pongo al fuego, y cuando rompe el hervor, bajo el fuego al mínimo. Diez minutos, hirviendo despacito. Mira cómo burbujea alrededor de la costra.
+[RECETA|tapa] No le pongo tapa. Quiero ver cómo va, y que no se rebalse, porque la gaseosa hace espuma cuando hierve.
+[RECETA|olor] Va a oler a caramelo, es normal. Ojo con dejarla más tiempo o con fuego fuerte: el azúcar se pega y te arma otra costra.
+[RECETA|enfriar] Apago y la dejo enfriar media hora, con la gaseosa adentro. No la toques. Mientras baja la temperatura, el ácido sigue trabajando abajo de la costra.
+[RECETA|tirar] Pasada la media hora, tiro el líquido. Mira el fondo. Ya no está duro: la costra se ve hinchada, como cartón mojado.
+[RECETA|pasta] Ahora la pasta de dientes. Una cucharada sobre la esponja húmeda, del lado verde, y froto en círculos. Sin apretar como loco. Que trabaje la pasta.
+[RECETA|circulos] Mira cómo sale. Se va soltando la costra en pedacitos, y abajo aparece el metal. Cuando la pasta se pone gris, la enjuago y pongo otra cucharada. Paciencia: en una olla como ésta, son unos diez minutos de esponja.
+[RECETA|rincon] El borde, donde la pared se junta con el fondo, es lo más difícil. Ahí uso la punta de la esponja doblada, o un cepillo de dientes viejo.
+[RECETA|bicarbonato] Y si queda una mancha que no sale, porque es vieja, el bicarbonato, el de la cocina, el de toda la vida. Unas cucharadas con unas gotas de agua, hasta que quede una pasta. La dejo encima quince minutos, y después froto.
+[RECETA|enjuagar] Al final, enjuago con agua caliente y la seco enseguida, con un repasador. Si la dejas secar sola, el agua te deja marcas blancas. Y la guardo seca, nunca húmeda en la alacena.
+[RECETA|final] Y mira esto. El fondo brilla. Paso el dedo y está liso, sin nada pegado.
+[RECETA|resumen] Repaso rápido: miras que sea de acero o aluminio, gaseosa hasta tapar lo negro, diez minutos a fuego bajo, media hora enfriando, tiras el líquido, pasta de dientes con la esponja en círculos, bicarbonato si queda algo, y secas enseguida.
+[COSTO|intro] Y antes de seguir, la cuenta, porque te dije menos de un dólar y quiero que veas de dónde sale.
+[COSTO|botella] Media botella chica de gaseosa cola, la más barata que encuentres, unos cincuenta centavos. La pasta de dientes, un par de cucharadas del tubo del baño. Y el bicarbonato, si hace falta, centavos.
+[COSTO|rinde] Con eso hice esta olla y la sartén de acero, y me sobró pasta para pulir la pileta de la cocina.
+[COSTO|comparar] Una olla buena de acero, nueva, sale treinta, cuarenta dólares, o más. Y los limpiadores especiales para acero, varios dólares el frasquito. Acá lo que más cuesta es la media hora de espera.
+[CTA1|hoja] Y una cosa. Las medidas exactas de esto, y las de las otras mezclas que fuimos probando en el canal, las tengo escritas paso a paso, cada una con el error que la arruina. La del cemento que parece granito, la de la silicona para las goteras, la del aflojatodo para la reja.
+[CTA1|qr] Te las dejé en una página, gratis, sin registrarte ni nada. Si me estás viendo en el televisor, apunta la cámara de tu teléfono a este código y se te abre. Si estás en el teléfono, el enlace está abajo, en la primera línea de la descripción. Guárdala, que la próxima vez que se te queme algo no vas a querer buscar el video.
+[POR_QUE|intro] Ahora, ¿en qué ollas sí y en cuáles no? Porque en el video viral lo hacen en una sartén de teflón, y se ve divino. Lo que no te muestran es cómo queda a la semana.
+[POR_QUE|pasta] La pasta de dientes blanca tiene adentro un polvito finísimo, que es lo que pule. Es como una lija muy, muy suave. Por eso limpia los dientes. Y por eso la de gel, que casi no lo tiene, acá no sirve.
+[POR_QUE|acero] El acero inoxidable y el aluminio son duros. Esa lija suave les saca la mancha y no les hace nada. Al contrario, les devuelve el brillo.
+[POR_QUE|teflon] Pero el teflón es una capa finita, pegada encima del metal. Y la pasta, con la esponja verde, se la va comiendo. Mira. Esta sartén la hice como en el video. Le quedaron círculos grises, y ahora se pega todo.
+[POR_QUE|enlozada] Y la enlozada, la de colores, es como un vidrio. La pasta le saca el brillo y la deja opaca y rayada. Y ahí después se pega la comida, y se mancha más.
+[POR_QUE|como] ¿Cómo sabes de qué es tu olla? Mira abajo: casi todas lo dicen grabado en el fondo. Y si por dentro es negra y lisa, como de plástico, es teflón.
+[POR_QUE|regla] Así que la regla es simple: acero o aluminio, sí. Teflón o enlozada, no. Y siempre en orden: la gaseosa ablanda, la pasta pule. Lo mismo que con la reja, ¿te acuerdas? El aflojatodo antes, no adentro. Cada cosa hace una sola tarea.
+[ENFRIAR|intro] Y la segunda cosa que te prometí. Por qué hay que esperar que se enfríe antes de frotar.
+[ENFRIAR|acido] La gaseosa cola tiene un ácido suave. No es fuerte, por eso la tomamos. Pero con tiempo, se mete por los poros de la costra y la va aflojando desde abajo.
+[ENFRIAR|tiempo] El hervor ayuda a que entre, y la media hora de espera es la que hace el trabajo. Si la tiras enseguida, el ácido no tuvo tiempo, y la costra sigue dura.
+[ENFRIAR|prueba] Hice la prueba con dos ollas quemadas iguales. A una la froté enseguida, y casi no salió nada. A la otra, después de la media hora, la costra salió con la esponja sola.
+[ENFRIAR|quemadura] Y además, por algo muy simple. Una olla recién hervida, con azúcar adentro, te quema las manos. El caramelo caliente se pega a la piel. No hay apuro que valga eso.
+[ERRORES|intro] Ahora los errores que te arruinan la olla, de mayor a menor.
+[ERRORES|teflon] Uno: hacerlo en teflón o en una enlozada. Es el del vecino, ya te voy a contar.
+[ERRORES|fuerte] Dos: hervirla a fuego fuerte o mucho tiempo. La gaseosa se reduce, el azúcar se quema, y te queda una costra nueva arriba de la vieja.
+[ERRORES|virulana] Tres: rematar con la esponja de alambre. Saca, sí, pero le deja al acero rayas finitas, donde después se pega todo.
+[ERRORES|apuro] Cuatro: tirar la gaseosa enseguida, sin esperar la media hora. Es la mitad del trabajo, y la saltas.
+[ERRORES|secar] Y cinco: dejarla secar sola. El agua le deja manchas blancas, y piensas que no salió, cuando está limpia.
+[VECINO|historia] Y ahora lo del vecino, que te prometí al principio.
+[VECINO|sarten] Cuando vio la olla, se fue derecho a su casa. Y como es de los que no preguntan dos veces, agarró la sartén de los huevos, la de teflón, que tenía una mancha de aceite quemado.
+[VECINO|frotar] Gaseosa, hervor, pasta de dientes, y la esponja verde. La esponja verde iba y venía, y él contento porque la mancha se aclaraba. Y como no salía del todo, más fuerte. Más pasta, más fuerza.
+[VECINO|resultado] Al otro día me tocó el timbre con la sartén en la mano. La mancha se había ido, sí. Y con ella, medio teflón. Círculos grises en el medio, y el huevo pegado como con cemento.
+[VECINO|segunda] La sartén no tenía arreglo. Pero tenía una olla de aluminio, la de los fideos, con el fondo negro de años. Esa la hicimos juntos. Gaseosa, fuego bajo, media hora, pasta, y una vuelta de bicarbonato.
+[VECINO|cierre] Ahora la tiene colgada en la cocina, como si fuera un trofeo. Y al que va a su casa le explica qué ollas sí y qué ollas no.
+[PRUEBA|intro] Pero el vecino no se iba a quedar tranquilo con verla brillante. Quiso probarla de verdad.
+[PRUEBA|servilleta] Primero, una servilleta de papel blanca, mojada, frotada por todo el fondo. Si queda algo de quemado, la servilleta sale negra. La pasó dos veces, por si acaso. Salió blanca.
+[PRUEBA|una] Después pasó la uña por el borde, donde la pared se junta con el fondo, que es donde siempre queda algo. Nada. Liso.
+[PRUEBA|arroz] Y al final, la prueba de fuego. Hizo un arroz con leche, que es lo más pegajoso que hay, y lo dejó hasta que se pegara un poco. Agua caliente, la esponja suave, y salió en un minuto.
+[PRUEBA|cierre] Se secó las manos, miró la olla y me dijo: "Bueno, me callo". Que en el idioma del vecino es lo más parecido a un aplauso.
+[CTA2|coleccion] Esto me pasa todo el tiempo, que alguien se arruina algo por un detalle que nadie le dijo. Por eso fui juntando en la colección del canal todos estos arreglos de la casa, setenta y seis, con los materiales, las medidas y el error de cada uno, en el mismo orden en que se hacen. Cocina, baño, óxido, humedad, pisos, paredes.
+[CTA2|donde] Ahí tienes el sarro de la pava, las juntas negras del baño, el desagüe que huele, todo con lo que ya hay en tu casa. Si ya abriste la página de las mezclas, al final te muestro qué trae. No te apuro: mira primero si las mezclas te sirven.
+[LIMITE|intro] Ahora, lo que esto no arregla. Porque no quiero que pierdas una tarde en algo que no sirve.
+[LIMITE|anos] Lo quemado de años, carbonizado, duro como una costra de pan, no sale en una vuelta. Lleva dos, o tres. Gaseosa, espera, pasta, y otra vez. Va saliendo de a capas. La segunda vez, con la costra ya floja, sale mucho más rápido.
+[LIMITE|hierro] La olla de hierro, la negra pesada, tampoco. La gaseosa le saca la capa de aceite que la protege, y se te oxida. Esa se limpia con sal gruesa y se vuelve a curar con aceite.
+[LIMITE|deforme] Y si la olla tiene el fondo torcido, o el fondo grueso se está despegando, eso no es mugre: es la olla. Ahí no hay limpieza que la salve.
+[VARIANTES|intro] Ahora, esto no es sólo para la olla. Te muestro dónde más sirve.
+[VARIANTES|sarten] La sartén de acero, la que no tiene teflón. Ahí funciona igual, y le saca ese tornasolado de colores que le deja el fuego.
+[VARIANTES|pava] La pava de acero, por fuera, donde se le pega la grasa de la cocina. Ahí sólo la pasta de dientes con la esponja suave, sin hervir nada.
+[VARIANTES|bacha] La pileta de acero de la cocina, cuando se pone opaca. Pasta de dientes, un trapo, en círculos, y enjuagas. Vuelve a brillar.
+[VARIANTES|cubiertos] Y los cubiertos de acero con manchas oscuras. Un poco de pasta en un trapo, uno por uno, y a la cajonera.
+[MANTENER|intro] Y para que no se te vuelva a poner negra, tres costumbres.
+[MANTENER|remojo] Si se te pega algo, no esperes al otro día. Agua caliente con un chorrito de detergente, enseguida, mientras la olla está tibia. Lo pegado de hoy sale solo.
+[MANTENER|fuego] Fuego medio para cocinar. La llama que sobresale por los costados no cocina más rápido: sólo quema el fondo y ennegrece la olla por fuera. Y si cocinas algo con azúcar, como un dulce, revuelve y no te vayas lejos.
+[MANTENER|seca] Y secarla siempre con un repasador. Una olla que se seca sola junta manchas blancas, y las manchas juntan grasa.
+[QA|intro] Ahora las preguntas que siempre me hacen con esto.
+[QA|light] ¿Sirve la gaseosa light? Yo lo hago con la común, que es la que probé y sé que funciona. Usa la común.
+[QA|vinagre] ¿Y con vinagre en vez de gaseosa? Para manchas de agua y de sarro, el vinagre anda muy bien. Para la costra de comida quemada, yo me quedo con la gaseosa.
+[QA|gel] ¿La pasta de dientes en gel? No. No tiene el polvito que pule. La blanca, la común, la más barata.
+[QA|gusto] ¿Le queda gusto a la olla? No. Con el enjuague de agua caliente se va todo. Hierves un poco de agua si te quedas más tranquilo.
+[QA|aluminio] ¿El aluminio no se oscurece? A veces queda un poco opaco. Con otra pasada de pasta, vuelve.
+[QA|lavavajillas] ¿Y si la meto en el lavavajillas? Lo quemado no sale en el lavavajillas. Primero esto, y después, si quieres, al lavavajillas.
+[RECAP|todo] Así que ya lo sabes. Acero o aluminio, nunca teflón ni enlozada. Gaseosa cola hasta tapar lo negro, diez minutos a fuego bajo, media hora enfriando. Tiras el líquido, pasta de dientes blanca con la esponja, en círculos. Bicarbonato si queda algo, y secas enseguida. La gaseosa ablanda, la pasta pule.
+[CTA3|qr] Y la receta escrita, con las medidas, está en la página de las mezclas, con las otras nueve. Apunta la cámara a este código, o el enlace está abajo. Es gratis.
+[NEXT|grieta] En el próximo volvemos a la obra: la silicona con el cemento, para la grieta de la pared que vuelve siempre. Funciona, pero si la pintas encima, en un mes la tienes de nuevo, y te muestro qué usar.
+[CLOSE|pregunta] Y cuéntame en los comentarios qué se te quemó a ti, que seguro tienes una historia. El vecino ya me contó la del arroz con leche.
+[CLOSE|chau] Ahora sí. A buscar esa olla del fondo de la alacena. Nos vemos.
