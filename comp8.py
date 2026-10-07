@@ -347,6 +347,14 @@ if MAD:                                                                     # ma
     TOP = {"cmd": (0.335, 0.615), "fo": (0.335, 0.365), "tali": (0.480, 0.500), "tz": (0.660, 0.350), "hay": (0.790, 0.570), "asaf": (0.790, 0.690),
            "den": (0.910, 0.240), "res1": (0.910, 0.570), "res2": (0.910, 0.690)}
     DOOR = ((0.405, 0.440), (0.405, 0.555)); AXE = (0.385, 0.690); YOKES = [(0.258, 0.370), (0.258, 0.610)]
+DOOR_LBL = "PUERTA BLINDADA"
+if os.path.exists(comp7._DJ):                                               # cabina de OTRO avión (datos.json): posiciones medidas sobre su K_top
+    _dd = json.load(open(comp7._DJ, encoding="utf8"))
+    if _dd.get("top"):
+        TOP = {k: tuple(v) for k, v in _dd["top"].items()}
+        FIG8 = {k: (v[0], C(v[1])) for k, v in _dd.get("fig8", {}).items()}
+        DOOR = tuple(tuple(x) for x in _dd.get("door", DOOR)); YOKES = [tuple(x) for x in _dd.get("yokes", YOKES)]; AXE = tuple(_dd.get("axe", AXE))
+        DOOR_LBL = _dd.get("door_lbl", DOOR_LBL)
 def d2p(x, y):
     """unidades de diseño de comp7 (x a lo largo, y a lo ancho, comandante arriba) -> fracción de la placa K_top (nariz a la izquierda, comandante abajo)"""
     xs = [0.0, 0.17, 0.30, 0.46, 0.70, 0.96, 1.2]; ps = [0.10, 0.372, 0.418, 0.560, 0.700, 0.930, 1.05]
@@ -354,13 +362,15 @@ def d2p(x, y):
     return float(np.interp(x, xs, ps)), float(np.clip(0.48 + 0.857 * (0.5 - y), 0.22, 0.78))
 def r_cabina8(sh, sid, DUR, put):
     figs = sh.get("figs", list(TOP)); st = sh.get("steps", [])
-    def P0(fid): x, y = TOP[fid]; return [x, y, 0.0, 0.0]
+    def P0(fid): x, y = TOP[sh.get("start", {}).get(fid, fid)]; return [x, y, 0.0, 0.0]
     keys = []; cur = {k: P0(k) for k in figs}; door = 0.0; tt = 0.0
     keys.append((0.0, {k: list(v) for k, v in cur.items()}, door, None, [], None))
     for s in st:
         tt = wkt(sh, s["wk"]) if "wk" in s else s.get("t", tt + 1.0)
         for k, v in s.get("fig", {}).items():
             x, y = d2p(v[0], v[1]); cur[k] = [x, y, -v[2], v[3]]
+        for k, v in s.get("to", {}).items():                             # destino directo: clave de TOP o [x, y] en fracción de la placa
+            x, y = TOP[v] if isinstance(v, str) else v; cur[k] = [x, y, cur.get(k, [0, 0, 0, 0])[2], 0.0]
         door = s.get("door", door)
         keys.append((tt, {k: list(v) for k, v in cur.items()}, door, s.get("hit"), s.get("arrows", []), s.get("hl")))
     def state(t):
@@ -391,7 +401,7 @@ def r_cabina8(sh, sid, DUR, put):
         (hx, hy), (ex0, ey0) = DOOR; L_ = ey0 - hy; ang = math.radians(80 * dv)
         ex, ey = hx + math.sin(ang) * L_ * H / W, hy + math.cos(ang) * L_
         cv.line([Pp(hx, hy), Pp(ex, ey)], RED if dv > 0.05 else DARK, 9 * z)
-        lx, ly = Pp(hx, hy - 0.03); tag(cv, lx, ly, "PUERTA BLINDADA · " + ("ABIERTA" if dv > 0.5 else "CERRADA"), 18, "monob",
+        lx, ly = Pp(hx, hy - 0.03); tag(cv, lx, ly, DOOR_LBL + " · " + ("ABIERTA" if dv > 0.5 else "CERRADA"), 18, "monob",
                                         bg=RED if dv > 0.5 else DARK, a=1, anchor="m")
         if k1[5] == "axe" or sh.get("hl") == "axe":
             x, y = Pp(*AXE); pr = (t * 1.2) % 1; cv.circle(x, y, (14 + 30 * pr) * z, None, 1, outline=RED, ow=4 * (1 - pr) + 0.5)

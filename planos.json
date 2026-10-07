@@ -3,1298 +3,1720 @@
   "id": "apertura",
   "kind": "open",
   "t0": 0.0,
-  "dur": 1.96,
+  "dur": 1.62,
   "at": "0",
   "exacto": true
  },
  {
-  "id": "c_ext_nubes",
+  "id": "c_ext_open",
   "kind": "clip",
-  "t0": 1.96,
-  "dur": 3.86,
+  "t0": 1.62,
+  "dur": 3.48,
   "at": "1.0",
   "exacto": true
  },
  {
-  "id": "g_mapa_open",
-  "kind": "mapa",
-  "t0": 5.82,
-  "dur": 5.22,
-  "at": "1.0@vuelo mil setenta",
+  "id": "g001",
+  "kind": "mapamad",
+  "t0": 5.1,
+  "dur": 8.58,
+  "at": "1.0@treinta y cinco mil pies",
   "exacto": true
  },
  {
-  "id": "g_174_open",
+  "id": "r010",
+  "kind": "clip",
+  "t0": 13.68,
+  "dur": 3.004,
+  "at": "1.1",
+  "exacto": true
+ },
+ {
+  "id": "g002",
   "kind": "numero",
-  "t0": 11.04,
-  "dur": 3.06,
+  "t0": 16.684,
+  "dur": 3.756,
   "at": "1.1",
   "exacto": true,
   "wk": [
    [
-    0.12,
+    1.896,
     "__sello"
    ]
   ]
  },
  {
-  "id": "c_cabina_calma",
+  "id": "c_open_dos",
   "kind": "clip",
-  "t0": 14.1,
-  "dur": 1.44,
-  "at": "1.1@la mayor\u00eda",
+  "t0": 20.44,
+  "dur": 2.68,
+  "at": "1.2",
   "exacto": true
  },
  {
-  "id": "c_ventanilla",
+  "id": "c_open_rest",
   "kind": "clip",
-  "t0": 15.54,
-  "dur": 5.22,
-  "at": "1.1@que vuelven a casa",
+  "t0": 23.12,
+  "dur": 2.52,
+  "at": "1.2@el comandante",
   "exacto": true
  },
  {
-  "id": "c_duermen",
-  "kind": "clip",
-  "t0": 20.76,
-  "dur": 2.98,
-  "at": "1.2@un vuelo tranquilo",
-  "exacto": true
- },
- {
-  "id": "c_madre_bano",
-  "kind": "clip",
-  "t0": 23.74,
-  "dur": 4.46,
-  "at": "1.2@una madre espera",
-  "exacto": true
- },
- {
-  "id": "c_ext_inclina",
-  "kind": "clip",
-  "t0": 28.2,
-  "dur": 3.52,
+  "id": "o_open_alarma",
+  "kind": "depth2",
+  "t0": 25.64,
+  "dur": 4.98,
   "at": "1.3",
   "exacto": true
  },
  {
-  "id": "g_perfil_open",
-  "kind": "perfil",
-  "t0": 31.72,
-  "dur": 10.58,
-  "at": "1.3@la l\u00ednea del avi\u00f3n",
+  "id": "c001",
+  "kind": "clip",
+  "t0": 30.62,
+  "dur": 3.56,
+  "at": "1.3@el piloto autom\u00e1tico",
+  "exacto": true
+ },
+ {
+  "id": "c_open_mano",
+  "kind": "clip",
+  "t0": 34.18,
+  "dur": 4.3,
+  "at": "1.4",
+  "exacto": true
+ },
+ {
+  "id": "g003",
+  "kind": "registro",
+  "t0": 38.48,
+  "dur": 2.58,
+  "at": "1.4@en franc\u00e9s",
   "exacto": true,
   "wk": [
    [
-    9.42,
+    1.2,
     0
-   ],
+   ]
+  ]
+ },
+ {
+  "id": "g004",
+  "kind": "perfilmad",
+  "t0": 41.06,
+  "dur": 5.9,
+  "at": "1.5",
+  "exacto": true,
+  "wk": [
    [
-    2.2,
+    3.04,
     "__sello"
    ]
   ]
  },
  {
-  "id": "c_caen_piso",
-  "kind": "clip",
-  "t0": 42.3,
-  "dur": 7.0,
-  "at": "1.4",
+  "id": "o_reloj",
+  "kind": "depth2",
+  "t0": 46.96,
+  "dur": 3.62,
+  "at": "1.5@gu\u00e1rdalos",
   "exacto": true
  },
  {
-  "id": "o_puerta_frente",
+  "id": "c002",
   "kind": "clip",
-  "t0": 49.3,
-  "dur": 2.62,
-  "at": "1.5",
-  "exacto": true
- },
- {
-  "id": "c_cmd_piso",
-  "kind": "clip",
-  "t0": 51.92,
-  "dur": 5.88,
+  "t0": 50.58,
+  "dur": 3.6,
   "at": "1.6",
   "exacto": true
  },
  {
-  "id": "s_cmd_mano1",
-  "kind": "clip",
-  "t0": 57.8,
-  "dur": 3.64,
-  "at": "1.6@seg\u00fan su propio relato",
+  "id": "o001",
+  "kind": "depth2",
+  "t0": 54.18,
+  "dur": 3.1,
+  "at": "1.6@no hab\u00eda fuego",
   "exacto": true
  },
  {
-  "id": "r_cmd_cama",
+  "id": "c_ext_cae_open",
   "kind": "clip",
-  "t0": 61.44,
-  "dur": 7.9,
+  "t0": 57.28,
+  "dur": 6.36,
+  "at": "1.6@y aun as\u00ed",
+  "exacto": true
+ },
+ {
+  "id": "r011",
+  "kind": "clip",
+  "t0": 63.64,
+  "dur": 6.16,
   "at": "1.7",
   "exacto": true
  },
  {
-  "id": "g_cita_push",
-  "kind": "cita",
-  "t0": 69.34,
-  "dur": 3.34,
-  "at": "1.7@un \u00faltimo empuj\u00f3n",
-  "exacto": true
- },
- {
-  "id": "o_puerta_blind",
-  "kind": "still",
-  "t0": 72.68,
-  "dur": 8.42,
-  "at": "1.8",
-  "exacto": true
- },
- {
-  "id": "c_ckpt_dos",
-  "kind": "still",
-  "t0": 81.1,
-  "dur": 1.94,
-  "at": "1.8@el peligro ya estaba adentro",
-  "exacto": true
- },
- {
-  "id": "o_ped_llave",
-  "kind": "clip",
-  "t0": 83.04,
-  "dur": 4.2,
-  "at": "1.9",
-  "exacto": true
- },
- {
-  "id": "o_ped_espejo",
-  "kind": "clip",
-  "t0": 87.24,
-  "dur": 2.96,
-  "at": "1.9@un dentista",
-  "exacto": true
- },
- {
-  "id": "o_ped_gorras",
-  "kind": "clip",
-  "t0": 90.2,
-  "dur": 3.5,
-  "at": "1.9@de dos pilotos",
-  "exacto": true
- },
- {
-  "id": "c_yokes_vacios",
-  "kind": "clip",
-  "t0": 93.7,
-  "dur": 3.26,
-  "at": "1.9@y de dos columnas",
-  "exacto": true
- },
- {
-  "id": "g_cabina_pregunta",
-  "kind": "cabina",
-  "t0": 96.96,
-  "dur": 1.64,
-  "at": "1.10",
-  "exacto": true
- },
- {
-  "id": "c_asiento_der0",
-  "kind": "clip",
-  "t0": 98.6,
-  "dur": 3.8,
-  "at": "1.10@y c\u00f3mo lleg\u00f3",
-  "exacto": true
- },
- {
-  "id": "g_fuentes",
-  "kind": "lista",
-  "t0": 102.4,
-  "dur": 8.88,
-  "at": "1.11",
+  "id": "g005",
+  "kind": "registro",
+  "t0": 69.8,
+  "dur": 7.7,
+  "at": "1.7",
   "exacto": true,
   "wk": [
    [
-    2.34,
+    0.5,
     0
    ],
    [
-    4.02,
+    1.18,
     1
-   ],
-   [
-    6.34,
-    2
    ]
   ]
  },
  {
-  "id": "g_sellos",
-  "kind": "registro",
-  "t0": 111.28,
-  "dur": 9.04,
-  "at": "1.11@cada dato lleva",
+  "id": "c_open_tres",
+  "kind": "depth2",
+  "t0": 77.5,
+  "dur": 5.2,
+  "at": "1.7@los tres pilotos",
+  "exacto": true
+ },
+ {
+  "id": "o_altavoz",
+  "kind": "depth2",
+  "t0": 82.7,
+  "dur": 2.24,
+  "at": "1.8",
+  "exacto": true
+ },
+ {
+  "id": "c003",
+  "kind": "clip",
+  "t0": 84.94,
+  "dur": 2.1,
+  "at": "1.8@lo que la alarma",
+  "exacto": true
+ },
+ {
+  "id": "o002",
+  "kind": "depth2",
+  "t0": 87.04,
+  "dur": 6.02,
+  "at": "1.9",
+  "exacto": true
+ },
+ {
+  "id": "a001",
+  "kind": "still",
+  "t0": 93.06,
+  "dur": 5.095,
+  "at": "1.9@diecisiete a\u00f1os",
+  "exacto": true
+ },
+ {
+  "id": "r_golpe_rayos",
+  "kind": "clip",
+  "t0": 98.155,
+  "dur": 5.035,
+  "at": "2",
+  "exacto": true
+ },
+ {
+  "id": "a044",
+  "kind": "still",
+  "t0": 103.19,
+  "dur": 4.942,
+  "at": "3.0",
+  "exacto": true
+ },
+ {
+  "id": "c_fondo_open",
+  "kind": "clip",
+  "t0": 108.132,
+  "dur": 6.178,
+  "at": "3.0",
+  "exacto": true
+ },
+ {
+  "id": "a002",
+  "kind": "still",
+  "t0": 114.31,
+  "dur": 2.98,
+  "at": "3.0@cinco campa\u00f1as",
+  "exacto": true
+ },
+ {
+  "id": "o_pitot_open",
+  "kind": "depth2",
+  "t0": 117.29,
+  "dur": 5.76,
+  "at": "3.1",
+  "exacto": true
+ },
+ {
+  "id": "c004",
+  "kind": "depth2",
+  "t0": 123.05,
+  "dur": 4.06,
+  "at": "3.1@de un comandante",
+  "exacto": true
+ },
+ {
+  "id": "c_dos_manos_open",
+  "kind": "clip",
+  "t0": 127.11,
+  "dur": 3.439,
+  "at": "3.1@de dos manos",
+  "exacto": true
+ },
+ {
+  "id": "g006",
+  "kind": "cajas",
+  "t0": 130.549,
+  "dur": 4.061,
+  "at": "3.1@y de dos cajas",
+  "exacto": true
+ },
+ {
+  "id": "a045",
+  "kind": "still",
+  "t0": 134.61,
+  "dur": 6.578,
+  "at": "3.2",
+  "exacto": true
+ },
+ {
+  "id": "g007",
+  "kind": "lista",
+  "t0": 141.188,
+  "dur": 10.963,
+  "at": "3.2",
   "exacto": true,
   "wk": [
    [
-    2.36,
+    -4.597,
     0
    ],
    [
-    3.24,
+    2.463,
     1
    ],
    [
-    4.18,
+    5.702,
     2
    ],
    [
-    4.88,
+    7.762,
     3
    ]
   ]
  },
  {
-  "id": "o_caja_naranja",
-  "kind": "clip",
-  "t0": 120.32,
-  "dur": 10.273,
-  "at": "1.12",
-  "exacto": true
- },
- {
-  "id": "cap1",
-  "kind": "capitulo7",
-  "t0": 130.593,
-  "dur": 3.087,
-  "at": "2",
-  "exacto": true
- },
- {
-  "id": "a_dxb",
-  "kind": "foto",
-  "t0": 133.68,
-  "dur": 6.98,
-  "at": "3.0",
-  "exacto": true
- },
- {
-  "id": "g_mapa_despega",
-  "kind": "mapa",
-  "t0": 140.66,
-  "dur": 2.36,
-  "at": "3.0@despega el vuelo",
-  "exacto": true
- },
- {
-  "id": "a_fkf",
-  "kind": "foto",
-  "t0": 143.02,
-  "dur": 5.56,
-  "at": "3.1",
-  "exacto": true,
-  "wk": [
-   [
-    3.38,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "c_ext_lado",
-  "kind": "clip",
-  "t0": 148.58,
-  "dur": 2.94,
-  "at": "3.1@entr\u00f3 en servicio",
-  "exacto": true
- },
- {
-  "id": "a_fz_dxb0",
-  "kind": "foto",
-  "t0": 151.52,
-  "dur": 5.78,
-  "at": "3.1@tiene menos de cuatro",
-  "exacto": true
- },
- {
-  "id": "g_num_disputa",
-  "kind": "numero",
-  "t0": 157.3,
-  "dur": 11.66,
-  "at": "3.2@las autoridades saud\u00edes",
-  "exacto": true,
-  "wk": [
-   [
-    6.68,
-    0
-   ]
-  ]
- },
- {
-  "id": "c_reserva",
-  "kind": "clip",
-  "t0": 168.96,
-  "dur": 5.96,
+  "id": "a046",
+  "kind": "still",
+  "t0": 152.15,
+  "dur": 2.775,
   "at": "3.3",
   "exacto": true
  },
  {
-  "id": "c_reserva2",
-  "kind": "clip",
-  "t0": 174.92,
-  "dur": 3.76,
-  "at": "3.3@no est\u00e1n trabajando",
+  "id": "g008",
+  "kind": "registro",
+  "t0": 154.925,
+  "dur": 4.625,
+  "at": "3.3",
+  "exacto": true,
+  "wk": [
+   [
+    -0.635,
+    0
+   ],
+   [
+    0.245,
+    1
+   ],
+   [
+    1.145,
+    2
+   ],
+   [
+    1.965,
+    3
+   ]
+  ]
+ },
+ {
+  "id": "o_cinta",
+  "kind": "depth2",
+  "t0": 159.55,
+  "dur": 7.36,
+  "at": "3.3@nunca se public\u00f3 en audio",
   "exacto": true
  },
  {
-  "id": "o_gorras_asiento",
-  "kind": "clip",
-  "t0": 178.68,
-  "dur": 3.36,
-  "at": "3.3@para hacerse cargo",
-  "exacto": true
- },
- {
-  "id": "c_reserva_mira",
-  "kind": "clip",
-  "t0": 182.04,
-  "dur": 1.56,
+  "id": "o_cajas_open",
+  "kind": "depth2",
+  "t0": 166.91,
+  "dur": 6.94,
   "at": "3.4",
   "exacto": true
  },
  {
-  "id": "g_cab_layout",
-  "kind": "cabina",
-  "t0": 183.6,
-  "dur": 10.82,
-  "at": "3.5",
-  "exacto": true
- },
- {
-  "id": "c_yokes_juntos",
+  "id": "c_caja_fondo",
   "kind": "clip",
-  "t0": 194.42,
-  "dur": 2.72,
-  "at": "3.5@si mueves una",
+  "t0": 173.85,
+  "dur": 3.459,
+  "at": "3.4@y esta vez",
   "exacto": true
  },
  {
-  "id": "o_puerta_atras",
-  "kind": "still",
-  "t0": 197.14,
-  "dur": 2.82,
-  "at": "3.6",
-  "exacto": true
- },
- {
-  "id": "o_cerrojo",
-  "kind": "clip",
-  "t0": 199.96,
-  "dur": 6.8,
-  "at": "3.7",
-  "exacto": true,
-  "wk": [
-   [
-    5.42,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "o_traba",
-  "kind": "clip",
-  "t0": 206.76,
-  "dur": 2.46,
-  "at": "3.7@cerrada con traba",
-  "exacto": true
- },
- {
-  "id": "o_cajafuerte",
-  "kind": "clip",
-  "t0": 209.22,
-  "dur": 4.34,
-  "at": "3.8",
-  "exacto": true
- },
- {
-  "id": "c_puerta_empuja",
-  "kind": "clip",
-  "t0": 213.56,
-  "dur": 3.38,
-  "at": "3.8@desde la cabina de pasajeros",
-  "exacto": true
- },
- {
-  "id": "o_teclado",
-  "kind": "still",
-  "t0": 216.94,
-  "dur": 5.36,
-  "at": "3.8@hay un c\u00f3digo",
-  "exacto": true
- },
- {
-  "id": "c_manija",
-  "kind": "clip",
-  "t0": 222.3,
-  "dur": 7.96,
-  "at": "3.9",
-  "exacto": true
- },
- {
-  "id": "o_hacha",
-  "kind": "clip",
-  "t0": 230.26,
-  "dur": 7.62,
-  "at": "3.10",
-  "exacto": true
- },
- {
-  "id": "g_cab_hacha",
-  "kind": "cabina",
-  "t0": 237.88,
-  "dur": 6.74,
-  "at": "3.10@sirve para abrir",
-  "exacto": true
- },
- {
-  "id": "o_hacha_luz",
-  "kind": "clip",
-  "t0": 244.62,
-  "dur": 1.48,
-  "at": "3.11",
-  "exacto": true
- },
- {
-  "id": "c_cmd_izq",
-  "kind": "clip",
-  "t0": 246.1,
-  "dur": 5.32,
-  "at": "3.12",
-  "exacto": true
- },
- {
-  "id": "s_ckpt_dos",
-  "kind": "clip",
-  "t0": 251.42,
-  "dur": 3.48,
-  "at": "3.12@diecisiete a\u00f1os",
-  "exacto": true
- },
- {
-  "id": "g_cmd_ficha",
-  "kind": "lista",
-  "t0": 254.9,
-  "dur": 7.08,
-  "at": "3.12@se form\u00f3 en nueva",
-  "exacto": true,
-  "wk": [
-   [
-    0.68,
-    0
-   ],
-   [
-    2.14,
-    1
-   ],
-   [
-    5.68,
-    2
-   ]
-  ]
- },
- {
-  "id": "c_fo_der",
-  "kind": "clip",
-  "t0": 261.98,
-  "dur": 3.12,
-  "at": "3.13",
-  "exacto": true
- },
- {
-  "id": "s_credencial",
-  "kind": "clip",
-  "t0": 265.1,
-  "dur": 7.58,
-  "at": "3.13@oman\u00ed",
-  "exacto": false
- },
- {
-  "id": "g_cita_nombre",
-  "kind": "cita",
-  "t0": 272.68,
-  "dur": 3.68,
-  "at": "3.13@no public\u00f3 su nombre",
-  "exacto": true
- },
- {
-  "id": "c_pasajeros_nom",
-  "kind": "clip",
-  "t0": 276.36,
-  "dur": 5.32,
-  "at": "3.14",
-  "exacto": true
- },
- {
-  "id": "c_dentista_asiento",
-  "kind": "clip",
-  "t0": 281.68,
-  "dur": 6.46,
-  "at": "3.14@hay un dentista",
-  "exacto": true
- },
- {
-  "id": "c_primera_fila",
-  "kind": "clip",
-  "t0": 288.14,
-  "dur": 2.52,
-  "at": "3.14@tzvika va sentado",
-  "exacto": false
- },
- {
-  "id": "g_mapa_crucero",
-  "kind": "mapa",
-  "t0": 290.66,
-  "dur": 10.729,
-  "at": "3.15",
-  "exacto": true
- },
- {
-  "id": "cap2",
+  "id": "cap01",
   "kind": "capitulo7",
-  "t0": 301.389,
+  "t0": 177.309,
   "dur": 3.011,
   "at": "4",
   "exacto": true
  },
  {
-  "id": "g_sin_grab",
-  "kind": "cita",
-  "t0": 304.4,
-  "dur": 6.36,
+  "id": "c_galeao",
+  "kind": "clip",
+  "t0": 180.32,
+  "dur": 3.59,
   "at": "5.0",
   "exacto": true
  },
  {
-  "id": "g_fuentes2",
-  "kind": "registro",
-  "t0": 310.76,
-  "dur": 5.24,
-  "at": "5.0@los hallazgos",
-  "exacto": true,
-  "wk": [
-   [
-    0.12,
-    0
-   ],
-   [
-    1.98,
-    1
-   ],
-   [
-    3.52,
-    2
-   ]
-  ]
- },
- {
-  "id": "c_fo_atras",
+  "id": "r001",
   "kind": "clip",
-  "t0": 316.0,
-  "dur": 3.4,
-  "at": "5.1",
-  "exacto": true,
-  "wk": [
-   [
-    2.8,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "g_cab_rezo",
-  "kind": "cabina",
-  "t0": 319.4,
-  "dur": 5.88,
-  "at": "5.1@no es raro",
+  "t0": 183.91,
+  "dur": 3.98,
+  "at": "5.0@aeropuerto internacional",
   "exacto": true
  },
  {
-  "id": "c_cmd_mira",
-  "kind": "clip",
-  "t0": 325.28,
-  "dur": 5.04,
-  "at": "5.2",
-  "exacto": true
- },
- {
-  "id": "o_hacha_vacia",
-  "kind": "clip",
-  "t0": 330.32,
-  "dur": 2.56,
-  "at": "5.3",
-  "exacto": true
- },
- {
-  "id": "g_cab_golpe",
-  "kind": "cabina",
-  "t0": 332.88,
-  "dur": 2.04,
-  "at": "5.3@un golpe enorme",
-  "exacto": true
- },
- {
-  "id": "c_ext_tiembla",
-  "kind": "clip",
-  "t0": 334.92,
-  "dur": 5.88,
-  "at": "5.4",
-  "exacto": true
- },
- {
-  "id": "g_cab_entiende",
-  "kind": "cabina",
-  "t0": 340.8,
-  "dur": 4.5,
-  "at": "5.4@y ah\u00ed entiende",
-  "exacto": true
- },
- {
-  "id": "g_cita_fiscal",
-  "kind": "cita",
-  "t0": 345.3,
-  "dur": 7.64,
-  "at": "5.5",
-  "exacto": true
- },
- {
-  "id": "c_fo_mandos",
-  "kind": "clip",
-  "t0": 352.94,
-  "dur": 2.6,
-  "at": "5.5@e intent\u00f3 tomar",
-  "exacto": true
- },
- {
-  "id": "o_hacha_pared",
-  "kind": "clip",
-  "t0": 355.54,
-  "dur": 9.56,
-  "at": "5.6",
-  "exacto": true
- },
- {
-  "id": "s_ext_tiembla",
-  "kind": "clip",
-  "t0": 365.1,
-  "dur": 3.76,
-  "at": "5.7@la altitud del avi\u00f3n",
-  "exacto": true
- },
- {
-  "id": "g_perfil_cae",
-  "kind": "perfil",
-  "t0": 368.86,
-  "dur": 9.06,
-  "at": "5.7@un minuto despu\u00e9s",
-  "exacto": true,
-  "wk": [
-   [
-    -9.22,
-    0
-   ],
-   [
-    1.32,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "o_eiffel",
-  "kind": "clip",
-  "t0": 377.92,
-  "dur": 5.06,
-  "at": "5.8@trece torres eiffel",
-  "exacto": true
- },
- {
-  "id": "c_picada",
-  "kind": "clip",
-  "t0": 382.98,
-  "dur": 3.66,
-  "at": "5.9",
-  "exacto": true
- },
- {
-  "id": "o_aguja",
-  "kind": "clip",
-  "t0": 386.64,
-  "dur": 6.74,
-  "at": "5.9@en una picada as\u00ed",
-  "exacto": true
- },
- {
-  "id": "g_timon",
-  "kind": "cita",
-  "t0": 393.38,
-  "dur": 3.18,
-  "at": "5.9@a este avi\u00f3n le falta",
-  "exacto": true
- },
- {
-  "id": "o_cola_rota",
+  "id": "a003",
   "kind": "still",
-  "t0": 396.56,
-  "dur": 2.2,
-  "at": "5.9@la aleta vertical",
+  "t0": 187.89,
+  "dur": 3.886,
+  "at": "5.0@siete y media",
   "exacto": true
  },
  {
-  "id": "o_techo",
+  "id": "r_golpe_galeao",
   "kind": "clip",
-  "t0": 398.76,
-  "dur": 4.26,
-  "at": "5.10",
-  "exacto": true
- },
- {
-  "id": "g_mont_intro",
-  "kind": "montana",
-  "t0": 403.02,
-  "dur": 2.52,
-  "at": "5.10@la respuesta",
-  "exacto": true
- },
- {
-  "id": "c_montana",
-  "kind": "clip",
-  "t0": 405.54,
-  "dur": 5.84,
-  "at": "5.11",
-  "exacto": true
- },
- {
-  "id": "s_caen",
-  "kind": "clip",
-  "t0": 411.38,
-  "dur": 3.02,
-  "at": "5.11@cuanto m\u00e1s brusca",
-  "exacto": true
- },
- {
-  "id": "g_mont_flota",
-  "kind": "montana",
-  "t0": 414.4,
-  "dur": 11.1,
-  "at": "5.11@si la bajada acelera",
-  "exacto": true
- },
- {
-  "id": "c_bins",
-  "kind": "clip",
-  "t0": 425.5,
-  "dur": 7.6,
-  "at": "5.12",
-  "exacto": true,
-  "wk": [
-   [
-    2.24,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "s_techo",
-  "kind": "clip",
-  "t0": 433.1,
-  "dur": 1.94,
-  "at": "5.12@y se abrieron",
-  "exacto": true
- },
- {
-  "id": "g_mont_avion",
-  "kind": "montana",
-  "t0": 435.04,
-  "dur": 5.38,
-  "at": "5.12@pero las fuerzas",
-  "exacto": true
- },
- {
-  "id": "c_tali_oye",
-  "kind": "clip",
-  "t0": 440.42,
-  "dur": 5.36,
-  "at": "5.13",
-  "exacto": true
- },
- {
-  "id": "c_puerta_oye",
-  "kind": "clip",
-  "t0": 445.78,
-  "dur": 4.449,
-  "at": "5.13@y escucha algo",
-  "exacto": true
- },
- {
-  "id": "cap3",
-  "kind": "capitulo7",
-  "t0": 450.229,
-  "dur": 2.991,
+  "t0": 191.776,
+  "dur": 5.964,
   "at": "6",
   "exacto": true
  },
  {
-  "id": "c_tali_avisa",
-  "kind": "still",
-  "t0": 453.22,
-  "dur": 6.9,
+  "id": "g009",
+  "kind": "mapamad",
+  "t0": 197.74,
+  "dur": 5.6,
   "at": "7.0",
   "exacto": true
  },
  {
-  "id": "g_cab_alarma",
-  "kind": "cabina",
-  "t0": 460.12,
-  "dur": 2.68,
-  "at": "7.0@y a uno de los dos",
-  "exacto": false
+  "id": "a004",
+  "kind": "still",
+  "t0": 203.34,
+  "dur": 2.84,
+  "at": "7.0@le quedan once horas",
+  "exacto": true
  },
  {
-  "id": "o_puerta_cerrada",
-  "kind": "clip",
-  "t0": 462.8,
-  "dur": 5.8,
+  "id": "a005",
+  "kind": "still",
+  "t0": 206.18,
+  "dur": 7.32,
   "at": "7.1",
+  "exacto": true,
+  "wk": [
+   [
+    4.02,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a006",
+  "kind": "still",
+  "t0": 213.5,
+  "dur": 2.08,
+  "at": "7.1@tiene cuatro a\u00f1os",
   "exacto": true
  },
  {
-  "id": "c_cmd_piso2",
-  "kind": "clip",
-  "t0": 468.6,
-  "dur": 3.3,
+  "id": "g010",
+  "kind": "numero",
+  "t0": 215.58,
+  "dur": 4.48,
+  "at": "7.1@diecinueve mil horas",
+  "exacto": true
+ },
+ {
+  "id": "g011",
+  "kind": "numero",
+  "t0": 220.06,
+  "dur": 4.36,
   "at": "7.2",
-  "exacto": true
+  "exacto": true,
+  "wk": [
+   [
+    3.0,
+    0
+   ]
+  ]
  },
  {
-  "id": "s_cmd_mano2",
+  "id": "c005",
   "kind": "clip",
-  "t0": 471.9,
-  "dur": 3.28,
-  "at": "7.2@sangra",
+  "t0": 224.42,
+  "dur": 2.98,
+  "at": "7.2@nueve en la cabina",
   "exacto": true
  },
  {
-  "id": "g_cab_puerta1",
-  "kind": "cabina",
-  "t0": 475.18,
-  "dur": 5.9,
+  "id": "c006",
+  "kind": "clip",
+  "t0": 227.4,
+  "dur": 5.067,
   "at": "7.3",
   "exacto": true,
   "wk": [
    [
-    1.68,
-    0
-   ],
-   [
-    4.34,
-    1
-   ],
-   [
-    2.4,
+    1.3,
     "__sello"
    ]
   ]
  },
  {
-  "id": "o_puerta_rendija",
+  "id": "r012",
   "kind": "clip",
-  "t0": 481.08,
-  "dur": 7.5,
+  "t0": 232.467,
+  "dur": 4.053,
+  "at": "7.3",
+  "exacto": true
+ },
+ {
+  "id": "c007",
+  "kind": "clip",
+  "t0": 236.52,
+  "dur": 6.22,
+  "at": "7.3@para muchos",
+  "exacto": true
+ },
+ {
+  "id": "g012",
+  "kind": "mapamad",
+  "t0": 242.74,
+  "dur": 7.46,
   "at": "7.4",
   "exacto": true
  },
  {
-  "id": "g_perfil_rebote",
-  "kind": "perfil",
-  "t0": 488.58,
-  "dur": 8.92,
+  "id": "o003",
+  "kind": "depth2",
+  "t0": 250.2,
+  "dur": 2.92,
+  "at": "7.4@tres d\u00edas",
+  "exacto": true
+ },
+ {
+  "id": "a047",
+  "kind": "still",
+  "t0": 253.12,
+  "dur": 3.765,
   "at": "7.5",
+  "exacto": true
+ },
+ {
+  "id": "c008",
+  "kind": "clip",
+  "t0": 256.885,
+  "dur": 6.275,
+  "at": "7.5",
+  "exacto": true
+ },
+ {
+  "id": "g013",
+  "kind": "lista",
+  "t0": 263.16,
+  "dur": 3.88,
+  "at": "7.5@tripulaci\u00f3n reforzada",
   "exacto": true,
   "wk": [
    [
-    5.74,
+    1.86,
     0
    ],
    [
-    3.78,
-    "__sello"
+    3.02,
+    1
    ]
   ]
  },
  {
-  "id": "c_cmd_suelo_mano",
+  "id": "c_cmd_ficha",
   "kind": "clip",
-  "t0": 497.5,
-  "dur": 7.64,
+  "t0": 267.04,
+  "dur": 2.5,
   "at": "7.6",
   "exacto": true
  },
  {
-  "id": "g_cita_push2",
-  "kind": "cita",
-  "t0": 505.14,
-  "dur": 1.54,
-  "at": "7.6@que la puerta est\u00e1 ah\u00ed",
+  "id": "g014",
+  "kind": "numero",
+  "t0": 269.54,
+  "dur": 8.88,
+  "at": "7.6@casi once mil",
   "exacto": true
  },
  {
-  "id": "c_mano_manija",
+  "id": "c_pnf_ficha",
   "kind": "clip",
-  "t0": 506.68,
-  "dur": 4.609,
+  "t0": 278.42,
+  "dur": 5.889,
   "at": "7.7",
   "exacto": true
  },
  {
-  "id": "c_puerta_abre",
+  "id": "r013",
+  "kind": "clip",
+  "t0": 284.309,
+  "dur": 4.711,
+  "at": "7.7",
+  "exacto": true
+ },
+ {
+  "id": "c_pf_ficha",
+  "kind": "clip",
+  "t0": 289.02,
+  "dur": 5.68,
+  "at": "7.8",
+  "exacto": true
+ },
+ {
+  "id": "g015",
+  "kind": "numero",
+  "t0": 294.7,
+  "dur": 5.4,
+  "at": "7.8@ochocientas",
+  "exacto": false
+ },
+ {
+  "id": "r014",
+  "kind": "clip",
+  "t0": 300.1,
+  "dur": 2.33,
+  "at": "7.9",
+  "exacto": true
+ },
+ {
+  "id": "g016",
+  "kind": "cita",
+  "t0": 302.43,
+  "dur": 3.883,
+  "at": "7.9",
+  "exacto": true
+ },
+ {
+  "id": "c061",
+  "kind": "clip",
+  "t0": 306.313,
+  "dur": 3.107,
+  "at": "7.9",
+  "exacto": true
+ },
+ {
+  "id": "o_gorras",
+  "kind": "depth2",
+  "t0": 309.42,
+  "dur": 11.94,
+  "at": "7.9@los tres murieron",
+  "exacto": true
+ },
+ {
+  "id": "c_stick",
+  "kind": "clip",
+  "t0": 321.36,
+  "dur": 5.94,
+  "at": "7.10",
+  "exacto": true
+ },
+ {
+  "id": "g017",
+  "kind": "cabina",
+  "t0": 327.3,
+  "dur": 7.64,
+  "at": "7.10@cada piloto",
+  "exacto": true
+ },
+ {
+  "id": "c_sticks_libres",
+  "kind": "clip",
+  "t0": 334.94,
+  "dur": 3.52,
+  "at": "7.10@si un piloto tira",
+  "exacto": true
+ },
+ {
+  "id": "o_stick_luz",
+  "kind": "depth2",
+  "t0": 338.46,
+  "dur": 1.64,
+  "at": "7.11",
+  "exacto": true
+ },
+ {
+  "id": "c009",
+  "kind": "clip",
+  "t0": 340.1,
+  "dur": 4.108,
+  "at": "7.12",
+  "exacto": true
+ },
+ {
+  "id": "r015",
+  "kind": "clip",
+  "t0": 344.208,
+  "dur": 3.286,
+  "at": "7.12",
+  "exacto": true
+ },
+ {
+  "id": "r016",
+  "kind": "clip",
+  "t0": 347.494,
+  "dur": 3.286,
+  "at": "7.12",
+  "exacto": true
+ },
+ {
+  "id": "r018",
+  "kind": "clip",
+  "t0": 350.78,
+  "dur": 4.171,
+  "at": "7.13",
+  "exacto": true
+ },
+ {
+  "id": "r017",
+  "kind": "clip",
+  "t0": 354.951,
+  "dur": 4.171,
+  "at": "7.13",
+  "exacto": true
+ },
+ {
+  "id": "g018",
+  "kind": "mapamad",
+  "t0": 359.122,
+  "dur": 5.958,
+  "at": "7.13",
+  "exacto": true
+ },
+ {
+  "id": "a090",
   "kind": "still",
-  "t0": 511.289,
-  "dur": 1.351,
+  "t0": 365.08,
+  "dur": 8.26,
+  "at": "7.14",
+  "exacto": true
+ },
+ {
+  "id": "g121",
+  "kind": "numero",
+  "t0": 373.34,
+  "dur": 3.25,
+  "at": "7.14@dos mil seiscientos",
+  "exacto": true
+ },
+ {
+  "id": "cap02",
+  "kind": "capitulo7",
+  "t0": 376.59,
+  "dur": 2.9,
   "at": "8",
   "exacto": true
  },
  {
-  "id": "c_esperan",
+  "id": "c_itcz",
   "kind": "clip",
-  "t0": 512.64,
-  "dur": 2.947,
+  "t0": 379.49,
+  "dur": 5.5,
   "at": "9.0",
   "exacto": true
  },
  {
-  "id": "cap4",
-  "kind": "capitulo7",
-  "t0": 515.587,
-  "dur": 2.533,
+  "id": "r019",
+  "kind": "clip",
+  "t0": 384.99,
+  "dur": 4.4,
+  "at": "9.0",
+  "exacto": true
+ },
+ {
+  "id": "o004",
+  "kind": "depth2",
+  "t0": 389.39,
+  "dur": 6.86,
+  "at": "9.0@los pilotos la conocen",
+  "exacto": true
+ },
+ {
+  "id": "d001",
+  "kind": "foto",
+  "t0": 396.25,
+  "dur": 7.36,
+  "at": "9.1",
+  "exacto": true,
+  "wk": [
+   [
+    0.64,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a007",
+  "kind": "still",
+  "t0": 403.61,
+  "dur": 2.02,
+  "at": "9.1@va directo",
+  "exacto": true
+ },
+ {
+  "id": "o005",
+  "kind": "depth2",
+  "t0": 405.63,
+  "dur": 9.68,
+  "at": "9.2",
+  "exacto": true,
+  "wk": [
+   [
+    3.08,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "g019",
+  "kind": "mapamad",
+  "t0": 415.31,
+  "dur": 1.62,
+  "at": "9.2@salpu y tasil",
+  "exacto": true
+ },
+ {
+  "id": "r020",
+  "kind": "clip",
+  "t0": 416.93,
+  "dur": 4.422,
+  "at": "9.3",
+  "exacto": true
+ },
+ {
+  "id": "g020",
+  "kind": "mapamad",
+  "t0": 421.352,
+  "dur": 6.318,
+  "at": "9.3",
+  "exacto": true
+ },
+ {
+  "id": "c_atl_1",
+  "kind": "clip",
+  "t0": 427.67,
+  "dur": 2.58,
+  "at": "9.3@centro de control atl\u00e1ntico",
+  "exacto": true
+ },
+ {
+  "id": "c010",
+  "kind": "clip",
+  "t0": 430.25,
+  "dur": 5.46,
+  "at": "9.4",
+  "exacto": true
+ },
+ {
+  "id": "g021",
+  "kind": "registro",
+  "t0": 435.71,
+  "dur": 1.6,
+  "at": "9.4@nadie responde",
+  "exacto": true
+ },
+ {
+  "id": "c011",
+  "kind": "clip",
+  "t0": 437.31,
+  "dur": 5.96,
+  "at": "9.4@el centro de dakar",
+  "exacto": true
+ },
+ {
+  "id": "o006",
+  "kind": "depth2",
+  "t0": 443.27,
+  "dur": 4.91,
+  "at": "9.4@las tres fallan",
+  "exacto": true
+ },
+ {
+  "id": "o007",
+  "kind": "depth2",
+  "t0": 448.18,
+  "dur": 3.756,
+  "at": "9.5",
+  "exacto": true
+ },
+ {
+  "id": "r021",
+  "kind": "clip",
+  "t0": 451.936,
+  "dur": 3.004,
+  "at": "9.5",
+  "exacto": true
+ },
+ {
+  "id": "a048",
+  "kind": "still",
+  "t0": 454.94,
+  "dur": 3.0,
+  "at": "9.6",
+  "exacto": true
+ },
+ {
+  "id": "o008",
+  "kind": "depth2",
+  "t0": 457.94,
+  "dur": 5.0,
+  "at": "9.6",
+  "exacto": true
+ },
+ {
+  "id": "c012",
+  "kind": "clip",
+  "t0": 462.94,
+  "dur": 5.04,
+  "at": "9.6@entre un reporte",
+  "exacto": true
+ },
+ {
+  "id": "c_luz_baja",
+  "kind": "clip",
+  "t0": 467.98,
+  "dur": 6.7,
+  "at": "9.7",
+  "exacto": true
+ },
+ {
+  "id": "c013",
+  "kind": "clip",
+  "t0": 474.68,
+  "dur": 4.76,
+  "at": "9.7@encienden las luces",
+  "exacto": true
+ },
+ {
+  "id": "c014",
+  "kind": "depth2",
+  "t0": 479.44,
+  "dur": 2.82,
+  "at": "9.7@capa de nubes",
+  "exacto": true
+ },
+ {
+  "id": "r022",
+  "kind": "clip",
+  "t0": 482.26,
+  "dur": 4.005,
+  "at": "9.8",
+  "exacto": true
+ },
+ {
+  "id": "g022",
+  "kind": "lista",
+  "t0": 486.265,
+  "dur": 6.675,
+  "at": "9.8",
+  "exacto": true,
+  "wk": [
+   [
+    -1.385,
+    0
+   ],
+   [
+    1.195,
+    1
+   ],
+   [
+    2.515,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "o009",
+  "kind": "depth2",
+  "t0": 492.94,
+  "dur": 1.54,
+  "at": "9.8@subir no es una opci\u00f3n",
+  "exacto": true
+ },
+ {
+  "id": "c015",
+  "kind": "clip",
+  "t0": 494.48,
+  "dur": 7.789,
+  "at": "9.9",
+  "exacto": true,
+  "wk": [
+   [
+    9.84,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "r023",
+  "kind": "clip",
+  "t0": 502.269,
+  "dur": 6.231,
+  "at": "9.9",
+  "exacto": true
+ },
+ {
+  "id": "c016",
+  "kind": "clip",
+  "t0": 508.5,
+  "dur": 3.2,
+  "at": "9.9@sigui\u00f3 por su ruta",
+  "exacto": true
+ },
+ {
+  "id": "c017",
+  "kind": "clip",
+  "t0": 511.7,
+  "dur": 6.478,
+  "at": "9.10",
+  "exacto": true
+ },
+ {
+  "id": "c062",
+  "kind": "clip",
+  "t0": 518.178,
+  "dur": 5.182,
+  "at": "9.10",
+  "exacto": true
+ },
+ {
+  "id": "c_pnf_despierta",
+  "kind": "clip",
+  "t0": 523.36,
+  "dur": 1.68,
+  "at": "9.10@\u00e9l va a tomar",
+  "exacto": true
+ },
+ {
+  "id": "c_brief_1",
+  "kind": "clip",
+  "t0": 525.04,
+  "dur": 4.48,
+  "at": "9.11",
+  "exacto": true
+ },
+ {
+  "id": "g023",
+  "kind": "cabina",
+  "t0": 529.52,
+  "dur": 4.52,
+  "at": "9.11@el m\u00e1s joven",
+  "exacto": true
+ },
+ {
+  "id": "c018",
+  "kind": "clip",
+  "t0": 534.04,
+  "dur": 4.06,
+  "at": "9.12",
+  "exacto": true
+ },
+ {
+  "id": "c_cmd_sale",
+  "kind": "clip",
+  "t0": 538.1,
+  "dur": 1.96,
+  "at": "9.12@y sale de la cabina",
+  "exacto": true
+ },
+ {
+  "id": "g024",
+  "kind": "cabina",
+  "t0": 540.06,
+  "dur": 4.32,
+  "at": "9.12@va al compartimiento",
+  "exacto": true
+ },
+ {
+  "id": "r024",
+  "kind": "clip",
+  "t0": 544.38,
+  "dur": 3.146,
+  "at": "9.13",
+  "exacto": true
+ },
+ {
+  "id": "o010",
+  "kind": "depth2",
+  "t0": 547.526,
+  "dur": 4.494,
+  "at": "9.13",
+  "exacto": true,
+  "wk": [
+   [
+    -0.846,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "c019",
+  "kind": "clip",
+  "t0": 552.02,
+  "dur": 4.5,
+  "at": "9.14",
+  "exacto": true
+ },
+ {
+  "id": "r025",
+  "kind": "clip",
+  "t0": 556.52,
+  "dur": 3.6,
+  "at": "9.14",
+  "exacto": true
+ },
+ {
+  "id": "c_azafata_aviso",
+  "kind": "clip",
+  "t0": 560.12,
+  "dur": 3.46,
+  "at": "9.14@que tengan cuidado",
+  "exacto": true
+ },
+ {
+  "id": "c020",
+  "kind": "clip",
+  "t0": 563.58,
+  "dur": 7.53,
+  "at": "9.15",
+  "exacto": true
+ },
+ {
+  "id": "g025",
+  "kind": "mapamad",
+  "t0": 571.11,
+  "dur": 3.58,
+  "at": "9.15@giran doce grados",
+  "exacto": true
+ },
+ {
+  "id": "o011",
+  "kind": "depth2",
+  "t0": 574.69,
+  "dur": 2.6,
+  "at": "9.15@encienden el antihielo",
+  "exacto": true
+ },
+ {
+  "id": "c090",
+  "kind": "clip",
+  "t0": 577.29,
+  "dur": 7.22,
+  "at": "9.16",
+  "exacto": true,
+  "wk": [
+   [
+    9.18,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "r052",
+  "kind": "clip",
+  "t0": 584.51,
+  "dur": 3.343,
+  "at": "9.16@hasta ac\u00e1",
+  "exacto": true
+ },
+ {
+  "id": "r_golpe_rayos2",
+  "kind": "clip",
+  "t0": 587.853,
+  "dur": 5.007,
   "at": "10",
   "exacto": true
  },
  {
-  "id": "g_cab_entran",
-  "kind": "cabina",
-  "t0": 518.12,
-  "dur": 7.28,
+  "id": "g026",
+  "kind": "perfilmad",
+  "t0": 592.86,
+  "dur": 4.087,
   "at": "11.0",
-  "exacto": true,
-  "wk": [
-   [
-    5.84,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "c_yokes_solos",
-  "kind": "clip",
-  "t0": 525.4,
-  "dur": 2.88,
-  "at": "11.1",
   "exacto": true
  },
  {
-  "id": "c_yokes_mueven2",
-  "kind": "clip",
-  "t0": 528.28,
-  "dur": 2.44,
-  "at": "11.1@movi\u00e9ndose",
-  "exacto": true
- },
- {
-  "id": "c_hayun_saca",
-  "kind": "still",
-  "t0": 530.72,
-  "dur": 6.38,
-  "at": "11.2",
-  "exacto": true
- },
- {
-  "id": "c_reducen",
-  "kind": "clip",
-  "t0": 537.1,
-  "dur": 3.98,
-  "at": "11.2@tzvika manes y otro",
-  "exacto": false
- },
- {
-  "id": "g_cab_reducen",
-  "kind": "cabina",
-  "t0": 541.08,
-  "dur": 3.54,
-  "at": "11.2@el dentista",
-  "exacto": true
- },
- {
-  "id": "o_cables",
-  "kind": "clip",
-  "t0": 544.62,
-  "dur": 6.28,
-  "at": "11.3",
-  "exacto": true,
-  "wk": [
-   [
-    1.94,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "g_cita_matenme",
-  "kind": "cita",
-  "t0": 550.9,
-  "dur": 6.54,
-  "at": "11.4",
-  "exacto": true
- },
- {
-  "id": "g_perfil_sigue",
-  "kind": "perfil",
-  "t0": 557.44,
-  "dur": 1.86,
-  "at": "11.5",
-  "exacto": true
- },
- {
-  "id": "c_hayun_mandos",
-  "kind": "clip",
-  "t0": 559.3,
-  "dur": 6.08,
-  "at": "11.6",
-  "exacto": true
- },
- {
-  "id": "c_yoke_atras",
-  "kind": "clip",
-  "t0": 565.38,
-  "dur": 6.0,
-  "at": "11.7",
-  "exacto": true
- },
- {
-  "id": "o_tele",
-  "kind": "clip",
-  "t0": 571.38,
-  "dur": 4.0,
-  "at": "11.7@mirando mayday",
-  "exacto": true
- },
- {
-  "id": "g_cinco_seg",
-  "kind": "numero",
-  "t0": 575.38,
-  "dur": 8.84,
-  "at": "11.8",
-  "exacto": true,
-  "wk": [
-   [
-    1.8,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "c_ext_recupera",
-  "kind": "clip",
-  "t0": 584.22,
-  "dur": 4.94,
-  "at": "11.8@es una estimaci\u00f3n",
-  "exacto": true
- },
- {
-  "id": "c_reserva_toma",
-  "kind": "clip",
-  "t0": 589.16,
-  "dur": 8.9,
-  "at": "11.9",
-  "exacto": true
- },
- {
-  "id": "o_gorras_vacias",
-  "kind": "clip",
-  "t0": 598.06,
-  "dur": 6.02,
-  "at": "11.10",
-  "exacto": true
- },
- {
-  "id": "s_reserva",
-  "kind": "clip",
-  "t0": 604.08,
-  "dur": 7.2,
-  "at": "11.11",
-  "exacto": true
- },
- {
-  "id": "g_perfil_nivel",
-  "kind": "perfil",
-  "t0": 611.28,
-  "dur": 7.12,
-  "at": "11.11@hacia las cinco",
-  "exacto": true,
-  "wk": [
-   [
-    3.96,
-    0
-   ],
-   [
-    -7.08,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "c_dentista",
-  "kind": "clip",
-  "t0": 618.4,
-  "dur": 4.86,
-  "at": "11.12",
-  "exacto": true
- },
- {
-  "id": "c_toalla",
-  "kind": "still",
-  "t0": 623.26,
-  "dur": 3.88,
-  "at": "11.12@la presi\u00f3n",
-  "exacto": true
- },
- {
-  "id": "g_cita_musayev",
-  "kind": "cita",
-  "t0": 627.14,
-  "dur": 4.243,
-  "at": "11.12@musayev cont\u00f3",
-  "exacto": true
- },
- {
-  "id": "cap5",
+  "id": "cap03",
   "kind": "capitulo7",
-  "t0": 631.383,
-  "dur": 2.957,
+  "t0": 596.947,
+  "dur": 2.933,
   "at": "12",
   "exacto": true
  },
  {
-  "id": "o_transp",
+  "id": "r026",
   "kind": "clip",
-  "t0": 634.34,
-  "dur": 3.66,
+  "t0": 599.88,
+  "dur": 4.324,
   "at": "13.0",
   "exacto": true
  },
  {
-  "id": "s_radar_sala",
-  "kind": "clip",
-  "t0": 638.0,
-  "dur": 6.8,
-  "at": "13.0@es como la patente",
+  "id": "o_pitot_1",
+  "kind": "depth2",
+  "t0": 604.204,
+  "dur": 6.176,
+  "at": "13.0",
   "exacto": true
  },
  {
-  "id": "g_squawk_vacio",
-  "kind": "squawk",
-  "t0": 644.8,
-  "dur": 2.12,
-  "at": "13.0@un c\u00f3digo de cuatro",
+  "id": "a008",
+  "kind": "still",
+  "t0": 610.38,
+  "dur": 1.44,
+  "at": "13.0@tubos pitot",
   "exacto": true
  },
  {
-  "id": "o_radar_blip",
+  "id": "c_pitot_aire",
   "kind": "clip",
-  "t0": 646.92,
-  "dur": 3.54,
+  "t0": 611.82,
+  "dur": 5.956,
   "at": "13.1",
   "exacto": true
  },
  {
-  "id": "g_tabla",
-  "kind": "squawk",
-  "t0": 650.46,
-  "dur": 11.22,
-  "at": "13.1@siete seis cero cero",
-  "exacto": true,
-  "wk": [
-   [
-    0.12,
-    0
-   ],
-   [
-    3.74,
-    1
-   ],
-   [
-    6.68,
-    2
-   ]
-  ]
+  "id": "r027",
+  "kind": "clip",
+  "t0": 617.776,
+  "dur": 4.764,
+  "at": "13.1",
+  "exacto": true
  },
  {
-  "id": "s_transp",
-  "kind": "clip",
-  "t0": 661.68,
-  "dur": 1.74,
+  "id": "o_pitot_dial",
+  "kind": "depth2",
+  "t0": 622.54,
+  "dur": 5.2,
+  "at": "13.1@esa presi\u00f3n",
+  "exacto": true
+ },
+ {
+  "id": "o012",
+  "kind": "depth2",
+  "t0": 627.74,
+  "dur": 9.28,
   "at": "13.2",
   "exacto": true
  },
  {
-  "id": "g_squawk_cambio",
-  "kind": "squawk",
-  "t0": 663.42,
-  "dur": 5.2,
-  "at": "13.2@primero siete siete",
-  "exacto": true,
-  "wk": [
-   [
-    0.58,
-    0
-   ],
-   [
-    3.3,
-    1
-   ]
-  ]
- },
- {
-  "id": "g_reg_codigos",
-  "kind": "registro",
-  "t0": 668.62,
-  "dur": 12.18,
-  "at": "13.3",
-  "exacto": true,
-  "wk": [
-   [
-    6.24,
-    0
-   ],
-   [
-    10.88,
-    1
-   ]
-  ]
- },
- {
-  "id": "s_radar2",
-  "kind": "clip",
-  "t0": 680.8,
-  "dur": 2.84,
-  "at": "13.3@lo mismo pasa",
+  "id": "o013",
+  "kind": "depth2",
+  "t0": 637.02,
+  "dur": 2.4,
+  "at": "13.2@en el mismo lugar",
   "exacto": true
  },
  {
-  "id": "g_reg_codigos2",
+  "id": "c_cristales",
+  "kind": "clip",
+  "t0": 639.42,
+  "dur": 7.811,
+  "at": "13.3",
+  "exacto": true
+ },
+ {
+  "id": "r028",
+  "kind": "clip",
+  "t0": 647.231,
+  "dur": 6.249,
+  "at": "13.3",
+  "exacto": true
+ },
+ {
+  "id": "c_pitot_tapa",
+  "kind": "clip",
+  "t0": 653.48,
+  "dur": 3.599,
+  "at": "13.3@pueden tapar",
+  "exacto": true
+ },
+ {
+  "id": "r_golpe_irt",
+  "kind": "clip",
+  "t0": 657.079,
+  "dur": 4.901,
+  "at": "14",
+  "exacto": true
+ },
+ {
+  "id": "g027",
+  "kind": "numero",
+  "t0": 661.98,
+  "dur": 10.06,
+  "at": "15.0",
+  "exacto": true,
+  "wk": [
+   [
+    8.12,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "c021",
+  "kind": "clip",
+  "t0": 672.04,
+  "dur": 3.74,
+  "at": "15.0@aunque el avi\u00f3n siga",
+  "exacto": true
+ },
+ {
+  "id": "a049",
+  "kind": "still",
+  "t0": 675.78,
+  "dur": 3.915,
+  "at": "15.1",
+  "exacto": true
+ },
+ {
+  "id": "a009",
+  "kind": "still",
+  "t0": 679.695,
+  "dur": 6.525,
+  "at": "15.1",
+  "exacto": true
+ },
+ {
+  "id": "r029",
+  "kind": "clip",
+  "t0": 686.22,
+  "dur": 5.22,
+  "at": "15.1",
+  "exacto": true
+ },
+ {
+  "id": "r030",
+  "kind": "clip",
+  "t0": 691.44,
+  "dur": 5.88,
+  "at": "15.2",
+  "exacto": true
+ },
+ {
+  "id": "g028",
+  "kind": "numero",
+  "t0": 697.32,
+  "dur": 9.8,
+  "at": "15.2",
+  "exacto": true,
+  "wk": [
+   [
+    4.34,
+    0
+   ],
+   [
+    0.64,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "o014",
+  "kind": "depth2",
+  "t0": 707.12,
+  "dur": 5.54,
+  "at": "15.3",
+  "exacto": true
+ },
+ {
+  "id": "a050",
+  "kind": "still",
+  "t0": 712.66,
+  "dur": 6.131,
+  "at": "15.4",
+  "exacto": true
+ },
+ {
+  "id": "o_dos_pitot",
+  "kind": "depth2",
+  "t0": 718.791,
+  "dur": 10.219,
+  "at": "15.4",
+  "exacto": true
+ },
+ {
+  "id": "a051",
+  "kind": "still",
+  "t0": 729.01,
+  "dur": 4.21,
+  "at": "15.5",
+  "exacto": true
+ },
+ {
+  "id": "g029",
   "kind": "registro",
-  "t0": 683.64,
-  "dur": 4.28,
-  "at": "13.3@cinco y treinta y cinco",
+  "t0": 733.22,
+  "dur": 8.42,
+  "at": "15.5",
+  "exacto": true,
+  "wk": [
+   [
+    -0.31,
+    0
+   ],
+   [
+    5.63,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "a010",
+  "kind": "still",
+  "t0": 741.64,
+  "dur": 3.7,
+  "at": "15.6",
+  "exacto": true
+ },
+ {
+  "id": "r031",
+  "kind": "clip",
+  "t0": 745.34,
+  "dur": 4.052,
+  "at": "15.7",
+  "exacto": true
+ },
+ {
+  "id": "g030",
+  "kind": "cita",
+  "t0": 749.392,
+  "dur": 5.788,
+  "at": "15.7",
+  "exacto": true
+ },
+ {
+  "id": "c022",
+  "kind": "clip",
+  "t0": 755.18,
+  "dur": 4.278,
+  "at": "15.8",
+  "exacto": true
+ },
+ {
+  "id": "r032",
+  "kind": "clip",
+  "t0": 759.458,
+  "dur": 3.422,
+  "at": "15.8",
+  "exacto": true
+ },
+ {
+  "id": "o_manual",
+  "kind": "depth2",
+  "t0": 762.88,
+  "dur": 11.96,
+  "at": "15.8@hay un procedimiento",
+  "exacto": true
+ },
+ {
+  "id": "g031",
+  "kind": "numero",
+  "t0": 774.84,
+  "dur": 5.8,
+  "at": "15.9",
+  "exacto": true
+ },
+ {
+  "id": "c063",
+  "kind": "clip",
+  "t0": 780.64,
+  "dur": 7.927,
+  "at": "15.10",
+  "exacto": true
+ },
+ {
+  "id": "g032",
+  "kind": "lista",
+  "t0": 788.567,
+  "dur": 13.212,
+  "at": "15.10",
+  "exacto": true,
+  "wk": [
+   [
+    1.472,
+    0
+   ],
+   [
+    3.852,
+    1
+   ],
+   [
+    5.873,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "g033",
+  "kind": "numero",
+  "t0": 801.78,
+  "dur": 4.18,
+  "at": "15.11",
+  "exacto": true
+ },
+ {
+  "id": "c_entra_nube",
+  "kind": "clip",
+  "t0": 805.96,
+  "dur": 6.98,
+  "at": "15.12",
+  "exacto": true
+ },
+ {
+  "id": "c023",
+  "kind": "clip",
+  "t0": 812.94,
+  "dur": 5.0,
+  "at": "15.12@son cristales de hielo",
+  "exacto": true
+ },
+ {
+  "id": "o015",
+  "kind": "depth2",
+  "t0": 817.94,
+  "dur": 2.672,
+  "at": "15.13",
+  "exacto": true
+ },
+ {
+  "id": "cap04",
+  "kind": "capitulo7",
+  "t0": 820.612,
+  "dur": 3.038,
+  "at": "16",
+  "exacto": true
+ },
+ {
+  "id": "o016",
+  "kind": "depth2",
+  "t0": 823.65,
+  "dur": 4.66,
+  "at": "17.0",
+  "exacto": true
+ },
+ {
+  "id": "c_agujas",
+  "kind": "clip",
+  "t0": 828.31,
+  "dur": 7.2,
+  "at": "17.0@las velocidades dejan",
+  "exacto": true
+ },
+ {
+  "id": "c_desconecta",
+  "kind": "clip",
+  "t0": 835.51,
+  "dur": 2.18,
+  "at": "17.0@se desconecta",
+  "exacto": true
+ },
+ {
+  "id": "o017",
+  "kind": "depth2",
+  "t0": 837.69,
+  "dur": 4.36,
+  "at": "17.0@y un segundo despu\u00e9s",
+  "exacto": true
+ },
+ {
+  "id": "c_mano_toma",
+  "kind": "clip",
+  "t0": 842.05,
+  "dur": 2.52,
+  "at": "17.1",
+  "exacto": true
+ },
+ {
+  "id": "g034",
+  "kind": "registro",
+  "t0": 844.57,
+  "dur": 4.32,
+  "at": "17.1@tengo los mandos",
+  "exacto": true,
+  "wk": [
+   [
+    0.12,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "c_cabina_duerme",
+  "kind": "clip",
+  "t0": 848.89,
+  "dur": 8.28,
+  "at": "17.2",
+  "exacto": true
+ },
+ {
+  "id": "c024",
+  "kind": "clip",
+  "t0": 857.17,
+  "dur": 6.62,
+  "at": "17.2@las azafatas",
+  "exacto": true
+ },
+ {
+  "id": "c_ext_rola",
+  "kind": "clip",
+  "t0": 863.79,
+  "dur": 4.02,
+  "at": "17.3",
+  "exacto": true
+ },
+ {
+  "id": "g035",
+  "kind": "numero",
+  "t0": 867.81,
+  "dur": 5.1,
+  "at": "17.3@ocho grados",
+  "exacto": true
+ },
+ {
+  "id": "c_tira_1",
+  "kind": "clip",
+  "t0": 872.91,
+  "dur": 3.3,
+  "at": "17.3@y la tira hacia atr\u00e1s",
+  "exacto": true
+ },
+ {
+  "id": "c_ext_sube",
+  "kind": "clip",
+  "t0": 876.21,
+  "dur": 3.444,
+  "at": "17.4",
+  "exacto": true
+ },
+ {
+  "id": "c064",
+  "kind": "clip",
+  "t0": 879.654,
+  "dur": 2.756,
+  "at": "17.4",
+  "exacto": true
+ },
+ {
+  "id": "g036",
+  "kind": "cita",
+  "t0": 882.41,
+  "dur": 11.5,
+  "at": "17.4@nadie sabe con certeza",
+  "exacto": true
+ },
+ {
+  "id": "o035",
+  "kind": "depth2",
+  "t0": 893.91,
+  "dur": 6.337,
+  "at": "17.5",
+  "exacto": true
+ },
+ {
+  "id": "g037",
+  "kind": "lista",
+  "t0": 900.247,
+  "dur": 10.562,
+  "at": "17.5",
+  "exacto": true,
+  "wk": [
+   [
+    -2.797,
+    0
+   ],
+   [
+    5.543,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "r033",
+  "kind": "clip",
+  "t0": 910.81,
+  "dur": 3.818,
+  "at": "17.6",
+  "exacto": true
+ },
+ {
+  "id": "o_auto",
+  "kind": "depth2",
+  "t0": 914.627,
+  "dur": 6.363,
+  "at": "17.6",
+  "exacto": true
+ },
+ {
+  "id": "c025",
+  "kind": "clip",
+  "t0": 920.99,
+  "dur": 4.06,
+  "at": "17.6@el auto sigue andando",
+  "exacto": true
+ },
+ {
+  "id": "o018",
+  "kind": "depth2",
+  "t0": 925.05,
+  "dur": 2.68,
+  "at": "17.7",
+  "exacto": true
+ },
+ {
+  "id": "o_stall_1",
+  "kind": "depth2",
+  "t0": 927.73,
+  "dur": 9.1,
+  "at": "17.8",
+  "exacto": true
+ },
+ {
+  "id": "c_pnf_lee",
+  "kind": "clip",
+  "t0": 936.83,
+  "dur": 4.64,
+  "at": "17.9",
+  "exacto": true
+ },
+ {
+  "id": "g038",
+  "kind": "registro",
+  "t0": 941.47,
+  "dur": 5.46,
+  "at": "17.9@perdimos las velocidades",
   "exacto": true,
   "wk": [
    [
@@ -1302,855 +1724,3375 @@
     0
    ],
    [
-    1.68,
+    3.22,
     1
    ]
   ]
  },
  {
-  "id": "g_quien",
-  "kind": "cita",
-  "t0": 687.92,
-  "dur": 4.16,
-  "at": "13.4",
-  "exacto": true
- },
- {
-  "id": "c_radar",
+  "id": "c026",
   "kind": "clip",
-  "t0": 692.08,
-  "dur": 5.22,
-  "at": "13.5",
-  "exacto": true
- },
- {
-  "id": "g_squawk_7500",
-  "kind": "squawk",
-  "t0": 697.3,
-  "dur": 5.92,
-  "at": "13.5@y el c\u00f3digo dice",
-  "exacto": true
- },
- {
-  "id": "a_f35",
-  "kind": "foto",
-  "t0": 703.22,
-  "dur": 6.38,
-  "at": "13.6",
-  "exacto": true,
-  "wk": [
-   [
-    1.68,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "g_escenarios",
-  "kind": "lista",
-  "t0": 709.6,
-  "dur": 9.94,
-  "at": "13.6@seg\u00fan el diario",
-  "exacto": true,
-  "wk": [
-   [
-    2.18,
-    0
-   ],
-   [
-    3.8,
-    1
-   ],
-   [
-    5.76,
-    2
-   ]
-  ]
- },
- {
-  "id": "c_ext_secuestrado",
-  "kind": "clip",
-  "t0": 719.54,
-  "dur": 8.44,
-  "at": "13.7",
-  "exacto": true
- },
- {
-  "id": "g_mapa_jordania",
-  "kind": "mapa",
-  "t0": 727.98,
-  "dur": 7.3,
-  "at": "13.8",
-  "exacto": true
- },
- {
-  "id": "s_ventanilla",
-  "kind": "clip",
-  "t0": 735.28,
-  "dur": 5.92,
-  "at": "13.9",
-  "exacto": true
- },
- {
-  "id": "g_mapa_tabuk",
-  "kind": "mapa",
-  "t0": 741.2,
-  "dur": 4.64,
-  "at": "13.9@recibe un pedido",
-  "exacto": true,
-  "wk": [
-   [
-    0.96,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "g_squawk_vuelve",
-  "kind": "squawk",
-  "t0": 745.84,
-  "dur": 4.769,
-  "at": "13.9@el transpondedor vuelve",
-  "exacto": true
- },
- {
-  "id": "cap6",
-  "kind": "capitulo7",
-  "t0": 750.609,
-  "dur": 3.011,
-  "at": "14",
-  "exacto": true
- },
- {
-  "id": "g_mapa_relaciones",
-  "kind": "mapa",
-  "t0": 753.62,
-  "dur": 10.12,
-  "at": "15.0",
-  "exacto": true
- },
- {
-  "id": "a_tabuk",
-  "kind": "foto",
-  "t0": 763.74,
-  "dur": 5.6,
-  "at": "15.1",
-  "exacto": true,
-  "wk": [
-   [
-    4.28,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "c_aterriza",
-  "kind": "clip",
-  "t0": 769.34,
-  "dur": 2.96,
-  "at": "15.1@pr\u00edncipe sult\u00e1n",
-  "exacto": true
- },
- {
-  "id": "g_nadie",
-  "kind": "cita",
-  "t0": 772.3,
-  "dur": 1.5,
-  "at": "15.2",
-  "exacto": true
- },
- {
-  "id": "c_aplausos",
-  "kind": "clip",
-  "t0": 773.8,
-  "dur": 4.66,
-  "at": "15.3",
-  "exacto": true,
-  "wk": [
-   [
-    2.58,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "c_ambulancias",
-  "kind": "clip",
-  "t0": 778.46,
-  "dur": 5.74,
-  "at": "15.4",
-  "exacto": true
- },
- {
-  "id": "a_tabuk2",
-  "kind": "foto",
-  "t0": 784.2,
-  "dur": 4.76,
-  "at": "15.4@el primer oficial",
-  "exacto": true
- },
- {
-  "id": "o_cola_tabuk",
-  "kind": "still",
-  "t0": 788.96,
-  "dur": 7.74,
-  "at": "15.5",
-  "exacto": true,
-  "wk": [
-   [
-    3.3,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "g_reg_tabuk",
-  "kind": "registro",
-  "t0": 796.7,
-  "dur": 11.98,
-  "at": "15.6",
-  "exacto": true,
-  "wk": [
-   [
-    0.94,
-    1
-   ],
-   [
-    6.96,
-    2
-   ],
-   [
-    12.1,
-    3
-   ]
-  ]
- },
- {
-  "id": "a_tlv",
-  "kind": "foto",
-  "t0": 808.68,
-  "dur": 2.98,
-  "at": "15.6@llegan a tel aviv",
-  "exacto": true
- },
- {
-  "id": "c_abrazo",
-  "kind": "clip",
-  "t0": 811.66,
-  "dur": 6.62,
-  "at": "15.7",
-  "exacto": true
- },
- {
-  "id": "c_asiento_der",
-  "kind": "clip",
-  "t0": 818.28,
-  "dur": 4.3,
-  "at": "15.8",
-  "exacto": true
- },
- {
-  "id": "c_gorra_der",
-  "kind": "clip",
-  "t0": 822.58,
-  "dur": 4.239,
-  "at": "15.8@qui\u00e9n era",
-  "exacto": true
- },
- {
-  "id": "cap7",
-  "kind": "capitulo7",
-  "t0": 826.819,
-  "dur": 2.621,
-  "at": "16",
-  "exacto": true
- },
- {
-  "id": "o_podio",
-  "kind": "clip",
-  "t0": 829.44,
-  "dur": 4.22,
-  "at": "17.0",
-  "exacto": true
- },
- {
-  "id": "g_palabras",
-  "kind": "lista",
-  "t0": 833.66,
-  "dur": 7.18,
-  "at": "17.0@flydubai habla",
-  "exacto": true,
-  "wk": [
-   [
-    1.18,
-    0
-   ],
-   [
-    5.46,
-    1
-   ]
-  ]
- },
- {
-  "id": "g_israel",
-  "kind": "cita",
-  "t0": 840.84,
-  "dur": 3.98,
-  "at": "17.1",
-  "exacto": true
- },
- {
-  "id": "s_podio",
-  "kind": "clip",
-  "t0": 844.82,
-  "dur": 4.0,
-  "at": "17.2",
-  "exacto": true
- },
- {
-  "id": "g_gargash",
-  "kind": "cita",
-  "t0": 848.82,
-  "dur": 5.16,
-  "at": "17.2@anwar gargash",
-  "exacto": true
- },
- {
-  "id": "g_fiscal",
-  "kind": "registro",
-  "t0": 853.98,
-  "dur": 11.22,
-  "at": "17.3",
-  "exacto": true
- },
- {
-  "id": "o_hacha_mesa",
-  "kind": "clip",
-  "t0": 865.2,
-  "dur": 4.02,
-  "at": "17.3@y nombra el arma",
-  "exacto": true
- },
- {
-  "id": "g_ojo",
-  "kind": "cita",
-  "t0": 869.22,
-  "dur": 7.92,
-  "at": "17.4",
-  "exacto": true
- },
- {
-  "id": "o_hangar",
-  "kind": "clip",
-  "t0": 877.14,
-  "dur": 2.8,
-  "at": "17.5",
-  "exacto": true
- },
- {
-  "id": "g_oman",
-  "kind": "lista",
-  "t0": 879.94,
-  "dur": 11.12,
-  "at": "17.5@seg\u00fan the wall",
-  "exacto": true,
-  "wk": [
-   [
-    -0.92,
-    0
-   ],
-   [
-    4.24,
-    1
-   ],
-   [
-    9.62,
-    2
-   ]
-  ]
- },
- {
-  "id": "g_contrata",
-  "kind": "registro",
-  "t0": 891.06,
-  "dur": 9.82,
-  "at": "17.6",
-  "exacto": true,
-  "wk": [
-   [
-    5.3,
-    0
-   ],
-   [
-    6.92,
-    1
-   ]
-  ]
- },
- {
-  "id": "o_credencial",
-  "kind": "clip",
-  "t0": 900.88,
-  "dur": 2.14,
-  "at": "17.7",
-  "exacto": true
- },
- {
-  "id": "g_mapa_27",
-  "kind": "mapa",
-  "t0": 903.02,
-  "dur": 13.72,
-  "at": "17.7@israel proh\u00edbe",
-  "exacto": true,
-  "wk": [
-   [
-    12.28,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "s_fo_der",
-  "kind": "clip",
-  "t0": 916.74,
-  "dur": 2.58,
-  "at": "17.7@y \u00e9l hab\u00eda volado",
-  "exacto": true
- },
- {
-  "id": "a_fz_dxb",
-  "kind": "foto",
-  "t0": 919.32,
-  "dur": 3.04,
-  "at": "17.8",
-  "exacto": true
- },
- {
-  "id": "g_medidas",
-  "kind": "registro",
-  "t0": 922.36,
-  "dur": 13.7,
-  "at": "17.8@el cuatro de octubre",
-  "exacto": true,
-  "wk": [
-   [
-    -0.84,
-    0
-   ],
-   [
-    2.3,
-    1
-   ],
-   [
-    7.82,
-    2
-   ]
-  ]
- },
- {
-  "id": "g_canal12",
-  "kind": "cita",
-  "t0": 936.06,
-  "dur": 7.16,
-  "at": "17.9",
-  "exacto": true
- },
- {
-  "id": "o_torre",
-  "kind": "clip",
-  "t0": 943.22,
-  "dur": 4.8,
-  "at": "17.9@es un reporte",
-  "exacto": true
- },
- {
-  "id": "g_estado",
-  "kind": "lista",
-  "t0": 948.02,
-  "dur": 13.86,
+  "t0": 946.93,
+  "dur": 7.017,
   "at": "17.10",
-  "exacto": true,
-  "wk": [
-   [
-    3.04,
-    0
-   ],
-   [
-    5.96,
-    1
-   ],
-   [
-    7.6,
-    2
-   ],
-   [
-    12.16,
-    3
-   ]
-  ]
+  "exacto": true
  },
  {
-  "id": "o_puerta_25",
+  "id": "c065",
   "kind": "clip",
-  "t0": 961.88,
-  "dur": 4.92,
+  "t0": 953.947,
+  "dur": 5.613,
+  "at": "17.10",
+  "exacto": true
+ },
+ {
+  "id": "g039",
+  "kind": "perfilmad",
+  "t0": 959.56,
+  "dur": 5.18,
   "at": "17.11",
   "exacto": true
  },
  {
-  "id": "s_cabina_calma",
+  "id": "c_ext_trepa",
   "kind": "clip",
-  "t0": 966.8,
-  "dur": 4.4,
-  "at": "17.11@y si el peligro",
+  "t0": 964.74,
+  "dur": 9.58,
+  "at": "17.11@el avi\u00f3n sube",
   "exacto": true
  },
  {
-  "id": "c_hacha_dentro",
-  "kind": "clip",
-  "t0": 971.2,
-  "dur": 4.66,
-  "at": "17.11@el peligro ya estaba",
+  "id": "g040",
+  "kind": "numero",
+  "t0": 974.32,
+  "dur": 1.3,
+  "at": "17.11@siete veces m\u00e1s",
   "exacto": true
  },
  {
-  "id": "c_pasaje_luz",
+  "id": "c_cuidado",
   "kind": "clip",
-  "t0": 975.86,
-  "dur": 6.244,
+  "t0": 975.62,
+  "dur": 2.28,
   "at": "17.12",
   "exacto": true
  },
  {
-  "id": "cap8",
-  "kind": "capitulo7",
-  "t0": 982.104,
-  "dur": 2.716,
-  "at": "18",
-  "exacto": true
- },
- {
-  "id": "o_camara_no",
-  "kind": "still",
-  "t0": 984.82,
-  "dur": 5.94,
-  "at": "19.0",
-  "exacto": true
- },
- {
-  "id": "g_cajas",
-  "kind": "cajas",
-  "t0": 990.76,
-  "dur": 10.46,
-  "at": "19.1",
+  "id": "g041",
+  "kind": "registro",
+  "t0": 977.9,
+  "dur": 7.54,
+  "at": "17.12@cuidado con tu velocidad",
   "exacto": true,
   "wk": [
    [
-    4.96,
+    0.12,
     0
    ],
    [
-    10.58,
+    4.96,
+    1
+   ],
+   [
+    7.66,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "c027",
+  "kind": "clip",
+  "t0": 985.44,
+  "dur": 4.28,
+  "at": "17.13",
+  "exacto": true
+ },
+ {
+  "id": "c028",
+  "kind": "clip",
+  "t0": 989.72,
+  "dur": 6.56,
+  "at": "17.14",
+  "exacto": true
+ },
+ {
+  "id": "g042",
+  "kind": "numero",
+  "t0": 996.28,
+  "dur": 1.66,
+  "at": "17.14@treinta y siete mil",
+  "exacto": true
+ },
+ {
+  "id": "c029",
+  "kind": "clip",
+  "t0": 997.94,
+  "dur": 7.722,
+  "at": "17.15",
+  "exacto": true,
+  "wk": [
+   [
+    6.42,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "c066",
+  "kind": "clip",
+  "t0": 1005.662,
+  "dur": 6.178,
+  "at": "17.15",
+  "exacto": true
+ },
+ {
+  "id": "o_pitot_libre",
+  "kind": "depth2",
+  "t0": 1011.84,
+  "dur": 5.74,
+  "at": "17.16",
+  "exacto": true
+ },
+ {
+  "id": "c030",
+  "kind": "clip",
+  "t0": 1017.58,
+  "dur": 2.72,
+  "at": "17.16@pero el avi\u00f3n ya no",
+  "exacto": true
+ },
+ {
+  "id": "g043",
+  "kind": "lista",
+  "t0": 1020.3,
+  "dur": 7.188,
+  "at": "17.17",
+  "exacto": true,
+  "wk": [
+   [
+    3.56,
+    0
+   ],
+   [
+    4.299,
     1
    ]
   ]
  },
  {
-  "id": "a_cvr",
-  "kind": "foto",
-  "t0": 1001.22,
-  "dur": 2.18,
-  "at": "19.1@la otra graba",
+  "id": "c067",
+  "kind": "clip",
+  "t0": 1027.488,
+  "dur": 5.751,
+  "at": "17.17",
   "exacto": true
  },
  {
-  "id": "g_25h",
+  "id": "c031",
+  "kind": "clip",
+  "t0": 1033.239,
+  "dur": 3.121,
+  "at": "17.17@nadie en la cabina",
+  "exacto": true
+ },
+ {
+  "id": "o_bici",
+  "kind": "depth2",
+  "t0": 1036.36,
+  "dur": 7.42,
+  "at": "17.18",
+  "exacto": true
+ },
+ {
+  "id": "g044",
   "kind": "numero",
-  "t0": 1003.4,
-  "dur": 9.38,
+  "t0": 1043.78,
+  "dur": 6.0,
+  "at": "17.18@perdi\u00f3 casi cincuenta",
+  "exacto": true
+ },
+ {
+  "id": "c032",
+  "kind": "clip",
+  "t0": 1049.78,
+  "dur": 4.26,
+  "at": "17.18@el margen",
+  "exacto": true
+ },
+ {
+  "id": "c_llama",
+  "kind": "clip",
+  "t0": 1054.04,
+  "dur": 7.23,
+  "at": "17.19",
+  "exacto": true
+ },
+ {
+  "id": "c_cmd_oye",
+  "kind": "clip",
+  "t0": 1061.27,
+  "dur": 5.54,
+  "at": "17.19@una vez",
+  "exacto": true
+ },
+ {
+  "id": "o019",
+  "kind": "depth2",
+  "t0": 1066.81,
+  "dur": 4.544,
+  "at": "17.20",
+  "exacto": true
+ },
+ {
+  "id": "c068",
+  "kind": "clip",
+  "t0": 1071.354,
+  "dur": 3.636,
+  "at": "17.20",
+  "exacto": true
+ },
+ {
+  "id": "o_stall_2",
+  "kind": "depth2",
+  "t0": 1074.99,
+  "dur": 3.762,
+  "at": "17.21",
+  "exacto": true
+ },
+ {
+  "id": "cap05",
+  "kind": "capitulo7",
+  "t0": 1078.752,
+  "dur": 2.878,
+  "at": "18",
+  "exacto": true
+ },
+ {
+  "id": "c_ala_ok",
+  "kind": "clip",
+  "t0": 1081.63,
+  "dur": 6.011,
+  "at": "19.0",
+  "exacto": true
+ },
+ {
+  "id": "r034",
+  "kind": "clip",
+  "t0": 1087.641,
+  "dur": 4.809,
+  "at": "19.0",
+  "exacto": true
+ },
+ {
+  "id": "c_ala_tilt",
+  "kind": "clip",
+  "t0": 1092.45,
+  "dur": 5.08,
+  "at": "19.0@si inclinas el ala",
+  "exacto": true
+ },
+ {
+  "id": "c_ala_stall",
+  "kind": "clip",
+  "t0": 1097.53,
+  "dur": 8.0,
+  "at": "19.1",
+  "exacto": true
+ },
+ {
+  "id": "g045",
+  "kind": "cita",
+  "t0": 1105.53,
+  "dur": 5.1,
+  "at": "19.1@eso es una p\u00e9rdida",
+  "exacto": true
+ },
+ {
+  "id": "o020",
+  "kind": "depth2",
+  "t0": 1110.63,
+  "dur": 5.18,
+  "at": "19.1@con los motores",
+  "exacto": true
+ },
+ {
+  "id": "r035",
+  "kind": "clip",
+  "t0": 1115.81,
+  "dur": 5.253,
+  "at": "19.2",
+  "exacto": true
+ },
+ {
+  "id": "c069",
+  "kind": "clip",
+  "t0": 1121.063,
+  "dur": 5.253,
+  "at": "19.2",
+  "exacto": true
+ },
+ {
+  "id": "g046",
+  "kind": "lista",
+  "t0": 1126.315,
+  "dur": 8.755,
   "at": "19.2",
   "exacto": true,
   "wk": [
    [
-    8.02,
+    -4.865,
+    0
+   ],
+   [
+    -0.805,
+    1
+   ],
+   [
+    3.995,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "c_ala_sale",
+  "kind": "clip",
+  "t0": 1135.07,
+  "dur": 6.233,
+  "at": "19.3",
+  "exacto": true,
+  "wk": [
+   [
+    3.66,
     "__sello"
    ]
   ]
  },
  {
-  "id": "a_fkf2",
-  "kind": "foto",
-  "t0": 1012.78,
-  "dur": 2.7,
-  "at": "19.2@este avi\u00f3n entr\u00f3",
-  "exacto": true
- },
- {
-  "id": "s_caja",
+  "id": "c070",
   "kind": "clip",
-  "t0": 1015.48,
-  "dur": 3.42,
+  "t0": 1141.303,
+  "dur": 4.987,
   "at": "19.3",
   "exacto": true
  },
  {
-  "id": "a_ntsb_lab",
-  "kind": "foto",
-  "t0": 1018.9,
-  "dur": 8.22,
-  "at": "19.3@las autoridades saud\u00edes",
-  "exacto": true,
-  "wk": [
-   [
-    7.16,
-    "__sello"
-   ]
-  ]
- },
- {
-  "id": "g_pendiente",
-  "kind": "lista",
-  "t0": 1027.12,
-  "dur": 6.96,
-  "at": "19.3@cuando se publique",
+  "id": "g047",
+  "kind": "registro",
+  "t0": 1146.29,
+  "dur": 8.82,
+  "at": "19.4",
   "exacto": true,
   "wk": [
    [
     3.76,
     0
+   ]
+  ]
+ },
+ {
+  "id": "o021",
+  "kind": "depth2",
+  "t0": 1155.11,
+  "dur": 1.2,
+  "at": "19.4@el grillo",
+  "exacto": true
+ },
+ {
+  "id": "c_toga",
+  "kind": "clip",
+  "t0": 1156.31,
+  "dur": 5.54,
+  "at": "19.5",
+  "exacto": true
+ },
+ {
+  "id": "c_tira_2",
+  "kind": "clip",
+  "t0": 1161.85,
+  "dur": 3.54,
+  "at": "19.5@y sigue tirando",
+  "exacto": true
+ },
+ {
+  "id": "c_ths",
+  "kind": "clip",
+  "t0": 1165.39,
+  "dur": 5.26,
+  "at": "19.6",
+  "exacto": true
+ },
+ {
+  "id": "g048",
+  "kind": "numero",
+  "t0": 1170.65,
+  "dur": 8.12,
+  "at": "19.6@de tres a trece",
+  "exacto": true
+ },
+ {
+  "id": "g049",
+  "kind": "perfilmad",
+  "t0": 1178.77,
+  "dur": 7.55,
+  "at": "19.7",
+  "exacto": true,
+  "wk": [
+   [
+    0.12,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "g050",
+  "kind": "numero",
+  "t0": 1186.32,
+  "dur": 4.63,
+  "at": "19.7@diecis\u00e9is grados",
+  "exacto": true
+ },
+ {
+  "id": "c_ext_hoja",
+  "kind": "clip",
+  "t0": 1190.95,
+  "dur": 4.633,
+  "at": "19.8",
+  "exacto": true
+ },
+ {
+  "id": "c071",
+  "kind": "clip",
+  "t0": 1195.583,
+  "dur": 3.707,
+  "at": "19.8",
+  "exacto": true
+ },
+ {
+  "id": "r036",
+  "kind": "clip",
+  "t0": 1199.29,
+  "dur": 3.785,
+  "at": "19.9",
+  "exacto": true
+ },
+ {
+  "id": "c_bataneo",
+  "kind": "clip",
+  "t0": 1203.075,
+  "dur": 6.308,
+  "at": "19.9",
+  "exacto": true
+ },
+ {
+  "id": "c072",
+  "kind": "depth2",
+  "t0": 1209.383,
+  "dur": 5.047,
+  "at": "19.9",
+  "exacto": true
+ },
+ {
+  "id": "c033",
+  "kind": "clip",
+  "t0": 1214.43,
+  "dur": 3.49,
+  "at": "19.10",
+  "exacto": true
+ },
+ {
+  "id": "g051",
+  "kind": "registro",
+  "t0": 1217.92,
+  "dur": 3.49,
+  "at": "19.10@estoy en potencia",
+  "exacto": true,
+  "wk": [
+   [
+    -2.67,
+    0
    ],
    [
-    5.44,
+    2.63,
     1
    ]
   ]
  },
  {
-  "id": "a_cockpit_max",
-  "kind": "foto",
-  "t0": 1034.08,
-  "dur": 7.7,
-  "at": "19.4",
+  "id": "c034",
+  "kind": "clip",
+  "t0": 1221.41,
+  "dur": 2.56,
+  "at": "19.11",
   "exacto": true
  },
  {
-  "id": "g_camaras",
+  "id": "g052",
   "kind": "registro",
-  "t0": 1041.78,
-  "dur": 9.603,
-  "at": "19.4@los sindicatos",
+  "t0": 1223.97,
+  "dur": 3.9,
+  "at": "19.11@pero tenemos los motores",
   "exacto": true,
   "wk": [
    [
-    -1.62,
+    0.12,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "g053",
+  "kind": "lista",
+  "t0": 1227.87,
+  "dur": 13.66,
+  "at": "19.12",
+  "exacto": true,
+  "wk": [
+   [
+    3.3,
     0
    ],
    [
-    0.12,
+    5.72,
     1
    ],
    [
-    8.12,
+    10.56,
     2
    ]
   ]
  },
  {
-  "id": "cap9",
+  "id": "g054",
+  "kind": "perfilmad",
+  "t0": 1241.53,
+  "dur": 1.92,
+  "at": "19.12@cada vez m\u00e1s r\u00e1pido",
+  "exacto": true
+ },
+ {
+  "id": "o022",
+  "kind": "depth2",
+  "t0": 1243.45,
+  "dur": 8.74,
+  "at": "19.13",
+  "exacto": true
+ },
+ {
+  "id": "g055",
+  "kind": "numero",
+  "t0": 1252.19,
+  "dur": 6.34,
+  "at": "19.13@setenta y cinco",
+  "exacto": true,
+  "wk": [
+   [
+    0.12,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "g056",
+  "kind": "numero",
+  "t0": 1258.53,
+  "dur": 2.14,
+  "at": "19.13@cincuenta y cuatro",
+  "exacto": true,
+  "wk": [
+   [
+    0.12,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "c073",
+  "kind": "clip",
+  "t0": 1260.67,
+  "dur": 2.73,
+  "at": "19.14",
+  "exacto": true
+ },
+ {
+  "id": "c035",
+  "kind": "clip",
+  "t0": 1263.4,
+  "dur": 4.55,
+  "at": "19.14",
+  "exacto": true
+ },
+ {
+  "id": "r037",
+  "kind": "clip",
+  "t0": 1267.95,
+  "dur": 6.676,
+  "at": "19.15",
+  "exacto": true
+ },
+ {
+  "id": "c074",
+  "kind": "clip",
+  "t0": 1274.626,
+  "dur": 6.676,
+  "at": "19.15",
+  "exacto": true
+ },
+ {
+  "id": "g057",
+  "kind": "lista",
+  "t0": 1281.303,
+  "dur": 11.127,
+  "at": "19.15",
+  "exacto": true,
+  "wk": [
+   [
+    -11.373,
+    0
+   ],
+   [
+    -4.153,
+    1
+   ],
+   [
+    0.267,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "a052",
+  "kind": "still",
+  "t0": 1292.43,
+  "dur": 5.864,
+  "at": "19.16",
+  "exacto": true
+ },
+ {
+  "id": "c075",
+  "kind": "clip",
+  "t0": 1298.294,
+  "dur": 5.864,
+  "at": "19.16",
+  "exacto": true
+ },
+ {
+  "id": "g058",
+  "kind": "cita",
+  "t0": 1304.157,
+  "dur": 9.773,
+  "at": "19.16",
+  "exacto": true,
+  "wk": [
+   [
+    -0.767,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "c_no_control",
+  "kind": "clip",
+  "t0": 1313.93,
+  "dur": 4.36,
+  "at": "19.17",
+  "exacto": true
+ },
+ {
+  "id": "g059",
+  "kind": "registro",
+  "t0": 1318.29,
+  "dur": 4.54,
+  "at": "19.17@no tengo control",
+  "exacto": true,
+  "wk": [
+   [
+    0.12,
+    0
+   ],
+   [
+    3.08,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "c_prioridad",
+  "kind": "clip",
+  "t0": 1322.83,
+  "dur": 2.84,
+  "at": "19.18",
+  "exacto": true
+ },
+ {
+  "id": "g060",
+  "kind": "cabina",
+  "t0": 1325.67,
+  "dur": 11.24,
+  "at": "19.18@mandos a la izquierda",
+  "exacto": true,
+  "wk": [
+   [
+    9.8,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "o023",
+  "kind": "depth2",
+  "t0": 1336.91,
+  "dur": 4.267,
+  "at": "19.19",
+  "exacto": true
+ },
+ {
+  "id": "c076",
+  "kind": "clip",
+  "t0": 1341.177,
+  "dur": 3.413,
+  "at": "19.19",
+  "exacto": true
+ },
+ {
+  "id": "o_puerta_abre",
+  "kind": "depth2",
+  "t0": 1344.59,
+  "dur": 2.531,
+  "at": "19.20",
+  "exacto": true
+ },
+ {
+  "id": "cap06",
   "kind": "capitulo7",
-  "t0": 1051.383,
-  "dur": 2.877,
+  "t0": 1347.121,
+  "dur": 3.009,
   "at": "20",
   "exacto": true
  },
  {
-  "id": "r_cmd_llamada",
-  "kind": "clip",
-  "t0": 1054.26,
-  "dur": 6.68,
+  "id": "c_cmd_entra",
+  "kind": "depth2",
+  "t0": 1350.13,
+  "dur": 5.36,
   "at": "21.0",
   "exacto": true
  },
  {
-  "id": "r_modi",
-  "kind": "clip",
-  "t0": 1060.94,
-  "dur": 1.68,
-  "at": "21.0@en una videollamada",
-  "exacto": true
- },
- {
-  "id": "g_cita_salvar",
-  "kind": "cita",
-  "t0": 1062.62,
-  "dur": 3.18,
-  "at": "21.1",
-  "exacto": true
- },
- {
-  "id": "r_cmd_salvar",
-  "kind": "clip",
-  "t0": 1065.8,
-  "dur": 4.76,
-  "at": "21.1@que trataba",
-  "exacto": true
- },
- {
-  "id": "o_medalla",
-  "kind": "clip",
-  "t0": 1070.56,
-  "dur": 5.4,
-  "at": "21.2",
-  "exacto": true
- },
- {
-  "id": "g_herzog",
-  "kind": "lista",
-  "t0": 1075.96,
-  "dur": 10.08,
-  "at": "21.2@yaniv hayun",
-  "exacto": false,
+  "id": "g061",
+  "kind": "registro",
+  "t0": 1355.49,
+  "dur": 1.84,
+  "at": "21.0@qu\u00e9 est\u00e1n haciendo",
+  "exacto": true,
   "wk": [
    [
     0.12,
     0
-   ],
-   [
-    1.3,
-    1
-   ],
-   [
-    2.58,
-    2
-   ],
-   [
-    4.22,
-    3
    ]
   ]
  },
  {
-  "id": "s_ped_llave",
+  "id": "c036",
   "kind": "clip",
-  "t0": 1086.04,
-  "dur": 2.88,
+  "t0": 1357.33,
+  "dur": 3.74,
+  "at": "21.1",
+  "exacto": true
+ },
+ {
+  "id": "g062",
+  "kind": "registro",
+  "t0": 1361.07,
+  "dur": 1.58,
+  "at": "21.1@no s\u00e9 qu\u00e9 est\u00e1 pasando",
+  "exacto": true,
+  "wk": [
+   [
+    -0.7,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "c037",
+  "kind": "clip",
+  "t0": 1362.65,
+  "dur": 6.811,
+  "at": "21.2",
+  "exacto": true
+ },
+ {
+  "id": "c077",
+  "kind": "clip",
+  "t0": 1369.461,
+  "dur": 5.449,
+  "at": "21.2",
+  "exacto": true
+ },
+ {
+  "id": "g063",
+  "kind": "perfilmad",
+  "t0": 1374.91,
+  "dur": 1.1,
+  "at": "21.2@casi la misma altura",
+  "exacto": true
+ },
+ {
+  "id": "c038",
+  "kind": "clip",
+  "t0": 1376.01,
+  "dur": 8.88,
   "at": "21.3",
   "exacto": true
  },
  {
-  "id": "s_ped_espejo",
-  "kind": "clip",
-  "t0": 1088.92,
-  "dur": 1.5,
-  "at": "21.3@un dentista",
-  "exacto": true
+  "id": "g064",
+  "kind": "lista",
+  "t0": 1384.89,
+  "dur": 6.62,
+  "at": "21.3@lo que tiene adelante",
+  "exacto": true,
+  "wk": [
+   [
+    -4.38,
+    0
+   ],
+   [
+    -2.56,
+    1
+   ],
+   [
+    -1.22,
+    2
+   ]
+  ]
  },
  {
-  "id": "s_madre",
+  "id": "c_ext_rola2",
   "kind": "clip",
-  "t0": 1090.42,
-  "dur": 2.72,
-  "at": "21.3@una madre",
-  "exacto": true
- },
- {
-  "id": "s_ped_gorras",
-  "kind": "clip",
-  "t0": 1093.14,
-  "dur": 3.28,
-  "at": "21.3@dos pilotos",
-  "exacto": true
- },
- {
-  "id": "c_cmd_final",
-  "kind": "clip",
-  "t0": 1096.42,
-  "dur": 5.86,
+  "t0": 1391.51,
+  "dur": 8.36,
   "at": "21.4",
   "exacto": true
  },
  {
-  "id": "g_perfil_final",
-  "kind": "perfil",
-  "t0": 1102.28,
-  "dur": 7.7,
+  "id": "g065",
+  "kind": "numero",
+  "t0": 1399.87,
+  "dur": 1.86,
+  "at": "21.4@supera los cuarenta",
+  "exacto": true
+ },
+ {
+  "id": "o_stall_calla",
+  "kind": "depth2",
+  "t0": 1401.73,
+  "dur": 4.02,
   "at": "21.5",
   "exacto": true
  },
  {
-  "id": "o_piso",
-  "kind": "clip",
-  "t0": 1109.98,
-  "dur": 5.18,
-  "at": "21.5@lo que no puede",
-  "exacto": true
- },
- {
-  "id": "r_cmd_final",
-  "kind": "clip",
-  "t0": 1115.16,
-  "dur": 3.7,
+  "id": "o036",
+  "kind": "depth2",
+  "t0": 1405.75,
+  "dur": 5.918,
   "at": "21.6",
   "exacto": true
  },
  {
-  "id": "g_cajas2",
-  "kind": "cajas",
-  "t0": 1118.86,
-  "dur": 3.16,
-  "at": "21.6@y dos cajas naranjas",
-  "exacto": true,
-  "wk": [
-   [
-    0.36,
-    0
-   ],
-   [
-    1.78,
-    1
-   ]
-  ]
- },
- {
-  "id": "g_seguimiento",
+  "id": "g066",
   "kind": "lista",
-  "t0": 1122.02,
-  "dur": 14.34,
-  "at": "21.7",
+  "t0": 1411.668,
+  "dur": 9.863,
+  "at": "21.6",
   "exacto": true,
   "wk": [
    [
-    3.5,
+    -1.717,
     0
    ],
    [
-    4.54,
+    0.763,
     1
    ],
    [
-    5.34,
+    7.283,
     2
-   ],
-   [
-    10.92,
-    3
    ]
   ]
  },
  {
-  "id": "g_error",
-  "kind": "cita",
-  "t0": 1136.36,
-  "dur": 4.995,
+  "id": "o024",
+  "kind": "depth2",
+  "t0": 1421.53,
+  "dur": 4.52,
+  "at": "21.7",
+  "exacto": true
+ },
+ {
+  "id": "c039",
+  "kind": "clip",
+  "t0": 1426.05,
+  "dur": 6.66,
   "at": "21.8",
   "exacto": true
  },
  {
-  "id": "o_puerta_fin",
+  "id": "g067",
+  "kind": "registro",
+  "t0": 1432.71,
+  "dur": 2.3,
+  "at": "21.8@no tenemos ninguna",
+  "exacto": true,
+  "wk": [
+   [
+    -3.08,
+    0
+   ],
+   [
+    0.66,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "c078",
   "kind": "clip",
-  "t0": 1141.355,
-  "dur": 5.5,
+  "t0": 1435.01,
+  "dur": 6.984,
+  "at": "21.9",
+  "exacto": true
+ },
+ {
+  "id": "c_empuja",
+  "kind": "clip",
+  "t0": 1441.994,
+  "dur": 9.976,
+  "at": "21.9",
+  "exacto": true,
+  "wk": [
+   [
+    2.656,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "o_stall_vuelve",
+  "kind": "depth2",
+  "t0": 1451.97,
+  "dur": 4.0,
+  "at": "21.10",
+  "exacto": true
+ },
+ {
+  "id": "c079",
+  "kind": "clip",
+  "t0": 1455.97,
+  "dur": 4.898,
+  "at": "21.11",
+  "exacto": true
+ },
+ {
+  "id": "g068",
+  "kind": "lista",
+  "t0": 1460.868,
+  "dur": 8.163,
+  "at": "21.11",
+  "exacto": true,
+  "wk": [
+   [
+    -4.078,
+    0
+   ],
+   [
+    -1.098,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "c_cmd_plegable",
+  "kind": "depth2",
+  "t0": 1469.03,
+  "dur": 4.64,
+  "at": "21.12",
+  "exacto": true
+ },
+ {
+  "id": "g069",
+  "kind": "cabina",
+  "t0": 1473.67,
+  "dur": 5.16,
+  "at": "21.12@asiento plegable",
+  "exacto": true
+ },
+ {
+  "id": "c040",
+  "kind": "depth2",
+  "t0": 1478.83,
+  "dur": 8.544,
+  "at": "21.13",
+  "exacto": true
+ },
+ {
+  "id": "c080",
+  "kind": "clip",
+  "t0": 1487.374,
+  "dur": 6.836,
+  "at": "21.13",
+  "exacto": true
+ },
+ {
+  "id": "c041",
+  "kind": "clip",
+  "t0": 1494.21,
+  "dur": 3.78,
+  "at": "21.14",
+  "exacto": true
+ },
+ {
+  "id": "g070",
+  "kind": "registro",
+  "t0": 1497.99,
+  "dur": 5.36,
+  "at": "21.14@qu\u00e9 tenemos que hacer",
+  "exacto": true,
+  "wk": [
+   [
+    -1.72,
+    0
+   ],
+   [
+    3.42,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "c_cmd_cara",
+  "kind": "clip",
+  "t0": 1503.35,
+  "dur": 6.989,
+  "at": "21.15",
+  "exacto": true
+ },
+ {
+  "id": "c081",
+  "kind": "depth2",
+  "t0": 1510.339,
+  "dur": 5.591,
+  "at": "21.15",
+  "exacto": true
+ },
+ {
+  "id": "r038",
+  "kind": "clip",
+  "t0": 1515.93,
+  "dur": 4.928,
+  "at": "21.16",
+  "exacto": true
+ },
+ {
+  "id": "g071",
+  "kind": "cita",
+  "t0": 1520.858,
+  "dur": 8.213,
+  "at": "21.16",
+  "exacto": true
+ },
+ {
+  "id": "g072",
+  "kind": "perfilmad",
+  "t0": 1529.07,
+  "dur": 4.289,
+  "at": "21.17",
+  "exacto": true
+ },
+ {
+  "id": "c082",
+  "kind": "clip",
+  "t0": 1533.359,
+  "dur": 3.431,
+  "at": "21.17",
+  "exacto": true
+ },
+ {
+  "id": "c042",
+  "kind": "depth2",
+  "t0": 1536.79,
+  "dur": 4.26,
+  "at": "21.18",
+  "exacto": true
+ },
+ {
+  "id": "g073",
+  "kind": "registro",
+  "t0": 1541.05,
+  "dur": 1.633,
+  "at": "21.18@es imposible",
+  "exacto": true,
+  "wk": [
+   [
+    -4.14,
+    0
+   ],
+   [
+    0.12,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "cap07",
+  "kind": "capitulo7",
+  "t0": 1542.683,
+  "dur": 3.007,
   "at": "22",
+  "exacto": true
+ },
+ {
+  "id": "o_boeing",
+  "kind": "depth2",
+  "t0": 1545.69,
+  "dur": 8.0,
+  "at": "23.0",
+  "exacto": true
+ },
+ {
+  "id": "c043",
+  "kind": "clip",
+  "t0": 1553.69,
+  "dur": 2.42,
+  "at": "23.0@el volante se mueve solo",
+  "exacto": true
+ },
+ {
+  "id": "c_sticks_mesa",
+  "kind": "clip",
+  "t0": 1556.11,
+  "dur": 7.92,
+  "at": "23.1",
+  "exacto": true
+ },
+ {
+  "id": "g074",
+  "kind": "cabina",
+  "t0": 1564.03,
+  "dur": 2.18,
+  "at": "23.1@el avi\u00f3n suma",
+  "exacto": true
+ },
+ {
+  "id": "c083",
+  "kind": "clip",
+  "t0": 1566.21,
+  "dur": 3.78,
+  "at": "23.2",
+  "exacto": true
+ },
+ {
+  "id": "o_dual",
+  "kind": "depth2",
+  "t0": 1569.99,
+  "dur": 5.4,
+  "at": "23.2",
+  "exacto": true
+ },
+ {
+  "id": "c_dual_1",
+  "kind": "clip",
+  "t0": 1575.39,
+  "dur": 5.978,
+  "at": "23.3",
+  "exacto": true,
+  "wk": [
+   [
+    4.44,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "c084",
+  "kind": "clip",
+  "t0": 1581.368,
+  "dur": 4.782,
+  "at": "23.3",
+  "exacto": true
+ },
+ {
+  "id": "g075",
+  "kind": "registro",
+  "t0": 1586.15,
+  "dur": 5.367,
+  "at": "23.4",
+  "exacto": true,
+  "wk": [
+   [
+    4.12,
+    0
+   ],
+   [
+    8.64,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "c085",
+  "kind": "clip",
+  "t0": 1591.517,
+  "dur": 4.293,
+  "at": "23.4",
+  "exacto": true
+ },
+ {
+  "id": "c_sube",
+  "kind": "clip",
+  "t0": 1595.81,
+  "dur": 3.66,
+  "at": "23.5",
+  "exacto": true
+ },
+ {
+  "id": "g076",
+  "kind": "registro",
+  "t0": 1599.47,
+  "dur": 2.02,
+  "at": "23.5@sube sube",
+  "exacto": true,
+  "wk": [
+   [
+    0.12,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "c_pf_frase",
+  "kind": "clip",
+  "t0": 1601.49,
+  "dur": 4.73,
+  "at": "23.6",
+  "exacto": true
+ },
+ {
+  "id": "g077",
+  "kind": "registro",
+  "t0": 1606.22,
+  "dur": 2.2,
+  "at": "23.6@a fondo hacia atr\u00e1s",
+  "exacto": true,
+  "wk": [
+   [
+    -0.84,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "c_tope",
+  "kind": "clip",
+  "t0": 1608.42,
+  "dur": 2.64,
+  "at": "23.7",
+  "exacto": true
+ },
+ {
+  "id": "g078",
+  "kind": "numero",
+  "t0": 1611.06,
+  "dur": 6.42,
+  "at": "23.7@m\u00e1s de tres minutos",
+  "exacto": true
+ },
+ {
+  "id": "c086",
+  "kind": "depth2",
+  "t0": 1617.48,
+  "dur": 3.685,
+  "at": "23.8",
+  "exacto": true
+ },
+ {
+  "id": "c044",
+  "kind": "clip",
+  "t0": 1621.165,
+  "dur": 5.264,
+  "at": "23.8",
+  "exacto": true
+ },
+ {
+  "id": "o037",
+  "kind": "depth2",
+  "t0": 1626.429,
+  "dur": 4.211,
+  "at": "23.8",
+  "exacto": true
+ },
+ {
+  "id": "c_no_subas",
+  "kind": "clip",
+  "t0": 1630.64,
+  "dur": 3.86,
+  "at": "23.9",
+  "exacto": true
+ },
+ {
+  "id": "g079",
+  "kind": "registro",
+  "t0": 1634.5,
+  "dur": 1.14,
+  "at": "23.9@no subas",
+  "exacto": true,
+  "wk": [
+   [
+    0.12,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "c045",
+  "kind": "clip",
+  "t0": 1635.64,
+  "dur": 4.38,
+  "at": "23.10",
+  "exacto": true
+ },
+ {
+  "id": "g080",
+  "kind": "registro",
+  "t0": 1640.02,
+  "dur": 1.56,
+  "at": "23.10@los mandos a m\u00ed",
+  "exacto": true,
+  "wk": [
+   [
+    -2.86,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "g081",
+  "kind": "registro",
+  "t0": 1641.58,
+  "dur": 5.36,
+  "at": "23.11",
+  "exacto": true,
+  "wk": [
+   [
+    1.78,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "g082",
+  "kind": "registro",
+  "t0": 1646.94,
+  "dur": 10.66,
+  "at": "23.12",
+  "exacto": true
+ },
+ {
+  "id": "c_dual_2",
+  "kind": "clip",
+  "t0": 1657.6,
+  "dur": 1.16,
+  "at": "23.12@en direcciones opuestas",
+  "exacto": true
+ },
+ {
+  "id": "c_ext_bajo",
+  "kind": "clip",
+  "t0": 1658.76,
+  "dur": 7.678,
+  "at": "23.13",
+  "exacto": true
+ },
+ {
+  "id": "c087",
+  "kind": "depth2",
+  "t0": 1666.438,
+  "dur": 6.142,
+  "at": "23.13",
+  "exacto": true
+ },
+ {
+  "id": "g083",
+  "kind": "perfilmad",
+  "t0": 1672.58,
+  "dur": 1.02,
+  "at": "23.13@ya no los tiene",
+  "exacto": true
+ },
+ {
+  "id": "o025",
+  "kind": "depth2",
+  "t0": 1673.6,
+  "dur": 5.48,
+  "at": "23.14",
+  "exacto": true
+ },
+ {
+  "id": "c046",
+  "kind": "clip",
+  "t0": 1679.08,
+  "dur": 3.66,
+  "at": "24.0",
+  "exacto": true
+ },
+ {
+  "id": "g084",
+  "kind": "registro",
+  "t0": 1682.74,
+  "dur": 1.48,
+  "at": "24.0@levantando la nariz",
+  "exacto": true,
+  "wk": [
+   [
+    -0.76,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "c047",
+  "kind": "clip",
+  "t0": 1684.22,
+  "dur": 6.26,
+  "at": "24.1",
+  "exacto": true
+ },
+ {
+  "id": "g085",
+  "kind": "registro",
+  "t0": 1690.48,
+  "dur": 0.92,
+  "at": "24.1@cuatro mil pies",
+  "exacto": true,
+  "wk": [
+   [
+    -4.82,
+    0
+   ],
+   [
+    -2.14,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "c088",
+  "kind": "clip",
+  "t0": 1691.4,
+  "dur": 5.164,
+  "at": "24.2",
+  "exacto": true
+ },
+ {
+  "id": "o026",
+  "kind": "depth2",
+  "t0": 1696.564,
+  "dur": 7.376,
+  "at": "24.2",
+  "exacto": true
+ },
+ {
+  "id": "c048",
+  "kind": "depth2",
+  "t0": 1703.94,
+  "dur": 4.56,
+  "at": "24.3",
+  "exacto": true
+ },
+ {
+  "id": "g086",
+  "kind": "registro",
+  "t0": 1708.5,
+  "dur": 1.52,
+  "at": "24.3@tira tira tira",
+  "exacto": true,
+  "wk": [
+   [
+    -3.06,
+    0
+   ],
+   [
+    -0.6,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "c089",
+  "kind": "clip",
+  "t0": 1710.02,
+  "dur": 3.92,
+  "at": "24.4",
+  "exacto": true
+ },
+ {
+  "id": "g087",
+  "kind": "registro",
+  "t0": 1713.94,
+  "dur": 5.6,
+  "at": "24.4",
+  "exacto": true,
+  "wk": [
+   [
+    4.02,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "o_negro",
+  "kind": "depth2",
+  "t0": 1719.54,
+  "dur": 4.636,
+  "at": "24.5",
+  "exacto": true
+ },
+ {
+  "id": "o_mar_fin",
+  "kind": "depth2",
+  "t0": 1724.176,
+  "dur": 3.924,
+  "at": "25",
+  "exacto": true
+ },
+ {
+  "id": "g088",
+  "kind": "lista",
+  "t0": 1728.1,
+  "dur": 14.1,
+  "at": "26.0",
+  "exacto": true,
+  "wk": [
+   [
+    3.56,
+    0
+   ],
+   [
+    6.0,
+    1
+   ],
+   [
+    11.74,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "c_mar_lejos",
+  "kind": "depth2",
+  "t0": 1742.2,
+  "dur": 3.1,
+  "at": "26.0@cay\u00f3 entero",
+  "exacto": true
+ },
+ {
+  "id": "g089",
+  "kind": "numero",
+  "t0": 1745.3,
+  "dur": 11.66,
+  "at": "26.1",
+  "exacto": true
+ },
+ {
+  "id": "g090",
+  "kind": "perfilmad",
+  "t0": 1756.96,
+  "dur": 1.64,
+  "at": "26.1@tres minutos y medio",
+  "exacto": true
+ },
+ {
+  "id": "o_228",
+  "kind": "depth2",
+  "t0": 1758.6,
+  "dur": 3.27,
+  "at": "26.2",
+  "exacto": true
+ },
+ {
+  "id": "g091",
+  "kind": "registro",
+  "t0": 1761.87,
+  "dur": 11.122,
+  "at": "26.3",
+  "exacto": true
+ },
+ {
+  "id": "r039",
+  "kind": "clip",
+  "t0": 1772.992,
+  "dur": 8.898,
+  "at": "26.3",
+  "exacto": true
+ },
+ {
+  "id": "o038",
+  "kind": "depth2",
+  "t0": 1781.89,
+  "dur": 5.371,
+  "at": "26.4",
+  "exacto": true
+ },
+ {
+  "id": "c_dakar_espera",
+  "kind": "clip",
+  "t0": 1787.262,
+  "dur": 8.952,
+  "at": "26.4",
+  "exacto": true
+ },
+ {
+  "id": "r_golpe_mar_noche",
+  "kind": "clip",
+  "t0": 1796.214,
+  "dur": 5.0,
+  "at": "27",
+  "exacto": true
+ },
+ {
+  "id": "cap08",
+  "kind": "capitulo7",
+  "t0": 1801.214,
+  "dur": 2.946,
+  "at": "28",
+  "exacto": true
+ },
+ {
+  "id": "g092",
+  "kind": "mapamad",
+  "t0": 1804.16,
+  "dur": 5.183,
+  "at": "29.0",
+  "exacto": true
+ },
+ {
+  "id": "a053",
+  "kind": "still",
+  "t0": 1809.343,
+  "dur": 4.147,
+  "at": "29.0",
+  "exacto": true
+ },
+ {
+  "id": "c_atl_espera",
+  "kind": "clip",
+  "t0": 1813.49,
+  "dur": 3.19,
+  "at": "29.0@cada uno supon\u00eda",
+  "exacto": true
+ },
+ {
+  "id": "g093",
+  "kind": "lista",
+  "t0": 1816.68,
+  "dur": 8.94,
+  "at": "29.0@m\u00e1s de tres horas",
+  "exacto": true,
+  "wk": [
+   [
+    0.56,
+    0
+   ],
+   [
+    5.2,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "a011",
+  "kind": "still",
+  "t0": 1825.62,
+  "dur": 7.35,
+  "at": "29.1",
+  "exacto": true
+ },
+ {
+  "id": "a012",
+  "kind": "still",
+  "t0": 1832.97,
+  "dur": 3.18,
+  "at": "29.1@detr\u00e1s vinieron",
+  "exacto": true
+ },
+ {
+  "id": "a013",
+  "kind": "still",
+  "t0": 1836.15,
+  "dur": 6.54,
+  "at": "29.2",
+  "exacto": true
+ },
+ {
+  "id": "a014",
+  "kind": "still",
+  "t0": 1842.69,
+  "dur": 5.24,
+  "at": "29.2@conferencias de prensa",
+  "exacto": true
+ },
+ {
+  "id": "a015",
+  "kind": "still",
+  "t0": 1847.93,
+  "dur": 1.22,
+  "at": "29.2@d\u00eda tras d\u00eda",
+  "exacto": true
+ },
+ {
+  "id": "a016",
+  "kind": "still",
+  "t0": 1849.15,
+  "dur": 3.915,
+  "at": "29.3",
+  "exacto": true
+ },
+ {
+  "id": "a054",
+  "kind": "still",
+  "t0": 1853.065,
+  "dur": 3.132,
+  "at": "29.3",
+  "exacto": true
+ },
+ {
+  "id": "a055",
+  "kind": "still",
+  "t0": 1856.198,
+  "dur": 3.132,
+  "at": "29.3",
+  "exacto": true
+ },
+ {
+  "id": "a017",
+  "kind": "still",
+  "t0": 1859.33,
+  "dur": 1.82,
+  "at": "29.3@cincuenta de las v\u00edctimas",
+  "exacto": true,
+  "wk": [
+   [
+    0.12,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a018",
+  "kind": "still",
+  "t0": 1861.15,
+  "dur": 7.34,
+  "at": "29.4",
+  "exacto": true
+ },
+ {
+  "id": "o027",
+  "kind": "depth2",
+  "t0": 1868.49,
+  "dur": 0.94,
+  "at": "29.4@en salas cerradas",
+  "exacto": true
+ },
+ {
+  "id": "a019",
+  "kind": "still",
+  "t0": 1869.43,
+  "dur": 7.722,
+  "at": "29.5",
+  "exacto": true
+ },
+ {
+  "id": "a056",
+  "kind": "still",
+  "t0": 1877.152,
+  "dur": 6.178,
+  "at": "29.5",
+  "exacto": true
+ },
+ {
+  "id": "a020",
+  "kind": "still",
+  "t0": 1883.33,
+  "dur": 3.58,
+  "at": "29.5@el estabilizador vertical",
+  "exacto": true,
+  "wk": [
+   [
+    -11.46,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a021",
+  "kind": "still",
+  "t0": 1886.91,
+  "dur": 2.147,
+  "at": "29.5@flotando casi intacta",
+  "exacto": true
+ },
+ {
+  "id": "r_golpe_crisis",
+  "kind": "clip",
+  "t0": 1889.057,
+  "dur": 9.393,
+  "at": "30",
+  "exacto": true
+ },
+ {
+  "id": "r002",
+  "kind": "clip",
+  "t0": 1898.45,
+  "dur": 6.1,
+  "at": "31.0",
+  "exacto": true
+ },
+ {
+  "id": "r003",
+  "kind": "clip",
+  "t0": 1904.55,
+  "dur": 1.94,
+  "at": "31.0@la espera",
+  "exacto": true
+ },
+ {
+  "id": "o028",
+  "kind": "depth2",
+  "t0": 1906.49,
+  "dur": 3.233,
+  "at": "31.1",
+  "exacto": true
+ },
+ {
+  "id": "a057",
+  "kind": "still",
+  "t0": 1909.723,
+  "dur": 2.587,
+  "at": "31.1",
+  "exacto": true
+ },
+ {
+  "id": "g094",
+  "kind": "cajas",
+  "t0": 1912.31,
+  "dur": 3.34,
+  "at": "31.1@dos cajas naranjas",
+  "exacto": true
+ },
+ {
+  "id": "a022",
+  "kind": "still",
+  "t0": 1915.65,
+  "dur": 2.06,
+  "at": "31.1@la que graba los datos",
+  "exacto": true
+ },
+ {
+  "id": "c_baliza",
+  "kind": "clip",
+  "t0": 1917.71,
+  "dur": 6.5,
+  "at": "31.2",
+  "exacto": true
+ },
+ {
+  "id": "g095",
+  "kind": "numero",
+  "t0": 1924.21,
+  "dur": 3.4,
+  "at": "31.2@treinta d\u00edas",
+  "exacto": true
+ },
+ {
+  "id": "a023",
+  "kind": "still",
+  "t0": 1927.61,
+  "dur": 7.54,
+  "at": "31.3",
+  "exacto": true
+ },
+ {
+  "id": "a024",
+  "kind": "still",
+  "t0": 1935.15,
+  "dur": 4.38,
+  "at": "31.3@seis mil metros",
+  "exacto": true
+ },
+ {
+  "id": "a025",
+  "kind": "still",
+  "t0": 1939.53,
+  "dur": 2.96,
+  "at": "31.3@el \u00e9meraude",
+  "exacto": true
+ },
+ {
+  "id": "a026",
+  "kind": "still",
+  "t0": 1942.49,
+  "dur": 1.38,
+  "at": "31.3@pourquoi pas",
+  "exacto": false
+ },
+ {
+  "id": "a027",
+  "kind": "still",
+  "t0": 1943.87,
+  "dur": 2.62,
+  "at": "31.3@minisubmarino tripulado",
+  "exacto": false
+ },
+ {
+  "id": "a028",
+  "kind": "still",
+  "t0": 1946.49,
+  "dur": 3.889,
+  "at": "31.4",
+  "exacto": true
+ },
+ {
+  "id": "a058",
+  "kind": "still",
+  "t0": 1950.379,
+  "dur": 3.111,
+  "at": "31.4",
+  "exacto": true
+ },
+ {
+  "id": "d002",
+  "kind": "foto",
+  "t0": 1953.49,
+  "dur": 4.7,
+  "at": "31.4@cuarenta millas",
+  "exacto": true
+ },
+ {
+  "id": "g096",
+  "kind": "numero",
+  "t0": 1958.19,
+  "dur": 3.84,
+  "at": "31.4@diecisiete mil",
+  "exacto": true
+ },
+ {
+  "id": "d003",
+  "kind": "foto",
+  "t0": 1962.03,
+  "dur": 5.589,
+  "at": "31.5",
+  "exacto": true
+ },
+ {
+  "id": "a059",
+  "kind": "still",
+  "t0": 1967.619,
+  "dur": 4.471,
+  "at": "31.5",
+  "exacto": true
+ },
+ {
+  "id": "d004",
+  "kind": "foto",
+  "t0": 1972.09,
+  "dur": 4.24,
+  "at": "31.5@como una cordillera",
+  "exacto": true
+ },
+ {
+  "id": "a029",
+  "kind": "still",
+  "t0": 1976.33,
+  "dur": 4.2,
+  "at": "31.6",
+  "exacto": true,
+  "wk": [
+   [
+    7.68,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "r040",
+  "kind": "clip",
+  "t0": 1980.53,
+  "dur": 3.36,
+  "at": "31.6",
+  "exacto": true
+ },
+ {
+  "id": "c_baliza_apaga",
+  "kind": "clip",
+  "t0": 1983.89,
+  "dur": 1.5,
+  "at": "31.6@no escucharon nada",
+  "exacto": true
+ },
+ {
+  "id": "o029",
+  "kind": "depth2",
+  "t0": 1985.39,
+  "dur": 4.18,
+  "at": "31.7",
+  "exacto": true
+ },
+ {
+  "id": "a030",
+  "kind": "still",
+  "t0": 1989.57,
+  "dur": 3.9,
+  "at": "31.8",
+  "exacto": true
+ },
+ {
+  "id": "a060",
+  "kind": "still",
+  "t0": 1993.47,
+  "dur": 3.12,
+  "at": "31.8",
+  "exacto": true
+ },
+ {
+  "id": "a031",
+  "kind": "still",
+  "t0": 1996.59,
+  "dur": 2.12,
+  "at": "31.8@cuatro semanas",
+  "exacto": true
+ },
+ {
+  "id": "a091",
+  "kind": "still",
+  "t0": 1998.71,
+  "dur": 9.305,
+  "at": "31.9",
+  "exacto": true,
+  "wk": [
+   [
+    5.9,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "r_golpe_mar",
+  "kind": "clip",
+  "t0": 2008.015,
+  "dur": 4.985,
+  "at": "32",
+  "exacto": true
+ },
+ {
+  "id": "o_acars",
+  "kind": "depth2",
+  "t0": 2013.0,
+  "dur": 4.879,
+  "at": "33.0",
+  "exacto": true,
+  "wk": [
+   [
+    7.38,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a061",
+  "kind": "still",
+  "t0": 2017.879,
+  "dur": 3.903,
+  "at": "33.0",
+  "exacto": true
+ },
+ {
+  "id": "a062",
+  "kind": "still",
+  "t0": 2021.783,
+  "dur": 3.903,
+  "at": "33.0",
+  "exacto": true
+ },
+ {
+  "id": "cap09",
+  "kind": "capitulo7",
+  "t0": 2025.686,
+  "dur": 2.194,
+  "at": "34",
+  "exacto": true
+ },
+ {
+  "id": "a032",
+  "kind": "still",
+  "t0": 2027.88,
+  "dur": 3.523,
+  "at": "35.0",
+  "exacto": true
+ },
+ {
+  "id": "a063",
+  "kind": "still",
+  "t0": 2031.403,
+  "dur": 2.818,
+  "at": "35.0",
+  "exacto": true
+ },
+ {
+  "id": "a064",
+  "kind": "still",
+  "t0": 2034.222,
+  "dur": 2.818,
+  "at": "35.0",
+  "exacto": true
+ },
+ {
+  "id": "a033",
+  "kind": "still",
+  "t0": 2037.04,
+  "dur": 5.06,
+  "at": "35.0@mil cien",
+  "exacto": false
+ },
+ {
+  "id": "d005",
+  "kind": "foto",
+  "t0": 2042.1,
+  "dur": 5.36,
+  "at": "35.0@un mapa preciso",
+  "exacto": true
+ },
+ {
+  "id": "r004",
+  "kind": "clip",
+  "t0": 2047.46,
+  "dur": 7.86,
+  "at": "35.1",
+  "exacto": true
+ },
+ {
+  "id": "r005",
+  "kind": "clip",
+  "t0": 2055.32,
+  "dur": 1.299,
+  "at": "35.1@y otro sonar",
+  "exacto": true
+ },
+ {
+  "id": "g097",
+  "kind": "numero",
+  "t0": 2056.619,
+  "dur": 4.94,
+  "at": "35.1@exploraron",
+  "exacto": true
+ },
+ {
+  "id": "a065",
+  "kind": "still",
+  "t0": 2061.559,
+  "dur": 2.784,
+  "at": "35.2",
+  "exacto": true
+ },
+ {
+  "id": "c049",
+  "kind": "depth2",
+  "t0": 2064.343,
+  "dur": 3.977,
+  "at": "35.2",
+  "exacto": true
+ },
+ {
+  "id": "a066",
+  "kind": "still",
+  "t0": 2068.32,
+  "dur": 3.01,
+  "at": "35.3",
+  "exacto": true
+ },
+ {
+  "id": "g098",
+  "kind": "lista",
+  "t0": 2071.33,
+  "dur": 5.017,
+  "at": "35.3",
+  "exacto": true,
+  "wk": [
+   [
+    -0.43,
+    0
+   ],
+   [
+    4.389,
+    1
+   ],
+   [
+    11.869,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "a067",
+  "kind": "still",
+  "t0": 2076.347,
+  "dur": 4.013,
+  "at": "35.3",
+  "exacto": true
+ },
+ {
+  "id": "c_bea_mapa",
+  "kind": "clip",
+  "t0": 2080.36,
+  "dur": 8.64,
+  "at": "35.3@balizas no hubieran funcionado",
+  "exacto": true
+ },
+ {
+  "id": "a034",
+  "kind": "still",
+  "t0": 2089.0,
+  "dur": 3.867,
+  "at": "35.4",
+  "exacto": true
+ },
+ {
+  "id": "a068",
+  "kind": "still",
+  "t0": 2092.867,
+  "dur": 3.093,
+  "at": "35.4",
+  "exacto": true
+ },
+ {
+  "id": "c_remus_baja",
+  "kind": "clip",
+  "t0": 2095.96,
+  "dur": 4.26,
+  "at": "35.4@remus seis mil",
+  "exacto": true
+ },
+ {
+  "id": "c_remus_fondo",
+  "kind": "clip",
+  "t0": 2100.22,
+  "dur": 4.58,
+  "at": "35.4@barren el fondo",
+  "exacto": true
+ },
+ {
+  "id": "c050",
+  "kind": "clip",
+  "t0": 2104.8,
+  "dur": 3.431,
+  "at": "35.5",
+  "exacto": true
+ },
+ {
+  "id": "r041",
+  "kind": "clip",
+  "t0": 2108.231,
+  "dur": 2.745,
+  "at": "35.5",
+  "exacto": true
+ },
+ {
+  "id": "r042",
+  "kind": "clip",
+  "t0": 2110.975,
+  "dur": 2.745,
+  "at": "35.5",
+  "exacto": true
+ },
+ {
+  "id": "r006",
+  "kind": "clip",
+  "t0": 2113.72,
+  "dur": 8.29,
+  "at": "35.5@arriba en el barco",
+  "exacto": true
+ },
+ {
+  "id": "o_bayes",
+  "kind": "depth2",
+  "t0": 2122.01,
+  "dur": 10.0,
+  "at": "35.6",
+  "exacto": true
+ },
+ {
+  "id": "g122",
+  "kind": "lista",
+  "t0": 2132.01,
+  "dur": 13.42,
+  "at": "35.6@usaron estad\u00edstica",
+  "exacto": true,
+  "wk": [
+   [
+    2.38,
+    0
+   ],
+   [
+    9.86,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "r053",
+  "kind": "clip",
+  "t0": 2145.43,
+  "dur": 3.74,
+  "at": "35.6@pero no a cero",
+  "exacto": true
+ },
+ {
+  "id": "o039",
+  "kind": "depth2",
+  "t0": 2149.17,
+  "dur": 8.58,
+  "at": "35.6@ese mapa dijo",
+  "exacto": true
+ },
+ {
+  "id": "c091",
+  "kind": "clip",
+  "t0": 2157.75,
+  "dur": 2.48,
+  "at": "35.6@balizas quiz\u00e1s nunca",
+  "exacto": true
+ },
+ {
+  "id": "g123",
+  "kind": "numero",
+  "t0": 2160.23,
+  "dur": 7.375,
+  "at": "35.7",
+  "exacto": true,
+  "wk": [
+   [
+    6.1,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "r_golpe_curv",
+  "kind": "clip",
+  "t0": 2167.605,
+  "dur": 6.965,
+  "at": "36",
+  "exacto": true
+ },
+ {
+  "id": "c_sonar_ve",
+  "kind": "clip",
+  "t0": 2174.57,
+  "dur": 7.489,
+  "at": "37.0",
+  "exacto": true
+ },
+ {
+  "id": "r043",
+  "kind": "clip",
+  "t0": 2182.059,
+  "dur": 5.991,
+  "at": "37.0",
+  "exacto": true
+ },
+ {
+  "id": "g099",
+  "kind": "numero",
+  "t0": 2188.05,
+  "dur": 2.04,
+  "at": "37.0@seiscientos por doscientos",
+  "exacto": true,
+  "wk": [
+   [
+    -13.36,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "g100",
+  "kind": "mapamad",
+  "t0": 2190.09,
+  "dur": 3.911,
+  "at": "37.1",
+  "exacto": true
+ },
+ {
+  "id": "a069",
+  "kind": "still",
+  "t0": 2194.001,
+  "dur": 3.129,
+  "at": "37.1",
+  "exacto": true
+ },
+ {
+  "id": "g101",
+  "kind": "numero",
+  "t0": 2197.13,
+  "dur": 2.89,
+  "at": "37.1@veintid\u00f3s meses",
+  "exacto": true
+ },
+ {
+  "id": "o030",
+  "kind": "depth2",
+  "t0": 2200.02,
+  "dur": 1.544,
+  "at": "37.2",
+  "exacto": true
+ },
+ {
+  "id": "a070",
+  "kind": "still",
+  "t0": 2201.564,
+  "dur": 1.236,
+  "at": "37.2",
+  "exacto": true
+ },
+ {
+  "id": "c_motor_fondo",
+  "kind": "clip",
+  "t0": 2202.8,
+  "dur": 7.52,
+  "at": "37.3",
+  "exacto": true
+ },
+ {
+  "id": "c051",
+  "kind": "clip",
+  "t0": 2210.32,
+  "dur": 5.1,
+  "at": "37.3@el tren de aterrizaje",
+  "exacto": true
+ },
+ {
+  "id": "g102",
+  "kind": "numero",
+  "t0": 2215.42,
+  "dur": 3.94,
+  "at": "37.3@ochenta y cinco mil",
+  "exacto": true
+ },
+ {
+  "id": "o031",
+  "kind": "depth2",
+  "t0": 2219.36,
+  "dur": 5.889,
+  "at": "37.4",
+  "exacto": true
+ },
+ {
+  "id": "a071",
+  "kind": "still",
+  "t0": 2225.249,
+  "dur": 4.711,
+  "at": "37.4",
+  "exacto": true
+ },
+ {
+  "id": "c052",
+  "kind": "clip",
+  "t0": 2229.96,
+  "dur": 4.444,
+  "at": "37.5",
+  "exacto": true
+ },
+ {
+  "id": "r044",
+  "kind": "clip",
+  "t0": 2234.404,
+  "dur": 3.556,
+  "at": "37.5",
+  "exacto": true
+ },
+ {
+  "id": "r007",
+  "kind": "clip",
+  "t0": 2237.96,
+  "dur": 4.88,
+  "at": "37.5@seis mil metros",
+  "exacto": true
+ },
+ {
+  "id": "c_garra",
+  "kind": "clip",
+  "t0": 2242.84,
+  "dur": 9.9,
+  "at": "37.6",
+  "exacto": true,
+  "wk": [
+   [
+    0.32,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "c_sube_caja",
+  "kind": "clip",
+  "t0": 2252.74,
+  "dur": 1.0,
+  "at": "37.6@hacia la luz",
+  "exacto": true
+ },
+ {
+  "id": "r008",
+  "kind": "clip",
+  "t0": 2253.74,
+  "dur": 7.0,
+  "at": "37.7",
+  "exacto": true
+ },
+ {
+  "id": "r009",
+  "kind": "clip",
+  "t0": 2260.74,
+  "dur": 4.94,
+  "at": "37.7@con un joystick",
+  "exacto": true
+ },
+ {
+  "id": "g103",
+  "kind": "registro",
+  "t0": 2265.68,
+  "dur": 5.0,
+  "at": "37.8",
+  "exacto": true,
+  "wk": [
+   [
+    8.7,
+    0
+   ],
+   [
+    10.46,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "a072",
+  "kind": "still",
+  "t0": 2270.68,
+  "dur": 4.0,
+  "at": "37.8",
+  "exacto": true
+ },
+ {
+  "id": "a073",
+  "kind": "still",
+  "t0": 2274.68,
+  "dur": 4.0,
+  "at": "37.8",
+  "exacto": true
+ },
+ {
+  "id": "g104",
+  "kind": "mapamad",
+  "t0": 2278.68,
+  "dur": 4.489,
+  "at": "37.9",
+  "exacto": true
+ },
+ {
+  "id": "a074",
+  "kind": "still",
+  "t0": 2283.169,
+  "dur": 3.591,
+  "at": "37.9",
+  "exacto": true
+ },
+ {
+  "id": "a035",
+  "kind": "still",
+  "t0": 2286.76,
+  "dur": 2.9,
+  "at": "37.9@laboratorio del bea",
+  "exacto": true
+ },
+ {
+  "id": "c_bea_abre",
+  "kind": "clip",
+  "t0": 2289.66,
+  "dur": 3.5,
+  "at": "37.10",
+  "exacto": true
+ },
+ {
+  "id": "g105",
+  "kind": "numero",
+  "t0": 2293.16,
+  "dur": 4.95,
+  "at": "37.10@cuatrocientas atm\u00f3sferas",
+  "exacto": false
+ },
+ {
+  "id": "c053",
+  "kind": "clip",
+  "t0": 2298.11,
+  "dur": 2.28,
+  "at": "37.11",
+  "exacto": true
+ },
+ {
+  "id": "g106",
+  "kind": "numero",
+  "t0": 2300.39,
+  "dur": 8.14,
+  "at": "37.11@mil trescientos",
+  "exacto": false
+ },
+ {
+  "id": "g107",
+  "kind": "cajas",
+  "t0": 2308.53,
+  "dur": 1.67,
+  "at": "37.11@cada segundo",
+  "exacto": true
+ },
+ {
+  "id": "o_protegido",
+  "kind": "depth2",
+  "t0": 2310.2,
+  "dur": 9.856,
+  "at": "37.12",
+  "exacto": true,
+  "wk": [
+   [
+    3.04,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a075",
+  "kind": "still",
+  "t0": 2320.056,
+  "dur": 7.884,
+  "at": "37.12",
+  "exacto": true
+ },
+ {
+  "id": "a036",
+  "kind": "still",
+  "t0": 2327.94,
+  "dur": 4.618,
+  "at": "37.13",
+  "exacto": true
+ },
+ {
+  "id": "a076",
+  "kind": "still",
+  "t0": 2332.558,
+  "dur": 3.695,
+  "at": "37.13",
+  "exacto": true
+ },
+ {
+  "id": "a077",
+  "kind": "still",
+  "t0": 2336.253,
+  "dur": 3.695,
+  "at": "37.13",
+  "exacto": true
+ },
+ {
+  "id": "r_golpe_dilma",
+  "kind": "clip",
+  "t0": 2339.948,
+  "dur": 6.0,
+  "at": "38",
+  "exacto": true
+ },
+ {
+  "id": "cap10",
+  "kind": "capitulo7",
+  "t0": 2345.948,
+  "dur": 2.882,
+  "at": "39",
+  "exacto": true
+ },
+ {
+  "id": "o_informe",
+  "kind": "depth2",
+  "t0": 2348.83,
+  "dur": 9.18,
+  "at": "40.0",
+  "exacto": true,
+  "wk": [
+   [
+    3.52,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a078",
+  "kind": "still",
+  "t0": 2358.01,
+  "dur": 8.325,
+  "at": "40.1",
+  "exacto": true
+ },
+ {
+  "id": "g108",
+  "kind": "lista",
+  "t0": 2366.335,
+  "dur": 13.875,
+  "at": "40.1",
+  "exacto": true,
+  "wk": [
+   [
+    -4.625,
+    0
+   ],
+   [
+    4.295,
+    1
+   ],
+   [
+    8.435,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "a079",
+  "kind": "still",
+  "t0": 2380.21,
+  "dur": 5.807,
+  "at": "40.2",
+  "exacto": true
+ },
+ {
+  "id": "g109",
+  "kind": "lista",
+  "t0": 2386.017,
+  "dur": 11.613,
+  "at": "40.2",
+  "exacto": true,
+  "wk": [
+   [
+    -5.687,
+    0
+   ],
+   [
+    0.233,
+    1
+   ],
+   [
+    6.353,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "c054",
+  "kind": "depth2",
+  "t0": 2397.63,
+  "dur": 3.411,
+  "at": "40.3",
+  "exacto": true
+ },
+ {
+  "id": "r045",
+  "kind": "clip",
+  "t0": 2401.041,
+  "dur": 2.729,
+  "at": "40.3",
+  "exacto": true
+ },
+ {
+  "id": "g110",
+  "kind": "cita",
+  "t0": 2403.77,
+  "dur": 8.42,
+  "at": "40.4",
+  "exacto": true
+ },
+ {
+  "id": "c055",
+  "kind": "clip",
+  "t0": 2412.19,
+  "dur": 10.04,
+  "at": "40.4@la sorpresa fue total",
+  "exacto": true
+ },
+ {
+  "id": "a080",
+  "kind": "still",
+  "t0": 2422.23,
+  "dur": 6.619,
+  "at": "40.5",
+  "exacto": true
+ },
+ {
+  "id": "g111",
+  "kind": "lista",
+  "t0": 2428.849,
+  "dur": 11.031,
+  "at": "40.5",
+  "exacto": true,
+  "wk": [
+   [
+    -0.019,
+    0
+   ],
+   [
+    2.121,
+    1
+   ],
+   [
+    5.461,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "o032",
+  "kind": "depth2",
+  "t0": 2439.88,
+  "dur": 5.833,
+  "at": "40.6",
+  "exacto": true
+ },
+ {
+  "id": "r046",
+  "kind": "clip",
+  "t0": 2445.713,
+  "dur": 4.667,
+  "at": "40.6",
+  "exacto": true
+ },
+ {
+  "id": "a081",
+  "kind": "still",
+  "t0": 2450.38,
+  "dur": 6.1,
+  "at": "40.7",
+  "exacto": true
+ },
+ {
+  "id": "g112",
+  "kind": "lista",
+  "t0": 2456.48,
+  "dur": 12.2,
+  "at": "40.7",
+  "exacto": true,
+  "wk": [
+   [
+    -2.38,
+    0
+   ],
+   [
+    3.22,
+    1
+   ],
+   [
+    6.82,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "c056",
+  "kind": "depth2",
+  "t0": 2468.68,
+  "dur": 1.48,
+  "at": "40.8",
+  "exacto": true
+ },
+ {
+  "id": "g113",
+  "kind": "lista",
+  "t0": 2470.16,
+  "dur": 15.4,
+  "at": "40.8@que cambiaron la aviaci\u00f3n",
+  "exacto": true,
+  "wk": [
+   [
+    1.76,
+    0
+   ],
+   [
+    8.6,
+    1
+   ],
+   [
+    11.52,
+    2
+   ]
+  ]
+ },
+ {
+  "id": "a037",
+  "kind": "still",
+  "t0": 2485.56,
+  "dur": 8.189,
+  "at": "40.9",
+  "exacto": true
+ },
+ {
+  "id": "r047",
+  "kind": "clip",
+  "t0": 2493.749,
+  "dur": 6.551,
+  "at": "40.9",
+  "exacto": true
+ },
+ {
+  "id": "o033",
+  "kind": "depth2",
+  "t0": 2500.3,
+  "dur": 11.98,
+  "at": "40.10",
+  "exacto": true
+ },
+ {
+  "id": "g114",
+  "kind": "numero",
+  "t0": 2512.28,
+  "dur": 2.26,
+  "at": "40.10@noventa d\u00edas",
+  "exacto": true
+ },
+ {
+  "id": "a092",
+  "kind": "still",
+  "t0": 2514.54,
+  "dur": 15.56,
+  "at": "40.11",
+  "exacto": true,
+  "wk": [
+   [
+    7.78,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "o040",
+  "kind": "depth2",
+  "t0": 2530.1,
+  "dur": 1.54,
+  "at": "40.11@la alarma de p\u00e9rdida",
+  "exacto": true
+ },
+ {
+  "id": "a097",
+  "kind": "still",
+  "t0": 2531.64,
+  "dur": 4.02,
+  "at": "40.11@el bea respondi\u00f3",
+  "exacto": true
+ },
+ {
+  "id": "g124",
+  "kind": "cita",
+  "t0": 2535.66,
+  "dur": 5.565,
+  "at": "40.12",
+  "exacto": true
+ },
+ {
+  "id": "cap11",
+  "kind": "capitulo7",
+  "t0": 2541.225,
+  "dur": 2.935,
+  "at": "41",
+  "exacto": true
+ },
+ {
+  "id": "a038",
+  "kind": "still",
+  "t0": 2544.16,
+  "dur": 9.64,
+  "at": "42.0",
+  "exacto": true
+ },
+ {
+  "id": "o034",
+  "kind": "depth2",
+  "t0": 2553.8,
+  "dur": 7.72,
+  "at": "42.0@homicidio involuntario",
+  "exacto": true
+ },
+ {
+  "id": "g115",
+  "kind": "registro",
+  "t0": 2561.52,
+  "dur": 7.711,
+  "at": "42.1",
+  "exacto": true,
+  "wk": [
+   [
+    1.74,
+    0
+   ],
+   [
+    9.78,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "a082",
+  "kind": "still",
+  "t0": 2569.231,
+  "dur": 6.169,
+  "at": "42.1",
+  "exacto": true
+ },
+ {
+  "id": "a039",
+  "kind": "still",
+  "t0": 2575.4,
+  "dur": 8.56,
+  "at": "42.2",
+  "exacto": true
+ },
+ {
+  "id": "g116",
+  "kind": "registro",
+  "t0": 2583.96,
+  "dur": 8.32,
+  "at": "42.2@absolvi\u00f3",
+  "exacto": true,
+  "wk": [
+   [
+    0.12,
+    0
+   ]
+  ]
+ },
+ {
+  "id": "c_trib_1",
+  "kind": "clip",
+  "t0": 2592.28,
+  "dur": 7.333,
+  "at": "42.3",
+  "exacto": true,
+  "wk": [
+   [
+    6.34,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a083",
+  "kind": "still",
+  "t0": 2599.613,
+  "dur": 5.867,
+  "at": "42.3",
+  "exacto": true
+ },
+ {
+  "id": "c057",
+  "kind": "clip",
+  "t0": 2605.48,
+  "dur": 4.933,
+  "at": "42.4",
+  "exacto": true
+ },
+ {
+  "id": "a084",
+  "kind": "still",
+  "t0": 2610.413,
+  "dur": 3.947,
+  "at": "42.4",
+  "exacto": true
+ },
+ {
+  "id": "g117",
+  "kind": "registro",
+  "t0": 2614.36,
+  "dur": 14.28,
+  "at": "42.5",
+  "exacto": true,
+  "wk": [
+   [
+    7.78,
+    0
+   ],
+   [
+    11.54,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "g118",
+  "kind": "numero",
+  "t0": 2628.64,
+  "dur": 3.16,
+  "at": "42.5@la multa m\u00e1xima",
+  "exacto": true
+ },
+ {
+  "id": "g119",
+  "kind": "lista",
+  "t0": 2631.8,
+  "dur": 6.892,
+  "at": "42.6",
+  "exacto": true,
+  "wk": [
+   [
+    2.88,
+    0
+   ],
+   [
+    10.26,
+    1
+   ]
+  ]
+ },
+ {
+  "id": "a085",
+  "kind": "still",
+  "t0": 2638.692,
+  "dur": 5.514,
+  "at": "42.6",
+  "exacto": true
+ },
+ {
+  "id": "a095",
+  "kind": "still",
+  "t0": 2644.206,
+  "dur": 5.514,
+  "at": "42.6",
+  "exacto": true
+ },
+ {
+  "id": "c058",
+  "kind": "clip",
+  "t0": 2649.72,
+  "dur": 5.746,
+  "at": "42.7",
+  "exacto": true,
+  "wk": [
+   [
+    12.78,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a086",
+  "kind": "still",
+  "t0": 2655.466,
+  "dur": 4.597,
+  "at": "42.7",
+  "exacto": true
+ },
+ {
+  "id": "a096",
+  "kind": "still",
+  "t0": 2660.063,
+  "dur": 4.597,
+  "at": "42.7",
+  "exacto": true
+ },
+ {
+  "id": "a040",
+  "kind": "still",
+  "t0": 2664.66,
+  "dur": 5.244,
+  "at": "42.8",
+  "exacto": true
+ },
+ {
+  "id": "a087",
+  "kind": "still",
+  "t0": 2669.904,
+  "dur": 4.196,
+  "at": "42.8",
+  "exacto": true
+ },
+ {
+  "id": "a041",
+  "kind": "still",
+  "t0": 2674.1,
+  "dur": 7.389,
+  "at": "42.9",
+  "exacto": true,
+  "wk": [
+   [
+    1.34,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a088",
+  "kind": "still",
+  "t0": 2681.489,
+  "dur": 5.911,
+  "at": "42.9",
+  "exacto": true
+ },
+ {
+  "id": "a093",
+  "kind": "still",
+  "t0": 2687.4,
+  "dur": 8.84,
+  "at": "42.10",
+  "exacto": true,
+  "wk": [
+   [
+    0.88,
+    "__sello"
+   ]
+  ]
+ },
+ {
+  "id": "a098",
+  "kind": "still",
+  "t0": 2696.24,
+  "dur": 5.58,
+  "at": "42.10@para muchas familias",
+  "exacto": true
+ },
+ {
+  "id": "a094",
+  "kind": "still",
+  "t0": 2701.82,
+  "dur": 6.644,
+  "at": "42.10@la sentencia de dos mil veintis\u00e9is",
+  "exacto": true
+ },
+ {
+  "id": "cap12",
+  "kind": "capitulo7",
+  "t0": 2708.464,
+  "dur": 3.016,
+  "at": "43",
+  "exacto": true
+ },
+ {
+  "id": "g120",
+  "kind": "perfilmad",
+  "t0": 2711.48,
+  "dur": 7.967,
+  "at": "44.0",
+  "exacto": true
+ },
+ {
+  "id": "r048",
+  "kind": "clip",
+  "t0": 2719.447,
+  "dur": 6.373,
+  "at": "44.0",
+  "exacto": true
+ },
+ {
+  "id": "c_cierre_tres",
+  "kind": "depth2",
+  "t0": 2725.82,
+  "dur": 7.444,
+  "at": "44.1",
+  "exacto": true
+ },
+ {
+  "id": "r049",
+  "kind": "clip",
+  "t0": 2733.264,
+  "dur": 5.956,
+  "at": "44.1",
+  "exacto": true
+ },
+ {
+  "id": "o_reloj_fin",
+  "kind": "depth2",
+  "t0": 2739.22,
+  "dur": 3.02,
+  "at": "44.2",
+  "exacto": true
+ },
+ {
+  "id": "c059",
+  "kind": "clip",
+  "t0": 2742.24,
+  "dur": 7.108,
+  "at": "44.3",
+  "exacto": true
+ },
+ {
+  "id": "a089",
+  "kind": "still",
+  "t0": 2749.348,
+  "dur": 5.686,
+  "at": "44.3",
+  "exacto": true
+ },
+ {
+  "id": "r050",
+  "kind": "clip",
+  "t0": 2755.034,
+  "dur": 5.686,
+  "at": "44.3",
+  "exacto": true
+ },
+ {
+  "id": "a042",
+  "kind": "still",
+  "t0": 2760.72,
+  "dur": 4.3,
+  "at": "44.4",
+  "exacto": true
+ },
+ {
+  "id": "a043",
+  "kind": "still",
+  "t0": 2765.02,
+  "dur": 4.32,
+  "at": "44.4@doscientas veintiocho",
+  "exacto": false
+ },
+ {
+  "id": "c060",
+  "kind": "clip",
+  "t0": 2769.34,
+  "dur": 9.523,
+  "at": "44.4@cada simulador",
+  "exacto": true
+ },
+ {
+  "id": "r_golpe_a330",
+  "kind": "clip",
+  "t0": 2778.863,
+  "dur": 4.987,
+  "at": "45",
+  "exacto": true
+ },
+ {
+  "id": "o_cajas_fin",
+  "kind": "depth2",
+  "t0": 2783.85,
+  "dur": 8.421,
+  "at": "46.0",
+  "exacto": true
+ },
+ {
+  "id": "r051",
+  "kind": "clip",
+  "t0": 2792.271,
+  "dur": 6.736,
+  "at": "46.0",
   "exacto": true
  }
 ]

@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw
 from cine import W, H, S, load, film, depth_dof, ease, ramp
 from comp7 import tsec, alt_at, RUTA, CITY, COUNTRY_LBL, _merc, esn, hms, wkt
 from compmad import (M, FPS, kv, wood_tex, text_mask, burn, carve, thread, pin, plane_icon, dof_point, stepped, BURN, REDT)
-import comp8
+import comp8, comp7
 
 def _u(x): return tsec(x if x.count(":") == 2 else x + ":00")
 
@@ -41,7 +41,7 @@ def r_perfilmad(sh, sid, DUR, put):
     first = int(math.ceil(u0 / tick) * tick)
     for u in range(first, u1 + 1, tick):
         x, _ = XY(u, AMIN); cv2.line(G, (int(x), int(Y0)), (int(x), int(Y0 + 14 * S)), 1.0, max(1, int(2 * S)), cv2.LINE_AA)
-        if (u - first) % lab_every == 0: items.append((hms(u + 3 * 3600, False), (x, Y0 + 42 * S), 34 * S, "CormorantSC.ttf", "mm", 1 * S))
+        if (u - first) % lab_every == 0: items.append((hms(u + comp7.EJE_OFF * 3600, False), (x, Y0 + 42 * S), 34 * S, "CormorantSC.ttf", "mm", 1 * S))
     title = (sh.get("title") or "Altitud en pies · FZ1073 · hora saudí").upper()
     items.append((title, (X0, 0.085 * BH), 40 * S, "CormorantSC.ttf", "lm", 5 * S))
     board = carve(board, G, 0.28); board = burn(board, text_mask(BW, BH, items), 0.7, 3.0)
@@ -54,7 +54,7 @@ def r_perfilmad(sh, sid, DUR, put):
         return dA + (dB - dA) * ease(ramp(ta, t_in, t_end)) if dB > dA else dB
     marks = sh.get("marks") or []
     mt = [wkt(sh, m[2], None) if (len(m) > 2 and m[2] is not None) else None for m in marks]
-    hl = sh.get("hl"); FALL0, FALL1 = tsec("05:20:55"), tsec("05:21:40")
+    hl = sh.get("hl"); FALL0, FALL1 = tsec(comp7.FALL[0]), tsec(comp7.FALL[1])
     pl_w, pl_h = int(500 * S), int(160 * S)
     plaque = wood_tex(pl_w, pl_h, tint=(0.50, 0.34, 0.22), seed=1); plaque[:int(4 * S)] *= 1.25; plaque[-int(5 * S):] *= 0.5; plaque[:, -int(5 * S):] *= 0.6
     wide = (u1 - u0) > 1500
@@ -101,7 +101,7 @@ def r_perfilmad(sh, sid, DUR, put):
             sd = np.zeros((BH, BW), np.float32); sd[py0:py0 + pl_h, px0:px0 + pl_w] = 1; sd = cv2.GaussianBlur(np.roll(sd, (int(10 * S), int(9 * S)), (0, 1)), (0, 0), 10 * S)
             img = img * (1 - sd[..., None] * 0.5); img[py0:py0 + pl_h, px0:px0 + pl_w] = plaque
             T = text_mask(BW, BH, [(f"{esn(a_now)} FT", (px0 + pl_w / 2, py0 + pl_h * 0.46), 88 * S, "Anton-Regular.ttf", "mm", 2 * S),
-                                    (hms(hu + 3 * 3600, True) + " HORA SAUDÍ", (px0 + pl_w / 2, py0 + pl_h * 0.84), 24 * S, "CormorantSC.ttf", "mm", 3 * S)])
+                                    (comp7.loc(hu, True), (px0 + pl_w / 2, py0 + pl_h * 0.84), 24 * S, "CormorantSC.ttf", "mm", 3 * S)])
             vs = (alt_at(hu + 2) - alt_at(hu - 2)) / 4 * 60
             col = np.array([1.0, 0.55, 0.42]) if vs < -3000 else np.array([0.96, 0.92, 0.84])
             img = img * (1 - T[..., None] * 0.95) + col * T[..., None] * 0.95
@@ -119,7 +119,7 @@ def r_perfilmad(sh, sid, DUR, put):
 
 # ------------------------------------------------------------------ MAPA de madera (arce = tierra, nogal = mar, pirograbado), base de alta resolución
 _MAPW = {}
-LON0, LON1, LAT0, LAT1 = 30.0, 60.0, 21.0, 36.5
+from comp7 import LON0, LON1, LAT0, LAT1
 def tile_tex(w, h, tint, seed=0, scale=1.6):
     tb = load(f"{M}/img/i_tabla.png"); th, tw = tb.shape[:2]
     crop = tb[int(th * 0.30):, int(tw * 0.22):]
@@ -130,7 +130,7 @@ def tile_tex(w, h, tint, seed=0, scale=1.6):
     return (np.tile(c4, (reps[0], reps[1], 1))[:h, :w] * np.array(tint)).astype(np.float32)
 def map_wood():
     if "img" in _MAPW: return _MAPW["img"], _MAPW["f"]
-    PXW = 9000; x0, y0 = _merc(LON0, LAT0); x1, y1 = _merc(LON1, LAT1); PXH = int(PXW * (y1 - y0) / (x1 - x0))
+    PXW = int(getattr(comp7, "MAP_PX", 9000)); x0, y0 = _merc(LON0, LAT0); x1, y1 = _merc(LON1, LAT1); PXH = int(PXW * (y1 - y0) / (x1 - x0))
     def f(lon, lat): x, y = _merc(lon, lat); return (x - x0) / (x1 - x0) * PXW, (y1 - y) / (y1 - y0) * PXH
     path = f"{M}/fuentes/mapamad_hd.png"
     if not os.path.exists(path):

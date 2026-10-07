@@ -239,6 +239,19 @@ COUNTRY_LBL = {"ARABIA SAUDITA": (44.0, 24.6), "JORDANIA": (36.6, 31.15), "ISRAE
 RUTA = [("03:05", 55.364, 25.253), ("03:25", 52.6, 26.0), ("03:55", 48.9, 27.2), ("04:25", 45.3, 28.2), ("04:55", 41.7, 29.1), ("05:21", 38.40, 29.90),
         ("05:24", 38.15, 30.02), ("05:33", 37.90, 30.15), ("05:40", 37.45, 30.33), ("05:44", 37.20, 30.25), ("05:46", 37.15, 30.05),
         ("06:00", 37.35, 29.55), ("06:20", 36.95, 28.90), ("06:45", 36.619, 28.365)]
+# ---- DATOS POR VIDEO: <video>/datos.json pisa los de FZ1073 (perfil, ruta, ciudades, caja del mapa, reloj, hora local)
+RELOJ_REF, RELOJ_FIN, LOCAL_OFF, LOCAL_LBL, ALT_LBL, EJE_OFF, FALL = "05:21:00", None, 3, "HORA SAUDÍ", "ALTITUD · ADS-B", 3, ["05:20:55", "05:21:40"]
+_DJ = os.path.join(os.environ.get("TGP_M", os.getcwd()), "datos.json")
+if os.path.exists(_DJ):
+    import json as _json
+    _d = _json.load(open(_DJ, encoding="utf8"))
+    PERFIL = [tuple(x) for x in _d.get("perfil", PERFIL)]; RUTA = [tuple(x) for x in _d.get("ruta", RUTA)]
+    CITY = {k: tuple(v) for k, v in _d.get("city", CITY).items()}; COUNTRY_LBL = {k: tuple(v) for k, v in _d.get("country_lbl", COUNTRY_LBL).items()}
+    LON0, LON1, LAT0, LAT1 = _d.get("box", [LON0, LON1, LAT0, LAT1])
+    RELOJ_REF = _d.get("reloj_ref", RELOJ_REF); RELOJ_FIN = _d.get("reloj_fin"); LOCAL_OFF = _d.get("local_off", LOCAL_OFF)
+    LOCAL_LBL = _d.get("local_lbl", LOCAL_LBL); ALT_LBL = _d.get("alt_lbl", ALT_LBL); EJE_OFF = _d.get("eje_off", EJE_OFF); FALL = _d.get("fall", FALL)
+    MAP_PX = _d.get("map_px", 9000)
+def loc(u, sec=False): return f"{hms(u + LOCAL_OFF * 3600, sec)} {LOCAL_LBL}"
 def _merc(lon, lat): lat = max(-85.0, min(85.0, lat)); return lon, math.degrees(math.log(math.tan(math.pi / 4 + math.radians(lat) / 2)))
 def map_base():
     if "img" in _MAP: return _MAP["img"], _MAP["f"]
