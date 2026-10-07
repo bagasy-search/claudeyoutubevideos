@@ -1,0 +1,35 @@
+{
+  "slug": "ohfheaton",
+  "canal": "old-house-fix",
+  "modo": "avatar",
+  "idioma": "en",
+  "titulo": "Is It Cheaper To Leave The Heating On Constantly?",
+  "guion": "guiones/GUION_ohfheaton.txt",
+  "voz": {
+    "id": "ohf_hank"
+  },
+  "ctas": [
+    {
+      "ancla": "I worked all of this out",
+      "head": "The Winter Manual · Chapter 4",
+      "sub": "Link at the top of the description",
+      "qr": "qr/ohf_manual_ohfheaton.png",
+      "durS": 9
+    }
+  ],
+  "cta": {
+    "head": "Free: the No-Heat Night Card",
+    "sub": "Link at the top of the description",
+    "ancla": "Now, here is something for you",
+    "qr": "qr/ohf_card_ohfheaton.png"
+  },
+  "avatar": {
+    "face": "public/ref/ohf_full.png",
+    "lipLeadSec": 0.12
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/@oldhousefix",
+    "cardId": "ohf1791387991754-2"
+  },
+  "overrides": {}
+}

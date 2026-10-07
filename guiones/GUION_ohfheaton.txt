@@ -1,0 +1,109 @@
+Seven forty in the morning. The kitchen is warm again. Sixty-eight on the wall. The furnace hums down in the basement like nothing ever happened. And the owner sets down her coffee, looks at that thermostat, and asks me the question. Should I just leave the heat on all the time? Would that be cheaper?
+
+Everybody asks it. Usually the morning after a bad night. And the answer you hear most often, from a neighbor, from a brother-in-law, from somebody at the hardware store, is yes. Leave it on. Keep it steady. It costs more to heat a cold house back up than to keep it warm.
+
+That sounds right. It feels right. And for most houses, it is wrong.
+
+So here is what you are getting in this video. Whether leaving the heat on all day really costs less, and why. How far to turn it down at night and when you leave, and for how long. The three kinds of heat where the answer changes, because if you have one of those, the usual advice can actually cost you money. And the one number you should never go below in an old house in winter, no matter what the bill looks like.
+
+Because if you get this wrong, it goes two ways. Either you pay to heat an empty house every day all winter long. Or you turn it down too far, and you come home to a cracked pipe inside a wall. Both of those happen. Neither one has to.
+
+Now look at this. Up close. This is an old round thermostat, the kind with the little dial and the mercury bulb inside. Look at the dial. That is the only thing you control in this whole conversation. One number. And where you set that number, hour by hour, decides more of your heating bill than almost anything else you can do without a contractor.
+
+And stay with me to the end, because there is one thing almost everybody does right after they decide to turn the heat down. It feels smart, it costs you money, and it makes the house colder longer. I will show you what it is.
+
+If you missed the night the furnace died, that is the video right before this one. Two fourteen in the morning, the furnace lighting and quitting, and a fifteen minute fix with a scrub pad. This is the morning after. Same house. Nineteen twenties, two stories, deep front porch, fieldstone basement. A gas furnace downstairs, the old cast iron radiators upstairs. A house like the ones I have worked on for close to forty years.
+
+So let us start with the part that nobody explains, because once you see it, the rest of this is easy.
+
+Your house does not use heat. Your house loses heat. All day, all night, through every wall, every window, the attic, the floor, every crack around every door. Heat moves from warm to cold. That is all it does. It never stops.
+
+And here is the key. How fast your house loses heat depends on how big the difference is between inside and outside. If it is sixty-eight inside and twenty outside, that is a big difference, and heat pours out fast. If it is sixty inside and twenty outside, the difference is smaller, and heat leaks out slower.
+
+Think of a bucket with a hole in the bottom. The fuller the bucket, the harder the water pushes out of that hole. Your furnace is the hose filling the bucket. Your thermostat setting is how full you keep it. Keep it full all the time, and you are pushing water out of that hole all the time.
+
+So when you turn the heat down, the house cools off, and as it cools, it loses heat more slowly. Every hour the house sits cooler, it leaks less. And the furnace does not have to put back what never leaked out.
+
+Now, here is where the brother-in-law comes in. He says, but then the furnace has to work so hard to heat it back up. And he is right that it runs for a while in the morning. But think about what it is putting back. It is putting back the heat the house lost overnight. And the house lost less heat overnight because it was cooler. So the heat you put back in the morning is less than the heat you would have lost by keeping it warm all night.
+
+That is the whole thing. A cooler house leaks less. The recovery in the morning only puts back what leaked. So, for most homes, turning it down saves money. Not the other way around.
+
+I worked all of this out, system by system, in chapter four of the Winter Manual. Forced air, boilers and radiators, heat pumps, and electric baseboard. Because, and this is important, the answer is not the same for every one of them. We will get to that in a minute.
+
+Now, how much does it save? I am not going to make up a number for your house, because I have never seen your house. But the United States Department of Energy says that turning your thermostat back seven to ten degrees for about eight hours a day can save you up to about ten percent a year on heating. Eight hours. That is a night of sleep. Or a work day.
+
+And in an old house, here is something most people never think about. An old house usually leaks more than a new one. Older windows, less insulation, more gaps. That means it loses heat faster when it is warm. And that means turning it down usually matters more in an old house, not less.
+
+So for the most common setup in America, a gas or oil furnace with ducts, the answer is pretty simple. Turn it down at night. Turn it down when nobody is home. And let it come back up before you get up or before you walk in the door.
+
+How far? Seven to ten degrees is the range people use. If you keep sixty-eight while you are up and around, that means somewhere around sixty, maybe fifty-eight, at night and while you are out. Lots of people sleep better cooler anyway. Put an extra blanket on the bed.
+
+And how do you do it without thinking about it? A programmable thermostat. Or one of the newer ones that learns your schedule. You set it once. It drops the temperature at bedtime and brings it back up about half an hour before your alarm. You never wake up to a cold kitchen.
+
+If you have one of those old round dial thermostats, like this one, it still works. You just do it by hand. Turn it down when you go to bed. Turn it up when you get up. It is not as convenient, but the house does not care how the dial got turned.
+
+But here is the part where I have to slow down. Because there are three kinds of heat where you cannot just copy that advice.
+
+Number one. A heat pump.
+
+A heat pump is not a furnace. It moves heat from outside into your house, even when it is cold out. It is very efficient when it is running steady. But most heat pumps in cold country have a backup. Electric heating strips. Basically a big toaster in the air handler. And if you drop the temperature eight or ten degrees overnight, then ask for it all back at once in the morning, a lot of thermostats call in those strips to catch up. And those strips are expensive to run.
+
+So with a heat pump, the savings from a deep setback can disappear in one morning. What works better is a small setback, two or three degrees, or a thermostat that is made for heat pumps and brings the temperature back slowly without calling in the backup heat. If your thermostat has a light that says aux heat or emergency heat, and you see it come on every morning, that is your sign.
+
+Number two. Old boilers and cast iron radiators. Like the upstairs of our house.
+
+Radiators hold a lot of heat. That is the good part. They keep a room comfortable long after the boiler shuts off. But it also means they are slow. If you let a radiator house cool way down overnight, it can take hours to come back up. You will be sitting in a cold kitchen at breakfast wondering why the thermostat says it is calling for heat.
+
+A cooler house still loses less heat with radiators too. The physics does not change. But the comfort does. So with radiators, people usually do better with a smaller setback, a few degrees, and the warm up set to start earlier, maybe an hour or two before they get up. Some of the newer boiler controls handle this on their own. If you have one, read the manual for the word outdoor reset. That is a good feature on a boiler.
+
+Number three. Radiant floors. Heat in the floor, with hot water tubing under it, or in a concrete slab. Those are the slowest of all. A slab can take most of a day to really change temperature. For radiant floors, most people leave the temperature close to steady, or use a very small setback. Deep setbacks just do not have time to pay off.
+
+I put a little chart in the manual, one line for each kind of heat, with the setback that usually makes sense and how early to start the warm up. You can tape it next to the thermostat. But the rule of thumb is right here. Furnace, go deeper. Radiators, go shallower and start earlier. Heat pump, small steps or the right thermostat. Radiant floor, barely at all.
+
+Now, the one number I promised you. The one you never go below in an old house in winter.
+
+Fifty-five degrees.
+
+When you leave for a weekend, or a week, or you go to stay with your daughter for the holidays, you will be tempted to turn the heat way down. Or off. Do not. Set it no lower than about fifty-five. And here is why.
+
+The thermostat measures the air in one spot. Usually a hallway, in the middle of the house. But your water pipes do not live in the hallway. They live in outside walls. Under kitchen sinks on outside walls. In crawl spaces. Along the rim of the basement where the cold comes right through the foundation. Those spots can be a lot colder than the thermostat. If the hallway is fifty, the pipe behind the kitchen sink on the north wall can be close to freezing.
+
+And an old house is the worst for this. Pipes that were run before anybody worried about insulation. Plumbing added in a back porch that got closed in. A bathroom tucked under the eaves.
+
+And a frozen pipe does not just stop the water. Water expands when it freezes. The pipe splits. And you do not find out until it thaws and the water starts running inside the wall. That is a repair bill that will wipe out every dollar you ever saved with a thermostat.
+
+So, fifty-five as the floor. And if you are leaving in a deep cold spell, open the cabinet doors under the sinks on outside walls so the warm air can get to the pipes. And find out where your main water shut off is before you ever need it. We are going to talk a lot more about frozen pipes in this series, because in our house, the cold is coming.
+
+Now, I promised you the thing everybody does right after they decide to turn the heat down. Here it is.
+
+They come home, the house is cool, and they walk over to the thermostat and crank it all the way up. Seventy-five. Eighty. To warm it up faster.
+
+It does not warm up faster. Your furnace has one speed. Well, most of them. When the thermostat calls for heat, the furnace lights and puts out heat at its rate. It does not burn harder because the number on the wall is higher. Setting it to eighty does not get you to sixty-eight any faster than setting it to sixty-eight. It just keeps running past sixty-eight. And then you get hot, you open a window, or you forget, and now you are heating the house to seventy-five for the rest of the night.
+
+On a heat pump, it is worse. Crank it up and you are almost guaranteed to call in those expensive backup strips.
+
+Set it to the number you actually want. Then let it work. Go put the kettle on. It gets there at the same speed either way.
+
+And while we are on the thermostat, one more that costs people money all winter. The fan switch. Most thermostats have a little switch that says fan, auto, or on. Leave it on auto. On auto, the big blower runs when the furnace is heating, and stops when it is done. On on, the blower runs all day and all night. In an old house, the ducts often run through a cold basement or a cold attic. So all night, that blower is pushing air through cold ducts and blowing it on you. It feels drafty. It costs electricity. And it makes people turn the heat up. Auto.
+
+Let me answer a few of the questions people always ask me next.
+
+Does it matter if I close the vents in rooms I do not use? On a forced air system, closing a lot of registers can do more harm than good. The furnace is built to move a certain amount of air. Choke off too much of it, and the pressure goes up, the furnace runs hotter, and in some cases, it trips that high limit switch we talked about in the last video. That is cycling again. Closing one or two in a spare room is usually fine. Closing half the house is not.
+
+What about a space heater in the one room I use, and the rest of the house turned down? That can make sense for short stretches. But the floor of fifty-five still applies to the rest of the house, because of the pipes. And a space heater needs space. Three feet from anything that can burn. Plugged straight into the wall, not into an extension cord. And never left running when you leave or when you are asleep.
+
+What about at night with radiators upstairs and a furnace downstairs, like our house? You can set each one on its own. The furnace thermostat can drop more. The radiator thermostat drops less, and starts earlier. Two thermostats, two schedules.
+
+And that is exactly what our owner did. Furnace down to sixty at night, back up at six. The radiators upstairs set a little more gently. It worked. The kitchen was warm every morning. The bill went in the right direction.
+
+Except for one thing. Two days later, she called me again. The upstairs bedroom was still cold. Not a little cool. Cold. The radiator under the window was hot at the bottom and stone cold at the top. And she had already looked up how to fix it. And she was about to do the one thing that turns a ten minute job into a soaked ceiling. That is the next video.
+
+So let me run it back for you, quick.
+
+A house loses heat faster when it is warmer. Turning it down saves, because a cooler house leaks less, and the warm up only puts back what leaked. Seven to ten degrees for about eight hours is the range most people use with a furnace. Heat pump, small steps or a thermostat built for it. Radiators, smaller setback and an earlier start. Radiant floors, barely at all. Never below about fifty-five when you are away. Do not crank the thermostat to warm up faster. And put the fan on auto.
+
+Now, here is something for you. I made a free card for the nights this goes wrong. It is called the No-Heat Night Card. Nine things to check when the heat will not start or will not stay on, cheapest first. Frozen pipe first aid. And the carbon monoxide rules for a power outage. Two pages. Tape it inside the basement door. It is free, the link is at the top of the description, and the code is on your screen right now.
+
+And the Winter Manual is the whole season, chapter by chapter. Chapter four is this video, with the chart for every kind of heat. The link for that is at the top of the description too.
+
+Down in the comments, tell me one thing. What kind of heat do you have, and what do you set it to at night? Furnace, radiators, heat pump, something else. Tell me, and I will tell you if I would change it.
