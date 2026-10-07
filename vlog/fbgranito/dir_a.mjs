@@ -18,7 +18,9 @@ export const SHOTS = [
   S(0, "Ése es el error del video que viste", "bi", "b_viralbowl", { p: BI(`A metal bowl of white cement powder on a wooden table with orange-amber varnish poured into the middle of it in a swirl, seen from a low angle, the tin of varnish tilted above it.`) }),
   // ── la tapa
   S(1, "", "cl", "c_knock", { p: CLP(`He knocks with his knuckles on ${TAPA}, ${GRANITE}, smiling proudly at the camera, sunny backyard behind him.`) }),
+  S(1, "suena a piedra", "cl", "c_knock2", { p: CLP(`He knocks twice on ${TAPA}, ${GRANITE}, listening with his head tilted, pleased.`) }),
   S(1, "La miras de cerca", "bi", "b_granitemacro", { p: BI(`Extreme close view of a polished cement surface ${GRANITE}; each stone chip shows its cut face, a few water drops sitting round on the gloss.`) }),
+  S(1, "tiene la veta", "bi", "b_chipcut", { p: BI(`Extreme macro of one black stone chip cut flat and polished inside gray cement, its crystals visible.`) }),
   S(1, "el brillo mojado", "bi", "b_granitereflect", { p: BI(`Low angle view across ${TAPA}, ${GRANITE}, the blue sky and a tree reflected in the gloss like in a mirror.`), anim: "slow slide along the glossy surface" }),
   S(1, "Parece granito", "av", ""),
   // ── 0:08 · LA PROMESA
@@ -28,6 +30,7 @@ export const SHOTS = [
   S(2, "y barniz", "bi", "b_varnishcan", { q: "opening paint can", p: BI(`${VARNISH} opened on a workbench next to a wide paintbrush.`) }),
   S(2, "Unos cinco dólares de material", "c", "ClReceipt", { props: { lines: [["Cemento", "4 kg"], ["Granza de mármol", "8 kg"], ["Arena fina", "2 kg"], ["Barniz", "¼ litro"]], total: ["Material de la tapa", "≈ 5 dólares"] } }),
   C(2, "Así estaba la mesa del patio", "ClBeforeAfter", { before: I + "b_tableold.jpg", after: I + "b_tablegranite.jpg", note: "cemento · una semana · tres manos de barniz" }),
+  S(2, "Así quedó", "bi", "b_tablegranite", { p: BI(`${TAPA}, ${GRANITE}, a sunny backyard, a potted plant and a cup on it.`) }),
   // ── el vecino
   S(3, "", "bi", "b_neighborlook", { p: BI(`${NEIGHBOR} bending over a glossy granite-looking tabletop in a sunny backyard, running his fingertips over it, eyebrows raised in disbelief.`) }),
   S(3, "una placa comprada", "av", ""),
@@ -47,6 +50,7 @@ export const SHOTS = [
   S(6, "", "av", ""),
   S(6, "Por qué el barniz adentro", "bi", "b_crumbly", { p: BI(`A blotchy, patchy gray cement slab with dark stains and halos on its surface, crumbling at one corner, on a workbench.`), ov: { c: "ClChip", props: { text: "1 · El barniz adentro", alert: true } } }),
   S(6, "El paso que casi todos se saltean", "bi", "b_tapsides", { p: BI(`A hammer resting against the side of a wooden mold full of wet concrete.`), ov: { c: "ClChip", props: { text: "2 · El paso que todos se saltean" } } }),
+  S(6, "que no brille nunca", "bi", "b_pinholes", { p: BI(`Close view of a sanded gray cement surface full of small round pinholes from trapped air.`) }),
   S(6, "lo que pasó cuando el vecino", "bi", "b_neighbordoor", { p: BI(`${NEIGHBOR} standing at a front gate, holding a broken gray slab piece, looking guilty.`), ov: { c: "ClChip", props: { text: "3 · Lo del vecino" } } }),
   S(6, "Primero, la receta entera", "av", ""),
   // ── RECETA

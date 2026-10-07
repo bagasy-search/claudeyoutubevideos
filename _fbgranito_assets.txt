@@ -5,7 +5,9 @@ broll/fbgranito/b_varnishin.mp4
 avatar_clips/fbgranito/reel30.mp4
 img/fbgranito/b_viralbowl.jpg
 img/fbgranito/c_knock.jpg
+img/fbgranito/c_knock2.jpg
 img/fbgranito/b_granitemacro.jpg
+img/fbgranito/b_chipcut.jpg
 img/fbgranito/b_granitereflect.jpg
 broll/fbgranito/b_granitereflect.mp4
 img/fbgranito/st_cementbag.jpg
@@ -36,6 +38,7 @@ broll/fbgranito/b_varnishshine.mp4
 img/fbgranito/c_wow.jpg
 img/fbgranito/b_crumbly.jpg
 img/fbgranito/b_tapsides.jpg
+img/fbgranito/b_pinholes.jpg
 img/fbgranito/b_neighbordoor.jpg
 broll/fbgranito_st/bd_concretepouring1.mp4
 broll/fbgranito_st/bd_masontrowel2.mp4
@@ -62,7 +65,6 @@ img/fbgranito/b_halfpour.jpg
 img/fbgranito/c_hammer.jpg
 img/fbgranito/b_bubbles.jpg
 broll/fbgranito/b_bubbles.mp4
-img/fbgranito/b_pinholes.jpg
 img/fbgranito/b_screed.jpg
 broll/fbgranito_st/b_screed.mp4
 img/fbgranito/b_nylon2.jpg
@@ -75,7 +77,6 @@ broll/fbgranito/b_sand80.mp4
 img/fbgranito/b_halfsanded.jpg
 img/fbgranito/b_dots.jpg
 broll/fbgranito/b_dots.mp4
-img/fbgranito/b_chipcut.jpg
 img/fbgranito/b_sand120.jpg
 broll/fbgranito/b_sand120.mp4
 img/fbgranito/c_feel.jpg
@@ -90,7 +91,6 @@ broll/fbgranito/b_coat2.mp4
 img/fbgranito/c_brush.jpg
 img/fbgranito/b_drop.jpg
 broll/fbgranito_st/b_drop.mp4
-img/fbgranito/c_knock2.jpg
 broll/fbgranito_st/bd_granitecountertop4.mp4
 broll/fbgranito_st/bd_polishingstone5.mp4
 img/fbgranito/b_scale.jpg
