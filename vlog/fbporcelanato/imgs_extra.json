@@ -1,0 +1,30 @@
+[
+ {
+  "name": "b_floorold",
+  "prompt": "A small covered back porch with white walls and a wooden door, its floor old worn gray cement, stained, patched and dull, in daylight."
+ },
+ {
+  "name": "b_puddles",
+  "prompt": "An old gray concrete floor with shiny puddles of standing water on it after being soaked, a sponge beside them."
+ },
+ {
+  "name": "b_twosamples",
+  "prompt": "Top view of two square cement sample tiles side by side on a workbench: the left one washed-out pale chalky blue, the right one deep vivid teal-blue and glossy."
+ },
+ {
+  "name": "b_edge",
+  "prompt": "Extreme close side view of the edge of a thin 2 mm teal-blue cement coating on top of an old gray concrete floor, a steel ruler standing next to it."
+ },
+ {
+  "name": "b_wetdull",
+  "prompt": "Top view of a fresh teal cement floor coat: the left half still wet and shiny, the right half matte and dull, a fingertip print on the dull side."
+ },
+ {
+  "name": "b_wipe",
+  "prompt": "A damp microfiber cloth wiping a glossy teal polished cement floor, a small bucket of soapy water beside it."
+ },
+ {
+  "name": "b_acid",
+  "prompt": "A plastic bottle of muriatic acid with a plain label and a stiff brush on a dull etched patch of a teal cement floor."
+ }
+]

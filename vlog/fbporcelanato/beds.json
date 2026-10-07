@@ -1,0 +1,152 @@
+[
+ {
+  "name": "bd_cementfloor0",
+  "q": "cement floor",
+  "scene": "Ordinary real footage: cement floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_polishedconcretefloor1",
+  "q": "polished concrete floor",
+  "scene": "Ordinary real footage: polished concrete floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_trowelconcrete2",
+  "q": "trowel concrete",
+  "scene": "Ordinary real footage: trowel concrete, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_mixingcementbucket3",
+  "q": "mixing cement bucket",
+  "scene": "Ordinary real footage: mixing cement bucket, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_paintbucket4",
+  "q": "paint bucket",
+  "scene": "Ordinary real footage: paint bucket, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_pouringpaint5",
+  "q": "pouring paint",
+  "scene": "Ordinary real footage: pouring paint, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_whitecement6",
+  "q": "white cement",
+  "scene": "Ordinary real footage: white cement, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_floorrenovation7",
+  "q": "floor renovation",
+  "scene": "Ordinary real footage: floor renovation, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_porchfloor8",
+  "q": "porch floor",
+  "scene": "Ordinary real footage: porch floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_houseporch9",
+  "q": "house porch",
+  "scene": "Ordinary real footage: house porch, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_livingroomfloor10",
+  "q": "living room floor",
+  "scene": "Ordinary real footage: living room floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bathroomfloor11",
+  "q": "bathroom floor",
+  "scene": "Ordinary real footage: bathroom floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_tilefloor12",
+  "q": "tile floor",
+  "scene": "Ordinary real footage: tile floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_sealingfloorroller13",
+  "q": "sealing floor roller",
+  "scene": "Ordinary real footage: sealing floor roller, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_moppingfloor14",
+  "q": "mopping floor",
+  "scene": "Ordinary real footage: mopping floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_backyardworkshop15",
+  "q": "backyard workshop",
+  "scene": "Ordinary real footage: backyard workshop, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hardwarestore16",
+  "q": "hardware store",
+  "scene": "Ordinary real footage: hardware store, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_pigmentpowder17",
+  "q": "pigment powder",
+  "scene": "Ordinary real footage: pigment powder, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_oldhousefloor18",
+  "q": "old house floor",
+  "scene": "Ordinary real footage: old house floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_concretetexture19",
+  "q": "concrete texture",
+  "scene": "Ordinary real footage: concrete texture, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_floorcleaning20",
+  "q": "floor cleaning",
+  "scene": "Ordinary real footage: floor cleaning, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_homerenovation21",
+  "q": "home renovation",
+  "scene": "Ordinary real footage: home renovation, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_garagefloor22",
+  "q": "garage floor",
+  "scene": "Ordinary real footage: garage floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_drivewaycar23",
+  "q": "driveway car",
+  "scene": "Ordinary real footage: driveway car, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_farmhouseporch24",
+  "q": "farmhouse porch",
+  "scene": "Ordinary real footage: farmhouse porch, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchenfloor25",
+  "q": "kitchen floor",
+  "scene": "Ordinary real footage: kitchen floor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_sunnywindowroom26",
+  "q": "sunny window room",
+  "scene": "Ordinary real footage: sunny window room, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_neighborfencetalk27",
+  "q": "neighbor fence talk",
+  "scene": "Ordinary real footage: neighbor fence talk, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_stepsentrance28",
+  "q": "steps entrance",
+  "scene": "Ordinary real footage: steps entrance, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_paintroller29",
+  "q": "paint roller",
+  "scene": "Ordinary real footage: paint roller, real everyday look, no person looking at the camera."
+ }
+]
