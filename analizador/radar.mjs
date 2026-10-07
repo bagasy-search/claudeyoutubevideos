@@ -415,7 +415,36 @@ async function cmdSaturation(only) {
   }
 }
 
+// ── verify: vistas EXACTAS + fecha de publicación EXACTA de los videos de referencia (heroes.json).
+// Cada corrida agrega una medición; con 2+ mediciones da vistas/día medidas, no estimadas.
+async function cmdVerify() {
+  const heroes = readJ("heroes.json", []);
+  const hist = readJ("verify_history.json", {});
+  await pool(heroes, async (h) => {
+    // la watch page cae en captcha tras muchas requests; /next (innertube) sigue respondiendo
+    const d = await post("next", { videoId: h.id }, "2.20261006.01.00");
+    if (!d) return;
+    const js = JSON.stringify(d);
+    const views = parseCount(js.match(/"videoViewCountRenderer":\{"viewCount":\{"simpleText":"([^"]+)"/)?.[1]);
+    const dt = js.match(/"dateText":\{"simpleText":"([^"]+)"/)?.[1] || "";
+    const published = Date.parse(dt.replace(/^(Premiered|Streamed live on) /, "")) ? new Date(Date.parse(dt.replace(/^(Premiered|Streamed live on) /, "")) + 12 * 36e5).toISOString() : null;
+    const title = js.match(/"videoPrimaryInfoRenderer":\{"title":\{"runs":\[\{"text":"((?:[^"\\]|\\.)*)"/)?.[1] || "";
+    const lengthSeconds = 0;
+    const e = (hist[h.id] ||= { id: h.id, handle: h.handle, title, published, lengthSeconds, m: [] });
+    e.title = title || e.title; e.published = published || e.published; e.lengthSeconds = lengthSeconds || e.lengthSeconds;
+    e.m.push({ at: NOW, views });
+  });
+  writeJ("verify_history.json", hist);
+  for (const e of Object.values(hist).sort((a, b) => (b.m.at(-1)?.views || 0) - (a.m.at(-1)?.views || 0))) {
+    const last = e.m.at(-1), first = e.m[0];
+    const age = e.published ? (last.at - Date.parse(e.published)) / 864e5 : null;
+    const dd = (last.at - first.at) / 864e5;
+    const vel = e.m.length > 1 && dd > 0.04 ? Math.round((last.views - first.views) / dd) : null;
+    console.log(`${String(last.views).padStart(9)} | ${e.published?.slice(0, 10)} (${age?.toFixed(1)}d) | ${vel != null ? `${vel}/día medido` : "-"} | ${e.handle} | ${e.title.slice(0, 70)}`);
+  }
+}
+
 const [cmd, ...rest] = process.argv.slice(2);
-const cmds = { saturation: () => cmdSaturation(rest), search: () => cmdSearch(rest), channels: cmdChannels, snowball: cmdSnowball, snapshot: cmdSnapshot, score: cmdScore };
+const cmds = { verify: cmdVerify, saturation: () => cmdSaturation(rest), search: () => cmdSearch(rest), channels: cmdChannels, snowball: cmdSnowball, snapshot: cmdSnapshot, score: cmdScore };
 if (!cmds[cmd]) { console.error("uso: node analizador/radar.mjs search|channels|snowball|snapshot|score"); process.exit(1); }
 await cmds[cmd]();

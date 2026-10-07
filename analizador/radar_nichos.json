@@ -798,6 +798,69 @@
     "abandoned dog rescue",
     "mother dog rescued puppies"
    ]
+  },
+  "ww2_pows_america": {
+   "desc": "Prisioneros alemanes/japoneses/italianos en EE.UU. \u2014 'America was just that big'",
+   "q": [
+    "german pows america",
+    "german prisoners of war in america",
+    "german pow camp texas",
+    "what german pows saw in america",
+    "italian pows in america",
+    "japanese pows america",
+    "german pows were shocked"
+   ]
+  },
+  "ww2_enemigo_ve_america": {
+   "desc": "'Qu\u00e9 pensaban los alemanes/sovi\u00e9ticos/japoneses de la industria americana'",
+   "q": [
+    "what german soldiers thought of american",
+    "germans realized america",
+    "soviet soldiers lend lease american",
+    "japanese realized america industrial",
+    "german generals american production"
+   ]
+  },
+  "western_ficcion_viuda": {
+   "desc": "Historias western narradas: viuda + cowboy millonario + forajidos",
+   "q": [
+    "widow cowboy story",
+    "old widow outlaws cowboy",
+    "millionaire cowboy story",
+    "rancher widow rain story",
+    "lonely widow western story",
+    "mail order bride western story"
+   ]
+  },
+  "hollywood_cast_then_now": {
+   "desc": "'Cast then and now 2026 \u2014 who's still alive'",
+   "q": [
+    "cast then and now 2026",
+    "who's still alive cast",
+    "cast then and now what happened",
+    "tv show cast then and now 2026",
+    "western tv cast then and now"
+   ]
+  },
+  "ww2_home_front": {
+   "desc": "Frente interno WW2 / la Am\u00e9rica de los 40 (racionamiento, f\u00e1bricas, granjas)",
+   "q": [
+    "ww2 home front america",
+    "rationing in america ww2",
+    "life in america 1942",
+    "1940s america daily life",
+    "american factories ww2 production",
+    "what americans ate during ww2"
+   ]
+  },
+  "vida_cotidiana_epoca": {
+   "desc": "'Por qu\u00e9 apestaba ser X en \u00e9poca Y' / vida cotidiana hist\u00f3rica",
+   "q": [
+    "why it sucked to be",
+    "what did people actually do all day",
+    "daily life in medieval",
+    "what life was really like in"
+   ]
   }
  }
 }
