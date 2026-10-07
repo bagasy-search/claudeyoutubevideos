@@ -26,7 +26,7 @@ export const SHOTS = [
   S(2, "del pasillo de Doña Marta", "bi", "b_martadoor", { p: BI(`${MARTA} standing at the open door of her bedroom at the end of ${HALL}, looking up at the crack above the door frame.`) }),
   S(2, "El mismo pintor", "bi", "b_painterputty", { p: BI(`${PAINTER} on a step stool smearing thick white filler over a diagonal crack above a door frame in a narrow hallway.`), anim: "the putty knife smears filler along the crack" }),
   C(2, "dos veces con masilla", "ClNotebook", { title: "El pintor", rows: [{ k: "Enero", v: "pasta" }, { k: "Abril", v: "más pasta" }], strike: true, mark: "✗", note: "se abrió las dos veces" }),
-  S(2, "Las dos veces, a los dos meses", "bi", "b_calendar2", { p: BI("A paper wall calendar in an old kitchen with two months circled in pen, a small drawing of a crack next to each circle.") }),
+  S(2, "Las dos veces, a los dos meses", "bi", "b_calendar2", { q: "wall calendar", p: BI("A paper wall calendar in an old kitchen with two months circled in pen, a small drawing of a crack next to each circle.") }),
   S(2, "en el mismo lugar", "bi", "b_samespot", { p: BI(`Close view of ${CRACK}, the old filler showing two layers, both split along the same line.`) }),
   // ── el loop del yeso
   S(3, "", "bi", "b_plasterpill", { p: BI("A small round pill of white gypsum plaster stuck across a diagonal crack on a pale mint-green wall, a date written beside it in pencil.") }),
@@ -34,7 +34,7 @@ export const SHOTS = [
   S(3, "eso Doña Marta no lo esperaba", "cl", "c_plaster", { p: CLP(`He stands in ${HALL} holding a phone up to a small white gypsum plaster pill stuck across the crack above the door, showing the phone screen to the camera with a small smile.`) }),
   // ── la promesa
   S(4, "", "av", ""),
-  S(4, "si una grieta es peligrosa", "bi", "b_scary", { p: BI("A long diagonal crack running from the corner of a window frame across a painted wall of an ordinary home, seen from below, side light.") }),
+  S(4, "si una grieta es peligrosa", "bi", "b_scary", { q: "crack wall window", p: BI("A long diagonal crack running from the corner of a window frame across a painted wall of an ordinary home, seen from below, side light.") }),
   S(4, "o se tapa en cinco minutos", "bi", "b_quickfix", { p: BI(`Close view of ${H} running a narrow putty knife with white filler along a fine hairline crack in a painted wall.`) }),
   S(4, "con una moneda y un poco de yeso", "bi", "b_coinyeso", { p: BI("A coin, a small plastic cup of mixed white gypsum paste and a pencil on a little wooden stool in a hallway, a crack in the wall behind.") }),
   S(4, "Y cómo se tapa para que no vuelva", "bi", "b_elastic", { p: BI("A small tub of white elastic crack filler with a plain blank label and a narrow putty knife on a step stool.") }),
@@ -42,7 +42,7 @@ export const SHOTS = [
   S(4, "Y así va a quedar", "cl", "c_glimpse5", { p: CLP(`He stands in ${HALL} with a paint roller raised, his body blocking most of the freshly painted smooth wall above the door, glancing back at the camera with a small smile.`), ov: { c: "ClChip", props: { text: "Después" } } }),
   // ── credibilidad + prueba de la foto
   S(5, "", "av", "", { ov: { c: "ClNameTag", props: { name: "Claudio", sub: "30 años de albañil" } } }),
-  S(5, "Treinta años de albañil", "bi", "b_toolbelt2", { p: BI("A worn leather tool belt with a trowel, a pencil, a yellow tape measure and a putty knife, hanging on a nail.") }),
+  S(5, "Treinta años de albañil", "bi", "b_toolbelt2", { q: "tool belt", p: BI("A worn leather tool belt with a trowel, a pencil, a yellow tape measure and a putty knife, hanging on a nail.") }),
   S(5, "miles de grietas", "bi", "st_crackwall", { q: "cracked wall", p: BI("A cracked old plaster wall.") }),
   S(5, "Y al final le doy", "av", ""),
   S(5, "la prueba de cero dólares", "bi", "b_phonehand", { p: BI(`Close view of ${H} holding an old smartphone up toward a wall with a crack, camera app open.`) }),
@@ -57,7 +57,7 @@ export const SHOTS = [
   S(7, "pasé por el pasillo y vi esta grieta", "bi", "b_ladderhall", { p: BI(`A folded aluminum ladder leaning against the wall in ${HALL}, the crack above the door visible.`) }),
   // ── el pasillo
   S(8, "", "bi", "b_hall", { p: BI(`${HALL}, warm afternoon light, nobody in it.`) }),
-  S(8, "las fotos de los nietos en marcos de madera", "bi", "b_frames", { p: BI("A row of framed school graduation photos of smiling Latin American children in wooden frames on a pale mint-green wall.") }),
+  S(8, "las fotos de los nietos en marcos de madera", "bi", "b_frames", { q: "family photos wall frames", p: BI("A row of framed school graduation photos of smiling Latin American children in wooden frames on a pale mint-green wall.") }),
   S(8, "una grieta en diagonal que sube hacia el techo", "bi", "b_crackup", { p: BI(`Looking up at ${CRACK} from below the door.`) }),
   S(9, "", "bi", "b_tomasphoto", { p: BI(`A framed school photo of ${BOY} smiling with a missing front tooth, on a pale mint-green wall.`) }),
   S(9, "cada vez mira la grieta de reojo", "bi", "b_martaglance", { p: BI(`${MARTA} walking down a narrow hallway carrying folded towels, glancing sideways and up at a crack above a door.`) }),
@@ -69,7 +69,7 @@ export const SHOTS = [
   // ── casi todas no son nada
   C(12, "", "ClCrackTypes", { pick: 0 }),
   S(13, "", "kf", "k_mud", { p: BI("Extreme close view of wet brown mud in a puddle drying in the sun.") , d1: "the wet mud shines in the sun", d2: "the mud dries and cracks into a pattern of small plates", sound: "a quiet sunny patio" }),
-  S(13, "Esas rayitas finas, como cabellos", "bi", "b_hairline", { p: BI("Extreme close view of fine hairline cracks running in all directions in old painted plaster, like a map.") }),
+  S(13, "Esas rayitas finas, como cabellos", "bi", "b_hairline", { q: "hairline cracks plaster", p: BI("Extreme close view of fine hairline cracks running in all directions in old painted plaster, like a map.") }),
   C(14, "", "ClCrackTypes", { pick: 1 }),
   C(15, "", "ClCrackTypes", { pick: 2 }),
   S(15, "ladrillo visto", "bi", "st_brickcrack", { q: "brick wall crack", p: BI("A stair-step crack running through the mortar joints of an exposed brick wall.") }),
@@ -89,7 +89,7 @@ export const SHOTS = [
   S(22, "Ninguna de las cuatro", "av", ""),
   // ── el testigo de yeso
   C(23, "", "ClChapter", { n: 3, title: "El testigo de yeso", sub: "4 semanas" }),
-  S(23, "como una pasta espesa", "bi", "b_mixyeso", { p: BI(`Close view of ${H} mixing white gypsum plaster with a little water in a plastic cup with a spoon into a thick paste.`), anim: "the spoon stirs the thick white paste" }),
+  S(23, "como una pasta espesa", "bi", "b_mixyeso", { q: "mixing plaster cup", p: BI(`Close view of ${H} mixing white gypsum plaster with a little water in a plastic cup with a spoon into a thick paste.`), anim: "the spoon stirs the thick white paste" }),
   S(23, "Y pegue una pastilla del tamaño de una moneda grande", "kf", "k_pill", { p: BI(`Close view of ${H} pressing a dab of white gypsum paste across a diagonal crack on a pale mint-green wall with a fingertip.`), d1: "the fingertip holds the white paste over the crack", d2: "the paste is pressed flat into a round pill across the crack", sound: "a soft press of wet plaster" }),
   S(24, "", "bi", "b_datepencil", { p: BI(`Close view of ${H} writing a date with a carpenter's pencil on the wall beside a small round white plaster pill across a crack.`) }),
   C(24, "si la pared se mueve aunque sea un pelito", "ClPlasterTell", { result: "broken" }),
