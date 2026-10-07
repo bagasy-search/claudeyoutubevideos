@@ -1,0 +1,127 @@
+Two fourteen in the morning. The furnace clicks. You hear the little motor spin up. Then a soft whump as the burners light. And then, six, maybe seven seconds later, nothing. The flame is gone. The motor keeps running. The house is cold, and it is getting colder.
+
+That is the sound of a furnace that keeps cycling on and off. It lights, it quits, it tries again, it quits again. And after a few tries, it gives up for an hour and goes dark.
+
+Most of the time, that is not a broken furnace. Most of the time, it is one thin metal rod, about as long as your finger, with a coat of grime on it you can barely see. It is called the flame sensor. And cleaning it takes about fifteen minutes, a nut driver, and a piece of fine steel wool.
+
+So here is what you are getting in this video. How to tell, before you touch anything, if the flame sensor is really your problem. How to find it, take it out, clean it the right way, and put it back so it stays clean. And where to stop and pick up the phone, because there is a line here, and I will show you exactly where it is.
+
+Because if you do not know this, you have two choices at two in the morning. You sit in a cold house until the office opens. Or you pay somebody to come out in the middle of the night, and stand in your basement for ten minutes, and do exactly what I am about to show you.
+
+Now look at this thing. Up close. This is a flame sensor that came out of a furnace like the one we are talking about. See that dull, cloudy coat on the rod? Kind of a white haze, kind of brown? That is it. That is the whole problem. A film so thin you would never notice it. And it is enough to shut down a whole house.
+
+And stay with me to the end, because there is one thing almost everybody does right after they clean it, and it puts that film right back on. I did it myself, years ago. I will show you what it is.
+
+Let me tell you about the house. It is a house like the ones I have worked on for close to forty years. Built in the nineteen twenties. Two stories, a deep front porch, a basement with a fieldstone wall. Somebody put in a gas furnace down there when they added central air, so the main floor runs on ducts. Upstairs still has the old cast iron radiators. You will meet those later this week.
+
+This is the story of that house's first cold week. Six problems, one at a time, in the order they usually show up. And it starts on the first really cold night of the year, at two fourteen in the morning.
+
+The owner wakes up because the house is quiet. Not because it is cold yet. Because it is quiet. You know your house. You know the sound it makes when the heat is running, and you know when something is wrong. She goes to the thermostat. It says heat. It says it is calling. The number on the wall keeps dropping. Sixty-eight. Sixty-six. Sixty-four.
+
+She goes down the basement stairs, and she hears it. The click. The whump. The flame. Then nothing. Then the little motor keeps humming for a while, and then it tries again.
+
+That sound, that pattern, is the furnace telling you something very specific. So let us learn to read it.
+
+Here is what a modern gas furnace does every single time it starts. First, the thermostat calls for heat. Then a small fan motor starts. That is the inducer. Its job is to pull air through the furnace and push the exhaust up the flue before any gas comes in. Then a little switch checks that the air is really moving. Then the igniter starts to glow. On most furnaces from the last thirty years, that is a hot surface igniter, a little flat piece that glows bright orange, like the element in a toaster.
+
+When the igniter is hot enough, the gas valve opens. Gas flows into the burners. The burners light off the igniter. And now comes the important part.
+
+The furnace has a few seconds to prove that there is really a flame. It does not take anybody's word for it. It checks. And the thing that checks is the flame sensor.
+
+The way it works is clever. The control board sends a tiny bit of electricity down that rod. The rod sits right in the flame. A flame actually carries a little current, and it carries it through the burner to the metal of the furnace. The board measures that current. It is tiny. A few millionths of an amp. But if the board sees it, it says, good, we have fire, keep the gas on.
+
+If the board does not see it, it does the safe thing. It shuts the gas off. Because as far as it knows, gas is pouring into that box with nothing burning it. And that is the one thing a furnace must never do.
+
+So now you can hear the problem. The flame is there. You can see it. But the rod is coated, and the coat works like a thin layer of insulation. The current cannot get through it well enough. The board does not see a flame, so it shuts the gas off. It waits. It tries again. Same thing. On a lot of furnaces, after three or so tries, the board locks itself out. Often for about an hour. Then it tries again on its own.
+
+That is your on and off. That is what woke her up.
+
+Now, before you take one screw out, I want you to do something most people skip. I want you to let the furnace tell you what is wrong. Because a furnace that cycles on and off can have a few different causes, and the flame sensor is only the most common one. The furnace keeps a record. You just have to know where to look.
+
+On the front of most furnaces there are two doors. The top one covers the burners. The bottom one covers the blower fan and the control board. On that bottom door, there is usually a little window, a peephole, or a clear plastic lens. Behind it, there is a small light on the control board. And that light blinks in a pattern.
+
+Do not pull that door off yet. That bottom door pushes in a safety switch. The second the door comes off, the furnace loses power, and on a lot of boards, that code is gone.
+
+So get down on your knees with a flashlight. Look through the window. Count the blinks. Usually it is something like a few quick flashes, a pause, and then it repeats. Count it three times so you are sure. Write the number on a piece of tape on the furnace.
+
+Then look on the inside of the doors, or on the side of the cabinet. There is almost always a sticker, a wiring diagram, and on it, a little chart that tells you what each blink code means. One of them will say something like flame sense failure, or flame lost, or failed to prove flame. Different brands word it differently.
+
+[MANUAL] I put the most common blink codes, sorted by what they usually mean in plain English, in chapter two of the Winter Manual, with the blink-code chart and the order I check things in. But your own furnace's sticker is the first thing to trust. It was written for that exact furnace.
+
+If the code points at the flame, you are in the right video. If it points at something else, like a pressure switch, or the high limit, keep watching, because I will cover the two most common other causes before we are done, and one of them is something you can fix with your hands in about thirty seconds.
+
+But let us say it is the flame. Here is what you need. A quarter inch nut driver. Most flame sensors are held in with one small hex screw, and a quarter inch fits nearly all of them. Some people use a screwdriver, and that works on the ones with a slotted head. A flashlight. A piece of fine steel wool, the finest grade they sell. Or a green kitchen scrub pad, the kind with no soap in it. Or a strip of very fine emery cloth. A clean paper towel. And your phone, for one picture. That is it.
+
+Here is what you do not need. You do not need sandpaper from the garage. You do not need a wire brush. You do not need any spray. I will tell you why in a minute.
+
+Step one. Turn the furnace off. Not at the thermostat. At the furnace. There is a switch near it, usually on the wall or on the side of the furnace, that looks exactly like a light switch. Sometimes it has a red cover plate. Flip it off. Then, to be safe, turn the gas valve on the furnace to off. That is a small knob or lever right where the gas line comes into the furnace. You are not taking any gas line apart. You are just closing the valve.
+
+And if at any point you smell gas, the real rotten egg smell, you stop. You do not flip switches. You leave the house and call the gas company from outside. That is not part of this job. That is a different night.
+
+Step two. Let it cool. If it just ran, the burner area is hot. Give it a few minutes.
+
+Step three. Take off the top door. Usually it lifts up and out. Now look at the burners. They are a row of tubes, side by side. At one end, you will find the igniter. Leave the igniter alone. Do not touch it. Many of them are made of a material that cracks if you so much as bump it with a finger, and then you have a real problem.
+
+At the other end of the row, or sometimes just off to the side of the burners, you will see a single thin metal rod. It is bent, usually like a little L, and it comes out of a white porcelain base. One screw holds it to a bracket. One wire plugs onto the end. That is your flame sensor.
+
+Step four. Take a picture. Seriously. Take a picture of exactly how it sits, where the rod points, and how the wire goes on. Then pull the wire straight off. Do not pull on the wire itself, pull on the connector. Then take out the one screw, and slide the sensor out gently. Keep it level, so you do not bend the rod against the burners on the way out.
+
+Now hold it up to the light. On a dirty one, you will see that haze I showed you at the beginning. It can be white, or a dull brown, or a kind of grey, almost like the rod got old overnight.
+
+Where does that come from? Mostly from the air the furnace burns. The flame burns more than gas. It burns whatever is in the air of your basement. Dust. Lint. And a lot of what we spray around a house. Hair spray, air fresheners, cleaners, the stuff from a laundry room if the furnace is near it. When some of those burn, they leave a thin glassy film on whatever is hot. And the hottest, cleanest metal in that fire is your flame sensor.
+
+So this is not a sign that anybody did anything wrong. It is just what happens to a rod that lives in a fire.
+
+Step five. Clean it. Hold the sensor by the porcelain base, gently. Take your fine steel wool, or your scrub pad, and rub the metal rod lengthwise. Light pressure. Like you are cleaning a good pan, not stripping paint. Go all the way around the rod. You are not trying to make it bright like a new nail. You are just taking off that film until you see clean, dull metal, all the way around.
+
+This is where people go wrong with sandpaper from the garage. Coarse paper cuts grooves in the rod. A scratched rod collects that film faster, and you end up doing this again in a few weeks. And a wire brush can leave little bits of metal on the porcelain. Fine and gentle wins here.
+
+Do not scrub the porcelain. Do not bend the rod. If the porcelain is cracked, or the rod is worn thin or pitted, stop. That sensor needs to be replaced, not cleaned. It is a common, cheap part, and you take the old one to the supply house so they can match it.
+
+Then wipe the rod with a clean, dry paper towel. Not a wet one. No cleaner on it. Just dry.
+
+[MANUAL] I put the whole checklist in the manual, start to finish, so you can tape it inside the furnace door and not have to remember any of this at two in the morning. But you have all of it right here, too.
+
+Step six. Put it back. Slide it back in the same way it came out. Look at your picture. The rod should sit right where it was, so that when the burners light, the flame wraps over the tip of it. Put the screw back in, snug, but do not crank it. That porcelain does not like being squeezed. Push the wire connector back on, all the way.
+
+Step seven. Put the top door back on. Turn the gas valve back to on. Make sure the bottom door is on and seated, because remember, that door pushes the safety switch. Then flip the switch back on. Go up and set the thermostat a couple of degrees above the room.
+
+Now come back down and watch. Through the window, or through the gaps. You will hear the inducer. You will see the glow of the igniter. Then the burners light. Now count. Last time it died at six or seven seconds. Count to ten. Count to twenty. If the flame is still there and the big blower fan comes on a little after that, you have heat. That is the sound she wanted to hear at two fourteen in the morning.
+
+Let it run a full cycle. Let the house come up to temperature. Watch it shut off on its own, because the thermostat is satisfied, not because the board gave up. That is the difference.
+
+Now, I promised you the thing almost everybody does right after cleaning it. Here it is. They pick the clean rod up by the metal. With their bare fingers. To look at it, or to line it up. Your skin has oil on it. That oil goes into the flame, it cooks onto the rod, and you are building that film right back up from day one. I have done it. Every old hand has done it once. Hold it by the porcelain base, or hold it with the paper towel. Never with your fingers on the rod.
+
+And there is a second one, while we are here. After the furnace runs again, people put the bottom door back on crooked, or leave it leaning there, and the safety switch never closes. Then nothing happens at all, and they think the cleaning broke it. It did not. Push that door until it seats.
+
+Now let us talk about what to do if you cleaned it and it still cycles. Because this is the part that separates a fifteen minute fix from a long night.
+
+First, the other two common causes I promised. Number one is the air filter. That is the one you can fix in thirty seconds. A badly clogged filter starves the furnace of air. The heat builds up inside, and a safety switch called the high limit shuts the burners off to protect the furnace. Then it cools down and starts again. That is cycling too. But it looks different. Usually the burners run for a few minutes, not a few seconds, before they shut off. Pull the filter out. Hold it up to the light. If you cannot see light through it, put in a new one, with the arrow pointing toward the furnace.
+
+Number two, if your furnace has white plastic pipes going out through the wall instead of a metal pipe going up the chimney, go outside and look at the ends of those pipes. Snow, ice, a bird's nest, leaves. If the exhaust or the air intake is blocked, the furnace cannot prove its air is moving, and it will start and stop, or not start at all. Clear the ends by hand. Do not chip at the pipe with a shovel.
+
+Those two, plus the flame sensor, cover a big share of the on and off nights I have seen.
+
+Now, if you cleaned the sensor, the filter is fine, the pipes are clear, and it still lights and dies, check three small things. Is the wire pushed all the way on? Is the rod actually in the flame, or did it get nudged? And is the furnace well grounded? The flame sensor needs that ground to complete its little circuit. If the burner assembly is loose or rusty where it bolts to the cabinet, the signal can be weak even with a perfectly clean rod.
+
+And here is the line I told you about. Here is where I stop and call somebody, and I want you to stop too. You smell gas. You see the flame lifting off the burners, or going lazy and yellow, or you see soot, black marks around the burner opening. Your carbon monoxide alarm goes off. There is rust falling into the burners or water dripping where it should not be. Or you clean the sensor, and in a week or two it is coated again. That last one means something is wrong with how the furnace is burning, and that is not a steel wool problem. That is a technician with a combustion analyzer.
+
+And while we are on carbon monoxide. If you have a gas furnace and you do not have a working CO alarm on every floor, especially near the bedrooms, that is the cheapest thing in this whole video. Put that ahead of everything else.
+
+One more thing about calling somebody. When you call, tell them what you found. The blink code number you wrote on the tape. That you cleaned the flame sensor. That the filter is clean. A good technician will be glad to hear it, because you just saved them twenty minutes of guessing.
+
+Back to our house. That night, the owner had a flashlight and the sticker on the furnace door. She counted the blinks. She found the chart. It said flame. She did not have steel wool, but she had a brand new green scrub pad under the kitchen sink. And at a little after three in the morning, the furnace lit, ran, and stayed lit. By breakfast the house was back to sixty-eight.
+
+So let me run it back for you, quick, so you have it in order.
+
+Count the blinks before you open anything. Read the chart on the door. Power off at the switch. Gas valve off. Top door off. Picture first. Wire off, one screw out, sensor out level. Fine steel wool or a scrub pad, lengthwise, light hand, all the way around. Dry towel. Never touch the rod with your fingers. Back in exactly like the picture. Snug, not tight. Doors on and seated. Gas on, power on, and watch it run past the seconds where it used to quit.
+
+And check the filter. And check the pipes outside if you have the white plastic ones.
+
+[CARD] Now, here is something for you. I made a free card for exactly this kind of night. It is called the No-Heat Night Card. It has the nine things to check when the furnace will not start or will not stay on, in the right order, cheapest first. Plus frozen pipe first aid, and the carbon monoxide rules for when the power goes out. Two pages. You print it and tape it inside the basement door. It is free. The link is at the top of the description, and the code is on your screen right now.
+
+[MANUAL] And if you want the whole winter, every problem an older house throws at you, with what to check, how to fix it yourself, and where to stop and call, that is the Winter Manual. Chapter two is this video, plus the blink codes and the questions to ask a technician. That link is at the top of the description too.
+
+[SERIES→] Now. The furnace was running again. By morning, the house was warm. And the owner sat at the kitchen table with her coffee, looked at the thermostat, and asked me the question everybody asks after a night like that. Should I just leave the heat on all the time? Would that have stopped this? Would that be cheaper? There is a real answer to that, and it is not the one most people expect, especially in an old house. That is the next video.
+
+Down in the comments, tell me one thing. What does your furnace do right before it quits? A click? A hum? Silence? Tell me, and I will tell you what it usually means.

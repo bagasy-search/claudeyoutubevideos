@@ -329,5 +329,12 @@
     "language": "en",
     "backend": "s2.1-pro-free",
     "nota": "Harlan the Lineman (EN/US Ohio, 68, retired lineman). Clon zero-shot de la voz PUBLICA de Fish 'GRANDPA' e223051b34524a48940561e9a18a2203 (warm authoritative raspy); ganó juez ciego gpt-audio en 2 órdenes (9/9) contra 5. 27-sep-2026."
+  },
+  "ohf_hank": {
+    "wav": "fish_refs/ohf_hank.wav",
+    "text": "That man called me again, and he was aggravated, and I do not blame him. He said, I thought you told me they were done for the year. He said, I have got them in the bathroom, on the curtain. There is one walking across the television. And I said, do me a favor.",
+    "language": "en",
+    "backend": "s2.1-pro-free",
+    "nota": "The Old House Fix (EN/US). Ventana 142,1-158,0 s del avatar grabado de ohfstinkbug (voz de siempre del canal). 7-oct-2026."
   }
 }
