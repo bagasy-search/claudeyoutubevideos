@@ -531,9 +531,10 @@ def r_lista8(sh, sid, DUR, put):
     for i in range(int(round(DUR * FPS))):
         t = i / FPS
         img = tone(cam(pl, t, DUR, 1.0, 1.05, dx=0.02), sh.get("act"), t)
-        vis = []
+        vis = []; prev = -1.0
         for j, r in enumerate(it):
-            ti = wkt(sh, r[3], 0.3 + j * 0.8) if len(r) > 3 and r[3] is not None else 0.3 + j * 0.8
+            ti = wkt(sh, r[3], None) if len(r) > 3 and r[3] is not None else None
+            ti = max(prev + 0.8, 0.3) if ti is None else ti; prev = ti      # sin marca: entra DESPUÉS de la anterior (nunca antes)
             k = ramp(t, ti, ti + 0.35)
             if k > 0: vis.append((j, r, ti, ease(k)))
         img = shadows(img, [("rect", 0.12, y0 + j * (hh + gap) + (1 - k) * 0.06, 0.88, y0 + j * (hh + gap) + hh + (1 - k) * 0.06, 0.006, k) for j, r, ti, k in vis],
