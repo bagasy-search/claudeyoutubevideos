@@ -1,0 +1,1 @@
+{ "extends": "./tsconfig.json", "include": [], "files": ["src/index_opalnine.tsx", "src/opal/three-shim.d.ts"], "exclude": [] }

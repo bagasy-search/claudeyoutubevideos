@@ -1,0 +1,80 @@
+{
+ "dir": "D:/Proyectos/video2-wt/opalnine/vlog/opalnine/M1",
+ "face": "D:/Proyectos/video2-wt/opalnine/public/ref_opalnine_facebig.png",
+ "k0_from": "D:/Proyectos/video2-wt/opalnine/public/ref_opalnine.png",
+ "pronoun": "she",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the farm and barn background stays fully readable. The only light is what the place really has: morning daylight outdoors, or daylight through the gaps of the barn boards and the open barn door; correctly exposed. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; hair with stray strands; clothes with real creases; feathers with real texture. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural older hands; she moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same woman, a sunny autumn morning. Opal, a 68-year-old farm woman with grey hair pulled back in a loose low bun with stray strands, a navy blue long-sleeved cotton dress with a tiny pink and white flower print and small buttons, a grey and white pinstriped cotton pinafore apron over it, natural older skin with lines and age spots, no jewelry stands in the gravel driveway of her farm in front of a dusty pickup truck, holding an open brown cardboard box with air holes against her apron, four young buff Orpington pullets with soft golden-buff feathers and small pale pink combs peeking out of it, and she looks at the camera with a pleased, warm face. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same driveway: she tilts the open box toward the camera so the pullets show, smiling, eyebrows raised. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A minute later, same morning, inside the old wooden barn: she stands next to an old black wire dog crate on the straw with four young buff Orpington pullets with soft golden-buff feathers and small pale pink combs inside, one hand on top of the crate, looking at the camera, firm and serious, shaking her head no. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "A few seconds later, same place by the crate: she points one finger at the pullets in the crate, still firm and serious. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K3"
+   ],
+   "prompt": "Same barn a few seconds later: she crouches down beside the wire crate and looks in at the pullets with a worried face, one hand raised near her mouth. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place a moment later: still crouching by the crate, she turns her face to the camera with raised eyebrows, worried and knowing. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/opalnine/vlog/opalnine/tramos/m1.wav",
+   "text": "Saturday morning my neighbor pulled into the drive with four young hens in a cardboard box.",
+   "action": "She holds the cardboard box with the pullets and talks to the camera warmly, glancing down at the pullets in the box. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "m2",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/opalnine/vlog/opalnine/tramos/m2.wav",
+   "text": "And I did not put them in with my flock.",
+   "action": "Standing by the wire crate, she shakes her head firmly and says it straight to the camera. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  },
+  {
+   "id": "m3",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/opalnine/vlog/opalnine/tramos/m3.wav",
+   "text": "one of those four little girls sneezed.",
+   "action": "Crouched by the crate she looks in at the pullets, then turns to the camera worried. She wears the same navy blue flowered cotton dress with small buttons and the same grey and white pinstriped apron, grey hair pulled back in a loose low bun with stray strands."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/opalnine/vlog/opalnine/M1/out.mp4"
+}
