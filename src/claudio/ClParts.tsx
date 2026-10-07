@@ -67,20 +67,18 @@ export const Card: React.FC<{ style?: React.CSSProperties; children: React.React
   <div style={{ background: CL.white, borderRadius: 18, boxShadow: `0 26px 56px ${CL.shadow}, 0 4px 10px rgba(0,0,0,0.12), 0 2px 0 rgba(255,255,255,0.8) inset`, ...style }}>{children}</div>
 );
 
-// llavero de hotel: argolla + llave de latón + tarjetita de plástico con el número de habitación (la marca del canal)
-export const KeyTag: React.FC<{ num: string | number; label?: string; w?: number; color?: string }> = ({ num, label = "HABITACIÓN", w = 260, color = CL.navy }) => {
-  const h = w * 1.42;
+// cinta métrica de albañil (marca del canal Albañil): caja amarilla con el número de capítulo + la cinta que sale con sus rayitas
+export const KeyTag: React.FC<{ num: string | number; label?: string; w?: number; color?: string }> = ({ num, label = "CAPÍTULO", w = 260, color = CL.navy }) => {
+  const h = w * 1.05, tx = w * 0.95, tl = w * 0.9;
   return (
-    <svg width={w} height={h + w * 0.55} viewBox={`0 0 ${w} ${h + w * 0.55}`} style={{ overflow: "visible" }}>
-      <defs>
-        <linearGradient id={`kb${w}`} x1="0" x2="1"><stop offset="0" stopColor={CL.brassLight} /><stop offset="0.5" stopColor={CL.brass} /><stop offset="1" stopColor="#8A6630" /></linearGradient>
-      </defs>
-      <circle cx={w / 2} cy={w * 0.16} r={w * 0.13} fill="none" stroke={`url(#kb${w})`} strokeWidth={w * 0.035} />
-      <path d={`M ${w * 0.18} ${w * 0.42} Q ${w * 0.18} ${w * 0.3} ${w * 0.3} ${w * 0.3} L ${w * 0.7} ${w * 0.3} Q ${w * 0.82} ${w * 0.3} ${w * 0.82} ${w * 0.42} L ${w * 0.82} ${w * 0.5 + h} Q ${w / 2} ${w * 0.62 + h} ${w * 0.18} ${w * 0.5 + h} Z`} fill={color} stroke="rgba(255,255,255,0.25)" strokeWidth={3} />
-      <circle cx={w / 2} cy={w * 0.4} r={w * 0.045} fill={CL.white} />
-      <text x={w / 2} y={w * 0.62} textAnchor="middle" fontFamily={LABEL} fontWeight={600} fontSize={w * 0.07} letterSpacing={w * 0.012} fill={CL.brassLight}>{label}</text>
-      <text x={w / 2} y={w * 0.62 + h * 0.48} textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize={w * 0.36} fill={CL.white}>{num}</text>
-      <rect x={w * 0.3} y={w * 0.62 + h * 0.62} width={w * 0.4} height={w * 0.012} fill={CL.brassLight} />
+    <svg width={w + tl} height={h + w * 0.5} viewBox={`0 0 ${w + tl} ${h + w * 0.5}`} style={{ overflow: "visible" }}>
+      <rect x={w * 0.6} y={h * 0.74} width={tl + w * 0.35} height={w * 0.16} fill={CL.yellow} stroke="#9A7A12" strokeWidth={2} />
+      {Array.from({ length: 16 }).map((_, i) => (<rect key={i} x={tx + i * (tl / 16)} y={h * 0.74} width={2.5} height={i % 4 === 0 ? w * 0.1 : w * 0.05} fill="#222" />))}
+      <rect x={w * 0.02} y={w * 0.04} width={w * 0.96} height={h} rx={w * 0.22} fill={CL.yellow} stroke="#9A7A12" strokeWidth={4} />
+      <rect x={w * 0.12} y={w * 0.14} width={w * 0.76} height={h - w * 0.2} rx={w * 0.16} fill={color} />
+      <rect x={w * 0.02} y={h * 0.82} width={w * 0.96} height={w * 0.22} rx={w * 0.06} fill="#3A3A3A" />
+      <text x={w / 2} y={w * 0.34} textAnchor="middle" fontFamily={LABEL} fontWeight={600} fontSize={w * 0.08} letterSpacing={w * 0.012} fill={CL.yellowSoft}>{label}</text>
+      <text x={w / 2} y={w * 0.34 + h * 0.48} textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize={w * 0.38} fill={CL.white}>{num}</text>
     </svg>
   );
 };

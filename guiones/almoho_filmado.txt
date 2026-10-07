@@ -1,0 +1,72 @@
+[HOOK|alto] No limpie ese moho. Si lo limpia, vuelve más grande.
+[HOOK|cloro] Con cloro, la mancha se va en un minuto. Y a las dos semanas está otra vez ahí, más negra que antes.
+[HOOK|marta] Esta pared es de Doña Marta. Setenta años, viuda. Ya le pagó tres veces a un pintor por esta misma pared. Tres veces la pintó, y tres veces volvió el moho.
+[HOOK|loop] Y lo que encontré detrás de su ropero, eso no lo esperaba.
+[HOOK|promesa] Hoy se la dejo limpia, y que no vuelva. Con un litro de vinagre, un cuadrado de papel aluminio, y cinco centímetros. Así estaba la pared. Y así va a quedar.
+[HOOK|cred] Soy Claudio. Treinta años de albañil, miles de paredes. Y al final le doy la prueba de cero dólares que hago antes de tocar cualquier pared. Cinco segundos. El pintor de Doña Marta no la hizo nunca.
+[HOOK|cap] Primero, de dónde viene el agua.
+[CASA|llamada] A Doña Marta la conocí por su sobrina. Me llamó un martes y me dijo: mi tía tiene una pared negra en el dormitorio, ya la pintaron tres veces, y ya no quiere gastar más. ¿Usted la puede mirar?
+[CASA|llegada] Fui ese mismo jueves. Una casa vieja, de paredes gruesas, de las que ya no se hacen. Doña Marta me abrió la puerta con el delantal puesto y me llevó directo al dormitorio. Y ahí estaba. Una mancha negra que bajaba por la esquina, desde el techo hasta el zócalo, detrás del ropero.
+[CASA|pintor] Me contó todo, sin que le preguntara. El pintor vino la primera vez en marzo. Le pasó cloro, la mancha se fue, y pintó encima. Ciento ochenta dólares. A las dos semanas, los puntitos negros otra vez. Lo llamó. Vino, otra vez cloro, otra vez pintura, y otra vez le cobró. Y la tercera vez, lo mismo.
+[CASA|plata] Más de quinientos dólares por la misma pared. Y Doña Marta durmiendo cada noche al lado de eso, tosiendo un poquito cada mañana, sin saber por qué.
+[CASA|culpa] Y le digo una cosa: no fue mala suerte. El pintor hizo lo que hace casi todo el mundo. El problema es que el moho no se arregla en la pared. Se arregla en el agua.
+[PORQUE|planta] Mire. El moho no es suciedad. Es una planta chiquitita que vive del agua. Tiene una parte que usted ve, la mancha, y una raíz que se mete adentro de la pared, que es porosa, como una esponja dura.
+[PORQUE|cloro] ¿Y qué hace el cloro? Blanquea. La mancha se va porque le saca el color, no porque mate la raíz. Y encima, el cloro es casi todo agua. Esa agua entra en la pared, y la raíz, que estaba con sed, toma. Por eso a las dos semanas vuelve, y vuelve más grande.
+[PORQUE|pintura] Y pintar encima de eso es peor. La pintura tapa la mancha, pero el moho sigue vivo atrás, comiendo, y la pared sigue mojada. Lo único que hizo el pintor fue esconderlo dos semanas.
+[PORQUE|regla] Así que la regla es ésta: antes de limpiar, hay que saber de dónde viene el agua. Si no corta el agua, el moho vuelve. Siempre.
+[ALUMINIO|que] Y para saber de dónde viene el agua, no hace falta ningún aparato. Hace falta un rollo de papel aluminio y cinta de embalar. En la ferretería le van a querer vender un medidor de humedad, o un líquido milagroso. En el Manual le dejé la frase exacta para pedir lo que sí sirve, así no le venden lo que no sirve. Es la página nueve.
+[ALUMINIO|como] Corte un cuadrado de aluminio de treinta por treinta centímetros. Péguelo sobre la mancha, con cinta por los cuatro lados, bien sellado, que no entre aire. Y no lo toque por cuarenta y ocho horas. Dos días.
+[ALUMINIO|leer] A los dos días, despéguelo y mire. Si las gotitas están del lado de afuera del aluminio, del lado de la casa, el agua viene del aire. Eso se llama condensación, y es casi siempre esto.
+[ALUMINIO|pared] Si el aluminio está mojado del lado de la pared, el agua viene de adentro del muro. Eso es otra cosa, y tiene otro arreglo. Si la mancha arranca en el zócalo, es humedad que sube del piso. Y si aparece cuando llueve, es una filtración.
+[ALUMINIO|seco] Y si está seco de los dos lados, la mancha es vieja, el agua ya no está, y alcanza con limpiar y pintar bien.
+[ALUMINIO|marta] En la casa de Doña Marta pegué el aluminio el jueves. El sábado volví, lo despegué despacito, y del lado de afuera estaba lleno de gotitas. Como un vaso de agua fría en verano. Condensación. El agua no venía de la pared. Venía del aire del dormitorio.
+[ROPERO|mover] Y ahí le pedí permiso para mover el ropero. Un ropero de madera maciza, de los que pesan como un auto. Lo corrimos entre su sobrina y yo, centímetro a centímetro.
+[ROPERO|dibujo] Y detrás, la pared tenía dibujado el ropero. En negro. La forma exacta del mueble, con el borde marcado, como si alguien lo hubiera pintado con un pincel. Ahí el aire no se movía nunca. La pared estaba fría, el vapor de la casa llegaba hasta ahí, se hacía agua, y el moho tenía todo lo que quería.
+[ROPERO|foto] Y pegada a la pared, cubierta de puntitos, había una foto. Doña Marta y su marido, Don Ernesto, el día de su casamiento. Se había caído detrás del ropero hacía más de veinte años. Ella la había buscado por toda la casa.
+[ROPERO|marta] Se quedó un rato callada, con la foto en la mano. Después me miró y me dijo: Claudio, a esta pared la arreglamos bien.
+[CAUSA|vapor] ¿Y de dónde salía tanta agua en el aire? De todo un poco. Doña Marta secaba la ropa en ese mismo dormitorio, en un tendedero, porque afuera no le daba el sol. Cocinaba con las ollas destapadas. Dormía con la ventana cerrada todo el invierno. Y una persona durmiendo, nada más respirando, suelta casi un vaso de agua por noche.
+[CAUSA|frio] Todo ese vapor anda por la casa hasta que encuentra la pared más fría. La de afuera, la que da a la sombra, la que tiene un mueble pegado. Ahí se hace agua. Y ahí aparece el moho, siempre en el mismo lugar.
+[LISTA|intro] Así que el arreglo tiene dos partes. Primero, matar el moho de verdad, sin darle agua. Y después, sacarle el agua para siempre. Lo que necesita es poco.
+[LISTA|cosas] Vinagre blanco común, de limpieza, sin diluir, en una botella con pico rociador. Un cepillo de cerdas plásticas y un trapo. Mascarilla N95, anteojos y guantes de goma. Y pintura antihongos, o un aditivo fungicida para mezclar con la pintura que usted ya tiene.
+[LISTA|mostrador] Y cuando vaya a la ferretería, pida exactamente así: Necesito un litro de vinagre blanco de limpieza, una mascarilla N95, y un litro de pintura antihongos blanca para interior. Anótela tal cual.
+[LISTA|vinagre] ¿Por qué vinagre? Porque el vinagre es un ácido suave que se mete en el poro y mata la raíz del moho, y no deja agua de más en la pared. Es barato, está en cualquier tienda, y no le quema los pulmones como el cloro.
+[PASOS|seguridad] Primer paso: protéjase. Póngase la mascarilla, los anteojos y los guantes, y abra la ventana. Cuando el moho se toca, suelta esporas, un polvito que no se ve, y no queremos que vaya a parar a sus pulmones.
+[PASOS|rociar] Segundo: rocíe vinagre puro sobre todo el moho, y un palmo más alrededor, aunque ahí no se vea nada. La raíz siempre llega más lejos que la mancha. Rocíe hasta que quede bien mojado: más o menos una taza, doscientos cuarenta mililitros, por cada metro cuadrado.
+[PASOS|esperar] Tercero: espere una hora. Sin enjuagar. El vinagre necesita ese tiempo para entrar en el poro y llegar a la raíz.
+[PASOS|cepillar] Cuarto: cepille suave, sin raspar fuerte. Si raspa fuerte, tira las esporas al aire y las siembra en otra pared. Suave, y después pase un trapo apenas húmedo, bien escurrido.
+[PASOS|secar] Quinto, y éste es el paso que el pintor nunca hizo: deje secar la pared dos días. Dos días enteros, con la ventana abierta un rato cada mañana. La pared tiene que quedar seca por dentro, no sólo por fuera.
+[PASOS|pintar] Y sexto: recién ahí, pinte. Dos manos de pintura antihongos, con cuatro horas entre una mano y la otra. La pintura antihongos trae un veneno suave para el moho, así que si vuelve a caer una espora, no prende.
+[PASOS|manual] Las medidas exactas, la taza por metro cuadrado, la hora de espera y los dos días de secado, están en la página nueve del Manual del Albañil de Claudio. El link está abajo.
+[PASOS|resumen] Repaso: aluminio cuarenta y ocho horas, vinagre puro y un palmo más, una hora, cepillo suave, dos días de secado, dos manos de antihongos.
+[NUNCA|mezcla] Y una advertencia que no es chiste: nunca mezcle el vinagre con cloro. Ni en la botella, ni en la pared, ni el mismo día. Juntos largan un gas que hace mucho daño a los pulmones. Si la semana pasada usó cloro en esa pared, enjuáguela bien con agua y espere un día antes del vinagre.
+[MARTA|trabajo] En la casa de Doña Marta hice exactamente eso. Vinagre en toda la esquina y en el dibujo del ropero, una hora, cepillo suave. La sobrina abría la ventana cada mañana. Al tercer día pinté dos manos de antihongos blanca.
+[MARTA|cambios] Pero lo más importante no fue la pintura. Fueron tres cambios en la casa. El ropero volvió a su lugar, pero separado cinco centímetros de la pared. Le puse dos tacos de madera atrás para que nadie lo empuje. El tendedero se fue al pasillo, al lado de la ventana. Y la ventana del dormitorio, abierta diez minutos cada mañana, aunque haga frío.
+[MARTA|resultado] A las dos semanas, justo cuando antes volvían los puntitos, me llamó la sobrina. Le pregunté cómo estaba la pared. Me dijo: blanca. Y mi tía ya no tose a la mañana.
+[MARTA|pintor] Y la tercera semana pasó algo que me hizo reír. El pintor la llamó a Doña Marta, para ofrecerle pintar otra vez. Ella le dijo que no hacía falta. Que ya había venido un albañil.
+[VUELVE|si] Ahora, si a usted le pasa que a la semana aparecen puntitos otra vez, no se desespere. Repita el vinagre, y busque el mueble. Siempre hay un mueble: el ropero, el sillón, la cómoda, la cama pegada a la pared. Detrás de un mueble el aire no se mueve, y la pared queda fría y mojada.
+[VUELVE|cinco] Por eso la regla de los cinco centímetros. Separe los muebles cinco centímetros de las paredes de afuera. Un puño de distancia, más o menos. Con eso el aire pasa por atrás, la pared se seca, y el moho se queda sin casa.
+[HABITO|cuatro] Y para que no vuelva nunca, cuatro costumbres. Uno: abra la ventana diez minutos cada mañana, aunque haga frío. Dos: no seque ropa adentro del cuarto. Tres: cocine con la puerta de la cocina cerrada y la ventana abierta. Y cuatro: lo mismo en el baño, ducha con la puerta cerrada y la ventana abierta.
+[HABITO|frio] Diez minutos no enfrían la casa. Las paredes guardan el calor. Lo que se va es el aire mojado, y entra aire seco. Es el arreglo más barato del mundo.
+[PRO|cuando] Y una cosa honesta. Si el moho ocupa más de un metro cuadrado, o si alguien de la casa tiene asma o problemas para respirar, no lo haga solo: llame a un profesional. Eso no es para ahorrar.
+[ERRORES|intro] Ahora, los errores que más veo con el moho. Cada uno hace que vuelva.
+[ERRORES|cloro] Uno: el cloro. Ya le expliqué: blanquea, no mata, y le da de tomar a la raíz.
+[ERRORES|encima] Dos: pintar encima del moho. Aunque sea pintura antihongos. La antihongos previene, no cura. Primero se mata, después se pinta.
+[ERRORES|raspar] Tres: raspar en seco con una espátula. Las esporas vuelan por toda la casa y al mes tiene moho en el techo del baño.
+[ERRORES|humeda] Cuatro: pintar la pared todavía húmeda. La pintura se infla, se despega, y atrás queda el agua encerrada. Dos días de secado, mínimo.
+[ERRORES|mueble] Y cinco: volver a pegar el mueble a la pared. Es el error más común de todos, y es justo lo que pasó en la casa de Doña Marta.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|manzana] ¿Sirve el vinagre de manzana? Sirve, pero el blanco de limpieza es más fuerte y no mancha.
+[QA|olor] ¿Queda olor a vinagre? Un día, con la ventana abierta. Al otro día ya no se siente.
+[QA|techo] ¿Y el moho del techo del baño? Es lo mismo, condensación de la ducha. Mismo vinagre, mismo secado, y la ventana o el extractor prendido después de bañarse.
+[QA|deshumi] ¿Me compro un deshumidificador? Ayuda, pero primero haga los cuatro hábitos. Casi siempre alcanzan.
+[QA|repetir] ¿Cada cuánto repito el vinagre? Sólo si vuelven los puntitos. Si hace las cuatro costumbres, casi nunca hace falta otra vez. En la casa de Doña Marta, no hizo falta.
+[QA|alquiler] ¿Y si alquilo? Mejor todavía. El vinagre no rompe nada y la pintura la paga en una tarde. Y si el moho es de una filtración, eso le toca al dueño: la prueba del aluminio es su prueba.
+[PRUEBA|cero] Y ahora, la prueba de cero dólares que le prometí. La que hago antes de tocar cualquier pared. Corte un pedazo de cinta de embalar, péguelo en la pintura, frótelo con la uña, y arránquelo de golpe.
+[PRUEBA|leer] Si la cinta sale limpia, la pintura vieja está bien pegada y puede pintar encima. Si sale con pintura o con polvo, no pinte encima: la pintura nueva se va a caer con la vieja. Y si sale con un polvito blanco, salado, eso es salitre: hay humedad que sube del piso, y hay que arreglar eso primero.
+[PRUEBA|marta] En la casa de Doña Marta, la cinta salió con tres capas de pintura pegadas. Las tres del pintor. Cinco segundos, y él nunca la hizo.
+[RECAP|todo] Así que, todo en treinta segundos. No limpie el moho con cloro. Primero la prueba del aluminio, cuarenta y ocho horas, para saber de dónde viene el agua. Si es condensación, vinagre puro y un palmo más, una hora, cepillo suave, dos días de secado y dos manos de antihongos. Y los muebles a cinco centímetros de la pared.
+[CTA3|regalo] Las tres pruebas que hago antes de pintar, la del aluminio, la de la moneda y la de la cinta, se las dejé anotadas en una hoja que se llama Antes de Pintar. Es gratis. Apunte el celular a este código, o toque el link de la descripción. Y si quiere los sesenta y seis arreglos de la casa, el Manual del Albañil está en esa misma página, a veintisiete dólares.
+[NEXT|arriba] Ah, y una cosa más. Ese sábado, antes de irme, Doña Marta me pidió que mirara el cuarto de arriba, el que está debajo del techo, donde dormía su nieto cuando la visitaba. Subí la escalera, abrí la puerta, y me pegó en la cara un calor de horno. Eran las seis de la tarde y el termómetro de la pared marcaba treinta y ocho grados.
+[NEXT|gancho] El nieto ya no quiere quedarse a dormir. Y Doña Marta no tiene aire acondicionado, ni piensa pagar la luz de uno. La semana que viene le muestro cómo bajamos ese cuarto sin aire acondicionado. Sin gastar luz.
+[CLOSE|pregunta] Y ahora cuénteme usted. ¿Tiene algún mueble pegado a una pared de afuera? Vaya a mirar detrás, y escríbame lo que encontró. Leo todos los comentarios.
+[CLOSE|chau] Cinco centímetros. Nos vemos la semana que viene.

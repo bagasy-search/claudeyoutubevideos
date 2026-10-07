@@ -18,12 +18,19 @@ const AMB = [
   ["amb/amb_laundry.flac", /laundry|washer|washing machine|dryer/i],
   ["amb/amb_house_birds_fridge.flac", /kitchen|kettle|soda|cola|supermarket|store shelf|cider|glass at a kitchen/i],
   ["amb/amb_bath_fan.flac", /shower head|steam|fan/i],
+  ["amb/amb_bath_tile.flac", /bathroom|shower|tiles/i],
 ];
-const AMB_BATH = "amb/amb_bath_tile.flac", AMB_SHOP = "amb/amb_indoor_generic.flac";
+const AMB_BATH = "amb/amb_suburb_birds.flac", AMB_SHOP = "amb/amb_indoor_generic.flac";
 export function ambOf(c, prompt = "") { const t = (c.name || "") + " " + prompt; for (const [f, re] of AMB) if (re.test(t)) return f; return AMB_BATH; }
 
 // ── foley por lo que se ve (primera coincidencia gana): [regex, archivos, vol, dur máx s, offset s]
 const FOLEY = [
+  // ── albañil (casa de Doña Marta)
+  [/aluminum foil|foil/i, ["foley/paper_crinkle.flac", "foley/paper_wrinkle.flac"], 0.4, 2, 0.05],
+  [/packing tape/i, ["foley/plastic_wrapper.flac", "foley/paper_crinkle.flac"], 0.42, 1.6, 0.05],
+  [/wardrobe.*(mov|push|slid|scrap)|(push|slid).*wardrobe|scraping across/i, ["foley/ceramic_scrape.flac", "foley/scrub_floor.flac"], 0.4, 2.5, 0.1],
+  [/trowel|mortar|putty knife/i, ["foley/ceramic_scrape.flac", "foley/sand_paper_b.flac"], 0.4, 2.2, 0.1],
+  [/roller|painting|paints the/i, ["foley/scrub_pad.flac", "foley/sponge_bucket.flac"], 0.3, 2.4, 0.1],
   [/valve|shut-off/i, ["foley/valve_squeak.flac", "foley/valve_shower_turn.flac"], 0.42, 2.2, 0.1],
   [/cling film|plastic wrap/i, ["foley/plastic_wrapper.flac"], 0.38, 2.2, 0.1],
   [/tearing|toilet paper from a roll|roll of toilet/i, ["foley/tp_tear_a.flac", "foley/tp_tear_b.flac", "foley/tp_roll.flac"], 0.42, 2.2, 0.1],
@@ -61,7 +68,11 @@ const WH = ["design/whoosh_air.flac", "design/whoosh_quick.flac", "design/whoosh
 function compFx(n, c, durS) {
   const P = c.props || {}, out = [];
   const add = (src, vol, at, dur) => out.push({ src, vol, at, dur });
-  if (n === "ClChapter") { add("design/whoosh_sweep_long.flac", 0.32, -0.15, 1.6); add("foley/keys_moving.flac", 0.34, 0.12, 1.2); add(P.alert ? "design/impact_echo.flac" : "design/impact_drum_subtle.flac", P.alert ? 0.2 : 0.4, 0.35, 1.8); }
+  if (n === "ClChapter") { add("design/whoosh_sweep_long.flac", 0.32, -0.15, 1.6); add("foley/cutter_extend.flac", 0.34, 0.12, 1.2); add(P.alert ? "design/impact_echo.flac" : "design/impact_drum_subtle.flac", P.alert ? 0.2 : 0.4, 0.35, 1.8); }
+  if (n === "ClFoilTest") { add("foley/paper_crinkle.flac", 0.36, 0.4, 1.4); add("foley/paper_wrinkle.flac", 0.34, Math.min(durS - 1, 1.9), 1.4); }
+  if (n === "ClTapeTest") { add("foley/plastic_wrapper.flac", 0.34, 0.3, 1); add("foley/ceramic_scrape.flac", 0.26, 0.8, 0.6); add("design/impact_drum_subtle.flac", 0.36, 1.47, 1.2); }
+  if (n === "ClHouseMap") { add("design/pencil_strokes.flac", 0.32, 0.3, 1.8); }
+  if (n === "ClWardrobeGap") { add("foley/ceramic_scrape.flac", 0.36, durS * 0.42, 1.6); }
   if (/3D$/.test(n)) add("design/swell_wind.flac", 0.24, 0, Math.min(durS, 5));
   if (n === "ClBowl3D") {
     if (P.mode === "layers") { const k = 6; for (let i = 0; i < k; i++) add("foley/drip_sink.flac", 0.26, 0.4 + i * (durS * 0.75) / k, 1.2); add("design/impact_heartbeat.flac", 0.36, durS * 0.72, 2.2); }
