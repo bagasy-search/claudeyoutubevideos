@@ -68,6 +68,11 @@ Mejores propios: "Build This Amish Water Pump That Runs Forever on No Power ($40
 - La de siempre del avatar (Fish clonada de él). Inglés americano, directo, sin vender miedo. Trato: "you".
 
 ## 4. LOOK
+- **Hank = el hombre de la foto de perfil del canal** (yt3.googleusercontent.com/fVTK7QUEJ3_…): barba gris larga,
+  pelo gris largo, ojos celestes, camisa escocesa de franela gastada, sótano/taller de bloques con caños.
+  Problema detectado 2026-10-07: las miniaturas mostraban hombres distintos (Amish con sombrero de paja y
+  tiradores; otro afeitado en la de termitas). Desde ahora, la MISMA cara en avatar y en TODAS las miniaturas;
+  nada de sombrero de paja ni tiradores (eso es el marco Amish).
 - El avatar de siempre. Se mantienen nombre y handle "The Old House Fix"; la descripción actual sirve, sumando
   la presentación de Hank. Los videos Amish quedan públicos (los de la bomba traen vistas); solo deja de usarse ese marco.
 
