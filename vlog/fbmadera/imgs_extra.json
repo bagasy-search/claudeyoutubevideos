@@ -1,0 +1,22 @@
+[
+ {
+  "name": "b_postgray",
+  "prompt": "A weathered gray pine fence post standing in garden soil, its base cracked, dry and starting to go dark and soft, sunny backyard with a wire fence."
+ },
+ {
+  "name": "b_crust",
+  "prompt": "Close view of a pine post on a workbench: the left half has a lumpy thick crust of brown wax sitting on top of the wood, the right half is smoothly soaked dark into the grain, a paintbrush lying on the line between them."
+ },
+ {
+  "name": "b_linseed",
+  "prompt": "A metal can of boiled linseed oil with a plain label next to grated white wax in a tin can on a garden bench, tomato plants behind."
+ },
+ {
+  "name": "b_gravelhole",
+  "prompt": "Top view into a freshly dug post hole in garden soil with a layer of crushed gravel at the bottom, a dark waxed pine post being lowered in."
+ },
+ {
+  "name": "b_twotones",
+  "prompt": "Two pine boards side by side on a workbench, the left one coated with a dark walnut-brown waxy oil finish, the right one with a light honey-colored waxy finish, a paintbrush between them."
+ }
+]
