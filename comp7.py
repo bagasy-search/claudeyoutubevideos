@@ -70,15 +70,26 @@ class Cv:
         s.d.ellipse([X - R, Y - R, X + R, Y + R], fill=s.col(c, a) if c is not None else None, outline=s.col(outline, a) if outline else None, width=int(s.px(ow)) if ow else 0)
     def text(s, t, x, y, size, f="reg", c=INK, a=1.0, anchor="la", spacing=1.2, track=0):
         if a <= 0 or not t: return
+        if a < 0.995:                                                    # PIL IGNORA el alfa del texto (sale opaco): máscara aparte y pegado con alfa
+            d0 = s.d; m = Image.new("L", s.im.size, 0); s.d = ImageDraw.Draw(m)
+            try: s._text(t, x, y, size, f, (255, 255, 255), 1.0, anchor, spacing, track, mono=True)
+            finally: s.d = d0
+            bb = m.getbbox()
+            if bb:
+                mc = m.crop(bb).point(lambda v: int(v * a)); s.im.paste(Image.new("RGB", mc.size, tuple(c[:3])), bb[:2], mc)
+            return
+        s._text(t, x, y, size, f, c, a, anchor, spacing, track)
+    def _text(s, t, x, y, size, f, c, a, anchor, spacing, track, mono=False):
+        fill = 255 if mono else s.col(c, a)
         fo = F(f, size, s.k)
         if track:
             X, Y = s.P(x, y); tw = sum(s.d.textlength(ch, font=fo) + s.px(track) for ch in t) - s.px(track)
             if anchor[0] == "m": X -= tw / 2
             elif anchor[0] == "r": X -= tw
-            for ch in t: s.d.text((X, Y), ch, font=fo, fill=s.col(c, a), anchor="l" + anchor[1]); X += s.d.textlength(ch, font=fo) + s.px(track)
+            for ch in t: s.d.text((X, Y), ch, font=fo, fill=fill, anchor="l" + anchor[1]); X += s.d.textlength(ch, font=fo) + s.px(track)
             return
-        s.d.multiline_text(s.P(x, y), t, font=fo, fill=s.col(c, a), anchor=anchor, spacing=s.px(size) * (spacing - 1)) if "\n" in t else \
-            s.d.text(s.P(x, y), t, font=fo, fill=s.col(c, a), anchor=anchor)
+        if chr(10) in t: s.d.multiline_text(s.P(x, y), t, font=fo, fill=fill, anchor=anchor, spacing=s.px(size) * (spacing - 1))
+        else: s.d.text(s.P(x, y), t, font=fo, fill=fill, anchor=anchor)
     def tw(s, t, size, f="reg"): return s.d.textlength(t, font=F(f, size, s.k)) / s.w
     def wrap(s, t, size, f, maxw):
         out, cur = [], ""

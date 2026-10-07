@@ -58,6 +58,8 @@ def overlays(img, t):
         import comp7
         for _w in sh.get("wk") or []:
             if _w[1] == "__sello": sh["_sello_t"] = _w[0]
+        if sh.get("v8"):
+            import comp8; return comp8.overlays(img, t, sh, DUR)
         return comp7.overlays(img, t, sh, DUR)
     if sh.get("rotulo"):
         if "rot" not in _OV: _OV["rot"] = _plaque(*sh["rotulo"])
@@ -165,10 +167,17 @@ def apply_fx(img, t, i, u, fx, fgbox=None, P=None, rays=None):
 def r_clip():
     src = f"{M}/clips/{sh.get('clipsrc', sid)}.mp4"
     raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(sh.get("ss", 0)), "-i", src, "-vf", f"scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
-    fr = np.frombuffer(raw, np.uint8).reshape(-1, H, W, 3); n = len(fr); p = writer()
+    fr = np.frombuffer(raw, np.uint8).reshape(-1, H, W, 3); n = len(fr); MX = sh.get("maxs", 99)
+    b2 = f"{M}/clips/{sh.get('clipsrc', sid)}__b.mp4"
+    if sh.get("v8") and os.path.exists(b2):                      # v2: continuación encadenada (clip B nace del último cuadro usado de A)
+        lim0 = min(n, int(MX * 30))
+        rb = subprocess.run(["ffmpeg", "-v", "error", "-i", b2, "-vf", f"scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
+        fb = np.frombuffer(rb, np.uint8).reshape(-1, H, W, 3)
+        fr = np.concatenate([fr[:lim0], fb[1:]]); n = len(fr); MX = 99
+    p = writer()
     for i in range(N):
         t = i / FPS
-        lim = int(sh.get("maxs", 99) * 30)
+        lim = int(MX * 30)
         k = min(n - 1, lim, int(t * 30) if sh.get("real") else int((i // 2) * 2 * 30 / FPS))   # archivo real: velocidad normal; agnes: "en dos"
         img = fr[k].astype(np.float32) / 255
         hold = max(0, t - (min(n, lim) - 1) / 30)                               # si el momento es más largo, empuje lento sobre el último cuadro
@@ -382,6 +391,10 @@ if __name__ == "__main__":
              "reloj": comp5.r_reloj, "gota": comp5.r_gota, "split": comp5.r_split, "tipos": comp5.r_tipos, "potencias": comp5.r_potencias, "cables": comp5.r_cables,
              "fotomaqueta": comp5.r_fotomaqueta, "eras": comp5.r_eras, "revela": comp5.r_revela, "lamina_ov": comp5.r_lamina_ov,
              **{n: getattr(comp6, "r_" + n) for n in ("tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia")}}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
+            p.stdin.close(); p.wait()
+        elif sh.get("v8") and k in ("perfil", "mapa", "cabina", "registro", "squawk", "capitulo7", "cita", "lista", "numero", "montana", "cajas", "foto", "still"):
+            import comp8; p = writer()                                   # Caja Naranja v2: la data dentro del mundo (placas, sombras, tipografía grande)
+            comp8.R8[k](sh, sid, DUR, lambda im: put(p, im))
             p.stdin.close(); p.wait()
         elif k in ("perfil", "mapa", "cabina", "registro", "squawk", "capitulo7", "cita", "lista", "numero", "montana", "cajas"):
             import comp7; p = writer()
