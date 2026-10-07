@@ -34,7 +34,8 @@ shots.forEach((s, i) => {
     else { c.k = "img"; c.img = imgOf(s.name); fallback.push(s.name); }
   } else if (s.kind === "kf") {
     const p = `vid/${SLUG}/${s.name}.mp4`;
-    if (ex(p)) { c.src = p; c.sf = 0; c.clipF = nFr(p); const fo = `vid/${SLUG}/${s.name}_foley.m4a`; if (ex(fo)) foley.push({ from: f0, dur: Math.min(c.dur, c.clipF), src: fo });  }
+    if (ex(p)) { c.k = "img"; c.img = imgOf(s.name); c.clip = p; c.clipF = nFr(p) - 1; c.kfc = 1; // kf = clip + su último cuadro si el plano es más largo (nunca congelado ni más largo que el clip)
+       const fo = `vid/${SLUG}/${s.name}_foley.m4a`; if (ex(fo)) foley.push({ from: f0, dur: Math.min(c.dur, c.clipF), src: fo });  }
     else { c.k = "img"; c.img = imgOf(s.name); c.fallback = s.name; if (!ACEPT.has(s.name)) fallback.push(s.name); if (!c.img) warn.push(`sin foto base ${s.name}`); }
   } else if (s.kind === "bi" || s.kind === "cl") {
     const st = `broll/${SLUG}_st/${s.name}.mp4`, ag = `broll/${SLUG}/${s.name}.mp4`;

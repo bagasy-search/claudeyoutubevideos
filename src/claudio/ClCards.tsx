@@ -104,7 +104,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
   );
 };
 
-export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; bed?: string }> = ({ qr, cover, text = "apunte la cámara del celular acá", bed }) => {
+export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; kicker?: string; bed?: string }> = ({ qr, cover, text = "apunte la cámara del celular acá", kicker = "ARREGLO COMPLETO · GRATIS", bed }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2), pc = pop(f, fps, 10), w = lin(f, 18, 36);
   return (
@@ -117,7 +117,7 @@ export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; bed
       ) : null}
       <div style={{ position: "absolute", right: 200, top: 140, opacity: out, translate: `0 ${(1 - p) * 90}px`, rotate: "2deg" }}>
         <Card style={{ padding: "40px 46px 30px", width: 580, textAlign: "center", borderTop: `16px solid ${CL.navy}` }}>
-          <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: CL.brass, marginBottom: 14 }}>ARREGLO COMPLETO · GRATIS</div>
+          <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: CL.brass, marginBottom: 14 }}>{kicker}</div>
           <div style={{ background: "#fff", padding: 16, borderRadius: 12, border: `3px solid ${CL.grout}` }}>
             <Img src={staticFile(qr)} style={{ width: 440, height: 440, display: "block", margin: "0 auto", imageRendering: "pixelated" }} />
           </div>

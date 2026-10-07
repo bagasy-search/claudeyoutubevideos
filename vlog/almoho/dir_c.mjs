@@ -19,7 +19,7 @@ export const SHOTS = [
   S(48, "", "bi", "st_openwindow", { q: "opening window morning", p: BI("A person opening a window in the morning, fresh air moving the curtain.") }),
   C(48, "Lo que se va es el aire mojado", "ClHygrometer", { peak: 76, end: 50 }),
   // ── cuándo llamar
-  S(49, "", "bi", "b_bigmold", { p: BI("A whole bedroom wall of an old house covered in large black mold patches from floor to ceiling, far more than one square meter.") , ov: { c: "ClChip", props: { text: "+1 m²", alert: true } } }),
+  S(49, "", "bi", "b_bigmold", { q: "black mold wall", p: BI("A whole bedroom wall of an old house covered in large black mold patches from floor to ceiling, far more than one square meter.") , ov: { c: "ClChip", props: { text: "+1 m²", alert: true } } }),
   S(49, "alguien de la casa tiene asma", "bi", "st_inhaler", { q: "asthma inhaler", p: BI("An older person holding an asthma inhaler at home.") }),
   S(49, "Eso no es para ahorrar", "av", ""),
   // ── errores
@@ -28,8 +28,8 @@ export const SHOTS = [
   S(52, "", "bi", "b_paintonmold", { p: BI("A paint brush painting white paint directly over fuzzy black mold on a wall, the mold smearing gray into the paint.") , ov: { c: "ClChip", props: { text: "Error 2", alert: true } } }),
   S(52, "Primero se mata, después se pinta", "av", ""),
   S(53, "", "kf", "k_scrape", { p: BI("Close view of a steel putty knife scraping dry black mold off a plaster wall, dark dust puffing into the air.") , d1: "the putty knife scrapes the dry moldy wall", d2: "a puff of dark dust rises into the air from the wall", sound: "a dry metal scrape on plaster" , ov: { c: "ClChip", props: { text: "Error 3", alert: true } } }),
-  S(53, "al mes tiene moho en el techo del baño", "bi", "b_bathceiling", { p: BI("The white ceiling of a small bathroom above the shower with spreading black mold spots.") }),
-  S(54, "", "bi", "b_bubbles", { p: BI("Close view of fresh paint on a plaster wall bubbling and peeling in blisters, damp underneath.") , ov: { c: "ClChip", props: { text: "Error 4", alert: true } } }),
+  S(53, "al mes tiene moho en el techo del baño", "bi", "b_bathceiling", { q: "mold ceiling", p: BI("The white ceiling of a small bathroom above the shower with spreading black mold spots.") }),
+  S(54, "", "bi", "b_bubbles", { q: "peeling paint wall", p: BI("Close view of fresh paint on a plaster wall bubbling and peeling in blisters, damp underneath.") , ov: { c: "ClChip", props: { text: "Error 4", alert: true } } }),
   S(55, "", "bi", "b_pushback", { p: BI(`Two people pushing ${WARD} back tight against a freshly painted white wall.`) , ov: { c: "ClChip", props: { text: "Error 5", alert: true } } }),
   S(55, "es justo lo que pasó en la casa de Doña Marta", "av", ""),
   // ── preguntas
@@ -43,7 +43,7 @@ export const SHOTS = [
   S(62, "la prueba del aluminio es su prueba", "av", ""),
   // ── la prueba de $0
   S(63, "", "av", ""),
-  S(63, "Corte un pedazo de cinta de embalar", "bi", "b_tapecut", { p: BI(`Close view of ${H} tearing a strip of brown packing tape off its roll in front of a painted wall.`) }),
+  S(63, "Corte un pedazo de cinta de embalar", "bi", "b_tapecut", { q: "packing tape roll", p: BI(`Close view of ${H} tearing a strip of brown packing tape off its roll in front of a painted wall.`) }),
   C(63, "frótelo con la uña", "ClTapeTest", { result: "paint" }),
   C(64, "", "ClTapeTest", { result: "clean" }),
   C(64, "Y si sale con un polvito blanco", "ClTapeTest", { result: "salt" }),
@@ -57,12 +57,12 @@ export const SHOTS = [
   S(67, "la de la moneda", "bi", "b_coin", { p: BI(`Close view of ${H} pushing the edge of a coin into a thin diagonal crack in a painted plaster wall.`) }),
   S(67, "y la de la cinta", "bi", "b_tapestrip", { p: BI(`A strip of brown packing tape stuck on a painted wall with one end lifted, ready to be pulled.`) }),
   S(67, "Antes de Pintar", "av", ""),
-  C(67, "Es gratis", "ClQRCard", { qr: I + "qr.jpg", cover: I + "gift_cover.jpg", text: "Antes de Pintar · las 3 pruebas, gratis" }),
-  C(67, "el Manual del Albañil está en esa misma página", "ClQRCard", { qr: I + "qr.jpg", cover: I + "book_cover.jpg", text: "El Manual completo · US$27" }),
+  C(67, "Es gratis", "ClQRCard", { qr: I + "qr.jpg", cover: I + "gift_cover.jpg", text: "las 3 pruebas, gratis", kicker: "REGALO · ANTES DE PINTAR" }),
+  C(67, "el Manual del Albañil está en esa misma página", "ClQRCard", { qr: I + "qr.jpg", cover: I + "book_cover.jpg", text: "los 66 arreglos", kicker: "EL MANUAL · US$27" }),
   // ── el cuarto de arriba (gancho al episodio 2)
   S(68, "", "av", ""),
   C(68, "el que está debajo del techo", "ClHouseMap", { done: ["dormitorio"], next: "arriba" }),
-  S(68, "Subí la escalera", "bi", "b_stairs", { p: BI("A narrow old concrete staircase with an iron handrail going up to a small door on the upper floor of an old house, harsh afternoon light from above.") }),
+  S(68, "Subí la escalera", "bi", "b_stairs", { q: "old staircase", p: BI("A narrow old concrete staircase with an iron handrail going up to a small door on the upper floor of an old house, harsh afternoon light from above.") }),
   S(68, "me pegó en la cara un calor de horno", "cl", "c_heat", { p: CLP(`He stands in the doorway of ${UP}, the air hazy with heat, wiping sweat from his forehead with the back of his hand, grimacing.`) }),
   S(68, "el termómetro de la pared marcaba treinta y ocho grados", "bi", "b_thermo", { p: BI(`An old round wall thermometer hanging on a bare plastered wall of ${UP}, its needle near the top in the red zone, harsh late afternoon sun on the wall.`), ov: { c: "ClChip", props: { text: "38 °C", alert: true } } }),
   S(69, "", "bi", "b_emptybed", { p: BI(`The narrow empty single bed of ${UP} with a folded blanket and a child's backpack on it, a small fan on the floor, the afternoon light harsh and hot.`) }),
