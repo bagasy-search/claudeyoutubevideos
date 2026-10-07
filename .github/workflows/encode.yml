@@ -71,7 +71,7 @@ jobs:
           for k in $(seq 0 $((N-1))); do curl -sfL -o tramo_$k.mp4 "https://github.com/${{ github.repository }}/releases/download/$SLUG/tramo_$k.mp4"; echo "file 'tramo_$k.mp4'" >> list.txt; done
           curl -sfL -o mezcla.wav "https://github.com/${{ github.repository }}/releases/download/$SLUG/mezcla.wav"
           ffmpeg -v error -y -f concat -safe 0 -i list.txt -i mezcla.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -ar 48000 -ac 2 -t $(python3 -c "print($TOT/30)") -movflags +faststart $SLUG.mp4
-          C=$(ffprobe -v error -count_packets -select_streams v -show_entries stream=nb_read_packets -of csv=p=0 $SLUG.mp4); echo "cuadros $C / $TOT"
+          C=$(ffprobe -v error -count_packets -select_streams v -show_entries stream=nb_read_packets -of csv=p=0 $SLUG.mp4 | tr -d ", "); echo "cuadros $C / $TOT"
           test "$C" = "$TOT" || { echo "⛔ cuadros != TOTAL"; exit 1; }
           gh release view "$SLUG" -R ${{ github.repository }} >/dev/null 2>&1 || gh release create "$SLUG" -R ${{ github.repository }} --title "$SLUG" --notes "$SLUG"
           for n in 1 2 3 4 5; do gh release upload "$SLUG" $SLUG.mp4 -R ${{ github.repository }} --clobber && break; sleep $((n*10)); done
