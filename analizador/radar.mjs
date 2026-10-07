@@ -343,7 +343,79 @@ function cmdScore() {
   }
 }
 
+// ── saturation: para cada cluster (formato concreto) mide oferta y tasa de éxito de canales NUEVOS ──
+// Busca cada query 2 veces (orden por vistas + relevancia, ventana mes) para ver ganadores Y perdedores,
+// baja la ficha de TODOS los canales que publican y calcula: cuántos publican, cuántos son nuevos (<180d),
+// qué % de los nuevos tiene un video ≥100k en 30 días, y los ejemplos concretos.
+async function cmdSaturation(only) {
+  const clusters = Object.entries(CFG.clusters || {}).filter(([k]) => !only.length || only.includes(k));
+  const sat = readJ("saturation_videos.json", {});
+  const jobs = [];
+  for (const [k, c] of clusters) for (const q of c.q) for (const sp of ["CAMSBAgEEAE%3D", "EgQIBBAB"]) jobs.push({ k, q, sp });
+  console.error(`saturation: ${clusters.length} clusters, ${jobs.length} búsquedas`);
+  await pool(jobs, async ({ k, q, sp }) => {
+    const h = await get(`https://www.youtube.com/results?search_query=${encodeURIComponent(q)}&sp=${sp}`);
+    if (!h) return;
+    const ver = h.match(/"INNERTUBE_CLIENT_VERSION":"([^"]+)"/)?.[1] || "2.20261006.01.00";
+    let { out, cont } = videosFromSearch(jsonAfter(h, "var ytInitialData = "));
+    for (let p = 1; p < 3 && cont; p++) {
+      const d = await post("search", { continuation: cont }, ver);
+      if (!d) break;
+      const r = videosFromSearch(d);
+      out = out.concat(r.out);
+      cont = r.cont;
+    }
+    const m = (sat[k] ||= {});
+    for (const v of out) if (v.channelId && isEnglishish(v.title)) m[v.id] = v;
+  });
+  writeJ("saturation_videos.json", sat);
+  const chans = readJ("channels.json", {});
+  const need = [...new Set(Object.values(sat).flatMap((m) => Object.values(m).map((v) => v.channelId)))].filter((id) => !chans[id]);
+  console.error(`saturation: ${need.length} canales nuevos a bajar`);
+  let n = 0;
+  await pool(need, async (id) => {
+    const c = await channelInfo(id);
+    if (c) chans[id] = JSON.parse(JSON.stringify(c));
+    if (++n % 50 === 0) writeJ("channels.json", chans);
+  });
+  writeJ("channels.json", chans);
+
+  const rep = [];
+  for (const [k, c] of Object.entries(CFG.clusters)) {
+    const vids = Object.values(sat[k] || {}).filter((v) => v.ageDays != null && v.ageDays <= 31);
+    if (!vids.length) continue;
+    const byCh = {};
+    for (const v of vids) (byCh[v.channelId] ||= []).push(v);
+    const rows = Object.entries(byCh).map(([id, vs]) => {
+      const ch = chans[id] || {};
+      const own = (ch.videos || []).filter((v) => v.ageDays != null && v.ageDays <= 30);
+      const all = [...vs, ...own];
+      const best = all.sort((a, b) => b.views - a.views)[0];
+      const best14 = all.filter((v) => v.ageDays <= 14).sort((a, b) => b.views - a.views)[0] || null;
+      return { id, name: ch.name || vs[0].channel, handle: ch.handle || vs[0].handle, joined: ch.joined, ageDays: ch.ageDays ?? null, subs: ch.subs ?? null, nVideos: ch.nVideos ?? null, best, best14 };
+    });
+    const nuevos = rows.filter((r) => r.ageDays != null && r.ageDays <= 180);
+    const hit = (r) => (r.best?.views || 0) >= 100000;
+    const ganadores = nuevos.filter(hit).sort((a, b) => (b.best14?.views || 0) - (a.best14?.views || 0) || b.best.views - a.best.views);
+    const views = vids.map((v) => v.views).sort((a, b) => a - b);
+    rep.push({
+      cluster: k, desc: c.desc,
+      canalesPublicando: rows.length, nuevos: nuevos.length, nuevosConHit: ganadores.length,
+      tasaExitoNuevos: nuevos.length ? +(ganadores.length / nuevos.length).toFixed(2) : 0,
+      videosMes: vids.length, medianaVistas: views[Math.floor(views.length / 2)],
+      pctVideos100k: +(vids.filter((v) => v.views >= 100000).length / vids.length).toFixed(2),
+      viejosConHit: rows.filter((r) => (r.ageDays ?? 0) > 180 && hit(r)).length,
+      ganadores: ganadores.slice(0, 8).map((r) => ({ name: r.name, handle: r.handle, joined: r.joined, ageDays: r.ageDays, subs: r.subs, nVideos: r.nVideos, best: r.best && { id: r.best.id, title: r.best.title, views: r.best.views, ageDays: r.best.ageDays, len: r.best.len }, best14: r.best14 && { id: r.best14.id, title: r.best14.title, views: r.best14.views, ageDays: r.best14.ageDays } })),
+    });
+  }
+  writeJ("saturation_report.json", rep);
+  for (const r of rep.sort((a, b) => b.tasaExitoNuevos - a.tasaExitoNuevos)) {
+    const g = r.ganadores[0];
+    console.log(`${r.cluster.padEnd(32)} canales ${String(r.canalesPublicando).padStart(3)} | nuevos ${String(r.nuevosConHit).padStart(2)}/${String(r.nuevos).padStart(3)} hit (${Math.round(r.tasaExitoNuevos * 100)}%) | mediana ${r.medianaVistas} | ${g ? `${g.handle} ${g.ageDays}d ${g.best14 ? `${g.best14.views} en ${g.best14.ageDays}d` : `${g.best.views} en ${g.best.ageDays}d`}` : "-"}`);
+  }
+}
+
 const [cmd, ...rest] = process.argv.slice(2);
-const cmds = { search: () => cmdSearch(rest), channels: cmdChannels, snowball: cmdSnowball, snapshot: cmdSnapshot, score: cmdScore };
+const cmds = { saturation: () => cmdSaturation(rest), search: () => cmdSearch(rest), channels: cmdChannels, snowball: cmdSnowball, snapshot: cmdSnapshot, score: cmdScore };
 if (!cmds[cmd]) { console.error("uso: node analizador/radar.mjs search|channels|snowball|snapshot|score"); process.exit(1); }
 await cmds[cmd]();

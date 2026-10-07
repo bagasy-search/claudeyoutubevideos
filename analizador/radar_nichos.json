@@ -571,5 +571,233 @@
   "motivacion": 6,
   "idiomas_educacion": 6,
   "oficios_camioneros": 6
+ },
+ "clusters": {
+  "senior_dinero_seguridad_social": {
+   "desc": "Seniors + Social Security/deadlines/dinero (avatar asesor)",
+   "q": [
+    "social security seniors must know",
+    "seniors deadline october social security",
+    "born before 1966 social security",
+    "seniors 65+ bills cut",
+    "seniors money mistakes retirement 2026"
+   ]
+  },
+  "senior_viajes_aerolineas": {
+   "desc": "Secretos de aeropuertos/aerol\u00edneas para mayores",
+   "q": [
+    "flight attendants seniors secrets",
+    "airport tips for seniors",
+    "seniors flying rules 2026",
+    "free airline perks over 60"
+   ]
+  },
+  "senior_cocina_slowcooker": {
+   "desc": "Recetas f\u00e1ciles para seniors / cocinar para uno",
+   "q": [
+    "slow cooker meals for seniors",
+    "cooking for one seniors",
+    "easy dinners for seniors",
+    "dump and go crockpot seniors"
+   ]
+  },
+  "senior_moda_mujer60": {
+   "desc": "Estilo para mujeres 60+",
+   "q": [
+    "outfits women over 60",
+    "style mistakes aging women over 60",
+    "what to wear over 60",
+    "hairstyles women over 60"
+   ]
+  },
+  "western_ficcion_cowboy": {
+   "desc": "Historias narradas de cowboys/viudas (ficci\u00f3n western)",
+   "q": [
+    "millionaire cowboy widow story",
+    "cowboy story widow rancher",
+    "western story old widow outlaws",
+    "lonely cowboy story full"
+   ]
+  },
+  "far_west_historia_listas": {
+   "desc": "Listas 'c\u00f3mo era realmente el Far West'",
+   "q": [
+    "things wild west actually had",
+    "brutal truths wild west",
+    "what cowboys actually faced",
+    "pioneers oregon trail hardships"
+   ]
+  },
+  "outlaws_biografias": {
+   "desc": "Biograf\u00edas de pistoleros/forajidos",
+   "q": [
+    "most dangerous outlaw wild west",
+    "gunslinger history documentary",
+    "tombstone outlaw story",
+    "wild west lawman legend"
+   ]
+  },
+  "aviacion_historia_porque": {
+   "desc": "'Why did X plane have...' historia aeron\u00e1utica",
+   "q": [
+    "why did this plane have",
+    "why the b-52 still flies",
+    "forgotten aircraft history",
+    "why did the f-14"
+   ]
+  },
+  "ww2_historias_soldados": {
+   "desc": "Historias de soldados/batallas WW2 (narrativa)",
+   "q": [
+    "what german soldiers said about american",
+    "ww2 battle that was completely avoidable",
+    "ww2 soldiers untold story",
+    "german prisoners american soldiers"
+   ]
+  },
+  "barcos_guerra_ingenieria": {
+   "desc": "Ingenier\u00eda naval/militar ('incredible engineering of')",
+   "q": [
+    "incredible engineering of the battleship",
+    "why can't we reactivate battleship",
+    "aircraft carrier history explained",
+    "submarine engineering history"
+   ]
+  },
+  "roma_vida_soldados": {
+   "desc": "Vida cotidiana de soldados romanos / 'why it sucked to be'",
+   "q": [
+    "roman soldier daily life",
+    "how roman soldiers survived",
+    "why it sucked to be",
+    "what did romans actually do all day"
+   ]
+  },
+  "hollywood_then_now": {
+   "desc": "Elencos 'then and now' / estrellas cl\u00e1sicas",
+   "q": [
+    "cast then and now 2026",
+    "who's still alive cast then and now",
+    "classic tv stars then and now",
+    "old hollywood stars tragic"
+   ]
+  },
+  "objetos_viejos_valor": {
+   "desc": "'Tus cosas viejas valen plata' (herramientas, botellas, coleccionables)",
+   "q": [
+    "old tools worth money",
+    "items in your basement worth money",
+    "old things worth a lot of money",
+    "is your old worth money"
+   ]
+  },
+  "metodo_japones_hogar": {
+   "desc": "'El m\u00e9todo japon\u00e9s' hogar/orden/blackout (el nuevo 'Amish way')",
+   "q": [
+    "japanese decluttering lessons",
+    "japanese homes grid fails",
+    "japanese cleaning tricks",
+    "japanese habits americans get wrong"
+   ]
+  },
+  "marcas_americanas_perdidas": {
+   "desc": "Marcas/cadenas/f\u00e1bricas americanas que desaparecieron",
+   "q": [
+    "american companies that vanished",
+    "why nobody eats at anymore",
+    "restaurant chain disappeared",
+    "american products that lasted 50 years"
+   ]
+  },
+  "apalaches_abuelos_saberes": {
+   "desc": "Saberes de abuelos de los Apalaches / granjas viejas",
+   "q": [
+    "appalachian grandfathers",
+    "forgotten appalachian tricks",
+    "old american barns",
+    "farm kids 1960s"
+   ]
+  },
+  "secretos_oficios_bicarbonato": {
+   "desc": "'Cosas que los [oficio] no quieren que sepas'",
+   "q": [
+    "things plumbers don't want you to know",
+    "things landscapers don't want you to know",
+    "things mechanics don't want you to know",
+    "baking soda things repairmen"
+   ]
+  },
+  "cold_case_estado_anio": {
+   "desc": "Cold cases resueltos (formato ESTADO A\u00d1O)",
+   "q": [
+    "cold case solved after years",
+    "texas cold case solved",
+    "cold case finally solved dna",
+    "1970s cold case solved"
+   ]
+  },
+  "hoa_venganza": {
+   "desc": "CONTROL saturado: HOA Karen stories",
+   "q": [
+    "hoa karen story",
+    "hoa revenge story",
+    "hoa tried to",
+    "hoa president story"
+   ]
+  },
+  "amish_offgrid": {
+   "desc": "CONTROL: el nicho actual de oldhousefix",
+   "q": [
+    "amish secret",
+    "amish trick no electricity",
+    "old amish way",
+    "grandpa off grid trick"
+   ]
+  },
+  "doctor_seniors_salud": {
+   "desc": "CONTROL saturado: doctor avatar 60+",
+   "q": [
+    "doctor warns seniors over 60",
+    "cardiologist warns morning",
+    "over 60 eat this",
+    "after 70 never do"
+   ]
+  },
+  "fabrica_cuernos_lujo": {
+   "desc": "CONTROL: Inside the factory (cuerno brahman)",
+   "q": [
+    "inside the factory brahman bull horn",
+    "inside the factory how luxury",
+    "inside factory process making",
+    "how it's made factory luxury leather"
+   ]
+  },
+  "tech_nueva_invencion": {
+   "desc": "'America's new invention could replace X forever'",
+   "q": [
+    "america's new invention could replace",
+    "canada's new invention",
+    "china's new invention shocking",
+    "new invention could make obsolete"
+   ]
+  },
+  "biblia_enoch_ia": {
+   "desc": "Book of Enoch / Grok AI / arqueolog\u00eda b\u00edblica",
+   "q": [
+    "book of enoch reveals",
+    "grok ai bible",
+    "ethiopian bible jesus",
+    "archaeologists bible discovery"
+   ]
+  },
+  "rescate_animales_historias": {
+   "desc": "Historias de rescates de perros (narradas)",
+   "q": [
+    "stray dog rescue story",
+    "dog begged for help",
+    "abandoned dog rescue",
+    "mother dog rescued puppies"
+   ]
+  }
  }
 }
