@@ -69,3 +69,6 @@ _v3probe/
 factory/_state/
 factory/_dry/
 .pubprune/
+
+# radar de subnichos: cache crudo (pesado); el informe final se copia a analizador/radar_report.json
+analizador/cache/radar/

@@ -1,0 +1,575 @@
+{
+ "_comment": "Hip\u00f3tesis de subnicho para radar.mjs (EN, long-form). cpm = RPM estimado USD (orden de magnitud, no dato).",
+ "nichos": {
+  "salud_60plus": [
+   "seniors over 60 should never",
+   "after 70 do this every morning",
+   "vitamins seniors over 65",
+   "elderly leg weakness",
+   "what happens to your body after 60"
+  ],
+  "suenio_salud": [
+   "why you wake up at 3am",
+   "best sleeping position seniors",
+   "stop waking up at night to pee",
+   "sleep doctor explains"
+  ],
+  "nutricion_alimentos": [
+   "foods you should never eat after 60",
+   "eat this before bed",
+   "healthiest food on earth",
+   "doctor reveals worst foods"
+  ],
+  "remedios_caseros": [
+   "home remedy grandma",
+   "natural remedy doctors",
+   "clove and garlic remedy",
+   "old remedy that works better than medicine"
+  ],
+  "longevidad_cientificos": [
+   "longevity scientist reveals",
+   "japanese longevity secret",
+   "100 year old secret",
+   "blue zones diet"
+  ],
+  "cerebro_memoria": [
+   "prevent dementia seniors",
+   "brain doctor warns",
+   "memory loss early signs",
+   "neurologist explains"
+  ],
+  "psicologia_estoicismo": [
+   "stoic lessons",
+   "stoicism daily habits",
+   "marcus aurelius lessons",
+   "dark psychology tricks"
+  ],
+  "psicologia_vejez": [
+   "lessons i learned at 80",
+   "regrets of the dying",
+   "things people realize too late",
+   "old age advice life lessons"
+  ],
+  "relaciones_familia": [
+   "adult children disrespect parents",
+   "estranged adult children",
+   "mother in law stories",
+   "when your adult children ignore you"
+  ],
+  "finanzas_jubilados": [
+   "retirement mistakes to avoid",
+   "social security changes",
+   "retire early mistakes",
+   "retirees are running out of money"
+  ],
+  "finanzas_crash": [
+   "stock market crash coming",
+   "housing market crash 2026",
+   "economic collapse prepare",
+   "recession warning"
+  ],
+  "lujo_ricos": [
+   "how billionaires spend money",
+   "old money habits",
+   "rich people secrets",
+   "things rich people never buy"
+  ],
+  "negocios_historia": [
+   "how this company died",
+   "rise and fall of",
+   "biggest business failures",
+   "why this brand disappeared"
+  ],
+  "estafas": [
+   "scam exposed",
+   "biggest scams in history",
+   "fraud documentary",
+   "con man story"
+  ],
+  "historia_antigua": [
+   "ancient rome daily life",
+   "ancient egypt mysteries",
+   "life in medieval times",
+   "what people ate in medieval times"
+  ],
+  "historia_rara": [
+   "weird history facts",
+   "disturbing history facts",
+   "history they don't teach",
+   "strange history"
+  ],
+  "historia_guerra_ww2": [
+   "ww2 untold story",
+   "world war 2 soldier story",
+   "d-day documentary",
+   "ww2 battle explained"
+  ],
+  "historia_militar_armas": [
+   "most feared weapon in history",
+   "tank battle documentary",
+   "fighter jet history",
+   "navy battleship history"
+  ],
+  "historia_vida_cotidiana": [
+   "what life was like in the 1950s",
+   "1800s daily life",
+   "life in the great depression",
+   "how people lived 100 years ago"
+  ],
+  "historia_americana": [
+   "wild west history",
+   "american frontier life",
+   "pioneers oregon trail",
+   "cowboys real history"
+  ],
+  "historia_imperios": [
+   "mongol empire documentary",
+   "ottoman empire history",
+   "fall of the roman empire",
+   "byzantine empire"
+  ],
+  "biografias": [
+   "the untold story of",
+   "life story documentary",
+   "tragic life of",
+   "last days of"
+  ],
+  "realeza": [
+   "british royal family secrets",
+   "kings and queens history",
+   "royal scandal history",
+   "tudor history"
+  ],
+  "hollywood_clasico": [
+   "old hollywood scandals",
+   "classic movie stars tragic",
+   "hollywood actors then and now",
+   "golden age hollywood"
+  ],
+  "musica_clasica_70s": [
+   "rock legends tragic",
+   "70s band story",
+   "musician last days",
+   "the truth about the band"
+  ],
+  "misterio_desapariciones": [
+   "unsolved disappearance",
+   "vanished without a trace",
+   "missing hiker mystery",
+   "cold case solved"
+  ],
+  "true_crime": [
+   "true crime documentary",
+   "serial killer case",
+   "detective solved case",
+   "murder mystery solved"
+  ],
+  "misterio_arqueologia": [
+   "ancient discovery archaeologists",
+   "artifacts that should not exist",
+   "lost civilization discovered",
+   "archaeology shocking discovery"
+  ],
+  "misterio_mar": [
+   "deep sea creatures",
+   "ocean mysteries",
+   "shipwreck discovered",
+   "titanic secrets"
+  ],
+  "espacio_universo": [
+   "james webb telescope discovery",
+   "what's beyond the universe",
+   "black hole explained",
+   "voyager 1 latest"
+  ],
+  "paranormal": [
+   "paranormal stories",
+   "haunted house true story",
+   "creepy encounters",
+   "skinwalker stories"
+  ],
+  "historias_reddit": [
+   "reddit stories",
+   "am i the asshole",
+   "revenge stories",
+   "entitled parents"
+  ],
+  "historias_venganza_hoa": [
+   "hoa revenge story",
+   "karen gets what she deserves",
+   "malicious compliance",
+   "neighbor revenge"
+  ],
+  "ciencia_explicada": [
+   "science explained",
+   "what would happen if",
+   "physics explained simply",
+   "how does it work"
+  ],
+  "ingenieria_megaproyectos": [
+   "megaprojects",
+   "engineering marvel",
+   "how they built",
+   "world's biggest construction"
+  ],
+  "maquinas_fabricas": [
+   "how it's made factory",
+   "inside the factory",
+   "mass production process",
+   "modern factory machines"
+  ],
+  "aviacion": [
+   "plane crash investigation",
+   "air disaster documentary",
+   "pilot story",
+   "aviation history"
+  ],
+  "trenes_barcos": [
+   "train history documentary",
+   "ship engineering",
+   "cargo ship life",
+   "railroad history"
+  ],
+  "ia_tecnologia": [
+   "ai will replace",
+   "future technology 2030",
+   "elon musk new",
+   "robot technology"
+  ],
+  "autos": [
+   "car mechanics never tell you",
+   "cars to avoid buying",
+   "engine explained",
+   "classic car restoration"
+  ],
+  "geografia_paises": [
+   "why this country",
+   "geography explained",
+   "countries that",
+   "borders explained"
+  ],
+  "geopolitica": [
+   "why china",
+   "why russia",
+   "geopolitics explained",
+   "the next world war"
+  ],
+  "animales_salvajes": [
+   "most dangerous animals",
+   "animal attack",
+   "predator vs prey",
+   "wildlife documentary"
+  ],
+  "animales_prehistoricos": [
+   "prehistoric creatures",
+   "dinosaur documentary",
+   "ice age animals",
+   "extinct animals"
+  ],
+  "animales_rescate": [
+   "animal rescue story",
+   "dog rescue",
+   "stray cat rescued",
+   "heartwarming rescue"
+  ],
+  "perros_mascotas": [
+   "dog behavior explained",
+   "signs your dog",
+   "why does your dog",
+   "cat behavior"
+  ],
+  "naturaleza_desastres": [
+   "natural disaster documentary",
+   "volcano eruption",
+   "tsunami documentary",
+   "earthquake prediction"
+  ],
+  "clima_tormentas": [
+   "tornado documentary",
+   "hurricane footage",
+   "weather phenomena",
+   "storm chasers"
+  ],
+  "jardin_huerta": [
+   "gardening tips",
+   "grow tomatoes",
+   "garden hacks",
+   "vegetable garden mistakes"
+  ],
+  "homestead_offgrid": [
+   "off grid living",
+   "homestead life",
+   "amish secrets",
+   "self sufficient"
+  ],
+  "preppers_supervivencia": [
+   "prepper food storage",
+   "survival skills",
+   "emergency preparedness",
+   "power grid down"
+  ],
+  "limpieza_hacks": [
+   "cleaning hacks",
+   "cleaning tips",
+   "laundry mistakes",
+   "remove stains"
+  ],
+  "cocina_recetas": [
+   "old fashioned recipes",
+   "depression era recipes",
+   "cheap meals",
+   "grandma recipes"
+  ],
+  "cocina_historia_comida": [
+   "food history",
+   "forgotten foods",
+   "how food was made",
+   "ancient recipes"
+  ],
+  "bricolaje_reparaciones": [
+   "home repair tips",
+   "plumbing mistakes",
+   "diy home",
+   "contractor secrets"
+  ],
+  "construccion_casas": [
+   "building a house",
+   "tiny house",
+   "cabin build",
+   "house construction mistakes"
+  ],
+  "oficios_antiguos": [
+   "forgotten skills",
+   "old trades",
+   "blacksmith",
+   "craftsmanship"
+  ],
+  "pesca_caza": [
+   "fishing tips",
+   "hunting stories",
+   "catch and cook",
+   "deer hunting"
+  ],
+  "biblia_historia": [
+   "bible stories explained",
+   "bible mysteries",
+   "biblical archaeology",
+   "book of enoch"
+  ],
+  "cristiano_oracion": [
+   "powerful prayer",
+   "god's message for you",
+   "christian motivation",
+   "jesus teachings"
+  ],
+  "profecias_fin": [
+   "end times prophecy",
+   "bible prophecy 2026",
+   "revelation explained",
+   "signs of the end"
+  ],
+  "mitologia": [
+   "greek mythology",
+   "norse mythology",
+   "mythology explained",
+   "gods and monsters"
+  ],
+  "budismo_zen": [
+   "buddhist story",
+   "zen teachings",
+   "buddha lessons",
+   "monk story"
+  ],
+  "curiosidades_listas": [
+   "things you didn't know",
+   "facts that will blow your mind",
+   "weird facts",
+   "interesting facts"
+  ],
+  "peliculas_explicadas": [
+   "movie recap",
+   "movie explained",
+   "film ending explained",
+   "series recap"
+  ],
+  "anime_manga": [
+   "anime recap",
+   "manga explained",
+   "one piece theory",
+   "anime explained"
+  ],
+  "videojuegos_historia": [
+   "video game history",
+   "gaming documentary",
+   "nintendo history",
+   "game lore explained"
+  ],
+  "deportes_historia": [
+   "sports documentary",
+   "greatest athlete",
+   "nba legends",
+   "football history"
+  ],
+  "futbol": [
+   "football documentary",
+   "soccer legend story",
+   "ronaldo messi",
+   "football history"
+  ],
+  "lujo_casas": [
+   "most expensive houses",
+   "billionaire mansion",
+   "luxury yacht",
+   "inside mansion tour"
+  ],
+  "viajes_lugares": [
+   "most dangerous places",
+   "places you can't visit",
+   "abandoned places",
+   "hidden places"
+  ],
+  "pueblos_culturas": [
+   "isolated tribes",
+   "amish life",
+   "remote village life",
+   "unique cultures"
+  ],
+  "carceles": [
+   "prison life",
+   "inside prison",
+   "most dangerous prison",
+   "death row"
+  ],
+  "aventura_expediciones": [
+   "survival story",
+   "stranded at sea",
+   "mountain climbing disaster",
+   "expedition gone wrong"
+  ],
+  "historias_dormir": [
+   "sleep stories",
+   "bedtime history",
+   "boring history for sleep",
+   "fall asleep to"
+  ],
+  "motivacion": [
+   "motivational speech",
+   "discipline motivation",
+   "self improvement",
+   "habits of successful"
+  ],
+  "idiomas_educacion": [
+   "learn english",
+   "english listening practice",
+   "vocabulary",
+   "speak english fluently"
+  ],
+  "legal_derechos": [
+   "your rights police",
+   "lawyer explains",
+   "know your rights",
+   "legal loophole"
+  ],
+  "inmobiliaria_casa": [
+   "real estate market",
+   "buying a house mistakes",
+   "mortgage tips",
+   "homeowner mistakes"
+  ],
+  "oficios_camioneros": [
+   "truck driver stories",
+   "trucking life",
+   "truck driver mistakes",
+   "semi truck"
+  ],
+  "medicina_historia": [
+   "medical history",
+   "weird medical cases",
+   "doctor stories",
+   "medical mysteries"
+  ]
+ },
+ "cpm": {
+  "finanzas_jubilados": 20,
+  "finanzas_crash": 18,
+  "inmobiliaria_casa": 16,
+  "legal_derechos": 14,
+  "lujo_ricos": 12,
+  "negocios_historia": 12,
+  "estafas": 10,
+  "salud_60plus": 12,
+  "suenio_salud": 11,
+  "nutricion_alimentos": 11,
+  "remedios_caseros": 9,
+  "longevidad_cientificos": 11,
+  "cerebro_memoria": 11,
+  "medicina_historia": 9,
+  "ia_tecnologia": 10,
+  "autos": 11,
+  "psicologia_estoicismo": 7,
+  "psicologia_vejez": 9,
+  "relaciones_familia": 8,
+  "historia_guerra_ww2": 7,
+  "historia_militar_armas": 8,
+  "aviacion": 8,
+  "ingenieria_megaproyectos": 7,
+  "maquinas_fabricas": 6,
+  "bricolaje_reparaciones": 9,
+  "construccion_casas": 8,
+  "jardin_huerta": 7,
+  "homestead_offgrid": 7,
+  "preppers_supervivencia": 8,
+  "geopolitica": 8,
+  "historias_reddit": 4,
+  "historias_venganza_hoa": 4,
+  "anime_manga": 3,
+  "videojuegos_historia": 4,
+  "historias_dormir": 4,
+  "animales_rescate": 4,
+  "curiosidades_listas": 5,
+  "historia_antigua": 6,
+  "historia_rara": 6,
+  "historia_vida_cotidiana": 6,
+  "historia_americana": 6,
+  "historia_imperios": 6,
+  "biografias": 6,
+  "realeza": 6,
+  "hollywood_clasico": 6,
+  "musica_clasica_70s": 6,
+  "misterio_desapariciones": 6,
+  "true_crime": 6,
+  "misterio_arqueologia": 6,
+  "misterio_mar": 6,
+  "espacio_universo": 6,
+  "paranormal": 6,
+  "ciencia_explicada": 6,
+  "trenes_barcos": 6,
+  "geografia_paises": 6,
+  "animales_salvajes": 6,
+  "animales_prehistoricos": 6,
+  "perros_mascotas": 6,
+  "naturaleza_desastres": 6,
+  "clima_tormentas": 6,
+  "limpieza_hacks": 6,
+  "cocina_recetas": 6,
+  "cocina_historia_comida": 6,
+  "oficios_antiguos": 6,
+  "pesca_caza": 6,
+  "biblia_historia": 6,
+  "cristiano_oracion": 6,
+  "profecias_fin": 6,
+  "mitologia": 6,
+  "budismo_zen": 6,
+  "peliculas_explicadas": 6,
+  "deportes_historia": 6,
+  "futbol": 6,
+  "lujo_casas": 6,
+  "viajes_lugares": 6,
+  "pueblos_culturas": 6,
+  "carceles": 6,
+  "aventura_expediciones": 6,
+  "motivacion": 6,
+  "idiomas_educacion": 6,
+  "oficios_camioneros": 6
+ }
+}
