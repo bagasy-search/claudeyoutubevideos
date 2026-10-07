@@ -45,7 +45,6 @@ img/fbmadera/b_brushbase.jpg
 broll/fbmadera/b_brushbase.mp4
 img/fbmadera/b_groundline.jpg
 img/fbmadera/b_soakmacro.jpg
-broll/fbmadera/b_soakmacro.mp4
 img/fbmadera/b_beading.jpg
 broll/fbmadera/b_beading.mp4
 img/fbmadera/c_wow.jpg
@@ -205,7 +204,6 @@ broll/fbmadera/b_gatebottom.mp4
 img/fbmadera/st_gardentools.jpg
 broll/fbmadera_st/st_gardentools.mp4
 img/fbmadera/b_handle.jpg
-broll/fbmadera/b_handle.mp4
 img/fbmadera/b_shedbottom.jpg
 img/fbmadera/b_tablelegs.jpg
 img/fbmadera/b_twotones.jpg
