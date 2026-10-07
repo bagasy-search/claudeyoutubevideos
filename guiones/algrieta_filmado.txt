@@ -1,0 +1,73 @@
+[HOOK|notape] No tape esa grieta todavía. Si la tapa sin saber si se mueve, en un mes está abierta otra vez.
+[HOOK|moneda] Mire. La moneda entra. Eso quiere decir que la grieta tiene más de un milímetro y medio. Y eso, en una pared, ya no es la pintura.
+[HOOK|marta] Es la grieta del pasillo de Doña Marta. El mismo pintor se la tapó dos veces con masilla. Las dos veces, a los dos meses, se abrió de nuevo, en el mismo lugar.
+[HOOK|loop] Y lo que me dijo el yeso a las cuatro semanas, eso Doña Marta no lo esperaba.
+[HOOK|promesa] Hoy le muestro cómo saber si una grieta es peligrosa o se tapa en cinco minutos, con una moneda y un poco de yeso. Y cómo se tapa para que no vuelva. Así estaba la pared. Y así va a quedar.
+[HOOK|cred] Soy Claudio. Treinta años de albañil, miles de grietas. Y al final le doy la prueba de cero dólares que hago antes de tapar cualquier grieta. Cinco segundos, con el celular.
+[HOOK|cap] Primero, por qué casi todas las grietas no son nada.
+[REF|gotera] Si no vio cuando encontramos la gotera de la cocina en esta misma casa, se lo dejo acá. Ese día, al bajar del techo, pasé por el pasillo y vi esta grieta.
+[PASILLO|como] El pasillo de Doña Marta une la sala con los dormitorios. Paredes verde claro, las fotos de los nietos en marcos de madera, y la puerta de su dormitorio al fondo. Y desde la esquina de arriba de esa puerta, una grieta en diagonal que sube hacia el techo, del largo de un brazo.
+[PASILLO|fotos] En esas fotos están los cinco nietos, cada uno el día que terminó la escuela. La de Tomás es la última, la de la escuela primaria, con un diente menos. Doña Marta pasa por ese pasillo veinte veces por día, y cada vez mira la grieta de reojo.
+[PASILLO|pintor] Doña Marta me contó que la primera vez el pintor la rellenó con enduido, esa pasta blanca para alisar paredes, la lijó y la pintó. Quedó perfecta. A los dos meses, la raya otra vez, finita, en el mismo lugar. La segunda vez le puso más pasta, más gruesa. Y se abrió más rápido.
+[PASILLO|miedo] Y ella me dijo algo que me dicen muchos: Claudio, a mí esa grieta me da miedo. ¿Se me va a caer la casa? Le dije: eso lo vamos a saber en cuatro semanas, con un poco de yeso. Y le prometí que si era peligrosa, se lo iba a decir.
+[CASI|intro] Mire, casi todas las grietas de una casa son de la pintura y del revestimiento. Se secan, se encogen, y se rajan. Pasa en todas las casas, nuevas y viejas. Ésas se tapan en cinco minutos, y no le pasa nada a nadie.
+[CASI|porque] ¿Por qué se rajan? Porque el revestimiento de cemento y la pintura se secan durante meses, y al secarse se achican, como el barro de un charco cuando se seca al sol. Y con el frío y el calor, se estiran y se encogen un pelito. Esas rayitas finas, como cabellos, en todas direcciones, son eso.
+[CASI|tipos] Las que hay que mirar son otras. Las que se mueven: las que crecen, las que se abren más de un lado que del otro, y las diagonales que salen de las esquinas de las puertas y las ventanas. Como la de Doña Marta.
+[CASI|escalonada] Y hay una tercera forma que conviene conocer: la grieta escalonada, la que baja como una escalera siguiendo las juntas de los ladrillos. Ésa casi siempre aparece en paredes de afuera o de ladrillo visto, y también hay que vigilarla con la moneda y el yeso.
+[CASI|ingeniero] Y para saber cuál tiene usted, no hace falta un ingeniero. Hace falta una moneda y un poco de yeso. Yeso de construcción, no masilla ni pasta: en el Manual le dejé la frase exacta para pedirlo en la ferretería, así no le venden lo que no sirve. Es la página trece.
+[MONEDA|como] Primer paso, la prueba de la moneda. Agarre una moneda e intente meter el canto, el borde, en la grieta. Si no entra, es una fisura de pintura. Se tapa y listo, sin miedo.
+[MONEDA|entra] Si entra, la grieta tiene más de un milímetro y medio, y hay que vigilarla. No quiere decir que sea peligrosa. Quiere decir que hay que saber si se está moviendo.
+[MONEDA|marta] En el pasillo de Doña Marta, la moneda entró sola. Por eso no la tapé ese día. Si la tapaba, no iba a saber nunca si se movía.
+[SENALES|intro] Pero antes del yeso, miro cuatro cosas. Si aparece cualquiera de las cuatro, no espero nada: llamo a un profesional ese mismo día.
+[SENALES|cuatro] Una: si la grieta es diagonal y más ancha arriba que abajo. Dos: si una puerta o una ventana empezó a trabarse. Tres: si el piso tiene una grieta que sigue por la pared. Y cuatro: si la grieta crece de una semana a la otra.
+[SENALES|marta] En el pasillo de Doña Marta, medí la grieta arriba y abajo con la moneda: pareja. La puerta del dormitorio cerraba bien, como siempre. El piso, sano. Ninguna de las cuatro. Entonces, el yeso.
+[YESO|como] Segundo paso, el testigo de yeso. Prepare un poco de yeso de construcción con agua, como una pasta espesa, como un puré. Y pegue una pastilla del tamaño de una moneda grande, cruzando la grieta, mitad de un lado y mitad del otro.
+[YESO|fecha] Al lado, con un lápiz, escriba la fecha. Ese yeso es su testigo. El yeso es duro y no estira: si la pared se mueve aunque sea un pelito, el yeso se parte.
+[YESO|mirar] Tercer paso: mírelo cada semana, durante cuatro semanas. Si el yeso se raja en ese tiempo, la grieta se está moviendo. No la tape, y llame a un profesional, y muéstrele el testigo. Si el yeso sigue entero, la grieta está quieta, y se puede arreglar.
+[YESO|marta] En la casa de Doña Marta puse dos testigos, uno arriba y uno abajo, con la fecha. Y le pedí a Tomás que les sacara una foto cada sábado con el celular de la abuela.
+[YESO|tomas] Tomás se lo tomó muy en serio. Le pegó al lado de cada testigo un papelito con su nombre: el de arriba se llamaba Pepe, y el de abajo, Lola. Cada sábado la foto venía con un mensaje: Pepe y Lola, sanos.
+[CUATRO|loop] Y acá está lo de las cuatro semanas. Doña Marta estaba convencida de que el yeso se iba a partir. Cada sábado me mandaba la foto con un mensaje: ¿y? ¿se partió? Y cada sábado, entero.
+[CUATRO|sorpresa] En la tercera semana hubo una ola de calor, cuatro días de mucho sol. Doña Marta me mandó la foto el jueves, a las siete de la mañana, con tres signos de pregunta. Le hice ampliar la foto a Tomás: los dos testigos, enteros. Ni una raya.
+[CUATRO|porque] ¿Y entonces por qué se abría cada dos meses lo que tapaba el pintor? Por dos cosas. La pasta común es dura: una pared vieja se estira y se encoge un pelito con el frío y el calor de las estaciones, y lo duro no acompaña. Y el pintor nunca abrió la grieta: la pasta quedó apoyada arriba, sin agarre.
+[CUATRO|decision] A la cuarta semana, los dos testigos seguían enteros. La grieta estaba quieta. La casa no se estaba cayendo: lo que se caía era la pasta del pintor. Y eso fue lo que le expliqué a Doña Marta, con las fotos de Tomás en la mano. Si el yeso se hubiera partido, la historia era otra: no se tapa, y se llama a un profesional.
+[LISTA|intro] Así que el arreglo es simple, si se usa el material correcto.
+[LISTA|cosas] Lo que necesita: una moneda y un lápiz, que ya tiene. Yeso de construcción para el testigo. Una espátula de punta o un destornillador viejo. Masilla elástica para fisuras, que es una pasta acrílica que se estira sin rajarse. Y para las paredes de afuera, malla de fibra de vidrio y enduido, la pasta de alisar.
+[LISTA|mostrador] En la ferretería, pídalo exactamente así: Necesito medio kilo de yeso, un pote de masilla elástica para fisuras, un metro de malla de fibra de vidrio, y enduido. Anótela tal cual.
+[PASOS|ve] Cuarto paso: abra un poquito la grieta en forma de V, con la punta de la espátula. Parece al revés, agrandarla, pero así la masilla tiene de dónde agarrarse. Después sople el polvo y pase un trapo apenas húmedo.
+[PASOS|masilla] Quinto: rellene con la masilla elástica, apretando hacia adentro con la espátula, y alise al ras de la pared. Si la grieta es honda, en dos pasadas: una, deja secar, y otra.
+[PASOS|afuera] Si es una pared de afuera, encima de la masilla ponga una tira de malla de fibra de vidrio, y cúbrala con enduido, bien finito. La malla es la que reparte el movimiento y no deja que la grieta se marque otra vez.
+[PASOS|pintar] Y sexto: pinte cuando esté seca. Mire el envase, casi siempre al otro día.
+[PASOS|manual] Las medidas exactas, la moneda del milímetro y medio, el testigo, las cuatro semanas y las dos pasadas de masilla, están en la página trece del Manual del Albañil de Claudio. El link está abajo.
+[PASOS|resumen] Repaso: la moneda. Si entra, las cuatro señales, y si no hay ninguna, el testigo de yeso con la fecha, cuatro semanas. Si el yeso sigue entero, abrir en V, masilla elástica apretada, malla si es afuera, y pintura.
+[MARTA|trabajo] En el pasillo de Doña Marta, abrí la grieta en V, saqué los restos de la pasta del pintor, toda la que estaba floja, y rellené con masilla elástica en dos pasadas. Como era una pared de adentro, no hizo falta malla.
+[MARTA|testigos] Los testigos de yeso, los dejé. Uno arriba, chiquito, al lado del marco de la puerta, con la fecha. Si algún día se parte, Doña Marta sabe qué tiene que hacer. Ella dice que es su seguro gratis.
+[MARTA|pintar] Al otro día pinté el pasillo entero, el mismo verde claro. Tomás volvió a colgar las fotos de los primos. Y ya pasaron dos olas de calor más. La grieta, ni una raya.
+[MARTA|pepe] Y Pepe, el testigo de arriba, sigue ahí, al lado del marco, con su papelito. Tomás no deja que nadie lo pinte. Dice que es el guardián del pasillo.
+[MARTA|marta] Doña Marta me dijo: Claudio, lo que más me alivió no fue la masilla. Fue saber. Ahora sé que mi casa no se cae. Y esa noche, por primera vez en un año, pasó por el pasillo sin mirar la pared.
+[VUELVE|si] Ahora, si a usted la grieta le vuelve a abrir en el mismo lugar después de taparla, como al pintor, es que la pared se mueve con el calor o con la humedad del suelo. Use masilla elástica, nunca la pasta común, que es dura y se raja. Y si la pared tiene humedad abajo, mire el video de la pared que se infla, porque muchas veces van juntas.
+[MANTENER|anual] Para que no lo agarre de sorpresa: revise sus testigos una vez por año. Y si una grieta vuelve después de una temporada de lluvias o de sequía, casi siempre tiene que ver con el agua del terreno: canaletas, desagües y la acera pegada a la casa.
+[PRO|cuando] Y lo repito, porque es lo más importante del video: si la grieta es diagonal y más ancha arriba que abajo, si una puerta o ventana empezó a trabarse, si el piso tiene una grieta que sigue por la pared, o si la grieta crece de una semana a la otra, no espere a nadie: llame a un profesional sin esperar.
+[ERRORES|intro] Ahora, los errores que más veo con las grietas. Cada uno la vuelve a abrir.
+[ERRORES|tapar] Uno: tapar sin saber si se mueve. Si se mueve, se abre otra vez, y encima perdió la prueba.
+[ERRORES|pasta] Dos: rellenar con pasta común o con yeso. Son duros, y la pared que se mueve un pelito los raja.
+[ERRORES|ve] Tres: rellenar sin abrir en V. La masilla queda arriba, sin agarre, y se despega.
+[ERRORES|polvo] Cuatro: rellenar con polvo adentro. El polvo no deja que la masilla pegue.
+[ERRORES|senales] Y cinco: ignorar las cuatro señales. Si una puerta empezó a trabarse, no piense que es la madera: primero que lo vea un profesional.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|pelo] ¿Y las grietas finitas, como pelos, en toda la pared? Son de la pintura o del revestimiento. Masilla, lija suave y pintura.
+[QA|silicona] ¿Sirve la silicona para tapar grietas? No en una pared. No se puede pintar, junta polvo y se nota. Masilla elástica para fisuras.
+[QA|techo] ¿Y las grietas del techo de adentro? Si son finitas, igual que la pared. Si el techo está abultado o la grieta atraviesa, profesional.
+[QA|nueva] ¿Es normal que una casa nueva tenga grietas? Las finitas, sí, el primer año. El cemento se seca y se encoge. Ésas se tapan cuando dejan de aparecer.
+[QA|alquiler] ¿Y si alquilo? Ponga el testigo con la fecha y sáquele foto. Si se parte, eso es del dueño, y usted tiene la prueba.
+[QA|costo] ¿Cuánto gastó Doña Marta? Medio kilo de yeso y un pote de masilla. Mucho menos que las dos veces del pintor, y esta vez con la tranquilidad de saber.
+[QA|exterior] ¿Y las grietas de la pared de afuera, la del frente? Mismo método: moneda, yeso, cuatro semanas. Si está quieta, masilla elástica, malla de fibra de vidrio y enduido finito encima.
+[QA|cuanto] ¿Cuánto tiene que secar el yeso del testigo para empezar a contar? Una hora y ya está duro. La fecha va el día que lo pone.
+[PRUEBA|cero] Y ahora, la prueba de cero dólares que le prometí. La que hago antes de tapar cualquier grieta. Ponga una moneda pegada a la grieta, al lado, y sáquele una foto con el celular. Cinco segundos.
+[PRUEBA|leer] Repítala cada mes, con la misma moneda, en el mismo lugar. La moneda le da la medida. Si en la foto la grieta se ve más ancha que la moneda del mes anterior, está creciendo: profesional. Si se ve igual, está quieta.
+[PRUEBA|marta] Las fotos de Tomás de los sábados fueron justamente eso. Cinco segundos por semana, y Doña Marta durmió tranquila un mes antes de que yo tocara la pared.
+[RECAP|todo] Así que, todo en treinta segundos. La moneda: si no entra, es pintura. Si entra, mire las cuatro señales. Si no hay ninguna, testigo de yeso con fecha, cuatro semanas. Si el yeso sigue entero, abrir en V, masilla elástica, malla si es afuera, y pintura. Y si hay una señal, profesional sin esperar.
+[CTA3|regalo] La prueba de la moneda y el yeso es una de las tres que hago antes de pintar cualquier pared, junto con la del aluminio y la de la cinta. Se las dejé anotadas en una hoja que se llama Antes de Pintar. Es gratis. Apunte el celular a este código, o toque el link de la descripción. Y si quiere los sesenta y seis arreglos de la casa, el Manual del Albañil está en esa misma página, a veintisiete dólares.
+[NEXT|olor] Ah, y una cosa más. Cuando terminé el pasillo, Doña Marta me pidió que guardara la escalera en el ropero del fondo. Abrí la puerta, y me pegó un olor a guardado, a humedad, fuertísimo. Adentro estaba colgada toda la ropa de Don Ernesto, los trajes, las camisas, el sombrero.
+[NEXT|gancho] Doña Marta me dijo bajito: no la quiero tirar, Claudio, pero huele a humedad, y no sé qué hacer. La semana que viene le muestro el tarro casero que sacó medio vaso de agua del aire de ese ropero, y cómo salvamos la ropa de Don Ernesto.
+[CLOSE|pregunta] Y ahora cuénteme usted. ¿La moneda entra en su grieta? Haga la prueba y escríbamelo en los comentarios, con la foto si puede. Y si tiene una grieta que le da miedo, cuénteme dónde está y si alguna puerta se traba. Leo todos.
+[CLOSE|chau] Primero el yeso, después la masilla. Nos vemos la semana que viene.

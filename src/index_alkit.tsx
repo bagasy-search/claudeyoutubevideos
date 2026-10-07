@@ -6,9 +6,10 @@ import { ClChapter, ClCheck } from "./claudio/ClCards";
 import { ClHeatSides, ClShadeGap, ClCrossVent, ClThermo, ClEarthTube } from "./claudio/ClCalor";
 import { ClWickWall, ClThreeDamp, ClPencilLine } from "./claudio/ClHumedad";
 import { ClWaterWalk, ClHoseTest, ClMembrane } from "./claudio/ClGotera";
-const B = "ref_algotera.png";
+import { ClCoinTest, ClPlasterTell, ClCrackTypes, ClVFill } from "./claudio/ClGrieta";
+const B = "ref_algrieta.png";
 const K: [React.FC<any>, any][] = [
-  [ClWaterWalk, { mode: "walk", bed: B }], [ClWaterWalk, { mode: "patch", bed: B }], [ClHoseTest, { zones: 4, hit: 1, bed: B }], [ClMembrane, { bed: B }],
+  [ClCoinTest, { result: "yes", bed: B }], [ClPlasterTell, { result: "whole", names: ["Pepe", "Lola"], bed: B }], [ClCrackTypes, { pick: -1, bed: B }], [ClVFill, { outside: true, bed: B }],
 ];
 const Main: React.FC = () => <AbsoluteFill style={{ backgroundColor: "#fff" }}>{K.map(([C, p], i) => <Sequence key={i} from={i * 150} durationInFrames={150}><C {...p} /></Sequence>)}</AbsoluteFill>;
 registerRoot(() => <Composition id="Alkit" component={Main} durationInFrames={K.length * 150} fps={30} width={1920} height={1080} />);
