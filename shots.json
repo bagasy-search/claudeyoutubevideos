@@ -152,7 +152,7 @@
   "src": "i_o_puerta_frente",
   "prompt": "No people, no mannequins, no figures anywhere in the image. The closed reinforced cockpit door of an airliner seen straight on from the passenger side at standing eye level, a small keypad beside it, soft light, the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -228,7 +228,7 @@
   "src": "i_o_puerta_blind",
   "prompt": "No people, no mannequins, no figures anywhere in the image. A close detail of a heavy reinforced airliner cockpit door: thick edges, a recessed handle, deadbolt housings at the frame, the forward galley of a narrow-body airliner: the closed reinforced cockpit door with a small keypad beside it, a lavatory door to the right, galley carts and compartments to the left. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "rise",
   "focus_keys": [
    [
@@ -258,32 +258,29 @@
   "w": 1.0,
   "src": "i_o_ped_llave",
   "prompt": "A small white clay pedestal on a pale studio table holding a single plumber's wrench lying flat, nothing else around. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
-  "behind": {
-   "t": "UN PLOMERO",
-   "size": 150,
-   "xy": [
-    0.5,
-    0.8
-   ],
-   "in": 0.1,
-   "color": [
-    25,
-    25,
-    28
-   ],
-   "td": "mid"
-  },
   "serie": "pedestales",
-  "strength": 12,
-  "cam": "orbit",
+  "lugar": [
+   "Un plomero",
+   "aprendió qué hacer mirando televisión"
+  ],
+  "strength": 4,
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p93"
+    "p20"
+   ],
+   [
+    0.3,
+    "p20"
+   ],
+   [
+    0.75,
+    "p95"
    ],
    [
     1,
-    "p93"
+    "p95"
    ]
   ],
   "fx": []
@@ -295,23 +292,12 @@
   "w": 1.0,
   "src": "i_o_ped_espejo",
   "prompt": "A small white clay pedestal on a pale studio table holding a single dentist's mouth mirror lying flat, nothing else around. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
-  "behind": {
-   "t": "UN DENTISTA",
-   "size": 150,
-   "xy": [
-    0.5,
-    0.8
-   ],
-   "in": 0.1,
-   "color": [
-    25,
-    25,
-    28
-   ],
-   "td": "mid"
-  },
   "serie": "pedestales",
-  "strength": 12,
+  "lugar": [
+   "Un dentista",
+   "el único médico a bordo"
+  ],
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -323,9 +309,7 @@
     "p94"
    ]
   ],
-  "fx": [
-   "glint"
-  ]
+  "fx": []
  },
  {
   "at": "1.9@de dos pilotos",
@@ -334,23 +318,12 @@
   "w": 1.0,
   "src": "i_o_ped_gorras",
   "prompt": "A small white clay pedestal on a pale studio table holding two pilot caps placed side by side, nothing else around. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
-  "behind": {
-   "t": "DOS PILOTOS DE RESERVA",
-   "size": 130,
-   "xy": [
-    0.5,
-    0.8
-   ],
-   "in": 0.1,
-   "color": [
-    25,
-    25,
-    28
-   ],
-   "td": "mid"
-  },
   "serie": "pedestales",
-  "strength": 12,
+  "lugar": [
+   "Dos pilotos de reserva",
+   "viajaban como pasajeros, por si acaso"
+  ],
+  "strength": 4,
   "cam": "truck",
   "focus_keys": [
    [
@@ -535,31 +508,28 @@
   "w": 1.0,
   "src": "i_o_caja_naranja",
   "prompt": "A vivid saturated orange (#FF5F1F) aircraft flight recorder box, painted bright orange and clearly orange, the only colored object in a white clay world, with white reflective stripes resting on a pale studio table, the only colored object, a small underwater locator beacon cylinder on its front. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
-  "behind": {
-   "t": "CAJA NARANJA",
-   "size": 170,
-   "xy": [
-    0.5,
-    0.22
-   ],
-   "in": 0.2,
-   "color": [
-    25,
-    25,
-    28
-   ],
-   "td": "mid"
-  },
-  "strength": 12,
-  "cam": "truck",
+  "lugar": [
+   "Caja Naranja",
+   "las cajas negras son naranjas: para encontrarlas"
+  ],
+  "strength": 4,
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p90"
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p20"
    ],
    [
     1,
-    "p90"
+    "p20"
    ]
   ],
   "fx": []
@@ -716,7 +686,7 @@
   "src": "i_o_gorras_asiento",
   "prompt": "Two pilot caps resting on an empty airliner seat in the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows, seen close. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -782,7 +752,7 @@
   "src": "i_o_puerta_atras",
   "prompt": "Seen from inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft white clay clouds looking backward past the empty seats: the closed reinforced cockpit door at the back of the small cockpit. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "rise",
   "focus_keys": [
    [
@@ -814,7 +784,7 @@
     "__sello"
    ]
   ],
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -835,7 +805,7 @@
   "w": 1.0,
   "src": "i_o_cajafuerte",
   "prompt": "A heavy clay bank vault door standing alone on a pale studio table with a single handle on only one side, the other side completely smooth. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
-  "strength": 12,
+  "strength": 4,
   "cam": "orbit",
   "focus_keys": [
    [
@@ -868,7 +838,7 @@
     "p92"
    ]
   ],
-  "strength": 12,
+  "strength": 4,
   "fx": []
  },
  {
@@ -888,7 +858,7 @@
   "src": "i_o_hacha",
   "prompt": "Close detail of the back wall of an airliner cockpit behind the captain's seat: a small emergency crash axe with a short handle held in two clips on the wall panel, next to a folded jump seat. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "rise",
   "focus_keys": [
    [
@@ -936,7 +906,7 @@
   "src": "i_o_hacha_luz",
   "prompt": "The same small emergency crash axe in its two wall clips in an airliner cockpit, seen very close, a thin line of light across the blade. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "orbit",
   "focus_keys": [
    [
@@ -1241,7 +1211,7 @@
    "05:20:40",
    1.0
   ],
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -1378,7 +1348,7 @@
    "05:21:08",
    1.0
   ],
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -1453,7 +1423,7 @@
     "p92"
    ]
   ],
-  "strength": 12,
+  "strength": 4,
   "fx": []
  },
  {
@@ -1489,7 +1459,7 @@
   "src": "i_o_cola_rota",
   "prompt": "No people, no mannequins, no figures anywhere in the image. Close view of the tail of an airliner on a clay apron: the tall vertical fin has its whole rear hinged rudder panel torn away, leaving a big empty notch with a jagged broken edge along the back of the fin, clearly damaged. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -1665,7 +1635,7 @@
    "05:21:50",
    1.0
   ],
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -1789,7 +1759,7 @@
    "05:22:10",
    1.0
   ],
-  "strength": 12,
+  "strength": 4,
   "cam": "orbit",
   "focus_keys": [
    [
@@ -2117,7 +2087,7 @@
     "__sello"
    ]
   ],
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -2144,7 +2114,7 @@
   "id": "g_cita_matenme",
   "kind": "cita",
   "w": 1.0,
-  "q": "«Mátenme».",
+  "q": "Mátenme.",
   "who": "Lo que repetía en el piso, según varios pasajeros",
   "src": "vía Ynet · Wikipedia",
   "et": "REPORTADO",
@@ -2203,7 +2173,7 @@
   "w": 1.0,
   "src": "i_o_tele",
   "prompt": "An old living room television set made of white clay on a low cabinet, its screen showing a tiny white clay airliner, a remote control beside it. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
-  "strength": 12,
+  "strength": 4,
   "cam": "truck",
   "focus_keys": [
    [
@@ -2261,7 +2231,7 @@
   "src": "i_o_gorras_vacias",
   "prompt": "Two pilot caps left on two empty airliner seats in a middle row of the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows, seen close. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -2354,7 +2324,7 @@
   "src": "i_o_transp",
   "prompt": "A close detail of the radio and transponder control panel on the center pedestal of a Boeing 737 cockpit: knobs and a small four-digit display window, seen from above. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -2897,7 +2867,7 @@
     "__sello"
    ]
   ],
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -3113,7 +3083,7 @@
   "w": 1.0,
   "src": "i_o_hacha_mesa",
   "prompt": "A small emergency crash axe lying flat on a pale grey evidence table under a soft overhead light, a small blank white tag tied to its handle with string. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -3396,7 +3366,7 @@
   "src": "i_o_puerta_25",
   "prompt": "The reinforced cockpit door of an airliner seen from the galley side in soft light, closed, a single small shadow at its base. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -3454,7 +3424,7 @@
   "src": "i_o_camara_no",
   "prompt": "The ceiling corner of an airliner cockpit built as a white clay model, plain panels and a small reading light, no camera anywhere, seen from below. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "truck",
   "focus_keys": [
    [
@@ -3751,7 +3721,7 @@
   "img": "Inside the cockpit of a Boeing 737: two pilot seats side by side, a control column with a yoke in front of each seat, a center console with two throttle levers, the instrument panel with blank dark screens, the windshield showing soft white clay clouds seen from the doorway: the captain mannequin lying on the cockpit floor with one arm stretched toward the open door, the captain mannequin is painted solid deep teal blue like a vivid blue plastic toy, clearly blue and not white, soft light from the cabin falling on him. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "motion": "the soft light slowly grows over the blue mannequin",
   "tag": "RECONSTRUCCIÓN",
-  "maxs": 2.5
+  "maxs": 1.5
  },
  {
   "at": "21.5",
@@ -3884,7 +3854,7 @@
   "src": "i_o_puerta_fin",
   "prompt": "No people, no mannequins, no figures anywhere in the image. The closed reinforced cockpit door of an airliner seen straight on from the galley in very soft dim light, silent, nothing else. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -3931,7 +3901,7 @@
   "w": 1.0,
   "src": "kf__c_cmd_suelo_mano",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "rise",
   "focus_keys": [
    [
@@ -3990,7 +3960,7 @@
   "src": "i_o_traba",
   "prompt": "No people, no mannequins, no figures anywhere in the image. Close detail of the edge of a closed reinforced airliner cockpit door and its frame: a small indicator light on the frame glowing red, a heavy steel latch engaged. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -4042,7 +4012,7 @@
   "src": "i_o_aguja",
   "prompt": "No people, no mannequins, no figures anywhere in the image. Close detail of a round clay airspeed dial on an airliner instrument panel: the needle pushed past a red and white striped band at the top of the scale. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -4054,9 +4024,7 @@
     "p94"
    ]
   ],
-  "fx": [
-   "glint"
-  ]
+  "fx": []
  },
  {
   "at": "5.10",
@@ -4066,7 +4034,7 @@
   "src": "i_o_techo",
   "prompt": "No people, no mannequins, no figures anywhere in the image. Inside the economy cabin of a narrow-body airliner with three-and-three seat rows, overhead bins and small oval windows looking straight up at the ceiling: closed overhead bins, reading lights and small oxygen mask compartments, all shut. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "truck",
   "focus_keys": [
    [
@@ -4125,7 +4093,7 @@
     "p90"
    ]
   ],
-  "strength": 12,
+  "strength": 4,
   "fx": []
  },
  {
@@ -4164,7 +4132,7 @@
   "w": 1.0,
   "src": "kf__c_ext_recupera",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "orbit",
   "focus_keys": [
    [
@@ -4205,7 +4173,7 @@
   "src": "i_o_radar_blip",
   "prompt": "No people, no mannequins, no figures anywhere in the image. A round clay radar screen on a console seen close: a single small glowing dot with a short trail, concentric range rings, no text. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -4278,7 +4246,7 @@
   "src": "i_o_podio",
   "prompt": "No people, no mannequins, no figures anywhere in the image. An empty white clay press podium with a cluster of microphones on it, in front of a plain wall, a single water glass on the podium. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -4290,9 +4258,7 @@
     "p94"
    ]
   ],
-  "fx": [
-   "glint"
-  ]
+  "fx": []
  },
  {
   "at": "17.5",
@@ -4302,7 +4268,7 @@
   "src": "i_o_hangar",
   "prompt": "No people, no mannequins, no figures anywhere in the image. A white clay airline hangar with a parked narrow-body airliner, and in the foreground an open pilot locker with an empty hanger and a cap on its shelf. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "truck",
   "focus_keys": [
    [
@@ -4324,7 +4290,7 @@
   "src": "i_o_credencial",
   "prompt": "No people, no mannequins, no figures anywhere in the image. A pilot's crew identification badge on a lanyard lying on a white clay desk next to a closed passport, both blank with no text. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "rise",
   "focus_keys": [
    [
@@ -4345,7 +4311,7 @@
   "w": 1.0,
   "src": "kf__c_fo_der",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -4400,7 +4366,7 @@
   "src": "i_o_torre",
   "prompt": "No people, no mannequins, no figures anywhere in the image. A white clay model of an airport control tower standing on a flat clay apron at dusk, a small airliner model parked far behind it. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -4412,9 +4378,7 @@
     "p94"
    ]
   ],
-  "fx": [
-   "glint"
-  ]
+  "fx": []
  },
  {
   "at": "17.11@y si el peligro",
@@ -4423,7 +4387,7 @@
   "w": 1.0,
   "src": "kf__c_cabina_calma",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "truck",
   "focus_keys": [
    [
@@ -4495,7 +4459,7 @@
   "src": "i_o_medalla",
   "prompt": "No people, no mannequins, no figures anywhere in the image. A white clay medal with a ribbon lying in an open presentation box on a pale table, the medal blank with no text or symbols. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -4524,7 +4488,7 @@
   "w": 1.0,
   "src": "i_o_ped_llave",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "truck",
   "focus_keys": [
    [
@@ -4545,7 +4509,7 @@
   "w": 1.0,
   "src": "i_o_ped_espejo",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "rise",
   "focus_keys": [
    [
@@ -4566,7 +4530,7 @@
   "w": 1.0,
   "src": "kf__c_madre_bano",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -4587,7 +4551,7 @@
   "w": 1.0,
   "src": "i_o_ped_gorras",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "orbit",
   "focus_keys": [
    [
@@ -4609,7 +4573,7 @@
   "src": "i_o_piso",
   "prompt": "No people, no mannequins, no figures anywhere in the image. The empty floor of an airliner cockpit seen low, between the two empty pilot seats, soft light from the open door behind falling across it. Rendered as a matte white clay scale model on a bright studio set: every surface is smooth unpainted off-white plaster (except any mannequin described as painted, which keeps its vivid color) with soft grey shading in the creases and gentle shadows from a large soft overhead light. People are featureless wooden-artist-style mannequins with smooth egg-shaped heads, no faces, no hair, no clothing details. No text, no logos, no letters, no numbers anywhere. Everything from the nearest object to the far background is sharp, nothing blurred out.",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -4621,9 +4585,7 @@
     "p94"
    ]
   ],
-  "fx": [
-   "glint"
-  ]
+  "fx": []
  },
  {
   "at": "3.13@omaní",
@@ -4633,7 +4595,7 @@
   "src": "i_o_credencial",
   "tag": "RECONSTRUCCIÓN",
   "sync_ok": true,
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -4687,7 +4649,7 @@
   "w": 1.0,
   "src": "kf__c_ckpt_dos",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "rise",
   "focus_keys": [
    [
@@ -4742,7 +4704,7 @@
   "w": 1.0,
   "src": "i_o_transp",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -4754,9 +4716,7 @@
     "p94"
    ]
   ],
-  "fx": [
-   "glint"
-  ]
+  "fx": []
  },
  {
   "at": "13.3@lo mismo pasa",
@@ -4776,7 +4736,7 @@
     "p93"
    ]
   ],
-  "strength": 12,
+  "strength": 4,
   "fx": []
  },
  {
@@ -4786,7 +4746,7 @@
   "w": 1.0,
   "src": "kf__c_ventanilla",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "rise",
   "focus_keys": [
    [
@@ -4807,7 +4767,7 @@
   "w": 1.0,
   "src": "i_o_podio",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -4828,7 +4788,7 @@
   "w": 1.0,
   "src": "i_o_caja_naranja",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "orbit",
   "focus_keys": [
    [
@@ -4849,7 +4809,7 @@
   "w": 1.0,
   "src": "kf__c_radar",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "push",
   "focus_keys": [
    [
@@ -4861,9 +4821,7 @@
     "p94"
    ]
   ],
-  "fx": [
-   "glint"
-  ]
+  "fx": []
  },
  {
   "at": "5.12@y se abrieron",
@@ -4872,7 +4830,7 @@
   "w": 1.0,
   "src": "i_o_techo",
   "tag": "RECONSTRUCCIÓN",
-  "strength": 12,
+  "strength": 4,
   "cam": "truck",
   "focus_keys": [
    [
