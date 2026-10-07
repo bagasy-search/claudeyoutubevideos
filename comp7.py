@@ -398,10 +398,10 @@ def r_registro(sh, sid, DUR, put):
         y = 0.18; dy = min(0.11, 0.70 / max(n, 1))
         for j, r in enumerate(rows):
             hora, emi, txt, et = r[0], r[1], r[2], (r[3] if len(r) > 3 else None)
-            ti = wkt(sh, r[4]) if len(r) > 4 and r[4] is not None else 0.3 + j * (DUR * 0.75 / n)
+            ti = wkt(sh, r[4], 0.3 + j * (DUR * 0.75 / n)) if len(r) > 4 and r[4] is not None else 0.3 + j * (DUR * 0.75 / n)
             if t < ti: break
             k = ramp(t, ti, ti + 0.25); ch = int(len(txt) * min(1, (t - ti) / max(0.4, len(txt) / 38)))
-            last = (j == n - 1) or (len(rows) > j + 1 and t < (wkt(sh, rows[j + 1][4]) if len(rows[j + 1]) > 4 and rows[j + 1][4] is not None else 0.3 + (j + 1) * (DUR * 0.75 / n)))
+            last = (j == n - 1) or (len(rows) > j + 1 and t < (wkt(sh, rows[j + 1][4], 0.3 + (j + 1) * (DUR * 0.75 / n)) if len(rows[j + 1]) > 4 and rows[j + 1][4] is not None else 0.3 + (j + 1) * (DUR * 0.75 / n)))
             if last: cv.rect(0.075, y - 0.012, 0.925, y + dy - 0.03, ORANGE, 0.08, r=4)
             cv.text(hora, 0.09, y + 0.02, 24, "monob", ORANGE, k, "lm")
             cv.text(emi.upper(), 0.20, y + 0.02, 15, "monob", MUTED, k, "lm", track=1.2)
@@ -515,7 +515,7 @@ def r_lista(sh, sid, DUR, put):
         cv.text(sh.get("title", "").upper(), 0.12, 0.14, 17, "monob", MUTED, ramp(t, 0.1, 0.4), "lm", track=1.5)
         hh = min(0.14, 0.66 / n); y = 0.5 - n * hh / 2 + 0.02
         for j, r in enumerate(it):
-            ti = wkt(sh, r[3]) if len(r) > 3 and r[3] is not None else 0.3 + j * 0.8
+            ti = wkt(sh, r[3], 0.3 + j * 0.8) if len(r) > 3 and r[3] is not None else 0.3 + j * 0.8
             k = ramp(t, ti, ti + 0.35); yy = y + j * hh + (1 - k) * 0.03
             if k <= 0: continue
             dark = sh.get("dark_last") and j == n - 1
