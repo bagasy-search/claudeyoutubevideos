@@ -25,7 +25,7 @@ export const SHOTS = [
   S(2, "", "bi", "b_martawall", { p: BI(`${MARTA} seen from behind standing in ${ROOM}, looking up at ${WALL}, one hand on her hip.`) }),
   S(2, "Setenta años", "bi", "b_martaportrait", { p: BI(`${MARTA} standing by the barred wooden window of her old house, looking toward the camera with a tired, worried face, soft daylight on her.`), ov: { c: "ClNameTag", props: { name: "Doña Marta", sub: "70 años · viuda" } } }),
   S(2, "viuda", "bi", "b_ring", { p: BI(`Close view of an older woman's wrinkled hands folded on her apron, a thin gold wedding ring on her finger.`) }),
-  C(2, "Ya le pagó tres veces", "ClNotebook", { title: "La libreta de Doña Marta", rows: [{ k: "Pintor · marzo", v: "$180" }, { k: "Pintor · abril", v: "$180" }, { k: "Pintor · mayo", v: "$180" }], strike: true, note: "la misma pared" }),
+  C(2, "Ya le pagó tres veces", "ClNotebook", { title: "El pintor", rows: [{ k: "Marzo", v: "$180" }, { k: "Abril", v: "$180" }, { k: "Mayo", v: "$180" }], strike: true, mark: "volvió", note: "la misma pared" }),
   S(2, "Tres veces la pintó", "bi", "b_painterroller", { p: BI(`${PAINTER} rolling thick white paint with a paint roller over ${WALL}, covering the black mold.`), anim: "the roller moves up over the black stain" }),
   S(2, "y tres veces volvió el moho", "bi", "b_dotsthrough", { p: BI(`Extreme close view of fresh white paint on a bedroom wall with small gray-black mold dots coming through it from underneath.`) }),
   // ── el loop del ropero

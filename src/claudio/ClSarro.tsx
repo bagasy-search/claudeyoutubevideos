@@ -117,7 +117,7 @@ export const ClPasteRecipe: React.FC<{ a?: number; b?: number; aLabel?: string; 
 };
 
 // ───────────────── ClNotebook
-export const ClNotebook: React.FC<{ title?: string; rows: { k: string; v: string }[]; strike?: boolean; note?: string; bed?: string }> = ({ title = "3er piso", rows, strike, note, bed }) => {
+export const ClNotebook: React.FC<{ title?: string; rows: { k: string; v: string }[]; strike?: boolean; mark?: string; note?: string; bed?: string }> = ({ title = "3er piso", rows, strike, mark = "blanco ✓", note, bed }) => {
   const f = useCurrentFrame(); const { durationInFrames: T } = useVideoConfig(); const out = useOut(6);
   const per = Math.max(12, Math.round(T * (strike ? 0.5 : 0.65) / rows.length));
   const ink = "#1F3A8A";
@@ -140,7 +140,7 @@ export const ClNotebook: React.FC<{ title?: string; rows: { k: string; v: string
                     {r.v}
                     {strike ? <svg width={380} height={60} style={{ position: "absolute", left: -20, top: 40, overflow: "visible" }}><path d={`M 0 30 Q 95 ${18 + 10 * rnd(i)} 190 32 T ${380 * sk} 26`} stroke={CL.red} strokeWidth={9} fill="none" strokeLinecap="round" strokeDasharray={420} strokeDashoffset={420 * (1 - sk)} /></svg> : null}
                   </div>
-                  {strike && sk > 0.95 ? <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 80, color: CL.red, rotate: "-8deg", opacity: lin(f, s0 + per * 0.6, s0 + per * 0.8) }}>blanco ✓</div> : null}
+                  {strike && sk > 0.95 ? <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 80, color: CL.red, rotate: "-8deg", opacity: lin(f, s0 + per * 0.6, s0 + per * 0.8) }}>{mark}</div> : null}
                 </div>
               );
             })}

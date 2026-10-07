@@ -5,24 +5,20 @@
 import fs from "node:fs";
 import { R, SLUG, V3, J } from "./env.mjs";
 import { get } from "./sb.mjs";
+const NL = "\n";
 const P = J(V3 + "paras.json"), CF = J(R + `vlog/${SLUG}/chapters.json`);
 const ts = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
-const chapters = CF.chapters.map(([p, t]) => `${ts(p === 0 ? 0 : Math.max(0, P[p].s - 0.5))} ${t}`).join("
-");
+const chapters = CF.chapters.map(([p, t]) => `${ts(p === 0 ? 0 : Math.max(0, P[p].s - 0.5))} ${t}`).join(NL);
 const card = (await get("tracked_channels?select=plan&id=eq.306"))[0].plan.find((c) => c.slug === SLUG);
 if (!card.description.includes("[[CHAPTERS]]")) throw new Error("la descripción de la tarjeta no tiene [[CHAPTERS]]");
 const body = card.description.slice(card.description.indexOf("Soy Claudio"));
 const L = "https://manual-albanil-claudio.vercel.app";
-const head = `🧱 GRATIS: el arreglo de este video, paso a paso y con las medidas exactas 👉 ${L}/?src=${SLUG}
-🎁 Regalo: "Antes de Pintar, las 3 pruebas" (PDF gratis) 👉 ${L}/gratis/?src=${SLUG}-desc
-
-${CF.intro ? CF.intro + "
-
-" : ""}`;
+const head = [
+  `🧱 GRATIS: el arreglo de este video, paso a paso y con las medidas exactas 👉 ${L}/?src=${SLUG}`,
+  `🎁 Regalo: "Antes de Pintar, las 3 pruebas" (PDF gratis) 👉 ${L}/gratis/?src=${SLUG}-desc`,
+  "",
+  ...(CF.intro ? [CF.intro, ""] : []),
+].join(NL) + NL;
 const meta = { title: card.title, description: head + body.replace("[[CHAPTERS]]", chapters), pinned_comment: CF.pinned };
 fs.writeFileSync(R + `public/${SLUG}_meta.json`, JSON.stringify(meta, null, 1));
-console.log(meta.title + "
-
-" + meta.description + "
-
-FIJADO: " + meta.pinned_comment);
+console.log([meta.title, "", meta.description, "", "FIJADO: " + meta.pinned_comment].join(NL));
