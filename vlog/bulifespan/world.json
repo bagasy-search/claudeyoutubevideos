@@ -1,0 +1,10 @@
+{
+ "world": "a band of hunter-gatherers 40,000 years ago in a green limestone river valley in what is now France in early spring, their camp under a rock overhang above the river",
+ "empty": "a wild place 40,000 years ago in a limestone river valley in what is now France, completely empty of people, nobody anywhere in the frame, no modern objects, no paths, no fences, no clothing",
+ "light": {
+  "D": "only the light the place really has: cool early spring daylight under a pale sky, fresh green grass and bare trees with first buds",
+  "E": "only the light the place really has: the last soft light of a spring dusk mixed with the warm glow of the camp fire from off frame, everything clearly readable",
+  "N": "only the light the place really has: the warm orange glow of a camp fire from off frame lighting faces and hands, moonlight on the rock behind, exposure bright enough that faces, clothes and surroundings stay clearly readable",
+  "M": "only the light the place really has: cold misty spring morning light over the river"
+ }
+}

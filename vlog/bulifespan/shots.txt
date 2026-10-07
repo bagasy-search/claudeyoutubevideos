@@ -1,0 +1,222 @@
+# i|kind|cast|light|escena parte 0 [|| escena parte 1]   (override por parte: @cast=a,b · @obj · @scene · @now)
+0|obj||M|a green limestone river valley in early spring with mist on the river, white cliffs and bare trees with the first buds, a thin line of smoke rising from under a rock overhang
+1|cast|elder|M|the old woman sitting by a small fire under the rock overhang in the morning, peeling a long root with a flint blade, the river behind her||close on the old woman's wrinkled hands peeling a root with a flint blade, shavings falling into her lap
+2|cast|elder|M|the old woman by the morning fire, working calmly and slowly with practiced movements, a pile of peeled roots beside her
+3|cast|elder|M|close on the old woman's face as she smiles slightly, showing teeth worn down almost flat, deep wrinkles around her eyes
+4|cast|elder|M|the old woman standing up slowly from the fire with one hand on her knee, wincing a little||the old woman looking straight into the camera with a calm, knowing face
+5|cast|elder|M|the old woman sitting among the band at the morning fire, completely at home, a child leaning against her
+6|cast|elder|D|the old woman walking along the riverbank with a digging stick and a basket, steady and unhurried
+7|cast|hunter,elder,boy|D|the band at the camp in the spring morning: children, young parents, the hunter and several grey-haired elders, all busy||@now=hunter the same modern man reading a history book at a desk with a doubtful frown
+8|scene||D|a few grey-haired old men and women of the band sitting together on a rock in the sun, laughing at something
+9|cast|elder|E|the old woman by the fire at dusk, her face in the warm light, wise and calm
+10|cast|elder,boy|N|the old woman by the fire holding a toddler in her lap, the boy beside her
+11|cast|elder|N|the old woman by the fire looking into the flames, the camp asleep behind her
+12|obj||N|the camp fire under the rock overhang at night, embers glowing, the dark valley beyond
+13|scene||N|inside the rock shelter at night, two women helping a young mother who has just given birth, a newborn wrapped in soft fur, the fire glowing
+14|scene||N|a young mother lying on furs by the fire holding her newborn baby boy against her chest, exhausted and happy, another woman beside her
+15|obj||N|a tiny newborn's hand wrapped around an adult finger, soft fur around it, firelight
+16|scene||N|the young mother holding the newborn close in the firelight, worried eyes looking at the dark outside||close on the newborn baby asleep in fur, tiny and fragile
+17|scene||N|the newborn crying in the mother's arms at night, the mother rocking him
+18|now|hunter|I|the same modern man on his couch scrolling his phone with a news article about life expectancy, frowning
+19|now|hunter|I|the same modern man looking at a chart on a laptop at his kitchen table, puzzled
+20|scene||D|a band of hunter-gatherers 40,000 years ago where everyone is young, nobody older than thirty, as people imagine it, standing at a camp
+21|now|hunter|I|the same modern man shaking his head and closing his laptop with a small smile
+22|obj||D|ten small river stones laid out in a row on a flat rock in the spring sun
+23|obj||D|ten small river stones on a flat rock, three of them set apart from the others
+24|obj||D|three very small pebbles set apart on a flat rock with a tiny sprig of spring flowers beside them
+25|obj||D|seven river stones in a row on a flat rock, with seven notches scratched into the rock next to them
+26|obj||D|a flat rock with ten stones and a single empty spot scratched with a mark in the middle, nothing on it
+27|cast|hunter,elder,boy|D|a group of grey-haired elders and adults of the band sitting in the sun by the river, alive and well
+28|scene||D|a small burial cairn of stones under a tree near the camp, a little fur bundle laid on top, spring flowers placed on it
+29|cast|elder|D|the old woman standing by a small grave of stones near the camp, quiet, remembering
+30|cast|hunter|D|the hunter, about thirty, strong and healthy, carrying a deer across the river toward the camp
+31|scene||D|a young mother of the band holding a tiny baby wrapped in fur close to her chest by the river, worried
+32|obj||D|a small fur sling and a baby's tiny leather wrap hanging from a stick at the camp
+33|scene||M|the young mother at dawn smiling down at her baby who is awake and alive after the first night
+34|scene||D|the young mother carrying her baby in a fur sling on her chest while gathering plants, a few weeks later
+35|obj||X|a fossil bone fragment of a tiny infant laid on a black cloth under a lab lamp, very small and fragile, a millimetre scale beside it
+36|obj||X|a few tiny fossil bones in a small tray in a museum storage drawer, labelled with tiny tags
+37|scene||X|a researcher in the 1980s with a notebook sitting with a hunter-gatherer family outside a grass hut in dry woodland
+38|scene||X|Hadza hunter-gatherers in Tanzania sitting by a fire outside grass huts in the dry bush, a mother with a baby
+39|scene||X|Ache people in a forest camp in Paraguay in the 1980s, women with children under palm-leaf shelters||San people of the Kalahari in a dry sandy camp, a mother with a toddler, grass shelters
+40|scene||X|two anthropologists in a university office surrounded by stacks of papers and charts, comparing data on a table
+41|obj||X|a hand drawn chart on paper on a wooden desk showing a line that drops steeply at the start and then flattens, a pencil beside it
+42|scene||N|a mother of the band holding a sick feverish baby by the fire at night, the old woman beside her with a wet piece of fur
+43|scene||D|a group of young children of the band playing at the edge of the river, and fewer older children
+44|scene||N|a feverish small child lying on furs by the fire, sweaty, the mother wiping his forehead
+45|scene||D|a small child bundled against the cold in the snow at the camp in early spring, red cheeks, shivering
+46|now|hunter|I|the same modern man as a dad giving his baby a bottle in a warm bright kitchen, relaxed
+47|obj||D|ten stones on a flat rock with four of them separated and set aside
+48|scene||D|a crowd of small children of the band around the fire, most of them under five
+49|scene||N|a mother of the band sitting alone by the fire at night holding a small fur bundle to her chest, grieving
+50|cast|boy|N|the boy sitting by the fire at night looking at a small empty space beside him, sad
+51|scene||D|a small grave of stones near the camp, and a woman placing a carved ivory bead on it
+52|cast|hunter,elder,boy|N|the band at the fire at night, close together, the children in the middle
+53|scene||D|a mother of the band carrying a two year old on her back in a fur sling while working||a mother breastfeeding a toddler wrapped in fur while sitting on a rock
+54|scene||D|a mother of the band pulling a toddler back from the river's edge, holding him tight
+55|cast|elder|D|the old woman holding a toddler on her hip while the young mother works beside her
+56|cast|boy|D|the boy now about five years old running happily through the camp, other kids chasing him
+57|cast|boy|D|a five year old boy following bigger kids down to the river, splashing in the shallows||the old woman scolding the small boy for getting too close to the fire, wagging her finger
+58|cast|boy|D|the small boy of the band climbing a rock by the river, healthy and strong
+59|obj||D|ten stones on a flat rock; the six remaining stones set in a long line going into the distance
+60|scene||X|two anthropologists in a university office looking at a long table of numbers
+61|scene||D|a few people of the band in their fifties and sixties walking along the river with baskets, healthy, grey hair
+62|cast|hunter,elder|D|the hunter and the old woman sitting side by side by the river, a long life between them
+63|cast|hunter,elder,boy|D|wide view of the camp under the overhang in the spring sun, the whole band visible, all ages
+64|scene||D|the camp full of people of every age: babies, children, young parents and grey-haired elders
+65|scene||D|a grey-haired old man of the band showing a child how to knap flint, both sitting on a rock
+66|scene||D|close on an old man of the band's wrinkled face laughing, missing a tooth, sun on his skin
+67|cast|elder|D|the old woman among three other grey-haired elders of the band, chatting in the sun
+68|obj||X|a museum display of an ancient burial with two skeletons covered in thousands of tiny ivory beads, softly lit
+69|obj||X|an open grassy plain in central Russia in spring with a small river and birch woods, under a big sky
+70|obj||X|a reconstruction of two children's skeletons lying head to head in a long narrow grave, covered in rows of tiny ivory beads, in a museum
+71|obj||X|close on hundreds of small mammoth ivory beads in rows, aged and creamy, on dark soil||close on a carved ivory spear and pierced fox teeth lying among beads in an excavation
+72|obj||X|a straight mammoth ivory spear and ivory armbands laid out on dark fabric in a museum case
+73|scene||N|people of a band long ago sitting by a fire at night carving tiny beads from mammoth ivory with flint tools, piles of beads beside them
+74|scene||X|a scientist in a white clean suit in an ancient DNA lab drilling a tiny sample from an old bone
+75|scene||D|several bands of hunter-gatherers meeting on a plain long ago, exchanging gifts, people greeting each other
+76|scene||D|a crowd of people long ago standing around a grave in the snow, saying goodbye, heads bowed
+77|cast|boy|D|a teenage boy of about fifteen of the band, tall and lean, holding his first spear, proud
+78|cast|boy|D|the teenage boy walking with the men of the band, carrying a heavy load on his back
+79|cast|boy|D|the teenage boy knapping a spear point and tying it to a shaft by the river||the teenage boy lighting a fire with a flint and fungus, blowing on it
+80|cast|hunter|D|the hunter looking out at a dangerous rocky valley with a spear in hand
+81|obj||D|the camp fire in the morning with a bowl of water and a few herbs, quiet, nobody around
+82|cast|hunter|D|the hunter and the teenage boy crossing a fast river on slippery rocks
+83|scene||D|hunters of the band chasing a big red deer stag across rocks, one of them falling||a hunter climbing a steep limestone cliff, a long drop below
+84|obj||D|a river in spring flood, brown water rushing over rocks||two men of different bands facing each other angrily with spears raised
+85|scene||N|a young woman of the band in labour in the shelter, two older women helping her, firelight
+86|scene||N|an older woman of the band holding a young mother's hand during a difficult birth, worried faces
+87|obj||X|a fossil skull with a healed fracture on the side, under a museum lamp
+88|scene||X|two anthropologists in the 1990s at a museum table examining Neanderthal bones with healed injuries
+89|obj||X|a fossil Neanderthal skull and upper arm bone with healed injuries on a table, the leg bones laid out unhurt beside them
+90|scene||X|a modern rodeo arena with dust in the air and a crowd in the stands, a bucking bull in the distance
+91|scene||X|a rodeo rider being thrown off a bucking horse into the dust
+92|scene||D|Neanderthal hunters with heavy wooden spears wrestling with a huge woolly rhinoceros at close range
+93|scene||X|an older anthropologist with a grey beard in an office looking thoughtfully at a fossil bone
+94|scene||D|a Neanderthal with a broken leg lying alone on a rocky slope far from a cave, the cave entrance in the distance
+95|obj||X|a row of fossil bones with healed fractures on a museum table
+96|cast|hunter|D|the young hunter with a scar on his arm, resting after a hunt, tired
+97|cast|hunter|D|the hunter at about thirty, strong and in his prime, standing on a rock above the river
+98|cast|hunter|D|the hunter laughing with a toddler on his shoulders at the camp
+99|cast|hunter|D|close on the hunter's face, thirty, healthy, confident
+100|cast|hunter|D|the hunter walking into camp with a deer over his shoulders
+101|cast|hunter|D|the hunter with his two small children climbing on him at the camp, playful
+102|cast|hunter|D|the hunter running across a meadow with a spear, full of energy
+103|cast|hunter,elder|D|the hunter sitting next to the old woman by the fire, the young one and the old one
+104|cast|elder|D|the old woman holding a newborn grandchild, the young mother beside her
+105|scene||X|two anthropologists in a lab in the early 2000s looking at fossil teeth through a magnifier, trays of teeth on the table
+106|obj||X|a long museum table with rows of fossil jaws and teeth from different species, labelled
+107|obj||X|close on two fossil molars side by side, one sharp and new, one worn flat, on black cloth
+108|obj||X|a fossil adult jaw and a fossil young jaw side by side under a lab lamp
+109|obj||D|a mark of fifteen notches scratched on a flat rock, and then fifteen more next to it
+110|cast|elder|D|the old woman holding a baby, her daughter beside her, three generations
+111|obj||X|a single fossil jaw of a very ancient human relative in a museum case, alone
+112|scene||D|a Neanderthal band at a cave entrance, mostly young adults and children, one older man
+113|cast|hunter,elder,boy|D|the band of modern humans 40,000 years ago at the camp with many grey-haired elders among the young
+114|obj||X|two piles of fossil teeth on a lab table, one much bigger than the other
+115|scene||D|grey-haired elders of the band sitting together and talking by the river, many of them
+116|scene||X|two scientists in a lab disagreeing over a chart on a screen, one shaking her head
+117|obj||X|a few scattered fossil bones in an excavation trench, very incomplete
+118|cast|elder|D|the old woman laughing with other elders of the band in the sun
+119|cast|elder,boy|N|the old woman telling a story by the fire, the children leaning in
+120|obj||X|a pile of human bones on a lab table with tags, under a lamp
+121|scene||X|a forensic anthropologist in a white coat holding up a skull and looking at it closely
+122|obj||X|a jaw with teeth and calipers on a lab table, a notebook beside it
+123|obj||X|a child's skull and jaw on a museum table, adult teeth visible inside the jaw under the baby teeth
+124|obj||X|close on an x-ray of a child's jaw on a lightbox showing adult teeth growing under baby teeth
+125|scene||X|a researcher pointing at the teeth of a fossil child's jaw with a pencil
+126|obj||X|an x-ray of a teenager's knee on a lightbox showing the growth plates not yet fused
+127|obj||X|close on worn adult fossil teeth, flat and polished from chewing
+128|obj||X|an adult human pelvis bone on a lab table under a lamp
+129|obj||X|close on the top of a skull showing the wavy seams between the bones
+130|obj||X|a lab notebook with an age range written as a bar from 35 to 50 next to a skull
+131|obj||X|an old skull with very worn teeth and missing molars on a lab table
+132|obj||X|a very old skeleton laid out on a lab table, the spine bent, worn joints
+133|scene||X|a researcher frowning at an old skeleton, unsure, a magnifier in hand
+134|obj||X|a graph on a computer screen with two lines, one higher than the other, in a lab
+135|cast|elder|D|the old woman sitting proudly in the sun, older than anyone guessed
+136|cast|hunter|D|the hunter at forty five, with grey streaks in his hair and beard, sitting by the river, wiser and calmer
+137|cast|hunter|D|the hunter at forty five rubbing his knee after a long walk, grey in his beard
+138|cast|hunter|E|the older hunter by the fire, the young hunters gathered around him listening
+139|cast|hunter|D|the older hunter pointing down at a valley from a ridge, explaining to younger men
+140|scene||D|a herd of reindeer crossing a shallow river in spring, the hunters watching from the rocks
+141|cast|hunter|N|the older hunter by the fire with his eyes far away, remembering a terrible winter
+142|scene||D|a band of hunter-gatherers long ago walking through a dry cracked valley in a drought
+143|cast|hunter|N|the older hunter tapping his head with a finger while talking to the younger men by the fire
+144|cast|hunter,elder|N|the older hunter and the old woman by the fire, surrounded by young people listening
+145|obj||D|a frozen river valley in a brutal winter, everything white, nobody in sight
+146|obj||D|deep snow burying the camp under the rock overhang, the fire smoke barely visible
+147|cast|boy|D|the teenage boy staring at deep snow, unsure what to do
+148|cast|hunter|D|the older hunter leading the band across the snowy valley with confidence
+149|obj||X|a cave wall covered in red and black paintings of horses and bison, lit by a lamp
+150|obj||X|a row of finely made bone and antler tools and carved figurines from the Upper Paleolithic on a museum shelf
+151|cast|elder|D|the old woman with a digging stick walking out of the camp in the morning
+152|cast|elder|D|the old woman by the fire peeling roots again, this time a toddler at her side
+153|cast|elder|D|the old woman standing still as the hunters run off across the meadow without her
+154|cast|elder|D|the old woman carrying a heavy basket of roots on her back up the slope, strong
+155|scene||X|an anthropologist in the 1990s with a notebook sitting in dry bush in Tanzania watching Hadza women dig
+156|scene||X|a Hadza woman weighing a pile of tubers on a hanging scale at camp, an anthropologist writing
+157|scene||X|older Hadza women digging deep into hard rocky ground with sharpened sticks in dry bush
+158|scene||X|an old Hadza woman pulling a long tuber out of a deep hole in the rocky ground||a pile of freshly dug tubers in dry bush
+159|scene||X|an old Hadza woman handing a roasted tuber to a small child by a fire
+160|scene||X|a Hadza mother nursing a newborn baby while her older child sits by the grandmother
+161|scene||X|a Hadza grandmother feeding a toddler pieces of tuber by a fire, the mother nursing a baby nearby
+162|cast|elder|D|the old woman digging roots on a rocky slope, a toddler sitting beside her
+163|cast|elder|D|the old woman handing a cooked root to a toddler at the camp
+164|scene||D|a young mother of the band with a new baby while her toddler eats food from the grandmother
+165|scene||D|several healthy children of the band playing at the camp, the old woman watching them
+166|scene||D|a long line of mothers, daughters and grandmothers of the band walking together along the river
+167|scene||D|a large band of many families gathered at a river camp, many generations
+168|scene||X|two scientists debating in a lecture hall, a chart on the wall behind them
+169|cast|elder|D|the old woman looking straight at the camera, strong and calm
+170|scene||X|an old female chimpanzee resting in a forest
+171|now|hunter|I|the same modern man hugging his grey-haired mother on a sunny porch
+172|obj||X|a killer whale grandmother leading a pod through grey water
+173|cast|elder,boy|D|the old woman with the toddler in the spring sun at the camp
+174|cast|elder|D|the old woman digging a root while a toddler sits next to her holding a stick
+175|cast|elder|D|the old woman lifting the toddler onto her hip and walking back to camp
+176|cast|elder|E|the old woman at dusk by the fire, very old now, frail but bright eyed
+177|cast|hunter,elder,boy|E|the band at dusk by the fire, the oldest members in the place of honour
+178|scene||X|Hadza elders sitting in the shade of a tree, very old and wrinkled
+179|scene||X|an old San man with white hair sitting by a fire in the Kalahari
+180|obj||D|a single ancient grey-haired person's grave of stones on a hill above the valley at dusk
+181|scene||D|a very old man of the band sitting in the sun with his eyes closed, at peace
+182|cast|elder|D|the old woman walking slowly by the river at seventy, careful steps
+183|obj||X|a museum display of an old skeleton lying on its side, with worn teeth and bent spine
+184|obj||X|close on an ancient jaw with most teeth missing and the bone healed smooth||close on a fossil knee joint with rough worn surfaces
+185|cast|hunter,elder|N|the hunter bringing food to a very old man of the band who can no longer walk, by the fire
+186|cast|elder|E|the old woman squinting at something she can't see well
+187|cast|elder|E|the old woman rubbing her aching hands by the fire
+188|cast|elder|N|close on the old woman chewing slowly with worn teeth
+189|cast|elder|D|the old woman holding her back as she straightens up
+190|obj||D|the camp under the overhang in a hard late winter, snow on the ground, the fire small
+191|cast|elder|N|the old woman by the fire, tired but still there
+192|now|hunter|I|the same modern man at a doctor's office getting his blood pressure checked, relaxed
+193|now|hunter|I|the same modern man walking with his elderly parents in a park
+194|now|hunter|I|the same modern man reading a chart on his phone, eyebrows raised
+195|scene||X|a modern hospital maternity ward with a nurse checking a healthy newborn in a crib
+196|now|hunter|I|the same modern man holding his healthy baby in a bright modern kitchen
+197|scene||X|a nurse giving a vaccine to a baby in a clinic||a child drinking clean water from a tap in a sunny kitchen
+198|now|hunter|I|the same modern man watching his kids play in a park, smiling
+199|scene||X|a maternity ward with several healthy newborns in cribs in a row
+200|now|hunter|I|the same modern man waving to his old neighbour across a quiet suburban street
+201|scene||X|a birthday party with a grandmother blowing out candles, children around her
+202|now|hunter|I|the same modern man's grey-haired father rubbing his knee on a park bench, the man beside him
+203|cast|elder|N|the old woman by the fire with the young ones listening to every word
+204|cast|elder|N|the old woman pointing toward the frozen river in the dark as she tells a story, the kids around her
+205|obj||E|the sun setting over the green limestone valley, the river shining
+206|obj||N|the camp under the overhang at night, the fire glowing
+207|scene||N|a newborn asleep in a fur by the fire
+208|scene||N|the young mother resting on furs by the fire, eyes closed||@cast=elder the old woman by the fire still awake, poking the embers
+209|cast|elder,boy|N|the old woman by the fire telling a story with her hands, the kids around her
+210|obj||D|reindeer walking across a frozen river in winter
+211|cast|boy|N|the kids by the fire half asleep, the boy still listening
+212|cast|boy|N|the boy grown old by the fire, grey hair, telling a story to children
+213|cast|elder|N|the old woman by the fire smiling at the camera
+214|cast|hunter,elder,boy|D|the whole band at the camp, all ages, in the spring sun
+215|cast|elder,boy|D|the old woman and the boy walking together along the river
+216|cast|hunter,elder,boy|N|the band around the fire at night, the old woman in the place of honour
+217|cast|hunter|D|the hunter on a ridge looking across the valley at distant smoke from another camp
+218|scene||D|a Neanderthal man with a heavy brow and broad nose by a fire at the mouth of a cave, seen from far away
+219|scene||D|a Neanderthal and a modern human facing each other across a river at dawn, cautious
+220|cast|hunter|D|the hunter turning to look at the camera, curious, the valley behind him

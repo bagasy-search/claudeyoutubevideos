@@ -1,0 +1,17 @@
+{
+ "beds": {
+  "hook": ["2458.mp3", -31], "c0": ["1330.mp3", -32], "c1": ["1736.mp3", -32], "c2": ["2450.mp3", -32],
+  "c3": ["1237.mp3", -32], "c4": ["2450.mp3", -33], "c5": ["1238.mp3", -34], "c6": ["1329.mp3", -32],
+  "c7": ["1238.mp3", -32], "c8": ["1330.mp3", -32], "c9": ["2472.mp3", -33], "c10": ["1330.mp3", -31]
+ },
+ "hush": ["In her world, she is not a miracle.", "Right now.", "But nobody in that band died at forty nine.", "And the numbers are hard to read.", "Thirty.", "Keeping him alive.", "We filled in the beginning of it."],
+ "phr": [
+  ["A baby is born in your band tonight.", "498.mp3", -16, 3],
+  ["The baby survives his first night.", "2472.mp3", -28, 6],
+  ["He runs around the camp,", "1230.mp3", -26, 4],
+  ["Rodeo riders.", "2150.mp3", -16, 1],
+  ["A truly terrible winter might come", "2407.mp3", -24, 6],
+  ["spending hour after hour digging deep tubers", "2182.mp3", -20, 1],
+  ["Back in the valley forty thousand years ago, the sun is going down.", "1346.mp3", -22, 3]
+ ]
+}
