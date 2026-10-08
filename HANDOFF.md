@@ -41,3 +41,14 @@ Rama `om99-render`, sale de `fu30-render` (Fumigador ep. 2). Es la PRIMERA vez q
 - El farm pide `public/sfx` (copiar de video2/public/sfx) y `public/med`.
 - La serie: ep. 2 `omkey` (la llave: pila CR2032 + funciones; arranca con Doris en el porche apuntando la llave que no anda) ·
   ep. 3 `om500k` (hábitos de 500.000 millas). Polaroid th_om99 en el ep. 2.
+
+## omkey (ep. 2, la llave) — rama omkey-render desde om99-render
+- Guion 90 párrafos, 16.883 car → 971 s. Doris = auto con BOTÓN de arranque (no llave de girar: si no, la hoja "trabada 11 años" y
+  el "key not detected" no cierran). Cambiar 2 párrafos movió el corte de bloques 7-8 → regenerar SÓLO esos (comparar split_blocks).
+- Kit nuevo `src/claudio/ClLlave.tsx`: ClFobHold (botón que se sostiene, anillo 1-5 s, resultado) · ClCoinCell (CR2032 descifrada +
+  dealer $65 vs farmacia $3). Banco `src/index_keykit.tsx`.
+- agnes: 7/15 aprobados (rechazos: llave/mujer que mutan, ventanas que no se mueven, manija que se achica); k_battery timeout 15 min.
+- gpt-image rechazó "llave en la cerradura de la puerta" (parece robo) → "el dueño en SU entrada, como dice el manual".
+- Stock: 2 rondas + 24 q extra para llegar a REAL 30 % (rechazados a ojo 13: logos Skoda/CUPRA, carteles, fuera de tema).
+- Camas: reusadas las de om99 (barajadas). Job 797. Farm: TAR_DIR debe EXISTIR (mkdir) o tar falla.
+- Ep. 3 om500k: gancho ya dicho al final ("six simple things… Frank was already doing four of them").
