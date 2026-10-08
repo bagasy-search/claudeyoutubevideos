@@ -19,4 +19,6 @@ export const SHOTS = [
   X(69, "al refrigerador Las", "st_y_fruits69", "fresh fruit", "Fresh fruit."),
   X(72, "Dos que seguramente", "st_y_bowl72", "fruit basket", "Fruit basket."),
   S(23, "Si sólo pones el vaso", "c", "ClGlassTrap", { props: { mode: "cone" } }),
+  S(2, "debajo de un vaso puesto boca abajo", "bi", "b_cupnight", { p: BI("Night, an upside-down glass over the drain of a stainless kitchen sink in a dark kitchen, lit by a flashlight.") }),
+  S(6, "con harina y lana de acero", "c", "ClNotebook", { props: { title: "Episodio 3", rows: [{ k: "Ratones", v: "sin veneno" }, { k: "Harina", v: "el camino" }, { k: "Lana acero", v: "el hueco" }], note: "La casa de los Ramírez" } }),
 ];
