@@ -67,18 +67,22 @@ export const Card: React.FC<{ style?: React.CSSProperties; children: React.React
   <div style={{ background: CL.white, borderRadius: 18, boxShadow: `0 26px 56px ${CL.shadow}, 0 4px 10px rgba(0,0,0,0.12), 0 2px 0 rgba(255,255,255,0.8) inset`, ...style }}>{children}</div>
 );
 
-// cinta métrica de albañil (marca del canal Albañil): caja amarilla con el número de capítulo + la cinta que sale con sus rayitas
+// parche bordado de la camisa del fumigador (marca del canal Fumigador): escudo verde con borde caqui, el número de capítulo y una cucaracha tachada
 export const KeyTag: React.FC<{ num: string | number; label?: string; w?: number; color?: string }> = ({ num, label = "CAPÍTULO", w = 260, color = CL.navy }) => {
-  const h = w * 1.05, tx = w * 0.95, tl = w * 0.9;
+  const h = w * 1.18;
+  const shield = (k: number) => `M ${w * (0.5)} ${w * 0.04 + k} L ${w * 0.96 - k} ${w * 0.16 + k} L ${w * 0.92 - k} ${h * 0.62} Q ${w * 0.84} ${h * 0.9} ${w / 2} ${h - k} Q ${w * 0.16} ${h * 0.9} ${w * 0.08 + k} ${h * 0.62} L ${w * 0.04 + k} ${w * 0.16 + k} Z`;
   return (
-    <svg width={w + tl} height={h + w * 0.5} viewBox={`0 0 ${w + tl} ${h + w * 0.5}`} style={{ overflow: "visible" }}>
-      <rect x={w * 0.6} y={h * 0.74} width={tl + w * 0.35} height={w * 0.16} fill={CL.yellow} stroke="#9A7A12" strokeWidth={2} />
-      {Array.from({ length: 16 }).map((_, i) => (<rect key={i} x={tx + i * (tl / 16)} y={h * 0.74} width={2.5} height={i % 4 === 0 ? w * 0.1 : w * 0.05} fill="#222" />))}
-      <rect x={w * 0.02} y={w * 0.04} width={w * 0.96} height={h} rx={w * 0.22} fill={CL.yellow} stroke="#9A7A12" strokeWidth={4} />
-      <rect x={w * 0.12} y={w * 0.14} width={w * 0.76} height={h - w * 0.2} rx={w * 0.16} fill={color} />
-      <rect x={w * 0.02} y={h * 0.82} width={w * 0.96} height={w * 0.22} rx={w * 0.06} fill="#3A3A3A" />
-      <text x={w / 2} y={w * 0.34} textAnchor="middle" fontFamily={LABEL} fontWeight={600} fontSize={w * 0.08} letterSpacing={w * 0.012} fill={CL.yellowSoft}>{label}</text>
-      <text x={w / 2} y={w * 0.34 + h * 0.48} textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize={w * 0.38} fill={CL.white}>{num}</text>
+    <svg width={w} height={h + 10} viewBox={`0 0 ${w} ${h + 10}`} style={{ overflow: "visible" }}>
+      <path d={shield(0)} fill={CL.brassLight} stroke="#7C6A40" strokeWidth={3} />
+      <path d={shield(w * 0.05)} fill={color} />
+      <path d={shield(w * 0.075)} fill="none" stroke={CL.brassLight} strokeWidth={2.5} strokeDasharray="7 6" />
+      <text x={w / 2} y={w * 0.36} textAnchor="middle" fontFamily={LABEL} fontWeight={600} fontSize={w * 0.075} letterSpacing={w * 0.012} fill={CL.brassLight}>{label}</text>
+      <text x={w / 2} y={w * 0.36 + h * 0.4} textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize={w * 0.38} fill={CL.white}>{num}</text>
+      <g transform={`translate(${w / 2} ${h * 0.86}) scale(${w / 520})`} opacity={0.95}>
+        <ellipse cx={0} cy={0} rx={34} ry={18} fill="#6B3A1E" /><circle cx={-36} cy={0} r={9} fill="#6B3A1E" />
+        {[-14, 2, 18].map((x) => (<g key={x}><line x1={x} y1={-14} x2={x - 8} y2={-30} stroke="#6B3A1E" strokeWidth={4} /><line x1={x} y1={14} x2={x - 8} y2={30} stroke="#6B3A1E" strokeWidth={4} /></g>))}
+        <line x1={-56} y1={-34} x2={56} y2={34} stroke={CL.red} strokeWidth={9} strokeLinecap="round" />
+      </g>
     </svg>
   );
 };

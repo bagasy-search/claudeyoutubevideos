@@ -1,5 +1,5 @@
-// public/<slug>_meta.json {title, description, pinned_comment} — rama CLAUDIO EL ALBAÑIL (row 306). Embudo:
-//   1ª línea = la página GRATIS del arreglo de ESTE video (landing ?src=<slug>) · 2ª = el regalo "Antes de Pintar" (?src=<slug>-desc)
+// public/<slug>_meta.json {title, description, pinned_comment} — rama CLAUDIO EL FUMIGADOR (row 305). Embudo:
+//   1ª línea = el regalo "Antes de Fumigar" (/gratis/?src=<slug>-desc) · 2ª = la página GRATIS del arreglo de ESTE video (?src=<slug>)
 //   + el texto del canal de la tarjeta (sin su 1ª línea, que es el gancho suelto) con los capítulos REALES (vlog/<slug>/chapters.json).
 // SLUG=x node vlog/claudio/meta.mjs
 import fs from "node:fs";
@@ -9,13 +9,13 @@ const NL = "\n";
 const P = J(V3 + "paras.json"), CF = J(R + `vlog/${SLUG}/chapters.json`);
 const ts = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
 const chapters = CF.chapters.map(([p, t]) => `${ts(p === 0 ? 0 : Math.max(0, P[p].s - 0.5))} ${t}`).join(NL);
-const card = (await get("tracked_channels?select=plan&id=eq.306"))[0].plan.find((c) => c.slug === SLUG);
+const card = (await get("tracked_channels?select=plan&id=eq.305"))[0].plan.find((c) => c.slug === SLUG);
 if (!card.description.includes("[[CHAPTERS]]")) throw new Error("la descripción de la tarjeta no tiene [[CHAPTERS]]");
 const body = card.description.slice(card.description.indexOf("Soy Claudio"));
-const L = "https://manual-albanil-claudio.vercel.app";
+const L = "https://manual-fumigador-claudio.vercel.app";
 const head = [
-  `🧱 GRATIS: el arreglo de este video, paso a paso y con las medidas exactas 👉 ${L}/?src=${SLUG}`,
-  `🎁 Regalo: "Antes de Pintar, las 3 pruebas" (PDF gratis) 👉 ${L}/gratis/?src=${SLUG}-desc`,
+  `🔦 GRATIS: la revisión de 10 minutos con una linterna que hago antes de fumigar cualquier casa (PDF) 👉 ${L}/gratis/?src=${SLUG}-desc`,
+  `🪳 El arreglo de este video, paso a paso y con las medidas exactas 👉 ${L}/?src=${SLUG}`,
   "",
   ...(CF.intro ? [CF.intro, ""] : []),
 ].join(NL) + NL;
