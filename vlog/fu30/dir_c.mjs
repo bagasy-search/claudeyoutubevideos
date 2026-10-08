@@ -61,7 +61,7 @@ export const SHOTS = [
   S(80, "", "bi", "b_garagedoor", { q: "garage door night", p: BI("Night, the closed metal door of a small garage at the side of a modest house, a thin gap under it.") }),
   S(80, "pasé por el garaje", "cl", "c_garage", { p: CLP(`At night he stands in ${GARAGE}, a flashlight in his hand, turning to look at the camera.`) }),
   S(80, "Claudio, ya que estás, mira esto", "bi", "b_jorgegarage", { p: BI(`${JORGE} in his dim garage at night pointing at the floor along the wall.`) }),
-  S(81, "", "kf", "k_droppings", { p: BI(`Night, flashlight on a cement garage floor against the wall: small black rice-shaped droppings scattered along the wall.`), d1: "the flashlight beam on the bare floor", d2: "the beam slides along the wall and lights a trail of small black droppings", sound: "a flashlight click in a quiet garage" }),
+  S(81, "", "bi", "b_droppings", { p: BI("Night, a flashlight beam on a bare cement garage floor along the base of a wall: dozens of small black rice-grain-sized mouse droppings scattered in a line along the wall, close view.") }),
   S(81, "Y la bolsa de croquetas de Bruno, mordida en una esquina", "bi", "b_chewedbag", { p: BI("A big paper bag of dog kibble on a garage floor with a ragged chewed hole in one corner, kibble spilled out, lit by a flashlight.") }),
   S(81, "Eso no es una cucaracha", "av", ""),
   S(81, "Son ratones", "bi", "st_mouse", { q: "mouse garage", p: BI("A small gray house mouse along the wall of a dim garage at night.") }),
