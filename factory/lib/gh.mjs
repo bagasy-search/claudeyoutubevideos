@@ -63,8 +63,15 @@ export async function releaseAsset(repo, tag, name, o = {}) {
 export async function waitRun(repo, runId, { pollMs = 5 * 60_000, maxMs = 4 * 3600_000, log = console.log, ...o } = {}) {
   const t0 = Date.now();
   for (;;) {
-    const j = await ghJson(["run", "view", String(runId), "-R", repo, "--json", "status,conclusion,jobs"], o);
-    const jobs = j.jobs || [];
+    // REST con paginación a mano: `gh run view --json jobs` sigue el Link de la página 2, que trae la ruta
+    // numérica (repositories/<id>/…) y el proxy de las sesiones en la nube la rechaza con 403 (>100 jobs).
+    const j = await ghJson(["api", `repos/${repo}/actions/runs/${runId}`], o);
+    const jobs = [];
+    for (let page = 1; page <= 10; page++) {
+      const p = await ghJson(["api", `repos/${repo}/actions/runs/${runId}/jobs?filter=latest&per_page=100&page=${page}`], o);
+      jobs.push(...(p.jobs || []));
+      if ((p.jobs || []).length < 100) break;
+    }
     const ok = jobs.filter((x) => x.conclusion === "success").length;
     const bad = jobs.filter((x) => ["failure", "cancelled", "timed_out"].includes(x.conclusion)).length;
     log(`run ${runId}: ${j.status}${j.conclusion ? "/" + j.conclusion : ""} · jobs ok ${ok} · fallidos ${bad} · total ${jobs.length}`);
