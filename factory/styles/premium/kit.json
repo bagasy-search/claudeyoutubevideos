@@ -1721,7 +1721,7 @@
       "file": "HarlanBox.tsx",
       "export": "SafetyBox",
       "capa": "tapa",
-      "_uso": "Caja del calefactor: requisitos que se tildan (state todo = tachado) y sello BUY IT / PUT IT BACK. Hasta 4 items. >=5 s.",
+      "_uso": "Caja del calefactor: requisitos que se tildan (state todo = tachado) y sello BUY IT / PUT IT BACK. Hasta 4 items. >=5 s. label = texto de la franja roja de la caja (default INDOOR HEATER), eyebrow = sobretítulo (default BEFORE YOU BUY): ponelos SIEMPRE fuera de Harlan.",
       "req": [
         "items"
       ],
@@ -1731,7 +1731,9 @@
         },
         "title": "string",
         "stamp": "string",
-        "image": "asset"
+        "image": "asset",
+        "label": "string",
+        "eyebrow": "string"
       }
     },
     "FinePrint": {

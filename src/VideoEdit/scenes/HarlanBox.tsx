@@ -583,8 +583,8 @@ export const FlowerPotMyth: React.FC<{ durationInFrames: number; a?: number; b?:
 
 // ═══ 10) SAFETY BOX ══════════════════════════════════════════════════════════════════════════
 /** La caja del calefactor en la góndola: los requisitos se tildan (o se tachan) y cae el sello del veredicto. */
-export const SafetyBox: React.FC<{ durationInFrames: number; items: ({ text: string; state?: string } | string)[]; title?: string; stamp?: string; image?: string }> =
-  ({ durationInFrames, items, title = "CHECK THE BOX", stamp, image }) => {
+export const SafetyBox: React.FC<{ durationInFrames: number; items: ({ text: string; state?: string } | string)[]; title?: string; stamp?: string; image?: string; label?: string; eyebrow?: string }> =
+  ({ durationInFrames, items, title = "CHECK THE BOX", stamp, image, label = "INDOOR HEATER", eyebrow = "BEFORE YOU BUY" }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const D = Math.max(75, durationInFrames);
@@ -600,7 +600,7 @@ export const SafetyBox: React.FC<{ durationInFrames: number; items: ({ text: str
       <div style={{ position: "absolute", left: 250, top: 190, width: 900, height: 720, perspective: 1800, transform: `translateY(${(1 - inn) * 500}px)` }}>
         <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `rotateY(${-16 + sway}deg) rotateX(4deg)` }}>
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(170deg, ${C.kraft}, #8e6a3c)`, borderRadius: 6, boxShadow: "inset 0 0 60px rgba(0,0,0,0.35)" }}>
-            <div style={{ position: "absolute", left: 40, right: 40, top: 40, height: 120, background: C.red, display: "flex", alignItems: "center", paddingLeft: 30, fontFamily: BEBAS, fontSize: 100, color: C.white, letterSpacing: 3 }}>INDOOR HEATER</div>
+            <div style={{ position: "absolute", left: 40, right: 40, top: 40, height: 120, background: C.red, display: "flex", alignItems: "center", paddingLeft: 30, fontFamily: BEBAS, fontSize: 100, color: C.white, letterSpacing: 3 }}>{label}</div>
             <div style={{ position: "absolute", left: 40, right: 40, top: 200, display: "flex", flexDirection: "column", gap: 26 }}>
               {L.map((x, i) => {
                 const at = 18 + i * Math.max(8, D * 0.12);
@@ -618,7 +618,7 @@ export const SafetyBox: React.FC<{ durationInFrames: number; items: ({ text: str
         </div>
       </div>
       <div style={{ position: "absolute", left: 1230, top: 300, width: 620 }}>
-        <Eyebrow text="BEFORE YOU BUY" />
+        <Eyebrow text={eyebrow} />
         <Titulo text={title} f={f} at={6} size={110} />
       </div>
       <Sello text={stamp || (todoOk ? "BUY IT" : "PUT IT BACK")} color={todoOk ? C.green : C.red} at={Math.round(D * 0.7)} x={1470} y={760} rot={-8} size={96} />
