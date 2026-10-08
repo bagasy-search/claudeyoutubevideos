@@ -68,20 +68,21 @@ export const Card: React.FC<{ style?: React.CSSProperties; children: React.React
 );
 
 // parche bordado de la camisa del fumigador (marca del canal Fumigador): escudo verde con borde caqui, el número de capítulo y una cucaracha tachada
-export const KeyTag: React.FC<{ num: string | number; label?: string; w?: number; color?: string }> = ({ num, label = "CAPÍTULO", w = 260, color = CL.navy }) => {
+export const KeyTag: React.FC<{ num: string | number; label?: string; w?: number; color?: string }> = ({ num, label = "CAPÍTULO", w = 260, color = CL.nitrile }) => {
   const h = w * 1.18;
   const shield = (k: number) => `M ${w * (0.5)} ${w * 0.04 + k} L ${w * 0.96 - k} ${w * 0.16 + k} L ${w * 0.92 - k} ${h * 0.62} Q ${w * 0.84} ${h * 0.9} ${w / 2} ${h - k} Q ${w * 0.16} ${h * 0.9} ${w * 0.08 + k} ${h * 0.62} L ${w * 0.04 + k} ${w * 0.16 + k} Z`;
   return (
     <svg width={w} height={h + 10} viewBox={`0 0 ${w} ${h + 10}`} style={{ overflow: "visible" }}>
-      <path d={shield(0)} fill={CL.brassLight} stroke="#7C6A40" strokeWidth={3} />
+      <path d={shield(0)} fill={CL.navy} stroke="#0E1322" strokeWidth={3} />
       <path d={shield(w * 0.05)} fill={color} />
       <path d={shield(w * 0.075)} fill="none" stroke={CL.brassLight} strokeWidth={2.5} strokeDasharray="7 6" />
       <text x={w / 2} y={w * 0.36} textAnchor="middle" fontFamily={LABEL} fontWeight={600} fontSize={w * 0.075} letterSpacing={w * 0.012} fill={CL.brassLight}>{label}</text>
       <text x={w / 2} y={w * 0.36 + h * 0.4} textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize={w * 0.38} fill={CL.white}>{num}</text>
-      <g transform={`translate(${w / 2} ${h * 0.86}) scale(${w / 520})`} opacity={0.95}>
-        <ellipse cx={0} cy={0} rx={34} ry={18} fill="#6B3A1E" /><circle cx={-36} cy={0} r={9} fill="#6B3A1E" />
-        {[-14, 2, 18].map((x) => (<g key={x}><line x1={x} y1={-14} x2={x - 8} y2={-30} stroke="#6B3A1E" strokeWidth={4} /><line x1={x} y1={14} x2={x - 8} y2={30} stroke="#6B3A1E" strokeWidth={4} /></g>))}
-        <line x1={-56} y1={-34} x2={56} y2={34} stroke={CL.red} strokeWidth={9} strokeLinecap="round" />
+      <g transform={`translate(${w / 2} ${h * 0.86}) scale(${w / 520}) rotate(-35)`} opacity={0.95}>
+        {/* llave inglesa bordada */}
+        <rect x={-46} y={-9} width={78} height={18} rx={8} fill={CL.brassLight} stroke="#5E6168" strokeWidth={3} />
+        <path d="M 30 -24 A 26 26 0 1 1 30 24 L 30 9 L 48 9 L 48 -9 L 30 -9 Z" fill={CL.brassLight} stroke="#5E6168" strokeWidth={3} />
+        <circle cx={-50} cy={0} r={14} fill={CL.brassLight} stroke="#5E6168" strokeWidth={3} /><circle cx={-50} cy={0} r={5} fill={color} />
       </g>
     </svg>
   );

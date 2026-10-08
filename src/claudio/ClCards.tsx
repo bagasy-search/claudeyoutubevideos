@@ -21,11 +21,11 @@ export const ClChapter: React.FC<{ n?: number; title: string; sub?: string; bed?
     <AbsoluteFill>
       <Bed src={bed} seed={(n || 1) * 7} dim={0.16} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 420, height: 270, background: hexA(alert ? CL.red : CL.navy, 0.93), clipPath: `inset(0 0 0 ${100 - band * 100}%)`, opacity: out, boxShadow: `0 20px 50px ${CL.shadow}` }}>
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 10, background: alert ? "#8E1F17" : CL.yellow }} />
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 10, background: alert ? "#8E1F17" : CL.nitrile }} />
       </div>
       {n != null ? (
         <div style={{ position: "absolute", left: 150, top: 120 + (1 - p) * -500, rotate: `${swing}deg`, transformOrigin: "50% 8%", opacity: out, filter: `drop-shadow(0 24px 30px ${CL.shadow})` }}>
-          <KeyTag num={n} label={label} w={250} color={alert ? CL.red : CL.navyDeep} />
+          <KeyTag num={n} label={label} w={250} color={alert ? CL.red : CL.nitrile} />
         </div>
       ) : null}
       <div style={{ position: "absolute", left: n != null ? 480 : 150, top: 555, translate: "0 -50%", opacity: out }}>
@@ -51,7 +51,7 @@ export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; f
           <Card style={{ padding: "34px 50px 30px", borderRadius: 6 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", borderBottom: `4px solid ${CL.navy}`, paddingBottom: 10, marginBottom: 22 }}>
               <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: CL.ink }}>{title}</div>
-              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 26, color: CL.inkSoft, letterSpacing: 3 }}>ORDEN DE SERVICIO</div>
+              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 26, color: CL.inkSoft, letterSpacing: 3 }}>ORDEN DE TRABAJO</div>
             </div>
             {items.map((it, i) => {
               const t0 = 16 + i * step, k = lin(f, t0, t0 + 8), hk = lin(f, t0 + 4, t0 + 16);
