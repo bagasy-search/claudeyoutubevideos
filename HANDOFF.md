@@ -1,28 +1,43 @@
-# HANDOFF — fu30 (Claudio el Fumigador #2 · serie "La casa de los Ramírez" ep. 2: la barrera de la puerta)
-Estado: ✅ ENTREGADO 8-oct (job 786, tarjeta plan-own-1791387464226-1 → "Video listo · subir", sin YouTube).
-mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fu30/fu30.mp4?v=1 (15:28, 27.850 cuadros). Auditor: min1 31 cortes / 0 silencios, negro 0, congelados 0.
- Rama `fu30-render`, sale de `fuagua-render` (misma cadena; ver su HANDOFF en git: `git show fuagua-render:HANDOFF.md`).
+# HANDOFF — om99 (Claudio Old Mechanic #1 · EN · serie "Miss Doris's Car" ep. 1: las 15 funciones escondidas)
+Estado: ENTREGADO (job 793, release om99, 961 s). Negro 649,5 s = clip k_glow (baúl a oscuras con la manija verde) — intencional.
+Rama `om99-render`, sale de `fu30-render` (Fumigador ep. 2). Es la PRIMERA vez que la cadena vlog/claudio corre en INGLÉS: los videos
+2-3 (omkey, om500k) salen de ESTA rama.
 
-## Qué cambia respecto de fuagua
-- Guion `guiones/fu30_filmado.txt` 13.516 car (tú neutro) · Arreglo 2 de fixes.json = pág. 10 del Manual (`public/img/fu30/page10.jpg` de book.pdf).
-- Polaroid del ep. 1 (ClVideoRef th_fuagua, párr. 6) · gancho al ep. 3: bolitas negras + bolsa de croquetas mordida en el garaje → ratones (ClVideoRef th_furatas, `next`).
-- Seguridad: hierbas en el marco ARRIBA (el laurel le cae mal al perro, ClBarrierLine "dog") + cebo de bórax en tapita cerrada (ClCheck) + el ácido bórico del ep. 1 (ClFridgeBack fixed).
-- Kit nuevo `src/claudio/ClPuerta.tsx`: ClDoorGap (light/sealed: la rayita de luz de 1 cm y el burlete) · ClBarrierLine (line/herbs/dog) · ClPerimeter30 (bridges/clean).
-  Registrados en ClMain, BEDABLE (gen_timeline), CMAX (timeline), sound.mjs, banco src/index_fukit.tsx.
+## Qué cambió para inglés (todo commiteado en esta rama)
+- `voz.py`: voz por defecto `claudio_en_definitiva` (ElevenLabs v4 con tags → Fish crudo, fish_refs/claudio_en_definitiva.mp3),
+  `--lang en`, `--cps 18.5` (medido 17,4 car/s en el video entero). ⛔ La compuerta contaba "thirty-five" vs "35" y "a hundred and
+  twenty" vs "$120" como frases comidas (gap 4-5) → `norm()` ahora colapsa cualquier número (palabras o cifras) a un token "#".
+- `timeline.mjs`: `norm()` une apóstrofos y guiones ("Doris's", "I'll", "rear-end") en vez de separarlos (si no, 25 tomas "no encuentro").
+- `chk.py` EN: cuenta caracteres y minuto de cada mención (Manual/page/free/twenty-seven). 15:00-15:30 ≈ 16.700 car.
+- `mkplan.mjs` lang en; `stock.mjs` juez de "car-care channel"; `meta.mjs` row 312, slice desde "I'm Claudio", "Capítulos:"→"Chapters:",
+  landing old-mechanic-claudio.vercel.app; `job.mjs` row 312 + voice_ref; `avatar_run.mjs` prompt de mecánico (azul marino).
+- Componentes genéricos traducidos en esta rama (ClCards: CHAPTER, WORK ORDER, FREE ON PAGE, PAGE N, BEFORE/AFTER, point your camera
+  here · ClOverlays · ClSarro ClVideoRef NEXT VIDEO/ON THE CHANNEL · ClParts KeyTag = parche con LLAVE INGLESA).
+- ClTheme: azul marino #1F2A44 + mostaza #B7791F (Glovebox Manual) + rojo alertas.
+- lib.mjs: WHO mecánico (camisa azul marino, trapo rojo, grasa), SHOP, DRIVE (entrada de Doris), DORIS, CAR (sedán plateado 2012
+  sin marcas, 280.000 millas), Frank (difunto, sólo en fotos), DOG Daisy.
+- Kit NUEVO `src/claudio/ClMecanico.tsx`: ClFeatureTag (etiqueta de taller manila con el número de la cuenta regresiva) · ClGasArrow
+  (indicador de nafta + flecha → auto desde arriba con la tapa) · ClCarMap (el auto de Doris con un punto por función: done/now) ·
+  ClOBDScan (scan: puerto 16 pines + lector + código; price: $120 / $20 / FREE). Registrados en ClMain, BEDABLE, CMAX, sound.mjs.
+  Banco de stills `src/index_mekit.tsx` (props reales del video).
+- SONIDO: sfx_pro NO tiene autos → `vlog/claudio/sfx_car_gen.mjs` (ElevenLabs SFX) → `public/sfx_car/*.mp3` (19: amb_shop, amb_driveway,
+  amb_car_interior, car_door_*, trunk_pop, hood_close, engine_start, fob_chirp, ratchet, tire_air, seat_click, glovebox, gas_cap,
+  turn_signal, obd_beep, wiper_rain, plastic_clip). `sound.mjs` resuelve el prefijo `car/` → `sfx_car/` (PATH()). ⛔ public/sfx_car
+  NO está en git: copiarla al worktree del video 2 (o re-correr sfx_car_gen con crédito de ElevenLabs; la cuota quedó en ~0).
+- `scripts/stills_at.mjs`: bundle en `D:/tmp/remotion-stills-bundle-om99` (el fijo compartido chocaba con otra sesión: EEXIST).
 
 ## Números
-- Voz 16/16 bloques al 1er intento, 931 s crudo → 927 s tras comprimir el gancho. Modal marcó 4 huecos: los 4 FALSOS (whisper-1).
-- Minuto 1: 33 cortes, toma máx 3,06 s · Manual: mención 1 ~3:33 (frase del mostrador, pág. 10) · 2 ~8:38 (ClBookPage pág. 10) · 3 ~14:06 (QR /r + US$27).
-- avatar 58 ventanas 272 s (1 /run) · real 26,5 % · agnes 7/10 (rechazados k_chalk mano que desaparece, k_droppings salto, k_pipe caño que muta → fotos; b_droppings regenerada).
+- Guion 16.843 car, 99 párrafos · voz 967 s crudo → 960,5 s tras comprimir el gancho · 20/20 bloques (sim 0,97-1,0).
+- Modal marcó 2 huecos (3:44 y 12:28): FALSOS (whisper-1 los oye). Avatar 1 /run, 59 ventanas, 252 s, US$0,25.
+- Minuto 1: 34 cortes, toma máx 3,22 s · avatar 24,9 % · metraje REAL 25,9 % (stock en toma 11,8 + camas 14,2) · agnes 13/15 aprobados
+  (k_lockbag y k_childlock mutaban la llave → foto) · 266 tomas · 40 componentes · mezcla -14,1 LUFS / TP -1,6, sin música.
+- Imágenes gpt-image-2 low Batch: 168 (OpenAI se quedó sin crédito a mitad: el creador cargó; los batches viejos con error hay que
+  marcarlos `bajado:true` en `_gptimg_batches.json` o el reintento vuelve a bajar los mismos errores).
+- Stock: 62+31 elegidos por el juez, 20 rechazados a ojo (patentes, marcas VW/CUPRA/Chevrolet, carteles, volante a la derecha, grafiti,
+  tomas que no muestran la frase).
 
 ## Gotchas
-- ⛔ D: se llenó a 34 MB a mitad de imágenes + stock (ENOSPC). gptimg se REANUDA solo (estado de batches), stock salta lo hecho.
-  Liberado: worktree fuagua (pusheado), temporales remotion/gh-artifact >2 h en D:/rtmp/tmp, crudos `_v3/fu30_stock/*.mp4`.
-- ⛔ `D:/Proyectos/sfx_pro` PERDIÓ archivos (otra sesión poda): 14 efectos que usaba sound.mjs ya no existen → remapeados a los que sí
-  (scrub_pad→scrub_floor, fizz_gentle→fizz_tablet_a, stamp_es→stamp_rubber, amb_suburb_backyard→amb_suburb_birds…). Antes del farm:
-  `grep -o '"[a-z]*/[a-z_0-9]*\.flac"' vlog/claudio/sound.mjs | ... [ -f D:/Proyectos/sfx_pro/$f ]`.
-- Stock: juez aprobó otras familias, otro perro, cucaracha de Madagascar → 28 a `_rech`; tomas con Lucía/Jorge/niños/Bruno bloqueadas antes (touch `_rech/<n>.mp4`).
-- ⛔ encfin falla 'no assets match' si falta `out/<slug>_mix.wav` en el release assets-<slug>: `gh release upload assets-<slug> out/<slug>_mix.wav` y `gh run rerun`.
-- ⛔ push.sh de encfin usa /tmp (= D:/rtmp/tmp): con D lleno, `TMPDIR=C:/Users/bauti/AppData/Local/Temp/encfin`.
-- Congelado 6 s (stock de mosquito quieto) en 12:35 → st_mosquito a foto en timeline.gen.ts + ONLY_CHUNKS=48 (la foto ya estaba en el tar) + encfin de nuevo.
-- ⛔ El canal 305 ya NO es `draft:claudiofumigador`: deliver_card con `https://www.youtube.com/channel/UCQZUY5cP_86-mYvG6FxqS8g`.
+- agnes_qc con clips en public/vid: `QC_CLIPDIR=public/vid/<slug>`. Los kf necesitan `<clip>_last.jpg` (ffmpeg -sseof -0.1).
+- El farm pide `public/sfx` (copiar de video2/public/sfx) y `public/med`.
+- La serie: ep. 2 `omkey` (la llave: pila CR2032 + funciones; arranca con Doris en el porche apuntando la llave que no anda) ·
+  ep. 3 `om500k` (hábitos de 500.000 millas). Polaroid th_om99 en el ep. 2.
