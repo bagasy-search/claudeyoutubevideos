@@ -1,17 +1,17 @@
 # Arregla los tramos COLAPSADOS de _v3/<slug>_wordms.json: cuando Whisper (Modal, sobre el máster entero) se saltea palabras que Fish SÍ
-# dijo, align.py las deja aplastadas (≥3 palabras de <20 ms seguidas) y el tiempo queda en un hueco antes (una palabra estirada varios
+# dijo, align.py las deja aplastadas (≥4 palabras de <70 ms seguidas) y el tiempo queda en un hueco antes (una palabra estirada varios
 # segundos, o un silencio falso). Las reparte en ese hueco, proporcional al largo de cada palabra, para que los cortes del DIRECTOR caigan
 # en la frase real. SLUG=x python vlog/claudio/fix_wordms.py
 # (verificar antes que el hueco tenga voz: silencedetect sin silencios largos; si Fish de verdad la salteó, se regenera el bloque)
 import json, os
 S = os.environ["SLUG"]; R = os.environ.get("R") or (os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))).replace("\\", "/") + "/")
 P = R + f"_v3/{S}_wordms.json"; W = json.load(open(P, encoding="utf-8"))
-short = lambda w: w["e"] - w["s"] < 0.02
+short = lambda w: w["e"] - w["s"] < 0.07
 i, fixed = 0, []
 while i < len(W):
     j = i
     while j < len(W) and short(W[j]): j += 1
-    if j - i >= 3:
+    if j - i >= 4:
         a = i  # incluir hacia atrás (hasta 3 palabras) la palabra estirada (>1,2 s), o la que quedó sola después de un hueco (>1,5 s)
         for k in range(i - 1, max(-1, i - 4), -1):
             if W[k]["e"] - W[k]["s"] > 1.2: a = k; break
