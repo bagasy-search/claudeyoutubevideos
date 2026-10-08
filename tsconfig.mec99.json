@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","include":[],"files":["src/index_mec99.tsx","src/claudio/three-shim.d.ts"],"exclude":[]}
