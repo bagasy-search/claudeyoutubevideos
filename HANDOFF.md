@@ -1,5 +1,6 @@
 # HANDOFF — jpgasto (Claudio en Japón #3 · "Lo que aprendí en Tokio": 9 cosas en las que los japoneses nunca gastan)
-Estado: EN ENTREGA (job 787, tarjeta plan-own-1791387497512-2 del row 307).
+Estado: ✅ ENTREGADO 8-oct (job 787, tarjeta plan-own-1791387497512-2 del row 307 → "Video listo · subir", sin YouTube).
+mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/jpgasto/jpgasto.mp4 (15:14, 27.410 cuadros).
 
 - Cadena = jphigiene → jpviejo → jpgasto. Rama jpgasto-render = la más nueva (todo el kit): el video 4 (jpcasa, ya anticipado al final:
   "las once cosas que hacen que tu casa huela a viejo") sale de ACÁ.
