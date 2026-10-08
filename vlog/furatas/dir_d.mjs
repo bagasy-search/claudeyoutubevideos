@@ -1,0 +1,27 @@
+// DIRECTOR D — furatas: ventanas de avatar extra (2ª oración de párrafos largos sin cara) para llegar a ~25 % de avatar visible.
+import { S } from "../claudio/lib.mjs";
+export const SHOTS = [
+  S(10, "Los ratones se fueron, eso creyó", "av", ""),
+  S(11, "Y este año, volvieron", "av", ""),
+  S(14, "Lo segundo", "av", ""),
+  S(19, "La menta tiene que ser", "av", ""),
+  S(24, "Antes de poner nada", "av", ""),
+  S(28, "Había huellitas", "av", ""),
+  S(31, "Y había otro", "av", ""),
+  S(34, "Lo primero fue la bolsa", "av", ""),
+  S(41, "Dónde van", "av", ""),
+  S(45, "Porque la menta se va", "av", ""),
+  S(49, "Y aquí está el error que todos cometen", "av", ""),
+  S(52, "La goma mordida", "av", ""),
+  S(54, "Después, con la linterna", "av", ""),
+  S(57, "El cebo", "av", ""),
+  S(59, "Dos o tres trampas", "av", ""),
+  S(62, "La primera noche, nada", "av", ""),
+  S(65, "Guantes y mascarilla", "av", ""),
+  S(75, "El gato ayuda", "av", ""),
+  S(78, "¿Cómo sé si son muchos?", "av", ""),
+  S(79, "Las bolitas de rata", "av", ""),
+  S(81, "¿Cuánto gastaron los Ramírez?", "av", ""),
+  S(83, "Por la mañana", "av", ""),
+  S(89, "Después, cosas mordidas", "av", ""),
+];

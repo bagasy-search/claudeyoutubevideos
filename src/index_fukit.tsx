@@ -4,8 +4,11 @@ import { registerRoot, Composition, AbsoluteFill, Sequence } from "remotion";
 import { ClHidden50, ClFridgeBack, ClPeroxide, ClTrailMap } from "./claudio/ClFumigador";
 import { ClChapter, ClCheck } from "./claudio/ClCards";
 import { ClDoorGap, ClBarrierLine, ClPerimeter30 } from "./claudio/ClPuerta";
-const B = "ref_fu30.png";
+import { ClPoisonWall, ClFlourMap, ClCoinHole, ClTrapSet } from "./claudio/ClRaton";
+const B = "ref_furatas.png";
 const K: [React.FC<any>, any][] = [
+  [ClPoisonWall, { mode: "wall", bed: B }], [ClPoisonWall, { mode: "dog", bed: B }], [ClFlourMap, { mode: "tracks", bed: B }], [ClFlourMap, { mode: "clean", bed: B }], [ClFlourMap, { mode: "mint", bed: B }],
+  [ClCoinHole, { mode: "coin", bed: B }], [ClCoinHole, { mode: "plug", bed: B }], [ClTrapSet, { mode: "wall", bed: B }], [ClTrapSet, { mode: "box", bed: B }],
   [ClDoorGap, { mode: "light", bed: B }], [ClDoorGap, { mode: "sealed", bed: B }], [ClBarrierLine, { mode: "line", bed: B }], [ClBarrierLine, { mode: "herbs", bed: B }],
   [ClBarrierLine, { mode: "dog", bed: B }], [ClPerimeter30, { mode: "bridges", bed: B }], [ClPerimeter30, { mode: "clean", bed: B }],
   [ClHidden50, { hidden: 50, bed: B }], [ClFridgeBack, { mode: "find", bed: B }], [ClFridgeBack, { mode: "fixed", bed: B }], [ClPeroxide, { mode: "contact", bed: B }],
