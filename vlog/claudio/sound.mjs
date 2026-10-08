@@ -11,6 +11,7 @@ const has = (pub, p) => fs.existsSync(pub + LIB + p);
 
 // ── ambiente por escena (regex sobre nombre + prompt de la toma), primera coincidencia gana
 const AMB = [
+  ["amb/amb_fridge_hum.flac", /night|dark kitchen|flashlight|refrigerator|fridge|compressor/i],
   ["amb/amb_hotel_lobby.flac", /lobby|reception|checking in/i],
   ["amb/amb_hotel_hallway.flac", /corridor|hallway|cart|storeroom|guest-room door|room numbers|door numbered|service hallway/i],
   ["amb/amb_indoor_generic.flac", /office|desk|calendar|notebook|printed/i],
@@ -25,6 +26,11 @@ export function ambOf(c, prompt = "") { const t = (c.name || "") + " " + prompt;
 
 // ── foley por lo que se ve (primera coincidencia gana): [regex, archivos, vol, dur máx s, offset s]
 const FOLEY = [
+  // ── fumigador (casa de los Ramírez)
+  [/flashlight|switches on|switching it on/i, ["design/click_slide.flac", "foley/light_pull_switch.flac"], 0.42, 1, 0.05],
+  [/(pull|push)\w* .*refrigerator|refrigerator .*(pulled|pushed) /i, ["foley/ceramic_scrape.flac", "foley/scrub_floor.flac"], 0.42, 2.5, 0.1],
+  [/kibble|dog eat/i, ["foley/powder_pour.flac", "foley/stir_ceramic.flac"], 0.3, 1.6, 0.1],
+  [/aerosol|insecticide can/i, ["foley/spray_liquid.flac"], 0.4, 1.8, 0.05],
   // ── albañil (casa de Doña Marta)
   [/aluminum foil|foil/i, ["foley/paper_crinkle.flac", "foley/paper_wrinkle.flac"], 0.4, 2, 0.05],
   [/packing tape/i, ["foley/plastic_wrapper.flac", "foley/paper_crinkle.flac"], 0.42, 1.6, 0.05],
@@ -56,6 +62,7 @@ const FOLEY = [
   [/wip(e|ing)|cloth|towel/i, ["foley/towel_wipe_hands.flac"], 0.38, 2, 0.1],
   [/dolly|unbolted|wrench|plumber|installing/i, ["foley/cabinet_door_slide.flac", "foley/cap_open.flac"], 0.3, 1.2, 0.1],
   [/washing machine|washer/i, ["foley/washer_door_open.flac", "foley/washer_running.flac"], 0.35, 2.5, 0],
+  [/cockroach|roaches|scatter|skitter/i, ["foley/paper_wrinkle.flac", "foley/paper_crinkle.flac"], 0.18, 1.6, 0.1],
 ];
 export function foleyOf(c, prompt, i) {
   const t = (c.name || "") + " " + (prompt || "");
@@ -69,6 +76,10 @@ function compFx(n, c, durS) {
   const P = c.props || {}, out = [];
   const add = (src, vol, at, dur) => out.push({ src, vol, at, dur });
   if (n === "ClChapter") { add("design/whoosh_sweep_long.flac", 0.32, -0.15, 1.6); add("foley/cutter_extend.flac", 0.34, 0.12, 1.2); add(P.alert ? "design/impact_echo.flac" : "design/impact_drum_subtle.flac", P.alert ? 0.2 : 0.4, 0.35, 1.8); }
+  if (n === "ClHidden50") { add("foley/paper_wrinkle.flac", 0.2, durS * 0.3, 2.4); add("design/swell_suspense.flac", 0.26, durS * 0.28, 3); add("design/impact_drum_subtle.flac", 0.36, durS * 0.62, 1.4); }
+  if (n === "ClFridgeBack") { add("foley/ceramic_scrape.flac", 0.3, 0.2, 1.4); [0.15, 0.35, 0.55, 0.73].forEach((k) => add("design/tick_single.flac", 0.34, durS * k, 0.6)); }
+  if (n === "ClPeroxide") { add("foley/spray_trigger_a.flac", 0.38, 0.3, 0.8); add("foley/fizz_gentle.flac", 0.3, 0.8, Math.min(durS - 1, 4)); }
+  if (n === "ClTrailMap") { add(P.mode === "erase" ? "foley/spray_trigger_b.flac" : "design/pencil_strokes.flac", 0.32, 0.4, 1.8); if (P.mode === "bait") add("design/stamp_rubber.flac", 0.3, 0.6, 0.8); }
   if (n === "ClFoilTest") { add("foley/paper_crinkle.flac", 0.36, 0.4, 1.4); add("foley/paper_wrinkle.flac", 0.34, Math.min(durS - 1, 1.9), 1.4); }
   if (n === "ClTapeTest") { add("foley/plastic_wrapper.flac", 0.34, 0.3, 1); add("foley/ceramic_scrape.flac", 0.26, 0.8, 0.6); add("design/impact_drum_subtle.flac", 0.36, 1.47, 1.2); }
   if (n === "ClHouseMap") { add("design/pencil_strokes.flac", 0.32, 0.3, 1.8); }
