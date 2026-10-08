@@ -1,19 +1,19 @@
-# HANDOFF — jpgasto (Claudio en Japón #3 · "Lo que aprendí en Tokio": 9 cosas en las que los japoneses nunca gastan)
-Estado: ✅ ENTREGADO 8-oct (job 787, tarjeta plan-own-1791387497512-2 del row 307 → "Video listo · subir", sin YouTube).
-mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/jpgasto/jpgasto.mp4 (15:14, 27.410 cuadros).
+# HANDOFF — jpcasa (Claudio en Japón #4 · "Lo que aprendí en Tokio": 11 cosas que hacen que tu casa huela a viejo)
+Estado: ✅ ENTREGADO 8-oct (job 788, tarjeta plan-own-1791387497512-3 del row 307 → "Video listo · subir", sin YouTube).
+mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/jpcasa/jpcasa.mp4 (15:19, 27.574 cuadros, final con encfin).
 
-- Cadena = jphigiene → jpviejo → jpgasto. Rama jpgasto-render = la más nueva (todo el kit): el video 4 (jpcasa, ya anticipado al final:
-  "las once cosas que hacen que tu casa huela a viejo") sale de ACÁ.
-- Kit nuevo en ClJapon.tsx: ClHeroHook (miniatura HÉROE que cobra vida: foto + titular + sellos rojos `marks`). ClRule con `label`
-  ("NÚMERO") y `starText` ("LA QUE CASI TODOS PAGAMOS"); en dir_a está el helper R(n, title, sub) con total 9.
-- Contenido = fixes.json jpgasto (4 productos, 6 paños, cero aromatizantes, regla del lugar, anotar un mes) + molde (cajas, adornos,
-  aparatitos, suscripciones). Seguridad: nunca mezclar, cloro con nada, vinagre y agua oxigenada por separado.
-- Voz 894 s (16/16; bloque 7 regenerado por "almohadón" → "cojín") + 9 respiros · minuto 1: 33 cortes · avatar 34 ventanas 196 s US$0,25 ·
-  real 33,7 % · agnes 13/15 · -14 LUFS (con la sfx_pro REARMADA).
-- Método: mención 1 a ~4:00 (pág. 11) · 2 a ~8:03 (ClBookPage pág. 11) · 3 a ~13:37 (QR /r + US$27). Loop de la alacena: se paga al final.
+- Cadena = jphigiene → jpviejo → jpgasto → jpcasa. Rama jpcasa-render = base del video 5 (jpagua, ya anticipado: el frasco marrón
+  que en Japón está en la cocina). Guiones de jpagua y jpbano ya redactados en D:/rtmp/jpagua_work y D:/rtmp/jpbano_work.
+- Las 11: cortinas · alfombras (mención 1, pág. 12, mostrador) · almohadas y cojines · colchón · alfombrita del baño · toallas (mención 2
+  ClBookPage pág. 12) · 7 = la lavadora (ClWasher3D peel/cycle/ajar) · zapatos · basurero · cajón de las verduras · clóset (ClClosetAir,
+  ClWardrobeGap, ClCrossVent). Loop: Sato-san le pone la punta de la cortina en la cara → se paga en NEXT ("el olor vive en lo que no se lava").
+- Voz 895 s (16/16 al 1er intento) + 11 respiros · minuto 1: 33 cortes, 0 silencios · avatar 40 ventanas 167 s US$0,25 ·
+  real 28,7 % · agnes 16/19 (3 → foto) · -14 LUFS TP -1,8 · gpt 153 imgs low Batch.
 
 ## Gotchas
-- Modal se comió 3 arranques "Número cuatro/cinco/ocho" → patch_asr.py.
-- gptimg rechaza el token "blurred" aunque sea "screen blurred so no text is readable".
-- D: se llenó 2 veces (stock y descarga de gptimg): gptimg es reanudable (re-correr, no re-manda); borrar _v3/<slug>_stock/*.mp4 durante el stock.
-- Worktree jpviejo borrado con el método seguro (junctions primero) y verificado remotion + 121 flac después.
+- Modal se comió "Número dos: las alfombras" → patch_asr.py 157:9.
+- Minuto 1 salió con 27 cortes: tomas a <0,9 s se caen (dos `at` en la misma frase) → repartir en frases distintas (dir_d).
+- Metraje real 21,8 % en la 1ª pasada → sumar `q:` a ~20 tomas bi y 2ª pasada de stock.mjs (rechazados a ojo a public/broll/<slug>_st/_rech).
+- agnes_qc mira public/broll por defecto: los kf viven en public/vid/<slug> → `QC_CLIPDIR=public/vid/<slug>`.
+- kf rechazados 2 veces → _v3/<slug>_aceptados.json (repuesto aceptado) para que gen_timeline --final pase.
+- gen_timeline pide public/<slug>.m4a (ffmpeg del wav).
