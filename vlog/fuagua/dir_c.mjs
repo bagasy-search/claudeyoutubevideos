@@ -24,7 +24,7 @@ export const SHOTS = [
   C(65, "la de diez volúmenes, la común", "ClBottle3D", { title: "10 volúmenes", sub: "la común · para la casa", tag: "3 %" }),
   S(66, "", "bi", "st_bleach", { q: "bleach bottle", p: BI("A white bottle of household bleach with a plain blank label on a laundry shelf.") }),
   S(66, "prefiero el frasco marrón", "av", ""),
-  S(67, "", "kf", "k_potato", { p: BI(`Close view of a halved raw potato on a cutting board, ${H} holding a brown plastic bottle of hydrogen peroxide above it.`), d1: "a few drops fall on the cut potato", d2: "white foam bubbles up on the potato surface", sound: "a soft fizzing" }),
+  S(67, "", "bi", "k_potato", { p: BI(`Close view of a halved raw potato on a cutting board, ${H} holding a brown plastic bottle of hydrogen peroxide above it.`), d1: "a few drops fall on the cut potato", d2: "white foam bubbles up on the potato surface", sound: "a soft fizzing" }),
   S(67, "Si no hace nada, ya es agua", "av", ""),
   S(68, "", "bi", "b_twobottles2", { p: BI(`Two ${BOTTLE.replace("a brown plastic bottle", "brown plastic bottles")} on a shelf inside a dark cabinet.`) }),
   S(69, "", "bi", "b_familydinner", { q: "family dinner table", p: BI(`${LUCIA}, ${JORGE} and ${KIDS} having dinner at their kitchen table in the evening, ${DOG} under the table.`) }),
@@ -37,7 +37,7 @@ export const SHOTS = [
   C(72, "Menos de lo que les costó una sola", "ClReceipt", { head: "LO QUE GASTARON", lines: [["Agua oxigenada", "2 frascos"], ["Atomizador", "1"], ["Ácido bórico", "1 bolsita"]], total: ["vs. 1 fumigación", "menos"] }),
   // ── el resultado
   S(73, "", "bi", "b_nightdoor", { q: "dark kitchen doorway", p: BI(`Night, ${KITCHEN} dark, seen from the doorway, a man's silhouette holding a flashlight.`) }),
-  S(73, "prendí la linterna", "kf", "k_flash3", { p: BI(`Night, a clean speckled gray granite kitchen counter and stainless sink, dark.`), d1: "the dark clean counter", d2: "a flashlight beam sweeps across the counter and sink, nothing moves", sound: "a flashlight click in a quiet kitchen" }),
+  S(73, "prendí la linterna", "bi", "k_flash3", { p: BI(`Night, a clean speckled gray granite kitchen counter and stainless sink, dark.`), d1: "the dark clean counter", d2: "a flashlight beam sweeps across the counter and sink, nothing moves", sound: "a flashlight click in a quiet kitchen" }),
   S(73, "Corrimos el refrigerador", "bi", "b_dryback", { p: BI(`Behind an older white refrigerator pulled from the wall: a dry empty drip tray, a clean floor, a small closed bait cap against the wall with two dead cockroaches beside it, lit by a flashlight.`) }),
   C(73, "dos cucarachas muertas al lado de la tapita", "ClFridgeBack", { mode: "fixed" }),
   S(74, "", "bi", "b_luciasmile", { q: "woman smiling kitchen night", p: BI(`${LUCIA} laughing with relief in her kitchen at night, a flashlight in her hand.`) }),

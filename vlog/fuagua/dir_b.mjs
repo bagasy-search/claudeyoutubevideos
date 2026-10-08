@@ -14,9 +14,9 @@ export const SHOTS = [
   S(30, "Las que estaban adentro del motor", "bi", "b_motor2", { q: "refrigerator coils back", p: BI(`Extreme close view of ${ROACHES} hiding between the warm black coils at the back of a refrigerator.`) }),
   // ── los huevos
   S(31, "", "bi", "st_ootheca", { q: "cockroach egg", p: BI("Extreme close view of a brown cockroach egg case with its segmented ridges on a dark kitchen floor.") }),
-  S(31, "El aerosol no la atraviesa", "kf", "k_eggspray", { p: BI("Extreme close view of a brown cockroach egg case on a tile, a fine mist of spray landing on it."), d1: "a fine mist lands on the egg case", d2: "the droplets bead up and roll off the hard shell", sound: "a soft aerosol hiss" }),
+  S(31, "El aerosol no la atraviesa", "bi", "k_eggspray", { p: BI("Extreme close view of a brown cockroach egg case on a tile, a fine mist of spray landing on it."), d1: "a fine mist lands on the egg case", d2: "the droplets bead up and roll off the hard shell", sound: "a soft aerosol hiss" }),
   S(31, "dos o tres semanas después", "bi", "st_nymphs", { q: "baby cockroaches", p: BI(`Tiny pale newborn cockroaches next to an empty split egg case in a crack of a kitchen cabinet.`) }),
-  C(31, "justo a las tres semanas", "ClTimer30", { minutes: 21, label: "21 días", text: "nacen los huevos" }),
+  C(31, "justo a las tres semanas", "ClNotebook", { title: "Las fumigaciones", rows: [{ k: "1ª fumig.", v: "día 0" }, { k: "Volvieron", v: "día 21" }, { k: "2ª fumig.", v: "día 0" }, { k: "Volvieron", v: "día 21" }], note: "nacen los huevos" }),
   // ── 1 de 50
   C(32, "", "ClHidden50", { hidden: 50 }),
   S(32, "como sacar agua de un barco con agujero", "bi", "st_bail", { q: "bailing water boat", p: BI("An old man bailing water out of a small wooden rowboat with a plastic bucket, water still coming in.") }),
@@ -31,7 +31,7 @@ export const SHOTS = [
   S(35, "juntamos las croquetas y las cápsulas con papel", "bi", "b_paper", { q: "paper towel cleaning floor", p: BI(`Close view of ${HG} picking up dog kibble and brown egg cases from a tiled floor with a wad of paper towel.`) }),
   S(35, "Nada de barrer en seco", "bi", "b_bag", { q: "garbage bag tied", p: BI(`A tied plastic garbage bag on the floor beside an open back door to a patio at night.`), ov: { c: "ClChip", props: { text: "Nunca en seco", alert: true } } }),
   // ── la botella
-  S(36, "", "kf", "k_fill", { p: BI(`Close view of ${H} pouring a brown plastic bottle of hydrogen peroxide into ${SPRAYER.replace("filled with clear liquid, ", "")} on a granite counter.`), d1: "the hydrogen peroxide pours into the empty spray bottle", d2: "the spray bottle is full", sound: "liquid pouring into a plastic bottle" }),
+  S(36, "", "bi", "k_fill", { p: BI(`Close view of ${H} pouring a brown plastic bottle of hydrogen peroxide into ${SPRAYER.replace("filled with clear liquid, ", "")} on a granite counter.`), d1: "the hydrogen peroxide pours into the empty spray bottle", d2: "the spray bottle is full", sound: "liquid pouring into a plastic bottle" }),
   C(36, "Una botella de quinientos mililitros", "ClMeasureCup", { fill: 1, label: "500 ml", where: "pura, sin rebajar" }),
   S(36, "Y una sola gota de detergente de platos", "bi", "b_drop", { q: "dish soap bottle", p: BI(`Extreme close view of a single drop of green dish soap falling from a squeeze bottle into the neck of ${SPRAYER}.`), ov: { c: "ClChip", props: { text: "1 gota" } } }),
   S(37, "", "bi", "st_roachmacro", { q: "cockroach macro", p: BI(`Extreme close view of a ${ROACH1} with a shiny waxy body on a white tile.`) }),

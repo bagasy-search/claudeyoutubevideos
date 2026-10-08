@@ -93,7 +93,7 @@ export const SHOTS = [
   S(18, "", "bi", "st_pharmacy", { q: "pharmacy counter", p: BI("An ordinary neighborhood pharmacy counter with shelves of bottles behind it.") }),
   S(18, "dos frascos, y una botella con atomizador vacía", "bi", "b_buy", { q: "pharmacy checkout", p: BI(`Two brown plastic bottles of hydrogen peroxide and an empty ${SPRAYER.replace("filled with clear liquid, ", "")} on a shop counter next to a paper bag.`) }),
   S(18, "En el Manual te dejé la frase exacta", "av", "", { ov: { c: "ClChip", props: { text: "Manual · pág. 9" } } }),
-  C(18, "tal cual, para que no te vendan otra cosa", "ClNotebook", { title: "En la farmacia", rows: [{ k: "Agua oxigenada", v: "10 vol. ×2" }, { k: "Atomizador", v: "vacío" }, { k: "Bicarbonato", v: "1 caja" }], mark: "pág. 9 ✓" }),
+  C(18, "tal cual, para que no te vendan otra cosa", "ClNotebook", { title: "En la farmacia", rows: [{ k: "Agua oxig.", v: "10 vol. ×2" }, { k: "Atomizador", v: "vacío" }, { k: "Bicarbonato", v: "1 caja" }], note: "La frase exacta · pág. 9" }),
   S(18, "Cuesta alrededor de un dólar el frasco", "bi", "b_coins", { q: "coins counter", p: BI(`A few coins and a small pharmacy receipt next to ${BOTTLE} on a kitchen counter.`) }),
   S(19, "", "bi", "b_luciaspray2", { p: BI(`${LUCIA} spraying a single cockroach on the kitchen wall with a spray bottle, frowning.`) }),
   S(19, "Y lo que veía era lo de menos", "av", ""),
