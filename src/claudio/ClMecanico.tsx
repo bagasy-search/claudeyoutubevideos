@@ -15,14 +15,14 @@
 //   ClTread3D    corte 3D de la banda de la llanta (three.js): "bar" la rayita atravesada en el canal · "worn" el dibujo baja hasta la
 //                rayita (se cambia) · "coin" la moneda en el canal: le queda vida
 import React, { useMemo } from "react";
-import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig, Easing } from "remotion";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { CL, LABEL, SERIF, HAND, clamp01, ease, hexA } from "./ClTheme";
 import { Bed, Card, Contact, RoomLight, lin, pop, useOut } from "./ClParts";
 
-const Cam: React.FC<{ pos: THREE.Vector3; target: THREE.Vector3 }> = ({ pos, target }) => {
+const Cam: React.FC<{ pos: any; target: any }> = ({ pos, target }) => {
   const { camera } = useThree(); camera.position.copy(pos); camera.lookAt(target); camera.updateProjectionMatrix(); return null;
 };
 const Tag: React.FC<{ x: number; y: number; text: string; color?: string; o?: number; size?: number }> = ({ x, y, text, color = CL.navy, o = 1, size = 40 }) => (
