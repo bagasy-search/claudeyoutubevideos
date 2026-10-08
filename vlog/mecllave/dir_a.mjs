@@ -21,7 +21,7 @@ export const SHOTS = [
   S(1, "Sólo andaba de cerca", "c", "ClRangeMeter", { props: { mode: "now" } }),
   S(1, "pegada a la puerta", "bi", "b_closefob", { p: BI(`${ELENA} pressing a key fob with her hand almost touching the driver door of ${CAR} in a workshop.`) }),
   S(1, "En la agencia le dijeron", "bi", "b_clerk", { q: "car dealership service", q2: "office desk man", p: BI("A young car dealership service clerk in a polo shirt shaking his head while holding an old key fob, a computer screen beside him.") }),
-  S(1, "que había que cambiarlo y programarlo", "bi", "b_programmer", { p: BI("Close view of a key programming device with a cable plugged into a car's diagnostic port under the dashboard, a technician's hand on it.") }),
+  S(1, "que había que cambiarlo y programarlo", "bi", "b_programmer", { q: "car diagnostic scanner", q2: "obd scanner", p: BI("Close view of a key programming device with a cable plugged into a car's diagnostic port under the dashboard, a technician's hand on it.") }),
   S(1, "Cuarenta y cinco dólares", "c", "ClReceipt", { props: { head: "PRESUPUESTO DE LA AGENCIA", lines: [["Control nuevo", "US$ 30"], ["Programación", "US$ 15"], ["Volver", "el jueves"]], total: ["Total", "US$ 45"] } }),
   // ── el loop del botón
   S(2, "", "bi", "b_superlot", { p: BI(`A busy supermarket parking lot in daylight, ${CAR} parked among other cars, people with carts turning their heads toward it.`) }),

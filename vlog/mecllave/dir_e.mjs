@@ -7,9 +7,9 @@ export const SHOTS = [
   // ── minuto 1
   B(0, "cuarenta y cinco dólares", "b_45", `Close view of ${EH} holding two twenty-dollar bills and a five-dollar bill over a dealership counter.`, { ov: { c: "ClChip", props: { text: "US$ 45", alert: true } } }),
   B(1, "y el control no le cerró el auto", "b_nolock", `${CAR} parked inside ${SHOP} with its doors unlocked, ${ELENA} in the background at the door holding up a key fob.`),
-  B(1, "y volver el jueves", "b_calthu", "Close view of a paper wall calendar with a Thursday circled in red pen, in a dealership office."),
+  B(1, "y volver el jueves", "b_calthu", "Close view of a paper wall calendar with a Thursday circled in red pen, in a dealership office.", { q: "wall calendar", q2: "calendar" }),
   B(2, "hay un botón", "b_redbutton0", `Extreme close view of the red panic button of ${FOB}, a fingertip hovering over it.`, { q: "car remote button" }),
-  B(3, "y sin cerrajero", "b_locksmithvan", "A locksmith's white work van parked in a supermarket parking lot, its side door open with tools inside."),
+  B(3, "y sin cerrajero", "b_locksmithvan", "A locksmith's white work van parked in a supermarket parking lot, its side door open with tools inside.", { q: "white van parked", q2: "work van" }),
   B(4, "de diez minutos", "b_dash10", `Close view of ${GAUGE} lit up at engine start, ${H} pointing at a warning light.`, { q: "car dashboard lights" }),
   B(6, "con doscientos ochenta mil kilómetros", "b_odo", `Extreme close view of the odometer of ${GAUGE} with a high six-digit mileage.`, { q: "car odometer",  ov: { c: "ClChip", props: { text: "280.000 km" } }  }),
   B(6, "que era de su esposo, Don Ernesto", "b_ernesto", `${EH} holding a faded printed photo of a gray-haired man with a mustache standing next to a brand-new silver sedan.`),

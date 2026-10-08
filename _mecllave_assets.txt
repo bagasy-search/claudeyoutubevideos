@@ -12,10 +12,11 @@ img/mecllave/b_nolock.jpg
 broll/mecllave_st/bd_parkinglotcars3.mp4
 img/mecllave/b_closefob.jpg
 img/mecllave/b_clerk.jpg
-broll/mecllave_st/b_clerk.mp4
 img/mecllave/b_programmer.jpg
+broll/mecllave_st/b_programmer.mp4
 broll/mecllave_st/bd_workbenchtools5.mp4
 img/mecllave/b_calthu.jpg
+broll/mecllave_st/b_calthu.mp4
 img/mecllave/b_superlot.jpg
 img/mecllave/b_redbutton0.jpg
 img/mecllave/b_pocket.jpg
@@ -25,9 +26,9 @@ img/mecllave/st_carkey.jpg
 img/mecllave/k_cointwist.jpg
 img/mecllave/b_watchtwo.jpg
 img/mecllave/b_coin.jpg
-broll/mecllave_st/b_coin.mp4
 img/mecllave/c_fobshow.jpg
 img/mecllave/b_locksmithvan.jpg
+broll/mecllave_st/b_locksmithvan.mp4
 img/mecllave/b_before.jpg
 img/mecllave/b_after.jpg
 img/mecllave/st_mechanic2.jpg
