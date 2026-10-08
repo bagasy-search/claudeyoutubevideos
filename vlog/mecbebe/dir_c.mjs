@@ -21,9 +21,9 @@ export const SHOTS = [
   S(41, "y un pedal trabado es igual de peligroso", "av", ""),
   // ── 10 tablero
   S(42, "", "c", "ClOilMap13", { props: { upto: 13, n: 10 } }),
-  S(42, "el aceite junta polvo y deja el plástico pegajoso", "bi", "b_dashdust", { p: BI(`Extreme close view of dust and lint stuck to a glossy oily dashboard of ${CABIN}.`) }),
+  S(42, "el aceite junta polvo y deja el plástico pegajoso", "bi", "b_dashdust", { q: "cleaning car dashboard", p: BI(`Extreme close view of dust and lint stuck to a glossy oily dashboard of ${CABIN}.`) }),
   S(42, "El tablero se limpia con un paño apenas húmedo", "bi", "b_dashwipe", { p: BI(`Close view of ${H} wiping the dashboard of ${CABIN} with a damp microfiber cloth.`), d1: "the cloth wipes across the dashboard", d2: "the plastic is left matte and clean", sound: "a cloth wiping plastic" }),
-  S(42, "que diga mate, sin brillo", "bi", "b_matteproduct", { p: BI("A plain spray bottle of interior plastic cleaner with a blank label on the seat of a car next to a cloth.") }),
+  S(42, "que diga mate, sin brillo", "bi", "b_matteproduct", { q: "car interior cleaning spray", p: BI("A plain spray bottle of interior plastic cleaner with a blank label on the seat of a car next to a cloth.") }),
   // ── 11 gomas
   S(43, "", "c", "ClOilMap13", { props: { upto: 13, n: 11 } }),
   S(43, "Ésta es la que más se ve en internet", "av", ""),
@@ -34,7 +34,7 @@ export const SHOTS = [
   S(44, "Por eso en la frase de la refaccionaria lo pedí aparte", "av", ""),
   // ── 12 parabrisas
   S(45, "", "c", "ClOilMap13", { props: { upto: 13, n: 12 } }),
-  S(45, "El aceite en el vidrio deja una película", "bi", "b_glassfilm", { p: BI("Extreme close view of a car windshield with an oily rainbow film smeared across the glass.") }),
+  S(45, "El aceite en el vidrio deja una película", "bi", "b_glassfilm", { q: "dirty windshield", p: BI("Extreme close view of a car windshield with an oily rainbow film smeared across the glass.") }),
   S(45, "Y en las escobillas, hace que salten y dejen rayas", "kf", "k_wiper", { p: BI(`Close view of the wiper blades of ${CAR} resting on a wet windshield.`), d1: "the wiper starts to sweep", d2: "the wiper chatters and leaves streaks", sound: "a wiper chattering on glass" }),
   S(45, "De noche, con las luces de los otros autos", "bi", "st_nightrain", { q: "night rain windshield", p: BI("Night driving in the rain seen through a windshield, oncoming headlights.") }),
   // ── 13 frenos y llantas
@@ -42,15 +42,15 @@ export const SHOTS = [
   S(46, "aceite cerca de los discos o de las pastillas de freno", "bi", "st_brakedisc", { q: "car brake disc", p: BI("A car brake disc and caliper behind a wheel.") }),
   S(46, "Un freno con aceite no frena", "av", ""),
   S(47, "", "bi", "b_tireshine", { p: BI(`Close view of a glossy oily black tire sidewall on ${CAR}.`) }),
-  S(47, "la parte que toca el piso, la llanta pierde agarre", "bi", "b_tread", { p: BI("Extreme close view of a car tire tread with an oily sheen on it on wet asphalt.") }),
+  S(47, "la parte que toca el piso, la llanta pierde agarre", "bi", "b_tread", { q: "tire tread wet road", p: BI("Extreme close view of a car tire tread with an oily sheen on it on wet asphalt.") }),
   S(47, "la rueda tira gotitas de aceite a la pintura", "bi", "b_splatter", { p: BI(`Extreme close view of tiny oily dark specks on the silver paint just behind the front wheel of ${CAR}.`) }),
   S(47, "Para las llantas, agua, jabón y un cepillo", "bi", "st_tirebrush", { q: "cleaning car tire brush", p: BI("A brush scrubbing a car tire with soap.") }),
   // ── cómo lo sacamos
   C(48, "", "ClChapter", { n: 7, title: "Cómo lo sacamos", sub: "de donde no iba" }),
   S(49, "", "bi", "b_bucket", { p: BI(`Close view of ${EH} squeezing a few drops of dish soap into a bucket of warm water in ${DRIVE}.`) }),
-  S(49, "Un paño apenas húmedo, nunca empapado", "bi", "b_wring", { p: BI(`Close view of ${H} wringing out a microfiber cloth over a bucket.`) }),
+  S(49, "Un paño apenas húmedo, nunca empapado", "bi", "b_wring", { q: "wringing cloth bucket", p: BI(`Close view of ${H} wringing out a microfiber cloth over a bucket.`) }),
   S(49, "y después otro paño seco", "av", ""),
-  S(50, "", "bi", "b_wheelwash", { p: BI(`Close view of ${H} wiping the steering wheel of ${CABIN} with a damp soapy cloth.`) }),
+  S(50, "", "bi", "b_wheelwash", { q: "cleaning steering wheel", p: BI(`Close view of ${H} wiping the steering wheel of ${CABIN} with a damp soapy cloth.`) }),
   S(50, "Dos pasadas con jabón y secado", "bi", "b_pedaldry", { p: BI(`Low close view of ${H} drying a rubber brake pedal of ${CABIN} with a dry cloth.`) }),
   S(50, "Después la palanca, el tablero y los botones", "bi", "b_gearwipe", { p: BI(`Close view of ${GH} wiping the gear shift knob of ${CABIN} with a damp cloth.`) }),
   S(50, "El reflejo en el parabrisas desapareció con la segunda pasada", "c", "ClGlare", { props: { mode: "clean" } }),
@@ -67,7 +67,7 @@ export const SHOTS = [
   C(54, "", "ClChapter", { n: 8, title: "Los errores que más veo", sub: "con el aceite de bebé", alert: true }),
   S(55, "", "bi", "b_err1", { p: BI(`Close view of a hand squeezing ${BABY} straight onto a car dashboard, a puddle of oil forming.`), ov: { c: "ClChip", props: { text: "1 · Directo a la pieza", alert: true } } }),
   S(55, "Siempre en el paño, unas gotas", "av", ""),
-  S(56, "", "bi", "b_err2", { p: BI("Extreme close view of an oily smear left on silver car paint, dust stuck in it."), ov: { c: "ClChip", props: { text: "2 · Aceite en la pintura", alert: true } } }),
+  S(56, "", "bi", "b_err2", { p: BI(`Extreme close view of silver car paint with a greasy oily smear catching the light and dust stuck in it.`), ov: { c: "ClChip", props: { text: "2 · Aceite en la pintura", alert: true } } }),
   S(56, "siempre jabón para autos", "bi", "st_carwash2", { q: "hand washing car", p: BI("Someone washing a car by hand with a soapy sponge.") }),
   S(57, "", "bi", "b_err3", { p: BI(`Close view of the very glossy oily dashboard of ${CABIN}.`), ov: { c: "ClChip", props: { text: "3 · Brillante ≠ limpio", alert: true } } }),
   S(57, "Está aceitado", "av", ""),

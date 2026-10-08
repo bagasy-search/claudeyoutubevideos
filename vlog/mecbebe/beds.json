@@ -31,8 +31,8 @@
  },
  {
   "name": "bd_drivewaycar6",
-  "q": "driveway car",
-  "scene": "Ordinary real footage: driveway car, real everyday look, no person looking at the camera."
+  "q": "car in carport",
+  "scene": "Ordinary real footage: car in carport, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_microfibercloth7",
@@ -51,8 +51,8 @@
  },
  {
   "name": "bd_carsteeringwheel10",
-  "q": "car steering wheel",
-  "scene": "Ordinary real footage: car steering wheel, real everyday look, no person looking at the camera."
+  "q": "old steering wheel",
+  "scene": "Ordinary real footage: old steering wheel, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_carpedals11",
@@ -136,13 +136,13 @@
  },
  {
   "name": "bd_nightstreet27",
-  "q": "night street",
-  "scene": "Ordinary real footage: night street, real everyday look, no person looking at the camera."
+  "q": "street lights evening",
+  "scene": "Ordinary real footage: street lights evening, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_drivingcity28",
-  "q": "driving city",
-  "scene": "Ordinary real footage: driving city, real everyday look, no person looking at the camera."
+  "q": "driving street day",
+  "scene": "Ordinary real footage: driving street day, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_trafficlight29",
@@ -151,18 +151,18 @@
  },
  {
   "name": "bd_carmirror30",
-  "q": "car mirror",
-  "scene": "Ordinary real footage: car mirror, real everyday look, no person looking at the camera."
+  "q": "side mirror car",
+  "scene": "Ordinary real footage: side mirror car, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_carseat31",
-  "q": "car seat",
-  "scene": "Ordinary real footage: car seat, real everyday look, no person looking at the camera."
+  "q": "car back seat",
+  "scene": "Ordinary real footage: car back seat, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_bucketwater32",
-  "q": "bucket water",
-  "scene": "Ordinary real footage: bucket water, real everyday look, no person looking at the camera."
+  "q": "washing car bucket",
+  "scene": "Ordinary real footage: washing car bucket, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_garden33",
@@ -206,13 +206,13 @@
  },
  {
   "name": "bd_citytraffic41",
-  "q": "city traffic",
-  "scene": "Ordinary real footage: city traffic, real everyday look, no person looking at the camera."
+  "q": "busy street",
+  "scene": "Ordinary real footage: busy street, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_parkinglot42",
-  "q": "parking lot",
-  "scene": "Ordinary real footage: parking lot, real everyday look, no person looking at the camera."
+  "q": "parked cars",
+  "scene": "Ordinary real footage: parked cars, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_carrear43",
@@ -231,8 +231,8 @@
  },
  {
   "name": "bd_gasstation46",
-  "q": "gas station",
-  "scene": "Ordinary real footage: gas station, real everyday look, no person looking at the camera."
+  "q": "fuel station day",
+  "scene": "Ordinary real footage: fuel station day, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_suburbstreet47",

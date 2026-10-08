@@ -71,15 +71,16 @@ export const ClDropTest: React.FC<{ mode?: "surface" | "inside"; bed?: string }>
         <svg width={W} height={Hh} viewBox={`0 0 ${W} ${Hh}`}>
           <defs>
             <clipPath id="dt_lens"><path d={`M 60 280 Q 80 60 420 40 L 900 60 Q 980 120 960 300 Q 930 500 520 520 L 160 500 Q 50 470 60 280 Z`} /></clipPath>
-            <linearGradient id="dt_in" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor="#D8DDE3" /><stop offset="100%" stopColor="#9AA2AB" /></linearGradient>
+            <radialGradient id="dt_in" cx="0.45" cy="0.4" r="0.7"><stop offset="0%" stopColor="#FFFFFF" /><stop offset="45%" stopColor="#C9D0D8" /><stop offset="100%" stopColor="#6E7782" /></radialGradient>
           </defs>
           <g clipPath="url(#dt_lens)">
             {/* adentro: reflector y lámpara */}
             <rect width={W} height={Hh} fill="url(#dt_in)" />
             {[300, 640].map((cx, i) => <g key={i}><circle cx={cx} cy={290} r={150} fill="#E9ECEF" stroke="#7D858F" strokeWidth={8} /><circle cx={cx} cy={290} r={46} fill="#FFFFFF" stroke="#9BA3AC" strokeWidth={6} /></g>)}
             {/* lo amarillo/opaco de afuera */}
-            <rect width={W} height={Hh} fill="rgba(214,182,104,0.62)" />
-            <rect width={W} height={Hh} fill="rgba(240,232,210,0.35)" />
+            <rect width={W} height={Hh} fill="rgba(206,168,80,0.72)" />
+            <rect width={W} height={Hh} fill="rgba(235,225,200,0.38)" />
+            {Array.from({ length: 30 }, (_, i) => <line key={"s" + i} x1={(i * 37) % W} y1={0} x2={(i * 37) % W + 60} y2={Hh} stroke="rgba(255,250,235,0.18)" strokeWidth={3} />)}
             {/* la franja del dedo con la gota */}
             <rect x={380} y={-20} width={150} height={(Hh + 40) * k} rx={60} fill={mode === "surface" ? "url(#dt_in)" : "rgba(214,182,104,0.0)"} opacity={mode === "surface" ? 0.96 : 0} />
             {mode === "surface" ? <g opacity={k}><circle cx={455} cy={290} r={46} fill="#FFFFFF" /><path d={`M 380 ${Hh * k - 10} L 530 ${Hh * k - 10}`} stroke="rgba(255,255,255,0.5)" strokeWidth={6} /></g> : null}
@@ -116,25 +117,25 @@ export const ClGrip: React.FC<{ mode?: "dry" | "oiled"; bed?: string }> = ({ mod
       <div style={{ position: "absolute", left: 280, top: 120 + (1 - p) * 100, width: 900, height: 820, opacity: clamp01(p * 1.4) }}>
         <svg width={900} height={820} viewBox="0 0 900 820" style={{ overflow: "visible" }}>
           {/* piso del auto */}
-          <path d="M 0 760 L 900 760 L 900 820 L 0 820 Z" fill="#2B2F36" />
+          <path d="M 0 800 L 900 800 L 900 860 L 0 860 Z" fill="#2B2F36" opacity={0.85} />
           {/* brazo del pedal */}
           <g transform={`rotate(${pedalAng} 640 120)`}>
-            <rect x={620} y={110} width={40} height={460} rx={14} fill="#3A3F48" />
-            <g transform="translate(520 540)">
-              <rect width={260} height={90} rx={22} fill={mode === "oiled" ? "#1A1A1A" : "#24262A"} />
-              {Array.from({ length: 7 }, (_, i) => <rect key={i} x={20 + i * 34} y={14} width={14} height={62} rx={6} fill="#3B3E44" />)}
-              {mode === "oiled" ? <><rect width={260} height={90} rx={22} fill="url(#gr_shine)" /><path d="M 30 20 L 230 20" stroke="rgba(255,255,255,0.7)" strokeWidth={8} strokeLinecap="round" /></> : null}
+            <rect x={624} y={110} width={32} height={440} rx={12} fill="#5A606A" /><rect x={600} y={90} width={80} height={40} rx={10} fill="#3A3F48" />
+            <g transform="translate(500 520)">
+              <rect width={300} height={120} rx={26} fill={mode === "oiled" ? "#1A1A1A" : "#24262A"} />
+              {Array.from({ length: 8 }, (_, i) => <rect key={i} x={22 + i * 35} y={16} width={16} height={88} rx={7} fill="#3B3E44" />)}
+              {mode === "oiled" ? <><rect width={300} height={120} rx={26} fill="url(#gr_shine)" /><path d="M 30 22 L 270 22" stroke="rgba(255,255,255,0.7)" strokeWidth={8} strokeLinecap="round" /></> : null}
             </g>
           </g>
           <defs><linearGradient id="gr_shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor="rgba(255,255,255,0.45)" /><stop offset="50%" stopColor="rgba(255,255,255,0.05)" /><stop offset="100%" stopColor="rgba(255,255,255,0.35)" /></linearGradient></defs>
           {/* el zapato */}
-          <g transform={`translate(${380 + 120 * press - 40 * slip} ${420 + 140 * press + 230 * slip}) rotate(${-20 + 10 * press + 25 * slip})`}>
+          <g transform={`translate(${300 + 150 * press - 30 * slip} ${330 + 150 * press + 120 * slip}) rotate(${-14 + 10 * press + 22 * slip})`}>
             <path d="M 0 60 Q 10 0 120 6 L 330 30 Q 380 40 380 90 L 380 120 Q 370 140 330 140 L 20 140 Q 0 130 0 60 Z" fill="#6B4A32" />
             <rect x={0} y={128} width={380} height={24} rx={10} fill="#2A1E15" />
           </g>
           {/* flechas */}
           {mode === "dry" ? <path d="M 500 330 l 0 120 l -26 -26 m 26 26 l 26 -26" stroke={GREEN} strokeWidth={14} fill="none" opacity={lin(f, 18, 26)} strokeLinecap="round" /> : null}
-          {mode === "oiled" ? <path d="M 560 560 q 60 80 20 170 l -10 -38 m 10 38 l 32 -24" stroke={CL.red} strokeWidth={14} fill="none" opacity={lin(f, 28, 34)} strokeLinecap="round" /> : null}
+          {mode === "oiled" ? <path d="M 420 520 q -60 60 -40 150 l -14 -36 m 14 36 l 26 -26" stroke={CL.red} strokeWidth={14} fill="none" opacity={lin(f, 28, 34)} strokeLinecap="round" /> : null}
         </svg>
       </div>
       <Tag x={1240} y={200} text={mode === "dry" ? "Pedal limpio" : "Pedal aceitado"} color={mode === "dry" ? GREEN : CL.red} o={lin(f, 6, 16)} size={52} />
