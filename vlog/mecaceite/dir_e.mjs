@@ -19,14 +19,14 @@ export const SHOTS = [
   B(4, "después de cambiar el aceite", "st_oilchange4", "A mechanic draining old oil from under a car.", { q: "draining engine oil" }),
   B(4, "antes de irme", "b_flashunder2", `Low view of a flashlight beam pointing under the front of ${CAR}.`),
   // ── resto
-  B(9, "lo vuelve a poner a mano", "b_pourfunnel", `Close view of a quick-lube technician pouring oil from ${JUG} through a funnel into an engine.`),
+  B(9, "lo vuelve a poner a mano", "b_pourfunnel", `Close view of a quick-lube technician pouring oil from ${JUG} through a funnel into an engine.`, { q: "funnel oil" }),
   B(12, "Para leer la varilla bien hay dos condiciones", "b_flatcar", `${CAR} parked on the flat cement floor of ${DRIVE} with the hood open, morning.`),
-  B(17, "por ejemplo cero W veinte", "b_label020", `Extreme close view of ${H} holding ${JUG} showing its back label, nothing legible.`, { q: "motor oil bottle" }),
+  B(17, "por ejemplo cero W veinte", "b_label020", `Extreme close view of ${H} holding ${JUG} showing its back label, nothing legible.`, { q: "motor oil bottle", q2: "oil bottle" }),
   B(21, "Abajo del motor gira una pieza muy pesada", "st_crankshaft", "A car crankshaft on a workbench.", { q: "engine crankshaft" }),
   B(26, "Son esos números", "st_oilshelf", "Motor oil bottles on a store shelf.", { q: "motor oil shelf" }),
-  B(30, "El filtro de aceite tiene una goma redonda", "b_filtergasket", `Extreme close view of the black rubber gasket ring on the base of ${FILTER}.`, { q: "oil filter" }),
+  B(30, "El filtro de aceite tiene una goma redonda", "b_filtergasket", `Extreme close view of the black rubber gasket ring on the base of ${FILTER}.`, { q: "oil filter", q2: "car filter" }),
   B(37, "Después del cambio", "st_oilcap", "A hand screwing the oil filler cap onto an engine.", { q: "engine oil cap" }),
-  B(41, "Esa luz no dice que el aceite está viejo", "b_oldoil", `Extreme close view of ${DIP} with dark brown oil.`),
+  B(41, "Esa luz no dice que el aceite está viejo", "b_oldoil", `Extreme close view of ${DIP} with dark brown oil.`, { q: "dirty oil" }),
   B(45, "La primera: que te reseteen el aviso de servicio", "st_dashservice", "A car instrument cluster with a service reminder.", { q: "car instrument cluster" }),
   B(53, "El aceite se cambia por kilómetros o por tiempo", "st_odometer", "A car odometer counting up.", { q: "car odometer" }),
   // ── Claudio vuelve a cámara

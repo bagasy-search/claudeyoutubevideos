@@ -17,8 +17,8 @@ export const SHOTS = [
   S(64, "Si sólo parpadean con el motor andando", "c", "ClCheck", { props: { title: "La prueba de los faros", items: ["Se apagan al arrancar → batería", "Parpadean andando → otra cosa", "No cambies la batería todavía"], fast: true } }),
   S(65, "", "av", ""),
   S(65, "Arrancas y miras qué luces quedan prendidas", "bi", "st_dashboard", { q: "car dashboard warning lights", p: BI("A car dashboard with warning lights at engine start.") }),
-  S(65, "Rojo es parar, como la aceitera de hoy", "bi", "b_redoil", { p: BI(`Extreme close view of a red oil-can warning light glowing on ${GAUGE}.`), ov: { c: "ClChip", props: { text: "Rojo · parar", alert: true } } }),
-  S(65, "Amarillo es revisar pronto", "bi", "b_amber", { p: BI(`Extreme close view of an amber engine warning light glowing on ${GAUGE}.`), ov: { c: "ClChip", props: { text: "Amarillo · revisar pronto" } } }),
+  S(65, "Rojo es parar, como la aceitera de hoy", "bi", "b_redoil", { q: "warning light dashboard", p: BI(`Extreme close view of a red oil-can warning light glowing on ${GAUGE}.`), ov: { c: "ClChip", props: { text: "Rojo · parar", alert: true } } }),
+  S(65, "Amarillo es revisar pronto", "bi", "b_amber", { q: "check engine light", p: BI(`Extreme close view of an amber engine warning light glowing on ${GAUGE}.`), ov: { c: "ClChip", props: { text: "Amarillo · revisar pronto" } } }),
   S(65, "te dice que vayas hoy mismo", "av", ""),
   // ── el regalo
   S(66, "", "av", ""),
