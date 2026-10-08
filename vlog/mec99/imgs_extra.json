@@ -1,0 +1,6 @@
+[
+ { "name": "b_hr_ok", "prompt": "Side view of a man in his sixties sitting in the gray cloth driver seat of an ordinary compact sedan, the top of the headrest level with the top of his head, the back of his head close to the headrest, seen through the open rear door." },
+ { "name": "b_hr_bad", "prompt": "Side view of a man in his sixties sitting in the gray cloth driver seat of an ordinary compact sedan, the headrest pushed all the way down so it sits at the back of his neck, below his head, seen through the open rear door." },
+ { "name": "b_sparewell", "prompt": "Looking straight down into the spare-tire well under the lifted carpet floor of the trunk of an ordinary silver sedan: a spare wheel and tire in the center, a small scissor jack clipped on the upper right, an L-shaped lug wrench on the lower left, daylight." },
+ { "name": "b_fusepanel", "prompt": "Close view of the open interior fuse panel under the steering wheel of an ordinary compact sedan: rows of small colored blade fuses on the left, a few spare fuses clipped in the middle, and a tiny white plastic fuse puller on the upper right, the removed plastic cover with a printed diagram of symbols on the inside held at the edge of the frame." }
+]
