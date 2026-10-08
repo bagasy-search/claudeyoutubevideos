@@ -1,0 +1,72 @@
+// DIRECTOR B — mecmillon: la válvula PCV (qué es, por qué se tapa → presión → la junta, la de Elena muda, precio, cambio, lo honesto, cada
+// 2-3 cambios) · lo que hay que pedir (mención 1, frase del mostrador, pág. 11; el grado del manual) · hábitos 1-3 (uso severo, los primeros
+// 5 minutos, filtro de aire a contraluz + filtro de aceite) · mención 2 (ClBookPage pág. 11) (párrafos 11-31).
+import { S, BI, CLP, ELENA, CAR, CABIN, SHOP, DRIVE, H, EH } from "../claudio/lib.mjs";
+import { PCV, BAY } from "./dir_a.mjs";
+const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o });
+const I = "img/mecmillon/";
+export const SHOTS = [
+  C(11, "", "ClChapter", { n: 2, title: "La valvulita de 5 dólares", sub: "la válvula PCV" }),
+  // ── la PCV
+  S(12, "", "c", "ClPCV3D", { props: { mode: "intro" } }),
+  S(12, "que va arriba del motor, con una manguerita", "bi", "b_pcvtop", { p: BI(`Close view of ${PCV} pushed into a grommet on top of the valve cover of an older engine, its rubber hose running to the intake.`) }),
+  S(12, "dejar salir los gases", "c", "ClEnginePressure", { props: { mode: "flow" } }),
+  S(13, "", "bi", "b_gunk", { p: BI(`Extreme close view of the inside opening of an old PCV valve clogged with black sticky oil sludge, held by ${H}.`) }),
+  S(13, "La presión adentro del motor sube", "c", "ClEnginePressure", { props: { mode: "blocked" } }),
+  S(13, "por las juntas", "bi", "b_gasket", { p: BI(`Extreme close view of the edge of an engine valve cover where the rubber gasket meets the engine, a thin line of wet oil seeping out.`) }),
+  S(13, "Por ahí sale la gota", "bi", "b_seep", { p: BI(`Close view of a wet oily trail running down the side of an older engine block toward the bottom, seen with a flashlight.`) }),
+  S(14, "", "kf", "k_pcvout", { p: BI(`Close view of ${H} pulling ${PCV} out of its grommet on top of the engine in ${BAY}.`), d1: "the fingers grip the valve", d2: "the valve comes out of the grommet with its hose", sound: "a soft rubber pop" }),
+  S(14, "la sacudí junto a la oreja", "cl", "c_shake", { p: CLP(`In his workshop he holds a small black PCV valve next to his ear and shakes it, listening, eyebrows raised, looking at the camera.`) }),
+  S(14, "Una válvula sana suena como un sonajero chiquito", "c", "ClPCV3D", { props: { mode: "rattle" } }),
+  S(14, "La de ella estaba muda", "c", "ClPCV3D", { props: { mode: "stuck" } }),
+  S(15, "", "bi", "b_partsstore", { p: BI(`${ELENA} at the counter of a small auto parts store, a clerk handing her a new PCV valve in a small plastic bag.`), ov: { c: "ClChip", props: { text: "US$ 7" } } }),
+  S(15, "Y la manguerita, que estaba dura y agrietada", "bi", "b_hosecrack", { p: BI("Extreme close view of an old cracked hardened rubber hose elbow held in two fingers, a new one next to it.") }),
+  S(16, "", "kf", "k_pcvin", { p: BI(`Close view of ${H} pushing a new PCV valve into its grommet on top of an engine.`), d1: "the new valve is lined up with the grommet", d2: "the valve snaps into the grommet and the hose is pushed on", sound: "a firm rubber click" }),
+  S(16, "En algunos motores está a la vista", "bi", "st_enginetop", { q: "car engine top view", p: BI(`Top view of an older car engine with its valve cover visible.`) }),
+  S(16, "En otros está escondida debajo de una tapa", "bi", "b_enginecover", { p: BI(`${H} lifting a plastic engine cover off the top of an older engine, revealing hoses underneath.`) }),
+  S(16, "El manual o la refaccionaria te dicen dónde", "av", ""),
+  S(17, "", "av", ""),
+  S(17, "puede que la gota no se corte del todo", "bi", "b_oldgasket", { p: BI("Extreme close view of an old hardened engine gasket with a crack, held next to a new soft one on a workbench.") }),
+  S(17, "A la semana, el cartón seguía limpio", "bi", "b_cleancard", { p: BI(`A clean flattened cardboard sheet on the cement floor of ${DRIVE} under the front of ${CAR}, morning light.`) }),
+  S(18, "", "c", "ClCheck", { props: { title: "La válvula PCV", items: ["Revisar cada 2-3 cambios de aceite", "Sacudir: tiene que sonar", "Manguera dura → cambiarla"], fast: true } }),
+  S(18, "de las que más motores salvan", "av", ""),
+  // ── lo que hay que pedir
+  C(19, "", "ClChapter", { n: 3, title: "Lo que tienes que pedir", sub: "para tu auto" }),
+  S(20, "", "bi", "st_partsstore", { q: "auto parts store", p: BI("An ordinary auto parts store counter with shelves of filters and oil bottles behind.") }),
+  S(20, "el aceite sintético que dice tu manual", "bi", "st_oilbottles", { q: "motor oil bottles", p: BI("Bottles of motor oil on a store shelf.") }),
+  S(20, "el filtro de aceite, el filtro de aire y una válvula PCV", "c", "ClReceipt", { props: { head: "LA LISTA DE ELENA", lines: [["Aceite sintético", "el del manual"], ["Filtro de aceite", "1"], ["Filtro de aire", "1"], ["Válvula PCV", "1"]], total: ["Para", "marca · modelo · año · motor"] } }),
+  S(20, "En el Manual del Mecánico te dejé esa frase exacta", "c", "ClBookPage", { props: { page: I + "page11.jpg", pageNo: 11, stamp: "La frase, en la página" } }),
+  S(21, "", "av", ""),
+  S(21, "No el que te recomiende el vendedor", "bi", "b_salesoil", { p: BI("At an auto parts store, a young salesman in a polo holding up a bottle of motor oil on sale toward a customer, a plain shelf of oil bottles behind him.") }),
+  S(21, "esos números como cinco W treinta", "bi", "b_oilgrade", { p: BI("Extreme close view of the back label area of a plain motor oil bottle with a viscosity grade printed in big characters, held by fingertips.") }),
+  // ── hábitos 1-3
+  C(22, "", "ClChapter", { n: 4, title: "Los hábitos", sub: "de los motores de 500 mil" }),
+  S(23, "", "bi", "b_manualtable", { p: BI(`Close view of ${EH} holding a car owner's manual open at a maintenance schedule table with two columns.`) }),
+  S(23, "uso normal y uso severo", "c", "ClSevereChart", { props: { mode: "table" } }),
+  S(23, "Casi todos creen que hacen uso normal", "av", ""),
+  S(24, "", "bi", "st_traffic", { q: "city traffic cars", p: BI("Ordinary city traffic with cars stopped at a light.") }),
+  S(24, "tráfico, calor, polvo, subidas", "bi", "st_dustyroad", { q: "car driving dusty road", p: BI("A car driving on a dusty road in the sun.") }),
+  S(24, "Elena va al súper, a la iglesia y a la casa de su hermana", "c", "ClSevereChart", { props: { mode: "trips" } }),
+  S(24, "Uso severo puro", "av", ""),
+  S(25, "", "kf", "k_highlight", { p: BI(`Close view of ${EH} holding a yellow highlighter over the maintenance table of a car owner's manual.`), d1: "the highlighter touches the top of a column", d2: "the highlighter slides down the column leaving a yellow stripe", sound: "a marker squeak on paper" }),
+  S(25, "Y si el aceite se cambia según esa columna", "bi", "st_oilchange", { q: "oil change car", p: BI("Fresh golden motor oil pouring into an engine.") }),
+  S(26, "", "c", "ClColdStart", { props: { mode: "wait" } }),
+  S(26, "No dejes el auto diez minutos calentando parado", "bi", "b_idlecold", { p: BI(`Early morning, ${CAR} idling alone in ${DRIVE} with exhaust vapor in the cold air, nobody inside.`) }),
+  S(26, "así se calienta peor y gasta de gusto", "av", ""),
+  S(27, "", "bi", "b_drivegently", { p: BI(`Early morning, ${CAR} pulling slowly out of ${DRIVE} onto a quiet street.`) }),
+  S(27, "hasta que la aguja de la temperatura empiece a moverse", "c", "ClColdStart", { props: { mode: "gentle" } }),
+  S(27, "El aceite frío es más espeso", "bi", "b_thickoil", { p: BI("Extreme close view of thick cold motor oil dripping slowly from a dipstick tip.") }),
+  S(27, "La mayor parte del desgaste de un motor", "av", ""),
+  S(28, "", "bi", "b_airbox", { p: BI(`Close view of ${H} opening the clips of a black plastic air filter box on top of an engine in ${BAY}.`) }),
+  S(28, "y míralo contra el sol", "c", "ClFilterLight", { props: { mode: "check" } }),
+  S(28, "Si no pasa la luz, se cambia", "av", ""),
+  S(29, "", "bi", "st_airfilter", { q: "car air filter", p: BI("A dirty car air filter on a workbench.") }),
+  S(29, "El de Elena estaba gris, casi negro", "c", "ClFilterLight", { props: { mode: "compare" } }),
+  S(29, "Seis dólares", "bi", "b_newfilter", { p: BI(`Close view of ${H} setting a clean new white air filter into the air box of an engine.`), ov: { c: "ClChip", props: { text: "US$ 6" } } }),
+  S(30, "", "bi", "b_oilfilter", { p: BI(`Close view of ${H} screwing a new oil filter onto an engine from underneath, a drip pan below.`) }),
+  S(30, "es como bañarse y ponerse la misma ropa", "av", ""),
+  S(30, "retiene la mugre que el aceite va juntando", "bi", "b_filtercut", { p: BI("Extreme close view of a used oil filter cut open on a workbench, its pleated paper dark with sludge.") }),
+  // ── mención 2
+  C(31, "", "ClBookPage", { page: I + "page11.jpg", pageNo: 11, stamp: "Las medidas, en la página" }),
+  S(31, "Con la tabla para que marques tus propios kilómetros", "bi", "b_marktable", { p: BI(`Close view of ${EH} writing kilometers with a pen in a printed maintenance table on a car seat.`) }),
+];
