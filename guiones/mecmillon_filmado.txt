@@ -1,0 +1,75 @@
+[HOOK|pcv] Esta pieza de cinco dólares es la diferencia entre un motor que llega a doscientos mil kilómetros y uno que llega a un millón. Y casi ningún taller la revisa.
+[HOOK|mancha] Doña Elena tenía una mancha de aceite en el piso de su cochera. Chiquita, del tamaño de una moneda grande, justo debajo del motor. La tapaba con un cartón para no verla. Y en la agencia ya le habían dicho la palabra que asusta a todo el mundo: motor.
+[HOOK|loop] Y ese día, buscando otra cosa en la guantera de su auto, encontramos algo que Don Ernesto había dejado ahí. Algo que explica por qué ese motor tiene doscientos ochenta mil kilómetros y anda como nuevo. Te lo muestro en un rato.
+[HOOK|promesa] Hoy te muestro los hábitos que hacen que un motor no se muera nunca. Cuánto cuestan, cada cuánto, y cuáles casi nadie hace. Empezando por esa valvulita. Así estaba el piso de la cochera de Elena. Y así quedó.
+[HOOK|cred] Soy Claudio. Treinta y cinco años de mecánico. Y al final te doy las tres pruebas de diez minutos que tienes que hacer antes de llevar tu auto a cualquier taller.
+[HOOK|cap] Primero, la mancha de Doña Elena.
+[ANTES|ep2] Si es la primera vez que me ves: el auto de Doña Elena es el sedán plateado del 2012 de su difunto esposo, con doscientos ochenta mil kilómetros. La semana pasada le cambiamos la pila de la llave en dos minutos. Te dejo ese video aquí.
+[ANTES|carton] Al irse, cuando sacó el auto de la cochera, levantó el cartón y me mostró la mancha. Una gota por noche, más o menos. Me dijo: Claudio, en la agencia me dijeron que el motor está gastado, que pierde por todos lados, y que eso es caro.
+[ANTES|revision] Lo primero que hice fue lo de siempre. La varilla del aceite: en su nivel, un poco oscuro. Arrancamos el motor: sin humo azul por el escape, sin golpes. Un motor gastado de verdad echa humo azul y pide aceite cada semana. Éste no.
+[ANTES|miedo] Y yo entiendo el miedo. Cuando alguien escucha la palabra motor junto a la palabra gastado, ya se imagina un presupuesto de miles de dólares. O un auto nuevo, que era lo que le venían ofreciendo desde el primer día.
+[ANTES|regla] Pero una mancha de aceite casi nunca quiere decir que el motor está gastado. Casi siempre quiere decir que el aceite está saliendo por algún lado porque adentro hay presión de más. Y la presión de más tiene un culpable muy barato.
+[CAP|pcv] La valvulita de cinco dólares.
+[PCV|que] Se llama válvula PCV. Es una pieza de plástico del tamaño de un dedo, que va arriba del motor, con una manguerita. Su trabajo es dejar salir los gases que se juntan adentro del motor mientras anda.
+[PCV|tapa] Cuando esa válvula se tapa con la mugre de años, los gases no tienen por dónde salir. La presión adentro del motor sube. Y esa presión empuja el aceite hacia afuera, por las juntas, que son las gomas que sellan las tapas del motor. Por ahí sale la gota.
+[PCV|elena] En el auto de Elena la encontramos en cinco minutos. La saqué, la sacudí junto a la oreja, y no hizo ningún ruido. Una válvula sana suena como un sonajero chiquito, clic, clic. La de ella estaba muda. Pegada de aceite viejo.
+[PCV|precio] Una válvula nueva, para su auto, costó siete dólares en la refaccionaria. Y la manguerita, que estaba dura y agrietada, otros cuatro.
+[PCV|cambio] Se cambia en minutos, con el motor frío. Se saca la manguera, se desenrosca o se tira de la válvula vieja, se pone la nueva. En algunos motores está a la vista. En otros está escondida debajo de una tapa y conviene que la cambie el mecánico. El manual o la refaccionaria te dicen dónde está la de tu auto.
+[PCV|junta] Y aquí una cosa honesta. Si la junta ya está muy dañada por años de presión, cambiar la válvula frena el problema, pero puede que la gota no se corte del todo. En el caso de Elena, la junta estaba bien. A la semana, el cartón seguía limpio.
+[PCV|cada] La regla de taller es ésta: que te revisen la válvula PCV cada dos o tres cambios de aceite. Es una de las cosas que menos se revisan y de las que más motores salvan.
+[CAP|mostrador] Lo que tienes que pedir para tu auto.
+[MOSTRADOR|frase] Vas a la refaccionaria con la marca, el modelo, el año y el motor de tu auto, y pides cuatro cosas: el aceite sintético que dice tu manual, el filtro de aceite, el filtro de aire y una válvula PCV. En el Manual del Mecánico te dejé esa frase exacta para que la lleves anotada.
+[MOSTRADOR|manual] Y fíjate que digo el aceite que dice tu manual. No el que te recomiende el vendedor ni el que está en oferta. Tu manual dice el grado exacto, esos números como cinco W treinta. Ése.
+[CAP|habitos] Ahora, los hábitos. Son los que vi en todos los motores que pasaban de quinientos mil kilómetros.
+[HAB|severo] Hábito uno: tu calendario real es el de uso severo. Busca en el manual la tabla de mantenimiento. Vas a ver dos columnas: uso normal y uso severo. Casi todos creen que hacen uso normal.
+[HAB|severo2] Pero uso severo es trayectos cortos, de menos de diez minutos, tráfico, calor, polvo, subidas. O sea, lo que hace casi todo el mundo en la ciudad. Elena va al súper, a la iglesia y a la casa de su hermana. Todo a menos de diez minutos. Uso severo puro.
+[HAB|severo3] Así que marca esa columna con un resaltador. Ése es tu calendario de verdad. Y si el aceite se cambia según esa columna, el motor dura años de más.
+[HAB|frio] Hábito dos: los primeros cinco minutos. Cuando arrancas en frío, espera unos treinta segundos, y sal despacio. No dejes el auto diez minutos calentando parado: así se calienta peor y gasta de gusto.
+[HAB|frio2] Y en esos primeros minutos, maneja suave. Sin pisar a fondo, sin subir mucho las vueltas, hasta que la aguja de la temperatura empiece a moverse. El aceite frío es más espeso y todavía no llegó a todos lados. La mayor parte del desgaste de un motor pasa en esos primeros minutos.
+[HAB|aire] Hábito tres: el filtro de aire, a contraluz. Cada vez que cambies el aceite, saca el filtro de aire, que va en una caja de plástico arriba del motor, y míralo contra el sol. Si no pasa la luz, se cambia.
+[HAB|aire2] Un motor que no respira bien gasta más gasolina, pierde fuerza y se ensucia por dentro. El de Elena estaba gris, casi negro. Lo pusimos al lado de uno nuevo y la diferencia se veía desde la puerta del taller. Seis dólares.
+[HAB|filtro] Y cuando se cambia el aceite, siempre con su filtro de aceite nuevo. Poner aceite limpio con el filtro viejo es como bañarse y ponerse la misma ropa. El filtro cuesta poco y retiene la mugre que el aceite va juntando.
+[MANUAL|pagina] Las medidas exactas de todo esto, cada cuántos kilómetros cada cosa y qué pedir para tu auto, están en la página once del Manual del Mecánico. Con la tabla para que marques tus propios kilómetros.
+[HAB|varilla] Hábito cuatro: la varilla, una vez por mes. Con el auto en un lugar plano y el motor apagado hace un rato. Sacas la varilla, la limpias con un papel, la vuelves a meter hasta el fondo, y la sacas otra vez. El aceite tiene que estar entre las dos marcas.
+[HAB|varilla2] Y mira el color. Ámbar o marrón está bien. Negro y espeso, ya toca cambio. Y si alguna vez lo ves con espuma o color café con leche, eso no es normal: al taller esa semana.
+[HAB|consume] Y si tu motor gasta aceite entre un cambio y otro, si cada vez le falta un poco, no aceptes un motor nuevo de entrada. Mide cada mil kilómetros, anota cuánto le falta, y pide que revisen primero la válvula PCV. Muchas veces el motor gastado era una valvulita tapada.
+[HAB|refri] Hábito cinco: el refrigerante, siempre en frío. El depósito de plástico tiene dos marcas. Míralo una vez por mes, con el motor frío, a la mañana. Y nunca, nunca abras la tapa del radiador con el motor caliente: sale líquido hirviendo a presión.
+[HAB|frenos] Hábito seis: el líquido de frenos cada dos años. Casi nadie lo cambia porque no se ve gastado. Pero con el tiempo absorbe humedad, y los frenos responden peor justo cuando más los necesitas.
+[HAB|correa] Hábito siete: la correa de distribución, cuando dice el manual. Muchos motores tienen una correa de goma adentro que hay que cambiar a cierta cantidad de kilómetros o de años. Si se corta andando, en muchos motores se rompen piezas de adentro y la reparación es enorme. Busca en el manual si tu motor tiene correa o cadena, y anota cuándo toca.
+[HAB|reserva] Hábito ocho: no andes siempre en reserva. La bomba de gasolina está adentro del tanque y se enfría con la misma gasolina. Si siempre andas con el tanque casi vacío, trabaja más caliente y dura menos. Carga cuando llegues a un cuarto.
+[HAB|ruido] Hábito nueve: un ruido nuevo es un aviso, no una molestia. Si aparece un chirrido, un golpe o un zumbido que antes no estaba, no le subas el volumen a la radio. Esa misma semana, al taller. Un ruido a tiempo es una pieza. Un ruido de seis meses es un motor.
+[HAB|llantas] Y las llantas, en la presión de la etiqueta de la puerta, como vimos en el primer video. Con las llantas bajas, el motor hace más fuerza para lo mismo, y eso también es desgaste.
+[HAB|turbo] Y si tu auto es turbo, un hábito más: después de manejar fuerte o en carretera, déjalo andar treinta segundos antes de apagarlo. El turbo necesita enfriarse con el aceite circulando.
+[CAP|libreta] Y el hábito más importante. El de Don Ernesto.
+[LIBRETA|guantera] ¿Te acuerdas de lo que encontramos en la guantera? Buscando el manual del auto, debajo de todo, había una libreta chiquita de tapa azul, con las esquinas gastadas.
+[LIBRETA|dentro] Adentro, con letra de imprenta, Don Ernesto había anotado cada cambio de aceite desde que compró el auto. La fecha, los kilómetros, qué se cambió y cuánto pagó. Cada cinco mil kilómetros, sin faltar uno. Filtro de aire, líquido de frenos, todo.
+[LIBRETA|ultima] La última línea era de un mes de marzo, seis años atrás. Y después, hojas en blanco.
+[LIBRETA|nota] Y en una de las hojas del medio, al costado de un cambio de aceite, una nota con otra tinta: llantas nuevas antes del viaje a la playa con Elena. Ella se rió y se le llenaron los ojos al mismo tiempo.
+[LIBRETA|elena] Elena se quedó un rato largo con la libreta en la mano. No sabía que existía. Me dijo que él siempre decía que el auto iba a durar más que los dos.
+[LIBRETA|porque] Y ésa es la explicación. Ese motor no llegó a doscientos ochenta mil kilómetros por suerte. Llegó porque durante años alguien lo cuidó a tiempo, y lo anotó. Lo que le hizo daño fueron los seis años en blanco, no los kilómetros.
+[LIBRETA|valor] Y una cosa más: el día que vendas tu auto, una libreta así vale dinero. El que compra ve que el auto se cuidó, y paga más.
+[LIBRETA|sigue] Elena sacó una lapicera de la cartera y escribió la primera línea nueva, debajo de la última de él. La fecha, los kilómetros, válvula PCV, filtro de aire, aceite. Con su letra.
+[CAP|errores] Los errores que más veo con el motor.
+[ERROR|normal] Uno: seguir la columna de uso normal cuando haces uso severo.
+[ERROR|calentar] Dos: dejar el auto calentando parado diez minutos, o pisarlo a fondo en frío.
+[ERROR|aceite] Tres: poner el aceite que está en oferta y no el que dice el manual.
+[ERROR|carton] Cuatro: tapar la mancha con un cartón y olvidarse. La mancha es un aviso.
+[ERROR|libreta] Y cinco: no anotar nada. Sin libreta, nadie sabe qué se hizo ni cuándo.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|millon] ¿De verdad un motor llega a un millón de kilómetros? Algunos sí, sobre todo los taxis y los autos de trabajo que se cuidan a tiempo. Pero aunque no llegue al millón, con estos hábitos un motor normal puede pasar de quinientos mil sin abrirse.
+[QA|sintetico] ¿Siempre sintético? Si tu manual lo pide, sí. Si tu manual permite otro, el sintético igual protege mejor en el arranque en frío y dura más. Pero el número del grado tiene que ser el del manual.
+[QA|aditivos] ¿Y los aditivos que venden para el motor? La gran mayoría no hacen falta. Un buen aceite, del grado correcto y cambiado a tiempo, ya trae lo que el motor necesita.
+[QA|caro] ¿Cuánto cuesta todo esto por año? Mucho menos que una sola reparación grande. La válvula, los filtros, el aceite a tiempo. Elena gastó en todo ese día menos de lo que le cotizaban en la agencia por la primera revisión.
+[QA|usado] ¿Y si compré el auto usado y no tengo idea de qué se le hizo? Empieza tu libreta hoy. Cambia aceite, filtros y la válvula PCV, revisa la correa y el líquido de frenos, y anota todo con fecha y kilómetros. Desde hoy, ese auto tiene historia.
+[RESULTADO|semana] A la semana pasé por su casa. El cartón seguía en el piso de la cochera, por costumbre. Limpio. Ni una gota.
+[RESULTADO|libreta] La libreta azul está ahora en la guantera, arriba del manual, con un clip en la página de las luces del tablero. Y con dos letras distintas.
+[RESULTADO|elena] Me dijo que el presupuesto del auto nuevo lo tiró a la basura. Que este auto todavía tiene cuerda.
+[CAP|pruebas] Y ahora, las tres pruebas que te prometí.
+[PRUEBA|toalla] La primera, la toalla de la noche. Esta noche, en un lugar plano, pones un cartón debajo del auto. A la mañana miras las manchas. Si son gotitas de agua sin olor, del lado del acompañante, es el aire acondicionado, y es normal. Si son marrones o negras, debajo del motor, es aceite: hoy mismo mides la varilla. Y cada otro color te dice qué pierde el auto.
+[PRUEBA|faros] La segunda, los faros. Con el auto apagado, prendes los faros contra una pared y arrancas. Si se apagan casi del todo y el motor gira lento, es la batería. Si parpadean con el motor andando, es otra cosa, y no tienes que cambiar la batería todavía.
+[PRUEBA|tablero] Y la tercera, el tablero. Arrancas y miras qué luces quedan prendidas, y de qué color. Rojo es parar. Amarillo es revisar pronto. Y hay una sola que, si parpadea, te dice que vayas hoy mismo.
+[CTA3|regalo] Te dejé las tres pruebas completas, con lo que significa cada color y cada resultado, en una hoja gratis que se llama Antes del Taller, las tres pruebas de Claudio. Apunta el celular a este código, o toca el link de la descripción. Y si quieres todos los trucos del taller, el Manual del Mecánico está en esa misma página, a veintisiete dólares.
+[NEXT|calor] Ah, y una cosa más. El domingo Elena me llamó desde la avenida, de vuelta de la casa de su hermana. Había mucho tráfico, y la aguja de la temperatura había empezado a subir. No hasta el rojo, pero más que nunca.
+[NEXT|gancho] Me dijo que en la agencia, para eso, le habían hablado de cambiar el radiador. Un presupuesto que ella había guardado en la carpeta. Antes de firmar nada, la semana que viene te muestro el truco de un dólar que probamos primero, con un frasco de la cocina. Y lo que salió de adentro de ese radiador.
+[CLOSE|pregunta] Y ahora cuéntame tú. ¿Cuál de estos hábitos ya tenías? ¿Y cuántos kilómetros tiene tu auto hoy? Escríbemelo en los comentarios. Leo todos. Y si tienes en la familia a alguien que está por cambiar el auto porque le dijeron que el motor no da más, mándale este video primero.
+[CLOSE|chau] La válvula, el filtro, el aceite a tiempo, y la libreta en la guantera. Nos vemos la semana que viene.
