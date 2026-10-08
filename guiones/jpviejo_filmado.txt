@@ -1,0 +1,73 @@
+[HOOK|cara] Después de los cuarenta, tu piel fabrica algo que antes no fabricaba. Y todos lo huelen menos tú.
+[HOOK|sato] En el hotel de Tokio, una mañana, Sato-san me hizo sacar las almohadas de una habitación recién limpiada, delante de las otras chicas de piso. Estaban lavadas. Me hizo olerlas una por una. Y lo que me dijo de ese huésped, no me lo olvido más.
+[HOOK|nobano] Y ese huésped se bañaba. Se bañaba dos veces por día. Ése es el problema: este olor no se va con más ducha, ni con más desodorante, ni con más perfume.
+[HOOK|promesa] Hoy te traigo las once reglas que en Japón se cumplen después de los cuarenta, y que nosotros rompemos sin saberlo. Casi ninguna cuesta dinero. Y la número siete es la que casi todos rompemos. Yo también la rompía.
+[HOOK|cred] Soy Claudio. Quince años de conserje en un hotel de Tokio, cambiando almohadas, sábanas y toallas de miles de huéspedes. Y al final te dejo el test de cinco minutos para saber a qué huele tu casa, sin que nadie te lo tenga que decir.
+[REF|higiene] Si no viste el video de las once reglas de higiene, te lo dejo aquí, porque hoy vamos con lo que te prometí al final: el olor de la nuca.
+[HOOK|cap] Empezamos por algo que en Japón tiene nombre.
+[R1|sato] Regla número uno: no es la axila. La primera vez que le pregunté a Sato-san por qué olían así las almohadas de los huéspedes mayores, me escribió una palabra en un papel: kareishu. Quiere decir olor de la edad.
+[R1|edades] A los veinte, el olor sale de las axilas y de los pies. A los treinta, empieza a salir de la cabeza. Y a partir de los cuarenta, aparece un tercero, en la nuca, detrás de las orejas, en el pecho y en la parte de arriba de la espalda.
+[R1|grasa] Es una grasa de la piel que a esa edad se produce un poco más, y que al contacto con el aire se pone rancia, como el aceite viejo de una sartén. No es falta de baño. Es química.
+[R1|casa] Lo vi en mi propia familia. Mi tío se bañaba, se cambiaba, se ponía colonia, y la almohada de su cama olía igual. Él no lo sabía.
+[R1|regla] Por eso el desodorante más fuerte no hace nada: estás atacando la axila, y el olor no sale de ahí. La regla japonesa es mover el jabón a otro lugar.
+[R2|sato] Regla número dos: los cuatro lugares. Sato-san tenía cincuenta y tantos, y olía a nada. Le pregunté cómo hacía. Me dijo: la nuca se lava como la cara, con las manos y con ganas.
+[R2|donde] La nuca, detrás de las orejas, el pecho y la parte de arriba de la espalda. Son los cuatro lugares donde la piel junta más grasa. Y son los cuatro que tu nariz nunca va a alcanzar. No te puedes oler ahí. Por eso no te enteras.
+[R2|prueba] Haz esto ahora: pasa un dedo fuerte por detrás de la oreja y huélelo. Lo que sientas, poco o mucho, es lo que siente el que se sienta a tu lado.
+[R2|regla] En el video anterior te pedí diez segundos. Después de los cuarenta, son veinte. Veinte segundos de jabón y frotar en cada uno de esos cuatro lugares, todos los días. No el agua que corre por encima: las manos.
+[R2|casa] En casa, el truco es hacerlo siempre en el mismo orden, como la cara: nuca, orejas, pecho y espalda. Para la espalda, la toalla de nylon o el cepillo de mango largo del video anterior.
+[R3|sato] Regla número tres: el jabón. En el vestuario del hotel, al lado del lavabo, había un jabón naranja, translúcido, que los mayores usaban para la nuca. Yo pensé que era para las manos. Era de caqui.
+[R3|caqui] En Japón se vende jabón de caqui en cualquier farmacia, justamente para este olor. El caqui tiene una sustancia que ayuda a sacar esa grasa rancia que el jabón de siempre deja pegada.
+[R3|aca] Aquí no lo vas a encontrar en cualquier lado, y no hace falta. Lo que necesitas es un jabón en barra que saque bien la grasa, de los que dejan la piel bien limpia, no de los cremosos que dejan una capa.
+[R3|mostrador] Y para esto casi no hay que comprar nada. En el Método te dejé anotado lo único que hace falta, en la página diez, y casi siempre es algo que ya tienes. En la tienda, pide así: necesito un jabón en barra que saque la grasa, una funda de almohada extra y bicarbonato.
+[R3|regla] Ese jabón, sólo para los cuatro lugares. Haces espuma con las manos, lo dejas un momento sobre la piel mientras frotas, y recién después enjuagas.
+[R4|sato] Regla número cuatro: la almohada. Ahora sí, lo que me dijo Sato-san aquella mañana. Me dio la almohada lavada y me dijo: Claudio-san, la funda está limpia; la almohada, no. Este señor duerme aquí todas las noches, aunque se haya ido hace tres días.
+[R4|por] La almohada es lo que más guarda este olor. Más que la piel. Tu nuca pasa ocho horas por noche apoyada en esa tela. La funda se carga, y cada noche te devuelve lo que te lavaste a la mañana.
+[R4|regla] La regla: la funda, cada tres días, no una vez por semana. Por eso te pedí una funda extra: una puesta, otra lavándose. Y la almohada, al sol una vez por mes.
+[R4|vieja] Y si con la funda limpia la almohada sigue oliendo, lávala entera o cámbiala. Después de unos años se carga de grasa por dentro, y ya no hay funda que la tape.
+[R4|casa] Mira tu almohada sin la funda. Si tiene manchas amarillas abajo, donde apoya la nuca, ya sabes de dónde viene el olor de tu cuarto.
+[R5|sato] Regla número cinco: los cuellos. En el hotel, cuando un huésped dejaba un abrigo para la tintorería, Sato-san lo revisaba primero por adentro del cuello. Decía que ahí se ve cuánto hace que nadie lo lava.
+[R5|donde] El cuello de la camisa, el cuello de la chaqueta de invierno, el apoyacabezas del auto, el respaldo del sillón donde ves la televisión. Todo lo que toca tu nuca guarda este olor, y te lo vuelve a poner.
+[R5|chaqueta] Seguro tienes una chaqueta que usas cada invierno y nunca lavaste. Esa chaqueta te tocó la nuca dos veces por día, todos los días, durante años.
+[R5|casa] Y el sillón: mira el respaldo, justo donde apoya la cabeza el que siempre se sienta ahí. Esa mancha más oscura en la tela es esto.
+[R5|regla] La regla: un paño húmedo con un poco de jabón por el cuello de las chaquetas, el apoyacabezas del auto y el respaldo del sillón, una vez por semana. Y el cuello de las camisas, frotado con jabón antes de entrar a la lavadora.
+[R5|auto] Y el auto: el apoyacabezas es la almohada de todos los días. Si alguien sube a tu auto y abre la ventana sin decir nada, ya sabes por qué.
+[R6|sato] Regla número seis: la cabeza. A las chicas de piso más nuevas, Sato-san les enseñaba a lavarse el pelo como a limpiar un vidrio: con las yemas, nunca con las uñas, y sin apuro.
+[R6|por] Después de los cuarenta, hay otro olor que sale del cuero cabelludo, no del pelo. Es el que siente la gente cuando te saluda con un beso o te da un abrazo. Y nosotros lavamos el pelo, la parte de adelante y de arriba, veinte segundos, y enjuagamos.
+[R6|regla] En Japón, el cuero cabelludo es un paso aparte. Un minuto entero de masaje con las yemas, toda la cabeza, y la nuca al final. Y el pelo se seca antes de acostarse: cuero cabelludo húmedo y almohada es justo lo que este olor necesita.
+[R6|casa] Hazlo de noche, con la cabeza inclinada hacia adelante, igual que el enjuague de la espalda. Un minuto parece mucho. Cuéntalo una vez, y vas a ver que antes te lavabas en quince segundos.
+[R6|seco] Y el champú en seco, como te dije en el video anterior, no lava: tapa. Después de los cuarenta, todavía menos.
+[R6|rutina] Y si quieres todo esto junto, la rutina completa, la de la mañana y la de la noche, está en la página diez del Método Japonés de Claudio. Te la dejé anotada para que la pegues en el baño.
+[R7|intro] Y ahora sí, la regla número siete. La que casi todos rompemos.
+[R7|sato] En el hotel estaba prohibido que el personal usara perfume. Yo llegué con mi colonia de siempre, la de mi padre. Sato-san me paró en la puerta y me dijo: si tapas un olor, ahora tienes dos.
+[R7|por] Y es así. Casi todas las colonias de hombre son amaderadas o como de talco, y esas notas se mezclan justo con este olor y lo hacen más fuerte. El que se acerca no huele tu perfume: huele la mezcla. Y eso es lo que recuerda de ti cuando te vas.
+[R7|casa] Piensa en la colonia de tu padre o de tu abuelo. Ese olor que recuerdas de él no era sólo la colonia. Era la colonia encima de esto.
+[R7|japon] En Japón la respuesta a un olor es sacar la causa, no poner otro encima. Hasta tienen una palabra para el exceso de perfume en el trabajo, como una falta de respeto.
+[R7|regla] La regla: primero los cuatro lugares limpios. Y si te gusta usar algo, que sea poco y cítrico: limón, naranja, toronja. Nunca encima de una piel sin lavar.
+[R7|hotel] En el hotel, los huéspedes que más perfume usaban eran los que más trabajo nos daban. La habitación olía a perfume tres días. Y debajo, a nuca.
+[R8|sato] Regla número ocho: la ropa. La ropa del personal del hotel se lavaba con una medida de bicarbonato, y se secaba en la azotea. Sato-san decía que el sol termina lo que el jabón empieza.
+[R8|por] Esta grasa se queda en las camisetas y en el pijama aunque los laves. El lavado tibio no la saca toda, y el suavizante encima la encierra.
+[R8|regla] La regla: las camisetas y el pijama, con media taza de bicarbonato en el lavado, y secados al sol. Y la camiseta que toca la piel, de algodón, como te conté en el video anterior.
+[R8|suav] Y el suavizante, en Japón casi no se usa. El perfume del suavizante es otra capa encima, como la colonia. Si quieres la ropa suave, sacúdela antes de colgarla y sécala al sol.
+[R8|casa] Haz la prueba con tu pijama: huele el cuello y la parte de atrás, donde apoya la espalda. Si huele, aunque esté lavado, es esta grasa. El bicarbonato y el sol la sacan.
+[R9|sato] Regla número nueve: lo que comes. En el comedor del hotel casi nunca había frituras. Arroz, pescado, sopa de miso, verduras, y té verde todo el día. Sato-san tomaba té verde como nosotros tomamos agua.
+[R9|por] Este olor nace de una grasa que se pone rancia. Y lo que comes cuenta: mucha fritura y mucha grasa animal, más materia prima. Frutas, verduras y té verde, menos.
+[R9|regla] No te digo que dejes de comer lo que te gusta. La regla es cambiar el balance: menos fritura, más verdura y fruta, una taza de té verde por día en lugar de otra taza de café, y mucha agua.
+[R9|casa] En nuestras mesas la fritura es fiesta, y está bien. Pero si comes frito todos los días, tu piel también lo cuenta. Menos aceite en la sartén, más verde en el plato.
+[R10|sato] Regla número diez: caminar. En Tokio todo el mundo camina. Sato-san tenía auto, y venía caminando al hotel. Cuarenta minutos, todos los días, con lluvia o con sol.
+[R10|por] Caminar te hace sudar poco y seguido. Y el sudor de quien camina todos los días es más liviano que el de quien no suda nunca y después suda de golpe. Ese sudor guardado sale más concentrado.
+[R10|regla] La regla: caminar todos los días, a paso tranquilo, media hora. Sin gimnasio, sin correr. Sudar un poco, seguido, y después agua y jabón.
+[R10|casa] Bájate del autobús una parada antes. Ve a la tienda caminando. Pasea al perro de verdad. No hace falta ropa de deporte: hace falta salir.
+[R10|hotel] Sato-san decía que caminar es bañarse por dentro. Yo me reía. Después de quince años en Tokio, camino todos los días, y entiendo lo que quería decir.
+[PAUSA|r11] Antes de la última, haz una cosa. Sal de tu cuarto, respira aire de afuera un minuto, y vuelve a entrar. Lo que sientas en los primeros segundos es lo que siente cualquiera que te visita.
+[R11|sato] Regla número once: el cuarto. Lo primero que hacía Sato-san al entrar a una habitación no era limpiar. Era abrir la ventana. Decía que un cuarto cerrado le cuenta todo de su dueño.
+[R11|por] Este olor pasa a todo lo que es tela: las cortinas, el colchón, el sillón, la alfombra. Y lo peor es que el que vive ahí deja de sentirlo, y el que entra lo siente en cuatro segundos.
+[R11|regla] La regla: cada mañana, diez minutos de ventana abierta con la cama destapada. Las cortinas y las fundas del sillón, lavadas. El colchón y las almohadas, al sol cuando se pueda.
+[R11|casa] Y la casa de los abuelos, ésa que todos reconocemos con los ojos cerrados. Ese olor es éste. No es la edad de la casa: son años de ventanas cerradas y telas que nunca vieron el sol.
+[R11|hotel] En el hotel, cuando un huésped se iba, la habitación quedaba una hora con la ventana abierta antes de hacer la cama. Una hora. Así entraba el siguiente a un cuarto que olía a nada.
+[CONV|nadie] Y una cosa más, sin número. En Japón hasta hay una palabra para cuando un olor molesta en el trabajo, y se habla de frente, con respeto. Nosotros no tenemos palabra para eso. Por eso nadie te lo dice. El que más lo nota es el que más te quiere, y es el que menos te lo va a decir.
+[CONV|medico] Y una aclaración, de conserje y no de médico: si tienes un problema de la piel, sigue lo que te diga tu médico. Y si un olor aparece de golpe, consulta a un médico. Esto es higiene, no un tratamiento.
+[RECAP|todo] Las once, en treinta segundos. No es la axila. Los cuatro lugares, veinte segundos. Jabón que saque la grasa. Funda cada tres días. Los cuellos. Un minuto de cuero cabelludo. Nada de perfume encima. Bicarbonato y sol. Menos fritura, té verde. Caminar. Y ventana abierta cada mañana.
+[CTA3|regalo] Y te prometí el test. Se llama: ¿A qué huele tu casa? El test japonés de cinco minutos. Son tres pruebas: la almohada, la toalla y la puerta cerrada. La de la almohada es justo la de hoy. Es gratis: apunta el celular a este código, o toca el link de la descripción. Y si quieres todas las reglas con el paso a paso, el Método Japonés de Claudio está en esa misma página, a veintisiete dólares.
+[NEXT|gancho] Y antes de irme. Cuando Sato-san vino una vez a mi casa, abrió la alacena del baño y se quedó mirando. Contó en voz alta: siete limpiadores, cuatro aromatizantes, tres rollos de papel. Y me dijo algo que me hizo ahorrar más de lo que te imaginas. En el próximo video, las nueve cosas que en una casa japonesa nunca vas a encontrar, y que nosotros compramos cada mes.
+[CLOSE|pregunta] Y ahora cuéntame tú. ¿Cuál de las once rompías? Yo, la siete, durante años. Escríbemelo en los comentarios. Leo todos.
+[CLOSE|chau] Sato-san siempre decía: lo limpio no huele a nada. Nos vemos en el próximo video.

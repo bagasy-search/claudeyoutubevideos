@@ -225,3 +225,28 @@ export const ClDays: React.FC<{ days?: string[]; label: string; bed?: string }> 
     </AbsoluteFill>
   );
 };
+
+// ───────────────── ClAges: las 3 edades del olor (20 · 30 · 40+), la última resaltada en rojo con pulso
+export const ClAges: React.FC<{ items?: [string, string][]; bed?: string; title?: string }> = ({ items = [["20", "axilas y pies"], ["30", "la cabeza"], ["40+", "nuca, orejas, pecho y espalda"]], bed, title = "De dónde sale el olor" }) => {
+  const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(6);
+  const step = Math.max(14, Math.min(45, (T - 40) / items.length));
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={37} dim={0.3} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 90, textAlign: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 84, color: "#fff", textShadow: "0 6px 24px rgba(0,0,0,0.6)", opacity: lin(f, 2, 14) }}>{title}</div>
+      {items.map(([age, where], i) => {
+        const p = pop(f, fps, 10 + i * step, 12), last = i === items.length - 1, pulse = last ? 1 + 0.03 * Math.sin(f * 0.2) : 1;
+        return (
+          <div key={i} style={{ position: "absolute", left: 160 + i * 560, top: 280, width: 480, rotate: `${(i - 1) * 2}deg`, translate: `0 ${(1 - p) * 260}px`, opacity: clamp01(p * 1.5), scale: String(pulse) }}>
+            <Card style={{ padding: "40px 30px 46px", textAlign: "center", borderTop: `20px solid ${last ? CL.nitrile : CL.brass}` }}>
+              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 34, letterSpacing: 6, color: CL.inkSoft }}>A LOS</div>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 210, lineHeight: 1.05, color: last ? CL.nitrile : CL.ink }}>{age}</div>
+              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 60, color: CL.navy, lineHeight: 1.05, minHeight: 130 }}>{where}</div>
+            </Card>
+          </div>
+        );
+      })}
+      <RoomLight k={0.4} />
+    </AbsoluteFill>
+  );
+};

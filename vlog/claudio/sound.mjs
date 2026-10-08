@@ -141,6 +141,7 @@ function compFx(n, c, durS) {
   if (n === "ClNumbers") { const k2 = (P.rows || []).length; add("design/paper_slide.flac", 0.3, 0.05, 0.8); for (let k = 0; k < k2; k++) add("design/pen_write.flac", 0.28, 0.65 + k * Math.max(0.4, Math.min(1.13, (durS - 1.4) / k2)), 0.6); }
   if (n === "ClDryBars") { add("design/paper_slide.flac", 0.3, 0.05, 0.8); add("design/riser_fast.flac", 0.2, 0.5, 1.4); add("design/tick_single.flac", 0.3, 1.9, 0.4); }
   if (n === "ClBodyMap") { for (let k = 0; k < 4; k++) add("design/pop_soap_bubble.flac", 0.3, 0.7 + k * Math.max(0.47, (durS - 2) / 5), 0.5); }
+  if (n === "ClAges") { const k2 = (P.items || [1, 2, 3]).length; for (let k = 0; k < k2; k++) add("design/page_turn_big.flac", 0.28, 0.33 + k * Math.max(0.47, Math.min(1.5, (durS - 1.4) / k2)), 0.7); add("design/impact_drum_subtle.flac", 0.36, 0.4 + (k2 - 1) * Math.max(0.47, Math.min(1.5, (durS - 1.4) / k2)), 1.4); }
   if (n === "ClDays") { for (let k = 0; k < 3; k++) add("design/page_turn_big.flac", 0.26, 0.07 + k * 0.2, 0.7); add("design/tick_timer.flac", 0.22, 0.8, Math.min(2.5, durS - 1)); }
   if (n === "ClDoDont") { add("design/paper_slide.flac", 0.3, 0.1, 0.8); add("design/click_slide.flac", 0.3, 1.0, 0.5); }
   if (n === "ClPins") { const k3 = (P.pins || []).length || 3; for (let k = 0; k < k3; k++) add("design/pop_soap_bubble.flac", 0.34, 0.4 + k * 0.6, 0.6); }
