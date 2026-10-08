@@ -6,7 +6,7 @@
 [HOOK|cred] Soy Claudio. Treinta y cinco años de mecánico. Y al final te doy las tres pruebas de diez minutos que tienes que hacer antes de llevar tu auto a cualquier taller.
 [HOOK|cap] Primero, lo que encontré en la cochera.
 [ANTES|ep5] Si es la primera vez que me ves: el auto de Doña Elena es el sedán plateado del 2012 de su difunto esposo, con doscientos ochenta mil kilómetros. La semana pasada le sacamos el aceite de bebé de los pedales y del volante. Te dejo ese video aquí.
-[ANTES|libreta] Elena había hecho todo bien. Miró la libreta azul de Don Ernesto, vio que ya le tocaba el cambio de aceite, y fue. Lo anotó con su letra, con la fecha y los kilómetros. El problema no fue ella. Fue lo que no se revisó.
+[ANTES|libreta] Elena no hizo nada mal. Antes del viaje a la playa con su hermana, quiso adelantar el cambio de aceite, y fue. Lo anotó en la libreta azul con su letra, con la fecha y los kilómetros. El problema no fue ella. Fue lo que no se revisó.
 [ANTES|porque] Y te explico por qué pasa esto tan seguido. El cambio de aceite es el único momento en que alguien saca todo el aceite del motor y lo vuelve a poner a mano. Con prisa, con otros cinco autos esperando. Por eso es justo ahí donde más motores se arruinan.
 [ANTES|nadie] Y no te lo digo para que le tengas miedo a los talleres. Hay talleres buenísimos. Te lo digo para que sepas qué mirar en cinco minutos, antes de irte, sea donde sea que lo cambies.
 [CAP|medir] Antes de todo: cómo se mide bien.
