@@ -1,0 +1,878 @@
+{
+ "dir": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/",
+ "face": "D:/Proyectos/video2-wt/fuhormiga/public/ref_fuhormiga_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/fuhormiga/public/ref_fuhormiga.png",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the room behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, daylight from the window and a warm ceiling bulb. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the khaki work shirt with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural rough hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K1",
+   "name": "m2",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers crouches at night in a small back patio next to a big terracotta flower pot with a small lemon tree, standing on the cement floor of a small back patio next to the house wall, a yellow flashlight in his hand pointing at the base of the pot, looking back at the camera. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "name": "m2_fin",
+   "from": [
+    "K1"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he has one finger on his lips, the flashlight still on the pot, eyebrows raised. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "name": "v_mateo",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the door of the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor with his work bag on his shoulder, about to leave, Mateo, a 6-year-old Latin American boy with short messy hair kneeling on a chair at the window calling him. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "name": "v_mateo_fin",
+   "from": [
+    "K3"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he is bent beside the boy at the window, both looking at the window frame. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "name": "v_regla",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the kitchen window above the sink with a white painted wooden frame and white iron bars in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor, pointing outside through the bars with one finger, looking at the camera. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K6",
+   "name": "v_regla_fin",
+   "from": [
+    "K5"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he has his hand out the window, palm open, a dry knowing look. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K7",
+   "name": "v_cuantas",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a folded dish towel, a few ants on the counter beside his hand. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K8",
+   "name": "v_cuantas_fin",
+   "from": [
+    "K7"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he spreads both hands wide apart, eyebrows raised. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K9",
+   "name": "v_secreto",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers leans over the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor toward the camera, a line of tiny ants on the counter in front of him. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K10",
+   "name": "v_secreto_fin",
+   "from": [
+    "K9"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds his two hands together, fingertips touching, explaining, leaning toward the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K11",
+   "name": "v_truco",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a small clear glass baby-food jar with its metal screw lid closed tight, three tiny holes near the bottom of its side, a wet cotton ball inside, taped down to the counter with two strips of tape up toward the camera. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K12",
+   "name": "v_truco_fin",
+   "from": [
+    "K11"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds the jar beside his face, a confident smile. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K13",
+   "name": "v_borax",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a small white cardboard box of borax powder with a plain blank label, reading its side. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K14",
+   "name": "v_borax_fin",
+   "from": [
+    "K13"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he shows a little white powder in his blue-gloved palm, the box in his other hand. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K15",
+   "name": "v_honesto",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers sits at the wooden kitchen table in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor, a small clear glass baby-food jar with its metal screw lid closed tight, three tiny holes near the bottom of its side, a wet cotton ball inside, taped down to the counter with two strips of tape on the table in front of him, forearms on the table, sincere. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K16",
+   "name": "v_honesto_fin",
+   "from": [
+    "K15"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he leans back a little, palms open on the table, sincere. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K17",
+   "name": "v_honesto2",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers sits at the wooden kitchen table in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor, pointing at a line of tiny ants on the edge of the table. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K18",
+   "name": "v_honesto2_fin",
+   "from": [
+    "K17"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he nods at the camera, a small smile. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K19",
+   "name": "v_mezcla",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor wearing blue nitrile gloves, a glass measuring cup of warm water, a small white cardboard box of borax powder with a plain blank label, a bag of sugar and a teaspoon in front of him. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K20",
+   "name": "v_mezcla_fin",
+   "from": [
+    "K19"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he stirs the clear liquid with the spoon, holding the cup up to the light. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K21",
+   "name": "v_error",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a small white cardboard box of borax powder with a plain blank label tilted over a glass as if to pour a lot, then stopping. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K22",
+   "name": "v_error_fin",
+   "from": [
+    "K21"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds up one finger, the box set down, firm look. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K23",
+   "name": "v_poco",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a teaspoon with a small level amount of white powder toward the camera. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K24",
+   "name": "v_poco_fin",
+   "from": [
+    "K23"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds the level teaspoon up beside his face, nodding. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K25",
+   "name": "v_lucia",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor beside Lucía Ramírez, a 38-year-old Latin American mother with long dark wavy hair in a low ponytail, a gray t-shirt and jeans, who has her arms crossed, a glass jar of clear liquid on the counter. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K26",
+   "name": "v_lucia_fin",
+   "from": [
+    "K25"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he has one hand on the jar, looking at the camera, serious and kind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K27",
+   "name": "v_estacion",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a small empty clear glass baby-food jar with a metal screw lid. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K28",
+   "name": "v_estacion_fin",
+   "from": [
+    "K27"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds the closed jar up to the camera, turning it. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K29",
+   "name": "v_inspector",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers kneels at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor next to Mateo, a 6-year-old Latin American boy with short messy hair, who looks excited, a small clear glass baby-food jar with its metal screw lid closed tight, three tiny holes near the bottom of its side, a wet cotton ball inside, taped down to the counter with two strips of tape on the counter between them. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K30",
+   "name": "v_inspector_fin",
+   "from": [
+    "K29"
+   ],
+   "prompt": "A few seconds later, same place, same framing: the boy salutes back proudly, Claudio laughing beside him. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K31",
+   "name": "v_donde",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor pressing a small clear glass baby-food jar with its metal screw lid closed tight, three tiny holes near the bottom of its side, a wet cotton ball inside, taped down to the counter with two strips of tape against the tiled wall right beside a line of tiny ants. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K32",
+   "name": "v_donde_fin",
+   "from": [
+    "K31"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he points at the window frame, the jar taped beside the line of ants. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K33",
+   "name": "v_borico",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers kneels beside the old white refrigerator in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor, pulled a little away from the wall, shining a yellow flashlight behind it. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K34",
+   "name": "v_borico_fin",
+   "from": [
+    "K33"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds his thumb and finger close together, nodding, the flashlight behind the fridge. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K35",
+   "name": "v_nomates",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor with his hands raised a little, palms out, beside a small clear glass baby-food jar with its metal screw lid closed tight, three tiny holes near the bottom of its side, a wet cotton ball inside, taped down to the counter with two strips of tape with ants around it. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K36",
+   "name": "v_nomates_fin",
+   "from": [
+    "K35"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he points at the ants entering the jar, smiling. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K37",
+   "name": "v_perfecto",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands in a small back patio holding a cell phone to his ear, smiling. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K38",
+   "name": "v_perfecto_fin",
+   "from": [
+    "K37"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he gives a thumbs up with the phone at his ear, grinning. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K39",
+   "name": "v_medidas",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers sits at the wooden kitchen table in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor with a thick printed manual with a green cover open in front of him. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K40",
+   "name": "v_medidas_fin",
+   "from": [
+    "K39"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds the open manual toward the camera, pointing at a page. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K41",
+   "name": "v_linterna",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor at night, the lights off, holding a yellow flashlight pointed at a line of tiny ants on the wall near the window. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K42",
+   "name": "v_linterna_fin",
+   "from": [
+    "K41"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he is leaning close to the window frame, the beam on a thin crack, looking back at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K43",
+   "name": "v_nido",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers crouches at night in a small back patio next to a big terracotta flower pot with a small lemon tree, standing on the cement floor of a small back patio next to the house wall, shining a yellow flashlight at its base, looking at the camera, impressed. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K44",
+   "name": "v_nido_fin",
+   "from": [
+    "K43"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he points back toward the house window, the flashlight still on the pot. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K45",
+   "name": "v_trabajar",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands in the small back patio next to a big terracotta flower pot with a small lemon tree, standing on the cement floor of a small back patio next to the house wall at night with Jorge Ramírez, a stocky 40-year-old Latin American father with short black hair and a trimmed mustache, in a navy polo shirt, who holds a kettle down at his side. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K46",
+   "name": "v_trabajar_fin",
+   "from": [
+    "K45"
+   ],
+   "prompt": "A few seconds later, same place, same framing: the two men walk back toward the house door, Claudio looking back at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K47",
+   "name": "v_limpiar",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers wipes the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor along the wall with a cloth, a brown bottle of hydrogen peroxide beside him. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K48",
+   "name": "v_limpiar_fin",
+   "from": [
+    "K47"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds the cloth up, looking at the camera, the counter clean. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K49",
+   "name": "v_jorge",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the kitchen cabinets in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor next to Jorge Ramírez, a stocky 40-year-old Latin American father with short black hair and a trimmed mustache, in a navy polo shirt, who holds an aerosol can. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K50",
+   "name": "v_jorge_fin",
+   "from": [
+    "K49"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he closes the high cabinet door, both men smiling. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K51",
+   "name": "v_err5",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a white ceramic sugar bowl with its lid off in one hand, a small clear glass baby-food jar with its metal screw lid closed tight, three tiny holes near the bottom of its side, a wet cotton ball inside, taped down to the counter with two strips of tape on the counter. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K52",
+   "name": "v_err5_fin",
+   "from": [
+    "K51"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he has closed the sugar bowl, an amused look. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K53",
+   "name": "v_proteina",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a small open jar of peanut butter and a teaspoon. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K54",
+   "name": "v_proteina_fin",
+   "from": [
+    "K53"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds the spoon with a tiny bit of peanut butter, nodding. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K55",
+   "name": "v_semanas",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor beside a small clear glass baby-food jar with its metal screw lid closed tight, three tiny holes near the bottom of its side, a wet cotton ball inside, taped down to the counter with two strips of tape, holding up two fingers. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K56",
+   "name": "v_semanas_fin",
+   "from": [
+    "K55"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he taps the jar, nodding patiently. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K57",
+   "name": "v_lluvia",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the kitchen window above the sink with a white painted wooden frame and white iron bars in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor, rain falling outside the window behind him. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K58",
+   "name": "v_lluvia_fin",
+   "from": [
+    "K57"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he taps the window frame, rain behind him. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K59",
+   "name": "v_stuck",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the granite counter in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a small clear glass baby-food jar with its metal screw lid closed tight, three tiny holes near the bottom of its side, a wet cotton ball inside, taped down to the counter with two strips of tape, counting on his fingers. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K60",
+   "name": "v_stuck_fin",
+   "from": [
+    "K59"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds the open jar, looking inside, then at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K61",
+   "name": "v_revision",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands in the dark doorway of the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor at night, lights off, holding a yellow flashlight switched off. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K62",
+   "name": "v_revision_fin",
+   "from": [
+    "K61"
+   ],
+   "prompt": "A few seconds later, same place, same framing: the beam is on the bottom of the wall, he looks back at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K63",
+   "name": "v_fila",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the kitchen window above the sink with a white painted wooden frame and white iron bars in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor at night with a yellow flashlight on the window frame. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K64",
+   "name": "v_fila_fin",
+   "from": [
+    "K63"
+   ],
+   "prompt": "A few seconds later, same place, same framing: the beam rests on the window frame corner, he looks at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K65",
+   "name": "v_regalo",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at an open kitchen cabinet door in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a printed sheet of paper, about to tape it inside the door. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K66",
+   "name": "v_regalo_fin",
+   "from": [
+    "K65"
+   ],
+   "prompt": "A few seconds later, same place, same framing: the sheet is taped inside the cabinet door, he taps it, smiling. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K67",
+   "name": "v_manual",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the kitchen table in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor holding a thick printed manual with a green cover in both hands. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K68",
+   "name": "v_manual_fin",
+   "from": [
+    "K67"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he holds the closed green manual up beside his face, confident and warm. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K69",
+   "name": "v_estufa",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands in the dark the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor at night next to Lucía Ramírez, a 38-year-old Latin American mother with long dark wavy hair in a low ponytail, a gray t-shirt and jeans, who has her hand on the light switch by the door. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K70",
+   "name": "v_estufa_fin",
+   "from": [
+    "K69"
+   ],
+   "prompt": "A few seconds later, same place, same framing: both look toward the stove in the bright kitchen, alarmed. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K71",
+   "name": "v_chau",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same house, same light. Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the kitchen window above the sink with a white painted wooden frame and white iron bars in the kitchen of a modest one-story Latin American family house: white wall tiles with a blue-and-white patterned tile strip, a speckled gray granite counter, wooden kitchen cabinets, an older white refrigerator with children's crayon drawings held by magnets, a stainless double sink under a window with white iron bars, a dog's steel food bowl on the floor in daylight, the frame clean and sealed, no ants, smiling at the camera. Medium shot from a coworker's handheld camera at eye level, he looks at the camera and talks. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K72",
+   "name": "v_chau_fin",
+   "from": [
+    "K71"
+   ],
+   "prompt": "A few seconds later, same place, same framing: he smiles and nods goodbye, a hand on the window frame. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m2",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/m2.wav",
+   "text": "Un lugar al que nadie iba a llegar con un aerosol. Te lo muestro en un rato. Hoy",
+   "action": "He shines the flashlight on the base of the pot, then turns to the camera, raises a finger to his lips and whispers. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_mateo",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_mateo.wav",
+   "text": "Ese día, cuando ya me iba, Mateo, el de seis, me llamó desde la ventana de la cocina. Claudio, mira.",
+   "action": "He stops, turns back toward the boy with a smile and walks toward the window, then bends down to look where the boy points without touching. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_regla",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_regla.wav",
+   "text": "Y es lógico. Porque esas hormigas no viven en tu cocina. Vienen a buscar comida y se la llevan. Las que matas, las reemplaza el nido en un día.",
+   "action": "He points out the window, explains, then makes a gesture of something being carried away with his hand. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_cuantas",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_cuantas.wav",
+   "text": "Un nido de hormiguitas de cocina puede tener varios miles. Y las que salen a buscar comida son una parte chica.",
+   "action": "He lifts the towel as if to swat, stops, shakes his head and puts the towel down, then spreads his hands wide to show how many more there are. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_secreto",
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_secreto.wav",
+   "text": "Y aquí va lo que casi nadie sabe. Las obreras no comen sólo para ellas.",
+   "action": "He leans in close to the camera as if telling a secret, then mimes passing something from his mouth to another with his fingers. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_truco",
+   "a": "K11",
+   "b": "K12",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_truco.wav",
+   "text": "Les das un cebo dulce, con un veneno lento. Ellas lo llevan. Lo reparten. Y en unos días, se apaga el nido desde adentro.",
+   "action": "He holds the small jar up, taps it, and explains with a confident little smile, nodding. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_borax",
+   "a": "K13",
+   "b": "K14",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_borax.wav",
+   "text": "El bórax es un polvo blanco, de los de lavar ropa. A veces está en el supermercado,",
+   "action": "He turns the box to show the camera its side, taps it, and pours a little white powder into his gloved palm to show it. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_honesto",
+   "a": "K15",
+   "b": "K16",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_honesto.wav",
+   "text": "Y una cosa honesta antes de empezar. Esto no es inmediato. El primer día vas a ver más hormigas, no menos.",
+   "action": "He speaks calmly and honestly, holds up one finger, then shakes his head gently at the idea of instant results. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_honesto2",
+   "a": "K17",
+   "b": "K18",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_honesto2.wav",
+   "text": "Esto es para la fila de hormiguitas de la cocina, que es la que tiene casi todo el mundo.",
+   "action": "He points at the little ants on the table with a small smile and nods. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_mezcla",
+   "a": "K19",
+   "b": "K20",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_mezcla.wav",
+   "text": "Una cucharadita de bórax. Media taza de azúcar. Y una taza de agua tibia.",
+   "action": "He levels one teaspoon of white powder into the warm water, pours in half a cup of sugar, and stirs with the spoon, talking while he does it. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_error",
+   "a": "K21",
+   "b": "K22",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_error.wav",
+   "text": "Y aquí está el error que todos cometen: poner más bórax pensando que va a funcionar mejor. Pasa lo contrario. Con mucho bórax,",
+   "action": "He tips the box as if to pour a lot, stops himself, shakes his head firmly and raises one finger. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_poco",
+   "a": "K23",
+   "b": "K24",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_poco.wav",
+   "text": "Poco bórax es el secreto. Tiene que ser un veneno lento.",
+   "action": "He shows the small teaspoon to the camera, then slowly taps it level with a finger, emphatic. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_lucia",
+   "a": "K25",
+   "b": "K26",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_lucia.wav",
+   "text": "Y tiene razón en preguntar. El bórax no es para comer, ni para personas ni para perros. Por eso el paso dos es tan importante.",
+   "action": "He turns to Lucía and nods seriously, then looks at the camera and taps the jar, explaining it is not for eating. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_estacion",
+   "a": "K27",
+   "b": "K28",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_estacion.wav",
+   "text": "En vez de dejar la mezcla en un platito, armamos una estación. Agarras un frasco chico con tapa.",
+   "action": "He unscrews the lid, shows the jar to the camera, and screws the lid back on, talking. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_inspector",
+   "a": "K29",
+   "b": "K30",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_inspector.wav",
+   "text": "Mateo quería hacer los agujeritos. Le dije que el clavo caliente lo uso yo, pero que él podía ser el inspector:",
+   "action": "He laughs with the boy, points at the jar from a distance, and makes a little salute to him like naming him inspector. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_donde",
+   "a": "K31",
+   "b": "K32",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_donde.wav",
+   "text": "En los Ramírez, una en la barra, pegada a la pared, donde bajaba la fila. Y otra en el marco de la ventana, por dentro. Y",
+   "action": "He places the jar beside the ant line without touching the ants, then points up at the window frame where a second jar will go. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_borico",
+   "a": "K33",
+   "b": "K34",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_borico.wav",
+   "text": "la estación, miré detrás del refrigerador: la tapita del ácido bórico de las cucarachas",
+   "action": "He shines the flashlight behind the fridge, nods approvingly, then shows the camera with his fingers how small and closed the cap is. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_nomates",
+   "a": "K35",
+   "b": "K36",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_nomates.wav",
+   "text": "Esto es lo que más cuesta. Vas a ver hormigas en la estación, y vas a tener ganas de matarlas. No las mates.",
+   "action": "He raises his palms as if stopping someone, shakes his head firmly, then smiles and points at the ants going into the jar. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_perfecto",
+   "a": "K37",
+   "b": "K38",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_perfecto.wav",
+   "text": "Le dije: perfecto. Están avisando a las otras que encontraron comida. Y",
+   "action": "He laughs into the phone, nods, and gives a thumbs up to the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_medidas",
+   "a": "K39",
+   "b": "K40",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_medidas.wav",
+   "text": "el tamaño de los agujeritos, cuántas estaciones, cada cuánto se renuevan, y qué hacer si no las tocan.",
+   "action": "He runs a finger down a page of the manual, then turns it toward the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_linterna",
+   "a": "K41",
+   "b": "K42",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_linterna.wav",
+   "text": "Esa misma noche, con la linterna, seguimos la fila hacia atrás. Desde la estación, por la pared, hasta el marco de la ventana. Y ahí, entre el marco y la pared,",
+   "action": "He follows the line of ants slowly with the flashlight beam up the wall to the window frame, then leans in close to the frame. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_nido",
+   "a": "K43",
+   "b": "K44",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_nido.wav",
+   "text": "Ahí estaba el nido. Debajo de una maceta, afuera, a cuatro metros de la cocina. Ningún aerosol de la cocina iba a llegar ahí.",
+   "action": "He keeps the beam on the base of the pot, then gestures back toward the kitchen window to show the distance. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_trabajar",
+   "a": "K45",
+   "b": "K46",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_trabajar.wav",
+   "text": "el nido se muda, y la fila aparece en otro lado. Las dejamos trabajar.",
+   "action": "He puts a friendly hand on Jorge's shoulder, shakes his head with a smile, and both walk back toward the house. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_limpiar",
+   "a": "K47",
+   "b": "K48",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_limpiar.wav",
+   "text": "Recién ahí, cuando la fila desaparece, se limpia el camino. Un trapo con vinagre o con agua oxigenada por donde caminaban, para borrar el olor.",
+   "action": "He wipes firmly along the old ant path from the wall to the window, then sprays a little from the brown bottle and wipes again. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_jorge",
+   "a": "K49",
+   "b": "K50",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_jorge.wav",
+   "text": "Le dije: guárdalo arriba, lejos de los niños. No lo vas a necesitar.",
+   "action": "He takes the can from Jorge with a laugh and puts it on the highest shelf of the cabinet, then dusts his hands. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_err5",
+   "a": "K51",
+   "b": "K52",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_err5.wav",
+   "text": "Si tienen el azucarero abierto, ¿para qué van a ir al cebo?",
+   "action": "He holds up the open sugar bowl, shrugs with an amused look, and puts the lid on it. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_proteina",
+   "a": "K53",
+   "b": "K54",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_proteina.wav",
+   "text": "Mezclas una pizca de bórax con una cucharadita de mantequilla de maní o de atún, y lo pones en la misma estación.",
+   "action": "He takes a tiny bit of peanut butter on the tip of the spoon and shows it to the camera, then mixes it into a small dish. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_semanas",
+   "a": "K55",
+   "b": "K56",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_semanas.wav",
+   "text": "Si el nido es muy grande, hasta dos semanas, renovando el algodón.",
+   "action": "He holds up two fingers, then taps the jar lid and mimes wetting a cotton ball again. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_lluvia",
+   "a": "K57",
+   "b": "K58",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_lluvia.wav",
+   "text": "y salen a buscar un lugar seco y comida. Es cuando más entran a las casas.",
+   "action": "He glances at the rain outside, then back at the camera and taps the window frame. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_stuck",
+   "a": "K59",
+   "b": "K60",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_stuck.wav",
+   "text": "Si a la semana la fila sigue igual, revisa dos cosas: que",
+   "action": "He counts two things on his fingers, opens the jar and looks at the cotton inside. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_revision",
+   "a": "K61",
+   "b": "K62",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_revision.wav",
+   "text": "entras a la cocina a oscuras y prendes la linterna de golpe. Miras hacia dónde corren, y qué camino hacen.",
+   "action": "He clicks the flashlight on suddenly and sweeps the beam along the counter and the bottom of the wall, then turns to the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_fila",
+   "a": "K63",
+   "b": "K64",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_fila.wav",
+   "text": "Si ves una fila, la sigues hacia atrás con la linterna, como hicimos hoy. Hasta donde entra. Ahí está tu rendija. Y",
+   "action": "He traces an imaginary line with the beam from the counter up to the window frame and stops on the corner. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_regalo",
+   "a": "K65",
+   "b": "K66",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_regalo.wav",
+   "text": "Te dejé las tres pruebas en una hoja gratis que se llama Antes de Fumigar, la revisión de la noche. La de la linterna, la de la harina,",
+   "action": "He tapes the printed sheet to the inside of the cabinet door, smooths it with his palm and taps it, talking warmly. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_manual",
+   "a": "K67",
+   "b": "K68",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_manual.wav",
+   "text": "Veintisiete dólares, un solo pago, y si en siete días no te sirve, te devuelven el dinero.",
+   "action": "He opens the manual, flips a few pages toward the camera, then closes it and holds it up. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_estufa",
+   "a": "K69",
+   "b": "K70",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_estufa.wav",
+   "text": "Ah, y una cosa más. La noche del nido, cuando volvimos a entrar a la cocina con la linterna apagada, Lucía prendió la luz de golpe.",
+   "action": "Lucía flips the light on suddenly; he squints and looks toward the stove. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "v_chau",
+   "a": "K71",
+   "b": "K72",
+   "audio": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/aud/v_chau.wav",
+   "text": "No las mates: déjalas trabajar. Nos vemos la semana que viene.",
+   "action": "He runs a finger along the clean window frame, smiles warmly at the camera and nods goodbye. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/out.mp4"
+}
