@@ -119,16 +119,6 @@
   "ok": true,
   "intentos": 1
  },
- "b012": {
-  "file": "b012_t1.wav",
-  "gap": 3,
-  "ratio": 0.924,
-  "dur": 61.33,
-  "esperado": 61.29,
-  "cps": 13.99,
-  "ok": true,
-  "intentos": 1
- },
  "b013": {
   "file": "b013_t1.wav",
   "gap": 2,
@@ -166,6 +156,16 @@
   "dur": 14.4,
   "esperado": 15.0,
   "cps": 14.59,
+  "ok": true,
+  "intentos": 1
+ },
+ "b012": {
+  "file": "b012_t1.wav",
+  "gap": 3,
+  "ratio": 0.903,
+  "dur": 62.08,
+  "esperado": 61.36,
+  "cps": 13.84,
   "ok": true,
   "intentos": 1
  }
