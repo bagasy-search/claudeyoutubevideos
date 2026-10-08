@@ -788,3 +788,285 @@ export const ClProxStart: React.FC<{ mode?: "press" | "chip" | "key"; bed?: stri
     </AbsoluteFill>
   );
 };
+
+// ═════════════════ ep. 3 (mecmillon): la PCV y los hábitos del motor ═════════════════
+//   ClPCV3D          la válvula PCV en 3D (three.js) en corte: cuerpo, resorte y émbolo. "intro" gira y se rotula · "rattle" se sacude y el
+//                    émbolo golpea (clic, clic: ondas) · "stuck" la mugre negra la llena y el émbolo no se mueve (muda)
+//   ClEnginePressure corte del motor (bloque, tapa de válvulas y cárter): "flow" los gases salen por la PCV · "blocked" la PCV tapada, el
+//                    manómetro sube, los gases empujan · "leak" el aceite sale por la junta y cae la gota al cartón
+//   ClSevereChart    la tabla del manual sobre el asiento: "table" uso normal / uso severo, el resaltador pinta la columna severa ·
+//                    "trips" los viajes de Elena (súper, iglesia, hermana) con su minutero: todos < 10 min → SEVERO
+//   ClColdStart      el tablero en frío: "wait" 30 s con el motor andando parado · "gentle" el cuentavueltas con la franja suave hasta que
+//                    la aguja de la temperatura se mueve
+//   ClFilterLight    el filtro de aire contra el sol de la puerta del taller: "check" la luz atraviesa o no · "compare" el de Elena (gris)
+//                    al lado de uno nuevo
+//   ClLogbook        la libreta azul de Don Ernesto abierta: "ernesto" columnas fecha/km/qué/cuánto que se escriben · "last" la última
+//                    línea y la hoja en blanco · "gap" los 6 años en blanco · "new" la letra de Elena · "two" las dos letras ·
+//                    "consume" la tabla de cuánto aceite le falta cada 1.000 km
+const PcvMesh: React.FC<{ plunger: number; gunk: number; mats: any }> = ({ plunger, gunk, mats }) => (
+  <group rotation={[0, 0, Math.PI / 2]}>
+    {/* cuerpo transparente (corte) */}
+    <mesh material={mats.body}><cylinderGeometry args={[0.34, 0.34, 1.6, 40, 1, true]} /></mesh>
+    <mesh material={mats.dark} position={[0, 0.86, 0]}><cylinderGeometry args={[0.2, 0.26, 0.2, 32]} /></mesh>
+    <mesh material={mats.dark} position={[0, -0.86, 0]}><cylinderGeometry args={[0.26, 0.2, 0.2, 32]} /></mesh>
+    <mesh material={mats.dark} position={[0, 1.15, 0]}><cylinderGeometry args={[0.12, 0.12, 0.45, 24]} /></mesh>
+    {/* resorte */}
+    {Array.from({ length: 9 }, (_, i) => <mesh key={i} material={mats.spring} position={[0, -0.6 + i * 0.09 + plunger * 0.04, 0]} rotation={[Math.PI / 2, 0, 0]}><torusGeometry args={[0.2, 0.025, 8, 24]} /></mesh>)}
+    {/* émbolo */}
+    <mesh material={mats.metal} position={[0, 0.3 + plunger * 0.25, 0]}><cylinderGeometry args={[0.24, 0.24, 0.35, 32]} /></mesh>
+    {/* mugre */}
+    {gunk > 0 ? <mesh material={mats.gunk} position={[0, -0.1, 0]} scale={[1, 0.2 + gunk * 0.8, 1]}><cylinderGeometry args={[0.32, 0.32, 1.3, 32]} /></mesh> : null}
+  </group>
+);
+export const ClPCV3D: React.FC<{ mode?: "intro" | "rattle" | "stuck"; bed?: string }> = ({ mode = "intro", bed }) => {
+  const f = useCurrentFrame(); const { width, height, durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 15);
+  const mats = useMemo(() => ({
+    body: new THREE.MeshStandardMaterial({ color: "#2A2D33", roughness: 0.35, metalness: 0.1, transparent: true, opacity: 0.35, side: THREE.DoubleSide }),
+    dark: new THREE.MeshStandardMaterial({ color: "#1C1E22", roughness: 0.5 }),
+    spring: new THREE.MeshStandardMaterial({ color: "#C9CDD2", metalness: 0.8, roughness: 0.3 }),
+    metal: new THREE.MeshStandardMaterial({ color: "#D8DCE1", metalness: 0.85, roughness: 0.25, emissive: "#555A60", emissiveIntensity: 0.3 }),
+    gunk: new THREE.MeshStandardMaterial({ color: "#14100A", roughness: 0.9, transparent: true, opacity: 0.92 }),
+  }), []);
+  const shake = mode === "rattle" ? Math.sin(f * 1.6) * 0.18 * clamp01((f - 10) / 6) : 0;
+  const plunger = mode === "rattle" ? (Math.sin(f * 1.6) > 0 ? 1 : 0) : mode === "stuck" ? 0 : 0.5 + 0.5 * Math.sin(f * 0.1);
+  const gunk = mode === "stuck" ? ease(clamp01((f - 8) / 26)) : 0;
+  const a = mode === "intro" ? interpolate(f, [0, T], [-0.6, 0.5]) : -0.25;
+  const target = new THREE.Vector3(0, 0, 0), camPos = new THREE.Vector3(Math.sin(a) * 6, 1.1, Math.cos(a) * 6);
+  const click = mode === "rattle" && Math.sin(f * 1.6) > 0.9;
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={801} dim={0.28} />
+      <Contact x={760} y={820} w={760} o={0.3} />
+      <div style={{ position: "absolute", inset: 0, transform: `translateX(${-0.12 * width}px) rotate(${shake * 8}deg) scale(${0.8 + 0.2 * p})`, opacity: clamp01(p * 1.4) }}>
+        <ThreeCanvas width={width} height={height} camera={{ fov: 30, position: [camPos.x, camPos.y, camPos.z] }} gl={{ antialias: true, alpha: true }}>
+          <Cam pos={camPos} target={target} />
+          <ambientLight intensity={1} />
+          <hemisphereLight args={["#FFFFFF", "#6B6257", 0.7]} />
+          <directionalLight position={[-3, 5, 4]} intensity={1.6} color="#FFF3DF" />
+          <directionalLight position={[4, 1, -2]} intensity={0.7} />
+          <PcvMesh plunger={plunger} gunk={gunk} mats={mats} />
+        </ThreeCanvas>
+      </div>
+      {mode === "rattle" ? <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>{[0, 1, 2].map((i) => { const t = ((f * 0.06 + i / 3) % 1); return <path key={i} d={`M ${980 + t * 160} ${430 - t * 60} q 40 110 0 220`} stroke={CL.navy} strokeWidth={8} fill="none" opacity={(1 - t) * 0.8} />; })}</svg> : null}
+      {click ? <div style={{ position: "absolute", left: 1000, top: 300, fontFamily: HAND, fontWeight: 700, fontSize: 90, color: CL.navy, rotate: "-8deg" }}>¡clic!</div> : null}
+      {mode === "intro" ? <><Tag x={1180} y={240} text="Válvula PCV" color={CL.nitrile} o={lin(f, 10, 20)} size={56} /><Note x={1180} y={370} o={lin(f, 26, 38)} big="Del tamaño de un dedo" small="US$ 5 a 10" w={520} /></> : null}
+      {mode === "rattle" ? <><Tag x={1180} y={240} text="Sana: suena" color={CL.navy} o={lin(f, 8, 18)} size={56} /><Note x={1180} y={370} o={lin(f, 24, 36)} big="Como un sonajero" small="clic, clic ✓" w={520} /></> : null}
+      {mode === "stuck" ? <><Tag x={1180} y={240} text="Tapada: muda" color={CL.red} o={lin(f, 8, 18)} size={56} /><Note x={1180} y={370} o={lin(f, 30, 42)} big="Pegada de aceite viejo" small="los gases no salen" color={CL.red} w={520} /></> : null}
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
+
+export const ClEnginePressure: React.FC<{ mode?: "flow" | "blocked" | "leak"; bed?: string }> = ({ mode = "flow", bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 16);
+  const press = mode === "flow" ? 0.25 : mode === "blocked" ? ease(clamp01((f - 10) / (T * 0.5))) : 0.9;
+  const drop = mode === "leak" ? ((f - 20) % 40) / 40 : -1;
+  const dots = Array.from({ length: 14 }, (_, i) => i);
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={811} dim={0.3} />
+      <div style={{ position: "absolute", left: 300, top: 120 + (1 - p) * 120, opacity: clamp01(p * 1.4), filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.4))" }}>
+        <svg width={1000} height={860} viewBox="0 0 1000 860">
+          <defs><linearGradient id="epBlock" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stopColor="#8E949C" /><stop offset="50%" stopColor="#C2C7CD" /><stop offset="100%" stopColor="#8E949C" /></linearGradient></defs>
+          {/* tapa de válvulas */}
+          <rect x={180} y={90} width={640} height={110} rx={30} fill="#2B2F36" />
+          {/* junta (roja si pierde) */}
+          <rect x={170} y={196} width={660} height={14} rx={6} fill={mode === "leak" || press > 0.7 ? CL.red : "#4A4F57"} />
+          {/* bloque con cilindros */}
+          <rect x={200} y={210} width={600} height={380} fill="url(#epBlock)" stroke="#5E646C" strokeWidth={6} />
+          {[290, 430, 570, 710].map((x, i) => { const y = 300 + Math.sin(f * 0.35 + i * 1.6) * 40; return <g key={i}><rect x={x - 50} y={230} width={100} height={300} fill="#6F757D" /><rect x={x - 46} y={y} width={92} height={70} rx={8} fill="#D8DCE1" /></g>; })}
+          {/* cárter con aceite */}
+          <path d="M 220 590 L 780 590 L 740 760 L 260 760 Z" fill="#3A3D42" />
+          <path d="M 250 690 L 750 690 L 735 750 L 265 750 Z" fill="#7A4A12" opacity={0.95} />
+          {/* gases (puntos) */}
+          {dots.map((i) => { const t = ((f * (mode === "flow" ? 0.02 : 0.008) + i / 14) % 1); const x = 260 + (i % 7) * 80 + Math.sin(f * 0.1 + i) * 10; const y = mode === "flow" ? 560 - t * 470 : 560 - t * 330 * (1 - 0.3 * press); return <circle key={i} cx={x} cy={y} r={10 + 6 * press} fill={press > 0.6 ? hexA(CL.red, 0.55) : "rgba(150,160,170,0.6)"} />; })}
+          {/* la PCV arriba */}
+          <rect x={700} y={40} width={50} height={70} rx={10} fill={mode === "flow" ? "#4CAF50" : CL.red} />
+          {mode === "flow" ? [0, 1, 2].map((i) => { const t = ((f * 0.03 + i / 3) % 1); return <path key={i} d={`M 725 ${40 - t * 40} q 30 -30 60 -10`} stroke="#9AA3AD" strokeWidth={10} fill="none" opacity={1 - t} />; }) : <path d="M 705 20 l 40 40 M 745 20 l -40 40" stroke="#fff" strokeWidth={8} strokeLinecap="round" />}
+          {/* gota que sale por la junta */}
+          {mode === "leak" && drop >= 0 ? <ellipse cx={830} cy={210 + drop * 600} rx={12} ry={16} fill="#3A2210" /> : null}
+          {mode === "leak" ? <rect x={760} y={820} width={200} height={30} rx={4} fill="#C9A77A" /> : null}
+        </svg>
+      </div>
+      {/* manómetro */}
+      <div style={{ position: "absolute", left: 1350, top: 180, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(#FBFBF8,#E5E3DC)", boxShadow: `0 20px 40px ${CL.shadow}, inset 0 0 0 12px #9EA4AB`, opacity: lin(f, 6, 16) }}>
+        <svg width={300} height={300} style={{ position: "absolute" }}><path d="M 60 220 A 110 110 0 1 1 240 220" fill="none" stroke="#4CAF50" strokeWidth={16} /><path d="M 196 72 A 110 110 0 0 1 240 220" fill="none" stroke={CL.red} strokeWidth={16} /></svg>
+        <div style={{ position: "absolute", left: 146, top: 50, width: 8, height: 100, background: CL.ink, borderRadius: 4, transformOrigin: "50% 100%", rotate: `${-130 + 260 * press}deg` }} />
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 50, textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 30, color: CL.ink }}>PRESIÓN</div>
+      </div>
+      {mode === "flow" ? <Note x={1300} y={560} o={lin(f, 18, 30)} big="Los gases salen" small="por la PCV ✓" w={460} /> : null}
+      {mode === "blocked" ? <Note x={1300} y={560} o={lin(f, T * 0.5, T * 0.5 + 10)} big="La presión sube" small="y empuja el aceite" color={CL.red} w={460} /> : null}
+      {mode === "leak" ? <Note x={1300} y={560} o={lin(f, 18, 30)} big="Sale por la junta" small="no es el motor gastado" color={CL.red} w={460} /> : null}
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
+
+export const ClSevereChart: React.FC<{ mode?: "table" | "trips"; bed?: string }> = ({ mode = "table", bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 16);
+  if (mode === "trips") {
+    const trips: [string, number][] = [["Súper", 6], ["Iglesia", 8], ["Su hermana", 9]];
+    return (
+      <AbsoluteFill style={{ opacity: out }}>
+        <Bed src={bed} seed={821} dim={0.3} />
+        <div style={{ position: "absolute", left: 200, top: 170, display: "flex", gap: 50, opacity: clamp01(p * 1.4) }}>
+          {trips.map(([t, m], i) => {
+            const k = pop(f, fps, 6 + i * 8, 14), arc = clamp01((f - 10 - i * 8) / 20) * (m / 10);
+            return (
+              <div key={i} style={{ width: 440, scale: String(0.85 + 0.15 * k), opacity: clamp01(k * 1.4) }}>
+                <Card style={{ padding: "30px 30px 26px", borderBottom: `8px solid ${CL.nitrile}`, textAlign: "center" }}>
+                  <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 56, color: CL.ink }}>{t}</div>
+                  <svg width={260} height={260} style={{ margin: "10px auto 0", display: "block" }}><circle cx={130} cy={130} r={104} fill="none" stroke="#E5E3DC" strokeWidth={24} /><circle cx={130} cy={130} r={104} fill="none" stroke={CL.nitrile} strokeWidth={24} strokeDasharray={653} strokeDashoffset={653 * (1 - arc)} transform="rotate(-90 130 130)" strokeLinecap="round" /><text x={130} y={148} textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize={64} fill={CL.ink}>{m}′</text></svg>
+                  <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 44, color: CL.inkSoft }}>minutos</div>
+                </Card>
+              </div>
+            );
+          })}
+        </div>
+        <div style={{ position: "absolute", left: "50%", top: 790, translate: "-50% 0", rotate: "-4deg", opacity: lin(f, T * 0.55, T * 0.55 + 8), scale: String(1.5 - 0.5 * lin(f, T * 0.55, T * 0.55 + 8)), border: `10px solid ${CL.red}`, color: CL.red, fontFamily: LABEL, fontWeight: 700, fontSize: 86, padding: "6px 40px", borderRadius: 16, background: "rgba(255,255,255,0.85)" }}>USO SEVERO</div>
+        <RoomLight k={0.5} />
+      </AbsoluteFill>
+    );
+  }
+  const rows: [string, string, string][] = [["Aceite y filtro", "10.000 km", "5.000 km"], ["Filtro de aire", "40.000 km", "20.000 km"], ["Revisar PCV", "—", "c/ 2-3 cambios"], ["Líquido de frenos", "2 años", "2 años"]];
+  const hl = ease(clamp01((f - 18) / 22));
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={822} dim={0.28} />
+      <div style={{ position: "absolute", left: 300, top: 150 + (1 - p) * 120, width: 1320, transform: "perspective(1800px) rotateX(22deg) rotateZ(-1.5deg)", opacity: clamp01(p * 1.4) }}>
+        <Card style={{ padding: "40px 50px", borderRadius: 8 }}>
+          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 3, color: CL.navy, borderBottom: `4px solid ${CL.navy}`, paddingBottom: 10, marginBottom: 18 }}>TABLA DE MANTENIMIENTO</div>
+          <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr", rowGap: 18, fontFamily: LABEL, fontSize: 40, color: CL.ink, position: "relative" }}>
+            <div style={{ position: "absolute", left: "70.5%", top: -8, width: "29.5%", bottom: -8, background: hexA(CL.yellow, 0.55), transformOrigin: "top", scale: `1 ${hl}`, borderRadius: 6 }} />
+            <div style={{ fontWeight: 700 }} />
+            <div style={{ fontWeight: 700, color: CL.inkSoft }}>USO NORMAL</div>
+            <div style={{ fontWeight: 700, color: CL.red, position: "relative" }}>USO SEVERO</div>
+            {rows.map((r, i) => <React.Fragment key={i}><div>{r[0]}</div><div style={{ color: CL.inkSoft }}>{r[1]}</div><div style={{ fontWeight: 700, position: "relative" }}>{r[2]}</div></React.Fragment>)}
+          </div>
+        </Card>
+      </div>
+      <Note x={1260} y={760} o={lin(f, 44, 56)} big="Éste es el tuyo" small="trayectos cortos, tráfico, calor" w={560} />
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
+
+export const ClColdStart: React.FC<{ mode?: "wait" | "gentle"; bed?: string }> = ({ mode = "wait", bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 16);
+  const k = clamp01((f - 8) / (T * 0.7));
+  const temp = mode === "gentle" ? -60 + 50 * ease(k) : -60;
+  const rpm = mode === "gentle" ? -100 + 70 + Math.sin(f * 0.2) * 8 : -100 + 25;
+  const secs = Math.min(30, Math.round(k * 30));
+  const Dial: React.FC<{ x: number; label: string; ang: number; band?: boolean; red?: boolean }> = ({ x, label, ang, band, red }) => (
+    <div style={{ position: "absolute", left: x, top: 260, width: 420, height: 420, borderRadius: "50%", background: "radial-gradient(#1C2330,#07090D)", boxShadow: "0 30px 50px rgba(0,0,0,0.5), inset 0 0 0 14px #9EA4AB" }}>
+      <svg width={420} height={420} style={{ position: "absolute" }}>
+        {band ? <path d="M 90 300 A 150 150 0 0 1 150 110" fill="none" stroke="#4CAF50" strokeWidth={18} opacity={0.9} /> : null}
+        {red ? <path d="M 300 120 A 150 150 0 0 1 340 280" fill="none" stroke={CL.red} strokeWidth={16} /> : null}
+        {Array.from({ length: 9 }, (_, i) => { const a = (-120 + i * 30) * Math.PI / 180 - Math.PI / 2; return <line key={i} x1={210 + Math.cos(a) * 170} y1={210 + Math.sin(a) * 170} x2={210 + Math.cos(a) * 145} y2={210 + Math.sin(a) * 145} stroke="#E7E9EC" strokeWidth={6} />; })}
+      </svg>
+      <div style={{ position: "absolute", left: 204, top: 60, width: 12, height: 150, background: "#F27A1A", borderRadius: 6, transformOrigin: "50% 100%", rotate: `${ang}deg` }} />
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 80, textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: "#E7E9EC" }}>{label}</div>
+    </div>
+  );
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={831} dim={0.3} />
+      <div style={{ position: "absolute", inset: 0, transform: `perspective(1800px) rotateX(10deg) scale(${0.85 + 0.15 * p})`, opacity: clamp01(p * 1.4) }}>
+        <Dial x={340} label="RPM" ang={rpm} band={mode === "gentle"} />
+        <Dial x={900} label="TEMP" ang={temp} red />
+      </div>
+      {mode === "wait" ? (
+        <div style={{ position: "absolute", left: 1400, top: 300, opacity: lin(f, 6, 14) }}>
+          <svg width={300} height={300}><circle cx={150} cy={150} r={124} fill="rgba(20,27,46,0.75)" stroke="rgba(255,255,255,0.25)" strokeWidth={16} /><circle cx={150} cy={150} r={124} fill="none" stroke={CL.nitrile} strokeWidth={16} strokeDasharray={779} strokeDashoffset={779 * (1 - secs / 30)} transform="rotate(-90 150 150)" strokeLinecap="round" /><text x={150} y={176} textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize={110} fill="#fff">{secs}</text></svg>
+          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 44, color: "#fff", textShadow: "0 3px 10px rgba(0,0,0,0.6)", textAlign: "center", width: 300 }}>SEGUNDOS</div>
+        </div>
+      ) : null}
+      <Tag x={340} y={130} text={mode === "wait" ? "30 segundos y salir despacio" : "Suave hasta que se mueva la aguja"} color={CL.navy} o={lin(f, 6, 16)} size={46} />
+      {mode === "gentle" ? <Note x={1400} y={300} o={lin(f, T * 0.6, T * 0.6 + 10)} big="Aceite frío = espeso" small="el desgaste está acá" w={440} /> : null}
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
+
+export const ClFilterLight: React.FC<{ mode?: "check" | "compare"; bed?: string }> = ({ mode = "check", bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 16);
+  const sun = 0.6 + 0.4 * Math.sin(f * 0.05);
+  const Filter: React.FC<{ dirt: number; x: number; label: string; ok: boolean; k: number }> = ({ dirt, x, label, ok, k }) => (
+    <div style={{ position: "absolute", left: x, top: 200, width: 560, height: 680, opacity: clamp01(k * 1.4), scale: String(0.85 + 0.15 * k) }}>
+      <div style={{ position: "absolute", inset: 0, borderRadius: 18, background: "#2B2F36", padding: 26 }}>
+        <div style={{ position: "absolute", inset: 26, borderRadius: 8, overflow: "hidden", background: `repeating-linear-gradient(90deg, ${dirt > 0.5 ? "#4A4438" : "#F4EEDC"} 0 22px, ${dirt > 0.5 ? "#2E2A22" : "#E2D8BC"} 22px 44px)` }}>
+          <div style={{ position: "absolute", inset: 0, background: `radial-gradient(ellipse at 50% 40%, rgba(255,246,210,${(1 - dirt) * 0.85 * sun}), rgba(255,246,210,0) 70%)` }} />
+          <div style={{ position: "absolute", inset: 0, background: `rgba(30,25,18,${dirt * 0.55})` }} />
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: "50%", bottom: -80, translate: "-50% 0", whiteSpace: "nowrap", background: ok ? CL.navy : CL.red, color: "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 46, padding: "6px 22px", borderRadius: 10, boxShadow: `0 12px 26px ${CL.shadow}` }}>{label}</div>
+    </div>
+  );
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={841} dim={0.25} />
+      <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 30%, rgba(255,240,200,${0.45 * sun}), rgba(255,240,200,0) 60%)` }} />
+      {mode === "check" ? (
+        <>
+          <Filter dirt={ease(clamp01((f - T * 0.4) / 20))} x={680} label={f < T * 0.4 ? "Pasa la luz ✓" : "No pasa la luz ✗"} ok={f < T * 0.4} k={p} />
+          <Tag x={160} y={140} text="Contra el sol" color={CL.navy} o={lin(f, 6, 16)} size={52} />
+          <Note x={1340} y={520} o={lin(f, T * 0.5, T * 0.5 + 10)} big="Se cambia" small="US$ 6" w={420} />
+        </>
+      ) : (
+        <>
+          <Filter dirt={0.95} x={340} label="El de Elena" ok={false} k={pop(f, fps, 2, 14)} />
+          <Filter dirt={0} x={1020} label="Uno nuevo" ok k={pop(f, fps, 14, 14)} />
+        </>
+      )}
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
+
+export const ClLogbook: React.FC<{ mode?: "ernesto" | "last" | "gap" | "new" | "two" | "consume"; bed?: string }> = ({ mode = "ernesto", bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 16);
+  const ERN = "#1F3A8A", ELE = "#1B5E20";
+  const lines: [string, string, string, string][] = mode === "consume"
+    ? [["1.000 km", "le faltó", "¼ litro", ""], ["2.000 km", "le faltó", "¼ litro", ""], ["3.000 km", "le faltó", "½ litro", "→ PCV"]]
+    : [["03/13", "15.200", "aceite+filtro", ""], ["09/13", "20.100", "aceite+filtro", ""], ["04/14", "25.300", "f. aire", ""], ["…", "…", "…", ""], ["03/19", "248.900", "aceite+filtro", ""]];
+  const step = Math.max(6, (T * 0.55) / lines.length);
+  const showNew = mode === "new" || mode === "two";
+  const gapK = mode === "gap" ? ease(clamp01((f - 12) / 20)) : 0;
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={851} dim={0.28} />
+      <Contact x={960} y={940} w={1300} o={0.35} />
+      <div style={{ position: "absolute", left: 260, top: 110 + (1 - p) * 140, width: 1400, height: 820, transform: "perspective(2200px) rotateX(26deg) rotateZ(-2deg)", opacity: clamp01(p * 1.4) }}>
+        {/* tapas azules */}
+        <div style={{ position: "absolute", inset: -24, borderRadius: 30, background: "linear-gradient(135deg,#2D4F8E,#1C3566)", boxShadow: "0 40px 70px rgba(0,0,0,0.5)" }} />
+        {/* dos hojas */}
+        {[0, 1].map((side) => (
+          <div key={side} style={{ position: "absolute", left: side * 700, top: 0, width: 700, height: 820, background: "#FBF8EE", borderRadius: side ? "0 14px 14px 0" : "14px 0 0 14px", backgroundImage: "repeating-linear-gradient(#FBF8EE 0 118px, #C9D6E8 118px 120px)", boxShadow: side ? "inset 18px 0 30px rgba(0,0,0,0.08)" : "inset -18px 0 30px rgba(0,0,0,0.08)" }} />
+        ))}
+        {/* hoja izquierda: las entradas de Don Ernesto (o la tabla de consumo) */}
+        <div style={{ position: "absolute", left: 40, top: 40, width: 640, fontFamily: HAND, fontWeight: 700, fontSize: 52, color: mode === "consume" ? ELE : ERN, lineHeight: "120px" }}>
+          {lines.map((l, i) => {
+            const k = mode === "last" || mode === "gap" || mode === "two" || mode === "new" ? 1 : clamp01((f - 8 - i * step) / 8);
+            return <div key={i} style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr 1.6fr 0.4fr", clipPath: `inset(0 ${100 - k * 100}% 0 0)`, color: mode === "last" && i === lines.length - 1 ? CL.red : undefined }}><span>{l[0]}</span><span>{l[1]}</span><span>{l[2]}</span><span>{l[3]}</span></div>;
+          })}
+        </div>
+        {/* hoja derecha: en blanco / los 6 años / la letra de Elena */}
+        <div style={{ position: "absolute", left: 740, top: 40, width: 620, fontFamily: HAND, fontWeight: 700, fontSize: 60, lineHeight: "120px" }}>
+          {mode === "gap" ? <div style={{ opacity: gapK, fontFamily: LABEL, fontSize: 64, color: CL.red, textAlign: "center", marginTop: 220 }}>6 AÑOS EN BLANCO</div> : null}
+          {showNew ? (() => { const k = mode === "two" ? 1 : clamp01((f - 14) / (T * 0.4)); return <div style={{ color: ELE, clipPath: `inset(0 ${100 - k * 100}% 0 0)`, rotate: "-1deg" }}><div>10/2026 · 280.400</div><div>PCV, f. aire, aceite</div><div style={{ fontSize: 34, opacity: 0.8 }}>— Elena</div></div>; })() : null}
+        </div>
+      </div>
+      {mode === "ernesto" ? <Tag x={180} y={70} text="Cada 5.000 km, sin faltar uno" color={CL.navy} o={lin(f, 10, 20)} size={46} /> : null}
+      {mode === "last" ? <Note x={1330} y={70} o={lin(f, 12, 24)} big="La última línea" small="marzo, 6 años atrás" color={CL.red} w={480} /> : null}
+      {mode === "two" ? <Tag x={180} y={70} text="Dos letras" color={CL.navy} o={lin(f, 6, 16)} size={46} /> : null}
+      {mode === "consume" ? <Tag x={180} y={70} text="Mide cada 1.000 km" color={CL.navy} o={lin(f, 6, 16)} size={46} /> : null}
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
