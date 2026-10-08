@@ -1,0 +1,27 @@
+{
+ "v_regalo": {
+  "file": "v_regalo.mp4",
+  "T": 9,
+  "own": false
+ },
+ "v_vinagre": {
+  "file": "v_vinagre.mp4",
+  "T": 11,
+  "own": false
+ },
+ "v_noentran": {
+  "file": "v_noentran.mp4",
+  "T": 7,
+  "own": false
+ },
+ "v_semana": {
+  "file": "v_semana.mp4",
+  "T": 7,
+  "own": false
+ },
+ "v_medidas": {
+  "file": "v_medidas.mp4",
+  "T": 9,
+  "own": false
+ }
+}

@@ -11,8 +11,8 @@ export const SHOTS = [
   S(57, "Al otro día, vuelven", "bi", "st_flies7", { q: "fruit flies", p: BI(`${FLIES}.`) }),
   S(58, "", "bi", "b_err2", { q: "throwing fruit trash", p: BI("A whole bowl of fruit dumped into a kitchen trash can.") , ov: { c: "ClChip", props: { text: "Error 2", alert: true } } }),
   S(58, "La fruta no era la fábrica", "vl", "v_err2", { a: `stands at ${SINK} in ${KITCHEN}, pointing down at the drain with one finger, looking at the camera, a little exasperated.`, act: "He points down at the drain twice, emphatic, and shakes his head with a frustrated half smile.", b: "he keeps pointing at the drain, eyebrows raised." }),
-  S(59, "", "bi", "b_err3", { p: BI("A clear glass of amber vinegar without a cone, a tiny fruit fly standing on the surface of the liquid.") , ov: { c: "ClChip", props: { text: "Error 3", alert: true } } }),
-  S(59, "Una gota", "bi", "b_onedrop2", { p: BI(`Extreme close view of ${H} squeezing a single drop of green dish soap into a glass of amber vinegar.`) }),
+  S(59, "", "bi", "b_err3", { q: "glass of vinegar", p: BI("A clear glass of amber vinegar without a cone, a tiny fruit fly standing on the surface of the liquid.") , ov: { c: "ClChip", props: { text: "Error 3", alert: true } } }),
+  S(59, "Una gota", "bi", "b_onedrop2", { q: "dish soap drop", p: BI(`Extreme close view of ${H} squeezing a single drop of green dish soap into a glass of amber vinegar.`) }),
   S(60, "", "bi", "b_err4", { q: "white vinegar bottle", p: BI("A bottle of clear white vinegar on a kitchen counter, set apart.") , ov: { c: "ClChip", props: { text: "Error 4", alert: true } } }),
   S(60, "De manzana, o un chorrito de vino", "bi", "st_cider", { q: "apple cider vinegar", p: BI("A bottle of apple cider vinegar next to red apples.") }),
   S(61, "", "bi", "b_err5", { q: "pouring bleach sink", p: BI("A bottle of bleach being poured into a kitchen sink drain.") , ov: { c: "ClChip", props: { text: "Error 5", alert: true } } }),
@@ -41,7 +41,7 @@ export const SHOTS = [
   // una semana después
   S(71, "", "vl", "v_semana", { a: `stands at ${SINK} in ${KITCHEN} at night placing an upside-down clear glass over the drain, a second glass in his other hand.`, act: "He sets the glass upside down over the drain, then carries the second glass toward the cabinet under the sink, talking to the camera.", b: "he crouches at the open cabinet under the sink holding the glass over the potato bag, looking at the camera." }),
   S(72, "", "kf", "k_emptyglass", { p: BI(`Morning, close view of an upside-down clear glass over the drain of ${SINK}, empty inside, clean dry steel, a flashlight beam on it.`), d1: "the flashlight beam moves across the empty glass", d2: "the beam stops on the clean empty glass", sound: "a soft click of a flashlight" }),
-  S(72, "Ni una mosquita", "bi", "b_cleandrain", { p: BI(`Morning, extreme close view of a clean shiny kitchen sink drain with its metal strainer in place.`), ov: { c: "ClChip", props: { text: "0 mosquitas" } } }),
+  S(72, "Ni una mosquita", "bi", "b_cleandrain", { q: "clean sink drain", p: BI(`Morning, extreme close view of a clean shiny kitchen sink drain with its metal strainer in place.`), ov: { c: "ClChip", props: { text: "0 mosquitas" } } }),
   S(72, "Y el vaso de la trampa", "bi", "b_twoflies", { p: BI(`${GLASS} beside ${BOWL}, only two tiny flies inside.`) }),
   S(73, "", "bi", "b_luciabananas", { p: BI(`${LUCIA} placing fresh yellow bananas in the woven fruit bowl in the middle of the kitchen table, smiling, no flies.`) }),
   S(73, "Y Sofía volvió a llevar plátano a la escuela", "bi", "b_sofiaschool", { p: BI(`Sofía, a 9-year-old Latin American girl with two braids, putting a banana into her school backpack in the kitchen, smiling.`) }),
@@ -56,7 +56,7 @@ export const SHOTS = [
   S(78, "", "vl", "v_revision", { a: `stands in ${KITCHEN} in the evening, the ceiling light on, holding a yellow flashlight, looking at the camera warmly.`, act: "He lifts the flashlight, clicks it on and off once, and explains warmly.", b: "he holds the flashlight up beside his face, smiling." }),
   S(78, "entras a la cocina a oscuras y prendes la linterna de golpe", "vl", "v_linterna", { a: `stands in the dark doorway of ${KITCHEN} at night, the lights off, holding a yellow flashlight switched off.`, act: "He switches the flashlight on suddenly and sweeps the beam fast across the floor and under the sink, then turns to the camera with the beam lowered.", b: "the flashlight beam is pointed at the floor under the sink, he looks back at the camera." }),
   S(78, "detrás del refrigerador, en los rincones", "bi", "st_flashcorner", { q: "flashlight dark corner", p: BI("Night, a flashlight beam on a dark kitchen corner.") }),
-  S(79, "", "bi", "b_cupnight", { p: BI(`Night, an upside-down glass over the drain of ${SINK} in the dark kitchen, lit by a flashlight.`) }),
+  S(79, "", "bi", "b_cupnight", { q: "upside down glass", p: BI(`Night, an upside-down glass over the drain of ${SINK} in the dark kitchen, lit by a flashlight.`) }),
   S(80, "", "bi", "b_giftpage", { p: BI("A printed page with a checklist table taped to the inside of a kitchen cabinet door, a flashlight beside it.") }),
   // CTA 3: regalo + Manual
   S(81, "", "vl", "v_regalo", { a: `stands at the open cabinet under ${SINK} in ${KITCHEN} holding a printed sheet of paper, about to tape it inside the cabinet door.`, act: "He tapes the printed sheet to the inside of the cabinet door, smooths it with his palm and taps it, talking warmly to the camera.", b: "the printed sheet is taped inside the cabinet door, he taps it with one finger, smiling at the camera." }),
