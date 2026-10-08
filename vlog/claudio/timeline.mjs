@@ -7,7 +7,7 @@ const P = J(V3 + "paras.json"), W = J(V3 + "wordms.json");
 const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(Boolean);
 const END = W[W.length - 1].e + 0.6;
 let shots = [];
-for (const f of ["dir_a", "dir_b", "dir_c", "dir_d"]) { const p = R + `vlog/${SLUG}/${f}.mjs`; if (fs.existsSync(p)) shots.push(...(await import("file:///" + p)).SHOTS); }
+for (const f of ["dir_a", "dir_b", "dir_c", "dir_d", "dir_e"]) { const p = R + `vlog/${SLUG}/${f}.mjs`; if (fs.existsSync(p)) shots.push(...(await import("file:///" + p)).SHOTS); }
 const errs = [];
 for (const s of shots) {
   const p = P[s.p]; if (!p) { errs.push(`párrafo ${s.p} no existe`); continue; }
