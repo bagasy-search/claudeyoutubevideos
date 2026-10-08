@@ -1,0 +1,162 @@
+{
+ "v_lucia": {
+  "file": "v_lucia.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "Ese día, al subir del garaje, Lucía, la mamá, me llevó a la cocina y me señaló el frutero de la mesa.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_lucia.wav",
+  "asr": "Ese día, al subir del garaje, Lucía, la mamá, me llevó a la cocina y me señaló el frutero de la mesa.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_secreto": {
+  "file": "v_secreto.mp4",
+  "r": 0.996,
+  "lag": 0.0,
+  "text": "Y aquí va lo que casi nadie sabe. El lugar donde más ponen huevos no está a la vista.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_secreto.wav",
+  "asr": "Y aquí va lo que casi nadie sabe. El lugar donde más ponen huevos no está a la vista.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_casi": {
+  "file": "v_casi.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "Pero en casi todas las cocinas que veo, la principal es el desagüe.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_casi.wav",
+  "asr": "Pero en casi todas las cocinas que veo, la principal es el desagüe.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_vinagre": {
+  "file": "v_vinagre.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "El vinagre tiene que ser de manzana. El blanco casi no les llama la atención: huele a limpio. El de manzana huele a fruta fermentada, y eso es lo que buscan.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_vinagre.wav",
+  "asr": "El vinagre tiene que ser de manzana, el blanco casi no les llama la atención, huele a limpio, el de manzana huele a fruta fermentada, y eso es lo que buscan.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_bruno": {
+  "file": "v_bruno.mp4",
+  "r": 0.994,
+  "lag": 0.0,
+  "text": "En los Ramírez lo pusimos en la barra de la cocina, al fondo, contra la pared.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_bruno.wav",
+  "asr": "En los ramires lo pusimos en la barra de la cocina, al fondo, contra la pared.",
+  "sim": 0.938,
+  "ok": true
+ },
+ "v_rejilla": {
+  "file": "v_rejilla.mp4",
+  "r": 0.857,
+  "lag": 0.0,
+  "text": "Sacamos la rejilla. Y por dentro, en el tubo,",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_rejilla.wav",
+  "asr": "Sacamos la rejilla y por dentro, en el tú.",
+  "sim": 0.889,
+  "ok": true
+ },
+ "v_nomezclar": {
+  "file": "v_nomezclar.mp4",
+  "r": 0.991,
+  "lag": 0.0,
+  "text": "Ojo con una cosa: el agua oxigenada y el vinagre no se mezclan en el mismo frasco.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_nomezclar.wav",
+  "asr": "con una cosa, el agua oxigenada y el vinagre no se mezclan en el mismo frasco.",
+  "sim": 0.97,
+  "ok": true
+ },
+ "v_medidas": {
+  "file": "v_medidas.mp4",
+  "r": 0.829,
+  "lag": -0.02,
+  "text": "cuánto vinagre, cuánto detergente, el tamaño del cono, cada cuánto se cambia la trampa, y la limpieza del desagüe paso a paso.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_medidas.wav",
+  "asr": "Cuanto vinagre, cuanto detergente, el tamaño del cono, cada cuanto se cambia la trampa y la lindezagüe paso a paso.",
+  "sim": 0.905,
+  "ok": true
+ },
+ "v_noentran": {
+  "file": "v_noentran.mp4",
+  "r": 0.993,
+  "lag": 0.0,
+  "text": "¿Y si no entran al vaso? Casi siempre es una de tres cosas: el vaso está lejos de donde vuelan,",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_noentran.wav",
+  "asr": "¿Y si no entran al vaso? Casi siempre es una de tres cosas. El vaso está lejos de donde vuelan.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_semana": {
+  "file": "v_semana.mp4",
+  "r": 0.967,
+  "lag": 0.0,
+  "text": "A la semana volví. Puse los vasos boca abajo otra vez, en el desagüe y en la bolsa de papas.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_semana.wav",
+  "asr": "A la semana volví. Puse los vasos boca abajo otra vez. En el desagüe y en la bolsa de papas.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_regalo": {
+  "file": "v_regalo.mp4",
+  "r": 0.996,
+  "lag": 0.0,
+  "text": "Te dejé las tres pruebas en una hoja gratis que se llama Antes de Fumigar, la revisión de la noche. La de la linterna, la de la harina,",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_regalo.wav",
+  "asr": "Te dejé las tres pruebas en una hoja gratis que se llama Antes de fumigar, la revisión de la noche. La de la linterna, la de la harina.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_manual": {
+  "file": "v_manual.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "Veintisiete dólares, un solo pago, y si en siete días no te sirve, te devuelven el dinero.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_manual.wav",
+  "asr": "27 dólares, un solo pago. Y si en 7 días no te sirve, te devuelven el dinero.",
+  "sim": 0.882,
+  "ok": true
+ },
+ "v_aerosol": {
+  "file": "v_aerosol.mp4",
+  "r": 0.997,
+  "lag": 0.0,
+  "text": "Eso, lo primero que te digo: nunca eches insecticida sobre la comida, ni en la mesa donde comen tus hijos.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_aerosol.wav",
+  "asr": "eso, lo primero que te digo, nunca eches insecticida sobre la comida, ni en la mesa donde comen tus hijos.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_pour": {
+  "file": "v_pour.mp4",
+  "r": 0.997,
+  "lag": 0.0,
+  "text": "En el vaso, dos dedos de vinagre de manzana. Unos cincuenta mililitros.",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_pour.wav",
+  "asr": "En el vaso, dos dedos de vinagre de manzana, unos 50 mililitros.",
+  "sim": 0.917,
+  "ok": true
+ },
+ "v_borico": {
+  "file": "v_borico.mp4",
+  "r": 0.996,
+  "lag": 0.0,
+  "text": "Y mientras limpiábamos, miré detrás del refrigerador: la tapita de ácido bórico de las cucarachas",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_borico.wav",
+  "asr": "Y mientras limpiábamos, miré detrás del refrigerador. La tapita de ácido bórico de las cucarachas.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_peligro": {
+  "file": "v_peligro.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "¿Son peligrosas? No pican. Pero caminan por el desagüe,",
+  "wav": "D:/Proyectos/video2-wt/fufruta/vlog/fufruta/M1/_chk/v_peligro.wav",
+  "asr": "¿Son peligrosas? No pican, pero caminan por el desagüe",
+  "sim": 1.0,
+  "ok": true
+ }
+}

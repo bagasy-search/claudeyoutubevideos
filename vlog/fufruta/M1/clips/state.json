@@ -23,5 +23,65 @@
   "file": "v_medidas.mp4",
   "T": 9,
   "own": false
+ },
+ "v_nomezclar": {
+  "file": "v_nomezclar.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_bruno": {
+  "file": "v_bruno.mp4",
+  "T": 5,
+  "own": false
+ },
+ "v_manual": {
+  "file": "v_manual.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_rejilla": {
+  "file": "v_rejilla.mp4",
+  "T": 4,
+  "own": false
+ },
+ "v_secreto": {
+  "file": "v_secreto.mp4",
+  "T": 7,
+  "own": false
+ },
+ "v_casi": {
+  "file": "v_casi.mp4",
+  "T": 5,
+  "own": false
+ },
+ "v_lucia": {
+  "file": "v_lucia.mp4",
+  "T": 7,
+  "own": false
+ },
+ "v_pour": {
+  "file": "v_pour.mp4",
+  "T": 5,
+  "own": false
+ },
+ "v_aerosol": {
+  "file": "v_aerosol.mp4",
+  "T": 7,
+  "own": false
+ },
+ "v_peligro": {
+  "file": "v_peligro.mp4",
+  "T": 4,
+  "own": false
+ },
+ "v_borico": {
+  "file": "v_borico.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_manana": {
+  "file": "v_manana.mp4",
+  "T": 5,
+  "own": false
  }
 }
