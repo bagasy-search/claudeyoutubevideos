@@ -6,6 +6,11 @@
 > Eso trae claves, skills y memoria del repo privado del creador. Este repo es PÚBLICO: jamás commitear `.env*` ni imprimir claves.
 
 
+> 🆓⛔ **REGLA OBLIGATORIA (8-oct-2026): TODA imagen SIN CARA → agnes-image (GRATIS).** gpt-image-2 (low + Batch +
+> crop de cara 128x192) es SÓLO para los planos con la cara del presentador. `factory/lib/openai_batch.mjs`
+> (`submitBatch`) ya desvía solo cualquier ítem sin `ref` a `scripts/agnes_img.mjs`; `scripts/gptimg.mjs` y la
+> fábrica lo usan. No llames a `/v1/images/generations` de OpenAI por ningún otro lado (los `gen_*.mjs` viejos tiran error).
+
 > 🏭 **ORDEN VIGENTE (15-sep-2026): FÁBRICA x10.** Antes de producir o tocar el pipeline de
 > video, leé `factory/PLAN_FABRICA.md` (§0–§2 + §7 LOG), avanzá el próximo ítem del checklist
 > y actualizá el LOG al cerrar. Prohibido crear scripts nuevos por slug (`build_<slug>.mjs`, etc.).

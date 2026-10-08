@@ -69,3 +69,6 @@ _v3probe/
 factory/_state/
 factory/_dry/
 .pubprune/
+
+# listas/resultados de agnes-image para imágenes sin cara (factory/lib/openai_batch.mjs)
+_agnes_sincara/
