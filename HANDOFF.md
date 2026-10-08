@@ -52,3 +52,14 @@ Rama `om99-render`, sale de `fu30-render` (Fumigador ep. 2). Es la PRIMERA vez q
 - Stock: 2 rondas + 24 q extra para llegar a REAL 30 % (rechazados a ojo 13: logos Skoda/CUPRA, carteles, fuera de tema).
 - Camas: reusadas las de om99 (barajadas). Job 797. Farm: TAR_DIR debe EXISTIR (mkdir) o tar falla.
 - Ep. 3 om500k: gancho ya dicho al final ("six simple things… Frank was already doing four of them").
+
+## om500k (ep. 3, 500.000 millas) — rama om500k-render desde omkey-render
+- Guion 86 párrafos → 970 s. 6 hábitos; Frank hacía 4 (calentar suave, filtro de aire, gomas, cuaderno), le faltaban 2 (líquidos por
+  CALENDARIO: frenos 2 años / refrigerante 5; la válvula PCV de US$5). Gancho al ep. 4 = aceite de bebé (ombaby).
+- Kit nuevo `src/claudio/ClMillas.tsx`: ClOdoRace (dos odómetros: SCRAPYARD a 130.000 vs STILL DRIVING a 500.000; sellos DEBAJO para
+  que se lean los números) · ClFluidClock (regla de años con barras por líquido). Banco `src/index_milekit.tsx`.
+- agnes 4/10 (rechazos: cuaderno→libro, manos/cabezas que cambian, vaso en vez de tapa); k_lighttest falló en agnes.
+- Stock: rechazados a ojo 10 (logos Mustang/Skoda/Peugeot, aceite de COCINA, termómetro de parrilla, súper).
+- ⛔ Corte de sesión mató stock/avatar: el job RunPod siguió → `out/av_resume.mjs` re-poll del MISMO id (lee .env, no .env.local).
+- ⛔ El worktree tenía copias VIEJAS (22-sep) de scripts/farm.mjs, render.yml y 3 scripts más sin commitear → `git checkout --` antes
+  de commitear (nunca `git add -A scripts`). Job 799.
