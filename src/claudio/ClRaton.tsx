@@ -337,7 +337,7 @@ export const ClTrapSet: React.FC<{ mode?: "wall" | "box"; bed?: string }> = ({ m
   return (
     <AbsoluteFill style={{ opacity: out }}>
       <Bed src={bed} seed={433} dim={0.55} />
-      <svg width={1920} height={1080} style={{ position: "absolute", opacity: clamp01(p * 1.4) }}>
+      <svg width={1920} height={1080} style={{ position: "absolute", opacity: clamp01(p * 1.4), transform: `scale(${1 + f * 0.0012}) translateX(${-f * 0.35}px)`, transformOrigin: "60% 55%" }}>
         <rect x={200} y={120} width={WALLX - 200} height={860} fill="#B7B2A8" stroke={CL.ink} strokeWidth={5} />
         <rect x={WALLX} y={120} width={200} height={860} fill="#E8E1D2" stroke={CL.ink} strokeWidth={8} />
         <Trap x={WALLX - 160} y={560} r={0} s={1.2} />
