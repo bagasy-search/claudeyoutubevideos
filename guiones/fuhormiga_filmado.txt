@@ -1,0 +1,89 @@
+[HOOK|matar] Si matas a las hormigas que ves en tu cocina, mañana vienen el doble. Las que ves son las únicas que podían llevar el veneno hasta la reina.
+[HOOK|ramirez] Ésta es la cocina de los Ramírez. Una fila de hormigas, una detrás de otra, que baja del marco de la ventana, cruza la barra de la cocina y se mete en el azucarero. Jorge ya tenía el aerosol en la mano.
+[HOOK|loop] Y esa noche, siguiendo la fila con la linterna, encontramos de dónde venían de verdad. Un lugar al que nadie iba a llegar con un aerosol. Te lo muestro en un rato.
+[HOOK|promesa] Hoy te enseño el cebo casero que las hormigas mismas llevan al nido y reparten con la reina, hasta que se termina la fila entera. Con las cantidades exactas, y seguro para una casa con niños y perro. Así estaba esa cocina. Y así quedó.
+[HOOK|cred] Soy Claudio. Treinta años de fumigador. Y al final te doy la revisión de diez minutos con una linterna, para que sepas esta noche qué bicho tienes, y por dónde entra.
+[HOOK|cap] Primero, la fila de los Ramírez.
+[CASA|antes] La semana pasada sacamos las mosquitas del frutero de los Ramírez con un vaso de vinagre y un cepillo en el desagüe; si no la viste, te la dejo aquí.
+[CASA|mateo] Ese día, cuando ya me iba, Mateo, el de seis, me llamó desde la ventana de la cocina. Claudio, mira. Y me señalaba con el dedo, sin tocar.
+[CASA|fila] Una fila de hormigas negras, chiquitas, que bajaba por la orilla del marco de la ventana, caminaba por la pared hasta la barra, la cruzaba toda, y subía por el azucarero. Arriba, dentro de la tapa, había un montón, comiendo.
+[CASA|lucia] Lucía me dijo: Claudio, esto pasa todos los años cuando empieza el calor. Las mato con el trapo, pongo el azucarero en otro lado, y a los dos días vuelven. Más que antes.
+[CASA|sofia] Y Sofía, la de nueve, había dejado un caramelo en el bolsillo de la mochila, colgada al lado de la ventana. A la mañana, la mochila estaba llena de hormigas.
+[CASA|jorge] Y Jorge ya había comprado el aerosol. El año pasado roció toda la ventana, y la barra, y por unos días no vio ni una. Pero la cocina olió a veneno una semana. Y a las dos semanas, la fila estaba de vuelta.
+[CASA|regla] Y es lógico. Porque esas hormigas no viven en tu cocina. Vienen a buscar comida y se la llevan. Las que matas, las reemplaza el nido en un día. Y el nido no se entera de nada.
+[CAP|porque] Así que antes del cebo, te explico cómo funciona una fila. Porque si lo entiendes, el truco te parece obvio.
+[PORQUE|obreras] Las hormigas que ves son obreras. Son la parte del nido que sale a buscar comida. Detrás, escondidas, hay cientos o miles más. Y una reina, a veces varias, que no salen nunca y ponen huevos todo el día.
+[PORQUE|cuantas] Un nido de hormiguitas de cocina puede tener varios miles. Y las que salen a buscar comida son una parte chica. O sea que por cada hormiga que matas con el trapo, hay muchísimas que nunca vas a ver.
+[PORQUE|camino] Cuando una obrera encuentra azúcar, vuelve al nido dejando un rastro de olor en el piso. Las demás siguen ese olor. Por eso caminan en fila, siempre por el mismo lugar. Es un camino marcado.
+[PORQUE|comparten] Y aquí va lo que casi nadie sabe. Las obreras no comen sólo para ellas. Llevan la comida en el buche, y en el nido se la pasan boca a boca a las otras. A las larvas. Y a la reina.
+[PORQUE|truco] Ése es el truco del fumigador. No matas a las que ves. Les das un cebo dulce, con un veneno lento. Ellas lo llevan. Lo reparten. Y en unos días, se apaga el nido desde adentro.
+[PORQUE|aerosol] El aerosol hace lo contrario. Mata a las obreras de ese momento, borra parte del camino, y la reina sigue poniendo huevos. A veces el nido hasta se divide en dos, y en vez de una fila tienes dos.
+[CAP|mostrador] Lo que necesitas. Es poco, y es muy barato.
+[MOSTRADOR|frase] Vas a la ferretería o a la farmacia y pides, tal cual: una caja chica de bórax, azúcar, y unos frascos chicos con tapa, o tapitas de plástico. Y en casa, algodón y cinta adhesiva. En el Manual te dejé esa frase escrita, para que la lleves en el celular y no te vendan otra cosa.
+[MOSTRADOR|borax] El bórax es un polvo blanco, de los de lavar ropa. A veces está en el supermercado, en la parte de los productos de lavandería. Que diga bórax, o borato de sodio. No es lo mismo que el ácido bórico de las cucarachas, aunque se parecen.
+[MOSTRADOR|frascos] Los frascos chicos, de los de muestra, o los de comida de bebé, con tapa. Ya te explico para qué la tapa.
+[MOSTRADOR|honesto] Y una cosa honesta antes de empezar. Esto no es inmediato. El primer día vas a ver más hormigas, no menos. Y si tienes hormigas grandes, rojas, de las que pican, en el jardín, eso es otra cosa, y tiene otro arreglo. Esto es para la fila de hormiguitas de la cocina, que es la que tiene casi todo el mundo.
+[CAP|mezcla] Paso uno: la mezcla.
+[MEZCLA|medidas] Una cucharadita de bórax. Media taza de azúcar. Y una taza de agua tibia. Mezclas hasta que no quede nada en el fondo. Que el agua quede transparente.
+[MEZCLA|tibia] El agua tibia es para que el azúcar y el bórax se disuelvan bien. Si quedan granitos de bórax en el fondo, las hormigas los esquivan, y se llevan sólo agua dulce.
+[MEZCLA|poco] Y aquí está el error que todos cometen: poner más bórax pensando que va a funcionar mejor. Pasa lo contrario. Con mucho bórax, la hormiga se muere antes de llegar al nido. O lo prueba, no le gusta, y avisa a las demás que no vengan. Poco bórax es el secreto. Tiene que ser un veneno lento.
+[MEZCLA|guantes] Con guantes, y en un frasco que después no se use para comida. Le pones una etiqueta: no es para tomar.
+[MEZCLA|sobra] Lo que sobra de la mezcla dura unas dos semanas en el frasco cerrado, con su etiqueta, en el estante más alto.
+[MEZCLA|lucia] Lucía preguntó si no era peligroso tenerlo en la cocina. Y tiene razón en preguntar. El bórax no es para comer, ni para personas ni para perros. Por eso el paso dos es tan importante.
+[CAP|estacion] Paso dos: la estación cerrada.
+[ESTACION|como] En vez de dejar la mezcla en un platito, armamos una estación. Agarras un frasco chico con tapa. Con un clavo caliente, le haces tres o cuatro agujeritos en el costado, abajo, del tamaño de un grano de arroz.
+[ESTACION|algodon] Adentro, un algodón mojado en la mezcla. Mojado, no chorreando. Cierras la tapa bien apretada.
+[ESTACION|porque] Las hormigas entran por los agujeritos sin problema. Pero el dedo de Mateo no entra. Y la lengua de Bruno, el perro, tampoco. Y si Bruno lo agarra con la boca, está cerrado.
+[ESTACION|cinta] Y para que no la muevan, la pegas con cinta a la barra o al piso. Bien pegada.
+[ESTACION|mateo] Mateo quería hacer los agujeritos. Le dije que el clavo caliente lo uso yo, pero que él podía ser el inspector: cada mañana, mirar la estación desde lejos, sin tocar, y contarme cuántas había. Fue el mejor inspector que tuve.
+[ESTACION|donde] Dónde va: al lado de la fila. No encima del camino, al lado. Que las hormigas la encuentren sin desviarse. En los Ramírez, una en la barra, pegada a la pared, donde bajaba la fila. Y otra en el marco de la ventana, por dentro.
+[ESTACION|azucarero] Y el azucarero, al mismo tiempo, se cierra. Frasco con tapa de rosca. Si les dejas el azúcar de verdad al lado, no van a ir por el cebo.
+[ESTACION|borico] Y mientras pegábamos la estación, miré detrás del refrigerador: la tapita del ácido bórico de las cucarachas seguía ahí, cerrada, pegada contra la pared, lejos de los niños y de Bruno. Todo lo que mata bichos en esa casa está tapado y fuera del alcance.
+[CAP|esperar] Paso tres, el más difícil: no hacer nada.
+[ESPERAR|nomatar] Esto es lo que más cuesta. Vas a ver hormigas en la estación, y vas a tener ganas de matarlas. No las mates. Cada hormiga que se lleva una gota es una hormiga que trabaja para ti.
+[ESPERAR|mas] El primer día, en los Ramírez, la fila se hizo el doble de ancha. Jorge me llamó por teléfono: Claudio, esto está peor. Le dije: perfecto. Están avisando a las otras que encontraron comida.
+[ESPERAR|nadarociar] Y no rocíes nada cerca. Ni aerosol, ni limpiador, ni vinagre. Nada. Si borras el olor del camino, se pierden y no encuentran el cebo.
+[ESPERAR|renovar] Cada dos días, abres la estación y miras el algodón. Si está seco, lo mojas otra vez con la mezcla. Seco no les sirve.
+[ESPERAR|medidas] Las medidas exactas están en la página trece del Manual del Fumigador: la mezcla, el tamaño de los agujeritos, cuántas estaciones, cada cuánto se renuevan, y qué hacer si no las tocan.
+[CAP|nido] Y ahora, lo que encontramos esa noche.
+[NIDO|linterna] Esa misma noche, con la linterna, seguimos la fila hacia atrás. Desde la estación, por la pared, hasta el marco de la ventana. Y ahí, entre el marco y la pared, una rendija fina, del ancho de una hoja de papel. Por ahí entraban.
+[NIDO|afuera] Salimos al patio. Del otro lado de la ventana, la fila seguía pared abajo, por el piso del patio, hasta la maceta grande de Lucía, la del limonero. Y debajo de la maceta, en la tierra, entraban y salían.
+[NIDO|nadie] Ahí estaba el nido. Debajo de una maceta, afuera, a cuatro metros de la cocina. Ningún aerosol de la cocina iba a llegar ahí. Pero el cebo, sí. Porque lo llevaban ellas.
+[NIDO|maceta] Y no tocamos la maceta. Si la mueves, o le echas agua hirviendo, el nido se muda, y la fila aparece en otro lado. Las dejamos trabajar.
+[CAP|resultado] Lo que pasó en los días siguientes.
+[RESULTADO|dia2] El segundo día, la estación estaba negra de hormigas. Una fila ancha, ida y vuelta, de la ventana al cebo.
+[RESULTADO|dia3] El tercer día, la fila era más fina. Se veían hormigas más lentas, sueltas, que caminaban raro.
+[RESULTADO|dia5] Y el quinto día, a la mañana, Mateo fue a mirar la ventana, como hacía todos los días. Y no había ninguna. Ni en la ventana, ni en la barra, ni en la maceta del patio.
+[RESULTADO|limpiar] Recién ahí, cuando la fila desaparece, se limpia el camino. Un trapo con vinagre o con agua oxigenada por donde caminaban, para borrar el olor. Si no lo borras, otro nido lo puede encontrar.
+[RESULTADO|tapar] Y la rendija del marco de la ventana, con un hilo de silicona. Y por si acaso, la barrera de la puerta del patio del segundo episodio, la de tiza y clavo de olor, también en esa ventana.
+[RESULTADO|lucia] Lucía volvió a poner el azucarero en la mesa. En un frasco con tapa de rosca, eso sí.
+[RESULTADO|jorge] Y Jorge me preguntó, medio en broma: Claudio, ¿y el aerosol qué hago? Le dije: guárdalo arriba, lejos de los niños. No lo vas a necesitar.
+[RESULTADO|guardar] Y las estaciones, ya sin uso, se tiran cerradas a la basura. Te lavas bien las manos. El bórax que sobró, en su caja, arriba, en el estante más alto, donde no llegan los niños.
+[CAP|errores] Los errores que más veo con las hormigas.
+[ERROR|matar] Uno: matar a las que vienen al cebo. Son tus repartidoras. Déjalas.
+[ERROR|mucho] Dos: poner mucho bórax. Mueren antes de llegar, o no lo tocan. Una cucharadita por taza de agua.
+[ERROR|limpiar] Tres: limpiar el camino con vinagre mientras el cebo está trabajando. Se pierden. El camino se limpia al final.
+[ERROR|plato] Cuatro: dejar la mezcla en un plato abierto en una casa con niños o perro. Siempre en frasco cerrado, con agujeritos, pegado.
+[ERROR|azucar] Y cinco: dejar el azúcar de verdad al lado del cebo. Si tienen el azucarero abierto, ¿para qué van a ir al cebo?
+[CAP|qa] Unas preguntas que me hacen siempre, rapidito.
+[QA|notocan] ¿Y si no tocan el cebo? Esa colonia está buscando proteína, no dulce. Pasa mucho a principios de la primavera. Mezclas una pizca de bórax con una cucharadita de mantequilla de maní o de atún, y lo pones en la misma estación.
+[QA|cuanto] ¿Cuánto tarda? De dos a cinco días para una fila normal. Si el nido es muy grande, hasta dos semanas, renovando el algodón.
+[QA|grandes] ¿Y las hormigas grandes, negras, que salen de la madera? Ésas pueden ser hormigas carpinteras. Si ves aserrín fino debajo de un marco o de una viga, ahí sí llamas a un profesional.
+[QA|pican] ¿Y las rojas que pican, en el pasto? Ésas son de fuego. No te acerques al hormiguero, y menos con niños. Tienen otro arreglo.
+[QA|vinagre] ¿Sirve rociar vinagre, o canela, o talco? Las espanta un rato, y cambian de camino. Pero el nido sigue entero, y vuelven por otro lado.
+[QA|perro] ¿Y la comida del perro? Las hormigas también van al plato de Bruno. El plato, sobre un platito más grande con un poco de agua alrededor, como una islita. No pueden cruzar el agua.
+[QA|depto] ¿En un departamento? Lo mismo. Casi siempre entran por los enchufes, por los marcos de las ventanas o por donde pasan los caños. Sigues la fila con la linterna, y pones la estación al lado.
+[QA|lluvia] ¿Por qué aparecen después de llover? Porque el agua inunda el nido, y salen a buscar un lugar seco y comida. Es cuando más entran a las casas.
+[QA|costo] ¿Cuánto gastaron los Ramírez? Una caja chica de bórax, que dura años, un poco de azúcar, algodón y dos frasquitos. Menos que un aerosol. Y sin olor a veneno en la cocina.
+[RESULTADO|seguir] Y para que no vuelvan: nada dulce derramado, las migas limpias, el azúcar y la miel en frascos con tapa de rosca, y la rendija de la ventana tapada.
+[RESULTADO|stuck] Si a la semana la fila sigue igual, revisa dos cosas: que no haya comida más rica cerca, y que el algodón no se haya secado. Y si sigue, prueba la versión con mantequilla de maní.
+[CAP|revision] Y ahora, la revisión de diez minutos que te prometí.
+[REVISION|linterna] Es gratis, y la puedes hacer esta noche. Una hora después de apagar todo, entras a la cocina a oscuras y prendes la linterna de golpe. Miras hacia dónde corren, y qué camino hacen.
+[REVISION|fila] Si ves una fila, la sigues hacia atrás con la linterna, como hicimos hoy. Hasta donde entra. Ahí está tu rendija.
+[REVISION|tabla] Y lo que ves te dice qué bicho tienes, cuántos son, y qué arreglo te toca.
+[CTA3|regalo] Te dejé las tres pruebas en una hoja gratis que se llama Antes de Fumigar, la revisión de la noche. La de la linterna, la de la harina, y una tercera que no mostré en ningún video: la de la cinta doble faz, que te dice cuántos son. Al lado de cada resultado está qué arreglo te toca. La imprimes y la pegas por dentro del mueble de la cocina. Apunta el celular a este código, o toca el primer link de la descripción.
+[CTA3|manual] Y si ya sabes que en tu casa hay de todo, en esa misma página está el Manual del Fumigador: los sesenta y seis arreglos de la casa, con lo que pides en la ferretería y las medidas exactas. Veintisiete dólares, un solo pago, y si en siete días no te sirve, te devuelven el dinero.
+[NEXT|estufa] Ah, y una cosa más. La noche del nido, cuando volvimos a entrar a la cocina con la linterna apagada, Lucía prendió la luz de golpe.
+[NEXT|gancho] Y detrás de la estufa salió una cucaracha grande, marrón, de las que vienen de afuera, y se metió debajo del mueble. Lucía me miró. ¿Otra vez? La semana que viene te muestro las bolitas caseras de ácido bórico, harina y azúcar que usamos en los restaurantes, y por qué se llevan a las que nunca ves.
+[CLOSE|pregunta] Y ahora cuéntame tú. ¿Por dónde te entran las hormigas: por la ventana, por el piso o por los enchufes? ¿Y a dónde van? Escríbemelo en los comentarios. Leo todos.
+[CLOSE|chau] No las mates: déjalas trabajar. Nos vemos la semana que viene.
