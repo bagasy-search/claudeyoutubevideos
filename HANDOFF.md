@@ -1,5 +1,9 @@
 # HANDOFF — jphigiene (Claudio en Japón #1 · serie "Lo que aprendí en Tokio": 11 reglas de higiene)
-Estado: EN CURSO (job 783, row 307, tarjeta jphigiene).
+Estado: ✅ ENTREGADO 8-oct (job 783, tarjeta plan-own-1791387497512-0 del row 307 → "Video listo · subir", sin YouTube).
+mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/jphigiene/jphigiene.mp4 (15:24, 27.717 cuadros, final en el farm con encfin).
+Números: voz 899 s (16/16) + 11 respiros de 2,4 s · minuto 1: 33 cortes, 0 silencios · avatar 1 /run 48 ventanas 203,7 s US$0,25 (cara 26 %: avatar 21 + fotos 5) ·
+metraje real 36,6 % · agnes 10/16 · -14 LUFS TP -1,7 · Método: mención 1 a 3:54 (pág. 9) · 2 a 7:33 (ClBookPage pág. 9) · 3 a 13:46 (QR /r + US$27).
+Video 2 = jpviejo: worktree desde jphigiene-render; guion ya escrito en D:/rtmp/jpviejo_work/jpviejo_filmado.txt (12.568 car, Regla 2 = pág. 10).
 
 ## Cadena = la del Albañil (vlog/claudio) adaptada a JAPÓN en ESTA rama jphigiene-render (videos 2-3 salen de acá)
 - lib.mjs: WHO = polo rojo liso; HOUSE/BATH = casa latina luminosa, madera clara; HOTEL (Tokio); SATO = ficha de Sato-san (jefa, ~50, rodete, anteojos, uniforme azul).
@@ -22,3 +26,6 @@ Estado: EN CURSO (job 783, row 307, tarjeta jphigiene).
 - Stock rechazado a ojo (9): Tokio con carteles, gente en ducha/toalla, ofuro sucio, letrero en pared.
 - agnes v2.0 rechazados a ojo (6/16): persona que desaparece, camisa → pantalón, toalla → negra, mano extra, espuma rara en espalda.
 - D: llegó a 1,4 GB libres (pagefile 45 GB): se borraron worktrees algotera/algrieta/alolor (entregados, HANDOFF en sus ramas) y crudos de stock.
+- audit.py con la URL del release cuenta 0 cortes (el -t antes de -i no anda por http): medir sobre un tramo bajado → 33.
+- farm baja el crudo a D:/videosdeclaude (360 MB): borrarlo (el final sale de encfin). Cada `remotion still` copia public/ (~800 MB) a D:/rtmp/tmp.
+- pre-vuelo del farm pide public/med (copiar de video2/public/med).
