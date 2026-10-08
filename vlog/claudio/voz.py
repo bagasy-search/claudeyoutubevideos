@@ -14,7 +14,7 @@ import unicodedata
 for _s in (sys.stdout, sys.stderr):
     try: _s.reconfigure(encoding="utf-8", errors="replace")
     except Exception: pass
-ap = argparse.ArgumentParser(); ap.add_argument("--only", default=""); ap.add_argument("--voice", default="claudio_definitiva"); ap.add_argument("--speed", type=float, default=1.0); ap.add_argument("--lang", default="es"); ap.add_argument("--cps", type=float, default=14.0)
+ap = argparse.ArgumentParser(); ap.add_argument("--only", default=""); ap.add_argument("--voice", default="claudio_en_definitiva"); ap.add_argument("--speed", type=float, default=1.0); ap.add_argument("--lang", default="en"); ap.add_argument("--cps", type=float, default=18.5)
 ap.add_argument("--block-chars", type=int, default=900); ap.add_argument("--temperature", type=float, default=0.72); ap.add_argument("--top-p", type=float, default=0.70)
 ap.add_argument("--max-try", type=int, default=5); a = ap.parse_args()
 CPS = a.cps
@@ -27,7 +27,23 @@ todo = only or list(range(len(blocks)))
 clean = lambda t: re.sub(r"\[[^\]]+\]\s*", "", t)
 deacc = lambda w: "".join(c for c in unicodedata.normalize("NFD", w.lower()) if unicodedata.category(c) != "Mn")
 nw = lambda w: re.sub(r"[^a-z0-9ñ]", "", deacc(w).replace("ñ", "ñ"))
-norm = lambda t: [nw(w) for w in clean(t).split() if nw(w)]
+# números: "thirty-five" / "a hundred and twenty" / "280,000" / "$20" cuentan igual (Whisper escribe cifras) → un solo token "#"
+NUMW = set("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred thousand million cero uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince veinte treinta cuarenta cincuenta sesenta setenta ochenta noventa cien ciento mil".split())
+def _isnum(w):
+    w = re.sub(r"[^a-z0-9\-]", "", deacc(w))
+    return bool(w) and (bool(re.search(r"\d", w)) or all(x in NUMW for x in w.split("-") if x))
+def norm(t):
+    out = []
+    for w in clean(t).split():
+        if _isnum(w): out.append("#")
+        elif nw(w): out.append(nw(w))
+    res = []
+    for i, w in enumerate(out):
+        nxt = out[i + 1] if i + 1 < len(out) else ""
+        if w in ("a", "and", "y") and nxt == "#" and (w == "a" or (res and res[-1] == "#")): continue
+        if w == "#" and res and res[-1] == "#": continue
+        res.append(w)
+    return res
 print(f"bloques {len(blocks)} · a procesar {len(todo)} · ≤{a.block_chars} car · temp {a.temperature} top_p {a.top_p}")
 session = Session(FF.load_key())
 

@@ -1,7 +1,7 @@
 // Tarjetas del kit Claudio — todas sobre una CAMA real del baño del hotel (los gráficos viven en el mundo, nunca sobre negro):
 //   ClChapter     separador: cae el LLAVERO del hotel con el número de capítulo como habitación + título en la franja marino
-//   ClCheck       "hoja de servicio" del hotel en una tablilla con clip; cada renglón se tilda y se resalta en amarillo guante
-//   ClBookPage    la página REAL del libro (pág. N) cae sobre la mesada + el QR al costado + sello "GRATIS EN LA PÁGINA"
+//   ClCheck       "work order" del hotel en una tablilla con clip; cada renglón se tilda y se resalta en amarillo guante
+//   ClBookPage    la página REAL del libro (pág. N) cae sobre la mesada + el QR al costado + sello "FREE ON PAGE"
 //   ClQRCard      tarjeta de habitación con el QR (decodificable) + "apunte la cámara acá" + la tapa del libro
 //   ClDoDont      dos polaroids pegadas al espejo: SÍ (tilde marino) y NO (cruz roja)
 //   ClPins        pines numerados que caen sobre una foto real (dónde mirar)
@@ -13,7 +13,7 @@ import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoCo
 import { CL, SERIF, LABEL, HAND, hexA } from "./ClTheme";
 import { Bed, Card, KeyTag, RoomLight, Stamp, Tape, lin, pop, useOut } from "./ClParts";
 
-export const ClChapter: React.FC<{ n?: number; title: string; sub?: string; bed?: string; alert?: boolean; label?: string }> = ({ n, title, sub, bed, alert, label = "CAPÍTULO" }) => {
+export const ClChapter: React.FC<{ n?: number; title: string; sub?: string; bed?: string; alert?: boolean; label?: string }> = ({ n, title, sub, bed, alert, label = "CHAPTER" }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const band = lin(f, 4, 14), p = pop(f, fps, 0, 11), w = lin(f, 16, 32);
   const swing = Math.sin(f * 0.18) * 9 * Math.exp(-f / 25);
@@ -51,7 +51,7 @@ export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; f
           <Card style={{ padding: "34px 50px 30px", borderRadius: 6 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", borderBottom: `4px solid ${CL.navy}`, paddingBottom: 10, marginBottom: 22 }}>
               <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: CL.ink }}>{title}</div>
-              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 26, color: CL.inkSoft, letterSpacing: 3 }}>ORDEN DE SERVICIO</div>
+              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 26, color: CL.inkSoft, letterSpacing: 3 }}>WORK ORDER</div>
             </div>
             {items.map((it, i) => {
               const t0 = 16 + i * step, k = lin(f, t0, t0 + 8), hk = lin(f, t0 + 4, t0 + 16);
@@ -75,7 +75,7 @@ export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; f
   );
 };
 
-export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; pageNo?: number; bed?: string }> = ({ page, qr, stamp = "Gratis en la página", pageNo = 9, bed }) => {
+export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; pageNo?: number; bed?: string }> = ({ page, qr, stamp = "Free on page", pageNo = 9, bed }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2, 18), pq = pop(f, fps, 16);
   const y = interpolate(p, [0, 1], [-1000, 0]), r = interpolate(p, [0, 1], [-14, -3]);
@@ -94,7 +94,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
         <div style={{ position: "absolute", right: 150, top: 230, opacity: Math.min(out, pq), translate: `${(1 - pq) * 120}px 0`, rotate: "3deg" }}>
           <Card style={{ padding: 26, borderTop: `14px solid ${CL.yellow}`, textAlign: "center" }}>
             <Img src={staticFile(qr)} style={{ width: 420, height: 420, display: "block", imageRendering: "pixelated" }} />
-            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 8 }}>apunte la cámara acá</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 8 }}>point your camera here</div>
           </Card>
         </div>
       ) : null}
@@ -104,7 +104,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
   );
 };
 
-export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; kicker?: string; bed?: string }> = ({ qr, cover, text = "apunte la cámara del celular acá", kicker = "ARREGLO COMPLETO · GRATIS", bed }) => {
+export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; kicker?: string; bed?: string }> = ({ qr, cover, text = "point your phone camera here", kicker = "FULL TRICK · FREE", bed }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2), pc = pop(f, fps, 10), w = lin(f, 18, 36);
   return (
@@ -212,7 +212,7 @@ export const ClColorCode: React.FC<{ pick: number; items?: typeof CHIPS; bed?: s
 };
 
 // ANTES → DESPUÉS: la misma toma, una cortina con borde de luz barre de izquierda a derecha; rótulos en las esquinas
-export const ClBeforeAfter: React.FC<{ before: string; after: string; a?: string; b?: string; note?: string }> = ({ before, after, a = "ANTES", b = "DESPUÉS", note }) => {
+export const ClBeforeAfter: React.FC<{ before: string; after: string; a?: string; b?: string; note?: string }> = ({ before, after, a = "BEFORE", b = "AFTER", note }) => {
   const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(5);
   const x = interpolate(f, [T * 0.18, T * 0.62], [0, 100], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
   const z = lin(f, 0, T, 1.02, 1.08);

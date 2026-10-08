@@ -1,0 +1,123 @@
+// DIRECTOR A — om99 (Claudio Old Mechanic #1, "Miss Doris's Car" ep. 1: the 15 hidden features): MINUTO 1 (la flechita del
+// tanque en el seg 0 + "the smallest secret" → gancho, palanca del baúl, lector de US$20 → Doris, 280.000 millas, la agencia →
+// loop del guantero y el baúl → promesa (15 cosas, una salva de un accidente, la #1 = la más cara) → credibilidad + las 3 pruebas
+// → capítulo) + la historia de Doris y Frank + #15 apoyacabeza · #14 gancho · #13 anteojos · #12 baúl (párrafos 0-32).
+import { S, BI, CLP, DORIS, CAR, DRIVE, SHOP } from "../claudio/lib.mjs";
+const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o });
+export const H = "a mechanic's weathered tanned hands with a little black grease on the fingers, the rolled navy blue sleeve of a work shirt at the edge of the frame";
+export const DASH = "the dashboard of an ordinary 2012 silver mid-size sedan with no brand badges";
+export const GAUGE = "the instrument cluster of an ordinary 2012 sedan: an analog fuel gauge with E and F, a tiny white gas-pump icon and a small triangle arrow next to it";
+const I = "img/om99/";
+export const SHOTS = [
+  // ── 0:00 · la flechita del tanque
+  S(0, "", "kf", "k_gauge", { p: BI(`Extreme close view of ${GAUGE}, the needle a little above a quarter, the tiny triangle arrow next to the gas pump icon clearly visible.`), d1: "the fuel needle trembles a little at a quarter tank", d2: "a fingertip points at the tiny triangle arrow next to the gas pump icon", sound: "a quiet car interior", ov: { c: "ClStampOv", props: { text: "8 YEARS · NEVER SEEN IT" } } }),
+  S(0, "and you've never noticed this little arrow", "bi", "b_gaugearrow", { p: BI(`Extreme close view of ${GAUGE}, a fingertip touching the glass right next to the tiny triangle arrow.`) }),
+  S(0, "It tells you which side", "bi", "st_gaspump", { q: "car gas cap fuel door", p: BI(`The open fuel door and gas cap on the left rear side of ${CAR}, parked at a gas station pump in daylight.`) }),
+  S(0, "And it's the smallest secret", "av", ""),
+  // ── el gancho, la palanca, el lector
+  S(1, "", "bi", "b_hook", { p: BI(`Inside the back of ${CAR}: the grab handle above the rear door, a small gray fold-down plastic hook at its base pulled down with one finger, a dry-cleaning hanger about to go on it.`) }),
+  S(1, "A lever in your trunk", "bi", "b_glowhandle", { p: BI(`Inside the open trunk of ${CAR}, looking up at the underside of the lid: a small yellow-green glow-in-the-dark T-shaped release handle hanging near the latch, shaded so it glows faintly.`) }),
+  S(1, "that could save your life", "bi", "b_trunkdark", { p: BI(`A hand reaching up in a nearly dark car trunk toward a faintly glowing yellow-green release handle.`) }),
+  S(1, "And a twenty-dollar gadget", "bi", "b_obdreader", { q: "obd2 scanner car", p: BI(`Close view of a small blue handheld OBD2 code reader with a blank screen held in ${H}, under the driver's side of ${DASH}.`) }),
+  S(1, "does exactly what a shop charges you", "bi", "b_shopcounter", { p: BI(`A service advisor at a dealership counter turning a printed invoice toward a customer, a computer screen beside him.`) }),
+  C(1, "a hundred and twenty for", "ClReceipt", { head: "DEALERSHIP", lines: [["Read 1 code", "$120"], ["Advice", "trade it in"]], total: ["Real cost", "$0"] }),
+  // ── Doris
+  S(2, "", "bi", "b_doris0", { p: BI(`${DORIS} standing in her suburban driveway next to ${CAR}, one hand resting on the roof, a little worried.`) }),
+  S(2, "her late husband's car", "bi", "b_frankphoto", { p: BI(`An old framed photo on a living-room shelf: a smiling 70-year-old white American man with a gray mustache and a ball cap, leaning on a new silver sedan in 2012.`) }),
+  S(2, "Two hundred eighty thousand miles", "bi", "b_odometer", { p: BI(`Close view of the odometer of ${DASH}: a digital display, the car is on, warm daylight.`), ov: { c: "ClStampOv", props: { text: "280,000 MILES" } } }),
+  S(2, "The dealership told her", "bi", "st_dealer", { q: "car dealership showroom", p: BI("The inside of an ordinary car dealership showroom with new cars on the floor, salesmen's desks, bright lights.") }),
+  S(2, "and tried to sell her a new one", "bi", "b_brochure", { p: BI(`${DORIS} at a dealership desk holding a glossy new-car brochure, looking unsure, a salesman's hand pushing papers toward her.`) }),
+  // ── el loop
+  S(3, "", "cl", "c_driveway", { p: CLP(`Claudio and ${DORIS} sitting on two folding chairs in her driveway next to ${CAR}, an open owner's manual on his knee and two coffee mugs on a small table.`) }),
+  S(3, "with the owner's manual", "bi", "b_manual", { q: "car owners manual", p: BI(`A thick car owner's manual with a plain blank cover lying open on the passenger seat of ${CAR}, a paper clip on one page.`) }),
+  S(3, "in her glove box", "bi", "b_glovebox", { p: BI(`The open glove box of ${CAR}: an old spiral notebook, the owner's manual, napkins, a pen, a tire pressure gauge.`) }),
+  S(3, "and in her trunk", "bi", "b_trunk0", { p: BI(`The open trunk of ${CAR} in a sunny driveway, the trunk floor lifted to show the spare tire well.`) }),
+  S(3, "changed her mind", "kf", "k_doris", { p: BI(`${DORIS} sitting in her driveway, surprised, a hand on her chest, looking at something inside the open car door.`), d1: "she looks inside the car door", d2: "her face changes into a surprised smile", sound: "soft birds" }),
+  S(3, "I'll show you in a minute", "av", ""),
+  // ── la promesa
+  C(4, "", "ClCarMap", { done: [], title: "15 hidden features" }),
+  S(4, "You paid for every one of them", "bi", "b_paid", { p: BI(`Close view of a car purchase contract and a set of car keys on a kitchen table, a pen across it.`) }),
+  S(4, "Some save you money", "bi", "b_money", { q: "counting dollar bills", p: BI(`Close view of hands counting a few twenty-dollar bills on a car's center console.`) }),
+  S(4, "One can save you from an accident", "bi", "st_brakelights", { q: "car brake lights traffic", p: BI("Ordinary afternoon traffic, the red brake lights of a sedan stopping suddenly in front.") }),
+  S(4, "And number one is the biggest money drain", "bi", "b_obdport", { p: BI(`Close view under the driver's side of ${DASH}, a black trapezoid 16-pin OBD2 port near the knee area.`) }),
+  S(4, "in owning a car", "bi", "b_drain", { p: BI(`A stack of car repair receipts and a calculator on a kitchen table, a hand pressing the calculator keys.`) }),
+  S(4, "and it costs", "bi", "b_reader3", { p: BI(`A small blue OBD2 code reader still in its plastic package with a plain blank label, on a car seat.`) }),
+  S(4, "less than a tank of gas", "bi", "st_pump", { q: "gas pump nozzle filling car", p: BI(`A gas pump nozzle filling ${CAR} in daylight.`) }),
+  // ── credibilidad
+  S(5, "", "av", ""),
+  S(5, "Thirty-five years as a mechanic", "cl", "c_shop35", { p: CLP(`Claudio under a car raised on a two-post lift in ${SHOP}, looking at the camera with a calm half smile, a work light in his hand.`) }),
+  S(5, "my three free tests", "bi", "b_papertowel", { p: BI(`A white paper towel lying on a concrete driveway under the front of ${CAR}, a few small colored drip spots on it.`) }),
+  S(5, "before any car goes to a shop", "bi", "st_shopdoor", { q: "auto repair shop garage", p: BI(`The open roll-up door of ${SHOP}, a sedan driving in.`) }),
+  C(6, "", "ClChapter", { n: 1, title: "Miss Doris's car", sub: "280,000 miles · not done yet" }),
+  // ── Doris y Frank
+  S(7, "", "bi", "b_phone", { p: BI(`${DORIS} sitting at her kitchen table talking on an old cordless phone, a calendar on the wall behind her.`) }),
+  S(7, "bought that silver sedan new in 2012", "bi", "b_frankcar", { p: BI(`An old 2012 photo print: a smiling 70-year-old white American man with a gray mustache and a ball cap washing a brand-new silver sedan in a driveway.`) }),
+  S(7, "like a baby", "bi", "st_carwash", { q: "washing car by hand", p: BI(`Hands washing the hood of ${CAR} with a soapy sponge in a driveway.`) }),
+  S(7, "so did every bill", "bi", "b_bills", { p: BI(`A small stack of car repair invoices and envelopes on a kitchen table next to reading glasses.`) }),
+  S(8, "", "bi", "st_checkengine", { q: "check engine light dashboard", p: BI(`Close view of ${DASH} with an amber check engine light on.`) }),
+  S(8, "a hundred and twenty dollars to read a code", "bi", "b_invoice120", { p: BI(`Close view of a printed dealership service invoice with blank logo, a line item circled in pen.`), ov: { c: "ClStampOv", props: { text: "$120 · TO READ A CODE" } } }),
+  S(8, "a man in a nice shirt", "bi", "st_salesman", { q: "car salesman talking customer", p: BI("A car salesman in a pressed shirt talking to an older woman across a desk at a dealership.") }),
+  S(8, "you should really think about trading it in", "bi", "b_tradein", { p: BI(`Close view of a dealership trade-in form on a desk, a pen lying on it, ${DORIS}'s hands folded beside it.`) }),
+  S(9, "", "av", ""),
+  S(9, "I don't even know what half these buttons do", "bi", "b_buttons", { p: BI(`Close view of the center console and dashboard buttons of ${DASH}, an older woman's hand hovering, unsure.`) }),
+  S(10, "", "av", ""),
+  C(10, "the car already does for free", "ClCarMap", { done: [], title: "Miss Doris's car" }),
+  S(11, "", "bi", "b_notebook", { p: BI(`An old small spiral notebook open on the hood of ${CAR}: handwritten rows of dates, mileage and dollar amounts in blue pen.`) }),
+  S(11, "That notebook was still in the glove box", "bi", "b_notebook2", { p: BI(`An old spiral notebook and an owner's manual inside the open glove box of ${CAR}.`) }),
+  C(11, "The last entry was three years old", "ClNotebook", { title: "Frank's notebook", rows: [{ k: "2019", v: "oil ✓" }, { k: "2020", v: "oil ✓" }, { k: "2021", v: "oil ✓" }, { k: "2022", v: "—" }], mark: "then nothing" }),
+  S(11, "wherever the coupon said", "bi", "b_coupon", { p: BI("Close view of an oil change coupon flyer with a blank logo stuck under a car's windshield wiper.") }),
+  S(12, "", "cl", "c_coffee", { p: CLP(`Claudio sitting on a folding chair in ${DRIVE}, an open owner's manual on his knee, a coffee mug in his hand, talking to someone off camera.`) }),
+  S(12, "Four hundred pages", "bi", "st_manualflip", { q: "flipping pages manual", p: BI("Hands flipping quickly through a thick car owner's manual.") }),
+  S(12, "I'll save you the four hundred pages", "av", ""),
+  // ── #15 apoyacabeza
+  C(13, "", "ClFeatureTag", { n: 15, title: "The headrest", note: "you never adjusted it" }),
+  S(14, "", "bi", "st_neck", { q: "neck pain driving", p: BI("An older woman driving, rubbing the back of her neck with one hand at a red light.") }),
+  S(14, "or it drops when you relax", "bi", "b_headdrop", { p: BI(`Seen from the back seat of ${CAR}: the driver's head tipped back with a big gap between it and a headrest set all the way down.`) }),
+  S(14, "Most people blame the seat", "av", ""),
+  S(15, "", "bi", "b_headrest", { p: BI(`Close view of the driver's seat headrest of ${CAR}, ${H} pressing the small button on the side of the headrest post.`) }),
+  S(15, "It also tilts forward and back", "kf", "k_headrest", { p: BI(`Close view of a car headrest being pulled forward by ${H}, the headrest tilting toward the camera.`), d1: "the hand pulls the headrest forward", d2: "the headrest clicks forward two notches", sound: "two ratchet clicks" }),
+  S(16, "", "av", ""),
+  S(16, "In a rear-end crash", "bi", "st_rearend", { q: "rear end car collision", p: BI("Two ordinary sedans after a minor rear-end bump on a city street, drivers getting out.") }),
+  S(16, "that gap is where whiplash happens", "bi", "b_gap", { p: BI(`Side view of an older woman in the driver's seat of ${CAR}, a gap of several inches between the back of her head and the headrest.`), ov: { c: "ClStampOv", props: { text: "THE GAP = WHIPLASH" } } }),
+  C(17, "", "ClCheck", { title: "Headrest rule", items: ["Middle at ear level", "Almost touching your head", "2 clicks · 30 seconds"], fast: true }),
+  S(17, "Doris's was all the way down", "bi", "b_dorishead", { p: BI(`${DORIS} sitting in the driver's seat of ${CAR}, the headrest all the way down below the back of her head.`) }),
+  S(17, "She's five foot one", "cl", "c_headrestfix", { p: CLP(`Claudio leaning into the open driver's door of ${CAR}, raising the headrest behind ${DORIS} who sits in the driver's seat, both smiling.`) }),
+  S(18, "", "av", ""),
+  S(18, "If you have to lean more than an inch", "bi", "b_lean", { p: BI(`Side view inside ${CAR}: a driver leaning back, the back of the head a hand's width from the headrest.`) }),
+  S(18, "Two clicks", "bi", "b_click", { p: BI(`Extreme close view of a car headrest post and its side button, a thumb pressing it.`) }),
+  // ── #14 el gancho
+  C(19, "", "ClFeatureTag", { n: 14, title: "The hook above your head", note: "it folds down" }),
+  S(20, "", "bi", "st_drycleaning", { q: "dry cleaning clothes hanger plastic", p: BI("A shirt on a wire hanger in a dry-cleaning plastic bag, held up in a parking lot.") }),
+  S(20, "crumpled on the back seat", "bi", "b_crumpled", { p: BI(`A dress shirt in a dry-cleaning bag lying crumpled on the back seat of ${CAR}.`) }),
+  S(21, "", "bi", "b_grabhandle", { p: BI(`Inside ${CAR}, the grab handle above the left rear door, a small gray plastic hook folded flat into its base.`) }),
+  S(21, "Pull it down with one finger", "kf", "k_hook", { p: BI(`Close view of a finger pulling down a small gray plastic fold-down hook at the base of a car's rear grab handle.`), d1: "a finger hooks the little plastic hook", d2: "the hook folds down and a hanger goes on it", sound: "a small plastic click" }),
+  S(21, "That's for a hanger", "bi", "b_hanger", { p: BI(`A shirt on a hanger hanging from the fold-down hook above the left rear door inside ${CAR}.`) }),
+  S(22, "", "av", ""),
+  C(22, "Hang your clothes behind the driver", "ClDoDont", { yes: { label: "Behind the driver", img: I + "b_hanger.jpg" }, no: { label: "Right rear window", img: I + "st_lanechange.jpg" } }),
+  S(22, "blocks your view when you change lanes", "bi", "st_lanechange", { q: "driver looking over shoulder changing lanes", p: BI("A driver turning her head to check the blind spot over her right shoulder while changing lanes.") }),
+  S(23, "", "bi", "b_seathook", { p: BI(`The back of the front passenger seat of ${CAR}: a small gray fold-out hook below the headrest with a grocery bag hanging on it.`) }),
+  S(23, "so your eggs don't roll around the floor", "bi", "b_eggs", { p: BI(`A carton of eggs and a few oranges that rolled onto the rear floor mat of ${CAR}.`) }),
+  // ── #13 anteojos
+  C(24, "", "ClFeatureTag", { n: 13, title: "Above your eyes", note: "a box for your glasses" }),
+  S(25, "", "bi", "st_sundriving", { q: "driving into sun glare", p: BI("Driving into strong low sun glare through a windshield on a suburban road.") }),
+  S(25, "buried in the console under receipts", "bi", "b_console", { p: BI(`The open center console of ${CAR} stuffed with receipts, cables and a pair of sunglasses at the bottom.`) }),
+  S(25, "Look up", "bi", "b_overhead", { p: BI(`Looking up at the headliner of ${CAR}: the dome light and right in front of it a small rectangular compartment with a lid.`) }),
+  S(25, "Push it, and it drops open", "kf", "k_glasses", { p: BI(`Close view looking up at a small overhead sunglasses compartment in a car headliner, a finger pressing its lid.`), d1: "the finger presses the lid", d2: "the little compartment drops open slowly", sound: "a soft plastic click" }),
+  S(26, "", "av", ""),
+  S(26, "the dashboard gets hot enough", "bi", "st_hotdash", { q: "sun on car dashboard heat", p: BI(`Strong summer sun on ${DASH}, a pair of sunglasses baking on the dash.`) }),
+  S(26, "Up there, they stay cooler", "bi", "b_glassesin", { p: BI(`A pair of sunglasses resting inside an open overhead compartment lined with soft felt in a car headliner.`) }),
+  S(27, "", "bi", "b_frankglasses", { p: BI(`${DORIS} in the passenger seat of ${CAR} holding up an old pair of men's reading glasses she just found in the overhead compartment, smiling with wet eyes.`) }),
+  S(27, "Then she put them back", "bi", "b_putback", { p: BI(`An older woman's hand placing an old pair of reading glasses back into a small open overhead compartment in a car.`) }),
+  // ── #12 el baúl
+  C(28, "", "ClFeatureTag", { n: 12, title: "The trunk button", note: "skip the walk around" }),
+  S(29, "", "bi", "st_groceries", { q: "carrying grocery bags parking lot", p: BI("An older woman with both arms full of grocery bags walking to her car in a supermarket parking lot.") }),
+  S(29, "juggle the keys", "bi", "b_juggle", { p: BI(`Hands holding three grocery bags and struggling to find a car key, next to the closed trunk of ${CAR}.`) }),
+  S(30, "", "bi", "b_trunkbtn", { p: BI(`Close view of the lower part of the driver's door panel of ${CAR}: a small switch with a pictogram of a car with its trunk open.`) }),
+  S(30, "under the left side of the dashboard", "bi", "b_trunklever", { p: BI(`Close view under the left side of ${DASH}: a small pull lever with a pictogram of an open trunk.`) }),
+  S(30, "On many cars it works with the engine off", "kf", "k_trunkpop", { p: BI(`Seen from the driver's seat through the rear window: ${H.replace("a mechanic's", "a")} presses the trunk button and the trunk lid of ${CAR} pops up.`), d1: "the finger presses the trunk button", d2: "the trunk lid pops up behind the car", sound: "a trunk latch popping" }),
+  S(31, "", "av", ""),
+  S(31, "swing your foot under the bumper", "bi", "st_kicktrunk", { q: "foot under bumper hands free trunk", p: BI("A person with full grocery bags swinging a foot under the rear bumper of an SUV, the tailgate opening.") }),
+  S(31, "Nobody shows you that at the dealership", "av", ""),
+  S(32, "", "bi", "st_deadbattery", { q: "dead car battery jumper cables", p: BI(`A pair of jumper cables in the trunk of ${CAR} in a dark parking lot.`) }),
+  S(32, "the key in the trunk lock", "bi", "b_trunklock", { p: BI(`Close view of a metal car key going into the small keyhole of a trunk lock of ${CAR}.`) }),
+];

@@ -17,10 +17,10 @@ for (const s of shots) {
   m1[s.name] = { s: +a.toFixed(3), e: +e.toFixed(3), text };
   execFileSync("ffmpeg", ["-v", "error", "-y", "-ss", a.toFixed(3), "-to", e.toFixed(3), "-i", R + `public/${SLUG}.wav`, "-ac", "2", "-ar", "48000", D + `aud/${s.name}.wav`], { windowsHide: true });
   const ka = "K" + (anchors.length + 1), kb = "K" + (anchors.length + 2);
-  anchors.push({ id: ka, name: s.name, from: ["k0"], prompt: `Same bathroom, same light. ${WHO} ${s.a} ${FACE}` + SAME });
+  anchors.push({ id: ka, name: s.name, from: ["k0"], prompt: `Same place, same light. ${WHO} ${s.a} ${FACE}` + SAME });
   anchors.push({ id: kb, name: s.name + "_fin", from: [ka], prompt: `A few seconds later, same place, same framing: ${s.b || "he has finished the sentence, same pose, mouth closed, a knowing look at the camera."}` + SAME });
   clips.push({ id: s.name, a: ka, b: kb, audio: D + `aud/${s.name}.wav`, text, action: s.act + SAME });
 }
-W(D + "plan.json", { dir: D, face: R + `public/ref_${SLUG}_face256.png`, k0_from: R + `public/img/${SLUG}/b_hotelbath.jpg`, pronoun: "he", lang: "es", light: LIGHT, look: LOOK, anchors, clips, out: D + "out.mp4" });
+W(D + "plan.json", { dir: D, face: R + `public/ref_${SLUG}_face256.png`, k0_from: R + `public/img/${SLUG}/b_shop.jpg`, pronoun: "he", lang: "en", light: LIGHT, look: LOOK, anchors, clips, out: D + "out.mp4" });
 W(V3 + "m1.json", m1);
 console.log("plan:", anchors.length, "anclas ·", clips.length, "hablados:", clips.map((c) => `${c.id} "${c.text}"`).join(" | "));

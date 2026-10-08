@@ -321,5 +321,11 @@
   "language": "en",
   "backend": "s2.1-pro-free",
   "nota": "Harlan the Lineman (EN/US Ohio, 68, retired lineman). Clon zero-shot de la voz PUBLICA de Fish 'GRANDPA' e223051b34524a48940561e9a18a2203 (warm authoritative raspy); ganó juez ciego gpt-audio en 2 órdenes (9/9) contra 5. 27-sep-2026."
+ },
+ "claudio_en_definitiva": {
+  "wav": "fish_refs/claudio_en_definitiva.mp3",
+  "language": "en",
+  "text": "Okay. So, uh... my wife, God rest her, she used to say I talk to cars more than I talk to people. And you know what? She was right. Thirty-five years. Thirty-five years with my hands in engines, and I still get excited when somebody brings me an old car everybody else gave up on. Last week, this lady comes in. Sweet lady, seventy-two years old. And the dealership told her, listen to this, they told her, ma'am, your car's not worth fixing. Two hundred eighty thousand miles, and they wanted to sell her a brand-new one. So I, I popped the hood, and, uh... you're not gonna believe this. It was a five-dollar valve. Five dollars! I almost fell off my stool. And that's what makes me mad, you know? Not the cars. The cars are honest. A car always tells you what's wrong. A light, a noise, a little spot on the driveway, it warns you. Weeks before. Nobody ever taught you how to listen. That's all. So here's what I'm gonna do. I'm gonna show you the same tricks I use in my shop, the real numbers, the exact words to say at the counter, so nobody ever charges you for something you didn't need. Deal? Alright. Grab your keys. Let's go take a look.",
+  "nota": "VOZ CANONICA DE CLAUDIO EN INGLES (canal Claudio Old Mechanic, row 312). 79,8 s de ElevenLabs v4 con tags (risa, titubeo, susurro, bronca, énfasis), hecha por el creador el 8-oct-2026; referencia CRUDA mp3 sin filtros, transcripción verificada con whisper-1 palabra por palabra. Usar SIEMPRE esta; no re-clonar de cada video."
  }
 }

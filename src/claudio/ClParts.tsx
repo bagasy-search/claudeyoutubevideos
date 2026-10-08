@@ -68,7 +68,7 @@ export const Card: React.FC<{ style?: React.CSSProperties; children: React.React
 );
 
 // parche bordado de la camisa del fumigador (marca del canal Fumigador): escudo verde con borde caqui, el número de capítulo y una cucaracha tachada
-export const KeyTag: React.FC<{ num: string | number; label?: string; w?: number; color?: string }> = ({ num, label = "CAPÍTULO", w = 260, color = CL.navy }) => {
+export const KeyTag: React.FC<{ num: string | number; label?: string; w?: number; color?: string }> = ({ num, label = "CHAPTER", w = 260, color = CL.navy }) => {
   const h = w * 1.18;
   const shield = (k: number) => `M ${w * (0.5)} ${w * 0.04 + k} L ${w * 0.96 - k} ${w * 0.16 + k} L ${w * 0.92 - k} ${h * 0.62} Q ${w * 0.84} ${h * 0.9} ${w / 2} ${h - k} Q ${w * 0.16} ${h * 0.9} ${w * 0.08 + k} ${h * 0.62} L ${w * 0.04 + k} ${w * 0.16 + k} Z`;
   return (
@@ -78,10 +78,11 @@ export const KeyTag: React.FC<{ num: string | number; label?: string; w?: number
       <path d={shield(w * 0.075)} fill="none" stroke={CL.brassLight} strokeWidth={2.5} strokeDasharray="7 6" />
       <text x={w / 2} y={w * 0.36} textAnchor="middle" fontFamily={LABEL} fontWeight={600} fontSize={w * 0.075} letterSpacing={w * 0.012} fill={CL.brassLight}>{label}</text>
       <text x={w / 2} y={w * 0.36 + h * 0.4} textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize={w * 0.38} fill={CL.white}>{num}</text>
-      <g transform={`translate(${w / 2} ${h * 0.86}) scale(${w / 520})`} opacity={0.95}>
-        <ellipse cx={0} cy={0} rx={34} ry={18} fill="#6B3A1E" /><circle cx={-36} cy={0} r={9} fill="#6B3A1E" />
-        {[-14, 2, 18].map((x) => (<g key={x}><line x1={x} y1={-14} x2={x - 8} y2={-30} stroke="#6B3A1E" strokeWidth={4} /><line x1={x} y1={14} x2={x - 8} y2={30} stroke="#6B3A1E" strokeWidth={4} /></g>))}
-        <line x1={-56} y1={-34} x2={56} y2={34} stroke={CL.red} strokeWidth={9} strokeLinecap="round" />
+      <g transform={`translate(${w / 2} ${h * 0.84}) scale(${w / 520}) rotate(-35)`} opacity={0.95}>
+        {/* llave inglesa (marca del canal Old Mechanic) */}
+        <rect x={-62} y={-9} width={110} height={18} rx={7} fill="#C9CED6" stroke="#6E7682" strokeWidth={3} />
+        <path d="M 46 -24 a 26 26 0 1 1 0 48 l 0 -14 a 12 12 0 0 0 0 -20 Z" fill="#C9CED6" stroke="#6E7682" strokeWidth={3} />
+        <circle cx={-56} cy={0} r={16} fill="#C9CED6" stroke="#6E7682" strokeWidth={3} /><circle cx={-56} cy={0} r={6} fill={color} />
       </g>
     </svg>
   );

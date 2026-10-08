@@ -173,7 +173,7 @@ export const ClVideoRef: React.FC<{ thumb: string; title: string; tag?: string; 
           <div style={{ position: "absolute", left: 40, bottom: 26, right: 40, fontFamily: HAND, fontWeight: 700, fontSize: 64, color: CL.ink, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{title}</div>
         </div>
         <Tape x={480} y={-22} rot={-4} w={170} />
-        <div style={{ position: "absolute", right: -40, top: -50, rotate: "6deg", background: next ? CL.yellow : CL.navy, color: next ? CL.ink : "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 50, letterSpacing: 3, padding: "8px 30px", borderRadius: 12, boxShadow: `0 14px 30px ${CL.shadow}`, opacity: lin(f, 10, 18) }}>{tag || (next ? "PRÓXIMO VIDEO" : "YA EN EL CANAL")}</div>
+        <div style={{ position: "absolute", right: -40, top: -50, rotate: "6deg", background: next ? CL.yellow : CL.navy, color: next ? CL.ink : "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 50, letterSpacing: 3, padding: "8px 30px", borderRadius: 12, boxShadow: `0 14px 30px ${CL.shadow}`, opacity: lin(f, 10, 18) }}>{tag || (next ? "NEXT VIDEO" : "ON THE CHANNEL")}</div>
       </div>
       <RoomLight k={0.35} />
     </AbsoluteFill>

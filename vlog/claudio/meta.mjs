@@ -9,16 +9,16 @@ const NL = "\n";
 const P = J(V3 + "paras.json"), CF = J(R + `vlog/${SLUG}/chapters.json`);
 const ts = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
 const chapters = CF.chapters.map(([p, t]) => `${ts(p === 0 ? 0 : Math.max(0, P[p].s - 0.5))} ${t}`).join(NL);
-const card = (await get("tracked_channels?select=plan&id=eq.305"))[0].plan.find((c) => c.slug === SLUG);
+const card = (await get("tracked_channels?select=plan&id=eq.312"))[0].plan.find((c) => c.slug === SLUG);
 if (!card.description.includes("[[CHAPTERS]]")) throw new Error("la descripción de la tarjeta no tiene [[CHAPTERS]]");
-const body = card.description.slice(card.description.indexOf("Soy Claudio"));
-const L = "https://manual-fumigador-claudio.vercel.app";
+const body = card.description.slice(card.description.indexOf("I'm Claudio"));
+const L = "https://old-mechanic-claudio.vercel.app";
 const head = [
-  `🔦 GRATIS: la revisión de 10 minutos con una linterna que hago antes de fumigar cualquier casa (PDF) 👉 ${L}/gratis/?src=${SLUG}-desc`,
-  `🪳 El arreglo de este video, paso a paso y con las medidas exactas 👉 ${L}/?src=${SLUG}`,
+  `🔧 FREE: the 3 ten-minute tests I do before any car goes to a shop (PDF) 👉 ${L}/gratis/?src=${SLUG}-desc`,
+  `📘 This video's trick, step by step with the exact numbers 👉 ${L}/?src=${SLUG}`,
   "",
   ...(CF.intro ? [CF.intro, ""] : []),
 ].join(NL) + NL;
-const meta = { title: card.title, description: head + body.replace("[[CHAPTERS]]", chapters), pinned_comment: CF.pinned };
+const meta = { title: card.title, description: head + body.replace("Capítulos:", "Chapters:").replace("[[CHAPTERS]]", chapters), pinned_comment: CF.pinned };
 fs.writeFileSync(R + `public/${SLUG}_meta.json`, JSON.stringify(meta, null, 1));
 console.log([meta.title, "", meta.description, "", "FIJADO: " + meta.pinned_comment].join(NL));

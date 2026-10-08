@@ -1,6 +1,6 @@
 // Overlays del canal Claudio (van ENCIMA de la toma, dentro del plano, sin taparla):
 //   ClNameTag  la plaqueta de latón de la puerta de habitación con el nombre (sin apellido ni empresa)
-//   ClStampOv  sello de goma que GOLPEA sobre el plano (temblor de cámara + destello + tinta): "ESTÁ VIVO"
+//   ClStampOv  sello de goma que GOLPEA sobre el plano (temblor de cámara + destello + tinta): "IT'S ALIVE"
 //   ClChip     etiqueta corta que entra en una esquina (día, dato): rojo sólo si alert
 //   ClAsk      la pregunta para los comentarios, en una tarjetita de "No molestar" colgada, firmada por Claudio
 import React from "react";
@@ -54,7 +54,7 @@ export const ClAsk: React.FC<{ q: string; sign?: string }> = ({ q, sign = "— C
         {/* colgante de puerta de hotel: agujero para el picaporte */}
         <div style={{ background: CL.navy, borderRadius: "40px 40px 18px 18px", padding: "150px 46px 40px", boxShadow: `0 22px 50px ${CL.shadow}`, position: "relative", borderBottom: `10px solid ${CL.yellow}` }}>
           <div style={{ position: "absolute", left: "50%", top: 36, translate: "-50% 0", width: 110, height: 110, borderRadius: "50%", background: "rgba(0,0,0,0.0)", boxShadow: `0 0 0 9999px transparent`, border: `10px solid ${CL.brassLight}` }} />
-          <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: CL.yellow }}>CUÉNTEME EN LOS COMENTARIOS</div>
+          <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: CL.yellow }}>TELL ME IN THE COMMENTS</div>
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 68, color: "#fff", lineHeight: 1.08, marginTop: 10 }}>{q}</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 54, color: CL.yellowSoft, textAlign: "right", opacity: lin(f, 30, 44), marginTop: 6 }}>{sign}</div>
         </div>

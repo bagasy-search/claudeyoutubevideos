@@ -7,10 +7,15 @@
 import fs from "node:fs";
 export const LIB = "sfx_pro/";
 const FPS = 30, F = (s) => Math.round(s * FPS);
-const has = (pub, p) => fs.existsSync(pub + LIB + p);
+// "car/x" = foley propio del canal Old Mechanic en public/sfx_car (ElevenLabs, sfx_car_gen.mjs); el resto, la biblioteca común
+export const PATH = (p) => (p.startsWith("car/") ? "sfx_car/" + p.slice(4) : LIB + p);
+const has = (pub, p) => fs.existsSync(pub + PATH(p));
 
 // ── ambiente por escena (regex sobre nombre + prompt de la toma), primera coincidencia gana
 const AMB = [
+  ["car/amb_car_interior.mp3", /driver's seat|dashboard|steering wheel|inside (a|the) car|car interior|glove ?box|headrest|sun visor|dome light|rear seat|back seat|fuel gauge|windshield from inside|grab handle/i],
+  ["car/amb_shop.mp3", /repair shop|auto shop|lift|tool chest|workbench|pegboard|parts store|service counter/i],
+  ["car/amb_driveway.mp3", /driveway|garage|suburban|porch|trunk|spare tire|bumper|gas station|pump|tire|wheel/i],
   ["amb/amb_fridge_hum.flac", /night|dark kitchen|flashlight|refrigerator|fridge|compressor/i],
   ["amb/amb_hotel_lobby.flac", /lobby|reception|checking in/i],
   ["amb/amb_hotel_hallway.flac", /corridor|hallway|cart|storeroom|guest-room door|room numbers|door numbered|service hallway/i],
@@ -21,11 +26,26 @@ const AMB = [
   ["amb/amb_bath_fan.flac", /shower head|steam|fan/i],
   ["amb/amb_bath_tile.flac", /bathroom|shower|tiles/i],
 ];
-const AMB_BATH = "amb/amb_suburb_birds.flac", AMB_SHOP = "amb/amb_indoor_generic.flac";
+const AMB_BATH = "car/amb_driveway.mp3", AMB_SHOP = "car/amb_shop.mp3";
 export function ambOf(c, prompt = "") { const t = (c.name || "") + " " + prompt; for (const [f, re] of AMB) if (re.test(t)) return f; return AMB_BATH; }
 
 // ── foley por lo que se ve (primera coincidencia gana): [regex, archivos, vol, dur máx s, offset s]
 const FOLEY = [
+  // ── mecánico (el auto de Doris)
+  [/engine (start|turn|idl)|starts the (car|engine)|turns the key/i, ["car/engine_start.mp3"], 0.4, 3.5, 0.1],
+  [/key fob|remote (lock|button)|presses (the )?(lock|unlock)/i, ["car/fob_chirp.mp3"], 0.42, 1.6, 0.1],
+  [/trunk (lid|latch|open|pops|release)|opens the trunk|glow.?in.?the.?dark handle/i, ["car/trunk_pop.mp3"], 0.42, 2.2, 0.1],
+  [/hood/i, ["car/hood_close.mp3"], 0.38, 1.6, 0.1],
+  [/car door|door (closes|opens)|opens the (rear |back |driver's )?door/i, ["car/car_door_open.mp3", "car/car_door_close.mp3"], 0.4, 1.6, 0.1],
+  [/headrest/i, ["car/seat_click.mp3"], 0.42, 1.2, 0.1],
+  [/glove ?box/i, ["car/glovebox.mp3"], 0.42, 1.6, 0.1],
+  [/gas cap|fuel cap/i, ["car/gas_cap.mp3"], 0.42, 2, 0.1],
+  [/tire (gauge|pressure)|pressure gauge|air (hose|pump|machine)|inflat/i, ["car/tire_air.mp3"], 0.38, 2.6, 0.1],
+  [/socket|ratchet|wrench|lug nut|wheel lock/i, ["car/ratchet.mp3"], 0.42, 1.6, 0.1],
+  [/code reader|obd|plugs? (it )?in/i, ["car/obd_beep.mp3"], 0.42, 1.6, 0.1],
+  [/rain|wiper|fogged|foggy windshield/i, ["car/wiper_rain.mp3"], 0.3, 4, 0],
+  [/hook|clip|folds? down|compartment (opens|drops)/i, ["car/plastic_clip.mp3"], 0.42, 1, 0.1],
+  [/turn signal|blinker|changing lanes/i, ["car/turn_signal.mp3"], 0.3, 3, 0],
   // ── fumigador (casa de los Ramírez)
   [/flashlight|switches on|switching it on/i, ["design/click_slide.flac", "foley/light_pull_switch.flac"], 0.42, 1, 0.05],
   [/(pull|push)\w* .*refrigerator|refrigerator .*(pulled|pushed) /i, ["foley/ceramic_scrape.flac", "foley/scrub_floor.flac"], 0.42, 2.5, 0.1],
@@ -80,6 +100,10 @@ function compFx(n, c, durS) {
   if (n === "ClFridgeBack") { add("foley/ceramic_scrape.flac", 0.3, 0.2, 1.4); [0.15, 0.35, 0.55, 0.73].forEach((k) => add("design/tick_single.flac", 0.34, durS * k, 0.6)); }
   if (n === "ClPeroxide") { add("foley/spray_trigger_a.flac", 0.38, 0.3, 0.8); add("foley/fizz_tablet_a.flac", 0.3, 0.8, Math.min(durS - 1, 4)); }
   if (n === "ClTrailMap") { add(P.mode === "erase" ? "foley/spray_trigger_a.flac" : "design/pencil_strokes.flac", 0.32, 0.4, 1.8); if (P.mode === "bait") add("design/stamp_rubber.flac", 0.3, 0.6, 0.8); }
+  if (n === "ClFeatureTag") { add("design/paper_slide.flac", 0.4, 0.05, 1); add("design/impact_drum_subtle.flac", 0.3, 0.4, 1.2); }
+  if (n === "ClGasArrow") { add("design/swell_suspense.flac", 0.2, 0.3, 2.2); add("design/click_interface.flac", 0.35, durS * 0.5, 0.6); }
+  if (n === "ClCarMap") { add("design/click_slide.flac", 0.3, 0.4, 0.6); }
+  if (n === "ClOBDScan") { add("car/obd_beep.mp3", 0.45, durS * 0.3, 1.2); }
   if (n === "ClDoorGap") { add("design/swell_suspense.flac", 0.22, 0.3, 2.4); if (P.mode === "sealed") { add("foley/rubber_stretch.flac", 0.34, durS * 0.22, 1); add("design/impact_drum_subtle.flac", 0.34, durS * 0.45, 1.2); } }
   if (n === "ClBarrierLine") { if (P.mode === "line") add("foley/chalk_eraser.flac", 0.34, 0.3, Math.min(durS * 0.3, 2.4)); if (P.mode === "herbs") [0.35, 0.6, 0.85, 1.1, 1.35].forEach((t) => add("design/tick_single.flac", 0.3, t, 0.5)); if (P.mode === "dog") add("design/stamp_rubber.flac", 0.3, durS * 0.62, 0.8); }
   if (n === "ClPerimeter30") { add("design/pencil_strokes.flac", 0.28, 0.3, 1.6); if (P.mode === "clean") add("foley/ceramic_scrape.flac", 0.26, durS * 0.22, 1.4); }
@@ -162,7 +186,7 @@ const ovFx = (o) => (o.name === "ClStampOv" ? [["design/stamp_rubber.flac", 0.45
 // cues = TL de gen_timeline (cuadros) · shots = tomas del director (prompt) · ovs = overlays
 export function design(cues, shots, pub, ovs = []) {
   const sfx = [], amb = [], warn = [];
-  const S = (atS, src, vol, durS, bus) => { if (!has(pub, src)) { warn.push("falta " + src); return; } sfx.push({ from: Math.max(0, F(atS)), dur: Math.max(3, F(durS)), src: LIB + src, vol, bus }); };
+  const S = (atS, src, vol, durS, bus) => { if (!has(pub, src)) { warn.push("falta " + src); return; } sfx.push({ from: Math.max(0, F(atS)), dur: Math.max(3, F(durS)), src: PATH(src), vol, bus }); };
   const promptOf = (c) => { const s = shots.find((x) => x.name === c.name && x.name); return s ? ((s.prompt || "") + " " + (s.d1 || "") + " " + (s.d2 || "") + " " + (s.anim || "")).split(" One ordinary frame")[0] : ""; };
   let wi = 0, fi = 0;
   cues.forEach((c, i) => {
@@ -182,7 +206,7 @@ export function design(cues, shots, pub, ovs = []) {
   let cur = null, last = AMB_BATH;
   cues.forEach((c) => {
     const a = c.k === "av" || c.k === "vl" ? AMB_SHOP : c.k === "comp" ? last : ambOf(c, promptOf(c));
-    if (c.k !== "av" && c.k !== "vl") last = a; const src = LIB + a;
+    if (c.k !== "av" && c.k !== "vl") last = a; const src = PATH(a);
     if (!has(pub, a)) warn.push("falta amb " + a);
     if (cur && cur.src === src) cur.dur += c.dur; else { cur = { from: c.from, dur: c.dur, src }; amb.push(cur); }
   });

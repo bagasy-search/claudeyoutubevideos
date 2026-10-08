@@ -1,0 +1,83 @@
+// DIRECTOR B — om99: #11 la flechita (ClGasArrow + mención 1 del Manual, pág. 9) · #10 el parasol · #9 traba de niños ·
+// #8 el empañado · #7 la etiqueta de presión (mención 2: ClBookPage pág. 9) · #6 la llave de las tuercas · #5 el auxilio (párrafos 33-64).
+import { S, BI, CLP, DORIS, CAR, DRIVE, SHOP } from "../claudio/lib.mjs";
+import { H, DASH, GAUGE } from "./dir_a.mjs";
+const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o });
+const I = "img/om99/";
+export const SHOTS = [
+  // ── #11 la flechita
+  C(33, "", "ClFeatureTag", { n: 11, title: "The little arrow", note: "left or right?" }),
+  S(34, "", "bi", "b_gauge2", { p: BI(`Close view of ${GAUGE} seen from the driver's seat, the steering wheel at the edge of the frame.`) }),
+  C(34, "there's a tiny triangle", "ClGasArrow", { side: "left" }),
+  S(35, "", "bi", "st_gasnight", { q: "gas station at night cars", p: BI("A busy gas station at night, cars at every pump, bright canopy lights.") }),
+  S(35, "you pull in on the wrong side", "bi", "b_wrongside", { p: BI(`${CAR} parked at a gas pump with the fuel door on the far side, the hose stretched across the trunk, a woman frowning.`) }),
+  S(35, "Doris had been driving that car for eight years", "cl", "c_arrowdoris", { p: CLP(`Claudio crouching at the open driver's door of ${CAR}, pointing at the fuel gauge while ${DORIS} leans in from the passenger seat, laughing, a hand over her mouth.`) }),
+  S(36, "", "bi", "st_gascap", { q: "closing car gas cap", p: BI(`A hand twisting the gas cap shut on ${CAR} at a gas pump.`) }),
+  S(36, "Turn it until it clicks", "kf", "k_gascap", { p: BI(`Extreme close view of a hand twisting a black plastic gas cap shut on a car's open fuel door.`), d1: "the hand twists the gas cap", d2: "the cap clicks and the hand lets go", sound: "three plastic clicks" }),
+  S(36, "it comes back at number one", "av", ""),
+  S(37, "", "av", ""),
+  C(37, "on a checklist on page nine of my Glovebox Manual", "ClNotebook", { title: "The walk-around", rows: [{ k: "Headrest", v: "ears" }, { k: "Hooks", v: "2" }, { k: "Arrow", v: "L / R" }, { k: "Trunk", v: "inside" }], mark: "page 9" }),
+  S(37, "the next ones are where the money is", "bi", "b_wallet", { p: BI(`An older woman's open wallet with a few bills on the passenger seat of ${CAR}.`) }),
+  // ── #10 el parasol
+  C(38, "", "ClFeatureTag", { n: 10, title: "The visor that grows", note: "pull it" }),
+  S(39, "", "bi", "st_sidesun", { q: "sun glare side window driving", p: BI("Strong low sun coming through the driver's side window of a car on a suburban road.") }),
+  S(39, "Unclip the visor and swing it", "bi", "b_visorswing", { p: BI(`Inside ${CAR}: a hand unclipping the driver's sun visor and swinging it toward the side window.`) }),
+  S(39, "Then pull it", "kf", "k_visor", { p: BI(`Close view inside a car: a sun visor swung to the side window, a hand pulling it along its rod so it slides out a few inches toward the rear.`), d1: "the hand grips the visor at the side window", d2: "the visor slides out a few inches and covers the gap", sound: "a soft plastic slide" }),
+  S(40, "", "bi", "st_church", { q: "small church parking lot sunday", p: BI("A small white American church with a parking lot on a sunny Sunday morning.") }),
+  S(40, "Now she doesn't", "bi", "b_dorisvisor", { p: BI(`${DORIS} driving ${CAR} on a sunny morning, the visor slid out over the side window, calm.`) }),
+  // ── #9 traba de niños
+  C(41, "", "ClFeatureTag", { n: 9, title: "The child lock", note: "on the door edge" }),
+  S(42, "", "bi", "b_dooredge", { p: BI(`The edge of the open rear door of ${CAR} near the latch: a tiny lever with a child pictogram and LOCK arrow, shaded.`) }),
+  S(42, "There's a tiny lever or a slot", "kf", "k_childlock", { p: BI(`Extreme close view of the tip of a car key moving a tiny child-lock lever on the edge of an open rear car door.`), d1: "the key tip touches the tiny lever", d2: "the lever flips to the other side", sound: "a tiny click" }),
+  S(42, "the door won't open from the inside", "bi", "b_insidehandle", { p: BI(`Inside the back seat of ${CAR}: a hand pulling the rear door handle, the door not opening.`) }),
+  S(43, "", "bi", "b_grandkids", { p: BI(`An old family photo print: a smiling grandfather with a gray mustache and ball cap next to ${CAR} with two little grandchildren in the back seat.`) }),
+  S(43, "the poor woman couldn't get out of the car", "bi", "b_neighbor", { p: BI(`An older woman sitting in the back seat of ${CAR}, pulling the door handle and laughing in disbelief, the door shut.`) }),
+  S(43, "They both thought the door was broken", "av", ""),
+  C(44, "", "ClCheck", { title: "Child lock", items: ["Little ones ride: ON", "Adults ride: OFF", "Tip of the key · 2 seconds"], fast: true }),
+  S(45, "", "bi", "b_windowlock", { p: BI(`Close view of the driver's door armrest switches of ${CAR}: four window switches and a separate window lock button with a crossed-window pictogram.`) }),
+  S(45, "before you pay anybody to fix a window motor", "bi", "st_windowrepair", { q: "car window repair mechanic door panel", p: BI("A mechanic with a car door panel removed, working on a window regulator.") }),
+  // ── #8 el empañado
+  C(46, "", "ClFeatureTag", { n: 8, title: "Fog inside the glass", note: "the AC trick" }),
+  S(47, "", "bi", "st_rainwindshield", { q: "rain on windshield wipers", p: BI("Rain on a car windshield, the wipers moving, seen from inside the car.") }),
+  S(47, "the windshield fogs up from the inside", "kf", "k_fog", { p: BI(`Seen from the driver's seat of ${CAR}: the windshield fogged up from the inside on a rainy day, a hand wiping it with a sleeve.`), d1: "the sleeve wipes across the foggy glass", d2: "the glass is left smeared and still foggy", sound: "rain on the roof" }),
+  S(48, "", "bi", "b_acbutton", { p: BI(`Close view of the climate control panel of ${DASH}: a finger pressing the A/C button, its little light coming on.`) }),
+  S(48, "turn off recirculation", "bi", "b_recirc", { p: BI(`Close view of a car climate panel, a finger pressing the recirculation button with the curved-arrow car icon so its light turns off.`) }),
+  S(48, "Put the fan on the windshield", "kf", "k_defog", { p: BI(`Seen from the driver's seat of a car on a rainy day: the fogged windshield clearing from the bottom up as the defrost fan blows.`), d1: "the fog on the windshield starts to shrink at the bottom", d2: "the windshield is almost clear", sound: "a car fan blowing" }),
+  S(49, "", "bi", "b_wipeglass", { p: BI(`${H} wiping the inside of a car windshield with a clean microfiber cloth.`) }),
+  S(50, "", "bi", "b_defrostbtn", { p: BI(`Close view of a car dashboard button with a rectangle and three wavy arrows, its amber light on.`) }),
+  S(50, "heats the side mirrors", "bi", "st_frostmirror", { q: "frost car side mirror winter", p: BI("A car side mirror covered in frost on a winter morning, the frost melting in the middle.") }),
+  S(50, "scraping her mirrors with a credit card", "bi", "b_creditcard", { p: BI(`An older woman's gloved hand scraping frost off a car side mirror with a credit card, cold morning.`) }),
+  // ── #7 la etiqueta de presión
+  C(51, "", "ClFeatureTag", { n: 7, title: "The number on your door", note: "not the tire" }),
+  S(52, "", "bi", "b_doorsticker", { p: BI(`Close view of the driver's door frame of ${CAR}: a white tire and loading information sticker with a small tire diagram, the text unreadable.`) }),
+  S(52, "Not the number on the side of the tire", "bi", "st_tiresidewall", { q: "tire sidewall close up", p: BI("Extreme close view of the raised lettering on a car tire sidewall.") }),
+  C(52, "That one is the maximum", "ClDoDont", { yes: { label: "Door sticker", img: I + "b_doorsticker.jpg" }, no: { label: "Tire sidewall = MAX", img: I + "st_tiresidewall.jpg" } }),
+  S(53, "", "bi", "st_tiregauge", { q: "checking tire pressure gauge", p: BI(`${H} pressing a pencil tire pressure gauge onto the valve of ${CAR}'s front tire in a driveway.`) }),
+  S(53, "burns more gas", "bi", "st_lowtire", { q: "low tire pressure car", p: BI("A visibly underinflated car tire bulging at the bottom on a driveway.") }),
+  S(53, "Doris's tires were eight pounds low", "cl", "c_tires", { p: CLP(`Claudio crouching next to the front tire of ${CAR} in ${DRIVE}, reading a pencil tire gauge, raising his eyebrows at the camera.`), ov: { c: "ClStampOv", props: { text: "8 PSI LOW · ALL FOUR" } } }),
+  S(54, "", "bi", "st_airmachine", { q: "gas station air pump tire", p: BI("A coin-operated air machine at a gas station, the hose connected to a car's tire.") }),
+  S(54, "Those machines are often off", "av", ""),
+  S(54, "A pencil gauge costs five dollars", "bi", "b_pencilgauge", { p: BI(`A cheap metal pencil tire pressure gauge lying in the open glove box of ${CAR}.`) }),
+  S(55, "", "av", ""),
+  C(55, "is on page nine of the Glovebox Manual", "ClBookPage", { page: I + "page9.jpg", pageNo: 9, stamp: "The walk-around, on page 9" }),
+  // ── #6 la llave de las tuercas
+  C(56, "", "ClFeatureTag", { n: 6, title: "The wheel lock key", note: "find it today" }),
+  S(57, "", "bi", "b_wheellock", { p: BI(`Close view of a car alloy wheel of ${CAR}: four regular lug nuts and one chrome wheel lock nut with a swirling pattern.`) }),
+  S(57, "a little socket with a pattern", "bi", "b_lockkey", { p: BI(`A chrome wheel lock key socket with a swirl pattern inside, held between ${H.replace("a mechanic's ", "")} fingers.`) }),
+  S(58, "", "bi", "st_flathighway", { q: "flat tire highway shoulder", p: BI("A car pulled over on a highway shoulder with a flat rear tire, hazard lights on.") }),
+  S(58, "Not you, not the tow truck guy", "bi", "st_towtruck", { q: "tow truck roadside", p: BI("A tow truck driver kneeling at the wheel of a car on the roadside, shaking his head.") }),
+  S(59, "", "bi", "b_trunkfloor", { p: BI(`The trunk of ${CAR} with the floor lifted: the spare tire, the jack and a small cloth bag tucked into the well.`) }),
+  S(59, "Doris's was in a little bag in the spare tire well", "kf", "k_lockbag", { p: BI(`Close view of a hand pulling a small cloth bag out of a car's spare tire well and tipping a chrome wheel lock key into the palm.`), d1: "the hand pulls the little bag out", d2: "the chrome key falls into the palm", sound: "a small metal clink" }),
+  S(59, "Now she knows", "av", ""),
+  S(60, "", "bi", "b_lockcard", { p: BI(`A small card with a printed code number and a blank logo lying next to a chrome wheel lock key on a car seat.`) }),
+  S(60, "not with a flat on the highway", "av", ""),
+  // ── #5 el auxilio
+  C(61, "", "ClFeatureTag", { n: 5, title: "The tire you never check", note: "the spare" }),
+  S(62, "", "bi", "st_sparetire", { q: "spare tire trunk jack", p: BI(`The open trunk of ${CAR} with the floor lifted, a compact spare tire, a scissor jack and a lug wrench.`) }),
+  S(62, "When was the last time", "av", ""),
+  S(63, "", "cl", "c_spare", { p: CLP(`Claudio kneeling at the open trunk of ${CAR} in ${DRIVE}, pressing a tire gauge onto the valve of the compact spare tire, frowning at the reading.`), ov: { c: "ClStampOv", props: { text: "SPARE: 11 PSI" } } }),
+  S(63, "A spare loses air just sitting there", "bi", "b_sparepsi", { p: BI(`Close view of the sidewall of a compact spare tire with molded pressure lettering, unreadable, a tire gauge resting on it.`) }),
+  C(63, "Check it twice a year", "ClCheck", { title: "The spare", items: ["Check it twice a year", "Pressure on the spare itself", "Know where the jack is"], fast: true }),
+  S(64, "", "bi", "b_jackout", { p: BI(`${H} lifting a scissor jack out of the trunk of ${CAR} in a sunny driveway.`) }),
+  S(64, "Not for the first time on the side of a highway at night", "bi", "st_nightroadside", { q: "car broken down roadside night", p: BI("A car with hazard lights on, stopped on a dark highway shoulder at night.") }),
+];
