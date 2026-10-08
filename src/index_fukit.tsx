@@ -3,8 +3,11 @@ import React from "react";
 import { registerRoot, Composition, AbsoluteFill, Sequence } from "remotion";
 import { ClHidden50, ClFridgeBack, ClPeroxide, ClTrailMap } from "./claudio/ClFumigador";
 import { ClChapter, ClCheck } from "./claudio/ClCards";
-const B = "ref_fuagua.png";
+import { ClDoorGap, ClBarrierLine, ClPerimeter30 } from "./claudio/ClPuerta";
+const B = "ref_fu30.png";
 const K: [React.FC<any>, any][] = [
+  [ClDoorGap, { mode: "light", bed: B }], [ClDoorGap, { mode: "sealed", bed: B }], [ClBarrierLine, { mode: "line", bed: B }], [ClBarrierLine, { mode: "herbs", bed: B }],
+  [ClBarrierLine, { mode: "dog", bed: B }], [ClPerimeter30, { mode: "bridges", bed: B }], [ClPerimeter30, { mode: "clean", bed: B }],
   [ClHidden50, { hidden: 50, bed: B }], [ClFridgeBack, { mode: "find", bed: B }], [ClFridgeBack, { mode: "fixed", bed: B }], [ClPeroxide, { mode: "contact", bed: B }],
   [ClPeroxide, { mode: "gone", bed: B }], [ClTrailMap, { mode: "trail", bed: B }], [ClTrailMap, { mode: "erase", bed: B }], [ClTrailMap, { mode: "bait", bed: B }],
   [ClChapter, { n: 1, title: "La casa de los Ramírez", sub: "dos fumigaciones perdidas", bed: B }], [ClCheck, { title: "La botella", items: ["500 ml de agua oxigenada", "1 gota de detergente"], bed: B }],

@@ -1,0 +1,25 @@
+// DIRECTOR D — fu30: ventanas de avatar extra (2ª oración de párrafos largos sin cara) para llegar a ~25 % de avatar visible.
+import { S } from "../claudio/lib.mjs";
+export const SHOTS = [
+  S(9, "ya había probado de todo", "av", ""),
+  S(13, "La puerta tenía, abajo", "av", ""),
+  S(15, "Movimos la leña", "av", ""),
+  S(19, "Ninguna de estas cinco cosas mata", "av", ""),
+  S(21, "No es un muro", "av", ""),
+  S(22, "Tiene un olor fuerte", "av", ""),
+  S(24, "Juntos, los tres olores", "av", ""),
+  S(28, "El veneno mata a la que toca", "av", ""),
+  S(30, "Y de noche salen", "av", ""),
+  S(35, "La prueba es fácil", "av", ""),
+  S(37, "Cada hueco alrededor de un tubo es una puerta", "av", ""),
+  S(42, "Paso dos", "av", ""),
+  S(43, "Paso tres", "av", ""),
+  S(49, "Y paso cinco", "av", ""),
+  S(54, "Y la regla de afuera", "av", ""),
+  S(55, "La barrera frena", "av", ""),
+  S(63, "Ésa tiene veneno", "av", ""),
+  S(64, "Los olores ayudan", "av", ""),
+  S(66, "Huele a cocina de abuela", "av", ""),
+  S(67, "Mejor todavía", "av", ""),
+  S(72, "A la semana volví", "av", ""),
+];
