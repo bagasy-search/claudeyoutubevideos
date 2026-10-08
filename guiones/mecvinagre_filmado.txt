@@ -1,0 +1,82 @@
+[HOOK|chorro] Antes de firmar ese presupuesto, mira esto. Un frasco de vinagre de la cocina, de un dólar. Y lo que salió de adentro de un radiador que la agencia quería cambiar.
+[HOOK|aguja] Doña Elena venía de la casa de su hermana, en pleno tráfico, y la aguja de la temperatura empezó a subir. No hasta el rojo, pero más arriba que nunca. Se asustó tanto que paró el auto en una gasolinera y me llamó con la voz temblando.
+[HOOK|presupuesto] En la agencia ya le habían dado un papel: cambiar el radiador. Y abajo, con letra chiquita, una advertencia: si el motor se sigue calentando, hay que pensar en un motor nuevo. Ese papel lo tenía guardado en la carpeta del auto, esperando.
+[HOOK|loop] Lo que encontramos adentro de ese radiador tiene que ver con algo que alguien le hizo al auto hace años, con la mejor intención del mundo. Y casi seguro que en tu casa también lo hicieron. Te lo muestro en un rato.
+[HOOK|promesa] Hoy te enseño el lavado del sistema de enfriamiento con vinagre, pero bien hecho: cuánto, cuánto tiempo, cómo se enjuaga, y la prueba que va antes, porque hay un caso en que ningún lavado te salva. Así salía el agua del radiador de Elena. Y así salió al final.
+[HOOK|cred] Soy Claudio. Treinta y cinco años de mecánico. Y al final te doy las tres pruebas de diez minutos que tienes que hacer antes de llevar tu auto a cualquier taller.
+[HOOK|cap] Primero, la llamada de Doña Elena.
+[ANTES|ep3] Si es la primera vez que me ves: el auto de Doña Elena es el sedán plateado del 2012 de su difunto esposo, Don Ernesto, con doscientos ochenta mil kilómetros. La semana pasada le cambiamos una válvula de siete dólares y se le cortó la mancha de aceite. Te dejo ese video aquí.
+[ANTES|gasolinera] Cuando llegué a la gasolinera, el auto estaba apagado y ella, parada al lado con el celular en la mano. Lo primero que le dije fue lo más importante de este video: no toques la tapa del radiador.
+[ANTES|tapa] Con el motor caliente, el líquido de adentro está a más de cien grados y a presión. Si abres la tapa, sale disparado como una olla a presión. Cada verano llega gente al hospital por eso. Con el motor caliente, la tapa no se toca. Se espera.
+[ANTES|espera] Esperamos casi una hora, con un café de la máquina. En la agencia le habían dicho que el radiador no tenía arreglo, y el cambio costaba más de lo que ella cobra en un mes.
+[ANTES|frio] Con el motor ya frío, abrí el depósito, ese recipiente de plástico al costado del radiador. El líquido no era verde, ni rosa, ni naranja. Era marrón, como café aguado. Y en las paredes, una costra blanca y dura, como la de una tetera vieja.
+[ANTES|sarro] Esa costra se llama sarro. Es la misma de la regadera de la ducha. Viene del agua de la llave, que trae minerales: cuando se calienta una y otra vez, se pegan a las paredes y forman una capa.
+[ANTES|radiador] Y el radiador por dentro es un montón de tubitos más finos que un lápiz. Cuando el sarro los tapa, el líquido no pasa, el motor no se enfría, y la aguja sube. Sobre todo en el tráfico, cuando no entra aire de frente.
+[CAP|prueba] Lo primero: la prueba que nadie hace.
+[PRUEBA0|porque] Antes de lavar nada, hay que descartar lo peor. Un motor que se calienta puede tener el radiador tapado, que es barato. O la junta de la tapa de cilindros quemada, que es cara. Y si es la junta, el vinagre no sirve de nada.
+[PRUEBA0|burbujas] La prueba es ésta. Con el motor frío, abres el depósito y arrancas. Unas pocas burbujas al principio que después paran, es normal: aire atrapado. Si siguen y siguen, sin parar, como un vaso de soda, es mala señal.
+[PRUEBA0|humo] Segunda señal: el escape. Un poco de vapor en una mañana fría es normal. Pero humo blanco espeso, que no se va con el motor caliente y huele dulce, es refrigerante quemándose adentro del motor.
+[PRUEBA0|varilla] Y la tercera, la del video anterior: la varilla del aceite. Si el aceite sale color café con leche, como un batido, el refrigerante se está mezclando con el aceite.
+[PRUEBA0|taller] Si ves cualquiera de esas tres cosas, no laves nada: al taller, que revisen la junta. Lo mismo si la bomba de agua gotea o si el ventilador del radiador no prende nunca.
+[PRUEBA0|elena] En el auto de Elena: unas burbujas al principio, que pararon enseguida. Ni humo blanco, ni olor dulce. El aceite, ámbar y limpio. El ventilador prendía. Era sarro. Y el sarro sí tiene arreglo.
+[CAP|mostrador] Lo que tienes que pedir.
+[MOSTRADOR|frase] En la refaccionaria pides esto: un galón de vinagre blanco, dos galones de agua destilada y el refrigerante que pide tu auto, del mismo color que el que tiene. En el Manual del Mecánico te dejé esa frase exacta, para que la lleves anotada. Agua destilada, no de la llave: si no, vuelves a meter los mismos minerales.
+[MOSTRADOR|color] Y el refrigerante, del mismo tipo que trae tu auto. Lo dice el manual, o te lo dicen en la refaccionaria con la marca, el modelo y el año. Los colores no se mezclan: un verde con un naranja pueden formar una pasta que tapa todo otra vez.
+[MOSTRADOR|mas] Además, un recipiente grande para vaciar, guantes y un embudo. Todo junto salió menos que una cena para dos.
+[CAP|culpable] Ahora, de dónde salió ese sarro.
+[CULPA|libreta] Abrimos la libreta azul de Don Ernesto, la que encontramos en la guantera. Y ahí estaba. Él había cambiado el refrigerante cada dos años, siempre el mismo, el verde. La última vez, siete años atrás.
+[CULPA|sobrino] Y Elena se acordó. Después de que él falleció, cada vez que el depósito bajaba, su sobrino le ponía agua. De la manguera del jardín. Con todo el cariño del mundo, para ayudarla. Durante años.
+[CULPA|nadie] Y no es culpa del sobrino. Es lo que hace casi todo el mundo, porque alguna vez alguien le dijo que era lo mismo. No es lo mismo.
+[CULPA|refri] El refrigerante hace dos trabajos: que el líquido no hierva ni se congele, y que el metal de adentro no se oxide. El agua de la llave no hace ninguna de las dos cosas. Y además deja minerales.
+[CULPA|regla] Por eso, la regla número uno de hoy: al radiador, nunca agua de la llave. Si te quedas sin refrigerante en la ruta, un poco de agua te saca del apuro. Pero después se vacía y se pone el correcto.
+[CAP|vinagre] Por qué funciona el vinagre.
+[VIN|quimica] El vinagre blanco es un ácido suave, y el sarro es básicamente piedra caliza. El ácido la disuelve. Es lo que pasa cuando dejas la regadera una noche en una bolsa con vinagre: a la mañana sale limpia.
+[VIN|aluminio] Pero aquí está la trampa que nadie te explica. El vinagre también ataca el aluminio, y muchos radiadores y piezas del motor son de aluminio. Si lo dejas mucho tiempo, lo pones puro o no enjuagas, el mismo vinagre que limpió el sarro empieza a comerse el metal.
+[VIN|internet] Por eso en internet unos dicen que es un milagro y otros que destruye el motor. Las dos cosas pueden ser verdad. Diluido, un rato corto y bien enjuagado, funciona. Puro y por días, hace daño.
+[VIN|nuevo] Y un aviso honesto. Si tu auto es muy nuevo, o si el manual del auto dice que no se hagan lavados del sistema, no uses vinagre. Usa el limpiador de radiador que venden en la refaccionaria, que es más suave, o pide el servicio en el taller.
+[CAP|paso] El lavado, paso por paso.
+[PASO|frio] Paso uno, y no me cansaré de repetirlo: siempre con el motor frío, apagado varias horas. Lo ideal es a la mañana. Si apoyas la mano en el capó y está tibio, todavía no.
+[PASO|vaciar] Pones el recipiente debajo del radiador. Abajo, a un costado, hay un tapón de plástico que se desenrosca con la mano; si no lo tiene, se suelta la manguera de abajo. Y dejas salir todo el líquido viejo.
+[PASO|marron] El de Elena salió marrón oscuro, con pedacitos blancos flotando. Ella lo miró y dijo: esto es lo que tenía mi auto en las venas.
+[PASO|toxico] Y el refrigerante viejo no se tira a la tierra ni a la alcantarilla. Es tóxico y tiene gusto dulce, y los perros se lo toman. En botellas cerradas, al taller o al reciclaje. Casi todos te lo reciben gratis.
+[PASO|mezcla] Paso dos: la mezcla. Una parte de vinagre blanco por cuatro de agua destilada. Un litro de vinagre y cuatro de agua. Nunca vinagre puro. Cierras el tapón y llenas despacio, con el embudo.
+[PASO|andar] Paso tres: arrancas y pones la calefacción al máximo, con el ventilador al máximo. Adentro del tablero hay otro radiador chiquito que calienta el aire, y la mezcla tiene que pasar también por ahí.
+[PASO|tiempo] Y lo dejas andar quince a veinte minutos, mirando la aguja. Nunca más de una hora. Y nunca dejes la mezcla adentro días, ni manejes con ella. Ése es el error que rompe radiadores.
+[PASO|enfriar] Paso cuatro: apagas, esperas que se enfríe del todo, y vacías. Aquí viene lo lindo.
+[MANUAL|pagina] La mezcla exacta, los tiempos de cada paso y qué hacer si algo sale distinto están en la página doce del Manual del Mecánico. Con una tablita para que anotes cuánto líquido le entra a tu radiador.
+[CAP|adentro] Lo que salió del radiador.
+[ADENTRO|frasco] Pusimos un frasco de vidrio debajo del tapón, para ver. Salió un líquido color té, con escamas blancas, y en el fondo una arenilla gris. El sarro de siete años, despegado de los tubitos.
+[ADENTRO|elena] Elena levantó el frasco contra la luz y se quedó callada. Después dijo: y yo pensando que el auto estaba viejo.
+[ADENTRO|tapa] Y el depósito, el de la costra blanca, quedó casi transparente. Con un cepillo de mango largo sacamos lo que quedaba pegado.
+[CAP|enjuague] El enjuague, que es lo más importante.
+[ENJ|uno] Paso cinco: llenas sólo con agua destilada, sin nada más. Arrancas, calefacción al máximo, diez minutos. Apagas, esperas que se enfríe, y vacías.
+[ENJ|dos] Paso seis: lo mismo otra vez. Dos enjuagues, no uno. Adentro no puede quedar vinagre: mezclado con el refrigerante nuevo, sigue trabajando contra el metal.
+[ENJ|olor] Para saber si está bien enjuagado, huele el agua del último vaciado. Si todavía huele a vinagre, un tercer enjuague. El de Elena, al segundo, ya salía transparente y sin olor.
+[CAP|final] El refrigerante nuevo y las burbujas.
+[FINAL|llenar] Paso siete: el refrigerante nuevo. Si es listo para usar, va tal cual. Si es concentrado, se mezcla con agua destilada como dice el envase.
+[FINAL|burbujas] Y ahora el truco que muchos no saben. Al vaciar, adentro queda aire atrapado. Y una burbuja de aire en el motor es un hueco donde no llega el líquido: ese punto se recalienta.
+[FINAL|purga] Con el tapón del depósito abierto y el motor frío, arrancas con la calefacción al máximo. Vas a ver subir burbujas. Cuando el nivel baja, completas, hasta que paren. Algunos autos tienen un tornillito de purga arriba del motor.
+[FINAL|marca] Después apagas, tapas, y al día siguiente, en frío, completas hasta la marca. No por encima: el líquido se expande con el calor.
+[FINAL|anota] Y Elena hizo lo de la semana pasada. Sacó la libreta azul, y debajo de su primera línea escribió la segunda. La fecha, los kilómetros, lavado con vinagre, refrigerante verde. Y al costado agregó, con su letra: nunca más agua de la manguera.
+[CAP|errores] Los errores que más veo con el vinagre.
+[ERROR|puro] Uno: poner vinagre puro porque así limpia más. Limpia más rápido el sarro, y también el aluminio.
+[ERROR|dias] Dos: dejar la mezcla adentro una semana y manejar así. Quince a veinte minutos, nada más.
+[ERROR|enjuague] Tres: no enjuagar, o enjuagar una sola vez. Dos enjuagues, siempre.
+[ERROR|caliente] Y cinco, el peor: abrir la tapa con el motor caliente porque estás apurado. Ese error no rompe el auto. Te rompe a ti.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|blanco] ¿Sirve cualquier vinagre? El blanco común, el de cinco por ciento, el más barato. Ni de manzana ni de vino, que traen azúcar y color.
+[QA|nuevo] ¿Y si tengo que cambiar el radiador igual? A veces sí, si pierde o está roto por dentro. Pero aunque lo cambies, hay que lavar el resto. Un radiador nuevo con el sarro del motor adentro, en un año está tapado otra vez.
+[QA|cuesta] ¿Y cuánto cuesta todo? El vinagre, uno o dos dólares. El agua destilada, otro poco. Lo más caro es el refrigerante, y ése lo ibas a tener que cambiar igual. Más una mañana de tu tiempo. Contra un radiador nuevo y la mano de obra, no hay comparación.
+[QA|aguja] ¿Dónde tiene que estar la aguja? En casi todos los autos, en el medio y quieta. Si llega al rojo, paras en un lugar seguro, apagas y esperas. Nunca sigas manejando con la aguja en el rojo.
+[RESULTADO|semana] A la semana, Elena hizo el mismo camino de la casa de su hermana, un domingo, con el mismo tráfico. Me mandó una foto del tablero desde un semáforo. La aguja, en el medio. Quieta.
+[RESULTADO|calefaccion] Y algo que no esperaba: me dijo que la calefacción del auto calentaba como nunca. Claro: el radiadorcito del tablero también estaba tapado. Hacía años que en invierno manejaba con el abrigo puesto, y pensaba que era normal en un auto viejo.
+[RESULTADO|papel] El presupuesto del radiador lo sacó de la carpeta y lo guardó en la libreta, como un recuerdo. Gastó en todo menos que la primera hora de mano de obra de la agencia.
+[CAP|pruebas] Y ahora, las tres pruebas que te prometí.
+[PRUEBA|toalla] La primera, la toalla de la noche. En un lugar plano, un cartón debajo del motor antes de dormir. A la mañana miras. Agua sin olor, del lado del acompañante, es el aire acondicionado. Marrón o negro, es aceite. Y verde, rosa o naranja con olor dulce, es refrigerante: tu sistema pierde.
+[PRUEBA|faros] La segunda, los faros. Con el auto apagado, prendes los faros contra una pared y arrancas. Si se apagan casi del todo y el motor gira lento, es la batería. Si sólo parpadean con el motor andando, es otra cosa.
+[PRUEBA|tablero] Y la tercera, el tablero. Arrancas y miras qué luces quedan prendidas, y de qué color. Rojo es parar. Amarillo es revisar pronto. Y la aguja de la temperatura, que hoy aprendiste a leer, también es parte del tablero.
+[CTA3|regalo] Te dejé las tres pruebas completas, con lo que significa cada color y cada resultado, en una hoja gratis que se llama Antes del Taller, las tres pruebas de Claudio. Apunta el celular a este código, o toca el link de la descripción. Y si quieres todos los trucos del taller, el Manual del Mecánico está en esa misma página, a veintisiete dólares.
+[NEXT|nieta] Ah, y una cosa más. El sábado Elena me llamó riéndose y preocupada a la vez. Su nieta había visto en internet que el aceite de bebé deja el auto como recién salido de la agencia. Y le pasó aceite de bebé a todo. Los faros, el tablero, el volante, los pedales.
+[NEXT|gancho] Algunas de esas cosas están bien. Otras son peligrosas de verdad. La semana que viene te muestro los trece usos del aceite de bebé en el auto: dónde sí sirve, y dónde te puede costar un susto en una esquina. Y lo que pasó cuando Elena pisó el freno.
+[CLOSE|pregunta] Y ahora cuéntame tú. ¿Alguna vez alguien le puso agua de la llave a tu radiador? ¿Y de qué color es el líquido de tu depósito hoy? Escríbemelo en los comentarios. Leo todos.
+[CLOSE|chau] Motor frío, vinagre diluido, dos enjuagues, y nunca más agua de la manguera. Nos vemos la semana que viene.
