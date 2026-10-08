@@ -1,0 +1,73 @@
+[HOOK|cara] En Japón, este frasco no está en el botiquín. Está en la cocina. Y tú lo tienes escondido detrás de las curitas.
+[HOOK|sato] En mi primer mes en el hotel, me tocó limpiar la cocina del personal. Encontré una tabla de cortar llena de manchas y la tiré a la basura. Sato-san la sacó del basurero delante de todos los cocineros, la apoyó en la mesa de acero, y fue a buscar un frasco marrón. Y lo que me dijo mientras la tabla hacía espuma, todavía lo repito.
+[HOOK|frasco] Es el agua oxigenada. La misma que compraste para un raspón hace dos años, y que sigue casi llena, al fondo del mueble del baño.
+[HOOK|promesa] Hoy te traigo dieciséis usos que en Japón le dan a ese frasco, casi todos en la cocina. Y la número siete es la que casi todos hacemos mal: la usamos, pero no le damos tiempo de trabajar.
+[HOOK|cred] Soy Claudio. Quince años de conserje en un hotel de Tokio, donde el frasco marrón estaba en todos los carritos de limpieza. Y al final te dejo el test de cinco minutos para saber a qué huele tu casa.
+[REF|casa] Si viste el video de las once cosas que hacen que tu casa huela a viejo, te va a servir para casi todas. Hoy el frasco hace el trabajo.
+[HOOK|que] Primero, qué es. El agua oxigenada es agua con un poco más de oxígeno. Ese oxígeno de más es el que trabaja: rompe lo que toca, y cuando termina, queda agua y un poco de aire. No deja olor, no deja perfume, no deja nada pegajoso.
+[HOOK|cap] Y una cosa antes de empezar: la del botiquín es al tres por ciento, la de diez volúmenes. Es la única que vas a usar hoy. Empezamos por la cocina.
+[R1|sato] Número uno: los paños de cocina. En la cocina del hotel, los paños empezaban blancos y a los meses estaban color té. Sato-san los ponía en remojo una vez por semana, en una palangana, y volvían blancos.
+[R1|por] Ese olor que tiene el paño aunque esté recién lavado no es mugre de arriba: es lo que vive adentro de las fibras. Y el detergente solo no llega.
+[R1|regla] La regla: media taza de agua oxigenada en el fregadero con agua caliente, los paños adentro, una hora, y después se lavan como siempre. Vuelven blancos, y el olor se va con el color.
+[R2|sato] Número dos: una mancha de sangre en la ropa. Un corte pelando papas, una gota en el delantal. En el hotel esto pasaba todas las semanas, y Sato-san tenía una sola regla: agua fría, nunca caliente.
+[R2|por] El agua caliente cocina la mancha y la fija en la tela para siempre. Primero, chorro de agua fría. Después, agua oxigenada directo sobre la mancha, y vas a ver que hace espuma. Esa espuma es la mancha saliendo.
+[R2|regla] La regla: agua fría, agua oxigenada, esperar a que deje de hacer espuma, y a lavar. Y en la ropa oscura, prueba antes en un rincón que no se vea, porque también aclara el color.
+[R3|sato] Número tres: el amarillo de las axilas y del cuello de las camisas blancas. En el verano de Tokio, con esa humedad, una camisa blanca se pone amarilla en pocas semanas. Las del uniforme del hotel duraban años.
+[R3|por] Ese amarillo no es suciedad: es el sudor que se mezcla con el desodorante y se pega a la tela. Por eso refregar no sirve.
+[R3|regla] La regla: una pasta de agua oxigenada con una cucharada de bicarbonato, sobre la mancha, media hora, y si se puede, al sol. Después, a lavar como siempre. Camisas que ya ibas a tirar vuelven al armario.
+[R3|mostrador] Para todo esto casi no hay que comprar nada. En el Método te dejé anotado lo único que hace falta, en la página trece. En la farmacia, pide así: necesito dos frascos de agua oxigenada de diez volúmenes y una botella con atomizador.
+[R3|botella] Y que el atomizador sea opaco, o de los que se enroscan en el mismo frasco. Ya te voy a contar por qué.
+[R4|sato] Número cuatro: los recipientes de plástico manchados. Los de la comida del almuerzo, que quedaron naranjas por dentro con la salsa de tomate. En el comedor del hotel había una pila, y Sato-san los ponía al sol en la ventana.
+[R4|por] La salsa de tomate y el curry no se quedan arriba: el color entra un poco en el plástico. Por eso el detergente no lo saca, por más que frotes.
+[R4|regla] La regla: se llenan con agua oxigenada y una cucharada de bicarbonato, tapa apoyada sin cerrar, y tres o cuatro horas en una ventana con sol. La luz hace la mitad del trabajo. Después se lavan, y vuelven del color que tenían cuando los compraste.
+[R5|sato] Número cinco: la esponja de la cocina. Sato-san decía que la esponja es lo más sucio de la cocina, más que el basurero. Siempre mojada, siempre tibia, siempre con comida.
+[R5|regla] La regla: una vez por semana, diez minutos en un tazón con mitad agua oxigenada y mitad agua. Se enjuaga y se deja parada para que se seque, nunca acostada en el charco del fregadero. Y en el hotel tenían dos: una trabajaba y la otra se secaba.
+[R5|tirar] Y cuando se empieza a desarmar, se tira. No hay remojo que salve una esponja muerta.
+[R6|sato] Número seis: el fregadero y su desagüe. Levanta la rejilla del desagüe y mira abajo. Esa capa que ves ahí es la que da el olor, y el agua del grifo no la mueve.
+[R6|regla] La regla: media taza de agua oxigenada por el desagüe, treinta minutos, y después agua caliente fuerte un minuto entero. La rejilla, mientras tanto, en un tazón con agua oxigenada. Una vez por mes, porque esa capa vuelve.
+[R6|plomero] Y si el olor vuelve a los dos días cada vez, el problema está más abajo, en el sifón. Ahí ya es trabajo de plomero, no del frasco.
+[R7|intro] Y ahora sí, la número siete. La que casi todos hacemos mal.
+[R7|sato] El día de la tabla de cortar, Sato-san la lavó primero con agua y jabón. Recién ahí le echó el agua oxigenada. Y se quedó parada al lado, mirando el reloj, sin tocarla. Yo no entendía qué estaba esperando.
+[R7|por] La tabla después de cortar pollo. Casi todos hacemos esto: rociamos, pasamos el paño, y listo. Y así el agua oxigenada no alcanza a hacer nada. Necesita tiempo mojando la superficie. Y no es jabón: no saca la grasa. Sobre una tabla sucia, se queda arriba de la grasa y no trabaja.
+[R7|regla] La regla japonesa: primero agua caliente y detergente. Después, agua oxigenada en toda la tabla, que quede mojada, y cinco minutos sin tocarla. Recién ahí se enjuaga. Y la tabla se seca parada, no acostada.
+[R7|madera] Si la tabla es de madera, no la dejes en remojo en el fregadero, porque se hincha y se raja. Se le echa encima, se espera y se enjuaga.
+[R7|rutina] Y esto vale para los dieciséis: rocía, y vete a hacer otra cosa. Casi todas las quejas de que el agua oxigenada no sirve son quejas de apuro.
+[R8|sato] Número ocho: las rejillas de la estufa. Las de hierro, donde se apoyan las ollas, con la grasa quemada de meses. En la cocina del hotel se limpiaban con una pasta, no a fuerza de brazo.
+[R8|regla] La regla: bicarbonato espolvoreado encima, agua oxigenada hasta que se forme una pasta, y una hora. Si está muy mal, toda la noche. Al otro día, lo que iba a ser refregar se vuelve pasar un paño. Y si tiene mucha grasa, primero detergente, después la pasta.
+[R8|rutina] La rutina completa, con los tiempos de cada uno de los dieciséis usos, está en la página trece del Método Japonés de Claudio. Te la dejé anotada para que la pegues adentro del mueble de la cocina.
+[R9|sato] Número nueve: la goma de la puerta del refrigerador. Abre la puerta y pasa un dedo por los pliegues de esa goma. Esos puntitos negros son moho, en la parte que toca la puerta cada vez que la abres.
+[R9|regla] La regla: agua oxigenada en un paño, metido bien en los pliegues, un par de minutos, y se limpia. No deja olor, y eso importa al lado de la comida. Después se seca con una toalla, porque si queda húmeda, el moho vuelve.
+[R9|estantes] Y los estantes, lo mismo: con el refrigerador vacío, se rocían, se espera un poco, y se secan.
+[R10|sato] Número diez: el basurero. Como te conté en el video anterior, el balde de abajo casi nunca se lava. En Tokio la basura que se quema se recoge dos veces por semana, y Sato-san no dejaba que un basurero oliera ni un día.
+[R10|regla] La regla: se saca la bolsa, se enjuaga, se rocía todo por dentro con agua oxigenada, diez minutos, se enjuaga otra vez y se seca boca abajo al sol. La tapa y el pedal también, que se tocan todo el tiempo y nunca se limpian.
+[R11|sato] Número once: el inodoro. En los baños chiquitos del hotel, Sato-san no quería nada que picara en los ojos. El agua oxigenada no tiene vapores ni color.
+[R11|por] En un baño chiquito y cerrado, lo último que quieres es un producto que te haga llorar los ojos mientras limpias de rodillas.
+[R11|regla] La regla: una taza en la taza del inodoro, veinte o treinta minutos, cepillo y descarga. Para el asiento y la manija, en un paño, no rociado al aire. Y si tienes uno de esos asientos con botones, lejos del panel y del chorrito.
+[R12|sato] Número doce: los cepillos de dientes. En el cuarto del personal, cada uno tenía su vaso. Sato-san no dejaba que los cepillos estuvieran todos juntos en uno.
+[R12|regla] La regla: un vaso chico con agua oxigenada que cubra las cerdas, cinco minutos, y se enjuagan muy bien bajo el grifo antes de usarlos. Y el vaso donde viven, también se lava, porque el agua que se junta en el fondo es lo peor.
+[R12|cambiar] Y si el cepillo ya está abierto y gastado, no hay remojo que lo arregle: se cambia.
+[R13|sato] Número trece: las macetas con la tierra demasiado mojada. Sato-san tenía plantas en la ventana del depósito, y cuando una se ponía triste, le daba agua con un chorrito del frasco marrón.
+[R13|regla] La regla: una cucharada de agua oxigenada en un litro de agua, para regar la planta cuya tierra huele agria y no se seca. El oxígeno de más le llega a la raíz. A la tierra, nunca a las hojas. Y se prepara cada vez, porque mezclada y a la luz, en unos días es agua.
+[R13|ojo] Y si la planta sigue triste después de dos semanas, el problema casi siempre es la maceta sin agujero, no la tierra.
+[R14|sato] Número catorce: la lavadora. Si viste el video anterior, ya sabes lo que vive en la goma de la puerta. En Japón, una vez por mes, la lavadora hace un remojo de oxígeno.
+[R14|regla] La regla: una vez por mes, un lavado vacío con agua caliente y un blanqueador con oxígeno, o una taza de agua oxigenada en el tambor. Y la goma, con un paño mojado en agua oxigenada, por adentro del pliegue.
+[R15|sato] Número quince: la tapa de la bañera y las cosas del baño de plástico. En las casas japonesas, la tapa de la bañera, los banquitos y los baldes del baño van a remojo con oxígeno cada tanto. Sato-san lo hacía con los baldes del hotel.
+[R15|por] Esa línea rosada en los bordes de la tapa y de los banquitos es humedad que nunca se secó del todo, mezclada con jabón.
+[R15|regla] La regla: en un balde con agua tibia y un chorro de agua oxigenada, una hora, y se enjuaga. Los bordes rosados y grises salen solos.
+[R16|sato] Número dieciséis, la última: las juntas grises del baño. En Japón, el moho del baño tiene nombre propio y un pasillo entero en el supermercado. Sato-san lo combatía con lo mismo de siempre.
+[R16|regla] La regla: una pasta de bicarbonato con agua oxigenada, con un cepillo de dientes viejo sobre las juntas, diez minutos, cepillar suave y enjuagar. Las líneas blancas vuelven a ser blancas. Y después, ventana abierta o extractor una hora.
+[R16|techo] Para el techo y las esquinas de arriba, en un paño en la punta de un palo de escoba, nunca rociado por encima de la cabeza. En los ojos es muy molesto.
+[SEG|intro] Ahora, la seguridad. Y esta parte escúchala entera, porque hay una cosa que circula por internet que te puede hacer daño.
+[SEG|vinagre] Primero: nunca mezcles agua oxigenada con vinagre en la misma botella. Ni en un tazón, ni en el fregadero. Juntos forman un ácido que irrita los ojos y los pulmones. Si quieres usar los dos, uno, enjuagas, y después el otro.
+[SEG|cloro] Segundo: el cloro no se mezcla con nada. Ni con el agua oxigenada, ni con nada del pasillo de limpieza. El agua oxigenada se usa sola.
+[SEG|tomar] Tercero: es sólo para limpiar. Nunca se toma, y se guarda lejos de los chicos.
+[SEG|luz] Cuarto: la luz la arruina. Por eso el frasco es marrón. Si la pasas a una botella transparente, en dos semanas es agua. Atomizador opaco o que se enrosque en el frasco, y el frasco cerrado, fresco y a oscuras.
+[SEG|tres] Y quinto: la de la farmacia es al tres por ciento, diez volúmenes. Si ves una más fuerte, de treinta o de cuarenta volúmenes, no es para la casa. Prueba siempre en un rincón en telas de color, y nunca en mármol ni en piedra natural.
+[PATRON|todo] Fíjate que los dieciséis usos tienen dos cosas en común. El frasco trabaja solo, y necesita tiempo. No es magia ni es jabón: es oxígeno, mojando, unos minutos.
+[PATRON|sato] Y Sato-san lo decía así: el frasco marrón hace el trabajo de diez botellas.
+[RECAP|todo] Los dieciséis, rápido. Paños, sangre, axilas, recipientes, esponja, desagüe, la tabla de cortar, la estufa, la goma del refrigerador, el basurero, el inodoro, los cepillos, las plantas, la lavadora, la tapa de la bañera y las juntas. Un frasco que cuesta menos que un café.
+[CTA3|regalo] Y te prometí el test. Se llama: ¿A qué huele tu casa? El test japonés de cinco minutos. Son tres pruebas: la almohada, la toalla y la puerta cerrada. Te dicen de dónde viene el olor antes de que compres nada. Es gratis: apunta el celular a este código, o toca el link de la descripción. Y si quieres todas las reglas con el paso a paso, el Método Japonés de Claudio está en esa misma página, a veintisiete dólares.
+[NEXT|sato] Ah, y lo que me dijo Sato-san aquel día, con la tabla haciendo espuma en la mesa. Me dijo: Claudio-san, no tires lo que todavía se puede limpiar. Lo que hay que tirar es la prisa.
+[NEXT|gancho] Y hay un cuarto de la casa donde guardamos productos que en Japón ya no se usan, y que respiramos todos los días con la puerta cerrada. En el próximo video, los doce productos del baño que los japoneses reemplazaron.
+[CLOSE|pregunta] Y ahora cuéntame tú. ¿Para qué usabas el frasco marrón hasta hoy? Escríbemelo en los comentarios. Leo todos.
+[CLOSE|chau] Sato-san siempre decía: lo limpio no huele a nada. Nos vemos en el próximo video.
