@@ -152,20 +152,10 @@
  "b015": {
   "file": "b015_t1.wav",
   "gap": 0,
-  "ratio": 0.988,
-  "dur": 53.72,
-  "esperado": 59.93,
-  "cps": 15.62,
-  "ok": true,
-  "intentos": 1
- },
- "b016": {
-  "file": "b016_t1.wav",
-  "gap": 0,
-  "ratio": 1.0,
-  "dur": 2.0,
-  "esperado": 2.14,
-  "cps": 15.02,
+  "ratio": 0.987,
+  "dur": 52.77,
+  "esperado": 58.93,
+  "cps": 15.63,
   "ok": true,
   "intentos": 1
  }
