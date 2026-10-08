@@ -1,30 +1,22 @@
-# HANDOFF — fuagua (Claudio el Fumigador #1 · serie "La casa de los Ramírez" ep. 1: el frasco de agua oxigenada)
-Estado: ✅ ENTREGADO 8-oct (job 784, tarjeta plan-own-1791387464226-0 del row 305 → "Video listo · subir", sin YouTube).
-mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fuagua/fuagua.mp4?v=1 (15:15, 27.469 cuadros). Auditor: min1 33 cortes / 0 silencios, negro 0, congelados 0.
+# HANDOFF — fu30 (Claudio el Fumigador #2 · serie "La casa de los Ramírez" ep. 2: la barrera de la puerta)
+Estado: EN CURSO (ver abajo). Rama `fu30-render`, sale de `fuagua-render` (misma cadena; ver su HANDOFF en git: `git show fuagua-render:HANDOFF.md`).
 
-## Cadena = la del Albañil (almoho-render → … → alolor-render) adaptada al FUMIGADOR en ESTA rama (fuagua-render). fu30 y furatas salen de acá.
-- lib.mjs: WHO = camisa caqui de dos bolsillos + anteojos de seguridad en la frente · HOUSE = cocina de los Ramírez (azulejo blanco con guarda
-  azul, granito gris moteado, muebles de madera, refrigerador blanco viejo con dibujos, plato de Bruno) · LUCIA, JORGE, KIDS (Sofía 9, Mateo 6), DOG (Bruno, caramelo).
-- avatar: ref `vlog/fuagua/mk_ref.mjs` (claudio_hd + caqui + anteojos, en la cocina) → `public/ref_fuagua.png` (copia en
-  Downloads/plan_red_claudio/ref_ramirez_cocina.png); cara `public/ref_<slug>_face.png` = plan_red_claudio/face.png. Video N: copiar ambas como ref_<slug>*.png.
-- Marca: ClTheme verde fumigador (#2E8B3E del Manual) + caqui; ClChapter = parche bordado (escudo verde con cucaracha tachada); ClCheck "ORDEN DE SERVICIO".
-- Kit nuevo src/claudio/ClFumigador.tsx: ClHidden50 (1 que ves / 50 que no) · ClFridgeBack (find/fixed: agua, croquetas, motor, huevos / cebo en tapita
-  lejos de niños y perro) · ClPeroxide (contact/gone) · ClTrailMap (trail/erase/bait) + `Roach` exportado. Banco de stills: src/index_fukit.tsx.
-- job.mjs/meta.mjs: row 305; meta = 1ª línea regalo /gratis/?src=<slug>-desc · 2ª landing ?src=<slug>. stock.mjs: juez de "pest-control".
-- sound.mjs: linterna, refrigerador que se corre, croquetas, aerosol; cucarachas = papel muy bajo (regla al final); amb nocturno = amb_fridge_hum.
-- Disco: farm con `TAR_DIR` en C y `FARM_NOWAIT=1` (no bajar el crudo: el final lo arma encfin desde chunks-<slug>); `public/med` hay que copiarlo
-  de video2/public/med (el pre-vuelo lo pide).
+## Qué cambia respecto de fuagua
+- Guion `guiones/fu30_filmado.txt` 13.516 car (tú neutro) · Arreglo 2 de fixes.json = pág. 10 del Manual (`public/img/fu30/page10.jpg` de book.pdf).
+- Polaroid del ep. 1 (ClVideoRef th_fuagua, párr. 6) · gancho al ep. 3: bolitas negras + bolsa de croquetas mordida en el garaje → ratones (ClVideoRef th_furatas, `next`).
+- Seguridad: hierbas en el marco ARRIBA (el laurel le cae mal al perro, ClBarrierLine "dog") + cebo de bórax en tapita cerrada (ClCheck) + el ácido bórico del ep. 1 (ClFridgeBack fixed).
+- Kit nuevo `src/claudio/ClPuerta.tsx`: ClDoorGap (light/sealed: la rayita de luz de 1 cm y el burlete) · ClBarrierLine (line/herbs/dog) · ClPerimeter30 (bridges/clean).
+  Registrados en ClMain, BEDABLE (gen_timeline), CMAX (timeline), sound.mjs, banco src/index_fukit.tsx.
 
 ## Números
-- Guion 13.320 car (tú neutro) · voz claudio_definitiva 918 s crudo, 16/16 bloques al 1er intento (14,58 car/s) → 915 s tras comprimir el gancho.
-- Minuto 1: 33 cortes · loop "lo que encontré detrás del refrigerador" pagado a las 4:21 · Manual: mención 1 a las 3:20 (pág. 9, frase del
-  mostrador) · 2 a las 7:50 (ClBookPage pág. 9) · 3 a las 14:13 (QR /r + Manual US$27).
-- Avatar 1 /run 54 ventanas 226 s US$0,25 (37 min en cola+proceso), lag -0,10..0 · avatar 23,4 % · real 26,3 % · agnes 8/12 (2 vertían líquido MARRÓN
-  —el agua oxigenada es transparente—, 1 deformó la ooteca, 1 sin linterna → foto) · mezcla -14,0 LUFS / TP -1,7.
+- Voz 16/16 bloques al 1er intento, 931 s crudo → 927 s tras comprimir el gancho. Modal marcó 4 huecos: los 4 FALSOS (whisper-1).
+- Minuto 1: 33 cortes, toma máx 3,06 s · Manual: mención 1 ~3:33 (frase del mostrador, pág. 10) · 2 ~8:38 (ClBookPage pág. 10) · 3 ~14:06 (QR /r + US$27).
+- avatar 58 ventanas 272 s (1 /run) · real 26,5 % · agnes 7/10 (rechazados k_chalk mano que desaparece, k_droppings salto, k_pipe caño que muta → fotos; b_droppings regenerada).
 
 ## Gotchas
-- ⛔ Stock: el juez aprobó OTRAS familias y OTROS perros (hasta un gato) para los Ramírez/Bruno → con personajes fijos, nada de q: (sólo gpt).
-  3ª ronda de stock de objetos: 2/12 servían. Las camas de cocinas genéricas sí: así se llegó a 25 %.
-- ⛔ ClTimer30 es reloj de MINUTOS: para "21 días" usar ClNotebook. ClNotebook con claves largas parte la fila y pisa el título: claves ≤ 11 car.
-- ⛔ Falsos huecos de Modal (2): confirmados con whisper-1 sobre el tramo antes de regenerar.
-- ⛔ Otra sesión borró los worktrees al* durante este video (disco lleno): commitear + pushear la rama seguido.
+- ⛔ D: se llenó a 34 MB a mitad de imágenes + stock (ENOSPC). gptimg se REANUDA solo (estado de batches), stock salta lo hecho.
+  Liberado: worktree fuagua (pusheado), temporales remotion/gh-artifact >2 h en D:/rtmp/tmp, crudos `_v3/fu30_stock/*.mp4`.
+- ⛔ `D:/Proyectos/sfx_pro` PERDIÓ archivos (otra sesión poda): 14 efectos que usaba sound.mjs ya no existen → remapeados a los que sí
+  (scrub_pad→scrub_floor, fizz_gentle→fizz_tablet_a, stamp_es→stamp_rubber, amb_suburb_backyard→amb_suburb_birds…). Antes del farm:
+  `grep -o '"[a-z]*/[a-z_0-9]*\.flac"' vlog/claudio/sound.mjs | ... [ -f D:/Proyectos/sfx_pro/$f ]`.
+- Stock: juez aprobó otras familias, otro perro, cucaracha de Madagascar → 28 a `_rech`; tomas con Lucía/Jorge/niños/Bruno bloqueadas antes (touch `_rech/<n>.mp4`).
