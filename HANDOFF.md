@@ -1,5 +1,7 @@
 # HANDOFF — fu30 (Claudio el Fumigador #2 · serie "La casa de los Ramírez" ep. 2: la barrera de la puerta)
-Estado: EN CURSO (ver abajo). Rama `fu30-render`, sale de `fuagua-render` (misma cadena; ver su HANDOFF en git: `git show fuagua-render:HANDOFF.md`).
+Estado: ✅ ENTREGADO 8-oct (job 786, tarjeta plan-own-1791387464226-1 → "Video listo · subir", sin YouTube).
+mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fu30/fu30.mp4?v=1 (15:28, 27.850 cuadros). Auditor: min1 31 cortes / 0 silencios, negro 0, congelados 0.
+ Rama `fu30-render`, sale de `fuagua-render` (misma cadena; ver su HANDOFF en git: `git show fuagua-render:HANDOFF.md`).
 
 ## Qué cambia respecto de fuagua
 - Guion `guiones/fu30_filmado.txt` 13.516 car (tú neutro) · Arreglo 2 de fixes.json = pág. 10 del Manual (`public/img/fu30/page10.jpg` de book.pdf).
@@ -20,3 +22,7 @@ Estado: EN CURSO (ver abajo). Rama `fu30-render`, sale de `fuagua-render` (misma
   (scrub_pad→scrub_floor, fizz_gentle→fizz_tablet_a, stamp_es→stamp_rubber, amb_suburb_backyard→amb_suburb_birds…). Antes del farm:
   `grep -o '"[a-z]*/[a-z_0-9]*\.flac"' vlog/claudio/sound.mjs | ... [ -f D:/Proyectos/sfx_pro/$f ]`.
 - Stock: juez aprobó otras familias, otro perro, cucaracha de Madagascar → 28 a `_rech`; tomas con Lucía/Jorge/niños/Bruno bloqueadas antes (touch `_rech/<n>.mp4`).
+- ⛔ encfin falla 'no assets match' si falta `out/<slug>_mix.wav` en el release assets-<slug>: `gh release upload assets-<slug> out/<slug>_mix.wav` y `gh run rerun`.
+- ⛔ push.sh de encfin usa /tmp (= D:/rtmp/tmp): con D lleno, `TMPDIR=C:/Users/bauti/AppData/Local/Temp/encfin`.
+- Congelado 6 s (stock de mosquito quieto) en 12:35 → st_mosquito a foto en timeline.gen.ts + ONLY_CHUNKS=48 (la foto ya estaba en el tar) + encfin de nuevo.
+- ⛔ El canal 305 ya NO es `draft:claudiofumigador`: deliver_card con `https://www.youtube.com/channel/UCQZUY5cP_86-mYvG6FxqS8g`.
