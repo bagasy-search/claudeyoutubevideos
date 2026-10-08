@@ -1,0 +1,71 @@
+[HOOK|cara] Esto lo respiras todos los días, encerrado. Y en un baño japonés no lo vas a encontrar.
+[HOOK|sato] Mi primer día limpiando baños en el hotel de Tokio, entré con un aerosol en cada mano. Sato-san me paró en la puerta, delante de las otras chicas de limpieza, me sacó los dos aerosoles y me dio un solo paño seco. Y lo que me dijo, con los aerosoles en la mano, me dio tanta vergüenza que no se lo conté a nadie en años.
+[HOOK|cuarto] El baño es el cuarto más chico de la casa, el que menos aire tiene, y el que más cerramos. Y ahí adentro guardamos los productos más fuertes, y los usamos con la puerta cerrada.
+[HOOK|promesa] Hoy te traigo los doce productos del baño que usamos todos los días y que los japoneses reemplazaron. Algunos los compraste esta semana. Y la número siete es la que casi todos rompemos, y es la única de la lista que de verdad es peligrosa.
+[HOOK|cred] Soy Claudio. Quince años de conserje en un hotel de Tokio, limpiando baños que tenían que quedar sin olor a nada, ni a limpio. Y al final te dejo el test de cinco minutos para saber a qué huele tu casa.
+[REF|agua] Si viste el video del frasco marrón, el agua oxigenada vuelve hoy, en dos de los doce. Y no se mezcla con nada.
+[HOOK|cap] Empezamos por lo que está enchufado en la pared.
+[R1|sato] Número uno: el aromatizante de enchufe. En los baños del hotel no había ni uno. Sato-san decía que un baño que necesita perfume todo el día está pidiendo aire, no perfume.
+[R1|por] El aparato suelta perfume sin parar, las veinticuatro horas, en el cuarto más chico y más cerrado de la casa. A los dos días tu nariz ya no lo siente, y lo compras más fuerte. Y el olor de abajo sigue ahí, tapado.
+[R1|regla] La regla japonesa: se desenchufa, y el baño se ventila. Quince minutos después de cada ducha, con la puerta cerrada y la ventana abierta, para que el vapor salga por la ventana y no por el resto de la casa.
+[R1|sin] Y si el baño no tiene ventana, el extractor encendido esos mismos quince minutos. El aire que sale se lleva el olor. El perfume sólo lo esconde.
+[R1|prueba] Haz la prueba: desenchufa el aromatizante una semana y ventila después de cada ducha. Al tercer día, el baño huele a nada, que es como tiene que oler.
+[R1|japon] En Japón, en los baños más limpios que vi en mi vida, no había perfume. Había un extractor que no se apagaba nunca y una ventana entreabierta.
+[R2|sato] Número dos: las pastillas del tanque del inodoro. Las que pintan el agua de azul. Cuando le mostré una a Sato-san, la miró, me preguntó qué limpiaba, y yo no supe qué contestarle.
+[R2|por] Esa pastilla pasa meses disuelta adentro del tanque, sobre las gomas y los mecanismos. Algunas manchan la porcelana y otras gastan las piezas, y cuando el tanque empieza a perder agua, nadie piensa en la pastilla. Y el azul no limpia: sólo tapa lo que hay abajo.
+[R2|regla] La regla: se saca la pastilla. Y en su lugar, una pasada rápida al inodoro todos los días, con un paño o con el cepillo, treinta segundos. Así nunca llega la limpieza grande del sábado.
+[R2|japon] En muchos inodoros japoneses, el agua para lavarse las manos cae por arriba del tanque y lo llena con agua limpia. Nadie pone nada adentro.
+[R2|mostrador] Y para este video casi no hay que comprar nada. En el Método te dejé anotado lo único que hace falta, en la página catorce. En la tienda, pide así: necesito un secador de vidrios chico, una cortina de baño de tela lavable y un cepillo de inodoro con base que se seque.
+[R3|sato] Número tres: la cortina de baño de plástico. En el hotel no había cortinas de plástico. Había mamparas, o cortinas de tela que se lavaban cada semana con las toallas.
+[R3|por] La de plástico se queda mojada, pegada a la bañera, y en el borde de abajo aparece una línea negra de moho. Y como no se puede lavar bien, a los meses se tira y se compra otra. Cada vez que abres el paquete de una nueva, ese olor fuerte a plástico lo respiras en la ducha.
+[R3|regla] La regla japonesa: una cortina de tela lavable, que va a la lavadora una vez por mes y se seca al sol. Después de la ducha se deja estirada, nunca arrugada contra la pared, para que se seque.
+[R3|vidrio] Y si tienes mampara de vidrio, el secador de goma después de cada ducha la deja sin manchas de agua y sin esa línea negra en la junta.
+[R4|sato] Número cuatro: la flor de baño de plástico, la esponja de malla que cuelga en la ducha. En el hotel, Sato-san me hizo tirar una que encontré colgada en el baño del personal. Me dijo que una esponja que nunca se seca no limpia: siembra.
+[R4|por] Vive mojada, en el cuarto más húmedo, con restos de jabón en todos los pliegues. Ese olor que tiene no es el jabón. Es lo que crece adentro.
+[R4|regla] La regla: un paño de algodón o una esponja natural, que se cuelga abierta afuera de la ducha para que se seque, y el paño a la lavadora cada semana. Y la de malla, si te quedas con ella, se cambia cada mes, no cada año.
+[R4|japon] En Japón, para lavarse se usa una toallita larga de algodón, que después se escurre y se cuelga estirada. En una hora está seca.
+[R5|sato] Número cinco: el cepillo del inodoro en su vasito. En el hotel, los cepillos no vivían en un vaso con agua. Se enjuagaban y se colgaban, con la cabeza para abajo, hasta que se secaran.
+[R5|por] Abre el vasito del cepillo de tu baño. El agua del fondo lleva semanas ahí, tibia y a oscuras, con lo que soltó el cepillo cada vez. Ése es uno de los olores más fuertes del baño, y está escondido en un vaso cerrado.
+[R5|regla] La regla: un cepillo con una base que deje escurrir y secar. Después de usarlo, se apoya entre la tapa y el asiento unos minutos para que escurra, y recién ahí vuelve a su base. Y la base, se lava cada semana.
+[R5|hotel] En el hotel, cada cepillo tenía su soporte colgado de la pared, y el piso de abajo siempre estaba seco.
+[R6|sato] Número seis: el aerosol para el moho. En el hotel se usaba muy poco. Sato-san decía que el moho no se mata con un aerosol: se le quita el agua.
+[R6|por] Si cada semana rocías las juntas y el moho vuelve a la semana siguiente, el problema no es el producto. Es que el baño se queda mojado horas después de cada ducha. Y respiras ese aerosol en un cuarto cerrado.
+[R6|regla] La regla japonesa: un secador de vidrios chico, y un minuto después de cada ducha, pasándolo por las paredes y el vidrio. Lo que no queda mojado, no se pone negro. Y para las juntas grises, la pasta de bicarbonato con agua oxigenada del video anterior, diez minutos, y enjuagar.
+[R6|japon] En Japón, el último de la familia que se baña pasa el secador por las paredes. Es como apagar la luz al salir de un cuarto.
+[R6|rutina] La rutina completa del baño japonés, el minuto del secador, los quince de ventana y lo que se hace cada semana, está en la página catorce del Método Japonés de Claudio. Te la dejé anotada para que la pegues adentro del mueble del baño.
+[R7|intro] Y ahora sí, la número siete. La que casi todos rompemos, y la única de la lista que de verdad es peligrosa.
+[R7|sato] En el hotel había una sola regla pegada en la puerta del depósito, en letra grande. Sato-san me la hizo leer en voz alta el primer día, delante de todos: nunca mezclar productos.
+[R7|por] El cloro mezclado. Casi todos lo hacemos sin darnos cuenta: un chorro de cloro en el inodoro, y encima el limpiador del baño, o el antisarro, o el vinagre, porque juntos van a limpiar más. Algunas de esas mezclas sueltan gases que irritan los ojos y los pulmones. Y en un baño cerrado, los respiras de cerca.
+[R7|regla] La regla japonesa: el cloro no se mezcla con nada. Nunca. Ni con otro limpiador, ni con vinagre, ni con agua oxigenada, ni con amoníaco. Si usaste uno, enjuagas con mucha agua y ventilas antes de usar otro. Y nunca con la puerta cerrada.
+[R7|acido] Y una cosa que casi nadie sabe: muchos limpiadores de inodoro y muchos antisarro son ácidos. Por eso juntarlos con cloro es lo peor que se puede hacer en un baño.
+[R7|japon] En Japón, muchos limpiadores del baño traen en el frente una advertencia grande que dice: peligro, no mezclar. Allá todo el mundo la conoce desde chico.
+[R7|menos] Y la mejor forma de no mezclar es tener menos. Un baño japonés se limpia con agua, un paño, bicarbonato, un poco de vinagre para el sarro, y el frasco marrón. Por separado, siempre.
+[R7|aviso] Y si alguna vez mezclaste y te ardieron los ojos o te costó respirar, sal del baño, abre todo, y si no se te pasa, consulta a un médico.
+[R8|sato] Número ocho: las toallitas húmedas que se tiran al inodoro. En el hotel estaba prohibido tirarlas. Sato-san tenía un basurero chiquito al lado de cada inodoro sólo para eso.
+[R8|por] Aunque el paquete diga que se pueden tirar, no se deshacen como el papel. Se juntan en la cañería con la grasa, y un día el agua del inodoro sube en vez de bajar. Y el olor de ese atasco sale por el desagüe.
+[R8|regla] La regla: al inodoro va sólo el papel. Las toallitas, a un basurero chico con tapa, que se vacía todos los días. Así de simple.
+[R8|plomero] Un plomero me dijo una vez que la mitad de los inodoros tapados que destapa tienen toallitas adentro. En Japón, todo lo que no es papel va al basurero.
+[R9|sato] Número nueve: las botellas a medio usar en la ducha. En los baños del hotel había dos botellas, siempre las mismas, en un estante que dejaba escurrir el agua.
+[R9|por] En nuestras duchas hay siete u ocho: el champú de cada uno, el acondicionador, el jabón líquido, la crema de peinar. Cada botella deja un círculo mojado abajo, y en ese círculo aparece una mancha rosada, después gris, después negra.
+[R9|regla] La regla japonesa: pocas botellas, en un estante con rejilla que escurra, nunca apoyadas en el borde de la bañera. Lo que no se usa desde hace un mes, sale de la ducha. Y una barra de jabón en una jabonera que se seque.
+[R9|japon] En una ducha japonesa, todo se apoya en estantes de rejilla y se escurre solo. Nada vive mojado.
+[R10|sato] Número diez: la máquina de afeitar descartable olvidada en la ducha. En el hotel, nada de metal se quedaba en la ducha. Sato-san decía que el metal mojado deja su firma.
+[R10|por] La afeitadora se queda en el borde de la bañera, mojada todos los días. Se oxida, deja una mancha de óxido en el esmalte que después no sale, y a la semana ya no corta bien y se tira.
+[R10|regla] La regla: después de usarla, se enjuaga, se sacude, y se guarda afuera de la ducha, parada en un vaso seco. Una afeitadora seca dura el triple, y la bañera no se mancha.
+[R11|sato] Número once: el papel higiénico perfumado y de colores. En los baños del hotel, el papel era blanco y sin olor. Sato-san decía que lo que va a la piel no necesita perfume, y que lo que va al desagüe no necesita color.
+[R11|por] El perfume del papel no limpia nada. Sólo agrega otro olor en el cuarto que más se tapa con olores. Y para algunas pieles sensibles, es una molestia que no hace falta.
+[R11|regla] La regla: papel blanco, simple, sin perfume. Y el rollo de recambio, guardado en un mueble cerrado, no apilado arriba del tanque, donde junta la humedad de cada ducha.
+[R11|japon] En Japón, el papel higiénico casi nunca tiene perfume. Y nadie lo extraña.
+[R12|sato] Número doce, la última, y no es un producto: es la costumbre que hace que necesitemos los otros once. En el hotel, Sato-san me enseñó que el baño japonés se limpia todos los días un poquito, para no tener que limpiarlo nunca de golpe.
+[R12|por] Nosotros dejamos el baño mojado y cerrado toda la semana, y el sábado entramos con todo: el cloro, el aerosol, el perfume. Y cuanto más fuerte es el olor del producto, más creemos que quedó limpio.
+[R12|japon] En Japón, el baño casi no se ensucia porque nunca se queda mojado. Uno se lava sentado afuera de la bañera, el agua se va por el piso, y después todo se seca y se ventila.
+[R12|regla] La regla: un minuto de secador después de cada ducha, quince minutos de ventana con la puerta cerrada, y una pasada de treinta segundos al inodoro cada día. Con eso, el baño casi no se ensucia.
+[R12|esposa] La primera vez que lo hice en mi casa, mi esposa me preguntó qué producto nuevo había comprado. No había comprado nada: el baño había dejado de quedarse mojado.
+[PATRON|todo] Fíjate que los doce tienen algo en común. Casi todos son productos que tapan un baño que no se seca. Si el baño se seca y respira, casi ninguno hace falta.
+[PATRON|sato] Sato-san lo decía más corto: el baño limpio no huele a producto.
+[RECAP|todo] Los doce, rápido. Fuera el aromatizante de enchufe. Fuera la pastilla del tanque. Cortina de tela lavable. Paño en lugar de la flor de plástico. Cepillo con base que se seque. Secador en lugar del aerosol para el moho. El cloro, nunca mezclado. Las toallitas, al basurero. Pocas botellas, en estante que escurra. La afeitadora, afuera de la ducha. Papel simple. Y el baño, seco y ventilado cada día.
+[CTA3|regalo] Y te prometí el test. Se llama: ¿A qué huele tu casa? El test japonés de cinco minutos. Son tres pruebas: la almohada, la toalla y la puerta cerrada. Y la de la puerta cerrada empieza justo en el baño. Te dicen de dónde viene el olor antes de que compres nada. Es gratis: apunta el celular a este código, o toca el link de la descripción. Y si quieres todas las reglas con el paso a paso, el Método Japonés de Claudio está en esa misma página, a veintisiete dólares.
+[NEXT|sato] Ah, y lo que me dijo Sato-san aquel primer día, con mis dos aerosoles en la mano. Me dijo: Claudio-san, si tu baño necesita esto, el problema no es la suciedad. Es que nunca lo dejas secar.
+[NEXT|gancho] Y hay cosas que hacemos en el baño todos los días, sin pensarlo, que a un japonés le dan asco. Como tirar la cadena con la tapa abierta. En el próximo video, los once hábitos del baño que en Japón nadie hace.
+[CLOSE|pregunta] Y ahora cuéntame tú. ¿Cuántos de los doce tienes ahora mismo en tu baño? Escríbemelo en los comentarios. Leo todos.
+[CLOSE|chau] Sato-san siempre decía: lo limpio no huele a nada. Nos vemos en el próximo video.
