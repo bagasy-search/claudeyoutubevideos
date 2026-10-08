@@ -1,0 +1,122 @@
+{
+ "v_pista": {
+  "file": "v_pista.mp4",
+  "r": 0.928,
+  "lag": 0.0,
+  "text": "Pero una por semana, de una cucaracha grande, ya es una pista.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_pista.wav",
+  "asr": "Pero una por semana de una cucaracha grande ya es una pista.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_honesto": {
+  "file": "v_honesto.mp4",
+  "r": 0.996,
+  "lag": 0.0,
+  "text": "Y una cosa honesta antes de empezar. Las bolitas no son inmediatas. La primera semana vas a ver menos, pero no cero.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_honesto.wav",
+  "asr": "Y una cosa honesta antes de empezar. Las bolitas no son inmediatas. La primera semana vas a ver menos, pero no cero.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_semanas": {
+  "file": "v_semanas.mp4",
+  "r": 0.92,
+  "lag": 0.0,
+  "text": "Por eso las bolitas se dejan semanas, hasta que las que nacen también se las coman.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_semanas.wav",
+  "asr": "Por eso las bolitas se dejan semanas, hasta que las que nacen, también se las comen.",
+  "sim": 0.938,
+  "ok": true
+ },
+ "v_partes": {
+  "file": "v_partes.mp4",
+  "r": 0.961,
+  "lag": 0.0,
+  "text": "Una parte de ácido bórico, una de harina y una de azúcar. Por ejemplo: dos cucharadas de cada uno.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_partes.wav",
+  "asr": "una parte de ácido bórico, una de harina y una de azúcar. Por ejemplo, dos cucharadas de cada uno.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_bolitas": {
+  "file": "v_bolitas.mp4",
+  "r": 0.992,
+  "lag": 0.0,
+  "text": "Con la masa haces bolitas del tamaño de un garbanzo. No más grandes.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_bolitas.wav",
+  "asr": "Con la masa haces bolitas del tamaño de un garbanzo, no más grandes.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_vista": {
+  "file": "v_vista.mp4",
+  "r": 0.994,
+  "lag": 0.0,
+  "text": "Pero que las que importaban eran las que no estaban a la vista.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_vista.wav",
+  "asr": "porque las que importaban eran las que no estaban a la vista.",
+  "sim": 0.88,
+  "ok": true
+ },
+ "v_chiquitas": {
+  "file": "v_chiquitas.mp4",
+  "r": 0.988,
+  "lag": 0.0,
+  "text": "Con las chiquitas, más estaciones y más cerca de los aparatos: el motor del refrigerador, el microondas, la cafetera.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_chiquitas.wav",
+  "asr": "Con las chiquitas, más estaciones y más cerca de los aparatos. El motor del refrigerador, el microondas, la cafetera...",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_mes": {
+  "file": "v_mes.mp4",
+  "r": 0.996,
+  "lag": 0.0,
+  "text": "Al mes volví, de noche. Apagamos todo, esperamos una hora, y prendí la linterna de golpe.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_mes.wav",
+  "asr": "Al mes volví, de noche, apagamos todo, esperamos una hora y prendí la linterna de golpe.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_chau": {
+  "file": "v_chau.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "Donde viven, no donde pasean. Nos vemos la semana que viene.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_chau.wav",
+  "asr": "donde viven, no donde pasean. Nos vemos la semana que viene.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_esconde": {
+  "file": "v_esconde.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "El problema no se termina. Se esconde.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_esconde.wav",
+  "asr": "El problema no se termina, se esconde.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_carton": {
+  "file": "v_carton.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "Es oscuro, tiene huequitos, guarda el calor, y hasta se lo comen.",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_carton.wav",
+  "asr": "Es oscuro, tiene huequitos, guarda el calor y hasta se lo comen.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_cuantas": {
+  "file": "v_cuantas.mp4",
+  "r": 0.996,
+  "lag": 0.0,
+  "text": "Dos o tres bolitas en cada estación. Y una estación en cada escondite. En",
+  "wav": "D:/Proyectos/video2-wt/fucasero/vlog/fucasero/M1/_chk/v_cuantas.wav",
+  "asr": "dos o tres bolitas en cada estación. Y una estación en cada escondite.",
+  "sim": 0.963,
+  "ok": true
+ }
+}

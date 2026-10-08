@@ -13,5 +13,50 @@
   "file": "v_chau.mp4",
   "T": 5,
   "own": false
+ },
+ "v_pista": {
+  "file": "v_pista.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_partes": {
+  "file": "v_partes.mp4",
+  "T": 7,
+  "own": false
+ },
+ "v_vista": {
+  "file": "v_vista.mp4",
+  "T": 5,
+  "own": false
+ },
+ "v_chiquitas": {
+  "file": "v_chiquitas.mp4",
+  "T": 9,
+  "own": false
+ },
+ "v_semanas": {
+  "file": "v_semanas.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_mes": {
+  "file": "v_mes.mp4",
+  "T": 8,
+  "own": false
+ },
+ "v_carton": {
+  "file": "v_carton.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_cuantas": {
+  "file": "v_cuantas.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_esconde": {
+  "file": "v_esconde.mp4",
+  "T": 5,
+  "own": false
  }
 }
