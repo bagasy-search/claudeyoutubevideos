@@ -51,7 +51,7 @@ if (fase === "run") {
   const img = `https://raw.githubusercontent.com/${user}/${repo}/${br}/face.png`, aud = `https://raw.githubusercontent.com/${user}/${repo}/${br}/audio.wav`;
   for (const u of [img, aud]) { for (let t = 0; t < 20; t++) { const r = await fetch(u, { method: "HEAD" }); if (r.ok) break; await sleep(5000); } }
   log("inputs públicos", img, aud);
-  const body = { input: { prompt: "A 58-year-old Latin American pest-control technician with curly black-and-gray hair and a short beard, in a light khaki two-pocket work shirt with clear safety glasses pushed up on his forehead, talking warmly and directly to the camera like a man sharing a trade secret, natural small head movements and hand gestures, blinking, expressive face, background stays still", image: img, audio: aud, size: "720p", enable_safety_checker: false }, policy: { executionTimeout: 7200000 } };
+  const body = { input: { prompt: "A 58-year-old Latin American auto mechanic with curly black-and-gray hair and a short beard, in a navy blue mechanic work shirt with a red shop rag over his shoulder, talking warmly and directly to the camera like a man sharing a trade secret, natural small head movements and hand gestures, blinking, expressive face, background stays still", image: img, audio: aud, size: "720p", enable_safety_checker: false }, policy: { executionTimeout: 7200000 } };
   const j = await (await fetch("https://api.runpod.ai/v2/infinitetalk/run", { method: "POST", headers: { Authorization: "Bearer " + KEY, "Content-Type": "application/json" }, body: JSON.stringify(body) })).json();
   log("RUN", JSON.stringify(j)); if (!j.id) process.exit(1);
   fs.writeFileSync(OUT + "job.json", JSON.stringify({ id: j.id, br, img, aud, t: Date.now() }));

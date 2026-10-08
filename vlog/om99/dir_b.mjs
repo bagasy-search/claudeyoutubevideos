@@ -28,7 +28,7 @@ export const SHOTS = [
   // ── #9 traba de niños
   C(41, "", "ClFeatureTag", { n: 9, title: "The child lock", note: "on the door edge" }),
   S(42, "", "bi", "b_dooredge", { p: BI(`The edge of the open rear door of ${CAR} near the latch: a tiny lever with a child pictogram and LOCK arrow, shaded.`) }),
-  S(42, "There's a tiny lever or a slot", "kf", "k_childlock", { p: BI(`Extreme close view of the tip of a car key moving a tiny child-lock lever on the edge of an open rear car door.`), d1: "the key tip touches the tiny lever", d2: "the lever flips to the other side", sound: "a tiny click" }),
+  S(42, "There's a tiny lever or a slot", "bi", "k_childlock", { p: BI(`Extreme close view of the tip of a car key moving a tiny child-lock lever on the edge of an open rear car door.`), d1: "the key tip touches the tiny lever", d2: "the lever flips to the other side", sound: "a tiny click" }),
   S(42, "the door won't open from the inside", "bi", "b_insidehandle", { p: BI(`Inside the back seat of ${CAR}: a hand pulling the rear door handle, the door not opening.`) }),
   S(43, "", "bi", "b_grandkids", { p: BI(`An old family photo print: a smiling grandfather with a gray mustache and ball cap next to ${CAR} with two little grandchildren in the back seat.`) }),
   S(43, "the poor woman couldn't get out of the car", "bi", "b_neighbor", { p: BI(`An older woman sitting in the back seat of ${CAR}, pulling the door handle and laughing in disbelief, the door shut.`) }),
@@ -67,7 +67,7 @@ export const SHOTS = [
   S(58, "", "bi", "st_flathighway", { q: "flat tire highway shoulder", p: BI("A car pulled over on a highway shoulder with a flat rear tire, hazard lights on.") }),
   S(58, "Not you, not the tow truck guy", "bi", "st_towtruck", { q: "tow truck roadside", p: BI("A tow truck driver kneeling at the wheel of a car on the roadside, shaking his head.") }),
   S(59, "", "bi", "b_trunkfloor", { p: BI(`The trunk of ${CAR} with the floor lifted: the spare tire, the jack and a small cloth bag tucked into the well.`) }),
-  S(59, "Doris's was in a little bag in the spare tire well", "kf", "k_lockbag", { p: BI(`Close view of a hand pulling a small cloth bag out of a car's spare tire well and tipping a chrome wheel lock key into the palm.`), d1: "the hand pulls the little bag out", d2: "the chrome key falls into the palm", sound: "a small metal clink" }),
+  S(59, "Doris's was in a little bag in the spare tire well", "bi", "k_lockbag", { p: BI(`Close view of a hand pulling a small cloth bag out of a car's spare tire well and tipping a chrome wheel lock key into the palm.`), d1: "the hand pulls the little bag out", d2: "the chrome key falls into the palm", sound: "a small metal clink" }),
   S(59, "Now she knows", "av", ""),
   S(60, "", "bi", "b_lockcard", { p: BI(`A small card with a printed code number and a blank logo lying next to a chrome wheel lock key on a car seat.`) }),
   S(60, "not with a flat on the highway", "av", ""),

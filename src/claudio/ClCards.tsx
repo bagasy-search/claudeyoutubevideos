@@ -88,7 +88,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
           <Img src={staticFile(page)} style={{ width: 760, display: "block" }} />
         </div>
         <Tape x={300} y={-18} rot={4} w={160} />
-        <div style={{ position: "absolute", right: -40, bottom: 40, background: CL.navy, color: "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 40, padding: "6px 22px", borderRadius: 10, rotate: "4deg", boxShadow: `0 10px 20px ${CL.shadow}` }}>PÁG. {pageNo}</div>
+        <div style={{ position: "absolute", right: -40, bottom: 40, background: CL.navy, color: "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 40, padding: "6px 22px", borderRadius: 10, rotate: "4deg", boxShadow: `0 10px 20px ${CL.shadow}` }}>PAGE {pageNo}</div>
       </div>
       {qr ? (
         <div style={{ position: "absolute", right: 150, top: 230, opacity: Math.min(out, pq), translate: `${(1 - pq) * 120}px 0`, rotate: "3deg" }}>

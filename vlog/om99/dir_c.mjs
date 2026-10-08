@@ -61,7 +61,7 @@ export const SHOTS = [
   S(86, "", "bi", "st_checkengine3", { q: "check engine light driving", p: BI("A driver glancing at an amber check engine light on the dashboard while driving.") }),
   S(86, "it's not decoration either", "av", ""),
   S(86, "Read the code", "bi", "b_reader2", { p: BI(`A small blue OBD2 code reader plugged in under ${DASH}, its screen lit, unreadable.`) }),
-  S(87, "", "bi", "b_flashing", { p: BI(`Close view of ${DASH}, the amber check engine light glowing brightly, slightly motion-blurred as if flashing.`), ov: { c: "ClStampOv", props: { text: "FLASHING = SAME DAY" } } }),
+  S(87, "", "bi", "b_flashing", { p: BI(`Close view of ${DASH}, the amber check engine light glowing very brightly, caught mid-flash.`), ov: { c: "ClStampOv", props: { text: "FLASHING = SAME DAY" } } }),
   S(87, "your catalytic converter", "bi", "st_catconverter", { q: "catalytic converter car underside", p: BI("The underside of a car on a lift, a mechanic's light on the catalytic converter in the exhaust.") }),
   S(88, "", "bi", "b_coupon2", { p: BI(`An oil change coupon flyer on the passenger seat of ${CAR} next to the owner's manual.`) }),
   S(88, "and write it down, like Frank did", "bi", "b_notebook3", { p: BI(`${DORIS}'s hand writing a new line in an old spiral car-maintenance notebook on the hood of ${CAR}.`) }),
@@ -77,7 +77,7 @@ export const SHOTS = [
   // ── una semana después
   S(93, "", "bi", "b_dorisphone2", { p: BI(`${DORIS} on the phone at her kitchen window, smiling, ${CAR} visible in the driveway outside.`) }),
   S(93, "her check engine light was gone", "bi", "b_cleandash", { p: BI(`Close view of ${DASH} with the car running and no warning lights on, daylight.`) }),
-  S(93, "she canceled the appointment", "bi", "b_cancel", { p: BI(`A dealership appointment card being torn in half by an older woman's hands over a kitchen table.`) }),
+  S(93, "she canceled the appointment", "bi", "b_cancel", { p: BI(`Extreme close view of only two wrinkled older hands with a thin gold wedding ring tearing a small white appointment card in half over a wooden kitchen table, no face in the frame.`) }),
   C(93, "and the visor slid out", "ClCarMap", { done: DONE.concat(["cabin", "glow", "manual", "obd"]), title: "Miss Doris's car" }),
   S(94, "", "bi", "b_frankphoto2", { p: BI(`An old framed photo of a smiling man with a gray mustache and ball cap next to a silver sedan, on a shelf beside a small vase of flowers.`) }),
   S(94, "Frank did all the hard work", "av", ""),

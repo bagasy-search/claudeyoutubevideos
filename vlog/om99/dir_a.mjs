@@ -78,7 +78,7 @@ export const SHOTS = [
   S(15, "It also tilts forward and back", "kf", "k_headrest", { p: BI(`Close view of a car headrest being pulled forward by ${H}, the headrest tilting toward the camera.`), d1: "the hand pulls the headrest forward", d2: "the headrest clicks forward two notches", sound: "two ratchet clicks" }),
   S(16, "", "av", ""),
   S(16, "In a rear-end crash", "bi", "st_rearend", { q: "rear end car collision", p: BI("Two ordinary sedans after a minor rear-end bump on a city street, drivers getting out.") }),
-  S(16, "that gap is where whiplash happens", "bi", "b_gap", { p: BI(`Side view of an older woman in the driver's seat of ${CAR}, a gap of several inches between the back of her head and the headrest.`), ov: { c: "ClStampOv", props: { text: "THE GAP = WHIPLASH" } } }),
+  S(16, "that gap is where whiplash happens", "bi", "b_gap", { p: BI(`Seen through the open driver's door of ${CAR}, parked: the back of an older woman's silver-haired head sitting in the driver's seat, a gap of several inches of empty space between the back of her head and a car headrest set all the way down.`), ov: { c: "ClStampOv", props: { text: "THE GAP = WHIPLASH" } } }),
   C(17, "", "ClCheck", { title: "Headrest rule", items: ["Middle at ear level", "Almost touching your head", "2 clicks · 30 seconds"], fast: true }),
   S(17, "Doris's was all the way down", "bi", "b_dorishead", { p: BI(`${DORIS} sitting in the driver's seat of ${CAR}, the headrest all the way down below the back of her head.`) }),
   S(17, "She's five foot one", "cl", "c_headrestfix", { p: CLP(`Claudio leaning into the open driver's door of ${CAR}, raising the headrest behind ${DORIS} who sits in the driver's seat, both smiling.`) }),
