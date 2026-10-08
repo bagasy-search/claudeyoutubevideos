@@ -12,6 +12,10 @@ const has = (pub, p) => fs.existsSync(pub + LIB + p);
 // ── ambiente por escena (regex sobre nombre + prompt de la toma), primera coincidencia gana
 const AMB = [
   ["amb/amb_hotel_lobby.flac", /lobby|reception|checking in/i],
+  // ── Japón: recuerdos del hotel de Tokio + casa luminosa
+  ["amb/amb_hotel_hallway_b.flac", /locker room|canteen|staff washroom|staff shower/i],
+  ["amb/amb_suburb_backyard.flac", /rooftop|balcon|clothesline|patio|terrace|street|avenue|bus /i],
+  ["amb/amb_indoor_generic.flac", /bedroom|bedside|pillow|bed with|interview|restaurant/i],
   ["amb/amb_hotel_hallway.flac", /corridor|hallway|cart|storeroom|guest-room door|room numbers|door numbered|service hallway/i],
   ["amb/amb_indoor_generic.flac", /office|desk|calendar|notebook|printed/i],
   ["amb/amb_suburb_backyard.flac", /backyard|lawn|septic|cabins|resort/i],
@@ -131,6 +135,13 @@ function compFx(n, c, durS) {
   if (n === "ClBookPage") { add("design/page_turn_big.flac", 0.34, 0.05, 1); add("design/stamp_rubber.flac", 0.42, 0.95, 0.9); }
   if (n === "ClQRCard") { add("design/paper_slide.flac", 0.32, 0.1, 0.8); add("design/click_interface.flac", 0.3, 0.6, 0.5); }
   if (n === "ClCheck") { const k2 = (P.items || []).length; for (let k = 0; k < k2; k++) add("design/pen_write.flac", 0.3, 0.55 + k * Math.max(0.27, Math.min(1.33, (durS - 1) / k2)), 0.6); }
+  if (n === "ClGridHook") { const k = (P.tiles || []).length, ev = (P.every || 8) / 30; add("design/whoosh_quick.flac", 0.3, 0, 0.8); for (let i = 0; i < k; i++) add("design/pop_soap_bubble.flac", 0.34, 0.13 + i * ev, 0.5); add("design/impact_drum_subtle.flac", 0.4, 0.15 + k * ev, 1.4); }
+  if (n === "ClRule") { add("design/whoosh_sweep_long.flac", 0.3, -0.1, 1.6); add("design/impact_drum_subtle.flac", 0.42, 0.3, 1.8); add("design/tick_single.flac", 0.3, 0.75, 0.4); if (P.star) add("design/stamp_rubber.flac", 0.4, 1.05, 0.9); }
+  if (n === "ClSato") { add("design/camera_shutter.flac", 0.32, 0.1, 0.6); add("design/pen_write.flac", 0.3, 0.7, Math.min(1.6, durS - 0.8)); }
+  if (n === "ClNumbers") { const k2 = (P.rows || []).length; add("design/paper_slide.flac", 0.3, 0.05, 0.8); for (let k = 0; k < k2; k++) add("design/pen_write.flac", 0.28, 0.65 + k * Math.max(0.4, Math.min(1.13, (durS - 1.4) / k2)), 0.6); }
+  if (n === "ClDryBars") { add("design/paper_slide.flac", 0.3, 0.05, 0.8); add("design/riser_fast.flac", 0.2, 0.5, 1.4); add("design/tick_single.flac", 0.3, 1.9, 0.4); }
+  if (n === "ClBodyMap") { for (let k = 0; k < 4; k++) add("design/pop_soap_bubble.flac", 0.3, 0.7 + k * Math.max(0.47, (durS - 2) / 5), 0.5); }
+  if (n === "ClDays") { for (let k = 0; k < 3; k++) add("design/page_turn_big.flac", 0.26, 0.07 + k * 0.2, 0.7); add("design/tick_timer.flac", 0.22, 0.8, Math.min(2.5, durS - 1)); }
   if (n === "ClDoDont") { add("design/paper_slide.flac", 0.3, 0.1, 0.8); add("design/click_slide.flac", 0.3, 1.0, 0.5); }
   if (n === "ClPins") { const k3 = (P.pins || []).length || 3; for (let k = 0; k < k3; k++) add("design/pop_soap_bubble.flac", 0.34, 0.4 + k * 0.6, 0.6); }
   if (n === "ClColorCode") { add("design/paper_slide.flac", 0.3, 0.05, 0.8); add("design/click_slide.flac", 0.32, 0.2, 0.5); }

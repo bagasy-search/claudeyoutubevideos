@@ -37,7 +37,7 @@ export const ClChapter: React.FC<{ n?: number; title: string; sub?: string; bed?
   );
 };
 
-export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; fast?: boolean }> = ({ title, items, bed, fast }) => {
+export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; fast?: boolean; label?: string }> = ({ title, items, bed, fast, label = "LA REGLA" }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2);
   const step = fast ? Math.max(8, (durationInFrames - 30) / items.length) : Math.max(14, Math.min(40, (durationInFrames - 30) / items.length));
@@ -51,7 +51,7 @@ export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; f
           <Card style={{ padding: "34px 50px 30px", borderRadius: 6 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", borderBottom: `4px solid ${CL.navy}`, paddingBottom: 10, marginBottom: 22 }}>
               <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: CL.ink }}>{title}</div>
-              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 26, color: CL.inkSoft, letterSpacing: 3 }}>HOJA DE OBRA</div>
+              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 26, color: CL.inkSoft, letterSpacing: 3 }}>{label}</div>
             </div>
             {items.map((it, i) => {
               const t0 = 16 + i * step, k = lin(f, t0, t0 + 8), hk = lin(f, t0 + 4, t0 + 16);
@@ -94,7 +94,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
         <div style={{ position: "absolute", right: 150, top: 230, opacity: Math.min(out, pq), translate: `${(1 - pq) * 120}px 0`, rotate: "3deg" }}>
           <Card style={{ padding: 26, borderTop: `14px solid ${CL.yellow}`, textAlign: "center" }}>
             <Img src={staticFile(qr)} style={{ width: 420, height: 420, display: "block", imageRendering: "pixelated" }} />
-            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 8 }}>apunte la cámara acá</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 8 }}>apunta la cámara aquí</div>
           </Card>
         </div>
       ) : null}
@@ -104,7 +104,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
   );
 };
 
-export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; kicker?: string; bed?: string }> = ({ qr, cover, text = "apunte la cámara del celular acá", kicker = "ARREGLO COMPLETO · GRATIS", bed }) => {
+export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; kicker?: string; bed?: string }> = ({ qr, cover, text = "apunta la cámara del celular aquí", kicker = "ARREGLO COMPLETO · GRATIS", bed }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2), pc = pop(f, fps, 10), w = lin(f, 18, 36);
   return (

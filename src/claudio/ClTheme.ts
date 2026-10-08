@@ -1,3 +1,4 @@
+// CLAUDIO EN JAPÓN (rama jphigiene-render y sus hijas): blanco washi + tinta sumi + ROJO del polo/hinomaru (#C8102E) + madera clara + amarillo del titular de la miniatura. (Antes: Albañil)
 // Claudio el ALBAÑIL (rama almoho-render y sus hijas): carbón de cemento + amarillo de cinta métrica + naranja de la remera. (Antes: Conserje) (igual que el libro "El Frasco Marrón de Claudio" y la landing). Reusable por los 12 videos.
 // Identidad de CONSERJE DE HOTEL: azul marino de la chaqueta · amarillo de guante (acento) · latón de la plaqueta de habitación
 // y del llavero · blanco de azulejo · rojo SÓLO para alertas. Fraunces (títulos, como el libro) + Oswald (rótulos) + Caveat (notas
@@ -15,17 +16,17 @@ export const LABEL = os.fontFamily;
 export const HAND = cv.fontFamily;
 
 export const CL = {
-  white: "#FBF9F4",     // blanco cálido de azulejo
-  tile: "#EFE9DF",      // azulejo crema del hotel
+  white: "#FBFAF7",     // blanco cálido de azulejo
+  tile: "#F1ECE3",      // washi      // azulejo crema del hotel
   grout: "#D8CFC1",
-  navy: "#2C3036",      // carbón de cemento (albañil)
-  navyDeep: "#1B1E22",
+  navy: "#2A2522",      // tinta sumi (Japón)
+  navyDeep: "#17120F",
   navySoft: "#D3D5D8",
-  yellow: "#F2C230",    // guante amarillo (acento)
+  yellow: "#F5C518",    // amarillo del titular de la miniatura (acento)
   yellowSoft: "#FBE7A2",
-  brass: "#B58B45",     // plaqueta y llavero
-  brassLight: "#E3C27F",
-  nitrile: "#E8701E",   // naranja de la remera (albañil)
+  brass: "#B88A5A",     // madera clara
+  brassLight: "#E2C49C",
+  nitrile: "#C8102E",   // rojo del polo (Japón)
   red: "#D23B2E",       // SÓLO alertas
   ink: "#1A2233",
   inkSoft: "#59627A",
