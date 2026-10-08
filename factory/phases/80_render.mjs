@@ -7,7 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { run, durSec } from "../lib/exec.mjs";
 import { assertMeasured } from "../lib/gate.mjs";
-import { gh, waitRun, releaseAssetPublic, esRateLimit } from "../lib/gh.mjs";
+import { gh, ghJson, waitRun, releaseAssetPublic, esRateLimit } from "../lib/gh.mjs";
 import { withLease } from "../lib/lease.mjs";
 import { importTree } from "../lib/imports.mjs";
 import { ROOT, env } from "../lib/env.mjs";
@@ -183,7 +183,13 @@ export default {
     }
     if (!listo) {
       if (fs.existsSync(P.rawMp4)) fs.rmSync(P.rawMp4);   // `gh run download` no pisa un archivo existente
-      await gh(["run", "download", String(runId), "-R", repo, "-n", `final-${slug}`, "-D", dir], { log, timeoutMs: 60 * 60_000 });
+      // REST directo al zip del artefacto: `gh run download` pagina los artefactos y la página 2 usa la ruta
+      // numérica (repositories/<id>/…) que el proxy de la nube rechaza (>100 artefactos con los chunks).
+      const arts = await ghJson(["api", `repos/${repo}/actions/runs/${runId}/artifacts?name=final-${slug}`], { log });
+      const art = (arts.artifacts || []).find((a) => a.name === `final-${slug}` && !a.expired);
+      if (!art) throw new Error(`run ${runId}: no hay artefacto final-${slug}`);
+      const zip = path.join(dir, `final-${slug}.zip`);
+      await run("bash", ["-c", `gh api "repos/${repo}/actions/artifacts/${art.id}/zip" > "${zip}" && unzip -o -q "${zip}" -d "${dir}" && rm -f "${zip}"`], { timeoutMs: 60 * 60_000 });
       fs.writeFileSync(sello, String(runId));
     }
     const d = await durSec(P.rawMp4);
