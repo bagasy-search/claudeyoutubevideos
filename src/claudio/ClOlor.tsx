@@ -21,7 +21,7 @@ export const ClDesiccant: React.FC<{ days?: number; bed?: string }> = ({ days = 
   const k = ease(clamp01((f - 12) / (T * 0.65)));
   const day = Math.max(1, Math.round(1 + (days - 1) * k));
   const X = 620, W = 520;
-  const flakes = 1 - 0.55 * k, water = 0.05 + 0.45 * k;
+  const span = Math.min(1, days / 7), flakes = 1 - 0.55 * k * span, water = 0.05 + 0.45 * k * span;
   return (
     <AbsoluteFill style={{ opacity: out }}>
       <Bed src={bed} seed={261} dim={0.36} />
@@ -46,7 +46,7 @@ export const ClDesiccant: React.FC<{ days?: number; bed?: string }> = ({ days = 
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 130, color: CL.ink, lineHeight: 1 }}>{day}</div>
         </Card>
       </div>
-      <div style={{ position: "absolute", left: 180, top: 640, opacity: lin(f, T * 0.7, T * 0.8), fontFamily: HAND, fontWeight: 700, fontSize: 70, color: CL.ink }}>medio vaso</div>
+      <div style={{ position: "absolute", left: 180, top: 640, opacity: days >= 7 ? lin(f, T * 0.7, T * 0.8) : 0, fontFamily: HAND, fontWeight: 700, fontSize: 70, color: CL.ink }}>medio vaso</div>
       <RoomLight k={0.35} />
     </AbsoluteFill>
   );
