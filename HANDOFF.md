@@ -1,28 +1,50 @@
-# HANDOFF — fu30 (Claudio el Fumigador #2 · serie "La casa de los Ramírez" ep. 2: la barrera de la puerta)
-Estado: ✅ ENTREGADO 8-oct (job 786, tarjeta plan-own-1791387464226-1 → "Video listo · subir", sin YouTube).
-mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fu30/fu30.mp4?v=1 (15:28, 27.850 cuadros). Auditor: min1 31 cortes / 0 silencios, negro 0, congelados 0.
- Rama `fu30-render`, sale de `fuagua-render` (misma cadena; ver su HANDOFF en git: `git show fuagua-render:HANDOFF.md`).
+# HANDOFF — mec99 (Claudio el Mecánico #1 · serie "El auto de Doña Elena" ep. 1: las 17 cosas que tu auto ya trae)
+Estado: ✅ ENTREGADO 8-oct (job 789, tarjeta plan-own-1791434693203-0 del row 311 `draft:claudiomecanico` → "Video listo · subir", sin YouTube).
+mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/mec99/mec99.mp4?v=1 (15:08, 27.242 cuadros, sha256 41efb066…) · local D:/videosdeclaude/mec99_entrega.mp4.
+Auditor sobre el final: min1 40 cambios de escena (34 cortes de timeline) / 0 silencios · negro 0 · congelados 0 · -14,0 LUFS / TP -1,2.
+Final: farm 100 tramos (STITCH_RAW) → `bash D:/Proyectos/encfin/push.sh mec99 27242 100` (mix subido antes a assets-mec99).
+Rama `mec99-render`, sale de `furatas-render`. Worktree en ESTA PC (DESKTOP-CRNK37J): `D:/rtmp/wt-mec99`.
 
-## Qué cambia respecto de fuagua
-- Guion `guiones/fu30_filmado.txt` 13.516 car (tú neutro) · Arreglo 2 de fixes.json = pág. 10 del Manual (`public/img/fu30/page10.jpg` de book.pdf).
-- Polaroid del ep. 1 (ClVideoRef th_fuagua, párr. 6) · gancho al ep. 3: bolitas negras + bolsa de croquetas mordida en el garaje → ratones (ClVideoRef th_furatas, `next`).
-- Seguridad: hierbas en el marco ARRIBA (el laurel le cae mal al perro, ClBarrierLine "dog") + cebo de bórax en tapita cerrada (ClCheck) + el ácido bórico del ep. 1 (ClFridgeBack fixed).
-- Kit nuevo `src/claudio/ClPuerta.tsx`: ClDoorGap (light/sealed: la rayita de luz de 1 cm y el burlete) · ClBarrierLine (line/herbs/dog) · ClPerimeter30 (bridges/clean).
-  Registrados en ClMain, BEDABLE (gen_timeline), CMAX (timeline), sound.mjs, banco src/index_fukit.tsx.
+## Cadena = la del Fumigador (furatas-render) adaptada al MECÁNICO en ESTA rama. mecllave sale de acá.
+- lib.mjs: WHO = camisa azul marino de mecánico arremangada + trapo rojo · SHOP = taller de Claudio (cemento con manchas, cajoneras
+  rojas, elevador de 2 columnas, panel de llaves, portón abierto) · DRIVE = cochera de Doña Elena · ELENA (72, viuda, rodete canoso,
+  anteojos con cadenita, cárdigan beige) · CAR = sedán plateado 2012 sin logos · CABIN · H (manos de mecánico) · EH (manos de Elena).
+- avatar: ref `vlog/mec99/mk_ref.mjs` (claudio_hd + camisa marino, en el taller con el sedán plateado en el elevador) → `public/ref_mec99.png`
+  (= out/ref/ref_a.png); cara `public/ref_mec99_face.png` = kit claudio/face.png. Video N: copiar ambas como ref_<slug>*.png.
+- Marca: ClTheme rojo #C62828 (nitrile) + azul marino #1F2A44 (navy) · ClChapter = parche bordado ROJO con llave inglesa · ClCheck "ORDEN DE TRABAJO".
+- Kit nuevo `src/claudio/ClMecanico.tsx` (7): ClFuelGauge (tablero + lupa + flecha; `car` = sedán desde arriba con la tapa encendida) ·
+  ClCarMap (hoja "LA REVISIÓN · 17 PUNTOS": n/all/zone/done) · ClKeyFob3D (three.js: tease/key/dead/windows/range/battery — `range` y
+  `battery` listos para mecllave) · ClChildLock (find/locked/open) · ClAirFlow (recirc/defog) · ClTireLabel (door/versus) · ClTread3D (bar/worn/coin).
+  Registrados en ClMain, BEDABLE, CMAX (todos en 9 = el default con que se pagó el avatar), sound.mjs; banco `src/index_mekit.tsx` (39 stills).
+- job.mjs/meta.mjs: row 311; meta = 1ª línea regalo /gratis/?src=<slug>-desc · 2ª landing ?src=<slug>. stock.mjs: juez de autos.
+- sound.mjs: ambientes de auto arriba (lluvia, noche, estacionamiento, calle/gasolinera, adentro del auto, casa, taller = tono de sala)
+  + foley de autos (control, llave de metal, encendido, puertas, baúl, vidrios, aire, llaves, fusibles, papeles). Regla con [] = sin foley.
+- sfx_pro: +20 efectos de autos (LICENCIAS.md, IDs de Mixkit ELEGIDOS A MANO: el buscador de build.py trajo motocross/olas/vidrio roto).
+- chk.py traído de la rama Japón (MARK = Manual/página/código/veintisiete).
 
 ## Números
-- Voz 16/16 bloques al 1er intento, 931 s crudo → 927 s tras comprimir el gancho. Modal marcó 4 huecos: los 4 FALSOS (whisper-1).
-- Minuto 1: 33 cortes, toma máx 3,06 s · Manual: mención 1 ~3:33 (frase del mostrador, pág. 10) · 2 ~8:38 (ClBookPage pág. 10) · 3 ~14:06 (QR /r + US$27).
-- avatar 58 ventanas 272 s (1 /run) · real 26,5 % · agnes 7/10 (rechazados k_chalk mano que desaparece, k_droppings salto, k_pipe caño que muta → fotos; b_droppings regenerada).
+- Guion 13.641 car (tú neutro) · voz claudio_definitiva 16/16 bloques al 1er intento, 15,06 car/s (más rápida que 14,7) → 910 s crudo
+  → 907 s tras comprimir el gancho. Alineación 0,98.
+- Timeline 299 tomas · 27.242 cuadros (15:08) · minuto 1: 34 cortes, toma máx 3,84 s · cara de Claudio en el seg 0,95.
+- Avatar 1 /run efectivo, 70 ventanas, reel 235,5 s, US$0,25, lag -0,10..0 · avatar 24,2 % · real 25,7 % (stock 8,1 + camas 17,6) · agnes 3,1 %.
+- Imágenes gpt 189+2 low Batch 1088x608 (+ cara en 6) · stock 73+28 buscados → 61 tras 18 rechazos a ojo · agnes 10/21 aprobados a ojo.
+- Sonido 331 efectos, 131 ambientes, 0 cuadros sin ambiente, 34/34 cortes del min 1 con efecto, -14,0 LUFS / TP -1,3, sin música.
+- Manual: mención 1 a las ~3:00 (la frase para pedir el manual, ClBookPage pág. 9) · 2 a las ~6:48 (ClBookPage pág. 9, la lista) ·
+  3 a las ~13:50 (QR /r regalo "Antes del Taller" + Manual US$27).
 
-## Gotchas
-- ⛔ D: se llenó a 34 MB a mitad de imágenes + stock (ENOSPC). gptimg se REANUDA solo (estado de batches), stock salta lo hecho.
-  Liberado: worktree fuagua (pusheado), temporales remotion/gh-artifact >2 h en D:/rtmp/tmp, crudos `_v3/fu30_stock/*.mp4`.
-- ⛔ `D:/Proyectos/sfx_pro` PERDIÓ archivos (otra sesión poda): 14 efectos que usaba sound.mjs ya no existen → remapeados a los que sí
-  (scrub_pad→scrub_floor, fizz_gentle→fizz_tablet_a, stamp_es→stamp_rubber, amb_suburb_backyard→amb_suburb_birds…). Antes del farm:
-  `grep -o '"[a-z]*/[a-z_0-9]*\.flac"' vlog/claudio/sound.mjs | ... [ -f D:/Proyectos/sfx_pro/$f ]`.
-- Stock: juez aprobó otras familias, otro perro, cucaracha de Madagascar → 28 a `_rech`; tomas con Lucía/Jorge/niños/Bruno bloqueadas antes (touch `_rech/<n>.mp4`).
-- ⛔ encfin falla 'no assets match' si falta `out/<slug>_mix.wav` en el release assets-<slug>: `gh release upload assets-<slug> out/<slug>_mix.wav` y `gh run rerun`.
-- ⛔ push.sh de encfin usa /tmp (= D:/rtmp/tmp): con D lleno, `TMPDIR=C:/Users/bauti/AppData/Local/Temp/encfin`.
-- Congelado 6 s (stock de mosquito quieto) en 12:35 → st_mosquito a foto en timeline.gen.ts + ONLY_CHUNKS=48 (la foto ya estaba en el tar) + encfin de nuevo.
-- ⛔ El canal 305 ya NO es `draft:claudiofumigador`: deliver_card con `https://www.youtube.com/channel/UCQZUY5cP_86-mYvG6FxqS8g`.
+## Gotchas nuevos (esta PC)
+- ⛔ `D:/Proyectos/video2` está VACIADO por StorageSense (3.847 archivos borrados, sin .env, sin public/sfx) y su `node_modules` está
+  INCOMPLETO (falta @remotion/renderer/dist/esm) → el worktree hace su propio `npm ci` (44 s). La junction de node_modules NO sirve.
+- ⛔ `.env`: copia de `D:/rtmp/recon/.env` (OpenAI viva) + `keys_unpack.sh` con KEYS_PASS = sha256 de la OpenAI VIEJA (la de
+  `D:/rtmp/wt-mdsmell/.env`, hoy 401): el .enc del cerebro se cifró con esa.
+- ⛔ RunPod infinitetalk: 2 FAILED seguidos "Error polling result: 502" (a los 17 y 10 min, mismo worker) → el 3er /run salió (29 min). FAILED no cobra.
+- ⛔ El bundler de Remotion (stills) no copia la junction public/sfx_pro (EPERM symlink): sacarla con `rmdir` SIN /S y volver a crearla.
+- ⛔ Pre-vuelo del farm exige `public/sfx/` aunque el kit no la use → copia de `D:/rtmp/recon/public/sfx`.
+- agnes_qc mira `public/broll/<slug>` por defecto: los kf de esta cadena están en `public/vid/<slug>` → `QC_CLIPDIR=public/vid/<slug>`.
+  Rechazados a ojo: el control se vuelve navaja, la puerta se abre sola, el espejo cambia de forma, el tablero termina en otro, manijas que saltan.
+  Los rechazados se mueven a `vid/<slug>/_rech` + `_v3/<slug>_aceptados.json` (la toma queda en su foto). Hacer `_last.jpg` de vid/.
+- gptimg: safety rebota "cerrajero metiendo una herramienta en la puerta" y "palanca en la manija" (parece robo) → redactar sin forzar.
+- Stock: el juez aprobó humo de incendio por "camión", un probador por "tapa del tanque", un baúl de noche por "llanta de repuesto",
+  pantalla verde, logos y patentes → hoja a ojo SIEMPRE.
+- ClNeverMix dibuja botellas de limpieza: no sirve fuera de químicos (usar ClCheck).
+- Descarga del release: con 8 curl en paralelo un tramo se puede trabar; si se mata, rellenar SÓLO el hueco por rango y comparar sha256 con `.assets[].digest`.
