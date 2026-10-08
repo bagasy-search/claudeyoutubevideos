@@ -1,0 +1,35 @@
+{
+  "slug": "ohfwater",
+  "canal": "old-house-fix",
+  "modo": "avatar",
+  "idioma": "en",
+  "titulo": "No Hot Water: Gas Water Heater Troubleshooting",
+  "guion": "guiones/GUION_ohfwater.txt",
+  "voz": {
+    "id": "ohf_hank"
+  },
+  "ctas": [
+    {
+      "ancla": "I put these checks, in this exact order, in chapter eight",
+      "head": "The Winter Manual · Chapter 8",
+      "sub": "Link at the top of the description",
+      "qr": "qr/ohf_manual_ohfwater.png",
+      "durS": 9
+    }
+  ],
+  "cta": {
+    "head": "Free: the No-Heat Night Card",
+    "sub": "Link at the top of the description",
+    "ancla": "Now, here is something for you",
+    "qr": "qr/ohf_card_ohfwater.png"
+  },
+  "avatar": {
+    "face": "public/ref/ohf_full.png",
+    "lipLeadSec": 0.12
+  },
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/@oldhousefix",
+    "cardId": "ohf1791387991754-1"
+  },
+  "overrides": {}
+}
