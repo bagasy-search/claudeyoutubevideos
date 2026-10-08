@@ -106,6 +106,8 @@ function compFx(n, c, durS) {
   if (n === "ClOBDScan") { add("car/obd_beep.mp3", 0.45, durS * 0.3, 1.2); }
   if (n === "ClFobHold") { add("design/click_interface.flac", 0.35, durS * 0.18, 0.5); add("design/swell_suspense.flac", 0.18, durS * 0.2, durS * 0.42); add("car/fob_chirp.mp3", 0.5, durS * 0.62, 1.2); }
   if (n === "ClCoinCell") { add("car/plastic_clip.mp3", 0.4, 0.15, 0.8); add("design/click_interface.flac", 0.3, durS * 0.2, 0.5); add("design/click_interface.flac", 0.3, durS * 0.32, 0.5); add("design/click_interface.flac", 0.3, durS * 0.44, 0.5); add("design/impact_drum_subtle.flac", 0.3, durS * 0.62, 1.2); }
+  if (n === "ClOdoRace") { add("design/swell_suspense.flac", 0.2, 0.2, durS * 0.6); add("design/impact_drum_subtle.flac", 0.32, durS * 0.5, 1.2); add("design/impact_drum_subtle.flac", 0.3, durS * 0.75, 1.2); }
+  if (n === "ClFluidClock") { add("design/click_slide.flac", 0.3, 0.3, 0.6); add("design/click_interface.flac", 0.3, durS * 0.3, 0.5); add("design/click_interface.flac", 0.3, durS * 0.5, 0.5); }
   if (n === "ClDoorGap") { add("design/swell_suspense.flac", 0.22, 0.3, 2.4); if (P.mode === "sealed") { add("foley/rubber_stretch.flac", 0.34, durS * 0.22, 1); add("design/impact_drum_subtle.flac", 0.34, durS * 0.45, 1.2); } }
   if (n === "ClBarrierLine") { if (P.mode === "line") add("foley/chalk_eraser.flac", 0.34, 0.3, Math.min(durS * 0.3, 2.4)); if (P.mode === "herbs") [0.35, 0.6, 0.85, 1.1, 1.35].forEach((t) => add("design/tick_single.flac", 0.3, t, 0.5)); if (P.mode === "dog") add("design/stamp_rubber.flac", 0.3, durS * 0.62, 0.8); }
   if (n === "ClPerimeter30") { add("design/pencil_strokes.flac", 0.28, 0.3, 1.6); if (P.mode === "clean") add("foley/ceramic_scrape.flac", 0.26, durS * 0.22, 1.4); }

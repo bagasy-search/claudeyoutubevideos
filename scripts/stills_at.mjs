@@ -10,7 +10,7 @@ const [OUT, COMP, ENTRY, FRAMES] = process.argv.slice(2);
 const frames = FRAMES.split(",").map(Number);
 const BROWSER = path.resolve("node_modules/.remotion/chrome-headless-shell/win64/chrome-headless-shell-win64/chrome-headless-shell.exe");
 const SLIM = path.resolve("_proof/pub");
-const BUNDLE_DIR = "D:/tmp/remotion-stills-bundle-omkey";
+const BUNDLE_DIR = "D:/tmp/remotion-stills-bundle-om500k";
 for (const d of ["D:/tmp", BUNDLE_DIR, path.resolve(OUT)]) fs.mkdirSync(d, { recursive: true });
 process.env.TMPDIR = process.env.TEMP = process.env.TMP = "D:/tmp";
 
