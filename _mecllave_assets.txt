@@ -1,6 +1,7 @@
 mecllave.m4a
 ref_mecllave.png
 img/mecllave/b_fobmacro.jpg
+avatar_clips/mecllave/reel30.mp4
 broll/mecllave_st/bd_autorepairshop1.mp4
 img/mecllave/b_dealerquote.jpg
 img/mecllave/b_elenaquote.jpg
