@@ -120,7 +120,7 @@ export const ClFuelGauge: React.FC<{ side?: "left" | "right"; car?: boolean; bed
         </svg>
       </div>
       {/* LUPA que agranda el triangulito */}
-      <div style={{ position: "absolute", left: arrowX + 120 + (1 - lensK) * 500, top: arrowY - 260 - (1 - lensK) * 200, width: 300, height: 300, borderRadius: "50%", overflow: "hidden", opacity: lensK, border: "14px solid #2B2F36", boxShadow: "0 30px 50px rgba(0,0,0,0.45), inset 0 0 30px rgba(255,255,255,0.35)", background: "#07090D" }}>
+      <div style={{ position: "absolute", left: arrowX + 120 + (1 - lensK) * 500, top: arrowY - 260 - (1 - lensK) * 200, width: 300, height: 300, borderRadius: "50%", overflow: "hidden", opacity: lensK * (1 - carK), border: "14px solid #2B2F36", boxShadow: "0 30px 50px rgba(0,0,0,0.45), inset 0 0 30px rgba(255,255,255,0.35)", background: "#07090D" }}>
         <div style={{ position: "absolute", left: 150 - 54 * 2.6, top: 150 - 108 * 2.6, transform: "scale(2.6)", transformOrigin: "0 0", width: 0, height: 0 }}>
           <svg width={760} height={760} viewBox="-380 -380 760 760" style={{ position: "absolute", left: -380, top: -380, overflow: "visible" }}>
             <g transform="translate(-34 80)"><rect x={-30} y={-46} width={50} height={78} rx={6} fill="#F2F2EE" /><rect x={-22} y={-38} width={34} height={22} rx={3} fill="#0B0E13" /></g>
@@ -129,14 +129,14 @@ export const ClFuelGauge: React.FC<{ side?: "left" | "right"; car?: boolean; bed
         </div>
         <div style={{ position: "absolute", inset: 0, borderRadius: "50%", background: "radial-gradient(circle at 30% 25%, rgba(255,255,255,0.35), rgba(255,255,255,0) 45%)" }} />
       </div>
-      <div style={{ position: "absolute", left: arrowX + 250 + (1 - lensK) * 500, top: arrowY + 20 - (1 - lensK) * 200, width: 46, height: 190, borderRadius: 20, background: "linear-gradient(90deg,#1E2228,#3A3F47)", rotate: "-38deg", transformOrigin: "50% 0", opacity: lensK }} />
+      <div style={{ position: "absolute", left: arrowX + 250 + (1 - lensK) * 500, top: arrowY + 20 - (1 - lensK) * 200, width: 46, height: 190, borderRadius: 20, background: "linear-gradient(90deg,#1E2228,#3A3F47)", rotate: "-38deg", transformOrigin: "50% 0", opacity: lensK * (1 - carK) }} />
       <Tag x={car ? 140 : 360} y={140} text={side === "left" ? "◀ La tapa está a la izquierda" : "La tapa está a la derecha ▶"} color={CL.nitrile} o={lin(f, 30, 42)} size={44} />
       {car ? (
-        <div style={{ position: "absolute", left: 1080 + (1 - carK) * 900, top: 360, opacity: carK, transform: "perspective(1600px) rotateX(38deg)", filter: "drop-shadow(0 30px 30px rgba(0,0,0,0.4))" }}>
-          <CarTop w={720} fuel={side} fuelK={fuelK} />
-          <div style={{ position: "absolute", left: 30, top: side === "left" ? -80 : 340, fontFamily: HAND, fontWeight: 700, fontSize: 60, color: "#fff", textShadow: "0 3px 10px rgba(0,0,0,0.6)", opacity: fuelK }}>la tapa</div>
+        <div style={{ position: "absolute", left: 1000 + (1 - carK) * 900, top: 330, opacity: carK, transform: "perspective(1600px) rotateX(20deg) rotateZ(-90deg)", transformOrigin: "50% 50%", filter: "drop-shadow(0 30px 30px rgba(0,0,0,0.4))" }}>
+          <CarTop w={760} fuel={side} fuelK={fuelK} />
         </div>
       ) : null}
+      {car ? <Note x={1480} y={760} o={fuelK} big="La tapa" small="del lado de la flecha" w={380} /> : null}
       <RoomLight k={0.5} />
     </AbsoluteFill>
   );
@@ -232,12 +232,12 @@ export const ClKeyFob3D: React.FC<{ mode?: "tease" | "key" | "dead" | "windows" 
   }), []);
   const p = pop(f, fps, 0, 15);
   const spin = mode === "tease" ? f * 0.025 : interpolate(f, [0, T], [-0.5, 0.35]);
-  const keyK = mode === "key" ? ease(clamp01((f - 18) / 26)) : mode === "dead" ? 1 : 0;
+  const keyK = mode === "key" ? ease(clamp01((f - 18) / 26)) : mode === "dead" ? 1 : mode === "tease" ? 0.1 + 0.06 * Math.sin(f * 0.2) : 0;
   const openK = mode === "battery" ? ease(clamp01((f - 16) / 24)) : 0;
   const cellK = mode === "battery" ? ease(clamp01((f - 34) / 22)) : 0;
   const pressK = mode === "windows" ? clamp01((f - 12) / 6) : 0;
-  const xray = mode === "tease" ? 0.5 + 0.5 * Math.sin(f * 0.12) : 0;
-  const target = new THREE.Vector3(0, 0.25, 0), camPos = new THREE.Vector3(Math.sin(spin) * 5.2, 1.2, Math.cos(spin) * 5.2);
+  const xray = 0;
+  const target = new THREE.Vector3(0, -0.45, 0), camPos = new THREE.Vector3(Math.sin(spin) * 8.4, 1.4, Math.cos(spin) * 8.4);
   const sx = mode === "windows" || mode === "range" || mode === "dead" ? -0.18 : 0;
   return (
     <AbsoluteFill style={{ opacity: out }}>
@@ -254,21 +254,23 @@ export const ClKeyFob3D: React.FC<{ mode?: "tease" | "key" | "dead" | "windows" 
           <group rotation={[0.15, 0, -0.18]}>
             {mode === "battery" ? (
               <>
-                <mesh geometry={geo.half} material={mats.plastic} position={[0, 0, 0.12 + 0.5 * openK]} />
-                <mesh geometry={geo.half} material={mats.plastic} position={[0, 0, -0.12 - 0.5 * openK]} />
-                <mesh material={mats.board} position={[0, 0.1, -0.02 - 0.2 * openK]}><boxGeometry args={[0.8, 1.4, 0.04]} /></mesh>
-                <mesh material={mats.cell} rotation={[Math.PI / 2, 0, 0]} position={[0.9 * cellK, 0.25 + 0.4 * cellK, 0.05]}><cylinderGeometry args={[0.32, 0.32, 0.06, 48]} /></mesh>
+                <mesh geometry={geo.half} material={mats.plastic} position={[-0.75 * openK, 0, 0.1]} rotation={[0, -0.9 * openK, 0]} />
+                <mesh geometry={geo.half} material={mats.plastic} position={[0.75 * openK, 0, -0.1]} rotation={[0, 0.9 * openK, 0]} />
+                <mesh material={mats.board} position={[0, 0.1, 0]} scale={[Math.max(0.01, openK), 1, 1]}><boxGeometry args={[0.8, 1.4, 0.04]} /></mesh>
+                <mesh material={mats.cell} rotation={[Math.PI / 2, 0, 0]} position={[0, 0.25 + 0.5 * cellK, 0.08 + 0.6 * cellK]}><cylinderGeometry args={[0.32, 0.32, 0.06, 48]} /></mesh>
               </>
             ) : (
               <>
                 <mesh geometry={geo.body} material={xray > 0 ? mats.plasticX : mats.plastic} />
-                {[0.45, 0.0, -0.45].map((y, i) => (
-                  <mesh key={i} material={i === 2 ? mats.red : mats.rubber} position={[0, y + 0.2, 0.27 - (i === 1 ? pressK * 0.05 : 0)]} rotation={[Math.PI / 2, 0, 0]}><cylinderGeometry args={[0.24, 0.24, 0.06, 32]} /></mesh>
+                {[0.5, 0.12, -0.26].map((y, i) => (
+                  <mesh key={i} material={i === 2 ? mats.red : mats.rubber} position={[0, y, 0.27 - (i === 1 ? pressK * 0.04 : 0)]} rotation={[Math.PI / 2, 0, 0]}><cylinderGeometry args={[0.17, 0.17, 0.05, 32]} /></mesh>
                 ))}
+                {/* argolla del llavero */}
+                <mesh material={mats.metal} position={[0, 1.18, 0]}><torusGeometry args={[0.22, 0.035, 12, 32]} /></mesh>
                 {/* traba lateral */}
                 <mesh material={mats.metal} position={[0.55, -0.55, 0]}><boxGeometry args={[0.06, 0.26 - 0.08 * keyK, 0.12]} /></mesh>
                 {/* la llave de metal: escondida adentro, sale por abajo */}
-                <mesh geometry={geo.blade} material={mats.metal} position={[0.2, -0.95 - 1.5 * keyK, 0]} rotation={[0, 0, Math.PI]} />
+                <mesh geometry={geo.blade} material={mats.metal} position={[0.22, 0.55 - 1.55 * keyK, 0]} rotation={[0, 0, Math.PI]} />
                 {xray > 0 ? <mesh material={mats.cell} rotation={[Math.PI / 2, 0, 0]} position={[0, 0.3, 0]}><cylinderGeometry args={[0.32, 0.32, 0.06, 40]} /></mesh> : null}
               </>
             )}
@@ -365,6 +367,14 @@ export const ClChildLock: React.FC<{ mode?: "find" | "locked" | "open"; bed?: st
           <svg width={120} height={110} style={{ position: "absolute", left: 300, top: 260 }}><circle cx={60} cy={26} r={14} fill="#2B2F36" /><path d="M42 50 h36 l-6 34 h-24 Z" fill="#2B2F36" /></svg>
         </div>
       ) : null}
+      {mode !== "find" ? (
+        <div style={{ position: "absolute", left: 1220, top: 560, width: 340, height: 340, borderRadius: "50%", border: "14px solid #2B2F36", overflow: "hidden", opacity: lin(f, 4, 14), background: "linear-gradient(90deg,#B8BEC6,#8E949C)", boxShadow: "0 24px 40px rgba(0,0,0,0.45)" }}>
+          <div style={{ position: "absolute", left: 100, top: 50, width: 130, height: 230, borderRadius: 20, background: "#2B2F36" }}>
+            <div style={{ position: "absolute", left: 28, top: 22 + 116 * lever, width: 74, height: 74, borderRadius: 12, background: lever > 0.5 ? CL.red : "#E7E9EC" }} />
+          </div>
+          <svg width={100} height={100} style={{ position: "absolute", left: 240, top: 210 }}><circle cx={50} cy={22} r={12} fill="#2B2F36" /><path d="M35 42 h30 l-5 28 h-20 Z" fill="#2B2F36" /></svg>
+        </div>
+      ) : null}
       {mode === "find" ? <Tag x={1200} y={700} text="El canto de la puerta" o={lin(f, 18, 28)} size={44} /> : null}
       {mode === "locked" ? (
         <>
@@ -396,7 +406,7 @@ export const ClAirFlow: React.FC<{ mode?: "recirc" | "defog"; bed?: string }> = 
     <AbsoluteFill style={{ opacity: out }}>
       <Bed src={bed} seed={651} dim={0.28} />
       <div style={{ position: "absolute", left: 260, top: 230 + (1 - p) * 120, opacity: clamp01(p * 1.4), filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.35))" }}>
-        <svg width={1400} height={640} viewBox="0 0 1400 640">
+        <svg width={1400} height={640} viewBox="0 0 1440 640" style={{ overflow: "visible" }}>
           <defs><linearGradient id="afBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#E4E8EC" /><stop offset="100%" stopColor="#A7AEB7" /></linearGradient></defs>
           <path d={body} fill="url(#afBody)" stroke={CL.navy} strokeWidth={6} />
           {/* vidrios */}
@@ -411,7 +421,8 @@ export const ClAirFlow: React.FC<{ mode?: "recirc" | "defog"; bed?: string }> = 
             <>
               {[0, 1, 2, 3, 4, 5].map((i) => { const q = flowR(i); return <circle key={i} cx={q.x} cy={q.y} r={14} fill={CL.navy} opacity={q.o} />; })}
               <ellipse cx={720} cy={330} rx={300} ry={90} fill="none" stroke={CL.navy} strokeWidth={4} strokeDasharray="14 14" opacity={0.6} />
-              {[0, 1, 2, 3].map((i) => { const t = ((f * 0.02 + i / 4) % 1); const x = 1400 - t * 120; return <circle key={i} cx={x + 60} cy={330 - i * 18} r={30 + t * 20} fill="#3A3A3A" opacity={0.5 * (1 - t)} />; })}
+              {[0, 1, 2, 3, 4, 5].map((i) => { const t = ((f * 0.018 + i / 6) % 1); const x = 1395 - t * 50; return <circle key={i} cx={x} cy={300 + (i % 3) * 34 - t * 30} r={22 + t * 18} fill="#3A3A3A" opacity={0.75 * (1 - t * 0.6)} />; })}
+              <path d="M 1240 340 l 26 26 M 1266 340 l -26 26" stroke={CL.red} strokeWidth={8} strokeLinecap="round" />
             </>
           ) : (
             <>
@@ -453,7 +464,7 @@ export const ClTireLabel: React.FC<{ mode?: "door" | "versus"; bed?: string }> =
         {/* el costado de la llanta con letras en relieve */}
         <div style={{ position: "absolute", left: 1000, top: 200, width: 760, height: 520, borderRadius: 30, overflow: "hidden", transform: `perspective(1600px) rotateY(-18deg) scale(${0.85 + 0.15 * pv})`, opacity: clamp01(pv * 1.4), background: "radial-gradient(ellipse at 120% 50%, #3A3D42 0%, #1D1F23 55%, #121315 100%)", boxShadow: "0 30px 50px rgba(0,0,0,0.5)" }}>
           {Array.from({ length: 14 }, (_, i) => <div key={i} style={{ position: "absolute", left: 0, right: 0, top: i * 40, height: 2, background: "rgba(255,255,255,0.03)" }} />)}
-          <div style={{ position: "absolute", left: 60, top: 180, fontFamily: LABEL, fontWeight: 700, fontSize: 76, letterSpacing: 6, color: "#2C2F34", textShadow: "-2px -2px 2px rgba(255,255,255,0.18), 3px 3px 4px rgba(0,0,0,0.9)" }}>MAX. PRESS 44 PSI</div>
+          <div style={{ position: "absolute", left: 60, top: 180, fontFamily: LABEL, fontWeight: 700, fontSize: 62, letterSpacing: 4, color: "#2C2F34", textShadow: "-2px -2px 2px rgba(255,255,255,0.18), 3px 3px 4px rgba(0,0,0,0.9)" }}>MAX. PRESS 44 PSI</div>
           <svg width={760} height={520} style={{ position: "absolute", inset: 0 }}><HandCircle cx={380} cy={225} rx={330} ry={80} k={lin(f, 22, 38)} color={CL.red} /></svg>
         </div>
         <div style={{ position: "absolute", left: 1180, top: 760, opacity: lin(f, 30, 40) }}><Tag x={0} y={0} text="✗ El máximo que aguanta" color={CL.red} size={50} /></div>
@@ -485,9 +496,9 @@ export const ClTread3D: React.FC<{ mode?: "bar" | "worn" | "coin"; bed?: string 
   const coinK = mode === "coin" ? ease(clamp01((f - 12) / 22)) : 0;
   const barGlow = mode === "bar" ? 0.5 + 0.5 * Math.sin(f * 0.3) : wear > 0.9 ? 1 : 0;
   const a = interpolate(f, [0, T], [-0.55, -0.25]);
-  const target = new THREE.Vector3(0, 0, 0), camPos = new THREE.Vector3(Math.sin(a) * 6, 3.4, Math.cos(a) * 6);
+  const target = new THREE.Vector3(-0.3, -0.2, 0), camPos = new THREE.Vector3(Math.sin(a) * 6.6, 2.6, Math.cos(a) * 6.6);
   const mats = useMemo(() => ({
-    rubber: new THREE.MeshStandardMaterial({ color: "#2A2C30", roughness: 0.9 }),
+    rubber: new THREE.MeshStandardMaterial({ color: "#3A3D43", roughness: 0.82 }),
     rubberDark: new THREE.MeshStandardMaterial({ color: "#1A1B1E", roughness: 0.95 }),
     bar: new THREE.MeshStandardMaterial({ color: "#3A3C41", roughness: 0.85, emissive: CL.nitrile, emissiveIntensity: 0 }),
     coin: new THREE.MeshStandardMaterial({ color: "#C9A85A", metalness: 0.85, roughness: 0.3 }),
@@ -512,7 +523,8 @@ export const ClTread3D: React.FC<{ mode?: "bar" | "worn" | "coin"; bed?: string 
             {/* tacos del dibujo */}
             {blocks.map(([x, z], i) => <mesh key={i} material={mats.rubber} position={[x, BASE + BLOCK_H / 2, z]}><boxGeometry args={[0.62, BLOCK_H, 0.86]} /></mesh>)}
             {/* las rayitas de desgaste, atravesadas en los canales (más bajas que los tacos nuevos) */}
-            {[-2.0, 0.4, 2.8].map((x, i) => <mesh key={i} material={mats.bar} position={[x, BASE + 0.045, 0.55]}><boxGeometry args={[0.18, 0.09, 0.24]} /></mesh>)}
+            {[-2.0, 0.4, 2.8].map((x, i) => <mesh key={i} material={mats.bar} position={[x, BASE + 0.05, 0.55]}><boxGeometry args={[0.18, 0.1, 0.3]} /></mesh>)}
+            {[-2.0, 0.4, 2.8].map((x, i) => <mesh key={"z" + i} material={mats.bar} position={[x, BASE + 0.05, -0.55]}><boxGeometry args={[0.18, 0.1, 0.3]} /></mesh>)}
             {/* la moneda en el canal */}
             {mode === "coin" ? <mesh material={mats.coin} rotation={[0, 0, Math.PI / 2]} position={[0.4, 1.2 - 1.05 * coinK, 0.55]}><cylinderGeometry args={[0.4, 0.4, 0.06, 40]} /></mesh> : null}
           </group>

@@ -1,4 +1,4 @@
-// DISEÑO DE SONIDO del canal Claudio el Conserje con la biblioteca común public/sfx_pro (junction a D:/Proyectos/sfx_pro: Mixkit +
+// DISEÑO DE SONIDO del canal Claudio (Conserje → … → Mecánico: ambientes y foley de autos arriba de todo) con la biblioteca común public/sfx_pro (junction a D:/Proyectos/sfx_pro: Mixkit +
 // Freesound CC0, ver LICENCIAS.md). ⛔ Reemplaza a los SFX de public/sfx del video 1 (clborde): nada de eso se usa. Sin música.
 //   AMBIENTE por escena (baño azulejado, pasillo del hotel, lobby, oficina, cocina/casa, patio, lavadero; Claudio a cámara = taller de
 //   mantenimiento) sin huecos · FOLEY sincronizado a lo que SE VE en cada toma (por nombre + prompt) · DISEÑO en cada componente y
@@ -11,21 +11,39 @@ const has = (pub, p) => fs.existsSync(pub + LIB + p);
 
 // ── ambiente por escena (regex sobre nombre + prompt de la toma), primera coincidencia gana
 const AMB = [
-  ["amb/amb_fridge_hum.flac", /night|dark kitchen|flashlight|refrigerator|fridge|compressor/i],
-  ["amb/amb_hotel_lobby.flac", /lobby|reception|checking in/i],
-  ["amb/amb_hotel_hallway.flac", /corridor|hallway|cart|storeroom|guest-room door|room numbers|door numbered|service hallway/i],
-  ["amb/amb_indoor_generic.flac", /office|desk|calendar|notebook|printed/i],
-  ["amb/amb_suburb_birds.flac", /backyard|lawn|septic|cabins|resort/i],
-  ["amb/amb_laundry.flac", /laundry|washer|washing machine|dryer/i],
-  ["amb/amb_house_birds_fridge.flac", /kitchen|kettle|soda|cola|supermarket|store shelf|cider|glass at a kitchen/i],
-  ["amb/amb_bath_fan.flac", /shower head|steam|fan/i],
-  ["amb/amb_bath_tile.flac", /bathroom|shower|tiles/i],
+  // ── mecánico (taller de Claudio, cochera de Doña Elena, calle, súper, gasolinera, adentro del auto)
+  ["amb/amb_car_rain.flac", /rain|fogged|wiper|handkerchief/i],
+  ["amb/amb_indoor_generic.flac", /\bnight\b|evening|dark inside/i],
+  ["amb/amb_parking_lot.flac", /parking lot|supermarket/i],
+  ["amb/amb_street_traffic.flac", /gas station|traffic|highway|tow truck|exhaust|on a quiet street|residential street/i],
+  ["amb/amb_car_interior.flac", /inside of an ordinary|dashboard|glovebox|steering wheel|seat of|cabin|instrument cluster|odometer|rear-view mirror|console/i],
+  ["amb/amb_house_birds_fridge.flac", /kitchen|laptop|smartphone|phone screen/i],
+  ["amb/amb_suburb_birds.flac", /driveway|carport|church|house|garage wall|dealership/i],
+  ["amb/amb_indoor_generic.flac", /workshop|lift|tool chest|mechanic|engine bay|hood/i],
 ];
-const AMB_BATH = "amb/amb_suburb_birds.flac", AMB_SHOP = "amb/amb_indoor_generic.flac";
+const AMB_BATH = "amb/amb_indoor_generic.flac", AMB_SHOP = "amb/amb_indoor_generic.flac"; // mecánico: el taller = tono de sala (el loop de "garage" es un atornillador)
 export function ambOf(c, prompt = "") { const t = (c.name || "") + " " + prompt; for (const [f, re] of AMB) if (re.test(t)) return f; return AMB_BATH; }
 
 // ── foley por lo que se ve (primera coincidencia gana): [regex, archivos, vol, dur máx s, offset s]
 const FOLEY = [
+  // ── mecánico (el auto de Doña Elena) — [] = sin foley (para que no lo agarre una regla vieja)
+  [/glovebox/i, ["foley/plastic_snap.flac"], 0.4, 1, 0.1],
+  [/key fob|remote key|unlock button|lock button/i, ["foley/plastic_snap.flac", "foley/car_lock_beep.flac"], 0.38, 1, 0.1],
+  [/metal key|keyhole|key blade|car key in the ignition|turning a car key/i, ["foley/metal_key_click.flac", "foley/car_ignition.flac"], 0.42, 1.4, 0.1],
+  [/ignition|idling engine|engine start/i, ["foley/car_engine_start.flac", "foley/car_engine_idle.flac"], 0.34, 2.5, 0],
+  [/rolling slowly into|drives slowly out|U-turn|driving .*sedan|stopped at a gas/i, ["foley/car_engine_idle.flac"], 0.28, 3, 0],
+  [/windows? (slowly )?roll|power window|windows down|window rolling/i, ["foley/car_window_motor.flac"], 0.36, 2.5, 0],
+  [/trunk/i, ["foley/car_trunk_close.flac", "foley/car_door_close.flac"], 0.34, 1.6, 0.1],
+  [/car door|door handle|rear door|driver door|getting out of|door frame/i, ["foley/car_door_open.flac", "foley/car_door_close.flac"], 0.36, 1.6, 0.1],
+  [/tire pressure gauge|air compressor|air pump|valve of/i, ["foley/air_hiss.flac"], 0.3, 1.6, 0.1],
+  [/wrench|tow eye|ratchet|lug/i, ["foley/ratchet_wrench.flac", "foley/wrench_metal.flac"], 0.34, 1.6, 0.1],
+  [/fuse/i, ["foley/plastic_snap.flac"], 0.34, 0.8, 0.1],
+  [/tool tray|tool drawer|toolbox|tool bag/i, ["foley/toolbox_drawer.flac"], 0.3, 1.4, 0.1],
+  [/headrest|button at the base|sun visor|seat back|tab under the mirror|recirculation button|small lever|child-lock/i, ["foley/plastic_snap.flac"], 0.34, 0.8, 0.15],
+  [/cash|bills|receipt|quote|folder|papers|brochure|owner's manual|pages|index|photo:/i, ["design/paper_slide.flac", "design/page_stiff.flac"], 0.3, 1.2, 0.1],
+  [/grocery bags|eggs|oranges/i, ["foley/paper_crinkle.flac", "foley/plastic_wrapper.flac"], 0.28, 1.4, 0.1],
+  [/phone/i, ["design/click_interface.flac"], 0.24, 0.6, 0.2],
+  [/windshield|side window|open driver window|window frame/i, [], 0, 0, 0],
   // ── fumigador (casa de los Ramírez)
   [/flashlight|switches on|switching it on/i, ["design/click_slide.flac", "foley/light_pull_switch.flac"], 0.42, 1, 0.05],
   [/(pull|push)\w* .*refrigerator|refrigerator .*(pulled|pushed) /i, ["foley/ceramic_scrape.flac", "foley/scrub_floor.flac"], 0.42, 2.5, 0.1],
@@ -66,7 +84,7 @@ const FOLEY = [
 ];
 export function foleyOf(c, prompt, i) {
   const t = (c.name || "") + " " + (prompt || "");
-  for (const [re, files, vol, dmax, off] of FOLEY) if (re.test(t)) return { src: files[i % files.length], vol, dmax, off };
+  for (const [re, files, vol, dmax, off] of FOLEY) if (re.test(t)) return files.length ? { src: files[i % files.length], vol, dmax, off } : null;
   return null;
 }
 const WH = ["design/whoosh_air.flac", "design/whoosh_quick.flac", "design/whoosh_air_quick.flac", "design/whoosh_sweep_small.flac", "design/whoosh_cine_wind.flac", "design/whoosh_fast_trans.flac", "design/whoosh_air_deep.flac", "design/whoosh_cine_fast.flac", "design/whoosh_windy.flac"];

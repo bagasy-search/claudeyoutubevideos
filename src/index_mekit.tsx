@@ -20,7 +20,7 @@ export const K: [string, React.FC<any>, any][] = [
   ["check", ClCheck, { title: "Casi todos los traen", items: ["Flecha del tanque", "Traba de niños", "Llave de metal"], fast: true, bed: B }],
   ["check2", ClCheck, { title: "La prueba de los faros", items: ["Se apagan al arrancar → batería", "Parpadean andando → otra cosa", "No cambies la batería todavía"], fast: true, bed: B }],
   ["bookpage", ClBookPage, { page: I + "page9.jpg", pageNo: 9, stamp: "La frase, en la página", bed: B }],
-  ["qrgift", ClQRCard, { qr: I + "qr.png", cover: I + "gift_cover.jpg", text: "las 3 pruebas de Claudio, gratis", kicker: "REGALO · ANTES DEL TALLER", bed: B }],
+  ["qrgift", ClQRCard, { qr: I + "qr.png", cover: I + "gift_cover.jpg", text: "las 3 pruebas, gratis", kicker: "REGALO · ANTES DEL TALLER", bed: B }],
   ["qrbook", ClQRCard, { qr: I + "qr.png", cover: I + "book_cover.jpg", text: "todos los trucos del taller", kicker: "EL MANUAL · US$27", bed: B }],
   ["receipt", ClReceipt, { head: "PRESUPUESTO DE LA AGENCIA", lines: [["Servicio completo", "US$ 480"], ["4 llantas nuevas", "US$ 520"], ["Llave nueva", "US$ 180"], ["Auto nuevo", "60 cuotas"]], total: ["Total", "US$ 1.180 + cuotas"], bed: B }],
   ["notebook", ClNotebook, { title: "Llantas", rows: [{ k: "Las 4", v: "cada mes" }, { k: "Repuesto", v: "2-3 meses" }, { k: "En frío", v: "mañana" }], mark: "✓", bed: B }],

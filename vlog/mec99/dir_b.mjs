@@ -39,7 +39,7 @@ export const SHOTS = [
   S(24, "Ella apretaba y nada", "kf", "k_press", { p: BI(`Close view of ${EH} pressing the unlock button of ${FOB} again and again, ${CAR} sharp behind in the parking lot.`), d1: "the thumb presses the unlock button", d2: "the thumb presses it hard twice more, nothing happens", sound: "small rubber button clicks" }),
   S(24, "Las bolsas en el piso", "bi", "b_bags", { p: BI(`Grocery bags on the asphalt of a parking lot next to the closed driver door of ${CAR}, a tub of ice cream sweating on top.`) }),
   S(24, "Llamó a un cerrajero", "bi", "b_phonecall", { p: BI(`${ELENA} standing next to ${CAR} in a parking lot talking on an old cell phone, worried.`) }),
-  S(24, "que tardó una hora", "bi", "b_locksmith", { p: BI(`A locksmith in a gray polo working a long thin tool into the driver door of ${CAR} in a supermarket parking lot.`) }),
+  S(24, "que tardó una hora", "bi", "b_locksmith", { p: BI(`A locksmith in a gray polo shirt with a small tool bag, talking with ${ELENA} next to ${CAR} in a supermarket parking lot, his work van parked behind.`) }),
   S(24, "y le cobró ochenta dólares", "bi", "b_receipt80", { p: BI(`Close view of a handwritten locksmith receipt for 80 dollars in ${EH}, the parking lot behind.`) }),
   // ── 4 · la llave de metal
   S(25, "", "c", "ClCarMap", { props: { n: 4, zone: "llave" } }),
@@ -47,7 +47,7 @@ export const SHOTS = [
   S(25, "Lo aprietas, y sale una llave de metal", "c", "ClKeyFob3D", { props: { mode: "key" } }),
   S(25, "Una llave de verdad", "kf", "k_keyout", { p: BI(`Close view of ${H} holding ${FOB}, pressing the small side latch.`), d1: "the thumb pushes the side latch", d2: "a small metal key blade slides out of the fob and the fingers pull it free", sound: "a small plastic click and metal sliding" }),
   S(26, "", "bi", "b_doorhandle", { p: BI(`Close view of the driver door handle of ${CAR}, a small plastic cap at the end of the handle hiding the keyhole.`) }),
-  S(26, "escondida detrás de una tapita", "kf", "k_handlecap", { p: BI(`Extreme close view of ${H} prying the small plastic end cap off the driver door handle of ${CAR} with the tip of a metal key.`), d1: "the key tip pries under the small plastic cap", d2: "the cap pops off revealing a round metal keyhole", sound: "a small plastic pop" }),
+  S(26, "escondida detrás de una tapita", "kf", "k_handlecap", { p: BI(`Extreme close view of the outside driver door handle of ${CAR}: at its end a small removable plastic cover, ${H} with a fingertip on that small cover.`), d1: "the fingertip rests on the small cover at the end of the handle", d2: "the small cover comes off in the fingers revealing a round keyhole", sound: "a small plastic click" }),
   S(26, "Con esa llave de metal", "bi", "b_keyinlock", { p: BI(`Close view of ${H} turning a small metal key in the keyhole of the driver door of ${CAR}.`) }),
   S(26, "aunque la pila del control esté muerta", "c", "ClKeyFob3D", { props: { mode: "dead" } }),
   S(27, "", "cl", "c_givekey", { p: CLP(`In his workshop he holds up a small metal key blade between two fingers in front of ${ELENA}, who looks at it in silence.`), rev: 1 }),

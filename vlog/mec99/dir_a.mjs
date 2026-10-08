@@ -78,7 +78,7 @@ export const SHOTS = [
   // ── la revisión de 15 minutos
   C(11, "", "ClChapter", { n: 2, title: "La revisión de 15 minutos", sub: "con el manual en la mano" }),
   S(12, "", "cl", "c_flashlight", { p: CLP(`He sits sideways in the driver seat of ${CAR} with the door open, a small flashlight in one hand and the open owner's manual on his knee, looking at the camera.`) }),
-  S(12, "el manual abierto en el índice", "bi", "b_index", { p: BI(`Close view of ${H} running a fingertip down the printed index page of a car owner's manual on a car seat.`) }),
+  S(12, "el manual abierto en el índice", "bi", "b_index", { q: "reading manual book", p: BI(`Close view of ${H} running a fingertip down the printed index page of a car owner's manual on a car seat.`) }),
   S(12, "Quince minutos, una sola vez", "bi", "b_parkedmorning", { p: BI(`${CAR} parked in the open carport of ${DRIVE} on a quiet morning, the driver door open.`), ov: { c: "ClChip", props: { text: "15 min · una vez" } } }),
   S(12, "Y vas tocando cada cosa con la mano", "bi", "b_touch", { p: BI(`Close view of ${EH} touching a small lever on the dashboard of ${CABIN} while ${H} points at it.`) }),
   S(12, "para encontrarla sin pensar", "av", ""),
@@ -88,7 +88,7 @@ export const SHOTS = [
   S(13, "Y si no está ahí", "av", ""),
   S(13, "No es que esté roto", "bi", "b_elenasmile0", { p: BI(`${ELENA} in the driver seat of ${CAR} with the manual on her lap, laughing softly at something the mechanic said.`) }),
   // ── mención 1: la frase para pedir el manual
-  S(14, "", "bi", "b_laptop", { p: BI(`Close view of ${EH} on the keyboard of an old laptop on a kitchen table, the screen showing a plain page of a car owner's manual document with diagrams.`) }),
+  S(14, "", "bi", "b_laptop", { q: "typing laptop keyboard", p: BI(`Close view of ${EH} on the keyboard of an old laptop on a kitchen table, the screen showing a plain page of a car owner's manual document with diagrams.`) }),
   S(14, "O lo pides en la agencia", "bi", "b_partsdesk", { p: BI(`${ELENA} at the parts counter of a car dealership, a clerk in a polo shirt typing at a computer behind the counter.`) }),
   C(14, "En el Manual del Mecánico te dejé la frase exacta", "ClBookPage", { page: I + "page9.jpg", pageNo: 9, stamp: "La frase, en la página" }),
   S(14, "para que no te quieran vender otra cosa", "av", ""),
