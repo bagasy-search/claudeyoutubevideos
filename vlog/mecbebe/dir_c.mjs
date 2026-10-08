@@ -8,22 +8,22 @@ export const SHOTS = [
   C(38, "", "ClChapter", { n: 6, title: "Los 6 lugares donde nunca va", sub: "la lista más importante", alert: true }),
   // ── 8 pedales
   S(39, "", "c", "ClOilMap13", { props: { upto: 13, n: 8 } }),
-  S(39, "Ni aceite, ni silicona, ni nada que brille", "bi", "b_pedalsoily", { p: BI(`Low close view of the oily glistening pedals of ${CABIN}.`), ov: { c: "ClChip", props: { text: "8 · NO", alert: true } } }),
+  S(39, "Ni aceite, ni silicona, ni nada que brille", "bi", "b_pedalsoily", { q: "car pedals", p: BI(`Low close view of the oily glistening pedals of ${CABIN}.`), ov: { c: "ClChip", props: { text: "8 · NO", alert: true } } }),
   S(39, "Los pedales tienen que agarrar", "c", "ClGrip", { props: { mode: "dry" } }),
-  S(39, "Se limpian con agua y jabón, y se secan bien", "bi", "b_pedalwash", { p: BI(`Low close view of ${H} scrubbing a rubber brake pedal of ${CABIN} with a soapy cloth.`) }),
+  S(39, "Se limpian con agua y jabón, y se secan bien", "bi", "b_pedalwash", { q: "car floor cleaning", p: BI(`Low close view of ${H} scrubbing a rubber brake pedal of ${CABIN} with a soapy cloth.`) }),
   // ── 9 volante
   S(40, "", "c", "ClOilMap13", { props: { upto: 13, n: 9 } }),
   S(40, "Un volante aceitado resbala en las manos", "bi", "b_wheelslip", { p: BI(`Close view of ${EH} on a glossy oily steering wheel of ${CABIN}, the fingers sliding.`) }),
   S(40, "justo cuando necesitas girar rápido", "bi", "st_steering", { q: "hands turning steering wheel", p: BI("Hands turning a steering wheel while driving.") }),
   S(40, "se le escapaba entre los dedos", "kf", "k_wheelslip", { p: BI(`Close view of ${EH} turning the oily steering wheel of ${CABIN} to park.`), d1: "the hands turn the wheel", d2: "the wheel slides through the fingers", sound: "a soft squeak of skin on plastic" }),
   S(41, "", "bi", "b_mat", { p: BI(`Low close view of the rubber floor mat on the driver's side of ${CABIN}, glossy with shine spray, slid forward under the pedals.`) }),
-  S(41, "Una alfombrilla que resbala se corre debajo de los pedales", "bi", "b_matunder", { p: BI(`Extreme close view of the edge of a rubber floor mat bunched up under the brake pedal of ${CABIN}.`), ov: { c: "ClChip", props: { text: "Pedal trabado", alert: true } } }),
+  S(41, "Una alfombrilla que resbala se corre debajo de los pedales", "bi", "b_matunder", { q: "car floor mat", p: BI(`Extreme close view of the edge of a rubber floor mat bunched up under the brake pedal of ${CABIN}.`), ov: { c: "ClChip", props: { text: "Pedal trabado", alert: true } } }),
   S(41, "y un pedal trabado es igual de peligroso", "av", ""),
   // ── 10 tablero
   S(42, "", "c", "ClOilMap13", { props: { upto: 13, n: 10 } }),
   S(42, "el aceite junta polvo y deja el plástico pegajoso", "bi", "b_dashdust", { q: "cleaning car dashboard", p: BI(`Extreme close view of dust and lint stuck to a glossy oily dashboard of ${CABIN}.`) }),
-  S(42, "El tablero se limpia con un paño apenas húmedo", "bi", "b_dashwipe", { p: BI(`Close view of ${H} wiping the dashboard of ${CABIN} with a damp microfiber cloth.`), d1: "the cloth wipes across the dashboard", d2: "the plastic is left matte and clean", sound: "a cloth wiping plastic" }),
-  S(42, "que diga mate, sin brillo", "bi", "b_matteproduct", { q: "car interior cleaning spray", p: BI("A plain spray bottle of interior plastic cleaner with a blank label on the seat of a car next to a cloth.") }),
+  S(42, "El tablero se limpia con un paño apenas húmedo", "bi", "b_dashwipe", { q: "wiping car dashboard", p: BI(`Close view of ${H} wiping the dashboard of ${CABIN} with a damp microfiber cloth.`), d1: "the cloth wipes across the dashboard", d2: "the plastic is left matte and clean", sound: "a cloth wiping plastic" }),
+  S(42, "que diga mate, sin brillo", "bi", "b_matteproduct", { q: "car interior cleaning spray", q2: "spray bottle", p: BI("A plain spray bottle of interior plastic cleaner with a blank label on the seat of a car next to a cloth.") }),
   // ── 11 gomas
   S(43, "", "c", "ClOilMap13", { props: { upto: 13, n: 11 } }),
   S(43, "Ésta es la que más se ve en internet", "av", ""),
@@ -48,7 +48,7 @@ export const SHOTS = [
   // ── cómo lo sacamos
   C(48, "", "ClChapter", { n: 7, title: "Cómo lo sacamos", sub: "de donde no iba" }),
   S(49, "", "bi", "b_bucket", { p: BI(`Close view of ${EH} squeezing a few drops of dish soap into a bucket of warm water in ${DRIVE}.`) }),
-  S(49, "Un paño apenas húmedo, nunca empapado", "bi", "b_wring", { q: "wringing cloth bucket", p: BI(`Close view of ${H} wringing out a microfiber cloth over a bucket.`) }),
+  S(49, "Un paño apenas húmedo, nunca empapado", "bi", "b_wring", { q: "wringing cloth bucket", q2: "wringing cloth", p: BI(`Close view of ${H} wringing out a microfiber cloth over a bucket.`) }),
   S(49, "y después otro paño seco", "av", ""),
   S(50, "", "bi", "b_wheelwash", { q: "cleaning steering wheel", p: BI(`Close view of ${H} wiping the steering wheel of ${CABIN} with a damp soapy cloth.`) }),
   S(50, "Dos pasadas con jabón y secado", "bi", "b_pedaldry", { p: BI(`Low close view of ${H} drying a rubber brake pedal of ${CABIN} with a dry cloth.`) }),
@@ -59,7 +59,7 @@ export const SHOTS = [
   S(51, "no alcanzó a hacerles daño", "av", ""),
   S(52, "", "bi", "b_newspaper", { p: BI(`Close view of ${H} polishing the windshield of ${CAR} with crumpled newspaper, a spray bottle of glass cleaner on the hood.`) }),
   S(52, "como lo hacía mi papá", "cl", "c_newspaper", { p: CLP(`He polishes the windshield of ${CAR} in ${DRIVE} with crumpled newspaper, smiling a little.`) }),
-  S(52, "Hasta que el sol de la tarde dejó de hacer manchón", "bi", "b_clearglass", { p: BI(`View from the driver's seat of ${CABIN} through a perfectly clear windshield onto a sunny street.`) }),
+  S(52, "Hasta que el sol de la tarde dejó de hacer manchón", "bi", "b_clearglass", { q: "driving view windshield", p: BI(`View from the driver's seat of ${CABIN} through a perfectly clear windshield onto a sunny street.`) }),
   S(53, "", "bi", "b_girlhelp", { p: BI(`${GIRL} wiping a car door with a cloth in ${DRIVE}, ${ELENA} watching beside her.`) }),
   S(53, "entonces la mitad del video era mentira", "bi", "b_girlask", { p: BI(`${GIRL} holding up her phone toward someone off-frame in ${DRIVE}, with a skeptical face.`) }),
   S(53, "No mentira, le dije", "av", ""),
@@ -71,6 +71,6 @@ export const SHOTS = [
   S(56, "siempre jabón para autos", "bi", "st_carwash2", { q: "hand washing car", p: BI("Someone washing a car by hand with a soapy sponge.") }),
   S(57, "", "bi", "b_err3", { p: BI(`Close view of the very glossy oily dashboard of ${CABIN}.`), ov: { c: "ClChip", props: { text: "3 · Brillante ≠ limpio", alert: true } } }),
   S(57, "Está aceitado", "av", ""),
-  S(58, "", "bi", "b_err4", { p: BI(`Close view of a hand rubbing an oily rag along a car door rubber seal.`), ov: { c: "ClChip", props: { text: "4 · Gomas cada mes", alert: true } } }),
+  S(58, "", "bi", "b_err4", { q: "car door rubber", p: BI(`Close view of a hand rubbing an oily rag along a car door rubber seal.`), ov: { c: "ClChip", props: { text: "4 · Gomas cada mes", alert: true } } }),
   S(58, "Así se arruinan las gomas", "av", ""),
 ];

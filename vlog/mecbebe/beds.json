@@ -6,8 +6,8 @@
  },
  {
   "name": "bd_cardashboard1",
-  "q": "car dashboard",
-  "scene": "Ordinary real footage: car dashboard, real everyday look, no person looking at the camera."
+  "q": "car air vents",
+  "scene": "Ordinary real footage: car air vents, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_cardoor2",
@@ -156,8 +156,8 @@
  },
  {
   "name": "bd_carseat31",
-  "q": "car back seat",
-  "scene": "Ordinary real footage: car back seat, real everyday look, no person looking at the camera, no logos or text."
+  "q": "car seat fabric",
+  "scene": "Ordinary real footage: car seat fabric, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_bucketwater32",
@@ -196,8 +196,8 @@
  },
  {
   "name": "bd_carhood39",
-  "q": "car hood",
-  "scene": "Ordinary real footage: car hood, real everyday look, no person looking at the camera."
+  "q": "hood up car",
+  "scene": "Ordinary real footage: hood up car, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_sunnystreet40",
@@ -206,8 +206,8 @@
  },
  {
   "name": "bd_citytraffic41",
-  "q": "busy street",
-  "scene": "Ordinary real footage: busy street, real everyday look, no person looking at the camera, no logos or text."
+  "q": "cars on road",
+  "scene": "Ordinary real footage: cars on road, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_parkinglot42",

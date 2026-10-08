@@ -20,7 +20,7 @@ export const SHOTS = [
   B(32, "Pero ojo: eso es una prueba", "b_lightclose", `Extreme close view of the headlight of ${CAR} with an oily shiny streak across it.`),
   B(35, "Elena salió de la cochera marcha atrás", "b_reverselight", `Close view of the reverse light of ${CAR} lit, early morning in ${DRIVE}.`),
   B(37, "Ahora imagina eso mismo en una esquina", "st_rainstreet", "A rainy city street corner with cars.", { q: "rainy street" }),
-  B(41, "tampoco en la alfombrilla de goma", "b_mat2", `Low view of the driver's side rubber floor mat of ${CABIN}, glossy.`, { q: "car floor mat" }),
+  B(41, "tampoco en la alfombrilla de goma", "b_mat2", `Low view of the driver's side rubber floor mat of ${CABIN}, glossy.`, { q: "car floor mat", q2: "car mat" }),
   B(49, "Lo bueno es que se saca fácil", "st_bucketsoap", "A bucket of soapy water with a sponge.", { q: "bucket soapy water" }),
   B(60, "Es lo mismo, aceite mineral más espeso", "b_jellyfinger", `Extreme close view of a fingertip with a small dab of clear petroleum jelly, a plain white jar with no label next to it on a workbench.`),
   B(74, "Y para no molestarme", "b_elenadrive", `${ELENA} driving ${CAR} out of ${DRIVE} with a straw beach bag on the passenger seat.`),
